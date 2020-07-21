@@ -1,41 +1,28 @@
-
-
-# Oriox
+---
+title: Orionx
+---
 
 ## Índice
 
-* auto-gen TOC:
-{:toc}
+*   auto-gen TOC:  
+    
+    {:toc}
 
 ## Especialidades
 
-
-
 ## Rasgos
-
-
 
 ## Historia
 
 ### Orígenes
 
-
-
 ### Viajero sombrío
-
-
 
 ### Consejero de la Gran Unificadora
 
-
-
 ### Tirano sombrío de Hakrapeu
 
-
-
 ## Conclusión
-
-
 
 ## Relaciones
 

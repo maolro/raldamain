@@ -1,8 +1,8 @@
 ---
-title:Ambrose Elrich
+title: Ambrose Elrich
 nacionalidad: Uringen
-fecha_de_nacimiento:4027
-fecha_de_muerte:4089
+fecha-de-nacimiento: 4027
+fecha-de-muerte: 4089
 ---
 
 ## Índice

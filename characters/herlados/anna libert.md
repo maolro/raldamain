@@ -1,4 +1,6 @@
-# Anna Libert
+---
+title: Anna Libert
+---
 
 Una chica sencilla y amable comienza con lagunas en sus recuerdos en lo que son las ruinas de un viejo orfanato pero cuando se da cuenta un sinfín de horrores comienzan a aparecer en su vida y se verá obligado a aventurarse para poder averiguar que está ocurriendo y solucionarlo.
 
