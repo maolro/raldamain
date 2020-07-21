@@ -4,9 +4,7 @@ title: Oriox
 
 ## Índice
 
-*   auto-gen TOC:  
-    
-    {:toc}
+{:toc}
 
 ## Especialidades
 
