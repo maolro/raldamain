@@ -1,1 +1,7 @@
 theme: jekyll-theme-modernist
+defaults:
+  -
+    scope:
+      path: "characters"
+    values:
+      layout: character
