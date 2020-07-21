@@ -1,4 +1,8 @@
-# Opal
+---
+title:Volo
+---
+
+
 
 ## Índice
 
@@ -23,23 +27,27 @@
 
 
 
-### La invasión de Kratoi
+### Encuentro con Yara
 
 
 
-### Nacimiento de Moon
+### Bufón del grupo
 
 
 
-### Liberando Kratoi
+### La encrucijada del destino
 
 
 
-### Guerra de los hermanos
+### La voz de la Gran Unificadora
 
 
 
-### Odiada por el pueblo
+### Protector de los desesperados
+
+
+
+### Encontrando la felicidad
 
 
 
@@ -49,4 +57,4 @@
 
 ## Relaciones
 
-pendiente de hacer (Zhu Li, Crassus, Baatar, Kuvira)
+pendiente de hacer (Yara, Iwan, Kuvira, Opal, Jaysha)
