@@ -1,8 +1,11 @@
-# Oriox
+---
+title:Orionx
+---
 
 ## Índice
 
 *   auto-gen TOC:  
+    
     {:toc}
 
 ## Especialidades
