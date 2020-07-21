@@ -1,5 +1,5 @@
 ---
-title:Opal
+title: Opal
 ---
 
 ## Índice

@@ -1,5 +1,5 @@
 ---
-title:Bashir
+title: Bashir
 ---
 
 ## Índice
