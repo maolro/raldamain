@@ -1,6 +1,1 @@
 theme: jekyll-theme-modernist
-collections:
-  characters:
-    output: true
-  locations:
-    output: true
