@@ -1,15 +1,11 @@
 ---
-title: Volo
+title: Opal
 ---
 
 ## Índice
 
 * auto-gen TOC:
 {:toc}
-
-
-
-
 
 ## Especialidades
 
@@ -25,27 +21,23 @@ title: Volo
 
 
 
-### Encuentro con Yara
+### La invasión de Kratoi
 
 
 
-### Bufón del grupo
+### Nacimiento de Moon
 
 
 
-### Encrucijada del destino
+### Liberando Kratoi
 
 
 
-### Voz de la Gran Unificadora
+### Guerra de los hermanos
 
 
 
-### Protector de los desesperados
-
-
-
-
+### Odiada por el pueblo
 
 
 

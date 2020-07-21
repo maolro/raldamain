@@ -1,5 +1,5 @@
 ---
-title:Orionx
+title: Orionx
 ---
 
 ## Índice
