@@ -5,7 +5,8 @@ Nacida en una tierra devastada y huérfana a una temprana edad, Kuvira estaría 
 
 ## Índice
 
-[TOC]
+* auto-gen TOC:
+{:toc}
 
 ## Especialidades
 
