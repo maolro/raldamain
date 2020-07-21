@@ -14,7 +14,7 @@ Tiene una personalidad pura que mas o menos consigue mantener durante todo su ar
 
 ### Historia
 
-#### introducción
+#### Introducción
 
 Nacida y criada en un lujar alejado pronto iría hacia nuevos acabando así en Klonum donde comenzaría ha forjarse un destino son saber que el destino le aguarda cosas mas grandes todavía
 
@@ -29,3 +29,7 @@ Su primera etapa sería la mas cándida e inocente de ellas pero no duraría muc
 #### Final
 
 Tras su batalla contra [Kuvira](kuvira.md) ve que ya no es necesaria y termina por retirarse al plano espiritual junto a Bolo y Jeisha desapareciendo hasta los días de hoy
+
+## Relaciones
+
+pendiente de hacer (Volo, Jaysha, Bashir, Kuvira, Iwan, Arik, Khanor, Devara, Sheolta)

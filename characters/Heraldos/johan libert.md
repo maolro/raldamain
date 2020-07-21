@@ -29,3 +29,7 @@ Todos los que conocen a Johan le describirían como un santo encarnado, una pers
 ### Búsqueda en Mazarin
 
 ### El último sacrificio
+
+## Relaciones
+
+pendiente de hacer (Anna, Edvard, Alzared, Nox)
