@@ -6,6 +6,10 @@ name: Yara
 
 Nacida y criada en un lujar alejado pronto iría hacia nuevos acabando así en Klonum donde comenzaría ha forjarse un destino son saber que el destino le aguarda cosas mas grandes todavía.
 
+### Índice
+
+[TOC]
+
 ## Especialidades
 
 Mas alla del dominio sobre los cuatro elementos instruido por lo que antaño fue su familia cuenta tambien con un buen control de su querida alabarda teniendo tambien un buen carisma para atraer a la gente

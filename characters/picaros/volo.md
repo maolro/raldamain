@@ -1,7 +1,9 @@
 ---
-
 title: Volo
 ---
+
+
+
 
 ## Índice
 
@@ -48,20 +50,6 @@ title: Volo
 ### Encontrando la felicidad
 
 
-
-### Bufón del grupo
-
-
-
-### Encrucijada del destino
-
-
-
-### Voz de la Gran Unificadora
-
-
-
-### Protector de los desesperados
 
 
 
