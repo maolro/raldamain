@@ -7,8 +7,6 @@ title: Opal
 * auto-gen TOC:
 {:toc}
 
-
-
 ## Especialidades
 
 
