@@ -7,10 +7,6 @@
 * auto-gen TOC:
 {:toc}
 
-
-
-
-
 ## Especialidades
 
 
