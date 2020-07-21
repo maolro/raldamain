@@ -1,4 +1,4 @@
-# Volo
+
 
 ## Índice
 
@@ -23,27 +23,19 @@
 
 
 
-### Encuentro con Yara
+### Secretaria de Volo
 
 
 
-### Bufón del grupo
+### Moviendo los hilos del Imperio
 
 
 
-### Encrucijada del destino
+### Líder sombría
 
 
 
-### Voz de la Gran Unificadora
-
-
-
-### Protector de los desesperados
-
-
-
-
+### Acorralada sin salida
 
 
 
@@ -53,4 +45,4 @@
 
 ## Relaciones
 
-pendiente de hacer (Zhu Li, Crassus, Baatar, Kuvira)
+pendiente de hacer (Opal, Crassus, Kuvira, Oriox)
