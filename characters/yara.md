@@ -1,16 +1,14 @@
 ---
 title: Yara
+race: Humano
+name: Yara
 ---
 
-Nombre: Yara
-
-Raza:Humano
-
-Especialidades
+## Especialidades
 
 Mas alla del dominio sobre los cuatro elementos instruido por lo que antaño fue su familia cuenta tambien con un buen control de su querida alabarda teniendo tambien un buen carisma para atraer a la gente
 
-Rasgos
+## Rasgos
 
 Tiene una personalidad pura que mas o menos consigue mantener durante todo su arco lo cual le permite tomar decisiones dificiles para lograr lo que ella cree correcto y el biem mayor sin correr el riesgo de desviarse del camino sin embargo su comprension de la sociedad que la rodea es minima y a la hora de ver los puntos negativos de esta le hace dudar y preguntarse si vale la penar seguir haciendo lo que hace y seguir sacrificandose
 
