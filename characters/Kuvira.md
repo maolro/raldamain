@@ -38,7 +38,7 @@ Después del asesinato del rey y su familia, los nobles más poderosos se enfren
 
 El obstaculo más grande que permanecía entre Kuvira y la unificación completa de Mazarin era el general Grozny, un militar mazarino y pretendiente al trono. Grozny logró vencer a los revolucionarios y a otros pretendientes más débiles, y lo único que le quedaba para consolidar el trono era ella. Para vencer a Grozny, Kuvira le desafió a un duelo por el control de Mazarin, y el perdedor de este debía capitular al ganador. Grozny subestimó gravemente a Kuvira, pensando que una joven mujer como ella nunca podría ganarle en el campo de batalla. Este fue su gran error, y al finalizar el duelo Kuvira ahora controlaba la mayoría de la nación y la capital. Con Mazarin unida bajo una única líder, Kuvira tomó el título de Gran Unificadora y toda la nación celebró su victoria.
 
-### El imperio ![]()de Mazarin
+### El imperio de Mazarin
 
 Kuvira se había covertido en heroína de su nación, pero su triumfante victoria también le ganó poderosos enemigos que deseaban su final. Sin saberlo, había interferido en los planes del Pacto, una organización secreta que controlaba el reino de Mazarin desde las sombras. Mientras Kuvira celebraba su victoria delante de una jubilosa muchedumbre, un asesino del Pacto esperaba oculto hasta un momento óptimo. En el medio de su discurso, un ruido atronador se escuchó en la plaza. Kuvira había caído, abatida por un francotirador. 
 
@@ -61,8 +61,6 @@ La Gran Unificadora se había converido en enemiga de todos. Ustilus usó tácti
 Los generales del Imperio conspiraron en secreto destituir a Kuvira e intentar conseguir un tratado de paz con las demás naciones, pero los Kempetai lo descubrieron y Kuvira purgó a su alto mando, anunciando que lucharía esta guerra hasta su muerte. La Convergencia Armónica estaba llegando, y durante ese día Kuvira y Yara llegarían a tener poder semidivino como avatares de Shade y Armonía respectivamente. Este duelo decidiría el final de la guerra.
 
 Kuvira luchó con todas sus fuerzas, conociendo ya que aunque cayese, se llevaría a todos sus enemigos con ella. Yara intervino para detenrla y un mítico enfrentamiento se libró sobre la asediada capital de Mazarin. En un instante de distracción, Kuvira fue impactada por un relámpago de Yara, perdiendo la concentración y cayendo al suelo. Empalada por uno de los trozos de metal que lla usó en la batalla, Kuvira empezó a desangrarse lentamente hasta que Yara le dió un golpe de gracia, acabando con ella de una manera rápida y sin dolor. La Gran Unificadora había caído.
-
- 
 
 ## Relaciones
 
