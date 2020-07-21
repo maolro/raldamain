@@ -1,4 +1,6 @@
-# Opal
+---
+title:Volo
+---
 
 ## Índice
 
@@ -23,23 +25,27 @@
 
 
 
-### La invasión de Kratoi
+### Encuentro con Yara
 
 
 
-### Nacimiento de Moon
+### Bufón del grupo
 
 
 
-### Liberando Kratoi
+### Encrucijada del destino
 
 
 
-### Guerra de los hermanos
+### Voz de la Gran Unificadora
 
 
 
-### Odiada por el pueblo
+### Protector de los desesperados
+
+
+
+
 
 
 
