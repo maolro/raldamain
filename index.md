@@ -1,5 +1,5 @@
 # Hello
 This is my first document
-[The link Kuvira](kuvira)
+[The link Kuvira](characters/kuvira.md)
 
 The link above
