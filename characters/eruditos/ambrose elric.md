@@ -1,18 +1,16 @@
 ---
 title: Ambrose Elrich
 nacionalidad: Uringen
+alineamiento: Caótico Neutro
 fecha-de-nacimiento: 4027
 fecha-de-muerte: 4089
+rangos: Alquimia, Bombas, Ingeniería
 ---
 
 ## Índice
 
 * auto-gen TOC:
 {:toc}
-
-
-
-
 
 ## Especialidades
 
