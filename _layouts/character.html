@@ -1,5 +1,23 @@
 ---
 layout: page
 ---
-Nombre: {{ page.title }}
+
+<div class="float-right card" style="width:400px">
+  {% if page.image %}
+  <img class="card-img-top" src="{{ page.image }}">
+  {% endif %}
+  <div class="card-body">
+    <h4 class="card-title">{{ page.title }}</h4>
+	<div class="card-text">
+		<dl class="row">
+			{% if page.nacionalidad %}<dt class="col-sm-6">Nacionalidad</dt> <dd class="col-sm-6">{{ page.nacionalidad }}</dd> {% endif %}
+			{% if page.alineamiento %}<dt class="col-sm-6">Alineamiento</dt> <dd class="col-sm-6">{{ page.alineamiento }}</dd> {% endif %}
+			{% if page.fecha-de-nacimiento %}<dt class="col-sm-6">Fecha de nacimiento</dt> <dd class="col-sm-6">{{ page.fecha-de-nacimiento }}</dd> {% endif %}
+			{% if page.fecha-de-muerte %}<dt class="col-sm-6">Fecha de muerte</dt> <dd class="col-sm-6">{{ page.fecha-de-muerte }}</dd> {% endif %}
+			{% if page.rangos %}<dt class="col-sm-6">Rangos</dt> <dd class="col-sm-6">{{ page.rangos }}</dd> {% endif %}
+		</dl>
+	</div>
+  </div>
+</div>
+
 {{content}}
