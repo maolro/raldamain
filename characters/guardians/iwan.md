@@ -1,5 +1,10 @@
 ---
 title: Iwan
+nacionalidad: Klonum
+alineamiento: Neutro Verdadero
+fecha-de-nacimiento: 4037
+fecha-de-muerte: 4063
+rangos: Pirokinesia, Artes Marciales, Plantilla de Fuego
 ---
 
 ## Índice

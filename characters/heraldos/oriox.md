@@ -1,5 +1,10 @@
 ---
 title: Oriox
+nacionalidad: Shadowfell
+alineamiento: Neutral maligno
+fecha-de-nacimiento: 4030?
+fecha-de-muerte: sigue vivo
+rangos: Nigromancia, Plantilla Sombría, Influenciar
 ---
 
 ## Índice

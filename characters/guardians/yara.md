@@ -1,7 +1,10 @@
 ---
 title: Yara
-race: Humano
-name: Yara
+nacionalidad: Desconocida
+alineamiento: Neutral Bueno
+fecha-de-nacimiento: 4045
+fecha-de-muerte: sigue viva
+rangos: Pirokinesia, Aerokinesia, Geokinesia, Hidrokinesia, Artes Marciales, Elementalismo avanzado (Relámpago), Plantilla Avatar 
 ---
 
 Nacida y criada en un lujar alejado pronto iría hacia nuevos acabando así en Klonum donde comenzaría ha forjarse un destino son saber que el destino le aguarda cosas mas grandes todavía.
