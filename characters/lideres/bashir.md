@@ -5,6 +5,7 @@ alineamiento: Caótico maligno
 fecha-de-nacimiento: 4011
 fecha-de-muerte: 4083
 rangos: Aerokinesia, Elementalismo avanzado (Rayo, Tormenta), Plantilla de Aire
+image: bashir.jpg
 ---
 
 ## Índice

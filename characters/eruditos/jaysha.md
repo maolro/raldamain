@@ -5,6 +5,7 @@ alineamiento: Caótico bueno
 fecha-de-nacimiento: 4043
 fecha-de-muerte: sigue viva
 rangos: Ingeniería, Bombas, Cibernética
+image: jaysha.jpg
 ---
 
 ## Especialidades
