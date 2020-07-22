@@ -5,6 +5,7 @@ alineamiento: Neutral Bueno
 fecha-de-nacimiento: 4046
 fecha-de-muerte: sigue vivo
 rangos: Magia de Vida, Reflejos, Influenciar, Plantilla Elegido
+image: volo.jpg
 ---
 
 

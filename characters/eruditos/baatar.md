@@ -5,6 +5,7 @@ alineamiento: Legal Maligno
 fecha-de-nacimiento: 4038
 fecha-de-muerte: 4073
 rangos: Ingeniería, Pilotar, Alquimia
+image: baatar.jpg
 ---
 
 Criado desde joven en una familia que tenia muchas expectativas puestas en él termino refugiandose en un caparazón al que solo podía acceder kuvira aunque tras algunos errores sería ella misma la que lo terminaría sin piedad

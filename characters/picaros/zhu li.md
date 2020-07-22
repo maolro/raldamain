@@ -5,6 +5,7 @@ alineamiento: Neutral maligno
 fecha-de-nacimiento: 4042
 fecha-de-muerte: 4090?
 rangos: Influenciar, Reflejos
+image: zhu li.jpg
 ---
 
 
