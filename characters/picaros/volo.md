@@ -9,17 +9,6 @@ image: volo.jpg
 ---
 
 
-
-
-## Índice
-
-* auto-gen TOC:
-{:toc}
-
-
-
-
-
 ## Especialidades
 
 

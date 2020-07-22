@@ -8,10 +8,6 @@ rangos: Nigromancia, Plantilla Sombría, Influenciar
 image: oriox.jpg
 ---
 
-## Índice
-
-{:toc}
-
 ## Especialidades
 
 ## Rasgos

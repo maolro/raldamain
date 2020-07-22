@@ -9,16 +9,6 @@ image: zhu li.jpg
 ---
 
 
-
-## Índice
-
-* auto-gen TOC:
-{:toc}
-
-
-
-
-
 ## Especialidades
 
 
