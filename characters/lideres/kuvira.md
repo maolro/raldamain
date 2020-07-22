@@ -1,6 +1,10 @@
 ---
 title: Kuvira
-
+nacionalidad: Mazarin
+alineamiento: Legal neutro, luego Legal maligno
+fecha-de-nacimiento: 4039
+fecha-de-muerte: 4073
+rangos: Geokinesia, Elementalismo avanzado (Metal), Plantilla de Tierra, Presencia
 ---
 # Kuvira
 

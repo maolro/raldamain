@@ -1,5 +1,10 @@
 ---
 title: Opal
+nacionalidad: Kratoi
+alineamiento: Neutral Bueno, luego Neutro Verdadero
+fecha-de-nacimiento: 4049
+fecha-de-muerte: 4090
+rangos: Influenciar, Presencia, Reflejos
 ---
 
 ## Índice
