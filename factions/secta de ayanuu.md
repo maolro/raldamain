@@ -1,4 +1,4 @@
 ---
-title: Secta de Ayariuu
+title: Secta de Ayanuu
 ---
 
