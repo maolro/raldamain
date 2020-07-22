@@ -6,7 +6,7 @@ name: Yara
 
 Nacida y criada en un lujar alejado pronto iría hacia nuevos acabando así en Klonum donde comenzaría ha forjarse un destino son saber que el destino le aguarda cosas mas grandes todavía.
 
-### Índice
+## Índice
 
 [TOC]
 
