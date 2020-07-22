@@ -1,6 +1,8 @@
-theme: minima
-minima:
-  skin: dark
+title: Raldamain
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "/" # the base hostname & protocol for your site
+lang: es
 
 defaults:
   -
@@ -8,3 +10,19 @@ defaults:
       path: "characters"
     values:
       layout: character
+      category: character
+
+
+# Build settings
+safe: true # always trues on github-pages, disables _plugins/
+markdown: kramdown
+sass:
+  indentWidth: 4
+  style: compressed
+  precision: 10
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
