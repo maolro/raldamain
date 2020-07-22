@@ -1,0 +1,31 @@
+---
+layout: page
+---
+<div class="float-lg-right card ml-2 mb-1" style="max-width:400px;width:100%" >
+  {% if page.image %}
+  <img class="card-img-top" style="max-width:100%;height:auto;" src="{{ page.image }}">
+  {% endif %}
+  <div class="card-body">
+    <h4 class="card-title">{{ page.title }}</h4>
+	<div class="card-text">
+		<dl class="row">
+			{% if page.nacionalidad %}<dt class="col-sm-6">Nacionalidad</dt> <dd class="col-sm-6">{{ page.nacionalidad }}</dd> {% endif %}
+			{% if page.alineamiento %}<dt class="col-sm-6">Alineamiento</dt> <dd class="col-sm-6">{{ page.alineamiento }}</dd> {% endif %}
+			{% if page.fecha-de-nacimiento %}<dt class="col-sm-6">Fecha de nacimiento</dt> <dd class="col-sm-6">{{ page.fecha-de-nacimiento }}</dd> {% endif %}
+			{% if page.fecha-de-muerte %}<dt class="col-sm-6">Fecha de muerte</dt> <dd class="col-sm-6">{{ page.fecha-de-muerte }}</dd> {% endif %}
+			{% if page.rangos %}<dt class="col-sm-6">Rangos</dt> <dd class="col-sm-6">{{ page.rangos }}</dd> {% endif %}
+		</dl>
+	</div>
+  </div>
+</div>
+<div class="container text-justify">
+
+{{ content | split: '<h' | first | markdownify }}
+    
+
+<h2>Índice</h2>
+{% include toc.html html=content %}
+
+<h{{ content | split: '<h' | shift | join:'<h' }}
+
+</div>
