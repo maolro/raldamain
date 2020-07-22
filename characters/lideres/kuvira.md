@@ -1,13 +1,14 @@
 ---
 title: Kuvira
-
+nacionalidad: Mazarin
+alineamiento: Legal neutro, luego Legal maligno
+fecha-de-nacimiento: 4039
+fecha-de-muerte: 4073
+rangos: Geokinesia, Elementalismo avanzado (Metal), Plantilla de Tierra, Presencia
+image: kuvira.jpg
 ---
 Nacida en una tierra devastada y huérfana a una temprana edad, Kuvira estaría condenada a una vida de miseria si no fuese por la benevolencia de la presidenta de Kratoi, quién la acabaría adoptando como una hija. Años después, Kuvira decide volver a su empobrecida tierra, ahora no como una niña asustada sino como una joven líder decida a crear una nación mejor.
 
-## Índice
-
-* auto-gen TOC:
-{:toc}
 
 ## Especialidades
 
@@ -65,10 +66,10 @@ Los generales del Imperio conspiraron en secreto destituir a Kuvira e intentar c
 
 Kuvira luchó con todas sus fuerzas, conociendo ya que aunque cayese, se llevaría a todos sus enemigos con ella. Yara intervino para detenerla y un mítico enfrentamiento se libró sobre la asediada capital de Mazarin. En un instante de distracción, Kuvira fue impactada por un relámpago de Yara, perdiendo la concentración y cayendo al suelo. Empalada por uno de los trozos de metal que había usado en la batalla, Kuvira empezó a desangrarse lentamente hasta que Yara le dio un golpe de gracia, acabando con ella de una manera rápida y sin dolor. La Gran Unificadora había caído.
 
-## Relaciones
-
-pendiente de hacer
-
 ## Conclusión
 
 Kuvira había muerto en esa batalla, pero a causa de su pacto con Shade la muerte no era su final. Reencarnando en otro cuerpo, Oriox la buscaría y desde un lugar oculto la entrenaría para que algún día recuperase su puesto. Sus Kempetai, siempre leales a ella más allá de su muerte, manipulan eventos en Mazarin esperando su glorioso retorno. Entonces, Mazarin renacerá.
+
+## Relaciones
+
+pendiente de hacer (Yara, Oriox, Baatar, Volo, Opal, Crassus)
