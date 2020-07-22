@@ -10,10 +10,6 @@ image: anna libert.jpg
 
 Una chica sencilla y amable comienza con lagunas en sus recuerdos en lo que son las ruinas de un viejo orfanato pero cuando se da cuenta un sinfín de horrores comienzan a aparecer en su vida y se verá obligado a aventurarse para poder averiguar que está ocurriendo y solucionarlo.
 
-## Índice
-
-[TOC]
-
 ## Especialidades
 
 Ana es buena simpatizando de la forma mas simple con la mayoría de personas que la conocen ganándose su favor de manera casi inmediata, mas allá también tiene un buen dominio de las armas de fuego y artes marciales y sobre el final adquiere habilidades oníricas, mágicas y al igual que su hermano, aberrantes

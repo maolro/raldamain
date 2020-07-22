@@ -1,8 +1,7 @@
 ---
 layout: page
 ---
-
-<div class="float-right card" style="width:400px">
+<div class="float-right card ml-2 mb-1" style="width:400px">
   {% if page.image %}
   <img class="card-img-top" style="max-width:100%;height:auto;" src="{{ page.image }}">
   {% endif %}
@@ -19,5 +18,14 @@ layout: page
 	</div>
   </div>
 </div>
+<div class="container text-justify">
 
-{{content}}
+{{ content | split: '<h' | first | markdownify }}
+    
+
+<h2>Índice</h2>
+{% include toc.html html=content %}
+
+<h{{ content | split: '<h' | shift | join:'<h' }}
+
+</div>

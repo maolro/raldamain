@@ -7,14 +7,8 @@ fecha-de-muerte: 4073
 rangos: Geokinesia, Elementalismo avanzado (Metal), Plantilla de Tierra, Presencia
 image: kuvira.jpg
 ---
-# Kuvira
-
 Nacida en una tierra devastada y huérfana a una temprana edad, Kuvira estaría condenada a una vida de miseria si no fuese por la benevolencia de la presidenta de Kratoi, quién la acabaría adoptando como una hija. Años después, Kuvira decide volver a su empobrecida tierra, ahora no como una niña asustada sino como una joven líder decida a crear una nación mejor.
 
-## Índice
-
-* auto-gen TOC:
-{:toc}
 
 ## Especialidades
 

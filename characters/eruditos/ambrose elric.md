@@ -8,10 +8,6 @@ rangos: Alquimia, Bombas, Ingeniería
 image: ambrose elric.jpg
 ---
 
-## Índice
-
-* auto-gen TOC:
-{:toc}
 
 ## Especialidades
 

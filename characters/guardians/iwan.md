@@ -8,14 +8,6 @@ rangos: Pirokinesia, Artes Marciales, Plantilla de Fuego
 image: iwan.jpg
 ---
 
-## Índice
-
-* auto-gen TOC:
-{:toc}
-
-
-
-
 
 ## Especialidades
 

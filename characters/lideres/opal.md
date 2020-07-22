@@ -8,10 +8,6 @@ rangos: Influenciar, Presencia, Reflejos
 image: opal.jpg
 ---
 
-## Índice
-
-* auto-gen TOC:
-{:toc}
 
 ## Especialidades
 

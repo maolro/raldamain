@@ -5,14 +5,9 @@ alineamiento: Caótico maligno
 fecha-de-nacimiento: 4068
 fecha-de-muerte: 4090?
 rangos: Magia Onírica, Magia Psíquica, Magia Ilusoria, Plantilla Aberrante
-image: oriox.jog
+image: oriox.jpg
 ---
 
-
-
-## Índice
-
-[TOC]
 
 ## Especialidades
 

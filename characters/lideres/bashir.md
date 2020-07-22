@@ -8,15 +8,6 @@ rangos: Aerokinesia, Elementalismo avanzado (Rayo, Tormenta), Plantilla de Aire
 image: bashir.jpg
 ---
 
-## Índice
-
-* auto-gen TOC:
-{:toc}
-
-
-
-
-
 ## Especialidades
 
 
