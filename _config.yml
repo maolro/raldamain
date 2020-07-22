@@ -10,7 +10,24 @@ defaults:
     values:
       layout: character
       category: character
-
+  -
+    scope:
+      path: "locations"
+    values:
+      layout: character
+      category: location
+  -
+    scope:
+      path: "factions"
+    values:
+      layout: character
+      category: faction
+  -
+    scope:
+      path: "events"
+    values:
+      layout: character
+      category: event
 
 # Build settings
 safe: true # always trues on github-pages, disables _plugins/

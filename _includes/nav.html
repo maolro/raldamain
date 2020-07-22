@@ -9,11 +9,11 @@
 	    {% assign counter = 0 %}
         {% for item in site.data.menus.header  %}		
 		  
-	    <li class="nav-item dropdown">
+	    <li class="nav-item dropdown" >
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink{{ counter }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  {{ item.title }}
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{ counter }}">
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{ counter }} style="max-height: 100vh; overflow-y: auto;">
 			{% assign pages=site.pages | where:"category", item.category | sort: 'title' %}
 			{% for page in pages %}
 				<a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a>
