@@ -1,7 +1,9 @@
 header:
-- title: Reglas
-  category: rules
 - title: Geografía
-  category: geography
+  category: location
+- title: Facciones
+  category: faction
+- title: Eventos
+  category: event
 - title: Personajes
   category: character
