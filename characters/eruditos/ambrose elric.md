@@ -8,7 +8,6 @@ rangos: Alquimia, Bombas, Ingeniería
 image: ambrose elric.jpg
 ---
 
-
 ## Especialidades
 
 
