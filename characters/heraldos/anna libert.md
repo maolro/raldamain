@@ -1,7 +1,7 @@
 ---
 title: Anna Libert
 nacionalidad: Mazarin
-alineamiento: Neutral Bueno
+alineamiento: Neutral Bueno, luego Caótico bueno
 fecha-de-nacimiento: 4068
 fecha-de-muerte: sigue viva
 rangos: Magia Onírica, Magia Psíquica, Plantilla Aberrante, Artes Marciales

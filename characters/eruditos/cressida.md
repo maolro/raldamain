@@ -8,19 +8,15 @@ rangos: Rastrear, Reflejos, Aptitud con arma (pistolas)
 image: cressida.jpg
 ---
 
-
-
-Con una gran reputación que acabaría precediéndola terminaría siendo una de las mejores en su oficio con la que pocos podrían rivalizar inconsciente de que pronto serían esas mismas habilidades las que decidirían si vive o muere.
-
-
+Armada con grandes habilidades de observación y deducción, Cressida se ha ganado la reputación de ser una de las mejores investigadoras de Kratoi. Su deseo de llegar a la solución de todo misterio acabaría enfrentándola contra fuerzas más allá de su entendimiento e involucrándola en un caso más grande que cualquier cosa que podría concebir.
 
 ## Especialidades
 
-Siendo ella una persona talentosa podía desenvolverse bastante bien en una gran variedad de ámbitos estuvieran relacionados con su profesión destacando entre estos su capacidad de observación y deducción que le permitían ver los mas pequeños detalles y unirlos en una sola pieza y su capacidad de adaptación y aprendizaje a la hora de desenvolverse en entornos nuevos o desconocidos.
+Cressida es una persona ingeniosa capaz de desenvolverse en una gran variedad de ámbitos relacionados con su profesión. Destacan particularmente su capacidad de observación y una memoria fotográfica, los cuáles le permiten fijarse en los detalles más mínimos y relacionarlos para llegar a una deducción. Ella se guía por la razón y la ciencia, siendo naturalmente escéptica de eventos sobrenaturales sin lógica aparente. Es además tenaz y nunca acepta la solución fácil a un caso, prefiriendo informarse de todo lo posible para asegurarse que se haga justicia.
 
 ## Rasgos
 
-Es una amable pero implacable a la hora de hacer justicia aunque si la situación lo requiere sería capaz de retrasar la hora en la que una persona debería pagar hasta que se sepa todo al completo o que algo que tiene mayor prioridad esté acabado siendo a su vez también una persona flexible con una gran visión del panorama completo y las condiciones que la rodean e intentando escoger siempre la mas correcta
+Cressida es una persona amable e inquisitiva, siempre buscando informarse del entorno que la rodea. Su máximo ideal es la justicia, siempre asegurándose que el responsable de un crimen reciba su justo castigo. Cressida tiene convicciones fuertes, pero también es una persona muy flexible y busca conocer todas las perspectivas para poder escoger la opción correcta. Es capaz de desobedecer la ley y relacionarse con criminales si es necesario para resolver un caso, dándole una reputación de ser eficaz pero poco ortodoxa. Pero cuando Cressida se pone a resolver un misterio, no parará hasta que conozca la verdad.
 
 ## Historia
 
