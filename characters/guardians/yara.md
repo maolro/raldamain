@@ -8,15 +8,15 @@ rangos: Pirokinesia, Aerokinesia, Geokinesia, Hidrokinesia, Artes Marciales, Ele
 image: yara.jpg
 ---
 
-Nacida y criada en un lujar alejado pronto iría hacia nuevos acabando así en Klonum donde comenzaría ha forjarse un destino son saber que el destino le aguarda cosas mas grandes todavía.
+Yara fue criada en un lugar alejado, escuchando únicamente historias sobre el apocalíptico destino que la aguardaba. Guiada por las voces de su vida pasada, ella se marcharía de su hogar para descubrir su lugar en el mundo sin saber que el destino le aguardaría cosas más grandes todavía.
 
 ## Especialidades
 
-Mas alla del dominio sobre los cuatro elementos instruido por lo que antaño fue su familia cuenta tambien con un buen control de su querida alabarda teniendo tambien un buen carisma para atraer a la gente
+Yara es una de las personas más poderosas de su tiempo al ser la misma encarnación de Armonía. Como guardiana del equilibrio ella ostenta el poder de los Antiguos Dioses, el cual le otorga numerosas habilidades cómo control de los cuatro elementos, control sobre los espíritus y semi-invulnerabilidad en combate. Además, desde niña fue entrenada por un grupo de maestros en artes marciales y elementalismo, convirtiéndola en una máquina de destrucción. Pero por muy grande su poder, el destino trágicamente dictaría que las personas contra quiénes Yara acabaría luchando serían aquellas quiénes en algún punto fueron sus amigos.
 
 ## Rasgos
 
-Tiene una personalidad pura que mas o menos consigue mantener durante todo su arco lo cual le permite tomar decisiones dificiles para lograr lo que ella cree correcto y el biem mayor sin correr el riesgo de desviarse del camino sin embargo su comprension de la sociedad que la rodea es minima y a la hora de ver los puntos negativos de esta le hace dudar y preguntarse si vale la penar seguir haciendo lo que hace y seguir sacrificandose
+Yara es una de las pocas personas que se podrían considerar buenas en el mundo, sacrificando hasta su propia vida si es necesario por aquellos quiénes protege. Pero el bien no viene sin ningún precio, y para conseguir el bien mayor Yara ha tenido que sacrificar a personas muy importantes en su vida, empezando por su familia adoptiva y concluyendo con su amiga Kuvira. Su falta de conocimiento de cómo funciona el mundo a causa de ser criada en la aislación le han dado una visión inocente y simplista del mundo, a veces provocando que sus acciones para salvar al mundo acaben recibiendo duras críticas y provocando terribles efectos secundarios. Al final de su arco, Yara se da cuenta que la felicidad no se consigue con reconocimiento y gloria, sino gracias al amor y apoyo de sus seres queridos. 
 
 ## Historia
 
