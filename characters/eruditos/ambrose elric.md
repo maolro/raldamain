@@ -8,6 +8,8 @@ rangos: Alquimia, Bombas, Ingeniería
 image: ambrose elric.jpg
 ---
 
+
+
 ## Especialidades
 
 Ambrose Elrich es uno de los mejores alquimistas de su tiempo, experto en fabricación de sueros alquímicos y constructos de relojería. Con la perfección como su ideal, Ambrose dedica la mayoría de su tiempo al estudio y a fabricar máquinas. Como muestra de su devoción al aprendizaje él posee una de las mayores bibliotecas de los Reinos Libres, superando hasta a la Universidad de Uringen. Pero Ambrose esconde otra cara, una sólo visible cuando está bajo los efectos de estupefacientes y mutágenos. El culto alquimista se convierte en un salvaje bruto que ataca a aquellos que ve como imperfectos y débiles, atacándolos con bombas, gas venenoso y sus fieles creaciones.
