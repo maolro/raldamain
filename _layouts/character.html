@@ -9,11 +9,9 @@ layout: page
     <h4 class="card-title">{{ page.title }}</h4>
 	<div class="card-text">
 		<dl class="row">
-			{% if page.nacionalidad %}<dt class="col-sm-6">Nacionalidad</dt> <dd class="col-sm-6">{{ page.nacionalidad }}</dd> {% endif %}
-			{% if page.alineamiento %}<dt class="col-sm-6">Alineamiento</dt> <dd class="col-sm-6">{{ page.alineamiento }}</dd> {% endif %}
-			{% if page.fecha-de-nacimiento %}<dt class="col-sm-6">Fecha de nacimiento</dt> <dd class="col-sm-6">{{ page.fecha-de-nacimiento }}</dd> {% endif %}
-			{% if page.fecha-de-muerte %}<dt class="col-sm-6">Fecha de muerte</dt> <dd class="col-sm-6">{{ page.fecha-de-muerte }}</dd> {% endif %}
-			{% if page.rangos %}<dt class="col-sm-6">Rangos</dt> <dd class="col-sm-6">{{ page.rangos }}</dd> {% endif %}
+ {% for item in site.data.infobox.fields  %}
+		{% if page[ item.name ] %}<dt class="col-sm-6">{{ item.text }}</dt> <dd class="col-sm-6">{{ page[item.name] }}</dd> {% endif %}
+ {% endfor %}
 		</dl>
 	</div>
   </div>
