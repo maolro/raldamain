@@ -8,7 +8,7 @@ rangos: Pirokinesia, Aerokinesia, Geokinesia, Hidrokinesia, Artes Marciales, Ele
 image: yara.jpg
 ---
 
-Yara fue criada en un lugar alejado, escuchando únicamente historias sobre el apocalíptico destino que la aguardaba. Guiada por las voces de su vida pasada, ella se marcharía de su hogar para descubrir su lugar en el mundo sin saber que el destino le aguardaría cosas más grandes todavía.
+Criada en aislación por una misteriosa secta y entrenada toda su vida para realizar un apocalíptico destino, Yara acabaría huyendo de su hogar guiada por la voz de su vida pasada. Intentando buscar un lugar en el mundo y forjarse un camino, Yara nunca sospechó que el destino le aguardaría cosas más grandes todavía.
 
 ## Especialidades
 
