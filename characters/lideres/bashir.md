@@ -1,6 +1,6 @@
 ---
 title: Bashir
-nacionalidad: Arshalán
+nacionalidad: nómada
 alineamiento: Caótico maligno
 fecha-de-nacimiento: 4011
 fecha-de-muerte: 4083

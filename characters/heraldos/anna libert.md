@@ -1,18 +1,18 @@
 ---
 title: Anna Libert
 nacionalidad: Mazarin
-alineamiento: Neutral Bueno
+alineamiento: Neutral Bueno, luego Caótico bueno
 fecha-de-nacimiento: 4068
 fecha-de-muerte: sigue viva
 rangos: Magia Onírica, Magia Psíquica, Plantilla Aberrante, Artes Marciales
 image: anna libert.jpg
 ---
 
-Una chica sencilla y amable comienza con lagunas en sus recuerdos en lo que son las ruinas de un viejo orfanato pero cuando se da cuenta un sinfín de horrores comienzan a aparecer en su vida y se verá obligado a aventurarse para poder averiguar que está ocurriendo y solucionarlo.
+Una chica sencilla y amable, Anna recuerda haber vivido toda su vida en el apacible poblado de Thrushmoor. Esta vida de calma sería rota catastróficamente con la llegada de un hombre misterioso quién trae tragedia y horror a su vida. Desde entonces Anna intenta buscar la verdad sobre su pasado y los descubrimientos que hace poco a poco despiertan el monstruo que habita dentro de ella.
 
 ## Especialidades
 
-Ana es buena simpatizando de la forma mas simple con la mayoría de personas que la conocen ganándose su favor de manera casi inmediata, mas allá también tiene un buen dominio de las armas de fuego y artes marciales y sobre el final adquiere habilidades oníricas, mágicas y al igual que su hermano, aberrantes
+Anna es capaz de fácilmente ganarse el aprecio de quiénes la rodean. No entiende del todo de dónde viene esta habilidad, pero desde siempre ella ha sido capaz de intuitivamente adivinar los problemas de las personas y saber qué decir en cada situación. Cuando los horrores empiezan a aparecer en su vida, Anna empieza a desarrollar extrañas habilidades mágicas y a rápidamente crecer en poder. Algunos de los nuevos poderes que aprende Anna son la magia mental, la magia onírica y la capacidad de viajar por el Mundo de los Sueños. Con cada verdad que descubre Anna crece en poder, pero sin saberlo empieza a perder su humanidad.
 
 ## Rasgos
 

@@ -8,15 +8,15 @@ rangos: Ingeniería, Bombas, Cibernética
 image: jaysha.jpg
 ---
 
-Hija de una persona influyente de la ciudad Jaysha ha tenido una vida cómoda desde que nació a pesar de ciertos traspiés pero serán los eventos posteriores que ocurrirán después de conocer a la Yara los que marcaran una nueva etapa en su vida
+Nacida en la cumbre de la riqueza y con grandes aspiraciones, Jaysha está hecha para cambiar el mundo que la rodea. Lo que ella nunca sabría es que un encuentro con la Avatar Yara llevaría su vida hacia una dirección completamente distinta y le haría replantearse todo lo que ha conocido hasta entonces.
 
 ## Especialidades
 
-Siendo capaz de desenvolverse en batalla de diferentes formas utiliza su espada ropera y gran destreza para vencer a sus enemigos aunque no dudará ni un segundo en utilizar sus bombas y otros artefactos si la situación se pone difícil e incluso el uso de guerreros mecánicos es posible para ella si se le logra convencer de la manera adecuada
+Hija del mejor artífice de Klonum, Jaysha ha crecido en un mundo de maravillas mecánicas y creatividad infinita. Las enseñanzas de su padre le han convertido en una gran ingeniera desde una temprana edad, siendo capaz de fabricar artefactos que artífices que duplican su edad sólo podrían soñar. Jaysha destaca especialmente por su capacidad de pensar fuera de la caja y aplicar su conocimiento de maneras inesperadas e insospechables. Está también entrenada en esgrima y sabe bien cómo usar sus inventos para acabar con aquellos que buscan dañar a ella o a sus seres queridos. 
 
 ## Rasgos
 
-Como la chica extrovertida y visionaria con gran curiosidad por las nuevas experiencias que es ve el mundo de la manera en la que es teniendo siempre una meta mas positiva a la que apuntar para el siendo así muy difícil deprimirla o hacerla dudar, sin embargo aun es joven y la labia o influencia de otras personas si que puede llegar ha hacerla dudar y tal vez hacer cosas de las que se arrepienta en un futuro o tal vez solo que se desvíe de su camino. 
+Jaysha es una persona extrovertida y visionaria con gran curiosidad por nuevas experiencias. Ella ve a las nuevas tecnologías como una manera de mejorar el mundo y siempre piensa en nuevas maneras de ayudar. Jaysha siente una pasión por nuevas experiencias, el cual le ha impulsado a aprovechar la vida al máximo, viajando a tierras lejanas y pasando por varias relaciones amorosas. Su vida hedonista ha provocado que corran una multitud de cotilleos y rumores sobre ella, cada uno más escandaloso que el anterior. Pero la verdadera motivación de  Jaysha es conseguir que la felicidad vuelva a su hogar, la cual desvaneció después de la trágica muerte de su madre. 
 
 ## Historia
 
