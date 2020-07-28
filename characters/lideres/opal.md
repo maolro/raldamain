@@ -8,7 +8,7 @@ rangos: Influenciar, Presencia, Reflejos
 image: opal.jpg
 ---
 
-nacida en la misma casa que el resto de sus hermanos fue alentada por su madre a que ocupase en el futuro el puesto de presidenta de la ciudad y fuese su sucesora pero nada ocurre como lo esperamos y tras una guerra que nunca deseo librar vio la visión de su madre retorcerse horriblemente
+La hija más joven de una ilustre familia, Opal vivió toda su vida en la sombra de sus más hábiles hermanos. Pero una serie de eventos acabarían destruyendo su pacífica vida y forzándola contra sus deseos a enfrentarse a su propia familia. 
 
 ## Especialidades
 

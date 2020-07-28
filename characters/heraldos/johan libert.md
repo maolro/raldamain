@@ -8,7 +8,7 @@ rangos: Magia Onírica, Magia Psíquica, Magia Ilusoria, Plantilla Aberrante
 image: johan libert.jpg
 ---
 
-
+Con apariencia de ángel y corazón de demonio, Johan siembra discordia y terror por dónde pasa. Tras una infancia como sujeto de terribles experimentos relacionados con los Mitos, él ha emergido como un monstruo dedicado únicamente a vengarse de aquellos responsables de su creación.
 
 ## Especialidades
 

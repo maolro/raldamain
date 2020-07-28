@@ -6,11 +6,16 @@ fecha-de-nacimiento: 4037
 fecha-de-muerte: 4063
 rangos: Pirokinesia, Artes Marciales, Plantilla de Fuego
 image: iwan.jpg
+
 ---
 
-Viviendo entre pobreza y delincuencia lo único que le queda que valga la pena es su hermano bolo, al cual intenta evitarle los males y sufrimientos del mundo pero ,será realmente capa de protegerlo para siempre o tendrá que pagar el precio por hacer lo correcto en un mundo injusto?
+Forzado a una vida de miseria, Iwan 
+
+Viviendo entre pobreza y delincuencia lo único que le queda que valga la pena es su hermano Volo, al cual intenta evitarle los males y sufrimientos del mundo pero ,será realmente capa de protegerlo para siempre o tendrá que pagar el precio por hacer lo correcto en un mundo injusto?
 
 ## Especialidades
+
+
 
 Sus especialidades están prácticamente optimizadas para la batalla siendo estas su control sobre el fuego y sus artes marciales que por separadas podrían tacharse de mediocres pero cuando las combina a la hora de la batalla puede terminar siendo una verdadera amenaza para sus oponentes utilizando trucos y estrategias simples pero inesperados.
 
@@ -30,7 +35,7 @@ Sus orígenes no son lo que se dicen un bonito cuento de hadas siendo ellos en o
 
 ### Guardián del grupo
 
-Después de que el grupo se formara completamente se limitó a observarlos y vigilarlos por el bien de Bolo principalmente pero de forma inevitable acabaría como el resto cogiendo aprecio por el resto de sus compañeros y terminaría finalmente velando por sus intereses de una forma mas laxa que con su hermano intentando que todos puedan ser felices a pesar de la misión que tendrán que hacer
+Después de que el grupo se formara completamente se limitó a observarlos y vigilarlos por el bien de Volo principalmente pero de forma inevitable acabaría como el resto cogiendo aprecio por el resto de sus compañeros y terminaría finalmente velando por sus intereses de una forma mas laxa que con su hermano intentando que todos puedan ser felices a pesar de la misión que tendrán que hacer
 
 ### La encrucijada del destino
 
