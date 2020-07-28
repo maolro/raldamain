@@ -8,7 +8,7 @@ rangos: Magia Onírica, Magia Psíquica, Plantilla Aberrante, Artes Marciales
 image: anna libert.jpg
 ---
 
-Una chica sencilla y amable, Anna recuerda haber vivido toda su vida en el apacible poblado de Thrushmoor. Esta vida de calma sería rota catastróficamente con la llegada de un hombre misterioso quién trae tragedia y horror a su vida. Desde entonces Anna intenta buscar la verdad sobre su pasado y los descubrimientos que hace poco a poco despiertan el monstruo que habita dentro de ella.
+Una chica sencilla y amable, Anna recuerda haber vivido toda su vida en el apacible poblado de Thrushmoor. Esta vida de calma sería rota catastróficamente con la llegada de un hombre misterioso quién trae tragedia y horror a su vida. Desde entonces Anna intenta buscar la verdad sobre su pasado, pero los descubrimientos que hace poco a poco despiertan el monstruo que habita dentro de ella.
 
 ## Especialidades
 
