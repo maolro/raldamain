@@ -7,7 +7,7 @@ resultado: Ustilus se convierte a la religión de Sek-Tebos pero pierde las prov
 
 ---
 
-La Guerra Cv
+La Guerra Civil de Ustilus fue un conflicto militar en el Imperio de Ustilus iniciado por la muerte de Feyn. 
 
 ## Trasfondo
 
