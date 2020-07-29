@@ -1,4 +1,6 @@
 ---
 title: Argostana
+habitantes: 
+nacion:
 ---
 
