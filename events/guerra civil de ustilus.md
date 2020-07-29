@@ -7,3 +7,12 @@ resultado: Ustilus se convierte a la religión de Sek-Tebos pero pierde las prov
 
 ---
 
+La Guerra Cv
+
+## Trasfondo
+
+
+
+## Invasión de Mazarin
+
+## La conspiración del Pacto
