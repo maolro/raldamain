@@ -26,6 +26,8 @@ image: volo.jpg
 ### Encuentro con Yara
 
 
+
+
 ### Bufón del grupo
 
 
