@@ -16,7 +16,7 @@ Anna es capaz de fácilmente ganarse el aprecio de quiénes la rodean. No entien
 
 ## Rasgos
 
-Es una persona decidida que se mantendrá firme en las decisiones que tome a pesar de la mayoría de circunstancias sin embargo no desea involucrar a las personas que tiene cerca y intenta alejarse de ellas para mantenerlas a salvo dejándola vulnerable
+Anna es una persona decidida que se mantendrá firme en las decisiones que tome a pesar de las horribles circunstancias que se encuentra. Cuando la vida que conoció cae en pedazos, Anna cree que ella sólo puede traer el fin del monstruo que es su hermano Johan. El miedo a Johan hace que ella intente no involucrar a las personas que tiene cerca e intenta alejarse de ellas para mantenerlas a salvo de él, pero esto hace que ella quede vulnerable en muchas situaciones y forzada a tomar decisiones difíciles. Anna sólo desea vivir una vida tranquila, pero sabe que nunca lo podrá hacer mientras Johan siga vivo.
 
 ## Historia
 
