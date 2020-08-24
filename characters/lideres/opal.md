@@ -22,7 +22,7 @@ inocente pero realista Opal mantiene los pies en la tierra mientras busca un fut
 
 ### Orígenes
 
-se crió junto a sus hermanos en Kratoi aunque al ser la hermana pequeña no llegó a poder influenciar del todo en ellos quedando su existencia como una ligera presencia dentro de su familia y de su ciudad casi imperceptible
+
 
 ### La invasión de Kratoi
 
