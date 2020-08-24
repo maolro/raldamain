@@ -12,13 +12,11 @@ Viviendo entre pobreza y delincuencia lo único que le queda que valga la pena e
 
 ## Especialidades
 
-
-
-Sus especialidades están prácticamente optimizadas para la batalla siendo estas su control sobre el fuego y sus artes marciales que por separadas podrían tacharse de mediocres pero cuando las combina a la hora de la batalla puede terminar siendo una verdadera amenaza para sus oponentes utilizando trucos y estrategias simples pero inesperados.
+Creciendo en uno de los peores barrios de Klonum, Iwan ha tenido que aprender a pelear para ganarse la vida y proteger a su hermano. Tiene talento de elementalista de fuego, pero nunca llega a usar sus habilidades al máximo por miedo a provocar daños colaterales. Lucha sin emoción ni placer, buscando acabar rápidamente con sus enemigos con un certero puñetazo antes de que puedan reaccionar. Sólo cuando sus seres queridos están en peligro lucha de una manera desenfrenada, moviéndose con extrema agilidad y combinando puñetazos con llamaradas.
 
 ## Rasgos
 
-Es una persona sencilla y humilde totalmente consciente del mundo que le rodea siendo en esencia una persona bastante madura para su edad que principalmente no le importa demasiado la ley o lo que piensen otras personas mientras su hermano se encuentre bien siendo así capaz de cometer crímenes menores como el robo con el objetivo de mantenerlo y mantener viva su ilusión e inocencia a pesar de saber que algún día deberá dejarlo ir, dejando únicamente en entredicho hasta que punto sería capaz de llegar por su hermano, si por ejemplo mataría por el o por otro lado se sacrificaría por él
+Iwan es una persona sencilla y humilde, acostumbrado a vivir en los pozos más bajos de la miseria. Es consciente de la penosa situación del mundo que le rodea y la acepta, pero intenta a la vez ocultar a su hermano Volo de la oscuridad que él conoce para que así pueda estar feliz. Ha entrado en el mundo del crimen para proteger a su hermano y así lo hará, pero generalmente rechaza trabajos donde tenga que herir a inocentes, prefiriendo especializarse en pequeños robos y peleas callejeras. Iwan sabe que algún día tendrá que dejar ir a su hermano, pero es incapaz de aceptarlo y prefiere que Volo viva en sus fantasías antes de que se convierta en una persona cínica como él.
 
 ## Historia
 
