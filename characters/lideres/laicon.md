@@ -1,7 +1,7 @@
 ---
 title: Laicon
 nacionalidad: Jaddi, pero residente en Dairov
-alineamiento: Legal maligno
+alineamiento: Neutral maligno
 fecha-de-nacimiento: 3957
 fecha-de-muerte: 4002?
 rangos: Plantilla Sombria, Aptitud con filos ligeros, Reflejos, Magia de Evocacion
