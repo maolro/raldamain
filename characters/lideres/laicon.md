@@ -13,11 +13,11 @@ image: laicon.jpg
 
 ## Especialidades
 
-d
+Laycon es lo mas similar a el caballero ideal, o por lo menos lo sería si no hubiese terminado por traicionar su fe, teniendo por lo tanto de forma casi innata casi todas las aptitudes características de lo que una vez se le consideró que fue siendo en esencia una habilidad con el habla casi hipnótica capaz de embelesar a las masas y hacer dudar o convencer hasta a sus mismísimos enemigos y un dominio sobre la espada y la magia para nada envidiables, pero sería inocente pensar que los cambios después del comienzo de su periodo de herejía se limitaron únicamente a lo psicológico sino que fue mas allá y con la ayuda de un benefactor oscuro que acabó convirtiéndose en su maestro terminó amaestrando la técnica del control de la oscuridad de manera que junto a todo lo anterior terminó por convertirse en un adversario respetable en un número variado de ámbitos
 
 ## Rasgos
 
-d
+Es en esencia una persona perceptiva que se vale de la labia principalmente para lograr su objetivos y que a logrado hacer creer a la gran mayoría que lo han visto que era el que realmente movía los hilos, sin embargo esto es solo una mascara que utiliza para ocultar sus verdaderos objetivos y estos son ni mas ni menos que la servidumbre que tiene por su maestro que le abrió los ojos hacia una nueva verdad, en esencia el comportamiento que muestra es real y por lo tanto hace difícil discernir en que partes son una mentira sin embargo está atado por los planes de su maestro y por lo tanto son estos los que le  pueden hacer cometer errores que otros pueden usar para ver como es el en realidad siendo principalmente la persona que muestra al publico pero con una gran necesidad de algo en lo que creer, alguien a quien servir en resumen una meta en su vida que le permita seguir viviendo como persona
 
 ## Historia
 
