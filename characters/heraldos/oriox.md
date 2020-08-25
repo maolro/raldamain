@@ -46,6 +46,7 @@ Sin embargo no se dedicaría únicamente a aumentar su fuerza sino que esto solo
 
 ## Relaciones
 
+<<<<<<< HEAD
 pendiente de hacer (Kuvira, Baatar, Opal, Shade, Crassus y Zhu LI)
 
 Baatar: ``ciertamente tiene talento, eso es innegable pero es irritante lo molesto que llega a ser cuando me ve, quien diría que una persona que tiene tanto miedo a casi todo el mundo podría acabar guardando tanto odio por mi, aunque lo verdaderamente molesto es su necesidad de pegarse a Kuvira si tan solo pudiera deshacerme de él...´´
@@ -60,3 +61,6 @@ Zhu li:``Esa maldita mujer... tan insufrible, tan escurridiza, se atrevió a tra
 
 Kuvira:``Cuando la conocí me pareció curioso, sabía que los humanos no estaban dispuestos a morir y lucharían hasta el final pero ella... realmente ella es algo nuevo. Realmente me sorprendió lo anterior pero ahora lo que me deja atónito es que parece no temerme en lo absoluto ni siquiera una leve inquietud, ¿¡será por que le salvé la vida? de todas formas algo me hace querer quedarme y comprobarlo, me pregunto si ella...´´
 
+=======
+pendiente de hacer =)
+>>>>>>> 19d4e79bdbfbc47f740d103378c376729430c80b
