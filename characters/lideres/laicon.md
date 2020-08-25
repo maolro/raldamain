@@ -40,3 +40,33 @@ La muerte de Feyn dejó debilitada a la ciudad mercantil de Rizad, renovando la 
 ## Conclusión
 
 Capturado por los ustileses, Laicon fue condenado a muerte y ejecutado el día siguiente, con sus restos expuestos públicamente para desmoralizar a los rebeldes. Pero sus captores no anticiparon que una misteriosa secta ofreciese un trato a Laicon: la oportunidad de sobrevivir a cambio de su servicio. Laicon aceptó a regañadientes, y así el siniestro escritor logró fugarse de nuevo.
+
+## Relaciones
+
+### Abshalom
+
+"La más pura expresión del fanatismo que busco erradicar. Vive aferrado a su fe porque no se atreve a reconocer que toda su vida ha sido una mentira. Todos sus esfuerzos para acabar conmigo y callar mi voz sólo demuestran que muy al fondo sabe que yo tengo razón."
+
+### Ajek
+
+"Mi discípulo ha cambiado tanto desde que le conocí. Lucha con ferocidad por su orden y compañeros, moviéndole no la religión sino lo que él ve que es correcto. Aunque esto le haga un temible enemigo imposible de corromper, me enorgullece que mi discípulo haya aprendido tanto de mí"
+
+### Madeleine
+
+"Madeleine es todo un misterio. Como yo, está sola en este mundo, buscando aferrarse al servicio de otra persona para que su vida tenga sentido. Todos nuestros encuentros han sido un entretenido desafío, y su convicción e inteligencia me recuerdan tanto a mí. Lamentablemente, este mundo no es lo suficiente grande para nosotros dos y no puedo conseguir mis objetivos mientras ella siga viva. Qué pena"
+
+### Regulus
+
+"Este joven soldado es mucho más de lo que aparenta. Su palabrería de un nuevo dios y las convicciones con las que lo defiende pueden indicar su relación con una organización superior. Personas como él son los perfectos peones: siguen a sus superiores con devoción y no se dan cuenta de lo irrelevantes que son sus vidas."
+
+### Tirion
+
+"Un necio con más poder del que se merece. Lucha sin pensar en las consecuencias de sus actos y malgasta sus talentos en la causa equivocada. Explotaré sus habilidades al máximo y cuando termine con él habrá que eliminarlo. Viendo los resultados, pienso que quizás mis compañeros del Pacto han cometido un error creando guerreros como él."
+
+### Viorica
+
+"Me asombra sea capaz de traicionar a todo lo que conoció por una mísera oportunidad de servicio. Ve la vida como una gran aventura y actúa sin preservación propia. Es útil de usar, pero es mejor quitármela de encima de la forma más favorable posible antes de que piense traicionarme de la misma manera que traicionó a su pueblo."
+
+
+
+### 

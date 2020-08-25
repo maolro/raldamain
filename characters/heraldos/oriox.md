@@ -42,4 +42,4 @@ Este sueño se rompe catastróficamente cuando Kuvira pierde la guerra contra Us
 
 ## Relaciones
 
-pendiente de hacer (Yara, Devara, Khanor, Sheolta, Nira, Chodao)
+pendiente de hacer =)
