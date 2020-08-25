@@ -36,10 +36,27 @@ Este sueño se rompe catastróficamente cuando Kuvira pierde la guerra contra Us
 
 ### Tirano sombrío de Hakrapeu
 
+Destrozado por no haber podido evitar la muerte de Kuvira viaja a Hakrapeu la tierra de la nigromancia donde derrota al dragón tirano que por tanto tiempo había estado gobernando ocupando su puesto y realizando cambios, el primero fue dividir a la sociedad en castas y luego volverlas a dividir en clases para provocar la guerra entre ellas protegiendo únicamente algunos pueblos o ciudades para garantizar que la población continuase aumentando para mas tarde poder aumentar su ejercito cada vez mas y repetir este ciclo que torturaría a Hakrapeu durante los años venideros.
+
+Sin embargo no se dedicaría únicamente a aumentar su fuerza sino que esto solo sería un medio para despues de encontrar a la reencarnación de Kuvira llevarla a Hakrapeu donde poder educarla y entrenarla para que el día que ella recupere sus recuerdos esté preparada para el nuevo mundo donde va a estar
+
 ## Conclusión
 
  Oriox viaja al reino pantanoso de Hakrapeu y vence al tiránico dragón que lo domina, transformándose en su nuevo oscuro señor. Bajo su reinado, los no-muertos reinan Hakrapeu mientras él educa a la nueva encarnación de Kuvira y prepara su venganza contra la humanidad.
 
 ## Relaciones
 
-pendiente de hacer (Yara, Devara, Khanor, Sheolta, Nira, Chodao)
+pendiente de hacer (Kuvira, Baatar, Opal, Shade, Crassus y Zhu LI)
+
+Baatar: ``ciertamente tiene talento, eso es innegable pero es irritante lo molesto que llega a ser cuando me ve, quien diría que una persona que tiene tanto miedo a casi todo el mundo podría acabar guardando tanto odio por mi, aunque lo verdaderamente molesto es su necesidad de pegarse a Kuvira si tan solo pudiera deshacerme de él...´´
+
+Opal:``A esta pobre criatura parece que vivir le resulta un martirio aun mayor que la muerte misma pero es lógico cuando toda su familia acaba peleándose por ver quien conquista su ciudad, realmente una lastima pero así es la vida aunque si estuvieses dispuesta a pagar el precio podría hacer que dejaras de sufrir, ¿no crees que sería agradable?´´
+
+Shade: ``Me dio la habilidad para poder venir a este mundo pero por alguna razón siento que me sigue observando e incluso moviendo desde allá, pero no puedo renegar de él ahora, no puedo arrepentirme ahora que ya he pagado pero mas importante aun no puedo arrepentirme después de que la salvara a ella, solo espero no arrepentirme de aquel pacto que me perseguirá hasta el final de mis días´´
+
+Crassus:``Orgulloso cuanto menos tenia que acabar siendo ni mas ni menos que el enemigo de Kuvira, con lo grande que es el mundo... sin embargo al igual que el resto de esta extraña familia parece que también se arrepiente de las decisiones que ha tomado, ¿que se siente Crassus... que se siente al saber que Kuvira es la única que tiene lo que hace falta realmente para gobernar y mejor aun que se siente al saber que has dado tanto para únicamente terminar arrepintiéndote?
+
+Zhu li:``Esa maldita mujer... tan insufrible, tan escurridiza, se atrevió a traicionarnos y aun lo hace orgullosa, si tan solo pudiese alcanzarte o encontrarte al menos, daría mucho de lo que soy y tengo solamente por poder acabarte con mis propias manos pero no te preocupes mi pequeña amiga, porque llegará el día en el que alguien acabará contigo y yo estaré ahí para observarte y ver como pagas por tus pecados, esperemos que al menos hayas aprendido a rezar para salvar tu alma...´´
+
+Kuvira:``Cuando la conocí me pareció curioso, sabía que los humanos no estaban dispuestos a morir y lucharían hasta el final pero ella... realmente ella es algo nuevo. Realmente me sorprendió lo anterior pero ahora lo que me deja atónito es que parece no temerme en lo absoluto ni siquiera una leve inquietud, ¿¡será por que le salvé la vida? de todas formas algo me hace querer quedarme y comprobarlo, me pregunto si ella...´´
+
