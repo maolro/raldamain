@@ -72,4 +72,13 @@ Kuvira había muerto en esa batalla, pero a causa de su pacto con Shade la muert
 
 ## Relaciones
 
-pendiente de hacer (Yara, Oriox, Baatar, Volo, Opal, Crassus)
+### Yara
+
+### Oriox
+
+### Baatar
+
+### Opal
+
+### Crassus
+
