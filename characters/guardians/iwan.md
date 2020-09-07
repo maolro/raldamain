@@ -22,13 +22,15 @@ Iwan es una persona sencilla y humilde, acostumbrado a vivir en los pozos más b
 
 ### Orígenes
 
-Sus orígenes no son lo que se dicen un bonito cuento de hadas siendo ellos en origen personas influyentes que tuvieron que refugiarse por ciertas razones y que desafortunadamente perdieron a sus padres durante un incendio del cual los niños apenas fueron capaces de salir pero desde entonces quedarían condenados a vivir una vida de miserias esperando lo que el destino tenga preparado para ellos.
+Iwan nació en Klonum, hijo de una familia humilde. Su padre llegó a Klonum como refugiado político desde Mazarin, mientras que su madre era propietaria de una pequeña tienda en los barrios bajos. Poco después de cumplir los trece años, su hogar fue incendiado por criminales cuando su familia rechazó pagar dinero de protección al señor de crimen local. Abandonado en la calle y con única compañía de su hermano pequeño Volo, Iwan se unió a una banda criminal para sobrevivir. Al ser aún muy joven, Iwan fue utilizado por su pandilla para transportar drogas y realizar pequeños robos, frecuentemente recibiendo brutas palizas. Cuando volvía a su hogar después de un día de crimen, contaba todo tipo de historias fantásticas a su hermano pequeño Volo para así ocultarle la crudeza de su vida. 
 
 ### Encuentro con Yara
 
 
 
 ### Guardián del grupo
+
+Tras el ataque de la Hermandad, Iwan 
 
 Después de que el grupo se formara completamente se limitó a observarlos y vigilarlos por el bien de Volo principalmente pero de forma inevitable acabaría como el resto cogiendo aprecio por el resto de sus compañeros y terminaría finalmente velando por sus intereses de una forma mas laxa que con su hermano intentando que todos puedan ser felices a pesar de la misión que tendrán que hacer
 
