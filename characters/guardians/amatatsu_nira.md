@@ -8,3 +8,4 @@ rangos: Hidrokinesia, Plantilla elemental (Agua), Aptitud con filos ligeros, Apt
 image: nira.jpg
 ---
 
+​	
