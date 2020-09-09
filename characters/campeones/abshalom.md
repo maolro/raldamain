@@ -30,7 +30,7 @@ Tan grande era su deseo de acabar con Laicon que estuvo dispuesto a colaborar co
 
 ### El golpe de estado
 
-
+La revuelta en Rizad fue una chispa que provocó revueltas a lo largo de todo el Imperio. 
 
 ## Relaciones
 
