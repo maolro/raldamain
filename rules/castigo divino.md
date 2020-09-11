@@ -1,3 +1,7 @@
+---
+title: Castigo Divino
+---
+
 ## Rango I(+ amarillo)
 
 <u>descarga divina:</u> ataca a un enemigo con el poder de tu dios. Este ataque hace 2+ éxitos daño, y su forma y efectos varía según tu deidad. Algunas posibilidades son una bola de fuego( distancia 60 pies, explosión de radio 5 pies o una onda expansiva centrada en ti radio 15 pies). Esta habilidad se puede usar R+2 veces al día. Gasta un uno para contrarrestar otra descarga divina
