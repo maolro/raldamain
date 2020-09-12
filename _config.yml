@@ -28,6 +28,13 @@ defaults:
     values:
       layout: character
       category: event
+  -
+    scope:
+      path: "rules"
+    values:
+      layout: character
+      category: rule
+
 
 # Build settings
 safe: true # always trues on github-pages, disables _plugins/

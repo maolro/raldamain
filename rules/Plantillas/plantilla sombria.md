@@ -1,3 +1,7 @@
+---
+title: Plantilla Sombría
+---
+
 ## Rango I obtienes un rango adicional en sigilo y percepción
 
 <u>sigilo sombrío:</u> tienes + blanco en tiros de sigilo. No haces ruido al pasar ni dejas huellas. Puedes usar una acción bonus para esconderte si estas en un lugar a oscuras

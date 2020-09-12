@@ -1,3 +1,7 @@
+---
+title: Filos pesados
+---
+
 ## Rango I +amarillo en ataques
 
 <u>parada:</u> como reacción, puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada, y además puedes cancelar un éxito generado. Parada solo puede usarse una vez al turno(puedes usarlo todas las veces que quieras si juegas defensivamente)
