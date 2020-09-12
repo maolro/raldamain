@@ -8,7 +8,7 @@
 
 <u>animar cadáver: </u>como acción de turno completo, infunde de una semblanza de vida al cadáver. Ese cadáver resucita como un zombie o esqueleto bajo tus ordenes. Puedes comandar un número de no muertos menores igual a tres veces tu rango de nigromancia(6 a rango II)
 
-## Rango III(+dado amarillo Y +1 daño)
+## Rango III (+dado amarillo Y +1 daño)
 
 <u>Enervación:</u> al hacer daño con tu toque necrótico puedes gastar 2 ventajas para reducir una estadística física del objetivo por 1. Esta reducción dura hasta que realice un descanso largo, y objetivos afectados por enervación no pueden sanarse puntos de vitalidad. Crítico: reduce una estadística mental del objetivo por uno
 
@@ -18,7 +18,7 @@
 
 <u>tormenta de energía negativa</u>: como acción estándar, haz un ataque de toque necrótico contra todas las criaturas en un radio de 30 pies centrado en ti. sufres 2 daño no letal al realizar este ataque
 
-## Rango V(+dado amarillo y +1 daño)
+## Rango V (+dado amarillo y +1 daño)
 
 <u>drenar cordura:</u> al hacer daño con tu toque necrótico puedes gastar 2 ventajas para reducir una estadística mental del objetivo por 1. esta reducción dura hasta que realice un descanso largo. critico: el objetivo está confuso y recibe una locura. Algunas de las posibilidades de locura son fobias relacionadas con la muerte o que piense que se ha convertido en un no muerto
 
