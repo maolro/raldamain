@@ -1,5 +1,6 @@
 ---
 title: Armaduras
+image: armaduras.jpg
 ---
 
 ## Rango I
