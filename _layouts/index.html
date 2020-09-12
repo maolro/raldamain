@@ -1,0 +1,17 @@
+---
+layout: page
+---
+<div class="container text-justify">
+
+{{ content }}
+    
+<h2>Índice</h2>
+
+<ul>
+{% assign mypages =  site.pages | where: "category", page.category | sort: "title" %}
+{% for item in mypages %}		
+     <li><a href="{{item.url}}">{{item.title}}</a></li>		
+{% endfor %}
+</ul>
+
+</div>
