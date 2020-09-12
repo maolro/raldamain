@@ -1,3 +1,7 @@
+---
+title: Escudo
+---
+
 ## Rango I +rojo en tirada defensivas con escudo, cancela 1 éxito (1/turno)
 
 <u>Ataque con escudo:</u> Como acción bonus haz un ataque con tu escudo. El tiro de ataque es igual a la defensa de tu escudo y al impactar empuja 5 pies por éxito conseguido. Gata dos ventajas para tropezar y 4 para inflingir una herida permanente leve. Debes moverte como minimo 5 pies para hacer un ataque con escudo y haces daño adicional igual a tu rango +1 al impactar con tu carga.
