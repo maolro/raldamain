@@ -6,22 +6,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
-	    {% assign counter = 0 %}
-        {% for item in site.data.menus.header  %}		
-		  
-	    <li class="nav-item dropdown" >
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink{{ counter }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% for item in site.data.menus.header  %}
+			{% for page in site.pages %}
+		    {% if page.category == item.category and page.layout == "index" %}
+  	        <li class="nav-item" >
+			<a class="nav-link" href="{{page.url}}">
 			  {{ item.title }}
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{ counter }} style="max-height: 100vh; overflow-y: auto;">
-			{% assign pages=site.pages | where:"category", item.category | sort: 'title' %}
-			{% for page in pages %}
-				<a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a>
-			{% endfor %}
-	        </div>
-		</li>
- 
-        {% assign counter = counter | plus:1 %}
+  		    </li> 
+			{% endif %}
+        {% endfor %}
         {% endfor %}
       </ul>
     </div>
