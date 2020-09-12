@@ -1,3 +1,7 @@
+---
+title: Armaduras
+---
+
 ## Rango I
 
 <u>entrenamiento con armaduras:</u> Reduce por 1 el penalizador de armadura. Si logras reducir el penalizador a 0, puedes moverte y usar habilidades de reflejos como si no llevases armadura. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 1

@@ -7,8 +7,10 @@ layout: page
     
 <h2>Índice</h2>
 
-<ul>
-{% assign mypages =  site.pages | where: "category", page.category | sort: "title" %}
+<div class="container">
+  <ul class="list-unstyled card-columns">
+
+{% assign mypages =  site.pages | where: "category", page.category | where: "layout", "character" | sort: "title" %}
 {% for item in mypages %}		
      <li><a href="{{item.url}}">{{item.title}}</a></li>		
 {% endfor %}

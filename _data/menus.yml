@@ -1,4 +1,6 @@
 header:
+- title: Reglas
+  category: rule
 - title: Geografía
   category: location
 - title: Facciones
