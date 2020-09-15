@@ -49,7 +49,7 @@ Capturado por los ustileses, Laicon fue condenado a muerte y ejecutado el día s
 
 ### Ajek
 
-"Mi discípulo ha cambiado tanto desde que le conocí. Lucha con ferocidad por su orden y compañeros, moviéndole no la religión sino lo que él ve que es correcto. Aunque esto le haga un temible enemigo imposible de corromper, me enorgullece que mi discípulo haya aprendido tanto de mí"
+"Mi discípulo ha cambiado tanto desde que le conocí. Lucha con ferocidad por su orden y compañeros, moviéndole no la religión sino lo que él ve que es correcto. Aunque esto le haga un temible enemigo imposible de corromper, me enorgullece que haya aprendido tanto de mí"
 
 ### Madeleine
 
