@@ -22,7 +22,9 @@ Cressida es una persona amable e inquisitiva, siempre buscando informarse del en
 
 ### Orígenes
 
-En su vida pasada destacan relativamente pocas cosas ya que siempre fue una persona relativamente normal, o al menos lo sería hasta la fecha de determinado accidente, este ocurriría cuando ella y su en aquel entonces novio que compartía su  misma profesión fueron a una misión, este tenía problemas con las drogas y ella lo sabía sin embargo el estaba intentando dejarlo y es por eso que ella le permitió acompañarlo sin saber cuales serian las consecuencias de tal acción, al llegar al lugar estos se separaron para investigar y el hombre encontró a un niño abandonado, esté estaba bajo los efectos de las drogas que aun acostumbraba a consumir y algo pasó siendo lo próximo que fue capaz de percibir un disparo declarando así del niño conocido como Johan pero sin que se levantaran cargos serios contra el investigador sin embargo Cressida no sería capaz de perdonárselo y ella lo dejaría marchándose a otro lugar para continuar con su oficio, dolida y torturada por este recuerdo que siempre la atormentaría.
+Cressida nació en la ciudad libre de Uringen en una familia de clase media. Su padre, un profesor de la universidad, le educó desde muy temprano y le dio una extensa formación de psicología y ciencias. Destacando por su memoria prodigiosa, Cressida se ganó pronto la fama de audaz investigadora tras resolver algunos casos en su ciudad natal. Tras su graduación viajó a Kratoi con el deseo de convertirse en agente de inteligencia. Ahí conoció al inspector Kretch, con el cual inició una rivalidad que duraría años. Sus esperanzas de llegar a ser agente se vieron frustradas por la guerra de Mazarin y volvió a los Reinos Libres con los sueños frustrados. 
+
+Cuando terminó la guerra, empezó a trabajar como investigadora privada para traer la justicia a los lugares sin ley de los Reinos Libres. En esta etapa de su vida fue cuando tuvo su primera relación amorosa con el investigador-alquimista Filip Drekavac. Tras varias aventuras juntos la relación continuó floreciendo y pensaron volverse a Uringen para abrir una nueva agencia juntos. Cressida vería como sus deseos serían frustrados de nuevo cuando en una investigación de asesinato Filip acabaría matando accidentalmente a un niño. Tal acontecimiento ocasionó que él cayese en el agujero negro del vicio, y poco tiempo después la relación acabaría de mala manera. Cressida quedó marcada por este evento, marchándose de los Reinos Libres para huir de su oscuro pasado. Su camino le volvería a llevar a Kratoi, dónde se terminaría por trabajar como comisaria de policía en un aislado pueblo. Lo que nunca sabría es que su aventura más grande sólo acababa de empezar.
 
 ### Misterios del Manicomio en ruinas
 
@@ -42,4 +44,26 @@ Ella no se vería envuelta en la batalla final sin embargo terminaría por enter
 
 ## Relaciones
 
-pendiente de hacer(Johan, Ana, Salem, Edvard, su novio)
+### Johan
+
+"En todos mis años de investigar nunca me he encontrado a un monstruo así. Sé que por el bien de la humanidad debo llevarle a la justicia, pero al mismo tiempo tengo la certeza que esta es una labor imposible. Ha causado tanto dolor a mí y a mis compañeros que detenerlo es mi deber, aunque mi cuerpo y mente me pidan que pare."
+
+### Anna
+
+""
+
+### Edvard
+
+""
+
+### Salem
+
+""
+
+### Filip
+
+"" 
+
+### Kretch
+
+""

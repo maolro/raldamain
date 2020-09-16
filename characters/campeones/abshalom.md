@@ -10,7 +10,7 @@ image: abshalom.jpg
 
 ## Especialidades
 
-
+Uno de los mejores espadachines de su orden, Abshalom lucha con su arma como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor, inspirando con sus actos para que sus aliados realicen hazañas imposibles. 
 
 ## Rasgos
 
