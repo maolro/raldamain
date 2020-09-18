@@ -28,7 +28,7 @@ Cuando terminó la guerra, empezó a trabajar como investigadora privada para tr
 
 ### Misterios del Manicomio en ruinas
 
-Debido a su profesión toda clase de información llega a sus oídos y esta no fue una excepción terminando por enterarse por la misteriosa destrucción del antiguo manicomio local y las aun mas misteriosas condiciones en las que se encontraban las personas que lograron escapar de el, en primer lugar ellos lograron escapar pero lo hicieron un significativo tiempo después del derrumbe haciéndole preguntarse si algo extraño había sucedido dentro que les hubiese impedido escapar antes, a esta incógnita se le sumaba las heridas con las que algunos de ellos contaban y también sus armas que aunque bien podía ser un manicomio con alguna persona algo peligrosa no justificaba eso, sin embargo ella priorizaría el llevar a la gente al pueblo e integrarlos o aunque fuese buscarles un hogar antes de continuar su investigación.
+Cressida volvió a ponerse en acción en el año 4089, cuando el manicomio de Thrushmoor se derrumbó misteriosamente, dejando atrapada en él a decenas de personas. Creyendo en un principio que de un terremoto se trataba, Cressida y sus fuerzas policiales se aseguraron de rescatar a los supervivientes del manicomio, refugiándolos temporalmente en la comisaría hasta poder reintegrarlos en el pueblo. Algunas cosas de este asunto no le terminaron de cuadrar, como las extrañas heridas que tenían algunos supervivientes y que la mayoría de ellos iban armados cuando los encontró. Al indagar en este tema ellos le decían que se debía a los monstruos del manicomio, pero Cressida no prestó mucha atención en ello tomándolo por delirios que habían sufrido.
 
 Después de algo de retraso debido a los preparativos y cuando se disponía a marcharse notas con instrucciones especificas e incluso respuestas a lo que ella decía en voz alta  comenzaron a aparecer incitándola a que siguiese a un misterioso gato negro que extrañamente acababa de aparecer en los alrededores, como de todas formas las cartas le incitaban a ir al lugar que ya era su objetivo ella continuo siguiendo al gato mientras que mas y mas notas iban apareciendo narrándole la historia de lo que había sucedido tras el derrumbe y el como lograron salir presentándose a si mismo al final como Salem y proponiéndole cooperar juntos para resolver este misterio siendo este el comienzo de su amistad y su viaje
 
@@ -50,20 +50,21 @@ Ella no se vería envuelta en la batalla final sin embargo terminaría por enter
 
 ### Anna
 
-""
+"Siento gran pena por esta joven. Tanto ha sufrido y a tan temprana edad que es un milagro que siga luchando. Cuando la veo feliz, casi olvidando la pesadilla en la que nos encontramos, recuerdo porqué debo seguir luchando para darle un final feliz. Ojalá cuando todo esto termine pueda volver a vivir una vida normal, aunque en parte veo esto como una labor imposible."
 
 ### Edvard
 
-""
+"Mucho puedo decir sobre este hombre y no todo necesariamente es bueno. Según él busca venganza, pero su comportamiento me hace pensar que más que eso busca evadirse de sus problemas. Por esta razón, cuando los problemas llegan a él es incapaz de resistir la presión y fácilmente cae rendido. Si esto sigue, temo que se acabará convirtiendo en un verdadero peligro para nuestra labor."
 
 ### Salem
 
-""
+"Nunca esperaría que un gato cambiase tanto mi vida. Ya desde el primer momento mostró que era mucho más que un vulgar minino, y aun así siempre tiene más sorpresas ocultas. Su ayuda es imprescindible para la misión y le necesito a él tanto como él nos necesita a nosotros."
 
 ### Filip
 
-"" 
+"Mi relación con él puede definirse como tormentosa. Era tan brillante antes de caer en su propio vicio, convirtiéndose en una penosa sombra de lo que antes era. Su trágica muerte cuando había decidido enmendar sus errores es mi recuerdo más doloroso y un oscuro recordatorio de lo cruda que es la vida." 
 
 ### Kretch
 
-""
+"Nuestra rivalidad se remonta desde hace décadas y seguramente seguirá hasta que uno de nosotros dos muera. Sus métodos me parecen cuestionables y su deseo de dar un cierre a todos sus casos provoca que en muchos casos se hagan injusticias contra inocentes. Es una vergüenza a su trabajo y un enemigo de todos aquellos que buscan realmente hacer la justicia."
+
