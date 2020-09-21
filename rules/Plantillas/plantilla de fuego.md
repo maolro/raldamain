@@ -1,7 +1,7 @@
 ---
 title: Plantilla de Fuego
 ---
-
+ 
 ## Rango I tienes +1 armadura natural y +1 rojo esquivando
 
 <u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Obtienes resistencia al fuego igual a tu rango.
