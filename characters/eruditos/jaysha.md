@@ -46,4 +46,19 @@ Terminaría participando en la batalla final junto a la avatar para detener a Ku
 
 ## Relaciones
 
-pendiente de hacer (Yara, Iwan, Cyrus, Arik, Crassus, Volo)
+### Yara
+
+""
+
+### Cyrus
+
+""
+
+### Iwan
+
+""
+
+### Arik
+
+""
+

@@ -66,5 +66,5 @@ Ella no se vería envuelta en la batalla final sin embargo terminaría por enter
 
 ### Kretch
 
-"Nuestra rivalidad se remonta desde hace décadas y seguramente seguirá hasta que uno de nosotros dos muera. Sus métodos me parecen cuestionables y su deseo de dar un cierre a todos sus casos provoca que en muchos casos se hagan injusticias contra inocentes. Es una vergüenza a su trabajo y un enemigo de todos aquellos que buscan realmente hacer la justicia."
+"Nuestra rivalidad se remonta desde hace décadas y seguramente seguirá hasta que uno de nosotros dos muera. Sus métodos me parecen cuestionables, y su deseo de dar un cierre a todos sus casos provoca que en muchos casos se hagan injusticias contra inocentes. Es una vergüenza a su trabajo además de ser un enemigo de todos aquellos que buscan realmente hacer la justicia."
 

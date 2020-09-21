@@ -1,3 +1,7 @@
+---
+title: Plantilla Boreal
+---
+
 ## Rango I +1 armadura natural y +1 Co
 
 <u>Adaptación al frío:</u> No sufres efectos negativos al estar en un área de frio extremo y tienes resistencia a daño frío igual a tu rango. El fuego te hace +2 daño base.
