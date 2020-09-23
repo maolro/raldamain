@@ -1,3 +1,7 @@
+---
+title: Combate doble
+---
+
 ## Rango I
 
 <u>Aptitud con dos armas:</u> Como acción bonus una vez al turno puedes hacer un ataque con tu segunda arma. tienes un verde menos en este ataque secundario. Esta penalización desaparece cuando llegues a rango III.
