@@ -1,4 +1,4 @@
-`title: fortitud`
+ 
 
 ## Rango I +rojo en tiros de Co
 
