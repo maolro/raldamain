@@ -12,7 +12,7 @@ title: Combate doble
 
 ## Rango I
 
-<u>Parada doble:</u> puedes usar parada una vez adicional al turno con tu arma secundario (sigues recibiendo la penalización). Además , la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
+<u>Parada doble:</u> puedes usar parada una vez adicional al turno con tu arma secundario (sigues recibiendo la penalización). Además, la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
 
 <u>Tajo cruzado:</u> si impactas al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque inflinge +2 daño base. Esta habilidad solo puede emplearse una vez al turno.
 

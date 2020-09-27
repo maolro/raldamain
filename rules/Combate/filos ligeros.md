@@ -20,13 +20,13 @@ Filos ligeros
 
 ## Rango IV
 
-<u>ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en ese área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate y acciones preparadas.
+<u>Ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en ese área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate y acciones preparadas.
 
 <u>Finta superior:</u> Al fintar puedes hacer un ataque adicional contra tu objetivo, para el cual se aplica ataque preciso como si fuese un ataque sorpresa. Solo puedes fintar de esta manera 1 vez al turno.
 
 ## Rango V +amarillo en ataques, cancela un éxito adicional con parada, 2 ventajas herida media 4 herida grave
 
-<u>ataque vital:</u> al impactar con un ataque preciso gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo. Esto se aplica después de hacer daño con tu arma.
+<u>Ataque vital:</u> al impactar con un ataque preciso gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo. Esto se aplica después de hacer daño con tu arma.
 
 <u>Contrataque:</u> al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo hacer mas de un contrataque por ronda. Contrataque no funciona contra otro contrataque
 

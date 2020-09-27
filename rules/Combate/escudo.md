@@ -18,19 +18,19 @@ title: Escudo
 
 <u>Carga poderosa:</u> Al impactar con una carga, gasta 2 ventajas para ralentizar al objetivo durante 1 turno (4 para aturdir). Cuando cargues haces que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino para así tener la vía libre hacia tu objetivo.
 
-<u>Barrera móvil:</u> Al entrar en forma defensiva otorgas cubierta (+morado) a todas las criaturas que estén detras de ti en un  cono de 15 pies. Puedes moverte y mantenerte en la forma defensiva, pero hacer un movimiento te cuesta una acción estandar(pudiendo desplazarte 5 pies).
+<u>Barrera móvil:</u> Al entrar en forma defensiva otorgas cubierta (+morado) a todas las criaturas que estén detrás de ti en un  cono de 15 pies. Puedes moverte y mantenerte en la forma defensiva, pero hacer un movimiento te cuesta una acción estándar (pudiendo desplazarte 5 pies).
 
 ## Rango IV
 
-<u>guardián:</u> Al entrar en forma defensiva, recibes inmunidad a flanqueo y todas las criaturas adyacentes a ti obtienen +negro en ataques contra tus aliados. La forma defensiva te otorga +1 DEF.
+<u>Guardián:</u> Al entrar en forma defensiva, recibes inmunidad a flanqueo y todas las criaturas adyacentes a ti obtienen +negro en ataques contra tus aliados. La forma defensiva te otorga +1 DEF.
 
 <u>Mantener posición:</u> Una vez por ronda haz un ataque de oportunidad contra una criatura que entre en el área que amenazas. El ataque debe hacerse con tu escudo y al impactar el objetivo debe detener inmediatamente su movimiento.  Esta habilidad solo puede usarse si estas en forma defensiva.
 
 ## Rango V +rojo con tu escudo
 
-<u>Maestría con escudo:</u> Entrar en forma defensiva te otorga +morado adicional en tiros de escudo e incrementa los aumentos de estadisticas por 1(puedes exceder el 6). Das cubierta superior a aliados que protejas con barrera móvil y puedes moverte 5 pies como reacción para proteger a un aliado.
+<u>Maestría con escudo:</u> Entrar en forma defensiva te otorga +morado adicional en tiros de escudo e incrementa los aumentos de estadísticas por 1 (puedes exceder el 6). Das cubierta superior a aliados que protejas con barrera móvil y puedes moverte 5 pies como reacción para proteger a un aliado.
 
-<u>Detener hechizos:</u> El escu puede proteger a aliados de ataques mágicos. Al usar escudo para bloquear un ataque mágico, si tienes éxito en el tiro defensivo cancelas el ataque de inmediato, haciendo así que  ninguna persona en el área de barrera movil sufra daño obligatorio de área. Tampoco tú sufres daño obligatorio de ataques de área al bloquear exitosamente con tu escudo.
+<u>Detener hechizos:</u> El escudo puede proteger a aliados de ataques mágicos. Al usar escudo para bloquear un ataque mágico, si tienes éxito en el tiro defensivo cancelas el ataque de inmediato, haciendo así que  ninguna persona en el área de barrera movil sufra daño obligatorio de área. Tampoco tú sufres daño obligatorio de ataques de área al bloquear exitosamente con tu escudo.
 
 
 

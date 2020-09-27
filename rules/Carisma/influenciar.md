@@ -2,21 +2,21 @@
 title: Influenciar
 ---
 
-## Rango I +amarillo en influenciar 
+## Rango I
 
-<u>Macara:</u> Oculta tus verdaderas intenciones bajo una mascara, real o figurada. No se puede detectar si mientes con av. intenciones y puedes crear una falsa identidad para ti. Nadie sospechará que tú eres quién lleva la mascara a menos que des pistas muy obvias.
+<u>Máscara:</u> Ocultas tus verdaderas intenciones bajo una máscara, real o figurada. Averiguar Intenciones no detecta si mientes y puedes crear una falsa identidad para ti. Nadie sospechará que tú eres quién lleva la máscara a salvo que des pistas muy obvias.
 
-<u>Persuasivo:</u> Tu lengua de plata es capaz de sacarte de muchos líos. Como acción estándar, haz un tiro de influenciar(CAR) contra un objetivo, el cual se defiende con sabiduría o carisma dependiendo de la situación. Si tienes éxito, cambia la aptitud del objetivo por 1 nivel (neutral-amistoso,desconfiado-neutral). Esta habilidad no puede usarse contra enemigos hostiles y sólo puede emplearse una vez a cada personaje por día.
+<u>Persuasivo:</u> Tu lengua de plata es capaz de sacarte de muchos líos. Como acción estándar, haz un tiro de influenciar(CAR) contra un objetivo, el cual se defiende con sabiduría o carisma dependiendo de la situación. Si tienes éxito, cambia la actitud del objetivo por 1 nivel (neutral-amistoso,desconfiado-neutral). Esta habilidad no puede usarse contra enemigos hostiles y sólo puede emplearse una al día para cada personaje.
 
 ## Rango II
 
-<u>Buscarrumores:</u> Una vez al día, puedes dedicar tu descanso corto a buscar rumores y otra información en lugares como tabernas o bares. Haz un tiro de influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Las ventajas generadas te permiten encontrar indicios de información más valiosa, dándote la oportunidad de repetir el tiro mientras que las desventajas causan que llames atención indeseada.
+<u>Buscarrumores:</u> Una vez al día, puedes dedicar tu descanso corto a buscar rumores y otra información en lugares público como tabernas o bares. Haz un tiro de influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Las ventajas generadas te permiten encontrar indicios de información más valiosa, dándote la oportunidad de repetir el tiro, mientras que las desventajas causan que llames atención indeseada.
 
-Aprovechar favores: Cuando uses presencia, si tienes éxito y el objetivo tiene actitud amistosa o superior , puedes pedirle que te hagan un favor. Ese favor puede ser cualquier cosa, pero si es peligroso o exagerado el objetivo no lo hará. Algunos ejemplos son pedirle un objeto o su ayuda en un trabajo
+<u>Aprovechar favores:</u> Al usar la habilidad de Persuasivo, si tienes éxito y el objetivo tiene actitud amistosa o superior puedes pedirle que te haga un favor. Ese favor puede ser cualquiera, pero si es peligroso o exagerado el objetivo no lo hará. Algunos ejemplos son pedirle un objeto o su ayuda en un trabajo
 
 ## Rango III +amarillo en influenciar
 
-<u>Mente custodiada:</u> Tienes resistencia contra efectos mentales igual a tu rango, y la magia no puede detrectar quién eres p si dices la verdad.
+<u>Mente custodiada:</u> Tienes resistencia contra efectos mentales igual a tu rango, y la magia no puede detectar quién eres p si dices la verdad.
 
 <u>Chantaje:</u> Cuando uses la habilidad buscarrumores y exitosamente encuentres información comprometida de alguien, puedes usarla para forzar a esa persona a que siga tus ordenes. Con esta habilidad puedes usar aprovechar favores contra un objetivo aunque sea hostil mientras tengas información comprometedora sobre él, pero la persona chantajeada hará lo que sea paras que la información no salga a la luz convirtiéndose en tu enemigo.
 
