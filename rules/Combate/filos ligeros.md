@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+Filos ligeros
 ---
-title: Filos ligeros
----
-=======
 ## Rango I +amarillo en ataques
 
 <u>Ataque poderoso:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo un morado de penalización (2 morados si es cabeza o abdomen) a cambio de infligir una herida permanente leve al impactar. La herida debe ser en el lugar escogido. A rango III inflinges una herida media y a rango V una herida grave.
