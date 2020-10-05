@@ -1,8 +1,8 @@
 ---
 title: Plantilla de Fuego
 ---
- 
-## Rango I tienes +1 armadura natural y +1 rojo esquivando
+
+## Rango I tienes +1 reducción de daño y +1 rojo esquivando
 
 <u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Obtienes resistencia al fuego igual a tu rango.
 
@@ -18,7 +18,7 @@ Al impactar, las llamas prenden todos los materiales inflamables en un radio de 
 
 <u>Vista ígnea:</u> puedes ver a través de las llamas y el humo como si fuesen trasparentes. Detectas la posición de todas las criaturas en 100 pies con la plantilla de fuego o que tengan 2 o mas quemaduras.
 
-## Rango III +1 armadura natural
+## Rango III +1 reducción de daño natural
 
 <u>Aura abrasadora:</u> Tu cuerpo desprende un calor intenso que castiga a quiénes intenten atacarte. Cuando una criatura te impacte con un arma cuerpo a cuerpo, sufre 1 daño fuego automático. Puedes gastar 2 desventajas generadas para incrementar el daño de fuego por 1 e infligir una quemadura al objetivo. Cuando uses furia de fuego, recibes además inmunidad al fuego y resistencia al frio igual a tu rango.
 
