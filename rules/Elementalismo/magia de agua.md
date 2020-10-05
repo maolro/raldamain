@@ -34,5 +34,5 @@ title: Magia de Agua
 
 <u>Tsunami:</u> crea un devestador tsunami en una región. para usar esta habilidad debes gastar 6 ataques almacenados en tu reserva y estar en contacto con el mar. El tsunami es una ola de 30 pies de altura y 100 pies de anchura y se mueve 30 pies por turno. Las criaturas en la ola deben tirar fuerza o sufrir 5 daño no letal y ser arrastradas por la ola.
 
-<u>Controlar el clima:</u> Desbloqueas la rama de tormenta. Puedes realizar un ritual de 10 min para llamar un diluvio a tu región. El diluvio te da una reserva ilimitada de agua y aumenta el radio de todos tus ataques por 10.
+<u>Controlar el clima:</u> Desbloqueas la rama de tormenta. Puedes realizar un ritual de 10 min para llamar un diluvio a tu región. El diluvio te da una reserva ilimitada de agua y aumenta el radio de todos tus ataques por 10pies.
 
