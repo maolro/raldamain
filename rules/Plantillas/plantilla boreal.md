@@ -2,7 +2,7 @@
 title: Plantilla Boreal
 ---
 
-## Rango I +1 armadura natural y +1 Co
+## Rango I +1 reducción de daño y +1 Co
 
 <u>Adaptación al frío:</u> No sufres efectos negativos al estar en un área de frio extremo y tienes resistencia a daño frío igual a tu rango. El fuego te hace +2 daño base.
 
@@ -16,7 +16,7 @@ title: Plantilla Boreal
 
 Visión ártica: Las tormentas de nieve y niebla no dificultan tu visión , permitiéndote ver todo aquello en un radio de 60 pies. Esta habilidad no funciona con humo o gases que dificultan la visión.
 
-## Rango III +1 armadura natural y +1 Dex
+## Rango III +1 reducción de daño y +1 Dex
 
 <u>Manto nevado:</u> Los fríos vientos polares se doblegan a tu voluntad, congelando a los desafortunados que se acercan a ti. Desbloqueas elementalismo de aire pero sin acceso a sus subramas y pierdes la vulnerabilidad al fuego, obteniendo en lugar de ello resistencia igual a tu rango -2. Como acción bonus, activa un aura de vientos gélidos de radio 15 pies. El aura te da +2 negros en tiros de defensa contra ataques a distancia y +2 blancos en tiros de sigilo. Todas las criaturas sin plantilla boreal, fuego o agua sufren 2 daño frío por turno mientras permanezcan en el area.
 
@@ -28,7 +28,7 @@ Visión ártica: Las tormentas de nieve y niebla no dificultan tu visión , perm
 
 <u>Ataques de oportunidad:</u> Tus ataques físicos hacen +1 daño de frío y cuentan como ataques mágicos. Este daño se acumula con canalizar frío y puedes gastar 2 ventajas para ralentizar al objetivo (4 para reducir Dex por 1).
 
-## Rango V +1 armadura natural y +1 Ca
+## Rango V +1 reducción de daño y +1 Ca
 
 <u>Forma gaseosa:</u> Si estas en una tormenta de nieve, gasta una acción estándar para infundirte en ella, pasando a forma gaseosa. En forma gaseosa eres inmune al daño fisico, te mueves a una velocidad de vuelo de 60 pies y no puedes atacar físicamente. Puedes aún hacer ataques elementales, pero cada turno que mantengas la forma gaseosa debes gastar una acción de movimiento en concentrarte o sufrir 2 daño no-letal (absorber frío no se aplica). Si la tormenta desaparece, vuelves inmediatamente a tu forma norma y estas aturdido por un turno.
 
