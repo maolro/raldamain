@@ -40,4 +40,34 @@ Tras su batalla contra [Kuvira](kuvira.md) ve que ya no es necesaria y termina p
 
 ## Relaciones
 
-pendiente de hacer (Volo, Jaysha, Bashir, Kuvira, Iwan, Arik, Khanor, Devara, Sheolta)
+### Kuvira
+
+""
+
+### Volo
+
+""
+
+### Iwan
+
+""
+
+### Jaysha
+
+""
+
+### Bashir
+
+""
+
+### Arik
+
+""
+
+### Yara
+
+""
+
+### Cyrus
+
+""

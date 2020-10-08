@@ -44,4 +44,19 @@ Sin embargo el duelo no sería lo que en un principio parecía y terminaría com
 
 ## Relaciones
 
-pendiente de hacer (Volo, Yara, Jaysha, Arik)
+### Volo
+
+""
+
+### Yara
+
+""
+
+### Arik
+
+""
+
+### Jaysha
+
+""
+

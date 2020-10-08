@@ -8,3 +8,34 @@ rangos: Aptitud con filos ligeros, Reflejos, Aptitud con armas a distancia
 image: stannis.jpg
 ---
 
+## Especialidades
+
+
+
+## Rasgos
+
+
+
+## Historia
+
+### Orígenes
+
+
+
+### Guardaespaldas de Ileria
+
+
+
+## Relaciones
+
+### Ileria
+
+""
+
+### Fileon
+
+""
+
+### Madeleine
+
+""

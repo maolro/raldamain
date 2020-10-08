@@ -50,4 +50,30 @@ Bashir es una persona calmada quién prefiere usar las palabras para resolver lo
 
 ## Relaciones
 
-pendiente de hacer (Yara, Devara, Khanor, Sheolta, Nira, Chodao)
+### Yara
+
+""
+
+### Chodao
+
+""
+
+### Devara
+
+""
+
+### Nira
+
+""
+
+### Oberon
+
+""
+
+### Khanor
+
+""
+
+### Sheolta
+
+""

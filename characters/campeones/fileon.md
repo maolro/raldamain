@@ -8,3 +8,50 @@ rangos: Aptitud con filos pesados, Aptitud con armaduras, Aptitud con escudo, Pr
 image: fileon.jpg
 ---
 
+## Especialidades
+
+
+
+## Rasgos
+
+
+
+## Historia
+
+### Orígenes
+
+
+
+### Muerte de Feyn
+
+
+
+### Las guerras hobgoblin
+
+
+
+## Relaciones
+
+### Ileria
+
+""
+
+### Ajek
+
+""
+
+### Abshalom
+
+""
+
+### Madeleine
+
+""
+
+### Pantor
+
+"" 
+
+### Regulus
+
+""

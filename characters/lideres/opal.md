@@ -50,4 +50,46 @@ inocente pero realista Opal mantiene los pies en la tierra mientras busca un fut
 
 ## Relaciones
 
-pendiente de hacer (Zhu Li, Crassus, Baatar, Kuvira)
+## Especialidades
+
+
+
+## Rasgos
+
+
+
+## Historia
+
+### Orígenes
+
+
+
+### Muerte de Feyn
+
+
+
+### Las guerras hobgoblin
+
+
+
+## Relaciones
+
+### Zhu Li
+
+""
+
+### Kuvira
+
+""
+
+### Crassus
+
+""
+
+### Oriox
+
+""
+
+### Baatar
+
+"" 

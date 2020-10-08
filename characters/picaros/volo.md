@@ -9,6 +9,7 @@ image: volo.jpg
 ---
 
 
+
 ## Especialidades
 
 Volo tiene una cantidad de especialidades casi tan diversas como su comportamiento siendo de manera simplificada un apoyo pero no por la simpleza de su posición debe ser subestimado ya que puede ser un gran aliado o un peligroso rival dependiendo de la situación utilizando desde su gran capacidad para narrar historias e inspirar a todos aquellos que las escuchan y ven, sanar a sus aliados heridos durante la batalla así como su gran suerte a la hora de evadir ataques u otros peligros que de ocurrirles a otros podrían ser fácilmente mortales
@@ -62,4 +63,22 @@ después de su victoria el decidió retirarse al mundo de los espíritus junto a
 
 ## Relaciones
 
-pendiente de hacer (Yara, Iwan, Kuvira, Opal, Jaysha)
+### Yara
+
+""
+
+### Iwan
+
+""
+
+### Kuvira
+
+""
+
+### Opal
+
+""
+
+### Jaysha
+
+""

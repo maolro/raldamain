@@ -42,4 +42,18 @@ Ambrose Elrich es un hombre solitario y rodeado siempre de un aura de misterio. 
 
 ## Relaciones
 
-pendiente de hacer (Edvard, Johan, Delereom, Vania)
+### Edvard
+
+""
+
+### Johan
+
+""
+
+### Delereom
+
+""
+
+### Vanya
+
+""

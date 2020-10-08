@@ -38,12 +38,42 @@ Cuando cumplió 21 años, Johan volvió al poblado de Thrushmoor para iniciar su
 
 ### Viajes en el mundo onírico
 
+
+
 ### El hijo perfecto
+
+
 
 ### Búsqueda en Mazarin
 
+
+
 ### El último sacrificio
+
+
 
 ## Relaciones
 
-pendiente de hacer (Anna, Edvard, Alzared, Nox, Salem, Ambrose)
+### Anna
+
+""
+
+### Nox
+
+""
+
+### Edvard
+
+""
+
+### Salem
+
+""
+
+### Cressida
+
+""
+
+### Delereom
+
+""
