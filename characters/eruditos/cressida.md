@@ -30,13 +30,19 @@ Cuando terminó la guerra, empezó a trabajar como investigadora privada para tr
 
 Cressida volvió a ponerse en acción en el año 4089, cuando el manicomio de Thrushmoor se derrumbó misteriosamente, dejando atrapada en él a decenas de personas. Creyendo en un principio que de un terremoto se trataba, Cressida y sus fuerzas policiales se aseguraron de rescatar a los supervivientes del manicomio, refugiándolos temporalmente en la comisaría hasta poder reintegrarlos en el pueblo. Algunas cosas de este asunto no le terminaron de cuadrar, como las extrañas heridas que tenían algunos supervivientes y que la mayoría de ellos iban armados cuando los encontró. Al indagar en este tema ellos le decían que se debía a los monstruos del manicomio, pero Cressida no prestó mucha atención en ello tomándolo por delirios que habían sufrido.
 
-Después de algo de retraso debido a los preparativos y cuando se disponía a marcharse notas con instrucciones especificas e incluso respuestas a lo que ella decía en voz alta  comenzaron a aparecer incitándola a que siguiese a un misterioso gato negro que extrañamente acababa de aparecer en los alrededores, como de todas formas las cartas le incitaban a ir al lugar que ya era su objetivo ella continuo siguiendo al gato mientras que mas y mas notas iban apareciendo narrándole la historia de lo que había sucedido tras el derrumbe y el como lograron salir presentándose a si mismo al final como Salem y proponiéndole cooperar juntos para resolver este misterio siendo este el comienzo de su amistad y su viaje
+Después de algo de retraso debido a los preparativos y cuando se disponía a marcharse notas con instrucciones especificas e incluso respuestas a lo que ella decía en voz alta  comenzaron a aparecer incitándola a que siguiese a un misterioso gato negro que extrañamente acababa de aparecer en los alrededores, como de todas formas las cartas le incitaban a ir al lugar que ya era su objetivo ella continuo siguiendo al gato mientras que mas y mas notas iban apareciendo narrándole la historia de lo que había sucedido tras el derrumbe y el como lograron salir presentándose a si mismo al final como Salem y proponiéndole cooperar juntos para resolver este misterio, empezando así su larga amistad.
 
-### Las desgracias nunca vienen solas
+### La tragedia de Thrushmoor
 
-Despues de su encuentro con Salem ella iría conociendo a otras personas relacionadas con el como lo serían Edvard y Ana mientras continuaba investigando los incidentes ampliando su radio de busca cada vez mas encontrando al final al culpable de todo, una persona llamada Johan la cual les esperaría en las ruinas de un antiguo castillo abandonado alli el le dedicaría un poco de tiempo a cada uno de ellos sacando a relucir sus miedos, inquietudes... acabando esto en el casi suicidio de Cressida evitado por Salem y acabando con la fuga de Johan para volver al pueblo despues de que Ana se fugara y encontrarse con una secta realizando un extraño ritual en el cual no podría participar por su carencia de habilidades para la batalla.
 
-Pero su segundo encuentro sería peor que el primero despues de volver a su hogar y reencontrarse con la persona que una vez amó, teniendose que verse obligada a olvidar cuando Johan los obigaría a jugar una ``partida´´ que culminaría con su muerte dandole así otro dolor mas que afrontar aunque sería el descubrimiento de las atrocidades de Edvard durante su ausencia lo que mas le haría dudar sobre si merece la pena esperar para entregarlo y si deberían dejar a Johan ya que jamas serían capaces de llevarlo a la Justicia
+
+### Retorno a Uringen
+
+
+
+### La caza se cierra
+
+
 
 ### Conclusión
 

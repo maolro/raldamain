@@ -36,4 +36,18 @@ Tras ser asesinado por kuvira y que el paradero de se alma estuviera en duda Ori
 
 ## Relaciones
 
-pendiente de hacer (Kuvira, Oriox, Opal)
+### Kuvira
+
+""
+
+### Oriox
+
+""
+
+### Opal
+
+""
+
+### Crassus
+
+""

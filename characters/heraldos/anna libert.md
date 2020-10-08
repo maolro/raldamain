@@ -42,4 +42,18 @@ Después de vencer a Johan, se retiró junto con Salem a un humilde poblado en M
 
 ## Relaciones
 
-pendiente de hacer (Salem, Edvard, Johan, Cressida)
+### Salem
+
+""
+
+### Johan
+
+""
+
+### Edvard
+
+""
+
+### Cressida
+
+""

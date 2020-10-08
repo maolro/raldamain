@@ -45,4 +45,14 @@ Y gracías al que una vez fue el consejero de su hermana, Oriox, y la revivida h
 
 ## Relaciones
 
-pendiente de hacer (Opal, Crassus, Kuvira, Oriox)
+### Opal
+
+""
+
+### Kuvira
+
+""
+
+### Oriox
+
+""
