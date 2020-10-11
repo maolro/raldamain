@@ -12,7 +12,7 @@ title: Escudo
 
 <u>Interpretar:</u> Puedes gastar una acción de movimiento para interceptar un ataque enemigo como reacción. Cuando uses interceptar, puedes moverte hacia un enemigo que esté moviéndose y detenerlo en el acto. Haz un tiro de ataque con escudo contra la esquiva del objetivo, y si tienes éxito debe detenerse al instante ( gasta 2 ventajas para ralentizar, 4 para aturdir ) . Interceptar también puede usarse para detener un ataque mágico con salpicadura o un explosivo, haciendo así que explote en el punto en el que estes.
 
-<u>Forma defensiva:</u> Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiendote en una barrera inmovible. Entrar en forma defensiva acción bonus y te otorga +morado en tiros de escudo, +1 FUE ,+1 CON y resistencia igual a tu rango contra maniobras de combate. Forma defensiva te hace 1 daño no-letal por turno y termina cuando te muevas o estés fatigado. Esta habilidad solo puede usarse si llevas escudo
+<u>Forma defensiva:</u> Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiendote en una barrera inmovible. Entrar en forma defensiva acción bonus y te otorga +morado en tiros de escudo, +1 FUE ,+1 CON y resistencia igual a tu rango contra maniobras de combate. Forma defensiva te hace 1 daño no-letal por turno y termina cuando te muevas o estés fatigado. Esta habilidad solo puede usarse si llevas escudo.
 
 ## Rango III +rojo en tiros con escudo, cancela un éxito generado (2/turno)
 
