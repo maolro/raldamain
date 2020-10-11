@@ -38,7 +38,7 @@ title: Combate doble
 
 <u>Atrapar arma:</u> usando tus dos armas puedes trabar espadas mas grandes que la tuya. Recibes la habilidad de espadas trabadas (2 ventajas) y puedes usar desarme contra armas de filo pesado de esta manera. pero no podras fintar cuando tengas las espadas trabadas (finta superior si te permite fintar con normalidad).
 
-<u>ataques apuntados:</u> Inflinges una herida leve automáticamente al impactar a un objetivo fintado con tu arma secundaria. puedes elegir la parte del cuerpo y al gastar 2 ventajas inflinges una herida media (grave gastando 4 ventajas)
+<u>ataques apuntados:</u> Inflinges una herida leve automáticamente al impactar a un objetivo fintado con tu arma secundaria. puedes elegir la parte del cuerpo y al gastar 2 ventajas inflinges una herida media (grave gastando 4 ventajas).
 
 ## Rango III
 
