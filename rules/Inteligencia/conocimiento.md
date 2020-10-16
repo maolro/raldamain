@@ -16,14 +16,15 @@ title: Conocimiento
 
 <u>Uso de objetos mágicos:</u> Eres capaz de identificar las propiedades de un objeto mágico sin tener que tirar. Como acción de movimiento, drena el chi de un objeto mágico, otorgándote +blanco en la tirada de tu siguiente hechizo pero el objeto pierde una carga o sufre +negro hasta que lo recargues
 
-## Rango III +Obtienes un hechizo adicional con C.arcano (fuerza rango II)
+## Rango III 
+
+Crea un hechizo nuevo con Conocimiento Arcano con fuerza equivalente a un hechizo de Rango II
 
 <u>Saber verdadero:</u> Una vez al día, haz uno de los siguientes efectos: 
 
-- Identifica todos los hechizos, propiedades mágicas y rangos de mágia de todas las criaturas en 30 pies
+- Identifica todos los hechizos, propiedades mágicas y rangos de magia de todas las criaturas en 30 pies
 
-- Conoce todas las historias y leyendas de un lugar, persona o evento. Para usar esta habilidad debes estar un minuto concentrándote
+- Conoce todas las historias y leyendas de un lugar, persona o evento. Para usar esta habilidad debes estar un minuto concentrándote.
 
-  
 
 <u>Ritualista:</u> Eres capaz de realizar rituales sin sufrir efectos secundarios (los sigues sufriendo si eres interrumpido). Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si te lo permite.

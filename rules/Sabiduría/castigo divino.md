@@ -2,7 +2,9 @@
 title: Castigo Divino
 ---
 
-## Rango I (+ amarillo)
+## Rango I
+
+Tira un dado de soltura adicional en tiros de castigo divino. 
 
 <u>Descarga divina:</u></u> ataca a un enemigo con el poder de tu dios. Este ataque hace 2+ éxitos daño, y su forma y efectos varía según tu deidad. Algunas posibilidades son una bola de fuego( distancia 60 pies, explosión de radio 5 pies o una onda expansiva centrada en ti radio 15 pies). Esta habilidad se puede usar R+2 veces al día. Gasta un uno para contrarrestar otra descarga divina
 
@@ -20,7 +22,9 @@ Maldición puede usarse un número de veces al día igual a tu rango y puedes ga
 
 <u>Muro de energía:</u></u> Un número de veces al día igual a tu rango crea un muro de energía de longitud 20+5xR pies y Rx5 de altura como acción estándar. El muro funciona como un muro elemental hecho de un elemento relacionado con tu dios como por ejemplo  un muro de fuego, tierra, hielo o agua
 
-## Rango III (+ amarillo)
+## Rango III
+
+Tira un dado de soltura adicional en tiros de castigo divino. 
 
 <u>Descarga mejorada:</u></u> un número de veces al día igual a tu Rango-1 fortalece una descarga divina. Una descarga divina fortalecida con este efecto hace +2 daño base, su daño atraviesa resistencias y aumenta su radio por 10 pies . También puedes gastar un uso para cancelar 2 éxitos  en un tiro para contrarrestar
 
@@ -38,6 +42,8 @@ Maldición puede usarse un número de veces al día igual a tu rango y puedes ga
 <u>Destrucción:</u> destruye a un enemigo de la fe con el poder de tu dios. tus descargas divinas hacen +2 daño base contra extraplanarios y y criaturas sobrenaturales, y gasta 2 ventajas para exiliar al objetivo(gasta 4 para provocar muerte instantánea)
 
 ## Rango V
+
+Tira un dado de soltura adicional en tiros de castigo divino. 
 
 <u>Catástrofe:</u></u> invoca al poder de tu dios para provocar un desastre natural. Esta habilidad solo puede usarse una vez al día y funciona como lluvia de brasas, tsunami, terremoto o tormenta de venganza, usando tus dados de castigo divino en lugar de ataque elemental
 
