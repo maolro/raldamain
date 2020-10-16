@@ -2,7 +2,7 @@
 title: Guerrero divino
 ---
 
-## Rango I para desbloquear necesitas aptitud con arma
+## Rango I
 
 <u>Guerrero de la fe:</u> Estás bendito por tu dios en el campo de batalla. Tienes + blanco en tiros de ataque contra enemigos de tu fe y +1 defensa contra ataques físicos y mágicos. Esta habilidad no cuenta como magia apara los propósitos de eliminar magia.
 
@@ -24,11 +24,11 @@ title: Guerrero divino
 
 <u>Aliento de vida:</u> Tu dios te otorga la capacidad de resucitar aquellos muertos en combate para continuar la guerra santa. Como acción de turno completo, resucita a una criatura muerta en combate. La criatura muerta resucita a 1 PV, pero conserva todas sus heridas permanentes. Esta habilidad sólo puede usarse R-2 veces al día y la criatura muerta debe haber muerto hace no mas de un minuto. No puedes resucitar a criaturas a las que les falten órganos vitales o la cabeza.
 
-<u>Hueste divina:</u> Tienes un aura de 15 pies que fortalece a tus compañeros, otorgándoles resistencia 2 contra efectos mentales, miedo y armas físicas, +1 fue y CON. Criaturas en el aura de mas de una hueste divina no acumulan sus efectos sino que usan aquel con un valor mas alto.
+<u>Hueste divina:</u> Tienes un aura de 15 pies que fortalece a tus compañeros, otorgándoles resistencia 2 contra efectos mentales, miedo y armas físicas, +1 FUE y CON. Criaturas en el aura de mas de una hueste divina no acumulan sus efectos sino que usan aquel con un valor mas alto.
 
 ## Rango V
 
-<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad guardián de la fe, activa un aura divina de 20 pies. Todas las criaturas en el aura son inmunes a efectos mentales y posesión provocados por criaturas malignas y obtienen resistencia 4 contra ataques físicos y mágicos (si ya tienen resistencia, se quedan con el valor mas alto). Si tienes rangos en castigo divino, puedes gastar 2 ventajas generadas por cualquier atacante enemigo en el área y un uso de la habilidad para hacer una descarga de energía o una maldición contra ese objetivo. Aura sacra se desactiva junto a guardián de la fe.
+<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad guardián de la fe, activa un aura divina de 20 pies. Todas las criaturas en el aura son inmunes a efectos mentales y posesión provocados por criaturas malignas y obtienen Resistencia 4 contra ataques físicos y mágicos (si ya tienen resistencia, se quedan con el valor mas alto). Si tienes rangos en castigo divino, puedes gastar 2 ventajas generadas por cualquier atacante enemigo en el área y un uso de la habilidad para hacer una descarga de energía o una maldición contra ese objetivo. Aura sacra se desactiva junto a guardián de la fe.
 
 <u>Intervención divina:</u> Cuando estés en un momento de mayor peligro, puedes llamar a tu dios para salvarte. Esta habilidad sólo puede usarse una vez al día y cuando estés a 3 o menos PV. Intervención divina hace uno de los siguientes efectos:
 
