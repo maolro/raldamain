@@ -2,9 +2,11 @@
 title: Artes marciales
 ---
 
-## Rango I (+amarillo en ataques), tus ataques naturales hacen +1 daño base
+## Rango I
 
-<u>Secuencia de ataques:</u> gasta una acción de movimiento para hacer un ataque sin arma adicional. Puedes sustituir uno de estos ataques recibidos por esta habilidad para hacer un tiro de desarmar, tropezar, robar o juego sucio. El maximo de ataques que puedes hacer al turno es 1+R.
+Tiras un dado de soltura adicional en tiros de ataque. 
+
+<u>Secuencia de ataques:</u> gasta una acción de movimiento para hacer un ataque sin arma adicional. Puedes sustituir uno de estos ataques recibidos por esta habilidad para hacer un tiro de desarmar, tropezar, robar o juego sucio. El máximo de ataques que puedes hacer al turno es 1+R.
 
 <u>Defensa marcial:</u> Puedes usar una parada como reacción, tirando tus dados de ataque natural defensivamente. Gasta 2 ventajas generadas para hacer un ataque natural como reacción (funciona como secuencia de ataques). Si intentas usar defensa marcial contra un enemigo con un arma, este puede gastar ventajas para hacerte heridas permanentes aunque falle el tiro. Una vel al turno cancela un éxito enemigo (2/turno a rango III y 3/turno a rango V).
 
@@ -14,19 +16,23 @@ title: Artes marciales
 
 <u>Patada feroz:</u> Al impactar con un ataque natural, gasta 1 ventaja para empujar al objetivo 5 pies hacia atras. Si tu fuerza  excede a la de tu objetivo lo haces tropezar ademas de empujarlo.
 
-## Rango III (+amarillo en ataques) tus ataques naturales hacen +1 daño base
+## Rango III
 
-<u>Deflejar proyectiles:</u> Defensa marcial puede usarse como defensa contra ataques a distancia. Gasta 2 desventajas generadas para atrapar el proyectil y 4 para deflejarlo contra otro objetivo (No puedes usar esta habilidad para deflejar proyectiles rápidos como flechas o dardos). Defensa marcial sigue sin protegerte contra balas.
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para infligir una herida permanente leve (infliges una herida permanente media si usas puño preciso).
 
-<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificanddo facilidad de impacto por la oportunidad de hacer heridas pemanentes. Añades un morado a puñetazos precisos (2 si es cabeza, brazos o entrepierna), pero al impactar inflinges una herida permanente leve al objetivo.
+<u>Desviar proyectiles:</u> Defensa marcial puede usarse como defensa contra ataques a distancia. Gasta 2 desventajas generadas para atrapar el proyectil y 4 para desviarlo contra otro objetivo (No puedes usar esta habilidad para desviar proyectiles rápidos como flechas o dardos). Defensa marcial sigue sin protegerte contra balas.
+
+<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Añades un dado de dificultad a puñetazos precisos (2 si es cabeza, brazos o entrepierna), pero al impactar inflinges una herida permanente leve al objetivo. A rango V puedes gastar 2 ventajas para infligir una herida permanente media al objetivo.
 
 ## Rango IV 
 
-<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un ataque natural a un objetivo con armadura, gasta 2 ventajas para reducir su def por 1. Esta habilidad también puede usarse contra escudos si tu ataque es bloqueado por uno, lo cual le hará un daño. (ver rompeescudos). Tus ataques naturales cuentan como si fuesen de adamantita.
+<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un ataque natural a un objetivo con armadura, gasta 2 ventajas para reducir su DEF por 1. Esta habilidad también puede usarse contra escudos si tu ataque es bloqueado por uno, lo cual le hará un daño. (ver rompe escudos). Tus ataques naturales cuentan como si fuesen de adamantina.
 
 <u>Punto de presión:</u> Puedes apuntar a los puntos de presión de un objetivo para inutilizar parte de su cuerpo y hasta impedir que usen magia. Al impactar con un puño preciso, gasta 2 ventajas para paralizar temporalmente la parte del cuerpo a la que impacte. Si es una pierna, es tropezado y su velocidad se reduce a la mitad; si es un brazo es desarmado y no puede atacar con el, y si eliges la cabeza cae inconsciente inmediatamente.
 
-## Rango V (+amarillo en ataques) tus ataques naturales hacen +1 daño base
+## Rango V 
+
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para infligir una herida permanente media (infliges una herida permanente grave si usas puño preciso).
 
 <u>Puñetazo mortal:</u> Si logras impactar a la cabeza del objetivo con un puño preciso, gasta 4 ventajas para matar instantáneamente al objetivo. Para que esta habilidad funcione con el objetivo no debe llevar armadura o su defensa tiene que ser reducida a 0.
 

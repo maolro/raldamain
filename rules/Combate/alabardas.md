@@ -2,7 +2,9 @@
 title: Alabardas
 ---
 
-## Rango I (+amarillo en ataques)
+## Rango I 
+
+Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Preparación contra cargas</u>:</u> Gata una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual inflinges +2 daño. Si impactas , el objetivo debe detenerse de inmediato.
 
@@ -14,7 +16,9 @@ title: Alabardas
 
 <u>Ataque lateral:</u> Como acción de turno completo ataca a todas las criaturas en un arco de 15 pies. Esto funciona como la habilidad Corte de filos pesados y puede detenerse de la misma manera. Puedes gastar 2 ventajas en un ataque de alabarda para tropezar al objetivo.
 
-## Rango III (+ amarillo en ataques), 2 ventajas herida leve (4 herida media)
+## Rango III 
+
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
 
 <u>Flanqueador experto:</u> haces +2 daño base al flanquear, y puedes flanquear a cualquier criatura que alcances y que tenga adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
 
@@ -26,7 +30,9 @@ title: Alabardas
 
 <u>Carga con lanza</u>: Haces +2 daño al cargar con tu arma, y al impactar puedes gastar 2 ventajas para clavarle tu arma al objetivo. Si el enemigo tiene tu arma clavada no puede moverse y cuando usas ajustar alcance lo mueves a la misma posición (debes tirar fuerza para esto) . Desenganchar tu arma te cuesta una acción de movimiento y el enemigo que tengas agarrado puede intentar romper tu arma.
 
-## Rango V (+amarillo en ataques), 2 ventajas herida media (4 herida grave)
+## Rango V
+
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
 <u>Carga repentina:</u> si gastas tu acción de movimiento en usar preparación contra cargas, en cualquier momento del turno enemigo puedes hacer una carga como reacción. El daño por carga con lanza se suma a este ataque.
 
