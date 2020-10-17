@@ -2,11 +2,13 @@
 title: Presencia
 ---
 
-## Rango I +rojo tiros defensivos de carisma
+## Rango I
+
+Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Voz del comandante:</u>  A través de inspiradoras palabras o ordenes imperiosas fortalece la moral y fuerza de tus aliados. Gata una acción estándar para iniciar este efecto, y hasta que sufras una herida permanente leve todos tus aliados tienen +blanco en todos sus tiros y están inspirados. Tus aliados deben ver y oírte para beneficiarse del efecto.
 
-Aspirar temor: Eres una figura temible en el campo de batalla. Todas las criaturas de menor nivel de desafío están espantadas (+negro en todos sus tiros) hasta que tú sufras una herida permanente. Esta habilidad afecta a todos en un radio de 30 pies y no afecta a criaturas bajo los efectos de presencia.
+<u>Inspirar temor:</u> Eres una figura temible en el campo de batalla. Todas las criaturas de menor nivel de desafío están espantadas (+negro en todos sus tiros) hasta que tú sufras una herida permanente. Esta habilidad afecta a todos en un radio de 30 pies y no afecta a criaturas bajo los efectos de presencia.
 
 <u>Voluntad poderosa:</u> Tienes resistencia igual a tu rango contra el miedo y puedes usar Car en vez de Sabiduría en tiros contra influenciar. Si tienes rangos en influenciar , cuando uses la habilidad persuasivo fascinas a aquellos que interactúan contigo.
 
@@ -17,15 +19,17 @@ Aspirar temor: Eres una figura temible en el campo de batalla. Todas las criatur
 <u>Dirigir combatientes:</u> Al usar voz del comandante, puedes dirigir a aliados para que realicen tácticas complejas. Estas son algunas de ellas:
 
 - Muro de escudos: Cada aliado obtiene +rojo en tiros de escudo si está adyacente a un aliado con escudo (+morado si está adyacente a 2 y +negro si está rodeado. Los dados si se acumulan)
-- Flanqueadores expertos: Tus aliados obtienen +blanco adicional y +1daño base cuando flanqueen a un adversario. Esto se acumula con ataque furtivo.
+- Flanqueadores expertos: Tus aliados obtienen +blanco adicional y +1 daño base cuando flanqueen a un adversario. Esto se acumula con ataque furtivo.
 - Vigilancia: Tus aliados no pueden ser pillados por sorpresa si al menos uno de ellos no es sorprendido.
 - Dispersar: Tus aliados obtienen la habilidad evasión y pueden moverse 5 pies después de tener éxito en un tiro de destreza (1 ventaja +5 pies)
 
-solo puedes usar una táctica a la vez.
+Sólo puedes usar una táctica a la vez.
 
 <u>Inspiración:</u> Tienes una reserva de puntos de inspiración igual a 1+Rango. Gasta un punto de inspiración para que tú o tu aliado obtenga +blanco en un tiro. Esta habilidad solo puede usarse en aliados bajo los efectos de voz del comandante y los puntos se recuperan tras un descanso largo.
 
-## Rango III +rojo en tiros defensivos de carisma
+## Rango III
+
+Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Indómito:</u> Tu fuerza de voluntad permite resistir lo imposible. Un número de veces al día igual a tu rango-2 , repite cualquier tirada de habilidad,ataque o defensiva, cancelando el resultado anterior. Esta nueva tirada conserva los bonificadores de la anterior y debes quedarte con con el nuevo resultado (no puedes usar Indómito en el mismo tiro mas de una vez). Tienes resistencia igual a tu rango-1 contra efectos mentales.
 
@@ -39,7 +43,9 @@ solo puedes usar una táctica a la vez.
 
 Si el objetivo falla en un tiro de sabiduría contra ti, pasa a estar animado (aumenta su actitud hacia ti por 1 nivel +blanco en todos sus tiros) o desesperado (+negro en todos sus tiros, no puede ser afectado por tiros de presencia).Animado y desesperación se contrarrestan entre si.
 
-## Rango V +rojo en tiros defensivos de carisma
+## Rango V
+
+Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Inspirar leyenda:</u> al usar inspirar heroísmo, el objetivo afectado aumenta una de sus estadísticas temporalmente por 1 y obtiene un uso de la habilidad indómito (si ya lo tienes, te vuelves inmune a efectos mentales y de moral).
 

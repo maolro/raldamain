@@ -26,8 +26,6 @@ title: Filos pesados
 
 <u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres morados debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
 
-
-
 ## Rango V+ amarillo 2 ventajas H.P. media, 4 H.P. grave
 
 <u>Cortes en secuencia:</u> puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque.
