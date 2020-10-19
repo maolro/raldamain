@@ -2,7 +2,9 @@
 title: Filos pesados
 ---
 
-## Rango I +amarillo en ataques
+## Rango I
+
+Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Parada:</u> como reacción, puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada, y además puedes cancelar un éxito generado. Parada solo puede usarse una vez al turno(puedes usarlo todas las veces que quieras si juegas defensivamente)
 
@@ -14,7 +16,9 @@ title: Filos pesados
 
 <u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero inflinges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer ++2 daño adicionales.
 
-## Rango III +amarillo en ataques 2 ventajas Herida P. leve, 4 H.P. media
+## Rango III
+
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media). 
 
 <u>Impacto destructor</u>: al impactar a un objetivo con armadura con tus ataque poderoso, reduce la defensa de la armadura del objetivo por 1. Esta reducción puede eliminarse reparando la armadura, y si la defensa de la armadura queda reducida a 0 esta es inutilizable (cuenta como si no llevase armadura para tajo feroz. Esta habilidad puede usarse en un ataque normal gastando 2 ventajas.
 
@@ -26,7 +30,9 @@ title: Filos pesados
 
 <u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres morados debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
 
-## Rango V+ amarillo 2 ventajas H.P. media, 4 H.P. grave
+## Rango V
+
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
 <u>Cortes en secuencia:</u> puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque.
 
