@@ -8,7 +8,7 @@ Tira un dado de soltura adicional en tiros de castigo divino.
 
 <u>Descarga divina:</u></u> ataca a un enemigo con el poder de tu dios. Este ataque hace 2+ éxitos daño, y su forma y efectos varía según tu deidad. Algunas posibilidades son una bola de fuego( distancia 60 pies, explosión de radio 5 pies o una onda expansiva centrada en ti radio 15 pies). Esta habilidad se puede usar R+2 veces al día. Gasta un uno para contrarrestar otra descarga divina
 
-<u>Milagro menor:</u></u> tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción de movimiento una criatura de tu elección recibe un dado azul o negro en su siguiente tiro. Esta habilidad se puede usar  R+1 veces al día. Esta habilidad también puede usarse para recibir una pequeña ayuda de tu dios no relacionada con el combate
+<u>Milagro menor:</u></u> tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción de movimiento una criatura de tu elección recibe un dado azul o negro durante un turno. Esta habilidad se puede usar  R+1 veces al día. Esta habilidad también puede usarse para recibir una pequeña ayuda de tu dios no relacionada con el combate
 
 ## Rango II
 

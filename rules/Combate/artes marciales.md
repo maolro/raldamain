@@ -14,7 +14,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Puño aturdidor:</u> Al impactar con un ataque natural, gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque ( 4 ventajas para que esté aturdido durante un turno). Una criatura afectada por puño aturdidor no puede moverse gastando ventajas.
 
-<u>Patada feroz:</u> Al impactar con un ataque natural, gasta 1 ventaja para empujar al objetivo 5 pies hacia atras. Si tu fuerza  excede a la de tu objetivo lo haces tropezar ademas de empujarlo.
+<u>Patada feroz:</u> Al impactar con un ataque natural, gasta 1 ventaja para empujar al objetivo 5 pies hacia atrás. Si tu fuerza  excede a la de tu objetivo lo haces tropezar además de empujarlo.
 
 ## Rango III
 
@@ -36,5 +36,5 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 <u>Puñetazo mortal:</u> Si logras impactar a la cabeza del objetivo con un puño preciso, gasta 4 ventajas para matar instantáneamente al objetivo. Para que esta habilidad funcione con el objetivo no debe llevar armadura o su defensa tiene que ser reducida a 0.
 
-<u>Ataque despiadado:</u> Una vez al turno, haz un ataque natural adicional como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que inflingirias normalmente.
+<u>Ataque despiadado:</u> Una vez al turno, haz un ataque natural adicional como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que infringirías normalmente.
 

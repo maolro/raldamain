@@ -24,7 +24,7 @@ title: Guerrero divino
 
 <u>Aliento de vida:</u> Tu dios te otorga la capacidad de resucitar aquellos muertos en combate para continuar la guerra santa. Como acción de turno completo, resucita a una criatura muerta en combate. La criatura muerta resucita a 1 PV, pero conserva todas sus heridas permanentes. Esta habilidad sólo puede usarse R-2 veces al día y la criatura muerta debe haber muerto hace no mas de un minuto. No puedes resucitar a criaturas a las que les falten órganos vitales o la cabeza.
 
-<u>Hueste divina:</u> Tienes un aura de 15 pies que fortalece a tus compañeros, otorgándoles resistencia 2 contra efectos mentales, miedo y armas físicas, +1 FUE y CON. Criaturas en el aura de mas de una hueste divina no acumulan sus efectos sino que usan aquel con un valor mas alto.
+<u>Hueste divina:</u> Tienes un aura de 15 pies que fortalece a tus compañeros, otorgándoles resistencia 2 contra efectos mentales, miedo y armas físicas, +1 FUE y CON. Criaturas en el aura de mas de una hueste divina no acumulan sus efectos sino que usan aquel con un valor mas alto. Esta aura se activa al usar el efecto de Guardián de la Fe
 
 ## Rango V
 
