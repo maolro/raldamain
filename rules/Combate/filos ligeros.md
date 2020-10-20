@@ -6,7 +6,7 @@ title: Filos ligeros
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Ataque poderoso:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo un morado de penalización (2 morados si es cabeza o abdomen) a cambio de infligir una herida permanente leve al impactar. La herida debe ser en el lugar escogido. A rango III inflinges una herida media y a rango V una herida grave.
+<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo un morado de penalización (2 morados si es cabeza o abdomen) a cambio de infligir una herida permanente leve al impactar. La herida debe ser en el lugar escogido. A rango III inflinges una herida media y a rango V una herida grave.
 
 <u>Parada:</u> Puedes usar parada para protegerte de ataques enemigos. Esta habilidad funciona igual que parada de aptitud con filos pesados, pero al intentar bloquear un ataque poderoso el enemigo puede gastar 2 ventajas para romper tu arma. Una vez al turno puedes cancelar un éxito generado por el atacante (dos veces al turno a Rango III y tres veces al turno a Rango V)
 
