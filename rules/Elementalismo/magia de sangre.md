@@ -20,7 +20,7 @@ Esta habilidad también también puede usarse defensivamente. Si eliges que sufr
 
 <u>Drenar sangre:</u> La sangre de otras personas sana tus heridas. Al hacer un ataque elemental de toque contra una criatura te sanas vitalidad igual al número de éxitos que generes + el número de dados de sangrado que tenga. Si estás al máximo de vitalidad esta habilidad te sana PV, y puedes gastar 4 ventajas generadas para reducir el nivel de uno de tus heridas permanentes por 1. Si tienes magia elemental de agua. Puedes extgraes agua para tus ataques elementales de cualquier ser vivo.
 
-## Rango + amarillo en ataques (+daño base)
+## Rango + amarillo en ataques (+ 1 daño base)
 
 <u>Sentido de sangre:</u> Tienes sentido a ciegas en un área de 60 pies, permitiíendote detectar a todas las criaturas con sangre que haya. Puedes además identificar a todos las criaturas del área cuya sangre hayas analizado con Biografía sanguínea, conociendo su estado fisico y condiciones actuales.
 
