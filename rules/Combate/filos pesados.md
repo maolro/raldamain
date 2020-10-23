@@ -14,7 +14,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Gran corte:</u> emplea una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o atacar escuadrones(en el caso de escuadrones multiplica tu ataque por tres y la defensa del escuadrón por tres). Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
 
-<u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero inflinges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer ++2 daño adicionales.
+<u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero inflinges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño adicionales.
 
 ## Rango III
 
