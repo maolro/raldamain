@@ -20,7 +20,9 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
 
+<u>Impacto destructor</u>: al impactar a un objetivo con armadura con tu Ataque poderoso, reduce la defensa de la armadura del objetivo por 1. Esta reducción puede eliminarse reparando la armadura, y si la defensa de la armadura queda reducida a 0 esta es inutilizable (cuenta como si no llevase armadura para tajo feroz. Esta habilidad puede usarse en un ataque normal gastando 2 ventajas.
 
+<u>Carga poderosa:</u> Cuando impactes a un objetivo con una carga, este es empujado automáticamente 10 pies hacia atrás, y si su fuerza es inferior a la tuya es Tropezado. No tiras penalización en ataques poderosos si los haces tras una carga.
 
 ## Rango IV 
 
@@ -31,6 +33,3 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 ## Rango V 
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
-
-
-
