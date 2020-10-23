@@ -36,10 +36,28 @@ title: Combate doble
 
 ## Rango II
 
-<u>Atrapar arma:</u> usando tus dos armas puedes trabar espadas mas grandes que la tuya. Recibes la habilidad de espadas trabadas (2 ventajas) y puedes usar desarme contra armas de filo pesado de esta manera. pero no podras fintar cuando tengas las espadas trabadas (finta superior si te permite fintar con normalidad).
+<u>Atrapar arma:</u> usando tus dos armas puedes trabar espadas mas grandes que la tuya. Recibes la habilidad de espadas trabadas (2 ventajas) y puedes usar desarme contra armas de filo pesado de esta manera. pero no podrás fintar cuando tengas las espadas trabadas (finta superior si te permite fintar con normalidad).
 
-<u>Ataques apuntados:</u> Infliges una herida leve automáticamente al impactar a un objetivo fintado con tu arma secundaria. puedes elegir la parte del cuerpo y al gastar 2 ventajas inflinges una herida media (grave gastando 4 ventajas).
+<u>Ataques apuntados:</u> Infliges una herida leve automáticamente al impactar a un objetivo fintado con tu arma secundaria. puedes elegir la parte del cuerpo y al gastar 2 ventajas infliges una herida media (grave gastando 4 ventajas).
 
 ## Rango III
 
-<u>Cuchillada:</u> como acción estándar haz un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad no puedes hacer ataques con tu arma secundaria ni usar ataques rapidos,pero aumentas el daño base por 2. Si haces un ataque sorpresa en cuchillada gasta 2 ventajas para usar ataque vital.
+<u>Cuchillada:</u> como acción estándar haz un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad no puedes hacer ataques con tu arma secundaria ni usar ataques rápidos,pero aumentas el daño base por 2. Si haces un ataque sorpresa en cuchillada gasta 2 ventajas para usar ataque vital.
+
+# Cadenas
+
+## Rango I
+
+Cadenas giratorias: Eres capaz de usar Danza de cadenas con tu arma secundaria si no atacas con ella. De esta manera entras en posición defensiva te cuesta una acción bonus. Al usar una acción estándar para entrar en forma defensiva harás +2 daño en ataques de oportunidad contra criaturas que entren en el área que amenazas.
+
+Ataque torbellino: Usar ataque circular te cuesta una acción estándar. Puedes emplear una acción de turno completo para atacar a todas las criaturas en un radio de tamaño igual a tu alcance. Danza de cadenas se activa al usar esta habilidad y esta puede detenerse de la misma manera que ataque circular.
+
+## Rango II
+
+Doble agarre: Si llegas a agarrar al mismo objetivo con tus dos cadenas, este queda agarrado automáticamente sin que tengas que emplear una acción de movimiento. Mover o estampar una criatura agarrada te cuesta una acción bonus lo primera vez que lo hagas, y para escapar de tu agarre la criatura debe tener éxito en dos tiradas contra tus cadenas. No puedes usar cadenas giratorias o cargar ataque mientras agarres a una criatura.
+
+Escudo de cadenas: Puedes usar deflectar proyectiles siempre que el efecto de cadenas giratorias esté activo. Sigues sin poder deflectar proyectiles de alta velocidad aunque una vez al turno puedes cancelar un éxito del ataque enemigo (2/turno si tienes Rango III en cadenas y 3/turno si tienes rango V)
+
+## Rango III
+
+Danza de destrucción: En lugar de atacar con tus cadenas puedes hacer que giren en torno a ti, otorgándote el efecto de cadenas giratorias pero cada turno que permanezcas en este efecto cargas tus ataques. Si haces daño al mismo objetivo con tus dos ataques, su armadura sufre daño igual a la cantidad de turnos que llevas cargando tus cadenas (máximo 3 daño). Si el objetivo tiene 0 armadura aumenta la efectividad de tus heridas permanentes por 1.
