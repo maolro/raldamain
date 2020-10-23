@@ -26,7 +26,7 @@ title: Influenciar
 
 <u>Manipulación mental:</u> Tus mentiras son capaces de hacer que quien las oiga dude de su propia cordura. Haz un tiro de influenciar contra una criatura con actitud neutral o superior. Si tienes éxito, tu objetivo dedará de la veracidad de un evento de hasta 10 minutos de duración, tratándolo como si fuese producto de su imaginación. Esta habilidad no funciona si hay pruebas fehacientes de que el evento ocurrió u otros testigos.
 
-## Rango V +amarillo en influenciar
+## Rango V
 
 <u>Sembrar cizaña:</u> Como acción estándar, haz un tiro de influenciar  afectando a un grupo de criaturas en un radio de 20 pies. Si tienes éxito, empiezan a dudar unos de otros y no tienen bonificadores por flanqueo ni se defienden unos a otros. Si además tienes información incriminatoria de un enemigo gracias a chantaje, puedes hacer que empiecen a luchar entre ellos. No puedes usar esta habilidad en medio de una batalla.
 
@@ -36,5 +36,5 @@ title: Influenciar
 
 <u>Maestro titiritero:</u> Eres capaz de reducir a personas a simples títeres movidos por tu voluntad. Si consigues subir la actitud de una persona a amistosa por tu habilidad persuasivo, obtienes la habilidad de manipularlo sutilmente. Este no dudará de ti y te obedecerá para todo favor que le pidas, excluyendo la muerte. Si llegas a ofenderlo de alguna manera, haz un tiro de influenciar en el que si tienes éxito ignora tu ofensa.
 
-<u>Conducir a la desesperación</u>: Sabes donde atacar a tus objetivos para acabar con sus ganas de vivir. Hces 2+éxitos daño de cordura en un tiro de persuasión, y gasta 2 ventajas para que reciba el efecto de estado depresión. Si reduces su cordura a 0 tu objetivo se suicidará. Esto no funciona con personas hostiles hacia ti a menos que puedas chantajearlos. Conducir a la desesperación solo puede usarse una vez al día.
+<u>Conducir a la desesperación</u>: Sabes donde atacar a tus objetivos para acabar con sus ganas de vivir. Haces 2+éxitos daño de cordura en un tiro de persuasión, y gasta 2 ventajas para que reciba el efecto de estado depresión. Si reduces su cordura a 0 tu objetivo se suicidará. Esto no funciona con personas hostiles hacia ti a menos que puedas chantajearlos. Conducir a la desesperación solo puede usarse una vez al día.
 
