@@ -1,3 +1,7 @@
+---
+title: Plantilla Verdeante
+---
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. Incrementa tu CAR por 1.
