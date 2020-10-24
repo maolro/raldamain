@@ -6,7 +6,7 @@ title: Castigo Divino
 
 Tira un dado de soltura adicional en tiros de castigo divino. 
 
-<u>Descarga divina:</u></u> ataca a un enemigo con el poder de tu dios. Este ataque hace 2+ éxitos daño, y su forma y efectos varía según tu deidad. Algunas posibilidades son una bola de fuego( distancia 60 pies, explosión de radio 5 pies o una onda expansiva centrada en ti radio 15 pies). Esta habilidad se puede usar R+2 veces al día. Gasta un uno para contrarrestar otra descarga divina
+<u>Descarga divina:</u></u> ataca a un enemigo con el poder de tu dios. Este ataque hace 2+ éxito daño, y su forma y efectos varían según tu deidad. Algunas posibilidades son una bola de fuego (distancia 60 pies, explosión de radio 5 pies) o una onda expansiva (radio 15 pies). Esta habilidad se puede usar R+2 veces al día. Gasta un uno para contrarrestar otra descarga divina
 
 <u>Milagro menor:</u></u> tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción de movimiento una criatura de tu elección recibe un dado azul o negro durante un turno. Esta habilidad se puede usar  R+1 veces al día. Esta habilidad también puede usarse para recibir una pequeña ayuda de tu dios no relacionada con el combate
 
@@ -50,5 +50,5 @@ Tira un dado de soltura adicional en tiros de castigo divino.
 <u>Palabra divina superior:</u> Una vez al día, desata el poder de tu dios con una palabra de poder. el efecto de la palabra depende de tu dios, pero estas son algunas posibilidades:
 
 - Palabra de vida: sana todos los PV y efectos de estado a todos los aliados en un radio de 30 pies
-- Palabra de muerte: Mata a todas las criaturas con 7 o menos PV en un radio de 30 pies. Las criaturas que tienen mas de 7 PV deben tirar CON o sufrir g+éxitos daño divino( gasta dos ventajas para asustar, 4 para que se arrodillen ante ti)
+- Palabra de muerte: Mata a todas las criaturas con 7 o menos PV en un radio de 30 pies. Las criaturas que tienen mas de 7 PV deben tirar CON o sufrir 6+Éxito daño divino( gasta dos ventajas para asustar, 4 para que se arrodillen ante ti)
 - Palabra de parálisis: detienes el tiempo en un radio de 30 pies, paralizando a todas las criaturas en el radio. Solo las criaturas con rangos en guerrero divino o castigo divino pueden resistir el efecto, y el efecto acaba tras un turno(2 para las criaturas con 7 o menos PV y 4 para las criaturas con 5 o menos PV)
