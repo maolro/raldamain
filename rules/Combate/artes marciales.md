@@ -12,7 +12,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 ## Rango II
 
-<u>Puño aturdidor:</u> Al impactar con un ataque natural, gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque ( 4 ventajas para que esté aturdido durante un turno). Una criatura afectada por puño aturdidor no puede moverse gastando ventajas.
+<u>Puño aturdidor:</u> Al impactar con un ataque natural, gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque (4 ventajas para que esté aturdido durante un turno). Una criatura afectada por puño aturdidor no puede moverse gastando ventajas.
 
 <u>Patada feroz:</u> Al impactar con un ataque natural, gasta 1 ventaja para empujar al objetivo 5 pies hacia atrás. Si tu fuerza  excede a la de tu objetivo lo haces tropezar además de empujarlo.
 

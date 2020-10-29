@@ -4,7 +4,7 @@ title: Magia de Protección
 
 ## Rango I
 
-<u>Escudo:</u>
+<u>Escudo:</u> 
 
 <u>Disrupción de chi:</u>
 
