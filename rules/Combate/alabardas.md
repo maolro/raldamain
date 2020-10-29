@@ -6,13 +6,13 @@ title: Alabardas
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Preparación contra cargas</u>:</u> Gata una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual inflinges +2 daño. Si impactas , el objetivo debe detenerse de inmediato.
+<u>Preparación contra cargas</u>:</u> Gasta una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual inflinges +2 daño. Si impactas , el objetivo debe detenerse de inmediato.
 
-<u>Parada</u>:</u> Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante ( 2/turno a rango III y 2/turno a rango V).
+<u>Parada</u>:</u> Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante ( 2/turno a rango III y 2/turno a rango V).
 
 ## Rango II
 
-<u>Ajustar alcance:</u> Puedes ajustar la posición de tus manos en tu arma para aumentar o disminuir tu alcance. Puedes cambiar su alcance en 5 pies como acción de movimiento. Si eliges reducir su alcance, no puedes proteger a aliados con parada pero no sufres penalizaciones al defenderte, mientras que si lo aumentas no podrás usar parada para protegerte adyacentes. Ajustar el alcance tu cuesta una acción bonus a rango IV(solo una vez al turno).
+<u>Ajustar alcance:</u> Puedes ajustar la posición de tus manos en tu arma para aumentar o disminuir tu alcance. Puedes cambiar su alcance en 5 pies como acción de movimiento. Si eliges reducir su alcance, no puedes proteger a aliados con parada pero no sufres penalizaciones al defenderte, mientras que si lo aumentas no podrás usar parada para protegerte de ataques hechos por criaturas adyacentes. Ajustar el alcance tu cuesta una acción bonus a rango IV (solo una vez al turno).
 
 <u>Ataque lateral:</u> Como acción de turno completo ataca a todas las criaturas en un arco de 15 pies. Esto funciona como la habilidad Corte de filos pesados y puede detenerse de la misma manera. Puedes gastar 2 ventajas en un ataque de alabarda para tropezar al objetivo.
 
