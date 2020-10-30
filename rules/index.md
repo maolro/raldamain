@@ -20,7 +20,23 @@ A nivel 1 tienes los valores 3, 2, 2, 1, 1, 1 para distribuir entre tus seis est
 
 ## PV, Vitalidad y Defensa
 
+El siguiente paso para crear un personaje es determinar los puntos de vida (PV), la Vitalidad y la defensa (DEF). Estos tres valores son imprescindibles para un combate y miden la capacidad de aguante que tiene el personaje.
+
+- **PV:** Los PV miden la salud del personaje y su capacidad de aguantar daño letal. Equivalen a 3 + CON a nivel 1, y vuelven a aumentar por 1 cada vez que subas 3 niveles (es decir, a nivel 4, 7, 10, 13...). Cuando los PV de un personaje quedan reducidos a 0, este pasa a estar moribundo y cae inconsciente si su Vitalidad también ha llegado a 0. Un personaje moribundo perderá 1 PV al principio de su siguiente turno hasta que reciba sanación, y muere si sus PV negativos llegan a ser iguales a su CON negativa (por ejemplo, un personaje con 2 CON morirá si llega a tener -2 PV). 
+
+- **Vitalidad:** La Vitalidad mide la capacidad de aguante físico de un personaje. La Vitalidad es igual a 2 + CON + el nivel del personaje. La Vitalidad se reduce por el daño no-letal, además del daño frío y necrótico. Si la Vitalidad de un personaje llega a 0 este pasa a estar Fatigado y todo el daño no-letal que sufra pasará a ser daño letal. 
+
+- **Defensa:** La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu armadura natural (los humanos empiezan con 0 armadura natural). La armadura ligera te otorga DEF 1, la media DEF 2 y la pesada DEF 3. Más información sobre las Armaduras puede encontrarse en el apartado de Aptitud con Armaduras
+
+  Esta es distinta de las Resistencias, las cuales reducen el daño que recibas de un tipo específico de ataque. Por ejemplo, la Resistencia al fuego reduce todo el daño fuego que recibas por un valor determinado
+
+Los valores de PV y Vitalidad se reducen o aumentan si sufres algún cambio a tu estadística de CON. Con un descanso corto recuperas toda tu Vitalidad y PV iguales a tu nivel/3 (redondeado hacia arriba), mientras con un descanso largo recuperas todos tus PV y Vitalidad.
+
 ## Talentos
+
+Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 4 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un punto de talento adicional.
+
+<u>H</u>
 
 ## Rangos
 
