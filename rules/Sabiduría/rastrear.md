@@ -2,7 +2,9 @@
 title: Rastrear
 ---
 
-## Rango I +amarillo rastreando
+## Rango I
+
+Recibes un nivel de talento adicional en Supervivencia.
 
 <u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tienes +blanco con tiros de habilidad y ataque contra tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiando a tu enemigo para tener los beneficios de enemigo predilecto contra ellos. Ataque furtivo se aplica con enemigo predilecto.
 
@@ -12,9 +14,11 @@ title: Rastrear
 
 <u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas a menos que tu lo desees. Tienes además +blanco en tiros de percepción, sigilo y supervivencia mientras estas en tu terreno.
 
-<u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Puedes elegir moverte a la mitad de tu velocidad mientras persigues a tu presa mientras permaneces oculto, contando como si fueses invisible. Puedes estudiar a tu enemigo predilecto con esta habilidad, pero este efecto se pierde en el momento que ataques. Volver a acechar requiere una acción estándar y que estés fuera del campo de visión de tu presa.
+<u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Puedes elegir moverte a la mitad de tu velocidad mientras persigues a tu presa mientras permaneces oculto, contando como si fueses invisible. Puedes estudiar a tu enemigo predilecto con esta habilidad, pero este efecto se pierde en el momento que ataques. Volver a acechar requiere una acción estándar y que estés fuera del campo de visión de tu presa. Al ocultarte con esta habilidad no puedes ser detectado por tiros de Percepción, salvo que el tiro lo haga una criatura con la habilidad Rastreador experto.
 
-## Rango III +amarillo rastrando +blanco con enemigo predilecto
+## Rango III
+
+Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaja adicional atacando a tu enemigo predilecto.
 
 <u>Presa:</u> Como acción estándar, designa a un objetivo como tu presa. Tienes éxito automático rastreando a tu presa ( a menos que tu presa esté en su terreno predilecto), tienes +negro en tiros defensivos contra ella y las heridas permanentes que le infringes son de un nivel superior ( leves-medias, medias-graves,graves-criticas). Solo puedes tener como máximo una presa al día, y si ella muere o escapa no puedes volver a usar esta habilidad durante el resto del día.
 
@@ -34,7 +38,9 @@ title: Rastrear
 - urbano: Velocidad de salto +10 pies, puedes usar acechar siempre que estés rodeado de gente
 - Bosque: Resistencia igual a tu rango contra magia druídica, escalada 15 pies
 
-## Rango V +amarillo rastreando, +1 daño con enemigo predilecto
+## Rango V 
+
+Recibes un nivel de talento adicional en Supervivencia. Tus ataques contra tu enemigo predilecto hacen +1 daño
 
 <u>Maestro cazador:</u> Puedes correr mientras usas acechar o rastreas a tu presa sin penalizadores. Cuando hagas un ataque sorpresa contra tu enemigo predilecto, gasta 4 ventajas para matarle instantáneamente si tiene 7 vida o menos. Si tiene mas de 7 vida sufre una herida permanente grave.
 

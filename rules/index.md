@@ -34,15 +34,7 @@ Los valores de PV y Vitalidad se reducen o aumentan si sufres algún cambio a tu
 
 ## Talentos
 
-Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 4 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. Cuando alcances los niveles 1, 3, y 5 en un talento añades un dado de soltura a todos tus tiros relacionados con él.
-
-- <u>Atletismo</u> (FUE): Tienes soltura en tiros para escalar, nadar o correr largas distancias. Una de tus velocidades (nadar, escalar o base) aumenta por 5 pies cada vez que obtengas un nuevo nivel de talento.
-- <u>Acrobacias</u> (DES): Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. Cada nivel de Acrobacias aumenta tu velocidad de salto horizontal por 5 pies y de salto vertical por 1 pie.
-- <u>Averiguar intenciones</u> (SAB): Tienes un sentido de intuición que te permite detectar mentiras. Recibes soltura en tiros para determinar si la persona con quién interactúas te está mintiendo. El objetivo debe tirar Engaño si te está mintiendo, y si tienes éxito sabrás con certeza si te está mintiendo o no.
-- <u>Engaño</u> (CAR)
-- <u>Heroísmo</u> (FUE)
-- <u>Juego de manos</u> (FUE)
-- <u>Destrozar</u> (FUE)
+Los [talentos](www.raldamain.com/rules/talentos.html) representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. 
 
 ## Rangos
 
