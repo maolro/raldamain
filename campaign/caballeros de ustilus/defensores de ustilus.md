@@ -55,18 +55,49 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 
 **Agente del Pacto** (nivel 3)
 
-- **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 2, **CAR*
-- <u>Rangos</u>: Reflejos II, Filos ligeros I, Influenciar I
+- **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
+- **PV ** 5 , **VT ** 6, **DEF** 1 (Armadura de cuero)
 - <u>Habilidades</u>: Sigilo 2, Engaño 2, Acrobacias 2, Juego de manos 1
+- <u>Rangos</u>: Reflejos II, Filos ligeros I, Influenciar I
 
 **Asesino del Pacto** (nivel 5)
 
+- **FUE** 2, **DES** 5, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
+- **PV ** 6, **VT ** 8, **DEF** 1 (Armadura de cuero)
+- <u>Habilidades</u>: Sigilo 3, Engaño 2, Acrobacias 2, Juego de manos 1, Atletismo 2
+- <u>Rangos</u>: Reflejos II, Armas de fuego III, Influenciar I
+
 **Recluta mazarino** (nivel 1)
+
+- **FUE** 3, **DES** 2, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
+- **PV ** 5 , **VT ** 5, **DEF** 3 (Pechera)
+- <u>Habilidades</u>: Heroísmo 1, Intimidar 1, Percepción 2
+- <u>Rangos</u>: Alabardas I, Armaduras I
 
 **Ballestero mazarino** (nivel 2)
 
+- **FUE** 2, **DES** 4, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
+- **PV ** 5 , **VT ** 6, **DEF** 3 (Pechera)
+- <u>Habilidades</u>: Sigilo 1, Percepción 2, Intimidar 1, Heroísmo 1
+- <u>Rangos</u>: Ballestas I, Armaduras I, Reflejos I
+
 **Húsar mazarino** (nivel 4)
+
+- **FUE** 4, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 2
+- **PV ** 6, **VT ** 9, **DEF** 4 (Media placa)
+- <u>Habilidades</u>: Empatía animal 2, Percepción 3, Supervivencia 2, Intimidar 1
+- <u>Rangos</u>: Montar II, Filos pesados II, Armaduras I
 
 **Sterlet mazarino** (nivel 3)
 
-**Capitán húsar mazarino** (nivel 5)
+- **FUE** 3, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
+- **PV ** 6 , **VT ** 7, **DEF** 2 (Pieles 1, Resistencia 1)
+- <u>Habilidades</u>: Supervivencia 2, Percepción 2, Averiguar intenciones 1, Atletismo 2
+- <u>Rangos</u>: Rastrear I, Filos pesados I, Plantilla Tierra I, Reflejos I
+
+**Capitán húsar mazarino** (nivel 6)
+
+- **FUE** 5, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 2
+- **PV ** 6 , **VT ** 10, **DEF** 4 (Media placa)
+- <u>Habilidades</u>: Empatía animal 2, Percepción 3, Supervivencia 3, Intimidar 2
+- <u>Rangos</u>: Montar II, Filos pesados III, Armaduras I, Presencia I
