@@ -2,8 +2,6 @@
 title: Fortitud
 ---
 
- 
-
 ## Rango I
 
 Tira un dado de desafío adicional en tiros defensivos de CON.

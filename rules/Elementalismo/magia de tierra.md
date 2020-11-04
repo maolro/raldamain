@@ -18,19 +18,23 @@ title: Magia de Tierra
 
 <u>Forma de la montaña:</u> Fortaleces tus ataques al mantenerte quieto. Gata una acción de movimiento para aumentar el tamaño de tu ataque elemental por 5 pies (1+daño base) o hacer un ataque adicional con tamaño 5 pies. A rango III aumenta el tamaño 10 pies y a rango V por 15 pies.
 
-## Rango III: + amarillo en ataques, ( +1 daño base y aumenta el tamaño de tus ataques 5 pies)
+## Rango III
+
+Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1 y el radio de tus ataques por 5 pies.
 
 <u>Abrazo de la tierra:</u> Al impactar con un ataque, gasta 2 ventajas para agarrar al objetivo. No puede liberarse del agarre al menos que destruya la tierra que la aprisiona (4 defensa, 2xR vida).
 
-<u>Esperar y golpear :</u> Si tomas la acción de defensa completa y generas 2 desventajas en el tiro de defensa, haz un ataque elemental con prioridad contra el enemigo. No podrá protegerse con parada elemental ni parada, solo con esquiva.
+<u>Esperar y golpear:</u> Si tomas la acción de defensa completa y generas 2 desventajas en el tiro de defensa, haz un ataque elemental con prioridad contra el enemigo. No podrá protegerse con parada elemental ni parada, solo con esquiva.
 
 ## Rango IV
 
- <u>Derrumbamiento:</u> Como acción de turno , provoca un derrumbamiento en un espacio concreto de tierra (cuevas, edificios de piedra, etc). Todos las criaturas en él sufren un ataque de área que hace 5+éxitos daño contundente  y las criaturas impactadas son atrapadas bajo tierra (2 ventajas: agarradas).
+ <u>Derrumbamiento:</u> Como acción de turno , provoca un derrumbamiento en un espacio concreto de tierra (cuevas, edificios de piedra, etc...). Todos las criaturas en él sufren un ataque de área que hace 5+éxitos daño contundente  y las criaturas impactadas son atrapadas bajo tierra (2 ventajas: agarradas).
 
 <u>Espinas de piedra:</u> Puedes hacer daño perforante con ataques elementales. El daño perforante hace +1 daño base y tus heridas permanentes son de 1 nivel superior. Al usar control terrestre puedes llenar un área de espinas (2 daño no-letal al pasar).
 
-## Rango V + amarillo en ataques (+1 daño base y aumenta le tamaño de tus ataques 5 pies)
+## Rango V
+
+Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1 y el radio de tus ataques por 5 pies.
 
 <u>Terremoto:</u> Como acción de turno completo, crea una onde expansiva de radio 60 pies. Todas las criaturas deben tirar fuerza o caen al suelo, y los edificios en ese área se derrumban inmediatamente si están hechos de piedra. El área afectada por terremoto se convierte en terreno difícil.
 

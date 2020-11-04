@@ -2,7 +2,9 @@
 title: Magia de Hielo
 ---
 
-## Rango I +amarillo en ataques
+## Rango I
+
+Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Bajar temperaturas:</u> Baja las temperaturas de un radio de 30 pies. En ese radio puedes hacer ataques de hielo y congelar liquidos. Si ya estás en un área de frío, todas las criaturas sufren 2 daño no-letal al comienzo de su turno.
 
@@ -24,7 +26,9 @@ Parada elemental: (ver magia de agua)
 
 <u>Neblina polar:</u> Las neblinas que creas hacen que todas las criaturas en su área estén Ralentizadas y tienes + blanco en ataques contra ellos. Crear una neblina es una acción estándar y ocupa 10 pies por rango. 
 
-## Rango III +amarillo en ataques (+1 daño base)
+## Rango III
+
+Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
 <u>Tormenta de nieve:</u> Como acción de turno completo, libera una ventisca de nieve y granizo. Este es un ataque de área que afecta a todas las criaturas en una linea de 15 pies de ancho y 50 de largo. Hhace daño frío igual a tu ataque elemental +2 daño contundente. Tu área de bajar temperaturas se convierte en terreno dificil. Debes esperar 3 turnos antes de volver a usar esta habilidad, y puedes reducir la duración por 1 turno gastando 1 ventaja o sufriendo 1 daño no letal.
 
@@ -36,7 +40,9 @@ Parada elemental: (ver magia de agua)
 
 <u>Ventisca:</u> Puedes hacer ataques de viento como si fueses elementalista de aire, pero haces +2 daño frío de base. Un ataque de viento lanza al objetivo 5 pies por éxito por los aires y puedes concentrarte en el para crear una tormenta de nieve (cuenta como terreno dificil, +2 dados negros contra proyectiles).
 
-## Rango V +amarillo en ataques (haces +1 daño base)
+## Rango V
+
+Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
 <u>Medianoche polar:</u> Como acción de turno completo, reduce drasticamente la temperatura en ese lugar. Con esta habilidad, puedes hacer ataques de frío en areas de calor y todas las criaturas en tu área quedan ralentizadas. Además te regeneras 1 vitalidad/ turno y puedes usar tormenta de nieve sin recarga. El agua se congela inmediatamente y puedes gastar 2 ventajas para congelar.
 

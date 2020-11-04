@@ -2,7 +2,9 @@
 title: Conocimiento
 ---
 
-## Rango I +amarillo en tiros de conocimiento
+## Rango I
+
+Recibes un nivel de talento adicional en conocimiento.
 
 <u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de conocimiento y notas inmediatamente si algo está fuera de lugar. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña. El master elige que información.
 

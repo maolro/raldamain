@@ -4,6 +4,8 @@ title: Influenciar
 
 ## Rango I
 
+Añade un dado de soltura a tus tiros de Influenciar.
+
 <u>Máscara:</u> Ocultas tus verdaderas intenciones bajo una máscara, real o figurada. Averiguar Intenciones no detecta si mientes y puedes crear una falsa identidad para ti. Nadie sospechará que tú eres quién lleva la máscara a salvo que des pistas muy obvias.
 
 <u>Persuasivo:</u> Tu lengua de plata es capaz de sacarte de muchos líos. Como acción estándar, haz un tiro de influenciar(CAR) contra un objetivo, el cual se defiende con sabiduría o carisma dependiendo de la situación. Si tienes éxito, cambia la actitud del objetivo por 1 nivel (neutral-amistoso,desconfiado-neutral). Esta habilidad no puede usarse contra enemigos hostiles y sólo puede emplearse una al día para cada personaje.
@@ -14,7 +16,9 @@ title: Influenciar
 
 <u>Aprovechar favores:</u> Al usar la habilidad de Persuasivo, si tienes éxito y el objetivo tiene actitud amistosa o superior puedes pedirle que te haga un favor. Ese favor puede ser cualquiera, pero si es peligroso o exagerado el objetivo no lo hará. Algunos ejemplos son pedirle un objeto o su ayuda en un trabajo
 
-## Rango III +amarillo en influenciar
+## Rango III
+
+Añade un dado de soltura a tus tiros de Influenciar.
 
 <u>Mente custodiada:</u> Tienes resistencia contra efectos mentales igual a tu rango, y la magia no puede detectar quién eres p si dices la verdad.
 
@@ -27,6 +31,8 @@ title: Influenciar
 <u>Manipulación mental:</u> Tus mentiras son capaces de hacer que quien las oiga dude de su propia cordura. Haz un tiro de influenciar contra una criatura con actitud neutral o superior. Si tienes éxito, tu objetivo dedará de la veracidad de un evento de hasta 10 minutos de duración, tratándolo como si fuese producto de su imaginación. Esta habilidad no funciona si hay pruebas fehacientes de que el evento ocurrió u otros testigos.
 
 ## Rango V
+
+Añade un dado de soltura a tus tiros de Influenciar.
 
 <u>Sembrar cizaña:</u> Como acción estándar, haz un tiro de influenciar  afectando a un grupo de criaturas en un radio de 20 pies. Si tienes éxito, empiezan a dudar unos de otros y no tienen bonificadores por flanqueo ni se defienden unos a otros. Si además tienes información incriminatoria de un enemigo gracias a chantaje, puedes hacer que empiecen a luchar entre ellos. No puedes usar esta habilidad en medio de una batalla.
 
