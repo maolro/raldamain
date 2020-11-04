@@ -2,7 +2,9 @@
 title: Magia de sangre
 ---
 
-## Rango I +amarillo en ataques
+## Rango I
+
+Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Ataque elemental:</u> Como acción estándar manipula la sangre del objetivo, provocándoles gran dolor interno. Este ataque hace 2+éxito daño necrótico a un enemigo a 60 pies de ti. Gasta 2 ventajas para que el objetivo reciba sangrado (4 para que esté enfermado). El objetivo se defiende con su Con .
 
@@ -20,7 +22,9 @@ Esta habilidad también también puede usarse defensivamente. Si eliges que sufr
 
 <u>Drenar sangre:</u> La sangre de otras personas sana tus heridas. Al hacer un ataque elemental de toque contra una criatura te sanas vitalidad igual al número de éxitos que generes + el número de dados de sangrado que tenga. Si estás al máximo de vitalidad esta habilidad te sana PV, y puedes gastar 4 ventajas generadas para reducir el nivel de uno de tus heridas permanentes por 1. Si tienes magia elemental de agua. Puedes extgraes agua para tus ataques elementales de cualquier ser vivo.
 
-## Rango + amarillo en ataques (+ 1 daño base)
+## Rango
+
+Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
 <u>Sentido de sangre:</u> Tienes sentido a ciegas en un área de 60 pies, permitiíendote detectar a todas las criaturas con sangre que haya. Puedes además identificar a todos las criaturas del área cuya sangre hayas analizado con Biografía sanguínea, conociendo su estado fisico y condiciones actuales.
 
@@ -32,7 +36,9 @@ Esta habilidad también también puede usarse defensivamente. Si eliges que sufr
 
 <u>Telekinesia sanguínea:</u> Eres capaz de manipular los cuerpos de las personas como títeres, moviéndolos a tu voluntad. Al impactar con un ataque elemental, gasta 2 ventajas para agarrarlo telekinéticamente. Gata una acción de movimiento para mover 15 a una criatura agarrada y esta debe tirar fuerza para escapar de tu agarre. Puedes tener como máximo R-2 criaturas en tu agarre.
 
-## Rango V + amarillo en ataques (+1 daño base)
+## Rango V 
+
+Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
 <u>autocontrol sanguíneo:</u> tienes maestría controlando la sangre de tu cuerpo. Eres inmune a sangrado, veneno, enfermedades y nauseas. Tienes además resistencia contra magia de sangre igual a tu Rango.
 
