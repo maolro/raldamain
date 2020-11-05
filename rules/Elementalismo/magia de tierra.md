@@ -4,15 +4,15 @@ title: Magia de Tierra
 
 ## Rango I +amarillo en ataques
 
-<u>Ataque elemental:</u> Ataca al objetivo lanzándole una piedra. La piedra hace daño dependiendo de su tamaño, siendo 1+éxito contundente el que haría una piedra de tamaño mediano (5 pies cúbicos). Impactas una zona igual a R tamaño de la piedra y pudes gastar 1 ventaja generada para tropezar al objetivo o empujarlo 5 pies. (esto es una técnica de combate, así que puede resistir con fuerza).
+<u>Ataque elemental:</u> Ataca al objetivo lanzándole una piedra. La piedra hace daño dependiendo de su tamaño, siendo 1+éxito contundente el que haría una piedra de tamaño mediano (5 pies cúbicos). Impactas una zona igual a R tamaño de la piedra y puedes gastar 1 ventaja generada para tropezar al objetivo o empujarlo 5 pies. (esto es una técnica de combate, así que puede resistir con fuerza).
 
-<u>Parada elemental:</u> Te protege de todos los ataques. Cancela 1 éxito si es un ataque físico (2 éxitos a rango III y 3 éxitos a rango V)
+<u>Parada elemental:</u> Detienes ataques con tu elemento. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente. Puedes protegerte de todos los ataques y una vez al turno puedes cancelar un éxito generado (2 veces a Rango III y 3 veces a Rango V).
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no-letal para aumentar la fuerza de tus ataques. Con esto, puedes aumentar el tamaño de tu piedra por 5 pies cúbicos (+1 daño base), hacer un ataque adicional o destruir un bloque de material petróleo de tamaño 10 pies cuadrados. Reserva de energía sólo para usarse una vez por turno.
 
 ## Rango II
 
-<u>Muro de piedra:</u> Como acción estándar, crea un muro de piedra con longitud de 10xR pies y al turno de 5xR pies. Ese muro te da cubierta completa contra ataques, y cada posición de 5 pies tiene 4 defensa y 3x2 vida. Puedes crear un muro de piedra como reacción una vez por turno, pero este muro sólo dura un turno antes de desaparecer.
+<u>Muro de piedra:</u> Como acción estándar, crea un muro de piedra con longitud de 10xR pies y al turno de 5xR pies. Ese muro te da cubierta completa contra ataques, y cada porción de 5 pies tiene 4 defensa y 3x2 vida. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
 <u>Control terrestre:</u> Manipular la propia tiene bajo tus pies. Como acción estándar, manipula un total de 5xR pies cúbicos de tierra, moldeándola como tú  deseas. Con esta habilidad puedes formar terreno difícil, barreras, elevaciones o agujeros.
 

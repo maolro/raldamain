@@ -1,55 +1,47 @@
 ---
-title: Plantilla Verdeante
+title: Plantilla Cambiaformas
 ---
 
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Piel robliza:</u>
+<u>Aspecto de la bestia:</u>
 
-<u>Toque de vida:</u>
+<u>Empatía animal:</u>
 
 ## Rango II
 
 Incrementa tu CAR por 1.
 
-<u>Paso forestal:</u>
-
 <u>Comunión con la naturaleza:</u>
 
-<u>Infundir madera:</u>
+<u>Sentidos superiores:</u>
 
 ## Rango III 
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Armadura de cardos:</u>
+<u>Forma animal:</u>
 
-<u>Arraigar:</u>
+<u>Invocar espíritu salvaje:</u>
 
 ## Rango IV 
 
 Incrementa tu DES por 1.
 
-<u>Puerta arbórea:</u>
-
-<u>Despertar natural:</u>
-
 ## Rango V 
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
-<u>Sabiduría elemental:</u>
+<u>Forma animal superior:</u>
 
-<u>Aura primigenia:</u>
 
-<u>Lenguaje universal:</u>
 
 ## Rango VI
 
 Incrementa tu SAB por 1.
 
-<u>Conexión con la tierra:</u>
+<u>Metamorfosis:</u>
 
-<u>Forma elemental:</u>
+<u>Maldición salvaje:</u>

@@ -10,13 +10,13 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Esto hace que puedas hacer un ataque elemental adicional en tu turno, aumentar el radio de tu ataque por 10 o que tu ataque tenga un radio de salpicadura de 5 pies. Reserva de energía sólo puede usarse una vez por turno.
 
-<u>Parada elemental:</u> Te protege de ataques mágicos y proyectiles. Cancela 1 éxito si es un ataque de agua o hielo ( 2 éxitos a rango III y 3 a rango V)
+<u>Parada elemental:</u> Detienes ataques con tu elemento. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente. Solo puedes protegerte de otros ataques elementales (cancela un éxito si es de agua o hielo) o ataques a distancia. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V).
 
 ## Rango II
 
 <u>Ataques en secuencia:</u> Gasta 1 acción de movimiento para hacer un segundo ataque elemental: Puedes gastar acciones de movimiento adicionales que te otorgue el movimiento elemental para hacer más ataques. 
 
-<u>Muro de fuego:</u> Como acción estándar crea un muro de 20+Rx5 pies de largo y Rx5 pies de alto. El muro hace 
+<u>Muro de fuego:</u> Como acción estándar crea un muro de 20+Rx5 pies de largo y Rx5 pies de alto. El muro protegerá a todas las criaturas detrás de él de ataques mágicos y proyectiles, permitiéndote usar tu tiro defensivo de magia elemental de fuego para defenderlos. Todos los que intenten pasar por el muro de fuego sufrirán 1 daño de fuego obligatorio y una Quemadura media. Una criatura puede tirar Destreza contra tu tiro de magia elemental para intentar evitar este daño, y si tienen éxito solo sufrirá una Quemadura leve (ninguna si tiene Evasión). El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
 <u>Llamas abrasadoras:</u> Al impactar con tu ataque, gasta 2 ventajas para cegar al objetivo. Si este lleva armaduras metálicas obtiene una quemadura media hasta que se a quite o sufra daño frío.
 
@@ -48,4 +48,4 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 <u>Lluvia de brasas:</u> Como acción de turno completo, llena hasta 5 cubos de 10 pies de ancho con un rugiente fuego. Esto hace un ataque elemental contra todas las criaturas en ese área y la llena de fuego. Si una criatura empieza su turno en un área de fuego, sufre una quemadura grave. Debes esperar 4 turnos hasta volver a usar esta habilidad ( reduce la espera por 1 turno sufriendo 1 daño no letal)
 
-<u>Fuego puro:</u> Tus ataques de fuego atraviesan resistencias. Gasta 2 generadas  para hacer los efectos de eliminar magia, desbloqueas la rama de plasma.
+<u>Fuego puro:</u> Tus ataques de fuego atraviesan resistencias. Puedes gastar 2 ventajas generadas con un ataque para desconcentrar a tu objetivo o eliminar un efecto mágico que le afecte.
