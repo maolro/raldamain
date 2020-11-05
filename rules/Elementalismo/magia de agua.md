@@ -12,13 +12,13 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques.  Si lo usas con tu ataque elemental, ataca a todas las criaturas en un radio de 10 pies (30 pies si estás rodeado de agua) o una línea de 10 pies de ancho y 60 de largo.
 
-<u>Parada elemental:</u> Detienes ataques con tu elemento. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente. Solo puedes protegerte de otros ataques elementales (cancela un éxito si es de fuego) o ataques a distancia.
+<u>Parada elemental:</u> Detienes ataques con tu elemento. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente. Solo puedes protegerte de otros ataques elementales (cancela un éxito si es de fuego) o ataques a distancia. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V).
 
 ## Rango II
 
 <u>Danza de agua:</u> Como acción estándar, en lugar de atacar puedes almacenar un ataque (máx R+1). Si pierdes la concentración, pierdes tus ataques elementales. Puedes emplear los ataques almacenados como una acción de turno completo para impactar a un objetivo/ataque o hacer que tu siguiente ataque elemental haga +1 daño contundente /ataque en reserva y aumente su radio de impacto por 5 pies/ataque.
 
-<u>Muro de agua:</u> Como acción estándar crea un muro de 20+Rx5 pies de largo y Rx5 pies de alto. El muro impide el paso a proyectiles y una criatura debe gastar una acción de movimiento para atravesarlo (tirando fuerza para hacer esto). El muro también puede usarse como reacción para protegerse de un ataque y en ese caso solo dura un turno.
+<u>Muro de agua:</u> Como acción estándar crea un muro de 20+Rx5 pies de largo y Rx5 pies de alto. El muro impide el paso a proyectiles y una criatura debe gastar una acción de movimiento para atravesarlo (tirando fuerza para hacer esto). El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
 ## Rango III
 
