@@ -24,11 +24,11 @@ Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño b
 
 <u>Tormenta de chi:</u> Como acción de turno completo que consume 2 chi de tu reserva, sobrecarga un radio de 20 pies centrado en ti con energía pura. Mientras la tormenta de chi siga activa, recibes cubierta parcial contra ataques mágicos y a distancia (+2 dados de desventaja) y tus ataques hacen +1 daño base. Cuando una criatura sin Resistencia mágica empiece su turno en el área de Tormenta de chi esta sufrirá 1 daño de energía obligatorio,Tormenta de chi permanece activa hasta que pierdas la concentración o pase un minuto.
 
-<u>Foco de energía:</u> 
+<u>Foco de energía:</u> En lugar de atacar puedes contener el chi para liberarlo en un devastador ataque. Cada ataque que almacenes te otorga un punto de energía. Al hacer un ataque mágico, puedes gastar un número de puntos de energía para incrementar la fuerza de este. Cada punto de energía gastado aumenta tu daño base por 1 y el radio de salpicadura por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión. La explosión hace daño de fuerza a todas las criaturas en un radio igual a 5 x puntos de energía igual a 2 + el número de puntos de energía que tengas almacenados. Tú también sufres daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
 
 ## Rango IV
 
-<u>Absorber magia:</u> 
+<u>Destrozar defensas:</u> Tus ataques pueden drenar la energía mágica del objetivo, debilitando sus defensas y haciéndolo más vulnerable a tus ataques mágicos. Al impactar a un objetivo con armadura mágica con un ataque de magia de evocación, puedes gastar 2 ventajas para reducir su armadura mágica por 1. Puedes gastar chi en habilidades de Magia Protectora que tengas como Eliminar magia o Disrupción al impactar con un ataque de evocación.
 
 <u>Aspecto elemental</u>: Tienes la capacidad de canalizar el poder de los elementos en tus ataques mágicos. Puedes hacer ataques elementales de cualquier tipo con magia de evocación. Estos ataques funcionan como si fuesen de Rango I respecto a las opciones para gastar ventajas y el radio que afectan, pero el daño base equivale al daño de tus ataques de evocación. El daño hecho con uno de estos ataques elementales no atraviesa resistencias. Puedes también gastar 1 chi para usar la habilidad Reserva de energía del elemento asociado a tu ataque sin sufrir daño no-letal.
 
@@ -36,6 +36,7 @@ Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño b
 
 Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño base por 1.
 
-<u>Desintegrar:</u> Al impcatar con un ataque de evocación, puedes gastar 4 ventajas para desintegrar a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantita o material mágico. Las criaturas que no lleven armadura mágica morirán instantáneamente (Resistir la muerte no se aplica contra este efecto, mientras que las que sí la tengan reducirán la defensa de su armadura mágica por 1.
+<u>Desintegrar:</u> Al impactar con un ataque de evocación, puedes gastar 4 ventajas para desintegrar a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantina o material mágico. Las criaturas que no lleven armadura mágica o la tengan reducida a 0 morirán instantáneamente, y las habilidades de Fortitud no pueden protegerlas de ello.
 
-<u>Concentración superior:</u>  
+<u>Concentración superior:</u>  Eres capaz de mantener la concentración en un efecto adicional al turno sin sufrir daño no-letal. Tu mente además es capaz de mantenerse concentrada ante grandes distracciones, haciendo que no pierdas la concentración al sufrir los efectos de estado Enfermado, Fatigado, Sangrado y Espantado (sigues perdiendo la concentración al estar Aturdido, Confuso o Pánico). 
+

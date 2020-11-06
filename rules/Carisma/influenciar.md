@@ -12,7 +12,7 @@ Añade un dado de soltura a tus tiros de Influenciar.
 
 ## Rango II
 
-<u>Buscarrumores:</u> Una vez al día, puedes dedicar tu descanso corto a buscar rumores y otra información en lugares público como tabernas o bares. Haz un tiro de influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Las ventajas generadas te permiten encontrar indicios de información más valiosa, dándote la oportunidad de repetir el tiro, mientras que las desventajas causan que llames atención indeseada.
+<u>Buscar rumores:</u> Una vez al día, puedes dedicar tu descanso corto a buscar rumores y otra información en lugares público como tabernas o bares. Haz un tiro de influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Las ventajas generadas te permiten encontrar indicios de información más valiosa, dándote la oportunidad de repetir el tiro, mientras que las desventajas causan que llames atención indeseada.
 
 <u>Aprovechar favores:</u> Al usar la habilidad de Persuasivo, si tienes éxito y el objetivo tiene actitud amistosa o superior puedes pedirle que te haga un favor. Ese favor puede ser cualquiera, pero si es peligroso o exagerado el objetivo no lo hará. Algunos ejemplos son pedirle un objeto o su ayuda en un trabajo
 
@@ -20,7 +20,7 @@ Añade un dado de soltura a tus tiros de Influenciar.
 
 Añade un dado de soltura a tus tiros de Influenciar.
 
-<u>Mente custodiada:</u> Tienes resistencia contra efectos mentales igual a tu rango, y la magia no puede detectar quién eres p si dices la verdad.
+<u>Mente custodiada:</u> Tienes resistencia contra efectos mentales igual a tu rango. La magia además no puede detectar si dices la verdad o cuál es tu verdadera identidad.
 
 <u>Chantaje:</u> Cuando uses la habilidad buscarrumores y exitosamente encuentres información comprometida de alguien, puedes usarla para forzar a esa persona a que siga tus ordenes. Con esta habilidad puedes usar aprovechar favores contra un objetivo aunque sea hostil mientras tengas información comprometedora sobre él, pero la persona chantajeada hará lo que sea paras que la información no salga a la luz convirtiéndose en tu enemigo.
 
