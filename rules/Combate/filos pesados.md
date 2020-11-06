@@ -20,9 +20,9 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media). 
 
-<u>Impacto destructor</u>: al impactar a un objetivo con armadura con tus ataque poderoso, reduce la defensa de la armadura del objetivo por 1. Esta reducción puede eliminarse reparando la armadura, y si la defensa de la armadura queda reducida a 0 esta es inutilizable (cuenta como si no llevase armadura para tajo feroz. Esta habilidad puede usarse en un ataque normal gastando 2 ventajas.
+<u>Impacto destructor</u>: Al impactar a un objetivo con armadura con tu ataque poderoso, reduce la defensa de su armadura por 1. Esta reducción puede eliminarse reparando la armadura, y si la defensa de la armadura queda reducida a 0 esta esta se vuelve inutilizable (cuenta como si no llevase armadura para los efectos tajo feroz). Esta habilidad puede usarse en un ataque normal gastando 2 ventajas.
 
-<u>Choque de espadas</u>: cuando ataques a un enemigo con tu espada y este use parada, si es de fuerza menor a la tuya gasta 2 ventajas para que vuestras espadas queden trabadas. Si tu espada está trabada puedes gastar 2 ventajas en un ataque para desarmar o moverte 5 pies junto a tu oponente (4 ventajas para romper el arma del enemigo). Para liberar su espada el oponente debe tirar un ataque contra tu parada y tener éxito o moverse fuera de tu alcance sufriendo un ataque de oportunidad. El oponente no puede atacar si tiene su espada trabada.
+<u>Choque de espadas</u>: Cuando ataques a un enemigo con tu espada y este use Parada para defenderse, puedes gastar 2 ventajas para que vuestras espadas queden trabadas. Si tu espada está trabada tienes la oportunidad de emplear 2 ventajas en un ataque para desarmar tu oponente o moverte 5 pies junto a él (4 ventajas para romper el arma del enemigo). Para liberar su espada el oponente debe tirar un ataque contra tu parada y tener éxito o moverse fuera de tu alcance sufriendo un ataque de oportunidad. El oponente no puede atacarte si tiene su espada trabada.
 
 ## Rango IV
 

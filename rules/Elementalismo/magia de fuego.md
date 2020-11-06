@@ -24,9 +24,9 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
-<u>Sobrecarga:</u> en lugar de hacer un ataque elemental: puedes contener la energía para liberarla después. Cuando liberes la energía, funciona como un ataque elemental con un radio de salpicadura igual a 5 pies de ataque y haces +1 daño base por cada ataque guardado. Si pierdes la concentración el daño se libera en una devastadora esplosión que te hace 2 daño no leal por ataque y daño a todas las criaturas en un radio de 5 pies por ataque
+<u>Sobrecarga:</u> En lugar de hacer un ataque elemental,  puedes contener la energía de tu ataque para liberarla después. Cada ataque que almacenes te otorga un punto de energía. Al hacer un ataque elemental, puedes gastar un número de puntos de energía para incrementar la fuerza de tu ataque. Cada punto de energía gastado aumenta tu daño base por 1 y el radio de salpicadura por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión que hace daño de fuego a todas las criaturas en un radio igual a 5 x puntos de energía igual a 2 + el número de puntos de energía que tengas almacenados. Tú también sufrirás daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
 
-<u>Pirotecnia:</u> Desbloqueas la técnica avanzada de humo. Como acción estándar, puedes manipular las llamas para moverlas a tu voluntad. El área que puedes afectar es igual a 10 x rango pies y puedes usar esta habilidad para crecer y decrecer las llamas
+<u>Pirotecnia:</u> Desbloqueas la técnica avanzada de humo. Como acción estándar, puedes manipular las llamas para moverlas a tu voluntad. El área que puedes afectar es igual a 10 x rango pies y puedes usar esta habilidad para hacer crecer o decrecer las llamas.
 
 ## Rango IV
 
