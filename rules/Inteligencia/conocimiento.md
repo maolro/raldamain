@@ -22,11 +22,10 @@ Recibes un nivel de talento adicional en conocimiento.
 
 Crea un hechizo nuevo con Conocimiento Arcano con fuerza equivalente a un hechizo de Rango II
 
+<u>Ritualista:</u> Eres capaz de realizar rituales sin sufrir efectos secundarios (los sigues sufriendo si eres interrumpido). Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si te lo permite.
+
 <u>Saber verdadero:</u> Una vez al día, haz uno de los siguientes efectos: 
 
 - Identifica todos los hechizos, propiedades mágicas y rangos de magia de todas las criaturas en 30 pies
-
 - Conoce todas las historias y leyendas de un lugar, persona o evento. Para usar esta habilidad debes estar un minuto concentrándote.
-
-  <u>Ritualista:</u> Eres capaz de realizar rituales sin sufrir efectos secundarios (los sigues sufriendo si eres interrumpido). Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si te lo permite.
 
