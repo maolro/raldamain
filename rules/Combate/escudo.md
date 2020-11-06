@@ -42,10 +42,10 @@ Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cance
 
 ### Escudos
 
-- Ligero +1 morado.
-- Pesado +2 morados, -1 DEX .
-- Madera +1 morado.
-- Metal +2 morados.
+- **Ligero** +1 morado.
+- **Pesado** +2 morados, -1 DEX .
+- **Madera** +1 morado.
+- **Metal** +2 morados.
 
 
 
