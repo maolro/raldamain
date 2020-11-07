@@ -4,7 +4,7 @@ title: Magia de Evocación
 
 ## Rango I
 
-Tira un dado de soltura adicional en tiros de ataque mágico.
+Tira un dado de soltura adicional en tiros de ataque mágico. Tu reserva aumenta por 2+Rango chi.
 
 <u>Rayo de energía:</u> Como acción estándar dispara un rayo de energía pura a un enemigo en hasta 90 pies de distancia. Este ataque hace 2+Éxito daño de fuerza y atraviesa toda la defensa salvo Resistencia mágica. Un rayo de energía no consume chi de tu reserva. Puedes gastar 1 chi con esta habilidad para hacer que el rayo tenga un radio de impacto de 5 pies, convirtiéndolo en un ataque de área. A rango III el radio de impacto aumenta por 5 pies (por 10 pies a rango V) al gastar 1 chi para infundir el ataque.
 
