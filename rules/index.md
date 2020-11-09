@@ -34,7 +34,7 @@ Los valores de PV y Vitalidad se reducen o aumentan si sufres algún cambio a tu
 
 ## Talentos
 
-Los [talentos](www.raldamain.com/rules/talentos.html) representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. 
+Los [talentos](http://raldamain.com/rules/talentos.html) representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. 
 
 ## Rangos
 

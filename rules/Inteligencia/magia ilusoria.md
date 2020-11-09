@@ -1,5 +1,5 @@
 ---
-ltitle: Magia ilusoria
+title: Magia ilusoria
 ---
 
 ## Rango I
@@ -12,9 +12,9 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva au
 
 ## Rango II
 
-<u>Terreno alucinatorio:</u> Emplea 1 chi de tu reserva y 
+<u>Terreno alucinatorio:</u> Emplea una acción de turno completo y gasta 2 chi de tu reserva para alterar el terreno en un cubo de tamaño igual a 200 pies. No puedes alterar estructuras con esta habilidad ni zonas geográficas muy prominentes, pero sí confundes a criaturas expertas en ese terreno, las cuales perderán todas las habilidades de Rastrear mientras estén en tu Terreno alucinatorio. Todas las criaturas que no tengan rangos en Magia Ilusoria o sean inmunes a ella reciben un dado de desventaja en tiros de Percepción y Sigilo, mientras tú obtienes un dado de Ventaja en tiros de ataque. Terreno alucinatorio dura diez minutos sin la necesidad de mantener la concentración, y este puede disiparse con Eliminar magia u otro uso de Terreno alucinatorio.
 
-<u>Ataque fantasmal:</u>
+<u>Ataque fantasmal:</u> Puedes infundir tus ataques de materia ilusoria para alterar su aspecto y confundir al defensor. Esta habilidad consume 1 chi de tu reserva y con ella fintas a tu objetivo (una criatura fintada no puede defenderse salvo que tenga Esquiva asombrosa). Si la criatura que intentas fintar está en posición defensiva, esta tiene la oportunidad de hacer un tiro de Percepción contra tu magia ilusoria para evitar ser fintado. Aunque alteres el aspecto de tus ataques el daño de ellos continúa siendo el mismo (las resistencias se aplicarán con normalidad).
 
 ## Rango III
 
