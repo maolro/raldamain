@@ -8,9 +8,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Obtienes resistencia al fuego igual a tu rango.
 
-<u>Piroquinesia:</u> Puedes manipular el fuego para crear pequeñas llamas, las cuales puedes lanzar hasta a una distancia de 30 pies.
-
-Al impactar, las llamas prenden todos los materiales inflamables en un radio de 5 pies que rodea la zona de impacto y hacen 0+éxitos daño de fuego. Sólo puedes usar piroquinesis si estas en contacto con el oxigeno y tienes una mano libre. Desbloqueas la rama de elementalísimo de fuego, usando tu carisma como estadística principal.
+<u>Piroquinesia:</u> Puedes manipular el fuego para crear pequeñas llamas, las cuales puedes lanzar hasta a una distancia de 30 pies. Al impactar, las llamas prenden todos los materiales inflamables en un radio de 5 pies que rodea la zona de impacto y hacen 0+éxitos daño de fuego. Sólo puedes usar piroquinesis si estas en contacto con el oxigeno y tienes una mano libre. Desbloqueas la rama de elementalísimo de fuego, usando tu carisma como estadística principal.
 
 ## Rango II
 

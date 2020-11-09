@@ -16,9 +16,9 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 ## Rango II
 
-<u>Danza de agua:</u> Como acción estándar, en lugar de atacar puedes almacenar un ataque (máx R+1). Si pierdes la concentración, pierdes tus ataques elementales. Puedes emplear los ataques almacenados como una acción de turno completo para impactar a un objetivo/ataque o hacer que tu siguiente ataque elemental haga +1 daño contundente /ataque en reserva y aumente su radio de impacto por 5 pies/ataque.
+<u>Danza de agua:</u> Como acción estándar, en lugar de atacar puedes almacenar un ataque (como máximo puedes almacenar un número de ataques igual a tu Rango + 1). Si pierdes la concentración, pierdes tus ataques elementales. Puedes emplear uno de tus ataques elementales para incrementar el daño base de tu siguiente ataque por 1 y su tamaño por 5 pies o para hacer un ataque elemental adicional. También puedes emplear uno de tus ataques elementales para hacer un Muro de agua como reacción sin la necesidad de gastar desventajas.
 
-<u>Muro de agua:</u> Como acción estándar crea un muro de 20+Rx5 pies de largo y Rx5 pies de alto. El muro impide el paso a proyectiles y una criatura debe gastar una acción de movimiento para atravesarlo (tirando fuerza para hacer esto). El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
+<u>Muro de agua:</u> Como acción estándar crea un muro de Rx15 pies de largo y Rx5 pies de alto. El muro impide el paso a proyectiles y una criatura debe gastar una acción de movimiento para atravesarlo (tirando fuerza para hacer esto). El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
 ## Rango III
 

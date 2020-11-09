@@ -18,7 +18,7 @@ Incrementa tu CON Por 1.
 
 <u>Canalizar el frío</u>: Puedes elegir sufrir 2 daño no-letal para infundir tus ataques con hielo. Un ataque infundido hace +2 daño hielo y puedes  gastar 2 ventajas para ralentizar a tu objetivo (solo ataques naturales). Este efecto dura 2+R rondas.
 
-Visión ártica: Las tormentas de nieve y niebla no dificultan tu visión , permitiéndote ver todo aquello en un radio de 60 pies. Esta habilidad no funciona con humo o gases que dificultan la visión.
+<u>Visión ártica</u>: Las tormentas de nieve y niebla no dificultan tu visión , permitiéndote ver todo aquello en un radio de 60 pies. Esta habilidad no funciona con humo o gases que dificultan la visión.
 
 ## Rango III 
 
@@ -34,7 +34,7 @@ Incrementa tu DES por 1.
 
 <u>Caminante del viento:</u> Obtienes  una velocidad de vuelo de 60 pies, pero sólo puedes volar si estás en una tormenta. Si intentas volar en otro entorno, sufres  2 daño no-letal para poder volar 60 pies. Atacar a una persona desde el aire no provoca ataques de oportunidad.
 
-<u>Ataques de oportunidad:</u> Tus ataques físicos hacen +1 daño de frío y cuentan como ataques mágicos. Este daño se acumula con canalizar frío y puedes gastar 2 ventajas para ralentizar al objetivo (4 para reducir su DES por 1).
+<u>Ataques infundidos:</u> Tus ataques físicos hacen +1 daño de frío y cuentan como ataques mágicos. Este daño se acumula con canalizar frío y puedes gastar 2 ventajas para ralentizar al objetivo (4 para reducir su DES por 1).
 
 ## Rango V 
 
