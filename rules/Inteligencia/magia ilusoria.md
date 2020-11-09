@@ -22,7 +22,7 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria.
 
 <u>Invisibilidad:</u> Las ilusiones que crean pueden disfrazar la misma realidad, haciendo que porciones de ella sean invisibles. Puedes gastar 1 chi de tu reserva para escoger que un objeto o criatura en el área de Crear ilusión se vuelva Invisible mientras mantengas la concentración en él. También puedes volverte invisible con Cambiar aspecto, permitiendo que todos tus ataques cuenten como Ataques sorpresa y añadiendo un dado de soltura adicional a todos tus tiros de Sigilo y Esquivar. Una criatura puede tirar arena u otro material polvoriento a un objetivo invisible para revelar su posición, lo cual hace que sus ataques ya no cuenten como Ataques sorpresa (sigue recibiendo un dado de Ventaja) y recibe únicamente ocultamiento.
 
-<u>Doble ilusorio:</u> 
+<u>Doble ilusorio:</u>  
 
 ## Rango IV
 
