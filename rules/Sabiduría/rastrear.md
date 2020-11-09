@@ -6,13 +6,13 @@ title: Rastrear
 
 Recibes un nivel de talento adicional en Supervivencia.
 
-<u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tienes +blanco con tiros de habilidad y ataque contra tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiando a tu enemigo para tener los beneficios de enemigo predilecto contra ellos. Ataque furtivo se aplica con enemigo predilecto.
+<u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tira un dado de ventaja adicional en tiros de habilidad y ataque relacionados con tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiándolo para obtener los beneficios de enemigo predilecto contra él. 
 
 <u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Gasta una ventaja generada en un tiro de rastrear para aprender un detalle de tu presa. Aprender información de mayor importancia tiene un costo superior de ventajas (a discreción del master). También puedes pasar un descanso corto en un lugar buscando pistas, lo cual te permitirá hacerte una idea de los sucesos ocurridos ahí en un intervalo de como máximo 2 horas.
 
 ## Rango II
 
-<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas a menos que tu lo desees. Tienes además +blanco en tiros de percepción, sigilo y supervivencia mientras estas en tu terreno.
+<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, . Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Tienes además un dado de ventaja adicional en tiros de percepción, sigilo y supervivencia mientras estás en tu terreno.
 
 <u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Puedes elegir moverte a la mitad de tu velocidad mientras persigues a tu presa mientras permaneces oculto, contando como si fueses invisible. Puedes estudiar a tu enemigo predilecto con esta habilidad, pero este efecto se pierde en el momento que ataques. Volver a acechar requiere una acción estándar y que estés fuera del campo de visión de tu presa. Al ocultarte con esta habilidad no puedes ser detectado por tiros de Percepción, salvo que el tiro lo haga una criatura con la habilidad Rastreador experto.
 
@@ -35,7 +35,7 @@ Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaj
 - Montaña: Escalada 30 pies, Adaptación al frío, Inmune a grandes alturas
 - Subterráneo: Visión a oscuras 60 pies, Escalada 15 pies, +2blancos buscando trampas o peligros
 - Acuático: respiración acuática (+2 turnos), nadar 30 pies
-- urbano: Velocidad de salto +10 pies, puedes usar acechar siempre que estés rodeado de gente
+- Urbano: Velocidad de salto +10 pies, puedes usar acechar siempre que estés rodeado de gente
 - Bosque: Resistencia igual a tu rango contra magia druídica, escalada 15 pies
 
 ## Rango V 
