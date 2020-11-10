@@ -40,7 +40,7 @@ Incrementa tu FUE por 1.
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2.
 
-<u>Gran fortitud:</u> Tu constitución es solida como una roca. Obtienes resistencia contra venenos, fuego, ácido y frío igual a tu rango. Aumenta tus PV base por 1 por cada 3 niveles que tengas. Este aumento de PV se acumula con los atributos de Fortitud .
+<u>Gran fortitud:</u> Tu constitución es sólida como una roca. Obtienes resistencia contra venenos, fuego, ácido y frío igual a tu rango. Aumenta tus PV base por 1 por cada 3 niveles que tengas. Este aumento de PV se acumula con los atributos de Fortitud.
 
 <u>Georradar predictivo:</u> El radio de tu georradar aumenta por 30 pies. No puedes ser sorprendido y tienes visión futura mientras estés tocando tierra(puedes volver a tirar ataque y defensa una vez adicional).
 
