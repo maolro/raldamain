@@ -4,7 +4,7 @@ title: Magia mental
 
 ## Rango I
 
-<u>Asalto psíquico:</u>
+<u>Asalto psíquico:</u> 
 
 <u>Detectar pensamientos:</u>
 

@@ -19,7 +19,7 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu DES por 1.
 
-<u>Ojo de halcón:</u> No sufres penalizadores a tu visión a causa de neblina y tormentas. Puedes sufrir 2 daño no-letal para infundir uno de tus ataques a distancia con viento, ignorando penalizadores a causa de tormentas y vientos poderosos. Si no hay vientos o estos actúan en tu favor el ataque infundido hará +2 daño base. Una criatura con magia de viento no puede usar Parada elemental para protegerse de un ataque infundido con viento.
+<u>Ojo de halcón:</u> No sufres penalizadores a tu visión a causa de neblina y tormentas. Puedes sufrir 2 daño no-letal para infundir uno de tus ataques a distancia con viento, ignorando penalizadores a causa de tormentas y vientos poderosos. Si no hay vientos o estos actúan en tu favor el ataque infundido hará +2 daño base. Una criatura con magia de viento no puede usar Parada elemental para protegerse de un ataque infundido.
 
 <u>Paso del viento:</u> Puedes realizar una acción de movimiento adicional al turno. Tus velocidades de salto aumentan, pudiendo saltar 10 pies adicionales horizontalmente y 5 pies verticalmente. 
 
@@ -39,7 +39,7 @@ Incrementa tu CAR por 1.
 
 <u>Viajero de los cielos:</u> Recibes la capacidad de volar 60 pies como acción de movimiento. Mientras estés volando obtienes un dado de ventaja atacando a criaturas que estén en el suelo e incrementa tu DES por 1 para tiros de Esquiva. Esta velocidad de vuelo queda reducida por armadura pesada y empezarás a caer si eres aturdido. Volar largas distancias te cansa con más facilidad, dejándote fatigado si intentas volar durante más de una hora seguida.
 
-<u>Ataques infundidos:</u> Tus ataques físicos están infundidos de la fuerza de una furiosa tempestad. Al impactar con un ataque físico empujas 5 pies automáticamente al objetivo y puedes emplear 2 ventajas para Fintarle (sólo funciona si usas armas ligeras). Si tienes rangos en Magia de tormenta infligirás +1 daño eléctrico en ataques físicos y podrás gastar 2 ventajas para Ralentizar al objetivo (4 ventajas para Aturdir). Los efectos de estado hechos con Ataques infundidos ignoran resistencia a Aturdir y Ralentizar, pero resistencia a daño eléctrico se aplica contra ellos.
+<u>Ataques infundidos:</u> Tus ataques físicos están infundidos de la fuerza de una furiosa tempestad. Al impactar con un ataque físico empujas 5 pies automáticamente al objetivo y puedes emplear 2 ventajas generadas en un ataque natural para Fintar. Si tienes rangos en Magia de tormenta infligirás +1 daño eléctrico en ataques físicos y podrás gastar 2 ventajas para Ralentizar al objetivo (4 ventajas para Aturdir). Los efectos de estado hechos con Ataques infundidos ignoran resistencia a Aturdir y Ralentizar, pero resistencia a daño eléctrico se aplica contra ellos.
 
 ## Rango V 
 
