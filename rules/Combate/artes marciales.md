@@ -26,7 +26,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 ## Rango IV 
 
-<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un ataque natural a un objetivo con armadura, gasta 2 ventajas para reducir su DEF por 1. Esta habilidad también puede usarse contra escudos si tu ataque es bloqueado por uno, lo cual le hará un daño. (ver rompe escudos). Tus ataques naturales cuentan como si fuesen de adamantina.
+<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un ataque natural a un objetivo con armadura, gasta 2 ventajas para reducir su DEF por 1. Esta habilidad también puede usarse contra escudos si tu ataque es bloqueado por uno, lo cual le hará un daño, como la habilidad de Armas Contundentes Rompescudos.
 
 <u>Punto de presión:</u> Puedes apuntar a los puntos de presión de un objetivo para inutilizar parte de su cuerpo y hasta impedir que usen magia. Al impactar con un puño preciso, gasta 2 ventajas para paralizar temporalmente la parte del cuerpo a la que impacte. Si es una pierna, es tropezado y su velocidad se reduce a la mitad; si es un brazo es desarmado y no puede atacar con el, y si eliges la cabeza cae inconsciente inmediatamente.
 

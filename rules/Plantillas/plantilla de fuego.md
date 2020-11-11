@@ -17,11 +17,11 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu DES por 1.
 
-<u>Furia del fuego:</u> Como acción bonus, puedes sufrir 2 daño no-letal para infundir tus armas con fuego elemental. Las armas infundidas de fuego hacen 2 daño de fuego adicional y puedes gastar 2 ventajas generadas para infligirle una quemadura leve al objetivo. (4 ventajas para infligir una quemadura media). Este efecto dura un número de turnos igual a 2+Rango.
+<u>Furia del fuego:</u> Como acción bonus, puedes sufrir 1 daño no-letal para infundir tus armas con fuego elemental durante un turno. Las armas infundidas de fuego hacen 2 daño de fuego adicional y puedes gastar 2 ventajas generadas para infligirle una quemadura leve al objetivo. (4 ventajas para infligir una quemadura media). 
 
 <u>Impulso de fuego:</u> El fuego te impulsa para moverte más rápido, otorgándote una acción de movimiento adicional al turno. Tus velocidades de salto aumentan, incrementando tu salto horizontal por 10 pies y tu salto vertical por 5 pies.
 
-<u>Vista ígnea:</u> puedes ver a través de las llamas y el humo como si fuesen trasparentes. Detectas la posición de todas las criaturas en 100 pies con la plantilla de fuego o que tengan una quemadura.
+<u>Vista ígnea:</u> Puedes ver a través de las llamas y el humo como si fuesen trasparentes. Detectas la posición de todas las criaturas en 100 pies con la plantilla de fuego o que tengan una quemadura.
 
 ## Rango III 
 
@@ -37,20 +37,18 @@ Incrementa tu CAR por 1.
 
 <u>Propulsión:</u> Eres capaz de propulsarte en el aire con tu magia de fuego. Como acción estándar, vuela 60 pies en cualquier dirección. Puedes usar esta habilidad como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
-<u>Armas infundidas:</u> Tus ataques físicos hacen +1 daño fuego base y cuentan como armas mágicas (ignora armadura natural, pero son bloqueadas por resistencia mágica). Este daño se acumula con furia del fuego. Puedes además gastar una ventaja generada para infligir 1 quemadura.
+<u>Armas infundidas:</u> Tus ataques físicos hacen +1 daño fuego base y cuentan como armas mágicas (ignora armadura natural, pero son bloqueadas por resistencia mágica). Este daño se acumula con Furia del fuego. Puedes además gastar ventajas generadas para infligir quemaduras de la misma manera que Furia del fuego.
 
 ## Rango V
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
-<u>Evasión:</u> Eres experto evitando ataques de área. No sufres daño obligatorio por ataques de área y una vez al turno puedes añadir 2 éxitos a tu tirada de destreza. Si ya tienes el atributo evasión, puedes usar esta habilidad una vez adicional al turno (2 si tienes evasión mejorada).
+<u>Elemento del poder:</u> El fuego te propulsa a velocidades sobrehumanas. No sufres daño obligatorio por ataques de área y una vez al turno puedes añadir 2 éxitos a tu tirada de destreza. Si ya tienes el atributo evasión, puedes usar esta habilidad una vez adicional al turno (2 si tienes evasión mejorada). 
 
-<u>Visión térmica:</u> Tienes visión térmica en un radio de 60 pies. Puedes activar o desactivar la visión térmica como una acción bonus (la visión térmica te permite determinar la posición de criaturas que emanen calor. No funciona con no-muertos, constructos o criaturas con plantilla boreal).
+<u>Visión térmica:</u> Tienes visión térmica en un radio de 60 pies., la cual te permite detectar la posición de criaturas que emanen calor. Vista térmica no funciona con no-muertos, constructos o criaturas con Plantilla Boreal, y puedes activar o desactivar la visión térmica como acción bonus. 
 
 ## Rango VI 
 
 Incrementa tu DES por 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de puro fuego elemental. Mientras estás en tu forma elemental, eres de tamaño grande y el daño de tu aura abrasante aumenta por 2. La llamas además te permiten usar propulsión como acción de movimiento sin que tengas que sufrir 2 daño no-letal y tus ataques mágicos de fuego hacen +2 daño adicional. Si pasas un turno sumergido en el agua tu forma elemental termina inmediatamente, y cada turno que mantienes la forma elemental sufres 1 daño a la vitalidad y pierdes la habilidad de absorber fuego.
-
-Las llamas te dan 6 puntos de vida temporales los cuales absorben daño hecho por ataques mágicos y fisicos. No puedes protegerte con las llamas de proyectiles de tamaño medio o superior, como balas de cañón o pedruscos. Cuando se te acaben los puntos de vida temporales termina tu forma elemental.
+<u>Forma elemental:</u> Como acción de turno completo, te rodeas de puro fuego elemental. Mientras estés en Forma elemental estás constantemente rodeado por un Muro de fuego y el daño no-letal que infligido por tu Aura abrasadora aumenta por 1. Puedes además usar la habilidad Propulsión como acción de movimiento sin sufrir daño no-letal y tus ataques hacen +2 daño de fuego al impactar. La Forma elemental termina inmediatamente si pasas un turno sumergido en el agua o eres incapacitado. Cada turno que mantienes la forma elemental sufres 1 daño no-letal y pierdes la habilidad Conexión elemental.
