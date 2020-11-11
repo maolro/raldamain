@@ -8,7 +8,10 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Ascendencia de las profundidades</u>: Recibes resistencia a Frío igual a tu rango de plantilla elemental. No sufres efectos negativos a causa del frío extremo. Los animales marinos no son naturalmente hostiles hacia ti.
 
-<u>Hidrokinesia:</u> Puedes moldear pequeñas cantidades de agua a tu voluntad. Desbloqueas rangos en Magia de Agua
+<u>Hidrokinesia:</u> Puedes moldear pequeñas cantidades de agua a tu voluntad. Desbloqueas rangos en Magia elemental de Agua. Como acción bonus usable una vez al turno puedes manipular una cantidad pequeña de agua o alterar sus estados. Puedes afectar al agua de las siguientes maneras:
+
+- Evapora una cantidad de agua con volumen máximo de un pie cuadrado. El agua que  evapores debe estar adyacente a ti. Si tienes rangos en Magia de sangre puedes crear una cantidad de agua de volumen igual a un pie cuadrado drenándola de tu entorno.
+- Mueve 30 pies en cualquier dirección una cantidad de agua de volumen igual a un pie cuadrado. El agua que manipules no hará daño ni empujará.
 
 ## Rango II
 
