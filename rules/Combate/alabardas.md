@@ -6,9 +6,9 @@ title: Alabardas
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Preparación contra cargas</u>:</u> Gasta una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual inflinges +2 daño. Si impactas , el objetivo debe detenerse de inmediato.
+<u>Preparación contra cargas</u>: Gasta una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual inflinges +2 daño. Si impactas , el objetivo debe detenerse de inmediato.
 
-<u>Parada</u>:</u> Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante ( 2/turno a rango III y 2/turno a rango V).
+<u>Parada</u>: Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante ( 2/turno a rango III y 2/turno a rango V).
 
 ## Rango II
 
@@ -20,15 +20,15 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
 
-<u>Flanqueador experto:</u> haces +2 daño base al flanquear, y puedes flanquear a cualquier criatura que alcances y que tenga adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
+<u>Flanqueador experto:</u> Tu arma hace +2 daño base contra objetivos que flanquees. Flanqueas a cualquier criatura que esté en tu radio de alcance y que esté adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
 
-<u>Ataque serpenteante:</u> Tu soltura con tu arma te permite hacer complejas técnicas de combate. En lugar de hacer daño,puedes gastar 2 ventajas en un ataque exitoso para desarmar al objetivo o que este no pueda usar escudo o parada contra tu siguiente ataque. Puedes además gastar una acción de movimiento una vez al turno para hacer un ataque adicional.
+<u>Ataque serpenteante:</u> Tu soltura con tu arma te permite hacer complejas técnicas de combate. En lugar de hacer daño, puedes gastar 2 ventajas en un ataque exitoso para desarmar al objetivo o que este no pueda usar escudo o parada contra tu siguiente ataque. Puedes además gastar una acción de movimiento una vez al turno para hacer un ataque adicional.
 
 ## Rango IV
 
-<u>Ataque circular</u>:</u> ataque lateral te cuesta una acción estándar. Si estas a 10 pies, puedes atacar a todas las criaturas en ese radio en un ataque circular con tu arma como si se tratase  de torbellino de acero. Al impactar a un objetivo puedes empujarlo 5 pies en cualquier dirección usando tu arma.
+<u>Ataque circular</u> Usar Ataque lateral te cuesta una acción estándar. Como acción de turno completo puedes atacar a todas las criaturas que se encuentren en el radio de alcance de tu arma (funciona como Torbellino de acero). Al impactar a un objetivo puedes empujarlo 5 pies en cualquier dirección usando tu arma.
 
-<u>Carga con lanza</u>: Haces +2 daño al cargar con tu arma, y al impactar puedes gastar 2 ventajas para clavarle tu arma al objetivo. Si el enemigo tiene tu arma clavada no puede moverse y cuando usas ajustar alcance lo mueves a la misma posición (debes tirar fuerza para esto) . Desenganchar tu arma te cuesta una acción de movimiento y el enemigo que tengas agarrado puede intentar romper tu arma.
+<u>Carga con lanza</u>: Haces +2 daño al hacer una carga con tu arma, y al impactar puedes gastar 2 ventajas para clavarle tu arma al objetivo. Si el enemigo tiene tu arma clavada está Agarrado y puedes moverlo hasta 10 pies en cualquier dirección como acción de movimiento. Desenganchar tu arma te cuesta una acción de movimiento y el enemigo que tengas Agarrado puede intentar romper tu arma.
 
 ## Rango V
 
