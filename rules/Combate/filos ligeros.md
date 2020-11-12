@@ -6,7 +6,7 @@ title: Filos ligeros
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo un morado de penalización (2 morados si es cabeza o abdomen) a cambio de infligir una herida permanente leve al impactar. La herida debe ser en el lugar escogido. A rango III inflinges una herida media y a rango V una herida grave.
+<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo dado de dificultad como penalización (añade dos dados de dificultad si escoges la Cabeza) a cambio de infligir una herida permanente leve en esa parte del cuerpo al impactar con tu ataque. A rango III inflinges una herida media y a rango V una herida grave. Si generas ventajas en un ataque furtivo y estás apuntando a una parte específica del cuerpo del objetivo puedes gastar 4 ventajas para incrementar el nivel de la herida permanente por 1.
 
 <u>Parada:</u> Puedes usar parada para protegerte de ataques enemigos. Esta habilidad funciona igual que parada de aptitud con filos pesados, pero al intentar bloquear un ataque poderoso el enemigo puede gastar 2 ventajas para romper tu arma. Una vez al turno puedes cancelar un éxito generado por el atacante (dos veces al turno a Rango III y tres veces al turno a Rango V)
 
@@ -26,7 +26,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 ## Rango IV
 
-<u>Ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en ese área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate y acciones preparadas.
+<u>Ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en ese área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con Ataque saltarín.
 
 <u>Finta superior:</u> Al fintar puedes hacer un ataque adicional contra tu objetivo, para el cual se aplica ataque preciso como si fuese un ataque sorpresa. Solo puedes fintar de esta manera 1 vez al turno.
 
@@ -34,7 +34,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Ataque vital:</u> al impactar con un ataque preciso gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo. Esto se aplica después de hacer daño con tu arma.
+<u>Ataque vital:</u> Al impactar con un ataque preciso gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo. Esto se aplica después de hacer daño con tu arma. 
 
-<u>Contrataque:</u> al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo hacer mas de un contrataque por ronda. Contrataque no funciona contra otro contrataque
+<u>Contrataque:</u> Al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo hacer más de un contrataque por ronda. Contrataque no funciona contra otro contrataque.
 
