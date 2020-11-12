@@ -22,19 +22,19 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria.
 
 <u>Invisibilidad:</u> Las ilusiones que crean pueden disfrazar la misma realidad, haciendo que porciones de ella sean invisibles. Puedes gastar 1 chi de tu reserva para escoger que un objeto o criatura en el área de Crear ilusión se vuelva Invisible mientras mantengas la concentración en él. También puedes volverte invisible con Cambiar aspecto, permitiendo que todos tus ataques cuenten como Ataques sorpresa y añadiendo un dado de soltura adicional a todos tus tiros de Sigilo y Esquivar. Una criatura puede tirar arena u otro material polvoriento a un objetivo invisible para revelar su posición, lo cual hace que sus ataques ya no cuenten como Ataques sorpresa (sigue recibiendo un dado de Ventaja) y recibe únicamente ocultamiento.
 
-<u>Doble ilusorio:</u> Como acción de movimiento crea un doble ilusorio de ti, el se proyecta en una posición de hasta 15 pies de ti. El doble realiza los mismos movimientos que tú y a primera vista es indistinguible de ti. Cuando seas atacado puedes  
+<u>Doble ilusorio:</u> Como acción de movimiento crea un doble ilusorio de ti, el se proyecta en una posición de hasta 15 pies de ti. El doble realiza los mismos movimientos que tú y a primera vista es indistinguible de ti. Puedes mover a un doble a tu posición como reacción para confundir al atacante, tirando tus dados de Magia Ilusoria defensivamente para protegerte. Al usar Doble ilusorio de esta manera el doble se desvanecerá sin importar el resultado del tiro. Puedes tener activos como máximo un número de dobles igual a tu Rango - 1. No podrás defenderte usando un doble de criaturas que no necesiten la vista para atacarte, como es el caso de aquellas con Telepatía o Vista a ciegas.
 
 ## Rango IV
 
-<u>Espejismo arcano:</u>
+<u>Espejismo arcano:</u>  Tu maestría de las ilusiones te permite gigantescas estructuras. Emplea una acción de turno completo y gasta 1 chi para crear una estructura ilusoria de tamaño 60 pies cuadrados o esconder una estructura del mismo tamaño. Al usar Terreno alucinatorio puedes añadir efectos táctiles, olfatorios y sonoros a la ilusión, volviéndola más real a vista de los observadores. Sólo puedes crear Espejismos arcanos en áreas afectadas por Terreno alucinatorio.
 
-<u>Velo de engaños:</u>
+<u>Velo de engaños:</u> 
 
 ## Rango V 
 
 Añade un dado de soltura a tiros relacionados con magia ilusoria.
 
-<u>Proyectar imagen:</u>
+<u>Maestro ilusionista:</u>  
 
-<u>Monstruo ilusorio:</u>
+<u>Monstruo ilusorio:</u> 
 
