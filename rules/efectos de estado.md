@@ -68,7 +68,7 @@ Apuntar a un brazo específico requiere un gasto adicional de 1 ventaja.
 | 1                | Cabeza         |
 | 2-3              | Brazos         |
 | 4-6              | Pecho          |
-| 7-               | Abdomen        |
+| 7-8              | Abdomen        |
 | 9-10             | Piernas        |
 
 *Tabla de parte aleatoria del cuerpo afectado. Para ello tira un dado de diez caras (d10)*.
@@ -85,7 +85,7 @@ Esta es una lista e los efectos de estado más comunes que pueden afectar a una 
 
 **Enfermada:** Una criatura enfermada tira un dado de Desventaja en todos sus tiros de ataque y habilidad. Además, todos los atacantes recibirán un dado de Ventaja contra ella. Este efecto de estado puede estar causado tanto por enfermedad, veneno o heridas permanentes.
 
-**Enredada: ** Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y añade un penalizador -2 a la DES. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
+**Enredada:** Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y añade un penalizador -2 a la DES. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
 
 **Ensordecida:** Una criatura ensordecida no puede escuchar sonidos con claridad. Es inmune a efectos que requieran escuchar como Voz del comandante o Palabra divina, pero fracasará automáticamente todos los tiros de Percepción que requieran el oído. Los atacantes añaden un dado de Ventaja adicional en sus tiradas contra ella y esta añade un dado de Desventaja a sus tiros de habilidad.
 
