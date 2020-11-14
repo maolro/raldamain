@@ -75,7 +75,11 @@ Apuntar a un brazo específico requiere un gasto adicional de 1 ventaja.
 
 ## Efectos de estado
 
-Esta es una lista e los efectos de estado más comunes que pueden afectar a una criatura. 
+Esta es una lista e los efectos de estado más comunes que pueden afectar a una criatura.
+
+**Agarrada:** Una criatura agarrada no puede moverse y recibe una penalización -2 en tiros para Esquivar. También añade un dado de Desventaja a todos sus tiros de ataque y de maniobras de combate excepto para escapar del agarre. Intentar escapar cuesta una acción de movimiento con la cual la criatura agarrada debe obtener éxito en una tirada de Heroísmo contra el valor de Heroísmo de quién le esté agarrando.
+
+**Asustada:** Una criatura asustada intenta huir de la fuente de su miedo, empleando sus acciones para huir de este. Esta no se acercará voluntariamente a la fuente de su miedo y sólo luchará si está acorralada. Una criatura asustada recibe las mismas penalizaciones luchando como su estuviese espantada.
 
 **Aturdida:** Una criatura Aturdida no puede usar acciones ni reacciones, y debe dejar caer todos los objetos que esté llevando salvo aquellos que estén enganchados a su cuerpo. El aturdimiento dura un turno o hasta que la criatura sea impactada por un ataque. Si una criatura voladora queda Aturdida esta empezará a caer.
 
@@ -96,6 +100,8 @@ Esta es una lista e los efectos de estado más comunes que pueden afectar a una 
 **Fatigada:** Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -1 en su FUE y DES. La fatiga no se acumula, y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto. Puedes recibir fatiga si tu Vitalidad queda reducida a 0 o pasas un día entero sin dormir.
 
 **Náuseas:** Una criatura con náuseas es incapaz de concentrarse. Fracasa automáticamente en todos sus tiros de habilidad y pierde una acción estándar al turno.
+
+**Pánico:** Una criatura que entra en pánico intenta huir lo más rápido que pueda de la fuente de su miedo, empleando sus acciones para huir. Esta no podrá atacar a la fuente de su miedo aunque esté acorralada, y sólo podrá usar aquellas habilidades que le ayuden a escapar. Pánico otorga a la criatura los mismos penalizadores que espantado.
 
 **Paralizada:** Una criatura paralizada no puede moverse ni tomar acciones, quedándose quieta en un lugar. Funciona como el aturdimiento, pero no terminará hasta que esta tenga éxito en un tiro de CON o FUE dependiendo de la causa de su parálisis contra el tiro de dificultad adecuado. 
 
