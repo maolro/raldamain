@@ -16,7 +16,7 @@ Tira un dado de soltura adicional en tiros de ataque mágico. Tu reserva aumenta
 
 <u>Infundir arma:</u>  Puedes gastar 1 chi de tu reserva para infundir tu arma de energía mágica. Tu arma infligirá +2 daño de energía en ataques durante un número de turnos igual a tu Rango. Mientras esté infundida tu arma cuenta como arma mágica para el propósito de atravesar resistencias. Al gastar 1 chi adicional en esta habilidad el daño de energía que inflige aumentará por 1 (máximo +5 daño). 
 
-<u>Muro de energía:</u> Como acción estándar crea un muro de energía de 20+Rx5 pies de largo y Rx5 pies de alto. Este muro tendrá las propiedades de un muro elemental de tu elección  (ver Magia Elemental), pero no puedes tener activos dos muros hechos de elementos diferentes.. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. 
+<u>Muro de energía:</u> Como acción estándar crea un muro de energía de 20+Rx5 pies de largo y Rx5 pies de alto. Este muro tendrá las propiedades de un muro elemental de tu elección, pero no puedes tener activos dos muros hechos de elementos diferentes.. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. 
 
 ### Rango III
 

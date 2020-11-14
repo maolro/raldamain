@@ -28,7 +28,7 @@ Tira un dado de soltura adicional en tiros de ataque protectora.
 
 ## Rango IV
 
-<u>Rebotar magia:</u> Al tener éxito en un tiro de Contrahechizo, puedes emplear 2 desventajas generadas para rebotar el hechizo a su lanzador. 
+<u>Rebotar magia:</u> Al tener éxito en un tiro de Contrahechizo o reducir el daño de un hechizo a 0 con tu Armadura mágica, puedes emplear 2 desventajas generadas para rebotar el hechizo a su lanzador. Lanzarás tus dados de Magia Protectora en el tiro de ataque, y podrás lanzar el hechizo rebotado en la dirección de desees. Si el hechizo que rebotes pertenece a una rama de magia que ya conozcas puedes usar tus habilidades en este como si fuera tuyo. Rebotar magia no funciona con Magia Mental o Ilusoria.
 
 <u>Aura antimágica:</u> 
 
