@@ -6,17 +6,17 @@ title: Reflejos
 
 Añade un dado de desafío a tus tiros defensivos para esquivar. Una vez al turno puedes cancelar un éxito generado por el enemigo.
 
-<u>Rapidez</u>: tienes una acción de movimiento adicional por turno. Esa acción puede usarse para desenganchar, esquivar, esconderte o hacer un movimiento.
+<u>Rapidez</u>: Tienes una acción de movimiento adicional por turno. Esa acción puede usarse para desenganchar, esquivar, esconderte o hacer un movimiento.
 
-<u>Sutileza:</u> las armas ligeras que llevas son difícilmente detectables y capaces de matar antes que tu enemigo se dé cuenta. Desenfundar un arma te cuesta una acción gratuita (solo si es ligera) y si obtienes 2 ventajas en un ataque sorpresa puedes gastarlas para que tu objetivo no haga ruido al ser impactado o robarle un objeto que lleve encima. Si estás oculto al hacer un  ataque puedes gastar 2 ventajas para volver a esconderte si tienes ocultamiento o estás fuera del campo de visión de la criatura que estés atacando.
+<u>Sutileza:</u> Las armas ligeras que llevas son difícilmente detectables y capaces de matar antes que tu enemigo se dé cuenta. Desenfundar un arma te cuesta una acción gratuita (solo si es ligera) y si obtienes 2 ventajas en un ataque sorpresa puedes gastarlas para que tu objetivo no haga ruido al ser impactado o robarle un objeto que lleve encima. Si estás oculto al hacer un  ataque puedes gastar 2 ventajas para volver a esconderte si tienes ocultamiento o estás fuera del campo de visión de la criatura que estés atacando.
 
 ## Rango II
 
 Cuando un enemigo falle su ataque puedes moverte 5 pies como reacción. Esto no provoca ataques de oportunidad.
 
-<u>Evasión:</u> no sufres daño obligatorio por ataques de área si tienes éxito en el tiro . si obtienes suficiente desventajas en el tiro de defensa para salir del radio del ataque de área, lo esquivas por completo aunque no tengas éxito (cada desventaja gastada te mueve 5 pies).
+<u>Evasión:</u> No sufres daño obligatorio por ataques de área si tienes éxito en el tiro . si obtienes suficiente desventajas en el tiro de defensa para salir del radio del ataque de área, lo esquivas por completo aunque no tengas éxito (cada desventaja gastada te mueve 5 pies).
 
-<u>Esquiva asombrosa:</u> reaccionas al peligro antes de que tus sentidos te permitan hacerlo. Puedes usar esquivar contra ataques sorpresa y atacantes invisibles (sigues teniendo +blanco y activa ataque furtivo). esquiva asombrosa no funciona contra fintas y si estas inmovilizado.
+<u>Esquiva asombrosa:</u> Reaccionas al peligro antes de que tus sentidos te permitan hacerlo. Puedes usar esquivar contra ataques sorpresa y atacantes invisibles (sigues teniendo +blanco y activa ataque furtivo). esquiva asombrosa no funciona contra fintas y si estas inmovilizado.
 
 ## Rango III
 
@@ -24,7 +24,7 @@ Añade un dado de desafío a tus tiros defensivos para esquivar. Puedes cancelar
 
 <u>Acrobacias</u>: Recibes velocidad de escalada igual a tu velocidad normal. Puedes caminar por superficies estrechas y terreno difícil sin sufrir penalizaciones, además de que puedes esquivar con normalidad con esta.
 
-<u>Prisa:</u> tienes una segunda acción estándar al turno. Con esa acción puedes atacar, usar maniobras de combate o emplear defensa completa. No puedes lanzar hechizos o hacer ataques elementales con esa acción.
+<u>Prisa:</u> Tienes una segunda acción estándar al turno. Con esa acción puedes atacar, usar maniobras de combate o emplear defensa completa. No puedes lanzar hechizos o hacer ataques elementales con esa acción.
 
 ## Rango IV
 
