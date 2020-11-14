@@ -14,13 +14,17 @@ title: Ira
 
 <u>Golpe decisivo:</u> Una vez por ira, concentras todas tus fuerzas en un único ataque. Golpe decisivo es una acción bonus y te otorga +azul y +1 daño en ese ataque. El numero de dados azules y el daño aumentan por 1 cada vez que recibas 1 rango adicional en ira.
 
-## Rango III +1 PV al entrar en ira
+## Rango III
+
+Recibes +1 PV adicional al entrar en ira.
 
 <u>Fortitud interna:</u> Eres inmune a veneno, enfermado y nauseas mientras estés en ira. Puedes entrar en ira aunque estés fatigado, pero caes inconsciente cuando acabe esta Ira, que dura un número de turnos igual a tu rango + tu constitución.
 
 <u>Temerario:</u> Eres inmune a miedo y efectos de moral mientras estés en ira. Puedes usar habilidades de presencia mientras esrés en ira, para las cuales recibes además un bonificador +verde
 
-## Rango IV +1 daño base en ira
+## Rango IV
+
+Incrementa tu daño base por 1 al entrar en ira.
 
 <u>Ira primigenia:</u> Puedes superar el 6 al entrar en ira si tu estadística te lo permite. Además, la ira te otorga +1 fue, con y des acumulables con ira.
 
