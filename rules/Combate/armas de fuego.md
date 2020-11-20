@@ -32,7 +32,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después por ejemplo). Tampoco sufres penalizaciones al disparar montado o en un vehículo en movimiento.
 
-<u>Disparos a bocajarro</u>: Como acción de turno completo haz una secuencia de disparos rápidos. Con esta habilidad puedes hacer un ataque adicional con tu arma pero sufres un penalizador + morado adicional en todos tus ataques.
+<u>Disparos a bocajarro</u>: Como acción de turno completo haz una secuencia de disparos rápidos. Con esta habilidad puedes hacer un ataque adicional con tu arma pero sufres un penalizador de un dado de Dificultad dicional en todos tus ataques.
 
 ## Rango V
 
