@@ -6,7 +6,7 @@ title: Plantilla de Tierra
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Vinculo con la tierra:</u> Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Una región es un territorio de hasta 4 km de área. Mientras permanezcas en contacto con la tierra de tu región tienes regeneración 1 y un dado de ventaja en todos tus tiros. Para declarar un territorio como tu región debes pasarte un día explorándolo y meditando en el. Solo puedes tener una región vinculada para este efecto.
+<u>Vínculo con la tierra:</u> Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Una región es un territorio de hasta 4 km de área. Mientras permanezcas en contacto con la tierra de tu región tienes regeneración 1 y un dado de ventaja en todos tus tiros. Para declarar un territorio como tu región debes pasarte un día explorándolo y meditando en el. Solo puedes tener una región vinculada para este efecto.
 
 <u>Geokinesia:</u> Puedes moldear a tu voluntad pequeñas cantidades de tierra. Como acción estándar, puedes alterar hasta 2 pies cuadrados de tierra. Esta tierra puede usarse para atacar haciendo 0+éxitos daño contundente al impactar. Solo puedes usar geokinesia si estas en contacto con la tierra. Desbloqueas la rama de magia elemental de tierra, usando sabiduría como característica principal.
 
