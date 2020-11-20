@@ -1,6 +1,10 @@
-magia de tormenta
+---
+title: Magia de tormenta
+---
 
-## Rango I añade un dado de soltura a todos tus ataques elementales
+## Rango I 
+
+Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Relámpago:</u> Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 2+éxito daño eléctrico. Tiras 1 dado de ventaja adicional contra criaturas que lleven armadura metálica (2 dados de ventaja adicionales si tiene armadura pesada o escudo pesado de metal ). Gasta 2 ventajas para que el objetivo no pueda usar reacciones durante un turno (4 para ralentizar). Si estás en una tormenta puedes hacer como acción estándar que un rayo caiga sobre un objetivo en un lugar expuesto. Esto te cuesta una acción de movimiento a rango III.
 
@@ -14,7 +18,9 @@ magia de tormenta
 
 <u>Cargar el aire:</u> Emplea un ataque elemental para cargar una porción de aire de 5 pies por rango con energía eléctrica. Puedes hacer un ataque elemental como ataque de oportunidad contra una criatura que pase por esa zona. además, si afectas aun espacio que se encuentre en un muro de viento todo el muto quedará cargado. Este efecto dura un turno por cada nivel de fuerza que tenga el aire que cargues.
 
-## Rango III añades un dado de soltura a tus ataques elementales
+## Rango III
+
+Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Voltio cruel:</u> Al impactar con un ataque elemental, gasta tus ventajas para provocar espasmos en los músculos de los objetivos. Esta habilidad funciona como la habilidad espasmos de magia de sangre. solo que si impacta al torso puedes gastar 2 ventajas para ralentizar al objetivo ( 4 para aturdir).
 
@@ -26,15 +32,16 @@ magia de tormenta
 
 <u>Castigo de los cielos:</u> Tienes la habilidad de contener la energía eléctrica y liberarla después. Esto funciona como onda destructiva, pero al liberar tu energía haces un ataque de relámpago por cada ataque acumulado. Cada relámpago se dispara en la dirección que tú elijas, y si dos can en la misma dirección se combinan en un único ataque que hará +1 daño base y aumentará su alcance por 15 pies. Si estás en una tormenta puedes hacer que esos relámpagos acumulados caigan del cielo, atacando a las criaturas que tú desees.
 
-## Rango V añades un dado de soltura a tus ataques elementales
+## Rango V 
 
-<u>tormenta de venganza:</u> Como acción de turno completo invoca una cataclísmica tormenta capaz de arrasar con todo a su alrededor. Para usar esta habilidad debe haber clima tormentoso y durará activa 10 rondas. esta tormenta te otorga los siguientes beneficios:
+Añade un dado de soltura a todos tus ataques elementales.
+
+<u>Rayo divino:</u> Tus ataques eléctricos atraviesan resistencias y hacen +2 daño contra criaturas que te hayan herido la ronda anterior.
+
+<u>Tormenta de venganza:</u> Como acción de turno completo invoca una cataclísmica tormenta capaz de arrasar con todo a su alrededor. Para usar esta habilidad debe haber clima tormentoso y durará activa 10 rondas. esta tormenta te otorga los siguientes beneficios:
 
 -  No se pueden hacer ataques a distancia y es imposible concentrarse mientras la tormenta siga activa
-
-- Las fuertes lluvias reducen la visibilidad a 15 pies y todas las criaturas que no sean elementalistas de agua o aire se mueven a mitad de velocidad.
-
+-  Las fuertes lluvias reducen la visibilidad a 15 pies y todas las criaturas que no sean Elementalistas de agua o aire se mueven a mitad de velocidad.
 - Puedes hacer un ataque elemental de rayo, trueno o aire como acción bonus una vez al turno.
 
-  <u>Rayo divino:</u> Tus ataques eléctricos atraviesan resistencias y hacen +2 daño contra criaturas que te hayan herido la ronda anterior.
 
