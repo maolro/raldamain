@@ -36,7 +36,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Carga repentina:</u> si gastas tu acción de movimiento en usar preparación contra cargas, en cualquier momento del turno enemigo puedes hacer una carga como reacción. El daño por carga con lanza se suma a este ataque.
 
-<u>Ataque vital:</u> Las heridas permanentes que provocas con preparación contra lanzas son de un nivel superior. Gasta 4 ventajas para dejar al objetivo a 0 pv y moribundo
+<u>Ataque vital:</u> Las heridas permanentes que provocas con preparación contra lanzas son de un nivel superior. Gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo.
 
-<u>Reposicionar:</u> Recibes la habilidad reposicionar de aptitud con filos ligeros como si la tuvieses a rango tres ( es decir, puedes moverte 5 pies como reacción tras una parada exitosa)
+<u>Reposicionar:</u> Recibes la habilidad reposicionar de aptitud con filos ligeros como si la tuvieses a rango tres (es decir, puedes moverte 5 pies como reacción tras una parada exitosa).
 

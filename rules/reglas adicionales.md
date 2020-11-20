@@ -4,7 +4,11 @@ title: Reglas adicionales
 
 ## Heridas permanentes
 
-Se designa como heridas permanentes a todas aquellas heridas que causan daños duraderos al cuerpo de la persona. Infligir heridas permanentes requiere gastar un número de ventajas igual dependiendo de tu Rango de arma al impactar con un ataque. La herida que inflijas afectará a una parte aleatoria del cuerpo del objetivo salvo que gastes un número de ventajas para apuntar a un lugar específico. Si vuelves a sufrir una herida permanente el el mismo lugar aumentará su nivel por 1 y eliminará todas las heridas anteriores que tengas. Las heridas permanentes que afectan a cada parte del cuerpo son las siguientes:
+Se designa como heridas permanentes a todas aquellas heridas que causan daños duraderos al cuerpo de la persona. Infligir heridas permanentes requiere gastar un número de ventajas igual dependiendo de tu Rango de arma al impactar con un ataque.
+
+Dependiendo del tipo de daño que inflige tu arma, las heridas permanentes tienen ligeras variaciones. Si tu arma es Cortante, el objetivo sufrirá Sangrado además de los efectos de la herida. Si es Contundente, puedes infligir heridas permanentes a criaturas que lleven armadura aunque tu daño sea reducido a 0, mientras que si es Perforante eres capaz de infligir heridas permanentes a criaturas con armadura natural aunque reduzcan tu daño.
+
+La herida que inflijas afectará a una parte aleatoria del cuerpo del objetivo salvo que gastes un número de ventajas para apuntar a un lugar específico. Si vuelves a sufrir una herida permanente el el mismo lugar aumentará su nivel por 1 y eliminará todas las heridas anteriores que tengas. Las heridas permanentes que afectan a cada parte del cuerpo son las siguientes:
 
 ### Cabeza
 
