@@ -1,5 +1,5 @@
 ---
-title: Magia de aire
+title: Magia de Aire
 ---
 
 
