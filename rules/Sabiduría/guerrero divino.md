@@ -34,6 +34,6 @@ title: Guerrero divino
 
 - Te sanas toda tu vitalidad, 6 PV y activas inmediatamente guardián de la fe
 
-- un grupo de hasta 6 aliados que hayan muerto hace como mucho un minuto resucitan con 3 PV y reciben la habilidad guerrero de la fe
+- Un grupo de hasta 6 aliados que hayan muerto hace como mucho un minuto resucitan con 3 PV y reciben la habilidad guerrero de la fe
 - Tu dios envía a sus fuerzas para protegerte. Invoca a un grupo de criaturas extraplanarias con un nivel igual al tuyo
 
