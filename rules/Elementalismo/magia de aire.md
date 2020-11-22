@@ -1,10 +1,14 @@
-Magia de aire
+---
+title: Magia de aire
+---
 
-## Rango I Añade un dado de soltura a todos tus ataques elementales.
+## Rango I 
+
+Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Vendaval:</u> Al impactar con un ataque elemental empujas al objetivo 5xéxitos pies. Si impacta un objeto sólido sufrirá 1 daño contundente por cada éxito sobrante y puedes gastar 4 ventajas para producirle una herida permanente leve (2 si sufre una caída). También puedes gastar una ventaja para tropezarlo o lanzarlo 5 pies por los aires.
 
-<u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes atacar a todas las criaturas en una linea de 10 pies de ancho y 60 de largo, hacer un ataque adicional o aumentar la fuerza de los vientos en un área de 40 pies por 1. Esta habilidad sólo puede usarse una vez al turno.
+<u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes atacar a todas las criaturas en una línea de 10 pies de ancho y 60 de largo, hacer un ataque adicional o aumentar la fuerza de los vientos en un área de 40 pies por 1. Esta habilidad sólo puede usarse una vez al turno.
 
 <u>Parada elemental:</u> Te protege de ataques mágicos y proyectiles. Cancela un éxito si es un ataque a distancia o de fuego. Puedes cancelar 1 éxito adicional al turno a rango III y V.
 
@@ -14,7 +18,9 @@ Magia de aire
 
 <u>Secuencia de ataques:</u> Puedes emplear una acción de movimiento para hacer un ataque elemental adicional. Las acciones de movimiento adicionales que te otorgue la plantilla de aire pueden usarse para esta habilidad. Si lanzas a un enemigo por los aires con tu primer ataque, puedes gastar éxitos generados en tus siguientes ataques para lanzarlo 5 pies adicionales hacia arriba o estamparlo contra el suelo con mayor fuerza haciendo que sufra +1 daño de caída.
 
-## Rango III Añade un dado de soltura a todos tus ataques elementales. puedes gastar 2 ventajas para hacer una herida leve, 4 para herida media
+## Rango III 
+
+Añade un dado de soltura a todos tus ataques elementales. Puedes gastar 2 ventajas para hacer una herida leve  (4 para una herida media).
 
 <u>Agarre de viento:</u> Puedes agarrar a un objetivo con tus ataques elementales, dejándolo a la merced del aire. En lugar de empujar puedes hacer un intento de agarre con tu ataque elemental. Si tienes éxito, el objetivo permanece agarrado y no puede defenderse de tus ataques elementales. Cuenta además como si estuviese en el aire para los propósitos de secuencia de ataques, por lo cual puedes gastar 1 éxito para moverla 5 pies en cualquier dirección. Solo puedes tener R-2 criaturas agarradas de esta manera.
 
@@ -26,7 +32,9 @@ Magia de aire
 
 <u>Torbellino:</u> Como acción de turno completo crea un fuerte torbellino de 30 pies de radio. Todas las criaturas en el área del torbellino deben tirar fuerza o son arrastradas a su interior. Cada criatura en el interior del torbellino está agarrada y sufre 2 daño no letal al principio de su turno. El torbellino se mantiene durante 5 turno o hasta que pierdas la concentración.
 
-## Rango V Añade un dado de soltura a todos tus ataques elementales. puedes gastar 2 ventajas para hacer una herida media, 4 para herida grave
+## Rango V 
+
+Añade un dado de soltura a todos tus ataques elementales. Puedes gastar 2 ventajas para hacer una herida media (4 para herida grave).
 
 <u>Controlar el clima:</u> Puedes realizar un ritual de 10 minutos para llamar una tormenta a tu región. En la tormenta la fuerza del viento aumenta por 1 y tus habilidades de tormenta reciben ciertas mejoras (ver tormenta).
 
