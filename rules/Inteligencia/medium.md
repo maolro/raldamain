@@ -4,9 +4,9 @@ title: Médium
 
 ## Rango I 
 
-tira un dado de soltura adicional en tiros de exorcizar. Sientes la presencia de no muertos en un área de 90 pies.
+Tira un dado de soltura adicional en tiros de exorcizar. Sientes la presencia de no muertos en un área de 90 pies.
 
-<u>Canalizar ánima:</u> Estás ligado a un alma del pasado, la cual puedes canalizar para recibir su poder y conocimientos pasados. Canalizar ánima es una acción bonus, y el alma que canalices te otorga +1 en una estadística y +1 dado de soltura en tiros de ataque, magia u otro atributo (por ejemplo influenciar o presencia). Cada turno que pases canalizando el alma te hace 1 daño a la cordura, y cuando esta llegue a 0 el alma toma control de tu cuerpo hasta que caigas inconsciente o esta sea exorcizada. Tu eliges la naturaleza y características del alma que te posee con previo consentimiento del master.
+<u>Canalizar ánima:</u> Estás ligado a un alma del pasado, la cual puedes canalizar para recibir su poder y conocimientos. Canalizar ánima es una acción bonus, y el alma que canalices te otorga +1 en una estadística y +1 dado de soltura en tiros de ataque, magia u otro atributo (por ejemplo influenciar o presencia). Cada turno que pases canalizando el alma te hace 1 daño a la cordura, y cuando esta llegue a 0 el alma toma control de tu cuerpo hasta que caigas inconsciente o esta sea exorcizada. Tu eliges la naturaleza y características del alma que te posee con previo consentimiento del master.
 
 <u>Exorcismo:</u> Conoces rituales secretos para purgar a espectros y otras criaturas incorpóreas. Como acción estándar puedes hacer un tiro de exorcismo contra el carisma de una criatura espectral. Si tienes éxito esta sufre 2+éxito daño, y además puedes gastar 2 ventajas para ralentizarlo o 4 para aturdirlo. Tu objetivo está obligado a abandonar el cuerpo que esté poseyendo y si lo reduces a 0 PV pasa automáticamente al más allá, evitando así que rejuvenezca.
 
@@ -14,13 +14,13 @@ tira un dado de soltura adicional en tiros de exorcizar. Sientes la presencia de
 
 <u>Hablar con los muertos:</u> Haciendo un ritual de 10 minutos puedes invocar a un espectro para que responda las preguntas que le plantees. Para esto debes estar en un lugar significativo para el muerto al que invoques o poseer un  objeto valioso de esa persona. El fantasma responderá tus preguntas con sinceridad si tiene actitud neutral o superior hacia ti. Sólo puedes contactar al mismo fantasma 1 vez al día, y si lo vuelves a invocar su actitud empeorará por 1.
 
-<u>Hablar con los muertos:</u> Con un minuto de análisis eres  capaz de identificar influencias mágicas que hayan afectado a un objeto. Con esta habilidad aprendes un dato de información sobre el pasado del objeto y sus usuarios anteriores. Si el objeto ha sido usado hace menos de un día recibes una visión escogida por el máster del pasado del objeto.
+<u>Ecos del pasado:</u> Con un minuto de análisis eres  capaz de identificar influencias mágicas que hayan afectado a un objeto. Con esta habilidad aprendes un dato de información sobre el pasado del objeto y sus usuarios anteriores. Si el objeto ha sido usado hace menos de un día recibes una visión escogida por el máster del pasado del objeto.
 
 <u>Invocar espectro:</u> Usando una acción de turno completo invoca a tu alma ligada para que re proteja contra el peligro. Este espectro tiene 3+R PV, 1+R carisma y 1+R destreza. Es incorpóreo y su forma principal de atacar es con telekinesia (R+éxitos daño físico) o toque necrótico ( R-1 daño necrótico). El espectro permanece en el mundo durante un minuto o hasta que pierdas la concentración, y mientras viva te otorga +2 dados de desventaja en tiros de defensa.
 
 ### Rango III
 
-tira un dado de soltura adicional en tiros de exorcizar
+Tira un dado de soltura adicional en tiros de exorcizar
 
 <u>Viaje astral:</u> Tras un minuto de meditación puedes entrar en el plano astral, separando tu alma de tu cuerpo y convirtiéndote en incorpóreo. En esta forma puedes herir y ser herido por fantasmas, y no eres percibido por humanos a menos que tú lo decidas. Si tu cuerpo es herido vuelves inmediatamente a él estés donde estés, y no puedes pasar mas de una hora en esta forma ( 8 horas a rango V).
 
@@ -36,7 +36,7 @@ tira un dado de soltura adicional en tiros de exorcizar
 
 ## Rango V
 
-tira un dado de soltura adicional en tiros de exorcizar
+Tira un dado de soltura adicional en tiros de exorcizar
 
 <u>Posesión:</u> Puedes poseer cuerpos en forma astral. Esto es una acción de turno completo y tiras exorcismo contra el carisma de tu objetivo. Si tienes éxito controlas las acciones de esa criatura como si usases esclavizar. La criatura que poseas repite el tiro al principio  de su turno, y si no se libera en un minuto dejará de tirar de esta manera. Puedes ser expulsado de un cuerpo con exorcismo, eliminar magia o exilio.
 

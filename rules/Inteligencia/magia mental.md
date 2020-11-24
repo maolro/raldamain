@@ -16,6 +16,8 @@ title: Magia mental
 
 <u>Sugestión:</u>
 
+<u>Sanador mental:</u>
+
 ## Rango III
 
 <u>Sobrecarga mental:</u>

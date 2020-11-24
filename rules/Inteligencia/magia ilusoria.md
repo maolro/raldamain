@@ -4,7 +4,7 @@ title: Magia ilusoria
 
 ## Rango I
 
-Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva aumenta por 2+Rango chi.
+Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva aumenta por 2+Rango chi. Puedes usar tus dados de magia Ilusoria en tiradas de Intimidar, Engaño y Persuasión.
 
 <u>Crear ilusión:</u> Como acción estándar crea una ilusión que ocupe un cubo de 10 pies de tamaño. Una ilusión es la imagen de un objeto, persona o fuerza, la cual existe mientras mantengas la concentración y a primera vista se asemeja a la versión real de esta. La ilusión es desmentida si una criatura interactúa con ella o tiene éxito en un tiro de Percepción contra tus dados de Magia Ilusoria. Puedes tener activas un número de ilusiones igual a tu Rango + 1, y puedes concentrarte en estas ilusiones adicionales si gastas 1 chi para crearlas. A Rango III tus ilusiones tienen efectos sonoros y termales.
 
