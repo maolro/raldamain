@@ -4,11 +4,11 @@ title: Magia mental
 
 ## Rango I
 
-<u>Asalto psíquico:</u> 
+<u>Asalto psíquico:</u>  Como acción estándar haz un ataque a la mente de un objetivo. Este ataque hace 1+Éxito daño Psíquico y puedes gastar 2 Ventajas para Ralentizar al objetivo (4 Ventajas para Aturdirlo). 
 
-<u>Detectar pensamientos:</u>
+<u>Detectar pensamientos:</u> 
 
-<u>Mente custodiada</u>:
+<u>Mente custodiada</u>: Tu mente está protegida de ataques psíquicos. Tienes resistencia a efectos mentales igual a tu Rango y eres inmune a Detectar pensamientos. 
 
 ## Rango II
 
@@ -40,5 +40,4 @@ title: Magia mental
 
 <u>Esclavizar:</u>
 
-<u>Destrozar mente:</u>
-
+<u>Destrozar mente:</u> 
