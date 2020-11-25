@@ -16,7 +16,7 @@ Tira un dado de soltura adicional en tiros de exorcizar. Sientes la presencia de
 
 <u>Ecos del pasado:</u> Con un minuto de análisis eres  capaz de identificar influencias mágicas que hayan afectado a un objeto. Con esta habilidad aprendes un dato de información sobre el pasado del objeto y sus usuarios anteriores. Si el objeto ha sido usado hace menos de un día recibes una visión escogida por el máster del pasado del objeto.
 
-<u>Invocar espectro:</u> Usando una acción de turno completo invoca a tu alma ligada para que re proteja contra el peligro. Este espectro tiene 3+R PV, 1+R carisma y 1+R destreza. Es incorpóreo y su forma principal de atacar es con telekinesia (R+éxitos daño físico) o toque necrótico ( R-1 daño necrótico). El espectro permanece en el mundo durante un minuto o hasta que pierdas la concentración, y mientras viva te otorga +2 dados de desventaja en tiros de defensa.
+<u>Invocar espectro:</u> Usando una acción de turno completo invoca a tu alma ligada para que re proteja contra el peligro. Este espectro tiene 3+R PV, 1+R carisma y 1+R destreza. Es incorpóreo y su forma principal de atacar es con telekinesia (R+Éxito daño físico) o toque necrótico ( R-1 daño necrótico). El espectro permanece en el mundo durante un minuto o hasta que pierdas la concentración, y mientras viva te otorga +2 dados de Desventaja en tiros de defensa.
 
 ### Rango III
 

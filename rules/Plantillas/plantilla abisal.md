@@ -24,9 +24,9 @@ Incrementa tu FUE Por 1.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Infección:</u> al hacer daño con un ataque natural, gasta 2 ventajas para infectar al objetivo con una plaga abisal. Esta enfermedad haz 1 daño a la CON y SAB cada día, hace efecto instantáneo y tiene tasa de recuperación 6. Gata 2 ventajas adicionales cada día, hace efecto instantáneo y tiene tasa de recuperación 6. Gasta 2 ventajas adicionales para que esta enfermedad actúe con la misma velocidad que un veneno (1/minuto).
+<u>Infección:</u> al hacer daño con un ataque natural, gasta 2 ventajas para infectar al objetivo con una plaga abisal. Esta enfermedad haz 1 daño a la CON y SAB cada día, hace efecto instantáneo y tiene tasa de recuperación 6. . Gasta 2 ventajas adicionales para que esta enfermedad actúe con la misma velocidad que un veneno (1/minuto).
 
-<u>Transformación:</u> Al usar fuerza del abismo, puedes añadir un dado de soltura a todos tus tiros de armas o ataques mágicos. Puedes exceder 3 dados de soltura de esta manera. Al usar esta habilidad pierdes la capacidad de utilizar habilidades relacionados con una rama de rangos de tu elección (no puede ser Ira).
+<u>Transformación:</u> Al usar fuerza del abismo, puedes añadir un dado de soltura a todos tus tiros de armas o ataques mágicos. Puedes exceder 3 dados de soltura de esta manera. Al usar esta habilidad pierdes la capacidad de utilizar habilidades relacionados con una rama de rangos de tu elección que no sea Ira.
 
 ## Rango IV
 
