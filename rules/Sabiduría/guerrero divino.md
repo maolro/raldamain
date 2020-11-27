@@ -6,7 +6,7 @@ title: Guerrero divino
 
 <u>Guerrero de la fe:</u> Estás bendito por tu dios en el campo de batalla. Tienes + blanco en tiros de ataque contra enemigos de tu fe y +1 defensa contra ataques físicos y mágicos. Esta habilidad no cuenta como magia apara los propósitos de eliminar magia.
 
-<u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Cuando haces un tiro de medicina para curar a un aliado haces que se recupere vida igual a los éxitos y vitalidad igual a las ventajas. Gasta 4 ventajas generadas para reducir el nivel de una herida permanente por 1( no puedes afectar a la misma persona más de una misma vez).
+<u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Cuando haces un tiro de medicina para curar a un aliado haces que se recupere vida igual a los éxitos y vitalidad igual a las ventajas. Gasta 4 ventajas generadas para reducir el nivel de una herida permanente por 1(no puedes afectar a la misma persona más de una misma vez al día).
 
 ## Rango II
 
@@ -18,7 +18,7 @@ title: Guerrero divino
 
 <u>Plegaria:</u> Antes de una batalla, puedes realizar una plegaria a tu dios junto con tus aliados para concederte suerte en la batalla. Todos aquellos que realicen la plegaria tendrán +blanco y +1 defensa contra enemigos de la fe. Este efecto dura durante el resto del día.
 
-<u>Guardián de la fe:</u> Como acción estándar, puedes permitir que la energía divina fluya por tu cuerpo, dandote fuerza sobrenatural. Guardian de la fe aumenta tu fuerza y constitución por 1 (puedes superar 6 con esta habilidad) y te da  resistencia 2 contra daño físico. Tu resistencia sólo puede ser atravesada por armas sacras. Esta habilidad te hace 1 daño no-letal cada turno que la lleves activada y desactivarla es una acción gratuita.
+<u>Guardián de la fe:</u> Como acción estándar, puedes permitir que la energía divina fluya por tu cuerpo, dándote fuerza sobrenatural. Guardian de la fe aumenta tu fuerza y constitución por 1 (puedes superar 6 con esta habilidad) y te da  resistencia 2 contra daño físico. Tu resistencia sólo puede ser atravesada por armas sacras. Esta habilidad te hace 1 daño no-letal cada turno que la lleves activada y desactivarla es una acción gratuita.
 
 ## Rango IV
 
