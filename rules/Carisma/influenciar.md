@@ -14,7 +14,7 @@ Añade un dado de soltura a tus tiros de Influenciar.
 
 <u>Buscar rumores:</u> Una vez al día, puedes dedicar tu descanso corto a buscar rumores y otra información en lugares público como tabernas o bares. Haz un tiro de influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Las ventajas generadas te permiten encontrar indicios de información más valiosa, dándote la oportunidad de repetir el tiro, mientras que las desventajas causan que llames atención indeseada.
 
-<u>Aprovechar favores:</u> Al usar la habilidad de Persuasivo, si tienes éxito y el objetivo tiene actitud amistosa o superior puedes pedirle que te haga un favor. Ese favor puede ser cualquiera, pero si es peligroso o exagerado el objetivo no lo hará. Algunos ejemplos son pedirle un objeto o su ayuda en un trabajo
+<u>Aprovechar favores:</u> Al usar la habilidad de Persuasivo, si tienes éxito y el objetivo tiene actitud amistosa o superior puedes pedirle que te haga un favor. Ese favor puede ser cualquiera, pero si es peligroso o exagerado el objetivo no lo hará. Algunos ejemplos son pedirle un objeto o su ayuda en un trabajo.
 
 ## Rango III
 
@@ -43,4 +43,3 @@ Añade un dado de soltura a tus tiros de Influenciar.
 <u>Maestro titiritero:</u> Eres capaz de reducir a personas a simples títeres movidos por tu voluntad. Si consigues subir la actitud de una persona a amistosa por tu habilidad persuasivo, obtienes la habilidad de manipularlo sutilmente. Este no dudará de ti y te obedecerá para todo favor que le pidas, excluyendo la muerte. Si llegas a ofenderlo de alguna manera, haz un tiro de influenciar en el que si tienes éxito ignora tu ofensa.
 
 <u>Conducir a la desesperación</u>: Sabes donde atacar a tus objetivos para acabar con sus ganas de vivir. Haces 2+éxitos daño de cordura en un tiro de persuasión, y gasta 2 ventajas para que reciba el efecto de estado depresión. Si reduces su cordura a 0 tu objetivo se suicidará. Esto no funciona con personas hostiles hacia ti a menos que puedas chantajearlos. Conducir a la desesperación solo puede usarse una vez al día.
-
