@@ -34,7 +34,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Carga repentina:</u> si gastas tu acción de movimiento en usar preparación contra cargas, en cualquier momento del turno enemigo puedes hacer una carga como reacción. El daño por carga con lanza se suma a este ataque.
+<u>Carga repentina:</u> Si gastas tu acción de movimiento en usar preparación contra cargas, en cualquier momento del turno enemigo puedes hacer una carga como reacción. El daño por carga con lanza se suma a este ataque.
 
 <u>Ataque vital:</u> Las heridas permanentes que provocas con preparación contra lanzas son de un nivel superior. Gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo.
 

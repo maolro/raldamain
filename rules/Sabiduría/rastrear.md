@@ -8,11 +8,11 @@ Recibes un nivel de talento adicional en Supervivencia.
 
 <u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tira un dado de ventaja adicional en tiros de habilidad y ataque relacionados con tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiándolo para obtener los beneficios de enemigo predilecto contra él. 
 
-<u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Gasta una ventaja generada en un tiro de rastrear para aprender un detalle de tu presa. Aprender información de mayor importancia tiene un costo superior de ventajas (a discreción del master). También puedes pasar un descanso corto en un lugar buscando pistas, lo cual te permitirá hacerte una idea de los sucesos ocurridos ahí en un intervalo de como máximo 2 horas.
+<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, . Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Tienes además un dado de ventaja adicional en tiros de percepción, sigilo y supervivencia mientras estás en tu terreno.
 
 ## Rango II
 
-<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, . Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Tienes además un dado de ventaja adicional en tiros de percepción, sigilo y supervivencia mientras estás en tu terreno.
+<u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Gasta una ventaja generada en un tiro de rastrear para aprender un detalle de tu presa. Aprender información de mayor importancia tiene un costo superior de ventajas (a discreción del master). También puedes pasar un descanso corto en un lugar buscando pistas, lo cual te permitirá hacerte una idea de los sucesos ocurridos ahí en un intervalo de como máximo 2 horas.
 
 <u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Puedes elegir moverte a la mitad de tu velocidad mientras persigues a tu presa mientras permaneces oculto, contando como si fueses invisible. Puedes estudiar a tu enemigo predilecto con esta habilidad, pero este efecto se pierde en el momento que ataques. Volver a acechar requiere una acción estándar y que estés fuera del campo de visión de tu presa. Al ocultarte con esta habilidad no puedes ser detectado por tiros de Percepción, salvo que el tiro lo haga una criatura con la habilidad Rastreador experto.
 
@@ -30,13 +30,13 @@ Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaj
 
 <u>Maestro del terreno:</u> Eres inmune a terreno difícil y evitas obstáculos automáticamente mientras estés en tu terreno predilecto. además, recibes nuevas habilidades dependiendo de tu terreno.
 
-- Ártico: Adaptación al frio, visión ártica 60 pies
-- Desierto: Adaptación al calor, +2blancos en tiros de constitución contra hambre, sed o necrótico
-- Montaña: Escalada 30 pies, Adaptación al frío, Inmune a grandes alturas
-- Subterráneo: Visión a oscuras 60 pies, Escalada 15 pies, +2blancos buscando trampas o peligros
-- Acuático: respiración acuática (+2 turnos), nadar 30 pies
-- Urbano: Velocidad de salto +10 pies, puedes usar acechar siempre que estés rodeado de gente
-- Bosque: Resistencia igual a tu rango contra magia druídica, escalada 15 pies
+- **Ártico**: Recibes Resistencia a daño frío igual a tu Rango de Rastrear. No sufres efectos negativos por frío extremo y tienes Visión Ártica en un radio de 60 pies.
+- **Desierto**: Recibes Resistencia a daño fuego y necrótico igual a tu Rango de Rastrear. No sufres efectos negativos por calor extremo y puedes sobrevivir un día adicional sin comer ni beber. 
+- **Montaña**: Incrementa tu velocidad de Escalada por 30 pies (no puede exceder tu movimiento base). No sufres efectos negativos por frío extremo ni por grandes altitudes.
+- **Subterráneo**: Incrementa tu velocidad de Escalada por 15 pies (no puede exceder tu movimiento base). Recibes Resistencia a venenos igual a tu Rango de Rastrear y tienes Visión a oscuras en un radio de 60 pies
+- **Acuático**: Incrementa tu velocidad de Nadar por 30 pies (no puede exceder tu movimiento base). Puedes aguantar tu respiración durante dos turnos adicionales.
+- **Urbano**: Incrementa tu velocidad de salto por 10 pies. Eres capaz de ocultarte en aglomeraciones de personas, lo cual te permite usar Acechar aunque estés en el campo de visión de tu presa siempre y cuando estés rodeado por gente.
+- **Bosque:** Recibes Resistencia a magia de naturaleza igual a tu Rango de Rastrear. Incrementa tu velocidad de Escalada por 15 pies (no puede exceder tu velocidad base) y los animales no son naturalmente hostiles hacia ti.
 
 ## Rango V 
 
