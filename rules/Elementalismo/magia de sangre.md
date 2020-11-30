@@ -11,7 +11,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 <u>Espasmos:</u> Puedes generar ventajas obtenidas en un ataque de sangre para ocasionar espasmos al objetivo. Estos son algunos de las posibilidades de espasmos: 
 
 - Piernas (1 ventaja): El objetivo se mueve 5 pies en cualquier dirección. Gasta 2 ventajas adicionales para que caiga al suelo.
-- Brazos (1 ventaja): El objetivo mueve su brazo en cualquier dirección. Gasta 2 ventajas adicionales para que sueltes el objeto que lleva en la mano que no puede usar parada durante un turno.
+- Brazos (1 ventaja): El objetivo mueve su brazo en cualquier dirección. Gasta 2 ventajas adicionales para que suelte el objeto que lleva en la mano que no puede usar parada durante un turno.
 - Torso (2 ventajas): El objetivo está fatiga durante un turno. Gasta 2 ventajas adicionales para que esté exhausto.
 
 Esta habilidad también también puede usarse defensivamente. Si eliges que sufra un espasmo a los brazos, entonces gasta 2 desventajas para cancelar un éxito que genere.
