@@ -54,7 +54,7 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Arrollar:</u> Cuando la criatura haga una carga, hace un ataque automático de Golpe contra todas las criaturas de menor tamaño que estén en su camino hasta que complete la carga. Las criaturas que estén en el camino de la carga deben escoger entre intentar evitar la carga, por lo que tirarán Esquivar contra su ataque, o intentar detenerla, por lo que tirarán Heroísmo. Puedes gastar 1 PT adicional en esta habilidad para conseguir un atributo entre Carga poderosa, Interceptar, Carga con lanza (requiere Perforar) y Interceptar.
 
-<u>Espinas:</u>
+<u>Espinas:</u> 
 
 <u>Cola:</u> La criatura recibe una sinuosa cola, con la cual puede manipular objetos o hacer ágiles golpes. Hacer un ataque con la cola te cuesta una acción bonus (acción de movimiento si es una criatura de base Sierpe) y hace 0+Éxito daño. La cola puede mejorarse con las transformaciones Garras, Golpe, Tentáculo y Perforar.
 
@@ -62,4 +62,9 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 10 pies y aumenta su alcance por 5 pies. Esta mejora puede tomarse varias veces, pero la FUE y CON de la criatura no pueden exceder 9.
 
-<u>Regeneración:</u>
+<u>Regeneración:</u> El cuerpo de la criatura se regenera fácilmente de heridas. Al principio de su turno, la criatura recupera 2 Vitalidad, y si está al máximo de Vitalidad se recupera 1 PV. Puedes emplear 1 PT adicional para que la criatura se sane 1 PV al turno (como máximo 3 PV). Si has gastado 6 PT en esta habilidad la criatura recibe la capacidad de recuperar órganos perdidos de su cuerpo, reduciendo el nivel de una herida permanente que tenga por 1 cada turno.
+
+<u>Resistencia mágica:</u> La criatura recibe Resistencia 3 contra todos los hechizos mágicos. Puedes emplear 1 PT adicional para incrementar la Resistencia mágica por 1, llegando como máximo a Resistencia mágica 6. 
+
+<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el area de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades.
+
