@@ -18,12 +18,10 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Dirigir combatientes:</u> Al usar voz del comandante, puedes dirigir a aliados para que realicen tácticas complejas. Estas son algunas de ellas:
 
-- Muro de escudos: Cada aliado obtiene +rojo en tiros de escudo si está adyacente a un aliado con escudo (+morado si está adyacente a 2 y +negro si está rodeado. Los dados si se acumulan)
-- Flanqueadores expertos: Tus aliados obtienen +blanco adicional y +1 daño base cuando flanqueen a un adversario. Esto se acumula con ataque furtivo.
-- Vigilancia: Tus aliados no pueden ser pillados por sorpresa si al menos uno de ellos no es sorprendido.
-- Dispersar: Tus aliados obtienen la habilidad evasión y pueden moverse 5 pies después de tener éxito en un tiro de destreza (1 ventaja +5 pies)
-
-Sólo puedes usar una táctica a la vez.
+- **Muro de escudos**: Cada aliado obtiene un dado de Desafío adicional en tiros de escudo si está adyacente a un aliado con escudo. Añaden además una cantidad de dados de Dificultad adicional al tiro por cada aliado que esté adyacente a él.
+- **Flanqueadores expertos**: Tus aliados tiran un dado de Ventaja adicional y reciben +1 daño base cuando flanqueen a un adversario. El daño por esta habilidad se acumula con ataque furtivo.
+- **Vigilancia**: Tus aliados no pueden ser pillados por sorpresa si al menos uno de ellos no es sorprendido.
+- **Dispersar**: Tus aliados obtienen la habilidad [Evasión](http://raldamain.com/rules/Combate/reflejos.html) y pueden moverse 5 pies después de tener éxito en un tiro de Destreza. Pueden gastar una ventaja para moverse 5 pies adicionales.
 
 <u>Inspiración:</u> Tienes una reserva de puntos de inspiración igual a 1+Rango. Gasta un punto de inspiración para que tú o tu aliado obtenga +blanco en un tiro. Esta habilidad solo puede usarse en aliados bajo los efectos de voz del comandante y los puntos se recuperan tras un descanso largo.
 
