@@ -4,7 +4,7 @@ title: Plantilla oni
 
 ## Rango I
 
-obtienes +1 reducción de daño
+Obtienes Resistencia 1 a daño físico.
 
 <u>Furia del oni:</u> Como acción bonus libera la energía de tu oni interior. tus ataques físicos hacen +1 daño de energía y recibes resistencia igual a tu rango contra efectos mentales y moral. Cada turno que pasas en furia del oni sufres 1 daño no letal hasta que la desactives. Esta habilidad no puede usarse cuando estés fatigado.
 
@@ -12,17 +12,17 @@ obtienes +1 reducción de daño
 
 ## Rango II
 
-obtienes +1 carisma
+Incrementa tu CAR por 1.
 
 <u>Comandar a los débiles:</u> Usa tu fuerza para doblegar a los más débiles de carácter. Puedes usar tu estadística de fuerza para tiros de influenciar y persuasión interactuando con personas mas débiles.
 
 <u>Foco elemental:</u> Elige un elemento. Tienes resistencia igual a tu rango contra él y tus ataques se infunden de ese elemento al entrar en furia del oni, haciendo +1 daño. Desbloqueas la magia elemental relacionada con ese elemento.
 
-<u>Tercer ojo:</u> Tienes un tercer ojo en la frente, el cual puedes abrir y cerrar como acción bonus. Mientras que tu tercer ojo esté abierto tienes visión a oscuras en un área de 60 pies y puedes ver a través de tu elemento sin dificultades, como si tuvieses georradar, visión ígnea, visión ártica o ecolocalización.
+<u>Tercer ojo:</u> Tienes un tercer ojo en la frente, el cual puedes abrir y cerrar como acción bonus. Mientras que tu tercer ojo esté abierto tienes visión a oscuras en un área de 60 pies y puedes ver a través de tu elemento sin dificultades, como si tuvieses georradar, visión ígnea, visión ártica o geolocalización.
 
 ## Rango III
 
-obtienes +1 reducción de daño adicional
+Obtienes Resistencia 2 a daño físico.
 
 <u>Rayo ocular:</u> Un número de veces al día igual a tu rango-1 puedes disparar un rayo desde tu tercer ojo. Esto es una acción bonus y el tiro es igual a tu constitución+ 1 dado de soltura. Haces 2+éxitos daño de tu elemento elegido. Si tienes rangos en magia elemental puedes gastar ventajas en esta habilidad como si fuese un ataque elemental. A rango V tiras un dado de soltura adicional.
 
@@ -30,7 +30,7 @@ obtienes +1 reducción de daño adicional
 
 ## Rango IV
 
-obtienes +1 fuerza
+Incrementa tu FUE por 1.
 
 <u>Niebla de pesadillas:</u> Como acción estándar llena un área de 15 pies de una tenebrosa neblina que provoca temor a tus enemigos. Todas las criaturas que tengan 6 o menos PV en el área de tu niebla pasan a estar espantados (es un efecto mental) y puedes gastar 2 ventajas en un ataque para aumentar el nivel de miedo que siente el objetivo por 1. Esta niebla dura 1+R turnos y solo puede usarse una vez por combate.
 
@@ -38,7 +38,7 @@ obtienes +1 fuerza
 
 ## Rango V
 
-obtienes resistencia mágica igual a tu R-2
+Obtienes Resistencia 2 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
 <u>Regeneración:</u> Al principio de tu turno te ganas 2 vitalidad. Si estás al máximo de vitalidad te recuperas 2 PV. Tras hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por 1. Tras una semana eres capaz de recuperar órganos y partes del cuerpo perdidas.
 
@@ -46,8 +46,8 @@ obtienes resistencia mágica igual a tu R-2
 
 ## Rango VI
 
-obtienes +1 constitución
+Incrementa tu CON por 1.
 
-<u>Despertar el demonio:</u> Como acción de turno completo, libera el oni interior de todos los hobgoblins en un área de 60 pies. Todos los que tengan menor nivel de desafío al tuyo reciben la plantilla oni a rango I y entran inmediatamente en furia del oni. Los hobgoblins pueden voluntariamente permitir que despiertes su demonio interior lo cual te permite usar esta habilidad en hobgoblins de cualquier nivel.
+<u>Despertar el demonio:</u> Como acción de turno completo, libera el oni interior de todos los hobgoblins en un área de 60 pies. Todos los que tengan menor nivel de desafío al tuyo reciben la plantilla oni a rango I y entran inmediatamente en furia del oni. Los hobgoblins pueden voluntariamente permitir que despiertes su demonio interior lo cual te permite usar esta habilidad en hobgoblins de cualquier nivel. Recibes la capacidad de alterar tu aspecto, tomando la forma de un humanoide de tu elección.
 
-<u>Alma de oni:</u> Tu oni toma control de tu cuerpo. Eres inmune a efectos mentales y de moral, y las criaturas con plantilla oni te obedecen instintivamente. Si te mueres, tu espíritu puede poseer otro cuerpo de hobgoblin o el de un recién nacido, otorgándole un rango de plantilla oni. Si ya tiene la plantilla oni, recibe la plantilla a rango VI y uno de tus rangos anteriores.
+<u>Alma de oni:</u> Tu oni toma control de tu cuerpo. Eres inmune a efectos mentales y de moral, y las criaturas con plantilla oni te obedecen instintivamente. Si te mueres, tu espíritu puede poseer otro cuerpo de hobgoblin o el de un recién nacido, otorgándole un rango de plantilla oni. Si ya tiene la plantilla oni, recibe la plantilla a rango VI y uno de tus rangos anteriores. 

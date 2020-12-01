@@ -36,7 +36,7 @@ Incrementa tu CAR por 1.
 
 ## Rango V
 
-Obtienes Resistencia 2 a daño físico y Resistencia mágica igual a tu Rango - 2. 
+Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
 <u>Invocación sombría:</u> Como acción de turno completo invoca una criatura del plano de las sombras. La criatura que invoques no debe tener más de 9 PT y recibe la plantilla Sombría a Rango I.
 

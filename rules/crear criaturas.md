@@ -14,6 +14,8 @@ title: Creación de criaturas
 
 <u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respirar bajo el agua y puede nadar a una velocidad de 30 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
 
+<u>Aberrante:</u> La criatura tiene una forma amorfa que desafía toda ley natural. Recibe 3 PT adicionales y puede distribuir 6 puntos de estadística entre su FUE, DES y CON como desee (no puede exceder 4).
+
 ## Puntos de Transformación
 
 Los puntos de transformación (PT) representan las características fisiológicas de una criatura que le garantizan la supervivencia. Con ellos un jugador o el máster pueden crear criaturas fantásticas con facilidad. 
@@ -40,21 +42,27 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 ### Mejoras de 2 PT
 
+<u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), Visión ártica o Visión infernal. Puedes emplear 2 PT adicionales para que la criatura tenga Visión verdadera, lo cual le permite ver a través de ilusiones y percibir a criaturas invisibles.
+
 <u>Alas:</u> La criatura recibe una velocidad de vuelo igual a 60 pies. Las alas pueden recibir heridas permanentes, y apuntar a las alas requiere un gasto adicional de 2 ventajas. Puedes emplear 2 PT adicionales para añadirle a la criatura otro par de alas, lo cual aumenta su velocidad de vuelo por 30 pies o gastar 1 PT para que la criatura pueda volar sin la necesidad de alas.
 
 <u>Inmunidad:</u> La criatura recibe Inmunidad contra un tipo de energía al que tenga Resistencia. Puedes emplear 2 PT adicionales para que la criatura reciba Absorción contra ese tipo de energía. La Absorción causa que cada vez que la criatura sufra daño del tipo de energía designado, esta no sufre daño y  se sana una cantidad de Vitalidad igual al daño que sufriría.
 
-<u>Mordisco:</u> La mandíbula de la criatura está dotada de gran fuerza. La criatura puede realizar un ataque de mordisco como acción bonus una vez al turno contra una criatura Agarrada, Aturdida o Inconsciente. El mordisco hace 2+Éxito daño perforante 
+<u>Mordisco:</u> La mandíbula de la criatura está dotada de gran fuerza. La criatura puede realizar un ataque de mordisco como acción bonus una vez al turno contra una criatura Agarrada, Aturdida o Inconsciente. El mordisco hace 2+Éxito daño perforante, y la criatura puede gastar 2 Ventajas para Tropezar o Agarrar. En el caso de que la criatura agarrada con el mordisco sea de tamaño inferior por 2 niveles, esta deberá volver a tirar Heroísmo contra tu tiro de ataque o será devorada. Si se le añade el mordisco a una criatura cuadrúpeda esta podrá realizarlo como acción estándar al final de una carga. Puedes gastar 2 PT adicionales con esta habilidad para añadir una segunda boca a la criatura dotada de un ataque de mordisco o incrementar el daño de un mordisco por 2.
 
 <u>Miembros adicionales:</u> La criatura recibe un par adicional de miembros, los cuales pueden ser dos piernas o dos brazos. Cada par adicional de piernas aumenta el movimiento base por 10 pies y otorga +2 Resistencia a ser Tropezado, mientras que cada par adicional de brazos incrementa el número de acciones estándar al turno por 1. 
 
-<u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una plantilla de tu elección. Puedes emplear 2 PT adicionales para recibir una habilidad de plantilla elemental relacionada con el elemento escogido, la cual puede ser una de movimiento (Propulsión, Ola de tierra, Velocidad repentina, Columna de agua o Forma gaseosa), una de reserva de energía (Furia del fuego, Puño hidráulico, Ojo de halcón, Canalizar el frío o Puños de tierra) o la Conexión elemental adecuada.
+<u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una plantilla de tu elección. Puedes emplear 2 PT adicionales para recibir una habilidad de plantilla elemental relacionada con el elemento escogido, la cual puede ser una de movimiento ([Propulsión](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-iv), [Ola de tierra](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-iv), [Velocidad repentina](http://raldamain.com/rules/Plantillas/plantilla%20de%20aire.html#rango-v), [Columna de agua](http://raldamain.com/rules/Plantillas/plantilla%20de%20agua.html#rango-iv) o Forma gaseosa), una de reserva de energía ([Furia del fuego]([Plantilla de Fuego - Raldamain](http://raldamain.com/rules/Plantillas/plantilla de fuego.html#rango-ii)), [Puño hidráulico](http://raldamain.com/rules/Plantillas/plantilla%20de%20agua.html#rango-ii), [Ojo de halcón](http://raldamain.com/rules/Plantillas/plantilla%20de%20aire.html#rango-ii), Canalizar el frío o [Puños de tierra](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii)) o la Conexión elemental adecuada.
 
-<u>Veneno:</u> La criatura obtiene la capacidad de producir veneno. Al impactar con un ataque, puedes gastar 2 Ventajas para inyectarle al objetivo un veneno. 
+<u>Veneno:</u> La criatura obtiene la capacidad de producir veneno. Al impactar con un ataque, puedes gastar 2 Ventajas para inyectarle al objetivo un veneno. El veneno que inyecta es un veneno que afecta a una estadística de tu elección, y tendrá tasa de recuperación 8 y tiro de gravedad igual a su CON. Puedes gastar 1 PT adicional para añadir un tiro de desafío al tiro de gravedad del veneno (máximo 3), aumentar la tasa de recuperación por 2 o modificar el veneno de una forma nueva siempre y cuando tenga el consentimiento del máster.
 
 <u>Arrollar:</u> Cuando la criatura haga una carga, hace un ataque automático de Golpe contra todas las criaturas de menor tamaño que estén en su camino hasta que complete la carga. Las criaturas que estén en el camino de la carga deben escoger entre intentar evitar la carga, por lo que tirarán Esquivar contra su ataque, o intentar detenerla, por lo que tirarán Heroísmo. Puedes gastar 1 PT adicional en esta habilidad para conseguir un atributo entre Carga poderosa, Interceptar, Carga con lanza (requiere Perforar) y Interceptar.
 
-<u>Espinas:</u> 
+<u>Espinas:</u> La criatura tiene varias afiladas espinas a lo largo de su cuerpo. Las espinas causan que haga +1 daño perforante con todos sus ataques físicos y cuando sufra daño por un ataque natural el atacante recibirá Sangrado. Si la criatura con espinas agarra a otra, la criatura agarrada sufrirá 1 daño letal obligatorio al principio de su turno. Puedes gastar 1 PT adicional para uno de las siguientes mejoras:
+
+- **Espinas venenosas:** Las espinas están cubiertas por veneno. Cuando una criatura te haga daño con un ataque natural, gasta 2 Desventajas para envenenarlo (En un agarre la criatura es envenenada automáticamente). Esto requiere la mejora Veneno.
+- **Lanzar espinas:** La criatura puede hacer ataques a distancia con sus espinas. Las espinas hacen 1+Éxito daño perforante al impactar y usan la estadística de DES en el tiro de ataque. Los atributos otorgados por Perforar se aplican en este ataque.
+- **Espinas mortales:** Las espinas hacen +1 daño
 
 <u>Cola:</u> La criatura recibe una sinuosa cola, con la cual puede manipular objetos o hacer ágiles golpes. Hacer un ataque con la cola te cuesta una acción bonus (acción de movimiento si es una criatura de base Sierpe) y hace 0+Éxito daño. La cola puede mejorarse con las transformaciones Garras, Golpe, Tentáculo y Perforar.
 
