@@ -39,4 +39,4 @@ Los [talentos](http://raldamain.com/rules/talentos.html) representan tu aptitud 
 
 Los rangos forman la base del sistema Raldamain. Obtienes 2 rangos de tu elección a nivel 1, y a cada nivel posterior recibes un rango adicional en una habilidad. No puedes tener una habilidad a rango superior a tu nivel entre 2 (es decir, a nivel 5 no puedes tener una habilidad a Rango III). Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos.
 
-Una compilación completa de los rangos puede enconctarse aquí.
+Una compilación completa de los rangos puede enconctarse [aquí](http://raldamain.com/rules/lista%20de%20rangos.html).
