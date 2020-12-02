@@ -1,5 +1,6 @@
 ---
 title: Reglas
+layout: Index
 ---
 
 ### [Creación de personajes](http://raldamain.com/rules/creacion%20de%20personajes)
