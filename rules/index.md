@@ -3,7 +3,7 @@ title: Reglas
 layout: index
 ---
 
-### [Creación de personajes](http://raldamain.com/rules/creacion%20de%20personajes)
+### [Creación de personajes](http://raldamain.com/rules/crear%20personajes.html)
 
 ### [Lista de rangos](http://raldamain.com/rules/lista%20de%20rangos.html)
 
