@@ -5,7 +5,7 @@ image: armaduras.jpg
 
 ## Rango I
 
-<u>Entrenamiento con armaduras</u>:</u> Reduce por 1 el penalizador de armadura. Si logras reducir el penalizador a 0, puedes moverte y usar habilidades de reflejos como si no llevases armadura. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 1
+<u>Entrenamiento con armaduras</u>: Reduce por 1 el penalizador de armadura. Si logras reducir el penalizador a 0, puedes moverte y usar habilidades de reflejos como si no llevases armadura. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 1
 
 <u>Defensa reforzada:</u> aumenta tu defensa por 1 si llevas armadura. La defensa vuelve a aumentarse por 1 cada vez que obtengas un rango en aptitud con armaduras. Este incremento a la defensa también reduce el daño de ataques no-mágicos contra los cuales no se aplica tu armadura, como Puntería mortal.
 
