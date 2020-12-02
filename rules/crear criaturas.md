@@ -42,7 +42,7 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 ### Mejoras de 2 PT
 
-<u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), Visión ártica o Visión infernal. Puedes emplear 2 PT adicionales para que la criatura tenga Visión verdadera, lo cual le permite ver a través de ilusiones y percibir a criaturas invisibles.
+<u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), [Plantilla Boreal - Raldamain](http://raldamain.com/rules/Plantillas/plantilla boreal.html#rango-ii) o [Visión infernal](http://raldamain.com/rules/Plantillas/plantilla%20infernal.html#rango-ii). Puedes emplear 2 PT adicionales para que la criatura tenga Visión verdadera, lo cual le permite ver a través de ilusiones y percibir a criaturas invisibles.
 
 <u>Alas:</u> La criatura recibe una velocidad de vuelo igual a 60 pies. Las alas pueden recibir heridas permanentes, y apuntar a las alas requiere un gasto adicional de 2 ventajas. Puedes emplear 2 PT adicionales para añadirle a la criatura otro par de alas, lo cual aumenta su velocidad de vuelo por 30 pies o gastar 1 PT para que la criatura pueda volar sin la necesidad de alas.
 
@@ -62,7 +62,6 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 - **Espinas venenosas:** Las espinas están cubiertas por veneno. Cuando una criatura te haga daño con un ataque natural, gasta 2 Desventajas para envenenarlo (En un agarre la criatura es envenenada automáticamente). Esto requiere la mejora Veneno.
 - **Lanzar espinas:** La criatura puede hacer ataques a distancia con sus espinas. Las espinas hacen 1+Éxito daño perforante al impactar y usan la estadística de DES en el tiro de ataque. Los atributos otorgados por Perforar se aplican en este ataque.
-- **Espinas mortales:** Las espinas hacen +1 daño
 
 <u>Cola:</u> La criatura recibe una sinuosa cola, con la cual puede manipular objetos o hacer ágiles golpes. Hacer un ataque con la cola te cuesta una acción bonus (acción de movimiento si es una criatura de base Sierpe) y hace 0+Éxito daño. La cola puede mejorarse con las transformaciones Garras, Golpe, Tentáculo y Perforar.
 
@@ -74,5 +73,5 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Resistencia mágica:</u> La criatura recibe Resistencia 3 contra todos los hechizos mágicos. Puedes emplear 1 PT adicional para incrementar la Resistencia mágica por 1, llegando como máximo a Resistencia mágica 6. 
 
-<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el area de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades.
+<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. En lugar de hacer daño, el aliento puede infligir un efecto entre Parálisis, Aturdimiento, Confusión o [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos) a todas las criaturas en el área. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el area de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades.
 
