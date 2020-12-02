@@ -1,5 +1,6 @@
 ---
 title: Venenos y enfermedades
+main: Reglas adicionales
 ---
 
 ## Enfermedades

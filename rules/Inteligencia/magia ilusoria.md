@@ -1,5 +1,7 @@
 ---
-title: Magia ilusoria
+title: Magia Ilusoria
+main: Rangos
+sub: Magia arcana
 ---
 
 ## Rango I

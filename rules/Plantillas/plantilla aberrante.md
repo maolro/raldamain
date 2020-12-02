@@ -1,4 +1,0 @@
----
-title: Plantilla Aberrante
----
-

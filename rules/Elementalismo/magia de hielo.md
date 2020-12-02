@@ -1,5 +1,7 @@
 ---
 title: Magia de Hielo
+main: Rangos
+sub: Magia elemental
 ---
 
 ## Rango I

@@ -1,5 +1,7 @@
 ---
 title: Filos pesados
+main: Rangos
+sub: Armas
 ---
 
 ## Rango I

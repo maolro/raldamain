@@ -1,5 +1,7 @@
 ---
 title: Magia de sangre
+main: Rangos
+sub: Magia elemental
 ---
 
 ## Rango I

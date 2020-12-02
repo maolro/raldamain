@@ -1,5 +1,7 @@
 ---
 title: Plantilla de Agua
+main: Rangos
+sub: Plantillas
 ---
 
 ## Rango I

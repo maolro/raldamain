@@ -1,5 +1,7 @@
 ---
 title: Alabardas
+main: Rangos
+sub: Armas
 ---
 
 ## Rango I 

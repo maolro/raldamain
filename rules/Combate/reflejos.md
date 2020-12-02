@@ -1,5 +1,7 @@
 ---
 title: Reflejos
+main: Rangos
+sub: Defensa
 ---
 
 ## Rango I

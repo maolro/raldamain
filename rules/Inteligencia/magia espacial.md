@@ -1,5 +1,7 @@
 ---
 title: Magia Espacial
+main: Rangos
+sub: Magia arcana
 ---
 
 ## Rango I

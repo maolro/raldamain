@@ -1,5 +1,7 @@
 ---
 title: Magia de Aire
+main: Rangos
+sub: Magia elemental
 ---
 ## Rango I 
 

@@ -1,5 +1,7 @@
 ---
 title: Plantilla oni
+main: Rangos
+sub: Plantillas
 ---
 
 ## Rango I

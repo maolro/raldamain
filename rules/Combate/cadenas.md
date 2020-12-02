@@ -1,5 +1,7 @@
 ---
 title: Cadenas
+main: Rangos
+sub: Armas
 ---
 
 ## Rango I

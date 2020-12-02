@@ -1,5 +1,7 @@
 ---
 title: Magia de Evocación
+main: Rangos
+sub: Magia arcana
 ---
 
 ## Rango I

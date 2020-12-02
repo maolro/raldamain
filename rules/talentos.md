@@ -1,5 +1,6 @@
 ---
 title: Talentos
+main: Reglas adicionales
 ---
 
 Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. Cada talento está asociado con una estadística, lo cual queda indicado en la Lista de talentos.

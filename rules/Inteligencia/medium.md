@@ -1,5 +1,7 @@
 ---
 title: Médium
+main: Rangos
+sub: Inteligencia
 ---
 
 ## Rango I 

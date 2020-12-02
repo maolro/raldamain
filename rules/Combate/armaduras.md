@@ -1,6 +1,8 @@
 ---
 title: Armaduras
 image: armaduras.jpg
+main: Rangos
+sub: Defensa
 ---
 
 ## Rango I
