@@ -12,9 +12,9 @@ title: Combate doble
 
 ### Rango I
 
-<u>Parada doble:</u> puedes usar parada una vez adicional al turno con tu arma secundario (sigues recibiendo la penalización). Además, la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
+<u>Parada doble:</u> Puedes usar parada una vez adicional al turno con tu arma secundario (sigues recibiendo la penalización). Además, la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
 
-<u>Tajo cruzado:</u> si impactas al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque inflinge +2 daño base. Esta habilidad solo puede emplearse una vez al turno.
+<u>Tajo cruzado:</u> Al  impactar al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque inflinge +2 daño base. Esta habilidad solo puede emplearse una vez al turno.
 
 ### Rango II
 
@@ -66,11 +66,16 @@ title: Combate doble
 
 ### Rango I
 
+<u>Debilitar defensas:</u> Puedes emplear tu disparo con el arma secundaria para dejar expuesto al enemigo a otros disparos. Al impactar a un enemigo con un disparo puedes elegir no hacer daño para que este sufra un truco de bala. Las resistencias que tenga tu objetivo se aplican para este ataque, pero podrás gastar ventajas para darle efectos adicionales relacionados con el truco de bala. 
 
+<u>Cubierta de disparos:</u> Eres capaz de hacer disparos a bocajarro con tu arma secundaria para protegerte de ataques. Al usar esta habilidad recibirás un dado de Dificultad adicional en todos tus tiros de ataque, pero podrás tirar tus dados de Armas de fuego defensivamente para protegerte de ataques de cuerpo a cuerpo y a distancia. Usar cubierta de disparos consume una bala adicional al turno.
 
 ### Rango II
 
+<u>Lluvia de plomo:</u> No sufres penalizadores al usar Disparo a bocajarro. Como acción de turno completo puedes hacer un ataque de área contra todas las criaturas en un cono de 30 pies o un radio de 15 pies. Tirarás un dado de Dificultad como penalización en el ataque de área y gastarás las cargas de ambas pistolas.
 
+<u>Predecir movimiento</u>: Tienes un instinto sobrenatural del peligro. Recibes la habilidad Esquiva asombrosa (Esquiva asombrosa mejorada si ya la tienes) y puedes gastar 2 Desventajas generadas para hacer un ataque con tu arma secundaria como reacción. Puntería mortal se aplica para este ataque.
 
 ### Rango III
 
+<u>Maestro pistolero:</u> Al atacar a una criatura que haya sufrido daño en algún momento de la ronda añades +2 daño base a tus ataques con armas de fuego. Recargar tu arma secundaria te cuesta una acción de movimiento y no necesitas tener una mano libre para ello. 
