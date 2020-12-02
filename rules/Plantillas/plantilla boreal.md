@@ -1,5 +1,7 @@
 ---
 title: Plantilla Boreal
+main: Rangos
+sub: Plantillas
 ---
 
 ## Rango I

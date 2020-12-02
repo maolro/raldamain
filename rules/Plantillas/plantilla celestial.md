@@ -1,5 +1,7 @@
 ---
 title: Plantilla celestial
+main: Rangos
+sub: Plantillas
 ---
 
 ## Rango I

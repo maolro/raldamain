@@ -1,5 +1,7 @@
 ---
 title: Magia de Fuego
+main: Rangos
+sub: Magia elemental
 ---
 
 ## Rango I

@@ -1,5 +1,7 @@
 ---
 title: Plantilla abisal
+main: Rangos
+sub: Plantillas
 ---
 
 ## Rango I

@@ -1,5 +1,7 @@
 ---
 title: Magia de Tierra
+main: Rangos
+sub: Magia elemental
 ---
 
 ## Rango I +amarillo en ataques

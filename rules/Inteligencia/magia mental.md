@@ -1,4 +1,8 @@
-
+---
+title: Magia Mental
+main: Rangos
+sub: Magia arcana
+---
 
 ## Rango I
 

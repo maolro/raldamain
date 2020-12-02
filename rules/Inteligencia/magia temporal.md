@@ -1,5 +1,7 @@
 ---
 title: Magia Temporal
+main: Rangos
+sub: Magia arcana
 ---
 
 ## Rango I

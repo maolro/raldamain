@@ -1,5 +1,7 @@
 ---
 title: Magia de Metal
+main: Rangos
+sub: Magia elemental
 ---
 
 ## Rango I añades un dado de soltura a todos tus ataques elementales

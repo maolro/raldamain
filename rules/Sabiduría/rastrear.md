@@ -1,5 +1,7 @@
 ---
 title: Rastrear
+main: Rangos
+sub: Sabiduria
 ---
 
 ## Rango I

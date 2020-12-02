@@ -1,5 +1,7 @@
 ---
 title: Conocimiento
+main: Rangos
+sub: Inteligencia
 ---
 
 ## Rango I

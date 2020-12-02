@@ -1,5 +1,7 @@
 ---
 title: Plantilla infernal
+main: Rangos
+sub: Plantillas
 ---
 
 ## Rango I

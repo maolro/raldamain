@@ -1,5 +1,7 @@
 ---
 title: Telequinesia
+main: Rangos
+sub: Magia arcana
 ---
 
 ## Rango I

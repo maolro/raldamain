@@ -1,5 +1,7 @@
 ---
 title: Magia de Agua
+main: Rangos
+sub: Magia elemental
 ---
 
 ## Rango I 

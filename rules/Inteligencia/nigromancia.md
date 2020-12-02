@@ -1,5 +1,7 @@
 ---
 title: Nigromancia
+main: Rangos
+sub: Magia arcana
 ---
 
 ## Rango I

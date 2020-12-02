@@ -1,5 +1,7 @@
 ---
 title: Castigo Divino
+main: Rangos
+sub: Sabiduria
 ---
 
 ## Rango I
