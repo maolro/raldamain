@@ -1,7 +1,7 @@
 ---
 title: Reflejos
 main: Rangos
-sub: Defensa
+sub: Combate
 ---
 
 ## Rango I
