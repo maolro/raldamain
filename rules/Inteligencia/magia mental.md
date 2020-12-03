@@ -16,7 +16,7 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva au
 
 ## Rango II
 
-<u>Influenciar emociones:</u> Sabes como manipular las emociones de un objetivo con tu Magia mental. Como acción estándar, altera las emociones de una criatura cuyos pensamientos puedas detectar. Esto es un tiro de Magia mental contra la SAB del objetivo, y usar esta habilidad consume 1 chi. Si tienes éxito en el tiro, puedes fortalecer una de las siguientes emociones durante un número de turnos igual a los éxitos generados.
+<u>Influenciar emociones:</u> Sabes como manipular las emociones 	de un objetivo con tu Magia mental. Como acción estándar, altera las emociones de una criatura cuyos pensamientos puedas detectar. Esto es un tiro de Magia mental contra la SAB del objetivo, y usar esta habilidad consume 1 chi. Si tienes éxito en el tiro, puedes fortalecer una de las siguientes emociones durante un número de turnos igual a los éxitos generados.
 
 - **Miedo:** La criatura siente un miedo inexplicable, pasando a estar Espantada. Si ya está Espantada, entonces pasa a estar Asustada. El miedo cancela y es cancelado por la valentía.
 - **Valentía:** La criatura está bajo los efectos de Voz del comandante, añadiendo un dado de Ventaja a todos sus tiros. Esta habilidad se acumula con otros efectos de Presencia ya activos. La valentía cancela y es cancelada por el miedo. 

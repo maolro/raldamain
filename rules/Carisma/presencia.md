@@ -31,21 +31,19 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Indómito:</u> Tu fuerza de voluntad permite resistir lo imposible. Un número de veces al día igual a tu rango-2 , repite cualquier tirada de habilidad,ataque o defensiva, cancelando el resultado anterior. Esta nueva tirada conserva los bonificadores de la anterior y debes quedarte con con el nuevo resultado (no puedes usar Indómito en el mismo tiro mas de una vez). Tienes resistencia igual a tu rango-1 contra efectos mentales.
 
-<u>Inspirar heroísmo:</u> Como acción estándar, otorga a un aliado o a ti la fuerza de un héroe. Una criatura afectada por esta habilidad tiene +R-1 PV temporales, +blanco en tiros de ataques y la habilidad de voluntad poderosa (+negro en tiros defensivos de carisma si ya la tiene). Este efecto dura hasta que el objetivo pierda sus PV temporales y puedes afectar a un número máximo de personas igual a tu rango-1.
+<u>Inspirar heroísmo:</u> Como acción estándar, otorga a un aliado o a ti la fuerza de un héroe. Una criatura afectada por esta habilidad tiene +R-1 PV temporales, un dado de Ventaja en tiros de ataques y la habilidad de voluntad poderosa (recibe un dado de Desventaja en tiros defensivos de carisma si ya la tiene). Este efecto dura hasta que el objetivo pierda sus PV temporales y puedes afectar a un número máximo de personas igual a tu rango-1.
 
 ## Rango IV
 
 <u>Incitar el pánico:</u> Como acción de turno completo, incita a tus adversarios a huir descabelladamente. Esta habilidad funciona como atemorizar, pero las criaturas con 4 o menos PV están confusas (una criatura confusa se mueve en una dirección aleatoria cada turno y ataca a la primera criatura hostil que ve). No puedes asustar a criaturas que tengan efectos de presencia.
 
-<u>Inflamar emociones:</u> Tu voluntad altera las emociones de los débiles de carácter, levantando sus ánimos o hundiéndolos en la desesperación. Gasta una acción estándar para usar inflamar emociones, y con con esta habilidad puedes afectar a una persona individual o a un grupo de personas con un nivel menor.
-
-Si el objetivo falla en un tiro de sabiduría contra ti, pasa a estar animado (aumenta su actitud hacia ti por 1 nivel +blanco en todos sus tiros) o desesperado (+negro en todos sus tiros, no puede ser afectado por tiros de presencia).Animado y desesperación se contrarrestan entre si.
+<u>Inflamar emociones:</u> Tu voluntad altera las emociones de los débiles de carácter, levantando sus ánimos o hundiéndolos en la desesperación. Gasta una acción estándar para usar inflamar emociones, y con con esta habilidad puedes afectar a una persona individual o a un grupo de personas con un nivel menor. Si el objetivo falla en un tiro de sabiduría contra ti, pasa a estar animado (aumenta su actitud hacia ti por 1 nivel y recibe un dado de Ventaja en todos sus tiros) o desesperado (recibe un dado de Desventaja en todos sus tiros, no puede ser afectado por tiros de presencia). Animado y desesperado se contrarrestan entre sí.
 
 ## Rango V
 
 Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
-<u>Inspirar leyenda:</u> al usar inspirar heroísmo, el objetivo afectado aumenta una de sus estadísticas temporalmente por 1 y obtiene un uso de la habilidad indómito (si ya lo tienes, te vuelves inmune a efectos mentales y de moral).
+<u>Inspirar leyenda:</u> Al usar inspirar heroísmo, el objetivo afectado aumenta una de sus estadísticas temporalmente por 1 y obtiene un uso de la habilidad indómito (si ya lo tienes, te vuelves inmune a efectos mentales y de moral).
 
 <u>Bonus táctico:</u> Tu habilidad Dirigir combatientes ahora te permite tener dos tácticas a la vez, además que puedes hacer que tus aliados cambien de táctica como acción de movimiento sin necesidad de reactivar la habilidad
 

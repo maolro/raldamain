@@ -41,9 +41,11 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Depredador:</u> La criatura está adaptada a cazar en un terreno de tu elección. Esta habilidad funciona como el atributo Terreno predilecto. Puedes emplear 1 PT adicional en esta transformación para conseguir un atributo entre [Acechar](http://raldamain.com/rules/Sabidur%C3%ADa/rastrear.html#rango-ii), [Camuflaje](http://raldamain.com/rules/Sabidur%C3%ADa/rastrear.html#rango-iv), [Maestro del terreno](http://raldamain.com/rules/Sabidur%C3%ADa/rastrear.html#rango-iv), [Rastreador tápido](http://raldamain.com/rules/Sabidur%C3%ADa/rastrear.html#rango-iii) y [Presa](http://raldamain.com/rules/Sabidur%C3%ADa/rastrear.html#rango-iii).
 
+<u>Visión periférica:</u> Los ojos de la criatura le permiten ver todo su entorno por igual. No puede ser atacada por la espalda y es inmune a las ventajas por flanqueo. Visión periférica puede mejorarse con Sentido superior.
+
 ### Mejoras de 2 PT
 
-<u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), [Plantilla Boreal - Raldamain](http://raldamain.com/rules/Plantillas/plantilla boreal.html#rango-ii) o [Visión infernal](http://raldamain.com/rules/Plantillas/plantilla%20infernal.html#rango-ii). Puedes emplear 2 PT adicionales para que la criatura tenga Visión verdadera, lo cual le permite ver a través de ilusiones y percibir a criaturas invisibles.
+<u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), [Visión árctica](http://raldamain.com/rules/Plantillas/plantilla boreal.html#rango-ii) o [Visión infernal](http://raldamain.com/rules/Plantillas/plantilla%20infernal.html#rango-ii). Puedes emplear 2 PT adicionales para que la criatura tenga Visión verdadera, lo cual le permite ver a través de ilusiones y percibir a criaturas invisibles.
 
 <u>Alas:</u> La criatura recibe una velocidad de vuelo igual a 60 pies. Las alas pueden recibir heridas permanentes, y apuntar a las alas requiere un gasto adicional de 2 ventajas. Puedes emplear 2 PT adicionales para añadirle a la criatura otro par de alas, lo cual aumenta su velocidad de vuelo por 30 pies o gastar 1 PT para que la criatura pueda volar sin la necesidad de alas.
 
@@ -66,6 +68,8 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Cola:</u> La criatura recibe una sinuosa cola, con la cual puede manipular objetos o hacer ágiles golpes. Hacer un ataque con la cola te cuesta una acción bonus (acción de movimiento si es una criatura de base Sierpe) y hace 0+Éxito daño. La cola puede mejorarse con las transformaciones Garras, Golpe, Tentáculo y Perforar.
 
+<u>Magia innata:</u> La criatura sabe emplear algunas habilidades mágicas de forma innata. Esta sabrá lanzar un hechizo de tu elección sin utilizar chi entre Crear ilusión, Cambiar aspecto, Salto dimensional, Portal menor, Detectar pensamientos, Asalto psíquico, Disrupción de chi, Premonición, Alteración temporal, Rayo de energía o Toque necrótico. El rango efectivo para estos hechizos es igual al número de hechizos de la misma categoría que conozca la criatura (máximo 6). Puedes emplear PT adicionales en esta habilidad para que la criatura aprenda más hechizos. Estos tendrán los siguientes costes en PT. **1 PT**: Hechizos de la lista inicial, Terreno alucinatorio (ilimitado), Doble ilusorio, **2 PT:** Geas (3/día), Espejismo arcano (3/día), Invisibilidad (ilimitado), Velo de engaños (3/día) **3 PT:** Esclavizar (1/día), Parar el tiempo (1/día)
+
 ### Mejoras de 3 PT
 
 <u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 10 pies y aumenta su alcance por 5 pies. Esta mejora puede tomarse varias veces, pero la FUE y CON de la criatura no pueden exceder 9.
@@ -74,5 +78,13 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Resistencia mágica:</u> La criatura recibe Resistencia 3 contra todos los hechizos mágicos. Puedes emplear 1 PT adicional para incrementar la Resistencia mágica por 1, llegando como máximo a Resistencia mágica 6. 
 
-<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. En lugar de hacer daño, el aliento puede infligir un efecto entre Parálisis, Aturdimiento, Confusión o [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos) a todas las criaturas en el área. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el area de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades.
+<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. En lugar de hacer daño, el aliento puede infligir un efecto entre Parálisis, Aturdimiento, Confusión o [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos) a todas las criaturas en el área. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el área de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades.
+
+<u>Mirada terrorífica:</u> Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. Las criaturas con Resistencia al miedo pueden pasar un turno adicional por cada punto de Resistencia que tengan manteniendo contacto visual sin sufrir ningún efecto de estado. Si la criatura tiene visión periférica esta habilidad funciona como un aura de 15 pies de radio. Puedes emplear PT con esta habilidad para que la mirada pueda dar uno de los siguientes efectos de estado. 
+
+| Gasto | Mejora             |
+| ----- | ------------------ |
+| 1 PT  | Asustado, Fatigado |
+| 2 PT  | Pánico, Confundido |
+| 3 PT  | Paralizado         |
 
