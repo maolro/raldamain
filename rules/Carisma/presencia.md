@@ -6,7 +6,7 @@ title: Presencia
 
 Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
-<u>Voz del comandante:</u>  A través de inspiradoras palabras o ordenes imperiosas fortalece la moral y fuerza de tus aliados. Gata una acción estándar para iniciar este efecto, y hasta que sufras una herida permanente leve todos tus aliados tienen +blanco en todos sus tiros y están inspirados. Tus aliados deben ver y oírte para beneficiarse del efecto.
+<u>Voz del comandante:</u>  A través de inspiradoras palabras o ordenes imperiosas fortalece la moral y fuerza de tus aliados. Emplea una acción estándar para iniciar este efecto, y hasta que sufras una herida permanente leve todos tus aliados tienen +blanco en todos sus tiros y están inspirados. Tus aliados deben ver y oírte para beneficiarse del efecto.
 
 <u>Inspirar temor:</u> Eres una figura temible en el campo de batalla. Todas las criaturas de menor nivel de desafío están espantadas (+negro en todos sus tiros) hasta que tú sufras una herida permanente. Esta habilidad afecta a todos en un radio de 30 pies y no afecta a criaturas bajo los efectos de presencia.
 

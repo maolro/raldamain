@@ -18,7 +18,7 @@ sub: Sabiduria
 
 ## Rango III
 
-<u>Plegaria:</u> Antes de una batalla, puedes realizar una plegaria a tu dios junto con tus aliados para concederte suerte en la batalla. Todos aquellos que realicen la plegaria tendrán +blanco y +1 defensa contra enemigos de la fe. Este efecto dura durante el resto del día.
+<u>Plegaria:</u> Antes de una batalla, puedes realizar una plegaria a tu dios junto con tus aliados para concederte suerte en la batalla. Todos aquellos que realicen la plegaria reciben un dado de Ventaja y +1 defensa contra enemigos de la fe. Este efecto dura durante el resto del día.
 
 <u>Guardián de la fe:</u> Como acción estándar, puedes permitir que la energía divina fluya por tu cuerpo, dándote fuerza sobrenatural. Guardian de la fe aumenta tu fuerza y constitución por 1 (puedes superar 6 con esta habilidad) y te da  resistencia 2 contra daño físico. Tu resistencia sólo puede ser atravesada por armas sacras. Esta habilidad te hace 1 daño no-letal cada turno que la lleves activada y desactivarla es una acción gratuita.
 
