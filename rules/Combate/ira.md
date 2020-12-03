@@ -1,7 +1,7 @@
 ---
 title: Ira
 main: Rangos
-sub: Armas
+sub: Combate
 ---
 
 ## Rango I
