@@ -9,19 +9,23 @@ main: Reglas adicionales
 
 <u>Cuadrúpedo:</u> La criatura está dotada de cuatro patas. Su movimiento base es 40 pies y sus estadísticas físicas son FUE 3, DES 1, CON 2.
 
-<u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de Escalada igual a 20 pies y su tamaño inicial es Pequeño.
+<u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de Escalada igual a 20 pies y su tamaño inicial es Pequeño, teniendo -1 PV base.
 
-<u>Ave:</u> La criatura tiene alas y garras. Puede volar a una velocidad de 30 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño.
+<u>Ave:</u> La criatura tiene alas y garras. Puede volar a una velocidad de 30 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño, teniendo -1 PV base.
 
-<u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respirar bajo el agua y puede nadar a una velocidad de 30 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
+<u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respira	r bajo el agua y puede nadar a una velocidad de 30 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
 
 <u>Aberrante:</u> La criatura tiene una forma amorfa que desafía toda ley natural. Recibe 3 PT adicionales y puede distribuir 6 puntos de estadística entre su FUE, DES y CON como desee (no puede exceder 4).
+
+Los puntos de vida de una criatura son iguales a 3+CON mientras que su Vitalidad son 2+CON. 
 
 ## Puntos de Transformación
 
 Los puntos de transformación (PT) representan las características fisiológicas de una criatura que le garantizan la supervivencia. Con ellos un jugador o el máster pueden crear criaturas fantásticas con facilidad. 
 
 Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se emplean para construirla. Añade un dado de Soltura adicional a todos sus tiros cuando se gasten 12 o más PT, y uno adicional si son 18 o más PT. Cada vez que una criatura reciba un dado de soltura el nivel de todas las heridas permanentes que inflige aumentan por 1.
+
+Los PV aumentan por 1 por cada 6 PT empleados para la creación de una criatura mientas que la Vitalidad aumenta por 1 cada vez que se empleen 2 PT. 
 
 ### Mejoras de 1 PT
 
@@ -43,6 +47,8 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Visión periférica:</u> Los ojos de la criatura le permiten ver todo su entorno por igual. No puede ser atacada por la espalda y es inmune a las ventajas por flanqueo. Visión periférica puede mejorarse con Sentido superior.
 
+<u>Explosión:</u> Cuando la criatura es reducida a 0 PV esta explotará al instante. La explosión es un tiro de CON que hace 2+Éxito daño a todas las criaturas en un radio de 10 pies. El daño de energía equivale al elemento escogido para Ataques infundidos, y todos los gastos de ventajas de esa habilidad se aplican también a esta. El daño de la explosión aumenta por 1 y el radio de explosión por 5 pies por cada aumento de tamaño que tenga la criatura. Si la criatura ha gastado PT en veneno, en lugar de hacer daño con la explosión podrá Envenenar a todas las criaturas en el radio. 
+
 ### Mejoras de 2 PT
 
 <u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), [Visión árctica](http://raldamain.com/rules/Plantillas/plantilla boreal.html#rango-ii) o [Visión infernal](http://raldamain.com/rules/Plantillas/plantilla%20infernal.html#rango-ii). Puedes emplear 2 PT adicionales para que la criatura tenga Visión verdadera, lo cual le permite ver a través de ilusiones y percibir a criaturas invisibles.
@@ -61,6 +67,8 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Arrollar:</u> Cuando la criatura haga una carga, hace un ataque automático de Golpe contra todas las criaturas de menor tamaño que estén en su camino hasta que complete la carga. Las criaturas que estén en el camino de la carga deben escoger entre intentar evitar la carga, por lo que tirarán Esquivar contra su ataque, o intentar detenerla, por lo que tirarán Heroísmo. Puedes gastar 1 PT adicional en esta habilidad para conseguir un atributo entre [Carga poderosa](http://raldamain.com/rules/Combate/escudo.html#rango-iii), [Interceptar](http://raldamain.com/rules/Combate/escudo.html#rango-ii) y [Carga con lanza](http://raldamain.com/rules/Combate/alabardas.html#rango-iv) (requiere Perforar).
 
+<u>Cambiaformas:</u> La criatura tiene la capacidad de alterar su aspecto. Como acción de turno completo, la criatura puede cambiar 3 PT que tenga por otros 3 PT nuevos, cambiando su forma tanto como ella desee. Esta transformación dura hasta que la criatura lo elija o esta caiga inconsciente. Puedes emplear 1 PT adicional en esta habilidad para que la criatura reciba 1 PT adicional al transformarse. Si empleas 6 PT en esta habilidad la criatura podrá cambiar su forma como acción de movimiento.
+
 <u>Espinas:</u> La criatura tiene varias afiladas espinas a lo largo de su cuerpo. Las espinas causan que haga +1 daño perforante con todos sus ataques físicos y cuando sufra daño por un ataque natural el atacante recibirá Sangrado. Si la criatura con espinas agarra a otra, la criatura agarrada sufrirá 1 daño letal obligatorio al principio de su turno. Puedes gastar 1 PT adicional para uno de las siguientes mejoras:
 
 - **Espinas venenosas:** Las espinas están cubiertas por veneno. Cuando una criatura te haga daño con un ataque natural, gasta 2 Desventajas para envenenarlo (En un agarre la criatura es envenenada automáticamente). Esto requiere la mejora Veneno.
@@ -68,11 +76,11 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 <u>Cola:</u> La criatura recibe una sinuosa cola, con la cual puede manipular objetos o hacer ágiles golpes. Hacer un ataque con la cola te cuesta una acción bonus (acción de movimiento si es una criatura de base Sierpe) y hace 0+Éxito daño. La cola puede mejorarse con las transformaciones Garras, Golpe, Tentáculo y Perforar.
 
-<u>Magia innata:</u> La criatura sabe emplear algunas habilidades mágicas de forma innata. Esta sabrá lanzar un hechizo de tu elección sin utilizar chi entre Crear ilusión, Cambiar aspecto, Salto dimensional, Portal menor, Detectar pensamientos, Asalto psíquico, Disrupción de chi, Premonición, Alteración temporal, Rayo de energía o Toque necrótico. El rango efectivo para estos hechizos es igual al número de hechizos de la misma categoría que conozca la criatura (máximo 6). Puedes emplear PT adicionales en esta habilidad para que la criatura aprenda más hechizos. Estos tendrán los siguientes costes en PT. **1 PT**: Hechizos de la lista inicial, Terreno alucinatorio (ilimitado), Doble ilusorio, **2 PT:** Geas (3/día), Espejismo arcano (3/día), Invisibilidad (ilimitado), Velo de engaños (3/día) **3 PT:** Esclavizar (1/día), Parar el tiempo (1/día)
+<u>Magia innata:</u> La criatura sabe emplear algunas habilidades mágicas de forma innata. Esta sabrá lanzar un hechizo de tu elección sin utilizar chi entre Crear ilusión, Cambiar aspecto, Salto dimensional, Portal menor, Detectar pensamientos, Asalto psíquico, Disrupción de chi, Premonición, Alteración temporal, Rayo de energía o Toque necrótico. El rango efectivo para estos hechizos es igual al número de hechizos de la misma categoría que conozca la criatura (máximo 6). Puedes emplear PT adicionales en esta habilidad para que la criatura aprenda más hechizos. Estos tendrán los siguientes costes en PT. **1 PT**: Hechizos de la lista inicial, Terreno alucinatorio (ilimitado), Doble ilusorio, Inflamar emociones (3/día), **2 PT:** Geas (3/día), Espejismo arcano (3/día), Invisibilidad (ilimitado), Velo de engaños (3/día), Aura emocional, **3 PT:** Esclavizar (1/día), Parar el tiempo (1/día).
 
 ### Mejoras de 3 PT
 
-<u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 10 pies y aumenta su alcance por 5 pies. Esta mejora puede tomarse varias veces, pero la FUE y CON de la criatura no pueden exceder 9.
+<u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 10 pies y aumenta su alcance por 5 pies. Cada aumento de tamaño aumenta además la Armadura natural por 1 y los PV base por 1. Esta mejora puede tomarse varias veces, pero la FUE y CON de la criatura no pueden exceder 9.
 
 <u>Regeneración:</u> El cuerpo de la criatura se regenera fácilmente de heridas. Al principio de su turno, la criatura recupera 2 Vitalidad, y si está al máximo de Vitalidad se recupera 1 PV. Puedes emplear 1 PT adicional para que la criatura se sane 1 PV al turno (como máximo 3 PV). Si has gastado 6 PT en esta habilidad la criatura recibe la capacidad de recuperar órganos perdidos de su cuerpo, reduciendo el nivel de una herida permanente que tenga por 1 cada turno.
 
