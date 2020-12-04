@@ -8,13 +8,13 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Voz del comandante:</u>  A través de inspiradoras palabras o ordenes imperiosas fortalece la moral y fuerza de tus aliados. Emplea una acción estándar para iniciar este efecto, y hasta que sufras una herida permanente leve todos tus aliados tienen +blanco en todos sus tiros y están inspirados. Tus aliados deben ver y oírte para beneficiarse del efecto.
 
-<u>Inspirar temor:</u> Eres una figura temible en el campo de batalla. Todas las criaturas de menor nivel de desafío están espantadas (+negro en todos sus tiros) hasta que tú sufras una herida permanente. Esta habilidad afecta a todos en un radio de 30 pies y no afecta a criaturas bajo los efectos de presencia.
+<u>Inspirar temor:</u> Eres una figura temible en el campo de batalla. Todas las criaturas de menor nivel de desafío están Espantadas hasta que tú sufras una herida permanente. Esta habilidad afecta a todos en un radio de 30 pies y no afecta a criaturas bajo los efectos de presencia.
 
 <u>Voluntad poderosa:</u> Tienes resistencia igual a tu rango contra el miedo y puedes usar Car en vez de Sabiduría en tiros contra influenciar. Si tienes rangos en influenciar , cuando uses la habilidad persuasivo fascinas a aquellos que interactúan contigo.
 
 ## Rango II
 
-<u>Atemorizar:</u> Como acción estándar, haz un tiro de moral afectando a todos  los enemigos en un radio de 30 pies. Las criaturas contra las que tengas éxito pasan a estar espantadas, y las que ya están espantadas acaban asustadas (deben gastar sus acciones en huir, luchando solo si están acorralados). Esta habilidad no puede usarse más veces contra el mismo grupo de criaturas.
+<u>Atemorizar:</u> Como acción estándar, haz un tiro de moral afectando a todos  los enemigos en un radio de 30 pies. Las criaturas contra las que tengas éxito pasan a estar espantadas, y las que ya están Espantadas acaban Asustadas. Esta habilidad no puede usarse más veces contra el mismo grupo de criaturas.
 
 <u>Dirigir combatientes:</u> Al usar voz del comandante, puedes dirigir a aliados para que realicen tácticas complejas. Estas son algunas de ellas:
 
