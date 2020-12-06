@@ -4,7 +4,9 @@ main: Rangos
 sub: Magia elemental
 ---
 
-## Rango I +amarillo en ataques
+## Rango I
+
+Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Ataque elemental:</u> Ataca al objetivo lanzándole una piedra. La piedra hace daño dependiendo de su tamaño, siendo 1+éxito contundente el que haría una piedra de tamaño mediano (5 pies cúbicos). Impactas una zona igual a R tamaño de la piedra y puedes gastar 1 ventaja generada para tropezar al objetivo o empujarlo 5 pies. (esto es una técnica de combate, así que puede resistir con fuerza).
 

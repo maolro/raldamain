@@ -17,7 +17,7 @@ main: Reglas adicionales
 
 <u>Aberrante:</u> La criatura tiene una forma amorfa que desafía toda ley natural. Recibe 3 PT adicionales y puede distribuir 6 puntos de estadística entre su FUE, DES y CON como desee (no puede exceder 4).
 
-Los puntos de vida de una criatura son iguales a 3+CON mientras que su Vitalidad son 2+CON. 
+Los puntos de vida de una criatura son iguales a 3+CON mientras que su Vitalidad es 2+CON. 
 
 ## Puntos de Transformación
 

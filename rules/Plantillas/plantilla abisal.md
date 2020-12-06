@@ -16,11 +16,11 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu FUE Por 1.
 
-<u>Rango monstruoso:</u> Tienes 3 PT, los cuales puedes gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2PT), garras (1PT), ataques infundidos (1PT), y armadura natural (1PT).
+<u>Rasgo monstruoso:</u> Tienes 3 PT, los cuales puedes gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2PT), garras (1PT), ataques infundidos (1PT), y armadura natural (1PT).
 
 <u>Aura antinatural:</u> Los animales se apartan instintivamente de ti y tu presencia resalta sospechas y miedo. Tienes un dado de ventaja adicional en tiros de intimidar, persuasión y engaño, y todos los tiros de inteligencia y sabiduría reciben un penalizador de un dado de desventaja en un aura de 30 pies. Los abisales no son hostiles hacia ti.
 
-<u>Vista del vacío:</u> Tienes visión a ciegas en un área de 30 pies y visión a oscuras en 60 pies. Detectas influencia abisal en un área de hasta 1 Km (no conoces su `posición ni cantidad solo su fuerza).
+<u>Vista del vacío:</u> Tienes visión a ciegas en un área de 30 pies y visión a oscuras en 60 pies. Detectas influencia abisal en un área de hasta 1 Km (no conoces su posición ni cantidad solo su fuerza).
 
 ## Rango III
 

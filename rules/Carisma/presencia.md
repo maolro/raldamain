@@ -1,5 +1,7 @@
 ---
 title: Presencia
+main: Rangos
+sub: Carisma
 ---
 
 ## Rango I

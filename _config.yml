@@ -32,8 +32,10 @@ defaults:
     scope:
       path: "rules"
     values:
-      layout: character
+      layout: rule
       category: rule
+      main: zznomain
+      sub: zznosub
 
 
 # Build settings
