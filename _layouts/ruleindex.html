@@ -1,0 +1,41 @@
+---
+layout: page
+---
+<div class="container text-justify">
+
+{{ content }}
+    
+<h2>Índice</h2>
+
+<div class="container">
+  <ul class="list-unstyled card-columns">
+
+{% assign mypages =  site.pages | where: "category", "rule" | sort: "title" %}
+
+{% assign mains = mypages | map: "main" | uniq | sort %}
+{% for m in mains %}	
+	<li>{{m}}</li>
+	<ul>
+{% assign pagesinmain = mypages | where: "main", m %}
+
+{% assign subs = pagesinmain | map: "sub" | uniq | sort %}
+
+{% for s in subs %}
+{% if s != "zznosub" %}
+   <li>{{s}}</li>
+   <ul>
+{% endif %}
+{% assign pagesinsub = pagesinmain | where: "sub", s %}
+   
+{% for item in pagesinsub %}		
+     <li><a href="{{item.url}}">{{item.title}}</a></li>		
+{% endfor %}
+{% if s != "zznosub" %}
+    </ul>
+{% endif %}
+{% endfor %}
+	</ul>
+{% endfor %}
+</ul>
+
+</div>

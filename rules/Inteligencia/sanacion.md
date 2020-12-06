@@ -20,8 +20,6 @@ Los rangos de Sanación representan tu capacidad de curar a los heridos. En un p
 
 <u>Intervención milagrosa:</u>
 
-<u></u>
-
 ## Rango IV
 
 <u>Restauración superior:</u>

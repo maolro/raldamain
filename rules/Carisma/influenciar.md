@@ -1,5 +1,7 @@
 ---
 title: Influenciar
+main: Rangos
+sub: Carisma
 ---
 
 ## Rango I
