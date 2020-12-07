@@ -24,6 +24,8 @@ Fortalece ataques: Cuando una habilidad te de un ataque adicional por turno, pue
 
 Ferrokinesia: Como acción estándar, agarra telekineticamente a un objetivo que lleve armadura metálica. Debes tirar tu ataque elemental contra su fuerza, y en un éxito está agarrado y lo mueves 5xéxitos pies en cualquier dirección. Objetivos con armadura metálica no tiran defensa contra ti.
 
+## Rango IV
+
 Espinas metálicas: Al impactar con un ataque elemental, gasta 2 ventajas para clavarle una espina metálica. La espina provoca sangrado al objetivo y tienes + dado de ventaja/ espina atacándole. Cuenta como si le armadura metálica para los propósitos de ferrokinesia.
 
 Deflejar ataques: Cuando un enemigo te ataques con un arma metálica, gasta 2 desventajas generadas para desarmar al objetivo y su arma entra en tu aura magnética. Si el arma es un proyectil, puedes rebotarlo contra quien los lanza como una reacción, usándolo como un ataque elemental.
