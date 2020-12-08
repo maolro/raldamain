@@ -1,5 +1,5 @@
 ---
-title: Arcos
+title: 
 ---
 
 ## Rango I 
