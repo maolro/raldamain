@@ -1,5 +1,5 @@
 ---
-title: Armas Contundentes
+title: 
 ---
 
 ## Rango I
