@@ -10,13 +10,16 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Vínculo con la tierra:</u> Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Una región es un territorio de hasta 4 km de área. Mientras permanezcas en contacto con la tierra de tu región tienes regeneración 1 y un dado de ventaja en todos tus tiros. Para declarar un territorio como tu región debes pasarte un día explorándolo y meditando en el. Solo puedes tener una región vinculada para este efecto.
 
-<u>Geokinesia:</u> Puedes moldear a tu voluntad pequeñas cantidades de tierra. Como acción estándar, puedes alterar hasta 2 pies cuadrados de tierra. Esta tierra puede usarse para atacar haciendo 0+éxitos daño contundente al impactar. Solo puedes usar geokinesia si estas en contacto con la tierra. Desbloqueas la rama de magia elemental de tierra, usando sabiduría como característica principal.
+<u>Geokinesia:</u> Tu herencia elemental te permite controlar la tierra. Desbloqueas los rangos de magia elemental de tierra. Como acción bonus puedes manipular una pequeña cantidad de tierra o sentir las características de esta. Sólo puedes usar uno de estos efectos al turno.
+
+- Mueve 30 pies en cualquier dirección una cantidad de tierra de volumen igual a un pie cuadrado. La tierra que manipules no hará daño ni empujará. 
+- Haz un análisis completo de todos los objetos de tierra y metálicos en un área de 10 pies cuadrados,
 
 ## Rango II
 
 Incrementa tu CON por 1.
 
-<u>Puños de tierra:</u> Como acción bonus, puedes sufrir 1 daño no letal para infundir tus ataques naturales con tierra durante un turno. Los ataques infundidos hacen +2 daño base y puedes gastar 2 ventajas generadas para ralentizar al objetivo durante 1 turno (si tienes rangos en Artes marciales, aumentas el nivel de heridas permanentes que infliges por 1). Si usas esta habilidad mientras estés en tu región vinculada no sufrirás daño no-letal.
+<u>Puños de tierra:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales con tierra durante un turno. Los ataques infundidos hacen +2 daño base y puedes gastar 2 ventajas generadas para ralentizar al objetivo durante un turno (si tienes rangos en Artes marciales, aumentas el nivel de heridas permanentes que infliges por 1). Si usas esta habilidad mientras estés en tu región vinculada no sufrirás daño no-letal.
 
 <u>Paso terrestre:</u> Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies.
 
@@ -26,7 +29,7 @@ Incrementa tu CON por 1.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Armadura de piedra:</u> Como acción estándar, te rodeas de una solida armadura hecha de piedras. Esa armadura te da +2 DEF contra ataques físicos y mágicos, y te otorga un número de puntos de vida temporales iguales a 1+tu Rango. Esta armadura desaparece cuando pierdas tus puntos de vida temporales o cuando pierdas la concentración.
+<u>Armadura de piedra:</u> Como acción estándar, te rodeas de una solida armadura hecha de piedras. Esa armadura te da +2 DEF contra ataques físicos y mágicos, y te otorga un número de puntos de vida temporales iguales a 1+tu Rango. Esta armadura desaparece cuando pierdas tus puntos de vida temporales o pierdas la concentración.
 
 <u>Conexión elemental:</u> La tierra sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno tocando la tierra te regeneras 1 vitalidad. Al realizar un descanso corto en contacto con la tierra, reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). No puedes recuperarte de maldiciones, venenos y enfermedades con este efecto.
 
@@ -48,8 +51,6 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 ## Rango VI
 
- Incrementa tu SAB por 1.
+Incrementa tu SAB por 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de tierra, Mientras estás en tu forma elemental, eres de tamaño gigante y tu reducción de daño aumenta por 2. Al ser de tamaño gigante, tu fuerza aumenta por 3, tu destreza se reduce por 2 y tus ataques naturales hacen +2 daño base. Tus puñetazos además afectan un área de 10 pies cuadrados y convierten el área de impacto en terreno difícil, y puedes usar ola de tierra como una acción de movimiento.
-
-Tu cubierta de piedra te da 8 puntos de vida temporales los cuales absorben daño hecho por ataques mágicos y físicos. Tu forma elemental termina cuando se te acaben los puntos de vida temporales. cada turno que permanezcas en forma elemental sufres uno daño no-letal y  pierdes tu habilidad de vinculo con la tierra, si pasas un turno sostenido en el aire tu forma elemental termina inmediatamente.
+<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de Tierra. Mientras estés en Forma elemental la habilidad Armadura de piedra aumenta la DEF y los PV temporales que otorga por 2. Puedes además usar la habilidad Ola de tierra como acción de movimiento y el daño base de tus ataques naturales aumenta por 2. Además, al impactar una superficie terrestre con un ataque natural conviertes toda la tierra en un radio de 10 pies en terreno difícil. La Forma elemental termina inmediatamente si pasas un turno suspendido en el aire o eres incapacitado. Cada turno que mantienes la forma elemental sufres 1 daño no-letal y pierdes la habilidad Conexión elemental.

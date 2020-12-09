@@ -4,34 +4,41 @@ main: Rangos
 sub: Magia elemental
 ---
 
-## Rango I añades un dado de soltura a todos tus ataques elementales
+## Rango I
 
-Ataque elemental: Ataca al objetivo con un proyectil metálico. Haces 2+éxitos daño perforante, contundente o cortante dependiendo del objeto que uses para atacar. Puedes gastar 2 ventajas para infligir sangrado (cort), Ralentizado (cont) o una herida permanente leve (perf).
+Añade un dado de soltura a todos tus ataques elementales.
 
-Control de metal: Eres capaz de manipular superficies en un radio de 30 pies. Como una acción de movimiento puedes mover de posición un objeto metálico pequeño hasta 15 pies en cualquier dirección (no puedes atacar). Para manipular objetos metálicos que lleve una persona, debes tirar tu ataque contra su fuerza. Si tienes éxito puedes desarmar o romper el objeto (es una técnica de combate si usas desarmar). Esta habilidad no funciona con metales mágicos o materiales especiales (mithril, adamantita...)
+<u>Ataque elemental</u>: Ataca al objetivo con un proyectil metálico. Este ataque hace 2+éxito daño físico, el cual es perforante, contundente o cortante dependiendo del objeto que uses para atacar. Puedes gastar 2 ventajas para infligir Sangrado (si el daño es Cortante), ralentizar al objetivo durante un turno (si el daño es Contundente) o infligir una herida permanente leve (si el daño es Perforante).
 
-Reserva de energía: Puedes elegir sufrir 2 daño no-letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque elemental o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse 1 vez por turno.
+<u>Control de metal</u>: Eres capaz de manipular objetos metálicos en un radio de 30 pies. Como una acción de movimiento puedes mover de posición un objeto metálico pequeño hasta 15 pies en cualquier dirección sin poder atacar. Para manipular objetos metálicos que lleve una persona, debes tener éxito en un tiro de magia elemental contra su tiro de Heroísmo. Si tienes éxito puedes desarmarle o romper el objeto que lleve. Esta habilidad no funciona con metales mágicos o materiales especiales como la adamantina.
+
+<u>Reserva de energía</u>: Puedes elegir sufrir 2 daño no-letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque elemental o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
 
 ## Rango II
 
- Sinergia terrestre: Si tienes rangos en magia de tierra, puedes manipular objetos metálicos al usar habilidades como control terrestre i muro de piedra que  fortalecen ataques como forma de la montaña o esperar y golpear también se aplican con metal. Si no tienes control terrestre consigues esa habilidad pero solo afectando a objetos metálicos.
+<u>Sinergia terrestre</u>: Si tienes rangos en Magia de Tierra, puedes manipular objetos metálicos con las habilidades Control terrestre y Muro de piedra. Las habilidades que fortalezcan tus ataques elementales como Forma de la Montaña o Esperar y Golpear también se aplicarán con ataques elementales de metal. Si no tienes Control terrestre recibes esa habilidad pero solo podrás manipular objetos hechos de metal.
 
-Magnetismo: Tu poder te permite atraes objetos metálicos para luego atacar con ellos. Cuando atraigas a tu posición un objeto metálico con control de metal, permanece en tu aura magnetica. Tu aura magnética tiene extensión de 10 pies y hace 1 daño a todas las criaturas en ella por cada objeto metálico en el aura (max rango +1) y te da + 1 dado de desventaja en tu tiro defensivo/objeto.
+<u>Magnetismo</u>: Tu poder elemental te permite ejercer un control magnético sobre los metales. Cuando atraigas a tu posición un objeto metálico usando Control de metal, puedes atraparlo en tu aura magnética. Puedes tener un número máximo de objetos iguales a tu Rango + 1 atrapados en tu aura magnética, y estos harán 1 daño físico a todas las criaturas que empiecen su turno en ella. Añade un dado de Desventaja a tus tiros de Parada elemental por cada objeto metálico en tu aura.
 
-## Rango III añades un dado de soltura a todos tus ataques elementales, haz un ataque adicional al turno
+## Rango III
 
-Fortalece ataques: Cuando una habilidad te de un ataque adicional por turno, puedes elegir en lugar de hacer ese ataque aumentar el tamaño de un proyectil por 5 pies y que haga +1 daño base. También puedes gastar una acción de movimiento para imbuir un ataque con un proyectil en tu aura magnética, aumentando el tamaño y el daño de la misma manera.
+Añade un dado de soltura a todos tus ataques elementales. Hacer un ataque elemental te cuesta una acción de movimiento.
 
-Ferrokinesia: Como acción estándar, agarra telekineticamente a un objetivo que lleve armadura metálica. Debes tirar tu ataque elemental contra su fuerza, y en un éxito está agarrado y lo mueves 5xéxitos pies en cualquier dirección. Objetivos con armadura metálica no tiran defensa contra ti.
+<u>Fortalecer ataques:</u> Puedes emplear una acción de movimiento para incrementar la fuerza de un ataque elemental, aumentando su tamaño por 5 pies y su daño base por 1. Usar esta habilidad te cuesta una acción bonus si empleas uno de los objetos metálicos atrapados en tu aura magnética para incrementar su fuerza.
+
+<u>Ferrokinesia</u>: Como acción estándar puedes agarrar telekinéticamente a una criatura que lleve armadura metálica o esté hecha de metal. Para usar esta habilidad debes tener éxito en un tiro de Ataque elemental contra el Heroísmo de tu objetivo, y puedes gastar una ventajas generada para mover 5 pies al objetivo en cualquier dirección. 
 
 ## Rango IV
 
-Espinas metálicas: Al impactar con un ataque elemental, gasta 2 ventajas para clavarle una espina metálica. La espina provoca sangrado al objetivo y tienes + dado de ventaja/ espina atacándole. Cuenta como si le armadura metálica para los propósitos de ferrokinesia.
+<u>Espinas metálicas:</u> Al impactar con un ataque elemental, puedes gastar 2 ventajas para clavarle una espina metálica. La espina provocará Sangrado al objetivo y recibes un dado de Ventaja en tiros de ataque contra ella por cada espina que tenga clavada. Una criatura que tenga espinas clavadas cuenta como si llevase armadura metálica para los propósitos de Ferrokinesia.
 
-Deflejar ataques: Cuando un enemigo te ataques con un arma metálica, gasta 2 desventajas generadas para desarmar al objetivo y su arma entra en tu aura magnética. Si el arma es un proyectil, puedes rebotarlo contra quien los lanza como una reacción, usándolo como un ataque elemental.
+<u>Reflejar ataques</u>: Cuando un enemigo te ataque con un arma metálica y tengas éxito en el tiro defensivo, puedes gastar 2 Desventajas generadas para atrapar su arma en tu Aura magnética. Si es un arma cuerpo a cuerpo, tu objetivo podrá tirar sus dados de Aptitud con arma contra tu tiro de Magia elemental para evitar ser desarmado. También puedes gastar 2 Desventajas generadas para hacer un ataque elemental con un objeto atrapado en tu Aura magnética como reacción.
 
-## Rango V añades un dado de soltura a todos tus ataques elementales, haz un ataque adicional al turno
+## Rango V
 
-Golpe mortal: Como acción de turno completo, haz un golpe de gracia contra un objetivo que tenga un objeto metálico no mágico, tan pequeño como desees. El objetivo sufre una herida permanente grave y debe tirar constitución contra tu ataque elemental o morir.  Esta habilidad sólo puede usarse una vez por objetivo.
+Añade un dado de soltura a todos tus ataques elementales. Una vez al turno puedes hacer un ataque adicional como acción bonus.
 
-Maestría del metal: Ignoras todos los puntos de armadura que tenga un enemigo. Además, puedes destruir una superficie metálica de 15 pues como acción estándar. Tus ataques de metal cuentan además como mágicos .
+<u>Golpe mortal</u>: Como acción de turno completo, haz un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. El objetivo sufre automáticamente una herida permanente grave y debe tirar CON contra tu ataque elemental o morir instantáneamente. No puedes volver a usar esta habilidad contra la misma persona salvo que le claves una nueva espina metálica.
+
+<u>Maestría del metal</u>: Ignoras la defensa de tu objetivo otorgada por armadura metálica. Tus ataques metálicos cuentan como armas mágicas para los propósitos de resistencias y como acción estándar puedes destruir una superficie de 15 pies de radio hecha de metal.
+
