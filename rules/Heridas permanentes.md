@@ -15,7 +15,7 @@ La herida que inflijas afectará a una parte aleatoria del cuerpo del objetivo s
 
 Apuntar a la cabeza requiere un gasto adicional de 2 ventajas. Si eres impactado en la cabeza, haz un tiro adicional de 1d10 para determinar si sufres una herida adicional en tus ojos, orejas o cuello. Los efectos que recibes al ser impactado en una de esas partes de la cabeza depende del tipo de herida permanente que hayas sufrido.
 
-**Leve:** Estás Desorientado durante un turno. Además, añade un dado de Desventaja a todos tus tiros de habilidad relacionados con la Inteligencia, la Sabiduría o el Carisma.
+**Leve:** Estás Ralentizado durante un turno. Además, añade un dado de Desventaja a todos tus tiros de habilidad relacionados con la Inteligencia, la Sabiduría o el Carisma.
 
 **Media:** Reduce tu INT, SAB y CAR por 1. Estás Aturdido durante un turno y recibes el efecto de estado Ralentizado hasta que recibas sanación, además de los efectos causados por una herida permanente leve. 
 
