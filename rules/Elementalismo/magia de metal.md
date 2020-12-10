@@ -16,7 +16,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 ## Rango II
 
-<u>Sinergia terrestre</u>: Si tienes rangos en Magia de Tierra, puedes manipular objetos metálicos con las habilidades Control terrestre y Muro de piedra. Las habilidades que fortalezcan tus ataques elementales como Forma de la Montaña o Esperar y Golpear también se aplicarán con ataques elementales de metal. Si no tienes Control terrestre recibes esa habilidad pero solo podrás manipular objetos hechos de metal.
+<u>Sinergia terrestre</u>: Si tienes rangos en Magia de Tierra, puedes manipular objetos metálicos con las habilidades Control terrestre y Muro de piedra. Las habilidades que fortalezcan tus ataques elementales como Forma de la Montaña o Esperar y Golpear también se aplicarán con ataques elementales de metal. Si no tienes Control terrestre recibirás esa habilidad, pero pudiendo sólo manipular objetos hechos de metal.
 
 <u>Magnetismo</u>: Tu poder elemental te permite ejercer un control magnético sobre los metales. Cuando atraigas a tu posición un objeto metálico usando Control de metal, puedes atraparlo en tu aura magnética. Puedes tener un número máximo de objetos iguales a tu Rango + 1 atrapados en tu aura magnética, y estos harán 1 daño físico a todas las criaturas que empiecen su turno en ella. Añade un dado de Desventaja a tus tiros de Parada elemental por cada objeto metálico en tu aura.
 
