@@ -13,13 +13,13 @@ Obtienes Resistencia 1 a daño físico.
 <u>Geokinesia:</u> Tu herencia elemental te permite controlar la tierra. Desbloqueas los rangos de magia elemental de tierra. Como acción bonus puedes manipular una pequeña cantidad de tierra o sentir las características de esta. Sólo puedes usar uno de estos efectos al turno.
 
 - Mueve 30 pies en cualquier dirección una cantidad de tierra de volumen igual a un pie cuadrado. La tierra que manipules no hará daño ni empujará. 
-- Haz un análisis completo de todos los objetos de tierra y metálicos en un área de 10 pies cuadrados,
+- Haz un análisis completo de todos los objetos de tierra y metálicos en un área de 10 pies cuadrados, detectando secretos y anomalías que tengan.
 
 ## Rango II
 
 Incrementa tu CON por 1.
 
-<u>Puños de tierra:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales con tierra durante un turno. Los ataques infundidos hacen +2 daño base y puedes gastar 2 ventajas generadas para ralentizar al objetivo durante un turno (si tienes rangos en Artes marciales, aumentas el nivel de heridas permanentes que infliges por 1). Si usas esta habilidad mientras estés en tu región vinculada no sufrirás daño no-letal.
+<u>Puños de tierra:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales con tierra durante un turno. Los ataques infundidos hacen +2 daño base y puedes gastar 2 ventajas generadas para ralentizar al objetivo durante un turno. Si tienes rangos en Artes marciales, aumentas el nivel de heridas permanentes que infliges por 1. No sufres daño no-letal con esta habilidad si estás en tu región vinculada.
 
 <u>Paso terrestre:</u> Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies.
 

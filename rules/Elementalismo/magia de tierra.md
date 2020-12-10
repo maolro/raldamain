@@ -16,7 +16,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 ## Rango II
 
-<u>Muro de piedra:</u> Como acción estándar, crea un muro de piedra con longitud de 10xR pies y al turno de 5xR pies. Ese muro te da cubierta completa contra ataques, y cada porción de 5 pies tiene 4 defensa y 3x2 vida. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
+<u>Muro de piedra:</u> Como acción estándar, crea un muro de piedra con longitud de 15xR pies de largo de 5xR pies. Ese muro te da cubierta completa contra ataques, y cada porción de 5 pies tiene 4 defensa y 6 PV. El muro permanecerá hasta que pierdas la concentración. Si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de piedra puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
 <u>Control terrestre:</u> Manipular la propia tiene bajo tus pies. Como acción estándar, manipula un total de 5xR pies cúbicos de tierra, moldeándola como tú  deseas. Con esta habilidad puedes formar terreno difícil, barreras, elevaciones o agujeros.
 
