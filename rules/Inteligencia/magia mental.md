@@ -8,7 +8,7 @@ sub: Magia arcana
 
 Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva aumenta por 2+Rango chi. 
 
-<u>Asalto psíquico:</u>  Como acción estándar haz un ataque a la mente de un objetivo. Este ataque hace 1+Éxito daño Psíquico y puedes gastar 2 Ventajas para Desorientar al objetivo, y 4 Ventajas para Aturdirlo. Si reduces la cordura del objetivo a 0 con este ataque él caerá inconsciente. Una vez al turno puedes gastar 1 chi al impactar con tu ataque para reducir una estadística mental del objetivo por 1 hasta que él tome un descanso largo.
+<u>Asalto psíquico:</u>  Como acción estándar haz un ataque a la mente de un objetivo. Este ataque hace 1+Éxito daño Psíquico y puedes gastar 2 Ventajas para Desorientar al objetivo, y 4 Ventajas para Aturdirlo. Si reduces la cordura del objetivo a 0 con este ataque él caerá inconsciente. Una vez al turno puedes gastar 1 chi al impactar con tu ataque para reducir una estadística mental del objetivo por 1 hasta que este tome un descanso largo.
 
 <u>Detectar pensamientos:</u> Tienes la capacidad de percibir los pensamientos de las criaturas, conociendo información de ellas para obtener ventajas tácticas y sociales. Activar Detectar pensamientos es una acción bonus que consume 1 chi y mantener este efecto requiere tu concentración. Con esta habilidad detectas todas las mentes pensantes en el área de 60 pies, percibiendo sus pensamientos superficiales y conociendo información básica sobre ellas. Puedes emplear una acción estándar para penetrar en la mente de un objetivo que detectes y conocer información valiosa sobre ella. Para ello debes hacer un tiro de Magia mental contra la SAB del objetivo, descubriendo un secreto sobre ella escogido por el máster si tienes éxito (el número de éxitos que consigues determina la importancia del secreto). Las ventajas obtenidas en ese tiro pueden gastarse para que recibir dados de Ventaja o Desventaja en el siguiente tiro que realices que involucre al objetivo cuya mente hayas leído.
 
@@ -23,15 +23,15 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva au
 - **Ira:** La criatura entra inmediatamente en Ira aunque no posea esa habilidad. La Ira aumenta la FUE y la CON de la criatura por 1 pero no puede Esquivar y siempre debe atacar a la criatura más cercana. La ira cancela y es cancelada por el sueño.
 - **Sueño:** La criatura empieza a sentirse adormecida, recibiendo el efecto de estado Fatigada. Si no está realizando ningún esfuerzo físico, entonces se dormirá al momento. El sueño cancela y es cancelado por la ira.
 
-<u>Sugestión:</u> Puedes utilizar tus dados de Magia mental para tiros de Influenciar y Presencia interactuando con criaturas cuyos pensamientos puedas detectar. 
+<u>Sugestión:</u> Puedes utilizar tus dados de Magia mental para tiros de Influenciar y Presencia interactuando con criaturas cuyos pensamientos puedas detectar. Como acción estándar puedes emplear 1 chi para volver a la criatura susceptible a tus órdenes, tirando Magia mental contra su SAB. Si tienes éxito, puedes mejorar su actitud hacia ti por un paso o pedirle que cumpla un favor simple por ti que no requiera gran sacrificio personal. 
 
-<u>Sanador mental:</u> Conoces como sanar las heridas mentales causadas por otros magos de la mente. Como acción estándar que consume 1 chi puedes eliminar un efecto mental de rango igual o menor al tuyo que afecte a una criatura de tu elección. En un descanso corto esta habilidad puede usarse para sanar la mente de una criatura, gastando 1 chi para para incrementar una estadística mental que haya sido reducida por 1 o sanándole puntos de cordura iguales a tu Rango. Sanador mental sólo puede usarse en la misma criatura un número de veces al día igual a tu Rango - 1.
+<u>Sanador mental:</u> Conoces como sanar las heridas mentales causadas por otros magos de la mente. Como acción estándar que consume 1 chi puedes eliminar un efecto mental de rango igual o menor al tuyo que afecte a una criatura de tu elección. En un descanso corto esta habilidad puede usarse para sanar la mente de una criatura, lo cual te permite gastar 1 chi para incrementar una estadística mental que haya sido reducida por 1 o sanándole puntos de cordura iguales a tu Rango. Sanador mental sólo puede usarse en la misma criatura un número de veces al día igual a tu Rango - 1.
 
 ## Rango III
 
-<u>Sobrecarga mental:</u>
+<u>Sobrecarga mental:</u> Tus ataques mentales sobrecargan la mente de tu objetivo, causando que realice acciones irracionales. Al herir a una criatura con Asalto psíquico puedes gastar 2 Ventajas generadas para que reciba el efecto de estado Confundida. Puedes además causar heridas permanentes con Asalto psíquico, provocando una Herida permanente leve gastando 2 Ventajas y una media gastando 4. Las heridas permanentes aumentan su nivel por 1 al llegar a Rango V.
 
-<u>Telepatía:</u> Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. 
+<u>Telepatía:</u> Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. Además, detectas la posición exacta de todas las criaturas en ese área que no tengan la habilidad Mente custodiada. Tus ataques mentales no requieren gesticulación y puedes usarlos siempre que tu mente esté consciente 
 
 ## Rango IV
 

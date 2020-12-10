@@ -26,7 +26,7 @@ Añade un dado de Soltura a todos tus tiros de telekinesia. Usar Lanzamiento y E
 
 <u>Almacenar objetos:</u> Cuando atraigas a tu posición un objeto usando tu telekinesia, puedes mantenerlo almacenado en lugar de atacar con él. Puedes tener un número máximo de objetos almacenados igual a tu Rango + 1, y estos harán 1 daño físico a todas las criaturas que empiecen su turno en ella. Añade un dado de Desventaja a tus tiros defensivos por cada objeto que tengas almacenado. Puedes gastar un objeto almacenado para fortalecer un ataque de Lanzamiento, usándolo para que este haga +1 daño base y aumente su tamaño por 5 pies.
 
-<u>Agarre de fuerza:</u> Como acción estándar puedes intentar agarrar a un enemigo usando tu poder telequinético. Si tienes éxito, el objetivo permanecerá Agarrado hasta que escape o pierdas la concentración. Una criatura agarrada de esta manera no puede defenderse de tus ataques de Lanzamiento y Empuje telequinético. Solo puedes tener R-2 criaturas agarradas de esta manera.
+<u>Agarre de fuerza:</u> Como acción estándar puedes intentar agarrar a un enemigo usando tu poder telequinético. Si tienes éxito, el objetivo permanecerá Agarrado hasta que escape o pierdas la concentración. Una criatura agarrada de esta manera no puede defenderse de tus ataques de Lanzamiento y Empuje telequinético. El número máximo de criaturas que puedes agarrar con esta habilidad es igual a tu Rango - 1.
 
 ## Rango IV
 
@@ -41,4 +41,3 @@ Añade un dado de Soltura a todos tus tiros de telekinesia.
 <u>Tormenta telequinética:</u> Como acción de turno completo puedes lanzar todos tus objetos almacenados, liberando una feroz tormenta telequinética. Con esta habilidad puedes hacer un ataque de área de tamaño igual a 10 x el número de objetos almacenados. Los objetos almacenados aumentarán su daño base por 1 y el tamaño por 5 pies. 
 
 <u>Compresión:</u> Puedes emplear una acción estándar para ejercer una gran fuerza en un objeto que tengas agarrado, causándole graves daños internos. Si el objeto tiene tamaño menor a 5 pies se romperá al instante, mientras que si su tamaño es más grande debes gastar una acción de movimiento adicional por cada 5 pies de tamaño que tenga para destruirlo. Puedes afectar a seres vivos que tengas agarrados con esta habilidad, lo cual te permite hacer un tiro de ataque telequinético contra su CON. Esta habilidad hace 3+Éxito daño que ignora todas las defensas y puedes gastar 2 Ventajas para infligir una Herida permanente media (4 Ventajas para infligirle una Herida permanente grave).
-
