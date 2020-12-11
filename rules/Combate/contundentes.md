@@ -1,5 +1,7 @@
 ---
-title: 
+title: Contundentes
+main: Rangos
+sub: Armas
 ---
 
 ## Rango I
@@ -12,7 +14,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 ## Rango II
 
-<u>Concusión:</u> Al impactar con un ataque gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque ( 4 ventajas para que esté aturdido durante un turno). Una criatura afectada por concusión no puede moverse gastando ventajas.
+<u>Concusión:</u> Al impactar con un ataque gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque y 4 ventajas para que esté aturdido durante un turno. Una criatura afectada por concusión no puede moverse gastando ventajas.
 
 <u>Maza oscilante:</u> emplea una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o atacar escuadrones. Este ataque se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
 

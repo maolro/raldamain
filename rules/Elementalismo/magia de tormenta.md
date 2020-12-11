@@ -24,7 +24,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 Añade un dado de soltura a todos tus ataques elementales.
 
-<u>Voltio cruel:</u> Al impactar con un ataque elemental, gasta tus ventajas para provocar espasmos en los músculos de los objetivos. Esta habilidad funciona como la habilidad Espasmos de magia de sangre.
+<u>Voltio cruel:</u> Al impactar con un ataque elemental, gasta tus ventajas para provocar espasmos en los músculos del objetivo. Esta habilidad funciona como la habilidad Espasmos de magia de sangre.
 
 <u>Onda destructora:</u> Puedes contener la energía del trueno para liberarla después en una destructiva onda, Cuando liberes la energía, funciona como un ataque de onda trueno que aumenta su radio por 5 pies y el daño por 1 por cada ataque cargado. Si contiene 3 o mas cargas, la onda destruye estructuras frágiles en el área (estructuras solidas si acumulas 5 cargas o mas).
 
