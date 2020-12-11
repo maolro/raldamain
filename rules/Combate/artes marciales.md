@@ -10,7 +10,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Secuencia de ataques:</u> gasta una acción de movimiento para hacer un ataque sin arma adicional. Puedes sustituir uno de estos ataques recibidos por esta habilidad para hacer un tiro de desarmar, tropezar, robar o juego sucio. El máximo de ataques que puedes hacer al turno es 1+R.
 
-<u>Defensa marcial:</u> Puedes usar una parada como reacción, tirando tus dados de ataque natural defensivamente. Gasta 2 ventajas generadas para hacer un ataque natural como reacción (funciona como secuencia de ataques). Si intentas usar defensa marcial contra un enemigo con un arma, este puede gastar ventajas para hacerte heridas permanentes aunque falle el tiro. Una vel al turno cancela un éxito enemigo (2/turno a rango III y 3/turno a rango V).
+<u>Defensa marcial:</u> Puedes usar una parada como reacción, tirando tus dados de ataque natural defensivamente. Gasta 2 ventajas generadas para hacer un ataque natural como reacción (funciona como secuencia de ataques). Si intentas usar defensa marcial contra un enemigo con un arma, este puede gastar ventajas para hacerte [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) aunque falle el tiro. Una vel al turno cancela un éxito enemigo (2/turno a rango III y 3/turno a rango V).
 
 ## Rango II
 

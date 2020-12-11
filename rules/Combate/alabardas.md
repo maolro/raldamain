@@ -10,7 +10,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Preparación contra cargas</u>: Gasta una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual inflinges +2 daño. Si impactas , el objetivo debe detenerse de inmediato.
 
-<u>Parada</u>: Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante ( 2/turno a rango III y 3/turno a rango V).
+<u>Parada</u>: Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante (2/turno a rango III y 3/turno a rango V).
 
 ## Rango II
 
@@ -20,7 +20,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 ## Rango III 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una [herida permanente leve](http://raldamain.com/rules/Heridas%20permanentes.html) (4 ventajas para infligir una herida permanente media).
 
 <u>Flanqueador experto:</u> Tu arma hace +2 daño base contra objetivos que flanquees. Flanqueas a cualquier criatura que esté en tu radio de alcance y que esté adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
 

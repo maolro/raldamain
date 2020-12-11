@@ -20,7 +20,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 ## Rango III 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una [herida permanente leve](http://raldamain.com/rules/Heridas%20permanentes.html) (4 ventajas para infligir una herida permanente media).
 
 <u>Agarre con cadena:</u> Agarrar objetivos enredados por tus cadenas te cuesta una acción de movimiento o 2 ventajas. Puedes mover hasta 10 pies en cualquier dirección a una criatura agarrada o estamparla forzosamente contra una superficie, lo cual es un tiro de Heroísmo con el cual haces 1+éxitos daño contundente. Usar cualquiera de estas habilidades te cuesta una acción de movimiento.
 
