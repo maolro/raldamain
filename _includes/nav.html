@@ -8,7 +8,7 @@
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
         {% for item in site.data.menus.header  %}
 			{% for page in site.pages %}
-		    {% if page.category == item.category and page.layout == "index" %}
+		    {% if page.category == item.category and (page.layout == "index" or page.layout == "ruleindex") %}
   	        <li class="nav-item" >
 			<a class="nav-link" href="{{page.url}}">
 			  {{ item.title }}
