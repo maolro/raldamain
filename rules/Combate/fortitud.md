@@ -18,7 +18,7 @@ Tira un dado de desafío adicional en tiros defensivos de CON.
 
 <u>Resistir la muerte:</u> Una vez por combate cuando un ataque te reduzca a PV negativos o te ocasione Muerte instantánea, como reacción revives a 1 PV. Esta habilidad no puede usarse contra golpe de gracia o si estas a 0 vitalidad.
 
-<u>Constitución férrea:</u> Obtienes resistencia contra venenos, enfermedades y gases tóxicos igual a tu CON - 2. Constitución férrea también funciona contra venenos y enfermedades sobrenaturales.
+<u>Constitución férrea:</u> Obtienes resistencia contra [venenos](venenos_enfermedades.md#Venenos), enfermedades y gases tóxicos igual a tu CON - 2. Constitución férrea también funciona contra venenos y enfermedades sobrenaturales.
 
 ## Rango III
 
