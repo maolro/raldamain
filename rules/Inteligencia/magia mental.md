@@ -31,11 +31,11 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva au
 
 <u>Sobrecarga mental:</u> Tus ataques mentales sobrecargan la mente de tu objetivo, causando que realice acciones irracionales. Al herir a una criatura con Asalto psíquico puedes gastar 2 Ventajas generadas para que reciba el efecto de estado Confundida. Puedes además causar heridas permanentes con Asalto psíquico, provocando una Herida permanente leve gastando 2 Ventajas y una media gastando 4. Las heridas permanentes aumentan su nivel por 1 al llegar a Rango V.
 
-<u>Telepatía:</u> Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. Además, detectas la posición exacta de todas las criaturas en ese área que no tengan la habilidad Mente custodiada. Tus ataques mentales no requieren gesticulación y puedes usarlos siempre que tu mente esté consciente 
+<u>Telepatía:</u> Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. Además, detectas la posición exacta de todas las criaturas en ese área que no tengan la habilidad Mente custodiada. Tus ataques mentales no requieren gesticulación y puedes usarlos siempre que tu mente esté consciente.
 
 ## Rango IV
 
-<u>Geas:</u>
+<u>Geas:</u>  
 
 <u>Aura emocional:</u>
 
