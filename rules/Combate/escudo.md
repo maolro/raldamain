@@ -40,8 +40,6 @@ Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cance
 
 <u>Detener hechizos:</u> El escudo puede proteger a aliados de ataques mágicos. Al usar escudo para bloquear un ataque mágico, si tienes éxito en el tiro defensivo cancelas el ataque de inmediato, haciendo así que  ninguna persona en el área de barrera movil sufra daño obligatorio de área. Tampoco tú sufres daño obligatorio de ataques de área al bloquear exitosamente con tu escudo.
 
-
-
 ### Escudos
 
 - **Ligero** +1 morado.

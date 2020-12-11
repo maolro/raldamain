@@ -6,7 +6,7 @@ sub: Armas
 
 ## Rango I
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una [herida permanente](http://raldamain.com/rules/Heridas%20permanentes.html) leve (4 ventajas para infligir una herida permanente media).
 
 <u>Puntería mortal:</u> Tus ataques ignoran la armadura de enemigos como si fueran de toque si tu objetivo está a una distancia menor de 30 pies (15 pies si es un arma de una mano). Puedes tomar una penalización de un dado de dificultad en el tiro para usar esta habilidad contra un enemigo a una distancia superior a la indicada (añade un dado de dificultad adicional por cada incremento de 30 pies de distancia que te separe de tu objetivo).
 

@@ -14,7 +14,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 ## Rango II
 
-<u>Gran corte:</u> emplea una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o atacar escuadrones(en el caso de escuadrones multiplica tu ataque por tres y la defensa del escuadrón por tres). Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
+<u>Gran corte:</u> emplea una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o al atacar a marabuntas, pero no hará daño obligatorio. Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
 
 <u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero inflinges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño adicionales.
 
@@ -28,17 +28,17 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 ## Rango IV
 
-<u>Torbellino de acero:</u> usar corte te cuesta una acción estándar y atacas a todas las criaturas en un radio de 5 pies centrado en ti. Al atacar a escuadrones, si haces daño con tu ataque que sea suficiente para matar a una criatura del escuadrón, matas automáticamente a todas las criaturas del escuadrón en tu área. tu ataque sigue deteniéndose si impacta con un escudo.
+<u>Torbellino de acero:</u> Usar Gran corte te cuesta una acción estándar. Puedes emplear una acción de movimiento al hacer Gran corte para atacar a todas las criaturas que estén adyacentes a ti. Usar Gran corte de esta manera cuenta como un ataque de área y hará daño a las criaturas que permanezcan adyacentes a ti aunque tengan éxito en la defensa. Esta habilidad aún puede ser detenida por Escudo.
 
-<u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres morados debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
+<u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres dados de Dificultad debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
 
 ## Rango V
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Cortes en secuencia:</u> puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque.
+<u>Cortes en secuencia</u>: Puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque.
 
-<u>Tajo cercenador:</u> al impactar a un enemigo con un ataque poderoso, gasta un número de ventajas igual a 1+la defensa de la armadura del objetivo para cortarle un brazo. Las reducciones a la armadura a causa de impacto destructor se aplican para determinar el coste de ventajas.
+<u>Tajo cercenador:</u> Al impactar a un enemigo con un Ataque poderoso, gasta un número de ventajas igual a 1+la DEF de la armadura del objetivo para cortarle un brazo. Las reducciones a la armadura a causa de impacto destructor se aplican para determinar el coste de ventajas.
 
 
 

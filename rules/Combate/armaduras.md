@@ -13,12 +13,12 @@ sub: Combate
 
 ## Rango II
 
-<u>Blindaje:</u> Los ataques contundentes  sólo pueden hacerte hacerte heridas permanentes si te llegan a influir daño. Tienes  resistencia igual a tu rango contra aturdimiento y ralentizar provocado por ataques no mágicos
+<u>Blindaje:</u> Los ataques contundentes  sólo pueden hacerte hacerte heridas permanentes si te llegan a influir daño. Tienes  resistencia igual a tu rango contra aturdimiento y ralentizar provocado por ataques no mágicos.
 
-<u>Protección elemental:</u> dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado. Obtienes resistencia igual a tu Rango la armadura contra el elemento de tu elección y los efectos de estados producidos por él (toque gélido si eliges hielo, calentar armaduras si eliges fuego, etc.). Esto se acumula con otras resistencias que poseas.
+<u>Protección elemental:</u> Dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado. Obtienes resistencia igual a tu Rango la armadura contra el elemento de tu elección y los efectos de estados producidos por él (toque gélido si eliges hielo, calentar armaduras si eliges fuego, etc.). Esto se acumula con otras resistencias que poseas.
 
 ## Rango III
 
-<u>Armadura infundida:</u> tu armadura actúa como extensión de tu cuerpo y se  infunde de tu poder mágico. La armadura incrementa tu Resistencia Mágica por 3 si tienes una Plantilla o rangos en una magia. Si no tienes ninguno de esos rangos entonces debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, la cual te otorga Resistencia Mágica igual a  su Defensa base + 3.
+<u>Armadura infundida:</u> Tu armadura actúa como extensión de tu cuerpo y se  infunde de tu poder mágico. La armadura incrementa tu Resistencia Mágica por 3 si tienes una Plantilla o rangos en una magia. Si no tienes ninguno de esos rangos entonces debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, la cual te otorga Resistencia Mágica igual a  su Defensa base + 3.
 
-<u>Campeón de acero:</u> la armadura te protege hasta de ataques mortales. Una vez al turno, reduce el nivel de una herida permanente que sufras por 1. Los ataques de muerte instantánea como maestro cazador o impacto vital solo te provocan una herida permanente grave (no puedes volver a reducirlo)
+<u>Campeón de acero:</u> La armadura te protege hasta de ataques mortales. Una vez al turno, reduce el nivel de una [herida permanente](http://raldamain.com/rules/Heridas%20permanentes.html) que sufras por 1. Los ataques de muerte instantánea como maestro cazador o impacto vital solo te provocan una herida permanente grave (no puedes volver a reducirlo)
