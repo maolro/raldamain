@@ -1,6 +1,7 @@
 ---
 title: Arcos
-main: Armas
+main: Rangos
+sub: Armas
 ---
 
 ## Rango I 
