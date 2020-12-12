@@ -19,7 +19,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 <u>Truco de bala:</u> Emplea tus ventajas para hacer un truco de combate. Esta habilidad solo se puede usar si impactas al objetivo., y todos los trucos de combate cuestan 2 ventajas: 
 
 - **Disparo falso**: El objetivo es fintado durante un turno, haciendo que no pueda esquivar el siguiente ataque que reciba. Gasta una ventaja adicional para que el atacante reciba un dado de Ventaja en su siguiente tiro.
-- **Disparo atronador:** El disparo provoca un gran estruendo, espantando al objetivo durante un turno. Gata una ventaja adicional para hacer que se mueva 5 pies en una dirección aleatoria (2 para hacer que se lance al suelo).
+- **Disparo atronador:** El disparo provoca un gran estruendo, espantando al objetivo durante un turno. Gasta una ventaja adicional para hacer que se mueva 5 pies en una dirección aleatoria (2 para hacer que se lance al suelo).
 - **Disparo afortunado**: Destruye un objeto pequeño que lleve el objetivo (pociones, armas enfundadas, una bolsa lateral). Si el objeto impactado es una bomba explota en el acto. Gata 2 ventajas adicionales para que suelte un objeto que lleva.
 
 ## Rango III
