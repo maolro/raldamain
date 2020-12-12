@@ -16,13 +16,13 @@ Añade un dado de desafío a tus tiros defensivos para esquivar. Una vez al turn
 
 Cuando un enemigo falle su ataque puedes moverte 5 pies como reacción. Esto no provoca ataques de oportunidad.
 
-<u>Evasión:</u> No sufres daño obligatorio por ataques de área si tienes éxito en el tiro . si obtienes suficiente desventajas en el tiro de defensa para salir del radio del ataque de área, lo esquivas por completo aunque no tengas éxito (cada desventaja gastada te mueve 5 pies).
+<u>Evasión:</u> No sufres daño obligatorio por ataques de área si tienes éxito en el tiro. Si obtienes suficientes desventajas en el tiro de defensa para salir del radio del ataque de área, lo esquivas por completo aunque no tengas éxito (cada desventaja gastada te mueve 5 pies).
 
-<u>Esquiva asombrosa:</u> Reaccionas al peligro antes de que tus sentidos te permitan hacerlo. Puedes usar esquivar contra ataques sorpresa y atacantes invisibles (sigues teniendo +blanco y activa ataque furtivo). esquiva asombrosa no funciona contra fintas y si estas inmovilizado.
+<u>Esquiva asombrosa:</u> Reaccionas al peligro antes de que tus sentidos te permitan hacerlo. Puedes usar esquivar contra ataques sorpresa y atacantes invisibles, aunque estos seguirán tirando un dado de Ventaja y añadirán Ataque furtivo. Esquiva asombrosa no funciona contra fintas.
 
 ## Rango III
 
-Añade un dado de desafío a tus tiros defensivos para esquivar. Puedes cancelar un éxito enemigo una vez adicional al turno.
+Añade un dado de Desafío a tus tiros defensivos para esquivar. Puedes cancelar un éxito enemigo una vez adicional al turno.
 
 <u>Acrobacias</u>: Recibes velocidad de escalada igual a tu velocidad normal. Puedes caminar por superficies estrechas y terreno difícil sin sufrir penalizaciones, además de que puedes esquivar con normalidad con esta.
 
