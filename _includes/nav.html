@@ -6,16 +6,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
-        {% for item in site.data.menus.header  %}
-			{% for page in site.pages %}
-		    {% if page.category == item.category and (page.layout == "index" or page.layout == "ruleindex") %}
+		{% assign indexpages = site.pages | where_exp: "p", "p.menuorder != nil" | sort: "menuorder" %}
+        {% for page in indexpages  %}
   	        <li class="nav-item" >
 			<a class="nav-link" href="{{page.url}}">
-			  {{ item.title }}
+			  {{ page.title }}
 			</a>
   		    </li> 
-			{% endif %}
-        {% endfor %}
         {% endfor %}
       </ul>
     </div>

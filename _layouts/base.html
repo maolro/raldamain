@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html>
 
@@ -32,9 +34,9 @@
 </head>
 
 <body id="page-top" class="{% if page.layout == site.landing_template %}landing {% endif %}">
-  {% include nav.html    section=section site=site page=page %}
+  {% include nav.html %}
   {{ content }}
-  {% include footer.html section=section site=site page=page %}
+  {% include footer.html %}
 
   <!-- Bootstrap core JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

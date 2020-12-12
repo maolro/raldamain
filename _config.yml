@@ -41,6 +41,8 @@ defaults:
 # Build settings
 safe: true # always trues on github-pages, disables _plugins/
 markdown: kramdown
+kramdown:
+  input: GFM
 sass:
   indentWidth: 4
   style: compressed
@@ -48,6 +50,18 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  
+  
 exclude:
   - Gemfile
   - Gemfile.lock
