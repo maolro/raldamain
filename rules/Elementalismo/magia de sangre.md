@@ -24,13 +24,13 @@ Esta habilidad también también puede usarse defensivamente. Si eliges que sufr
 
 <u>Drenar sangre:</u> La sangre de otras personas sana tus heridas. Al hacer un ataque elemental de toque contra una criatura te sanas vitalidad igual al número de éxitos que generes + el número de dados de sangrado que tenga. Si estás al máximo de vitalidad esta habilidad te sana PV, y puedes gastar 4 ventajas generadas para reducir el nivel de uno de tus heridas permanentes por 1. Si tienes magia elemental de agua. Puedes extraer agua para tus ataques elementales de cualquier ser vivo.
 
-## Rango
+## Rango III
 
 Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
 <u>Sentido de sangre:</u> Tienes sentido a ciegas en un área de 60 pies, permitiéndote detectar a todas las criaturas con sangre que haya. Puedes además identificar a todos las criaturas del área cuya sangre hayas analizado con Biografía sanguínea, conociendo su estado físico y condiciones actuales.
 
-<u>Provocar dolor:</u> Al impactar e un objetivo con un ataque elemental, gasta 2 ventajas para provocarle heridas internas. Una criatura aquejada por heridas internas sufre 2 daño no-letal cada vez que realice una acción. El objetivo tira Con al final de su turno para recuperar , eliminando este efecto al tener éxito. Las heridas internas pueden sanarse con un ataque elemental de sangre, Magia de vida u otros atributos relacionando con la sanación. Gasta 2 ventajas generadas con este ataque para generar una herida media (herida grave).
+<u>Provocar dolor:</u> Al impactar e un objetivo con un ataque elemental, gasta 2 ventajas para provocarle heridas internas. Una criatura aquejada por heridas internas sufre 2 daño no-letal cada vez que realice una acción. El objetivo tira CON al final de su turno para recuperar, eliminando este efecto al tener éxito. Las heridas internas pueden sanarse con un ataque elemental de sangre, Magia de vida u otros atributos relacionando con la sanación. Gasta 2 ventajas generadas con este ataque para generar una herida permanente media (herida grave).
 
 ## Rango IV
 
