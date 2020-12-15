@@ -35,7 +35,7 @@ Los PV aumentan por 1 por cada 6 PT empleados para la creación de una criatura 
 
 <u>Tentáculo:</u> La criatura posee un flexible tentáculo en una parte de su cuerpo. Realizar un ataque con tu tentáculo es una acción de movimiento, con alcance 10 pies y que inflige 0+Éxito daño contundente al impactar. También puedes emplear el tentáculo para hacer maniobras de combate como Tropezar, Agarre o Desarme. Puedes emplear 1 PT adicional en esta transformación para recibir otro tentáculo de igual tamaño o para transformar el tentáculo en un manojo de tentáculos más pequeños. Un ataque realizado con un manojo de tentáculos te cuesta una acción estándar, pero hace +1 daño base y al impactar el objetivo está Agarrado automáticamente.
 
-<u>Movimiento adicional:</u> La criatura aumenta sus capacidades atléticas, aumentado su movimiento base por 10 pies o recibiendo una velocidad de 20 pies en Nadar, Escalar o Excavar.  Puedes emplear 1 PT adicional en esta transformación para aumentar una de tus velocidades por 10 pies, llegando como máximo a 80 pies de movimiento.
+<u>Movimiento adicional:</u> La criatura aumenta sus capacidades atléticas, aumentado su movimiento base por 10 pies o recibiendo una velocidad de 20 pies en Nadar, Escalar o Excavar.  Puedes emplear 1 PT adicional  para recibir una habilidad entre Evasión, Esquiva asombrosa, Evasión superior, Reposicionar o Esquiva asombrosa superior. Cada PT adicional gastado aumenta también una de las velocidades de la criatura por 10 pies.
 
 <u>Golpe:</u> La criatura puede hacer poderosos golpes con su cuerpo. Un golpe inflige 1+Éxito daño contundente al impactar, y la criatura añade un dado de Soltura a sus tiros de ataque con él. Puedes emplear 1 PT adicional en esta transformación para conseguir un atributo entre [Puño aturdidor]([Artes marciales - Raldamain](Combate/artes marciales.html#rango-ii)), [Patada feroz](Combate/artes%20marciales.html#rango-ii), [Puño preciso](Combate/artes%20marciales.html#rango-iii), [Golpe devastador](Combate/artes%20marciales.html#rango-iv) y [Secuencia de ataques](Combate/artes%20marciales.html#rango-i).
 
@@ -95,4 +95,34 @@ Los PV aumentan por 1 por cada 6 PT empleados para la creación de una criatura 
 | 1 PT  | Asustado, Fatigado |
 | 2 PT  | Pánico, Confundido |
 | 3 PT  | Paralizado         |
+
+## Ejemplos de criaturas
+
+### Animales
+
+<u>Lobo</u>: (3 PT) Base cuadrúpeda; **FUE** 3, **DES** 1, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 5, **DEF** 1; Depredador, Mordisco
+
+<u>Caballo de guerra</u> (6 PT) Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Arrollar, Golpe
+
+<u>Halcón</u> (3 PT): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 1; Perforar, Movimiento adicional, Visión periférica
+
+### Criaturas mágicas
+
+<u>Quimera:</u> (18 PT) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** 0, **SAB** 2, **CAR** 0; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Aliento, Mordisco (boca adicional), Veneno, Garras, Alas, Cola, Armadura natural
+
+<u>Pegaso</u> (9 PT) Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Arrollar, Golpe, Alas, Movimiento adicional
+
+<u>Osobúho</u> (9 PT) Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Perforar, Garras, Armadura natural, Arrollar, Depredador
+
+### Abisales
+
+
+
+### Infernales
+
+
+
+### Celestiales
+
+
 

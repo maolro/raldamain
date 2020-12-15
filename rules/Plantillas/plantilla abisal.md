@@ -10,7 +10,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Furia del abismo:</u> Como acción bonus puedes entrar en un estado de furia sobrenatural con el cual recibes gran poder al precio de tu cordura. En este estado aumenta una de tus estadísticas por 1. Esta bonificación se acumula con ira y puedes activar esta habilidad cuando estés en ella. Cada turno que mantengas este efecto te sanas 1 vitalidad y pierdes 1 de cordura, y debes atacar al objetivo mas cercano. No puedes abandonar este estado cuando tu cordura llegue a 0 salvo que caigas inconsciente.
 
-<u>Tocado por la locura:</u> Recibes una locura permanente de la cual no te puedes recuperar mientras tengas rangos de plantilla abisal. Desbloqueas la rama de conocimiento prohibido y recibes resistencia a efectos mentales y necrótico igual a tu rango.
+<u>Tocado por la locura:</u> Recibes una locura permanente de la cual no te puedes recuperar mientras tengas rangos de plantilla abisal. Desbloqueas las ramas de nigromancia y magia mental, para las cuales puedes usar tu estadística de CAR. Tienes además resistencia a efectos mentales y necrótico igual a tu rango.
 
 ## Rango II
 
