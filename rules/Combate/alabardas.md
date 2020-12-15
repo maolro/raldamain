@@ -4,6 +4,8 @@ main: Rangos
 sub: Armas
 ---
 
+# Rangos
+
 ## Rango I 
 
 Tiras un dado de soltura adicional en tiros de ataque.
@@ -41,4 +43,6 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 <u>Ataque vital:</u> Las heridas permanentes que provocas con preparación contra lanzas son de un nivel superior. Gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo.
 
 <u>Reposicionar:</u> Recibes la habilidad reposicionar de aptitud con filos ligeros como si la tuvieses a rango tres (es decir, puedes moverte 5 pies como reacción tras una parada exitosa).
+
+# Armas
 
