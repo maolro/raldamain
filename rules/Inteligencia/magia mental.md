@@ -35,18 +35,22 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva au
 
 ## Rango IV
 
-<u>Geas:</u>  
+<u>Geas:</u> Como acción estándar puedes dar una orden mental a una criatura que deberá cumplir sin reparos. Tu objetivo podrá resistir con su SAB, pero si fracasa deberá obedecer la orden que le pidas. Utilizar Geas consume 2 chi y no podrás usar esta habilidad para hacer que tu objetivo realice acciones dañinas hacia sí mismo o sus seres queridos. Esta restricción puede traspasarse si tu objetivo está confundido o su cordura ha sido reducida a 0, lo cual te permite ordenar hasta el suicidio.  
 
-<u>Aura emocional:</u>
+<u>Aura emocional:</u> Al usar un hechizo mental puedes gastar 1 chi adicional para que este afecte a todas las criaturas en un área de 40 pies centrado en ti. El hechizo escogido durará mientras mantengas la concentración y no puedes usar más de un hechizo con Aura emocional. No puedes usar Aura emocional en hechizos que requieran concentración continua como Sanador mental o Alterar memorias.
 
 ## Rango V 
 
-<u>Alterar memorias:</u>
+Añade un dado de soltura a tus tiros de magia mental.
 
-<u>Mente en blanco:</u>
+<u>Alterar memorias:</u> Eres capaz de explorar y alterar los recuerdos de las personas, permitiéndote manipular hasta su propia identidad. Como acción estándar que consume 1 chi puedes manipular hasta diez minutos de recuerdos que tenga un objetivo cuya mente puedas detectar. Esta habilidad te permite hacer que tu objetivo olvide lo que tú desees o reciba varios recuerdos implantados de tu elección. Si los recuerdos implantados son demasiado inverosímiles o contradicen recuerdos anteriores tu objetivo los tratará como si fuesen un sueño. Si afectas a un objetivo con 0 cordura puedes llegar a alterar los recuerdos de cualquier momento de su vida, lo cual te permite darle la locura Amnesia. Puedes afectar a la misma persona con Alterar memoria todas las veces que desees.
+
+<u>Orden implantada:</u> Tus hechizos mentales pueden permanecer latentes en la mente de tu objetivo, preparados para activarse cuando ocurra un evento de tu elección. De esta manera, al tener éxito en un ataque mental puedes hacer que este sea indetectable y se activará en un momento posterior. Las órdenes implantadas pueden detectarse y eliminarse con la habilidad Sanador mental, pero para ello el sanador deberá tener éxito en un tiro de magia mental contra el tuyo. No puedes afectar a la misma persona con más de una orden implantada.
+
+<u>Mente en blanco:</u> Tu mente está protegida contra toda clase de interferencias mentales. Tienes inmunidad a efectos mentales y resistencia a daño Psíquico igual a tu Rango. Además, no puedes ser detectado por Telepatía y notas cuando alguien intente usar cualquier efecto mental en ti. Mente en blanco se puede anular con Eliminar magia y pierdes automáticamente esta habilidad si tu cordura queda reducida a 0.
 
 ## Rango VI
 
-<u>Esclavizar:</u>
+<u>Esclavizar:</u> Como acción estándar que consume 3 chi puedes doblegar la mente de una persona a tu voluntad, convirtiéndolo en un siervo fiel. Si tienes éxito en este tiro tu objetivo debe obedecer todas las órdenes que le des sin cuestionarlas, esforzándose al máximo para cumplirlas. Esclavizar permanece activo siempre que tu objetivo permanezca en contacto visual contigo y se desvanece al cabo de una hora. Al afectar a una persona con 0 cordura esta habilidad durará hasta que tu objetivo recupere cordura o sea eliminada. No puedes tener más de una persona esclavizada a la vez (las personas con 0 cordura no cuentan para este límite).
 
-<u>Destrozar mente:</u> 
+<u>Destrozar mente:</u> Al herir a una criatura con daño psíquico cuya cordura haya sido reducida a 0 puedes acabar permanentemente sus capacidades mentales, reduciendo su inteligencia y carisma a la de un animal (-1). Perderá de esta manera todos sus rangos de inteligencia, carisma, elementalismo y magia arcana. Destrozar mente requiere un mes entero de sanación mental para eliminar, lo cual permitirá a la criatura afectada recuperar sus rangos. No necesitas gastar chi para usar efectos mentales en una criatura afectada por Destrozar mente.
