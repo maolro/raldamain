@@ -16,15 +16,15 @@ Obtienes Resistencia 1 a daño físico.
 
  Incrementa tu DES por 1.
 
-<u>Crear oscuridad:</u> Como acción estándar, apaga todas las luces en un área de 60 pies. Si el área ya está a oscuras, lo llenas de una nube de oscuridad mágica. Todos tus ataques cuentan como ataque sorpresa contra criaturas incapaces de ver en la oscuridad. Esta habilidad puede usarse un número de veces igual a tu rango +1(3 a rango II)
+<u>Crear oscuridad:</u> Como acción estándar, apaga todas las luces en un área de 60 pies. Si el área ya está a oscuras, lo llenas de una nube de oscuridad mágica. Todos tus ataques cuentan como ataque sorpresa contra criaturas incapaces de ver en la oscuridad. Esta habilidad puede usarse un número de veces igual a tu rango +1 (3 veces a rango II).
 
-<u>Aliado sombrío:</u> Puedes tener una Sombra como familiar. Esa Sombra no puede manifestarse si hay luz brillante y no puede estar a una distancia de ti mayor de 60 pies. La sombra tiene las mismas estadísticas de un Espectro (ver Médium).
+<u>Aliado sombrío:</u> Puedes tener una Sombra como tu familiar. Esa Sombra no puede manifestarse si hay luz brillante y no puede estar a una distancia de ti mayor de 60 pies. La sombra tiene las mismas estadísticas de un Espectro (ver Médium) y mejorará como este.
 
 ## Rango III
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Forma sombría:</u> Como acción estándar te transformas  en una sombra viviente. En esta forma sombría eres incorpóreo y puedes volverte invisible si estas en un lugar a oscuras como acción bonus, pero no puedes atacar ni lanzar hechizos. Volver a tu forma normal es una acción bonus. Esta habilidad puede usarse un número de veces igual a tu rango (3 a rango III). 
+<u>Forma sombría:</u> Como acción estándar puedes transformarte en una sombra viviente. En esta forma sombría eres incorpóreo y puedes volverte invisible si estas en un lugar a oscuras como acción bonus, pero no podrás atacar ni lanzar hechizos. Volver a tu forma normal es una acción bonus. Esta habilidad puede usarse un número de veces igual a tu rango (3 veces a rango III). 
 
 <u>Salto sombrío:</u> Como acción de movimiento, telepórtate a un lugar a 60 pies de ti que esté a oscuras. Esta habilidad sólo puede usarse si estas en un lugar a oscuras. También puedes usar salto sombrío gastando 2 ventajas o desventajas generadas
 
@@ -40,7 +40,7 @@ Incrementa tu CAR por 1.
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
-<u>Invocación sombría:</u> Como acción de turno completo invoca una criatura del plano de las sombras. La criatura que invoques no debe tener más de 9 PT y recibe la plantilla Sombría a Rango I.
+<u>Invocación sombría:</u> Como acción de turno completo invoca una criatura del plano de las sombras, la cual seguirá tus órdenes lealmente. La criatura que invoques no puede tener más de 9 PT y recibirá la plantilla Sombría a Rango I. Esta habilidad puede usarse un número de veces al día igual a tu Rango - 2. A rango VI la criatura puede tener hasta 12 PT.
 
 <u>Luces y sombras:</u> Un número de veces al día igual a tu Rango de Plantilla Sombría puedes infundir una ilusión con magia sombría como acción bonus. Las ilusiones sombrías no necesitan tu concentración para mantenerlas y no se desvanecen al interactuar con ellas. Si infundes una criatura ilusoria, esta se transformará en un monstruo sombrío con como máximo 12 PT. Las criaturas con Plantilla Sombría son inmunes a los efectos causados por ilusiones sombrías. 
 
@@ -48,6 +48,6 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 Incrementa tu INT por 1.
 
-<u>Sombra viviente:</u> tu cuerpo es naturalmente incorpóreo, eres inmune a daño físico y puedes pasar a través de paredes. Como acción estándar puedes poseer una criatura viva o muerta de tu elección. Si está viva debe tirar sabiduría contra tu carisma para resistir este efecto. Puedes ser expulsado de un cuerpo que posees con exorcizar(ver espiritualismo)
+<u>Sombra viviente:</u> Tu cuerpo es naturalmente incorpóreo. Eres inmune a daño físico y puedes pasar a través de paredes. Como acción estándar puedes poseer una criatura viva o muerta de tu elección, la cual debe tirar sabiduría contra tu carisma para resistir este efecto (las criaturas muertas no tiran contra este efecto). Puedes ser expulsado de un cuerpo que posees con la habilidad Exorcizar (ver espiritualismo)
 
-<u>Viaje sombrío:</u> como acción de turno completo, abre un portal a la dimensión de las sombras. todas las criaturas de tu elección que estén a 20 pies deben tirar destreza contra 3 rojos y 3 morados o son arrastrados al interior del portal (1desventaja: el objetivo sufre 1 daño necrótico, 2 desventajas: el objetivo está espantado. si ya está espantado aumenta su nivel de miedo por 1). El portal permanece abierto mientras te concentres en él, y en cualquier momento puedes gastar una acción estándar para usar invocación sombría. 
+<u>Viaje sombrío:</u> como acción de turno completo, abre un portal a la dimensión de las sombras. todas las criaturas de tu elección que estén a 20 pies deben tirar destreza contra un tiro de dificultad igual a tu carisma con tres dados de dificultad o son arrastrados al interior del portal(1desventaja: el objetivo sufre 1 daño necrótico, 2 desventajas: el objetivo está espantado. si ya está espantado aumenta su nivel de miedo por 1). El portal permanece abierto mientras te concentres en él, y en cualquier momento puedes gastar una acción estándar para usar invocación sombría. 
