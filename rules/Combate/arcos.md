@@ -4,11 +4,13 @@ main: Rangos
 sub: Armas
 ---
 
+# Rangos
+
 ## Rango I 
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Puntería mortal:</u> Tus ataques ignoran la armadura de enemigos como si fueran de toque si tu objetivo está a una distancia menor de 30 pies (15 pies si es un arma a una mano). Puedes tomar una penalización de un dado de dificultad en el tiro para usar esta habilidad contra un enemigo a una distancia superior a la indicada (añade un dado de dificultad adicional por cada incremento de 30 pies de distancia que te separe de tu objetivo).
+<u>Puntería mortal:</u> Tus ataques ignoran la armadura de enemigos como si fueran de toque si tu objetivo está a una distancia menor del alcance mínimo de tu arma. Puedes tomar una penalización de un dado de Dificultad en el tiro para usar esta habilidad contra un enemigo a una distancia superior a la indicada (añade un dado de dificultad adicional por cada incremento de 15 pies de distancia que te separe de tu objetivo).
 
 <u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o si tu objetivo no puede moverse. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo dado de dificultad como penalización (añade dos dados de dificultad si escoges la Cabeza) a cambio de infligir una herida permanente leve en esa parte del cuerpo al impactar con tu ataque. A rango III inflinges una herida media y a rango V una herida grave. Si generas ventajas en un ataque furtivo y estás apuntando a una parte específica del cuerpo del objetivo puedes gastar 4 ventajas para incrementar el nivel de la herida permanente por 1.
 
@@ -44,3 +46,11 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Si gastas una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica en su tiro defensivo
 
+# Armas
+
+| Arma           | Daño base | Alcance       | Fuerza necesaria | Reglas especiales                                            |
+| -------------- | --------- | ------------- | ---------------- | ------------------------------------------------------------ |
+| Arco corto     | 2         | 15 - 60 pies  | 1                |                                                              |
+| Arco largo     | 3         | 20 - 100 pies | 2                |                                                              |
+| Arco recurvado | 3         | 25 - 110 pies | 2                |                                                              |
+| Arco compuesto | 3         | 20-100 pies   | 3                | El daño de un arco compuesto aumenta según tu FUE como si fuese un arma cuerpo a cuerpo. |
