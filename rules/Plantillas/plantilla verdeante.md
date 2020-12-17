@@ -8,7 +8,7 @@ sub: Plantillas
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Piel robliza:</u>
+<u>Piel robliza:</u> 
 
 <u>Toque de vida:</u>
 
