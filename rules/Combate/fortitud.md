@@ -10,7 +10,7 @@ Tira un dado de desafío adicional en tiros defensivos de CON.
 
 <u>Vitalidad mejorada:</u> Aumenta tus PV base por 1. Vuelves a aumentar tus PV por 1 cada vez cada 3 niveles. Sigues consciente aunque estés a 0 PV, cayendo inconsciente sólo cuando tu vitalidad y PV lleguen a 0. Cada vez que realices una acción estando a 0 PV sufres 1 daño no-letal.
 
-<u>Armadura natural:</u> Tu cuerpo es capaz de resistir ataques de armas. Obtienes armadura natural igual a tu CON-2. La armadura natural natural te protege del daño de armas, pero no heridas permanentes. Si tu CON es reducida tu armadura natural tambiénl lo estará. La armadura natural también reduce el daño frío, fuego y necrótico.
+<u>Armadura natural:</u> Tu cuerpo es capaz de resistir ataques de armas. Obtienes armadura natural igual a tu CON-2. La armadura natural natural te protege del daño de armas, pero no heridas permanentes. Si tu CON es reducida tu armadura natural también lo estará. La armadura natural también reduce el daño frío, fuego y necrótico.
 
 ## Rango II
 

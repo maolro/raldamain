@@ -6,7 +6,7 @@ sub: Combate
 
 ## Rango I
 
-<u>Ira:</u> Como acción bonus, entra en un estado de ira. La ira aumenta tu fuerza y tu constitución por 1, y te da resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que estés en ira te hace 1 daño no-letal, y al estar en ira no puedes usar habilidades que requieran paciencia y concentración (es decir, debes atacar cada turno). Ira no puede usarse mientras estás fatigado. Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente.
+<u>Ira:</u> Como acción bonus, entra en un estado de ira. La ira aumenta tu fuerza y tu constitución por 1 y te da resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que estés en ira te hace 1 daño no-letal, y al estar en ira no puedes usar habilidades que requieran paciencia y concentración (es decir, debes atacar cada turno). Ira no puede usarse mientras estás fatigado. Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente.
 
 <u>Movimiento ágil:</u> Mientras estás en Ira te mueves con agilidad sobrenatural. Tu velocidad base aumenta por 10 y puedes tirar defensivamente en ataques sorpresa (pero el atacante sigue recibiendo un dado azul y se sigue aplicando ataque furtivo). Tu velocidad vuelve a aumentar 5 pies a rango III. Si tienes otros tipos de movimiento que dependan de tu velocidad base (nadar, volar...) aumentaran también.
 
@@ -38,12 +38,15 @@ Si tienes una plantilla de cualquier tipo puedes usar ira para canalizar el pode
 
 ## Rango I
 
+Aumenta tu CAR por 1 al entrar en ira.
+
 <u>Furia elemental:</u>  Tus ataques se infunden con la furia de los elementos. Al entrar en ira, aumenta tu resistencia a un elemento por 2 y tus ataques hacen +1 daño elemental.
 
-<u>Defensa ancestral:</u> Tu poder innato te da reflejos sobrenaturales y protección contra tus enemigos . El flanqueo no te afecta y puedes cancelar un éxito obtenido por un ataque enemigo (1/turno).
+<u>Defensa ancestral:</u> Tu poder innato te da reflejos sobrenaturales y protección contra tus enemigos. Eres inmune a flanqueo y puedes cancelar un éxito obtenido por un ataque enemigo una vez al turno. Además, puedes defenderte contra ataques sorpresa y aumentas tu resistencia a un elemento por 1 al entrar en ira.
 
 ## Rango II
 
 <u>Aura destructiva:</u> Espíritus protectores, elementos furiosos o sombras demoníacas hieren a todos los que se acerquen a ti. Todas las criaturas en un aura de 15 pies sufren 2 daño no-letal al principio y añade +2 dados de Desventaja a tus tiros defensivos contra ataques a distancia. Esta habilidad sólo puede activarse mientras estas en ira.
 
-<u>Erupción elemental:</u> Una vez por ira, haz un destructivo ataque de energía elemental. El tiro equivale a tu CON con un dado de Soltura por cada 2 rangos de Ira y hace daño igual a 1 + tus rangos en Ira. Si tienes ataque elemental o Descarga de energía, Erupción elemental cuenta como uno de esos ataques pero añades un dado de Ventaja y +1 daño.
+<u>Erupción elemental:</u> Una vez por ira, haz un destructivo ataque de energía elemental. El tiro equivale a tu CON con un dado de Soltura por cada 2 rangos de Ira y hace daño igual a 1 + tus rangos en Ira. Si tienes ataque elemental o Descarga de energía, Erupción elemental cuenta como uno de esos ataques pero añades un dado de Ventaja y +1 daño. El número de dados de ventaja y daño base aumenta por 1 cada vez que recibas un rango adicional de Ira.
+

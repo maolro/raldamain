@@ -36,7 +36,7 @@ Incrementa tu INT por 1.
 
 <u>Siervos del contrato:</u> Tu lealtad al infierno es recompensada con varios demonios a tu servicio. En un descanso corto puedes hacer un ritual para pedir los servicios de un demonio mayor o 4 demonios menores. Estos te seguirán durante un día o hasta que cumplan su trabajo, y hasta que esto ocurra no puedes tener mas demonios a tu servicio. Un demonio mayor es un demonio construido con 9-18 PT y uno menor tiene 1-8 PT. No puedes tener a tu servicio a un demonio de PT superiores a los PT de tu familiar.
 
-<u>Blasfemia:</u> Tus habilidades de Influenciar, Presencia y Magia mental traspasan las resistencias que tenga el objetivo. Tus habilidades sólo pueden ser detenidas por Mente en blanco y Hueste divina.
+<u>Blasfemia:</u> Tus habilidades de Influenciar, Presencia y Magia mental traspasan las resistencias que tenga el objetivo. Tus habilidades sólo pueden ser detenidas por Mente en blanco y Aura sacra.
 
 ## Rango V
 
