@@ -6,9 +6,9 @@ sub: Combate
 
 ## Rango I
 
-<u>Ira:</u> Como acción bonus, entra en un estado de ira. La ira aumenta tu fuerza y tu constitución por 1 y te da resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que estés en ira te hace 1 daño no-letal, y al estar en ira no puedes usar habilidades que requieran paciencia y concentración (es decir, debes atacar cada turno). Ira no puede usarse mientras estás fatigado. Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente.
+<u>Ira:</u> Como acción bonus, entra en un estado de ira. La ira aumenta tu FUE y tu constitución por 1 y te da resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que estés en ira te hace 1 daño no-letal, y mientras mantengas este efecto no puedes usar habilidades que requieran paciencia y concentración, atacando cada turno. Ira no puede usarse mientras estás fatigado. Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente.
 
-<u>Movimiento ágil:</u> Mientras estás en Ira te mueves con agilidad sobrenatural. Tu velocidad base aumenta por 10 y puedes tirar defensivamente en ataques sorpresa (pero el atacante sigue recibiendo un dado azul y se sigue aplicando ataque furtivo). Tu velocidad vuelve a aumentar 5 pies a rango III. Si tienes otros tipos de movimiento que dependan de tu velocidad base (nadar, volar...) aumentaran también.
+<u>Movimiento ágil:</u> Mientras estás en Ira te mueves con agilidad sobrenatural. Tu velocidad base aumenta por 10 y puedes tirar defensivamente en ataques sorpresa. No obstante, el atacante seguirá recibiendo un dado de Ventaja en el tiro de ataque y el daño de Ataque furtivo se aplicará también. Tu velocidad vuelve a aumentar 5 pies a rango III. Si tienes otros tipos de movimiento que dependan de tu velocidad base (nadar, volar...) estas aumentaran también.
 
 ## Rango II
 
