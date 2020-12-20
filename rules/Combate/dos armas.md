@@ -6,17 +6,17 @@ sub: Armas
 
 ## Rango I
 
-<u>Aptitud con dos armas:</u> Como acción bonus una vez al turno puedes hacer un ataque con tu segunda arma. tienes un verde menos en este ataque secundario. Esta penalización desaparece cuando llegues a rango III.
+<u>Aptitud con dos armas:</u> Como acción bonus una vez al turno puedes hacer un ataque con tu arma secundaria con una penalización de un dado de habilidad. Esta penalización desaparece cuando llegues a rango III.
 
-<u>Estilo de combate</u>: obtienes un número de atributos dependiendo del arma que lleves en tu mano secundaria. Cada vez que subas un rango la aptitud con dos armas recibes los tributos que te indique la lista correspondiente.
+<u>Estilo de combate</u>: Obtienes un número de atributos dependiendo del arma que lleves en tu mano secundaria. Cada vez que subas un rango la aptitud con dos armas recibes los atributos que te indique la lista correspondiente.
 
 ## Filos pesados
 
 ### Rango I
 
-<u>Parada doble:</u> Puedes usar parada una vez adicional al turno con tu arma secundario (sigues recibiendo la penalización). Además, la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
+<u>Parada doble:</u> Puedes usar parada una vez adicional al turno con tu arma secundaria (sigues recibiendo la penalización). Además, la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
 
-<u>Tajo cruzado:</u> Al  impactar al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque inflinge +2 daño base. Esta habilidad solo puede emplearse una vez al turno.
+<u>Tajo cruzado:</u> Al impactar al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque inflige +2 daño base. Esta habilidad solo puede emplearse una vez al turno.
 
 ### Rango II
 
@@ -81,3 +81,19 @@ sub: Armas
 ### Rango III
 
 <u>Maestro pistolero:</u> Al atacar a una criatura que haya sufrido daño en algún momento de la ronda añades +2 daño base a tus ataques con armas de fuego. Recargar tu arma secundaria te cuesta una acción de movimiento y no necesitas tener una mano libre para ello. 
+
+## Escudos
+
+### Rango I
+
+<u>Defensa doble:</u> 
+
+<u>Fortaleza defensiva:</u> 
+
+### Rango II
+
+<u>Muro de acero</u>:
+
+### Rango III
+
+<u></u>
