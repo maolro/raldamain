@@ -42,7 +42,7 @@ Aumenta tu CAR por 1 al entrar en ira.
 
 <u>Furia elemental:</u>  Tus ataques se infunden con la furia de los elementos. Al entrar en ira, aumenta tu resistencia a un elemento por 2 y tus ataques hacen +1 daño elemental.
 
-<u>Defensa ancestral:</u> Tu poder innato te da reflejos sobrenaturales y protección contra tus enemigos. Eres inmune a flanqueo y puedes cancelar un éxito obtenido por un ataque enemigo una vez al turno. Además, puedes defenderte contra ataques sorpresa y aumentas tu resistencia a un elemento por 1 al entrar en ira.
+<u>Defensa ancestral:</u> Tu poder innato te da reflejos sobrenaturales y protección contra tus enemigos. Eres inmune a flanqueo y puedes cancelar un éxito obtenido por un ataque enemigo una vez al turno.
 
 ## Rango II
 

@@ -39,9 +39,9 @@ Si intentas diluir un concentrado tendrá los efectos de una dosis normal.
 
 ## Rango IV
 
+<u>Alteración genética:</u> Eres capaz de alterar la fisionomía de seres vivos a través de experimentación con mutágenos. Empleando un total de dos horas de experimentación y el gasto de dos dosis de suero puedes alterar los genes de una criatura, dándole 3 PT nuevos para gastar en mejoras. Si gastas dos dosis de cognatógeno puedes elevar la inteligencia de un animal a la de un humano, lo cual transforma sus estadísticas de INT y CAR a 1 además de permitirle tomar rangos. No puedes darle más de 3 PT a una criatura que alteres de esta manera, pero puedes sustituir los PT que tenga por otros con la adecuada experimentación. A rango V puedes darle 3 PT adicionales a la criatura que transformas.
 
-
-
+<u>Infusión de chi:</u> Puedes infundir tu cuerpo de chi puro para recibir dones innatos de la magia. Desbloqueas los rangos de magia arcana y una plantilla de tu elección.
 
 ## Rango V
 
