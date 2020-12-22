@@ -6,7 +6,7 @@ sub: Plantillas
 
 ## Rango I
 
-Obtienes Resistencia 1 a daño físico.
+Obtienes Resistencia 1 a daño físico. Puedes utilizar magia arcana de forma innata empleando tu estadística de carisma.
 
 <u>Furia del oni:</u> Como acción bonus libera la energía de tu oni interior. tus ataques físicos hacen +1 daño de energía y recibes resistencia igual a tu rango contra efectos mentales y moral. Cada turno que pasas en furia del oni sufres 1 daño no letal hasta que la desactives. Esta habilidad no puede usarse cuando estés fatigado.
 
@@ -16,7 +16,7 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu CAR por 1.
 
-<u>Comandar a los débiles:</u> Usas tu fuerza para doblegar a los más débiles de carácter. Puedes usar tu estadística de FUE en tiros de influenciar y persuasión interactuando con personas de menor nivel al tuyo.
+<u>Comandar a los débiles:</u> Usas tu fuerza para doblegar a los más débiles de carácter. Puedes usar tu estadística de FUE en tiros de influenciar y persuasión interactuando con personas de menor nivel al tuyo. 
 
 <u>Foco elemental:</u> Elige un elemento. Tienes resistencia igual a tu Rango contra él y tus ataques físicos se infunden de ese elemento al entrar en furia del oni, infligiendo +1 daño. Desbloqueas la magia elemental relacionada con ese elemento.
 
