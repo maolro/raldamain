@@ -56,6 +56,6 @@ Añade un dado de soltura a tus tiros de bomba.
 
 Añade un dado de soltura a tus tiros de bomba.
 
-<u>Bomba devastadora:</u> Una vez al día puedes fabricar una 
+<u>Bomba devastadora:</u> Una vez al día puedes fabricar una bomba de gran calibre que causará inmensa destrucción al explotar. Una bomba devastadora es de tamaño mediano, lo cual evita que pueda ser lanzada, y una cuenta atrás de diez minutos como mínimo. Al explotar la bomba devastadora hará los efectos de Terremoto en un área de 100 pies y matará instantáneamente a todas las criaturas que se localicen a menos de 30 pies de ella. La bomba devastadora puede ser desarmada tal como se indica en bomba retardada.
 
-<u>Trampa mágica</u> 
+<u>Trampa mágica</u>: Puedes fabricar trampas mágicas usando chi puro, ligando así un hechizo a ellas. El hechizo puede ser cualquiera conocido por ti o un aliado dispuesto a ayudarte en la fabricación de la trampa. Si el hechizo es de un único uso, este tendrá efecto cuando la trampa sea activada y se gastará al momento (como por ejemplo Geas, Rayo de evocación o Eliminar magia), mientras que si el hechizo es de larga duración este permanecerá activo tras la activación de la trampa hasta que haya pasado una hora, como es el caso de Terreno alucinatorio, Cierre dimensional o Zona antimágica. No puedes fabricar más de una trampa mágica al día.
