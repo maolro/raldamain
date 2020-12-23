@@ -41,8 +41,14 @@ Si intentas diluir un concentrado tendrá los efectos de una dosis normal.
 
 <u>Alteración genética:</u> Eres capaz de alterar la fisionomía de seres vivos a través de experimentación con mutágenos. Empleando un total de dos horas de experimentación y el gasto de dos dosis de suero puedes alterar los genes de una criatura, dándole 3 PT nuevos para gastar en mejoras. Si gastas dos dosis de cognatógeno puedes elevar la inteligencia de un animal a la de un humano, lo cual transforma sus estadísticas de INT y CAR a 1 además de permitirle tomar rangos. No puedes darle más de 3 PT a una criatura que alteres de esta manera, pero puedes sustituir los PT que tenga por otros con la adecuada experimentación. A rango V puedes darle 3 PT adicionales a la criatura que transformas.
 
-<u>Infusión de chi:</u> Puedes infundir tu cuerpo de chi puro para recibir dones innatos de la magia. Desbloqueas los rangos de magia arcana y una plantilla de tu elección.
+<u>Infusión de chi:</u> Utilizando productos químicos y cristales de chi puedes alterar tu composición física, recibiendo habilidades innatas de magia. Con esta habilidad desbloqueas magia arcana, elemental y plantillas, además de poder gastar una dosis de suero y un cristal de chi para conocer innatamente un hechizo, el cual podrás lanzar un número de veces al día sin gastar chi. Puedes lanzar el hechizo tres veces al día si es de rango II o menos y una vez al día si es de rango III o más (como máximo rango IV). No puedes conocer innatamente más hechizos que tu estadística de inteligencia.
 
 ## Rango V
 
-<u>Descubrimiento:</u> 
+<u>Gran descubrimiento:</u> Realizas un descubrimiento en el campo de la química muy avanzado a tu tiempo. El descubrimiento puede ser cualquier invento de tu elección que tenga consentimiento del máster. Algunas posibilidades para un descubrimiento son las siguientes:
+
+- **Resucitar:** Conoces como fabricar una medicina milagrosa capaz de revivir a los muertos. Sólo puedes fabricar una dosis de esta medicina a la semana  y te permite revivir a una criatura que haya muerto hace menos de una hora. Esta medicina también puede consumirse para que la próxima vez que el objetivo muera resucitará a 1 PV. Los efectos de la medicina expiran al cabo de una semana si es consumida.
+- **Inmortalidad:** Has encontrado una forma de frenar el envejecimiento, alcanzando la inmortalidad. Tu cuerpo deja de envejecer y eres inmune a cualquier efecto mágico o maldición que te haga envejecer.
+- **Transmutación:** Has descubierto una manera de transformar la composición de los metales. Puedes transmutar hasta 5 pies cúbicos de metal en otro con un día entero de trabajo. Si intentas transformar metales básicos en otros más valiosos el nuevo metal que creas será más inestable e impuro, volviendo a su composición normal al cabo de un día. Para hacer permanente esta transformación necesitas un mes entero de trabajo
+
+<u>Químico ágil:</u> Con los materiales adecuados puedes sintetizar disoluciones en una cantidad mínima de tiempo. Como acción de turno completo puedes crear una dosis adicional de suero, veneno o medicina. Usar esta habilidad ocasionará un gasto de materiales, lo cual causa que sólo puedas usar esta habilidad tres veces al día. Aplicar veneno a un arma te cuesta una acción bonus.
