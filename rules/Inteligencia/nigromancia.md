@@ -36,7 +36,7 @@ Tira un dado de soltura adicional en tiros de nigromancia. El daño base de Toqu
 
 Tira un dado de soltura adicional en tiros de nigromancia. El daño base de Toque necrótico aumenta por 1
 
-<u>Drenar cordura:</u> al hacer daño con tu toque necrótico puedes gastar 2 ventajas para reducir una estadística mental del objetivo por 1. esta reducción dura hasta que realice un descanso largo. critico: el objetivo está confuso y recibe una locura. Algunas de las posibilidades de locura son fobias relacionadas con la muerte o que piense que se ha convertido en un no muerto.
+<u>Drenar cordura:</u> Al hacer daño con tu toque necrótico puedes gastar 2 ventajas para reducir una estadística mental del objetivo por 1 y 4 ventajas para confundirlo. Esta reducción dura hasta que realice un descanso largo. Algunas de las posibilidades de locura son fobias relacionadas con la muerte o que piense que se ha convertido en un no muerto.
 
 <u>Alma corrompida:</u> Tu cuerpo recibe las resistencias de un no-muerto. Recibes Resistencia 2 contra daño físico y puedes usar tu CAR en lugar de tu CON para calcular tus PV y Vitalidad. Puedes seguir luchando aunque llegues a 0 PV, recibiendo el efecto de estado Ralentizado. Sólo morirás cuando tus PV negativos sean iguales a tu CAR. Tus hechizos de magia mental pueden afectar a no-muetos aunque estos posean inmunidad a ellos. 
 

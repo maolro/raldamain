@@ -116,15 +116,3 @@ Los PV aumentan por 1 por cada 6 PT empleados para la creación de una criatura 
 
 <u>Osobúho</u> (9 PT) Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Perforar, Garras, Armadura natural, Arrollar, Depredador
 
-### Abisales
-
-
-
-### Infernales
-
-
-
-### Celestiales
-
-
-
