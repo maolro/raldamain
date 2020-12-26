@@ -40,3 +40,13 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Contrataque:</u> Al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo hacer más de un contrataque por ronda. Contrataque no funciona contra otro contrataque.
 
+# Armas
+
+Una arma de filo ligero base hace 2+Éxito daño perforante y tiene un alcance de 5 pies. Un arma de filo ligero puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+
+- **Lanzamiento:**
+- **Ligera:**
+- **Duelo:**
+- **Cuchilla:**
+- **Retráctil:**
+

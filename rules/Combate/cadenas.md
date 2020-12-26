@@ -39,3 +39,12 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 <u>Ahorcar:</u> Al agarrar exitosamente a una criatura puedes emplear 2 ventajas o una acción de movimiento para agarrarla del cuello, dejándola con riesgo de ahogarse. Si una criatura pasa agarrada un número de turnos superior a su Con cae inconsciente. Si estrangulas a una criatura con un ataque sorpresa el número de turnos que puede pasar antes de caer inconsciente se reduce por 1 (mínimo 0). Si una criatura estrangulada sufre una caída esta debe tirar Con o muere ahorcada al instante.
 
 <u>Reposicionar:</u> Recibes la habilidad de reposicionar de aptitud de filos ligeros como si fueses de rango III. al usar reposicionar también mueves 5 pies a la criatura que estés agarrando.
+
+# Armas
+
+Una cadena base hace 2+Éxito daño cortante y tiene un alcance de 10 pies. Una cadena base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+
+- **Látigo:**
+- **Gancho:**
+- **Contundente:**
+- **Doble cadena:**

@@ -46,7 +46,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 # Armas
 
-Un alabarda base hace 3+Éxito daño perforante y tiene un alcance de 5 pies. Las armas de categoría alabarda pueden modificarse de la siguiente manera para dar lugar a todo tipo de armas de esta categoría. 
+Un alabarda base hace 3+Éxito daño perforante y tiene un alcance de 5 pies. Una alabarda base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Preparación contra cargas y Ataque vital.
 - **Cortante:** El arma tiene una hoja cortante en su punta. Recibes el atributo Tajo feroz a rango I pero perderás Ataque serpenteante. Infliges además +1 daño base al realizar un ataque lateral.
@@ -54,4 +54,5 @@ Un alabarda base hace 3+Éxito daño perforante y tiene un alcance de 5 pies. La
 - **Gancho:** El arma tiene un gancho en su punta que te permite arrastrar con facilidad a tus objetivos. Reduce tu daño base por 1 pero puedes gastar 2 ventajas generadas en un ataque para enganchar tu arma, permitiéndote mover a tu objetivo 10 pies en cualquier dirección como acción de movimiento. A rango IV recibes la habilidad Impacto destructor.
 - **Gigante:** El arma tiene un tamaño superior a lo normal. Aumenta tu alcance por 5 pies y el daño base por 1, pero para usar el arma se requiere FUE 4 o más. Un arma gigante se puede coger con una mano si estás montado.
 - **Agarre:** El arma tiene una pinza en su punta que puede agarrar al enemigo. Tu arma reduce su daño base a 0 pero agarrará tu objetivo si tienes éxito en el ataque (el agarre puede afectar a una parte del cuerpo de tu objetivo si gastas 2 ventajas). Puedes gastar una acción de movimiento para apretar con la pinza, haciendo un ataque con ella contra la criatura agarrada. A rango III recibes la habilidad Impacto destructor con la pinza. La pinza puede estar cubierta de espinas, las cuales infligirán Sangrado a la criatura que agarren.
+- **Doble:** El arma tiene una segunda punta con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo como ataque doble. Al hacer un ataque doble podrás hacer un ataque adicional como acción bonus pero tirarás un dado de habilidad menos en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
 

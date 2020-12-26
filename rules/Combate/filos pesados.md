@@ -40,5 +40,16 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Tajo cercenador:</u> Al impactar a un enemigo con un Ataque poderoso, gasta un número de ventajas igual a 1+la DEF de la armadura del objetivo para cortarle un brazo. Las reducciones a la armadura a causa de impacto destructor se aplican para determinar el coste de ventajas.
 
+# Armas
+
+Una arma de filo pesado base hace 3+Éxito daño cortante y tiene un alcance de 5 pies. Un arma de filo pesado puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+
+- **Pesada:**
+- **Ligera:**
+- **Doble:**
+- **Aserrada:**
+- **Rompespadas:**
+- **Gigantesca:**
+
 
 
