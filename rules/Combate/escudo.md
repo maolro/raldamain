@@ -40,14 +40,14 @@ Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cance
 
 <u>Detener hechizos:</u> El escudo puede proteger a aliados de ataques mágicos. Al usar escudo para bloquear un ataque mágico, si tienes éxito en el tiro defensivo cancelas el ataque de inmediato, haciendo así que  ninguna persona en el área de barrera movil sufra daño obligatorio de área. Tampoco tú sufres daño obligatorio de ataques de área al bloquear exitosamente con tu escudo.
 
-### Escudos
+# Armas
 
-- **Ligero** +1 morado.
-- **Pesado** +2 morados, -1 DEX .
-- **Madera** +1 morado.
-- **Metal** +2 morados.
+Un escudo base está hecho de madera y te permite tirar tres dados de dificultad en tiros de defensa, pero recibirás una penalización -1 en todos tus tiros de DES. Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
 
-
+- **Ligero:** 
+- **Metálico:** 
+- **Torre:** 
+- **Espinado:**
 
 
 

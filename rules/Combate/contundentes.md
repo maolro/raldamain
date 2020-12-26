@@ -30,7 +30,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres morados debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
 
-<u>Quebrar el suelo:</u> Usar Maza oscilante te cuesta una acción estándar. Como acción de turno completo puedes golpear al suelo con la fuerza de tu arma, convirtiéndo la tierra en un radio de 10 pies del impacto en Terreno difícil. Todas las criaturas que se encuentren en esa zona deben tirar Reflejos contra tu arma o caen Tropezados. Las ventajas generadas con esta hablidad puedes utilizarse para Ralentizar o Empujar tal como especifican las habilidades Impacto de choque y Concusión.
+<u>Quebrar el suelo:</u> Usar Maza oscilante te cuesta una acción estándar. Como acción de turno completo puedes golpear al suelo con la fuerza de tu arma, convirtiendo la tierra en un radio de 10 pies del impacto en Terreno difícil. Todas las criaturas que se encuentren en esa zona deben tirar Reflejos contra tu arma o caen Tropezados. Las ventajas generadas con esta hablidad puedes utilizarse para Ralentizar o Empujar tal como especifican las habilidades Impacto de choque y Concusión.
 
 ## Rango V 
 
@@ -40,5 +40,13 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Golpe fulminante:</u> Al impactar a un enemigo con un Ataque poderoso, gasta un número de ventajas igual a 1+la DEF de su armadura para que este caiga inconsciente al instante. La habilidad Resistir la muerte se aplica contra esta habilidad, protegiendo a tu objetivo de caer inconsciente.
 
+# Armas
 
+Una arma contundente base hace 3+Éxito daño contundente y tiene un alcance de 5 pies. Un arma contundente puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
+- **Pesada:**
+- **Pinchos:**
+- **Lanzamiento:**
+- **Ligera:**
+- **Doble:**
+- **Gigantesca:**

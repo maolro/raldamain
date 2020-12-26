@@ -40,3 +40,12 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 <u>Ataque despiadado:</u> Una vez al turno, haz un ataque natural adicional como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que infringirías normalmente.
 
+# Armas
+
+Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un ataque natural puede modificarse con las siguientes características tanto fisiológicas como tecnológicas para variar los atributos de tus ataques:
+
+- **Guantalete:**
+- **Garra:**
+- **Mordisco:**
+- **Tentáculo:**
+- **Perforar:**

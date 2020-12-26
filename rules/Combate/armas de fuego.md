@@ -28,7 +28,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Disparo preciso:</u> Tus ataques a distancia ignoran cubierta y ocultamiento a menos que sea completo eludiendo así cualquier tipo de penalizador (siendo 2 dados de Desventaja normalmente). Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal.
 
-<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del francotirador requieren una acción de turno completo si no usas un arma de francotirador.
+<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del francotirador requieren una acción de turno completo si no utilizas un arma con la habilidad Francotirador.
 
 ## Rango IV
 
@@ -43,3 +43,16 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 <u>Impacto vital:</u> Al impactar a un enemigo con un ataque, gasta 4 ventajas para multiplicar tu daño base por 2, infligiendo automáticamente una herida grave si hace al menos un punto de daño. Para usar esta habilidad tienes que haber usado Puntería experta en tu ataque.
 
 <u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Si gastas una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica en su tiro defensivo.
+
+# Armas
+
+Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 90 pies y se necesita una acción estándar para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+
+- **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base por 1 y su distancia por 30 pies a cambio de una mayor facilidad de uso. Las pistolas de mano necesitan sólo una acción de movimiento para recargar y pueden utilizarse en combate con dos armas.
+- **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
+- **Perdigones:** En lugar de balas el arma disparará una lluvia de perdigones de plomo. Un arma de perdigones debe tener recámara y la gastará al completo con cada disparo, pero podrá alcanzar a todas las criaturas en un cono de 15 pies al disparar e inflinge +1 daño base. 
+- **Doble cañón:** El arma dispara dos balas al turno con un ataque a costa de hacerla más difícil de utilizar. El daño base de un arma de doble cañón aumenta por 2 pero tirarás un dado de habilidad menos en los ataques que hagas con ella.
+- **Potente:** Un arma potente dispara las balas con mayor potencia pero tendrá una gran fuerza de retroceso. Un arma potente inflige +1 daño base pero sólo puede ser usada por personajes con FUE 2 o más. Si el arma es de dos manos el usuario deberá tener FUE 3 o más o recibirá un penalizador de un dado de desventaja en todos sus tiros.
+- **Automática:** El arma tiene un sistema para disparar balas de forma automática. Hacer un ataque de forma automática te cuesta una acción estándar y podrás atacar a cada criatura que se encuentre en un cono de 30 pies, empezando por la más cercana. Estos ataques consumirán 4 balas pero infligirán +2 daño base y dejarás de hacer ataques automáticos cuando tengas que recargar. Las armas con esta habilidad tendrán una recámara de 40 balas y son típicas de campañas ambientadas en épocas modernas o de ciencia-ficción.
+- **Francotirador:** El arma puede disparar a objetivos a mayor distancia y eliminarlos con una única bala. Como acción estándar puedes apuntar con tu arma, aumentando tu alcance a como máximo 200 pies de distancia. En este estado recibirás la habilidad Ataque furtivo y podrás utilizar Puntería mortal si realizas un ataque sorpresa contra tu objetivo. Las armas de esta categoría son típicas de campañas de épocas modernas o de ciencia-ficción.
+

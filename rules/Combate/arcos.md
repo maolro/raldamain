@@ -22,7 +22,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 - **Disparo desarmante:** El objetivo es Desarmado, dejando caer su arma. Gasta una ventaja adicional para que el enemigo se mueva 5 pies en una dirección aleatoria.
 - **Disparo afortunado**: Destruye un objeto pequeño que lleve el objetivo (pociones, armas enfundadas, una bolsa lateral). Si el objeto impactado es una bomba, esta explotará en el acto. Gata 2 Ventajas adicionales para que suelte un objeto que lleva.
 
-<u>Ataque rápido:</u> Gasta una acción de movimiento para hacer un ataque adicional con tu arma. Puedes gastar la acción de movimiento otorgada por Rapidez para esta habilidad.
+<u>Ataque rápido:</u> Gasta una acción de movimiento para hacer un ataque adicional con tu arma. Puedes gastar la acción de movimiento otorgada por Rapidez para esta habilidad. Una vez por ronda como reacción puedes gastar también 2 desventajas generadas para hacer un ataque de oportunidad con tu arma.
 
 ## Rango III 
 
@@ -36,7 +36,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después por ejemplo). Tampoco sufres penalizaciones al disparar montado o en un vehículo en movimiento.
 
-<u>Disparos a bocajarro</u>: Como acción de turno completo haz una secuencia de disparos rápidos. Con esta habilidad puedes hacer un ataque adicional con tu arma pero sufres un penalizador igual a un dado de Desventaja adicional en todos tus ataques.
+<u>Arquero ágil</u>: Eres capaz de cambiar precisión por velocidad de disparo para lanzar una lluvia de flechas. Al hacer un ataque puedes declararlo como ataque rápido. Un ataque rápido te cuesta una acción bonus para realizar pero este y todos los ataques que hagas después de este reducirán el número de dados de habilidad que tiran por 1. Los penalizadores que tengas por otras habilidades se aplican también a ataques rápidos. No puedes realizar más de un ataque rápido al turno.
 
 ## Rango V
 
@@ -48,9 +48,8 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 # Armas
 
-| Arma           | Daño base | Alcance       | Fuerza necesaria | Reglas especiales                                            |
-| -------------- | --------- | ------------- | ---------------- | ------------------------------------------------------------ |
-| Arco corto     | 2         | 15 - 60 pies  | 1                |                                                              |
-| Arco largo     | 3         | 20 - 100 pies | 2                |                                                              |
-| Arco recurvado | 3         | 25 - 110 pies | 2                |                                                              |
-| Arco compuesto | 3         | 20-100 pies   | 3                | El daño de un arco compuesto aumenta según tu FUE como si fuese un arma cuerpo a cuerpo. |
+Un arco base hace 3+Éxito daño perforante y tiene un alcance medio de 60 pies. Puedes disparar a enemigos como máximo a 90 pies de distancia recibiendo un penalizador de un dado de dificultad. Un arco base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+
+- **Compuesto:** El arco requiere gran fuerza para ser tensado pero incrementará la velocidad de los proyectiles. Necesitas tener FUE 2 o más para usar un arco compuesto pero este infligirá +1 daño base y aumenta su alcance por 10 pies. El daño base de un arco compuesto aumenta según tu estadística de FUE como si fuese un arma cuerpo a cuerpo.
+- **Corto:** El arco es pequeño y muy fácil de tensar. Reduces tu daño base por 1 pero no sufrirás penalizaciones por disparar montado o en un vehículo en movimiento. No recibirás penalizaciones por realizar ataques rápidos con la habilidad Arquero ágil.
+
