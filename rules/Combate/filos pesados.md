@@ -10,7 +10,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Parada:</u> como reacción, puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada, y además puedes cancelar un éxito generado. Parada solo puede usarse una vez al turno(puedes usarlo todas las veces que quieras si juegas defensivamente)
 
-<u>Tajo feroz:</u> tus ataques son muy efectivos contra enemigos sin armadura. Si impactas con tu arma y el daño excede la defensa del objetivo que le otorgue su armadura, sufre automáticamente sangrado aunque no le hagas daño. Tus heridas permanentes aumentan su efectividad por 1 contra criaturas que lleven armadura ligera o que no lleven armadura.
+<u>Tajo feroz:</u> tus ataques son muy efectivos contra enemigos sin armadura. Al hacer daño con tu arma a un objetivo puedes gastar 2 ventajas generadas para infligirle Sangrado. Tus heridas permanentes aumentan su efectividad por 1 contra criaturas que lleven armadura ligera o que no lleven armadura.
 
 ## Rango II
 
@@ -45,11 +45,12 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 Una arma de filo pesado base hace 3+Éxito daño cortante y tiene un alcance de 5 pies. Un arma de filo pesado puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Pesada:** El arma es tamaño superior a la normal, incrementando su daño base por 1 a costa de que sea necesaria utilizarla con dos manos. Si tienes fuerza 6 o más puedes sujetar un arma pesada con una sola mano.
-- **Ligera:** 
+- **Ligera:** El arma es de menor tamaño y más fácil de utilizar. Un arma ligera reduce su daño base por 1 pero podrás utilizar tu estadística de DES para tiros de ataque hechos con ella. A rango II pierdes el atributo Ataque poderoso a cambio de recibir Ataque furtivo. Para los propósitos de combate con dos armas puedes escoger la rama de filos ligeros aunque el arma sea un filo pesado.
 - **Doble:** El arma tiene un segundo filo con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo como ataque doble. Al hacer un ataque doble podrás hacer un ataque adicional como acción bonus pero tirarás un dado de habilidad menos en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
-- **Aserrada:**
-- **Rompespadas:**
-- **Gigantesca:**
+- **Hacha:** El arma se trata de un hacha en lugar de una espada. Un hacha hace +2 daño base al impactar pero no podrás utilizar la habilidad Parada para defenderte de ataques. A rango III recibes el atributo Carga poderosa en lugar de Choque de espadas.
+- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque poderoso, Impacto destructor y Rompe escudos. Lanzamiento sólo puede aplicare a armas ligeras.
+- **Aserrada:** El filo del arma está dotado de varias pequeñas cuchillas que causan graves heridas al impactar. Infliges automáticamente Sangrado al impactar a una criatura que no lleve armadura o lleve armadura ligera. Si la criatura ya tiene Sangrado el daño de este aumentará por 1 al impactar, llegando como máximo a 3 daño no-letal por turno.
+- **Rompespadas:** El arma tiene varias cuñas en el filo con las cuales puede romper las espadas de tus enemigos. Si el enemigo se defiende con un ataque de Parada contra tu arma puedes gastar 2 desventajas generadas para reducir el daño base del arma por 1, rompiéndola si logras reducir el daño base a 0. Al utilizar la habilidad Rompespadas podrás gastar 2 desventajas generadas para romper el arma de tu enemigo. Esto sólo puede usarse si el daño base del arma es igual a 2 o menos.
 
 
 
