@@ -44,9 +44,9 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Una arma de filo ligero base hace 2+Éxito daño perforante y tiene un alcance de 5 pies. Un arma de filo ligero puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
-- **Lanzamiento:**
-- **Ligera:**
-- **Duelo:**
+- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque furtivo, Ataque vital y Finta. Lanzamiento sólo puede aplicarse a armas ligeras.
+- **Ligera:** El arma es de menor tamaño y más fácil de utilizar. Un arma ligera reduce su daño base por 1 pero es más fácil de utilizar y capaz de penetrar los puntos débiles de la armadura de tu objetivo. Al hacer un Ataque furtivo con un arma ligera puedes gastar una ventaja generada para ignorar 1 punto de DEF que tenga tu objetivo. 
+- **Duelo:** 
 - **Cuchilla:**
 - **Retráctil:**
 
