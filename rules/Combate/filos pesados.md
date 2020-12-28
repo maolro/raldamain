@@ -44,8 +44,8 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Una arma de filo pesado base hace 3+Éxito daño cortante y tiene un alcance de 5 pies. Un arma de filo pesado puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
-- **Pesada:** El arma tiene 
-- **Ligera:** El arma
+- **Pesada:** El arma es tamaño superior a la normal, incrementando su daño base por 1 a costa de que sea necesaria utilizarla con dos manos. Si tienes fuerza 6 o más puedes sujetar un arma pesada con una sola mano.
+- **Ligera:** 
 - **Doble:** El arma tiene un segundo filo con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo como ataque doble. Al hacer un ataque doble podrás hacer un ataque adicional como acción bonus pero tirarás un dado de habilidad menos en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
 - **Aserrada:**
 - **Rompespadas:**
