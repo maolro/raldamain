@@ -8,3 +8,46 @@ rangos: Filos pesados, Magia druídica, Plantilla cambiaformas, Rastrear
 image: ajek.jpg
 ---
 
+## Especialidades
+
+
+
+## Rasgos
+
+
+
+## Historia
+
+### Orígenes
+
+
+
+### La invasión mazarina
+
+
+
+### Caza de Laicon
+
+
+
+### Las guerras hobgoblin
+
+
+
+## Relaciones
+
+### Fileon
+
+""
+
+### Madeleine
+
+""
+
+### Abshalom
+
+""
+
+### Yabu
+
+""

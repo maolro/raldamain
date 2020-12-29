@@ -10,7 +10,7 @@ image: fileon.jpg
 
 ## Especialidades
 
-Fileon es la estrella 
+
 
 ## Rasgos
 
@@ -27,6 +27,10 @@ Fileon es la estrella
 
 
 ### Las guerras hobgoblin
+
+
+
+### La campaña Temash
 
 
 

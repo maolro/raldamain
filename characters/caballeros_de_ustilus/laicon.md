@@ -66,7 +66,3 @@ Capturado por los ustileses, Laicon fue condenado a muerte y ejecutado el día s
 ### Viorica
 
 "Me asombra sea capaz de traicionar a todo lo que conoció por una mísera oportunidad de servicio. Ve la vida como una gran aventura y actúa sin preservación propia. Es útil de usar, pero es mejor quitármela de encima de la forma más favorable posible antes de que piense traicionarme de la misma manera que traicionó a su pueblo."
-
-
-
-### 

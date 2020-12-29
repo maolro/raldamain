@@ -95,5 +95,3 @@ sub: Armas
 <u>Muro de acero</u>:
 
 ### Rango III
-
-<u></u>
