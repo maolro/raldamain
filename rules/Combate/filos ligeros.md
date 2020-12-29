@@ -44,9 +44,9 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Una arma de filo ligero base hace 2+Éxito daño perforante y tiene un alcance de 5 pies. Un arma de filo ligero puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
-- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque furtivo, Ataque vital y Finta. Lanzamiento sólo puede aplicarse a armas ligeras.
-- **Ligera:** El arma es de menor tamaño y más fácil de utilizar. Un arma ligera reduce su daño base por 1 pero es más fácil de utilizar y capaz de penetrar los puntos débiles de la armadura de tu objetivo. Al hacer un Ataque furtivo con un arma ligera puedes gastar una ventaja generada para ignorar 1 punto de DEF que tenga tu objetivo. 
-- **Duelo:** 
-- **Cuchilla:**
-- **Retráctil:**
+- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque furtivo, Ataque vital y Finta. Lanzamiento puede aplicarse a cualquier arma de filo ligero que tenga la característica sutil.
+- **Sutil:** El arma es de menor tamaño y más fácil de utilizar. Un arma sutil reduce su daño base por 1 pero es capaz de penetrar los puntos débiles de la armadura de tu objetivo. Al hacer un Ataque furtivo con un arma ligera puedes gastar una ventaja generada para ignorar 1 punto de DEF que tenga tu objetivo. 
+- **Duelo:** El arma es más larga y fina, haciéndola ideal para duelos de espadas. Un arma de duelo aumenta su daño base por 1 y recibe la habilidad Espadas trabadas a rango III, pero no podrá usarse en tu mano secundaria. Aun así, puedes obtener atributos en combate con dos armas si tienes un arma de duelo en tu mano principal y un arma sutil en tu mano secundaria.
+- **Cuchilla:** El arma está dotada de varias cuchillas con las que puede infligir letales cortes. El daño del arma pasará a ser cortante y recibirá la habilidad Tajo feroz a rango I. 
+- **Retráctil:** El arma tiene la capacidad de encogerse con gran velocidad, permitiéndote mantenerla oculta y atacar cuándo tu objetivo menos se lo espera. Un arma retráctil es indetectable a primera vista y con ella podrás realizar ataques sorpresa aunque tu objetivo te vea. Si atacas a una persona que te esté vigilando esta tendrá la oportunidad de tirar percepción o averiguar intenciones contra tus dados de ataque, dándose cuenta de tu arma si tiene éxito en el tiro.
 

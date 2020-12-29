@@ -44,9 +44,8 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Una arma contundente base hace 3+Éxito daño contundente y tiene un alcance de 5 pies. Un arma contundente puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
-- **Pesada:**
-- **Pinchos:**
-- **Lanzamiento:**
-- **Ligera:**
-- **Doble:**
-- **Gigantesca:**
+- **Pesada:** El arma es tamaño superior a la normal, incrementando su daño base por 1 a costa de que sea necesaria utilizarla con dos manos. Si tienes fuerza 6 o más puedes sujetar un arma pesada con una sola mano.
+- **Ligera:** El arma es de menor tamaño y más fácil de utilizar. Un arma ligera reduce su daño base por 1 pero podrás utilizar tu estadística de DES para tiros de ataque hechos con ella. A rango II perderás el atributo Maza oscilante pero recibirás Secuencia de ataques.
+- **Doble:** El arma tiene una segunda punta con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo como ataque doble, por lo cual podrás hacer un ataque adicional como acción bonus pero tirarás un dado de habilidad menos en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
+- **Pinchos:** El arma está cubierta de varios afilados pinchos. Esta infligirá +1 daño perforante y al impactar a un objetivo sin armadura podrás gastar 2 ventajas para darle Sangrado. 
+- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque poderoso, Concusión, Impacto destructor y Rompe escudos. Lanzamiento sólo puede aplicare a armas ligeras.

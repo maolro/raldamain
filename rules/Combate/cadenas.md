@@ -44,7 +44,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Una cadena base hace 2+Éxito daño cortante y tiene un alcance de 10 pies. Una cadena base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
-- **Látigo:**
+- **Látigo:** 
 - **Gancho:**
 - **Contundente:**
 - **Doble cadena:**
