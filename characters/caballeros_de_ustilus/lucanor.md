@@ -8,3 +8,44 @@ rangos: Influenciar, Plantilla infernal, Conocimiento, Castigo divino
 image: lucanor.jpg
 ---
 
+
+
+## Especialidades
+
+
+
+## Rasgos
+
+
+
+## Historia
+
+### Orígenes
+
+
+
+### Manipulaciones secretas
+
+
+
+### La campaña Hobgoblin
+
+
+
+## Relaciones
+
+### Madeleine
+
+""
+
+### Yabu
+
+""
+
+### Regulus
+
+""
+
+### Ileria
+
+""

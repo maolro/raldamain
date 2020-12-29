@@ -3,18 +3,18 @@ title: Abshalom
 nacionalidad: Jaddi
 alineamiento: Legal Neutro
 fecha-de-nacimiento: 3957
-fecha-de-muerte: sigue vivo
+fecha-de-muerte: 4005
 rangos: Aptitud con filos pesados, Artes marciales, Aptitud con armaduras, Presencia
 image: abshalom.jpg
 ---
 
 ## Especialidades
 
-Uno de los mejores espadachines de su orden, Abshalom lucha con su arma como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor, inspirando con sus actos para que sus aliados realicen hazañas imposibles. 
+Uno de los mejores espadachines de su orden, Abshalom lucha con su arma como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor y luchará hasta el final para lo que él cree que es justo. La muerte de Feyn le ha hecho perder gran parte de sus habilidades divinas, pero continúa siendo un guerrero destacable y una fuente de inspiración para sus aliados. 
 
 ## Rasgos
 
-Abshalom puede descrito como un baluarte de la tradición en un mundo rápidamente cambiante. Es muy fiel a sus principios y a la ley de Feyn, creyendo que los problemas actuales del Imperio se deben a su falta de fe. Cuando habla, dice exactamente lo que piensa y espera ser obedecido al momento. No tolera a la clase aristócrata, viéndolos como inútiles parásitos que sólo buscan sus propios intereses mientras Ustilus arde. 
+Abshalom puede descrito como un baluarte de la tradición en un mundo rápidamente cambiante. Es muy fiel a sus principios y a la ley de Feyn, creyendo que los problemas actuales del Imperio se deben a su falta de fe. Cuando habla, dice exactamente lo que piensa y espera ser obedecido al momento, lo cual le gana pocos amigos dentro del ejército. No obstante, tiene gran capacidad de liderazgo y aunque sea muy duro con aquellos que comanda, luchará junto a ellos hasta el final.
 
 ## Historia
 
@@ -24,13 +24,17 @@ Abshalom nació en el clan Jaddi de Taedros. Devoto a Feyn, fue aceptado en la o
 
 ### Lucha contra el Pacto
 
-Cuando Mazarin cruzó las fronteras de Kratoi para recuperar sus tierras arrebatadas por Ustilus, Abshalom fue de los primeros en lanzarse a la guerra. Sus tácticas brutales pero efectivas le permitieron derrotar a la tropa principal Mazarina, y junto con los caballeros Ajek y Fileon dieron el golpe de gracia a la invasión, derrotando al general Petrikov en batalla naval. Cuando la guerra daba pinta de estar acabada y Abshalom se volvió a Trono de Feyn para continuar liderando a los caballeros, el descubrimiento por parte de la Hermandad del Cuervo de que Laicon de Dairov estaba organizando al Pacto le volvió a poner en acción. 
+Cuando Mazarin cruzó las fronteras de Kratoi para recuperar sus tierras arrebatadas por Ustilus, Abshalom fue de los primeros en lanzarse a la guerra. Sus tácticas brutales pero efectivas le permitieron derrotar a la tropa principal mazarina, y junto con los caballeros Ajek y Fileon dieron el golpe de gracia a la invasión, derrotando al general Petrikov en batalla naval. Cuando la guerra daba pinta de estar acabada y Abshalom se volvió a Trono de Feyn para continuar liderando a los caballeros, el descubrimiento por parte de la Hermandad del Cuervo de que Laicon de Dairov estaba organizando al Pacto le volvió a poner en acción. 
 
 Tan grande era su deseo de acabar con Laicon que estuvo dispuesto a colaborar con Ileria, persona con ideología radicalmente opuesta a la suya, para poder derrotarle. La búsqueda le llevó hasta la ciudad de Rizad, dónde se reunió con miembros de su clan para aumentar la vigilancia en Rizad. Tras varios días de investigación que resultaron infructuosos, Abshalom colaboró en secreto con Madelein para urdir un arriesgado plan: ella fingiría traicionar a Ustilus para así captar la atención de Laicon y forzarlo a actuar. El plan no salió como se esperaba y Madeleine acabó siendo capturada por el enemigo, pero afortunadamente la falsa traición de Madeleine provocó que Viorica hiciese amistades con ella. Gracias a Viorica, los caballeros fueron alertados de la localización de Laicon y se dirigieron rápidamente para capturarlo. Junto con Ajek, Viorica y la Hermandad del cuervo, Abshalom acorraló a Laicon en los tejados de Rizad y finalmente lo capturó. Con Laicon encerrado en un lugar seguro, Abshalom se dedicó a sofocar los últimos focos de rebelión. Cuando la revuelta empezó a debilitarse, él le dio el golpe final ejecutando a Laicon y exponiendo su cadáver en la plaza principal. Con estas duras medidas logró disipar al Pacto en Rizad.
 
 ### El golpe de estado
 
-La revuelta en Rizad fue una chispa que provocó revueltas a lo largo de todo el Imperio. Las cortes de Ustilus estaban divididas al respecto de qué hacer, con algunos apoyando la respuesta militar y otros prefiriendo una vía más pacífica conociendo la debilidad del Imperio. Abshalom, siempre enemigo de los políticos, conspiró en secreto junto con otros caballeros para tomar el poder a la fuerza y así salvar a Ustilus. Tras consultar con el sumo sacerdote de Feyn y recibir el visto bueno, Abshalom y sus caballeros irrumpieron en las cortes en el día del voto decisivo, declarando el estado de emergencia. Ahora el hombre más poderoso de Ustilus, Abshalom no se detendrá hasta devolver el orden a Ustilus por muy gran el precio que sea.
+La revuelta en Rizad fue una chispa que provocó revueltas a lo largo de todo el Imperio. Las cortes de Ustilus estaban divididas al respecto de qué hacer, con algunos apoyando la respuesta militar y otros prefiriendo una vía más pacífica conociendo la debilidad del Imperio. Abshalom, siempre enemigo de los políticos, conspiró en secreto junto con otros caballeros para tomar el poder a la fuerza y así salvar a Ustilus. Tras consultar con el sumo sacerdote de Feyn y recibir el visto bueno, Abshalom y sus caballeros irrumpieron en las cortes en el día del voto decisivo, declarando el estado de emergencia. 
+
+### La campaña del sur
+
+### Final
 
 ## Relaciones
 
@@ -56,4 +60,8 @@ La revuelta en Rizad fue una chispa que provocó revueltas a lo largo de todo el
 
 ### Regulus
 
-"Para ser un teniente del ejército actúa como si todo lo sabe. Su confianza en sí mismo y falta de madurez harán que se cometa errores que le marcarán durante toda su vida. Debería pronto conocer su lugar en el mundo antes de llevarse una decepcionante sorpresa."
+"Puedo definir su destino como patético pero predecible. Su confianza en sí mismo y falta de madurez le han llevado por una senda de la que no hay vuelta atrás. Debería haber pensado en las consecuencias cuando aceptó seguir el camino de la herejía, pero ya es tarde. Ha sufrido el castigo que se merecía por sus pecados."
+
+### Yabu
+
+"Sólo la desesperación me ha llevado a aliarme con este individuo. No me despierta ninguna confianza ni él ni los espíritus que venera se ha opuesto repetidas veces a mi autoridad, pero debo reconocer que es muy efectivo en el campo de batalla y vale más la pena tenerlo como aliado que como enemigo. Eso sí, no debería andarse con tanto aire de confianza considerando la posición en la que está."
