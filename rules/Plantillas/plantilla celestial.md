@@ -1,5 +1,5 @@
 ---
-	title: Plantilla celestial
+title: Plantilla celestial
 main: Rangos
 sub: Plantillas
 ---
