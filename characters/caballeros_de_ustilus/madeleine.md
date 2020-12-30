@@ -2,7 +2,7 @@
 title: Madeleine
 nacionalidad: Norteña
 alineamiento: Neutro verdadero
-fecha-de-nacimiento: 
+fecha-de-nacimiento: 3971
 fecha-de-muerte: sigue viva
 rangos: Magia de agua, Magia de hielo, Magia de sangre, Plantilla boreal, Influenciar
 image: madeleine.jpg
