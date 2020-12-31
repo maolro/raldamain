@@ -40,7 +40,7 @@ Incrementa tu FUE por 1.
 
 ## Rango V
 
-Obtienes Resistencia 2 a daño físico y Resistencia mágica igual a tu Rango - 2. 
+Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
 <u>Regeneración:</u> Al principio de tu turno recuperas 2 vitalidad de manera automática. Si estás al máximo de vitalidad te recuperas 2 PV. Al hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por 1. Después de una semana eres capaz de recuperar órganos y partes del cuerpo perdidas.
 
