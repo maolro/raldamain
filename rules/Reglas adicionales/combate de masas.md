@@ -54,5 +54,10 @@ El comandante de una unidad podrá ordenarla a seguir una de las siguientes tác
 
 En este apartado se muestran las diferentes situaciones en el campo de batalla que pueden modificar los tiros de combate y las bajas generadas. 
 
-- ### 
+- **Ataque sorpresa:** Si una unidad pilla a otra por sorpresa el defensor no podrá tirar defensa, además de que el atacante tirará un dado de Ventaja adicional. En el caso de que la unidad atacante sea de escaramuzadores el número de bajas se incrementará por 1.
+- **Preparación contra cargas:** Una unidad formada por soldados con alabardas podrá hacer un ataque de oportunidad contra una tropa de caballería si emplea la táctica Línea defensiva. Si impacta con este ataque podrá detener la carga, evitando que el enemigo obtenga bonificadores por cargar.
+- **Elevación:** Si una unidad se sitúa en una zona elevada respecto al resto del campo recibirá un dado de Ventaja en todos los tiros de ataque y aumentará la distancia de las tropas a distancia por 30 pies. Las unidades localizadas en una zona elevada también recibirán un dado de Desventaja en tiros defensivos.
+- **Fortificación:** Una unidad formada por tropas a distancia recibirá grandes bonificadores defensivos si se encuentra protegida por una muralla o cualquier otro elemento que le dé cubierta. Si tiene cubierta parcial reducirá el número de bajas por 1, mientras que si tiene cubierta completa reducirá las bajas por 2. Una fortificación puede destruirse con armas de asedio.
+- **Bosque:** Las unidades que se encuentren en un bosque están protegidas de ataques a distancia hechos por criaturas fuera del bosque, pero su velocidad quedará reducida a la mitad. Los bosques también dan grandes beneficios al sigilo, permitiendo que una unidad se esconda en él como acción de movimiento.
+- **Río:** Los ríos son un gran obstáculo para las tropas que intenten pasar. Un río reduce la velocidad de las unidades a la mitad y causa que esas no puedan defenderse de ataques a distancia. Algunos ríos pueden ser especialmente caudalosos o rugientes, los cuales evitan que las unidades puedan cruzar a pie.
 
