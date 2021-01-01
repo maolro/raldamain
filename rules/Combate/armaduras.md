@@ -19,6 +19,6 @@ sub: Combate
 
 ## Rango III
 
-<u>Armadura infundida:</u> Tu armadura actúa como extensión de tu cuerpo y se  infunde de tu poder mágico. La armadura incrementa tu Resistencia Mágica por 3 si tienes una Plantilla o rangos en una magia. Si no tienes ninguno de esos rangos entonces debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, la cual te otorga Resistencia Mágica igual a  su Defensa base + 3.
+<u>Armadura infundida:</u> Tu armadura actúa como extensión de tu cuerpo y se  infunde de tu poder mágico. La armadura incrementa tu Resistencia Mágica por 3 si tienes una Plantilla o rangos en una magia. Si no tienes ninguno de esos rangos entonces debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, la cual te otorga Resistencia mágica igual a tu rango de Armaduras.
 
 <u>Campeón de acero:</u> La armadura te protege hasta de ataques mortales. Una vez al turno, reduce el nivel de una [herida permanente](http://raldamain.com/rules/Heridas%20permanentes.html) que sufras por 1. Los ataques de muerte instantánea como maestro cazador o impacto vital solo te provocan una herida permanente grave (no puedes volver a reducirlo)

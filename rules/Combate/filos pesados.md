@@ -8,7 +8,7 @@ sub: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Parada:</u> como reacción, puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada, y además puedes cancelar un éxito generado. Parada solo puede usarse una vez al turno(puedes usarlo todas las veces que quieras si juegas defensivamente)
+<u>Parada:</u> Como reacción puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada y puedes cancelar un éxito generado una vez al turno (2 veces al turno a rango III y 3 veces al turno a rango V). Parada solo puede emplearse una vez por ronda, y entrar en forma defensiva te permitirá usarla una vez adicional (2 veces adicionales si empleas una acción estándar para entrar en forma defensiva).
 
 <u>Tajo feroz:</u> tus ataques son muy efectivos contra enemigos sin armadura. Al hacer daño con tu arma a un objetivo puedes gastar 2 ventajas generadas para infligirle Sangrado. Tus heridas permanentes aumentan su efectividad por 1 contra criaturas que lleven armadura ligera o que no lleven armadura.
 
@@ -16,7 +16,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Gran corte:</u> emplea una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o al atacar a marabuntas, pero no hará daño obligatorio. Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
 
-<u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero inflinges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño adicionales.
+<u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero infliges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño adicionales.
 
 ## Rango III
 
@@ -36,7 +36,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Cortes en secuencia</u>: Puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque.
+<u>Cortes en secuencia</u>: Puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque. Puedes emplear Parada una vez adicional al turno por cada acción de movimiento que tengas.
 
 <u>Tajo cercenador:</u> Al impactar a un enemigo con un Ataque poderoso, gasta un número de ventajas igual a 1+la DEF de la armadura del objetivo para cortarle un brazo. Las reducciones a la armadura a causa de impacto destructor se aplican para determinar el coste de ventajas.
 
