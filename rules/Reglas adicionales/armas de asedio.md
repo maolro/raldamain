@@ -28,11 +28,18 @@ Una torre de asedio está normalmente hecha de madera y tiene 5 PV por piso. Al 
 
 ### Balista
 
-Una balista es una máquina de asedio similar a una ballesta de gran tamaño
+Una balista es una máquina de asedio similar a una ballesta de gran tamaño. Esta máquina es capaz de disparar proyectiles con mayor velocidad y precisión que una catapulta, requiriendo sólo una tripulación de 2 personas para ser usada efectivamente.
 
-### Ariete
+Para disparar con una balista se necesita un tiro de Aptitud con arma (arcos) o Bombas, el cual se realiza contra el objetivo de esta. El tiro de ataque recibirá una penalización de un dado de Dificultad por cada categoría de tamaño de diferencia que hay entre la balista y el objetivo. Esta penalización puede reducirse por 1 dado por cada miembro adicional de tripulación que esté operando la balista. Esta arma hará 4+Éxito daño perforante al impactar e infligirá automáticamente una herida permanente leve. Una balista puede disparar a objetivos localizados a hasta 120 pies de distancia e ignorará la defensa del objetivo si este se encuentra a menos de 30 pies de distancia.
+
+Una balista puede alterarse con las siguientes características para dar lugar a todo tipo de armas de asedio similares.
+
+- **Pesada:** Una balista pesada hace +2 daño base al impactar y aumenta el nivel de las heridas permanentes que inflige por 1, pero disparar con ella añade un dado de Dificultad adicional al tiro además de requerir una tripulación de 4 personas para ser usada. La distancia máxima de una balista pesada aumenta por 60 pies.
+- **Rompepuertas:** Una balista rompepuertas disparará proyectiles contundentes para destruir sólidas estructuras. El daño de una balista rompepuertas pasa a ser contundente y aumentará por 2 al impactar a estructuras, pero a su vez requerirá una tripulación de 2 personas adicionales.
 
 ### Cañón
+
+Un cañón es un largo tubo metálico que propulsa proyectiles a grandes velocidades empleando la pólvora. Un cañón requiere una tripulación de 2 personas para ser usado efectivamente y puede alcanzar distancias de hasta 100 pies.
 
 ## Armas de asedio modernas
 

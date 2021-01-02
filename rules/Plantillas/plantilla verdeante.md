@@ -28,7 +28,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Armadura de cardos:</u>  
 
-<u>Arraigar:</u> Como acción estándar 
+<u>Arraigar:</u>  
 
 ## Rango IV 
 
