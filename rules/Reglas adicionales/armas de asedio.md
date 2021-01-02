@@ -8,19 +8,29 @@ Las armas de asedio son grandes máquinas y estructuras empleadas tradicionalmen
 
 ### Catapulta
 
-Las catapultas son máquinas de asedio que lanzan objetos a grandes distancias de modo de proyectiles. Son difíciles de apuntar con precisión y requieren constantes ajustes a su arco de tiro, pero infligen daño devastador a murallas y fortificaciones. Para atacar con una catapulta el operario debe hacer un tiro de Conocimiento o Bombas contra un tiro de dificultad determinado por la distancia del objetivo y el tamaño de la catapulta. En el caso de tener éxito, la catapulta disparará a ese punto. Las ventajas y desventajas generadas añadirán los respectivos dados de Ventaja o Desventaja al tiro de ataque de la catapulta, mientas que los fracasos causan que la catapulta dispare a otro punto localizado a un número de pies de distancia igual a los fracasos generados x 5. 
+Las catapultas son máquinas de asedio que lanzan objetos a grandes distancias de modo de proyectiles. Son difíciles de apuntar con precisión y requieren constantes ajustes a su arco de tiro, pero infligen daño devastador a murallas y fortificaciones. Una catapulta necesita una tripulación de 5 personas para poder ser usada efectivamente.
 
-Las catapultas tienen una distancia máxima de 200 pies y una distancia mínima de 100 pies. Todas las criaturas y objetos que se encuentren en el área de impacto de la catapulta sufrirán 6 daño contundente y recibirán una herida permanente media . Este daño puede reducirse con un tiro de Esquiva y Evasión se aplicará contra este efecto. Las estructuras hechas de piedra quedarán destruidas como si se tratase de un Derrumbamiento y toda la tierra en un área de 10 pies centrado en la zona de impacto se convierte en terreno difícil.
+Para atacar con una catapulta el operario debe hacer un tiro de Conocimiento o Bombas contra un tiro de dificultad determinado por la distancia del objetivo (2 dados de dificultad base, +1 dado de dificultad por cada incremento de 25 pies). En el caso de tener éxito, la catapulta disparará a ese punto. Las ventajas y desventajas generadas añadirán los respectivos dados de Ventaja o Desventaja al tiro de ataque de la catapulta, mientas que los fracasos causan que la catapulta dispare a otro punto localizado a un número de pies de distancia igual a los fracasos generados x 5. Cada vez que una catapulta fracase en su tiro de ataque la tripulación podrá ajustar la puntería de esta, añadiendo un dado de Ventaja adicional al tiro para apuntar (5 dados de Ventaja como máximo).
+
+Las catapultas tienen una distancia máxima de 200 pies y una distancia mínima de 100 pies. Todas las criaturas y objetos que se encuentren en el área de impacto de la catapulta sufrirán 6 daño contundente y recibirán una herida permanente media . Este daño puede reducirse con un tiro de Esquiva y Evasión se aplicará contra este efecto. Las estructuras hechas de piedra quedarán destruidas como si se tratase de un Derrumbamiento y toda la tierra en un área de 10 pies centrado en la zona de impacto se convierte en terreno difícil. 
 
 Una catapulta puede alterarse con las siguientes características para dar lugar a todo tipo de armas de asedio similares.
 
+- **Ligera:** Una catapulta ligera reduce los dados de dificultad recibidos por 1 para apuntar con la catapulta. Es además suficientemente ligera que se le pueden añadir ruedas, permitiendo que pueda moverse 10 pies al turno. Reduce el daño de impacto de esta máquina de asedio por 2 y el nivel de las heridas permanentes que inflige por 1, además de las distancias mínimas y máximas de impacto por 50 pies.
+- **Pesada:** Una catapulta pesada incrementa los dados de dificultad recibidos por 1 para apuntar con la catapulta, pero también hará +2 daño al impactar y aumenta el nivel de las heridas permanentes que inflige por 1. La distancia máxima de una catapulta pesada aumenta por 100 pies.
+- **Trabuquete:** Un trabuquete es un arma de asedio similar a una catapulta, pero gracias a la maquinaria con la que opera puede disparar a enemigos a mayores distancias y lanzar objetos de mayor tamaño. Un trabuquete aumenta su distancia de disparo por 100 pies y sus proyectiles harán daño a todos los objetivos en un área de 15 pies de radio a la zona de impacto. Un trabuquete ligero no podrá moverse y reducirá el radio de impacto por 10 pies mientras que un trabuquete pesado aumentará su radio de impacto por 15 pies.
+
 ### Torre de asedio
+
+Una torre de asedio es una masiva estructura de madera que protegerá a los soldados que se encuentren en ella y es suficientemente alta para traspasar las murallas de la fortaleza enemiga. Esta tiene un movimiento de 15 pies y dará cubierta completa a todos los soldados en ella. Arqueros que haya en una torre de asedio podrán disparar desde dentro de ella, recibiendo cubierta superior en sus ataques además de los beneficios por elevación. Una torre de asedio estándar tiene una altura de tres pisos y puede contener a una tripulación de 12 personas. Cada aumento o reducción de tamaño de la torre de asedio añadirá un piso a esta y duplicará o la reducirá a la mitad a la tripulación.
+
+Una torre de asedio está normalmente hecha de madera y tiene 5 PV por piso. Al ser destruida hará los efectos de un Derrumbamiento a todos los soldados que se encuentren dentro de ella.
 
 ### Balista
 
-### Ariete
+Una balista es una máquina de asedio similar a una ballesta de gran tamaño
 
-### Fuego griego
+### Ariete
 
 ### Cañón
 
