@@ -19,9 +19,11 @@ Las ventajas y las desventajas representan aquellos instantes en un combate que 
 
 **4 VNT:** El objetivo es desarmado si este usa Parada para defenderse. Debes gastar 1 ventaja adicional en esta habilidad por cada punto de resistencia que tenga tu objetivo contra maniobras de combate.
 
+**4 VNT:** Ocurre un evento de gran fortuna para ti. Este evento lo escoges tú, y algunas posibilidades son que descubres una debilidad que tenga tu enemigo, destruyes un objeto que tu objetivo lleve encima o percibes a una persona oculta que hay en tu campo de visión.
+
 ## Desventajas
 
-**1 DSV:** Añade un dado de Ventaja o Desventaja a tu siguiente tiro. Puedes añadir como máximo tres dados de esta manera.
+**1 DSV:** Ocurre un evento levemente positivo que te permite añadir un dado de Ventaja o Desventaja a tu siguiente tiro. Puedes añadir como máximo tres dados de esta manera.
 
 **1 DSV:** Muévete 5 pies en cualquier dirección sin provocar ataques de oportunidad.
 
@@ -29,7 +31,9 @@ Las ventajas y las desventajas representan aquellos instantes en un combate que 
 
 **2 DSV**: Haz una [acción de movimiento](https://raldamain.com/rules/Reglas%20adicionales/reglas%20de%20combate.html#acci%C3%B3n-de-movimiento) adicional. Sólo puedes usar esta habilidad una vez por ronda, tanto en un ataque como en defensa.
 
-**4 DSV:** Realiza un ataque de oportunidad contra tu objetivo como reacción. No puedes hacer más de un ataque de oportunidad por ronda contra la misma persona.
+**4 DSV:** Realiza un ataque de oportunidad contra tu objetivo como reacción. Hacer ataques de oportunidad así te cuesta 2 desventajas menos para ataques que requieran un gasto de una acción de movimiento. No puedes gastar desventajas de esta manera si te estás defendiendo de un ataque de oportunidad ni hacer más de un ataque de oportunidad por ronda contra la misma persona.
 
 **4 DSV:** El objetivo es desarmado si te intenta atacar con un arma. Debes defenderte con Parada para poder gastar desventajas de esta manera. Debes gastar 1 desventaja adicional en esta habilidad por cada punto de resistencia que tenga tu objetivo contra maniobras de combate.
+
+**4 DSV:** Ocurre un evento desafortunado a tu enemigo. Este evento lo escoges tú, y algunas posibilidades son que su arma de fuego quede atascada o explote, que se distraiga tanto que un aliado tuyo logra fintarle o que pierda la concentración en un efecto que esté manteniendo.
 

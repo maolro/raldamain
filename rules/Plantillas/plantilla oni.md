@@ -20,7 +20,7 @@ Incrementa tu CAR por 1.
 
 <u>Foco elemental:</u> Elige un elemento. Tienes resistencia igual a tu Rango contra él y tus ataques físicos se infunden de ese elemento al entrar en furia del oni, infligiendo +1 daño. Desbloqueas la magia elemental relacionada con ese elemento.
 
-<u>Tercer ojo:</u> Tienes un tercer ojo en la frente, el cual puedes abrir y cerrar como acción bonus. Mientras que tu tercer ojo esté abierto tienes visión a oscuras en un área de 60 pies y puedes ver a través de tu elemento sin dificultades, como si tuvieses georradar, visión ígnea, visión ártica o geolocalización.
+<u>Tercer ojo:</u> Tienes un tercer ojo en la frente, el cual puedes abrir y cerrar como acción bonus. Mientras que tu tercer ojo esté abierto tienes visión a oscuras en un área de 60 pies y puedes ver a través de tu elemento sin dificultades, como si tuvieses georradar, visión ígnea o visión árctica.
 
 ## Rango III
 
