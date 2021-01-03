@@ -41,6 +41,8 @@ Una balista puede alterarse con las siguientes características para dar lugar a
 
 Un cañón es un largo tubo metálico que propulsa proyectiles a grandes velocidades empleando la pólvora. Un cañón requiere una tripulación de 2 personas para ser usado efectivamente y puede alcanzar distancias de hasta 100 pies.
 
+Para disparar con un cañón se necesita un tiro de Aptitud con arma (armas de fuego) o Bombas, el cual se realiza contra el objetivo de este. El tiro de ataque recibirá una penalización de un dado de Dificultad por cada categoría de tamaño de diferencia que hay entre el cañón y el objetivo. Esta penalización puede reducirse por 1 dado de dificultad por cada miembro adicional de tripulación que esté operando el cañón. En cañón inflige 6+Éxito daño perforante en un radio de salpicadura de 5 pies, y todas las criaturas que se encuentren en su radio de efecto sufrirán además una herida permanente media (grave si están a 50 pies o menos del cañón).
+
 ## Armas de asedio modernas
 
 ### Mortero
