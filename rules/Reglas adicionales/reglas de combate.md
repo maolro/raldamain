@@ -65,3 +65,20 @@ Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Para
 
 Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, añadiendo un dado de Desventaja a los tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta. 
 Las penalizaciones por ocultamiento pueden contrarrestarse gastando Ventajas en un tiro de ataque. Cada ventaja gastada eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
+
+### Ataque conjunto
+
+Un grupo de criaturas de bajo nivel puede realizar un ataque conjunto contra un enemigo más poderoso, uniendo sus fuerzas para llegar a derrotarle. El daño base del ataque conjunto equivaldrá al daño base más alto entre las criaturas que luchan con un incremento de 1 por cada criatura adicional que participe. El tiro de ataque equivale al tiro de ataque más alto entre las criaturas que realicen esta maniobra y incrementará de la siguiente manera según el número de partícipes.
+
+| Número | Incremento                               |
+| ------ | ---------------------------------------- |
+| 2      | 1 dado de Habilidad                      |
+| 3      | 1 dado de Soltura, 1 dado de Habilidad   |
+| 4      | 1 dado de Soltura, 2 dados de Habilidad  |
+| 5      | 1 dado de Soltura, 3 dados de Habilidad  |
+| 6      | 2 dados de Soltura, 3 dados de Habilidad |
+| 7      | 2 dados de Soltura, 4 dados de Habilidad |
+| 8      | 3 dados de Soltura, 4 dados de Habilidad |
+
+Un ataque conjunto cuenta como un ataque de área, infligiendo daño aunque el defensor tenga éxito en el tiro (Evasión se aplica contra este efecto), y el defensor sólo podrá protegerse con Esquiva. El defensor podrá gastar un uso de Parada para reducir el daño que sufre por 2, reduciéndolo como mínimo a 0. Si los atacantes están flanqueando al objetivo entonces este no podrá usar Esquiva para defenderse ni emplear Parada más de una vez al turno. 
+
