@@ -49,6 +49,19 @@ Un ataque de oportunidad también puede provocarse si una criatura guarda su acc
 
 ### Cubierta
 
+Una persona tiene cubierta cuando se encuentra tras un obstáculo que le permite protegerse de proyectiles y explosiones, haciendo que sea más difícil de localizar. Si un personaje tiene cubierta podrá cancelar un éxito adicional al turno en tiros de Esquiva y puede emplear acciones de movimiento para esconderse. Cuando una criatura con cubierta entre en posición defensiva podrá cancelar un éxito adicional al turno si continúa estando detrás de la cubierta. Para que un obstáculo cuente como cubierta debe tener tamaño igual o superior a un cuarto del tamaño de la criatura y estar bloqueando la línea de visión. El máster tiene la última palabra al decidir si algo cuenta como cubierta o no.
+
+Los bonificadores por cubierta se aplicarán también si hay otras criaturas entre el atacante y su objetivo. Un personaje que reciba cubierta por este efecto no podrá esconderse ni podrá cancelar un éxito adicional al turno salvo que haya una criatura de tamaño superior a ella bloqueando el camino del atacante.
+
+En determinadas situaciones pueden encontrarse tipos superiores de cubierta. Si una criatura tiene todo el cuerpo cubierto salvo una pequeña obertura esta recibirá cubierta superior, lo cual le permite cancelar dos éxitos adicionales al turno. Si no hay ningún tipo de obertura entre el atacante y su objetivo este tendrá cubierta completa, lo cual le protegerá de todos los ataques hasta que la cubierta sea destruida.
+
 ### Flanqueo
 
+Una criatura es flanqueada si está siendo atacada desde dos puntos opuestos. Al atacar a una criatura flanqueada el atacante recibirá un dado de Ventaja en su tiro y el defensor no podrá Esquivar para defenderse. Ataque furtivo se aplica contra criaturas flanqueadas y el defensor sólo podrá evitar estas penalizaciones si tiene el atributo Esquiva asombrosa mejorada.
+
+Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Parada contra aquellos enemigos que se encuentren en su flanco delantero. Los ataques hechos por una marabunta contra una única persona cuentan como ataques de área, ya que el defensor sufrirá daño obligatorio aunque tenga éxito en el ataque.
+
 ### Ocultamiento
+
+Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, añadiendo un dado de Desventaja a los tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta. 
+Las penalizaciones por ocultamiento pueden contrarrestarse gastando Ventajas en un tiro de ataque. Cada ventaja gastada eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.

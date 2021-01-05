@@ -8,7 +8,7 @@ sub: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque. 
 
-<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso por lo cual tiras un dado de habilidad menos pero inflinges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño con tus ataques. Añade un dado de Habilidad a tiros de [Destrozar](http://raldamain.com/rules/talentos.html#lista-de-talentos) al usar esta habilidad.
+<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso por lo cual tiras un dado de habilidad menos pero infliges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño con tus ataques. Añade un dado de Habilidad a tiros de [Destrozar](http://raldamain.com/rules/talentos.html#lista-de-talentos) al usar Ataque poderoso.
 
 <u>Impacto de choque:</u> Al impactar con un ataque contundente, gasta 1 ventaja para empujar al objetivo 5 pies hacia atrás. Si tu fuerza excede a la de tu objetivo lo tropiezas además de empujarlo. Tus ataques provocan [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) a criaturas que lleven armadura aunque su DEF reduzca tu daño a 0.
 
