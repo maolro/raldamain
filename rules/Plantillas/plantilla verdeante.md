@@ -1,8 +1,4 @@
----
-title: Plantilla Verdeante
-main: Rangos
-sub: Plantillas
----
+-
 
 ## Rango I
 
@@ -20,13 +16,13 @@ Incrementa tu CAR por 1.
 
 <u>Comunión con la naturaleza:</u> Tus sentidos aumentan su eficacia, llegando a ser como los de un animal salvaje. Tienes vista a oscuras y olfato en un radio de 60 pies. Puedes además realizar un ritual de una hora de duración donde entras en harmonía con la naturaleza de tu región, lo cual te permite conocer información sobre los espíritus y localidades de esta. Si tienes rangos en Rastrear puedes convertir una región en tu terreno predilecto tras armonizar con ella.
 
-<u>Furia de la naturaleza:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales y tus armas hechas de madera con energía natural. Los ataques infundidos hacen +2 daño base y puedes gastar 2 ventajas generadas para reducir la armadura de tu objetivo por 1. No sufres daño no-letal con esta habilidad si has armonizado con la región.
+<u>Furia de la naturaleza:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales y tus armas hechas de madera con energía natural. Un ataque infundido con la naturaleza hace +2 daño base y puedes gastar 2 ventajas generadas para reducir la armadura de tu objetivo por 1. No sufres daño no-letal con esta habilidad si has armonizado con la región.
 
 ## Rango III 
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Armadura de cardos:</u>  
+<u>Armadura de cardos:</u>  Como acci
 
 <u>Arraigar:</u>  
 
