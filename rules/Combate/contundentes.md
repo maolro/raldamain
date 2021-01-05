@@ -12,8 +12,6 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Impacto de choque:</u> Al impactar con un ataque contundente, gasta 1 ventaja para empujar al objetivo 5 pies hacia atrás. Si tu fuerza excede a la de tu objetivo lo tropiezas además de empujarlo. Tus ataques provocan [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) a criaturas que lleven armadura aunque su DEF reduzca tu daño a 0.
 
-
-
 ## Rango II
 
 <u>Concusión:</u> Al impactar con un ataque gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque y 4 ventajas para que esté aturdido durante un turno. Una criatura afectada por concusión no puede moverse gastando ventajas.
