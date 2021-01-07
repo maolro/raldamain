@@ -27,6 +27,6 @@ Aquí se encuentra una lista de las principales tácticas de combate disponibles
 
 **Retirada:** La unidad se retira de manera ordenada, minimizando las bajas que reciba. Una unidad que emplea esta táctica no provoca ataques de oportunidad al retirarse y recibe resistencia 2 a ser dispersada, pero no podrá atacar al enemigo.
 
-**Saboteadores:** La unidad se especializa en acabar con máquinas de asedio. Si la unidad empieza su turno en el área de una máquina de asedio sin defensores esta quedará destruida inmediatamente. Una unidad con esta táctica también puede gastar 4 ventajas generadas en un tiro de ataque para eliminar una máquina de asedio del ejército enemigo.
+**Saboteadores:** La unidad se especializa en acabar con máquinas de asedio. Si la unidad empieza su turno en el área de una máquina de asedio sin defensores esta quedará destruida inmediatamente. Una unidad con esta táctica también puede gastar 4 ventajas generadas en un tiro de ataque para eliminar una máquina de asedio del ejército enemigo. Para emplear esta táctica el ejército deberá tener como mínimo un soldado capaz de realizar ataques mágicos de área o explosivos.
 
 **Vigilancia:** La unidad está siempre alerta de posibles enemigos. Una unidad con vigilancia puede defenderse de ataques sorpresa y los atacantes no recibirán ningún beneficio por ataque sorpresa contra ella. 

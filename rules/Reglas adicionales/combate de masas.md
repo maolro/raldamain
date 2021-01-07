@@ -9,7 +9,7 @@ Estas reglas se utilizarán para determinar los resultados de una lucha entre do
 
 ### El tiro de ataque
 
-Cuando uno de los dos grupos realice un ataque este tirará un número de dados igual al tiro de ataque medio que tenga dicha tropa contra la tirada defensiva base que tenga el grupo defensor. Las bajas que tenga el bando defensor se determinan según esta tabla. 
+Cuando uno de los dos grupos realice un ataque este tirará un número de dados igual al tiro de ataque medio que tenga dicha tropa contra la tirada defensiva base que tenga el grupo defensor. Las bajas que tenga el bando defensor se determinan según esta tabla. El número de bajas generadas no podrá exceder el número de atacantes aunque el tiro sea superior.
 
 | Proporción aproximada | Bajas base |
 | --------------------- | ---------- |
@@ -60,4 +60,35 @@ En este apartado se muestran las diferentes situaciones en el campo de batalla q
 - **Fortificación:** Una unidad formada por tropas a distancia recibirá grandes bonificadores defensivos si se encuentra protegida por una muralla o cualquier otro elemento que le dé cubierta. Si tiene cubierta parcial reducirá el número de bajas por 1, mientras que si tiene cubierta completa reducirá las bajas por 2. Una fortificación puede destruirse con armas de asedio.
 - **Bosque:** Las unidades que se encuentren en un bosque están protegidas de ataques a distancia hechos por criaturas fuera del bosque, pero su velocidad quedará reducida a la mitad. Los bosques también dan grandes beneficios al sigilo, permitiendo que una unidad se esconda en él como acción de movimiento.
 - **Río:** Los ríos son un gran obstáculo para las tropas que intenten pasar. Un río reduce la velocidad de las unidades a la mitad y causa que esas no puedan defenderse de ataques a distancia. Algunos ríos pueden ser especialmente caudalosos o rugientes, los cuales evitan que las unidades puedan cruzar a pie.
+
+## Rangos y combate de masas
+
+Ciertos rangos que pueden tener algunas unidades modificarán tanto los tiros de ataque y defensa como las bajas producidas que causará un ejército. Una lista de los rangos y sus modificaciones puede encontrarse aquí.
+
+- **Ataques adicionales:** Si un soldado de la unidad puede realizar más de un ataque al turno empleando sus armas, incrementará su superioridad numérica por un paso en tiros de combate de masas, pudiendo generar más bajas al turno que su número permitiría. En el caso que tenga más de dos ataques al turno el numero de bajas que causa incrementará en 1 por cada ataque adicional. 
+- **Ataque de área:** Los soldados que puedan realizar ataques de área tanto por magia o explosivos son especialmente devastadores en el campo de batalla. El ejército defensor sólo podrá usar Esquiva para evitar un ataque de área y sufrirá un número adicional de bajas igual al radio del efecto dividido entre 5 (si es una línea, el número de bajas incrementará por 1 por cada 10 pies de esta que pase por el ejército enemigo). Si el defensor se encuentra usando la táctica Línea defensiva incrementará el número de bajas por 2 salvo que se disperse.
+- **Corte:** Los soldados con la habilidad Corte o una equivalente (como Maza oscilante) incrementarán el número de bajas que provocan por 2 al realizar esta acción. Corte no se aplica contra unidades que estén usando Línea defensiva o Defensa absoluta. La habilidad Torbellino de acero y similares funcionan igual que Corte pero las bajas causadas incrementarán por 4 si el atacante está rodeado.
+- **Sanación:** Los soldados con la capacidad de sanar pueden sanar a soldados moribundos, salvándoles de la muerte y dándoles fuerzas para seguir luchando. Un soldado con sanación puede gastar una acción de turno completo para revivir a un soldado caído. Estas habilidades costarán una acción estándar si el soldado tiene rangos que le permitan revivir a tropas caídas. Después de una batalla un ejército con sanadores recuperará un número de soldados iguales al número de estos efectivos en el ejército. 
+
+## Ejemplos de ejército
+
+Aquí se encuentran algunas 
+
+**Unidad de infantería:** 20 soldados (nivel 2), 4 soldados de élite (nivel 4), 1 teniente (nivel 7)
+
+**Unidad de arqueros:** 20 arqueros (nivel 2), 4 arqueros de élite (nivel 4), 1 teniente (nivel 7)
+
+**Unidad de escaramuzadores:** 16 escaramuzadores (nivel 2), 4 escaramuzadores de élite (nivel 4)
+
+**Carga de caballería:** 10 caballería pesada (nivel 5)
+
+**Arqueros a caballo:** 10 arqueros de caballería (nivel 5)
+
+**Jinetes exploradores:** 10 caballería ligera (nivel 3)
+
+**Escuadrón de especialistas:** 10 soldados de élite (nivel 4)
+
+**Escuadrón de comandos:** 10 escaramuzadores de élite (nivel 4)
+
+
 
