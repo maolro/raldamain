@@ -1,10 +1,14 @@
--
+---
+title: Plantilla verdeante
+main: Rangos
+sub: Plantillas
+---
 
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Piel robliza:</u> Recibes armadura natural igual a tu CON - 2 siempre y cuando no lleves armadura metálica. Si tienes el atributo Armadura natural la defensa otorgada por Piel robliza no se acumula, sino que aumenta tu armadura natural base por 2.
+<u>Aspecto primigenio:</u> Tu conexión con la naturaleza se manifiesta en tu cuerpo, dándote rasgos de un ser natural. Tienes 3 PT, los cuales puedes gastar en mejoras corporales. Algunas posibilidades son garras (1 PT), armadura natural (1 PT), depredador (1 PT),  mordisco (2 PT), movimiento adicional (1 PT), golpe (1 PT) o arrollar (2 PT). Aspecto primigenio no puede darte órganos y fisiología que no tienes naturalmente, como es el caso de miembros adicionales o alas.
 
 <u>Toque de vida:</u> La energía vital infunde tu cuerpo, permitiéndote sanar heridas y hacer crecer las plantas. Desbloqueas los rangos de Magia de naturaleza y al usar Primeros auxilios sanas también Vitalidad a tu objetivo igual a tu rango de plantilla + 2. Una vez al día puedes reducir el nivel de una herida permanente por 1 o eliminar un veneno. Esta habilidad puede usarse dos veces al día a rango III y tres veces a rango V. 
 
@@ -22,7 +26,7 @@ Incrementa tu CAR por 1.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Armadura de cardos:</u>  Como acci
+<u>Armadura de cardos:</u> Como acción estándar puedes rodearte de plan
 
 <u>Arraigar:</u>  
 
@@ -32,7 +36,7 @@ Incrementa tu DES por 1.
 
 <u>Puerta arbórea:</u>
 
-<u>Despertar natural:</u>
+Despertar natural:
 
 ## Rango V 
 
