@@ -31,7 +31,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Aura abrasadora:</u> Como acción estándar puedes rodearte de un aura de calor intenso de radio 30 pies. Todas las criaturas sin resistencias al fuego que empiecen su turno en el Aura abrasadora sufrirán 1 daño no-letal y el nivel de las quemaduras que inflijas aumenta por 1. Cuando una criatura te impacte con un arma cuerpo a cuerpo puedes gastar 2 desventajas generadas  para infligirle una quemadura leve. Una criatura que agarres o te esté agarrando sufrirá automáticamente una quemadura media. Puedes sufrir 1 daño no-letal para aumentar la fuerza de las llamas durante un turno, otorgándote Inmunidad al fuego y Resistencia al frío igual a tu rango, además de infligiendo una quemadura leve a todas las criaturas en el área que lleven armadura metálica.
 
-<u>Conexión elemental:</u> El fuego sana tus heridas y te permite recuperar la energía gastada. Al empezar tu turno en un área que esté en llamas o de calor extremo recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (desiertos, volcanes o forjas) recuperas todos tus PV como si realizases un descanso largo. 
+<u>Conexión elemental:</u> El fuego sana tus heridas y te permite recuperar la energía gastada. Al empezar tu turno en un área que esté en llamas o de calor extremo recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (desiertos, volcanes o forjas) recuperas todos tus PV como si realizases un descanso largo. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
 
 ## Rango IV
 
