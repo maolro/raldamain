@@ -9,7 +9,7 @@ Estas reglas se utilizarán para determinar los resultados de una lucha entre do
 
 ### El tiro de ataque
 
-Cuando uno de los dos grupos realice un ataque este tirará un número de dados igual al tiro de ataque medio que tenga dicha tropa contra la tirada defensiva base que tenga el grupo defensor. Las bajas que tenga el bando defensor se determinan según esta tabla. El número de bajas generadas no podrá exceder el número de atacantes aunque el tiro sea superior.
+Cuando uno de los dos grupos realice un ataque este tirará un número de dados igual al tiro de ataque medio que tenga dicha tropa contra la tirada defensiva base que tenga el grupo defensor. Las bajas que tenga el bando defensor se determinan según esta tabla. El número de bajas generadas no podrá exceder el número de atacantes aunque el tiro sea superior. En el caso de batallas a mayor escala el número de bajas aumentará. Multiplica las bajas base por 2 en un enfrentamiento entre grupos de 50, por 4 en un enfrentamiento entre grupos de 100, por 10 en un enfrentamiento entre grupos de 250 y por 20 en un enfrentamiento entre grupos de 1000.
 
 | Proporción aproximada | Bajas base |
 | --------------------- | ---------- |
@@ -73,11 +73,11 @@ Ciertos rangos que pueden tener algunas unidades modificarán tanto los tiros de
 
 ## Ejemplos de ejército
 
-Aquí se encuentran algunas de las agrupaciones más comunes de soldados.
+Un ejército se encuentra agrupado en compañías, las cuales constan de 50 a 100 soldados. Estas compañías se componen a su vez de subdivisiones, siendo las siguientes las más comunes.
 
-**Unidad de infantería:** 20 soldados (nivel 2), 4 soldados de élite (nivel 4), 1 teniente (nivel 7)
+**Unidad de infantería:** 20 soldados (nivel 2), 4 soldados de élite (nivel 4), 1 teniente (nivel 6)
 
-**Unidad de arqueros:** 20 arqueros (nivel 2), 4 arqueros de élite (nivel 4), 1 teniente (nivel 7)
+**Unidad de arqueros:** 20 arqueros (nivel 2), 4 arqueros de élite (nivel 4), 1 teniente (nivel 6)
 
 **Unidad de escaramuzadores:** 16 escaramuzadores (nivel 2), 4 escaramuzadores de élite (nivel 4)
 
@@ -85,7 +85,7 @@ Aquí se encuentran algunas de las agrupaciones más comunes de soldados.
 
 **Arqueros a caballo:** 10 arqueros de caballería (nivel 5)
 
-**Jinetes exploradores:** 10 caballería ligera (nivel 3)
+**Jinetes exploradores:** 15 caballería ligera (nivel 3)
 
 **Escuadrón de especialistas:** 10 soldados de élite (nivel 4)
 
