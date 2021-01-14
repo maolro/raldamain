@@ -4,47 +4,47 @@ main: Rangos
 sub: Armas
 ---
 
-## Rango I
+## Range I
 
-Tiras un dado de soltura adicional en tiros de ataque.
+You roll an additional loosening die on attack shots.
 
-<u>Enredar:</u> Al impactar con un ataque de cadena, gasta 2 ventajas para agarrar una parte del objetivo. Una criatura agarrada de esta manera no es capaz de alejarse mas de 15 pies de ti y todas las criaturas obtienen un dado de Ventaja en ataques contra ella. Puedes emplear 1 ventaja o desventaja generada para empujar 5 pies a la criatura agarrada o 2 desventajas para tropezarla (desarmarla si le agarras de un brazo).
+<When hitting with a chain attack, you spend 2 advantages to grab a part of the target. A creature caught in this way is not able to get more than 15 feet away from you and all creatures get one Advantage die in attacks against it. You can use 1 generated Advantage or Disadvantage to push the grabbed creature 5 feet or 2 Disadvantages to trip it up (disarm it if you grab it by one arm).
 
-<u>Danza de cadenas:</u> Girando tu cadena a gran velocidad eres capaz de protegerte de tus enemigos. Al gastar una acción de movimiento para entrar en posición defensiva, cada vez que una criatura intente entrar en el área que amenaces esta sufrirá un ataque de oportunidad inmediato, deteniéndola inmediatamente al impactar con este. Puedes utilizar Parada con tus cadenas sólo si estás en posición defensiva, pero no recibirás ninguna bonificación el el tiro salvo que gastes una acción estándar para entrar en forma defensiva. Una vez al turno puedes cancelar un éxito que genere un enemigo en un ataque (2 veces al turno a rango III y tres veces al turno a rango V).
+<Chain dance: By turning your chain at high speed you are able to protect yourself from your enemies. By spending a movement action to enter a defensive position, every time a creature tries to enter the area you threaten it will suffer an immediate attack of opportunity, stopping it immediately on impact with it. You can use Stop with your chains only if you are in a defensive position, but you will not receive any bonus on the shot unless you spend a standard action to enter defensively. Once a turn you can cancel a success that generates an enemy in an attack (twice a turn at range III and three times a turn at range V).
 
-## Rango II
+## Range II
 
-<u>Ataque circular:</u> Como acción de turno completo puedes atacar a todas las criaturas en un arco de 15 pies. No podrás usar enredar en un ataque circular y este podrá detenerse de la misma manera que corte (es decir, al impactar con un escudo). Danza de cadenas se activa durante un turno al realizar un Ataque circular
+<As a full turn action you can attack all creatures in a 15 foot arc. You cannot use entanglement in a circle attack and it can be stopped in the same way as cutting (i.e. on impact with a shield). Chain Dance is activated during a turn when performing a Circular Attack
 
-<u>Cargar ataque:</u> Al emplear tu acción estándar en Danza de cadenas estas girarán con más velocidad, aumentando el daño que infligen. Cada acción estándar que gastes en esta manera te añadirá un dado de Ventaja en tu siguiente tiro de ataque y aumentará el daño base por 1, llegando como máximo a +3 daño. Perderás todos tus ataques cargados si sufres una herida permanente o al perder la concentración.
+<When you use your standard Chain Dance action, the chains will spin faster, increasing the damage they inflict. Each standard action you spend in this manner will add one Advantage die to your next attack shot and increase base damage by 1, reaching a maximum of +3 damage. You will lose all your loaded attacks if you suffer permanent damage or lose concentration.
 
-## Rango III 
+## Range III 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una [herida permanente leve](http://raldamain.com/rules/Heridas%20permanentes.html) (4 ventajas para infligir una herida permanente media).
+You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a [mild permanent injury](http://raldamain.com/rules/Heridas%20permanentes.html) (4 allowances to inflict a medium permanent injury).
 
-<u>Agarre con cadena:</u> Agarrar objetivos enredados por tus cadenas te cuesta una acción de movimiento o un gasto de 2 ventajas. Puedes mover hasta 10 pies en cualquier dirección a una criatura agarrada o estamparla forzosamente contra una superficie. Estampar una criatura es un tiro de Heroísmo que infligirá 1+Éxito daño contundente. Usar cualquiera de estas habilidades te cuesta una acción de movimiento.
+<Chain Grabbing: Grabbing targets that are tangled in your chains costs you a move action or the expense of 2 advantages. You can move up to 10 feet in any direction to a clinging creature or force it to a surface. Stamping a creature is a Heroic shot that will inflict 1+Successful blunt damage. Using any of these skills costs you one movement action.
 
-<u>Reflejar proyectiles:</u> Danza de cadenas puede usarse para protegerte de ataques a distancia o ataques mágicos con área de efecto de 10 pies o menos. Esta habilidad funciona como el atributo con el mismo nombre de artes marciales. Esta acción sólo puede usarse si tienes activa Danza de cadenas.
+<Reflecting Projectiles: Chain Dance can be used to protect you from ranged attacks or magical attacks with an area of effect of 10 feet or less. This skill works as the attribute with the same name of martial arts. This action can only be used if you have Chain Dance active.
 
-## Rango IV 
+## Range IV 
 
-<u>Cadena serpenteante:</u> Puedes ajustar el alcance de tus cadenas y usarlas para realizar sorprendentes técnicas de combate. Ajustar el alcance te cuesta una acción bonus usable una vez al turno y altera tu alcance por 5 pies. Tirarás un dado de dificultad menos en tiros de Parada si tu alcance equivale a 15 pies o más. Volver a aumentar o disminuir el alcance te cuesta una acción de movimiento, llegando como máximo a 15 pies. Al hacer un ataque harás daño a todas las criaturas que estén en una línea de longitud igual a tu alcance, ignorando cubierta y protecciones.
+<You can adjust the range of your chains and use them to perform amazing combat techniques. Adjusting the range costs you a usable bonus action once a turn and alters your range by 5 feet. You will roll one less difficulty die on stop shots if your range is 15 feet or more. Increasing or decreasing the range again costs you a move action, reaching a maximum of 15 feet. When making an attack you will damage all creatures that are in a line of equal length to your range, ignoring cover and protections.
 
-<u>Escudo humano:</u> Puedes emplear criaturas agarradas por ti como escudos humanos, reposicionándolos para que reciban ataques hechos hacia ti. Al gastar desventajas en mover a una criatura, si llegas a moverla en medio de un ataque a distancia o mágico esta sufrirá el daño sin poder tirar defensivamente. También puedes usar esta habilidad para protegerte de ataques cuerpo a cuerpo, pero para ello la criatura agarrada debe ser movida a la posición exacta de tu atacante.
+<You can use creatures held by you as human shields, repositioning them to receive attacks made on you. When spending disadvantages in moving a creature, if you move it in the middle of a ranged or magical attack it will suffer the damage without being able to shoot defensively. You can also use this skill to protect yourself from melee attacks, but to do so the creature must be moved to the exact position of your attacker.
 
-## Rango V
+## Range V
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
+You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a medium permanent wound (4 allowances to inflict a severe permanent wound).
 
-<u>Ahorcar:</u> Al agarrar exitosamente a una criatura puedes emplear 2 ventajas o una acción de movimiento para agarrarla del cuello, dejándola con riesgo de ahogarse. Si una criatura pasa agarrada un número de turnos superior a su CON caerá inconsciente. Si estrangulas a una criatura con un ataque sorpresa el número de turnos que puede pasar antes de caer inconsciente se reduce por 1 (mínimo 0). Si una criatura agarrada de esta manera sufre una caída esta debe tirar CON contra tu tiro de ataque o morirá ahorcada al instante.
+<By successfully grabbing a child, you can use 2 advantages or a movement action to grab the child's neck, leaving it at risk of drowning. If a child spends more turns grabbing than its NOC, it will fall unconscious. If you strangle a creature with a surprise attack the number of turns it can take before falling unconscious is reduced by 1 (minimum 0). If a creature grabbed in this manner suffers a fall it must throw WITH against your attack shot or it will instantly die by hanging.
 
-<u>Reposicionar:</u> Recibes la habilidad de Reposicionar de aptitud de filos ligeros como si fueses de rango III. Al usar Reposicionar también moverás 5 pies a la criatura que estés agarrando.
+<Reposition: You receive the Reposition light-edged skill as if you were rank III. By using Reposition you will also move 5 feet to the creature you are holding.
 
-# Armas
+# Weapons
 
-Una cadena base hace 2+Éxito daño cortante y tiene un alcance de 10 pies. Una cadena base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+A base chain does 2+shear damage and has a range of 10 feet. A base chain can be modified with the following features to produce all types of related weapons.
 
-- **Látigo:** En lugar de una cadena te especializas luchando con un látigo. Un látigo hace 1+Éxito daño contundente y puede herir la vitalidad. 
-- **Gancho:** El arma tiene un gancho en su punta con el cual puede agarrar con mayor facilidad. A rango I en lugar de enredar a tu objetivo puedes clavar un gancho en este, 
-- **Contundente:**
-- **Doble cadena:**
+- Whip:** Instead of a chain you specialize in fighting with a whip. A whip does 1+Successful blunt damage and can hurt your vitality. 
+- Hook:** The weapon has a hook on its tip with which you can grab more easily. At range I instead of entangling your target you can stick a hook in it, 
+- Bludgeoning
+- Double chain.

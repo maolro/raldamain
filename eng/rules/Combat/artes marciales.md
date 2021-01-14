@@ -4,48 +4,48 @@ main: Rangos
 sub: Armas
 ---
 
-## Rango I
+## Range I
 
-Tiras un dado de soltura adicional en tiros de ataque. 
+You roll an additional loosening die on attack shots. 
 
-<u>Secuencia de ataques:</u> gasta una acción de movimiento para hacer un ataque sin arma adicional. Puedes sustituir uno de estos ataques recibidos por esta habilidad para hacer un tiro de desarmar, tropezar, robar o juego sucio. El máximo de ataques que puedes hacer al turno es 1+R.
+<u>Attack sequence:</u> spends a move action to make an attack without additional weapon. You can substitute one of these received attacks for this ability to make a disarm, trip, steal or foul play shot. The maximum number of attacks you can do per turn is 1+R.
 
-<u>Defensa marcial:</u> Puedes usar una parada como reacción, tirando tus dados de ataque natural defensivamente. Gasta 2 ventajas generadas para hacer un ataque natural como reacción (funciona como secuencia de ataques). Si intentas usar defensa marcial contra un enemigo con un arma, este puede gastar ventajas para hacerte [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) aunque falle el tiro. Una vel al turno cancela un éxito enemigo (2/turno a rango III y 3/turno a rango V).
+<Martial defense: You can use a stop as a reaction, rolling your natural attack dice defensively. Spend 2 advantages generated to make a natural attack as a reaction (it works as a sequence of attacks). If you try to use martial defense against an enemy with a weapon, he can spend advantages to make you [permanent injuries](http://raldamain.com/rules/Heridas%20permanentes.html) even if he misses the shot. One candle per turn cancels an enemy success (2/turn at range III and 3/turn at range V).
 
-## Rango II
+## Range II
 
-<u>Puño aturdidor:</u> Al impactar con un ataque natural, gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque (4 ventajas para que esté aturdido durante un turno). Una criatura afectada por puño aturdidor no puede moverse gastando ventajas.
+<When hitting with a natural attack, spend 2 advantages so that your target cannot defend against your next attack (4 advantages so that he is stunned for one turn). A creature affected by Stun Fist cannot move by spending advantages.
 
-<u>Patada feroz:</u> Al impactar con un ataque natural, gasta 1 ventaja para empujar al objetivo 5 pies hacia atrás. Si tu fuerza  excede a la de tu objetivo lo haces tropezar además de empujarlo.
+<When hitting with a natural attack, spend 1 advantage to push the target back 5 feet. If your strength exceeds that of your target you will trip him up as well as push him.
 
-## Rango III
+## Range III
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para infligir una herida permanente leve (infliges una herida permanente media si usas puño preciso).
+You roll an additional loosening die on attack shots. Spend 4 advantages to inflict a mild permanent wound (you inflict a medium permanent wound if you use an accurate fist).
 
-<u>Desviar proyectiles:</u> Defensa marcial puede usarse como defensa contra ataques a distancia. Gasta 2 desventajas generadas para atrapar el proyectil y 4 para desviarlo contra otro objetivo (No puedes usar esta habilidad para desviar proyectiles rápidos como flechas o dardos). Defensa marcial sigue sin protegerte contra balas.
+<u>Diverting projectiles:</u> Martial defense can be used as defense against ranged attacks. You spend 2 generated handicaps to catch the projectile and 4 to deflect it against another target (You can't use this skill to deflect fast projectiles like arrows or darts). Martial defense still doesn't protect you against bullets.
 
-<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Añades un dado de dificultad a puñetazos precisos (2 si es cabeza, brazos o entrepierna), pero al impactar inflinges una herida permanente leve al objetivo. A rango V puedes gastar 2 ventajas para infligir una herida permanente media al objetivo.
+<You are able to aim at the enemy's vital points, sacrificing ease of impact for the opportunity to make permanent wounds. You add a difficulty die to precise punches (2 if head, arms or crotch), but on impact you inflict a slight permanent wound on the target. At range V you can spend 2 advantages to inflict a medium permanent wound to the target.
 
-## Rango IV 
+## Range IV 
 
-<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un ataque natural a un objetivo con armadura, gasta 2 ventajas para reducir su DEF por 1. Esta habilidad también puede usarse contra escudos si tu ataque es bloqueado por uno, lo cual le hará un daño, como la habilidad de Armas Contundentes Rompescudos.
+<Devastating blow: Your natural attacks can break wood and even metal. When hitting a target with armor with a natural attack, you spend 2 advantages to reduce their DEF by 1. This skill can also be used against shields if your attack is blocked by one, which will do damage to it, like the Blunt Shield Breaker skill.
 
-<u>Punto de presión:</u> Puedes apuntar a los puntos de presión de un objetivo para inutilizar parte de su cuerpo y hasta impedir que usen magia. Al impactar con un puño preciso, gasta 2 ventajas para paralizar temporalmente la parte del cuerpo a la que impacte. Si es una pierna, es tropezado y su velocidad se reduce a la mitad; si es un brazo es desarmado y no puede atacar con el, y si eliges la cabeza cae inconsciente inmediatamente.
+<You can target the pressure points of a target to disable part of their body and even prevent them from using magic. By hitting with an accurate fist, you spend 2 advantages to temporarily paralyze the body part you hit. If it is a leg, it is tripped and its speed is reduced to half; if it is an arm it is disarmed and cannot attack with it, and if you choose the head it falls unconscious immediately.
 
-## Rango V 
+## Range V 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para infligir una herida permanente media (infliges una herida permanente grave si usas puño preciso).
+You roll an additional loosening die on attack shots. Spend 4 advantages to inflict a medium permanent wound (you inflict a severe permanent wound if you use an accurate fist).
 
-<u>Puñetazo mortal:</u> Si logras impactar a la cabeza del objetivo con un puño preciso, gasta 4 ventajas para matar instantáneamente al objetivo. Para que esta habilidad funcione con el objetivo no debe llevar armadura o su defensa tiene que ser reducida a 0.
+<Deadly Punch: If you hit the target's head with an accurate fist, you spend 4 advantages to instantly kill the target. For this skill to work on the target it must not wear armor or its defense must be reduced to 0.
 
-<u>Ataque despiadado:</u> Una vez al turno, haz un ataque natural adicional como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que infringirías normalmente.
+<Ruthless Attack: Once a turn, perform an additional natural attack as a bonus action against a target that is stunned or unconscious. The permanent wounds made by this attack are of a higher level than you would normally inflict.
 
-# Armas
+# Weapons
 
-Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un ataque natural puede modificarse con las siguientes características tanto fisiológicas como tecnológicas para variar los atributos de tus ataques:
+A natural base attack is a punch that does 0+Successful blunt damage. A natural attack can be modified with the following characteristics both physiological and technological to vary the attributes of your attacks:
 
-- **Guantalete:**
-- **Garra:**
-- **Mordisco:**
-- **Tentáculo:**
-- **Perforar:**
+- Gauntlet:**
+- Garter:**
+- Bite:**
+- Tentacle:**
+- ? Drill:**

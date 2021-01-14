@@ -4,55 +4,55 @@ main: Rangos
 sub: Armas
 ---
 
-## Rango I
+## Range I
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una [herida permanente](http://raldamain.com/rules/Heridas%20permanentes.html) leve (4 ventajas para infligir una herida permanente media).
+You roll an additional loosening die on attack shots. You spend 2 allowances for inflicting a mild [permanent injury](http://raldamain.com/rules/Heridas%20permanentes.html) (4 allowances for inflicting a medium permanent injury).
 
-<u>Puntería mortal:</u> Tus ataques ignoran la armadura de enemigos como si fueran de toque si tu objetivo está a una distancia menor de 30 pies (15 pies si es un arma de una mano). Puedes tomar una penalización de un dado de dificultad en el tiro para usar esta habilidad contra un enemigo a una distancia superior a la indicada (añade un dado de dificultad adicional por cada incremento de 30 pies de distancia que te separe de tu objetivo).
+<Your attacks ignore enemy armor as if they were touching if your target is at a distance of less than 30 feet (15 feet for a one-handed weapon). You can take a one die shooting difficulty penalty to use this skill against an enemy at a greater distance than indicated (add one additional difficulty die for each 30 foot distance increment that separates you from your target).
 
-<u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (gratuita si es un arma a una mano). Tienes además +1 prioridad en la iniciativa (+2 a rango III y +3 a rango V).
+<Drawing your weapon costs you one movement action (free if it is a one-handed weapon). You also have +1 priority in the initiative (+2 at rank III and +3 at rank V).
 
-## Rango II
+## Range II
 
-<u>Recarga rápida:</u> Recargar un arma te cuesta una acción de movimiento, mientras las armas grandes requieren una acción estándar (normalmente recargar es una acción estándar y recargar un arma grande es una de turno completo).
+<u> Quick Reload:</u> Reloading a weapon costs you a move action, while big weapons require a standard action (normally reloading is a standard action and reloading a big weapon is a full turn action).
 
-<u>Truco de bala:</u> Emplea tus ventajas para hacer un truco de combate. Esta habilidad solo se puede usar si impactas al objetivo., y todos los trucos de combate cuestan 2 ventajas: 
+<Bullet trick:</u> Use your advantages to do a combat trick This skill can only be used if you hit the target, and all combat tricks cost 2 advantages: 
 
-- **Disparo falso**: El objetivo es fintado durante un turno, haciendo que no pueda esquivar el siguiente ataque que reciba. Gasta una ventaja adicional para que el atacante reciba un dado de Ventaja en su siguiente tiro.
-- **Disparo atronador:** El disparo provoca un gran estruendo, espantando al objetivo durante un turno. Gasta una ventaja adicional para hacer que se mueva 5 pies en una dirección aleatoria (2 para hacer que se lance al suelo).
-- **Disparo afortunado**: Destruye un objeto pequeño que lleve el objetivo (pociones, armas enfundadas, una bolsa lateral). Si el objeto impactado es una bomba explota en el acto. Gata 2 ventajas adicionales para que suelte un objeto que lleva.
+- False fire: The target is faked during a turn, making him unable to dodge the next attack he receives. He spends an additional advantage so that the attacker receives an Advantage die on his next shot.
+- Thunderbolt: The shot causes a loud bang, scaring the target away for a turn. It spends an additional advantage to make it move 5 feet in a random direction (2 to make it hit the ground).
+- Lucky Shot: Destroy a small object carrying the target (potions, sheathed weapons, a side bag). If the impacted object is a bomb, it explodes on the spot. Cat 2 additional advantages to drop an object it is carrying.
 
-## Rango III
+## Range III
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
+You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a medium permanent wound (4 allowances to inflict a severe permanent wound).
 
-<u>Disparo preciso:</u> Tus ataques a distancia ignoran cubierta y ocultamiento a menos que sea completo eludiendo así cualquier tipo de penalizador (siendo 2 dados de Desventaja normalmente). Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal.
+<Your long-range attacks ignore cover and concealment unless it is complete, thus avoiding any type of penalty (2 dice being normally a Disadvantage). Accurate shooting only works against targets in your kill radius.
 
-<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del francotirador requieren una acción de turno completo si no utilizas un arma con la habilidad Francotirador.
+<Sniper eye reduces all penalties for shooting at a distance by one Difficulty die and doubles the distance at which you can use deadly aim. All sniper eye shots require a full turn action if you do not use a weapon with the Sniper skill.
 
-## Rango IV
+## Range IV
 
-<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después por ejemplo). Tampoco sufres penalizaciones al disparar montado o en un vehículo en movimiento.
+<Moving shot:</u> You can move before and after shooting, distributing your total movement as you wish (15 feet before and 15 feet after for example). You are also not penalized when shooting mounted or in a moving vehicle.
 
-<u>Disparos a bocajarro</u>: Como acción de turno completo puedes hacer una secuencia de disparos rápidos. De esta manera haces un ataque adicional con tu arma, pero sufriendo un penalizador de un dado de Dificultad dicional en todos tus ataques.
+<Point-blank shooting: As a full turn action you can make a sequence of quick shots. In this way you make an additional attack with your weapon, but suffering a penalty of one Die of Difficulty in all your attacks.
 
-## Rango V
+## Range V
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente grave.
+You roll an additional loosening die on attack shots. You spend 2 advantages to inflict a serious permanent injury.
 
-<u>Impacto vital:</u> Al impactar a un enemigo con un ataque, gasta 4 ventajas para multiplicar tu daño base por 2, infligiendo automáticamente una herida grave si hace al menos un punto de daño. Para usar esta habilidad tienes que haber usado Puntería experta en tu ataque.
+<When you hit an enemy with an attack, you spend 4 advantages to multiply your base damage by 2, automatically inflicting a serious injury if you do at least one point of damage. To use this skill you must have used expert aim in your attack.
 
-<u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Si gastas una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica en su tiro defensivo.
+<Your attacks are able to hit the weak point of the target. If you spend a move action to aim at a shot you can make the defender unable to use shield or magic stop on his defensive shot.
 
-# Armas
+# Weapons
 
-Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 90 pies y se necesita una acción estándar para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+A base firearm does 5+successful puncture damage, has a medium range of 90 feet and requires a standard action to reload. This weapon is made for campaigns set in the Renaissance or pirate era, but also serves for more modern campaigns with the appropriate improvements. A base firearm can be modified with the following features to accommodate all types of related weapons.
 
-- **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base por 1 y su distancia por 30 pies a cambio de una mayor facilidad de uso. Las pistolas de mano necesitan sólo una acción de movimiento para recargar y pueden utilizarse en combate con dos armas.
-- **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
-- **Perdigones:** En lugar de balas el arma disparará una lluvia de perdigones de plomo. Un arma de perdigones debe tener recámara y la gastará al completo con cada disparo, pero podrá alcanzar a todas las criaturas en un cono de 15 pies al disparar e inflinge +1 daño base. 
-- **Doble cañón:** El arma dispara dos balas al turno con un ataque a costa de hacerla más difícil de utilizar. El daño base de un arma de doble cañón aumenta por 2 pero tirarás un dado de habilidad menos en los ataques que hagas con ella.
-- **Potente:** Un arma potente dispara las balas con mayor potencia pero tendrá una gran fuerza de retroceso. Un arma potente inflige +1 daño base pero sólo puede ser usada por personajes con FUE 2 o más. Si el arma es de dos manos el usuario deberá tener FUE 3 o más o recibirá un penalizador de un dado de desventaja en todos sus tiros.
-- **Automática:** El arma tiene un sistema para disparar balas de forma automática. Hacer un ataque de forma automática te cuesta una acción estándar y podrás atacar a cada criatura que se encuentre en un cono de 30 pies, empezando por la más cercana. Estos ataques consumirán 4 balas pero infligirán +2 daño base y dejarás de hacer ataques automáticos cuando tengas que recargar. Las armas con esta habilidad tendrán una recámara de 40 balas y son típicas de campañas ambientadas en épocas modernas o de ciencia-ficción.
-- **Francotirador:** El arma puede disparar a objetivos a mayor distancia y eliminarlos con una única bala. Como acción estándar puedes apuntar con tu arma, aumentando tu alcance a como máximo 200 pies de distancia. En este estado recibirás la habilidad Ataque furtivo y podrás utilizar Puntería mortal si realizas un ataque sorpresa contra tu objetivo. Las armas de esta categoría son típicas de campañas de épocas modernas o de ciencia-ficción.
+- Handgun:** The weapon can be used with one hand, reducing its base damage by 1 and its distance by 30 feet in exchange for greater ease of use. Handguns require only one movement action to reload and can be used in combat with two weapons.
+- Chamber: The weapon has a chamber that can hold several bullets. The chamber allows the weapon to fire 6 shots before it must be reloaded. A gun with a chamber is typical of campaigns set in the industrial era or the old west. 
+- Pellets: Instead of bullets, the gun will fire a shower of lead pellets. A pellet gun must have a chamber and will expend it completely with each shot, but it will be able to hit all creatures in a 15-foot cone when firing and inflict +1 base damage. 
+- Double Barrel:** The weapon fires two bullets per turn with an attack at the cost of making it more difficult to use. Base damage from a double-barrel weapon increases by 2 but you will roll one skill die less on attacks made with it.
+- Powerful:** A powerful weapon fires the bullets with greater power but will have great recoil strength. A powerful weapon deals +1 base damage but can only be used by characters with FUE 2 or more. If the weapon is two-handed the user must have FUE 3 or more or will receive a one die disadvantage penalty on all their shots.
+- Automatic:** The weapon has a system to shoot bullets automatically. Making an attack automatically costs you a standard action and you will be able to attack every creature in a 30 foot cone, starting with the closest one. These attacks will consume 4 bullets but will deal +2 base damage and you will stop making automatic attacks when you need to reload. Weapons with this ability will have a 40 bullet chamber and are typical of campaigns set in modern or science fiction times.
+- Sniper:** The weapon can shoot at targets at a greater distance and kill them with a single bullet. As a standard action you can aim your gun, increasing your range to a maximum of 200 feet. In this state you will receive the Sneak Attack skill and can use Deadly Aim if you make a surprise attack against your target. Weapons in this category are typical of modern or science fiction campaigns.
 

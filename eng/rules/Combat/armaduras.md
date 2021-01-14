@@ -5,20 +5,20 @@ main: Rangos
 sub: Combate
 ---
 
-## Rango I
+## Range I
 
-<u>Entrenamiento con armaduras</u>: Reduce por 1 el penalizador de armadura. Si logras reducir el penalizador a 0, puedes moverte y usar habilidades de reflejos como si no llevases armadura. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 1
+<Armor training: Reduces the armor penalty by 1. If you manage to reduce the penalizer to 0, you can move and use reflex skills as if you were not wearing armor. Every time you get a range in armor proficiency reduce the penalty by 1 again
 
-<u>Defensa reforzada:</u> aumenta tu defensa por 1 si llevas armadura. La defensa vuelve a aumentarse por 1 cada vez que obtengas un rango en aptitud con armaduras. Este incremento a la defensa también reduce el daño de ataques no-mágicos contra los cuales no se aplica tu armadura, como Puntería mortal.
+<Reinforced defense: Increase your defense by 1 if you are wearing armor. The defense is increased again by 1 each time you get a rank in suitability with armor. This increase in defense also reduces the damage from non-magical attacks against which your armor is not applied, such as Deadly Sight.
 
-## Rango II
+## Range II
 
-<u>Blindaje:</u> Los ataques contundentes  sólo pueden hacerte hacerte heridas permanentes si te llegan a influir daño. Tienes  resistencia igual a tu rango contra aturdimiento y ralentizar provocado por ataques no mágicos.
+<Blunt attacks can only make you permanently wounded if they influence you to do damage. You have resistance equal to your range against stun and slow down caused by non-magical attacks.
 
-<u>Protección elemental:</u> Dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado. Obtienes resistencia igual a tu Rango la armadura contra el elemento de tu elección y los efectos de estados producidos por él (toque gélido si eliges hielo, calentar armaduras si eliges fuego, etc.). Esto se acumula con otras resistencias que poseas.
+<Elemental protection: By spending a month of work and searching for the right materials you can make your armor protect you against a certain element. You get resistance equal to your range the armor against the element of your choice and the effects of states produced by it (icy touch if you choose ice, warm up armor if you choose fire, etc.). This accumulates with other resistances you have.
 
-## Rango III
+## Range III
 
-<u>Armadura infundida:</u> Tu armadura actúa como extensión de tu cuerpo y se  infunde de tu poder mágico. La armadura incrementa tu Resistencia Mágica por 3 si tienes una Plantilla o rangos en una magia. Si no tienes ninguno de esos rangos entonces debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, la cual te otorga Resistencia mágica igual a tu rango de Armaduras.
+<Your armor acts as an extension of your body and is infused with your magical power. The armor increases your Magic Resistance by 3 if you have a Template or ranks in a magic. If you don't have any of those ranks then you must spend a month getting special materials to make magic armor, which gives you magic resistance equal to your armor rank.
 
-<u>Campeón de acero:</u> La armadura te protege hasta de ataques mortales. Una vez al turno, reduce el nivel de una [herida permanente](http://raldamain.com/rules/Heridas%20permanentes.html) que sufras por 1. Los ataques de muerte instantánea como maestro cazador o impacto vital solo te provocan una herida permanente grave (no puedes volver a reducirlo)
+<Steel Champion: Armor protects you from even deadly attacks. Once a turn, reduce the level of a [permanent injury](http://raldamain.com/rules/Heridas%20permanentes.html) you suffer by 1. Instantaneous death attacks as a master hunter or life impact only cause you a serious permanent injury (you cannot reduce it again)
