@@ -4,94 +4,94 @@ main: Rangos
 sub: Armas
 ---
 
-## Rango I
+## Range I
 
-<u>Aptitud con dos armas:</u> Como acción bonus una vez al turno puedes hacer un ataque con tu arma secundaria con una penalización de un dado de habilidad. Esta penalización desaparece cuando llegues a rango III.
+<u>Skill with two weapons:</u> As a bonus action once a turn you can make an attack with your secondary weapon with a penalty of one skill die. This penalty disappears when you reach rank III.
 
-<u>Estilo de combate</u>: Obtienes un número de atributos dependiendo del arma que lleves en tu mano secundaria. Cada vez que subas un rango la aptitud con dos armas recibes los atributos que te indique la lista correspondiente.
+<Combat style: You get a number of attributes depending on the weapon you carry in your secondary hand. Every time you raise your rank with two weapons you receive the attributes listed in the skill list.
 
-## Filos pesados
+## Heavy Edges
 
-### Rango I
+### Range I
 
-<u>Parada doble:</u> Puedes usar parada una vez adicional al turno con tu arma secundaria (sigues recibiendo la penalización). Además, la habilidad de cancelar un éxito puede usarse una vez adicional al turno (una tercera a rango III).
+<Double stop: You can use stop once in addition to your turn with your secondary weapon (you still get the penalty). Also, the ability to cancel a success can be used once in addition to the turn (a third time at rank III).
 
-<u>Tajo cruzado:</u> Al impactar al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque inflige +2 daño base. Esta habilidad solo puede emplearse una vez al turno.
+<When hitting the same target with your two weapons in the same turn, your second attack deals +2 base damage. This skill can only be used once per turn.
 
-### Rango II
+### Range II
 
-<u>Corte circular:</u> Cuando uses la acción Gran corte puedes atacar también con tu arma secundaria. Tiraras un verde menos en el corte pero afectas un radio de 5 pies centrado en ti. Este ataque sólo puede detenerse si un personaje con escudo tiene éxito en su defensa dos veces.
+<When you use the Big Cut action you can also attack with your secondary weapon. You will shoot one less green on the cut but you will affect a 5 foot radius centered on you. This attack can only be stopped if a shielded character succeeds in his defense twice.
 
-<u>Juego de espadas:</u> Puedes gastar 2 ventajas para desarmar a un rival sin la necesidad de estar en espadas trabadas, Tu oponente no puede usar Parada para defenderse de tu arma secundaria cuando tenga la espada trabada.
+<You can spend 2 advantages to disarm an opponent without the need to be on locked swords. Your opponent cannot use Stop to defend himself from your secondary weapon when he has the locked sword.
 
-### Rango III
+### Range III
 
-<u>Muerte por mil cortes:</u> Haces +2 daño base usando torbellino de acero e inflinges 1 daño adicional automático a cada escudo que impactes con esta habilidad. Al gastar una acción de movimiento en corte en secuencia haces un ataque adicional con tu arma secundaria (1/turno).
+<You do +2 base damage using steel whirlwind and deal 1 additional automatic damage to each shield you hit with this ability. When you spend one movement action on slice in sequence you do an additional attack with your secondary weapon (1/turn).
 
-## Filos ligeros
+## Light Blades
 
-### Rango I
+### Range I
 
-<u>Desviar ataques:</u> tu arma secundaria puede desviar ataques que traspasen tus defensas. Una vez al turno puedes hacer una segunda parada contra un ataque que te impacte exitosamente usando tu arma secundaria. No puedes cancelar éxitos con esta habilidad.
+<Divert Attacks: Your secondary weapon can divert attacks that break through your defenses. Once a turn you can make a second stop against an attack that successfully hits you using your secondary weapon. You cannot cancel successes with this skill.
 
-<u>Combate furtivo:</u> Aplicas el daño de ataque preciso a tu segunda arma siempre que tires un dado de ventaja en ataques con ella. Esta habilidad se aplica también contra enemigos fintados. Pierdes los beneficios otorgados por Combate furtivo si eres desarmado de tu arma principal.
+<Sneak Fighting: You apply the precise attack damage to your second weapon whenever you roll a dice for an attack advantage with it. This skill is also applied against dummy enemies. You lose the benefits of Stealth Fighting if you are unarmed from your main weapon.
 
-### Rango II
+### Rank II
 
-<u>Atrapar arma:</u> usando tus dos armas puedes trabar espadas mas grandes que la tuya. Puedes usar la habilidad Choque de Espadas gastando 2 ventajas (ver Filos Pesados), con la cual puedes desarmar armas de Filo pesado. No puedes fintar si tienes tu arma trabada salvo que tengas la habilidad Finta superior
+<Catching a weapon: using your two weapons you can catch swords bigger than yours. You can use the Clash of Swords skill by spending 2 advantages (see Heavy Edges), with which you can disarm heavy edge weapons. You can't fake if you have your weapon locked unless you have the Dummy skill
 
-<u>Ataques apuntados:</u> Puedes hacer ataques apuntados con tu arma secundaria como su fuese tu arma principal. No sufres penalizadores al hacer un ataque apuntado con tu arma secundaria si tu objetivo está fintado.
+<Targeted attacks: You can make targeted attacks with your secondary weapon as if it were your primary weapon. You are not penalized for making a targeted attack with your secondary weapon if your target is faked.
 
-### Rango III
+### Range III
 
-<u>Cuchillada:</u> Como acción estándar haz un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad no puedes hacer ataques con tu arma secundaria ni usar ataques rápidos, pero aumentarás el daño base de tu ataque por 2. Si usas Cuchillada contra un enemigo que esté sorprendido podrás gastar 2 ventajas para usar la habilidad Golpe vital (normalmente cuesta 4 ventajas).
+<As a standard action, make an attack with your two weapons on a specific point of your opponent's body. When using this skill you can't make attacks with your secondary weapon or use fast attacks, but you will increase the base damage of your attack by 2. If you use Slash against an enemy who is surprised you can spend 2 advantages to use the Vital Strike skill (normally it costs 4 advantages).
 
-## Cadenas
+## Chains
 
-### Rango I
+### Range I
 
-<u>Cadenas giratorias:</u> Eres capaz de usar Danza de cadenas con tu arma secundaria si no atacas con ella. De esta manera entrar en posición defensiva te cuesta una acción bonus. Al usar una acción estándar para entrar en forma defensiva harás +2 daño en ataques de oportunidad contra criaturas que entren en el área que amenazas. 
+<You are able to use Chain Dance with your secondary weapon if you do not attack with it. This way entering in a defensive position costs you a bonus action. By using a standard action to enter defensively you will do +2 damage in opportunity attacks against creatures that enter the area you are threatening. 
 
-<u>Ataque torbellino:</u> Usar ataque circular te cuesta una acción estándar. Puedes emplear una acción de turno completo para atacar a todas las criaturas en un radio de tamaño igual a tu alcance. Danza de cadenas se activa al usar esta habilidad, y Ataque torbellino puede detenerse de la misma manera que ataque circular.
+<Whirlwind attack: Using a whirlwind attack costs you a standard action. You can use a full turn action to attack all creatures within your range. Chain dance is activated by using this skill, and Whirlwind attack can be stopped in the same way as circle attack.
 
-### Rango II
+### Range II
 
-<u>Doble agarre:</u> Si llegas a enredar al mismo objetivo con tus dos cadenas, este queda Agarrado automáticamente sin que tengas que emplear una acción de movimiento. Mover o estampar una criatura agarrada te cuesta una acción bonus lo primera vez que lo hagas, y para escapar de tu agarre la criatura debe tener éxito en dos tiradas contra tus cadenas. No puedes usar cadenas giratorias o cargar ataque mientras agarres a una criatura.
+<If you get the same target tangled up in your two chains, it is automatically grabbed without you having to use a moving action. Moving or stamping a grabbed creature costs you a bonus action the first time you do it, and to escape your grip the creature must succeed in two rolls against your chains. You cannot use spinning chains or charge attack while holding a creature.
 
-<u>Escudo de cadenas:</u> Puedes usar la habilidad Reflejar proyectiles siempre que el efecto de Cadenas giratorias esté activo. Sigues sin poder reflejar proyectiles de alta velocidad, aunque una vez al turno puedes cancelar un éxito generado por un ataque enemigo (2/turno si tienes Rango III en cadenas y 3/turno si tienes rango V)
+<You can use the Reflect Projectiles skill as long as the Spinning Chains effect is active. You still can't reflect high speed projectiles, although once a turn you can cancel a success generated by an enemy attack (2/turn if you have range III in chains and 3/turn if you have range V)
 
-### Rango III
+### Range III
 
-<u>Danza de destrucción:</u> En lugar de atacar con tus dos cadenas puedes hacer que giren en torno a ti a grandes velocidades, permitiéndote cargar un ataque con cada una de tus cadenas y activando inmediatamente la habilidad Danza de cadenas. Si haces daño al mismo objetivo con tus dos ataques, su armadura sufre daño igual a la cantidad de turnos que llevas cargando tus cadenas (máximo 3 daño). Si el objetivo tiene 0 armadura aumenta la efectividad de tus heridas permanentes por 1.
+<Instead of attacking with your two chains you can make them revolve around you at high speeds, allowing you to load an attack with each of your chains and immediately activate the Chain Dance skill. If you damage the same target with your two attacks, their armor suffers damage equal to the number of turns you have been charging your chains (maximum 3 damage). If the target has 0 armor it increases the effectiveness of your permanent wounds by 1.
 
-## Armas de fuego
+## Firearms
 
-### Rango I
+### Range I
 
-<u>Debilitar defensas:</u> Puedes emplear tu disparo con el arma secundaria para dejar expuesto al enemigo a otros disparos. Al impactar a un enemigo con un disparo puedes elegir no hacer daño para que este sufra un truco de bala. Las resistencias que tenga tu objetivo se aplican para este ataque, pero podrás gastar ventajas para darle efectos adicionales relacionados con el truco de bala. 
+<Weakening defenses: You can use your shot with the secondary weapon to expose the enemy to other shots. When hitting an enemy with a shot you can choose not to hurt them so that they suffer a bullet trick. Your target's resistances are applied for this attack, but you can use them to give additional effects related to the bullet trick. 
 
-<u>Cubierta de disparos:</u> Eres capaz de hacer disparos a bocajarro con tu arma secundaria para protegerte de ataques. Al usar esta habilidad recibirás un dado de Dificultad adicional en todos tus tiros de ataque, pero podrás tirar tus dados de Armas de fuego defensivamente para protegerte de ataques de cuerpo a cuerpo y a distancia. Usar cubierta de disparos consume una bala adicional al turno.
+<You are able to shoot point-blank with your secondary weapon to protect you from attacks. By using this skill you will receive one additional Difficulty die on all your attack shots, but you will be able to roll your Firearms dice defensively to protect you from melee and ranged attacks. Using cover fire consumes one additional bullet per turn.
 
-### Rango II
+### Range II
 
-<u>Lluvia de plomo:</u> No sufres penalizadores al usar Disparo a bocajarro. Como acción de turno completo puedes hacer un ataque de área contra todas las criaturas en un cono de 30 pies o un radio de 15 pies. Tirarás un dado de Dificultad como penalización en el ataque de área y gastarás las cargas de ambas pistolas.
+<u>Lead rain:</u> No penalties when using point-blank shooting. As a full turn action you can make an area attack against all creatures in a 30 foot cone or a 15 foot radius. You will roll one Difficulty die as a penalty in the area attack and spend the charges of both guns.
 
-<u>Predecir movimiento</u>: Tienes un instinto sobrenatural del peligro. Recibes la habilidad Esquiva asombrosa (Esquiva asombrosa mejorada si ya la tienes) y puedes gastar 2 Desventajas generadas para hacer un ataque con tu arma secundaria como reacción. Puntería mortal se aplica para este ataque.
+<Predicting movement: You have a supernatural instinct for danger. You receive the Amazing Dodge skill (Improved Amazing Dodge if you already have it) and can spend 2 Disadvantages generated to make an attack with your secondary weapon as a reaction. Deadly aim is applied for this attack.
 
-### Rango III
+### Range III
 
-<u>Maestro pistolero:</u> Al atacar a una criatura que haya sufrido daño en algún momento de la ronda añades +2 daño base a tus ataques con armas de fuego. Recargar tu arma secundaria te cuesta una acción de movimiento y no necesitas tener una mano libre para ello. 
+<When you attack a creature that has suffered damage at some point during the round you add +2 base damage to your firearm attacks. Reloading your secondary weapon costs you one move action and you don't need to have a free hand for it. 
 
-## Escudos
+## Shields
 
-### Rango I
+### Range I
 
-<u>Defensa doble:</u> 
+<u>Double defense:</u> 
 
-<u>Fortaleza defensiva:</u> 
+<u>Defensive strength:</u> 
 
-### Rango II
+### Range II
 
-<u>Muro de acero</u>:
+<u>Steel wall</u>:
 
-### Rango III
+### Range III

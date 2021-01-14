@@ -4,52 +4,52 @@ main: Rangos
 sub: Armas
 ---
 
-# Rangos
+# Ranks
 
-## Rango I 
+## Range I 
 
-Tiras un dado de soltura adicional en tiros de ataque.
+You roll an additional loosening die on attack shots.
 
-<u>Puntería mortal:</u> Al disparar a un objetivo que se encuentra a menos de 15 pies de ti ignorarás todos los puntos de defensa que recibe por su armadura. Las resistencias al daño y la defensa adicional otorgada por Aptitud con armaduras continuarán aplicándose, pero ignorarás armadura natural con esta habilidad. Puedes tomar una penalización de un dado de Dificultad en el tiro para emplear esta habilidad contra un objetivo que se encuentre a un máximo de 30 pies. La distancia máxima a la que puedes utilizar Puntería mortal aumenta por 5 pies cada vez que recibas un rango adicional de Arcos.
+<Deadly aim:</u> When shooting at a target that is less than 15 feet away from you you will ignore all the defense points it receives for its armor. Damage resistances and additional defense provided by Armored Aptitude will continue to apply, but you will ignore natural armor with this ability. You can take a penalty of one Difficulty die to use this skill against a target up to 30 feet away. The maximum distance at which you can use Deadly Sight increases by 5 feet each time you receive an additional range of Bows.
 
-<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Haces +2 daño en ataques sorpresa o atacando a objetivos incapaces de esquivar. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo un dado de dificultad como penalización (añade dos dados de dificultad si escoges la Cabeza) a cambio de infligir una herida permanente leve en esa parte del cuerpo al impactar con tu ataque. A rango III infliges una herida media y a rango V una herida grave empleando Ataque furtivo de esta manera. Si generas ventajas en un ataque furtivo y estás apuntando a una parte específica del cuerpo del objetivo puedes gastar 4 ventajas para incrementar el nivel de la herida permanente por 1. Sólo puedes afectar con ataque furtivo a enemigos que se encuentren en tu área de Puntería mortal.
+<Stealth Attack: Your attacks target the weaknesses of the enemy. You do +2 damage in surprise attacks or attacking targets unable to dodge. Before attacking, you can target a specific part of the target by receiving a difficulty die as a penalty (add two difficulty dice if you choose the Head) in exchange for inflicting a slight permanent wound on that part of the body on impact with your attack. At range III you inflict a medium wound and at range V a severe wound using Stealth Attack in this manner. If you generate advantages in a sneak attack and you are aiming at a specific part of the target's body you can spend 4 advantages to increase the level of the permanent wound by 1. You can only affect enemies that are in your kill zone with a sneak attack.
 
-## Rango II
+## Range II
 
-<u>Arquero experto:</u> Emplea tus ventajas para hacer un truco de combate. Esta habilidad solo se puede usar si impactas al objetivo. Todas las habilidades cuestan 2 ventajas: 
+<Expert Archer: Use your advantages to do a combat trick. This skill can only be used if you hit the target. All skills cost 2 advantages: 
 
-- **Disparo falso**: El objetivo es fintado durante un turno, haciendo que no pueda esquivar el siguiente ataque que reciba. Gasta una ventaja adicional para que el atacante añada un dado de Ventaja en su siguiente tiro.
-- **Disparo de desarme:** El objetivo es Desarmado, dejando caer su arma. Gasta una ventaja adicional para que el enemigo se mueva 5 pies en una dirección aleatoria.
-- **Disparo afortunado**: Destruye un objeto pequeño que lleve el objetivo (pociones, armas enfundadas, una bolsa lateral). Si el objeto impactado es una bomba, esta explotará en el acto. Gata 2 Ventajas adicionales para que suelte un objeto que lleva.
+- False Fire: The target is faked during a turn, making him unable to dodge the next attack he receives. It spends an additional advantage for the attacker to add one advantage die to his next shot.
+- Disarming Fire: The target is Disarmed, dropping his weapon. He spends an additional advantage to have the enemy move 5 feet in a random direction.
+- Lucky Fire: Destroy a small object carrying the target (potions, sheathed weapons, a side bag). If the hit object is a bomb, it will explode on the spot. Cat 2 Additional advantages to drop an object it is carrying.
 
-<u>Ataque rápido:</u> Hacer un ataque con tu arma te cuesta ahora una acción de movimiento. Una vez por ronda como reacción puedes gastar 2 desventajas generadas para hacer un ataque de oportunidad con tu arma.
+<Quick attack: Making an attack with your weapon now costs you a movement action. Once per round as a reaction you can spend 2 disadvantages generated to make an attack of opportunity with your weapon.
 
-## Rango III 
+## Range III 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media).
+You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a mild permanent injury (4 allowances to inflict a medium permanent injury).
 
-<u>Disparo preciso:</u> Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las desventajas que estos otorgarán. Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal y que no estén en ocultamiento o cubierta completa.
+<Your ranged attacks ignore the cover and concealment your targets have, avoiding the disadvantages they will provide. Accurate shooting only works against targets in your kill radius that are not in full cover or concealment.
 
-<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia por un dado de Dificultad. Ataque furtivo se aplica contra objetivos localizados a cualquier distancia de ti. 
+<Sniper's Eye: Reduce all penalties for shooting from a distance by one Difficulty die. Sneak attack is applied against targets located at any distance from you. 
 
-## Rango IV
+## Range IV
 
-<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones al disparar montado o en un vehículo en movimiento.
+<Moving shot:</u> You can move before and after shooting, distributing your total movement as you wish. You also don't suffer penalties when shooting mounted or in a moving vehicle.
 
-<u>Arquero ágil</u>: Eres capaz de cambiar precisión por velocidad de disparo para lanzar una lluvia de flechas. Al hacer un ataque puedes declararlo como ataque rápido. Un ataque rápido te cuesta una acción bonus para realizar pero este y todos los ataques que hagas después de este reducirán el número de dados de habilidad que tiran por 1. Los penalizadores que tengas por otras habilidades se aplican también a ataques rápidos. No puedes realizar más de un ataque rápido al turno.
+<Agile Archer: You are able to change accuracy to speed to shoot a shower of arrows. When making an attack you can declare it as a rapid attack. A fast attack costs you a bonus action to perform but this and all attacks you make after it will reduce the number of skill dice you roll by 1. You cannot perform more than one fast attack per turn.
 
-## Rango V
+## Range V
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
+You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a medium permanent wound (4 allowances to inflict a severe permanent wound).
 
-<u>Impacto vital:</u> Al impactar a un enemigo con un ataque, gasta 4 ventajas para multiplicar tu daño base por 2 (infligiendo automáticamente una herida grave si hace al menos un punto de daño). Para usar esta habilidad debes haber usado puntería experta en tu ataque.
+<When you hit an enemy with an attack, you spend 4 advantages to multiply your base damage by 2 (automatically inflicting a serious injury if you do at least one point of damage). To use this skill you must have used expert marksmanship in your attack.
 
-<u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Si gastas una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica en su tiro defensivo
+<Your attacks are able to hit the weak point of the target. If you spend a move action to aim at a shot you can make the defender unable to use shield or magic stop on his defensive shot
 
-# Armas
+# Weapons
 
-Un arco base hace 3+Éxito daño perforante y tiene un alcance medio de 60 pies. Puedes disparar a enemigos como máximo a 90 pies de distancia recibiendo un penalizador de un dado de dificultad. Un arco base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+A base bow does 3+ Success piercing damage and has a range of 60 feet. You can shoot enemies at a maximum of 90 feet by receiving a single die difficulty penalty. A base bow can be modified with the following features to produce all types of related weapons.
 
-- **Compuesto:** El arco requiere gran fuerza para ser tensado pero incrementará la velocidad de los proyectiles. Necesitas tener FUE 2 o más para usar un arco compuesto pero este infligirá +1 daño base y aumenta su alcance por 10 pies. El daño base de un arco compuesto aumenta según tu estadística de FUE como si fuese un arma cuerpo a cuerpo.
-- **Corto:** El arco es pequeño y muy fácil de tensar. Reduces tu daño base por 1 pero no sufrirás penalizaciones por disparar montado o en un vehículo en movimiento. No recibirás penalizaciones por realizar ataques rápidos con la habilidad Arquero ágil.
+- Composite: The bow requires great strength to be drawn but will increase the speed of the projectiles. You need to have FUE 2 or more to use a compound bow but it will deal +1 base damage and increase its range by 10 feet. The base damage of a compound bow increases according to your FUE stat as if it were a melee weapon.
+- Short: The bow is small and very easy to draw. You reduce your base damage by 1 but will not suffer penalties for shooting mounted or in a moving vehicle. You won't receive penalties for fast attacks with the Agile Archer skill.
 
