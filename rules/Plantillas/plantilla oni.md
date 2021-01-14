@@ -28,13 +28,13 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Rayo ocular:</u> Un número de veces al día igual a tu rango-1 puedes disparar un rayo desde tu tercer ojo. Esto es una acción bonus y el tiro es igual a tu CON añadiéndole 1 dado de soltura. Haces 2+éxito daño de tu elemento elegido al impactar. Si tienes rangos en magia elemental puedes gastar ventajas en esta habilidad como si fuese un ataque elemental. A rango V tiras un dado de soltura adicional.
 
-<u>Vuelo:</u> Al entrar en furia del oni recibes la capacidad de volar. tu velocidad de vuelo es de 60 pies (40 si llevas armadura). Mientras estés volando recibes un dado de Ventaja en ataques y un dado de Desventaja en tiros de defensa contra criaturas que estén en la tierra. Si sufres una herida permanente o eres aturdido mientras vuelas empiezas a caer inmediatamente.
+<u>Niebla de pesadillas:</u> Como acción estándar llena un área de 15 pies de una tenebrosa neblina que provoca temor a tus enemigos. Todas las criaturas que tengan 6 o menos PV en el área de tu niebla pasan a estar Espantados. Puedes gastar 2 ventajas en un ataque para aumentar el nivel de miedo que siente una criatura en tu aura por 1 (los niveles son Espantado, Asustado, Pánico y Paralizado). Esta niebla dura 1+R turnos y solo puede usarse una vez por combate.
 
 ## Rango IV
 
 Incrementa tu FUE por 1.
 
-<u>Niebla de pesadillas:</u> Como acción estándar llena un área de 15 pies de una tenebrosa neblina que provoca temor a tus enemigos. Todas las criaturas que tengan 6 o menos PV en el área de tu niebla pasan a estar Espantados. Puedes gastar 2 ventajas en un ataque para aumentar el nivel de miedo que siente una criatura en tu aura por 1 (los niveles son Espantado, Asustado, Pánico y Paralizado). Esta niebla dura 1+R turnos y solo puede usarse una vez por combate.
+<u>Vuelo:</u> Al entrar en furia del oni recibes la capacidad de volar. tu velocidad de vuelo es de 60 pies (40 si llevas armadura). Mientras estés volando recibes un dado de Ventaja en ataques y un dado de Desventaja en tiros de defensa contra criaturas que estén en la tierra. Si sufres una herida permanente o eres aturdido mientras vuelas empiezas a caer inmediatamente.
 
 <u>Forma gaseosa:</u> Recibes la capacidad de transformar tu cuerpo en un estado gaseoso. Mientras estés en esta forma eres incorpóreo e inmune a daño físico, pero no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo 1+R rondas seguidas en forma gaseosa, tras las cuales vuelves a tu forma corpórea y debes realizar un descanso corto para volver a usar esta habilidad. Obtienes un uso adicional de esta habilidad cada vez que subas un rango.
 
