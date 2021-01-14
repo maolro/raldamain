@@ -4,6 +4,8 @@ main: Rangos
 sub: Sabiduria
 ---
 
+# Rangos
+
 ## Rango I
 
 Tira un dado de soltura adicional en tiros de castigo divino. 
@@ -36,12 +38,12 @@ Tira un dado de soltura adicional en tiros de castigo divino.
 
 <u>Maldición mejorada:</u> Una vez al día puedes desatar una horripilante maldición en un objetivo. La maldición varia según tu dios, pero estas son algunas de las posibilidades:
 
-- Plaga de insectos: invoca una marabunta gigante de insectos que ataca a los enemigos de tu fe
-- Marca de ley: el objetivo debe abstenerse  de un comportamiento o obedecer una orden. Si no lo hace , reduce temporalmente una de sus estadísticas cada día  que continúe desobedeciéndote
-- Pesadillas: El objetivo está afectado por horribles pesadillas. no puede recibir los beneficios de un descanso largo y sufre 3 daño de cordura al día.
-- Dolor: El objetivo siente un dolor extremo por todo su cuerpo. Solo puede hacer una acción al turno y sufre 1 daño no letal por turno. Este efecto dura un minuto  y se repite cada día hasta que la maldición sea eliminada
+- **Plaga de insectos:** invoca una marabunta gigante de insectos que ataca a los enemigos de tu fe
+- **Marca de ley**: el objetivo debe abstenerse  de un comportamiento o obedecer una orden. Si no lo hace , reduce temporalmente una de sus estadísticas cada día  que continúe desobedeciéndote
+- **Pesadillas**: El objetivo está afectado por horribles pesadillas. no puede recibir los beneficios de un descanso largo y sufre 3 daño de cordura al día.
+- **Dolor**: El objetivo siente un dolor extremo por todo su cuerpo. Solo puede hacer una acción al turno y sufre 1 daño no letal por turno. Este efecto dura un minuto  y se repite cada día hasta que la maldición sea eliminada
 
-<u>Destrucción:</u> Tus ataques divinos son mortales contra los enviados de dioses enemigos. Infliges +2 daño base con ataques de Castigo divino contra extraplanarios enemigos de tu fe. Puedes gastar 4 Ventajas generadas al impactar para Exiliar al extraplanario. No puedes exiliar a extraplanarios de mayor nivel que el tuyo.
+<u>Destrucción:</u> Tus ataques divinos son mortales contra los enviados de dioses enemigos. Infliges +2 daño base con ataques de Castigo divino contra extraplanarios enemigos de tu fe, contra los cuales puedes gastar 4 ventajas para exiliarlos. No podrás exiliar a criaturas extraplanarias que tengan mayor nivel que el tuyo.
 
 ## Rango V
 
@@ -51,6 +53,76 @@ Tira un dado de soltura adicional en tiros de castigo divino.
 
 <u>Palabra divina superior:</u> Una vez al día, desata el poder de tu dios con una palabra de poder. el efecto de la palabra depende de tu dios, pero estas son algunas posibilidades:
 
-- Palabra de vida: sana todos los PV y efectos de estado a todos los aliados en un radio de 30 pies
-- Palabra de muerte: Mata a todas las criaturas con 7 o menos PV en un radio de 30 pies. Las criaturas que tienen mas de 7 PV deben tirar CON o sufrir 6+Éxito daño divino( gasta dos ventajas para asustar, 4 para que se arrodillen ante ti)
-- Palabra de parálisis: detienes el tiempo en un radio de 30 pies, paralizando a todas las criaturas en el radio. Solo las criaturas con rangos en guerrero divino o castigo divino pueden resistir el efecto, y el efecto acaba tras un turno(2 para las criaturas con 7 o menos PV y 4 para las criaturas con 5 o menos PV)
+- **Palabra de vida:** sana todos los PV y efectos de estado a todos los aliados en un radio de 30 pies
+- **Palabra de muerte:** Mata a todas las criaturas con 7 o menos PV en un radio de 30 pies. Las criaturas que tienen mas de 7 PV deben tirar CON o sufrir 6+Éxito daño divino( gasta dos ventajas para asustar, 4 para que se arrodillen ante ti)
+- **Palabra de parálisis**: detienes el tiempo en un radio de 30 pies, paralizando a todas las criaturas en el radio. Solo las criaturas con rangos en guerrero divino o castigo divino pueden resistir el efecto, y el efecto acaba tras un turno(2 para las criaturas con 7 o menos PV y 4 para las criaturas con 5 o menos PV)
+
+# Divinidades
+
+## Dioses principales
+
+Estas divinidades cuentan con un culto particularmente extensivo y bendicen a sus seguidores para lograr su voluntad en el mundo.
+
+### Feyn
+
+<u>Dominio</u>: Dios de la humanidad, el progreso y la ley
+
+<u>Centros de culto</u>: Ustilus, Kratoi, Mazarín y Pradjati. Es además la divinidad principal del lejano continente de Eshanda y se cree que Nekthys lo veneraba. Tras la muerte de Feyn todos estos lugares acabaron por perder la fe y veneraron a otros dioses.
+
+<u>Ideales</u>: Búsqueda del bien común. Las leyes de Feyn son las más perfectas. La humanidad debe quedar unida bajo una única nación. Los demás dioses son enemigos del ser humano y buscan dominarlo.
+
+<u>Manifestaciones divinas:</u> Estas son manifestaciones divinas típicas de Feyn.
+
+- **Milagros menores:** 
+- **Descarga divina:** Bola de fuego (60 pies distancia, salpicadura 5 pies), 
+- **Maldición:** Marca de fuego (la criatura debe abstenerse de un comportamiento. Si realiza tal comportamiento sufrirá una quemadura leve), 
+- **Maldición superior:**  
+- **Palabra divina superior:** Orden imperiosa, Llamar a los exaltados
+
+### Mekhatim
+
+<u>Dominio</u>: Diosa de la justicia, la guerra santa y la salvación.
+
+<u>Centros de culto</u>: Arshalán, Menadar, algunas regiones de los Reinos Libres.
+
+<u>Ideales</u>: La vida en todas sus formas es sagrada. Todo buen acto será recompensado, toda maldad será castigada. Toda persona del mundo debe convertirse a la fe para traer la salvación. No se permite ningún compromiso con el mal, aunque la redención sincera está permitida.
+
+<u>Manifestaciones divinas:</u> Estas son manifestaciones divinas típicas de Mekhatim.
+
+- **Milagros menores:** 
+- **Descarga divina:** Luz cegadora (área 15 pies, daño radiante), Haz luminoso (60 pies distancia, salpicadura 5 pies, daño radiante)
+- **Maldición:** 
+- **Maldición superior:**  
+- **Palabra divina superior:** Palabra de vida
+
+### Sek-Tebos
+
+<u>Dominio</u>: Dios del orden, la ambición y los infiernos.
+
+<u>Centros de culto</u>: Sus cultos secretos abundan en todas las tierras, especialmente en Ustilus.
+
+<u>Ideales</u>: No hay poder sin un precio. Algunas personas nacen para reinar y otras para servir. Sólo puedes depender de ti mismo y de tus capacidades. Aprovéchate de los útiles y elimina los estorbos. La naturaleza es cruel y no hay razón para que el ser humano no lo sea.
+
+<u>Manifestaciones divinas:</u> Estas son manifestaciones divinas típicas de Sek-Tebos.
+
+- **Milagros menores:** 
+- **Descarga divina:** Bola de fuego (60 pies distancia, salpicadura 5 pies), 
+- **Maldición:** 
+- **Maldición superior:**  
+- **Palabra divina superior:** 
+
+### Ayanuu
+
+<u>Dominio</u>: Divinidad primigenia del caos, la locura y la magia.
+
+<u>Centros de culto</u>: El culto a Ayanuu está prohibido en todas las naciones civilizadas y perseguido por la ley.
+
+<u>Ideales</u>: El caos es el principio, y el caos será el final. Las leyes son un constructo artificial que oprime la ambición humana. Los dioses son insignificantes ante el poder puro del abismo. Ningún conocimiento debe ser censurado. Vive el momento, todo inevitablemente morirá. 
+
+<u>Manifestaciones divinas:</u> Estas son manifestaciones divinas típicas de Ayanuu.
+
+- **Milagros menores:** 
+- **Descarga divina:** 
+- **Maldición:** 
+- **Maldición superior:**  
+- **Palabra divina superior:** 

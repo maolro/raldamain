@@ -16,7 +16,7 @@ Obtienes Resistencia 1 a daño físico.
 
  Incrementa tu DES por 1.
 
-<u>Crear oscuridad:</u> Como acción estándar, apaga todas las luces en un área de 60 pies. Si el área ya está a oscuras, lo llenas de una nube de oscuridad mágica. Todos tus ataques cuentan como ataque sorpresa contra criaturas incapaces de ver en la oscuridad. Esta habilidad puede usarse un número de veces igual a tu rango +1 (3 veces a rango II).
+<u>Crear oscuridad:</u> Puedes apagar todas las luces en un espacio de 30 pies como acción estándar. Si el área ya está a oscuras, este se llenará de una nube de oscuridad mágica. Todos tus ataques cuentan como ataque sorpresa contra criaturas incapaces de ver en la oscuridad. Esta habilidad puede usarse un número de veces igual a tu rango +1 (3 veces a rango II).
 
 <u>Aliado sombrío:</u> Puedes tener una Sombra como tu familiar. Esa Sombra no puede manifestarse si hay luz brillante y no puede estar a una distancia de ti mayor de 60 pies. La sombra tiene las mismas estadísticas de un Espectro (ver Médium) y mejorará como este.
 
@@ -24,23 +24,23 @@ Obtienes Resistencia 1 a daño físico.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Forma sombría:</u> Como acción estándar puedes transformarte en una sombra viviente. En esta forma sombría eres incorpóreo y puedes volverte invisible si estas en un lugar a oscuras como acción bonus, pero no podrás atacar ni lanzar hechizos. Volver a tu forma normal es una acción bonus. Esta habilidad puede usarse un número de veces igual a tu rango (3 veces a rango III). 
+<u>Ocultarse en las sombras:</u> Tu vínculo con las sombras te permite desaparecer en ellas sin dejar rastro. Esconderte te cuesta una acción bonus si te encuentras en un lugar a oscuras y no realizas ningún ruido al moverte por las sombras. Además, puedes cancelar un éxito adicional al turno en tiros defensivos si te encuentras en un lugar a oscuras como si tuvieses cubierta.
 
-<u>Salto sombrío:</u> Como acción de movimiento, telepórtate a un lugar a 60 pies de ti que esté a oscuras. Esta habilidad sólo puede usarse si estas en un lugar a oscuras. También puedes usar salto sombrío gastando 2 ventajas o desventajas generadas
+<u>Salto sombrío:</u> Eres capaz de crear pequeños portales al mundo de las sombras que te permiten viajar distancias cortas en un instante. Como acción estándar puedes abrir un portal que conecte tu posición con otro lugar que se encuentre a 90 pies de distancia. El portal permanecerá en el mundo mientras te concentres en este y las superficies que conecta deben estar a oscuras.  Salto sombrío puede emplearse también para viajar al plano de las sombras, aunque para este uso debes realizar un ritual de una hora de duración. Utilizar salto sombrío te costará una acción de movimiento a rango VI.
 
 ## Rango IV
 
 Incrementa tu CAR por 1.
 
-<u>Aura de terror:</u> Tu presencia a¡causa temor en los débiles de carácter. Como acción bonus, activa un aura de miedo que afecta a todas las criaturas que pueden verte en un radio de 60 pies. Cada criatura en tu aura de miedo con menos de 3 sabiduría esta espantada mientras permanezca en ella( si la criatura tiene menos de 5 puntos de vida pasa a estar asustada). Puedes gastar 2 ventajas o desventajas para aumentar el nivel de miedo de una criatura en el aura por 1.
+<u>Aura de terror:</u> Tu presencia causa temor en los débiles de carácter. Como acción bonus puedes activar un aura de miedo con radio de 60 pies. Todas las criaturas que estén en tu aura de terror pasarán a estar Espantadas (Asustadas si tienen 5 o menos PV). Aquellos con resistencia al miedo que entren en tu aura podrás pasar un número de turnos igual a su valor de resistencia en esta sin sufrir ningún efecto adverso. Al realizar un tiro de ataque puedes gastar 2 ventajas generadas para aumentar el nivel de miedo de una criatura que se encuentre en tu aura por 1. Aura de terror se desactivará durante un turno en el caso de que sufras una herida permanente, estés incapacitado o empieces tu turno en un área de luz intensa.
 
-<u>Ocultarse en las sombras:</u> Puedes volverte invisible como acción bonus si estas en un lugar a oscuras. Debes concentrarte para mantener la invisibilidad, perdiéndola si haces un ataque o lanzas un hechizo
+<u>Forma sombría:</u> Como acción estándar puedes transformarte en una sombra viviente. En esta forma sombría eres incorpóreo y puedes volverte invisible como acción bonus si te encuentras en un área que se encuentre a oscuras, pero no podrás atacar ni lanzar hechizos. Recuperar tu forma normal te cuesta una acción bonus, y esta habilidad puede emplearse como máximo un número de veces igual a tu rango.
 
 ## Rango V
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
-<u>Invocación sombría:</u> Como acción de turno completo invoca una criatura del plano de las sombras, la cual seguirá tus órdenes lealmente. La criatura que invoques no puede tener más de 9 PT y recibirá la plantilla Sombría a Rango I. Esta habilidad puede usarse un número de veces al día igual a tu Rango - 2. A rango VI la criatura puede tener hasta 12 PT.
+<u>Invocación sombría:</u> Como acción de turno completo puedes invocar una criatura del plano de las sombras, la cual seguirá tus órdenes lealmente. La criatura que invoques no puede tener más de 9 PT y recibirá la plantilla Sombría a Rango I. Invocación sombría puede emplearse un número de veces al día igual a tu Rango - 2 y las criaturas invocadas permanecerán en el mundo durante dos horas. A rango VI las criaturas invocadas pueden tener hasta 12 PT.
 
 <u>Luces y sombras:</u> Un número de veces al día igual a tu Rango de Plantilla Sombría puedes infundir una ilusión con magia sombría como acción bonus. Las ilusiones sombrías no necesitan tu concentración para mantenerlas y no se desvanecen al interactuar con ellas. Si infundes una criatura ilusoria, esta se transformará en un monstruo sombrío con como máximo 12 PT. Las criaturas con Plantilla Sombría son inmunes a los efectos causados por ilusiones sombrías. 
 
@@ -48,6 +48,6 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 Incrementa tu INT por 1.
 
-<u>Sombra viviente:</u> Tu cuerpo es naturalmente incorpóreo. Eres inmune a daño físico y puedes pasar a través de paredes, pero no podrás usar ataques físicos contra criaturas corpóreas. Como acción estándar puedes poseer una criatura viva o muerta de tu elección, la cual debe tirar sabiduría contra tu carisma para resistir este efecto (las criaturas muertas no tiran contra este efecto). Puedes ser expulsado de un cuerpo que posees con la habilidad Exorcizar (ver espiritualismo).
+<u>Sombra viviente:</u> Has sacrificado tu humanidad para convertirte en un maestro de las sombras. Eres inmune a efectos mentales, veneno, fatiga y sangrado, y las heridas permanentes que recibas reducen su efectividad por 1. Al entrar en Forma sombría puedes poseer a un cuerpo vivo o muerto de tu elección como acción estándar, obteniendo control absoluto de sus acciones. La criatura que poseas puede tirar sabiduría contra tu carisma para resistir este efecto, y al poseer un cuerpo puedes ser exorcizado de él como si fueses un espectro.
 
-<u>Viaje sombrío:</u> como acción de turno completo, abre un portal a la dimensión de las sombras. todas las criaturas de tu elección que estén a 20 pies deben tirar destreza contra un tiro de dificultad igual a tu carisma con tres dados de dificultad o son arrastrados al interior del portal(1desventaja: el objetivo sufre 1 daño necrótico, 2 desventajas: el objetivo está espantado. si ya está espantado aumenta su nivel de miedo por 1). El portal permanece abierto mientras te concentres en él, y en cualquier momento puedes gastar una acción estándar para usar invocación sombría. 
+<u>Portal sombrío:</u> Como acción de turno completo puedes causar una brecha entre dimensiones, formando un portal al plano de las sombras. El portal sombrío llenará todo un área de 10 pies con oscuridad mágica y apagará todas las luces en un área de 60 pies (si es de día causará que la luz pase a ser tenue). Cada turno que el portal permanezca abierto recibes 3 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que una criatura sombría de esa cantidad de PT pase por el portal. Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante dicho turno. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será infundida de sombras.
