@@ -1,6 +1,6 @@
 ---
 title: Efectos de estado
-main: Reglas adicionales
+main: Reglas principales
 ---
 
 ## Efectos de estado
