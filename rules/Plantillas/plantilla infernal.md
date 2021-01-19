@@ -10,7 +10,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Resistencias infernales:</u> Recibes resistencia igual a tu rango contra un tipo de daño de tu elección y todas las condiciones asociadas con él. Algunas opciones son fuego, frío, veneno, eléctrico, necrótico y psíquico. A rango III y V puedes escoger otro tipo de daño contra el cual tener resistencia.
 
-<u>Rasgos demoníacos:</u> Tu herencia diabólica se manifiesta en un característico rasgo que puede variar de cuernos, garras, ojos de un color especial o una cola. Desbloqueas además una magia elemental y las heridas permanentes que provocas cuentan como heridas profanas. Las heridas profanas cuentan como si fuesen un nivel mayor para propósitos de sanación y hacen 1 daño no letal al turno hasta que el objetivo se sane PV.
+<u>Rasgos demoníacos:</u> Tu herencia diabólica se manifiesta en un característico rasgo que puede variar de cuernos, garras, ojos de un color especial o una cola. Desbloqueas además Puna magia elemental y las heridas permanentes que provocas cuentan como heridas profanas. Las heridas profanas cuentan como si fuesen un nivel mayor para propósitos de sanación y hacen 1 daño no letal al turno hasta que el objetivo se sane PV. 
 
 ## Rango II
 
@@ -28,7 +28,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Alas demoniacas:</u> Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar.
 
-<u>Fuego infernal:</u> Al hacer daño de fuego con un ataque, puedes gastar 2 ventajas para infligir una herida profana al enemigo. Si tienes rangos de castigo divino, puedes sufrir daño no letal para alterar el radio y forma de tus descargas de energía como si tuvieras la habilidad Maestría de las llamas.
+<u>Ataques profanos:</u> Tus armas y ataques naturales están infunidos del poder del infierno. Al hacer daño con un ataque puedes gastar 2 ventajas generadas para infligir una herida profana a tu objetivo. Haces además +1 daño elemental con tus ataques y estos cuentan como si fuesen hechos con un arma de hierro frío (+2 daño contra abisales y espíritus).
 
 ## Rango IV
 
@@ -36,7 +36,7 @@ Incrementa tu INT por 1.
 
 <u>Siervos del contrato:</u> Tu lealtad al infierno es recompensada con varios demonios a tu servicio. En un descanso corto puedes hacer un ritual para pedir los servicios de un demonio mayor o 4 demonios menores. Estos te seguirán durante un día o hasta que cumplan su trabajo, y hasta que esto ocurra no puedes tener mas demonios a tu servicio. Un demonio mayor es un demonio construido con 9-18 PT y uno menor tiene 1-8 PT. No puedes tener a tu servicio a un demonio de PT superiores a los PT de tu familiar.
 
-<u>Blasfemia:</u> Tus habilidades de Influenciar, Presencia y Magia mental traspasan las resistencias que tenga el objetivo. Tus habilidades sólo pueden ser detenidas por Mente en blanco y Aura sacra.
+<u>Blasfemia:</u>  Tus habilidades de Influenciar, Presencia y Magia mental traspasan las resistencias que tenga el objetivo. Sólo podrán ser detenidads por personajes que tengan Mente en blanco o Aura sacra.
 
 ## Rango V
 
