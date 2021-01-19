@@ -1,5 +1,6 @@
 ---
 title: Johan Libert
+main: El monstruo innombrable
 nacionalidad: Mazarin
 alineamiento: Caótico maligno
 fecha-de-nacimiento: 4068

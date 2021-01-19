@@ -1,5 +1,6 @@
 ---
 title: Nox
+main: El monstruo innombrable
 nacionalidad: Utopía
 alineamiento: Caótico neutro
 fecha-de-nacimiento: desconocida

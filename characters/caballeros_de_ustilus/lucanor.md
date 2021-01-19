@@ -1,5 +1,6 @@
 ---
 title: Lucanor "Urugarth"
+main: Caballeros de Ustilus
 nacionalidad: Ustilés
 alineamiento: Legal maligno
 fecha-de-nacimiento: 3971

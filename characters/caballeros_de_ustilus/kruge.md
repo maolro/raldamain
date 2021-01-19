@@ -1,5 +1,6 @@
 ---
 title: Kruge
+main: Caballeros de Ustilus
 nacionalidad: Hobgoblin
 alineamiento: Legal neutro
 fecha-de-nacimiento: desconocida

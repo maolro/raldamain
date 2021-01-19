@@ -1,5 +1,6 @@
 ---
 title: Madeleine
+main: Caballeros de Ustilus
 nacionalidad: Norteña
 alineamiento: Neutro verdadero
 fecha-de-nacimiento: 3971

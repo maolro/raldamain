@@ -1,5 +1,6 @@
 ---
 title: Pantor
+main: Caballeros de Ustilus
 nacionalidad: Iskariano de ascendencia ustilesa
 alineamiento: Legal Bueno
 fecha-de-nacimiento: 3961
