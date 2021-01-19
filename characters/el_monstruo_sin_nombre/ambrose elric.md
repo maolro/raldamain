@@ -1,5 +1,6 @@
 ---
 title: Ambrose Elrich
+main: El monstruo innombrable
 nacionalidad: Uringen
 alineamiento: Caótico Neutro
 fecha-de-nacimiento: 4027

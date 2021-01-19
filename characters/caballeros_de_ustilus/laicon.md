@@ -1,5 +1,6 @@
 ---
 title: Laicon
+main: Caballeros de Ustilus
 nacionalidad: Jaddi, pero residente en Dairov
 alineamiento: Neutral maligno
 fecha-de-nacimiento: 3957

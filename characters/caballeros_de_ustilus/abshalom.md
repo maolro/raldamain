@@ -65,4 +65,4 @@ La revuelta en Rizad fue una chispa que provocó revueltas a lo largo de todo el
 
 ### Yabu
 
-"Sólo la desesperación me ha llevado a aliarme con este individuo. No me despierta ninguna confianza ni él ni los espíritus que venera se ha opuesto repetidas veces a mi autoridad, pero debo reconocer que es muy efectivo en el campo de batalla y vale más la pena tenerlo como aliado que como enemigo. Eso sí, no debería andarse con tanto aire de confianza considerando la posición en la que está."
+"Sólo la desesperación me ha llevado a aliarme con este individuo. No me despierta ninguna confianza ni él ni los espíritus que venera se ha opuesto repetidas veces a mi autoridad, pero debo reconocer que es muy efectivo en el campo de batalla y vale más la pena tenerlo como aliado que como enemigo. Eso sí, no debería andarse con tanto aire de superioridad considerando la posición en la que está."

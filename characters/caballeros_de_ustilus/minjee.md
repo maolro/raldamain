@@ -1,5 +1,6 @@
 ---
 title: Minjee
+main: Caballeros de Ustilus
 nacionalidad: Iskariana
 alineamiento: Legal Neutro
 fecha-de-nacimiento: 3966

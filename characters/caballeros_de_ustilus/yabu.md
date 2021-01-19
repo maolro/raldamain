@@ -1,5 +1,6 @@
 ---
 title: Yabu "Hobb"
+main: Caballeros de Ustilus
 nacionalidad: Hobgoblin
 alineamiento: Legal maligno?
 fecha-de-nacimiento: desconocida
