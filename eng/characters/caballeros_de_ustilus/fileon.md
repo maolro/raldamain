@@ -1,28 +1,28 @@
 ---
 title: Fileon
-nacionalidad: Ustilés
-alineamiento: Legal Bueno
-fecha-de-nacimiento: 3968
-fecha-de-muerte: sigue vivo
-rangos: Aptitud con filos pesados, Aptitud con armaduras, Aptitud con escudo, Presencia
+nationality: Ustilian
+alignmnent: Legal Bueno
+birth-date: 3968
+death-date: sigue vivo
+ranks: Heavy blades proficiency, Shield proficiency, Armor, Presence, 
 image: fileon.jpg
 ---
 
-## Especialidades
+## Skills
+
+The rising star of his order, Fileon was destined to greatness from an early age. A master of the sword, Fileon leads his soldiers by example and inspires them to do the impossible. 
+
+## Traits
+
+While to everyone around him Fileon is a perfect hero, deep down he is a broken man who just wants to live a simple life. 
+
+## Biography
+
+### Early life
 
 
 
-## Rasgos
-
-
-
-## Historia
-
-### Orígenes
-
-
-
-### Muerte de Feyn
+### Death of a god
 
 
 
