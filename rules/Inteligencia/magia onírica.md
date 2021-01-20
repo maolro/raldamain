@@ -22,7 +22,7 @@ Puedes emplear un uso de Horror onírico para invocar a cualquier número de cri
 
 ## Rango III
 
-Añade un dado de soltura a tiros relacionados con magia onírica.
+Añade un dado de soltura a tiros relacionados con magia onírica. Los sueños que creas pueden tener hasta 2 capas.
 
 <u>Duelo psíquico:</u> Como acción estándar puedes instigar un duelo psíquico con una criatura de tu elección, atrapando tanto su mente como la tuya en un demiplano perteneciente a la dimensión de los sueños. Si tu objetivo no desea luchar puede tirar SAB contra tus dados de magia onírica para resistir este efecto. El demiplano que creas puede tener el aspecto que tú desees, pudiendo asemejarse hasta al mundo real. Los partícipes en un duelo psíquico que estén conscientes de su situación podrán usar el poder de su mente para atacar o defenderse, utilizando sus dados de magia mental (su estadística de INT o CAR) para dichos tiros. Estas manifestaciones mentales pueden tener la forma que el creador desee, pero harán siempre 3+Éxito daño base y podrás gastar ventajas según el tipo de daño que hagan (quemar si es daño fuego, ralentizar si es daño frío...). La resistencia mental reducirá todo el daño que sufra una persona dentro de un duelo psíquico.
 
@@ -34,14 +34,18 @@ Al entrar en los sueños de un objetivo aparecerás dentro del sueño que esté 
 
 ## Rango IV
 
-<u>Pesadilla:</u> 
+<u>Pesadilla:</u> Al invadir los sueños de una persona podrás emplear tu magia para darle horripilantes pesadillas, impidiendo que pueda descansar adecuadamente y provocándole daño a su cordura. Con esta habilidad puedes hacer un duelo psíquico contra una persona que estés afectando con inducción mental. Los guardianes de la mente de tu objetivo participarán también en dicho duelo para expulsarte de la mente que estás invadiendo. Si tienes éxito en el duelo reducirás la cordura de tu objetivo a 0 y podrás controlar su cuerpo durmiente como si fuese un títere. Pesadilla cuenta como un efecto mental para los propósitos de resistencia y puede ser eliminada con Eliminar magia o Exorcizar.
 
-<u>Sueño compartido:</u> 
+<u>Sueño compartido:</u> El poder de tu mente te permite formar un demiplano onírico el cual puedes compartir con otras criaturas soñadoras. Para formar un sueño compartido debes realizar un ritual de meditación conjunta junto con cualquier número de personas, quiénes al dormir unirán sus mentes formando el demiplano. Tú decides la forma y aspecto de dicho demiplano, además de las propiedades mágicas de este y los permisos que concedes a quiénes entren en él. Podrás añadir a cualquier criatura que se encuentre en el mundo de los sueños sin la necesidad que esta realice el mismo ritual que tú, pudiendo así formar un sueño compartido con personas localizadas a grandes distancias. 
+
+Un personaje con rangos en magia onírica puede usar sus poderes para tomar control de un sueño compartido enfrentándose a su propietario a través de un duelo psíquico. Esto sólo podrá usarse si el mago onírico tiene privilegios de parte del creador para utilizar magia o ha invadido la mente de uno de los invitados utilizando Inducción mental.
 
 ## Rango V 
 
-Añade un dado de soltura a tiros relacionados con magia onírica.
+Añade un dado de soltura a tiros relacionados con magia onírica. Los sueños que creas pueden tener hasta 3 capas.
 
-<u>Viaje onírico:</u> 
+<u>Viaje onírico:</u> Tu dominio de los sueños te permite acceder el mundo onírico estando despierto, abriendo puertas a mundos de belleza fantástica o horrores impensables. Formar un portal onírico te cuesta una acción de turno completo y perdurará mientras mantengas la concentración. El portal se manifestará en un punto aleatorio de dicho mundo decidido por el máster. Viaje onírico puede usarse para acceder a un demiplano compartido o escapar de él siempre y cuando tengas permiso de su creador. Un portal onírico que permanezca abierto más de 5 turnos infundirá la tierra dónde se encuentra de energía onírica, permitiendo que toda criatura que duerma en dicha zona pueda acceder al mundo onírico y provocando apariciones de criaturas nativas de dicho mundo.
 
-<u>Microcosmo:</u> 
+<u>Microcosmo:</u> Los sueños que formas son indistinguibles de la realidad, atrapando hasta a los más astutos observadores en mundos fantásticos de tu propia creación. Las criaturas que entren en tus demiplanos oníricos fracasarán automáticamente en tiros de percepción para distinguir si se encuentran en un sueño. Al reducir la cordura de un objetivo a 0 utilizando inducción mental puedes atrapar su mente en un gran demiplano conocido como microcosmo, el cual perdurará sin la necesidad de mantener la concentración en él.
+
+Una criatura atrapada en un microcosmo no será consciente que se encuentra en un sueño y su cuerpo caerá en un coma profundo. Sólo podrá escapar del microcosmo si muere, aunque deberá morir una vez por cada capa que tenga dicha dimensión. Las habilidades Viaje onírico y Umbral, junto con determinados rituales, pueden utilizarse para acceder o escapar de un microcosmo, aunque para ello el creador de dicha dimensión debe permitirlo.
