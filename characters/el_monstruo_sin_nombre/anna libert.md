@@ -17,7 +17,7 @@ Anna es capaz de fácilmente ganarse el aprecio de quiénes la rodean. No entien
 
 ## Rasgos
 
-Anna es una persona decidida que se mantendrá firme en las decisiones que tome a pesar de las horribles circunstancias que se encuentra. Cuando la vida que conoció cae en pedazos, Anna cree que ella sólo puede traer el fin del monstruo que es su hermano Johan. El miedo a Johan hace que ella intente no involucrar a las personas que tiene cerca e intenta alejarse de ellas para mantenerlas a salvo de él, pero esto hace que ella quede vulnerable en muchas situaciones y forzada a tomar decisiones difíciles. Anna sólo desea vivir una vida tranquila, pero sabe que nunca lo podrá hacer mientras Johan siga vivo.
+Anna es una persona decidida que se mantendrá firme en las decisiones que tome a pesar de las horribles circunstancias que se encuentra. Cuando la vida que conoció cae en pedazos, Anna cree que sólo ella puede traer el fin al monstruo en que su hermano Johan se ha convertido. Su miedo a Johan hace que ella intente no involucrar a las personas que tiene cerca e intenta alejarse de ellas para mantenerlas a salvo de él, pero esto hace que ella quede vulnerable en muchas situaciones y forzada a tomar decisiones difíciles. Anna sólo desea vivir una vida tranquila, pero sabe que nunca lo podrá hacer mientras Johan siga vivo.
 
 ## Historia
 
@@ -27,7 +27,7 @@ sus tiempos como una familia normal acabaron cuando se volvieron presos de uno d
 
 ### Atrapada en el manicomio
 
-su primera etapa se origina desde su principio en el manicomio en el que a pesar de no contar con parte de sus recuerdos aun es capaz de mostrar vestigios de su antigua identidad pasando de etapa cuando todo el caos y horror comienza a desatarse y ella empieza a recobrar sus recuerdos cada vez mas dolorosos, en su tercera entapa la podemos ver en el mundo de los sueños donde salem le ayuda a aprender a moverse y a crear su propio mundo en el que poder liberarse y donde ella se encuentra junto a su hermano ocupando cada uno un rol opuesto y en su ultima etapa ella se une a Salem confiandole su cuerpo para poder vencer a su hermano y darle el descanso
+su primera etapa toma lugar en el manicomio en el que a pesar de no contar con parte de sus recuerdos aun es capaz de mostrar vestigios de su antigua identidad pasando de etapa cuando todo el caos y horror comienza a desatarse y ella empieza a recobrar sus recuerdos cada vez mas dolorosos, en su tercera etapa la podemos ver en el mundo de los sueños donde salem le ayuda a aprender a moverse y a crear su propio mundo en el que poder liberarse y donde ella se encuentra junto a su hermano ocupando cada uno un rol opuesto y en su ultima etapa ella se une a Salem confiandole su cuerpo para poder vencer a su hermano y darle el descanso
 
 ### La llegada del monstruo
 
