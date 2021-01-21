@@ -4,7 +4,7 @@ nacionalidad: Shadowfell
 alineamiento: Neutral maligno
 fecha-de-nacimiento: 4030?
 fecha-de-muerte: sigue vivo
-rangos: Nigromancia, Plantilla Sombría, Influenciar
+rangos: Nigromancia, Plantilla Sombría, Influenciar, Conocimiento
 image: oriox.jpg
 ---
 
@@ -16,13 +16,13 @@ Su larga vida le ha permitido especializarse en un variado número de artes, ent
 
 ## Rasgos
 
-Oriox destaca por su aura de misterio que le rodea y el secretismo que muestra tanto con aliados que con enemigos, Es muy cuidadoso y trata de tener todas las cartas posibles antes de enfrentar a su oponente, lo cual le hace un lento para actuar pero al mismo tiempo implacable cuando toma una decisión.
+Oriox destaca por su aura de misterio que le rodea y el secretismo que muestra tanto con aliados que con enemigos, Es muy cuidadoso y trata de tener todas las cartas posibles antes de enfrentar a su oponente, lo cual le hace lento para actuar pero al mismo tiempo implacable cuando toma una decisión.
 
 ## Historia
 
 ### Orígenes
 
-Oriox nació y se crió en el Shadowfell, una dimensión de completa oscuridad en la cual reina la no-muerte y la desesperación. Tras oír historias sobre otro mundo de luz y experanza, Oriox buscó una manera de huir de su tenebroso hogar hasta que logró escapar haciendo un trato con uno de los señores del Shadowfell, prometiéndole su lealtad y devoción. Al llegar al mundo humano, Oriox quedó fascinado por este lugar libre de oscuridad y desde entonces se dedicó a viajar por su nuevo hogar, aprendiendo todo lo posible sobre sus habitantes y su historia. Pero el verdadero secreto que anhelaba encontrar es cómo ser humano.
+Oriox nació y se crió en el Shadowfell, una dimensión de completa oscuridad en la cual reina la no-muerte y la desesperación. Tras oír historias sobre otro mundo de luz y esperanza, Oriox buscó una manera de huir de su tenebroso hogar hasta que logró escapar haciendo un trato con uno de los señores del Shadowfell, prometiéndole su lealtad y devoción. Al llegar al mundo humano, Oriox quedó fascinado por este lugar libre de oscuridad y desde entonces se dedicó a viajar por su nuevo hogar, aprendiendo todo lo posible sobre sus habitantes y su historia. Pero el verdadero secreto que anhelaba encontrar es cómo ser humano.
 
 ### Viajero sombrío
 
@@ -36,7 +36,7 @@ Este sueño se rompe catastróficamente cuando Kuvira pierde la guerra contra Us
 
 ### Tirano sombrío de Hakrapeu
 
-Destrozado por no haber podido evitar la muerte de Kuvira viaja a Hakrapeu la tierra de la nigromancia donde derrota al dragón tirano que por tanto tiempo había estado gobernando ocupando su puesto y realizando cambios, el primero fue dividir a la sociedad en castas y luego volverlas a dividir en clases para provocar la guerra entre ellas protegiendo únicamente algunos pueblos o ciudades para garantizar que la población continuase aumentando para mas tarde poder aumentar su ejercito cada vez mas y repetir este ciclo que torturaría a Hakrapeu durante los años venideros.
+Destrozado por no haber podido evitar la muerte de Kuvira viaja a Hakrapeu la tierra de la nigromancia donde derrota al dragón tirano que por tanto tiempo había estado gobernando ocupando su puesto y realizando cambios, lo primero fue dividir a la sociedad en castas y luego volverlas a dividir en clases para provocar la guerra entre ellas protegiendo únicamente algunos pueblos o ciudades para garantizar que la población continuase aumentando para mas tarde poder aumentar su ejercito cada vez mas y repetir este ciclo que torturaría a Hakrapeu durante los años venideros.
 
 Sin embargo no se dedicaría únicamente a aumentar su fuerza sino que esto solo sería un medio para despues de encontrar a la reencarnación de Kuvira llevarla a Hakrapeu donde poder educarla y entrenarla para que el día que ella recupere sus recuerdos esté preparada para el nuevo mundo donde va a estar
 

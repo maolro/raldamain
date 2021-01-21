@@ -27,11 +27,15 @@ sus tiempos como una familia normal acabaron cuando se volvieron presos de uno d
 
 ### Atrapada en el manicomio
 
-su primera etapa toma lugar en el manicomio en el que a pesar de no contar con parte de sus recuerdos aun es capaz de mostrar vestigios de su antigua identidad pasando de etapa cuando todo el caos y horror comienza a desatarse y ella empieza a recobrar sus recuerdos cada vez mas dolorosos, en su tercera etapa la podemos ver en el mundo de los sueños donde salem le ayuda a aprender a moverse y a crear su propio mundo en el que poder liberarse y donde ella se encuentra junto a su hermano ocupando cada uno un rol opuesto y en su ultima etapa ella se une a Salem confiandole su cuerpo para poder vencer a su hermano y darle el descanso
+Ana abre los ojos en el manicomio, desorientada y sin recuerdos de quien es exactamente o como ha acabado ahí comienza a cooperar con algunos de los pacientes que residían en este lugar. Así sería por un tiempo hasta que extraños monstruos comenzaron a aparecer y a asesinar a las personas en el provocando que ella, junto con un pequeño grupo de supervivientes, comenzaran a recorrer el angosto y ruinoso manicomio para poder encontrar una salida terminando por llegar ni mas ni menos que a la boca del lobo donde algunos de los pacientes mas inestables y monstruos residían teniendo que luchar con ellos hasta llegar al origen de todo, su ``líder´´ caído ya en la demencia el cual se dedicaba a crear su facción con la ayuda de los poderes de un misterioso libro. Poco después sería derrotado y por fin conseguirían encontrar la salida del edificio pero recuerdos del pasado volverían a su mente y con ellos el presentimiento de que esto no hacia mas que comenzar.
 
 ### La llegada del monstruo
 
+Después de salir junto a los pacientes vivos del manicomio decidió volver con su familia adoptiva e intentar recuperar su antigua vida norma, sin embargo eventos extraños comenzarían a ocurrir en ese pequeño pueblo costero. Después de que los residentes del manicomio fuesen repartidos por el pueblo ella comenzó a investigar su pasado y el como había sido que ella había acabado encerrada allí pero solo conseguiría toparse con mas incógnitas, pesadillas comenzarían a atormentarla durante la noche trayéndole horribles recuerdos de un pasado que no es capaz de reconocer y el inquietante descubrimiento de reencontrarse con su hermano perdido. Aunque este periodo de investigación ya no duraría mucho mas y aquella noche en la que volvió a reunirse con sus compañeros ocurrió la catástrofe, su familia adoptiva apareció muerta por nadie menos que el hermano que había prometido volver por ella y un peligroso ritual había comenzado, gracias a la ayuda de Salem y Edvard consiguieron evitar que pasase nada grave pero su sentimiento de culpa cada vez era mayor y termino decidiendo abandonarles a todos para protegerles sin ser consciente del riesgo que corría al tomar esa decisión.
+
 ### Viajera de los sueños
+
+
 
 ### Una nueva familia
 
@@ -58,3 +62,5 @@ Después de vencer a Johan, se retiró junto con Salem a un humilde poblado en M
 ### Cressida
 
 ""
+
+su primera etapa toma lugar en el manicomio en el que a pesar de no contar con parte de sus recuerdos aun es capaz de mostrar vestigios de su antigua identidad pasando de etapa cuando todo el caos y horror comienza a desatarse y ella empieza a recobrar sus recuerdos cada vez mas dolorosos, en su tercera etapa la podemos ver en el mundo de los sueños donde salem le ayuda a aprender a moverse y a crear su propio mundo en el que poder liberarse y donde ella se encuentra junto a su hermano ocupando cada uno un rol opuesto y en su ultima etapa ella se une a Salem confiandole su cuerpo para poder vencer a su hermano y darle el descanso
