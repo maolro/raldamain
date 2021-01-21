@@ -53,11 +53,11 @@ Ella no se vería envuelta en la batalla final sin embargo terminaría por enter
 
 ### Johan
 
-"En todos mis años de investigar nunca me he encontrado a un monstruo así. Sé que por el bien de la humanidad debo llevarle a la justicia, pero al mismo tiempo tengo la certeza que esta es una labor imposible. Ha causado tanto dolor a mí y a mis compañeros que detenerlo es mi deber, aunque mi cuerpo y mente me pidan que pare."
+"En todos mis años de investigación nunca me he encontrado a un monstruo así. Sé que por el bien de la humanidad debo llevarle a la justicia, pero al mismo tiempo tengo la certeza que esta es una labor imposible. Me ha causado tanto dolor a mí y a mis compañeros que detenerlo es mi deber, aunque mi cuerpo y mente me pidan que pare."
 
 ### Anna
 
-"Siento gran pena por esta joven. Tanto ha sufrido y a tan temprana edad que es un milagro que siga luchando. Cuando la veo feliz, casi olvidando la pesadilla en la que nos encontramos, recuerdo porqué debo seguir luchando para darle un final feliz. Ojalá cuando todo esto termine pueda volver a vivir una vida normal, aunque en parte veo esto como una labor imposible."
+"Siento gran pena por esta joven. ha sufrido tanto y a tan temprana edad que es un milagro que siga luchando. Cuando la veo feliz, casi olvidando la pesadilla en la que nos encontramos, recuerdo porqué debo seguir luchando para darle un final feliz. Ojalá cuando todo esto termine pueda volver a vivir una vida normal, aunque en parte veo esto como una labor imposible."
 
 ### Edvard
 
@@ -73,5 +73,5 @@ Ella no se vería envuelta en la batalla final sin embargo terminaría por enter
 
 ### Kretch
 
-"Nuestra rivalidad se remonta desde hace décadas y seguramente seguirá hasta que uno de nosotros dos muera. Sus métodos me parecen cuestionables, y su deseo de dar un cierre a todos sus casos provoca que en muchos casos se hagan injusticias contra inocentes. Es una vergüenza a su trabajo además de ser un enemigo de todos aquellos que buscan realmente hacer la justicia."
+"Nuestra rivalidad se remonta desde hace décadas y seguramente seguirá hasta que uno de nosotros dos muera. Sus métodos me parecen cuestionables, y su deseo de dar un cierre a todos sus casos provoca que en muchos casos se hagan injusticias contra inocentes. Es una vergüenza para su trabajo además de ser un enemigo de todos aquellos que buscan realmente hacer la justicia."
 
