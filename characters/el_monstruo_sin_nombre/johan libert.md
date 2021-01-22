@@ -15,7 +15,7 @@ Con apariencia de ángel y corazón de demonio, Johan siembra discordia y terror
 
 Johan es una de las personas más carismáticas e inteligentes de su tiempo, pero usa su brillante talento para provocar caos y destrucción por donde pasa. Es capaz de conducir a personas razonables a actos de locura y provocar que los habitantes de una pacífica comunidad se maten entre ellos con sólo unas pocas palabras. Aunque su apariencia le hace destacar con facilidad, muy poca gente sabe información sobre él ya que Johan se oculta bajo una capa de secretismo y mentiras. 
 
-Johan posee muchos poderes mágicos más allá de la comprensión humana gracias a su pacto con Abdul Alzared, de los cuales muchos permanecen desconocidos hasta después de su muerte. Estos poderes, combinados con su talento carismático, le hacen el asesino en serie más peligroso que ha existido en Raldamain.
+Johan posee muchos poderes mágicos más allá de la comprensión humana gracias a su pacto con Abdul Alzared, de los cuales muchos permanecen desconocidos aun después de su muerte. Estos poderes, combinados con su talento carismático, le hacen el asesino en serie más peligroso que ha existido en Raldamain.
 
 ## Rasgos
 
