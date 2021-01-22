@@ -35,7 +35,7 @@ Obtienes Resistencia 2 a daño físico.
 
 ## Rango IV 
 
-Incrementa tu FUE por 1.
+Incrementa tu FUE por 1. Puedes tirar los dados de soltura que tengas en magia elemental en lugar de aquellos que poseas en ataques físicos en tiros de ataque.
 
 <u>Ola de tierra:</u> Tu velocidad de Excavar y Escalada aumenta a 30 pies. Como acción estándar puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas que estén en tu camino deben tirar destreza contra tu tiro de Magia Elemental o sufren 1+éxito daño contundente y ser empujadas 10 pies (gasta 1 ventaja para tropezar a un enemigo o empujarlo 5 pies adicionales). Sufrirás 2 daño no-letal cada turno que mantengas la ola de tierra salvo que gastes una acción de movimiento. Ola de tierra puede usarse como acción de movimiento si estás en tu Región vinculada.
 

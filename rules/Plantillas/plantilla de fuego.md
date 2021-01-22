@@ -35,7 +35,7 @@ Obtienes Resistencia 2 a daño físico.
 
 ## Rango IV
 
-Incrementa tu CAR por 1.
+Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia elemental en lugar de aquellos que poseas en ataques físicos en tiros de ataque.
 
 <u>Propulsión:</u> Eres capaz de propulsarte en el aire con tu magia de fuego. Como acción estándar, vuela 60 pies en cualquier dirección. Puedes usar esta habilidad como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
