@@ -3,6 +3,20 @@ title: Locura
 main: Reglas principales
 ---
 
+
+
+# Locura
+
+Podemos definir como locura todo daño duradero provocado a la integridad mental de una persona. Para que una persona reciba una locura debe de verse en una situación de alto estrés que lleve a su mente al límite, ser llevado al límite de su cordura por magia mental o por otros tantos efectos y situaciones similares.
+
+ 
+
+Dependiendo de la situación en la que se vea envuelta la persona o el factor que haya hecho que esta llegue a ese esta puede llegar a sufrir una forma de locura u otra. Un ejemplo de esto sería una persona afectada por el efecto de destrozar mente, el cual la llevaría hasta el extremo de perder sus recuerdos e identidad como es en el caso de la amnesia.
+
+ 
+
+Las locuras afectaran a las personas de diferentes formas, sin embargo, todas tienen algo en común y es su dificultad para ser sanadas. Para sanar una herida mental de tal gravedad como es la locura es necesario gran cantidad de terapia y tiempo en reposo para que el sujeto tenga oportunidades de recuperarse, sin embargo, algunas de estas locuras podrían llegar a no tener arreglo ya sea porque el daño es demasiado grande, porque la persona no es consciente de su locura y no está dispuesta a cooperar o en algunos casos porque ha decidido abrazar esta nueva forma de ser.
+
 ## Amnesia
 
 Un personaje que sufre amnesia no recuerda elementos de su vida y en algunos casos hasta su identidad. Esta locura causará que el personaje pierda una cantidad determinada de rangos y niveles de talento hasta que recupere sus memorias. Versiones menores de amnesia sólo causarán que un personaje olvide los eventos de uno o varios días sin perder sus habilidades mientras que otras más graves acabarán completamente con su identidad pasada, causando que pierda todos sus rangos y vuelva a ser un nivel 1. 
@@ -11,7 +25,7 @@ Un personaje con amnesia podrá recuperar sus rangos perdidos al redescubrir mom
 
 ## Fobia
 
-Un personaje con una fobia siente miedo irracional de un determinado objeto, criatura o situación. Cuando un persona con esta locura perciba la causa de su fobia recibirá el efecto de estado Espantado. En el caso de que un personaje con fobia sea atacado por la fuente de esta su nivel de miedo aumentará automáticamente por 1, como es el caso ser atacado con fuego si tiene pirofobia o ser rodeado por un muro si tiene claustrofobia. La naturaleza de una fobia quedará decidida por el máster según las circunstancias en las que se ha recibido esta locura. 
+Un personaje con una fobia siente miedo irracional de un determinado objeto, criatura o situación. Cuando un persona con esta locura perciba la causa de su fobia recibirá el efecto de estado Espantado. En el caso de que un personaje con fobia sea atacado por la fuente de esta su nivel de miedo aumentará automáticamente por 1, como es el caso ser atacado con fuego si tiene pirofobia o encontrarse en un espacio reducido en el caso de tener claustrofobia. La naturaleza de una fobia quedará decidida por el máster según las circunstancias en las que se ha recibido esta locura. 
 
 ## Manía
 
@@ -27,11 +41,11 @@ Un personaje con alucinaciones tiene dificultades distinguiendo realidad de ficc
 
 ## Paranoia
 
-Un personaje con paranoia cree que el mundo está conspirando contra él y no puede confiar en nadie, tratando a todos los que tiene cerca como potenciales enemigos. Por esta razón no considerará a ninguna persona como su aliada, perdiendo los beneficios de cualquier habilidad de presencia o guerrero divino que refuerce a aliados y no podrá flanquear no realizar ataques combinados con nadie. Además, cuando una persona con paranoia fracase haciendo un tiro de Averiguar intenciones pensará que la persona con quién interactúa tiene intenciones ocultas aunque no sea cierto. 
+Un personaje con paranoia cree que el mundo está conspirando contra él y no puede confiar en nadie, tratando a todos los que tiene cerca como potenciales enemigos. Por esta razón no considerará a ninguna persona como su aliada, perdiendo los beneficios de cualquier habilidad de presencia o guerrero divino que refuerce a aliados y no podrá flanquear o realizar ataques combinados con nadie. Además, cuando una persona con paranoia fracase haciendo un tiro de Averiguar intenciones pensará que la persona con quién interactúa tiene intenciones ocultas aunque no sea cierto. 
 
 ## Estrés postraumático
 
-Un personaje con estrés postraumático ha vivido un momento de extrema dureza que hace mella en su mente hasta años después del hecho. Esta locura causará que la persona que lo sufra tenga pesadillas periódicas relacionadas con dicho evento, las cuales impiden que pueda dormir adecuadamente. Además, cuando se encuentre con algo que le recuerda a ese momento sufrirá los efectos de la locura Fobia. 
+Un personaje con estrés postraumático ha vivido un momento de extrema dureza que hará mella en su mente hasta años después del hecho. Esta locura causará que la persona que lo sufra tenga pesadillas periódicas relacionadas con dicho evento, las cuales impiden que pueda dormir adecuadamente. Además, cuando se encuentre con algo que le recuerda a ese momento sufrirá los efectos de la locura Fobia. 
 
 ## Múltiples personalidades
 
