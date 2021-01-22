@@ -35,11 +35,11 @@ Obtienes Resistencia 2 a daño físico.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1.
+Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia elemental en lugar de aquellos que poseas en ataques físicos en tiros de ataque.
 
 <u>Columna de agua:</u> Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Como acción estándar puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies pero no puedes elevarte más alto que 45 pies. Cada turno que mantengas la columna sufres 2 daño no-letal salvo que gastes una acción de movimiento. Columna de agua solo puede ser usada si estás en contacto con una superficie de superficie igual o superior a la distancia a la que te intentes elevar. Esta habilidad puede usarse como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
-<u>Ataques infundidos:</u> Tus ataques son cambiantes como el agua, pasando ágilmente de ataque a defensa. Recibes la habilidad de Reposicionar, permitiéndote moverte 5 pies como acción bonus al detener exitosamente un ataque (te mueves 5 pies adicionales si ya tienes esta habilidad). Además, puedes gastar 2 ventajas generadas con un ataque natural para Fintar a tu objetivo. Si tienes rangos en Magia de hielo tus ataques infligen +1 daño base.
+<u>Ataques infundidos:</u> Tus ataques son cambiantes como el agua, pasando ágilmente de ataque a defensa. Recibes la habilidad de Reposicionar, permitiéndote moverte 5 pies como acción bonus al detener exitosamente un ataque (te mueves 5 pies adicionales si ya tienes esta habilidad). Además, puedes gastar 2 ventajas generadas con un ataque natural para Fintar a tu objetivo. Si tienes rangos en Magia de hielo tus ataques infligen +1 daño base. 
 
 ## Rango V 
 

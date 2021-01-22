@@ -40,7 +40,7 @@ Incrementa tu DES por 1.
 
 ## Rango V 
 
-Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
+Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. Puedes tirar los dados de soltura que tengas en magia elemental en lugar de aquellos que poseas en ataques físicos en tiros de ataque.
 
 <u>Forma gaseosa:</u> Si estas en una tormenta de nieve, gasta una acción estándar para infundirte en ella, pasando a forma gaseosa. En forma gaseosa eres inmune al daño físico, te mueves a una velocidad de vuelo de 60 pies y no puedes atacar físicamente. Puedes aún hacer ataques elementales, pero cada turno que mantengas la forma gaseosa debes gastar una acción de movimiento en concentrarte o sufrir 2 daño no-letal (absorber frío no se aplica). Si la tormenta desaparece, vuelves inmediatamente a tu forma norma y estas aturdido por un turno.
 

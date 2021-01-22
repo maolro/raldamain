@@ -37,11 +37,11 @@ Obtienes Resistencia 2 a daño físico.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1.
+Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia elemental en lugar de aquellos que poseas en ataques físicos en tiros de ataque.
 
 <u>Viajero de los cielos:</u> Recibes la capacidad de volar 60 pies como acción de movimiento. Mientras estés volando obtienes un dado de ventaja atacando a criaturas que estén en el suelo e incrementa tu DES por 1 para tiros de Esquiva. Esta velocidad de vuelo queda reducida por armadura pesada y empezarás a caer si eres aturdido. Volar largas distancias te cansa con más facilidad, dejándote fatigado si intentas volar durante más de una hora seguida.
 
-<u>Ataques infundidos:</u> Tus ataques físicos están infundidos de la fuerza de una furiosa tempestad. Al impactar con un ataque físico empujas 5 pies automáticamente al objetivo y puedes emplear 2 ventajas generadas en un ataque natural para Fintar. Si tienes rangos en Magia de tormenta infligirás +1 daño eléctrico en ataques físicos y podrás gastar 2 ventajas para Ralentizar al objetivo (4 ventajas para Aturdir). Los efectos de estado hechos con Ataques infundidos ignoran resistencia a Aturdir y Ralentizar, pero resistencia a daño eléctrico se aplica contra ellos.
+<u>Ataques infundidos:</u> Tus ataques físicos están infundidos de la fuerza de una furiosa tempestad. Al impactar con un ataque físico empujas 5 pies automáticamente al objetivo y puedes emplear 2 ventajas generadas en un ataque natural para Fintar. Si tienes rangos en Magia de tormenta infligirás +1 daño eléctrico en ataques físicos y podrás gastar 2 ventajas para Ralentizar al objetivo (4 ventajas para Aturdir). Los efectos de estado hechos con Ataques infundidos ignoran resistencia a Aturdir y Ralentizar, pero resistencia a daño eléctrico se aplica contra ellos. 
 
 ## Rango V 
 
