@@ -16,7 +16,7 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu INT por 1.
 
-<u>Meditación:</u> 
+<u>Meditación:</u> Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. Entrar en estado meditativo requiere diez minutos de concentración y calma.
 
 <u>Sentir la magia:</u> 
 
@@ -32,7 +32,7 @@ Obtienes Resistencia 2 a daño físico.
 
 Incrementa tu SAB por 1.
 
-<u>Tercer ojo:</u>  
+<u>Visión verdadera:</u> La razón te permite ver más allá del mundo sensible, percibiendo el mundo como realmente es. Tienes visión verdadera en un radio de 60 pies, lo cual te permite percibir a criaturas invisibles e ilusiones con normalidad. Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede causarte daño mental si intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres pueden ser inconcebibles para mentes humanas.
 
 <u>Forma astral:</u> A través de un ritual de meditación de 10 minutos de duración puedes liberar a tu mente de las ataduras del cuerpo, convirtiéndote en una criatura de pensamiento puro. Tu forma astral puede tener el aspecto que tú desees y no podrá alejarse más de 100 metros de tu posición. En esta forma eres incorpóreo e inmune a daño elemental y mágico, pero sólo podrás realizar acciones que requieran esfuerzo únicamente mental. Forma astral se desvanecerá si tu cuerpo es dañado o si esta es afectada con Eliminar magia o efectos similares. 
 
@@ -42,7 +42,7 @@ Obtienes Resistencia 3 a daño físico.
 
 <u>Palacio de la mente:</u> Al entrar en meditación puedes acceder a un demiplano creado únicamente con el poder de tu mente. Este demiplano tendrá el aspecto que tú desees y es impenetrable por intrusiones psíquicas. Cada minuto que pases en tu palacio mental contará como un segundo en el mundo real, lo cual te permite entrar en esa dimensión para realizar acciones mentales de larga duración en un instante. Si estás afectado por un hechizo mental o la habilidad inducción mental el control de tu palacio de la mente quedará disputado, requiriendo que tengas éxito en un duelo psíquico contra la persona que esté atacando tu mente. Otras criaturas que tú elijas pueden entrar también en tu palacio de la mente a través de la meditación, aunque no podrán usar hechizos ni atacar salvo que tú lo desees.
 
-<u>Xenoglosia:</u> 
+<u>Xenoglosia:</u> Eres capaz de hablar y entender todas las lenguas mortales, hasta aquellas que nunca has hablado. También puedes entender las lenguas de los dioses y pronunciar palabras incomprensibles para las mentes humanas. Un número de veces al día igual a tu rango - 2 puedes emplear una acción bonus para reforzar la fuerza de un hechizo hablando en una lengua prohibida. Esto causará que todos aquellos que todos los que escuchen tu hechizo deban taparse los oídos, quedando Ensordecidos durante un turno, o sufran daño psíquico igual al rango que tengas en la magia relacionada con dicho hechizo. Usar Xenoglosia de esta manera no tienen ningún efecto contra aquellos que puedan hablar dicha lengua prohibida. 
 
 ## Rango VI
 
@@ -51,3 +51,4 @@ Incrementa tu CAR por 1.
 <u>Mente iluminada:</u> 
 
 <u>Forma akhásica:</u> 
+
