@@ -12,7 +12,7 @@ Añade un dado de Soltura a todos tus tiros de telekinesia.
 
 <u>Escudo telequinético:</u> Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción para la cual tiras tus dados de telekinesia de forma defensiva. Una vez al turno puedes cancelar un éxito generado por el atacante (2 veces al turno a Rango III y 3 veces a Rango V). 
 
-<u>Reserva de chi:</u>  Puedes elegir sufrir 2 daño no-letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
+<u>Reserva de chi:</u>  Puedes elegir sufrir 2 daño no-letal o gastar 1 chi de tu reserva para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
 
 ## Rango II
 

@@ -23,8 +23,6 @@ Los beneficios que te otorgan los niveles de talento son los siguientes:
 
 - <u>Averiguar intenciones</u> (SAB): Tienes un sentido de intuición que te permite detectar mentiras. Recibes soltura en tiros para determinar si la persona con quién interactúas te está mintiendo. El objetivo debe tirar Engaño si te está mintiendo, y si tienes éxito sabrás con certeza si te está mintiendo o no. Averiguar intenciones no funciona con criaturas que tengan máscara.
 
-- <u>Conocimiento</u> (INT): Eres un experto en los ámbitos relacionados con un tema. Tienes soltura en tiros para recordar o saber información relacionada con un tema específico. Cada vez que obtienes un nivel de talento puedes escoger un tema diferente en el que tienes soltura. Algunos temas de conocimiento para escoger son la ingeniería, la historia, la medicina, la teología, la química y la criptografía. También puedes elegir como tema conocer los rasgos, historia y comportamientos de una cultura o raza extraplanaria específica.
-
 - <u>Destrozar</u> (FUE): Tienes soltura en tiros para romper objetos o causar daño a estructuras. Hacer un tiro de Destrozar te cuesta una acción estándar y al impactar le haces daño al objeto dependiendo del arma que uses. Un objeto tira dados defensivos dependiendo de su dureza y tiene PV determinados por su tamaño y su material. Estos son algunos ejemplos de estadísticas de objetos.
 
   | Objeto                            | Tiro defensivo                                               | PV   |
@@ -40,6 +38,8 @@ Los beneficios que te otorgan los niveles de talento son los siguientes:
   
 
 - <u>Engaño</u> (CAR): Eres experto mintiendo de una manera que parece que dices la verdad. Cuando una criatura intente usar averiguar intenciones para detectar si mientes, tienes soltura en tiros para evitar que lo detecte. Recibirás penalizadores en este tiro determinados por el máster si tu mentira resulta poco creíble. Si un jugador intenta usar Averiguar intenciones en ti, puedes comunicarle al máster tus resultados en secreto para que el otro jugador no sepa si estás usando Engaño o no. Engaño también puede usarse para comunicar mensajes secretos a un aliado sin que otro personaje lo sepa o resistir tiros de Percepción para intentar identificarte si llevas un disfraz.
+
+- <u>Estudio</u> (INT): Eres un experto en los ámbitos relacionados con un tema. Tienes soltura en tiros para recordar o saber información relacionada con un tema específico. Cada vez que obtienes un nivel de talento puedes escoger un tema diferente en el que tienes soltura. Algunos temas de conocimiento para escoger son la ingeniería, la historia, la medicina, la teología, la química y la criptografía. También puedes elegir como tema conocer los rasgos, historia y comportamientos de una cultura o raza extraplanaria específica.
 
 - <u>Heroísmo</u> (FUE): Eres capaz de usar tu fuerza física para realizar grandes proezas en el campo de batalla. Tienes soltura en tiros de ataque para hacer maniobras de combate (Agarrar, Tropezar, Empujar o Desarmar) y para atacar con armas improvisadas. Puedes usar tus dados de Heroísmo para defenderte de maniobras de combate, y puedes cancelar una vez al turno un éxito generado por el enemigo a nivel de talento 2 (2 veces al turno a nivel de talento 4).
 
