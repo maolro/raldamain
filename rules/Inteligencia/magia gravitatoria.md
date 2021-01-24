@@ -1,5 +1,5 @@
 ---
-title: Magia gravitatoria
+title: Magia Gravitatoria
 main: Rangos
 sub: Magia arcana
 ---
