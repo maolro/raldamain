@@ -8,7 +8,7 @@ sub: Inteligencia
 
 Recibes un nivel de talento adicional en conocimiento.
 
-<u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de conocimiento y notas inmediatamente si algo está fuera de lugar. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña. El master elige que información.
+<u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio y notas inmediatamente si algo está fuera de lugar. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña. El master elige que información.
 
 <u>Lingüista:</u> Aprende un idioma adicional de manera fluida. Puedes comunicarte de manera básica usando lenguajes similares al tuyo, como por ejemplo si hablas ustilés puedes comunicarte de manera básica con alguien que hable kratense. A rango aprendes un idioma adicional.
 
@@ -16,7 +16,7 @@ Recibes un nivel de talento adicional en conocimiento.
 
 ## Rango II
 
-<u>Conocimiento arcano</u>: Estudiando tomos antiguos o indagando en tus habilidades mágicas aprendes un nuevo hechizo desconocido. Puedes usar un hechizo nuevo de tu propia creación, pero su fuerza debe ser igual a un hechizo de rango I. Consulta con el master si te lo permite. Si ya tienes hechizos, puedes modificar alguno que ya poseas.
+<u>Conocimiento arcano</u>: Estudiando tomos antiguos o indagando en tus habilidades mágicas aprendes un nuevo hechizo o fabricas un nuevo hechizo desconocido. Puedes usar un hechizo o invento nuevo de tu propia creación, pero su fuerza debe ser igual a un hechizo de rango I y estar permitido por el máster. Si ya tienes hechizos, con esta habilidad puedes modificar alguno que ya poseas.
 
 <u>Uso de objetos mágicos:</u> Eres capaz de identificar las propiedades de un objeto mágico sin tener que tirar. Como acción de movimiento, puedes drenar el chi de un objeto mágico, otorgándote un dado de Ventaja en la tirada de tu siguiente hechizo. El objeto que drenes perderá una carga y añadirá un dado de Desventaja a todos los tiros relacionados con él hasta que realices un descanso largo.
 

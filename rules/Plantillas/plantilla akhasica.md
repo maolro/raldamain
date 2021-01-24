@@ -16,7 +16,7 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu INT por 1.
 
-<u>Meditación:</u> Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. Entrar en estado meditativo requiere diez minutos de concentración y calma.
+<u>Meditación:</u> Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. Entrar en estado meditativo requiere diez minutos de concentración y durará hasta que pierdas la concentración. En este estado añade un dado de soltura a todos tus tiros de memoria y recibir un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de plantilla akhásica - 1. Recibirás también un dado de soltura en tiros de magia si has entrado en el mundo onírico o en un duelo psíquico en estado de meditación.
 
 <u>Sentir la magia:</u> 
 
@@ -50,5 +50,5 @@ Incrementa tu CAR por 1.
 
 <u>Mente iluminada:</u> 
 
-<u>Forma akhásica:</u> 
+<u>Conocer el destino:</u> Has vislumbrado tu destino en la memoria akhásica, conociendo el momento predestinado de tu muerte. Los detalles de este momento deberán ser discutidos con el máster y recibir su consentimiento. Cualquier vez que mueras por una causa que no esté relacionada con tu muerte predestinada sobrevivirás milagrosamente, permaneciendo sólo a 0 PV y recibiendo una herida permanente grave en su lugar. Una vez al día cuando te encuentres en una situación peligrosa puedes invocar la fuerza del destino para librarte de ella, lo cual causará un efecto similar a Intervención divina. No obstante, si actúas de una manera demasiado temeraria o arrogante el máster te puede castigar adelantando tu fecha de muerte a un momento más cercano.
 

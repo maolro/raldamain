@@ -82,3 +82,7 @@ Un grupo de criaturas de bajo nivel puede realizar un ataque conjunto contra un 
 
 Un ataque conjunto cuenta como un ataque de área, infligiendo daño aunque el defensor tenga éxito en el tiro (Evasión se aplica contra este efecto), y el defensor sólo podrá protegerse con Esquiva. El defensor podrá gastar un uso de Parada para reducir el daño que sufre por 2, reduciéndolo como mínimo a 0. Si los atacantes están flanqueando al objetivo entonces este no podrá usar Esquiva para defenderse ni emplear Parada más de una vez al turno. 
 
+### Caídas
+
+Las caídas representan el daño que sufrirá un personaje por impactar un objeto a excesivas velocidades. Este daño sólo es reducido por resistencias a daño físico, ignorando tanto armaduras artificiales y naturales. Un personaje que se cae sufrirá 1 daño no-letal por cada 5 pies de distancia
+
