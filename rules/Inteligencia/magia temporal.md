@@ -14,7 +14,7 @@ Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta
 
 ## Rango II
 
-<u>Desplazamiento:</u> Tu control por el tiempo te permite estar fuera de sincronía con el, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes tirar tus dados de magia temporal en tiros defensivos para protegerte de ataques físicos y mágicos hechos contra ti. Gastando 1 chi de tu reserva como reacción puedes hacer un salto temporal, lo cual te permite repetir tu tirada defensiva contra un ataque exitoso. Desplazamiento no funciona contra criaturas que también tengan rangos en magia temporal.
+<u>Desplazamiento:</u> Tu control por el tiempo te permite estar fuera de sincronía con el, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes tirar tus dados de magia temporal en tiros defensivos para protegerte de ataques físicos y mágicos hechos contra ti. Gastando 1 chi de tu reserva como reacción puedes hacer un salto temporal, lo cual te permite repetir tu tirada defensiva contra un ataque exitoso. Desplazamiento no funciona contra criaturas que también tengan rangos en magia temporal. Una vez al turno puedes cancelar un éxito generado (2 veces a rango IV).
 
 <u>Acelerar:</u> Como acción estándar que consume 1 chi puedes hacer que una criatura pueda moverse y actuar con mayor velocidad. Una criatura afectada por Acelerar recibirá una acción de movimiento adicional al turno e incrementará su DES por 1, pero cada turno que Acelerar permanezca activo esta sufrirá 1 daño no-letal. Acelerar contrarresta y es contrarrestado por Alentar.
 
