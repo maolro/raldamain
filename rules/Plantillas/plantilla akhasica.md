@@ -18,7 +18,7 @@ Incrementa tu INT por 1.
 
 <u>Meditación:</u> Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. Entrar en estado meditativo requiere diez minutos de concentración y durará hasta que pierdas la concentración. En este estado añade un dado de soltura a todos tus tiros de memoria y recibir un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de plantilla akhásica - 1. Recibirás también un dado de soltura en tiros de magia si has entrado en el mundo onírico o en un duelo psíquico en estado de meditación.
 
-<u>Sentir la magia:</u> 
+<u>Sexto sentido:</u> Tienes un sexto sentido para la magia, el cual te permite detectar las impresiones y efectos dejados por ella. Con esta habilidad detectas la posición y fuerza aproximada de todas las criaturas y auras mágicas en un aura de 60 pies. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia puedes hacerle un número de preguntas igual a tu rango de plantilla al máster sobre su origen y otras características. 
 
 ## Rango III
 
@@ -48,7 +48,7 @@ Obtienes Resistencia 3 a daño físico.
 
 Incrementa tu CAR por 1.
 
-<u>Mente iluminada:</u> 
+<u>Mente iluminada:</u> Tu mente ha alcanzado el peldaño más alto del conocimiento. Eres inmune a efectos mentales y a daño hecho a tu cordura. Tienes conocimiento de todas las magias, pudiendo utilizar tus dados de la magia de tu elección para tiros relacionados con las demás. Las entidades relacionadas con la memoria akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
 
 <u>Conocer el destino:</u> Has vislumbrado tu destino en la memoria akhásica, conociendo el momento predestinado de tu muerte. Los detalles de este momento deberán ser discutidos con el máster y recibir su consentimiento. Cualquier vez que mueras por una causa que no esté relacionada con tu muerte predestinada sobrevivirás milagrosamente, permaneciendo sólo a 0 PV y recibiendo una herida permanente grave en su lugar. Una vez al día cuando te encuentres en una situación peligrosa puedes invocar la fuerza del destino para librarte de ella, lo cual causará un efecto similar a Intervención divina. No obstante, si actúas de una manera demasiado temeraria o arrogante el máster te puede castigar adelantando tu fecha de muerte a un momento más cercano.
 
