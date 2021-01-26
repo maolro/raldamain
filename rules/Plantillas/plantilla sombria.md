@@ -10,7 +10,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Sigilo sombrío:</u> No haces ruido al pasar ni dejas huellas. Si estás en un área de luz tenue o oscuridad recibes Ocultamiento, lo cual te permite cancelar un éxito generado por el atacante una vez adicional al turno. 
 
-<u>Nacido de las tinieblas:</u> Puedes ver en la oscuridad mágica y no mágica a una distancia de 60 pies. Recibes Resistencia contra daño frío y necrótico igual a tu Rango. Los no-muertos no son naturalmente hostiles hacia ti. Desbloqueas Nigromancia, para la cual puedes usar tu CAR en lugar de tu INT.
+<u>Nacido de las tinieblas:</u> Puedes ver en la oscuridad mágica y no mágica a una distancia de 60 pies. Además, recibes Resistencia contra daño frío y necrótico igual a tu Rango. Los no-muertos no son naturalmente hostiles hacia ti. Desbloqueas Nigromancia, para la cual puedes usar tu CAR en lugar de tu INT.
 
 ## Rango II
 
