@@ -18,14 +18,8 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Atemorizar:</u> Como acción estándar, haz un tiro de moral afectando a todos  los enemigos en un radio de 30 pies. Las criaturas contra las que tengas éxito pasan a estar espantadas, y las que ya están Espantadas acaban Asustadas. Esta habilidad no puede usarse más veces contra el mismo grupo de criaturas.
 
-<u>Dirigir combatientes:</u> Al usar voz del comandante, puedes dirigir a aliados para que realicen tácticas complejas. Estas son algunas de ellas:
 
-- **Muro de escudos**: Cada aliado obtiene un dado de Desafío adicional en tiros de escudo si está adyacente a un aliado con escudo. Añaden además una cantidad de dados de Dificultad adicional al tiro por cada aliado que esté adyacente a él.
-- **Flanqueadores expertos**: Tus aliados tiran un dado de Ventaja adicional y reciben +1 daño base cuando flanqueen a un adversario. El daño por esta habilidad se acumula con ataque furtivo.
-- **Vigilancia**: Tus aliados no pueden ser pillados por sorpresa si al menos uno de ellos no es sorprendido.
-- **Dispersar**: Tus aliados obtienen la habilidad [Evasión](http://raldamain.com/rules/Combate/reflejos.html) y pueden moverse 5 pies después de tener éxito en un tiro de Destreza. Pueden gastar una ventaja para moverse 5 pies adicionales.
-
-<u>Inspiración:</u> Tienes una reserva de puntos de inspiración igual a 1+Rango. Gasta un punto de inspiración para que tú o tu aliado obtenga un dado de Ventaja en un tiro. Esta habilidad solo puede usarse en aliados bajo los efectos de voz del comandante y los puntos se recuperan tras un descanso largo.
+<u>Inspiración:</u> Tienes una reserva de puntos de inspiración igual a 1+Rango. Gasta un punto de inspiración para que tú o tu aliado obtenga un dado de Ventaja en un tiro. Esta habilidad solo puede usarse en aliados bajo los efectos de voz del comandante y los puntos de inspiración se recuperarán tras un descanso largo.
 
 ## Rango III
 
@@ -43,11 +37,11 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 ## Rango V
 
-Tiras un dado de desafío adicional en tiros defensivos de Carisma.
+Tiras un dado de desafío adicional en tiros defensivos de Carisma. La distancia máxima de Voz del comandante aumenta hasta 60 pies.
 
 <u>Inspirar leyenda:</u> Al usar inspirar heroísmo, el objetivo afectado aumenta una de sus estadísticas temporalmente por 1 y obtiene un uso de la habilidad indómito (si ya lo tienes, te vuelves inmune a efectos mentales y de moral).
 
-<u>Bonus táctico:</u> Tu habilidad Dirigir combatientes ahora te permite tener dos tácticas a la vez, además que puedes hacer que tus aliados cambien de táctica como acción de movimiento sin necesidad de reactivar la habilidad
+<u>Bonus táctico:</u> Cuando tengas activa la habilidad Dirigir combatientes puedes tener activas hasta dos tácticas diferentes, las cuales afectarán a los aliados que tú desees. Una persona no puede tener activa más de una táctica a la vez aunque tú puedes escoger quién recibirá cada táctica. Puedes utilizar una acción bonus para que un aliado de tu elección cambie de táctica. 
 
 
 

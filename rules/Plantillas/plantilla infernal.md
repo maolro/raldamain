@@ -10,7 +10,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Resistencias infernales:</u> Recibes resistencia igual a tu rango contra un tipo de daño de tu elección y todas las condiciones asociadas con él. Algunas opciones son fuego, frío, veneno, eléctrico, necrótico y psíquico. A rango III y V puedes escoger otro tipo de daño contra el cual tener resistencia.
 
-<u>Rasgos demoníacos:</u> Tu herencia diabólica se manifiesta en un característico rasgo que puede variar de cuernos, garras, ojos de un color especial o una cola. Desbloqueas además Puna magia elemental y las heridas permanentes que provocas cuentan como heridas profanas. Las heridas profanas cuentan como si fuesen un nivel mayor para propósitos de sanación y hacen 1 daño no letal al turno hasta que el objetivo se sane PV. 
+<u>Rasgos demoníacos:</u> Tu herencia diabólica se manifiesta en un característico rasgo que puede variar de cuernos, garras, ojos de un color especial o una cola. Desbloqueas además una magia elemental de tu elección y las heridas permanentes que provocas cuentan como heridas profanas. Las heridas profanas cuentan como si fuesen un nivel mayor para propósitos de sanación y hacen 1 daño no letal al turno hasta que el objetivo se sane PV. 
 
 ## Rango II
 
@@ -26,7 +26,7 @@ Incrementa tu CAR por 1.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Alas demoniacas:</u> Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar.
+<u>Alas demoniacas:</u> Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar. Puedes sustituir esta habilidad por otras características similares que no sumen más de 3 PT entre ellas.
 
 <u>Ataques profanos:</u> Tus armas y ataques naturales están infunidos del poder del infierno. Al hacer daño con un ataque puedes gastar 2 ventajas generadas para infligir una herida profana a tu objetivo. Haces además +1 daño elemental con tus ataques y estos cuentan como si fuesen hechos con un arma de hierro frío (+2 daño contra abisales y espíritus).
 
