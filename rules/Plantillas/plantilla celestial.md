@@ -24,7 +24,7 @@ Incrementa tu CAR por 1.
 
 Obtienes Resistencia 2 a daño físico.
 
-<u>Alas del ángel:</u> Eres capaz de manifestar alas celestiales como acción estándar, las cuales te otorgan una velocidad de vuelo de 60 pies. Volver a ocultar tus alas te cuesta también una acción estándar.
+<u>Alas del ángel:</u> Eres capaz de manifestar alas celestiales como acción estándar, las cuales te otorgan una velocidad de vuelo de 60 pies. Volver a ocultar tus alas te cuesta también una acción estándar. Puedes sustituir esta habilidad por otras características similares que no sumen más de 3 PT entre ellas.
 
 <u>Ángel protector:</u> Una entidad celestial se dedica a protegerte del daño y guiarte hacia el bien. Añade un dado de Desventaja a todos tus tiros defensivos y una vez al día puedes repetir un tiro de defensa. Como acción estándar puedes manifestar a tu ángel protector, el cual es una criatura canija con 3 PT. Cada vez que subas de rango tu ángel protector aumenta una estadística por 1 y recibe 3 PT adicionales. También puedes aumentar su tamaño a pequeño o rango IV y o mediano a Rango V sin coste de PT. Si tu ángel protector muere pierdes todas las bonificaciones defensivas que te otorga durante un día.
 
@@ -42,7 +42,7 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 <u>Aura de vida:</u> Al activar tu aura de luz, todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si están al máximo de de vitalidad, entonces recuperarán PV (tú estas incluido). Todas las criaturas malvadas sufrirán 1 daño radiante cada turno que permanezcan en el aura.
 
-<u>Ver la verdad:</u> Tienes visión verdadera en un área de 80 pies, permitiéndote ver a través  de ilusiones y detectar criaturas invisibles. Obtienes resistencia igual a tu rango contra efectos fantasmales.
+<u>Ver la verdad:</u> Tienes visión verdadera en un área de 80 pies, permitiéndote ver a través de ilusiones y detectar criaturas invisibles. Obtienes resistencia igual a tu rango contra efectos fantasmales.
 
 ## Rango VI
 
