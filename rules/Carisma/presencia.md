@@ -18,6 +18,7 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Atemorizar:</u> Como acción estándar, haz un tiro de moral afectando a todos  los enemigos en un radio de 30 pies. Las criaturas contra las que tengas éxito pasan a estar espantadas, y las que ya están Espantadas acaban Asustadas. Esta habilidad no puede usarse más veces contra el mismo grupo de criaturas.
 
+<u>Dirigir combatientes:</u> Al usar voz del comandante puedes dirigir a aliados para que realicen tácticas complejas. Con esta habilidad puedes otorgar los bonificadores de una táctica de combate de tu elección, la cual afectará a todos los aliados que lo deseen. Los beneficios de dicha táctica se perderán si sufres una herida permanente o eres incapacitado.
 
 <u>Inspiración:</u> Tienes una reserva de puntos de inspiración igual a 1+Rango. Gasta un punto de inspiración para que tú o tu aliado obtenga un dado de Ventaja en un tiro. Esta habilidad solo puede usarse en aliados bajo los efectos de voz del comandante y los puntos de inspiración se recuperarán tras un descanso largo.
 
