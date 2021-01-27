@@ -1,7 +1,6 @@
 ---
 title: Contundentes
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 ## Rango I

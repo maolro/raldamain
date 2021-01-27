@@ -1,6 +1,5 @@
 ---
 title: Ventajas y Desventajas
-main: Reglas principales
 ---
 
 Las ventajas y las desventajas representan aquellos instantes en un combate que pueden permitirle a un bando la victoria o la derrota. Un buen uso de las ventajas es clave para llegar a la victoria, permitiendo a un jugador evitar ataques mortales o impactar a un ágil enemigo. Los usos básicos para las ventajas y desventajas son los siguientes:

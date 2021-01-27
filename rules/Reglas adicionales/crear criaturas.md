@@ -1,6 +1,5 @@
 ---
 title: Creación de criaturas
-main: Reglas adicionales
 ---
 
 ## Formas base

@@ -1,7 +1,6 @@
 ---
 title: Combate doble
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 ## Rango I

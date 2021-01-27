@@ -1,7 +1,6 @@
 ---
 title: Ira
-main: Rangos
-sub: Combate
+category: Combate
 ---
 
 ## Rango I

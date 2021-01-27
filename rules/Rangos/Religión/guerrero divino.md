@@ -1,7 +1,6 @@
 ---
 title: Guerrero divino
-main: Rangos
-sub: Sabiduria
+category: Religión
 ---
 
 ## Rango I

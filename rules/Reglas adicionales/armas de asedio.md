@@ -1,6 +1,5 @@
 ---
 title: Armas de asedio
-main: Reglas adicionales
 ---
 
 Las armas de asedio son grandes máquinas y estructuras empleadas tradicionalmente para tomar fortalezas. En esta página pueden encontrarse tanto armas típicas de una era medieval como gigantescos cañones pertenecientes a una era más moderna

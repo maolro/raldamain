@@ -1,7 +1,6 @@
 ---
 title: Filos ligeros
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 ## Rango I

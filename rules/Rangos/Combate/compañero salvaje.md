@@ -1,7 +1,6 @@
 ---
 title: Compañero salvaje
-main: Rangos
-sub: Combate
+category: Combate
 ---
 
 ## Rango I

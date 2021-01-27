@@ -1,21 +1,12 @@
 ---
 title: Locura
-main: Reglas principales
 ---
-
-
 
 # Locura
 
-Podemos definir como locura todo daño duradero provocado a la integridad mental de una persona. Para que una persona reciba una locura debe de verse en una situación de alto estrés que lleve a su mente al límite, ser llevado al límite de su cordura por magia mental o por otros tantos efectos y situaciones similares.
+Podemos definir como locura todo daño duradero provocado a la integridad mental de una persona. Para que una persona reciba una locura debe de verse en una situación de alto estrés que lleve a su mente al límite, ser llevado al límite de su cordura por magia mental o por otros tantos efectos y situaciones similares. Dependiendo de la situación en la que se vea envuelta la persona o el factor que haya hecho que esta llegue a ese esta puede llegar a sufrir una forma de locura u otra. Un ejemplo de esto sería una persona afectada por el efecto de destrozar mente, el cual la llevaría hasta el extremo de perder sus recuerdos e identidad como es en el caso de la amnesia.
 
- 
-
-Dependiendo de la situación en la que se vea envuelta la persona o el factor que haya hecho que esta llegue a ese esta puede llegar a sufrir una forma de locura u otra. Un ejemplo de esto sería una persona afectada por el efecto de destrozar mente, el cual la llevaría hasta el extremo de perder sus recuerdos e identidad como es en el caso de la amnesia.
-
- 
-
-Las locuras afectaran a las personas de diferentes formas, sin embargo, todas tienen algo en común y es su dificultad para ser sanadas. Para sanar una herida mental de tal gravedad como es la locura es necesario gran cantidad de terapia y tiempo en reposo para que el sujeto tenga oportunidades de recuperarse, sin embargo, algunas de estas locuras podrían llegar a no tener arreglo ya sea porque el daño es demasiado grande, porque la persona no es consciente de su locura y no está dispuesta a cooperar o en algunos casos porque ha decidido abrazar esta nueva forma de ser.
+Las locuras afectaran a las personas de diferentes formas, sin embargo, todas tienen algo en común y es su dificultad para ser sanadas. Para sanar una herida mental de tal gravedad como es la locura es necesario gran cantidad de terapia y tiempo en reposo para que el sujeto tenga oportunidades de recuperarse. Sin embargo, algunas de estas locuras podrían llegar a no tener arreglo ya sea porque el daño es demasiado grande, porque la persona no es consciente de su locura y no está dispuesta a cooperar o en algunos casos porque ha decidido abrazar esta nueva forma de ser.
 
 ## Amnesia
 

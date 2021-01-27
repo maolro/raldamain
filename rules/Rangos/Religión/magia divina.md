@@ -1,7 +1,6 @@
 ---
 title: Magia divina
-main: Rangos
-sub: Sabiduria
+category: Religión
 ---
 
 # Rangos

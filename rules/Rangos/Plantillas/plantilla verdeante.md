@@ -1,7 +1,6 @@
 ---
 title: Plantilla verdeante
-main: Rangos
-sub: Plantillas
+category: Plantillas
 ---
 
 ## Rango I

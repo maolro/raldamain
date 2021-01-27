@@ -1,7 +1,6 @@
 ---
 title: Escudo
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 ## Rango I

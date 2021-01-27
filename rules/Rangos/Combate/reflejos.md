@@ -1,7 +1,6 @@
 ---
 title: Reflejos
-main: Rangos
-sub: Combate
+category: Combate
 ---
 
 ## Rango I

@@ -1,7 +1,6 @@
 ---
 title: Artes marciales
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 ## Rango I

@@ -1,7 +1,6 @@
 ---
 title: Armas de fuego
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 ## Rango I

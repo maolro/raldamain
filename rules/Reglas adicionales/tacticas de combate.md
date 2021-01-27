@@ -1,6 +1,5 @@
 ---
 title: Tácticas de combate
-main: Reglas adicionales
 ---
 
 Aquí se encuentra una lista de las principales tácticas de combate disponibles para un ejército. Una unidad sólo puede tener activa una táctica de combate salvo que les comande un líder con Rango V o superior en Presencia, lo cual les permite tener dos tácticas activas a la vez.

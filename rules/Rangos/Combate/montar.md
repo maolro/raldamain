@@ -1,7 +1,6 @@
 ---
 title: Montar
-main: Rangos
-sub: Combate
+category: Combate
 ---
 
 ## Rango I
