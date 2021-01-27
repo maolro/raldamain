@@ -1,7 +1,6 @@
 ---
 title: Magia onírica
-main: Rangos
-sub: Magia arcana
+category: Ocultismo
 ---
 
 ## Rango I

@@ -10,7 +10,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Adaptación al frío:</u> No sufres efectos negativos al estar en un área de frio extremo y tienes resistencia a daño frío igual a tu rango. Eres especialmente vulnerable a daño de fuego, el cual te hace +2 daño base.
 
-<u>Toque gélido:</u> Tu toque es sobrenaturalmente frío. Desbloqueas elementalismo de hielo y puedes congelar 5 pies de agua como acción bonus (1/turno). Al impactar a un objeto metálico con tu ataque  elemental de hielo, se enfría sobrenaturalmente. Un objeto enfriado así hace 1 daño de frío a su portador por turno hasta que entre en calor.
+<u>Toque gélido:</u> Tu toque es sobrenaturalmente frío. Desbloqueas elementalismo de hielo y puedes congelar 5 pies de agua como acción bonus usable una vez al turno. Al impactar a un objeto metálico con tu ataque  elemental de hielo, se enfría sobrenaturalmente. Un objeto enfriado así hace 1 daño de frío a su portador por turno hasta que entre en calor.
 
 ## Rango II
 

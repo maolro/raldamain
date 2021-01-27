@@ -1,7 +1,6 @@
 ---
 title: Mente desencadenada
-main: Rangos
-sub: Inteligencia
+category: Ocultismo
 ---
 
 ## Rango I

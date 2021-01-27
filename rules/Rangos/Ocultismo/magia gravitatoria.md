@@ -1,7 +1,6 @@
 ---
 title: Magia Gravitatoria
-main: Rangos
-sub: Magia arcana
+category: Ocultismo
 ---
 
 ## Rango I

@@ -1,7 +1,6 @@
 ---
 title: Magia de tormenta
-main: Rangos
-sub: Magia elemental
+category: Magia elemental
 ---
 
 ## Rango I 

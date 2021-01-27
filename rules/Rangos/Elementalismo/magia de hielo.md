@@ -1,16 +1,15 @@
 ---
 title: Magia de Hielo
-main: Rangos
-sub: Magia elemental
+category: Magia elemental
 ---
 
 ## Rango I
 
 Añade un dado de soltura a todos tus ataques elementales.
 
-<u>Bajar temperaturas:</u> Baja las temperaturas de un radio de 30 pies. En ese radio puedes hacer ataques de hielo y congelar líquidos. Si ya estás en un área de frío, todas las criaturas sufren 2 daño no-letal al comienzo de su turno.
+<u>Bajar temperaturas:</u> Como acción estándar puedes bajar las temperaturas de un radio de 30 pies, bajando el clima por un paso. Mientras estés en un clima frío puedes hacer ataques elementales de hielo además de poder utilizar una acción estándar para congelar un área de agua de volumen igual a 10 x rango pies cúbicos. Si ya estás en un clima gélido lo reducirás a frío extremo, causando que todas las criatuas a menos de 30 pies de ti sin resistencias al frío sufran 2 daño no-letal al principio de su turno. 
 
-<u>Ataque elemental:</u> Ataca al objetivo con un rayo gélido. Haces 2+éxitos daño de hielo y puedes gastar 2 ventajas para ralentizar al enemigo 1 turno. (4 ventajas para paralizarlo).
+<u>Ataque elemental:</u> Puedes emplear una acción estándar para atacar a un objetivo a menos de 60 pies de distancia con un rayo gélido. Un rayo gélido hará 2+éxitos daño frío y puedes gastar 2 ventajas para ralentizar al enemigo durante 1 turno. (4 ventajas para paralizarlo). El daño frío que causas hará daño a la vitalidad al impactar y si logras reducir la vitalidad de un objetivo a 0 con un ataque elemental este quedará congelado. Una criatura congelada morirá de hipotermia después de un número de rondas igual a su CON + 1 si no es rescatada en dicha cantidad de tiempo salvo que tú decidas evitarlo.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir daño no-letal para convertir tu ataque elemental  en un ataque de área que ataca a todas las criaturas en un cono de 20 pies o que tenga un radio de salpicadura de 10 pies. Esta habilidad también puede usarse para congelar agua como una acción gratuita.
 
