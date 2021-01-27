@@ -1,7 +1,6 @@
 ---
 title: Médium
-main: Rangos
-sub: Inteligencia
+category: Ocultismo
 ---
 
 ## Rango I 

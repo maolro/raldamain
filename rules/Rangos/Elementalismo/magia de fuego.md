@@ -1,12 +1,11 @@
 ---
 title: Magia de Fuego
-main: Rangos
-sub: Magia elemental
+category: Magia elemental
 ---
 
 ## Rango I
 
-Añade un dado de soltura a todos tus ataques elementales.
+Añade un dado de soltura a todos tus ataques elementales. 
 
 <u>Ataque elemental:</u> Ataca al objetivo con una abrasante llamarada. Haces 3+éxitos daño fuego y puedes gastar 2 ventajas para provocar una quemadura leve (4 ventajas para una quemadura media). Una quemadura leve inflige 1 daño no-letal a la criatura al principio de su turno mientras que una quemadura media inflige 1 daño letal al turno.
 

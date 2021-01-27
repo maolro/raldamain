@@ -1,7 +1,6 @@
 ---
 title: Magia de Protección
-main: Rangos
-sub: Magia arcana
+category: Magia arcana
 ---
 
 ## Rango I

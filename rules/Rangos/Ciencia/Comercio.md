@@ -1,7 +1,6 @@
 ---
 title: Comercio
-main: Rangos
-sub: Inteligencia
+category: Inteligencia
 ---
 
 ## Rango I 
