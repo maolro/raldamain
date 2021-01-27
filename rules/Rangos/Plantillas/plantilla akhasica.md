@@ -1,7 +1,6 @@
 ---
 title: Plantilla Akhásica
-main: Rangos
-sub: Plantillas
+category: Plantillas
 ---
 
 ## Rango I

@@ -1,6 +1,5 @@
 ---
 title: Reglas de Combate
-main: Reglas adicionales
 ---
 
 Las reglas de combate del sistema Raldamain buscan agilizar el combate y favorecer la estrategia sobre la suerte. Cada criatura partícipe en un combate cuenta con un turno, en el cual puede realizar sus acciones. Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acciones estándar y acciones de turno completo.

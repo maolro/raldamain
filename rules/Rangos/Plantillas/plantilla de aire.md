@@ -1,7 +1,6 @@
 ---
 title: Plantilla de Aire
-main: Rangos
-sub: Plantillas
+category: Plantillas
 ---
 
 ## Rango I

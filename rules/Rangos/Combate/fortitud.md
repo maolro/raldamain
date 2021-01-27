@@ -1,7 +1,6 @@
 ---
 title: Fortitud
-main: Rangos
-sub: Combate
+category: Combate
 ---
 
 ## Rango I

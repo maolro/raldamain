@@ -1,7 +1,6 @@
 ---
 title: Plantilla de Tierra
-main: Rangos
-sub: Plantillas
+category: Plantillas
 ---
 
 ## Rango I

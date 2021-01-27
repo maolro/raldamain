@@ -1,7 +1,6 @@
 ---
 title: Plantilla de Fuego
-main: Rangos
-sub: Plantillas
+category: Plantillas
 ---
 
 ## Rango I 

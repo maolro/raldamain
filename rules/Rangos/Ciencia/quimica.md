@@ -1,7 +1,6 @@
 ---
 title: Química
-main: Rangos
-sub: Tecnología
+category: Ciencia
 ---
 
 ## Rango I

@@ -1,7 +1,6 @@
 ---
 title: Presencia
-main: Rangos
-sub: Carisma
+category: Social
 ---
 
 ## Rango I

@@ -1,6 +1,6 @@
 ---
 title: Conocimiento
-category: Inteligencia
+category: Ciencia
 ---
 
 ## Rango I

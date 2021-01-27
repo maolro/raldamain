@@ -1,6 +1,5 @@
 ---
 title: Combate de masas
-main: Reglas adicionales
 ---
 
 Estas reglas se utilizarán para determinar los resultados de una lucha entre dos grandes grupos de criaturas. Estos se calcularán teniendo en cuenta la fuerza de ambos combatientes, el número de estos y la posición en la que se encuentran. 

@@ -1,6 +1,5 @@
 ---
 title: Heridas permamentes
-main: Reglas principales
 ---
 
 ## Heridas permanentes

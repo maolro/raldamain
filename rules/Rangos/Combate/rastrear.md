@@ -1,7 +1,6 @@
 ---
 title: Rastrear
-main: Rangos
-sub: Sabiduria
+category: Combate
 ---
 
 ## Rango I

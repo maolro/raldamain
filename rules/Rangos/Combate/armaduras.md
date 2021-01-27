@@ -1,8 +1,6 @@
 ---
 title: Armaduras
-image: armaduras.jpg
-main: Rangos
-sub: Combate
+category: Combate
 ---
 
 ## Rango I

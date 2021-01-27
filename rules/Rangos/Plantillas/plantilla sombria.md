@@ -1,7 +1,6 @@
 ---
 title: Plantilla Sombría
-main: Rangos
-sub: Plantillas
+category: Plantillas
 ---
 
 ## Rango I

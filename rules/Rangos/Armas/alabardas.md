@@ -1,7 +1,6 @@
 ---
 title: Alabardas
-main: Rangos
-sub: Armas
+category: Armas
 ---
 
 # Rangos
