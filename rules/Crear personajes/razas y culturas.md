@@ -1,6 +1,5 @@
 ---
 title: Razas y culturas
-main: Crear personajes
 ---
 
 Estas son las razas y culturas recomendadas para la campaña de Caballeros de Ustilus.

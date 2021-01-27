@@ -1,6 +1,5 @@
 ---
 title: Personajes predeterminados
-main: Creación de personajes
 ---
 
 Estos son algunos ejemplos de personaje que se pueden crear con el sistema Raldamain. Representan sólo una parte de las infinitas posibilidades disponibles con este sistema, pero servirán como orientación para nuevos jugadores y para crear estadísticas de PNJ.
