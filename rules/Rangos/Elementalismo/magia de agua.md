@@ -31,7 +31,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 ## Rango IV
 
-<u>Vórtice:</u> Empleando una acción estándar puedes formar un vórtice de 30 pies de radio en una masa de agua de tu elección. Todas las criaturas en el vórtice deben tirar fuerza o serán atrapadas por las corrientes, sufriendo 2 daño no letal y siendo arrastrados 10 pies hacia el centro del vórtice. Cuando lleguen al centro, empiezan a ahogarse inmediatamente. Gasta 2 ataque en tu reserva o sufre 2 daño no letal para aumentar el radio por 10 pies.
+<u>Vórtice:</u> Empleando una acción estándar puedes formar un vórtice de 30 pies de radio en una masa de agua de tu elección. Todas las criaturas en el vórtice deben tirar fuerza o serán atrapadas por las corrientes, sufriendo 2 daño no letal y siendo arrastrados 10 pies hacia el centro del vórtice. Cuando lleguen al centro, empiezan a ahogarse inmediatamente. Gasta 2 ataques de tu reserva o sufre 2 daño no letal para aumentar el radio por 10 pies.
 
 <u>Burbujas de agua:</u> Como acción estándar puedes formar una burbuja del tamaño de una cabeza humana que permite a aquel que entre en contacto con ella respirar bajo el agua. Una burbuja de agua puede emplearse también de forma ofensiva, lo cual te permite gastar 2 ventajas generadas en un ataque elemental para llenar los pulmones de un objetivo con agua, dándole el efecto de estado Náuseas durante un turno (4 ventajas para que se empiece a ahogar). Si tu objetivo está agarrado por uno de tus ataques puedes utilizar un ataque para reducir el número de turnos que pueda aguantar la respiración por 1.
 

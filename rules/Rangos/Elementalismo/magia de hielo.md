@@ -21,7 +21,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Hielo resbalante:</u> Como acción estándar convierte un área de 40 pies de agua en hielo. Todas las criaturas que intenten caminar por el hielo deben elegir moverse a mitad de velocidad o hacer un tiro de acrobacias. Si falla caen resbalados y se deslizan 5 pies por desventaja. puedes gastar 1 ventaja o desventaja para que se deslice 10 pies si toca tu hielo.
 
-<u>Muro de hielo:</u> Como acción estándar crea un muro de hielo con proporciones iguales a tu muro de agua. El muro es una barrera sólida con vida igual a tu rango +2. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuego puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
+<u>Muro de hielo:</u> Como acción estándar crea un muro de hielo con proporciones iguales a tu muro de agua. El muro es una barrera sólida con vida igual a tu rango +2. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de hielo puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
 <u>Neblina polar:</u> Las neblinas que creas hacen que todas las criaturas en su área estén Ralentizadas y tienes + blanco en ataques contra ellos. Crear una neblina es una acción estándar y ocupa 10 pies por rango. 
 
