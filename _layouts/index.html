@@ -2,18 +2,21 @@
 layout: page
 ---
 <div class="container text-justify">
-
 {{ content }}
     
 <h2>Índice</h2>
 
 <div class="container">
-  <ul class="list-unstyled card-columns">
+    <ul class="list-unstyled card-columns">
+        {% assign mydirs = page.dir | split: '/'  %}
 
-{% assign mypages =  site.pages | where: "category", page.category | where: "layout", "character" | sort: "title" %}
-{% for item in mypages %}		
-     <li><a href="{{item.url}}">{{item.title}}</a></li>		
-{% endfor %}
-</ul>
+        {% assign sortedpages =  site.pages | sort: "title" %}
+        {% for item in sortedpages %}
+        {% assign itemdirs = item.dir | split: '/' %}
+        {% if mydirs[1] == itemdirs[1] and mydirs[2] == itemdirs[2] %}
+        <li><a href="{{item.url}}">{{item.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
 </div>
