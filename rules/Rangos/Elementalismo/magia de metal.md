@@ -29,7 +29,7 @@ Añade un dado de soltura a todos tus ataques elementales. Hacer un ataque eleme
 
 ## Rango IV
 
-<u>Espinas metálicas:</u> Al impactar con un ataque elemental, puedes gastar 2 ventajas para clavarle una espina metálica. La espina provocará Sangrado al objetivo y recibes un dado de Ventaja en tiros de ataque contra ella por cada espina que tenga clavada. Una criatura que tenga espinas clavadas cuenta como si llevase armadura metálica para los propósitos de Ferrokinesia.
+<u>Espinas metálicas:</u> Al impactar con un ataque elemental, puedes gastar 2 ventajas para clavarle una espina metálica. La espina provocará Sangrado al objetivo y recibes un dado de Ventaja en tiros de ataque contra ella por cada espina que tenga clavada. Una criatura que tenga espinas clavadas cuenta como si llevase armadura metálica para los propósitos de Ferrokinesia. Una espina metálica puede eliminarse empleando una acción de movimiento.
 
 <u>Reflejar ataques</u>: Cuando un enemigo te ataque con un arma metálica y tengas éxito en el tiro defensivo, puedes gastar 2 Desventajas generadas para atrapar su arma en tu Aura magnética. Si es un arma cuerpo a cuerpo, tu objetivo podrá tirar sus dados de Aptitud con arma contra tu tiro de Magia elemental para evitar ser desarmado. También puedes gastar 2 Desventajas generadas para hacer un ataque elemental con un objeto atrapado en tu Aura magnética como reacción.
 
@@ -37,7 +37,7 @@ Añade un dado de soltura a todos tus ataques elementales. Hacer un ataque eleme
 
 Añade un dado de soltura a todos tus ataques elementales. Una vez al turno puedes hacer un ataque adicional como acción bonus.
 
-<u>Golpe mortal</u>: Como acción de turno completo, haz un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. El objetivo sufre automáticamente una herida permanente grave y debe tirar CON contra tu ataque elemental o morir instantáneamente. No puedes volver a usar esta habilidad contra la misma persona salvo que le claves una nueva espina metálica.
+<u>Golpe mortal</u>: Como acción de turno completo puedes hacer un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. Esta habilidad funciona como un ataque de elementalismo de metal pero tu objetivo no podrá defenderse y las heridas permanentes que inflijas serán de un nivel superior. No puedes usar esta habilidad en el mismo objetivo salvo que le claves otra espina metálica. 
 
 <u>Maestría del metal</u>: Ignoras la defensa de tu objetivo otorgada por armadura metálica. Tus ataques metálicos cuentan como armas mágicas para los propósitos de resistencias y como acción estándar puedes destruir una superficie de 15 pies de radio hecha de metal.
 
