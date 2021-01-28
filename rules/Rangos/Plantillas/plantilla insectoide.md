@@ -1,3 +1,8 @@
+---
+title: Plantilla insectoide
+category: Plantillas
+---
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.
