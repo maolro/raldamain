@@ -10,7 +10,21 @@ layout: page
     <ul class="list-unstyled card-columns">
         {% assign mydirs = page.dir | split: '/'  %}
         {% assign matched = "" | split: "," %}
+        {% for item in site.pages %}{% assign itemdirs = item.dir | split: '/' %}{% if mydirs[1] == itemdirs[1] and mydirs[2] == itemdirs[2] %}{% endif %}{% endfor %}
+        {% assign matched =  matched | sort: "title" %}
 
+        {% assign categories = matched | map: "category" | uniq | sort %}
+
+        {% for cat in categories %}
+        <li>{{ cat }}
+            <ul>
+                {% assign insidecat = matched | where: "category", cat %}
+                {% for item in insidecat %}
+                <li><a href="{{item.url}}">{{item.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
     </ul>
 
 </div>
