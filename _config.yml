@@ -9,33 +9,26 @@ defaults:
       path: "characters"
     values:
       layout: character
-      category: character
   -
     scope:
       path: "locations"
     values:
       layout: character
-      category: location
   -
     scope:
       path: "factions"
     values:
       layout: character
-      category: faction
   -
     scope:
       path: "events"
     values:
       layout: character
-      category: event
   -
     scope:
       path: "rules"
     values:
       layout: rule
-      category: rule
-      main: zznomain
-      sub: zznosub
 
 
 # Build settings
