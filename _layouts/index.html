@@ -8,22 +8,15 @@ layout: page
 
 <div class="container">
     <ul class="list-unstyled card-columns">
-        {% assign mydirs = page.dir | split: '/'  %}
-        {% assign matched = "" | split: "," %}
-        {% for item in site.pages %}
-        {% assign itemdirs = item.dir | split: '/' %}
-        {% if mydirs[1] == itemdirs[1] and mydirs[2] == itemdirs[2] and item.url != page.url %}
-        {% assign matched = matched | push: item %}
-        {% endif %}
-        {% endfor %}
-        {% assign matched =  matched | sort: "title" %}
+        {% assign mypages = site.pages | where_exp: "p", "p.dir contains page.dir" | where_exp: "p", "p.url != page.url" %}
 
-        {% assign categories = matched | map: "category" | uniq | sort %}
+        {% assign categories = mypages | map: "category" | uniq | sort %}
 
         {% for cat in categories %}
-        <li>{{ cat }}
+        <li>
+            {{ cat }}
             <ul>
-                {% assign insidecat = matched | where: "category", cat %}
+                {% assign insidecat = mypages | where: "category", cat %}
                 {% for item in insidecat %}
                 <li><a href="{{item.url}}">{{item.title}}</a></li>
                 {% endfor %}

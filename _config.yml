@@ -4,6 +4,10 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 lang: es
 
 defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      category: ""
   -
     scope:
       path: "characters"
