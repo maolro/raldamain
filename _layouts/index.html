@@ -17,12 +17,6 @@ layout: page
 
         {% for cat in categories %}
         <li>{{ cat }}
-            <ul>
-                {% assign insidecat = matched | where: "category", cat %}
-                {% for item in insidecat %}
-                <li><a href="{{item.url}}">{{item.title}}</a></li>
-                {% endfor %}
-            </ul>
         </li>
         {% endfor %}
     </ul>
