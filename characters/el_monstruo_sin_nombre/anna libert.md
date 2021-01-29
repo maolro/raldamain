@@ -27,7 +27,7 @@ sus tiempos como una familia normal acabaron cuando se volvieron presos de uno d
 
 ### Atrapada en el manicomio
 
-Ana abre los ojos en el manicomio, desorientada y sin recuerdos de quien es exactamente o como ha acabado ahí comienza a cooperar con algunos de los pacientes que residían en este lugar. Así sería por un tiempo hasta que extraños monstruos comenzaron a aparecer y a asesinar a las personas en el provocando que ella, junto con un pequeño grupo de supervivientes, comenzaran a recorrer el angosto y ruinoso manicomio para poder encontrar una salida terminando por llegar ni mas ni menos que a la boca del lobo donde algunos de los pacientes mas inestables y monstruos residían teniendo que luchar con ellos hasta llegar al origen de todo, su ``líder´´ caído ya en la demencia el cual se dedicaba a crear su facción con la ayuda de los poderes de un misterioso libro. Poco después sería derrotado y por fin conseguirían encontrar la salida del edificio pero recuerdos del pasado volverían a su mente y con ellos el presentimiento de que esto no hacia mas que comenzar.
+Ana abre los ojos en el manicomio, desorientada y sin recuerdos de quien es exactamente o como ha acabado ahí comienza a cooperar con algunos de los pacientes que residían en este lugar. Así sería por un tiempo hasta que extraños monstruos comenzaron a aparecer y a asesinar a las personas en el provocando que ella, junto con un pequeño grupo de supervivientes, comenzaran a recorrer el angosto y ruinoso manicomio para poder encontrar una salida terminando por llegar ni mas ni menos que a la boca del lobo donde algunos de los pacientes mas inestables y monstruos residían teniendo que luchar con ellos hasta llegar al origen de todo, su "lider" caído ya en la demencia el cual se dedicaba a crear su facción con la ayuda de los poderes de un misterioso libro. Poco después sería derrotado y por fin conseguirían encontrar la salida del edificio pero recuerdos del pasado volverían a su mente y con ellos el presentimiento de que esto no hacia mas que comenzar.
 
 ### La llegada del monstruo
 
@@ -39,7 +39,11 @@ Después de salir junto a los pacientes vivos del manicomio decidió volver con 
 
 ### Una nueva familia
 
+
+
 ### El enfrentamiento final
+
+
 
 ### Final
 
