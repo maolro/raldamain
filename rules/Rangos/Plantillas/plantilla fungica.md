@@ -9,7 +9,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Manipular hongos:</u> Tu cuerpo libera extrañas esporas que te permiten comunicarte y hasta manipular materia fúngica. Desbloqueas rangos en magia de naturaleza aunque en lugar de afectar a plantas con tus habilidades afectarás sólo a hongos. Si tienes rangos en magia de naturaleza los ataques hechos con alterar madera no harán daño físico sinó daño ácido. Todas las criaturas relacionadas con los hongos no serán naturalmente hostiles hacia ti y puedes comunicarles información básica. 
 
-<u>Cuerpo putrefacto:</u> Tu
+<u>Cuerpo putrefacto:</u> 
 
 ## Rango II
 
