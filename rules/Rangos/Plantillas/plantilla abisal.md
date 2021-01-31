@@ -1,5 +1,5 @@
 ---
-title: ascendencia Abisal
+title: plantilla Abisal
 category: Plantillas
 ---
 
