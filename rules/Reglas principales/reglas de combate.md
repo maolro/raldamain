@@ -83,5 +83,13 @@ Un ataque conjunto cuenta como un ataque de área, infligiendo daño aunque el d
 
 ### Caídas
 
-Las caídas representan el daño que sufrirá un personaje por impactar un objeto a excesivas velocidades. Este daño sólo es reducido por resistencias a daño físico, ignorando tanto armaduras artificiales y naturales. Un personaje que se cae sufrirá 1 daño no-letal por cada 5 pies de distancia
+Las caídas representan el daño que sufrirá un personaje por impactar un objeto a excesivas velocidades. Este daño sólo es reducido por resistencias a daño físico, ignorando tanto armaduras artificiales y naturales. Un personaje que se cae sufrirá 1 daño contundente por cada 5 pies de distancia que caiga, el cual ignorará armadura natural. Este daño pasará a ser no-letal. Si tu objetivo cae un número determinado de pies sufrirá heridas permanentes tal como indica esta tabla.
+
+| Pies  | Herida permanente    |
+| ----- | -------------------- |
+| 5-10  | Ninguna              |
+| 15-20 | Leve                 |
+| 30-45 | 2 leves o una media  |
+| 50-65 | 2 medias o una grave |
+| 70+   | 2 graves             |
 
