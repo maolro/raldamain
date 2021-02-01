@@ -43,8 +43,21 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un ataque natural puede modificarse con las siguientes características tanto fisiológicas como tecnológicas para variar los atributos de tus ataques:
 
-- **Guantalete:**
-- **Garra:**
+- **Guantalete:** Tus puños están reforzados con un guantalete metálico, incrementando la potencia de tus ataques. Mientras lleves guantaletes aumentas tu daño base por 1 y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote un penalizador de dos dados de Desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (sólo recibiras un dado de desventaja si tienes rango II de plantilla y ninguno si tienes rango IV). Puedes añadir características de arma adicionales a tu guantalete aunque no tengas la fisiología correcta.
+
+- **Garra:** Estás dotado de afiladas zarpas capaces de desgarrar a tus enemigos. Las garras te permiten hacer daño cortante con ataques naturales y aumentas el nivel de todas las heridas permanentes que infligas. Además, puedes gastar 2 ventajas generadas para infligir Sangrado a tu objetivo (esto no te cuesta ninguna ventaja si tu objetivo no lleva armadura). Sustituye los atributos de arma de la siguiente manera, funcionando como si tuvieses rangos en Filos pesados.
+
+  | Rango original      | Sustitución       |
+  | ------------------- | ----------------- |
+  | Puño aturdidor      | Gran corte        |
+  | Patada feroz        | Ataque podersoso  |
+  | Desviar proyectiles | Choque de espadas |
+  | Ataque despiadado   | Tajo cercenador   |
+
+  
+
 - **Mordisco:**
+
 - **Tentáculo:**
+
 - **Perforar:**
