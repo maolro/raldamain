@@ -7,7 +7,7 @@ category: Magia elemental
 
 Añade un dado de soltura a todos tus ataques elementales. 
 
-<u>Ataque elemental:</u> Ataca al objetivo con una abrasante llamarada. Haces 3+éxitos daño fuego y puedes gastar 2 ventajas para provocar una quemadura leve (4 ventajas para una quemadura media). Una quemadura leve inflige 1 daño no-letal a la criatura al principio de su turno mientras que una quemadura media inflige 1 daño letal al turno.
+<u>Ataque elemental:</u> Ataca al objetivo con una abrasante llamarada. Haces 3+éxitos daño fuego y puedes gastar 2 ventajas para provocar una quemadura leve (4 ventajas para una quemadura media). Una quemadura leve inflige 1 daño no-letal a la criatura al principio de su turno mientras que una quemadura media inflige 1 daño letal al turno. El daño hecho por quemaduras ignorará la resistencia al fuego aunque sólo podrás provocarlas 
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Esto hace que puedas hacer un ataque elemental adicional en tu turno, aumentar el radio de tu ataque por 10 o que tu ataque tenga un radio de salpicadura de 5 pies. Reserva de energía sólo puede usarse una vez por turno.
 
