@@ -41,9 +41,9 @@ Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cance
 
 # Armas
 
-Un escudo base está hecho de madera y te permite tirar tres dados de dificultad en tiros de defensa, pero recibirás una penalización -1 en todos tus tiros de DES. Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
+Un escudo base está hecho de madera y te permite tirar cuatro dados de dificultad en tiros de defensa, pero recibirás una penalización -1 en todos tus tiros de DES. Un atacante puede gastar 4 desventajas generadas para causar daño a tu escudo, reduciendo los dados de dificultad otorgados por 1. Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
 
-- **Ligero:** 
+- **Ligero:** Un escudo ligero es más fácil de transportar e utilizar a costa de protegerte menos. No sufres ninguna penalizacióna tu DES al defenderte con un escudo ligero 
 - **Metálico:** 
 - **Torre:** 
 - **Espinado:**
