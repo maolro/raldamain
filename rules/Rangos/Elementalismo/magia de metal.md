@@ -39,5 +39,5 @@ Añade un dado de soltura a todos tus ataques elementales. Una vez al turno pued
 
 <u>Golpe mortal</u>: Como acción de turno completo puedes hacer un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. Esta habilidad funciona como un ataque de elementalismo de metal pero tu objetivo no podrá defenderse y las heridas permanentes que inflijas serán de un nivel superior. No puedes usar esta habilidad en el mismo objetivo salvo que le claves otra espina metálica. 
 
-<u>Maestría del metal</u>: Ignoras la defensa de tu objetivo otorgada por armadura metálica. Tus ataques metálicos cuentan como armas mágicas para los propósitos de resistencias y como acción estándar puedes destruir una superficie de 15 pies de radio hecha de metal.
+<u>Maestría del metal</u>: Ignoras la defensa de tu objetivo otorgada por armadura metálica siempre que lleve un metal que puedas manipular. Además, puedes emplear una acción estándar para destruir una superficie de 15 pies de radio hecha de materiales metálicos.
 

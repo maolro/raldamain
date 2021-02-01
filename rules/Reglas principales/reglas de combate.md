@@ -20,7 +20,7 @@ Una acción de movimiento requiere menos esfuerzo que una acción estándar y ti
 - <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante
 - <u>Posición defensiva:</u> Añade un dado de Dificultad a todos tus tiros defensivos durante un turno. Si gastas una acción estándar para entrar en posición defensiva, convierte además uno de tus dados de Dificultad en un dado de Desafío.
 
-Puedes gastar dos ventajas generadas para realizar una acción de movimiento adicional una vez al turno. También puedes realizar una acción de movimiento adicional sufriendo 2 daño no-letal (esto también puede usarse sólo una vez al turno).
+Puedes gastar dos ventajas generadas para realizar una acción de movimiento fuera de tu turno (4 ventajas para realizar una acción estándar) siempre y cuando te queden acciones sin utilizar. También puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal.
 
 ### Acción de turno completo
 
