@@ -111,12 +111,10 @@ function edgeRoll( dice ) { // where the rolling magic happens
 
 
 	var imageRoll = "";
-	var imageFile = "";
 	for (var k in rollArray) {
-		imageFile = toname[k];
 
 		for ( var l = 0; l < rollArray[k] ; l++ ) {
-			imageRoll += '<img src="http://angille.net/eote/e/' + imageFile + '.png" />';
+			imageRoll += '<img src="' + image(toname[k]) + '" />';
 		}
 	}
 
@@ -163,7 +161,7 @@ function edgeRoll( dice ) { // where the rolling magic happens
 	}
 
 	function image(name) {
-		return "http://angille.net/eote/e/" + name + ".png";
+		return "e/" + name + ".png";
     }
 
 function reducePool( callingImage ) { // removes a die from the entry box and the pool graphic
