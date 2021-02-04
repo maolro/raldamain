@@ -16,15 +16,19 @@ En lugar de emplear tu acción estándar, puedes guardarla para emplearla en un 
 
 Una acción de movimiento requiere menos esfuerzo que una acción estándar y tiene una versatilidad de usos. Puedes emplear una acción de movimiento para una de las siguientes opciones:
 
-- Muévete como máximo un número de pies igual a tu movimiento (normalmente son 30 pies). Si estás luchando contra un enemigo y te mueves fuera de su alcance, este te hará un ataque de oportunidad
-- <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante
+- Muévete como máximo un número de pies igual a tu movimiento (normalmente son 15 pies). Si estás luchando contra un enemigo y te mueves fuera de su alcance, este te hará un ataque de oportunidad.
+- <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante.
 - <u>Posición defensiva:</u> Añade un dado de Dificultad a todos tus tiros defensivos durante un turno. Si gastas una acción estándar para entrar en posición defensiva, convierte además uno de tus dados de Dificultad en un dado de Desafío.
 
-Puedes gastar dos ventajas generadas para realizar una acción de movimiento fuera de tu turno (4 ventajas para realizar una acción estándar) siempre y cuando te queden acciones sin utilizar. También puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal.
+Puedes gastar dos ventajas generadas o desventajas generadas para realizar una acción de movimiento fuera de tu turno (4 ventajas para realizar una acción estándar) siempre y cuando te queden acciones sin utilizar. También puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal.
 
 ### Acción de turno completo
 
 Una acción de turno completo requiere más esfuerzo que una acción estándar. Si realizas una acción de turno completo perderás todas las acciones de movimiento que tengas en tu turno. Realizar un ritual te cuesta una acción de turno completo. No podrás usar acciones de movimiento gastando ventajas ni sufriendo daño no-letal.
+
+### Acciones bonus
+
+Una acción bonus es aquella que requiere un esfuerzo tan mínimo que no consume ninguna acción de otro tipo. En tu turno puedes moverte un total de 15 pies sin consumir ninguna acción.
 
 ### Reacciones
 

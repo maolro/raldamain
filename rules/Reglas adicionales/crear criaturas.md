@@ -26,7 +26,7 @@ Una criatura aumenta una de sus estadísticas por 1 una vez por cada 3 PT que se
 
 Los PV aumentan por 1 por cada 6 PT empleados para la creación de una criatura mientas que la Vitalidad aumenta por 1 cada vez que se empleen 2 PT. 
 
-### Mejoras de 1 PT
+### Mejoras de 1 PT/
 
 <u>Garras:</u> La criatura tiene un par de garras afiladas en sus brazos o sus piernas. Las garras infligen 1+Éxito daño cortante al impactar, y la criatura añade un dado de Soltura a sus tiros de ataque con ellas.. Puedes emplear 1 PT adicional en esta transformación para dotar a la criatura de un par adicional de garras o conseguir un atributo entre [Tajo feroz](Combate/filos pesados.md#rango-i), [Tajo cruzado]([Combate doble - Raldamain](Combate/dos armas.html#filos-pesados)), [Ataque poderoso]([Filos pesados - Raldamain](Combate/filos pesados.html#rango-ii)), [Impacto destructor]([Filos pesados - Raldamain](Combate/filos pesados.html#rango-iii)) o [Rompe escudos]([Filos pesados - Raldamain](Combate/filos pesados.html#rango-iv)).
 
