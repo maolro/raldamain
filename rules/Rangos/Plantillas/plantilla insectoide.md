@@ -1,5 +1,5 @@
 ---
-title: Plantilla insectoide
+title: Ascendencia insectoide
 category: Plantillas
 ---
 

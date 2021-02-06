@@ -1,5 +1,5 @@
 ---
-title: Plantilla celestial
+title: Ascendencia celestial
 category: Plantillas
 ---
 
