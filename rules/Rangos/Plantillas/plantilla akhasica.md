@@ -1,5 +1,5 @@
 ---
-title: Plantilla Akhásica
+title: Ascendencia Akhásica
 category: Plantillas
 ---
 

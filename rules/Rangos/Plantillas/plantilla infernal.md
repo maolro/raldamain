@@ -1,5 +1,5 @@
 ---
-title: Plantilla infernal
+title: Ascendencia infernal
 category: Plantillas
 ---
 
