@@ -1,6 +1,6 @@
 ---
 title: Ascendencia Akhásica
-category: Plantillas
+category: Ascendencias
 ---
 
 ## Rango I
@@ -15,15 +15,15 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu INT por 1.
 
-<u>Meditación:</u> Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. Entrar en estado meditativo requiere diez minutos de concentración y durará hasta que pierdas la concentración. En este estado añade un dado de soltura a todos tus tiros de memoria y recibir un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de plantilla akhásica - 1. Recibirás también un dado de soltura en tiros de magia si has entrado en el mundo onírico o en un duelo psíquico en estado de meditación.
+<u>Meditación:</u> Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. Entrar en estado meditativo requiere diez minutos de concentración y durará hasta que pierdas la concentración. En este estado añade un dado de soltura a todos tus tiros de memoria y recibir un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de ascendencia akhásica - 1. Recibirás también un dado de soltura en tiros de magia si has entrado en el mundo onírico o en un duelo psíquico en estado de meditación.
 
-<u>Sexto sentido:</u> Tienes un sexto sentido para la magia, el cual te permite detectar las impresiones y efectos dejados por ella. Con esta habilidad detectas la posición y fuerza aproximada de todas las criaturas y auras mágicas en un aura de 60 pies. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia puedes hacerle un número de preguntas igual a tu rango de plantilla al máster sobre su origen y otras características. 
+<u>Sexto sentido:</u> Tienes un sexto sentido para la magia, el cual te permite detectar las impresiones y efectos dejados por ella. Con esta habilidad detectas la posición y fuerza aproximada de todas las criaturas y auras mágicas en un aura de 60 pies. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia puedes hacerle un número de preguntas igual a tu rango de ascendencia al máster sobre su origen y otras características. 
 
 ## Rango III
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Fortaleza del pensamiento:</u> Como acción estándar puedes formar una barrera física o mental en un área de 15 pies centrado en ti sustentada por la fuerza de tus voluntad. Si escoges barrera física esta funcionará cómo un muro hecho de fuerza con 3 defensa y PV iguales a tu rango de plantilla + 2, mientras que la barrera mental aumentará la resistencia mental de todas las criaturas aliadas por un valor igual a tu rango de plantilla - 1. Fortaleza del pensamiento permanecerá mientras mantengas la concentración, desvaneciéndose si eres incapacitado o sufres un efecto mental. 
+<u>Fortaleza del pensamiento:</u> Como acción estándar puedes formar una barrera física o mental en un área de 15 pies centrado en ti sustentada por la fuerza de tus voluntad. Si escoges barrera física esta funcionará cómo un muro hecho de fuerza con 3 defensa y PV iguales a tu rango de ascendencia + 2, mientras que la barrera mental aumentará la resistencia mental de todas las criaturas aliadas por un valor igual a tu rango de ascendencia - 1. Fortaleza del pensamiento permanecerá mientras mantengas la concentración, desvaneciéndose si eres incapacitado o sufres un efecto mental. 
 
 <u>Psicomagia:</u> Eres capaz de lanzar hechizos usando únicamente el poder de tu mente. Con esta habilidad no necesitas gesticular para usar magia, requiriendo sólo mantener tus facultades mentales. Además, puedes elegir sufrir 2 daño a la cordura para añadir 1 chi adicional a tu reserva hasta tres veces al turno.  
 

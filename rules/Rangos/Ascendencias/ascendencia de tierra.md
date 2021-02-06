@@ -1,6 +1,6 @@
 ---
-title: Plantilla de Tierra
-category: Plantillas
+title: Ascendencia de Tierra
+category: Ascendencias
 ---
 
 ## Rango I
@@ -30,7 +30,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Armadura de piedra:</u> Como acción estándar, te rodeas de una solida armadura hecha de piedras. Esa armadura te da +2 DEF contra ataques físicos y mágicos, y te otorga un número de puntos de vida temporales iguales a 1+tu Rango. Esta armadura desaparece cuando pierdas tus puntos de vida temporales o pierdas la concentración.
 
-<u>Conexión elemental:</u> La tierra sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno tocando la tierra te regeneras 1 vitalidad. Al realizar un descanso corto en contacto con la tierra, reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). No puedes recuperarte de maldiciones, venenos y enfermedades con este efecto. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
+<u>Conexión elemental:</u> La tierra sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno tocando la tierra te regeneras 1 vitalidad. Al realizar un descanso corto en contacto con la tierra, reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). No puedes recuperarte de maldiciones, venenos y enfermedades con este efecto. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta ascendencia.
 
 ## Rango IV 
 
