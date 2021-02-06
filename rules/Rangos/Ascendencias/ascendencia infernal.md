@@ -1,6 +1,6 @@
 ---
 title: Ascendencia infernal
-category: Plantillas
+category: Ascendencias
 ---
 
 ## Rango I
@@ -15,7 +15,7 @@ Obtienes Resistencia 1 a daño físico.
 
 Incrementa tu CAR por 1.
 
-<u>Diablo familiar:</u> Tienes un demonio como familiar, el cual es una criatura pequeña construida con 3 PT. Puedes invocar a tu familiar como acción bonus y si muere debes esperar un día hasta reinvocarlo. seguirá tus ordenes al pie de la letra y aunque te obedezca siempre buscará su propio beneficio. Cada vez que subas un rango de Plantilla infernal tu familiar recibe tres puntos de transformación y aumenta una de sus estadísticas por 1. A rango IV el demonio aumenta su tamaño a mediano sin que tengas que gastar PT.
+<u>Diablo familiar:</u> Tienes un demonio como familiar, el cual es una criatura pequeña construida con 3 PT. Puedes invocar a tu familiar como acción bonus y si muere debes esperar un día hasta reinvocarlo. seguirá tus ordenes al pie de la letra y aunque te obedezca siempre buscará su propio beneficio. Cada vez que subas un rango de ascendencia infernal tu familiar recibe tres puntos de transformación y aumenta una de sus estadísticas por 1. A rango IV el demonio aumenta su tamaño a mediano sin que tengas que gastar PT.
 
 <u>Lengua del diablo:</u> Estás dotado de gran magnetismo personal y maestría en el arte de la palabra. Recibes un dado de soltura adicional en tiros de Influenciar y Presencia además de que puedes usar tu estadística de carisma para tiros de magia mental.
 

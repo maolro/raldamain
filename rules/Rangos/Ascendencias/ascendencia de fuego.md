@@ -1,13 +1,13 @@
 ---
-title: Ascendencia pirica
-category: Plantillas
+title: Ascendencia de Fuego
+category: Ascendencias
 ---
 
 ## Rango I 
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Tienes resistencia al fuego igual a tu rango de Plantilla de Fuego.
+<u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Tienes resistencia al fuego igual a tu rango de ascendencia de Fuego.
 
 <u>Pirokinesia:</u> Tu herencia elemental te permite controlar el fuego. Desbloqueas los rangos de magia elemental de fuego. Como acción bonus puedes crear una pequeña llama que durará mientras mantengas la concentración. Sólo puedes usar esta habilidad si estás en contacto con el oxígeno y puedes tener más de una llama activa. La llama puede usarse para hacer uno de los siguientes efectos (sólo puedes tener activo un único efecto al turno).
 
@@ -22,7 +22,7 @@ Incrementa tu DES por 1.
 
 <u>Impulso de fuego:</u> El fuego te impulsa para moverte más rápido, otorgándote una acción de movimiento adicional al turno. Tus velocidades de salto aumentan, incrementando tu salto horizontal por 10 pies y tu salto vertical por 5 pies.
 
-<u>Vista ígnea:</u> Puedes ver a través de las llamas y el humo como si fuesen trasparentes. Detectas la posición de todas las criaturas en 100 pies con la plantilla de fuego o que tengan una quemadura.
+<u>Vista ígnea:</u> Puedes ver a través de las llamas y el humo como si fuesen trasparentes. Detectas la posición de todas las criaturas en 100 pies con la ascendencia de fuego o que tengan una quemadura.
 
 ## Rango III 
 
@@ -30,7 +30,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Aura abrasadora:</u> Como acción estándar puedes rodearte de un aura de calor intenso de radio 30 pies. Todas las criaturas sin resistencias al fuego que empiecen su turno en el Aura abrasadora sufrirán 1 daño no-letal y el nivel de las quemaduras que inflijas aumenta por 1. Cuando una criatura te impacte con un arma cuerpo a cuerpo puedes gastar 2 desventajas generadas  para infligirle una quemadura leve. Una criatura que agarres o te esté agarrando sufrirá automáticamente una quemadura media. Puedes sufrir 1 daño no-letal para aumentar la fuerza de las llamas durante un turno, otorgándote Inmunidad al fuego y Resistencia al frío igual a tu rango, además de infligiendo una quemadura leve a todas las criaturas en el área que lleven armadura metálica.
 
-<u>Conexión elemental:</u> El fuego sana tus heridas y te permite recuperar la energía gastada. Al empezar tu turno en un área que esté en llamas o de calor extremo recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (desiertos, volcanes o forjas) recuperas todos tus PV como si realizases un descanso largo. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
+<u>Conexión elemental:</u> El fuego sana tus heridas y te permite recuperar la energía gastada. Al empezar tu turno en un área que esté en llamas o de calor extremo recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (desiertos, volcanes o forjas) recuperas todos tus PV como si realizases un descanso largo. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta ascendencia.
 
 ## Rango IV
 
@@ -46,7 +46,7 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 <u>Elemento del poder:</u> El fuego te propulsa a velocidades sobrehumanas. No sufres daño obligatorio por ataques de área y una vez al turno puedes añadir 2 éxitos a tu tirada de destreza. Si ya tienes el atributo evasión, puedes usar esta habilidad una vez adicional al turno (2 si tienes evasión mejorada). 
 
-<u>Visión térmica:</u> Tienes visión térmica en un radio de 60 pies., la cual te permite detectar la posición de criaturas que emanen calor. Vista térmica no funciona con no-muertos, constructos o criaturas con Plantilla Boreal, y puedes activar o desactivar la visión térmica como acción bonus. 
+<u>Visión térmica:</u> Tienes visión térmica en un radio de 60 pies., la cual te permite detectar la posición de criaturas que emanen calor. Vista térmica no funciona con no-muertos, constructos o criaturas con ascendencia Boreal, y puedes activar o desactivar la visión térmica como acción bonus. 
 
 ## Rango VI 
 
