@@ -1,5 +1,5 @@
 ---
-title: Plantilla verdeante
+title: Ascendencia verdeante
 category: Plantillas
 ---
 

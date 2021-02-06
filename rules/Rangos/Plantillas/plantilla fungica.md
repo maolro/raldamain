@@ -1,5 +1,5 @@
 ---
-title: Plantilla fúngica
+title: Asccendencia fúngica
 category: Plantillas
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Plantilla Boreal
+title: Ascendencia Boreal
 category: Plantillas
 ---
 
