@@ -1,13 +1,13 @@
 ---
-title: Plantilla de Agua
-category: Plantillas
+title: Ascendencia de Agua
+category: Ascendencias
 ---
 
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Ascendencia de las profundidades</u>: Recibes resistencia a Frío igual a tu rango de plantilla elemental. No sufres efectos negativos a causa del frío extremo. Los animales marinos no son naturalmente hostiles hacia ti.
+<u>Ascendencia de las profundidades</u>: Recibes resistencia a Frío igual a tu rango de ascendencia elemental. No sufres efectos negativos a causa del frío extremo. Los animales marinos no son naturalmente hostiles hacia ti.
 
 <u>Hidrokinesia:</u> Puedes moldear pequeñas cantidades de agua a tu voluntad. Desbloqueas rangos en Magia elemental de Agua. Como acción bonus usable una vez al turno puedes manipular una cantidad pequeña de agua o alterar sus estados. Puedes afectar al agua de las siguientes maneras:
 
@@ -22,7 +22,7 @@ Incrementa tu CON por 1.
 
 <u>Respiración acuática</u>: Tus pulmones están mejor adaptados para respirar bajo el agua. Eres capaz aguantar tu respiración durante un número de minutos igual a tu rango, y no puedes ser ahogado por magia elemental de agua.
 
-<u>Puñetazo hidráulico:</u> Como acción bonus puedes sufrir 1 daño no-letal para infundir tus ataques con tu elemento. Un ataque infundido hará +1 daño base y podrás usar maniobras de combate contra criaturas que excedan tu fuerza, ignorando todas las resistencias no-mágicas que tengan. Si tienes rangos en Magia de frío puedes usar la habilidad Canalizar el frío de Plantilla boreal.
+<u>Puñetazo hidráulico:</u> Como acción bonus puedes sufrir 1 daño no-letal para infundir tus ataques con tu elemento. Un ataque infundido hará +1 daño base y podrás usar maniobras de combate contra criaturas que excedan tu fuerza, ignorando todas las resistencias no-mágicas que tengan. Si tienes rangos en Magia de frío puedes usar la habilidad Canalizar el frío de ascendencia boreal.
 
 ## Rango III 
 
@@ -30,7 +30,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Forma fluida:</u> Como acción estándar puedes rodearte de una barrera de aguas fluidas, la cual te protege de ataques físicos y mágicos. Mantener forma fluida requiere tu concentración y mientras esta barrera esté activa todo el daño que sufras queda reducido por 2 y un área de 10 pies centrado en ti cuenta como terreno difícil. Puedes sufrir 1 daño no-letal para aumentar la fuerza de las corrientes, incrementando la reducción de daño por 1 durante un turno y otorgándote un dado de Desventaja adicional en tiros de Parada elemental. Para usar esta habilidad debes estar en contacto con 5 o más pies cúbicos de agua y no puede permanecer activa durante más de un minuto seguido. 
 
-<u>Conexión elemental:</u> El agua es una fuente de vida para tu cuerpo. Al empezar tu turno en contacto con el agua o sumergido en ella recuperas 1 Vitalidad. No podrás sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (ríos, lagos, mares o lluvias) recuperas todos tus PV como si realizases un descanso largo. Si usas agua en un tiro de Primeros auxilios no consumirás un uso y sanarás 1 PV adicional, y si tienes 3 o más niveles de talento podrás gastar 4 ventajas para reducir el nivel de una herida permanente por 1 (esto te cuesta 2 ventajas a nivel de talento 5). La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
+<u>Conexión elemental:</u> El agua es una fuente de vida para tu cuerpo. Al empezar tu turno en contacto con el agua o sumergido en ella recuperas 1 Vitalidad. No podrás sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (ríos, lagos, mares o lluvias) recuperas todos tus PV como si realizases un descanso largo. Si usas agua en un tiro de Primeros auxilios no consumirás un uso y sanarás 1 PV adicional, y si tienes 3 o más niveles de talento podrás gastar 4 ventajas para reducir el nivel de una herida permanente por 1 (esto te cuesta 2 ventajas a nivel de talento 5). La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta ascendencia.
 
 ## Rango IV 
 

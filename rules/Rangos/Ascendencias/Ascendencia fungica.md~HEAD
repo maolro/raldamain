@@ -1,6 +1,6 @@
 ---
 title: Asccendencia fúngica
-category: Plantillas
+category: Ascendencias
 ---
 
 ## Rango I
@@ -9,7 +9,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Manipular hongos:</u> Tu cuerpo libera extrañas esporas que te permiten comunicarte y hasta manipular materia fúngica. Desbloqueas rangos en magia de naturaleza aunque en lugar de afectar a plantas con tus habilidades afectarás sólo a hongos. Si tienes rangos en magia de naturaleza los ataques hechos con alterar madera no harán daño físico sino daño ácido. Todas las criaturas relacionadas con los hongos no serán naturalmente hostiles hacia ti y puedes comunicarles información básica. 
 
-<u>Carroñero:</u> Los seres vivos se han convertido en tu forma principal de alimentación. Desbloqueas los rangos de Nigromancia para los cuales puedes utilizar tu estadística de Sabiduría. Además, tienes resistencia a daño necrótico igual a tu rango de plantilla fúngica y puedes ver en la oscuridad sin problemas en un radio de 60 pies. No obstante, tu infección fúngica te hace especialmente vulnerable a la luz del sol, causando que recibas el efecto de estado Cegado si sufres daño radiante o pasas un turno en un área de luz brillante.
+<u>Carroñero:</u> Los seres vivos se han convertido en tu forma principal de alimentación. Desbloqueas los rangos de Nigromancia para los cuales puedes utilizar tu estadística de Sabiduría. Además, tienes resistencia a daño necrótico igual a tu rango de ascendencia fúngica y puedes ver en la oscuridad sin problemas en un radio de 60 pies. No obstante, tu infección fúngica te hace especialmente vulnerable a la luz del sol, causando que recibas el efecto de estado Cegado si sufres daño radiante o pasas un turno en un área de luz brillante.
 
 ## Rango II
 
@@ -33,7 +33,7 @@ Incrementa tu FUE por 1.
 
 <u>Transporte fúngico:</u> Como acción estándar puedes fusionarte con materia fúngica para cruzar grandes distancias en un instante. Para utilizar esta habilidad debes estar en contacto con un conjunto de hongos de tamaño igual o superior al tuyo y con ella podrás reemerger en un espacio infestado por hongos localizado como máximo a 90 pies de ti. Esta habilidad puede emplearse también para
 
-<u>Engendrar criatura fúngica:</u> Un número de veces al día igual a tu rango - 1 puedes emplear una acción estándar para engendrar a una criatura fúngica. Esa criatura empezará con 3 PT y empezará a crecer mientras pase el tiempo, recibiendo 1 PT adicional cada hora. No podrá exceder un número de PT iguales a tu rango de plantilla fúngica x 3 y sólo podrá crecer si se encuentra en un lugar oscuro o húmedo. En el caso que tu criatura fúngica pase un turno en un lugar infestado por hongos los PT que tiene incrementarán automáticamente por 1. Puedes tener bajo tu control un número de criaturas fúngicas cuyos PT combinados no excedan tu rango x 6. Esta habilidad puede utilizarse para mejorar la fuerza de un no-muerto bajo tu control, aumentando sus PT de la misma manera.
+<u>Engendrar criatura fúngica:</u> Un número de veces al día igual a tu rango - 1 puedes emplear una acción estándar para engendrar a una criatura fúngica. Esa criatura empezará con 3 PT y empezará a crecer mientras pase el tiempo, recibiendo 1 PT adicional cada hora. No podrá exceder un número de PT iguales a tu rango de ascendencia fúngica x 3 y sólo podrá crecer si se encuentra en un lugar oscuro o húmedo. En el caso que tu criatura fúngica pase un turno en un lugar infestado por hongos los PT que tiene incrementarán automáticamente por 1. Puedes tener bajo tu control un número de criaturas fúngicas cuyos PT combinados no excedan tu rango x 6. Esta habilidad puede utilizarse para mejorar la fuerza de un no-muerto bajo tu control, aumentando sus PT de la misma manera.
 
 ## Rango V
 
