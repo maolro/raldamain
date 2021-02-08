@@ -27,7 +27,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Manto nevado:</u> Los fríos vientos polares se doblegan a tu voluntad, congelando a los desafortunados que se acercan a ti. Desbloqueas elementalismo de aire pero sin acceso a sus subramas y pierdes la vulnerabilidad al fuego, obteniendo en lugar de ello resistencia igual a tu rango -2. Como acción bonus, activa un aura de vientos gélidos de radio 15 pies. El aura te da 2 dados de desventaja en tiros de defensa contra ataques a distancia y 2 dados de ventaja en tiros de sigilo. Todas las criaturas sin ascendencia boreal, fuego o agua sufren 2 daño frío por turno mientras permanezcan en el área.
 
-<u>Absorber frío:</u> Cuando empieces tu turno en un área afectada por una tormenta de nieve (manto nevado no cuenta pero tormenta nevada si), te sanas 1 daño no-letal (1 PV si estas al máximo de vitalidad). Al realizar un descanso corto en un lugar con frío extremo, reduce el nivel de una herida permanente por 1 (todas tus heridas permanentes si haces un descanso largo). La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta ascendencia.
+<u>Absorber frío:</u> Cuando empieces tu turno en un área afectada por una tormenta de nieve (manto nevado no cuenta pero tormenta nevada si), te sanas 1 daño no-letal (1 PV si estas al máximo de vitalidad). Al realizar un descanso corto en un lugar con frío extremo, reduce el nivel de una herida permanente por 1 (todas tus heridas permanentes si haces un descanso largo). Cuando alcances rango V de esta ascendencia aumenta el número de Vitalidad que te sanas al turno por 1 y recuperarás 2 PV al turno si tu Vitalidad está al máximo.
 
 ## Rango IV
 
