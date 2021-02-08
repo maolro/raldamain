@@ -37,7 +37,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Ataque vital:</u> Al impactar con un ataque preciso gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo. Esto se aplica después de hacer daño con tu arma. 
 
-<u>Contrataque:</u> Al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo hacer más de un contrataque por ronda. Contrataque no funciona contra otro contrataque.
+<u>Contrataque:</u> Al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo así realizar múltiples ataques de oportunidad al turno. Contrataque no funciona contra otro contrataque.
 
 # Armas
 

@@ -7,15 +7,15 @@ category: Combate
 
 Recibes un nivel de talento adicional en Supervivencia.
 
-<u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tira un dado de ventaja adicional en tiros de habilidad, defensa y ataque relacionados con tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiándolo para obtener los beneficios de enemigo predilecto contra él. 
+<u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tirarás un dado de ventaja adicional en tiros de habilidad, defensa y ataque relacionados con tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiándolo para obtener los beneficios de enemigo predilecto contra él. 
 
-<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Recibirás los bonificadores de terreno predilecto en un nuevo entorno si pasas como mínimo un mes sobreviviendo en este. No puedes tener más terrenos predilectos conocidos que tu rango de Rastrear + 1.
+<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Además recibes un dado de Ventaja en todos tus tiros de habilidad y ataque, y un dado de Desventaja en tiros defensivos. Recibirás los bonificadores de terreno predilecto en un nuevo entorno si pasas como mínimo un mes sobreviviendo en este. No puedes tener más terrenos predilectos conocidos que tu rango de Rastrear + 1.
 
 ## Rango II
 
-<u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Gasta una ventaja generada en un tiro de rastrear para aprender un detalle de tu presa. Aprender información de mayor importancia tiene un costo superior de ventajas (a discreción del master). También puedes pasar un descanso corto en un lugar buscando pistas, lo cual te permitirá hacerte una idea de los sucesos ocurridos ahí en un intervalo de como máximo 2 horas.
+<u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Esta habilidad te permite usar Percepción para averiguar la posición de criaturas invisibles o con ocultamiento, tirando contra su Sigilo. Esto requiere que gastes una acción de movimiento y te permite hacer tu siguiente ataque contra dicho objetivo tirando un dado de Desventaja menos. Cada acción adicional gastada reducirá el número de dados de Desventaja por 1, llegando como mínimo a 0.  También puedes pasar un descanso corto en un lugar buscando pistas de los hechos que hayan ocurrido ahí, lo cual te permitirá hacerte una idea de los sucesos ocurridos ahí en un intervalo de como máximo 2 horas.
 
-<u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Puedes elegir moverte a la mitad de tu velocidad mientras persigues a tu presa mientras permaneces oculto, contando como si fueses invisible. Puedes estudiar a tu enemigo predilecto con esta habilidad, pero este efecto se pierde en el momento que ataques. Volver a acechar requiere una acción estándar y que estés fuera del campo de visión de tu presa. Al ocultarte con esta habilidad no puedes ser detectado por tiros de Percepción, salvo que el tiro lo haga una criatura con la habilidad Rastreador experto.
+<u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Como acción estándar puedes ocultarte de tal manera que no puedes ser visto por tiros de Percepción, contando efectivamente como si fueses invisible. Para usar esta habilidad deber estar fuera del campo de vista de criaturas enemigas. Puedes moverte a mitad de velocidad o gastar acciones para estudiar a tu presa manteniendo los efectos de Acechar, pero estos se perderán en el momento que ataques o realices una acción particularmente ruidosa. Criaturas con la habilidad Rastreador experto pueden localizarte aunque estés oculto.
 
 ## Rango III
 
@@ -23,7 +23,7 @@ Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaj
 
 <u>Presa:</u> Como acción estándar puedes designar a un objetivo como tu presa, convirtiéndolo inmediatamente en tu enemigo predilecto. Tienes éxito automático rastreando a tu presa mientras que esta no esté en su terreno predilecto y las heridas permanentes que le infliges serán de un nivel superior. Solo puedes tener como máximo una presa al día, y si ella muere o escapa no puedes volver a usar esta habilidad durante el resto del día.
 
-<u>Rastreador rápido:</u>  Eres capaz de moverte con tu velocidad normal cuando rastreas o acechas. Además, puedes correr mientras rastreas a tu presa añadiendo sólo un dado de Desafío adicional a los tiros de dificultad. Estos penalizadores se perderán cuando alcances el rango V.
+<u>Rastreador rápido:</u>  Eres capaz de moverte con tu velocidad normal cuando rastreas o acechas. Además, declarar a un objetivo como Enemigo predilecto ahora te cuesta una acción estándar y una vez al turno 
 
 ## Rango IV
 

@@ -19,25 +19,25 @@ category: Armas
 
 ### Rango II
 
-<u>Corte circular:</u> Cuando uses la acción Gran corte puedes atacar también con tu arma secundaria. Tiraras un verde menos en el corte pero afectas un radio de 5 pies centrado en ti. Este ataque sólo puede detenerse si un personaje con escudo tiene éxito en su defensa dos veces.
+<u>Corte circular:</u> Cuando uses la acción Gran corte puedes atacar también con tu arma secundaria. Tiraras un dado de habilidad en este ataque pero atacarás a todas las criaturas en un radio de 5 pies centrado en ti. Este ataque sólo puede detenerse si un personaje con escudo tiene éxito en su defensa dos veces.
 
 <u>Juego de espadas:</u> Puedes gastar 2 ventajas para desarmar a un rival sin la necesidad de estar en espadas trabadas, Tu oponente no puede usar Parada para defenderse de tu arma secundaria cuando tenga la espada trabada.
 
 ### Rango III
 
-<u>Muerte por mil cortes:</u> Haces +2 daño base usando torbellino de acero e inflinges 1 daño adicional automático a cada escudo que impactes con esta habilidad. Al gastar una acción de movimiento en corte en secuencia haces un ataque adicional con tu arma secundaria (1/turno).
+<u>Muerte por mil cortes:</u> Haces +2 daño base usando torbellino de acero e infliges 1 daño adicional automático a cada escudo que impactes con esta habilidad. Al gastar una acción de movimiento en corte en secuencia haces un ataque adicional con tu arma secundaria (1/turno).
 
 ## Filos ligeros
 
 ### Rango I
 
-<u>Desviar ataques:</u> tu arma secundaria puede desviar ataques que traspasen tus defensas. Una vez al turno puedes hacer una segunda parada contra un ataque que te impacte exitosamente usando tu arma secundaria. No puedes cancelar éxitos con esta habilidad.
+<u>Desviar ataques:</u> Tu arma secundaria puede desviar ataques que traspasen tus defensas. Una vez al turno puedes hacer una segunda parada contra un ataque que te impacte exitosamente usando tu arma secundaria. No puedes cancelar éxitos con esta habilidad.
 
 <u>Combate furtivo:</u> Aplicas el daño de ataque preciso a tu segunda arma siempre que tires un dado de ventaja en ataques con ella. Esta habilidad se aplica también contra enemigos fintados. Pierdes los beneficios otorgados por Combate furtivo si eres desarmado de tu arma principal.
 
 ### Rango II
 
-<u>Atrapar arma:</u> usando tus dos armas puedes trabar espadas mas grandes que la tuya. Puedes usar la habilidad Choque de Espadas gastando 2 ventajas (ver Filos Pesados), con la cual puedes desarmar armas de Filo pesado. No puedes fintar si tienes tu arma trabada salvo que tengas la habilidad Finta superior
+<u>Atrapar arma:</u> Usando tus dos armas puedes trabar espadas mas grandes que la tuya. Puedes usar la habilidad Choque de Espadas gastando 2 ventajas, con la cual puedes desarmar armas más pesadas que las tuyas. No puedes fintar si tienes tu arma trabada salvo que tengas la habilidad Finta superior
 
 <u>Ataques apuntados:</u> Puedes hacer ataques apuntados con tu arma secundaria como su fuese tu arma principal. No sufres penalizadores al hacer un ataque apuntado con tu arma secundaria si tu objetivo está fintado.
 
