@@ -41,15 +41,15 @@ Incrementa tu FUE por 1.
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
-<u>Aura tóxica:</u> 
+<u>Aura tóxica:</u> Tus esporas tóxicas ahora permean el espacio a tu alrededor, infectando a las criaturas débiles de salud. Las criaturas que empiecen su turno a 15 pies de ti recibirán el efecto de estado Enfermado, el cual durará un número de turnos igual a tu rango de plantilla fúngica. Las criaturas que tengan resistencia al veneno podrán pasar un turno adicional por cada punto de resistencia en el aura sin sufrir ningún efecto secundario. Añade un dado de ventaja a todos tus ataques de magia de naturaleza atacando a criaturas enfermadas y puedes gastar 2 ventajas generadas en un ataque para que una criatura enfermada reciba el efecto de estado Náuseas durante un turno.
 
-<u>Comunión fúngica:</u>
+<u>Comunión fúngica:</u> Empleando diez minutos de meditación puedes fusionar tu mente con todos los hongos en un radio de 100 metros. En este estado eres capaz de percibir la posición exacta de todas las criaturas que estén a 10 pies de un hongo, recibiendo así inmunidad a ataques sorpresa y flanqueo. Si tienes rangos en rastrear o magia de naturaleza todo el área donde hayas realizado la comunión fúngica cuenta como terreno predilecto y harmonizado. 
 
 ## Rango VI
 
 Incrementa tu SAB por 1.
 
-<u>Forma micónica:</u> Has abandonado tu humanidad al completo para transformarte en una criatura fúngica. Recibes inmunidad a efectos mentales, veneno, enfermedades, fatiga y aturdimiento. No necesitas respirar ni dormir y eres capaz de subsistir únicamente con los nutrientes producidos por seres vivos muertos. Recibes además 6 PT para gastar en mejoras en tu cuerpo.
+<u>Forma micónica:</u> Has abandonado tu humanidad al completo para transformarte en una criatura fúngica. Recibes inmunidad a efectos mentales, veneno, enfermedades, fatiga y aturdimiento. No necesitas respirar ni dormir y eres capaz de subsistir únicamente con los nutrientes producidos por seres vivos muertos. Como acción de turno completo puedes poseer a una criatura fúngica de tu elección que se encuentre a 60 pies de ti (si has usado comunión fúngica pierdes este límite de distancia), sustituyendo tus capacidades físicas por aquellas que tenga la criatura que posees pero manteniendo tus habilidades mentales y mágicas.
 
-<u>Rejuvenecer:</u> 
+<u>Rejuvenecer:</u> Eres capaz de regenerar tu cuerpo a partir del fragmento más pequeño de él. Continúas regenerándote aunque seas reducido a 0 PV y eres capaz de regenerar órganos importantes para tu cuerpo con el adecuado descanso. Un número de veces por combate igual a tu estadística de constitución - 2 puedes reducir una herida permanente que afecte tu cuerpo por un nivel. No obstante, pierdes la capacidad de regenerarte si sufres una quemadura y morirás permanentemente si tu cuerpo es desintegrado al completo.
 

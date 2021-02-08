@@ -47,5 +47,5 @@ Aumenta tu CAR por 1 al entrar en ira.
 
 <u>Aura destructiva:</u> Espíritus protectores, elementos furiosos o sombras demoníacas hieren a todos los que se acerquen a ti. Todas las criaturas en un aura de 15 pies sufren 2 daño no-letal al principio y añade +2 dados de Desventaja a tus tiros defensivos contra ataques a distancia. Esta habilidad sólo puede activarse mientras estas en ira.
 
-<u>Erupción elemental:</u> Una vez por ira, haz un destructivo ataque de energía elemental. El tiro equivale a tu CON con un dado de Soltura por cada 2 rangos de Ira y hace daño igual a 1 + tus rangos en Ira. Si tienes ataque elemental o Descarga de energía, Erupción elemental cuenta como uno de esos ataques pero añades un dado de Ventaja y +1 daño. El número de dados de ventaja y daño base aumenta por 1 cada vez que recibas un rango adicional de Ira.
+<u>Erupción elemental:</u> Una vez por ira como acción estándar puedes hacer un destructivo ataque de energía elemental. El tiro equivale a tu CON con un dado de Soltura por cada 2 rangos de Ira y hace daño igual a 1 + tus rangos en Ira. Si tienes ataque elemental o Descarga de energía, Erupción elemental cuenta como uno de esos ataques pero añades un dado de Ventaja y +1 daño. El número de dados de ventaja y daño base aumenta por 1 cada vez que recibas un rango adicional de Ira.
 
