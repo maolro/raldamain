@@ -15,19 +15,19 @@ Recibes un nivel de talento adicional en Supervivencia.
 
 <u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Esta habilidad te permite usar Percepción para averiguar la posición de criaturas invisibles o con ocultamiento, tirando contra su Sigilo. Esto requiere que gastes una acción de movimiento y te permite hacer tu siguiente ataque contra dicho objetivo tirando un dado de Desventaja menos. Cada acción adicional gastada reducirá el número de dados de Desventaja por 1, llegando como mínimo a 0.  También puedes pasar un descanso corto en un lugar buscando pistas de los hechos que hayan ocurrido ahí, lo cual te permitirá hacerte una idea de los sucesos ocurridos ahí en un intervalo de como máximo 2 horas.
 
-<u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Como acción estándar puedes ocultarte de tal manera que no puedes ser visto por tiros de Percepción, contando efectivamente como si fueses invisible. Para usar esta habilidad deber estar fuera del campo de vista de criaturas enemigas. Puedes moverte a mitad de velocidad o gastar acciones para estudiar a tu presa manteniendo los efectos de Acechar, pero estos se perderán en el momento que ataques o realices una acción particularmente ruidosa. Criaturas con la habilidad Rastreador experto pueden localizarte aunque estés oculto.
+<u>Acechar:</u> Te mueves con gran sigilo mientras rastreas. Como acción estándar puedes ocultarte de tal manera que no puedes ser visto por tiros de Percepción, contando efectivamente como si fueses invisible. Para usar esta habilidad deber estar fuera del campo de vista de criaturas enemigas. Puedes moverte a mitad de velocidad o gastar acciones para estudiar a tu presa manteniendo los efectos de Acechar, pero estos se perderán en el momento que ataques o realices una acción particularmente ruidosa. Criaturas con la habilidad Rastreador experto pueden localizarte aunque estés oculto. Acechar sólo puede usarse si estás en uno de tus terrenos predilectos.
 
 ## Rango III
 
 Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaja adicional atacando a tu enemigo predilecto.
 
-<u>Presa:</u> Como acción estándar puedes designar a un objetivo como tu presa, convirtiéndolo inmediatamente en tu enemigo predilecto. Tienes éxito automático rastreando a tu presa mientras que esta no esté en su terreno predilecto y las heridas permanentes que le infliges serán de un nivel superior. Solo puedes tener como máximo una presa al día, y si ella muere o escapa no puedes volver a usar esta habilidad durante el resto del día.
+<u>Presa:</u> Como acción de movimiento puedes designar a un objetivo como tu presa, convirtiéndolo inmediatamente en tu enemigo predilecto. Tienes éxito automático rastreando a tu presa mientras que esta no esté en su terreno predilecto y las heridas permanentes que le infliges serán de un nivel superior. Solo puedes tener como máximo una presa al día, y si ella muere o escapa no puedes volver a usar esta habilidad durante el resto del día.
 
 <u>Rastreador rápido:</u>  Eres capaz de moverte con tu velocidad normal cuando rastreas o acechas. Además, declarar a un objetivo como Enemigo predilecto ahora te cuesta una acción estándar y una vez al turno 
 
 ## Rango IV
 
-<u>Camuflaje:</u> Puedes usar acechar en tu terreno predilecto aunque estés en el campo de visión de tu víctima, pudiendo gastar 2 ventajas o desventajas generadas en un ataque para ocultarte. Además, puedes utilizar la habilidad Acechar en cualquier terreno aunque este no sea predilecto, aunque no podrás ocultarte estando en el campo de visión de tu víctima si no estás en tu terreno predilecto.
+<u>Camuflaje:</u> Puedes usar acechar en tu terreno predilecto aunque estés en el campo de visión de tu víctima, pudiendo gastar 2 ventajas o desventajas generadas en un ataque para ocultarte. Además, eres capaz de utilizar Acechar gastando una acción de movimiento y no necesitas estar en tu terreno predilecto para usar esta habilidad.
 
 <u>Maestro del terreno:</u> Conoces la tierra como la palma de tu mano. Recibes inmunidad a terreno difícil y evitas obstáculos automáticamente si te encuentras en tu terreno predilecto. Además, recibes nuevas habilidades dependiendo de los terrenos predilectos que tengas. 
 
@@ -43,7 +43,7 @@ Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaj
 
 Recibes un nivel de talento adicional en Supervivencia. Tus ataques contra tu enemigo predilecto hacen +1 daño
 
-<u>Maestro cazador:</u> Puedes correr mientras usas acechar o rastreas a tu presa sin penalizadores. Cuando hagas un ataque sorpresa contra tu enemigo predilecto, gasta 4 ventajas para matarle instantáneamente si tiene 7 vida o menos. Si tiene mas de 7 vida sufre una herida permanente grave.
+<u>Maestro cazador:</u> El primer golpe que haces es el más mortal. Cuando hagas un ataque sorpresa contra tu enemigo predilecto, gasta 4 ventajas para matarle instantáneamente si tiene 7 vida o menos. Si tiene mas de 7 vida en lugar de ello sufrirá una herida permanente grave.
 
-<u>Depredador imparable:</u> Elegir una criatura como presa ahora te cuesta una acción gratuita y añades un dado de soltura adicional en tiros de ataque y habilidad contra ella, además de un dado de Desafío en tiros defensivos. La habilidad presa se recarga con un descanso corto.
+<u>Depredador imparable:</u> Elegir una criatura como presa ahora te cuesta una acción bonus y añades un dado de soltura adicional en tiros de ataque y habilidad contra ella, además de un dado de Desafío en tiros defensivos. La habilidad presa se recarga con un descanso corto.
 
