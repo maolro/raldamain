@@ -1,43 +1,76 @@
-  
 <html>
-    <head>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-        <script src="js/v-minusplusfield.js" type="text/javascript"></script>
 
-        <link href="css/v-minusplusfield.css" rel="stylesheet" />
-    </head>
+<head>
 
-    <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="js/v-minusplusfield.js" type="text/javascript"></script>
+    <link href="css/v-minusplusfield.css" rel="stylesheet" />
+</head>
 
-        <div id="app">
-
+<body>
+    <div class="container" id="app">
+        <div class="row">
+            <div class="col">
+                <ul class = "nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="stats-tab" data-bs-toggle="tab" href="#stat" role="tab"
+                        aria-controls="stats" aria-selected="false">Stats</a>
+                    <div>
+                        <div id="v-for-object" class="row">
+                            <div v-for="(value, name) in attributes" class="col">
+                                {{ name }} {{ value }}
+                                <v-minusplusfield v-bind:value="value" :min="0" :max="6"
+                                    v-on:input="attributes[name] = $event"></v-minusplusfield>
+                            </div>
+                        </div> total: {{ attributes.str + attributes.cha }}
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="talent-tab" data-bs-toggle="tab" href="#talent" role="tab"
+                        aria-controls="talents" aria-selected="false">Talents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="ranks-tab" data-bs-toggle="tab" href="#rank" role="tab"
+                        aria-controls="ranks" aria-selected="false">Ranks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gear-tab" data-bs-toggle="tab" href="#gear" role="tab" aria-controls="gear"
+                        aria-selected="false">Gear</a>
+                </li>
+                </ul>
+            </div>
+            <div class="col"> Character sheet 
             <div id="v-for-object" class="attributes">
                 <div v-for="(value, name) in attributes">
                     {{ name }} {{ value }}
-                <v-minusplusfield   v-bind:value="value" :min="5" :max="55" v-on:input="attributes[name] = $event"></v-minusplusfield>
                 </div>
-            </div>                
-
-            total: {{ attributes.str + attributes.cha }}
-
+            </div>
         </div>
-
-
-    </body>
-
+        </div>
+    </div>
     <script>
-    var app = new Vue({
-    el: '#app',
-        data: {
-            attributes:
-            {
-                str: 13,
-                cha: 10,
-                wis: 5,
-                blah: 10
+        var app = new Vue({
+            el: '#app',
+            data: {
+                attributes: {
+                    str: 1,
+                    dex: 1,
+                    con: 1,
+                    int: 1,
+                    wis: 1,
+                    cha: 1
+                }
             }
-        }
-    })
+        })
     </script>
+</body>
 
 </html>
