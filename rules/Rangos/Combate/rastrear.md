@@ -9,7 +9,7 @@ Recibes un nivel de talento adicional en Supervivencia.
 
 <u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tirarás un dado de ventaja adicional en tiros de habilidad, defensa y ataque relacionados con tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiándolo para obtener los beneficios de enemigo predilecto contra él. 
 
-<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Además recibes un dado de Ventaja en todos tus tiros de habilidad y ataque, y un dado de Desventaja en tiros defensivos. Recibirás los bonificadores de terreno predilecto en un nuevo entorno si pasas como mínimo un mes sobreviviendo en este. No puedes tener más terrenos predilectos conocidos que tu rango de Rastrear + 1.
+<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Además recibes un dado de Ventaja en todos tus tiros de habilidad y ataque, y un dado de Desventaja en tiros defensivos. Cuando alcances el rango III y V puedes escoger un terreno predilecto adicional en el cual obtengas tus beneficios o puedes añadir un dado de Ventaja adicional a tiros de Percepción, Supervivencia y Sigilo en un terreno predilecto que ya conozcas.
 
 ## Rango II
 
@@ -23,13 +23,13 @@ Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaj
 
 <u>Presa:</u> Como acción de movimiento puedes designar a un objetivo como tu presa, convirtiéndolo inmediatamente en tu enemigo predilecto. Tienes éxito automático rastreando a tu presa mientras que esta no esté en su terreno predilecto y las heridas permanentes que le infliges serán de un nivel superior. Solo puedes tener como máximo una presa al día, y si ella muere o escapa no puedes volver a usar esta habilidad durante el resto del día.
 
-<u>Rastreador rápido:</u>  Eres capaz de moverte con tu velocidad normal cuando rastreas o acechas. Además, declarar a un objetivo como Enemigo predilecto ahora te cuesta una acción estándar y una vez al turno 
+<u>Rastreador rápido:</u>  Eres capaz de moverte con tu velocidad normal cuando rastreas o acechas. Además, declarar a un objetivo como Enemigo predilecto ahora te cuesta una acción estándar y una vez al turno puedes emplear la habilidad Rastreador experto como acción bonus.
 
 ## Rango IV
 
 <u>Camuflaje:</u> Puedes usar acechar en tu terreno predilecto aunque estés en el campo de visión de tu víctima, pudiendo gastar 2 ventajas o desventajas generadas en un ataque para ocultarte. Además, eres capaz de utilizar Acechar gastando una acción de movimiento y no necesitas estar en tu terreno predilecto para usar esta habilidad.
 
-<u>Maestro del terreno:</u> Conoces la tierra como la palma de tu mano. Recibes inmunidad a terreno difícil y evitas obstáculos automáticamente si te encuentras en tu terreno predilecto. Además, recibes nuevas habilidades dependiendo de los terrenos predilectos que tengas. 
+<u>Maestro del terreno:</u> Conoces la tierra como la palma de tu mano. Recibes inmunidad a terreno difícil y evitas obstáculos automáticamente si te encuentras en tu terreno predilecto. Obtendrás una de las siguientes habilidades dependiendo del terreno predilecto que hayas escogido. Si tienes más de un terreno predilecto sólo podrás tener una única habilidad relacionada con tu terreno predilecto:
 
 - **Ártico**: Recibes Resistencia a daño frío igual a tu Rango de Rastrear. No sufres efectos negativos por frío extremo y tienes Visión Ártica en un radio de 60 pies.
 - **Desierto**: Recibes Resistencia a daño fuego y necrótico igual a tu Rango de Rastrear. No sufres efectos negativos por calor extremo y puedes sobrevivir un día adicional sin comer ni beber. 
@@ -46,4 +46,3 @@ Recibes un nivel de talento adicional en Supervivencia. Tus ataques contra tu en
 <u>Maestro cazador:</u> El primer golpe que haces es el más mortal. Cuando hagas un ataque sorpresa contra tu enemigo predilecto, gasta 4 ventajas para matarle instantáneamente si tiene 7 vida o menos. Si tiene mas de 7 vida en lugar de ello sufrirá una herida permanente grave.
 
 <u>Depredador imparable:</u> Elegir una criatura como presa ahora te cuesta una acción bonus y añades un dado de soltura adicional en tiros de ataque y habilidad contra ella, además de un dado de Desafío en tiros defensivos. La habilidad presa se recarga con un descanso corto.
-
