@@ -1,6 +1,6 @@
 ---
-title: Plantilla Boreal
-category: Plantillas
+title: Ascendencia Boreal
+category: Ascendencias
 ---
 
 ## Rango I
@@ -25,9 +25,9 @@ Incrementa tu CON Por 1.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Manto nevado:</u> Los fríos vientos polares se doblegan a tu voluntad, congelando a los desafortunados que se acercan a ti. Desbloqueas elementalismo de aire pero sin acceso a sus subramas y pierdes la vulnerabilidad al fuego, obteniendo en lugar de ello resistencia igual a tu rango -2. Como acción bonus, activa un aura de vientos gélidos de radio 15 pies. El aura te da 2 dados de desventaja en tiros de defensa contra ataques a distancia y 2 dados de ventaja en tiros de sigilo. Todas las criaturas sin plantilla boreal, fuego o agua sufren 2 daño frío por turno mientras permanezcan en el área.
+<u>Manto nevado:</u> Los fríos vientos polares se doblegan a tu voluntad, congelando a los desafortunados que se acercan a ti. Desbloqueas elementalismo de aire pero sin acceso a sus subramas y pierdes la vulnerabilidad al fuego, obteniendo en lugar de ello resistencia igual a tu rango -2. Como acción bonus, activa un aura de vientos gélidos de radio 15 pies. El aura te da 2 dados de desventaja en tiros de defensa contra ataques a distancia y 2 dados de ventaja en tiros de sigilo. Todas las criaturas sin ascendencia boreal, fuego o agua sufren 2 daño frío por turno mientras permanezcan en el área.
 
-<u>Absorber frío:</u> Cuando empieces tu turno en un área afectada por una tormenta de nieve (manto nevado no cuenta pero tormenta nevada si), te sanas 1 daño no-letal (1 PV si estas al máximo de vitalidad). Al realizar un descanso corto en un lugar con frío extremo, reduce el nivel de una herida permanente por 1 (todas tus heridas permanentes si haces un descanso largo). La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
+<u>Absorber frío:</u> Cuando empieces tu turno en un área afectada por una tormenta de nieve (manto nevado no cuenta pero tormenta nevada si), te sanas 1 daño no-letal (1 PV si estas al máximo de vitalidad). Al realizar un descanso corto en un lugar con frío extremo, reduce el nivel de una herida permanente por 1 (todas tus heridas permanentes si haces un descanso largo). Cuando alcances rango V de esta ascendencia aumenta el número de Vitalidad que te sanas al turno por 1 y recuperarás 2 PV al turno si tu Vitalidad está al máximo.
 
 ## Rango IV
 
@@ -43,13 +43,13 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 <u>Forma gaseosa:</u> Si estas en una tormenta de nieve, gasta una acción estándar para infundirte en ella, pasando a forma gaseosa. En forma gaseosa eres inmune al daño físico, te mueves a una velocidad de vuelo de 60 pies y no puedes atacar físicamente. Puedes aún hacer ataques elementales, pero cada turno que mantengas la forma gaseosa debes gastar una acción de movimiento en concentrarte o sufrir 2 daño no-letal (absorber frío no se aplica). Si la tormenta desaparece, vuelves inmediatamente a tu forma norma y estas aturdido por un turno.
 
-<u>Sentido de vida:</u> Eres capaz de detectar a todos los seres vivos de sangre cálida en un radio de 60 pies. También puedes identificar a todas las personas con plantilla boreal en ese radio.
+<u>Sentido de vida:</u> Eres capaz de detectar a todos los seres vivos de sangre cálida en un radio de 60 pies. También puedes identificar a todas las personas con ascendencia boreal en ese radio.
 
 ## Rango VI
 
 Incrementa tu CAR por 1
 
-<u>Hijo del invierno:</u> Te conviertes en una criatura primigenia del invierno. Eres inmune a los efectos de estado fatigado, exhausto, ralentizado y paralizado. Tu esperanza de vida se duplica y puedes emplear una acción de turno completo para entrar en forma elemental, similar a otras plantillas elementales. Entrar en forma elemental sólo puede usarse una vez por combate y cada turno que la mantengas sufrirás 1 daño no-letal (Absorber frío no se aplica). Al activar forma elemental tienes dos opciones para escoger:
+<u>Hijo del invierno:</u> Te conviertes en una criatura primigenia del invierno. Eres inmune a los efectos de estado fatigado, exhausto, ralentizado y paralizado. Tu esperanza de vida se duplica y puedes emplear una acción de turno completo para entrar en forma elemental, similar a otras ascendencias elementales. Entrar en forma elemental sólo puede usarse una vez por combate y cada turno que la mantengas sufrirás 1 daño no-letal (Absorber frío no se aplica). Al activar forma elemental tienes dos opciones para escoger:
 
 - **Coloso gélido:** Te rodeas de una poderosa armadura de hielo. Tu tamaño aumenta a grande, recibes 8 PV temporales, incrementa tu armadura natural por 2 y podrás tirar Magia elemental para realizar ataques naturales (las mejoras por Canalizar frío y Ataques infundidos se aplican). Con la armadura de Coloso gélido tu fuerza aumenta a 6 (8 si estás en un área de frío extremo) pero tu destreza se reducirá por 1.
 - **Tormenta viviente:** Estás rodeado constantemente de una tormenta de nieve de radio 15 pies. Esta tormenta te da ocultamiento superior y hará 2 daño frío a todas las criaturas que empiecen su turno en ella. Podrás utilizar Forma gaseosa y Caminante del viento en este área y el daño de todos tus ataques elementales hechos dentro de tu área de tormenta aumentará por 2. 

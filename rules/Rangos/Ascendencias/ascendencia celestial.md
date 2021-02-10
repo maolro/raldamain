@@ -1,13 +1,13 @@
 ---
-title: Plantilla celestial
-category: Plantillas
+title: Ascendencia celestial
+category: Ascendencias
 ---
 
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.
 
-<u>Fuego celestial:</u> Desbloqueas magia de fuego. Tus ataques elementales hacen daño radiante y puedes usarlos para sanar a aliados, curando una cantidad de Vitalidad igual al daño que harías. Si tu objetivo está al máximo de vitalidad, entonces le sanas 1 PV por cada rango de plantilla. Esta habilidad se aplica también a Castigo divino.
+<u>Fuego celestial:</u> Desbloqueas magia de fuego. Tus ataques elementales hacen daño radiante y puedes usarlos para sanar a aliados, curando una cantidad de Vitalidad igual al daño que harías. Si tu objetivo está al máximo de vitalidad, entonces le sanas 1 PV por cada rango de ascendencia. Esta habilidad se aplica también a Castigo divino.
 
 <u>Bendito por el cielo:</u> Puedes lanzar hechizos divinos usando tu estadística de carisma en vez de sabiduría. Tienes además resistencia igual a tu Rango contra daño necrótico y la capacidad de crear luz como la habilidad Pirokinesia.
 

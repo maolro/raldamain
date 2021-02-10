@@ -13,7 +13,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 ## Rango II
 
-<u>Ataque circular:</u> Como acción de turno completo puedes atacar a todas las criaturas en un arco de 15 pies. No podrás usar enredar en un ataque circular y este podrá detenerse de la misma manera que corte (es decir, al impactar con un escudo). Danza de cadenas se activa durante un turno al realizar un Ataque circular
+<u>Ataque circular:</u> Como acción de turno completo puedes atacar a todas las criaturas en un arco de 15 pies. No podrás usar enredar en un ataque circular y este podrá detenerse de la misma manera que corte (es decir, al impactar con un escudo). Danza de cadenas se activa durante un turno al realizar un Ataque circular.
 
 <u>Cargar ataque:</u> Al emplear tu acción estándar en Danza de cadenas estas girarán con más velocidad, aumentando el daño que infligen. Cada acción estándar que gastes en esta manera te añadirá un dado de Ventaja en tu siguiente tiro de ataque y aumentará el daño base por 1, llegando como máximo a +3 daño. Perderás todos tus ataques cargados si sufres una herida permanente o al perder la concentración.
 
@@ -23,7 +23,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Agarre con cadena:</u> Agarrar objetivos enredados por tus cadenas te cuesta una acción de movimiento o un gasto de 2 ventajas. Puedes mover hasta 10 pies en cualquier dirección a una criatura agarrada o estamparla forzosamente contra una superficie. Estampar una criatura es un tiro de Heroísmo que infligirá 1+Éxito daño contundente. Usar cualquiera de estas habilidades te cuesta una acción de movimiento.
 
-<u>Reflejar proyectiles:</u> Danza de cadenas puede usarse para protegerte de ataques a distancia o ataques mágicos con área de efecto de 10 pies o menos. Esta habilidad funciona como el atributo con el mismo nombre de artes marciales. Esta acción sólo puede usarse si tienes activa Danza de cadenas.
+<u>Desviar proyectiles:</u> Danza de cadenas puede usarse para protegerte de ataques a distancia o ataques mágicos con área de efecto de 10 pies o menos. Esta habilidad funciona como el atributo con el mismo nombre de artes marciales. Esta acción sólo puede usarse si tienes activa Danza de cadenas.
 
 ## Rango IV 
 

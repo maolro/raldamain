@@ -1,6 +1,6 @@
 ---
-title: Plantilla oni
-category: Plantillas
+title: Ascendencia oni
+category: Ascendencias
 ---
 
 ## Rango I
@@ -35,7 +35,7 @@ Incrementa tu FUE por 1.
 
 <u>Vuelo:</u> Al entrar en furia del oni recibes la capacidad de volar. tu velocidad de vuelo es de 60 pies (40 si llevas armadura). Mientras estés volando recibes un dado de Ventaja en ataques y un dado de Desventaja en tiros de defensa contra criaturas que estén en la tierra. Si sufres una herida permanente o eres aturdido mientras vuelas empiezas a caer inmediatamente.
 
-<u>Forma gaseosa:</u> Recibes la capacidad de transformar tu cuerpo en un estado gaseoso. Mientras estés en esta forma eres incorpóreo e inmune a daño físico, pero no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo 1+R rondas seguidas en forma gaseosa, tras las cuales vuelves a tu forma corpórea y debes realizar un descanso corto para volver a usar esta habilidad. Obtienes un uso adicional de esta habilidad cada vez que subas un rango.
+<u>Forma gaseosa:</u> Recibes la capacidad de transformar tu cuerpo en un estado gaseoso como acción estándar. Mientras estés en esta forma eres incorpóreo e inmune a daño físico, pero no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo 1+R rondas seguidas en forma gaseosa, tras las cuales vuelves a tu forma corpórea y debes realizar un descanso corto para volver a usar esta habilidad. Forma gaseosa puede utilizarse como reacción gastando 4 desventajas generadas en un tiro defensivo, lo cual te protege contra todo el daño hecho contra ti. Obtienes un uso adicional de esta habilidad cada vez que subas un rango.
 
 ## Rango V
 
@@ -43,12 +43,12 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 <u>Regeneración:</u> Al principio de tu turno recuperas 2 vitalidad de manera automática. Si estás al máximo de vitalidad te recuperas 2 PV. Al hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por 1. Después de una semana eres capaz de recuperar órganos y partes del cuerpo perdidas.
 
-<u>Furia superior:</u> Al entrar en furia del oni, tiras un dado de soltura adicional en todos tus ataques de arma, con lo cual puedes superar el 3, y aumentas tu tamaño por un paso. Al incrementar tu tamaño tu fuerza y constitución aumentan por 2 mientras que tu destreza disminuye por 1. Tu regeneración en tamaño grande se reduce por 1 y las criaturas de tamaño inferior al tuyo reciben un dado de Dificultad adicional en tiros de DES.
+<u>Furia superior:</u> Al entrar en furia del oni, tiras un dado de soltura adicional en todos tus ataques de arma, con lo cual puedes superar el 3. Además, puedes aumentar tu tamaño por un paso, incrementando tu fuerza y constitución por 2 pero reduciendo tu DES por 1. Tu regeneración en tamaño grande se reduce por 1 y las criaturas de tamaño inferior al tuyo reciben un dado de Dificultad adicional en tiros de esquiva para evitar tus ataques.
 
 ## Rango VI
 
 Incrementa tu CON por 1.
 
-<u>Despertar el demonio:</u> Como acción de turno completo, puedes liberar el oni interior de todos los Hobgoblin en un área de 60 pies. Todos los que tengan menor nivel de desafío al tuyo reciben la plantilla oni a rango I y entran inmediatamente en furia del oni. Los Hobgoblin pueden voluntariamente permitir que despiertes su demonio interior lo cual te permite usar esta habilidad en Hobgoblin de cualquier nivel. Recibes la capacidad de alterar tu aspecto, tomando la forma de un humanoide de tu elección.
+<u>Despertar el demonio:</u> Como acción de turno completo, puedes liberar el oni interior de todos los Hobgoblin en un área de 60 pies. Todos los que tengan menor nivel de desafío al tuyo reciben la ascendencia oni a rango I y entran inmediatamente en furia del oni. Los Hobgoblin pueden voluntariamente permitir que despiertes su demonio interior lo cual te permite usar esta habilidad en Hobgoblin de cualquier nivel. Recibes la capacidad de alterar tu aspecto, tomando la forma de un humanoide de tu elección.
 
-<u>Alma de oni:</u> Tu oni toma control de tu cuerpo. Eres inmune a efectos mentales, veneno, enfermedades y efectos de moral, y las criaturas con plantilla oni te obedecen instintivamente. Si te mueres, tu espíritu puede poseer otro cuerpo de Hobgoblin o el de un recién nacido, otorgándole un rango de plantilla oni. Si ya tiene la plantilla oni, recibe la plantilla a rango VI y uno de tus rangos anteriores. Desbloqueas rangos en magia arcana y castigo divino, los cuales puedes utilizar de forma innata.
+<u>Alma de oni:</u> Tu oni toma control de tu cuerpo. Eres inmune a efectos mentales, veneno, enfermedades y efectos de moral, y las criaturas con ascendencia oni te obedecen instintivamente. Si te mueres, tu espíritu puede poseer otro cuerpo de Hobgoblin o el de un recién nacido, otorgándole un rango de ascendencia oni. Si ya tiene la ascendencia oni, recibe la ascendencia a rango VI y uno de tus rangos anteriores. Desbloqueas rangos en magia arcana y magia divina, los cuales puedes utilizar de forma innata.

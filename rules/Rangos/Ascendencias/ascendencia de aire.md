@@ -1,13 +1,13 @@
 ---
-title: Plantilla de Aire
-category: Plantillas
+title: Ascendencia de Aire
+category: Ascendencias
 ---
 
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Nacido de las tormentas:</u> Tienes resistencia a daño eléctrico y de trueno igual a tu rango de plantilla. No sufres penalizaciones a tu movimiento a causa de vientos poderosos y puedes aguantar un turno adicional si eres ahogado.
+<u>Nacido de las tormentas:</u> Tienes resistencia a daño eléctrico y de trueno igual a tu rango de ascendencia. No sufres penalizaciones a tu movimiento a causa de vientos poderosos y puedes aguantar un turno adicional si eres ahogado.
 
 <u>Aerokinesia:</u> Tu herencia elemental te permite alterar los vientos. Desbloqueas los rangos de magia elemental de aire. Como acción bonus puedes crear una fresca brisa que durará mientras mantengas la concentración. No puedes tener más de una brisa activa y esta puede usarse para hacer uno de los siguientes efectos (sólo puedes hacer un único efecto al turno).
 
@@ -30,9 +30,9 @@ Incrementa tu DES por 1.
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Vientos protectores:</u>  Como acción estándar puedes rodearte de un escudo de vientos furiosos. Todo un área de 10 pies centrado en ti cuenta como terreno difícil y toda criatura que entre en él debe tirar FUE contra tu magia elemental (CAR si no tienes) o es empujada 5 pies hacia atrás. Recibes resistencia a proyectiles igual a tu Rango de plantilla elemental mientras tengas activa esta habilidad (esta resistencia no se aplicará contra proyectiles de tamaño grande o superior). Puedes sufrir 1 daño no-letal para aumentar el radio de Vientos protectores por 5 pies durante un turno o reducir las velocidades de todas las criaturas que entren en el área por 5 pies. No puedes tener activa esta habilidad durante más de un minuto seguido y desaparece al perder la concentración. 
+<u>Vientos protectores:</u>  Como acción estándar puedes rodearte de un escudo de vientos furiosos. Todo un área de 10 pies centrado en ti cuenta como terreno difícil y toda criatura que entre en él debe tirar FUE contra tu magia elemental (CAR si no tienes) o es empujada 5 pies hacia atrás. Recibes resistencia a proyectiles igual a tu Rango de ascendencia elemental mientras tengas activa esta habilidad (esta resistencia no se aplicará contra proyectiles de tamaño grande o superior). Puedes sufrir 1 daño no-letal para aumentar el radio de Vientos protectores por 5 pies durante un turno o reducir las velocidades de todas las criaturas que entren en el área por 5 pies. No puedes tener activa esta habilidad durante más de un minuto seguido y desaparece al perder la concentración. 
 
-<u>Conexión elemental:</u> Siempre estás rodeado de una burbuja de aire, la cual te permite respirar bajo el agua o en el vacío durante 10 minutos seguidos. Al empezar tu turno en un área afectada por una tormenta o vientos de nivel 3 o más recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (lugares elevados o afectados por altas tormentas) te recuperas todos tus PV como si realizases un descanso largo. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
+<u>Conexión elemental:</u> Siempre estás rodeado de una burbuja de aire, la cual te permite respirar bajo el agua o en el vacío durante 10 minutos seguidos. Al empezar tu turno en un área afectada por una tormenta o vientos de nivel 3 o más recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (lugares elevados o afectados por altas tormentas) te recuperas todos tus PV como si realizases un descanso largo. Cuando alcances rango V de esta ascendencia aumenta el número de Vitalidad que te sanas al turno por 1 y recuperarás 2 PV al turno si tu Vitalidad está al máximo.
 
 ## Rango IV 
 
@@ -46,9 +46,9 @@ Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia e
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2.
 
-<u>Elemento de libertad:</u> Obtienes resistencia a ser Agarrado o Enredado igual a tu Rango en plantilla elemental. Tu velocidad no es reducida por terreno difícil y puedes moverte con normalidad bajo el agua. Si tienes la habilidad Libertad de movimiento entonces recibes inmunidad a ser Agarrado o Enredado.
+<u>Elemento de libertad:</u> Obtienes resistencia a ser Agarrado o Enredado igual a tu Rango en ascendencia elemental. Tu velocidad no es reducida por terreno difícil y puedes moverte con normalidad bajo el agua. Si tienes la habilidad Libertad de movimiento entonces recibes inmunidad a ser Agarrado o Enredado.
 
-<u>Velocidad repentina:</u> Un número de veces al día igual a tu Rango de plantilla - 2 puedes impulsarte con el aire para moverte a grandes velocidades. Al usar esta habilidad todas tus velocidades aumentan por 15 pies durante un turno y no provocarás ataques de oportunidad por salir de un enfrentamiento. Añade un dado de desafío a tus tiros defensivos de Esquivar durante ese turno.
+<u>Velocidad repentina:</u> Un número de veces al día igual a tu Rango de ascendencia - 2 puedes impulsarte con el aire para moverte a grandes velocidades. Al usar esta habilidad todas tus velocidades aumentan por 15 pies durante un turno y no provocarás ataques de oportunidad por salir de un enfrentamiento. Añade un dado de desafío a tus tiros defensivos de Esquivar durante ese turno.
 
 ## Rango VI
 

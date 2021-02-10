@@ -1,6 +1,6 @@
 ---
-title: Plantilla Sombría
-category: Plantillas
+title: Ascendencia Sombría
+category: Ascendencias
 ---
 
 ## Rango I
@@ -39,9 +39,9 @@ Incrementa tu CAR por 1.
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
 
-<u>Invocación sombría:</u> Como acción de turno completo puedes invocar una criatura del plano de las sombras, la cual seguirá tus órdenes lealmente. La criatura que invoques no puede tener más de 9 PT y recibirá la plantilla Sombría a Rango I. Invocación sombría puede emplearse un número de veces al día igual a tu Rango - 2 y las criaturas invocadas permanecerán en el mundo durante dos horas. A rango VI las criaturas invocadas pueden tener hasta 12 PT.
+<u>Invocación sombría:</u> Como acción de turno completo puedes invocar una criatura del plano de las sombras, la cual seguirá tus órdenes lealmente. La criatura que invoques no puede tener más de 9 PT y recibirá la ascendencia Sombría a Rango I. Invocación sombría puede emplearse un número de veces al día igual a tu Rango - 2 y las criaturas invocadas permanecerán en el mundo durante dos horas. A rango VI las criaturas invocadas pueden tener hasta 12 PT.
 
-<u>Luces y sombras:</u> Un número de veces al día igual a tu Rango de Plantilla Sombría puedes infundir una ilusión con magia sombría como acción bonus. Las ilusiones sombrías no necesitan tu concentración para mantenerlas y no se desvanecen al interactuar con ellas. Si infundes una criatura ilusoria, esta se transformará en un monstruo sombrío con como máximo 12 PT. Las criaturas con Plantilla Sombría son inmunes a los efectos causados por ilusiones sombrías. 
+<u>Luces y sombras:</u> Un número de veces al día igual a tu Rango de ascendencia Sombría puedes infundir una ilusión con magia sombría como acción bonus. Las ilusiones sombrías no necesitan tu concentración para mantenerlas y no se desvanecen al interactuar con ellas. Si infundes una criatura ilusoria, esta se transformará en un monstruo sombrío con como máximo 12 PT. Las criaturas con ascendencia Sombría son inmunes a los efectos causados por ilusiones sombrías. 
 
 ## Rango VI
 
