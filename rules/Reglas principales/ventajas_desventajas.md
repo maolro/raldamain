@@ -12,13 +12,15 @@ Las ventajas y las desventajas representan aquellos instantes en un combate que 
 
 **1 VNT:** El defensor sufre 1 daño no-letal por fatiga de combate. No necesitas impactar para infligir daño no-letal de esta manera. 
 
-**2 VNT:** Haz una [acción de movimiento](https://raldamain.com/rules/Reglas%20adicionales/reglas%20de%20combate.html#acci%C3%B3n-de-movimiento) adicional. Sólo puedes usar esta habilidad una vez por ronda, tanto en un ataque como en defensa.
+**2 VNT:** Haz una [acción de movimiento](https://raldamain.com/rules/Reglas%20adicionales/reglas%20de%20combate.html#acci%C3%B3n-de-movimiento) adicional al turno. Esta habilidad sólo puede emplearse una vez al turno.
 
 **4 VNT:** El objetivo sufre una herida permanente leve. Sólo puedes gastar ventajas de esta manera si impactas con tu ataque y logras hacer daño.
 
 **4 VNT:** El objetivo es desarmado si este usa Parada para defenderse. Debes gastar 1 ventaja adicional en esta habilidad por cada punto de resistencia que tenga tu objetivo contra maniobras de combate.
 
 **4 VNT:** Ocurre un evento de gran fortuna para ti. Este evento lo escoges tú, y algunas posibilidades son que descubres una debilidad que tenga tu enemigo, destruyes un objeto que tu objetivo lleve encima o percibes a una persona oculta que hay en tu campo de visión.
+
+**4 VNT:** Haz una acción estándar fuera de tu turno. E
 
 ## Desventajas
 
@@ -28,7 +30,7 @@ Las ventajas y las desventajas representan aquellos instantes en un combate que 
 
 **1 DSV:** El defensor sufre 1 daño no-letal por fatiga de combate. No necesitas impactar para infligir daño no-letal de esta manera. 
 
-**2 DSV**: Haz una [acción de movimiento](https://raldamain.com/rules/Reglas%20adicionales/reglas%20de%20combate.html#acci%C3%B3n-de-movimiento) adicional. Sólo puedes usar esta habilidad una vez por ronda, tanto en un ataque como en defensa.
+**2 DSV**: Haz una [acción de movimiento](https://raldamain.com/rules/Reglas%20adicionales/reglas%20de%20combate.html#acci%C3%B3n-de-movimiento) fuera de tu turno. Esta habilidad puede emplearse una vez por cada acción de movimiento inutilizada que tengas.
 
 **4 DSV:** Realiza un ataque de oportunidad contra tu objetivo como reacción. Hacer ataques de oportunidad así te cuesta 2 desventajas menos para ataques que requieran un gasto de una acción de movimiento. No puedes gastar desventajas de esta manera si te estás defendiendo de un ataque de oportunidad ni hacer más de un ataque de oportunidad por ronda contra la misma persona.
 

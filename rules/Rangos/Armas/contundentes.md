@@ -11,6 +11,8 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Impacto de choque:</u> Al impactar con un ataque contundente, gasta 1 ventaja para empujar al objetivo 5 pies hacia atrás. Si tu fuerza excede a la de tu objetivo lo tropiezas además de empujarlo. Tus ataques provocan [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) a criaturas que lleven armadura aunque su DEF reduzca tu daño a 0.
 
+<u>Parada:</u> Como reacción puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada y puedes cancelar un éxito generado una vez al turno (2 veces al turno a rango III y 3 veces al turno a rango V). Parada solo puede emplearse una vez por ronda, y entrar en forma defensiva te permitirá usarla una vez adicional (2 veces adicionales si empleas una acción estándar para entrar en forma defensiva).
+
 ## Rango II
 
 <u>Concusión:</u> Al impactar con un ataque gasta 2 ventajas para que tu objetivo no pueda defenderse contra tu siguiente ataque y 4 ventajas para que esté aturdido durante un turno. Una criatura afectada por concusión no puede moverse gastando ventajas.
@@ -29,7 +31,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres morados debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
 
-<u>Quebrar el suelo:</u> Usar Maza oscilante te cuesta una acción estándar. Como acción de turno completo puedes golpear al suelo con la fuerza de tu arma, convirtiendo la tierra en un radio de 10 pies del impacto en Terreno difícil. Todas las criaturas que se encuentren en esa zona deben tirar Reflejos contra tu arma o caen Tropezados. Las ventajas generadas con esta hablidad puedes utilizarse para Ralentizar o Empujar tal como especifican las habilidades Impacto de choque y Concusión.
+<u>Quebrar el suelo:</u> Usar Maza oscilante te cuesta una acción estándar. Como acción de turno completo puedes golpear al suelo con la fuerza de tu arma, convirtiendo la tierra en un radio de 10 pies del impacto en Terreno difícil. Todas las criaturas que se encuentren en esa zona deben tirar Reflejos contra tu arma o caen Tropezados. Las ventajas generadas con esta habilidad puedes utilizarse para Ralentizar o Empujar tal como especifican las habilidades Impacto de choque y Concusión.
 
 ## Rango V 
 

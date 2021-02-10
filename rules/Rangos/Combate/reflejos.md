@@ -9,7 +9,7 @@ Añade un dado de desafío a tus tiros defensivos para esquivar. Una vez al turn
 
 <u>Rapidez</u>: Recibes una acción de movimiento adicional en tu turno. Añade un dado de Dificultad a todos tus tiros de Esquiva para evitar ataques hechos por criaturas de tamaño superior al tuyo. 
 
-<u>Sutileza:</u> Las armas ligeras que llevas son difícilmente detectables y capaces de matar antes que tu enemigo se dé cuenta. Desenfundar un arma te cuesta una acción gratuita (solo si es ligera) y si obtienes 2 ventajas en un ataque sorpresa puedes gastarlas para que tu objetivo no haga ruido al ser impactado o robarle un objeto que lleve encima. Si estás oculto al hacer un  ataque puedes gastar 2 ventajas para volver a esconderte si tienes ocultamiento o estás fuera del campo de visión de la criatura que estés atacando.
+<u>Sutileza:</u> Las armas ligeras que llevas son difícilmente detectables y capaces de matar antes que tu enemigo se dé cuenta. Desenfundar un arma ligera o sutil te cuesta una acción bonus y si obtienes 2 ventajas en un ataque sorpresa puedes gastarlas para que tu objetivo no haga ruido al ser impactado o robarle un objeto que lleve encima. Si estás oculto al hacer un  ataque puedes gastar 2 ventajas para volver a esconderte si tienes ocultamiento o estás fuera del campo de visión de la criatura que estés atacando.
 
 ## Rango II
 

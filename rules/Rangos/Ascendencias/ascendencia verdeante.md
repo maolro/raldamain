@@ -1,6 +1,6 @@
 ---
-title: Plantilla verdeante
-category: Plantillas
+title: Ascendencia verdeante
+category: Ascendencias
 ---
 
 ## Rango I
@@ -9,7 +9,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Aspecto primigenio:</u> Tu conexión con la naturaleza se manifiesta en tu cuerpo, dándote rasgos de un ser natural. Tienes 3 PT, los cuales puedes gastar en mejoras corporales. Algunas posibilidades son garras (1 PT), armadura natural (1 PT), depredador (1 PT),  mordisco (2 PT), movimiento adicional (1 PT), golpe (1 PT) o arrollar (2 PT). Aspecto primigenio no puede darte órganos y fisiología que no tienes naturalmente, como es el caso de miembros adicionales o alas.
 
-<u>Toque de vida:</u> La energía vital infunde tu cuerpo, permitiéndote sanar heridas y hacer crecer las plantas. Desbloqueas los rangos de Magia de naturaleza y al usar Primeros auxilios sanas también Vitalidad a tu objetivo igual a tu rango de plantilla + 2. Una vez al día puedes reducir el nivel de una herida permanente por 1 o eliminar un veneno. Esta habilidad puede usarse dos veces al día a rango III y tres veces a rango V. 
+<u>Toque de vida:</u> La energía vital infunde tu cuerpo, permitiéndote sanar heridas y hacer crecer las plantas. Desbloqueas los rangos de Magia de naturaleza y al usar Primeros auxilios sanas también Vitalidad a tu objetivo igual a tu rango de ascendencia + 2. Una vez al día puedes reducir el nivel de una herida permanente por 1 o eliminar un veneno. Esta habilidad puede usarse dos veces al día a rango III y tres veces a rango V. 
 
 ## Rango II
 
@@ -27,7 +27,7 @@ Obtienes Resistencia 2 a daño físico. Recibes 3 PT adicionales que puedes gast
 
 <u>Espíritu protector:</u> Un espíritu de la naturaleza actúa como tu guía, dándote consejo y protegiéndote de peligros. Añade un dado de dificultad a tiros defensivos y puedes cancelar un éxito generado por un ataque enemigo una vez adicional al turno. Conoces también como realizar un ritual para contactar a tu espíritu protector y recibir su sabiduría. Este ritual tiene una duración de 10 minutos y te permite hacerle hasta 4 preguntas a tu espíritu. Estas preguntas deben ser contestadas sinceramente por el máster siempre y cuando el espíritu conozca la respuesta, aunque la respuesta puede ser tan críptica como el máster desee. 
 
-<u>Conexión elemental:</u> La energía vital de la naturaleza sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno en un terreno armonizado te regeneras 1 vitalidad. No puedes sanarte PV de esta manera, pero si realizas un descanso corto en tu terreno armonizado reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). No puedes recuperarte de maldiciones, venenos y enfermedades con este efecto. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta plantilla.
+<u>Conexión elemental:</u> La energía vital de la naturaleza sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno en un terreno armonizado te regeneras 1 vitalidad. No puedes sanarte PV de esta manera, pero si realizas un descanso corto en tu terreno armonizado reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). No puedes recuperarte de maldiciones, venenos y enfermedades con este efecto. La vitalidad que te regeneras al turno aumenta por 1 al alcanzar rango V de esta ascendencia.
 
 ## Rango IV 
 
@@ -49,6 +49,6 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 Incrementa tu SAB por 1. Recibes 3 PT adicionales que puedes gastar en mejoras.
 
-<u>Conexión con la tierra:</u> Eres un campeón escogido por los espíritus. Eres inmune a efectos mentales, veneno, enfermedades y efectos de moral, y tu cuerpo envejece un ritmo diez veces inferior. En el caso de que mueras tu espíritu poseerá a otro ser vivo, permitiéndote reencarnarte en otro cuerpo. Esta nueva reencarnación empezará con un rango de plantilla verdeante y un rango que conocías en tu anterior vida.
+<u>Conexión con la tierra:</u> Eres un campeón escogido por los espíritus. Eres inmune a efectos mentales, veneno, enfermedades y efectos de moral, y tu cuerpo envejece un ritmo diez veces inferior. En el caso de que mueras tu espíritu poseerá a otro ser vivo, permitiéndote reencarnarte en otro cuerpo. Esta nueva reencarnación empezará con un rango de ascendencia verdeante y un rango que conocías en tu anterior vida.
 
 <u>Forma elemental:</u> Como acción de turno completo puedes rodearte de una gran masa vegetal. Mientras estés en Forma aumentas tus PV por 8 y tu defensa por 2, además de llenar un área de 10 pies centrado en ti con un Muro de Zarzas. Tus ataques naturales harán +2 daño base y puedes tirar tus dados de magia de naturaleza para estos. Cada turno que mantengas la forma elemental sufres 1 daño no-letal y perderás la habilidad Conexión elemental.

@@ -1,6 +1,6 @@
 ---
-title: Plantilla insectoide
-category: Plantillas
+title: Ascendencia insectoide
+category: Ascendencias
 ---
 
 ## Rango I
