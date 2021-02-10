@@ -29,7 +29,7 @@ Recibes un nivel de talento adicional en Supervivencia. Añade un dado de ventaj
 
 <u>Camuflaje:</u> Puedes usar acechar en tu terreno predilecto aunque estés en el campo de visión de tu víctima, pudiendo gastar 2 ventajas o desventajas generadas en un ataque para ocultarte. Además, eres capaz de utilizar Acechar gastando una acción de movimiento y no necesitas estar en tu terreno predilecto para usar esta habilidad.
 
-<u>Maestro del terreno:</u> Conoces la tierra como la palma de tu mano. Recibes inmunidad a terreno difícil y evitas obstáculos automáticamente si te encuentras en tu terreno predilecto. Obtendrás una de las siguientes habilidades dependiendo del terreno predilecto que hayas escogido. Si tienes más de un terreno predilecto sólo podrás tener una única habilidad relacionada con tu terreno predilecto:
+<u>Maestro del terreno:</u> Conoces la tierra como la palma de tu mano. Recibes inmunidad a terreno difícil y evitas obstáculos automáticamente si te encuentras en tu terreno predilecto. Obtendrás una de las siguientes habilidades dependiendo del terreno predilecto que hayas escogido. Si tienes más de un terreno predilecto sólo podrás tener activa una de las siguientes habilidades:
 
 - **Ártico**: Recibes Resistencia a daño frío igual a tu Rango de Rastrear. No sufres efectos negativos por frío extremo y tienes Visión Ártica en un radio de 60 pies.
 - **Desierto**: Recibes Resistencia a daño fuego y necrótico igual a tu Rango de Rastrear. No sufres efectos negativos por calor extremo y puedes sobrevivir un día adicional sin comer ni beber. 
@@ -45,4 +45,4 @@ Recibes un nivel de talento adicional en Supervivencia. Tus ataques contra tu en
 
 <u>Maestro cazador:</u> El primer golpe que haces es el más mortal. Cuando hagas un ataque sorpresa contra tu enemigo predilecto, gasta 4 ventajas para matarle instantáneamente si tiene 7 vida o menos. Si tiene mas de 7 vida en lugar de ello sufrirá una herida permanente grave.
 
-<u>Depredador imparable:</u> Elegir una criatura como presa ahora te cuesta una acción bonus y añades un dado de soltura adicional en tiros de ataque y habilidad contra ella, además de un dado de Desafío en tiros defensivos. La habilidad presa se recarga con un descanso corto.
+<u>Depredador imparable:</u> Elegir una criatura como presa ahora te cuesta una acción bonus y añades un dado de soltura adicional en tiros de ataque y habilidad contra ella, además de un dado de Desafío en tiros defensivos. La habilidad presa ahora se te recarga con un descanso corto.
