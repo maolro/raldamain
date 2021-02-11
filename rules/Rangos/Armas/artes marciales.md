@@ -7,7 +7,7 @@ category: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque. 
 
-<u>Secuencia de ataques:</u> gasta una acción de movimiento para hacer un ataque sin arma adicional. Puedes sustituir uno de estos ataques recibidos por esta habilidad para hacer un tiro de desarmar, tropezar, robar o juego sucio. El máximo de ataques que puedes hacer al turno es 1+R.
+<u>Secuencia de ataques:</u> Puedes emplear una acción de movimiento para hacer un ataque adicional de artes marciales. Estos ataques adicionales puede. Tu prioridad 
 
 <u>Defensa marcial:</u> Puedes usar una parada como reacción, tirando tus dados de ataque natural defensivamente. Gasta 2 ventajas generadas para hacer un ataque natural como reacción (funciona como secuencia de ataques). Si intentas usar defensa marcial contra un enemigo con un arma, este puede gastar ventajas para hacerte [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) aunque falle el tiro. Una vez al turno puedes cancelar un éxito enemigo (2/turno a rango III y 3/turno a rango V).
 
@@ -43,7 +43,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un ataque natural puede modificarse con las siguientes características tanto fisiológicas como tecnológicas para variar los atributos de tus ataques:
 
-- **Guantalete:** Tus puños están reforzados con un guantalete metálico, incrementando la potencia de tus ataques. Mientras lleves guantaletes aumentas tu daño base por 1 y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote un penalizador de dos dados de Desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (sólo recibiras un dado de desventaja si tienes rango II de plantilla y ninguno si tienes rango IV). Puedes añadir características de arma adicionales a tu guantalete aunque no tengas la fisiología correcta.
+- **Guantelete**: Tus puños están reforzados con un guantelete metálico, incrementando la potencia de tus ataques. Mientras lleves guanteletes aumentas tu daño base por 1 y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote un penalizador de dos dados de Desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (sólo recibirás un dado de desventaja si tienes rango II de plantilla y ninguno si tienes rango IV). Puedes añadir características de arma adicionales a tu guantelete aunque no tengas la fisiología correcta.
 
 - **Garra:** Estás dotado de afiladas zarpas capaces de desgarrar a tus enemigos. Las garras te permiten hacer daño cortante con ataques naturales y aumentas el nivel de todas las heridas permanentes que infligas. Además, puedes gastar 2 ventajas generadas para infligir Sangrado a tu objetivo (esto no te cuesta ninguna ventaja si tu objetivo no lleva armadura). Sustituye los atributos de arma de la siguiente manera, funcionando como si tuvieses rangos en Filos pesados.
 
@@ -53,8 +53,6 @@ Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un 
   | Patada feroz        | Ataque podersoso  |
   | Desviar proyectiles | Choque de espadas |
   | Ataque despiadado   | Tajo cercenador   |
-
-  
 
 - **Mordisco:**
 
