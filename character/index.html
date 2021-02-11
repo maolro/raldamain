@@ -54,7 +54,7 @@
                               </div>
                             Level: <v-minusplusfield v-bind:value="level" :min="1" :max="20"
                                         v-on:input="level = $event"></v-minusplusfield>
-                            <div id="v-for-object" class="row">
+                            <div class="row">
                                 <div v-for="(value, name) in attributes" class="col">
                                     {{ name }}
                                     <v-minusplusfield v-bind:value="value" :min="0" :max="6"
