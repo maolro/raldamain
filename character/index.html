@@ -2,64 +2,88 @@
 
 <head>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/v-minusplusfield.js" type="text/javascript"></script>
     <link href="css/v-minusplusfield.css" rel="stylesheet" />
 </head>
 
 <body>
+
+
+
     <div class="container" id="app">
         <div class="row">
             <div class="col">
-                <ul class = "nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" id="stats-tab" data-bs-toggle="tab" href="#stat" role="tab"
-                        aria-controls="stats" aria-selected="false">Stats</a>
-                    <div>
-                        <div class="input-group mb-3">
-                            <input type="name" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
-                          </div>
-                        Level: <v-minusplusfield v-bind:value="level" :min="1" :max="20"
-                                    v-on:input="level = $event"></v-minusplusfield>
-                        <div id="v-for-object" class="row">
-                            <div v-for="(value, name) in attributes" class="col">
-                                {{ name }} {{ value }}
-                                <v-minusplusfield v-bind:value="value" :min="0" :max="6"
-                                    v-on:input="attributes[name] = $event"></v-minusplusfield>
-                            </div>
-                        </div> total: total
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="talent-tab" data-bs-toggle="tab" href="#talent" role="tab"
-                        aria-controls="talents" aria-selected="false">Talents</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="ranks-tab" data-bs-toggle="tab" href="#rank" role="tab"
-                        aria-controls="ranks" aria-selected="false">Ranks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="gear-tab" data-bs-toggle="tab" href="#gear" role="tab" aria-controls="gear"
-                        aria-selected="false">Gear</a>
-                </li>
-                </ul>
-            </div>
-            <div class="col"> Character sheet 
 
-            <div id="v-for-object" class="attributes">
-                <div v-for="(value, name) in attributes">
-                    {{ name }} {{ value }}
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="stats-tab" data-toggle="tab" href="#stats" role="tab"
+                            aria-controls="stats" aria-selected="true">Stats</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="talent-tab" data-toggle="tab" href="#talent" role="tab"
+                            aria-controls="talent" aria-selected="false">Talent</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="rank-tab" data-toggle="tab" href="#rank" role="tab" aria-controls="rank"
+                            aria-selected="false">Rank</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="gear-tab" data-toggle="tab" href="#gear" role="tab" aria-controls="gear"
+                            aria-selected="false">Gear</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="stats" role="tabpanel" aria-labelledby="stats-tab" class="tab-pane active">
+                        <div>
+                            <div class="input-group mb-3">
+                                <input type="name" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                              </div>
+                            Level: <v-minusplusfield v-bind:value="level" :min="1" :max="20"
+                                        v-on:input="level = $event"></v-minusplusfield>
+                            <div id="v-for-object" class="row">
+                                <div v-for="(value, name) in attributes" class="col">
+                                    {{ name }} {{ value }}
+                                    <v-minusplusfield v-bind:value="value" :min="0" :max="6"
+                                        v-on:input="attributes[name] = $event"></v-minusplusfield>
+                                </div>
+                            </div> total: total
+                        </div>
+                    </div>
+                    <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Some content in menu 1.</p>
+                    </div>
+                    <div id="rank" role="tabpanel" aria-labelledby="rank-tab" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Some content in menu 2.</p>
+                    </div>
+                    <div id="gear" role="tabpanel" aria-labelledby="gear-tab" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Some content in menu 3.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="col"> Character sheet
+
+                <div id="v-for-object" class="attributes">
+                    <div v-for="(value, name) in attributes">
+                        {{ name }} {{ value }}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -84,6 +108,6 @@
             }
         })
     </script>
-    </body>
+</body>
 
 </html>
