@@ -45,21 +45,22 @@
                 </ul>
 
                 <!-- Tab panes -->
-                <div class="tab-content">
+                <!-- border for tab, but remove the top one since that is already done by the navbar -->
+                <div class="tab-content border border-top-0 p-1">
                     <div id="stats" role="tabpanel" aria-labelledby="stats-tab" class="tab-pane active">
                         <div>
                             <div class="input-group mb-3">
-                                <input type="name" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                                <input type="name" class="form-control" v-model="charactername" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
                               </div>
                             Level: <v-minusplusfield v-bind:value="level" :min="1" :max="20"
                                         v-on:input="level = $event"></v-minusplusfield>
                             <div id="v-for-object" class="row">
                                 <div v-for="(value, name) in attributes" class="col">
-                                    {{ name }} {{ value }}
+                                    {{ name }}
                                     <v-minusplusfield v-bind:value="value" :min="0" :max="6"
                                         v-on:input="attributes[name] = $event"></v-minusplusfield>
                                 </div>
-                            </div> total: total
+                            </div> total: {{total}}
                         </div>
                     </div>
                     <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
@@ -76,11 +77,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col"> Character sheet
-
-                <div id="v-for-object" class="attributes">
-                    <div v-for="(value, name) in attributes">
-                        {{ name }} {{ value }}
+            <div class="col border rounded m-1"> 
+                <h2>Character sheet</h2>
+                <div>
+                    <div class="row">
+                        <div class="col">Name</div><div class="col">{{ charactername  }}</div>
+                    </div>
+                    <div v-for="(value, name) in attributes" class="row">
+                        <div class="col">{{ name }}</div><div class="col">{{ value }}</div>
                     </div>
                 </div>
             </div>
@@ -90,6 +94,7 @@
         var app = new Vue({
             el: '#app',
             data: {
+                charactername: "",
                 level: 1,
                 attributes: {
                     str: 1,
@@ -100,7 +105,7 @@
                     cha: 1
                 }
             },
-            methods: {
+            computed: {
                 total: function () {
                     return 4 + this.level / 2;
                 }
