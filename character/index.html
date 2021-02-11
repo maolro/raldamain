@@ -57,10 +57,10 @@
                             <div class="row">
                                 <div v-for="(value, name) in attributes" class="col">
                                     {{ name }}
-                                    <v-minusplusfield v-bind:value="value" :min="0" :max="6"
+                                    <v-minusplusfield v-bind:value="value" :min="0" :max="level == 1 ? 3 : 6"
                                         v-on:input="attributes[name] = $event"></v-minusplusfield>
                                 </div>
-                            </div> total: {{total}}
+                            </div> total: {{total}} points {{available}} 
                         </div>
                     </div>
                     <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
@@ -80,8 +80,11 @@
             <div class="col border rounded m-1"> 
                 <h2>Character sheet</h2>
                 <div>
+                    <div class="row"><div class="col">Name</div><div class="col">{{ charactername  }}</div></div>
                     <div class="row">
-                        <div class="col">Name</div><div class="col">{{ charactername  }}</div>
+                        <div class="col">HP: {{hp}}</div>
+                        <div class="col">Vitality: {{vitality}}</div>
+                        <div class="col">Sanity: {{sanity}}</div>
                     </div>
                     <div v-for="(value, name) in attributes" class="row">
                         <div class="col">{{ name }}</div><div class="col">{{ value }}</div>
@@ -107,9 +110,25 @@
             },
             computed: {
                 total: function () {
-                    return 4 + this.level / 2;
+                    return Math.floor (4 + this.level / 2);
+                },
+                available: function () {
+                    var t = this.total + 6;
+                    for(var a in this.attributes)
+                    {
+                        t -= this.attributes[a];
+                    }
+                    return t;
+                },
+                hp: function(){
+                    return 3 + Math.floor((this.level-1) / 3) + this.attributes.con;
+                },
+                vitality: function(){
+                    return 2 + this.level + this.attributes.con;
+                },
+                sanity: function(){
+                    return 2 + this.level + this.attributes.wis;
                 }
-
             }
         })
     </script>
