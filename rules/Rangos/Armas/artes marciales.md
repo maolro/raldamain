@@ -23,7 +23,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 <u>Desviar proyectiles:</u> Defensa marcial puede usarse como defensa contra ataques a distancia. Gasta 2 desventajas generadas para atrapar el proyectil y 4 para desviarlo contra otro objetivo (No puedes usar esta habilidad para desviar proyectiles rápidos como flechas o dardos). Defensa marcial sigue sin protegerte contra balas.
 
-<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Añades un dado de dificultad a puñetazos precisos (2 si es cabeza, brazos o entrepierna), pero al impactar inflinges una herida permanente leve al objetivo. A rango V puedes gastar 2 ventajas para infligir una herida permanente media al objetivo.
+<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Añades un dado de dificultad a puñetazos precisos (2 si es cabeza, brazos o entrepierna), pero al impactar infliges una herida permanente leve al objetivo. A rango V puedes gastar 2 ventajas para infligir una herida permanente media al objetivo.
 
 ## Rango IV 
 
@@ -45,17 +45,25 @@ Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un 
 
 - **Guantelete**: Tus puños están reforzados con un guantelete metálico, incrementando la potencia de tus ataques. Mientras lleves guanteletes aumentas tu daño base por 1 y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote un penalizador de dos dados de Desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (sólo recibirás un dado de desventaja si tienes rango II de plantilla y ninguno si tienes rango IV). Puedes añadir características de arma adicionales a tu guantelete aunque no tengas la fisiología correcta.
 
-- **Garra:** Estás dotado de afiladas zarpas capaces de desgarrar a tus enemigos. Las garras te permiten hacer daño cortante con ataques naturales y aumentas el nivel de todas las heridas permanentes que infligas. Además, puedes gastar 2 ventajas generadas para infligir Sangrado a tu objetivo (esto no te cuesta ninguna ventaja si tu objetivo no lleva armadura). Sustituye los atributos de arma de la siguiente manera, funcionando como si tuvieses rangos en Filos pesados.
+- **Garra:** Estás dotado de afiladas zarpas capaces de desgarrar a tus enemigos. Las garras te permiten hacer daño cortante con ataques naturales y aumentas el nivel de todas las heridas permanentes que inflijas. Además, puedes gastar 2 ventajas generadas para infligir Sangrado a tu objetivo, lo cual no te cuesta ninguna ventaja si tu objetivo no lleva armadura. Sustituye los atributos de arma de la siguiente manera, funcionando como si tuvieses rangos en Filos pesados.
 
   | Rango original      | Sustitución       |
   | ------------------- | ----------------- |
   | Puño aturdidor      | Gran corte        |
-  | Patada feroz        | Ataque podersoso  |
+  | Patada feroz        | Ataque poderoso   |
   | Desviar proyectiles | Choque de espadas |
   | Ataque despiadado   | Tajo cercenador   |
 
-- **Mordisco:**
+- **Mordisco:** Tu mandíbula está dotada de gran fuerza y con ella puedes morder a tus objetivos. Una vez al turno como acción bonus puedes morder a un objetivo agarrado o incapacitado. El mordisco hará 2+Éxito daño perforante modificado por tu fuerza. Las heridas permanentes que provocas con tu mordisco son de un nivel superior a las normales, pero no podrás gastar ventajas para utilizar las habilidades Puño aturdidor, Patada feroz o Puño preciso.
 
-- **Tentáculo:**
+- **Tentáculo:** Posees un flexible tentáculo en una parte de su cuerpo con el cual puedes atacar. Un ataque de tentáculo tiene un alcance de 10 pies e infligirá 0+Éxito daño contundente. Además, puedes gastar 2 ventajas generadas para agarrar una parte de tu objetivo como indica el atributo Enredar. Sustituye algunos de tus atributos de artes marciales por los siguientes atributos pertenecientes a aptitud con cadenas.
+
+  | Rango original   | Sustitución         |
+  | ---------------- | ------------------- |
+  | Puño aturdidor   | Ataque circular     |
+  | Puño preciso     | Agarre con cadena   |
+  | Punto de presión | Cadena serpenteante |
+  | Golpe devastador | Escudo humano       |
+  | Puñetazo mortal  | Ahorcar             |
 
 - **Perforar:**
