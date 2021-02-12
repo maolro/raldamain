@@ -7,7 +7,7 @@ category: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque. 
 
-<u>Secuencia de ataques:</u> Puedes emplear una acción de movimiento para hacer un ataque adicional de artes marciales. Estos ataques adicionales puede. Tu prioridad 
+<u>Secuencia de ataques:</u> Puedes emplear una acción de movimiento para hacer un ataque adicional de artes marciales. Estos ataques adicionales puede. Tu prioridad aumenta por 1 y volverá a incrementar por 1 cuando alcances los rangos III y V.
 
 <u>Defensa marcial:</u> Puedes usar una parada como reacción, tirando tus dados de ataque natural defensivamente. Gasta 2 ventajas generadas para hacer un ataque natural como reacción (funciona como secuencia de ataques). Si intentas usar defensa marcial contra un enemigo con un arma, este puede gastar ventajas para hacerte [heridas permanentes](http://raldamain.com/rules/Heridas%20permanentes.html) aunque falle el tiro. Una vez al turno puedes cancelar un éxito enemigo (2/turno a rango III y 3/turno a rango V).
 
