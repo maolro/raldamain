@@ -100,9 +100,13 @@
                     </div>
                     <div v-for="(value, name) in attributes" class="row">
                         <div class="col">{{ name }}</div>
-                        <div class="col">{{ value }}</div>
+                        <div class="col">{{ value }} + {{ talentincrease(name) }}</div>
                     </div>
-                </div>
+                    <div class="row">Talents: 
+                        <template v-for="(value, name) in talents">
+                            <template v-if="value.points>0">{{name}} {{Math.floor((value.points+1)/2)}} </template>
+                        </template>
+                    </div>
             </div>
         </div>
     </div>
@@ -159,6 +163,19 @@
                 },
                 sanity: function () {
                     return 2 + this.level + this.attributes.wis;
+                }
+            },
+            methods:{
+                talentincrease: function(attribute){
+                    var amount = 0;
+                    for(var t in this.talents)
+                    {
+                        if (this.talents[t].attribute === attribute)
+                        {
+                            amount += this.talents[t].points;
+                        }
+                    }
+                    return amount;
                 }
             }
         })
