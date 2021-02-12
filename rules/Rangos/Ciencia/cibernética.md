@@ -1,5 +1,0 @@
----
-title: Cibernética
-category: Ciencia
----
-

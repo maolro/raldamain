@@ -38,7 +38,7 @@ Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia e
 
 <u>Propulsión:</u> Eres capaz de propulsarte en el aire con tu magia de fuego. Como acción estándar, vuela 60 pies en cualquier dirección. Puedes usar esta habilidad como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
-<u>Armas infundidas:</u> Tus ataques físicos hacen +1 daño fuego base y cuentan como armas mágicas (ignora armadura natural, pero son bloqueadas por resistencia mágica). Este daño se acumula con Furia del fuego. Puedes además gastar ventajas generadas para infligir quemaduras de la misma manera que Furia del fuego.
+<u>Armas infundidas:</u> Tus ataques físicos hacen +1 daño fuego base y cuentan como armas mágicas (ignora armadura natural, pero son bloqueadas por resistencia a daño físico). Este daño se acumula con Furia del fuego. Puedes además gastar ventajas generadas para infligir quemaduras de la misma manera que Furia del fuego.
 
 ## Rango V
 
