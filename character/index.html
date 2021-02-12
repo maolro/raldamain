@@ -64,8 +64,18 @@
                         </div>
                     </div>
                     <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Some content in menu 1.</p>
+                    <div class="row">
+                        <div class="col">
+                            <div v-for="(value, name) in talents">
+                                       {{ name }} 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div v-for="(value, name) in talents">
+                                    <v-minusplusfield v-bind:value="value.points" :min="0" :max="level == 1 ? 2 : 5"
+                                            v-on:input="talents[name].points = $event"></v-minusplusfield>
+                            </div>
+                        </div>
                     </div>
                     <div id="rank" role="tabpanel" aria-labelledby="rank-tab" class="tab-pane fade">
                         <h3>Menu 2</h3>
@@ -106,7 +116,26 @@
                     int: 1,
                     wis: 1,
                     cha: 1
+                },
+                talents: {
+                    athletics: { attribute: "str", points:0}, 
+                    intimidation: { attribute: "str", points:0},
+                    heroics: { attribute: "str", points:0},
+                    wreck: { attribute: "str", points:0},
+                    acrobatics: { attribute: "dex", points:0},
+                    stealth: { attribute: "dex", points:0},
+                    "sleight of hand": { attribute: "dex", points:0},
+                    memory: { attribute: "int", points:0},
+                    investigate: { attribute: "int", points:0},
+                    arcana: { attribute: "int", points:0},
+                    perception: { attribute: "wis", points:0},
+                    insight: { attribute: "wis", points:0},
+                    survival: { attribute: "wis", points:0},
+                    "first aid": { attribute: "wis", points:0},
+                    persuasion: { attribute: "cha", points:0},
+                    deception: { attribute: "cha", points:0},
                 }
+
             },
             computed: {
                 total: function () {
