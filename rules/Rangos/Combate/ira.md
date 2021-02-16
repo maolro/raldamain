@@ -19,9 +19,9 @@ category: Combate
 
 Recibes +1 PV adicional al entrar en ira.
 
-<u>Fortitud interna:</u> Eres inmune a veneno, enfermado y nauseas mientras estés en ira. Puedes entrar en ira aunque estés fatigado, pero caes inconsciente cuando acabe esta Ira, que dura un número de turnos igual a tu rango + tu constitución.
+<u>Fortitud interna:</u> Tu cuerpo es capaz de soportar esfuerzos a límites sobrehumanos. Eres inmune a veneno, enfermado y nauseas mientras estés en ira. Puedes entrar en ira aunque estés fatigado, pero caes inconsciente cuando acabe esta Ira, que dura un número de turnos igual a tu rango + tu constitución.
 
-<u>Temerario:</u> Eres inmune a miedo y efectos de moral mientras estés en ira. Puedes usar habilidades de Presencia mientras estés en Ira, para las cuales recibes además un bonificador de un dado de Habilidad.
+<u>Temerario:</u> La ira libera tus instintos de las cadenas de la razón, impulsándote a atacar sin temer la muerte. Eres inmune a miedo y efectos de moral mientras estés en ira. Puedes usar habilidades de Presencia mientras estés en Ira, para las cuales recibes además un bonificador de un dado de Habilidad. 
 
 ## Rango IV
 
