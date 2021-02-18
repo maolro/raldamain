@@ -34,14 +34,14 @@ Añade un dado de soltura adicional a tus tiros de sabotaje. Traspasar sistema a
 
 ## Rango IV
 
-<u>Intrusión fantasmal:</u> 
+<u>Intrusión fantasmal:</u> Tu maestría de sistemas de chi te permite evitar las contramedidas que hay instaladas, provocando sabotajes sin dejar rastro. 
 
 <u>Procesador de datos:</u>
 
 ## Rango V
 
-Añade un dado de soltura adicional a tus tiros de sabotaje.
+Añade un dado de soltura adicional a tus tiros de sabotaje. Usar Traspasar sistema te cuesta una acción estándar.
 
-<u>Apagón:</u>
+<u>Apagón:</u> 
 
-<u>Dominar máquina:</u>
+<u>Dominar máquina:</u> 
