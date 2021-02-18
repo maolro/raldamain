@@ -5,9 +5,9 @@ category: Ciencia
 
 ## Rango I
 
-<u>Reparar objeto:</u>
+<u>Reparar objeto:</u> 
 
-<u>Desactivar</u>:
+<u>Desactivar</u>: 
 
 ## Rango II
 
