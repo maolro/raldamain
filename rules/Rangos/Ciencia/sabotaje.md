@@ -28,20 +28,20 @@ Añade un dado de soltura adicional a tus tiros de sabotaje.
 
 Añade un dado de soltura adicional a tus tiros de sabotaje. Traspasar sistema aumenta su alcance por 15 pies.
 
-<u>Usurpar sistema:</u> 
+<u>Usurpar sistema:</u> Conoces cómo manejarte por un sistema operativo para lograr control de él, usurpándolo de su anterior propietario. Para emplear usurpar sistema debes tirar Sabotaje contra la seguridad del sistema, aumentando tu control por un paso. Esta habilidad te cuesta una acción de turno completo y sólo puedes emplearla en sistemas a los que tengas acceso. Si tu nivel de control supera la efectividad de la máquina que intentas usurpar tomarás control total de esta. Usurpar sistema puede emplearse contra constructos para forzarles a seguir determinadas órdenes de tu elección, funcionando como la habilidad Geas de magia mental sin consumir la necesidad de consumir chi.
 
-<u>Descodificador:</u> 
+<u>Virus tecnológico:</u> Al emplear la habilidad Sobrecarga puedes gastar 2 ventajas generadas para insertarle un virus tecnológico a tu objetivo, nombre por el cual se conoce una insidiosa alteración del funcionamiento de una máquina que le provoca graves daños estructurales. Un dispositivo afectado por un virus  reducirá su efectividad por 1 cada 4 turnos que pasen, desactivándose por completo si esta es reducida a 0. Si afectas a un constructo que opere con chi este sufrirá los efectos de un veneno mental, tirando su nivel de seguridad para resistir. Puedes crear tus propios virus tecnológicos con el consentimiento del máster, tomando como base los efectos producidos por venenos o enfermedades.
 
 ## Rango IV
 
-<u>Intrusión fantasmal:</u> Tu maestría de sistemas de chi te permite evitar las contramedidas que hay instaladas, provocando sabotajes sin dejar rastro. 
+<u>Intrusión fantasmal:</u> Tu maestría de sistemas de chi te permite evitar las contramedidas que hay instaladas, provocando sabotajes sin dejar rastro. Si realizas un tiro de Traspasar y acabas provocando una contramedida puedes hacer un segundo tiro de Sabotaje contra la seguridad del sistema, evitando la contramedida si tienes éxito. Además, al utilizar la habilidad Usurpar sistema puedes borrar todo rastro que hayas dejado en el sistema al infiltrarte en él, evitando así que el propietario detecte tu acceso.
 
-<u>Procesador de datos:</u>
+<u>Encriptar:</u> Tus sistemas operativos están custodiados por una barrera adicional de protección, impidiendo el acceso de otros saboteadores como tú a las secciones más valiosas de estos. Un sistema encriptado tiene resistencia contra efectos de Traspasar y Sobrecarga igual a tu rango de Sabotear - 1. Además, acceder a determinadas secciones del sistema pueden tener una barrera adicional, exigiendo otro tiro de Traspasar para acceder a estos. Encriptar cuenta como una contramedida para determinar el número máximo de contramedidas que puede tener un objeto.
 
 ## Rango V
 
 Añade un dado de soltura adicional a tus tiros de sabotaje. Usar Traspasar sistema te cuesta una acción estándar.
 
-<u>Apagón:</u> 
+<u>Apagón:</u> Tu Detector del flujo tiene la capacidad de liberar una gran onda de energía que dificultará el funcionamiento de los objetos mágicos y tecnológicos, provocando un apagón. Usar tu detector de esta manera te cuesta una acción estándar y desactivará todos los objetos que puedas detectar con dicha máquina durante un turno, reduciendo su efectividad por 1. Los sistemas afectados podrán resistir con un tiro de seguridad, aunque aquellos que hayas traspasado o tengan un virus tecnológico instalado no podrán hacer el tiro. Esta habilidad requiere un gran gasto de energía, desactivando tu Detector del flujo durante dos horas. 
 
-<u>Dominar máquina:</u> 
+<u>Dominar máquina:</u> Al usurpar exitosamente un sistema puedes establecer una conexión especial contigo, permitiéndote darle órdenes durante periodos más largos de tiempo y manipulándola como si fuese tuya. Las máquinas controladas de esta manera actúan como si estuviesen bajo los efectos de Esclavizar, sólo que esta habilidad permanecerá activa siempre que la máquina esté en el radio de efecto de tu Detector del flujo. No puedes tener más máquinas bajo tu control que tu estadística de inteligencia.
