@@ -27,7 +27,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Disparo preciso:</u> Tus ataques a distancia ignoran cubierta y ocultamiento a menos que sea completo eludiendo así cualquier tipo de penalizador (siendo 2 dados de Desventaja normalmente). Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal.
 
-<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del francotirador requieren una acción de turno completo si no utilizas un arma con la habilidad Francotirador. Adem
+<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del fr-ancotirador requieren una acción de turno completo si no utilizas un arma con la habilidad Francotirador. Adem
 
 ## Rango IV
 

@@ -13,7 +13,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir daño no-letal para convertir tu ataque elemental  en un ataque de área que ataca a todas las criaturas en un cono de 20 pies o que tenga un radio de salpicadura de 10 pies. Esta habilidad también puede usarse para congelar agua como una acción gratuita.
 
-<u>Espinas gélidas:</u> Tienes la capacidad de manipular trozos de hielo y usarlos para atacar. Haces 3+éxitos daño contundente, perforante o cortante y puedes gastar 4 ventajas para infligir una herida leve (media a rango III y grave a rango V).
+<u>Espinas gélidas:</u> Tienes la capacidad de manipular trozos afilados de hielo y usarlos para atacar. Haces 3+éxitos daño contundente, perforante o cortante y puedes gastar 4 ventajas para infligir una herida leve (media a rango III y grave a rango V).
 
 <u>Parada elementa</u>l: Detienes ataques con tu elemento. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente. Solo puedes protegerte de otros ataques elementales (cancela un éxito si es de fuego o agua) o ataques a distancia. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V).
 
@@ -23,7 +23,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Muro de hielo:</u> Como acción estándar crea un muro de hielo con proporciones iguales a tu muro de agua. El muro es una barrera sólida con vida igual a tu rango +2. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de hielo puede crearse como reacción gastando 2 desventajas generadas en una parada elemental.
 
-<u>Neblina polar:</u> Las neblinas que creas hacen que todas las criaturas en su área estén Ralentizadas y tienes + blanco en ataques contra ellos. Crear una neblina es una acción estándar y ocupa 10 pies por rango. 
+<u>Neblina polar:</u> Las neblinas que formas son sobrenaturalmente frías, causando que todas las criaturas en su área estén Ralentizadas y tienes un dado de ventaja en ataques contra ellos. Crear una neblina es una acción estándar y ocupa 10 pies por rango. 
 
 ## Rango III
 
@@ -43,6 +43,6 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
-<u>Medianoche polar:</u> Como acción de turno completo, reduce drasticamente la temperatura en ese lugar. Con esta habilidad, puedes hacer ataques de frío en áreas de calor y todas las criaturas en un radio de 30 pies quedan ralentizadas. Además, te regeneras 1 vitalidad al turno y puedes usar tormenta de nieve sin recarga. El agua en tu radio de congela automáticamente y congelar a un objetivo te cuesta 2 ventajas. Medianoche polar permanece activa durante 10 turnos y solo puede usarse una vez al día.
+<u>Medianoche polar:</u> Como acción de turno completo, reduce drásticamente la temperatura en ese lugar. Con esta habilidad, puedes hacer ataques de frío en áreas de calor y todas las criaturas en un radio de 30 pies quedan ralentizadas. Además, te regeneras 1 vitalidad al turno y puedes usar tormenta de nieve sin recarga. El agua en tu radio de congela automáticamente y congelar a un objetivo te cuesta 2 ventajas. Medianoche polar permanece activa durante 10 turnos y solo puede usarse una vez al día.
 
 <u>Frío estigio:</u> Tu frío hiela hasta a las criaturas nativas al invierno. El daño frío de tus atques traspasa resistencias, y puedes emplear ventajas de tus ataques de hielo para provocar heridas permanentes (2 ventajas una media y 4 ventajas una grave). No obstante, no podrás provocar heridas permanentes a criaturas resistentes al frío aunque les puedas herir.

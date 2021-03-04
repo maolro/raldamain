@@ -17,7 +17,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Relámpago en cadena</u>: Al impactar con un ataque de relámpago, gasta 2 ventajas o una acción de movimiento para que un relámpago salte de ese objetivo hacia otro que esté a 20 pies de él. Esta habilidad se puede usar un número de veces igual a tu rango.
 
-<u>Cargar el aire:</u> Emplea un ataque elemental para cargar una porción de aire de 5 pies por rango con energía eléctrica. Puedes hacer un ataque elemental como ataque de oportunidad contra una criatura que pase por esa zona. además, si afectas aun espacio que se encuentre en un muro de viento todo el muto quedará cargado. Este efecto dura un turno por cada nivel de fuerza que tenga el aire que cargues.
+<u>Cargar el aire:</u> Emplea un ataque elemental para cargar una porción de aire de 5 pies por rango con energía eléctrica. Puedes hacer un ataque elemental como ataque de oportunidad contra una criatura que pase por esa zona. además, si afectas aun espacio que se encuentre en un muro de viento todo el muro quedará cargado. Este efecto dura un turno por cada nivel de fuerza que tenga el aire que cargues.
 
 ## Rango III
 
