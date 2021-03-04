@@ -4,13 +4,41 @@ Esta es una lista de varias mejoras mágicas y tecnológicas que se pueden aplic
 
 ### Nivel 1
 
-<u>Lanzallamas:</u>
+<u>Lanzallamas:</u> Tu arma escupe una abrasadora llama al disparar, sustituyendo el daño base que provoca por daño de fuego. Además, puedes gastar 2 ventajas generadas en un ataque para provocarle una quemadura leve a tu objetivo, pasando a ser una quemadura media si este lleva armadura metálica. Esta mejora sólo puede aplicarse a armas a distancia y sustituirá los siguientes atributos tal como indica la siguiente tabla.
 
-<u>Pulso sónico:</u>
+| Atributo              | Sustitución        | Modificaciones                                               |
+| --------------------- | ------------------ | ------------------------------------------------------------ |
+| Truco de bala         | Llamas abrasadoras |                                                              |
+| Ojo del francotirador | Sobrecarga         | Cada uso de sobrecarga consumirá una bala de tu arma.        |
+| Disparos a bocajarro  | Muro de fuego      | Usar muro de fuego consumirá todas tus balas y te cuesta una acción de turno completo. |
+| Puntería experta      | Fuego puro         |                                                              |
 
 <u>Fulgurante:</u>
 
+| Atributo              | Sustitución           | Modificaciones                                               |
+| --------------------- | --------------------- | ------------------------------------------------------------ |
+| Truco de bala         | Relámpago en cadena   |                                                              |
+| Ojo del francotirador | Castigo de los cielos | Cada uso de castigo de los cielos consumirá una bala de tu arma. |
+| Disparos a bocajarro  | Cargar el aire        | Usar cargar el aire consumirá todas tus balas y te cuesta una acción de turno completo. |
+| Puntería experta      | Rayo divino           |                                                              |
+
 <u>Criogénica:</u>
+
+| Atributo              | Sustitución                                                  | Modificaciones                                               |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Truco de bala         | Elige 1 entre Neblina polar, Hielo resbalante o Espinas gélidas |                                                              |
+| Ojo del francotirador | Tormenta de nieve                                            | Cada uso de tormenta de nieve consumirá todas las balas de tu arma. |
+| Disparos a bocajarro  | Muro de hielo                                                | Usar muro de hielo consumirá todas tus balas y te cuesta una acción de turno completo. |
+| Puntería experta      | Frío estigio                                                 |                                                              |
+
+<u>Pulso sónico:</u>
+
+| Atributo              | Sustitución                   | Modificaciones                                               |
+| --------------------- | ----------------------------- | ------------------------------------------------------------ |
+| Truco de bala         | Concusión                     |                                                              |
+| Ojo del francotirador | Onda destructora              | Cada uso de onda destructora consumirá una bala de tu arma.  |
+| Disparos a bocajarro  | Puño destructor, Rompeescudos |                                                              |
+| Puntería experta      | Derrumbamiento                | Usar esta habilidad consumirá todas tus balas y te cuesta una acción de turno completo. |
 
 <u>Batería adicional:</u>
 
