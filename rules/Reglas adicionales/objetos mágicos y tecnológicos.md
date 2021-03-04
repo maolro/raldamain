@@ -26,11 +26,11 @@ Esta es una lista de varias mejoras mágicas y tecnológicas que se pueden aplic
 
 <u>Fusión gélida:</u> Tu arma está infundida con energía elemental de hielo. Un arma con esta mejora hará +1 daño de frío al impactar y puedes gastar 2 ventajas generadas al impactar para que tu objetivo quede Ralentizado durante una ronda. Si tienes la habilidad Armas infundidas de ascendencia boreal el daño de frío que causas incrementa por 1 y podrás gastar 2 ventajas generadas para reducir la DES de tu objetivo por 1 durante una ronda. Si usas esta habilidad en un objetivo cuya destreza ya hayas reducido con esta habilidad puedes emplear tus ventajas para volver a reducir su DES por 1 o extender el efecto durante una ronda adicional. Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.
 
-<u>Fusión atronadora:</u>  Tu arma está infundida con energía sónica, liberando un poderoso estruendo al impactar. Un arma con esta mejora hará +1 daño de trueno al impactar y puedes gastar 2 ventajas generadas para Ensordecer a tu objetivo durante una ronda. Si 
+<u>Fusión atronadora:</u>  Tu arma está infundida con energía sónica, liberando un poderoso estruendo al impactar. Un arma con esta mejora hará +1 daño de trueno al impactar y puedes gastar 2 ventajas generadas para Ensordecer a tu objetivo durante una ronda (4 ventajas para aturdirlo). Si tienes la capacidad de aturdir a un objetivo con tu arma, sea con la habilidad Puño aturdidor o Concusión, el objetivo quedará ensordecido durante  una ronda adicional al ser aturdido y podrás gastar 2 ventajas adicionales para que reciba el efecto de estado Náuseas una ronda después del aturdimiento o extender este efecto durante una ronda adicional. Esta mejora sólo puede aplicarse a armas contundentes.
 
 <u>Fusión eléctrica:</u> Tu arma está infundida con energía eléctrica.
 
-<u>Fijar blanco:</u>  
+<u>Fijar blanco:</u> 
 
 ### Nivel 7
 
@@ -38,23 +38,23 @@ Esta es una lista de varias mejoras mágicas y tecnológicas que se pueden aplic
 
 <u>Motosierra:</u> 
 
-<u>Chupavidas:</u>
+<u>Chupavidas:</u> 
 
 ### Nivel 10
 
-<u>Ultrafina:</u>
+<u>Ultrafina:</u> 
 
-<u>Microserrada:</u>
+<u>Microserrada:</u> 
 
 ### Nivel 13
 
-<u>Filo cuántico:</u>
+<u>Filo cuántico:</u> 
 
 ### Nivel 15
 
-<u>Tajo molecular:</u>
+<u>Tajo molecular:</u> 
 
-<u>Gravitacional:</u>
+<u>Gravitacional:</u> 
 
 ### Nivel 17
 
