@@ -26,9 +26,9 @@ Esta es una lista de varias mejoras mágicas y tecnológicas que se pueden aplic
 
 <u>Fusión gélida:</u> Tu arma está infundida con energía elemental de hielo. Un arma con esta mejora hará +1 daño de frío al impactar y puedes gastar 2 ventajas generadas al impactar para que tu objetivo quede Ralentizado durante una ronda. Si tienes la habilidad Armas infundidas de ascendencia boreal el daño de frío que causas incrementa por 1 y podrás gastar 2 ventajas generadas para reducir la DES de tu objetivo por 1 durante una ronda. Si usas esta habilidad en un objetivo cuya destreza ya hayas reducido con esta habilidad puedes emplear tus ventajas para volver a reducir su DES por 1 o extender el efecto durante una ronda adicional. Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.
 
-<u>Fusión atronadora:</u>  
+<u>Fusión atronadora:</u>  Tu arma está infundida con energía sónica, liberando un poderoso estruendo al impactar. Un arma con esta mejora hará +1 daño de trueno al impactar y puedes gastar 2 ventajas generadas para Ensordecer a tu objetivo durante una ronda. Si 
 
-<u>Fusión eléctrica:</u>
+<u>Fusión eléctrica:</u> Tu arma está infundida con energía eléctrica.
 
 <u>Fijar blanco:</u>  
 

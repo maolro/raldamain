@@ -11,7 +11,7 @@ category: Combate
 
 ## Rango II
 
-<u>Blindaje:</u> Los ataques contundentes  sólo pueden hacerte hacerte heridas permanentes si te llegan a influir daño. Tienes  resistencia igual a tu rango contra aturdimiento y ralentizar provocado por ataques no mágicos.
+<u>Blindaje:</u> Los ataques contundentes sólo pueden hacerte hacerte heridas permanentes si te llegan a infligir daño, y resistencia igual a tu rango contra aturdimiento y ralentizar provocado por ataques no mágicos. Perderás los beneficios de habilidad si la defensa de tu armadura es reducida a la mitad y la recuperarás si esta es reparada.
 
 <u>Protección elemental:</u> Dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado. Obtienes resistencia igual a tu Rango la armadura contra el elemento de tu elección y los efectos de estados producidos por él (toque gélido si eliges hielo, calentar armaduras si eliges fuego, etc.). Esto se acumula con otras resistencias que poseas.
 
