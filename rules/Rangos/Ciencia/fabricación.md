@@ -13,9 +13,10 @@ category: Ciencia
 
 <u>Mejora mágica:</u> Eres capaz de modificar armas y armaduras empleando el chi para mejorar sus capacidades. Aplicar una mejora mágica requiere un gasto de los recursos adecuados además de una hora de trabajo por nivel de mejora. No puedes añadir mejoras a un arma o armadura que excedan un valor igual a tu nivel de personaje + tu rango de fabricación.
 
-
+<u>Programar sistema:</u> Empleando tus conocimientos de magia y ciencia puedes elaborar complejos sistemas mágicos capaces de guardar información o ejercer trabajos de manera automática.  
 
 ## Rango III
 
 <u>Invento revolucionario:</u> Tu constante trabajo en el campo de la invención ha dado su fruto en un novedoso invento capaz de revolucionar la tecnología del momento. La naturaleza del invento queda escogida por ti con el previo consentimiento del máster, adecuándose a la situación tecnológica del momento. El invento también puede ser una evolución sobre otro artefacto existente, modificando sus capacidades de una nueva manera. 
 
+<u>Maestro de la mecánica:</u> Has descubierto el secreto de cómo utilizar el chi como fuente de energía para la mecánica, empleándolo para mejorar tu cuerpo o construir autómatas. Con esta habilidad puedes mejorar tu cuerpo y mente, pudiendo recibir un número de mejoras con coste total de 3 PT, o crear un constructo formado con un máximo de 6 PT. Debes dedicar un día de trabajo por cada PT que tenga aquello que busques fabricar y necesitas una adecuada cantidad de recursos. 
