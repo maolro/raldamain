@@ -7,17 +7,17 @@ category: Ascendencias
 
 Obtienes Resistencia 1 a daño físico.
 
-<u>Aspecto entotrópico:</u>
+<u>Aspecto entotrópico:</u> 
 
-<u>Sentir vibraciones:</u>
+<u>Sentir vibraciones:</u> 
 
 ## Rango II
 
 Incrementa tu DES por 1.
 
-<u>Escalada superior:</u>
+<u>Escalada superior:</u> 
 
-<u>Empatía con alimañas:</u>
+<u>Empatía con alimañas:</u> 
 
 ## Rango III
 

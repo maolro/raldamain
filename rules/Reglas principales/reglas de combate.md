@@ -66,7 +66,8 @@ Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Para
 
 ### Ocultamiento
 
-Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, añadiendo un dado de Desventaja a los tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta. 
+Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, añadiendo un dado de Desventaja a los tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta (este tipo de ocultamiento se conoce como ocultamiento superior). Todos los ataques que hagas contra criaturas incapaces de percibirte contarán como ataques sorpresa, añadiéndote un dado de Ventaja a tus tiros de ataque y evitando que estas puedan tirar para defenderse.
+
 Las penalizaciones por ocultamiento pueden contrarrestarse gastando Ventajas en un tiro de ataque. Cada ventaja gastada eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
 
 ### Ataque conjunto
