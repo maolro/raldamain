@@ -35,7 +35,7 @@ Incrementa tu DES por 1.
 
 <u>Caminante del viento:</u> Obtienes  una velocidad de vuelo de 60 pies, pero sólo puedes volar si estás en una tormenta. Si intentas volar en otro entorno, sufres  2 daño no-letal para poder volar 60 pies. Atacar a una persona desde el aire no provoca ataques de oportunidad.
 
-<u>Ataques infundidos:</u> Tus ataques físicos hacen +1 daño de frío y cuentan como ataques mágicos. Este daño se acumula con canalizar frío y puedes gastar 2 ventajas para ralentizar al objetivo (4 para reducir su DES por 1).
+<u>Ataques infundidos:</u> Tus ataques físicos hacen +1 daño de frío y cuentan como ataques mágicos. Este daño se acumula con canalizar frío y puedes gastar 2 ventajas para ralentizar al objetivo (4 para reducir su DES por 1). Puedes añadir los dados de soltura que tengas por ataque elemental a cualquier tiro de ataque con armas, sustituyendo a los dados de soltura que tirarías entonces.
 
 ## Rango V 
 
@@ -43,13 +43,13 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 <u>Forma gaseosa:</u> Si estas en una tormenta de nieve, gasta una acción estándar para infundirte en ella, pasando a forma gaseosa. En forma gaseosa eres inmune al daño físico, te mueves a una velocidad de vuelo de 60 pies y no puedes atacar físicamente. Puedes aún hacer ataques elementales, pero cada turno que mantengas la forma gaseosa debes gastar una acción de movimiento en concentrarte o sufrir 2 daño no-letal (absorber frío no se aplica). Si la tormenta desaparece, vuelves inmediatamente a tu forma norma y estas aturdido por un turno.
 
-<u>Sentido de vida:</u> Eres capaz de detectar a todos los seres vivos de sangre cálida en un radio de 60 pies. También puedes identificar a todas las personas con ascendencia boreal en ese radio.
+<u>Sentido de vida:</u> Eres capaz de detectar a todos los seres vivos de sangre cálida en un radio de 60 pies, evitando así que tus enemigos reciban alguna ventaja por ataque sorpresa o invisibilidad. También puedes identificar a todas las personas con ascendencia boreal en ese radio.
 
 ## Rango VI
 
 Incrementa tu CAR por 1
 
-<u>Hijo del invierno:</u> Te conviertes en una criatura primigenia del invierno. Eres inmune a los efectos de estado fatigado, exhausto, ralentizado y paralizado. Tu esperanza de vida se duplica y puedes emplear una acción de turno completo para entrar en forma elemental, similar a otras ascendencias elementales. Entrar en forma elemental sólo puede usarse una vez por combate y cada turno que la mantengas sufrirás 1 daño no-letal (Absorber frío no se aplica). Al activar forma elemental tienes dos opciones para escoger:
+<u>Hijo del invierno:</u> Te conviertes en una criatura primigenia del invierno. Eres inmune a los efectos de estado fatigado, exhausto, ralentizado y paralizado. Tu esperanza de vida se duplica y puedes emplear una acción de turno completo para entrar en forma elemental, similar a otras ascendencias elementales. Como estas, podrás añadir un dado de soltura adicional a tus ataques mientras permanezcas en dicho estado. Entrar en forma elemental sólo puede usarse una vez por combate y cada turno que la mantengas sufrirás 1 daño no-letal (Absorber frío no se aplica). Al activar forma elemental tienes dos opciones para escoger:
 
 - **Coloso gélido:** Te rodeas de una poderosa armadura de hielo. Tu tamaño aumenta a grande, recibes 8 PV temporales, incrementa tu armadura natural por 2 y podrás tirar Magia elemental para realizar ataques naturales (las mejoras por Canalizar frío y Ataques infundidos se aplican). Con la armadura de Coloso gélido tu fuerza aumenta a 6 (8 si estás en un área de frío extremo) pero tu destreza se reducirá por 1.
 - **Tormenta viviente:** Estás rodeado constantemente de una tormenta de nieve de radio 15 pies. Esta tormenta te da ocultamiento superior y hará 2 daño frío a todas las criaturas que empiecen su turno en ella. Podrás utilizar Forma gaseosa y Caminante del viento en este área y el daño de todos tus ataques elementales hechos dentro de tu área de tormenta aumentará por 2. 

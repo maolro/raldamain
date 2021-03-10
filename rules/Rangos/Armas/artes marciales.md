@@ -66,4 +66,12 @@ Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un 
   | Golpe devastador | Escudo humano       |
   | Puñetazo mortal  | Ahorcar             |
 
-- **Perforar:**
+- **Perforar:** Tienes una afilada espina en una parte de tu cuerpo capaz de ágilmente perforar a tus objetivos. Un ataque de perforar inflige 2+Éxito daño perforante al impactar e ignora la armadura natural que tenga tu objetivo. Sustituye algunos de tus atributos de artes marciales por los siguientes atributos pertenecientes a aptitud con filos ligeros.
+
+  | Rango original      | Sustitución    |
+  | ------------------- | -------------- |
+  | Puño aturdidor      | Ataque furtivo |
+  | Patada feroz        | Finta          |
+  | Desviar proyectiles | Desarme        |
+  | Golpe devastador    | Finta superior |
+

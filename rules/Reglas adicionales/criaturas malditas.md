@@ -8,11 +8,9 @@ Una organización secreta ha realizado varios experimentos sobre tu mente, alter
 
 ### Grado 1
 
-<u>Psíque fragmentado:</u> 
+<u>Psique fragmentado:</u> Tu mente actúa de maneras que no eres capaz de comprender, haciéndote dudar sobre tus recuerdos y hasta de tu propia identidad. Esta habilidad te otorga un rango adicional en Mente desencadenada y desbloqueas los rangos de magia arcana y ocultismo, para los cuáles puedes emplear tu estadística de Carisma. No obstante, tu mente es vulnerable a intrusiones mentales hechas por las organización que ha experimentado en ti, provocando que miembros de esta organización puedan ignorar tu resistencia a efectos mentales.
 
-<u>Aprendizaje misterioso:</u> 
-
-<u>Escuchar pensamientos:</u>
+<u>Escuchar pensamientos:</u> 
 
 ### Grado 2
 
@@ -20,11 +18,11 @@ Recibes 3 PT para gastar en mejoras físicas.
 
 <u>Suprimir intrusiones:</u> 
 
-<u>Manifestar mentiras:</u>  
+<u>Manifestar mentiras:</u> Tu mente distorsiona la percepción de las personas que te rodean, protegiéndote de manera instintiva. Al entrar en el estado de Despertar mente recibes un rango adicional de Magia ilusoria. 
 
 ### Grado 3
 
-<u>Aspecto múltiple:</u> 
+<u>Aspecto múltiple:</u>  
 
 <u>Pensamiento infeccioso:</u>  
 

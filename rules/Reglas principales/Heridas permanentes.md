@@ -67,12 +67,12 @@ Apuntar a un brazo específico requiere un gasto adicional de 1 ventaja.
 
 **Grave:** Reduce tu DES por 2. Tu pierna queda inutilizada, cayendo inmediatamente al suelo. Mientras tu pierna quede inutilizada tu movimiento queda reducido por 10 pies y fracasas automáticamente en todos los tiros de Acrobacias y Atletismo. Además, no podrás Esquivar como reacción para defenderte. Si sufres una herida permanente adicional en la pierna esta quedará tan herida que deberá ser amputada.
 
-| Resultado (1d10) | Lugar afectado |
-| ---------------- | -------------- |
-| 1                | Cabeza         |
-| 2-3              | Brazos         |
-| 4-6              | Pecho          |
-| 7-8              | Abdomen        |
-| 9-10             | Piernas        |
+| Resultado (1d10) | Lugar afectado                                   |
+| ---------------- | ------------------------------------------------ |
+| 1                | Cabeza                                           |
+| 2-3              | Brazos (2: Brazo principal, 3: Brazo secundario) |
+| 4-6              | Pecho                                            |
+| 7-8              | Abdomen                                          |
+| 9-10             | Piernas                                          |
 
 *Tabla de parte aleatoria del cuerpo afectado. Para ello tira un dado de diez caras (d10)*.
