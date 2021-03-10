@@ -8,79 +8,44 @@ Una organización secreta ha realizado varios experimentos sobre tu mente, alter
 
 ### Grado 1
 
-<u>Psique fragmentado:</u> Tu mente actúa de maneras que no eres capaz de comprender, haciéndote dudar sobre tus recuerdos y hasta de tu propia identidad. Esta habilidad te otorga un rango adicional en Mente desencadenada y desbloqueas los rangos de magia arcana y ocultismo, para los cuáles puedes emplear tu estadística de Carisma. No obstante, tu mente es vulnerable a intrusiones mentales hechas por las organización que ha experimentado en ti, provocando que miembros de esta organización puedan ignorar tu resistencia a efectos mentales.
 
-<u>Escuchar pensamientos:</u> 
 
 ### Grado 2
 
-Recibes 3 PT para gastar en mejoras físicas.
 
-<u>Suprimir intrusiones:</u> 
-
-<u>Manifestar mentiras:</u> Tu mente distorsiona la percepción de las personas que te rodean, protegiéndote de manera instintiva. Al entrar en el estado de Despertar mente recibes un rango adicional de Magia ilusoria. 
 
 ### Grado 3
 
-<u>Aspecto múltiple:</u>  
 
-<u>Pensamiento infeccioso:</u>  
-
-<u>Aura de olvido:</u> 
 
 ## Profundo
 
-Tus antepasados han tenido un fuerte vínculo con los mares y las horripilantes criaturas que habitan en sus profundidades. Tu sangre aún siente la llamada del mar, transformando tu cuerpo para que puedas volver a él
+Tus antepasados han tenido un fuerte vínculo con los mares y las horripilantes criaturas que habitan en sus profundidades. Tu sangre aún siente la llamada del mar, transformando tu cuerpo para que puedas volver a él.
 
 ### Grado 1
 
-<u>Branquias:</u> 
+El poder de las profundidades ha empezado a manifestarse en tu cuerpo. Sientes la llamada del mar y te pones nervioso si te alejas demasiado de él. Además, tienes la compulsión irracional de sumergirte en agua marina, sufriendo efectos nocivos hacia tu salud si no lo haces. No obstante, tus rasgos físicos continúan siendo humanos aunque tu piel será sobrenaturalmente fría y rara vez pestañeas. El primer grado de esta maldición te otorga las siguientes habilidades:
 
-<u>Adaptación acuática:</u> 
-
-<u>Vista marina:</u> 
-
-### Grado 2
-
-Recibes 3 PT para gastar en mejoras físicas.
-
-<u>Sed de sangre:</u> 
-
-<u>Percepción superior:</u> 
-
-### Grado 3
-
-<u>Envejecimiento lento:</u> 
-
-<u>Amfibio:</u> 
-
-<u>Llamada de los profindos:</u>
-
-## Embrujado
-
-### Grado 1
-
-<u>Aspecto terrorífico:</u>
-
-<u>Manipular el destino:</u>
-
-<u>Embaucador siniestro:</u>
+- Aumenta tu velocidad de natación por 15 pies y tu estadística de CON por 1.
+- Tus pulmones son capaces de aguantar largos periodos de tiempo bajo el agua, dándote la capacidad de aguantar la respiración durante 1 + CON minutos.
+- Tienes resistencia al frío igual a tu CON - 2. Si ya posees resistencia al frío, auméntala por 2. No sufres ningún efecto negativo debido altas presiones bajo el agua. 
+- No sufres ningún penalizador a la vista a causa de estar bajo el agua. Recibes visión a oscuras bajo el agua en un radio de 30 pies.
 
 ### Grado 2
 
-Recibes 3 PT para gastar en mejoras físicas.
+Has empezado a perder tu humanidad para abrazar las profundidades, transformándote de manera gradual en un híbrido entre humano y pez. Esta transformación te lleva a una veneración fanática de los dioses profundos y tienes el deseo de transformarte en un profundo verdadero. Personas con este grado de corrupción acostumbran a juntarse en insulares poblados costeros, manteniendo sus secretas tradiciones fuera de la vista del mundo. El segundo grado de esta maldición te otorga las siguientes habilidades:
 
-<u>Conceder deseos:</u>
-
-<u>Piel férrea:</u>
+- Aumenta tu estadística de FUE por 1 y tu armadura natural por 1. Reduce tu velocidad en tierra por 10 pies.
+- Tu cuerpo desarrolla branquias que te permiten pasar una cantidad ilimitada de tiempo bajo el agua. No obstante, desarrollas una dependencia del agua por lo cual no puedes pasar más de una hora seguida sin estar en contacto con el agua, lo cual provocará que recibas el efecto de estado Enfermado y reducirá tu CON por 1 cada minuto que pase.
+- Tu fisiología se adapta para asemejarse más a la de una criatura marina. Recibes las mejoras corporales Garras y Mordisco, las cuales modificarán tus ataques naturales tal como indican los rangos de Artes marciales. Con el consentimiento del máster puedes sustituir estas mejoras por otras con el mismo coste combinado de PT, como podrían ser Veneno, Perforar o Espinas.
 
 ### Grado 3
 
-<u>Poder del odio:</u>
+Abandonas tu forma humana para transformarte en un profundo, retornando al mar de dónde originaste. Tu especie cambia a profundo y serás un fiel servidor de los dioses de las profundidades, conspirando en la superficie para llevar a cabo su retorno. Al alcanzar este grado de maldición perderás control de tu personaje hasta que esta sea eliminada, pasando a ser un PNJ controlado por el máster. La maldición te otorga las siguientes habilidades:
 
-<u>Maldecir:</u>
-
-<u>Mirada horripilante:</u>
+- Aumenta tu estadística de SAB por 1 y tu CON por 1. 
+- Tu cuerpo deja de envejecer, alcanzando efectivamente la inmortalidad. También eres inmune a todo efecto que te envejezca de manera artificial y no sufres ningún penalizador físico a tus estadísticas por edad.
+- Tienes la capacidad de transmitir la maldición de las profundidades a otras criaturas, transformándolos en devotos servidores del mar. Puedes reproducirte con cualquier criatura humanoide, y la descendencia que nazca de dichas uniones recibirá la maldición del Profundo a grado 1. Además, una vez al día puedes emplear la habilidad Manifestación divina para maldecir a una criatura, otorgándole también la maldición del profundo a grado 1. 
 
 ## Vampiro
 
@@ -137,44 +102,4 @@ Recibes 3 PT para gastar en mejoras físicas.
 ### Grado 3
 
 
-
-## Espíritu ligado
-
-### Grado 1
-
-
-
-### Grado 2
-
-
-
-### Grado 3
-
-
-
-## Momia
-
-### Grado 1
-
-
-
-### Grado 2
-
-
-
-### Grado 3
-
-
-
-## Campeón esqueleto
-
-### Grado 1
-
-
-
-### Grado 2
-
-
-
-### Grado 3
 
