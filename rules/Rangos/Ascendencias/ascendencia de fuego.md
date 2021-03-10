@@ -38,7 +38,7 @@ Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia e
 
 <u>Propulsión:</u> Eres capaz de propulsarte en el aire con tu magia de fuego. Como acción estándar, vuela 60 pies en cualquier dirección. Puedes usar esta habilidad como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
-<u>Armas infundidas:</u> Tus ataques físicos hacen +1 daño fuego base y cuentan como armas mágicas (ignora armadura natural, pero son bloqueadas por resistencia a daño físico). Este daño se acumula con Furia del fuego. Puedes además gastar ventajas generadas para infligir quemaduras de la misma manera que Furia del fuego.
+<u>Armas infundidas:</u> Tus ataques físicos hacen +1 daño fuego base y cuentan como armas mágicas (ignora armadura natural, pero son bloqueadas por resistencia a daño físico). Este daño se acumula con Furia del fuego. Puedes además gastar ventajas generadas para infligir quemaduras de la misma manera que Furia del fuego. Puedes añadir los dados de soltura que tengas por ataque elemental a cualquier tiro de ataque con armas, sustituyendo a los dados de soltura que tirarías entonces.
 
 ## Rango V
 
@@ -52,4 +52,4 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 Incrementa tu DES por 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de puro fuego elemental. Mientras estés en Forma elemental estás constantemente rodeado por un Muro de fuego y el daño no-letal que infligido por tu Aura abrasadora aumenta por 1. Puedes además usar la habilidad Propulsión como acción de movimiento sin sufrir daño no-letal y tus ataques hacen +2 daño de fuego al impactar. La Forma elemental termina inmediatamente si pasas un turno sumergido en el agua o eres incapacitado. Cada turno que mantienes la forma elemental sufres 1 daño no-letal y pierdes la habilidad Conexión elemental.
+<u>Forma elemental:</u> Como acción de turno completo, te rodeas de puro fuego elemental. Mientras estés en Forma elemental estás constantemente rodeado por un Muro de fuego y el daño no-letal que infligido por tu Aura abrasadora aumenta por 1. Puedes además usar la habilidad Propulsión como acción de movimiento sin sufrir daño no-letal y añades un dado de soltura adicional a tus tiros de ataque elemental. La Forma elemental termina inmediatamente si pasas un turno sumergido en el agua o eres incapacitado. Cada turno que mantienes la forma elemental sufres 1 daño no-letal y pierdes la habilidad Conexión elemental.

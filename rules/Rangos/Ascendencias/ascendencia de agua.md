@@ -38,7 +38,7 @@ Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia e
 
 <u>Columna de agua:</u> Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Como acción estándar puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies pero no puedes elevarte más alto que 45 pies. Cada turno que mantengas la columna sufres 2 daño no-letal salvo que gastes una acción de movimiento. Columna de agua solo puede ser usada si estás en contacto con una superficie de superficie igual o superior a la distancia a la que te intentes elevar. Esta habilidad puede usarse como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
-<u>Ataques infundidos:</u> Tus ataques son cambiantes como el agua, pasando ágilmente de ataque a defensa. Recibes la habilidad de Reposicionar, permitiéndote moverte 5 pies como acción bonus al detener exitosamente un ataque (te mueves 5 pies adicionales si ya tienes esta habilidad). Además, puedes gastar 2 ventajas generadas con un ataque natural para Fintar a tu objetivo. Si tienes rangos en Magia de hielo tus ataques infligen +1 daño base.  
+<u>Ataques infundidos:</u> Tus ataques son cambiantes como el agua, pasando ágilmente de ataque a defensa. Recibes la habilidad de Reposicionar, permitiéndote moverte 5 pies como acción bonus al detener exitosamente un ataque (te mueves 5 pies adicionales si ya tienes esta habilidad). Además, puedes gastar 2 ventajas generadas con un ataque natural para Fintar a tu objetivo. Si tienes rangos en Magia de hielo tus ataques infligen +1 daño base.  Puedes añadir los dados de soltura que tengas por ataque elemental a cualquier tiro de ataque con armas, sustituyendo a los dados de soltura que tirarías entonces.
 
 ## Rango V 
 
@@ -50,6 +50,6 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 ## Rango VI
 
-Incrementa tu DES por 1.
+Incrementa tu CAR por 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de aguas rugientes. Mientras estés en forma elemental estás rodeado constantemente por un Muro de Agua y usar Columna de agua te cuesta una acción de movimiento (mantenerla es una acción bonus). La defensa otorgada por Forma fluida aumenta por 2 y no puede ser destruida salvo por una Tormenta de fuego o el ataque de una criatura en Forma elemental de fuego. Todo el agua en un radio de 30 pies centrado en ti está bajo el efecto de Corrientes Rugientes (ver magia de Agua). Cada turno que mantienes la forma elemental sufres 1 daño a la Vitalidad y pierdes la habilidad Conexión elemental. La forma elemental se desvanece si pierdes la concentración o sufres un ataque de lava.
+<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de aguas rugientes. Mientras estés en forma elemental estás rodeado constantemente por un Muro de Agua y usar Columna de agua te cuesta una acción de movimiento (mantenerla es una acción bonus). Añades además un dado de soltura adicional a tus tiros de ataque elemental. Todo el agua en un radio de 30 pies centrado en ti está bajo el efecto de Corrientes Rugientes (ver magia de Agua). Cada turno que mantienes la forma elemental sufres 1 daño a la Vitalidad y pierdes la habilidad Conexión elemental. La forma elemental se desvanece si pierdes la concentración o sufres un ataque de lava.
