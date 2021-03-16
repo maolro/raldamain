@@ -70,13 +70,95 @@ var ranks = {
         ],
     "Contundentes":
     [
-        { name: "Maza", level:1, type: "attack", description:""},
-        { name: "Ataque poderoso", level:1, type: "", description:""},
-        { name: "", level:, type: "", description:""},
-        { name: "", level:, type: "", description:""},
-        { name: "", level:, type: "", description:""},
-        { name: "", level:, type: "", description:""},
-        { name: "", level:, type: "", description:""},
+        { name: "Maza", level:1, type: "standardacion", description:""},
+        { name: "Ataque poderoso", level:1, type: "passive", description:"Antes de realizar un ataque puedes escoger reducir los dados de habilidad que tiras por 1 para incrementar tu daño base por 2"},
+        { name: "Impacto de choque", level:1, type: "addon",base:"Ataque", description:""},
+        { name: "Parada", level:1, type: "reaction", description:""},
+        { name: "Concusión", level:2, type: "addon",base:"Maza", description:""},
+        { name: "Maza oscilante", level:2, type: "fullroundaction", description:""},
+        { name: "Impacto destructor", level:3, type: "addon",base:"Maza", description:""},
+        { name: "Carga poderosa", level:3, type: "passive", description:""},
+        { name: "Quebrar el suelo", level:4, type: "fullroundaction", description:""},
+        { name: "Golpe fulminante", level:5, type: "addon",base:"Maza", description:""},
+        { name: "Ataque despiadado", level:5, type: "bonusaction", description:""},
+    ],
+    "Escudo":
+    [
+        { name: "Golpe de escudo", level:1, type: "bonusaction", description:""},        
+        { name: "Proteger aliado", level:1, type: "reaction", description:""},        
+        { name: "Escudo", level:1, type: "reaction", description:""},        
+        { name: "Interceptar", level:2, type: "moveaction", description:""},        
+        { name: "Forma defensiva", level:2, type: "bonusaction", description:""},        
+        { name: "Carga poderosa", level:3, type: "addon",base:"Golpe de escudo", description:""},        
+        { name: "Barrera móvil", level:3, type: "addon",base:"Forma defensiva", description:""},        
+        { name: "Mantener posición", level:4, type: "reaction", description:""},          
+        { name: "Guardián", level:4, type: "addon",base:"Forma defensiva", description:""},        
+        { name: "Maestría con escudo", level:5, type: "addon",base:"Forma defensiva", description:""}, 
+        { name: "Detener hechizos", level:5, type: "passive", description:""}       
+    ],
+    "Filos cortantes":
+    [
+        { name: "Espada", level:1, type: "standardaction", description:""},       
+        { name: "Parada", level:1, type: "reaction", description:""},       
+        { name: "Tajo feroz", level:1, type: "addon",base:"Espada", description:""},       
+        { name: "Gran corte", level:2, type: "fullroundaction", description:""},       
+        { name: "Ataque poderoso", level:2, type: "addon",base:"Espada", description:""},       
+        { name: "Impacto destructor", level:3, type: "addon",base:"Espada", description:""},       
+        { name: "Choque de espadas", level:3, type: "addon",base:"Espada", description:""},       
+        { name: "Torbellino de acero", level:4, type: "fullroundaction", description:""},       
+        { name: "Rompe escudos", level:4, type: "addon",base:"Espada", description:""},       
+        { name: "Tajo cercenador", level:5, type: "addon",base:"Espada", description:""},       
+    ],
+    "Filos perforantes":
+    [
+        { name: "Ataque preciso", level:1, type: "passive", description:""},       
+        { name: "Daga", level:1, type: "standardaction", description:""},       
+        { name: "Parada", level:1, type: "reaction", description:""},       
+        { name: "Finta", level:2, type: "addon",base:"Daga", description:""},       
+        { name: "Desarme", level:3, type: "addon",base:"Daga", description:""},       
+        { name: "Reposicionar", level:3, type: "addon",base:"Parada", description:""},       
+        { name: "Salto", level:4, type: "standardaction", description:""},       
+        { name: "Ataque fintado", level:4, type: "bonusaction", description:""},       
+        { name: "Impacto vital", level:5, type: "addon",base:"Daga", description:""},
+        { name: "Contrataque", level:5, type: "addon",base:"Parada", description:""}     
+    ],
+    "Reflejos":
+    [
+        { name: "Sutileza", level:1, type: "passive", description:""},       
+        { name: "Evasión", level:2, type: "passive", description:""},       
+        { name: "Esquiva asombrosa", level:2, type: "passive", description:""},       
+        { name: "Acrobacias", level:3, type: "passive", description:""},       
+        { name: "Evasión superior", level:4, type: "addon",base:"Evasión", description:""},       
+        { name: "Esquiva asombrosa superior", level:4, type: "addon",base:"Esquiva asombrosa", description:""},       
+        { name: "Oportunista", level:5, type: "reaction", description:""}      
+    ],
+    "Fortitud":
+    [
+        { name: "Resistir la muerte", level:2, type: "passive", description:""},       
+        { name: "Resistir armas", level:3, type: "reaction", description:""},       
+        { name: "Recuperación rápida", level:3, type: "passive", description:""},       
+
+    ],
+    "Rastrear":
+    [
+        { name: "Enemigo predilecto", level:1, type: "passive", description:""},       
+        { name: "Terreno predilecto", level:1, type: "passive", description:""},       
+        { name: "Rastreador experto", level:2, type: "moveaction", description:""},       
+        { name: "Acechar", level:2, type: "standardaction", description:""},       
+        { name: "Presa", level:3, type: "moveaction", description:""},       
+        { name: "Maestro del terreno", level:4, type: "passive", description:""},       
+        { name: "Maestro cazador", level:5, type: "addon",base:"Enemigo predilecto", description:""},       
+        { name: "Depredador imparable", level:5, type: "addon",base:"Presa", description:""},       
+    ],
+    "Guerrero divino":
+    [
+        { name: "Sanación", level:1, type: "standardaction", description:""},       
+        { name: "Plegaria", level:3, type: "passive", description:""},       
+        { name: "Guardián de la fe", level:3, type: "standardaction", description:""},       
+        { name: "Aliento de vida", level:4, type: "fullroundaction", description:""},       
+        { name: "Hueste divina", level:4, type: "passive", description:""},       
+        { name: "Aura sacra", level:5, type: "addon",base:"Guardián de la fe", description:""},       
+        { name: "Intervención divina", level:5, type: "reaction", description:""},       
 
     ]
 }
