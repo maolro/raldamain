@@ -11,7 +11,7 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma.
 
 <u>Inspirar temor:</u> Eres una figura temible en el campo de batalla. Todas las criaturas de menor nivel de desafío están Espantadas hasta que tú sufras una herida permanente. Esta habilidad afecta a todos en un radio de 30 pies y no afecta a criaturas bajo los efectos de Presencia.
 
-<u>Voluntad poderosa:</u> Tienes resistencia igual a tu rango contra el miedo y puedes usar Car en vez de Sabiduría en tiros contra influenciar. Si tienes rangos en influenciar, cuando uses la habilidad Persuasivo fascinas a aquellos que interactúan contigo.
+<u>Voluntad poderosa:</u> Tienes resistencia igual a tu rango contra el miedo y puedes usar Carisma en vez de Sabiduría en tiros contra influenciar. Si tienes rangos en influenciar, cuando uses la habilidad Persuasivo fascinas a aquellos que interactúan contigo.
 
 ## Rango II
 

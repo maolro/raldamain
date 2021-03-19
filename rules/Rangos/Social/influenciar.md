@@ -27,15 +27,15 @@ Añade un dado de soltura a tus tiros de Influenciar.
 
 ## Rango IV
 
-<u>Imitación perfecta:</u> Al usar mascara puedes en lugar de disfrazarte de una identidad ficticia tomar una identidad real. Tu identidad es casi indistinguible para conocidos de la persona, pero llamas la atención si careces de información que debería saber tu objetivo o te comportas de manera distinta. Para usar esta habilidad debes pasarte al menos un día estudiado a tu objetivo.
+<u>Imitación perfecta:</u> Al usar máscara puedes en lugar de disfrazarte de una identidad ficticia tomar una identidad real. Tu identidad es casi indistinguible para conocidos de la persona, pero llamas la atención si careces de información que debería saber tu objetivo o te comportas de manera distinta. Para usar esta habilidad debes pasarte al menos un día estudiado a tu objetivo.
 
-<u>Manipulación mental:</u> Tus mentiras son capaces de hacer que quien las oiga dude de su propia cordura. Haz un tiro de influenciar contra una criatura con actitud neutral o superior. Si tienes éxito, tu objetivo dedará de la veracidad de un evento de hasta 10 minutos de duración, tratándolo como si fuese producto de su imaginación. Esta habilidad no funciona si hay pruebas fehacientes de que el evento ocurrió u otros testigos.
+<u>Manipulación mental:</u> Tus mentiras son capaces de hacer que quien las oiga dude de su propia cordura. Haz un tiro de influenciar contra una criatura con actitud neutral o superior. Si tienes éxito, tu objetivo dudará de la veracidad de un evento de hasta 10 minutos de duración, tratándolo como si fuese producto de su imaginación. Esta habilidad no funciona si hay pruebas fehacientes de que el evento ocurrió u otros testigos.
 
 ## Rango V
 
 Añade un dado de soltura a tus tiros de Influenciar.
 
-<u>Sembrar cizaña:</u> Como acción estándar, haz un tiro de influenciar  afectando a un grupo de criaturas en un radio de 20 pies. Si tienes éxito, empiezan a dudar unos de otros y no tienen bonificadores por flanqueo ni se defienden unos a otros. Si además tienes información incriminatoria de un enemigo gracias a chantaje, puedes hacer que empiecen a luchar entre ellos. No puedes usar esta habilidad en medio de una batalla.
+<u>Sembrar cizaña:</u> Como acción estándar puedes hacer un tiro de influenciar afectando a un grupo de criaturas en un radio de 20 pies. Si tienes éxito, empiezan a dudar unos de otros y no tienen bonificadores por flanqueo ni se defienden unos a otros. Si además tienes información incriminatoria de un enemigo gracias a chantaje, puedes hacer que empiecen a luchar entre ellos. No puedes usar esta habilidad en medio de una batalla.
 
 <u>Persuasión en masa:</u> Cuando usas tu habilidad persuasivo, puedes elegir afectar a un grupo de criaturas en un radio de 30 pies en lugar de una sola. Esta función como un ataque de área, pero no hace daño y evasión no funciona.
 
