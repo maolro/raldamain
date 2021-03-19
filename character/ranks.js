@@ -1,6 +1,8 @@
 var ranks = { 
     "Alabardas":
         [
+            { name: "Alabarda", level:1, type: "standardaction", description:""},       
+            { name: "Parada", level:1, type: "reaction", description:""},       
             { name: "Flanqueador experto", level:3, type: "passive", description:"Tu arma hace +2 daño base contra objetivos que flanquees"},
             { name: "Carga con lanza", level:4, type: "passive", description:"Aumenta tu daño base por 2 al hacer una carga. Además, puedes gastar 2 ventajas generadas en una carga para agarrar a un objetivo clavándole tu arma"},
             { name: "Preparación contra cargas", level:1, type: "moveaction", description:"En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual infliges +2 daño. Si impactas, el objetivo debe detenerse de inmediato"},
@@ -160,5 +162,31 @@ var ranks = {
         { name: "Aura sacra", level:5, type: "addon",base:"Guardián de la fe", description:""},       
         { name: "Intervención divina", level:5, type: "reaction", description:""},       
 
+    ],
+    "Influenciar":
+    [
+        { name: "Máscara", level:1, type: "passive", description:""},       
+        { name: "Persuasivo", level:1, type: "standardaction", description:""},       
+        { name: "Aprovechar favores", level:2, type: "addon",base:"Persuasivo", description:""},       
+        { name: "Chantaje", level:3, type: "addon",base:"Persuasivo", description:""},       
+        { name: "Manipulación mental", level:4, type: "standardaction", description:""},       
+        { name: "Sembrar cizaña", level:5, type: "standardaction", description:""},       
+        { name: "Persuasión en masa", level:5, type: "addon",base:"Persuasivo", description:""},       
+        { name: "Maestro titiritero", level:6, type: "addon",base:"Persuasivo", description:""}, 
+        { name: "Conducir a la desesperación", level:6, type: "standardaction", description:""}     
+    ],
+    "Presencia":
+    [
+        { name: "Voz del comandante", level:1, type: "standardaction", description:""},     
+        { name: "Inspirar temor", level:1, type: "passive", description:""},       
+        { name: "Atemorizar", level:2, type: "standardaction", description:""},       
+        { name: "Dirigir combatientes", level:2, type: "addon",base:"Voz del comandante", description:""},       
+        { name: "Inspiración", level:2, type: "bonusaction", description:""},       
+        { name: "Indómito", level:3, type: "reaction", description:""},       
+        { name: "Inspirar heroísmo", level:3, type: "standardaction", description:""},       
+        { name: "Incitar el pánico", level:4, type: "fullroundaction", description:""},       
+        { name: "Inflamar emociones", level:4, type: "standardaction", description:""},       
+        { name: "Inspirar leyenda", level:5, type: "addon",base:"Inspirar heroísmo", description:""},
+        { name: "Bonus táctico", level:5, type: "addon",base:"Voz del comandante", description:""}      
     ]
 }
