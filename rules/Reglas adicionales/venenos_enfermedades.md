@@ -26,7 +26,7 @@ Cada día después de que una criatura sea contagiada de una enfermedad, esta de
 
 ## Venenos
 
-Cada cuatro turnos después de que una criatura sea envenenada esta deberá tirar CON contra el tiro de gravedad del veneno. Si tiene éxito, no sufrirá ningún efecto y obtendrá un número de puntos de recuperación igual a los éxitos obtenidos. La criatura se recuperará del veneno cuando los puntos de recuperación sean iguales o superiores a la tasa de recuperación. En el caso que fracase en el tiro de CON, el nivel del veneno aumentará por 1. Las ventajas y desventajas generadas añadirán dados de Ventaja o Desventaja al siguiente tiro contra el veneno.
+Después de una cantidad determinada de tiempo según la incidencia del veneno la criatura deberá tirar CON contra el tiro de gravedad del veneno. Si tiene éxito, no sufrirá ningún efecto y obtendrá un número de puntos de recuperación igual a los éxitos obtenidos. La criatura se recuperará del veneno cuando los puntos de recuperación sean iguales o superiores a la tasa de recuperación. En el caso que fracase en el tiro de CON, el nivel del veneno aumentará por 1. Las ventajas y desventajas generadas añadirán dados de Ventaja o Desventaja al siguiente tiro contra el veneno.
 
 ### Veneno de FUE
 
@@ -75,3 +75,58 @@ Cada cuatro turnos después de que una criatura sea envenenada esta deberá tira
 3. **Drogada:** La criatura reduce su CAR por 1 y pierde toda fuerza de voluntad. No puede tirar defensa contra habilidades de Presencia e Influenciar y obedece órdenes que recibe sin rechistar.
 4. **Catatónica**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
 5. **Muerte:** La criatura muere envenenada.
+
+## Ejemplos
+
+### Enfermedades
+
+**Cólera:**
+
+**Enfermedad del sueño:**
+
+**Fiebre amarilla:**
+
+**Gripe:**
+
+**Malaria:**
+
+**Osteoporosis**
+
+**Peste:**
+
+**Tuberculosis:**
+
+**Viruela:**
+
+### Venenos
+
+**Ántrax:**
+
+**Amatoxina:** Esta toxina se encuentra en varias especies de hongos venenosos. Al ser ingerida provocará graves daños al hígado y a los riñones, comúnmente causando la muerte al cabo de dos días. La amatoxina es un veneno de CON con tasa de incidencia de una hora y un tiro de gravedad de un dado de desafío y dos dados de dificultad.
+
+**Arsénico:**
+
+**Cianuro:**
+
+**Cicuta:**
+
+**Belladona**:
+
+**Mercurio:**
+
+**Polonio:**
+
+**Arsénico:**
+
+**Ricino:**
+
+**Tranquilizante**
+
+**Veneno de pez globo:**
+
+**Veneno de rana dardo:**
+
+**Veneno de serpiente:**
+
+**Agente nervioso VX:**
+
