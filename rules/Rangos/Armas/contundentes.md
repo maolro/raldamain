@@ -1,5 +1,5 @@
 ---
-"title: Contundentes
+title: Contundentes
 category: Armas
 ---
 
