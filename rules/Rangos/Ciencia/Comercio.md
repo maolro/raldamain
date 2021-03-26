@@ -25,4 +25,4 @@ Tienes a tu disposición hasta 12 criados
 
 <u>Alijo secreto:</u> Obtienes un lugar secreto donde puedes ocultar tus pertenencias más valiosas. El alijo está protegido contra magia y mientras estés ahí no eres detectable por ello. Puedes conseguir un objeto de tu alijo empleando un descanso corto en una ciudad.
 
-<u>Comprar la magia:</u> Todo puede ser encontrado pagando lo suficiente, hasta la magia. Puedes infundir objetos con hechizos que no conozcas o usar un ritual aunque no sepas magia si tienes éxito en una búsqueda como si de comercio secreto se tratase. Aumenta tu máximo de PC para armamentística por 3 y puedes reducir tus PC por 1 para aumentar los de un aliado( máximo 3)
+<u>Comprar la magia:</u> Todo puede ser encontrado pagando lo suficiente, hasta la magia. Puedes infundir objetos con hechizos que no conozcas o usar un ritual aunque no sepas magia si tienes éxito en una búsqueda como si de comercio secreto se tratase. Aumenta los PC de una de tus propiedades por 3.
