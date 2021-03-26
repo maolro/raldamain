@@ -1,3 +1,7 @@
+---
+title: Agentes
+---
+
 Los agentes representan los numerosos grupos de efectivos que puede tener una organización. Cada agente cuenta con un nivel de contratación (NC), el cual indica el esfuerzo necesario para contratar agentes de esa categoría. 
 
 Una organización puede tener un número máximo de agentes de cada nivel de contratación tal como indica la siguiente tabla. Este número máximo depende del nivel de influencia que tenga una organización en la localidad donde busque contratar a los agentes.
