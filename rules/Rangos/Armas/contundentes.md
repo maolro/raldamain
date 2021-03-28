@@ -39,7 +39,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Ataque despiadado:</u> Una vez al turno, haz un ataque adicional con tu arma como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que infringirías normalmente.
 
-<u>Golpe fulminante:</u> Al impactar a un enemigo con un Ataque poderoso, gasta un número de ventajas igual a 1+la DEF de su armadura para que este caiga inconsciente al instante. La habilidad Resistir la muerte se aplica contra esta habilidad, protegiendo a tu objetivo de caer inconsciente.
+<u>Golpe fulminante:</u> Al impactar a un enemigo con un Ataque poderoso dirigido hacia su cabeza puedes gastar 2 ventajas generadas para que este caiga inconsciente al instante. La habilidad Resistir la muerte se aplica contra esta habilidad, protegiendo a tu objetivo de caer inconsciente.
 
 # Armas
 
