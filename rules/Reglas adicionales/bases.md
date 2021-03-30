@@ -19,7 +19,7 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 <u>Almacén</u>: Un almacén es una sencilla sala empleada para guardar objetos de todo tipo. Esta tiene una capacidad máxima de 40 pies cúbicos de mercancías y puedes gastar 1 PC adicional para ampliar el tamaño de la sala, incrementando su capacidad máxima por 40 pies.
 
-<u>Altar:</u> Un altar es un punto focal de energía divina, conectando a los miembros de la base con su dios. Este puede tener la forma que desees según la naturaleza del dios que veneras. El altar cuenta como un punto consagrado a tu dios y es imprescindible para realizar rituales de magia divina. 
+<u>Altar:</u> Un altar es un punto focal de energía divina, conectando a los miembros de la base con su dios. Este puede tener la forma que desees según la naturaleza del dios que veneras. El altar cuenta como un punto consagrado a tu dios y es imprescindible para realizar rituales de magia divina. Si tu base posee un altar los agentes en ella pueden recibir rangos de Guerrero divino, Magia divina o una ascendencia relaiconada con un dios aunque normalmente no cuenten con ellos (como por ejemplo mercenarios o pícaros).
 
 <u>Armería</u>: Una armería guarda una variedad de armas y armaduras, proporcionando el equipamiento adecuado para armar a un máximo de 10 soldados. Una armería cuenta también con las herramientas adecuadas para que los soldados puedan quitarse o ponerse armaduras en poco tiempo.
 
@@ -51,11 +51,11 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 ### 2 PC
 
-<u>Aulario</u>: 
+<u>Aulario</u>: Un aulario es un lugar empleado para profundizar en el estudio de la magia y la ciencia. Un aulario tiene una capacidad de 10 personas, las cuales tras un año de estudio apliarán sus conocimientos (recibirán un rango adicional relacionado con magia arcana o ciencia). Esta sala sólo puede dar mejoras si tienes un teniente con rango III o más en la ciencia o magia que pueda actuar como maestro. Un aulario te permite reducir el nivel de contratación de 10 agentes relaiconados con la ciencia o la magia (estudiantes, ingenieros, científicos, magos) por 1.
 
 <u>Cripta</u>:
 
-<u>Dojo</u>: Un dojo es un lugar empleado para practicar artes marciales y técnicas de combate, contando con muñecos y armas de entrenamiento para facilitar este trabajo. Un dojo puede usarse como entorno de entrenamiento para un máximo de 10 personas a la vez, las cuales tras 6 meses de entrenamiento verán mejoradas sus habilidades marciales (si son agentes de tu organización, pasarán a ser soldados de élite). Esta sala sólo puede dar mejoras si tienes a un teniente que pueda actuar como maestro (es decir, que tenga rango III o mas en la aptitud que busques entrenar).
+<u>Dojo</u>: Un dojo es un lugar empleado para practicar artes marciales y técnicas de combate, contando con muñecos y armas de entrenamiento para facilitar este trabajo. Un dojo puede usarse como entorno de entrenamiento para un máximo de 10 personas a la vez, las cuales tras un año de entrenamiento verán mejoradas sus habilidades marciales (recibirán un rango adicional en un rango de armas o combate de tu elección). Esta sala sólo puede dar mejoras si tienes a un teniente que pueda actuar como maestro, el cual debe tener rango III o más en la aptitud que busques entrenar. Un dojo te permite reducir el nivel de contratación de 10 unidades marciales (soldados, mercenarios, tropas de élite) por 1.
 
 <u>Enfermería</u>: 
 
