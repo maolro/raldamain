@@ -2,7 +2,9 @@
 title: Reglas de Combate
 ---
 
-Las reglas de combate del sistema Raldamain buscan agilizar el combate y favorecer la estrategia sobre la suerte. Cada criatura partícipe en un combate cuenta con un turno, en el cual puede realizar sus acciones. Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acciones estándar y acciones de turno completo.
+Las reglas de combate del sistema Raldamain buscan agilizar el combate y favorecer la estrategia sobre la suerte. El combate se encuentra dividido en unidades de tiempo conocidas como rondas en las cuales las criaturas podrán las adecuadas acciones en el orden dictado por la prioridad. 
+
+Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acciones estándar y acciones de turno completo.
 
 ## El turno
 
@@ -14,13 +16,13 @@ En lugar de emplear tu acción estándar, puedes guardarla para emplearla en un 
 
 ### Acción de movimiento
 
-Una acción de movimiento requiere menos esfuerzo que una acción estándar y tiene una versatilidad de usos. Puedes emplear una acción de movimiento para una de las siguientes opciones:
+Una acción de movimiento requiere menos esfuerzo que una acción estándar y tiene una versatilidad de usos. En un principio sólo puedes realizar una acción de movimiento al turno la cual puede emplearse para una de las siguientes opciones:
 
 - Muévete como máximo un número de pies igual a tu movimiento (normalmente son 15 pies). Si estás luchando contra un enemigo y te mueves fuera de su alcance, este te hará un ataque de oportunidad.
 - <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante.
 - <u>Posición defensiva:</u> Añade un dado de Dificultad a todos tus tiros defensivos durante un turno. Si gastas una acción estándar para entrar en posición defensiva, convierte además uno de tus dados de Dificultad en un dado de Desafío.
 
-Puedes gastar dos ventajas generadas o desventajas generadas para realizar una acción de movimiento fuera de tu turno (4 ventajas para realizar una acción estándar) siempre y cuando te queden acciones sin utilizar. También puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal.
+Puedes gastar dos ventajas o desventajas generadas para realizar una acción de movimiento fuera de tu turno (4 ventajas para realizar una acción estándar) siempre y cuando te queden acciones sin utilizar. También puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal, la cual no reducirá tu valor de prioridad.
 
 ### Acción de turno completo
 
@@ -28,7 +30,9 @@ Una acción de turno completo requiere más esfuerzo que una acción estándar. 
 
 ### Acciones bonus
 
-Una acción bonus es aquella que requiere un esfuerzo tan mínimo que no consume ninguna acción de otro tipo. En tu turno puedes moverte un total de 15 pies sin consumir ninguna acción.
+Una acción bonus es aquella que requiere un esfuerzo tan mínimo que no consume ninguna acción de otro tipo. Este tipo de acciones no reducen la prioridad al ser utilizadas. 
+
+Una criatura puede moverse 15 pies como acción bonus, lo cual provocará un ataque de oportunidad si entra en el área de otra criatura.
 
 ### Reacciones
 
