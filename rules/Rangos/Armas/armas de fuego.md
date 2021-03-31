@@ -5,11 +5,11 @@ category: Armas
 
 ## Rango I
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una [herida permanente](http://raldamain.com/rules/Heridas%20permanentes.html) leve (4 ventajas para infligir una herida permanente media).
+Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida leve (4 ventajas para infligir una herida media).
 
 <u>Puntería mortal:</u> Al disparar a un objetivo que se encuentra a menos de 15 pies de ti ignorarás todos los puntos de defensa que recibe por su armadura. Las resistencias al daño y la defensa adicional otorgada por Aptitud con armaduras continuarán aplicándose, pero ignorarás armadura natural con esta habilidad. Puedes tomar una penalización de un dado de Dificultad en el tiro para emplear esta habilidad contra un objetivo que se encuentre a un máximo de 30 pies. La distancia máxima a la que puedes utilizar Puntería mortal aumenta por 5 pies cada vez que recibas un rango adicional de Armas de fuego.
 
-<u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (gratuita si es un arma a una mano). Tienes además +1 [prioridad](https://raldamain.com/rules/Reglas%20principales/iniciativa.html) en la iniciativa (+2 a rango III y +3 a rango V). 
+<u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (gratuita si es un arma a una mano). Tienes además +1 [prioridad](https://raldamain.com/rules/Reglas%20principales/prioridad.html) en la iniciativa (+2 a rango III y +3 a rango V). 
 
 ## Rango II
 
