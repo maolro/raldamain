@@ -9,7 +9,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Puntería mortal:</u> Al disparar a un objetivo que se encuentra a menos de 15 pies de ti ignorarás todos los puntos de defensa que recibe por su armadura. Las resistencias al daño y la defensa adicional otorgada por Aptitud con armaduras continuarán aplicándose, pero ignorarás armadura natural con esta habilidad. Puedes tomar una penalización de un dado de Dificultad en el tiro para emplear esta habilidad contra un objetivo que se encuentre a un máximo de 30 pies. La distancia máxima a la que puedes utilizar Puntería mortal aumenta por 5 pies cada vez que recibas un rango adicional de Armas de fuego.
 
-<u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (gratuita si es un arma a una mano). Tienes además +1 prioridad en la iniciativa (+2 a rango III y +3 a rango V). 
+<u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (gratuita si es un arma a una mano). Tienes además +1 [prioridad](https://raldamain.com/rules/Reglas%20principales/iniciativa.html) en la iniciativa (+2 a rango III y +3 a rango V). 
 
 ## Rango II
 
@@ -25,7 +25,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Disparo preciso:</u> Tus ataques a distancia ignoran cubierta y ocultamiento a menos que sea completo eludiendo así cualquier tipo de penalizador (siendo 2 dados de Desventaja normalmente). Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal.
+<u>Disparo preciso:</u> Tus ataques a distancia ignoran cubierta y ocultamiento a menos que sea completo eludiendo así cualquier tipo de penalizador (siendo 2 dados de desventaja normalmente). Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal.
 
 <u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del francotirador requieren una acción de turno completo si no utilizas un arma con la habilidad Francotirador. 
 
@@ -49,7 +49,7 @@ Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 
 
 - **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base por 1 y su distancia por 30 pies a cambio de una mayor facilidad de uso. Las pistolas de mano necesitan sólo una acción de movimiento para recargar y pueden utilizarse en combate con dos armas.
 - **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
-- **Perdigones:** En lugar de balas el arma disparará una lluvia de perdigones de plomo. Un arma de perdigones debe tener recámara y la gastará al completo con cada disparo, pero podrá alcanzar a todas las criaturas en un cono de 15 pies al disparar e inflinge +1 daño base. 
+- **Perdigones:** En lugar de balas el arma disparará una lluvia de perdigones de plomo. Un arma de perdigones debe tener recámara y gastará al completo las municiones con cada disparo, pero podrá alcanzar a todas las criaturas en un cono de 15 pies al disparar e inflinge +1 daño base. 
 - **Doble cañón:** El arma dispara dos balas al turno con un ataque a costa de hacerla más difícil de utilizar. El daño base de un arma de doble cañón aumenta por 2 pero tirarás un dado de habilidad menos en los ataques que hagas con ella.
 - **Potente:** Un arma potente dispara las balas con mayor potencia pero tendrá una gran fuerza de retroceso. Un arma potente inflige +1 daño base pero sólo puede ser usada por personajes con FUE 2 o más. Si el arma es de dos manos el usuario deberá tener FUE 3 o más o recibirá un penalizador de un dado de desventaja en todos sus tiros.
 - **Automática:** El arma tiene un sistema para disparar balas de forma automática. Hacer un ataque de forma automática te cuesta una acción estándar y podrás atacar a cada criatura que se encuentre en un cono de 30 pies, empezando por la más cercana. Estos ataques consumirán 4 balas pero infligirán +2 daño base y dejarás de hacer ataques automáticos cuando tengas que recargar. Las armas con esta habilidad tendrán una recámara de 40 balas y son típicas de campañas ambientadas en épocas modernas o de ciencia-ficción.
