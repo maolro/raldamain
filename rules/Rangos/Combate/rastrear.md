@@ -9,7 +9,7 @@ Recibes un nivel de talento adicional en Supervivencia.
 
 <u>Enemigo predilecto:</u> Escoge una especie o raza de tu elección. Tirarás un dado de ventaja adicional en tiros de habilidad, defensa y ataque relacionados con tu enemigo predilecto, además de hacerle +1 daño base con tus ataques. Si tu enemigo es una raza humanoide, debes pasar un turno estudiándolo para obtener los beneficios de enemigo predilecto contra él. 
 
-<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Además recibes un dado de Ventaja en todos tus tiros de habilidad y ataque, y un dado de Desventaja en tiros defensivos. Cuando alcances el rango III y V puedes escoger un terreno predilecto adicional en el cual obtengas tus beneficios o puedes añadir un dado de Ventaja adicional a tiros de Percepción, Supervivencia y Sigilo en un terreno predilecto que ya conozcas.
+<u>Terreno predilecto:</u> Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Además recibes un dado de Ventaja en todos tus tiros de habilidad y ataque, y un dado de Desventaja en tiros defensivos. Cuando alcances el rango III y V puedes escoger un terreno predilecto adicional en el cual obtengas tus beneficios o puedes añadir un dado de Ventaja adicional a tiros de percepción, supervivencia y sigilo en un terreno predilecto que ya conozcas.
 
 ## Rango II
 

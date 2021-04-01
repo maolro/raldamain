@@ -9,7 +9,7 @@ Añade un dado de soltura a tus tiros de Influenciar.
 
 <u>Máscara:</u> Ocultas tus verdaderas intenciones bajo una máscara, real o figurada. Averiguar Intenciones no detecta si mientes y puedes crear una falsa identidad para ti. Nadie sospechará que tú eres quién lleva la máscara a salvo que des pistas muy obvias.
 
-<u>Persuasivo:</u> Tu lengua de plata es capaz de sacarte de muchos líos. Como acción estándar, haz un tiro de influenciar(CAR) contra un objetivo, el cual se defiende con sabiduría o carisma dependiendo de la situación. Si tienes éxito, cambia la actitud del objetivo por 1 nivel (neutral-amistoso,desconfiado-neutral). Esta habilidad no puede usarse contra enemigos hostiles y sólo puede emplearse una al día para cada personaje.
+<u>Persuasivo:</u> Tu lengua de plata es capaz de sacarte de muchos líos. Como acción estándar, haz un tiro de influenciar contra un objetivo, el cual se defiende con sabiduría o carisma dependiendo de la situación. Si tienes éxito, cambia la actitud del objetivo por 1 nivel (neutral-amistoso,desconfiado-neutral). Esta habilidad no puede usarse contra enemigos hostiles y sólo puede emplearse una al día para cada personaje.
 
 ## Rango II
 
