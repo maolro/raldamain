@@ -50,6 +50,12 @@ Una criatura exhausta reduce su movimiento por 15 pies y recibe un penalizador -
 
 Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -1 en su FUE y DES. La fatiga no se acumula, y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto. Puedes recibir fatiga si tu Vitalidad queda reducida a 0 o pasas un día entero sin dormir.
 
+### Quemada
+
+Una criatura quemada sufrirá una cantidad de daño de fuego al turno dependiendo de la gravedad de la quemadura esta. Una quemadura leve inflige 1 daño no-letal al turno mientras que una quemadura media inflige 1 daño letal al turno. Las quemaduras pueden provocar heridas permanentes si permanecen activas durante una cantidad excesiva de turnos. De esta manera, una quemadura leve incrementa gravedad de las heridas por 1 en la parte del cuerpo afectada cada 2 rondas que permanezca activa mientras que una quemadura causa este efecto cada ronda (la primera ronda no se aplica). Si una criatura tiene varias quemaduras activas el daño de estas no se acumula pero puede incrementar la gravedad de varias heridas permanentes.
+
+El daño hecho por quemaduras ignorará la resistencia al fuego aunque sólo pueden ser provocadas si el objetivo sufre daño de fuego. Para eliminar una quemadura es necesario sumergir la parte del cuerpo afectada en agua o un entorno frío durante una ronda. Además, un personaje puede gastar una acción estándar para reducir la gravedad de una quemdadura de media a leve.
+
 ### **Náuseas** 
 
 Una criatura con náuseas es incapaz de concentrarse. Fracasa automáticamente en todos sus tiros de habilidad y pierde una acción estándar al turno.
@@ -68,7 +74,7 @@ Una criatura ralentizada pierde una acción de movimiento y recibe un penalizado
 
 ### **Sangrado** 
 
-Una criatura con sangrado sufre 1 daño letal al principio de su turno a causa de la pérdida de sangre y las criaturas atacantes obtendrán un dado de Ventaja contra ella. El sangrado puede detenerse con un tiro exitoso de Primeros Auxilios o la aplicación de cualquier habilidad de sanación. El daño de sangrado no se acumula.
+Una criatura con sangrado sufre 1 daño letal al principio de su turno a causa de la pérdida de sangre e incrementa el nivel de todas las heridas permanentes en la parte afectada por 1 cada dos rondas que este efecto permanezca activo. El sangrado puede detenerse con un tiro exitoso de Primeros Auxilios o la aplicación de cualquier habilidad de sanación. Si una criatura sufre este efecto de nuevo el daño no se acumula pero puede incrementar la gravedad de las heridas permanentes en otras partes del cuerpo.
 
 ### **Tropezada**
 
