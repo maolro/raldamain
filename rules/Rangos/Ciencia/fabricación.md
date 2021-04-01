@@ -13,7 +13,7 @@ category: Ciencia
 
 <u>Mejora mágica:</u> Eres capaz de modificar armas y armaduras empleando el chi para mejorar sus capacidades. Aplicar una mejora mágica requiere un gasto de los recursos adecuados además de una hora de trabajo por nivel de mejora. No puedes añadir mejoras a un arma o armadura que excedan un valor igual a tu nivel de personaje + tu rango de fabricación.
 
-<u>Programar sistema:</u> Empleando tus conocimientos de magia y ciencia puedes elaborar complejos sistemas mágicos capaces de guardar información o ejercer trabajos de manera automática.  
+<u>Programar sistema:</u> Empleando tus conocimientos de magia y ciencia puedes elaborar complejos sistemas mágicos capaces de guardar información o ejercer trabajos de manera automática. La naturaleza de estos sistemas queda decidida por ti con el consentimiento del máster.
 
 ## Rango III
 

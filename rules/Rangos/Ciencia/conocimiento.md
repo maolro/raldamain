@@ -7,9 +7,9 @@ category: Ciencia
 
 Recibes un nivel de talento adicional en conocimiento.
 
-<u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio y notas inmediatamente si algo está fuera de lugar. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña. El master elige que información.
+<u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio de tu elección. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña al realizar una investigación en un biblioteca, el cual queda escogido por el máster.
 
-<u>Lingüista:</u> Aprende un idioma adicional de manera fluida. Puedes comunicarte de manera básica usando lenguajes similares al tuyo, como por ejemplo si hablas ustilés puedes comunicarte de manera básica con alguien que hable kratense. A rango aprendes un idioma adicional.
+<u>Lingüista:</u> Aprende un idioma adicional de manera fluida. Puedes comunicarte de manera básica usando lenguajes similares al tuyo. Un ejemplo es si hablas ustilés puedes comunicarte de manera básica con alguien que hable kratense. A rango III aprendes un idioma adicional.
 
 <u>Aprendizaje rápido:</u> Puedes mejorar tus atributos mentales y físicos con el adecuado tiempo de estudio. Si dedicas tu tiempo de descanso a estudiar, al cabo de un mes aumenta permanentemente una de tus estadísticas por 1. Esa estadística no puede exceder tu estadística de inteligencia y sólo puedes usar esta habilidad de nuevo cuando incrementes tu estadística de INT.
 
@@ -25,8 +25,5 @@ Crea un hechizo nuevo con Conocimiento Arcano con fuerza equivalente a un hechiz
 
 <u>Ritualista:</u> Eres capaz de realizar rituales sin sufrir efectos secundarios (los sigues sufriendo si eres interrumpido). Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si te lo permite.
 
-<u>Saber verdadero:</u> Una vez al día, puedes hacer uno de los siguientes efectos: 
-
-- Identifica todos los hechizos, propiedades mágicas y rangos de magia de todas las criaturas en 30 pies
-- Conoce todas las historias y leyendas de un lugar, persona o evento. Para usar esta habilidad debes estar un minuto concentrándote.
+<u>Saber verdadero:</u> Tu gran cultura te permite conocer con rapidez una gran variedad de datos con un ágil análisis. Una vez al día puedes identificar todos los hechizos, propiedades mágicas y rangos de magia de todas las criaturas en 30 pies como acción de turno completo. Esta habilidad también puede emplearse si estás investigando en una biblioteca para conocer todas las historias y leyendas relacionadas un lugar, persona o evento.
 
