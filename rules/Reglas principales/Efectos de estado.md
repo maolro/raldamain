@@ -50,7 +50,7 @@ Una criatura exhausta reduce su movimiento por 15 pies y recibe un penalizador -
 
 Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -1 en su FUE y DES. La fatiga no se acumula, y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto. Puedes recibir fatiga si tu Vitalidad queda reducida a 0 o pasas un día entero sin dormir.
 
-### Quemada
+### **Quemada**
 
 Una criatura quemada sufrirá una cantidad de daño de fuego al turno dependiendo de la gravedad de la quemadura esta. Una quemadura leve inflige 1 daño no-letal al turno mientras que una quemadura media inflige 1 daño letal al turno. Las quemaduras pueden provocar heridas permanentes si permanecen activas durante una cantidad excesiva de turnos. De esta manera, una quemadura leve incrementa gravedad de las heridas por 1 en la parte del cuerpo afectada cada 2 rondas que permanezca activa mientras que una quemadura causa este efecto cada ronda (la primera ronda no se aplica). Si una criatura tiene varias quemaduras activas el daño de estas no se acumula pero puede incrementar la gravedad de varias heridas permanentes.
 
