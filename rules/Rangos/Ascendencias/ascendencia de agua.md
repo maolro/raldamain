@@ -7,11 +7,11 @@ category: Ascendencias
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Ascendencia de las profundidades</u>: Recibes resistencia a Frío igual a tu rango de ascendencia elemental. No sufres efectos negativos a causa del frío extremo. Los animales marinos no son naturalmente hostiles hacia ti.
+<u>Ascendencia de las profundidades</u>: Recibes resistencia a daño frío igual a tu rango de ascendencia elemental. No sufres efectos negativos a causa del frío extremo. Los animales marinos no son naturalmente hostiles hacia ti.
 
-<u>Hidrokinesia:</u> Puedes moldear pequeñas cantidades de agua a tu voluntad. Desbloqueas rangos en Magia elemental de Agua. Como acción bonus usable una vez al turno puedes manipular una cantidad pequeña de agua o alterar sus estados. Puedes afectar al agua de las siguientes maneras:
+<u>Hidrokinesia:</u> Puedes moldear pequeñas cantidades de agua a tu voluntad. Desbloqueas rangos en [magia elemental de agua](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20agua.html). Como acción bonus usable una vez al turno puedes manipular una cantidad pequeña de agua o alterar sus estados. Puedes afectar al agua de las siguientes maneras:
 
-- Evapora una cantidad de agua con volumen máximo de un pie cuadrado. El agua que  evapores debe estar adyacente a ti. Si tienes rangos en Magia de sangre puedes crear una cantidad de agua de volumen igual a un pie cuadrado drenándola de tu entorno.
+- Evapora una cantidad de agua con volumen máximo de un pie cuadrado. El agua que  evapores debe estar adyacente a ti. Si tienes rangos en [magia de sangre](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20sangre.html) puedes crear una cantidad de agua de volumen igual a un pie cuadrado drenándola de tu entorno.
 - Mueve 30 pies en cualquier dirección una cantidad de agua de volumen igual a un pie cuadrado. El agua que manipules no hará daño ni empujará.
 
 ## Rango II
@@ -22,7 +22,7 @@ Incrementa tu CON por 1.
 
 <u>Respiración acuática</u>: Tus pulmones están mejor adaptados para respirar bajo el agua. Eres capaz aguantar tu respiración durante un número de minutos igual a tu rango, y no puedes ser ahogado por magia elemental de agua.
 
-<u>Puñetazo hidráulico:</u> Como acción bonus puedes sufrir 1 daño no-letal para infundir tus ataques con tu elemento. Un ataque infundido hará +1 daño base y podrás usar maniobras de combate contra criaturas que excedan tu fuerza, ignorando todas las resistencias no-mágicas que tengan. Si tienes rangos en Magia de frío puedes usar la habilidad Canalizar el frío de ascendencia boreal.
+<u>Puñetazo hidráulico:</u> Como acción bonus puedes sufrir 1 daño no-letal para infundir tus ataques con tu elemento. Un ataque infundido hará +1 daño base y podrás usar maniobras de combate contra criaturas que excedan tu fuerza, ignorando todas las resistencias no-mágicas que tengan. Si tienes rangos en [magia de hielo](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20hielo.html) puedes usar la habilidad [canalizar el frío](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-ii) de ascendencia boreal.
 
 ## Rango III 
 
@@ -36,20 +36,20 @@ Obtienes Resistencia 2 a daño físico.
 
 Incrementa tu CAR por 1. Puedes tirar los dados de soltura que tengas en magia elemental en lugar de aquellos que poseas en ataques físicos en tiros de ataque.
 
-<u>Columna de agua:</u> Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Como acción estándar puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies pero no puedes elevarte más alto que 45 pies. Cada turno que mantengas la columna sufres 2 daño no-letal salvo que gastes una acción de movimiento. Columna de agua solo puede ser usada si estás en contacto con una superficie de superficie igual o superior a la distancia a la que te intentes elevar. Esta habilidad puede usarse como una acción de movimiento si eliges sufrir 2 daño no-letal.
+<u>Columna de agua:</u> Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Como acción estándar puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies pero no puedes elevarte más alto que 45 pies. Cada turno que mantengas la columna sufres 2 daño no-letal salvo que gastes una acción de movimiento. Columna de agua solo puede ser usada si estás en contacto con una superficie de agua con volumen igual o superior a la distancia a la que te intentes elevar. Esta habilidad puede usarse como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
-<u>Ataques infundidos:</u> Tus ataques son cambiantes como el agua, pasando ágilmente de ataque a defensa. Recibes la habilidad de Reposicionar, permitiéndote moverte 5 pies como acción bonus al detener exitosamente un ataque (te mueves 5 pies adicionales si ya tienes esta habilidad). Además, puedes gastar 2 ventajas generadas con un ataque natural para Fintar a tu objetivo. Si tienes rangos en Magia de hielo tus ataques infligen +1 daño base.  Puedes añadir los dados de soltura que tengas por ataque elemental a cualquier tiro de ataque con armas, sustituyendo a los dados de soltura que tirarías entonces.
+<u>Ataques infundidos:</u> Tus ataques son cambiantes como el agua, pasando ágilmente de ataque a defensa. Recibes la habilidad de [reposicionar](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html#rango-iii), permitiéndote moverte 5 pies como acción bonus al detener exitosamente un ataque (te mueves 5 pies adicionales si ya tienes esta habilidad). Además, puedes gastar 2 ventajas generadas con un ataque natural para [fintar](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html#rango-ii) a tu objetivo. Si tienes rangos en magia de hielo tus ataques infligen +1 daño base.  Puedes añadir los dados de soltura que tengas por ataque elemental a cualquier tiro de [artes marciales](https://raldamain.com/rules/Rangos/Armas/artes%20marciales.html), sustituyendo a los dados de soltura que tirarías entonces.
 
 ## Rango V 
 
 Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2.
 
-<u>Elemento del cambio:</u> Tus defensas son adaptables a la situación en la que te encuentras. Recibes Resistencia a daño Fuego y Ácido igual a tu Rango. Además, al principio de tu turno puedes obtener Resistencia contra un efecto de estado de tu elección (Ralentizado, Enfermado, Confundido, Aturdido o Fatigado) igual a tu Rango.
+<u>Elemento del cambio:</u> Tus defensas son adaptables a la situación en la que te encuentras. Recibes resistencia a daño Fuego y Ácido igual a tu Rango. Además, al principio de tu turno puedes obtener Resistencia contra un efecto de estado de tu elección ([ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada), [enfermado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada), [confundido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#confundida), [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) o [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada)) igual a tu rango de ascendencia, pudiendo cambiarla cada turno.
 
-<u>Ecolocalización:</u> Tienes vista a ciegas en un área de 30 pies. Puedes además predecir los movimientos de criaturas que estén en la misma superficie de agua que tú, evitando que puedas ser sorprendido si estás en el agua y permitiéndote repetir un tiro de ataque o defensa una vez al turno.
+<u>Ecolocalización:</u> Tienes vista a ciegas en un área de 30 pies. Puedes además predecir los movimientos de criaturas que estén en la misma superficie de agua que tú, evitando que puedas ser sorprendido si estás en esta e incrementando tu valor de [prioridad](https://raldamain.com/rules/Reglas%20principales/prioridad.html) por 2. 
 
 ## Rango VI
 
 Incrementa tu CAR por 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de aguas rugientes. Mientras estés en forma elemental estás rodeado constantemente por un Muro de Agua y usar Columna de agua te cuesta una acción de movimiento (mantenerla es una acción bonus). Añades además un dado de soltura adicional a tus tiros de ataque elemental. Todo el agua en un radio de 30 pies centrado en ti está bajo el efecto de Corrientes Rugientes (ver magia de Agua). Cada turno que mantienes la forma elemental sufres 1 daño a la Vitalidad y pierdes la habilidad Conexión elemental. La forma elemental se desvanece si pierdes la concentración o sufres un ataque de lava.
+<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de aguas rugientes. Mientras estés en forma elemental estás rodeado constantemente por un [muro de agua](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20agua.html#rango-ii) y usar Columna de agua te cuesta una acción de movimiento (mantenerla es una acción bonus). Añades además un dado de soltura adicional a tus tiros de ataque elemental. Todo el agua en un radio de 30 pies centrado en ti está bajo el efecto de [corrientes rugientes](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20agua.html#rango-iii). Cada turno que mantienes la forma elemental sufres 1 daño a la Vitalidad y pierdes la habilidad Conexión elemental. La forma elemental se desvanece si pierdes la concentración o entras en contacto con lava.
