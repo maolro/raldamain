@@ -52,7 +52,9 @@ Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -
 
 ### **Quemada**
 
-Una criatura quemada sufrirá una cantidad de daño de fuego al turno dependiendo de la gravedad de la quemadura esta. Una quemadura leve inflige 1 daño no-letal al turno mientras que una quemadura media inflige 1 daño letal al turno. Las quemaduras pueden provocar heridas permanentes si permanecen activas durante una cantidad excesiva de turnos. De esta manera, una quemadura leve incrementa gravedad de las heridas por 1 en la parte del cuerpo afectada cada 2 rondas que permanezca activa mientras que una quemadura causa este efecto cada ronda (la primera ronda no se aplica). Si una criatura tiene varias quemaduras activas el daño de estas no se acumula pero puede incrementar la gravedad de varias heridas permanentes.
+Una criatura quemada sufrirá una cantidad de daño de fuego al turno dependiendo de la gravedad de la quemadura esta. Una quemadura leve inflige 1 daño no-letal al turno mientras que una quemadura media inflige 2 daño no-letal al turno. Por encima de la quemadura media se encuentra la quemadura grave, la cual aumenta el daño no-letal que causa por 1 cada turno que permanezca activa, empezando por 2.
+
+Las quemaduras pueden provocar heridas permanentes si permanecen activas durante una cantidad excesiva de turnos. De esta manera, una quemadura leve incrementa la gravedad de las heridas por 1 en la parte del cuerpo tras un número de rondas según su gravedad, siendo cada tres rondas para una leve, cada dos para una media y cada ronda para una grave (la primera ronda no se aplica). Si una criatura tiene varias quemaduras activas el daño de estas no se acumula pero puede incrementar la gravedad de varias heridas permanentes.
 
 El daño hecho por quemaduras ignorará la resistencia al fuego aunque sólo pueden ser provocadas si el objetivo sufre daño de fuego. Para eliminar una quemadura es necesario sumergir la parte del cuerpo afectada en agua o un entorno frío durante una ronda. Además, un personaje puede gastar una acción estándar para reducir la gravedad de una quemdadura de media a leve.
 
