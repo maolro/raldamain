@@ -11,7 +11,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Esto hace que puedas hacer un ataque elemental adicional en tu turno, aumentar el radio de tu ataque por 10 pies o causar que tu ataque tenga un radio de salpicadura de 5 pies. Reserva de energía sólo puede usarse una vez por turno.
 
-<u>Parada elemental:</u> Detienes ataques con tu elemento. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente. Solo puedes protegerte de ataques a distancia u otros ataques elementales, puediendo cancelar un éxito una vez al turno. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V). No puedes detener proyectiles con tamaño de 10 pies o superior con parada elemental.
+<u>Parada elemental:</u> Tu elemento te permite protegerte de ataques enemigos. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente para defenderte de ataques. Solo puedes protegerte de otros ataques elementales o ataques a distancia, pudiendo cancelar un éxito una vez al turno. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V).
 
 ## Rango II
 
