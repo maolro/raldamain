@@ -39,7 +39,7 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1 y el radio de tus ataques por 5 pies.
 
-<u>Terremoto:</u> Como acción de turno completo puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas deben tirar fuerza o caerán al suelo, y los edificios en ese área se derrumban inmediatamente si están hechos de piedra. El área afectada por terremoto se convertirá inmediatamente en terreno difícil. T
+<u>Terremoto:</u> Como acción de turno completo puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas localizadas en dicho espacio deberán tirar fuerza o caerán inmediatamente al suelo, y los edificios en ese área se derrumbarán si están hechos de piedra u otro material frágil (edificios particularmente grandes o sólidos no pueden ser destruidos por este efecto, aunque sufrirán leves daños estructurales). El área afectada por terremoto se convertirá en terreno difícil.
 
-<u>Brecha:</u> Como acción de turno completo puedes formar una profunda brecha de 60 pies de longitud y 25 pies de profundidad. Todas las criaturas en el área de la brecha deben tirar Destreza o caen en ella, sufriendo el adecuado daño de caída. Aquellas criaturas que se encuentren dentro de una brecha pueden ser afectadas por un Derrumbamiento. Brecha sólo puede emplearse una vez al día.
+<u>Brecha:</u> Como acción de turno completo puedes formar una profunda brecha de 60 pies de longitud y 30 pies de profundidad. Todas las criaturas en el área de la brecha deben tirar Destreza o caen en ella, sufriendo el adecuado daño de [caída](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ca%C3%ADdas). Aquellas criaturas que se encuentren dentro de una brecha pueden ser afectadas por un Derrumbamiento. Brecha sólo puede emplearse una vez al día.
 
