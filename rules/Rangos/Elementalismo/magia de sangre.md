@@ -7,15 +7,15 @@ category: Magia elemental
 
 Añade un dado de soltura a todos tus ataques elementales.
 
-<u>Ataque elemental:</u> Como acción estándar manipula la sangre del objetivo, provocándoles gran dolor interno. Este ataque hace 2+éxito daño necrótico a un enemigo a 60 pies de ti. Gasta 2 ventajas para que el objetivo reciba sangrado (4 para que esté enfermado). El objetivo se defiende con su Con .
+<u>Ataque elemental:</u> Como acción estándar manipula la sangre del objetivo, provocándoles gran dolor interno. Este ataque hace 2+éxito daño necrótico a un enemigo a 60 pies de ti, el cual podrá resistir tirando CON. Gasta 2 ventajas para que el objetivo reciba [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) (4 para que esté [enfermado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada)). 
 
-<u>Espasmos:</u> Puedes generar ventajas obtenidas en un ataque de sangre para ocasionar espasmos al objetivo. Estos son algunos de las posibilidades de espasmos: 
+<u>Espasmos:</u> Puedes generar ventajas obtenidas en un ataque de sangre para ocasionar espasmos al objetivo. Estos son algunas  de las posibilidades de espasmos: 
 
-- Piernas (1 ventaja): El objetivo se mueve 5 pies en cualquier dirección. Gasta 2 ventajas adicionales para que caiga al suelo.
-- Brazos (1 ventaja): El objetivo mueve su brazo en cualquier dirección. Gasta 2 ventajas adicionales para que suelte el objeto que lleva en la mano que no puede usar parada durante un turno.
-- Torso (2 ventajas): El objetivo está fatiga durante un turno. Gasta 2 ventajas adicionales para que esté exhausto.
+- Piernas (1 ventaja): El objetivo se mueve 5 pies en cualquier dirección. Gasta 2 ventajas adicionales para que sea [tropezada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada).
+- Brazos (1 ventaja): El objetivo mueve su brazo en cualquier dirección. Gasta 2 ventajas adicionales para que suelte el objeto que lleva en la mano o para que no puede usar parada durante un turno.
+- Torso (2 ventajas): El objetivo está [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada) durante un turno. Gasta 2 ventajas adicionales para que esté [exhausto](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#exhausta).
 
-Esta habilidad también también puede usarse defensivamente. Si eliges que sufra un espasmo a los brazos, entonces gasta 2 desventajas para cancelar un éxito que genere.
+Esta habilidad también también puede usarse defensivamente, permitiéndote tirar tus dados de magia de sangre para protegerte de ataques. Puedes además cancelar un éxito generado por el atacante una vez al turno (esta habilidad puede usarse dos veces al turno a rango III y tres veces a rango V).
 
 ## Rango II
 
