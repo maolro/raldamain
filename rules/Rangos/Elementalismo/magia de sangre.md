@@ -19,7 +19,7 @@ Esta habilidad también también puede usarse defensivamente, permitiéndote tir
 
 ## Rango II
 
-<u>Biografía sanguínea:</u> Eres capaz de conocer información de otra persona a través de su sangre. Hacer el análisis requiere un minuto de concentración y puedes determinar cuándo fue derramada la sangre y su pertenencia. Sólo puedes determinar la pertenencia si la sangre es de uno de tus conocidos, y si es desconocida eres capaz de detectar a su propietario de quién es si luego la contrastas con su propietario.
+<u>Biografía sanguínea:</u> Eres capaz de conocer información de otra persona a través de su sangre. Hacer el análisis requiere un minuto de concentración y puedes determinar cuándo fue derramada la sangre y su pertenencia. Sólo puedes determinar la pertenencia si la sangre es de uno de tus conocidos, si es desconocido entonces eres capaz de identificarla si la contrastas con una muestra del propietario
 
 <u>Drenar sangre:</u> La sangre de otras personas sana tus heridas. Al hacer un ataque elemental de toque contra una criatura te sanas vitalidad igual al número de éxitos que generes + el número de dados de sangrado que tenga. Si estás al máximo de vitalidad esta habilidad te sana PV, y puedes gastar 4 ventajas generadas para reducir el nivel de uno de tus heridas permanentes por 1. Si tienes magia elemental de agua. Puedes extraer agua para tus ataques elementales de cualquier ser vivo.
 
@@ -29,13 +29,13 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 <u>Sentido de sangre:</u> Tienes sentido a ciegas en un área de 60 pies, permitiéndote detectar a todas las criaturas con sangre que haya. Puedes además identificar a todos las criaturas del área cuya sangre hayas analizado con Biografía sanguínea, conociendo su estado físico y condiciones actuales.
 
-<u>Provocar dolor:</u> Al impactar e un objetivo con un ataque elemental, gasta 2 ventajas para provocarle heridas internas. Una criatura aquejada por heridas internas sufre 2 daño no-letal cada vez que realice una acción. El objetivo tira CON al final de su turno para recuperar, eliminando este efecto al tener éxito. Las heridas internas pueden sanarse con un ataque elemental de sangre, Magia de vida u otros atributos relacionando con la sanación. Gasta 2 ventajas generadas con este ataque para generar una herida permanente media (herida grave).
+<u>Provocar dolor:</u> Al impactar a un objetivo con un ataque elemental, gasta 2 ventajas para provocarle heridas internas. Una criatura aquejada por heridas internas sufre 2 daño no-letal cada vez que realice una acción. El objetivo tira CON al final de su turno para recuperar, eliminando este efecto al tener éxito. Las heridas internas pueden sanarse con un ataque elemental de sangre, Magia de vida u otros atributos relacionando con la sanación. Gasta 2 ventajas generadas con este ataque para generar una herida permanente media (herida grave).
 
 ## Rango IV
 
 <u>Drenaje múltiple:</u> Como acción de turno completo puedes afectar a todas las criaturas en un área de 20 pies con tu ataque elemental. Las criaturas se defiende de este ataque usando constitución y evasión no se aplica. Gasta 2 ventajas generadas con este ataque para sanarte 1 vitalidad ( puedes usar esta habilidad contra varios objetivos en un área).
 
-<u>Telekinesia sanguínea:</u> Eres capaz de manipular los cuerpos de las personas como títeres, moviéndolos a tu voluntad. Al impactar con un ataque elemental, gasta 2 ventajas para agarrarlo telekinéticamente. Gata una acción de movimiento para mover 15 a una criatura agarrada y esta debe tirar fuerza para escapar de tu agarre. Puedes tener como máximo R-2 criaturas en tu agarre.
+<u>Telekinesia sanguínea:</u> Eres capaz de manipular los cuerpos de las personas como títeres, moviéndolos a tu voluntad. Al impactar con un ataque elemental, gasta 2 ventajas para agarrarlo telekinéticamente. Gasta una acción de movimiento para mover 15 pies a una criatura agarrada (la  criatura debe tirar con fuerza para oponerse a tu agarre). Puedes tener como máximo R-2 criaturas en tu agarre.
 
 ## Rango V 
 
@@ -43,4 +43,4 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 <u>Autocontrol sanguíneo:</u> tienes maestría controlando la sangre de tu cuerpo. Eres inmune a sangrado, veneno, enfermedades y nauseas. Tienes además resistencia contra magia de sangre igual a tu Rango.
 
-<u>Dominar persona:</u> Cuando agarras a un objetivo puedes manipular sus propias acciones. Mientras mantengas la concentración en un objetivo puedes forzar las acciones físicas que realicen en su turno, controlándolo como si estuviese bajo el efecto de esclavizar. Dirigir sus acciones te cuesta una acción de movimiento y sólo puedes controlar así a una criatura.
+<u>Dominar persona:</u> Cuando agarras a un objetivo puedes manipular sus propias acciones. Mientras mantengas la concentración en un objetivo puedes forzar las acciones físicas que realicen en su turno, controlándolo como si estuviese bajo el efecto de [esclavizar](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-vi). Dirigir sus acciones te cuesta una acción de movimiento y sólo puedes controlar así a una criatura.
