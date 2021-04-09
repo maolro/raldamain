@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/v-minusplusfield.js" type="text/javascript"></script>
     <link href="css/v-minusplusfield.css" rel="stylesheet" />
-    <script src = "ranks.js"></script>
+    <script src = "ranks.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -118,6 +118,17 @@
                             <template v-if="value.points>0">{{name}} {{Math.floor((value.points+1)/2)}} </template>
                         </template>
                     </div>
+                    <div class="row">Skills: 
+                        <template v-for="(value, name) in skills">
+                            <template v-if="value.points>0">
+                                <template v-for="s in skillnames[name]">
+                                    <template v-if="s.level &lt;= value.points">
+                                        {{s.name}}
+                                    </template>
+                                </template>
+                            </template>
+                        </template>
+                    </div>                    
             </div>
         </div>
     </div>
