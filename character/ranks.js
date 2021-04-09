@@ -1,4 +1,4 @@
-var ranks = { 
+var listofskills = { 
     "Alabardas":
         [
             { name: "Alabarda", level:1, type: "standardaction", description:""},       
@@ -30,11 +30,11 @@ var ranks = {
     "Armas de fuego":
         [
             { name: "Agilidad del pistolero", level:1, type: "passive", description:""},
-            { name: "Disparo preciso", level:3, type: "passive", description:""},
-            { name: "Ojo del francotirador", level:3, type: "passive", description:""},
-            { name: "Disparo en movimiento", level:4, type: "passive", description:""},
+            { name: "Disparo preciso", level:3, type: "passive", description:"Al disparar a un objetivo que se encuentre a menos de 15 pies de ti ignorarás todos los puntos de defensa que tenga por su armadura. Antes de atacar puedes añadir un dado de dificultad a tu tiro de ataque para duplicar la distancia a la que puedes utilizar Puntería mortal"},
+            { name: "Ojo del francotirador", level:3, type: "fullroundaction", description:"Haz un disparo con el cual reduces todas las penalizaciones por distancia en un dado de dificultad y duplicas la distancia a la que puedes usar Puntería mortal"},
+            { name: "Disparo en movimiento", level:4, type: "passive", description:"Puedes moverte antes y después de disparar. Además, no sufres penalizaciones por disparar montado"},
             { name: "Puntería mortal", level:1, type: "passive", description:""},
-            { name: "Truco de bala", level:2, type: "addon",base:"Arma de fuego", description:""},
+            { name: "Truco de bala", level:2, type: "addon",base:"Arma de fuego", description:"Puedes gastar 2 ventajas generadas para fintar a un objetivo, espantarlo durante un turno o destruir un objeto pequeño que lleve. "},
             { name: "Impacto vital", level:5, type: "addon",base:"Arma de fuego", description:""},
             { name: "Recarga", level:2, type: "moveaction", description:""},
             { name: "Puntería experta", level:5, type: "moveaction", description:""},
