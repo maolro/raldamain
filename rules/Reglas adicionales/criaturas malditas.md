@@ -12,15 +12,15 @@ Una organización secreta ha realizado varios experimentos sobre tu mente, alter
 
 ### Grado 1
 
-
+- Conoces como leer y hablar un idioma adicional con el cual nunca has entrado en contacto. Recibes además un nivel adicional de talento cada vez que alcances un grado nuevo de maldición.
+- Aumenta tu estadística de CAR por 1. Incrementa tu resistencia a efectos mentales por 2.
 
 ### Grado 2
 
+- Descubres que tu cuerpo ha sido modificado sin tu consentimiento, otorgándote nuevas capacidades físicas. Aumenta una estadística física por 1 y recibes 3 PT para gastar en mejoras.
 
 
 ### Grado 3
-
-
 
 ## Profundo
 
