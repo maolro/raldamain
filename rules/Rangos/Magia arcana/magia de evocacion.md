@@ -19,7 +19,7 @@ Tira un dado de soltura adicional en tiros de ataque mágico. Tu reserva aumenta
 
 <u>Muro de energía:</u> Como acción estándar crea un muro de energía de 20+Rx5 pies de largo y Rx5 pies de alto. Este muro tendrá las propiedades de un muro elemental de tu elección, pero no puedes tener activos dos muros hechos de elementos diferentes.. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. 
 
-### Rango III
+## Rango III
 
 Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño base por 1.
 

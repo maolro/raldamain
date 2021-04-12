@@ -19,8 +19,11 @@ Una organización secreta ha realizado varios experimentos sobre tu mente, alter
 
 - Descubres que tu cuerpo ha sido modificado sin tu consentimiento, otorgándote nuevas capacidades físicas. Aumenta una estadística física por 1 y recibes 3 PT para gastar en mejoras.
 
-
 ### Grado 3
+
+## Asura
+
+
 
 ## Profundo
 
