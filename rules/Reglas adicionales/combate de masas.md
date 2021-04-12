@@ -41,7 +41,7 @@ Cuando el atacante y el defensor realizan un tiro de ataque existe la posibilida
 
 2 DSV: El defensor realiza un ataque de oportunidad contra la unidad atacante. El defensor podrá gastar además una desventaja adicional para obtener un dado de Ventaja en su tiro de ataque.
 
-2 VNT: El comandante puede ordenar un cambio de táctica sin la necesidad de gastar acciones. Una unidad no puede cambiar de táctica más de una vez al turno.
+2  VNT: El comandante puede ordenar un cambio de táctica sin la necesidad de gastar acciones. Una unidad no puede cambiar de táctica más de una vez al turno.
 
 4 DSV: El ejército atacante se dispersa ante el defensor, dejándolo muy vulnerable a un feroz contrataque. Un ejército disperso no puede realizar tácticas de combate, limitándose a atacar al enemigo más cercano. Un comandante puede restablecer control de un ejército disperso al cabo de una ronda o si ordena una retirada, pero entonces la unidad sufrirá un ataque de oportunidad del cual no podrá defenderse.
 
