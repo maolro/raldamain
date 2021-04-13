@@ -113,22 +113,28 @@
                         <div class="col">{{ name }}</div>
                         <div class="col">{{ value }} + {{ talentincrease(name) }}</div>
                     </div>
-                    <div class="row">Talents: 
-                        <template v-for="(value, name) in talents">
-                            <template v-if="value.points>0">{{name}} {{Math.floor((value.points+1)/2)}} </template>
-                        </template>
-                    </div>
-                    <div class="row">Skills: 
-                        <template v-for="(value, name) in skills">
-                            <template v-if="value.points>0">
-                                <template v-for="s in skillnames[name]">
-                                    <template v-if="s.level &lt;= value.points">
-                                        {{s.name}}
-                                    </template>
-                                </template>
-                            </template>
-                        </template>
-                    </div>                    
+				</div>
+				<div>
+					<h6>Talents:</h6>
+					<ul>
+					<template v-for="(value, name) in talents">
+						<li v-if="value.points>0">{{name}} +{{Math.floor((value.points+1)/2)}} </li>
+					</template>
+					</ul>
+				</div>
+				<div>
+				<h6>Skills: </h6>
+				<template v-for="(value, name) in allskills">
+					<div>
+					{{name}}
+					</div>
+					<ul>
+					<li v-for="(skilltype, skillname) in value">
+						{{skillname}}:{{skilltype}}
+					</li>
+					</ul>
+				</template>
+				</div>
             </div>
         </div>
     </div>
@@ -158,7 +164,6 @@
                     cha: 1
                 },
                 skills: skillstate,
-                skillnames: listofskills,
                 talents: {
                     athletics: { attribute: "str", points: 0 },
                     intimidation: { attribute: "str", points: 0 },
@@ -218,7 +223,31 @@
                 },
                 sanity: function () {
                     return 2 + this.level + this.attributes.wis;
-                }
+                },
+				
+				/* calculates the list of all skills that have points */
+				allskills: function() {
+					var retval = {};
+					
+					for(var s in this.skills)
+					{
+						var points = this.skills[s].points;
+						if (points > 0)
+						{
+							retval[s] = {};
+							
+							for(var r in listofskills[s])
+							{
+								if (listofskills[s][r].level <= points)
+								{
+									retval[s][listofskills[s][r].name] = listofskills[s][r].type;
+								}
+							}
+						}
+					}
+					
+					return retval;
+				}
             },
             methods:{
                 talentincrease: function(attribute){
