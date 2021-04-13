@@ -107,14 +107,14 @@
 
                     </div>
                     <div class="row">
-                        <div class="col">HP: {{hp}}</div>
-                        <div class="col">Vitality: {{vitality}}</div>
-                        <div class="col">Sanity: {{sanity}}</div>
-                        <div class="col">DEF: </div>
+                        <div class="col">HP:&nbsp;{{hp}}</div>
+                        <div class="col">Vitality:&nbsp;{{vitality}}</div>
+                        <div class="col">Sanity:&nbsp;{{sanity}}</div>
+                        <div class="col">DEF:&nbsp; </div>
                     </div>
                     <div v-for="(value, name) in attributes" class="row">
                         <div class="col">{{ name }}</div>
-                        <div class="col">{{ value }} + {{ talentincrease(name) }}</div>
+                        <div class="col">{{ value }}</div>
                     </div>
 				</div>
 				<div>
@@ -189,7 +189,7 @@
             },
             computed: {
                 attributes_points_max: function () {
-                    return Math.floor(4 + this.level / 2);
+                    return Math.floor(6 + this.level / 2);
                 },
                 attributes_points_available: function () {
                     var t = this.attributes_points_max + 6;
@@ -253,19 +253,7 @@
 				}
             },
             methods:{
-                talentincrease: function(attribute){
-                    var amount = 0;
-                    var max = Math.max(0, 3 - this.attributes[attribute]);
-                    for(var t in this.talents)
-                    {
 
-                        if (this.talents[t].attribute === attribute)
-                        {
-                            amount += Math.floor(this.talents[t].points/2);
-                        }
-                    }
-                    return Math.min(amount,max);
-                }
             }
         })
     </script>
