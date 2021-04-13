@@ -27,7 +27,7 @@ Cuando el atacante y el defensor realizan un tiro de ataque existe la posibilida
 
 1 VNT: El atacante se coloca en una mejor posición defensiva, añadiendo un dado de Desventaja a su siguiente tiro de defensa.
 
-1 VNT: El atacante consigue una obertura en las filas enemigas, permitiendo que otros ejércitos aliados obtengan un dado de Ventaja atacando al ejército con el cual se esté enfrentando.
+1 VNT: El atacante consigue una apertura en las filas enemigas, permitiendo que otros ejércitos aliados obtengan un dado de Ventaja atacando al ejército con el cual se esté enfrentando.
 
 2 VNT: El comandante puede ordenar un cambio de táctica sin la necesidad de gastar acciones. Una unidad no puede cambiar de táctica más de una vez al turno.
 
