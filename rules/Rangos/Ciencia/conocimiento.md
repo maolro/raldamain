@@ -5,7 +5,7 @@ category: Ciencia
 
 ## Rango I
 
-Recibes un nivel de talento adicional en conocimiento.
+Recibes un nivel de talento adicional en conocimiento. Desbloqueas rangos en magia arcana.
 
 <u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio de tu elección. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña al realizar una investigación en un biblioteca, el cual queda escogido por el máster.
 

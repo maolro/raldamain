@@ -29,7 +29,7 @@ Incrementa tu daño base por 1 al entrar en ira.
 
 <u>Ira primigenia:</u> Tu ira lleva tu cuerpo a un nivel superior de fuerza. Puedes superar el límite de 6 en tus estadísticas, llegando como máximo a 9. Además, la ira incrementa todas tus estadísticas adicionalmente por 1.
 
-<u>Difícil de matar:</u> Puedes seguir luchando aunque estés a 0 PV, luchando hasta llevar a tu cuerpo al límite. En este estado activas los efectos de ira de manera automática y sufres 1 daño no-letal cada vez que realices una acción (2 daño no-letal si realizas una acción de turno completo). Sólo caes al borde de la muerte cuando tus PV negativos sean iguales a tu constitución. Si tus PV al acabar la ira exceden tu CON negativa, mueres al instante.
+<u>Difícil de matar:</u> Puedes seguir luchando aunque estés a 0 PV, luchando hasta llevar a tu cuerpo al límite. En este estado activas los efectos de ira de manera automática y sufres 1 daño no-letal cada vez que realices una acción (2 daño no-letal si realizas una acción de turno completo). Sólo caes al borde de la muerte cuando tus PV negativos sean iguales a tu constitución. Si tus PV al acabar la ira exceden tu CON negativa, morirás al instante.
 
 # Ira ancestral
 

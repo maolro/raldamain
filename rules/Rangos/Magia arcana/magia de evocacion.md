@@ -11,6 +11,8 @@ Tira un dado de soltura adicional en tiros de ataque mágico. Tu reserva aumenta
 
 <u>Descarga de energía:</u> Empleando un chi de tu reserva puedes liberar energía mágica en un cono de 15 pies. Una descarga de energía es un ataque de área que hace 2+Éxito daño de fuerza. A rangos III y V el área de tu ataque aumenta por 5 pies y el daño base incrementa por 1.
 
+<u>Parada mágica:</u> Eres capaz de emplear rayos de energía para protegerte de ataques. Una parada mágicaes una reacción que te permite usar tus dados de ataque defensivamente para defenderte de ataques. Solo puedes protegerte de otros ataques elementales o ataques a distancia, pudiendo cancelar un éxito una vez al turno. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V). Sólo puedes contrarrestar ataques que no tengan un radio de salpicadura superior al de un rayo de energía y puedes gastar 1 chi de tu reserva para incrementar el radio de parada por 5 pies.
+
 ## Rango II
 
 <u>Acelerar hechizo</u>: Tu soltura con la magia de evocación te permite lanzar ataques con mayor velocidad. Puedes emplear una acción de movimiento para lanzar un Rayo de energía. A rango IV puedes lanzar un Rayo de energía como acción bonus una vez al turno.

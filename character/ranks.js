@@ -27,6 +27,13 @@ var listofskills = {
             { name: "Disparo en movimiento", level:4, type: "passive", description:""}
 
         ],
+     "Armaduras":
+        [
+            { name: "Blindaje", level:2, type: "passive", description:""},       
+            { name: "Protección elemental", level:2, type: "passive", description:""},       
+            { name: "Campeón de acero", level:3, type: "reaction", description:""},       
+    
+        ],
     "Armas de fuego":
         [
             { name: "Agilidad del pistolero", level:1, type: "passive", description:""},
@@ -135,12 +142,24 @@ var listofskills = {
         { name: "Esquiva asombrosa superior", level:4, type: "addon",base:"Esquiva asombrosa", description:""},       
         { name: "Oportunista", level:5, type: "reaction", description:""}      
     ],
+
     "Fortitud":
     [
         { name: "Resistir la muerte", level:2, type: "passive", description:""},       
         { name: "Resistir armas", level:3, type: "reaction", description:""},       
         { name: "Recuperación rápida", level:3, type: "passive", description:""},       
 
+    ],
+    "Ira":
+    [
+        { name: "Ira", level:1, type: "passive", description:""},       
+        { name: "Movimiento ágil", level:1, type: "addon",base:"Ira", description:""},       
+        { name: "Reducción al daño", level:2, type: "addon",base:"Ira", description:""},       
+        { name: "Golpe decisivo", level:2, type: "passive", description:""},       
+        { name: "Fortitud interna", level:3, type: "passive", description:""},       
+        { name: "Temerario", level:3, type: "passive", description:""},    
+        { name: "Ira primigenia", level:4, type: "passive", description:""},       
+        { name: "Difícil de matar", level:4, type: "passive", description:""},          
     ],
     "Rastrear":
     [
