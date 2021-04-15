@@ -31,7 +31,7 @@ Usar toque necrótico te cuesta una acción de movimiento.
 
 <u>Crear no muerto:</u> Como acción de turno completo, anima un gran número de cadáveres para transformarlos en no-muertos bajo tu control. Puedes elegir crear 2-5 gules, 1-3 campeones esqueléticos/zombie lord o 3-18 Zombies/esqueletos. Además de menores, puedes comandar también un número de no muertos mayores igual a tu rango de nigromancia +2 (6 a rango IV).
 
-<u>Tormenta de energía negativa</u>: Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti. Esta habilidad sólo podrá usarse un número de veces al día igual a tu Rango - 1. 
+<u>Tormenta de energía negativa</u>: Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual infligirá +2 daño base. Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. 
 
 ## Rango V 
 
