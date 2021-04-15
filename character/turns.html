@@ -22,23 +22,51 @@
 
 
     <div class="container" id="app">
-            <div class="row" v-for="p in participants">
-                <div class="col">
-                    {{ p.name }}
-                </div>
-                <div class="col">
-                    {{ p.currentpriority }}
-                </div>
-                <div class="col">
-                    {{ p.currentaction }}
-                </div>
-            </div>
-            
-            <input type="button" value="Sort" v-on:click="participants.sort(sortpriority)">
-            <input type="button" value="Start" v-on:click="start()">
-            <input type="button" value="Next" v-on:click="next()">
+            <h1>Initiative tracker</h1>
 
-             
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Priority</th>
+                    <th>Actions</th>
+                </tr>
+                <tr v-for="p in participants">
+                    <td>
+                        {{ p.name }}
+                    </td>
+                    <td>
+                        {{ p.currentpriority }}
+                    </td>
+                    <td>
+                        {{ p.currentaction }}
+                    </td>
+                    <td >
+                        <input type="button" value="Remove" v-on:click="remove(p)">
+                    </td>
+                </tr>
+                <tr >
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                    <td>
+                        <input type="text" id="priority">
+                    </td>
+                    <td>
+                        <input type="text" id="actions">
+                    </td>
+                    <td>
+                        <input type="button" value="Add" v-on:click="add()">
+                    </td>
+                </tr>
+            </table>
+            <div class="row">
+                <div class="col">
+                    <input type="button" value="New round" v-on:click="start()" >
+                </div>
+                <div class="col">
+                    <input type="button" value="Next" v-on:click="next()" :disabled="isDone">
+                </div>
+            </div>       
     </div>
     <script>
 
@@ -68,7 +96,9 @@
             },
 
             computed: {
-                
+                isDone: function(){
+                    return this.participants[0].currentaction==0;
+                }
             },
             methods:{
                 start: function(){
@@ -83,6 +113,14 @@
                     this.participants[0].currentpriority--;
                     this.participants[0].currentaction--;
                     this.participants.sort(sortpriority);
+                },
+                add: function(){
+                    this.participants.push({name: document.getElementById("name").value, priority: document.getElementById("priority").value, actions: document.getElementById("actions").value});
+                    this.start();
+                },
+                remove: function(p){
+                    const index = this.participants.indexOf(p);
+                    this.participants.splice(index,1);
                 }
             }
         })
