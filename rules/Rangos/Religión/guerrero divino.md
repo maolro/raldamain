@@ -7,7 +7,7 @@ category: Religión
 
 Tira un dado de desafío adicional en tiros defensivos de sabiduría.
 
-<u>Guerrero de la fe:</u> Estás bendito por tu dios en el campo de batalla. Añade un dado de Ventaja a tiros de ataque contra enemigos de tu fe y +1 defensa contra ataques físicos y mágicos. Esta habilidad no cuenta como magia apara los propósitos de Eliminar magia.
+<u>Guerrero de la fe:</u> Estás bendito por tu dios en el campo de batalla. Añade un dado de Ventaja a tiros de ataque contra enemigos de tu fe y +1 DEF contra ataques físicos y mágicos. Esta habilidad no cuenta como magia apara los propósitos de Eliminar magia.
 
 <u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de Primeros auxilios para curar a un aliado recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Si está al máximo de Vitalidad entonces se recuperará la cantidad adecuada de PV. Una vez al día puedes reducir por 1 el nivel de una herida permanente que tenga un objetivo. Recibes un uso adicional de esa habilidad a Rango III y a Rango V.
 
