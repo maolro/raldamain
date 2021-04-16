@@ -44,6 +44,7 @@
                         <input type="button" value="Remove" v-on:click="remove(p)">
                     </td>
                 </tr>
+                <tr><td><hr></td></tr>
                 <tr >
                     <td>
                         <input type="text" id="name">
@@ -83,21 +84,21 @@
             }
         }
 
+        var mystate = localStorage.getItem("my participants");
+        var participants = [];
+        if (mystate != undefined){
+            participants = JSON.parse(mystate)
+        }
+
         var app = new Vue({
             el: '#app',
             data: {
-               participants: [
-                   {name:"Dennis", currentaction:0, currentpriority: 2, priority:9, actions:4},
-                   {name:"Madeleine", priority:6, actions:3},
-                   {name:"Olzadus", priority:4, actions:3},
-                   {name:"Hob", priority:7, actions:3},
-
-               ]
+               participants: participants
             },
 
             computed: {
                 isDone: function(){
-                    return this.participants[0].currentaction==0;
+                    return this.participants.length == 0 || this.participants[0].currentaction==0;
                 }
             },
             methods:{

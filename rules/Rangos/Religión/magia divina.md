@@ -11,7 +11,7 @@ Tira un dado de soltura adicional en tiros de magia divina.
 
 <u>Milagro menor:</u> Tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción bonus usable una vez puedes darle un dado de Ventaja o Desventaja en su siguiente tirada a una criatura de tu elección. Esta habilidad se puede usarse un número de veces al día igual a tu Rango + 1. Milagro menor también puede emplearse para recibir una pequeña ayuda de tu dios no relacionada con el combate.
 
-<u>Enviado de los dioses:</u>  Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Además, desbloqueas una plantilla relacionada con tu dios y puedes utilizar tu estadística de sabiduría para tiros de magia arcana o elemental. 
+<u>Enviado de los dioses:</u>  Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Además, desbloqueas una ascendencia relacionada con tu dios y puedes utilizar tu estadística de sabiduría para tiros de magia arcana o elemental. 
 
 <u>Oración:</u> Empleando diez minutos de oración y contemplación puedes comunicarte directamente con tu dios, recibiendo su consejo. Oración te permite hacerle hasta 4 preguntas a tu dios, quién te contestará con sinceridad. No obstante, tu dios puede hablarte de forma críptica o no contestar determinadas preguntas. El máster decidirá cómo te contestará tu dios. Cada vez sucesiva del mismo día que utilices oración reduce el número de preguntas que puedas hacerle a tu dios por 1.
 
@@ -29,8 +29,8 @@ Tira un dado de soltura adicional en magia divina
 
 - **Plaga de insectos:** Invoca una marabunta gigante de insectos que ataca a los enemigos de tu fe.
 - **Marca de ley**: El objetivo debe abstenerse  de un comportamiento o obedecer una orden. Si no lo hace , reduce temporalmente una de sus estadísticas cada día  que continúe desobedeciéndote
-- **Pesadillas**: El objetivo está afectado por horribles pesadillas. no puede recibir los beneficios de un descanso largo y sufre 3 daño de cordura al día.
-- **Dolor**: El objetivo siente un dolor extremo por todo su cuerpo. Solo puede hacer una acción al turno y sufre 1 daño no letal por turno. Este efecto dura un minuto  y se repite cada día hasta que la maldición sea eliminada.
+- **Pesadillas**: El objetivo está afectado por horribles pesadillas. No puede recibir los beneficios de un descanso largo y sufre 3 daño de cordura al día.
+- **Dolor**: El objetivo siente un dolor extremo por todo su cuerpo. Solo puede hacer una acción al turno y sufre 1 daño no letal por turno. Este efecto dura un minuto y se repetirá cada día hasta que la maldición sea eliminada.
 
 <u>Rituales de fe:</u> Conoces como realizar rituales secretos de tu fe. Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si están permitidos. Si posees también la habilidad Ritualista desbloquearás rituales superiores y aprendes un hechizo adicional de tu propia creación de rango III o menos.
 
