@@ -1,4 +1,6 @@
-## Físico
+## Tipos de daño
+
+### Físico
 
 El daño físico representa todo aquel infligido por armas y ataques naturales. Este es reducido por la defensa salvo si es provocado por un objeto de tamaño dos veces superior a la criatura que impacte.
 
