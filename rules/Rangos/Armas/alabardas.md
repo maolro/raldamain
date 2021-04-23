@@ -11,7 +11,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Preparación contra cargas</u>: Gasta una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual infliges +2 daño. Si impactas el objetivo debe detenerse de inmediato.
 
-<u>Parada</u>: Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Tiras un morado menos protegiéndote de ataques hechos por enemigos adyacentes a ti, pero puedes usar tu parada para proteger a aliados que se encuentran en el radio de tu alabarda. Una vez al turno, cancela un éxito generado por el atacante (2/turno a rango III y 3/turno a rango V).
+<u>Parada</u>: Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Para poder emplear tu arma para detener ataques debes tenerla cogida con ambas manos y tirarás un dado de dificultad menos defendiéndote de ataques hechos por criaturas adyacentes a ti. Una vez al turno puedes cancelar un éxito generado por el atacante como reacción (2 veces al turno a rango III y 3 veces al turno a rango V).
 
 ## Rango II
 
@@ -45,7 +45,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 # Armas
 
-Un alabarda base hace 3+Éxito daño perforante y tiene un alcance de 5 pies. Una alabarda base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Un alabarda base hace 3+Éxito daño perforante y tiene un alcance de 10 pies. Una alabarda base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Preparación contra cargas y Ataque vital.
 - **Cortante:** El arma tiene una hoja cortante en su punta. Recibes el atributo Tajo feroz a rango I pero perderás Ataque serpenteante. Infliges además +1 daño base al realizar un ataque lateral.
