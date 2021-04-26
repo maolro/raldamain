@@ -66,6 +66,7 @@
                 </div>
                 <div class="col">
                     <input type="button" value="Next" v-on:click="next()" :disabled="isDone">
+                    <input type="button" value="Fullround" v-on:click="fullround()" :disabled="isDone">
                 </div>
             </div>       
     </div>
@@ -117,11 +118,16 @@
                 },
                 add: function(){
                     this.participants.push({name: document.getElementById("name").value, priority: document.getElementById("priority").value, actions: document.getElementById("actions").value});
-                    this.start();
+                    this.participants.sort(sortpriority);
                 },
                 remove: function(p){
                     const index = this.participants.indexOf(p);
                     this.participants.splice(index,1);
+                },
+                fullround: function(){
+                    this.participants[0].currentpriority--;
+                    this.participants[0].currentaction = 0;
+                    this.participants.sort(sortpriority);
                 }
             }
         })
