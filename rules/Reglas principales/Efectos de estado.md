@@ -26,6 +26,10 @@ Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su ca
 
 Una criatura confundida actúa de una manera irracional y es incapaz de distinguir aliados de enemigos. Una criatura confundida se moverá en una dirección aleatoria y atacará a la criatura más cercana, persiguiéndola hasta que esta muera o escape de su campo de visión. Si una criatura confundida está en un combate no se moverá aleatoriamente y podrá decidir cuáles acciones usar, pero no recibirá ninguna ventaja por flanqueo y es inmune a efectos beneficiosos otorgados por aliados (como Voz del comandante o Inspirar Heroísmo). Este efecto termina cuando la criatura salga del combate.
 
+### Deprimida
+
+Una criatura deprimida ha perdido las fuerzas para seguir luchando, resignándose a la derrota. Pierde todos los efectos de moral que tenga activos y deberá dejar de atacar inmediatamente. Si continúa en el combate podrá luchar para protegerse, pero toda criatura que le ataque recibirá un dado de Ventaja adicional en su tiro de ataque y esta recibirá una penalización de un dado de Desventaja. Si una criatura deprimida tiene su cordura reducida a 0 o le ocurre un hecho que le haga replantearse su existencia, intentará suicidarse de inmediato.
+
 ### **Enfermada** 
 
 Una criatura enfermada tira un dado de Desventaja en todos sus tiros de ataque y habilidad. Además, todos los atacantes recibirán un dado de Ventaja contra ella. Este efecto de estado puede estar causado tanto por enfermedad, veneno o heridas permanentes.
