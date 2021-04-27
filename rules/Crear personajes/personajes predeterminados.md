@@ -26,7 +26,7 @@ En esta categoría se encuentran todos los tipos de personaje que utilizan la fu
 **Monje** (FUE, DES, CON, SAB)
 
 - <u>Talentos:</u> Heroísmo, Acrobacias, Atletismo, Percepción
-- <u>Rangos:</u> Artes marciales, Reflejos, Fortitud, Plantilla (Fuego, Tierra, Aire, Agua, Sombría, Celestial)
+- <u>Rangos:</u> Artes marciales, Reflejos, Fortitud, Ascendencia (Fuego, Tierra, Aire, Agua, Sombría, Celestial)
 
 ## Pícaros
 
@@ -44,7 +44,7 @@ En esta categoría se encuentran los tipos de personaje que emplean su destreza 
 
 **Ladrón arcano** (DES, INT, CAR)
 
-- <u>Talentos:</u> Engaño, Acrobacias, 
+- <u>Talentos:</u> Engaño, Acrobacias, Estudio, Sigilo
 - <u>Rangos:</u> Magia arcana (Ilusoria, Espacial, Temporal), Reflejos, Aptitud con armas (Filos ligeros, Arcos, Dos armas), Influenciar
 
 ## Magos
@@ -64,7 +64,7 @@ En esta categoría se encuentran los tipos de personaje que utilizan una varieda
 **Elementalista** (DES, INT, CAR)
 
 - <u>Talentos:</u> Atletismo, Heroísmo, Acrobacias, Percepción
-- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Metal), Plantilla elemental (Fuego, Aire, Agua, Tierra, Boreal), Reflejos, Fortitud
+- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Metal), Ascendencia elemental (Fuego, Aire, Agua, Tierra, Boreal), Reflejos, Fortitud
 
 **Brujo** (INT, CON, CAR)
 
@@ -83,9 +83,10 @@ En esta categoría se encuentran los tipos de personaje cuyas habilidades les pe
 **Clérigo** (SAB, CON, CAR)
 
 - <u>Talentos:</u> Conocimiento, Persuasión, Averiguar intenciones, Percepción
-- <u>Rangos:</u> Castigo divino, Guerrero divino, Aptitud con arma (cualquiera), Plantilla (Celestial, Infernal, Sombría, Verdeante)
+- <u>Rangos:</u> Magia divina, Guerrero divino, Aptitud con arma (cualquiera), Plantilla (Celestial, Infernal, Sombría, Verdeante)
 
 **Druida** (SAB, FUE, CON)
 
 - <u>Talentos:</u> Supervivencia, Percepción, Averiguar intenciones, Atletismo
-- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Metal, Naturaleza), Plantilla (Fuego, Aire, Agua, Tierra, Boreal, Verdeante), Guerrero divino, Aptitud con arma (cualquiera)
+- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Metal, Naturaleza), Ascendencia (Fuego, Aire, Agua, Tierra, Boreal, Verdeante), Guerrero elemental, Aptitud con arma (cualquiera)
+
