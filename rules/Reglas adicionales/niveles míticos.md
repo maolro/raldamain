@@ -2,7 +2,7 @@ Los niveles míticos sirven para formar personajes con fuerza y capacidades lege
 
 ## Niveles míticos
 
-Cuando un personaje alcance un nivel mítico 
+Cuando un personaje alcance un nivel mítico recibirá una de las siguientes habilidades según el nivel mítico total que tenga además de las mejoras normales por alcanzar dicho nivel. 
 
 | Nivel mítico | Habilidades                                                  |
 | ------------ | ------------------------------------------------------------ |
@@ -25,9 +25,13 @@ Cuando un personaje alcance un nivel mítico
 
 ## Rangos míticos
 
-Aquellos rangos escogidos con un nivel mítico otorgan habilidades superiores a las que otorgaría un rango normal. Estos rangos, conocidos como rangos míticos, pueden escogerse aunque un personaje posea el rango máximo en la rama que escoja y cuentan como si se tratasen de dos rangos para calcular el número de usos de determinados atributos. 
+Aquellos rangos escogidos con un nivel mítico otorgan habilidades superiores a las que otorgaría un rango normal. Estos rangos, conocidos como rangos míticos, pueden escogerse aunque un personaje posea el rango máximo en la rama que escoja y cuentan como si se tratasen de dos rangos para calcular el número de usos de aquellas habilidades que dependan de tu nivel de rango. Los rangos míticos disponibles son los siguientes:
 
 ### Cortantes
+
+<u>Tajo feroz:</u> 
+
+<u>Gran corte:</u> 
 
 
 
@@ -36,6 +40,8 @@ Aquellos rangos escogidos con un nivel mítico otorgan habilidades superiores a 
 
 
 ### Perforantes
+
+<u>Ataque furtivo:</u>
 
 
 

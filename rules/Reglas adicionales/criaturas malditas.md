@@ -60,9 +60,12 @@ Abandonas tu forma humana para transformarte en un profundo, retornando al mar d
 
 ## Vampiro
 
+Conocida y temida por todo el mundo, esta maldición asociada al mundo de las sombras convierte a sus víctimas en seres no-muertos sedientos por la sangre de los vivos. A diferencia de otros seres malditos, los vampiros no aparentan ningún mal y son capaces de ocultarse bajo una encantadora fachada. No obstante, los efectos de la maldición alteran la psicología de sus víctimas hasta convertirlos en seres obsesivos, amorales y manipuladores, carcomiendo hasta a la persona más bondadosa. La maldición del vampiro te otorga las siguientes habilidades:
+
 ### Grado 1
 
-
+- Aumenta tu estadística de DES por 1
+- Tus colmillos se vuelven sobrenaturalmente afilados cuando empiezas a sentir sed de sangre. Como acción bonus puedes dejar que te crezcan los colmillos, permitiéndote atacar como si tuvieras la mejora mordisco.
 
 ### Grado 2
 
@@ -105,7 +108,7 @@ La maldición del gul se caracteriza por darte un deseo irreprimible de devorar 
 
 ### Grado 1
 
-
+En este grado de maldición empiezas a sentir un hambre sobrenatural capaz saciarse sólo con la carne humana. Puedes intentar luchar contra este deseo, pero cada día que pases sin consumir carne humana verás tu cordura reducida por 2. Si tu cordura es reducida a 0 tu mente revertirá a un estado salvaje que buscará devorar a toda costa y sólo se restaurará cuando logres saciar tu hambre. El primer grado de la maldición te otorga las siguientes habilidades:
 
 - Aumenta tu estadística de CON por 1 y reduce tu SAB por 1.
 - Recibes resistencia a venenos, enfermedades y daño necrótico igual a tu CON - 2. Si ya tienes dicha resistencia la aumentas por 2.
@@ -113,11 +116,15 @@ La maldición del gul se caracteriza por darte un deseo irreprimible de devorar 
 
 ### Grado 2
 
+Tu constante contacto con cadáveres te coloca en la fina frontera entre la vida y la muerte, corrompiendo tu alma y transformándote progresivemente en un no-muerto. En este estado muestras aspectos monstruosos que destacan claramente tu condición, forzándote a ocultarlo bajo extensos ropajes o a alejarte de la civilización. Sólo un control adecuado de tus impulsos podrá ralentizar tu inevitable transformación hacia la no-muerte. El segundo grado de la maldición te otorga las siguientes habilidades:
+
 - Aumenta tu FUE por 1 y tu armadura natural por 1.
 - El daño necrótico te sana Vitalidad en lugar de hacerte daño como si fueses un no-muerto. Eres vulnerable al daño radiante, el cual hace +2 daño base contra ti, y la luz brillante te deja ciego.
 - Eres capaz de producir un tóxico veneno que ocasiona parálisis a tus víctimas, permitiéndote devorarlas con mayor facilidad. Infectar a un objetivo te cuesta 2 ventajas y este veneno aumenta su etapa por 1 cada turno que pase, llegando como máximo a etapa 4.
 
 ### Grado 3
+
+Has abandonado tu humanidad al completo para transformarte en un no-muerto. Esto te convierte en un ser repudiado y perseguido por la humanidad, forzándote a vivir en lugares apartados de la civilización junto con otros seres malditos. Al alcanzar este grado de maldición perderás control de tu personaje hasta que esta sea eliminada, pasando a ser un PNJ controlado por el máster. La maldición te otorga las siguientes habilidades:
 
 - Aumenta tu DES por 1. Pasas a ser un no-muerto, recibiendo inmunidad a efectos mentales y veneno.
 - Desprendes un apestoso hedor que se asemeja al de un cadáver. Todas las criaturas con la capacidad de oler que se encuentren a 15 pies de ti reciben el efecto de estado Enfermado. Este efecto funciona como un gas y es detenido de la misma manera. 
