@@ -9,7 +9,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Parada:</u> Como reacción puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada y puedes cancelar un éxito generado una vez al turno (2 veces al turno a rango III y 3 veces al turno a rango V). Parada solo puede emplearse una vez por ronda, y entrar en forma defensiva te permitirá usarla una vez adicional (2 veces adicionales si empleas una acción estándar para entrar en forma defensiva).
 
-<u>Tajo feroz:</u> Tus ataques son muy efectivos contra enemigos sin armadura. Al hacer daño con tu arma a un objetivo puedes gastar un número de ventajas igual a 1+el valor de defensa de su armadura para infligirle [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado). Tus heridas permanentes aumentan su efectividad por 1 contra criaturas que lleven armadura ligera o no lleven armadura.
+<u>Tajo feroz:</u> Tus ataques son muy efectivos contra enemigos sin armadura. Al hacer daño con tu arma a un objetivo puedes gastar un número de ventajas igual a 1 + el valor de defensa de su armadura para infligirle [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado). Tus heridas permanentes aumentan su efectividad por 1 contra criaturas que lleven armadura ligera o no lleven armadura.
 
 ## Rango II
 
