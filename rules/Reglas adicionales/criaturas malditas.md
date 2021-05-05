@@ -64,16 +64,30 @@ Conocida y temida por todo el mundo, esta maldición asociada al mundo de las so
 
 ### Grado 1
 
-- Aumenta tu estadística de DES por 1
-- Tus colmillos se vuelven sobrenaturalmente afilados cuando empiezas a sentir sed de sangre. Como acción bonus puedes dejar que te crezcan los colmillos, permitiéndote atacar como si tuvieras la mejora mordisco.
+En este grado de maldición sientes una irreprimible sed de sangre que te empuja a cometer actos cada vez más viles. Cada día que pases sin consumir sangre reducirá tu cordura por 2, reduciéndote a un estado salvaje si esta es reducida a 0. En este grado de la maldición puedes aún escoger entre abrazar el poder del vampirismo o luchar contra su nociva influencia. Este grado de maldición te otorga las siguientes habilidades:
+
+- Aumenta tu estadística de DES por 1.
+- Tus colmillos se vuelven sobrenaturalmente afilados cuando empiezas a sentir sed de sangre. Como acción bonus puedes dejar que te crezcan los colmillos, permitiéndote atacar como si tuvieras la mejora mordisco. Puedes gastar 2 ventajas generadas en un ataque de mordisco para chupar sangre de tu objetivo, provocándole el efecto de estado [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) y sanándote un punto de vitalidad (te sanas un punto adicional de vitalidad si este ya está afectado por sangrado).
+- Estás un paso más cerca de la no-muerte. Recibes inmunidad al daño necrótico, el cual te sana vitalidad en lugar de herirte. En contraparte desarrollas una fuerte sensibilidad a la luz, causando que recibas el efecto de estado [espantado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#espantada) si te encuentras en un lugar iluminado por la luz del sol ([cegado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#cegada) si estás en un lugar iluminado por luz celestial). Recibes además vulnerabilidad al daño radiante y de fuego puro.
+- Recibes un nivel de talento adicional en [sigilo](https://raldamain.com/rules/Crear%20personajes/talentos.html#sigilo-des) y [percepción](https://raldamain.com/rules/Crear%20personajes/talentos.html#percepci%C3%B3n-sab). Incrementa tu velocidad de escalada y salto por 10 pies.
 
 ### Grado 2
 
+Has escogido continuar por la senda del vampirismo, permitiendo que las fuerzas de oscuridad consuman tu cuerpo. 
 
+- Aumenta tu estadística de FUE por 1. Puedes escalar por superfícies lisas como si fueses una araña.
+- Tu cuerpo se sana a mayor velocidad, regenerándote hasta las heridas más mortales. Al principio de tu turno te sanas 2 vitalidad, recuperando 1 PV si tu vitalidad está al máximo. Al realizar un descanso corto podrás reducir el nivel de una herida permanente que te afecte por 1 (reduce el nivel de todas las heridas permanentes que te afecten por 1 al realizar un descanso largo). Eres capaz también de restaurar partes del cuerpo perdidas al cabo de una semana. La regeneración no entrará en efecto si te encuentras en un lugar iluminado por luz brillante o has sufrido daño radiante en algún momento de la ronda.
+- Las criaturas de la noche te obedecen instintivamente, tratándote como un igual. Eres capaz de comunicarte con muricélagos, lobos y ratas como si hablases su idioma y estos podrán transmitirte información como si tuvieses la habilidad [vínculo empático](https://raldamain.com/rules/Rangos/Combate/compa%C3%B1ero%20salvaje.html#rango-ii).
+- Tus ataques están infundidos con energía necrótica, drenando la vitalidad de tus objetivos. Todos tus ataques naturales infligen +2 daño necrótico y puedes gastar una ventaja generada al impactar para infligir sangrado o sanarte la vitalidad por 1. Las heridas permanentes que causas cuentan como si tuviesen un nivel adicional para los propositos de sanación y recuperación.
 
 ### Grado 3
 
+En este grado te transformas en un vampiro verdadero, alcanzando la verdadera no-muerte. No necesitas comer ni respirar, nutriéndote sólo de la sangre de tus víctimas. 
 
+- Aumenta tu estadística de CAR por 1
+- Estás dotado de un encanto y belleza sobrenaturales para acercarte más a tu presa. Recibes un nivel de talento adicional en engaño y persuasión. Si posees rangos en influenciar todas las personas que no conzcan tu verdadera naturaleza empiezan con una actitud amistosa hacia ti. 
+- Las criaturas de la noche llegarán a ayudarte cuando te encuentres en peligro. Una vez al día puedes llamar a una manada de 10 lobos o a una marabunta gigantesca de murciélagos o ratas, los cuáles llegarán en un número de rondas elegidos por el máster según tu ubicación. Estos lucharán por ti hasta que mueran u ordenes que se retiren.
+- Ni la muerte es un final para ti. La primera vez que mueras te rejuvenecerás en un lugar designado en tu guarida, reviviendo a 0 PV y Vitalidad e inconsciente. En este estado la regeneración continuará aplicándose, restaurándote al máximo de vida al cabo de una hora (morirás instantáneamente si pasas una ronda sin regenerarte). No podrás rejuvenecer si te encuentras a una gran distancia de tu guarida o el lugar designado es consagrado o purificado. 
 
 ## Bestia
 
