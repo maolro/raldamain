@@ -25,9 +25,17 @@ Una organización secreta ha realizado varios experimentos sobre tu mente, alter
 
 ### Grado 1
 
+- Incrementa tu FUE por 1
+
 ### Grado 2
 
+- Incrementa tu DES por 1
+
 ### Grado 3
+
+- Incrementa tu FUE por 1
+
+
 
 ## Profundo
 

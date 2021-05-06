@@ -58,6 +58,10 @@ Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -
 
 Una criatura fascinada fija su atención en una fuente determinada, descuidando el entorno que le rodea. Esta no podrá tirar percepción para detectar a criaturas ocultas y su prioridad se reducirá por 2 en el caso que ocurra un combate. En el caso que ocurra un evento que signifique una amenaza para la criatura fascinada, como podría ser una criatura visible que se le acerque, esta podrá tirar Percepción contra el efecto que le esté fascinando, liberándose de él si tiene éxito. Este efecto se pierde de manera automática al sufrir daño.
 
+### Invisible
+
+Una criatura invisible es casi imposible de percibir por la vista debido a su gran sigilo o a un efecto mágico. Añade un dado de desafío adicional a todos sus tiros defensivos de sigilo y detectar a la criatura con percepción requiere un gasto de una acción estándar. No pueden realizarse ataques apuntados a criaturas invisibles y estas podrán cancelar un éxito adicional en tiros defensivos. 
+
 ### **Náuseas** 
 
 Una criatura con náuseas es incapaz de concentrarse. Fracasa automáticamente en todos sus tiros de habilidad y pierde una acción estándar al turno.

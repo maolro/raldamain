@@ -8,7 +8,7 @@ title: Creación de criaturas
 
 <u>Cuadrúpedo:</u> La criatura está dotada de cuatro patas. Su movimiento base es 40 pies y sus estadísticas físicas son FUE 3, DES 1, CON 2.
 
-<u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de Escalada igual a 20 pies y su tamaño inicial es Pequeño, teniendo -1 PV base.
+<u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de excavar igual a 20 pies y su tamaño inicial es Pequeño, teniendo -1 PV base.
 
 <u>Ave:</u> La criatura tiene alas y garras. Puede volar a una velocidad de 30 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño, teniendo -1 PV base.
 
@@ -28,7 +28,7 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 ### Mejoras de 1 PT
 
-<u>Garras:</u> La criatura tiene un par de garras afiladas en sus brazos o sus piernas. Las garras infligen 1+Éxito daño cortante al atacar y con ellas gastar 2 ventajas generadas para infligir sangrado a tu objetivo. 
+<u>Garras:</u> La criatura tiene un par de garras afiladas en sus brazos o sus piernas. Las garras infligen 1+Éxito daño cortante al atacar y con ellas gastar 2 ventajas generadas para infligir sangrado a tu objetivo.
 
 <u>Armadura natural:</u> La criatura tiene una dura coraza que le protege del daño. Recibe Armadura natural igual a 1 + su CON - 2. Si la criatura escogida la habilidad Armadura natural recibida por rangos de Fortitud esta aumentará la armadura natural que otorga por 2. Puedes emplear 1 PT adicional en esta transformación para que la criatura reciba +1 resistencia al daño físico (su resistencia total no puede ser superior a 5).
 
@@ -42,7 +42,7 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Perforar:</u> La criatura recibe una espina en una parte de su cuerpo con la cual puede atacar. La espina inflige 2+Éxito daño Perforante al impactar e ignora la armadura natural de tu objetivo al hacer ataques sorpresa o flanqueo. 
 
-<u>Depredador:</u> La criatura está adaptada a cazar en un terreno de tu elección. Esta habilidad otorga los atributos Terreno predilecto y Enemigo predilecto a la criatura y permite gastar PT en rangos de Rastrear (los rangos se tomarán a partir del II).
+<u>Depredador:</u> La criatura está adaptada a cazar en un terreno de tu elección. Esta habilidad otorga los atributos [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) y [enemigo predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) a la criatura y permite gastar PT en rangos de [rastrear](https://raldamain.com/rules/Rangos/Combate/rastrear.html) (iniciará a rango II).
 
 <u>Visión periférica:</u> Los ojos de la criatura le permiten ver todo su entorno por igual. No puede ser atacada por la espalda y es inmune a las ventajas por flanqueo. Visión periférica puede mejorarse con Sentido superior.
 
@@ -50,17 +50,17 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Cola:</u> La criatura recibe una sinuosa cola, con la cual puede manipular objetos o hacer ágiles golpes. Hacer un ataque con la cola te cuesta una acción bonus (acción de movimiento si es una criatura de base Sierpe) y hace 0+Éxito daño. La cola puede mejorarse con las transformaciones Garras, Golpe, Tentáculo y Perforar.
 
-<u>Explosión:</u> Cuando la criatura es reducida a 0 PV esta explotará al instante. La explosión es un tiro de CON que hace 2+Éxito daño a todas las criaturas en un radio de 10 pies. El daño de energía equivale al elemento escogido para Ataques infundidos, y todos los gastos de ventajas de esa habilidad se aplican también a esta. El daño de la explosión aumenta por 1 y el radio de explosión por 5 pies por cada aumento de tamaño que tenga la criatura. Si la criatura ha gastado PT en veneno, en lugar de hacer daño con la explosión podrá Envenenar a todas las criaturas en el radio. 
+<u>Explosión:</u> Cuando la criatura es reducida a 0 PV esta explotará al instante. La explosión es un tiro de CON que hace 2+Éxito daño a todas las criaturas en un radio de 10 pies. El daño de energía equivale al elemento escogido para Ataques infundidos, y todos los gastos de ventajas de esa habilidad se aplican también a esta. El daño de la explosión aumenta por 1 y el radio de explosión por 5 pies por cada aumento de tamaño que tenga la criatura. Si la criatura ha gastado PT en veneno, en lugar de hacer daño con la explosión podrá envenenar a todas las criaturas en el radio. 
 
-<u>Camuflaje:</u>
+<u>Camuflaje:</u> La piel de la criatura está adaptada para ocultarse con facilidad en un terreno específico. Una criatura con camuflaje tiene la capacidad de volverse invisible como acción estándar si se encuentra en su terreno predilecto y está fuera del campo de visión de criaturas enemigas. Los beneficios de camuflaje se perderán en el momento que la criatura realice un ataque. 
 
-<u>Movilidad:</u>
+<u>Movilidad:</u> La criatura se mueve con gran destreza y agilidad. Esta mejora le otorgará un dado de desafío adicional en tiros de esquiva en el caso que no tenga rangos de reflejos y le otorgará resistencia a ataques de área y agarre igual a su estadística de destreza - 2. Esta habilidad permite gastar PT en rangos de [reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html), empezando a rango I (reduce el coste del primer rango tomado por 1).
 
-<u>Aguantar respiración:</u>
+<u>Aguantar respiración:</u> El sistema respiratorio de la criatura está capacitado para aguantar tiempo excesivo en entornos adversos. Una criatura con esta habilidad duplica el número de rondas que puede resistir antes de ahogarse y podrá aguantar su respiración durante 10 minutos seguidos. Cada aumento de tamaño que tenga la criatura incrementará el número minutos en los cuales puede aguantar la respiración por 10 minutos debido al aumento de la capacidad respiratoria que tendrá. Gasta 1 PT adicional en este atributo para que la criatura se vuelva anfibia, permitiéndola respirar tanto el aire como el agua. 	
 
-<u>Ferocidad:</u>
+<u>Ferocidad:</u> La criatura es capaz de continuar luchando aunque se encuentre al borde de la muerte. Esta mejora evitará que la criatura caiga inconsciente cuando sea reducida a 0 PV, pero todas las acciones que realice le harán 2 daño no-letal. Puedes gastar PT para obtener rangos de [ira](https://raldamain.com/rules/Rangos/Combate/ira.html), empezando a rango I.
 
-<u>Imitar voces:</u>
+<u>Imitar voces:</u> La criatura es capaz de imitar a la perfección los sonidos que escucha sin la necesidad de entenderlos. Distinguir una imitación de un sonido real requiere tener éxito en un tiro de averiguar intenciones o estudio (campo de ciencias naturales) Si la criatura es un ser inteligente podrá emplear las voces imitadas para engañar a los oyentes, obteniendo los efectos de [imitación perfecta.](https://raldamain.com/rules/Rangos/Social/influenciar.html#rango-iv) 
 
 ### Mejoras de 2 PT
 
@@ -68,17 +68,17 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Alas:</u> La criatura recibe una velocidad de vuelo igual a 60 pies. Las alas pueden recibir heridas permanentes, y apuntar a las alas requiere un gasto adicional de 2 ventajas. Puedes emplear 2 PT adicionales para añadirle a la criatura otro par de alas, lo cual aumenta su velocidad de vuelo por 30 pies o gastar 1 PT para que la criatura pueda volar sin la necesidad de alas.
 
-<u>Inmunidad:</u> La criatura recibe Inmunidad contra un tipo de energía al que tenga Resistencia. Puedes emplear 2 PT adicionales para que la criatura reciba Absorción contra ese tipo de energía. La Absorción causa que cada vez que la criatura sufra daño del tipo de energía designado, esta no sufre daño y  se sana una cantidad de Vitalidad igual al daño que sufriría.
+<u>Inmunidad:</u> La criatura recibe Inmunidad contra un tipo de energía al que tenga Resistencia. Puedes emplear 2 PT adicionales para que la criatura reciba Absorción contra ese tipo de energía. La Absorción causa que cada vez que la criatura sufra daño del tipo de energía designado, esta no sufre daño y se sana una cantidad de Vitalidad igual al daño que sufriría.
 
 <u>Miembros adicionales:</u> La criatura recibe un par adicional de miembros, los cuales pueden ser dos piernas o dos brazos. Cada par adicional de piernas aumenta el movimiento base por 10 pies y otorga +2 Resistencia a ser Tropezado, mientras que cada par adicional de brazos permite que una criatura pueda hacer un ataque natural adicional al turno (si lleva armas, puede hacer un ataque adicional si tiene aptitud con dos armas). 
 
-<u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una plantilla de tu elección, incrementando el daño base de estos y obteniendo nuevas formas de gastar ventajas.
+<u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una ascendencia de tu elección, incrementando el daño base de estos y obteniendo nuevas maneras de gastar ventajas. Los elementos para escoger son [fuego](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv), [hielo](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iv), [tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv), [agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) o [aire](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html#rango-iv) (cuenta como si tuviera magia de tormenta). Puedes gastar 2 PT adicionales para que la criatura reciba la habilidad de reserva elemental relacionada con la ascendencia escogida.
 
 <u>Veneno:</u> La criatura obtiene la capacidad de producir veneno. Al impactar con un ataque, puedes gastar 2 Ventajas para inyectarle al objetivo un [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos). El veneno que inyecta es un veneno que afecta a una estadística de tu elección, y tendrá tasa de recuperación 8 y tiro de gravedad igual a su CON. Puedes gastar 1 PT adicional para añadir un tiro de desafío al tiro de gravedad del veneno (máximo 3), aumentar la tasa de recuperación por 2 o modificar el veneno de una forma nueva siempre y cuando tenga el consentimiento del máster.
 
-<u>Arrollar:</u> Cuando la criatura haga una carga, hace un ataque automático de Golpe contra todas las criaturas de menor tamaño que estén en su camino hasta que complete la carga. Las criaturas que estén en el camino de la carga deben escoger entre intentar evitar la carga, por lo que tirarán Esquivar contra su ataque, o intentar detenerla, por lo que tirarán Heroísmo.
+<u>Arrollar:</u> Cuando la criatura haga una carga, hace un ataque automático de Golpe contra todas las criaturas de menor tamaño que estén en su camino hasta que complete la carga. Las criaturas que estén en el camino de la carga deben escoger entre intentar evitar la carga, por lo que tirarán esquivar contra su ataque, o intentar detenerla, por lo que tirarán [heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#hero%C3%ADsmo-fue).
 
-<u>Cambiaformas:</u> La criatura tiene la capacidad de alterar su aspecto. Como acción de turno completo, la criatura puede cambiar 3 PT que tenga por otros 3 PT nuevos, cambiando su forma tanto como ella desee. En lugar de sustituir PT puede reducir una de sus estadísticas por 1 para recibir un PT nuevo, y puede gastar uno de los PT nuevos que reciba en aumentar una de sus estadísticas por 1. Esta transformación dura hasta que la criatura lo elija o esta caiga inconsciente. Puedes emplear 1 PT adicional en esta habilidad para que la criatura reciba 1 PT adicional al transformarse. Si empleas 6 PT en esta habilidad la criatura podrá cambiar su forma como acción de movimiento.
+<u>Cambiaformas:</u> La criatura tiene la capacidad de alterar su aspecto. Como acción de turno completo, la criatura puede cambiar 3 PT que tenga por otros 3 PT nuevos, cambiando su forma tanto como ella desee. En lugar de sustituir PT puede reducir una de sus estadísticas por 1 para recibir un PT nuevo. Esta transformación durará hasta que la criatura lo elija o esta caiga inconsciente. Puedes emplear 1 PT adicional en esta habilidad para que la criatura reciba 1 PT adicional al transformarse, y si empleas 6 PT en esta habilidad la criatura podrá cambiar su forma como acción de movimiento.
 
 <u>Espinas:</u> La criatura tiene varias afiladas espinas a lo largo de su cuerpo. Las espinas causan que haga +1 daño perforante con todos sus ataques físicos y cuando sufra daño por un ataque natural el atacante recibirá Sangrado. Si la criatura con espinas agarra a otra, la criatura agarrada sufrirá 1 daño letal obligatorio al principio de su turno. Puedes gastar 1 PT adicional para uno de las siguientes mejoras:
 
@@ -89,9 +89,9 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Invisibilidad:</u> 
 
-<u>Movimiento elemental:</u>
+<u>Movimiento elemental:</u> La criatura recibe un movimiento especial asociado con un elemento con el cual están infundidos sus ataques. Moverse de dicha manera cuesta una acción estándar salvo que la criatura sufra 2 daño no-letal y la velocidad de este puede ser aumentado con la mejora Movimiento adicional. Las opciones para escoger son [propulsión](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv) (fuego), [ola de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv) (tierra), [columna de agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) (agua), [forma gaseosa](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-v) (hielo) o [jinete del relámpago](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tormenta.html#rango-iv) (aire). 
 
-<u>Aura elemental:</u>
+<u>Aura elemental:</u> La energía elemental que emana de la criatura se manifiesta en forma de un aura de energía. Esta habilidad permite a la criatura obtener un aura elemental asociada con el elemento que infunde sus ataque, entre las cuales se encuentran [manto nevado](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iii) (hielo),     
 
 <u>Drenar sangre:</u>
 
