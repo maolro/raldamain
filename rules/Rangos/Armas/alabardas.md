@@ -9,7 +9,7 @@ category: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Preparación contra cargas</u>: Gasta una acción de movimiento para prepararte contra una carga. En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual infliges +2 daño. Si impactas el objetivo debe detenerse de inmediato.
+<u>Preparación contra cargas</u>: Puedes emplear una acción de movimiento para prepararte contra cargas enemigas, alcanzándoles con tu arma antes de que puedan llegar a ti. Mientras estés en el estado de preparación puedes realizar un ataque de oportunidad en cualquier momento de la ronda contra una criatura que pase por el radio de alcance de tu alabarda. Este ataque infligirá +2 daño base y en el caso que impactes el objetivo deberá detenerse de inmediato. El ataque que prepares no se perderá al final de la ronda y sólo saldrás del estado de preparación si realizas un ataque, te mueves más de 10 pies de tu posición o eres desconcentrado.
 
 <u>Parada</u>: Puedes defenderte de ataques usando tu arma, tirando tus dados de ataque defensivamente. Para poder emplear tu arma para detener ataques debes tenerla cogida con ambas manos y tirarás un dado de dificultad menos defendiéndote de ataques hechos por criaturas adyacentes a ti. Una vez al turno puedes cancelar un éxito generado por el atacante como reacción (2 veces al turno a rango III y 3 veces al turno a rango V).
 
