@@ -1,5 +1,6 @@
 ---
 title: Personajes predeterminados
+
 ---
 
 Estos son algunos ejemplos de personaje que se pueden crear con el sistema Raldamain. Representan sólo una parte de las infinitas posibilidades disponibles con este sistema, pero servirán como orientación para nuevos jugadores y para crear estadísticas de PNJ.
@@ -47,7 +48,7 @@ En esta categoría se encuentran los tipos de personaje que emplean su destreza 
 - <u>Talentos:</u> Engaño, Acrobacias, Estudio, Sigilo
 - <u>Rangos:</u> Magia arcana (Ilusoria, Espacial, Temporal), Reflejos, Aptitud con armas (Filos ligeros, Arcos, Dos armas), Influenciar
 
-## Magos
+## Hechiceros
 
 En esta categoría se encuentran los tipos de personaje que utilizan una variedad de hechizos y habilidades sobrenaturales para obtener poder, estudiando la magia o despertando su poder innato para llegar a la ascendencia.
 
