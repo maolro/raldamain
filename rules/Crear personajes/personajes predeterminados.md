@@ -5,7 +5,7 @@ title: Personajes predeterminados
 
 Estos son algunos ejemplos de personaje que se pueden crear con el sistema Raldamain. Representan sólo una parte de las infinitas posibilidades disponibles con este sistema, pero servirán como orientación para nuevos jugadores y para crear estadísticas de PNJ.
 
-## Luchadores
+## [Luchadores](https://raldamain.com/rules/Crear%20personajes/guerreros.html)
 
 En esta categoría se encuentran todos los tipos de personaje que utilizan la fuerza bruta para derrotar al enemigo, basándose en hacer grandes cantidades de daño y resistir todos los golpes que reciban.
 
