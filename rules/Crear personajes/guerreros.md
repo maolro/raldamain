@@ -1,5 +1,5 @@
 ---
-title: Guerreros
+title: Luchadores
 sub: personajes prederminados
 ---
 
