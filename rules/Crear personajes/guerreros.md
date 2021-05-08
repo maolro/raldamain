@@ -88,3 +88,7 @@ sub: personajes prederminados
 **Parada** (1/ronda): 1 dificultad + 3 desafío. Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
 
 **Escudo**: 1 dificultad + 3 desafío. Cancela un éxito (1/ronda). 
+
+# Nivel 4-6
+
+### Veterano (nivel 5)
