@@ -29,7 +29,9 @@ sub: personajes prederminados
 
 ------
 
-**Parada**: 1 dificultad + 2 desafío. Cancela un éxito (1/ronda). Tira un dado de dificultad menos defendiéndote de enemigos adyacentes
+**Parada**: 1 desafío+ 2 dificultad . Cancela un éxito (1/ronda). Tira un dado de dificultad menos defendiéndote de enemigos adyacentes
+
+### Guerrero tribal (nivel 1)
 
 ### Matón (nivel 2)
 
@@ -59,7 +61,7 @@ sub: personajes prederminados
 
 ------
 
-**Parada** (1/ronda): 1 dificultad + 3 desafío. Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+**Parada** (1/ronda): 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
 
 ### Infantería pesada (nivel 3)
 
@@ -85,10 +87,62 @@ sub: personajes prederminados
 
 ------
 
-**Parada** (1/ronda): 1 dificultad + 3 desafío. Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+**Parada** (1/ronda): 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
 
-**Escudo**: 1 dificultad + 3 desafío. Cancela un éxito (1/ronda). 
+**Escudo**: 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). 
 
-# Nivel 4-6
+## Nivel 4-6
+
+### Bárbaro (nivel 4)
 
 ### Veterano (nivel 5)
+
+**PV:** 7			**VT:** 10	 		**DEF: **6 (Placas +2)
+
+**FUE:** 4 	**DES: **1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
+
+------
+
+**Talentos:** Heroísmo 3, Percepción 1, Destrozar 1, Atletismo 2, Intimidación 1
+
+**Rangos:** Filos pesados II, Armaduras II, Combate doble I, Presencia I 
+
+**Resiste:** miedo 1, influenciar 1, fuego 2, aturdimiento 2
+
+**Movimiento:** 35 pies
+
+**Prioridad:** 2 (1 estándar + 1 movimiento)
+
+------
+
+**Ataque poderoso:** Añade un dado de dificultad al tiro de ataque para incrementar el daño base por 2.
+
+**Voz del comandante:** Todos los aliados a 30 pies añaden un dado de ventaja a su tiro de ataque.
+
+**Inspirar temor:** Los enemigos de nivel 3 o menos que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
+
+------
+
+**Espada larga** (acción estándar): 1 soltura + 3 habilidad, 3+Éxito daño cortante. Inflige una herida leve contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado.
+
+**Gran corte** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
+
+**Espada corta** (acción bonus): 1 soltura + 2 habilidad, 2+Éxito daño cortante. Incrementa el daño por 2 si el objetivo ya ha sido impactado por el arma principal. 
+
+------
+
+**Parada** (1/ronda): 1 desafío + 3 dificultad. Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+
+**Parada secundaria** (1/ronda): 1 desafío + 2 dificultad. Cancela un éxito (1/ronda). Esta reacción puede detener ataques que hayan sobrepasado exitosamente tu parada principal.
+
+### Caballero (nivel 5)
+
+## Nivel 7-9
+
+### Guerrero de élite (nivel 7)
+
+## Nivel 10-12
+
+### Paladín oscuro (nivel 10)
+
+### Campeón marcial (nivel 11)
