@@ -23,7 +23,7 @@ title: Pícaros
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para infligir una herida leve en una parte específica del cuerpo del objetivo.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
 
 ------
 
@@ -53,7 +53,7 @@ title: Pícaros
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para infligir una herida leve en una parte específica del cuerpo del objetivo.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
 
 **Puntería mortal:** Ignora los puntos de defensa que tenga un objetivo que se encuentra a menos de 15 pies. Puede añadir un dado de desventaja al tiro para ignorar la defensa de un enemigo que se encuentre a 30 pies.
 
@@ -89,7 +89,7 @@ title: Pícaros
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para infligir una herida leve en una parte específica del cuerpo del objetivo.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
 
 **Terreno predilecto:** Añade un dado de ventaja en todos sus tiros de habilidad y ataque además de un dado de desventaja en sus tiros defensivos si se encuentra en un terreno urbano. 
 
@@ -107,3 +107,20 @@ title: Pícaros
 
 **Esquiva:** 1 desafío + 3 dificultad. Cancela un éxito (1/ronda). Tira un dado de dificultad adicional esquivando ataques hechas por criaturas con tamaño superior.
 
+## Nivel 4-6
+
+### Capitán bandido (nivel 4)
+
+### Escaramuzador de élite (nivel 5)
+
+### Pistolero (nivel 6)
+
+## Nivel 7-9
+
+### Asesino (nivel 9)
+
+## Nivel 10-12
+
+## Nivel 13-15
+
+### Asesino filo sombrío (nivel 13)

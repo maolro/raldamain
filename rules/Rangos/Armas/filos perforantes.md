@@ -7,7 +7,7 @@ category: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque.
 
-<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Tus ataques infligen +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte especifica del objetivo recibiendo dado de dificultad como penalización (añade dos dados de dificultad si escoges la cabeza o los brazos) a cambio de infligir una herida leve en esa parte del cuerpo al impactar con tu ataque. A rango III inflinges una herida media y a rango V una herida grave. Si generas ventajas en un ataque furtivo y estás apuntando a una parte específica del cuerpo del objetivo puedes gastar 4 ventajas para incrementar el nivel de la herida permanente por 1.
+<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Tus ataques infligen +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte vulnerable del cuerpo de tu objetivo para sobrepasar su defensa. Esta habilidad te permite añadir un dado de dificultad adicional a tu tiro de ataque a cambio de ignorar un punto de defensa que tenga tu objetivo. Si logras reducir la defensa de tu objetivo a 0 con esta habilidad podrás infligirle una herida leve al impactar. A rango III puedes ignorar 2 puntos de defensa con esta habilidad y a rango V podrás ignorar 3 puntos.
 
 <u>Parada:</u> Puedes usar parada para protegerte de ataques enemigos. Esta habilidad funciona igual que parada de aptitud con filos pesados, pero al intentar bloquear un ataque poderoso el enemigo puede gastar 2 ventajas para romper tu arma. Una vez al turno puedes cancelar un éxito generado por el atacante (dos veces al turno a Rango III y tres veces al turno a Rango V)
 

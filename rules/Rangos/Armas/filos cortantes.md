@@ -15,7 +15,7 @@ Tiras un dado de soltura adicional en tiros de ataque.
 
 <u>Gran corte:</u> Puedes emplear una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o al atacar a marabuntas, pero no hará daño obligatorio. Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
 
-<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso, con el cual tirarás un dado de habilidad menos pero infligirás +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño adicional.
+<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso, con el cual añadirás un dado de dificultad a tu tiro de ataque pero infligirás +2 daño base al impactar. A rango IV puedes añadir otro dado de dificultad para infligir 2 puntos adicionales de daño.
 
 ## Rango III
 
