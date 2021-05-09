@@ -20,7 +20,7 @@ title: Hechiceros
 
 ## Niveles 7-9
 
-### Invocador (nivel 8)
+### Mago (nivel 8)
 
 ### Invocador de la tormenta (nivel 9)
 
