@@ -45,13 +45,15 @@ sub: personajes prederminados
 
 **Rangos:** [Contundentes](https://raldamain.com/rules/Rangos/Armas/contundentes.html) I, [Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii) I, [Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html) I
 
+**Resiste:** Efectos mentales 1, miedo 1
+
 **Movimiento:** 30 (40) pies
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 
 ------
 
-**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira-
+**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
 
 **[Ataque poderoso](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-i):** Reduce el tiro de ataque por un dado de habilidad para incrementar el daño base por 2.
 
@@ -61,7 +63,7 @@ sub: personajes prederminados
 
 ------
 
-**Parada** (1/ronda): 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+**Parada**: 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). 
 
 ### Infantería pesada (nivel 3)
 
@@ -87,13 +89,47 @@ sub: personajes prederminados
 
 ------
 
-**Parada** (1/ronda): 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+**Parada**: 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). 
 
 **Escudo**: 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). 
 
 ## Nivel 4-6
 
 ### Bárbaro (nivel 4)
+
+**PV:** 9			**VT:** 10	 		**DEF: **3 (Pieles, natural +2)
+
+**FUE:** 4 (5)	**DES: **2	**CON:** 3 (4)	**INT:** 1	**SAB:** 2	**CAR:** 1
+
+------
+
+**Talentos:** Heroísmo 3, Destrozar 1, Atletismo 1, Intimidación 1, Percepción 2
+
+**Rangos:** Filos pesados II, Ira I, Fortitud I, Escudo I
+
+**Resiste:** Efectos mentales 1, miedo 1
+
+**Movimiento:** 35 pies (45 pies)
+
+**Prioridad:** 2 (1 estándar + 1 movimiento)
+
+------
+
+**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
+
+**Ataque poderoso:** Añade un dado de dificultad al tiro de ataque para incrementar el daño base por 2.
+
+------
+
+**Hacha de batalla** (acción estándar): 1 soltura + 4 habilidad, 5+Éxito daño cortante. Inflige una herida leve contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado.
+
+**Gran corte** (acción de turno completo): Realiza un ataque con su hacha de batalla contra todos los enemigos en un arco de 15 pies.
+
+**Golpe de escudo** (acción bonus): 1 soltura + 3 habilidad, empuja 5 x éxito pies. Este ataque sólo puede realizarse al final de una carga. 2 VEN: El objetivo es tropezado.
+
+------
+
+**Escudo**: 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). 
 
 ### Veterano (nivel 5)
 
@@ -140,6 +176,8 @@ sub: personajes prederminados
 ## Nivel 7-9
 
 ### Guerrero de élite (nivel 7)
+
+
 
 ## Nivel 10-12
 
