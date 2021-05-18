@@ -25,7 +25,7 @@ El siguiente paso para crear un personaje es determinar los puntos de vida (PV),
 
 - **Vitalidad:** La Vitalidad mide la capacidad de aguante físico de un personaje. La Vitalidad es igual a 2 + CON + el nivel del personaje. La Vitalidad se reduce por el daño no-letal, además del daño frío y necrótico. Si la Vitalidad de un personaje llega a 0 este pasa a estar Fatigado y todo el daño no-letal que sufra pasará a ser daño letal. 
 
-- **Defensa:** La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu armadura natural (los humanos empiezan con 0 armadura natural). La armadura ligera te otorga DEF 1, la media DEF 2 y la pesada DEF 3. Más información sobre las Armaduras puede encontrarse en el apartado de Aptitud con Armaduras
+- **Defensa:** La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu armadura natural (los humanos empiezan con 0 armadura natural). La armadura ligera te otorga DEF 1, la media DEF 2 y la pesada DEF 3. Más información sobre las Armaduras puede encontrarse en el apartado de [aptitud con armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html)
 
   Esta es distinta de las Resistencias, las cuales reducen el daño que recibas de un tipo específico de ataque. Por ejemplo, la Resistencia al fuego reduce todo el daño fuego que recibas por un valor determinado
 

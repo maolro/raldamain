@@ -17,7 +17,7 @@ sub: personajes prederminados
 
 **Rangos:** Alabardas I, Armaduras I
 
-**Movimiento:** 35 pies
+**Movimiento:** 20 pies
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 
@@ -47,7 +47,7 @@ sub: personajes prederminados
 
 **Resiste:** Efectos mentales 1, miedo 1
 
-**Movimiento:** 30 (40) pies
+**Movimiento:** 15 (25) pies
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 
@@ -77,7 +77,7 @@ sub: personajes prederminados
 
 **Rangos:** Filos pesados I, Armaduras I, Escudo I, Fortitud I
 
-**Movimiento:** 35 pies
+**Movimiento:** 20 pies
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 
@@ -109,7 +109,7 @@ sub: personajes prederminados
 
 **Resiste:** Efectos mentales 1, miedo 1
 
-**Movimiento:** 35 pies (45 pies)
+**Movimiento:** 20 pies (30 pies)
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 
@@ -145,7 +145,7 @@ sub: personajes prederminados
 
 **Resiste:** miedo 1, influenciar 1, fuego 2, aturdimiento 2
 
-**Movimiento:** 35 pies
+**Movimiento:** 20 pies
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 

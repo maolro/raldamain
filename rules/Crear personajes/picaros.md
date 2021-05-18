@@ -111,6 +111,42 @@ title: Pícaros
 
 ### Capitán bandido (nivel 4)
 
+**PV:** 5			**VT:** 7	 		**DEF: **1 (Cuero)
+
+**FUE:** 1	**DES: **4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 4
+
+------
+
+**Talentos:** Engaño 2, Sigilo 2, Juego de manos 1, Percepción 1, Av. intenciones 1, Persuasión 1
+
+**Rangos:** Filos perforantes II, Reflejos I, Influenciar I, Presencia I
+
+**Resistencias:** Averiguar intenciones 1, miedo 1
+
+**Movimiento:** 30 pies
+
+**Prioridad:** 4 (1 estándar + 2 movimiento)
+
+------
+
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
+
+**Voz del comandante:** Todos los aliados a 30 pies añaden un dado de ventaja a su tiro de ataque.
+
+**Inspirar temor:** Los enemigos de nivel 3 o menos que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
+
+------
+
+**Espada corta** (acción de movimiento): 1 soltura + 3 habilidad, 2+Éxito daño perforante. 2 VEN: El objetivo no hace ruido al ser impactado, el espía se esconde si está fuera del campo de visión de su objetivo.
+
+**Enemigo predilecto** (acción de turno completo): Escoge a un objetivo como su enemigo predilecto. Recibe un dado de ventaja e inflige +1 daño en todos sus ataques contra dicho objetivo hasta que muera.
+
+------
+
+**Parada**: 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas (1/ronda).
+
+**Esquiva:** 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas (1/ronda). Tira un dado de dificultad adicional esquivando ataques hechas por criaturas con tamaño superior.
+
 ### Escaramuzador de élite (nivel 5)
 
 ### Pistolero (nivel 6)
