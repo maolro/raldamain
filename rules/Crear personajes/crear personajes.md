@@ -35,8 +35,10 @@ Los valores de PV y Vitalidad se reducen o aumentan si sufres algún cambio a tu
 
 Los [talentos](http://raldamain.com/rules/talentos.html) representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. 
 
+Determinados niveles de talento permiten aumentos a las estadísticas si son particularmente bajas. Estos aumentos estadísticos se aplicarán antes de los aumentos estadísticos por nivel en el proceso de creación de personajes.
+
 ## Rangos
 
 Los rangos forman la base del sistema Raldamain. Obtienes 2 rangos de tu elección a nivel 1, y a cada nivel posterior recibes un rango adicional en una habilidad. No puedes tener una habilidad a rango superior a tu nivel entre 2 (es decir, a nivel 5 no puedes tener una habilidad a Rango III). Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos.
 
-Una compilación completa de los rangos puede enconctarse [aquí](http://raldamain.com/rules/).
+Una compilación completa de los rangos puede encontrarse [aquí](http://raldamain.com/rules/).

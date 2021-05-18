@@ -32,7 +32,7 @@ title: Hechiceros
 
 ------
 
-**Parada mágica**: 1 desafío+ 2 dificultad . Cancela un éxito (1/ronda). Sólo puede defenderse de ataques elementales, mágicos o a distancia. 1 chi: incrementa el radio de parada por 5 pies.
+**Parada mágica**: 1 desafío+ 2 dificultad . Cancela un éxito o dos ventajas (1/ronda). Sólo puede defenderse de ataques elementales, mágicos o a distancia. 1 chi: incrementa el radio de parada por 5 pies.
 
 ##  Niveles 4-6
 
