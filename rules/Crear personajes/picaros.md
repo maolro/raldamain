@@ -77,7 +77,7 @@ title: Pícaros
 
 ------
 
-**Talentos:** Sigilo 1, Juego de manos 1, Engaño 2, Percepción 1, Averiguar intenciones 1, Persuasión 1
+**Talentos:** Sigilo 1, Juego de manos 1, Engaño 2, Percepción 2, Persuasión 1
 
 **Rangos:** Filos perforantes I, Reflejos I, Influenciar I, Rastrear I
 

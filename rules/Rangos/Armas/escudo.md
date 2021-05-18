@@ -5,7 +5,7 @@ category: Armas
 
 ## Rango I
 
-Tira un dado de desafío adicional en tiradas defensivas de Escudo. Una vez al turno puedes cancelar un éxito generado.
+Tira un dado de desafío adicional en tiradas defensivas de Escudo. Una vez al turno puedes cancelar un éxito o dos ventajas generadas por el atacante.
 
 <u>Ataque con escudo:</u> Como acción bonus puedes hacer un ataque con tu escudo. El tiro de ataque es igual a los dados defensivos de tu escudo y al impactar empujarás a tu objetivo 5 pies por éxito obtenido. Gasta dos ventajas generadas para tropezar y 4 para infligirle una herida leve (puedes infligir una herida media a rango III y una grave a rango V). Debes moverte como mínimo 5 pies para hacer un ataque con escudo y al realizar una carga harás 2 daño contundente adicional, el cual queda modificado por tu fuerza como si fuese un ataque físico. 
 
@@ -15,11 +15,11 @@ Tira un dado de desafío adicional en tiradas defensivas de Escudo. Una vez al t
 
 <u>Interceptar:</u> Puedes gastar una acción de movimiento para prepararte para inteceptar un ataque enemigo en cualquier momento de la ronda. Cuando uses interceptar, puedes cargar hacia un enemigo que se esté moviendo y hacerle un ataque con tu escudo. Si logras impactar, lo detendrás en el acto y podrás gastar 4 ventajas para aturdirlo. Al usar Interceptar saldrás inmediatamente de tu Forma defensiva.
 
-<u>Forma defensiva:</u> Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiendote en una barrera infranqueable. Entrar en forma defensiva acción bonus y otorga un dado de dificultad adicional en tiros de escudo, +1 FUE ,+1 CON y resistencia igual a tu rango contra maniobras de combate. Forma defensiva te hace 1 daño no-letal por turno y termina cuando te muevas o estés [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada). Esta habilidad solo puede usarse si llevas un escudo.
+<u>Forma defensiva:</u> Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiéndote en una barrera infranqueable. Entrar en forma defensiva acción de movimiento y mientras permanezcas en dicho estado incrementa tu FUE y CON por 1 además de otorgar un dado de dificultad adicional en tiros de escudo y resistencia igual a tu rango contra maniobras de combate. Forma defensiva te hace 1 daño no-letal por turno y termina cuando te muevas o estés [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada). Esta habilidad solo puede usarse si llevas un escudo.
 
 ## Rango III 
 
-Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cancelar un éxito dos veces al turno.
+Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cancelar un éxito o dos ventajas generadas dos veces al turno.
 
 <u>Carga poderosa:</u> Al impactar con una carga, puedes gastar 2 ventajas para [ralentizar](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) al objetivo durante 1 turno (4 ventajas para aturdirlo). Aumenta el daño base que infliges al cargar por 1 y al cargar haces que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino, dejándote via libre para atacar. A rango V vuelve a aumentar el daño de carga por 1.
 
@@ -33,7 +33,7 @@ Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cance
 
 ## Rango V
 
-Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cancelar un éxito tres veces al turno.
+Tira un dado de desafío adicional en tiradas defensivas de Escudo. Puedes cancelar un éxito o dos ventajas generadas tres veces al turno.
 
 <u>Maestría con escudo:</u> Entrar en forma defensiva te otorga un dado de dificultad adicional en tiros de escudo e incrementa los aumentos de estadísticas por 1, pudiendo exceder el 6. Das cubierta superior a aliados que protejas con barrera móvil y puedes moverte 5 pies como reacción para proteger a un aliado.
 
