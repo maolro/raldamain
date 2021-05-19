@@ -1,15 +1,15 @@
 ---
 title: Luchadores
-sub: personajes prederminados
+sub: personajes predeterminados
 ---
 
 ## Nivel 1-3
 
 ### Soldado (nivel 1)
 
-**PV:** 5			**VT:** 5	 		**DEF: **3 (Pechera)
+**PV:** 5			**VT:** 5	 		**DEF:** 3 (Pechera)
 
-**FUE:** 3 	**DES: **2	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 3 	**DES:** 1	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
@@ -17,7 +17,7 @@ sub: personajes prederminados
 
 **Rangos:** Alabardas I, Armaduras I
 
-**Movimiento:** 20 pies
+**Movimiento:** 15 pies
 
 **Prioridad:** 2 (1 estándar + 1 movimiento)
 
@@ -25,7 +25,7 @@ sub: personajes prederminados
 
 **Lanza** (acción estándar): 1 soltura + 2 habilidad, 3+Éxito daño contundente. 1 VEN: El objetivo es empujado 5 pies (cae al suelo si tiene FUE inferior a 4).
 
-**Preparación contra cargas** (acción de movimiento): El soldado se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +2 daño.
+**Preparación contra cargas** (acción de movimiento): El soldado se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con s0u arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +2 daño.
 
 ------
 
@@ -33,11 +33,39 @@ sub: personajes prederminados
 
 ### Guerrero tribal (nivel 1)
 
+**PV:** 6			**VT:** 6	 		**DEF:** 1 (Pieles)
+
+**FUE:** 2 (3) 	**DES:** 2	**CON:** 2 (3)	**INT:** 1	**SAB:** 2	**CAR:** 1
+
+------
+
+**Talentos:** Percepción 1, Supervivencia 1, Sigilo 1, Atletismo 1
+
+**Rangos:** Alabardas I, Ira I
+
+**Movimiento:** 30 pies
+
+**Prioridad:** 2 (1 estándar + 1 movimiento)
+
+------
+
+**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
+
+------
+
+**Lanza** (acción estándar): 1 soltura + 2 habilidad, 3+Éxito daño contundente. 1 VEN: El objetivo es empujado 5 pies (cae al suelo si tiene FUE inferior a 4). Esta arma puede arrojarse a una distancia máxima de 20 pies (preparación contra cargas se aplica).
+
+**Preparación contra cargas** (acción de movimiento): El guerrero tribal se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +2 daño.
+
+------
+
+**Parada**: 1 desafío+ 2 dificultad . Cancela un éxito o dos ventajas (1/ronda). Tira un dado de dificultad menos defendiéndote de enemigos adyacentes
+
 ### Matón (nivel 2)
 
-**PV:** 8			**VT:** 8	 		**DEF: **3 (cuero, armadura natural +2)
+**PV:** 8			**VT:** 8	 		**DEF:** 3 (cuero, armadura natural +2)
 
-**FUE:** 3 (4) 	**DES: **2	**CON:** 3 (4)	**INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 3 (4) 	**DES:** 2	**CON:** 3 (4)	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
@@ -67,9 +95,9 @@ sub: personajes prederminados
 
 ### Infantería pesada (nivel 3)
 
-**PV:** 8			**VT:** 9	 		**DEF: **6 (Cota de malla, armadura natural +2)
+**PV:** 8			**VT:** 9	 		**DEF:** 6 (Cota de malla, armadura natural +2)
 
-**FUE:** 4 	**DES: **0	**CON:** 4	**INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 4 	**DES:** 0	**CON:** 4	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
@@ -97,9 +125,9 @@ sub: personajes prederminados
 
 ### Bárbaro (nivel 4)
 
-**PV:** 9			**VT:** 10	 		**DEF: **3 (Pieles, natural +2)
+**PV:** 9			**VT:** 10	 		**DEF:** 3 (Pieles, natural +2)
 
-**FUE:** 4 (5)	**DES: **2	**CON:** 3 (4)	**INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 4 (5)	**DES:** 2	**CON:** 3 (4)	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
@@ -133,9 +161,9 @@ sub: personajes prederminados
 
 ### Veterano (nivel 5)
 
-**PV:** 7			**VT:** 10	 		**DEF: **6 (Placas +2)
+**PV:** 7			**VT:** 10	 		**DEF:** 6 (Placas +2)
 
-**FUE:** 4 	**DES: **1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
+**FUE:** 4 	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
 
 ------
 
@@ -173,9 +201,9 @@ sub: personajes prederminados
 
 ### Caballero (nivel 5)
 
-**PV:** 7			**VT:** 10	 		**DEF: **6 (Placas +2)
+**PV:** 7			**VT:** 10	 		**DEF:** 6 (Placas +2)
 
-**FUE:** 4 	**DES: **1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
+**FUE:** 4 	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
 
 ------
 
@@ -217,9 +245,9 @@ sub: personajes prederminados
 
 ### Guerrero de élite (nivel 7)
 
-**PV:** 12			**VT:** 14	 		**DEF: **9 (Placas +2, armadura natural +3)
+**PV:** 12			**VT:** 14	 		**DEF:** 9 (Placas +2, armadura natural +3)
 
-**FUE:** 5 (6)	**DES: **0 (1)	**CON:** 5 (6)	**INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 5 (6)	**DES:** 0 (1)	**CON:** 5 (6)	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
@@ -257,19 +285,19 @@ sub: personajes prederminados
 
 ### Paladín (nivel 10)
 
-**PV:** 16			**VT:** 18	 		**DEF: **12/15 (Placas +3, armadura natural +4/5, resistencia 1/3)
+**PV:** 13			**VT:** 18	 		**DEF:** 9 / 11 (Placas +4, resistencia 1 / 3)
 
-**FUE:** 6 (7)	**DES: **0 (1)	**CON:** 6 (7)	**INT:** 1	**SAB:** 3	**CAR:** 2
+**FUE:** 6 (7)	**DES:** 0 (1)	**CON:** 6 (7)	**INT:** 1	**SAB:** 3	**CAR:** 2
 
 ------
 
 **Talentos:** atletismo 3, heroísmo 3, persuasión 2, primeros auxilios 3, destrozar 1, intimidar 1
 
-**Rangos:** Filos pesados III, Armaduras II, Escudo II, Guerrero divino III, Fortitud I
+**Rangos:** Filos pesados III, Armaduras III, Escudo II, Guerrero divino III
 
 **Movimiento:** 15 pies (25 pies forma defensiva)
 
-**Resistencias:** maniobras de combate 2 (forma defensiva), ataques físicos 3, fuego 2, aturdimiento 2, magia 2
+**Resistencias:** maniobras de combate 2 (forma defensiva), ataques físicos 1 (3), fuego 3, aturdimiento 3, magia 5
 
 **Prioridad:** 0 (1 estándar + 1 movimiento)
 
@@ -281,7 +309,7 @@ sub: personajes prederminados
 
 **Guardián de la fe:** Incrementa su FUE y CON por 1 e incrementa su resistencia por 2. Cada turno en estado de guardián de la fe le hace 1 daño no-letal.
 
-**Plegaria: **Todos los aliados de la fe reciben +1 DEF y añaden un dado de ventaja a sus tiros de ataque.
+**Plegaria:** Todos los aliados de la fe reciben +1 DEF y añaden un dado de ventaja a sus tiros de ataque.
 
 ------
 
@@ -295,6 +323,8 @@ sub: personajes prederminados
 
 ------
 
-**Parada**: 2 desafío + 4 (5) dificultad . Cancela un éxito o dos ventajas (2/ronda). 
+**Parada**: 2 desafío + 4 (5) dificultad. Cancela un éxito o dos ventajas (2/ronda). 
 
 **Escudo de torre**: 2 desafío + 3 (4) dificultad . Cancela un éxito o dos ventajas (3/ronda). 
+
+**Resistir armas** (1/turno): Reduce el nivel de una herida permanente sufrida por un paso. 

@@ -6,9 +6,9 @@ title: Hechiceros
 
 ### Estudiante de magia (nivel 1)
 
-**PV:** 4			**VT:** 4	 		**DEF: **0
+**PV:** 4			**VT:** 4	 		**DEF:** 0
 
-**FUE:** 1 	**DES: **2	**CON:** 1	**INT:** 3	**SAB:** 3	**CAR:** 1
+**FUE:** 1 	**DES:** 2	**CON:** 1	**INT:** 3	**SAB:** 3	**CAR:** 1
 
 ------
 
@@ -42,9 +42,9 @@ title: Hechiceros
 
 ### Mago (nivel 8)
 
-**PV:** 4			**VT:** 4	 		**DEF: **0
+**PV:** 7			**VT:** 12	 		**DEF:** 4
 
-**FUE:** 1 	**DES: **4	**CON:** 2	**INT:** 6	**SAB:** 3	**CAR: **1
+**FUE:** 1 	**DES:** 4	**CON:** 2	**INT:** 6	**SAB:** 3	**CAR: **1
 
 ------
 
@@ -54,11 +54,13 @@ title: Hechiceros
 
 **Movimiento:** 15 pies
 
+**Resistencia:** magia 4
+
 **Prioridad:** 4 (1 estándar + 2 movimiento)
 
 ------
 
-**Reserva mágica:** Tiene un número de chi en reserva igual a 3. El chi puede gastarse para activar una multitud de efectos mágicos.
+**Reserva mágica:** Tiene un número de chi en reserva igual a 13. El chi puede gastarse para activar una multitud de efectos mágicos.
 
 ------
 
@@ -66,7 +68,7 @@ title: Hechiceros
 
 **Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 3), y cada punto gastado incrementará el daño base por 1 y el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
 
-**Descarga de energía** (acción estándar, 1 chi): 1 soltura + 2 habilidad, 4+Éxito daño de fuerza. Afecta a todas las criaturas en un cono de 20 pies.
+**Descarga de energía** (acción estándar, 1 chi): 2 soltura + 4 habilidad, 4+Éxito daño de fuerza. Afecta a todas las criaturas en un cono de 20 pies.
 
 **Muro de energía** (acción estándar): Crea un muro de un elemento de su elección de 30 pies de largo y 15 de alto. Permanecerá hasta que pierda la concentración y formar otro le causará 2 daño no-letal al turno.
 
@@ -74,7 +76,7 @@ title: Hechiceros
 
 ------
 
-**Parada mágica**: 1 desafío+ 2 dificultad . Cancela un éxito (1/ronda). Sólo puede defenderse de ataques elementales, mágicos o a distancia. 1 chi: incrementa el radio de parada por 5 pies.
+**Parada mágica**: 2 desafío + 4 dificultad . Cancela un éxito o dos ventajas (2/ronda). Sólo puede defenderse de ataques elementales, mágicos o a distancia. 1 chi: incrementa el radio de parada por 5 pies.
 
 ## Niveles 10-12
 

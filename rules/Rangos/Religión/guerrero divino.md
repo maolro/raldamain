@@ -15,7 +15,7 @@ Tira un dado de desafío adicional en tiros defensivos de sabiduría.
 
 <u>Arma sacra:</u> Tu arma hace +2 daño base contra criaturas bendecidas por dioses enemigos. Con esta habilidad puedes afectar a sacerdotes, guerreros divinos y a criaturas monstruosas asociadas con religiones enemigas. Al impactar a un enemigo de la fe puedes gastar 2 ventajas para impedir que se sane durante un turno.
 
-<u>Armadura consagrada:</u> Tu armadura está bendecida por tu dios. Una armadura bendecida te da +1 DEF y te protege de daño mágico. Si no tienes ningún rango en [Armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html), obtienes resistencia mágica igual a tu rango de guerrero divino.
+<u>Armadura consagrada:</u> Tu armadura está bendecida por tu dios. Una armadura bendecida te da +1 DEF y e incrementa la resistencia mágica que te otorga por 2. Si no tienes ningún rango en [Armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html), obtienes resistencia mágica igual a tu rango de guerrero divino.
 
 ## Rango III
 

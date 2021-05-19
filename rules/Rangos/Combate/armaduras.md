@@ -23,7 +23,7 @@ category: Combate
 
 # Tipos de armadura
 
-La armadura un objeto indispensable para todo guerrero, marcando en muchos casos la fina frontera entre la vida y la muerte. Las armaduras otrogarán un bonificador a la defensa según la dureza y proteción que estas ofrecen, el cual se acumula con la armadura natural. Un personaje con armadura no puede sufrir heridas permanentes si el daño es reducido a 0, un hecho que no se produce con la resistencia o la armadura natura. No obstante, las armaduras más pesadas dificultan los movimientos diestros y la concentración, añadiendo un número de dados de dificultad a tiros de reflejos, magia arcana o magia elemental igual al valor del penalizador. Los tipos más comunes de armadura se encuentran en la siguiente tabla:
+La armadura un objeto indispensable para todo guerrero, marcando en muchos casos la fina frontera entre la vida y la muerte. Las armaduras otorgarán un bonificador a la defensa según la dureza y protección que estas ofrecen, el cual se acumula con la armadura natural. Un personaje con armadura no puede sufrir heridas permanentes si el daño es reducido a 0, un hecho que no se produce con la resistencia o la armadura natura. No obstante, las armaduras más pesadas dificultan los movimientos diestros y la concentración, añadiendo un número de dados de dificultad a tiros de reflejos, magia arcana o magia elemental igual al valor del penalizador. Además, un personaje que posea un penalizador por armaduras perderá los efectos de todas las habilidades de reflejos que tenga. Los tipos más comunes de armadura se encuentran en la siguiente tabla:
 
 | Tipo                                  | Bonificador de defensa | Penalizador |
 | ------------------------------------- | ---------------------- | ----------- |
