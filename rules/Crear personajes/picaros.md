@@ -7,9 +7,9 @@ title: Pícaros
 
 ### Bandido (nivel 1)
 
-**PV:** 5			**VT:** 5	 		**DEF: **1 (Cuero)
+**PV:** 5			**VT:** 5	 		**DEF:** 1 (Cuero)
 
-**FUE:** 1	**DES: **3	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 2
+**FUE:** 1	**DES:** 3	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 2
 
 ------
 
@@ -37,9 +37,9 @@ title: Pícaros
 
 ### Cazador (nivel 2)
 
-**PV:** 5			**VT:** 6	 		**DEF: **1 (Cuero)
+**PV:** 5			**VT:** 6	 		**DEF:** 1 (Cuero)
 
-**FUE:** 1	**DES: **4	**CON:** 2	**INT:** 1	**SAB:** 3	**CAR:** 1
+**FUE:** 1	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 3	**CAR:** 1
 
 ------
 
@@ -71,9 +71,9 @@ title: Pícaros
 
 ### Espía (nivel 3)
 
-**PV:** 5			**VT:** 7	 		**DEF: **1 (Cuero)
+**PV:** 5			**VT:** 7	 		**DEF:** 1 (Cuero)
 
-**FUE:** 1	**DES: **4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 3
+**FUE:** 1	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 3
 
 ------
 
@@ -111,9 +111,9 @@ title: Pícaros
 
 ### Capitán bandido (nivel 4)
 
-**PV:** 5			**VT:** 7	 		**DEF: **1 (Cuero)
+**PV:** 5			**VT:** 7	 		**DEF:** 1 (Cuero)
 
-**FUE:** 1	**DES: **4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 4
+**FUE:** 1	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 4
 
 ------
 
@@ -159,9 +159,9 @@ title: Pícaros
 
 ### Asesino (nivel 10)
 
-**PV:** 8			**VT:** 14	 		**DEF: **1 (Cuero)
+**PV:** 8			**VT:** 14	 		**DEF:** 1 (Cuero)
 
-**FUE:** 1	**DES: **6	**CON:** 2	**INT:** 1	**SAB:** 3	**CAR:** 4
+**FUE:** 1	**DES:** 6	**CON:** 2	**INT:** 1	**SAB:** 3	**CAR:** 4
 
 ------
 
@@ -189,7 +189,7 @@ title: Pícaros
 
 **Rastreador experto** (acción de movimiento): Reduce los dados de desventaja que tiras por ocultamiento por 1 en tu siguiente ataque. Si escoges a tu enemigo predilecto, estos quedarán reducidos hasta que salga de tu campo de visión.
 
-**Lengua de plata** (acción estándar):  1 soltura + 3 habilidad, incrementa la actitud de tu objetivo por un paso.
+**Lengua de plata** (acción están	dar):  1 soltura + 3 habilidad, incrementa la actitud de tu objetivo por un paso.
 
 **Salto acrobático** (acción estándar): El asesino salta 30 pies sin provocar ataques de oportunidad.
 
