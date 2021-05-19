@@ -3,6 +3,8 @@ title: Luchadores
 sub: personajes predeterminados
 ---
 
+En esta página puede encontrarse una gran variedad de estadísticas de personajes predeterminados ubicados en la categoría de luchadores, caracterizados por su empleo de la fuerza de armas para derrotar al enemigo. 
+
 ## Nivel 1-3
 
 ### Soldado (nivel 1)
