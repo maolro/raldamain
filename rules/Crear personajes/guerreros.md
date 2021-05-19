@@ -197,9 +197,9 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Parada** (1/ronda): 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+**Parada** (1/ronda): 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas (1/ronda). 
 
-**Parada secundaria** (1/ronda): 1 desafío + 2 dificultad. Cancela un éxito o dos ventajas (1/ronda). Esta reacción puede detener ataques que hayan sobrepasado exitosamente tu parada principal.
+**Parada secundaria** (1/ronda): 1 desafío + 2 dificultad. Cancela un éxito o dos ventajas. Esta reacción puede detener ataques que hayan sobrepasado exitosamente tu parada principal.
 
 ### Caballero (nivel 5)
 
@@ -247,7 +247,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ### Guerrero de élite (nivel 7)
 
-**PV:** 12			**VT:** 14	 		**DEF:** 9 (Placas +2, armadura natural +3)
+**PV:** 13			**VT:** 14	 		**DEF:** 8 (Placas +2, armadura natural +2)
 
 **FUE:** 5 (6)	**DES:** 0 (1)	**CON:** 5 (6)	**INT:** 1	**SAB:** 2	**CAR:** 1
 

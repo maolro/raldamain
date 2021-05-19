@@ -17,13 +17,13 @@ title: Pícaros
 
 **Rangos:** Filos perforantes I, Reflejos I
 
-**Movimiento:** 30 pies
+**Movimiento:** 15 pies
 
 **Prioridad:** 3 (1 estándar + 2 movimiento)
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar dos puntos de defensa que tenga su objetivo.
 
 ------
 
@@ -47,13 +47,13 @@ title: Pícaros
 
 **Rangos:** Arcos I, Rastrear I, Reflejos I
 
-**Movimiento:** 30 pies
+**Movimiento:** 15 pies
 
 **Prioridad:** 4 (1 estándar + 2 movimiento)
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar dos puntos de defensa que tenga su objetivo.
 
 **Puntería mortal:** Ignora los puntos de defensa que tenga un objetivo que se encuentra a menos de 15 pies. Puede añadir un dado de desventaja al tiro para ignorar la defensa de un enemigo que se encuentre a 30 pies.
 
@@ -83,7 +83,7 @@ title: Pícaros
 
 **Resistencias:** Averiguar intenciones 1
 
-**Movimiento:** 30 pies
+**Movimiento:** 15 pies
 
 **Prioridad:** 4 (1 estándar + 2 movimiento)
 
@@ -111,15 +111,15 @@ title: Pícaros
 
 ### Capitán bandido (nivel 4)
 
-**PV:** 5			**VT:** 7	 		**DEF:** 1 (Cuero)
+**PV:** 7			**VT:** 9	 		**DEF:** 3 (cuero tachonado + 1)
 
-**FUE:** 1	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 4
+**FUE:** 1	**DES:** 4	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
 
 ------
 
-**Talentos:** Engaño 2, Sigilo 2, Juego de manos 1, Percepción 1, Av. intenciones 1, Persuasión 1
+**Talentos:** engaño 2, sigilo 2, juego de manos 1,percepción 1, averiguar intenciones 1, persuasión 1
 
-**Rangos:** Filos perforantes II, Reflejos I, Influenciar I, Presencia I
+**Rangos:** Filos perforantes II, Reflejos I, Armaduras I, Presencia I
 
 **Resistencias:** Averiguar intenciones 1, miedo 1
 
@@ -129,7 +129,7 @@ title: Pícaros
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar dos puntos de defensa que tenga su objetivo.
 
 **Voz del comandante:** Todos los aliados a 30 pies añaden un dado de ventaja a su tiro de ataque.
 
@@ -137,9 +137,7 @@ title: Pícaros
 
 ------
 
-**Espada corta** (acción de movimiento): 1 soltura + 3 habilidad, 2+Éxito daño perforante. 2 VEN: El objetivo no hace ruido al ser impactado, el espía se esconde si está fuera del campo de visión de su objetivo.
-
-**Enemigo predilecto** (acción de turno completo): Escoge a un objetivo como su enemigo predilecto. Recibe un dado de ventaja e inflige +1 daño en todos sus ataques contra dicho objetivo hasta que muera.
+**Espada corta** (acción de movimiento): 1 soltura + 3 habilidad, 2+Éxito daño perforante. 2 VEN: El objetivo no hace ruido al ser impactado, el capitán bandido se esconde si está fuera del campo de visión de su objetivo, el objetivo es fintado.
 
 ------
 
@@ -149,7 +147,41 @@ title: Pícaros
 
 ### Escaramuzador de élite (nivel 5)
 
-### Pistolero (nivel 6)
+**PV:** 6			**VT:** 9	 		**DEF:** 1 (Cuero)
+
+**FUE:** 2	**DES:** 5	**CON:** 2	**INT:** 1	**SAB:** 3	**CAR:** 1
+
+------
+
+**Talentos:** sigilo 3, supervivencia 2, acrobacias 1, atletismo 2
+
+**Rangos:** Filos ligeros II, Combate doble I, Rastrear I, Reflejos I, 
+
+**Movimiento:** 20 pies
+
+**Prioridad:** 5 (1 estándar + 2 movimiento)
+
+------
+
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar dos puntos de defensa que tenga su objetivo.
+
+**Terreno predilecto:** Añade un dado de ventaja en todos sus tiros de habilidad y ataque además de un dado de desventaja en sus tiros defensivos si se encuentra en su terreno predilecto (escoge uno entre bosque, pradera, ártico, urbano, subterráneo, montaña o desierto).
+
+------
+
+**Espada corta** (acción de movimiento): 1 soltura + 4 habilidad, 2+Éxito daño perforante. 2 VEN: El objetivo no hace ruido al ser impactado, el escaramuzador de élite se esconde si está fuera del campo de visión de su objetivo, el objetivo es fintado.
+
+**Espada corta** (acción bonus): 1 soltura + 3 habilidad, 2+Éxito daño perforante. Incrementa el daño base por 2 si el objetivo ya ha sido impactado por el arma principal. 
+
+**Enemigo predilecto** (acción de turno completo): Escoge a un objetivo como su enemigo predilecto. Recibe un dado de ventaja e inflige +1 daño en todos sus ataques contra dicho objetivo hasta que muera.
+
+------
+
+**Esquiva:** 1 desafío + 4 dificultad. Cancela un éxito o dos ventajas (1/ronda). Tira un dado de dificultad adicional esquivando ataques hechas por criaturas con tamaño superior.
+
+**Parada**: 1 desafío + 4 dificultad. Cancela un éxito o dos ventajas (1/ronda).
+
+**Parada secundaria** (1/ronda): 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas. Esta reacción puede detener ataques que hayan sobrepasado exitosamente la parada principal.
 
 ## Nivel 7-9
 
@@ -177,7 +209,7 @@ title: Pícaros
 
 ------
 
-**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar dos puntos de defensa que tenga tu objetivo hasta dos veces por ataque.
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar dos puntos de defensa que tenga su objetivo.
 
 **Terreno predilecto:** Añade un dado de ventaja en todos sus tiros de habilidad y ataque además de un dado de desventaja en sus tiros defensivos si se encuentra en un terreno urbano. 
 
