@@ -3,6 +3,8 @@ title: Nigromancia
 category: Ocultismo
 ---
 
+# Rangos
+
 ## Rango I
 
 Tira un dado de soltura adicional en tiros de nigromancia. Sientes la presencia de no-muertos en un área de 90 pies.
@@ -29,7 +31,7 @@ Tira un dado de soltura adicional en tiros de nigromancia. El daño base de Toqu
 
 Usar toque necrótico te cuesta una acción de movimiento.
 
-<u>Crear no muerto:</u> Como acción de turno completo, anima un gran número de cadáveres para transformarlos en no-muertos bajo tu control. Puedes elegir crear 2-5 gules, 1-3 campeones esqueléticos/zombie lord o 3-18 Zombies/esqueletos. Además de menores, puedes comandar también un número de no muertos mayores igual a tu rango de nigromancia +2 (6 a rango IV).
+<u>Crear no muerto:</u> Como acción de turno completo, anima un gran número de cadáveres para transformarlos en no-muertos bajo tu control. Puedes elegir crear 2-5 gules, 1-3 campeones esqueléticos o campeones zombis, o 3-18 zombis o esqueletos. Además de menores, puedes comandar también un número de no muertos superiores igual a tu rango de nigromancia +2 (6 a rango IV).
 
 <u>Tormenta de energía negativa</u>: Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual infligirá +2 daño base. Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. 
 
@@ -46,3 +48,86 @@ Tira un dado de soltura adicional en tiros de nigromancia. El daño base de Toqu
 <u>Crear no muerto superior:</u> Conoces los rituales para convertir cadáveres en no muertos mas poderosos. Utilizando un ritual de duración igual a un descanso corto puedes transformar a un cadáver, un no-muerto menor o una persona voluntaria en un no-muerto superior. Si resucritas a una criatura que tenga rangos de habilidad puedes hacer que conserve un número de rangos igual a tu nivel - 2. No puedes tener bajo tu control más de 4 no-muertos superiores. 
 
 <u>Toque de la muerte:</u> El daño necrótico que infliges con toque necrótico contará como letal, afectando a los PV en lugar de la vitalidad. Al impactar con tu toque necrótico puedes gastar 4 ventajas generadas para matar instantáneamente a tu objetivo si tiene 6 o menos PV. Cuando mates a un objetivo con toque necrótico puedes transformárlo en un no-muerto menor, evitando así que sea resucitado. 
+
+# No-muertos
+
+Un no-muerto es un cadáver que ha recibido una semblanza de vida por magia oscura. La mayoría de no-muertos, conocidos como no-muertos inferiores, carecen de todo recuerdo de su vida pasada y viven sólo para consumir a los seres vivos (por ello perderán todos los rangos, talentos y habilidades innatas que tengan). Algunos no-muertos son capaces de conservar su inteligencia y habilidades pasadas, pero la magia oscura empleada para resucitarlos corrompe su alma y les conduce hacia la maldad. 
+
+Dada su condición todos los no-muertos no necesitan comer, respirar ni dormir. Se nutren únicamente de la energía vital de las personas y el caso que no consuman la cantidad adecuada entrarán en un estado letárgico (esto funciona como el efecto de estado ralentizado) hasta que se alimenten. Los no-muertos son sanados por el daño necrótico en lugar de ser heridos y tienen inmunidad al veneno, las enfermedades, los efectos mentales, el miedo y la fatiga. Por estos motivos los no-muertos carecen de una estadística de vitalidad, causando que no puedan sufrir daño no-letal. No obstante, son vulnerables al daño radiante y muy sensibles a la luz brillante, recibiendo el efecto de estado enfermado si se encuentran en esta. Los tipos más comunes de no-muertos mayores y menores son los siguientes.
+
+## No-muertos inferiores
+
+### Zombi
+
+Un cadáver animado por magia oscura, el zombi es el tipo más sencillo de no-muerto que se puede formar. Los zombis viven sólo para consumir la carne de los vivos y son incapaces de emplear armas o realizar labores que requieran un nivel mínimo de inteligencia. 
+
+Una criatura transformada en un zombi reducirá sus estadísticas de inteligencia y carisma a 0 además de recibir las mejoras corporales golpe y mordisco (no sumará ningún dado de soltura). También su cuerpo se volverá más resistente, recibiendo así 2 PV adicionales e incrementando su armadura natural por 2. Debido a su condición como cadáveres los zombis se mueven de una manera lenta y torpe, reduciendo así su estadística de DES por 2 (mínimo 0) y su movimiento por 5 pies. Algunas variantes de zombi pueden tener mutaciones y habilidades únicas, las cuales podrán otorgarse siempre y cuando cuenten con el consentimiento del máster.
+
+Las estadísticas básicas de un zombi son las siguientes:
+
+**PV:** 8, **VT:** -, **DEF:** 2
+
+**FUE** 3, **DES** 0, **CON** 3, **INT** 0, **SAB** 1, **CAR** 0
+
+------
+
+**Movimiento:** 10 pies
+
+**Prioridad**: 0 (1 estándar + 1 movimiento)
+
+------
+
+**Golpe** (acción de movimiento): 3 habilidad, 1+éxito daño contundente.
+
+**Mordisco** (acción bonus): 3 habilidad, 2+éxito daño perforante. Este ataque sólo puede usarse contra criaturas agarradas o incapacitadas
+
+### Esqueleto
+
+La base de todo ejército de no-muertos, los esqueletos compensan su relativa fragilidad con una mayor inteligencia y la capacidad de utilizar armas. Los esqueletos se forman a partir de numerosos huesos humanos o animales ligados con energía nigromántica, perdiendo su identidad previa para transformarse en un servidor leal. Una criatura transformada en un esqueleto perderá todos los incrementos de estadística que tenga y sus estadísticas de inteligencia y carisma se reducirán a 0. Incrementará además su armadura natural por 1 y recibirá la mejora corporal garra (no recibirá ningún dado de soltura). A causa que están formados por huesos los esqueletos son particularmente vulnerables al daño contundente, causando que las heridas permanentes producidas por el daño contundente sean de un nivel superior. Algunas variantes de esqueleto pueden tener mutaciones y habilidades únicas, las cuales podrán otorgarse siempre y cuando cuenten con el consentimiento del máster.
+
+Las estadísticas básicas de un esqueleto son las siguientes:
+
+**PV:** 5, **VT:** -, **DEF:** 2 (restos de armadura, natural + 1)
+
+**FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 0
+
+------
+
+**Movimiento:** 15 pies
+
+**Prioridad**: 2 (1 estándar + 1 movimiento)
+
+------
+
+**Garra** (acción de movimiento): 3 habilidad, 1+éxito daño cortante.
+
+**Arma** (acción estándar): 3 habilidad, 3+éxito daño perforante, contundente o cortante.
+
+### Gul degenerado
+
+Las estadísticas básicas de un gul degenerado son las siguientes:
+
+**PV:** 8, **VT:** -, **DEF:** 2
+
+**FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 0
+
+------
+
+**Movimiento:** 10 pies
+
+**Prioridad**: 2 (1 estándar + 1 movimiento)
+
+------
+
+**Garra** (acción de movimiento): 3 habilidad, 1+éxito daño cortante. 2 VEN: El objetivo sufre sangrado o es afectado por veneno  paralizante.
+
+**Mordisco** (acción bonus): 3 habilidad, 2+éxito daño perforante. Este ataque sólo puede usarse contra criaturas agarradas o incapacitadas. 2 VEN: El objetivo es infectado con la maldición del gul.
+
+## No-muertos superiores
+
+### Engendro vampírico
+
+Para formar un engendro vampírico es necesario añadirle dos grados de la maldición del vampiro a la criatura base. Si el engendro alcanza el rango 3 de la maldición entonces abandonará tu control de inmediato.
+
+### Gul puro
+
