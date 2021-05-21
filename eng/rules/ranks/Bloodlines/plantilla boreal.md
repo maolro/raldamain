@@ -1,7 +1,7 @@
 ---
-title: Plantilla Boreal
-main: Rangos
-sub: Plantillas
+title: Boreal bloodline
+main: Ranks
+sub: Bloodlines
 ---
 
 ## Rango I
