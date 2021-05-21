@@ -47,7 +47,7 @@ Esta es una lista de los tipos más comunes de agente y el nivel con el que cuen
 
 **Sectario:** Un sectario es un practicante de una fe esotérica o prohibida canalizar el oscuro poder de su patrón. Estos son individuos de nivel 3 a 5 que frecuentemente poseen rangos en Guerrero divino, Magia divina y una ascendencia relacionada con su patrón, siendo las más comunes Ascendencia infernal y Ascendencia abisal (algunos sectarios pueden tener rangos en magia arcana o elemental según la naturaleza de su ascendencia). Contratar a sectarios puede tener repercusiones legales en tu organización si se encuentra en un estado confesional y podría atraer la influencia de su oscuro patrón a tu organización.
 
-**Sacerdote:** Un sacerdote es clérigo de rango intermedio en una religión dedicado a realizar ritos religiosos para el pueblo llano y transmitir las enseñanzas de su fe. Acostumran a ser de nivel 3 a 5 y poseen rangos en Guerrero divino, Magia divina, 
+**Sacerdote:** Un sacerdote es clérigo de rango intermedio en una religión dedicado a realizar ritos religiosos para el pueblo llano y transmitir las enseñanzas de su fe. Acostumbran a ser de nivel 3 a 5 y poseen rangos en Guerrero divino, Magia divina, 
 
 **Mercenario:** Un mercenario es un soldado profesional que ofrece sus servicios a cambio de una paga. Cuenta con mejor entrenamiento y capacidades que un soldado normal, haciendo que sea posible destacarlo a misiones más arriesgadas. Un mercenario es un agente de nivel 3 a 5 que tendrá rangos relacionados con aptitud con armas o combate, siendo los más comunes Armaduras, Fortitud, Reflejos, Rastrear, Presencia e Ira.
 
