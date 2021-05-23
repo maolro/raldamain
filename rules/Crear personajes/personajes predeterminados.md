@@ -29,7 +29,7 @@ En esta categoría se encuentran todos los tipos de personaje que utilizan la fu
 - <u>Talentos:</u> Heroísmo, Acrobacias, Atletismo, Percepción
 - <u>Rangos:</u> Artes marciales, Reflejos, Fortitud, Ascendencia (Fuego, Tierra, Aire, Agua, Sombría, Celestial)
 
-## Pícaros
+## [Pícaros](https://raldamain.com/rules/Crear%20personajes/picaros.html)
 
 En esta categoría se encuentran los tipos de personaje que emplean su destreza para acabar con peligros de forma rápida y súbita, buscando siempre obtener la mayores ventajas en el campo de batalla.
 
@@ -48,7 +48,7 @@ En esta categoría se encuentran los tipos de personaje que emplean su destreza 
 - <u>Talentos:</u> Engaño, Acrobacias, Estudio, Sigilo
 - <u>Rangos:</u> Magia arcana (Ilusoria, Espacial, Temporal), Reflejos, Aptitud con armas (Filos ligeros, Arcos, Dos armas), Influenciar
 
-## Hechiceros
+## [Hechiceros](https://raldamain.com/rules/Crear%20personajes/hechiceros.html)
 
 En esta categoría se encuentran los tipos de personaje que utilizan una variedad de hechizos y habilidades sobrenaturales para obtener poder, estudiando la magia o despertando su poder innato para llegar a la ascendencia.
 
@@ -72,7 +72,7 @@ En esta categoría se encuentran los tipos de personaje que utilizan una varieda
 - <u>Talentos:</u> Conocimiento, Engaño, Persuasión, Averiguar intenciones
 - <u>Rangos:</u> Nigromancia, Plantilla (Sombría, Abisal, Infernal, Oni), Castigo divino, Conocimiento
 
-## Líderes
+## [Líderes](https://raldamain.com/rules/Crear%20personajes/l%C3%ADderes.html)
 
 En esta categoría se encuentran los tipos de personaje cuyas habilidades les permiten liderar a los demás e influenciar el mundo que les rodea. En el campo de batalla actúan como apoyo y refuerzan las habilidades de sus aliados para alcanzar la victoria.
 
