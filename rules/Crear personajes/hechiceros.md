@@ -124,7 +124,7 @@ title: Hechiceros
 
 ------
 
-**Rayo de energía** (acción de movimiento): 2 soltura + 4 habilidad, 3+Éxito daño de fuerza. Radio de impacto 5 pies.1 chi: Incrementa el radio de salpicadura por 5 pies.
+**Rayo de energía** (acción de movimiento): 3 soltura + 3 habilidad, 3+Éxito daño de fuerza. Radio de impacto 5 pies.1 chi: Incrementa el radio de salpicadura por 5 pies.
 
 **Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 3), y cada punto gastado incrementará el daño base por 1 y el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
 
@@ -134,7 +134,7 @@ title: Hechiceros
 
 **Prisa** (acción estándar, 1 chi): Una criatura aumenta su DES por 1 y recibe una acción de movimiento adicional, pero cada turno sufrirá 1 daño no-letal. Los efectos de esta habilidad se han aplicado a las estadísticas del mago.
 
-**Eliminar magia** (acción estándar, 1 chi): 1 soltura + 4 habilidad, elimina un efecto mágico que tenga tu objetivo de rango II o menos, como podría ser emborronar, armadura mágica, prisa, alentar o protección mental.
+**Eliminar magia** (acción estándar, 1 chi): 2 soltura + 4 habilidad, elimina un efecto mágico que tenga tu objetivo de rango II o menos, como podría ser emborronar, armadura mágica, prisa, alentar o protección mental.
 
 **Alentar** (acción estándar, 1 chi): Forma una burbuja de 20 pies de radio que ralentizará a todas las criaturas que se encuentren en ella. La burbuja requirere concentración para ser mantenida y otorga dos dados de desventaja en tiros defensivos contra ataques a distancia que pasen por ella.
 

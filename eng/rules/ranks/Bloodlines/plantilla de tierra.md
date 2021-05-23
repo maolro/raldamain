@@ -1,7 +1,7 @@
 ---
-title: Plantilla de Tierra
-main: Rangos
-sub: Plantillas
+title: Earth bloodline
+main: Ranks
+sub: Bloodlines
 ---
 
 ## Rango I
