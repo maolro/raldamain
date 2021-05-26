@@ -64,7 +64,7 @@ Una ataque natural base es un puñetazo que hace 0+Éxito daño contundente. Un 
   | Puño preciso     | [Agarre con cadena](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-iii) |
   | Punto de presión | [Cadena serpenteante](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-iv) |
   | Golpe devastador | [Escudo humano](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-iv) |
-  | Puñetazo mortal  | [Ahorcar](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-v) |
+  | Puñetazo mortal  | [Ahorcar ](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-v) |
 
 - **Perforar:** Tienes una afilada espina en una parte de tu cuerpo capaz de ágilmente perforar a tus objetivos. Un ataque de perforar inflige 2+Éxito daño perforante al impactar e ignora la armadura natural que tenga tu objetivo. Sustituye algunos de tus atributos de artes marciales por los siguientes atributos pertenecientes a aptitud con [filos perforantes](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html).
 

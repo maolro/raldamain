@@ -4,53 +4,53 @@ main: Ranks
 sub: Bloodlines
 ---
 
-## Rango I
+## Rank I
 
-Obtienes Resistencia 1 a daño físico. 
+You gain Resistance 1 to physical damage. 
 
-<u>Vínculo con la tierra:</u> Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Una región es un territorio de hasta 4 km de área. Mientras permanezcas en contacto con la tierra de tu región tienes regeneración 1 y un dado de ventaja en todos tus tiros. Para declarar un territorio como tu región debes pasarte un día explorándolo y meditando en el. Solo puedes tener una región vinculada para este efecto.
+<u>Landbound:</u> You develop a stronghold with a region, acting as its guardian in case of danger. A region is a territory up to 20 km in area, equivalent to a hexagon on the Raldamain map. As long as you remain in contact with the land of your region you have regeneration 1 and add an advantage die to all your rolls (it also counts as [favored terrain](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) for the purposes of Tracking). To declare a territory as your region you must spend a day exploring and meditating on it. You can only have one region linked in this way.
 
-<u>Geokinesia:</u> Tu herencia elemental te permite controlar la tierra. Desbloqueas los rangos de magia elemental de tierra. Como acción bonus puedes manipular una pequeña cantidad de tierra o sentir las características de esta. Sólo puedes usar uno de estos efectos al turno.
+<u>Geokinesis:</u> Your elemental heritage allows you to control the earth. You unlock the ranks of [earth elemental magic](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html). As a bonus action you can manipulate a small amount of earth or sense earth's characteristics. You can only use one of these effects per turn.
 
-- Mueve 30 pies en cualquier dirección una cantidad de tierra de volumen igual a un pie cuadrado. La tierra que manipules no hará daño ni empujará. 
-- Haz un análisis completo de todos los objetos de tierra y metálicos en un área de 10 pies cuadrados, detectando secretos y anomalías que tengan.
+- Move 30 feet in any direction an amount of earth equal in volume to one square foot. The earth you manipulate will not hurt or push. 
+- Make a complete analysis of all earthen and metallic objects in a 10 square foot area, detecting secrets and anomalies in them.
 
-## Rango II
+## Rank II
 
-Incrementa tu CON por 1.
+Increase your CON by 1.
 
-<u>Puños de tierra:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales con tierra durante un turno. Los ataques infundidos hacen +2 daño base y puedes gastar 2 ventajas generadas para ralentizar al objetivo durante un turno. Si tienes rangos en Artes marciales, aumentas el nivel de heridas permanentes que infliges por 1. No sufres daño no-letal con esta habilidad si estás en tu región vinculada.
+<u>Earth Fists:</u> As a bonus action, you may suffer 2 nonlethal damage to infuse your natural attacks with earth for one turn. Infused attacks do +2 base damage and you can spend 2 generated perks to [slow](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) the target for one turn (4 perks to [stun](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida)). If you have ranks in Martial Arts, you increase the level of permanent wounds you inflict by 1. You do not suffer non-lethal damage with this ability if you are in your linked region.
 
-<u>Paso terrestre:</u> Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies.
+<u>Earthwalk:</u> You can shape the earth to move across it. You ignore difficult terrain and have a digging and climbing speed of 15 feet.
 
-<u>Georradar:</u> obtienes vista a ciegas en un radio de 30 pies, pero solo puedes detectar criaturas que estén en contacto con la tierra. Tiras un dado de soltura adicional en tiros de averiguar intenciones contra criaturas que estén tocando la tierra. Puedes gastar una acción estándar para aumentar el radio de tu georradar por 15 pies.
+<u>Georradar:</u> You gain blind sight within 30 feet, but you can only detect creatures that are in contact with the earth. You roll an additional hit die on intent-spotting rolls against creatures that are touching the ground. You can spend a standard action to increase the radius of your georadar by 15 feet.
 
-## Rango III 
+## Rank III 
 
-Obtienes Resistencia 2 a daño físico. 
+You gain Resistance 2 to physical damage. 
 
-<u>Armadura de piedra:</u> Como acción estándar, te rodeas de una solida armadura hecha de piedras. Esa armadura te da +2 DEF contra ataques físicos y mágicos, y te otorga un número de puntos de vida temporales iguales a 1+tu Rango. Esta armadura desaparece cuando pierdas tus puntos de vida temporales o pierdas la concentración.
+<u>Stone armor:</u> As a standard action, you surround yourself with solid armor made of stones. That armor increases your DEF by 2 and grants you a number of temporary health points equal to 1+your ascendancy rank. This armor disappears when your temporary health points are reduced to 0 or you lose concentration.
 
-<u>Conexión elemental:</u> La tierra sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno tocando la tierra te regeneras 1 vitalidad. Al realizar un descanso corto en contacto con la tierra, reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). No puedes recuperarte de maldiciones, venenos y enfermedades con este efecto.
+<u>Elemental connection:</u> Earth heals your wounds and strengthens you on the battlefield. When you start your turn by touching the earth you regenerate 1 vitality. When you take a short rest in contact with the earth you reduce the level of a permanent wound by 1 (reduces the level of all your wounds if it is a long rest). When you reach rank V of this ascendancy you increase the number of Vitality you heal per turn by 1 and you will recover 2 HP per turn if your Vitality is at maximum.
 
-## Rango IV 
+## Rank IV 
 
-Incrementa tu FUE por 1.
+Increases your STR by 1. You may roll any hit dice you possess in elemental magic instead of those you possess in physical attacks on attack rolls.
 
-<u>Ola de tierra:</u> Tu velocidad de Excavar y Escalada aumenta a 30 pies. Como acción estándar puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas que estén en tu camino deben tirar destreza contra tu tiro de Magia Elemental o sufren 1+éxito daño contundente y ser empujadas 10 pies (gasta 1 ventaja para tropezar a un enemigo o empujarlo 5 pies adicionales). Sufrirás 2 daño no-letal cada turno que mantengas la ola de tierra salvo que gastes una acción de movimiento. Ola de tierra puede usarse como acción de movimiento si estás en tu Región vinculada.
+<u>Earth Wave:</u> Your Dig and Climb speed increases to 30 feet. As a standard action you can manipulate the earth to form a huge wave beneath your feet. The wave moves you 60 feet per turn and all creatures in your path must roll dexterity against your elemental magic roll or suffer 1+success blunt damage and be pushed 10 feet (spend 1 advantage to trip an enemy or push them an additional 5 feet). You suffer 2 non-lethal damage each turn you hold ground wave unless you spend a move action. Ground wave can be used as a move action if you are in your linked Region.
 
-<u>Ataques infundidos:</u> Tus ataques físicos hacen +1 daño base y aumentan su dureza por 3. Si tienes rangos en Artes marciales, tus puños cuentan como si estuviesen hechos de Adamantina para los propósitos de dureza y al impactar a una criatura con Armadura reducirás su defensa automáticamente por 1. 
+<u>Infused Attacks:</u> Your physical attacks increase their base damage by 1 and are coated with solid stones, counting as if they were made of Adamantine for toughness purposes. Upon hitting an armored creature you can spend 2 generated perks to automatically reduce its defense by 1 (this ability is automatically activated if you have the [devastating blow](https://raldamain.com/rules/Rangos/Armas/artes%20marciales.html#rango-iv) skill). You can add any looseness dice you have for elemental attack to any weapon attack roll, replacing the looseness dice you would then roll.
 
-## Rango V
+## Rank V
 
-Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2.
+You gain Resistance 3 to physical damage and Magic Resistance equal to your Rank - 2.
 
-<u>Elemento de equilibrio:</u> Tu constitución es sólida como una roca. Obtienes resistencia contra venenos, fuego, ácido y frío igual a tu rango. Aumenta tus PV base por 1 por cada 3 niveles que tengas. Este aumento de PV se acumula con los atributos de Fortitud.
+<u>Element of balance:</u> Your constitution is rock solid. You gain resistance against [poisons](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos), fire, acid, and cold equal to your Rank. You increase your base HP by 1 for every 3 levels you have. This increase in HP stacks with the attributes of [fortitude](https://raldamain.com/rules/Rangos/Combate/fortitud.html).
 
-<u>Georradar predictivo:</u> El radio de tu georradar aumenta por 30 pies. No puedes ser sorprendido por criaturas que estén tocando el suelo y eres capaz de predecir sus movimientos, permitiéndote repetir una tirada de ataque o defensa una vez al turno.
+<u>Predictive georadar:</u> The radius of your georadar increases by 30 feet. You cannot be surprised by creatures that are touching the ground and are able to predict their movements, allowing you to reroll an attack or defense roll once per turn and preventing them from catching you by surprise. Your [priority](https://raldamain.com/rules/Reglas%20principales/prioridad.html) also increases by 2 if you are in your linked region.
 
-## Rango VI
+## Rank VI
 
-Incrementa tu SAB por 1.
+Increases your WIS by 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de Tierra. Mientras estés en Forma elemental la habilidad Armadura de piedra aumenta la DEF y los PV temporales que otorga por 2. Puedes además usar la habilidad Ola de tierra como acción de movimiento y el daño base de tus ataques naturales aumenta por 2. Además, al impactar una superficie terrestre con un ataque natural conviertes toda la tierra en un radio de 10 pies en terreno difícil. La Forma elemental termina inmediatamente si pasas un turno suspendido en el aire o eres incapacitado. Cada turno que mantienes la forma elemental sufres 1 daño no-letal y pierdes la habilidad Conexión elemental.
+<u>Elemental Form:</u> As a full turn action, you surround yourself with a large mass of earth. While in Elemental Form the Stone Armor ability increases the DEF and temporary HP it grants by 2. You may also use the Earth Wave ability as a move action and add an additional looseness die to your elemental attacks. In addition, hitting a land surface with a natural attack turns the entire land within 10 feet into difficult terrain. Elemental Form ends immediately if you spend a turn suspended in midair or are incapacitated. Each turn you maintain elemental form you suffer 1 non-lethal damage and lose the Elemental Connection ability.

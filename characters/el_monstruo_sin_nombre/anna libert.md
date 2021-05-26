@@ -67,4 +67,5 @@ Después de vencer a Johan, se retiró junto con Salem a un humilde poblado en M
 
 ""
 
-su primera etapa toma lugar en el manicomio en el que a pesar de no contar con parte de sus recuerdos aun es capaz de mostrar vestigios de su antigua identidad pasando de etapa cuando todo el caos y horror comienza a desatarse y ella empieza a recobrar sus recuerdos cada vez mas dolorosos, en su tercera etapa la podemos ver en el mundo de los sueños donde salem le ayuda a aprender a moverse y a crear su propio mundo en el que poder liberarse y donde ella se encuentra junto a su hermano ocupando cada uno un rol opuesto y en su ultima etapa ella se une a Salem confiandole su cuerpo para poder vencer a su hermano y darle el descanso
+
+

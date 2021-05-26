@@ -87,13 +87,13 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Teletransporte:</u>
 
-<u>Invisibilidad:</u> 
+<u>Invisibilidad:</u> La criatura tiene la capacidad de volverse invisible durante un breve instante de tiempo tanto por un efecto mágico o cambiando su piel para camuflarse con su entorno. Emplear esta habilidad cuesta una acción estándar y el efecto de invisibilidad durará hasta que la criatura pierda la concentración o ataque. Puedes emplear 2 PT adicionales para que la criatura sea invisible de manera pasiva, manteniendo así este efecto durante periodos extendidos de tiempo. 
 
 <u>Movimiento elemental:</u> La criatura recibe un movimiento especial asociado con un elemento con el cual están infundidos sus ataques. Moverse de dicha manera cuesta una acción estándar salvo que la criatura sufra 2 daño no-letal y la velocidad de este puede ser aumentado con la mejora Movimiento adicional. Las opciones para escoger son [propulsión](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv) (fuego), [ola de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv) (tierra), [columna de agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) (agua), [forma gaseosa](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-v) (hielo) o [jinete del relámpago](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tormenta.html#rango-iv) (aire). 
 
-<u>Aura elemental:</u> La energía elemental que emana de la criatura se manifiesta en forma de un aura de energía. Esta habilidad permite a la criatura obtener un aura elemental asociada con el elemento que infunde sus ataque, entre las cuales se encuentran [manto nevado](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iii) (hielo),     
+<u>Aura elemental:</u> La energía elemental que emana de la criatura se manifiesta en forma de un aura de energía. Esta habilidad permite a la criatura obtener un aura elemental asociada con el elemento que infunde sus ataque, entre las cuales se encuentran [manto nevado](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iii) (hielo), aura abrasadora (fuego), armadura de piedra (tierra), forma fluida (agua) y vientos protectores (aire).
 
-<u>Drenar sangre:</u>
+<u>Drenar sangre:</u> 
 
 <u>Infusión necrótica:</u>
 
@@ -121,11 +121,11 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Magia psíquica:</u>
 
-<u>Ascendencia abisal:</u>
+<u>Ascendencia abisal:</u> 
 
-<u>Ascendencia celestial:</u>
+<u>Ascendencia celestial:</u> 
 
-<u>Ascendencia infernal:</u>
+<u>Ascendencia infernal:</u> Una criatura infernal obtiene resistencia igual a su CON - 2 contra un elemento de tu elección y obtiene la habilidad vista infernal. Además, las heridas que provoque la criatura contarán como heridas profanas y su resistencia al daño incrementará por 1. Esta transformación no puede tomarse si la criatura ya posee rangos en ascendencia infernal.
 
 <u>Ascendencia sombría:</u>
 
@@ -143,7 +143,7 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Sensibilidad a la luz:</u>
 
-<u>Tamaño inferior:</u>
+<u>Tamaño inferior</u> (-3 PT): Disminuye el tamaño de la criatura por un paso, llegando como mínimo a canijo. Una criatura con tamaño inferior reducirá su FUE y CON por 2 (mínimo -2) e incrementará su DES por 1. Las criaturas más pequeñas recibirán un dado de dificultad adicional en tiros de esquiva por cada nivel de tamaño por el cual el atacante supere al defensor. 
 
 <u>Ceguera:</u>
 
