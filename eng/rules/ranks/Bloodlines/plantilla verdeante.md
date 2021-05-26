@@ -4,56 +4,52 @@ main: Ranks
 sub: Bloodlines
 ---
 
+## Rank I
 
+You gain Resistance 1 to physical damage. 
 
-## Rango I
+<u>Primal Aspect:</u> Your connection to nature manifests in your body, giving you traits of a natural being. You have 3 [TP](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n), which you can spend on body enhancements. Some possibilities are claws (1 TP), natural armor (1 TP), predator (1 TP), bite (2 TP), additional movement (1 TP), slam (1 TP) or trample (2 TP). Primal aspect cannot give you organs and physiology that you do not naturally have, such as additional limbs or wings. Alternatively you can receive a trained animal companion with 3 PT instead of modifying your body, which you can upgrade to IV and V ranks in the same way.
 
-Obtienes Resistencia 1 a daño físico. 
+<u>Touch of life:</u> Life energy infuses your body, allowing you to heal wounds and grow plants. You unlock ranks of [nature magic](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html) and by using [first aid](https://raldamain.com/rules/Crear%20personajes/talentos.html) you also heal Vitality to your target equal to your ascendancy rank + 2. Once per day you can reduce the level of a [poison](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) or permanent wound by 1. This ability can be used twice per day at rank III and three times at rank V. 
 
-<u>Piel robliza:</u> Recibes armadura natural igual a tu CON - 2 siempre y cuando no lleves armadura metálica. Si tienes el atributo Armadura natural la defensa otorgada por Piel robliza no se acumula, sino que aumenta tu armadura natural base por 2.
+## Rank II
 
-<u>Toque de vida:</u> La energía vital infunde tu cuerpo, permitiéndote sanar heridas y hacer crecer las plantas. Desbloqueas los rangos de Magia de naturaleza y al usar Primeros auxilios sanas también Vitalidad a tu objetivo igual a tu rango de plantilla + 2. Una vez al día puedes reducir el nivel de una herida permanente por 1 o eliminar un veneno. Esta habilidad puede usarse dos veces al día a rango III y tres veces a rango V. 
+Increases your CHA by 1.
 
-## Rango II
+<u>Forest Step:</u> You ignore difficult terrain caused by nature, such as [entanglement](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html#rango-i) or [accelerated growth](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html#rango-ii). You have resistance to nature magic and [grapple](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#agarrada) attempts with this equal to your Rank.
 
-Incrementa tu CAR por 1.
+<u>Communion with nature:</u> Your senses increase in effectiveness, becoming like those of a wild animal. You have dark sight and smell within 60 feet. You can also perform an hour-long ritual where you enter into harmony with the nature of your region, which allows you to learn information about its spirits and localities. If you have ranks in [tracking](https://raldamain.com/rules/Rangos/Combate/rastrear.html) you can make a region your terrain of choice after harmonizing with it.
 
-<u>Paso forestal:</u> Ignoras el terreno difícil causado por la naturaleza, como es el caso de Enmarañar o Crecimiento acelerado. Tienes resistencia a magia de naturaleza y intentos de Agarre con esta igual a tu Rango.
+<u>Fury of nature:</u> As a bonus action usable once per turn you may suffer 2 non-lethal damage to infuse your natural attacks and weapons made of wood with natural energy. An attack infused with nature does +2 base damage and you may spend 2 generated perks to reduce your target's armor by 1. You do not suffer non-lethal damage with this ability if you have harmonized with the region.
 
-<u>Comunión con la naturaleza:</u> Tus sentidos aumentan su eficacia, llegando a ser como los de un animal salvaje. Tienes vista a oscuras y olfato en un radio de 60 pies. Puedes además realizar un ritual de una hora de duración donde entras en harmonía con la naturaleza de tu región, lo cual te permite conocer información sobre los espíritus y localidades de esta. Si tienes rangos en Rastrear puedes convertir una región en tu terreno predilecto tras armonizar con ella.
+## Rank III 
 
-<u>Furia de la naturaleza:</u> Como acción bonus, puedes sufrir 2 daño no letal para infundir tus ataques naturales y tus armas hechas de madera con energía natural. Un ataque infundido con la naturaleza hace +2 daño base y puedes gastar 2 ventajas generadas para reducir la armadura de tu objetivo por 1. No sufres daño no-letal con esta habilidad si has armonizado con la región.
+You gain Resistance 2 to physical damage. You receive 3 additional TP that you can spend on upgrades.
 
-## Rango III 
+<u>Protecting Spirit:</u> A nature spirit acts as your guide, giving you advice and protecting you from danger. Add a difficulty die to defensive shots and you can cancel a success generated by an enemy attack one additional time per turn. You also know how to perform a ritual to contact your spirit protector and receive his wisdom. This ritual lasts 10 minutes and allows you to ask up to 4 questions to your spirit. These questions must be answered truthfully by the master as long as the spirit knows the answer, although the answer can be as cryptic as the master wishes. 
 
-Obtienes Resistencia 2 a daño físico. 
+<u>Elemental connection:</u> Nature's life energy heals your wounds and strengthens you on the battlefield. When you start your turn on a harmonized terrain you regenerate 1 vitality. You cannot heal your HP in this way, but if you take a short rest in your harmonized terrain it reduces the level of a permanent wound by 1 (all your wounds if it is a long rest). The vitality you regenerate per turn increases by 1 when you reach rank V of this ascendancy.
 
-<u>Armadura de cardos:</u>  Como acci
+## Rank IV 
 
-<u>Arraigar:</u>  
+Increases your DEX by 1.
 
-## Rango IV 
+<u>Tree stride:</u> You know secret paths to the spirit world that allow you to travel great distances in an instant. As a standard action you can create form a spirit portal in a tree you are touching. The spirit portal connects the place where you create it to another visible tree that is within 90 feet of you. The portal will close after one turn unless you spend a move action to keep it open. Arboreal gate can also be used to travel to the spirit world, though for this use you must perform an hour-long ritual.
 
-Incrementa tu DES por 1.
+<u>Secrets of the spirits:</u> Your connection to the spirits allows you to learn the secrets of ancient magic. You unlock [mind magic](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html), [illusory](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20ilusoria.html), [temporal](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html), [mediumship](https://raldamain.com/rules/Rangos/Ocultismo/medium.html) and [necromancy](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html). You can use your charisma stat for attack and defense rolls made with the magics you unlock.
 
-<u>Puerta arbórea:</u>
+## Rank V 
 
-<u>Despertar natural:</u>
+You gain Resistance 3 to physical damage and Magic Resistance equal to your Rank - 2. 
 
-## Rango V 
+<u>Primal Aura:</u> Ancient magic emanates from your body, weakening artificial objects and magics within 30 feet. All magic and technological item rolls made by creatures in your primal aura gain two dice disadvantage. As a move action you can provoke a malfunction on a technological object, which is chosen by the master. This ability can also be used by spending 2 disadvantage on a defensive roll against magic to produce a random magical effect.
 
-Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2. 
+<u>Universal speech:</u> You know the first language that unites plants, spirits and animals. With this language you can communicate with any being of nature and obtain information from them. The answers you will receive depend on the creature you communicate with, and some beings may have difficulty transmitting certain concepts to you.
 
-<u>Sabiduría elemental:</u>
+## Rank VI
 
-<u>Aura primigenia:</u>
+Increase your WIS by 1. You receive an additional 3 TP that you can spend on upgrades.
 
-<u>Lenguaje universal:</u>
+<u>Chosen of the land:</u> You are a champion chosen by the spirits. You are immune to mental effects, [poison](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos), [disease](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) and morale effects, and your body ages at a rate ten times slower. In the event of your death your spirit will possess another living being, allowing you to reincarnate in another body. This new reincarnation will start with a greenish ascendant rank and a rank you knew in your previous life.
 
-## Rango VI
-
-Incrementa tu SAB por 1.
-
-<u>Conexión con la tierra:</u>
-
-<u>Forma elemental:</u>
+<u>Elemental Form:</u> As a full turn action you can surround yourself with a large mass of vegetation. While in Form you increase your HP by 8 and your defense by 2, plus fill a 10-foot area centered on you with a [bramble wall](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html#rango-ii). You also add an additional hit die to your nature magic rolls and increase the base damage of your natural attacks by 2. Each turn you maintain elemental form you suffer 1 non-lethal damage and lose the Elemental Connection ability.

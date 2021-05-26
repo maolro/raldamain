@@ -8,7 +8,7 @@ rangos: Pirokinesia, Artes Marciales, Plantilla de Fuego
 image: iwan.jpg
 ---
 
-Viviendo entre pobreza y delincuencia lo único que le queda que valga la pena es su hermano Volo, al cual intenta evitarle los males y sufrimientos del mundo pero ,será realmente capa de protegerlo para siempre o tendrá que pagar el precio por hacer lo correcto en un mundo injusto?
+Viviendo entre pobreza y delincuencia lo único que le queda que valga la pena es su hermano Volo, al cual intenta evitarle los males y sufrimientos del mundo. Pero será realmente capaz de protegerlo para siempre o tendrá que pagar el precio por hacer lo correcto en un mundo injusto?
 
 ## Especialidades
 
