@@ -100,7 +100,7 @@ title: Hechiceros
 
 ### Archimago (nivel 15)
 
-**PV:** 7			**VT:** 12	 		**DEF:** 4 (+4 armadura mágica)
+**PV:** 11		**VT:** 21	 		**DEF:** 4 (+4 armadura mágica)
 
 **FUE:** 1 	**DES:** 4 (5)	**CON:** 4	**INT:** 6	**SAB:** 4	**CAR: **1
 
@@ -124,7 +124,7 @@ title: Hechiceros
 
 ------
 
-**Rayo de energía** (acción de movimiento): 3 soltura + 3 habilidad, 3+Éxito daño de fuerza. Radio de impacto 5 pies.1 chi: Incrementa el radio de salpicadura por 5 pies.
+**Rayo de energía** (acción de movimiento): 3 soltura + 3 habilidad, 4+Éxito daño de fuerza. Radio de impacto 10 pies.1 chi: Incrementa el radio de salpicadura por 5 pies.
 
 **Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 3), y cada punto gastado incrementará el daño base por 1 y el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
 

@@ -3,77 +3,75 @@ title: Heridas permamentes
 main: Reglas adicionales
 ---
 
-## Heridas permanentes
+## Permanent wounds
 
-Se designa como heridas permanentes a todas aquellas heridas que causan daños duraderos al cuerpo de la persona. Infligir heridas permanentes requiere gastar un número de ventajas igual dependiendo de tu Rango de arma al impactar con un ataque.
+Permanent wounds are designated as all wounds that cause lasting damage to a person's body. Inflicting permanent wounds requires spending a number of perks according to your weapon Rank on impact with an attack.
 
-Dependiendo del tipo de daño que inflige tu arma, las heridas permanentes tienen ligeras variaciones. Si tu arma es Cortante, el objetivo sufrirá Sangrado además de los efectos de la herida. Si es Contundente, puedes infligir heridas permanentes a criaturas que lleven armadura aunque tu daño sea reducido a 0, mientras que si es Perforante eres capaz de infligir heridas permanentes a criaturas con armadura natural aunque reduzcan tu daño.
+Depending on the type of damage your weapon inflicts, permanent wounds have slight variations. If your weapon is Blunt, the target will suffer Bleeding in addition to the effects of the wound. If it is Blunt, you can inflict permanent wounds on armored creatures even if your damage is reduced to 0, while if it is Piercing you are able to inflict permanent wounds on naturally armored creatures even if they reduce your damage.
 
-La herida que inflijas afectará a una parte aleatoria del cuerpo del objetivo salvo que gastes un número de ventajas para apuntar a un lugar específico. Si vuelves a sufrir una herida permanente el el mismo lugar aumentará su nivel por 1 y eliminará todas las heridas anteriores que tengas. Las heridas permanentes que afectan a cada parte del cuerpo son las siguientes:
+The wound you inflict will affect a random part of the target's body unless you spend a number of perks to target a specific location. If you suffer a permanent wound again in a place where you already have one, increase the level of the wound by 1. The permanent wounds that affect each part of the body are the following:
 
-### Cabeza
+### Head
 
-Apuntar a la cabeza requiere un gasto adicional de 2 ventajas. Si eres impactado en la cabeza, haz un tiro adicional de 1d10 para determinar si sufres una herida adicional en tus ojos, orejas o cuello. Los efectos que recibes al ser impactado en una de esas partes de la cabeza depende del tipo de herida permanente que hayas sufrido.
+Aiming for the head requires an additional cost of 2 perks. If you are hit in the head, make an additional 1d10 roll to determine if you suffer an additional wound to your eyes, ears, or neck. The effects you receive from being hit in one of these parts of the head depends on the type of permanent wound you have suffered.
 
-**Leve:** Estás Ralentizado durante un turno. Además, añade un dado de Desventaja a todos tus tiros de habilidad relacionados con la Inteligencia, la Sabiduría o el Carisma.
+**Mild:** You are staggered for one turn. In addition, add one Disadvantage die to all your Intelligence, Wisdom, or Charisma related skill rolls.
 
-**Media:** Reduce tu INT, SAB y CAR por 1. Estás Aturdido durante un turno y recibes el efecto de estado Ralentizado hasta que recibas sanación, además de los efectos causados por una herida permanente leve. 
+**Medium:** Adds one difficulty die to all your INT, WIS and CHA rolls. You are stunned for one turn and remain staggered until you receive healing, in addition to the effects caused by a minor permanent wound. 
 
-**Grave:** Reduce tu INT, SAB y CAR por 2. Caes Inconsciente hasta que sufras daño o una criatura te despierte. Si sufres una herida permanente adicional en la cabeza sufrirás daño cerebral, lo cual te matará en un turno si no recibes sanación. Aunque seas sanado, recibes una locura leve escogida por el máster.
+**Severe:** Adds two difficulty dice to all your INT, WIS and CHA rolls. You fall Unconscious until you suffer damage or are awakened by a creature. If you suffer an additional permanent head wound you will suffer brain damage, which will kill you in one turn if you do not receive healing. Even if you are healed, you receive a mild insanity of the master's choice.
 
-| Resultado (1d10) | Herida adicional |
-| ---------------- | ---------------- |
-| 1-7              | Ninguna          |
-| 8                | Ojo              |
-| 9                | Oreja            |
-| 10               | Cuello           |
+| Result (1d10) | Additional injury |
+| ------------- | ----------------- |
+| 1-7           | None              |
+| 8             | Eye               |
+| 9             | Ear               |
+| 10            | Neck              |
 
-**Ojo:** (Leve) Reduce tu campo de visión a 60 pies, añade un dado de Desventaja a todos tus ataques y tiros de Percepción; (Media) Estás Cegado hasta que recibas sanación, sufre los efectos de una herida permanente leve; (Grave) Pierdes la visión en un ojo y sufres Sangrado.
+**Eye:** (Mild) Reduce your field of vision to 60 feet, add one Disadvantage die to all your attacks and Perception rolls; (Medium) You are Blinded until healed, suffer the effects of a minor permanent wound; (Severe) You lose vision in one eye and suffer Bleeding.
 
-**Oreja:** (Leve) Ensordecido durante un turno, añade un dado de Desventaja a todos tus ataques y tiros de Percepción; (Media) Ensordecido hasta que recibas sanación, sufre los efectos de una herida permanente leve; (Grave) Pierdes la capacidad de escuchar en una oreja.
+**Ear:** (Mild) Deafened for one turn, add one Disadvantage die to all your attacks and Perception rolls; (Medium) Deafened until you receive healing, suffer the effects of a minor permanent wound; (Severe) You lose the ability to hear in one ear.
 
-**Cuello:** (Leve): No puedes hablar durante un turno, lo cual impide que uses habilidades que requieran la voz como Voz del Comandante o Persuasión; (Media) Recibes Sangrado y pierdes la capacidad de hablar hasta que recibas sanación; (Grave) Reduce tu CON por 1 y empiezas a ahogarte, además de recibir Sangrado.
+**Neck:** (Mild): You cannot speak for one turn, preventing you from using voice-requiring abilities such as Commander's Voice or Persuasion; (Medium) You receive Bleeding and lose the ability to speak until you receive healing; (Severe) Reduces your CON by 1 and you begin to choke, in addition to receiving Bleeding.
 
-### Brazos
+### Arms
 
-Apuntar a un brazo específico requiere un gasto adicional de 1 ventaja.
+Targeting a specific arm requires an additional expenditure of 1 advantage.
 
-**Leve:** Añade un dado de Desventaja a todas las acciones en las que uses tu brazo herido. Si intentas usar Parada para defenderte los enemigos añaden un dado de Ventaja a sus tiros de ataque.
+**Mild:** Add one Disadvantage die to all actions in which you use your wounded arm. If you attempt to use Parry to defend yourself enemies will add one Advantage die to their attack rolls.
 
-**Media:** Reduce tu DES y FUE por 1, además de ser desarmado. Recibes los mismos penalizadores al ataque y a la defensa que te otorga una herida leve.
+**Medium:** Adds one difficulty die to all your STR and DEX rolls, in addition to being disarmed. If you attempt to use Parry to defend yourself enemies will add an ability die to their attack rolls.
 
-**Grave:** Reduce tu DES y FUE por 2. El brazo queda inutilizado, haciendo que no puedas atacar ni defenderte con él. Si sufres una  herida permanente adicional en el brazo este quedará tan herido que deberá ser amputado.
+**Severe:** Adds one difficulty die to all your STR and DEX rolls. Your arm is disabled, making you unable to attack or defend yourself with it. If you suffer an additional permanent wound to the arm it will be so badly wounded that it must be amputated.
 
-### Pecho
+### Chest
 
-**Leve:** Añade un dado de Desventaja a todos tus tiros de habilidad relacionados con la Fuerza o la Destreza. 
+**Mild:** Add one Disadvantage die to all your Strength or Dexterity related skill rolls. 
 
-**Media:** Reduce tu CON por 1. Recibes el efecto de estado Fatigado además de las penalizaciones otorgadas por una herida leve. 
+**Medium:** Reduce your CON by 1. You receive the Fatigued status effect in addition to the penalties granted by a light wound. 
 
-**Grave:** Reduce tu CON por 2. Recibes el efecto de estado Exhausto y un penalizador de dos dados de Desventaja a todos tus tiros de habilidad relacionados con la Fuerza o la Destreza. Si sufres una herida permanente adicional en el pecho sufrirás una herida en el corazón, lo cual te matará instantáneamente en un turno si no recibes sanación. Aunque sobrevivas tu CON será reducida adicionalmente por 2.
+**Severe: You receive the Exhausted status effect and a two dice Disadvantage penalty to all your Strength or Dexterity related skill rolls. If you suffer an additional permanent chest wound you will suffer a heart wound, which will kill you instantly in one turn if you do not receive healing. Even if you survive your CON will be further reduced by 2.
 
 ### Abdomen
 
-**Leve:** Recibes el efecto de estado Enfermado. Tu movimiento base queda reducido por 10 pies.
+**Mild:** You receive the sickened status effect. Your base movement is reduced by 10 feet.
 
-**Media:** Reduce tu CON por 1. Recibes el efecto de estado Náuseas durante un turno y obtienes las mismas penalizaciones que te otorga una herida leve.
+**Medium:** Reduces your CON by 1. You receive the Nausea status effect for one turn and get the same penalties as a minor wound.
 
-**Grave:** Reduce tu CON por 2. Recibes el efecto de estado Náuseas hasta que seas sanado y obtienes las mismas penalizaciones que te otorga una herida leve. Si sufres una herida permanente adicional en el abdomen recibirás una hemorragia interna, la cual te hace 2 daño letal al turno y te deja moribundo. Sanar una hemorragia interna requiere tener éxito en tres tiros consecutivos de Primeros auxilios (dos si tienes el material adecuado y estás fuera de un combate), pero aunque seas sanado tu CON se reducirá adicionalmente por 1.
+**Severe:** You receive the Nausea status effect until you are healed and take the same penalties as a minor wound. If you suffer an additional permanent wound to the abdomen you will receive internal bleeding, which deals 2 lethal damage per turn and leaves you moribund. Healing an internal hemorrhage requires succeeding on three consecutive First Aid rolls (two if you have the right gear and are out of combat), but even if you are healed your CON will be additionally reduced by 1.
 
-### Piernas
+### Legs
 
-**Leve:** Reduce tu movimiento por 5 pies. Recibes un penalizador de un dado de Desventaja en tiros de Acrobacias o Atletismo, y no puedes gastar ventajas generadas para moverte 5 pies.
+**Mild:** Reduces your movement by 5 feet. You receive a penalty of one Disadvantage die on Acrobatics or Athletics rolls, and you cannot spend generated perks to move 5 feet.
 
-**Media:** Reduce tu DES por 1 y caes inmediatamente al suelo. Recibes los mismos penalizadores al movimiento y a tiros de habilidad que te otorga una herida leve.
+**Average:** Add one difficulty die to all your DEX rolls and you immediately fall to the ground. You receive the same penalties to movement and skill rolls that a minor wound grants you.
 
-**Grave:** Reduce tu DES por 2. Tu pierna queda inutilizada, cayendo inmediatamente al suelo. Mientras tu pierna quede inutilizada tu movimiento queda reducido por 10 pies y fracasas automáticamente en todos los tiros de Acrobacias y Atletismo. Además, no podrás Esquivar como reacción para defenderte. Si sufres una herida permanente adicional en la pierna esta quedará tan herida que deberá ser amputada.
+**Severe:** Add two difficulty dice to all your DEX rolls. Your leg is disabled and you immediately fall to the ground. While your leg is disabled your movement is reduced by 10 feet and you automatically fail all Acrobatics and Athletics rolls. In addition, you will not be able to Dodge as a reaction to defend yourself. If you suffer an additional permanent wound to your leg it will be so injured that it must be amputated.
 
-| Resultado (1d10) | Lugar afectado |
-| ---------------- | -------------- |
-| 1                | Cabeza         |
-| 2-3              | Brazos         |
-| 4-6              | Pecho          |
-| 7-8              | Abdomen        |
-| 9-10             | Piernas        |
-
-*Tabla de parte aleatoria del cuerpo afectado. Para ello tira un dado de diez caras (d10)*.
+| Result (1d10) | Hit location |
+| ------------- | ------------ |
+| 1             | Head         |
+| 2-3           | Arms         |
+| 4-6           | Chest        |
+| 7-8           | Abdomen      |
+| 9-10          | Legs         |
