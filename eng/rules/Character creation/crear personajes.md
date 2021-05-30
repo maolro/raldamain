@@ -1,6 +1,5 @@
 ---
 title: Character creation
-main: Character creation
 ---
 
 The Raldamain system is an innovative role-playing system that aims to be easy to use and with infinite possibilities. Unlike other systems, there the concept of classes does not exist in Raldamain and it is usable for all kinds of fantasy worlds with minimal adjustments. The basis of character creation is in the rank system, where the player can select a set of atributes to build a character concept. 
