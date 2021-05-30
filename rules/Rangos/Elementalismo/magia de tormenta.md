@@ -7,7 +7,7 @@ category: Magia elemental
 
 Añade un dado de soltura a todos tus ataques elementales.
 
-<u>Relámpago:</u> Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 2+éxito daño eléctrico. Tiras 1 dado de ventaja adicional contra criaturas que lleven armadura metálica (2 dados de ventaja adicionales si tiene armadura pesada o escudo pesado de metal ). Gasta 2 ventajas para que el objetivo no pueda usar reacciones durante un turno (4 para ralentizar). Si estás en una tormenta puedes hacer como acción estándar que un rayo caiga sobre un objetivo en un lugar expuesto. Esto te cuesta una acción de movimiento a rango III.
+<u>Relámpago:</u> Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 2+éxito daño eléctrico. Tiras 1 dado de ventaja adicional contra criaturas que lleven armadura metálica (2 dados de ventaja adicionales si tiene armadura pesada o escudo pesado de metal ). Gasta 2 ventajas para que el objetivo no pueda usar reacciones durante el resto de la ronda (4 para ralentizar). Si estás en una tormenta puedes hacer como acción estándar que un rayo caiga sobre un objetivo en un lugar expuesto. Esto te cuesta una acción de movimiento a rango III.
 
 <u>Onda trueno:</u> Como acción estándar inicia una atronadora onda en un radio de 15 pies. Esta onda hace 2+éxitos daño trueno y puedes gastar 2 ventajas para ensordecer a un enemigo (4 para aturdir). Rompes todos los objetos de cristal o otros materiales frágiles en el área.
 
