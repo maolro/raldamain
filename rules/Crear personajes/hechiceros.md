@@ -132,6 +132,8 @@ title: Hechiceros
 
 **Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 5), y cada punto gastado incrementará el daño base por 1 y el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
 
+**Aura antimágica** (acción estándar, 2 chi): Forma un aura de 15 pies que impedirá toda la magia en ella. Al ser lanzada cancela de inmediato todos los hechizos en tu aura de efecto. El aura durará mientras mantengas la concentración y mientras esta permanezca activa no podrás usar magia para atacar o defenderte. Aura antimágica puede ligarse a un glifo. 
+
 **Descarga de energía** (acción estándar, 1 chi): 3 soltura + 3 habilidad, 5+Éxito daño de fuerza. Afecta a todas las criaturas en un cono de 20 pies.
 
 **Muro de energía** (acción estándar): Crea un muro de un elemento de su elección de 55 pies de largo y 25 pies de alto. Permanecerá hasta que pierda la concentración y formar otro le causará 2 daño no-letal al turno.
