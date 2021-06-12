@@ -3,6 +3,8 @@ title: Ascendencia celestial
 category: Ascendencias
 ---
 
+Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada de los seres superiores de la creación. Según vas alimentando la fe de tus dioses, tu cuerpo se irá volviendo uno con la luz que da vida a todas las creaciones del universo, permitiéndote ser participe de grandes milagros e incluso la convertirte en la encarnación de un santo.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.
