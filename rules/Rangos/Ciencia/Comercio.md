@@ -3,6 +3,8 @@ title: Comercio
 category: Ciencia
 ---
 
+Como persona influyente has comenzado a escalar por la jerarquía social, aumentando tu poder y expandiendo tu influencia. Según vayas avanzando en el poder serás capaz de conseguir grandes riquezas, crear fuertes organizaciones e incluso ignorar las leyes que atan a las personas corrientes.
+
 ## Rango I 
 
 Incrementa tu NC máximo de [agentes](https://raldamain.com/rules/Reglas%20adicionales/agentes.html) de nivel 0 por 3.
