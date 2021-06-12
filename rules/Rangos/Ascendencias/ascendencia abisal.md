@@ -3,6 +3,8 @@ title: Ascendencia Abisal
 category: Ascendencias
 ---
 
+La sangre de entidades olvidadas hace eones ahora llama tu nombre desde la parte mas oscura de la existencia. Deformando tu cuerpo y empujando tu mente hacia los límites de la razón te sientes cada vez más atraído por esas voces en tu cabeza que te prometen conocimiento, que te prometen poder, que te prometen la única y autentica verdad.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
