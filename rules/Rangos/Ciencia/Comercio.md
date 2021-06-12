@@ -3,7 +3,7 @@ title: Comercio
 category: Ciencia
 ---
 
-Como persona influyente has comenzado a escalar por la jerarquía social, aumentando tu poder y expandiendo tu influencia. Según vayas avanzando en el poder serás capaz de conseguir grandes riquezas, crear fuertes organizaciones e incluso ignorar las leyes que atan a las personas corrientes.
+Apoyándote en tus habilidades has comenzado a escalar por la jerarquía social, aumentando tu poder y expandiendo tu influencia. Según vayas avanzando hacia la cima serás capaz de conseguir grandes riquezas, de crear fuertes organizaciones e incluso ignorar las leyes que atan a las personas corrientes.
 
 ## Rango I 
 
