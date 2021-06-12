@@ -3,6 +3,8 @@ title: Conocimiento
 category: Ciencia
 ---
 
+Tienes una gran capacidad para aprender nueva información sobre todo aquello que te rodea, adquiriendo grandes cantidades de conocimiento con menos esfuerzo del que supondría a tus iguales. Con el tiempo eres capaz de emplear ese conocimiento para crear cosas nuevas así como evitar los riesgos que para muchos supone la ignorancia.
+
 ## Rango I
 
 Recibes un nivel de talento adicional en conocimiento. Desbloqueas rangos en magia arcana.
