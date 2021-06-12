@@ -3,7 +3,7 @@ title: Conocimiento
 category: Ciencia
 ---
 
-Tienes una gran capacidad para aprender nueva información sobre todo aquello que te rodea, adquiriendo grandes cantidades de conocimiento con menos esfuerzo del que supondría a tus iguales. Con el tiempo eres capaz de emplear ese conocimiento para crear cosas nuevas así como evitar los riesgos que para muchos supone la ignorancia.
+Tienes la capacidad para aprender nueva información sobre todo aquello que te rodea con mucho menos esfuerzo del que le supondría a tus "iguales" Con el tiempo, serás capaz de emplear tu vasta sabiduría para descubrir nuevas magias, organizar complejos rituales, así como evitar los riesgos que para muchos supone la ignorancia
 
 ## Rango I
 
