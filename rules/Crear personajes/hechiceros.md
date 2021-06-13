@@ -36,8 +36,6 @@ title: Hechiceros
 
 ##  Niveles 4-6
 
-##
-
 ## Niveles 7-9
 
 ### Mago (nivel 8)

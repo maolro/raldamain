@@ -9,7 +9,7 @@ category: Religión
 
 Tira un dado de soltura adicional en tiros de magia divina. 
 
-<u>Milagro menor:</u> Tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción bonus usable una vez puedes darle un dado de Ventaja o Desventaja en su siguiente tirada a una criatura de tu elección. Esta habilidad se puede usarse un número de veces al día igual a tu Rango + 1. Milagro menor también puede emplearse para recibir una pequeña ayuda de tu dios no relacionada con el combate.
+<u>Milagro menor:</u> Tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción bonus usable una vez puedes darle un dado de Ventaja o Desventaja en su siguiente tirada a una criatura de tu elección. Esta habilidad se puede usarse un número de veces al día igual a tu Rango + 2. Milagro menor también puede emplearse para recibir una pequeña ayuda de tu dios no relacionada con el combate.
 
 <u>Enviado de los dioses:</u>  Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Además, desbloqueas una ascendencia relacionada con tu dios y puedes utilizar tu estadística de sabiduría para tiros de magia arcana o elemental. 
 
