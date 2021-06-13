@@ -1,19 +1,19 @@
 ﻿// this script is for rolling dice for FFG's Edge of the Empire Star Wars RPG
 
 var ability = [
-	"", "s", "s", "ss", "a", "a", "sa", "aa"
+	"", "s", "s", "ss", "a", "a", "sa", "sa"
 ];
 
 var difficulty = [
-	"", "f", "ff", "t", "t", "t", "tt", "ft"
+	"", "f", "ff", "f", "t", "t", "ft", "ft"
 ];
 
 var boost = [
-	"", "", "aa", "a", "sa", "s"
+	"", "", "a", "a", "sa", "s"
 ];
 
 var setback = [
-	"", "", "f", "f", "t", "t"
+	"", "", "t", "t", "ft", "t"
 ];
 
 var proficiency = [
@@ -21,7 +21,7 @@ var proficiency = [
 ];
 
 var challenge = [
-	"", "f", "f", "ff", "ff", "t", "t", "ft", "ft", "tt", "tt", "D"
+	"", "f", "f", "ff", "ff", "t", "ft", "ft", "ft", "tt", "tt", "D"
 ];
 
 var force = [

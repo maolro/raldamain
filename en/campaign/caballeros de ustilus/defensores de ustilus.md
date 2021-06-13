@@ -25,7 +25,7 @@ Tras estos dos encuentros iniciales, los jugadores se reagruparán (si no ha mue
 
 ### Llegada de refuerzos mazarinos
 
-Poco después de la medianoche del primer día un grupo de soldados mazarinos llega al fuerte para consolidarlo. Ellos creen en un principio que la misión de los agentes ha sido un éxito y no sospecharán nada salvo que haya claros indicios que el fuerte permanece en manos ustilesas. Ellos tienen como objetivo proteger el fuerte de futuros ataques ustileses y fingir que todo va bien. El grupo se compone de seis **Reclutas mazarinos**, dos **Ballesteros mazarinos** y un **Sterlet mazarino**. Si alguno de estos llega a ser capturado al interrogarlo revelará que el día siguiente transportarán un cañon de tipo culverín a través del valle.
+Poco después de la medianoche del primer día un grupo de soldados mazarinos llega al fuerte para consolidarlo. Ellos creen en un principio que la misión de los agentes ha sido un éxito y no sospecharán nada salvo que haya claros indicios que el fuerte permanece en manos ustilesas. Ellos tienen como objetivo proteger el fuerte de futuros ataques ustileses y fingir que todo va bien. El grupo se compone de seis **Reclutas mazarinos**, dos **Ballesteros mazarinos** y un **Sterlet mazarino**. Si alguno de estos llega a ser capturado al interrogarlo revelará que el día siguiente transportarán un cañón de tipo culverín a través del valle.
 
 Si la fogata del fuerte ha sido apagada, entonces el encuentro La inspección de Pantor se adelanta a esta noche. El capitán podría llegar en cualquier momento de la pelea para asistir a los jugadores.
 
@@ -58,14 +58,14 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 - **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
 - **PV ** 5 , **VT ** 6, **DEF** 1 (Armadura de cuero)
 - <u>Habilidades</u>: Sigilo 2, Engaño 2, Acrobacias 2, Juego de manos 1
-- <u>Rangos</u>: Reflejos II, Filos ligeros I, Influenciar I
+- <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
 
 **Asesino del Pacto** (nivel 5)
 
 - **FUE** 2, **DES** 5, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
 - **PV ** 6, **VT ** 8, **DEF** 1 (Armadura de cuero)
 - <u>Habilidades</u>: Sigilo 3, Engaño 2, Acrobacias 2, Juego de manos 1, Atletismo 2
-- <u>Rangos</u>: Reflejos II, Armas de fuego III, Influenciar I
+- <u>Rangos</u>: Reflejos II, Armas de fuego II, Influenciar I, Rastrear I
 
 **Recluta mazarino** (nivel 1)
 
@@ -86,14 +86,14 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 - **FUE** 4, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 2
 - **PV ** 6, **VT ** 9, **DEF** 4 (Media placa)
 - <u>Habilidades</u>: Empatía animal 2, Percepción 3, Supervivencia 2, Intimidar 1
-- <u>Rangos</u>: Montar II, Filos pesados II, Armaduras I
+- <u>Rangos</u>: Montar I, Filos pesados II, Armaduras I, Reflejos I
 
 **Sterlet mazarino** (nivel 3)
 
 - **FUE** 3, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
 - **PV ** 6 , **VT ** 7, **DEF** 2 (Pieles 1, Resistencia 1)
 - <u>Habilidades</u>: Supervivencia 2, Percepción 2, Averiguar intenciones 1, Atletismo 2
-- <u>Rangos</u>: Rastrear I, Filos pesados I, Plantilla Tierra I, Reflejos I
+- <u>Rangos</u>: Rastrear I, Filos pesados I, Ascendencia de Tierra I, Reflejos I
 
 **Capitán húsar mazarino** (nivel 6)
 

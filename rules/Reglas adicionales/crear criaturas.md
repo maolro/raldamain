@@ -125,7 +125,7 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Ascendencia celestial:</u> 
 
-<u>Ascendencia infernal:</u> Una criatura infernal obtiene resistencia igual a su CON - 2 contra un elemento de tu elección y obtiene la habilidad vista infernal. Además, las heridas que provoque la criatura contarán como heridas profanas y su resistencia al daño incrementará por 1. Esta transformación no puede tomarse si la criatura ya posee rangos en ascendencia infernal.
+<u>Ascendencia infernal:</u> Una criatura infernal obtiene resistencia igual a su CON - 2 contra un elemento de tu elección y obtiene la habilidad vista infernal. Además, las heridas permanentes que provoque la criatura contarán como heridas profanas y su resistencia al daño incrementará por 1. 
 
 <u>Ascendencia sombría:</u>
 
