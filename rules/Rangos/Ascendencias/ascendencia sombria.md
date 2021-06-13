@@ -3,6 +3,8 @@ title: Ascendencia Sombría
 category: Ascendencias
 ---
 
+Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándote en un delicado equilibrio entre el mundo de los humanos y el mundo de los muertos. Fusionando tu ser con sombras mientras sacrificas tu humanidad te mueves silenciosamente en la noche, acechando todo lo que te rodea.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.

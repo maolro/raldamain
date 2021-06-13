@@ -3,6 +3,8 @@ title: Ascendencia Boreal
 category: Ascendencias
 ---
 
+Tienes una íntima conexión con el antiguo frío que una vez estuvo presente en todo el mundo, permitiéndote ser el  canal de paso que lo dará a conocer en esta nueva era. A medida que permitas que esta nueva fuerza ahonde en ti, serás capaz de mayores hazañas, encerrando tu antiguo ser bajo una tumba helada y preparándote para traer un nuevo invierno a la tierra.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.

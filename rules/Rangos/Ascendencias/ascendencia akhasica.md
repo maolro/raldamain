@@ -3,6 +3,8 @@ title: Ascendencia Akhásica
 category: Ascendencias
 ---
 
+Tu mente está conectada con la inteligencia colectiva del universo volviéndote parte de los engranajes que hacen girar la gran rueca del destino. Gracias a esta conexión, pequeños fragmentos del tejido del universo son discernibles para ti permitiéndote obtener respuestas a preguntas que hasta ahora habían permanecido sin respuesta.  
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
