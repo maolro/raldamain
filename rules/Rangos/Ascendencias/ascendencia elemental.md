@@ -28,7 +28,13 @@ A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de de
 
 ## [Ascendencia de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html)
 
-Estas conectado con las mas lejanas profundidades de la tierra así como de todo aquello que se encuentra en sus dominios. Según vayas acercándote  
+Estas conectado con las mas lejanas profundidades de la tierra así como de todo aquello que se encuentra en sus dominios. 
+
+A medida que su naturaleza cristalize en ti, 
+
+
+
+resistente, estoico, siempre algo, eternidad
 
 ## [Ascendencia verdeante](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20verdeante.html)
 
