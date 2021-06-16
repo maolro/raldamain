@@ -2,6 +2,10 @@
 title: Ascendencia elemental
 ---
 
+
+
+
+
 ## Ascendencia de aire
 
 ## Ascendencia de agua
