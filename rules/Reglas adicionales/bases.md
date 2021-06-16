@@ -19,7 +19,7 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 <u>Almacén</u>: Un almacén es una sencilla sala empleada para guardar objetos de todo tipo. Esta tiene una capacidad máxima de 40 pies cúbicos de mercancías y puedes gastar 1 PC adicional para ampliar el tamaño de la sala, incrementando su capacidad máxima por 40 pies.
 
-<u>Altar:</u> Un altar es un punto focal de energía divina, conectando a los miembros de la base con su dios. Este puede tener la forma que desees según la naturaleza del dios que veneras. El altar cuenta como un punto consagrado a tu dios y es imprescindible para realizar rituales de magia divina. Si tu base posee un altar los agentes en ella pueden recibir rangos de Guerrero divino, Magia divina o una ascendencia relaiconada con un dios aunque normalmente no cuenten con ellos (como por ejemplo mercenarios o pícaros).
+<u>Altar:</u> Un altar es un punto focal de energía divina, conectando a los miembros de la base con su dios. Este puede tener la forma que desees según la naturaleza del dios que veneras. El altar cuenta como un punto consagrado a tu dios y es imprescindible para realizar rituales de magia divina. Si tu base posee un altar los agentes en ella pueden recibir rangos de Guerrero divino, Magia divina o una ascendencia relacionada con un dios.
 
 <u>Armería</u>: Una armería guarda una variedad de armas y armaduras, proporcionando el equipamiento adecuado para armar a un máximo de 10 soldados. Una armería cuenta también con las herramientas adecuadas para que los soldados puedan quitarse o ponerse armaduras en poco tiempo.
 
@@ -31,7 +31,7 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 <u>Dormitorio</u>: Un dormitorio es una habitación con numerosas camas dónde los habitantes de la base pueden descansar. Un dormitorio puede abastecer a un máximo de 10 personas y puede tomar una gran variedad de configuraciones. Los efectivos que vivan en la base deben tener por obligación un dormitorio donde descansar.
 
-<u>Jardín</u>: 
+<u>Jardín</u>: Un jardín es una parcela de tierra preparada para la cultivación de plantas y hierbas. Un jardín proporciona los materiales adecuados para fabricar pócimas y ungüentos basados en plantas, pudiendo fabricar hasta 10 de estas por semana. A diferencia de otras salas un jardín requiere más atención y cuidado, causando que caiga en desuso si no hay ninguna unidad de agentes dedicado a cuidarlo durante un mes.
 
 <u>Oficina</u>: Una oficina es una sencilla habitación empleable para trabajos administrativos y el procesamiento de información. Esta sala puede ser empleada por administradores para manejar la contabilidad de tu organización o registrar las entradas y salidas de tu base.
 
@@ -41,25 +41,25 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 <u>Repositorio de libros:</u> Un repositorio de libros guarda una amplia cantidad de libros referentes a todo tipo de temas. Esta sala consta de múltiples estanterías de libros y algunas mesas para que los usuarios de la habitación puedan leer o estudiar. Un personaje que utilice esta sala para estudiar puede encontrar información referente a cualquier tema mundano. 
 
-<u>Sala común:</u> Esta extensa sala es un versátil lugar que sirve como punto de reunión entre los miembros de la base o como nodo de comunicación entre distintas salas, pudiendo ser tanto interior como exterior. Una sala común no tiene ningún propósito de por sí sola, pero puede conectarse con hasta 6 salas diferentes y mejorarse de muchas maneras distintas.
+<u>Sala común:</u> Esta extensa sala es un versátil lugar que sirve como punto de reunión entre los miembros de la base o como nodo de comunicación entre distintas salas, pudiendo ser tanto interior como exterior. Una sala común puede conectarse a hasta 6 salas diferentes y puede ser mejorada de muchas maneras distintas.
 
-<u>Salón:</u> 
+<u>Salón:</u> Un salón es una vasta y cómoda sala empleada para la relajación. Esta sala no tiene utilidad por sí sola, pero es un buen lugar para realizar reuniones con personas ajenas a la base o relajarse. 
 
-<u>Taller</u>: 
+<u>Taller</u>: Un taller es una sencilla habitación que contiene una mesa de trabajo y las adecuadas herramientas para una determinada profesión artesanal (carpintero, zapatero, escultor...). Esta sala puede ser usada por hasta 3 personas a la vez.
 
 <u>Tienda:</u> Una tienda se trata de un establecimiento comercial con el cual puedes vender tus bienes al exterior. Esta sala te permite generar dinero para tu organización y puedes emplearla como tapadera de todo tipo de negocios ilícitos.
 
 ### 2 PC
 
-<u>Aulario</u>: Un aulario es un lugar empleado para profundizar en el estudio de la magia y la ciencia. Un aulario tiene una capacidad de 10 personas, las cuales tras un año de estudio apliarán sus conocimientos (recibirán un rango adicional relacionado con magia arcana o ciencia). Esta sala sólo puede dar mejoras si tienes un teniente con rango III o más en la ciencia o magia que pueda actuar como maestro. Un aulario te permite reducir el nivel de contratación de 10 agentes relaiconados con la ciencia o la magia (estudiantes, ingenieros, científicos, magos) por 1.
+<u>Aulario</u>: Un aulario es un lugar empleado para profundizar en el estudio de la magia y la ciencia. Un aulario tiene una capacidad de 10 personas, las cuales tras un año de estudio aplicarán sus conocimientos (recibirán un rango adicional relacionado con magia arcana o ciencia). Esta sala sólo puede dar mejoras si tienes un teniente con rango III o más en la ciencia o magia que pueda actuar como maestro. Un aulario te permite reducir el nivel de contratación de 10 agentes relacionados con la ciencia o la magia (estudiantes, ingenieros, científicos, magos) por 1.
 
-<u>Cripta</u>:
+<u>Cripta</u>: Una cripta es un espacio subterráneo empleado normalmente para enterrar cadáveres importantes. Los cadáveres guardados en una cripta pueden ser usados como materiales para rituales nigrománticos o para la creación de no-muertos. Una cripta puede guardar hasta 10 cadáveres.
 
 <u>Dojo</u>: Un dojo es un lugar empleado para practicar artes marciales y técnicas de combate, contando con muñecos y armas de entrenamiento para facilitar este trabajo. Un dojo puede usarse como entorno de entrenamiento para un máximo de 10 personas a la vez, las cuales tras un año de entrenamiento verán mejoradas sus habilidades marciales (recibirán un rango adicional en un rango de armas o combate de tu elección). Esta sala sólo puede dar mejoras si tienes a un teniente que pueda actuar como maestro, el cual debe tener rango III o más en la aptitud que busques entrenar. Un dojo te permite reducir el nivel de contratación de 10 unidades marciales (soldados, mercenarios, tropas de élite) por 1.
 
-<u>Enfermería</u>: 
+<u>Enfermería</u>: Una enfermería es una sala preparada para tratar a heridos y enfermos, contando con camillas y medicinas para ayudar en esta labor. Una enfermería cuenta con los materiales adecuados para primeros auxilios y un personaje que pase un día descansando en esta podrá reducir el nivel de una herida permanente por 1. 
 
-<u>Fragua</u>: 
+<u>Fragua</u>: Una fragua cuenta con un horno, un yunque u otras herramientas necesarias para moldear los metales. Una fragua puede ser empleada para reparar y elaborar objetos metálicos. Si la base tiente también un repositorio mágico la fragua puede emplearse para infundir armas y armaduras con chi, convirtiéndolos en objetos mágicos. Esta sala puede ser empleada por un máximo de 3 personas a la vez.
 
 <u>Imprenta</u>: Esta sala se trata de un taller preparado para la impresión y elaboración de libros, contando con una imprenta y un almacén para papel. Una imprenta puede ser usada por 4 personas como máximo.
 
@@ -71,21 +71,21 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 <u>Sala de baile:</u> Una sala de baile es una extensa habitación ricamente decorada ideal para convocar eventos que involucren a las capas más altas de la sociedad. Esta sala te permite enterarte de las últimas noticias e intrigas que involucren a la aristocracia y alta burguesía del lugar e influenciar a personas pertenecientes a dichos grupos. Esta sala actúa como mejora de una sala común.
 
-<u>Sala de interrogatorios:</u>
+<u>Sala de interrogatorios:</u> Una sala de interrogatorios es una siniestra habitación empleada para interrogar a cautivos, contando con máquinas de tortura y sueros especializados para facilitar dicha labor. El uso repetido de esta habitación minará la voluntad de tu cautivo, reduciendo su CAR por 1 y provocándole una herida leve cada sesión de interrogación por la que pase. 
 
-<u>Torre de vigilancia:</u>
+<u>Torre de vigilancia:</u> Una torre de vigilancia es una elevada estructura perfecta para vigilar los alrededores. Una criatura que ataque desde una torre de vigilancia contará con [cubierta](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta) (cubierta superior si la torre está fortificada). Esta estructura puede integrarse en una muralla o emplearse como puesto de guardias a ningún coste. 
 
 ### 3 PC
 
-<u>Cámara de rituales:</u> 
+<u>Cámara de rituales:</u> Una cámara de rituales es una vasta habitación preparada para la realización de ritos arcanos y divinos. Esta cámara reducirá la probabilidad que un ritual falle y cuenta además con numerosos glifos de contención para minimizar los daños a la base. Para realizar rituales arcanos es necesario un repositorio mágico mientras que para realizar rituales divinos es necesario un altar.
 
-<u>Murallas:</u> 
+<u>Muros:</u> Los muros son largas y sólidas estructuras preparadas para proteger la base de incursiones o sellar determinadas salas. Un muro puede estar hecho de piedra o madera y sus dimensiones máximas serán de 150 pies de largo y 25 de alto. 
 
 <u>Repositorio mágico:</u> Un repositorio mágico un establecimiento empleado para estudiar las artes arcanas y guardar una multitud de objetos mágicos, contando con los materiales adecuados para realizar rituales mágicos o investigar sobre todo tipo de temas arcanos y ocultos. Esta sala puede actuar como mejora de un repositorio de libros, reduciendo así su coste de PC por 1.
 
-<u>Sala de observación:</u> 
+<u>Sala de observación:</u> Una sala de observación es una habitación que cuenta con los glifos adecuados para que su usuario pueda observar numerosos puntos de la base desde lejos. El usuario de esta sala podrá observar aquellas habitaciones que cuenten con un glifo de observación (2 PC cada uno) y se enterará al momento si uno es desactivado. Para construir esta habitación la base debe contar con un repositorio mágico. 
 
-<u>Taller de relojería:</u>
+<u>Taller de relojería:</u> Un taller de relojería es un taller especializado para la fabricación de objetos que requieren gran cuidado y precisión, contando con una mesa de trabajo y las adecuadas herramientas. Si la base cuenta con un repositorio mágico esta habitación puede empleares para fabricar objetos mágicos complejos u autómatas de relojería (sólo si esta tecnología se ha descubierto).
 
 ## Mejoras
 
@@ -101,7 +101,7 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 ## Ejemplos
 
-<u>Tienda</u> de pociones (6 PC): Laboratorio, jardín, cocina, tienda, almacén
+<u>Tienda de pociones</u> (6 PC): Laboratorio, jardín, cocina, tienda, almacén
 
 <u>Banco</u> (9 PC): Puesto de guardias, 2 oficinas, 2 almacenes fortificados, almacén secreto
 
