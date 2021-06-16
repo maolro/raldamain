@@ -3,6 +3,8 @@ title: Ascendencia de Fuego
 category: Ascendencias
 ---
 
+
+
 ## Rango I 
 
 Obtienes Resistencia 1 a daño físico. 
