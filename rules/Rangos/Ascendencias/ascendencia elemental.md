@@ -10,7 +10,7 @@ Desde tu nacimiento siempre te has sentido atraído por uno de los elementos bá
 
 ## [Ascendencia de aire](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html)
 
-Tienes una fuerte conexión con las antiguas tormentas que estuvieron en el inicio de los tiempos, pudiéndose sentir el eco de sus vientos con tu presencia. Según su presencia se va haciendo mas notable en ti, serás capaz de utilizar los desastres naturales a tu favor pudiéndote servir de los fuertes vendavales para hacer servir tu voluntad.
+Tienes una fuerte conexión con las antiguas tormentas que llevan soplando desde el inicio de los tiempos, pudiéndose sentir el eco de sus vientos con tu presencia. Según su influencia se va haciendo mas notable en ti, serás capaz de comandar los vendavales para hacer servir tu voluntad.
 
 ## [Ascendencia de agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html)
 
@@ -22,7 +22,7 @@ Tienes una íntima conexión con el antiguo frío que una vez estuvo presente en
 
 ## [Ascendencia de fuego](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html)
 
-
+Guardas relaciona con los aspectos mas caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios
 
 ## [Ascendencia de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html)
 
