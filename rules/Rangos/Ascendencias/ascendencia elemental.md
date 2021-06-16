@@ -24,7 +24,7 @@ Tienes una íntima conexión con el antiguo frío que una vez estuvo presente en
 
 Guardas relación con los aspectos mas caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios. 
 
-A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser , devorando hasta que todo y todos sean reducidos a cenizas.
+A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser, devorando hasta que todo y todos sean reducidos a cenizas.
 
 ## [Ascendencia de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html)
 
