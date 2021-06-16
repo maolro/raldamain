@@ -3,7 +3,7 @@ title: Ascendencia de Aire
 category: Ascendencias
 ---
 
-Te sientes atraído por los fuertes vientos y las salvajes tormentas, escuchando su llamado desde que tienes acto de consciencia. Según su influencia se va haciendo mas fuerte en ti, los vientos dejan de ser un obstáculo para ti, pasando a impulsar tus movimientos y trabajar para defenderte. 
+
 
 ## Rango I
 
