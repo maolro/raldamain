@@ -3,7 +3,7 @@ title: Ascendencia de Agua
 category: Ascendencias
 ---
 
-Tu cuerpo siempre tiene gran afinidad al agua teniendo desde tu nacimiento mejores habilidades en ella que las otras personas que te rodean. Según tu conexión con los mares se va haciendo se va haciendo mas fuerte, tu cuerpo se va haciendo mas compatible permitiéndote sobrevivir incluso en las condiciones más adversas de las profundidades, así como tan fluido y adaptable como la marea.
+
 
 ## Rango I
 
