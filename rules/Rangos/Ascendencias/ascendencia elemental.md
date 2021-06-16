@@ -30,11 +30,7 @@ A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de de
 
 Estas conectado con las mas lejanas profundidades de la tierra así como de todo aquello que se encuentra en sus dominios. 
 
-A medida que su naturaleza cristalize en ti, la tierra se convertirá en un nuevo medio alcanzar tus ideales, tanto protegiendo tu cuerpo con una férrea cubierta como someter a tus enemigos bajo toneladas de roca.
-
-
-
-resistente, estoico, siempre algo, eternidad
+A medida que su naturaleza cristalize en ti, la tierra se convertirá en un nuevo medio alcanzar tus ideales, protegiendo tu cuerpo como una férrea cubierta así como sometiendo a tus enemigos como si se tratase de una imparable ola.
 
 ## [Ascendencia verdeante](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20verdeante.html)
 
