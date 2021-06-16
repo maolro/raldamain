@@ -10,7 +10,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes aumentar el área de tu ataque a una línea de 10 pies de ancho y 60 de largo, hacer un ataque elemental adicional o aumentar la fuerza de los vientos en un área de 40 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
 
-<u>Parada elemental:</u> Tu elemento te permite protegerte de ataques enemigos. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente para defenderte de ataques. Solo puedes protegerte de otros ataques elementales o ataques a distancia, pudiendo cancelar un éxito una vez al turno. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V).
+<u>Parada elemental:</u> Tu elemento te permite protegerte de ataques enemigos. Una parada elemental es una reacción que te permite usar tus dados de ataque defensivamente para defenderte de ataques. Solo puedes protegerte de otros ataques elementales o ataques a distancia, pudiendo cancelar un éxito o dos ventajas una vez al turno. A rango III puede usar Parada elemental contra ataques cuerpo a cuerpo y cancelas un éxito una vez adicional al turno (dos veces adicionales a Rango V).
 
 ## Rango II
 

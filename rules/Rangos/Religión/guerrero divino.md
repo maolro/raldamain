@@ -41,6 +41,6 @@ Tira un dado de desafío adicional en tiros defensivos de sabiduría.
 
 - Te sanas toda tu vitalidad, 6 PV y activas inmediatamente Guardián de la fe
 - Un grupo de hasta 6 aliados que hayan muerto hace como mucho un minuto resucitan con 3 PV y reciben la habilidad Guerrero de la fe
-- Tu dios envía a sus fuerzas para protegerte. Invoca a un grupo de criaturas extraplanarias con 18 [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html) totales.
+- Tu dios envía a sus fuerzas para protegerte. Invoca a un grupo de criaturas extraplanarias de nivel conjunto 
 - Recibes el conocimiento guerrero de tu dios, permitiéndote tirar tres dados de soltura con cualquier arma y otorgándote tres nuevos atributos de arma. 
 

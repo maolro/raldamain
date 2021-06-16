@@ -31,21 +31,5 @@ Incrementa tu daño base por 1 al entrar en ira.
 
 <u>Difícil de matar:</u> Puedes seguir luchando aunque estés a 0 PV, luchando hasta llevar a tu cuerpo al límite. En este estado activas los efectos de ira de manera automática y sufres 1 daño no-letal cada vez que realices una acción (2 daño no-letal si realizas una acción de turno completo). Sólo caes al borde de la muerte cuando tus PV negativos sean iguales a tu constitución. Si tus PV al acabar la ira exceden tu CON negativa, morirás al instante.
 
-# Ira ancestral
 
-Si tienes una plantilla de cualquier tipo puedes usar ira para canalizar el poder de rus ancestros y liberar su fuerza. Recibes estos dos rangos adicionales, los cuales únicamente requieren que tengas un rango en Ira.
-
-## Rango I
-
-Aumenta tu CAR por 1 al entrar en ira.
-
-<u>Furia elemental:</u>  Tus ataques se infunden con la furia de los elementos. Al entrar en ira, aumenta tu resistencia a un elemento por 2 y tus ataques hacen +1 daño elemental.
-
-<u>Defensa ancestral:</u> Tu poder innato te da reflejos sobrenaturales y protección contra tus enemigos. Eres inmune a flanqueo y puedes cancelar un éxito obtenido por un ataque enemigo una vez al turno.
-
-## Rango II
-
-<u>Aura destructiva:</u> Espíritus protectores, elementos furiosos o sombras demoníacas hieren a todos los que se acerquen a ti. Todas las criaturas en un aura de 15 pies sufren 2 daño no-letal al principio y añade +2 dados de Desventaja a tus tiros defensivos contra ataques a distancia. Esta habilidad sólo puede activarse mientras estas en ira.
-
-<u>Erupción elemental:</u> Una vez por ira como acción estándar puedes hacer un destructivo ataque de energía elemental. El tiro equivale a tu CON con un dado de Soltura por cada 2 rangos de Ira y hace daño igual a 1 + tus rangos en Ira. Si tienes ataque elemental o Descarga de energía, Erupción elemental cuenta como uno de esos ataques pero añades un dado de Ventaja y +1 daño. El número de dados de ventaja y daño base aumenta por 1 cada vez que recibas un rango adicional de Ira.
 
