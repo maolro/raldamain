@@ -3,6 +3,8 @@ title: Ascendencia de Agua
 category: Ascendencias
 ---
 
+
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
