@@ -14,7 +14,7 @@ Tienes una fuerte conexión con las antiguas tormentas que estuvieron en el inic
 
 ## [Ascendencia de agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html)
 
-Sientes una gran afinidad por los entornos acuáticos presentes en casi todas las partes del mundo, siendo un reflejo viviente de la atroz fuerza de las mareas. 
+Sientes una gran afinidad por los entornos acuáticos presentes en casi todas las partes del mundo, siendo un reflejo de la atroz naturaleza de los océanos. A medida que su influencia se va haciendo mas presente en ti, podrás resistir los efectos mas adversos de las aguas, así como volverte en un testimonio viviente de la fluidez de las corrientes  y la fuerza de las mareas
 
 ## [Ascendencia boreal](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html)
 
