@@ -34,5 +34,5 @@ A medida que su naturaleza cristalize en ti, la tierra se convertirá en un nuev
 
 ## [Ascendencia verdeante](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20verdeante.html)
 
-Tienes una fuerte conexión con la naturaleza así como con los orígenes de la vida en el planeta. A medida que tu conexión crece, tu comunión con la naturaleza va volviéndose mas profunda volviéndote así mas cercano a los espíritus y permitiéndote servirte de las plantas, animales e incluso espíritus a fin de conseguir tus metas
+Tienes una fuerte conexión con la naturaleza así como con los orígenes de la vida en el planeta. A medida que tu conexión crece, tu comunión con la naturaleza va volviéndose mas profunda convirtiendote así en un ser mas cercano a los espíritus y permitiéndote servirte de las plantas, animales e incluso espíritus a fin de conseguir tus metas
 
