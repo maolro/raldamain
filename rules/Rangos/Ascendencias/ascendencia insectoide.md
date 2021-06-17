@@ -3,6 +3,8 @@ title: Ascendencia insectoide
 category: Ascendencias
 ---
 
+Los insectos han estado presentes en tu vida desde tu nacimiento o tal vez hicieron su primera aparición después de que un desastroso accidente ocurriese, lo que es seguro es que su aparición no es nada tan inocente como lo que la mente humana puede alcanzar a imaginar. En el transcurso en el que la sangre insectoide toma control de tu cuerpo esta ira cambiandote en cuerpo y mente de forma que cambie para asemejarse mas a esos nuevos aspectos entropicos que toman control de ti. Cuando el tiempo suficiente haya pasado, ya sea como un trabajador o como una matriarca, lo unico que pasará a ser importante es la colmena, siempre creciente, siempre hambrienta.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.
