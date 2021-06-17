@@ -30,6 +30,28 @@ title: Líderes
 
 ### Sectario (nivel 1)
 
+**PV:** 4			**VT:** 4	 		**DEF:** 2 (cuero)
+
+**FUE:** 1 	**DES:** 3	**CON:** 1	**INT:** 2	**SAB:** 1	**CAR:** 2
+
+------
+
+**Talentos:** Estudio 1, Arcanismo 1, Engaño 1, Sigilo 1
+
+**Rangos:** Filos ligeros I, Guerrero divino I
+
+**Movimiento:** 15 pies
+
+**Prioridad:** 2 (1 estándar + 1 movimiento)
+
+------
+
+**Ataque furtivo:** Inflige +2 daño base en ataques sorpresa y flanqueo. Puede añadir un dado de dificultad al tiro de ataque para ignorar un punto de defensa que tenga tu objetivo.
+
+------
+
+**Daga de sacrificio** (acción estándar): 1 soltura + 2 habilidad + 1 ventaja, 2+Éxito perforante.
+
 ## Niveles 4-6
 
 ### Sacerdote (nivel 4)
