@@ -3,6 +3,8 @@ title: Ascendencia oni
 category: Ascendencias
 ---
 
+Como hobgoblin que eres se supone que deberías ser un fiel y leal guerrero de la legión sin embargo ese sentimiento nunca ha aflorado en ti como tus compañeros, en lugar de los sentimientos de honor de tus compañeros tu te sientes invadido por un sombra que se apodera de ti mientras se hace mas fuerte. Según esta influencia va en aumento, vas obteniendo mas habilidades y rasgos que deberás ocultar de tus compañeros hobgoblin para evitar que estos acaben contigo, mientras el oni en tu interior se alimenta con tu alma  haciendo que te plantees que si vale la pena seguir escondiéndote, o si deberías ser tu quien tome el control.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. Puedes utilizar magia arcana de forma innata empleando tu estadística de carisma.
