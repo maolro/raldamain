@@ -3,6 +3,8 @@ title: Bombas
 category: Ciencia
 ---
 
+Tienes conocimiento sobre la magia y la tecnología suficientes como para poder preveer su comportamiento , y has decidido utilizar este conocimiento para la destrucción. A medida que perfilas tu arte, vas mejorando las bombas y trampas que fabricas dándoles efectos cada vez mas complejos y destructivos.
+
 ## Rango I
 
 Añade un dado de soltura a tus tiros de ataque con bombas. Puedes usar tu estadística de inteligencia para tiros de ataque con bombas.
