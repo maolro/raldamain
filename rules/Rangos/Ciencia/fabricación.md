@@ -3,6 +3,8 @@ title: Fabricación
 category: Ciencia
 ---
 
+Tu mente ávida te ha permitido aprender como funcionan los entresijos de los mecanismos después de largos periodos de estudios, permitiéndote así esbozar planos de inventos varios o retocarlos para darles nuevas mejoras .
+
 ## Rango I
 
 <u>Reparar objeto:</u> Tu conocimiento de ingeniería te permite ágilmente reparar objetos dañados. Puedes emplear una hora de trabajo para incrementar la efectividad de un objeto dañado por 1, restaurándolo a su estado anterior. Un número de veces al día igual a tu rango de Fabricación + 1 puedes realizar un Arreglo rápido, lo cual te permite emplear un acción de turno completo para aumentar la efectividad de un objeto dañado por 1. Debes llevar las herramientas adecuadas para emplear esta habilidad. Reparar objeto te permite también usar el talento Primeros Auxilios para sanar a constructos, empleando tu estadística de Inteligencia para el tiro.

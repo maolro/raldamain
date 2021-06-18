@@ -3,6 +3,8 @@ title: Química
 category: Ciencia
 ---
 
+A lo largo de tus años de estudio has aprendido la influencia que tanto componentes mágicos como naturales tienen sobre el cuerpo, pudiendo así saber como afectarle con estos creando potentes venenos y eficaces pociones de sanación. A medida que tu conocimiento se abra a nuevos horizontes seras capaz de crear efectos mas poderosos que crucen los limites del cuerpo humano e incluso desafiar los conocimientos que se consideraban básicos.
+
 ## Rango I
 
 <u>Curandero:</u> Tus conocimientos médicos te permiten curar a los enfermos y sanar a los heridos. Puedes usar tu estadística de Inteligencia para tiros de primeros auxilios y llevas siempre materiales adecuados para sanar. Un número de veces al día igual a tu rango + 1 puedes fabricar una dosis de medicina, la cual reduce el nivel de una herida permanente, veneno o enfermedad que tenga un objetivo por 1 además de sanar PV iguales a tu rango de Química + 1. Aplicar la medicina es una acción de turno completo (acción estándar a rango III de química).
