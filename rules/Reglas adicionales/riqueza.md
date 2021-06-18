@@ -1,3 +1,7 @@
+---
+title: Riqueza
+---
+
 La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar objetos, propiedades o servicios. Esta queda medida por un valor conocido como el nivel de riqueza (NR), el cual queda determinado por el estatus social de un personaje y oscila de 0 a 9. El nivel de riqueza (NR) variará según la fortuna de un personaje, incrementando al obtener gran riqueza y reduciéndose al caer en la desgracia. 
 
 ## Niveles sociales
@@ -10,34 +14,17 @@ La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar
 
 <u>Nivel 3:</u> A este nivel un personaje tiene una vida modesta, logrando un oficio estable capaz de proporcionar unas condiciones de vida adecuadas. Los ingresos obtenidos le permiten tener un hogar en un barrio de clase media y aunque no pueda permitirse los excesos de las clases más altas podrá acceder a tabernas sencillas y otros establecimientos similares. Algunos ejemplos de este nivel social son artesanos, estudiantes, pequeños propietarios o tenderos.
 
-<u>Nivel 4:</u> Un personaje de este nivel tiene un nivel de vida más cómodo
+<u>Nivel 4:</u> Un personaje de este nivel tiene un nivel de vida más cómodo y poseerá un mayor nivel de educación y cultura. Estos pueden permitirse un hogar más espacioso y una mayor red de contactos pertenecientes a la clase media y la clase media-alta. Algunos oficios propios a este nivel social son mercaderes, profesionales educados, funcionarios y oficiales. 
 
-<u>Nivel 5:</u> 
+<u>Nivel 5:</u> Los personajes de este nivel social forman parte de la clase media-alta, viviendo un estilo de vida lujoso aunque no posean los privilegios asociados con la nobleza. A este nivel social un personaje tendrá propiedades y agentes propios de una organización de nivel 1 y tienen gran prestigio dentro de la clase media. Algunos ejemplos de este nivel social son empresarios, magistrados, comerciantes ricos y oficiales de mayor rango.
 
-<u>Nivel 6:</u> Los personajes de este nivel social se encuentran en las clases privilegiadas, viviendo una vida llena de placeres y disfrute. Estos frecuentan los barrios más ricos de una ciudad y pueden permitirse la mejo	
+<u>Nivel 6:</u> Los personajes de este nivel social se encuentran en las clases privilegiadas, viviendo una vida llena de placeres y disfrute. Estos frecuentan los barrios más ricos de una ciudad y pueden acceder a los mejores establecimientos. Tienen acceso a propiedades y agentes pertenecientes a una organización de nivel 2 y pueden acceder a las reuniones sociales de los ricos y poderosos. En esta categoría se encuentran los terratenientes, el alto clero, la nobleza y determinados profesionales de la política. Este nivel social más alto con el que puede empezar un personaje de nivel 1.
 
-<u>Nivel 7:</u> 
+<u>Nivel 7:</u> Los personajes de este nivel social tienen gran prestigio e importancia en su región, ubicándose en el estamento de la alta nobleza y burguesía. Poseen las propiedades y agentes propios de una organización de nivel 3 y son capaces de influir en el gobierno de su región e incluso más allá. 
 
 <u>Nivel 8:</u> Los personajes de este nivel social forman parte de las grandes casas nobles o se tratan de poderosos magnates cuya riqueza supera la de la vieja nobleza. Poseen las propiedades y agentes propios de una organización de nivel 4 y en sus contactos figuran las personalidades más importantes del país. No obstante, a niveles de riqueza tan altos estos personajes formarán parte de todo tipo de intrigas palaciegas y una mala decisión puede conducir a la muerte o la desgracia.
 
 <u>Nivel 9:</u> Un personaje de este nivel social se trata de un miembro de la realeza o la familia gobernante de una nación, contando con inmensa riqueza y prestigio a nivel internacional. La riqueza de estos personajes les permite tener propiedades y agentes como si se tratasen de una organización de nivel 5 (nivel 6 si son el líder de la nación). Sus decisiones son capaces de cambiar el rumbo de una nación y se encuentran por encima de la 
-
-
-
-
-
-| Nivel de riqueza (NR) | Ejemplos                                                |
-| --------------------- | ------------------------------------------------------- |
-| 0                     | Esclavos, siervos, mendigos                             |
-| 1                     | Jornaleros, obreros, ladrones                           |
-| 2                     | Mercaderes ambulantes, campesinos con tierras, reclutas |
-| 3                     | Artesanos, acólitos, mercenarios                        |
-| 4                     | Mercaderes, burócratas, hidalgos, oficiales militares   |
-| 5                     | Magistrados, profesores universitarios, abogados        |
-| 6                     | Nobles, mercaderes ricos, capos criminales              |
-| 7                     | Alta nobleza y burguesía                                |
-| 8                     | Grandes magnates y familias aristócratas                |
-| 9                     | Realeza                                                 |
 
 ## Crédito
 
