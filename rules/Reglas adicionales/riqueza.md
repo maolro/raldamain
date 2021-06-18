@@ -2,6 +2,30 @@ La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar
 
 ## Niveles sociales
 
+<u>Nivel 0:</u> Un personaje a este nivel vive en condiciones infrahumanas, rodeado de miseria y desesperación. Carece de hogar, alimento y equipo, dependiendo de la caridad de los demás para sobrevivir. Los individuos de este nivel social son frecuentemente mendigos, esclavos o proscritos.
+
+<u>Nivel 1:</u> Encontrándose a un paso de la miseria más absoluta, un personaje a este nivel vive en condiciones precarias y escuálidas. Obtiene una cantidad mínima de ingresos que le proporcionan lo suficiente para no morir de hambre y tiene un lugar donde protegerse de los elementos. Algunos ejemplos de este nivel social son habitantes de los barrios bajos de una ciudad o campesinos sin tierras.
+
+<u>Nivel 2:</u> Un personaje de este nivel tiene un nivel de vida más humilde que la media, propio de los habitantes de barrios trabajadores. Aunque estos posean propiedades y puedan permitirse algo de ocio, no son completamente libres del mundo de violencia y miseria que caracteriza a niveles sociales más bajos y a menudo son mal vistos por las clases más altas. Algunos individuos propios de este nivel social son mercaderes ambulantes, obreros, criados y mercenarios.
+
+<u>Nivel 3:</u> A este nivel un personaje tiene una vida modesta, logrando un oficio estable capaz de proporcionar unas condiciones de vida adecuadas. Los ingresos obtenidos le permiten tener un hogar en un barrio de clase media y aunque no pueda permitirse los excesos de las clases más altas podrá acceder a tabernas sencillas y otros establecimientos similares. Algunos ejemplos de este nivel social son artesanos, estudiantes, pequeños propietarios o tenderos.
+
+<u>Nivel 4:</u> Un personaje de este nivel tiene un nivel de vida más cómodo
+
+<u>Nivel 5:</u> 
+
+<u>Nivel 6:</u> Los personajes de este nivel social se encuentran en las clases privilegiadas, viviendo una vida llena de placeres y disfrute. Estos frecuentan los barrios más ricos de una ciudad y pueden permitirse la mejo	
+
+<u>Nivel 7:</u> 
+
+<u>Nivel 8:</u> Los personajes de este nivel social forman parte de las grandes casas nobles o se tratan de poderosos magnates cuya riqueza supera la de la vieja nobleza. Poseen las propiedades y agentes propios de una organización de nivel 4 y en sus contactos figuran las personalidades más importantes del país. No obstante, a niveles de riqueza tan altos estos personajes formarán parte de todo tipo de intrigas palaciegas y una mala decisión puede conducir a la muerte o la desgracia.
+
+<u>Nivel 9:</u> Un personaje de este nivel social se trata de un miembro de la realeza o la familia gobernante de una nación, contando con inmensa riqueza y prestigio a nivel internacional. La riqueza de estos personajes les permite tener propiedades y agentes como si se tratasen de una organización de nivel 5 (nivel 6 si son el líder de la nación). Sus decisiones son capaces de cambiar el rumbo de una nación y se encuentran por encima de la 
+
+
+
+
+
 | Nivel de riqueza (NR) | Ejemplos                                                |
 | --------------------- | ------------------------------------------------------- |
 | 0                     | Esclavos, siervos, mendigos                             |
@@ -17,7 +41,7 @@ La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar
 
 ## Crédito
 
-Cada nivel social posee una cantidad de crédito igual a 3 veces su nivel de riqueza, el cual puede ser empleado para obtener una vasta cantidad de útiles y servicios. El crédito se restaurará al cabo de un año salvo que el personaje baje de categoría social
+Cada nivel social posee una cantidad de crédito igual a 2 veces su nivel de riqueza, el cual puede ser empleado para obtener una vasta cantidad de útiles y servicios. El crédito se restaurará al cabo de un año salvo que el personaje baje de categoría social
 
 Estas son algunas posibilidades en las cuales se puede invertir el crédito.
 
