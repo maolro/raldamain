@@ -3,6 +3,8 @@ title: Montar
 category: Combate
 ---
 
+Como jinete entrenado eres mejor cuando luchas acompañado de tu montura, empleando su fortaleza superior para provocar devastadores ataques sobre tus enemigos. A lo largo del tiempo tu practica va alcanzando nuevos niveles, de forma que puedas realizar ataques mas efectivos en consonancia con tu compañero así como realizar tacticas peligrosas que de tratarse de otra persona serían imposibles.
+
 ## Rango I
 
 No sufres penalizaciones por disparar montado.
