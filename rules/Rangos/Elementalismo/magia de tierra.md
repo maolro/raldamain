@@ -3,6 +3,8 @@ title: Magia de Tierra
 category: Magia elemental
 ---
 
+Tienes la capacidad de manipular uno de los elementos mas abundantes en el plante, la tierra, pudiéndote servir de ella para realizar casi cualquier cosa siempre que nada te impida mantener contacto directo con ella. A medida que tu control se vuelve mas avanzado, te vuelves capaz de manipular mayores cantidades de tierra así como deformarla para utilizarla como una extensión de tu cuerpo en devastadores ataques. En ultima instancia tu control de la tierra será tan fuerte que te permitirá incluso provocar fuertes seísmos o grandes cambios en la forma de un terreno.
+
 ## Rango I
 
 Añade un dado de soltura a todos tus ataques elementales.
