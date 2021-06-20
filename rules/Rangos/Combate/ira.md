@@ -3,6 +3,8 @@ title: Ira
 category: Combate
 ---
 
+La ira es un sentimiento que fluye a través de todas las personas, sin embargo tu has aprendido a manejarla para así usarla para tu propio beneficio. Casi entrando en un efecto similar a un trance eres capaz de desconectar parcialmente tu consciencia para dejar tu instinto de supervivencia mas básico de tu interior y de este modo acabar con cualquier cosa o adversario que ose cruzarse en tu camino. A medida que obtienes mas experiencia y vas dominando esta habilidad, te volverás capaz de controlar incluso la respuesta de tu propio cuerpo obteniendo la habilidad de superar todo límite establecido para alcanzar un nuevo nivel.
+
 ## Rango I
 
 <u>Ira:</u> Como acción bonus puedes entrar en un estado de ferocidad superior conocido como ira. Mientras estés en el estado de ira aumentas tu FUE y tu CON por 1 y recibes resistencia igual a tu rango contra efectos mentales y de moral. Sufres 1 daño no-letal cada turno que pases en ira y mientras mantengas este efecto no puedes usar habilidades que requieran paciencia y concentración, atacando cada turno si es posible. No puedes entrar en ira en el caso que estés [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada). Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente.

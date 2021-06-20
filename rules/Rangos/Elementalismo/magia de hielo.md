@@ -3,6 +3,8 @@ title: Magia de Hielo
 category: Magia elemental
 ---
 
+Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estado líquido como algunos elementalistas tu te has decantado por emplear una versión mas agresiva aprendiendo a como utilizarlo en su forma sólida. A medida que tu control sobre el hielo se va haciendo mas fuerte serás capaz de darle multitud de formas, moldeandolo para crear letales armas de matar bajo tu absoluto control así como servirte del mismo frío que usas para crear tu hielo como una herramienta para congelar a tus enemigos hasta los huesos. En los niveles mas altos serás incluso de evadir por un tiempo las limitaciones de tiempo, trayendo con tu llegada temperaturas gélidas a los entornos mas cálidos o volviendo incluso mas intenso el frío que te rodee.
+
 ## Rango I
 
 Añade un dado de soltura a todos tus ataques elementales.
