@@ -2,11 +2,7 @@
 title: Objetos mágicos y tecnológicos
 ---
 
-Esta es una lista de varias mejoras mágicas y tecnológicas que se pueden aplicar a un arma. Cada mejora va indicada por un nivel mínimo, indicando que un personaje debe ser de nivel igual o inferior a este para emplear dicha mejora. Dependiendo del nivel tecnológico del momento el nivel requerido puede ser inferior o superior a lo normal, mostrando la rareza de dichos objetos.
-
-## Disponibilidad de objeto
-
-La disponibilidad de un objeto depende tanto del nivel tecnológico del lugar como del nivel económico del comprador. 
+Los objetos mágicos y tecnológicos son una vasta categoría que abarca todos los artefactos fabricados con cristales de chi, lo 1s cuales almacenan la energía innata del universo y forman la base de la magia en el sistema Raldamain. 
 
 ## Mejoras de arma
 
