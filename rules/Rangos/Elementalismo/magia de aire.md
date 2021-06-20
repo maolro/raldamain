@@ -2,6 +2,8 @@
 title: Magia de Aire
 category: Magia elemental
 ---
+Tienes un control absoluto sobre el elemento que se encuentra en casi todas las partes de la tierra, el aire, pudiendo manipularlo a tu antojo para servirte de sus cualidades. Cuanto mas profundices en el control de este elemento, mayor será la cantidad de aire que podrás manejar permitiéndote crear desde leves brisas de aire hasta feroces huracanes. Así mismo, cuando tu control sea lo suficientemente profundo, serás capaz de alterar en mayor profundidad algunos de los mecanismos que regulan el mundo siendo así capaz de alterar incluso el mismo clima de la zona en la que estés.
+
 ## Rango I 
 
 Añade un dado de soltura a todos tus ataques elementales.
