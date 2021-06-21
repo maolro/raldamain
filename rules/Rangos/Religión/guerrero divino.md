@@ -3,6 +3,8 @@ title: Guerrero divino
 category: Religión
 ---
 
+Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. Este don otorgado por los dioses crecerá alimentándose de tu fe y ambición siempre que estos coincidan con los deseos de tus dioses dándote fuertes habilidades que te convertirán en un santo viviente de tu religión o en el castigador que acabará con los herejes de tu religión. A medida que tu fe vaya creciendo, la energía divina de tu patrón comenzará a hacerse mas presente en ti imbuyéndote con su fuerza, permitiéndote resistir cualquier ataque lanzado hacia tí, volviéndote mas fuerte durante tus cruzadas e incluso trayéndote de vuelta de entre los muertos para que puedas volver a luchar en su nombre.
+
 ## Rango I
 
 Tira un dado de desafío adicional en tiros defensivos de sabiduría.
