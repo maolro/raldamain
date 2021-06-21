@@ -24,7 +24,7 @@ La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar
 
 <u>Nivel 8:</u> Los personajes de este nivel social forman parte de las grandes casas nobles o se tratan de poderosos magnates cuya riqueza supera la de la vieja nobleza. Poseen las propiedades y agentes propios de una organización de nivel 4 y en sus contactos figuran las personalidades más importantes del país. No obstante, a niveles de riqueza tan altos estos personajes formarán parte de todo tipo de intrigas palaciegas y una mala decisión puede conducir a la muerte o la desgracia.
 
-<u>Nivel 9:</u> Un personaje de este nivel social se trata de un miembro de la realeza o la familia gobernante de una nación, contando con inmensa riqueza y prestigio a nivel internacional. La riqueza de estos personajes les permite tener propiedades y agentes como si se tratasen de una organización de nivel 5 (nivel 6 si son el líder de la nación). Sus decisiones son capaces de cambiar el rumbo de una nación y se encuentran por encima de la 
+<u>Nivel 9:</u> Un personaje de este nivel social se trata de un miembro de la realeza o la familia gobernante de una nación, contando con inmensa riqueza y prestigio a nivel internacional. La riqueza de estos personajes les permite tener propiedades y agentes como si se tratasen de una organización de nivel 5 (nivel 6 si son el líder de la nación). Sus decisiones son capaces de cambiar el rumbo de una nación y se encuentran por encima de la ley.
 
 ## Crédito
 
