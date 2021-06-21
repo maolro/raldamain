@@ -33,7 +33,7 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 ## Rango IV
 
- <u>Derrumbamiento:</u> Como acción de turno completo puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas lsa criaturas que se encuentren en ese espacio deberán tirar DES contra tus dados de ataque elemental o sufrirán 6+Éxito daño contundente y acabarán agarradas por la tierra. Puedes gastar 2 ventajas generadas para que estas queden enterradas bajo, lo cual les podrá a riesgo de ahogarse.
+ <u>Derrumbamiento:</u> Como acción de turno completo puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas las criaturas que se encuentren en ese espacio deberán tirar DES contra tus dados de ataque elemental o sufrirán 6+Éxito daño contundente y acabarán agarradas por la tierra. Puedes gastar 2 ventajas generadas para que estas queden enterradas bajo, lo cual les podrá a riesgo de ahogarse.
 
 <u>Espinas de piedra:</u> Puedes hacer daño perforante con ataques elementales. El daño perforante hace +1 daño base y tus heridas permanentes son de 1 nivel superior. Al usar control terrestre puedes llenar un área de espinas, las cuales infligirán 2 daño no-letal a las criaturas que intenten pasar y convertirán la zona en Terreno difícil.
 
