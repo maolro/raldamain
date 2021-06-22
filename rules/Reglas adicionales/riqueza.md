@@ -28,7 +28,7 @@ La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar
 
 ## Crédito
 
-Cada nivel social posee una cantidad de crédito igual a 2 veces su nivel de riqueza, el cual puede ser empleado para obtener una vasta cantidad de útiles y servicios. El crédito se restaurará al cabo de un año salvo que el personaje baje de categoría social
+Cada nivel social posee una cantidad de crédito igual a su nivel de riqueza, el cual puede ser empleado para obtener una vasta cantidad de útiles y servicios. El crédito se restaurará al cabo de un mes salvo que el personaje baje de categoría social.
 
 Estas son algunas posibilidades en las cuales se puede invertir el crédito.
 
