@@ -16,6 +16,8 @@ Los ustileses son un pueblo diverso a causa del mestizaje con otras culturas. Su
 
 Jinetes de los yermos, habitantes del desierto, cabalgadores de las arenas, los Temash han recibido incontables nombres de incontables pueblos a lo largo de su historia, pero a los Temash ya no les importan ni esos nombres ni esos pueblos, con sus imperios, sus disputas y sus conflictos, pues el Imperio, el Hogar de los Temash se desvaneció hace mucho y eso les enseñó que todo es efímero, que todo acabará cayendo y que el fin ya sea tarde o temprano, siempre llegará. Así los Temash viven su vida, una vida en la que se dedicaran a marchar con *su* gente, proteger *sus* ciudades sagradas, recorrer *sus* desiertos y adorar a *sus* ancestros, todo con la sabiduría de que incluso ellos encontraran su final, pero al igual que las interminables arenas de sus desiertos, los Temash están decididos a ver el final del mundo con sus propios ojos. Y hasta entonces, se reirán, se reirán de todos los grandes Imperios y reinos que han visto su final en las dunas de su hogar.  
 
+Los temash típicamente tienen la piel de  color moreno oscuro y el pelo negro azabache
+
 ### Jadditas
 
 Los jadditas son los valerosos jinetes del desierto, viviendo estrictamente por sus códigos de honor y trayendo orden a las tierras más inhóspitas.
@@ -34,11 +36,11 @@ Se dice que la libertad fluye en la sangre de los kratenses. Varios siglos vivie
 
 ### Mazarinos
 
-Herederos del imperio más glorioso de antaño, los mazarinos viven sumidos en la decadencia siempre pensando en lo que podrían ser.
+El Gran Imperio de Mazarín, grande como fue, avanzado como fue, poderoso como fue, ya no está, ahora reducido a una sombra de su antigua gloria, a una fracción de su antiguo poder. Aunque los Mazarinos no parecen o no quieren darse cuenta de esto, pues siguen pensando que todos los países les temen, siguen pensando que Svaikal es la capital del mundo, y que sus ejércitos son los más poderosos de Raldamain. Esta manera de pensar hace de los Mazarinos un pueblo decadente, sumido en fantasías de poder, una gente que esta constantemente viviendo en el pasado y es incapaz de asumir la realidad, por triste que esta sea. Aunque debajo de esa capa de decadencia y ensoñaciones se puede encontrar al pueblo trabajador, resiliente y orgulloso que una vez puso al mundo en sus rodillas, Si solo alguien fuese lo suficientemente fuerte para levantar la capa de fantasias y autocomplacencia que plaga a la gente de Mazarín, es seguro que el mundo entero temblaría ante su resurgir.
 
 ### Dairovios
 
-Rodeados del miedo y la superstición, los dairovios son bien conocidos por su poder sombrío y tendencia a la brujería. 
+Superstición y miedo, luces y sombras, realidad e ilusión presente y pasado, en las sombras de Dairov todo ello baila junto y se mezcla para crear el paisaje oscuro y lóbrego en el que viven los Dairovios, aunque eso no es todo lo que crean al bailar, a veces, la oscuridad llama a la gente, dándoles poderes paganos, mostrándoles visiones del pasado y llevándoles a lugares pertenecientes a otro mundo, este baile de poderes, de luces y de sombras es ya una cosa común en la vida de los Dairovios, cuya conexión natural con las sombras es solo acentuada por esa macabra danza.
 
 ## No-humanos
 
