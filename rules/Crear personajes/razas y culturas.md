@@ -16,7 +16,7 @@ Los ustileses son un pueblo diverso a causa del mestizaje con otras culturas. Su
 
 Jinetes de los yermos, habitantes del desierto, cabalgadores de las arenas, los Temash han recibido incontables nombres de incontables pueblos a lo largo de su historia, pero a los Temash ya no les importan ni esos nombres ni esos pueblos, con sus imperios, sus disputas y sus conflictos, pues el Imperio, el Hogar de los Temash se desvaneció hace mucho y eso les enseñó que todo es efímero, que todo acabará cayendo y que el fin ya sea tarde o temprano, siempre llegará. Así los Temash viven su vida, una vida en la que se dedicaran a marchar con *su* gente, proteger *sus* ciudades sagradas, recorrer *sus* desiertos y adorar a *sus* ancestros, todo con la sabiduría de que incluso ellos encontraran su final, pero al igual que las interminables arenas de sus desiertos, los Temash están decididos a ver el final del mundo con sus propios ojos. Y hasta entonces, se reirán, se reirán de todos los grandes Imperios y reinos que han visto su final en las dunas de su hogar.  
 
-Los temash típicamente tienen la piel de  
+Los temash típicamente tienen la piel de  color moreno oscuro y el pelo negro azabache
 
 ### Jadditas
 
@@ -40,7 +40,7 @@ El Gran Imperio de Mazarín, grande como fue, avanzado como fue, poderoso como f
 
 ### Dairovios
 
-Rodeados del miedo y la superstición, los dairovios son bien conocidos por su poder sombrío y tendencia a la brujería. 
+Superstición y miedo, luces y sombras, realidad e ilusión presente y pasado, en las sombras de Dairov todo ello baila junto y se mezcla para crear el paisaje oscuro y lóbrego en el que viven los Dairovios, aunque eso no es todo lo que crean al bailar, a veces, la oscuridad llama a la gente, dándoles poderes paganos, mostrándoles visiones del pasado y llevándoles a lugares pertenecientes a otro mundo, este baile de poderes, de luces y de sombras es ya una cosa común en la vida de los Dairovios, cuya conexión natural con las sombras es solo acentuada por esa macabra danza.
 
 ## No-humanos
 
