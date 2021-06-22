@@ -34,7 +34,7 @@ Se dice que la libertad fluye en la sangre de los kratenses. Varios siglos vivie
 
 ### Mazarinos
 
-Herederos del imperio más glorioso de antaño, los mazarinos viven sumidos en la decadencia siempre pensando en lo que podrían ser.
+El Gran Imperio de Mazarín, grande como fue, avanzado como fue, poderoso como fue, ya no está, ahora reducido a una sombra de su antigua gloria, a una fracción de su antiguo poder. Aunque los Mazarinos no parecen o no quieren darse cuenta de esto, pues siguen pensando que todos los países les temen, siguen pensando que Svaikal es la capital del mundo, y que sus ejércitos son los más poderosos de Raldamain. Esta manera de pensar hace de los Mazarinos un pueblo decadente, sumido en fantasías de poder, una gente que esta constantemente viviendo en el pasado y es incapaz de asumir la realidad, por triste que esta sea. Aunque debajo de esa capa de decadencia y ensoñaciones se puede encontrar al pueblo trabajador, resiliente y orgulloso que una vez puso al mundo en sus rodillas, Si solo alguien fuese lo suficientemente fuerte para levantar la capa de fantasias y autocomplacencia que plaga a la gente de Mazarín, es seguro que el mundo entero temblaría ante su resurgir.
 
 ### Dairovios
 
