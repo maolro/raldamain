@@ -60,7 +60,7 @@ Un lago particularmente grande de ácido acostumbra a desprender humos tóxicos.
 
 ## Llanura
 
-### 
+
 
 ## Subterráneo
 
@@ -68,4 +68,3 @@ Un lago particularmente grande de ácido acostumbra a desprender humos tóxicos.
 
 ## Urbano
 
-### 

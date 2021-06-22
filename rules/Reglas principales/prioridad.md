@@ -8,12 +8,12 @@ En una ronda empezará el personaje que más prioridad tenga, el cual podrá rea
 
 Una criatura puede voluntariamente guardar sus acciones hasta el momento adecuado. Si una criatura escoge guardar acción esta su prioridad quedará reducida a la prioridad de que tenga la siguiente criatura en la ronda, prosiguiendo así hasta que decida tomar acción o la ronda finalice. Si escoge tomar acción podrá actuar con prioridad respecto a la criatura que entonces le toque.
 
-El valor de prioridad equivale a la estadística de destreza de un personaje con un bonificador adicional dependiendo del tipo de arma o ataque que utilice. Todas aquellas armas que no están incluidas tienen una prioridad de +0.
+El valor de prioridad equivale a la estadística de destreza de un personaje. Para aquellos personajes que posean el mismo valor de prioridad el orden quedará decidido por el tipo de arma que utilicen, lo cual se ordena tal como indica la siguiente tabla.
 
-| Ataque                                                       | Prioridad |
-| ------------------------------------------------------------ | --------- |
-| Magia de tormenta, magia de aire                             | +3        |
-| Magia de fuego, magia de evocación, armas a distancia, armas sutiles | +2        |
-| Magia de metal, telekinesia, filos perforantes               | +1        |
-| Armas de dos manos                                           | -1        |
-
+| Posición | Tipo de ataque                              |
+| -------- | ------------------------------------------- |
+| 1        | Magia de tormenta, magia de aire            |
+| 2        | Magia de metal, armas a distancia           |
+| 3        | Magia de fuego, magia arcana, armas ligeras |
+| 4        | Armas, otras magias                         |
+| 5        | Magia de tierra, armas de dos manos         |

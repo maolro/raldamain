@@ -1,6 +1,8 @@
+El daño representa la multitud de heridas que puede sufrir
+
 ## Tipos de daño
 
-### Físico
+## Físico
 
 El daño físico representa todo aquel infligido por armas y ataques naturales. Este es reducido por la defensa salvo si es provocado por un objeto de tamaño dos veces superior a la criatura que impacte.
 
@@ -24,11 +26,11 @@ Este daño representa todo aquel provocado por descargas de electricidad de mayo
 
 ### Frío
 
-Este daño es provocado por bajas temperaturas que dependiendo de su intensidad van apagando o incluso congelando partes de tu cuerpo, sin embargo debido a su naturaleza este daño es principalmente no letal. Este daño puede ser provocado de forma natural cuando te encuentras en un entorno gélido o  manipulándolo como hacen ciertos elementalitas pudiendo alentar al objetivo o en casos extremos provocar cangrena en las zonas afectadas por congelación. Aunque el frío no produzca daño letal cuando este reduce la vitalidad de la criatura afectada a 0 esta morirá de hipotermia.
+Este daño es provocado por bajas temperaturas que dependiendo de su intensidad van apagando o incluso congelando partes de tu cuerpo, sin embargo debido a su naturaleza este daño es principalmente no letal. Este daño puede ser provocado de forma natural cuando te encuentras en un entorno gélido o  manipulándolo como hacen ciertos elementalitas pudiendo alentar al objetivo o en casos extremos provocar gangrena en las zonas afectadas por congelación. Aunque el frío no produzca daño letal cuando este reduce la vitalidad de la criatura afectada a 0 esta morirá de hipotermia.
 
 ### Fuego
 
-Este daño está representado tanto por el provocado por el calor como por las llamaradas aunque también puede representar efectos mas adversos tales como ser expuesto a la lava. Este daño será siempre letal abrasando la piel e incluso la carne del objetivo provocándole graves quemaduras en las zonas en las que este afecte. Adicionalmente este daño puede provocar el sobrecalentamiento de objetos metálicos portados por criaturas o presentes en el entorno haciendo que estos provoquen una cantidad menor de este daño por contacto hasta que se enfríen.
+Este daño está representado tanto por el provocado por el calor como por las llamaradas aunque también puede representar efectos mas adversos tales como ser expuesto a la lava. Este daño será no-letal abrasando la piel e incluso la carne del objetivo provocándole graves quemaduras en las zonas en las que este afecte. Adicionalmente este daño puede provocar el sobrecalentamiento de objetos metálicos portados por criaturas o presentes en el entorno haciendo que estos provoquen una cantidad menor de este daño por contacto hasta que se enfríen.
 
 ### Trueno
 

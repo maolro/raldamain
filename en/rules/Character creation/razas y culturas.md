@@ -52,4 +52,3 @@ Los elfos representan todo aquello que la humanidad aspira a ser. Inmortales, be
 
 ### Hobgoblin
 
-Los hobgoblin nacen y viven para la guerra. 
