@@ -3,6 +3,8 @@ title: Ira
 category: Combate
 ---
 
+La ira es un sentimiento que fluye a través de todas las personas, sin embargo tu has aprendido a manejarla para así usarla para tu propio beneficio. Casi entrando en un efecto similar a un trance eres capaz de desconectar parcialmente tu consciencia para dejar tu instinto de supervivencia mas básico de tu interior y de este modo acabar con cualquier cosa o adversario que ose cruzarse en tu camino. A medida que obtienes mas experiencia y vas dominando esta habilidad, te volverás capaz de controlar incluso la respuesta de tu propio cuerpo obteniendo la habilidad de superar todo límite establecido para alcanzar un nuevo nivel.
+
 ## Rango I
 
 <u>Ira:</u> Como acción bonus puedes entrar en un estado de ferocidad superior conocido como ira. Mientras estés en el estado de ira aumentas tu FUE y tu CON por 1 y recibes resistencia igual a tu rango contra efectos mentales y de moral. Sufres 1 daño no-letal cada turno que pases en ira y mientras mantengas este efecto no puedes usar habilidades que requieran paciencia y concentración, atacando cada turno si es posible. No puedes entrar en ira en el caso que estés [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada). Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente.
@@ -31,21 +33,5 @@ Incrementa tu daño base por 1 al entrar en ira.
 
 <u>Difícil de matar:</u> Puedes seguir luchando aunque estés a 0 PV, luchando hasta llevar a tu cuerpo al límite. En este estado activas los efectos de ira de manera automática y sufres 1 daño no-letal cada vez que realices una acción (2 daño no-letal si realizas una acción de turno completo). Sólo caes al borde de la muerte cuando tus PV negativos sean iguales a tu constitución. Si tus PV al acabar la ira exceden tu CON negativa, morirás al instante.
 
-# Ira ancestral
 
-Si tienes una plantilla de cualquier tipo puedes usar ira para canalizar el poder de rus ancestros y liberar su fuerza. Recibes estos dos rangos adicionales, los cuales únicamente requieren que tengas un rango en Ira.
-
-## Rango I
-
-Aumenta tu CAR por 1 al entrar en ira.
-
-<u>Furia elemental:</u>  Tus ataques se infunden con la furia de los elementos. Al entrar en ira, aumenta tu resistencia a un elemento por 2 y tus ataques hacen +1 daño elemental.
-
-<u>Defensa ancestral:</u> Tu poder innato te da reflejos sobrenaturales y protección contra tus enemigos. Eres inmune a flanqueo y puedes cancelar un éxito obtenido por un ataque enemigo una vez al turno.
-
-## Rango II
-
-<u>Aura destructiva:</u> Espíritus protectores, elementos furiosos o sombras demoníacas hieren a todos los que se acerquen a ti. Todas las criaturas en un aura de 15 pies sufren 2 daño no-letal al principio y añade +2 dados de Desventaja a tus tiros defensivos contra ataques a distancia. Esta habilidad sólo puede activarse mientras estas en ira.
-
-<u>Erupción elemental:</u> Una vez por ira como acción estándar puedes hacer un destructivo ataque de energía elemental. El tiro equivale a tu CON con un dado de Soltura por cada 2 rangos de Ira y hace daño igual a 1 + tus rangos en Ira. Si tienes ataque elemental o Descarga de energía, Erupción elemental cuenta como uno de esos ataques pero añades un dado de Ventaja y +1 daño. El número de dados de ventaja y daño base aumenta por 1 cada vez que recibas un rango adicional de Ira.
 

@@ -3,6 +3,8 @@ title: Magia divina
 category: Religión
 ---
 
+Como ferviente creyente de tu fe, tus oraciones se han visto recompensadas por aquel dios al que tanto tiempo llevabas llamando. En el momento en el que él decidió responder a tu llamada sentiste como parte de su energía te llenaba mientras corría por tus venas permitiéndote manifestar temporalmente su poder en multitud de formas para que a cambio defiendas la misma fe que te ha dado tu fuerza. A medida que tu devoción se vaya volviendo mas fuerte serás capaz de manifestar mas energía de tu dios pudiendo utilizarla para bendecir a aliados en su nombre, consagrar la tierra o purificar la que haya sido corrupta o castigar a aquellos que se hayan salido de la senda. 
+
 # Rangos
 
 ## Rango I

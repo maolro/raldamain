@@ -3,6 +3,8 @@ title: Asccendencia fúngica
 category: Ascendencias
 ---
 
+Ya sea desde tus inicios o por un aberrante experimento de laboratorio tu mente ha pasado a formar parte de la red de micelio quedando así atada por un horrible destino. Cuanto mas tiempo pase, mas irán infectando las esporas tu cuerpo deformándolo y volviéndolo mas cercano a la naturaleza de los hongos que a la de los humanos, haciéndote perder así tu cuerpo humano y tu identidad y volviéndote parte de la misma mente colectiva que ahora desearas esparcir.
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.

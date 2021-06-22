@@ -3,6 +3,8 @@ title: Presencia
 category: Social
 ---
 
+Tienes el don de inspirar a todos aquellos que tienes cerca con un sentimiento de lucha o de intimidar a aquellos enemigos que osen oponerse a ti. A medida que pules tu habilidad con la experiencia de las batallas te vas volviendo mas hábil para comandar a las tropas y hacer que estas luchen de una manera mas eficaz así como evitar que estas sucumban fácilmente al pánico, siendo incluso capaz de aumentar la habilidad de tus seres mas cercanos con palabras de aliento para que tengan incluso mas fuerza.
+
 ## Rango I
 
 Tiras un dado de desafío adicional en tiros defensivos de Carisma y añade un dado de soltura a tus tiros de presencia.
@@ -45,7 +47,7 @@ Tiras un dado de desafío adicional en tiros defensivos de Carisma y añade un d
 
 Tiras un dado de desafío adicional en tiros defensivos de Carisma. La distancia máxima de Voz del comandante aumenta hasta 60 pies.
 
-<u>Inspirar leyenda:</u> Los personajes inspirados son capaces de alcanzar la fureza de héroes de leyenda. Al usar inspirar heroísmo el objetivo afectado aumentará otra de sus estadísticas por 1 (podrá superar el 6 de esta manera), y obtendrá además un uso adicional de la habilidad [indómito](https://raldamain.com/rules/Rangos/Social/presencia.html#rango-iii). Mientras estés bajo el efecto de inspirar leyenda recibirás resistencia a efectos mentales igual a tu rango de presencia y al gastar un punto de inspiración podrás añadir un dado de soltura o dificultad al tiro escogido.
+<u>Inspirar leyenda:</u> Los personajes inspirados son capaces de alcanzar la fureza de héroes de leyenda. Al usar inspirar heroísmo el objetivo afectado aumentará otra de sus estadísticas por 1 (podrá superar el 6 de esta manera), y obtendrá además un uso adicional de la habilidad [indómito](https://raldamain.com/rules/Rangos/Social/presencia.html#rango-iii). Mientras estés bajo el efecto de inspirar leyenda recibirás resistencia a efectos mentales igual a tu rango de presencia y añade un dado adicional de soltura a tus tiros de ataque (añade un dado de dificultad si tiras defensivamente).
 
 <u>Bonus táctico:</u> Eres capaz de dirigir a tus aliados a combinar tácticas diferentes para alcanzar la victoria. Al emplear la habilidad [dirigir combatientes](https://raldamain.com/rules/Rangos/Social/presencia.html#rango-ii) podrás tener activas hasta dos tácticas diferentes, las cuales afectrarán a un número de aliados de tu elección (por ejemplo, dos aliados podrían estar afectados por línea defensiva mientras 4 estarán afectados por flanqueadores expertos). No obsante, no podrás afectar a un mismo aliado con dos tácticas diferentes. Si estás dirigiendo a una unidad de soldados podrás gastar 2 ventajas o desventajas generadas para que esta cambie de táctica al momento.
 

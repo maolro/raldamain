@@ -3,6 +3,8 @@ title: Fortitud
 category: Combate
 ---
 
+La resistencia de tu cuerpo es superior a la media, siendo por ello mas resistente que otros miembros de tu especie. A medida que tu cuerpo cicatriza nuevas heridas y se enfrenta a los climas adversos que te rodean tu fortaleza física va aumentando y adaptándose para sobrevivir a condiciones cada vez mas adversas y peligros mayores, pudiendo incluso ser capaz de resistir ataques que acabarían al instante con cualquier otra persona.
+
 ## Rango I
 
 Tira un dado de desafío adicional en tiros defensivos de CON.

@@ -35,9 +35,9 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 4 ventajas para infligir una herida media (infliges una herida grave si usas puño preciso).
 
-<u>Puñetazo mortal:</u> Si logras impactar a la cabeza del objetivo con un puño preciso, pùedes gastar 4 ventajas generadas para multiplicar tu daño base por 2 además de infligir una herida grave. Para que esta habilidad funcione con el objetivo no debe llevar armadura o su defensa tiene que ser reducida a 0.
+<u>Puñetazo mortal:</u> Si logras impactar a la cabeza del objetivo con un puño preciso, puedes gastar 4 ventajas generadas para multiplicar tu daño base por 2 además de infligir una herida grave. Para que esta habilidad funcione con el objetivo no debe llevar armadura o su defensa tiene que ser reducida a 0.
 
-<u>Ataque despiadado:</u> Una vez al turno, haz un ataque natural adicional como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que infringirías normalmente.
+<u>Ataque despiadado:</u> Una vez al turno, haz un ataque natural adicional como acción bonus contra un objetivo que esté aturdido o inconsciente. Las heridas permanentes hechas por este ataque son de un nivel superior al que infligirías normalmente.
 
 # Armas
 

@@ -66,7 +66,7 @@ title: Hechiceros
 
 **Rayo de energía** (acción de movimiento): 2 soltura + 4 habilidad, 3+Éxito daño de fuerza. Radio de impacto 5 pies.1 chi: Incrementa el radio de salpicadura por 5 pies.
 
-**Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 3), y cada punto gastado incrementará el daño base por 1 y el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
+**Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 3), y cada punto gastado añadirá un dado de ventaja al tiro e incrementará el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
 
 **Descarga de energía** (acción estándar, 1 chi): 2 soltura + 4 habilidad, 4+Éxito daño de fuerza. Afecta a todas las criaturas en un cono de 20 pies.
 
@@ -128,7 +128,7 @@ title: Hechiceros
 
 **Ataque elemental** (acción de movimiento): 3 soltura + 3 habilidad, 4+Éxito daño de fuego, frío, rayo o contundente. 2 VEN: Provoca una quemadura (fuego), el objetivo es ralentizado (frío), el objetivo no puede usar reacciones durante el resto de la ronda (rayo), el objetivo es empujado 10 pies y es tropezado. Puede gastar 1 chi para realizar un ataque adicional o incrementar el radio de efecto por 10 pies.
 
-**Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 5), y cada punto gastado incrementará el daño base por 1 y el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
+**Cargar ataque** (acción de movimiento): Almacena energía mágica para liberarla después. Cada uso de cargar ataque aporta 1 punto de energía (máximo 5), y cada punto gastado añadirá un dado de ventaja al tiro e incrementará el radio de efecto por 5 pies. Si el mago sufre daño mientras tenga ataques cargados estos se liberarán en una devastadora explosión, inflgiendo daño igual al número de puntos almacenados + 2 y el mago sufre la misma cantidad de daño no-letal.
 
 **Aura antimágica** (acción estándar, 2 chi): Forma un aura de 15 pies que impedirá toda la magia en ella. Al ser lanzada cancela de inmediato todos los hechizos en tu aura de efecto. El aura durará mientras mantengas la concentración y mientras esta permanezca activa no podrás usar magia para atacar o defenderte. Aura antimágica puede ligarse a un glifo. 
 

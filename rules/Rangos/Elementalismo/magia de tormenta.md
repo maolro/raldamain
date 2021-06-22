@@ -3,6 +3,8 @@ title: Magia de tormenta
 category: Magia elemental
 ---
 
+Tu control avanzado sobre el aire te ha permitido desviarte de su forma mas básica hacia la parte mas destructiva que puede representar, permitiéndote así valerte de poderosas descargas o truenos ensordecedores para abrumar a tu enemigo con una fuerza devastadora. A medida que tu control se vaya haciendo mas fuerte serás mas capaz de almacenar en tu propio cuerpo grandes cantidades de esta energía de forma que luego puedas desatarla en una gran oleada ya sea como una andanada de rayos o como una poderosa ráfaga de poderosos truenos. en ultima instancia serás capaz incluso de vengarte de aquellos enemigos que se atrevan a atacarte haciendo caer sobre ellos la ira directa del cielo o tormentas cataclismicas que arrasen con todo a tu alrededor
+
 ## Rango I 
 
 Añade un dado de soltura a todos tus ataques elementales.
@@ -44,5 +46,4 @@ Añade un dado de soltura a todos tus ataques elementales.
 -  No se pueden hacer ataques a distancia y es imposible concentrarse mientras la tormenta siga activa
 -  Las fuertes lluvias reducen la visibilidad a 15 pies y todas las criaturas que no sean Elementalistas de agua o aire se mueven a mitad de velocidad.
 - Puedes hacer un ataque elemental de rayo, trueno o aire como acción bonus una vez al turno.
-
 

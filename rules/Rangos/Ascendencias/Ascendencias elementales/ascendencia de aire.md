@@ -3,6 +3,8 @@ title: Ascendencia de Aire
 category: Ascendencias
 ---
 
+
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 

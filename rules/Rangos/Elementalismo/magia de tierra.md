@@ -3,6 +3,8 @@ title: Magia de Tierra
 category: Magia elemental
 ---
 
+Tienes la capacidad de manipular uno de los elementos mas abundantes en el plante, la tierra, pudiéndote servir de ella para realizar casi cualquier cosa siempre que nada te impida mantener contacto directo con ella. A medida que tu control se vuelve mas avanzado, te vuelves capaz de manipular mayores cantidades de tierra así como deformarla para utilizarla como una extensión de tu cuerpo en devastadores ataques. En ultima instancia tu control de la tierra será tan fuerte que te permitirá incluso provocar fuertes seísmos o grandes cambios en la forma de un terreno.
+
 ## Rango I
 
 Añade un dado de soltura a todos tus ataques elementales.
@@ -31,7 +33,7 @@ Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño b
 
 ## Rango IV
 
- <u>Derrumbamiento:</u> Como acción de turno completo puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas lsa criaturas que se encuentren en ese espacio deberán tirar DES contra tus dados de ataque elemental o sufrirán 6+Éxito daño contundente y acabarán agarradas por la tierra. Puedes gastar 2 ventajas generadas para que estas queden enterradas bajo, lo cual les podrá a riesgo de ahogarse.
+ <u>Derrumbamiento:</u> Como acción de turno completo puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas las criaturas que se encuentren en ese espacio deberán tirar DES contra tus dados de ataque elemental o sufrirán 6+Éxito daño contundente y acabarán agarradas por la tierra. Puedes gastar 2 ventajas generadas para que estas queden enterradas bajo, lo cual les podrá a riesgo de ahogarse.
 
 <u>Espinas de piedra:</u> Puedes hacer daño perforante con ataques elementales. El daño perforante hace +1 daño base y tus heridas permanentes son de 1 nivel superior. Al usar control terrestre puedes llenar un área de espinas, las cuales infligirán 2 daño no-letal a las criaturas que intenten pasar y convertirán la zona en Terreno difícil.
 
