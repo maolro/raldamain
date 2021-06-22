@@ -3,6 +3,8 @@ title: Magia de Fuego
 category: Magia elemental
 ---
 
+Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos de tu cuerpo para así poder emplear todo su poder destructivo. Cuanto mas vas conectando con tu elemento, mayor se va volviendo tu sincronía con él dejándote alterarlo a un mayor nivel, cambiando su intensidad en incluso dándole forma. Cuando tu control alcance sus ultimas etapas de crecimiento tu control será casi absoluto pudiendo cualquier cosa entre tus llamas o incluso hacer que llueva fuego desde el mismísimo cielo desatando un gran desastre.
+
 ## Rango I
 
 Añade un dado de soltura a todos tus ataques elementales. 
@@ -25,7 +27,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 Añade un dado de soltura a todos tus ataques elementales. Incrementa tu daño base por 1.
 
-<u>Sobrecarga:</u> En lugar de hacer un ataque elemental puedes almacenar la energía de este para liberarla después. Cada ataque que almacenes te otorga un punto de energía, llegando a tener un número máximo de puntos de energía igual a tu rango de magia de fuego + 1. Al hacer un ataque elemental puedes gastar tantos puntos de energía para incrementar la fuerza de tu ataque como haya en tu reserva. Cada punto de energía gastado aumenta tu daño base por 1 y el radio de salpicadura por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión que hace daño de fuego a todas las criaturas en un radio igual a 5 x puntos de energía igual y 2 + el número de puntos de energía que tengas almacenados daño fuego. Tú también sufrirás daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
+<u>Sobrecarga:</u> En lugar de hacer un ataque elemental puedes almacenar la energía de este para liberarla después. Cada ataque que almacenes te otorga un punto de energía, llegando a tener un número máximo de puntos de energía igual a tu rango de magia de fuego + 1. Al hacer un ataque elemental puedes gastar tantos puntos de energía para incrementar la fuerza de tu ataque como haya en tu reserva. Cada punto de energía gastado añade un dado de ventaja al tiro de ataque e incrementa el radio de efecto por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión que hace daño de fuego a todas las criaturas en un radio igual a 5 x puntos de energía igual y 2 + el número de puntos de energía que tengas almacenados daño fuego. Tú también sufrirás daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
 
 <u>Pirotecnia:</u> Desbloqueas la técnica avanzada de humo. Como acción estándar puedes manipular las llamas para moverlas a tu voluntad. El área que puedes afectar equivale a 10 pies x tu rango de magia elemental y puedes usar esta habilidad para hacer crecer o decrecer las llamas, causando que estas inflijan quemaduras más graves o leves (esto reducirá o incrementará las quemaduras producidas por un paso).
 

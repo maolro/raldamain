@@ -3,6 +3,8 @@ title: Magia de Metal
 category: Magia elemental
 ---
 
+Tras un estudio sobre el control de la tierra has conseguido aprender ha detectar las impurezas que se encuentran en casi todos los metales que el hombre ha aprendido a manejar, pudiendo deformar férreas estructuras con tan solo unos pocos movimientos de tu cuerpo. A medida que tu control sobre el metal se va afianzando te volverás capaz de manipular cantidades mas grandes así como de hacerlo de formas mas complejas, pudiendo así mover diferentes trozos de metal de diferentes formas todos en perfecta sincronía sirviéndote de la atracción casi magnética que eres capaz de producir. En sus ultimas instancias serás incluso capaz de aprovechar las mas mínimas cantidades de este elemento para producir ataques devastadores sobre el cuerpo de tu enemigo.
+
 ## Rango I
 
 Añade un dado de soltura a todos tus ataques elementales.
@@ -27,7 +29,7 @@ Añade un dado de soltura a todos tus ataques elementales. Hacer un ataque eleme
 
 <u>Fortalecer ataques:</u> Puedes emplear una acción de movimiento para incrementar la fuerza de un ataque elemental, aumentando su tamaño por 5 pies y su daño base por 1. Usar esta habilidad te cuesta una acción bonus si empleas uno de los objetos metálicos atrapados en tu aura magnética para incrementar su fuerza.
 
-<u>Ferrokinesia</u>: Como acción estándar puedes agarrar telekinéticamente a una criatura que lleve armadura metálica o esté hecha de metal, tirando tus dados de magia elemental contra sus [heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#hero%C3%ADsmo-fue). Puedes gastar una ventajas generadas de esta manera para mover 5 pies al objetivo en cualquier dirección o empujarlo contra una superfície, oscasionándole daño como si [cayese](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ca%C3%ADdas) un número de pies igual a los pies que sea empujado.
+<u>Ferrokinesia</u>: Como acción estándar puedes agarrar telekinéticamente a una criatura que lleve armadura metálica, tirando tus dados de magia elemental contra sus [heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#hero%C3%ADsmo-fue). Puedes gastar una ventajas generadas de esta manera para mover 5 pies al objetivo en cualquier dirección o empujarlo contra una superfície, oscasionándole daño como si [cayese](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ca%C3%ADdas) un número de pies igual a los pies que sea empujado.
 
 ## Rango IV
 
@@ -41,5 +43,5 @@ Añade un dado de soltura a todos tus ataques elementales. Una vez al turno pued
 
 <u>Golpe mortal</u>: Como acción de turno completo puedes hacer un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. Esta habilidad funciona como un ataque de elementalismo de metal pero tu objetivo no podrá defenderse y las heridas permanentes que inflijas serán de un nivel superior. No puedes usar esta habilidad en el mismo objetivo salvo que le claves otra espina metálica. 
 
-<u>Maestría del metal</u>: Ignoras la defensa de tu objetivo otorgada por armadura metálica siempre que lleve un metal que puedas manipular. Además, puedes emplear una acción estándar para destruir una superficie de 15 pies de radio hecha de materiales metálicos.
+<u>Maestría del metal</u>: Ignoras la defensa de tu objetivo otorgada por armadura metálica siempre que lleve un metal que puedas manipular. Si tu objetivo lleva una armadura reforzada con glifos debes causarle daño considerable antes que puedas moldearla, requiriendo que reduzcas su valor de defensa por 3 o más. Además, puedes emplear una acción estándar para destruir una superficie de 15 pies de radio hecha de materiales metálicos.
 

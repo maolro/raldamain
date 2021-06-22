@@ -3,6 +3,8 @@ title: Armaduras
 category: Combate
 ---
 
+Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras aprendiendo así como exactamente hacer para evitar las penalizaciones que normalmente limitarían a los demás. A medida que tu conocimiento y entrenamiento avanzan te vas volviendo mas apto a la hora de llevarla así como de modificarla para que se adapte mejor a tu cuerpo, llegando incluso a poder vestirla como si se tratase de una extensión de tu propio cuerpo.
+
 ## Rango I
 
 <u>Entrenamiento con armaduras</u>: Reduce por 1 el penalizador de armadura. Si logras reducir el penalizador a 0, puedes moverte y usar habilidades de [reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html) como si no llevases armadura. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 1.

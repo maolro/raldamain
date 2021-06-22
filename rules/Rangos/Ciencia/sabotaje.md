@@ -3,6 +3,8 @@ title: Sabotaje
 category: Ciencia
 ---
 
+Tienes amplios conocimientos sobre como funcionan los conductos de chi dentro de las maquinas que te rodean y tienes las habilidades suficientes para modificar su funcionamiento. Según aumentes tu experiencia serás capaz de reforzar sistemas de forma que sean inaccesibles o por lo contrario, invadir cualquier sistema que caiga en tus manos.
+
 ## Rango I
 
 Añade un dado de soltura adicional a tus tiros de sabotaje.

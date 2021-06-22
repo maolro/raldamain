@@ -3,6 +3,8 @@ title: Rastrear
 category: Combate
 ---
 
+Te has entrenado para ser experto en todo lo relacionado con un terreno determinado, teniendo un completo conocimiento sobre él así como todo lo relacionado con el mismo. A medida que tu experiencia incrementa a lo largo de tus viajes, tu habilidad también lo va haciendo, volviéndote capaz de aplicar tus conocimientos en otros terrenos, así como servirte de estos para dar caza a tu presa.
+
 ## Rango I
 
 Recibes un nivel de talento adicional en Supervivencia.

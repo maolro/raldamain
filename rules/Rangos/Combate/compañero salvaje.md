@@ -3,6 +3,8 @@ title: Compañero salvaje
 category: Combate
 ---
 
+Te has decidido por entrenar un animal salvaje para que te acompañe en tus viajes y te asista de ser necesario, entrenándolo para que se mantenga a tu lado pase lo que pase. Cuanto mas tiempo pasáis juntos mas fuertes se van volviendo los lazos que os unen, aprendiendo así como saltaros la barrera del idioma para poder comunicaros entre vosotros e incluso influenciados y aprendiendo mutuamente sobre las habilidades del otro.
+
 ## Rango I
 
 <u>Compañero salvaje:</u> Tienes un poderoso vínculo con un animal o criatura mágica quién te seguirá con la más absoluta lealtad. Un compañero salvaje es una criatura construida con 3 [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) y con la forma base de tu elección. Si otra habilidad te da una criatura como aliada, como es el caso de [montar](https://raldamain.com/rules/Rangos/Combate/montar.html) o determinadas ascendencias, puedes mejorar esa criatura con 3 PT adicionales en lugar de recibir un compañero salvaje. Los animales de la misma especie o especies relacionadas con tu compañero salvaje no son naturalmente hostiles hacia ti.

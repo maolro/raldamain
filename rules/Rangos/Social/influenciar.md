@@ -3,6 +3,8 @@ title: Influenciar
 category: Social
 ---
 
+Tienes un dominio completo sobre la palabra así como de su significado sabiendo que decir exactamente en cualquier situación para salirte con la tuya. A medida que expandes tu horizontes conociendo mas clases de personas tus habilidades también aumentan evitando así que cualquiera pueda darse cuenta de cuan calculadas son tus palabras. A medida que tu relación con las personas cercanas crezca también lo hará tu influencia pudiendo así finalmente manipularlas a tu antojo sin que siquiera ellas sean conscientes de ello.
+
 ## Rango I
 
 Añade un dado de soltura a tus tiros de Influenciar. Puedes tirar Influenciar para defenderte de efectos mentales.
