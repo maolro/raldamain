@@ -3,76 +3,76 @@ title: Venenos y enfermedades
 main: Reglas adicionales
 ---
 
-## Enfermedades
+## Diseases
 
-Cada día después de que una criatura sea contagiada de una enfermedad, esta deberá tirar contra el tiro de gravedad de esta. Si tiene éxito, reduce el nivel de la enfermedad por 1, recuperándose si llega a 0, pero si fracasa aumentará el nivel de la enfermedad por 1. Las ventajas y desventajas generadas añadirán dados de Ventaja o Desventaja al siguiente tiro contra la enfermedad.
+Each day after a creature is infected with a disease, it must roll against the gravity roll of this one. If it succeeds, it reduces the level of the disease by 1, recovering if it reaches 0, but if it fails it will increase the level of the disease by 1. The advantages and disadvantages generated will add Advantage or Disadvantage dice to the next roll against the disease.
 
-### Enfermedad física
+### Physical illness
 
-1. **Asintomática:** La criatura no sufre ningún efecto negativo, pero la enfermedad permanece en su organismo. Aún puede contagiarla a otras personas con quiénes tenga contacto cercano.
-2. **Fatigada:** La criatura está fatigada y enfermada. En este paso la criatura puede curarse de la fatiga si pasa un día entero descansando.
-3. **Exhausta:** La criatura está exhausta y enfermada. Si la criatura pasa un día entero descansando perderá el efecto de estado exhausta y pasará a estar fatigada. 
-4. **Incapacitada**: La criatura no puede tomar acciones ni reacciones, pero mantiene la conciencia y puede realizar acciones mentales. Su FUE y DES se reducen a 0, y su CON se reduce por 1.
-5. **Coma:** La criatura está inconsciente. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0, y su CON se reduce por 2.
-6. **Muerte:** La criatura muere de su enfermedad. Su cadaver puede seguir siendo contagioso.
+1. **Asymptomatic:** The creature suffers no ill effects, but the disease remains in its organism. He can still spread it to others with whom he has close contact.
+2. **Fatigued:** The creature is fatigued and sick. In this step the creature can be cured of fatigue if it spends a whole day resting.
+3. **Exhausted:** The creature is exhausted and sick. If the creature spends a whole day resting it will lose the exhausted state effect and will become fatigued. 
+4. **Incapacitated**: The creature cannot take actions or reactions, but maintains consciousness and can perform mental actions. His STR and DEX are reduced to 0, and his CON is reduced by 1.
+5. **Coma:** The creature is unconscious. It cannot be awakened until it recovers one step from its sickness. Its STR and DEX are reduced to 0, and its CON is reduced by 2.
+6. **Death:** The creature dies of its disease. His corpse may still be contagious.
 
-###  Enfermedad mental
+### Mental illness
 
-1. **Asintomática:** La criatura no sufre ningún efecto negativo, pero la enfermedad permanece en su organismo. Aún puede contagiarla a otras personas con quiénes tenga contacto cercano.
-2. **Desorientada:** La criatura está enfermada y recibe un penalizador -1 en todas sus estadísticas mentales.
-3. **Confusa:** La criatura está enfermada y confundida. Sus estadísticas mentales se reducen por 2. 
-4. **Delirio**: La criatura está incapacitada y tiene dificultades distinguendo realidad de sueños. No es capaz de distinguir a amigos de enemigos, añadiendo dos dados de Desventaja a todos los tiros de sanación hechos por aliados. La FUE y DES de la criatura se reducen a 0, y no podrá realizar acciones que requieran un esfuerzo mental.
-5. **Coma:** La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
-6. **Muerte:** La criatura muere de su enfermedad. Su cadáver puede seguir siendo contagioso.
+1. **Asymptomatic:** The creature suffers no ill effects, but the disease remains in its organism. He can still spread it to other people with whom he has close contact.
+2. **Disoriented:** The creature is sick and receives a -1 penalty on all his mental statistics.
+3. **Confused:** The creature is sickened and confused. Its mental stats are reduced by 2. 
+4. **Delirious**: The creature is incapacitated and has difficulty distinguishing reality from dreams. It is unable to distinguish friend from foe, adding two Disadvantage dice to all healing rolls made by allies. The creature's FUE and DES are reduced to 0, and it will not be able to perform actions that require mental effort.
+5. **Coma:** The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness. Its FUE and DES are reduced to 0.
+6. **Death:** The creature dies of its disease. Its corpse may remain contagious.
 
-## Venenos
+1. ## Poisons
 
-Cada cuatro turnos después de que una criatura sea envenenada esta deberá tirar CON contra el tiro de gravedad del veneno. Si tiene éxito, no sufrirá ningún efecto y obtendrá un número de puntos de recuperación igual a los éxitos obtenidos. La criatura se recuperará del veneno cuando los puntos de recuperación sean iguales o superiores a la tasa de recuperación. En el caso que fracase en el tiro de CON, el nivel del veneno aumentará por 1. Las ventajas y desventajas generadas añadirán dados de Ventaja o Desventaja al siguiente tiro contra el veneno.
+   Every four turns after a creature is poisoned it must roll CON against the poison's gravity roll. If it succeeds, it will suffer no effects and will gain a number of recovery points equal to the successes rolled. The creature will recover from the poison when the recovery points are equal or higher than the recovery rate. In case it fails the CON roll, the poison level will increase by 1. The advantages and disadvantages generated will add Advantage or Disadvantage dice to the next roll against the poison.
 
-### Veneno de FUE
+   ### FUE Poison
 
-1. **Debilitada:** La criatura reduce su FUE por 1.
-2. **Agotada:** La criatura reduce su FUE por 1 y reduce su velocidad por 10 pies.
-3. **Atrofiada:** La criatura reduce su FUE por 1 y pierde una acción de movimiento.
-4. **Inmovilizada**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
-5. **Muerte:** La criatura muere envenenada.
+   1. **Weakened:** The creature reduces its STR by 1.
+   2. **Exhausted:** The creature reduces its STR by 1 and its speed by 10 feet.
+   3. **Atrophied:** The creature reduces its STR by 1 and loses a move action.
+   4. **Immobilized**: The creature cannot perform actions or reactions. Its strength is reduced to 0.
+   5. **Death**: The creature dies of poison.
 
-### Veneno de DES
+   ### DES Poison
 
-1. **Alentada:** La criatura reduce su DES por 1. Reduce su velocidad por 10 pies.
-2. **Enturmecida:** La criatura reduce su DES por 1. No puede Esquivar como reacción.
-3. **Atrofiada:** La criatura reduce su DES por 1 y pierde una acción de movimiento.
-4. **Inmovilizada**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
-5. **Muerte:** La criatura muere envenenada.
+   1. **Staggered:** The creature reduces its DEX by 1. It reduces its speed by 10 feet.
+   2. **Stiffened:** The creature reduces its DES by 1. Cannot Dodge in reaction.
+   3. **Atrophied:** The creature reduces its DES by 1 and loses a move action.
+   4. **Immobilized**: The creature cannot perform actions or reactions. Its strength is reduced to 0.
+   5. **Death**: The creature dies of poison.
 
-### Veneno de CON
+   ### CON Poison
 
-1. **Debilitada:** La criatura reduce su CON por 1. Sufre 1 daño no-letal cada vez que realice un tiro de Veneno.
-2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar Enfermada. Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
-3. **Exhausta:** La criatura reduce su CON por 1 y pasa a estar Exhausta. Sufre 1 daño letal cada vez que realice un tiro de veneno.
-4. **Inconsciente**: La criatura cae inmediatamente inconsciente. No puede ser despertada
-5. **Muerte:** La criatura muere envenenada.
+   1. **Weakened:** The creature reduces its CON by 1. It suffers 1 non-lethal damage each time it makes a Poison shot.
+   2. **Sickened:** The creature reduces its CON by 1 and becomes Sickened. It suffers 2 non-lethal damage each time it makes a Poison shot.
+   3. **Exhausted:** The creature reduces its CON by 1 and becomes Exhausted. It suffers 1 lethal damage each time it makes a Poison shot.
+   4. **Unconscious**: The creature immediately falls unconscious. It cannot be awakened.
+   5. **Death**: The creature dies of poison.
 
-### Veneno de INT
+   ### INT Poison
 
-1. **Sobrecargada:** La criatura reduce su INT por 1.
-2. **Daño cerebral:** La criatura reduce su INT por 1. No puede usar talentos relacionados con inteligencia y pierde un rango de un atributo relacionado con la INT.
-3. **Animalística:** La criatura reduce su INT por 1. No podrá lanzar hechizos ni usar atributos de Conocimiento. Actuar
-4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
-5. **Muerte:** La criatura muere envenenada.
+   1. **Overloaded:** Creature reduces its INT by 1.
+   2. **Brain damage:** Creature reduces its INT by 1. It cannot use intelligence-related talents and loses one rank of an INT-related attribute.
+   3. **Animalistic:** The creature reduces its INT by 1. It will not be able to cast spells or use Knowledge attributes. Act
+   4. **Coma**: The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness. Its STR and DEX are reduced to 0.
+   5. **Death:** The creature dies of poison.
 
-### Veneno de SAB
+   ### Wisdom poison
 
-1. **Abstraída:** La criatura reduce su SAB por 1. 
-2. **Desconcentrada:** La criatura reduce su SAB por 1. Pierde la capacidad de mantener la concentración y no puede usar talentos relacionados con la sabiduría.
-3. **Confusa:** La criatura reduce su SAB por 1 y pasa a esar Confundida.
-4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
-5. **Muerte:** La criatura muere envenenada.
+   1. **Absorbed:** The creature reduces its WIS by 1. 
+   2. **Mind fatigue:** The creature reduces its WIS by 1. It loses the ability to maintain concentration and cannot use wisdom-related talents.
+   3. **Confused:** The creature reduces its WIS by 1 and becomes Confused.
+   4. **Coma**: The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness. Its FUE and DES are reduced to 0.
+   5. **Death:** The creature dies of poison.
 
-###  Veneno de CAR
+   ### Charisma poison
 
-1. **Relajada:** La criatura reduce su CAR por 1.
-2. **Dócil:** La criatura reduce su CAR por 1. No puede usar talentos relacionados con el carisma y pierde un rango de un atributo relacionado con la CAR (Presencia o Influenciar).
-3. **Drogada:** La criatura reduce su CAR por 1 y pierde toda fuerza de voluntad. No puede tirar defensa contra habilidades de Presencia e Influenciar y obedece órdenes que recibe sin rechistar.
-4. **Catatónica**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
-5. **Muerte:** La criatura muere envenenada.
+   1. **Relaxed:** The creature reduces its CHA by 1. It cannot use skills related to Rage or follow battle tactics
+   2. **Docile:** The creature reduces its CHA by 1. It cannot use charisma related talents and loses one rank of a CAR related attribute (Presence or Influence).
+   3. **Compliant:** The creature reduces its CHA by 1 and loses all willpower. He cannot roll defense against Presence and Influence abilities and obeys orders he receives without protest.
+   4. **Catatonic**: The creature cannot perform actions or reactions. Its strength is reduced to 0.
+   5. **Death:** The creature dies poisoned.
