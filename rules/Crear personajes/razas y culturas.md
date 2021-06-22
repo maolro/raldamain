@@ -16,8 +16,6 @@ Los ustileses son un pueblo diverso a causa del mestizaje con otras culturas. Su
 
 Jinetes de los yermos, habitantes del desierto, cabalgadores de las arenas, los Temash han recibido incontables nombres de incontables pueblos a lo largo de su historia, pero a los Temash ya no les importan ni esos nombres ni esos pueblos, con sus imperios, sus disputas y sus conflictos, pues el Imperio, el Hogar de los Temash se desvaneció hace mucho y eso les enseñó que todo es efímero, que todo acabará cayendo y que el fin ya sea tarde o temprano, siempre llegará. Así los Temash viven su vida, una vida en la que se dedicaran a marchar con *su* gente, proteger *sus* ciudades sagradas, recorrer *sus* desiertos y adorar a *sus* ancestros, todo con la sabiduría de que incluso ellos encontraran su final, pero al igual que las interminables arenas de sus desiertos, los Temash están decididos a ver el final del mundo con sus propios ojos. Y hasta entonces, se reirán, se reirán de todos los grandes Imperios y reinos que han visto su final en las dunas de su hogar.  
 
-Los temash típicamente tienen la piel de  
-
 ### Jadditas
 
 Los jadditas son los valerosos jinetes del desierto, viviendo estrictamente por sus códigos de honor y trayendo orden a las tierras más inhóspitas.
