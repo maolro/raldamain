@@ -152,15 +152,28 @@ Has abandonado tu humanidad al completo para transformarte en un no-muerto. Esto
 
 ## Lich
 
+La maldición del lich representa el horripilante proceso que debe seguir un mago para alcanzar la inmortalidad de la no-muerte, trascendiendo su cuerpo mortal para alcanzar un poder inimaginable. A diferencia de otras maldiciones la maldición del lich sólo puede obtenerse de manera voluntaria y no hay manera de transmitirla, pero avanzar por los diferentes grados de maldición es un proceso complejo y las consecuencias por fracasar son inimaginables.
+
 ### Grado 1
 
+Para obtener este grado de maldición necesitas tener rango III o más de nigromancia y rango III de conocimiento o magia divina.
 
+- Aumenta tu estadística de CAR por 1 y reduce tu CON por 1.
+- 
 
 ### Grado 2
 
+Para obtener este grado de maldición necesitas tener rango V o más de nigromancia y 5 rangos totales relacionados con la magia arcana.
 
+- Tu cuerpo desprende un aura de energía necrótica que drena la vida de todos los seres vivos a tu alrededor. Toda criatur
 
 ### Grado 3
 
+Para obtener este grado de maldición necesitas tener rango VI de nigromancia y 7 rangos totales relacionados con la magia arcana.
 
+- Aumenta tu estadística de INT por 1, pudiendo superar el 6.
+
+- Has descubierto como sellar tu alma a un receptáculo conocido como filacterio, permitiéndote rejuvenecer tu cuerpo al morir. El proceso de rejuvencer dura un total de 3 días y te permite formar un cuerpo nuevo al que poseer. Mientras tu alma permanezca ligada esta no puede ser exorcizada ni atrapada salvo por artefactos de nivel equivalente o superior a tu filacterio. Un filacterio solo puede ser destruido si se coloca en tierra consagrada, es afectado por disyunción mágica durante dos rondas seguidas o es impactado por un arma mítica con la mejora Drenadora.
+
+  
 
