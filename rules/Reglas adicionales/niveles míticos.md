@@ -2,7 +2,7 @@ Los niveles míticos sirven para formar personajes con fuerza y capacidades lege
 
 ## Niveles míticos
 
-Cuando un personaje alcance un nivel mítico recibirá una de las siguientes habilidades según el nivel mítico total que tenga además de las mejoras normales por alcanzar dicho nivel. 
+Cuando un personaje alcance un nivel mítico recibirá una de las siguientes habilidades según el nivel mítico total que tenga. Además de las mejoras obtenidas en cada nivel un personaje podrá escoger dos atributos míticos de su elección, los cuales modifican y mejoran los rangos que ya posea.
 
 | Nivel mítico | Habilidades                                                  |
 | ------------ | ------------------------------------------------------------ |
@@ -23,30 +23,44 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 <u>Elegido del destino:</u>  
 
-## Rangos míticos
+<u>Iniciativa mítica:</u>
 
-Aquellos rangos escogidos con un nivel mítico otorgan habilidades superiores a las que otorgaría un rango normal. Estos rangos, conocidos como rangos míticos, pueden escogerse aunque un personaje posea el rango máximo en la rama que escoja y cuentan como si se tratasen de dos rangos para calcular el número de usos de aquellas habilidades que dependan de tu nivel de rango. Los rangos míticos disponibles son los siguientes:
+<u>Acciones adicionales:</u>
 
-### Cortantes
+<u>Difícil de matar:</u>
 
-<u>Tajo feroz:</u> 
+<u>Regeneración superior:</u>
 
-<u>Gran corte:</u> 
+<u>Inspiración mítica:</u>
 
+<u>Resistencias míticas:</u>
 
+<u>Fabricar artefacto:</u>
 
-### Contundentes
+<u>Instinto de batalla:</u>
 
+<u>Voluntad inquebrantable:</u>
 
+<u>Invulnerabilidad:</u>
 
-### Perforantes
+<u>Semidivino:</u>
 
-<u>Ataque furtivo:</u>
+## Atributos míticos
 
+### Armas
 
+### Combate
 
-### A distancia
+### Magia arcana
 
+### Elementalismo
 
+### Ascendencias
 
-### Escudo
+### Ocultismo
+
+### Religión
+
+### Social
+
+### Ciencia
