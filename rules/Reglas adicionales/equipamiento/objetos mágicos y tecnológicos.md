@@ -12,3 +12,5 @@ Los objetos mágicos y tecnológicos son una vasta categoría que abarca todos l
 
 Una armadura puede tener un número máximo de mejoras igual a la suma de la defensa base de tu armadura y tu rango de aptitud con armaduras. 
 
+## Dispositivos de chi
+
