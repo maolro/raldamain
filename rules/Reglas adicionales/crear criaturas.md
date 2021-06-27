@@ -103,8 +103,6 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>División:</u>
 
-<u>Amorfo:</u>
-
 ### Mejoras de 3 PT
 
 <u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 10 pies y aumenta su alcance por 5 pies. Cada aumento de tamaño aumenta además la Armadura natural por 1 y los PV base por 1. Esta mejora puede tomarse varias veces, pero la FUE y CON de la criatura no pueden exceder 9.
@@ -123,9 +121,11 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Ascendencia abisal:</u> 
 
-<u>Ascendencia celestial:</u> 
+<u>Ascendencia celestial:</u> Una criatura celestial obtiene resistencia igual a su CON - 2 contra daño radiante y necrótico, y recibe la habilidad Aura de luz. Además, todos los ataques de la criatura infligirán +2 daño radiante y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre Sentido del mal, Milagro de restauración, Aura de vida y Ver la verdad.
 
-<u>Ascendencia infernal:</u> Una criatura infernal obtiene resistencia igual a su CON - 2 contra un elemento de tu elección y obtiene la habilidad vista infernal. Además, las heridas permanentes que provoque la criatura contarán como heridas profanas y su resistencia al daño incrementará por 1. 
+<u>Ascendencia infernal:</u> Una criatura infernal obtiene resistencia igual a su CON - 2 contra un elemento de tu elección y obtiene la habilidad Vista del diablo. Además, las heridas permanentes que provoque la criatura contarán como heridas profanas y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre  Lengua del diablo, Blasfemia, Salto infernal o ataques profanos.
+
+<u>Cuerpo de energía:</u> La criatura está formada principalmente de energía en lugar de materia, causando que carezca de órganos internos y sea invulnerable contra armas mundanas. Una criatura con esta mejora no puede sufrir heridas permanentes y es inmune al daño de armas no-mágicas. No obstante, al ser una criatura semi-incorpórea no podrá llevar armas ni armaduras y todo el daño físico que provoque pasará a infligir daño de energía igual al daño base de este.
 
 <u>Ascendencia sombría:</u>
 
