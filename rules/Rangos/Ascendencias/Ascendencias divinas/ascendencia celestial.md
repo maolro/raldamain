@@ -5,6 +5,8 @@ category: Ascendencias
 
 Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada de los seres superiores de la creación. Según vas alimentando la fe en tus dioses, tu cuerpo se irá volviendo uno con la luz que da vida a todas las seres del universo, permitiéndote ser participe de grandes milagros e incluso convertirte en la encarnación de un santo.
 
+# Rangos
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico.
@@ -52,3 +54,45 @@ Incrementa tu CON por 1.
 <u>Ascensión</u>: Has alcanzado el nivel más alto de devoción, recibiendo una conexión profunda con el fuego de la creación. Eres inmortal y no necesitas comer o dormir. También eres inmune a efectos mentales, cansancio, veneno y enfermedades. Al usar Milagro de restauración, una vez al día puedes resucitar a una persona que haya muerto recientemente al máximo de PV y recuperado de todas sus condiciones. Los seres celestiales te obedecen como si fueses uno de ellos.
 
 <u>Portal celestial:</u> Como acción de turno completo abre un portal al paraíso. Cada turno que el portal permanezca abierto recibes 2 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un celestial de ese nivel pase por el portal. Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante dicho turno. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será bendecida por la hueste celestial, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.
+
+# Criaturas celestiales
+
+### Deva (nivel 12)
+
+**PV:** 11			**VT:** 19	 		**DEF:** 5 (Resistencia 5)
+
+**FUE:** 0 	**DES:** 6	**CON:** 5	**INT:** 4	**SAB:** 6	**CAR:** 6
+
+------
+
+**Rangos:** Magia de fuego V, Guerrero divino IV
+
+**Mejoras** (12 PT): Alas, ascendencia celestial (milagro de restauración, sentido del mal), visión periférica, forma de energía, explosión
+
+**Movimiento:** 30 pies vuelo
+
+**Resiste:** Necrótico 3, fuego 3
+
+**Inmune:** Ataques físicos hechos por armas no-mágicas, radiante, heridas permanentes
+
+**Prioridad:** 6 (1 estándar + 1 movimiento)
+
+------
+
+**Descarga radiante** (acción de movimiento): 3 soltura + 3 habilidad, 5+Éxito daño radiante (+2 daño contra abisales y demonios). El nivel de las quemaduras aumenta por un paso contra criaturas con armadura. 2 VEN: el objetivo sufre una quemadura media o es cegado. 4 VEN: el objetivo sufre una quemadura grave. Puede sufrir 2 daño no-letal para modificar su ataque de la siguiente manera:
+
+- Realiza un ataque adicional.
+- Ataca a todas las criaturas en una línea de 30 pies o en un cilindro con diámetro 15 pies y altura 30 pies.
+- Forma una espada de luz con la cual podrá hacer un ataque adicional como acción bonus hasta que pierda la concentración.
+
+**Muro de luz** (acción estándar): Forma un muro de luz de 75x25 pies. Otorga inmunidad contra ataques a distancia. Toda criatura que intente pasar por él sufrirá 2 daño radiante y una quemadura media. El muro desaparecerá si pierde la concentración.
+
+**Manipular las llamas** (acción estándar): Manipula un total de 50 pies cúbicos de llamas, pudiendo hacerlas crecer o decrecer en intensidad.
+
+**Lluvia de brasas** (acción de turno completo): Hace un ataque de descarga radiante en 5 cubos de 10 pies de ancho cada uno. Provoca un incendio después de atacar
+
+**Toque sanador** (acción de estándar): Un aliado se sana 6 vitalidad (PV si está al máximo de vitalidad). (2/día): Reduce el nivel de una herida permanente por 1. (3/día) El aliado se recupera de un efecto de estado.
+
+------
+
+**Corona de luz**: 3 desafío+ 3 dificultad . Cancela un éxito o dos ventajas (3/ronda). 2 DES: Forma un muro de luz, redirige el ataque si es un ataque elemental de fuego.
