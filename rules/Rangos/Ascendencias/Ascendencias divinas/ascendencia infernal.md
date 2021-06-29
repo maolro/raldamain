@@ -5,6 +5,8 @@ category: Ascendencias
 
 De las profundidades de la tierra sale una voz que clama tu nombre y que hace parecer insignificante a todo aquello que una vez te rodeo, que te pareció superior, desafiando la jerarquía impuesta por otros con una nueva promesa de poder.  Según el dogma de tu dios va arraigando en ti este va convirtiéndose en una nueva realidad que cambia tu cuerpo, rechazando todo aquello que una vez te pareció importante por una oportunidad de apostar con aquellos que rigen el mundo. 
 
+# Rangos
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
@@ -51,6 +53,84 @@ Obtienes Resistencia 2 a daño físico y Resistencia mágica igual a tu Rango - 
 
 Incrementa tu CON por 1.
 
-<u>Señor de la sima:</u> Realizando un ritual oscuro abandonas tu cuerpo mortal para convertirte en un demonio. Como demonio eres inmortal e inmune a [enfermedades](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades), [venenos](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) y efectos mentales. Recibes 6 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) para gastar en mejoras y los demonios de menor nivel te obedecen sin cuestionarte.
+<u>Señor de la sima:</u> Realizando un ritual oscuro abandonas tu cuerpo mortal para convertirte en un demonio. Como demonio eres inmortal y obtienes resistencia 4 contra enfermedades, venenos y efectos mentales. Recibes 6 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) para gastar en mejoras y los demonios de menor nivel te obedecen sin cuestionarte.
 
 <u>Puertas del infierno:</u> Como acción de turno completo abre un portal al mismo infierno. Cada turno que el portal permanezca abierto recibes 2 puntos de invocación, los cuales podrás gastar para invocar criaturas. Como acción bonus puedes gastar cualquier número tus puntos de invocación en que un demonio de ese nivel pase por el portal. Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante ese turno. El portal se cierra automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto el portal será bendecida por el infierno, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para los adoradores de entidades infernales.
+
+# Criaturas infernales
+
+## Diablo familiar (nivel 2)
+
+**Rangos:** 
+
+**Mejoras** (3 PT): Ascendencia infernal, pequeño, vuelo
+
+## Sabueso infernal (nivel 4)
+
+
+
+## Spator (nivel 6)
+
+
+
+## Kidemon (nivel 8)
+
+
+
+## Vassagis (nivel 10)
+
+
+
+## Ostokrel (nivel 12)
+
+
+
+## Malebranche (nivel 14)
+
+**PV:** 14			**VT:** 22	 		**DEF:** 9
+
+**FUE:** 8 	**DES:** 4	**CON:** 7	**INT:** 2	**SAB:** 3	**CAR:** 6
+
+------
+
+**Rangos:** Alabardas V, Magia de fuego III, Guerrero divino III
+
+**Mejoras** (12 PT): Grande, armadura natural, vuelo, ascendencia infernal (ataques profanos, lengua del diablo)
+
+**Movimiento:** 30 pies vuelo
+
+**Resiste:** fuego 5, necrótico 5
+
+**Inmune:** veneno, efectos mentales
+
+**Prioridad:** 4 (1 estándar + 1 movimiento)
+
+------
+
+**Flanqueador experto:** Inflige +2 daño base con su lanza al flanquear.
+
+**Carga con lanza:** Inflige +2 daño base al realizar una carga con su lanza.
+
+------
+
+**Lanza infernal** (acción de movimiento): 3 soltura + 5 habilidad, 6+Éxito daño perforante +2 daño de fuego. 2 VEN: Herida media profana, desarme, clavar lanza, 4 VEN: Herida grave profana
+
+**Llamarada** (acción de movimiento): 2 soltura + 4 habilidad, 4+Éxito daño fuego profano (+2 daño contra criaturas caóticas). El nivel de las quemaduras aumenta por un paso contra criaturas con armadura. 2 VEN: el objetivo sufre una quemadura media o es cegado. 4 VEN: el objetivo sufre una quemadura grave. Puede sufrir 2 daño no-letal para realizar un ataque adicional.
+
+**Preparación contra cargas** (acción de movimiento): Se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza con su arma sufrirá un ataque de oportunidad inmediato con el cual infligirá +2 daño.
+
+**Muro de llamas** (acción estándar): Forma un muro de luz de 45x15 pies. Otorga cubierta contra ataques a distancia. Toda criatura que intente pasar por él sufrirá 2 daño de fuego profano y una quemadura media. El muro desaparecerá si pierde la concentración.
+
+**Cargar ataque** (acción de movimiento): Obtiene un punto de carga (máximo 4). Puede gastar un punto de carga para añadir un dado de ventaja a un tiro de ataque y aumentar el daño base por 1.
+
+------
+
+**Parada elemental:** 2 desafío + 4 dificultad, cancela un éxito o dos ventajas (2/ronda). 2 DES: Forma un muro de llamas
+
+**Parada:** 3 desafío + 5 habilidad, cancela un éxito o dos ventajas (3/ronda)
+
+## Nergeth (nivel 16)
+
+## Puragaus (nivel 18)
+
+## Exar (nivel 20)

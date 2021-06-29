@@ -121,7 +121,7 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 
 <u>Ascendencia abisal:</u> 
 
-<u>Ascendencia celestial:</u> Una criatura celestial obtiene resistencia igual a su CON - 2 contra daño radiante y necrótico, y recibe la habilidad Aura de luz. Además, todos los ataques de la criatura infligirán +2 daño radiante y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre Sentido del mal, Milagro de restauración, Aura de vida y Ver la verdad.
+<u>Ascendencia celestial:</u> Una criatura celestial obtiene resistencia igual a su CON - 2 contra daño radiante y necrótico, y recibe la habilidad Aura de luz. Además, todos los ataques de la criatura infligirán +2 daño radiante y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre Sentido del mal, Milagro de restauración (2/día),  Aura de vida y Ver la verdad.
 
 <u>Ascendencia infernal:</u> Una criatura infernal obtiene resistencia igual a su CON - 2 contra un elemento de tu elección y obtiene la habilidad Vista del diablo. Además, las heridas permanentes que provoque la criatura contarán como heridas profanas y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre  Lengua del diablo, Blasfemia, Salto infernal o ataques profanos.
 
