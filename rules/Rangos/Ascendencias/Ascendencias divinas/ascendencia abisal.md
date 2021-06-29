@@ -5,6 +5,8 @@ category: Ascendencias
 
 La llamada de la sangre de entidades olvidadas hace eones te reclama desde la parte mas oscura y siniestra de la existencia. Transformando tu cuerpo y empujando tu mente hacia los límites de la razón, cada vez te sientes más atraído por esas voces en tu cabeza, esas voces que te prometen conocimiento, que te prometen poder, que te prometen la única y autentica verdad.
 
+# Rangos
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 
@@ -59,6 +61,26 @@ Obtienes Resistencia 3 a daño físico y resistencia mágica igual a tu rango - 
 
 Incrementa tu DES por 1. Puedes superar el límite de 6 con tus estadísticas, llegando como máximo a 9.
 
-<u>Transformación abisal:</u> Abrazas el poder del abismo, transformándote en una criatura de puro caos. Eres inmortal, inmune a necrótico, veneno, enfermedades y efectos mentales y recibes 3 PT adicionales para gastar en mejoras. Tu cordura no puede reducirse y recibes una locura adicional. Los abisales te obedecerán como si fueses uno de ellos.
+<u>Transformación abisal:</u> Abrazas el poder del abismo, transformándote en una criatura de puro caos. Eres inmortal y recibes resistencia 4 contra necrótico, veneno, enfermedades y efectos mentales y recibes 3 PT adicionales para gastar en mejoras. Tu cordura no puede reducirse y recibes una locura adicional. Los abisales te obedecerán como si fueses uno de ellos.
 
-<u>Invocar a la Tormenta:</u> Como acción de turno completo puedes liberar el poder del caos en una zona, formando un portal a Tormenta. Cada turno que el portal permanezca abierto recibes 2 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un abisal de ese nivel pase por el portal. Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante dicho turno. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será infundida del caos, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.
+<u>Invocar a la Tormenta:</u> Como acción de turno completo puedes liberar el poder del caos en una zona, formando un portal a Tormenta. Cada turno que el portal permanezca abierto recibes 4 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un abisal de ese nivel pase por el portal. Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante dicho turno. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será infundida del caos, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.
+
+# Criaturas abisales
+
+## Ukron, remanente del odio (nivel 2)
+
+## Samsotiq (nivel 6)
+
+## Alzebun, los famélicos (nivel 8)
+
+## Kosnaskye (nivel 10)
+
+## Shebototh (nivel 12)
+
+## Vraukai (nivel 14)
+
+## Tempramentik, diez caras (nivel 16)
+
+## Kurungor (nivel 18)
+
+## Ichobal, señores del abismo (nivel 20)

@@ -51,13 +51,13 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 Incrementa tu CON por 1.
 
-<u>Ascensión</u>: Has alcanzado el nivel más alto de devoción, recibiendo una conexión profunda con el fuego de la creación. Eres inmortal y no necesitas comer o dormir. También eres inmune a efectos mentales, cansancio, veneno y enfermedades. Al usar Milagro de restauración, una vez al día puedes resucitar a una persona que haya muerto recientemente al máximo de PV y recuperado de todas sus condiciones. Los seres celestiales te obedecen como si fueses uno de ellos.
+<u>Ascensión</u>: Has alcanzado el nivel más alto de devoción, recibiendo una conexión profunda con el fuego de la creación. Eres inmortal y no necesitas comer o dormir. También recibes resistencia 4 contra efectos mentales, cansancio, veneno y enfermedades. Al usar Milagro de restauración, una vez al día puedes resucitar a una persona que haya muerto recientemente al máximo de PV y recuperado de todas sus condiciones. Los seres celestiales te obedecen como si fueses uno de ellos.
 
-<u>Portal celestial:</u> Como acción de turno completo abre un portal al paraíso. Cada turno que el portal permanezca abierto recibes 2 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un celestial de ese nivel pase por el portal. Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante dicho turno. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será bendecida por la hueste celestial, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.
+<u>Portal celestial:</u> Como acción de turno completo abre un portal al paraíso. Cada turno que el portal permanezca abierto recibes 4 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un celestial de ese nivel pase por el portal (no podrá ser de nivel superior al tuyo). Mantener el portal te cuesta una acción de movimiento al turno y se cierra si no eres capaz de usar acciones durante dicho turno. El portal se cerrará automáticamente al cabo de seis rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será bendecida por la hueste celestial, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.
 
 # Criaturas celestiales
 
-### Deva (nivel 12)
+## Malakhim (nivel 12)
 
 **PV:** 11			**VT:** 19	 		**DEF:** 5 (Resistencia 5)
 
@@ -67,11 +67,11 @@ Incrementa tu CON por 1.
 
 **Rangos:** Magia de fuego V, Guerrero divino IV
 
-**Mejoras** (12 PT): Alas, ascendencia celestial (milagro de restauración, sentido del mal), visión periférica, forma de energía, explosión
+**Mejoras** (12 PT): Alas, ascendencia celestial (milagro de restauración II, sentido del mal), visión periférica, forma de energía
 
 **Movimiento:** 30 pies vuelo
 
-**Resiste:** Necrótico 3, fuego 3
+**Resiste:** Necrótico 3, fuego 3, magia 4
 
 **Inmune:** Ataques físicos hechos por armas no-mágicas, radiante, heridas permanentes
 
@@ -91,8 +91,14 @@ Incrementa tu CON por 1.
 
 **Lluvia de brasas** (acción de turno completo): Hace un ataque de descarga radiante en 5 cubos de 10 pies de ancho cada uno. Provoca un incendio después de atacar
 
-**Toque sanador** (acción de estándar): Un aliado se sana 6 vitalidad (PV si está al máximo de vitalidad). (2/día): Reduce el nivel de una herida permanente por 1. (3/día) El aliado se recupera de un efecto de estado.
+**Toque sanador** (acción de estándar): Un aliado se sana 6 vitalidad (PV si está al máximo de vitalidad). (2/día): Reduce el nivel de una herida permanente por 1. (2/día) El aliado se recupera de un efecto de estado.
+
+**Resucitar** (acción de turno completo, 1/día): Resucita a un objetivo que haya muerto hace menos de una semana al máximo de PV y sin efectos de estado.
 
 ------
 
 **Corona de luz**: 3 desafío+ 3 dificultad . Cancela un éxito o dos ventajas (3/ronda). 2 DES: Forma un muro de luz, redirige el ataque si es un ataque elemental de fuego.
+
+## Keruvim (nivel 16)
+
+## Seraph (nivel 20)

@@ -42,4 +42,3 @@ Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño b
 <u>Desintegrar:</u> Al impactar con un ataque de evocación, puedes gastar 4 ventajas para desintegrar a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantina o material mágico. Las criaturas que no lleven armadura mágica o la tengan reducida a 0 morirán instantáneamente, y las habilidades de Fortitud no pueden protegerlas de ello.
 
 <u>Concentración superior:</u>  Eres capaz de mantener la concentración en un efecto adicional al turno sin sufrir daño no-letal. Tu mente además es capaz de mantenerse concentrada ante grandes distracciones, haciendo que no pierdas la concentración al sufrir los efectos de estado Enfermado, Fatigado, Sangrado y Espantado (sigues perdiendo la concentración al estar Aturdido, Confuso o Pánico). 
-

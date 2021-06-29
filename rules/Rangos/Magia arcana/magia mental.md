@@ -28,7 +28,7 @@ Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva au
 
 ## Rango III
 
-<u>Sobrecarga mental:</u> Tus ataques mentales sobrecargan la mente de tu objetivo, causando que realice acciones irracionales. Al herir a una criatura con Asalto psíquico puedes gastar 2 Ventajas generadas para que reciba el efecto de estado Confundida. Puedes además causar heridas permanentes con Asalto psíquico, provocando una Herida permanente leve gastando 2 Ventajas y una media gastando 4. Las heridas permanentes aumentan su nivel por 1 al llegar a Rango V.
+<u>Sobrecarga mental:</u> Tus ataques mentales sobrecargan la mente de tu objetivo, causando que realice acciones irracionales. Al herir a una criatura con Asalto psíquico puedes gastar 2 Ventajas generadas para que reciba el efecto de estado Confundida. Si tu objetivo tiene resistencia contra efectos mentales puedes gastar 4 ventajas generadas para reducir dicha resistencia por 1 (esta habilidad cuesta 2 ventajas a rango V).
 
 <u>Telepatía:</u> Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. Además, detectas la posición exacta de todas las criaturas en ese área que no tengan la habilidad Mente custodiada. Tus ataques mentales no requieren gesticulación y puedes usarlos siempre que tu mente esté consciente.
 
@@ -53,3 +53,4 @@ Añade un dado de soltura a tus tiros de magia mental.
 <u>Esclavizar:</u> Como acción estándar que consume 3 chi puedes doblegar la mente de una persona a tu voluntad, convirtiéndolo en un siervo fiel. Si tienes éxito en este tiro tu objetivo debe obedecer todas las órdenes que le des sin cuestionarlas, esforzándose al máximo para cumplirlas. Esclavizar permanece activo siempre que tu objetivo permanezca en contacto visual contigo y se desvanece al cabo de una hora. Al afectar a una persona con 0 cordura esta habilidad durará hasta que tu objetivo recupere cordura o sea eliminada. No puedes tener más de una persona esclavizada a la vez (las personas con 0 cordura no cuentan para este límite).
 
 <u>Destrozar mente:</u> Al herir a una criatura con daño psíquico cuya cordura haya sido reducida a 0 puedes acabar permanentemente sus capacidades mentales, reduciendo su inteligencia y carisma a la de un animal (-1). Perderá de esta manera todos sus rangos de inteligencia, carisma, elementalismo y magia arcana. Destrozar mente requiere un mes entero de sanación mental para eliminar, lo cual permitirá a la criatura afectada recuperar sus rangos. No necesitas gastar chi para usar efectos mentales en una criatura afectada por Destrozar mente.
+
