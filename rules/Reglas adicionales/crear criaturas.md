@@ -22,9 +22,7 @@ Los puntos de vida de una criatura son iguales a 3+CON mientras que su Vitalidad
 
 Los puntos de transformación (PT) representan las características fisiológicas de una criatura que le garantizan la supervivencia. Con ellos un jugador o el máster pueden crear criaturas fantásticas con facilidad. 
 
-Una criatura aumentará una de sus estadísticas por 1 una vez por cada 3 PT que se emplean para construirla. Los PV aumentan por 1 por cada 6 PT empleados para la creación de una criatura mientas que la Vitalidad aumenta por 1 cada vez que se empleen 2 PT. 
-
-Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adicional en una habilidad determinada a un coste de 3 PT por rango.
+Al construir una criatura de un nivel determinado es posible sustituir un rango que obtendría dicha criatura por 3 PT, los cuales pueden ser gastados para obtener mejoras. Determinados rangos permiten gastar PT en habilidades, lo cual permite que un personaje pueda alterar su propio cuerpo siempre y cuando esto permanezca en los límites de lo posible (esto queda dictaminado por el máster).
 
 ### Mejoras de 1 PT
 
@@ -114,10 +112,6 @@ Los PT obtenidos pueden gastarse para que una criatura obtenga un rango adiciona
 <u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. En lugar de hacer daño, el aliento puede infligir un efecto entre Parálisis, Aturdimiento, Confusión o [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos) a todas las criaturas en el área. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el área de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades, cuyo coste queda determinado por el máster.
 
 <u>Visión verdadera:</u> 
-
-<u>Ilusionismo:</u>
-
-<u>Magia psíquica:</u>
 
 <u>Ascendencia abisal:</u> 
 
