@@ -83,23 +83,23 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 - **Espinas venenosas:** Las espinas están cubiertas por veneno. Cuando una criatura te haga daño con un ataque natural, gasta 2 Desventajas para envenenarlo (En un agarre la criatura es envenenada automáticamente). Esto requiere la mejora Veneno.
 - **Lanzar espinas:** La criatura puede hacer ataques a distancia con sus espinas. Las espinas hacen 1+Éxito daño perforante al impactar y usan la estadística de DES en el tiro de ataque. Los atributos otorgados por Perforar se aplican en este ataque.
 
-<u>Teletransporte:</u>
-
 <u>Invisibilidad:</u> La criatura tiene la capacidad de volverse invisible durante un breve instante de tiempo tanto por un efecto mágico o cambiando su piel para camuflarse con su entorno. Emplear esta habilidad cuesta una acción estándar y el efecto de invisibilidad durará hasta que la criatura pierda la concentración o ataque. Puedes emplear 2 PT adicionales para que la criatura sea invisible de manera pasiva, manteniendo así este efecto durante periodos extendidos de tiempo. 
 
 <u>Movimiento elemental:</u> La criatura recibe un movimiento especial asociado con un elemento con el cual están infundidos sus ataques. Moverse de dicha manera cuesta una acción estándar salvo que la criatura sufra 2 daño no-letal y la velocidad de este puede ser aumentado con la mejora Movimiento adicional. Las opciones para escoger son [propulsión](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv) (fuego), [ola de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv) (tierra), [columna de agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) (agua), [forma gaseosa](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-v) (hielo) o [jinete del relámpago](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tormenta.html#rango-iv) (aire). 
 
 <u>Aura elemental:</u> La energía elemental que emana de la criatura se manifiesta en forma de un aura de energía. Esta habilidad permite a la criatura obtener un aura elemental asociada con el elemento que infunde sus ataque, entre las cuales se encuentran [manto nevado](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iii) (hielo), aura abrasadora (fuego), armadura de piedra (tierra), forma fluida (agua) y vientos protectores (aire).
 
-<u>Drenar sangre:</u> 
+<u>Drenar sangre:</u> La criatura es capaz de drenar la sangre de sus víctimas para recuperar vitalidad, provocándoles gran dolor mientras se recupera. Esta mejora permite que la criatura pueda emplear 2 ventajas generadas para provocar sangrado a su objetivo al impactar. Si la criatura acaba la ronda agarrando a un objetivo con sangrado esta se recuperará 2 vitalidad mientras que el objetivo agarrado aumentará el nivel de una de sus heridas permanentes por 1. Si la criatura tiene la mejora veneno puede infectarle con este al drenar sangre.
 
-<u>Infusión necrótica:</u>
+<u>Infusión necrótica:</u> Los ataques de la criatura están infundidos de energía necrótica, debilitando la vida de las criaturas que ataca. Esta habilidad provoca que la criatura inflija 2 daño necrótico al 
 
-<u>Telaraña:</u>
+<u>Telaraña:</u> 
 
 <u>Desplazamiento:</u>
 
 <u>División:</u>
+
+<u>Teletransporte:</u> 
 
 ### Mejoras de 3 PT
 
