@@ -1,3 +1,8 @@
+---
+title: Elementalismo
+category: Magia elemental
+---
+
 ## Aire
 
 ## Agua
