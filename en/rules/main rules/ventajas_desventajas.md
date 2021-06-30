@@ -3,7 +3,7 @@ title: Advantages and disadvantages
 main: Reglas adicionales
 ---
 
-Advantages and disadvantages represent those moments in a combat that can allow one side to win or lose. Good use of advantages is key to victory, allowing a player to avoid deadly attacks or to hit a nimble enemy. The basic uses for advantages and disadvantages are as follows:
+Advantages and disadvantages represent certain moments in a combat that can allow one side to win or lose. Good use of advantages is key to victory, allowing a player to avoid deadly attacks or to hit a nimble enemy. The basic uses for advantages and disadvantages are as follows:
 
 ## Advantages
 
