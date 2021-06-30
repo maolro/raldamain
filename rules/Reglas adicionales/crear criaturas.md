@@ -70,7 +70,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Miembros adicionales:</u> La criatura recibe un par adicional de miembros, los cuales pueden ser dos piernas o dos brazos. Cada par adicional de piernas aumenta el movimiento base por 10 pies y otorga +2 Resistencia a ser Tropezado, mientras que cada par adicional de brazos permite que una criatura pueda hacer un ataque natural adicional al turno (si lleva armas, puede hacer un ataque adicional si tiene aptitud con dos armas). 
 
-<u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una ascendencia de tu elección, incrementando el daño base de estos y obteniendo nuevas maneras de gastar ventajas. Los elementos para escoger son [fuego](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv), [hielo](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iv), [tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv), [agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) o [aire](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html#rango-iv) (cuenta como si tuviera magia de tormenta). Puedes gastar 2 PT adicionales para que la criatura reciba la habilidad de reserva elemental relacionada con la ascendencia escogida.
+<u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una ascendencia de tu elección, causando que dichos ataques inflijan 2 daño de energía adicional y obteniendo nuevas maneras de gastar ventajas. Los elementos para escoger son [fuego](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv), [hielo](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iv), [tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv), [agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) o [aire](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html#rango-iv) (cuenta como si tuviera magia de tormenta). 
 
 <u>Veneno:</u> La criatura obtiene la capacidad de producir veneno. Al impactar con un ataque, puedes gastar 2 Ventajas para inyectarle al objetivo un [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos). El veneno que inyecta es un veneno que afecta a una estadística de tu elección, y tendrá tasa de recuperación 8 y tiro de gravedad igual a su CON. Puedes gastar 1 PT adicional para añadir un tiro de desafío al tiro de gravedad del veneno (máximo 3), aumentar la tasa de recuperación por 2 o modificar el veneno de una forma nueva siempre y cuando tenga el consentimiento del máster.
 
@@ -91,7 +91,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Drenar sangre:</u> La criatura es capaz de drenar la sangre de sus víctimas para recuperar vitalidad, provocándoles gran dolor mientras se recupera. Esta mejora permite que la criatura pueda emplear 2 ventajas generadas para provocar sangrado a su objetivo al impactar. Si la criatura acaba la ronda agarrando a un objetivo con sangrado esta se recuperará 2 vitalidad mientras que el objetivo agarrado aumentará el nivel de una de sus heridas permanentes por 1. Si la criatura tiene la mejora veneno puede infectarle con este al drenar sangre.
 
-<u>Infusión necrótica:</u> Los ataques de la criatura están infundidos de energía necrótica, debilitando la vida de las criaturas que ataca. Esta habilidad provoca que la criatura inflija 2 daño necrótico al 
+<u>Infusión necrótica:</u> Los ataques de la criatura están infundidos de energía necrótica, debilitando la vida de las criaturas que ataca. Esta habilidad provoca que la criatura inflija 2 daño necrótico al impactar y podrá emplear 2 ventajas generadas para que el objetivo esté fatigado (4 ventajas para que reduzca sus PV por 1). Si posees la habilidad toque necrótico el daño adicional recibido por esta mejora se acumula con el daño que este otorga. 
 
 <u>Telaraña:</u> 
 
@@ -113,7 +113,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Visión verdadera:</u> 
 
-<u>Ascendencia abisal:</u> 
+<u>Ascendencia abisal:</u> Una criatura abisal obtiene resistencia igual a su CON - 2 contra daño necrótico y efectos mentales, y recibe la habilidades Furia del abismo y aura Antinatural. Además de ello obtendrá Vista del vacío y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre Infección, Paso abisal (3/día),  Aura de caos y rasgo monstruoso superior.
 
 <u>Ascendencia celestial:</u> Una criatura celestial obtiene resistencia igual a su CON - 2 contra daño radiante y necrótico, y recibe la habilidad Aura de luz. Además, todos los ataques de la criatura infligirán +2 daño radiante y su resistencia al daño incrementará por 1. Puedes pagar 1 PT adicional para que la criatura reciba una habilidad de tu elección entre Sentido del mal, Milagro de restauración (2/día),  Aura de vida y Ver la verdad.
 
