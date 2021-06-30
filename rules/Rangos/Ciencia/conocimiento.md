@@ -3,7 +3,7 @@ title: Conocimiento
 category: Ciencia
 ---
 
-Tienes la capacidad para aprender nueva información sobre todo aquello que te rodea con mucho menos esfuerzo del que le supondría a tus "iguales" Con el tiempo, serás capaz de emplear tu vasta sabiduría para descubrir nuevas magias, organizar complejos rituales, así como evitar los riesgos que para muchos supone la ignorancia
+Las armas son aquello que la humanidad lleva empleando desde hace milenios para defenderse y luchar contra especies más fuertes, sin embargo, lo que muchos ignoran es que no todas las armas están hechas de férreo acero o son capaces de perforar la piel de tu enemigo, y es de esa ignorancia de la que tú podrás aprovecharte para conseguir tus verdaderos objetivos valiéndote de la verdadera arma que a estado en nuestra posesión desde el principio, nuestra mente. Es así que, dedicando tu vida al estudio de tanto como te rodea, has decidido embarcarte en un viaje para entrenar tu cuerpo y mente en busca de los saberes que te sirvan de cura contra la ignorancia que a tantos a condenado. Solo entonces cuando llegues a las ultimas etapas de tu aprendizaje te habrás convertido en una persona capaz de enfocar los problemas con los que te encuentres de formas diversas, atravesar las barreras del idioma e incluso evitar los algunos de los peligros que la magia guarda para la mente.
 
 ## Rango I
 

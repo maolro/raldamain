@@ -3,7 +3,7 @@ title: Comercio
 category: Ciencia
 ---
 
-Apoyándote en tus habilidades has comenzado a escalar por la jerarquía social, aumentando tu poder y expandiendo tu influencia. Según vayas avanzando hacia la cima serás capaz de conseguir grandes riquezas, de crear fuertes organizaciones e incluso ignorar las leyes que atan a las personas corrientes.
+Los humanos o aquellas especies con un intelecto similar siempre han demostrado un gran interés por obtener toda clase de lujos, así como por supuesto su bienestar personal, y es que aquellos que se decanten por lograr esa meta se verán obligados irremediablemente a valerse de sus propias habilidades e ingenio para escalar a través de la jerarquía social y llegar así hasta la cima. De este modo, a medida que tu nombre se va haciendo mas conocido se irán abriendo nuevas puertas hacia oportunidades que tal vez incluso jamás pudiste imaginar amansando tantos privilegios, contactos y riquezas como te sean posibles para mantener el estilo de vida en el que te encuentras ahora. Ya en las mas altas esferas de la sociedad a la que has podido acceder te habrás convertido en una persona de gran renombre conocida por todos, sin embargo no es posible llegar a la cima sin sacrificios y lo que siempre tendrás que mantener como un oscuro secreto son todas las veces que evitaste la ley, te valiste de mercenarios o criminales y los sobornos son los cuales muy probablemente no estarías donde te encuentras ahora.
 
 ## Rango I 
 
