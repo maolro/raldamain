@@ -36,11 +36,11 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Golpe:</u> La criatura puede hacer poderosos golpes con su cuerpo. Un golpe inflige 1+Éxito daño contundente al impactar, y la criatura añade un dado de Soltura a sus tiros de ataque con él. 
 
-<u>Resistir energía:</u> La criatura obtiene Resistencia igual a su CON - 1 contra un tipo determinado de energía y los efectos de estado relacionados con ella. Algunas posibilidades son Frío, Fuego, Ácido, Rayo y Trueno. Puedes emplear 1 PT adicional para recibir CON - 1 Resistencia contra otro elemento.
+<u>Resistir energía:</u> La criatura obtiene resistencia 2 contra un tipo determinado de energía y los efectos de estado relacionados con ella. Algunas posibilidades son Frío, Fuego, Ácido, Rayo y Trueno. Puedes emplear 1 PT adicional incrementar su resistencia por 2 o recibir resistencia 2 contra un nuevo elemento.
 
 <u>Perforar:</u> La criatura recibe una espina en una parte de su cuerpo con la cual puede atacar. La espina inflige 2+Éxito daño Perforante al impactar e ignora la armadura natural de tu objetivo al hacer ataques sorpresa o flanqueo. 
 
-<u>Depredador:</u> La criatura está adaptada a cazar en un terreno de tu elección. Esta habilidad otorga los atributos [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) y [enemigo predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) a la criatura y permite gastar PT en rangos de [rastrear](https://raldamain.com/rules/Rangos/Combate/rastrear.html) (iniciará a rango II).
+<u>Depredador:</u> La criatura tiene los sentidos más desarrollados para poder cazar con facilidad en su entorno. Esta habilidad otorga un fino sentido de olfato en un radio de 30 pies capaz de detectar la presencia de otras criaturas en dicho espacio (esto aumenta a 60 pies si los vientos son favorables y a 15 pies si no lo son). El sentido de olfato puede emplearse también para detectar el rastro de otras criaturas que hayan pasado por dicho espacio, otorgando así un dado de ventaja adicional en tiros de percepción y supervivencia. 
 
 <u>Visión periférica:</u> Los ojos de la criatura le permiten ver todo su entorno por igual. No puede ser atacada por la espalda y es inmune a las ventajas por flanqueo. Visión periférica puede mejorarse con Sentido superior.
 
@@ -50,7 +50,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Explosión:</u> Cuando la criatura es reducida a 0 PV esta explotará al instante. La explosión es un tiro de CON que hace 2+Éxito daño a todas las criaturas en un radio de 10 pies. El daño de energía equivale al elemento escogido para Ataques infundidos, y todos los gastos de ventajas de esa habilidad se aplican también a esta. El daño de la explosión aumenta por 1 y el radio de explosión por 5 pies por cada aumento de tamaño que tenga la criatura. Si la criatura ha gastado PT en veneno, en lugar de hacer daño con la explosión podrá envenenar a todas las criaturas en el radio. 
 
-<u>Camuflaje:</u> La piel de la criatura está adaptada para ocultarse con facilidad en un terreno específico. Una criatura con camuflaje tiene la capacidad de volverse invisible como acción estándar si se encuentra en su terreno predilecto y está fuera del campo de visión de criaturas enemigas. Los beneficios de camuflaje se perderán en el momento que la criatura realice un ataque. 
+<u>Camuflaje:</u> La piel de la criatura está adaptada para ocultarse con facilidad en un terreno específico. Una criatura con camuflaje tiene la capacidad de volverse invisible como acción estándar si se encuentra en su terreno predilecto y está fuera del campo de visión de criaturas enemigas. Los beneficios de camuflaje se perderán en el momento que la criatura realice un ataque. Si la criatura posee la habilidad Acechar podrá ocultarse como acción de movimiento en lugar de estándar (acción bonus empleable)
 
 <u>Movilidad:</u> La criatura se mueve con gran destreza y agilidad. Esta mejora le otorgará un dado de desafío adicional en tiros de esquiva en el caso que no tenga rangos de reflejos y le otorgará resistencia a ataques de área y agarre igual a su estadística de destreza - 2. Esta habilidad permite gastar PT en rangos de [reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html), empezando a rango II.
 
