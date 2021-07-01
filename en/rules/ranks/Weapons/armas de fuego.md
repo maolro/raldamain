@@ -42,7 +42,7 @@ Roll an additional proficiency die on attack shots. You spend 2 advantages to in
 
 <u>Killing shot</u>: When you hit an enemy with an attack, you spend 4 advantages to multiply your base damage by 2, automatically inflicting a serious injury if you deal at least one point of damage. To use this skill you must have used deadly aim in your attack.
 
-<u>Expert marksmanship</u>: Your attacks are able to hit your target before they can react. If you spend a move action to aim at a shot you can make the defender unable to use shield or magic stop on his defensive shot.
+<u>Expert marksmanship</u>: Your attacks are able to hit your target before they can react. If you spend a move action to aim your attack you can make the defender unable to use a shield or magical defenses to stop your attack. This will not work against characters in defensive position.
 
 # Weapons
 

@@ -7,7 +7,7 @@ category: Armas
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida leve (4 ventajas para infligir una herida media).
 
-<u>Puntería mortal:</u> Al disparar a un objetivo que se encuentra a menos de 15 pies de ti ignorarás todos los puntos de defensa que recibe por su armadura. Las resistencias al daño y la defensa adicional otorgada por Aptitud con armaduras continuarán aplicándose, pero ignorarás armadura natural con esta habilidad. Puedes tomar una penalización de un dado de Dificultad en el tiro para emplear esta habilidad contra un objetivo que se encuentre a un máximo de 30 pies. La distancia máxima a la que puedes utilizar Puntería mortal aumenta por 5 pies cada vez que recibas un rango adicional de Armas de fuego.
+<u>Puntería mortal:</u> Tus ataques son especialmente mortales al impactar a enemigos a poca distancia de ti. Al atacar a un objetivo que se encuentre a menos de 30 pies de ti ignorarás toda la defensa que tenga por armadura natural y fabricada (esto es a 15 pies para una pìstola de mano). Antes de realizar un ataque puedes añadir un dado de dificultad a tu tiro de ataque para incrementar la distancia a la que puedes utilizar puntería mortal por 15 pies.
 
 <u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (gratuita si es un arma a una mano). Tienes además +1 [prioridad](https://raldamain.com/rules/Reglas%20principales/prioridad.html) en la iniciativa (+2 a rango III y +3 a rango V). 
 
@@ -15,7 +15,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 <u>Recarga rápida:</u> Recargar un arma te cuesta una acción de movimiento, mientras las armas grandes requieren una acción estándar. Puedes emplear una acción de movimiento para realizar un ataque adicional con tu arma.
 
-<u>Truco de bala:</u> tus ventajas para hacer un truco de combate. Esta habilidad solo se puede usar si impactas al objetivo., y todos los trucos de combate cuestan 2 ventajas: 
+<u>Truco de bala:</u> Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. Esta habilidad te permite gastar 2 ventajas generadas al impactar con un ataque para activar uno de los siguientes efectos. Truco de bala puede emplearse aunque falles tu ataque gastando 4 ventajas.
 
 - **Disparo falso**: El objetivo es fintado durante un turno, haciendo que no pueda esquivar el siguiente ataque que reciba. Gasta una ventaja adicional para que el atacante reciba un dado de Ventaja en su siguiente tiro.
 - **Disparo atronador:** El disparo provoca un gran estruendo, espantando al objetivo durante un turno. Gasta una ventaja adicional para hacer que se mueva 5 pies en una dirección aleatoria (2 para hacer que se lance al suelo).
@@ -25,23 +25,23 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Disparo preciso:</u> Tus ataques a distancia ignoran cubierta y ocultamiento a menos que sea completo eludiendo así cualquier tipo de penalizador (siendo 2 dados de desventaja normalmente). Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal.
+<u>Disparo preciso:</u> Tus atques se han vuelto mucho más preciss, permitiéndote ignorar todo obstáculo que no proporcione ni cubierta ni ocultamiento completo. Al atacar a un objetivo afectado por puntería mortal esta perderá todos los bonificadores defensivos otorgados por cubierta y ocultamiento. Esta habilidad no funcionará como ya se ha especificado contra enemigos con cubierta u ocultamiento completo.
 
-<u>Ojo de francotirador:</u> Reduce todas las penalizaciones por disparar a distancia en un dado de Dificultad y duplicas la distancia a la que puedes usar puntería mortal. Todos los disparos hechos con ojo del francotirador requieren una acción de turno completo si no utilizas un arma con la habilidad Francotirador. 
+<u>Ojo de francotirador:</u> Apuntatndo tus ataques cuidadosamente eres capaz de realizar disparos mortales contra enemigos aún más alejados. Puedes emplear una acción de movimiento para incrementar tu radio de puntería mortal por 15 pies sin recibir ningún penalizador. Además, tus ataques incrementarán su daño base por 2 al atacar a objetivos incapaces de defenderse.
 
 ## Rango IV
 
-<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después por ejemplo). Tampoco sufres penalizaciones al disparar montado o en un vehículo en movimiento.
+<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después por ejemplo). Tampoco sufrirás penalizaciones al disparar montado o en un vehículo en movimiento.
 
-<u>Disparos a bocajarro</u>: Como acción de turno completo puedes hacer una secuencia de disparos rápidos. De esta manera haces un ataque adicional con tu arma, pero sufriendo un penalizador de un dado de Dificultad dicional en todos tus ataques.
+<u>Disparos a bocajarro</u>: Una vez por ronda puedes emplear una acción bonus para realizar un ataque adicional con tu arma. Esta habilidad puede emplearse también para proporcionar fuego de cubierta a un aliado de tu elección, permitiéndote tirar tus dados de manera defensiva para protegerlo. Las desventajas generadas por el fuego a cubierta podrán emplearse para usar trucos de bala.
 
 ## Rango V
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente grave.
 
-<u>Impacto vital:</u> Al impactar a un enemigo con un ataque, gasta 4 ventajas para multiplicar tu daño base por 2, infligiendo automáticamente una herida grave si hace al menos un punto de daño. Para usar esta habilidad tienes que haber usado Puntería experta en tu ataque.
+<u>Impacto vital:</u> Al impactar a un enemigo con un ataque puedes gastar 4 ventajas para multiplicar tu daño base por 2, infligiendo automáticamente una herida grave si hace al menos un punto de daño. Para emplear esta habilidad tienes que haber usado Puntería experta en tu ataque.
 
-<u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Si gastas una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica en su tiro defensivo.
+<u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Si gastas una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica para su tiro defensivo. Esta habilidad no funcionará contra personajes que se encuentren en forma o posición defensiva.
 
 # Armas
 
