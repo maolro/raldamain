@@ -1,5 +1,5 @@
 ---
-title: Armas de fuego
+title: Firearms
 category: Armas
 ---
 
@@ -13,9 +13,9 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 ## Rango II
 
-<u>Recarga rápida:</u> Recargar un arma te cuesta una acción de movimiento, mientras las armas grandes requieren una acción estándar (normalmente recargar es una acción estándar y recargar un arma grande es una de turno completo).
+<u>Recarga rápida:</u> Recargar un arma te cuesta una acción de movimiento, mientras las armas grandes requieren una acción estándar. Puedes emplear una acción de movimiento para realizar un ataque adicional con tu arma.
 
-<u>Truco de bala:</u> Emplea tus ventajas para hacer un truco de combate. Esta habilidad solo se puede usar si impactas al objetivo., y todos los trucos de combate cuestan 2 ventajas: 
+<u>Truco de bala:</u> tus ventajas para hacer un truco de combate. Esta habilidad solo se puede usar si impactas al objetivo., y todos los trucos de combate cuestan 2 ventajas: 
 
 - **Disparo falso**: El objetivo es fintado durante un turno, haciendo que no pueda esquivar el siguiente ataque que reciba. Gasta una ventaja adicional para que el atacante reciba un dado de Ventaja en su siguiente tiro.
 - **Disparo atronador:** El disparo provoca un gran estruendo, espantando al objetivo durante un turno. Gasta una ventaja adicional para hacer que se mueva 5 pies en una dirección aleatoria (2 para hacer que se lance al suelo).
