@@ -13,7 +13,7 @@ image: lucanor.jpg
 
 ## Especialidades
 
-Ser un hijoputa
+
 
 ## Rasgos
 
