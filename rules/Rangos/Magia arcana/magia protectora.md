@@ -15,7 +15,7 @@ Tira un dado de soltura adicional en tiros de ataque protectora. Añade 2+Rango 
 
 ## Rango II
 
-<u>Armadura mágica:</u> Recies Resistencia Mágica igual a tu INT - 2 y defensa contra ataques físicos sigual a tu Rango en Magia de Protección. Activar Armadura mágica te cuesta una acción estándar (una acción de movimiento si gastas 1 chi de tu resrva) y no puede permanecer activa durante más de un minuto seguido salvo que mantengas la concentración. Armadura del mago se cancela al entrar en un área de Aura antimágica.
+<u>Armadura mágica:</u> Recies Resistencia Mágica y defensa contra ataques físicos sigual a tu Rango en Magia de Protección. Activar Armadura mágica te cuesta una acción estándar (una acción de movimiento si gastas 1 chi de tu resrva) y no puede permanecer activa durante más de un minuto seguido salvo que mantengas la concentración. Armadura del mago se cancela al entrar en un área de Aura antimágica. 
 
 <u>Eliminar magia:</u> Eres capaz de eliminar temporalmente una habilidad mágica pasiva o un hechizo defensivo de tu objetivo. Eliminar magia es una acción estándar que consume 1 chi de tu reserva, y consiste en hacer un tiro de Magia Protectora contra la habilidad mágica de tu objetivo. Si tienes éxito, este perderá una habilidad mágica defensiva de Rango igual o inferior al tuyo (algunos ejemplos son Emborronar, Armadura mágica o Escudo mental). A rango IV puedes usar Eliminar magia para eliminar todos los hechizos de rango menor al tuyo activos en un punto de 10 pies de radio de tu elección (por ejemplo, Glifos de protección o Portales menores).
 
