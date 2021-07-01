@@ -41,7 +41,7 @@ Ser un hijoputa
 
 ### Yabu
 
-""
+Este puto me ha matado, no me lo puedo creer 
 
 ### Regulus
 
@@ -49,4 +49,4 @@ Ser un hijoputa
 
 ### Ileria
 
-""
+Me cae muy mal, se opone a mis planes malignos :(
