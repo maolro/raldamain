@@ -166,7 +166,7 @@ Para obtener este grado de maldición necesitas tener rango III o más de nigrom
 Para obtener este grado de maldición necesitas tener rango V o más de nigromancia y 5 rangos totales relacionados con la magia arcana.
 
 - Aumenta tu estadística de CAR por 1 y reduce tu CON por 1.
-- Tu cuerpo desprende un aura de energía necrótica que drena la vida de todos los seres vivos a tu alrededor.
+- Tu cuerpo desprende un aura de energía necrótica que drena la vida de todos los seres vivos a tu alrededor. Mientras esta aura permanezca activa la primera vez por ronda que una criatura pase por un espacio que se encuentre a 10 pies de ti (20 pies a grado 3) sufrirá automáticamente 2 daño necrótico. Todos los no-muertos en el área se sanarán 1 PV
 
 ### Grado 3
 
