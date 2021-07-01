@@ -1,4 +1,4 @@
-El daño representa la multitud de heridas que puede sufrir
+El daño representa la multitud de heridas que puede sufrir un personaje.
 
 ## Tipos de daño
 
