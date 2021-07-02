@@ -52,7 +52,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Camuflaje:</u> La piel de la criatura está adaptada para ocultarse con facilidad en un terreno específico. Una criatura con camuflaje tiene la capacidad de volverse invisible como acción estándar si se encuentra en su terreno predilecto y está fuera del campo de visión de criaturas enemigas. Los beneficios de camuflaje se perderán en el momento que la criatura realice un ataque. Si la criatura posee la habilidad Acechar podrá ocultarse como acción de movimiento en lugar de estándar (acción bonus empleable)
 
-<u>Movilidad:</u> La criatura se mueve con gran destreza y agilidad. Esta mejora le otorgará un dado de desafío adicional en tiros de esquiva en el caso que no tenga rangos de reflejos y le otorgará resistencia a ataques de área y agarre igual a su estadística de destreza - 2. Esta habilidad permite gastar PT en rangos de [reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html), empezando a rango II.
+<u>Movilidad:</u> La criatura se mueve con gran agilidad, atacando y retirándose antes de que su objetivo pueda reaccionar. Cuando la criatura impacte con un ataque y aún le queda movimiento puede gastar 2 ventajas generadas para moverse fuera del alcance sin provocar ataques de oportunidad. Esta habilidad puede emplearse gratuitamente si la criatura llega a provocar una herida permanente.
 
 <u>Aguantar respiración:</u> El sistema respiratorio de la criatura está capacitado para aguantar tiempo excesivo en entornos adversos. Una criatura con esta habilidad duplica el número de rondas que puede resistir antes de ahogarse y podrá aguantar su respiración durante 10 minutos seguidos. Cada aumento de tamaño que tenga la criatura incrementará el número minutos en los cuales puede aguantar la respiración por 10 minutos debido al aumento de la capacidad respiratoria que tendrá. Gasta 1 PT adicional en este atributo para que la criatura se vuelva anfibia, permitiéndola respirar tanto el aire como el agua. 	
 
@@ -68,13 +68,13 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Inmunidad:</u> La criatura recibe Inmunidad contra un tipo de energía al que tenga Resistencia. Puedes emplear 2 PT adicionales para que la criatura reciba Absorción contra ese tipo de energía. La Absorción causa que cada vez que la criatura sufra daño del tipo de energía designado, esta no sufre daño y se sana una cantidad de Vitalidad igual al daño que sufriría.
 
-<u>Miembros adicionales:</u> La criatura recibe un par adicional de miembros, los cuales pueden ser dos piernas o dos brazos. Cada par adicional de piernas aumenta el movimiento base por 10 pies y otorga +2 Resistencia a ser Tropezado, mientras que cada par adicional de brazos permite que una criatura pueda hacer un ataque natural adicional al turno (si lleva armas, puede hacer un ataque adicional si tiene aptitud con dos armas). 
+<u>Miembros adicionales:</u> La criatura recibe un par adicional de miembros, los cuales pueden ser dos piernas o dos brazos. Cada par adicional de piernas aumenta el movimiento base por 10 pies y otorga +2 Resistencia a ser Tropezado, mientras que cada par adicional de brazos permite que una criatura pueda hacer un ataque natural adicional al turno (si lleva armas, puede hacer un ataque adicional en el caso que tenga aptitud con dos armas). 
 
 <u>Ataques infundidos:</u> Los criatura tiene los ataques físicos infundidos de un elemento específico. Esta habilidad funciona como la habilidad Ataques infundidos de una ascendencia de tu elección, causando que dichos ataques inflijan 2 daño de energía adicional y obteniendo nuevas maneras de gastar ventajas. Los elementos para escoger son [fuego](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iv), [hielo](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-iv), [tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-iv), [agua](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iv) o [aire](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html#rango-iv) (cuenta como si tuviera magia de tormenta). 
 
 <u>Veneno:</u> La criatura obtiene la capacidad de producir veneno. Al impactar con un ataque, puedes gastar 2 Ventajas para inyectarle al objetivo un [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos). El veneno que inyecta es un veneno que afecta a una estadística de tu elección, y tendrá tasa de recuperación 8 y tiro de gravedad igual a su CON. Puedes gastar 1 PT adicional para añadir un tiro de desafío al tiro de gravedad del veneno (máximo 3), aumentar la tasa de recuperación por 2 o modificar el veneno de una forma nueva siempre y cuando tenga el consentimiento del máster.
 
-<u>Arrollar:</u> Cuando la criatura haga una carga, hace un ataque automático de Golpe contra todas las criaturas de menor tamaño que estén en su camino hasta que complete la carga. Las criaturas que estén en el camino de la carga deben escoger entre intentar evitar la carga, por lo que tirarán esquivar contra su ataque, o intentar detenerla, por lo que tirarán [heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#hero%C3%ADsmo-fue).
+<u>Arrollar:</u> Al realizar una carga la criatura aumentará su daño base por 2 al impactar y tropezará al objetivo si este tiene menor fuerza (debe gastar 2 ventajas si la fuerza es igual o superior). Además, si una criatura se encuentra en el camino de una carga antes que la criatura llegue a impactar esta sufrirá un ataque natural de manera automática salvo que gaste una acción de movimiento para salirse de su camino. 
 
 <u>Cambiaformas:</u> La criatura tiene la capacidad de alterar su aspecto. Como acción de turno completo, la criatura puede cambiar 3 PT que tenga por otros 3 PT nuevos, cambiando su forma tanto como ella desee. En lugar de sustituir PT puede reducir una de sus estadísticas por 1 para recibir un PT nuevo. Esta transformación durará hasta que la criatura lo elija o esta caiga inconsciente. Puedes emplear 1 PT adicional en esta habilidad para que la criatura reciba 1 PT adicional al transformarse, y si empleas 6 PT en esta habilidad la criatura podrá cambiar su forma como acción de movimiento.
 
@@ -93,9 +93,11 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Infusión necrótica:</u> Los ataques de la criatura están infundidos de energía necrótica, debilitando la vida de las criaturas que ataca. Esta habilidad provoca que la criatura inflija 2 daño necrótico al impactar y podrá emplear 2 ventajas generadas para que el objetivo esté fatigado (4 ventajas para que reduzca sus PV por 1). Si posees la habilidad toque necrótico el daño adicional recibido por esta mejora se acumula con el daño que este otorga. 
 
-<u>Telaraña:</u> 
+<u>Cabeza adicional:</u> La criatura tiene otra cabeza con las mismas capacidades y atribuciones. Una criatura con una cabeza adicional no puede ser aturdida ni cegada salvo que todas sus cabezas lo sean y recibe inmunidad a flanqueo. Además de ello, la criatura no podrá recibir penalizadores a sus estadísticas mentales salvo que estos afecten a todas sus cabezas. 
 
-<u>Desplazamiento:</u>
+<u>Telaraña:</u> La criatura cuenta con glándulas específicas que le permiten escupir hilo semejante a la seda capaz de atrapar a las criaturas que crucen por él. Escupir una telaraña cuesta una acción estándar y esta tendrá una distancia máxima de 50 pies. Todas las criaturas a 10 pies del radio de impacto deberán tirar esquiva o serán agarradas por la telaraña. Una
+
+<u>Desplazamiento:</u> 
 
 <u>División:</u>
 
@@ -109,7 +111,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Resistencia mágica:</u> La criatura recibe Resistencia 3 contra todos los hechizos mágicos. Puedes emplear 1 PT adicional para incrementar la Resistencia mágica por 1, llegando como máximo a Resistencia mágica 6. 
 
-<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. En lugar de hacer daño, el aliento puede infligir un efecto entre Parálisis, Aturdimiento, Confusión o [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos) a todas las criaturas en el área. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar 4 turnos recargando (puede gastar 1 Ventaja para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el área de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades, cuyo coste queda determinado por el máster.
+<u>Aliento:</u> La criatura puede hacer un poderoso ataque de energía mágica como acción estándar. Este aliento hace 3+Éxito daño de energía y afecta a un cono de 15 pies o una línea de 60 pies. En lugar de hacer daño, el aliento puede infligir un efecto entre Parálisis, Aturdimiento, Confusión o [veneno](http://raldamain.com/rules/reglas%20adicionales.html#venenos) a todas las criaturas en el área. La criatura puede gastar ventajas en el aliento como si fuese un ataque elemental de Rango I, y tras usar el aliento debe estar cuatro rondas recargando (puede gastar una acción de movimiento o estándar para reducir el tiempo de recarga por 1 turno). Cada vez que la criatura aumente su tamaño el daño del aliento aumenta por 2 y aumenta el área de efecto por 15 pies (cono) o 20 pies (línea). Puedes gastar PT adicionales para dotar al aliento de nuevas habilidades, cuyo coste queda determinado por el máster.
 
 <u>Visión verdadera:</u> 
 
@@ -149,17 +151,44 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 ### Animales
 
-<u>Lobo</u>: (3 PT) Base cuadrúpeda; **FUE** 3, **DES** 1, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 5, **DEF** 1; Depredador, Mordisco
+<u>Lobo</u>: (nivel 1) Base cuadrúpeda; **FUE** 3, **DES** 1, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 5, **DEF** 2
 
-<u>Caballo de guerra</u> (6 PT) Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Arrollar, Golpe
+- **Mejoras:** Mordisco, depredador, armadura natural
+- **Rangos:** Ataques naturales I
 
-<u>Halcón</u> (3 PT): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 1; Perforar, Movimiento adicional, Visión periférica
+<u>Caballo de guerra</u> (nivel 2) Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1
+
+- **Mejoras:** Golpe, arrollar, tamaño superior
+- **Rangos:** Ataques naturales I
+
+<u>Halcón</u> (nivel 1): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 1
+
+- **Mejoras:** Movilidad, depredador, visión periférica
+- **Rangos:** Ataques naturales I
+
+<u>Toro</u> (nivel 4): Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 2
+
+- **Mejoras:** Golpe, arrollar, tamaño superior
+- **Rangos:** Ataques naturales I, Ira I, Fortitud I
 
 ### Criaturas mágicas
 
-<u>Quimera:</u> (18 PT) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** 0, **SAB** 2, **CAR** 0; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Aliento, Mordisco (boca adicional), Veneno, Garras, Alas, Cola, Armadura natural
+<u>Quimera:</u> (nivel 8) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** 0, **SAB** 2, **CAR** 0; **PV** 10, **VT** 15, **DEF** 4
 
-<u>Pegaso</u> (9 PT) Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Arrollar, Golpe, Alas, Movimiento adicional
+- **Mejoras:** Vuelo, mordisco (2), veneno, armadura natural, cola, garras, cabeza adicional, aliento, tamaño superior
+- **Rangos:** Ataques naturales I, Fortitud I, Ira I
 
-<u>Osobúho</u> (9 PT) Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1; Tamaño superior, Perforar, Garras, Armadura natural, Arrollar, Depredador
+<u>Pegaso</u> (nivel 4) Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 8, **DEF** 1
 
+- **Mejoras:** Golpe, arrollar, tamaño superior, movilidad, vuelo
+- **Rangos:** Ataques naturales I, Reflejos I
+
+<u>Osobúho</u> (nivel 5) Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 11, **DEF** 4
+
+- **Mejoras:** Garras, mordisco, armadura natural, tamaño superior, depredador, ferocidad, movilidad
+- **Rangos:** Ataques naturales I, Rastrear I, Fortitud I
+
+<u>Grifo</u> (nivel 4): Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 8, **DEF** 1
+
+- **Mejoras:** Garras, mordisco, tamaño superior, movilidad, vuelo
+- **Rangos:** Ataques naturales I, Reflejos I
