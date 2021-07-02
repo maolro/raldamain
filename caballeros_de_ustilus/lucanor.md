@@ -13,7 +13,7 @@ image: lucanor.jpg
 
 ## Especialidades
 
-Ser un hijoputa
+
 
 ## Rasgos
 
@@ -41,7 +41,7 @@ Ser un hijoputa
 
 ### Yabu
 
-Este puto me ha matado, no me lo puedo creer 
+""
 
 ### Regulus
 
@@ -49,4 +49,4 @@ Este puto me ha matado, no me lo puedo creer
 
 ### Ileria
 
-Me cae muy mal, se opone a mis planes malignos :(
+""

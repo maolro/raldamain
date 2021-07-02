@@ -1,7 +1,7 @@
 ---
 title: Stannis
 main: Caballeros de Ustilus
-nacionalidad: Reino élfico de Neronvain 
+nacionalidad: reino élfico de Neronvain 
 alineamiento: Legal neutro
 fecha-de-nacimiento: 3937
 fecha-de-muerte: sigue vivo
