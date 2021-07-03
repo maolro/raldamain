@@ -135,7 +135,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 ### Vulnerabilidades
 
-<u>Sensibilidad a la luz:</u>
+<u>Sensibilidad a la luz</u>  (-1 PT): Los ojos de la criatura son 
 
 <u>Tamaño inferior</u> (-3 PT): Disminuye el tamaño de la criatura por un paso, llegando como mínimo a canijo. Una criatura con tamaño inferior reducirá su FUE y CON por 2 (mínimo -2) e incrementará su DES por 1. Las criaturas más pequeñas recibirán un dado de dificultad adicional en tiros de esquiva por cada nivel de tamaño por el cual el atacante supere al defensor. 
 
