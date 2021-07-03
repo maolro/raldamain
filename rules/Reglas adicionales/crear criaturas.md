@@ -60,6 +60,8 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Imitar voces:</u> La criatura es capaz de imitar a la perfección los sonidos que escucha sin la necesidad de entenderlos. Distinguir una imitación de un sonido real requiere tener éxito en un tiro de averiguar intenciones o estudio (campo de ciencias naturales) Si la criatura es un ser inteligente podrá emplear las voces imitadas para engañar a los oyentes, obteniendo los efectos de [imitación perfecta.](https://raldamain.com/rules/Rangos/Social/influenciar.html#rango-iv) 
 
+<u>Pinza:</u> La criatura está dotada de una gran pinza capaz de atrapar con facilidad a sus víctimas. Todos las maniobras de agarre hechos con una pinza costarán una acción de movimiento y en un ataque la criatura puede gastar 2 ventajas generadas para agarrar a su objetivo. Esta mejora puede aplicarse a ambas garras de la criatura o a la mandíbula de esta.
+
 ### Mejoras de 2 PT
 
 <u>Sentido superior:</u> La criatura obtiene una nueva forma de percepción. Esta puede ser una entre [Vista del vacío,](http://raldamain.com/rules/Plantillas/plantilla%20abisal.html#rango-ii) [Visión ígnea](http://raldamain.com/rules/Plantillas/plantilla%20de%20fuego.html#rango-ii), [Georradar](http://raldamain.com/rules/Plantillas/plantilla%20de%20tierra.html#rango-ii), [Visión árctica](http://raldamain.com/rules/Plantillas/plantilla boreal.html#rango-ii) o [Visión infernal](http://raldamain.com/rules/Plantillas/plantilla%20infernal.html#rango-ii). El sentido obtenido no alcanzará un radio superior a 60 pies.
@@ -135,19 +137,19 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 ### Vulnerabilidades
 
-<u>Sensibilidad a la luz</u>  (-1 PT): Los ojos de la criatura son 
+<u>Sensibilidad a la luz</u>  (-1 PT): Los sentidos de la criatura son hipersensibles a la luz, provocando que estos sean sobresaturados por altas luminosidades. Cuando una criatura se encuentre en un lugar luminoso esta añadirá un dado de desventaja a todos sus tiros de ataque y los atacantes recibirán un dado de ventaja contra ella. En el caso que esta sea afectada por una luz muy brillante estará cegada hasta que pase una ronda fuera de dicho espacio iluminado.
 
 <u>Tamaño inferior</u> (-3 PT): Disminuye el tamaño de la criatura por un paso, llegando como mínimo a canijo. Una criatura con tamaño inferior reducirá su FUE y CON por 2 (mínimo -2) e incrementará su DES por 1. Las criaturas más pequeñas recibirán un dado de dificultad adicional en tiros de esquiva por cada nivel de tamaño por el cual el atacante supere al defensor. 
 
-<u>Ceguera:</u>
+<u>Ceguera</u> (-2 PT): La criatura es completamente ciega, causando que tenga que emplear otro sentido que no dependa de la vista para percibir su entorno. Una criatura con esta vulnerabilidad es inmune a todos los efectos que requieran la vista, pero no podrá realizar ataques a distancia ni leer documentos escritos. Si tiene otro sentido, como puede ser Georradar o Ecolocalización, la criatura no recibirá ningún penalizador por ceguera salvo que su sentido sea deshabilitado de alguna manera.
 
-<u>Vulnerabilidad a energía:</u>
+<u>Vulnerabilidad a energía</u> (-1 PT): Un tipo de energía es particularmente efectivo contra la criatura, provocando que este le inflija daño letal en lugar de no-letal e incremente su daño base por 2. Si la criatura luego obtiene resistencia contra dicha energía perderá esta debilidad pero no obtendrá ningún beneficio por ella.
 
-<u>Punto débil:</u>
+<u>Punto débil</u> (-3 PT): La criatura tiene un notable punto débil en su sólida armadura, el cual si es impactado le ocasionará heridas mortales. Todo ataque hecho contra el punto débil añadirá tres dados de dificultad al tiro de ataque (dos si el atacante tiene la habilidad Ataques apuntados), pero si el punto débil es impactado la defensa y resistencias de la criatura no se aplicarán contra el daño sufrido. Además, si el atacante emplea la habilidad Puntería mortal el daño infligido se multiplicará por 2.
 
 ## Ejemplos de criaturas
 
-### Animales
+### Vertebrados
 
 <u>Lobo</u>: (nivel 1) Base cuadrúpeda; **FUE** 3, **DES** 1, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 5, **DEF** 2
 
@@ -159,15 +161,27 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 - **Mejoras:** Golpe, arrollar, tamaño superior
 - **Rangos:** Ataques naturales I
 
-<u>Halcón</u> (nivel 1): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 1
+<u>Halcón</u> (nivel 1): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 0
 
 - **Mejoras:** Movilidad, depredador, visión periférica
 - **Rangos:** Ataques naturales I
 
-<u>Toro</u> (nivel 4): Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 2
+<u>Toro</u> (nivel 4): Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 12, **VT** 9, **DEF** 3
 
 - **Mejoras:** Golpe, arrollar, tamaño superior
 - **Rangos:** Ataques naturales I, Ira I, Fortitud I
+
+### Invertebrados
+
+<u>Hormiga guerrera gigante</u> (nivel 3): Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 10, **DEF** 3
+
+- **Mejoras:** Mordisco, pinza, armadura natural, movimiento adicional (escalar), sentido adicional (vista a ciegas), ceguera, veneno, tamaño superior
+- **Rangos:** Ataques naturales I
+
+<u>Ankheg</u> (nivel 4): Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 12, **DEF** 3
+
+- **Mejoras:** Tamaño superior, mordisco, pinza, aliento, armadura natural, movimiento adicional (excavar), ataques infundidos (ácido)
+- **Rangos:** Ataques naturales I
 
 ### Criaturas mágicas
 
