@@ -186,7 +186,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 <u>Toro</u> (nivel 4): Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 12, **VT** 9, **DEF** 3
 
 - **Mejoras:** Golpe, arrollar, tamaño superior
-- **Rangos:** Ataques naturales I, Ira I, Fortitud I
+- **Rangos:** Ataques naturales II, Fortitud I
 
 ### Invertebrados
 
@@ -217,15 +217,20 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 - **Mejoras:** Garras, mordisco, tamaño superior, movilidad, vuelo
 - **Rangos:** Ataques naturales I, Reflejos I
 
-<u>Osobúho</u> (nivel 5) Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 11, **DEF** 4
+<u>Osobúho</u> (nivel 5): Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 11, **DEF** 4
 
 - **Mejoras:** Garras, mordisco, armadura natural, tamaño superior, depredador, ferocidad, movilidad
 - **Rangos:** Ataques naturales I, Rastrear I, Fortitud I
 
-<u>Quimera:</u> (nivel 8) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 15, **DEF** 4
+<u>Bulette</u> (nivel 8): Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** -1, **SAB** 1, **CAR** -1; **PV** 14, **VT** 15, **DEF** 6
+
+- **Mejoras:** Mordisco, garras, armadura natural, tamaño superior, movimiento adicional (excavar), arrollar, sentido superior (georradar)
+- **Rangos:** Ataques naturales III, Fortitud II
+
+<u>Quimera:</u> (nivel 8) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 15, **DEF** 5
 
 - **Mejoras:** Vuelo, mordisco (2), veneno, armadura natural, cola, garras, cabeza adicional, aliento, tamaño superior
-- **Rangos:** Ataques naturales I, Fortitud I, Ira I
+- **Rangos:** Ataques naturales II, Fortitud I
 
 <u>Behir</u> (nivel 10): Base ciempiés; **FUE** 9, **DES** 1, **CON** 9, **INT** 0, **SAB** 1, **CAR** 0; **PV** 20, **VT** 21, **DEF** 8
 
