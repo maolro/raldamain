@@ -10,9 +10,11 @@ title: Creación de criaturas
 
 <u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de excavar igual a 20 pies y su tamaño inicial es Pequeño, teniendo -1 PV base.
 
-<u>Ave:</u> La criatura tiene alas y garras. Puede volar a una velocidad de 30 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño, teniendo -1 PV base.
+<u>Ave La criatura tiene alas y garras. Puede volar a una velocidad de 30 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño, teniendo -1 PV base.
 
-<u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respira	r bajo el agua y puede nadar a una velocidad de 30 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
+<u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respirar bajo el agua y puede nadar a una velocidad de 30 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
+
+<u>Ciempiés:</u> La criatura se asemeja a una sierpe formada por numerosos segmentos con pequeñas piernas. Su movimiento base es de 30 pies y puede escalar a una velocidad de 20 pies. Sus estadísticas físicas son FUE 1, DES 3, CON 2 y empezará con tamaño Pequeño, teniendo -1 PV base.
 
 <u>Aberrante:</u> La criatura tiene una forma amorfa que desafía toda ley natural. Recibe 3 PT adicionales y puede distribuir 6 puntos de estadística entre su FUE, DES y CON como desee (no puede exceder 4).
 
@@ -28,7 +30,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Garras:</u> La criatura tiene un par de garras afiladas en sus brazos o sus piernas. Las garras infligen 1+Éxito daño cortante al atacar y con ellas gastar 2 ventajas generadas para infligir sangrado a tu objetivo.
 
-<u>Armadura natural:</u> La criatura tiene una dura coraza que le protege del daño. Recibe Armadura natural igual a 1 + su CON - 2. Si la criatura escogida la habilidad Armadura natural recibida por rangos de Fortitud esta aumentará la armadura natural que otorga por 2. Puedes emplear 1 PT adicional en esta transformación para que la criatura reciba +1 resistencia al daño físico (su resistencia total no puede ser superior a 5).
+<u>Armadura natural:</u> La criatura tiene una dura coraza que le protege del daño. Esta mejora incrementará la armadura natural de la criatura por 2, acumulándose con la habilidad con el mismo nombre perteneciente a Fortitud. Puedes emplear 1 PT adicional en esta transformación para que la criatura reciba +1 resistencia al daño físico (su resistencia total no puede ser superior a 5).
 
 <u>Tentáculo:</u> La criatura posee un flexible tentáculo en una parte de su cuerpo. Realizar un ataque con tu tentáculo es una acción de movimiento, con alcance 10 pies y que inflige 0+Éxito daño contundente al impactar. También puedes emplear el tentáculo para hacer maniobras de combate como Tropezar, Agarre o Desarme. Puedes emplear 1 PT adicional en esta transformación para recibir otro tentáculo de igual tamaño o para transformar el tentáculo en un manojo de tentáculos más pequeños. Un ataque realizado con un manojo de tentáculos te cuesta una acción estándar, pero hace +1 daño base y al impactar el objetivo está Agarrado automáticamente. 
 
@@ -56,7 +58,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Aguantar respiración:</u> El sistema respiratorio de la criatura está capacitado para aguantar tiempo excesivo en entornos adversos. Una criatura con esta habilidad duplica el número de rondas que puede resistir antes de ahogarse y podrá aguantar su respiración durante 10 minutos seguidos. Cada aumento de tamaño que tenga la criatura incrementará el número minutos en los cuales puede aguantar la respiración por 10 minutos debido al aumento de la capacidad respiratoria que tendrá. Gasta 1 PT adicional en este atributo para que la criatura se vuelva anfibia, permitiéndola respirar tanto el aire como el agua. 	
 
-<u>Ferocidad:</u> La criatura es capaz de continuar luchando aunque se encuentre al borde de la muerte. Esta mejora evitará que la criatura caiga inconsciente cuando sea reducida a 0 PV, pero todas las acciones que realice le harán 2 daño no-letal. Puedes gastar PT para obtener rangos de [ira](https://raldamain.com/rules/Rangos/Combate/ira.html), empezando a rango I.
+<u>Ferocidad:</u> La criatura es capaz de continuar luchando aunque se encuentre al borde de la muerte. Esta mejora evitará que la criatura caiga inconsciente cuando sea reducida a 0 PV, pero todas las acciones que realice le harán 2 daño no-letal.
 
 <u>Imitar voces:</u> La criatura es capaz de imitar a la perfección los sonidos que escucha sin la necesidad de entenderlos. Distinguir una imitación de un sonido real requiere tener éxito en un tiro de averiguar intenciones o estudio (campo de ciencias naturales) Si la criatura es un ser inteligente podrá emplear las voces imitadas para engañar a los oyentes, obteniendo los efectos de [imitación perfecta.](https://raldamain.com/rules/Rangos/Social/influenciar.html#rango-iv) 
 
@@ -156,14 +158,29 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 - **Mejoras:** Mordisco, depredador, armadura natural
 - **Rangos:** Ataques naturales I
 
+<u>Halcón</u> (nivel 1): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 0
+
+- **Mejoras:** Movilidad, depredador, visión periférica
+- **Rangos:** Ataques naturales I
+
+<u>Jabalí</u> (nivel 2) Base cuadrúpeda; **FUE** 4, **DES** 1, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 5, **DEF** 2
+
+- **Mejoras:** Golpe, ferocidad, armadura natural, arrollar, movilidad
+- **Rangos:** Ataques naturales I
+
 <u>Caballo de guerra</u> (nivel 2) Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 1
 
 - **Mejoras:** Golpe, arrollar, tamaño superior
 - **Rangos:** Ataques naturales I
 
-<u>Halcón</u> (nivel 1): Base ave; **FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 3, **VT** 4, **DEF** 0
+<u>Gorila</u> (nivel 3): Base bípeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 3
 
-- **Mejoras:** Movilidad, depredador, visión periférica
+- **Mejoras:** Golpe, tamaño superior, movimiento adicional (escalada), armadura natural
+- **Rangos:** Ataques naturales I, Ira I
+
+<u>Oso</u> (nivel 3): **FUE** 5, **DES** 1, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 9, **DEF** 3
+
+- **Mejoras:** Mordisco, garras, armadura natural, tamaño superior, depredador, ferocidad, movilidad
 - **Rangos:** Ataques naturales I
 
 <u>Toro</u> (nivel 4): Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 12, **VT** 9, **DEF** 3
@@ -173,7 +190,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 ### Invertebrados
 
-<u>Hormiga guerrera gigante</u> (nivel 3): Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 10, **DEF** 3
+<u>Hormiga guerrera gigante</u> (nivel 2): Base cuadrúpeda; **FUE** 5, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 10, **DEF** 3
 
 - **Mejoras:** Mordisco, pinza, armadura natural, movimiento adicional (escalar), sentido adicional (vista a ciegas), ceguera, veneno, tamaño superior
 - **Rangos:** Ataques naturales I
@@ -183,16 +200,21 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 - **Mejoras:** Tamaño superior, mordisco, pinza, aliento, armadura natural, movimiento adicional (excavar), ataques infundidos (ácido)
 - **Rangos:** Ataques naturales I
 
+<u>Escarabajo gigante</u> (nivel 4): Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 12, **VT** 11, **DEF** 5
+
+- **Mejoras:** Mordisco, arrollar, armadura natural, vuelo, tamaño superior
+- **Rangos:** Ataques naturales I, Fortitud I
+
 ### Criaturas mágicas
-
-<u>Quimera:</u> (nivel 8) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** 0, **SAB** 2, **CAR** 0; **PV** 10, **VT** 15, **DEF** 4
-
-- **Mejoras:** Vuelo, mordisco (2), veneno, armadura natural, cola, garras, cabeza adicional, aliento, tamaño superior
-- **Rangos:** Ataques naturales I, Fortitud I, Ira I
 
 <u>Pegaso</u> (nivel 4) Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 8, **DEF** 1
 
 - **Mejoras:** Golpe, arrollar, tamaño superior, movilidad, vuelo
+- **Rangos:** Ataques naturales I, Reflejos I
+
+<u>Grifo</u> (nivel 4): Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 8, **DEF** 1
+
+- **Mejoras:** Garras, mordisco, tamaño superior, movilidad, vuelo
 - **Rangos:** Ataques naturales I, Reflejos I
 
 <u>Osobúho</u> (nivel 5) Base cuadrúpeda; **FUE** 6, **DES** 1, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 11, **DEF** 4
@@ -200,7 +222,12 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 - **Mejoras:** Garras, mordisco, armadura natural, tamaño superior, depredador, ferocidad, movilidad
 - **Rangos:** Ataques naturales I, Rastrear I, Fortitud I
 
-<u>Grifo</u> (nivel 4): Base cuadrúpeda; **FUE** 5, **DES** 3, **CON** 4, **INT** -1, **SAB** 1, **CAR** -1; **PV** 8, **VT** 8, **DEF** 1
+<u>Quimera:</u> (nivel 8) Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** -1, **SAB** 1, **CAR** -1; **PV** 10, **VT** 15, **DEF** 4
 
-- **Mejoras:** Garras, mordisco, tamaño superior, movilidad, vuelo
-- **Rangos:** Ataques naturales I, Reflejos I
+- **Mejoras:** Vuelo, mordisco (2), veneno, armadura natural, cola, garras, cabeza adicional, aliento, tamaño superior
+- **Rangos:** Ataques naturales I, Fortitud I, Ira I
+
+<u>Behir</u> (nivel 10): Base ciempiés; **FUE** 9, **DES** 1, **CON** 9, **INT** 0, **SAB** 1, **CAR** 0; **PV** 20, **VT** 21, **DEF** 8
+
+- **Mejoras:** Tamaño superior (3), aliento, inmunidad (daño eléctrico), armadura natural, mordisco, garras, cola
+- **Rangos:** Ataques naturales III, Fortitud II
