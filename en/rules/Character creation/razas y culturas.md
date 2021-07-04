@@ -1,5 +1,5 @@
 ---
-
+title: Cultures and species
 ---
 
 These are the main cultures and species appropriate for a Knights of Ustilus campaign.
@@ -66,23 +66,28 @@ Kratoi is often called Ustilus’s crown jewel because of its faithfulness, good
 
 Kratoics often have skin tones ranging from fair to tanned and hair often brown and black. Blond hair is not rare either, specially from those with Mazarine ancestry. Their eyes are either brown, blue or green
 
-### Mazarinos
+### Mazarines
 
 Heirs of the greatest empire of times past, the Mazarines are stuck in a period of decadence as a mere shadow of what they could have been.
 
-### Dairovios
+### Dairovians
 
 Rodeados del miedo y la superstición, los dairovios son bien conocidos por su poder sombrío y tendencia a la brujería. 
 
+### Arshalani
+
 ## Non-human
 
-### Elfos
+### Elves
 
 Los elfos representan todo aquello que la humanidad aspira a ser. Inmortales, bellos y con talento innato hacia la magia, los elfos son el primer pueblo conocido que ha pisado el continente.
 
-### Semielfos
+### Half-elves
 
 
 
-### Hobgoblin
+### Hobgoblins
 
+
+
+### Leonin
