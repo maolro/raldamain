@@ -58,7 +58,7 @@ Estas divinidades cuentan con un culto particularmente extensivo y bendicen a su
 
 <u>Ideales</u>: La vida en todas sus formas es sagrada. Todo buen acto será recompensado, toda maldad será castigada. Toda persona del mundo debe convertirse a la fe para traer la salvación. No se permite ningún compromiso con el mal, aunque la redención sincera está permitida.
 
-<u>Usos del chi:</u> Mekhatim te permite infundir el chi de energía vital para sanar a tus aliados. Puedes gastar 1 chi de tu reserva para sanar vitalidad a un aliado igual a tu rango de magia divina + 1 (en el caso que esté al máximo de vitalidad se sanará PV). 
+<u>Usos del chi:</u> Mekhatim te permite infundir el chi de energía vital para sanar a tus aliados. Puedes gastar 1 chi de tu reserva para sanar vitalidad a un aliado igual a tu rango de magia divina + 1 (en el caso que esté al máximo de vitalidad se sanará PV). A rango II de magia divina puedes gastar 2 chi para eliminar un efecto de estado, veneno o enfermedad que afecte a un aliado y a rango III puedes emplear 3 chi para resucitar a un aliado que haya muerto hace menos de un minuto.
 
 ### Sek-Tebos
 
