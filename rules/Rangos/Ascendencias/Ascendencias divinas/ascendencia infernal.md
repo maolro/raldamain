@@ -13,7 +13,7 @@ Obtienes Resistencia 1 a daño físico.
 
 <u>Resistencias infernales:</u> Recibes resistencia igual a tu rango contra un tipo de daño de tu elección y todas las condiciones asociadas con él. Algunas opciones son fuego, frío, veneno, eléctrico, necrótico y psíquico. A rango III y V puedes escoger otro tipo de daño contra el cual tener resistencia.
 
-<u>Rasgos demoníacos:</u> Tu herencia diabólica se manifiesta en un característico rasgo que puede variar de cuernos, garras, ojos de un color especial o una cola. Desbloqueas además una magia elemental de tu elección y las heridas permanentes que provocas cuentan como heridas profanas. Las heridas profanas cuentan como si fuesen un nivel mayor para propósitos de sanación y hacen 1 daño no letal al turno hasta que el objetivo se sane PV. 
+<u>Rasgos demoníacos:</u> Tu herencia diabólica se manifiesta en un característico rasgo que puede variar de cuernos, garras, ojos de un color especial o una cola. Puedes infligir daño de un elemento determinado con magia de evocación sin la necesidad de tener la habilidad Aspecto elemental y las heridas permanentes que provocas cuentan como heridas profanas. Las heridas profanas cuentan como si fuesen un nivel mayor para propósitos de sanación y hacen 1 daño no letal al turno hasta que el objetivo se sane PV. 
 
 ## Rango II
 
