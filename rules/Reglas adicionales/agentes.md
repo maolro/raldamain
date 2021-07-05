@@ -33,7 +33,7 @@ Esta es una lista de los tipos más comunes de agente y el nivel con el que cuen
 
 <u>Soldado</u>: Un soldado es la unidad más básica de un ejército y se caracteriza por ser individualmente débil pero poderoso en grandes grupos. Un solado será de nivel 1 a 3 y tendrá equipamiento de mejor calidad que un matón común, incluyendo armaduras y armas más modernas. Si tu organización no forma parte del ejército un soldado incrementará su NC por 1.
 
-<u>Matón</u>: Un matón es un individuo que emplea la fuerza bruta para hacer cumplir las órdenes de tu organización. Estos suelen carecer de escrúpulos y frecuentan a ser de nivel 1-3 con rangos relacionados con combate. No obstante, no tendrán acceso a armas de buena calidad ni armaduras, basándose más en su fuerza física.
+<u>Matón</u>: Un matón es un individuo que emplea la fuerza bruta para hacer cumplir las órdenes de tu organización. Estos suelen carecer de escrúpulos y frecuentan a ser de nivel 1-3 con rangos relacionados con combate. No obstante, no tendrán acceso a arm0as de buena calidad ni armaduras, basándose más en su fuerza física.
 
 <u>Guardia:</u> Un guardia realiza labores de vigilancia para una persona u organización, tanto dentro como fuera de la ley. Este agente puede tratarse de un guardaespaldas, un policía o un vigilante de seguridad, y su nivel acostumbra a ser de nivel 1 a 3. Si tu organización no está relacionada con una institución gubernamental los guardias tendrán el equipamiento de un matón salvo que incrementes su NC por 1.
 
@@ -61,17 +61,30 @@ Esta es una lista de los tipos más comunes de agente y el nivel con el que cuen
 
 <u>Asesino</u>: Un asesino se dedica a la despiadada tarea de eliminar a enemigos de tu organización. Frecuentan a ser de nivel 7 a 9 y poseen rangos similares a los de un espía. Puedes contratar a asesinos de mayor nivel para erradicar a enemigos más peligrosos, los cuales tendrán un nivel de contratación igual a su nivel base dividido entre 3 (redondeando hacia arriba y llegando como máximo a nivel 15).
 
-<u>Ingeniero</u>: 
+<u>Ingeniero</u>: Un ingeniero es un experto en la fabricación y reparación de todo tipo de artefactos mecánicos. Este será normalmente de nivel 4 a 6 con rangos en fabricación, bombas o conocimiento. Cada ingeniero contratado te proporcionará uno de los siguientes bonificadores para tu organización:
 
-<u>Químico</u>: 
+- Tu organización recibe un arma de asedio o un vehículo mecánico (la naturaleza de este dependerá de la época)
+- 4 unidades de NC 3 o más o un  líder de la organización recibirán 3 bombas, las cuales se repondrán en un día si son utilizadas.
+- Un miembro de la organización recibe una mejora de arma o armadura de manera gratuita.
+- Fabrica un número de autómatas de nivel combinado 6 (incrementa el NC por 1 para que el nivel combinado aumente por 3, llegando como máximo a 12). Esta mejora solo puede tomarse si los autómatas existen en el contexto de la época.
+
+Los ingenieros son necesarios para preparar trampas en tu base y si tienes un repositorio mágico en tu base estos podrán fabricar trampas mágicas. Si aumentas el NC de un ingeniero por 1 este incrementará su nivel máximo por 3 y te proporcionará un bonificador adicional. Para contratar a este agente necesitas tener un taller.
+
+<u>Químico</u>: Un químico es un científico dedicado a la investigación en las propiedades de la materia, empleando su conocimiento para fabricar todo tipo de medicinas y disoluciones. Un químico normalmente es de nivel 4 a 6 y tendrá rangos en química y conocimiento. Cada químico contratado te proporcionará uno de los siguientes bonificadores para tu organización:
+
+- 4 unidades de NC 3 o más o un líder de la organización recibirán 3 dosis de suero, medicina o veneno, las cuales se repondrán tras ser usadas.
+- Sintetiza una cantidad de chi suficiente para fabricar 2 trampas mágicas o obtener una mejora de arma o armadura de manera gratuita.
+- Realiza una alteración genética en un personaje de tu elección, proporcionándole así 3 PT adicionales o aumentando dos de sus estadísticas mentales por 1. Esta mejora solo puede tomarse si la alteración genética es común en la época y si el químico tiene NC 4 o más.
+
+Los químicos solo pueden ser contratados si tu base posee un laboratorio donde puedan realizar sus prácticas. Si aumentas el NC de un químico por 1 este incrementará su nivel máximo por 3 y te proporcionará un bonificador adicional.
 
 ### Nivel 4
 
 <u>Capitán de navío</u>: Un capitán de navío es propietario de una embarcación y líder de la tripulación de esta, poniéndola al servicio de tu organización para una multitud de propósitos. La embarcación puede ser un barco de transporte, un carguero, una galera o un barco pesquero y el mismo capitán será de nivel 7 a 9. Puedes incrementar el nivel de contratación del capitán de navío por 1 para que este sea de nivel 10 a 12 y sea propietario de un galeón de guerra o un barco mercante.
 
-<u>Mago</u>: 
+<u>Mago</u>: Experto en el control del chi, un mago es capaz de manipular el espacio, el tiempo y la energía a su voluntad. Este será de nivel 7 a 9 y poseerá rangos en conocimiento y magia arcana. El nivel de contratación y la fuerza del mago variarán según el lugar y el momento histórico, reduciéndolo por 1 si la magia es más común e incrementándolo por 1 si es más rara. Puedes contratar a magos de mayor nivel, los cuales tendrán un nivel de contratación igual a su nivel base dividido entre 3 (redondeando hacia arriba y llegando como máximo a nivel 5) y sumándole un valor según la abundancia de la magia (+1 o -1 normalmente).
 
 ### Nivel 5
 
-<u>Político</u>: 
+<u>Político</u>: Un político es una figura importante en una determinada comunidad o región el cual puede emplear su influencia para proteger a tu organización de la ley o proporcionarles beneficios económicos. Este será de nivel 10 a 12 y poseerá rangos en influenciar, riqueza, conocimiento y presencia. Un político puede emplear su alto estatus para absolver a tu organización de los crímenes que cometa, emplear las fuerzas de la ley para perseguir a rivales de tu organización o financiar a tu organización con dinero estatal, aumentando así tu nivel de crédito por 4.
 

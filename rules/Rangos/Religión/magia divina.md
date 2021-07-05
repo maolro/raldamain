@@ -13,7 +13,7 @@ Tira un dado de soltura adicional en tiros de magia divina.
 
 <u>Milagro menor:</u> Tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción bonus usable una vez puedes darle un dado de Ventaja o Desventaja en su siguiente tirada a una criatura de tu elección. Esta habilidad se puede usarse un número de veces al día igual a tu Rango + 2. Milagro menor también puede emplearse para recibir una pequeña ayuda de tu dios no relacionada con el combate.
 
-<u>Enviado de los dioses:</u>  Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Además, desbloqueas una ascendencia relacionada con tu dios y puedes utilizar tu estadística de sabiduría para tiros de magia arcana o elemental. 
+<u>Enviado de los dioses:</u>  Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Además, desbloqueas una ascendencia relacionada con tu dios y puedes utilizar tu estadística de sabiduría para tiros de magia arcana o elemental. Además, cada dios te permite gastar el chi de tu reserva de maneras únicas tal como se especifica en sus respectivos apartados.
 
 <u>Oración:</u> Empleando diez minutos de oración y contemplación puedes comunicarte directamente con tu dios, recibiendo su consejo. Oración te permite hacerle hasta 4 preguntas a tu dios, quién te contestará con sinceridad. No obstante, tu dios puede hablarte de forma críptica o no contestar determinadas preguntas. El máster decidirá cómo te contestará tu dios. Cada vez sucesiva del mismo día que utilices oración reduce el número de preguntas que puedas hacerle a tu dios por 1.
 
@@ -57,6 +57,8 @@ Estas divinidades cuentan con un culto particularmente extensivo y bendicen a su
 <u>Centros de culto</u>: Arshalán, Menadar, algunas regiones de los Reinos Libres.
 
 <u>Ideales</u>: La vida en todas sus formas es sagrada. Todo buen acto será recompensado, toda maldad será castigada. Toda persona del mundo debe convertirse a la fe para traer la salvación. No se permite ningún compromiso con el mal, aunque la redención sincera está permitida.
+
+<u>Usos del chi:</u> Mekhatim te permite infundir el chi de energía vital para sanar a tus aliados. Puedes gastar 1 chi de tu reserva para sanar vitalidad a un aliado igual a tu rango de magia divina + 1 (en el caso que esté al máximo de vitalidad se sanará PV). 
 
 ### Sek-Tebos
 
