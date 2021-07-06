@@ -22,17 +22,26 @@ Una organización secreta ha realizado varios experimentos sobre tu mente, alter
 
 ## Asura
 
+Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una senda de violencia desmesurada, enloqueciéndolos con una insaciable sed de sangre que les condena a la soledad y a una temprana muerte. No obstante, el poderoso vínculo que tiene un guerrero maldito causa que su propia alma se transfiera a ella, provocando que el siguiente portador de esta arma empiece a tener sangrientas visiones que poco a poco le empiezan a llevar por la misma senda que condenó a su anterior portador.
+
 ### Grado 1
 
 - Incrementa tu FUE por 1
+- Arma ligada
+- Resistencia sobrenatural
+- Furia de batalla
 
 ### Grado 2
 
 - Incrementa tu DES por 1
+- Intimidación
+- Regeneración
 
 ### Grado 3
 
 - Incrementa tu FUE por 1
+- Invulnerabilidad
+- Arma maldita
 
 ## Profundo
 
@@ -156,7 +165,7 @@ La maldición del lich representa el horripilante proceso que debe seguir un mag
 
 ### Grado 1
 
-Para obtener este grado de maldición necesitas tener rango III o más de nigromancia y rango III de conocimiento o magia divina.
+Has iniciado la oscura senda de la no-muerte, infundiendo tu cuerpo de energía necrótica para incrementar tus poderes nigrománticos. Para obtener este grado de maldición necesitas tener rango III o más de nigromancia y rango III de conocimiento o magia divina.
 
 - Aumenta tu estadística de INT por 1 y tu armadura natural por 2.
 - Tu toque necrótico se vuelve más poderoso, provocando dolor agonizante a las criaturas que atacas. Incrementa el daño del toque necrótico por 2 y este infligirá una herida permanente leve cada vez que reduzcas una estadística de tu objetivo. Si tienes rango V de nigromancia la herida infligida pasará a ser media.
