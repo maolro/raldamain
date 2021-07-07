@@ -113,11 +113,22 @@ Base aberrante; **FUE** 2, **DES** 7, **CON** 4, **INT** 1, **SAB** 1, **CAR** 3
 
 ## Tempramentik, diez caras (nivel 16)
 
-Base bípeda; **FUE** 2, **DES** 7, **CON** 4, **INT** 1, **SAB** 1, **CAR** 3; **PV** 13 **VT** 20, **DEF** 3
+Base bípeda; **FUE** 1, **DES** 7, **CON** 4, **INT** 1, **SAB** 1, **CAR** 6; **PV** 12 **VT** 22, **DEF** 1
 
 - **Mejoras:** Tamaño superior, vuelo, visión periférica, mirada terrorífica (confusión), miembros adicionales, ascendencia abisal (rasgo monstruoso superior, aura de caos, paso abisal)
-- **Rangos:** 
+- **Rangos:** Ataques naturales V, Magia mental IV, Reflejos II
 
 ## Kurungor (nivel 18)
 
+Base bípeda; **FUE** 9, **DES** 1, **CON** 10, **INT** 0, **SAB** 1, **CAR** 0; **PV** 21 **VT** 30, **DEF** 11
+
+- **Mejoras:** Tamaño superior, ascendencia abisal (rasgo monstruoso superior, aura de caos, plaga abisal), armadura natural, mordisco, garras, mirada terrorífica (pánico), ferocidad, resistencia mágica, regeneración
+- **Rangos:** Ataques naturales V, Fortitud III, Armaduras III
+
 ## Ichobal, señores del abismo (nivel 20)
+
+Base bípeda; **FUE** 1, **DES** 1, **CON** 1, **INT** 0, **SAB** 1, **CAR** 9; **PV** 21 **VT** 30, **DEF** 11
+
+- **Mejoras:**  Ascendencia abisal (rasgo monstruoso superior, aura de caos, paso abisal), mirada terrorífica (locura)
+- **Rangos:** Magia mental VI, Magia protectora V, Magia de evocación V, Magia temporal II
+
