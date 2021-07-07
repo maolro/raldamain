@@ -127,7 +127,7 @@ Base bípeda; **FUE** 9, **DES** 1, **CON** 10, **INT** 0, **SAB** 1, **CAR** 0;
 
 ## Ichobal, señores del abismo (nivel 20)
 
-Base bípeda; **FUE** 1, **DES** 1, **CON** 1, **INT** 0, **SAB** 1, **CAR** 9; **PV** 21 **VT** 30, **DEF** 11
+Base bípeda; **FUE** 1, **DES** 5, **CON** 3, **INT** 0, **SAB** 1, **CAR** 9; **PV** 11 **VT** 25, **DEF** 8
 
 - **Mejoras:**  Ascendencia abisal (rasgo monstruoso superior, aura de caos, paso abisal), mirada terrorífica (locura)
 - **Rangos:** Magia mental VI, Magia protectora V, Magia de evocación V, Magia temporal II
