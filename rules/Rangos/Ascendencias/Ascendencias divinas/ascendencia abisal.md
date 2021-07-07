@@ -40,7 +40,7 @@ Incrementa tu CON por 1.
 <u>Rasgo monstruoso superior:</u> Recibes 3 PT adicionales, los cuales puedes emplear para tu habilidad rasgo monstruoso. Además, tienes una habilidad relacionado con una criatura abisal de tu elección. Estas son algunas de las posibilidades:
 
 - **Samsotiq**: Tus garras hacen +1 daño base. Tienes sangre ácida, la cual hace 1 daño ácido a las criaturas que te hagan daño con ataques naturales y causa que las armas que te hieran reduzcan su efectividad por 1.
-- **Kosnaskye**: Todas las criaturas a menos de 15 pies están [enfermadas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Tienes inmunidad a enfermedades y veneno.
+- **Kosnaskye**: Todas las criaturas a menos de 15 pies están [enfermadas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Incrementa tu resistencia a enfermedades y veneno por 4.
 - **Shebatoth**: Conoces un hechizo adicional de tu propia creación. Este debe tener el consentimiento del máster y no debe ser más fuerte que uno de Rango II.
 - **Tempramentik**: Recibes una acción estándar adicional al turno.
 - **Ichobal**: Tus ataques hacen +2 daño necrótico. El daño necrótico te sana vitalidad como si fueses un no-muerto y te recuperas 1 vitalidad al hacer daño con un ataque.
@@ -69,17 +69,54 @@ Incrementa tu DES por 1. Puedes superar el límite de 6 con tus estadísticas, l
 
 ## Ukron, remanente del odio (nivel 2)
 
+Base bípeda; **FUE** 0, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 4, **VT** 5, **DEF** 1
+
+- **Mejoras:** Explosión, garras, movilidad, ascendencia abisal, pequeño
+- **Rangos:** Ataques naturales I, Reflejos I
+
 ## Samsotiq (nivel 6)
+
+Base bípeda; **FUE** 2, **DES** 5, **CON** 3, **INT** 0, **SAB** 1, **CAR** 0; **PV** 7, **VT** 11, **DEF** 3
+
+- **Mejoras:** Garras, ataques infundidos (ácido), ascendencia abisal (plaga abisal, rasgo monstruoso superior), ferocidad
+- **Rangos:** Ataques naturales II, Fortitud I, Reflejos I
 
 ## Alzebun, los famélicos (nivel 8)
 
+Base aberrante; **FUE** 7, **DES** 1, **CON** 5, **INT** 0, **SAB** 1, **CAR** 0; **PV** 13, **VT** 15, **DEF** 3
+
+- **Mejoras:** Mordisco (2), visión periférica, tamaño superior, ascendencia abisal (plaga abisal, rasgo monstruoso superior), tentáculo (2), cieno
+- **Rangos:** Ataques naturales III, Fortitud I
+
 ## Kosnaskye (nivel 10)
+
+Base cuadrúpeda; **FUE** 7, **DES** 1, **CON** 7, **INT** 1, **SAB** 1, **CAR** 2; **PV** 16, **VT** 19, **DEF** 6
+
+- **Mejoras:** Garras, mordisco, miembros adicionales (2), perforar, ascendencia abisal (plaga abisal, rasgo monstruoso superior, aura de caos), tamaño superior, armadura natural, movimiento adicional (escalada)
+- **Rangos:** Ataques naturales III, Fortitud I, Presencia I
 
 ## Shebototh (nivel 12)
 
+Base bípeda; **FUE** 1, **DES** 3, **CON** 3, **INT** 1, **SAB** 1, **CAR** 7; **PV** 9 **VT** 15, **DEF** 3
+
+- **Mejoras:** Miembros adicionales, mirada terrorífica (pánico), ascendencia abisal (rasgo monstruoso superior, aura de caos, paso abisal), cambiaformas
+- **Rangos:** Magia espacial III, Telekinesia IV
+- **Habilidades especiales**
+  - <u>Distorsión espacial:</u> La presencia de un Shebototh es capaz de doblar el tejido espacial, proporcionándole dos dados de desventaja contra todos los ataques hechos contra él que no sean de área. Además, el alcance de todos los abisales a 20 pies de esta criatura aumenta por 5 pies.
+
 ## Vraukai (nivel 14)
 
+Base aberrante; **FUE** 2, **DES** 7, **CON** 4, **INT** 1, **SAB** 1, **CAR** 3; **PV** 13 **VT** 20, **DEF** 3
+
+- **Mejoras:** Cieno, cambiaformas (+3 PT), visión periférica, regeneración, ascendencia abisal (rasgo monstruoso superior, aura de caos)
+- **Rangos:** Ataques naturales V, Reflejos III, Fortitud I
+
 ## Tempramentik, diez caras (nivel 16)
+
+Base bípeda; **FUE** 2, **DES** 7, **CON** 4, **INT** 1, **SAB** 1, **CAR** 3; **PV** 13 **VT** 20, **DEF** 3
+
+- **Mejoras:** Tamaño superior, vuelo, visión periférica, mirada terrorífica (confusión), miembros adicionales, ascendencia abisal (rasgo monstruoso superior, aura de caos, paso abisal)
+- **Rangos:** 
 
 ## Kurungor (nivel 18)
 
