@@ -1,3 +1,7 @@
+---
+title: Niveles míticos
+---
+
 Los niveles míticos sirven para formar personajes con fuerza y capacidades legendarias que realizarán grandes hazañas y cambiarán para siempre el rumbo de la historia. Un nivel mítico sólo puede ser otorgado por el máster y se recomienda usarlos con discreción debido a la rareza de personajes míticos.
 
 ## Niveles míticos
