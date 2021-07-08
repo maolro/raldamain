@@ -45,7 +45,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 # Armas
 
-Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 90 pies y se necesita una acción estándar para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 90 pies y se necesita una acción estándar para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongrugentes.
 
 - **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base por 1 y su distancia por 30 pies a cambio de una mayor facilidad de uso. Las pistolas de mano necesitan sólo una acción de movimiento para recargar y pueden utilizarse en combate con dos armas.
 - **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
