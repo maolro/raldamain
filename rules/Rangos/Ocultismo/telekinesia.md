@@ -15,7 +15,7 @@ Añade un dado de Soltura a todos tus tiros de telekinesia.
 
 ## Rango II
 
-<u>Muro de fuerza:</u> Como acción estándar, crea un muro de piedra con longitud de 15xR pies de largo de 5xR pies de alto. Ese muro te da cubierta completa contra ataques y es inmune al daño de ataques físicos no-mágicos. El muro permanecerá hasta que pierdas la concentración. Si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de piedra puede crearse como reacción gastando 2 desventajas generadas en  un Escudo telequinético.
+<u>Muro de fuerza:</u> Como acción estándar, crea un muro de fuerza con longitud de 15xR pies de largo de 5xR pies de alto. Ese muro te da cubierta completa contra ataques y es inmune al daño de ataques físicos no-mágicos. El muro permanecerá hasta que pierdas la concentración. Si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Muro de fuerza puede crearse como reacción gastando 2 desventajas generadas en  un Escudo telequinético.
 
 <u>Empuje telequinético:</u> En lugar de lanzar un objeto puedes emplear tu acción estándar para empujar a un objetivo usando la fuerza de tu mente. Para esta habilidad tiras tus dados de telekinesia contra el Heroísmo de tu objetivo, empujándolo 5 x Éxito pies. Si el objetivo choca contra un objeto sólido sufre daño como si fuese una caída. Puedes gastar una ventaja generada para lanzar 5 pies por los aires a tu objetivo o tropezarlo (sólo puedes gastar ventajas de esta manera si tienes éxito).
 
