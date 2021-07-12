@@ -1,5 +1,5 @@
 ---
-title: Artes marciales
+title: Natural attacks
 main: Rangos
 sub: Armas
 ---

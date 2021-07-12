@@ -1,5 +1,5 @@
 ---
-title: Combate doble
+title: Two-weapon fighting
 main: Rangos
 sub: Armas
 ---

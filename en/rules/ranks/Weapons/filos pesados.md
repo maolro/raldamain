@@ -1,54 +1,53 @@
 ---
-title: Filos pesados
+title: Slashing blades
 main: Rangos
 sub: Armas
 ---
 
-## Rango I
+## Rank I
 
-Tiras un dado de soltura adicional en tiros de ataque.
+You roll an additional proficiency die on attack rolls.
 
-<u>Parada:</u> Como reacción puedes realizar una parada contra el ataque de un arma cuerpo a cuerpo. Tiras tus dados de ataque de forma defensiva para una parada y puedes cancelar un éxito generado una vez al turno (2 veces al turno a rango III y 3 veces al turno a rango V). Parada solo puede emplearse una vez por ronda, y entrar en forma defensiva te permitirá usarla una vez adicional (2 veces adicionales si empleas una acción estándar para entrar en forma defensiva).
+<u>Parry:</u> As a reaction you can make a save against a melee weapon attack. You roll your attack dice defensively for a parry and can cancel a success or two generated advantages once per turn (2 times per turn at rank III and 3 times per turn at rank V). Parry can only be used once per round, and going into defensive form will allow you to use it one additional time (2 additional times if you use a standard action to go into defensive form).
 
-<u>Tajo feroz:</u> tus ataques son muy efectivos contra enemigos sin armadura. Al hacer daño con tu arma a un objetivo puedes gastar 2 ventajas generadas para infligirle Sangrado. Tus heridas permanentes aumentan su efectividad por 1 contra criaturas que lleven armadura ligera o que no lleven armadura.
+<u>Slash:</u> Your attacks are very effective against unarmored enemies. When dealing damage with your weapon to a target you can spend a number of perks equal to 1 + the defense value of their armor to inflict [bleed](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado). Your permanent wounds increase their effectiveness by 1 against creatures wearing light armor or no armor.
 
-## Rango II
+## Rank II
 
-<u>Gran corte:</u> emplea una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. este ataque cuenta como ataque de área para los propósitos de evasión o al atacar a marabuntas, pero no hará daño obligatorio. Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
+<u>Great cleave:</u> You can spend a full turn action to attack all creatures with a 15-foot arc. this attack counts as an area attack for the purposes of evasion or when attacking marabouts, but will not deal mandatory damage. Your slash stops immediately if a creature with a shield succeeds in its defense.
 
-<u>Ataque poderoso:</u> eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso. tiras un dado menos en tu ataque poderoso pero infliges +2 daño base al impactar. A rango IV puedes reducir tu ataque por un dado adicional para hacer +2 daño adicionales.
+<u>Power Attack:</u> You are able to trade accuracy for increased attack strength. Before attacking, you can declare your attack as a powerful attack, whereby you add one difficulty die to your attack roll but inflict +2 base damage on hit. At rank IV you can add another difficulty die to inflict 2 additional points of damage.
 
-## Rango III
+## Rank III
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente leve (4 ventajas para infligir una herida permanente media). 
+You roll an additional proficiency die on attack rolls . Spend 2 advantages to inflict a mild wound (4 perks to inflict a medium wound). 
 
-<u>Impacto destructor</u>: Al impactar a un objetivo con armadura con tu ataque poderoso, reduce la defensa de su armadura por 1. Esta reducción puede eliminarse reparando la armadura, y si la defensa de la armadura queda reducida a 0 esta esta se vuelve inutilizable (cuenta como si no llevase armadura para los efectos tajo feroz). Esta habilidad puede usarse en un ataque normal gastando 2 ventajas.
+<u>Sundering strike</u>: Hitting an armored target with your powerful attack reduces its armor defense by 1. This reduction can be removed by repairing the armor, and if the armor's defense is reduced to 0 it becomes unusable (which counts as if it were not wearing armor for the effects of Fierce Slash). This ability can be used in a normal attack by spending 2 perks.
 
-<u>Choque de espadas</u>: Cuando ataques a un enemigo con tu espada y este use Parada para defenderse, puedes gastar 2 ventajas para que vuestras espadas queden trabadas. Si tu espada está trabada tienes la oportunidad de emplear 2 ventajas en un ataque para desarmar tu oponente o moverte 5 pies junto a él (4 ventajas para romper el arma del enemigo). Para liberar su espada el oponente debe tirar un ataque contra tu parada y tener éxito o moverse fuera de tu alcance sufriendo un ataque de oportunidad. El oponente no puede atacarte si tiene su espada trabada.
+<u>Trap blade</u>: When you attack an enemy with your sword and he uses Parry to defend himself, you can spend 2 perks to make your swords locked. If your sword is locked you have the opportunity to spend 2 perks on an attack to disarm your opponent or move 5 feet next to him (4 perks to break his weapon if it is made of a lower hardness manerial). To free his sword the opponent must roll an attack against your parry and succeed or move out of your range suffering an attack of opportunity. The opponent cannot attack you if he has his sword locked.
 
-## Rango IV
+## Rank IV
 
-<u>Torbellino de acero:</u> Usar Gran corte te cuesta una acción estándar. Puedes emplear una acción de movimiento al hacer Gran corte para atacar a todas las criaturas que estén adyacentes a ti. Usar Gran corte de esta manera cuenta como un ataque de área y hará daño a las criaturas que permanezcan adyacentes a ti aunque tengan éxito en la defensa. Esta habilidad aún puede ser detenida por Escudo.
+<u>Whirlwind of steel:</u> Using Great Cut costs you a standard action. You can use a move action when making Great slash to attack all creatures adjacent to you. Using Great slash in this way counts as an area attack and will deal damage to creatures that remain adjacent to you even if they succeed in defending. This ability can still be stopped by a shield.
 
-<u>Rompe escudos:</u> Al atacar a un enemigo con escudo y fallar el golpe, puedes gastar 2 ventajas para hacerle 1 daño al escudo. cuando el daño del escudo supere la defensa que este otorgue se rompe al instante (por ejemplo, para un escudo de madera que otorgue tres dados de Dificultad debes hacerle 3 daño para que se rompa). rompe escudos hace un daño automático si el escudo bloquea uno de tus ataques poderosos.
+<u>Shieldbreaker:</u> When attacking an enemy with a shield and missing the hit, you can spend 2 perks to deal 1 damage to the shield. when the shield's damage exceeds the defense it grants it breaks instantly (for example, for a wooden shield that grants three Difficulty dice you must deal 3 damage to it for it to break). shieldbreaker does automatic damage if the shield blocks one of your powerful attacks.
 
-## Rango V
+## Rank V
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
+You roll an additional hit die on attack rolls. Spend 2 perks to inflict a medium wound (4 perks to inflict a serious wound).
 
-<u>Cortes en secuencia</u>: Puedes gastar una acción de movimiento para hacer un ataque adicional de espada al turno. Tus habilidades se aplican con normalidad a este ataque. Puedes emplear Parada una vez adicional al turno por cada acción de movimiento que tengas.
+<u>Quick attack</u>: You can spend a move action to make one additional sword attack per turn. Your skills apply normally to this attack. You may employ Parry one additional time per turn for each move action you have.
 
-<u>Tajo cercenador:</u> Al impactar a un enemigo con un Ataque poderoso, gasta un número de ventajas igual a 1+la DEF de la armadura del objetivo para cortarle un brazo. Las reducciones a la armadura a causa de impacto destructor se aplican para determinar el coste de ventajas.
+<u>Death cleave:</u> When you hit an enemy with a Powerful Attack, you can spend 4 perks to cause a critical wound to the body part you hit. This ability costs you 2 perks if your target is wearing light armor or their armor has been disabled.
 
-# Armas
+# Weapons
 
-Una arma de filo pesado base hace 3+Éxito daño cortante y tiene un alcance de 5 pies. Un arma de filo pesado puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+A base slashing blade weapon does 3+Success slashing damage and has a range of 5 feet. A cutting edge weapon can be modified with the following characteristics to result in all related weapons.
 
-- **Pesada:** El arma es tamaño superior a la normal, incrementando su daño base por 1 a costa de que sea necesaria utilizarla con dos manos. Si tienes fuerza 6 o más puedes sujetar un arma pesada con una sola mano.
-- **Ligera:** El arma es de menor tamaño y más fácil de utilizar. Un arma ligera reduce su daño base por 1 pero podrás utilizar tu estadística de DES para tiros de ataque hechos con ella. Si el arma es una espada perderá el atributo Ataque poderoso a rango II y recibirás Ataque furtivo (con un hacha ligera no ocurre nada). Para los propósitos de combate con dos armas puedes escoger la rama de filos ligeros aunque el arma sea un filo pesado.
-- **Doble:** El arma tiene un segundo filo con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo como ataque doble, por lo cual podrás hacer un ataque adicional como acción bonus pero tirarás un dado de habilidad menos en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
-- **Hacha:** El arma se trata de un hacha en lugar de una espada. Un hacha hace +2 daño base al impactar pero no podrás utilizar la habilidad Parada para defenderte de ataques. A rango III recibes el atributo Carga poderosa en lugar de Choque de espadas.
-- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque poderoso, Impacto destructor y Rompe escudos. Lanzamiento sólo puede aplicare a armas ligeras.
-- **Aserrada:** El filo del arma está dotado de varias pequeñas cuchillas que causan graves heridas al impactar. Infliges automáticamente Sangrado al impactar a una criatura que no lleve armadura o lleve armadura ligera. Si la criatura ya tiene Sangrado el daño de este aumentará por 1 al impactar, llegando como máximo a 3 daño no-letal por turno.
-- **Rompespadas:** El arma tiene varias cuñas en el filo con las cuales puede romper las espadas de tus enemigos. Si el enemigo se defiende con un ataque de Parada contra tu arma puedes gastar 2 desventajas generadas para reducir el daño base del arma por 1, rompiéndola si logras reducir el daño base a 0. Al utilizar la habilidad Rompespadas podrás gastar 2 desventajas generadas para romper el arma de tu enemigo. Esto sólo puede usarse si el daño base del arma es igual a 2 o menos.
-
+- **Heavy:** The weapon is larger than normal size, increasing its base damage by 1 at the cost of requiring two-handed use. If you have strength 6 or more you can hold a heavy weapon with one hand.
+- **Light**: The weapon is smaller in size and easier to use. A light weapon reduces its base damage by 1 but you will be able to use your DEX stat for attack rolls made with it. If the weapon is a sword it will lose the attribute Powerful Attack at rank II and you will receive [sneak attack](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html#rango-i) (with a light axe nothing happens). For the purposes of two-weapon combat you can choose the piercing blade branch even if the weapon has a slashing blade.
+- **Double**: The weapon has a second blade with which you can make attacks. When making an attack with your weapon you can declare it as a double attack, so you can make an additional attack as a bonus action but you will roll one less skill die on both attacks. When you reach rank III you will be able to apply your weapon skills to your second attack and at rank V you will have no penalty on a double attack.
+- **Axe**: The weapon is an axe rather than a sword. An axe does +2 base damage on hit but you will not be able to use the Parry skill to defend against attacks made by light weapons. At rank III you receive the attribute [powerful charge](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-iii) instead of Clash of swords.
+- **Throwing:** The weapon can be thrown a distance of 20 feet, functioning as a ranged weapon. You will roll your weapon dice for a throwing attack and the abilities Powerful Strike, Destroying Impact, and Shield Breaker will continue to apply. Throw can only be applied to light weapons.
+- **Serrated:** The blade of the weapon is equipped with several small blades that cause severe wounds on impact. You automatically inflict [bleed](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) on impact to a creature wearing no armor or light armor. If the creature already has Bleed the damage your weapon inflicts will increase by 1.
+- **Swordbreaker**: The weapon has several wedges on the blade with which it can break the blades of your enemies. If the enemy defends with a Parry attack against your weapon you can spend 2 generated disadvantages to reduce the weapon's base damage by 1, breaking it if you manage to reduce the base damage to 0. If a creature attempts to defend against a Power Attack using Parry you may spend 2 generated disadvantages to break your enemy's weapon. This can only be used if the base damage of the weapon is equal to 2 or less.

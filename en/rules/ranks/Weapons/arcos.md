@@ -10,19 +10,19 @@ sub: Armas
 
 You roll an additional loosening die on attack shots.
 
-<Deadly aim:</u> When shooting at a target that is less than 15 feet away from you you will ignore all the defense points it receives for its armor. Damage resistances and additional defense provided by Armored Aptitude will continue to apply, but you will ignore natural armor with this ability. You can take a penalty of one Difficulty die to use this skill against a target up to 30 feet away. The maximum distance at which you can use Deadly Sight increases by 5 feet each time you receive an additional range of Bows.
+<u>Deadly aim</u>: When shooting at a target that is less than 15 feet away from you you will ignore all the defense points it receives for its armor. Damage resistances and additional defense provided by Armored Aptitude will continue to apply, but you will ignore natural armor with this ability. You can take a penalty of one Difficulty die to use this skill against a target up to 30 feet away. The maximum distance at which you can use Deadly Sight increases by 5 feet each time you receive an additional range of Bows.
 
-<Stealth Attack: Your attacks target the weaknesses of the enemy. You do +2 damage in surprise attacks or attacking targets unable to dodge. Before attacking, you can target a specific part of the target by receiving a difficulty die as a penalty (add two difficulty dice if you choose the Head) in exchange for inflicting a slight permanent wound on that part of the body on impact with your attack. At range III you inflict a medium wound and at range V a severe wound using Stealth Attack in this manner. If you generate advantages in a sneak attack and you are aiming at a specific part of the target's body you can spend 4 advantages to increase the level of the permanent wound by 1. You can only affect enemies that are in your kill zone with a sneak attack.
+<u>Sneak Attack:</u> Your attacks target the weaknesses of the enemy. You do +2 damage in surprise attacks or attacking targets unable to dodge. Before attacking, you can target a specific part of the target by receiving a difficulty die as a penalty (add two difficulty dice if you choose the Head) in exchange for inflicting a slight permanent wound on that part of the body on impact with your attack. At range III you inflict a medium wound and at range V a severe wound using Stealth Attack in this manner. If you generate advantages in a sneak attack and you are aiming at a specific part of the target's body you can spend 4 advantages to increase the level of the permanent wound by 1. You can only affect enemies that are in your kill zone with a sneak attack.
 
 ## Range II
 
-<Expert Archer: Use your advantages to do a combat trick. This skill can only be used if you hit the target. All skills cost 2 advantages: 
+<u>Expert Archer:</u> Use your advantages to do a combat trick. This skill can only be used if you hit the target. All skills cost 2 advantages: 
 
-- False Fire: The target is faked during a turn, making him unable to dodge the next attack he receives. It spends an additional advantage for the attacker to add one advantage die to his next shot.
-- Disarming Fire: The target is Disarmed, dropping his weapon. He spends an additional advantage to have the enemy move 5 feet in a random direction.
-- Lucky Fire: Destroy a small object carrying the target (potions, sheathed weapons, a side bag). If the hit object is a bomb, it will explode on the spot. Cat 2 Additional advantages to drop an object it is carrying.
+- **False shot**: The target is faked during a turn, making him unable to dodge the next attack he receives. It spends an additional advantage for the attacker to add one advantage die to his next shot.
+- **Disarming shot**: The target is Disarmed, dropping his weapon. He spends an additional advantage to have the enemy move 5 feet in a random direction.
+- **Lucky shot:** Destroy a small object carrying the target (potions, sheathed weapons, a side bag). If the hit object is a bomb, it will explode on the spot. Cat 2 Additional advantages to drop an object it is carrying.
 
-<Quick attack: Making an attack with your weapon now costs you a movement action. Once per round as a reaction you can spend 2 disadvantages generated to make an attack of opportunity with your weapon.
+<u>Quick attack:</u> Making an attack with your weapon now costs you a movement action. Once per round as a reaction you can spend 2 disadvantages generated to make an attack of opportunity with your weapon.
 
 ## Range III 
 
