@@ -19,7 +19,7 @@ You gain resistance 1 to physical damage.
 
 ## Rank II
 
-Increases your DES by 1.
+Increases your DEX by 1.
 
 <u>Hawk's Eye:</u> You suffer no penalties to your vision from fog and storms. You may suffer 2 non-lethal damage to infuse one of your ranged attacks with wind, ignoring penalties from storms and powerful winds. If there are no winds or they act in your favor the infused attack will do +2 base damage. A creature with wind magic cannot use Elemental Parry to protect itself from an infused attack.
 
@@ -37,7 +37,7 @@ You gain Resistance 2 to physical damage.
 
 ## Rank IV 
 
-Increases your CAR by 1.
+Increases your CHA by 1.
 
 <u>Sky traveller:</u> You receive the ability to fly 60 feet as a move action. While flying you gain a die advantage attacking creatures on the ground and increase your DES by 1 for Dodge rolls. This flight speed is reduced by heavy armor and you will begin to fall if you are stunned. Flying long distances tires you more easily, leaving you fatigued if you try to fly for more than an hour at a time.
 
@@ -53,6 +53,6 @@ You gain Resistance 3 to physical damage and Magic Resistance equal to your Rank
 
 ## Rank VI
 
-Increases your SAB by 1.
+Increases your WIS by 1.
 
 <u>Elemental form:</u> As a full turn action, you surround yourself with a powerful gale which gives you the appearance of a gigantic air elemental. While in elemental form you are constantly surrounded by a Wall of wind and the strength of the winds in a 20-foot area centered on you increases by 2 (maximum 5). Your elemental attacks receive one Advantage die for each level of strength the winds have (does not stack with Awaken the Storm if you have that ability). Each turn you maintain elemental form you suffer 1 Vitality damage and lose the Elemental Connection ability. The elemental form fades if you lose concentration or are incapacitated. 

@@ -24,7 +24,7 @@ The Temash organize themselves in extended family groups known as tribes, each o
 
 Currently the Temash lands are held by the great empires of Arshalan and Ustilus, but its native peoples know that someday these great empires will fall too, leaving nothing more than ruins in the desert. Some tribes accept this occupation, while others fiercely oppose it and cause great trouble to their would-be conquerors. Ustilian repression is especially harsh, forcing many of the Temash to retreat into the great Southern deserts and await the right time to strike back with all their might.
 
-The Tempash typically have skin of tanned and brownish colors along with dark hair and eyes. Some tribes completely cover themselves in desert garb in the presence of outsiders, revealing their faces only to those they trust.  
+The Temash typically have skin of tanned and brownish colors along with dark hair and eyes. Some tribes completely cover themselves in desert garb in the presence of outsiders, revealing their faces only to those they trust.  
 
 ### Jaddites
 
@@ -68,11 +68,11 @@ Kratoics often have skin tones ranging from fair to tanned and hair often brown 
 
 ### Mazarines
 
-Heirs of the greatest empire of times past, the Mazarines are stuck in a period of decadence as a mere shadow of what they could have been.
+Heirs of the greatest empire of times past, the Mazarines are stuck in a period of decadence as a mere shadow of what they could have been. 
 
 ### Dairovians
 
-Rodeados del miedo y la superstición, los dairovios son bien conocidos por su poder sombrío y tendencia a la brujería. 
+
 
 ### Arshalani
 
@@ -80,7 +80,7 @@ Rodeados del miedo y la superstición, los dairovios son bien conocidos por su p
 
 ### Elves
 
-Los elfos representan todo aquello que la humanidad aspira a ser. Inmortales, bellos y con talento innato hacia la magia, los elfos son el primer pueblo conocido que ha pisado el continente.
+
 
 ### Half-elves
 

@@ -14,7 +14,7 @@ You gain Resistance 1 to physical damage.
 
 ## Rank II
 
-Increases your CHA by 1.
+Increase your CHA by 1.
 
 <u>Forest Step:</u> You ignore difficult terrain caused by nature, such as [entanglement](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html#rango-i) or [accelerated growth](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html#rango-ii). You have resistance to nature magic and [grapple](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#agarrada) attempts with this equal to your Rank.
 

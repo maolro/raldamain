@@ -30,11 +30,11 @@ sub: Sabiduria
 
 ## Rango V
 
-<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad guardián de la fe, activa un aura divina de 20 pies. Todas las criaturas en el aura son inmunes a efectos mentales y posesión provocados por criaturas malignas y obtienen Resistencia 4 contra ataques físicos y mágicos (si ya tienen resistencia, se quedan con el valor mas alto). Si tienes rangos en castigo divino, puedes gastar 2 ventajas generadas por cualquier atacante enemigo en el área y un uso de la habilidad para hacer una descarga de energía o una maldición contra ese objetivo. Aura sacra se desactiva junto a guardián de la fe.
+<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad guardián de la fe añades un dado de soltura a todos tus ataques y activas un aura divina de 20 pies. Todas las criaturas en el aura son inmunes a efectos mentales y posesión provocados por criaturas malignas y obtienen Resistencia 4 contra ataques físicos y mágicos (si ya tienen resistencia, se quedan con el valor mas alto). Aura sacra se desactiva junto a guardián de la fe.
 
 <u>Intervención divina:</u> Cuando estés en un momento de mayor peligro, puedes llamar a tu dios para salvarte. Esta habilidad sólo puede usarse una vez al día y cuando estés a 3 o menos PV. Intervención divina hace uno de los siguientes efectos:
 
-- Te sanas toda tu vitalidad, 6 PV y activas inmediatamente Guardián de la fe
+- Te sanas toda tu vitalidad, 6 PV y elimina todos los efectos de estado que tengas.
 - Un grupo de hasta 6 aliados que hayan muerto hace como mucho un minuto resucitan con 3 PV y reciben la habilidad Guerrero de la fe
 - Tu dios envía a sus fuerzas para protegerte. Invoca a un grupo de criaturas extraplanarias con 18 PT totales.
 - Recibes el conocimiento guerrero de tu dios, permitiéndote tirar tres dados de soltura con cualquier arma y otorgándote tres nuevos atributos de arma. 

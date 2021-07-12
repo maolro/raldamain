@@ -18,7 +18,7 @@ Roll an additional challenge die on defensive CON rolls.
 
 <u>Resist Death:</u> Once per combat when an attack reduces you to negative HP or causes instant death you may revive to 1 HP. This ability cannot be used against coup de grace or if your vitality is equal to 0.
 
-<u>Superior Constitution:</u> You gain resistance against [poisons](../poisons_diseases.md#poisons), [diseases](../poisons_diseases.md#diseases) and toxic gases equal to your CON- 2 stat. The resistance granted by this ability also works against supernatural poisons and diseases.
+<u>Superior Constitution:</u> You gain resistance against [poisons](../poisons_diseases.md#poisons), [diseases](../poisons_diseases.md#diseases), stunning and toxic gases equal to your Constitution stat - 2. The resistance granted by this ability also works against supernatural poisons and diseases.
 
 ## Rank III
 
@@ -27,4 +27,3 @@ Roll an additional challenge die on defensive CON rolls.
 <u>Quick Recovery:</u> You heal all your lost HP with a short rest, and with a long rest reduce the level of a permanent wound by 1 (normally you need a med action to reduce permanent wounds). If you already have an ability that grants you regeneration you increase the number of Vitality that heals you per turn by 1.
 
 <u>Resist Weapons:</u> Once per turn you can reduce the level of a permanent wound you receive by one step as a reaction. This ability can also be used to convert an instant-kill attack such as [master hunter](https://raldamain.com/rules/Rangos/Combate/rastrear.html) into a severe permanent wound. This ability can be used a number of times per day equal to your constitution stat.
-
