@@ -12,7 +12,7 @@ Add a proficiency die to all of your elemental attacks.
 
 <u>Elemental parry:</u> You parry attacks with your element. An elemental parry is a reaction which allows you to use your attack dice defensively. You can protect yourself from all attacks, once per turn you can cancel a generated success (2 times at Rank III and 3 times at Rank V).
 
-<u>Eneregy reservoir:</u> You can choose to suffer 2 non-lethal damage to increase the strength of your attacks. With this, you can increase the size of your stone by 5 cubic feet (+1 base damage), make an additional attack or destroy a block of petrous material of size 10 square feet. Energy reservoir can only be used once per turn.
+<u>Elemental overflow:</u> You can choose to suffer 2 non-lethal damage to increase the strength of your attacks. With this, you can increase the size of your stone by 5 cubic feet (+1 base damage), make an additional attack or destroy a block of petrous material of size 10 square feet. Energy reservoir can only be used once per turn.
 
 ## Rank II
 
@@ -20,13 +20,13 @@ Add a proficiency die to all of your elemental attacks.
 
 <u>Ground control:</u> You are able to manipulate the earth beneath your feet. As a standard action you can manipulate a total volume of earth equal to 5 x your elemental magic rank, shaping it as you wish. With this ability you can create difficult terrain, barriers, elevations or holes in any place you wish. The height and depth of these obstacles may not exceed 5 feet and they grant cover to creatures behind them.
 
-<u>Shape of the mountain:</u> Your attacks are strengthened by standing still. You can use a movement action to increase the size of your elemental attack by 5 feet (this will also increase its base damage by 1) or make an additional attack with an area of impact equal to 5 feet. At rank III this ability allows you to increase the size by 10 feet and at rank V you can increase it by 15 feet.
+<u>Form of the mountain:</u> Your attacks are strengthened by standing still. You can use a movement action to increase the size of your elemental attack by 5 feet (this will also increase its base damage by 1) or make an additional attack with an area of impact equal to 5 feet. At rank III this ability allows you to increase the size by 10 feet and at rank V you can increase it by 15 feet.
 
 ## Rango III
 
 Add a proficiency die to all of your elemental attacks. Increase your base damage by 1 and the radius of your attacks by 5 feet.
 
-<u>Hug from the earth:</u> When you hit with an elemental attack you can spend 2 generated advantages to wrap a part of your target's body with stone, keeping him in your grip. The target will not be able to free himself from the grip unless he destroys the earth that imprisons him (it has 4 defense and life equal to your rank x 2) or succeeds in a Shatter roll against your elemental attack.
+<u>Earthen grasp:</u> When you hit with an elemental attack you can spend 2 generated advantages to wrap a part of your target's body with stone, keeping him in your grip. The target will not be able to free himself from the grip unless he destroys the earth that imprisons him (it has 4 defense and life equal to your rank x 2) or succeeds in a Shatter roll against your elemental attack.
 
 <u>Wait and strike:</u> You have mastered the art of waiting patiently for the right opportunity, resisting blows until your enemy commits a fatal flaw. If you take the full defense action and generate 2 disadvantages on the defense roll you can perform an elemental attack as a reaction against your enemy. You can spend 2 additional disadvantages to make this attack count as a feint, thus preventing your enemy from being able to defend himself.
 

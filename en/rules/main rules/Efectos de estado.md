@@ -6,7 +6,7 @@ This is a list of the most common status effects that a creature can endure
 
 ### **Bleeding** 
 
-A bleeding creature suffers 1 lethal damage at the beginning of its turn from blood loss and increases the level of all permanent wounds on the affected party by 1 for every two rounds that this effect remains active. Bleeding can be stopped by a successful First Aid roll or the application of any healing skill. If a creature suffers this effect again the damage does not accumulate but may increase the severity of permanent wounds on other parts of the body.
+A bleeding creature suffers 1 lethal damage at the beginning of its turn from blood loss and increases the level of all permanent wounds on it by 1 for every two rounds that this effect remains active. Bleeding can be stopped by a successful First Aid roll or the application of any healing skill. If a creature suffers this effect again the damage does not accumulate but may increase the severity of permanent wounds on other parts of the body.
 
 ### **Blinded**
 

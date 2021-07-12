@@ -17,7 +17,7 @@ You gain Resistance 1 to physical damage.
 
 ## Rank II
 
-Increases your DES by 1.
+Increases your DEX by 1.
 
 <u>Fire's fury:</u> As a bonus action, you may suffer 1 non-lethal damage to infuse your weapons with elemental fire for one turn. Fire infused weapons do 2 additional fire damage and you can spend 2 generated perks to inflict a mild burn on the target. (4 perks to inflict a medium burn). 
 
@@ -35,7 +35,7 @@ You gain Resistance 2 to physical damage.
 
 ## Rank IV
 
-Increases your CAR by 1.
+Increases your CHA by 1.
 
 <u>Propulsion:</u> You are able to propel yourself into the air with your fire magic. As a standard action, fly 60 feet in any direction. You can use this ability as a move action if you choose to suffer 2 non-lethal damage.
 
@@ -51,6 +51,6 @@ You gain Resistance 3 to physical damage and Magic Resistance equal to your Rank
 
 ## Rank VI 
 
-Increases your DES by 1.
+Increases your DEX by 1.
 
 <u>Elemental form:</u> As a full turn action, you surround yourself with pure elemental fire. While in Elemental Form you are constantly surrounded by a Wall of Fire and the non-lethal damage inflicted by your Scorching Aura increases by 1. You can also use the Propel ability as a move action without taking non-lethal damage and your attacks do +2 fire damage on hit. Elemental Form ends immediately if you spend a turn submerged in water or are incapacitated. Each turn you maintain elemental form you suffer 1 non-lethal damage and lose the Elemental Connection ability.

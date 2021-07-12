@@ -30,7 +30,7 @@ Add a proficiency die to all your elemental attacks. Increase your base damage b
 
 <u>Blood sense:</u> You have blind sense in a 60-foot area, allowing you to detect all creatures with blood in the area. You can also identify all creatures in the area whose blood you have analyzed with Blood Biography, knowing their current physical state and condition.
 
-<u>Cause pain:</u> Other people's blood heals your wounds. When you make an elemental touch attack against a creature you heal vitality equal to the number of successes you generate + the number of bleed dice it has. If you are at maximum vitality this ability heals your HP, and you can spend 4 generated advantages to reduce the level of one of your permanent wounds by 1. If you have water elemental magic. You can draw water for your elemental attacks from any living thing.
+<u>Excruciating pain:</u> Al impactar a un objetivo con un ataque elemental, gasta 2 ventajas para provocarle heridas internas. Una criatura aquejada por heridas internas sufre 2 daño no-letal cada vez que realice una acción. El objetivo tira CON al final de su turno para recuperar, eliminando este efecto al tener éxito. Las heridas internas pueden sanarse con un ataque elemental de sangre, Magia de vida u otros atributos relacionando con la sanación. Gasta 2 ventajas generadas con este ataque para generar una herida permanente media (4 para una herida grave).
 
 ## Rango IV
 
