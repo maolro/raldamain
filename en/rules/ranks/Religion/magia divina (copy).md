@@ -1,77 +1,78 @@
 ---
-title: Magia divina
-category: Religión
+title: Divine magic
+main: Ranks
+sub: Religion
 ---
 
-Como ferviente creyente de tu fe, tus oraciones se han visto recompensadas por aquel dios al que tanto tiempo llevabas llamando. En el momento en el que él decidió responder a tu llamada sentiste como parte de su energía te llenaba mientras corría por tus venas permitiéndote manifestar temporalmente su poder en multitud de formas para que a cambio defiendas la misma fe que te ha dado tu fuerza. A medida que tu devoción se vaya volviendo mas fuerte serás capaz de manifestar mas energía de tu dios pudiendo utilizarla para bendecir a aliados en su nombre, consagrar la tierra o purificar la que haya sido corrupta o castigar a aquellos que se hayan salido de la senda. 
+# Ranks
 
-# Rangos
+## Rank I
 
-## Rango I
+<u>Minor Miracle:</u> Your deity allows you to give minor curses and blessings to creatures of your choice. As a one-time usable bonus action you may give one Advantage or Disadvantage die on your next roll to a creature of your choice. This ability can be used a number of times per day equal to your Rank + 2. Minor Miracle can also be used to receive a small non-combat related boon from your god.
 
-Tira un dado de soltura adicional en tiros de magia divina. 
+<u>Envoy of the gods:</u> You have great knowledge of your religious doctrine and the secrets of your faith. You know how to speak an additional language related to your divinity and creatures related to it will treat you as if you were one of them. In addition, you unlock an ancestry related to your god and you can use your wisdom stat for arcane or elemental magic rolls. In addition, each god allows you to spend your reserve chi in unique ways as specified in their respective sections.
 
-<u>Milagro menor:</u> Tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción bonus usable una vez puedes darle un dado de Ventaja o Desventaja en su siguiente tirada a una criatura de tu elección. Esta habilidad se puede usarse un número de veces al día igual a tu Rango + 2. Milagro menor también puede emplearse para recibir una pequeña ayuda de tu dios no relacionada con el combate.
+<u>Prayer:</u> By spending ten minutes in prayer and contemplation you can communicate directly with your god, receiving his advice. Prayer allows you to ask up to 4 questions to your god, who will answer you truthfully. However, your god may speak to you cryptically or not answer certain questions. The master will decide how your god will answer you. Each successive time on the same day you use prayer reduces the number of questions you can ask your god by 1.
 
-<u>Enviado de los dioses:</u>  Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Además, desbloqueas una ascendencia relacionada con tu dios y puedes utilizar tu estadística de sabiduría para tiros de magia arcana o elemental. Además, cada dios te permite gastar el chi de tu reserva de maneras únicas tal como se especifica en sus respectivos apartados.
+## Rank II
 
-<u>Oración:</u> Empleando diez minutos de oración y contemplación puedes comunicarte directamente con tu dios, recibiendo su consejo. Oración te permite hacerle hasta 4 preguntas a tu dios, quién te contestará con sinceridad. No obstante, tu dios puede hablarte de forma críptica o no contestar determinadas preguntas. El máster decidirá cómo te contestará tu dios. Cada vez sucesiva del mismo día que utilices oración reduce el número de preguntas que puedas hacerle a tu dios por 1.
+<u>Divine Manifestation:</u> You can use a standard action to bless or punish a creature of your choice. If you choose to bless your target will recover from a status effect, curse, or [disease](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) affecting it, receive a +1 bonus on a stat for one hour, or increase its resistance to an element or status effect by 2. Alternatively, if you choose to punish the creature will receive a -1 penalty on a stat of your choice, reduce one of its resistances by 2 (it receives vulnerability if you reduce it to 0) or suffer a [disease](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) or status effect (the status effect will last for three turns or until it recovers from it). If you choose to cast a curse your target can defend himself with a Wisdom roll against your divine magic dice. Divine Manifestation can only be used a number of times per day equal to your rank (2 additional times if you are on consecrated ground).
 
-## Rango II
+<u>Consecrate:</u> You know how to invoke the power of your god in a region, strengthening the followers of that god and harming non-believers. Consecrating is an hour-long ceremony and depending on the divinity may require a specific sacrifice. While on consecrated ground the worshippers of your faith receive an additional Advantage die on all your rolls and extraplanar creatures of enemy religions may not be summoned there. In addition, your god can exert his influence in this area and intervene more directly in case of great need. This ability can also be used to eliminate areas that are consecrated to other gods.  
 
-<u>Manifestación divina:</u> Puedes emplear una acción estándar para bendecir o castigar a una criatura de tu elección. Si eliges bendecir tu objetivo se recuperará de un efecto de estado, maldición o [enfermedad](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) que le afecte, recibirá un bonificador +1 en una estadística durante una hora o aumentará su resistencia a un elemento o efecto de estado por 2. Alternativamente, si escoges castigar la criatura recibirá un penalizador -1 en una estadística de tu elección, reducirá una de sus resistencias por 2 (recibe vulnerabilidad si la reduces a 0) o sufrirá una [enfermedad](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) o efecto de estado (el efecto de estado durará tres turnos o hasta que se recupere de él). Si escoges hacer una maldición tu objetivo puede defenderse con un tiro de Sabiduría contra tus dados de magia divina. Manifestación divina sólo puede usarse un número de veces al día igual a tu rango (2 veces adicionales si estás en tierra consagrada).
+## Rank III
 
-<u>Consagrar la tierra:</u> Conoces cómo invocar el poder de tu dios en una región, fortaleciendo a los seguidores de dicho dios y perjudicando a los no-creyentes. Consagrar es una ceremonia de una hora de duración y dependiendo de la divinidad puede requerir un sacrificio específico. Mientras estés en tierra consagrada los adoradores de tu fe reciben un dado de Ventaja adicional en todos tus tiros y criaturas extraplanarias de religiones enemigas no podrán ser invocadas en ella. Además, tu dios puede ejercer su influencia en dicha zona e intervenir de forma más directa en el caso de gran necesidad. Esta habilidad puede emplearse también para eliminar zonas que estén consagradas a otros dioses.  
+<u>Divine Punishment:</u> Once per day you can unleash a horrifying curse on a target. The curse varies depending on your god, but these are some of the possibilities:
 
-## Rango III
+- **Insect plague:** Summons a giant swarm of insects that attacks enemies of your faith.
+- **Mark of law**: The target must refrain from a behavior or obey an order. If he fails to do so, he will temporarily reduce one of his stats by one each day he continues to disobey you. 
+- **Nightmares**: The target is afflicted with horrible nightmares. He cannot receive the benefits of a long rest and suffers 3 sanity damage per day.
+- **Pain**: The target feels extreme pain all over his body. He can only take one action per turn and suffers 1 non-lethal damage per turn. This effect lasts for one minute and will repeat each day until the curse is removed.
 
-Tira un dado de soltura adicional en magia divina
+<u>Rituals of faith:</u> You know how to perform secret rituals of your faith. A ritual is a spell that requires at least 6 rounds of concentration and several rare material components. You can create your own rituals, but you must first check with the master if they are allowed. If you also possess the Ritualist skill you will unlock superior rituals and learn an additional spell of your own creation of rank III or less.
 
-<u>Castigo divino:</u> Una vez al día puedes desatar una horripilante maldición en un objetivo. La maldición varia según tu dios, pero estas son algunas de las posibilidades:
+## Divinities
 
-- **Plaga de insectos:** Invoca una marabunta gigante de insectos que ataca a los enemigos de tu fe.
-- **Marca de ley**: El objetivo debe abstenerse  de un comportamiento o obedecer una orden. Si no lo hace , reducirá temporalmente una de sus estadísticas por uno cada día que continúe desobedeciéndote. 
-- **Pesadillas**: El objetivo está afectado por horribles pesadillas. No puede recibir los beneficios de un descanso largo y sufre 3 daño de cordura al día.
-- **Dolor**: El objetivo siente un dolor extremo por todo su cuerpo. Solo puede hacer una acción al turno y sufre 1 daño no letal por turno. Este efecto dura un minuto y se repetirá cada día hasta que la maldición sea eliminada.
+## Main gods
 
-<u>Rituales de fe:</u> Conoces como realizar rituales secretos de tu fe. Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si están permitidos. Si posees también la habilidad Ritualista desbloquearás rituales superiores y aprendes un hechizo adicional de tu propia creación de rango III o menos.
-
-# Divinidades
-
-## Dioses principales
-
-Estas divinidades cuentan con un culto particularmente extensivo y bendicen a sus seguidores para lograr su voluntad en el mundo.
+These divinities have a particularly extensive cult and bless their followers to achieve their will in the world.
 
 ### Feyn
 
-<u>Dominio</u>: Dios de la humanidad, el progreso y la ley
+<u>Dominion</u>: God of humanity, progress and law.
 
-<u>Centros de culto</u>: Ustilus, Kratoi, Mazarín y Pradjati. Es además la divinidad principal del lejano continente de Eshanda y se cree que Nekthys lo veneraba. Tras la muerte de Feyn todos estos lugares acabaron por perder la fe y veneraron a otros dioses.
+<u>Centers of worship</u>: Ustilus, Kratoi, Mazarin and Pradjati. He is also the chief divinity of the distant continent of Eshanda and it is believed that the lost nation of Nekthys worshipped him. After Feyn's death all these places eventually lost faith and worshipped other gods.
 
-<u>Ideales</u>: Búsqueda del bien común. Las leyes de Feyn son las más perfectas. La humanidad debe quedar unida bajo una única nación. Los demás dioses son enemigos del ser humano y buscan dominarlo. Una vida justa es aquella que más contribuya al desarrollo de la humanidad.
+<u>Ideals</u>: Pursuit of the common good. Feyn's laws are the most perfect and all must follow them. Mankind must be united under a single nation. The other gods are enemies of humanity and seek to dominate it. A just life is that which contributes most to the advancement of humanity.
+
+<u>Uses of chi:</u> Feyn's gifts let you spend chi to empower yourself and your allies, granting them divine strength and insight. Once per turn you can spend 1 chi to give all allies within 20 feet one boost die in all their attack rolls and one setback die in all their defensive rolls for the rest of the round. At rank II of divine magic you can spend 2 chi so all allies in that area increase up to 2 stats of their choice by 1 and at rank III you can spend 3 chi so they gain +2 DEF, +2 damage and +2 resistance to a type of damage of their choice in addition to all other bonuses. These effects will last while you maintain concentration and they stack with similar bonuses given by Divine warrior and Presence.
 
 ### Mekhatim
 
-<u>Dominio</u>: Diosa de la justicia, la guerra santa y la salvación.
+<u>Dominion</u>: Goddess of justice, holy war and salvation.
 
-<u>Centros de culto</u>: Arshalán, Menadar, algunas regiones de los Reinos Libres.
+<u>Centers of worship</u>: Arshalan, Menadar, some regions of the Free Kingdoms.
 
-<u>Ideales</u>: La vida en todas sus formas es sagrada. Todo buen acto será recompensado, toda maldad será castigada. Toda persona del mundo debe convertirse a la fe para traer la salvación. No se permite ningún compromiso con el mal, aunque la redención sincera está permitida.
+<u>Ideals</u>: Life in all its forms is sacred. Every good deed will be rewarded, every evil will be punished. Every person in the world must convert to the faith to bring salvation. No compromise with evil is allowed, although sincere redemption should be accepted.
 
-<u>Usos del chi:</u> Mekhatim te permite infundir el chi de energía vital para sanar a tus aliados. Puedes gastar 1 chi de tu reserva para sanar vitalidad a un aliado igual a tu rango de magia divina + 1 (en el caso que esté al máximo de vitalidad se sanará PV). A rango II de magia divina puedes gastar 2 chi para eliminar un efecto de estado, veneno o enfermedad que afecte a un aliado y a rango III puedes emplear 3 chi para resucitar a un aliado que haya muerto hace menos de un minuto.
+<u>Uses of chi:</u> Mekhatim's power lets you to infuse life energy in chi to heal your allies. You can spend 1 chi from your reserve to heal vitality to an ally equal to your divine magic rank + 1 (in case it is at maximum vitality it will heal HP). At rank II of divine magic you can spend 2 chi to remove a status effect, poison or disease affecting an ally and at rank III you can spend 3 chi to resurrect an ally who died less than a minute ago.
 
 ### Sek-Tebos
 
-<u>Dominio</u>: Dios del orden, la ambición y los infiernos.
+<u>Domain</u>: God of order, ambition and the underworld.
 
-<u>Centros de culto</u>: Sus cultos secretos abundan en todas las tierras, especialmente en Ustilus.
+<u>Cults</u>: His secret cults abound throughout the lands, especially in Ustilus.
 
-<u>Ideales</u>: No hay poder sin un precio. Algunas personas nacen para reinar y otras para servir. Sólo puedes depender de ti mismo y de tus capacidades. Aprovéchate de los útiles y elimina los estorbos. La naturaleza es cruel y no hay razón para que el ser humano no lo sea.
+<u>Ideals</u>: There is no power without a price. Some people are born to reign and some are others to serve. You can only depend on yourself and your talents. Take advantage of those who are useful and discard those who pose a hindrance. Nature is cruel and there is no reason why human beings should not be.
+
+<u>Uses of chi:</u>
 
 ### Ayanuu
 
-<u>Dominio</u>: Divinidad primigenia del caos, la locura y la magia.
+<u>Domain</u>: Primordial entity of chaos, madness and magic.
 
-<u>Centros de culto</u>: El culto a Ayanuu está prohibido en todas las naciones civilizadas y perseguido por la ley.
+<u>Worship</u>: The worship of Ayanuu is forbidden in all civilized nations and persecuted by law.
 
-<u>Ideales</u>: El caos es el principio, y el caos será el final. Las leyes son un constructo artificial que oprime la ambición humana. Los dioses son insignificantes ante el poder puro del abismo. Ningún conocimiento debe ser censurado. Vive el momento, todo inevitablemente morirá. 
+<u>Ideals</u>: Chaos is the beginning, and chaos will be the end. Laws are an artificial construct oppressing human ambition. Gods are insignificant before the pure power of the abyss. No knowledge should be censored. Live in the moment, everything will inevitably die. 
+
+<u>Uses of chi:</u>

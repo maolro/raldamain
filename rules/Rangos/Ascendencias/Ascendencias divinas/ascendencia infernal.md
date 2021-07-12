@@ -134,3 +134,8 @@ Incrementa tu CON por 1.
 ## Puragaus (nivel 18)
 
 ## Exar (nivel 20)
+
+Base bípeda; **FUE** 7, **DES** 1, **CON** 5, **INT** 0, **SAB** 1, **CAR** 0; **PV** 13, **VT** 15, **DEF** 3
+
+- **Mejoras:** Tamaño superior, alas, regeneración (+1), armadura natural (+1), ascendencia infernal (lengua del diablo, blasfemia, ataques profanos, salto infernal)
+- **Rangos:** Magia de fuego V, Guerrero divino V, Armaduras III, Presencia II
