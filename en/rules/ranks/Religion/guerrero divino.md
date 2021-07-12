@@ -1,41 +1,42 @@
 ---
-title: Guerrero divino
+title: Divine warrior
 main: Rangos
-sub: Sabiduria
+sub: Religion
 ---
 
-## Rango I
+## Rank I
 
-<u>Guerrero de la fe:</u> Estás bendito por tu dios en el campo de batalla. Añade un dado de Ventaja a tiros de ataque contra enemigos de tu fe y +1 defensa contra ataques físicos y mágicos. Esta habilidad no cuenta como magia apara los propósitos de Eliminar magia.
+<u>Warrior of the faith:</u> You are blessed by your god in battle. Add one Boost die to attack rolls against enemies of your faith and +1 defense against physical and magical attacks. This ability does not count as magic for the purposes of Dispel Magic.
 
-<u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de Primeros auxilios para curar a un aliado recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Si está al máximo de Vitalidad entonces se recuperará la cantidad adecuada de PV. Una vez al día puedes reducir por 1 el nivel de una herida permanente que tenga un objetivo. Recibes un uso adicional de esa habilidad a Rango III y a Rango V.
+<u>Combat Healer:</u> You have the ability to channel divine energy to heal your allies. When you make a First Aid roll to heal an ally you will recover Vitality equal to your Divine Warrior rank + 2. If you are at maximum Vitality then the appropriate amount of HP will be recovered. Once per day you can reduce the level of a permanent wound on a target by 1. You receive an additional use of this ability at Rank III and Rank V.
 
-## Rango II
+## Rank II
 
-<u>Arma sacra:</u> Tu arma hace +2 daño base contra criaturas bendecidas por dioses enemigos. Con esta habilidad puedes afectar a sacerdotes, guerreros divinos y a criaturas monstruosas asociadas con religiones enemigas. Al impactar a un enemigo de la fe puedes gastar 2 ventajas para que no pueda sanarse durante un turno.
+<u>Sacred weapon:</u> Your weapon deals +2 base damage against creatures blessed by enemy gods. With this ability you can affect priests, divine warriors and monstrous creatures associated with rival religions. Upon hitting an enemy of the faith you can spend 2 advantages so that it cannot heal damage for one turn.
 
-<u>Armadura consagrada:</u> Tu armadura está bendecida por tu dios. Una armadura bendecida te da +1 DEF y te protege de daño mágico. Si no tienes ningún rango en Armaduras, obtienes resistencia mágica igual a tu rango de guerrero divino.
+<u>Consecrated armor:</u> Your armor is blessed by your god. Blessed armor gives you +1 DEF and increases your magical resistance by a value equal to your rank in divine warrior. 
 
-## Rango III
+## Rank III
 
-<u>Plegaria:</u> Antes de una batalla, puedes realizar una plegaria a tu dios junto con tus aliados para concederles suerte en la batalla. Todos aquellos que realicen la plegaria reciben un dado de Ventaja y +1 defensa contra enemigos de la fe durante el resto del día.
+<u>Prayer:</u> Before a battle, you can perform a prayer to your god along with your allies to grant them luck in battle. All those who perform the prayer receive one Advantage die and +1 defense against enemies of the faith for the rest of the day.
 
-<u>Guardián de la fe:</u> Como acción estándar, puedes permitir que la energía divina fluya por tu cuerpo, dándote fuerza sobrenatural. Guardian de la fe aumenta tu fuerza y constitución por 1 (puedes superar 6 con esta habilidad) y te da Resistencia 2 contra daño físico. Tu resistencia sólo puede ser atravesada por armas sacras. Esta habilidad te hace 1 daño no-letal cada turno que la lleves activada y desactivarla es una acción gratuita.
+<u>Guardian of faith:</u> As a standard action, you can allow divine energy to flow through your body, giving you supernatural strength. Guardian of faith increases your strength and constitution by 1 (you can exceed 6 with this ability) and gives you Resistance 2 against physical damage. Your resistance can only be pierced by holy weapons. This ability deals 1 non-lethal damage each turn you have it activated and deactivating it is a free action.
 
-## Rango IV
+## Rank IV
 
-<u>Aliento de vida:</u> Tu dios te otorga la capacidad de resucitar aquellos muertos en combate para continuar la guerra santa. Como acción de turno completo, resucita a una criatura muerta en combate. La criatura muerta resucita a 1 PV, pero conserva todas sus heridas permanentes. Esta habilidad sólo puede usarse R-2 veces al día y la criatura muerta debe haber muerto hace no mas de un minuto. No puedes resucitar a criaturas a las que les falten órganos vitales o la cabeza.
+<u>Breath of Life:</u> Your god grants you the ability to resurrect those killed in combat to continue the holy war. As a full turn action, resurrect a creature killed in combat. The dead creature is resurrected to 1 HP, but retains all of its permanent wounds. This ability can only be used R-2 times per day and the dead creature must have died no more than one minute ago. You cannot resurrect creatures missing vital organs or head.
 
-<u>Hueste divina:</u> Tienes un aura de 15 pies que fortalece a tus compañeros, otorgándoles resistencia 2 contra efectos mentales, miedo y armas físicas, +1 FUE y CON. Criaturas en el aura de mas de una hueste divina no acumulan sus efectos sino que usan aquel con un valor mas alto. Esta aura se activa al usar el efecto de Guardián de la Fe
+<u>Divine Host:</u> You have a 15-foot aura that strengthens your companions, granting them resistance 2 against mental effects, fear and physical weapons, +1 FUE and CON. Creatures in the aura of more than one divine host do not accumulate their effects but use the one with the highest value. This aura is activated when using the Guardian of Faith effect.
 
-## Rango V
+## Rank V
 
-<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad guardián de la fe añades un dado de soltura a todos tus ataques y activas un aura divina de 20 pies. Todas las criaturas en el aura son inmunes a efectos mentales y posesión provocados por criaturas malignas y obtienen Resistencia 4 contra ataques físicos y mágicos (si ya tienen resistencia, se quedan con el valor mas alto). Aura sacra se desactiva junto a guardián de la fe.
+Roll an additional challenge die on defensive wisdom rolls.
 
-<u>Intervención divina:</u> Cuando estés en un momento de mayor peligro, puedes llamar a tu dios para salvarte. Esta habilidad sólo puede usarse una vez al día y cuando estés a 3 o menos PV. Intervención divina hace uno de los siguientes efectos:
+<u>Holy Aura:</u> You are a living saint of your faith. When you use the guardian of faith ability you add a proficiency die to all your attacks and activate a 20-foot divine aura. All creatures in the aura are immune to mental and possession effects caused by evil creatures and gain Resistance 4 against physical and magical attacks (if they already have resistance, they keep the higher value). Sacred aura is deactivated together with guardian of faith.
 
-- Te sanas toda tu vitalidad, 6 PV y elimina todos los efectos de estado que tengas.
-- Un grupo de hasta 6 aliados que hayan muerto hace como mucho un minuto resucitan con 3 PV y reciben la habilidad Guerrero de la fe
-- Tu dios envía a sus fuerzas para protegerte. Invoca a un grupo de criaturas extraplanarias con 18 PT totales.
-- Recibes el conocimiento guerrero de tu dios, permitiéndote tirar tres dados de soltura con cualquier arma y otorgándote tres nuevos atributos de arma. 
+<u>Divine Intervention:</u> When you are in a moment of greatest danger you can call upon your god to save you. This ability can only be used once per day and when you are at 3 or less HP. Divine Intervention does one of the following effects:
 
+- You are healed of all your vitality, 6 HP and removes all status effects you have.
+- A group of up to 6 allies who died at most one minute ago are resurrected with 3 HP and receive the ability Warrior of Faith.
+- Your god sends his forces to protect you. Summon a group of extraplanar creatures of the same level as you.
+- You receive warrior knowledge from your god, allowing you to roll three dice of proficiency with any weapon and granting you three new weapon attributes. 
