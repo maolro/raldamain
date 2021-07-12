@@ -1,44 +1,43 @@
 ---
-title: Magia de Evocación
+title: Evocation magic
 main: Rangos
 sub: Magia arcana
 ---
 
-## Rango I
+## Rank I
 
-Tira un dado de soltura adicional en tiros de ataque mágico. Tu reserva aumenta por 2+Rango chi.
+Roll an additional hit die on magic attack rolls. Your reserve is increased by 2+Rank chi.
 
-<u>Rayo de energía:</u> Como acción estándar dispara un rayo de energía pura a un enemigo en hasta 90 pies de distancia. Este ataque hace 2+Éxito daño de fuerza y atraviesa toda la defensa salvo Resistencia mágica. Un rayo de energía no consume chi de tu reserva. Puedes gastar 1 chi con esta habilidad para hacer que el rayo tenga un radio de impacto de 5 pies, convirtiéndolo en un ataque de área. A rango III el radio de impacto aumenta por 5 pies (por 10 pies a rango V) al gastar 1 chi para infundir el ataque.
+<u>Energy bolt:</u> As a standard action fire a bolt of pure energy at an enemy within up to 90 feet. This attack does 2+Success force damage and pierces all defense except Magic Resistance. A bolt of energy does not consume chi from your reserve. You can spend 1 chi with this ability to make the lightning bolt have a 5-foot impact radius, making it an area attack. At rank III the impact radius increases by 5 feet (by 10 feet at rank V) as you spend 1 chi to infuse the attack.
 
-<u>Descarga de energía:</u> Empleando un chi de tu reserva puedes liberar energía mágica en un cono de 15 pies. Una descarga de energía es un ataque de área que hace 2+Éxito daño de fuerza. A rangos III y V el área de tu ataque aumenta por 5 pies y el daño base incrementa por 1.
+<u>Energy discharge:</u> By employing 1 chi from your reserve you can release magical energy in a 15-foot cone. An energy discharge is an area attack that does 2+Success force damage. At ranks III and V the area of your attack increases by 5 feet and the base damage increases by 1.
 
-## Rango II
+## Rank II
 
-<u>Acelerar hechizo</u>: Tu soltura con la magia de evocación te permite lanzar ataques con mayor velocidad. Puedes emplear una acción de movimiento para lanzar un Rayo de energía. A rango IV puedes lanzar un Rayo de energía como acción bonus una vez al turno.
+<u>Quickened spell</u>: Your fluency with evocation magic allows you to cast attacks with greater speed. You can use a move action to cast a bolt of energy. At rank IV you can cast a bolt of energy as a bonus action once per turn.
 
-<u>Infundir arma:</u>  Puedes gastar 1 chi de tu reserva para infundir tu arma de energía mágica. Tu arma infligirá +2 daño de energía en ataques durante un número de turnos igual a tu Rango. Mientras esté infundida tu arma cuenta como arma mágica para el propósito de atravesar resistencias. Puedes gastar 1 chi adicional en esta habilidad para que el daño de energía que inflija aumente por 1 (máximo +5 daño). 
+<u>Infuse Weapon:</u> You can spend 1 chi from your reserve to infuse your weapon with magical energy. Your weapon will inflict +2 energy damage on attacks for a number of turns equal to your Rank. While infused your weapon counts as a magic weapon for the purpose of piercing resistances. You can spend 1 additional chi on this ability to have the energy damage it inflicts increased by 1 (maximum +5 damage). 
 
-<u>Muro de energía:</u> Como acción estándar crea un muro de energía de 20+Rx5 pies de largo y Rx5 pies de alto. Este muro tendrá las propiedades de un muro elemental de tu elección, pero no puedes tener activos dos muros hechos de elementos diferentes.. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. 
+<u>Energy wall:</u> As a standard action create a wall of energy 20+Rx5 feet long and Rx5 feet high. This wall will have the properties of an elemental wall of your choice, but you cannot have two walls made of different elements active.... The wall will remain until you lose focus, and if you attempt to create an additional wall you will suffer 2 non-lethal damage each turn you keep both walls active. 
 
-### Rango III
+### Rank III
 
-Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño base por 1.
+Roll an additional casting die on magic attack rolls. Increase your base damage by 1.
 
-<u>Tormenta de chi:</u> Como acción de turno completo que consume 2 chi de tu reserva, sobrecarga un radio de 20 pies centrado en ti con energía pura. Mientras la tormenta de chi siga activa, recibes cubierta parcial contra ataques mágicos y a distancia (+2 dados de desventaja) y tus ataques hacen +1 daño base. Cuando una criatura sin Resistencia mágica empiece su turno en el área de Tormenta de chi esta sufrirá 1 daño de energía obligatorio,Tormenta de chi permanece activa hasta que pierdas la concentración o pase un minuto.
+<u>Chi Storm:</u> As a full-turn action that consumes 2 chi from your reserve, overcharge a 20-foot radius centered on you with pure energy. While the chi storm remains active, you receive partial cover against magical and ranged attacks (+2 disadvantage dice) and your attacks do +1 base damage. When a creature without Magic Resistance starts its turn in the Chi Storm area it will suffer 1 mandatory energy damage,Chi Storm remains active until you lose concentration or 1 minute passes.
 
-<u>Foco de energía:</u> En lugar de atacar puedes contener el chi para liberarlo en un devastador ataque. Cada ataque que almacenes te otorga un punto de energía. Al hacer un ataque mágico, puedes gastar un número de puntos de energía para incrementar la fuerza de este. Cada punto de energía gastado aumenta tu daño base por 1 y el radio de salpicadura por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión. La explosión hace daño de fuerza a todas las criaturas en un radio igual a 5 x puntos de energía igual a 2 + el número de puntos de energía que tengas almacenados. Tú también sufres daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
+<u>Overcharge:</u> Instead of attacking you can contain the chi to release it in a devastating attack. Each attack you store up grants you one energy point. When making a magical attack, you can spend a number of energy points to increase the strength of the attack. Each energy point spent increases your base damage by 1 and your splash radius by 5 feet. If you lose concentration while holding stored energy it will be released in a devastating explosion. The explosion does force damage to all creatures in a radius equal to 5 x energy points equal to 2 + the number of energy points you have stored. You also suffer non-lethal damage equal to 2 + the number of energy points from this explosion.
 
-## Rango IV
+## Rank IV
 
-<u>Destrozar defensas:</u> Tus ataques pueden drenar la energía mágica del objetivo, debilitando sus defensas y haciéndolo más vulnerable a tus ataques mágicos. Al impactar a un objetivo con armadura mágica con un ataque de magia de evocación, puedes gastar 2 ventajas para reducir su armadura mágica por 1. Puedes gastar chi en habilidades de Magia Protectora que tengas como Eliminar magia o Disrupción al impactar con un ataque de evocación.
+<u>Shatter defenses:</u> Your attacks can drain the target's magical energy, weakening their defenses and making them more vulnerable to your magical attacks. When you hit a magically armored target with an evocation magic attack, you can spend 2 perks to reduce their magic armor by 1. You can spend chi on Protective Magic abilities you have such as Remove Magic or Disrupt when hitting with an evocation attack.
 
-<u>Aspecto elemental</u>: Tienes la capacidad de canalizar el poder de los elementos en tus ataques mágicos. Puedes hacer ataques elementales de cualquier tipo con magia de evocación. Estos ataques funcionan como si fuesen de Rango I respecto a las opciones para gastar ventajas y el radio que afectan, pero el daño base equivale al daño de tus ataques de evocación. El daño hecho con uno de estos ataques elementales no atraviesa resistencias. Puedes también gastar 1 chi para usar la habilidad Reserva de energía del elemento asociado a tu ataque sin sufrir daño no-letal.
+<u>Elemental Aspect</u>: You have the ability to channel the power of the elements into your magical attacks. You can make elemental attacks of any kind with evocation magic. These attacks function as if they were Rank I with respect to the options for spending perks and the radius they affect, but the base damage equals the damage of your evocation attacks. Damage done with one of these elemental attacks does not pass through resistances. You can also spend 1 chi to use the Energy Reserve ability of the element associated with your attack without taking non-lethal damage.
 
-## Rango V 
+## V Rank 
 
-Tira un dado de soltura adicional en tiros de ataque mágico. Aumenta tu daño base por 1.
+Roll an additional hit die on magic attack rolls. Increase your base damage by 1.
 
-<u>Desintegrar:</u> Al impactar con un ataque de evocación, puedes gastar 4 ventajas para desintegrar a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantina o material mágico. Las criaturas que no lleven armadura mágica o la tengan reducida a 0 morirán instantáneamente, y las habilidades de Fortitud no pueden protegerlas de ello.
+<u>Disintegrate:</u> When you hit with an evocation attack, you can spend advantages perks to disintegrate all targets in your area of effect. When using this ability all non-magical objects in the area of effect are pulverized, including weapons and armor not composed of adamantine or magical material. Creatures that are not wearing armor or have it reduced to 0 will die instantly, and Fortitude abilities cannot be used to prevent such effects.
 
-<u>Concentración superior:</u>  Eres capaz de mantener la concentración en un efecto adicional al turno sin sufrir daño no-letal. Tu mente además es capaz de mantenerse concentrada ante grandes distracciones, haciendo que no pierdas la concentración al sufrir los efectos de estado Enfermado, Fatigado, Sangrado y Espantado (sigues perdiendo la concentración al estar Aturdido, Confuso o Pánico). 
-
+<u>Superior Concentration:</u> You are able to maintain concentration on an additional effect per turn without taking non-lethal damage. Your mind is also able to stay focused in the face of great distractions, causing you to not lose concentration when suffering Sickened, Fatigued, Bleeding, and Frightened status effects (you still lose concentration when Dazed, Confused, or Panicked). 

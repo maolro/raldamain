@@ -1,5 +1,5 @@
 ---
-title: Magia de Tierra
+title: Earth magic
 main: Rangos
 sub: Magia elemental
 ---

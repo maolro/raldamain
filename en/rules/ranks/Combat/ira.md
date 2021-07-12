@@ -1,5 +1,5 @@
 ---
-title: Ira
+title: Rage
 main: Rangos
 sub: Combate
 ---

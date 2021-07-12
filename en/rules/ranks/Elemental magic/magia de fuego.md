@@ -1,5 +1,5 @@
 ---
-title: Magia de Fuego
+title: Fire magic
 main: Rangos
 sub: Magia elemental
 ---

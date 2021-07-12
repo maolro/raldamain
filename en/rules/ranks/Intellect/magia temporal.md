@@ -1,52 +1,35 @@
 ---
-title: Magia Temporal
+title: Temporal magic
 main: Rangos
 sub: Magia arcana
 ---
 
-## Rango I
+## Rank I
 
-Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
+Roll an additional casting die on temporary magic rolls. Your reserve increases by 2+Rank chi.
 
-<u>Premonición:</u> Tu conexión con el flujo temporal causa que recibas visiones de momentos futuros, preparándote para inminentes peligros. Tienes un número de cargas de premonición igual a 1+Rango, las cuales recuperas después de un día. Como acción bonus puedes gastar una carga de premonición para añadir un dado de Ventaja o Desventaja a uno de tus tiros o recibir la habilidad Esquiva asombrosa durante un turno. Puedes gastar 1 chi de tu reserva para recuperar una carga de premonición (esto sólo funciona si estás en un combate).
+<u>Premonition:</u> Your connection to the time stream causes you to receive visions of future times, preparing you for impending dangers. You have a number of premonition charges equal to 1+Rank, which you regain after one day. As a bonus action you can spend a charge of premonition to add one Advantage or Disadvantage die to one of your rolls or receive the Amazing Dodge ability for one turn. You can spend 1 chi from your reserve to regain a premonition charge (this only works if you are in combat).
 
-<u>Alteración temporal:</u> Como acción estándar puedes gastar 1 chi de tu reserva para alterar el tiempo en una burbuja de 5 pies de diámetro. Con esta habilidad puedes restaurar los objetos que estén en la burbuja a su estado anterior (arreglándolos y eliminando todos los daños) o a un estado futuro (reduciendo su eficacia por 1). No puedes afectar a seres orgánicos con esta habilidad, y a Rango III Alteración temporal te cuesta una acción de movimiento.
+<u>Time Alteration:</u> As a standard action you can spend 1 chi from your reserve to alter time into a bubble 5 feet in diameter. With this ability you can restore objects in the bubble to their previous state (fixing them and removing all damage) or to a future state (reducing their effectiveness by 1). You cannot affect organic beings with this ability, and at Rank III Temporal Alteration costs you a move action.
 
-## Rango II
+## Rank II
 
-<u>Desplazamiento:</u> Tu control por el tiempo te permite estar fuera de sincronía con el, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes tirar tus dados de magia temporal en tiros defensivos para protegerte de ataques físicos y mágicos hechos contra ti. Gastando 1 chi de tu reserva como reacción puedes hacer un salto temporal, lo cual te permite repetir tu tirada defensiva contra un ataque exitoso. Desplazamiento no funciona contra criaturas que también tengan rangos en magia temporal.
+<u>Displacement:</u> Your control over time allows you to be out of sync with it, being able to make small temporal leaps to avoid attacks. You can roll your temporary magic dice in defensive rolls to protect yourself from physical and magical attacks made against you. By spending 1 chi from your reserve as a reaction you can make a temporary jump, which allows you to reroll your defensive roll against a successful attack. Displacement does not work against creatures that also have ranks in temporal magic.
 
-<u>Acelerar:</u> Como acción estándar que consume 1 chi puedes hacer que una criatura pueda moverse y actuar con mayor velocidad. Una criatura afectada por Acelerar recibirá una acción de movimiento adicional al turno e incrementará su DES por 1, pero cada turno que Acelerar permanezca activo esta sufrirá 1 daño no-letal. Acelerar contrarresta y es contrarrestado por Alentar.
+<u>Accelerate:</u> As a standard action that consumes 1 chi you can cause a creature to be able to move and act with increased speed. A creature affected by Accelerate will receive an additional move action per turn and increase its DES by 1, but each turn that Accelerate remains active it will suffer 1 non-lethal damage. Accelerate counters and is countered by Encourage.
 
-<u>Alentar:</u> Puedes atrasar el tiempo en una burbuja de 20 pies de radio como acción estándar que consume 1 chi, ralentizando a todas las criaturas que se encuentren en ella. Una criatura afectada por Alentar pierde una acción de movimiento y reduce su DES por 1. Los ataques mágicos y distancia que pasen por una burbuja de alentar están también ralentizados, lo cual otorga dos dados de Desventaja en tiros de defensa contra ellos. Una burbuja de Alentar permanece hasta que pierdas la concentración y contrarresta a todos los efectos de Acelerar que haya en su radio. 
+<u>Encourage:</u> You can slow time in a 20-foot radius bubble as a standard action that consumes 1 chi, slowing all creatures in it. A creature affected by Encourage loses a move action and reduces its DES by 1. Magic and ranged attacks that pass through an Encourage bubble are also slowed, which grants two Disadvantage dice on defense rolls against them. An Encourage bubble remains until you lose concentration and counteracts all Accelerate effects within its radius. 
 
-## Rango III
+## Rank III
 
-Tira un dado de soltura adicional en tiros de magia temporal. 
+Roll an additional looseness die on temporary magic rolls. 
 
-<u>Visión:</u> Realizando un ritual de diez minutos de duración puedes tener una visión de un evento pasado, presente o futuro. Visión sólo puede usarse una vez al día y sus efectos varían según qué tipo de visión deseas tener. En todos los casos la naturaleza de la visión queda escogida por el máster.
+<u>Vision:</u> By performing a ten-minute ritual you can have a vision of a past, present, or future event. Vision can only be used once a day and its effects vary depending on what type of vision you wish to have. In all cases the nature of the vision is chosen by the master.
 
-- **Pasado:** Tu visión consiste en un evento importante que haya ocurrido en el lugar donde estés o haya afectado un objeto en tu posesión. La visión puede ser de cualquier momento histórico, pero se recomienda que de alguna manera esté asociada con la campaña.
-- **Presente:** Tu visión te permite observar qué está haciendo una persona de tu elección en este momento. Debes tener en tu posesión un objeto que pertenezca a la persona que desees observar para que este efecto funcione. Visión no funciona si la criatura está en un lugar protegido por Alijo secreto o una Zona antimagia, y sólo podrás observar a tu objetivo durante diez minutos seguidos.
-- **Futuro:** Tu visión te muestra un evento futuro que ocurrirá en un plazo de una semana. El máster escoge qué puedes observar y puede ser tan críptico como él desee para evitar un destripe. 
+- **Past**: Your vision consists of an important event that has occurred in the place where you are or has affected an object in your possession. The vision can be from any historical moment, but it is recommended that it be associated with the campaign in some way.
+- **Present**: Your vision allows you to observe what a person of your choice is doing at this moment. You must have in your possession an object belonging to the person you wish to observe for this effect to work. Vision does not work if the creature is in a place protected by a Secret Cache or an Anti-Magic Zone, and you can only observe your target for ten minutes at a time.
+- **Future**: Your vision shows you a future event that will occur within a week. The master chooses what you can observe and can be as cryptic as he wishes to avoid a disembowelment. 
 
-Un uso excesivo de esta habilidad puede ocasionar enfermedades mentales o locura como decida el máster.
+Excessive use of this ability may result in mental illness or insanity as decided by the master.
 
-<u>Predecir movimiento:</u> Puedes gastar cargas de Premonición que tengas en recibir una visión de qué acción tomará un objetivo, protegiéndote contra ella o atravesando sus defensas. Predecir movimiento te permite repetir un tiro de ataque o defensa que hayas hecho con un dado de Ventaja añadido. Esta habilidad puede usarse también para conocer qué acciones tomarán un grupo de criaturas de tu elección. Si escoges un jugador debe responderte con sinceridad de qué hará y no podrá cambiar sus acciones salvo que él también tenga Predecir movimiento y gaste una carga de Premonición.
-
-## Rango IV
-
-<u>Puño temporal:</u> Como acción estándar que consume 1 chi puedes envejecer a una criatura de forma acelerada, debilitando su constitución física. Si tienes éxito en un tiro de magia temporal contra la CON de tu objetivo este envejecerá un número de años igual a 2+Éxito. Si llega a tener más de 40 años su DES se reducirá por 1, con más de 55 años su FUE y CON se reducirán por 1 y con más de 70 años sus tres estadísticas físicas se reducirán por 1. Puño temporal no funciona contra criaturas inmortales, no-muertos y constructos.
-
-<u>Estasis:</u> Como acción estándar que consume 2 chi puedes congelar a una criatura en el tiempo, dejándola completamente paralizada. Tu objetivo puede resistir tirando CON, quedando paralizado si tienes éxito mientras mantengas la concentración en esta habilidad. Si ligas Estasis a un glifo de protección tu objetivo permanecerá paralizado hasta que tú lo liberes (una criatura congelada en el tiempo de esta manera puede quedar inconsciente si tú lo eliges).
-
-<u>Revertir el tiempo:</u> Puedes saltar hacia atrás en el tiempo como acción de movimiento, volviendo a tu posición anterior y recuperándote del daño sufrido. Revertir el tiempo consume 2 chi de tu reserva y te permite recuperarte de todos los efectos de estado, heridas permanentes y daño que hayas sufrido este turno, además de volver a tu posición inicial. Revertir el tiempo puede usarse también en otra criatura de tu elección como acción estándar, lo cual te permite restaurarla de la misma manera y hasta revivirla si ha muerto este turno. 
-
-## Rango V 
-
-Tira un dado de soltura adicional en tiros de magia temporal.
-
-<u>Visión futura:</u> Tienes un sexto sentido que te avisa de todos los peligros inminentes. No puedes ser sorprendido, puedes cancelar un éxito adicional a turno y añade un dado de Ventaja a todos tus ataques. Además, una vez al turno puedes repetir un tiro de ataque o defensa que hayas realizado. Visión futura también te da avisos sobre peligros que afectarán a tus aliados, lo cual te permite gastar una carga de Premonición para permitir que un aliado repita un tiro de Defensa o pueda protegerse de un ataque sorpresa.
-
-<u>Parar el tiempo:</u> Como acción estándar que consume 3 chi puedes congelar el tiempo en una burbuja de 60 pies. Todas las criaturas en esa burbuja no podrán moverse ni tomar acciones, estando efectivamente paralizadas. Parar el tiempo durará un turno y puedes extender más su duración manteniendo la concentración. Una criatura con magia temporal podrá gastar 2 chi como reacción para moverse con normalidad en Parar el tiempo y no podrás afectar con esta habilidad a criaturas en una Zona antimágica.
-
+<u>Predict Movement:</u> You can spend charges of Premonition you have to receive a vision of what action a target will take, protecting you against it or getting through its defenses. Predict Movement allows you to reroll an attack or defense roll you have made with an added Advantage die. This ability can also be used to know what actions a group of creatures of your choice will take. If you choose a player he must answer you truthfully as to what he will do and will not be able to change his actions unless he also has Predict Movement and spends a Premonition charge.

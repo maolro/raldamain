@@ -1,5 +1,5 @@
 ---
-title: Reflejos
+title: Reflexes
 main: Rangos
 sub: Combate
 ---

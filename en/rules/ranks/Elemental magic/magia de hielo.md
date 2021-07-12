@@ -1,5 +1,5 @@
 ---
-title: Magia de Hielo
+title: Ice magic
 main: Rangos
 sub: Magia elemental
 ---

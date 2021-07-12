@@ -1,5 +1,5 @@
 ---
-title: Rastrear
+title: Track
 main: Rangos
 sub: Sabiduria
 ---

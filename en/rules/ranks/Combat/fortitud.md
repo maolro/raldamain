@@ -1,5 +1,5 @@
 ---
-title: Fortitud
+title: Fortitude
 main: Rangos
 sub: Combate
 ---
