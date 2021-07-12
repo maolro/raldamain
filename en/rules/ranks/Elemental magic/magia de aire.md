@@ -1,5 +1,5 @@
 ---
-title: Magia de Aire
+title: Air magic
 main: Rangos
 sub: Magia elemental
 ---

@@ -1,49 +1,47 @@
 ---
-title: Magia de tormenta
+title: Storm magic
 main: Rangos
 sub: Magia elemental
 ---
 
-## Rango I 
+## Rank I 
 
-Añade un dado de soltura a todos tus ataques elementales.
+Add a proficiecny die to all your elemental attacks.
 
-<u>Relámpago:</u> Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 2+éxito daño eléctrico. Tiras 1 dado de ventaja adicional contra criaturas que lleven armadura metálica (2 dados de ventaja adicionales si tiene armadura pesada o escudo pesado de metal ). Gasta 2 ventajas para que el objetivo no pueda usar reacciones durante un turno (4 para ralentizar). Si estás en una tormenta puedes hacer como acción estándar que un rayo caiga sobre un objetivo en un lugar expuesto. Esto te cuesta una acción de movimiento a rango III.
+<u>Lightning bolt:</u> As a standard action attack a target with lightning. This attack has a range of 30 feet and does 2+success electrical damage. You roll 1 additional advantage die against creatures wearing metal armor (2 additional advantage dice if it has heavy armor or heavy metal shield ). Spend 2 perks to make the target unable to use reactions for one turn (4 to slow). If you are in a storm you can make as a standard action a lightning strike on a target in an exposed location. This costs you a move action at rank III.
 
-<u>Onda trueno:</u> Como acción estándar inicia una atronadora onda en un radio de 15 pies. Esta onda hace 2+éxitos daño trueno y puedes gastar 2 ventajas para ensordecer a un enemigo (4 para aturdir). Rompes todos los objetos de cristal o otros materiales frágiles en el área.
+<u>Thunder Wave:</u> As a standard action initiate a thunderous wave in a 15-foot radius. This wave does 2+exits thunder damage and you can spend 2 perks to deafen an enemy (4 to stun). You shatter all glass objects or other fragile materials in the area.
 
-<u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque elemental, aumentar tu radio de ataque por 5 pies o que todos tus ataques de aire hagan +1 daño eléctrico. Esta habilidad solo puede usarse una vez al turno.
+<u>Elemental overflow:</u> You can choose to suffer 2 non-lethal damage to increase the strength of your attacks. With this ability you can make a second elemental attack, increase your attack radius by 5 feet or have all your air attacks do +1 electrical damage. This ability can only be used once per turn.
 
-## Rango II
+## Rank II
 
-<u>Relámpago en cadena</u>: Al impactar con un ataque de relámpago, gasta 2 ventajas o una acción de movimiento para que un relámpago salte de ese objetivo hacia otro que esté a 20 pies de él. Esta habilidad se puede usar un número de veces igual a tu rango.
+<u>Chain Lightning</u>: Upon hitting with a lightning attack, spend 2 perks or a move action to make a lightning bolt jump from that target to another target within 20 feet of it. This ability can be used a number of times equal to your rank.
 
-<u>Cargar el aire:</u> Emplea un ataque elemental para cargar una porción de aire de 5 pies por rango con energía eléctrica. Puedes hacer un ataque elemental como ataque de oportunidad contra una criatura que pase por esa zona. además, si afectas aun espacio que se encuentre en un muro de viento todo el muto quedará cargado. Este efecto dura un turno por cada nivel de fuerza que tenga el aire que cargues.
+<u>Electric charge:</u> Employ an elemental attack to charge a 5-foot portion of air per range with electrical energy. You can make an elemental attack as an attack of opportunity against a creature passing through that area. in addition, if you affect a space that is in a wall of wind the entire muto will be charged. This effect lasts one turn for each level of strength of the air you charge.
 
-## Rango III
+## Rank III
 
-Añade un dado de soltura a todos tus ataques elementales.
+Add a looseness die to all your elemental attacks.
 
-<u>Voltio cruel:</u> Al impactar con un ataque elemental, gasta tus ventajas para provocar espasmos en los músculos del objetivo. Esta habilidad funciona como la habilidad Espasmos de magia de sangre.
+<u>System shock:</u> On impact with an elemental attack, spend your perks to cause spasms in the target's muscles. This ability functions like the Spasms attrbute from blood magic.
 
-<u>Onda destructora:</u> Puedes contener la energía del trueno para liberarla después en una destructiva onda, Cuando liberes la energía, funciona como un ataque de onda trueno que aumenta su radio por 5 pies y el daño por 1 por cada ataque cargado. Si contiene 3 o mas cargas, la onda destruye estructuras frágiles en el área (estructuras solidas si acumulas 5 cargas o mas).
+<u>Destructive Wave:</u> You can contain thunder energy to release it later in a destructive wave, When you release the energy, it functions as a thunder wave attack that increases your radius by 5 feet and damage by 1 per charged attack. If it contains 3 or more charges, the wave destroys fragile structures in the area (solid structures if you accumulate 5 or more charges).
 
-## Rango IV
+## Rank IV
 
-<u>Jinete del relámpago:</u> Eres capaz de emplear tus ataques elementales para propulsarte largas distancias. En lugar de atacar puedes propulsarte 60 pies en una lineal usando un ataque elemental. Esto cuenta como una carga, y si en cualquier punto de la línea impactas a una criatura tú sufrirás 2 daño no letal pero puedes hacerle inmediatamente un ataque elemental (aun puede esquivarlo).
+<u>Storm rider:</u> You are able to use your elemental attacks to propel yourself long distances. Instead of attacking you can propel yourself 60 feet in a linear using an elemental attack. This counts as a charge, and if anywhere along the line you hit a creature you will suffer 2 non-lethal damage but can immediately make an elemental attack on it (it can still dodge).
 
-<u>Castigo de los cielos:</u> Tienes la habilidad de contener la energía eléctrica y liberarla después. Esto funciona como onda destructiva, pero al liberar tu energía haces un ataque de relámpago por cada ataque acumulado. Cada relámpago se dispara en la dirección que tú elijas, y si dos can en la misma dirección se combinan en un único ataque que hará +1 daño base y aumentará su alcance por 15 pies. Si estás en una tormenta puedes hacer que esos relámpagos acumulados caigan del cielo, atacando a las criaturas que tú desees.
+<u>Call lightning:</u> You have the ability to contain electrical energy and release it later. This works as a destructive wave, but when you release your energy you make a lightning attack for each accumulated attack. Each lightning bolt fires in the direction you choose, and if two can in the same direction combine into a single attack that will do +1 base damage and increase your range by 15 feet. If you are in a storm you can cause these accumulated lightning bolts to fall from the sky, striking creatures of your choice.
 
-## Rango V 
+## Rank V 
 
-Añade un dado de soltura a todos tus ataques elementales.
+Add a proficiency die to all your elemental attacks.
 
-<u>Rayo divino:</u> Tus ataques eléctricos atraviesan resistencias y hacen +2 daño contra criaturas que te hayan herido la ronda anterior.
+<u>Divine lightning:</u> Your electrical attacks pass through resistances and do +2 damage against creatures that wounded you the previous round.
 
-<u>Tormenta de venganza:</u> Como acción de turno completo invoca una cataclísmica tormenta capaz de arrasar con todo a su alrededor. Para usar esta habilidad debe haber clima tormentoso y durará activa 10 rondas. esta tormenta te otorga los siguientes beneficios:
+<u>Storm of Vengeance:</u> As a full turn action you summon a cataclysmic storm capable of wiping out everything around you. To use this ability there must be stormy weather and it will last active 10 rounds.This storm grants you the following benefits:
 
--  No se pueden hacer ataques a distancia y es imposible concentrarse mientras la tormenta siga activa
--  Las fuertes lluvias reducen la visibilidad a 15 pies y todas las criaturas que no sean Elementalistas de agua o aire se mueven a mitad de velocidad.
-- Puedes hacer un ataque elemental de rayo, trueno o aire como acción bonus una vez al turno.
-
-
+- All creatures cannot make ranged attacks and it is impossible to concentrate while the storm is still active.
+- Heavy rain reduces visibility to 15 feet and all creatures other than water or air elementalists move at half speed.
+- You can make a lightning, thunder or air elemental attack as a bonus action once per turn.

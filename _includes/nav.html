@@ -6,11 +6,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
-		{% assign indexpages = site.pages | where_exp: "p", "p.menuorder != nil" | sort: "menuorder" %}
-        {% for page in indexpages  %}
+		{% assign indexpages = site.pages | where_exp: "p", "p.menuorder != nil" | where_exp: "p", "p.lang == page.lang" | sort: "menuorder" %}
+        {% for indexpage in indexpages  %}
   	        <li class="nav-item" >
-			<a class="nav-link" href="{{page.url}}">
-			  {{ page.title }}
+			<a class="nav-link" href="{{indexpage.url}}">
+			  {{ indexpage.title }}
 			</a>
   		    </li> 
         {% endfor %}

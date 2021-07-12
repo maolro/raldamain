@@ -1,33 +1,32 @@
 ---
-title: Conocimiento
+title: Knowledge
 main: Rangos
 sub: Inteligencia
 ---
 
-## Rango I
+## Rank I
 
-Recibes un nivel de talento adicional en conocimiento.
+You receive an additional talent level in memory.
 
-<u>Maestro del saber:</u> Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de conocimiento y notas inmediatamente si algo está fuera de lugar. Un número de veces al día igual a tu rango de conocimiento puedes descubrir un trozo de información oculta o extraña. El master elige que información.
+<u>Loremaster:</u> You have a great diversity of knowledge and a facility for learning new ideas. You receive automatic success on rolls to recall basic concepts of a branch of knowledge and notice immediately if something is out of place. A number of times per day equal to your knowledge rank you can discover a piece of hidden or strange information. The master chooses which information.
 
-<u>Lingüista:</u> Aprende un idioma adicional de manera fluida. Puedes comunicarte de manera básica usando lenguajes similares al tuyo, como por ejemplo si hablas ustilés puedes comunicarte de manera básica con alguien que hable kratense. A rango aprendes un idioma adicional.
+<u>Linguist:</u> Learn an additional language fluently. You can communicate in a basic way using languages similar to your own, such as if you speak Ustilese you can communicate in a basic way with someone who speaks Kratese. In range you learn an additional language.
 
-<u>Aprendizaje rápido:</u> Puedes mejorar tus atributos mentales y físicos con el adecuado tiempo de estudio. Si dedicas tu tiempo de descanso a estudiar, al cabo de un mes aumenta permanentemente una de tus estadísticas por 1. Esa estadística no puede exceder tu estadística de inteligencia y sólo puedes usar esta habilidad de nuevo cuando incrementes tu estadística de INT.
+<u>Fast learning:</u> You can improve your mental and physical attributes with adequate study time. If you spend your downtime studying, after one month you permanently increase one of your stats by 1. That stat cannot exceed your intelligence stat and you can only use this ability again when you increase your INT stat.
 
-## Rango II
+## Rank II
 
-<u>Conocimiento arcano</u>: Estudiando tomos antiguos o indagando en tus habilidades mágicas aprendes un nuevo hechizo desconocido. Puedes usar un hechizo nuevo de tu propia creación, pero su fuerza debe ser igual a un hechizo de rango I. Consulta con el master si te lo permite. Si ya tienes hechizos, puedes modificar alguno que ya poseas.
+<u>Arcane Knowledge</u>: By studying ancient tomes or delving into your magical abilities you learn a new unknown spell. You may use a new spell of your own creation, but its strength must be equal to a Rank I spell. Check with the master to see if this is allowed. If you already have spells, you may modify one you already possess.
 
-<u>Uso de objetos mágicos:</u> Eres capaz de identificar las propiedades de un objeto mágico sin tener que tirar. Como acción de movimiento, puedes drenar el chi de un objeto mágico, otorgándote un dado de Ventaja en la tirada de tu siguiente hechizo. El objeto que drenes perderá una carga y añadirá un dado de Desventaja a todos los tiros relacionados con él hasta que realices un descanso largo.
+<u>Magic item user:</u> You are able to identify the properties of a magic item without having to roll. As a move action, you can drain chi from a magic item, granting you an Advantage die on your next spell roll. The item you drain will lose a charge and add one Disadvantage die to all rolls related to it until you take a long rest.
 
-## Rango III 
+## Rank III 
 
-Crea un hechizo nuevo con Conocimiento Arcano con fuerza equivalente a un hechizo de Rango II
+Create a new Arcane Knowledge spell with strength equivalent to a Rank II spell.
 
-<u>Ritualista:</u> Eres capaz de realizar rituales sin sufrir efectos secundarios (los sigues sufriendo si eres interrumpido). Un ritual es un hechizo que requiere como mínimo 6 rondas de concentración y varios raros componentes materiales. Puedes crear tus propios rituales, pero antes debes consultar con el master si te lo permite.
+<u>Ritualist:</u> You are able to perform rituals without suffering side effects (you still suffer them if you are interrupted). A ritual is a spell that requires at least 6 rounds of concentration and several rare material components. You can create your own rituals, but you must first consult with the master if you are allowed to do so.
 
-<u>Saber verdadero:</u> Una vez al día, puedes hacer uno de los siguientes efectos: 
+<u>True Knowledge:</u> Once per day, you may cast one of the following effects: 
 
-- Identifica todos los hechizos, propiedades mágicas y rangos de magia de todas las criaturas en 30 pies
-- Conoce todas las historias y leyendas de un lugar, persona o evento. Para usar esta habilidad debes estar un minuto concentrándote.
-
+- Identify all spells, magical properties, and magic ranges of all creatures within 30 feet.
+- Knows all the stories and legends of a place, person, or event. To use this ability you must spend one minute concentrating.

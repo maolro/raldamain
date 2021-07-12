@@ -1,5 +1,5 @@
 ---
-title: Magia de sangre
+title: Blood magic
 main: Rangos
 sub: Magia elemental
 ---

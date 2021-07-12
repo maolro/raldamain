@@ -1,8 +1,7 @@
 ---
-title: Armaduras
-image: armaduras.jpg
+title: Armor proficiency
 main: Rangos
-sub: Combate
+sub: Combat
 ---
 
 ## Rank I

@@ -65,8 +65,6 @@ These divinities have a particularly extensive cult and bless their followers to
 
 <u>Ideals</u>: There is no power without a price. Some people are born to reign and some are others to serve. You can only depend on yourself and your talents. Take advantage of those who are useful and discard those who pose a hindrance. Nature is cruel and there is no reason why human beings should not be.
 
-<u>Uses of chi:</u>
-
 ### Ayanuu
 
 <u>Domain</u>: Primordial entity of chaos, madness and magic.
@@ -74,5 +72,3 @@ These divinities have a particularly extensive cult and bless their followers to
 <u>Worship</u>: The worship of Ayanuu is forbidden in all civilized nations and persecuted by law.
 
 <u>Ideals</u>: Chaos is the beginning, and chaos will be the end. Laws are an artificial construct oppressing human ambition. Gods are insignificant before the pure power of the abyss. No knowledge should be censored. Live in the moment, everything will inevitably die. 
-
-<u>Uses of chi:</u>

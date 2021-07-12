@@ -10,6 +10,12 @@ defaults:
       category: ""
   -
     scope:
+      path: "en"
+    values:
+      lang: en
+      layout: rule
+  -
+    scope:
       path: "characters"
     values:
       layout: character

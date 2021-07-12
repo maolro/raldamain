@@ -3,12 +3,19 @@ layout: page
 ---
 <div class="container text-justify">
 {{ content }}
-    
-<h2>Índice</h2>
+
+
+<h2>
+{% if page.lang == "es" %}
+    Índice    
+{%else%}
+    Index
+{%endif%}
+</h2>
 
 <div class="container">
     <ul class="list-unstyled card-columns">
-        {% assign mypages = site.pages | where_exp: "p", "p.dir contains page.dir" | where_exp: "p", "p.url != page.url" %}
+        {% assign mypages = site.pages | where_exp: "p", "p.dir contains page.dir" | where_exp: "p", "p.url != page.url" | where_exp: "p", "p.lang == page.lang" %}
 
         {% assign categories = mypages | map: "category" | uniq | sort %}
 

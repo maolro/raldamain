@@ -1,5 +1,5 @@
 ---
-title: Magia de Agua
+title: Water magic
 main: Rangos
 sub: Magia elemental
 ---

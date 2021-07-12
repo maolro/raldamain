@@ -1,5 +1,5 @@
 ---
-title: Magia de naturaleza
+title: Nature magic
 main: Rangos
 sub: Magia elemental
 ---
