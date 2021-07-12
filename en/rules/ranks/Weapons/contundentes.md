@@ -1,5 +1,5 @@
 ---
-title: Contundentes
+title: Bludgeoning
 main: Rangos
 sub: Armas
 ---

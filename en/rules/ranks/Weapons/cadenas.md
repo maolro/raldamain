@@ -1,5 +1,5 @@
 ---
-title: Cadenas
+title: Chains
 main: Rangos
 sub: Armas
 ---
@@ -42,9 +42,9 @@ You roll an additional loosening die on attack shots. You spend 2 allowances to 
 
 # Weapons
 
-A base chain does 2+shear damage and has a range of 10 feet. A base chain can be modified with the following features to produce all types of related weapons.
+A base chain does 2+Success slashing damage and has a range of 10 feet. A base chain can be modified with the following characteristics to give rise to all kinds of related weapons.
 
-- Whip:** Instead of a chain you specialize in fighting with a whip. A whip does 1+Successful blunt damage and can hurt your vitality. 
-- Hook:** The weapon has a hook on its tip with which you can grab more easily. At range I instead of entangling your target you can stick a hook in it, 
-- Bludgeoning
-- Double chain.
+- **Whip:** Instead of a chain you specialize in fighting with a whip. A whip deals 1+Success blunt damage on hit and its permanent wounds will be one level lower, but making an attack with it costs you a move action (at rank III you can make a whip attack once per turn as a bonus action).
+- **Hook:** The weapon has a hook at its tip with which you can grapple more easily. At rank I instead of entangling your target you can hook it, which will hinder its movements and cause damage when it grapples against it. A creature with a grappling hook attached cannot be separated from your chain and will suffer 2 non-lethal damage each time it takes an action. Pulling off a hook costs a move action and will cause [bleed](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) to the creature that breaks away from it. A chain with a hook inflicts piercing damage instead of slashing.
+- **Blunt**: The weapon has a solid sphere of stone or metal capable of shattering shields and armor when accelerated with appropriate speed. When employing the Charge Attack skill with a weapon that has this enhancement you may spend 2 perks generated on impact to [stun](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) your target. If your chain is fully charged you can use the [shield breaker](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-iv) or [destructive hit](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-iii) skill by spending the appropriate amount of perks. A chain with this enhancement must be used with two hands and will inflict 2+Success blunt damage on impact.
+- **Spiked**: The weapon is coated with several sharp spines that cause devastating slashes to the victims you grasp. A sawed chain inflicts the effects of [bleed](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) on creatures you manage to grab or entangle (for this to apply you must grab a creature at a point where it is not wearing armor). At rank III instead of slamming a creature with your candena you can choose to squeeze it harder to increase the severity of the cuts, which allows you to inflict 1+Successful slashing damage and spend a number of perks equal to the defense it receives for armor to cause it to bleed.
