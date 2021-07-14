@@ -20,4 +20,15 @@ sub: Combat
 
 <u>Magic defense</u>: Your armor acts as an extension of your body and is infused with your magical power. The armor increases your Magic Resistance by 3 if you have a Template or ranks in a magic. If you don't have any of those ranks then you must spend a month getting special materials to make magic armor, which gives you magic resistance equal to your armor rank.
 
-<u>Steel Champion</u>: Armor protects you from even deadly attacks. Once a turn, reduce the level of a [permanent injury](http://raldamain.com/rules/Heridas%20permanentes.html) you suffer by 1. Instantaneous death attacks as a master hunter or life impact only cause you a serious permanent injury (you cannot reduce it again)
+<u>Steel Champion</u>: Armor protects you from even deadly attacks. Once a turn, reduce the level of a [permanent injury](http://raldamain.com/rules/Heridas%20permanentes.html) you suffer by 1. Instant death attacks as a master hunter or life impact only cause you a serious permanent injury (you cannot reduce it again)
+
+# Types of armor
+
+Armor is an indispensable item for every warrior, marking in many cases the fine line between life and death. Armor will grant a bonus to defense according to the hardness and protection it offers, which accumulates with the natural armor. A character with armor cannot suffer permanent wounds if the damage is reduced to 0, a fact that does not occur with resistance or natural armor. However, heavier armor hinders dexterous movement and concentration, reducing all dexterity rolls, arcane magic, or elemental magic by a value equal to the penalty. Additionaly, a character possessing an armor penalty will lose the effects of all attributes related to Reflexes. The most common types of armor are listed in the following table:
+
+| Type                          | Defense modifier | Armor penalty |
+| ----------------------------- | ---------------- | ------------- |
+| Leather, hide, padded         | 2                | 0             |
+| Studded leather, chain shirt  | 4                | 2             |
+| Splint, chainmail, chestplate | 6                | 4             |
+| Plate, brigandine             | 8                | 6             |

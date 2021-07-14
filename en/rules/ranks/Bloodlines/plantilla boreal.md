@@ -6,11 +6,11 @@ sub: Bloodlines
 
 ## Rank I
 
-You gain 1 resistance to physical damage. 
+You gain resistance 1 to physical damage. 
 
-<u>Cold Adaptation:</u> You suffer no ill effects from being in an area of extreme cold and have resistance to cold damage equal to your rank. You are especially vulnerable to fire damage, which does +2 base damage.
+<u>Cold Adaptation:</u> You suffer no ill effects from being in an area of extreme cold and have resistance to cold damage equal to your rank. You are especially vulnerable to fire damage, which deals +2 damage against you.
 
-<u>Icy touch:</u> Your touch is supernaturally cold. You unlock [ice elementalism](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20hielo.html) and can freeze 5 feet of water as a bonus action usable once per turn. When you hit a metal object with your ice elemental attack, it becomes supernaturally cold. An object thus chilled does 1 cold damage to its wearer per turn until it warms up.
+<u>Icy touch:</u> Your touch is supernaturally cold. You unlock [ice magic](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20hielo.html) and can freeze 5 feet of water as a bonus action once per turn. When you hit a metal object with your ice elemental attack, it becomes supernaturally cold. An object thus chilled does 1 cold damage to its wearer per turn until it warms up.
 
 ## Rank II
 
@@ -18,7 +18,7 @@ Increases your CON by 1.
 
 <u>Ice Walker:</u> You suffer no penalties when walking on ice and may choose to leave no footprints as you pass. You have the ability to walk on water, freezing it as you pass. You cannot walk on water in the event of a storm or roaring waters.
 
-<u>Canalyze Cold</u>: You can choose to suffer 2 non-lethal damage to infuse your attacks with ice. An infused attack does +2 ice damage and you can spend 2 perks to slow your target. This effect lasts for a number of rounds equal to your rank + 2.
+<u>Channel Cold</u>: You can choose to suffer 2 non-lethal damage to infuse your attacks with ice. An infused attack does +2 ice damage and you can spend 2 perks to slow your target. This effect lasts for a number of rounds equal to your rank + 2.
 
 <u>Arctic Vision</u>: Snowstorms and fog do not hinder your vision, allowing you to see everything within 60 feet. This ability does not work with smoke or gases that hinder vision.
 

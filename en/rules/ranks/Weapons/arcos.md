@@ -1,5 +1,5 @@
 ---
-title: Arcos
+title: Ranged
 main: Rangos
 sub: Armas
 ---

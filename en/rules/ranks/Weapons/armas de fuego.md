@@ -1,5 +1,5 @@
 ---
-title: Armas de fuego
+title: Firearms
 main: Rangos
 sub: Armas
 ---

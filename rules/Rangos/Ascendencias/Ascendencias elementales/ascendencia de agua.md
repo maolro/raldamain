@@ -9,7 +9,7 @@ category: Ascendencias
 
 Obtienes Resistencia 1 a daño físico. 
 
-<u>Ascendencia de las profundidades</u>: Recibes resistencia a daño frío igual a tu rango de ascendencia elemental. No sufres efectos negativos a causa del frío extremo. Los animales marinos no son naturalmente hostiles hacia ti.
+<u>Ascendencia de las profundidades</u>: Recibes resistencia a daño frío igual a tu rango de ascendencia elemental. No sufres efectos negativos a causa del frío extremo y los animales marinos no serán naturalmente hostiles hacia ti.
 
 <u>Hidrokinesia:</u> Puedes moldear pequeñas cantidades de agua a tu voluntad. Desbloqueas rangos en [magia elemental de agua](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20agua.html). Como acción bonus usable una vez al turno puedes manipular una cantidad pequeña de agua o alterar sus estados. Puedes afectar al agua de las siguientes maneras:
 
