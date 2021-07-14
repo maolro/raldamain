@@ -8,7 +8,7 @@ sub: Bloodlines
 
 You gain resistance 1 to physical damage. 
 
-<u>Water adaptation</u>: You receive resistance to Cold equal to your elemental template rank. You suffer no ill effects from extreme cold. Marine animals are not naturally hostile towards you.
+<u>Water adaptation</u>: You receive resistance to cold damage equal to your water bloodline rank rank. You suffer no ill effects from extreme cold. Marine animals are not naturally hostile towards you.
 
 <u>Hydrokinesis:</u> You can shape small amounts of water to your will. You unlock ranks in Water elemental magic. As a bonus action usable once per turn you can manipulate a small amount of water or alter its states. You can affect water in the following ways:
 

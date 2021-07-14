@@ -1,5 +1,5 @@
 ---
-title: Alabardas
+title: Polearms
 main: Rangos
 sub: Armas
 ---
