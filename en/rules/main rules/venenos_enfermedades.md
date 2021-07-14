@@ -1,5 +1,5 @@
 ---
-title: Venenos y enfermedades
+title: Poisons and diseases
 main: Reglas adicionales
 ---
 
