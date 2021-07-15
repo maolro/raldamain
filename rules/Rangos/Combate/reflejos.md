@@ -44,3 +44,4 @@ Añade un dado de desafío a tus tiros defensivos para esquivar. Puedes cancelar
 <u>Libertad de movimiento:</u> Obtienes resistencia igual a tu destreza-2 contra agarre y otros efectos que intenten retenerte. No provocas ataques de oportunidad al moverte fuera del alcance de una criatura.
 
 <u>Oportunista:</u> Una vez al turno, haz un ataque de oportunidad contra una criatura que haya sido impactada por un ataque hecho por otra criatura. Si el atacante es un aliado, este podrá gastar 1 ventaja que genere para que puedas añadir un dado de Ventaja a tu ataque de Oportunista. Este ataque se oportunidad cuenta como flanqueo para el propósito de [ataque furtivo](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html#rango-i).
+

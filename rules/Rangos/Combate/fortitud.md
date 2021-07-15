@@ -11,7 +11,7 @@ Tira un dado de desafío adicional en tiros defensivos de CON.
 
 <u>Vitalidad mejorada:</u> Incrementa tus PV base por un valor igual a tu rango de fortitud x 2. Eres capaz de seguir consciente aunque te encuentres a 0 PV, cayendo inconsciente sólo cuando tu vitalidad y PV lleguen a 0. Cada vez que realices una acción estando a 0 PV sufres 1 daño no-letal (3 daño no-letal si es una acción de turno completo).
 
-<u>Armadura natural:</u> Tu cuerpo es capaz de resistir ataques de armas. Obtienes armadura natural igual a tu tu rango de fortitud + 1. La armadura natural reducirá el daño de armas que sufras pero no cuenta como armadura para los propósitos de armas cortantes. También quedarán reducidos por la armadura natural el daño de frío, fuego y necrótico. En el caso que tengas la mejora física del mismo nombre por haber gastado [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) ambos efectos no se acumularán, sino que tu armadura natural base aumentará por 2.
+<u>Armadura natural:</u> Tu cuerpo es capaz de resistir ataques de armas. Obtienes armadura natural igual a tu rango de fortitud + 1. La armadura natural reducirá el daño de armas que sufras pero no cuenta como armadura para los propósitos de armas cortantes. También quedarán reducidos por la armadura natural el daño de frío, fuego y necrótico. En el caso que tengas la mejora física del mismo nombre por haber gastado [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) ambos efectos no se acumularán, sino que tu armadura natural base aumentará por 2.
 
 ## Rango II
 

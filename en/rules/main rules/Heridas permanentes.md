@@ -3,70 +3,68 @@ title: Permanent wounds
 main: Reglas adicionales
 ---
 
-## Permanent wounds
+## Permanent injuries
 
-Permanent wounds are designated as all wounds that cause lasting damage to a person's body. Inflicting permanent wounds requires spending a number of perks according to your weapon Rank on impact with an attack.
+Permanent injuries are all wounds that cause lasting damage to a person's body. A character will receive a permanent injury whenever it takes hit point damage or suffers a critical hit, which will increase the level of all permanent injuries dealt by one step.
 
-Depending on the type of damage your weapon inflicts, permanent wounds have slight variations. If your weapon is Blunt, the target will suffer Bleeding in addition to the effects of the wound. If it is Blunt, you can inflict permanent wounds on armored creatures even if your damage is reduced to 0, while if it is Piercing you are able to inflict permanent wounds on naturally armored creatures even if they reduce your damage.
-
-The wound you inflict will affect a random part of the target's body unless you spend a number of perks to target a specific location. If you suffer a permanent wound again in a place where you already have one, increase the level of the wound by 1. The permanent wounds that affect each part of the body are the following:
+The injury you inflict will affect a random part of the target's body unless you spend take a -2 penalty to target a specific location. If you take a second permanent wound again in a place where you already have one, increase the level of that wound by one step. Permanent injury will have different effects depending on the body part they target, as is specified in the following list:
 
 ### Head
 
-Aiming for the head requires an additional cost of 2 perks. If you are hit in the head, make an additional 1d10 roll to determine if you suffer an additional wound to your eyes, ears, or neck. The effects you receive from being hit in one of these parts of the head depends on the type of permanent wound you have suffered.
+To aim at the head a character must take an additional -2 penalty to all attack rolls. If you are hit in the head, make an additional 1d10 roll to determine if you suffer an additional injury to your eyes, ears, or neck. The effects you receive from being hit in one of these parts of the head depends on the type of permanent injury you have suffered.
 
-**Mild:** You are staggered for one turn. In addition, add one Disadvantage die to all your Intelligence, Wisdom, or Charisma related skill rolls.
+**Mild:** You are staggered for one turn and receive disadvantage in Intelligence, Wisdom, or Charisma related skill checks.
 
-**Medium:** Adds one difficulty die to all your INT, WIS and CHA rolls. You are stunned for one turn and remain staggered until you receive healing, in addition to the effects caused by a minor permanent wound. 
+**Medium:** Reduce your INT, WIS and CHA stats by 1. You are stunned for one turn and remain staggered until you are healed, in addition to the effects caused by a mild permanent injury. 
 
-**Severe:** Adds two difficulty dice to all your INT, WIS and CHA rolls. You fall Unconscious until you suffer damage or are awakened by a creature. If you suffer an additional permanent head wound you will suffer brain damage, which will kill you in one turn if you do not receive healing. Even if you are healed, you receive a mild insanity of the master's choice.
+**Severe:** Reduce your INT, WIS and CHA stats by 2. You fall unconscious until you take damage or are awakened by another creature. If you take an additional permanent injury to your head you will suffer brain damage, which will kill you in one round unless receive healing. Even if you are healed, you will receive an insanity of the DM's choice.
 
 | Result (1d10) | Additional injury |
 | ------------- | ----------------- |
-| 1-7           | None              |
+| 1-7           | 0None             |
 | 8             | Eye               |
 | 9             | Ear               |
 | 10            | Neck              |
 
-**Eye:** (Mild) Reduce your field of vision to 60 feet, add one Disadvantage die to all your attacks and Perception rolls; (Medium) You are Blinded until healed, suffer the effects of a minor permanent wound; (Severe) You lose vision in one eye and suffer Bleeding.
+**Eye:** (Mild) Reduce your field of vision to 60 feet and you gain disadvantage in ranged attacks and perception checks; (Medium) You are blinded until healed and suffer the effects of a minor permanent injury; (Severe) You lose vision in one eye.
 
-**Ear:** (Mild) Deafened for one turn, add one Disadvantage die to all your attacks and Perception rolls; (Medium) Deafened until you receive healing, suffer the effects of a minor permanent wound; (Severe) You lose the ability to hear in one ear.
+**Ear:** (Mild) Deafened for one turn and you gain disadvantage in perception checks; (Medium) Deafened until you are healed, suffer the effects of a minor permanent injury; (Severe) You lose the ability to hear in one ear.
 
-**Neck:** (Mild): You cannot speak for one turn, preventing you from using voice-requiring abilities such as Commander's Voice or Persuasion; (Medium) You receive Bleeding and lose the ability to speak until you receive healing; (Severe) Reduces your CON by 1 and you begin to choke, in addition to receiving Bleeding.
+**Neck:** (Mild): You cannot speak for one turn, preventing you from using voice-requiring abilities such as Commander's Voice or Persuasion; (Medium) You receive Bleeding and lose the ability to speak until you are healed; (Severe) Reduces your CON by 1 and you begin to suffocate.
 
 ### Arms
 
-Targeting a specific arm requires an additional expenditure of 1 advantage.
+Targeting a specific arm requires you to take an additional -2 penalty on attacks.
 
-**Mild:** Add one Disadvantage die to all actions in which you use your wounded arm. If you attempt to use Parry to defend yourself enemies will add one Advantage die to their attack rolls.
+**Mild:** You gain disadvantage in all actions in which you use your wounded arm, including attack and defense rolls.
 
-**Medium:** Adds one difficulty die to all your STR and DEX rolls, in addition to being disarmed. If you attempt to use Parry to defend yourself enemies will add an ability die to their attack rolls.
+**Medium:** Reduce your STR and DEX by 1 and you are disarmed. Enemies gain advantage in attacks against you if you attempt to parry to defend yourself with a weapon carried by your injured arm.
 
-**Severe:** Adds one difficulty die to all your STR and DEX rolls. Your arm is disabled, making you unable to attack or defend yourself with it. If you suffer an additional permanent wound to the arm it will be so badly wounded that it must be amputated.
+**Severe:** Reduce your STR and DEX by 2. Your arm is disabled, making you unable to attack or defend yourself with it. If you suffer an additional permanent injury to the arm it will be so badly wounded that it must be amputated.
 
 ### Chest
 
-**Mild:** Add one Disadvantage die to all your Strength or Dexterity related skill rolls. 
+**Mild:** You gain disadvantage in all strength or dexterity-related skill checks.
 
-**Medium:** Reduce your CON by 1. You receive the Fatigued status effect in addition to the penalties granted by a light wound. 
+**Medium:** Reduce your CON by 1. You are fatigued and receive the penalties granted by a light injury. 
 
-**Severe: You receive the Exhausted status effect and a two dice Disadvantage penalty to all your Strength or Dexterity related skill rolls. If you suffer an additional permanent chest wound you will suffer a heart wound, which will kill you instantly in one turn if you do not receive healing. Even if you survive your CON will be further reduced by 2.
+**Severe**: You are exhausted and gain an additional disadvantage die in all strength or dexterity-related skill checks. If you suffer an additional permanent chest injury your heart will be wounded, which will kill you instantly in one turn unless you receive healing. Even if you survive your CON will be further reduced by 2.
 
 ### Abdomen
 
-**Mild:** You receive the sickened status effect. Your base movement is reduced by 10 feet.
+**Mild:** You are sickened and your base movement is reduced by 10 feet.
 
-**Medium:** Reduces your CON by 1. You receive the Nausea status effect for one turn and get the same penalties as a minor wound.
+**Medium:** Reduce your CON by 1. You are nauseated for one turn and receive the same penalties as a minor wound.
 
-**Severe:** You receive the Nausea status effect until you are healed and take the same penalties as a minor wound. If you suffer an additional permanent wound to the abdomen you will receive internal bleeding, which deals 2 lethal damage per turn and leaves you moribund. Healing an internal hemorrhage requires succeeding on three consecutive First Aid rolls (two if you have the right gear and are out of combat), but even if you are healed your CON will be additionally reduced by 1.
+**Severe:** You are nauseated until you receive healing and take the same penalties as a minor wound. If you suffer an additional permanent wound to the abdomen you will receive an internal hemorrhage, which will deal 2 lethal damage per turn and leaves you on the brink of death. Healing an internal hemorrhage requires succeeding on three consecutive First Aid checks (two if you have the right gear and are out of combat), but even if you are healed your CON will be additionally reduced by 1.
 
 ### Legs
 
-**Mild:** Reduces your movement by 5 feet. You receive a penalty of one Disadvantage die on Acrobatics or Athletics rolls, and you cannot spend generated perks to move 5 feet.
+**Mild:** Reduce your movement by 5 feet and gain disadvantage on Acrobatics or Athletics rolls
 
-**Average:** Add one difficulty die to all your DEX rolls and you immediately fall to the ground. You receive the same penalties to movement and skill rolls that a minor wound grants you.
+**Average:** Reduce your DEX by 1 and you immediately fall to the ground. You receive the same penalties to movement and ability checks that a minor wound grants you.
 
-**Severe:** Add two difficulty dice to all your DEX rolls. Your leg is disabled and you immediately fall to the ground. While your leg is disabled your movement is reduced by 10 feet and you automatically fail all Acrobatics and Athletics rolls. In addition, you will not be able to Dodge as a reaction to defend yourself. If you suffer an additional permanent wound to your leg it will be so injured that it must be amputated.
+**Severe:** Reduce your DEX by 2. Your leg is disabled and you immediately fall to the ground. While your leg is disabled your movement will be reduced by 10 feet and you automatically fail all Acrobatics and Athletics rolls. Additionally, you will not be able to Dodge as a reaction to defend yourself. If you suffer an additional permanent injury to your leg it will be so wounded that it must be amputated.
 
 | Result (1d10) | Hit location |
 | ------------- | ------------ |

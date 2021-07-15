@@ -81,16 +81,3 @@ category: Armas
 
 <u>Maestro pistolero:</u> Al atacar a una criatura que haya sufrido daño en algún momento de la ronda añades +2 daño base a tus ataques con armas de fuego. Recargar tu arma secundaria te cuesta una acción de movimiento y no necesitas tener una mano libre para ello. 
 
-## Escudos
-
-### Rango I
-
-<u>Defensa doble:</u> 
-
-<u>Fortaleza defensiva:</u> 
-
-### Rango II
-
-<u>Muro de acero</u>:
-
-### Rango III

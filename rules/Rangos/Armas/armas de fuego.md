@@ -3,6 +3,8 @@ title: Firearms
 category: Armas
 ---
 
+# Rangos
+
 ## Rango I
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida leve (4 ventajas para infligir una herida media).
@@ -25,9 +27,9 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida permanente media (4 ventajas para infligir una herida permanente grave).
 
-<u>Disparo preciso:</u> Tus atques se han vuelto mucho más preciss, permitiéndote ignorar todo obstáculo que no proporcione ni cubierta ni ocultamiento completo. Al atacar a un objetivo afectado por puntería mortal esta perderá todos los bonificadores defensivos otorgados por cubierta y ocultamiento. Esta habilidad no funcionará como ya se ha especificado contra enemigos con cubierta u ocultamiento completo.
+<u>Disparo preciso:</u> Tus ataques se han vuelto mucho más precisos, permitiéndote ignorar todo obstáculo que no proporcione ni cubierta ni ocultamiento completo. Al atacar a un objetivo afectado por puntería mortal esta perderá todos los bonificadores defensivos otorgados por cubierta y ocultamiento. Esta habilidad no funcionará como ya se ha especificado contra enemigos con cubierta u ocultamiento completo.
 
-<u>Ojo de francotirador:</u> Apuntatndo tus ataques cuidadosamente eres capaz de realizar disparos mortales contra enemigos aún más alejados. Puedes emplear una acción de movimiento para incrementar tu radio de puntería mortal por 15 pies sin recibir ningún penalizador. Además, tus ataques incrementarán su daño base por 2 al atacar a objetivos incapaces de defenderse.
+<u>Ojo de francotirador:</u> Apuntando tus ataques cuidadosamente eres capaz de realizar disparos mortales contra enemigos aún más alejados. Puedes emplear una acción de movimiento para incrementar tu radio de puntería mortal por 15 pies sin recibir ningún penalizador. Además, tus ataques incrementarán su daño base por 2 al atacar a objetivos incapaces de defenderse.
 
 ## Rango IV
 
@@ -45,7 +47,7 @@ Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para inf
 
 # Armas
 
-Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 90 pies y se necesita una acción estándar para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongrugentes.
+Un arma de fuego base hace 5+Éxito daño perforante, tiene un alcance medio de 90 pies y se necesita una acción estándar para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongruentes.
 
 - **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base por 1 y su distancia por 30 pies a cambio de una mayor facilidad de uso. Las pistolas de mano necesitan sólo una acción de movimiento para recargar y pueden utilizarse en combate con dos armas.
 - **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
