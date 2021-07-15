@@ -15,7 +15,7 @@ All ranks revolve around six basic stats, which will be detailed in this section
 - **Wisdom**: Wisdom (WIS) measures a character's awareness and insight. Wisdom rolls are those that related to using your senses and intuition, such as perception and first aid. This stat is necessary for skills related to divine and natural magic. You can also roll wisdom defensively to protect youself against fear and mind-effects.
 - **Charisma**: Charisma (CHA) measures a character's eloquence and willpower. Charisma rolls are related to using the right words to manipulate others, either to persuade or decieve. This stat is necessary for skills related to social situations, such as Presence and Influence. Charisma is also used for elemental magic and in certain skills can allow you to use it instead of other mental stats for spellcasting.
 
-At level 1 you have the values 3, 2, 2, 1, 1, 1 to distribute among your six stats. In addition, you can reduce one of your stats by 1 to increase another by 1 (maximum 3). Every time you reach an even level (2, 4, 6...) you can increase one of your stats by 1, reaching a maximum of 6 (9 if you are level 12 or higher).
+At level 1 you have the values 3, 2, 2, 1, 1, 0 to distribute among your six stats. In addition, you can reduce one of your stats by 1 to increase another by 1 (maximum 3). Every time you reach an even level (2, 4, 6...) you can increase one of your stats by 1, reaching a maximum of 6 (9 if you are level 12 or higher).
 
 ## HP, Vitality and Defense
 
@@ -27,16 +27,14 @@ The next step to create a character is to determine the Hit Points (HP), Vitalit
 
 - **Defense**: Defense is a value that reduces the damage you suffer. Defense depends on the armor you wear and your natural endurance, known as natural armor (humans start with 0 natural armor). The amount of defense a certain suit of armor grants can be found here.
 
-  Similar to defense
+  Similar to defense are resistances, which are mostly supernatural abilities which grant you the ability to ignore some damage of a specific type. Resistances can protect you against either phyical damage, energy damage or arcane magic, and the add up with each other.
 
 HP and Vitality are reduced or increased if you suffer any change to your constitution stat. With a short rest you recover all your Vitality and HP equal to your level/3 (rounded up), while with a long rest you recover all your HP and Vitality.
 
+## Talents
+
+Talents represent your proficiency in various abilities unrelated to skill ranks. Your proficiency with a talent is marked by the  talent level, which ranges from 0 to 5. At level 1 a character have has four levels to distribute among all talents, reaching a maximum talent level of 2. Every time a character gains a level they will gain an additional talent level to distribute.
+
 ## Skills
 
-Skills represent your proficiency in various skills unrelated to attribute ranks. Your proficiency with a skill is marked by your talent level, which ranks from 0 to 5. At level 1 you have four talent levels to distribute (maximum of 2), and at each level thereafter you receive an additional talent level. 
-
-## Ranks
-
-Ranks form the basis of the Raldamain system. You get 2 ranks of your choice at level 1, and at each subsequent level you receive an additional rank in an ability. You cannot have an ability ranked higher than your level by 2 (i.e. at level 5 you cannot have an ability ranked III). With the consent of the master a player can slightly modify the skills that a rank gives without altering numerical values.
-
-A complete compilation of ranks can be found here.
+Skills form the basis of the Raldamain system and define the nature of a character. Each skill has a specific number of ranks, which represent the level of mastery a character has in it. You get 2 ranks of your choice at level 1, and at each subsequent level you gain an additional rank in a specific skill. You cannot reach a skill rank higher than your level divided by 2, rounded down (i.e. at level 5 you cannot have an ability ranked III). With the consent of the GM a player can slightly modify the attributes that a skill rank grants to better suit the character they seek to build.
