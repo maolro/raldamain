@@ -6,49 +6,49 @@ sub: Armas
 
 # Ranks
 
-## Range I 
+## Rank I 
 
-You roll an additional loosening die on attack shots.
+Add your rank to all attacks made with ranged weapons.
 
-<u>Deadly aim</u>: When shooting at a target that is less than 15 feet away from you you will ignore all the defense points it receives for its armor. Damage resistances and additional defense provided by Armored Aptitude will continue to apply, but you will ignore natural armor with this ability. You can take a penalty of one Difficulty die to use this skill against a target up to 30 feet away. The maximum distance at which you can use Deadly Sight increases by 5 feet each time you receive an additional range of Bows.
+<u>Piercing shot</u>: By taking aim you can strike your target's weak points to ignore their armor. This ability lets you spend a move action so your next attack will ignore 2 points of your target's defense. Instead of spending a move action once per attack you can take a -2 penalty to attack rolls to ignore 2 additional defense points. This ability can be used twice per attack at rank III and three times at rank V.  
 
-<u>Sneak Attack:</u> Your attacks target the weaknesses of the enemy. You do +2 damage in surprise attacks or attacking targets unable to dodge. Before attacking, you can target a specific part of the target by receiving a difficulty die as a penalty (add two difficulty dice if you choose the Head) in exchange for inflicting a slight permanent wound on that part of the body on impact with your attack. At range III you inflict a medium wound and at range V a severe wound using Stealth Attack in this manner. If you generate advantages in a sneak attack and you are aiming at a specific part of the target's body you can spend 4 advantages to increase the level of the permanent wound by 1. You can only affect enemies that are in your kill zone with a sneak attack.
+<u>Sneak Attack:</u> Your attacks are especially effective against vulnerable targets. Add your dexterity stat to all damage rolls made against surprised targets or those flanked by two of your allies. This ability only works against targets less than 30 feet away unless you take a -2 penalty to attacks for every additional 30 feet of distance. 
 
 ## Range II
 
-<u>Expert Archer:</u> Use your advantages to do a combat trick. This skill can only be used if you hit the target. All skills cost 2 advantages: 
+<u>Expert Archer:</u> Your expert aim lets you use your attacks in unexpected ways to weaken your target's defenses. Instead of attacking you can use your weapon to do one of the following combat tricks: 
 
-- **False shot**: The target is faked during a turn, making him unable to dodge the next attack he receives. It spends an additional advantage for the attacker to add one advantage die to his next shot.
-- **Disarming shot**: The target is Disarmed, dropping his weapon. He spends an additional advantage to have the enemy move 5 feet in a random direction.
-- **Lucky shot:** Destroy a small object carrying the target (potions, sheathed weapons, a side bag). If the hit object is a bomb, it will explode on the spot. Cat 2 Additional advantages to drop an object it is carrying.
+- **False shot**: Your target must defend itself with Insight. If it fails it will be incapable of dodging your next attack as if it was a feint.
+- **Disarming shot**: Your target must defend itself with Heroics. If it fails it will immediately be disarmed of whatever weapon it is carrying.
+- **Lucky shot:** Your target must defend itself with Reflexes. If it fails it will drop a small object it is carrying on its body, such as a potion, a bomb or a side bag.
 
-<u>Quick attack:</u> Making an attack with your weapon now costs you a movement action. Once per round as a reaction you can spend 2 disadvantages generated to make an attack of opportunity with your weapon.
+<u>Quick attack:</u> Making an attack with your weapon now costs you a move action. You can now make opportunity attacks with your weapon whenever you roll a critical hit on your defense or if your enemy rolls a critical miss on its attack.
 
 ## Range III 
 
-You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a mild permanent injury (4 allowances to inflict a medium permanent injury).
+Increase your critical threshold to 19-20.
 
-<Your ranged attacks ignore the cover and concealment your targets have, avoiding the disadvantages they will provide. Accurate shooting only works against targets in your kill radius that are not in full cover or concealment.
+<u>Precise shot</u>: Your ranged attacks have become even more precise, letting you ignore all obstacles that do not provide total cover or concealment. Whenever you use aim against a target you will also ignore all penalties given by cover an concealment on your next attack.
 
-<Sniper's Eye: Reduce all penalties for shooting from a distance by one Difficulty die. Sneak attack is applied against targets located at any distance from you. 
+<u>Sniper's Eye:</u> Your perfect aim lets you strike targets at even further distances. Whenever you aim an attack reduce all distance penalties by 2, including those for sneak attacks. 
 
 ## Range IV
 
-<Moving shot:</u> You can move before and after shooting, distributing your total movement as you wish. You also don't suffer penalties when shooting mounted or in a moving vehicle.
+<u>Shot on the run:</u> You can move before and after attacking, distributing your total movement as you wish. You also don't suffer penalties when shooting from a mount or on a moving vehicle.
 
-<Agile Archer: You are able to change accuracy to speed to shoot a shower of arrows. When making an attack you can declare it as a rapid attack. A fast attack costs you a bonus action to perform but this and all attacks you make after it will reduce the number of skill dice you roll by 1. You cannot perform more than one fast attack per turn.
+<u>Rain of arrows</u>: Once per turn you do an extra attack with your weapon as a bonus action. You can also use your weapon to provide cover fire for your allies, allowing you to add your ranged weapon rank to the defensive roll of an ally within 60 feet. Cover fire can only be used if you are in defensive position.
 
 ## Range V
 
-You roll an additional loosening die on attack shots. You spend 2 allowances to inflict a medium permanent wound (4 allowances to inflict a severe permanent wound).
+Increase your critical threshold to 18-20.
 
-<When you hit an enemy with an attack, you spend 4 advantages to multiply your base damage by 2 (automatically inflicting a serious injury if you do at least one point of damage). To use this skill you must have used expert marksmanship in your attack.
+<u>Vital strike:</u> Whenever you strike an enemy whose defense has been reduced to 0 with precise attack all damage you inflict will be multiplied by 2. If you can use sneak attack on your target you can automatically inflict a severe permanent injury on hit,
 
-<Your attacks are able to hit the weak point of the target. If you spend a move action to aim at a shot you can make the defender unable to use shield or magic stop on his defensive shot
+<u>Expert aim</u>: Your attacks are able to hit your target's weak points. If you spend a move action to aim your shot can make the defender unable to use his shield or magic to block your attack. This ability will not work against characters in defensive position.
 
 # Weapons
 
-A base bow does 3+ Success piercing damage and has a range of 60 feet. You can shoot enemies at a maximum of 90 feet by receiving a single die difficulty penalty. A base bow can be modified with the following features to produce all types of related weapons.
+A base bow deals 1d8 piercing damage and has a range of 60 feet. You can shoot enemies at a maximum of 90 feet by receiving disadvantage to your attack. A base bow can be modified with the following features to produce all types of related weapons.
 
 - Composite: The bow requires great strength to be drawn but will increase the speed of the projectiles. You need to have FUE 2 or more to use a compound bow but it will deal +1 base damage and increase its range by 10 feet. The base damage of a compound bow increases according to your FUE stat as if it were a melee weapon.
 - Short: The bow is small and very easy to draw. You reduce your base damage by 1 but will not suffer penalties for shooting mounted or in a moving vehicle. You won't receive penalties for fast attacks with the Agile Archer skill.

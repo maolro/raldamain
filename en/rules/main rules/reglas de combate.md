@@ -80,9 +80,9 @@ A group of low level creatures can make a joint attack against a more powerful e
 
 A joint attack counts as an area attack, inflicting damage even if the target defends itself successfully (Evasion applies against this effect). If the attackers are flanking the target then the target will not be able to use Parry or Dodge to defend himself unless it has Greater uncanny dodge.
 
-### Falls
+### Falling
 
-Falls represent the damage that a character will suffer from hitting a flat surface by moving at excessive speeds. This damage is only reduced by resistances to physical damage, ignoring both artificial and natural armor. A falling character will suffer 1 bludgeoning damage for every 5 feet of distance fallen. If the character falls on water the total amount of fall damage will be reduced by 2  and all permanent injuries will be reduced by one step. A character that falls a certain number of feet he will suffer permanent injuries as indicated in this table.
+Falling represents the damage that a character will suffer from striking a flat surface at excessive speed. This damage is only reduced by resistances to physical damage, ignoring both artificial and natural armor. A falling character will suffer 1 bludgeoning damage for every 5 feet of distance fallen. If the character falls on water the total amount of fall damage will be reduced by 2  and all permanent injuries will be reduced by one step. A character that falls a certain number of feet he will suffer permanent injuries as indicated in this table.
 
 | Feet  | Permanent injury   |
 | ----- | ------------------ |
