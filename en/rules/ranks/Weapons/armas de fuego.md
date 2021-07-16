@@ -6,43 +6,43 @@ sub: Armas
 
 ## Rank I
 
-Roll an additional proficiency die on attack rolls. You spend 2 advantages to inflict a mild injury (4 advantages to inflict a medium injury).
+Add your rank to all attack rolls made with firearms.
 
-<u>Deadly aim</u>: Your attacks are exceptionally deadly when targeting enemies in a close range. Whenever you attack a target which is less than 30 feet away your damage will ignore all defense modifiers given by natural or manufactured armor (15 feet away for one-handed weapons). Before declaring an attack you can add a difficulty die to your roll to increase the distance of deadly aim by 15 feet, allowing you to ignore your target's defense.
+<u>Deadly aim:</u> Your attacks are especially deadly when striking enemies at close range. When attacking a target within 30 feet of you you will ignore any defense they have for natural and manufactured armor (this is 15 feet for a handgun) and any permanent wounds you cause will increase their effectiveness by one step. Before making an attack you can add a -2 penalty to your attack roll to increase the distance at which you can use deadly marksmanship by 15 feet.
 
-<u>Quick draw</u>: Drawing your weapon costs you a move action instead of a standard action. If you use a one-handed weapon, drawing it will cost you a bonus action instead. You also have +1 priority in the initiative count (+2 at rank III and +3 at rank V).
+<u>Gunslinger's Agility:</u> Drawing your weapon costs you a move action (this costs you a bonus action if it is a handgun). You also your initiative by 1, and increase it again when you reach rank III and V.
 
 ## Rank II
 
-<u>Quick Reload:</u> Reloading a weapon now costs you a move action, while large weapons would require a standard actio. You can now spend a move action to attack with your firearm.
+<u>Quick reload:</u> Reloading a weapon costs you a move action, while reloading large weapons require a standard action. You can use a move action to make an additional attack with your weapon.
 
-<u>Bullet trick</u>: Your skilled marksmanship allows you to use your attacks in an unexpected way to weaken your target's defenses. This ability allows you to spend 2 advantages you have generated on a hit to activate one of the following effects. If you miss your attack you can spend 4 advantages instead to use such effects.
+<u>Bullet Trick:</u> Your expert marksmanship allows you to use your attacks in an unexpected way to weaken your opponent's defenses. Instead of attacking you can use your gun to perform one of the following effects on an enemy:
 
-- **False shot**: The target is feinted for a turn, making it unable to dodge the next attack it will receive. You can spend an additional advantage to give a boost die to the next character which attacks your feinted target.
-- **Thunderous burst:** The shot causes a loud bang which frightens your target, causing them to be shaken for a turn. You can spend an additional advantage so your target moves 5 feet in a random direction (spend 2 advantages so they fall prone).
-- **Lucky Shot:** Destroy a small object the target is carrying, such as potions, sheathed weapons or a side bag. If the hit object is a bomb it will explode immediately. You can spend 2 additional advantages so they drop the item they are carrying
+- **False Shot:** Your target must defend himself by figuring out intentions. If it fails it will be incapable of dodging your next attack as if it was a feint.
+- **Thundering shot:** The shot causes a thunderous boom, causing your target to become disoriented. It must defend itself by making a Constitution roll, and on failure it must move 10 feet in a random direction and is Shaken until its next turn.
+- **Lucky Shot:** Your target must defend itself using Dodge. If it fails it will drop a small object it is carrying on its body, such as a potion, a bomb or a side bag. If the object is particularly fragile it will be destroyed by your bullet.
 
 ## Rank III
 
-Roll an additional proficiency die on attack rolls. You spend 2 advantages to inflict a medium injury (4 advantages to inflict a severe injury).
+Increase your critical threshold to 19-20.
 
-<u>Precise shot</u>: Your attacks have become even more accurate than before, allowing you to ignore anything but total concealment and cover. Whenever you attack a target affected by your deadly aim ability it will lose all defensive bonuses given by cover and concealment. This ability does not work against targets which have total concealment or cover against you.
+<u>Precise shot</u>: Your attacks have become much more precise, allowing you to ignore any obstacle that provides neither cover nor complete concealment. When attacking a target affected by deadly marksmanship it will lose all defensive bonuses granted by cover and concealment. This ability will not work as already specified against enemies with cover or full concealment.
 
-<u>Sniper's eye:</u> By carefully aiming your attacks you can do deadly shots against even more distant targets. You can spend a move action to increase your deadly aim radius by 15 feet without receiving a penalty. You will also increase your weapon's damage by 2 when attacking targets which cannot defend themselves. 
+<u>Sniper's Eye</u>: By carefully aiming your attacks you are able to fire deadly shots at even more distant enemies. You can use a move action to increase your deadly aim radius by 15 feet without taking a penalty. In addition, you can add your dexterity stat to your damage rolls against targets unable to defend themselves.
 
 ## Rank IV
 
-<u>Shot on the run</u>: You can move before and after shooting, distributing your total movement as you wish (15 feet before and 15 feet after for example). You are also not penalized when firing from a mount or a moving vehicle
+<u>Shot on the run</u>: You can move before and after shooting, distributing your total movement as you wish (15 feet before and 15 feet after, for example). You will also suffer no penalties when shooting mounted or in a moving vehicle.
 
-<u>Quick shot:</u> Once per round you can spend a bonus action to do an additional attack with your firearm. This ability can also be used to create cover fire to protect an ally of your choice, allowing you to roll your attack dice defensively to protect them. The disadvantages generated by quick shot can be used for bullet tricks.
+<u>Rain of lead</u>: Once per round you can use a bonus action to make an additional attack with your weapon. This ability can also be used to provide cover fire to an ally of your choice, allowing you to make a defensive roll using your attack modifiers to protect them. 
 
 ## Rank V
 
-Roll an additional proficiency die on attack shots. You spend 2 advantages to inflict a severe permanent injury.
+Increases your critical hit chance to 18-20.
 
-<u>Killing shot</u>: When you hit an enemy with an attack, you spend 4 advantages to multiply your base damage by 2, automatically inflicting a serious injury if you deal at least one point of damage. To use this skill you must have used deadly aim in your attack.
+<u>Vital Strike</u>: By striking an enemy unable to defend itself with deadly aim you are able to deal it a lethal blow. An attack made this way will multiply your base damage by 2 and inflict a severe permanent wound when it damages your target.
 
-<u>Expert marksmanship</u>: Your attacks are able to hit your target before they can react. If you spend a move action to aim your attack you can make the defender unable to use a shield or magical defenses to stop your attack. This will not work against characters in defensive position.
+<u>Expert marksmanship</u>: Your attacks are able to hit the target's weak points. By using a move action to aim a shot you can make the defender unable to use shield or magic to block your attack. This ability will not work against characters that are in a defensive stance (it also does not work against those in defensive form). 
 
 # Weapons
 
