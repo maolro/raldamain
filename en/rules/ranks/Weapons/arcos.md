@@ -20,7 +20,7 @@ Add your rank to all attacks made with ranged weapons.
 
 - **False shot**: Your target must defend itself with Insight. If it fails it will be incapable of dodging your next attack as if it was a feint.
 - **Disarming shot**: Your target must defend itself with Heroics. If it fails it will immediately be disarmed of whatever weapon it is carrying.
-- **Lucky shot:** Your target must defend itself with Reflexes. If it fails it will drop a small object it is carrying on its body, such as a potion, a bomb or a side bag.
+- **Lucky shot:** Your target must defend itself using Dodge. If it fails it will drop a small object it is carrying on its body, such as a potion, a bomb or a side bag.
 
 <u>Quick attack:</u> Making an attack with your weapon now costs you a move action. You can now make opportunity attacks with your weapon whenever you roll a critical hit on your defense or if your enemy rolls a critical miss on its attack.
 
@@ -44,12 +44,12 @@ Increase your critical threshold to 18-20.
 
 <u>Vital strike:</u> Whenever you strike an enemy whose defense has been reduced to 0 with precise attack all damage you inflict will be multiplied by 2. If you can use sneak attack on your target you can automatically inflict a severe permanent injury on hit,
 
-<u>Expert aim</u>: Your attacks are able to hit your target's weak points. If you spend a move action to aim your shot can make the defender unable to use his shield or magic to block your attack. This ability will not work against characters in defensive position.
+<u>Expert marksmanship</u>: Your attacks are able to hit your target's weak points. If you spend a move action to aim your shot can make the defender unable to use his shield or magic to block your attack. This ability will not work against characters in defensive position.
 
 # Weapons
 
 A base bow deals 1d8 piercing damage and has a range of 60 feet. You can shoot enemies at a maximum of 90 feet by receiving disadvantage to your attack. A base bow can be modified with the following features to produce all types of related weapons.
 
-- Composite: The bow requires great strength to be drawn but will increase the speed of the projectiles. You need to have FUE 2 or more to use a compound bow but it will deal +1 base damage and increase its range by 10 feet. The base damage of a compound bow increases according to your FUE stat as if it were a melee weapon.
-- Short: The bow is small and very easy to draw. You reduce your base damage by 1 but will not suffer penalties for shooting mounted or in a moving vehicle. You won't receive penalties for fast attacks with the Agile Archer skill.
+- <u>Composite</u>: The bow requires great strength to be drawn but it will increase the power of arrows fired. You need to have STR 3 or more to use a compound bow but it will deal increase its damage to 1d10 and its range by 15 feet. The base damage of a compound bow increases with to your STR stat as if it were a melee weapon.
+- <u>Short</u>: The bow is small and very easy to draw. You reduce your base damage to 1d6 but you will not suffer penalties for shooting from a mount or in a moving vehicle. At rank IV you will gain the ability Reposition. 
 
