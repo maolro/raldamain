@@ -1,5 +1,4 @@
 ---
-title: Blood magic
 main: Rangos
 sub: Magia elemental
 ---

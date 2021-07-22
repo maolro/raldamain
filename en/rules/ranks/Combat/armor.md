@@ -6,7 +6,7 @@ sub: Combat
 
 ## Rank I
 
-<u>Armor training</u>: Reduces the armor penalty by 1. If you manage to reduce the penalizer to 0, you can move and use reflex skills as if you were not wearing armor. Every time you get a range in armor proficiency reduce the penalty by 1 again
+<u>Armor training</u>: Reduces the armor penalty by 2 If you manage to reduce the armor penalty to 0, you can move and use reflexes skills as if you were not wearing armor. Every time you get a range in armor proficiency reduce the penalty by 1 again
 
 <u>Reinforced defense</u>: Increase your defense by 1 if you are wearing armor. The defense is increased again by 1 each time you get a rank in suitability with armor. This increase in defense also reduces the damage from non-magical attacks against which your armor is not applied, such as Deadly Sight.
 
@@ -24,11 +24,11 @@ sub: Combat
 
 # Types of armor
 
-Armor is an indispensable item for every warrior, marking in many cases the fine line between life and death. Armor will grant a bonus to defense according to the hardness and protection it offers, which accumulates with the natural armor. A character with armor cannot suffer permanent wounds if the damage is reduced to 0, a fact that does not occur with resistance or natural armor. However, heavier armor hinders dexterous movement and concentration, reducing all dexterity rolls, arcane magic, or elemental magic by a value equal to the penalty. Additionaly, a character possessing an armor penalty will lose the effects of all attributes related to Reflexes. The most common types of armor are listed in the following table:
+Armor is an indispensable item for every warrior, marking in many cases the fine line between life and death. Armor will grant a bonus to defense according to the hardness and protection it offers, which accumulates with the natural armor. A character with armor cannot suffer permanent wounds if the damage is reduced to 0, a fact that does not occur with resistance or natural armor. However, heavier armor hinders dexterous movement and concentration, reducing all dexterity rolls, arcane magic, or elemental magic by a value equal to the penalty. Additionally, a character possessing an armor penalty will lose the effects of all attributes related to Reflexes. The most common types of armor are listed in the following table:
 
-| Type                          | Defense modifier | Armor penalty |
-| ----------------------------- | ---------------- | ------------- |
-| Leather, hide, padded         | 2                | 0             |
-| Studded leather, chain shirt  | 4                | 2             |
-| Splint, chainmail, chestplate | 6                | 4             |
-| Plate, brigandine             | 8                | 6             |
+| Type                           | Defense modifier | Armor penalty |
+| ------------------------------ | ---------------- | ------------- |
+| Leather, hide, padded          | 2                | 0             |
+| Studded leather, chain shirt   | 4                | 2             |
+| Splint, chainmail, breastplate | 6                | 4             |
+| Plate, brigandine              | 8                | 6             |

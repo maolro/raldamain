@@ -1,5 +1,4 @@
 ---
-title: Storm magic
 main: Rangos
 sub: Magia elemental
 ---
