@@ -56,11 +56,11 @@ An attack of opportunity can also be provoked if a creature saves its standard a
 
 ### Cover
 
-A person has cover when he is behind an obstacle that allows him to protect himself from projectiles and explosions, making him more difficult to spot. If a character has cover he can cancel one additional success per turn on Dodge rolls and can use movement actions to hide. When a creature with cover enters a defensive position it can cancel an additional success per turn if it continues to be behind cover. For an obstacle to count as cover it must be equal to or greater than one quarter the size of the creature and be blocking line of sight. The master has the final say in deciding whether something counts as cover or not.
+A person has cover when he is behind an obstacle that allows him to protect himself from projectiles and explosions, making him more difficult to spot. If a character has cover they gain advantage on dodge rolls and they can spend a movement actions to hide. For an obstacle to count as cover it must be equal to or greater than one quarter the size of the creature and be blocking line of sight. The master has the final say in deciding whether something counts as cover or not.
 
 Cover bonuses will also apply if there are other creatures between the attacker and his target. A character that receives cover by this effect will not be able to hide and will not be able to cancel an additional success to the turn unless there is a creature of a larger size blocking the attacker's path.
 
-Superior types of cover may be encountered in certain situations. If a creature has all of its body covered except for a small opening it will receive superior cover, which allows it to cancel two additional successes per turn. If there is no overture between the attacker and his target he will have full cover, which will protect him from all attacks until the cover is destroyed.
+Superior types of cover may be encountered in certain situations. If a creature has all of its body covered except for a small opening it will receive superior cover, by which it will add an additional 1d6 to dodge rolls. If there is no opening between the attacker and his target he will have full cover, which will protect him from all attacks until the cover is destroyed.
 
 ### Flanking
 
