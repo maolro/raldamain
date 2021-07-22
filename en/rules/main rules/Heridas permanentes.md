@@ -1,5 +1,5 @@
 ---
-title: Permanent wounds
+title: Permanent injuries
 main: Reglas adicionales
 ---
 

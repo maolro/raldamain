@@ -1,5 +1,4 @@
 ---
-title: Divine warrior
 main: Rangos
 sub: Religion
 ---

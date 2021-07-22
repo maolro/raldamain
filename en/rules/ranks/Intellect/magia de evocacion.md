@@ -1,5 +1,4 @@
 ---
-title: Evocation magic
 main: Rangos
 sub: Magia arcana
 ---

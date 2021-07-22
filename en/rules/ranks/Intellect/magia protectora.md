@@ -1,5 +1,4 @@
 ---
-title: Warding magic
 main: Rangos
 sub: Magia arcana
 ---

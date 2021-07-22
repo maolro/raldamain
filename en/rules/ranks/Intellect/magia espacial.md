@@ -1,5 +1,4 @@
 ---
-title: Spaital magic
 main: Rangos
 sub: Magia arcana
 ---
