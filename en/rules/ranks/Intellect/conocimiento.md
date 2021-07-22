@@ -1,5 +1,4 @@
 ---
-title: Knowledge
 main: Rangos
 sub: Inteligencia
 ---

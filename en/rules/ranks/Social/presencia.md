@@ -6,48 +6,48 @@ sub: Social
 
 ## Rank I
 
-You roll an additional challenge die on defensive Charisma rolls.
+Add your presence rank to your defensive wisdom rolls.
 
-<u>Commanding voice:</u> Through inspiring words or imperious orders you strengthen the morale and strength of your allies. Initiating this effect requires a standard action, and until you suffer a minor permanent wound all your allies gain an Advantage die on all their rolls and are inspired. Your allies must see and hear you to benefit from the effect.
+<u>Commanding voice</u>: Through inspiring words or imperious orders you increase the morale and strength of your allies. Initiating this effect costs you a standard action and as long as it remains active all your allies within 30 feet who can perceive you will gain Advantage on all their skill, attack and defense rolls (this ability has a maximum distance of 45 feet at rank III and 60 feet at rank V). This effect will remain active until you are incapacitated or suffer a permanent wound.
 
-<u>Intimidating presence:</u> You are a fearsome figure on the battlefield. All creatures of lower challenge level are Spooked until you suffer a permanent wound. This ability affects everyone within 30 feet and does not affect creatures under the effects of Presence.
+<u>Fearsome presence</u>: Your fame or infamy inspires fear in your weaker-willed enemies, sapping their will to fight. When facing enemies whose level is lower than yours by 2 or more they will be shaken until you suffer a permanent wound. You will cannot use Inspire Fear on characters affected by Commanding voice or who have a fear resistance higher than your Presence rank.
 
-<u>Unbreakable Will:</u> You have resistance equal to your rank against fear and can use Car instead of Wisdom on rolls against influence. If you have ranks in Influence, when you use the Persuasive skill you fascinate those who interact with you.
+<u>Unbreakable Will:</u> Your willpower allows you to resist fear and deception. You have resistance equal to your rank against fear and morale effects. In addition, succeeding on a Charisma skill roll will fascinate the person with whom you interact.
 
-## Rank II
+## Rank II	
 
-<u>Shatter morale:</u> As a standard action make a morale roll affecting all enemies within 30 feet. Creatures you succeed against become Frightened, and creatures that are already Frightened end up Frightened. This ability cannot be used more times against the same group of creatures.
+<u>Frightening display</u>: Your fame lets you win battles without having to strike a single blow. As a standard action you can make a show of force to demoralize your enemies. This effect consists of a presence check made against all your enemies that are within 30 feet of you (in case they have a leader you will have to roll against their charisma). If you succeed they will become frightened until you suffer a permanent wound (if they are already frightened they will become panicked). This ability cannot be used more than once against the same creature. Additionally, whenever you do a critical hit you can increase the fear level of all creatures without fear resistance by one this. At rank IV employing this ability will cost you a move action.
+ 
+<u>Tactician</u>: You are able to direct your allies to perform complex tactics to gain superiority on the battlefield. Whenever you affect a group of characters with commanding voice you can direct them into following a tactic of your choice, which will remain active as long as they are under the effects of commanding voice and follow the condition specified in the tactic. These are the tactics you can grant to your allies:
 
-<u>Tactician:</u> When using commander's voice, you can direct allies to perform complex tactics. These are some of them:
+- **Defensive Line:** Your allies add an additional d6 on parry or shield rolls, automatically going into a defensive position. This ability may only be used on allies within 10 feet of each other.
+- **Evasive maneuvers:** Your allies add an additional d6 to dodge rolls and receive the evasion skill (if they already have evasion, they will receive greater evasion instead).
+- **Absolute defense:** Your allies will add 1d8 to their defensive rolls and will increase their DEF by 4. If an ally performs an attack in his turn he will lose the effects of this tactic and entering defensive position will not increase the bonuses of this effect. However, attacks of opportunity or abilities that require stored actions, such as intercept, charge attack or brace, can be performed. This ability can only be used on allies that are within 10 feet of each other.
+- **Skilled snipers:** You prepare your allies with ranged weapons to take advantage of openings in the enemy defense. All characters with ranged weapons will receive 1d6 on their attack rolls against targets that have been wounded this round.
+- **Battle rage:** Your allies enter a state of wild fury, increasing their STR and CON by 1 and their HP by 2. They will also not be able to perform tasks that require concentration or patience, attacking every turn if they can. Those allies who already have Rage will increase their base damage and DEF by 2.
+- **Expert flankers:** Your allies are experts at flanking your opponents, using their numerical superiority to quickly finish off the enemy. When flanking a creature all allies affected by this tactic will add 1d6 to their damage rolls and can defend each other even if they are not adjacent.
 
-- **Shield wall**: Each ally gets an additional Challenge die in shield rolls if adjacent to a shielded ally. They also add an additional amount of Difficulty dice to the roll for each ally adjacent to it.
-- **Expert Flankers**: Your allies roll an additional Advantage die and take +1 base damage when flanking an opponent. Damage from this ability stacks with sneak attack.
-- **Vigilance**: Your allies cannot be caught by surprise if at least one of them is not surprised.
-- **Scatter**: Your allies gain the ability [Evasion](http://raldamain.com/rules/Combate/reflejos.html) and can move 5 feet after succeeding on a Dexterity roll. They may spend a perk to move an additional 5 feet.
-
-<u>Inspiration:</u> You have a pool of inspiration points equal to 1+Rank. Spend a point of inspiration for you or your ally to gain an Advantage die on a roll. This ability can only be used on allies under the commander's voice effects and the points are regained after a long rest.
+<u>Inspiration</u>: You emulate the deeds of heroes of the past to achieve great feats in the present. This ability grants you a pool of inspiration points equal to 1 + your Presence rank. As a bonus action you can spend a number of inspiration points for a character of your choice to add 1d6 to a skill, attack or defense roll (you cannot spend more than 3 inspiration points on the same roll). This ability can only affect allies who are under effects of Commanding voice and all inspiration points will be recovered after a short rest.
 
 ## Rank III
 
-You roll an additional Challenge die on defensive Charisma rolls.
+<u>Indomitable</u>: You are capable of resisting the impossible, surviving situations that might seem hopeless. A number of times per combat equal to your presence you can repeat a skill, attack or defense roll, thus canceling the previous result and keeping the new one. This new roll will have all the bonuses of the previous roll, but you cannot use this ability more than once per roll.
 
-<u>Indomitable:</u> Your willpower allows you to resist the impossible. A number of times per day equal to your Rank-2 , reroll any skill roll, attack or defensive, canceling the previous result. This new roll retains the bonuses of the previous roll and you must keep the new result (you cannot use Indomitable on the same roll more than once). You have resistance equal to your Rank-1 against mental effects.
-
-<u>Inspire heroics:</u> As a standard action, grant an ally or you the strength of a hero. A creature affected by this ability has +R-1 temporary HP, one Advantage die on attack rolls, and the mighty will ability (receives one Disadvantage die on defensive charisma rolls if it already has it). This effect lasts until the target loses their temporary HP and you can affect a maximum number of people equal to your rank-1.
+<u>Inspire heroism</u>: As a standard action you can inspire a character to perform great deeds emulating heroes of the past. A creature affected by this ability will receive temporary hit points equal to your presence rank and will increase one of its stats by 1. It will also gain unbreakable will (if it already has the unbreakable will ability then it will receive against mental effects equal to your presence rank). This effect will remain active until the target loses its temporary HP and you can affect a maximum number of characters equal to your rank - 1 simultaneously (this includes yourself). Inspire Heroism will also be lost if the target falls under a mental effect or suffers a negative status effect, such as nauseated, dazed, incapacitated or confused. Inspire Heroism does not stack with itself.
 
 ## Rank IV
 
-<u>Incite Panic:</u> As a full turn action, incite your opponents to flee wildly. This ability works like frighten, but creatures with 4 or fewer HP are confused (a confused creature moves in a random direction each turn and attacks the first hostile creature it sees). You cannot scare creatures that have Presence effects.
+<u>Incite Panic:</u> As a full turn action you can incite your opponents to flee wildly. This ability works like Panic but creatures affected by this ability that have 4 or less HP will become confused if they fail. If you successfully affect a unit of soldiers they will reduce their morale to 0 and will be scattered immediately. Incite Panic is a fear effect and will have no effect if you lack a way to threaten your targets.
 
-<u>Inflame emotions:</u> Your will alters the emotions of weak characters, lifting their spirits or plunging them into despair. Spend a standard action to use inflame emotions, and with with this ability you can affect an individual person or a group of people with a lower level. If the target fails a wisdom roll against you, he becomes either animated (increases his attitude towards you by 1 level and receives an Advantage die on all his rolls) or desperate (receives a Disadvantage die on all his rolls, cannot be affected by presence rolls). Animated and desperate counteract each other.
+<u>Inflame emotions</u>: Your voice can alter the emotions of the weak-willed, lifting their spirits or plunging them into despair. You can take a standard action to use this ability, affecting an individual person or a group. If the target fails a wisdom roll against you reinforce a particular emotion of your choice for the remainder of encounter or until you suffer a permanent injury. This ability can also be used to calm characters affected by a powerful emotion, restoring them to their previous state (if this is provoked by another character you must succeed in a presence roll against them). The emotions you can reinforce are the following:
+
+- **Fear:** The creature begins to feel even more afraid, increasing its fear level by one step (shaken to frightened, frightened to panicked, panicked to paralyzed). Fear cancels and is cancelled by Bravery.
+- **Courage:** The creature feels a sudden surge of bravery, giving it strength to keep fighting. A creature affected by this ability will lose all status effects and reduce the effect of all permanent injuries by one step. This ability will only suppress permanent injuries instead of healing them, and they will go back to their original stage if the character suffers another permanent injury. Bravery cancels and is cancelled by fear.
+- **Wrath:** The creature immediately becomes enraged, increasing FUE and CON by 1 but it must always attack the nearest creature. Wrath cancels and is canceled by Sleep.
+- **Despair:** The creature begins to feel unsure of itself, becoming Despaired. Despair cancels and is cancelled by wrath.
 
 ## Rank V
 
-You roll an additional challenge die on defensive Charisma rolls.
+<u>Inspire legend:</u> Inspired characters are able to reach the power of legendary heroes. When using inspire heroism the affected character will increase two of his stats by 1 and will also get an additional use of indomitable. Once per combat when you are at half of your HP you will receive a sudden surge of inspiration to continue fighting, immediately gaining the effects of Inspire legend and recovering all the uses of Inspiration and Indomitable.
 
-<u>Inspire legend:</u> When using Inspire Heroism, the affected target temporarily increases one of their stats by 1 and gains one use of the Untamed ability (if you already have it, you become immune to mental and morale effects).
-
-<u>Master tactician:</u> Your Lead Combatants skill now allows you to have two tactics at once, plus you can make your allies change tactics as a move action without needing to reactivate the skill.
-
-
-
+<u>Master tactician:</u> You are able to direct your allies to combine different tactics to achieve victory. When using the ability tactician you can have up to two different tactics active, which will affect a number of allies of your choice (for example, two allies could be affected by defensive line while 4 cold be affected by expert flankers). However, you cannot affect the same ally with two different tactics. 

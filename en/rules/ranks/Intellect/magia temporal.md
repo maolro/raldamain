@@ -1,5 +1,4 @@
 ---
-title: Temporal magic
 main: Rangos
 sub: Magia arcana
 ---

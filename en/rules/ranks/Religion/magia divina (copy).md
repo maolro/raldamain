@@ -1,5 +1,4 @@
 ---
-title: Divine magic
 main: Ranks
 sub: Religion
 ---
