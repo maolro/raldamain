@@ -1,5 +1,4 @@
 ---
-title: Metal magic
 main: Rangos
 sub: Magia elemental
 ---
