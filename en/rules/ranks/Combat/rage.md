@@ -1,7 +1,6 @@
 ---
 title: Rage
-main: Ranks
-sub: Combat
+category: Combat
 ---
 
 ## Rank I

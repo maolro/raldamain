@@ -1,7 +1,6 @@
 ---
 title: Slashing blades
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 ## Rank I

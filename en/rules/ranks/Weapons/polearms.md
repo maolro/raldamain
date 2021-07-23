@@ -1,7 +1,6 @@
 ---
 title: Polearms
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 # Ranks

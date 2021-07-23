@@ -1,7 +1,6 @@
 ---
 title: Chains
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 ## Range I

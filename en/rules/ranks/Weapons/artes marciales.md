@@ -1,7 +1,6 @@
 ---
 title: Natural attacks
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 ## Range I

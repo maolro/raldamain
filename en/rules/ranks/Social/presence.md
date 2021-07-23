@@ -1,7 +1,6 @@
 ---
 title: Presence
-main: Ranks
-sub: Social
+category: Social
 ---
 
 ## Rank I
