@@ -1,7 +1,6 @@
 ---
 title: Fire magic
-main: Ranks
-sub: Magia elemental
+category: Elemental magic
 ---
 
 ## Rank I

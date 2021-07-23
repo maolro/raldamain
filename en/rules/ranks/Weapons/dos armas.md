@@ -1,7 +1,6 @@
 ---
 title: Two-weapon fighting
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 ## Range I

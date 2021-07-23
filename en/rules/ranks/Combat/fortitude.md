@@ -1,7 +1,6 @@
 ---
 title: Fortitude
-main: Ranks
-sub: Combat
+category: Combat
 ---
 
 ## Rank I

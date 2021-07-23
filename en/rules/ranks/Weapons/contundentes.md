@@ -1,7 +1,6 @@
 ---
 title: Blunt
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 ## Rank I

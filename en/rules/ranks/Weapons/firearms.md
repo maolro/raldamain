@@ -1,7 +1,6 @@
 ---
 title: Firearms
-main: Ranks
-sub: Armas
+category: Weapons
 ---
 
 ## Rank I

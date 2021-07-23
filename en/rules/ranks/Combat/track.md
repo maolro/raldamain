@@ -1,7 +1,6 @@
 ---
 title: Track
-main: Ranks
-sub: Wisdom
+category: Combat
 ---
 
 ## Rank I
