@@ -1,7 +1,6 @@
 ---
 title: Verdant bloodline
-main: Ranks
-sub: Bloodlines
+category: Bloodlines
 ---
 
 ## Rank I

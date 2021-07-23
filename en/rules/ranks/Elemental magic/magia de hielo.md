@@ -1,6 +1,6 @@
 ---
 title: Ice magic
-main: Rangos
+main: Ranks
 sub: Magia elemental
 ---
 

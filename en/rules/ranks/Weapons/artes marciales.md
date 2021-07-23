@@ -1,6 +1,6 @@
 ---
 title: Natural attacks
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

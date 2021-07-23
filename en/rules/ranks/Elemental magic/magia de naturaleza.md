@@ -1,6 +1,6 @@
 ---
 title: Nature magic
-main: Rangos
+main: Ranks
 sub: Magia elemental
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Firearms
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

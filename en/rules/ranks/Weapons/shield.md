@@ -1,6 +1,6 @@
 ---
 title: Shield
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Air magic
-main: Rangos
+main: Ranks
 sub: Magia elemental
 ---
 ## Rank I 

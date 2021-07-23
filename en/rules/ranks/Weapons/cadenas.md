@@ -1,6 +1,6 @@
 ---
 title: Chains
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

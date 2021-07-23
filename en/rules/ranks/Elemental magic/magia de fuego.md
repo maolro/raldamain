@@ -1,6 +1,6 @@
 ---
 title: Fire magic
-main: Rangos
+main: Ranks
 sub: Magia elemental
 ---
 

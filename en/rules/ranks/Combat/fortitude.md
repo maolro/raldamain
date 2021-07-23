@@ -1,7 +1,7 @@
 ---
 title: Fortitude
-main: Rangos
-sub: Combate
+main: Ranks
+sub: Combat
 ---
 
 ## Rank I
