@@ -1,8 +1,3 @@
----
-main: Rangos
-sub: Religion
----
-
 ## Rank I
 
 <u>Warrior of the faith:</u> You are blessed by your god in battle. Add one Boost die to attack rolls against enemies of your faith and +1 defense against physical and magical attacks. This ability does not count as magic for the purposes of Dispel Magic.

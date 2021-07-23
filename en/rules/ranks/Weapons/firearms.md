@@ -46,7 +46,7 @@ Increases your critical hit chance to 18-20.
 
 # Weapons
 
-A base firearm deals 2d6 piercing damage, has an average range of 90 feet, and takes a standard action to reload. This weapon is made for campaigns set in the renaissance era, but is also suitable for more modern campaigns with appropriate upgrades. A base firearm can be modified with the following characteristics to give rise to all kinds of related weapons as long as the characteristics chosen are not incongruous.
+A base firearm deals 2d6 piercing damage, has an average range of 90 feet, and takes a standard action to reload. This weapon is made for campaigns set in the renaissance era, but is also suitable for more modern campaigns with appropriate upgrades. A base firearm can be modified with the following traits to give rise to all kinds of related weapons as long as the characteristics chosen are not incongruous.
 
 - **Handgun**: The weapon can be used one-handed, reducing its base damage to 2d4 and its distance by 30 feet in exchange for greater ease of use. Handguns require only one move action to reload and can be used in two-weapon combat.
 - **Chamber**: The weapon has a chamber with which it can hold multiple bullets. The chamber allows the weapon to fire 6 shots before it must be reloaded. A chambered weapon is typical of campaigns set in the industrial era or the old west. 

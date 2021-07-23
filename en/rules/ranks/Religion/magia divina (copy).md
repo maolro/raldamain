@@ -1,8 +1,3 @@
----
-main: Ranks
-sub: Religion
----
-
 # Ranks
 
 ## Rank I
