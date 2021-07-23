@@ -9,13 +9,13 @@ Add your rank to all attack and defense rolls made with blunt weapons.
 
 <u>Power Attack</u>: You are able to trade accuracy for greater attack strength on your attacks. This ability allows you to declare an attack as a Power Attack, which will grant you a -2 penalty on attack rolls in exchange for inflicting +2 base damage and pushing 5 feet on hit. At rank IV you can increase the penalty by -2 to inflict 2 additional points of damage and push 5 additional feet. 
 
-## Range II
+## Rank II
 
 <u>Stunning blow:</u> Whenever you successfully hit with an attack you can force your target to roll CON against your attack. If you succeed they will immediately be stunned. This ability can only be used once per round and if you use it in a Power attack your target will become staggered for a round even if it succeeds in its CON save (creatures with the plating ability are immune to this effect).
 
 <u>Swinging mace:</u> You can spend a full turn action to attack all creatures within a 15-foot arc. Your cleave will stop immediately if a creature blocking with a shield succeeds in its defensive roll.
 
-## Range III
+## Rank III
 
 Increase your critical threshold to 19-20.
 
@@ -23,19 +23,19 @@ Increase your critical threshold to 19-20.
 
 <u>Mighty charge:</u> Whenever you hit a target with a charge it will automatically be pushed back 10 feet and you can do a free trip maneuver against it. You can do power attacks without penalties after doing a charge.
 
-## Range IV 
+## Rank IV 
 
 <u>Shield Breaker</u>: Your powerful attacks are capable of weakening and even shattering shields. If a creature with a Shield succeeds in parrying a Power Attack it will reduce its defensive bonus by 1. If the shield's defensive bonus reaches 0 it will be destroyed and cannot be used to protect you from attacks. 
 
 <u>Shatter ground:</u> Using Swinging Mace now costs you a standard action. As a full turn action you can strike the ground with the force of your weapon, turning the ground within 10 feet of the impact into difficult terrain. All creatures in that area must succeed in a DEX roll against your attack or immediately fall prone and become staggered until your next round (creatures with plating are immune to this effect).
 
-## Range V 
+## Rank V 
 
 Increase your critical threshold to 18-20.
 
 <u>Ruthless Attack:</u> Once a turn you can perform an additional attack with your weapon as a bonus action against a target that is stunned or unconscious. The permanent wounds made by this attack are of a higher level than you would normally inflict.
 
-<u>Knockout blow</u>: When hitting an enemy with a powerful Attack, spend a number of advantages equal to 1+ the DEF of their armor to make them fall unconscious instantly. The Resist Death skill is applied against this skill, protecting your target from falling unconscious.
+<u>Knockout blow</u>: Whenever you damage an unarmored enemy with power attack they must succeed in a CON check against your attack or they will immediately fall unconscious. If you aim at your target's head before attacking on a hit they will fall unconscious without a save. Resist death will still apply against this ability, protecting your target from falling unconscious.
 
 # Weapons
 

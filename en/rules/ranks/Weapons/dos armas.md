@@ -3,47 +3,47 @@ title: Two-weapon fighting
 category: Weapons
 ---
 
-## Range I
+## Rank I
 
-<u>Skill with two weapons:</u> As a bonus action once a turn you can make an attack with your secondary weapon with a penalty of one skill die. This penalty disappears when you reach rank III.
+<u>Two-weapon proficiency:</u> You are capable of making attacks with your offhand weapon as a bonus action. This attack can only be used once per round and it will gain a -2 penalty in attack rolls. At rank III you will have no penalty attacking with your offhand weapon.
 
-<Combat style: You get a number of attributes depending on the weapon you carry in your secondary hand. Every time you raise your rank with two weapons you receive the attributes listed in the skill list.
+<u>Combat style:</u> You gain a number of additional attributes depending on your offhand weapon. Every time you raise your rank in two-weapon fighting you receive a number of attributes according to its type, as is specified below:
 
 ## Slashing blades
 
-### Range I
+### Rank I
 
-<Double stop: You can use stop once in addition to your turn with your secondary weapon (you still get the penalty). Also, the ability to cancel a success can be used once in addition to the turn (a third time at rank III).
+<u>Dual block</u>: Once per round you can do an additional parry with your offhand to block a particularly dangerous attack. This ability lets you do an additional parry against an attack which you have blocked unsuccessfully (the penalty from your offhand weapon will still apply). This ability can be used an additional time per round at rank III.
 
-<When hitting the same target with your two weapons in the same turn, your second attack deals +2 base damage. This skill can only be used once per turn.
+<u>Two-weapon rend:</u> Your second attack is even stronger against vulnerable targets. Whenever you hit the same target with both weapons in the same round your offhand weapon will deal +1d6 damage. 
 
 ### Range II
 
-<When you use the Big Cut action you can also attack with your secondary weapon. You will shoot one less green on the cut but you will affect a 5 foot radius centered on you. This attack can only be stopped if a shielded character succeeds in his defense twice.
+<u>Circular cleave</u>: When you use Great cleave you can also attack with your secondary weapon. A cleave done this way will add a -2 penalty to attack rolls but you will be able to target all creatures in a 5 foot radius. Distinctly from cleave, if a character successfully blocks with a shield it will not stop this effect, but you will be prevented from targeting creatures adjacent to it with this effect.
 
-<You can spend 2 advantages to disarm an opponent without the need to be on locked swords. Your opponent cannot use Stop to defend himself from your secondary weapon when he has the locked sword.
+<u>Greater disarm:</u> Instead of attacking you can use your offhand weapon to do a disarm maneuver as a bonus action against a creature which attempts to parry your attack. Also, creatures with a trapped blade are unable to parry attacks made with your offhand weapon.
 
-### Range III
+### Rank III
 
-<You do +2 base damage using steel whirlwind and deal 1 additional automatic damage to each shield you hit with this ability. When you spend one movement action on slice in sequence you do an additional attack with your secondary weapon (1/turn).
+<u>Death by a thousand cuts</u>: Whenever you use Steel whirlwind you will gain an additional bonus to damage equal to the base damage of your offhand damage and you will increase the level of all permanent injuries you inflict by one step. You are also able to attack with your offhand weapon an additional time per turn.
 
 ## Piercing Blades
 
 ### Range I
 
-<Divert Attacks: Your secondary weapon can divert attacks that break through your defenses. Once a turn you can make a second stop against an attack that successfully hits you using your secondary weapon. You cannot cancel successes with this skill.
+<u>Dual block</u>: Once per round you can do an additional parry with your offhand to block a particularly dangerous attack. This ability lets you do an additional parry against an attack which you have blocked unsuccessfully (the penalty from your offhand weapon will still apply). This ability can be used an additional time per round at rank III.
 
-<Sneak Fighting: You apply the precise attack damage to your second weapon whenever you roll a dice for an attack advantage with it. This skill is also applied against dummy enemies. You lose the benefits of Stealth Fighting if you are unarmed from your main weapon.
+<u>Dirty fighting:</u> Your offhand weapon will add 1d6 to attack rolls and gain sneak attack modifiers whenever it strikes a target damaged by your main weapon. You will not gain benefits from this ability if you are disarmed from your main weapon or your target has greater uncanny dodge. 
 
 ### Rank II
 
-<Catching a weapon: using your two weapons you can catch swords bigger than yours. You can use the Clash of Swords skill by spending 2 advantages (see Heavy Edges), with which you can disarm heavy edge weapons. You can't fake if you have your weapon locked unless you have the Dummy skill
+<u>Trap weapon:</u> Using your two weapons you are capable of catching swords bigger than your own. This ability lets you spend your main and offhand attack to attempt to trap your enemy's weapon, as is specified in slashing blades. If you have trapped your target's blade you will not be able to feint unless you have the ability greater feint.
 
-<Targeted attacks: You can make targeted attacks with your secondary weapon as if it were your primary weapon. You are not penalized for making a targeted attack with your secondary weapon if your target is faked.
+<u>Targeted attacks</u>: All penalties gained by targeting vulnerable parts of your target's body will be reduced by 2 when attacking with your offhand weapon. Instead of attacking you can use your offhand weapon to feint a target.
 
 ### Range III
 
-<As a standard action, make an attack with your two weapons on a specific point of your opponent's body. When using this skill you can't make attacks with your secondary weapon or use fast attacks, but you will increase the base damage of your attack by 2. If you use Slash against an enemy who is surprised you can spend 2 advantages to use the Vital Strike skill (normally it costs 4 advantages).
+<u>Deadly slice</u>: As a standard action you can make an attack with both weapons on a specific point of your opponent's body. Using this ability will require you to spend one of your attacks with your offhand weapon in exchange of increasing your base damage by a value equal to your offhand weapon's base damage and increasing the level of all permanent injuries you inflict by one step.  You can use your offhand weapon to attack or do maneuvers an additional time per round
 
 ## Chains
 
