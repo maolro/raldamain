@@ -10,7 +10,7 @@ sub: Armas
 
 <Combat style: You get a number of attributes depending on the weapon you carry in your secondary hand. Every time you raise your rank with two weapons you receive the attributes listed in the skill list.
 
-## Heavy Edges
+## Slashing blades
 
 ### Range I
 
@@ -28,7 +28,7 @@ sub: Armas
 
 <You do +2 base damage using steel whirlwind and deal 1 additional automatic damage to each shield you hit with this ability. When you spend one movement action on slice in sequence you do an additional attack with your secondary weapon (1/turn).
 
-## Light Blades
+## Piercing Blades
 
 ### Range I
 
@@ -66,32 +66,18 @@ sub: Armas
 
 ## Firearms
 
-### Range I
+### Rank I
 
-<Weakening defenses: You can use your shot with the secondary weapon to expose the enemy to other shots. When hitting an enemy with a shot you can choose not to hurt them so that they suffer a bullet trick. Your target's resistances are applied for this attack, but you can use them to give additional effects related to the bullet trick. 
+<u>Weaken defenses:</u> You can shoot with your secondary weapon to expose your target to other attacks. You gain advantage in bullet tricks made with your secondary weapon and whenever you hit an enemy with it all subsequent attacks you make against the same target will receive advantage as well.
 
-<You are able to shoot point-blank with your secondary weapon to protect you from attacks. By using this skill you will receive one additional Difficulty die on all your attack shots, but you will be able to roll your Firearms dice defensively to protect you from melee and ranged attacks. Using cover fire consumes one additional bullet per turn.
+<u>Cover Shots:</u> You are able to create cover fire with your secondary weapon to protect yourself from attacks. When using this ability you will receive disadvantage on all your attacks made with your secondary weapon, but you will be able to use your firearms to protect yourself from attacks, adding your attack bonus to defensive rolls. Using this ability will consume an additional bullet per turn.
 
-### Range II
+### Rank II
 
-<u>Lead rain:</u> No penalties when using point-blank shooting. As a full turn action you can make an area attack against all creatures in a 30 foot cone or a 15 foot radius. You will roll one Difficulty die as a penalty in the area attack and spend the charges of both guns.
+<u>Rain of lead:</u> You can fire multiple shots at once to attack a large group of enemies. This ability allows you to concentrate numerous attacks into one, increasing the area of effect by 5 feet and the base damage by 2 for each attack used in this manner. Attacks made with lead rain will count as area attacks, dealing half damage against enemies that manage to defend themselves successfully against your attack.
 
-<Predicting movement: You have a supernatural instinct for danger. You receive the Amazing Dodge skill (Improved Amazing Dodge if you already have it) and can spend 2 Disadvantages generated to make an attack with your secondary weapon as a reaction. Deadly aim is applied for this attack.
+<u>Predict movement</u>: You have a supernatural instinct for danger. You receive the uncanny dodge ability (improved uncanny dodge if you already have it) and upon receiving a surprise attack you can make an attack of opportunity with your secondary weapon as a reaction. Your firearm attributes will also apply to this attack.
 
-### Range III
+### Rank III
 
-<When you attack a creature that has suffered damage at some point during the round you add +2 base damage to your firearm attacks. Reloading your secondary weapon costs you one move action and you don't need to have a free hand for it. 
-
-## Shields
-
-### Range I
-
-<u>Double defense:</u> 
-
-<u>Defensive strength:</u> 
-
-### Range II
-
-<u>Steel wall</u>:
-
-### Range III
+<u>Master gunslinger:</u> When attacking a creature that has suffered damage at some point in the round you will increase your base damage by 1d6. Reloading your secondary weapon costs you a move action and you do not need to have a free hand to do so. 
