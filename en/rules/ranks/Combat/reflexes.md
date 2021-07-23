@@ -1,7 +1,7 @@
 ---
 title: Reflexes
-main: Rangos
-sub: Combate
+main: Ranks
+sub: Combat
 ---
 
 ## Range I

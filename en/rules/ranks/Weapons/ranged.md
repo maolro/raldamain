@@ -1,6 +1,6 @@
 ---
 title: Ranged
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Two-weapon fighting
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

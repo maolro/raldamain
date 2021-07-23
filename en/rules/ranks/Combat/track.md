@@ -1,7 +1,7 @@
 ---
 title: Track
-main: Rangos
-sub: Sabiduria
+main: Ranks
+sub: Wisdom
 ---
 
 ## Rank I

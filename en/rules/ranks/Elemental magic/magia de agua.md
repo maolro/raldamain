@@ -1,6 +1,6 @@
 ---
 title: Water magic
-main: Rangos
+main: Ranks
 sub: Magia elemental
 ---
 

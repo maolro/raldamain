@@ -1,6 +1,6 @@
 ---
 title: Earth magic
-main: Rangos
+main: Ranks
 sub: Magia elemental
 ---
 

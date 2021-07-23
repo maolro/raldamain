@@ -1,6 +1,6 @@
 ---
 title: Blunt
-main: Rangos
+main: Ranks
 sub: Armas
 ---
 

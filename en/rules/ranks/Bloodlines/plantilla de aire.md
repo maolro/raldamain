@@ -1,7 +1,6 @@
 ---
 title: Air bloodline
-main: Ranks
-sub: Bloodlines
+category: Bloodlines
 ---
 
 ## Rank I
