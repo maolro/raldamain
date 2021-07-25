@@ -20,7 +20,7 @@ Add your rank to all attack and defense rolls made with blunt weapons.
 
 Increase your critical threshold to 19-20.
 
-<u>Sundering strike:</u> Hitting an armored target with a Power Attack will reduce its DEF by 2. This reduction can be removed by repairing the armor, and if the armor's defense is reduced to 2 or less it becomes unusable. This ability allows you to make a Sunder maneuver against your target's armor as an attack, for which you use your weapon's bonus against your target's heroism and you will reduce his DEF by 2 if you succeed.
+<u>Sundering strike:</u> Hitting an armored target with a Power Attack will reduce its DEF by 2. This reduction can be removed by repairing the armor, and if the armor's defense is reduced to 2 or less it becomes unusable. This ability allows you to make a Sunder maneuver against your target's armor as an attack, for which you use your weapon's bonus against your target's heroism  and on success you will reduce its DEF by 2.
 
 <u>Mighty charge:</u> Whenever you hit a target with a charge it will automatically be pushed back 10 feet and you can do a free trip maneuver against it. You can do power attacks without penalties after doing a charge.
 
