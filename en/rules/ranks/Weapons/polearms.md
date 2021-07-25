@@ -12,7 +12,7 @@ Add your rank to all attack and defense rolls made with polearm weapons.
 
 <u>Protect allies:</u> The long reach of your weapon helps you protect nearby allies from attacks. Whenever an ally within reach of your weapon is attacked as a reaction you can add your polearm rank to all defensive rolls that ally makes. While you can protect nearby allies with your weapon, its long reach poses a hindrance when defending yourself against adjacent enemies which will gain advantage against you if you parry with a polearm weapon.
 
-<u>Brace:</u> You can spend a move action to brace yourself against an upcoming charge. If you have braced your weapon you can do an opportunity attack against a creature that passes through a square in reach of your weapon at any moment of the round. This attack will deal +1d6 damage and on a hit the target must stop its movement immediately. 
+<u>Brace:</u> You can spend a move action to brace yourself against an upcoming charge. If you have braced your weapon you can do an opportunity attack against a creature that passes through a square in reach of your weapon at any moment of the round. This attack will deal +1d6 damage and on a hit the target must stop its movement immediately. The bonuses from this ability will cease if you lose focus.
 
 ## Rank II
 
