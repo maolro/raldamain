@@ -1,7 +1,6 @@
 ---
 title: Track
-main: Rangos
-sub: Sabiduria
+category: Combat
 ---
 
 ## Rank I

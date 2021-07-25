@@ -1,7 +1,6 @@
 ---
 title: Ranged
-main: Rangos
-sub: Armas
+category: Weapons
 ---
 
 # Ranks

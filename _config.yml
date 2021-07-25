@@ -8,6 +8,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       category: ""
+      lang: "es"
   -
     scope:
       path: "en"

@@ -1,7 +1,6 @@
 ---
 title: Piercing blades
-main: Rangos
-sub: Armas
+category: Weapons
 ---
 
 ## Rank I

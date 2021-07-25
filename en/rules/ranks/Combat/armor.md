@@ -1,7 +1,6 @@
 ---
 title: Armor proficiency
-main: Rangos
-sub: Combat
+category: Combat
 ---
 
 ## Rank I
