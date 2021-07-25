@@ -1,7 +1,6 @@
 ---
 title: Nature magic
-main: Rangos
-sub: Magia elemental
+category: Elemental magic
 ---
 
 ## Rank I

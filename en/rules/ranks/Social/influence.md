@@ -1,7 +1,6 @@
 ---
 title: Influence
-main: Ranks
-sub: Social
+category: Social
 ---
 
 ## Rank I

@@ -1,7 +1,6 @@
 ---
 title: Polearms
-main: Rangos
-sub: Armas
+category: Weapons
 ---
 
 # Ranks
