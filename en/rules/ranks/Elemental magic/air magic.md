@@ -12,7 +12,7 @@ Add your rank to all attack and defense rolls made with air magic.
 
 ## Rank II
 
-<u>Water wall:</u> As a standard action you can form a wall of raging winds 15 x rank feet long and 5 x rank feet high. The wall prevents projectiles from passing and a creature must spend a move action to attempt a heroism check against your elemental magic to pass through it (if it has equal or greater strength than your charisma it will not have to roll). The wall will remain until you lose concentration, and if you try to create an additional wall you will suffer 2 non-lethal damage each turn you keep both walls active. The wall will be destroyed if it affected by another elemental wind attack. A water wall can also be created as a reaction once per round if you are in an area with severe winds.
+<u>Air wall:</u> As a standard action you can form a wall of raging winds 15 x rank feet long and 5 x rank feet high. The wall prevents projectiles from passing and a creature must spend a move action to attempt a heroism check against your elemental magic to pass through it (if it has equal or greater strength than your charisma it will not have to roll). The wall will remain until you lose concentration, and if you try to create an additional wall you will suffer 2 non-lethal damage each turn you keep both walls active. The wall will be destroyed if it affected by another elemental wind attack. An air wall can also be created as a reaction once per round if you are in an area with severe winds.
 
 <u>Flurry of attacks:</u> Making elemental attacks now cost you a move action instead of a standard action. Additionally, if you manage to succesfully launch an enemy into the air with your first attack all subsequent attacks against them can push them more feet upwards without having to do a combat maneuver or slam them to the ground with greater force, making them take 1d6 additional fall damage and increasing the level of all permanent injuries by one step.
 
@@ -34,6 +34,6 @@ Increase your critical threshold to 19-20
 
 Increase your critical threshold to 18-20.
 
-<u>Control weather:</u> The heavens obey your call and will unleash their fury on your enemies. This ability lets you create or calm storms as a 10-minute ritual which must be cast in an outdoor area. Storms also empower your air magic abilities, letting you do an additional elemental magic attack per turn and increasing wind strength by 1. 
+<u>Control weather:</u> The heavens obey your call and will unleash their fury on your enemies. This ability lets you create or calm storms as a two-round ritual which must be cast in an outdoor area. Storms also empower your air magic abilities, letting you do an additional elemental magic attack per turn and increasing wind strength by 1. 
 
 <u>Hurricane:</u> As a full-round action you can summon a powerful hurricane that will sweep away everything in sight. This ability can only be used once per day and will only affect a 100-foot area with wind strength 5 or greater. The hurricane will destroy all weak structures and it will work as an elemental attack which will push your targets 2d6 x 5 feet in a direction of your choice on hit (this includes vertical directions).
