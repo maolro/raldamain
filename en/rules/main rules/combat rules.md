@@ -4,17 +4,17 @@ title: Combat rules
 
 The combat rules of the Raldamain system aim to speed up combat and favor strategy over luck. Combat is divided into units of time known as rounds in which creatures may take appropriate actions in the order dictated by initiative. 
 
-Actions are divided into three types: movement actions, standard actions and full turn actions.
+Actions are divided into three types: move actions, standard actions and full turn actions.
 
 ## Actions
 
 ### Standard action
 
-The standard action is the most important action of a turn, and can be used to attack or cast spells. You may not take more than one standard action per turn unless an ability allows you to do so, and you may spend a standard action to take an additional movement action. 
+The standard action is the most important action of a turn, and can be used to attack or cast spells. You may not take more than one standard action per turn unless an ability allows you to do so, and you may spend a standard action to take an additional movement action. To make an attack you must roll a d20 add the pertinent modifier to the result. If your attack roll is greater than your target's defense roll your attack will hit and deal a specific amount of damage or cause an effect to your target.
 
 Instead of spending your standard action on your turn you can save it for a future moment. If you spend a standard action this way you can use it as a reaction on any future moment of the round. If a saved action interrupts another action, the action you save will have priority unless the attacker has caught you by surprise or feints you. Saved actions are lost at the beginning of your next turn.
 
-### Movement action
+### Move action
 
 Move actions require less effort than a standard action. Initially you can only perform one move action per turn which can be used for one of the following options:
 
@@ -40,7 +40,7 @@ Reactions are all those actions you perform outside of your turn. Both defensive
 
 #### Defensive rolls
 
-Defensive shots represent how a character defend itself against an attack made against it. The defender must declare which method he uses to protect himself and will add the corresponding modifier to the defensive roll. If the defender's result is higher  that the attacker's result then the attack will miss, while if the attacker's result is higher then the attack will hit. 
+Defensive shots represent how a character defend itself against an attack made against it. The defender must declare which method he uses to protect himself and will add the corresponding modifier to a d20 roll. If the defender's result is higher  that the attacker's result then the attack will miss, while if the attacker's result is higher then the attack will hit. 
 
 A character can avoid attacks by dodging or parrying. A character that chooses to dodge will 
 
@@ -53,6 +53,10 @@ First, an attack of opportunity is provoked if a creature retreats from a confro
 An attack of opportunity can also be provoked if a creature saves its standard action to use it later. An attack saved in this way will have priority over the enemy, although the enemy will be able to defend normally. If a creature saving action is hit by a ranged attack or a surprise attack it will lose all its saved actions and the round will continue normally.
 
 ## Additional factors
+
+### Advantage and disadvantage
+
+Advantage and disadvantage represent a multitude of factors which benefit or difficult certain actions. If a creature has advantage in a roll it will add 1d6 to the result while if it has disadvantage it will substract 1d6 from it. Advantage from multiple sources will stack, adding multiple d6s to a single roll (the DM can still decide if advantage from certain sources won't stack).
 
 ### Cover
 

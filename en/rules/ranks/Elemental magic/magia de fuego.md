@@ -5,7 +5,7 @@ category: Elemental magic
 
 ## Rank I
 
-Add a casting die to all your elemental attacks. 
+Add your rank to all attack and defense rolls made with elemental earth magic.
 
 <u>Flame strike:</u> As a standard action you can attack a target with a searing flare. The flame deals 3+success fire damage and you can spend 2 generated perks to cause a [mild burn](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#quemada) (4 perks to cause a [medium burn](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#quemada)). All flammable objects in the area of effect of the flare will begin to burn, spreading at a rate of 5 feet per round until they are extinguished. A creature with no fire resistance passing through a flaming space will automatically suffer a minor burn. An uncontrolled fire may eventually result in a fire.
 
