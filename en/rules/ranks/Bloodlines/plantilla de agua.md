@@ -5,32 +5,32 @@ category: Bloodlines
 
 ## Rank I
 
-You gain resistance 1 to physical damage. 
+You gain resistance 2 to physical damage and you unlock ranks in water elemental magic
 
-<u>Water adaptation</u>: You receive resistance to cold damage equal to your water bloodline rank rank. You suffer no ill effects from extreme cold. Marine animals are not naturally hostile towards you.
+<u>Water adaptation</u>: You receive resistance to cold damage equal to your water bloodline rank. You will also suffer no ill effects from extreme cold and marine animals will not naturally hostile towards you.
 
-<u>Hydrokinesis:</u> You can shape small amounts of water to your will. You unlock ranks in Water elemental magic. As a bonus action usable once per turn you can manipulate a small amount of water or alter its states. You can affect water in the following ways:
+<u>Hydrokinesis:</u> You can shape small amounts of water to your will. As a bonus action usable once per turn you can manipulate a small amount of water or alter its current stsate. You can affect water in the following ways:
 
-- Evaporate a quantity of water with a maximum volume of one square foot. The water you evaporate must be adjacent to you. If you have ranks in Blood Magic you can create an amount of water of volume equal to one square foot by draining it from your surroundings.
-- Move 30 feet in any direction an amount of water of volume equal to one square foot. The water you manipulate will not harm or push.
+- Evaporate a quantity of water with a maximum volume of one square foot adjacent to you.
+- Move an amount of water of volume equal to one square foot in a direction of your choice. The water you manipulate will not harm or push.
 
 ## Rank II
 
-Increases your CON by 1.
+Increase your CON by 1.
 
-<u>Skilled Swimmer:</u> You receive a swim speed of 30 feet. Being underwater does not impair your vision and you automatically succeed on rolls to swim in roaring water (these will still reduce your speed). You suffer no non-lethal damage from swimming for an excessive amount of time.
+<u>Skilled Swimmer:</u> You receive a swim speed of 30 feet. Being underwater does not impair your vision and you automatically succeed on rolls to swim in strong currents (they will still impair your movement). You suffer no non-lethal damage from swimming for an excessive amount of time.
 
-<u>Water breathing</u>: Your lungs are better adapted to breathing underwater. You are able to hold your breath for a number of minutes equal to your rank, and cannot be drowned by water elemental magic.
+<u>Water breathing</u>: Your lungs are better adapted to breathing underwater. You are able to hold your breath for a number of minutes equal to your rank and you cannot be drowned by elemental waer magic
 
-<u>Hydraulic push:</u> As a bonus action you may suffer 1 non-lethal damage to infuse your attacks with your element. An infused attack will do +1 base damage and you may use combat maneuvers against creatures that exceed your strength, ignoring all non-magic resistances they have. If you have ranks in Cold Magic you can use the Channel Cold ability of Boreal Template.
+<u>Hydraulic push:</u> As a bonus action you can suffer 2 non-lethal damage to infuse your attacks with your element. An infused attack will deal +1 base damage and you will gain advantage in combat maneuvers. If you have ranks in Ice Magic you can make your natural attacks deal +2 cold damage and stagger your targets whenever you inflict a permanent injury.
 
 ## Rank III 
 
-You gain Resistance 2 to physical damage. 
+Increase your resistance to physical damage by 2.
 
-<u>Fluid form:</u> As a standard action you can surround yourself with a barrier of fluid waters, which protects you from physical and magical attacks. While this barrier is active all damage you suffer is reduced by 2 and a 10-foot area centered on you counts as difficult terrain. You may suffer 1 non-lethal damage to increase the strength of the currents, increasing the damage reduction by 1 for one turn and granting you an additional Disadvantage die on Elemental Parry rolls. To use this ability you must be in contact with 5 or more cubic feet of water and it cannot remain active for more than one minute at a time.
+<u>Fluid form:</u> As a standard action you can surround yourself with a barrier of fluid waters, protecting yourself from physical and magical attacks. While this barrier remains active all damage you suffer will be reduced by 2 and a 10-foot area centered on you becomes difficult terrain. You can suffer 2 non-lethal damage to increase the strength of the currents, increasing the damage reduction by 2 for one round and granting you advantage in defensive rolls. To use this ability you must be in contact with 5 or more cubic feet of water and it cannot remain active for more than one minute at a time.
 
-<u>Elemental connection:</u> Water is a source of life for your body. When you start your turn in contact with water or submerged in it you regain 1 Vitality. You will not be able to heal your HP in this way, but by taking a short rest in an area with a high presence of your element (rivers, lakes, seas or rain) you recover all your HP as if you were taking a long rest. If you use water in a First Aid throw you will not consume a use and you will heal 1 additional HP, and if you have 3 or more talent levels you can spend 4 perks to reduce the level of a permanent wound by 1 (this costs you 2 perks at talent level 5).
+<u>Elemental connection:</u> Water is a source of life for your body. When you start your turn in contact with water or submerged in it you regain 1 Vitality. You will not be able to heal your HP in this way, but by taking a short rest in an area with a high presence of your element (rivers, lakes, seas or rain) you recover all your HP as if you were taking a long rest. If you use water in a First Aid check you will not consume a use of this ability and you will heal 1 additional HP.
 
 ## Rank IV 
 
