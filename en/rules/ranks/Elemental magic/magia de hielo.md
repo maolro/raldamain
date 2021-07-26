@@ -5,11 +5,11 @@ category: Elemental magic
 
 ## Rank I
 
-Add one looseness die to all your elemental attacks.
+Add your rank to all attack and defense rolls made with elemental earth magic.
 
-<u>Lower Temperatures:</u> As a standard action you can lower the temperatures of a 30-foot radius, increasing the level of [cold](https://raldamain.com/rules/Reglas%20principales/terreno#%C3%A1rtico) by one step (this can only be used once per environment). If you are in an environment with a cold temperature or below you are able to freeze a volume of water measuring a number of cubic feet equal to 10 x your elemental magic rank as a standard action.
+<u>Lower Temperatures:</u> As a standard action you can lower the temperatures of a 30-foot radius, increasing the level of cold by one step (this can only be used once per environment). If you are in an environment with a cold temperature or below you are capable of freezing a volume of water measuring 10 x rank cubic feet as a standard action.
 
-<u>Ray of frost:</u> You can use a standard action to attack a target within 60 feet with an icy ray. An icy bolt will do 2+successes cold damage and you can spend 2 perks to [slow](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) the enemy for 1 turn (4 perks to [paralyze](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#paralizada)). The cold damage you cause will deal vitality damage on hit and if you succeed in reducing a target's vitality to 0 with an elemental attack it will be frozen. A frozen creature will die of hypothermia after a number of rounds equal to its CON + 1 if it is not rescued within that amount of time unless you choose to prevent it. You must be in a cold environment in order to employ this ability.
+<u>Ray of frost:</u> You can use a standard action to attack a target within 60 feet with an icy ray. An ray of frost will deal 1d6 cold damage and on hit your target will become staggered if it has no protections against cold (if you score a critical hit it will become paralyzed). If you manage to deal hit point damage with a ray of frost attack your target must succeed in a CON check or become frozen. A frozen creature will die of hypothermia after a number of rounds equal to its CON + 1 unless you choose to prevent it (a frozen creature can be freed if it succeeds in a STR check or an ally exposes it to a source of heat). You must be in a cold environment in order to employ this ability.
 
 <u>Elemental overflow:</u> You can choose to take non-lethal damage to increase the strength of your attacks. This ability allows you to make one additional elemental attack per turn, increase the splash radius of an attack by 10 feet, or turn it into an area attack that affects all creatures in a 20-foot cone. This ability can also be used to be able to freeze water as a move action (bonus action at rank III).
 
