@@ -78,6 +78,10 @@ A creature has concealment when it is difficult to perceive because of fog, dark
 
 Concealment penalties can be countered by spending a move action to aim, which will reduce the amount of concealment dice you gain by 1. Creatures that carry bright light or attract attention will not receive any advantage from concealment.
 
+### Difficult terrain
+
+Difficult terrain is the name given to certain hazardous areas that significantly hamper movement. Whenever a creature passes through an area affected by difficult terrain it must expend 10 feet of movement to pass through it (5 feet if it has 3 talent levels in acrobatics and none if it has 5 talent levels). If a creature charges through an area affected by difficult terrain it must succeed in an Acrobatics check or fall prone. Creatures in difficult terrain will also have disadvantage in all dexterity checks to avoid attacks.
+
 ### Joint Attack
 
 A group of low level creatures can make a joint attack against a more powerful enemy, joining forces to defeat it. The attack modifier and damage dice will correspond to the highest of such values among all attacking creatures and both will increase by 2 for every participating creature beyond the first.
