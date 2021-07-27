@@ -5,7 +5,7 @@ category: Bloodlines
 
 ## Rank I 
 
-You gain Resistance 1 to physical damage. 
+You gain resistance 2 to physical damage and unlock ranks in elemental fire magic
 
 <u>Heat Adaptation:</u> You are immune to extreme heat and high temperatures. You have fire resistance equal to your Fire Template rank.
 
@@ -34,7 +34,7 @@ You gain Resistance 2 to physical damage.
 
 ## Rank IV
 
-Increases your CHA by 1.
+Increases your CHA by 1. You can replace the attack bonus you have in a specific weapon with your elemental magic bonus.
 
 <u>Propulsion:</u> You are able to propel yourself into the air with your fire magic. As a standard action, fly 60 feet in any direction. You can use this ability as a move action if you choose to suffer 2 non-lethal damage.
 
