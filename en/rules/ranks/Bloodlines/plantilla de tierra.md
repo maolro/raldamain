@@ -7,26 +7,26 @@ category: Bloodlines
 
 You gain resistance 2 to physical damage and unlock ranks in elemental earth magic
 
-<u>Landbound:</u> You develop a stronghold with a region, acting as its guardian in case of danger. A region is a territory up to 20 km in area, equivalent to a hex on the Raldamain map. As long as you remain in contact with the land of your region you have regeneration 1 and gain advantage  (it also counts as [favored terrain](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) for the purposes of Track). To declare a territory as your region you must spend a day exploring and meditating on it. You can only have one region linked in this way.
+<u>Landbound:</u> You develop a stong bond with a region, acting as its guardian if it is ever in danger. A region is a territory up to 20 km in area covered mainly by land.  As long as you remain in contact with land of your region you regenerate 1 vitality every round and gain advantage in all rolls (your bonded region also counts as favored terrain for the purposes of Track, but advantage from both effects will not stack). To declare a territory as your region you must spend a day exploring and meditating on it. You can only have one region linked in this way.
 
-<u>Geokinesis:</u> Your elemental heritage allows you to control the earth. You unlock the ranks of [earth elemental magic](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html). As a bonus action you can manipulate a small amount of earth or sense earth's characteristics. You can only use one of these effects per turn.
+<u>Geokinesis:</u> Your elemental heritage allows you to control the earth. As a bonus action you can manipulate a small amount of earth or sense the earth's characteristics. You can only use one of these effects per turn.
 
-- Move 30 feet in any direction an amount of earth equal in volume to one square foot. The earth you manipulate will not hurt or push. 
+- Move 1 square foot of earthen material 30 feet in any direction. The earth you manipulate will not hurt or push. 
 - Make a complete analysis of all earthen and metallic objects in a 10 square foot area, detecting secrets and anomalies in them.
 
 ## Rank II
 
 Increase your CON by 1.
 
-<u>Earth Fists:</u> As a bonus action, you may suffer 2 nonlethal damage to infuse your natural attacks with earth for one turn. Infused attacks do +2 base damage and will gain the Stunning fist and Punishing kick abilities. If you have ranks in Martial Arts, you increase the level of permanent wounds you inflict by 1. You do not suffer non-lethal damage with this ability if you are in your linked region.
+<u>Earth Fists:</u> As a bonus action, you can suffer 2 nonlethal damage to infuse your natural attacks with earth for one turn. Infused attacks do +2 base damage and will gain the Stunning fist and Punishing kick abilities. If you have ranks in Martial Arts, you increase the level of permanent wounds you inflict by 1. You do not suffer non-lethal damage with this ability if you are in your bonded region.
 
-<u>Earthwalk:</u> You can shape the earth to move across it. You ignore difficult terrain and have a digging and climbing speed of 15 feet.
+<u>Earthwalk:</u> You can shape the earth to move across it. You ignore difficult terrain and increase your burrow and climb speeds by 15 feet.
 
-<u>Georradar:</u> You gain blind sight within 30 feet, but you can only detect creatures that are in contact with the earth. You roll an additional hit die on intent-spotting rolls against creatures that are touching the ground. You can spend a standard action to increase the radius of your georadar by 15 feet.
+<u>Georradar:</u> You gain blind sight within 30 feet, allowing you to detect all creatures that are in contact with the earth. You gain advantage on insight checks against creatures that are touching the ground. You can spend a standard action to increase the radius of your georadar by 15 feet.
 
 ## Rank III 
 
-You gain Resistance 2 to physical damage. 
+Increase your resistance to physical damage by 1.
 
 <u>Stone armor:</u> As a standard action, you surround yourself with solid armor made of stones. That armor increases your DEF by 2 and grants you a number of temporary health points equal to 1+your ascendancy rank. This armor disappears when your temporary health points are reduced to 0 or you lose concentration.
 

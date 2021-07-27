@@ -22,13 +22,13 @@ Increases your DEX by 1.
 
 <u>Hawk's Eye:</u> You suffer no penalties to your vision from fog and storms. You may suffer 2 non-lethal damage to infuse one of your ranged attacks with wind, which will let it ignore penalties from storms and powerful winds. If there are no winds or they act in your favor an infused attack will deal +2 base damage. A creature with wind magic cannot use Elemental defense to protect itself from an infused attack.
 
-<u>Wind step:</u> You can take an additional move action per turn. Your jump also speeds increase, letiting you jump an additional 10 feet horizontally and 5 feet vertically. 
+<u>Wind step:</u> You can take an additional move action per turn. Your jump also speeds increase, letting you jump an additional 10 feet horizontally and 5 feet vertically. 
 
 <u>Cushion of air:</u> The power of winds protects you from deadly falls. If you fall from a great height you receive a glide speed equal to 30 feet, allowing you to move horizontally in a fall. You can spend a move action to slow your fall, causing you to fall only 60 feet for one round. You will not suffer fall damage upon impact with the ground if the wind strength is 2 or more or by spending a standard action.
 
 ## Rank III 
 
-You gain Resistance 2 to physical damage. 
+Increase your resistance to physical damage by 1.
 
 <u>Enveloping winds:</u> As a standard action you can surround yourself with a barrier of raging winds. This ability makes a 10-foot area centerd on you become difficult terrain and any creature who enters it must roll STR against your elemental magic or will bepushed back 5 feet. You also receive resistance to projectiles equal to your bloodline rank while this ability is active (this resistance will not apply against projectiles of large or greatersize). You can take 2 non-lethal damage to increase the radius of Protective Winds by 10 feet for one round or reduce the speeds of all creatures entering the area by 10 feet. You cannot have this ability active for more than one minute at a time and it disappears when you lose concentration. 
 
