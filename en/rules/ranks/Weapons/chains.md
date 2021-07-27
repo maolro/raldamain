@@ -1,7 +1,6 @@
 ---
 title: Chains
-main: Rangos
-sub: Armas
+category: Weapons
 ---
 
 ## Range I
