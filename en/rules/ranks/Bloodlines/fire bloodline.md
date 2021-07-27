@@ -30,7 +30,7 @@ Increase your resistance to physical damage by 1.
 
 <u>Scorching aura:</u> As a standard action you can give off an aura of intense heat in a 30-foot radius. All creatures without fire resistances that begin their turn in a scorching aura will suffer 1 fire damage and all burns you inflict against them with attacks will increase by 1 step. When a creature hits you with a natural attack they will automatically suffer a mild burn unless they have resistance to fire. You may suffer 2 non-lethal damage to increase the strength of the flames for one turn, granting you Immunity to fire and cold resistance equal to your rank as well as inflicting a mild burn to all creatures in the area wearing metal armor.
 
-<u>Elemental connection:</u> Fire heals your wounds and allows you to recover spent energy. When you start your turn in an area that is on fire or extreme heat you recover 1 Vitality. You cannot heal your HP in this way, but by taking a short rest in an area with a high presence of your element (high places or areas affected by powerful storms) you recover all your HP as if you were taking a long rest. At rank V every round you remain in an area affected by storm or strong winds you will heal 1 HP or 2 Vitality.
+<u>Elemental connection:</u> Fire heals your wounds and allows you to recover spent energy. When you start your turn in an area that is on fire or extreme heat you recover 1 Vitality. You cannot heal your HP in this way, but by taking a short rest in an area with a high presence of your element (deserts, volcanoes or places affected by extreme heat) you recover all your HP as if you were taking a long rest. At rank V every round you remain in an area affected by fire or extreme heat you will heal 1 HP or 2 Vitality.
 
 ## Rank IV
 
