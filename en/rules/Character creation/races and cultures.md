@@ -68,13 +68,21 @@ Kratoics often have skin tones ranging from fair to tanned and hair often brown 
 
 ### Mazarines
 
-Heirs of the greatest empire of times past, the Mazarines are stuck in a period of decadence as a mere shadow of what they could have been. 
+Heirs of the greatest empire of times past, the Mazarines are stuck in a period of decadence as a mere shadow of what they could have been. While before they could rival Ustilus for supremacy over the Continent, a series of military and economic disasters have severely weakened the power of the mazarine throne and left the nation destitute and behind the times. While some accept their fate and even flee to Kratoi for a better life, other still have hope that Mazarin will rise once again.
+
+The mazarine homeland is a place of extreme weather and untamed wilderness, covered in miles of primeval forests and frozen taiga. The land in turn has shaped mazarine culture, fostering strong communalism and a reverence for nature spirits which persists to this day in the most isolated towns and villages. While the church of Feyn has great power and many mazarines are devout followers of the god of humanity, the ancient influence of the spirits continues to manifest itself in the prevalence of nature, earth and ice magic among its populace. While in times past elemental magic has been persecuted by the church of Feyn, the death of the god of humanity has revitalized ancient traditions among the mazarine population and made elementalists respected once again.
+
+Mazarin's current government is in theory an absolute monarchy, but the weakness of the current king has greatly empowered regional nobles and made the nation revert to a more feudal state. The church of Feyn, formerly revered and feared, has lost most of its power after the death of their god and is tainted by corruption and infighting. Such massive institutional collapse has fostered a culture of decadence, where many mazarines both noble and commoner indulge in many excesses and artistic pastimes to evade such a miserable reality and keep believing the lie that Mazarin continues to be the greatest empire on earth.
+
+Mazarines are typically fair-skinned and have hair ranging from black to blond. Their eyes are either brown, blue or green. Those with traces of elemental bloodlines normally have an eye colors associated to their magic, such as ice-blue or emerald green.
 
 ### Dairovians
 
+Surrounded by fear and superstition, Dairovians have a dark reputation due to their natural affinity for shadow magic and their strange traditions alien to other peoples of the continent. As inhabitants of one of the most isolated lands of the Continent where the authority of the Ustilian empire exists in only name they care little of other opinions and only wish to be left to their own devices. The forests and mountains of Dairov hide dark secrets that are best kept in the dark from prying eyes of foreigners.
 
+The origins themselves of the dairovian people are shrouded in mystery, making some believe that they originate from the Shadowfell itself. Whether this is true or not, the influence of the Shadowfell is greater in this strange land than any other place on the Continent, originating all sorts of monstrous creatures and insidious witchcraft. Likely because of this reason Dariovians fear travelling at night and even their most secluded villages are surrounded by pallisade walls illuminated by torches. Dairovian communties are very tight-knit and hospitable to strangers in need, knowing that by working together they can all brave the night.
 
-### Arshalani
+Dairov
 
 ## Non-human
 
