@@ -17,7 +17,7 @@ Add your rank to all attack rolls made with firearms.
 
 <u>Bullet Trick:</u> Your expert marksmanship allows you to use your attacks in an unexpected way to weaken your opponent's defenses. Instead of attacking you can use your gun to perform one of the following effects on an enemy:
 
-- **False Shot:** Your target must defend himself by figuring out intentions. If it fails it will be incapable of dodging your next attack as if it was a feint.
+- **False Shot:** Your target must defend himself by using insight. If it fails it will be incapable of dodging your next attack as if it was a feint.
 - **Thundering shot:** The shot causes a thunderous boom, causing your target to become disoriented. It must defend itself by making a Constitution roll, and on failure it must move 10 feet in a random direction and is Shaken until its next turn.
 - **Lucky Shot:** Your target must defend itself using Dodge. If it fails it will drop a small object it is carrying on its body, such as a potion, a bomb or a side bag. If the object is particularly fragile it will be destroyed by your bullet.
 
