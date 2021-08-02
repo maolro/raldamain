@@ -13,7 +13,7 @@ Valle de Alascur
 
 ## Inicio
 
-Este capítulo empieza con los jugadores siendo destacados al fuerte del valle Alascur. Ahí podrán interactuar entre ellos y conocerse, ya que ahora son compañeros de escuadrón. Mientras ellos pasan el tiempo en el fuerte, sin que ellos lo sepan los mazarinos inician la primera fase de un siniestro plan. Un grupo de cuatro **Agentes del Pacto** liderados por un **Asesino del Pacto** llegan al territorio del valle con el objetivo de matar a todos los soldados del fuerte. 
+Este capítulo empieza con los jugadores siendo destacados al fuerte del valle Alascur. Ahí podrán interactuar entre ellos y conocerse, ya que ahora son compañeros de escuadrón. Mientras ellos pasan el tiempo en el fuerte, sin que ellos lo sepan los mazarinos inician la primera fase de un siniestro plan. Un número de **Agentes del Pacto** igual a la cantidad de jugadores + 1 liderados por un **Asesino del Pacto** llegan al territorio del valle con el objetivo de matar a todos los soldados del fuerte. 
 
 En el día siguiente a su llegada un grupo de soldados de fuerte salen de ahí para visitar un poblado cercano. La extraña tardanza del grupo en volver ocasiona que el custodio del fuerte envíe a dos de los jugadores para investigar. El clima fuera es lluvioso y es difícil seguir las huellas, pero si los jugadores siguen el camino encontrarán algo inquietante: el cadáver de un soldado. Una investigación del cadáver revelará que ha muerto de un corte en la yugular y que alguien le ha robado el casco y la camisa del uniforme. En este momento deberán decidir rápido que hacer, ya que oculto en los matorrales cercanos un **Agente del Pacto** se prepara para emboscarles. Siendo el principio de la campaña recomendaría al máster no ser demasiado cruel con los jugadores y permitirles vislumbrar por un momento al agente antes de que haga su ataque.
 
@@ -35,7 +35,7 @@ En la mañana del segundo día el capitán [Pantor](www.raldamain.com/characters
 
 ### Carga de los húsares
 
-Tras salir el sol del segundo día, un grupo de tres **Húsares mazarinos** llegan al valle con una misión de exploración y la búsqueda de sobrevivientes ustileses. Ellos patrullarán el valle y podrán atacar a cualquier soldado ustilés que se aleje demasiado del fuerte, además de asistir a sus compañeros mazarinos si estos llaman a refuerzos. 
+Tras salir el sol del segundo día, un grupo de tres **Húsares mazarinos** llegan al valle con una misión de exploración y la búsqueda de supervivientes ustileses. Ellos patrullarán el valle y podrán atacar a cualquier soldado ustilés que se aleje demasiado del fuerte, además de asistir a sus compañeros mazarinos si estos llaman a refuerzos. 
 
 ### Transporte del culverín
 
@@ -49,55 +49,55 @@ Cada uno de los cañones se mueve a una velocidad de 30 pies al turno y tienen c
 
 ### Llegada de los ustileses
 
-Si en algún momento de este capítulo los jugadores piden ayuda al exterior, este mensaje de auxilio llegará a oídos de los caballeros Fileon y Ajek quiénes inmediatamente empezarán a moverse hacia el valle de Alascur. Estos no llegarán hasta la mañana del tercer día, dejando a los jugadores solos frente a un poderoso enemigo. Pero si estos logran sobrevivir hasta su llegada los ustileses ahuyentarán al ejército mazarino y retomarán el valle. A causa de las valientes acciones de los jugadores estos serán promocionados a sargentos del ejército.
+Si en algún momento de este capítulo los jugadores piden ayuda al exterior, este mensaje de auxilio llegará a oídos de los caballeros Fileon y Ajek quiénes inmediatamente empezarán a moverse hacia el valle de Alascur. Estos no llegarán hasta la mañana del tercer día, dejando a los jugadores solos frente a un poderoso enemigo. Pero si estos logran sobrevivir hasta su llegada los ustileses ahuyentarán al ejército mazarino y retomarán el valle. A causa de las valientes acciones de los jugadores estos serán promocionados a sargentos del ejército y subirán un nivel.
 
 ## Enemigos
 
 **Agente del Pacto** (nivel 3)
 
-- **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
-- **PV ** 5 , **VT ** 6, **DEF** 1 (Armadura de cuero)
-- <u>Habilidades</u>: Sigilo 2, Engaño 2, Acrobacias 2, Juego de manos 1
-- <u>Rangos</u>: Reflejos II, Filos ligeros I, Influenciar I
+- **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 1, **CAR** 2
+- **PV **5, **VT **6, **DEF** 2 (Armadura de cuero)
+- <u>Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
+- <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
 
 **Asesino del Pacto** (nivel 5)
 
 - **FUE** 2, **DES** 5, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
-- **PV ** 6, **VT ** 8, **DEF** 1 (Armadura de cuero)
-- <u>Habilidades</u>: Sigilo 3, Engaño 2, Acrobacias 2, Juego de manos 1, Atletismo 2
-- <u>Rangos</u>: Reflejos II, Armas de fuego III, Influenciar I
+- **PV ** 6, **VT ** 8, **DEF** 2 (Armadura de cuero)
+- <u>Habilidades</u>: Sigilo +8, Engaño +4, Acrobacias +7, Juego de manos +6, Atletismo +4
+- <u>Rangos</u>: Reflejos II, Arcos II, Rastrear I, Influenciar I
 
 **Recluta mazarino** (nivel 1)
 
-- **FUE** 3, **DES** 2, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
-- **PV ** 5 , **VT ** 5, **DEF** 3 (Pechera)
-- <u>Habilidades</u>: Heroísmo 1, Intimidar 1, Percepción 2
+- **FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 1
+- **PV ** 5 , **VT ** 5, **DEF** 6 (Camisón de malla)
+- <u>Habilidades</u>: Heroísmo +4, Intimidar +4, Percepción +3
 - <u>Rangos</u>: Alabardas I, Armaduras I
 
 **Ballestero mazarino** (nivel 2)
 
-- **FUE** 2, **DES** 4, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
-- **PV ** 5 , **VT ** 6, **DEF** 3 (Pechera)
-- <u>Habilidades</u>: Sigilo 1, Percepción 2, Intimidar 1, Heroísmo 1
-- <u>Rangos</u>: Ballestas I, Armaduras I, Reflejos I
+- **FUE** 1, **DES** 4, **CON** 2, **INT** 0, **SAB** 2, **CAR** 1
+- **PV ** 4, **VT **6, **DEF** 6 (Camisón de malla)
+- <u>Habilidades</u>: Sigilo +5, Percepción +4, Intimidar +3, Heroísmo +3
+- <u>Rangos</u>: Arcos I, Armaduras I, Reflejos I
 
 **Húsar mazarino** (nivel 4)
 
 - **FUE** 4, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 2
-- **PV ** 6, **VT ** 9, **DEF** 4 (Media placa)
+- **PV **6, **VT ** 9, **DEF** 8 (Media placa)
 - <u>Habilidades</u>: Empatía animal 2, Percepción 3, Supervivencia 2, Intimidar 1
-- <u>Rangos</u>: Montar II, Filos pesados II, Armaduras I
+- <u>Rangos</u>: Montar I, Filos pesados II, Armaduras I, Escudos I
 
 **Sterlet mazarino** (nivel 3)
 
 - **FUE** 3, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
-- **PV ** 6 , **VT ** 7, **DEF** 2 (Pieles 1, Resistencia 1)
+- **PV ** 6 , **VT ** 7, **DEF** 4 (Pieles 2, Resistencia 2)
 - <u>Habilidades</u>: Supervivencia 2, Percepción 2, Averiguar intenciones 1, Atletismo 2
-- <u>Rangos</u>: Rastrear I, Filos pesados I, Plantilla Tierra I, Reflejos I
+- <u>Rangos</u>: Rastrear I, Filos pesados I, Combate doble I, Reflejos I
 
 **Capitán húsar mazarino** (nivel 6)
 
 - **FUE** 5, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 2
-- **PV ** 6 , **VT ** 10, **DEF** 4 (Media placa)
+- **PV ** 6 , **VT ** 10, **DEF** 8 (Media placa)
 - <u>Habilidades</u>: Empatía animal 2, Percepción 3, Supervivencia 3, Intimidar 2
 - <u>Rangos</u>: Montar II, Filos pesados III, Armaduras I, Presencia I
