@@ -63,7 +63,9 @@ Primera planta: 3 Agente del pacto, 6 Matón del pacto, 1 Doctor de plagas
 
 Laboratorio: 4 Doctor de plagas, 2 Matón del pacto
 
-Mazmorras: 3 Doctor de plagas, 10 Matón del pacto, 4 Agente del pacto, 1 Asesino del pacto, 2 Bestia fúngica
+Prisión: 4 Matón del pacto, 1 Agente del pacto
+
+Cavernas fúngicas: 1 Doctor de plagas, 2 esporas gaseosas, 3 bestias fúngicas
 
 Refuerzos: 2 matones del pacto (cada ronda), 1 agente del pacto (cada 2 rondas), 1 doctor de plagas con espora gaseosa (cada 3 rondas)
 
@@ -85,21 +87,50 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Guerrero élfico** (nivel 3)
 
+- <u>Rangos</u>: Filos cortantes I, Arcos I, Reflejos I, Rastrear I
+
 **Cazador élfico** (nivel 5)
+
+- <u>Rangos</u>: Arcos II, Reflejos I, Rastrear I, Compañero animal II
 
 **Osobúho** (nivel 4)
 
+- <u>Mejoras</u>: Garras, perforar, depredador, grande
+
+- <u>Rangos</u>: Ataques naturales I, Fortitud I
+
 **Guardia real élfico** (nivel 5)
+
+- <u>Rangos</u>: Filos cortantes II, Reflejos II, Armaduras I, Combate doble I
 
 **Matón del pacto** (nivel 2)
 
+- <u>Rangos</u>: Contundentes I, Fortitud I, Ira I
+
 **Agente del pacto** (nivel 3)
+
+- <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
 
 **Doctor de plagas** (nivel 4)
 
+- <u>Rangos</u>: Química II, Bombas I, Reflejos I, Compañero animal I
+
 **Asesino del pacto** (nivel 5)
+
+- <u>Rangos</u>: Reflejos II, Arcos II, Rastrear I, Influenciar I
 
 **Espora gaseosa** (nivel 2)
 
+<<<<<<< HEAD
 **Bestia fúngica** (nivel 4)
 
+=======
+- <u>Mejoras:</u> Explosión, veneno, perforar, vuelo, ascendencia fúngica
+- <u>Rangos</u>: Ataques naturales I
+
+**Bestia fúngica** (nivel 4)
+
+- <u>Mejoras:</u> Ascendencia fúngica, veneno, mordisco, 3 PT de la elección del máster
+
+- <u>Rangos</u>: Ataques naturales I, Fortitud I
+>>>>>>> 244bb824781bfefd2fc9e4eafc7b01796787fabd
