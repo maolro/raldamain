@@ -82,20 +82,15 @@ Surrounded by fear and superstition, Dairovians have a dark reputation due to th
 
 The origins themselves of the dairovian people are shrouded in mystery, making some believe that they originate from the Shadowfell itself. Whether this is true or not, the influence of the Shadowfell is greater in this strange land than any other place on the Continent, originating all sorts of monstrous creatures and insidious witchcraft. Likely because of this reason Dariovians fear travelling at night and even their most secluded villages are surrounded by pallisade walls illuminated by torches. Dairovian communties are very tight-knit and hospitable to strangers in need, knowing that by working together they can all brave the night.
 
-Dairov
+As the Ustilian empire's most backwater province, Dairov is a perfect place for those that wish to begin a new life or hide from the authorities. For this reason many secret societies and criminal organizations have bases in this region, subtly impacting the lives of its native inhabitants and researching the land's darkest lore. Dairovians have a symbiotic relationship with these groups, helping them keep secret in exchange of making sure they do not interfere in their lives or discover secrets that should remain unknown.
+
+Dairovians normally have dark hair and eyes along with pale skin. Some dairovains born with great influence of the Shadowfell develop unique traits such as pitch-black eyes or grayish skin.
 
 ## Non-human
 
-### Elves
-
-
-
 ### Half-elves
 
-
+Children of two worlds, Half-elves cause admiration and envy of those around them. Due to their elven heritage Half-elves are blessed with long lifespans and an innate talent for magic, which combined with human ingenuity and creativity grants them the ability to achieve greatness. With no land or culture to truly call their own, Half-elves often travel many lands to search for adventure and figure out their place in the world.
 
 ### Hobgoblins
 
-
-
-### Leonin

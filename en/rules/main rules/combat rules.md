@@ -84,7 +84,7 @@ Difficult terrain is the name given to certain hazardous areas that significantl
 
 ### Joint Attack
 
-A group of low level creatures can make a joint attack against a more powerful enemy, joining forces to defeat it. The attack modifier and damage dice will correspond to the highest of such values among all attacking creatures and both will increase by 2 for every participating creature beyond the first.
+A group of low level creatures can make a joint attack against a more powerful enemy, joining forces to defeat it. The attack modifier and damage will correspond to the highest of such values among all attacking creatures and both will increase by 2 for every participating creature beyond the first.
 
 A joint attack counts as an area attack, inflicting damage even if the target defends itself successfully (Evasion applies against this effect). If the attackers are flanking the target then the target will not be able to use Parry or Dodge to defend himself unless it has Greater uncanny dodge.
 
