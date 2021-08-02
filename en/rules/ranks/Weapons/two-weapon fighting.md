@@ -29,7 +29,7 @@ category: Weapons
 
 ## Piercing Blades
 
-### Range I
+### Rank I
 
 <u>Dual block</u>: Once per round you can do an additional parry with your offhand to block a particularly dangerous attack. This ability lets you do an additional parry against an attack which you have blocked unsuccessfully (the penalty from your offhand weapon will still apply). This ability can be used an additional time per round at rank III.
 
@@ -41,7 +41,7 @@ category: Weapons
 
 <u>Targeted attacks</u>: All penalties gained by targeting vulnerable parts of your target's body will be reduced by 2 when attacking with your offhand weapon. Instead of attacking you can use your offhand weapon to feint a target.
 
-### Range III
+### Rank III
 
 <u>Deadly slice</u>: As a standard action you can make an attack with both weapons on a specific point of your opponent's body. Using this ability will require you to spend one of your attacks with your offhand weapon in exchange of increasing your base damage by a value equal to your offhand weapon's base damage and increasing the level of all permanent injuries you inflict by one step.  You can use your offhand weapon to attack or do maneuvers an additional time per round
 

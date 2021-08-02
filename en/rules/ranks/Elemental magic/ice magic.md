@@ -39,7 +39,7 @@ Increase your critical threshold to 19-20.
 
 <u>Blizzard:</u> You receive the ability to cast powerful blizzards of ice. Creating a blizzard costs a standard action and with it you can push a target 1d6 x 5 feet in any direction on hit in addition of inflicting 1d6 cold damage. You are also able to perform a two-round ritual to call a snowfall to a cold environment. The snowfall will give superior concealment to all creatures in it and turn the entire battlefield into difficult terrain. 
 
-## V Rank
+## Rank V
 
 Increase your critical threshold to 18-20.
 

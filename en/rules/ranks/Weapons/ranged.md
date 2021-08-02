@@ -13,7 +13,7 @@ Add your rank to all attacks made with ranged weapons.
 
 <u>Sneak Attack:</u> Your attacks are especially effective against vulnerable targets. Add your dexterity stat to all damage rolls made against surprised targets or those flanked by two of your allies. This ability only works against targets less than 30 feet away unless you take a -2 penalty to attacks for every additional 30 feet of distance. 
 
-## Range II
+## Rank II
 
 <u>Expert Archer:</u> Your expert aim lets you use your attacks in unexpected ways to weaken your target's defenses. Instead of attacking you can use your weapon to do one of the following combat tricks: 
 
@@ -23,7 +23,7 @@ Add your rank to all attacks made with ranged weapons.
 
 <u>Quick attack:</u> Making an attack with your weapon now costs you a move action. You can now make opportunity attacks with your weapon whenever you roll a critical hit on your defense or if your enemy rolls a critical miss on its attack.
 
-## Range III 
+## Rank III 
 
 Increase your critical threshold to 19-20.
 
@@ -31,13 +31,13 @@ Increase your critical threshold to 19-20.
 
 <u>Sniper's Eye:</u> Your perfect aim lets you strike targets at even further distances. Whenever you aim an attack reduce all distance penalties by 2, including those for sneak attacks. 
 
-## Range IV
+## Rank IV
 
 <u>Shot on the run:</u> You can move before and after attacking, distributing your total movement as you wish. You also don't suffer penalties when shooting from a mount or on a moving vehicle.
 
 <u>Rain of arrows</u>: Once per turn you do an extra attack with your weapon as a bonus action. You can also use your weapon to provide cover fire for your allies, allowing you to add your ranged weapon rank to the defensive roll of an ally within 60 feet. Cover fire can only be used if you are in defensive position.
 
-## Range V
+## Rank V
 
 Increase your critical threshold to 18-20.
 

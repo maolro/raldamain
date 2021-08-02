@@ -3,7 +3,7 @@ title: Chains
 category: Weapons
 ---
 
-## Range I
+## Rank I
 
 Add your rank to all attack rolls made with chains.
 
@@ -11,13 +11,13 @@ Add your rank to all attack rolls made with chains.
 
 <u>Chain dance</u>: By spinning your chain at high speed you are able to protect yourself from enemy attacks. By spending a move action you will enter a state of focus known as chain dance. While you remain in clain dance you are capable of defending yourself against attacks using your chain and any creature that passes throuth the area you threaten will suffer an immediate opportunity attack. The bonuses from this ability will cease if you lose focus.
 
-## Range II
+## Rank II
 
 <u>Circular sweep</u>: You can spend a full turn action to attack all creatures within a 15-foot arc. A circular sweep will stop immediately if a creature blocking with a shield succeeds in its defensive roll and you will not be able to use entangling strike with it. If you spend a charged attack you will be able to do a free trip maneuver against all creatures you hit. Using this ability costs a standard action at rank IV.
 
 <u>Charge attack:</u> You can spend actions to spin your chains even faster, increasing the power of your attacks and defense. Every attack action you spend this way will add 1 chain charge, reaching a maximum equal to rank + 1. While you have charged attacks you will gain a bonus to all defensive rolls equal to the number of charged attacks you have. As a bonus action you can spend a charged attack to increase your attack and damage bonus by 1. All charged attacks you have will be lost if you suffer a permanent injury or a negative status effect.
 
-## Range III 
+## Rank III 
 
 Increase your critical threshold to 19-20
 
@@ -25,13 +25,13 @@ Increase your critical threshold to 19-20
 
 <u>Deflect projectiles:</u> Chain dance can be used to protect you from ranged attacks or magical attacks with an area of effect of 10 feet or less, letting you use your weapon to defend yourself against such attacks. If you roll a critical defense or your target rolls a critical miss you can deflect the attack to target a creature of your choice up to 15 feet away. This ability can only be used while chain dance is active.
 
-## Range IV 
+## Rank IV 
 
 <u>Shifting chain:</u> You can adjust the range of your chains and use them to perform unexpected combat techniques. Adjusting your range costs you a move action and with it you can adjust your reach by 5 feet (once per round this ability can be used as a bonus action). If you reduce your reach to 5 ft you will gain advantage on all defense rolls, while if your reach is increased to 15 ft you will gain disadvantage in defensive rolls. When making an attack you will hit all creatures that are in a line of equal length to your range, ignoring cover other protections.
 
 <u>Human shield:</u> You can use grappled targets as human shields, repositioning them to receive attacks made against you. If you have chain dance active you can use a grappled creature to block an attack made against you, granting you improved cover and if the attack misses you it will hit the grappled creature instead.
 
-## Range V
+## Rank V
 
 Increase your critical threshold to 18-20
 

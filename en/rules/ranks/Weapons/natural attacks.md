@@ -3,7 +3,7 @@ title: Natural attacks
 category: Weapons
 ---
 
-## Range I
+## Rank I
 
 Add your rank to all attack and defense rolls made with natural attacks. Increase your base damage to 1d4.
 
@@ -11,13 +11,13 @@ Add your rank to all attack and defense rolls made with natural attacks. Increas
 
 <u>Martial defense:</u> You are capable of using your martial arts skills to parry enemy attacks, even those made by weapons. This ability works in a similar way to parry, but if you attempt to block a slashing blade weapon or one with the spikes trait you will immediately gain the bleed status effect.
 
-## Range II
+## Rank II
 
 <u>Stunning fist:</u> Whenever you successfully hit with an attack you can force your target to roll CON against your attack. If you succeed they will immediately be stunned. This ability can only be used once per round and if you spend an additional move action on it your target will be staggered until your next turn even if it succeeds in its save. 
 
 <u>Punishing kick:</u> The strength of your attacks is capable of pushing back your targets. Whenever you successfully hit with an attack your target will be pushed 10 feet back and if they have less strength than you they will immediately fall prone. This ability can be used against a target that successfully parries your attack by spending an additional move action. This ability will not work against creatures in defensive position or form.
 
-## Range III
+## Rank III
 
 Increase your critical threshold to 19-20
 
@@ -25,13 +25,13 @@ Increase your critical threshold to 19-20
 
 <u>Precise strike</u>: Through intense focus you can target your enemy's weak points, sacrificing accuracy for the chance to inflict greater damage. To do a precise strike you will gain a -2 penalty to attack rolls in exchange of increasing the level of all permanent injuries you inflict by one step. If you spend a move action to aim you can reduce the penalty of precise attacks by 2, including the penalty to target specific body parts.
 
-## Range IV 
+## Rank IV 
 
 <u>Devastating strike:</u> Your fists are capable of breaking wood and even iron. Whenever you hit a target with a precise strike you can reduce the DEF of its armor by 2. This reduction can be removed by repairing the armor, and if the armor's defense is reduced to 2 or less it becomes unusable. This ability allows you to make a Sunder maneuver against your target's armor as an attack, for which you use your weapon's bonus against your target's heroism and on success you will reduce its DEF by 2. If your target successfully blocks with a shield you can spend an additional move action to reduce its shield's defense modifier by 1.
 
 <u>Pressure point</u>: You can strike your target's pressure points to disable certain parts of their body, stopping them from attacking and even using magic. Whenever you hit an unarmored target's arms, legs or head with a precise strike the targeted limb will become temporarily disabled. If you disable a leg your target will immediately fall prone and their speed will be halved, and if you disable an arm they will drop their weapon and be unable to attack or use magic with it. If you disable your target's head they will immediately fall unconscious (this effect can be avoided with Resist death). Disabled limbs do not count as if they are injured and to enable them again another character must spend a use of first aid to heal them.
 
-## Range V 
+## Rank V 
 
 Increase your critical threshold to 18-20
 
