@@ -5,11 +5,11 @@ lugar: valle de Alascur, frontera entre Kratoi y Mazarin
 niveles: 1-3
 ---
 
-Los jugadores son destacados a un tranquilo fuerte custodiando la frontera entre Kratoi y Mazarin. 
+Los jugadores son destacados a un tranquilo fuerte custodiando la frontera entre la provincia ustilesa de Kratoi y Mazarín sin saber que pronto tendrán la responsabilidad de proteger toda Kratoi de un asalto furtivo Mazarino. Si desean vencer a un enemigo de fuerza y tamaño superior los jugadores deberán trabajar en equipo y emplear engaño y estrategia. Por desgracia o fortuna, el destino de toda una guerra ahora se encuentra en sus manos.
 
 ## Localidad
 
-Valle de Alascur
+Este capítulo está ambientado en el plácido valle de Alascur, un paso fronterizo entre la provincia ustilesa de Kratoi y el reino de Mazarín. Esta zona es bien conocida por lluvias constantes, extensos bosques y un importante fuerte ustilés dedicado a custodiar la frontera. La situación en el valle ha sido tranquila en los últimos 50 años, provocando que sea un lugar ideal para destacar a nuevos reclutas o viejos soldados. No obstatante, tras la muerte de Feyn el reino de Mazarín, aprovechándose de la actual debilidad de Ustilus, pone en inicio una nueva campaña militar con el fin de derrotar a su rival ancestral y alcanzar su antigua gloria. Para ello el ejército mazarino colabora con una secretiva organización conocida como el Pacto para derrotar a los centinelas ustileses y transportar furtivamente toda una sección del ejército para invadir Kratoi.
 
 ## Inicio
 
@@ -49,7 +49,7 @@ Cada uno de los cañones se mueve a una velocidad de 30 pies al turno y tienen c
 
 ### Llegada de los ustileses
 
-Si en algún momento de este capítulo los jugadores piden ayuda al exterior, este mensaje de auxilio llegará a oídos de los caballeros Fileon y Ajek quiénes inmediatamente empezarán a moverse hacia el valle de Alascur. Estos no llegarán hasta la mañana del tercer día, dejando a los jugadores solos frente a un poderoso enemigo. Pero si estos logran sobrevivir hasta su llegada los ustileses ahuyentarán al ejército mazarino y retomarán el valle. A causa de las valientes acciones de los jugadores estos serán promocionados a sargentos del ejército y subirán un nivel.
+Si en algún momento de este capítulo los jugadores piden ayuda al exterior, este mensaje de auxilio llegará a oídos de los caballeros Fileon y Ajek quiénes inmediatamente empezarán a moverse hacia el valle de Alascur. Estos no llegarán hasta la mañana del tercer día, dejando a los jugadores solos frente a un poderoso enemigo. Pero si estos logran sobrevivir hasta su llegada los ustileses ahuyentarán al ejército mazarino y retomarán el valle. A causa de las valientes acciones de los jugadores estos serán promocionados a sargentos del ejército.
 
 ## Enemigos
 
@@ -91,9 +91,9 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 **Sterlet mazarino** (nivel 3)
 
 - **FUE** 3, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
-- **PV ** 6 , **VT ** 7, **DEF** 4 (Pieles 2, Resistencia 2)
+- **PV ** 6 , **VT ** 7, **DEF** 2
 - <u>Habilidades</u>: Supervivencia 2, Percepción 2, Averiguar intenciones 1, Atletismo 2
-- <u>Rangos</u>: Rastrear I, Filos pesados I, Combate doble I, Reflejos I
+- <u>Rangos</u>: Fortitud I, Filos pesados I, Escudo I, Reflejos I
 
 **Capitán húsar mazarino** (nivel 6)
 

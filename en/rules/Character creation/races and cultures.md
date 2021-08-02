@@ -94,3 +94,4 @@ Children of two worlds, Half-elves cause admiration and envy of those around the
 
 ### Hobgoblins
 
+From birth to death, war is a fundamental part of a hobgoblin's life.

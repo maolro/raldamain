@@ -25,54 +25,54 @@ Each day after a creature is infected with a disease, it must do a CON check aga
 5. **Coma:** The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness. Its STR and DEX are reduced to 0.
 6. **Death:** The creature dies of its disease. Its corpse may remain contagious.
 
-1. ## Poisons
+## Poisons
 
-   Every turns after a creature is poisoned it must attempt a CON check against the poison's severity. If it succeeds, it will reduce the poison's level by 1, and if it fails the poison level will increase by 1. 
+Every turns after a creature is poisoned it must attempt a CON check against the poison's severity. If it succeeds, it will reduce the poison's level by 1, and if it fails the poison level will increase by 1. 
 
-   ### STR Poison
+### STR Poison
 
-   1. **Weakened:** The creature reduces its STR by 1.
-   2. **Exhausted:** The creature reduces its STR by 1 and reduces its speed by 10 feet.
-   3. **Atrophied:** The creature reduces its STR by 1 and loses a move action.
-   4. **Immobilized**: The creature cannot perform actions or reactions and it will fail all STR 
-   5. **Death**: The creature dies of poison.
+1. **Weakened:** The creature reduces its STR by 1.
+2. **Exhausted:** The creature reduces its STR by 1 and reduces its speed by 10 feet.
+3. **Atrophied:** The creature reduces its STR by 1 and loses a move action.
+4. **Immobilized**: The creature cannot perform actions or reactions and it will fail all STR 
+5. **Death**: The creature dies of poison.
 
-   ### DEX Poison
+### DEX Poison
 
-   1. **Staggered:** The creature reduces its DEX by 1. It reduces its speed by 10 feet.
-   2. **Stiffened:** The creature reduces its DES by 1 and it cannot dodge attacks.
-   3. **Atrophied:** The creature reduces its DES by 1 and loses a move action.
-   4. **Immobilized**: The creature cannot perform actions or reactions. It will automatically fail all DEX and STR checks.
-   5. **Death**: The creature dies of poison.
+1. **Staggered:** The creature reduces its DEX by 1. It reduces its speed by 10 feet.
+2. **Stiffened:** The creature reduces its DES by 1 and it cannot dodge attacks.
+3. **Atrophied:** The creature reduces its DES by 1 and loses a move action.
+4. **Immobilized**: The creature cannot perform actions or reactions. It will automatically fail all DEX and STR checks.
+5. **Death**: The creature dies of poison.
 
-   ### CON Poison
+### CON Poison
 
-   1. **Weakened:** The creature reduces its CON by 1. It will take 1 non-lethal damage each time it attempts a CON check against the poison.
-   2. **Sickened:** The creature reduces its CON by 1 and becomes sickened. It will take 2 non-lethal damage each time it attempts a CON check against the poison.
-   3. **Exhausted:** The creature reduces its CON by 1 and becomes Exhausted. It will take 1 lethal damage each time it attempts a CON check against the poison.
-   4. **Unconscious**: The creature immediately falls unconscious. It cannot be awakened.
-   5. **Death**: The creature dies of poison.
+1. **Weakened:** The creature reduces its CON by 1. It will take 1 non-lethal damage each time it attempts a CON check against the poison.
+2. **Sickened:** The creature reduces its CON by 1 and becomes sickened. It will take 2 non-lethal damage each time it attempts a CON check against the poison.
+3. **Exhausted:** The creature reduces its CON by 1 and becomes Exhausted. It will take 1 lethal damage each time it attempts a CON check against the poison.
+4. **Unconscious**: The creature immediately falls unconscious. It cannot be awakened.
+5. **Death**: The creature dies of poison.
 
-   ### INT Poison
+### INT Poison
 
-   1. **Overloaded:** Creature reduces its INT by 1.
-   2. **Brain damage:** Creature reduces its INT by 1. It cannot use intelligence-related talents and loses one rank of an INT-related attribute.
-   3. **Animalistic:** The creature reduces its INT by 1. It will be incapable of casting spells or using talents that depend on Intelligence.
-   4. **Coma**: The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness and it will automatically fail all STR and DEX checks.
-   5. **Death:** The creature dies of poison.
+1. **Overloaded:** Creature reduces its INT by 1.
+2. **Brain damage:** Creature reduces its INT by 1. It cannot use intelligence-related talents and loses one rank of an INT-related attribute.
+3. **Animalistic:** The creature reduces its INT by 1. It will be incapable of casting spells or using talents that depend on Intelligence.
+4. **Coma**: The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness and it will automatically fail all STR and DEX checks.
+5. **Death:** The creature dies of poison.
 
-   ### Wisdom poison
+### Wisdom poison
 
-   1. **Absorbed:** The creature reduces its WIS by 1. 
-   2. **Mind fatigue:** The creature reduces its WIS by 1. It loses the ability to maintain concentration and cannot use wisdom-related abilities.
-   3. **Confused:** The creature reduces its WIS by 1 and becomes confused.
-   4. **Coma**: The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness and it will automatically fail all STR and DEX checks.
-   5. **Death:** The creature dies of poison.
+1. **Absorbed:** The creature reduces its WIS by 1. 
+2. **Mind fatigue:** The creature reduces its WIS by 1. It loses the ability to maintain concentration and cannot use wisdom-related abilities.
+3. **Confused:** The creature reduces its WIS by 1 and becomes confused.
+4. **Coma**: The creature is unconscious, lost in its dreams. It cannot be awakened until it recovers one step from its sickness and it will automatically fail all STR and DEX checks.
+5. **Death:** The creature dies of poison.
 
-   ### Charisma poison
+### Charisma poison
 
-   1. **Relaxed:** The creature reduces its CHA by 1. It cannot use skills related to Rage or follow battle tactics
-   2. **Docile:** The creature reduces its CHA by 1. It cannot use charisma related talents and loses one rank of a CHA related skill (Presence or Influence).
-   3. **Compliant:** The creature reduces its CHA by 1 and loses all willpower. It becomes incapable of defending itself against mind and morale effects.
-   4. **Catatonic**: The creature cannot perform actions or reactions. It will automatically fail all DEX and STR checks.
-   5. **Death:** The creature dies of poison.
+1. **Relaxed:** The creature reduces its CHA by 1. It cannot use skills related to Rage or follow battle tactics
+2. **Docile:** The creature reduces its CHA by 1. It cannot use charisma related talents and loses one rank of a CHA related skill (Presence or Influence).
+3. **Compliant:** The creature reduces its CHA by 1 and loses all willpower. It becomes incapable of defending itself against mind and morale effects.
+4. **Catatonic**: The creature cannot perform actions or reactions. It will automatically fail all DEX and STR checks.
+5. **Death:** The creature dies of poison.

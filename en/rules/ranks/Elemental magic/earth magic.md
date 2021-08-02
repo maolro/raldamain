@@ -21,7 +21,7 @@ Add your rank to all attack and defense rolls made with elemental earth magic.
 
 <u>Form of the mountain:</u> You can enter a state of focus and full defense known as form of the mountain as a move action. While you remain in form of the mountain all attacks you make will incrase their size by 5 feet and damage by 1d6 and you will gain a bonus equal to your rank + 1 to all defense rolls. Form of the mountain requires your absolute concentration and its bonuses will be lost if you move more than 5 feet per round or become unfocused. At rank IV this ability will increase the size of your attacks by 10 feet and damage by 1d8. 
 
-## Rango III
+## Rank III
 
 Increase your critical threshold to 19-20.
 
@@ -29,13 +29,13 @@ Increase your critical threshold to 19-20.
 
 <u>Wait and strike:</u> You have mastered the art of waiting patiently for the right opportunity, resisting blows until your enemy commits a fatal mistake. If you are in form of the mountain and enter defensive position you are able to do an opportunity attack as a reaction against any creature that misses its attack against you (this attack will count as a feint if it is a critical miss or you roll critical defense). Whenever you strike this way you will lose all bonuses you have from defensive position.
 
-## Rango IV
+## Rank IV
 
 <u>Collapse:</u> As a full-round action you can provoke a collapse in an area of up to 60 square feet formed mainly of stone or earthen materials, such as a cave or building. All creatures in the affected area must roll defense or take 3d6 bludgeoning damage and become buried by the falling debris on failure, becoming both grappled and blinded. A creature trapped this way can attempt to escape the same way as it would escape a grapple, and if it remains trapped for more than a round it will begin to suffocate.
 
 <u>Stone spikes:</u> You can deal piercing instead of bludgeoning damage with elemental attacks. An elemental attack that deals piercing damage will increase its base damage by 2 an all permanent injuries it inflicts will be 1 level higher, but to create one you must spend an additonal move action shaping stone for this purpose (with elemental overflow this can be used as a bonus action). This ability also lets you fill an area with spikes when using control earth, which in addition to counting as difficult terrain it will inflict 2 non-lethal damage to all creatures that attempt to pass through such area.
 
-## Rango V
+## Rank V
 
 Increase your critical threshold to 18-20.
 
