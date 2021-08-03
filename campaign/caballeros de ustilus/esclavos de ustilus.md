@@ -1,0 +1,56 @@
+---
+title: Esclavos de ustilus
+fecha: 4005
+lugar: Tamashkhan
+niveles: 12-13
+---
+
+## Localidad
+
+Minas de chi en Tamashkhan
+
+## Inicio
+
+Los jugadores son llevados a un campo de trabajo en Tamashkhan.
+
+## Encuentros
+
+### Bienvenidos al infierno
+
+### Primer día de trabajo
+
+### El anciano extraño
+
+### Intento de fuga
+
+### Pelea en la prisión
+
+### El trato del alcaide
+
+### Una noche bajo las estrellas
+
+### El templo en ruinas
+
+### Brote de enfermedad
+
+### Escalada del conflicto
+
+### Motín de los presos
+
+### El portal a Nekthys
+
+### Encuentro en el desierto
+
+### La llegada de Ustilus
+
+## Enemigos
+
+**Preso** (nivel 2)
+
+**Guardia de la prisión** (nivel 2)
+
+**Guardia de élite** (nivel 6)
+
+**Centinela** (nivel 6)
+
+**Yaxxagaw** (nivel 14)

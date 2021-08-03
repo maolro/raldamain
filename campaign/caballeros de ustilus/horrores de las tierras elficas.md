@@ -7,6 +7,8 @@ niveles: 3-4
 
 ## Localidad
 
+Comuna élfica de Endophiel
+
 ## Inicio
 
 Fileon les ofrece la misión. Encuentro con Ileria y Stanish.
