@@ -33,7 +33,7 @@ Ileria sale por la noche y se asoma por un balcón, observando algo. Hay libros 
 
 ### Falsas acusaciones
 
-Viorica acusa a los jugadores de agresión, mostrando las heridas de la pelea como prueba. Serán sometidos a un juicio de los espíritus como consecuencia gracias a la apelación de Ileria. Ella proporicona un método para que puedan escapar.
+Viorica acusa a los jugadores de agresión, mostrando las heridas de la pelea como prueba. Serán sometidos a un juicio de los espíritus como consecuencia gracias a la apelación de Ileria. Ella proporciona un método para que puedan escapar.
 
 Jugador x Guerrero élfico (guardias), 3 Guerrero élfico y 1 Guardia real élfico (patrulla), 4 Guardia real élfico (salón del rey)
 
@@ -123,6 +123,10 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Espora gaseosa** (nivel 2)
 
+<<<<<<< HEAD
+**Bestia fúngica** (nivel 4)
+
+=======
 - <u>Mejoras:</u> Explosión, veneno, perforar, vuelo, ascendencia fúngica
 - <u>Rangos</u>: Ataques naturales I
 
@@ -131,3 +135,4 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 - <u>Mejoras:</u> Ascendencia fúngica, veneno, mordisco, 3 PT de la elección del máster
 
 - <u>Rangos</u>: Ataques naturales I, Fortitud I
+>>>>>>> 244bb824781bfefd2fc9e4eafc7b01796787fabd
