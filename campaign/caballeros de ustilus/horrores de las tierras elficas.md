@@ -123,16 +123,10 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Espora gaseosa** (nivel 2)
 
-<<<<<<< HEAD
-**Bestia fúngica** (nivel 4)
-
-=======
-- <u>Mejoras:</u> Explosión, veneno, perforar, vuelo, ascendencia fúngica
-- <u>Rangos</u>: Ataques naturales I
+- 
 
 **Bestia fúngica** (nivel 4)
 
 - <u>Mejoras:</u> Ascendencia fúngica, veneno, mordisco, 3 PT de la elección del máster
 
 - <u>Rangos</u>: Ataques naturales I, Fortitud I
->>>>>>> 244bb824781bfefd2fc9e4eafc7b01796787fabd
