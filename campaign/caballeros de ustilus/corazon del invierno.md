@@ -49,3 +49,4 @@ Empieza la batalla. Los jugadores deberán asaltar un barco mazarino que va a sa
 
 **Asesino del pacto** (nivel 5)
 
+**General Petrikov** (nivel 8)

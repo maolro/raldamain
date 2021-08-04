@@ -94,3 +94,6 @@ El inicio depende de las decisiones de los jugadores.
 **Adepto infernal** (nivel 13)
 
 **Siervo demoníaco** (nivel 12)
+
+**Thirion** (nivel 17)
+

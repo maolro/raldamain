@@ -62,3 +62,6 @@ Campamento Ustilés después de la victoria en Murat
 **Comandante reforjado** (nivel 12)
 
 **Elemental ligado** (nivel 13)
+
+**Minjee** (nivel 14)
+

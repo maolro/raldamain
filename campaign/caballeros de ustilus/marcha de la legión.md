@@ -39,6 +39,8 @@ Los jugadores viajan a Iskaria para aplastar un último reducto de la legión.
 
 ### Confrontar el pasado
 
+### El auge de los reforjados
+
 ## Enemigos
 
 **Asesino osgo** (nivel 11)
@@ -62,3 +64,7 @@ Los jugadores viajan a Iskaria para aplastar un último reducto de la legión.
 **Hechicero oni** (nivel 13)
 
 **Asesino oni** (nivel 13)
+
+**Xingonu** (nivel 18)
+
+**Yabu** (nivel 18)

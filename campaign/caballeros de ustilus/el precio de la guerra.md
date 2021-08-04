@@ -72,3 +72,5 @@ Campamento ustilés.
 **Guardián del portal oni** (nivel 13)
 
 **Sicario de Sek-Tebos** (nivel 11)
+
+**Kruge** (nivel 15)
