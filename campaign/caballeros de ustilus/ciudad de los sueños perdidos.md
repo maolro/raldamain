@@ -47,9 +47,15 @@ Informe que Tirion se ha fugado.
 
 ### El intento de fuga
 
-### El trato de Pandeshar
+### Trato de Pandeshar
 
+### Noche de llamas
 
+### La caja de lagartos
+
+### Desenlace
+
+### Los recuerdos de Pandeshar
 
 ## Enemigos
 
@@ -67,3 +73,4 @@ Informe que Tirion se ha fugado.
 
 **Elementalista ligado de tierra** (nivel 17)
 
+**Elementalista ligado de hielo** (nivel 17)
