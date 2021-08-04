@@ -76,3 +76,4 @@ Los jugadores y varios NPCs despiertan en una isla misteriosa.
 **Elemental de hielo** (nivel 9)
 
 - 
+
