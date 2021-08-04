@@ -51,6 +51,8 @@ Los jugadores son encargados la misión de localizar al líder del Pacto.
 
 **Bestia fúngica avanzada** (nivel 6)
 
+**Ilesit** (nivel 10)
+
 **Asesino del pacto** (nivel 5)
 
 **Mastín sombrío** (nivel 6)
@@ -59,8 +61,12 @@ Los jugadores son encargados la misión de localizar al líder del Pacto.
 
 **Sombra viviente** (nivel 6)
 
+**Viorica** (nivel 8)
+
 **Elementalista de arena** (nivel 7)
 
 **Turba Temash** (nivel 6)
 
 **Rebelde Temash** (nivel 6)
+
+**Laicon** (nivel 12)

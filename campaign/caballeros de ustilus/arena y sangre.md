@@ -52,3 +52,5 @@ Noticia que Fileon se ha perdido en el desierto.
 **Jinete arquero** (nivel 7)
 
 **Guerrero ancestral** (nivel 13)
+
+**Rostam** (nivel 16)

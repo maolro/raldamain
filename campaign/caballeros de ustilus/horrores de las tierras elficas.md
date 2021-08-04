@@ -130,3 +130,5 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 - <u>Mejoras:</u> Ascendencia fúngica, veneno, mordisco, 3 PT de la elección del máster
 
 - <u>Rangos</u>: Ataques naturales I, Fortitud I
+
+**Viorica** (nivel 7)

@@ -48,3 +48,5 @@ Un año de descanso. Los jugadores son destacados a detener la revuelta hobgobli
 **Jinete de huargo** (nivel 6)
 
 **Reforjado** (nivel 7)
+
+**Sisro** (nivel 13)
