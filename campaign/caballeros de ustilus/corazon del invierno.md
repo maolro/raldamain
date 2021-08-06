@@ -59,7 +59,9 @@ Petrikov se escapa en su navío el Corazón del Invierno. Los jugadores deberán
 
 4 Guerrero norteño, 1 Sargento mazarino
 
+6 Soldado mazarino, 3 Arcabucero mazarino, 1 Sargento mazarino
 
+4 Emboscador mazarino, 1 Asesino del Pacto
 
 ### La tormenta de Olvangar
 
