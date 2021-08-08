@@ -7,7 +7,7 @@ category: Combat
 
 <u>Armor training</u>: Reduces the armor penalty by 2 If you manage to reduce the armor penalty to 0, you can move and use reflexes skills as if you were not wearing armor. Every time you get a rank in armor proficiency reduce the penalty by 1 again
 
-<u>Reinforced defense</u>: Increase your defense by 1 if you are wearing armor. The defense is increased again by 1 each time you get a rank in suitability with armor. This increase in defense also reduces the damage from non-magical attacks against which your armor is not applied, such as [Deadly aim](https://raldamain.com/en/rules/ranks/Weapons/firearms.html#rank-i).
+<u>Reinforced defense</u>: Increase your defense by 2 if you are wearing armor. The defense is increased again by 1 each time you get a rank in suitability with armor. This increase in defense also reduces the damage from non-magical attacks against which your armor is not applied, such as [Deadly aim](https://raldamain.com/en/rules/ranks/Weapons/firearms.html#rank-i).
 
 ## Rank II
 

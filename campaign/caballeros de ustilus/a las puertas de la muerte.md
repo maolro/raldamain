@@ -51,9 +51,15 @@ El inicio depende de las decisiones de los jugadores.
 
 **Yaxxagaw enloquecido** (nivel 16)
 
+<u>Rangos:</u> Ataques naturales V, Ira IV, Fortitud III, Reflejos III, Armaduras II
+
 **Elementalista ligado de fuego** (nivel 14)
 
+<u>Rangos:</u> Magia elemental de fuego V, Ascendencia elemental IV, Reflejos III, Fortitud III
+
 **Elementalista ligado de tormenta** (nivel 14)
+
+<u>Rangos:</u> Magia elemental de aire , Magia elemental de tormenta  , Ascendencia elemental IV, Reflejos III
 
 **Elementalista ligado de arena** (nivel 14)
 

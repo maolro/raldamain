@@ -43,7 +43,7 @@ Cuando los mazarinos crean que tienen el valle asegurado transportarán un culve
 
 ### Noche de los cañones
 
-Al caer la segunda noche los mazarinos iniciarán su operación de transporte. Esta fase del plan será retrasada si saben que aún quedan ustileses en el fuerte, por lo que entonces enviarán a un grupo formado por 6 **Reclutas mazarinos**, 3 **Ballesteros mazarinos**, 3 **Sterlets mazarinos** y un **Húsar mazarino** para tomarlo definitivamente. Estos llevan con ellos un mosquete con el cual darán la señal cuando cumplan su misión. Al tronar el mosquete, los cañones empezarán a ser transportados.
+Al caer la segunda noche los mazarinos iniciarán su operación de transporte. Esta fase del plan será retrasada si saben que aún qu edan ustileses en el fuerte, por lo que entonces enviarán a un grupo formado por 6 **Reclutas mazarinos**, 3 **Ballesteros mazarinos**, 3 **Sterlets mazarinos** y un **Húsar mazarino** para tomarlo definitivamente. Estos llevan con ellos un mosquete con el cual darán la señal cuando cumplan su misión. Al tronar el mosquete, los cañones empezarán a ser transportados.
 
 Cada uno de los cañones se mueve a una velocidad de 30 pies al turno y tienen como objetivo llegar a los bosques en territorio kratense. Hay un total de cuatro cañones y van separados por una distancia de 60 pies. Como escolta hay tres **Húsares mazarinos** patrullando el camino y una unidad compuesta de dos **Reclutas mazarinos** y un **Ballestero mazarino** en cada cañón. Liderando esta misión está el **Capitán húsar mazarino**, quién permanece en la retaguardia hasta que todos los cañones  menos uno sean tomados o destruidos. Cuando esto ocurra él llamará a todos los húsares aún vivos en el campo de batalla y harán una última carga hacia el cañón, buscando salvar lo máximo posible de esta fallida operación. Cuando este sea derrotado los mazarinos supervivientes se retirarán de vuelta a su tierra, vencidos por una insignificante unidad de soldados. Como premio a su victoria los jugadores suben un nivel.
 
@@ -57,7 +57,7 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 
 - **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 1, **CAR** 2
 - **PV **5, **VT **6, **DEF** 2 (Armadura de cuero)
-- <u>Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
+- <u>  Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
 - <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
 
 **Asesino del Pacto** (nivel 5)
@@ -72,7 +72,7 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 - **FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 1
 - **PV ** 5 , **VT ** 5, **DEF** 6 (Camisón de malla)
 - <u>Habilidades</u>: Heroísmo +4, Intimidar +4, Percepción +3
-- <u>Rangos</u>: Alabardas I, Armaduras I
+- <u>Rangos</u>: Alabardas I, Armaduras I/
 
 **Ballestero mazarino** (nivel 2)
 

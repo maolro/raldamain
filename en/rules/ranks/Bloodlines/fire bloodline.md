@@ -1,7 +1,4 @@
----
-title: Fire bloodline
-category: Bloodlines
----
+ 
 
 ## Rank I 
 
