@@ -11,7 +11,7 @@ Add your rank to all attack and defense rolls made with elemental earth magic.
 
 <u>Elemental overflow:</u> You can choose to take 2 non-lethal damage to increase the strength of your attacks. This ability can be used to increase the spash radius of an attack by 10 feet, do an additional attack per turn or attack all targets in a 15-foot cone. At rank III you can use this ability to store an additional attack without the need to expend actions. Elemental overflow can only be used once per turn.
 
-<u>Elemental Parry:</u> You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks (at rank III this ability can be used to defend yourself against melee attacks).
+<u>Elemental Parry:</u> You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks. At rank III this ability can be used to defend yourself against melee attacks).
 
 ## Rank II
 

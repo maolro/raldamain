@@ -13,7 +13,7 @@ Add your rank to all attack and defense rolls made with elemental water magic.
 
 <u>Elemental overflow:</u> You can choose to suffer 2 non-lethal damage to increase the strength of your attacks. This ability can be used to attack all creatures within a 10-foot radius (30-foot radius if you are surrounded by water) or a line 10 feet wide and 60 feet long. At rank II you can use this ability to store an additional attack without the need to expend actions. Elemental overflow can only be used once per turn.
 
-<u>Elemental defense:</u> You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks (at rank III this ability can be used to defend yourself against melee attacks).
+<u>Elemental defense:</u> You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks. At rank III this ability can be used to defend yourself against melee attacks).
 
 ## Rank II
 

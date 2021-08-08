@@ -5,7 +5,7 @@ category: Magia arcana
 
 ## Rango I
 
-Añade un dado de soltura a tiros relacionados con magia ilusoria. Tu reserva aumenta por 2+Rango chi. 
+Añade un dado de soltura a tiros relacionados con magia mental. Tu reserva aumenta por 2+Rango chi. 
 
 <u>Asalto psíquico:</u> Como acción estándar puedes hacer un ataque contra la mente de un objetivo. Este ataque hace 1+Éxito daño Psíquico y puedes gastar 2 Ventajas para Desorientar al objetivo, y 4 Ventajas para Aturdirlo. Si reduces la cordura del objetivo a 0 con este ataque él caerá inconsciente. Una vez al turno puedes gastar 1 chi al impactar con tu ataque para reducir una estadística mental del objetivo por 1 hasta que este tome un descanso largo.
 
