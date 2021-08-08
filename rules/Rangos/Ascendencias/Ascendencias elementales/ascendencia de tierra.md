@@ -3,6 +3,8 @@ title: Ascendencia de Tierra
 category: Ascendencias
 ---
 
+
+
 ## Rango I
 
 Obtienes Resistencia 1 a daño físico. 

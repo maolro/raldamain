@@ -55,3 +55,4 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 Incrementa tu DES por 1.
 
 <u>Forma elemental:</u> Como acción de turno completo, te rodeas de puro fuego elemental. Mientras estés en Forma elemental estás constantemente rodeado por un [muro de fuego](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20hielo.html) y el daño no-letal que infligido por tu Aura abrasadora aumenta por 1. Puedes además usar la habilidad Propulsión como acción de movimiento sin sufrir daño no-letal y añades un dado de soltura adicional a tus tiros de ataque elemental. La Forma elemental termina inmediatamente si eres sumergido en el agua o pierdes la concentración. Cada turno que mantienes la forma elemental sufres 1 daño no-letal y pierdes la habilidad Conexión elemental.
+

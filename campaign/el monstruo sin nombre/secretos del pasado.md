@@ -23,7 +23,37 @@ Llegada a Argostana y reencuentro con Anya.
 
 ### El poeta loco
 
+### Viaje a Uringen
 
+### El profesor Karel
+
+### La universidad de Uringen
+
+### Un suicidio misterioso
+
+### El concurso alquímico
+
+### Padre e hijo
+
+### Infiltración en la mansión Barsich
+
+### El monstruo aprisionado
+
+### Indagando en el pasado
+
+### Las manipulaciones de Julian
+
+### El juego de la muerte
+
+### La biblioteca de Ambrose
+
+### El conocimiento arde
+
+### Caída en la locura
+
+### La torre del reloj
+
+### Un trágico final
 
 ## Enemigos
 
@@ -40,3 +70,13 @@ Llegada a Argostana y reencuentro con Anya.
 **Abominación onírica** (nivel 10)
 
 **Bhole joven** (nivel 13)
+
+**Autómata guardián** (nivel 8)
+
+**El diablo del frasco** (nivel 13)
+
+**Ambrose Barsic** (nivel 14)
+
+**Sabueso de Tindalos** (nivel 7)
+
+**El ángel mecánico** (nivel 13)
