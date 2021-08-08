@@ -15,7 +15,7 @@ Add your rank to all attack and defense rolls made with elemental earth magic.
 
 <u>Ice spines:</u> You are able to mold ice into sharp spines to attack your enemies. An ice spike attack has a maximum range of 60 feet and deals 1d8 + CHA piercing damage on hit. An icy spike attack can take the form of all types of weapons, making it able to inflict slashing or bludgeonning damage if you choose or use combat maneuvers.
 
-<u>Elemental parry</u>: You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks (at rank III this ability can be used to defend yourself against melee attacks).
+<u>Elemental parry</u>: You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks. At rank III this ability can be used to defend yourself against melee attacks).
 
 ## Rank II
 

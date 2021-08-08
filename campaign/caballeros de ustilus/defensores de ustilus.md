@@ -72,7 +72,7 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 - **FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 1
 - **PV ** 5 , **VT ** 5, **DEF** 6 (Camisón de malla)
 - <u>Habilidades</u>: Heroísmo +4, Intimidar +4, Percepción +3
-- <u>Rangos</u>: Alabardas I, Armaduras I/
+- <u>Rangos</u>: Alabardas I, Armaduras I
 
 **Ballestero mazarino** (nivel 2)
 

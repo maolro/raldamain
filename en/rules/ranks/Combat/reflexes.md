@@ -3,9 +3,9 @@ title: Reflexes
 category: Combat
 ---
 
-## Range I
+## Rank I
 
-Add your Reflex range to all defensive dodge rolls.
+Add your Reflex rank to all defensive dodge rolls.
 
 <u>Quickness</u>: You receive an additional move action on your turn. Additionally, you gain a +2 bonus on all your Dodge rolls to avoid attacks made by creatures larger than you. 
 

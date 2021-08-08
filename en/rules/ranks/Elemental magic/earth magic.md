@@ -9,7 +9,7 @@ Add your rank to all attack and defense rolls made with elemental earth magic.
 
 <u>Elemental attack:</u> As a standard action you manipulate the earth to attack your enemies, flinging stones or earth against them. This attack will deal 1d6 + CHA bludgeoning damage and it can target a 5 ft area up to 30 feet away. If you hit a creature with an elemental attack larger than its own size it must succeed in a heroics check against your elemental attack or be pushed 1d6 x 5 feet and fall prone. 
 
-<u>Elemental defense:</u> You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks (at rank III this ability can be used to defend yourself against melee attacks).
+<u>Elemental defense:</u> You are capable of using your element to defend yourself from attacks, which is known as an elemental parry. You can only protect yourself with this ability from elemental, magic or ranged attacks. At rank III this ability can be used to defend yourself against melee attacks).
 
 <u>Elemental overflow:</u> You can choose to suffer 2 non-lethal damage to increase the strength of your attacks. This ability can be used to increse the size of an elemental attack by 5 feet and its damage by 1d6 or do an additional elemental attack per turn. At rank II this ability can be used to increase the size of one of the obstacles you create with Control earth by 5 feet. Elemental overflow can only be used once per turn.
 
