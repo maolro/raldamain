@@ -16,7 +16,7 @@ Add your rank to all attack and defense rolls made with air magic.
 
 <u>Wall of wind:</u> As a standard action you can form a wall of raging winds 15 x rank feet long and 5 x rank feet high. The wall prevents projectiles from passing and a creature must spend a move action to attempt a heroism check against your elemental magic to pass through it (if it has equal or greater strength than your charisma it will not have to roll). The wall will remain until you lose concentration, and if you try to create an additional wall you will suffer 2 non-lethal damage each turn you keep both walls active. The wall will be destroyed if it affected by another elemental wind attack. An wall of wind can also be created as a reaction once per round if you are in an area affected by winds of strength 3 or higher.
 
-<u>Flurry of attacks:</u> Making elemental attacks now cost you a move action instead of a standard action. Additionally, if you manage to succesfully launch an enemy into the air with your first attack all subsequent attacks against them can push them more feet upwards without having to do a combat maneuver or slam them to the ground with greater force, making them take 1d6 additional fall damage and increasing the level of all permanent injuries by one step.
+<u>Flurry of attacks:</u> Making elemental attacks now cost you a move action instead of a standard action. Additionally, if you manage to successfully launch an enemy into the air with your first attack all subsequent attacks against them can push them more feet upwards without having to do a combat maneuver or slam them to the ground with greater force, making them take 1d6 additional fall damage and increasing the level of all permanent injuries by one step.
 
 ## Rank III 
 
@@ -30,7 +30,7 @@ Increase your critical threshold to 19-20
 
 <u>Suffocate:</u> As a standard action you can steal the air from the lungs of a grappled creature, causing it to start to suffocate. A creature will suffocate if it remains grappled by you for a number of turns equal to its Constitution stat (you can employ an elemental attack to reduce that number of turns by 1).
 
-<u>Wirlwind:</u> As a full-round action you can form a powerful whirlwind 60 feet wide and 60 feet high. Winds inside a whirlwind have strength level 5 and all creatures which enter its area must succeed on a heroism check or be pulled inside. Creatures trapped inside a whirlwind will be grappled and will suffer 2 non-lethal damage at the end of its turn. The whirlwind will remain for 5 turns or until you lose focus, and when it fades all creatures trapped by it will immediately begin to fall.
+<u>Whirlwind:</u> As a full-round action you can form a powerful whirlwind 60 feet wide and 60 feet high. Winds inside a whirlwind have strength level 5 and all creatures which enter its area must succeed on a heroism check or be pulled inside. Creatures trapped inside a whirlwind will be grappled and will suffer 2 non-lethal damage at the end of its turn. The whirlwind will remain for 5 turns or until you lose focus, and when it fades all creatures trapped by it will immediately begin to fall.
 
 ## Rank V 
 
