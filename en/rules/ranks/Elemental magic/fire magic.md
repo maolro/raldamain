@@ -44,6 +44,6 @@ Increase your critical threshold to 19-20.
 
 Increase your critical threshold to 18-20.
 
-<u>Rain of Embers:</u> As a full-round action you can create a storm of raging flames expending 6 stored attacks. This attack will fill up to 5 10-foot wide cubes with flames, dealing 2d6 + CHA fire damage to all creatures in the area and inflicting a medium burns to all targets you strike. In addition, all areas you strike will be filled with a wall of flames which will last until the next round. 
+<u>Rain of Embers:</u> As a full-round action you can create a storm of raging flames expending 6 stored attacks. This attack will fill up to 5 10-foot wide cubes with flames, dealing 2d6 + CHA fire damage and a mild burn to all targets you strike. In addition, all areas you strike will be filled with a wall of flames which will last until the next round. 
 
 <u>Pureflame:</u> The fire damage from your attacks is capable of ignoring resistances and all burn effects you inflict will increase their severity by one step (this does not affect rain of embers). Creatures with fire resistances still gain bonuses in defense rolls to avoid status effects from your abilities.
