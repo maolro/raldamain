@@ -31,7 +31,7 @@ Obtienes Resistencia 2 a daño físico.
 
 <u>Alas demoniacas:</u> Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar. Puedes sustituir esta habilidad por otras características similares que no sumen más de 3 PT entre ellas.
 
-<u>Ataques profanos:</u> Tus armas y ataques naturales están infunidos del poder del infierno. Al hacer daño con un ataque puedes gastar 2 ventajas generadas para infligir una herida profana a tu objetivo. Haces además +1 daño elemental con tus ataques y estos cuentan como si fuesen hechos con un arma de hierro frío (este tipo de arma inflige +2 daño contra abisales y espíritus).
+<u>Ataques profanos:</u> Tus armas y ataques naturales están infundidos del poder del infierno. Al hacer daño con un ataque puedes gastar 2 ventajas generadas para infligir una herida profana a tu objetivo. Haces además +1 daño elemental con tus ataques y estos cuentan como si fuesen hechos con un arma de hierro frío (este tipo de arma inflige +2 daño contra abisales y espíritus).
 
 ## Rango IV
 
