@@ -22,15 +22,11 @@ Tienes una íntima conexión con el antiguo frío que una vez estuvo presente en
 
 ## [Ascendencia de fuego](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html)
 
-Guardas relación con los aspectos mas caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios. 
-
-A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser, devorando hasta que todo y todos sean reducidos a cenizas.
+Guardas relación con los aspectos mas caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios. A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser, devorando hasta que todo y todos sean reducidos a cenizas.
 
 ## [Ascendencia de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html)
 
-Estas conectado con las mas lejanas profundidades de la tierra así como de todo aquello que se encuentra en sus dominios. 
-
-A medida que su naturaleza cristalize en ti, la tierra se convertirá en un nuevo medio para alcanzar tus ideales, protegiendo tu cuerpo como una férrea cubierta así como sometiendo a tus enemigos bajo toneladas de inamovible roca.
+Estas conectado con las mas lejanas profundidades de la tierra así como de todo aquello que se encuentra en sus dominios. A medida que su naturaleza cristalice en ti, la tierra se convertirá en un nuevo medio para alcanzar tus ideales, protegiendo tu cuerpo como una férrea cubierta así como sometiendo a tus enemigos bajo toneladas de inamovible roca.
 
 ## [Ascendencia verdeante](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20verdeante.html)
 
