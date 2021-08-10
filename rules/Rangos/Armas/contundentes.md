@@ -1,5 +1,5 @@
 ---
-title: Contundentes
+faratitle: Contundentes
 category: Armas
 ---
 
@@ -50,3 +50,4 @@ Una arma contundente base hace 3+Éxito daño contundente y tiene un alcance de 
 - **Doble:** El arma tiene una segunda punta con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo como ataque doble, por lo cual podrás hacer un ataque adicional como acción bonus pero tirarás un dado de habilidad menos en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
 - **Pinchos:** El arma está cubierta de varios afilados pinchos. Esta infligirá +1 daño perforante y al impactar a un objetivo sin armadura podrás gastar 2 ventajas para darle [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado). 
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque poderoso, Concusión, Impacto destructor y Rompe escudos. Lanzamiento sólo puede aplicare a armas ligeras.
+
