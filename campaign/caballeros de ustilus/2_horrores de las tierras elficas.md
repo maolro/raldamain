@@ -11,7 +11,7 @@ Comuna élfica de Endophiel
 
 ## Inicio
 
-Fileon les ofrece la misión. Encuentro con Ileria y Stanish.
+
 
 ## Encuentros
 
@@ -61,7 +61,7 @@ Una sección del bosque está llena de hongos y contaminación. Encuentro con Il
 
 Infiltración o fuga del laboratorio secreto de Ilesit
 
-Primera planta: 3 Agente del pacto, 6 Matón del pacto, 1 Doctor de plagas
+Primera planta: 1 Agente del pacto, 2 Matón del pacto
 
 Laboratorio: 4 Doctor de plagas, 2 Matón del pacto
 

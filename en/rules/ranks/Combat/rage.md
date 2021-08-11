@@ -5,15 +5,15 @@ category: Combat
 
 ## Rank I
 
-<u>Rage:</u> As a bonus action you can enter a state of superior ferocity known as rage. While in the rage state you increase two physical stats of your choice by 1 and receive resistance equal to your rank against mental and morale effects. Rage will last a number of rounds equal to your rank + CON (without rage bonuses) and as long as you maintain this effect you cannot use abilities that require patience and concentration, attacking each turn if possible. Once you exit rage you will be fatigued. You cannot enter rage if you are fatigued and ends automatically when there are no enemies in sight or you fall unconscious.
+<u>Rage:</u> As a bonus action you can enter a state of superior ferocity known as rage. While in the rage state you increase two physical stats of your choice by 1 and receive resistance equal to your rank against mental and morale effects. Rage will last a number of rounds equal to your rank + CON (without rage bonuses) and as long as you maintain this effect you cannot use abilities that require patience and concentration, attacking each turn if possible. Your rage will end automatically when there are no enemies in sight or you fall unconscious, becoming fatigued once you exit it. You cannot enter rage while you are fatigued unless you are reduced to less than half your HP.
 
-<u>Fast Movement:</u> When you enter rage state you are capable of moving at even greater speeds. Your base speed increases by 10 and you are able to defend yourself against surprise attacks (the attacker will still receive advantage on the attack roll and sneak attack damage will apply as normal). Your speed increases again by 5 feet when you reach rank III. If you have other types of movement that depend on your base speed (swimming, flying...) these will increase in the same way.
+<u>Fast Movement:</u> When you enter rage state you are capable of moving at even greater speeds. Your base speed increases by 10 and you are able to defend yourself against surprise attacks (the attacker will receive advantage on the attack roll and sneak attack damage will apply as normal). Your speed increases again by 5 feet when you reach rank III. If you have other types of movement that depend on your base speed (swimming, flying...) these will increase in the same way.
 
 ## Rank II
 
-<u>Damage reduction:</u> By entering rage you survive injuries with ease. Increase your resistance to weapons by 1 and while you are in rage you will ignore the effects of all permanent injuries you take (Permanent injuries ignored this way will become effective again once you leave rage). At rank III and IV your resistance to damage will increase again by 1.
+<u>Damage reduction:</u> By entering rage you survive injuries with ease. Increase your resistance to weapons by 2 and while you are in rage you will ignore the effects of all permanent injuries you take (Permanent injuries ignored this way will become effective again once you leave rage). Whenever you gain a new rank in Rage your resistance to damage will increase again by 1.
 
-<u>Decisive Strike:</u> Once per rage you can concentrate all your forces into a single attack. Decisive Strike is a bonus action and grants you one Advantage die and +1 damage on that attack. The number of Advantage dice and damage increase by 1 each time you receive an additional rank in rage.
+<u>Decisive Strike:</u> Once per rage you can concentrate all your forces into a single attack. Decisive Strike is a bonus action and grants you a +2 bonus and +2 damage on that attack. All bonuses increase by 2 each time you receive an additional rank in rage.
 
 ## Rank III
 

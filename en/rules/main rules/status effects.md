@@ -54,7 +54,7 @@ A frightened creature attempts to flee from the source of its fear, using its ac
 
 ### Grappled
 
-A grappled creature cannot move and receives a -2 penalty when dodging. It also has disadvantage on all its attack and combat maneuver rolls except to escape from the grapple. To escape from a grapple the creature must succeed in a heroics check against its grappler. Attempting to escape from a grapple costs a move action.
+A grappled creature cannot move and will be unable to dodge attacks made by adjacent creatures (it gains disadvantage dodging ranged attacks). It also has disadvantage on all its attack and combat maneuver rolls except to escape from the grapple. To escape from a grapple the creature must succeed in a heroics check against its grappler. Attempting to escape from a grapple costs a move action.
 
 ### Invisible
 

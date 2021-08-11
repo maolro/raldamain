@@ -58,6 +58,10 @@ An attack of opportunity can also be provoked if a creature saves its standard a
 
 Advantage and disadvantage represent a multitude of factors which benefit or difficult certain actions. If a creature has advantage in a roll it will add 1d6 to the result while if it has disadvantage it will substract 1d6 from it. Advantage from multiple sources will stack, adding multiple d6s to a single roll (the DM can still decide if advantage from certain sources won't stack).
 
+### Undefended attacks
+
+A creature will be undefended if it has no way of protecting itself from an attack, either because it is incapacitated or the attacker caught it by surprised. An undefended creature is unable to do defensive rolls and all damage dealt against it will count as a critical hit, duplicating the amount of damage dice and increasing the level of all permanent injuries by one step. The attacker can attempt to aim against a specific body part, for which it must do an attack roll against a difficulty chosen by the DM. Some sample values are +2 for the chest, +4 for an arm or leg and +6 for the head.
+
 ### Cover
 
 A person has cover when he is behind an obstacle that allows him to protect himself from projectiles and explosions, making him more difficult to spot. If a character has cover they gain advantage on dodge rolls and they can spend a movement actions to hide. For an obstacle to count as cover it must be equal to or greater than one quarter the size of the creature and be blocking line of sight. The master has the final say in deciding whether something counts as cover or not.
