@@ -7,13 +7,13 @@ category: Combat
 
 Add your rank in this skill to all survival, perception and insight checks.
 
-<u>Studied strike:</u> You are capable of learning your target's moves, skills and weaknesses through careful observation. If you spend a full-round action watching a target of your choice you will gain advantage on all rolls related to it and a +2 bonus to all damage rolls. Studied strike will only work against one target and to switch you must spend another full-round action.
+<u>Studied strike:</u> You are capable of learning your target's moves, skills and weaknesses through careful observation. If you spend a full-round action watching a target of your choice you will gain advantage on all rolls related to it and a 1d6 bonus to all damage rolls. Studied strike will only work against one target and to switch you must spend another full-round action.
 
 <u>Favored terrain:</u> You are an expert guide in a certain terrain. Choose a terrain among forest, desert, arctic, mountain, underground and urban. As long as you are in your preferred terrain, you cannot get lost and leave no tracks unless you wish to. While you are in your favored terrain you will gain a +1 bonus in all skill, attack and defense rolls (to qualify for this bonus a skill roll must directly be related to the favored terrain). When you reach Rank III and V you may choose an additional favored terrain or increase bonuses of a certain terrain by 2.
 
 ## Rank II
 
-<u>Expert Tracker:</u> You are able to find out information about your prey just by watching their trail. Using a move action you can detect the position of a hidden foe, reducing the amount of d6 it has from concealment by one. Each additional action spent will reduce the number of disadvantage dice by 1, reaching a minimum of 0. You can also spend a short rest at a specific location looking for clues of events that have transpired there, allowing you to get an idea of the events that happened at least two hours ago.
+<u>Expert Tracker:</u> You are able to find out information about your prey just by watching their trail. Using a move action you can find an opening in your enemy's defense, reducing the amount of advantage dice it has in defense rolls by one against your next attack. Each additional action spent will reduce the number of disadvantage dice by 1, reaching a minimum of 0. You can also spend a short rest at a specific location looking for clues of events that have transpired there, allowing you to get an idea of the events that happened at least two hours ago.
 
 <u>Stalker:</u> You move with great stealth while tracking your prey. As a standard action you can hide in such a way that you cannot be detected by perception rolls, effectively making you invisible. To use this ability you must be out of sight of other creatures. This effect will remain until you attack or perform a particularly noisy action, and while it remains active you must move at half speed. Creatures with the ability expert tracker can attempt to detect you by rolling perception against your stealth. Stalker can only be used if you are in one of our favored terrains.
 
@@ -39,6 +39,6 @@ Add your rank in this skill to all survival, perception and insight checks.
 
 ## Rank V 
 
-<u>Master hunter:</u> The first strike you make is the most deadly. The first attack you make against a specific target will deal +1d6 damage and if you manage to land a critical hit it will die instantly. Damage gained by master hunter will stack with sneak attack.
+<u>Master hunter:</u> The first strike you make is the most deadly. The first attack you make against a specific target will deal +1d6 damage and if you manage to land a critical hit it must succeed in a CON check or it will die instantly. Damage gained by master hunter will stack with sneak attack.
 
 <u>Unstoppable Predator:</u> Choosing a target as your quarry now costs you a bonus action and you gain advantage on all attack and defense rolls against it. Your quarry ability will now recharge by doing a short rest.

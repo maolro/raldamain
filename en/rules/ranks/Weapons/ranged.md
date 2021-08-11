@@ -9,9 +9,9 @@ category: Weapons
 
 Add your rank to all attacks made with ranged weapons.
 
-<u>Piercing shot</u>: By taking aim you can strike your target's weak points to ignore their armor. This ability lets you spend a move action so your next attack will ignore 2 points of your target's defense. Instead of spending a move action once per attack you can take a -2 penalty to attack rolls to ignore 2 additional defense points. This ability can be used twice per attack at rank III and three times at rank V.  
+<u>Piercing shot</u>: By taking aim you can strike your target's weak points to ignore their armor. This ability lets you spend a move action so your next attack will ignore 2 points of your target's defense. Instead of spending a move action once per attack you can take a -2 penalty to attack rolls to ignore 2 additional defense points. This ability can be used twice per attack at rank III and three times at rank V. If you attack a target unable to defend themselves you can ignore their armor without taking a penalty.
 
-<u>Sneak Attack:</u> Your attacks are especially effective against vulnerable targets. Add your dexterity stat to all damage rolls made against surprised targets or those flanked by two of your allies. This ability only works against targets less than 30 feet away unless you take a -2 penalty to attacks for every additional 30 feet of distance. 
+<u>Sneak Attack:</u> Your attacks are especially effective against vulnerable targets. Add your dexterity stat to all damage rolls made against surprised targets or those flanked by two of your allies. This ability only works against targets less than 30 feet away unless you take a -2 penalty to attacks for every additional 15 feet of distance. 
 
 ## Rank II
 

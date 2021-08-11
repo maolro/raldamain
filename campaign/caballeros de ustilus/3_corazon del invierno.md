@@ -21,7 +21,7 @@ Empieza la batalla. Los jugadores deberán asaltar un barco mazarino que va a sa
 
 1 Sargento mazarino, 4 Soldado mazarino, 2 Arcabucero mazarino
 
-3 Guerrero norteño, 2 Arcabucero mazarino 1 Hechicero gélido
+3 Guerrero norteño, 2 Arcabucero mazarino, 1 Hechicero gélido
 
 1 Sargento mazarino, 6 Soldado mazarino, 3 Arcabucero mazarino, 2 Guerrero norteño
 
@@ -45,19 +45,19 @@ Una unidad cercana es emboscada por guerrilleros mazarinos. Este encuentro tambi
 
 Los jugadores atacan la base naval mazarina.
 
-3 Soldado mazarino, 1 Arcabucero mazarino, 2 Emboscador mazarino
+3 Soldado mazarino, 1 Arcabucero mazarino, 2 Emboscador mazarino (acechadores)
 
 6 Soldado mazarino, 3 Arcabucero mazarino, 1 Sargento mazarino
 
 3 Guerrero norteño, 3 Arcabucero mazarino, 1 Sargento mazarino
 
-4 Soldado mazarino, 2 Guerrero norteño, 2 Arcabucero mazarino, 1 Élite de Petrikov
+4 Soldado mazarino, 2 Guerrero norteño, 2 Arcabucero mazarino, 1 Élite de Petrikov 
 
 ### El corazón del invierno
 
 Petrikov se escapa en su navío el Corazón del Invierno. Los jugadores deberán encontrarlo y vencerlo.
 
-4 Guerrero norteño, 1 Sargento mazarino
+4 Guerrero norteño, 1 Sargento mazarino (patrulla)
 
 6 Soldado mazarino, 3 Arcabucero mazarino, 1 Sargento mazarino
 
