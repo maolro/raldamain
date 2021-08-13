@@ -111,7 +111,7 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Agente del pacto** (nivel 3)
 
-- <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
+- <u>Rangos</u>: Reflejos I, Filos perforantes I, Combate doble I, Rastrear I
 
 **Doctor de plagas** (nivel 4)
 
@@ -123,7 +123,8 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Espora gaseosa** (nivel 2)
 
-- 
+- <u>Mejoras:</u> Ascendencia fúngica, perforar, veneno, explosión, armadura natural, visión periférica
+- <u>Rangos:</u> Ataques naturales I
 
 **Bestia fúngica** (nivel 4)
 
@@ -133,4 +134,4 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Viorica** (nivel 7)
 
-- <u>Rangos:</u>
+- <u>Rangos:</u> Filos perforantes III, Reflejos II, Combate doble II, Influenciar I
