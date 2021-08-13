@@ -9,7 +9,7 @@ Te has decidido por entrenar un animal salvaje para que te acompañe en tus viaj
 
 <u>Compañero salvaje:</u> Tienes un poderoso vínculo con un animal o criatura mágica quién te seguirá con la más absoluta lealtad. Un compañero salvaje es una criatura de nivel igual a tu nivel de personaje dividido entre 2 (mínimo nivel 1) y con la forma base de tu elección. Si otra habilidad te da una criatura como aliada, como es el caso de [montar](https://raldamain.com/rules/Rangos/Combate/montar.html) o determinadas ascendencias, puedes hacer que el nivel de dicha criatura aumente por 2. Los animales de la misma especie o especies relacionadas con tu compañero salvaje no son naturalmente hostiles hacia ti.
 
-<u>Ataque coordinado:</u> Tu compañero salvaje lucha con mayor ferocidad cuando combate a tu lado. Cuando tu compañero animal flanquee a un enemigo o realice un ataque combinado contigo añadirá +2 daño base a sus ataques. Si el animal es de menor tamaño que el objetivo que está atacando este no podrá usar Parada para defenderse.  
+<u>Ataque coordinado:</u> Tu compañero salvaje lucha con mayor ferocidad cuando combate a tu lado. Cuando tu compañero animal flanquee a un enemigo o realice un ataque combinado contigo añadirá +1d6 daño base a sus ataques. Si el animal es de menor tamaño que el objetivo que está atacando este no podrá usar Parada para defenderse.  
 
 ## Rango II
 

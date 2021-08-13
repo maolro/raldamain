@@ -7,7 +7,7 @@ Tienes un dominio completo sobre la palabra así como de su significado sabiendo
 
 ## Rango I
 
-Añade un dado de soltura a tus tiros de Influenciar. Puedes tirar Influenciar para defenderte de efectos mentales.
+Añade tu rango a todos tus tiros de influenciar.
 
 <u>Máscara:</u> Ocultas tus verdaderas intenciones bajo una máscara real o figurada, escondiendo tu verdadera identidad para lograr tus planes. Esta habilidad te otorga resistencia igual a tu rango de Influenciar contra tiros de [Averiguar Intenciones](https://raldamain.com/rules/Crear%20personajes/talentos.html#averiguar-intenciones-sab) para detectar si estás mintiendo o ver a través de tu disfraz. Además, es imposible distinguir el vínculo entre ti y tu falsa identidad salvo que des fuertes indicios de ello. 
 
@@ -15,15 +15,15 @@ Añade un dado de soltura a tus tiros de Influenciar. Puedes tirar Influenciar p
 
 ## Rango II
 
-<u>Buscar rumores:</u> Tienes un excelente oído para los rumores y cotilleos además de una gran capacidad para encontrarlos. Emplear esta habilidad requiere un gasto de dos horas de búsqueda en numerosos lugares públicos como tabernas, mercados o bares. Emplear esta habilidad requiere un tiro de Influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Las ventajas generadas en este tiro te permiten encontrar indicios de información valiosa mientras que las desventajas causen que recibas atención indeseada. Si tienes rangos en Rastrear y has escogido un terreno predilecto urbano eres capaz de emplear esta habilidad para recoger información de una persona como si la estuvieses rastreando.
+<u>Buscar rumores:</u> Tienes un excelente oído para los rumores y cotilleos además de una gran capacidad para encontrarlos. Emplear esta habilidad requiere un gasto de dos horas de búsqueda en numerosos lugares públicos como tabernas, mercados o bares y para descubrirlos deberás tener éxito un tiro de Influenciar contra una dificultad establecida por el máster dependiendo de la rareza del rumor. Si fracasas en este tiro puedes acabar llamando atención indeseada mientras realizas tu búsqueda. Si tienes rangos en Rastrear y has escogido un terreno predilecto urbano eres capaz de emplear esta habilidad para recoger información de una persona como si la estuvieses rastreando.
 
 <u>Aprovechar favores:</u> Tu gran capacidad de persuasión te permite mover sutilmente a individuos amistosos para que realicen determinados favores para ti. Pedir un favor es un tiro de Influenciar hecho contra una dificultad decidida por el máster según el riesgo del favor y la actitud de tu objetivo hacia ti. En el caso que un favor es peligroso o exagerado el máster puede considerar que el objetivo se puede negar. Algunos ejemplos de favor son pedir un préstamo, preguntar información más comprometida o realizar una tarea por ti.
 
 ## Rango III
 
-Añade un dado de soltura a tus tiros de Influenciar.
+Aumenta tu probabilidad de crítico a 19-20 en todos tus tiros de influenciar, engaño y persuasión.
 
-<u>Mente custodiada:</u> Eres capaz de suprimir determinados pensamientos para protegerte de la magia mental, otorgándote resistencia a estos igual a tu rango de Influenciar - 1. En el caso que un intento de leer tu mente fracase podrás mostarle la información que desees sin que el mago mental note que esta ha sido alterada. De esta manera, la magia no podrá determinar tu verdadera identidad o si estás diciendo la verdad.
+<u>Mente custodiada:</u> Eres capaz de suprimir determinados pensamientos para protegerte de la magia mental, otorgándote resistencia a estos igual a tu rango de Influenciar - 1. En el caso que un intento de leer tu mente fracase podrás mostrarle la información que desees sin que el mago mental note que esta ha sido alterada. De esta manera, la magia no podrá determinar tu verdadera identidad o si estás diciendo la verdad.
 
 <u>Chantaje:</u> Los rumores que encuentran pueden llevarte a descubrir los trapos sucios de determinadas figuras influyentes. Encontrar dicha información requiere un tiro de [buscar rumores](https://raldamain.com/rules/Rangos/Social/influenciar.html#rango-ii) contra una dificultad superior a la normal para el cual se añadirán todos los modificadores que recibas por enemigo predilecto o presa. En el caso que tengas éxito puedes emplear la información descubierta para forzar a tu objetivo a que siga tus órdenes y realice favores arriesgados a pesar que sea hostil. No obstante, la criatura chantajeada intentará ocultar la información a toda costa e intentará callarte a toda costa.
 
@@ -35,11 +35,11 @@ Añade un dado de soltura a tus tiros de Influenciar.
 
 ## Rango V
 
-Añade un dado de soltura a tus tiros de Influenciar.
+Aumenta tu probabilidad de crítico a 18-20 en todos tus tiros de influenciar, engaño y persuasión.
 
 <u>Sembrar cizaña:</u> Tus palabras son capaces de convertir a amigos en enemigos y romper a las alianzas más sólidas. Sembrar cizaña cuesta una acción estándar y para ella debes realizar un tiro de Influenciar contra cualquier número de personas que se encuentren a 30 pies de ti (si estos se encuentran en el mismo bando deberás tirar contra la estadística de carisma del líder). En el caso que tengas éxito, estos empezar a dudar unos de otros y reducirán la actitud que tengan entre sí por un paso (esta se reducirá por dos pasos si cuentas con información incriminatoria de uno de estos). Si reduces la actitud a neutral estos perderán todos los bonificadores de moral y no podrán flanquear ni defenderse mutuamente. 
 
-<u>Maestro titiritero:</u> Eres capaz de reducir a las personas con las que hablas a simples títeres movidos por tu voluntad, manipulándolos para que garantizar su lealtad o acabar con su fuerza de voluntad. Una vez por interacción puedes hacer un tiro de influenciar contra tu objetivo el cual le provocará daño a la cordura en el caso de éxito igual a 2 + los éxitos generados. En el caso que logres reducir su cordura a 0 puedes obtener su lealtad absoluta e incondicional o forzarla a suicidarse. Esta habilidad no podrá emplearse en personajes hostiles hacia ti salvo que tengas una manera para chantajearlos.
+<u>Maestro titiritero:</u> Eres capaz de reducir a las personas con las que hablas a simples títeres movidos por tu voluntad, manipulándolos para que garantizar su lealtad o acabar con su fuerza de voluntad. Una vez por interacción puedes hacer un tiro de influenciar contra tu objetivo el cual le provocará daño a la cordura en el caso de éxito igual a 1d4 +  CAR. En el caso que logres reducir su cordura a 0 puedes obtener su lealtad absoluta e incondicional o forzarla a suicidarse. Esta habilidad no podrá emplearse en personajes hostiles hacia ti salvo que tengas una manera para chantajearlos.
 
 
 
