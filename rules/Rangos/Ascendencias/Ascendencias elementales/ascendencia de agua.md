@@ -9,7 +9,7 @@ Sientes una gran afinidad por los entornos acuáticos presentes en casi todas la
 
 Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental de agua.
 
-<u>Ascendencia de las profundidades:</u> Recibes resistencia a daño frío igual a tu rango de ascendencia elemental. No sufres efectos negativos a causa del frío extremo y los animales marinos no serán naturalmente hostiles hacia ti.
+<u>Ascendencia de las profundidades:</u> Recibes resistencia a daño frío igual a tu rango de ascendencia elemental + 1. No sufres efectos negativos a causa del frío extremo y los animales marinos no serán naturalmente hostiles hacia ti.
 
 <u>Hidrokinesia</u>: Puedes moldear pequeñas cantidades de agua a tu voluntad. Como acción bonus usable una vez al turno puedes manipular una cantidad pequeña de agua o alterar sus estados. Puedes afectar al agua de las siguientes maneras:
 
@@ -36,7 +36,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental a tus ataques hechos con un arma de tu elección.
+Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
 
 <u>Columna de agua:</u> Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Como acción estándar puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies, pero no puedes elevarte más alto que 45 pies. Cada turno que mantengas la columna sufres 2 daño no-letal salvo que gastes una acción de movimiento. Columna de agua solo puede ser usada si estás en contacto con una superficie de agua con volumen igual o superior a la distancia a la que te intentes elevar. Esta habilidad puede usarse como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
@@ -54,6 +54,6 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
 Incrementa tu CAR por 1.
 
-<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de aguas rugientes. Mientras estés en forma elemental estás rodeado constantemente por un [muro de agua](https://raldamain.com/rules/Rangos/Elementalismo/magia de agua.html#rango-ii) y usar Columna de agua te cuesta una acción de movimiento (mantenerla es una acción bonus). Además, todos tus ataques hechos en forma elemental empujarán 1d6 x 5 pies al impactar. Toda el agua en un radio de 30 pies centrado en ti está bajo el efecto de [corrientes rugientes](https://raldamain.com/rules/Rangos/Elementalismo/magia de agua.html#rango-iii). Cada turno que mantienes la forma elemental sufres 1 daño a la Vitalidad y pierdes la habilidad Conexión elemental. La forma elemental se desvanece si pierdes la concentración o entras en contacto con lava.
+<u>Forma elemental:</u> Como acción de turno completo, te rodeas de una gran masa de aguas rugientes. Mientras estés en forma elemental estás rodeado constantemente por un [muro de agua](https://raldamain.com/rules/Rangos/Elementalismo/magia de agua.html#rango-ii) y usar Columna de agua te cuesta una acción de movimiento (mantenerla es una acción bonus). Además, todos tus ataques hechos en forma elemental empujarán 1d6 x 5 pies al impactar. Toda el agua en un radio de 30 pies centrado en ti está bajo el efecto de [corrientes rugientes](https://raldamain.com/rules/Rangos/Elementalismo/magia de agua.html#rango-iii). La forma elemental durará un número de rondas igual a tu rango + 1 o hasta que pierdas la concentración.  
 
 <u>Elegido de los espíritus:</u> Eres un campeón bendecido por los espíritus. Recibes resistencia 4 a efectos mentales, enfermedades y venenos, y tu cuerpo envejece un ritmo diez veces inferior. Los espíritus no serán naturalmente hostiles hacia ti y tendrán profundo respeto hacia ti.

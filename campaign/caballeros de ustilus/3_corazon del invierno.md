@@ -89,14 +89,25 @@ Petrikov, 3 Élite de Petrikov, 1 Sanador de combate
 
 **Sanador de batalla** (nivel 4)
 
-- <u>Rangos:</u> 
+- <u>Rangos:</u> Química II, Contundentes I, Armaduras I, Fortitud I
 
 **Guerrero norteño** (nivel 3)
 
+- <u>Rangos:</u> Filos cortantes I (hacha), Escudo I, Fortitud I, Ira I
+
 **Élite de Petrikov** (nivel 6)
+
+- <u>Rangos:</u> Filos cortantes III (hacha pesada), Fortitud I, Armaduras I, Ira II
 
 **Hechicero gélido** (nivel 5)
 
+- <u>Rangos:</u> Ascendencia de agua II, Magia de agua II, Magia de hielo I, Fortitud I
+
 **Asesino del pacto** (nivel 5)
 
+- <u>Rangos:</u> A distancia II, Rastrear II, Reflejos I, Filos ligeros I
+
 **General Petrikov** (nivel 8)
+
+- <u>Rangos:</u> Ascendencia boreal IV, Magia de hielo III, Reflejos I, Filos perforantes I
+

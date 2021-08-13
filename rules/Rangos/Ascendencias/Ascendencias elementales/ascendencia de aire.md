@@ -9,7 +9,7 @@ Tienes una fuerte conexión con las antiguas tormentas que llevan soplando desde
 
 Obtienes Resistencia 2 a daño físico y desbloqueas los rangos en magia elemental de aire.
 
-<u>Nacido de las tormentas:</u> Tienes resistencia a daño eléctrico y de trueno igual a tu rango de ascendencia. No sufres penalizaciones a tu movimiento a causa de vientos poderosos y puedes aguantar un turno adicional si eres ahogado.
+<u>Nacido de las tormentas:</u> Tienes resistencia a daño eléctrico y de trueno igual a tu rango de ascendencia + 1. No sufres penalizaciones a tu movimiento a causa de vientos poderosos y puedes aguantar un turno adicional si eres ahogado.
 
 <u>Aerokinesia</u>: Tu herencia elemental te permite alterar los vientos. Como acción bonus puedes crear una fresca brisa que durará mientras mantengas la concentración. No puedes tener más de una brisa activa y esta puede usarse para hacer uno de los siguientes efectos (sólo puedes hacer un único efecto al turno).
 
@@ -38,7 +38,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental a tus ataques hechos con un arma de tu elección.
+Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
 
 <u>Viajero de los cielos:</u> Recibes la capacidad de volar 60 pies como acción de movimiento. Mientras estés volando obtienes ventaja atacando a criaturas que se encuentren en el suelo y empleando esquiva para defenderte. Esta velocidad de vuelo queda reducida por armadura pesada y empezarás a caer si eres aturdido. Volar largas distancias te cansa con más facilidad, dejándote [fatigado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#fatigada) si intentas volar durante más de una hora seguida.
 
