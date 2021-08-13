@@ -73,13 +73,23 @@ Petrikov, 3 Élite de Petrikov, 1 Sanador de combate
 
 **Soldado mazarino** (nivel 2)
 
+- <u>Rangos:</u> Alabardas I, Armaduras I, Fortitud I
+
 **Arcabucero mazarino** (nivel 2)
+
+- <u>Rangos:</u> Armas de fuego I, Armaduras I, Reflejos I
 
 **Sargento mazarino** (nivel 4)
 
+- <u>Rangos:</u> Filos cortantes II, Armaduras I, Fortitud I, Presencia I
+
 **Emboscador mazarino** (nivel 3)
 
+- <u>Rangos:</u> A distancia I o Filos perforantes I, Reflejos I, Rastrear I, Fortitud I
+
 **Sanador de batalla** (nivel 4)
+
+- <u>Rangos:</u> 
 
 **Guerrero norteño** (nivel 3)
 
