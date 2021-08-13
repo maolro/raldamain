@@ -47,9 +47,9 @@ Increase your critical threshold to 18-20.
 
 # Weapons
 
-A base bow deals 1d8 piercing damage and has a range of 60 feet. You can shoot enemies at a maximum of 90 feet by receiving disadvantage to your attack. A base bow can be modified with the following features to produce all types of related weapons.
+A base bow deals 2d4 piercing damage and has a range of 60 feet. You can shoot enemies at a maximum of 90 feet by receiving disadvantage to your attack. A base bow can be modified with the following features to produce all types of related weapons.
 
-- <u>Composite</u>: The bow requires great strength to be drawn but it will increase the power of arrows fired. You need to have STR 3 or more to use a compound bow but it will deal increase its damage to 1d10 and its range by 15 feet. The base damage of a compound bow increases with to your STR stat as if it were a melee weapon.
+- <u>Composite</u>: The bow requires great strength to be drawn but it will increase the power of arrows fired. You need to have STR 3 or more to use a compound bow but it will deal increase its damage to 2d6 and its range by 15 feet. The base damage of a compound bow increases with to your STR stat as if it were a melee weapon.
 - <u>Short</u>: The bow is small and very easy to draw. You reduce your base damage to 1d6 but you will not suffer penalties for shooting from a mount or in a moving vehicle. At rank IV you will gain the ability Reposition. 
-- <u>Crossbow</u>: Instead of longbows you are proficient using more precise but cumbersome crossbows. A crossbow increasees its base damage to 1d10 and it will be able to ignore an additional point of your target's defense whenever you use precise shot. These weapons are also harder to reload, requiring you to spend a full-round action recharging it before being able to fire again. At rank II you gain fast reload instead of quick attack.
+- <u>Crossbow</u>: Instead of longbows you are proficient using more precise but cumbersome crossbows. A crossbow increases its base damage to 2d6 and it will be able to ignore an additional point of your target's defense whenever you use precise shot. These weapons are also harder to reload, requiring you to spend a full-round action recharging it before being able to fire again. At rank II you gain fast reload instead of quick attack.
 

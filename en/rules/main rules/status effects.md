@@ -34,7 +34,7 @@ A despaired creature has lost the strength to continue fighting, resigning itsel
 
 ### **Entangled**
 
-An entangled creature has its movements hindered. It reduces its movement by 10 feet and adds a -2 penalty to its dexterity stat. If the creature is succeed in a Heroism or Sleight of hand check against the entangling creature or effect. Attempting to escape from entanglement costs a move action.
+An entangled creature has its movements hindered. It reduces its movement by 10 feet and gains disadvantage in all dexterity-related rolls. If the creature is succeed in a Heroism or Sleight of hand check against the entangling creature or effect. Attempting to escape from entanglement costs a move action.
 
 ### Exhausted
 

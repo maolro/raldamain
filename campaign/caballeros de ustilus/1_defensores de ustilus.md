@@ -57,7 +57,7 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 
 - **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 1, **CAR** 2
 - **PV **5, **VT **6, **DEF** 2 (Armadura de cuero)
-- <u>  Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
+- <u> Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
 - <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
 
 **Asesino del Pacto** (nivel 5)
