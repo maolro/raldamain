@@ -9,7 +9,7 @@ Guardas relación con los aspectos más caóticos y destructivos de los fuegos q
 
 Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental de fuego.
 
-<u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Tienes resistencia al fuego igual a tu rango de ascendencia de Fuego.
+<u>Adaptación al calor:</u> Eres inmune al calor extremo y a las altas temperaturas. Tienes resistencia al fuego igual a tu rango de ascendencia de Fuego + 1.
 
 <u>Pirokinesia</u>: Tu herencia elemental te permite controlar el fuego. Como acción bonus puedes crear una pequeña llama que durará mientras mantengas la concentración. Sólo puedes usar esta habilidad si estás en contacto con el oxígeno y puedes tener más de una llama activa. La llama puede usarse para hacer uno de los siguientes efectos (sólo puedes tener activo un único efecto al turno).
 
@@ -36,7 +36,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV
 
-Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental a tus ataques hechos con un arma de tu elección.
+Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
 
 <u>Propulsión</u>: Eres capaz de propulsarte en el aire con tu magia de fuego. Como acción estándar, vuela 60 pies en cualquier dirección. Puedes usar esta habilidad como una acción de movimiento si eliges sufrir 2 daño no-letal.
 
