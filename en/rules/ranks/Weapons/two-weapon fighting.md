@@ -1,5 +1,5 @@
 ---
-title: Two-weapon fighting
+ title: Two-weapon fighting
 category: Weapons
 ---
 

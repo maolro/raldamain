@@ -7,7 +7,7 @@ category: Weapons
 
 Add your rank in piercing blades to all attack and defense rolls made with weapons of this category. 
 
-<u>Sneak Attack:</u> Your attacks are capable of targeting your enemies' weaknesses. Whenever you successfully hit a surprised target or one you are flanking increase the damage you inflict by your dexterity stat. Additionally, before you attack you can choose to target a vulnerable part of your target, taking a -2 penalty to attacks in exchange of ignoring 2 points of defense your target has. If you manage to reduce your target's defense to 0 with this ability you can inflict a mild permanent wound on impact. At rank III you can ignore 3 points of defense with this ability and at rank V you can ignore 4 points.
+<u>Sneak Attack:</u> Your attacks are capable of targeting your enemies' weaknesses. Whenever you successfully hit a surprised target or one you are flanking increase the damage you inflict by your dexterity stat. Additionally, before you attack you can choose to target a vulnerable part of your target, taking a -2 penalty to attacks in exchange of ignoring 2 points of defense your target has. If you manage to reduce your target's defense to 0 with this ability you can inflict a mild permanent wound on impact. At rank III you can use this ability twice per attack and at rank V you can use it three time
 
 ## Rank II
 
@@ -19,7 +19,7 @@ Add your rank in piercing blades to all attack and defense rolls made with weapo
 
 Increase your critical threshold to 19-20.
 
-<u>Disarm:</u> Whenever an enemy successfully parries your weapon you can choose to spend a move action to attempt to disarm them. For this you must succeed in an attack roll against your target's parry, and if you do their weapon will immediately drop to the floor (picking up a dropped weapon costs a move action). You cannot disarm weapons larger than your own unless your target has a permanent injury on their main arm.
+<u>Disarm:</u> Whenever an enemy successfully parries your weapon you can choose to spend a move action to attempt to disarm them. For this you must succeed in an attack roll against your target's parry, and if you do their weapon will immediately drop to the floor (picking up a dropped weapon costs a move action which provokes attacks of opportunity). You cannot disarm weapons larger than your own unless your target has a permanent injury on their main arm.
 
 <u>Reposition:</u> Your quick footwork lets you gracefully enter and exit engagements. If you succeed in a check to parry an attack you can move 5 feet as a reaction without provoking attacks of opportunity, even if you move outside your enemy's reach. At rank V you can move 10 feet with this ability. 
 

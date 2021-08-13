@@ -89,7 +89,7 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Guerrero élfico** (nivel 3)
 
-- <u>Rangos</u>: Filos cortantes I, Arcos I, Reflejos I, Rastrear I
+- <u>Rangos</u>: Filos cortantes I (ligera) o Arcos I, Armaduras I, Reflejos I, Rastrear I
 
 **Cazador élfico** (nivel 5)
 
@@ -99,15 +99,15 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 - <u>Mejoras</u>: Garras, perforar, depredador, grande
 
-- <u>Rangos</u>: Ataques naturales I, Fortitud I
+- <u>Rangos</u>: Ataques naturales I (Garras, perforar), Fortitud I
 
 **Guardia real élfico** (nivel 5)
 
-- <u>Rangos</u>: Filos cortantes II, Reflejos II, Armaduras I, Combate doble I
+- <u>Rangos</u>: Filos cortantes II (ligera), Reflejos II, Armaduras I, Combate doble I
 
 **Matón del pacto** (nivel 2)
 
-- <u>Rangos</u>: Contundentes I, Fortitud I, Ira I
+- <u>Rangos</u>: Contundentes I, Fortitud I, Reflejos I
 
 **Agente del pacto** (nivel 3)
 
@@ -119,7 +119,7 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 
 **Asesino del pacto** (nivel 5)
 
-- <u>Rangos</u>: Reflejos II, Arcos II, Rastrear I, Influenciar I
+- <u>Rangos</u>: Reflejos II, Arcos II (Ballesta recargable), Rastrear I, Influenciar I
 
 **Espora gaseosa** (nivel 2)
 
@@ -132,3 +132,5 @@ Llegada de Fileon y Ajek para asistir a los jugadores
 - <u>Rangos</u>: Ataques naturales I, Fortitud I
 
 **Viorica** (nivel 7)
+
+- <u>Rangos:</u>

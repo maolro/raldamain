@@ -15,7 +15,7 @@ Add your rank to all attack and defense rolls made with natural attacks. Increas
 
 <u>Stunning fist:</u> Whenever you successfully hit with an attack you can force your target to roll CON against your attack. If you succeed they will immediately be stunned. This ability can only be used once per round and if you spend an additional move action on it your target will be staggered until your next turn even if it succeeds in its save. 
 
-<u>Punishing kick:</u> The strength of your attacks is capable of pushing back your targets. Whenever you successfully hit with an attack your target will be pushed 10 feet back and if they have less strength than you they will immediately fall prone. This ability can be used against a target that successfully parries your attack by spending an additional move action. This ability will not work against creatures in defensive position or form.
+<u>Punishing kick:</u> The strength of your attacks is capable of pushing back your targets. Whenever you successfully hit with an attack your target will be pushed 10 feet back and if they have less strength than you they will immediately fall prone. This ability can be used against a target that successfully parries your attack by spending an additional move action. Punishing kick will not work against creatures in defensive position or form.
 
 ## Rank III
 
@@ -35,7 +35,7 @@ Increase your critical threshold to 19-20
 
 Increase your critical threshold to 18-20
 
-<u>Deathblow</u>: You are able to deal death with only your fists. Whenever you succesfully strike a creature's head with a precise strike multiply the damage you inflict by 2 and all permanent injuries by 1 step. If you manage to reduce your target's HP to 0 they will die instantly (if they have a way to keep fighting at 0 HP, they will fall unconscious instead).
+<u>Deathblow</u>: You are able to deal death with only your fists. Whenever you successfully strike a creature's head with a precise strike multiply the damage you inflict by 2 and all permanent injuries by 1 step. If you manage to reduce your target's HP to 0 they will die instantly (if they have a way to keep fighting at 0 HP, they will fall unconscious instead).
 
 <u>Opportunistic strike:</u> Every weakness in your target's defense provides a golden opportunity to strike. Once per round you can make an additional attack as a reaction against a target which suffers a harmful status effect or permanent injury. This ability also works against enemies that have taken damage from another source.
 
@@ -54,9 +54,9 @@ A natural attack consists of any attack made using a part of your body, as is a 
   | Deflect projectiles | Trap blade         |
   | Pressure point      | Whirlwind of steel |
 
-- **Bite**: You are capable of inflicting greivous wouds with your jaw. Once per turn as a bonus action you can bite a grappled or incapacitated target. a bite will deal 1d6 + STR piercing damage and all permanent injuries inflicted with it will increase by 1 step. The abilities Stunning fist, punishing kick, pressure point and precise fist will not function on a bite.
+- **Bite**: You are capable of inflicting grievous wounds with your jaw. Once per turn as a bonus action you can bite a grappled or incapacitated target. a bite will deal 1d6 + STR piercing damage and all permanent injuries inflicted with it will increase by 1 step. The abilities Stunning fist, punishing kick, pressure point and precise fist will not function on a bite.
 
-- **Tentacle**: You possess a flexible tentacle with which you can attack and grapple your foes. A tentacke has a reach of 10 feet deals as much damage as a base bludgeoning attack. Instead of dealing damage a tentacle can be used to grab a part of your target's body, causing them to become entangled and impeding them from moving more than 15 feet away from you. Escaping from a tentacle grab works the same way as escaping from a grapple. Certain weapon attributes will be substituted with those from chains as indicated in the following table:
+- **Tentacle**: You possess a flexible tentacle with which you can attack and grapple your foes. A tentacle has a reach of 10 feet deals as much damage as a base bludgeoning attack. Instead of dealing damage a tentacle can be used to grab a part of your target's body, causing them to become entangled and impeding them from moving more than 15 feet away from you. Escaping from a tentacle grab works the same way as escaping from a grapple. Certain weapon attributes will be substituted with those from chains as indicated in the following table:
 
   | Attribute          | Substitution    |
   | ------------------ | --------------- |
