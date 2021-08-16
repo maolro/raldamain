@@ -38,7 +38,7 @@ Una criatura que camine encima de una capa de hielo se encuentra a riesgo de res
 
 ### Calor extremo
 
-Una criatura que se exponga a un entorno cálido (es decir, por encima de 45 grados) sufrirá los efectos de un veneno de constitución, aumentando el nivel de este por 1 cada hora que pase en él. El tiro de gravedad será igual a 2 dados de dificultad y aumentará por 1 cada vez que sea repetido. Si el clima es de calor extremo (es decir, por encima de 60 grados) deberá repetir el tiro cada vez que pasen 10 minutos.
+Una criatura que se exponga a un entorno cálido (es decir, por encima de 45 grados) sufrirá los efectos de un veneno de constitución, aumentando el nivel de este por 1 cada hora que pase en él. El tiro de gravedad será igual a +2  y aumentará por 2 cada vez que sea repetido. Si el clima es de calor extremo (es decir, por encima de 60 grados) deberá repetir el tiro cada vez que pasen 10 minutos.
 
 ### Tormenta de arena
 

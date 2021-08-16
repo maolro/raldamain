@@ -31,11 +31,19 @@ Cuando los jugadores reinicien su exploración encuentran los restos de un campa
 
 El campamento de los jugadores es atacado por varios nativos de la isla. 
 
-
+1x  Tamborilero de guerra, 3x Guerrero nativo, 2x Arquero nativo, 1x Tigre dientes de sable
 
 ### Encuentro con Petrikov
 
+Los jugadores se encuentran con el general Petrikov, quien ofrece su ayuda para salir con vida de la isla. Afirma que la única solución es atacar la base de los nativos.
+
 ### El poblado nativo
+
+Los jugadores asaltan el poblado nativo. Petrikov se aprovecha de la batalla para entrar en las tumbas gélidas. Cuando esto ocurra el chamán ofrecerá una tregua.
+
+3x Guerrero tribal, 2x Arquero nativo, 1x Tigre dientes de sable (patrulla de caza)
+
+5x Arquero nativo (defensores de la muralla)
 
 ### Las tumbas gélidas
 
