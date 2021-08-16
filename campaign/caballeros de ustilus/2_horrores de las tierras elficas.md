@@ -19,7 +19,7 @@ Esta misión debe resultar lo más atractiva posible a los jugadores y que se as
 
 ### La embajadora ustilesa
 
-Cuando los jugadores acepten la misión Fileon le pedirá a su buen amigo Ajek, otro caballero de Ustilus, que les lleve hasta el lugar de encuentro con la embajadora. En este momento los jugadores tienen la oportunidad de conocer a este nuevo personaje, quien será clave para el desarrollo de la campaña misma. Ajek será en un principio bastante amigable 
+Cuando los jugadores acepten la misión Fileon le pedirá a su buen amigo Ajek, otro caballero de Ustilus, que les lleve hasta el lugar de encuentro con la embajadora. En este momento los jugadores tienen la oportunidad de conocer a este nuevo personaje, quien será clave para el desarrollo de la campaña misma. Ajek será en un principio bastante amistoso hacia los jugadores, siendo muy abierto y honesto sobre su vida y forma de pensar. Si un jugador llega a caerle especialmente bien puede comentarle más información sobre los espíritus y hasta sobre la relación entre Fileon e Ileria. 
 
 ### El consorcio maderero
 
