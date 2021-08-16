@@ -31,7 +31,7 @@ Esta es una lista de los tipos más comunes de agente y el nivel con el que cuen
 
 <u>Jornalero</u>: Un jornalero es un trabajador poco especializado ideal para realizar labores manuales o tareas sencillas. Es necesario contratar jornaleros para la ampliación de una base (2 jornaleros por cada PC de la habitación, los cuáles estarán activos durante dos meses por PC) y estos pueden ser enviados a misiones sencillas de poco riesgo. 
 
-<u>Soldado</u>: Un soldado es la unidad más básica de un ejército y se caracteriza por ser individualmente débil pero poderoso en grandes grupos. Un solado será de nivel 1 a 3 y tendrá equipamiento de mejor calidad que un matón común, incluyendo armaduras y armas más modernas. Si tu organización no forma parte del ejército un soldado incrementará su NC por 1.
+<u>Soldado</u>: Un soldado es la unidad más básica de un ejército y se caracteriza por ser individualmente débil pero poderoso en grandes grupos. Un soldado será de nivel 1 a 3 y tendrá equipamiento de mejor calidad que un matón común, incluyendo armaduras y armas más modernas. Si tu organización no forma parte del ejército un soldado incrementará su NC por 1.
 
 <u>Matón</u>: Un matón es un individuo que emplea la fuerza bruta para hacer cumplir las órdenes de tu organización. Estos suelen carecer de escrúpulos y frecuentan a ser de nivel 1-3 con rangos relacionados con combate. No obstante, no tendrán acceso a arm0as de buena calidad ni armaduras, basándose más en su fuerza física.
 
