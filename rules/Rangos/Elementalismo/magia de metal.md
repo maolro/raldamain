@@ -27,7 +27,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental
 
 Aumenta tu probabilidad de crítico a 19-20.
 
-<u>Fortalecer ataques:</u> Puedes emplear una acción de movimiento para incrementar la fuerza de un ataque elemental, aumentando su tamaño por 5 pies y su daño base por 1. Usar esta habilidad te cuesta una acción bonus si empleas uno de los objetos metálicos atrapados en tu aura magnética para incrementar su fuerza.
+<u>Fortalecer ataques:</u> Puedes emplear una acción de movimiento para incrementar la fuerza de un ataque elemental, aumentando su tamaño por 5 pies y su daño base por 2. Usar esta habilidad te cuesta una acción bonus si empleas uno de los objetos metálicos atrapados en tu aura magnética para incrementar su fuerza.
 
 <u>Ferrokinesia</u>: Como acción estándar puedes agarrar telekinéticamente a una criatura que lleve armadura metálica, lo cual funciona como un ataque elemental hecho contra su heroísmo. Si tienes éxito tu objetivo quedará agarrado y podrás emplear una acción de movimiento para empujar a tu objetivo 15 pies en cualquier dirección. En el caso que entre en contacto con una superfície sólida este sufrirá daño de caída como si se hubiese caído de una altura igual al número de pies de movimiento que no ha podido recorrer. No puedes mantener agarradas a más criaturas que tu rango - 2.
 
