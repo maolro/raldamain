@@ -11,11 +11,21 @@ Comuna élfica de Endophiel
 
 ## Inicio
 
+Este capítulo iniciaría en el campamento ustilés después de la victoria de los jugadores en el paso de Alascur. Aunque el sentimiento es de júbilo, hay algo de anticipación en el aire a causa de la noticia de un gran ejército mazarino que está cruzando la frontera hacia Kratoi. En este contexto los jugadores recibirán un mensaje de parte de Fileon, el caballero de Ustilus quien les asistió en la defensa de Alascur, pidiéndoles que vayan a su tienda de campaña. Ahí él les felicitará por su hazaña y les ofrecerá una misión fuera del frente y aparentemente sencilla: deberán escoltar a una embajadora ustilesa al territorio de una aislacionaista comuna élfica. Aquellos jugadores perspicaces pueden darse cuenta que a Fileon le preocupa mucho la seguridad de la embajadora e insiste repetidas veces que se aseguren que nada le pase. Si indagan más en el motivo del viaje de la embajadora Fileon les responderá que viene ahí para resolver un conflicto entre los elfos de la región y el consorcio maderero kratense. 
 
+Esta misión debe resultar lo más atractiva posible a los jugadores y que se asemeje a una alternativa mejor a ir al frente de batalla. Lo que no sabrán es que en la aparentemente sencilla comuna una oscura conspiración yace la bajo la superficie la cual puede alterar el rumbo de la misma guerra entre Mazarin y Ustilus.
 
 ## Encuentros
 
+### La embajadora ustilesa
+
+Cuando los jugadores acepten la misión Fileon le pedirá a su buen amigo Ajek, otro caballero de Ustilus, que les lleve hasta el lugar de encuentro con la embajadora. En este momento los jugadores tienen la oportunidad de conocer a este nuevo personaje, quien será clave para el desarrollo de la campaña misma. Ajek será en un principio bastante amigable 
+
 ### El consorcio maderero
+
+
+
+
 
 El consorcio maderero kratense está talando más árboles de Endophiel para la flota ustilesa. Tensiones entre el consorcio y los elfos e indicaciones de anteriores encuentros.
 
