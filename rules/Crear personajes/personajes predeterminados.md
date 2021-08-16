@@ -70,7 +70,7 @@ En esta categoría se encuentran los tipos de personaje que utilizan una varieda
 **Brujo** (INT, CON, CAR)
 
 - <u>Talentos:</u> Conocimiento, Engaño, Persuasión, Averiguar intenciones
-- <u>Rangos:</u> Nigromancia, Plantilla (Sombría, Abisal, Infernal, Oni), Castigo divino, Conocimiento
+- <u>Rangos:</u> Nigromancia, Plantilla (Sombría, Abisal, Infernal, Oni), Magia divina, Conocimiento
 
 ## [Líderes](https://raldamain.com/rules/Crear%20personajes/l%C3%ADderes.html)
 
@@ -89,5 +89,5 @@ En esta categoría se encuentran los tipos de personaje cuyas habilidades les pe
 **Druida** (SAB, FUE, CON)
 
 - <u>Talentos:</u> Supervivencia, Percepción, Averiguar intenciones, Atletismo
-- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Metal, Naturaleza), Ascendencia (Fuego, Aire, Agua, Tierra, Boreal, Verdeante), Guerrero elemental, Aptitud con arma (cualquiera)
+- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Naturaleza), Ascendencia (Fuego, Aire, Agua, Tierra, Boreal, Verdeante), Guerrero elemental, Aptitud con arma (cualquiera)
 
