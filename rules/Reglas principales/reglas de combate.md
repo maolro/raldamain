@@ -22,7 +22,7 @@ Una acción de movimiento requiere menos esfuerzo que una acción estándar y ti
 - <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante.
 - <u>Posición defensiva:</u> Añade un dado de Dificultad a todos tus tiros defensivos durante un turno. Si gastas una acción estándar para entrar en posición defensiva, convierte además uno de tus dados de Dificultad en un dado de Desafío.
 
-Puedes gastar dos ventajas o desventajas generadas para realizar una acción de movimiento fuera de tu turno (4 ventajas para realizar una acción estándar) siempre y cuando te queden acciones sin utilizar. También puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal, la cual no reducirá tu valor de prioridad.
+Puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal, la cual no reducirá tu valor de prioridad.
 
 ### Acción de turno completo
 
@@ -40,9 +40,9 @@ Las reacciones son todas aquellas acciones que realizas fuera de tu turno. En es
 
 #### Tiros defensivos
 
-Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará los correspondientes dados. Cuando unos dados son tirados defensivamente estos serán transformados a sus respectivos dados negativos de la siguiente manera: un dado de Habilidad se convierte en un dado de Dificultad, un dado de Soltura se convierte en un dado de Desafío y un dado de Ventaja se convierte en un dado de Desventaja.
+Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará un d20 con el bonificador adecuado. s
 
-Toda criatura puede defenderse utilizando las reacciones Parada y Esquiva. Esquiva representa utilizar la agilidad para evitar un ataque y puede usarse para evitar ataques a distancia y de área, mientras que Parada representa bloquear un ataque cuerpo a cuerpo empleando cualquier objeto capaz de hacerlo. El tiro de Esquiva equivale a la estadística de DES de la criatura lanzada defensivamente mientras el tiro de Parada depende del tamaño del objeto que se utiliza para detener el ataque, siendo como mínimo 2 dados de Dificultad.
+Toda criatura puede defenderse utilizando las reacciones Parada y Esquiva. Esquiva representa utilizar la agilidad para evitar un ataque y puede usarse para evitar ataques a distancia y de área, mientras que Parada representa bloquear un ataque cuerpo a cuerpo empleando cualquier objeto capaz de hacerlo. El bonificador de Esquiva equivale a la estadística de DES de la criatura lanzada defensivamente mientras que el de Parada equivale a la estadística de FUE.
 
 #### Ataques de oportunidad
 
@@ -54,41 +54,35 @@ Un ataque de oportunidad también puede provocarse si una criatura guarda su acc
 
 ## Factores adicionales
 
+### Ventaja y desventaja
+
+
+
 ### Cubierta
 
-Una persona tiene cubierta cuando se encuentra tras un obstáculo que le permite protegerse de proyectiles y explosiones, haciendo que sea más difícil de localizar. Si un personaje tiene cubierta podrá cancelar un éxito adicional al turno en tiros de Esquiva y puede emplear acciones de movimiento para esconderse. Cuando una criatura con cubierta entre en posición defensiva podrá cancelar un éxito adicional al turno si continúa estando detrás de la cubierta. Para que un obstáculo cuente como cubierta debe tener tamaño igual o superior a un cuarto del tamaño de la criatura y estar bloqueando la línea de visión. El máster tiene la última palabra al decidir si algo cuenta como cubierta o no.
+Una persona tiene cubierta cuando se encuentra tras un obstáculo que le permite protegerse de proyectiles y explosiones, haciendo que sea más difícil de localizar. Si un personaje tiene cubierta recibirá ventaja en todos sus de Esquiva y puede emplear acciones de movimiento para esconderse. Para que un obstáculo cuente como cubierta debe tener tamaño igual o superior a un cuarto del tamaño de la criatura y estar bloqueando la línea de visión. El máster tiene la última palabra al decidir si algo cuenta como cubierta o no.
 
-Los bonificadores por cubierta se aplicarán también si hay otras criaturas entre el atacante y su objetivo. Un personaje que reciba cubierta por este efecto no podrá esconderse ni podrá cancelar un éxito adicional al turno salvo que haya una criatura de tamaño superior a ella bloqueando el camino del atacante.
+Los bonificadores por cubierta se aplicarán también si hay otras criaturas entre el atacante y su objetivo. Un personaje que reciba cubierta por este efecto no podrá esconderse salvo que haya una criatura de tamaño superior a ella bloqueando el camino del atacante. Estos efectos se evitarán si el atacante escoge emplear una acción de movimiento adicional para apuntar.
 
-En determinadas situaciones pueden encontrarse tipos superiores de cubierta. Si una criatura tiene todo el cuerpo cubierto salvo una pequeña obertura esta recibirá cubierta superior, lo cual le permite cancelar dos éxitos adicionales al turno. Si no hay ningún tipo de obertura entre el atacante y su objetivo este tendrá cubierta completa, lo cual le protegerá de todos los ataques hasta que la cubierta sea destruida.
+En determinadas situaciones pueden encontrarse tipos superiores de cubierta. Si una criatura tiene todo el cuerpo cubierto salvo una pequeña obertura esta recibirá cubierta superior, lo cual le otorgará dos dados de desventaja en sus tiros defensivos. Si no hay ningún tipo de obertura entre el atacante y su objetivo este tendrá cubierta completa, lo cual le protegerá de todos los ataques hasta que la cubierta sea destruida.
 
 ### Flanqueo
 
-Una criatura es flanqueada si está siendo atacada desde dos puntos opuestos. Al atacar a una criatura flanqueada el atacante recibirá un dado de Ventaja en su tiro y el defensor no podrá Esquivar para defenderse. Ataque furtivo se aplica contra criaturas flanqueadas y el defensor sólo podrá evitar estas penalizaciones si tiene el atributo Esquiva asombrosa mejorada.
+Una criatura es flanqueada si está siendo atacada desde dos puntos opuestos. Al atacar a una criatura flanqueada el atacante recibirá ventaja en su tiro y el defensor no podrá Esquivar para defenderse. Ataque furtivo se aplica contra criaturas flanqueadas y el defensor sólo podrá evitar estas penalizaciones si tiene el atributo Esquiva asombrosa mejorada.
 
 Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Parada contra aquellos enemigos que se encuentren en su flanco delantero. Los ataques hechos por una marabunta contra una única persona cuentan como ataques de área, ya que el defensor sufrirá daño obligatorio aunque tenga éxito en el ataque.
 
 ### Ocultamiento
 
-Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, añadiendo un dado de Desventaja a los tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta (este tipo de ocultamiento se conoce como ocultamiento superior). Todos los ataques que hagas contra criaturas incapaces de percibirte contarán como ataques sorpresa, añadiéndote un dado de Ventaja a tus tiros de ataque y evitando que estas puedan tirar para defenderse.
+Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, recibiendo un dado de desventaja en tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta (este tipo de ocultamiento se conoce como ocultamiento superior). Todos los ataques que hagas contra criaturas incapaces de percibirte contarán como ataques sorpresa, añadiéndote un dado de Ventaja a tus tiros de ataque y evitando que estas puedan tirar para defenderse.
 
-Las penalizaciones por ocultamiento pueden contrarrestarse gastando Ventajas en un tiro de ataque. Cada ventaja gastada eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
+Las penalizaciones por ocultamiento pueden contrarrestarse empleando una acción de movimiento para apuntar un ataque. Cada acción empleada así eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies para el siguiente ataque hecho contra la criatura oculta. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
 
 ### Ataque conjunto
 
-Un grupo de criaturas de bajo nivel puede realizar un ataque conjunto contra un enemigo más poderoso, uniendo sus fuerzas para llegar a derrotarle. El daño base del ataque conjunto equivaldrá al daño base más alto entre las criaturas que luchan con un incremento de 1 por cada criatura adicional que participe. El tiro de ataque equivale al tiro de ataque más alto entre las criaturas que realicen esta maniobra y incrementará de la siguiente manera según el número de partícipes.
+Un grupo de criaturas de bajo nivel puede realizar un ataque conjunto contra un enemigo más poderoso, uniendo sus fuerzas para llegar a derrotarle. El daño base del ataque conjunto y el tiro de ataque equivaldrán al daño base más alto entre las criaturas que luchan con un incremento de 2 por cada criatura adicional que participe.
 
-| Número | Incremento                               |
-| ------ | ---------------------------------------- |
-| 2      | 1 dado de Habilidad                      |
-| 3      | 1 dado de Soltura, 1 dado de Habilidad   |
-| 4      | 1 dado de Soltura, 2 dados de Habilidad  |
-| 5      | 1 dado de Soltura, 3 dados de Habilidad  |
-| 6      | 2 dados de Soltura, 3 dados de Habilidad |
-| 7      | 2 dados de Soltura, 4 dados de Habilidad |
-| 8      | 3 dados de Soltura, 4 dados de Habilidad |
-
-Un ataque conjunto cuenta como un ataque de área, infligiendo daño aunque el defensor tenga éxito en el tiro (Evasión se aplica contra este efecto), y el defensor sólo podrá protegerse con Esquiva. El defensor podrá gastar un uso de Parada para reducir el daño que sufre por 2, reduciéndolo como mínimo a 0. Si los atacantes están flanqueando al objetivo entonces este no podrá usar Esquiva para defenderse ni emplear Parada más de una vez al turno. 
+Un ataque conjunto cuenta como un ataque de área, infligiendo daño aunque el defensor tenga éxito en el tiro (Evasión se aplica contra este efecto). Si los atacantes están flanqueando al objetivo entonces este no podrá usar Esquiva para defenderse.
 
 ### Caídas
 
