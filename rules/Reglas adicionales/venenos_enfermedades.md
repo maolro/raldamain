@@ -20,13 +20,13 @@ Cada día después de que una criatura sea contagiada de una enfermedad, esta de
 1. **Asintomática:** La criatura no sufre ningún efecto negativo, pero la enfermedad permanece en su organismo. Aún puede contagiarla a otras personas con quiénes tenga contacto cercano.
 2. **Desorientada:** La criatura está enfermada y recibe un penalizador -1 en todas sus estadísticas mentales.
 3. **Confusa:** La criatura está enfermada y confundida. Sus estadísticas mentales se reducen por 2. 
-4. **Delirio**: La criatura está incapacitada y tiene dificultades distingüendo realidad de sueños. No es capaz de distinguir a amigos de enemigos, añadiendo dos dados de Desventaja a todos los tiros de sanación hechos por aliados. La FUE y DES de la criatura se reducen por 1 y no podrá realizar acciones que requieran un esfuerzo mental.
+4. **Delirio**: La criatura está incapacitada y tiene dificultades distinguiendo realidad de sueños. No es capaz de distinguir a amigos de enemigos, causando que todos los tiros de aliados para sanarla tengan desventaja. La FUE y DES de la criatura se reducen por 1 y no podrá realizar acciones que requieran un esfuerzo mental.
 5. **Coma:** La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
 6. **Muerte:** La criatura muere de su enfermedad. Su cadáver puede seguir siendo contagioso.
 
 ## Venenos
 
-Después de una cantidad determinada de tiempo según la incidencia del veneno la criatura deberá tirar CON contra el tiro de gravedad del veneno. Si tiene éxito, no sufrirá ningún efecto y obtendrá un número de puntos de recuperación igual a los éxitos obtenidos. La criatura se recuperará del veneno cuando los puntos de recuperación sean iguales o superiores a la tasa de recuperación. En el caso que fracase en el tiro de CON, el nivel del veneno aumentará por 1. Las ventajas y desventajas generadas añadirán dados de Ventaja o Desventaja al siguiente tiro contra el veneno.
+Después de una cantidad determinada de tiempo según la incidencia del veneno la criatura deberá tirar CON contra el tiro de gravedad del veneno. Si tiene éxito, no sufrirá ningún efecto y reducirá el nivel del veneno por un paso. En el caso que fracase en el tiro de CON, el nivel del veneno aumentará por 1. 
 
 ### Veneno de FUE
 
@@ -64,7 +64,7 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 
 1. **Abstraída:** La criatura reduce su SAB por 1. 
 2. **Desconcentrada:** La criatura reduce su SAB por 1. Pierde la capacidad de mantener la concentración y no puede usar talentos relacionados con la sabiduría.
-3. **Confusa:** La criatura reduce su SAB por 1 y pasa a esar Confundida.
+3. **Confusa:** La criatura reduce su SAB por 1 y pasa a estar Confundida.
 4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
 5. **Muerte:** La criatura muere envenenada.
 
@@ -102,7 +102,7 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 
 **Ántrax:**
 
-**Amatoxina:** Esta toxina se encuentra en varias especies de hongos venenosos. Al ser ingerida provocará graves daños al hígado y a los riñones, comúnmente causando la muerte al cabo de dos días. La amatoxina es un veneno de CON con tasa de incidencia de una hora y un tiro de gravedad de un dado de desafío y dos dados de dificultad.
+**Amatoxina:** Esta toxina se encuentra en varias especies de hongos venenosos. Al ser ingerida provocará graves daños al hígado y a los riñones, comúnmente causando la muerte al cabo de dos días. La amatoxina es un veneno de CON con tasa de incidencia de una hora y un tiro de gravedad de +4.
 
 **Arsénico:**
 
@@ -120,7 +120,7 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 
 **Ricino:**
 
-**Tranquilizante**
+**Tranquilizante:**
 
 **Veneno de pez globo:**
 
@@ -129,4 +129,3 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 **Veneno de serpiente:**
 
 **Agente nervioso VX:**
-

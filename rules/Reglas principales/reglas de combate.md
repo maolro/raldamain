@@ -10,9 +10,9 @@ Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acci
 
 ### Acción estándar
 
-Una acción estándar es la más importante de un turno, pudiendo emplearse para atacar o lanzar hechizos. No puedes realizar más de una acción estándar al turno salvo que una habilidad te lo permita, y puedes gastar una acción estándar para hacer una acción de movimiento adicional. 
+Una acción estándar es la más importante de un turno, pudiendo emplearse para atacar o lanzar hechizos. No puedes realizar más de una acción estándar al turno salvo que una habilidad te lo permita, y puedes gastar una acción estándar para hacer una acción de movimiento adicional. Para realizar un ataque deberás tirar 1d20 y añadir el bonificador pertinente al resultado. Si tu tiro de ataque es superior al tiro defensivo de tu objetivo tu ataque impactará e infligirás una cantidad de daño o un efecto de estado.
 
-En lugar de emplear tu acción estándar, puedes guardarla para emplearla en un momento futuro. Esto te permite usar tu acción estándar como reacción en cualquier momento del combate. Si una acción guardada interrumpe otra acción, tendrá prioridad la acción guardada salvo que el atacante te haya pillado por sorpresa o te finte. Las acciones guardadas se pierden al principio de tu siguiente turno.
+En lugar de emplear tu acción estándar puedes guardarla para emplearla en un momento futuro. Esto te permite usar tu acción estándar como reacción en cualquier momento del combate. Si una acción guardada interrumpe otra acción, tendrá prioridad la acción guardada salvo que el atacante te haya pillado por sorpresa o te finte. Las acciones guardadas se pierden al principio de tu siguiente turno.
 
 ### Acción de movimiento
 
@@ -22,7 +22,7 @@ Una acción de movimiento requiere menos esfuerzo que una acción estándar y ti
 - <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante.
 - <u>Posición defensiva:</u> Añade un dado de Dificultad a todos tus tiros defensivos durante un turno. Si gastas una acción estándar para entrar en posición defensiva, convierte además uno de tus dados de Dificultad en un dado de Desafío.
 
-Puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal, la cual no reducirá tu valor de prioridad.
+Puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal.
 
 ### Acción de turno completo
 
@@ -40,7 +40,7 @@ Las reacciones son todas aquellas acciones que realizas fuera de tu turno. En es
 
 #### Tiros defensivos
 
-Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará un d20 con el bonificador adecuado. s
+Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará 1d20 con el bonificador adecuado. Si el 
 
 Toda criatura puede defenderse utilizando las reacciones Parada y Esquiva. Esquiva representa utilizar la agilidad para evitar un ataque y puede usarse para evitar ataques a distancia y de área, mientras que Parada representa bloquear un ataque cuerpo a cuerpo empleando cualquier objeto capaz de hacerlo. El bonificador de Esquiva equivale a la estadística de DES de la criatura lanzada defensivamente mientras que el de Parada equivale a la estadística de FUE.
 
@@ -56,7 +56,15 @@ Un ataque de oportunidad también puede provocarse si una criatura guarda su acc
 
 ### Ventaja y desventaja
 
+La ventaja y la desventaja representan una multitud de factores que facilitan o perjudican determinadas acciones. Si una criatura tiene ventaja en un tiro añadirá 1d6 al resultado mientras que si tiene desventaja restará 1d6 a él. Los dados de ventaja obtenidos de numerosas fuentes se acumulan, añadiendo múltiples d6 al resultado (el máster puede decidir que determinados bonificadores no se aplican). Si un personaje obtiene un dado de desventaja y ventaja en el mismo tiro ambos se cancelan.
 
+### Golpe y fallo crítico
+
+Los golpes y fallos críticos representan eventos de gran fortuna o desgracia capaces de alterar el mismo resultado de la batalla. Un personaje obtendrá un golpe crítico si obtiene un 20 natural en su tiro de ataque mientras que obtendrá un fallo crítico si obtiene un 1 natural. Si se obtiene un golpe crítico el personaje que obtenga dicho resultado tendrá éxito automático en su acción mientras que si obtiene un fallo crítico fracasará sin importar sus bonificadores. Si un ataque obtiene un golpe crítico el atacante podrá tirar los dados de daño de su ataque dos veces y aumentará el nivel de todas las heridas permanentes por un paso mientras que si un tiro de defensa obtiene un golpe crítico el defensor podrá realizar un ataque de oportunidad. En el caso que un atacante obtenga un fallo crítico provocará de inmediato un ataque de oportunidad (no podrá defenderse de este ataque si el defensor obtiene un golpe crítico), mientras que si tanto el defensor como el atacante obtienen un golpe o fallo crítico pueden escoger cancelar ambos resultados o intercambiarse sus golpes, infligiéndose daño mutuamente. 
+
+### Ataques indefensos
+
+Una persona quedará indefensa si no es capaz de protegerse de un ataque, sea porque está incapacitada o el atacante le pilla por sorpresa. Esta no podrá realizar tiros defensivos y todo el daño infligido contará como un golpe crítico. El atacante puede escoger apuntar a una parte específica del cuerpo de su objetivo, por lo cual deberá tener éxito en un tiro de ataque contra una dificultad escogida por el máster. Algunos valores son +2 para el pecho, +4 para un brazo o pierna y +6 para la cabeza.
 
 ### Cubierta
 
@@ -77,6 +85,10 @@ Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Para
 Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, recibiendo un dado de desventaja en tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta (este tipo de ocultamiento se conoce como ocultamiento superior). Todos los ataques que hagas contra criaturas incapaces de percibirte contarán como ataques sorpresa, añadiéndote un dado de Ventaja a tus tiros de ataque y evitando que estas puedan tirar para defenderse.
 
 Las penalizaciones por ocultamiento pueden contrarrestarse empleando una acción de movimiento para apuntar un ataque. Cada acción empleada así eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies para el siguiente ataque hecho contra la criatura oculta. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
+
+### Terreno difícil
+
+El terreno difícil representa todos aquellos terrenos que dificultan el movimiento. Cada vez que un personaje pase por terreno difícil deberá gastar 10 pies de movimiento para pasar por él (5 pies si tiene un 3 o más niveles de talento en Acrobacias y 0 si tiene 5 niveles de talento). Si un personaje realiza una carga o es empujado por una zona afectada por terreno difícil deberá tener éxito en un tiro de Acrobacias o quedará tropezado. Criaturas en terreno difícil tendrán desventaja en todos sus tiros para esquivar ataques.
 
 ### Ataque conjunto
 

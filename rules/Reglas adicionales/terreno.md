@@ -57,14 +57,3 @@ Una criatura que se exponga a un entorno cálido (es decir, por encima de 45 gra
 Un lago particularmente grande de ácido acostumbra a desprender humos tóxicos. Estos humos afectan a todas las criaturas que estén adyacentes al ácido y cuentan como un veneno que afecta a la Constitución, teniendo efecto cada ronda. Este veneno perderá su efecto después de que pases una ronda alejado del lago de ácido.
 
 ### Enfermedades
-
-## Llanura
-
-
-
-## Subterráneo
-
-
-
-## Urbano
-

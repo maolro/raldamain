@@ -20,7 +20,7 @@ Un personaje con una fobia siente miedo irracional de un determinado objeto, cri
 
 ## Manía
 
-Un personaje con una manía está obsesionado irracionalmente con un acto u objeto determinado. Cuando una persona con esa locura perciba el causante de su manía deberá tirar sabiduría contra un tiro de dos dados de dificultad o realizará una acción relacionada con su manía (por ejemplo, robará un objeto si tiene cleptomanía o se quedará leyendo un libro si tiene bibliomanía). Aunque tenga éxito en este tiro cada turno adicional que permanezca en contacto con la fuente de su manía deberá repetir el tiro añadiéndole un dado más de dificultad. La naturaleza de una manía quedará decidida por el máster según las circunstancias en las que se ha recibido esta locura. 
+Un personaje con una manía está obsesionado irracionalmente con un acto u objeto determinado. Cuando una persona con esa locura perciba el causante de su manía deberá tirar sabiduría contra un tiro de dificultad +4 o realizará una acción relacionada con su manía (por ejemplo, robará un objeto si tiene cleptomanía o se quedará leyendo un libro si tiene bibliomanía). Aunque tenga éxito en este tiro cada turno adicional que permanezca en contacto con la fuente de su manía deberá repetir el tiro, añadiéndole un modificador +2 cada vez que este sea repetido. La naturaleza de una manía quedará decidida por el máster según las circunstancias en las que se ha recibido esta locura. 
 
 ## Delirio
 
@@ -28,7 +28,7 @@ Un personaje con delirios tiene una creencia que defenderá con convicción por 
 
 ## Alucinaciones
 
-Un personaje con alucinaciones tiene dificultades distinguiendo realidad de ficción debido a dificultades procesando información de los sentidos. Las alucinaciones causarán que dicho personaje reciba un penalizador de dos dados de Desventaja en todos los tiros relacionados con la estadística de sabiduría y ataques a distancia. Cuando un personaje con esta locura entre en combate u otra situación estresante su mente empezará a sobrecargarse, causando que esté confundido hasta que salga de esa situación. 
+Un personaje con alucinaciones tiene dificultades distinguiendo realidad de ficción debido a dificultades procesando información de los sentidos. Las alucinaciones causarán que dicho personaje reciba desventaja en todos los tiros relacionados con la estadística de sabiduría y ataques a distancia. Cuando un personaje con esta locura entre en combate u otra situación estresante su mente empezará a sobrecargarse, causando que esté confundido hasta que salga de esa situación. 
 
 ## Paranoia
 
@@ -40,10 +40,10 @@ Un personaje con estrés postraumático ha vivido un momento de extrema dureza q
 
 ## Múltiples personalidades
 
-Un personaje con múltiples personalidades manifiesta varias identidades distintas en la misma mente. Una vez al día un personaje con esta locura debe hacer un tiro de sabiduría contra dos dados de dificultad o cambia de personalidad durante una hora por cada fracaso generado. Cada vez que un personaje tenga éxito en el tiro añadirá a él un dado de dificultad adicional hasta que sufra un cambio de personalidad. El número de personalidades y su naturaleza queda decidida por el máster. En algunos casos particularmente graves de esta locura las demás personalidades pueden empezar a desarrollar sus propias habilidades, lo cual causará que al cambiar de personalidad tengas que alterar también determinados rangos como decida el máster. 
+Un personaje con múltiples personalidades manifiesta varias identidades distintas en la misma mente. Una vez al día un personaje con esta locura debe hacer un tiro de sabiduría de dificultad +2 o cambia de personalidad durante 1d6 horas. Cada vez que un personaje tenga éxito en el tiro añadirá a él un modificador +2 cada vez que lo repita hasta que sufra un cambio de personalidad. El número de personalidades y su naturaleza queda decidida por el máster. En algunos casos particularmente graves de esta locura las demás personalidades pueden empezar a desarrollar sus propias habilidades, lo cual causará que al cambiar de personalidad tengas que alterar también determinados rangos como decida el máster. 
 
 Mientras tengas esta locura no serás consciente de las acciones que realizan tus otras identidades y en un principio negarás su existencia. Si eres consciente de ellas puedes llegar a un acuerdo con estas respecto al control de tu cuerpo, lo cual evita que tengas que hacer el tiro pero deberás especificar horas o días determinados en los cuales tus otras personalidades se manifestarán. Puedes también dejar que otra de tus personalidades tome control en determinados momentos o situaciones.
 
 ## Psicosis
 
-Un personaje con psicosis carece de empatía hacia el mundo que le rodea, buscando saciar sus pasiones más oscuras sin tener en cuenta las consecuencias que causarán. La psicosis es muy difícil de identificar y neutralizar ya que una persona con esta locura intentará ocultarla en todo momento, dándole un dado de Desafío adicional en tiros de Engaño y defendiéndose de efectos mentales. Esta locura funciona como Múltiples personalidades respecto a los cambios de personalidad pero añadiendo un dado de Desafío a tiros para resistir el cambio. Es imposible llegar a un acuerdo con la identidad psicótica, ya que esta siempre buscará obtener control absoluto de tu cuerpo.
+Un personaje con psicosis carece de empatía hacia el mundo que le rodea, buscando saciar sus pasiones más oscuras sin tener en cuenta las consecuencias que causarán. La psicosis es muy difícil de identificar y neutralizar ya que una persona con esta locura intentará ocultarla en todo momento, dándole ventaja en tiros de Engaño y defensa contra de efectos mentales. Esta locura funciona como Múltiples personalidades respecto a los cambios de personalidad pero añadiendo +2 a tiros para resistir el cambio. Es imposible llegar a un acuerdo con la identidad psicótica, ya que esta siempre buscará obtener control absoluto de tu cuerpo.
