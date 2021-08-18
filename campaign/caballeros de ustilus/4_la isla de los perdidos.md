@@ -39,7 +39,7 @@ Los jugadores se encuentran con el general Petrikov, quien ofrece su ayuda para 
 
 ### El poblado nativo
 
-Los jugadores asaltan el poblado nativo. Petrikov se aprovecha de la batalla para entrar en las tumbas gélidas. Cuando esto ocurra el chamán ofrecerá una tregua.
+Los jugadores asaltan el poblado nativo. Petrikov se aprovecha de la batalla para entrar en las tumbas gélidas. Cuando esto ocurra el chamán ofrecerá una tregua. Él les explicará la historia de la isla y qué están custodiando.
 
 3x Guerrero tribal, 2x Arquero nativo, 1x Tigre dientes de sable (patrulla de caza)
 
@@ -47,7 +47,19 @@ Los jugadores asaltan el poblado nativo. Petrikov se aprovecha de la batalla par
 
 ### Las tumbas gélidas
 
+Los jugadores entran en las tumbas gélidas en busca de Petrikov, pero deberán enfrentarse al ejército de soldados malditos de Tenebrius.
+
+5x Soldado de Tenebrius
+
+4x Soldado de Tenebrius, 2x Arquero gélido, 1x Lobo de las nieves, 1x Hechicero del invierno
+
+3x Soldado de Tenebrius, 2x Arquero gélido, 1x Campeón de Tenebrius, 2x Lobo de las nieves
+
 ### La corona de Tenebrius
+
+Los jugadores llegan a la sala con la corona de Tenebrius. Ahí Petrikov se la pondrá e invocará a un poderoso elemental de hielo praa atacarlos. Petrikov enloquece y escapa volando de la tumba. Después de este evento la gran tormenta se disipará.
+
+1x Elemental de hielo
 
 ## Enemigos
 
