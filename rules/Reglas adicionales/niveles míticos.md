@@ -25,7 +25,7 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 <u>Aumento de estadísticas:</u> Al alcanzar tu primer nivel mítico incrementa una de tus estadísticas por 1, llegando como máximo a 12. Cada vez que recibas un nuevo nivel mítico vuelve a aumentar una de tus estadísticas. 
 
-<u>Elegido del destino:</u> El destino guía tus acciones para lograr hazañas espectaculares y protegerte de una muerte casi segura. Recibes un número de cargas míticas igual a la mitad de los niveles míticos que tengas (redondeado hacia arriba), las puedes gastar para cancelar resultados obtenidos en tiros de habilidad, ataque o defensa. Una carga mítica te permite cancelar un éxito o dos ventajas además de sus respectivos resultados negativos (fracasos y desventajas). Las cargas míticas que tengas se restaurarán al final de la ronda.
+<u>Elegido del destino:</u> El destino guía tus acciones para lograr hazañas espectaculares y protegerte de una muerte casi segura. Recibes un número de cargas míticas igual a la mitad de los niveles míticos que tengas (redondeado hacia arriba), las puedes gastar para mejorar los obtenidos en tiros de habilidad, ataque o defensa. Una carga mítica te permite añadir 1d6 al tiro después que obtengas el resultado, permitiéndote así convertir un fracaso en un éxito. Las cargas míticas que tengas se restaurarán al hacer un descanso corto.
 
 <u>Iniciativa mítica:</u> A nivel mítico 2 recibes un incremento a tu prioridad igual a la tu nivel mítico dividido entre 2 (redondeando hacia abajo) y te posicionarás antes que otros personajes no-míticos con el mismo valor de prioridad sin importar el arma que utilicen. Las criaturas no-míticas no obtendrán ningún bonificador por flanqueo ni ataque sorpresa contra ti.
 
@@ -35,7 +35,7 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 <u>Regeneración superior:</u> A nivel mítico 3 tu cuerpo es capaz de sanarse a velocidades muy rápidas. Al principio de la ronda recuperas 2 Vitalidad y 2 PV, acumulándose con otros atributos que otorguen regeneración. Además de ello, al descansar tus heridas permanentes reducen su gravedad con mayor rapidez, permitiéndote reducir el nivel de una de tus heridas por 1 al realizar un descanso corto y el nivel de todas tus heridas al realizar un descanso largo (esto se acumula con otras habilidades similares como Conexión elemental).
 
-<u>Inspiración mítica:</u> A nivel mítico 4 eres capaz de emplear tu poder mítico para empujarte a ti mismo y a tus aliados a conseguir lo imposible. Recibes una reserva de puntos de inspiración igual a tu nivel mítico - 1, los cuales puedes gastar para que tanto tú como un aliado reciban un dado de Ventaja o Desventaja en un tiro (no puedes afectar a la misma persona con más de 5 puntos de inspiración a la vez). Los puntos recibidos por esta habilidad se acumulan con el atributo Inspiración.
+<u>Inspiración mítica:</u> A nivel mítico 4 eres capaz de emplear tu poder mítico para empujarte a ti mismo y a tus aliados a conseguir lo imposible. Recibes una reserva de puntos de inspiración igual a tu nivel mítico - 1, los cuales puedes gastar para que tanto tú como un aliado reciban ventaja o desventaja en un tiro (no puedes afectar a la misma persona con más de 3 puntos de inspiración a la vez). Los puntos recibidos por esta habilidad se acumulan con el atributo Inspiración.
 
 <u>Resistencias míticas:</u> A nivel mítico 5 incrementa tu armadura natural junto con todas las resistencias elementales y mágicas que tengas por 2. Te vuelves además inmune a todos los efectos de estado infligidos por criaturas no-míticas.
 
@@ -43,7 +43,7 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 <u>Instinto de batalla:</u> A nivel mítico 7 tus instintos han alcanzado una agudeza sobrenatural, permitiéndote notar la posición exacta de todas las criaturas que se encuentren a 30 pies de ti aunque lo puedas percibirlas normalmente, como sería el caso de criaturas invisibles. No sufres ninguna penalización por ocultamiento contra enemigos que se encuentren a esa distancia y recibes inmunidad a fintas hechas por criaturas no-míticas.
 
-<u>Voluntad inquebrantable:</u> A nivel mítico 8 tu voluntad no puede ser sometida por ningún efecto mortal, otorgándote inmunidad a efectos mentales, miedo y moral provocados por efectos no-míticos. Puedes además ejercer tu voluntad para cambiar forzosamente el destino, permitiéndote un número de veces por combate igual a tu nivel mítico - 2 repetir un tiro de ataque, defensa o habilidad conservando todos tus bonificadores. Esta habilidad solo puede emplearse más de una vez por tiro y puedes quedarte con el resultado que más te convenga.
+<u>Voluntad inquebrantable:</u> A nivel mítico 8 tu voluntad no puede ser sometida por ningún efecto mortal, otorgándote inmunidad a efectos mentales, miedo y moral provocados por efectos no-míticos. Puedes además ejercer tu voluntad para cambiar forzosamente el destino, permitiéndote un número de veces por combate igual a tu nivel mítico entre 2 (redondeando hacia abajo) repetir un tiro de ataque, defensa o habilidad conservando todos tus bonificadores. Esta habilidad solo puede emplearse más de una vez por tiro y puedes quedarte con el resultado que más te convenga.
 
 <u>Invulnerabilidad:</u> A nivel mítico 9 recibes inmunidad a todo el daño físico hecho por fuentes no-míticas. Tienes además la capacidad de resucitar cuando te encuentres al borde de la muerte, recibiendo una descarga de poder mítico para continuar luchando. Esta habilidad solo puede usarse una vez al día y al emplearse te resucitará al instante con todos tus PV y Vitalidad. Invulnerabilidad no puede emplearse si sufres una herida crítica infligida por otra criatura mítica.
 
@@ -51,7 +51,11 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 ## Atributos míticos
 
+Los niveles míticos son capaces de mejorar exponencialmente las habilidades otorgadas por atributos básicos. Al obtener un nivel mítico mejora uno de tus atributos de la siguiente manera:
+
 ### Armas
+
+<u>Tajo feroz:</u> Las criaturas cuya armadura otorgue 4 o menos defensa cuentan como si no llevasen armadura para los propósitos de tus habilidades. Puedes además defenderte de ataques a distancia y mágicos empleando tu espada, permitiéndote usar parada para protegerte de estos.
 
 ### Combate
 

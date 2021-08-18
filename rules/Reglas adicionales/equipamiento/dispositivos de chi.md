@@ -40,6 +40,6 @@
 
 <u>Puerta de demiplano:</u>
 
-<u>Implante predictivo:</u>
+<u>Implante predictivo:</u> 
 
-<u>Implante de concentración:</u>
+<u>Implante de concentración:</u> 

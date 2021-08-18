@@ -2,17 +2,11 @@
 title: Talentos
 ---
 
-Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. Cada talento está asociado con una estadística, lo cual queda indicado en la Lista de talentos.
+Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. Al realizar un tiro relacionado con un talento en el cual tengas soltura, lo cual se conoce como tiro de habilidad, súmale el nivel de talento que tengas. 
 
-Los beneficios que te otorgan los niveles de talento son los siguientes:
+Los talentos te aumentarán también tus estadísticas a determinados niveles si estas tienen valores demasiado bajos. A nivel de talento 3 aumenta la estadística asociada por 1 si es inferior a 3 y a nivel de talento 5 auméntala de nuevo si es inferior a 4.
 
-| Nivel | Beneficio                                                    |
-| ----- | ------------------------------------------------------------ |
-| 1     | +1 dado de soltura                                           |
-| 2     | Si tienes 2 o menos en la estadística relacionada con tu talento, auméntala por 1. |
-| 3     | +1 dado de soltura                                           |
-| 4     | Si tienes 3 o menos en la estadística relacionada con tu talento, auméntala por 1. |
-| 5     | +1 dado de soltura                                           |
+Cada talento está asociado con una estadística, lo cual queda indicado en la Lista de talentos.
 
 ## Lista de talentos
 
@@ -32,17 +26,15 @@ Tienes un sentido de intuición que te permite detectar mentiras. Recibes soltur
 
 Tienes soltura en tiros para romper objetos o causar daño a estructuras. Hacer un tiro de Destrozar te cuesta una acción estándar y al impactar le haces daño al objeto dependiendo del arma que uses. Un objeto tira dados defensivos dependiendo de su dureza y tiene PV determinados por su tamaño y su material. Estos son algunos ejemplos de estadísticas de objetos.
 
-| Objeto                            | Tiro defensivo                                               | PV   |
-| --------------------------------- | ------------------------------------------------------------ | ---- |
-| Puerta de madera                  | 1 Desafío, 3 Dificultad. Armas pesadas ignoran el tiro defensivo. | 4    |
-| Puerta reforzada                  | 2 Desafío, 2 Dificultad. Armas pesadas ignoran el tiro defensivo. | 7    |
-| Cuerda                            | 2 Desafío, 2 Dificultad. Armas cortantes ignoran el tiro defensivo | 1    |
-| Pared de piedra (porción 20 pies) | 3 Desafío, 3 Dificultad.                                     | 13   |
-| Muro (porción 20 pies)            | 3 Desafío, 4 Dificultad.                                     | 20   |
-| Cadena                            | 2 Desafío, 4 Dificultad.                                     | 4    |
-| Puerta de hierro                  | 3 Desafío, 2 Dificultad.                                     | 9    |
-
-
+| Objeto                            | Tiro defensivo                                | PV   |
+| --------------------------------- | --------------------------------------------- | ---- |
+| Puerta de madera                  | +4. Armas pesadas ignoran el tiro defensivo.  | 4    |
+| Puerta reforzada                  | +6. Armas pesadas ignoran el tiro defensivo.  | 7    |
+| Cuerda                            | +6. Armas cortantes ignoran el tiro defensivo | 1    |
+| Pared de piedra (porción 20 pies) | +9                                            | 13   |
+| Muro (porción 20 pies)            | +10                                           | 20   |
+| Cadena                            | +8                                            | 4    |
+| Puerta de hierro                  | +8                                            | 9    |
 
 ### Engaño (CAR)
 
@@ -54,7 +46,7 @@ Eres un experto en los ámbitos relacionados con un tema. Tienes soltura en tiro
 
 ### Heroísmo (FUE)
 
-Eres capaz de usar tu fuerza física para realizar grandes proezas en el campo de batalla. Tienes soltura en tiros de ataque para hacer maniobras de combate (Agarrar, Tropezar, Empujar o Desarmar) y para atacar con armas improvisadas. Puedes usar tus dados de Heroísmo para defenderte de maniobras de combate, y puedes cancelar una vez al turno un éxito generado por el enemigo a nivel de talento 2 (2 veces al turno a nivel de talento 4).
+Eres capaz de usar tu fuerza física para realizar grandes proezas en el campo de batalla. Tienes soltura en tiros de ataque para hacer maniobras de combate (Agarrar, Tropezar, Empujar o Desarmar) y para atacar con armas improvisadas. Puedes emplear tu heroísmo para defenderte de otras maniobras de combate.
 
 ### Intimidar (FUE)
 
@@ -66,7 +58,7 @@ Tienes soltura en tiros para trastear cerraduras, hurtar pertenencias ajenas o h
 
 ### Primeros auxilios (SAB)
 
-Conoces instintivamente como estabilizar a una persona herida. Como acción estándar puedes estabilizar a una criatura con 0 o menos puntos de vida. Si usas Primeros auxilios en una criatura que ya esté estabilizada puedes eliminar los efectos de Sangrado y le curas PV igual al número de niveles de talento que tengas. Sólo puedes usar Primeros auxilios de esta manera en combate un número de veces al día igual a tu nivel de talento y sólo una vez por descanso. No consumes un uso de esta habilidad si tienes el material adecuado para sanar.
+Conoces instintivamente como estabilizar a una persona herida. Como acción estándar puedes estabilizar a una criatura con 0 o menos puntos de vida. Si usas Primeros auxilios en una criatura que ya esté estabilizada puedes eliminar los efectos de Sangrado y le curas PV igual al número de niveles de talento que tengas. Sólo puedes usar Primeros auxilios de esta manera en combate un número de veces al día igual a tu nivel de talento y sólo una vez por descanso. No consumes un uso de esta habilidad la primera vez que la utilizas si tienes el material adecuado para sanar.
 
 ### Percepción (SAB)
 

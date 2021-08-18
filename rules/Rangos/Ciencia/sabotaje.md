@@ -7,13 +7,13 @@ Tienes amplios conocimientos sobre como funcionan los conductos de chi dentro de
 
 ## Rango I
 
-Añade un dado de soltura adicional a tus tiros de sabotaje.
+Añade tu rango a todos tus tiros relacionados con sabotaje.
 
-<u>Sobrecarga:</u> Como acción estándar usable un número de veces al día igual a tu rango de Sabotaje + 1 puedes alterar los conductos de chi de una máquina o un objeto. Esta habilidad funciona igual que la habilidad [disrupción](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-i), pero si afectas una máquina inteligente haz un tiro de Sabotaje contra sus dados de seguridad, infligiéndole 2+Éxito daño de cordura si tienes éxito. Para emplear esta acción debes estar a menos de 15 pies de dicho objeto y ser capaz de detectarlo con la habilidad Percibir información. 
+<u>Sobrecarga:</u> Como acción estándar usable un número de veces al día igual a tu rango de Sabotaje + 1 puedes alterar los conductos de chi de una máquina o un objeto. Esta habilidad funciona igual que la habilidad [disrupción](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-i), pero si afectas una máquina inteligente haz un tiro de Sabotaje contra sus dados de seguridad, infligiéndole 1d4 + INT daño de cordura si tienes éxito. Para emplear esta acción debes estar a menos de 15 pies de dicho objeto y ser capaz de detectarlo con la habilidad Percibir información. 
 
 <u>Percibir información</u>: Conoces como fabricar un Detector del flujo, un implante customizado que puedes enganchar a una parte de tu cuerpo que te permite detectar todos los aparatos que funcionen con chi en un área de 60 pies. Si un objeto activa un efecto mágico presientes cuando este es usado y puedes notar la categoría de magia arcana con la cual se asocia. Mientras tu Detector del flujo permanezca activo no puedes ser sorprendido por trampas mágicas. 
 
-<u>Traspasar sistema:</u> Eres capaz de cruzar las defensas de un sistema operativo para acceder la información que aguarda. Como acción de turno completo puedes hacer un tiro de Sabotaje para lograr acceso a un sistema adyacente a ti, tirando contra el nivel de seguridad que tenga. Si tienes éxito logras entrar en el interior de dicho sistema, conociendo la información superficial de este y los códigos de acceso. Las ventajas que generes pueden ser empleadas para que el máster te dé más información mientras que las desventajas delatarán que te has infiltrado y pueden provocar defensas mágicas.
+<u>Traspasar sistema:</u> Eres capaz de cruzar las defensas de un sistema operativo para acceder la información que aguarda. Como acción de turno completo puedes hacer un tiro de Sabotaje para lograr acceso a un sistema adyacente a ti, tirando contra el nivel de seguridad que tenga. Si tienes éxito logras entrar en el interior de dicho sistema, conociendo la información superficial de este y los códigos de acceso. En el caso que el sistema tenga contramedidas deberás tener éxito en un tiro adicional de sabotaje para evitar los efectos de estas, activándolas de inmediato en el caso que fracases.
 
 ## Rango II
 
@@ -28,11 +28,11 @@ Añade un dado de soltura adicional a tus tiros de sabotaje.
 
 ## Rango III
 
-Añade un dado de soltura adicional a tus tiros de sabotaje. Traspasar sistema aumenta su alcance por 15 pies.
+Aumenta tu probabilidad de crítico a 19-20. Traspasar sistema aumenta su alcance por 15 pies.
 
 <u>Usurpar sistema:</u> Conoces cómo manejarte por un sistema operativo para lograr control de él, usurpándolo de su anterior propietario. Para emplear usurpar sistema debes tirar Sabotaje contra la seguridad del sistema, aumentando tu control por un paso. Esta habilidad te cuesta una acción de turno completo y sólo puedes emplearla en sistemas a los que tengas acceso. Si tu nivel de control supera la efectividad de la máquina que intentas usurpar tomarás control total de esta. Usurpar sistema puede emplearse contra constructos para forzarles a seguir determinadas órdenes de tu elección, funcionando como la habilidad [geas](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-iv) sin consumir la necesidad de consumir chi.
 
-<u>Virus tecnológico:</u> Al emplear la habilidad Sobrecarga puedes gastar 2 ventajas generadas para insertarle un virus tecnológico a tu objetivo, nombre por el cual se conoce una insidiosa alteración del funcionamiento de una máquina que le provoca graves daños estructurales. Un dispositivo afectado por un virus  reducirá su efectividad por 1 cada 4 turnos que pasen, desactivándose por completo si esta es reducida a 0. Si afectas a un constructo que opere con chi este sufrirá los efectos de un veneno mental, tirando su nivel de seguridad para resistir. Puedes crear tus propios virus tecnológicos con el consentimiento del máster, tomando como base los efectos producidos por [venenos](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) o [enfermedades](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades).
+<u>Virus tecnológico:</u> Al emplear la habilidad Sobrecarga puedes infectar a tu objetivo con un virus tecnológico, nombre por el cual se conoce una insidiosa alteración del funcionamiento de una máquina que le provoca graves daños estructurales. Un dispositivo afectado por un virus  reducirá su efectividad por 1 cada 2 rondas que pasen, desactivándose por completo si esta es reducida a 0. Cada vez que pasen dichos turnos el dispositivo tiene la oportunidad repetir el tiro para liberarse del efecto, aunque las penalizaciones por la efectividad reducida continuarán aplicándose. Si afectas a un constructo que opere con chi este sufrirá los efectos de un veneno mental, tirando su nivel de seguridad para resistir. Puedes crear tus propios virus tecnológicos con el consentimiento del máster, tomando como base los efectos producidos por [venenos](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) o [enfermedades](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades).
 
 ## Rango IV
 
@@ -42,7 +42,7 @@ Añade un dado de soltura adicional a tus tiros de sabotaje. Traspasar sistema a
 
 ## Rango V
 
-Añade un dado de soltura adicional a tus tiros de sabotaje. Usar Traspasar sistema te cuesta una acción estándar.
+Aumenta tu probabilidad de crítico a 18-20. Usar Traspasar sistema te cuesta una acción estándar.
 
 <u>Apagón:</u> Tu Detector del flujo tiene la capacidad de liberar una gran onda de energía que dificultará el funcionamiento de los objetos mágicos y tecnológicos, provocando un apagón. Usar tu detector de esta manera te cuesta una acción estándar y desactivará todos los objetos que puedas detectar con dicha máquina durante un turno, reduciendo su efectividad por 1. Los sistemas afectados podrán resistir con un tiro de seguridad, aunque aquellos que hayas traspasado o tengan un virus tecnológico instalado no podrán hacer el tiro. Esta habilidad requiere un gran gasto de energía, desactivando tu Detector del flujo durante dos horas. 
 

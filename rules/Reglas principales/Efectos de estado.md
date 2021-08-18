@@ -8,7 +8,7 @@ Esta es una lista de los efectos de estado más comunes que pueden afectar a una
 
 ### Agarrada
 
-Una criatura agarrada no puede moverse y recibe una penalización -2 en tiros para Esquivar. También añade un dado de Desventaja a todos sus tiros de ataque y de maniobras de combate excepto para escapar del agarre. Intentar escapar cuesta una acción de movimiento con la cual la criatura agarrada debe obtener éxito en una tirada de Heroísmo contra el valor de Heroísmo de quién le esté agarrando.
+Una criatura agarrada no puede moverse y recibe desventaja en todos sus tiros para Esquivar. Recibe también desventaja a todos sus tiros de ataque y de maniobras de combate excepto para escapar del agarre. Intentar escapar cuesta una acción de movimiento con la cual la criatura agarrada debe obtener éxito en una tirada de Heroísmo contra el valor de Heroísmo de quién le esté agarrando. Una criatura agarrada puede también intentar agarrar a la persona quién le está reteniendo, causando que ambas no puedan moverse y pierdan todos los penalizadores en maniobras de combate para afectarse entre sí.
 
 ### **Asustada** 
 
@@ -20,7 +20,7 @@ Una criatura Aturdida no puede usar acciones ni reacciones, y debe dejar caer to
 
 ### **Cegada** 
 
-Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su campo de visión a 10 pies y no puede defenderse de ataques que no pueda percibir. Su movimiento queda reducida por 10 pies, otras criaturas reciben un dado de Ventaja adicional en tiros de ataque y añade un dado de Desventaja a todos sus tiros de ataque contra criaturas adyacentes. Si la criatura tiene una forma de percibir sus alrededores sin necesitar la vista perderá los penalizadores al movimiento y a ataques debidos a la ceguera.
+Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su campo de visión a 10 pies y no puede defenderse de ataques que no pueda percibir. Su movimiento queda reducido por 10 pies y recibe desventaja en todos sus tiros de ataque y defensa. Si la criatura tiene una forma de percibir sus alrededores sin necesitar la vista perderá los penalizadores al movimiento y a ataques debidos a la ceguera.
 
 ### **Confundida** 
 
@@ -28,39 +28,43 @@ Una criatura confundida actúa de una manera irracional y es incapaz de distingu
 
 ### Deprimida
 
-Una criatura deprimida ha perdido las fuerzas para seguir luchando, resignándose a la derrota. Pierde todos los efectos de moral que tenga activos y deberá dejar de atacar inmediatamente. Si continúa en el combate podrá luchar para protegerse, pero toda criatura que le ataque recibirá un dado de Ventaja adicional en su tiro de ataque y esta recibirá una penalización de un dado de Desventaja. Si una criatura deprimida tiene su cordura reducida a 0 o le ocurre un hecho que le haga replantearse su existencia, intentará suicidarse de inmediato.
+Una criatura deprimida ha perdido las fuerzas para seguir luchando, resignándose a la derrota. Pierde todos los efectos de moral que tenga activos y deberá dejar de atacar inmediatamente. Si continúa en el combate podrá luchar para protegerse, pero tendrá desventaja en todos sus tiros de ataque y defensa. Si una criatura deprimida tiene su cordura reducida a 0 o le ocurre un hecho que le haga replantearse su existencia, intentará suicidarse de inmediato.
 
 ### **Enfermada** 
 
-Una criatura enfermada tira un dado de Desventaja en todos sus tiros de ataque y habilidad. Además, todos los atacantes recibirán un dado de Ventaja contra ella. Este efecto de estado puede estar causado tanto por enfermedad, veneno o heridas permanentes.
+Una criatura enfermada recibe desventaja en todos sus tiros de ataque, defensa y habilidad. Este efecto de estado puede estar causado tanto por enfermedad, veneno o heridas permanentes.
 
 ### **Enredada** 
 
-Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y añade un penalizador -2 a la DES. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
+Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y recibe desventaja en todos sus tiros relacionados con la destreza. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
 
 ### **Ensordecida** 
 
-Una criatura ensordecida no puede escuchar sonidos con claridad. Es inmune a efectos que requieran escuchar como Voz del comandante o Palabra divina, pero fracasará automáticamente todos los tiros de Percepción que requieran el oído. Los atacantes añaden un dado de Ventaja adicional en sus tiradas contra ella y esta añade un dado de Desventaja a sus tiros de habilidad.
+Una criatura ensordecida no puede escuchar sonidos con claridad. Es inmune a efectos que requieran escuchar como Voz del comandante u onda trueno, pero fracasará automáticamente todos los tiros de Percepción que requieran el oído. Recibe además desventaja en todos sus tiros de ataque y defensa.
 
 ### **Espantada** 
 
-Una criatura espantada añade un dado de Desventaja a todos sus tiros. Si es atacada por quién le esté causando miedo el atacante añade un dado de Ventaja a su tiro.
+Una criatura espantada recibe desventaja en todos sus tiros de ataque y habilidad. Si es atacada por la fuente de su miedo recibirá también desventaja en sus tiros defensivos.
 
 ### **Exhausta** 
 
-Una criatura exhausta reduce su movimiento por 15 pies y recibe un penalizador -2 en su FUE y DES. Además, cada acción que realice le hará 2 daño no-letal. Si una criatura es fatigada por algún efecto y ya está exhausta, no recibirá los efectos de fatigada. Este efecto de estado se elimina con un descanso largo.
+Una criatura exhausta reduce su movimiento por 15 pies y recibe un penalizador -2 en su FUE y DES. Además, perderá una acción de movimiento y no podrá realizar acciones de turno completo. Si una criatura es fatigada por algún efecto y ya está exhausta, no recibirá los efectos de fatigada. Este efecto de estado se elimina con un descanso largo.
 
 ### **Fatigada** 
 
-Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -1 en su FUE y DES. La fatiga no se acumula, y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto. Puedes recibir fatiga si tu Vitalidad queda reducida a 0 o pasas un día entero sin dormir.
+Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -1 en su FUE y DES. La fatiga no se acumula, y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto. Puedes recibir fatiga si pasas un día entero sin dormir o dormir.
 
 ### Fascinada
 
 Una criatura fascinada fija su atención en una fuente determinada, descuidando el entorno que le rodea. Esta no podrá tirar percepción para detectar a criaturas ocultas y su prioridad se reducirá por 2 en el caso que ocurra un combate. En el caso que ocurra un evento que signifique una amenaza para la criatura fascinada, como podría ser una criatura visible que se le acerque, esta podrá tirar Percepción contra el efecto que le esté fascinando, liberándose de él si tiene éxito. Este efecto se pierde de manera automática al sufrir daño.
 
+### Inconsciente
+
+Una criatura inconsciente es incapaz de moverse y percibir su entorno. Quedará incapaz de realizar acciones y reacciones, y todos los ataques hechos contra ella contarán como golpes críticos. Si una criatura inconsciente sufre daño se despertará de inmediato.
+
 ### Invisible
 
-Una criatura invisible es casi imposible de percibir por la vista debido a su gran sigilo o a un efecto mágico. Añade un dado de desafío adicional a todos sus tiros defensivos de sigilo y detectar a la criatura con percepción requiere un gasto de una acción estándar. No pueden realizarse ataques apuntados a criaturas invisibles y estas podrán cancelar un éxito adicional en tiros defensivos. 
+Una criatura invisible es casi imposible de percibir por la vista debido a su gran sigilo o a un efecto mágico. Recibe ventaja en todos sus tiros defensivos de sigilo y detectar a la criatura con percepción requiere un gasto de una acción estándar. No pueden realizarse ataques apuntados a criaturas invisibles y estas obtendrán ventaja en sus tiros defensivos.
 
 ### **Náuseas** 
 
@@ -76,15 +80,15 @@ Una criatura paralizada no puede moverse ni tomar acciones, quedándose quieta e
 
 ### **Quemada**
 
-Una criatura quemada sufrirá una cantidad de daño de fuego al turno dependiendo de la gravedad de la quemadura esta. Una quemadura leve inflige 1 daño no-letal al turno mientras que una quemadura media inflige 2 daño no-letal al turno. Por encima de la quemadura media se encuentra la quemadura grave, la cual aumenta el daño no-letal que causa por 1 cada turno que permanezca activa, empezando por 2.
+Una criatura quemada sufrirá una cantidad de daño de fuego al turno dependiendo de la gravedad de la quemadura esta. Una quemadura leve inflige 1 daño de fuego al turno mientras que una quemadura media inflige 2 daño de fuego al turno. Por encima de la quemadura media se encuentra la quemadura grave, la cual aumenta el daño no-letal que causa por 1 cada turno que permanezca activa, empezando por 2.
 
 Las quemaduras pueden provocar heridas permanentes si permanecen activas durante una cantidad excesiva de turnos. De esta manera, una quemadura leve incrementa la gravedad de las heridas por 1 en la parte del cuerpo tras un número de rondas según su gravedad, siendo cada tres rondas para una leve, cada dos para una media y cada ronda para una grave (la primera ronda no se aplica). Si una criatura tiene varias quemaduras activas el daño de estas no se acumula pero puede incrementar la gravedad de varias heridas permanentes.
 
-El daño hecho por quemaduras ignorará la resistencia al fuego aunque sólo pueden ser provocadas si el objetivo sufre daño de fuego. Para eliminar una quemadura es necesario sumergir la parte del cuerpo afectada en agua o un entorno frío durante una ronda. Además, un personaje puede gastar una acción estándar para reducir la gravedad de una quemdadura de media a leve.
+El daño hecho por quemaduras ignorará la resistencia al fuego aunque sólo pueden ser provocadas si el objetivo sufre daño de fuego. Para eliminar una quemadura es necesario sumergir la parte del cuerpo afectada en agua o un entorno frío durante una ronda. Además, un personaje puede gastar una acción estándar para reducir la gravedad de una quemadura de media a leve.
 
 ### **Ralentizada** 
 
-Una criatura ralentizada pierde una acción de movimiento y recibe un penalizador -1 a la DES. Esta aún puede realizar acciones estándar y bonus con normalidad.
+Una criatura ralentizada pierde una acción de movimiento y desventaja en todos sus tiros de esquiva. Esta aún puede realizar acciones estándar y bonus con normalidad.
 
 ### **Sangrado** 
 
@@ -92,4 +96,4 @@ Una criatura con sangrado sufre 1 daño letal al principio de su turno a causa d
 
 ### **Tropezada**
 
- Una criatura tropezada cae al suelo, reduciendo su velocidad por 15 pies y añadiendo dos dados de Desventaja a tiros de ataque con armas cuerpo a cuerpo. No obstante, añade un dado de Dificultad a sus tiradas defensivas contra ataques a distancia y recibe cubierta parcial. Levantarse cuesta una acción de movimiento y provoca ataques de oportunidad.
+ Una criatura tropezada cae al suelo, reduciendo su velocidad por 15 pies y recibe desventaja en todos sus tiros de ataque. No obstante, al estar en el suelo recibirá ventaja en sus tiros para esquivar ataques a distancia hechos por criaturas a más de 30 pies. Levantarse cuesta una acción de movimiento y provoca ataques de oportunidad.

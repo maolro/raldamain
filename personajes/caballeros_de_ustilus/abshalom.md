@@ -5,7 +5,7 @@ nacionalidad: Jaddi
 alineamiento: Legal Neutro
 fecha-de-nacimiento: 3957
 fecha-de-muerte: 4005
-rangos: Aptitud con filos pesados, Artes marciales, Aptitud con armaduras, Presencia
+rangos: Aptitud con filos pesados, Artes marciales, Armaduras, Presencia
 image: abshalom.jpg
 ---
 
@@ -27,7 +27,7 @@ Abshalom nació en el clan Jaddi de Taedros. Devoto a Feyn, fue aceptado en la o
 
 Cuando Mazarin cruzó las fronteras de Kratoi para recuperar sus tierras arrebatadas por Ustilus, Abshalom fue de los primeros en lanzarse a la guerra. Sus tácticas brutales pero efectivas le permitieron derrotar a la tropa principal mazarina, y junto con los caballeros Ajek y Fileon dieron el golpe de gracia a la invasión, derrotando al general Petrikov en batalla naval. Cuando la guerra daba pinta de estar acabada y Abshalom se volvió a Trono de Feyn para continuar liderando a los caballeros, el descubrimiento por parte de la Hermandad del Cuervo de que Laicon de Dairov estaba organizando al Pacto le volvió a poner en acción. 
 
-Tan grande era su deseo de acabar con Laicon que estuvo dispuesto a colaborar con Ileria, persona con ideología radicalmente opuesta a la suya, para poder derrotarle. La búsqueda le llevó hasta la ciudad de Rizad, dónde se reunió con miembros de su clan para aumentar la vigilancia en Rizad. Tras varios días de investigación que resultaron infructuosos, Abshalom colaboró en secreto con Madelein para urdir un arriesgado plan: ella fingiría traicionar a Ustilus para así captar la atención de Laicon y forzarlo a actuar. El plan no salió como se esperaba y Madeleine acabó siendo capturada por el enemigo, pero afortunadamente la falsa traición de Madeleine provocó que Viorica hiciese amistades con ella. Gracias a Viorica, los caballeros fueron alertados de la localización de Laicon y se dirigieron rápidamente para capturarlo. Junto con Ajek, Viorica y la Hermandad del cuervo, Abshalom acorraló a Laicon en los tejados de Rizad y finalmente lo capturó. Con Laicon encerrado en un lugar seguro, Abshalom se dedicó a sofocar los últimos focos de rebelión. Cuando la revuelta empezó a debilitarse, él le dio el golpe final ejecutando a Laicon y exponiendo su cadáver en la plaza principal. Con estas duras medidas logró disipar al Pacto en Rizad.
+Tan grande era su deseo de acabar con Laicon que estuvo dispuesto a colaborar con Ileria, persona con ideología radicalmente opuesta a la suya, para poder derrotarle. La búsqueda le llevó hasta la ciudad de Rizad, dónde se reunió con miembros de su clan para aumentar la vigilancia en esta ciudad. Tras varios días de investigación que resultaron infructuosos, Abshalom colaboró en secreto con Madeleine para urdir un arriesgado plan: ella fingiría traicionar a Ustilus para así captar la atención de Laicon y forzarlo a actuar. El plan no salió como se esperaba y Madeleine acabó siendo capturada por el enemigo, pero afortunadamente la falsa traición de Madeleine provocó que Viorica hiciese amistades con ella. Gracias a Viorica, los caballeros fueron alertados de la localización de Laicon y se dirigieron rápidamente para capturarlo. Junto con Ajek, Viorica y la Hermandad del cuervo, Abshalom acorraló a Laicon en los tejados de Rizad y finalmente lo capturó. Con Laicon encerrado en un lugar seguro, Abshalom se dedicó a sofocar los últimos focos de rebelión. Cuando la revuelta empezó a debilitarse, él le dio el golpe final ejecutando a Laicon y exponiendo su cadáver en la plaza principal. Con estas duras medidas logró disipar al Pacto en Rizad.
 
 ### El golpe de estado
 
