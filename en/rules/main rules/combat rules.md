@@ -40,9 +40,9 @@ Reactions are all those actions you perform outside of your turn. Both defensive
 
 #### Defensive rolls
 
-Defensive shots represent how a character defend itself against an attack made against it. The defender must declare which method he uses to protect himself and will add the corresponding modifier to a d20 roll. If the defender's result is higher  that the attacker's result then the attack will miss, while if the attacker's result is higher then the attack will hit. 
+Defensive shots represent how a character defend itself against an attack made against it. The defender must declare which method he uses to protect himself and will add the corresponding modifier to a d20 roll. If the defender's result is higher that the attacker's result then the attack will miss, while if the attacker's result is higher then the attack will hit. 
 
-A character can avoid attacks by dodging or parrying. A character that chooses to dodge will 
+A character can avoid attacks by dodging or parrying. Dodging represents using agility to avoid an attack while parrying represents using an object to block it. A character that chooses to dodge will add their DEX modifier to the defensive roll while a character who chooses to parry will add its STR modifier (DEX if it is a light weapon). 
 
 #### Opportunity attacks
 
@@ -50,17 +50,21 @@ An opportunity attack is an attack used as a reaction. These are provoked by a m
 
 First, an attack of opportunity is provoked if a creature retreats from a confrontation without employing a move action to disengage. These attacks represent that the fleeing creature drops its guard and is vulnerable to attack. Only Dodge may be used to ward off an attack made in this manner. This attack is not provoked by retreating from an enemy that is being flanked.
 
-An attack of opportunity can also be provoked if a creature saves its standard action to use it later. An attack saved in this way will have priority over the enemy, although the enemy will be able to defend normally. If a creature saving action is hit by a ranged attack or a surprise attack it will lose all its saved actions and the round will continue normally.
+An attack of opportunity can also be provoked if a creature saves its standard action to use it later. An attack saved in this way will have priority over the enemy, although the enemy will be able to defend normally. If a creature saving action is hit by a ranged attack or a surpris attack it will lose all its saved actions and the round will continue normally.
 
 ## Additional factors
 
 ### Advantage and disadvantage
 
-Advantage and disadvantage represent a multitude of factors which benefit or difficult certain actions. If a creature has advantage in a roll it will add 1d6 to the result while if it has disadvantage it will substract 1d6 from it. Advantage from multiple sources will stack, adding multiple d6s to a single roll (the DM can still decide if advantage from certain sources won't stack).
+Advantage and disadvantage represent a multitude of factors which benefit or difficult certain actions. If a creature has advantage in a roll it will add 1d6 to the result while if it has disadvantage it will substract 1d6 from it. Advantage from multiple sources will stack, adding multiple d6s to a single roll (the DM can still decide if advantage from certain sources won't stack). If a character recieves an advantage and disadvantage die on the same roll they will cancel each other out.
+
+### Critical hit and miss
+
+Critical hits and misses represent extremely fortunate or unfortunate events that can shift the balance of the battle towards one side or another. A character will gain a critical hit if they roll a natural 20 on any roll while a critical miss will be gained if they roll a natural 1. If a critical hit is gained the character will succeed on their action no matter what while if they gain a critical miss they will fail even if their result with modifiers is higher than the opposing roll. If an attack rolls a critical hit all damage dice will be rolled twice and all permanent injuries will increase by one step, while if a defense roll gains a critical the defender will be able to do an opprtunity attack. If the attacker gains a critical miss they will provoke an immediate opportunity attack (that attack will be undefended if the defender rolled a critical hit), while if both attacker and defender roll a critical hit or miss they can either cancel out both results or exchange blows mutually, dealing normal damage to each other.
 
 ### Undefended attacks
 
-A creature will be undefended if it has no way of protecting itself from an attack, either because it is incapacitated or the attacker caught it by surprised. An undefended creature is unable to do defensive rolls and all damage dealt against it will count as a critical hit, duplicating the amount of damage dice and increasing the level of all permanent injuries by one step. The attacker can attempt to aim against a specific body part, for which it must do an attack roll against a difficulty chosen by the DM. Some sample values are +2 for the chest, +4 for an arm or leg and +6 for the head.
+A creature will be undefended if it has no way of protecting itself from an attack, either because it is incapacitated or the attacker caught it by surprised. An undefended creature is unable to do defensive rolls and all damage dealt against it will count as a critical hit. The attacker can attempt to aim against a specific body part, for which it must do an attack roll against a difficulty chosen by the DM. Some sample values are +2 for the chest, +4 for an arm or leg and +6 for the head.
 
 ### Cover
 
@@ -84,17 +88,17 @@ Concealment penalties can be countered by spending a move action to aim, which w
 
 ### Difficult terrain
 
-Difficult terrain is the name given to certain hazardous areas that significantly hamper movement. Whenever a creature passes through an area affected by difficult terrain it must expend 10 feet of movement to pass through it (5 feet if it has 3 talent levels in acrobatics and none if it has 5 talent levels). If a creature charges through an area affected by difficult terrain it must succeed in an Acrobatics check or fall prone. Creatures in difficult terrain will also have disadvantage in all dexterity checks to avoid attacks.
+Difficult terrain is the name given to certain hazardous areas that significantly hamper movement. Whenever a creature passes through an area affected by difficult terrain it must expend 10 feet of movement to pass through it (5 feet if it has 3 talent levels in acrobatics and none if it has 5 talent levels). If a creature charges o is pushed through an area affected by difficult terrain it must succeed in an Acrobatics check or fall prone. Creatures in difficult terrain will also have disadvantage in all dexterity checks to avoid attacks.
 
 ### Joint Attack
 
-A group of low level creatures can make a joint attack against a more powerful enemy, joining forces to defeat it. The attack modifier and damage will correspond to the highest of such values among all attacking creatures and both will increase by 2 for every participating creature beyond the first.
+A group of low level creatures can make a joint attack against a more powerful enemy, joining forces to defeat it. The attack modifier and damage will correspond to the highest of such values among all attacking creatures and both will increase by 2 for every participating creature beyond the first (maximum 8).
 
 A joint attack counts as an area attack, inflicting damage even if the target defends itself successfully (Evasion applies against this effect). If the attackers are flanking the target then the target will not be able to use Parry or Dodge to defend himself unless it has Greater uncanny dodge.
 
 ### Falling
 
-Falling represents the damage that a character will suffer from striking a flat surface at excessive speed. This damage is only reduced by resistances to physical damage, ignoring both artificial and natural armor. A falling character will suffer 1 bludgeoning damage for every 5 feet of distance fallen. If the character falls on water the total amount of fall damage will be reduced by 2  and all permanent injuries will be reduced by one step. A character that falls a certain number of feet he will suffer permanent injuries as indicated in this table.
+Falling represents the damage that a character will suffer from striking a flat surface at excessive speed. This damage is only reduced by resistances to physical damage, ignoring both artificial and natural armor. A falling character will suffer 1 bludgeoning damage for every 5 feet of distance fallen. If the character falls on waer the total amount of fall damage will be reduced by 2  and all permanent injuries will be reduced by one step. A character that falls a certain number of feet he will suffer permanent injuries as indicated in this table.
 
 | Feet  | Permanent injury   |
 | ----- | ------------------ |

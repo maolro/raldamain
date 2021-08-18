@@ -7,9 +7,9 @@ Tu mente está conectada con la inteligencia colectiva del universo volviéndote
 
 ## Rango I
 
-Obtienes Resistencia 1 a daño físico. 
+Obtienes Resistencia 2 a daño físico. 
 
-<u>Vínculo akhásico:</u> Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 1 como acción bonus usable una vez al turno puedes añadir un dado de Ventaja o Desventaja a un tiro de habilidad, ataque o defensa de tu elección. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) en lugar de acumular los usos de ambos atributos perderás todos los usos de Premonición a cambio de recibir un dado de Soltura o Desafío en un tiro de tu elección cuando utilices Vínculo akhásico. 
+<u>Vínculo akhásico:</u> Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 1 como acción bonus usable una vez al turno puedes recibir ventaja en un tiro de habilidad, ataque o defensa de tu elección. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) en lugar de acumular los usos de ambos atributos perderás todos los usos de Premonición a cambio de repetir un tiro de tu elección cuando utilices Vínculo akhásico. 
 
 <u>Hipercognición:</u> Tu mente tiene mayor capacidad para recopilar y recordar información. Puedes conocer información de cualquier ámbito de estudio al hacer un tiro de conocimiento y aprender un lenguaje nuevo sólo te cuesta un mes de estudio (no puedes aprender más idiomas que el valor de tu estadística de inteligencia). Desbloqueas todas las magias arcanas y psíquicas.
 
@@ -39,7 +39,7 @@ Incrementa tu SAB por 1.
 
 ## Rango V
 
-Obtienes Resistencia 3 a daño físico. 
+Aumenta tu resistencia a daño físico por 1  y tu resistencia mágica poro 2.
 
 <u>Palacio de la mente:</u> Al entrar en meditación puedes acceder a un demiplano creado únicamente con el poder de tu mente. Este demiplano tendrá el aspecto que tú desees y es impenetrable por intrusiones psíquicas. Cada minuto que pases en tu palacio mental contará como un segundo en el mundo real, lo cual te permite entrar en esa dimensión para realizar acciones mentales de larga duración en un instante. Si estás afectado por un hechizo mental o la habilidad inducción mental el control de tu palacio de la mente quedará disputado, requiriendo que tengas éxito en un [duelo psíquico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20on%C3%ADrica.html#rango-iii) contra la persona que esté atacando tu mente. Otras criaturas que tú elijas pueden entrar también en tu palacio de la mente a través de la meditación, aunque no podrán usar hechizos ni atacar salvo que tú lo desees.
 
@@ -49,7 +49,7 @@ Obtienes Resistencia 3 a daño físico.
 
 Incrementa tu CAR por 1.
 
-<u>Mente iluminada:</u> Tu mente ha alcanzado el peldaño más alto del conocimiento. Eres inmune a efectos mentales y a daño hecho a tu cordura. Tienes conocimiento de todas las magias, pudiendo utilizar tus dados de la magia de tu elección para tiros relacionados con las demás. Las entidades relacionadas con la memoria akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
+<u>Mente iluminada:</u> Tu mente ha alcanzado el peldaño más alto del conocimiento. Eres inmune a efectos mentales y a daño hecho a tu cordura. Tienes conocimiento de todas las magias, permitiéndote emplear tu bonificador más alto para todos tus tiros de magia. Las entidades relacionadas con la memoria akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
 
 <u>Conocer el destino:</u> Has vislumbrado tu destino en la memoria akhásica, conociendo el momento predestinado de tu muerte. Los detalles de este momento deberán ser discutidos con el máster y recibir su consentimiento. Cualquier vez que mueras por una causa que no esté relacionada con tu muerte predestinada sobrevivirás milagrosamente, permaneciendo sólo a 0 PV y recibiendo una herida permanente grave en su lugar. Una vez al día cuando te encuentres en una situación peligrosa puedes invocar la fuerza del destino para librarte de ella, lo cual causará un efecto similar a [intervención divina](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html#rango-v). No obstante, si actúas de una manera demasiado temeraria o arrogante el máster te puede castigar adelantando tu fecha de muerte a un momento más cercano.
 

@@ -6,8 +6,6 @@ title: Ascendencia elemental
 
 Desde tu nacimiento siempre te has sentido atraído por uno de los elementos básicos que componen el universo, influyendo estos en gran medida sobre tu ser. A medida que respondes a esta llamada, tu conexión con ese elemento se irá haciendo mas fuerte de modo que puedas habitar en los entornos mas extremos relacionados con él.
 
-
-
 ## [Ascendencia de aire](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html)
 
 Tienes una fuerte conexión con las antiguas tormentas que llevan soplando desde el inicio de los tiempos, pudiéndose sentir el eco de sus vientos con tu presencia. Según su influencia se va haciendo mas notable en ti, serás capaz de comandar los vendavales para hacer servir tu voluntad.

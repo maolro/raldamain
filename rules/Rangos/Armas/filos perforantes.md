@@ -5,47 +5,44 @@ category: Armas
 
 ## Rango I
 
-Tiras un dado de soltura adicional en tiros de ataque.
+Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo perforante.
 
-<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Tus ataques infligen +2 daño en ataques sorpresa o por flanqueo. Antes de atacar, puedes apuntar a una parte vulnerable del cuerpo de tu objetivo para sobrepasar su defensa. Esta habilidad te permite añadir un dado de dificultad adicional a tu tiro de ataque a cambio de ignorar un punto de defensa que tenga tu objetivo. Si logras reducir la defensa de tu objetivo a 0 con esta habilidad podrás infligirle una herida leve al impactar. A rango III puedes ignorar 2 puntos de defensa con esta habilidad y a rango V podrás ignorar 3 puntos.
-
-<u>Parada:</u> Puedes usar parada para protegerte de ataques enemigos. Esta habilidad funciona igual que parada de aptitud con filos pesados, pero al intentar bloquear un ataque poderoso el enemigo puede gastar 2 ventajas para romper tu arma. Una vez al turno puedes cancelar un éxito generado por el atacante (dos veces al turno a Rango III y tres veces al turno a Rango V)
+<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Al impactar a un enemigo incapaz de defenderse o flanqueado por un aliado añade tu estadística de destreza al daño infligido. Adicionalmente, antes de atacar puedes apuntar a una parte vulnerable del cuerpo de tu objetivo, tomando un penalizador -2 a tu ataque para ignorar 2 puntos de defensa de tu objetivo. Si logras reducir la defensa de tu objetivo a 0 con esta habilidad infligirás una herida permanente leve al impactar. A rango III puedes emplear esta habilidad dos veces por ataque y a rango V la podrás emplear tres veces.
 
 ## Rango II
 
-<u>Ataque rápido:</u> Gasta una acción de movimiento para hacer un ataque adicional con tu arma. Puedes gastar la acción de movimiento otorgada por [rapidez](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-i) para esta habilidad.
+<u>Ataque rápido:</u> Eres capaz de realizar ataques con gran celeridad. Emplear tu arma para hacer un ataque te cuesta una acción de movimiento en lugar de una estándar. 
 
-<u>Finta:</u> Cuando hagas un ataque con tu arma puedes gastar 2 ventajas para fintar al objetivo. No tienes que tener éxito para poder fintar, pero si fintas no haces daño con tu ataque. Un objetivo que esté fintado no puede usar esquiva o parada para defenderse contra tu siguiente ataque.
+<u>Finta:</u> En lugar de atacar puedes engañar a tu adversario con un ataque fintado, dejándolos en un estado vulnerable contra futuros ataques. Fintar a un enemigo te cuesta una acción de movimiento y para ello tu enemigo empleará averiguar intenciones para defenderse de tu ataque. Si tienes éxito tu enemigo será incapaz de defenderse contra el siguiente ataque hecho por ti o un aliado. Una criatura fintada se recuperará de este efecto cuando llegue su turno.
 
 ## Rango III 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida leve (4 ventajas para infligir una herida media). 
+Aumenta tu probabilidad de crítico a 19-20.
 
-<u>Desarme:</u> Gasta 2 ventajas generadas para desarmar al objetivo, haciendo que su arma se caiga en un espacio a 5 pies de distancia (+1 ventaja para lanzarlo 5 pies mas lejos). No puedes desarmar a enemigos con más rangos de aptitud en su arma que tú y para desarmar a alguien que no use un arma ligera debes hacerle una herida permanente en el brazo.
+<u>Desarme</u>: Si un enemigo logra detener tu ataque exitosamente con una parada puedes emplear una acción de movimiento para intentar desarmarlo. Para ello tu enemigo deberá defenderse con parada y si tienes éxito su arma caerá de inmediato al suelo (recoger un arma caída cuesta una acción de movimiento que provoca ataques de oportunidad). No puedes desarmar armas más grandes que la tuya salvo que tu objetivo tenga una herida permanente en el brazo.
 
-<u>Reposicionar:</u> Al hacer una parada exitosa puedes moverte 5 pies como reacción sin provocar ataques de oportunidad. Si sales del radio de alcance del arma enemiga cuenta como si has usado la acción de [desenganchar](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#acci%C3%B3n-de-movimiento). A rango V puedes moverte 10 pies con esta habilidad
+<u>Reposicionar</u>: Al hacer una parada exitosa puedes moverte 5 pies como reacción sin provocar ataques de oportunidad. Si sales del radio de alcance del arma enemiga cuenta como si has usado la acción de [desenganchar](https://raldamain.com/rules/Reglas principales/reglas de combate.html#acción-de-movimiento). A rango V puedes moverte 10 pies con esta habilidad
 
 ## Rango IV
 
-<u>Ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en ese área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con Ataque saltarín.
+<u>Ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en esa área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con Ataque saltarín.
 
-<u>Finta superior:</u> Al fintar puedes hacer un ataque adicional contra tu objetivo, para el cual se aplica ataque preciso como si fuese un ataque sorpresa. Solo puedes fintar de esta manera 1 vez al turno.
+<u>Finta superior:</u> Al fintar puedes hacer un ataque adicional contra tu objetivo, para el cual se aplica ataque preciso como si fuese un ataque sorpresa. Solo puedes fintar de esta manera una vez al turno.
 
 ## Rango V 
 
-Tiras un dado de soltura adicional en tiros de ataque. Gasta 2 ventajas para infligir una herida media (4 ventajas para infligir una herida grave).
+Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Ataque vital:</u> Al impactar con un ataque preciso puedes gsatar 4 ventajas para multiplicar tu daño base por 2 además de infligir una herida grave. Si logras reducir a tu objetivo a 0 PV puedes elegir matarlo instantáneamente sin que pueda realizar tiros de salvación.
+<u>Ataque vital:</u> Al impactar a un enemigo cuya defensa haya sido reducida a 0 con ataque preciso multiplica todo el daño infligido por 2. Si recibes los modificadores de ataque furtivo infligirás además una herida permanente grave al impactar y en el caso que lo reduzcas a 0 PV morirá instantáneamente.
 
-<u>Contrataque:</u> Al hacer una parada exitosa, gasta 2 desventajas generadas para hacer un contrataque. Puedes usar contrataque un número de veces igual a tu destreza por combate, pudiendo así realizar múltiples ataques de oportunidad al turno. Contrataque no funciona contra otro contrataque.
+<u>Contrataque</u>: Una vez por ronda cuando exitosamente logres detener el ataque de un enemigo con parada puedes hacer un ataque contra él como reacción. Esta habilidad puede emplearse hasta 5 veces por combate y no podrás emplear contrataque en un contrataque.
 
-# Armas
+## Armas
 
-Una arma de filo perforante base hace 2+Éxito daño perforante y tiene un alcance de 5 pies. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Un arma de filo perforante base hace 1d6 + FUE daño perforante y tiene un alcance de 5 pies. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades Ataque furtivo, Ataque vital y Finta. Lanzamiento puede aplicarse a cualquier arma de filo perforante que tenga la característica sutil.
-- **Sutil:** El arma es de menor tamaño y más fácil de utilizar. Un arma sutil reduce su daño base por 1 pero es capaz de penetrar los puntos débiles de la armadura de tu objetivo, permitiéndote ignorar un punto de defensa adicional al realizar un ataque apuntado.
-- **Duelo:** El arma es más larga y fina, haciéndola ideal para duelos de espadas. Un arma de duelo aumenta su daño base por 1 y recibe la habilidad [espadas trabadas](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-iii) a rango III, pero no podrá usarse en tu mano secundaria. Aun así, puedes obtener atributos en combate con dos armas si tienes un arma de duelo en tu mano principal y un arma sutil en tu mano secundaria.
-- **Cuchilla:** El arma está dotada de varias cuchillas con las que puede infligir letales cortes. El daño del arma pasará a ser cortante y recibirá la habilidad [tajo feroz](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-i) a rango I. 
-- **Retráctil:** El arma tiene la capacidad de encogerse con gran velocidad, permitiéndote mantenerla oculta y atacar cuándo tu objetivo menos se lo espera. Un arma retráctil es indetectable a primera vista y con ella podrás realizar ataques sorpresa aunque tu objetivo te vea. Si atacas a una persona que te esté vigilando esta tendrá la oportunidad de tirar percepción o averiguar intenciones contra tus dados de ataque, dándose cuenta de tu arma si tiene éxito en el tiro.
-
+- **Sutil:** El arma es de menor tamaño y más fácil de utilizar. Un arma sutil reduce su daño base a 1d4, pero es capaz de penetrar los puntos débiles de la armadura de tu objetivo, permitiéndote ignorar un punto de defensa adicional al realizar un ataque preciso.
+- **Duelo:** El arma es más larga y fina, haciéndola ideal para duelos de espadas. Un arma de duelo aumenta su daño base a 1d8 y recibe la habilidad [espadas trabadas](https://raldamain.com/rules/Rangos/Armas/filos cortantes.html#rango-iii) a rango III, pero no podrá usarse en tu mano secundaria. Aun así, puedes obtener atributos en combate con dos armas si tienes un arma de duelo en tu mano principal y un arma sutil en tu mano secundaria.
+- **Cuchilla:** El arma está dotada de varias cuchillas con las que puede infligir letales cortes. El daño del arma pasará a ser cortante y recibirá la habilidad [tajo feroz](https://raldamain.com/rules/Rangos/Armas/filos cortantes.html#rango-i) a rango I. 
+- **Retráctil:** El arma tiene la capacidad de encogerse con gran velocidad, permitiéndote mantenerla oculta y atacar cuándo tu objetivo menos se lo espera. Un arma retráctil es indetectable a primera vista y con ella podrás realizar ataques sorpresa aunque tu objetivo te vea. Si atacas a una persona que te esté vigilando esta tendrá la oportunidad de tirar percepción o averiguar intenciones contra tus dados de ataque, dándose cuenta de tu arma si tiene éxito en el tiro. Como consecuencia de su versatilidad las armas retráctiles son muy frágiles y se romperán inmediatamente si las empleas para detener un arma que no tenga las características sutil, ligera o duelo.

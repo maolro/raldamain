@@ -12,12 +12,12 @@ Cuando uno de los dos grupos realice un ataque este tirará un número de dados 
 
 | Proporción aproximada | Bajas base |
 | --------------------- | ---------- |
-| 6:1                   | 5+Éxito    |
-| 5:1                   | 4+Éxito    |
-| 4:1                   | 3+Éxito    |
-| 3:1​                   | 2+Éxito    |
-| 2:1                   | 1+Éxito    |
-| 1:1 o inferior        | 0+Éxito    |
+| 6:1                   | 3d8        |
+| 5:1                   | 3d6        |
+| 4:1                   | 2d8        |
+| 3:1​                   | 2d6        |
+| 2:1                   | 1d8        |
+| 1:1 o inferior        | 1d6        |
 
 ### Ventajas y desventajas
 
