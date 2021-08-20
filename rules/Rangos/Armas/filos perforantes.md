@@ -7,7 +7,7 @@ category: Armas
 
 Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo perforante.
 
-<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Al impactar a un enemigo incapaz de defenderse o flanqueado por un aliado añade tu estadística de destreza al daño infligido. Adicionalmente, antes de atacar puedes apuntar a una parte vulnerable del cuerpo de tu objetivo, tomando un penalizador -2 a tu ataque para ignorar 2 puntos de defensa de tu objetivo. Si logras reducir la defensa de tu objetivo a 0 con esta habilidad infligirás una herida permanente leve al impactar. A rango III puedes emplear esta habilidad dos veces por ataque y a rango V la podrás emplear tres veces.
+<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Al impactar a un enemigo incapaz de defenderse o flanqueado por un aliado añade tu estadística de destreza al daño infligido. Adicionalmente, antes de atacar puedes apuntar a una parte vulnerable del cuerpo de tu objetivo, tomando un penalizador -2 a tu ataque para ignorar 2 puntos de defensa de tu objetivo. Si logras reducir la defensa de tu objetivo a 0 con esta habilidad infligirás una herida permanente leve al impactar. A rango III puedes emplear esta habilidad dos veces por ataque y a rango V la podrás emplear tres veces. Puedes también emplear una acción de movimiento para mejorar tu puntería con un ataque preciso, reduciendo así el penalizador por 2.
 
 ## Rango II
 

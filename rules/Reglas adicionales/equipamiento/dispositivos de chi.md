@@ -14,32 +14,33 @@
 
 ### Crédito 3
 
-<u>Puerta dimensional:</u> Una puerta dimensional se trata de un sistema de dos portales conectados
+<u>Puerta dimensional:</u> Una puerta dimensional se trata de un sistema de dos portales conectados capaz de unir dos localizaciones que se encuentren a considerable distancia. Activar una puerta dimensional requiere una acción estándar y esta se conectará de inmediato con la segunda puerta, permitiendo que otras personas puedan pasar de una a otra. Las puertas pueden moverse de una localización a otra, pero dejarán de funcionar si se encuentran a más de una milla de distancia entre ellas. Cuando sea abierta una puerta dimensional solo podrá permanecer activas durante seis rondas totales, las cuales pueden estar seguidas o salteadas (necesitarán dos horas de recarga para volver a ser usadas).
 
-<u>Batería de chi:</u>
+<u>Batería de chi:</u> Una batería de chi es un dispositivo capaz de almacenar energía del chi para futuro uso. Si una batería se conecta a otro dispositivo de chi este duplicará su duración antes de necesitar una recarga (si un dispositivo tiene dos baterías enganchadas multiplicará su duración por 3 mientras que si tiene tres la multiplicará por 4). Un mago arcano puede emplear la energía de la batería de chi para sus hechizos, permitiéndole incrementar su reserva por 3 por cada batería que lleve (máximo 4). Al almacenar una gran cantidad de chi las baterías son bastante inestables frente a grandes presiones, causando que estas exploten si son destruidas o dañadas. La explosión de una batería de chi tiene dificultad +5 para evitar y hará 2d6 daño de fuerza.
 
 ### Crédito 4
 
-<u>Cuerda de chi:</u>
+<u>Cuerda de chi:</u> Una cuerda de chi aparenta ser una fina cuerda que brilla con una luz azulada, pero es capaz de atar a los objetivos que atrapa de manera automática como si estuviese viva. Cuando el usuario de una cuerda de chi la lance a un objetivo a menos de treinta pies esta volará a él y lo atará, enredándolo de inmediato. Escapar de este enredo tiene dificultad +9 y si una criatura no logra huir en una ronda quedará agarrada y en tres rondas dejará de poder tirar para escaparse. Un personaje con rangos en Cadenas podrá emplear una cuerda de chi como un arma, la cual hará 1d4 + FUE daño no-letal al impactar pero todos los intentos de agarre con ella recibirán ventaja y los objetivos no podrán defenderse de ella con esquiva. Una cuerda de chi solo puede ser destruida por armas mágicas y si se emplea disrupción en ella reducirá la dificultad para escapar del agarre por 2.
 
-<u>Holograma:</u>
+<u>Nodo telepático:</u> Un nodo telepático es un implante cerebral capaz de transmitir los pensamientos de su usuario a otras criaturas de su elección. Este dispositivo otorga telepatía al usuario a una distancia máxima de 30 pies, pero solo podrá recibir respuesta telepática de otras criaturas que también lleven objetos del mismo tipo. El nodo telepático también permite a la criatura detectar a todas las criaturas pensantes en un radio de 30 pies, evitando así que pueda ser sorprendida y los efectos de ocultamiento.
 
-<u>Nodo telepático:</u>
+<u>Proyector de hologramas:</u> Un proyector de hologramas es un proyector ilusorio más avanzado capaz de generar ilusiones de seres vivos. Este tendrá duración y tamaño máximo igual a un proyector ilusorio y si se programa una ilusión fija el creador deberá tener rango III de magia ilusoria. El proyector también es capaz de grabar a personas en directo y reproducir imágenes de ellos a largas distancias, pero será incapaz de emitir sonido salvo que se gasten 2 créditos adicionales y el creador tenga rango V en magia ilusoria. 
 
-<u>Sistema de observación:</u>
+<u>Sistema de observación:</u> Un sistema de observación es una compleja máquina formada por numerosos ojos observadores interconectados que permiten a única persona observar numerosos lugares simultáneamente. Este mostrará las imágenes que se verían en seis localidades distintas que se encuentren a menos de 200 pies del dispositivo mismo. Es posible añadir más ojos observadores al sistema pagando 1 crédito, pero este no permitirá ver más de seis localidades simultáneamente y será necesario emplear una acción de movimiento para hacer que el sistema alterne de un punto a otro. 
 
 ### Crédito 5
 
-<u>Cámara de estasis:</u>
+<u>Cámara de estasis:</u> Una cámara de estasis es una sala cerrada del tamaño de una persona adulta en la cual es posible congelar los elementos en su interior para hacerlos inmunes al paso del tiempo. Activar una cámara de estasis requiere una acción estándar y esta permanecerá activa durante un mes entero o hasta que sea desactivada (después de un mes la cámara deberá recargarse durante un día entero). Si una criatura es encerrada en una cámara de estasis en contra de su voluntad puede intentar escapar forzosamente de ella antes de ser congelada, aunque para ello deberá tener éxito en un tiro de destrozar con dificultad +12.
 
-<u>Sello antimágico:</u> 
+<u>Sello antimágico:</u> Un sello antimágico es un poderoso glifo capaz de impedir el funcionamiento del chi en un área durante un periodo de tiempo. Activar un sello antimágico cuesta una acción bonus y mientras permanezca activo será imposible emplear magia arcana ni objetos que utilicen chi en un radio de 20 pies de él. Una persona puede llevar el sello en su cuerpo para obtener inmunidad a todos los efectos mágicos, pero en este caso durará solo seis rondas seguidas y él tampoco podrá emplear efectos mágicos ni usar tecnología distinta al propio sello.
 
-<u>Teletransportador:</u>
+<u>Teletransportador:</u> Un teletransportador es un círculo mágico capaz de transportar a los viajeros en su interior largas distancias en un instante. Cada teletransportador cuenta con una secuencia específica de glifos y para conectarlo con otro ambos deberán tener la misma secuencia (esta solo puede ser alterada si una persona con rango IV o más en magia espacial emplea una acción de turno completo). Para activar un teletransportador un mago arcano deberá una acción de turno completo y mientras él mantenga la concentración toda persona que entre en el círculo aparecerá en el la localización del teletransportador conectado sin importar la distancia a la que este se encuentre. 
 
 ### Crédito 6
 
-<u>Puerta de demiplano:</u>
+<u>Puerta de demiplano:</u> Una puerta del demiplano aparenta ser una de las dos mitades de una puerta dimensional, pero esta es capaz de abrir un portal a una pequeña sala fuera del espacio y tiempo conocida como un demiplano. Este demiplano no tendrá tamaño superior a 60 pies cuadrados y solo es accesible a través de aquella puerta de demiplano que se corresponda a él. Toda criatura que se encuentre en un demiplano no necesitará comer ni dormir y será inmune a los efectos del tiempo. 
 
-<u>Implante predictivo:</u> 
+<u>Implante predictivo:</u> Un implante predictivo es un pequeño dispositivo infundido con magia temporal capaz de mejorar las habilidades de combate del usuario mostrándole todos los futuros posibles. El implante predictivo se activará de manera automática cuando su usuario se encuentre en una situación de peligro y mientras permanezca activo el usuario podrá repetir todos sus tiros una vez y quedarse con el resultado que más le convenga. El usuario también se volverá inmune a ataques sorpresa y no podrá ser fintado excepto por criaturas con la habilidad visión futura u otro implante predictivo. Una única persona no puede llevar más de un único implante predictivo.
 
-<u>Implante de concentración:</u> 
+<u>Implante de concentración:</u> Un implante de concentración es un aparato capaz de mejorar las habilidades mentales del usuario proporcionándole información en un instante y minimizando las distracciones. Mientras una persona posea un implante de concentración recibirá ventaja en todos sus tiros de memoria y arcanismo además de poder concentrarse en un efecto adicional por ronda. Una única persona no puede llevar más de un único implante de concentración.
+

@@ -35,19 +35,19 @@ Ajek viaja al territorio de los insurgentes hobgoblin para conseguir su alianza 
 
 Las tropas ustilesas se enfrentan a un ejército hobgoblin a las orillas del río Orzan.
 
-10x Soldados de la legión, 10x Arcabuceros de la legión, 2x Élite de la legión, 1x Zelota de la legión
+2x Unidad de soldados de la legión, 2x Unidad de arcabuceros de la legión, 2x Élite de la legión, 1x Zelota de la legión
 
 5x Jinete huargo, 1x Caballería de élite (2 grupos)
 
 6x Mercenario osgo (2 grupos)
 
-1x Gran ogro, 5x Arcabuceros de la legión, 10x Soldados de la legión, 4x Élite de la legión
+1x Gran ogro, 1x Unidad de arcabuceros de la legión, 2x  Unidad de soldados de la legión, 4x Élite de la legión
 
 ### Conquista de la colina
 
 Los ustileses intentan conquistar una colina donde se encuentran los cañones de la Legión
 
-10x Soldados de la legión, 10x Arcabuceros de la legión, 2x Élite de la legión, 1x Zelota de la legión
+2x Unidad de soldados de la legión, 2x Unidad de arcabuceros de la legión, 2x Élite de la legión, 1x Zelota de la legión
 
 5x Jinete huargo, 1x Caballería de élite (2 grupos)
 
@@ -67,8 +67,6 @@ Por los esfuerzos diplomáticos de Ileria la Legión, Ustilus y los insurgentes 
 
 El general Belzor garrasangrienta inicia una feroz campaña contra los insurgentes. Los jugadores deberán detener sus tropas y acabar con él.
 
-
-
 Belzor Garrasangrienta, 2x Zelota de la Legión
 
 ### Reinicio de las hostilidades
@@ -77,19 +75,29 @@ Un supuesto ataque en un fuerte ustilés rompe las negociaciones de paz y da un 
 
 ### La ciudadela de la Legión
 
-
+Los jugadores deberán asaltar la ciudadela de la Legión para derrotar a Kruge y terminar la guerra.
 
 ### El portal oni
 
+Los jugadores entran en la sala del portal oni donde Kruge les espera.
+
+Kruge, 4x Guardián del portal oni
+
 ### Apertura del portal
+
+Yabu abre el portal oni después de derrotar a Kruge, llevando a los oni al plano material.
 
 ### La última jugada
 
+Después del final de la campaña Sek-Tebos preparará sus fuerzas en una última jugada para tomar control de la unidad de los jugadores, sea con ellos o en su contra.
+
+5x Sicario de Sek-Tebos
+
 ## Enemigos
 
-**Soldado de la Legión** (nivel 3)
+**Unidad de soldados de la Legión** (nivel 7)
 
-**Arcabucero de la Legión** (nivel 3)
+**Unidad de arcabuceros de la Legión** (nivel 7)
 
 **Élite de la Legión** (nivel 5)
 
