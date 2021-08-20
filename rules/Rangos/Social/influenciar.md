@@ -11,6 +11,8 @@ Añade tu rango a todos tus tiros de influenciar.
 
 <u>Máscara:</u> Ocultas tus verdaderas intenciones bajo una máscara real o figurada, escondiendo tu verdadera identidad para lograr tus planes. Esta habilidad te otorga resistencia igual a tu rango de Influenciar contra tiros de [Averiguar Intenciones](https://raldamain.com/rules/Crear%20personajes/talentos.html#averiguar-intenciones-sab) para detectar si estás mintiendo o ver a través de tu disfraz. Además, es imposible distinguir el vínculo entre ti y tu falsa identidad salvo que des fuertes indicios de ello. 
 
+<u>Provocación:</u> Eres capaz de decir las palabras correctas para embaucar a tus enemigos para que se sobre confíen o provocarlos para que ataquen desenfrenadamente.
+
 <u>Persuasivo:</u> Tu lengua de plata es capaz de sacarte de muchos líos. Como acción estándar puedes hacer un tiro de influenciar contra la sabiduría o carisma de un objetivo (la estadística empleada queda a discreción del máster). En el caso que tengas éxito, la actitud que tendrá tu objetivo hacia ti incrementará por un paso, llegando como máximo a amistoso. Esta habilidad no puede emplearse con criaturas hostiles y sólo tendrá efecto sobre la misma persona una vez al día. A rango V puedes afectar a todas las criaturas en un radio de 30 pies con esta habilidad.
 
 ## Rango II

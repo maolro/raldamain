@@ -18,9 +18,13 @@ Tienes soltura en tiros para escalar, nadar o correr largas distancias. Una de t
 
 Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. Cada nivel de Acrobacias aumenta tu velocidad de salto horizontal por 5 pies y de salto vertical por 1 pie.
 
+### Arcanismo (INT)
+
+Tienes gran conocimiento los usos del chi en la magia, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día mientras que a nivel de talento 5 puedes emplearla tres veces al día.
+
 ### Averiguar intenciones (SAB)
 
-Tienes un sentido de intuición que te permite detectar mentiras. Recibes soltura en tiros para determinar si la persona con quién interactúas te está mintiendo. El objetivo debe tirar Engaño si te está mintiendo, y si tienes éxito sabrás con certeza si te está mintiendo o no. Averiguar intenciones no funciona con criaturas que tengan máscara.
+Tienes un sentido de intuición que te permite detectar mentiras. Recibes soltura en tiros para determinar si la persona con quién interactúas te está mintiendo. El objetivo debe tirar Engaño si te está mintiendo, y si tienes éxito sabrás con certeza si te está mintiendo o no. Este talento se emplea también para defenderte de fintas.
 
 ### Destrozar (FUE)
 
@@ -38,7 +42,7 @@ Tienes soltura en tiros para romper objetos o causar daño a estructuras. Hacer 
 
 ### Engaño (CAR)
 
-Eres experto mintiendo de una manera que parece que dices la verdad. Cuando una criatura intente usar averiguar intenciones para detectar si mientes, tienes soltura en tiros para evitar que lo detecte. Recibirás penalizadores en este tiro determinados por el máster si tu mentira resulta poco creíble. Si un jugador intenta usar Averiguar intenciones en ti, puedes comunicarle al máster tus resultados en secreto para que el otro jugador no sepa si estás usando Engaño o no. Engaño también puede usarse para comunicar mensajes secretos a un aliado sin que otro personaje lo sepa o resistir tiros de Percepción para intentar identificarte si llevas un disfraz.
+Eres experto mintiendo de una manera que parece que dices la verdad. Cuando una criatura intente usar averiguar intenciones para detectar si mientes, tienes soltura en tiros para evitar que lo detecte. Recibirás penalizadores en este tiro determinados por el máster si tu mentira resulta poco creíble. Si un jugador intenta usar Averiguar intenciones en ti, puedes comunicarle al máster tus resultados en secreto para que el otro jugador no sepa si estás usando Engaño o no. Engaño también puede usarse para comunicar mensajes secretos a un aliado sin que otro personaje lo sepa, fintar a enemigos o resistir tiros de Percepción para intentar identificarte si llevas un disfraz. 
 
 ### Estudio (INT)
 
@@ -66,7 +70,7 @@ Tus sentidos te permiten darte cuenta de detalles y alertarte del peligro. Tiene
 
 ### Persuasión (CAR)
 
-Tienes soltura en tiros para cambiar la actitud de las personas respecto a un tema determinado y para convencerles de una determinada acción. El tiro de dificultad varía según la opinión de tus interlocutores hacia ti, incrementando la dificultad si son más hostiles. Persuasión no te permite cambiar la actitud de las personas con quienes interactúas ni pedirles favores demasiado arriesgados, acciónes que pueden realizarse con rangos de Influenciar.
+Tienes soltura en tiros para cambiar la actitud de las personas respecto a un tema determinado y para convencerles de una determinada acción. El tiro de dificultad varía según la opinión de tus interlocutores hacia ti, incrementando la dificultad si son más hostiles. Persuasión no te permite cambiar la actitud de las personas con quienes interactúas ni pedirles favores demasiado arriesgados, acciones que pueden realizarse con rangos de Influenciar.
 
 ### Sigilo (DES)
 

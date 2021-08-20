@@ -9,13 +9,13 @@ category: Armas
 
 Añade tu rango de filos cortantes a tiros de ataque y defensa con un arma de esta categoría
 
-<u>Tajo feroz</u>: Tus ataques son muy efectivos contra enemigos con poca armadura. Al hacer daño con tu arma a un objetivo cuya armadura otorgue 4 o menos defensa este recibirá sangrado y todas las heridas permanentes que le inflijas aumentarán su nivel por un paso. Si tu objetivo lleva armadura natural contará como si no llevase armadura. Podrás provocar sangrado también al hacer un golpe crítico o al herir a un enemigo incapaz de defenderse.
+<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Esta habilidad te permite declarar un ataque como Ataque poderoso, lo cual te otorgará un penalizador -2 en tiradas de ataque a cambio que tus ataques inflijan +2 daño base. A rango III y V puedes volver a incrementar el penalizador por -2 para infligir 2 puntos adicionales de daño.
 
 ## Rango II
 
 <u>Gran corte:</u> Puedes emplear una acción de turno completo para atacar a todas las criaturas con un arco de 15 pies de longitud. Tu corte se detiene inmediatamente si una criatura con escudo tiene éxito en su defensa.
 
-<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Esta habilidad te permite declarar un ataque como Ataque poderoso, lo cual te otorgará un penalizador -2 en tiradas de ataque a cambio que tus ataques inflijan +2 daño base. A rango IV puedes incrementar el penalizador por -2 para infligir 2 puntos adicionales de daño.
+<u>Tajo feroz</u>: Tus ataques son muy efectivos contra enemigos con poca armadura. Al hacer daño con tu arma a un objetivo cuya armadura otorgue 4 o menos defensa este recibirá sangrado y todas las heridas permanentes que le inflijas aumentarán su nivel por un paso. Si tu objetivo lleva armadura natural contará como si no llevase armadura. Podrás provocar sangrado también al hacer un golpe crítico o al herir a un enemigo incapaz de defenderse.
 
 ## Rango III
 

@@ -16,4 +16,6 @@ De todos los tomos esotéricos y prohibidos que existen en el mundo ninguno es c
 
 ## Báculo de Shade
 
+El báculo de Shade es un bastón hecho de madera y filamentos de energía sombría
+
 ## Las cuatro llaves
