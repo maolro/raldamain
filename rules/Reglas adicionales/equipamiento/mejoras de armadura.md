@@ -2,7 +2,7 @@
 title: Mejoras de armadura
 ---
 
-Esta es una lista de mejoras mágicas y tecnológicas que se pueden añadir a una armadura. El número máximo de mejoras equivale al valor defensivo de tu armadura + tu rango de aptitud con armaduras.
+Esta es una lista de mejoras mágicas y tecnológicas que se pueden añadir a una armadura. El número máximo de mejoras equivale a tu rango de aptitud con armaduras + 1. Si una armadura sufre 2 o más daño su usuario perderá los efectos de una de sus mejoras hasta que esta sea reparada.
 
 ## Mejoras de armadura
 
@@ -22,6 +22,10 @@ Esta es una lista de mejoras mágicas y tecnológicas que se pueden añadir a un
 
 <u>Desplazamiento</u> (Crédito 3): La armadura no está sincronizada con el tiempo, causando que tanto ella como el portador realicen periódicos saltos en el tiempo que le permiten evitar ataques. Un total de tres veces por combate puedes realizar un salto temporal para evitar un ataque, anulando de inmediato todos los resultados del ataque (las desventajas que generes serán anuladas también). Esta habilidad no puede emplearse en un campo antimagia y si el atacante posee la habilidad Desplazamiento este puede gastar 1 chi para que el ataque no sea cancelado.  
 
+<u>Gélida</u> (Crédito 2): Tu armadura es capaz de protegerte de las más frías temperaturas. Mientras lleves una armadura gélida eres inmune a los efectos de frío extremo y no puedes ser ralentizado ni sufrir hipotermia por los efectos de magia de hielo. Recibes además resistencia al daño frío igual a tu rango de armaduras x 2 (aumenta tu resistencia por 2 si ya la tienes).
+
+<u>Ignífuga</u> (Crédito 2): Tu armadura es capaz de proteger tu cuerpo las más altas temperaturas. Mientras lleves una armadura ignífuga eres inmune a los efectos de calor extremo y a las quemaduras. Recibes además resistencia al fuego igual a tu rango de armaduras x 2 (aumenta tu resistencia por 2 si ya la tienes).
+
 <u>Ilusoria</u> (Crédito 2): Tu armadura está infundida de magia ilusoria, permitiéndola alterar su aspecto según tus necesidades. Una armadura ilusoria no te otorga ningún penalizador a tiros de sigilo y como acción estándar puedes emplearla para que se camufle con tu entorno, lo cual funcionará como la habilidad Acechar. Recibes además los efectos de ocultamiento contra enemigos que no hayan desmentido la ilusión en tu armadura.
 
 <u>Imagen múltiple</u> (Crédito 2): El proyector ilusorio de la armadura es capaz de crear múltiples imágenes tuyas para frustrar a los atacantes. La armadura podrá crear un máximo de 3 imágenes por combate y mientras estas estén activas obtendrás los beneficios de flanqueo mientras que los atacantes no podrán hacerle ataques precisos ni detectar su posición exacta. Además, como reacción puedes sacrificar una de las imágenes para detener un ataque, anulando así todos los resultados de la tirada. Imagen múltiple no funciona contra personajes con vista a ciegas o visión verdadera y esta mejora sólo podrá tomarse si posees y a la mejora Ilusoria.
@@ -32,7 +36,7 @@ Esta es una lista de mejoras mágicas y tecnológicas que se pueden añadir a un
 
 <u>Propulsor integrado</u> (Crédito 3): Tu armadura cuenta con varios motores a reacción que te permiten volar durante periodos extendidos de tiempo. Activar esta mejora te cuesta una acción de movimiento y recibes la capacidad de volar a una velocidad de 60 pies. El propulsor no puede emplearse para volar durante más de 20 turnos al día, aunque cuenta con un modo de vuelo automático que te permite conservar la energía a costa de reducir tu velocidad. El modo de vuelo automático disminuye tu velocidad de vuelo a 30 pies y no podrás tirar Esquivar para defenderte, pero el consumo de tu propulsor se reducirá a una carga por minuto. 
 
-<u>Reductor de sonido</u> (Crédito 2): Tu armadura cuenta con un aparato capaz de silenciar los sonidos en un área de 5 pies centrado en ti, permitiendo que te puedas mover sin hacer ruido. Pierdes los penalizadores al sigilo ocasionados por la armadura y recibes ventaja a tus tiros de sigilo. Además, recibes resistencia a daño Trueno igual a tu rango de Aptitud con armaduras (si ya tienes resistencia a daño Trueno auméntala por 2).
+<u>Reductor de sonido</u> (Crédito 2): Tu armadura cuenta con un aparato capaz de silenciar los sonidos en un área de 5 pies centrado en ti, permitiendo que te puedas mover sin hacer ruido. Pierdes los penalizadores al sigilo ocasionados por la armadura y recibes ventaja a tus tiros de sigilo. Además, recibes resistencia a daño Trueno igual a tu rango de Aptitud con armaduras x 2 (si ya tienes resistencia a daño Trueno auméntala por 2).
 
 <u>Reflectora de magia</u> (Crédito 2): El campo de fuerza generado por tu armadura es capaz de rebotar hechizos incapaces de superar tu resistencia mágica. Si eres impactado por un hechizo y es incapaz de destruir tu campo de fuerza este será rebotado hacia todos los objetivos cercanos a ti, causando que estos deban defenderse contra el tiro de ataque del lanzador del hechizo o sufrirán los efectos de este. Además, esta mejora evita que sufras daño obligatorio hecho por ataques mágicos de área siempre y cuando el campo de fuerza siga activo.
 

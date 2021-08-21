@@ -9,13 +9,13 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ### Soldado (nivel 1)
 
-**PV:** 5			**VT:** 5	 		**DEF:** 3 (Pechera)
+**PV:** 5			**VT:** 5	 		**DEF:** 6 (Pechera)
 
 **FUE:** 3 	**DES:** 1	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
-**Talentos:** Percepción 1, Intimidar 1, Heroísmo 1, Atletismo 1
+**Talentos:** Percepción +3, Intimidar +4, Heroísmo +4, Atletismo +4
 
 **Rangos:** Alabardas I, Armaduras I
 
@@ -25,23 +25,25 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Lanza** (acción estándar): 1 soltura + 2 habilidad, 3+Éxito daño contundente. 1 VEN: El objetivo es empujado 5 pies (cae al suelo si tiene FUE inferior a 4).
+**Lanza** (acción estándar): +4, 1d8 + 3 perforante. 
 
-**Preparación contra cargas** (acción de movimiento): El soldado se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con s0u arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +2 daño.
+**Preparación contra cargas** (acción de movimiento): El soldado se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +1d6 daño.
 
 ------
 
-**Parada**: 1 desafío+ 2 dificultad . Cancela un éxito o dos ventajas (1/ronda). Tira un dado de dificultad menos defendiéndote de enemigos adyacentes
+**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
+
+**Proteger aliado:** Un aliado a 10 pies recibe +2 en tiros defensivos 
 
 ### Guerrero tribal (nivel 1)
 
-**PV:** 6			**VT:** 6	 		**DEF:** 1 (Pieles)
+**PV:** 6			**VT:** 6	 		**DEF:** 2 (Pieles)
 
 **FUE:** 2 (3) 	**DES:** 2	**CON:** 2 (3)	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
-**Talentos:** Percepción 1, Supervivencia 1, Sigilo 1, Atletismo 1
+**Talentos:** Percepción +3, Supervivencia +3, Sigilo +3, Atletismo +3 (+4)
 
 **Rangos:** Alabardas I, Ira I
 
@@ -55,27 +57,29 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Lanza** (acción estándar): 1 soltura + 2 habilidad, 3+Éxito daño contundente. 1 VEN: El objetivo es empujado 5 pies (cae al suelo si tiene FUE inferior a 4). Esta arma puede arrojarse a una distancia máxima de 20 pies (preparación contra cargas se aplica).
+**Lanza** (acción estándar): +4, 1d8 + 3 perforante. Esta arma puede arrojarse a una distancia máxima de 20 pies (preparación contra cargas se aplica).
 
-**Preparación contra cargas** (acción de movimiento): El guerrero tribal se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +2 daño.
+**Preparación contra cargas** (acción de movimiento): El guerrero tribal se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +1d6 daño.
 
 ------
 
-**Parada**: 1 desafío+ 2 dificultad . Cancela un éxito o dos ventajas (1/ronda). Tira un dado de dificultad menos defendiéndote de enemigos adyacentes
+**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
+
+**Proteger aliado:** Un aliado a 10 pies recibe +2 en tiros defensivos 
 
 ### Matón (nivel 2)
 
-**PV:** 8			**VT:** 8	 		**DEF:** 3 (cuero, armadura natural +2)
+**PV:** 8			**VT:** 8	 		**DEF:** 4 (cuero, armadura natural +2)
 
 **FUE:** 3 (4) 	**DES:** 2	**CON:** 3 (4)	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
-**Talentos:** Intimidación 1, Heroísmo 1, Percepción 2, Destrozar 1  v   
+**Talentos:** Intimidación +5, Heroísmo +5, Percepción +4, Destrozar +5
 
 **Rangos:** [Contundentes](https://raldamain.com/rules/Rangos/Armas/contundentes.html) I, [Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii) I, [Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html) I
 
-**Resiste:** Efectos mentales 1, miedo 1
+**Resiste:** Efectos mentales +1, miedo +1
 
 **Movimiento:** 15 (25) pies
 
@@ -85,25 +89,27 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
 
-**[Ataque poderoso](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-i):** Reduce el tiro de ataque por un dado de habilidad para incrementar el daño base por 2.
+**[Ataque poderoso](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-i):** Reduce el tiro de ataque por -2 para incrementar el daño base por 2 y empujar 5 pies al impactar.
 
 ------
 
-**Garrote** (acción estándar): 1 soltura + 3 habilidad, 3+Éxito daño contundente. 1 VEN: El objetivo es empujado 5 pies (cae al suelo si tiene FUE inferior a 4).
+**Garrote** (acción estándar): +5, 1d8 + 4 contundente. 
+
+**Ataque poderoso** (acción de movimiento): El siguiente ataque inflige +2 daño y empuja 5 pies.
 
 ------
 
-**Parada**: 1 desafío + 3 dificultad . Cancela un éxito (1/ronda). 
+**Parada**: +5
 
 ### Infantería pesada (nivel 3)
 
-**PV:** 8			**VT:** 9	 		**DEF:** 6 (Cota de malla, armadura natural +2)
+**PV:** 8			**VT:** 9	 		**DEF:** 10 (Cota de malla, armadura natural +2)
 
 **FUE:** 4 	**DES:** 0	**CON:** 4	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
-**Talentos:** Heroísmo 2, Percepción 1, Destrozar 1, Atletismo 1, Intimidación 1
+**Talentos:** Heroísmo +6, Percepción +3, Destrozar +5, Atletismo +5, Intimidación +5
 
 **Rangos:** Filos pesados I, Armaduras I, Escudo I, Fortitud I
 
@@ -113,15 +119,19 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Espada larga** (acción estándar): 1 soltura + 3 habilidad, 3+Éxito daño cortante. Inflige una herida leve contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado.
-
-**Golpe de escudo** (acción bonus): 1 soltura + 3 habilidad, empuja 5 x éxito pies. Este ataque sólo puede realizarse al final de una carga. 2 VEN: El objetivo es tropezado.
+**Ataque poderoso:** Reduce el tiro de ataque por -2 para incrementar el daño base por 2.
 
 ------
 
-**Parada**: 1 desafío + 3 dificultad . Cancela un éxito o dos ventajas (1/ronda). 
+**Espada larga** (acción estándar): +5, 1d8 + 4 cortante. 
 
-**Escudo**: 1 desafío + 3 dificultad . Cancela un éxito o dos ventajas (1/ronda). 
+**Ataque poderoso** (acción de movimiento): El siguiente ataque inflige +2 daño y provoca sangrado al herir.
+
+**Golpe de escudo** (acción bonus): +5, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 4 daño adicional al realizar una carga.
+
+------
+
+**Parada**: +5, **Escudo**: +5. Puede proteger a aliados a 5 pies como reacción
 
 ## Nivel 4-6
 
@@ -133,11 +143,11 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Talentos:** Heroísmo 3, Destrozar 1, Atletismo 1, Intimidación 1, Percepción 2
+**Talentos:** Heroísmo +8, Destrozar +6, Atletismo +6, Intimidación +6, Percepción +4
 
 **Rangos:** Filos pesados II, Ira I, Fortitud I, Escudo I
 
-**Resiste:** Efectos mentales 1, miedo 1
+**Resiste:** Efectos mentales +1, miedo +1
 
 **Movimiento:** 20 pies (30 pies)
 
@@ -147,23 +157,27 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
 
-**Ataque poderoso:** Añade un dado de dificultad al tiro de ataque para incrementar el daño base por 2.
+**Ataque poderoso:** Añade -2 al tiro de ataque para incrementar el daño base por 2 y causar sangrado
 
 ------
 
-**Hacha de batalla** (acción estándar): 1 soltura + 4 habilidad, 5+Éxito daño cortante. Inflige una herida leve contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado.
+**Hacha de batalla** (acción estándar): +7, 2d6 + 5 daño cortante. Aumenta el nivel de todas las heridas por 1 contra enemigos con 4 o menos DEF.
+
+**Ataque poderoso** (acción de movimiento): El siguiente ataque inflige +2 daño y provoca sangrado al herir.
 
 **Gran corte** (acción de turno completo): Realiza un ataque con su hacha de batalla contra todos los enemigos en un arco de 15 pies.
 
-**Golpe de escudo** (acción bonus): 1 soltura + 3 habilidad, empuja 5 x éxito pies. Este ataque sólo puede realizarse al final de una carga. 2 VEN: El objetivo es tropezado.
+**Golpe de escudo** (acción bonus): +5, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 4 daño adicional al realizar una carga.
 
 ------
 
-**Escudo**: 1 desafío + 3 dificultad . Cancela un éxito o dos ventajas (1/ronda). 
+**Parada**: +5 (solo contra armas pesadas)
 
-### Veterano (nivel 5)
+**Escudo**: +5. Puede proteger a aliados a 5 pies como reacción
 
-**PV:** 7			**VT:** 10	 		**DEF:** 6 (Placas +2)
+## Veterano (nivel 5)
+
+**PV:** 7			**VT:** 10	 		**DEF:** 11 (Placas +3)
 
 **FUE:** 4 	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
 
@@ -173,7 +187,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **Rangos:** Filos pesados II, Armaduras II, Combate doble I, Presencia I 
 
-**Resiste:** miedo 1, influenciar 1, fuego 2, aturdimiento 2
+**Resiste:** miedo +2, influenciar +2, fuego +3, aturdimiento +3
 
 **Movimiento:** 20 pies
 
@@ -181,39 +195,39 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Ataque poderoso:** Añade un dado de dificultad al tiro de ataque para incrementar el daño base por 2.
+**Ataque poderoso:** Añade -2 al tiro de ataque para incrementar el daño base por 2 y causar sangrado
 
-**Voz del comandante:** Todos los aliados a 30 pies añaden un dado de ventaja a su tiro de ataque.
+**Voz del comandante:** Todos los aliados a 30 pies reciben ventaja en su tiro de ataque hasta que este personaje sufra una herida permanente (volver a activar este efecto cuesta una acción estándar).
 
-**Inspirar temor:** Los enemigos de nivel 3 o menos que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
+**Inspirar temor:** Los enemigos con 5 o menos PV que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
 
 ------
 
-**Espada larga** (acción estándar): 1 soltura + 3 habilidad, 4+Éxito daño cortante. Inflige una herida leve contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado.
+**Espada larga** (acción estándar): +6, 1d8 + 4 cortante. Aumenta el nivel de todas las heridas por 1 contra enemigos con 4 o menos DEF.
+
+**Ataque poderoso** (acción de movimiento): El siguiente ataque inflige +2 daño y provoca sangrado al herir.
 
 **Gran corte** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
 
-**Espada corta** (acción bonus): 1 soltura + 2 habilidad, 2+Éxito daño cortante. Incrementa el daño por 2 si el objetivo ya ha sido impactado por el arma principal. 
+**Espada corta** (acción bonus): +4, 1d6 + 4 cortante. Incrementa el daño por 1d6 si el objetivo ya ha sido impactado por el arma principal. 
 
 ------
 
-**Parada** (1/ronda): 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas (1/ronda). 
-
-**Parada secundaria** (1/ronda): 1 desafío + 2 dificultad. Cancela un éxito o dos ventajas. Esta reacción puede detener ataques que hayan sobrepasado exitosamente tu parada principal.
+**Parada**: +6, **Parada secundaria** (1/ronda): +4. Esta reacción puede detener ataques que hayan sobrepasado exitosamente tu parada principal.
 
 ### Caballero (nivel 5)
 
-**PV:** 7			**VT:** 10	 		**DEF:** 6 (Placas +2)
+**PV:** 7			**VT:** 10	 		**DEF:** 11 (Placas +3)
 
 **FUE:** 4 	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
 
 ------
 
-**Talentos:** Heroísmo 3, Percepción 2, Destrozar 1, Atletismo 1, Intimidación 1
+**Talentos:** Heroísmo +7, Percepción +4, Destrozar +5, Atletismo +5, Intimidación +5
 
 **Rangos:** Alabardas II, Armaduras II, Montar I, Presencia I
 
-**Resiste:** miedo 1, influenciar 1, fuego 2, aturdimiento 2
+**Resiste:** miedo 1, influenciar 1, fuego +3, aturdimiento +3
 
 **Movimiento:** 20 pies (40 pies montura)
 
@@ -221,112 +235,120 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**Voz del comandante:** Todos los aliados a 30 pies añaden un dado de ventaja a su tiro de ataque.
+**Voz del comandante:** Todos los aliados a 30 pies reciben ventaja en su tiro de ataque hasta que este personaje sufra una herida permanente (volver a activar este efecto cuesta una acción estándar).
 
-**Inspirar temor:** Los enemigos de nivel 3 o menos que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
+**Inspirar temor:** Los enemigos con 5 o menos PV que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
 
-**Carga de caballería:** Al hacer una carga inflige +2 daño y puede gastar 1 VEN para tropezar. La montura puede realizar un ataque contra una criatura en el suelo como acción bonus.
+**Carga de caballería:** Al hacer una carga inflige +1d6 daño y realiza una maniobra gratuita de tropezar. La montura puede realizar un ataque contra una criatura en el suelo como acción bonus.
 
 ------
 
-**Lanza** (acción estándar): 1 soltura + 3 habilidad, 4+Éxito daño contundente. 1 VEN: El objetivo es empujado 5 pies (cae al suelo si tiene FUE inferior a 4).
+**Lanza** (acción estándar): +6, 1d8 + 4 perforante. 
 
-**Preparación contra cargas** (acción de movimiento): El caballero se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenace el caballero con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +2 daño.
+**Preparación contra cargas** (acción de movimiento): El caballero se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenaza el soldado con su arma sufrirá un ataque de oportunidad inmediato con el cual el soldado infligirá +1d6 daño.
 
 **Ajustar alcance** (acción de movimiento): Aumenta o reduce el alcance de su lanza por 5 pies. Si el alcance es de 15 pies no podrá defenderse de enemigos adyacentes.
 
-**Ataque lateral** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies. 2 VEN: El objetivo es tropezado.
+**Ataque lateral** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies. Al impactar puede hacer una maniobra de tropezar +7.
 
 ------
 
-**Parada** (1/ronda): 1 desafío + 3 dificultad. Cancela un éxito o dos ventajas (1/ronda). Esta habilidad puede usarse una vez adicional si se entra en forma defensiva.
+**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
 
-**Parada secundaria** (1/ronda): 1 desafío + 2 dificultad. Cancela un éxito o dos ventajas (1/ronda). Esta reacción puede detener ataques que hayan sobrepasado exitosamente tu parada principal.
+**Proteger aliado:** Un aliado a 10 pies recibe +2 en tiros defensivos 
 
 ## Nivel 7-9
 
 ### Guerrero de élite (nivel 7)
 
-**PV:** 13			**VT:** 14	 		**DEF:** 8 (Placas +2, armadura natural +2)
+**PV:** 13			**VT:** 14	 		**DEF:** 13 (Placas +3, armadura natural +2)
 
-**FUE:** 5 (6)	**DES:** 0 (1)	**CON:** 5 (6)	**INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 5 (6)	**DES:** 0	**CON:** 5 (6)	**INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
-**Talentos:** Heroísmo 3, Percepción 1, Destrozar 1, Atletismo 3, Intimidación 1
+**Talentos:** Heroísmo +8, Percepción +3, Destrozar +7, Atletismo +8, Intimidación +7
 
 **Rangos:** Filos pesados III, Armaduras II, Escudo II, Fortitud I
 
-**Movimiento:** 15 pies (25 pies forma defensiva)
+**Movimiento:** 15 pies
 
-**Resistencias:** maniobras de combate 2 (forma defensiva), fuego 2, aturdimiento 2
+**Resistencias:** maniobras de combate +2 (forma defensiva), fuego 3, aturdimiento +3
 
 **Prioridad:** 0 (1 estándar + 1 movimiento)
 
 ------
 
-**Ataque poderoso:** Añade un dado de dificultad al tiro de ataque para incrementar el daño base por 2.
+**Ataque poderoso:** Añade -2 al tiro de ataque para incrementar el daño base por 2, provocar sangrado y reducir la DEF de tu objetivo por 2 al impactar. 
 
-**Forma defensiva:** Incrementa su FUE y CON por 1 (ya incluidos) y añade un dado de dificultad adicional a tiradas de escudo. Cada turno que pase en forma defensiva le hace 1 daño no-letal
-
-------
-
-**Espada larga** (acción estándar): 2 soltura + 3 (4) habilidad, 4+Éxito daño cortante. Inflige una herida media contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado. 2 VEN: Inflige una herida leve, espadas trabadas, la defensa de su objetivo se reduce por 1.
-
-**Golpe de escudo** (acción bonus): 1 soltura + 3 (4) habilidad, empuja 5 x éxito pies. Este ataque sólo puede realizarse al final de una carga. 2 VEN: El objetivo es tropezado. 4 VEN: El objetivo es aturdido.
-
-**Interceptar** (acción de movimiento): El guerrero de élite se prepara para interceptar un ataque enemigo. En cualquier momento de la ronda podrá hacer una carga contra un enemigo que se esté moviendo y hacerle un golpe de escudo. Si impacta el objetivo deberá detenerse de inmediato.
+**Forma defensiva:** Incrementa su FUE y CON por 1 (ya incluidos) y +2 a tiradas de escudo durante 7 rondas. No puede moverse más de 15 pies por ronda.
 
 ------
 
-**Parada**: 2 desafío + 3 dificultad . Cancela un éxito o dos ventajas (2/ronda). 
+**Espada larga** (acción estándar): +8 , 1d8 + 6 daño cortante. Aumenta el nivel de todas las heridas por 1 contra enemigos con 4 o menos DEF.
 
-**Escudo de torre**: 1 desafío + 3 (4) dificultad . Cancela un éxito o dos ventajas (2/ronda). 
+**Espadas trabadas** (acción estándar): +8, el arma de tu objetivo queda agarrada.
+
+**Ataque poderoso** (acción de movimiento): El siguiente ataque inflige +2 daño, provoca sangrado al herir y reduce la DEF de tu objetivo por 2.
+
+**Gran corte** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
+
+**Golpe de escudo** (acción bonus): +8, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 4 daño adicional al realizar una carga.
+
+**Interceptar** (acción de movimiento): El guerrero de élite se prepara para interceptar un ataque enemigo. En cualquier momento de la ronda podrá hacer una carga contra un enemigo que se esté moviendo y hacerle un golpe de escudo. Si impacta el objetivo deberá detenerse de inmediato y una vez por ronda tirará CON contra dificultad +8 o queda aturdido.
+
+------
+
+**Parada**: +8, **Escudo**: +8. Puede proteger a aliados a 5 pies como reacción
 
 ## Nivel 10-12
 
 ### Paladín (nivel 10)
 
-**PV:** 13			**VT:** 18	 		**DEF:** 9 / 11 (Placas +4, resistencia 1 / 3)
+**PV:** 13			**VT:** 18	 		**DEF:** 16 (Placas +6, resistencia 2)
 
-**FUE:** 6 (7)	**DES:** 0 (1)	**CON:** 6 (7)	**INT:** 1	**SAB:** 3	**CAR:** 2
+**FUE:** 6 (7)	**DES:** 0	**CON:** 6 (7)	**INT:** 1	**SAB:** 3	**CAR:** 2
 
 ------
 
-**Talentos:** atletismo 3, heroísmo 3, persuasión 2, primeros auxilios 3, destrozar 1, intimidar 1
+**Talentos:** atletismo +10, heroísmo +10, persuasión +4, primeros auxilios 3, destrozar +8, intimidar +8
 
 **Rangos:** Filos pesados III, Armaduras III, Escudo II, Guerrero divino III
 
-**Movimiento:** 15 pies (25 pies forma defensiva)
+**Movimiento:** 15 pies
 
-**Resistencias:** maniobras de combate 2 (forma defensiva), ataques físicos 1 (3), fuego 3, aturdimiento 3, magia 5
+**Resistencias:** maniobras de combate +2 (forma defensiva), ataques físicos 2 (guerrero divino), fuego 3, aturdimiento +4, magia 6
 
 **Prioridad:** 0 (1 estándar + 1 movimiento)
 
 ------
 
-**Ataque poderoso:** Añade un dado de dificultad al tiro de ataque para incrementar el daño base por 2.
+**Ataque poderoso:** Añade -2 al tiro de ataque para incrementar el daño base por 2, provocar sangrado y reducir la DEF de tu objetivo por 2 al impactar. 
 
-**Forma defensiva:** Incrementa su FUE y CON por 1 (ya incluidos) y añade un dado de dificultad adicional a tiradas de escudo. Cada turno que pase en forma defensiva le hace 1 daño no-letal. No puede entrar en forma defensiva más de una vez por turno.
+**Forma defensiva:** Incrementa su FUE y CON por 1 (ya incluidos) y +2 a tiradas de escudo durante 7 rondas. No puede moverse más de 15 pies por ronda.
 
 **Guardián de la fe:** Incrementa su FUE y CON por 1 e incrementa su resistencia por 2. Cada turno en estado de guardián de la fe le hace 1 daño no-letal.
 
-**Plegaria:** Todos los aliados de la fe reciben +1 DEF y añaden un dado de ventaja a sus tiros de ataque.
+**Plegaria:** Todos los aliados de la fe reciben ventaja en todos sus tiros.
 
 ------
 
-**Espada larga** (acción estándar): 2 soltura + 4 (5) habilidad, 5+Éxito daño cortante.-+2 daño y +1 dado de ventaja contra enemigos de la fe. Inflige una herida media contra objetivos sin armadura. X VEN: Un enemigo con VEN-1 defensa o menos sufre sangrado. 2 VEN: Inflige una herida leve, espadas trabadas, la defensa de su objetivo se reduce por 1.
+**Espada larga** (acción estándar): +10, 1d8 + 7 cortante.-+2 daño y +1d6 en tiros de ataque contra enemigos de la fe. Aumenta el nivel de todas las heridas por 1 contra enemigos con 4 o menos DEF.
 
 **Sanador de combate** (acción estándar): Un aliado recupera 5 vitalidad y reduce el nivel de una herida permanente que tenga por 1 (2/día).
 
-**Golpe de escudo** (acción bonus): 2 soltura + 3 (4) habilidad, empuja 5 x éxito pies. Este ataque sólo puede realizarse al final de una carga. 2 VEN: El objetivo es tropezado. 4 VEN: El objetivo es aturdido.
+**Ataque poderoso** (acción de movimiento): El siguiente ataque inflige +2 daño, provoca sangrado al herir y reduce la DEF de tu objetivo por 2.
 
-**Interceptar** (acción de movimiento): El guerrero de élite se prepara para interceptar un ataque enemigo. En cualquier momento de la ronda podrá hacer una carga contra un enemigo que se esté moviendo y hacerle un golpe de escudo. Si impacta el objetivo deberá detenerse de inmediato.
+**Gran corte** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
+
+**Golpe de escudo** (acción bonus): +8, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 4 daño adicional al realizar una carga.
+
+**Interceptar** (acción de movimiento): El paladín se prepara para interceptar un ataque enemigo. En cualquier momento de la ronda podrá hacer una carga contra un ene	migo que se esté moviendo y hacerle un golpe de escudo. Si impacta el objetivo deberá detenerse de inmediato y una vez por ronda tirará CON contra dificultad +8 o queda aturdido.
 
 ------
 
-**Parada**: 2 desafío + 4 (5) dificultad. Cancela un éxito o dos ventajas (2/ronda). 
+**Parada**: +8 (+1d6 contra enemigos de la fe)
 
-**Escudo de torre**: 2 desafío + 3 (4) dificultad . Cancela un éxito o dos ventajas (3/ronda). 
+**Escudo**: +8 (+1d6 contra enemigos de la fe). Puede proteger a aliados a 5 pies como reacción
 
 **Resistir armas** (1/turno): Reduce el nivel de una herida permanente sufrida por un paso. 

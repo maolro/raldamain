@@ -6,7 +6,7 @@ Los artefactos son objetos mágicos de leyenda propios de dioses y grandes héro
 
 ## Necronomicon
 
-De todos los tomos esotéricos y prohibidos que existen en el mundo ninguno es capaz de asemejarse al siniestro Necronomicon. Escrito en tiempos inmemoriales por Abdul Alhazred, el Poeta Loco, este libro contiene todo tipo de blasfemos secretos relacionados con criaturas más allá de la razón. Un lector poco preparado para el contenido de este tomo corre el riesgo de caer irreparablemente en la locura, o peor, bajo el control del mismo escritor del libro. Para aquel que logre estudiar el contenido de este libro sin enloquecer obtendrá los siguientes considerables beneficios:
+De todos los tomos esotéricos y prohibidos que existen en el mundo ninguno es capaz de asemejarse al siniestro Necronomicon. Escrito en tiempos inmemoriales por Abdul Alhazred, el Poeta Loco, este libro contiene todo tipo de blasfemos secretos relacionados con criaturas más allá de la razón. Un lector poco preparado para el contenido de este tomo corre el riesgo de caer irreparablemente en la locura, o peor, bajo el control del mismo escritor del libro. 
 
 ## Tres fragmentos de Feyn
 
