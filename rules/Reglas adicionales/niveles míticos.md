@@ -51,24 +51,119 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 ## Atributos míticos
 
-Los niveles míticos son capaces de mejorar exponencialmente las habilidades otorgadas por atributos básicos. Al obtener un nivel mítico mejora uno de tus atributos de la siguiente manera:
+Los niveles míticos son capaces de mejorar exponencialmente las habilidades otorgadas por atributos básicos. Al obtener un nivel mítico puedes mejorar un rango que ya poseas a nivel máximo, recibiendo habilidades adicionales muy superiores a la media.
 
 ### Armas
 
-<u>Tajo feroz:</u> Las criaturas cuya armadura otorgue 4 o menos defensa cuentan como si no llevasen armadura para los propósitos de tus habilidades. Puedes además defenderte de ataques a distancia y mágicos empleando tu espada, permitiéndote usar parada para protegerte de estos.
+<u>A distancia:</u>
+
+<u>Ataques naturales:</u>
+
+<u>Contundentes:</u> 
+
+<u>Filo cortante:</u>
 
 ### Combate
 
+<u>Armaduras:</u> Tu armadura está infundida con tu poder mítico, aumentando su defensa y resistencia mágica por 2 y reduciendo el penalizador de nuevo por 2. Recibirá además un número de mejoras de armadura con coste total 4 en créditos. Esta mejora puede tomarse hasta dos veces adicionales.
+
+<u>Compañero salvaje:</u>
+
+<u>Fortitud:</u> La energía mítica fortalece tu cuerpo a límites superiores, aumentando así tus PV y armadura natural por 2. Tu armadura natural cuenta como armadura pesada para los propósitos de gran corte y es capaz de resistir daño perforante hecho por ataques furtivos. Una vez por combate puedes recuperar PV y Vitalidad igual a 3 + CON como acción bonus. Si vuelves a tomar esta mejora vuelve a incrementar tus PV y armadura natural y podrás recuperar PV y Vitalidad una vez adicional por combate (esta puede tomarse un máximo de tres veces).
+
+<u>Ira:</u> Al entrar en ira eres capaz de conectar con una fuerza primigenia capaz de transformarte en un guerrero invencible. Al entrar en ira incrementa dos de tus estadísticas físicas por 2, tu defensa por 2 y todos tus movimientos base por 15 pies. 
+
+<u>Montar:</u>
+
+<u>Rastrear:</u> Tu mítica conexión con las tierras salvajes te transforma en un conocedor de todos los terrenos o un cazador imparable. Escoge una de las siguientes dos habilidades, y si vuelves a escoger esta mejora podrás elegir una mejora adicional.
+
+- **Caminante del horizonte:** Todos los terrenos naturales en el planeta cuentan como terrenos predilectos para ti, otorgándote así todos los beneficios de estos en cualquier lugar que estés (esto te permite tener activos a la vez todos los bonificadores de maestro del terreno). Adicionalmente, puedes escoger otro planeta o dimensión como terreno predilecto, recibiendo las habilidades de una ascendencia a rango I de una ascendencia de tu elección. Si ya tienes rangos en dicha ascendencia recibes un rango adicional en esta (recibirás su versión mítica si ya la tienes al máximo).
+- **Cazador legendario:** Al declarar a un objetivo como tu presa recibirás los beneficios de visión futura contra ella, repitiendo así todos tus tiros de ataque y defensa contra ella y quedándote con el resultado que más te convenga. Además, eres capaz de detectar donde se encuentra sin importar su distancia, notando así un leve pero claro rastro que se hará más poderoso lo más que te acerques a él. Los beneficios de presa durarán hasta que tu objetivo muera o tú escogas cesarlos.
+
+<u>Reflejos:</u>
+
 ### Magia arcana
+
+<u>Espacial:</u>
+
+<u>Evocación:</u>
+
+<u>Ilusoria:</u>
+
+<u>Mental:</u>
+
+<u>Protectora:</u>
+
+<u>Temporal:</u>
 
 ### Elementalismo
 
+<u>Agua:</u>
+
+<u>Aire:</u>
+
+<u>Fuego:</u>
+
+<u>Hielo:</u>
+
+<u>Metal:</u>
+
+<u>Naturaleza:</u>
+
+<u>Sangre:</u>
+
+<u>Tierra:</u>
+
+<u>Tormenta:</u>
+
 ### Ascendencias
+
+<u>Abisal:</u>
+
+<u>Akhásica:</u>
+
+<u>Celestial:</u>
+
+<u>Elemental:</u>
+
+<u>Infernal:</u>
+
+<u>Oni:</u>
+
+<u>Sombría:</u>
+
+<u>Verdeante:</u>
 
 ### Ocultismo
 
+<u>Gravitatoria:</u>
+
+<u>Onírica</u>
+
+<u>Sombría:</u>
+
+<u>Médium:</u>
+
+<u>Mente desencadenada:</u>
+
+<u>Nigromancia:</u>
+
+<u>Telekinesia:</u>
+
 ### Religión
+
+<u>Guerrero divino:</u>
+
+<u>Magia divina:</u>
 
 ### Social
 
+<u>Influenciar:</u>
+
+<u>Presencia:</u>
+
 ### Ciencia
+
+<u>Conocimiento:</u>
+
+<u>Fabricación:</u>

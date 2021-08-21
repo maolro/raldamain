@@ -27,7 +27,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Antes de atacar puedes tomar un penalizador -2 a tus ataques a cambio de incrementar el nivel de todas las heridas permanentes que inflijas por un paso. Si empleas una acción de movimiento para apuntar puedes reducir el penalizador para emplear puños precisos y apuntar a partes del cuerpo de tu objetivo por 2.
 
-## Rango IV 
+## Rango IV
 
 <u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un puño preciso a un enemigo reduce la defensa de su armadura por 2, y si esta es reducida a 2 o menos se volverá inutilizable. Esta habilidad te permite destrozar la armadura como acción de movimiento
 

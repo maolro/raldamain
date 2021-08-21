@@ -11,7 +11,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas.
 
 <u>Preparación contra cargas:</u> Puedes emplear una acción de movimiento para prepararte contra cargas enemigas, alcanzándoles con tu arma antes de que puedan llegar a ti. Mientras estés en el estado de preparación puedes realizar un ataque de oportunidad en cualquier momento de la ronda contra una criatura que pase por el radio de alcance de tu alabarda. Este ataque infligirá +1d6 daño base y en el caso que impactes el objetivo deberá detenerse de inmediato. El ataque que prepares no se perderá al final de la ronda y sólo saldrás del estado de preparación si realizas un ataque, te mueves más de 10 pies de tu posición o eres desconcentrado (no abandonarás el estado de preparación si tu montura se mueve, pero sí lo perderás en el momento que gastes acciones de movimiento para que esta se desplace más).
 
-<u>Proteger aliados:</u> El largo alcance de tu arma te permite proteger a aliados cercanos de ataques enemigos. Cuando un aliado a 10 pies de ti realice un tiro defensivo recibirá un bonificador a este igual a tu rango de alabardas. No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes, quienes recibirán ventaja en todos sus ataques contra ti.
+<u>Proteger aliados:</u> El largo alcance de tu arma te permite proteger a aliados cercanos de ataques enemigos. Cuando un aliado a 10 pies de ti realice un tiro defensivo recibirá un bonificador a este igual a tu rango de alabardas + 1. No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes, quienes recibirán ventaja en todos sus ataques contra ti.
 
 ## Rango II
 
