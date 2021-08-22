@@ -230,7 +230,7 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 ------
 
-**Talentos:** Persuasión +10 (+15 interactuando con perosnas más débiles), Engaño +11, Percepción +7, Heroísmo +17, Intimidar +14, Estudio (espíritus, estrategia militar) +4, Atletismo +15
+**Talentos:** Persuasión +10 (+15 interactuando con personas más débiles), Engaño +11, Percepción +7, Heroísmo +17, Intimidar +14, Estudio (espíritus, estrategia militar) +4, Atletismo +15
 
 **Rangos:** Filos cortantes V, Ascendencia oni VI, Armaduras III, Médium III, Temporal V
 
@@ -276,7 +276,7 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 **Premonición** (acción bonus, 7 cargas): Puede emplear una carga para recibir ventaja en un tiro de su elección o repetirlo y quedarse con el mejor resultado. Gastando 1 chi puede recuperar una carga.
 
-**Alentar** (acción estándar, 1 chi): Ralentiza a todas las criaturas en una burbuja de 20 pies de radio. Todos los ataques a distancia que pasen por una burbuja de ralentizar recuben desventaja. La burbuja durará mientras mantenga la concentración.
+**Alentar** (acción estándar, 1 chi): Ralentiza a todas las criaturas en una burbuja de 20 pies de radio. Todos los ataques a distancia que pasen por una burbuja de ralentizar reciben desventaja. La burbuja durará mientras mantenga la concentración.
 
 **Gran corte** (acción estándar): Hace un ataque con su katana a todas las criaturas en un arco de 15 pies. Puede gastar una acción de movimiento adicional para atacar a todas las criaturas adyacentes a él.
 
