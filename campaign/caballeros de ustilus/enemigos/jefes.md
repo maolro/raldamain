@@ -1,3 +1,7 @@
+---
+title: Jefes
+---
+
 ## General Petrikov (nivel 8)
 
 **PV:** 9 (15 si armadura gélida)			**VT:** 14	 		**DEF:** 9 (Resistencia 3, armadura gélida +4, pieles)
