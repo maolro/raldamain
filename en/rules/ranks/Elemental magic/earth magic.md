@@ -15,7 +15,7 @@ Add your rank to all attack and defense rolls made with elemental earth magic.
 
 ## Rank II
 
-<u>Stone wall:</u> As a standard action you can form a wall of solid stone 15 x rank feet long and 5 x rank feet high. This wall will grant full cover to all creatures behind it, protecting them from both ranged and magical attacks. The wall will remain until you lose concentration, and if you try to create an additional wall you will suffer 2 non-lethal damage at the beginning of your turn if you keep both walls active. Each 10 ft square section of the wall has HP equal to 4 + rank and 8 DEF and it is immune to all energy damage save for thunder. An stone wall can also be created as a reaction once per round if you have entered form of the mountain.
+<u>Stone wall:</u> As a standard action you can form a wall of solid stone 15 x rank feet long and 5 x rank feet high. This wall will grant full cover to all creatures behind it, protecting them from both ranged and magical attacks. Each 10 ft square section of the wall has HP equal to 4 + rank and 8 DEF and it is immune to all energy damage save for thunder. An stone wall can also be created as a reaction once per round if you have entered form of the mountain.
 
 <u>Control earth:</u> You capable of manipulating the earth beneath your feet. As a standard action you can manipulate a total volume of earth equal to 5 x your elemental magic rank, shaping it as you wish. With this ability you can create difficult terrain, barriers, elevations or holes in any place you wish. The height and depth of these obstacles may not exceed 5 feet and they grant cover to creatures behind them.
 

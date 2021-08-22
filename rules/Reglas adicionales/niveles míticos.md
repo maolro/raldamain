@@ -21,7 +21,7 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 | 9            | Invulnerabilidad                                             |
 | 10           | Semidivino                                                   |
 
-<u>Talentos míticos:</u> Eres capaz de obtener una soltura en determinados talentos muy por encima de la media. Tu nivel máximo de talento aumenta a 10, recibiendo un dado de soltura adicional a niveles de talento 7 y 9 e incrementando la estadística relacionada con el talento a niveles 6, 8 y 10 si esta es inferior a 6. Cada vez que alcances un nivel mítico recibirás un nivel adicional de talento.
+<u>Talentos míticos:</u> Eres capaz de obtener una soltura en determinados talentos muy por encima de la media. Tu nivel máximo de talento aumenta a 10, aumentando los bonificadores de la misma manera e incrementando la estadística relacionada con el talento a niveles 6, 8 y 10 si esta es inferior a 6. Cada vez que alcances un nivel mítico recibirás un nivel adicional de talento.
 
 <u>Aumento de estadísticas:</u> Al alcanzar tu primer nivel mítico incrementa una de tus estadísticas por 1, llegando como máximo a 12. Cada vez que recibas un nuevo nivel mítico vuelve a aumentar una de tus estadísticas. 
 

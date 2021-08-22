@@ -35,7 +35,7 @@ Aumenta tu resistencia a daño físico por 1
 
 Incrementa tu FUE por 1.
 
-<u>Vuelo:</u> Al entrar en furia del oni recibes la capacidad de volar. Tu velocidad de vuelo es de 60 pies (40 si llevas armadura). Mientras estés volando recibes ventaja en todos tus ataques contra criaturas en el suelo y en tus tiros de esquiva. Si sufres una herida permanente o eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) mientras vuelas empezarás a caer inmediatamente.
+<u>Vuelo:</u> Al entrar en furia del oni recibes la capacidad de volar. Tu velocidad de vuelo es de 30 pies (20 si llevas armadura). Mientras estés volando recibes ventaja en todos tus ataques contra criaturas en el suelo y en tus tiros de esquiva. Si sufres una herida permanente o eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) mientras vuelas empezarás a caer inmediatamente.
 
 <u>Forma gaseosa:</u> Recibes la capacidad de transformar tu cuerpo en un estado gaseoso como acción estándar. Mientras estés en esta forma eres incorpóreo e inmune a daño físico, pero no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo un número rondas seguidas igual a tu rango de ascendencia + 1 en forma gaseosa, tras las cuales volverás a tu forma corpórea y debes realizar un descanso corto para volver a usar esta habilidad. Forma gaseosa puede utilizarse como reacción si te encuentras en posición defensiva, lo cual te protege contra todo el daño hecho contra ti. Obtienes un uso adicional de esta habilidad cada vez que subas un rango.
 

@@ -35,7 +35,7 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Ataque vital:</u> Al impactar a un enemigo cuya defensa haya sido reducida a 0 con ataque preciso multiplica todo el daño infligido por 2. Si recibes los modificadores de ataque furtivo infligirás además una herida permanente grave al impactar y en el caso que lo reduzcas a 0 PV morirá instantáneamente.
 
-<u>Contrataque</u>: Una vez por ronda cuando exitosamente logres detener el ataque de un enemigo con parada puedes hacer un ataque contra él como reacción. Esta habilidad puede emplearse hasta 5 veces por combate y no podrás emplear contrataque en un contrataque.
+<u>Contrataque</u>: Una vez por ronda cuando exitosamente logres detener el ataque de un enemigo con parada puedes hacer un ataque contra él como reacción. No podrás emplear contrataque en un contrataque.
 
 ## Armas
 

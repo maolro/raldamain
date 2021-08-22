@@ -27,7 +27,7 @@ Aumenta tu probabilidad de crítico con exorcizar a 19-20.
 
 <u>Canalización superior:</u> Tu conexión espiritual se ha hecho más poderosa. Al usar Canalizar ánima puedes aumentar otra de tus estadísticas por 1 y recibirás un rango adicional de tu elección mientras permanezcas en dicho estado. Ese rango te otorga todos los atributos relacionados y puedes incrementar tu nivel de rango en una rama por 1 en lugar de coger uno nuevo. El rango que escoges solo estará activo durante la canalización y debes consultar al máster respecto al rango que te aumentas.
 
-<u>Purgar espectros:</u> Empleando un poderoso ritual puedes eliminar presencias fantasmales de un área. Al iniciar esta habilidad se revelarán todos los fantasmas del área y si logras concentrarte durante 4 rondas todos los fantasmas en un área de 90 pies morirán instantáneamente. Puedes hacer ataques de exorcizar mientras te concentres en un ritual de Armonizar. Si hay criaturas con rangos en Médium cuando acabes tu ritual estas perderán la capacidad de usar Canalizar ánima o Invocar espectro durante un día salvo que tú lo decidas.
+<u>Purgar espectros:</u> Empleando un poderoso ritual puedes eliminar presencias fantasmales de un área. Al iniciar esta habilidad se revelarán todos los fantasmas del área ysi logras concentrarte durante 4 rondas todos los fantasmas en un área de 90 pies morirán instantáneamente. Puedes hacer ataques de exorcizar mientras te concentres en un ritual de Armonizar. Si hay criaturas con rangos en Médium cuando acabes tu ritual estas perderán la capacidad de usar Canalizar ánima o Invocar espectro durante un día salvo que tú lo decidas.
 
 ## Rango IV
 
