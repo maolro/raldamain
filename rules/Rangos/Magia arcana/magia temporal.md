@@ -19,8 +19,7 @@ Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta
 
 <u>Alentar:</u> Puedes atrasar el tiempo en una burbuja de 20 pies de radio como acción estándar que consume 1 chi, ralentizando a todas las criaturas que se encuentren en ella. Una criatura afectada por Alentar pierde una acción de movimiento y reduce su DES por 1. Los ataques mágicos y distancia que pasen por una burbuja de alentar están también ralentizados, lo cual otorgará desventaja a todos los tiros de ataque de estos. Una burbuja de Alentar permanece hasta que pierdas la concentración y contrarresta a todos los efectos de Acelerar que haya en su radio. 
 
-
-Rango III  
+## Rango III  
 
 Aumenta tu probabilidad de crítico a 19-20. 
 
@@ -37,6 +36,7 @@ Un uso excesivo de esta habilidad puede ocasionar enfermedades mentales o locura
 ## Rango IV  
 
 <u>Ataque retardado:</u> Empleando tu control del tiempo eres capaz de retardar el efecto de tus ataques, causando que el daño impacte más tarde y con mayor efecto. Emplear esta habilidad requiere el gasto de 1 chi tras impactar con un ataque y con ella podrás causar que tanto el daño como las heridas permanentes infligidas tengan efecto al cabo de 1 a 4 rondas. Cuando el daño finalmente tenga efecto todas las heridas permanentes infligidas incrementarán su nivel por un paso y si has retardado 2 o más ataques tu objetivo quedará [aturdido](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#aturdida) durante una ronda. 
+
 <u>Estasis</u>: Como acción estándar que consume 2 chi puedes congelar a una criatura en el tiempo, dejándola completamente [paralizada](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#paralizada). Tu objetivo puede resistir tirando CON, quedando paralizado si tienes éxito mientras mantengas la concentración en esta habilidad. Si ligas Estasis a un [glifo de protección](https://raldamain.com/rules/Rangos/Magia arcana/magia protectora.html#rango-iii) tu objetivo permanecerá paralizado hasta que tú lo liberes (una criatura congelada en el tiempo de esta manera puede quedar inconsciente si tú lo eliges). 
 
 <u>Revertir el tiempo:</u> Puedes saltar hacia atrás en el tiempo como acción de movimiento, volviendo a tu posición anterior y recuperándote del daño sufrido. Revertir el tiempo consume 2 chi de tu reserva y te permite recuperarte de todos los efectos de estado, heridas permanentes y daño que hayas sufrido este turno, además de volver a tu posición inicial. Revertir el tiempo puede usarse también en otra criatura de tu elección como acción estándar que cuesta 1 chi adicional, lo cual te permite restaurarla de la misma manera y hasta revivirla si ha muerto este turno.   

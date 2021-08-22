@@ -27,7 +27,7 @@ Los jugadores localizan la base, pero es una trampa e Ilesit ya los estaba esper
 
 4x Elementalista del Pacto (+2)
 
-5x Bestia fúngica avanzada, 1x Ilesit
+4x Bestia fúngica avanzada, 1x Ilesit
 
 ### Lok Zigar
 

@@ -7,13 +7,13 @@ category: Weapons
 
 Add your Slashing blade rank to attack and defense rolls with weapons of this category. All [permanent injuries](https://raldamain.com/en/rules/main%20rules/Heridas%20permanentes.html) inflicted with a slashing blade will cause [bleeding](https://raldamain.com/en/rules/main%20rules/Efectos%20de%20estado.html#bleeding).
 
-<u>Fierce Slash:</u> Your attacks are very effective against unarmored enemies. Whenever you deal damage with your weapon to a target whose armor grants it 2 or less defense it will begin bleeding and all permanent injuries you inflict will increase their level by one step. If your target is wearing natural armor it will count as if they were not wearing armor. You can also cause bleeding whenever you make a critical hit or harm an enemy unable to defend himself.
+<u>Power Attack</u>: You are able to trade accuracy for greater attack strength on your attacks. This ability allows you to declare an attack as a Power Attack, which will grant you a -2 penalty on attack rolls in exchange for inflicting +2 base damage and bleed. At rank IV you can increase the penalty by -2 to inflict 2 additional points of damage.
 
 ## Rank II
 
 <u>Great cleave:</u> You can spend a full turn action to attack all creatures within a 15-foot arc. Your cleave will stop immediately if a creature blocking with a shield succeeds in its defensive roll.
 
-<u>Power Attack</u>: You are able to trade accuracy for greater attack strength on your attacks. This ability allows you to declare an attack as a Power Attack, which will grant you a -2 penalty on attack rolls in exchange for inflicting +2 base damage. At rank IV you can increase the penalty by -2 to inflict 2 additional points of damage.
+<u>Fierce Slash:</u> Your attacks are very effective against unarmored enemies. Whenever you deal damage with your weapon to a target whose armor grants it 2 or less defense all permanent injuries you inflict will increase their level by one step. If your target is wearing natural armor it will count as if they were not wearing armor. You can also cause bleeding whenever you make a critical hit or harm an enemy unable to defend himself.
 
 ## Rank III
 
