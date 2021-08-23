@@ -70,3 +70,4 @@ Los jugadores se reúnen con el transporte citado por Cressida.
 **Soldado de fuerzas especiales** (nivel 6)
 
 **Bestia de pesadilla** (nivel 9)
+
