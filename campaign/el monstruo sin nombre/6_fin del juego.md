@@ -2,7 +2,7 @@
 title: Fin del juego
 fecha: 4090
 lugar: Mazarin, Reinos Libres y Kratoi
-niveles: 14-17
+niveles: 14-18
 ---
 
 ## Lugar
@@ -15,7 +15,7 @@ Ruinas del laboratorio de Jace
 
 ## Encuentros
 
-### Los cazarecompensas de Kretch
+### Los cazarrecompensas de Kretch
 
 ### Vuelta a Svaikal
 
@@ -35,6 +35,22 @@ Ruinas del laboratorio de Jace
 
 ### Una ciudad de tiempos olvidados
 
+### A las profundidades del sueño
+
+### La prisión mental de Trammel
+
+### Rescatando a Anya
+
+### El ritual final
+
+### Llegada de Jace
+
+### El sacrificio
+
+### En la mente de Julian
+
+### Fin del juego
+
 ## Enemigos
 
 **Cazarrecompensas pistolero** (nivel 15)
@@ -53,47 +69,15 @@ Ruinas del laboratorio de Jace
 
 **Sectario de Ayanuu** (nivel 16)
 
-**G**
+**Guardianes de la ciudad muerta** (nivel 17)
 
+**Bhole adulto** (nivel 18)
 
+**Aberración onírica** (nivel 16)
 
+**Delereom** (nivel 18)
 
+**Julian Rais** (nivel 20)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**El poeta loco** (nivel 30)
 
