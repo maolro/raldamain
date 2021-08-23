@@ -11,7 +11,7 @@ Una isla misteriosa en el centro de Olvangar
 
 ## Inicio
 
-Los jugadores y varios NPCs despiertan en una isla misteriosa.
+Este capítulo iniciaría con los jugadores despertándose en las orillas de una isla después que su embarcación quedase destruida por la tormenta de Olvangar. 
 
 ## Encuentros
 
