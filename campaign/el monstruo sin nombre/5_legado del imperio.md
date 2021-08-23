@@ -92,5 +92,3 @@ Los jugadores se suben a un tren de camino a Svaikal para seguir el rastro de De
 **Zarcillo de corrupción** (nivel 16)
 
 **Mago corrompido** (nivel 15)
-
-**Fragmento de Ayanuu** (nivel 20)
