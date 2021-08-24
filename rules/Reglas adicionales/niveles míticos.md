@@ -84,7 +84,7 @@ Los niveles míticos son capaces de mejorar exponencialmente las habilidades oto
 
 ### Magia arcana
 
-<u>Espacial:</u>
+<u>Espacial:</u> 
 
 <u>Evocación:</u>
 
