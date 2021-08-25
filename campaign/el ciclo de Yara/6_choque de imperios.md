@@ -1,13 +1,13 @@
 ---
-title: El terror carmesí
+title: Choque de Imperios
 fecha: 
-lugar: Alianza Shinri
+lugar: Kratoi y Mazarin
 niveles: 
 ---
 
 ## Lugar
 
-Alianza Shinri
+Kratoi y Mazarín
 
 ## Inicio
 

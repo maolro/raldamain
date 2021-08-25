@@ -164,27 +164,29 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 ### Almirante Sisro (nivel 13)
 
-**PV:** 	**VT:** 	**DEF:**  ()
+**PV:** 12	**VT:** 18	**DEF:** 3 (resistencia 3)
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Rangos:** Magia de fuego V, Ascendencia de fuego 
-
-**Resiste:** 
-
-**Sentidos:** 
-
-**Movimiento:** 
-
-**Prioridad:** 
+**FUE:** 4	**DES:** 6	**CON:** 3	**INT:** 2	**SAB:** 2	**CAR:** 6
 
 ------
 
+**Talentos:** Atletismo +8, Intimidar +6, Estudio +4 (Táctica, navegación), Percepción +6, Heoísmo +6, Persuasión +8
 
+**Rangos:** Magia de fuego V, Ascendencia de fuego IV, Reflejos III, Artes marciales II
+
+**Resiste:** Daño físico 3, fuego 5
+
+**Sentidos:** Vista ígnea 100 pies
+
+**Movimiento:** 25 pies
+
+**Prioridad:** 7 (2 estándar + 3 movimiento)
+
+------
+
+**Conexión elemental:** Sisro recupera 1 Vitalidad si se encuentra en un lugar de calor extremo
+
+**Aura abrasadora:** 
 
 ------
 

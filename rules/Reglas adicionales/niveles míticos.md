@@ -84,7 +84,7 @@ Los niveles míticos son capaces de mejorar exponencialmente las habilidades oto
 
 ### Magia arcana
 
-<u>Espacial:</u> 
+<u>Espacial:</u> Aumenta tu reserva por 2 chi
 
 <u>Evocación:</u>
 
@@ -118,13 +118,13 @@ Los niveles míticos son capaces de mejorar exponencialmente las habilidades oto
 
 ### Ascendencias
 
+<u>Aire:</u> 
+
 <u>Abisal:</u>
 
 <u>Akhásica:</u>
 
 <u>Celestial:</u>
-
-<u>Elemental:</u>
 
 <u>Infernal:</u>
 
