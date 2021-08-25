@@ -1,13 +1,13 @@
 ---
-title: El terror carmesí
+title: Duelo del destino
 fecha: 
-lugar: Alianza Shinri
+lugar: Mazarin
 niveles: 
 ---
 
 ## Lugar
 
-Alianza Shinri
+
 
 ## Inicio
 

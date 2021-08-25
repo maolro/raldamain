@@ -1,13 +1,13 @@
 ---
-title: El terror carmesí
+title: Libertad o muerte
 fecha: 
-lugar: Alianza Shinri
+lugar: Kratoi
 niveles: 
 ---
 
 ## Lugar
 
-Alianza Shinri
+
 
 ## Inicio
 
