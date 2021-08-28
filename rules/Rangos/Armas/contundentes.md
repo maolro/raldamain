@@ -1,5 +1,5 @@
 ---
-faratitle: Contundentes
+title: Contundentes
 category: Armas
 ---
 
