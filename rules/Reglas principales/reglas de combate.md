@@ -29,7 +29,7 @@ Una acción de movimiento requiere menos esfuerzo que una acción estándar y ti
 
 - Muévete como máximo un número de pies igual a tu movimiento (normalmente son 15 pies). Si estás luchando contra un enemigo y te mueves fuera de su alcance, este te hará un ataque de oportunidad.
 - <u>Desenganchar:</u> No provocarás ataques de oportunidad durante un turno por salir del área amenazada por tu atacante.
-- <u>Posición defensiva:</u> Añade un dado de Dificultad a todos tus tiros defensivos durante un turno. Si gastas una acción estándar para entrar en posición defensiva, convierte además uno de tus dados de Dificultad en un dado de Desafío.
+- <u>Posición defensiva:</u> Obtienes ventaja en todos tus tiros defensivos hasta tu siguiente turno. No puedes gastar más de una acción de movimiento por turno en entrar en posición defensiva.
 
 Puedes realizar una acción de movimiento adicional una vez al turno sufriendo 2 daño no-letal.
 
