@@ -1,8 +1,7 @@
 ---
 title: Ascendencia elemental
+category: Ascendencias
 ---
-
-
 
 Desde tu nacimiento siempre te has sentido atraído por uno de los elementos básicos que componen el universo, influyendo estos en gran medida sobre tu ser. A medida que respondes a esta llamada, tu conexión con ese elemento se irá haciendo mas fuerte de modo que puedas habitar en los entornos mas extremos relacionados con él.
 
