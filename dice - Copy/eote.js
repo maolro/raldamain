@@ -31,8 +31,13 @@ function edgeRoll( dice ) { // where the rolling magic happens
 		finalRoll += roll; 
 		finalRollString += "d"+sideNumber+ "= "+ roll + " ";
 	}
-	finalRollString += " "+document.getElementById("modifier").value;
-	finalRoll += document.getElementById("modifier").value;
+	if (document.getElementById("modifier").value < 0){
+		finalRollString += " "+document.getElementById("modifier").value;
+	}
+	else{
+		finalRollString += "+ "+document.getElementById("modifier").value;
+	}
+	finalRoll += parseInt(document.getElementById("modifier").value, 10);
 
 	var request = new XMLHttpRequest();
 	request.open("POST", "https://discord.com/api/webhooks/" + getUrlParameter("hook"));
@@ -46,7 +51,7 @@ function edgeRoll( dice ) { // where the rolling magic happens
 		embeds: [{ title: getUrlParameter("name") + " ha tirado", description: finalRollString, fields: fields }]
 	}
 
-	alert(JSON.stringify(params));
+	//alert(JSON.stringify(params));
 
 	request.send(JSON.stringify(params));
 
