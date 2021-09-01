@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset=utf-8>
+
+<link rel="stylesheet" href="eote.css" type="text/css" media="Screen" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="eote.js"></script>
+<script type="text/javascript">
+	$(document).ready( function() {
+		$('#diceEntry').val('');
+		$('#dicePool').empty().append('&nbsp;');
+	} );
+</script>
+
+<title>Raldamain Dice Roller</title>
+</head>
+
+<body>
+
+	<div id="helpBox">
+		<h1>Help</h1>
+		<p>
+			Click or tap on dice to add them to the pool.
+			<br />Click or tap on dice inside the pool to remove them.
+			<br />Triumph and Despair icons in the results box are <strong>already accounted for</strong> in any Success or Failure icons. Do not count them again.
+		</p>
+	</div>
+
+	<form id="mainForm" name="mainForm">
+		<div id="dialogBox">
+			<img src="../assets/img/ralddamainlogo.png" style="max-width: 100%; max-height: 100%; display: block">
+			<h1>Raldamain Dice Roller</h1>
+			<img src="e/4.png" onclick="addDie('4');" />
+			<img src="e/6.png" onclick="addDie('6');" />
+			<img src="e/8.png" onclick="addDie('8');" /><br />
+			<!--			<img src="e/force.png" onclick="addDie('force');" /><br /> 	-->
+			<img src="e/x.png" onclick="addDie('x');" />
+			<img src="e/y.png" onclick="addDie('y');" />
+			<img src="e/z.png" onclick="addDie('z');" /><br />
+			<input type="text" name="diceEntry" id="diceEntry" size="15" value="" />
+			<input type="button" name="clear" id="clear" onclick="$('#diceEntry').val('');$('#dicePool').empty().append('&nbsp;');" value="Clear" />
+			Modifier:<input type="number" name="modifier" id="modifier" value="+0" /><br />
+			<div id="dicePool">&nbsp;</div>
+			<input type="button" name="go" id="go" onclick="doroll()" value="Roll now!" />
+			<div id="diceResult">&nbsp;</div>
+		</div>
+	</form>
+
+
+
+	<script>
+		function doroll() {
+			$('#diceResult').empty().append(edgeRoll($('#diceEntry').val()));
+		}
+
+	</script>
+
+</body>
+</html>

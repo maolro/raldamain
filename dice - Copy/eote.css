@@ -1,0 +1,83 @@
+html>body {
+	background: #000 url('e/starfield.jpg') repeat;
+	margin: 0;
+	padding: 0;
+}
+
+#dicePool {
+	background-color: #666;
+	border-top: #999 2px solid;
+	border-right: #999 2px solid;
+	border-bottom: #333 2px solid;
+	border-left: #333 2px solid;
+}
+
+#diceResult {
+	background-color: #ccc;
+	font-weight: bold;
+	font-family: helvetica, arial, sans-serif;
+	border-top: #fff 2px solid;
+	border-right: #fff 2px solid;
+	border-bottom: #999 2px solid;
+	border-left: #999 2px solid;
+}
+
+#dialogBox {
+	width: 300px;
+	margin: 5px auto;
+	padding: 5px;
+	min-height: 20%;
+	text-align: center;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.2em;
+}
+
+#helpBox {
+	width: 400px;
+	margin: 30px auto;
+	padding: 5px;
+	font-size: .9em;
+	background-color: #333;
+	color: #fff;
+	position: absolute;
+	display: none;
+}
+
+#dialogBox h1 {
+	background-color: #ccc;
+	padding: 4px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#diceEntry {
+	display: none;
+}
+
+table {
+	font-size: .8em;
+	font-weight: normal;
+}
+
+th {
+	text-align: center;
+	font-weight: bold;
+}
+
+td:first-of-type {
+	text-align: right;
+	width: 30%;
+}
+
+td:last-of-type {
+	text-align: left;
+	width: 70%;
+}
+
+table input, table select {
+	width: 90%;
+}
+
+input {
+	margin: 5px;
+}
