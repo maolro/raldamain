@@ -16,6 +16,10 @@ Los jugadores son reclutados en una taberna para encontrar al nuevo encarnado
 
 ### Conociendo a los aldeanos
 
+Watabe (tendero), Natami (sabia)
+
+### Campamento bandido
+
 ### La recolección del pago
 
 ### Batalla por Yaibiro
@@ -33,3 +37,7 @@ Los jugadores son reclutados en una taberna para encontrar al nuevo encarnado
 **Bandido con espada** (nivel 1)
 
 **Bandido bruto** (nivel 3)
+
+**Bandido elementalista** (nivel 3)
+
+**Heigaru Takenaga** (nivel 6)
