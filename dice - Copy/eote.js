@@ -21,16 +21,18 @@ function edgeRoll( dice ) { // where the rolling magic happens
 		switch ( dice.charAt( i ) ) {
 			case "4" : sideNumber = 4; break;
 			case "6" : sideNumber = 6; break;
+			case "d" : sideNumber = -6; break;
 			case "8" : sideNumber = 8; break;
 			case "x" : sideNumber = 10; break;
 			case "y" : sideNumber = 12; break;
 			case "z" : sideNumber = 20; break;
 		}
 		var roll;
-		roll = Math.floor(Math.random()*sideNumber)+1;
+		roll = calcRoll(sideNumber);
 		finalRoll += roll; 
 		finalRollString += "d"+sideNumber+ "= "+ roll + " ";
 	}
+	calcRoll()
 	if (document.getElementById("modifier").value < 0){
 		finalRollString += " "+document.getElementById("modifier").value;
 	}
@@ -70,4 +72,12 @@ function reducePool( callingImage ) { // removes a die from the entry box and th
 function addDie( dieType ) { // adds a die to both the entry box and the pool graphic
 	$('#diceEntry').val( $('#diceEntry').val() + dieType.charAt( 0 ) );
 	$('#dicePool').append( '<img src="e/' + dieType + '.png" onclick="reducePool($(this));" />' );
+}
+function calcRoll (sideNumber){
+	if (sideNumber>0){
+		return Math.floor(Math.random()*sideNumber)+1;
+	}
+	else{
+		return Math.floor(Math.random()*sideNumber);
+	}
 }

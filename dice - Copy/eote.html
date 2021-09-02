@@ -37,14 +37,14 @@
 			<img src="e/4.png" onclick="addDie('4');" />
 			<img src="e/6.png" onclick="addDie('6');" />
 			<img src="e/8.png" onclick="addDie('8');" /><br />
-			<!--			<img src="e/force.png" onclick="addDie('force');" /><br /> 	-->
 			<img src="e/x.png" onclick="addDie('x');" />
 			<img src="e/y.png" onclick="addDie('y');" />
-			<img src="e/z.png" onclick="addDie('z');" /><br />
+			<img src="e/z.png" onclick="addDie('z');" />
+			<img src="e/d.png" onclick="addDie('d');" /><br />
 			<input type="text" name="diceEntry" id="diceEntry" size="15" value="" />
 			<input type="button" name="clear" id="clear" onclick="$('#diceEntry').val('');$('#dicePool').empty().append('&nbsp;');" value="Clear" />
-			Modifier:<input type="number" name="modifier" id="modifier" value="+0" /><br />
-			<div id="dicePool">&nbsp;</div>
+			<input type="number" name="modifier" id="modifier" size="10" value="0" /><br />
+			<div id="dicePool">&nbsp;</div> 	
 			<input type="button" name="go" id="go" onclick="doroll()" value="Roll now!" />
 			<div id="diceResult">&nbsp;</div>
 		</div>
