@@ -4,7 +4,7 @@ Pueblo de Yabiro
 
 ## Inicio
 
-Los jugadores son reclutados en una taberna para encontrar al nuevo encarnado
+Los jugadores son reclutados en una taberna para proteger un pueblo
 
 ## Encuentros
 
