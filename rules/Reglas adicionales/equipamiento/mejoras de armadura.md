@@ -38,6 +38,8 @@ Esta es una lista de mejoras mágicas y tecnológicas que se pueden añadir a un
 
 <u>Reductor de sonido</u> (Crédito 2): Tu armadura cuenta con un aparato capaz de silenciar los sonidos en un área de 5 pies centrado en ti, permitiendo que te puedas mover sin hacer ruido. Pierdes los penalizadores al sigilo ocasionados por la armadura y recibes ventaja a tus tiros de sigilo. Además, recibes resistencia a daño Trueno igual a tu rango de Aptitud con armaduras x 2 (si ya tienes resistencia a daño Trueno auméntala por 2).
 
+<u>Respirador</u> (Crédito 1):
+
 <u>Reflectora de magia</u> (Crédito 2): El campo de fuerza generado por tu armadura es capaz de rebotar hechizos incapaces de superar tu resistencia mágica. Si eres impactado por un hechizo y es incapaz de destruir tu campo de fuerza este será rebotado hacia todos los objetivos cercanos a ti, causando que estos deban defenderse contra el tiro de ataque del lanzador del hechizo o sufrirán los efectos de este. Además, esta mejora evita que sufras daño obligatorio hecho por ataques mágicos de área siempre y cuando el campo de fuerza siga activo.
 
 <u>Sensores infrarrojos</u> (Crédito 4): Tu casco está equipado con sensores infrarrojos capaces de percibir el calor en un área de 60 pies. Activar los sensores infrarrojos te cuesta una acción de movimiento y con ellos puedes detectar la posición exacta de todas las criaturas que desprendan calor en el área de los sensores, evitando así que tus enemigos obtengan ventajas por invisibilidad o ataques sorpresa.
