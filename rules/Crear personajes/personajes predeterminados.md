@@ -89,5 +89,5 @@ En esta categoría se encuentran los tipos de personaje cuyas habilidades les pe
 **Druida** (SAB, FUE, CON)
 
 - <u>Talentos:</u> Supervivencia, Percepción, Averiguar intenciones, Atletismo
-- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Naturaleza), Ascendencia (Fuego, Aire, Agua, Tierra, Boreal, Verdeante), Guerrero elemental, Aptitud con arma (cualquiera)
+- <u>Rangos:</u> Magia elemental (Fuego, Aire, Agua, Tierra, Hielo, Sangre, Naturaleza), Ascendencia (Fuego, Aire, Agua, Tierra, Boreal, Verdeante), Guerrero divino, Aptitud con arma (cualquiera)
 

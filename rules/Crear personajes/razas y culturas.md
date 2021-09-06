@@ -2,7 +2,7 @@
 title: Razas y culturas
 ---
 
-Estas son las razas y culturas recomendadas para la campaña de Caballeros de Ustilus.
+Estas son las razas y culturas recomendadas para la campaña de Caballeros de Ustilus en el mundo de Raldamain.
 
 ## Humanos
 
@@ -110,34 +110,65 @@ Los iskarianos son físicamente similares a los shinri, ya que ambos suelen tene
 
 **Nombres:** (masc) Baekyon, Hanul, Inshim, Jungsu, Korain, Sangok, Yujin, (fem) Aicha, Hyunai, Jaiwa, Kyungmi, Miyu, Sujin, Yunjee, (clan) Charek, Jikem, Ralang, Sisrok, Toza, Yotsin, Zalro
 
+### Arshalaníes
+
 ## No-humanos
 
+Las razas no-humanas son menos extendidas en el mundo y originan frecuentemente de otros planos, mestizaje con otras razas o antiguos experimentos hechos por civilizaciones ya olvidadas. Todas ellas poseen una historia y habilidades únicas que las diferencian de la humanidad y establecen su lugar en el complejo mundo de Raldamain. Estas son algunas de las razas no-humanas más reconocidas del Continente.
+
 ### Chothgar
+
+La mera mención de los chothgar despierta terror en pueblos alrededor del Continente. Considerados salvajes sin corazón poco por encima de las bestias, los chothgar son odiados y temidos en todas las naciones civilizadas. Muy pocos se han molestado en estudiar la cultura chothgar, pero quienes lo han hecho se han dado cuenta que esta raza aparentemente incivilizada escode muchos más secretos bajo su superficie.
+
+La cultura chothgar gira en torno al héroe mitológico conocido como Meisodh el Viajero, unificador del pueblo chothgar y responsable de llevarlos a una edad de oro. Desde su nacimiento los chothgar son educados que una vida digna es una que emula al Viajero, impulsándolos así a viajar por tierras lejanas con el fin de mejorar sus habilidades físicas y lograr grandes hazañas. Tienen además un fuerte sentido del honor, respetando a contrincantes más fuertes que ellos y evitando atacar a aquellos incapaces de luchar. No obstante, si los chothgar son provocados ellos atacarán con tal ferocidad que destruirán todo a su paso como venganza. 
+
+Algunos chothgar han elegido abandonar el camino tradicional de su pueblo, convirtiéndose a la fe de Mekhatim e integrándose en el Imperio de Arshalán. Estos chothgar, conocidos como Shetyen, son algunos de los seguidores más fervorosos de su fe y muchos acaban convirtiéndose en guerreros sacros de Arshalán. Los Shetyen y los chothgar se odian mutuamente y si se encuentran en el campo de batalla lucharán entre sí hasta la muerte para demostrar cuál de sus dos creencias es superior, emulando así el legendario duelo entre la profeta Mekhatim y el Viajero.
+
+Los chothgar son más altos y fuertes que los humanos, y se caracterizan por su piel grisácea y orejas puntiagudas. Frecuentemente se rapan o atan su pelo negro en largas coletas y tradicionalmente tatúan su piel con símbolos sagrados o marcas de sus grandes victorias.
+
+**Nombres:** (masc) Angortaz, Dolgadai, Ingorash, Kharchun, Shorak, Tokremur, Uzrog (fem) Aghatani, Bortei, Huravka, Khenetai, Sangya, Temildun, Yesentei
 
 Los chothgar cuentan con las siguientes características raciales:
 
 - +1 FUE, +1 CON
-- Recibe un rango en Ira, Guerrero divino o Fortitud
+- Reciben un rango en Ira, Guerrero divino o Fortitud.
+- El cuerpo de los chothgar es capaz de resistir heridas a un nivel superior. Estos pueden seguir luchando a 0 PV sin caer inconscientes (aunque recibirán el efecto de estado fatigado) y reciben resistencia +2 a miedo y enfermedades.
 
 ### Elfos
 
+Eternamente jóvenes e inmensamente sabios, los elfos representan todo aquello que la humanidad aspira a ser. Más antiguos que el propio Feyn, dios de la humanidad, los elfos tienen una profunda conexión con la naturaleza y el mundo de los espíritus. Esta afinidad les proporciona gran conocimiento sobre la magia pero a su vez les vuelve aislacionistas y poco innovadores, causando que prefieran vivir en comunas localizadas en la más salvaje naturaleza que interactuar con el frecuentemente peligroso mundo humano. No obstante, la constante expansión de la humanidad fuerza ha formado dos tendencias entre los elfos, una que considera que el mal y la violencia son características propias de los humanos y aboga expulsarlos de sus tierras ancestrales, y otra que propone compartir sus grandes conocimientos con los humanos con el fin de guiarlos a un futuro mejor.
+
+Los elfos son típicamente esbeltos y son reconocibles por su características orejas puntiagudas. Su aspecto es tan variado como todas las diferentes culturas de la humanidad, aunque suele ser más idealizado en comparación a ellas.
+
+**Nombres:** (masc) Athalin, Coyram, Delraden, Glarantal, Ilerun, Jaralon, Tharantil (fem) Elyrena, Fylariel, Halthena, Lyrein, Neterian, Sheilara, Teshanya (clan) Charalai, Irmindor, Kyrhemin, Minorin, Olomyar, Thelmaris, Yeliven
+
 Los elfos cuentan con las siguientes características raciales:
 
-- +1 DES, +1 CAR
-
-### Semielfos
-
-Los semielfos tienen las mismas características raciales que los humanos, pero su sangre élfica duplica su esperanza de vida
+- +1 DES, +1 CAR, -1 CON
+- Reciben un rango en una ascendencia o magia arcana y visión a oscuras a una distancia máxima de 60 pies.
+- Los elfos son efectivamente inmortales, envejeciendo a un ritmo muy lento desde que alcanzan la edad adulta. Su avanzada edad les otorga dos niveles de talento adicionales e inmunidad a efectos que causen envejecimiento.
 
 ### Hobgoblin
+
+
 
 Los hobgoblin cuentan con las siguientes características raciales:
 
 - +1 FUE, +1 CON
-- Recibe un rango relacionado con armas o combate
+- Reciben un rango relacionado con armas o combate
 - Resistencia +2 al miedo y efectos mentales
 
 Aquellos hobgoblin que sirven a la Legión son capaces de colaborar entre ellos para convertirse en una fuerza invencible en el campo de batalla. Los hobgoblin no perderán los bonificadores de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) si su líder sufre una herida permanente y podrán recibir los bonificadores de una táctica propia de [dirigir combatientes](https://raldamain.com/rules/Rangos/Social/presencia.html) si forman parte de un grupo de 5 o más hobgoblin (cada grupo puede tener activa una táctica diferente). En contraparte, aquellos hobgoblin poseídos por espíritus oni recibirán un rango adicional en [ascendencia oni.](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20oni.html) 
+
+### Kitsune
+
+Los kitsune cuentan con las siguientes características raciales:
+
+- +1 DES, +1 SAB
+- Reciben un rango adicional en ascendencia verdeante y desbloquean todas las magias elementales y arcanas.
+- Los kitsune pueden cambiar su propia forma para adoptar el aspecto de un humano o un zorro. Esto les costará una acción estándar y solo tendrán un único aspecto humano. 
+
+Mientras los kitsune ganan experiencia y conocimientos su cuerpo empieza a manifestar colas adicionales como muestra de dicho poder. Cada vez que un kitsune suba 2 niveles obtendrá una cola adicional, llegando como máximo a nueve colas. Cada cola que tenga le permite lanzar un hechizo de su elección de manera innata hasta tres veces al día (dos veces si emplearlo cuesta 2 chi y una vez si cuesta tres chi). Dicho hechizo no puede tener rango superior al nivel del kitsune dividido entre 3 (redondeando hacia abajo).
 
 ### Leoninos
 
@@ -148,3 +179,6 @@ Los leoninos cuentan con las siguientes características raciales:
 - Aumentan su velocidad de escalada por 15 pies, su velocidad de salto por 10 pies y olfato a una distancia máxima de 60 pies.
 - Pueden emplear sus afiladas garras y colmillos para realizar [ataques naturales](https://raldamain.com/rules/Rangos/Armas/ataques%20naturales.html#armas), recibiendo así las características fisiológicas garras y mordisco.
 
+### Semielfos
+
+Los semielfos tienen las mismas características raciales que los humanos, pero su sangre élfica duplica su esperanza de vida y les permite ver en la oscuridad a una distancia máxima de 30 pies.
