@@ -1,5 +1,5 @@
 ---
-title: Firearms
+title: Armas de fuego
 category: Armas
 ---
 
