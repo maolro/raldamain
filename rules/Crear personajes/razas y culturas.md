@@ -8,17 +8,25 @@ Estas son las razas y culturas recomendadas para la campaña de Caballeros de Us
 
 ### Ustileses
 
-Elegidos por el dios de la humanidad, los ustileses creen que están destinados a la grandeza y a llevar a la humanidad a una nueva edad de oro. Esta creencia les ha hecho un pueblo ambicioso y con un gran sentido de superioridad frente a las demás culturas. La cultura ustilesa gira en torno a la ley y la religión, las cuales defenderán a ultranza y creen fundamentales para la civilización humana. No obstante, son tolerantes hacia aquellos humanos quiénes abracen la religión de Feyn y no tienen reparos en cooperar con otros pueblos o emparejarse con ellos. La muerte de Feyn ha dejado trastocado al pueblo ustilés, dejándoles sin un dios al que venerar y causando que muchos se cuestionen las propias tradiciones que antaño les guiaron.
+Elegidos por Feyn, el dios de la humanidad, los habitantes de Ustilus creen estar destinados a la grandeza y sueñan con llevar a la humanidad a una nueva edad de oro. Estas grandes ambiciones han inflado mucho sus egos, y en nombre del destino los ustileses han librado muchas guerras devastadoras para expandir su gran imperio. Ahora que Ustilus se ha convertido en la nación dirigida por humanos más fuerte del continente su creencia en la salvación de Feyn nunca ha sido más fuerte.
 
-Los ustileses son un pueblo diverso a causa del mestizaje con otras culturas. Su piel varía de clara a morena mientras que su pelo suele ser negro, castaño o rubio.
+La religión y la ley son partes fundamentales de la vida de un ustilés. Para un ciudadano medio, Feyn es el único dios verdadero de la humanidad y todas las demás entidades son espíritus de otro mundo y embaucadores que llevan a la humanidad por un camino de mentiras. Su fe les ha llevado a creer que los ustileses son superiores a todos los demás humanos por el hecho de haber sido elegidos por su dios, pero también están dispuestos a cooperar y son tolerantes con aquellos que les tratan con respeto y sumisión. Las leyes son otra parte importante de su vida, creyendo que son las más buenas y justas y deben ser obedecidas en todo momento para mantener el orden social.
+
+Los ustileses se encuentran en todas las tierras principales del continente, deseosos de difundir su cultura y conocimientos a todos los lugares que puedan encontrar. Forman la clase dirigente de todas las provincias controladas por los ustileses, donde a veces practican el mestizaje con los locales para forjar dinastías unidas. Por ello, muchos ustileses tienen rasgos de otras culturas, especialmente shinri, kratenses y temash. 
+
+Debido a la mencionada diversidad, los ustileses tienen distintos tonos de piel, oscilando entre pálido y moreno. Su pelo es castaño, negro o rojizo, y sus ojos pueden ser marrones, verdes o azules.
 
 ### Temash
 
-Jinetes de los yermos, habitantes del desierto, cabalgadores de las arenas, los Temash han recibido incontables nombres de incontables pueblos a lo largo de su historia, pero a los Temash ya no les importan ni esos nombres ni esos pueblos, con sus imperios, sus disputas y sus conflictos, pues el Imperio, el Hogar de los Temash se desvaneció hace mucho y eso les enseñó que todo es efímero, que todo acabará cayendo y que el fin ya sea tarde o temprano, siempre llegará. Así los Temash viven su vida, una vida en la que se dedicaran a marchar con *su* gente, proteger *sus* ciudades sagradas, recorrer *sus* desiertos y adorar a *sus* ancestros, todo con la sabiduría de que incluso ellos encontraran su final, pero al igual que las interminables arenas de sus desiertos, los Temash están decididos a ver el final del mundo con sus propios ojos. Y hasta entonces, se reirán, se reirán de todos los grandes Imperios y reinos que han visto su final en las dunas de su hogar.  
+Ancestrales habitantes de los desiertos del sur, los Temash han presenciado el nacimiento de grandes civilizaciones y su posterior caída. Saben muy bien que todo lo que existe es finito y un día se desvanecerá, lo cual que les da una visión algo nihilista del mundo. Al mismo tiempo, los Temash creen firmemente en la importancia de las historias y las leyendas, y piensan que, aunque todos los pueblos morirán al final, los relatos de sus hazañas perdurarán durante generaciones.
 
-Los temash típicamente tienen la piel de  color moreno oscuro y el pelo negro azabache.
+Los Temash se organizan en grupos familiares extensos conocidos como tribus, cada una de ellas protegida por un espíritu elemental guardián. Este espíritu puede otorgar su magia a ciertos miembros de la tribu, enseñándoles los secretos de la magia elemental. Los individuos elegidos por el espíritu son extremadamente valorados por la tribu y a menudo se convierten en héroes o grandes líderes.
 
-### Jadditas
+En la actualidad, las tierras de los Temash están en manos de los grandes imperios de Arshalán y Ustilus, pero sus nativos saben que algún día estos grandes imperios también caerán, dejando nada más que ruinas en el desierto. Algunas tribus aceptan esta ocupación, mientras que otras se oponen ferozmente y causan grandes problemas a sus posibles conquistadores. La represión ustilesa es especialmente dura, lo que obliga a muchos de los temash a retirarse a los grandes desiertos del sur y esperar el momento adecuado para contraatacar con todas sus fuerzas.
+
+Los Temash suelen tener la piel morena con el pelo y los ojos oscuros. Algunas tribus se cubren completamente con el traje del desierto en presencia de los forasteros, revelando sus rostros sólo a aquellos en los que confían.  
+
+### Jaddi
 
 Los jadditas son los valerosos jinetes del desierto, viviendo estrictamente por sus códigos de honor y trayendo orden a las tierras más inhóspitas.
 
