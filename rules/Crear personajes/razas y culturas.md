@@ -167,6 +167,7 @@ Los kitsune cuentan con las siguientes características raciales:
 - +1 DES, +1 SAB
 - Reciben un rango adicional en ascendencia verdeante y desbloquean todas las magias elementales y arcanas.
 - Los kitsune pueden cambiar su propia forma para adoptar el aspecto de un humano o un zorro. Esto les costará una acción estándar y solo tendrán un único aspecto humano. 
+- Debido a su naturaleza espiritual los kitsune son vulnerables a las armas de hierro frío, las cuales les infligirán +1d6 daño e incrementarán el nivel de todas las heridas infligidas por un paso.
 
 Mientras los kitsune ganan experiencia y conocimientos su cuerpo empieza a manifestar colas adicionales como muestra de dicho poder. Cada vez que un kitsune suba 2 niveles obtendrá una cola adicional, llegando como máximo a nueve colas. Cada cola que tenga le permite lanzar un hechizo de su elección de manera innata hasta tres veces al día (dos veces si emplearlo cuesta 2 chi y una vez si cuesta tres chi). Dicho hechizo no puede tener rango superior al nivel del kitsune dividido entre 3 (redondeando hacia abajo).
 
