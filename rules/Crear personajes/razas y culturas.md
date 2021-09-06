@@ -24,6 +24,8 @@ Los ustileses se encuentran en todas las tierras principales del continente, des
 
 Debido a la mencionada diversidad, los ustileses tienen distintos tonos de piel, oscilando entre pálido y moreno. Su pelo es castaño, negro o rojizo, y sus ojos pueden ser marrones, verdes o azules.
 
+**Nombres:** (masc) Amulio, Graviel, Ludevic, Ramulo, Mihiel, Sevrin, Vinetor (fem) Azalia, Elsbet, Genevra, Ivetta, Livia, Theodora, Veridia (familia) Alsario, Caldiono, Loredan, Sevrantes, Vascari
+
 ### Temash
 
 Ancestrales habitantes de los desiertos del sur, los Temash han presenciado el nacimiento de grandes civilizaciones y su posterior caída. Saben muy bien que todo lo que existe es finito y un día se desvanecerá, lo cual que les da una visión algo nihilista del mundo. Al mismo tiempo, los Temash creen firmemente en la importancia de las historias y las leyendas, y piensan que, aunque todos los pueblos morirán al final, los relatos de sus hazañas perdurarán durante generaciones.
@@ -34,6 +36,8 @@ En la actualidad, las tierras de los Temash están en manos de los grandes imper
 
 Los Temash suelen tener la piel morena con el pelo y los ojos oscuros. Algunas tribus se cubren completamente con el traje del desierto en presencia de los forasteros, revelando sus rostros sólo a aquellos en los que confían.  
 
+**Nombres:** (masc) , (fem) , (tribu)
+
 ### Jaddi
 
 Los Jaddi son un pueblo guerrero proveniente de los más agrestes páramos, viviendo estrictamente según sus leyes tradicionales y poniendo orden en tierras sin ley. Son un faro de civilización y ley en tierras salvajes, pero los constantes ataques de los monstruosos habitantes del desierto ha obligado a muchos Jaddi a emigrar y establecerse en las tierras más prósperas del norte. Esto ha provocado conflictos entre los Jaddi y los Temash nativos de los desiertos, creando una antigua enemistad entre las dos culturas. Cuando el imperio de Ustilus llegó al continente del sur, encontró fieles aliados en los jaddi que les ayudarían a conquistar a los temash. Ahora, los papeles históricos de ambos se han invertido, con los Jaddi controlando las tierras del sur mientras los Temash se resienten bajo su liderazgo.
@@ -43,6 +47,8 @@ La cultura Jaddi ha sido históricamente nómada, con grandes clanes que migran 
 La caballería Jaddi es una de las fuerzas de combate más temidas del Continente, famosa por su feroz resistencia y valentía ante una muerte segura. Se les puede encontrar sirviendo a los ejércitos ustileses por todas las tierras del imperio y protegiendo la legendaria fortaleza conocida como la Ciudadela de los monstruos del abismo. Muchos Jaddi son fervientes seguidores de Feyn y a menudo se convierten en Caballeros de Ustilus, y algunos incluso entran en el Cónclave o alcanzan el puesto de Gran Maestre.
 
 Los Jaddi tienen la piel y los ojos de color marrón oscuro. Su pelo es mayoritariamente negro, y tradicionalmente lo trenzan una vez por cada victoria que consiguen. Un jinete Jaddi siente una gran devoción por su caballo, al que trata como un compañero y un héroe. Sus nombres completos se componen de su nombre personal, el nombre de un pariente anterior que haya muerto y el nombre de su clan.
+
+**Nombres:** (masc) Eleyas, Gershem, Habtamu, Ilezar, Kiros, Temesjan, Yeshef, (fem) Asheli, Esyena, Jaliyen, Maresha, Rahnya, Yehedit, Zedeni (clan) Almetsehai, Berehanu, Gebrekis, Haymanot, Matsebiya, Sekardis, Yitgarek
 
 ### Shinri
 
@@ -66,6 +72,8 @@ Kratoi es a menudo llamada la joya de la corona de Ustilus por su fidelidad, bue
 
 Los kratenses suelen tener un tono de piel que va de clara a morena y su pelo suele ser castaño y negro. El pelo rubio tampoco es raro, sobre todo entre los que tienen ascendencia mazarina. Sus ojos son marrones, azules o verdes.
 
+**Nombres:** (masc) , (fem) , (familia)
+
 ### Mazarinos
 
 Herederos del mayor imperio de tiempos pasados, los mazarinos están estancados en un periodo de decadencia como una mera sombra de lo que podrían haber sido. Mientras que antes podían rivalizar con Ustilus por la supremacía sobre el continente, una serie de desastres militares y económicos han debilitado gravemente el poder del trono mazarino y han dejado a la nación empobrecida y atrasada. Mientras que algunos aceptan su destino e incluso huyen a Kratoi en busca de una vida mejor, otros aún tienen la esperanza de que Mazarín vuelva a levantarse.
@@ -76,7 +84,7 @@ El gobierno actual de Mazarín es, en teoría, una monarquía absoluta, pero la 
 
 Los mazarinos suelen tener la piel clara y el pelo entre negro y rubio. Sus ojos son marrones, azules o verdes. Aquellos que tienen rastros de líneas de sangre elementales normalmente tienen un color de ojos asociado a su magia, como el azul hielo o el verde esmeralda.
 
-**Nombres:** (masc) Baekyon, Hanul, Inshim, Jungsu, Korain, Sangok, Yujin, (fem) Aicha, Hyunai, Jaiwa, Kyungmi, Miyu, Sujin, Yoon, (clan) Charek, Jikem, Ralang, Sisrok, Toza, Yotsin, Zalro
+**Nombres:** (masc) , (fem) , (familia) 
 
 ### Dairovios
 
@@ -88,6 +96,8 @@ Al ser la provincia más atrasada del imperio Ustilés, Dairov es un lugar perfe
 
 Los dairovios suelen tener el pelo y los ojos oscuros junto con la piel pálida. Algunos dairovios nacidos con gran influencia del Suelo Sombrío desarrollan rasgos únicos como ojos negros como el carbón o piel grisácea.
 
+**Nombres:** (masc) , (fem) , (familia) 
+
 ### Iskarianos
 
 Forjados con sangre y fuego, el pueblo iskariano ha tenido una larga historia marcada por la guerra y el sufrimiento. Pero tras ganar su libertad y construir una nación independiente con la ayuda de Ustilus, los iskarianos tuvieron por fin la oportunidad de dejar atrás su pasado y alcanzar una nueva era de paz. Con la paz llegó el estancamiento y la corrupción, y algunos grupos descontentos han comenzado a recordar los gloriosos días de antaño y desean hacer de Iskaria una nación fuerte una vez más.
@@ -98,16 +108,41 @@ En la actualidad los iskarianos tienen un país nominalmente independiente, pero
 
 Los iskarianos son físicamente similares a los shinri, ya que ambos suelen tener la piel clara, el pelo oscuro y los ojos marrones. Los ojos ámbar son más comunes debido a la prevalencia de las líneas de sangre elementales de fuego.
 
+**Nombres:** (masc) Baekyon, Hanul, Inshim, Jungsu, Korain, Sangok, Yujin, (fem) Aicha, Hyunai, Jaiwa, Kyungmi, Miyu, Sujin, Yunjee, (clan) Charek, Jikem, Ralang, Sisrok, Toza, Yotsin, Zalro
+
 ## No-humanos
+
+### Chothgar
+
+Los chothgar cuentan con las siguientes características raciales:
+
+- +1 FUE, +1 CON
+- Recibe un rango en Ira, Guerrero divino o Fortitud
 
 ### Elfos
 
-Los elfos representan todo aquello que la humanidad aspira a ser. Inmortales, bellos y con talento innato hacia la magia, los elfos son el primer pueblo conocido que ha pisado el continente.
+Los elfos cuentan con las siguientes características raciales:
+
+- +1 DES, +1 CAR
 
 ### Semielfos
 
+Los semielfos cuentan con las siguientes características raciales:
 
+- +1 en dos estadísticas
 
 ### Hobgoblin
 
-Los hobgoblin nacen y viven para la guerra. 
+Los hobgoblin cuentan con las siguientes características raciales:
+
+- +1 FUE, +1 CON
+- Recibe dos rangos relacionados con armas
+- Resistencia +2 al miedo y efectos mentales
+
+Aquellos hobgoblin que sirven a la Legión son capaces de colaborar entre ellos para convertirse en una fuerza invencible en el campo de batalla. Una unidad de un mínimo de 5 hobgoblin es capaz de realizar tácticas de combate sin la necesidad de tener la habilidad 
+
+### Leoninos
+
+Los leoninos cuentan con las siguientes características raciales:
+
+- +1 FUE, +1 SAB
