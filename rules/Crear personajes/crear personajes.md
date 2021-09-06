@@ -15,7 +15,7 @@ Todos los rangos giran en torno a seis estadísticas básicas, detalladas en est
 - **Sabiduría:** La Sabiduría (SAB) mide la intuición y la perspicacia del personaje. Los tiros de sabiduría son aquellos que requieren los sentidos o la necesidad de actuar por instinto. Esta estadística es clave para la magia divina y los rangos de Rastrear, y tiras tu Sabiduría para protegerte de efectos mentales y de moral.
 - **Carisma:** La Carisma (CAR) mide la elocuencia y voluntad del personaje. Los tiros de carisma son aquellos relacionados con convencer o engañar. Esta estadística es clave para la magia elemental, además de los rangos de Influenciar y Presencia. La Carisma puede llegar a sustituir a la Inteligencia o la Sabiduría en algunos tiros si posees los atributos adecuados.
 
-A nivel 1 tienes los valores 3, 2, 2, 1, 1, 0 para distribuir entre tus seis estadísticas. Además, puedes reducir una de tus estadísticas por 1 para incrementar otra por 1 (como máximo 3). Cada vez que subas un nivel par (2, 4, 6...) puedes aumentar una de tus estadísticas por 1, llegando como máximo a 6.
+A nivel 1 tienes los valores 2, 2, 2, 1, 1, 1 para distribuir entre tus seis estadísticas. Además, puedes reducir una de tus estadísticas por 1 para incrementar otra por 1 (como máximo 3). Cada vez que subas un nivel par (2, 4, 6...) puedes aumentar una de tus estadísticas por 1, llegando como máximo a 6.
 
 ## PV, Vitalidad y Defensa
 
@@ -33,12 +33,12 @@ Los valores de PV y Vitalidad se reducen o aumentan si sufres algún cambio a tu
 
 ## Talentos
 
-Los [talentos](http://raldamain.com/rules/talentos.html) representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. 
+Los [talentos](http://raldamain.com/rules/talentos.html) representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, que oscila ente 0 y 5. A nivel 1 tienes dos niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. 
 
 Determinados niveles de talento permiten aumentos a las estadísticas si son particularmente bajas. Estos aumentos estadísticos se aplicarán antes de los aumentos estadísticos por nivel en el proceso de creación de personajes.
 
 ## Rangos
 
-Los rangos forman la base del sistema Raldamain. Obtienes 2 rangos de tu elección a nivel 1, y a cada nivel posterior recibes un rango adicional en una habilidad. No puedes tener una habilidad a rango superior a tu nivel entre 2 (es decir, a nivel 5 no puedes tener una habilidad a Rango III). Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos.
+Los rangos forman la base del sistema Raldamain. Obtienes un rango de tu elección a nivel 1, y a cada nivel posterior recibes un rango adicional en una habilidad. No puedes tener una habilidad a rango superior a tu nivel entre 2 (es decir, a nivel 5 no puedes tener una habilidad a Rango III). Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos.
 
 Una compilación completa de los rangos puede encontrarse [aquí](http://raldamain.com/rules/Rangos).
