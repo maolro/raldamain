@@ -1,6 +1,6 @@
 ---
 title: Rangos
 layout: index
-menuorder: 2
+menuorder: 3
 ---
 
