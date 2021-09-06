@@ -17,17 +17,14 @@ Todos los rangos giran en torno a seis estadísticas básicas, detalladas en est
 
 A nivel 1 tienes los valores 2, 2, 2, 1, 1, 1 para distribuir entre tus seis estadísticas. Además, puedes reducir una de tus estadísticas por 1 para incrementar otra por 1 (como máximo 3). Cada vez que subas un nivel par (2, 4, 6...) puedes aumentar una de tus estadísticas por 1, llegando como máximo a 6.
 
-## PV, Vitalidad y Defensa
+## PV, Vitalidad, Defensa y Cordura
 
-El siguiente paso para crear un personaje es determinar los puntos de vida (PV), la Vitalidad y la defensa (DEF). Estos tres valores son imprescindibles para un combate y miden la capacidad de aguante que tiene el personaje.
+El siguiente paso para crear un personaje es determinar los puntos de vida (PV), la Vitalidad y la defensa (DEF). Estos tres valores son imprescindibles para un combate y miden la capacidad de aguante que tiene el personaje. La cordura es una cuarta estadística que representa la resistencia mental de un personaje frente a efectos mentales, pero su uso será menos común y solo entrará en juego debido a determinadas habilidades que afecten a la mente.
 
 - **PV:** Los PV miden la salud del personaje y su capacidad de aguantar daño letal. Equivalen a 3 + CON a nivel 1, y vuelven a aumentar por 1 cada vez que subas 3 niveles (es decir, a nivel 4, 7, 10, 13...). Cada vez que un personaje pierda PV a causa de daño letal sufrirá una herida leve, y si estos son reducidos a 0 este caerá inconsciente y quedará moribundo. Un personaje moribundo perderá 1 PV al principio de su siguiente turno hasta que reciba sanación, y muere si sus PV negativos llegan a ser iguales a su CON negativa (por ejemplo, un personaje con 2 CON morirá si llega a tener -2 PV). 
-
 - **Vitalidad:** La Vitalidad mide la capacidad de aguante físico de un personaje. La Vitalidad es igual a 2 + CON + el nivel del personaje. Todo el daño que sufra un personaje primero irá a la vitalidad, incluyendo el daño no-letal. Si la vitalidad qeuda reducida a 0 todo el daño futuro pasará a los PV.
-
-- **Defensa:** La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu armadura natural (los humanos empiezan con 0 armadura natural). La cantidad de resistencia que otorga una armadura puede encontrarse en el apartado de [aptitud con armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html)
-
-  Esta es distinta de las Resistencias, las cuales reducen el daño que recibas de un tipo específico de ataque. Por ejemplo, la Resistencia al fuego reduce todo el daño fuego que recibas por un valor determinado
+- **Defensa:** La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu armadura natural (los humanos empiezan con 0 armadura natural). La cantidad de resistencia que otorga una armadura puede encontrarse en el apartado de [aptitud con armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html). Esta es distinta de las Resistencias, las cuales reducen el daño que recibas de un tipo específico de ataque. Por ejemplo, la Resistencia al fuego reduce todo el daño fuego que recibas por un valor determinado
+- **Cordura:** La Cordura representa la resiliencia mental de un personaje frente a hechizos psíquicos y horrores antinaturales. Esta equivale a 2 + nivel + SAB y cada vez que esta sea reducida a 0 el personaje recibirá una [locura](https://raldamain.com/rules/Reglas%20adicionales/locura.html). A diferencia de otras estadísticas la cordura se sana de manera más lenta, recuperando solo 1 puntos de cordura con cada descanso largo realizado (+1 por cada tres niveles por encima de 1).
 
 Los valores de PV y Vitalidad se reducen o aumentan si sufres algún cambio a tu estadística de CON. Con un descanso corto (es decir, un descanso de 1-2 horas) recuperas toda tu Vitalidad mientras con un descanso largo (es decir, un descanso de 6-8 horas) recuperas todos tus PV y Vitalidad.
 

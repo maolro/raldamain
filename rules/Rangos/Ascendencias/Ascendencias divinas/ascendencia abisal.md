@@ -11,9 +11,9 @@ La llamada de la sangre de entidades olvidadas hace eones te reclama desde la pa
 
 Obtienes Resistencia 2 a daño físico. 
 
-<u>Furia del abismo:</u> Como acción bonus puedes entrar en un estado de furia sobrenatural con el cual recibes gran poder al precio de tu cordura. En este estado aumenta una de tus estadísticas por 1, acumulándose con los bonificadores de [ira](https://raldamain.com/rules/Rangos/Combate/ira.html) (esta habilidad puede activarse aunque te encuentres en dicho estado). Cada turno que mantengas este efecto te sanas 1 vitalidad y pierdes 1 de cordura. Si tu cordura llega a 0 pierdes el control, actuando de manera irracional y salvaje hasta que salgas del combate o caigas inconsciente.
+<u>Furia del abismo:</u> Como acción bonus puedes entrar en un estado de furia sobrenatural con el cual recibes gran poder al precio de tu cordura. En este estado aumenta una de tus estadísticas por 1, acumulándose con los bonificadores de [ira](https://raldamain.com/rules/Rangos/Combate/ira.html) (esta habilidad puede activarse aunque te encuentres en dicho estado). Cada turno que mantengas este efecto te sanas 1 vitalidad y pierdes 1 de cordura. Si tu cordura llega a 0 pierdes el control, actuando de manera irracional y salvaje hasta que salgas del combate o caigas inconsciente. 
 
-<u>Tocado por la locura:</u> Recibes una locura permanente de la cual no te puedes recuperar mientras tengas rangos de ascendencia abisal. Desbloqueas las ramas de [nigromancia](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html) y [magia mental,](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html) para las cuales puedes usar tu estadística de CAR. Tienes además resistencia a efectos mentales y necrótico igual a tu rango + 1.
+<u>Tocado por la locura:</u> Recibes una locura permanente de la cual no te puedes recuperar mientras tengas rangos de ascendencia abisal. Desbloqueas las ramas de [nigromancia](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html) y [magia mental,](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html) para las cuales puedes usar tu estadística de CAR. Tienes además resistencia a efectos mentales y necrótico igual a tu rango + 1 además que no sufrirás locuras permanentes cuando tu cordura sea reducida a 0.
 
 ## Rango II
 
