@@ -3,6 +3,7 @@ title: La caza al hereje
 fecha: 4002
 lugar: Svaikal, Dairov y Rizad
 niveles: 6-8
+layout: campaign
 ---
 
 ## Localidad

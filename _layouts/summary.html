@@ -1,0 +1,21 @@
+---
+layout: page
+---
+<div class="container text-justify">
+{{ content }}
+</div>
+
+<div class="container">
+    <ul class="list-unstyled">
+        {% assign mypages = site.pages | where_exp: "p", "p.dir contains page.dir" | where_exp: "p", "p.url != page.url" | where_exp: "p", "p.lang == page.lang" | sort: "name" %}
+        {% for item in mypages %}
+        <li>
+		
+            <h2><a href="{{item.url}}">{{ item.title }}</a></h2>
+			<p>Nivel: {{ item.niveles }}</p>
+			<p>{{ item.content | split: '#' | first }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>

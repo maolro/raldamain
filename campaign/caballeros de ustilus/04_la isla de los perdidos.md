@@ -3,6 +3,7 @@ title: La isla de los perdidos
 fecha: 4002
 lugar: Isla misteriosa
 niveles: 5-6
+layout: campaign
 ---
 
 ## Localidad

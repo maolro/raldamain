@@ -3,6 +3,7 @@ title: Ciudad de los sueños perdidos
 fecha: 4007
 lugar: Elyon
 niveles: 16-17
+layout: campaign
 ---
 
 ## Localidad

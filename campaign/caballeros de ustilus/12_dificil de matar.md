@@ -3,6 +3,7 @@ title: Difícil de matar
 fecha: 4007
 lugar: Thas-Tapet
 niveles: 15-16
+layout: campaign
 ---
 
 ## Localidad

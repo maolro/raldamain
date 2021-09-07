@@ -3,6 +3,7 @@ title: Epidemia del miedo
 fecha: 4008
 lugar: Elyon
 niveles: 17-18
+layout: campaign
 ---
 
 ## Localidad

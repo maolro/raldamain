@@ -3,6 +3,7 @@ title: Precio de la guerra
 fecha: 4004
 lugar: Thalos
 niveles: 10-12
+layout: campaign
 ---
 
 ## Localidad

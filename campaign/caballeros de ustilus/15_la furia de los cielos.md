@@ -3,6 +3,7 @@ title: La isla de los perdidos
 fecha: 4009
 lugar: Canal continental
 niveles: 18-19
+layout: campaign
 ---
 
 ## Localidad
