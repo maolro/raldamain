@@ -3,6 +3,7 @@ title: El viaje onírico
 fecha: 4089
 lugar: Kratoi
 niveles: 6-8
+category: El monstruo sin nombre
 ---
 
 ## Localidad
