@@ -3,9 +3,12 @@ title: Defensores de Ustilus
 fecha: 4001
 lugar: valle de Alascur, frontera entre Kratoi y Mazarin
 niveles: 1-3
+layout: campaign
 ---
 
 Los jugadores son destacados a un tranquilo fuerte custodiando la frontera entre la provincia ustilesa de Kratoi y Mazarín sin saber que pronto tendrán la responsabilidad de proteger toda Kratoi de un asalto furtivo Mazarino. Si desean vencer a un enemigo de fuerza y tamaño superior los jugadores deberán trabajar en equipo y emplear engaño y estrategia. Por desgracia o fortuna, el destino de toda una guerra ahora se encuentra en sus manos.
+
+<!--excerpt-->
 
 ## Localidad
 

@@ -3,6 +3,7 @@ title: El verdadero dios de Ustilus
 fecha: 4010
 lugar: Trono de Feyn
 niveles: 19-20
+layout: campaign
 ---
 
 ## Localidad

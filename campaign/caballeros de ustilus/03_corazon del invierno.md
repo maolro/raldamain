@@ -3,6 +3,7 @@ title: Corazón del invierno
 fecha: 4001
 lugar: islas ferrosas
 niveles: 4-5
+layout: campaign
 ---
 
 Una gran amenaza se cierne sobre Ustilus. El general Petrikov, armado con letales armas biológicas creadas por el siniestro mago fúngico Ilesit, se prepara para atacar una importante ciudad costera kratense con el fin de provocar un duro golpe al imperio mismo. Las esperanzas recaen en una pequeña flota ustilesa donde participan los jugadores, la cual deberá emplear estrategia y engaño para vencer a un general con el corazón tan frío como el invierno mismo.

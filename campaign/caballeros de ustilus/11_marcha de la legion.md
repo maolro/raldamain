@@ -3,6 +3,7 @@ title: Marcha de la legión
 fecha: 4006
 lugar: Iskaria
 niveles: 14-15
+layout: campaign
 ---
 
 ## Localidad

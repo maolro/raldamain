@@ -3,6 +3,7 @@ title: A las puertas de la muerte
 fecha: 4005
 lugar: Tamashkhan
 niveles: 13-14
+layout: campaign
 ---
 
 ## Localidad

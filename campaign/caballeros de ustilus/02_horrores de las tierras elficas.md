@@ -3,6 +3,7 @@ title: Horrores de las tierras élficas
 fecha: 4001
 lugar: comunidad élfica de Endophiel
 niveles: 3-4
+layout: campaign
 ---
 
 Después de defender el valle de Alascur en una batalla que parecía imposible, los jugadores reciben una nueva misión de escoltar a una embajadora ustilesa en el territorio de una aislacionista comuna de elfos. Lo que no saben es ahí deberán hacer frente a una conspiración cuyos siniestros planes amenazan al mismo imperio de Ustilus. Solo con un ojo perspicaz y un buen instinto de supervivencia podrán hacer frente a los horrores ocultos de las tierras élficas.

@@ -29,3 +29,5 @@ fields:
    text: Idioma
  - name: moneda
    text: Moneda
+ - name: niveles
+   text: Niveles   

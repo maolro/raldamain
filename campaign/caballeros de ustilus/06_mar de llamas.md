@@ -3,6 +3,7 @@ title: Mar de llamas
 fecha: 4003
 lugar: Bahía de Murat
 niveles: 8-9
+layout: campaign
 ---
 
 ## Localidad
