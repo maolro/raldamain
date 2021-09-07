@@ -12,8 +12,8 @@ layout: page
         <li>
 		
             <h2><a href="{{item.url}}">{{ item.title }}</a></h2>
-			<p>Nivel: {{ item.niveles }}</p>
-			<p>{{ item.content | split: '#' | first }}</p>
+			{% if items.niveles %}<p>Nivel: {{ item.niveles }}</p>{% endif %}
+			<p>{{ item.content | markdownify | split: '<h' | first }}</p>
         </li>
         {% endfor %}
     </ul>
