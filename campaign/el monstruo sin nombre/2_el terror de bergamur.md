@@ -3,6 +3,7 @@ title: El terror de Bergemur
 fecha: 4089
 lugar: Poblado de Bergemur
 niveles: 4-6
+category: El monstruo sin nombre
 ---
 
 ## Localidad

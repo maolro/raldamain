@@ -3,6 +3,7 @@ title: Buscando la cordura
 fecha: 4089
 lugar: Manicomio de Bergemur
 niveles: 1-4
+category: El monstruo sin nombre
 ---
 
 ## Localidad
