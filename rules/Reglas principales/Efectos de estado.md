@@ -2,8 +2,6 @@
 title: Efectos de estado
 ---
 
-## Efectos de estado
-
 Esta es una lista de los efectos de estado más comunes que pueden afectar a una criatura.
 
 ### Agarrada

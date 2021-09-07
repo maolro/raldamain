@@ -4,7 +4,7 @@ title: Heridas permanentes
 
 Las heridas permanentes son todas aquellas heridas que causan daños duraderos al cuerpo de una persona. Un personaje recibirá una herida permanente cada vez que sufra daño a los PV o un golpe crítico, el cual aumentará el nivel de las heridas permanentes infligidas por un paso.
 
-La herida que provoques afectará a una parte aleatoria del cuerpo de tu objetivo salvo que tomes un penalizador -2 para afectar a una parte específica de su cuerpo. En el caso que un personaje sufra una herida permanente en una parte del cuerpo donde ya tenga una incrementa el nivel de dicha herida por un paso. Una herida permanente tendrá efectos diferentes dependiendo de la parte del cuerpo afectada tal como indica la siguiente lista:
+La herida que provoques afectará a una parte aleatoria del cuerpo de tu objetivo salvo que tomes un penalizador -2 para afectar a una parte específica de su cuerpo. En el caso que un personaje sufra una herida permanente en una parte del cuerpo donde ya tenga una incrementa el nivel de dicha herida por un paso. Una herida permanente tendrá efectos diferentes dependiendo de la parte del cuerpo afectada tal como queda indicado a continuación.
 
 ## Cabeza
 

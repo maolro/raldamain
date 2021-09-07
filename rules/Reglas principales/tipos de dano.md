@@ -1,3 +1,7 @@
+---
+title: Tipos de daño
+---
+
 El daño representa la multitud de heridas que puede sufrir un personaje.
 
 ## Tipos de daño
