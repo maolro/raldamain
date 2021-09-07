@@ -8,8 +8,6 @@ layout: campaign
 
 Los jugadores son destacados a un tranquilo fuerte custodiando la frontera entre la provincia ustilesa de Kratoi y Mazarín sin saber que pronto tendrán la responsabilidad de proteger toda Kratoi de un asalto furtivo Mazarino. Si desean vencer a un enemigo de fuerza y tamaño superior los jugadores deberán trabajar en equipo y emplear engaño y estrategia. Por desgracia o fortuna, el destino de toda una guerra ahora se encuentra en sus manos.
 
-<!--excerpt-->
-
 ## Localidad
 
 Este capítulo está ambientado en el plácido valle de Alascur, un paso fronterizo entre la provincia ustilesa de Kratoi y el reino de Mazarín. Esta zona es bien conocida por lluvias constantes, extensos bosques y un importante fuerte ustilés dedicado a custodiar la frontera. La situación en el valle ha sido tranquila en los últimos 50 años, provocando que sea un lugar ideal para destacar a nuevos reclutas o viejos soldados. No obstatante, tras la muerte de Feyn el reino de Mazarín, aprovechándose de la actual debilidad de Ustilus, pone en inicio una nueva campaña militar con el fin de derrotar a su rival ancestral y alcanzar su antigua gloria. Para ello el ejército mazarino colabora con una secretiva organización conocida como el Pacto para derrotar a los centinelas ustileses y transportar furtivamente toda una sección del ejército para invadir Kratoi.
