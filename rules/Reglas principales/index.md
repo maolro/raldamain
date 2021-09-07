@@ -1,6 +1,6 @@
 ---
 title: Reglas principales
-layout: index
+layout: summary
 menuorder: 2
 ---
 
