@@ -150,7 +150,7 @@ Los elfos cuentan con las siguientes características raciales:
 
 ### Hobgoblin
 
-
+Los hobgoblin nacen y viven para la guerra. Su duro entrenamiento desde temprana edad y rígida disciplina militar les convierte en uno de los ejércitos más poderosos del Continente, temidos hasta por los grandes imperios. 
 
 Los hobgoblin cuentan con las siguientes características raciales:
 
@@ -161,6 +161,8 @@ Los hobgoblin cuentan con las siguientes características raciales:
 Aquellos hobgoblin que sirven a la Legión son capaces de colaborar entre ellos para convertirse en una fuerza invencible en el campo de batalla. Los hobgoblin no perderán los bonificadores de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) si su líder sufre una herida permanente y podrán recibir los bonificadores de una táctica propia de [dirigir combatientes](https://raldamain.com/rules/Rangos/Social/presencia.html) si forman parte de un grupo de 5 o más hobgoblin (cada grupo puede tener activa una táctica diferente). En contraparte, aquellos hobgoblin poseídos por espíritus oni recibirán un rango adicional en [ascendencia oni.](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20oni.html) 
 
 ### Kitsune
+
+Originarios del mundo espiritual, la curiosidad movió a los progenitores de la raza kitsune a explorar el mundo humano y descubrir todas sus maravillas. Su capacidad de adoptar una forma humana combinada con sus talentos para la magia innata les permite infiltrarse entre los humanos y hasta reproducirse con ellos, dando lugar a una nueva raza hija tanto del mundo humano como el espiritual. Los kitsune cuentan con algunas de las habilidades de sus progenitores espirituales y tienen la fama de ser amantes de las buenas historias y las travesuras de todo tipo. No obstante, aquellos que formen un vínculo con un kitsune tendrán un amigo para toda la vida.
 
 Los kitsune cuentan con las siguientes características raciales:
 
@@ -173,6 +175,8 @@ Mientras los kitsune ganan experiencia y conocimientos su cuerpo empieza a manif
 
 ### Leoninos
 
+Antaño una sencilla raza de nómadas de las praderas, su encuentro la profeta Mekhatim moldeó su cultura para siempre y les convirtió en sus primeros y más fervientes seguidores. Debido a ello se convirtieron en los fundadores y actuales señores del sacro imperio de Arshalán, dedicando sus vidas a cumplir el santo mensaje de Mekhatim y a expandir su fe por todas las tierras del mundo.
+
 Los leoninos cuentan con las siguientes características raciales:
 
 - +1 FUE, +1 SAB
@@ -182,4 +186,6 @@ Los leoninos cuentan con las siguientes características raciales:
 
 ### Semielfos
 
-Los semielfos tienen las mismas características raciales que los humanos, pero su sangre élfica duplica su esperanza de vida y les permite ver en la oscuridad a una distancia máxima de 30 pies.
+Hijos de dos mundos, los semielfos cuentan con la belleza y larga vida de los elfos además de la adaptabilidad y creatividad de los humanos. Su origen se remonta comúnmente a breves encuentros románticos entre miembros de ambas razas, naciendo así como producto de su pasión. La vida de un semielfo es frecuentemente solitaria, careciendo de una comunidad al a que pertenecer y buscando su lugar en un mundo rápidamente cambiante. No obstante, en territorios donde el mestizaje entre elfos y humanos es más común los semielfos forman una comunidad más numerosa e influyente, como ocurre en la nación de Iskaria donde los semielfos ocupan la mayoría de los puestos influyentes del gobierno. Los semielfos pueden reproducirse entre sí y con humanos, pero su descendencia contará con menos sangre élfica y poco a poco empezará a perder los beneficios raciales.
+
+Los semielfos tienen las mismas características raciales que los humanos, pero su sangre élfica duplica su esperanza de vida y les permite ver en la oscuridad a una distancia máxima de 30 pies. Su aspecto se trata una mezcla entre el de ambos progenitores.
