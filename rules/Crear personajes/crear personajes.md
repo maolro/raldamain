@@ -6,7 +6,7 @@ El sistema Raldamain es un innovador sistema de rol que busca ser fácil de usar
 
 ## Las seis estadísticas
 
-Todos los rangos giran en torno a seis estadísticas básicas, detalladas en este apartado. El valor que tengas en una estadística se añadirá a todos tus tiros de ataque, habilidad y defensa que estén relacioandos con ella. Las seis estadísticas son las siguientes:
+Todos los rangos giran en torno a seis estadísticas básicas, detalladas en este apartado. El valor que tengas en una estadística se añadirá a todos tus tiros de ataque, habilidad y defensa que estén relacionados con ella. Las seis estadísticas son las siguientes:
 
 - **Fuerza:** La Fuerza (FUE) mide el físico del personaje. Los tiros de fuerza son aquellos que requieren un esfuerzo físico, como por ejemplo para nadar contracorriente o escapar de un agarre. Esta estadística es clave para rangos relacionados con armas pesadas, artes marciales o similares, sumándose al daño base de estos.
 - **Destreza:** La Destreza (DES) mide la agilidad y precisión del personaje. Los tiros de destreza son aquellos relacionados con movimientos precisos o ágiles, como moverse sigilosamente o caminar sobre superficies estrechas. Esta estadística es clave para rangos relacionados con armas ligeras, armas a distancia y reflejos. La Destreza te permite esquivar ataques como una reacción, para lo cual podrás hacer un tiro de DES para defenderte. 
