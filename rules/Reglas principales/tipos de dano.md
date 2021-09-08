@@ -2,7 +2,7 @@
 title: Tipos de daño
 ---
 
-El daño representa la multitud de heridas que puede sufrir un personaje.
+El daño representa la multitud de heridas que puede sufrir un personaje. Aquí se encuentra una lista completa de todos los tipos de daño que existen en el sistema Raldamain.
 
 ## Tipos de daño
 
@@ -52,7 +52,7 @@ Este daño representa todo aquel provocado por radiación o una sobrecarga masiv
 
 ### Necrótico
 
-El daño necrótico es producido por el toque sobrenatural de ciertas criaturas o magos el cual únicamente puede producir daño no letal. El daño necrótico se basa en drenar la energía del cuerpo de la victima reduciendo así sus funciones vitales y provocando mal funciones en el cuerpo del afectado tanto físicas como mentales. En ultima instancia este daño puede llegar a causar un colapso directo a criaturas mas débiles provocándoles así una muerte inmediata por los estragos sufridos.
+El daño necrótico representa la putrefacción y necrosis provocado por un contacto con energía negativa o determinadas habilidades sobrenaturales relacionadas con la nigromancia. El daño necrótico se basa en drenar la energía del cuerpo de la victima reduciendo así sus funciones vitales y provocando mal funciones en el cuerpo del afectado tanto físicas como mentales. En ultima instancia este daño puede llegar a causar un colapso directo a criaturas mas débiles provocándoles así una muerte inmediata por los estragos sufridos.
 
 ### Fuerza
 

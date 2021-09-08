@@ -1,6 +1,6 @@
 ---
 title: Rangos
-layout: index
+layout: summary
 menuorder: 3
 ---
 

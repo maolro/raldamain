@@ -1,6 +1,6 @@
 ---
 title: Creación de personajes
-layout: index
+layout: summary
 menuorder: 1
 ---
 
