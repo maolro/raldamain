@@ -3,7 +3,7 @@ title: Combate doble
 category: Armas
 ---
 
-# COMBATE DOBLE
+Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, saturando así a tus enemigos con una nueva variedad de estilos de lucha. A medida que tu control vaya avanzado tu lucha con ambas armas se volverá un hábito, permitiéndote emplearlas sin dificultad y aprendiendo todo tipo de letales ataques combinados que despiertan su máximo potencial.
 
 ## Rango I
 

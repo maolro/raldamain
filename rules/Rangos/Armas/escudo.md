@@ -3,7 +3,9 @@ title: Escudo
 category: Armas
 ---
 
-# ESCUDO
+Tu estilo de combate se asemeja al de una sólida barrera defensiva, empleando tu escudo para proteger a tus aliados y para realizar poderosas cargas contra tus enemigos. A medida que tu entrenamiento avance te volverás capaz de realizar fuertes cargas valiéndote de tu escudo como una férrea cubierta que te protegerá de cualquier obstáculo en el camino y mejorar tus capacidades físicas a través de un estado de defensa absoluta. En última instancia serás capaz de convertirte en una infranqueable barrera, bloqueando todo ataque hecho contra tus aliados y convirtiéndote en una invencible fortaleza andante.
+
+# Rangos
 
 ## Rango I
 

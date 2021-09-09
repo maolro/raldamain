@@ -3,6 +3,8 @@ title: Filos cortantes
 category: Armas
 ---
 
+Has decidido valerte de las armas que llevan utilizando los caballeros y guerreros desde la antigüedad para defenderse y acabar con todo enemigo con un letal corte.  A medida que tu entrenamiento se vaya haciendo mas presente, iras aprendiendo habilidades que te permitirán hacer ataques en grandes áreas con tu arma o que te dejen atacar con gran fuerza a la armadura del enemigo para destruirla. Según tu entrenamiento vaya alcanzando sus ultimas etapas de aprendizaje, tu poder ofensivo con la espada se volverá mayor permitiéndote realizar ahora un mayor número de ataques con tu arma al turno así como valerte de su letal filo para cercenar las extremidades de tu enemigo.
+
 # Rangos
 
 ## Rango I
@@ -23,7 +25,7 @@ Aumenta tu probabilidad de golpe crítico a 19-20.
 
 <u>Impacto destructor:</u> Al impactar a un objetivo con armadura con un Ataque poderoso podrás reducir su DEF por 2. Esta reducción puede eliminarse reparando la armadura, y si la defensa de la armadura queda reducida a 2 o menos esta esta se vuelve inutilizable (lo cual cuenta como si no llevase armadura para los efectos de Tajo feroz). Esta habilidad te permite hacer un tiro de Destrozar contra la armadura de tu objetivo empleando el bonificador de tu arma contra el heroísmo de tu objetivo, reduciendo su DEF por 2 en el caso que tengas éxito.
 
-<u>Choque de espadas:</u> Empleando tu destreza con tu arma eres capaz de trabar la espada de tu enemigo en la tuya para restringir sus movimientos e impedir que te pueda atacar. Para usar esta habilidad deberás hacer un tiro de ataque contra el cual tu enemigo deberá defenderse con Parada, y en el caso que tengas éxito el arma de tu enemigo quedará atrapada. Un enemigo con el arma atrapada no podrá usar Parada para defenderse contra ataques que no sean el tuyo y no podrá atacarte hasta que escape del agarre. Además, desarmar a un enemigo en esta situación te costará una acción de movimiento en lugar de estándar. Liberar a una espada de este agarre funciona de la misma manera que escapar de un agarre convencional.
+<u>Choque de espadas:</u> Empleando tu destreza con tu arma eres capaz de trabar la espada de tu enemigo en la tuya para restringir sus movimientos e impedir que te pueda atacar. Para usar esta habilidad deberás hacer un tiro de ataque contra el cual tu enemigo deberá defenderse con Parada, y en el caso que tengas éxito el arma de tu enemigo quedará atrapada. Un enemigo con el arma atrapada no podrá usar Parada para defenderse contra ataques que no sean el tuyo y no podrá atacarte hasta que escape del agarre. Además, desarmar a un enemigo en esta situación te costará una acción de movimiento en lugar de estándar. Liberar a una espada de este agarre funciona de la misma manera que escapar de un agarre convencional. Realizar un ataque con tu arma te cuesta una acción de movimiento.
 
 ## Rango IV
 
@@ -33,7 +35,7 @@ Aumenta tu probabilidad de golpe crítico a 19-20.
 
 ## Rango V
 
-<u>Cortes en secuencia:</u> Tu espada es capaz de atacar con gran celeridad. Hacer un ataque con tu arma te cuesta ahora una acción de movimiento y cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1.
+<u>Cortes en secuencia:</u> Tu espada es capaz de atacar con gran celeridad. Una vez por ronda puedes realizar un ataque con tu arma como acción bonus y cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1.
 
 <u>Tajo cercenador:</u> Al realizar un ataque poderoso contra un enemigo contra 2 o menos defensa incrementas el nivel de todas las heridas permanentes infligidas por 2. Si logras provocar una herida grave con esta habilidad podrás cortarle de inmediato la parte del cuerpo impactada si se trata de un brazo, una pierna o la cabeza.
 

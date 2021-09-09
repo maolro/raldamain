@@ -3,6 +3,10 @@ title: Filos perforantes
 category: Armas
 ---
 
+Te has especializado en un estilo de combate más rápido y preciso, apuntando a los puntos débiles de tu adversario con tu arma para eliminarlo antes que pueda contratacar. A medida que tu entrenamiento mejore serás capaz de engañar a tu adversario con tu arma para que sea incapaz de defenderse o valerte de tu movilidad para entrar y salir del combate. A medida que alcances las ultimas etapas de aprendizaje con tu arma serás capaz de eliminar a un enemigo con un único ataque preciso o emplear cada apertura en la defensa de tu adversario para atacar de nuevo.
+
+# Rangos
+
 ## Rango I
 
 Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo perforante.

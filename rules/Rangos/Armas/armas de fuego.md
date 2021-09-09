@@ -3,13 +3,15 @@ title: Armas de fuego
 category: Armas
 ---
 
+De todas las armas jamás creadas no hay ninguna más letal que el arma de fuego. Capaz de penetrar las armaduras mismas y de matar a gran distancia, solo la poca precisión de estas actúa como limitante para sus devastadoras capacidades. Solo un pistolero como tú es capaz de despertar el verdadero potencial de estas armas y convertirte en una invencible máquina de matar. Mientras vayas dominando estas armas serás capaz de usarla para diversos trucos más complejos y disparar a distancias cada vez más altas sin dificultades, llegando en los niveles más altos a saltarte las defensas mismas de tus enemigos.
+
 # Rangos
 
 ## Rango I
 
-Añade tu rango a todos los tiros de ataque hechos con armas de fuego.
+Añade tu rango a todos los tiros de ataque hechos con armas de fuego. 
 
-<u>Puntería mortal:</u> Tus ataques son especialmente mortales al impactar a enemigos a poca distancia de ti. Al atacar a un objetivo que se encuentre a menos de 30 pies de ti ignorarás toda la defensa que tenga por armadura natural y fabricada (esto es a 15 pies para una pistola de mano) y las heridas permanentes que causes aumentarán su efectividad por un paso. Antes de realizar un ataque puedes añadir un penalizador -2 a tu tiro de ataque para incrementar la distancia a la que puedes utilizar puntería mortal por 15 pies.
+<u>Puntería mortal:</u> Tus ataques son especialmente mortales al impactar a enemigos a poca distancia de ti. Al atacar a un objetivo que se encuentre a menos de 30 pies de ti ignorarás toda la defensa que tenga por armadura natural y fabricada (esto es a 15 pies para una pistola de mano) y tus objetivos no podrán emplear esquiva para defenderse salvo que tengan la habilidad Esquiva asombrosa. Antes de realizar un ataque puedes añadir un penalizador -2 a tu tiro de ataque para incrementar la distancia a la que puedes utilizar puntería mortal por 15 pies. 
 
 <u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (esto te cuesta una acción bonus si es una pistola de mano). Incrementa además tu iniciativa por 1, y vuélvela a incrementar cuando alcances rango III y V.
 
@@ -33,7 +35,7 @@ Aumenta tu probabilidad de golpe crítico a 19-20.
 
 ## Rango IV
 
-<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después, por ejemplo). Tampoco sufrirás penalizaciones al disparar montado o en un vehículo en movimiento.
+<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después, por ejemplo). Tampoco sufrirás penalizaciones al disparar montado o en un vehículo en movimiento y aquellos enemigos en tu radio de puntería mortal no podrán emplear esquiva para evitar tus ataques aunque tengan Esquiva asombrosa (aún lo pueden evitar si tienen esquiva asombrosa superior).
 
 <u>Disparos a bocajarro:</u> Una vez por ronda puedes emplear una acción bonus para realizar un ataque adicional con tu arma. Esta habilidad puede emplearse también para proporcionar fuego de cubierta a un aliado de tu elección, permitiéndote hacer un tiro defensivo usando tus modificadores de ataque para protegerlo. 
 
@@ -47,7 +49,7 @@ Aumenta tu probabilidad de golpe crítico a 18-20.
 
 ## Armas 
 
-Un arma de fuego base hace 2d6 daño perforante, tiene un alcance medio de 90 pies y se necesita una acción de turno completo para recargarla. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongruentes.
+Un arma de fuego base hace 2d6 daño perforante, tiene un alcance medio de 90 pies y se necesita una acción de turno completo para recargarla. Para mostrar su poca precisión las armas de fuego obtienen un fallo crítico con un 1-2 y cuando esto ocurra quedarán atascadas durante una ronda (algunas armas primitivas llegarán a explotar si se obtiene un fallo crítico con ellas). Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongruentes.
 
 - **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base a 2d4 y su distancia por 30 pies a cambio de una mayor facilidad de uso. Las pistolas de mano necesitan sólo una acción de movimiento para recargar y pueden utilizarse en combate con dos armas.
 - **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
