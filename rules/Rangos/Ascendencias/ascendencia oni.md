@@ -3,7 +3,9 @@ title: Ascendencia oni
 category: Ascendencias
 ---
 
-Como hobgoblin que eres se supone que deberías ser un fiel y leal guerrero de la legión sin embargo ese sentimiento nunca ha aflorado en ti como en tus compañeros, en lugar de los sentimientos de honor de tus compañeros tu te sientes invadido por un sombra que se apodera de ti mientras se hace mas fuerte. Según su influencia va en aumento, vas obteniendo mas habilidades y rasgos que deberás ocultar de tus compañeros hobgoblin para evitar que estos acaben contigo. Mientras, el oni en tu interior siembra sentimientos de duda y susurra promesas de poder en tu cabeza.
+Como hobgoblin que eres se supone que deberías ser un fiel y leal guerrero de la Legión, pero tú has escuchado desde el principio una voz que te promete poder ilimitado y el potencial de ser libre de las cadenas que tanto te han oprimido. 
+
+sin embargo ese sentimiento nunca ha aflorado en ti como en tus compañeros, en lugar de los sentimientos de honor de tus compañeros tu te sientes invadido por un sombra que se apodera de ti mientras se hace mas fuerte. Según su influencia va en aumento, vas obteniendo mas habilidades y rasgos que deberás ocultar de tus compañeros hobgoblin para evitar que estos acaben contigo. Mientras, el oni en tu interior siembra sentimientos de duda y susurra promesas de poder en tu cabeza.
 
 ## Rango I
 
