@@ -3,7 +3,7 @@ title: Armaduras
 category: Combate
 ---
 
-Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras aprendiendo así como exactamente hacer para evitar las penalizaciones que normalmente limitarían a los demás. A medida que tu conocimiento y entrenamiento avanzan te vas volviendo mas apto a la hora de llevarla así como de modificarla para que se adapte mejor a tu cuerpo, llegando incluso a poder vestirla como si se tratase de una extensión de tu propio cuerpo.
+Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras para evitar las penalizaciones que normalmente limitarían a los demás e incrementar sus capacidades defensivas. A medida que tu conocimiento y entrenamiento avanzan te vas volviendo más apto a la hora de llevarla así como de modificarla para que se adapte mejor at tus habilidades, llegando incluso a poder vestirla como si se tratase de una extensión de tu propio cuerpo.
 
 ## Rango I
 

@@ -3,7 +3,7 @@ title: Ascendencia de Tierra
 category: Ascendencias
 ---
 
-Estas conectado con las más lejanas profundidades de la tierra y todo aquello que se encuentra en sus dominios. A medida que su naturaleza cristalice en ti, la tierra se convertirá en un nuevo medio para alcanzar tus ideales, protegiendo tu cuerpo como una férrea cubierta, así como sometiendo a tus enemigos bajo toneladas de inamovible roca.
+Estás conectado con los espíritus de las más lejanas profundidades de la tierra y las más altas montañas, transformándote en un inquebrantable guardián capaz de mantenerse sólido frente a un mundo cambiante. A medida que su naturaleza cristalice en ti la tierra se convertirá en un nuevo medio para alcanzar tus ideales, protegiendo tu cuerpo como una férrea cubierta así como sometiendo a tus enemigos bajo toneladas de inamovible roca.
 
 ## Rango I
 

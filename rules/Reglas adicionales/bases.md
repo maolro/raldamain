@@ -4,6 +4,8 @@ title: Bases
 
 Las bases representan los principales centros de operaciones que posee una organización. Una base está formada por un conjunto de secciones conocidas como salas, las cuales realizan una variedad de funciones diferentes según su propósito. Dependiendo del nivel de una organización esta puede edificar sus bases principales o secundarias de la siguiente manera siempre y cuando el total de PC las salas empleadas no excedan los PC máximos de una base. Además, una base secundaria no puede estar construida con más PC que una base principal de un nivel de organización inferior.
 
+## Tabla de PC
+
 | Nivel de organización | Base principal (PC) | PC totales de bases secundarias |
 | :-------------------- | ------------------- | ------------------------------- |
 | 1                     | 3                   | 0                               |

@@ -3,7 +3,7 @@ title: Ascendencia de Fuego
 category: Ascendencias
 ---
 
-Guardas relación con los aspectos más caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios. A medida que su cruenta naturaleza se abre paso dentro de ti, serás capaz de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser, devorando hasta que todo y todos sean reducidos a cenizas.
+Guardas relación con los espíritus más caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios, otorgándote la capacidad de liberar el poder asolador del fuego. A medida que su cruenta naturaleza se abre paso dentro de ti serás capaz de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser, devorando hasta que todo obstáculo en tu camino sea reducido a cenizas.
 
 ## Rango I 
 

@@ -3,7 +3,7 @@ title: Compañero salvaje
 category: Combate
 ---
 
-Te has decidido por entrenar un animal salvaje para que te acompañe en tus viajes y te asista de ser necesario, entrenándolo para que se mantenga a tu lado pase lo que pase. Cuanto mas tiempo pasáis juntos mas fuertes se van volviendo los lazos que os unen, aprendiendo así como saltaros la barrera del idioma para poder comunicaros entre vosotros e incluso influenciados y aprendiendo mutuamente sobre las habilidades del otro.
+Te has decidido por entrenar un animal salvaje para que te acompañe en tus viajes y te asista de ser necesario, entrenándolo para que se mantenga a tu lado pase lo que pase. Cuanto mas tiempo pasáis juntos más se fortalecen los lazos que os unen, mejorando vuestra capacidad de comunicación para realizar complejas tácticas combinadas e incluso aprendiendo mútuamente sobre las habilidades del otro.
 
 ## Rango I
 

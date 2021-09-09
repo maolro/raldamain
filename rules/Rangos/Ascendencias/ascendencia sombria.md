@@ -3,7 +3,7 @@ title: Ascendencia Sombría
 category: Ascendencias
 ---
 
-Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándote en un delicado equilibrio entre el mundo de los humanos y el mundo de los muertos. Fusionando tu ser con sombras mientras sacrificas tu humanidad te mueves silenciosamente en la noche, acechando todo lo que te rodea.
+Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándote en un delicado equilibrio entre el mundo de los humanos y el mundo de los muertos. Mientras avanzas con tu poder sacrificas tu humanidad para abrazar el poder del plano sombrío, acechando todo lo que te rodea sin ser visto y debilitando las fronteras entre el plano material y el tenebroso mundo de las sombras.
 
 ## Rango I
 

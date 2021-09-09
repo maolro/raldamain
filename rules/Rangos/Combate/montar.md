@@ -3,7 +3,7 @@ title: Montar
 category: Combate
 ---
 
-Como jinete entrenado eres mejor cuando luchas acompañado de tu montura, empleando su fortaleza superior para provocar devastadores ataques sobre tus enemigos. A lo largo del tiempo tu practica va alcanzando nuevos niveles, de forma que puedas realizar ataques mas efectivos en consonancia con tu compañero así como realizar tacticas peligrosas que de tratarse de otra persona serían imposibles.
+Como jinete entrenado eres mejor cuando luchas acompañado de tu montura, empleando su movilidad superior para recorrer grandes distancias y su gran fuerza para arrollar a todo enemigo que se interponga en tu camino. Con el paso del tiempo la conexión con tu montura se fortalece, permitiéndote realizar devastadores ataques en conjunción con ella y combinar vuestras habilidades para dominar el campo de batalla.
 
 ## Rango I
 
