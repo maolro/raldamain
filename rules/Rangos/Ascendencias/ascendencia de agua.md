@@ -3,7 +3,7 @@ title: Ascendencia de Agua
 category: Ascendencias
 ---
 
-Sientes una gran afinidad por los entornos acuáticos presentes en casi todas las partes del mundo, siendo un reflejo de la atroz naturaleza de los océanos. A medida que su influencia se va haciendo más presente en ti, permitiéndote resistir los efectos más adversos de las aguas, así como transformándote en un testimonio viviente de la fluidez de las corrientes y la fuerza de las mareas
+Sientes una gran afinidad por los espíritus de las aguas de todo el mundo, convirtiéndote un reflejo de tanto la atroz naturaleza de los océanos como la adaptabilidad de los ríos. A medida que su influencia se va haciendo más presente en ti recibes la capacidad de resistir los efectos más adversos de las aguas y transformarte en un testimonio viviente de la fluidez de las corrientes y la fuerza de las mareas.
 
 ## Rango I
 

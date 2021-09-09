@@ -3,6 +3,8 @@ title: Mente desencadenada
 category: Ocultismo
 ---
 
+Tu mente está conectada con un plano superior de pensamiento, permitiéndote alcanzar mayores etapas de cognición y vislumbrar así ciertos fragmentos de conocimiento pasado, presente o futuro. A medida que tu conexión con este plano se vaya estrechando te volverás capaz de inhibir los efectos de heridas permanentes hasta que haya pasado cierto tiempo después de que estas se inflijan, así mismo tu mente se volverá mas resistente a efectos externos que intenten turbarla, mostrando a todo aquel que intente leer tu mente sin tu conocimiento oscuras imágenes que ni siquiera alcanza a comprender dañando a todo aquel que intente invadirla. En el momento culminante en el que tu mente se encuentre mas conectada con ese plano tus habilidades cognitivas se volverán aun mayores, pudiendo llegar hasta un límite que muy pocos pueden alcanzar, así mismo tu podrás servirte de este plano como un vehículo para que tu mente ocupe otro cuerpo después de tu muerte mientras habitas  en un palacio mental a la espera del huésped adecuado.
+
 ## Rango I
 
 <u>Mente desencadenada:</u> Como acción bonus puedes liberar tu mente de sus ataduras materiales y alcanzar un estado mental superior. Al entrar en estado de Mente desencadenada aumenta dos de tus estadísticas mentales por 1 y recibes resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que tengas la mente desencadenada reducirás tu cordura por 1. Si tu cordura llega a 0 perderás control de tu cuerpo durante una hora o hasta que caigas inconsciente. Mente desencadenada no puede usarse si estás fatigado.

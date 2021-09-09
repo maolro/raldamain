@@ -3,6 +3,8 @@ title: Magia onírica
 category: Ocultismo
 ---
 
+Tienes un gran conocimiento de como funciona la mente humana en sus etapas de sueño, y al contrario que aquellos que dominan la magia mental tu eres capaz de introducir tu consciencia dentro de la mente de una persona que se encuentre dormida pudiendo luchar contra el dominio que posee sobre el escenario onírico que os rodea para tomar control de él. A medida que sigas desarrollando tus habilidades, serás capaz de crear escenarios mas complejos así como enfrentarte a mentes mas resistentes que intenten oponerse a tu influencia.  A medida que te acerques al final te volverás capaz de mayores hazañas, pudiendo forzar a alguien a que entre en un sueño creado por ti para enfrentaros, entrar en las zonas mas profundas de su mente y afectarlas para tomar control de su cuerpo en caso de tener éxito o incluso atraparlo en un sueño compuesto por varias capas que sea casi indistinguible de la propia realidad y del que no pueda escapar.
+
 ## Rango I
 
 Añade tu rango a todos tus tiros relacionados con magia onírica.

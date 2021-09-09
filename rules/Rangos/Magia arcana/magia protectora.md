@@ -3,6 +3,8 @@ title: Magia de Protección
 category: Magia arcana
 ---
 
+Estudiar la magia está bien, pero una de las mayores amenazas para un mago es irónicamente su propio poder o el de sus compañeros y es por eso que has decidido centrar tus esfuerzos en encontrar una forma de impedir que tu magia pueda volverse en tu contra. Esta magia se basa al igual que la demás en el estudio de los conductos de chi que componen la existencia, sin embargo tu no te has especializado en alterarlos para provocar efectos devastadores sino que has encontrado la manera de desviarlos o cerrarlos para evitar que transmitan su energía por un área en concreto evitando así que pueda usarse magia en una zona especifica. A medida que vas estudiando encuentras formas de cerrar estos conductos por unos breves instantes para poder evitar que un mago pueda conjurar un hechizo o detener uno que ya se haya lanzado borrándolo y haciendo que parezca que nunca hubiera existido, sin embargo eso no es suficiente y es por eso que decidido a encontrar un mejor método has encontrado tanto una forma de cristalizar temporalmente estos conductos para que formen escudos o armaduras temporales para ti que se sometan a tu voluntad como una forma de cerrar por completo una zona durante un espacio prolongado de tiempo creando algo similar a un vacío mágico y haciendo que los conductos de la zona drenen cualquier tipo de energía mágica que entre en el área para compensar la diferencia.
+
 ## Rango I
 
 Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Rango chi a tu reserva.

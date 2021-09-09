@@ -3,7 +3,7 @@ title: Ascendencia celestial
 category: Ascendencias
 ---
 
-Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada de los seres superiores de la creación. Según vas alimentando la fe en tus dioses, tu cuerpo se irá volviendo uno con la luz que da vida a todos los seres del universo, permitiéndote ser partícipe de grandes milagros e incluso convertirte en la encarnación de un santo.
+Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada de los seres superiores de la creación, llamándote a ser luz y guía de la humanidad. Según vas alimentando la fe en tus dioses tu cuerpo se irá volviendo uno con la luz que da vida a todos los seres del universo, permitiéndote sanar heridas incurables con un toque e invocar a las fuerzas del cielo para erradicar al mal.
 
 # Rangos
 

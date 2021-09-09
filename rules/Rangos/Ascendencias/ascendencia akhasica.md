@@ -3,7 +3,7 @@ title: Ascendencia Akhásica
 category: Ascendencias
 ---
 
-Tu mente está conectada con la inteligencia colectiva del universo volviéndote parte de los engranajes que hacen girar la gran rueca del destino. Gracias a esta conexión, pequeños fragmentos del tejido del universo son discernibles para ti permitiéndote obtener respuestas a preguntas que hasta ahora habían permanecido sin respuesta.  
+Tu mente está conectada con la inteligencia colectiva del universo, transformándote en una parte de los engranajes que hacen girar la gran rueca del destino. Gracias a esta conexión pequeños fragmentos del tejido del universo son discernibles para ti, permitiéndote obtener respuestas a tus más profundas preguntas. Al alcanzar el último escalón de esta senda de conocimiento tu mente alcanzará un estado cognitivo superior en el cual comprenderás los más grandes secretos universales.
 
 ## Rango I
 

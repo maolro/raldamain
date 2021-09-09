@@ -3,6 +3,8 @@ title: Magia Gravitatoria
 category: Ocultismo
 ---
 
+Posees cierta habilidad para realizar pequeños cambios en como funciona la gravedad de tu entorno pudiendo hacer que esta atraiga o repela algunos de los elementos que escojas. A medida que tu control sobre esta habilidad vaya en aumento serás capaz de realizar cambios mas grandes  sobre la gravedad del entorno o individuo pudiendo darle a objetos normales cierto campo gravitacional que los envuelva así como alterar la densidad de aquellos que escojas. Incluso, en ultimas instancias, serás capaz de reproducir algunas de las fuerzas mas fuertes y destructivas del universo pudiendo así servirte de agujeros negros para destrozar todo aquellos que haya en un área, o utilizar agujeros negros para rápidamente salvar grandes distancias.
+
 ## Rango I
 
 Añade tu rango a todos tus tiros relacionados con la magia gravitatoria.

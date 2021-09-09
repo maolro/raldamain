@@ -3,7 +3,7 @@ title: Ascendencia de Aire
 category: Ascendencias
 ---
 
-Tienes una fuerte conexión con las antiguas tormentas que llevan soplando desde el inicio de los tiempos, pudiéndose sentir el eco de sus vientos con tu presencia. Según su influencia se va haciendo más notable en ti, serás capaz de comandar los vendavales para hacer servir tu voluntad.
+Tienes una fuerte conexión con los espíritus de las más antiguas antiguas tormentas, permitiéndote sentir el eco de sus vientos y el rugir de las tempestades. Según su influencia se va haciendo más notable en ti el poder del aire empieza a infundirse en tu cuerpo, permitiéndote liberar tu cuerpo de las cadenas de la tierra para explorar los más lejanos cielos y moverte con la agilidad del mismo viento.
 
 ## Rango I
 

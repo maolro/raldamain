@@ -3,6 +3,8 @@ title: Nigromancia
 category: Ocultismo
 ---
 
+Al igual que un médium, tienes una fuerte conexión con el plano de los muertos que otros no pueden ni comprender, sin embargo tus habilidades son mas intrusivas esclavizando eternamente sus cuerpos bajo tu dominio y corrompiendo sus almas hasta que se conviertan en una sombra de lo que alguna vez fueron. A medida que tu conocimiento sobre la muerte vaya haciéndose mas profundo te volverás capaz de emplear la energía que usas para componer a tus creaciones como una potente arma que drene cualquier rastro de vida de cualquiera que entre en contacto con ella, así mismo serás capaz de levantar mayores grupos de no muertos así como guardar en cada uno de ellos una mayor cantidad de energía para darles habilidades superiores. En el momento en el que tu conocimiento sobre la muerte alcanza sus ultimas etapas  tu cuerpo comenzará a infundirse con las mismas energías con las que trabajas para crear tus no muertos dándote habilidades superiores relacionadas con las que ellos poseen, así mismo serás capaz incluso de realizar el mismísimo trabajo de la parca pudiendo así arrebatar cualquier rastro de vida de cualquiera al que roces con tu toque y levantarlo como tu vasallo.
+
 # Rangos
 
 ## Rango I
