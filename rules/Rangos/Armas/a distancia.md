@@ -3,6 +3,8 @@ title: A distancia
 category: Armas
 ---
 
+Has preferido un arma de largo alcance que te permita acabar con tus enemigos antes que puedan acercarse a ti, apuntando a sus puntos débiles para eliminarlo rápidamente. A medida que tu maestría vaya en aumento te volverás capaz de disparar tus flechas con mayor velocidad y precisión. En las ultimas etapas de tu aprendizaje serás capaz de matar a poderosos adversarios con una única flecha y disparar precisamente sin sacrificar tu movilidad.
+
 # Rangos
 
 ## Rango I 

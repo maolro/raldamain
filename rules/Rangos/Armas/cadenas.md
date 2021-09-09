@@ -3,6 +3,8 @@ title: Cadenas
 category: Armas
 ---
 
+Eres experto empleando exóticas cadenas y látigos, inmovilizando a tus enemigos y protegiéndote de ataques en una danza tanto bella como letal. A medida que tu experiencia con las cadenas se va haciendo mas notable te volverás capaz aumentar la velocidad de estas a lo largo del tiempo realizar ataques cada vez más devastadores y agarrar a tus enemigos con mayor agilidad. En las últimas etapas de tu entrenamiento te volverás aun más hábil con tu arma, pudiendo tanto usar a un enemigo que hayas agarrado con tus cadenas como un escudo viviente o servirte de su propio peso para ahorcarlo.
+
 ## Rango I
 
 Añade tu rango a todos tus tiros de ataque hechos con cadenas.

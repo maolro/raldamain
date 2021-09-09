@@ -3,6 +3,8 @@ title: Contundentes
 category: Armas
 ---
 
+Has decidido ir a por una de las armas mas resistentes y destructivas que hay, decantándote por fuertes bolas de metal o duros garrotes. A medida que tu entrenamiento se vaya volviendo mas visible serás capaz de realizar poderosos ataques capaces de destrozar aquello que se interponga o efectuar devastadoras cargas contra tus enemigos capaces de lanzarlos por los aires. En las ultimas etapas etapas de tu aprendizaje te volverás capaz de hacer fuertes golpes contra el suelo capaces de deformar el terreno y fulminar a tus enemigos con un solo golpe.
+
 ## Rango I
 
 Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contundentes
