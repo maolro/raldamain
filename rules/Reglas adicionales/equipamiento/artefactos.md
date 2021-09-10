@@ -96,6 +96,4 @@ Para descubrir los secretos del Necronomicón el usuario deberá tener éxito en
 
 ## Báculo de Shade
 
-El báculo de Shade es un bastón hecho de madera y filamentos de energía sombría
-
 ## Las cuatro llaves
