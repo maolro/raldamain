@@ -2,8 +2,6 @@
 title: Dispositivos de chi
 ---
 
-## Dispositivos de chi
-
 ### Crédito 1
 
 <u>Piedra de enviar:</u> Una piedra de enviar es un pequeño dispositivo semejante a una gema azulada unida con otra piedra de igual tamaño y apariencia por medio de un glifo de magia espacial. Ambas piedras están unidas por magia espacial para que estas actúen como si se encontrasen en el mismo punto del espacio, permitiendo que al activar una piedra todos los sonidos cercanos a esta sean escuchados en la otra sin importar los límites de la distancia. Si una de las dos piedras es destruida la otra dejará de funcionar, y para reactivarla es necesario colocar un glifo igual en otra piedra de tu elección. Es posible ligar una tercera piedra al sistema pagando 1 crédito, lo cual permite que los usuarios de las tres piedras puedan comunicarse entre ellos.
