@@ -6,6 +6,8 @@ Los agentes representan los numerosos grupos de efectivos que puede tener una or
 
 Una organización puede tener un número máximo de agentes de cada nivel de contratación tal como indica la siguiente tabla. Este número máximo depende del nivel de influencia que tenga una organización en la localidad donde busque contratar a los agentes.
 
+## Tabla de influencia
+
 | Nivel de influencia | NC 0 | NC 1 | NC 2 | NC 3 | NC 4 | NC 5 |
 | ------------------- | ---- | ---- | ---- | ---- | ---- | ---- |
 | 1                   | 4    | 1    |      |      |      |      |
