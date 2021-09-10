@@ -1,6 +1,6 @@
 ---
 title: Elementalismo
-layout: summary
 category: Magia elemental
+layout: summary
 ---
 
