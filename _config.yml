@@ -40,7 +40,11 @@ defaults:
       path: "rules"
     values:
       layout: rule
-
+  -
+    scope:
+      path: "campaign"
+    values:
+      layout: campaign
 
 # Build settings
 safe: true # always trues on github-pages, disables _plugins/
