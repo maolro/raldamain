@@ -3,7 +3,6 @@ title: Reforjados
 fecha: 4003
 lugar: Iskaria
 niveles: 9-10
-layout: campaign
 ---
 
 ## Localidad
