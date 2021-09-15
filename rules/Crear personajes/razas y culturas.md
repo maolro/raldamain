@@ -2,7 +2,7 @@
 title: Razas y culturas
 ---
 
-El siguiente paso para crear un personaje es determinar la raza y cultura a la que pertenece. La raza de un personaje le otorga determinados rasgos biológicos conocidos como características raciales capaces de modificar sus estadísticas, mientras que la cultura define su lugar en el mundo y forma típica de pensar. En algunas especies la raza y cultura están estrechamene relacionadas mientras en otros casos una raza puede tener múltiples culturas asociadas, como ocurre con la humanidad. Aunque ambos rasgos son un buen punto de partida para la creación de un personaje, el jugador es libre de decidir si se adecua a los tópicos de su cultura o rompe con ellos. 
+El siguiente paso para crear un personaje es determinar la raza y cultura a la que pertenece. La raza de un personaje le otorga determinados rasgos biológicos conocidos como características raciales capaces de modificar sus estadísticas, mientras que la cultura define su lugar en el mundo y forma típica de pensar. En algunas especies la raza y cultura están estrechamente relacionadas mientras en otros casos una raza puede tener múltiples culturas asociadas, como ocurre con la humanidad. Aunque ambos rasgos son un buen punto de partida para la creación de un personaje, el jugador es libre de decidir si se adecua a los tópicos de su cultura o rompe con ellos. 
 
 Las razas y culturas disponibles en una campaña dependen fuertemente de la naturaleza de esta, quedando así a libre decisión del máster. Como ejemplo aquí se proporcionan las razas y culturas propias de la campaña Caballeros de Ustilus en el mundo de Raldamain.
 
