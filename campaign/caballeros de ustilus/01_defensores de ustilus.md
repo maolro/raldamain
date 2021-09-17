@@ -57,14 +57,14 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 **Agente del Pacto** (nivel 3)
 
 - **FUE** 1, **DES** 4, **CON** 1, **INT** 1, **SAB** 1, **CAR** 2
-- **PV **5, **VT **6, **DEF** 2 (Armadura de cuero)
-- <u> Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
+- **PV** 5, **VT** 6, **DEF** 2 (Armadura de cuero)
+- <u>Habilidades</u>: Sigilo +6, Engaño +4, Acrobacias +6, Juego de manos +5
 - <u>Rangos</u>: Reflejos I, Filos ligeros I, Influenciar I, Rastrear I
 
 **Asesino del Pacto** (nivel 5)
 
 - **FUE** 2, **DES** 5, **CON** 1, **INT** 1, **SAB** 2, **CAR** 2
-- **PV ** 6, **VT ** 8, **DEF** 2 (Armadura de cuero)
+- **PV** 6, **VT** 8, **DEF** 2 (Armadura de cuero)
 - <u>Habilidades</u>: Sigilo +8, Engaño +4, Acrobacias +7, Juego de manos +6, Atletismo +4
 - <u>Rangos</u>: Reflejos II, Arcos II, Rastrear I, Influenciar I
 
