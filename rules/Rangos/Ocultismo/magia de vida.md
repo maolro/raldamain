@@ -25,6 +25,8 @@ Añade tu rango a todos tus tiros relacionados con magia de vida.
 
 ## Rango III
 
+Aumenta tu probabilidad de crítico a 19-20.
+
 <u>Sentido de vida:</u> Eres capaz de sentir el flujo de la vida en todos los seres vivos, notando así la presencia de todas las criaturas vivas a 60 pies de ti y evitando que estas puedan pillarte por sorpresa. También sientes el estado actual de dichas criaturas, notando si se encuentran aquejadas por heridas permanentes o enfermedades.
 
 <u>Foco de energía:</u> Conoces como manipular los flujos de energía vital para potenciar tus habilidades, acumulándola en ti para liberarla después. Empleando una acción de movimiento puedes obtener un punto de energía, llegando a un máximo igual a tu rango + 1. Cada punto de energía que tengas te otorga un bonificador +1 en tiradas defensivas y puedes gastar cualquier cantidad de puntos de energía para obtener +1 en tiros de ataque y daño además de aumentar el área de efecto por 5 pies al usar una descarga luminosa o incrementar la cantidad de PV y Vitalidad que sanes por 1. Los puntos de energía se perderán cuando seas desconcentrado. Realizar una descarga luminosa ahora te cuesta una acción de movimiento.
@@ -41,6 +43,8 @@ Añade tu rango a todos tus tiros relacionados con magia de vida.
 - **Lanza luminosa**: Tu ataque elemental permanecerá después de atacar y mientras mantengas la concentración puedes atacar con él como una acción bonus. No puedes mantener a más de un ataque de esta manera.
 
 ## Rango V
+
+Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Explosión solar:</u> Como acción de turno completo puedes liberar la energía vital en una devastadora explosión empleando seis ataques almacenados. Este ataque afectará a todas las criaturas enemigas que se encuentren a 20 pies de ti e infligirá 2d6 + SAB daño de fuego y cegará a todas las criaturas que logre impactar. Adicionalmente, todas las criaturas aliadas se sanarán como si les afectases con primeros auxilios.
 
