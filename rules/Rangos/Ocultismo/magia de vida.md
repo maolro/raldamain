@@ -25,7 +25,7 @@ Añade tus rango a todos tus tiros relacionados con magia de vida.
 
 ## Rango III
 
-<u>Sentido de vida:</u> Eres capaz de sentir el flujo de la vida en todos los seres vivos, notando así la presencia de todas las criaturas vivas a 60 pies de ti y evitando que estas puedan pillarte por sorpresa. También sientes el estado actual de dichas criaturas, notando si se encuentran aquejadas por heridas permanentes, enfermedades.
+<u>Sentido de vida:</u> Eres capaz de sentir el flujo de la vida en todos los seres vivos, notando así la presencia de todas las criaturas vivas a 60 pies de ti y evitando que estas puedan pillarte por sorpresa. También sientes el estado actual de dichas criaturas, notando si se encuentran aquejadas por heridas permanentes o enfermedades.
 
 <u>Foco de energía:</u> Conoces como manipular los flujos de energía vital para potenciar tus habilidades, acumulándola en ti para liberarla después. Empleando una acción de movimiento puedes obtener un punto de energía, llegando a un máximo igual a tu rango + 1. Cada punto de energía que tengas te otorga un bonificador +1 en tiradas defensivas y puedes gastar cualquier cantidad de puntos de energía para obtener +1 en tiros de ataque y daño además del área de efecto por 5 pies con una descarga luminosa o incrementar la cantidad de PV y Vitalidad que sanes por 1. Los puntos de energía se perderán cuando seas desconcentrado. Realizar una descarga luminosa ahora te cuesta una acción de movimiento.
 
