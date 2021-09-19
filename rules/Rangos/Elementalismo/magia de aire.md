@@ -10,7 +10,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de aire.
 
 <u>Vendaval:</u> Como acción estándar puedes liberar una poderosa ráfaga de aire capaz de empujar a tus objetivos. Este ataque empujará a tu objetivo 1d6 x 5 pies al impactar en una dirección de tu elección. Si este se choca con una superficie sólida sufrirá daño de caída como si se hubiese caído de una altura igual al número de pies de movimiento que no ha podido recorrer (por ejemplo, si es empujado 30 pies y se choca tras 10 pies de empuje, sufrirá daño como si se hubiese caído 20 pies). Para lanzar a tu objetivo en dirección vertical es necesario tener éxito en una maniobra de combate contra él tras impactar con tu ataque.
 
-<u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes aumentar el área de tu ataque a una línea de 10 pies de ancho y 60 de largo, hacer un ataque elemental adicional o aumentar la fuerza de los vientos en un área de 40 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
+<u>Reserva de energía:</u> Puedes elegir sufrir 1 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes aumentar el área de tu ataque a una línea de 10 pies de ancho y 60 de largo, hacer un ataque elemental adicional o aumentar la fuerza de los vientos en un área de 40 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
 
 <u>Parada elemental:</u> Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 

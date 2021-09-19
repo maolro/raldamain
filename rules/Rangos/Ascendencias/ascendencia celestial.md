@@ -9,11 +9,11 @@ Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia de luz.
+Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia de vida.
 
 <u>Fuego celestial:</u> La energía celestial que fluye por tus venas se manifiesta en emanaciones de fuego luminoso. Recibes la capacidad de crear un orbe de luz de manera innata, el cual te seguirá por donde vayas y desprenderá luz brillante en un aura de 20 pies, disipando toda la oscuridad mágica con la que entra en contacto. Una vez por turno puedes emplear una acción bonus para mover a tu orbe de luz 15 pies en cualquier dirección. 
 
-<u>Bendito por el cielo:</u> Puedes lanzar hechizos divinos usando tu estadística de carisma en vez de sabiduría. Tienes además resistencia igual a tu Rango contra daño necrótico y radiante.
+<u>Bendito por el cielo:</u> Puedes lanzar hechizos divinos usando tu estadística de carisma en vez de sabiduría. Tienes además resistencia igual a tu Rango contra daño necrótico y radiante. Adicionalmente al utilizar Primeros auxilios sanarás una cantidad de Vitalidad igual a 1d4 + CAR y una vez al día puedes reducir el nivel de un veneno o herida permanente por un paso (2 veces al día a rango III y 3 veces a rango V).
 
 ## Rango II
 

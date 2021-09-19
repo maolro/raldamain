@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental
 
 <u>Control de metal</u>: Eres capaz de manipular objetos metálicos en un radio de 30 pies. Como una acción de movimiento puedes mover de posición un objeto metálico pequeño hasta 15 pies en cualquier dirección. Para manipular objetos metálicos que lleve una persona deberás tener éxito en un tiro de magia elemental contra su tiro de [heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#hero%C3%ADsmo-fue), por lo cual puedes desarmarle del objeto o reducir la efectividad de este por 1. Esta habilidad no funciona con metales mágicos o materiales especiales como la adamantina.
 
-<u>Reserva de energía</u>: Puedes elegir sufrir 2 daño no-letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque elemental adicional o aumentar el área de efecto un ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
+<u>Reserva de energía</u>: Puedes elegir sufrir 1 daño no-letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque elemental adicional o aumentar el área de efecto un ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
 
 <u>Parada elemental:</u> Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 

@@ -17,7 +17,7 @@ Añade tu rango a todos tus tiros relacionados con magia de hielo.
 
 <u>Parada elemental:</u> Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
-<u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no-letal para aumentar la fuerza de tus ataques. Esta habilidad te permite realizar un ataque elemental adicional al turno, incrementar el radio de salpicadura de un ataque por 10 pies o convertirlo en un ataque de área que afecte a todas las criaturas en un cono de 15 pies. 
+<u>Reserva de energía:</u> Puedes elegir sufrir 1 daño no-letal para aumentar la fuerza de tus ataques. Esta habilidad te permite realizar un ataque elemental adicional al turno, incrementar el radio de salpicadura de un ataque por 10 pies o convertirlo en un ataque de área que afecte a todas las criaturas en un cono de 15 pies. 
 
 ## Rango II
 
