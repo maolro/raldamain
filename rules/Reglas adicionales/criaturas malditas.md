@@ -26,22 +26,27 @@ Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una
 
 ### Grado 1
 
-- Incrementa tu FUE por 1
-- Arma ligada
-- Resistencia sobrenatural
-- Furia de batalla
++1 Fuerza 
 
-### Grado 2
+Estasis de batalla: Activas la habilidad de Ira como si tuvieses el primer Rango de esta. Si ya tienes ira, recibirás ventaja en uno de tus tiros de cada ronda en tiros de atq (un azul permanente si en sistema Raldamain) 
 
-- Incrementa tu DES por 1
-- Intimidación
-- Regeneración
+Visage aterradora: Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. A grado de maldición 2 causas el efecto miedo y a grado de maldición 3 causas pánico. Esta habilidad funciona igual que *mirada aterradora* 
 
-### Grado 3
+### Grado 2 
 
-- Incrementa tu FUE por 1
-- Invulnerabilidad
-- Arma maldita
++1 Destreza 
+
+Arma ligada: puedes saber donde esta tu arma en todo momento y gastando 1 acción de turno completo para traerla hacia ti. A nivel 3 de maldición esto te cuesta una acción estandar. También recibes la habilidad foco elemental usando Grado de Maldición en vez de 
+
+Ascendencia Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
+
+### Grado 3 
+
++1 Fuerza 
+
+Furia Carmesí: al entrar en extasis de batalla eres de capaz de curarte X/2 donde X es el daño que le haces a los PV de tu oponente, también puedes elegir reducir el nivel de una herida permanente por 1 en vez de curarte. Si estando en furia carmesi no eres capaz de infligir Y (está te la dejo a ti Matías) daño caerás inconsciente al finalizar el turno. Eres capaz de salir de la Furia Carmesí como acción de turno completo, aunque estarás fatigado durante 1/2 turnos (esto depende de si es sistema Raldamain o d20) 
+
+Arma maldita: En caso de que tu cuerpo mortal sea eliminado, tu alma pasara a la espada permitiéndote transmitirle la maldición Ashura a otra persona.  También tu arma hará 1daño base adicional además de permitirte gastar 4 ventajas para temporalmente reducir una estadística física de un enemigo por 1. (Efecto en el juego: Tu espada es una filacteria)
 
 ## Profundo
 

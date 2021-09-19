@@ -9,7 +9,7 @@ Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote 
 
 Añade tu rango a todos tus ataques hechos con magia elemental de tierra.
 
-<u>Ataque elemental:</u> Como acción estándar puedes atacar a un objetivo lanzándole una piedra a gran velocidad. Este ataque infligirá 1d6 + CAR daño contundente al impactar y puede afectar a un área de 5 pies cuadrados que se encuentre a menos de 30 pies de ti. Si impactas a una criatura con un ataque elemental de tamaño superior a esta deberá tener éxito en un tiro de heroísmo contra tu ataque elemental o será empujada 1d6 x 5 pies y caerá al suelo.
+<u>Ataque elemental:</u> Como acción estándar puedes atacar a un objetivo lanzándole una piedra a gran velocidad. Este ataque infligirá 1d6 + SAB daño contundente al impactar y puede afectar a un área de 5 pies cuadrados que se encuentre a menos de 30 pies de ti. Si impactas a una criatura con un ataque elemental de tamaño superior a esta deberá tener éxito en un tiro de heroísmo contra tu ataque elemental o será empujada 1d6 x 5 pies y caerá al suelo.
 
 <u>Parada elemental:</u> Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
