@@ -37,7 +37,7 @@ Incrementa tu SAB por 1.
 
 <u>Sentido del mal:</u> Detectas la presencia del mal en un aura 60 pies. Con esta habilidad identificas todas las criaturas, objetos y hechizos relacionados con el abismo, el infierno o los primigenios, conociendo su posición y fuerza aproximada. También eres capaz de notar cuando una criatura te miente intencionalmente como si tuvieses éxito en un tiro de Averiguar intenciones (esta habilidad no funciona con criaturas que tengan la habilidad [lengua del diablo](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia infernal.html#rango-ii)).
 
-Milagro de restauración: Como acción estándar usable un número de veces al día igual a tu Rango - 2 puedes eliminar un [efecto de estado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html), [veneno](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), [enfermedad](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#enfermedades), maldición o hechizo que afecte a una criatura. Puedes también emplear un uso de esta habilidad mientras sanas a una criatura para incrementar hasta dos estadísticas reducidas por 1.
+<u>Milagro de restauración:</u> Como acción estándar usable un número de veces al día igual a tu Rango - 2 puedes eliminar un [efecto de estado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html), [veneno](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), [enfermedad](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#enfermedades), maldición o hechizo que afecte a una criatura. Puedes también emplear un uso de esta habilidad mientras sanas a una criatura para incrementar hasta dos estadísticas reducidas por 1.
 
 ## Rango V
 
