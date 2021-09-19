@@ -6,7 +6,7 @@ Esta es una lista de los efectos de estado más comunes que pueden afectar a una
 
 ### Agarrada
 
-Una criatura agarrada no puede moverse y recibe desventaja en todos sus tiros para Esquivar. Recibe también desventaja a todos sus tiros de ataque y de maniobras de combate excepto para escapar del agarre. Intentar escapar cuesta una acción de movimiento con la cual la criatura agarrada debe obtener éxito en una tirada de Heroísmo contra el valor de Heroísmo de quién le esté agarrando. Una criatura agarrada puede también intentar agarrar a la persona quién le está reteniendo, causando que ambas no puedan moverse y pierdan todos los penalizadores en maniobras de combate para afectarse entre sí.
+Una criatura agarrada no puede moverse y será incapaz de defenderse. También será incapaz de atacar y realizar maniobras de combate, pero si le está agarrando otra criatura puede intentar afectarla con sus habilidades aunque recibirá desventaja en todos sus tiros para emplearlas. Intentar escapar cuesta una acción de movimiento con la cual la criatura agarrada debe obtener éxito en una tirada de Heroísmo contra el valor de Heroísmo de quién le esté agarrando. Una criatura agarrada puede también intentar agarrar a la persona quién le está reteniendo, causando que ambas no puedan moverse y pierdan todos los penalizadores en maniobras de combate para afectarse entre sí.
 
 ### **Asustada** 
 
@@ -34,7 +34,7 @@ Una criatura enfermada recibe desventaja en todos sus tiros de ataque, defensa y
 
 ### **Enredada** 
 
-Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y recibe desventaja en todos sus tiros relacionados con la destreza. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
+Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y recibe desventaja en todos sus tiros de ataque y defensa. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
 
 ### **Ensordecida** 
 
