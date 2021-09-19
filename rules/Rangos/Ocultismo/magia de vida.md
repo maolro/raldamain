@@ -7,7 +7,7 @@ category: Ocultismo
 
 ## Rango I
 
-Añade tus rango a todos tus tiros relacionados con magia de vida.
+Añade tu rango a todos tus tiros relacionados con magia de vida.
 
 <u>Toque sanador:</u> La energía de la vida fluye por tu cuerpo, permitiéndote sanar graves heridas en un instante. Emplear primeros auxilios ahora te cuesta una acción de movimiento y al usarlo sanarás una cantidad de Vitalidad igual a 1d4 + tu rango en magia de vida. Una cantidad de veces al día igual a tu rango de magia de vida puedes reducir el nivel de una herida permanente, veneno o enfermedad por 1 (esto se acumula con las habilidades Guardián de la vida y Bendito por el cielo) No necesitarás materiales para usar primeros auxilios pero para poder canalizar la energía de la vida para sanar a otros deberás tener el cuerpo libre de heridas permanentes y enfermedades.
 
