@@ -42,7 +42,7 @@ Añade tu rango a todos tus tiros relacionados con magia de vida.
 
 ## Rango V
 
-<u>Explosión solar:</u> Como acción de turno completo puedes liberar la energía vital en una devastadora explosión empleando seis ataques almacenados. Este ataque afectará a todas las criaturas enemigas que se encuentren a 20 pies de ti e infligirá 2d6 + CAR daño de fuego y cegará a todas las criaturas que logre impactar. Adicionalmente, todas las criaturas aliadas se sanarán como si les afectases con primeros auxilios.
+<u>Explosión solar:</u> Como acción de turno completo puedes liberar la energía vital en una devastadora explosión empleando seis ataques almacenados. Este ataque afectará a todas las criaturas enemigas que se encuentren a 20 pies de ti e infligirá 2d6 + SAB daño de fuego y cegará a todas las criaturas que logre impactar. Adicionalmente, todas las criaturas aliadas se sanarán como si les afectases con primeros auxilios.
 
 <u>Sanador supremo:</u> Tu poder sanador ha alcanzado su máximo esplendor, permitiéndote desafiar a la muerte misma. Aumenta el número de PV y Vitalidad que sanas por 1d4, y una vez por día puedes realizar un milagro de sanación. Con un milagro de sanación puedes restaurar un órgano o miembro perdido, resucitar a una criatura que haya muerto hace menos de un día a 1 PV  o eliminar una enfermedad, maldición o veneno.
 
