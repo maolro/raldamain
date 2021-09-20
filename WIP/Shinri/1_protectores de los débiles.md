@@ -16,13 +16,21 @@ Los jugadores son reclutados en una taberna para proteger un pueblo
 
 ### Conociendo a los aldeanos
 
-Watabe (tendero), Natami (sabia)
-
 ### Campamento bandido
 
 ### La recolección del pago
 
 ### Batalla por Yaibiro
+
+#### Avance por el bosque
+
+#### Quema del arroz
+
+#### Defensa del pueblo
+
+#### El encarnado despierta
+
+#### Un último asalto
 
 ## Enemigos
 
