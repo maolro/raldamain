@@ -27,7 +27,17 @@ Los jugadores son destacados a Kratoi para ayudar a la resistencia o acabar con 
 
 ### Sangre por sangre
 
+### Pérdida de apoyos
 
+### El cerco se estrecha
+
+### El consejo supremo rebelde
+
+### Detención masiva
+
+### La mártir de la libertad
+
+### Cuenta atrás hacia la rebelión
 
 ### El levantamiento de Rimas
 

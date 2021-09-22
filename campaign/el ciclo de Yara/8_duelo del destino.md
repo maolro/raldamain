@@ -15,7 +15,19 @@ La alianza Continental prepara su invasión de Mazarin para derrotar al Imperio.
 
 ## Encuentros
 
-### (WIP)
+### La invasión de Mazarín
+
+### Reformando la república
+
+### Maquinaciones en las sombras
+
+### Ella siempre estaba ahí
+
+### Conspiración contra el Imperio
+
+### La locura de la Gran Unificadora
+
+### Inicio de la Convergencia Armónica
 
 ### Duelo del destino
 
