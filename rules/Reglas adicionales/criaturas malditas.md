@@ -26,11 +26,9 @@ Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una
 
 ### Grado 1
 
-+1 Fuerza 
-
-Estasis de batalla: Activas la habilidad de Ira como si tuvieses el primer Rango de esta. Si ya tienes ira, recibirás ventaja en uno de tus tiros de cada ronda en tiros de atq (un azul permanente si en sistema Raldamain) 
-
-Visage aterradora: Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. A grado de maldición 2 causas el efecto miedo y a grado de maldición 3 causas pánico. Esta habilidad funciona igual que *mirada aterradora* 
+- +1 Fuerza 
+- Recibe la habilidad Ira. Si ya tienes ira, recibirás ventaja en uno de tus tiros de cada ronda en tiros de ataque y aumenta su daño base por 1d6
+- Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. A grado de maldición 2 provocará el efecto miedo y a grado de maldición 3 causará pánico. 
 
 ### Grado 2 
 
