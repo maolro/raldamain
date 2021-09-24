@@ -1,3 +1,7 @@
+---
+title: Cultura
+---
+
 Estas son las razas y culturas recomendadas para una campaña que tenga lugar en Kimon en la época de herejía.
 
 ## Humanos
