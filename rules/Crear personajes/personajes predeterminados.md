@@ -47,7 +47,7 @@ En esta categoría se encuentran los tipos de personaje que utilizan una varieda
 
 **Mago clásico** (INT, SAB, CAR, DES)
 
-- <u>Talentos:</u> Conocimiento, Fabricación, Investigar, Engaño
+- <u>Talentos:</u> Estudio, Arcanismo, Investigar, Engaño
 - <u>Rangos:</u> Magia (Espacial, Temporal, Evocación, Protección), Conocimiento
 
 **Psíquico** (INT, SAB, CAR, DES)
@@ -62,7 +62,7 @@ En esta categoría se encuentran los tipos de personaje que utilizan una varieda
 
 **Brujo** (INT, CON, CAR)
 
-- <u>Talentos:</u> Conocimiento, Engaño, Persuasión, Averiguar intenciones
+- <u>Talentos:</u> Estudio, Engaño, Persuasión, Averiguar intenciones
 - <u>Rangos:</u> Nigromancia, Plantilla (Sombría, Abisal, Infernal, Oni), Magia divina, Conocimiento
 
 ## Eruditos
