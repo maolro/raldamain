@@ -39,3 +39,7 @@ Determinados niveles de talento permiten aumentos a las estadísticas si son par
 Los rangos forman la base del sistema Raldamain. Obtienes un rango de tu elección a nivel 1, y a cada nivel posterior recibes un rango adicional en una habilidad. No puedes tener una habilidad a rango superior a tu nivel entre 2 (es decir, a nivel 5 no puedes tener una habilidad a Rango III). Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos.
 
 Una compilación completa de los rangos puede encontrarse [aquí](http://raldamain.com/rules/Rangos).
+
+## Raza y cultura
+
+El siguiente paso para crear un personaje es determinar la raza y cultura a la que pertenece. La raza de un personaje le otorga determinados rasgos biológicos conocidos como características raciales capaces de modificar sus estadísticas, mientras que la cultura define su lugar en el mundo y forma típica de pensar. En algunas especies la raza y cultura están estrechamente relacionadas mientras en otros casos una raza puede tener múltiples culturas asociadas, como ocurre con la humanidad. Aunque ambos rasgos son un buen punto de partida para la creación de un personaje, el jugador es libre de decidir si se adecua a los tópicos de su cultura o rompe con ellos. 
