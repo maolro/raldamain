@@ -2,9 +2,11 @@
 title: Reglas de Combate
 ---
 
-Las reglas de combate del sistema Raldamain buscan agilizar el combate y favorecer la estrategia sobre la suerte. El combate se encuentra dividido en unidades de tiempo conocidas como rondas en las cuales las criaturas podrán las adecuadas acciones en el orden dictado por la prioridad. 
+Las reglas de combate del sistema Raldamain buscan agilizar el combate y favorecer la estrategia sobre la suerte. El combate se encuentra dividido en unidades de tiempo conocidas como rondas en las cuales las criaturas podrán las adecuadas acciones en un espacio de tiempo llamado el turno. 
 
-Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acciones estándar y acciones de turno completo.
+Para determinar el orden de los turnos todos los personajes partícipes en el combate todos los personajes partícipes en el combate deberán hacer un tiro de 1d20 al cual le sumarán su DES llamado el tiro de prioridad. Este tiro determinará el orden en el cual se realizarán las acciones, empezando la ronda aquel que obtenga un tiro más alto y colocándose en orden descendiente.
+
+Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acciones estándar y acciones de turno completo. Un personaje de nivel 1 solo podrá realizar una acción estándar y una acción de movimiento en su turno o sustituir ambas por una acción de turno completo.
 
 # El turno
 
@@ -49,7 +51,7 @@ Las reacciones son todas aquellas acciones que realizas fuera de tu turno. En es
 
 ### Tiros defensivos
 
-Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará 1d20 con el bonificador adecuado. Si el 
+Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará 1d20 con el bonificador adecuado. Si el tiro defensivo es igual o superior al tiro de ataque este será bloqueado exitosamente, impidiendo que el defensor sea impactado.
 
 Toda criatura puede defenderse utilizando las reacciones Parada y Esquiva. Esquiva representa utilizar la agilidad para evitar un ataque y puede usarse para evitar ataques a distancia y de área, mientras que Parada representa bloquear un ataque cuerpo a cuerpo empleando cualquier objeto capaz de hacerlo. El bonificador de Esquiva equivale a la estadística de DES de la criatura lanzada defensivamente mientras que el de Parada equivale a la estadística de FUE.
 
