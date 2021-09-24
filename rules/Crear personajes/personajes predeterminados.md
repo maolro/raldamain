@@ -43,11 +43,7 @@ En esta categoría se encuentran los tipos de personaje que emplean su destreza 
 
 En esta categoría se encuentran los tipos de personaje que utilizan una variedad de hechizos y habilidades sobrenaturales para obtener poder, estudiando la magia o despertando su poder innato para llegar a la ascendencia.
 
-<u>Estadísticas:</u> Escoge la INT o CAR como valor más alto según el origen de tu poder mágico. Es bueno tener valors 
-
-<u>Talentos:</u> Escoge los talentos Sigilo y Atletismo como principales. Puede tener también niveles de talento en Engaño, Percepción, Juego de manos, Supervivencia, Persuasión o Averiguar intenciones a decisión del jugador.
-
-<u>Rangos:</u> A nivel 1 es fuertemente recomendado empezar con un rango en [Reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html) y otro en un [arma](https://raldamain.com/rules/Rangos/Armas/) que dependa de la destreza, como puede ser a distancia o filos perforantes. A nivel 2 y 3 el jugador deberá elegir 2 rangos diferentes los cuales detallarán más al personaje. Estas son algunas posibilidades:
+<u>Estadísticas:</u> Escoge la INT o CAR como valor más alto según el origen de tu poder mágico. Es bueno tener valores adecuados en DES, SAB y CON.
 
 **Mago clásico** (INT, SAB, CAR, DES)
 
