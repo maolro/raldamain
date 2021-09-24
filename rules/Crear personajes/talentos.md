@@ -2,7 +2,7 @@
 title: Talentos
 ---
 
-Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, los cuales oscilan entre 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. Al realizar un tiro relacionado con un talento en el cual tengas soltura, lo cual se conoce como tiro de habilidad, súmale el nivel de talento que tengas. 
+Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, los cuales oscilan entre 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes un nivel de talento adicional. Al realizar un tiro relacionado con un talento en el cual tengas soltura, lo cual se conoce como tiro de habilidad, súmale el nivel de talento que tengas + . 
 
 Los talentos te aumentarán también tus estadísticas a determinados niveles si estas tienen valores demasiado bajos. A nivel de talento 3 aumenta la estadística asociada por 1 si es inferior a 3 y a nivel de talento 5 auméntala de nuevo si es inferior a 4.
 
