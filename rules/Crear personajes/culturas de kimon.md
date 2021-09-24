@@ -1,6 +1,8 @@
 ---
-title: Cultura
+title: Culturas de Kimon
 ---
+
+El siguiente paso para crear un personaje es determinar la raza y cultura a la que pertenece. La raza de un personaje le otorga determinados rasgos biológicos conocidos como características raciales capaces de modificar sus estadísticas, mientras que la cultura define su lugar en el mundo y forma típica de pensar. En algunas especies la raza y cultura están estrechamente relacionadas mientras en otros casos una raza puede tener múltiples culturas asociadas, como ocurre con la humanidad. Aunque ambos rasgos son un buen punto de partida para la creación de un personaje, el jugador es libre de decidir si se adecua a los tópicos de su cultura o rompe con ellos. 
 
 Estas son las razas y culturas recomendadas para una campaña que tenga lugar en Kimon en la época de herejía.
 
