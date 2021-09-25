@@ -9,7 +9,7 @@ Estudiar la magia está bien, pero una de las mayores amenazas para un mago es i
 
 Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Rango chi a tu reserva.
 
-<u>Escudo:</u> Usando tu magia eres capaz de crear un escudo de fuerza, el cual te protege de ataques físicos y mágicos. Escudo es una reacción y te permite hacer un tiro defensivo de magia protectora para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva. 
+<u>Escudo:</u> Usando tu magia eres capaz de crear un escudo de fuerza, el cual te protege de ataques físicos y mágicos. Escudo es una reacción y te permite hacer un tiro defensivo de magia protectora para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva. El radio en el que puedes proteger a tus aliados es de 10 pies y este aumentará por 5 pies por cada rango adicional.
 
 <u>Disrupción de chi:</u> Puedes alterar el funcionamiento de un objeto mágico o el chi de tu rival como acción estándar. Esto consume 1 chi de tu reserva y provoca que el objetivo reduzca su eficacia por 1 si es un objeto mágico o reciba un penalizador -2 en tiros de magia si es humanoide. Eliminar los efectos de Disrupción requiere emplear una acción de movimiento y gastar 1 chi de tu reserva. A rango III Disrupción afectará a toda la magia en un cono de 15 pies (radio 15 pies a Rango V).
 
