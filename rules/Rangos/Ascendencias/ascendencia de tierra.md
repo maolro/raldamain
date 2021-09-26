@@ -22,7 +22,7 @@ Incrementa tu CON por 1.
 
 <u>Puños de tierra:</u> Como acción bonus puedes sufrir 2 daño no letal para infundir tus ataques naturales con tierra durante un turno. Al emplear esta habilidad tus ataques incrementarán su daño base por 2 y recibirás las habilidades Puño aturdidor y Patada feroz en todos tus ataques hechos durante la ronda (si ya posees estas habilidades recibirás ventaja en todas las maniobras de combate realizadas). Si tienes rangos en Artes marciales aumentarás el nivel de las heridas permanentes infligidas por un paso. No sufres daño no-letal la primera vez que utilices esta habilidad si estás en tu región vinculada.
 
-<u>Paso terrestre:</u> Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies.
+<u>Paso terrestre:</u> Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies. Estas velocidades aumentan por 5 pies por cada rango adicional de ascendencia.
 
 <u>Georradar</u>: Recibes vista a ciegas en un radio de 30 pies, pero solo puedes detectar criaturas que estén en contacto con la tierra. Recibes también ventaja en tiros de averiguar intenciones contra criaturas que estén tocando la tierra. Puedes gastar una acción estándar para aumentar el radio de tu georradar por 15 pies.
 

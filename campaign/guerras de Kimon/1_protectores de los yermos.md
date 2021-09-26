@@ -15,8 +15,6 @@ Los jugadores son reclutados para proteger una caravana de chi.
 
 ### La emboscada Chothgar
 
-### Recuperar el chi perdido
-
 ### El pueblo de la frontera
 
 ### Conocer a los aldeanos
@@ -37,10 +35,10 @@ Los jugadores son reclutados para proteger una caravana de chi.
 
 **Chothgar elegido** (nivel 3)
 
-**Chamán chothgar** (nivel 4)
-
-**Jefe de guerra** (nivel 5)
+**Dolgadai** (nivel 5)
 
 **Guerrero ancestral** (nivel 2)
+
+**Abominación no-muerta** (nivel 4)
 
 **Tokremur el caído** (nivel 6) 
