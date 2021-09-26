@@ -7,7 +7,7 @@ Te has entrenado para ser experto en todo lo relacionado con un terreno determin
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de percepción, supervivencia y averiguar intenciones.
+Añade tu rango a todos tus tiros de percepción, supervivencia,  y averiguar intenciones.
 
 <u>Enemigo predilecto:</u> Eres capaz de aprender las fortalezas y debilidades de tu objetivo a través de cuidadosa observación. Si empleas una acción de turno completo observando a una criatura de tu elección obtienes ventaja en todos tus tiros relacionados con ella e incrementas tu daño base por 1d6. Enemigo predilecto solo funcionará contra una única criatura y para escoger a otra deberás emplear otra acción de turno completo.
 
