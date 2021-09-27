@@ -46,7 +46,7 @@ Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmen
 
 ### Grado 3 
 
-Finalmente la maldición se ha apoderado por completo de tu cuerpo destrozando tu mente hasta el punto de teñir tu vista de un rojo carmesí. En este punto de la maldición detestas todo lo que no te de placer y ahora nada puede darte mas placer que la guerra; ya sea una guerra surgida por accidente u orquestada por fuerzas superiores, una entre dos imperios o una matanza sobrenatural, una por la unificación de un país o una masacre sin sentido ninguna de esas razones importa solo queriendo sumirte a ti mismo y al resto en esa eterna furia que llena tu mente. El tercer grado de la maldición te otorga las siguientes habilidades:
+Finalmente la maldición se ha apoderado por completo de tu cuerpo retorciendo tu mente hasta el punto de teñir tu vista de un rojo carmesí. En este punto de la maldición detestas todo lo que no te de placer y ahora nada puede darte mas placer que la guerra; ya sea una guerra surgida por accidente u orquestada por fuerzas superiores, una entre dos imperios o una matanza sobrenatural, una por la unificación de un país o una masacre sin sentido ninguna de esas razones importa solo queriendo sumirte a ti mismo y al resto en esa eterna furia que llena tu mente. El tercer grado de la maldición te otorga las siguientes habilidades:
 
 - +1 Fuerza 
 
