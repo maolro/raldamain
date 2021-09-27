@@ -38,10 +38,10 @@ Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmen
 
 - +1 Destreza 
 
-- Arma ligada: puedes saber donde esta tu arma en todo momento y gastando 1 acción de turno completo para traerla hacia ti. A nivel 3 de maldición esto te cuesta una acción estándar. También recibes la habilidad foco elemental usando Grado de Maldición en vez de 
+- Arma ligada: puedes saber donde esta tu arma en todo momento y gastando 1 acción de turno completo para traerla hacia ti. A nivel 3 de maldición esto te cuesta una acción estándar. También recibes la habilidad foco elemental usando Grado de Maldición en vez de ascendencia
 
 
-- Ascendencia Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
+- Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
 
 
 ### Grado 3 
