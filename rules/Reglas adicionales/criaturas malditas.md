@@ -26,25 +26,35 @@ Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una
 
 ### Grado 1
 
+Ya sea por haber tenido contacto con un arma asura o por el efecto que han tenido en ti las innumerables batallas en las que has estado, una parte de ti ha comenzado a cambiar haciéndote oír susurros desde los mas profundo de tu mente que te incitan a continuar luchando ignorando el coste incluso si eso conlleva el sacrificio de los que hay a tu alrededor, todo para poder saciar tu nueva sed de sangre. En este punto aún puedes intentar resistirte a tu maldición o abrazarla completamente pero cuanto mas tiempo vaciles o cuanto mas intentes resistirte mas fuerte se volverá esa voz intentando enloquecerte a cada paso. El primer grado de la maldición te otorga las siguientes habilidades:
+
 - +1 Fuerza 
-- Recibe la habilidad Ira. Si ya tienes ira, recibirás ventaja en uno de tus tiros de cada ronda en tiros de ataque y aumenta su daño base por 1d6
-- Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. A grado de maldición 2 provocará el efecto miedo y a grado de maldición 3 causará pánico. 
+- Estasis de batalla: recibe la habilidad Ira. Si ya tienes ira, recibirás ventaja en uno de tus tiros de cada ronda en tiros de ataque y aumenta su daño base por 1d6
+- Visage horrible: todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. A grado de maldición 2 provocará el efecto miedo y a grado de maldición 3 causará pánico. 
 
 ### Grado 2 
 
-+1 Destreza 
+Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmento de tu humanidad. Llegado este punto pocas cosas te importan ya, quedando destinado a vagar para llenar ese vacío en tu interior y sintiéndote inclinado incluso a seguir un comportamiento autodestructivo con la única razón de sentirte satisfecho por un instante antes de planear cual será tu siguiente victima . El segundo grado de la maldición te otorga las siguientes habilidades:
 
-Arma ligada: puedes saber donde esta tu arma en todo momento y gastando 1 acción de turno completo para traerla hacia ti. A nivel 3 de maldición esto te cuesta una acción estandar. También recibes la habilidad foco elemental usando Grado de Maldición en vez de 
+- +1 Destreza 
 
-Ascendencia Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
+- Arma ligada: puedes saber donde esta tu arma en todo momento y gastando 1 acción de turno completo para traerla hacia ti. A nivel 3 de maldición esto te cuesta una acción estándar. También recibes la habilidad foco elemental usando Grado de Maldición en vez de 
+
+
+- Ascendencia Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
+
 
 ### Grado 3 
 
-+1 Fuerza 
+Finalmente la maldición se ha apoderado por completo de tu cuerpo destrozando tu mente hasta el punto de teñir tu vista de un rojo carmesí. En este punto de la maldición detestas todo lo que no te de placer y ahora nada puede darte mas placer que la guerra; ya sea una guerra surgida por accidente u orquestada por fuerzas superiores, una entre dos imperios o una matanza sobrenatural, una por la unificación de un país o una masacre sin sentido ninguna de esas razones importa solo queriendo sumirte a ti mismo y al resto en esa eterna furia que llena tu mente. El tercer grado de la maldición te otorga las siguientes habilidades:
 
-Furia Carmesí: al entrar en extasis de batalla eres de capaz de curarte X/2 donde X es el daño que le haces a los PV de tu oponente, también puedes elegir reducir el nivel de una herida permanente por 1 en vez de curarte. Si estando en furia carmesi no eres capaz de infligir Y (está te la dejo a ti Matías) daño caerás inconsciente al finalizar el turno. Eres capaz de salir de la Furia Carmesí como acción de turno completo, aunque estarás fatigado durante 1/2 turnos (esto depende de si es sistema Raldamain o d20) 
+- +1 Fuerza 
 
-Arma maldita: En caso de que tu cuerpo mortal sea eliminado, tu alma pasara a la espada permitiéndote transmitirle la maldición Ashura a otra persona.  También tu arma hará 1daño base adicional además de permitirte gastar 4 ventajas para temporalmente reducir una estadística física de un enemigo por 1. (Efecto en el juego: Tu espada es una filacteria)
+- Furia Carmesí: al entrar en extasis de batalla eres de capaz de curarte X/2 donde X es el daño que le haces a los PV de tu oponente, también puedes elegir reducir el nivel de una herida permanente por 1 en vez de curarte. Si estando en furia carmesi no eres capaz de infligir Y (está te la dejo a ti Matías) daño caerás inconsciente al finalizar el turno. Eres capaz de salir de la Furia Carmesí como acción de turno completo, aunque estarás fatigado durante 1/2 turnos (esto depende de si es sistema Raldamain o d20) 
+
+
+- Arma maldita: En caso de que tu cuerpo mortal sea eliminado, tu alma pasara a la espada permitiéndote transmitirle la maldición Ashura a otra persona.  También tu arma hará 1daño base adicional además de permitirte gastar 4 ventajas para temporalmente reducir una estadística física de un enemigo por 1. (Efecto en el juego: Tu espada es una filacteria)
+
 
 ## Profundo
 
