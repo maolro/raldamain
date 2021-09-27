@@ -1,6 +1,6 @@
 ## Lugar
 
-Territorio shinri
+Yaibiro y bosques de Kaigeshiri
 
 ## Inicio
 
@@ -21,8 +21,6 @@ Celebración de los jugadores tras su victoria contra los bandidos
 ### Fuga hacia el bosque
 
 ### Furia de los espíritus
-
-### Encuentro con Yaishir
 
 ### El pueblo perdido
 
@@ -48,4 +46,5 @@ Celebración de los jugadores tras su victoria contra los bandidos
 
 **Kumo anciano**  (nivel 6)
 
-**Kageshiriyo** (nivel 8)
+**Kageishiri** (nivel 8)
+

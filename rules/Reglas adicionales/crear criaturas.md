@@ -2,21 +2,27 @@
 title: Creación de criaturas
 ---
 
+El sistema de rangos es efectivo para representar criaturas humanoides, pero en el caso que un jugador o el máster busquen crear una criatura con fisiología diferente hará falta una nueva normativa. Estas reglas especifican el proceso exacto para añadir atributos físicos sobre un cuerpo para dar lugar a todo tipo de animales y criaturas fántasticas.
+
 ## Formas base
 
-<u>Bípedo:</u> La criatura está dotada de dos piernas y dos brazos. Su movimiento base es 30 pies y sus estadísticas físicas son FUE 2, DES 2, CON 2.
+El primer paso para formar una criatura es decidir su forma base entre las siguientes posibilidades. Esto determinará sus estadísticas físicas básicas además de su movimiento base.
 
-<u>Cuadrúpedo:</u> La criatura está dotada de cuatro patas. Su movimiento base es 40 pies y sus estadísticas físicas son FUE 3, DES 1, CON 2.
+<u>Bípedo:</u> La criatura está dotada de dos piernas y dos brazos. Su movimiento base es 15 pies y sus estadísticas físicas son FUE 2, DES 2, CON 2.
 
-<u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de excavar igual a 20 pies y su tamaño inicial es Pequeño, teniendo -1 PV base.
+<u>Cuadrúpedo:</u> La criatura está dotada de cuatro patas. Su movimiento base es 20 pies y sus estadísticas físicas son FUE 3, DES 1, CON 2.
 
-<u>Ave</u>: La criatura tiene alas y garras. Puede volar a una velocidad de 30 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño, teniendo -1 PV base.
+<u>Sierpe:</u> La criatura no tiene piernas ni brazos, pero posee una cola y aumenta su alcance por 10 pies. Su movimiento base es 10 pies y sus estadísticas físicas son FUE 1, DES 3, CON 2. Además, tiene un movimiento de excavar igual a 10 pies y su tamaño inicial es Pequeño, teniendo -1 PV base.
 
-<u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respirar bajo el agua y puede nadar a una velocidad de 30 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
+<u>Ave</u>: La criatura tiene alas y garras. Puede volar a una velocidad de 15 pies y sus estadísticas físicas son FUE 1, DES 4, CON 1. Su tamaño inicial es Pequeño, teniendo -1 PV base.
 
-<u>Ciempiés:</u> La criatura se asemeja a una sierpe formada por numerosos segmentos con pequeñas piernas. Su movimiento base es de 30 pies y puede escalar a una velocidad de 20 pies. Sus estadísticas físicas son FUE 1, DES 3, CON 2 y empezará con tamaño Pequeño, teniendo -1 PV base.
+<u>Acuático:</u> La criatura está dotada para sobrevivir en el mar. Es capaz de respirar bajo el agua y puede nadar a una velocidad de 15 pies. Sus estadísticas físicas son FUE 2, DES 2, CON 2.
+
+<u>Ciempiés:</u> La criatura se asemeja a una sierpe formada por numerosos segmentos con pequeñas piernas. Su movimiento base es de 15 pies y puede escalar a una velocidad de 10 pies. Sus estadísticas físicas son FUE 1, DES 3, CON 2 y empezará con tamaño Pequeño, teniendo -1 PV base.
 
 <u>Aberrante:</u> La criatura tiene una forma amorfa que desafía toda ley natural. Recibe 3 PT adicionales y puede distribuir 6 puntos de estadística entre su FUE, DES y CON como desee (no puede exceder 4).
+
+Las estadísticas mentales de una criatura dependerán de su niv
 
 ## Puntos de Transformación
 
@@ -32,7 +38,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Tentáculo:</u> La criatura posee un flexible tentáculo en una parte de su cuerpo. Realizar un ataque con tu tentáculo es una acción de movimiento, con alcance 10 pies y que inflige 1 + FUE daño contundente al impactar. También puedes emplear el tentáculo para hacer maniobras de combate como Tropezar, Agarre o Desarme. Puedes emplear 1 PT adicional en esta transformación para recibir otro tentáculo de igual tamaño o para transformar el tentáculo en un manojo de tentáculos más pequeños. Un ataque realizado con un manojo de tentáculos te cuesta una acción estándar, pero hace 1d6 + FUE daño base y al impactar el objetivo está Agarrado automáticamente. 
 
-<u>Movimiento adicional:</u> La criatura aumenta sus capacidades atléticas, aumentado su movimiento base por 10 pies o recibiendo una velocidad de 20 pies en Nadar, Escalar o Excavar. 
+<u>Movimiento adicional:</u> La criatura aumenta sus capacidades atléticas, aumentado su movimiento base por 5 pies o recibiendo una velocidad de 10 pies en Nadar, Escalar o Excavar. 
 
 <u>Golpe:</u> La criatura puede hacer poderosos golpes con su cuerpo. Un golpe inflige 1d4 + FUE daño contundente al impactar y puede provocar heridas permanentes a criaturas con armadura aunque el daño sea reducido a 0.
 
