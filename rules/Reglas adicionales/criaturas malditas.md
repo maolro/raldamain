@@ -50,7 +50,7 @@ Finalmente la maldición se ha apoderado por completo de tu cuerpo retorciendo t
 
 - +1 Fuerza 
 
-- Furia Carmesí: al entrar en extasis de batalla eres de capaz de curarte X/2 donde X es el daño que le haces a los PV de tu oponente, también puedes elegir reducir el nivel de una herida permanente por 1 en vez de curarte. Si estando en furia carmesí no eres capaz de infligir 3 daño caerás inconsciente al finalizar el turno. Eres capaz de salir de la Furia Carmesí como acción de turno completo, aunque estarás fatigado durante 1/2 turnos (esto depende de si es sistema Raldamain o d20) 
+- Furia Carmesí: al entrar en extasis de batalla eres de capaz de curarte X/2 donde X es el daño que le haces a los PV de tu oponente, también puedes elegir reducir el nivel de una herida permanente por 1 en vez de curarte. Si estando en furia carmesí no eres capaz de infligir 5 daño caerás inconsciente al finalizar el turno. Eres capaz de salir de la Furia Carmesí como acción de turno completo, aunque estarás fatigado durante 1/2 turnos (esto depende de si es sistema Raldamain o d20) 
 
 
 - Arma maldita: En caso de que tu cuerpo mortal sea eliminado, tu alma pasara a la espada permitiéndote transmitirle la maldición Ashura a otra persona.  También tu arma hará 1daño base adicional además de permitirte reducir una estadística física de un enemigo por 1en un golpe crítico. Gracias a esta habilidad puedes emitir una leve llamada a un individuo para que sienta el impulso de coger el arma, si este no se deshace de ella en tres días podrás intentar tomar su cuerpo sustituyendo su consciencia por completo si tienes éxito.
