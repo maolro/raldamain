@@ -9,7 +9,7 @@ Añade tu rango a todos tus tiros relacionados con magia sombría.
 
 <u>Tajo de las tinieblas:</u> Como acción estándar puedes cortar a través de la frontera entre el plano material y el sombrío, formando un corte de pura oscuridad mortal para cualquier ser vivo. Este ataque hace 1d6 + CAR daño de fuerza y tiene un alcance máximo de 30 pies. Todo el daño a los PV hecho con un tajo de las tinieblas reducirá también el máximo de PV de dicho personaje, impidiendo que este se pueda sanar (eliminar esta reducción a los PV requiere sanación con magia divina o atención médica avanzada). Si tu objetivo se encuentra en un lugar a oscuras será incapaz de defenderse de tu ataque.
 
-<u>Reserva de energía:</u> Puedes elegir sufrir 1 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes atacar a todas las criaturas en un radio de 10 pies centrado en ti, hacer un ataque elemental adicional o bajar la luminosidad de un área de 20 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
+<u>Reserva de energía:</u> Puedes elegir sufrir 1 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes atacar a todas las criaturas en un radio de 10 ies centrado en ti, hacer un ataque elemental adicional o bajar la luminosidad de un área de 20 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
 
 <u>Parada sombría:</u> Eres capaz de emplear las sombras para protegerte de ataques, lo cual se conoce como una parada sombría. Una parada sombría sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo. Además, si eres herido por un ataque puedes generar como reacción una nube de oscuridad de radio 10 pies.
 
