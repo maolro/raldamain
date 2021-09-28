@@ -81,7 +81,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 **Toque necrótico** (acción estándar): +5, 1d6 + 4 necrótico. El daño a los PV hecho por este ataque no puede sanarse.
 
-**Reserva de energía** (acción bonus, 1/turno): Sufre 1 daño no-letal para hacer un ataque adicional de tajo o lanzamiento, impactar a todas las criaturas a 20 pies o reducir el nivel de luminosidad por un paso en un área de 20 pies.
+**Reserva de energía** (acción bonus, 1/turno): Sufre 1 daño no-letal para hacer un ataque adicional de lanzamiento, impactar a todas las criaturas a 20 pies o reducir el nivel de luminosidad por un paso en un área de 20 pies.
 
 ****
 
@@ -129,7 +129,85 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ## Caballero espectral (nivel 6)
 
-## Ánima elemental (nivel 6)
+**PV:** 10			**VT:** 14	 		**DEF:** 11
+
+**FUE:** - 	**DES:** 1	**CON:** -	**INT:** 1	**SAB:** 4	**CAR:** 6	
+
+------
+
+**Talentos:** Percepción +7, Intimidar +9, Averiguar intenciones +8
+
+**Rangos:** Telekinesia III, Presencia I, Armaduras II
+
+**Resiste:** Fuego 4 
+
+**Movimiento:** vuelo 20 pies
+
+**Prioridad:** +3 (1 estándar + 2 movimiento)
+
+****
+
+**Armadura poseída:** El caballero espectral emplea la habilidad Almacenar objetos para poseer una armadura, recibiendo así sus beneificios aunque se trate de una criatura incorpórea a costa de ser incapaz de emplear dicha habilidad en combate.
+
+**Inspirar temor:** Toda criatura con 5 o menos PV que se enfrente a esta recibirá el efecto de estado Espantado hasta que esta criatura sufra una herida permanente. 
+
+------
+
+**Espada** (acción de movimiento): +9, 1d6 + 6 cortante. 
+
+**Empuje telequinético** (acción de movimiento): +9 contra heroísmo, el objetivo es empujado 1d6 x 5 pies en cualquier dirección. Puede emplear una acción de movimiento adicional para que el objetivo sea lanzado 1d6 x 5 pies por el aire.
+
+**Agarre de fuerza** (acción estándar): +9 contra heroísmo, el objetivo es agarrado y se vuelve incapaz de defenderse de ataques de empuje telequinético. No puede agarrar a más de 2 criaturas a la vez.
+
+**Muro de fuerza** (acción estándar): Crea un muro de 30 x 10 pies de fuerza que proporciona cubierta completa. Cada sección de 10 pies cuadrados del muro tiene 7 PV y es inmune a todo el daño no-mágico.
+
+**Voz del comandante** (acción estándar): Todos los aliados a 60 pies reciben ventaja en todos sus tiros. Este efecto durará hasta que esta criatura pierda PV.
+
+**Reserva de energía** (acción bonus, 1/turno): Puede elegir sufrir 1 daño no-letal para realizar un ataque adicional con su espada o atacar con ella a todos los enemigos a 5 pies.
+
+****
+
+**Escudo telequinétic:** +9, puede defenderse de ataques cuerpo a cuerpo.
+
+## Ánima de fuego (nivel 6)
+
+**PV:** 9			**VT:** 13	 		**DEF:** 0
+
+**FUE:** - 	**DES:** 3	**CON:** -	**INT:** 2	**SAB:** 3	**CAR:** 5	
+
+------
+
+**Talentos:** Percepción +7, Averiguar intenciones +4, Estudio +4, Sigilo +5
+
+**Rangos:** Magia elemental de fuego II, Reflejos I, 
+
+**Mejoras:** Aura elemental, Ataques infundidos, Absorción elemental, Explosión
+
+**Inmune:** Fuego
+
+**Movimiento:** vuelo 20 pies
+
+**Prioridad:** +3 (1 estándar + 2 movimiento)
+
+****
+
+**Aura elemental:** Todas las criaturas sin resistencias al fuego que empiecen su turno a 30 pies de esta sufren 1 daño de fuego y aumentan el nivel de todas las quemaduras por un paso. Puede sufrir 1 daño no-letal para provocar una quemadura leve a todas las criaturas en el área con armadura metálica y recibir resistencia 3 al frío durante una ronda.
+
+**Explosión:** Cuando esta criatura muera infligirá 1d6 + 5 daño de fuego a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
+
+**Absorción elemental:** Cada vez que la criatura sufra daño de fuego se sanará vitalidad igual a la mitad del daño sufrido. También se recuperará 1 vitalidad al turno cada ronda que pase en un lugar en llamas o afectado por calor extremo.
+
+------
+
+**Ataque elemental** (acción de movimiento) +7, 1d6 + 5 daño de fuego. Si provoca reduce los PV de su objetivo este sufrirá una quemadura leve. Aumenta el nivel de todas las quemaduras provocadas si el objetivo lleva armadura metálica y recibe ventaja en un ataque si el objetivo sufre una quemadura.
+
+**Muro de fuego** (acción estándar): Crea un muro de 30 x 10 pies de fuego el cual es capaz de proporcionar cubierta a todas las criaturas detrás de él. Toda criatura que intente pasar por el muro deberá tener éxito en un tiro de destreza o sufrirá 1 daño de fuego y recibe una quemadura media (quemdadura leve si tiene éxito).
+
+**Reserva de energía** (acción bonus, 1/turno): Puede elegir sufrir 1 daño no letal para realizar un ataque elemental adicional o aumentar el radio de un ataque elemental por 10 pies o atacar a todas las criaturas en un cono de 15 pies.
+
+****
+
+**Parada elemental**: +7. Puede protegerse contra ataques cuerpo a cuerpo. 
 
 ## Ibak, sombra abisal (nivel 8)
 
@@ -225,7 +303,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 **Milagro de restauración** (acción estándar, 3/día): Elimina un efecto de estado, veneno, enfermedad o maldición que afecte a una criatura de su elección.
 
-**Voz del comandante** (acción estándar): Todos los aliados a 60 pies reciben ventaja en todos sus tiros. Este efecto durará hasta que el guardián celestial pierda PV.
+**Voz del comandante** (acción estándar): Todos los aliados a 60 pies reciben ventaja en todos sus tiros. Este efecto durará hasta que esta criatura pierda PV.
 
 **Barrera luminosa** (acción estándar): Forma una barrera luminosa de 45 x 15 pies de tamaño. La barrera protegerá a todas las criaturas detrás de ella de ataques mágicos y proyectiles, y toda criatura que intente pasar por ella sufrirá 2 daño radiante y quedará cegada durante un turno. La barrera permanecerá hasta que pierda la concentración.
 

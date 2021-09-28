@@ -1,5 +1,5 @@
 ---
-title: Telequinesia
+  title: Telequinesia
 category: Ocultismo
 ---
 
@@ -13,11 +13,11 @@ Añade tu rango a todos tus tiros relacionados con telekinesia.
 
 <u>Escudo telequinético:</u> Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción y te permite hacer un tiro defensivo de telekinesia para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva o te ocasionará 1 daño no-letal (esto no tiene ningún coste si está en posición defensiva).
 
-<u>Reserva de chi:</u>  Puedes elegir sufrir 2 daño no-letal o gastar 1 chi de tu reserva para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
+<u>Reserva de chi:</u>  Puedes elegir sufrir 1 daño no-letal o gastar 1 chi de tu reserva para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
 
 ## Rango II
 
-<u>Muro de fuerza:</u> Como acción estándar, crea un muro de fuerza con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. Este muro se trata de una barrera que otorga cubierta completa a todas las criaturas que se encuentren detrás de él. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Cada sección de 10 pies cuadrados del muro tiene PV iguales a 4 + tu rango de elementalismo y es inmune a todo el daño no-mágico. Muro de fuerza puede crearse como reacción una vez por ronda si te encuentras en posición defensiva.
+<u>Muro de fuerza:</u> Como acción estándar, crea un muro de fuerza con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. Este muro se trata de una barrera que otorga cubierta completa a todas las criaturas que se encuentren detrás de él. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Cada sección de 10 pies cuadrados del muro tiene PV iguales a 4 + tu rango de telekiney es inmune a todo el daño no-mágico. Muro de fuerza puede crearse como reacción una vez por ronda si te encuentras en posición defensiva.
 
 <u>Empuje telequinético:</u> En lugar de lanzar un objeto puedes emplear tu acción estándar para empujar a un objetivo usando la fuerza de tu mente. Para esta habilidad tiras telekinesia contra el Heroísmo de tu objetivo, empujándolo 1d6 x 5 pies si tienes éxito. Si el objetivo choca contra un objeto sólido sufre daño como si fuese una caída y quedará tropezado. Esta habilidad puede emplearse también para lanzar a un enemigo por los aires si empleas una acción de movimiento adicional.
 
@@ -25,7 +25,7 @@ Añade tu rango a todos tus tiros relacionados con telekinesia.
 
 Aumenta tu probabilidad de crítico a 19-20
 
-<u>Almacenar objetos:</u> Cuando atraigas a tu posición un objeto usando tu telekinesia puedes mantenerlo almacenado en lugar de atacar con él, llegando a almacenar un máximo de objetos iguales a tu Rango + 1. Obtienes un bonificador a tus tiros defensivos igual a la cantidad de objetos que agarres y toda criatura que pase por un espacio que se encuentre a 10 pies de ti deberá tirar esquiva o sufrirá daño físico igual al número de objeto atrapados en tu aura (este daño será automático si acaba su turno adyacente a ti). Este daño ignorará la armadura natural y si tu objetivo lleva armadura metálica esta reducirá la defensa que otorga por 1. Puedes gastar un objeto almacenado para fortalecer un ataque de Lanzamiento, usándolo para que este haga +2 daño base y aumente su área de efecto por 5 pies.
+<u>Almacenar objetos:</u> Cuando atraigas a tu posición un objeto usando tu telekinesia puedes mantenerlo almacenado en lugar de atacar con él, llegando a almacenar un máximo de objetos iguales a tu Rango + 1. Obtienes un bonificador a tus tiros defensivos igual a la cantidad de objetos que agarres y toda criatura que pase por un espacio que se encuentre a 10 pies de ti deberá tirar esquiva o sufrirá daño físico igual al número de objeto atrapados en tu aura (este daño será automático si acaba su turno adyacente a ti). Este daño ignorará la armadura natural y si tu objetivo lleva armadura metálica esta reducirá la defensa que otorga por 1. Puedes gastar un objeto almacenado para fortalecer un ataque de Lanzamiento, usándolo para que este haga +2 daño base y aumente su área de efecto por 5 pies. Realizar un ataque de Lanzamiento ahora cuesta una acción de movimiento.
 
 <u>Agarre de fuerza:</u> Como acción estándar puedes intentar agarrar a un enemigo usando tu poder telequinético. Si tienes éxito tu objetivo permanecerá Agarrado hasta que escape o pierdas la concentración. Una criatura agarrada de esta manera no podrá defenderse de tus ataques de Lanzamiento y Empuje telequinético. El número máximo de criaturas que puedes agarrar con esta habilidad es igual a tu Rango - 1.
 
