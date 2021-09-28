@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros relacionados con nigromancia. Sientes la prese
 
 <u>Toque necrótico:</u> Como una acción estándar puedes drenar el chi de un objetivo localizado a 15 pies de ti. Este ataque inflige 1d6 + INT daño necrótico al impactar contra el cual tu objetivo se defenderá empleando su CON. Todo el daño a los PV hecho con un toque necrótico reducirá también el máximo de PV de dicho personaje, impidiendo que este se pueda sanar (eliminar esta reducción a los PV requiere sanación con magia divina o atención médica avanzada). Esta habilidad puede emplearse para infundir tus armas de energía necrótica como acción estándar, causando que esta inflija +2 daño necrótico al impactar (provocará el mismo efecto sobre los PV que toque necrótico). Este efecto permanecerá activo hasta que pierdas la concentración.
 
-<u>Bendición de la muerte:</u> Tus estudios sobre la muerte te han hecho más cercano a ella. Los no-muertos no son naturalmente hostiles hacia ti, considerándote como si fueses uno de ellos. Obtienes Resistencia a daño Necrótico y Venenos igual a tu rango, y puedes aguantar la respiración durante un turno adicional por cada rango de Nigromancia que tengas. Esta bendición se manifiesta en ti como un rasgo físico relacionado con la no-muerte, como puede ser piel pálida, ojeras pronunciadas o un toque frío.
+<u>Bendición de la muerte:</u> Tus estudios sobre la muerte te han hecho más cercano a ella. Los no-muertos no son naturalmente hostiles hacia ti, considerándote como si fueses uno de ellos. Obtienes Resistencia a daño Necrótico y Venenos igual a tu rango + 1, y puedes aguantar la respiración durante un turno adicional por cada rango de Nigromancia que tengas. Esta bendición se manifiesta en ti como un rasgo físico relacionado con la no-muerte, como puede ser piel pálida, ojeras pronunciadas o un toque frío. Si una criatura no-muerta recibe esta habilidad recibirá resistencia a magia divina y exorcizar igual a tu rango + 1.
 
 ## Rango II
 
@@ -31,7 +31,7 @@ Incrementa tu probabilidad de crítico a 19-20.
 
 ## Rango IV
 
-<u>Tormenta de energía negativa:</u> Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + INT daño necrótico al impactar. Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear toque necrótico ahora te cuesta una acción de movimiento.
+<u>Tormenta de energía negativa:</u> Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + INT daño necrótico al impactar (2d6 + INT a rango V). Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear toque necrótico ahora te cuesta una acción de movimiento.
 
 <u>Crear no muerto superior:</u> Conoces los rituales para convertir cadáveres en no muertos más poderosos. Utilizando un ritual de duración igual a un descanso corto puedes transformar a un cadáver, un no-muerto menor o una persona voluntaria en un no-muerto superior. Si resucitas a una criatura que tenga rangos de habilidad puedes hacer que conserve un número de rangos igual a tu nivel - 2. No puedes tener bajo tu control más de 4 no-muertos superiores. Emplear animar cadáver ahora te cuesta una acción estándar.
 
