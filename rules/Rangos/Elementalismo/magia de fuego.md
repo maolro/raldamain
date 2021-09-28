@@ -17,7 +17,7 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de fuego.
 
 ## Rango II
 
-Ataques en secuencia: Puedes emplear una acción de movimiento para hacer un ataque elemental adicional. Recibes además ventaja en todos tus ataques hechos contra criaturas que sufran quemaduras.
+<u>Ataques en secuencia:</u> Puedes emplear una acción de movimiento para hacer un ataque elemental adicional. Recibes además ventaja en todos tus ataques hechos contra criaturas que sufran quemaduras.
 
 <u>Llamas abrasadoras:</u> Cada vez que impactes a una criatura con armadura metálica con un ataque elemental aumenta el nivel de todas las quemaduras provocadas por un paso. Además, si impactas la cabeza de un objetivo con una llamarada este quedará cegado durante una ronda (dos rondas si es una quemadura media y efecto permanente si es una quemadura severa).
 
