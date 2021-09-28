@@ -24,5 +24,5 @@ Las siguientes habilidades que posea la unidad base serán modificadas al conver
 
 - **Ataque furtivo:** El daño de ataque furtivo se aplicará en todos los tiros de daño hechos contra criaturas individuales. Si esta lucha contra otra tropa el daño solo se sumará si la pilla por sorpresa o la está flanqueando con una tropa aliada.
 - **Proteger aliado:** La tropa obtiene un bonificador a la defensa igual al rango de arma de la unidad base + 4. Este quedará reducido a la mitad si la tropa pierde toda su vitalidad.
-- **Sanador de combate/**
+- **Sanador de combate/Curandero/Magia de vida:** La tropa puede reducir su bonificador al ataque y daño por 2 antes de atacar a cambio de sanar una cantidad de Vitalidad y/o PV iguales al valor que sanaría su habilidad a sí misma u otra tropa de su elección.
 

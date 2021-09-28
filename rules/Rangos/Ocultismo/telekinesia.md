@@ -11,7 +11,7 @@ Añade tu rango a todos tus tiros relacionados con telekinesia.
 
 <u>Lanzamiento:</u> Eres capaz de mover y manipular pequeños objetos con tu mente. Con esta habilidad puedes mover a un objeto pequeño hasta 15 pies en cualquier dirección como acción de movimiento. El objeto que manipules debe estar a menos de 60 pies de ti. Como acción estándar puedes lanzar ese objeto hacia un enemigo, haciendo 1d6 + INT daño físico de tipo contundente, cortante o perforante. 
 
-<u>Escudo telequinético:</u> Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción y te permite hacer un tiro defensivo de telekinesia para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva o te ocasionará 2 daño no-letal.
+<u>Escudo telequinético:</u> Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción y te permite hacer un tiro defensivo de telekinesia para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva o te ocasionará 1 daño no-letal (esto no tiene ningún coste si está en posición defensiva).
 
 <u>Reserva de chi:</u>  Puedes elegir sufrir 2 daño no-letal o gastar 1 chi de tu reserva para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un segundo ataque de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
 
