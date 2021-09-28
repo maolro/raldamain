@@ -51,3 +51,43 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 **Escudo telekinético**: +6. Puede sufrir 1 daño no-letal para proteger a un aliado (no sufre daño no-letal si está en posición defensiva)
 
 **Parada sombría:** +8. Puede defenderse contra ataques cuerpo a cuerpo.
+
+## Fantasma (nivel 4)
+
+**PV:** 10			**VT:** 15	 		**DEF:** 0
+
+**FUE:** - 	**DES:** 3	**CON:** -	**INT:** 2	**SAB:** 2	**CAR:** 4 	
+
+------
+
+**Talentos:** Estudio (historia) +4, Percepción +5, Sigilo +6
+
+**Rangos:** Telekinesia I, 
+
+**Mejoras:** Mirada terrorífica
+
+**Movimiento:** vuelo 20 pies
+
+**Prioridad:** +4 (1 estándar + 2 movimiento)
+
+****
+
+**Mirada terrorífica:** Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella.
+
+**Hipersensibilidad a la luz:** Cuando esta criatura se encuentre en un lugar luminoso añadirá un dado de desventaja a todos sus tiros de ataque y los atacantes recibirán un dado de ventaja contra ella. En el caso que esta sea afectada por una luz muy brillante estará cegada hasta que pase una ronda fuera de dicho espacio iluminado. Además todo el daño radiante que sufra contará como golpe crítico.
+
+**Ocultarse en las sombras:** Puede esconderse como acción bonus si se encuentra en un lugar a oscuras. No hará ningún ruido al atacar ni moverse salvo que esta criatura escoja hacerlo.
+
+------
+
+**Lanzamiento telekinético** (acción estándar): +6, 1d6 + 5 contundente, perforante o cortante. El objeto afectado debe estar a menos de 60 pies.
+
+**Reserva de energía** (acción bonus, 1/turno): Sufre 1 daño no-letal para hacer un ataque adicional de tajo o lanzamiento, impactar a todas las criaturas a 20 pies o reducir el nivel de luminosidad por un paso en un área de 20 pies.
+
+**Posesión** (acción de turno completo): +5 contra SAB, posee a una criatura viva o muerta en caso de éxito. La criatura afectada por esta habilidad puede repetir el tiro al principio de su turno. Mientras posea puede continuar usando sus habilidades y será expulsada si se afecta con exorcizar.
+
+****
+
+**Escudo telekinético**: +6. Puede sufrir 1 daño no-letal para proteger a un aliado (no sufre daño no-letal si está en posición defensiva)
+
+**Parada sombría:** +8. Puede defenderse contra ataques cuerpo a cuerpo.
