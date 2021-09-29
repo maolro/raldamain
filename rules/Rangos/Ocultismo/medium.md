@@ -113,7 +113,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ------
 
-**Toque necrótico** (acción estándar): +5, 1d6 + 4 necrótico. El daño a los PV hecho por este ataque no puede sanarse.
+**Toque necrótico** (acción estándar): +5 contra , 1d6 + 4 necrótico. El daño a los PV hecho por este ataque no puede sanarse.
 
 **Tajo de las tinieblas** (acción estándar): +5, 1d6 + 4 fuerza. El daño a los PV hecho por este ataque no puede sanarse.
 
@@ -167,7 +167,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ****
 
-**Escudo telequinétic:** +9, puede defenderse de ataques cuerpo a cuerpo.
+**Escudo telequinético:** +9, puede defenderse de ataques cuerpo a cuerpo.
 
 ## Ánima de fuego (nivel 6)
 
@@ -343,7 +343,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ------
 
-**Toque necrótico** (acción de movimiento): +10, 1d6 + 6 necrótico. Crítico 19-20. El daño a los PV hecho por este ataque no puede sanarse y al herir se sana Vitalidad igual a la mitad de daño infligido. La criatura deberá tirar CON contra +10 o la criatura sufrirá los efectos de un veneno de CON.
+**Toque necrótico** (acción de movimiento): +10 contra CON, 1d6 + 6 necrótico. Crítico 19-20. El daño a los PV hecho por este ataque no puede sanarse y al herir se sana Vitalidad igual a la mitad de daño infligido. La criatura deberá tirar CON contra +10 o la criatura sufrirá los efectos de un veneno de CON.
 
 **Tajo de las tinieblas** (acción de movimiento): +9, 1d6 + 6 fuerza. Crítico 19-20. El daño a los PV hecho por este ataque no se puede sanar.
 
@@ -371,3 +371,34 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ## Alma maldita (nivel 10)
 
+**PV:** 12			**VT:** 18	 		**DEF:** 2
+
+**FUE:** - 	**DES:** 3	**CON:** -	**INT:** 3	**SAB:** 3	**CAR:** 3	
+
+------
+
+**Talentos:** Estudio +6, Percepción +7, Sigilo +5, Arcanismo +6
+
+**Rangos:** Mental IV, Reflejos I, Telekinesia IV 
+
+**Mejoras:** Mirada terrorífica 
+
+**Resiste:** Exorcizar +3, Magia divina +3
+
+**Movimiento:** vuelo 20 pies
+
+**Prioridad:** +5 (1 estándar + 2 movimiento)
+
+****
+
+
+
+------
+
+
+
+****
+
+**Parada sombría:** +10. Puede defenderse contra ataques cuerpo a cuerpo.
+
+**Esquiva**: +6, se mueve 5 pies.
