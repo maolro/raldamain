@@ -30,7 +30,7 @@ Añade tu rango a todos tus tiros relacionados con magia mental. Tu reserva aume
 
 ## Rango III  
 
-<u>Sobrecarga mental:</u> Tus ataques mentales sobrecargan la mente de tu objetivo, causando que realice acciones irracionales. Al herir a una criatura con Asalto psíquico puedes gastar 1 chi adicional para que reciba el efecto de estado Confundida. Si tu objetivo tiene resistencia contra efectos mentales puedes también gastar 1 chi generadas para reducir dicha resistencia por 1 una vez por ataque (reduce su resistencia por 2 a rango V). 
+<u>Sobrecarga mental:</u> Tus ataques mentales sobrecargan la mente de tu objetivo, causando que realice acciones irracionales. Al herir a una criatura con Asalto psíquico puedes gastar 1 chi adicional para que reciba el efecto de estado Confundida. Si tu objetivo tiene resistencia contra efectos mentales puedes también gastar 1 chi generadas para reducir dicha resistencia por 1 una vez por ataque (reduce su resistencia por 2 a rango V). Usar Asalto psíquico ahora cuesta una acción de movimiento.
 
 <u>Telepatía:</u> Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. Además, detectas la posición exacta de todas las criaturas en esa área que no tengan la habilidad Mente custodiada. Tus ataques mentales no requieren gesticulación y puedes usarlos siempre que tu mente esté consciente.  
 
