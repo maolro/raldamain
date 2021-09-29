@@ -113,7 +113,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ------
 
-**Toque necrótico** (acción estándar): +5 contra , 1d6 + 4 necrótico. El daño a los PV hecho por este ataque no puede sanarse.
+**Toque necrótico** (acción estándar): +5 contra CON, 1d6 + 4 necrótico. El daño a los PV hecho por este ataque no puede sanarse.
 
 **Tajo de las tinieblas** (acción estándar): +5, 1d6 + 4 fuerza. El daño a los PV hecho por este ataque no puede sanarse.
 
@@ -159,7 +159,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 **Agarre de fuerza** (acción estándar): +9 contra heroísmo, el objetivo es agarrado y se vuelve incapaz de defenderse de ataques de empuje telequinético. No puede agarrar a más de 2 criaturas a la vez.
 
-**Muro de fuerza** (acción estándar): Crea un muro de 30 x 10 pies de fuerza que proporciona cubierta completa. Cada sección de 10 pies cuadrados del muro tiene 7 PV y es inmune a todo el daño no-mágico.
+**Muro de fuerza** (acción estándar): Crea un muro de 45 x 15 pies de fuerza que proporciona cubierta completa. Cada sección de 10 pies cuadrados del muro tiene 7 PV y es inmune a todo el daño no-mágico.
 
 **Voz del comandante** (acción estándar): Todos los aliados a 60 pies reciben ventaja en todos sus tiros. Este efecto durará hasta que esta criatura pierda PV.
 
@@ -371,34 +371,60 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 ## Alma maldita (nivel 10)
 
-**PV:** 12			**VT:** 18	 		**DEF:** 2
+**PV:** 13			**VT:** 19	 		**DEF:** 0
 
-**FUE:** - 	**DES:** 3	**CON:** -	**INT:** 3	**SAB:** 3	**CAR:** 3	
+**FUE:** - 	**DES:** 5	**CON:** -	**INT:** 3	**SAB:** 3	**CAR:** 7	
 
 ------
 
 **Talentos:** Estudio +6, Percepción +7, Sigilo +5, Arcanismo +6
 
-**Rangos:** Mental IV, Reflejos I, Telekinesia IV 
+**Rangos:** Mental IV, Temporal II, Telekinesia III
 
-**Mejoras:** Mirada terrorífica 
+**Mejoras:** Mirada terrorífica
 
-**Resiste:** Exorcizar +3, Magia divina +3
+**Sentidos:** Telepatía 30 pies
+
+**Reserva:** 10 chi
 
 **Movimiento:** vuelo 20 pies
 
-**Prioridad:** +5 (1 estándar + 2 movimiento)
+**Prioridad:** +3 (1 estándar + 2 movimiento)
 
 ****
 
+**Premonición** (3/día): Recibe ventaja en uno de sus tiros o obtiene la habilidad Esquiva asombrosa durante una ronda. Puede gastar 1 chi para recuperar un uso de esta habilidad.
 
+**Mirada terrorífica:** Todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella.
+
+**Aura emocional:** Puede gastar 1 chi en Asalto psíquico, Geas o Influenciar emociones para afecte a todas las criaturas en un radio de 40 pies. No puede concentrarse en más de un hechizo simultáneamente con Aura emocional.
 
 ------
 
+**Asalto psíquico** (acción de movimiento): +11 contra SAB, 8 psíquico y el objetivo afectado pierde la conentración de inmediato. Puede gastar 1 chi para confundir a su objetivo o reducir su resistencia mental por 1.
 
+**Lanzamiento telequinético** (acción de movimiento): +10, 1d6 + 7 contundente, perforante o cortante. El objeto afectado debe estar a menos de 60 pies.
+
+**Empuje telequinético** (acción de movimiento): +10 contra heroísmo, el objetivo es empujado 1d6 x 5 pies en cualquier dirección. Puede emplear una acción de movimiento adicional para que el objetivo sea lanzado 1d6 x 5 pies por el aire.
+
+**Almacenar objetos** (acción de movimiento): Atrae un objeto a su posición empleando telequinesia, pudiendo almacenar un máximo de 4 objetos. Recibe un bonificador a tiros defensivos igual a la cantidad de objetos almancenados que tenga y toda criatura que pase por un espacio a 10 pies de esta deberá tirar esquiva contra +10 o sufrirá daño igual a la cantidad de objetos almacenados (este daño ignora armadura natural y reducirá armaduras metálicas por 1). Puede gastar un objeto almacenado para fortalecer un ataque de Lanzamiento, usándolo para que este haga +2 daño base y aumente su área de efecto por 5 pies 
+
+**Reserva de energía** (acción bonus, 1/turno): Puede elegir sufrir 1 daño no-letal para realizar un ataque adicional de lanzamiento o afectar con él a todas las criaturas a 10 pies.
+
+**Agarre de fuerza** (acción estándar): +10 contra heroísmo, el objetivo es agarrado y se vuelve incapaz de defenderse de ataques de empuje telequinético. No puede agarrar a más de 2 criaturas a la vez.
+
+**Muro de fuerza** (acción estándar): Crea un muro de 45 x 15 pies de fuerza que proporciona cubierta completa. Cada sección de 10 pies cuadrados del muro tiene 7 PV y es inmune a todo el daño no-mágico.
+
+**Influenciar emociones** (acción estándar, 1 chi): +11 contra SAB, el objetivo verá potenciada una de sus emociones. Esta criatura normalmente escoge miedo, incrementando así el nivel de miedo que tenga la criautra afectada por un paso.
+
+**Geas** (acción estándar, 2 chi): +11 contra SAB, el objetivo deberá recibir la siguiente orden que reciba sin reparos siempre y cuando no involucre herirse a sí mismo o a sus seres queridos.
+
+**Alentar** (acción estándar, 1 chi): Forma una burbuja de 20 pies que ralentiza a todas las criaturas en ella. Mientras esta burbuja permanezca activa todos los ataques a distancia y mágicos que pasen por ella recibirán desventaja.
+
+**Detectar pensamientos** (acción estándar, 1 chi): Detecta los pensamientos superficiales de todas las criaturas a 60 pies. Aquellas que busquen evitar este efecto deberán tener éxito en un tiro de SAB contra +10. Adicionalmente esta criatura puede gastar 1 chi para obtener ventaja en un tiro que involucre a una criatura contra la cual haya detectado pensamientos.
 
 ****
 
-**Parada sombría:** +10. Puede defenderse contra ataques cuerpo a cuerpo.
+**Escudo telequinético:** +10, puede defenderse de ataques cuerpo a cuerpo.
 
-**Esquiva**: +6, se mueve 5 pies.
+**Desplazamiento** (1 chi): Anula todo el daño y efectos provocados por un ataque.
