@@ -78,7 +78,7 @@ El inicio depende de las decisiones de los jugadores.
 
 **Guerrero ancestral** (nivel 13)
 
-**Horda de no-muertos** (nivel 10)
+**Horda de no-muertos** (nivel 10, base)
 
 **Corredor no-muerto** (nivel 6)
 

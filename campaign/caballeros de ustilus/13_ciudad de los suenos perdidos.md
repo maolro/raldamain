@@ -66,7 +66,7 @@ Informe que Tirion se ha fugado.
 
 **Zanshillah** (nivel 19)
 
-**Turba arshalaní** (nivel 10)
+**Turba arshalaní** (nivel 10, base 1)
 
 **Elementalista ligado de fuego** (nivel 17)
 
