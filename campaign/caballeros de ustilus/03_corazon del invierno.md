@@ -94,7 +94,7 @@ Cuando el Corazón del Invierno sea arrastrado a la tormenta de Olvangar los jug
 
 **Sanador de batalla** (nivel 4)
 
-- <u>Rangos:</u> Química II, Contundentes I, Armaduras I, Fortitud I
+- <u>Rangos:</u> Magia de vida II, Ascendencia de agua I, Fortitud I, Magia de agua I
 
 **Guerrero norteño** (nivel 3)
 

@@ -69,17 +69,67 @@ Incrementa tu DES por 1. Puedes superar el límite de 6 con tus estadísticas, l
 
 ## Ukron, remanente del odio (nivel 2)
 
-Base bípeda; **FUE** 0, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 4, **VT** 5, **DEF** 1
+**PV:** 4			**VT:** 5	 		**DEF:** 2
 
-- **Mejoras:** Explosión, garras, movilidad, ascendencia abisal, pequeño
-- **Rangos:** Ataques naturales I, Reflejos I
+**FUE:** 0 	**DES:** 4	**CON:** 1	**INT:** -1	**SAB:** 1	**CAR:** -1	
+
+------
+
+**Talentos:** Sigilo +5, Percepción +2, Atletismo +1
+
+**Rangos:** Ataques naturales I, Reflejos I
+
+**Mejoras:** Explosión, garras, movilidad, ascendencia abisal, pequeño
+
+**Movimiento:** 20 pies
+
+**Prioridad:** +4 (1 estándar + 2 movimiento)
+
+****
+
+**Explosión:** Cuando esta criatura muera infligirá 1d6 + 1 daño necrótico a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
+
+------
+
+**Garras** (acción de movimiento): +5, 1d6 cortante. Al infligir una herida permanente causa sangrado y puede desenganchar como acción bonus. 
+
+****
+
+**Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
 
 ## Samsotiq (nivel 6)
 
-Base bípeda; **FUE** 2, **DES** 5, **CON** 3, **INT** 0, **SAB** 1, **CAR** 0; **PV** 7, **VT** 11, **DEF** 3
+**PV:** 9			**VT:** 11	 		**DEF:** 4
 
-- **Mejoras:** Garras, ataques infundidos (ácido), ascendencia abisal (plaga abisal, rasgo monstruoso superior), ferocidad
-- **Rangos:** Ataques naturales II, Fortitud I, Reflejos I
+**FUE:** 2 	**DES:** 5	**CON:** 3	**INT:** 0	**SAB:** 1	**CAR:** 0	
+
+------
+
+**Talentos:** Sigilo +5, Percepción +2, Atletismo +1
+
+**Rangos:** Ataques naturales II, Fortitud I, Reflejos I
+
+**Mejoras:** Garras, ataques infundidos (ácido), ascendencia abisal (plaga abisal, rasgo monstruoso superior), ferocidad
+
+**Movimiento:** 20 pies
+
+**Prioridad:** +4 (1 estándar + 2 movimiento)
+
+****
+
+**Sangre ácida:** Esta criatura tiene sangre ácida, causando que cada vez que sea herida el atacante sufra 1 daño ácido y reducirá la efectividad de un arma por 1. 
+
+**Ferocidad:** Esta criatura seguirá luchando aunque se encuentre a 0 PV y no recibirá heridas permanentes hasta que pierda más de la mitad de sus PV
+
+------
+
+**Garras** (acción de movimiento): +7, 1d6 + 4 perforante y +2 ácido. +5 daño en ataques sorpresa o si flanquea. El objetivo deberá tirar CON contra +7 o es infectado con Plaga abisal.
+
+**Finta** (acción de movimiento): +7 contra Averiguar intenciones, el objetivo no puede defenderse de su siguiente ataque.
+
+****
+
+**Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
 
 ## Alzebun, los famélicos (nivel 8)
 

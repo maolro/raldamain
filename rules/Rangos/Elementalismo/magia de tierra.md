@@ -33,18 +33,15 @@ Incrementa tu probabilidad de crítico a 19-20 y el tamaño de tus ataques por 5
 
 ## Rango IV
 
-Derrumbamiento: Como acción de turno completo puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas las criaturas que se encuentren en ese espacio deberán tirar DES contra tu ataque elemental o sufrirán 3d6 daño contundente y quedarán enterrados por la tierra, estando tanto agarrados como cegados. Una criatura puede escaparse de la misma manera que se escaparía de un agarre, pero si pasa más de una ronda enterrada se empezará a ahogar.
+<u>Derrumbamiento</u>: Como acción de turno completo puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas las criaturas que se encuentren en ese espacio deberán tirar DES contra tu ataque elemental o sufrirán 3d6 daño contundente y quedarán enterrados por la tierra, estando tanto agarrados como cegados. Una criatura puede escaparse de la misma manera que se escaparía de un agarre, pero si pasa más de una ronda enterrada se empezará a ahogar.
 
-
-
- 
-
-Espinas de piedra: Puedes hacer daño perforante con ataques elementales. Un ataque elemental que inflija daño perforante incrementará su daño base por 2 y todas las heridas permanentes que provoque serán de un nivel superior, pero para formar un ataque así deberás gastar una acción de movimiento para moldear la tierra de esta manera (si empleas reserva de energía esto te costará una acción bonus). Esta habilidad también te permite llenar un espacio de espinas empleando Control terrestre, lo cual además de contar como terreno difícil infligirá 2 daño no-letal a las criaturas sin armadura pesada que pasen por él.
+<u>Espinas de piedra:</u> Puedes hacer daño perforante con ataques elementales. Un ataque elemental que inflija daño perforante incrementará su daño base por 2 y todas las heridas permanentes que provoque serán de un nivel superior, pero para formar un ataque así deberás gastar una acción de movimiento para moldear la tierra de esta manera (si empleas reserva de energía esto te costará una acción bonus). Esta habilidad también te permite llenar un espacio de espinas empleando Control terrestre, lo cual además de contar como terreno difícil infligirá 2 daño no-letal a las criaturas sin armadura pesada que pasen por él.
 
 ## Rango V
 
 Incrementa tu probabilidad de crítico a 18-20 y el tamaño de tus ataques por 5 pies.
 
-Terremoto: Como acción de turno completo puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas localizadas en dicho espacio deberán tirar fuerza o caerán inmediatamente al suelo mientras que los edificios se derrumbarán si están hechos de piedra u otro material frágil (edificios particularmente grandes o sólidos no pueden ser destruidos por este efecto, aunque sufrirán leves daños estructurales). El área afectada por un terremoto se convertirá en terreno difícil a causa de los derrumbamientos ocasionados.
+<u>Terremoto</u>: Como acción de turno completo puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas localizadas en dicho espacio deberán tirar fuerza o caerán inmediatamente al suelo mientras que los edificios se derrumbarán si están hechos de piedra u otro material frágil (edificios particularmente grandes o sólidos no pueden ser destruidos por este efecto, aunque sufrirán leves daños estructurales). El área afectada por un terremoto se convertirá en terreno difícil a causa de los derrumbamientos ocasionados.
 
-Brecha: Como acción de turno completo empleable una vez al día puedes formar una profunda brecha de 60 pies de longitud y 30 pies de profundidad. Todas las criaturas en el área de la brecha deben tirar Destreza o caen en ella, sufriendo el adecuado daño de [caída](https://raldamain.com/rules/Reglas principales/reglas de combate.html#caídas). Aquellas criaturas que se encuentren dentro de una brecha pueden ser afectadas por un Derrumbamiento. 
+<u>Brecha</u>: Como acción de turno completo empleable una vez al día puedes formar una profunda brecha de 60 pies de longitud y 30 pies de profundidad. Todas las criaturas en el área de la brecha deben tirar Destreza o caen en ella, sufriendo el adecuado daño de [caída](https://raldamain.com/rules/Reglas principales/reglas de combate.html#caídas). Aquellas criaturas que se encuentren dentro de una brecha pueden ser afectadas por un Derrumbamiento. 
+

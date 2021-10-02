@@ -14,8 +14,6 @@ Los jugadores llegan a las tierras del clan Yushino huyendo de los cazadores de 
 
 ### Patrulla fronteriza
 
-Riyoko
-
 ### Una triumfante bienvenida
 
 Kazyuori Yushino, Nira
@@ -46,7 +44,11 @@ Nira, Kajin, Yaishir
 
 ### Batalla de Ginrayi-sada
 
+Fuerza d 
+
 ### Acorralados sin salida
+
+
 
 ### Llegada de los monjes guerreros
 

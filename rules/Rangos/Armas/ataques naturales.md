@@ -60,7 +60,7 @@ Un ataque natural base es un puñetazo que 1 + FUE daño contundente. Un ataque 
 
 - **Mordisco:** Tu mandíbula está dotada de gran fuerza y con ella puedes morder a tus objetivos. Una vez al turno como acción bonus puedes morder a un objetivo agarrado o incapacitado. El mordisco hará 1d6 + FUE daño perforante modificado por tu fuerza. Las heridas permanentes que provocas con tu mordisco son de un nivel superior a las normales, pero no podrás emplear las habilidades Puño aturdidor, Patada feroz o Puño preciso.
 
-- **Tentáculo:** Posees un flexible tentáculo en una parte de su cuerpo con el cual puedes atacar. Un ataque de tentáculo tiene un alcance de 10 pies e infligirá daño contundente al impactar. En lugar de hacer daño puedes agarrar una parte del cuerpo de tu objetivo, causando que quede enredado y no pueda moverse más de 15 pies de ti. Algunos atributos que poseas serán sustituidos por otros propios de Cadenas de la siguiente manera:
+- **Tentáculo:** Posees un flexible tentáculo en una parte de su cuerpo con el cual puedes atacar. Un ataque de tentáculo tiene un alcance de 10 pies e infligirá daño contundente al impactar. En lugar de hacer daño puedes agarrar una parte del cuerpo de tu objetivo, causando 
 
   | Rango original   | Sustitución                                                  |
   | ---------------- | ------------------------------------------------------------ |
