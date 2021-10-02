@@ -50,15 +50,15 @@ Los jugadores viajan a Iskaria para aplastar un último reducto de la legión.
 
 **Osgo terror nocturno** (nivel 16)
 
-**Unidad de lanceros** (nivel 8)
+**Unidad de lanceros** (nivel 8, base 4)
 
-**Unidad de infantería pesada** (nivel 8)
+**Unidad de infantería pesada** (nivel 9, base 5)
 
-**Unidad de arcabuceros** (nivel 8)
+**Unidad de arcabuceros** (nivel 8, base 4)
 
-**Pandilla de trasgos** (nivel 7)
+**Pandilla de trasgos** (nivel 7, base 1)
 
-**Unidad de élite** (nivel 10)
+**Unidad de élite** (nivel 11, base 7)
 
 **Campeón oni** (nivel 13)
 

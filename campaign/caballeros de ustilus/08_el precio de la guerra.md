@@ -96,9 +96,9 @@ Después del final de la campaña Sek-Tebos preparará sus fuerzas en una últim
 
 ## Enemigos
 
-**Unidad de soldados de la Legión** (nivel 7)
+**Unidad de soldados de la Legión** (nivel 7, base 3)
 
-**Unidad de arcabuceros de la Legión** (nivel 7)
+**Unidad de arcabuceros de la Legión** (nivel 7,)
 
 **Élite de la Legión** (nivel 5)
 

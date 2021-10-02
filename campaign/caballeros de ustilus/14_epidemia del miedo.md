@@ -52,15 +52,15 @@ Primeros casos de una nueva epidemia.
 
 **Turba** (nivel 10)
 
-**Guardia urbana arshalaní** (nivel 13)
+**Guardia urbana arshalaní** (nivel 13, base 2)
 
-**Guardia de élite** (nivel 13)
+**Guardia de élite** (nivel 13, base 4)
 
 **Capitán Rutgar Bellamy** (nivel 16)
 
-**Compañía de mercenarios** (nivel 13)
+**Compañía de mercenarios** (nivel 13, base 6)
 
-**Guardias de Elyon** (nivel 13)
+**Guardias de Elyon** (nivel 13, base 2)
 
 **Iakub Lazarevic** (nivel 20)
 

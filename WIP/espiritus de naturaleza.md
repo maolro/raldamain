@@ -74,5 +74,5 @@ Esta es una lista de bestias y espíritus típicos de lugares de bosque, hacién
 
 ****
 
-**Parada**: +7 (+2 contra criaturas de su mismo tamaño). Puede protegerse de proyectiles y si obtiene defensa crítica puede desviar un proyectil a otr.
+**Parada**: +9 (+4 contra criaturas de su mismo tamaño). Puede protegerse de proyectiles y si obtiene defensa crítica puede desviar un proyectil a otro enemigo a 15 pies.
 
