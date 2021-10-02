@@ -32,9 +32,11 @@ Cuando los jugadores reinicien su exploración encuentran los restos de un campa
 
 ### Asalto de los nativos
 
-El campamento de los jugadores es atacado por varios nativos de la isla. 
+Cuando caiga la segunda noche y vuelva el extraño frío invernal los jugadores tendrán su primer encuentro con los enigmáticos nativos de la isla quienes asaltarán su campamento con el fin de acabar con todos los extraños en su isla. 
 
-1x  Tamborilero de guerra, 3x Guerrero nativo, 2x Arquero nativo, 1x Tigre dientes de sable
+El encuentro empezará con el retumbor de los tambores desde la selva, provocando un sentimiendo de temor entre los jugadores en el campamento (deberán tirar SAB contra +6 o están espantados). Después de una ronda de tambores un grupo de guerreros formado por 3 **Guerreros nativos**, 2 **Arqueros nativos** y un **Tigre dientes de sable** liderados por un **Tamborilero de guerra** descenderán desde la jungla para matar a todos los intrusos en la isla. Todas las tropas cuerpo a cuerpo harán un ataque relámpago hacia los jugadores con el fin de acabar con sus defensas mientras que los arqueros dispararán a los jugadores más lentos o débiles con sus flechas envenenadas. El tamborilero se quedará atrás, inspirando a sus guerreros y aportándoles inspiración en sus momentos más críticos. Todos estos enemigos lucharán hasta la muerte debido a que si caen renacerán en el corazón de la isla. Este encuentro sirve para mostrar la fuerza de los nativos y provocar miedo a los jugadores sobre la amenaza de la isla, influenciándolos así para que una futura alianza con Petrikov no les parezca tan mala idea.
+
+Este encuentro puede repetirse en noches posteriores si los jugadores tardan demasiado en acabar con los nativos, aunque en dicho caso las fuerzas de los nativos aumentarán para representar su mayor dedicación a acabar con los intrusos en su isla. 
 
 ### Encuentro con Petrikov
 
@@ -42,7 +44,11 @@ Los jugadores se encuentran con el general Petrikov, quien ofrece su ayuda para 
 
 ### El poblado nativo
 
-Los jugadores asaltan el poblado nativo. Petrikov se aprovecha de la batalla para entrar en las tumbas gélidas. Cuando esto ocurra el chamán ofrecerá una tregua. Él les explicará la historia de la isla y qué están custodiando.
+Los jugadores asaltan el poblado nativo junto con Petrikov para detener su amenaza de una vez por todas. 
+
+Los exteriores del poblado están patrullados por un grupo de cazadores formados por 3 **Guerreros nativos**, 2 **Arqueros nativos**  y un **Tigre dientes de sable** quienes emboscarán a todo grupo que se aproxime al poblado y en el caso que estén perdiendo alertarán a los demás guerreros del poblado sobre el ataque intruso. Cuando este se encuentre en alerta un grupo de 5 **Arqueros nativos** se subirán a los árboles cercanos al poblado y dispararán a todo intruso que se acerque a él desde sus altas posiciones mientras un grupo formado por 6 **Guerreros nativos**, un **Tigre dientes de sable** y un **Tamborilero de guerra** emergerá del poblado para acabar con el enemigo. Desde el pueblo retumbarán los tambores para alertar a los demás grupos de cazadores, quienes empezarán a llegar al poblado para defenderlo llegando un nuevo grupo cada tres rondas que pasen (este tendrá las mismas proporciones que el grupo del encuentro Asalto de los nativos). Si los jugadores logran derrotar a los defensores del poblado y entran en él deberán batirse contra el **Chamán de la isla** y sus dos mascotas **Tigres dientes de sable**, quien luchará con ferocidad para defender a su pueblo. Cuando pasen seis rondas de encuentro Petrikov habrá en 
+
+Petrikov se aprovecha de la batalla para entrar en las tumbas gélidas. Cuando esto ocurra el chamán ofrecerá una tregua. Él les explicará la historia de la isla y qué están custodiando.
 
 3x Guerrero tribal, 2x Arquero nativo, 1x Tigre dientes de sable (patrulla de caza)
 
