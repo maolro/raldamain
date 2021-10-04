@@ -21,7 +21,7 @@ Añade tu rango a todos tus tiros relacionados con habilidades de médium. Eres 
 
 <u>Ecos del pasado:</u> Los grandes eventos del pasado dejan su marca en los lugares y objetos que afectaron. Empleando un minuto de análisis eres capaz de identificar las influencias mágicas que hayan afectado a un objeto o lugar y aprender un dato de información sobre su pasado. Este dato se manifestará como una visión escogida por el máster que actuará como respuesta de tus preguntas. Ecos del pasado sólo puede utilizarse una vez al día por cada objeto o lugar.
 
-<u>Invocar espectro:</u> Usando una acción de turno completo puedes invocar a tu alma ligada para que te proteja frente al peligro. Este espectro tendrá nivel igual a tu rango de médium x 2 y empezará con la mejora Incorpóreo (sus ataques físicos infligirán daño necrótico). El espectro permanecerá en el mundo durante un minuto o hasta que pierdas la concentración, y mientras él viva recibirás ventaja en todos tus tiros defensivos. A rango IV el espectro no requerirá tu concentración para manifestarse.
+<u>Invocar espectro:</u> Usando una acción de turno completo puedes invocar a tu alma ligada para que te proteja frente al peligro. Este espectro tendrá nivel igual a tu rango de médium x 2 y empezará con la mejora Incorpóreo (sus ataques físicos infligirán daño necrótico). El espectro permanecerá en el mundo durante un minuto o hasta que pierdas la concentración, y mientras él viva recibirás ventaja en todos tus tiros defensivos pero no podrás emplear la habilidad Canalizar ánima. A rango IV el espectro no requerirá tu concentración para manifestarse.
 
 ## Rango III
 
