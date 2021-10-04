@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros de ataque hechos con cadenas.
 
 Aumenta tu probabilidad de crítico a 19-20. 
 
-<u>Agarre con cadena:</u> Agarrar a objetivos enredados por tus cadenas te cuesta una acción de movimiento. Como acción estándar puedes estampar a una criatura agarrada contra una superficie sólida a 10 pies de ella, provocándole daño igual al daño base de tu arma. Estampar a una criatura te cuesta una acción de movimiento a rango V.  
+<u>Agarre con cadena:</u> Al impactar con un ataque de cadenas puedes escoger agarrar en lugar de enredar a tu objetivo. Como acción de movimiento puedes estampar a una criatura agarrada contra una superficie sólida a 10 pies de ella, provocándole daño igual al daño base de tu arma. Estampar a una criatura te cuesta una acción de bonus empleable una vez pa rango V.  
 
 <u>Desviar proyectiles:</u> Danza de cadenas puede usarse para protegerte de ataques a distancia o ataques mágicos con área de efecto de 10 pies o menos, permitiéndote emplear tu arma para protegerte de dichos ataques si te encuentras en dicho estado. Si obtienes defensa crítica o tu oponente obtiene un fallo crítico puedes desviar el ataque hacia otra criatura a 15 pies de ti  
 

@@ -75,7 +75,7 @@ Esta es una lista de criaturas mágicas ideales para invocaciones relacionadas c
 
 **Movimiento:** 20 pies
 
-**Prioridad:** +4 (1 estándar + 1 movimiento)
+**Prioridad:** +0 (1 estándar + 1 movimiento)
 
 ****
 

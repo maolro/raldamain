@@ -35,6 +35,10 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **Proteger aliado:** Un aliado a 10 pies recibe +2 en tiros defensivos 
 
+****
+
+**Tácticas:** (enemigo > 35 pies) movimiento + preparación; (enemigo < 25 pies) lanza + preparación; (enemigo < 35 pies y > 25 pies) movimiento + lanza. Retirada si pierde PV o muere su comandante.
+
 ### Guerrero tribal (nivel 1)
 
 **PV:** 6			**VT:** 6	 		**DEF:** 2 (Pieles)
@@ -133,6 +137,10 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **Parada**: +5, **Escudo**: +5. Puede proteger a aliados a 5 pies como reacción
 
+****
+
+**Tácticas:** (enemigo > 40 pies) movimiento + posición defensiva y guarda golpe de escudo; (enemigo < 40 pies) movimiento + golpe escudo + espada larga (enemigo adyacente) espada larga + ataque poderoso. Empleará ataque poderoso en toda situación donde tenga ventaja.
+
 ## Nivel 4-6
 
 ### Bárbaro (nivel 4)
@@ -174,6 +182,10 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 **Parada**: +5 (solo contra armas pesadas)
 
 **Escudo**: +5. Puede proteger a aliados a 5 pies como reacción
+
+****
+
+**Tácticas:** (si enemigo < 90 pies) movimiento doble + golpe de escudo + hacha de batalla; (si enemigo > 90 pies) movimiento doble y guarda golpe de escudo y ataque. (si enemigo adyacente) hacha de batalla + ataque poderoso .Empleará ataque poderoso cada vez que tenga ventaja en un ataque y Gran corte si tiene a 3 o más enemigos adyacentes en un lugar a menos de 20 pies.
 
 ## Veterano (nivel 5)
 
@@ -249,13 +261,17 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **Ajustar alcance** (acción de movimiento): Aumenta o reduce el alcance de su lanza por 5 pies. Si el alcance es de 15 pies no podrá defenderse de enemigos adyacentes.
 
-**Ataque lateral** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies. Al impactar puede hacer una maniobra de tropezar +7.
+**Ataque lateral** (acción de turno completo): Realiza un ataque con su lanza contra todos los enemigos en un cono de tamaño igual al alcance de su arma. Al impactar puede hacer una maniobra de tropezar +7.
 
 ------
 
 **Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
 
 **Proteger aliado:** Un aliado a 10 pies recibe +2 en tiros defensivos 
+
+****
+
+**Tácticas:** (si enemigo < 90 pies) ajustar alcance + carga + lanza; (si enemigo > 90 pies) carga + preparación contra cargas + posición defensiva. (si enemigo < 40 pies) montura desengancha y carga + lanza + preparación contra cargas. Emplea ataque lateral cada vez que carge contra un grupo de 3 o más criaturas adyacentes.
 
 ## Nivel 7-9
 
@@ -300,6 +316,10 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 ------
 
 **Parada**: +8, **Escudo**: +8. Puede proteger a aliados a 5 pies como reacción
+
+****
+
+**Tácticas:** (si enemigo < 30 pies) movimiento + golpe de escudo + espada larga (si enemigo > 30 pies) movimiento + interecptar (si enemigo adyacente) forma defensiva + espada larga. Empleará espadas trabadas al luchar contra otros espadachines, Ataque poderoso cuando tenga ventaja y Gran corte al enfrentarse contra 3 o más enemigos a 15 pies de él.
 
 ## Nivel 10-12
 
@@ -352,3 +372,6 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 **Escudo**: +8 (+1d6 contra enemigos de la fe). Puede proteger a aliados a 5 pies como reacción
 
 **Resistir armas** (1/turno): Reduce el nivel de una herida permanente sufrida por un paso. 
+
+****
+
