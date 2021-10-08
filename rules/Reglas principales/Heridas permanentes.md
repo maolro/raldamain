@@ -55,7 +55,7 @@ Para apuntar a un brazo específico debes tomar un penalizador -2 adicional.
 
 **Grave:** Reduce tu CON por 2. Recibes el efecto de estado Náuseas hasta que seas sanado y obtienes las mismas penalizaciones que te otorga una herida leve. Si sufres una herida permanente adicional en el abdomen recibirás una hemorragia interna, la cual te hace 2 daño letal al turno y te deja aturdido. Sanar una hemorragia interna requiere tener éxito en tres tiros consecutivos de Primeros auxilios (dos si tienes el material adecuado y estás fuera de un combate), pero aunque seas sanado tu CON se reducirá adicionalmente por 1.
 
-### Piernas
+## Piernas
 
 **Leve:** Reduce tu movimiento por 5 pies. Recibes desventaja en todos tus tiros de esquiva, acrobacias y atletismo.
 

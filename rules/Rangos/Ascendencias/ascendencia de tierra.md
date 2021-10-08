@@ -1,5 +1,5 @@
 ---
-title: Ascendencia de Tierra
+  title: Ascendencia de Tierra
 category: Ascendencias
 ---
 
@@ -20,7 +20,7 @@ Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental d
 
 Incrementa tu CON por 1.
 
-<u>Puños de tierra:</u> Como acción bonus puedes sufrir 2 daño no letal para infundir tus ataques naturales con tierra durante un turno. Al emplear esta habilidad tus ataques incrementarán su daño base por 2 y recibirás las habilidades Puño aturdidor y Patada feroz en todos tus ataques hechos durante la ronda (si ya posees estas habilidades recibirás ventaja en todas las maniobras de combate realizadas). Si tienes rangos en Artes marciales aumentarás el nivel de las heridas permanentes infligidas por un paso. No sufres daño no-letal la primera vez que utilices esta habilidad si estás en tu región vinculada.
+<u>Puños de tierra:</u> Como acción bonus puedes sufrir 1 daño no letal para infundir tus ataques naturales con tierra durante un turno. Al emplear esta habilidad tus ataques incrementarán su daño base por 2 y recibirás las habilidades Puño aturdidor y Patada feroz en todos tus ataques hechos durante la ronda (si ya posees estas habilidades recibirás ventaja en todas las maniobras de combate realizadas). Si tienes rangos en Artes marciales aumentarás el nivel de las heridas permanentes infligidas por un paso. No sufres daño no-letal la primera vez que utilices esta habilidad si estás en tu región vinculada.
 
 <u>Paso terrestre:</u> Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies. Estas velocidades aumentan por 5 pies por cada rango adicional de ascendencia.
 

@@ -9,7 +9,7 @@ Has decidido ir a por una de las armas mas resistentes y destructivas que hay, d
 
 Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contundentes
 
-<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso, lo cual le otorgará un penalizador -2 en tiros de ataque a cambio de incrementar el daño base por 2 y empujar 5 pies al impactar. A rangos III y V puedes volver aumentar el penalizador en un ataque por 2 para infligir +2 daño y empujar 5 pies adicionales al impactar. Empleando una acción de movimiento un personaje puede reducir el penalizador de un ataque poderoso por 2.
+<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Antes de atacar, puedes declarar tu ataque como un ataque poderoso, lo cual le otorgará un penalizador -2 en tiros de ataque a cambio de incrementar el daño base por 1d6 y empujar 5 pies al impactar. A rangos III y V puedes volver aumentar el penalizador en un ataque por 2 para infligir +1d6 daño y empujar 5 pies adicionales al impactar. Empleando una acción de movimiento un personaje puede reducir el penalizador de un ataque poderoso por 2.
 
 ## Rango II
 

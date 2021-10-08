@@ -34,4 +34,5 @@ Una armadura puede ser antigua o moderna, lo cual determinará su resistencia co
 | Cuero, acolchada, pieles              | Chaleco antibalas   | 2                      | 0           |
 | Cuero tachonado, camisón de malla     | Fibra de carbono    | 4                      | -2          |
 | Coraza, placas y malla, cota de malla | Armadura de asalto  | 6                      | -4          |
-| Placas, laminada                      | Armadura mecanizada | 8                      | -8          |
+| Placas, laminada                      | Armadura mecanizada | 8                      | -6          |
+
