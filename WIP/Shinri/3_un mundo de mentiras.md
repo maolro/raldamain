@@ -36,6 +36,8 @@ Nira, Kajin, Yaishir
 
 ### Un temerario rescate
 
+Bandido enmascarado
+
 ### La última petición
 
 ### Justicia o venganza
@@ -44,11 +46,31 @@ Nira, Kajin, Yaishir
 
 ### Batalla de Ginrayi-sada
 
-Fuerza d 
+#### Asalto inicial
+
+1 Ekta de tierra, 4 Lanceros ashigaru
+
+(2) 3 Lanceros ashigaru, (3) 2 Soldados de élite (5) 1 Espadachín takenaga, 4 Lanceros ashigaru (5) 3 Soldados de élite
+
+#### Rescatar al encarnado
+
+2 Espadachines Takenaga, 1 Enredador Takenaga
+
+(2) 4 Lanceros ashigaru, (3) 1 Ekta de tierra
+
+#### Huida
+
+3 Jinetes Takenaga
+
+(2) 5 Lanceros ashigaru, (3) 2 Cazadores Takenaga
 
 ### Acorralados sin salida
 
+1 Ekta de tierra, 4 Jinetes Takenaga
 
+(2) 2 Cazadores Takenaga, (3) 4 Arcabuceros ashigaru, (5) 3 Jinetes Takenaga, (6) 3 Lanceros ashigaru, 4 Arcabuceros ashigaru
+
+Hachimon Jikouji, 2 Ekta de tierra, 4 Soldados de élite, 6 Lanceros ashigaru
 
 ### Llegada de los monjes guerreros
 
