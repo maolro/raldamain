@@ -9,33 +9,25 @@ rangos: Filos pesados, Magia de naturaleza, Ira, Rastrear, Fortitud, Maldición 
 image: ajek.jpg
 ---
 
-## Especialidades
+""
+
+# Historia
+
+## Orígenes
 
 
 
-## Rasgos
+## La invasión mazarina y lucha contra el Pacto (4001-4002)
 
 
 
-## Historia
-
-### Orígenes
+## Las guerras hobgoblin (4002-4004)
 
 
 
-### La invasión mazarina
+## 
 
-
-
-### Caza de Laicon
-
-
-
-### Las guerras hobgoblin
-
-
-
-## Relaciones
+# Relaciones
 
 ### Fileon
 
