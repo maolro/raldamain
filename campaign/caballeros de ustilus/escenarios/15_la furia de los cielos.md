@@ -1,5 +1,5 @@
 ---
-title: La isla de los perdidos
+title: La furia d
 fecha: 4009
 lugar: Canal continental
 niveles: 18-19
