@@ -168,3 +168,4 @@ Cuando el transporte de armas sea detenido y los supervivientes del pacto sean d
 **Viorica** (nivel 7)
 
 - <u>Rangos:</u> Filos perforantes III, Reflejos II, Combate doble II, Influenciar I
+

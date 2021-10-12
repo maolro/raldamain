@@ -40,11 +40,11 @@ Tras salir el sol del segundo día, un grupo de tres **Húsares mazarinos** lleg
 
 ### Transporte del culverín
 
-Cuando los mazarinos crean que tienen el valle asegurado transportarán un culverín. Este estará escoltado por un grupo de cuatro **Reclutas mazarinos** y un **Sterlet mazarino**, además de varios jornaleros dedicados a transportarlo y usarlo. En el evento que el culverín sea atacado, intentarán disparar con él para llamar la atención a los húsares, los cuales llegarán en dos turnos. La captura del culverín otorgará, además del mismo cañón, un barril de pólvora y un cuervo mensajero.
+Cuando los mazarinos crean que tienen el valle asegurado transportarán un culverín. Este estará escoltado por un grupo de cuatro **Reclutas mazarinos** y un **Guerrero nort**, además de varios jornaleros dedicados a transportarlo y usarlo. En el evento que el culverín sea atacado, intentarán disparar con él para llamar la atención a los húsares, los cuales llegarán en dos turnos. La captura del culverín otorgará, además del mismo cañón, un barril de pólvora y un cuervo mensajero.
 
 ### Noche de los cañones
 
-Al caer la segunda noche los mazarinos iniciarán su operación de transporte. Esta fase del plan será retrasada si saben que aún qu edan ustileses en el fuerte, por lo que entonces enviarán a un grupo formado por 6 **Reclutas mazarinos**, 3 **Ballesteros mazarinos**, 3 **Sterlets mazarinos** y un **Húsar mazarino** para tomarlo definitivamente. Estos llevan con ellos un mosquete con el cual darán la señal cuando cumplan su misión. Al tronar el mosquete, los cañones empezarán a ser transportados.
+Al caer la segunda noche los mazarinos iniciarán su operación de transporte. Esta fase del plan será retrasada si saben que aún qu edan ustileses en el fuerte, por lo que entonces enviarán a un grupo formado por 6 **Reclutas mazarinos**, 3 **Ballesteros mazarinos**, 3 **Guerreros norteños** y un **Húsar mazarino** para tomarlo definitivamente. Estos llevan con ellos un mosquete con el cual darán la señal cuando cumplan su misión. Al tronar el mosquete, los cañones empezarán a ser transportados.
 
 Cada uno de los cañones se mueve a una velocidad de 30 pies al turno y tienen como objetivo llegar a los bosques en territorio kratense. Hay un total de cuatro cañones y van separados por una distancia de 60 pies. Como escolta hay tres **Húsares mazarinos** patrullando el camino y una unidad compuesta de dos **Reclutas mazarinos** y un **Ballestero mazarino** en cada cañón. Liderando esta misión está el **Capitán húsar mazarino**, quién permanece en la retaguardia hasta que todos los cañones  menos uno sean tomados o destruidos. Cuando esto ocurra él llamará a todos los húsares aún vivos en el campo de batalla y harán una última carga hacia el cañón, buscando salvar lo máximo posible de esta fallida operación. Cuando este sea derrotado los mazarinos supervivientes se retirarán de vuelta a su tierra, vencidos por una insignificante unidad de soldados. Como premio a su victoria los jugadores suben un nivel.
 
@@ -89,7 +89,7 @@ Si en algún momento de este capítulo los jugadores piden ayuda al exterior, es
 - <u>Habilidades</u>: Empatía animal 2, Percepción 3, Supervivencia 2, Intimidar 1
 - <u>Rangos</u>: Montar I, Filos pesados II, Armaduras I, Escudos I
 
-**Sterlet mazarino** (nivel 3)
+**Guerrero norteño** (nivel 3)
 
 - **FUE** 3, **DES** 3, **CON** 2, **INT** 1, **SAB** 2, **CAR** 1
 - **PV ** 6 , **VT ** 7, **DEF** 2

@@ -53,7 +53,7 @@ Las reacciones son todas aquellas acciones que realizas fuera de tu turno. En es
 
 Los tiros defensivos representan cómo un personaje se defiende de un ataque hecho hacia ella. El defensor debe declarar cuál método usa para protegerse y tirará 1d20 con el bonificador adecuado. Si el tiro defensivo es igual o superior al tiro de ataque este será bloqueado exitosamente, impidiendo que el defensor sea impactado.
 
-Toda criatura puede defenderse utilizando las reacciones Parada y Esquiva. Esquiva representa utilizar la agilidad para evitar un ataque y puede usarse para evitar ataques a distancia y de área, mientras que Parada representa bloquear un ataque cuerpo a cuerpo empleando cualquier objeto capaz de hacerlo. El bonificador de Esquiva equivale a la estadística de DES de la criatura lanzada defensivamente mientras que el de Parada equivale a la estadística de FUE.
+Toda criatura puede defenderse utilizando las reacciones Parada y Esquiva. Esquiva representa utilizar la agilidad para evitar un ataque y puede usarse para evitar ataques a distancia y de área, mientras que Parada representa bloquear un ataque cuerpo a cuerpo empleando cualquier objeto capaz de hacerlo. El bonificador de Esquiva equivale a la estadística de DES de la criatura lanzada defensivamente mientras que el de Parada equivale a la estadística de FUE. Una criatura no podrá emplear esquiva o parada si la estadística relacionada con esta es igual o inferior a 0.
 
 ### Ataques de oportunidad
 
