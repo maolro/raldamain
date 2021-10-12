@@ -3,13 +3,13 @@ title: Abshalom
 main: Caballeros de Ustilus
 nacionalidad: Jaddi
 alineamiento: Legal Neutro
-fecha-de-nacimiento: 3957
+fecha-de-nacimiento: 395
 fecha-de-muerte: 4005
 rangos: Aptitud con filos pesados, Artes marciales, Armaduras, Presencia
 image: abshalom.jpg
 ---
 
-"Muchos os dirán que Feyn ha muerto. Muchos dirán que ahora tenemos que dejarlo atrás y mirar hacia el futuro. Esa gente que ahora desprecia a nuestro señor no busca más que llevaros por mal camino y traicionar su memoria. Feyn no ha muerto, sino que está probando nuestra fe y dando una última prueba a la humanidad. Nosotros, el pueblo elegido de Feyn, debemos mantener le fe sin importar las circunstancias y proteger la obra de nuestro señor de aquellos que hoy en día buscan destruirla"
+"Muchos os dirán que Feyn ha muerto. Muchos dirán que ahora tenemos que dejarlo atrás y mirar hacia el futuro. Esa gente que ahora desprecia a nuestro señor no busca más que llevaros por mal camino y traicionar su memoria. Feyn no ha muerto, sino que está comprobando nuestra fe y dando una última prueba a la humanidad. Nosotros, el pueblo elegido de Feyn, debemos mantener le fe sin importar las circunstancias y proteger la obra de nuestro señor de aquellos que hoy en día buscan destruirla"
 
 Abshalom Taedros fue un caballero de Ustilus y Gran Maestre de la orden entre 4000 y 4005. Descrito como un baluarte de tradición en un mundo rápidamente cambiante, Abshalom conservó su fe aún con la supuesta muerte de Feyn y lideró la orden de una manera extremadamente conservadora y militante. Bajo su mandato los caballeros de Ustilus ejecutaron el golpe de estado de 4002, cerrando las cortes y tomando control absoluto de la nación con el fin de acabar con la inestabilidad interna e impedir cualquier reforma de la doctrina de Feyn. Su autoridad perduró hasta su muerte a manos de los Temash en 4005, dando fin a la emergencia y restaurando el poder de las cortes. 
 
@@ -29,35 +29,41 @@ Abshalom volvió a entrar en acción un año después tras el descubrimiento de 
 
 La revuelta en Rizad fue una chispa de un incendio de revolución que se extendió por todo el Imperio de Ustilus, reactivando antiguas venganzas e inspirando a numerosos pueblos sometidos a alzarse contra el poderío imperial. La divisón política frente a este hecho y la incompetencia de numerosos goberantes fortaleció el desdén de Abshalom hacia la clase gobernante, quien empezó a pensar que la única manera de salvar la obra de Feyn era tomando control directo. Conspirando con otros caballeros y autoridades militares él inició los preparativos para ejecutar un golpe de estado. Tras consultar con el sumo sacerdote de Feyn y recibir el visto bueno, Abshalom y sus caballeros irrumpieron en las cortes en el día del voto decisivo, declarando el estado de guerra y suspendiendo las Cortes hasta que vuelva la paz a Ustilus.
 
-El gobierno militar de Abshalom destacó por su fuerte conservadurismo y oposición absoluta a cualquier reforma. Los caballeros se convirtieron en la mayor autoridad militar y suplantaron a muchos de los antiguos oficiales, decisión que conentó a la tropa a costa de enfadar a los mandos militares. Durante su mandato la herejía y la blasfemia se persiguieron con firmeza, colocando en esta categoría a cualquier declaración sobre la muerte de Feyn o reforma religiosa. Aquellos opuestos a su régimen tanto nobles como plebeyos fueron frecuentemente condenados a varios años de trabajos forzosos en las minas de chi en Tamashkhan, lugares infames por su crueldad y pésimas condiciones de trabajo. No obstante, su gobierno tuvo gran popularidad entre el pueblo llano debido a su persecución implacable de la corrupción política y su lucha contra muchos de los abusos de la alta nobleza. El primer gran desafío que tuvo durante su gobierno fue la guerra con la Legión, una gran revolución en la provincia hobgoblin de Thalos. 
+El gobierno militar de Abshalom destacó por su fuerte conservadurismo y oposición absoluta a cualquier reforma. Los caballeros se convirtieron en la mayor autoridad militar y suplantaron a muchos de los antiguos oficiales, decisión que conentó a la tropa a costa de enfadar a los mandos militares. Durante su mandato la herejía y la blasfemia se persiguieron con firmeza, colocando en esta categoría a cualquier declaración sobre la muerte de Feyn o reforma religiosa. Aquellos opuestos a su régimen tanto nobles como plebeyos fueron frecuentemente condenados a varios años de trabajos forzosos en las minas de chi en Tamashkhan, lugares infames por su crueldad y pésimas condiciones de trabajo. No obstante, su gobierno tuvo gran popularidad entre el pueblo llano debido a su persecución implacable de la corrupción política y su lucha contra muchos de los abusos de la alta nobleza. 
+
+El primer gran desafío del gobierno de Abshalom fue la llamada Guerra de la Legión, una gran insurgencia liderada por la Legión hobgoblin que buscó la formación de un reino hobgoblin independiente. Su respuesta fue la movilización del ejército y los caballeros de Ustilus con el fin de aplastar la rebelión por fuerza bruta, la cual aunque tuvo algo de éxito recuperando territorios enemigos se caracterizó por el inmenso precio en vidas que requería. Después de dos años de guerra infructuosa la popularidad de Abshalom empezó a decaer, impulsándolo a buscar una solución rápida para el conflicto aunque eso significarse una alianza con sus antiguos enemigos. Por ello volvió a colaborar con Ileria para que esta lograse un tratado de paz con la Legión, pero cuando esto fracasó cambió su estrategia y escogió aliarse con los insurgentes de Yabu, un grupo rebelde oni opuesto a la Legión. Los insurgentes de Yabu fueron clave para lograr la victoria, pero para ello tuvo que hacer numerosas concesiones a dicho grupo respecto a la soberanía de Thalos, entre ellas el autogobierno y libertad religiosa para la región, que resultaron inaceptables para muchos altos cargos del ejército y políticos imperialistas. La autoridad de Abshalom quedó aún más socavada después que saliese a luz que la Hermandad del Cuervo, una unidad de élite militar fuertemente asociada con él, estuviese infiltrada por una secta herética. Con oposición a su régimen cada vez más creciente y la renaudación de nuevos conflictos en Tamashkhan, Abshalom decidió jugárselo todo a la última carta y emprendió una gran campaña en el sur liderada personalmente por él con el fin de traer la paz a Ustilus o morir en el intento.
 
 ## La campaña del sur (4005)
 
+La campaña del sur fue la última expedición militar de Abshalom y su más reconocida, colocándolo en los anales de historia del Imperio mismo. El plan de Abshalom se basó en avanzar por el desierto de Tamashkhan hasta llegar al oasis donde se abastecían los rebeldes, dando así un golpe mortal a la insurgencia y recuperando las preciadas minas de chi para el Imperio. Esta misión fue considerada suicida por muchos estrategas militares y caballeros de Ustilus, tratándola como un loco deseo de entrar en la leyenda. No obstante, Abshalom logró reunir a casi 20.000 soldados de orígenes variopintos, entre los cuales se encontraron soldados de la Hermandad del Cuervo dispuestos a recobrar el honor de su organización, los Jaddi del clan Taedros y el ejército mercenario de los Escudos Rojos. Él personalmente lideró a un grupo de 5.000 el cual inició la expedición desembarcando en el puerto temash de Kasheba, donde prestó sus barcos para evacuar a los civiles de la ciudad y evitar que hubiese vuelta atrás de la campaña.
 
+Esta expedición estuvo llena de problemas desde sus inicios que no hicieron más que acrecentar a lo largo de la campaña. Los rebeldes Temash basaron su estrategia en constantes incursiones contra Ustilus formadas por rápidas unidades de caballería y elementalistas empoderados, las cuales fueron debilitando progresivamente al ejército ustilés y hundiendo la moral. Aun así Abshalom fue capaz de mantener unidas a sus tropas frente a la adversidad, motivándolas a seguir adelante y obteniendo algunos logros en el campo de batalla. Todo esto pudo perdurar hasta que llegaron a la mina de Katagral, el último territorio en manos ustilesas del desierto Temash. Ahí fueron rodeados por los insurgentes temash y aprarentemente atrapados sin salida, quedando así a las puertas de la muerte. 
+
+Al ser asediados por el enemigo Abshalom reveló la verdadera naturaleza por el plan, explicando que el objetivo de su unidad no era más que mantener distraídos a los rebeldes el suficiente tiempo para que el resto del ejército ustilés pudiera llegar hasta el oasis rebelde. Su misión ahora era aguantar en la mina hasta que la misión se completase con éxito. Tras este conocimeinto la moral en su unidad se hundió y algunos empezaron a planear en una manera de escapar de lo que parecía ser una situación sin salida. A esto se le unió la llegada de Chandrial, un peregrino de Mekhatim quien se aprovechó de la desesperada situación para empezar a convertir a más personas a su fe. Cuando todo parecía perdido se descubrió un antiguo templo de Nekthys que contenía a un extraño portal aparentemente capaz de proporcionar una vía de escape. Al enterarse Abshalom mantuvo en secreto la existencia del portal y planificó junto con Fileon una evacuación de todo el ejército por el portal, jugándoselo todo a esta desesperada opción. Los Temash acabaron por descubrir dicho plan y en la noche de la evacuación iniciaron un ataque masivo en la mina colaborando en secreto con los seguidores de Mekhatim. 
 
 ## Final (4005)
 
-# Especialidades
+Cuando los Temash atacaron el campamento Abshalom escogió mantenerse atrás junto con sus hermanos de clan para ganar tiempo para que los demás pudiesen huir. Su fuerza era tal que algunos superiviventes relataron que era como si Feyn le hubiese proporcionado poder de nuevo, pero el enemigo contó con superioridad numérica y las múltiples heridas que recibió empezaron a debilitarlo. Abshalom finalmente murió luchando contra Rostam, el líder rebelde, reuniéndose finalmente con Feyn estuviera donde estuviera. 
 
-Uno de los mejores espadachines de su orden, Abshalom lucha con su arma como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor y luchará hasta el final para lo que él cree que es justo. La muerte de Feyn le ha hecho perder gran parte de sus habilidades divinas, pero continúa siendo un guerrero destacable y una fuente de inspiración para sus aliados. 
+# Rasgos y especialidades
 
-# Rasgos
+Abshalom puede descrito como un baluarte de la tradición en un mundo rápidamente cambiante. Es muy fiel a sus principios y a la ley de Feyn, creyendo que los problemas actuales del Imperio se deben a su falta de fe. Cuando habla, dice exactamente lo que piensa y espera ser obedecido al momento, ganándole pocos amigos entre las élites políticas y militares de Ustilus. No obstante, tiene gran capacidad de liderazgo y aunque sea muy duro con aquellos que comanda luchará junto a ellos hasta el final.
 
-Abshalom puede descrito como un baluarte de la tradición en un mundo rápidamente cambiante. Es muy fiel a sus principios y a la ley de Feyn, creyendo que los problemas actuales del Imperio se deben a su falta de fe. Cuando habla, dice exactamente lo que piensa y espera ser obedecido al momento, lo cual le gana pocos amigos dentro del ejército. No obstante, tiene gran capacidad de liderazgo y aunque sea muy duro con aquellos que comanda, luchará junto a ellos hasta el final.
+Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su orden, luchando con su espada como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños y resistir heridas por encima de la media. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor y luchará hasta el final para lo que él cree que es justo. La muerte de Feyn le ha hecho perder gran parte de sus habilidades divinas, pero continúa siendo un guerrero destacable y una fuente de inspiración para sus aliados. 
 
 # Relaciones
-
-## Laicon
-
-"Una sabandija oportunista y vil traidor a la nación. Su soberbia como elegido de Feyn le ha hecho incapaz de aceptar su muerte, abandonando a aquellos quién una vez llamó hermanos y luchando contra lo que él mismo buscó construir. Por el bien de Ustilus debo asegurarme que reciba su justa condena."
 
 ## Ajek
 
 "En un principio tuve mis dudas sobre este caballero salvaje, pero tras la muerte de Feyn no ha mostrado más que lealtad mientras otros nos han abandonado. No apruebo de muchos de sus ideales y nunca ha sido un verdadero devoto, pero sé que cuando llegue la hora de la verdad puedo contar con él."
 
-## Madeleine
+## Chandrial
 
-"Esta enigmática norteña vive rodeada de mentiras, ocultando sus verdaderas intenciones hasta quiénes tiene más cerca. Normalmente no siento más que desprecio por este tipo de personas, pero su dedicación hacia el Imperio me ha hecho pensar de ella de una manera distinta. Eso sí, es prudente no fiarse demasiado de una persona dedicada al engaño."
+"A primera vista parece un santo, un líder justo que merece ser seguido. Solo con la palabra es capaz de hacer que hasta los más devotos a Feyn abandonen su fe y caigan rendidos a sus pies, tratándolo como un nuevo dios. Por este motivo es uno de los enemigos más peligrosos con los que me he encontrado y si no es detenido pronto significará un grave problema para toda Ustilus.
+
+## Eliyet
+
+"Mi fiel discípula. Hay pocas personas dispuestas a mantener la fe tras en una situación tan desesperante y me alegra ver que la nueva generación de caballeros tiene a personas tan capaces como ella entre sus filas. Su sentido de justicia es tan implacable como el mío y sé que puede ser capaz de grandes cosas."
 
 ## Fileon
 
@@ -66,6 +72,18 @@ Abshalom puede descrito como un baluarte de la tradición en un mundo rápidamen
 ## Ileria
 
 "Cuando habla sus palabras están llenas de pasión y firmeza, pero con políticos como ella nunca puedes saber cuánto es real y cuánto es un acto. Dice que lo hace todo por en el pueblo sin ni siquiera consultarlo, y que actúa por el beneficio del Imperio mientras ataca las tradiciones que lo han construido. Debemos ser los caballeros, y no políticos hipócritas como ella, quiénes salvemos a Ustilus en este momento de mayor crisis" 
+
+## Laicon
+
+"Una sabandija oportunista y vil traidor a la nación. Su soberbia como elegido de Feyn le ha hecho incapaz de aceptar su muerte, abandonando a aquellos quién una vez llamó hermanos y luchando contra lo que él mismo buscó construir. Por el bien de Ustilus debo asegurarme que reciba su justa condena."
+
+## Lucanor
+
+"Políticos repugnantes como él son los responsables de la corrupción y falta de fe en Ustilus. Se cubre con la bandera del patriotismo y la fe pero no cree en nada más que sus propios intereses. Esta gente estaría dispuesta a traicionar hasta a Feyn mismo si eso les proporcionará más poder y riquezas."
+
+## Madeleine
+
+"Esta enigmática norteña vive rodeada de mentiras, ocultando sus verdaderas intenciones hasta quiénes tiene más cerca. Normalmente no siento más que desprecio por este tipo de personas, pero su dedicación hacia el Imperio me ha hecho pensar de ella de una manera distinta. Eso sí, es prudente no fiarse demasiado de una persona dedicada al engaño."
 
 ## Regulus
 

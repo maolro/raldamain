@@ -4,7 +4,7 @@ main: Caballeros de Ustilus
 nacionalidad: Ustilés
 alineamiento: Legal maligno
 fecha-de-nacimiento: 3971
-fecha-de-muerte: sigue vivo
+fecha-de-muerte: 4011
 rangos: Influenciar, Plantilla infernal, Conocimiento, Castigo divino
 image: lucanor.jpg
 ---

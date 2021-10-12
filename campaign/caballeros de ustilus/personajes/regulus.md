@@ -9,6 +9,8 @@ rangos: Aptitud con filos pesados, Combate doble, Armaduras, Guerrero divino, Ca
 image: regulus.jpg
 ---
 
+"g"
+
 ## Especialidades
 
 

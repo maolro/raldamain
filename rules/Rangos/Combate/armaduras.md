@@ -29,10 +29,9 @@ La armadura un objeto indispensable para todo guerrero, marcando en muchos casos
 
 Una armadura puede ser antigua o moderna, lo cual determinará su resistencia contra armas de fuego. Una armadura antigua no proporciona ninguna protección contra Puntería mortal mientras que una moderna podrá ignorar los efectos de esta salvo que el atacante tome un penalizador -2 adicional. Los tipos más comunes de armadura se encuentran en la siguiente tabla:
 
-| Antigua                               | Moderna             | Bonificador de defensa | Penalizador |
-| ------------------------------------- | ------------------- | ---------------------- | ----------- |
-| Cuero, acolchada, pieles              | Chaleco antibalas   | 2                      | 0           |
-| Cuero tachonado, camisón de malla     | Fibra de carbono    | 4                      | -2          |
-| Coraza, placas y malla, cota de malla | Armadura de asalto  | 6                      | -4          |
-| Placas, laminada                      | Armadura mecanizada | 8                      | -6          |
-
+| Nombre   | Ejemplo (antigua)                     | Ejemplo (moderna)   | Bonificador de defensa | Penalizador |
+| -------- | ------------------------------------- | ------------------- | ---------------------- | ----------- |
+| Ligera   | Cuero, acolchada, pieles              | Chaleco antibalas   | 2                      | 0           |
+| Media    | Cuero tachonado, camisón de malla     | Fibra de carbono    | 4                      | -2          |
+| Pesada   | Coraza, placas y malla, cota de malla | Armadura de asalto  | 6                      | -4          |
+| Completa | Placas, laminada                      | Armadura mecanizada | 8                      | -6          |

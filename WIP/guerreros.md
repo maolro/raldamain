@@ -229,7 +229,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ### Caballero (nivel 5)
 
-**PV:** 7			**VT:** 10	 		**DEF:** 11 (Placas +3)
+**PV:** 7			**VT:** 10	 		**DEF:** 11 (pesada +3)
 
 **FUE:** 4 	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 3
 
@@ -309,7 +309,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **Gran corte** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
 
-**Golpe de escudo** (acción bonus): +8, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 4 daño adicional al realizar una carga.
+**Golpe de escudo** (acción bonus): +8, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 6 daño adicional al realizar una carga.
 
 **Interceptar** (acción de movimiento): El guerrero de élite se prepara para interceptar un ataque enemigo. En cualquier momento de la ronda podrá hacer una carga contra un enemigo que se esté moviendo y hacerle un golpe de escudo. Si impacta el objetivo deberá detenerse de inmediato y una vez por ronda tirará CON contra dificultad +8 o queda aturdido.
 

@@ -4,7 +4,7 @@ main: Caballeros de Ustilus
 nacionalidad: Jaddi, pero residente en Dairov
 alineamiento: Neutral maligno
 fecha-de-nacimiento: 3957
-fecha-de-muerte: 4002?
+fecha-de-muerte: 4005
 rangos: Plantilla Sombria, Aptitud con filos ligeros, Reflejos, Magia de Evocacion
 image: laicon.jpg
 ---

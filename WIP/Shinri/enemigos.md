@@ -1,6 +1,6 @@
 ## Ashigaru lancero (nivel 1)
 
-**PV:** 5			**VT:** 5	 		**DEF:** 6 (Pechera)
+**PV:** 5			**VT:** 5	 		**DEF:** 6 (media +2)
 
 **FUE:** 3 	**DES:** 1	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 1
 
@@ -62,7 +62,7 @@
 
 ## Guerrero de élite (nivel 3)
 
-**PV:** 9			**VT:** 9	 		**DEF:** 10 (media +2, armadura natural +2)
+**PV:** 9			**VT:** 9	 		**DEF:** 10 (pesada +2, armadura natural +2)
 
 **FUE:** 5	**DES:** 1	**CON:** 4	 **INT:** 1	**SAB:** 2	**CAR:** 1
 
@@ -74,7 +74,7 @@
 
 **Movimiento:** 30 pies
 
-**Prioridad:** 1 (1 estándar + 2 movimiento)
+**Prioridad:** 1 (1 estándar + 1 movimiento)
 
 ------
 
@@ -84,13 +84,11 @@
 
 ------
 
-**Katana** (acción estándar): +6, 1d10 + 5 cortante. Aumenta el nivel de todas las heridas al impactar a un enemigo con 4 o menos DEF.
+**Katana** (acción estándar): +6, 1d10 + 5 cortante. 
 
-**Tetsubo** (acción estándar): +6, 1d10 + 5 contundente. (1/turno) +6 contra CON o aturdido (ralentizado si tiene éxito y has realizado un ataque poderoso)
+**Tetsubo** (acción estándar): +6, 1d10 + 5 contundente.
 
 **Apuntar** (acción de movimiento): Reduce el penalizador de ataque poderoso por 2.
-
-**Gran corte** (acción de turno completo): +6, hace un ataque de katana o tetsubo contra todas las criaturas en un arco de 15 pies.
 
 ------
 
@@ -102,7 +100,7 @@
 
 ## Caballería (nivel 5)
 
-**PV:** 9			**VT:** 10	 		**DEF:** 13 (placas +3, fortitud +2)
+**PV:** 9			**VT:** 10	 		**DEF:** 13 (completa +3, fortitud +2)
 
 **FUE:** 5	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 1
 
@@ -111,6 +109,8 @@
 **Talentos:** Percepción +4, Intimidar +7, Heroísmo +8, Averiguar intenciones +4
 
 **Rangos:** Alabardas II, Armaduras II, Montar I, Fortitud I
+
+**Resiste:** Aturdimiento +4, fuego 4
 
 **Movimiento:** 20 pies (montura 75 pies)
 
@@ -138,9 +138,7 @@
 
 **Proteger aliado:** Un aliado a 10 pies recibe +2 en tiros defensivos 
 
-------
-
-**Reflejos**: +6, se mueve 5 pies al tener éxito.
+**Reflejos**: +6, se mueve 5 pies al tener éxito (solo si montado)
 
 ****
 
@@ -148,7 +146,7 @@
 
 ## Cazador (nivel 5)
 
-**PV:** 9			**VT:** 10	 		**DEF:** 4 (cuero, armadura natural +2)
+**PV:** 9			**VT:** 10	 		**DEF:** 4 (ligera, armadura natural +2)
 
 **FUE:** 2	**DES:** 4	**CON:** 3	**INT:** 1	**SAB:** 3	**CAR:** 1
 
@@ -190,7 +188,7 @@
 
 ## Espadachín (nivel 5)
 
-**PV:** 9			**VT:** 10	 		**DEF:** 11 (media placa +3, armadura natural +2)
+**PV:** 9			**VT:** 10	 		**DEF:** 11 (pesada +3, armadura natural +2)
 
 **FUE:** 3	**DES:** 4	**CON:** 3	**INT:** 1	**SAB:** 3	**CAR:** 1
 
@@ -228,7 +226,7 @@
 
 ## Ekta de tierra (nivel 7)
 
-**PV:** 9			**VT:** 13 (18)	 		**DEF:** 14 (armaduras +3, resistencia 2, armadura de piedra +2)
+**PV:** 9			**VT:** 13 (18)	 		**DEF:** 15 (completa +3, resistencia 2, armadura de piedra +2)
 
 **FUE:** 4	**DES:** 1	**CON:** 4	**INT:** 1	**SAB:** 5	**CAR:** 1
 
@@ -280,7 +278,7 @@
 
 ## Ekta de fuego (nivel 7)
 
-**PV:** 7			**VT:** 11	 		**DEF:** 8 (armaduras +2, resistencia 2)
+**PV:** 7			**VT:** 11	 		**DEF:** 8 (media +2, resistencia 2)
 
 **FUE:** 2	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 5
 

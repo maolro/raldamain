@@ -3,7 +3,7 @@ title: Ajek
 main: Caballeros de Ustilus
 nacionalidad: nómada
 alineamiento: Caótico bueno
-fecha-de-nacimiento: 3963
+fecha-de-nacimiento: 3968
 fecha-de-muerte: desconocida
 rangos: Filos pesados, Magia de naturaleza, Ira, Rastrear, Fortitud, Maldición de la bestia
 image: ajek.jpg
@@ -23,7 +23,7 @@ Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 
 
 
 
-## Las guerras hobgoblin (4002-4004)
+## Golpe de estado y guerras hobgoblin (4002-4005)
 
 
 
@@ -31,7 +31,7 @@ Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 
 
 
 
-## Tiempo de preguerras (4007-4008)
+## Tiempo de entreguerras (4007-4008)
 
 
 
