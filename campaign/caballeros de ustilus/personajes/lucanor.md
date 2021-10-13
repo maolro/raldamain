@@ -11,37 +11,50 @@ image: lucanor.jpg
 
 
 
-## Especialidades
+# Biografía
 
-## Rasgos
-
-
-
-## Historia
-
-### Orígenes
+## Orígenes
 
 
 
-### Manipulaciones secretas
+## Agente de Sek-Tebos (3994 - 4003)
 
 
 
-### La campaña Hobgoblin
+## Ascenso político (4003-4007)
 
 
 
-## Relaciones
+## Líder imperialista y sectario (4007-4010)
 
-### Madeleine
+
+
+## Final (4010)
+
+
+
+# Rasgos y especialidades
+
+
+
+# Relaciones
+
+## Basileos
 
 ""
 
-### Yabu
-
-### Regulus
+## Ileria
 
 ""
 
-### Ileria
+## Madeleine
 
+""
+
+## Regulus
+
+""
+
+## Yabu
+
+""
