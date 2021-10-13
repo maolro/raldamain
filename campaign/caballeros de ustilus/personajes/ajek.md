@@ -13,7 +13,7 @@ image: ajek.jpg
 
 Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 4010. Caracterizado por su actitud tolerante y honesta, Ajek careció del fervor de muchos de sus compañeros en la orden y siempre fue más cercano a los espíritus que a Feyn. Aunque su forma de pensar despertó algunos conflictos, Ajek gozó de gran popularidad por sus numerosas victorias en el campo de batalla y fuerte lealtad. Era especialemente cercano a Fileon y fue un constante apoyo para él en sus momentos más difíciles, convirtiéndose en su persona de mayor confianza y participando junto a él en numerosas campañas. 
 
-# Historia
+# Biografía
 
 ## Orígenes
 
@@ -43,20 +43,32 @@ Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 
 
 
 
+# Rasgos y especialidades
+
+
+
 # Relaciones
 
-### Fileon
+## Abshalom
 
 ""
 
-### Madeleine
+## Fileon
 
 ""
 
-### Abshalom
+## Ileria
 
 ""
 
-### Yabu
+## Laicon
+
+""
+
+## Madeleine
+
+""
+
+## Yabu
 
 ""

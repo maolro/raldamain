@@ -4,7 +4,7 @@ main: Caballeros de Ustilus
 nacionalidad: Ustilés
 alineamiento: Legal maligno
 fecha-de-nacimiento: 3971
-fecha-de-muerte: 4011
+fecha-de-muerte: 4010
 rangos: Influenciar, Plantilla infernal, Conocimiento, Castigo divino
 image: lucanor.jpg
 ---
@@ -12,8 +12,6 @@ image: lucanor.jpg
 
 
 ## Especialidades
-
-Ser un hijoputa
 
 ## Rasgos
 
@@ -41,12 +39,9 @@ Ser un hijoputa
 
 ### Yabu
 
-Este puto me ha matado, no me lo puedo creer 
-
 ### Regulus
 
 ""
 
 ### Ileria
 
-Me cae muy mal, se opone a mis planes malignos :(

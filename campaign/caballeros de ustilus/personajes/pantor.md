@@ -4,7 +4,7 @@ main: Caballeros de Ustilus
 nacionalidad: Iskariano de ascendencia ustilesa
 alineamiento: Legal Bueno
 fecha-de-nacimiento: 3961
-fecha-de-muerte: sigue vivo
+fecha-de-muerte: 4009
 rangos: Aptitud con armas de fuego, Reflejos, Presencia
 image: pantor.jpg
 ---

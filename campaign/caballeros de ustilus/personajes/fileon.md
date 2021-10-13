@@ -11,46 +11,76 @@ image: fileon.jpg
 
 
 
-## Historia
+# Historia
 
-### Orígenes
-
-
-
-### Muerte de Feyn
+## Orígenes
 
 
 
-### Las guerras hobgoblin
+## La invasión mazarina y lucha contra el Pacto (4001-4002)
 
 
 
-### La campaña Temash
+## Golpe de estado y guerras hobgoblin (4002-4005)
 
 
 
-## Relaciones
+## Campaña del sur (4005)
 
-### Ileria
+
+
+## Gran maestre de la orden (4005-4008)
+
+
+
+## Guerra con Arshalán (4008-4010)
+
+
+
+## Conversión al heredero y ascenso al trono (4010)
+
+
+
+## Emperador de Ustilus (4010- )
+
+
+
+# Rasgos y especialidades
+
+
+
+# Relaciones
+
+## Abshalom
 
 ""
 
-### Ajek
+## Ajek
 
 ""
 
-### Abshalom
+## Basileos
 
 ""
 
-### Madeleine
+## Chandrial
 
 ""
 
-### Pantor
+## Ileria
+
+""
+
+## Madeleine
+
+""
+
+## Pantor
 
 "" 
 
-### Regulus
+## Regulus
 
 ""
+
+## Theodora

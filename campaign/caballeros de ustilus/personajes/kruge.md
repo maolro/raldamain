@@ -9,46 +9,49 @@ rangos: Artes marciales, Fortitud, Guerrero divino, Reflejos
 image: kruge.jpg
 ---
 
-## Especialidades
+
+
+# Historia
+
+## Orígenes
 
 
 
-## Rasgos
+## La rebelión hobgoblin (4002)
 
 
 
-## Historia
-
-### Orígenes
+## Señor de la Legión (4002-4004)
 
 
 
-### La rebelión hobgoblin
+## Final
 
 
 
-### Señor de la Legión
+# Rasgos y especialidades
 
 
 
-### Final
+# Relaciones
 
-
-
-## Relaciones
-
-### Yabu
+## Ileria
 
 ""
 
-### Xingonu
+## Lucanor
 
 ""
 
-### Ileria
+## Regulus
 
 ""
 
-### Lucanor
+## Xingonu
 
 ""
+
+## Yabu
+
+""
+
