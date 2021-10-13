@@ -8,7 +8,7 @@ fecha-de-muerte: 4010
 rangos: Filos cortantes, guerrero divino, armaduras, presencia, ascendencia celestial
 ---
 
-" "
+"Tu sufrimiento ha terminado y la salvación que tanto deseaste ya está aquí. Ahora seré yo la luz que te guiará y dará sentido a tu vida. Si escoges seguirme juntos traeremos un mundo más justo para todos. Un mundo donde el mal y la corrupción sean erradicados y las personas de todo el mundo vivan en paz como hermanos. Para que este sueño se haga realidad solo necesitas tener fe. Fe en mí."
 
 # Historia
 
