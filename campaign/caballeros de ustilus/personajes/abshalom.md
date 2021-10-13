@@ -3,7 +3,7 @@ title: Abshalom
 main: Caballeros de Ustilus
 nacionalidad: Jaddi
 alineamiento: Legal Neutro
-fecha-de-nacimiento: 395
+fecha-de-nacimiento: 3957
 fecha-de-muerte: 4005
 rangos: Aptitud con filos pesados, Artes marciales, Armaduras, Presencia
 image: abshalom.jpg
