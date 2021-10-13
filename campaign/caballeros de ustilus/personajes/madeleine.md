@@ -11,14 +11,6 @@ image: madeleine.jpg
 
 
 
-## Especialidades
-
-
-
-## Rasgos
-
-
-
 ## Historia
 
 ### Orígenes
