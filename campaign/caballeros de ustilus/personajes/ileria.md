@@ -2,53 +2,79 @@
 title: Ileria
 main: Caballeros de Ustilus
 nacionalidad: Reino élfico de Neronvain
-alineamiento: aparenta ser Neutral Bueno
+alineamiento: Neutral Bueno?
 fecha-de-nacimiento: desconocida
 fecha-de-muerte: 4010?
 rangos: Influenciar, Reflejos, Aptitud con filos ligeros
 image: ileria.jpg
 ---
 
-## Especialidades
+
+
+# Biografía
+
+## Orígenes
 
 
 
-## Rasgos
+## Misiones secretas contra el Pacto (4001-4003)
 
 
 
-## Historia
-
-### Orígenes
+## Líder reformista (4003-4005)
 
 
 
-### Maestra de intriga
+## Primera ministra de Ustilus (4005-4008)
 
 
 
-### Búsqueda de la paz
+## Retiro de la vida política (4008-4010)
 
 
 
-## Relaciones
+## Final (4010)
 
-### Fileon
 
-""
 
-### Madeleine
+# Rasgos y especialidades
 
-""
 
-### Stannis
 
-""
+# Relaciones
 
-### Abshalom
+## Abshalom
 
 ""
 
-### Ilesit
+## Ajek
 
-"" 
+""
+
+## Chandrial
+
+""
+
+## Fileon
+
+""
+
+## Ilesit
+
+""
+
+## Lucanor
+
+""
+
+## Madeleine
+
+""
+
+## Theodora
+
+""
+
+## Stannis
+
+""

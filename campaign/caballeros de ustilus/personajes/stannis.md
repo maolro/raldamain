@@ -4,7 +4,7 @@ main: Caballeros de Ustilus
 nacionalidad: Reino élfico de Neronvain 
 alineamiento: Legal neutro
 fecha-de-nacimiento: 3937
-fecha-de-muerte: sigue vivo
+fecha-de-muerte: desconocida
 rangos: Aptitud con filos ligeros, Reflejos, Aptitud con armas a distancia
 image: stannis.jpg
 ---

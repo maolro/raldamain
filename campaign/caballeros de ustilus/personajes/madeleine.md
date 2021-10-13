@@ -4,7 +4,7 @@ main: Caballeros de Ustilus
 nacionalidad: Norteña
 alineamiento: Neutro verdadero
 fecha-de-nacimiento: 3971
-fecha-de-muerte: sigue viva
+fecha-de-muerte: desconocid
 rangos: Magia de agua, Magia de hielo, Magia de sangre, Plantilla boreal, Influenciar
 image: madeleine.jpg
 ---
