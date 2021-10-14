@@ -1,5 +1,5 @@
 ---
-title: Xing
+title: Xingonu
 main: Caballeros de Ustilus
 nacionalidad: Hobgoblin
 alineamiento: Caótico maligno
