@@ -9,7 +9,7 @@ rangos: Artes marciales, Fortitud, Guerrero divino, Reflejos
 image: kruge.jpg
 ---
 
-""
+
 
 # Historia
 
