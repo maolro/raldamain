@@ -9,50 +9,73 @@ rangos: Aptitud con armas de fuego, Reflejos, Presencia
 image: pantor.jpg
 ---
 
-## Especialidades
+# Biografía
+
+## Orígenes
 
 
 
-## Rasgos
+## La invasión mazarina (4000-4002)
 
 
 
-## Historia
-
-### Orígenes
+## Las guerras hobgoblin (4003-4004)
 
 
 
-### La invasión mazarina
+## La campaña del sur (4005)
 
 
 
-### La campaña Hobgoblin
+## Confrontando el pasado (4006)
 
 
 
-### La campaña Temash
+## Redención (4006-4008)
 
 
 
-## Relaciones
+## La guerra con Arshalán (4008-4009)
 
-### Madeleine
+
+
+## Final (4009)
+
+
+
+# Rasgos y especialidades
+
+
+
+# Relaciones
+
+## Fileon
+
+""
+
+## Iakub
 
 ""
 
-### Tirion
+## Madeleine
 
 ""
 
-### Regulus
+## Regulus
 
 ""
 
-### Fileon
+## Reki
 
 ""
 
-### Reki
+## Shen Hyung
 
 ""
+
+## Thirion
+
+""
+
+
+

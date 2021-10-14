@@ -4,85 +4,110 @@ main: Caballeros de Ustilus
 nacionalidad: Norteña
 alineamiento: Neutro verdadero
 fecha-de-nacimiento: 3971
-fecha-de-muerte: desconocid
+fecha-de-muerte: desconocida
 rangos: Magia de agua, Magia de hielo, Magia de sangre, Plantilla boreal, Influenciar
 image: madeleine.jpg
 ---
 
 
 
-## Historia
+# Biografía
 
-### Orígenes
-
-
-
-### La invasión mazarina
+## Orígenes
 
 
 
-### Agente de Ileria
+## Agente de Ileria (4000 - 4005)
 
 
 
-### La campaña Hobgoblin
+## Formando el nuevo Pacto (4005-4007)
 
 
 
-### La campaña Temash
+## Guerra secreta (4007-4010)
 
 
 
-## Relaciones
+## Exilio a Kratoi (4010-)
 
-### Ileria
 
-""
 
-### Pantor
+# Rasgos y especialidades
 
-""
 
-### Fileon
+
+# Relaciones
+
+## Abshalom
 
 ""
 
-### Yabu
+## Ajek
 
 ""
 
-### Regulus
+## Eliyet
 
 ""
 
-### Abshalom
+## Fileon
 
 ""
 
-### Ajek
+## Iakub
 
 ""
 
-### Stannis
+## Ileria
 
 ""
 
-### Viorica
+## Laicon
 
 ""
 
-### Laicon
+## Lucanor
 
 ""
 
-### Petrikov
+## Pantor
 
 ""
 
-### Lucanor
+## Petrikov
 
 ""
 
-### Minjee
+## Regulus
 
 ""
+
+## Stannish
+
+""
+
+## Theodora
+
+""
+
+## Thirion
+
+""
+
+## Viorica
+
+""
+
+## Yabu
+
+""
+
+
+
+
+
+
+
+
+

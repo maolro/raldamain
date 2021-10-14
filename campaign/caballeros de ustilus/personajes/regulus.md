@@ -11,82 +11,74 @@ image: regulus.jpg
 
 
 
-## Especialidades
+# Biografía
+
+## Orígenes
 
 
 
-## Rasgos
+## La invasión mazarina (4000-4002)
 
 
 
-## Historia
-
-### Orígenes
+## Las guerras hobgoblin (4003-4004)
 
 
 
-### La hermandad del cuervo
+## Esclavo de Ustilus (4005)
 
 
 
-### Héroe de guerra 
+## Final (4005)
 
 
 
-### La campaña Hobgoblin
+# Rasgos y especialidades
 
 
 
-### El caído
+# Relaciones
 
-
-
-### Final
-
-
-
-## Relaciones
-
-### Madeleine
+## Abshalom
 
 ""
 
-### Tirion
+## Fileon
 
 ""
 
-### Yabu
+## Li Zin
 
 ""
 
-### Lucanor
+## Lucanor
 
 ""
 
-### Reki
+## Madeleine
 
 ""
 
-### Timmy
+## Reki
 
 ""
 
-### Fileon
+## Timmy
 
 ""
 
-### Abshalom
+## Thirion
 
 ""
 
-### Li Zin
+## Xingonu
 
 ""
 
-### Xingonu
+## Yabu
 
 ""
 
-### Zarsha
+## Zarsha
 
 ""
