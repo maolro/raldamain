@@ -6,7 +6,7 @@ alineamiento: Legal neutro
 fecha-de-nacimiento: 4084
 fecha-de-muerte: 4010
 rangos: Filos perforantes, guerrero divino, reflejos, combate doble
-imagen: eliyet.jpg
+image: eliyet.jpg
 ---
 
 "Cuando miro a Ustilus no veo más que un eterno foso de injusticia y corrupción. Como yo lo veo nuestra nación debe ser limpiada desde sus cimientos si se desea obtener un cambio duradero sobre ella. Los justos inevitablemente recibirán su debida recompensa mientras que los pecadores recibirán su merecido castigo. Espero que escojas el camino correcto y podamos colaborar para formar una mejor nación"
