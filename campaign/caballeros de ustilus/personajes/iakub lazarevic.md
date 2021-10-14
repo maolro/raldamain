@@ -5,7 +5,8 @@ nacionalidad: Uzdan de los Reinos Libres
 alineamiento: Neutral maligno
 fecha-de-nacimiento: desconocida
 fecha-de-muerte: desconocida
-rangos: Filos perforantes, Reflejos, Rastrear, Combate doble, Influ
+rangos: Filos perforantes, Reflejos, Rastrear, Combate doble, Influenciar
+image: iakub.jpg
 ---
 
 "Soy Iakub Lazarevic. Seguramente ya conozcas mi nombre y si me estás contactando es porque ya sabes de lo que soy capaz. Por el precio adecuado puedo hacer lo imposible, sea matar reyes, empezar guerras u obtener secretos olvidados. Así que deseas eso. Bien, bien... Hace tiempo que no he tenido un buen desafío. Deja el dinero en la localización que ahora te proporcionaré y dentro de poco verás cumplido tu encargo."
