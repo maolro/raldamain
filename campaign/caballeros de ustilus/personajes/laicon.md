@@ -9,7 +9,7 @@ rangos: Plantilla Sombria, Aptitud con filos ligeros, Reflejos, Magia de Evocaci
 image: laicon.jpg
 ---
 
-
+@
 
 # Biografía
 
