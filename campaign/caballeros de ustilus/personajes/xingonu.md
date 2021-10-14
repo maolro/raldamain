@@ -1,5 +1,5 @@
 ---
-title: Yabu "Hob"
+title: Xing
 main: Caballeros de Ustilus
 nacionalidad: Hobgoblin
 alineamiento: Caótico maligno
