@@ -4,12 +4,12 @@ main: Caballeros de Ustilus
 nacionalidad: Hobgoblin
 alineamiento: Legal neutro
 fecha-de-nacimiento: desconocida
-fecha-de-muerte: 4003
+fecha-de-muerte: desconocida
 rangos: Artes marciales, Fortitud, Guerrero divino, Reflejos
 image: kruge.jpg
 ---
 
-
+""
 
 # Historia
 
@@ -25,7 +25,11 @@ image: kruge.jpg
 
 
 
-## Final
+## Siervo de Faiyaku (4004-4009)
+
+
+
+## Refundando la Legión (4010-)
 
 
 

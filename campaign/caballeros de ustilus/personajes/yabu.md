@@ -9,63 +9,82 @@ rangos: Aptitud con filos pesados, Armaduras, Plantilla Oni, Magia temporal
 image: yabu.jpg
 ---
 
-## Especialidades
+
+
+# Biografía
+
+## Orígenes
 
 
 
-## Rasgos
+## Soldado de Ustilus (4001-4003)
 
 
 
-## Historia
-
-### Orígenes
+## Líder insurgente (4003-4004)
 
 
 
-### Soldado de Ustilus
+## La campaña del sur (4005)
 
 
 
-### Transformación en Oni
+## Gobernador de Thalos y agente de Chandrial (4005-4008)
 
 
 
-### La toma de Thalos
+## Caída y realzamiento (4008-4009)
 
 
 
-### La campaña Temash
+## Redención (4010)
 
 
 
-## Relaciones
+## Exilio en las tierras Shinri (4010-)
 
-### Madeleine
 
-""
 
-### Kruge
+# Rasgos y especialidades
 
-""
 
-### Regulus
 
-""
+# Relaciones
 
-### Abshalom
+## Abshalom
 
 ""
 
-### Fileon
+## Ajek
+
+
+
+## Chandrial
+
+
+
+## Eliyet
+
+
+
+## Fileon
 
 ""
 
-### Lucanor
+## Ileria
+
+
+
+## Kruge
 
 ""
 
-### Chandrial
+## Madeleine
 
 ""
 
+## Regulus
+
+""
+
+## Xingonu

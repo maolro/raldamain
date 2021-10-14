@@ -1,42 +1,46 @@
 ---
-title: Stannis
+title: Stannish
 main: Caballeros de Ustilus
 nacionalidad: Reino élfico de Neronvain 
 alineamiento: Legal neutro
 fecha-de-nacimiento: 3937
 fecha-de-muerte: desconocida
-rangos: Aptitud con filos ligeros, Reflejos, Aptitud con armas a distancia
+rangos: Filos perforantes, reflejos, rastrear, a distancia
 image: stannis.jpg
 ---
 
-## Especialidades
+# Biografía
+
+## Orígenes
 
 
 
-## Rasgos
+## Guardaespaldas de Ileria (4001-4007)
 
 
 
-## Historia
-
-### Orígenes
+## Vínculo con Madeleine (4007-4010)
 
 
 
-### Guardaespaldas de Ileria
+## Una decisión clave (4010)
 
 
 
-## Relaciones
+# Rasgos y especialidades
 
-### Ileria
+
+
+# Relaciones
+
+## Ileria
 
 ""
 
-### Fileon
+## Fileon
 
 ""
 
-### Madeleine
+## Madeleine
 
 ""

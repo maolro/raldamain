@@ -24,6 +24,8 @@ rangos: Filos cortantes, guerrero divino, armaduras, presencia, ascendencia cele
 
 ## Final (4010)
 
+"Yo soy el elegido de Mekhatim y la salvación de este mundo podrido. Esta batalla no la podemos perder porque nuestra causa es la más buena y justa, y por ello la Hueste Celestial está de. Sin mí no serías nadie y tu propósito en esta vida de es servirme con la más absoluta devoción ¡Ahora ve y muere por mí!"
+
 # Rasgos y especialidades
 
 
