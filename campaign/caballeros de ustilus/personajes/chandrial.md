@@ -11,6 +11,8 @@ image: chandrial.jpg
 
 "Tu sufrimiento ha terminado y la salvación que tanto deseaste ya está aquí. Ahora seré yo la luz que te guiará y dará sentido a tu vida. Si escoges seguirme juntos traeremos un mundo más justo para todos. Un mundo donde el mal y la corrupción sean erradicados y las personas de todo el mundo vivan en paz como hermanos. Para que este sueño se haga realidad solo necesitas tener fe. Fe en mí."
 
+Chandrial I, conocido como el santo, fue Mhajid del sacro imperio de Arshalán entre 4006 y 4010. Conocido como un genio militar y férreo creyente de Mekhatim, durante su breve reinado Chandrial revitalizó las instituciones religiosas y emprendió numerosas conquistas para expandir la influencia arshalaní. Él se consideró como el heraldo de Mekhatim y gobernó como tal, centrando toda la autoridad de la nación en la corona y tratando toda disidencia como blasfemia. Uno de los mayores sucesos durante su reinado fue la Guerra de Purificación contra Ustilus, una ambiciosa invasión militar que concluiría con su muerte a las puertas de la última muralla de Trono de Feyn. 
+
 # Biografía
 
 ## Orígenes
