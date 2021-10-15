@@ -9,6 +9,8 @@ rangos: Aptitud con armas de fuego, Reflejos, Presencia
 image: pantor.jpg
 ---
 
+"Soldados míos. Esta batalla va ser más cruda que cualquier otra y necesito que os esforcéis al máximo de vuestras habilidades si queremos triunfar. Yo como vuestro capitán soy responsable de todos vosotros y me aseguraré que salgáis de aquí con vida cueste lo que cueste. ¿Entendido? ¡Pues dejad de vacilar y adelante! "
+
 # Biografía
 
 ## Orígenes

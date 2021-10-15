@@ -5,11 +5,13 @@ nacionalidad: Jaddi, pero residente en Dairov
 alineamiento: Neutral maligno
 fecha-de-nacimiento: 3957
 fecha-de-muerte: 4005
-rangos: Plantilla Sombria, Aptitud con filos ligeros, Reflejos, Magia de Evocacion
+rangos: Ascendencia sombría, Filos perforantes, Reflejos, Magia sombría
 image: laicon.jpg
 ---
 
-"Siempre me asombra la devoción de un fanático capaz de vivir una mentira en lug"
+"Siempre me sorprende la devoción de un fanático dispuesto a vivir una mentira en lugar de aceptar la realidad. Yo te hago esta pregunta: ¿Cómo sabes qué quiere tu dios de ti? Tú me dirás que te habla, que tienes sus sagradas escrituras para guiarte. Pero cómo eres capaz de comprender los deseos de una entidad mucho más grande de ti, una entidad para la cual eres irrelevante. No lo sabes, y continúas sirviéndola ciegamente y malgastando tu vida para una causa sin sentido. Yo ya he abierto los ojos y me he liberado de la tiranía de los dioses, y ahora espero guiar a toda la humanidad para que pueda romper esta cadena que tanto la ata y que por una vez en la historia viva para satisfacer sus propios deseos y no los de un ser superior."
+
+
 
 # Biografía
 

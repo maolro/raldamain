@@ -6,7 +6,10 @@ alineamiento: Caótico maligno?
 fecha-de-nacimiento: 3935
 fecha-de-muerte: 4007
 rangos: Ascendencia abisal, magia mental, magia ilusoria, magia espacial, mente desencadenada
+image: pandeshar.jpg
 ---
+
+"Yo... Yo soy el gran sabio Pandeshar, aquel que todo lo conoce. Conozco la respuesta a tus más profundas cuestiones y me encantaría contártela, pero ten paciencia. Mi mente ya no funciona como antes y a veces desvaría de maneras que ni yo comprendo. Además, puede que la oscura verdad que buscas te cause tal impacto que acabarás enloqueciendo como yo. ¿Pero qué sabré yo? Solo soy un viejo loco."
 
 # Biografía
 

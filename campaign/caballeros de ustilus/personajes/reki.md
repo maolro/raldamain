@@ -6,7 +6,10 @@ alineamiento: Neutral bueno
 fecha-de-nacimiento: 3988
 fecha-de-muerte: sigue viva
 rangos: Filos perforantes, reflejos, influenciar, combate doble
+imagen: reki.jpg
 ---
+
+
 
 # Biografía
 
