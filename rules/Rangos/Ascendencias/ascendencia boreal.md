@@ -19,7 +19,7 @@ Incrementa tu CON por 1.
 
 <u>Caminante del hielo:</u> No sufres penalizaciones al caminar sobre el hielo y puedes elegir no dejar huellas al pasar. Tienes la habilidad de caminar sobre el agua, congelándola a tu paso. No puedes caminar sobre el agua en el caso de una tormenta o aguas rugientes
 
-<u>Canalizar el frío</u>: Puedes elegir sufrir 2 daño no-letal para infundir tus ataques con hielo. Un ataque infundido hace +2 daño hielo y ralentizará a tu objetivo durante una ronda si logras reducir sus PV. Este efecto durará una ronda salvo que te encuentren en un entorno frío.
+<u>Canalizar el frío</u>: Puedes elegir sufrir 1 daño no-letal para infundir tus ataques con hielo. Un ataque infundido hace +2 daño hielo y ralentizará a tu objetivo durante una ronda si logras reducir sus PV. Este efecto durará una ronda salvo que te encuentren en un entorno frío.
 
 <u>Visión ártica:</u> Las tormentas de nieve y niebla no dificultan tu visión, permitiéndote ver sin penalizaciones en un radio de 60 pies. Esta habilidad no funciona con humo o gases que dificultan la visión.
 
