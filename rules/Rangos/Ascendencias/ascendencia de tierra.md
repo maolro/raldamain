@@ -38,7 +38,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu FUE por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
 
-<u>Ola de tierra:</u> Tu velocidad de Excavar y Escalada aumenta a 30 pies. Como acción estándar puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas que estén en tu camino deben tirar destreza contra tu tiro de magia elemental o sufren 1+éxito daño contundente y ser empujadas 10 pies (gasta 1 ventaja para tropezar a un enemigo o empujarlo 5 pies adicionales). Sufrirás 2 daño no-letal cada turno que mantengas la ola de tierra salvo que gastes una acción de movimiento. Ola de tierra puede usarse como acción de movimiento si estás en tu Región vinculada.
+<u>Ola de tierra:</u> Tu velocidad de Excavar y Escalada aumenta a 30 pies. Como acción estándar puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas que estén en tu camino deben tirar destreza contra tu tiro de magia elemental o sufren 1d6 + SAB daño contundente y son empujadas 1d6 x 5 pies en cada dirección. Si deseas mantener la ola de tierra durante un turno adicional deberás gastar una acción de movimiento adicional o sufrir 1 daño no-letal. Puedes además mantener la habilidad Forma de montaña aunque utilices Ola de tierra para moverte.
 
 <u>Ataques infundidos:</u> Tus ataques físicos incrementan su daño base por 2 y están recubiertos de sólidas piedras, contando como si estuviesen hechos de Adamantina para los propósitos de dureza. Si empleas puños de tierra en un ataque infundido podrás reducir la DEF de la armadura que lleve objetivo al impactar.
 
