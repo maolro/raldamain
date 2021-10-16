@@ -1,5 +1,5 @@
 ---
-  title: Ascendencia de Tierra
+title: Ascendencia de Tierra
 category: Ascendencias
 ---
 
