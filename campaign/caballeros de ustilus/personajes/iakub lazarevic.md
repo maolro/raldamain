@@ -29,7 +29,7 @@ image: iakub.jpg
 
 ## La última jugada (4010)
 
-"Míralos. Han abandonado todo lazo que les unía y ahora están matándose sin sentido. A lo largo de mi vida he matado a muchas personas por dinero pero tras tantos años me he dado cuenta que todo ser humano es capaz de matar si se le empuja adecuadamente. Ideología, fe, nación. Eso no son más que palabras vacías, grandes mentiras que hacen perder la razón. Si manipulas estas adecuadamente eres capaz de causar muerte a una escala inmensa sin tener que levantar "
+"Míralos. Han abandonado todo lazo que les unía y ahora están matándose sin sentido. A lo largo de mi vida he matado a muchas personas por dinero pero tras tantos años me he dado cuenta que todo ser humano es capaz de matar si se le empuja adecuadamente. Ideología, fe, nación. Eso no son más que palabras vacías, grandes mentiras que hacen perder la razón. Si manipulas estas adecuadamente eres capaz de causar muerte a una escala inmensa sin tener que levantar ni un dedo."
 
 # Rasgos y especialidades
 
