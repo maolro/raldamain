@@ -9,6 +9,8 @@ rangos: Filos perforantes, reflejos, influenciar, combate doble
 image: reki.jpg
 ---
 
+"Sé que podría tomar la vía segura y quedarme, pero si lo hago no sentiré más que culpa y arrepentimiento. Para mí sois familia, y por ello lucharé a vuestro lado cueste lo que cueste. Entended que ya no soy la niña asustada que hace tanto adoptasteis, sino una soldado de la Hermandad del cuervo en toda regla. Ahora me he hecho más fuerte y por fin podré protegeros igual que me protegisteis a mí."
+
 
 
 # Biografía

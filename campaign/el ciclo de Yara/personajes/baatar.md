@@ -4,7 +4,7 @@ nacionalidad: Kratoi
 alineamiento: Legal Maligno
 fecha-de-nacimiento: 4038
 fecha-de-muerte: 4073
-rangos: Ingeniería, Pilotar, Alquimia
+rangos: Química, fabricacion, presencia
 image: baatar.jpg
 ---
 
