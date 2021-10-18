@@ -9,15 +9,7 @@ rangos: Mente desencadenada, magia de evocación, magia espacial, magia de prote
 image: zanshillah.jpg
 ---
 
-# Biografía
-
-## Orígenes
-
-
-
-## Alto cargo del Pacto (3997-4005)
-
-
+"Bienvenidos a vuestro nuevo hogar. Aquí, niños míos, estaréis seguros de las maldades del mundo exterior y nadie podrá haceros daño.
 
 ## Elaboración de un nuevo hogar (4005-4007)
 

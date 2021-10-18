@@ -3,7 +3,7 @@ title: Eliyet
 main: Caballeros de Ustilus
 nacionalidad: Jaddi
 alineamiento: Legal neutro
-fecha-de-nacimiento: 4084
+fecha-de-nacimiento: 4082
 fecha-de-muerte: 4010
 rangos: Filos perforantes, guerrero divino, reflejos, combate doble
 image: eliyet.jpg

@@ -1,10 +1,10 @@
 ---
-title: Bashir
+title: Vashir
 nacionalidad: nómada
 alineamiento: Caótico maligno
-fecha-de-nacimiento: 4011
+fecha-de-nacimiento: 3991
 fecha-de-muerte: 4083
-rangos: Aerokinesia, Elementalismo avanzado (Rayo, Tormenta), Plantilla de Aire
+rangos: Ascendencia de aire, magia de aire, magia de tormenta,
 image: bashir.jpg
 ---
 
