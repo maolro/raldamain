@@ -11,6 +11,8 @@ image: rostam.jpg
 
 "Por Tamashkhan han pasado centenares de grandes imperios, todos ellos creyendo podrán someternos y perdurarán para siempre. Solo tenéis que ver sus ruinas en el desierto para daros cuenta que todo inevitablemente caerá y quedará consumido por las arenas. ¿Creéis de verdad que sois diferentes? Pronto formaréis parte de la historia, y yo me aseguaré de enterraros."
 
+Rostam fue un revolucionario Temash y gobernador de Tamashkhan entre 4006 y 4010. 
+
 # Biografía
 
 ## Orígenes
