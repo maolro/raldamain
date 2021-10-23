@@ -51,9 +51,17 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 Esta es una lista de criaturas mágicas ideales para invocaciones relacionadas con magia de naturaleza.
 
+## Kodama (nivel 1)
+
 ## Gran lobo (nivel 3)
 
+## Oso (nivel 3)
+
 ## Elemental de madera (nivel 3)
+
+## Elemental de tierra (nivel 6)
+
+## Bestia de musgo (nivel 6)
 
 ## Elemental de zarzas (nivel 6)
 
@@ -97,7 +105,7 @@ Esta es una lista de criaturas mágicas ideales para invocaciones relacionadas c
 
 **Parada**: +7 (+2 contra criaturas de su mismo tamaño)
 
-## Árbol guardián (nivel 9)
+## Gigante de piedra (nivel 9)
 
 **PV:** 14			**VT:** 20	 		**DEF:** 8
 
@@ -129,5 +137,14 @@ Esta es una lista de criaturas mágicas ideales para invocaciones relacionadas c
 
 ****
 
-**Parada**: +9 (+4 contra criaturas de su mismo tamaño). Puede protegerse de proyectiles y si obtiene defensa crítica puede desviar un proyectil a otro enemigo a 15 pies.
+**Parada**: +9 (+13 contra criaturas de su mismo tamaño). Puede protegerse de proyectiles y si obtiene defensa crítica puede desviar un proyectil a otro enemigo a 15 pies.
 
+## Devorador de metal (nivel 9)
+
+## Árbol guardián (nivel 9)
+
+## Guerrero espiritual (nivel 12)
+
+
+
+## Dragón de los bosques (nivel 15)
