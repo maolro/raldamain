@@ -58,7 +58,7 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 ## Ilesit (nivel 10)
 
-**PV:** 16		**VT:** 17	 		**DEF:** 7 (resistencia 3, armadura natural +4)
+**PV:** 16-		**VT:** 17	 		**DEF:** 7 (resistencia 3, armadura natural +4)
 
 **FUE:** 1	**DES:** 3	**CON:** 5	**INT:** 4	**SAB:** 6 	**CAR:** 1
 
@@ -108,6 +108,10 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 **Nube tóxica:** Una vez por ronda Ilesit puede liberar una nube tóxica en respuesta a sufrir daño.
 
+****
+
+Ilesit solo combatirá en aquellos campos de batalla que más le beneficien, luchando junto a sus bestias fúngicas en un lugar con alta presencia de hongos. Si tiene tiempo para preparar el campo empleará Crecimiento acelerado y Animar hongos para dificultar enormemente el entorno frente a sus enemigos y activar su habilidad de regeneración. Cuando empiece el combate Ilesit creará una nube tóxica en el lugar donde estén acumulados todos sus enemigos y guardará Enmarañar para usarlo contra el más lento de sus enemigos cuando este intente escapar. La estrategia de Ilesit se basa en separar y atrapar a sus enemigos usando muros de hongos y enmarañar para dejarlos a la merced de sus bestias fúngicas. Contra enemigos con alta armadura usará esferas fúngicas para mermar sus defensas y contra aquellos caracterizados por su alta velocidad guardará Nubes tóxicas para formarlas en los lugares hacia donde se dirijan. Ilesit trata los hongos como extensión de su cuerpo y si estos son dañados él usará sus habilidades para reponerlos si no se encuentra en un claro peligro, empleando así crear bestia fúngica o crecimiento acelerado. Él también reservará una nube tóxica para liberarla cuando sea herido y en el caso que haya gastado dicho uso y se encuentre acorralado usará Transporte fúngico para fusionarse con la bestia fúngica más lejana, fingiendo así su muerte a manos de sus enemigos para volver a atacarlos por sorpresa. Ilesit se retirará del campo de batalla cuando sea reducido a menos de la mitad de sus PV, fusionándose con sus hongos para aparentar su muerte.
+
 ## Laicon de Dairov (nivel 12)
 
 **PV:** 10		**VT:** 18	**DEF:** 5 (resistencia 3, cuero)
@@ -116,7 +120,7 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 ------
 
-**Talentos:** Persuasión 4, Engaño 2, Averiguar intenciones 4, Estudio 2 (teología, espíritus), Atletismo 4
+**Talentos:** Persuasión +10, Engaño +8, Averiguar intenciones +7, Estudio +4 (teología, espíritus), Atletismo 
 
 **Rangos:** Filos perforantes V, Ascendencia sombría IV, Reflejos III, Magia sombría I
 
@@ -162,9 +166,13 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 **Forma sombría:** Laicon activa de inmediato su habilidad Forma sombría. Esta habilidad solo puede usarse si Laicon está en forma defensiva.
 
+****
+
+Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el terreno y las debilidades de sus adversarios para alcanzar la victoria. Si él lucha será siempre en un entorno a oscuras para poder emplear sus siniestras habilidades a su máximo potencial, retirándose siempre a dicho lugar empleando su gran velocidad en el caso que sea atacado en un lugar que no le beneficia. Cuando empiece el combate en dicho entorno Laicon creará una nube de oscuridad para dividir a un grupo enemigo y esperará fuera de esta para atacar al primero que emerja con su espada ropera, obteniendo así los beneficios de ataque furtivo (el prioritizará enemigos con poca sabiduría y destreza). En su siguiente acción se colocará en posición defensiva y preparará un salto sombrío para teletransportarse junto a otro enemigo poco atento para continuar atacándolo (él esperará hasta que todos sus enemigos hayan atacado para que así no puedan verlo venir). Cuando ataque a dicho enemigo hará un ataque sorpresa y lo seguirá de una finta y otro ataque, guardando una acción estándar para realizar crear oscuridad o salto sombrío según más convenga (gastará vitalidad para mejorar el ataque si lucha contra enemigos con mucha defensa). Si se bate en un duelo contra un único individuo hará siempre dos ataques, una finta o desarme y entrará en posición defensiva para usar forma sombría si su enemigo amenaza los PV. Esta situación es la que más agrada a Laicon debido a su tradición como caballero e irá reduciendo a sus enemigos uno a uno para alcanzar dicho punto, aprovechándo lo que ya conozca de ellos para manipularlos de la manera más conveniente. Laicon intentará siempre huir si puede pero en el caso que esté acorralado sin salida luchará hasta la muerte para convertirse en mártir para su causa.
+
 ### Almirante Sisro (nivel 13)
 
-**PV:** 12	**VT:** 18	**DEF:** 3 (resistencia 3)
+**PV:** 12	**VT:** 18	**DEF:** 4 (ligera, resistencia 3)
 
 **FUE:** 4	**DES:** 6	**CON:** 3	**INT:** 2	**SAB:** 2	**CAR:** 6
 
@@ -178,23 +186,53 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 **Sentidos:** Vista ígnea 100 pies
 
-**Movimiento:** 25 pies
+**Movimiento:** 25 pies, escalada 25 pies, vuelo 60 pies (sufre 2 daño no-letal)
 
 **Prioridad:** 7 (2 estándar + 3 movimiento)
 
 ------
 
-**Conexión elemental:** Sisro recupera 1 Vitalidad si se encuentra en un lugar de calor extremo
+**Conexión elemental:** Se recupera 1 vitalidad al principio de su turno si está en un lugar en llamas o calor extremo.
 
-**Aura abrasadora:** 
+**Furia del fuego:** Pierde 1 vitalidad para hacer +2 daño de fuego con sus ataques e infligir una quemadura media si reduce PV.
+
+**Aura abrasadora:** Todas las criaturas sin resistencias al fuego que empiecen su turno a 30 pies o le hagan un ataque natural sufren 1 daño de fuego. Puede sufrir 1 daño a la vitalidad para provocar una quemadura leve a todas las criaturas con armadura metálica, recibir inmunidad de fuego y resistencia 4 al frío.
+
+**Fuego puro:** Los ataques elementales de fuego ignoran las resistencias que tengan los objetivos afectados.
+
+**Ataques en secuencia:** Recibe ventaja en todos sus ataques hechos contra criaturas con quemaduras.
+
+**Evasión:** No sufre daño obligatorio por ataques de área con radio inferior a 20 pies.
+
+**Esquiva asombrosa:** Puede defenderse contra ataques sorpresa y contra enemigos invisibles u ocultos.
 
 ------
 
+**Ataque elemental** (acción de movimiento, crítico 18-20): +11, 1d6 + 6 fuego y provoca una quemadura media si el objetivo está a 30 pies o menos (severa si lleva armadura). Enciende un fuego de tamaño 5 pies. Si reduce PV provoca una quemadura media. Puede gastar un ataque almacenado o sufrir 1 daño no-letal para modificarlo para crear un látigo de fuego, bola de fuego, descenso de fuego o serpiente de fuego.
 
+**Sobrecarga** (acción de movimiento): Carga un ataque elemental llegando a un máximo de 6. Puede gastar un ataque elemental para recibir un bonificador +1 al ataque y daño además de incrementar el área de efecto por 5 pies. Si es herido mientras tiene ataques cargados los liberará en una explosión que hará 1d6 + puntos cargados daño de fuego y afectará a un área de 5 x puntos cargados. Él también sufrirá 2 + puntos cargados daño no-letal por este efecto. 
+
+**Artes marciales** (acción de movimiento): +9, 1d4 + 4 contunente + 2 daño de fuego e inflige quemadura leve si reduce PV o realiza una maniobra de combate. Empuja 10 pies y (1/turno) +9 o aturdido. Puede emplear una acción de movimiento adicional para ralentizar o empujar 10 pies adicionales.
+
+**Reserva de energía** (acción bonus, -1 vitalidad): Hace un ataque adicional, aumenta el radio de ataque por 10 pies o ataca a todas las criaturas en un cono de 15 pies.
+
+**Pirotecnia** (acción estándar): Aumenta o disminuye un total de 9 fuegos diferentes por 5 pies.
+
+**Muro de fuego** (acción estándar): Crea un muro de fuego de 30 x 10 pies de tamaño. Toda criatura que pase por el muro de fuego sufrirá 1 daño de fuego y una quemadura media (quemadura leve si tiene éxito en un tiro de esquiva con dificultad +7)
+
+**Propulsión** (acción estándar): Vuela 60 pies en cualquier dirección sin provocar ataques de oportunidad.
+
+**Lluvia de brasas** (acción de turno completo, gasta 6 ataques almacenados): +11, 2d6 + 6 fuego e inflige una quemadura media. Afectará a 6 espacios de 10 pies cúbicos cada uno y todos los lugares impactados serán afectados por un muro de llamas.
+
+------
+
+**Parada elemental**: +11, puede defenderse de ataques cuerpo a cuerpo. Puede gastar un ataque almacenado para crear un muro de fuego.
+
+**Esquiva:** +9. Se mueve 5 pies. Puede defenderse de ataques sorpresa y ataques hechos por criaturas invisibles.
 
 ****
 
-**Parada:** 
+El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando incansabemente con su magia elemental sin importarle las consecuencias de esta. En su primer turno hará dos ataques elementales (uno con acción de movimiento y otro con reserva de energía) alterados con Maestría de las llamas para afectar el máximo área de efecto (esto le cuestará una acción de movimiento y sufrirá 1 daño no-letal) y añadirá un ataque a la reserva. Él también preparará una propulsión para moverse lo más lejos posible en el caso que un enemigo se acerque demasiado a él y si está amenazado por múltiples enemigos gastará su ataque almacenado para crear un muro de fuego. Después de realizar dicho ataque Sisro se colocará en un lugar elevado y combatirá de una manera más defensiva, usando pirotecnia para manipular el campo de batalla y empleando su reserva y maestría de las llamas (sufrirá 1 daño no-letal) para crear una serpiente de fuego. Añadirá además dos cargas a su reserva, realizará un ataque elemental y preparará una propulsión para moverse de nuevo si es amenazado. En los turno siguientes Sisro irá alternando entre luchar de manera más agresiva tal como se especifica en su primer turno y de manera defensiva según más le convenga en cada situación. La mayor baza de Sisro es su lluvia de brasas, la cual activará en el momento cuando obtenga seis cargas y la lanzará desde un lugar elevado para provocar un devastador incendio en el campo de batalla. Cada turno Sisro perderá 2 vitalidad por Maestría de llamas y su Aura abrasadora pero a él no le importa, empujando a su cuerpo hasta el límite para alcanzar una victoria rápida.
 
 ## Minjee (nivel 14)
 

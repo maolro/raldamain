@@ -17,7 +17,7 @@ Añade tu rango de Reflejos a todos los tiros defensivos de esquiva
 
 <u>Evasión</u>: No sufres daño obligatorio por ataques de área al obtener éxito en el caso que tengan radio de efecto inferior a 20 pies. Además, cuando un enemigo falle su ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto aumenta a 10 pies a rango IV).
 
-<u>Esquiva asombrosa:</u> Reaccionas al peligro antes de que tus sentidos te permitan hacerlo. Puedes usar esquivar contra ataques sorpresa y atacantes invisibles, aunque estos seguirán teniendo ventaja y recibirán la bonificación al daño por [ataque furtivo](https://raldamain.com/rules/Rangos/Armas/filos perforantes.html#rango-i). Esquiva asombrosa no funciona contra fintas.
+<u>Esquiva asombrosa:</u> Reaccionas al peligro antes de que tus sentidos te permitan hacerlo. Puedes usar esquivar contra ataques sorpresa y atacantes invisibles, aunque estos seguirán teniendo ventaja y recibirán la bonificación al daño por [ataque furtivo](https://raldamain.com/rules/Rangos/Armas/filos perforantes.html#rango-i). Esquiva asombrosa no funciona contra fintas pero te permite usar Esquiva en lugar de averiguar intenciones para evadirlas.
 
 ## Rango III
 
