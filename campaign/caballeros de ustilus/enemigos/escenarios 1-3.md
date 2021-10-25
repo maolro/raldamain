@@ -1,3 +1,7 @@
+---
+title: Escenarios 1-3
+---
+
 ## Recluta mazarino (nivel 1)
 
 **PV:** 5			**VT:** 5	 		**DEF:** 6 (media +2)
