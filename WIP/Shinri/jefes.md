@@ -82,7 +82,7 @@
 
 **Canalizar el frío:** Sufre 1 daño no-letal para añadir +2 daño frío a todos sus ataques físicos y congelar al reducir PV durante una ronda.
 
-**Aura de vientos:** Recibe ventaja en sus tiros de venaja y sigilo y cada criatura que se encuentre a 15 pies de él sufrirá 2 daño de frío. Esta habilidad no funcionará si se encuentra en un entorno que no esté frío.
+**Aura de vientos:** Recibe ventaja en sus tiros de defensa contra ataques a distancia y sigilo además que cada criatura que se encuentre a 15 pies de él sufrirá 2 daño de frío. Esta habilidad no funcionará si se encuentra en un entorno que no esté frío.
 
 **Evasión:** No sufre daño obligatorio por ataques de área con radio inferior a 20 pies.
 
@@ -115,4 +115,40 @@
 ****
 
 **Tácticas:** (inicio) Bajar temperaturas + Congelación rápida +Rayo de hielo (2) + Neblina polar (combate) Tormenta de nieve/Ventisca + Rayo de hielo/Puño de hielo (2) + Neblina polar/Muro de hielo
+
+## Kayeru (nivel 10)
+
+**PV:** 12			**VT:** 22	 		**DEF:** 
+
+**FUE:** 1	**DES:** 2	**CON:** 1	**INT:** 1	**SAB:** 1	**CAR:** 1
+
+------
+
+**Talentos:** Atletismo +6, Acrobacias +6, Heroísmo +7, Averiguar intenciones +7, Percepción +5
+
+**Rangos:** Filos cortantes IV, Reflejos III, Guerrero divino II, Maldición asura grado 3
+
+**Movimiento:** 20 pies
+
+**Sentidos:** vistión árctica 60 pies
+
+**Resiste:** Frío 4, Fuego 2
+
+**Inmune:** Terreno difícil
+
+**Prioridad:** 4 (2 estándar + 2 movimiento)
+
+------
+
+**Conexión elemental:**
+
+------
+
+**Rayo gélido** (acción de movimiento, CRIT 19-20): 
+
+------
+
+**Parada elemental** +9
+
+
 

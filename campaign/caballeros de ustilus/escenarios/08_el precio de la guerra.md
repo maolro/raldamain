@@ -36,14 +36,6 @@ Ajek viaja al territorio de los insurgentes hobgoblin para conseguir su alianza 
 
 Las tropas ustilesas se enfrentan a un ejército hobgoblin a las orillas del río Orzan.
 
-2x Unidad de soldados de la legión, 2x Unidad de arcabuceros de la legión, 2x Élite de la legión, 1x Zelota de la legión
-
-5x Jinete huargo, 1x Caballería de élite (2 grupos)
-
-6x Mercenario osgo (2 grupos)
-
-1x Gran ogro, 1x Unidad de arcabuceros de la legión, 2x  Unidad de soldados de la legión, 4x Élite de la legión
-
 ### Conquista de la colina
 
 Los ustileses intentan conquistar una colina donde se encuentran los cañones de la Legión
