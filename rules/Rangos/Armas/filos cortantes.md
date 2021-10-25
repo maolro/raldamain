@@ -11,7 +11,7 @@ Has decidido valerte de las armas que llevan utilizando los caballeros y guerrer
 
 Añade tu rango de filos cortantes a tiros de ataque y defensa con un arma de esta categoría
 
-<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Esta habilidad te permite declarar un ataque como Ataque poderoso, lo cual te otorgará un penalizador -2 en tiradas de ataque a cambio que tus ataques inflijan +1d6 daño base y provoquen sangrado al herir a tu objetivo. A rango III y V puedes volver a incrementar el penalizador por -2 para infligir 2 puntos adicionales de daño. Empleando una acción de movimiento un personaje puede reducir el penalizador de un ataque poderoso por 2.
+<u>Ataque poderoso:</u> Eres capaz de cambiar precisión por mayor fuerza de ataque. Esta habilidad te permite declarar un ataque como Ataque poderoso, lo cual te otorgará un desventaja en tiradas de ataque a cambio que tus ataques inflijan +1d6 daño base y provoquen sangrado al herir a tu objetivo. A rango III y V un personaje puede recibir un dado adicional de desventaja a cambio de volver a incrementar el daño de ataque poderoso por 1d6. Empleando una acción de movimiento un personaje puede reducir el penalizador de un ataque poderoso por un dado de desventaja.
 
 ## Rango II
 

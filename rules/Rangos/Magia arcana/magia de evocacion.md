@@ -9,9 +9,9 @@ Al escoger esta escuela has decidido especializarte en una de las formas mas des
 
 Añade tu rango de a todos tus tiros relacionados con magia de evocación. Tu reserva aumenta por 2+Rango chi.
 
-<u>Rayo de energía:</u> Como acción estándar dispara un rayo de energía pura a un enemigo en hasta 90 pies de distancia. Este ataque hace 1d6 + INT daño de fuerza y atraviesa toda la defensa salvo Resistencia mágica. Un rayo de energía no consume chi de tu reserva. Una vez por ataque puedes gastar 1 chi con esta habilidad para hacer que el rayo tenga un radio de impacto de 5 pies e incremente su daño por 2, convirtiéndolo en un ataque de área. A rango III el radio de impacto aumenta por 5 pies y su daño por 3 (a rango V el daño aumentará por 4 y el radio de impacto por 10 pies) al gastar 1 chi para infundir el ataque.
+<u>Rayo de energía:</u> Como acción estándar dispara un rayo de energía pura a un enemigo en hasta 90 pies de distancia. Este ataque hace 1d6 + rango daño de fuerza y atraviesa toda la defensa salvo Resistencia mágica. Un rayo de energía no consume chi de tu reserva. Una vez por ataque puedes gastar 1 chi con esta habilidad para hacer que el rayo tenga un radio de impacto de 5 pies e incremente su daño por 2, convirtiéndolo en un ataque de área. A rango III el radio de impacto aumenta por 5 pies y su daño por 3 (a rango V el daño aumentará por 4 y el radio de impacto por 10 pies) al gastar 1 chi para infundir el ataque.
 
-<u>Descarga de energía:</u> Empleando un chi de tu reserva puedes liberar energía mágica en un cono de 15 pies. Una descarga de energía es un ataque de área que hace 1d8 + INT daño de fuerza. Puedes gastar chi en una descarga de energía de la misma manera que un rayo para aumentar tanto su área como su daño base.
+<u>Descarga de energía:</u> Empleando un chi de tu reserva puedes liberar energía mágica en un cono de 15 pies. Una descarga de energía es un ataque de área que hace 1d8 + rango daño de fuerza. Puedes gastar chi en una descarga de energía de la misma manera que un rayo para aumentar tanto su área como su daño base.
 
 <u>Parada mágica:</u> Eres capaz de emplear rayos de energía para protegerte de ataques, lo cual se conoce como una parada mágica. Una parada mágica sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 

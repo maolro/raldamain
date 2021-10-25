@@ -9,7 +9,7 @@ Te has decantado por la forma mas compleja en la que se puede encontrar el agua 
 
 Añade tu rango a todos tus tiros de magia elemental de esangre
 
-<u>Ataque elemental:</u> Como acción estándar puedes manipular la sangre del objetivo, provocándoles gran dolor interno. Este ataque hace 1d6 + CAR daño necrótico a un enemigo a 60 pies de ti, el cual podrá resistir con un tiro de CON. Si logras infligir daño a los PV con este ataque tu objetivo sufrirá de inmediato los efectos de sangrado (también sufrirá sangrado si obtienes un golpe crítico o está afectado por heridas permanentes).
+<u>Ataque elemental:</u> Como acción estándar puedes manipular la sangre del objetivo, provocándoles gran dolor interno. Este ataque hace 1d6 + rango daño necrótico a un enemigo a 60 pies de ti, el cual podrá resistir con un tiro de CON. Si logras infligir daño a los PV con este ataque tu objetivo sufrirá de inmediato los efectos de sangrado (también sufrirá sangrado si obtienes un golpe crítico o está afectado por heridas permanentes).
 
 <u>Reserva de energía</u>: Puedes elegir sufrir 1 daño no-letal para aumentar la fuerza de tus habilidades. Con esta habilidad puedes atacar a todas las criaturas en un radio de 10 pies centrado en ti con tu ataque elemental o hacer un ataque elemental adicional. Esta habilidad sólo puede usarse una vez al turno.
 

@@ -1,7 +1,5 @@
----
 title: Presencia
 category: Social
----
 
 Tienes el don de inspirar a todos aquellos que tienes cerca con un sentimiento de lucha o de intimidar a aquellos enemigos que osen oponerse a ti. A medida que pules tu habilidad con la experiencia de las batallas te vas volviendo mas hábil para comandar a las tropas y hacer que estas luchen de una manera mas eficaz así como evitar que estas sucumban fácilmente al pánico, siendo incluso capaz de aumentar la habilidad de tus seres mas cercanos con palabras de aliento para que tengan incluso mas fuerza.
 
@@ -34,7 +32,7 @@ Añade tu rango de presencia a tus tiros defensivos de sabiduría. Puedes ademá
 
 <u>Indómito:</u> Eres capaz de resistir lo imposible, rescatando situaciones que podrían parecer perdidas. Un número de veces por combate igual tu rango de presencia puedes repetir una tirada de habilidad, ataque o defensa, cancelando así el resultado anterior y quedándote con el nuevo. Esta nueva tirada contará con todos los bonificadores que tuviese el tiro anterior, pero no podrás emplear la habilidad indómito más de una vez por tirada.
 
-<u>Inspirar heroísmo:</u> Como acción estándar puedes inspirar a un personaje para que realice grandes hazañas emulando las gestas un héroe. Una criatura afectada por esta habilidad recibirá puntos de vida temporales iguales a tu rango de presencia e incrementará una de sus estadísticas por 1. Obtendrá además habilidad [voluntad poderosa](https://raldamain.com/rules/Rangos/Social/presencia.html#rango-i) (Si ya cuenta con la habilidad voluntad poderosa entonces recibirá contra efectos mentales igual a su rango). Este efecto permanecerá activo hasta que el objetivo pierda sus PV temporales y podrás afectar como máximo a un número de personajes igual a tu rango simultáneamente (esto te incluye a ti). Inspirar heroísmo también se perderá si el objetivo cae bajo un efecto mental o sufre un efecto de estado negativo, como podría ser náuseas, aturdido, incapacitado o confundido. Inspirar heroísmo no se acumula consigo mismo.
+<u>Inspirar heroísmo:</u> Como acción estándar puedes inspirar a un personaje para que realice grandes hazañas emulando las gestas un héroe. Una criatura afectada por esta habilidad recibirá puntos de vida temporales iguales a tu rango de presencia + 2 e incrementará dos de sus estadísticas por 1. Obtendrá además habilidad [voluntad poderosa](https://raldamain.com/rules/Rangos/Social/presencia.html#rango-i) (Si ya cuenta con la habilidad voluntad poderosa entonces recibirá contra efectos mentales igual a su rango). Este efecto permanecerá activo hasta que el objetivo pierda sus PV temporales y podrás afectar como máximo a un número de personajes igual a tu rango simultáneamente (esto te incluye a ti). Inspirar heroísmo también se perderá si el objetivo cae bajo un efecto mental o sufre un efecto de estado negativo, como podría ser náuseas, aturdido, incapacitado o confundido. Inspirar heroísmo no se acumula consigo mismo.
 
 ## Rango IV
 
