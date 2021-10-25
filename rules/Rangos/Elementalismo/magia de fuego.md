@@ -27,7 +27,7 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de fuego.
 
 Aumenta tu probabilidad de crítico a 19-20.
 
-<u>Sobrecarga:</u> En lugar de hacer un ataque elemental puedes almacenar la energía de este para liberarla después. Cada ataque que almacenes te otorga un punto de energía, llegando a tener un número máximo de puntos de energía igual a tu rango de magia de fuego + 1. Al hacer un ataque elemental puedes gastar tantos puntos de energía para incrementar la fuerza de tu ataque como haya en tu reserva. Cada punto de energía gastado añade un bonificador +1 al tiro de ataque y el daño e incrementa el radio de efecto por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión que hace daño de fuego a todas las criaturas en un radio igual a 5 x puntos de energía igual y 2 + el número de puntos de energía que tengas almacenados daño fuego. Tú también sufrirás daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
+<u>Sobrecarga:</u> En lugar de hacer un ataque elemental puedes almacenar la energía de este para liberarla después. Cada ataque que almacenes te otorga un punto de energía, llegando a tener un número máximo de puntos de energía igual a tu rango de magia de fuego + 1. Al hacer un ataque elemental puedes gastar tantos puntos de energía para incrementar la fuerza de tu ataque como haya en tu reserva. Cada punto de energía gastado añade un bonificador +1 al tiro de ataque y el daño e incrementa el radio de efecto por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión que hace daño de fuego a todas las criaturas en un radio igual a 5 x puntos de energía igual y 1d6 + el número de puntos de energía que tengas almacenados daño fuego. Tú también sufrirás daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
 
 <u>Pirotecnia:</u> Como acción estándar puedes manipular las llamas en un área de volumen igual a 10 x rango. Para esta habilidad puedes elegir un número de fuegos igual a 3 + rango e incrementar o decrecer su área de efecto por 5 pies. Si uno de estos fuegos se extiende a un área ya ocupado por otra criatura esta deberá hacer un tiro de DES o sufrirá una quemadura leve.
 
@@ -35,12 +35,14 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Redirigir el fuego:</u> Cuando logres parar exitosamente un ataque elemental de fuego mientras te encuentras en posición defensiva puedes redirigirlo en otra dirección que tú elijas. Un ataque redirigido tiene una distancia máxima de 15 pies (30 pies si logras una defensa crítica) y emplearás tu tiro de ataque elemental para él. Puedes emplear puntos de energía para fortalecer este ataque como si fuese tuyo.
 
-<u>Maestría de las llamas:</u> Tus ataques de fuego pueden adoptar una variedad de formas mortales. Cuando haces un ataque elemental puedes elegir gastar un ataque almacenado para modificarlo de una de las siguientes maneras: 
+<u>Maestría de las llamas:</u> Tus ataques de fuego pueden adoptar una variedad de formas mortales. Cuando haces un ataque elemental puedes elegir gastar un ataque almacenado o sufrir 1 daño no-letal para modificarlo de una de las siguientes maneras: 
 
 - **Bola de fuego**: Incrementa el área de salpicadura por 10 pies.
 - **Látigo:** Ataca a todas las criaturas en una línea de 30 pies.
 - **Descenso de fuego**: Ataca a todas las criaturas en un cilindro con diámetro 15 pies y altura 30 pies.
 - **Serpiente de fuego**: Tu ataque de fuego permanecerá después de atacar y mientras mantengas la concentración puedes atacar con él como una acción bonus. No puedes mantener a más de un ataque de esta manera.
+
+En el caso que gastes un ataque almacenado el tiro de ataque y el daño de dicho ataque aumentarán por 1, pero no podrás usar maestría de las llamas más de una vez en el mismo ataque.
 
 ## Rango V
 
