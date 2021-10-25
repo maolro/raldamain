@@ -1,3 +1,7 @@
+---
+title: Escenarios 6-8
+---
+
 ## Soldado de la Legión (nivel 3)
 
 **PV:** 5			**VT:** 7	 		**DEF:** 8 (pesada +2)
