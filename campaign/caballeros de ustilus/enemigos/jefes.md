@@ -32,7 +32,7 @@ title: Jefes
 
 ------
 
-**Rayo gélido** (acción de movimiento, CRIT 19-20): +9, alcance 60 pies, 1d6 + 5 frío, ralentizado y sufre los efectos de un veneno de DES. Si reduce los PV el objetivo deberá tirar CON contra +9 o acaba congelado.
+**Rayo gélido** (acción de movimiento, CRIT 19-20): +9, alcance 60 pies, 1d6 + 4 frío, ralentizado y sufre los efectos de un veneno de DES. Si reduce los PV el objetivo deberá tirar CON contra +9 o acaba congelado.
 
 **Espada gélida** (acción de movimiento, CRIT 19-20): +9, alcance 5/60 pies, 1d8 + 5 perforante + 2 frío. +4 daño si flanquea o el enemigo es incapaz de defenderse. Si inflige daño a los PV el objetivo quedará ralentizado. Puede emplear una acción de movimiento adicional para ignorar 2 puntos de DEF que tenga el enemigo (si reduce la DEF a 0 todas las heridas permanentes aumentan su nivel por 1).
 
@@ -40,7 +40,7 @@ title: Jefes
 
 **Neblina polar** (acción estándar): Forma una neblina que llena un volumen de 40 pies cúbicos. Todas las criaturas que inicien su turno en una neblina polar quedarán ralentizadas y tus ataques reciben ventaja contra ellas.
 
-**Tormenta de nieve** (acción estándar, CRIT 19-20): +9, 1d8 + 5 frío y 1d6 contundente. Todo el área en una línea de 15 x 50 pies se convierte en terreno difícil. Debe esperar 2 turnos antes de volver a usar esta habilidad.
+**Tormenta de nieve** (acción estándar, CRIT 19-20): +9, 1d8 + 4 frío y 1d6 contundente. Todo el área en una línea de 15 x 50 pies se convierte en terreno difícil. Debe esperar 2 turnos antes de volver a usar esta habilidad.
 
 **Ventisca** (acción estándar): +9, empuja 1d6 x 5 pies y 1d6 frío. Puede emplear un ritual de dos rondas de duración para llamar una nevada a la zona.
 
@@ -86,7 +86,7 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 **Enmarañar** (acción de movimiento, CRIT 19-20): +9, un enemigo a 60 pies queda enredado y es infectado por esporas (funcionan como un veneno de FUE, CON o SAB a elección de Ilesit y tienen severidad +10). Cada ronda que esté agarrado sufrirá 1d6 + 6 daño necrótico y Ilesit se sana vitalidad igual a la mitad del daño infligido.
 
-**Esfera fúngica** (acción de movimiento, CRIT 19-20): +9, alcance 60 pies, 1d6 + 6 daño ácido. Si el objetivo lleva armadura metálica esta reducirá su DEF por 1 y si no la lleva sufrirá una quemadura leve.
+**Esfera fúngica** (acción de movimiento, CRIT 19-20): +9, alcance 60 pies, 1d6 + 3 daño ácido. Si el objetivo lleva armadura metálica esta reducirá su DEF por 1 y si no la lleva sufrirá una quemadura leve.
 
 **Muro de hongos** (acción estándar): Crea un muro de hongos con proporciones 45 x 15 pies. Si una criatura es agarrada por el muro al final de su ronda el nivel de la infección de esporas aumenta por 1 (puede resistir tirando CON contra severidad +10) y sufre 2 daño ácido.
 
@@ -142,7 +142,7 @@ Ilesit solo combatirá en aquellos campos de batalla que más le beneficien, luc
 
 ------
 
-**Espada ropera sombría** (acción de movimiento, CRIT 18-20): +12, alcance 10 pies, 1d8 + 3 perforante. +7 daño contra enemigos incapaces de defenderse o flanqueados. Puede sufrir 2 daño no-letal infundir el tajo de energía sombría, añadiendo 1d6 + 6 daño de fuerza al ataque (este daño reducirá los PV máximos de un personaje al reducir PV).
+**Espada ropera sombría** (acción de movimiento, CRIT 18-20): +12, alcance 10 pies, 1d8 + 3 perforante. +7 daño contra enemigos incapaces de defenderse o flanqueados. Puede sufrir 2 daño no-letal infundir el tajo de energía sombría, añadiendo 1d6 + 1 daño de fuerza al ataque (este daño reducirá los PV máximos de un personaje al reducir PV).
 
 **Apuntar ataque** (acción de movimiento): Reduce el penalizador por ataque preciso o para apuntar a un lugar específico por 2 en su siguiente ataque.
 
@@ -168,7 +168,7 @@ Ilesit solo combatirá en aquellos campos de batalla que más le beneficien, luc
 
 ****
 
-Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el terreno y las debilidades de sus adversarios para alcanzar la victoria. Si él lucha será siempre en un entorno a oscuras para poder emplear sus siniestras habilidades a su máximo potencial, retirándose siempre a dicho lugar empleando su gran velocidad en el caso que sea atacado en un lugar que no le beneficia. Cuando empiece el combate en dicho entorno Laicon creará una nube de oscuridad para dividir a un grupo enemigo y esperará fuera de esta para atacar al primero que emerja con su espada ropera, obteniendo así los beneficios de ataque furtivo (el prioritizará enemigos con poca sabiduría y destreza). En su siguiente acción se colocará en posición defensiva y preparará un salto sombrío para teletransportarse junto a otro enemigo poco atento para continuar atacándolo (él esperará hasta que todos sus enemigos hayan atacado para que así no puedan verlo venir). Cuando ataque a dicho enemigo hará un ataque sorpresa y lo seguirá de una finta y otro ataque, guardando una acción estándar para realizar crear oscuridad o salto sombrío según más convenga (gastará vitalidad para mejorar el ataque si lucha contra enemigos con mucha defensa). Si se bate en un duelo contra un único individuo hará siempre dos ataques, una finta o desarme y entrará en posición defensiva para usar forma sombría si su enemigo amenaza los PV. Esta situación es la que más agrada a Laicon debido a su tradición como caballero e irá reduciendo a sus enemigos uno a uno para alcanzar dicho punto, aprovechándo lo que ya conozca de ellos para manipularlos de la manera más conveniente. Laicon intentará siempre huir si puede pero en el caso que esté acorralado sin salida luchará hasta la muerte para convertirse en mártir para su causa.
+Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el terreno y las debilidades de sus adversarios para alcanzar la victoria. Si él lucha será siempre en un entorno a oscuras para poder emplear sus siniestras habilidades a su máximo potencial, retirándose siempre a dicho lugar empleando su gran velocidad en el caso que sea atacado en un lugar que no le beneficia. Cuando empiece el combate en dicho entorno Laicon creará una nube de oscuridad para dividir a un grupo enemigo y esperará fuera de esta para atacar al primero que emerja con su espada ropera, obteniendo así los beneficios de ataque furtivo (el prioritizará enemigos con poca sabiduría y destreza). En su siguiente acción se colocará en posición defensiva y preparará un salto sombrío para teletransportarse junto a otro enemigo poco atento para continuar atacándolo (él esperará hasta que todos sus enemigos hayan atacado para que así no puedan verlo venir). Cuando ataque a dicho enemigo hará un ataque sorpresa y lo seguirá de una finta y otro ataque, guardando una acción estándar para realizar crear oscuridad o salto sombrío según más convenga (gastará vitalidad para infundir su ataque con tajo sombría si lucha contra enemigos con mucha defensa). Si se bate en un duelo contra un único individuo hará siempre dos ataques, una finta o desarme y entrará en posición defensiva para usar forma sombría si su enemigo amenaza los PV. Esta situación es la que más agrada a Laicon debido a su tradición como caballero e irá reduciendo a sus enemigos uno a uno para alcanzar dicho punto, aprovechándo lo que ya conozca de ellos para manipularlos de la manera más conveniente. Laicon intentará siempre huir si puede pero en el caso que esté acorralado sin salida luchará hasta la muerte para convertirse en mártir para su causa.
 
 ## Almirante Sisro (nivel 13)
 
@@ -202,13 +202,9 @@ Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el 
 
 **Ataques en secuencia:** Recibe ventaja en todos sus ataques hechos contra criaturas con quemaduras.
 
-**Evasión:** No sufre daño obligatorio por ataques de área con radio inferior a 20 pies.
-
-**Esquiva asombrosa:** Puede defenderse contra ataques sorpresa y contra enemigos invisibles u ocultos.
-
 ------
 
-**Ataque elemental** (acción de movimiento, crítico 18-20): +11, 1d6 + 6 fuego y provoca una quemadura media si el objetivo está a 30 pies o menos (severa si lleva armadura). Enciende un fuego de tamaño 5 pies. Si reduce PV provoca una quemadura media. Puede gastar un ataque almacenado o sufrir 1 daño no-letal para modificarlo para crear un látigo de fuego, bola de fuego, descenso de fuego o serpiente de fuego.
+**Ataque elemental** (acción de movimiento, crítico 18-20): +11, 1d6 + 5 fuego y provoca una quemadura media si el objetivo está a 30 pies o menos (severa si lleva armadura). Enciende un fuego de tamaño 5 pies. Si reduce PV provoca una quemadura media. Puede gastar un ataque almacenado o sufrir 1 daño no-letal para modificarlo para crear un látigo de fuego, bola de fuego, descenso de fuego o serpiente de fuego.
 
 **Sobrecarga** (acción de movimiento): Carga un ataque elemental llegando a un máximo de 6. Puede gastar un ataque elemental para recibir un bonificador +1 al ataque y daño además de incrementar el área de efecto por 5 pies. Si es herido mientras tiene ataques cargados los liberará en una explosión que hará 1d6 + puntos cargados daño de fuego y afectará a un área de 5 x puntos cargados. Él también sufrirá 2 + puntos cargados daño no-letal por este efecto. 
 
@@ -222,13 +218,13 @@ Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el 
 
 **Propulsión** (acción estándar): Vuela 60 pies en cualquier dirección sin provocar ataques de oportunidad.
 
-**Lluvia de brasas** (acción de turno completo, gasta 6 ataques almacenados): +11, 2d6 + 6 fuego e inflige una quemadura media. Afectará a 6 espacios de 10 pies cúbicos cada uno y todos los lugares impactados serán afectados por un muro de llamas.
+**Lluvia de brasas** (acción de turno completo, gasta 6 ataques almacenados): +11, 2d6 + 5 fuego e inflige una quemadura media. Afectará a 6 espacios de 10 pies cúbicos cada uno y todos los lugares impactados serán afectados por un muro de llamas.
 
 ------
 
 **Parada elemental**: +11, puede defenderse de ataques cuerpo a cuerpo. Puede gastar un ataque almacenado para crear un muro de fuego.
 
-**Esquiva:** +9. Se mueve 5 pies. Puede defenderse de ataques sorpresa y ataques hechos por criaturas invisibles.
+**Esquiva:** +9, puede moverse 5 pies sin provocar ataques de oportunidad. Puede esquivar ataques sorpresa y ataques hechos por criaturas invisibles. También no sufre daño obligatorio al esquivar exitosamente un ataque de área con radio 20 pies o menos.
 
 ****
 
@@ -236,35 +232,57 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 
 ## Minjee (nivel 14)
 
-**PV:** 		**VT:** 	**DEF:** 
+**PV:** 11	**VT:** 20 	**DEF:** 14 (completa, resistencia 2)
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Rangos:** 
-
-**Resiste:** 
-
-**Sentidos:** 
-
-**Movimiento:** 
-
-**Prioridad:** 
+**FUE:** 5	**DES:** 6	**CON:** 4	**INT:** 1	**SAB:** 3	**CAR:** 5
 
 ------
 
+**Talentos:** Persuasión +9, Intimidar +8, Atletismo +8, Heroísmo +10, Averiguar intenciones +5, Percepción +5
 
+**Rangos:** Filos cortantes V, Ascendencia de fuego II, Armaduras III, Presencia III, Reflejos II
+
+**Resiste:** Fuego 9, magia 6, eléctrico 6, miedo 3
+
+**Sentidos:** Visión ígnea 100 pies
+
+**Movimiento:** 25 pies
+
+**Prioridad:** +6 (1 estándar + 3 movimiento)
 
 ------
 
+**Furia del fuego:** Pierde 1 vitalidad para hacer +2 daño de fuego con sus ataques e infligir una quemadura media si reduce PV.
 
+**Secuencia de ataques:** Cada ataque consecutivo hecho contra la misma criatura aumenta el tiro de ataque y el daño por 1.
+
+**Ataque poderoso:** Puede recibir un dado de desventaja en un tiro de ataque para incrementar su daño base por 1d6 y provocar sangrado (3 veces máximo por ataue). Reduce además la DEF de su objetivo por 2 y si el objetivo se defiende con un escudo este reducirá su tiro de defensa permanentemente por -1.
+
+**Voz del comandante:** Todos los aliados a 30 pies reciben ventaja en su tiro de ataque hasta que este personaje sufra una herida permanente. Estos pueden usar una táctica de combate entre Flanqueadores expertos (+1d6 daño al flanquear y pueden defenderse entre sí), Línea defensiva (+1d6 en tiros de defensa y cuentan como si estuviesen en posición defensiva) o Francotiradores (los ataques a distancia reciben ventaja contra enemigos herids). Volver a activar este efecto cuesta una acción estándar.
+
+**Inspirar temor:** Los enemigos con 5 o menos PV que luchan contra este personaje estarán espantados hasta que sufra una herida permanente.
+
+**Indómito** (3/combate): Repite un tiro de ataque o defensa quedándose con el nuevo resultado. Todos los bonificadores continúan aplicándose.
+
+------
+
+**Jingum** (acción de movimiento): +11, 1d8 + 5 cortante. Aumenta el nivel de todas las heridas infligidas por un paso contra enemigos con 4 o menos DEF y por dos pasos contra enemigos con 2 o menos DEF.
+
+**Trabar espada** (acción de movimiento): +11 contra parada, el arma de su enemigo queda atrapada si tiene éxito. Un enemigo con el arma atrapada no podrá atacar con ella hasta que escape.
+
+**Inspiración** (acción bonus, 4/día): Un aliado recibe 1d6 en un tiro de ataque, defensa o habilidad (máximo 3d6 por tiro).
+
+**Inspirar heroísmo** (acción estándar): Una aliado recibe 5 PV temporales, incrdos estadísticas por 1 y aumenta su resistencia al miedo por 3. No puedes afectar a más de 3 objetivos y los bonificadores se perderán cuando se acaben los PV temporales.
+
+**Gran corte** (acción estándar): Hace un ataque con su arma a todas las criaturas en un arco de 15 pies. Puede gastar una acción de movimiento adicional para atacar a todas las criaturas adyacentes a él.
+
+**Atemorizar** (acción estándar): +9 contra CAR, todos los enemigos a 30 pies aumentan su nivel de miedo por un paso hasta que sufra una herida herida permanente.
 
 ****
 
+**Parada:** +11.
 
+**Esquiva:** +8, puede moverse 5 pies sin provocar ataques de oportunidad. Puede esquivar ataques sorpresa y ataques hechos por criaturas invisibles. También no sufre daño obligatorio al esquivar exitosamente un ataque de área con radio 20 pies o menos.
 
 ## Yabu (nivel 20)
 
@@ -298,7 +316,7 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 
 **Regeneración:** Al principio de su turno Yabu se sana 2 Vitalidad (2 PV si está al máximo de Vitalidad).
 
-**Ataque poderoso:** Puede recibir una penalización -4 en un tiro de ataque para incrementar su daño base por 4 y provocar sangrado. Reduce además la DEF de su objetivo por 2 y si el objetivo se defiende con un escudo este recibirá un penalizador -1.
+**Ataque poderoso:** Puede recibir un dado de desventaja en un tiro de ataque para incrementar su daño base por 1d6 y provocar sangrado (3 veces máximo por ataue). Reduce además la DEF de su objetivo por 2 y si el objetivo se defiende con un escudo este reducirá su tiro de defensa permanentemente por -1.
 
 **Secuencia de ataques:** Cada ataque consecutivo hecho contra la misma criatura aumenta el tiro de ataque y el daño por 1.
 
@@ -310,7 +328,7 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 
 **Katana chupavidas** (acción de movimiento): +21, 2d6 + 12 cortante, 4 daño eléctrico y 2 daño necrótico. El daño de esta arma solo puede ser sanado por magia y si llega a provocar heridas permanentes se sana Vitalidad igual a 1 + la gravedad de la herida. (si mata a su objetivo se sanará vitalidad igual a la CON de dicha criatura en el momento de su muerte). Aumenta el nivel de todas las heridas infligidas por un paso contra enemigos con 4 o menos DEF. Puede gastar 1 chi al impactar para retardar el impacto del ataque para que tenga efecto en 1-4 rondas, aumentando el nivel de todas las heridas por un paso si lo haces (si retardas 2 o más ataques tu objetivo quedará aturdido).
 
-**Apuntar ataque** (acción de movimiento): Reduce el penalizador del siguiente ataque poderoso que realice por 2.
+**Apuntar ataque** (acción de movimiento): Reduce el penalizador del siguiente ataque poderoso que realice por un dado de desventaja.
 
 **Trabar espada** (acción de movimiento): +21 contra parada, el arma de su enemigo queda atrapada si tiene éxito. Un enemigo con el arma atrapada no podrá atacar con ella hasta que escape.
 

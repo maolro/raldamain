@@ -49,7 +49,7 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 ## Armas
 
-Un arco base hace 2d4 daño perforante y tiene un alcance medio de 60 pies. Puedes disparar a enemigos como máximo a 90 pies de distancia recibiendo un penalizador de un dado de dificultad. Un arco base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Un arco base hace 2d4 + rango daño perforante y tiene un alcance medio de 60 pies. Puedes disparar a enemigos como máximo a 90 pies de distancia recibiendo un penalizador de un dado de dificultad. Un arco base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Compuesto:** El arco requiere gran fuerza para ser tensado, pero incrementará la velocidad de los proyectiles. Necesitas tener FUE 2 o más para usar un arco compuesto pero su daño base quedará modificado por tu estadística de fuerza como si fuese un arma cuerpo a cuerpo y aumentará su alcance por 20 pies. 
 - **Corto:** El arco es pequeño y muy fácil de tensar. Reduces tu daño base por a 1d6 pero no sufrirás penalizaciones por disparar montado o en un vehículo en movimiento. Puedes hacer un ataque adicional por turno con la habilidad Arquero ágil.

@@ -9,9 +9,9 @@ Tu control avanzado sobre el aire te ha permitido desviarte de su forma más bá
 
 Añade un dado de soltura a todos tus ataques elementales.
 
-<u>Relámpago</u>: Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 1d6 + CAR daño eléctrico al impactar. Si logras provocar daño a los PV con este ataque tu objetivo quedará ralentizado durante una ronda (aturdido si provocas un golpe crítico). Obtienes ventaja atacando a criaturas que lleven armadura o escudo metálicos y en el caso que te encuentres en un lugar afectado por una tormenta puedes hacer que un rayo caiga sobre un objetivo en un lugar a 60 pies de ti como acción estándar.
+<u>Relámpago</u>: Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 1d6 + rango daño eléctrico al impactar. Si logras provocar daño a los PV con este ataque tu objetivo quedará ralentizado durante una ronda (aturdido si provocas un golpe crítico). Obtienes ventaja atacando a criaturas que lleven armadura o escudo metálicos y en el caso que te encuentres en un lugar afectado por una tormenta puedes hacer que un rayo caiga sobre un objetivo en un lugar a 60 pies de ti como acción estándar.
 
-<u>Onda trueno:</u> Como acción estándar puedes provocar una atronadora onda afectando un radio de 15 pies. Esta onda hace 1d6 + CHA daño trueno y si provocas daño a los PV tu objetivo quedará ensordecido durante una ronda (aturdido si provocas un golpe crítico). Una onda trueno es también capaz de todos los objetos de cristal u otros materiales frágiles en el área de efecto.
+<u>Onda trueno:</u> Como acción estándar puedes provocar una atronadora onda afectando un radio de 15 pies. Esta onda hace 1d6 + rangdaño trueno y si provocas daño a los PV tu objetivo quedará ensordecido durante una ronda (aturdido si provocas un golpe crítico). Una onda trueno es también capaz de todos los objetos de cristal u otros materiales frágiles en el área de efecto.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque elemental adicional, incrementar el radio de onda trueno por 15 pies o causar que relámpago tenga un área de salpicadura de 5 pies. Esta habilidad solo puede usarse una vez al turno.
 
