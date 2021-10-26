@@ -24,7 +24,7 @@ title: Escenarios 6-8
 
 **Hijos de la legión:** Recibe +1d6 en sus tiros de ataque y defensa hechos contra enemigos de la Legión.
 
-**Ataque poderoso:** Añade -2 al tiro de ataque para aumentar el daño base por 1d6 y provocar sangrado (solo con filos pesados)
+**Ataque poderoso:** Añade un dado de desventaja al tiro de ataque para aumentar el daño base por 1d6 y provocar sangrado (solo con filos pesados)
 
 **Tácticas de batalla:** Si forma parte de una unidad de 4 o más hobgoblin recibirá los beneficios de una táctica entre Flanqueadores expertos (+1d6 daño flanqueando) o Línea defensiva (+1d6 en tiros de defensa).
 
@@ -80,6 +80,12 @@ title: Escenarios 6-8
 
 **Reflejos**: +5
 
+## Trasgo saboteador (nivel 1)
+
+## Trasgo pirómano (nivel 5)
+
+## Élite de la Legión (nivel 5)
+
 ## Zelota de la Legión (nivel 8)
 
 **PV:** 5			**VT:** 6	 		**DEF:** 6 (media +2)
@@ -99,4 +105,36 @@ title: Escenarios 6-8
 ****
 
 **Hijos de la legión:** Recibe +1d6 en sus tiros de ataque y defensa hechos contra enemigos de la Legión.
+
+## Campeón de la Legión (nivel 10)
+
+## Jinete de huargo (nivel 6)
+
+## Reforjado (nivel 7)
+
+## Acechador Reforjado (nivel 8)
+
+## Soldado de élite Reforjado (nivel 10)
+
+## Sicario Reforjado (nivel 10)
+
+## Recluta Reforjado (nivel 3)
+
+## Elementalista Reforjado (nivel 9)
+
+## Granadero Reforjado (nivel 8)
+
+## Comandante Reforjado (nivel 12)
+
+## Elemental Ligado (nivel 13)
+
+## Mercenario osgo (nivel 7)
+
+## Gran ogro (nivel 12)
+
+## Caballería de élite (nivel 9)
+
+## Guardián del portal oni (nivel 13)
+
+## Sicario de Sek-Tebos (nivel 11)
 
