@@ -4,7 +4,7 @@ title: Jefes
 
 ## General Petrikov (nivel 8)
 
-**PV:** 9 (15 si armadura gélida)			**VT:** 14	 		**DEF:** 9 (Resistencia 3, armadura gélida +4, pieles)
+**PV:** 9 (15 si armadura gélida)			**VT:** 14	 		**DEF:** 9 (ligera, Resistencia 3, armadura gélida +4)
 
 **FUE:** 3 	**DES:** 4	**CON:** 4	**INT:** 2	**SAB:** 3	**CAR:** 5
 
@@ -58,7 +58,7 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 
 ## Ilesit (nivel 10)
 
-**PV:** 16-		**VT:** 17	 		**DEF:** 7 (resistencia 3, armadura natural +4)
+**PV:** 16-		**VT:** 17	 		**DEF:** 7 (ligera, resistencia 3, armadura natural +4)
 
 **FUE:** 1	**DES:** 3	**CON:** 5	**INT:** 4	**SAB:** 6 	**CAR:** 1
 
@@ -114,7 +114,7 @@ Ilesit solo combatirá en aquellos campos de batalla que más le beneficien, luc
 
 ## Laicon de Dairov (nivel 12)
 
-**PV:** 10		**VT:** 18	**DEF:** 5 (resistencia 3, cuero)
+**PV:** 10		**VT:** 18	**DEF:** 5 (ligera, resistencia 3)
 
 **FUE:** 3	**DES:** 7	**CON:** 4	**INT:** 2	**SAB:** 3	**CAR:** 6
 
@@ -138,13 +138,13 @@ Ilesit solo combatirá en aquellos campos de batalla que más le beneficien, luc
 
 **Aura de terror:** Todas las criaturas enemigas que acaben su turno a 60 pies de Laicon acabarán Espantadas mientras que continúen observándolo (asustandas si tienen 5 o menos PV). Esta habilidad se desactivará durante una ronda si Laicon sufre una herida permanente. Laicon solo puede emplear esta habilidad si está en un lugar a oscuras.
 
-**Ataque preciso:** Tres veces por ataque puede tomar un penalizador -2 para ignorar 2 puntos de defensa que tenga su objetivo. Si logra reducir la DEF de un enemigo a 0 multiplica el daño infligido por 2 y provocará una herida grave. 
+**Ataque preciso:** Tres veces por ataque puede tomar un penalizador de un dado de desventaja para ignorar 3 puntos de defensa que tenga su objetivo. Si logra reducir la DEF de un enemigo a 0 multiplica el daño infligido por 2 y provocará una herida grave. 
 
 ------
 
 **Espada ropera sombría** (acción de movimiento, CRIT 18-20): +12, alcance 10 pies, 1d8 + 3 perforante. +7 daño contra enemigos incapaces de defenderse o flanqueados. Puede sufrir 2 daño no-letal infundir el tajo de energía sombría, añadiendo 1d6 + 1 daño de fuerza al ataque (este daño reducirá los PV máximos de un personaje al reducir PV).
 
-**Apuntar ataque** (acción de movimiento): Reduce el penalizador por ataque preciso o para apuntar a un lugar específico por 2 en su siguiente ataque.
+**Apuntar ataque** (acción de movimiento): Reduce el penalizador por ataque preciso o para apuntar a un lugar específico por un dado de desventaja en su siguiente ataque.
 
 **Desarme** (acción de movmiento, CRIT 18-20): +12, el enemigo es desarmado. Esta habilidad solo puede usarse si un enemigo logra detener su ataque exitosamente con una parada.
 
@@ -168,7 +168,7 @@ Ilesit solo combatirá en aquellos campos de batalla que más le beneficien, luc
 
 ****
 
-Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el terreno y las debilidades de sus adversarios para alcanzar la victoria. Si él lucha será siempre en un entorno a oscuras para poder emplear sus siniestras habilidades a su máximo potencial, retirándose siempre a dicho lugar empleando su gran velocidad en el caso que sea atacado en un lugar que no le beneficia. Cuando empiece el combate en dicho entorno Laicon creará una nube de oscuridad para dividir a un grupo enemigo y esperará fuera de esta para atacar al primero que emerja con su espada ropera, obteniendo así los beneficios de ataque furtivo (el prioritizará enemigos con poca sabiduría y destreza). En su siguiente acción se colocará en posición defensiva y preparará un salto sombrío para teletransportarse junto a otro enemigo poco atento para continuar atacándolo (él esperará hasta que todos sus enemigos hayan atacado para que así no puedan verlo venir). Cuando ataque a dicho enemigo hará un ataque sorpresa y lo seguirá de una finta y otro ataque, guardando una acción estándar para realizar crear oscuridad o salto sombrío según más convenga (gastará vitalidad para infundir su ataque con tajo sombría si lucha contra enemigos con mucha defensa). Si se bate en un duelo contra un único individuo hará siempre dos ataques, una finta o desarme y entrará en posición defensiva para usar forma sombría si su enemigo amenaza los PV. Esta situación es la que más agrada a Laicon debido a su tradición como caballero e irá reduciendo a sus enemigos uno a uno para alcanzar dicho punto, aprovechándo lo que ya conozca de ellos para manipularlos de la manera más conveniente. Laicon intentará siempre huir si puede pero en el caso que esté acorralado sin salida luchará hasta la muerte para convertirse en mártir para su causa.
+Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el terreno y las debilidades de sus adversarios para alcanzar la victoria. Si él lucha será siempre en un entorno a oscuras para poder emplear sus siniestras habilidades a su máximo potencial, retirándose siempre a dicho lugar empleando su gran velocidad en el caso que sea atacado en un lugar que no le beneficia. Cuando empiece el combate en dicho entorno Laicon creará una nube de oscuridad para dividir a un grupo enemigo y esperará fuera de esta para atacar al primero que emerja con su espada ropera, obteniendo así los beneficios de ataque furtivo (el prioritizará enemigos con poca sabiduría y destreza). En su siguiente acción se colocará en posición defensiva y preparará un salto sombrío para teletransportarse junto a otro enemigo poco atento para continuar atacándolo (él esperará hasta que todos sus enemigos hayan atacado para que así no puedan verlo venir). Cuando ataque a dicho enemigo hará un ataque sorpresa y lo seguirá de una finta y otro ataque, guardando una acción estándar para realizar crear oscuridad o salto sombrío según más convenga (gastará vitalidad para infundir su ataque con tajo sombrío si lucha contra enemigos con mucha defensa). Él también flanqueará a sus enemigos junto a su aliado sombrío para poder utilizar ataque furtivo y empleará ataque preciso cada vez que obtenga ventaja para evitar la defensa de su adversario. Si se bate en un duelo contra un único individuo hará siempre dos ataques, una finta o desarme y entrará en posición defensiva para usar forma sombría si su enemigo amenaza los PV. Esta situación es la que más agrada a Laicon debido a su tradición como caballero e irá reduciendo a sus enemigos uno a uno para alcanzar dicho punto, aprovechándo lo que ya conozca de ellos para manipularlos de la manera más conveniente. Laicon intentará siempre huir si puede pero en el caso que esté acorralado sin salida luchará hasta la muerte para convertirse en mártir para su causa.
 
 ## Almirante Sisro (nivel 13)
 
@@ -242,7 +242,7 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 
 **Rangos:** Filos cortantes V, Ascendencia de fuego II, Armaduras III, Presencia III, Reflejos II
 
-**Resiste:** Fuego 9, magia 6, eléctrico 6, miedo 3
+**Resiste:** Fuego 9, magia 6, eléctrico 6, miedo 3, aturdimiento 4
 
 **Sentidos:** Visión ígnea 100 pies
 
@@ -272,7 +272,7 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 
 **Inspiración** (acción bonus, 4/día): Un aliado recibe 1d6 en un tiro de ataque, defensa o habilidad (máximo 3d6 por tiro).
 
-**Inspirar heroísmo** (acción estándar): Una aliado recibe 5 PV temporales, incrdos estadísticas por 1 y aumenta su resistencia al miedo por 3. No puedes afectar a más de 3 objetivos y los bonificadores se perderán cuando se acaben los PV temporales.
+**Inspirar heroísmo** (acción estándar): Una aliado recibe 5 PV temporales, incrementa dos estadísticas por 1 y aumenta su resistencia al miedo por 3. No puedes afectar a más de 3 objetivos y los bonificadores se perderán cuando se acaben los PV temporales.
 
 **Gran corte** (acción estándar): Hace un ataque con su arma a todas las criaturas en un arco de 15 pies. Puede gastar una acción de movimiento adicional para atacar a todas las criaturas adyacentes a él.
 
@@ -283,6 +283,12 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 **Parada:** +11.
 
 **Esquiva:** +8, puede moverse 5 pies sin provocar ataques de oportunidad. Puede esquivar ataques sorpresa y ataques hechos por criaturas invisibles. También no sufre daño obligatorio al esquivar exitosamente un ataque de área con radio 20 pies o menos.
+
+**Campeón de acero** (1/ronda): Reduce el nivel de una herida permanente por un paso.
+
+****
+
+La carismática líder de los Reforjados, Minjee es además una gran luchadora capaz de dirigir a sus aliados en el campo de batalla para derrotar a todo enemigo en su camino. Ella siempre v
 
 ## Yabu (nivel 20)
 
@@ -351,50 +357,6 @@ El almirante Sisro lucha contra sus enemigos con salvaje desenfreno, atacando in
 **Parar el tiempo** (acción de turno completo, 3 chi): Detiene el tiempo en una burbuja de 60 pies, paralizando a todas las criaturas que se encuentran en ella durante un turno. Este efecto puede extenderse si se mantiene la concentración.
 
 **Despertar el demonio** (acción de turno completo): Todos los hobgoblins a 60 pies con nivel 18 o menos son poseídos por oni, recibiendo la ascendencia a rango I y entrando de inmediato en Furia del oni. Un hobgoblin de mayor nivel puede evitar este efecto teniendo éxito en un tiro de sabiduría contra +13.
-
-****
-
-**Parada:** +21. Su espectro le otorga ventaja en todos sus tiros defensivos.
-
-**Desplazamiento** (1 chi): Anula los resultados de un ataque enemigo, evitando así todo el daño y efectos que causaría.
-
-**Campeón de acero** (1/ronda): Reduce el nivel de una herida permanente por un paso.
-
-## Chandrial (nivel 25)
-
-**PV:** 31 (36 con campo de fuerza)	**VT:** 39	**DEF:** 28 (resistencia 10, armadura de plata celestial +10)
-
-**FUE:** 8 (12) 	**DES:** 4	**CON:** 8 (12)	**INT:** 2	**SAB:** 5	**CAR:** 9
-
-------
-
-**Talentos:** Persuasión +14, Heroísmo +18, Percepción +9, Averiguar intenciones +10, Engaño +14, Atletismo+17, Intimidar +16
-
-**Rangos:** Filos cortantes V, Ascendencia celestial VI, Armaduras IV, Presencia VI, Guerrero divino V
-
-**Resiste:** Armas físicas 10, fuego 8
-
-**Sentidos:** 
-
-**Movimiento:** 35 pies, vuelo 50 pies
-
-**Prioridad:** 4 (1 estándar + 2 movimiento)
-
-****
-
-**Ataque poderoso:** Puede recibir una penalización -4 en un tiro de ataque para incrementar su daño base por 4 y provocar sangrado. Reduce además la DEF de su objetivo por 2 y si el objetivo se defiende con un escudo este recibirá un penalizador -1.
-
-**Secuencia de ataques:** Cada ataque consecutivo hecho contra la misma criatura aumenta el tiro de ataque y el daño por 1.
-
-------
-
-**Espada santa** (acción de movimiento): +21, 
-
-**Apuntar ataque** (acción de movimiento): Reduce el penalizador del siguiente ataque poderoso que realice por 2.
-
-**Trabar espada** (acción de movimiento): +21 contra parada, el arma de su enemigo queda atrapada si tiene éxito. Un enemigo con el arma atrapada no podrá atacar con ella hasta que escape.
-
-**Gran corte** (acción estándar): Hace un ataque con su espada santa a todas las criaturas en un arco de 15 pies. Puede gastar una acción de movimiento adicional para atacar a todas las criaturas adyacentes a él.
 
 ****
 
