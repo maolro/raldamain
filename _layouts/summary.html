@@ -10,25 +10,25 @@ layout: page
 
 <div class="container">
     <ul class="list-unstyled">
-		{% assign not_us = site.pages | where_exp: "p", "p.url != page.url" %}
-        {% assign mypages = not_us | where_exp: "p", "p.dir == page.dir" | where_exp: "p", "p.lang == page.lang" | sort: "name" %}
-		{% assign subpages = not_us | where_exp: "p", "p.dir contains page.dir" | where_exp: "p", "p.name == 'index.md'" %}
+		{% assign subpages = site.pages | where_exp: "p", "p.url != page.url" | where_exp: "p", "p.dir contains page.dir" | sort: "path" %}
+		{% for item in subpages %}
+		{% assign dirremove = item.dir | replace: page.dir, "" | split: "/" %}
 		
-        {% for item in mypages %}
+		{% assign issubpage = false %}
+		
+		{% if item.name == "index.md" and dirremove.size == 1 %}
+		{% assign issubpage = true %}
+		{% endif %}
+		
+		{% if issubpage or dirremove.size == 0 %}
+		
         <li>
 		
             <h2><a href="{{item.url}}">{{ item.title }}</a></h2>
 			{% if items.niveles %}<p>Nivel: {{ item.niveles }}</p>{% endif %}
 			<p>{{ item.content | markdownify | split: '<h' | first }}</p>
         </li>
-        {% endfor %}
-		
-        {% for item in subpages %}
-        <li>
-		
-            <h2><a href="{{item.url}}">{{ item.title }}</a></h2>
-			<p>{{ item.content | markdownify | split: '<h' | first }}</p>
-        </li>
+		{% endif %}
         {% endfor %}
 		
     </ul>
