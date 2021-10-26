@@ -222,8 +222,26 @@ title: Escenarios 1-3
 
 ## Cazador élfico (nivel 5)
 
-### 
+## Guardia real élfico (nivel 5)
+
+## Matón del Pacto (nivel 2)
 
 ## Doctor de plagas (nivel 4)
 
-## 
+## Espora gaseosa (nivel 2)
+
+## Bestia fúngica (nivel 5)
+
+## Arcabucero (nivel 2)
+
+## Soldado (nivel 2)
+
+## Sargento (nivel 4)
+
+## Emboscador (nivel 3)
+
+## Sanador de batalla (nivel 4)
+
+## Élite de Petrikov (nivel 6)
+
+## Hechicero gélido (niv)

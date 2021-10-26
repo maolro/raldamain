@@ -100,7 +100,7 @@ Después del final de la campaña Sek-Tebos preparará sus fuerzas en una últim
 
 **Mercenario osgo** (nivel 7)
 
-**Gran ogro** (nivel 11)
+**Gran ogro** (nivel 12)
 
 **Jinete de huargo** (nivel 6)
 

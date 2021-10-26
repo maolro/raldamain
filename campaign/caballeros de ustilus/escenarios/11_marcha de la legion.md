@@ -52,20 +52,21 @@ Los jugadores viajan a Iskaria para aplastar un último reducto de la legión.
 
 **Unidad de lanceros** (nivel 8, base 4)
 
-**Unidad de infantería pesada** (nivel 9, base 5)
+**Unidad de infantería pesada** (nivel 10, base 6)
 
 **Unidad de arcabuceros** (nivel 8, base 4)
 
 **Pandilla de trasgos** (nivel 7, base 1)
 
-**Unidad de élite** (nivel 11, base 7)
+**Unidad de élite** (nivel 12, base 8)
 
-**Campeón oni** (nivel 13)
+**Campeón oni** (nivel 14)
 
-**Hechicero oni** (nivel 13)
+**Hechicero oni** (nivel 14)
 
-**Asesino oni** (nivel 13)
+**Asesino oni** (nivel 14)
 
 **Xingonu** (nivel 18)
 
 **Yabu** (nivel 18)
+
