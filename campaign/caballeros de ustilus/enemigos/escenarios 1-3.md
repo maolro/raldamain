@@ -52,7 +52,7 @@ title: Escenarios 1-3
 
 ****
 
-**Ataque preciso:** Añade -2 al tiro de ataque para ignorar 2 puntos de la armadura de su objetivo (4 si apunta a cabeza, brazos o piernas). Si reduce la armadura a 0 incrementa el nivel de todas las heridas por 1.
+**Ataque preciso:** Añade un dado de desventaja al tiro de ataque para ignorar 3 puntos de la armadura de su objetivo (6 si apunta a cabeza, brazos o piernas). Si reduce la armadura a 0 incrementa el nivel de todas las heridas por 1.
 
 ------
 
@@ -82,7 +82,7 @@ title: Escenarios 1-3
 
 ------
 
-**Ataque preciso:** Añade -2 al tiro de ataque para ignorar 2 puntos de la armadura de su objetivo (4 si apunta a cabeza, brazos o piernas). Si reduce la armadura a 0 incrementa el nivel de todas las heridas por 1.
+**Ataque preciso:** Añade un dado de desventaja al tiro de ataque para ignorar 3 puntos de la armadura de su objetivo (6 si apunta a cabeza, brazos o piernas). Si reduce la armadura a 0 incrementa el nivel de todas las heridas por 1.
 
 ------
 
@@ -90,7 +90,7 @@ title: Escenarios 1-3
 
 **Arma secundaria** (acción bonus, 1/ronda): +3, 1d6 + 2. +4 daño contra enemigos heridos por el arma principal, sorprendidos o flanqueados.
 
-**Apuntar ataque** (acción de movimiento): Reduce el penalizador de ataque preciso por 2.
+**Apuntar ataque** (acción de movimiento): Reduce el penalizador de ataque preciso por un dado de desventaja.
 
 **Enemigo predilecto** (acción de turno completo):  Recibe ventaja en todos sus tiros y +2 daño contra un objetivo específico. 
 
@@ -118,7 +118,7 @@ title: Escenarios 1-3
 
 ------
 
-**Ataque poderoso:** Añade -2 al tiro de ataque para aumentar el daño base por 1d6 y provocar sangrado.
+**Ataque poderoso:** Añade un dado de desventaja al tiro de ataque para incrementar el daño base por 1d6.
 
 **Esquiva asombrosa:** Puede defenderse de ataques sorpresa con normalidad.
 
@@ -128,7 +128,7 @@ title: Escenarios 1-3
 
 **Golpe de escudo** (acción bonus): +6, empuja 1d6 x 5 pies y tropieza si 4 o menos FUE. Debe moverse un mínimo de 5 pies para emplear este ataque. Este infligirá 1d6 + 5 daño adicional al realizar una carga.
 
-**Apuntar** (acción de movimiento): Reduce el penalizador de ataque poderoso por 2.
+**Apuntar** (acción de movimiento): Reduce el penalizador de ataque poderoso por un dado de desventaja.
 
 ------
 
@@ -154,13 +154,13 @@ title: Escenarios 1-3
 
 **Carga de caballería:** Al hacer una carga inflige +1d6 daño y realiza una maniobra gratuita de tropezar. La montura puede realizar un ataque contra una criatura en el suelo como acción bonus.
 
-**Ataque poderoso:** Reduce el tiro de ataque por -2 para incrementar el daño base por 1d6.
+**Ataque poderoso:** Añade un dado de desventaja al tiro de ataque para incrementar el daño base por 1d6.
 
 ------
 
 **Espada larga** (acción estándar): +7, 1d8 + 4 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
 
-**Apuntar** (acción de movimiento): Reduce el penalizador de ataque poderoso por 2.
+**Apuntar** (acción de movimiento): Reduce el penalizador de ataque poderoso por un dado de desventaja.
 
 **Gran corte** (acción de turno completo): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
 
@@ -190,7 +190,7 @@ title: Escenarios 1-3
 
 ------
 
-**Ataque preciso:** Añade -2 al tiro de ataque para ignorar 2 puntos de la armadura de su objetivo (4 si apunta a cabeza, brazos o piernas). Si reduce la armadura a 0 incrementa el nivel de todas las heridas por 1.
+**Ataque preciso:** Añade un dado de desventaja al tiro de ataque para ignorar 3 puntos de la armadura de su objetivo (6 si apunta a cabeza, brazos o piernas). Si reduce la armadura a 0 incrementa el nivel de todas las heridas por 1.
 
 **Evasión:** No sufre daño obligatorio por ataques de área con radio inferior a 20 pies.
 
@@ -200,7 +200,7 @@ title: Escenarios 1-3
 
 **Espada corta** (acción de movimiento): +7, 1d6 + 2. +5 daño contra enemigos incapaces de defenderse o flanqueados.
 
-**Ballesta repetidora** (acción de movimiento): +6, 2d4. +4 daño en ataque sorpresa y al impactar a enemigos enfrentados con aliados.
+**Ballesta repetidora** (acción de movimiento): +6, 2d4. +5  daño en ataque sorpresa y al impactar a enemigos enfrentados con aliados.
 
 **Arma secundaria** (acción bonus, 1/ronda): +5, 1d6 + 2. +5 daño contra enemigos heridos por el arma principal, sorprendidos o flanqueados.
 
@@ -215,3 +215,15 @@ title: Escenarios 1-3
 **Parada**: +7. (1/ronda) Puede hacer una segunda parada con +5 contra un ataque que no haya podido bloquear.
 
 **Reflejos**: +6. Se mueve 5 pies.
+
+## Capitán húsar (nivel 6)
+
+## Guerrero élfico (nivel 3)
+
+## Cazador élfico (nivel 5)
+
+### 
+
+## Doctor de plagas (nivel 4)
+
+## 
