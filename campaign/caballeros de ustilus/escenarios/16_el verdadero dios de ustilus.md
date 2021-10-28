@@ -20,15 +20,21 @@ Arshalán asedia trono de Feyn.
 
 ### El asalto inicial
 
+[EaAD]
+
 ### La noche tras la batalla
 
 ### La invasión anfibia
+
+[RoGH]
 
 ### Encuentro con Yabu
 
 ### El culto del heredero
 
 ### Batalla en las alcantarillas
+
+[]
 
 ### El combate final
 

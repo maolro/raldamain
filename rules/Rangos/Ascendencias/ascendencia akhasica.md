@@ -7,7 +7,7 @@ Tu mente está conectada con la inteligencia colectiva del universo, transformá
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia arcana y ocultismo.
+Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia arcana y ocultismo. 
 
 <u>Vínculo akhásico:</u> Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 1 como acción bonus usable una vez al turno puedes recibir ventaja en un tiro de habilidad, ataque o defensa de tu elección. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) en lugar de acumular los usos de ambos atributos perderás todos los usos de Premonición a cambio de repetir un tiro de tu elección cuando utilices Vínculo akhásico. 
 
