@@ -20,13 +20,13 @@ Arshalán asedia trono de Feyn.
 
 ### El asalto inicial
 
-[EaAD]
+
 
 ### La noche tras la batalla
 
 ### La invasión anfibia
 
-[RoGH]
+
 
 ### Encuentro con Yabu
 
@@ -34,9 +34,11 @@ Arshalán asedia trono de Feyn.
 
 ### Batalla en las alcantarillas
 
-[]
+
 
 ### El combate final
+
+
 
 ### Héroes de Ustilus
 
