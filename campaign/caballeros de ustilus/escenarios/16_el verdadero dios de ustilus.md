@@ -24,9 +24,11 @@ Después que los jugadores se reagrupen tras la caída del primer muro recibirá
 
 #### El cuartel asediado
 
-Cuando los jugadores empiecen a explorar el primer anillo al poco tiempo observarán como un gran número de arshalaníes está rodeando un cuartel ustilés e intentando entrar en él, una clara indiciación que en su interior hay soldados ustileses supervivientes. Si desean liberarlos antes que sea demasiado tarde deberán romper el asedio arshalaní para darles una apertura. 
+Cuando los jugadores empiecen a explorar el primer anillo al poco tiempo observarán como un gran número de arshalaníes está rodeando un cuartel ustilés e intentando entrar en él, una clara indiciación que en su interior hay soldados ustileses supervivientes. Si desean liberarlos antes que sea demasiado tarde deberán romper el asedio arshalaní para darles una apertura. Para ello deberán derrotar a un total de cinco pelotones y un **Enkir Sendüari** para poder liberar a sus aliados. 
 
-A lo largo de este encuentro el máster deberá tener en cuenta dos valores, la cantidad de unidades supervivientes y la cantidad de unidades perdidas, para determinar el resultado final de esta batalla. Cada localización importate contará con una cantidad de unidades las cuales podrán pasar a ser supervivientes o perdidas según las decisiones de los jugadores y la duración del combate. En el cuartel empezará habiendo un total de 9 unidades y al final de cada ronda de combate una unidad pasará a ser perdida. 
+A lo largo de este encuentro el máster deberá tener en cuenta dos valores, la cantidad de unidades supervivientes y la cantidad de unidades perdidas, para determinar el resultado final de esta batalla. Cada localización importate contará con una cantidad de unidades las cuales podrán pasar a ser supervivientes o perdidas según las decisiones de los jugadores y la duración del combate. 
+
+En el cuartel empezará habiendo un total de 9 unidades y al final de cada ronda de combate una unidad pasará a ser perdida. En este encuentro los jugadores pueden enfrentar a las unidades de la oleada siguiente llamando más la atención si desean ganar tiempo para que sus aliados puedan escapar.
 
 Base: 2 **pelotón de lanceros**, 1 **pelotón de infantería pesada**
 
@@ -194,7 +196,13 @@ Cuando concluya la batalla si la cantidad de unidades aliadas vivas al final de 
 
 **Iakub Lazarevic** (nivel 20)
 
-**Guardia real** (nivel 20)
+**Tordek, campeón de Chandrial** (nivel 20)
+
+**Kendell, campeón de Chandrial** (nivel 20)
+
+**Ayse, campeona de Chandrial** (nivel 20)
+
+**Sevim, campeona de Chandrial** (nivel 20)
 
 **Chandrial** (nivel 25)
 
