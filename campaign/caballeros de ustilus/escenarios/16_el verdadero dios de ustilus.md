@@ -28,7 +28,97 @@ Cuando los jugadores empiecen a explorar el primer anillo al poco tiempo observa
 
 A lo largo de este encuentro el máster deberá tener en cuenta dos valores, la cantidad de unidades supervivientes y la cantidad de unidades perdidas, para determinar el resultado final de esta batalla. Cada localización importate contará con una cantidad de unidades las cuales podrán pasar a ser supervivientes o perdidas según las decisiones de los jugadores y la duración del combate. En el cuartel empezará habiendo un total de 9 unidades y al final de cada ronda de combate una unidad pasará a ser perdida. 
 
-Respecto a los atacantes el cuartel está siendo asediado por 
+Base: 2 **pelotón de lanceros**, 1 **pelotón de infantería pesada**
+
+2: 2 **pelotón de arcabuceros**
+
+3: 1 **pelotón de lanceros**, 1 **pelotón de arcabuceros**
+
+4: 1 **pelotón de infantería pesada**, Ajek al rescate
+
+5: 1 **pelotón de caballería**, 1 **Enkir Sendüari**
+
+6: 1 **Caballería sacra**, 1 **Sacerdote guerrero**, 2 **Enkir Sendüari**, descarga de fuego celestial
+
+7: 2 **batallón sacro**, 1 **escuadrón de Oğhankral**, 1 **capitán Oğhankral**
+
+8:  2 **escuadrón de Oğhankral**, 2 **capitán Oğhankral**
+
+9: 1 **Elegido de los justos**, 1 **batallón sacro**, 2 **Enkir Sendüari**
+
+#### Retirada a la plaza
+
+Los jugadores y las tropas rescatadas logran escapar del cuartel y se encuentran con otro grupo de unidades ustilesas que está enfrentándose contra un gran ejército arshalaní. Ahí hay un total de 3 unidades para rescatar. Para poder escapar los jugadores deberán eliminar a todos los **Enkir Sendüari** que haya en el campo de batalla y derrotar a un **Sacerdote guerrero**. Cada tropa que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda.
+
+Base: 3 **pelotón de lanceros**, 1 **pelotón de arcabuceros**, 1 **pelotón de infantería pesada**, 1 **Enkir Sendüari**
+
+2: 2 **pelotón de arcabuceros**
+
+3: 1 **Sacerdote guerrero**, 1 **pelotón de infantería pesada**
+
+4: 1 **pelotón de caballería**, 1 **Enkir Sendüari**, 1 **Caballería sacra**
+
+5: 1 **Caballería sacra**, 1 **Enkir Sendüari**
+
+6: 1 **Caballería sacra**, 1 **Elegido de los Justos**, 1 **Enkir Sendüari**
+
+7: Empiezan a llegar las unidades supervivientes del anterior encuentro en oleadas
+
+#### Un rescate arriesgado
+
+Mientras escapan los jugadores observan como en una calle cercana hay un grupo de soldados ustileses acorralados por los arshalaníes y al borde de la muerte. Podrán entonces escoger entre rescatar a 3 unidades en peligro o retirarse junto con aquellas que hayan salvado. En este combate cada tropa enemiga que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda. Para poder escapar deberán eliminar a todos los **Enkir Sendüari** que haya en el campo de batalla y derrotar a un **Sacerdote guerrero**.
+
+Base: 3 **pelotón de lanceros**, 1 **pelotón de arcabuceros**, 1 **pelotón de infantería pesada**, 1 **Enkir Sendüari**
+
+2: 2 **pelotón de arcabuceros** 
+
+3: 1 **Sacerdote guerrero**, 1 **pelotón de infantería pesada**
+
+4: 1 **pelotón de caballería** 
+
+5: 1 **Enkir Sendüari**, 1 **escuadrón de caballería sacra**
+
+6: 3 **Caballería sacra**, 1 **Elegido de los Justos**, 2 **Enkir Sendüari**, masacre de las unidades ustilesas
+
+7: 2 **Enkir Sendüari**, 1 **Sacerdote guerrero**
+
+8: 1 **Elegido de los Justos**, 2 **Enkir Sendüari**, 2 **Capitán Oğhankral**
+
+#### Acorralados
+
+Mientras continúan avanzando los jugadores se cruzan con Ajek quien viene junto con 6 unidades que ha rescatado. Pero solo a unas pocas calles de la salida los jugadores verán su camino cortado por un gran ejército arshalaní y poco a poco los arshalaníes empiezan a llegar desde todas las salidas, dejando a los jugadores acorralados. Si estos desean romper el cerco deberán derrotar como mínimo a un **Elegido de los justos**, 2 **Enkir Sendüari** y 2 **Capitanes Oğhankral** antes que llegue la séptima ronda. En este combate cada tropa enemiga que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda.
+
+Base: 2 **Batallón sacro**, 1 **Escuadrón de Oğhankral**, 1 **Enkir Sendüari**
+
+2: 2 **Escuadrones de Oğhankral**, 2 **Capitanes Oğhankral**
+
+3: 1 **Batallón sacro**, 1 **Enkir Sendüari**
+
+4: 2 **Caballería sacra**, 1 **Elegido de los justos**
+
+5: 3 **Agentes de los justos**
+
+6: 3 **Agentes de los justos**, 1 **Elegido de los justos**
+
+7: Llegan las tropas supervivientes de encuentro *Un rescate arriesgado* y pánico
+
+#### Una última resistencia
+
+En el caso que no logren retirarse a tiempo en el anterior encuentro los jugadores quedan forzados a refugiarse en un edificio cercano y aguantar hasta que llegue un rescate ustilés. Ahí deberán luchar por sus vidas contra un masivo ejército enemigo que no hará más que crecer con el paso del tiempo. En este combate cada tropa enemiga que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda.
+
+Base: Todas las tropas supervivientes del encuentro *acorraldos*. Aquellas que aún no han aparecido irán llegando por oleadas junto con las tropas nuevas de este apartado.
+
+2: **Tordek**, 2 **Enkir Sendüari**
+
+4: 2 **Escudrones Oğhankral**, 2 **Capitanes Oğhankral**
+
+6: 2 **Batallón sacro**, 2 **Enkir Sendüari**
+
+8: 1 **Batallón sacro**, 1 **Enkir Sendüari**, 1 **Sacerdote guerrero**
+
+10: Llega el rescate ustilés.
+
+Cuando concluya la batalla si la cantidad de unidades aliadas vivas al final de este es superior a 10 entonces han evacuado a la mayoría del ejército ustilés y habrán completado exitosamente su misión. En el caso contrario aunque salgan con vida la defensa de la capital estará seriamente comprometida y contarán con menos efectivos para la defensa, incrementando así la dificultad del encuentro final.
 
 ### La noche tras la batalla
 
