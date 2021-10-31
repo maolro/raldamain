@@ -22,9 +22,9 @@ title: Escenarios 15-16
 
 
 
-## Sacerdote guerrero (nivel 16)
+## Sacerdote guerrero (nivel 15)
 
-
+Magia divina II, Ascendencia celestial IV, Contundentes V, Armaduras II, Guerrero divino III
 
 ## Enkir Sendüari (nivel 15)
 
@@ -38,7 +38,7 @@ A distancia V, Combate doble III, Reflejos III, Rastrear III, Guerrero divino II
 
 ## Justo elegido (nivel 17)
 
-Filos perforantes V, Combate doble III, Reflejos III, Rastrear III, Guerrero divino IV
+Filos perforantes V, Combate doble III, Reflejos III, Rastrear V, Guerrero divino III
 
 ## Unidad de caballeros de Ustilus (nivel 15)
 
