@@ -50,7 +50,7 @@ Base: 2 **pelotón de lanceros**, 1 **pelotón de infantería pesada**
 
 #### Retirada a la plaza
 
-Los jugadores y las tropas rescatadas logran escapar del cuartel y se encuentran con otro grupo de unidades ustilesas que está enfrentándose contra un gran ejército arshalaní. Ahí hay un total de 3 unidades para rescatar. Para poder escapar los jugadores deberán eliminar a todos los **Enkir Sendüari** que haya en el campo de batalla y derrotar a un **Sacerdote guerrero**. Cada tropa que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda.
+Los jugadores y las tropas rescatadas logran escapar del cuartel y se encuentran con otro grupo de unidades ustilesas que está enfrentándose contra un gran ejército arshalaní. Ahí hay un total de 3 unidades para rescatar. Para poder escapar los jugadores deberán eliminar a todos los **Enkir Sendüari** que haya en el campo de batalla y derrotar a un **Sacerdote guerrero**. Cada tropa que esté sin enfrentar por un jugador o aliado eliminará una unidad al final de su ronda.
 
 Base: 3 **pelotón de lanceros**, 1 **pelotón de arcabuceros**, 1 **pelotón de infantería pesada**, 1 **Enkir Sendüari**
 
@@ -68,7 +68,7 @@ Base: 3 **pelotón de lanceros**, 1 **pelotón de arcabuceros**, 1 **pelotón de
 
 #### Un rescate arriesgado
 
-Mientras escapan los jugadores observan como en una calle cercana hay un grupo de soldados ustileses acorralados por los arshalaníes y al borde de la muerte. Podrán entonces escoger entre rescatar a 3 unidades en peligro o retirarse junto con aquellas que hayan salvado. En este combate cada tropa enemiga que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda. Para poder escapar deberán eliminar a todos los **Enkir Sendüari** que haya en el campo de batalla y derrotar a un **Sacerdote guerrero**.
+Mientras escapan los jugadores observan como en una calle cercana hay un grupo de soldados ustileses acorralados por los arshalaníes y al borde de la muerte. Podrán entonces escoger entre rescatar a 3 unidades en peligro o retirarse junto con aquellas que hayan salvado. En este combate cada tropa enemiga que esté sin enfrentar por un jugador o aliado eliminará una unidad al final de su ronda. Para poder escapar deberán eliminar a todos los **Enkir Sendüari** que haya en el campo de batalla y derrotar a un **Sacerdote guerrero**.
 
 Base: 3 **pelotón de lanceros**, 1 **pelotón de arcabuceros**, 1 **pelotón de infantería pesada**, 1 **Enkir Sendüari**
 
@@ -88,7 +88,7 @@ Base: 3 **pelotón de lanceros**, 1 **pelotón de arcabuceros**, 1 **pelotón de
 
 #### Acorralados
 
-Mientras continúan avanzando los jugadores se cruzan con Ajek quien viene junto con 6 unidades que ha rescatado. Pero solo a unas pocas calles de la salida los jugadores verán su camino cortado por un gran ejército arshalaní y poco a poco los arshalaníes empiezan a llegar desde todas las salidas, dejando a los jugadores acorralados. Si estos desean romper el cerco deberán derrotar como mínimo a un **Elegido de los justos**, 2 **Enkir Sendüari** y 2 **Capitanes Oğhankral** antes que llegue la séptima ronda. En este combate cada tropa enemiga que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda.
+Mientras continúan avanzando los jugadores se cruzan con Ajek quien viene junto con 6 unidades que ha rescatado. Pero solo a unas pocas calles de la salida los jugadores verán su camino cortado por un gran ejército arshalaní y poco a poco los arshalaníes empiezan a llegar desde todas las salidas, dejando a los jugadores acorralados. Si estos desean romper el cerco deberán derrotar como mínimo a un **Elegido de los justos**, 2 **Enkir Sendüari** y 2 **Capitanes Oğhankral** antes que llegue la séptima ronda. En este combate cada tropa enemiga que esté sin enfrentar por un jugador o aliado eliminará una unidad al final de su ronda.
 
 Base: 2 **Batallón sacro**, 1 **Escuadrón de Oğhankral**, 1 **Enkir Sendüari**
 
@@ -106,11 +106,11 @@ Base: 2 **Batallón sacro**, 1 **Escuadrón de Oğhankral**, 1 **Enkir Sendüari
 
 #### Una última resistencia
 
-En el caso que no logren retirarse a tiempo en el anterior encuentro los jugadores quedan forzados a refugiarse en un edificio cercano y aguantar hasta que llegue un rescate ustilés. Ahí deberán luchar por sus vidas contra un masivo ejército enemigo que no hará más que crecer con el paso del tiempo. En este combate cada tropa enemiga que esté sin enfrentar por un jugador eliminará una unidad aliada al final de su ronda.
+En el caso que no logren retirarse a tiempo en el anterior encuentro los jugadores quedan forzados a refugiarse en un edificio cercano y aguantar hasta que llegue un rescate ustilés. Ahí deberán luchar por sus vidas contra un masivo ejército enemigo que no hará más que crecer con el paso del tiempo. En este combate cada tropa enemiga que esté sin enfrentar por un jugador o aliado eliminará una unidad al final de su ronda.
 
-Base: Todas las tropas supervivientes del encuentro *acorraldos*. Aquellas que aún no han aparecido irán llegando por oleadas junto con las tropas nuevas de este apartado.
+Base: Todas las tropas supervivientes del encuentro *acorraldos*. Aquellas que aún no han aparecido irán llegando por oleadas junto con las tropas nuevas de este apartado. En el caso que se pierdan más de la mitad de las tropas aliadas en este combate se producirá un colapso de moral, provocando que todos los enemigos arshalaníes obtengan ventaja en todos sus tiros de ataque y defensa durante el resto del combate.
 
-2: **Tordek**, 2 **Enkir Sendüari**
+2: **Tordek campeón de Chandrial** , 2 **Enkir Sendüari**
 
 4: 2 **Escudrones Oğhankral**, 2 **Capitanes Oğhankral**
 
