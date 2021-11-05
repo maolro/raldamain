@@ -28,30 +28,26 @@ Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una
 
 Ya sea por haber tenido contacto con un arma asura o por el efecto que han tenido en ti las innumerables batallas en las que has estado, una parte de ti ha comenzado a cambiar haciéndote oír susurros desde los mas profundo de tu mente que te incitan a continuar luchando ignorando el coste incluso si eso conlleva el sacrificio de los que hay a tu alrededor. En este punto aún puedes intentar resistirte a tu maldición o abrazarla completamente pero cuanto mas tiempo vaciles o cuanto mas intentes resistirte mas fuerte se volverá esa voz intentando enloquecerte a cada paso. El primer grado de la maldición te otorga las siguientes habilidades:
 
-- Incrementa tu estadística de CAR por 1.
-- Al entrar en el campo de batalla te invade una furia sobrenatural que te hace más fuerte pero a su vez hace que te cueste distinguir entre amigos y enemigos. Si escoges activar esta furia recibirás ventaja en todos tus tiros de ataque y defensa (estos se acumulan con Ira y Guerrero divino) a costa de recibir el efecto de estado Confundido mientras dure el combate. Puedes escoger reprimir esta habilidad y evitar sus efectos, pero si lo haces cada ronda deberás tener éxito en un tiro de SAB contra dificultad igual a 2 + 2 x el número de rondas que has pasado en el campo de batalla.
+- Incrementa tu estadística de CAR por 1 y aumenta tu resistencia al daño físico por 2.
+- Al entrar en el campo de batalla te invade una furia sobrenatural conocida como éxtasis de batalla que te hace más fuerte pero a su vez hace que te cueste distinguir entre amigos y enemigos. Si escoges entrar en éxtasis de batalla recibirás ventaja en todos tus tiros de ataque y defensa (estos se acumulan con Ira y Guerrero divino) a costa de recibir el efecto de estado Confundido mientras dure el combate. Puedes escoger reprimir esta habilidad y evitar sus efectos, pero si lo haces cada ronda deberás tener éxito en un tiro de SAB contra dificultad igual a 2 + 2 x el número de rondas que has pasado en el campo de batalla.
 - Tu aspecto es terrorífico hacia todas las criaturas que se enfrenten a ti. Todas las criaturas que mantengan contacto visual contigo y tengan 7 o menos PV estarán Espantadas hasta que pasen un turno sin mirarte o se alejen a más de 60 pies de ti. Si posees la habilidad Inspirar temor o Mirada terrorífica aumenta el nivel de todos los efectos de miedo que provoques por un paso.
 
 ### Grado 2 
 
 Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmento de tu humanidad. Llegado este punto pocas cosas te importan ya, quedando destinado a vagar para llenar ese vacío en tu interior y sintiéndote inclinado incluso a seguir un comportamiento autodestructivo con la única razón de sentirte satisfecho por un instante antes de planear cual será tu siguiente victima. El segundo grado de la maldición te otorga las siguientes habilidades:
 
-- Incrementa tu estadística de DES por 1 y aumenta tu resistencia al daño físico por 2.
-- Formas un poderoso vínculo con tu arma, convirtiéndola así en una extensión de tu cuerpo. Eres capaz de saber donde se encuentra en todo momento y no puedes ser desarmado de ella. Tu arma adicionalmente recibe los bonificadores de la mejora Infusión elemental, infligiendo así +2 daño de un elemento de tu elección.
-- Recibes la capacidad de sanar tus heridas mientras 
-- Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
+- Incrementa tu estadística de DES por 1 y aumenta tu resistencia a un elemento de tu elección por 2.
+- Formas un poderoso vínculo con tu arma, convirtiéndola así en una extensión de tu cuerpo. Eres capaz de saber donde se encuentra en todo momento y no puedes ser desarmado de ella. Tu arma adicionalmente recibe los bonificadores de la mejora Infusión elemental, infligiendo así +2 daño de un elemento de tu elección además de provocar un efecto de estado determinado al reducir los PV de su objetivo.
+- Al entrar en tu estado de furia cada vez que hieras a un enemigo con tu arma ligada recuperas 1 punto de Vitalidad (2 puntos de Vitalidad si provocas un golpe crítico). Si logras matar a un enemigo con tu arma puedes además reducir el nivel de una herida permanente que te afecta por un paso o eliminar un efecto de estado negativo. 
 
 
 ### Grado 3 
 
 Finalmente la maldición se ha apoderado por completo de tu cuerpo retorciendo tu mente hasta el punto de teñir tu vista de un rojo carmesí. En este punto de la maldición detestas todo lo que no te de placer y ahora nada puede darte mas placer que la guerra; ya sea una guerra surgida por accidente u orquestada por fuerzas superiores, una entre dos imperios o una matanza sobrenatural, una por la unificación de un país o una masacre sin sentido ninguna de esas razones importa solo queriendo sumirte a ti mismo y al resto en esa eterna furia que llena tu mente. El tercer grado de la maldición te otorga las siguientes habilidades:
 
-- +1 Fuerza 
-
-- Furia Carmesí: al entrar en extasis de batalla eres de capaz de curarte X/2 donde X es el daño que le haces a los PV de tu oponente, también puedes elegir reducir el nivel de una herida permanente por 1 en vez de curarte. Si estando en furia carmesí no eres capaz de infligir 5 daño caerás inconsciente al finalizar el turno. Eres capaz de salir de la Furia Carmesí como acción de turno completo, aunque estarás fatigado durante 1/2 turnos (esto depende de si es sistema Raldamain o d20) 
-
-
-- Arma maldita: En caso de que tu cuerpo mortal sea eliminado, tu alma pasara a la espada permitiéndote transmitirle la maldición Ashura a otra persona.  También tu arma hará 1daño base adicional además de permitirte reducir una estadística física de un enemigo por 1en un golpe crítico. Gracias a esta habilidad puedes emitir una leve llamada a un individuo para que sienta el impulso de coger el arma, si este no se deshace de ella en tres días podrás intentar tomar su cuerpo sustituyendo su consciencia por completo si tienes éxito.
+- Incrementa tu estadística de CON por 1 y aumenta tu resistencia al miedo y efectos mentales por 4.
+- Te transformas en una auténtica máquina de matar. Tu arma ligada recibe una mejora de arma automáticamente que no valga más de 3 créditos y todas las heridas permanentes que inflijas aumentan su nivel por un paso. Adiciona
+- Tu alma se corrompe por completo, transformándote en un sanguinario guerrero capaz de seguir luchando hasta más allá de la muerte. Tu cuerpo físico no podrá morir hasta que seas decapitado o forzosamente separado de tu arma ligada, permitiéndote así seguir luchando sin importar los PV que te queden (no obstante quedarás fatigado si te encuentras por debajo de 0 PV y exhausto si alcanzas PV negativos iguales a tus PV). En el caso que finalmente mueras tu alma poseerá tu arma ligada y su próximo portador recibirá la maldición Asura a grado 1.
 
 
 ## Profundo
