@@ -26,21 +26,19 @@ Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una
 
 ### Grado 1
 
-Ya sea por haber tenido contacto con un arma asura o por el efecto que han tenido en ti las innumerables batallas en las que has estado, una parte de ti ha comenzado a cambiar haciéndote oír susurros desde los mas profundo de tu mente que te incitan a continuar luchando ignorando el coste incluso si eso conlleva el sacrificio de los que hay a tu alrededor, todo para poder saciar tu nueva sed de sangre. En este punto aún puedes intentar resistirte a tu maldición o abrazarla completamente pero cuanto mas tiempo vaciles o cuanto mas intentes resistirte mas fuerte se volverá esa voz intentando enloquecerte a cada paso. El primer grado de la maldición te otorga las siguientes habilidades:
+Ya sea por haber tenido contacto con un arma asura o por el efecto que han tenido en ti las innumerables batallas en las que has estado, una parte de ti ha comenzado a cambiar haciéndote oír susurros desde los mas profundo de tu mente que te incitan a continuar luchando ignorando el coste incluso si eso conlleva el sacrificio de los que hay a tu alrededor. En este punto aún puedes intentar resistirte a tu maldición o abrazarla completamente pero cuanto mas tiempo vaciles o cuanto mas intentes resistirte mas fuerte se volverá esa voz intentando enloquecerte a cada paso. El primer grado de la maldición te otorga las siguientes habilidades:
 
-- +1 Fuerza 
-- Estasis de batalla: recibe la habilidad Ira. Si ya tienes ira, recibirás ventaja en uno de tus tiros de cada ronda en tiros de ataque y aumenta su daño base por 1d6
-- Visage horrible: todas las criaturas que mantengan contacto visual con la criatura están Espantadas hasta que pasen un turno sin mirarla o se alejen más de 30 pies de distancia de ella. A grado de maldición 2 provocará el efecto miedo y a grado de maldición 3 causará pánico. 
+- Incrementa tu estadística de CAR por 1.
+- Al entrar en el campo de batalla te invade una furia sobrenatural que te hace más fuerte pero a su vez hace que te cueste distinguir entre amigos y enemigos. Si escoges activar esta furia recibirás ventaja en todos tus tiros de ataque y defensa (estos se acumulan con Ira y Guerrero divino) a costa de recibir el efecto de estado Confundido mientras dure el combate. Puedes escoger reprimir esta habilidad y evitar sus efectos, pero si lo haces cada ronda deberás tener éxito en un tiro de SAB contra dificultad igual a 2 + 2 x el número de rondas que has pasado en el campo de batalla.
+- Tu aspecto es terrorífico hacia todas las criaturas que se enfrenten a ti. Todas las criaturas que mantengan contacto visual contigo y tengan 7 o menos PV estarán Espantadas hasta que pasen un turno sin mirarte o se alejen a más de 60 pies de ti. Si posees la habilidad Inspirar temor o Mirada terrorífica aumenta el nivel de todos los efectos de miedo que provoques por un paso.
 
 ### Grado 2 
 
-Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmento de tu humanidad. Llegado este punto pocas cosas te importan ya, quedando destinado a vagar para llenar ese vacío en tu interior y sintiéndote inclinado incluso a seguir un comportamiento autodestructivo con la única razón de sentirte satisfecho por un instante antes de planear cual será tu siguiente victima . El segundo grado de la maldición te otorga las siguientes habilidades:
+Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmento de tu humanidad. Llegado este punto pocas cosas te importan ya, quedando destinado a vagar para llenar ese vacío en tu interior y sintiéndote inclinado incluso a seguir un comportamiento autodestructivo con la única razón de sentirte satisfecho por un instante antes de planear cual será tu siguiente victima. El segundo grado de la maldición te otorga las siguientes habilidades:
 
-- +1 Destreza 
-
-- Arma ligada: puedes saber donde esta tu arma en todo momento y gastando 1 acción de turno completo para traerla hacia ti. A nivel 3 de maldición esto te cuesta una acción estándar. También recibes la habilidad foco elemental usando Grado de Maldición en vez de ascendencia
-
-
+- Incrementa tu estadística de DES por 1 y aumenta tu resistencia al daño físico por 2.
+- Formas un poderoso vínculo con tu arma, convirtiéndola así en una extensión de tu cuerpo. Eres capaz de saber donde se encuentra en todo momento y no puedes ser desarmado de ella. Tu arma adicionalmente recibe los bonificadores de la mejora Infusión elemental, infligiendo así +2 daño de un elemento de tu elección.
+- Recibes la capacidad de sanar tus heridas mientras 
 - Masacre: Recibes resistencia a daño fisico y cuando actives la tactica de batalla golpe por golpe recibes 1 DEF temporal, cada vez que hagas golpe por golpe aumenta en esa Def en 1 con un max de CON-3 
 
 
