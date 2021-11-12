@@ -4,11 +4,11 @@ title: Heridas permanentes
 
 Las heridas permanentes son todas aquellas heridas que causan daños duraderos al cuerpo de una persona. Un personaje recibirá una herida permanente cada vez que sufra daño a los PV o un golpe crítico, el cual aumentará el nivel de las heridas permanentes infligidas por un paso.
 
-La herida que provoques afectará a una parte aleatoria del cuerpo de tu objetivo salvo que tomes un penalizador -2 para afectar a una parte específica de su cuerpo (si el enemigo es incapaz de defenderse el atacante deberá emplear una acción de movimiento adicional para apuntar a los brazos, piernas o cabeza). En el caso que un personaje sufra una herida permanente en una parte del cuerpo donde ya tenga una incrementa el nivel de dicha herida por un paso. Una herida permanente tendrá efectos diferentes dependiendo de la parte del cuerpo afectada tal como queda indicado a continuación.
+La herida que provoques afectará a una parte aleatoria del cuerpo de tu objetivo salvo que tomes un penalizador de un dado de desventaja para afectar a una parte específica de su cuerpo (si el enemigo es incapaz de defenderse el atacante deberá emplear una acción de movimiento adicional para apuntar a los brazos, piernas o cabeza). En el caso que un personaje sufra una herida permanente en una parte del cuerpo donde ya tenga una incrementa el nivel de dicha herida por un paso. Una herida permanente tendrá efectos diferentes dependiendo de la parte del cuerpo afectada tal como queda indicado a continuación.
 
 ## Cabeza
 
-Para apuntar a la cabeza debes tomar un penalizador -2 adicional a tus tiros de ataque. Si eres impactado en la cabeza, haz un tiro adicional de 1d10 para determinar si sufres una herida adicional en tus ojos, orejas o cuello. Los efectos que recibes al ser impactado en una de esas partes de la cabeza depende del tipo de herida permanente que hayas sufrido.
+Para apuntar a la cabeza debes tomar un dado de desventaja adicional a tus tiros de ataque. Si eres impactado en la cabeza, haz un tiro adicional de 1d10 para determinar si sufres una herida adicional en tus ojos, orejas o cuello. Los efectos que recibes al ser impactado en una de esas partes de la cabeza depende del tipo de herida permanente que hayas sufrido.
 
 **Leve:** Estás Ralentizado durante un turno. Además, recibes desventaja a todos tus tiros de habilidad relacionados con la Inteligencia, la Sabiduría o el Carisma.
 
@@ -31,7 +31,7 @@ Para apuntar a la cabeza debes tomar un penalizador -2 adicional a tus tiros de 
 
 ## Brazos
 
-Para apuntar a un brazo específico debes tomar un penalizador -2 adicional.
+Para apuntar a un brazo específico debes tomar un dado de desventaja adicional.
 
 **Leve:** Recibes desventaja en todas las acciones en las que uses tu brazo herido, incluyendo tiros de ataque y defensa.
 

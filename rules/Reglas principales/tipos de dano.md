@@ -46,6 +46,8 @@ El daño ácido representa aquel causado por corrosivos líquidos capaces de des
 
 ## Mágico
 
+Estas fuentes de daño provienen de efectos sobrenaturales y solo pueden ser detenidas por resistenci
+
 ### Radiante
 
 Este daño representa todo aquel provocado por radiación o una sobrecarga masiva de energía llegando a abrasar los tejidos sin necesidad del fuego. El daño radiante siempre será letal siendo nocivo para todo individuo que sea expuesto a él y provocará quemaduras en la zona afectada aumentando su intensidad por 1 cada turno que siga expuesta (si tu cuerpo completo se ve expuesto por completo a este daño, aumentará las heridas en tres partes aleatorias en él). Las quemaduras provocadas por este daño no pueden ser eludidas por criaturas con daño fuego.
@@ -56,5 +58,5 @@ El daño necrótico representa la putrefacción y necrosis provocado por un cont
 
 ### Fuerza
 
-El daño fuerza es aquel provocado por fuertes choques realizados con oleadas de energía en estado puro haciendo siempre daño letal a la criatura afectada por ellos. El daño fuerza saltará cualquier método de defensa natural no mágico destruyendo todo aquello que encuentre en su camino hasta que la energía empleada en el ataque se agote. De este modo al emplear este método de ataque contra enemigos puede fácilmente quebrar sus huesos, o incluso destruir aquello con lo que se tope desintegrándolo si tiene el suficiente poder
+El daño fuerza es aquel provocado por fuertes choques realizados con oleadas de energía en estado puro haciendo siempre daño letal a la criatura afectada por ellos. El daño fuerza saltará cualquier método de defensa natural no mágico destruyendo todo aquello que encuentre en su camino hasta que la energía empleada en el ataque se agote. De este modo al emplear este método de ataque contra enemigos puede fácilmente quebrar sus huesos, o incluso destruir aquello con lo que se tope desintegrándolo si tiene el suficiente poder. 
 

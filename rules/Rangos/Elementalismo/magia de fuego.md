@@ -9,7 +9,7 @@ Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos
 
 Añade tu rango a todos tus tiros relacionados con magia elemental de fuego.
 
-<u>Llamarada:</u> Como acción estándar puedes atacar a un objetivo a m con una abrasante llamarada. La llama inflige 1d6 + randaño de fuego y cada vez que cause daño a los PV provocará una quemadura leve en tu objetivo (quemadura media si es un golpe crítico). Todos los objetos inflamables en el área de efecto de la llamarada empezarán a arder, extendiéndose a una velocidad de 5 pies por ronda hasta que estos sean apagados. Una criatura sin resistencias al fuego que pase por un espacio en llamas sufrirá una quemadura leve de manera automática. Si el fuego que provocas queda descontrolado puede llegar a causar un incendio.
+<u>Llamarada:</u> Como acción estándar puedes atacar a un objetivo a m con una abrasante llamarada. La llama inflige 1d6 + rango daño de fuego y cada vez que cause daño a los PV provocará una quemadura leve en tu objetivo (quemadura media si es un golpe crítico). Todos los objetos inflamables en el área de efecto de la llamarada empezarán a arder, extendiéndose a una velocidad de 5 pies por ronda hasta que estos sean apagados. Una criatura sin resistencias al fuego que pase por un espacio en llamas sufrirá una quemadura leve de manera automática. Si el fuego que provocas queda descontrolado puede llegar a causar un incendio.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 1 daño no letal para aumentar la fuerza de tus ataques. Esto permite que puedas hacer un ataque elemental adicional en tu turno, aumentar el radio de tu ataque por 10 pies o atacar a todas las criaturas en un cono de 15 pies. Reserva de energía sólo puede usarse una vez por turno.
 

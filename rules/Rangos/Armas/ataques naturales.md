@@ -11,7 +11,7 @@ A diferencia de otros maestros de armas tu te has decantado por utilizar tu prop
 
 Añade tu rango a todos tus tiros de ataque hechos con ataques naturales. Aumenta tu daño base a 1d4 + FUE.
 
-<u>Secuencia de ataques:</u> Realizar ataques naturales y maniobras de combate ahora te cuestan una acción de movimiento en lugar de una estándar. Tu prioridad también aumenta por 1, y volverá a aumentar cuando alcances rango III y V. 
+<u>Secuencia de ataques:</u> Realizar ataques naturales y maniobras de combate ahora te cuestan una acción de movimiento en lugar de una estándar. A rango III puedes hacer un ataque natural o maniobra de combate una vez por ronda como acción bonus. Tu prioridad también aumenta por 1, y volverá a aumentar cuando alcances rango III y V. 
 
 <u>Defensa marcial:</u> Eres capaz de emplear tus habilidades de artes marciales para protegerte de ataques enemigos, incluyendo aquellos hechos con armas. Esta habilidad funciona de la misma manera que una parada, pero si intentas defenderte de un arma cortante o una con espinas sufrirás de inmediato el efecto de estado sangrado.
 
@@ -27,7 +27,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Desviar proyectiles:</u> Eres capaz de protegerte contra veloces proyectiles empleando tu maestría con artes marciales. Defensa marcial puede usarse para protegerte de ataques a distancia que no estén hechos por armas de fuego. Si obtienes defensa crítica o tu oponente obtiene un fracaso crítico puedes desviar el proyectil hacia una criatura de tu elección a 15 pies de ti.
 
-<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Antes de atacar puedes tomar un penalizador -2 a tus ataques a cambio de incrementar el nivel de todas las heridas permanentes que inflijas por un paso. Si empleas una acción de movimiento para apuntar puedes reducir el penalizador para emplear puños precisos y apuntar a partes del cuerpo de tu objetivo por 2.
+<u>Puño preciso:</u> Eres capaz de apuntar a los puntos vitales del enemigo, sacrificando facilidad de impacto por la oportunidad de hacer heridas permanentes. Antes de atacar puedes tomar un dado de desventaja a tus ataques a cambio de incrementar el nivel de todas las heridas permanentes que inflijas por un paso. Si empleas una acción de movimiento para apuntar puedes reducir el penalizador para emplear puños precisos y apuntar a partes del cuerpo de tu objetivo por un dado de de.
 
 ## Rango IV
 

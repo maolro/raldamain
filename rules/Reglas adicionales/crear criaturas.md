@@ -66,7 +66,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 <u>Imitar voces:</u> La criatura es capaz de imitar a la perfección los sonidos que escucha sin la necesidad de entenderlos. Distinguir una imitación de un sonido real requiere tener éxito en un tiro de averiguar intenciones o estudio (campo de ciencias naturales) Si la criatura es un ser inteligente podrá emplear las voces imitadas para engañar a los oyentes, obteniendo los efectos de [imitación perfecta.](https://raldamain.com/rules/Rangos/Social/influenciar.html#rango-iv) 
 
-<u>Pinza:</u> La criatura está dotada de una gran pinza capaz de atrapar con facilidad a sus víctimas. Todos las maniobras de agarre hechos con una pinza costarán una acción de movimiento y en un ataque la criatura puede gastar pye. Esta mejora puede aplicarse a ambas garras de la criatura o a la mandíbula de esta.
+<u>Pinza:</u> La criatura está dotada de una gran pinza capaz de atrapar con facilidad a sus víctimas. Todos las maniobras de agarre hechos con una pinza costarán una acción de movimiento y al impactar con un ataque podrá emplear una acción de movimiento pa. Esta mejora puede aplicarse a ambas garras de la criatura o a la mandíbula de esta.
 
 ### Mejoras de 2 PT
 
