@@ -328,3 +328,38 @@
 
 **Tácticas:** Activa aura abrasadora al inicio de combate (si enemigo < 85 pies y > 15 pies) muro de fuego + 2 ataque elemental + reserva de energía (si enemigo adyacente) Activa aura abrasadora + desenganchar + muro elemental + reserva de energía + ataque elemental (si enemigo > 85 pies) movimiento + 2 ataque elemental + reserva de energía
 
+## Monje maldito (nivel 7)
+
+**PV:** 7			**VT:** 11	 		**DEF:** 8 (media +2, resistencia 2)
+
+**FUE:** 2	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 5
+
+------
+
+**Talentos:** Acrobacias +7, Percepción +4, Juego de manos +6, Atletismo +5, Intimidar +4
+
+**Rangos:** Ataques naturales III, Reflejos III, Fortitud I
+
+**Mejoras:** Infusión necrótica, 
+
+**Movimiento:** 25 pies, salto 15 pies
+
+**Sentidos:** vista ígnea 100 pies
+
+**Resiste:** Fuego 4
+
+**Inmune:** Veneno, enfermedades, efectos mentales
+
+**Prioridad:** +4 (1 estándar + 3 movimiento)
+
+------
+
+
+
+------
+
+**Parada elemental**: +7
+
+## Fantasma hambriento (nivel 6)
+
+## Cazador de almas (nivel )

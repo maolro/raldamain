@@ -46,7 +46,7 @@ Has decidido continuar por esta senda sangrienta senda dejando atrás un fragmen
 Finalmente la maldición se ha apoderado por completo de tu cuerpo retorciendo tu mente hasta el punto de teñir tu vista de un rojo carmesí. En este punto de la maldición detestas todo lo que no te de placer y ahora nada puede darte mas placer que la guerra; ya sea una guerra surgida por accidente u orquestada por fuerzas superiores, una entre dos imperios o una matanza sobrenatural, una por la unificación de un país o una masacre sin sentido ninguna de esas razones importa solo queriendo sumirte a ti mismo y al resto en esa eterna furia que llena tu mente. El tercer grado de la maldición te otorga las siguientes habilidades:
 
 - Incrementa tu estadística de CON por 1 y aumenta tu resistencia al miedo y efectos mentales por 4.
-- Te transformas en una auténtica máquina de matar. Tu arma ligada recibe una mejora de arma automáticamente que no valga más de 3 créditos y todas las heridas permanentes que inflijas aumentan su nivel por un paso. Adiciona
+- Te transformas en una auténtica máquina de matar. Tu arma ligada recibe una mejora de arma automáticamente que no valga más de 3 créditos y todas las heridas permanentes que inflijas aumentan su nivel por un paso. 
 - Tu alma se corrompe por completo, transformándote en un sanguinario guerrero capaz de seguir luchando hasta más allá de la muerte. Tu cuerpo físico no podrá morir hasta que seas decapitado o forzosamente separado de tu arma ligada, permitiéndote así seguir luchando sin importar los PV que te queden (no obstante quedarás fatigado si te encuentras por debajo de 0 PV y exhausto si alcanzas PV negativos iguales a tus PV). En el caso que finalmente mueras tu alma poseerá tu arma ligada y su próximo portador recibirá la maldición Asura a grado 1.
 
 
@@ -75,7 +75,7 @@ Has empezado a perder tu humanidad para abrazar las profundidades, transformánd
 
 Abandonas tu forma humana para transformarte en un profundo, retornando al mar de dónde originaste. Tu especie cambia a profundo y serás un fiel servidor de los dioses de las profundidades, conspirando en la superficie para llevar a cabo su retorno. Al alcanzar este grado de maldición perderás control de tu personaje hasta que esta sea eliminada, pasando a ser un PNJ controlado por el máster. La maldición te otorga las siguientes habilidades:
 
-- Aumenta tu estadística de SAB por 1 y tu CON por 1. 
+- Aumenta tu estadística de SAB por 1 y tu CON por 1. Recibes 3 PT adicionalmes para gastar en mejoras.
 - Tu cuerpo deja de envejecer, alcanzando efectivamente la inmortalidad. También eres inmune a todo efecto que te envejezca de manera artificial y no sufres ningún penalizador físico a tus estadísticas por edad.
 - Tienes la capacidad de transmitir la maldición de las profundidades a otras criaturas, transformándolos en devotos servidores del mar. Puedes reproducirte con cualquier criatura humanoide, y la descendencia que nazca de dichas uniones recibirá la maldición del Profundo a grado 1. Además, una vez al día puedes emplear la habilidad Manifestación divina para maldecir a una criatura, otorgándole también la maldición del profundo a grado 1. 
 
@@ -120,7 +120,7 @@ En este grado la maldición ha empezado a manifestarse en tu cuerpo, causando qu
 
 - Aumenta tu estadística de SAB por 1. Los animales nunca serán naturalmente hostiles hacia ti y puedes comunicarte con ellos.
 - Tus sentidos se vuelven más agudos. No recibes ninguna penalización a tu percepción por luz tenue y obtienes olfato en un radio de 60 pies (el radio de olfato aumentará por 30 pies si ya lo tienes).
-- En las noches de luna llena perderás temporalmente tu humanidad, transformándote en un híbrido entre humano y bestia. En esta forma híbrida aumentas dos de tus estadísticas físicas por 1, reduces tu INT por 1 y recibes las mejoras corporales Garras y Mordisco. Esta transformación durará toda la noche y no recordarás haberte transformado cuando esta termine.
+- En las noches de luna llena perderás temporalmente tu humanidad, transformándote en un híbrido entre humano y bestia. En esta forma híbrida aumentas dos de tus estadísticas físicas por 2, reduces tu INT por 1 y recibes las mejoras corporales Garras y Mordisco. Esta transformación durará toda la noche y no recordarás haberte transformado cuando esta termine.
 
 ### Grado 2
 
@@ -133,6 +133,7 @@ Tu bestia interior se ha convertido en una parte inseparable de ti, permitiéndo
 
 Tu bestia interior se ha liberado de las ataduras de tu forma humana, tomando control absoluto de tu cuerpo. En este estado buscas cazar a todos los seres inteligentes cercanos a ti, luchando con salvaje ferocidad para saciar tu sed de sangre. Si eres reducido a 0 PV recuperarás tu forma humana, reduciendo el grado de tu maldición por 1. El tercer grado de maldición te otorga las siguientes habilidades, las cuales sólo estarán activas cuando adoptes la forma de bestia:
 
+- Aumenta tu estadística de FUE por 1.
 - Tu cuerpo es capaz de rápidamente sanarse de las heridas que sufras. Al principio de tu turno regeneras 2 Vitalidad, sanándote 1 PV si tu vitalidad está al máximo. Además, reduce el nivel de una herida que sufras por 1 al realizar un descanso corto.
 - Tus ataques naturales son capaces de transmitir la maldición de la bestia a otras personas al reducir sus PV con un ataque (estos aún pueden defenderse con un tiro de CON). Estos recibirán la maldición a grado 1.
 - Estando en forma híbrida eres capaz de adoptar la forma pura de un animal. Sólo puedes escoger un animal de esta manera, el cual debe ser el mismo que el animal ligado a tu maldición. Cada vez que subas tres niveles obtienes 3 PT para mejorar tu forma animal (estos PT no pueden usarse para cambiar la fisiología del animal escogido).

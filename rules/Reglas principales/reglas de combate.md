@@ -4,7 +4,7 @@ title: Reglas de Combate
 
 Las reglas de combate del sistema Raldamain buscan agilizar el combate y favorecer la estrategia sobre la suerte. El combate se encuentra dividido en unidades de tiempo conocidas como rondas en las cuales las criaturas podrán las adecuadas acciones en un espacio de tiempo llamado el turno. 
 
-Para determinar el orden de los turnos todos los personajes partícipes en el combate todos los personajes partícipes en el combate deberán hacer un tiro de 1d20 al cual le sumarán su DES llamado el tiro de prioridad. Este tiro determinará el orden en el cual se realizarán las acciones, empezando la ronda aquel que obtenga un tiro más alto y colocándose en orden descendiente.
+Para determinar el orden de los turnos todos los personajes partícipes en el combate todos los personajes partícipes en el combate deberán hacer un tiro de 1d20 al cual le sumarán su DES llamado el tiro de prioridad. Este tiro determinará el orden en el cual se realizarán las acciones, empezando la ronda aquel que obtenga un tiro más alto y colocándose en orden descendiente. 
 
 Las acciones se encuentran divididas en tres tipos: acciones de movimiento, acciones estándar y acciones de turno completo. Un personaje de nivel 1 solo podrá realizar una acción estándar y una acción de movimiento en su turno o sustituir ambas por una acción de turno completo.
 
@@ -96,6 +96,10 @@ Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Para
 Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, recibiendo un dado de desventaja en tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta (este tipo de ocultamiento se conoce como ocultamiento superior). Todos los ataques que hagas contra criaturas incapaces de percibirte contarán como ataques sorpresa, añadiéndote un dado de Ventaja a tus tiros de ataque y evitando que estas puedan tirar para defenderse.
 
 Las penalizaciones por ocultamiento pueden contrarrestarse empleando una acción de movimiento para apuntar un ataque. Cada acción empleada así eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies para el siguiente ataque hecho contra la criatura oculta. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
+
+## Preparación de combate
+
+En aquellas situaciones donde todos los combatientes pueden percibirse unos a otros y pasan algunos instantes previos al combate dialogando entre sí todos tendrán la oportunidad de activar sus habilidades pasivas antes de entrar en combate. Por esta norma cada personaje involucrado en el combate tendrá la oportunidad de ejecutar las acciones de un turno siempre y cuando no tenga un efecto directo sobre otro personaje enemigo. Algunas posibilidades son activar auras, inspirar a aliados, declarar un enemigo predilecto, manipular el campo de batalla o preparar armaduras mágicas. Cada personaje tendrá únicamente una ronda para emplear esta habilidad y el máster podrá juzgar cuando una habilidad pueda o no usarse en esta situació
 
 ## Terreno difícil
 

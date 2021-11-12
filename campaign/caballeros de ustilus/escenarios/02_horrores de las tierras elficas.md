@@ -112,7 +112,7 @@ El transporte de armas está escoltado por seis **matones del pacto** y tres **a
 
 ### Llegada de los caballeros
 
-En cualquier momento de este encuentro cuando se produzca un evento muy destacable, como podría ser una explosión en el laboratorio o un incendio forestal, los caballeros Fileon y Ajek llegarán al bosque para averiguar qué está pasando. Si estos se encuentran con los jugadores les ayudarán para vencer al Pacto y a los elfos. Ajek querrá acabar con Ilesit por encima de todo debido a la contaminación que ha provocado en el bosque mientras que Fileon querrá buscar a Ileria por encima de todo y asegurarse que esté a salvo. Dada la dificultad de muchos encuentros en el laboratorio la ayuda de los caballeros puede ser imprescindible para que los jugadores puedan sobrevivir. Los caballeros llegarán de manera automática después del transporte de armas a causa del conflicto entre elfos y humanos
+En cualquier momento de este encuentro cuando se produzca un evento muy destacable, como podría ser una explosión en el laboratorio o un incendio forestal, los caballeros Fileon y Ajek llegarán al bosque para averiguar qué está pasando. Si estos se encuentran con los jugadores les ayudarán para vencer al Pacto y a los elfos. Ajek querrá acabar con Ilesit por encima de todo debido a la contaminación que ha provocado en el bosque mientras que Fileon querrá buscar a Ileria  y asegurarse que esté a salvo. Dada la dificultad de muchos encuentros en el laboratorio la ayuda de los caballeros puede ser imprescindible para que los jugadores puedan sobrevivir. Los caballeros llegarán de manera automática después del transporte de armas a causa del conflicto entre elfos y humanos
 
 ### Desenlace
 
