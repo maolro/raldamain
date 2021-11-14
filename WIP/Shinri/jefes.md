@@ -104,7 +104,7 @@
 
 **Bajar temperaturas** (acción estándar): Reduce el nivel de las temperaturas en un área de 60 pies por un paso.
 
-**Congelación rápida** (acción bonus): Congela una superfície de 40 pies, convirtiéndola en terreno difícil. Toda criatura que se mueva por ella más de 15 pies deberá tirar acrobacias contra +9 o cae al suelo. Esta habilidad solo puede usarse en entornos fríos. Volver a usar esta habilidad cuesta una acción estándar.
+**Congelación rápida** (acción bonus): Congela una superfície de agua de 40 pies, convirtiéndola en terreno difícil. Toda criatura que se mueva por ella más de 15 pies deberá tirar acrobacias contra +9 o cae al suelo. Esta habilidad solo puede usarse en entornos fríos. Volver a usar esta habilidad cuesta una acción estándar.
 
 ------
 

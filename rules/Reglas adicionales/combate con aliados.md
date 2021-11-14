@@ -66,5 +66,5 @@ Adicionalmente, los enemigos atacarán prioritariamente a los aliados salvo que 
 
 **Armadura de metal:** Reduce su defensa por 2 si sufre 4 o más daño a la vitalidad. Puede emplear una acción de ataque para obtener 4 PV temporales y volver a incrementar su DEF por 2.
 
-**Magnetismo:** Tiene orbitando en torno a él 4 trozos de metal, aumentando su tiro defensivo por 4 e infligiendo 4 daño a todas las criaturas adyacentes a él cada ronda. Puede emplear un trozo de metal para incrementar el daño de un ataque por 2 y para recuperarlo deberá gastar un ataque. Recu
+**Magnetismo:** Tiene orbitando en torno a él 4 trozos de metal, aumentando su tiro defensivo por 4 e infligiendo 4 daño a todas las criaturas adyacentes a él cada ronda. Puede emplear un trozo de metal para incrementar el daño de un ataque por 2 y para recuperarlo deberá gastar un ataque. Recupera un trozo de metal empleando una de sus accio
 
