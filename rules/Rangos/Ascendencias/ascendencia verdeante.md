@@ -21,7 +21,7 @@ Incrementa tu SAB por 1.
 
 <u>Comunión con la naturaleza:</u> Tus sentidos aumentan su eficacia, llegando a ser como los de un animal salvaje. Tienes vista a oscuras y olfato en un radio de 60 pies. Puedes además realizar un ritual de una hora de duración donde entras en harmonía con la naturaleza de tu región, lo cual te permite conocer información sobre los espíritus y localidades de esta. Si tienes rangos en [rastrear](https://raldamain.com/rules/Rangos/Combate/rastrear.html) puedes convertir una región en tu terreno predilecto tras armonizar con ella.
 
-<u>Furia de la naturaleza:</u> Como acción bonus usable una vez al turno puedes sufrir 2 daño no letal para infundir tus ataques naturales y armas hechas de madera con energía natural durante una ronda. Un ataque infundido con la naturaleza hace + 2 daño base y al impactar a un enemigo con armadura reducirá la defensa de esta por 1. No sufres daño no-letal la primera vez que utilices esta habilidad si has armonizado con la región.
+<u>Furia de la naturaleza:</u> Recibes una reserva de energía elemental igual a 2 + tu rango la cual puedes consumir para incrementar la fuerza de tus ataques (esta se acumula con la habilidad reserva de energía). Como acción bonus usable una vez al turno puedes reducir tu reserva elemental por 1 para infundir tus ataques naturales y armas hechas de madera con energía natural durante una ronda. Un ataque infundido con la naturaleza hace +  daño base y al impactar a un enemigo con armadura reducirá la defensa de esta por 1. No sufres daño no-letal la primera vez que utilices esta habilidad si has armonizado con la región.
 
 ## Rango III 
 

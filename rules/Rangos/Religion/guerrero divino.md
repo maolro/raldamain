@@ -15,7 +15,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 ## Rango II
 
-<u>Arma sacra:</u> Tu arma infligirá +2 daño base contra criaturas bendecidas por dioses enemigos, afectando sacerdotes, guerreros divinos y a criaturas monstruosas asociadas con religiones enemigas. Al impactar a un enemigo de la fe con tu arma sacra este no podrá sanarse durante el resto de la ronda. A rango IV tu arma sacra podrá afectar a cualquier criatura que consideres enemiga de tu fe, esté o no bendita. 
+<u>Arma sacra:</u> Tu arma infligirá +1d6 daño base contra criaturas bendecidas por dioses enemigos, afectando sacerdotes, guerreros divinos y a criaturas monstruosas asociadas con religiones enemigas. Al impactar a un enemigo de la fe con tu arma sacra este no podrá sanarse durante el resto de la ronda. A rango IV tu arma sacra podrá afectar a cualquier criatura que consideres enemiga de tu fe, esté o no bendita. 
 
 <u>Armadura consagrada:</u> Tu armadura está bendecida por tu dios, incrementando su DEF por 2 y la resistencia mágica que otorga por 2. Si no tienes ningún rango en [Armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html) obtendrás resistencia mágica igual a tu rango de guerrero divino.
 
