@@ -33,6 +33,8 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Teletransportar:</u> Tienes conocimiento de los conductos de chi que construyen la realidad, y puedes manipularlos para teletransportarte grandes distancias. Como acción de turno completo crea un portal que te conecta con una localización en cualquier lugar del mundo. Para ello debes hacer un tiro de magia espacial contra un tiro de dificultad decidido por el máster dependiendo de tu familiaridad con el lugar que busques visitar. Si tienes éxito aparecerás en la localización designada, mientras que si fracasas acabarás una localización similar a esta (si obtienes un fracaso crítico puedes llegar a acabar en un lugar peligroso, como en medio del mar o debajo de la tierra). Un uso de esta habilidad consume 2 chi de tu reserva y puedes también transportar a hasta cuatro aliados contigo.
 
+<u>Intercambio espacial:</u> 
+
 ## Rango V 
 
 Aumenta tu probabilidad de crítico a 18-20.

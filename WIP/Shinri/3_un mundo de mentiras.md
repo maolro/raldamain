@@ -74,7 +74,7 @@ Hachimon Jikouji, 2 Ekta de tierra, 4 Soldados de élite, 6 Lanceros ashigaru
 
 ### Llegada de los monjes guerreros
 
-Heizou, Ishigei, Kayeru, Azusa
+Taejin, Ishigei, Kayeru, Azusa
 
 ### Un lugar seguro
 
