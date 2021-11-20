@@ -31,7 +31,7 @@ Incrementa tu probabilidad de crítico a 19-20.
 
 ## Rango IV
 
-<u>Tormenta de energía negativa:</u> Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + INT daño necrótico al impactar (2d6 + INT a rango V). Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear toque necrótico ahora te cuesta una acción de movimiento.
+<u>Tormenta de energía negativa:</u> Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + rango daño necrótico al impactar (2d6 + rango a rango V). Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear toque necrótico ahora te cuesta una acción de movimiento.
 
 <u>Crear no muerto superior:</u> Conoces los rituales para convertir cadáveres en no muertos más poderosos. Utilizando un ritual de duración igual a un descanso corto puedes transformar a un cadáver, un no-muerto menor o una persona voluntaria en una criatura más poderosa conocida como un no-muerto superior. Los diferentes métodos de creación para no-muertos superiores se describen en su respectivo apartado y normalmente su nivel no podrá superar tu rango de nigromancia x 2. No puedes tener bajo tu control más de 4 no-muertos superiores. Emplear animar cadáver ahora te cuesta una acción estándar. Un no-muerto superior solo podrá emplear esta habilidad si se encuentra fuera del control de un nigromante.
 
@@ -81,7 +81,7 @@ La base de todo ejército de no-muertos, los esqueletos compensan su relativa fr
 
 Las estadísticas básicas de un esqueleto de nivel 1 son las siguientes:
 
-**PV:** 5, **VT:** -, **DEF:** 2 (restos de armadura, natural + 1)
+**PV:** 5, **VT:** 5, **DEF:** 2 (restos de armadura, natural + 1)
 
 **FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 0
 
