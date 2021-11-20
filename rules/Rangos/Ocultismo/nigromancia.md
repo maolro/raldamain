@@ -13,13 +13,13 @@ Añade tu rango a todos tus tiros relacionados con nigromancia. Sientes la prese
 
 <u>Toque necrótico:</u> Como una acción estándar puedes drenar el chi de un objetivo localizado a 15 pies de ti. Este ataque inflige 1d6 + rango daño necrótico al impactar contra el cual tu objetivo se defenderá empleando su CON. Todo el daño a los PV hecho con un toque necrótico reducirá también el máximo de PV de dicho personaje, impidiendo que este se pueda sanar (eliminar esta reducción a los PV requiere sanación con magia divina o atención médica avanzada). Esta habilidad puede emplearse para infundir tus armas de energía necrótica como acción estándar, causando que esta inflija +2 daño necrótico al impactar (provocará el mismo efecto sobre los PV que toque necrótico). Este efecto permanecerá activo hasta que pierdas la concentración.
 
-<u>Bendición de la muerte:</u> Tus estudios sobre la muerte te han hecho más cercano a ella. Los no-muertos no son naturalmente hostiles hacia ti, considerándote como si fueses uno de ellos. Obtienes Resistencia a daño Necrótico y Venenos igual a tu rango + 1, y puedes aguantar la respiración durante un turno adicional por cada rango de Nigromancia que tengas. Esta bendición se manifiesta en ti como un rasgo físico relacionado con la no-muerte, como puede ser piel pálida, ojeras pronunciadas o un toque frío. Si una criatura no-muerta recibe esta habilidad recibirá resistencia a magia divina y exorcizar igual a tu rango + 1.
+<u>Bendición de la muerte:</u> Tus estudios sobre la muerte te han hecho más cercano a ella. Los no-muertos no son naturalmente hostiles hacia ti, considerándote como si fueses uno de ellos. Obtienes Resistencia a daño Necrótico y Venenos igual a tu rango + 1, y puedes aguantar la respiración durante un turno adicional por cada rango de Nigromancia que tengas. Esta bendición se manifiesta en ti como un rasgo físico relacionado con la no-muerte, como puede ser piel pálida, ojeras pronunciadas o un toque frío. Si ya has alcanzado la no-muerte recibirás resistencia a magia divina y exorcizar igual a tu rango + 1 además de perder la vulnerabilidad al daño radiante.
 
 ## Rango II
 
 <u>Toque vampírico:</u> Cuando infliges daño necrótico recuperarás una cantidad de vitalidad igual a la mitad del daño provocado. En el caso que tu vitalidad está al máximo, te sanarás puntos de vida equivalentes al excedente. Si logras provocar un golpe crítico con un toque necrótico puedes reducir el nivel de una herida permanente por un paso o eliminar un efecto de estado.
 
-<u>Animar cadáver:</u> Como acción de turno completo puedes infundir a un cadáver con una semblanza de vida. El cadáver escogido resucitará como un zombi o esqueleto, y este seguirá tus órdenes al pie de la letra. Eres capaz de comandar como máximo un número de no muertos menores igual a tres veces tu rango de nigromancia. Puedes hacer un ataque de toque necrótico a cualquier criatura adyacente a un no-muerto bajo tu control como si tú estuvieses en esa posición.
+<u>Animar cadáver:</u> Como acción de turno completo puedes infundir a un cadáver con una semblanza de vida. El cadáver escogido resucitará como un zombi o esqueleto, y este seguirá tus órdenes al pie de la letra. Eres capaz de comandar como máximo un número de no muertos menores igual a tres veces tu rango de nigromancia. Puedes hacer un ataque de toque necrótico a cualquier criatura adyacente a un no-muerto bajo tu control como si tú estuvieses en esa posición. Si ya has alcanzado la no-muerte todas las criaturas que mates con daño necrótico renacerán como un zombis bajo tu control al cabo de una ronda sin la necesidad de hacer un ritual.
 
 ## Rango III
 
@@ -27,13 +27,13 @@ Incrementa tu probabilidad de crítico a 19-20.
 
 <u>Enervación:</u> Tu toque necrótico es capaz de mermar las habilidades físicas y mentales de tu oponente hasta el punto de la muerte. Cada vez que inflijas daño necrótico a un enemigo este deberá tener éxito en un tiro de CON contra tu ataque o sufrirá los efectos de un veneno perteneciente a una estadística de tu elección. Este veneno se encontrará al primer nivel y no podrá ascender ni reducir su gravedad con el paso del tiempo. Al ser una habilidad mágica las resistencias a veneno no se aplicarán a este tiro, pero sí la resistencia a daño necrótico. En el caso que utilices esta habilidad en una criatura ya afectada por un veneno o enfermedad puedes incrementar el nivel de dicho efecto por 1 en el caso esta fracase el tiro de CON para resistir.
 
-<u>Aspecto de no-muerto:</u> Estás un paso más cerca de la no-muerte que cualquier mortal. Eres capaz de subsistir sólo con la esencia vital de los demás, causando que no sufras efectos negativos al por pasar un día sin comer ni beber si has matado a un ser vivo con Toque necrótico en 24 horas. Al hacer un tiro de Intimidar puedes tirar tus dados de Nigromancia en lugar de los dados correspondientes a ese talento.
+<u>Aspecto de no-muerto:</u> Estás un paso más cerca de la no-muerte que cualquier mortal. Eres capaz de subsistir sólo con la esencia vital de los demás, causando que no sufras efectos negativos al por pasar un día sin comer ni beber si has matado a un ser vivo con Toque necrótico en 24 horas. Al hacer un tiro de Intimidar puedes tirar tus dados de Nigromancia en lugar de los dados correspondientes a ese talento. Si ya has alcanzado la no-muerte al recibir esta habilidad recibes la mejora Mirada terrorífica, espantando así a todas las criaturas que se encuentren a 60 pies de ti que te estén mirando (en el caso que ya la poseas aumenta el nivel de miedo que provocas con dicha habilidad por un paso).
 
 ## Rango IV
 
 <u>Tormenta de energía negativa:</u> Como acción estándar puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + INT daño necrótico al impactar (2d6 + INT a rango V). Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear toque necrótico ahora te cuesta una acción de movimiento.
 
-<u>Crear no muerto superior:</u> Conoces los rituales para convertir cadáveres en no muertos más poderosos. Utilizando un ritual de duración igual a un descanso corto puedes transformar a un cadáver, un no-muerto menor o una persona voluntaria en un no-muerto superior. Si resucitas a una criatura que tenga rangos de habilidad puedes hacer que conserve un número de rangos igual a tu nivel - 2. No puedes tener bajo tu control más de 4 no-muertos superiores. Emplear animar cadáver ahora te cuesta una acción estándar.
+<u>Crear no muerto superior:</u> Conoces los rituales para convertir cadáveres en no muertos más poderosos. Utilizando un ritual de duración igual a un descanso corto puedes transformar a un cadáver, un no-muerto menor o una persona voluntaria en una criatura más poderosa conocida como un no-muerto superior. Los diferentes métodos de creación para no-muertos superiores se describen en su respectivo apartado y normalmente su nivel no podrá superar tu rango de nigromancia x 2. No puedes tener bajo tu control más de 4 no-muertos superiores. Emplear animar cadáver ahora te cuesta una acción estándar. Un no-muerto superior solo podrá emplear esta habilidad si se encuentra fuera del control de un nigromante.
 
 ## Rango V 
 
@@ -41,13 +41,13 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Toque de la muerte:</u> Tu toque necrótico es capaz de levantar a tus enemigos caídos como no-muertos. Cada vez que reduzcas a una criatura enemiga a 0 PV con un toque necrótico esta morirá instantáneamente y revivirá como un no-muerto menor bajo tu control (una criatura con rangos de fortitud puede tirar CON para resistir este efecto). Esta habilidad también se activará si matas a una criatura empleando enervación.
 
-<u>Alma corrompida:</u> Tu cuerpo recibe las resistencias de un no-muerto. Recibes Resistencia 2 contra daño físico y puedes usar tu CAR en lugar de tu CON para calcular tus PV y Vitalidad. Puedes seguir luchando aunque llegues a 0 PV, el efecto de estado Ralentizado. Sólo morirás cuando tus PV negativos sean iguales a tu CAR. Tus hechizos de magia mental pueden afectar a no-muertos, aunque estos posean inmunidad a ellos. 
+<u>Alma corrompida:</u> Tu cuerpo recibe las resistencias de un no-muerto. Recibes Resistencia 2 contra daño físico y puedes usar tu CAR en lugar de tu CON para calcular tus PV y Vitalidad. Puedes seguir luchando aunque llegues a 0 PV, el efecto de estado Ralentizado. Sólo morirás cuando tus PV negativos sean iguales a tu CAR. Tus hechizos de magia mental pueden afectar a no-muertos, aunque estos posean inmunidad a ellos. Si ya has alcanzado la no-muerte te regeneras 2 Vitalidad por ronda (2 PV si estás al máximo de Vitalidad) y reduces el nivel de todas las heridas permanentes que te afecten por un paso.
 
 # No-muertos
 
 Un no-muerto es un cadáver que ha recibido una semblanza de vida por magia oscura. La mayoría de no-muertos, conocidos como no-muertos inferiores, carecen de todo recuerdo de su vida pasada y viven sólo para consumir a los seres vivos (por ello perderán todos los rangos, talentos y habilidades innatas que tengan). Algunos no-muertos son capaces de conservar su inteligencia y habilidades pasadas, pero la magia oscura empleada para resucitarlos corrompe su alma y les conduce hacia la maldad. 
 
-Dada su condición todos los no-muertos no necesitan comer, respirar ni dormir. Se nutren únicamente de la energía vital de las personas y el caso que no consuman la cantidad adecuada entrarán en un estado letárgico (esto funciona como el efecto de estado ralentizado) hasta que se alimenten. Los no-muertos son sanados por el daño necrótico en lugar de ser heridos y tienen inmunidad al veneno, las enfermedades, los efectos mentales, el miedo y la fatiga. Por estos motivos los no-muertos carecen de una estadística de vitalidad, causando que no puedan sufrir daño no-letal. No obstante, son vulnerables al daño radiante y muy sensibles a la luz brillante, recibiendo el efecto de estado enfermado si se encuentran en esta. Los tipos más comunes de no-muertos mayores y menores son los siguientes.
+Dada su condición todos los no-muertos no necesitan comer, respirar ni dormir. Se nutren únicamente de la energía vital de las personas y el caso que no consuman la cantidad adecuada entrarán en un estado letárgico (esto funciona como el efecto de estado ralentizado) hasta que se alimenten. Los no-muertos son sanados por el daño necrótico en lugar de ser heridos y tienen inmunidad al veneno, las enfermedades, los efectos mentales, el miedo y la fatiga. Estos también reciben la habilidad de sentir la presencia de seres vivos en un área de 60 pies, pudiendo así percibir su entorno sin la necesidad de la vista. No obstante, son vulnerables al daño radiante y muy sensibles a la luz brillante, recibiendo el efecto de estado enfermado si se encuentran en esta. Los tipos más comunes de no-muertos mayores y menores son los siguientes.
 
 ## No-muertos inferiores
 
@@ -59,7 +59,7 @@ Una criatura transformada en un zombi reducirá sus estadísticas de inteligenci
 
 Las estadísticas básicas de un zombi son las siguientes:
 
-**PV:** 8, **VT:** -, **DEF:** 2
+**PV:** 8, **VT:** 8, **DEF:** 2
 
 **FUE** 3, **DES** 0, **CON** 3, **INT** 0, **SAB** 1, **CAR** 0
 
@@ -71,15 +71,15 @@ Las estadísticas básicas de un zombi son las siguientes:
 
 ------
 
-**Golpe** (acción de movimiento): 3 habilidad, 1+éxito daño contundente.
+**Golpe** (acción de movimiento): +4, 1d4+3 daño contundente. En lugar de hacer daño puede agarrar a su objetivo.
 
-**Mordisco** (acción bonus): 3 habilidad, 2+éxito daño perforante. Este ataque sólo puede usarse contra criaturas agarradas o incapacitadas
+**Mordisco** (acción bonus): Inflige 1d6+3 daño perforante a una criatura agarrada o incapacitada.
 
 ### Esqueleto
 
-La base de todo ejército de no-muertos, los esqueletos compensan su relativa fragilidad con una mayor inteligencia y la capacidad de utilizar armas. Los esqueletos se forman a partir de numerosos huesos humanos o animales ligados con energía nigromántica, perdiendo su identidad previa para transformarse en un servidor leal. Una criatura transformada en un esqueleto perderá todos los incrementos de estadística que tenga y sus estadísticas de inteligencia y carisma se reducirán a 0. Incrementará además su armadura natural por 1 y recibirá la mejora corporal garra (no recibirá ningún dado de soltura). A causa que están formados por huesos los esqueletos son particularmente vulnerables al daño contundente, causando que las heridas permanentes producidas por el daño contundente sean de un nivel superior. Algunas variantes de esqueleto pueden tener mutaciones y habilidades únicas, las cuales podrán otorgarse siempre y cuando cuenten con el consentimiento del máster.
+La base de todo ejército de no-muertos, los esqueletos compensan su relativa fragilidad con una mayor inteligencia y la capacidad de utilizar armas. Los esqueletos se forman a partir de numerosos huesos humanos o animales ligados con energía nigromántica, perdiendo su identidad previa para transformarse en un servidor leal. Una criatura transformada en un esqueleto perderá todos los incrementos de estadística que tenga y sus estadísticas de inteligencia y carisma se reducirán a 0. Incrementará además su armadura natural por 1 y recibirá la mejora corporal garra (no recibirá ningún dado de soltura). Igual como los zombis los esqueletos perderán todos los rangos que una vez conservaron en vida. A causa que están formados por huesos los esqueletos son particularmente vulnerables al daño contundente, causando que las heridas permanentes producidas por el daño contundente sean de un nivel superior y duplicando el daño de este. Algunas variantes de esqueleto pueden tener mutaciones y habilidades únicas, las cuales podrán otorgarse siempre y cuando cuenten con el consentimiento del máster.
 
-Las estadísticas básicas de un esqueleto son las siguientes:
+Las estadísticas básicas de un esqueleto de nivel 1 son las siguientes:
 
 **PV:** 5, **VT:** -, **DEF:** 2 (restos de armadura, natural + 1)
 
@@ -93,35 +93,29 @@ Las estadísticas básicas de un esqueleto son las siguientes:
 
 ------
 
-**Garra** (acción de movimiento): 3 habilidad, 1+éxito daño cortante.
+**Garra** (acción de movimiento): `+4, 1d4 + 3 daño cortante.
 
-**Arma** (acción estándar): 3 habilidad, 3+éxito daño perforante, contundente o cortante.
-
-### Gul degenerado
-
-Las estadísticas básicas de un gul degenerado son las siguientes:
-
-**PV:** 8, **VT:** -, **DEF:** 2
-
-**FUE** 3, **DES** 2, **CON** 2, **INT** 0, **SAB** 1, **CAR** 0
-
-------
-
-**Movimiento:** 10 pies
-
-**Prioridad**: 2 (1 estándar + 1 movimiento)
-
-------
-
-**Garra** (acción de movimiento): 3 habilidad, 1+éxito daño cortante. 2 VEN: El objetivo sufre sangrado o es afectado por veneno  paralizante.
-
-**Mordisco** (acción bonus): 3 habilidad, 2+éxito daño perforante. Este ataque sólo puede usarse contra criaturas agarradas o incapacitadas. 2 VEN: El objetivo es infectado con la maldición del gul.
+**Arma** (acción estándar): +4, 1d8 + 3 daño perforante, contundente o cortante.
 
 ## No-muertos superiores
 
-### Engendro vampírico
+### Tumularios
 
-Para formar un engendro vampírico es necesario añadirle dos grados de la maldición del vampiro a la criatura base. Si el engendro alcanza el rango 3 de la maldición entonces abandonará tu control de inmediato.
+Campeones de las huestes de la muerte, los tumularios son poderosos guerreros no-muertos cuya presencia llena de miedo los corazones de los vivos. Para crear dichos seres un nigromante corrompe el alma de una persona hasta convertirla en una sombra malévola de lo que una vez fue y la liga a un cadáver, creando así un poderoso servidor no-muerto que no solo conserva las habilidades que tuvo en vida sino que las empodera con el poder de la muerte. Un tumulario conservará las estadísticas del alma original que se utilizó para crearlo con las siguientes habilidades añadidas:
 
-### Gul puro
+- Aumenta su armadura natural y PV por 2. Como no-muertos que son reciben inmunidad a veneno, enfermedades, fatiga. efectos mentales y miedo. Todas las heridas permanentes que se infligen a un no-muerto reducirán su efectividad por un paso.
+- Un tumulario aterroriza a los vivos con su mera presencia, provocando el efecto Espantado a todas las criaturas a 30 pies que puedan percibirlo. Aquellas criaturas con resistencia al miedo podrán resistir una cantidad de rondas iguales a su valor de resistencia antes de sucumbir al terror.
+- Los ataques del tumulario están infundidos con energía necrótica, añadiendo 2 daño necrótico a todos ellos y causando que las heridas permanentes y daño a los PV que provoque no podrá sanarse salvo por magia de vida. 
+- Los tumularios son especialmente vulnerables a la luz del sol y el daño radiante, quedando así cegados si entran en un área afectada por luz brillante. Debido a su condición de alma ligada los tumularios pueden ser afectados por Exorcizar y morirán instantáneamente si se les intenta resucitar con habilidades como Aliento de vida.
+
+### Geist
+
+Almas atormentadas sin la oportunidad de descansar, los geists son espectros corrompidos por energía nigromántica que se sustentan con la esencia vital de los vivos. Su conexión a sus vidas pasadas se ha desvanecido por completo y no sienten más que un poderoso odio hacia la vida misma. Estos seres tendrán nivel igual a tu rango de nigromancia x 2 y se construyen de una manera similar a los espectros pertenecientes a los rangos de Médium, recibiendo así la mejora Incorpóreo. Estos cuentan con las siguientes habilidades como base:
+
+- Los geists son especialmente vulnerables a la luz del sol y el daño radiante, quedando así cegados si entran en un área afectada por luz brillante. Al tratarse de seres espectrales estos pueden ser afectados por Exorcizar y morirán instantáneamente si se les intenta resucitar con habilidades como Aliento de vida.
+- Un geist aterroriza a los vivos con su mera presencia, provocando el efecto Espantado a todas las criaturas a 30 pies que puedan percibirlo. Aquellas criaturas con resistencia al miedo podrán resistir una cantidad de rondas iguales a su valor de resistencia antes de sucumbir al terror.
+
+### Engendro maldito
+
+Aquellas criaturas malditas que siguen la senda de la nigromancia podrán resucitar a sus víctimas como no-muertos inteligentes afectados por la misma maldición. El no-muerto creado tendrá estadísticas iguales a las que tenía en vida sin ninguna restricción de nivel solo que recibirá la maldición del creador a un grado determinado por esta (podrá ser la maldición del gul a grado 3, la maldición asura a grado 2,  la maldición vampírica a grado 2 o la maldición de lich a grado 1). Aunque no existe restricción de nivel un nigromante solo podrá comandar a aquellos engendros malditos que tengan nivel igual o inferior a su rango de nigromancia x 2.
 

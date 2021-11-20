@@ -330,7 +330,47 @@
 
 ## Monje maldito (nivel 7)
 
+**PV:** 7			**VT:** 11	 		**DEF:** 8 (media +2, resistencia 2)
 
+**FUE:** 2	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 5
+
+------
+
+**Talentos:** Acrobacias +7, Percepción +4, Juego de manos +6, Atletismo +5, Intimidar +4
+
+**Rangos:** Ataques naturales III, Reflejos I, Fortitud I
+
+**Movimiento:** 25 pies, salto 15 pies
+
+**Sentidos:** vista ígnea 100 pies
+
+**Resiste:** Fuego 4
+
+**Inmune:** Veneno, enfermedades, efectos mentales y de moral
+
+**Prioridad:** +4 (2 estándar + 2 movimiento)
+
+------
+
+**Conexión elemental:** Se recupera 1 vitalidad al principio de su turno si está en un lugar en llamas o calor extremo.
+
+**Furia del fuego:** Pierde 1 vitalidad para hacer +2 daño de fuego con sus ataques e infligir una quemadura media si reduce PV.
+
+**Aura abrasadora:** Todas las criaturas sin resistencias al fuego que empiecen su turno a 30 pies o le hagan un ataque natural sufren 1 daño de fuego. Puede sufrir 1 daño a la vitalidad para provocar una quemadura leve a todas las criaturas con armadura metálica, recibir inmunidad de fuego y resistencia 4 al frío.
+
+**Ataques en secuencia:** Recibe ventaja en todos sus ataques hechos contra criaturas con quemaduras.
+
+**Evasión:** No sufre daño obligatorio por ataques de área con radio inferior a 20 pies.
+
+**Esquiva asombrosa:** Puede defenderse contra ataques sorpresa y contra enemigos invisibles u ocultos.
+
+------
+
+**Ataque elemental** (acción de movimiento): +8, 1d6 + 5 fuego 
+
+------
+
+**Parada**: +7, no puede defenderse de ataques cuerpo a cuerpo; **Esquiva:** +6
 
 ## Fantasma hambriento (nivel 6)
 

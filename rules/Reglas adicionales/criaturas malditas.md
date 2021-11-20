@@ -148,7 +148,7 @@ En este grado de maldición empiezas a sentir un hambre sobrenatural capaz sacia
 
 - Aumenta tu estadística de CON por 1 y reduce tu SAB por 1.
 - Recibes resistencia a venenos, enfermedades y daño necrótico igual a tu CON - 2. Si ya tienes dicha resistencia la aumentas por 2.
-- Tus uñas y colmillos se vuelven más afilados para que puedas devorar la carne con más facilidad. Recibes las mejoras corporales Garras y Mordisco, modificando tus ataques naturales tal como indica el rango de Artes marciales. 
+- Tus uñas y colmillos se vuelven más afilados para que puedas devorar la carne con más facilidad. Recibes las mejoras corporales Garras y Mordisco, modificando tus ataques naturales tal como indica el rango de Ataq. 
 
 ### Grado 2
 
