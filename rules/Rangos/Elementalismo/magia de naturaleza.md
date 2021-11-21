@@ -53,6 +53,10 @@ Esta es una lista de criaturas mágicas ideales para invocaciones relacionadas c
 
 ## Kodama (nivel 1)
 
+**Rangos:** Ataques naturales I, Forti
+
+**Mejoras:** Pequeño, ascendencia espiritual
+
 ## Gran lobo (nivel 3)
 
 ## Oso (nivel 3)
