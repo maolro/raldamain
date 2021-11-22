@@ -11,7 +11,7 @@ Añade tu rango a todos tus tiros relacionados con magia de naturaleza.
 
 <u>Enmarañar</u>: Como acción estándar puedes atacar a un enemigo con un látigo de zarcillos. Este ataque emergerá de un punto en la tierra a 60 pies de ti y al impactar tu objetivo quedará enredado por él. Empleando una acción de movimiento puedes realizar una maniobra de combate de agarre, empujar o tropezar contra una criatura enredada para la cual emplearás tu tiro de magia de naturaleza. Escapar de un zarcillo funciona la misma manera que huir de un agarre convencional y este se destruirá si sufre daño cortante o de fuego.
 
-<u>Reserva de energía:</u> Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque de Enmarañar que afecte a un área con radio 10 pies o hacer un ataque adicional de Enmarañar o Alterar madera. Si tu reserva de energía se reduce a 0 estás Fatigado y aunque puedes seguir usándola si esta se reduce a un valor igual a tu CON negativa caerás inconsciente de inmediato.
+<u>Reserva de energía:</u> Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque de Enmarañar que afecte a un área con radio 10 pies o hacer un ataque adicional de Enmarañar o Alterar madera. Si tu reserva de energía se reduce a 0 todas las habilidades que requieran un gasto de reserva de energía podrán usarse si sufres 2 daño no-letal por cada punto que esta costaría.
 
 <u>Alterar madera:</u> Como acción estándar puedes modificar la composición de un objeto hecho de madera con tamaño máximo de 5 pies cúbicos. El objeto alterado puede usarse como un arma, por lo cual infligirá 1d6 + rango daño cortante, contundente o perforante al impactar y puede lanzarse a una distancia máxima de 60 pies. Este infligirá +1d6 daño al atacar a criaturas que se encuentren agarradas por tu habilidad de enmarañar. A rangos III y V el tamaño de los objetos que puedes alterar con esta habilidad aumenta por 5 pies.
 
@@ -29,7 +29,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Animar plantas:</u> Como acción de turno completo que reduce tu reserva elemental por 2 puedes infundir de vida a las plantas en un área de 70 pies. Esta habilidad sólo afectará a los espacios que tengan un gran volumen de plantas (es decir, los lugares donde las plantas provocan terreno difícil). La primera vez por ronda que una criatura hostil pase por un espacio infestado por plantas animadas recibirá un ataque de oportunidad inmediato de Enmarañar o Alterar. Las criaturas agarradas de esta manera sufrirán además 2 daño no-letal al final de la ronda.
 
-<u>Controlar la naturaleza:</u> Los animales, plantas y espíritus no son naturalmente hostiles hacia ti y te asisten cuando te encuentres en peligro. Cuando estés en un entorno natural que sea tu [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) o tu [región armonizada](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia verdeante.html#rango-ii) puedes llamar a un numero de aliados naturales como acción estándar empleable una vez al día. Esos aliados pueden ser cualquier número de criaturas cuyo nivel combinado sea igual a tu rango x 3. Puedes reducir además tu reserva elemental por 1 para aumentar el nivel combinado de las criaturas invocadas por 3 (puedes reducirla como máximo 3 veces).
+<u>Controlar la naturaleza:</u> Los animales, plantas y espíritus no son naturalmente hostiles hacia ti y te asisten cuando te encuentres en peligro. Cuando estés en un entorno natural que sea tu [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) o tu [región armonizada](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia verdeante.html#rango-ii) puedes llamar a un numero de aliados naturales como acción estándar empleable una vez al día. Esos aliados pueden ser cualquier número de criaturas cuyo nivel combinado sea igual a tu rango x 4 pero solo podrás controlar aquellas que tengan nivel igual o inferior al tuyo. Puedes reducir además tu reserva elemental por 1 para aumentar el nivel combinado de las criaturas invocadas por 2 (puedes reducirla como máximo 3 veces).
 
 <u>Revertir crecimiento:</u> Eres capaz de revertir el crecimiento de las plantas para mantener el equilibrio natural. Como acción estándar puedes reducir el tamaño de las plantas en un radio de 5 x rango pies cuadrados, eliminando el terreno difícil que estas formen. Esta habilidad puede emplearse también para eliminar un efecto de Muro de zarzas o Enmarañar, necesitando en este caso que tengas éxito en un tiro de magia de naturaleza contra los dados de magia de naturaleza que tenga el creador de dicho efecto (esto puedes conseguirlo de manera automática si reduces tu reserva elemental por 1 y el creador del efecto tiene rango inferior o igual al tuyo).
 
@@ -49,107 +49,153 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 # Criaturas aliadas
 
-Esta es una lista de criaturas mágicas ideales para invocaciones relacionadas con magia de naturaleza.
+La magia de naturaleza es capaz de invocar a criaturas de todo tipo para asistir en el campo de batalla. Aquí se especifican los tipos más comunes de criaturas que se pueden invocar y numerosas variaciones sobre estas para crearlas a cualquier nivel.
 
-## Kodama (nivel 1)
+## Elementales de tierra
 
-**Rangos:** Ataques naturales I, Forti
+Los elementales de tierra son potentes criaturas compuestas por sólidas piedras que cobran el aspecto de un ser vivo. Su gran resistencia y fuerza les hace ideales guardianes contra las fuerzas que buscan profanar la naturaleza. Estos son algunos ejemplos de elementales de tierra:
 
-**Mejoras:** Pequeño, ascendencia espiritual
+### Pequeño (niv 2)
 
-## Gran lobo (nivel 3)
+**FUE** 2, **DES** 2, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 6, **VT** 5, **DEF** 6
 
-## Oso (nivel 3)
+- **Mejoras:** Pequeño, ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe
+- **Rangos:** Ataques naturales I, Fortitud I
+- **Ataques:** Puño (acción de movimiento, 1d6+3 para atacar, 1d6+6 contundente)
+- **Defensa:** Esquiva (1d6+2), Parada (+3)
 
-## Elemental de madera (nivel 3)
+### Mediano (niv 4)
 
-## Elemental de tierra (nivel 6)
+**FUE** 4, **DES** 1, **CON** 3, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 9, **DEF** 6
 
-## Bestia de musgo (nivel 6)
+- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe
+- **Rangos:** Ataques naturales II, Fortitud I
+- **Ataques:** Puño (acción de movimiento, +6 para atacar, 1d6+8 contundente y empuja 10 pies. Una vez por ronda +6 o aturde)
+- **Defensa:** Parada (+6)
 
-## Elemental de zarzas (nivel 6)
+### Grande (niv 6)
 
-**PV:** 12			**VT:** 14	 		**DEF:** 6
+**FUE** 6, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 15, **VT** 14, **DEF** 9
 
-**FUE:** 7 	**DES:** 0	**CON:** 6	**INT:** -1	**SAB:** 2	**CAR:** -1	
+- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe, tamaño superior
+- **Rangos:** Ataques naturales II, Fortitud II
+- **Ataques:** Puño (acción de movimiento, +8 para atacar, 1d6+10 contundente y empuja 10 pies. Una vez por ronda +8 o aturde)
+- **Defensa:** Parada (+8)
 
-------
+### Campeón (niv 8)
 
-**Talentos:** Percepción +4, Heroísmo +10, Destrozar +10
+**FUE** 7, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 21, **VT** 16, **DEF** 11
 
-**Rangos:** Ataques naturales II, Fortitud I
+- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, georradar, movimiento adicional (excavar), ceguera, golpe, tamaño superior, ola de tierra, armadura de piedra, conexión elemental
+- **Rangos:** Ataques naturales III, Fortitud II
+- **Ataques:** Puño (acción de movimiento, +10 para atacar, 1d6+11 contundente y empuja 10 pies. Una vez por ronda +10 o aturde), Secuencia de ataques (acción bonus, hace un ataque de puño)
+- **Defensa:** Parada (+10, puede defenderse de ataques a distancia)
 
-**Mejoras:** Ascendencia espiritual, tamaño superior, manojo de tentáculos, armadura natural, camuflaje, georradar, ferocidad, mordisco
+### Gigante (niv 10)
 
-**Vulnerable:** Fuego, cortante
+**FUE** 9, **DES** -1, **CON** 9, **INT** -1, **SAB** 1, **CAR** -1; **PV** 24, **VT** 21, **DEF** 12
 
-**Sentidos:** Georradar 60 pies
+- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe tamaño superior (2), ola de tierra, armadura de piedra, conexión elemental
+- **Rangos:** Ataques naturales IV, Fortitud II
+- **Ataques:** Puño (acción de movimiento, +13 para atacar, 1d6+13 contundente, empuja 10 pies y reduce la defensa por 2. Una vez por ronda +10 o aturde), Secuencia de ataques (acción bonus, hace un ataque de puño)
+- **Defensa:** Parada (+13, puede defenderse de ataques a distancia)
 
-**Movimiento:** 20 pies
+### Guardián (niv 12)
 
-**Prioridad:** +0 (1 estándar + 1 movimiento)
+**FUE** 9, **DES** -1, **CON** 10, **INT** -1, **SAB** 1, **CAR** -1; **PV** 27, **VT** 24, **DEF** 14
 
-****
+- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe tamaño superior (2), ola de tierra, armadura de piedra, conexión elemental
+- **Rangos:** Ataques naturales V, Fortitud III
+- **Ataques:** Puño (acción de movimiento, +14 para atacar, 1d6+13 contundente, empuja 10 pies y reduce la defensa por 2. Una vez por ronda +10 o aturde), Ataque oportunista (acción bonus, hace un ataque de puño contra un enemigo aturdido o que sufra una herida), Secuencia de ataques (acción bonus, hace un ataque de puño)
+- **Defensa:** Parada (+14, puede defenderse de ataques a distancia)
 
-**Ferocidad:** Esta criatura seguirá luchando aunque se encuentre a 0 PV y no recibirá heridas permanentes hasta que pierda más de la mitad de sus PV.
+## Elementales de planta
 
-**Zarcillos protectores:** Cada vez que una criatura entre en una posición adyacente a esta criatura sufre un ataque de oportunidad con Manojo de raíces. No podrá usar esta habilidad en toda una ronda si sufre daño de fuego o cortante.
+Los elementales de planta son firmes guardianes creados por la naturaleza misma para proteger las tierras salvajes. Estos seres están compuestos de materia vegetal y acaban con sus enemigos agarrándolos con las plantas que forman su cuerpo. Estos son algunos ejemplos de elementales de planta:
 
-------
+### Pequeño (niv 2)
 
-**Manojo de raíces** (acción de movimiento): +9, alcance 15 pies, 1d6 + 9 contundente, arrastra 10 pies y el objetivo está agarrado. Si el objetivo detiene exitosamente su ataque puede gastar una acción de movimiento para hacer una maniobra de tropezar contra su objetivo.
+**FUE** 2, **DES** 2, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 6, **VT** 5, **DEF** 6
 
-**Devorar** (acción bonus): +9, 1d6 + 9 contundente. Este ataque solo puede usarse en criaturas agarradas o incapacitadas.
+- **Mejoras:** Pequeño, ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar
+- **Rangos:** Ataques naturales I, Fortitud I
+- **Ataques:** Tentáculos (acción estándar, 1d6+3 para atacar, 1d6+4 contundente y agarra), Zarzas (acción bonus, hace 1d6+4 daño perforante contra una criatura que agarre)
+- **Defensa:** Esquiva (1d6+2), Parada (+3)
 
-**Fusión con la tierra** (acción estándar): Esta criatura se fusiona con la naturaleza, volviéndose invisible e impidiendo que pueda ser atacada. Este efecto se perderá en el momento que la criatura vuelva a atacar.
+### Mediano (niv 4)
 
-**Furia de la naturaleza** (acción de turno completo): Hace un ataque con manojo de raíces a todas las criaturas que se encuentren a 15 pies. 
+**FUE** 4, **DES** 1, **CON** 3, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 9, **DEF** 6
 
-****
+- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar
+- **Rangos:** Ataques naturales II, Fortitud I
+- **Ataques:** Tentáculos (acción estándar, +6 para atacar, 1d6+6 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+6 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 10 pies de él)
+- **Defensa:** Parada (+6)
 
-**Parada**: +7 (+2 contra criaturas de su mismo tamaño)
+### Grande (niv 6)
 
-## Gigante de piedra (nivel 9)
+**FUE** 6, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 15, **VT** 14, **DEF** 9
 
-**PV:** 14			**VT:** 20	 		**DEF:** 8
+- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior
+- **Rangos:** Ataques naturales II, Fortitud II
+- **Ataques:** Tentáculos (acción estándar, +6 para atacar, 1d6+8 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+8 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 10 pies de él que en lugar de agarrar empuja 10 pies)
+- **Defensa:** Parada (+8)
 
-**FUE:** 9 	**DES:** 0	**CON:** 9	**INT:** 0	**SAB:** 2	**CAR:** 0
+### Campeón (niv 8)
 
-**Talentos:** Percepción +5, Heroísmo +14, Destrozar +13
+**FUE** 7, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 16, **VT** 16, **DEF** 10
 
-**Rangos:** Ataques naturales IV, Fortitud II
+- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior, puerta arbórea, aura primigenia, conexión elemental
+- **Rangos:** Ataques naturales III, Fortitud II
+- **Ataques:** Tentáculos (acción de movimiento, +10 para atacar, 1d6+9 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+9 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 15 pies de él que agarra)
+- **Defensa:** Parada (+10, puede defenderse de ataques a distancia).
 
-**Mejoras:** Ascendencia espiritual, tamaño superior (gigantesco), armadura natural, ferocidad
+### Gigante (niv 10)
 
-**Vulnerable:** Fuego
+**FUE** 9, **DES** -1, **CON** 9, **INT** -1, **SAB** 1, **CAR** -1; **PV** 21, **VT** 21, **DEF** 10
 
-**Sentidos:** Georradar 60 pies
+- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior, puerta arbórea, aura primigenia, conexión elemental
+- **Rangos:** Ataques naturales IV, Fortitud II
+- **Ataques:** Tentáculos (acción de movimiento, +13 para atacar, 1d6+11 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+11 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 20 pies de él que agarra)
+- **Defensa:** Parada (+13, puede defenderse de ataques a distancia y puede bloquear ataques usando a criaturas agarradas que tenga)
 
-**Movimiento:** 20 pies
+### Guardián (niv 12)
 
-**Prioridad:** +4 (1 estándar + 1 movimiento)
+**FUE** 9, **DES** -1, **CON** 10, **INT** -1, **SAB** 1, **CAR** -1; **PV** 22, **VT** 24, **DEF** 12
 
-****
+- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior (2), ola de tierra, armadura de piedra, conexión elemental
+- **Rangos:** Ataques naturales V, Fortitud III
+- **Ataques:** Tentáculos (acción estándar, +14 para atacar, 1d6+11 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+11 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 15 pies de él), Estampar (acción bonus, hace 1d6+11 daño contundente contra una criatura que agarre y empuja 10 pies), Ahorcar (acción de movimiento, una criatura agarrada se empieza a ahogar)
+- **Defensa:** Parada (+14, puede defenderse de ataques a distancia)
 
-**Ferocidad:** Esta criatura seguirá luchando aunque se encuentre a 0 PV y no recibirá heridas permanentes hasta que pierda más de la mitad de sus PV.
+## Bestia
 
-**Golpe devastador:** Puede tomar un penalizador -2 a un ataque para incrementar el nivel de todas las heridas permanentes que inflija por un paso y reducir la DEF de su objetivo por 2. Gastando una acción de movimiento puede reducir el penalizador por 2.
+Un invocador puede llamar a todo tipo de criaturas de las tierras salvajes para que estas luchen a su lado y acaben con sus enemigos. Mientras asciende en poder puede invocar a bestias más poderosas provenientes del plano espiritual para arrasar con todo a su paso. Estos son algunos ejemplos de bestias tanto naturales como espirituales:
 
-------
+### Lobo (niv 2)
 
-**Golpe** (acción de movimiento): +13, 1d6 + 11 contundente, empuja 10 pies (Crítico 19-20). (1/ronda) +13 contra CON o aturdido. Si el objetivo detiene exitosamente su ataque puede gastar una acción de movimiento para hacer una maniobra de tropezar contra su objetivo. Cuando impacte a un enemigo con 2 o menos DEF la parte del cuerpo herida quedará temporalmente inhabilitada.
+**FUE** 3, **DES** 3, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 6, **DEF** 2
 
-****
+- **Mejoras:** Mordisco, defensa natural, depredador
+- **Rangos:** Ataques naturales I, Reflejos I
+- **Ataques:** Mordisco (acción de movimiento, +4, 1d6+3 perforante y maniobra de agarre o tropieza), Desgarrar (acción bonus, 1d6+3 daño contra una criatura en el suelo o agarrada)
+- **Defensa:** Esquiva (+4)
 
-**Parada**: +9 (+13 contra criaturas de su mismo tamaño). Puede protegerse de proyectiles y si obtiene defensa crítica puede desviar un proyectil a otro enemigo a 15 pies.
+### Águila (niv 2)
 
-## Devorador de metal (nivel 9)
+**FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 4, **VT** 5, **DEF** 0
 
-## Árbol guardián (nivel 9)
+- **Mejoras:** Perforar, alas, tamaño inferior, movilidad, depredador, visión periférica
+- **Rangos:** Ataques naturales I, Reflejos I
+- **Ataques:** Garras (acción de movimiento, 1d6+5, 1d4+5 perforante con ataque furtivo)
+- **Defensa:** Esquiva (2d6+5)
 
-## Guerrero espiritual (nivel 12)
+### Oso (niv 4)
 
+**FUE** 5, **DES** 0, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 6, **DEF** 2
 
+- **Mejoras:** Mordisco, defensa natural, garras, tamaño superior
+- **Rangos:** Ataques naturales I, Fortitud II
+- **Ataques:** Garras (acción de movimiento, +6, 1d6 + 5 cortante), Mordisco (acción bonus, 1d6+5 daño contra una criatura agarrada)
+- **Defensa:** Parada (+6)
 
-## Dragón de los bosques (nivel 15)
-
+## Dragón
