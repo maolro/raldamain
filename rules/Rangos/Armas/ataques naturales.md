@@ -31,13 +31,13 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 ## Rango IV
 
-<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un puño preciso a un enemigo reduce la defensa de su armadura por 2, y si esta es reducida a 2 o menos se volverá inutilizable. Esta habilidad te permite destrozar la armadura como acción de movimiento
+<u>Golpe devastador:</u> Tus ataques naturales pueden romper madera y hasta metal. Al impactar con un puño preciso a un enemigo reduce la defensa de su armadura por 2, y si esta es reducida a 2 o menos se volverá inutilizable. Esta habilidad te permite destrozar la armadura como acción de movimiento.
 
 <u>Punto de presión:</u> Puedes apuntar a los puntos de presión de un objetivo para inutilizar parte de su cuerpo y hasta impedir que usen magia. Al impactar a los brazos, piernas o cabeza de un enemigo cuya armadura otorgue 2 o menos defensa el miembro impactado quedará temporalmente deshabilitado. Si deshabilitas una pierna tu objetivo caerá al suelo y su velocidad será reducida a la mitad mientras que si deshabilitas un brazo deberá dejar ir el arma que lleve y no podrá emplearlo para atacar ni usar magia. En el caso que deshabilites su cabeza caerá inconsciente de inmediato (esto puede evitarlo con Resistir la muerte). Una parte del cuerpo deshabilitada no cuenta como si tuviese una herida permanente y puede ser sanada si un aliado gasta un uso de primeros auxilios.
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 19-20.
+Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Puñetazo mortal:</u> Eres capaz de provocar la muerte con solo tus puños. Si logras impactar a la cabeza del objetivo con un puño preciso multiplica el daño infligido por 2 y todas las heridas permanentes por un paso adicional. Si logras reducir los PV de tu objetivo a 0 este morirá de manera instantánea (en el caso que tenga una manera de seguir luchando a 0 PV en lugar de ello caerá inconsciente.
 
@@ -47,7 +47,14 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 Un ataque natural base es un puñetazo que 1 + FUE daño contundente. Un ataque natural puede modificarse con las siguientes características tanto fisiológicas como tecnológicas para variar los atributos de tus ataques:
 
-- **Guantelete**: Tus puños están reforzados con un guantelete metálico, incrementando la potencia de tus ataques. Mientras lleves guanteletes aumentas tu daño base a 1d4 (1d6 si tienes rango I de artes marciales) y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (no recibirás ningún dado de desventaja si tienes la habilidad Ataques infundidos). Puedes añadir las mejoras garra y perforar a tu guantelete.
+- **Guantelete**: Tus puños están reforzados con un guantelete metálico, incrementando la potencia de tus ataques. Mientras lleves guanteletes aumentas tu daño base a 1d4 (1d6 si tienes rango I de artes marciales) y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (no recibirás ningún dado de desventaja si tienes la habilidad Ataques infundidos). Puedes añadir las mejoras garra y perforar a tu guantelete, recibiendo las alteraciones que estas otorgarían. Un guantalete sustituye además algunos atributos de la siguiente manera si no tiene ninguna mejora aña:
+
+  | **Rango original** | **Sustitución**    |
+  | ------------------ | ------------------ |
+  | Puño preciso       | Ataque poderoso    |
+  | Golpe devastador   | Impacto destructor |
+  | Punto de presión   | Romper escudos     |
+  | Puñetazo mortal    | Golpe fulminante   |
 
 - **Garra:** Estás dotado de afiladas zarpas capaces de desgarrar a tus enemigos. Las garras te permiten hacer daño cortante con ataques naturales y todas las heridas permanentes que provoques causarán sangrado. Algunos atributos que poseas serán sustituidos por otros propios de Filos cortantes de la siguiente manera:
 
@@ -60,7 +67,7 @@ Un ataque natural base es un puñetazo que 1 + FUE daño contundente. Un ataque 
 
 - **Mordisco:** Tu mandíbula está dotada de gran fuerza y con ella puedes morder a tus objetivos. Una vez al turno como acción bonus puedes morder a un objetivo agarrado o incapacitado. El mordisco hará 1d6 + FUE daño perforante modificado por tu fuerza. Las heridas permanentes que provocas con tu mordisco son de un nivel superior a las normales, pero no podrás emplear las habilidades Puño aturdidor, Patada feroz o Puño preciso.
 
-- **Tentáculo:** Posees un flexible tentáculo en una parte de su cuerpo con el cual puedes atacar. Un ataque de tentáculo tiene un alcance de 10 pies e infligirá daño contundente al impactar. En lugar de hacer daño puedes agarrar una parte del cuerpo de tu objetivo, causando 
+- **Tentáculo:** Posees un flexible tentáculo en una parte de su cuerpo con el cual puedes atacar. Un ataque de tentáculo tiene un alcance de 10 pies e infligirá daño contundente al impactar. En lugar de hacer daño puedes agarrar una parte del cuerpo de tu objetivo, causando un efecto similar a la habilidad Enredar. En el caso que tengas la mejora manojo de tentáculos hacer un ataque te costará una acción estándar (movimiento si tienes una cola) y pasará a ser acción de movimiento a rango III. Algunos atributos que poseas serán sustituidos por otros propios de Ca de la siguiente manera:
 
   | Rango original   | Sustitución                                                  |
   | ---------------- | ------------------------------------------------------------ |

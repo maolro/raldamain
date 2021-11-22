@@ -6,20 +6,6 @@ Una criatura maldita representa toda aquella que haya sido corrompida por fuerza
 
 Esta es una compilación de los tipos más comunes de criaturas malditas.
 
-## Agente psíquico
-
-Una organización secreta ha realizado varios experimentos sobre tu mente, alterando tus recuerdos e implantando varias órdenes secretas en ella.
-
-### Grado 1
-
-- Aumenta tu estadística de CAR por 1. Incrementa tu resistencia a efectos mentales por 2.
-
-### Grado 2
-
-- Descubres que tu cuerpo ha sido modificado sin tu consentimiento, otorgándote nuevas capacidades físicas. Aumenta una estadística física por 1 y recibes 3 PT para gastar en mejoras.
-
-### Grado 3
-
 ## Asura
 
 Esta maldición de origen espiritual castiga a aquellos guerreros que siguen una senda de violencia desmesurada, enloqueciéndolos con una insaciable sed de sangre que les condena a la soledad y a una temprana muerte. No obstante, el poderoso vínculo que tiene un guerrero maldito causa que su propia alma se transfiera a ella, provocando que el siguiente portador de esta arma empiece a tener sangrientas visiones que poco a poco le empiezan a llevar por la misma senda que condenó a su anterior portador.

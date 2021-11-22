@@ -27,7 +27,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 ## Rango IV 
 
-<u>Rompe escudos:</u> Tus destructivos ataques son capaces de debilitar y hasta romper escudos. Si una criatura con un escudo logra bloquear exitosamente uno de tus ataques poderosos reducirá el valor defensivo de este por 1 (2 si es un golpe crítico). Si el valor defensivo de un escudo es reducido a 0 este quedará destruido y no podrá ser utilizado para bloquear ataques.
+<u>Romper escudos:</u> Tus destructivos ataques son capaces de debilitar y hasta romper escudos. Si una criatura con un escudo logra bloquear exitosamente uno de tus ataques poderosos reducirá el valor defensivo de este por 1 (2 si es un golpe crítico). Si el valor defensivo de un escudo es reducido a 0 este quedará destruido y no podrá ser utilizado para bloquear ataques. Romper escudos te permite también infligir +1d6 daño contra cualquier barrera sólida que incremente las defensas de tu adversario como puede ser Muro de piedra.
 
 <u>Quebrar el suelo:</u> Usar Maza oscilante te cuesta una acción estándar. Como acción de turno completo puedes golpear al suelo con la fuerza de tu arma, convirtiendo la tierra en un radio de 10 pies del impacto en terreno difícil. Todas las criaturas que se encuentren en esa zona deben tener éxito en un tiro de DES contra tu arma o caerán [tropezados](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#tropezada) y quedarán ralentizados durante una ronda (criaturas con blindaje son inmunes a este efecto).
 
