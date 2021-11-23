@@ -1,4 +1,7 @@
- 
+---
+title: Earth bloodline
+category: Bloodlines
+---
 
 ## Rank I 
 

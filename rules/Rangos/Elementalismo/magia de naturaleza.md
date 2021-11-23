@@ -191,11 +191,20 @@ Un invocador puede llamar a todo tipo de criaturas de las tierras salvajes para 
 
 ### Oso (niv 4)
 
-**FUE** 5, **DES** 0, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 6, **DEF** 2
+**FUE** 5, **DES** 0, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 13, **VT** 11, **DEF** 4
 
 - **Mejoras:** Mordisco, defensa natural, garras, tamaño superior
 - **Rangos:** Ataques naturales I, Fortitud II
 - **Ataques:** Garras (acción de movimiento, +6, 1d6 + 5 cortante), Mordisco (acción bonus, 1d6+5 daño contra una criatura agarrada)
+- **Defensa:** Parada (+6)
+
+### Bestia espiritual (niv 6)
+
+**FUE** 6, **DES** 0, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 6, **DEF** 6
+
+- **Mejoras:** Mordisco, defensa natural, garras, tamaño superior, ascendencia espiritual
+- **Rangos:** Ataques naturales II, Fortitud II
+- **Ataques:** Garras (acción de movimiento, +6, 1d6 + 8 cortante), Mordisco (acción bonus, 1d6+8 daño contra una criatura agarrada)
 - **Defensa:** Parada (+6)
 
 ## Dragón
