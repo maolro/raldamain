@@ -1,5 +1,5 @@
 ---
-t	itle: Earth bloodline
+title: Earth bloodline
 category: Bloodlines
 ---
 

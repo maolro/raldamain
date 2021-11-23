@@ -7,7 +7,7 @@ category: Weapons
 
 Add your rank to all attack rolls made with firearms.
 
-<u>Deadly aim:</u> Your attacks are especially deadly when striking enemies at close range. When attacking a target within 30 feet of you you will ignore any defense they have for natural and manufactured armor (this is 15 feet for a handgun) and any permanent wounds you cause will increase their effectiveness by one step. Before making an attack you can add a -2 penalty to your attack roll to increase the distance at which you can use deadly marksmanship by 15 feet.
+<u>Deadly aim:</u> Your attacks are especially deadly when striking enemies at close range. When attacking a target within 30 feet of you you will ignore any defense they have for natural and manufactured armor (this is 15 feet for a handgun) and any permanent wounds you cause will increase their effectiveness by one step. Before making an attack you can add a -2 penalty to your attack roll to increase the distance at which you can use deadly aim by 15 feet.
 
 <u>Gunslinger's Agility:</u> Drawing your weapon costs you a move action (this costs you a bonus action if it is a handgun). You also your initiative by 1, and increase it again when you reach rank III and V.
 
@@ -17,7 +17,7 @@ Add your rank to all attack rolls made with firearms.
 
 <u>Bullet Trick:</u> Your expert marksmanship allows you to use your attacks in an unexpected way to weaken your opponent's defenses. Instead of attacking you can use your gun to perform one of the following effects on an enemy:
 
-- **False Shot:** Your target must defend himself by using insight. If it fails it will be incapable of dodging your next attack as if it was a feint.
+- **False Shot:** Your target must defend itself by using insight. If it fails it will be incapable of dodging your next attack.
 - **Thundering shot:** The shot causes a thunderous boom, causing your target to become disoriented. It must defend itself by making a Constitution roll, and on failure it must move 10 feet in a random direction and is Shaken until its next turn.
 - **Lucky Shot:** Your target must defend itself using Dodge. If it fails it will drop a small object it is carrying on its body, such as a potion, a bomb or a side bag. If the object is particularly fragile it will be destroyed by your bullet.
 
