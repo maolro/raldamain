@@ -37,7 +37,7 @@ Añade tu rango a todos tus tiros de percepción, supervivencia,  y averiguar in
 - **Subterráneo**: Incrementa tu velocidad de Escalada por 15 pies (no puede exceder tu movimiento base). Recibes Resistencia a venenos igual a tu rango de Rastrear y tienes visión a oscuras en un radio de 60 pies
 - **Acuático**: Incrementa tu velocidad de Nadar por 15 pies (no puede exceder tu movimiento base). Puedes aguantar tu respiración durante dos turnos adicionales.
 - **Urbano**: Incrementa tu velocidad de salto por 10 pies. Eres capaz de emplear Acechar para ocultarte en aglomeraciones de personas.
-- **Bosque:** Recibes Resistencia a magia de naturaleza igual a tu rango de Rastrear. Incrementa tu velocidad base por 15 pies y los animales no son -naturalmente hostiles hacia ti.
+- **Bosque:** Recibes Resistencia a magia de naturaleza igual a tu rango de Rastrear. Incrementa tu velocidad base por 15 pies y los animales no son naturalmente hostiles hacia ti.
 
 ## Rango V 
 
