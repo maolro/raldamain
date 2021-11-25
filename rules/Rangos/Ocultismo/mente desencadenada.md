@@ -7,9 +7,11 @@ Tu mente está conectada con un plano superior de pensamiento, permitiéndote al
 
 ## Rango I
 
-<u>Mente desencadenada:</u> Como acción bonus puedes liberar tu mente de sus ataduras materiales y alcanzar un estado mental superior. Al entrar en estado de Mente desencadenada aumenta dos de tus estadísticas mentales por 1 y recibes resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que tengas la mente desencadenada reducirás tu cordura por 1. Si tu cordura llega a 0 perderás control de tu cuerpo durante una hora o hasta que caigas inconsciente. Mente desencadenada no puede usarse si estás fatigado.
+Desbloqueas rangos en magia arcana.
 
-<u>Agilidad mental:</u> Mientras tengas la mente desencadenada tienes durante un breve instante las respuestas a tus más profundas preguntas. Recibes soltura con todos los campos del saber y conoces una lengua adicional. Además, un número de veces igual a tu rango puedes recibir una visión sobre eventos pasados, presentes o futuros, la naturaleza de la cual quedará decidida por el máster.  
+<u>Mente desencadenada:</u> Como acción bonus puedes liberar tu mente de sus ataduras materiales y alcanzar un estado mental superior. Al entrar en estado de Mente desencadenada aumenta dos de tus estadísticas mentales por 2 y recibes resistencia igual a tu rango contra efectos mentales y de moral. Cada turno que tengas la mente desencadenada reducirás tu cordura por 1. Si tu cordura llega a 0 perderás control de tu cuerpo durante una hora o hasta que caigas inconsciente. Mente desencadenada no puede usarse si estás fatigado.
+
+<u>Agilidad mental:</u> Mientras tengas la mente desencadenada tienes durante un breve instante las respuestas a tus más profundas preguntas. Recibes soltura con todos los campos del saber y conoces una lengua adicional. Además, un número de veces igual a tu rango puedes recibir una visión sobre eventos pasados, presentes o futuros, la naturaleza de la cual quedará decidida por el máster. 
 
 ## Rango II
 
