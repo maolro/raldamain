@@ -21,7 +21,7 @@ Añade tu rango de Reflejos a todos los tiros defensivos de esquiva
 
 ## Rango III
 
-<u>Acrobacias</u>: Recibes velocidad de escalada igual a tu velocidad normal. Puedes caminar por superficies estrechas y terreno difícil sin sufrir penalizaciones, además de que puedes esquivar con normalidad con esta.
+<u>Acrobacias</u>: Recibes velocidad de escalada igual a tu velocidad normal. Puedes caminar por superficies estrechas y terreno difícil sin sufrir penalizaciones, además de que puedes esquivar con normalidad en estas.
 
 <u>Prisa</u>: Eres capaz de infligir múltiples ataques a un enemigo antes de que pueda reaccionar. Esta habilidad te otorga una segunda acción estándar al turno empleable para cualquiera de tus habilidades. 
 

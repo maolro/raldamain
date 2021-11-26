@@ -31,6 +31,6 @@ Aumenta tu resistencia mágica por 1 al activar mente desencadenada.
 
 Incrementa el daño base de tus hechizos por 2 al activar mente desencadenada.
 
-<u>Conocimiento primigenio:</u> Has llegado al peldaño más alto del conocimiento. Al entrar en el estado de mente desencadenada aumenta tus tres estadísticas mentales de nuevo por 1, llegando a superar el 6. No podrás llegar a tener más de 9 en una estadística (12 si eres de nivel 12 o superior).
+<u>Conocimiento primigenio:</u> Has llegado al peldaño más alto del conocimiento. Al entrar en el estado de mente desencadenada aumenta tus tres estadísticas mentales de nuevo por 2, llegando a superar el 6. No podrás llegar a tener más de 9 en una estadística (12 si eres de nivel 12 o superior).
 
 <u>Mente eterna:</u> Aunque tu cuerpo muera tu mente es capaz de pervivir. Cuando seas reducido a 0 PV tu mente se retirará a un demiplano mental hasta que tu cuerpo se recupere. Ese demiplano funciona como un palacio de la mente tal como se especifica en ascendencia Akhásica. Si tu cuerpo es destruido tu mente permanecerá en el demiplano hasta que un aliado la ligue a un cuerpo a través del correcto ritual. Para matarte permanentemente es necesario acceder a tu demiplano mental y acabar contigo ahí. Mente eterna no funciona si estás afectado por confusión o debilitar mente.
