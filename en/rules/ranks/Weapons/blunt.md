@@ -7,7 +7,7 @@ category: Weapons
 
 Add your rank to all attack and defense rolls made with blunt weapons.
 
-<u>Power Attack</u>: You are able to trade accuracy for greater attack strength on your attacks. This ability allows you to declare an attack as a Power Attack, which will grant you a -2 penalty on attack rolls in exchange for inflicting +2 base damage and pushing 5 feet on hit. At rank III and V 	you can increase the penalty by -2 to inflict 2 additional points of damage and push 5 additional feet. 
+<u>Power Attack</u>: You are able to trade accuracy for greater attack strength on your attacks. This ability allows you to declare an attack as a Power Attack, which will grant you a -2 penalty on attack rolls in exchange for inflicting +2 base damage and pushing 5 feet on hit. At rank III and V you can increase the penalty by -2 to inflict 2 additional points of damage and push 5 additional feet. 
 
 ## Rank II
 

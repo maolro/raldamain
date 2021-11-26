@@ -68,7 +68,7 @@ Los jugadores escapan del manicomio y alguien se aproxima a ellos.
 
 **Sectario ocultista** (nivel 5)
 
-**Profundo híbrido** (nivel 3)
+**Matón de la secta** (nivel 2)
 
 **Profundo puro** (nivel 5)
 
