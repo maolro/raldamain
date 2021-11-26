@@ -7,13 +7,13 @@ category: Combat
 
 Add your Reflex rank to all defensive dodge rolls.
 
-<u>Quickness</u>: You receive an additional move action on your turn. Additionally, you gain a +2 bonus on all your Dodge rolls to avoid attacks made by creatures larger than you. 
+<u>Quickness</u>: You receive an additional move action on your turn. Additionally, you gain advantage on all your Dodge rolls to avoid attacks made by creatures larger than you. 
 
 <u>Subtlety</u>: The light weapons you carry are hard to detect and capable of killing before your enemy realizes it. Drawing a light weapon costs you a bonus action and whenever you make an attack you can make a stealth check against your opponents' perception so your attack makes no noise. If you make this attack from a concealed position you can hide again as a bonus if you succeed in this roll.
 
 ## Rank II
 
-<u>Evasion</u>: You do not suffer obligatory damage from area attacks that have a radius of effect of smaller than 20 feet. In addition, when an enemy misses your attack you may move 5 feet as a reaction without provoking attacks of opportunity (this increases to 10 feet at rank IV).
+<u>Evasion</u>: You do not suffer mandatory damage from area attacks that have a radius of effect of smaller than 20 feet. In addition, when an enemy misses your attack you may move 5 feet as a reaction without provoking attacks of opportunity (this increases to 10 feet at rank IV).
 
 <u>Uncanny dodge:</u> You capable of reacting to danger before your senses warn you. You are also able to dodge surprise attacks and invisible attackers, although they will still gain advantage and receive damage bonuses from sneak attack. Uncanny dodge does not work against feints.
 
