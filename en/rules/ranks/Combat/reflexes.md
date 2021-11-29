@@ -9,7 +9,7 @@ Add your Reflex rank to all defensive dodge rolls.
 
 <u>Quickness</u>: You receive an additional move action on your turn. Additionally, you gain advantage on all your Dodge rolls to avoid attacks made by creatures larger than you. 
 
-<u>FINESSE</u>: The light weapons you carry are hard to detect and capable of killing before your enemy realizes it. Drawing a light weapon costs you a bonus action and whenever you make an attack you can make a stealth check against your opponents' perception so your attack makes no noise. If you make this attack from a concealed position you can hide again as a bonus action if you succeed in this roll.
+<u>Finesse</u>: The light weapons you carry are hard to detect and capable of killing before your enemy realizes it. Drawing a light weapon costs you a bonus action and whenever you make an attack you can make a stealth check against your opponents' perception so your attack makes no noise. If you make this attack from a concealed position you can hide again as a bonus action if you succeed in this roll.
 
 ## Rank II
 
