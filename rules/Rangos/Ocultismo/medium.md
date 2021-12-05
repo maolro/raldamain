@@ -21,7 +21,7 @@ Añade tu rango a todos tus tiros relacionados con habilidades de médium. Eres 
 
 <u>Ecos del pasado:</u> Los grandes eventos del pasado dejan su marca en los lugares y objetos que afectaron. Empleando un minuto de análisis eres capaz de identificar las influencias mágicas que hayan afectado a un objeto o lugar y aprender un dato de información sobre su pasado. Este dato se manifestará como una visión escogida por el máster que actuará como respuesta de tus preguntas. Ecos del pasado sólo puede utilizarse una vez al día por cada objeto o lugar.
 
-<u>Invocar espectro:</u> Usando una acción de turno completo puedes invocar a tu alma ligada para que te proteja frente al peligro, la cual se manifestará en la forma de una criatura incorpórea conocida como un espect. Este espectro tendrá nivel igual a tu rango de médium x 2 y empezará con la mejora Incorpóreo (sus ataques físicos infligirán daño necrótico). El espectro permanecerá en el mundo durante un minuto o hasta que pierdas la concentración, y mientras él viva recibirás ventaja en todos tus tiros defensivos pero no podrás emplear la habilidad Canalizar ánima. A rango IV el espectro no requerirá tu concentración para manifestarse.
+<u>Invocar espectro:</u> Usando una acción de turno completo puedes invocar a tu alma ligada para que te proteja frente al peligro, la cual se manifestará en la forma de una criatura incorpórea conocida como un espectro. Este espectro tendrá nivel igual a tu rango de médium x 2 y empezará con la mejora Incorpóreo (sus ataques físicos infligirán daño necrótico). El espectro permanecerá en el mundo durante un minuto o hasta que pierdas la concentración, y mientras él viva recibirás ventaja en todos tus tiros defensivos pero no podrás emplear la habilidad Canalizar ánima. A rango IV el espectro no requerirá tu concentración para manifestarse.
 
 ## Rango III
 
@@ -37,7 +37,7 @@ Aumenta tu probabilidad de crítico con exorcizar a 19-20.
 
 <u>Robar alma:</u> Tu control de las almas te permite alterar el flujo natural de la muerte y ligar las mismas almas de los caídos. Como reacción usable una vez al turno puedes atrapar el alma de una persona que muera esta ronda, ligándola a tu control. Solo puedes guardar como máximo 4 almas de esta manera y puedes liberar un alma para canalizarla o invocarla como un espectro. Las almas liberadas no pueden recuperarse y hablar con los muertos funcionará con ellas. Si el alma lo decide esta puede volver a ser ligada por ti aunque sea liberada.
 
-<u>Espectro guardián:</u> Tu alma es especialmente resiliente frente al peligro y te infunde de mayor fuerza de voluntad. Al entrar en el estado de Canalizar ánima recibes resistencia igual a tu rango de Médium a efectos mentales y posesión. Además, eres inmune a efectos de muerte instantánea y una vez al día puedes resucitar a 1 PV cuando mueras. Si tienes un espectro invocado este te protegerá con mayor ferocidad, incrementando tu resistencia física y mágica por 2.
+<u>Espectro guardián:</u> Tu alma es especialmente resiliente frente al peligro y te infunde de mayor fuerza de voluntad. Al entrar en el estado de Canalizar ánima recibes resistencia igual a tu rango de Médium a efectos mentales y posesión. Además, eres inmune a efectos de muerte instantánea y una vez al día puedes resucitar a 1 PV cuando mueras. Eres capaz también de canalizar ánima a la vez que tengas un e
 
 ## Rango V
 
