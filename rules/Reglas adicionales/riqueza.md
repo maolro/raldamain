@@ -38,4 +38,5 @@ Estas son algunas posibilidades en las cuales se puede invertir el crédito.
 
 <u>[Objetos mágicos y tecnológicos](https://raldamain.com/rules/Reglas%20adicionales/objetos%20m%C3%A1gicos%20y%20tecnol%C3%B3gicos.html):</u> El crédito puede emplearse para comprar un objeto mágico o tecnológico del valor adecuado. La disponibilidad de dicho objeto queda decidida por el máster y en algunos casos puede no existir en la época del momento aunque posea un coste de crédito.
 
-<u>Inversión:</u> Puedes gastar crédito para invertir en una organización de tu elección, incrementando su influencia y prestigio. El coste de dicha inversión será igual al nivel presente de la organización y al gastarlo el nivel de esta incrementará por 1. Una adecuada inversión puede ocasionarte un ascenso social si el máster lo decide. 
+<u>Inversión:</u> Puedes gastar crédito para invertir en una organización de tu elección, incrementando su influencia y prestigio. El coste de dicha inversión será igual al nivel presente de la organización y al gastarlo el nivel de esta incrementará una de sus e. Una adecuada inversión puede ocasionarte un ascenso social si el máster lo decide. 
+
