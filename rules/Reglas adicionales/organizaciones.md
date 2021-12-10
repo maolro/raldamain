@@ -67,15 +67,17 @@ Un jugador podrá dar órdenes específicas conocidas como acciones a lo largo d
 
 ### Ganancia económica
 
-<u>Vender productos</u> (INF):
+<u>Vender productos</u> (INF): 
 
-<u>Exigir tributo</u> (MIL):
+<u>Exigir tributo</u> (MIL): 
 
-<u>Robo</u> (SUB):
+<u>Robo</u> (SUB): 
 
-<u>Donación</u> (INF):
+<u>Donación</u> (INF): 
 
-<u>Mercado negro</u> (SUB):
+<u>Mercado negro</u> (SUB): 
+
+<u>Cazarrecompensas</u> (MIL y SEC): 
 
 ### Relaciones
 
