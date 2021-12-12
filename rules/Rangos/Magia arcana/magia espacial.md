@@ -42,7 +42,3 @@ Aumenta tu probabilidad de crítico a 18-20.
 <u>Umbral:</u> Puedes realizar un ritual de dos turnos de duración para abrir un gigantesco portal a lejanas dimensiones. Ese portal mide 20 pies de diámetro y conduce a cualquier lugar del mundo que conozcas (se aplica como teletransportar) o al plano Espiritual, Sombrío u Onírico. El umbral permanecerá abierto mientras mantengas la concentración en él, pero si está abierto durante un tiempo prolongado una criatura nativa al lugar donde lo has abierto puede pasar por él (decisión del máster). También puedes realizar rituales de duración más larga (un descanso corto o un descanso largo) para intentar abrir un portal a otros planetas o dimensiones, realizando un tiro de magia espacial contra una dificultad escogida por el máster. Umbral sólo puede usarse una vez al día.
 
 <u>Portal múltiple:</u> Los portales menores que creas aumentan su tamaño a 5 pies de diámetro, haciendo que una criatura pueda pasar por ellos. Además, una vez al turno puedes crear un portal menor como acción bonus. Cuando una criatura enemiga pase por uno de tus portales puedes cerrarlo al momento, causando que la criatura tire destreza contra tu magia espacial o perderá la parte del cuerpo que haya introducido por él (es una parte aleatoria si intenta pasar por un portal de tamaño 5 pies). Para poder cerrar un portal de esta manera debes emplear una acción de movimiento, la cual también puede usarse como reacción en cualquier momento de la ronda.
-
-
-
- 

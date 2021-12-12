@@ -19,7 +19,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas.
 
 <u>Ajustar alcance:</u> Puedes ajustar la posición de tus manos en el arma para aumentar o disminuir tu alcance por 5 pies como acción de movimiento. Si eliges reducir su alcance, no podrás proteger a tus aliados, pero no sufrirás penalizaciones al defenderte de ataques adyacentes; mientras que si escoges aumentarlo recibirás un dado de desventaja adicional al protegerte de ataques hechos por criaturas adyacentes. Ajustar el alcance tu cuesta una acción bonus a rango IV, la cual puede emplearse solo una vez al turno.
 
-<u>Ataque lateral:</u> Como acción de turno completo puedes atacar a todas las criaturas en un arco de 15 pies. Cuando impactes a una criatura con esta habilidad podrás hacer una maniobra de tropezar empleando tus modificadores de arma. Un ataque lateral será detenido si un defensor lo logra bloquear con un escudo 
+<u>Ataque lateral:</u> Como acción de turno completo puedes atacar a todas las criaturas en un arco de 15 pies. Cuando impactes a una criatura con esta habilidad podrás hacer una maniobra de tropezar empleando tus modificadores de arma. Un ataque lateral será detenido si un defensor lo logra bloquear con un escudo.
 
 ## Rango III 
 
