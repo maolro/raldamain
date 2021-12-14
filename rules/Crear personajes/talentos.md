@@ -6,7 +6,7 @@ Los talentos representan tu aptitud en varias habilidades no relacionadas con lo
 
 Los talentos te aumentarán también tus estadísticas a determinados niveles si estas tienen valores demasiado bajos. A nivel de talento 3 aumenta la estadística asociada por 1 si es inferior a 3 y a nivel de talento 5 auméntala de nuevo si es inferior a 4.
 
-Cada talento está asociado con una estadística, lo cual queda indicado en la Lista de talentos.
+Cada talento está asociado con una estadística, lo cual queda indicado a continuación.
 
 ## Lista de talentos
 
@@ -17,6 +17,10 @@ Tienes soltura en tiros para escalar, nadar o correr largas distancias. Una de t
 ### Acrobacias (DES)
 
 Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. Cada nivel de Acrobacias aumenta tu velocidad de salto horizontal por 5 pies y de salto vertical por 1 pie.
+
+### Actuación (CAR)
+
+
 
 ### Arcanismo (INT)
 
@@ -52,10 +56,6 @@ Eres un experto en los ámbitos relacionados con un tema. Tienes soltura en tiro
 
 Eres capaz de usar tu fuerza física para realizar grandes proezas en el campo de batalla. Tienes soltura en tiros de ataque para hacer maniobras de combate (Agarrar, Tropezar, Empujar o Desarmar) y para atacar con armas improvisadas. Puedes emplear tu heroísmo para defenderte de otras maniobras de combate.
 
-### Intimidar (FUE)
-
-Usas tu fuerza para desmoralizar a tus adversarios sin la necesidad de hacer un ataque. Tienes soltura en tiros para desmoralizar a oponentes o para presionar a una criatura más débil que tú para que haga favores por ti a la fuerza. El objetivo tirará defensivamente con Fuerza (o Intimidar si lo tiene) si buscas desmoralizarlo o Carisma si buscas presionarla. Una criatura a la que presiones hará el favor por ti pero su actitud se reducirá por un nivel.
-
 ### Juego de manos (DES)
 
 Tienes soltura en tiros para trastear cerraduras, hurtar pertenencias ajenas o hacer trucos de magia simples. Si buscas hacer un tiro de juego de manos contra una persona que te esté observando esta tirará Percepción defensivamente para detectar si lo intentas. Usar esta habilidad en un combate te cuesta una acción estándar (acción de turno completo si buscas trastear una cerradura).
@@ -68,10 +68,6 @@ Conoces instintivamente como estabilizar a una persona herida. Como acción est�
 
 Tus sentidos te permiten darte cuenta de detalles y alertarte del peligro. Tienes soltura en tiros relacionados con la vista, el oído y el olfato, y para darte cuenta de detalles en tu entorno. Si una criatura intenta ocultarse esta resistirá con su habilidad de Sigilo contra tu Percepción. Usar Percepción para darte cuenta de los detalles e identificar a criaturas escondidas te cuesta una acción de movimiento.
 
-### Persuasión (CAR)
-
-Tienes soltura en tiros para cambiar la actitud de las personas respecto a un tema determinado y para convencerles de una determinada acción. El tiro de dificultad varía según la opinión de tus interlocutores hacia ti, incrementando la dificultad si son más hostiles. Persuasión no te permite cambiar la actitud de las personas con quienes interactúas ni pedirles favores demasiado arriesgados, acciones que pueden realizarse con rangos de Influenciar.
-
 ### Sigilo (DES)
 
 Eres experto evitando ser detectado. Tienes soltura en tiros para esconderte y moverte silenciosamente. Esconderte es una acción de movimiento solo utilizable si tienes algún tipo de cubierta o ocultamiento. Si atacas a una criatura que no se ha dado cuenta de tu posición, contará como un ataque sorpresa y no podrá defenderse. Estando oculto puedes aún moverte sin llamar la atención, pero te moverás a mitad de velocidad. Abandonas automáticamente el sigilo cuando hagas un ataque.
@@ -79,3 +75,4 @@ Eres experto evitando ser detectado. Tienes soltura en tiros para esconderte y m
 ### Supervivencia (SAB)
 
 Tienes soltura en tiros para sobrevivir en un entorno salvaje o seguir huellas de criaturas. El tiro de dificultad queda decidido por el máster y depende de la peligrosidad del entorno y de factores relacionados con las criaturas que rastrees (por ejemplo, el número de criaturas y cómo de recientes son las huellas). Tus niveles de Supervivencia aumentan con rangos en Rastrear.
+

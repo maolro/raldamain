@@ -5,7 +5,7 @@ Tienes el don de inspirar a todos aquellos que tienes cerca con un sentimiento d
 
 ## Rango I
 
-Añade tu rango de presencia a tus tiros defensivos de sabiduría. Puedes además emplear tu CAR para tiros de Intimidar y recibes un bonificador igual a tu rango en tiros de Persuasión e Intimidar.
+Añade tu rango de presencia a tus tiros defensivos de sabiduría. 
 
 <u>Voz del comandante:</u> A través de inspiradoras palabras u ordenes imperiosas eres capaz de fortalecer la moral y fuerza de tus aliados. Iniciar este efecto te cuesta una acción estándar y mientras permanezca activo todos tus aliados a 30 pies de ti que puedan percibirte tendrán Ventaja en todos sus tiros de habilidad, ataque y defensa (esta habilidad tiene una distancia máxima de 45 pies a rango III y 60 pies a rango V). El efecto de voz del comandante permanecerá activo hasta que seas incapacitado o sufras una herida permanente (esta debe ser media o superior a rango III y grave o superior a rango V).
 
