@@ -12,67 +12,61 @@ Cada talento está asociado con una estadística, lo cual queda indicado a conti
 
 ### Atletismo (FUE)
 
-Tienes soltura en tiros para escalar, nadar o correr largas distancias. Una de tus velocidades (nadar, escalar o base) aumenta por 5 pies cada vez que obtengas un nuevo nivel de talento. Esta puede llegar como máximo a 45 pies de velocidad.
+Tienes soltura en tiros para escalar, nadar o correr largas distancias. Aumenta tu movimiento base por 5 pies y eres capaz de escalar o nadar una distancia de 5 pies como acción de movimiento. Cuando alcances el nivel de talento 3 o 5 aumenta tu movimiento de nuevo por 5 pies, incluyendo también tus velocidades de nadar y escalar (esto puede llegar a un máximo de 45 pies)
 
 ### Acrobacias (DES)
 
-Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. Cada nivel de Acrobacias aumenta tu velocidad de salto horizontal por 5 pies y de salto vertical por 1 pie.
+Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. A nivel 1 recibes la capacidad de saltar 5 pies en horizontal o vertical como acción de movimiento. Cuando alcances el nivel de talento 3 o 5 aumenta ambas velocidades de salto de nuevo por 5 pies.
 
 ### Actuación (CAR)
 
+Tienes soltura en todos los tiros relacionados con un arte escénica de tu elección, como puede ser tocar un instrumento, cantar, bailar, oratoria o teatro. Cada vez que subas un nivel de talento puedes escoger un arte escénica diferente a la cual sumarás también tu nivel total. 
 
+Este talento puede ser usado en un combate para distraer a un enemigo, permitiéndote como acción de movimiento hacer un tiro de habilidad contra la percepción de un objetivo y si tienes éxito este se fijará solo en ti durante una ronda, recibiendo el efecto de estado fascinado.
 
 ### Arcanismo (INT)
 
-Tienes gran conocimiento los usos del chi en la magia, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día mientras que a nivel de talento 5 puedes emplearla tres veces al día.
+Tienes gran conocimiento sobre la magia y todo lo referente a ella, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día mientras que a nivel de talento 5 puedes emplearla tres veces al día. Estas habilidades mágicas pueden encontrarse en la sección de magia arcana en el capítulo 3.
 
 ### Averiguar intenciones (SAB)
 
-Tienes un sentido de intuición que te permite detectar mentiras. Recibes soltura en tiros para determinar si la persona con quién interactúas te está mintiendo. El objetivo debe tirar Engaño si te está mintiendo, y si tienes éxito sabrás con certeza si te está mintiendo o no. Este talento se emplea también para defenderte de fintas.
+Tienes soltura en tiros para romper objetos o causar daño a estructuras. Tu talento de destrozar se sumará también a todos tus tiros de fuerza para escapar de ligaduras materiales y agarres hechos con objetos físicos como cadenas o látigos. Hacer un intento de destrozar cuesta una acción de movimiento y si tienes éxito romperás el objeto que intentes afectar. Si el objeto es particularmente duradero el máster puede decidir que solo le ocasionas daños leves o hasta nulos.
 
 ### Destrozar (FUE)
 
-Tienes soltura en tiros para romper objetos o causar daño a estructuras. Hacer un tiro de Destrozar te cuesta una acción estándar y al impactar le haces daño al objeto dependiendo del arma que uses. Un objeto tira dados defensivos dependiendo de su dureza y tiene PV determinados por su tamaño y su material. Estos son algunos ejemplos de estadísticas de objetos.
-
-| Objeto                            | Tiro defensivo                                | PV   |
-| --------------------------------- | --------------------------------------------- | ---- |
-| Puerta de madera                  | +4. Armas pesadas ignoran el tiro defensivo.  | 4    |
-| Puerta reforzada                  | +6. Armas pesadas ignoran el tiro defensivo.  | 7    |
-| Cuerda                            | +6. Armas cortantes ignoran el tiro defensivo | 1    |
-| Pared de piedra (porción 20 pies) | +9                                            | 13   |
-| Muro (porción 20 pies)            | +10                                           | 20   |
-| Cadena                            | +8                                            | 4    |
-| Puerta de hierro                  | +8                                            | 9    |
+Tienes soltura en tiros para romper objetos o causar daño a estructuras. Tu talento de destrozar se sumará también a todos tus tiros de fuerza para escapar de ligaduras materiales y agarres hechos con objetos físicos como cadenas o látigos. Hacer un intento de destrozar cuesta una acción de movimiento y si tienes éxito romperás el objeto que intentes afectar. Si el objeto es particularmente duradero el máster puede decidir que solo le ocasionas daños leves o hasta nulos.
 
 ### Engaño (CAR)
 
-Eres experto mintiendo de una manera que parece que dices la verdad. Cuando una criatura intente usar averiguar intenciones para detectar si mientes, tienes soltura en tiros para evitar que lo detecte. Recibirás penalizadores en este tiro determinados por el máster si tu mentira resulta poco creíble. Si un jugador intenta usar Averiguar intenciones en ti, puedes comunicarle al máster tus resultados en secreto para que el otro jugador no sepa si estás usando Engaño o no. Engaño también puede usarse para comunicar mensajes secretos a un aliado sin que otro personaje lo sepa, fintar a enemigos o resistir tiros de Percepción para intentar identificarte si llevas un disfraz. 
+Eres experto mintiendo de una manera que parece que dices la verdad. Añade tu nivel de engaño a tus tiros defensivos para evitar que otro personaje intente detectar si estás mintiendo con Averiguar intenciones o averiguar que estás disfrazado con Percepción (si la mentira o disfraz resulta poco creíble recibirás desventaja mientras que si es particularmente bueno recibirás ventaja). 
+
+Engaño se usará también para comunicar mensajes secretos a aliados y puedes emplear una acción estándar hacer una finta contra un enemigo de tu elección, el cual se protegerá con Averiguar intenciones. Si tienes éxito en la finta tu objetivo no podrá defenderse del siguiente ataque que reciba tanto por ti o un aliado.
 
 ### Estudio (INT)
 
-Eres un experto en los ámbitos relacionados con un tema. Tienes soltura en tiros para recordar o saber información relacionada con un tema específico. Cada vez que obtienes un nivel de talento puedes escoger un tema diferente en el que tienes soltura. Algunos temas de conocimiento para escoger son la ingeniería, la historia, la medicina, la teología, la química y la criptografía. También puedes elegir como tema conocer los rasgos, historia y comportamientos de una cultura o raza extraplanaria específica.
+Tienes soltura en tiros para recordar o saber información relacionada con un tema académico específico. Algunos campos de conocimiento para escoger son la ingeniería, la historia, la medicina, la teología, la química y la criptografía. Cada vez que obtienes un nivel de talento puedes escoger un campo de conocimiento diferente en el que tienes soltura. También puedes escoger como tema conocer los rasgos, historia y comportamientos de una cultura o raza extraplanaria específica.
 
 ### Heroísmo (FUE)
 
-Eres capaz de usar tu fuerza física para realizar grandes proezas en el campo de batalla. Tienes soltura en tiros de ataque para hacer maniobras de combate (Agarrar, Tropezar, Empujar o Desarmar) y para atacar con armas improvisadas. Puedes emplear tu heroísmo para defenderte de otras maniobras de combate.
+Eres capaz de usar tu fuerza física para realizar grandes proezas en el campo de batalla. Tienes soltura en tiros de ataque para hechos con armas improvisadas y al realizar maniobras de combate como puede ser agarrar, empujar, tropezar o desarmar a un objetivo (todas estas se especifican en el capítulo 5 y cuestan una acción estándar). Este talento se suma también a todos los tiros defensivos que realices para defenderte de maniobras de combate hechas por enemigos.
 
 ### Juego de manos (DES)
 
-Tienes soltura en tiros para trastear cerraduras, hurtar pertenencias ajenas o hacer trucos de magia simples. Si buscas hacer un tiro de juego de manos contra una persona que te esté observando esta tirará Percepción defensivamente para detectar si lo intentas. Usar esta habilidad en un combate te cuesta una acción estándar (acción de turno completo si buscas trastear una cerradura).
+Tienes soltura en tiros para trastear cerraduras, hurtar pertenencias ajenas o hacer trucos de magia simples. Usar esta habilidad en un combate te cuesta una acción estándar (acción de turno completo si buscas trastear una cerradura) y si un objetivo te está observando deberás tener éxito en un tiro de habilidad contra su Percepción. Esta habilidad también puede usarse para escapar de un agarre empleando la elasticidad en lugar de la fuerza, lo cual te cuesta una acción de movimiento y deberás tener éxito en un tiro de juego de manos contra el efecto que te agarre.
 
 ### Primeros auxilios (SAB)
 
-Conoces instintivamente como estabilizar a una persona herida. Como acción estándar puedes estabilizar a una criatura con 0 o menos puntos de vida. Si usas Primeros auxilios en una criatura que ya esté estabilizada puedes eliminar los efectos de Sangrado y le curas PV igual al número de niveles de talento que tengas. Sólo puedes usar Primeros auxilios de esta manera en combate un número de veces al día igual a tu nivel de talento y sólo una vez por descanso. No consumes un uso de esta habilidad la primera vez que la utilizas si tienes el material adecuado para sanar.
+Conoces instintivamente como estabilizar a una persona herida, recibiendo soltura en todos los tiros para sanar a otras personas. Como acción estándar puedes hacer un tiro de primeros auxilios para estabilizar a una criatura con 0 o menos puntos de vida, enfrentándote a una dificultad escogida por el máster según la cantidad de heridas que tenga tu objetivo. Si usas Primeros auxilios en una criatura que ya esté estabilizada puedes eliminar los efectos de Sangrado y le curas PV igual a tu nivel de talento si tienes éxito. Si utilizas esta habilidad durante un descanso. La cantidad de veces que puedas utilizar primeros auxilios queda limitada por los materiales de curación que poseas, lo cual queda especificado en el capítulo 4.
 
 ### Percepción (SAB)
 
-Tus sentidos te permiten darte cuenta de detalles y alertarte del peligro. Tienes soltura en tiros relacionados con la vista, el oído y el olfato, y para darte cuenta de detalles en tu entorno. Si una criatura intenta ocultarse esta resistirá con su habilidad de Sigilo contra tu Percepción. Usar Percepción para darte cuenta de los detalles e identificar a criaturas escondidas te cuesta una acción de movimiento.
+Tus sentidos te permiten darte cuenta de detalles y alertarte del peligro. Tienes soltura en tiros relacionados con la vista, el oído y el olfato para darte cuenta de detalles en tu entorno. Si intentas emplear esta habilidad para encontrar a una criatura oculta deberás tener éxito en un tiro de Percepción contra el sigilo de tu objetivo. Usar Percepción para darte cuenta de los detalles e identificar a criaturas escondidas te cuesta una acción de movimiento.
 
 ### Sigilo (DES)
 
-Eres experto evitando ser detectado. Tienes soltura en tiros para esconderte y moverte silenciosamente. Esconderte es una acción de movimiento solo utilizable si tienes algún tipo de cubierta o ocultamiento. Si atacas a una criatura que no se ha dado cuenta de tu posición, contará como un ataque sorpresa y no podrá defenderse. Estando oculto puedes aún moverte sin llamar la atención, pero te moverás a mitad de velocidad. Abandonas automáticamente el sigilo cuando hagas un ataque.
+Eres experto evitando ser detectado, recibiendo soltura en tiros para esconderte y moverte silenciosamente. Esconderte es una acción de movimiento y solo se podrá usar si tienes algún tipo de cubierta u ocultamiento. Si atacas a una criatura que no se ha dado cuenta de tu posición esta no podrá defenderse de tu ataque, recibiendo el daño de manera automática. Estando oculto puedes aún moverte sin llamar la atención, pero te moverás a mitad de velocidad. Abandonas automáticamente el sigilo cuando hagas un ataque.
 
 ### Supervivencia (SAB)
 
-Tienes soltura en tiros para sobrevivir en un entorno salvaje o seguir huellas de criaturas. El tiro de dificultad queda decidido por el máster y depende de la peligrosidad del entorno y de factores relacionados con las criaturas que rastrees (por ejemplo, el número de criaturas y cómo de recientes son las huellas). Tus niveles de Supervivencia aumentan con rangos en Rastrear.
+Tienes soltura en tiros para sobrevivir en un entorno salvaje o seguir huellas de criaturas. El tiro de dificultad queda decidido por el máster y depende de la peligrosidad del entorno y de factores relacionados con las criaturas que rastrees (por ejemplo, el número de criaturas y cómo de recientes son las huellas). Algunas situaciones que utilizan supervivencia son buscar comida y agua en un entorno salvaje, predecir el clima, orientarse y fabricar trampas sencillas.
 
