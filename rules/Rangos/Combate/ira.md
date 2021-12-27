@@ -13,7 +13,7 @@ La ira es un sentimiento que fluye a través de todas las personas, sin embargo 
 
 ## Rango II
 
-<u>Reducción al daño:</u> Al entrar en ira eres capaz de aguantar heridas con mayor facilidad. Reduce el daño físico que recibas mientras estés en Ira por 2 y podrás ignorar los penalizadores provocados por heridas permanentes mientras te encuentres en ira (estas volverán a entrar en efecto cuando termine tu ira). Cada vez que recibas un rango adicional de Ira tu resistencia al daño volverá a aumentar por 1.
+<u>Reducción al daño:</u> Al entrar en ira eres capaz de aguantar heridas con mayor facilidad. Reduce el daño físico que recibas mientras estés en Ira por 2 y podrás ignorar los penalizadores provocados por heridas permanentes mientras te encuentres en ira (estas volverán a entrar en efecto cuando termine tu ira y no podrá protegerse de he). Cada vez que recibas un rango adicional de Ira tu resistencia al daño volverá a aumentar por 1.
 
 <u>Golpe decisivo:</u> Una vez por ira puedes concentrar todas tus fuerzas en un único ataque. Golpe decisivo es una acción bonus y te otorga un bonificador +2 en el tiro de ataque y el daño. Ambos bonificadores aumentarán por 2 cada vez que recibas un rango adicional en ira.
 
