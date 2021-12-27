@@ -29,7 +29,7 @@ Añade tu rango de Reflejos a todos los tiros defensivos de esquiva
 
 <u>Evasión superior:</u> Tus habilidades evasivas te permiten salir ileso de devastadoras explosiones. Al realizar un tiro de esquiva contra un ataque de área con radio inferior a 30 pies no sufrirás daño si tienes éxito y recibirás la mitad de daño si fracasas. Si te encuentras en posición defensiva puedes aumentar el radio de evasión evitar por 15 pies por cada acción empleada para defenderte.
 
-<u>Esquiva asombrosa superior:</u> No puedes ser flanqueado y eres inmune a fintas hechas por criaturas con menor destreza a la tuya. El bonificador de daño por ataque furtivo no se aplicará contra ti en ataques sorpresa y flanqueo salvo que el atacante tenga destreza igual o superior a ti. No obstante, podrá emplear ataque furtivo si estás aturdido o incapacitado.
+<u>Esquiva asombrosa superior:</u> Tus enemigos no reciben ninguna ventaja por flanqueo contra ti y eres inmune a fintas hechas por criaturas con menor destreza a la tuya. También eres capaz de emplear métodos distintos a esquiva para protegerte de ataques sorpresa 
 
 ## Rango V
 

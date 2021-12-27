@@ -9,7 +9,7 @@ Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras p
 
 <u>Entrenamiento con armaduras:</u> Reduce por 2 el penalizador de armadura. En el caso que logres reducir el penalizador a 0 podrás moverte y usar habilidades de reflejos como si no llevases armadura, aunque obtendrás desventaja en tiros de esquiva y talentos relacionados con la destreza. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 2
 
-<u>Defensa reforzada:</u> Incrementa tu defensa por 2 si llevas armadura. La defensa volverá a aumentar por 2 cada vez que obtengas un rango en aptitud con armaduras. Este incremento a la defensa también reduce el daño de ataques no-mágicos contra los cuales no se aplica tu armadura, como puntería mortal.
+<u>Defensa reforzada:</u> Incrementa tu defensa por 2 si llevas armadura. La defensa volverá a aumentar por 1 cada vez que obtengas un rango en aptitud con armaduras. Este incremento a la defensa también reduce el daño de ataques no-mágicos contra los cuales no se aplica tu armadura, como puntería mortal.
 
 ## Rango II
 
