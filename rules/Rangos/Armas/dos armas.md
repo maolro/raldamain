@@ -7,45 +7,27 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 ## Rango I
 
-<u>Aptitud con dos armas:</u> Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá un penalizador – 2 en tiros de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
+<u>Aptitud con dos armas:</u> Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
 
-<u>Estilo de combate:</u> Obtienes un número de atributos dependiendo del arma que lleves en tu mano secundaria. Cada vez que subas un rango la aptitud con dos armas recibes los atributos que te indique la lista correspondiente.
+<u>Estilo de combate:</u> Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
 
-## Filos cortantes
+## Armas de fuego  
 
-### Rango I
+### Rango I 
 
-<u>Parada doble:</u> Una vez por ronda puedes hacer una parada adicional con tu arma secundaria para detener un ataque particularmente peligroso. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener (el penalizador de tu arma secundaria continuará aplicándose). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
+<u>Debilitar defensas:</u> Puedes disparar con tu arma secundaria para dejar expuesto al enemigo a otros ataques. Obtienes ventaja en trucos de bala hechos con tu arma secundaria y al impactar a un enemigo con esta todos los ataques posteriores que realices contra el mismo objetivo recibirán ventaja también. 
 
-<u>Tajo cruzado:</u> Tu ataque secundario es muy efectivo contra enemigos que ya hayas herido. Al impactar al mismo objetivo con tus dos armas en el mismo turno, tu segundo ataque infligirá +1d6 daño base.
-
-### Rango II
-
-<u>Corte circular:</u> Cuando uses la acción [gran corte](https://raldamain.com/rules/Rangos/Armas/filos cortantes.html#rango-ii) puedes atacar también con tu arma secundaria. Un corte hecho de esta manera recibirá un penalizador -2 pero con él podrás atacar a todas las criaturas que se encuentren a 5 pies de ti. Si un enemigo con escudo logra protegerse de este ataque no lo detendrá, pero sí podrá proteger a las criaturas adyacentes a él.
-
-<u>Juego de espadas:</u> En lugar de atacar puedes emplear tu arma secundaria para hacer una maniobra de desarme contra una criatura que intente detener tu ataque con una parada. Además, las criaturas con la espada trabada serán incapaces de defenderse de ataques hechos con tu arma secundaria.
-
-### Rango III
-
-<u>Muerte por mil cortes:</u> Al utilizar Torbellino de acero recibirás un bonificador al daño igual al daño base de tu arma secundaria y aumentas el nivel de las heridas infligidas por un paso. También eres capaz de hacer un ataque adicional al turno con tu arma secundaria.
-
-## Filos perforantes
-
-### Rango I
-
-<u>Desviar ataques:</u> Tu arma secundaria puede desviar ataques que traspasen tus defensas. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener (el penalizador de tu arma secundaria continuará aplicándose). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
-
-<u>Combate furtivo:</u> Obtienes ventaja y aplicas el daño de ataque furtivo a todos tus ataques con tu arma secundaria hechos contra enemigos heridos por tu arma principal. No recibirás ningún beneficio de esta habilidad si eres desarmado de tu arma principal o tu objetivo tiene la habilidad Esquiva asombrosa superior.
+<u>Cubierta de disparos:</u> Eres capaz de hacer disparos a bocajarro con tu arma secundaria para protegerte de ataques. Al utilizar esta habilidad recibirás desventaja en todos tus ataques hechos con tu arma secundaria, pero podrás emplear tus armas de fuego para protegerte de ataques, añadiendo tus bonificadores de ataque a tiradas defensivas. Usar cubierta de disparos consumirá una bala adicional al turno. 
 
 ### Rango II
 
-<u>Atrapar arma:</u> Usando tus dos armas puedes trabar espadas más grandes que la tuya. Esta habilidad te permite emplear tu ataque principal y secundario para atrapar el arma de tu contrincante, provocando el efecto de espadas trabadas. Si has atrapado el arma de tu enemigo no lo podrás fintar salvo que tengas la habilidad finta superior.
+<u>Lluvia de plomo:</u> Puedes hacer múltiples disparos a la vez para atacar a un gran número de enemigos. Esta habilidad de permite concentrar numerosos ataques en uno solo, incrementando el área de efecto por 5 pies y el daño base por 1d6 por cada ataque empleado de esta manera. Los ataques hechos con lluvia de plomo contarán como ataques de área, infligiendo así la mitad de daño contra aquellos enemigos que superen tu tiro de ataque. 
 
-<u>Ataques apuntados:</u> Todos los penalizadores recibidos por apuntar a una parte específica del cuerpo de tu enemigo quedarán reducidos por 2 al atacar con tu arma secundaria. También puedes emplear tu arma secundaria para fintar a un enemigo.
+<u>Predecir movimiento:</u> Tienes un instinto sobrenatural del peligro. Recibes la habilidad *esquiva asombrosa* (*esquiva asombrosa mejorada* si ya la tienes) y al recibir un ataque sorpresa puedes hacer un ataque de oportunidad con tu arma secundaria como reacción. 
 
-### Rango III
+### Rango III 
 
-<u>Cuchillada</u>: Como acción estándar puedes un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad emplearás uno de tus ataques con tu arma secundaria para incrementar tu daño por un valor igual a su daño base y aumentas el nivel de todas las heridas permanentes infligidas por un paso. Puedes emplear tu arma secundaria para hacer un ataque o maniobra de combate una vez adicional por ronda.
+<u>Maestro pistolero:</u> Cuando empleas una acción de movimiento para apuntar recibirás ventaja en el tiro de ataque de tanto tu arma primaria como tu arma secundaria. Puedes además realizar un ataque adicional por ronda con tu arma secundaria como acción bonus.
 
 ## Cadenas  
 
@@ -65,20 +47,39 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 <u>Danza de destrucción:</u> En lugar de atacar con tus dos cadenas puedes hacer que giren en torno a ti a grandes velocidades, permitiéndote cargar un ataque con cada una de tus cadenas y activando inmediatamente la habilidad [danza de cadenas](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-i). Si haces daño al mismo objetivo con tus dos ataques, su armadura sufre daño igual a la cantidad de turnos que llevas cargando tus cadenas (máximo 3 daño). Si hieres a un enemigo sin armadura aumenta el nivel de todas las heridas permanentes infligidas por un paso. 
 
-## Armas de fuego  
+## Filos cortantes
 
-### Rango I 
+### Rango I
 
-<u>Debilitar defensas:</u> Puedes disparar con tu arma secundaria para dejar expuesto al enemigo a otros ataques. Obtienes ventaja en trucos de bala hechos con tu arma secundaria y al impactar a un enemigo con esta todos los ataques posteriores que realices contra el mismo objetivo recibirán ventaja también. 
+<u>Parada doble:</u> Eres capaz de detener ataques tanto con tu arma principal como con la secundaria. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener con tu arma principal una vez por ronda (el penalizador por luchar con doble arma se aplica también a este tiro si lo tienes). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
 
-<u>Cubierta de disparos:</u> Eres capaz de hacer disparos a bocajarro con tu arma secundaria para protegerte de ataques. Al utilizar esta habilidad recibirás desventaja en todos tus ataques hechos con tu arma secundaria, pero podrás emplear tus armas de fuego para protegerte de ataques, añadiendo tu bonificadores de ataque a tiradas defensivas. Usar cubierta de disparos consumirá una bala adicional al turno. 
+<u>Tajo cruzado:</u> Tu ataque secundario es muy efectivo contra enemigos que ya hayas herido. Al impactar al mismo objetivo con tus dos armas en la misma ronda tu segundo ataque infligirá +1d6 daño base.
 
 ### Rango II
 
-<u>Lluvia de plomo:</u> Puedes hacer múltiples disparos a la vez para atacar a un gran número de enemigos. Esta habilidad de permite concentrar numerosos ataques en uno solo, incrementando el área de efecto por 5 pies y el daño base por 2 por cada ataque empleado de esta manera. Los ataques hechos con lluvia de plomo contarán como ataques de área, infligiendo la mitad de daño contra aquellos enemigos que superen tu tiro de ataque. 
+<u>Corte circular:</u> Cuando uses la acción *gran corte* puedes atacar también con tu arma secundaria. Un corte hecho de esta manera recibirá un penalizador de un dado de desventaja, pero con él podrás atacar a todas las criaturas que se encuentren a 5 pies de ti. Si un enemigo con escudo logra protegerse de este ataque no lo detendrá, pero sí podrá proteger a las criaturas adyacentes a él. Este penalizador se perderá a rango III.
 
-<u>Predecir movimiento:</u> Tienes un instinto sobrenatural del peligro. Recibes la habilidad esquiva asombrosa (esquiva asombrosa mejorada si ya la tienes) y al recibir un ataque sorpresa puedes hacer un ataque de oportunidad con tu arma secundaria como reacción. Tus habilidades de armas de fuego se aplican también para este ataque. 
+<u>Juego de espadas:</u> Al utilizar *torbellino de acero* recibirás un bonificador al daño igual al daño base de tu arma secundaria y aumentas el nivel de las heridas infligidas por un paso. También eres capaz de hacer un ataque adicional al turno con tu arma secundaria.
 
-### Rango III 
+### Rango III
 
-<u>Maestro pistolero:</u> Al atacar a una criatura que haya sufrido daño en algún momento de la ronda podrás incrementar tu daño base por 1d6. Recargar tu arma secundaria te cuesta una acción de movimiento y no necesitas tener una mano libre para ello. 
+<u>Muerte por mil cortes:</u> Al utilizar Torbellino de acero recibirás un bonificador al daño igual al daño base de tu arma secundaria y aumentas el nivel de las heridas infligidas por un paso. También eres capaz de hacer un ataque adicional al turno con tu arma secundaria.
+
+## Filos perforantes
+
+### Rango I
+
+<u>Desviar ataques:</u> Tu arma secundaria puede desviar ataques que traspasen tus defensas. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener (el penalizador de tu arma secundaria continuará aplicándose). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
+
+<u>Combate furtivo:</u> Tienes ventaja en tus tiros de ataque contra enemigos heridos por tu arma principal y añadirás tu estadística de destreza al daño. No recibirás ningún beneficio de esta habilidad si eres desarmado de tu arma principal o tu objetivo tiene la habilidad *esquiva asombrosa superior*.
+
+### Rango II
+
+<u>Atrapar arma:</u> Usando tus dos armas puedes trabar espadas más grandes que la tuya. Esta habilidad te permite emplear tu ataque principal y secundario para atrapar el arma de tu contrincante, provocándole el efecto de *espadas trabadas*. Si has atrapado el arma de tu enemigo no lo podrás fintar salvo que tengas la habilidad *finta superior*.
+
+<u>Ataques apuntados:</u> Reduce todos los penalizadores por apuntar a una parte específica del cuerpo de tu enemigo o realizar un ataque preciso por un dado de desventaja. Tu arma secundaria puede usarse también para realizar maniobras de finta o desarme.
+
+### Rango III
+
+<u>Cuchillada</u>: Eres capaz de atacar una vez adicional por ronda empleando tu arma secundaria. Adicionalmente, como acción estándar puedes realizar un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad emplearás uno de tus ataques con tu arma secundaria para incrementar tu daño por un valor igual a su daño base de esta y aumentas el nivel de todas las heridas permanentes infligidas por un paso. 
+
