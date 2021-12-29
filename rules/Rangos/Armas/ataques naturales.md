@@ -11,7 +11,7 @@ A diferencia de otros maestros de armas tu te has decantado por utilizar tu prop
 
 Añade tu rango a todos tus tiros de ataque hechos con ataques naturales. Aumenta tu daño base a 1d4 + FUE.
 
-<u>Secuencia de ataques:</u> Realizar ataques naturales y maniobras de combate ahora te cuestan una acción de movimiento en lugar de una estándar. A rango III puedes hacer un ataque natural o maniobra de combate una vez por ronda como acción bonus. Tu prioridad también aumenta por 1, y volverá a aumentar cuando alcances rango III y V. 
+<u>Secuencia de ataques:</u> Realizar ataques naturales y maniobras de combate ahora te cuestan una acción de movimiento en lugar de una estándar. Cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1. A rango III puedes hacer un ataque natural o maniobra de combate una vez por ronda como acción bonus. 
 
 <u>Defensa marcial:</u> Eres capaz de emplear tus habilidades de artes marciales para protegerte de ataques enemigos, incluyendo aquellos hechos con armas. Esta habilidad funciona de la misma manera que una parada, pero si intentas defenderte de un arma cortante o una con espinas sufrirás de inmediato el efecto de estado sangrado.
 
