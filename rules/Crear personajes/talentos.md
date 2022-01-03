@@ -56,7 +56,7 @@ Tienes soltura en tiros para trastear cerraduras, hurtar pertenencias ajenas o h
 
 ### Primeros auxilios (SAB)
 
-Conoces instintivamente como estabilizar a una persona herida, recibiendo soltura en todos los tiros para sanar a otras personas. Como acción estándar puedes hacer un tiro de primeros auxilios para estabilizar a una criatura con 0 o menos puntos de vida, enfrentándote a una dificultad escogida por el máster según la cantidad de heridas que tenga tu objetivo. Si usas Primeros auxilios en una criatura que ya esté estabilizada puedes eliminar los efectos de Sangrado y le curas PV igual a tu nivel de talento si tienes éxito. Si utilizas esta habilidad durante un descanso. La cantidad de veces que puedas utilizar primeros auxilios queda limitada por los materiales de curación que poseas, lo cual queda especificado en el capítulo 4.
+Conoces instintivamente como estabilizar a una persona herida, recibiendo soltura en todos los tiros para sanar a otras personas. Como acción estándar puedes hacer un tiro de primeros auxilios para estabilizar a una criatura con 0 o menos puntos de vida, enfrentándote a una dificultad escogida por el máster según la cantidad de heridas que tenga tu objetivo. Si usas Primeros auxilios en una criatura que ya esté estabilizada puedes eliminar los efectos de Sangrado y le curas PV igual a tu nivel de talento si tienes éxito. Si utilizas esta habilidad durante un descanso. La cantidad de veces que puedas utilizar primeros auxilios queda limitada por los materiales de curación que poseas.
 
 ### Percepción (SAB)
 
