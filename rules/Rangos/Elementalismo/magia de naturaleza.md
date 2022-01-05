@@ -27,6 +27,8 @@ Añade tu rango a todos tus tiros relacionados con magia de naturaleza.
 
 Aumenta tu probabilidad de crítico a 19-20.
 
+
+
 <u>Revertir crecimiento:</u> Eres capaz de revertir el crecimiento de las plantas para mantener el equilibrio natural. Como acción estándar puedes reducir el tamaño de las plantas en un radio de 5 x rango pies, eliminando el terreno difícil que estas formen. Esta habilidad puede emplearse también para eliminar un efecto de *muro de zarzas*, *animar plantas* o *Enmarañar*, necesitando en este caso que tengas éxito en un tiro de magia de naturaleza contrael tiro de magia de naturaleza que tenga el creador de dicho efecto (esto puedes conseguirlo de manera automática si reduces tu reserva elemental por 1 y el creador del efecto tiene rango inferior o igual al tuyo). Usar esta habilidad cuesta una acción de movimiento a rango V.
 
 ## Rango IV
