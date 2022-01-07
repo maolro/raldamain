@@ -15,7 +15,7 @@ Añade tu rango a todos tus tiros relacionados con magia espacial. Tu reserva au
 
 ## Rango II
 
-<u>Puerta dimensional:</u> Emplea un chi de tu reserva para crear un portal espacial de tamaño 5 pies. Esta puerta conecta el lugar donde la creas con otro lugar visible a máximo 90 pies de distancia. La puerta, como el portal menor, solo permanece activa durante un turno y seguir manteniéndola te cuesta un chi de tu reserva. Una puerta dimensiona cuenta como portal menor para los propósitos de determinar cuántos portales puedes mantener abiertos.
+<u>Puerta dimensional:</u> Emplea un chi de tu reserva para crear un portal espacial de tamaño 5 pies como acción estánda. Esta puerta conecta el lugar donde la creas con otro lugar visible a máximo 90 pies de distancia. La puerta, como el portal menor, solo permanece activa durante un turno y seguir manteniéndola te cuesta un chi de tu reserva. Una puerta dimensiona cuenta como portal menor para los propósitos de determinar cuántos portales puedes mantener abiertos.
 
 <u>Ancla dimensional:</u> Como acción estándar haz un tiro de ataque de magia espacial contra un objetivo. Si impactas este no podrá usar habilidades de magia espacial durante un número de turnos igual a tu rango + 1 ni pasar por un portal. Puedes gastar 1 chi adicional con este ataque para cerrar un portal que se encuentre a 10 pies de la zona de impacto (esta habilidad es gratuita si obtienes golpe crítico). El objetivo no puede protegerse de Ancla dimensional usando Salto dimensional. Ancla dimensional también puede usarse para cerrar todos los portales en un radio de 5 pies, para lo cual no necesitas hacer un tiro de ataque. Esta habilidad consume 1 chi de tu reserva.
 

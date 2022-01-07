@@ -46,7 +46,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Explosión solar:</u> Como acción de turno completo puedes liberar la energía vital en una devastadora explosión empleando seis ataques almacenados. Este ataque afectará a todas las criaturas enemigas que se encuentren a 3pies de ti e infligirá 2d6 + SAB daño radiante y [cegará](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#cegada) a todas las criaturas que logre impactar. Adicionalmente, todas las criaturas aliadas se sanarán como si les afectases con [primeros auxilios](https://raldamain.com/rules/Crear%20personajes/talentos.html#primeros-auxilios-sab).
+<u>Explosión solar:</u> Como acción de turno completo puedes liberar la energía vital en una devastadora explosión empleando seis ataques almacenados. Este ataque afectará a todas las criaturas enemigas que se encuentren a 30 pies de ti e infligirá 2d6 + SAB daño radiante y [cegará](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#cegada) a todas las criaturas que logre impactar. Adicionalmente, todas las criaturas aliadas se sanarán como si les afectases con [primeros auxilios](https://raldamain.com/rules/Crear%20personajes/talentos.html#primeros-auxilios-sab).
 
 <u>Sanador supremo:</u> Tu poder sanador ha alcanzado su máximo esplendor, permitiéndote desafiar a la muerte misma. Aumenta el número de PV y Vitalidad que sanas por 1d4, y una vez por día puedes realizar un milagro de sanación. Con un milagro de sanación puedes restaurar un órgano o miembro perdido, resucitar a una criatura que haya muerto hace menos de un día a 1 PV  o eliminar una enfermedad, maldición o veneno.
 

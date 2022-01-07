@@ -9,7 +9,7 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 Añade tu rango a todos tus tiros relacionados con magia ilusoria. Tu reserva aumenta por 2+Rango chi. Puedes emplear tu estadística de INT para tiros de persuasión, engaño e intimidación.
 
-<u>Crear ilusión:</u> Como acción estándar crea una ilusión que ocupe un cubo de 10 pies de tamaño. Una ilusión es la imagen de un objeto, persona o fuerza, la cual existe mientras mantengas la concentración y a primera vista se asemeja a la versión real de esta. La ilusión es desmentida si una criatura interactúa con ella o tiene éxito en un tiro de Percepción contra tu Magia Ilusoria. Puedes tener activas un número de ilusiones igual a tu Rango + 1, y puedes concentrarte en estas ilusiones adicionales si gastas 1 chi para crearlas. A Rango III tus ilusiones tienen efectos sonoros y termales. 
+<u>Crear ilusión:</u> Como acción de movimiento crea una ilusión que ocupe un cubo de 10 pies de tamaño. Una ilusión es la imagen de un objeto, persona o fuerza, la cual existe mientras mantengas la concentración y a primera vista se asemeja a la versión real de esta. La ilusión es desmentida si una criatura interactúa con ella o tiene éxito en un tiro de Percepción contra tu Magia Ilusoria. Puedes tener activas un número de ilusiones igual a tu Rango + 1 y cada ronda que mantengas activa una ilusión reduce tu reserva de chi por 1. A Rango III tus ilusiones tienen efectos sonoros y termales. 
 
 Si tienes rangos en Magia mental puedes hacer que tus ilusiones sean sólo percibidas por una criatura de tu elección, las cuales funcionarán como un efecto mental pero no podrán ser desmentidas por contacto.
 
