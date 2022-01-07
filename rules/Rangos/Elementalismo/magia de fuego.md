@@ -48,6 +48,6 @@ En el caso que gastes un ataque almacenado el tiro de ataque y el daño de dicho
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Lluvia de brasas:</u> Como acción de turno puedes formar una tormenta de ardientes brasas empleando seis ataques almacenados. Este ataque llenará hasta 6 espacios de 10 pies cúbicos e infligirá 2d6 + CAR daño de fuego y una quemadura media a todas las criaturas que logre impactar. Adicionalmente, todos los espacios que impactes quedarán afectados por un muro de llamas hasta tu siguiente turno.
+<u>Lluvia de brasas:</u> Como acción de turno puedes formar una tormenta de ardientes brasas empleando seis ataques almacenados. Este ataque llenará hasta 6 espacios de 10 pies cúbicos e infligirá 3d6 + CAR daño de fuego y una quemadura media a todas las criaturas que logre impactar. Adicionalmente, todos los espacios que impactes quedarán afectados por un muro de llamas hasta tu siguiente turno.
 
 <u>Fuego puro:</u> Tus ataques de fuego son capaces de atravesar las resistencias de tus objetivos y todas las quemaduras infligidas incrementarán su severidad por un paso (esto no afecta a lluvia de brasas). Criaturas con resistencia al fuego continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas.

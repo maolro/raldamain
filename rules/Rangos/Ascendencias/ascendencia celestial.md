@@ -43,7 +43,7 @@ Incrementa tu SAB por 1.
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-<u>Aura de vida:</u> Al activar tu aura de luz, todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si se encuentran al máximo de vitalidad, entonces recuperarán PV (tú estás incluido). Todas las criaturas enemigas de la fe sufrirán 2 daño radiante cada ronda que permanezcan en el aura.
+<u>Aura de vida:</u> Al activar tu aura de luz todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si se encuentran al máximo de vitalidad, entonces recuperarán PV (tú estás incluido). Todas las criaturas enemigas de la fe sufrirán 2 daño radiante cada ronda que permanezcan en el aura.
 
 <u>Ver la verdad:</u> Tienes visión verdadera en un área de 80 pies, permitiéndote ver a través de [ilusiones](https://raldamain.com/rules/Rangos/Magia arcana/magia ilusoria.html) y detectar criaturas invisibles. Obtienes resistencia igual a tu rango contra [efectos fantasmales](https://raldamain.com/rules/Rangos/Magia arcana/magia ilusoria.html#rango-i).
 

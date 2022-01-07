@@ -18,17 +18,15 @@
 
 <u>Abrazo de la arena:</u> Al impactar con un ataque elemental puedes hacer una maniobra de agarre en lugar de hacer daño. Un objetivo agarrado de esta manera puede ser movido hasta 15 pies en cualquier dirección como acción de movimiento y no podrá escapar salvo que tenga éxito en un tiro de destrozar contra tu ataque elemental. Si agarras una parte específica del cuerpo de tu objetivo sufrirá los mismos efectos que la habilidad enredo y no puedes agarrar simultáneamente a más criaturas que tu rango de magia elemental – 2. 
 
-<u>Arenas protectoras:</u> Si te encuentras en posición defensiva puedes solidificar las arenas que te protegen como reacción para formar una sólida cúpula que te protege de ataques enemigo, consumiendo así tres de tus ataques almacenados. La cúlpula tiene 15 vida y 5 defensa y mientras permanezca activa te otorga inmunidad a ataques a distancia que no sean de área y recibirá todo el daño que iría a por ti. 
+<u>Arenas protectoras:</u> Si te encuentras en posición defensiva puedes solidificar las arenas que te protegen como reacción para formar una sólida cúpula que te protege de ataques enemigos, consumiendo así tres de tus ataques almacenados. La cúlpula tiene 15 vida y 5 defensa y mientras permanezca activa te otorga inmunidad a ataques a distancia que no sean de área y recibirá todo el daño que iría a por ti. Puedes también emplear un ataque almacenado o reducir tu reserva elemental por 1 para hacer un ataque de oportunidad contra una criatura que falle su ataque si te encuentras en posición defensiva.
 
 ## Rango IV
 
 <u>Remolino de arena:</u> Como acción de turno completo que reduce tu reserva elemental por 2 puedes formar un fuerte torbellino de arnea de 30 pies de radio y 90 pies de altura. Todas las criaturas en su área deben tirar heroísmo contra tu magia elemental o sufren 1d6 + CAR daño contundente, quedan cegadas durante una ronda y son arrastradas al interior del torbellino. Cada criatura en el interior del torbellino está agarrada y sufrirá 2 daño no letal al final de la ronda. El torbellino se mantendrá durante 5 rondas o hasta que pierdas la concentración, y cuando este se desvanezca las criaturas empezarán a caer de inmediato.
 
-<u>Tumba de arena:</u> 
+<u>Tumba de arena:</u> Empleando una acción de movimiento puedes comprimir las arenas que rondean a una criatura agarrada para aplastar su cuerpo. Tu objetivo sufre 2d6 + CAR daño contundente que ignora la defensa otorgada por armaduras y sufre una herida permanente leve en una parte aleatoria del cuerpo. 
 
 ## Rango V
 
-<u>Tormenta de arena:</u>
-
-<u>Desierto de la muerte</u>: Empleando una acción de turno completo que consume 3
+<u>Tormenta de arena:</u> Como acción de turno completo que reduce tu reserva elemental por 3 puedes invocar una tormenta de arena que arrasará con todo aquello en tus proximidades. La tormenta de arena provocará 2d10 + CAR daño contundente y cegará durante una ronda a todas las criaturas en un área de 100 pies y convertirá todo el entorno en terreno difícil, destruyendo todas las estructuras débiles y matando a todas las plantas pequeñas. La tormenta de arena permanecerá durante las siguientes cuatro rondas, haciendo 2 daño no-letal a todas las criaturas en el área sin protección y otorgando ocultamiento a todas las criaturas en el área.
 
