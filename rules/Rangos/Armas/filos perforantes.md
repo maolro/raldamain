@@ -11,13 +11,13 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 
 Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo perforante.
 
-<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Al impactar a un enemigo incapaz de defenderse o flanqueado por un aliado añade tu estadística de destreza al daño infligido. Adicionalmente, antes de atacar puedes apuntar a una parte vulnerable del cuerpo de tu objetivo, tomando un penalizador de un dado de desventaja a tu ataque para ignorar 2 puntos de defensa de tu objetivo (4 si impactas a los brazos, piernas o cabeza). Al atacar a un enemigo incapaz de defender. Si logras reducir la defensa de tu objetivo a 0 con esta habilidad infligirás una herida permanente leve al impactar. A rango III puedes emplear esta habilidad dos veces por ataque y a rango V la podrás emplear tres veces. Puedes también emplear una acción de movimiento para mejorar tu puntería con un ataque preciso, reduciendo así el penalizador por un dado de desventaja.
+<u>Ataque furtivo:</u> Tus ataques apuntan a las debilidades del enemigo. Al impactar a un enemigo incapaz de defenderse o flanqueado por un aliado añade tu estadística de destreza al daño infligido. Puedes emplear una acción de movimiento para apuntar un ataque contra un objetivo, recibiendo así un dado de ventaja en tu tiro de ataque en tu tiro de ataque y añadiendo tu estadística de destreza al daño como si fuera un ataque furtivo. Solo puedes apuntar una vez para cada ataque (dos veces a rango II y tres veces a rango III). Si has apuntado un ataque contra un objetivo incapaz de defenderse aumenta el nivel de todas las heridas permanentes provocadas por un paso.
 
 ## Rango II
 
 <u>Ataque rápido:</u> Eres capaz de realizar ataques con gran celeridad. Emplear tu arma para hacer un ataque te cuesta una acción de movimiento en lugar de una estándar. 
 
-<u>Finta:</u> En lugar de atacar puedes engañar a tu adversario con un ataque fintado, dejándolos en un estado vulnerable contra futuros ataques. Fintar a un enemigo te cuesta una acción de movimiento y para ello tu enemigo empleará averiguar intenciones para defenderse de tu ataque. Si tienes éxito tu enemigo será incapaz de defenderse contra el siguiente ataque hecho por ti o un aliado. Una criatura fintada se recuperará de este efecto cuando llegue su turno y no podrás fintar a la misma persona más de una vez . No puedes emplear ataque preciso ni apuntar a a una parte específica del cuerpo de tu adversario salvo que reduzcas el penalizador por apuntar a 0.
+<u>Finta:</u> En lugar de atacar puedes engañar a tu adversario con un ataque fintado, dejándolo en un estado vulnerable contra futuros ataques. Fintar a un enemigo te cuesta una acción de movimiento y para ello tu enemigo empleará averiguar intenciones para defenderse de tu ataque. Si tienes éxito tu enemigo será incapaz de defenderse contra el siguiente ataque hecho por ti o un aliado. Una criatura fintada se recuperará de este efecto cuando llegue su turno y no podrás fintar a la misma persona más de una vez. No puedes apuntar a una parte específica del cuerpo de tu adversario salvo que hayas reducido el penalizador por apuntar a 0.
 
 ## Rango III 
 
@@ -37,7 +37,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Ataque vital:</u> Al impactar a un enemigo cuya defensa haya sido reducida a 0 con ataque preciso multiplica todo el daño infligido por 2. Si recibes los modificadores de ataque furtivo infligirás además una herida permanente grave al impactar y en el caso que lo reduzcas a 0 PV morirá instantáneamente.
+<u>Ataque vital:</u> Al impactar a un enemigo con un ataque apuntado aumenta el daño base por 1d6 por cada dado de ventaja que tengas en el tiro de ataque por apuntar. Incrementa el nivel de todas las heridas permanentes provocadas por un paso adicional al realizar un ataque apuntado contra un enemigo incapaz de defenderse y si logras reducir sus PV a 0 este morirá instantáneamente (solo le protegerá la habilidad *resistir la muerte*).
 
 <u>Contrataque</u>: Una vez por ronda cuando exitosamente logres detener el ataque de un enemigo con parada puedes hacer un ataque contra él como reacción. No podrás emplear contrataque en un contrataque.
 

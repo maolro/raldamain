@@ -11,7 +11,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 <u>Relámpago</u>: Como acción estándar ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 1d6 + rango daño eléctrico al impactar. Si logras provocar daño a los PV con este ataque tu objetivo quedará ralentizado durante una ronda (aturdido si provocas un golpe crítico). Obtienes ventaja atacando a criaturas que lleven armadura o escudo metálicos y en el caso que te encuentres en un lugar afectado por una tormenta puedes hacer que un rayo caiga sobre un objetivo en un lugar a 60 pies de ti como acción estándar.
 
-<u>Onda trueno:</u> Como acción estándar puedes provocar una atronadora onda afectando un radio de 15 pies. Esta onda hace 1d6 + rangdaño trueno y si provocas daño a los PV tu objetivo quedará ensordecido durante una ronda (aturdido si provocas un golpe crítico). Una onda trueno es también capaz de todos los objetos de cristal u otros materiales frágiles en el área de efecto.
+<u>Onda trueno:</u> Como acción estándar puedes provocar una atronadora onda afectando un radio de 15 pies. Esta onda hace 1d6 + rango daño trueno y si provocas daño a los PV tu objetivo quedará ensordecido durante una ronda (aturdido si provocas un golpe crítico). Una onda trueno es también capaz de todos los objetos de cristal u otros materiales frágiles en el área de efecto.
 
 <u>Reserva de energía:</u> Puedes elegir sufrir 2 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque elemental adicional, incrementar el radio de onda trueno por 15 pies o causar que relámpago tenga un área de salpicadura de 5 pies. Esta habilidad solo puede usarse una vez al turno.
 
@@ -32,7 +32,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 - **Torso:** Tu objetivo queda fatigado durante el resto de la ronda. 
 - **Cabeza:** Tu objetivo queda aturdido durante una ronda.
 
-<u>Onda destructora:</u> Puedes contener la energía del trueno para liberarla después en una destructiva onda. En lugar de atacar puedes almacenar la energía de una onda trueno, recibiendo un punto de energía llegando a un máximo igual a tu rango + 1. Al hacer un ataque puedes gastar un número de puntos de energía para incrementar su fuerza, aumentando así el área de efecto por 5 pies y el daño por 1 un número de veces igual al total de puntos empleados. Si gastas 3 o más cargas la onda resultante destruirá todas las estructuras frágiles en el área mientras que si gastas 5 o más cargas podrás destruir estructuras más sólidas como muros de piedra o hielo.
+<u>Onda destructora:</u> Puedes contener la energía del trueno para liberarla después en una destructiva onda. En lugar de atacar puedes almacenar la energía de una onda trueno, recibiendo un punto de energía llegando a un máximo igual a tu rango + 1. Al hacer un ataque puedes gastar un número de puntos de energía para incrementar su fuerza, aumentando así el área de efecto por 5 pies y el daño por 1 un número de veces igual al total de puntos empleados. Si gastas 3 o más cargas la onda resultante destruirá todas las estructuras frágiles en el área mientras que si gastas 5 o más cargas podrás destruir estructuras más sólidas como muros de piedra o hielo y convertir todo el área e.
 
 ## Rango IV
 

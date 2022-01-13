@@ -17,7 +17,7 @@ Obtienes Resistencia 2 a daño físico. Desbloqueas los rangos de nigromancia, p
 
 Incrementa tu DES por 1.
 
-<u>Crear oscuridad:</u> Puedes apagar todas las luces en un espacio de 30 pies como acción estándar, reduciendo la luminosidad de dicho espacio por un paso. Si el área ya está a oscuras, este se llenará de una nube de oscuridad mágica. Todos tus ataques contarán como ataque sorpresa contra criaturas incapaces de ver en la oscuridad y recibes los efectos de ocultamiento superior. Esta habilidad puede usarse un número de veces al día igual a tu rango de ascendencia +1.
+<u>Crear oscuridad:</u> Puedes apagar todas las luces en un espacio de 5 x rango pies de radio a un máximo de 60 pies de distancia como acción estándar, reduciendo la luminosidad de dicho espacio por un paso. Si el área ya está a oscuras este se llenará de una nube de oscuridad mágica. Todos tus ataques contarán como ataque sorpresa contra criaturas incapaces de ver en la oscuridad y recibes los efectos de ocultamiento superior. Esta habilidad puede usarse un número de veces al día igual a tu rango de ascendencia +1.
 
 <u>Aliado sombrío:</u> Puedes tener una Sombra como tu familiar, la cual te servirá con absoluta lealtad. Esa Sombra no puede manifestarse si hay luz brillante y no puede estar a una distancia de ti mayor de 60 pies. Una sombra se trata una criatura con nivel igual a tu rango de ascendencia x 2 y la mejora Ascendencia sombría.
 
@@ -27,7 +27,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 <u>Regeneración sombría:</u> Al empezar tu turno en un área que se encuentre a oscuras recuperas 1 Vitalidad. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta influencia sombría te recuperas todos tus PV como si realizases un descanso largo. Cuando alcances rango V cada ronda que permanezcas en un área infundido con tu elemento podrás sanarte 2 Vitalidad o 1 PV.
 
-<u>Salto sombrío:</u> Eres capaz de crear pequeños portales al mundo de las sombras que te permiten viajar distancias cortas en un instante. Como acción estándar empleable un número de veces por combate igual a tu rango de ascendencia. puedes abrir un portal que conecte tu posición con otro lugar que se encuentre a 90 pies de distancia. El portal permanecerá en el mundo mientras te concentres en este y las superficies que conecta deben estar a oscuras. Salto sombrío puede emplearse también para viajar al plano de las sombras, aunque para este uso debes realizar un ritual de una hora de duración. Utilizar salto sombrío te costará una acción de movimiento a rango VI.
+<u>Salto sombrío:</u> Eres capaz de crear pequeños portales al mundo de las sombras que te permiten viajar distancias cortas en un instante. Como acción estándar empleable un número de veces por combate igual a tu rango de ascendencia. puedes abrir un portal que conecte tu posición con otro lugar que se encuentre a 90 pies de distancia. El portal permanecerá en el mundo mientras te concentres en este y las superficies que conecta deben estar a oscuras. Salto sombrío puede emplearse también para viajar al plano de las sombras, aunque para este uso debes realizar un ritual de una hora de duración. Utilizar salto sombrío te costará una acción de movimiento a rango V.
 
 ## Rango IV
 
