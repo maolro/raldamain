@@ -11,9 +11,9 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 Añade tu rango a todos tus tiros hechos con armas a distancia.
 
-<u>Puntería mortal:</u> Eres capaz de apuntar a los puntos débiles de tu objetivo para ignorar su armadura. Esta habilidad te permite emplear una acción de movimiento para que tu siguiente ataque ignore 2 puntos de defensa que tenga tu objetivo. En lugar de gastar una acción de movimiento una vez por ataque puedes tomar un penalizador -2 en un ataque para ignorar 2 puntos adicionales de la defensa de tu objetivo. Esta habilidad puede emplearse dos veces por ataque a rango III y tres veces por ataque a rango V. Si atacas a un enemigo incapaz de defenderse podrás ignorar la defensa de tu objetivo sin la necesidad de tomar un penalizador.
+<u>Puntería mortal:</u> Eres capaz de apuntar a los puntos débiles de tu objetivo para ignorar su armadura. Una vez por ataque puedes recibir un penalizador de un dado de desventaja a un tiro de ataque para incrementar el daño base que inflijas por 1d6 (esto puede usarse dos veces por ataque a rango III y tres veces por ataque a rango V). Al atacar a enemigos incapaces de defenderse puedes recibir el daño adicional de puntería mortal solo si no tienes ningún dado de desventaja en tu tiro de ataque (es decir, has anulado todos los penalizadores apuntando).
 
-<u>Ataque furtivo:</u> Tus ataques son particularmente efectivos contra enemigos incapaces de defenderse. Añade tu estadística de destreza a todos los ataques que hagas contra criaturas sorprendidas o flanqueadas por tus aliados. Esta habilidad no funcionará contra enemigos a más de 30 pies de ti salvo que tomes un penalizador -2 por cada 15 pies adicionales de distancia.
+<u>Ataque apuntado:</u> Puedes emplear una acción de movimiento apuntar a tu objetivo, recibiendo así un dado de ventaja en tu siguiente ataque hecho con un arma a distancia que durará hasta el principio de tu siguiente turno. Al impactar con un ataque apuntado añade tu estadística de destreza al daño provocado.
 
 ## Rango II
 
@@ -29,23 +29,23 @@ Añade tu rango a todos tus tiros hechos con armas a distancia.
 
 Aumenta tu probabilidad de crítico a 19-20.
 
-<u>Disparo preciso:</u> Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las desventajas que estos otorgarán. Disparo preciso sólo funciona contra objetivos en tu radio de puntería mortal y que no estén en ocultamiento o cubierta completa.
+<u>Disparo preciso:</u> Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las ventajas que estos les otorgarán. Esta habilidad solo se aplica contra enemigos que no estén en ocultamiento o cubierta completa y se encuentren a menos de 30 pies de ti (puedes añadir un dado de desventaja a tu tiro de ataque para aumentar esta distancia por 30 pies adicionales).
 
-<u>Ojo de francotirador:</u> Tu perfecta puntería te permite disparar a enemigos mucho más lejanos. Reduce todas las penalizaciones por disparar a distancia por 2, incluyendo aquellas para emplear ataque furtivo. 
+<u>Ojo de francotirador:</u> Tu perfecta puntería te permite disparar a enemigos mucho más lejanos. Aumenta tu alcance base y máximo por 30 pies, reduciendo así las penalizaciones por disparar a distancias superiores por un dado de desventaja (vuelve a aumentar tu alcance de esta misma manera cuando alcances el rango V). Añade también tu rango en armas a distancia a todos tus tiros de percepción.
 
 ## Rango IV
 
-<u>Disparo en movimiento</u>: Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones al disparar montado o en un vehículo en movimiento.
+<u>Disparo en movimiento</u>: Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones por disparar desde una montura o vehículo en movimiento y cada vez que esquives exitosamente un ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto se acumula con el atributo *evasión*).
 
-<u>Arquero ágil:</u> Una vez por turno puedes realizar un ataque adicional como acción bonus. También eres capaz de producir fuego de cobertura para tus aliados, permitiéndote añadir tu rango con arma a distancia al tiro defensivo de un aliado a 60 pies de ti. Esta habilidad solo puede emplearse así si te encuentras en posición defensiva.
+<u>Arquero ágil:</u> Una vez por turno puedes realizar un ataque adicional a distancia como acción bonus. También eres capaz de disparar flechas para interceptar ataques hechos a tus aliados, permitiéndote añadir tu rango con arma a distancia al tiro defensivo de un aliado a 60 pies de ti. Solo podrás proteger a tus aliados de esta manera si te encuentras en posición defensiva.
 
 ## Rango V
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Impacto vital</u>: Al impactar a un enemigo cuya defensa hayas reducido a 0 con puntería mortal multiplica todo el daño infligido por 2. Si recibes los modificadores de ataque furtivo infligirás además una herida permanente grave al impactar y en el caso que lo reduzcas a 0 PV morirá instantáneamente.
+<u>Impacto vital</u>: Eres capaz de matar a un enemigo de un único flechazo. Al impactar a un objetivo con un ataque afectado por *puntería mortal* aumenta el nivel de las heridas permanentes provocadas por un paso una cantidad de veces igual al número de d6 que hayas añadido al daño base.
 
-<u>Puntería experta</u>: Tus ataques son capaces de impactar en el punto débil del objetivo. Al emplear una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica en su tiro defensivo. Esta habilidad no puede emplearse contra enemigos en posición defensiva.
+<u>Puntería experta</u>: Al apuntar a un enemigo eres capaz de sobrepasar sus mismas defensas. Si atacas a un enemigo que intenta detener el ataque en lugar de esquivarlo y tienes ventaja en tu tiro le impactarás de manera automática sin importar su resultado en el tiro defensivo. Esta habilidad no funciona contra enemigos que se encuentren en posición defensiva.
 
 ## Armas
 
