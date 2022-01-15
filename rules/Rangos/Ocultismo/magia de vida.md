@@ -35,7 +35,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Telaraña de vida:</u> Todos los seres vivos se encuentran conectados por una vasta telaraña de energía vital que ahora tú eres capaz de manipular. Como acción estándar puedes incrementar el flujo de energía vital desde ti hacia cualquier cantidad de criaturas que se encuentren a 30 pies de ti, causando así que estas se sanen 2 Vitalidad al principio de su turno (1 PV si se encuentran al máximo de Vitalidad). Adicionalmente las criaturas en dicha aura se vuelven más difíciles de matar, causando que permanezcan conscientes a 0 PV y solo puedan morir definitivamente cuando sus PV sean reducidos a un valor igual a su CON negativa. El efecto de Telaraña de vida se perderá si tú caes inconsciente.
 
-<u>Moldear la luz:</u> Empleando la energía almancenada que posees puedes moldear tus ataques luminosos para que estos cobren una variedad de formas diferentes. Esta habilidad requiere el gasto de un punto de energía y con ella puedes alterar un ataque de una las siguientes maneras:
+<u>Moldear la luz:</u> Empleando la energía almacenada que posees puedes moldear tus ataques luminosos para que estos cobren una variedad de formas diferentes. Esta habilidad requiere el gasto de un punto de energía y con ella puedes alterar un ataque de una las siguientes maneras:
 
 - **Lluvia de flechas**: Aumenta tu radio de saplicadura por 10 pies.
 - **Látigo:** Ataca a todas las criaturas en una línea de 30 pies.
