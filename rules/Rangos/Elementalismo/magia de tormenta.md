@@ -32,7 +32,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 - **Torso:** Tu objetivo queda fatigado durante el resto de la ronda. 
 - **Cabeza:** Tu objetivo queda aturdido durante una ronda.
 
-<u>Onda destructora:</u> Puedes contener la energía del trueno para liberarla después en una destructiva onda. En lugar de atacar puedes almacenar la energía de una onda trueno, recibiendo un punto de energía llegando a un máximo igual a tu rango + 1. Al hacer un ataque puedes gastar un número de puntos de energía para incrementar su fuerza, aumentando así el área de efecto por 5 pies y el daño por 1 un número de veces igual al total de puntos empleados. Si gastas 3 o más cargas la onda resultante destruirá todas las estructuras frágiles en el área mientras que si gastas 5 o más cargas podrás destruir estructuras más sólidas como muros de piedra o hielo y convertir todo el área e.
+<u>Onda destructora:</u> Puedes contener la energía del trueno para liberarla después en una destructiva onda. En lugar de atacar puedes almacenar la energía de una onda trueno, recibiendo un punto de energía llegando a un máximo igual a tu rango + 1. Al hacer un ataque puedes gastar un número de puntos de energía para incrementar su fuerza, aumentando así el área de efecto por 5 pies y el daño por 1 un número de veces igual al total de puntos empleados. Si gastas 3 o más cargas la onda resultante destruirá todas las estructuras frágiles en el área mientras que si gastas 5 o más cargas podrás destruir estructuras más sólidas como muros de piedra o hielo y convertir todo el área en terreno difícil.
 
 ## Rango IV
 
