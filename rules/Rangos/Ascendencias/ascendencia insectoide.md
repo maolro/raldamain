@@ -41,11 +41,11 @@ Puedes escoger habilidades distintas a esta dependiendo de tu forma entotrópica
 
 Incrementa tu CAR por 1.
 
-<u>Invocar marabunta:</u> Como acción estándar puedes llamar a una furiosa marabunta de insectos a atacar a tus enemigos. Esta habilidad te permite invocar a un número de marabuntas de insectos con tamaño de 10 pies cúbicos igual a tu rango - 1, las cuales aparecerán a 60 pies de ti.
+<u>Invocar marabunta:</u> Como acción estándar puedes llamar a una furiosa marabunta de insectos a atacar a tus enemigos. Esta habilidad te permite invocar a un número de marabuntas de insectos con tamaño máximo de 10 pies cúbicos igual a tu rango - 1, las cuales aparecerán a 60 pies de ti. No puedes controlar un número de insectos superior a tu rango + 2 y cada marabunta de 10 pies cuenta como un insecto individual.
 
 Una marabunta se mueve a una velocidad de 30 pies al turno y sólo será dispersada si esta sufre un ataque de área (las habilidades maza oscilante y corte no se aplican para este efecto). Toda criatura que finalice la ronda en un espacio ocupado por una marabunta sufrirá 2 daño no-letal (este daño pasará a ser letal si esta no lleva armadura) y recibirá el efecto de estado náuseas durante un turno. Las marabuntas permanecerán en el campo de batalla hasta que caigas inconsciente o escojas dispersarlas.
 
-<u>Depredador imparable:</u> Tus fauces y garras aumentan su fuerza, permitiéndote perforar armaduras metálicas para devorar la deliciosa carne que se encuentra en su interior. Aumenta el daño base de tus ataques naturales por 2 y al impactar a tu objetivo podrás reducir su defensa por 1. Estas bonificaciones se acumulan con [golpe devastador](https://raldamain.com/rules/Rangos/Armas/artes%20marciales.html#rango-iv) y [ataque poderoso](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-ii). Tienes la capacidad de devorar sustancias hechas de madera u otros materiales naturales.
+<u>Depredador imparable:</u> Tus fauces y garras aumentan su fuerza, permitiéndote perforar armaduras metálicas para devorar la deliciosa carne que se encuentra en su interior. Aumenta el daño base de tus ataques naturales por 2 y al impactar a tu objetivo podrás reducir su defensa por 2. Estas bonificaciones se acumulan con [golpe devastador](https://raldamain.com/rules/Rangos/Armas/artes%20marciales.html#rango-iv) y [ataque poderoso](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-ii). Tienes la capacidad de devorar sustancias hechas de madera u otros materiales naturales.
 
 ## Rango V
 
