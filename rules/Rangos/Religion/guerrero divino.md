@@ -21,7 +21,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 ## Rango III
 
-<u>Plegaria</u>: Antes de una batalla puedes realizar una plegaria a tu dios junto con tus aliados para concederles buena fortuna en la batalla. Todos aquellos que realicen la plegaria contigo añadirán 1d6 en sus tiros de ataque y defensa durante el resto del día.
+<u>Plegaria</u>: Antes de una batalla puedes realizar una plegaria a tu dios junto con tus aliados para concederles buena fortuna en la batalla. Todos aquellos que realicen la plegaria contigo recibirán ventaja en sus tiros de ataque y defensa hasta que reciban una herida permanente o sufran un efecto de estado negativo. Un personaje no podrá volver a recibir los bonificadores de plegaria de nuevo durante el combate.
 
 <u>Guardián de la fe:</u> Como acción estándar puedes permitir que la energía divina fluya por tu cuerpo, otorgándote fuerza sobrenatural. Guardián de la fe aumentará tu FUE y CON por 1 y te da Resistencia 2 contra daño físico, la cual sólo puede ser atravesada por armas sacras. Esta habilidad te hace 1 daño no-letal cada turno que la lleves activa y desactivarla es una acción gratuita.
 
