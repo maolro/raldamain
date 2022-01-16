@@ -9,13 +9,13 @@ El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo
 
 Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
 
-<u>Premonición:</u> Tu conexión con el flujo temporal causa que recibas visiones de momentos futuros, preparándote para inminentes peligros. Tienes un número de cargas de premonición igual a 1+Rango, las cuales recuperas después de un día. Como acción bonus puedes gastar una carga de premonición para recibir ventaja a uno de tus tiros o recibir la habilidad Esquiva asombrosa durante un turno. Puedes gastar 1 chi de tu reserva para recuperar una carga de premonición (esto sólo funciona si estás en un combate).
+<u>Premonición:</u> Tu conexión con el flujo temporal causa que recibas visiones de momentos futuros, preparándote para inminentes peligros. Tienes un número de cargas de premonición igual a 1 + Rango, las cuales recuperas después de un día. Como acción bonus puedes gastar una carga de premonición para repetir un tiro de tu elección y quedarte con el mejor resutlado o recibir la habilidad esquiva asombrosa durante un turno. Puedes gastar 1 chi de tu reserva durante un combate para recuperar una carga de premonición.
 
 <u>Alteración temporal:</u> Como acción estándar puedes gastar 1 chi de tu reserva para alterar el tiempo en una burbuja de 5 pies de diámetro. Con esta habilidad puedes restaurar los objetos que estén en la burbuja a su estado anterior (arreglándolos y eliminando todos los daños) o a un estado futuro (reduciendo su eficacia por 1). No puedes afectar a seres orgánicos con esta habilidad, y a Rango III Alteración temporal te cuesta una acción de movimiento.
 
 ## Rango II
 
-<u>Desplazamiento:</u> Tu control por el tiempo te permite estar fuera de sincronía con él, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes gastar 1 chi de tu reserva como reacción para realizar un pequeño salto temporal, anulando así todo el daño y efectos del ataque. Una criatura con esta habilidad puede gastar 1 chi para evitar que puedas utilizar Desplazamiento para protegerte.
+<u>Desplazamiento:</u> Tu control por el tiempo te permite estar fuera de sincronía con él, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes gastar 1 chi de tu reserva como reacción empleable una vez por ronda para realizar un pequeño salto temporal, anulando así todo el daño y efectos del ataque. Una criatura con esta habilidad puede gastar 1 chi para evitar que puedas utilizar Desplazamiento para protegerte.
 
 <u>Acelerar:</u> Como acción estándar que consume 1 chi puedes hacer que una criatura pueda moverse y actuar con mayor velocidad. Una criatura afectada por Acelerar recibirá una acción de movimiento adicional al turno e incrementará su DES por 1 durante un número de rondas igual a tu rango + 1. Acelerar contrarresta y es contrarrestado por Alentar.
 
@@ -33,7 +33,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 Un uso excesivo de esta habilidad puede ocasionar enfermedades mentales o locura tal como decida el máster. 
 
-<u>Predecir movimiento:</u> Puedes gastar cargas de Premonición que tengas en recibir una visión de qué acción tomará un objetivo, protegiéndote contra ella o atravesando sus defensas. Predecir movimiento te permite repetir un tiro de ataque o defensa que hayas hecho y quedarte con el resultado de tu elección. Esta habilidad puede usarse también para conocer qué acciones tomarán un grupo de criaturas de tu elección. Si escoges un jugador debe responderte con sinceridad de qué hará y no podrá cambiar sus acciones salvo que él también tenga Predecir movimiento y gaste una carga de Premonición.  
+<u>Predecir movimiento:</u> Puedes gastar cargas de Premonición que tengas en recibir una visión de qué acción tomará un objetivo, protegiéndote contra ella o atravesando sus defensas. Al gastar una carga de premonición obtienes ventaja en el nuevo tiro de ataque que realices. Esta habilidad puede usarse también para conocer qué acciones tomarán un grupo de criaturas de tu elección. Si escoges un jugador debe responderte con sinceridad de qué hará y no podrá cambiar sus acciones salvo que él también tenga Predecir movimiento y gaste una carga de Premonición.  
 
 ## Rango IV  
 
@@ -47,6 +47,6 @@ Un uso excesivo de esta habilidad puede ocasionar enfermedades mentales o locura
 
 Aumenta tu probabilidad de crítico a 18-20. 
 
-<u>Visión futura:</u> Tienes un sexto sentido que te avisa de todos los peligros inminentes. No puedes ser sorprendido y recibes ventaja en todos tus tiros de ataque y defensa. Además, una vez al turno puedes repetir un tiro de tu elección y quedarte con el mejor resultado. Visión futura también te da avisos sobre peligros que afectarán a tus aliados, lo cual te permite gastar una carga de Premonición para permitir que un aliado repita un tiro de Defensa o pueda protegerse de un ataque sorpresa. Visión futura no te alertará de los efectos de glifos mágicos salvo que gastes una carga de premonición, lo cual te permitirá protegerte de los efectos de glifos durante una ronda. Visión futura se activa y desactiva como acción bonus y no pue
+<u>Visión futura:</u> Tienes un sexto sentido que te avisa de todos los peligros inminentes. No puedes ser sorprendido y recibes ventaja en todos tus tiros de ataque y defensa. Además, una vez al turno puedes repetir un tiro de tu elección y quedarte con el mejor resultado. Visión futura también te da avisos sobre peligros que afectarán a tus aliados, lo cual te permite gastar una carga de Premonición para permitir que un aliado repita un tiro de Defensa o pueda protegerse de un ataque sorpresa. Visión futura no te alertará de los efectos de glifos mágicos salvo que gastes una carga de premonición, lo cual te permitirá protegerte de los efectos de glifos durante una ronda. 
 
 <u>Parar el tiempo:</u> Como acción de turno completo que consume 3 chi puedes congelar el tiempo en una burbuja de 60 pies. Todas las criaturas en esa burbuja no podrán moverse ni tomar acciones, estando efectivamente paralizadas. Parar el tiempo durará un turno y puedes extender más su duración manteniendo la concentración. Una criatura con magia temporal podrá gastar 2 chi como reacción para moverse con normalidad en Parar el tiempo. No podrás afectar con esta habilidad a criaturas en una Zona antimágica o Aura divina. 

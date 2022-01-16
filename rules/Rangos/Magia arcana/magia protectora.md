@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Ra
 
 <u>Disrupción de chi:</u> Puedes alterar el funcionamiento de un objeto mágico o el chi de tu rival como acción estándar. Esto consume 1 chi de tu reserva y provoca que el objetivo reduzca su eficacia por 1 si es un objeto mágico o reciba un penalizador -2 en tiros de magia si es humanoide. Eliminar los efectos de Disrupción requiere emplear una acción de movimiento y gastar 1 chi de tu reserva. A rango III Disrupción afectará a toda la magia en un cono de 15 pies (radio 15 pies a Rango V).
 
-<u>Contrahechizo:</u> Como reacción puedes contrarrestar un hechizo o ataque mágico lanzado por un enemigo, realizando un tiro de magia protectora contra el tiro de magia de tu rival. Puedes emplear 1 chi de tu reserva para cancelar el hechizo automáticamente. Debes estar en posición defensiva para gastar chi de esta manera, y para que el hechizo se pueda contrarrestar este no debe superar tu rango por 2 o más ni tratarse de un hechizo que requiera concentración o un Contrahechizo. 
+<u>Contrahechizo:</u> Como reacción puedes contrarrestar un hechizo o ataque mágico lanzado por un enemigo, realizando un tiro de magia protectora contra el tiro de magia de tu rival. Si te encuentras en posición defensiva puedes gastar una cantidad de chi de tu reserva para anular un hechizo con dicho coste en chi de manera automática. El lanzador del hechizo puede evitar tu efecto gastando 2 chi adicional para poder lanzar el hechizo con normalidad, aunque aún podrás hacer un tiro de magia protectora para defendert
 
 ## Rango II
 
