@@ -44,7 +44,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Rayo divino:</u> Tus ataques eléctricos son capaces de atravesar las resistencias de tus objetivos y todos los rayos que lances desde el cielo aumentarán su daño base por 1d6. Criaturas con resistencia al daño eléctrico continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas.
+<u>Rayo divino:</u> Tus ataques eléctricos son capaces de atravesar las resistencias de tus objetivos y todos los rayos que lances desde el cielo aumentarán su daño base por 1d6. Criaturas con resistencia al daño eléctrico continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas. Un rayo divino también es capaz de herir a criaturas incorpóreas.
 
 <u>Tormenta de venganza:</u> Como acción de turno completo invoca una devastadora tormenta capaz de arrasar con todo a su alrededor. Para usar esta habilidad debe haber clima tormentoso y permanecerá activa durante seis rondas. esta tormenta te otorga los siguientes beneficios:
 

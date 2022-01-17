@@ -37,7 +37,5 @@ Añade tu rango de Reflejos a todos los tiros defensivos de esquiva
 
 <u>Oportunista</u>: Una vez al turno puedes hacer un ataque de oportunidad contra una criatura que haya sido impactada por un ataque hecho por un aliado. Este ataque se oportunidad cuenta como flanqueo para el propósito de ataque furtivo.
 
-
-
  
 
