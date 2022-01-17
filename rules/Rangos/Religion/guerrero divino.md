@@ -23,7 +23,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 <u>Plegaria</u>: Antes de una batalla puedes realizar una plegaria a tu dios junto con tus aliados para concederles buena fortuna en la batalla. Todos aquellos que realicen la plegaria contigo recibirán ventaja en sus tiros de ataque y defensa hasta que reciban una herida permanente o sufran un efecto de estado negativo. Un personaje no podrá volver a recibir los bonificadores de plegaria de nuevo durante el combate.
 
-<u>Guardián de la fe:</u> Como acción estándar puedes permitir que la energía divina fluya por tu cuerpo, otorgándote fuerza sobrenatural. Guardián de la fe aumentará tu FUE y CON por 1 y te da Resistencia 2 contra daño físico, la cual sólo puede ser atravesada por armas sacras. Esta habilidad te hace 1 daño no-letal cada turno que la lleves activa y desactivarla es una acción gratuita.
+<u>Guardián de la fe:</u> Como acción estándar puedes permitir que la energía divina fluya por tu cuerpo, otorgándote fuerza sobrenatural. Guardián de la fe aumentará tu FUE y CON por 1 y te da Resistencia 2 contra daño físico, la cual sólo puede ser atravesada por armas sacras. Esta durará una cantidad de rondas igual a tu rango + 2 y cuando alcances el rango V aumenta tres de tus estadísticas de nuevo por 1.
 
 ## Rango IV
 
@@ -33,7 +33,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 ## Rango V
 
-<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad Guardián de la fe activas un aura divina de 20 pies, la cual otorgará resistencia 4 a armas físicas y efectos mentales a todas las criaturas que se encuentren en ella. Además, toda criatura de tu fe que muera en tu aura divina podrá revivir a 1 PV una vez por combate. Aura sacra se desactiva junto a guardián de la fe y sus bonificadores se acumulan con Hueste divina.
+<u>Aura sacra:</u> Eres un santo viviente de tu fe. Cuando uses la habilidad Guardián de la fe activas un aura divina de 20 pies que otorgará resistencia 4 a armas físicas y efectos mentales a todas las criaturas que se encuentren en ella (no se acumula con guerrero de la fe). Además, toda criatura de tu fe que muera en tu aura divina podrá revivir a 1 PV una vez por combate (esto no te incluye a ti). Aura sacra se desactiva junto a guardián de la fe y sus bonificadores se acumulan con Hueste divina.
 
 <u>Intervención divina:</u> Cuando estés en un momento de mayor peligro, puedes llamar a tu dios para salvarte. Esta habilidad sólo puede usarse una vez al día y cuando estés a 3 o menos PV. Podrás escoger uno de los siguientes efectos para como Intervención divina.
 
