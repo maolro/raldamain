@@ -15,7 +15,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contunden
 
 ## Rango II
 
-<u>Concusión</u>: Al impactar con un ataque puedes forzar a tu objetivo a hacer un tiro de CON contra tu ataque, quedando aturdido durante una ronda si fracasa. Esta habilidad solo puede usarse una vez por ronda y si la empleas en un ataque poderoso tu objetivo quedará ralentizado durante una ronda, aunque tenga éxito en el tiro (criaturas con la habilidad *blindaje* son inmunes a este efecto). 
+<u>Concusión</u>: Al impactar con un ataque puedes forzar a tu objetivo a hacer un tiro de CON contra tu ataque, quedando aturdido durante una ronda si fracasa. Esta habilidad solo puede usarse una vez por ronda y si la empleas en un ataque poderoso tu objetivo quedará ralentizado durante una ronda aunque tenga éxito en el tiro (criaturas con la habilidad *blindaje* son inmunes a este efecto). 
 
 <u>Maza oscilante:</u> Puedes emplear una acción de movimiento adicional en tu ataque para atacar a todos los enemigos en un arco de 15 pies. Este ataque hace el doble de daño contra unidades y se detendrá de inmediato si uno de los enemigos atacados logra pararlo exitosamente con un escudo.
 
@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contunden
 
 Aumenta tu probabilidad de crítico a 19-20.
 
-<u>Impacto destructor:</u> Al impactar a un objetivo con un *ataque poderoso* reduce la defensa que otorgue su armadura por 2 (4 si es un golpe crítico). Esta reducción puede eliminarse reparando la armadura y si su defensa queda reducida a 2 o menos la armadura se volverá inutilizable. No podrás reducir la defensa de armaduras hechas de materiales más duros que tu arma, como puede ser la adamantina.
+<u>Impacto destructor:</u> Al impactar a un objetivo con un *ataque poderoso* reduce la defensa que otorgue su armadura por 2. Esta reducción puede eliminarse reparando la armadura y si su defensa queda reducida a 2 o menos la armadura se volverá inutilizable. No podrás reducir la defensa de armaduras hechas de materiales más duros que tu arma, como puede ser la adamantina.
 
 <u>Carga poderosa:</u> Tus ataques aumentan en potencia al realizar una carga. Al impactar a un enemigo tras una carga puedes realizar una maniobra de tropezar contra él como acción bonus. Reduce además el penalizador de *ataque poderoso* por un dado de desventaja al atacar tras una carga (redúcelo por un dado de desventaja adicional a rango V).
 

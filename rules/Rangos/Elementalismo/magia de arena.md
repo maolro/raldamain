@@ -1,3 +1,7 @@
+---
+title: Magia de arena
+---
+
 ## Rango I
 
 <u>Ataque elemental:</u> Como acción estándar puedes atacar a un enemigo con un torrente de arena. Este ataque infligirá 1d6 + CAR daño contundente al impactar y empujará CAR x 5 pies a tu objetivo en una dirección de tu elección. Si este se choca con una superficie sólida sufrirá daño de caída como si se hubiese caído de una altura igual al número de pies de movimiento que no ha podido recorrer (por ejemplo, si es empujado 30 pies y se choca tras 10 pies de empuje, sufrirá daño como si se hubiese caído 20 pies). Si la fuerza de los vientos en el área de efecto es de 3 o más tu objetivo quedará cegado durante una ronda al ser impactado (esto también se aplica si empleas un ataque almacenado con danza de arena). El daño base aumenta a 1d8 a rango III y a 1d10 a rango V.

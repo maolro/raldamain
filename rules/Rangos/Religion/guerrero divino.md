@@ -9,7 +9,7 @@ Los dioses te han bendecido para que lideres sus huestes hacia la victoria contr
 
 Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
-<u>Guerrero de la fe:</u> Estás bendito por tu dios en el campo de batalla, lo cual te otorga 1d6 en tus tiros de ataque y defensa contra enemigos de tu fe. Esta habilidad no puede ser cancelada por Eliminar magia salvo que el lanzador tenga rangos en Magia divina.
+<u>Guerrero de la fe:</u> Tu dios te otorga su fuerza para enfrentarte a cualquier adversidad y derrotar a los enemigos de tu fe. Tienes ventaja en todos los tiros 
 
 <u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de [Primeros auxilios](https://raldamain.com/rules/Crear personajes/talentos.html#primeros-auxilios-sab) para curar a un aliado este recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Una vez al día puedes reducir por un paso el nivel de una [herida permanente](https://raldamain.com/rules/Reglas principales/Heridas permanentes.html) que tenga un objetivo. Recibirás un uso adicional de esa habilidad a Rango III y a Rango V.0
 
