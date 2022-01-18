@@ -65,7 +65,7 @@ La capitana de la guardia pide a los jugadores investigar una nueva organizació
 
 **Yara** (nivel 11)
 
-**Yaishir** (nivel 20)
+**Vash** (nivel 20)
 
 **Khanor** (nivel 17)
 
