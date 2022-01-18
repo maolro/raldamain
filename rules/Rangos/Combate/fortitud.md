@@ -7,7 +7,7 @@ La resistencia de tu cuerpo es superior a la media, siendo por ello mas difícil
 
 ## Rango I
 
-Añade tu rango de Fortitud a todos tus tiros defensivos de Constitución.
+Añade tu rango de fortitud x 2 a todos tus tiros defensivos de Constitución.
 
 <u>Vitalidad mejorada:</u> No sufrirás heridas permanentes por perder PV si el daño no los reduce por debajo de la mitad de tus PV máximos e incrementas tus PV base por un valor igual a tu rango de fortitud x 2. Eres capaz de seguir consciente estando a 0 PV, permitiéndote luchar hasta en el borde de la muerte durante un número de turnos igual a tu rango + CON. No obstante, en este estado estarás Fatigado y no podrás realizar acciones de turno completo.
 
@@ -17,7 +17,7 @@ Añade tu rango de Fortitud a todos tus tiros defensivos de Constitución.
 
 <u>Resistir la muerte:</u> Una vez por combate como reacción al ser reducido a 0 PV o menos podrás revivir a 1 PV sin sufrir heridas permanentes. Esta habilidad no podrá usarse si estás exhausto, incapacitado o sufres náuseas.
 
-<u>Constitución férrea:</u> Obtienes resistencia contra [venenos](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#venenos), [enfermedades](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#enfermedades) y gases tóxicos igual a tu rango de Fortitud + 1. La resistencia otorgada por esta habilidad también funciona contra venenos y enfermedades sobrenaturales.
+<u>Constitución férrea:</u> Obtienes resistencia contra [venenos](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#venenos), [enfermedades](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#enfermedades), daño necrótico y gases tóxicos igual a tu rango de Fortitud + 1. La resistencia otorgada por esta habilidad también funciona contra venenos y enfermedades sobrenaturales.
 
 ## Rango III
 

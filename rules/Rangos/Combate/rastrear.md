@@ -7,7 +7,7 @@ Te has entrenado para ser experto en todo lo relacionado con un terreno determin
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de percepción, supervivencia,  y averiguar intenciones.
+Añade tu rango a todos tus tiros de percepción, supervivencia, y averiguar intenciones.
 
 <u>Enemigo predilecto:</u> Eres capaz de aprender las fortalezas y debilidades de tu objetivo a través de cuidadosa observación. Si empleas una acción de turno completo observando a una criatura de tu elección obtienes ventaja en todos tus tiros relacionados con ella e incrementas tu daño base por 1d6. Enemigo predilecto solo funcionará contra una única criatura y para escoger a otra deberás emplear otra acción de turno completo.
 
@@ -15,7 +15,7 @@ Añade tu rango a todos tus tiros de percepción, supervivencia,  y averiguar in
 
 ## Rango II
 
-<u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Empleando una acción de movimiento puedes encontrar una apertura en la defensa de un enemigo, reduciendo así la cantidad de dados de ventaja que tiene en tiros defensivos por 1 contra tu siguiente ataque. Cada acción adicional que gastes así volverá a reducir los dados defensivos por 1, llegando a un mínimo de 0. También puedes emplear un descanso corto en un lugar para encontrar pistas de eventos que hayan sucedido ahí hace menos de dos horas.
+<u>Rastreador experto:</u> Eres capaz de averiguar información de tu presa sólo viendo su rastro. Empleando una acción de movimiento puedes encontrar una apertura en la defensa de un enemigo, reduciendo así la cantidad de dados de ventaja que tiene en tiros defensivos por 1 contra tu siguiente ataque o eliminando un dado de desventaja que tengas en un tiro de ataque. Cada acción adicional que gastes así volverá a reducir los dados defensivos por 1 o eliminar un dado de desventaja adicional, llegando a un mínimo de 0. También puedes emplear un descanso corto en un lugar para encontrar pistas de eventos que hayan sucedido ahí hace menos de dos horas.
 
 <u>Acechar</u>: Te mueves con gran sigilo mientras rastreas. Como acción estándar puedes ocultarte de tal manera que no puedes ser visto por tiros de Percepción, contando efectivamente como si fueses invisible. Para usar esta habilidad deber estar fuera del campo de vista de criaturas enemigas. Este efecto permanecerá activo hasta que realices una acción particularmente ruidosa, y mientras estés oculto deberás moverte a la mitad de tu velocidad. Criaturas con la habilidad Rastreador experto pueden intentar localizarte empleando tiros de percepción. Acechar sólo puede usarse si estás en uno de tus terrenos predilectos.
 

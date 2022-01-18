@@ -22,8 +22,6 @@ El primer paso para formar una criatura es decidir su forma base entre las sigui
 
 <u>Aberrante:</u> La criatura tiene una forma amorfa que desafía toda ley natural. Recibe 3 PT adicionales y puede distribuir 6 puntos de estadística entre su FUE, DES y CON como desee (no puede exceder 4).
 
-Las estadísticas mentales de una criatura dependerán de su niv
-
 ## Puntos de Transformación
 
 Los puntos de transformación (PT) representan las características fisiológicas de una criatura que le garantizan la supervivencia. Con ellos un jugador o el máster pueden crear criaturas fantásticas con facilidad. 
