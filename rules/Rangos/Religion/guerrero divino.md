@@ -17,11 +17,11 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 - **Protección:** Tu dios te otorga poder para proteger un lugar, objeto o persona de cualquier amenaza que atente contra ella. Recibes ventaja en tus tiros de ataque y defensa mientras que te encuentres en el  lugar que buscas proteger o realizas acciones para proteger a la persona u objeto escogido. Perderás los beneficios de protección si te alejas de aquello que buscas proteger.
 - **Venganza:** Tu dios empodera tus sentimientos de ira y venganza, empoderándote para acabar con todos tus enemigos. Recibes ventaja en todos tus tiros de ataque y defensa hechos contra criaturas que hayan provocado daño a ti o a un ser querido. Si siguies este precepto deberás luchar hasta la muerte contra tus enemigos sin ningún tipo de piedad o remordimiento, perdiendo los beneficios de esta habilidad si realizas una acción cobarde a los ojos de tu dios.
 
-<u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de [Primeros auxilios](https://raldamain.com/rules/Crear personajes/talentos.html#primeros-auxilios-sab) para curar a un aliado este recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Una vez al día puedes reducir por un paso el nivel de una [herida permanente](https://raldamain.com/rules/Reglas principales/Heridas permanentes.html) que tenga un objetivo. Recibirás un uso adicional de esa habilidad a Rango III y a Rango V.0
+<u>Sanador de combate:</u> La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de [Primeros auxilios](https://raldamain.com/rules/Crear personajes/talentos.html#primeros-auxilios-sab) para curar a un aliado este recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Una vez al día puedes reducir por un paso el nivel de una [herida permanente](https://raldamain.com/rules/Reglas principales/Heridas permanentes.html) que tenga un objetivo. Recibirás un uso adicional de esa habilidad a Rango III y a Rango V.
 
 ## Rango II
 
-<u>Arma sacra:</u> Una de tus armas está bendita por tu dios para acabar con tus enemigos. 
+<u>Arma sacra:</u> Una de tus armas está bendita por tu dios para acabar con tus enemigos. Tu arma recibe una mejora de coste en créditos de 3 o menos, la cual origina de magia divina y no de tecnología. La mejora otorgada no debe ser incompatible con otras mejoras que ya tenga tu arma.
 
 <u>Armadura consagrada:</u> Tu armadura está bendecida por tu dios, incrementando su DEF por 2 y la resistencia mágica que otorga por 2. Si no tienes ningún rango en [Armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html) obtendrás resistencia mágica igual a tu rango de guerrero divino.
 
