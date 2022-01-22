@@ -36,7 +36,7 @@ title: Escenarios 4-5
 
 ## Sombra viviente (nivel 6)
 
-## Elementalista de arena (nivel 7)
+## Moldeador de arena (nivel 7)
 
 ## Turba Temash (nivel 6)
 

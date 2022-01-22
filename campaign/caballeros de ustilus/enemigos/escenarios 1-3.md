@@ -204,7 +204,7 @@ title: Escenarios 1-3
 
 **Arma secundaria** (acción bonus, 1/ronda): +5, 1d6 + 2. +5 daño contra enemigos heridos por el arma principal, sorprendidos o flanqueados.
 
-**Apuntar ataque** (acción de movimiento): Reduce el penalizador de ataque preciso por 2.
+**Apuntar ataque** (acción de movimiento): Reduce el penalizador de ataque preciso por u.
 
 **Finta** (acción de movimiento): +6 contra Averiguar intenciones, el objetivo no puede detenerse del siguiente ataque.
 

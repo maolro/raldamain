@@ -35,7 +35,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Redirigir el fuego:</u> Cuando logres parar exitosamente un ataque elemental de fuego mientras te encuentras en posición defensiva puedes redirigirlo en otra dirección que tú elijas. Un ataque redirigido tiene una distancia máxima de 15 pies (30 pies si logras una defensa crítica) y emplearás tu tiro de ataque elemental para él. Puedes emplear puntos de energía para fortalecer este ataque como si fuese tuyo.
 
-<u>Maestría de las llamas:</u> Tus ataques de fuego pueden adoptar una variedad de formas mortales. Cuando haces un ataque elemental puedes elegir gastar un ataque almacenado o sufrir 1 daño no-letal para modificarlo de una de las siguientes maneras: 
+<u>Maestría de las llamas:</u> Tus ataques de fuego pueden adoptar una variedad de formas mortales. Cuando haces un ataque elemental puedes elegir gastar un ataque almacenado o reducir tu reserva elemental por 1 para modificarlo de una de las siguientes maneras: 
 
 - **Bola de fuego**: Incrementa el área de salpicadura por 10 pies.
 - **Látigo:** Ataca a todas las criaturas en una línea de 30 pies.

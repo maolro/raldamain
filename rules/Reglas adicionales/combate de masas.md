@@ -14,7 +14,7 @@ Para formar una unidad de este tipo, la cual se conocerá como una tropa, hará 
 - **Resistencias e inmunidades:** Una tropa es inmune a todas las habilidades que afecten a una sola persona, como es el caso de maniobras de combate o efectos mentales. No obstante esta es particularmente vulnerable a ataques de área, causando que tenga desventaja en todos sus tiros para evitarlos y su daño quedará modificado como si fuese un golpe crítico. Tampoco modificará ninguna de las resistencias al daño que tenga la unidad base.
 - **Iniciativa:** Una tropa empleará el valor de iniciativa que tenga su comandante para calcular su prioridad y en el caso que no esté presente emplearán la estadística de DES de la unidad base.
 
-Estas estadísticas son las preferibles para representar unidades formadas por 4-5 individuos, pero en el caso que los jugadores se enfrenten contra un ejército de proporciones superiores es recomendable utilizar múltiples tropas y regenerar sus PV y Vitalidad por 4 cada ronda para representar la llegada de tropas nuevas. El nivel efectivo de una tropa equivale al de la criatura base +4 y cada turno que se regenere incrementará su nivel por 1. 
+Estas estadísticas son las preferibles para representar unidades formadas por 4-5 individuos, pero en el caso que los jugadores se enfrenten contra un ejército de proporciones superiores es recomendable utilizar múltiples tropas y regenerar la vitalidad y PV por 4 cada ronda para representar la llegada de tropas nuevas. El nivel efectivo de una tropa equivale al de la criatura base +4 y cada turno que se regenere incrementará su nivel por 1. 
 
 Respecto a las normas de combate las tropas solo pueden recibir Cubierta y Ocultamiento si aquello que les proporciona dicho efecto tiene un tamaño superior a 10 pies cuadrados o se trata de una línea más larga que 20 pies. Una tropa es capaz de flanquear tanto con unidades como con otras tropas pero no es capaz de flanquear consigo misma aunque esté compuesta por múltiples individuos. 
 
@@ -27,3 +27,10 @@ Las siguientes habilidades que posea la unidad base serán modificadas al conver
 - **Sanador de combate/Curandero/Magia de vida:** La tropa puede reducir su bonificador al ataque y daño por 2 antes de atacar a cambio de sanar una cantidad de Vitalidad y/o PV iguales al valor que sanaría su habilidad a sí misma u otra tropa de su elección.
 - **Ataques de área:** Todos los ataques de área hechos por la tropa incrementarán sus proporciones según su naturaleza. En el caso que sea un efecto de área circular aumentará su radio por 15 pies, si es un cono aumentará su longitud por 15 pies y si es una línea la tropa realizará 4 ataques de línea diferentes en la dirección que esta elija.
 - **Corte/Maza oscilante:** La tropa muy efectiva luchando contra grandes grupos, provocando así que al impactar a otra tropa con un ataque duplique la cantidad de dados de daño que tenga.
+
+## Organizaciones en el campo de batalla
+
+Un jugador que tenga una organización en juego puede destacar algunos miembros a asistirle en el campo de batalla. Los soldados de una organización van representados por un batallón, una medida abstracta de un gran grupo de soldados que influirá de manera indirecta en el campo de batalla. 
+
+Todo jugador que luche junto a un batallón recibirá un bonificador a sus estadísticas igual a los seis valores del batallón mismo. Por ello, añadirá la fuerza militar del batallón a su fuerza, el subterfugio a su destreza, la protección a su constitución, la cultura a su inteligencia, el valor de secretos a la sabiduría y la influencia al carisma. El batallón a su vez recibirá dos valores nuevos para medir su aguante en el campo de batalla: la moral, equivalente a su nivel de organización + 1, que medirá su voluntad de seguir combatiendo, y los PV, equivalente a su nivel de organizaicón x 5, que indicará la capacidad de aguante que tiene el batallón en el campo de batalla antes de dispersarse. 
+

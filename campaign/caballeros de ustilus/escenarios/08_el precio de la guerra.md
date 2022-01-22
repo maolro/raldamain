@@ -117,3 +117,4 @@ Después del final de la campaña Sek-Tebos preparará sus fuerzas en una últim
 **Sicario de Sek-Tebos** (nivel 11)
 
 **Kruge** (nivel 15)
+
