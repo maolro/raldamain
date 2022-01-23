@@ -26,7 +26,7 @@ Tras estos dos encuentros iniciales, los jugadores se reagruparán (si no ha mue
 
 ### Llegada de refuerzos mazarinos
 
-Poco después de la medianoche del primer día un grupo de soldados mazarinos llega al fuerte para consolidarlo. Ellos creen en un principio que la misión de los agentes ha sido un éxito y no sospecharán nada salvo que haya claros indicios que el fuerte permanece en manos ustilesas. Ellos tienen como objetivo proteger el fuerte de futuros ataques ustileses y fingir que todo va bien. El grupo se compone de seis **Reclutas mazarinos**, dos **Ballesteros mazarinos** y un **Sterlet mazarino**. Si alguno de estos llega a ser capturado al interrogarlo revelará que el día siguiente transportarán un cañon de tipo culverín a través del valle.
+Poco después de la medianoche del primer día un grupo de soldados mazarinos llega al fuerte para consolidarlo. Ellos creen en un principio que la misión de los agentes ha sido un éxito y no sospecharán nada salvo que haya claros indicios que el fuerte permanece en manos ustilesas. Ellos tienen como objetivo proteger el fuerte de futuros ataques ustileses y fingir que todo va bien. El grupo se compone de seis **Reclutas mazarinos**, dos **Ballesteros mazarinos** y un **Guerrero norteño**. Si alguno de estos llega a ser capturado al interrogarlo revelará que el día siguiente transportarán un cañon de tipo culverín a través del valle.
 
 Si la fogata del fuerte ha sido apagada, entonces el encuentro **La inspección de Pantor** se adelanta a esta noche. El capitán podría llegar en cualquier momento de la pelea para asistir a los jugadores.
 
@@ -40,7 +40,7 @@ Tras salir el sol del segundo día, un grupo de tres **Húsares mazarinos** lleg
 
 ### Transporte del culverín
 
-Cuando los mazarinos crean que tienen el valle asegurado transportarán un culverín. Este estará escoltado por un grupo de cuatro **Reclutas mazarinos** y un **Guerrero nort**, además de varios jornaleros dedicados a transportarlo y usarlo. En el evento que el culverín sea atacado, intentarán disparar con él para llamar la atención a los húsares, los cuales llegarán en dos turnos. La captura del culverín otorgará, además del mismo cañón, un barril de pólvora y un cuervo mensajero.
+Cuando los mazarinos crean que tienen el valle asegurado transportarán un culverín. Este estará escoltado por un grupo de cuatro **Reclutas mazarinos** y un **Guerrero norteño**, además de varios jornaleros dedicados a transportarlo y usarlo. En el evento que el culverín sea atacado, intentarán disparar con él para llamar la atención a los húsares, los cuales llegarán en dos turnos. La captura del culverín otorgará, además del mismo cañón, un barril de pólvora y un cuervo mensajero.
 
 ### Noche de los cañones
 
