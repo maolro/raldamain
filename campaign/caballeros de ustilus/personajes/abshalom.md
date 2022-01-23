@@ -83,7 +83,7 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 ## Madeleine
 
-"Esta enigmática norteña vive rodeada de mentiras, ocultando sus verdaderas intenciones hasta quiénes tiene más cerca. Normalmente no siento más que desprecio por este tipo de personas, pero su dedicación hacia el Imperio me ha hecho pensar de ella de una manera distinta. Eso sí, es prudente no fiarse demasiado de una persona dedicada al engaño."
+"Esta enigmática norteña vive rodeada de mentiras, ocultando sus verdaderas intenciones hasta de quiénes tiene más cerca. Normalmente no siento más que desprecio por este tipo de personas, pero su dedicación hacia el Imperio me ha hecho pensar de ella de una manera distinta. Eso sí, es prudente no fiarse demasiado de una persona dedicada al engaño."
 
 ## Regulus
 
