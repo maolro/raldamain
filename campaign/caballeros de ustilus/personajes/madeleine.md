@@ -9,7 +9,7 @@ rangos: Magia de agua, Magia de hielo, Magia de sangre, Plantilla boreal, Influe
 image: madeleine.jpg
 ---
 
-
+""
 
 # Biografía
 
