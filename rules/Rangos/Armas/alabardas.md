@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas.
 
 <u>Preparación contra cargas:</u> Puedes emplear una acción de movimiento para prepararte contra cargas enemigas, alcanzándoles con tu arma antes de que puedan llegar a ti. Mientras estés en el estado de preparación puedes realizar un ataque de oportunidad en cualquier momento de la ronda contra una criatura que pase por el radio de alcance de tu alabarda. Este ataque infligirá +1d6 daño base y en el caso que impactes el objetivo deberá detenerse de inmediato. El ataque que prepares no se perderá al final de la ronda y sólo saldrás del estado de preparación si realizas un ataque, te mueves más de 10 pies de tu posición o eres desconcentrado (no abandonarás el estado de preparación si tu montura se mueve, pero sí lo perderás en el momento que gastes acciones de movimiento para que esta se desplace más).
 
-<u>Proteger aliados:</u> El largo alcance de tu arma te permite proteger a aliados cercanos de ataques enemigos. Cuando un aliado a 10 pies de ti realice un tiro defensivo recibirá un bonificador a este igual a tu rango de alabardas (este bonificador aumentará por 1 por cada aliado adicional con esta habilidad que afecte a la misma persona, llegando a un máximo de +4). No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes, quienes recibirán ventaja en todos sus ataques contra ti.
+<u>Proteger aliados:</u> El largo alcance de tu arma te permite proteger a aliados cercanos de ataques enemigos. Cuando un aliado a 10 pies de ti realice un tiro defensivo recibirá un bonificador a este igual a tu rango de alabardas (este bonificador se acumula con hasta tres otras criaturas con alabardas que tengan esta habilidad). No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes, quienes recibirán ventaja en todos sus ataques contra ti.
 
 ## Rango II
 
@@ -39,7 +39,7 @@ Aumenta tu probabilidad de golpe crítico a 19-20.
 
 Aumenta tu probabilidad de crítico a 18-20
 
-<u>Carga repentina:</u> Si gastas tu acción de movimiento en usar preparación contra cargas, en cualquier momento del turno enemigo podrás hacer una carga como reacción. El daño por carga con lanza se sumará también a este ataque y todas las heridas permanentes que provoques con él serán de un nivel superior.
+<u>Carga repentina:</u> Si gastas tu acción de movimiento en usar preparación contra cargas en cualquier momento del turno enemigo podrás hacer una carga como reacción con distancia igual a tu movimiento base. El daño por carga con lanza se sumará también a este ataque y todas las heridas permanentes que provoques con él serán de un nivel superior.
 
 <u>Reposicionar</u>: Tu arma actúa como una extensión de tu cuerpo, permitiéndote usarla para incrementar tu movimiento. Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad.
 
@@ -54,3 +54,4 @@ Una alabarda base hace 1d8 + FUE daño perforante y tiene un alcance de 10 pies.
 - **Gigante:** El arma tiene un tamaño superior a lo normal. Aumenta tu alcance por 5 pies y el daño base a 2d6, pero recibirás un penalizador -2 en todos tus ataques con esta. Un arma gigante se puede coger con una mano si estás montado.
 - **Agarre:** El arma tiene una pinza en su punta que puede agarrar al enemigo. Un arma con agarre no infligirá daño al impactar, sino que agarrará a tu objetivo. Puedes gastar una acción de movimiento para apretar con la pinza, infligiendo 1d4 + FUE daño con ella. A rango III recibes la habilidad impacto destructor con la pinza. La pinza puede estar cubierta de espinas, las cuales infligirán [sangrado](../Reglas%20principales/Efectos%20de%20estado.md#sangrado) a la criatura que agarren.
 - **Doble:** El arma tiene una segunda punta con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo un ataque doble. Al hacer un ataque doble podrás hacer un ataque adicional como acción bonus, pero recibirás desventaja en ambos ataques. Cuando alcances el rango III podrás aplicar tus habilidades de arma a tu segundo ataque y a rango V no tendrás ninguna penalización en un ataque doble.
+

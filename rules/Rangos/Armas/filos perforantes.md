@@ -31,7 +31,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Ataque saltarín:</u> El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en esa área. Como acción estándar puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con Ataque saltarín.
 
-<u>Finta superior:</u> Al fintar puedes hacer un ataque adicional contra tu objetivo, para el cual se aplica ataque preciso como si fuese un ataque sorpresa. Solo puedes fintar de esta manera una vez al turno.
+(habilidad 2)
 
 ## Rango V 
 

@@ -17,7 +17,7 @@ Añade tu rango a todos tus tiros de ataque hechos con cadenas.
 
 <u>Ataque circular</u>: Como acción de turno completo puedes atacar a todas las criaturas en un arco de 15 pies. No podrás usar enredar en un ataque circular y este se detendrá inmediatamente si es bloqueado exitosamente por un escudo. Si empleas un ataque cargado podrás hacer una maniobra de tropezar como acción bonus contra todas las criaturas que impactes. Emplear esta habilidad te cuesta una acción estándar a rango IV.
 
-<u>Cargar ataque:</u> Al emplear tu acción estándar en Danza de cadenas estas girarán con más velocidad, aumentando el daño que infligen. Cada acción de ataque que almacenes de esta manera añadirá una carga de cadena, llegando a un máximo igual a tu rango + 1. Mientras tengas ataques cargados recibirás un bonificador a todos tus tiros de defensa igual al número de ataques cargados que tengas. Como acción bonus puedes gastar un ataque cargado para incrementar tus tiros de ataque y daño por 1. Todos tus ataques cargados se perderán si sufres un efecto de estado negativo.
+<u>Cargar ataque:</u> Al emplear tu acción estándar en Danza de cadenas estas girarán con más velocidad, aumentando el daño que infligen. Cada acción de ataque que almacenes de esta manera añadirá una carga de cadena, llegando a un máximo igual a tu rango + 1. Mientras tengas ataques cargados recibirás un bonificador a todos tus tiros de defensa igual al número de ataques cargados que tengas. Como acción bonus puedes gastar un ataque cargado para incrementar tus tiros de ataque y daño por 2. Todos tus ataques cargados se perderán si sufres un efecto de estado negativo.
 
 ## Rango III   
 

@@ -77,7 +77,7 @@ Un ataque natural base es un puñetazo que 1 + FUE daño contundente. Un ataque 
   | Golpe devastador | [Escudo humano](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-iv) |
   | Puñetazo mortal  | [Ahorcar ](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-v) |
 
-- **Perforar:** Tienes una afilada espina en una parte de tu cuerpo capaz de ágilmente perforar a tus objetivos. Un ataque de perforar inflige 1d6 + FUE daño perforante al impactar y será capaz de infligir heridas permanentes aunque el daño sea reducido a 0. Algunos atributos que poseas serán sustituidos por otros propios de Filos perforantes de la siguiente manera:
+  - **Perforar:** Tienes una afilada espina en una parte de tu cuerpo capaz de ágilmente perforar a tus objetivos. Un ataque de perforar inflige 1d6 + FUE daño perforante al impactar y será capaz de infligir heridas permanentes aunque el daño sea reducido a 0. Algunos atributos que poseas serán sustituidos por otros propios de Filos perforantes de la siguiente manera:
 
   | Rango original      | Sustitución                                                  |
   | ------------------- | ------------------------------------------------------------ |
