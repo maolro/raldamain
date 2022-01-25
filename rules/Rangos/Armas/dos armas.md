@@ -53,7 +53,7 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 <u>Parada doble:</u> Eres capaz de detener ataques tanto con tu arma principal como con la secundaria. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener con tu arma principal una vez por ronda (el penalizador por luchar con doble arma se aplica también a este tiro si lo tienes). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
 
-<u>Tajo cruzado:</u> Tu ataque secundario es muy efectivo contra enemigos que ya hayas herido. Al impactar al mismo objetivo con tus dos armas en la misma ronda tu segundo ataque infligirá +1d6 daño base.
+<u>Tajo cruzado:</u> Tu ataque secundario es muy efectivo contra enemigos que ya hayas herido. Al impactar al mismo objetivo con tus dos armas en la misma ronda tu segundo ataque recibirá los beneficios de ataque poderoso sin la necesida.
 
 ### Rango II
 

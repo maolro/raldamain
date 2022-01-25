@@ -13,7 +13,7 @@ Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras p
 
 ## Rango II
 
-<u>Blindaje:</u> Los ataques contundentes sólo pueden hacerte heridas permanentes si te llegan a infligir daño, y recibes resistencia igual a tu rango + 1 contra aturdimiento y ralentizar provocado por ataques no mágicos. Perderás los beneficios de habilidad si la defensa de tu armadura es reducida a la mitad y la recuperarás si esta es reparada.
+<u>Blindaje:</u> Recibes resistencia igual a tu rango + 1 contra aturdimiento y ralentizar provocado por ataques no mágicos. Si eres impactado por un arma de fuego con puntería mortal reduce el daño recibido por un valor igual a tu defensa reforzada. Perderás los beneficios de habilidad si la defensa de tu armadura es reducida a la mitad y la recuperarás si esta es reparada.
 
 <u>Protección elemental:</u> Dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado, lo cual requerirá un gasto de 2 créditos. Obtienes resistencia igual a tu rango de armaduras x 2 contra el elemento de tu elección y los efectos de estado producidos por este. Esto se acumula con otras resistencias que poseas. Empleando crédito puedes recibir resistencias adicionales para tu armadura, lo cual te cuesta 2 créditos adicionales y cuenta como una mejora de armaduras.
 
