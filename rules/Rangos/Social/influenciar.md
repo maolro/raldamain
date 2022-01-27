@@ -43,5 +43,3 @@ Aumenta tu probabilidad de crítico a 18-20 en todos tus tiros de influenciar, e
 
 <u>Maestro titiritero</u> (pasiva): Eres capaz de reducir a las personas con las que hablas a simples títeres movidos por tu voluntad, manipulándolos para que garantizar su lealtad o acabar con su fuerza de voluntad. Una vez por interacción puedes hacer un tiro de Persuasión contra tu objetivo el cual le provocará daño a la cordura en el caso de éxito igual a 1d4 +  CAR. En el caso que logres reducir su cordura a 0 puedes obtener su lealtad absoluta e incondicional o forzarla a suicidarse. Esta habilidad no podrá emplearse en personajes hostiles hacia ti salvo que tengas una manera para chantajearlos.
 
-
-
