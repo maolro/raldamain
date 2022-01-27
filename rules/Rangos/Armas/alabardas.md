@@ -47,7 +47,7 @@ Aumenta tu probabilidad de crítico a 18-20
 
 <u>Carga repentina</u> (reacción): Al entrar en el estado de *preparación contra cargas* en cualquier momento de la ronda puedes moverte una distancia igual a tu movimiento base y hacer un ataque contra un objetivo en tu alcance. Este ataque contará como una carga si te mueves 20 pies o más y al impactar con tu ataque aumenta el nivel de todas las heridas permanentes infligidas por un paso.
 
-<u>Reposicionar</u> (reacción): Tu arma actúa como una extensión de tu cuerpo, permitiéndote usarla para incrementar tu movimiento. Cada vez que detengas un ataque enemigo de manera exitosa con tu lanza podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad. Esto se acumula con la cantidad de pies que puedes moverte con la habilidad *evasión*.
+<u>Reposicionar</u> (reacción): Tu arma actúa como una extensión de tu cuerpo, permitiéndote usarla para incrementar tu movimiento. Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad. Esto se acumula con la cantidad de pies que puedes moverte con la habilidad *[evasión](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)*.
 
 # Armas
 
