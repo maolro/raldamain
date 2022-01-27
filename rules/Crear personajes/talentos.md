@@ -12,11 +12,11 @@ Cada talento está asociado con una estadística, lo cual queda indicado a conti
 
 ### Atletismo (FUE)
 
-Tienes soltura en tiros para escalar, nadar o correr largas distancias. Aumenta tu movimiento base por 5 pies y eres capaz de escalar o nadar una distancia de 5 pies como acción de movimiento. Cuando alcances el nivel de talento 3 o 5 aumenta tu movimiento de nuevo por 5 pies, incluyendo también tus velocidades de nadar y escalar (esto puede llegar a un máximo de 45 pies)
+Tienes soltura en tiros para escalar, nadar o correr largas distancias. Aumenta tu movimiento base por 5 pies y recibes una velocidad de nadar y escalar igual a 5 pies. Cuando alcances el nivel de talento 3 o 5 aumenta tu movimiento de nuevo por 5 pies, incluyendo también tus velocidades de nadar y escalar (esto puede llegar a un máximo de 45 pies).
 
 ### Acrobacias (DES)
 
-Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. A nivel 1 recibes la capacidad de saltar 5 pies en horizontal o vertical como acción de movimiento. Cuando alcances el nivel de talento 3 o 5 aumenta ambas velocidades de salto de nuevo por 5 pies.
+Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. A nivel 1 recibes una velocidad de salto horizontal y vertical igual a 5 pies. Cuando alcances el nivel de talento 3 o 5 aumenta ambas velocidades de salto de nuevo por 5 pies.
 
 ### Actuación (CAR)
 
@@ -26,7 +26,7 @@ Este talento puede ser usado en un combate para distraer a un enemigo, permitié
 
 ### Arcanismo (INT)
 
-Tienes gran conocimiento sobre la magia y todo lo referente a ella, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día mientras que a nivel de talento 5 puedes emplearla tres veces al día. El tiro de magia empleará tu estadística de inteligencia y se le sumará tu nivel de talento en arcanismo - 2.
+Tienes gran conocimiento sobre la magia y todo lo referente a ella, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día a coste de 2 mientras que a nivel de talento 5 puedes emplearla tres veces al día. El tiro de magia empleará tu estadística de inteligencia y se le sumará tu nivel de talento en arcanismo - 2.
 
 ### Averiguar intenciones (SAB)
 
