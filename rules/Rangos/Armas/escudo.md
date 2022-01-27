@@ -11,33 +11,33 @@ Tu estilo de combate se asemeja al de una sólida barrera defensiva, empleando t
 
 Añade tu rango de esta habilidad a tus tiradas defensivas con un escudo.
 
-<u>Ataque con escudo:</u> Al realizar una carga puedes hacer un ataque con tu escudo como acción bonus, empleando tu estadística de fuerza y tu rango de arma en el tiro de ataque. Si impactas tu objetivo sufre 1d6 + FUE daño contundente y puedes realizar una maniobra de empujar o tropezar contra él como acción bonus (ambas si obtienes un golpe crítico). El daño de un escudo se reduce a 1d4 + FUE si es un escudo ligero y aumenta a 1d8 + FUE si es un escudo de torre.
+<u>Ataque con escudo</u> (acción bonus): Al realizar una carga puedes hacer un ataque con tu escudo como acción bonus, empleando tu estadística de fuerza y tu rango de arma en el tiro de ataque. Si impactas tu objetivo sufre 1d6 + FUE daño contundente y puedes realizar una maniobra de empujar o tropezar contra él (ambas si obtienes un golpe crítico). El daño de un escudo se reduce a 1d4 + FUE si es un escudo ligero y aumenta a 1d8 + FUE si es un escudo de torre. Esta habilidad puede empelarse fuera de una carga empleando dos acciones (a rango III costará una acción).
 
-<u>Proteger aliados:</u> Puedes defender a un aliado a 5 pies de ti como reacción, utilizando tu escudo para protegerlo. Si lo haces usarás tu tirada en lugar de la tirada de defensa del aliado, pero en el caso de fracasar tú sufrirás el daño del ataque.
+<u>Proteger aliados</u> (reacción): Puedes defender a un aliado a 5 pies de ti como reacción utilizando tu escudo para protegerlo. Si lo haces usarás tu tirada en lugar de la tirada de defensa del aliado, pero en el caso de fracasar tú sufrirás el daño del ataque.
 
 ## Rango II
 
-<u>Interceptar</u>: Puedes gastar una acción de movimiento para prepararte a interceptar un ataque enemigo en cualquier momento de la ronda. Mientras te encuentres en el estado de interceptar en cualquier momento de la ronda puedes cargar una cantidad de pies igual a tu movimiento base hacia un enemigo que se esté moviendo y hacerle un ataque de oportunidad con tu escudo, deteniéndolo en el acto si logras impactar.
+<u>Interceptar</u> (1 acción): Puedes gastar una acción para prepararte a interceptar un ataque enemigo en cualquier momento de la ronda. Mientras te encuentres en el estado de interceptar en cualquier momento de la ronda puedes cargar una cantidad de pies igual a tu movimiento base hacia un enemigo que se esté moviendo y hacerle un ataque de oportunidad con tu escudo, deteniéndolo en el acto si logras impactar (este ataque contará como una carga).
 
-<u>Forma defensiva:</u> Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiéndote en una barrera infranqueable. Entrar en forma defensiva acción de movimiento y mientras permanezcas en dicho estado incrementa tu FUE y CON por 2. Recibirás adicionalmente resistencia igual a tu rango contra maniobras de combate y ventaja en todos tus tiros defensivos con tu escudo. Esta habilidad durará un número de rondas igual a tu rango x 2 y mientras permanezca activa no podrás moverte más de 20 pies por ronda. Cuando salgas de forma defensiva acabarás fatigado y no podrás volver a entrar hasta que se te pase la fatiga. Esta habilidad solo podrá usarse si llevas un escudo.
+<u>Forma defensiva</u> (1 acción) Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiéndote en una barrera infranqueable. Entrar en forma defensiva cuesta una acción y mientras permanezcas en dicho estado incrementa tu FUE y CON por 2. Recibirás adicionalmente resistencia igual a tu rango contra maniobras de combate y ventaja en todos tus tiros defensivos con tu escudo. Esta habilidad durará un número de rondas igual a tu rango x 2 y mientras permanezca activa no podrás moverte más de 20 pies por ronda. Cuando salgas de forma defensiva acabarás fatigado y no podrás volver a entrar hasta que se te pase la fatiga. Esta habilidad solo podrá usarse si llevas un escudo.
 
 ## Rango III
 
-<u>Carga poderosa:</u> Al impactar con una carga una vez por ronda puedes forzar a tu objetivo a hacer un tiro defensivo de CON frente tu tiro de ataque, quedando aturdido durante una ronda en el caso que fracase. Aumenta además el daño base que infliges tras una carga por 1d6 y al cargar provocas que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino, dejándote vía libre para atacar. A rango V vuelve a aumentar el daño de carga por 1d6.
+<u>Carga poderosa</u> (pasiva): Al impactar con una carga una vez por ronda puedes forzar a tu objetivo a hacer un tiro defensivo de CON frente tu tiro de ataque, quedando aturdido durante una ronda en el caso que fracase. Aumenta además el daño base que infliges tras una carga por 1d6 y al cargar provocas que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino, dejándote vía libre para atacar. A rango V vuelve a aumentar el daño de carga por 1d6.
 
-<u>Barrera móvil:</u> Al entrar en *forma defensiva* otorgas cubierta a todas las criaturas que estén detrás de ti en un cono de 15 pies, otorgándoles ventaja en todos sus tiros defensivos. Puedes moverte y mantenerte en la forma defensiva, pero para ello cada movimiento te costará una acción estándar o sufrirás 2 daño no-letal al realizarlo.
+<u>Barrera móvil</u> (pasiva): Al entrar en *forma defensiva* otorgas cubierta a todas las criaturas que estén detrás de ti en un cono de 15 pies, otorgándoles ventaja en todos sus tiros defensivos. Puedes moverte y mantenerte en la forma defensiva, pero para ello cada movimiento te costará una acción estándar o sufrirás 2 daño no-letal al realizarlo.
 
 ## Rango IV
 
-<u>Guardián</u>: Al entrar en *forma defensiva* aumenta tu DEF por 2 y los enemigos adyacentes a ti recibirán desventaja en todos sus tiros de ataque hechos contra aliados adyacentes a ti. Recibes también inmunidad a flanqueo y puedes defenderte de ataques sorpresa usando tu escudo.
+<u>Guardián</u> (pasiva): Al entrar en *forma defensiva* aumenta tu DEF por 2 y los enemigos adyacentes a ti recibirán desventaja en todos sus tiros de ataque hechos contra aliados adyacentes a ti. Recibes también inmunidad a flanqueo y puedes defenderte de ataques sorpresa usando tu escudo.
 
-<u>Mantener posición:</u> Puedes hacer un ataque de oportunidad contra cualquier criatura que pase por un espacio adyacente a ti mientras te encuentras en *forma defensiva*, deteniéndolo de inmediato si logras impactarlo. Si un aliado a 10 pies de ti es atacado puedes moverte 5 pies hacia él como reacción para protegerlo de un ataque enemigo.
+<u>Mantener posición</u> (reacción): Puedes hacer un ataque de oportunidad contra cualquier criatura que pase por un espacio adyacente a ti mientras te encuentras en *forma defensiva*, deteniéndolo de inmediato si logras impactarlo. Si un aliado a 10 pies de ti es atacado puedes moverte 5 pies hacia él como reacción para protegerlo de un ataque enemigo.
 
 ## Rango V
 
-<u>Maestría con escudo:</u> Entrar en *forma defensiva* te otorga un bonificador adicional de un dado de ventaja en tiros de escudo e incrementa los aumentos de estadísticas por 2. Los aliados que se encuentren adyacentes a ti reciben inmunidad a ataques a distancia como si tuvieran cubierta superior. 
+<u>Maestría con escudo</u> (pasiva): Entrar en *forma defensiva* te otorga un bonificador adicional de un dado de ventaja en tiros de escudo e incrementa los aumentos de estadísticas por 2. Los aliados que se encuentren adyacentes a ti reciben inmunidad a ataques a distancia como si tuvieran cubierta superior. 
 
-<u>Detener hechizos:</u> El escudo puede proteger a tus aliados de ataques mágicos. Al tener éxito en un tiro defensivo con tu escudo para bloquear un ataque de área podrás reflejarlo con tu escudo, impidiendo que todos tus aliados que se encuentren tras tu barrera defensiva sufran daño obligatorio de área. Tú tampoco sufrirás daño obligatorio de ataques de área al bloquear exitosamente con tu escudo. Esta habilidad no funciona contra ataques lanzados por enemigos que se no se encuentren delante de ti.
+<u>Detener hechizos</u> (reacción): El escudo puede proteger a tus aliados de ataques mágicos. Al tener éxito en un tiro defensivo con tu escudo para bloquear un ataque de área podrás reflejarlo con tu escudo, impidiendo que todos tus aliados que se encuentren tras tu barrera defensiva sufran daño obligatorio de área. Tú tampoco sufrirás daño obligatorio de ataques de área al bloquear exitosamente con tu escudo. Esta habilidad no funciona contra ataques lanzados por enemigos que se no se encuentren delante de ti.
 
 ## Armas
 
