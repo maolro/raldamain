@@ -11,9 +11,11 @@ A diferencia de otros maestros de armas tu te has decantado por utilizar tu prop
 
 Añade tu rango a todos tus tiros de ataque hechos con ataques naturales. Aumenta tu daño base a 1d4 + FUE.
 
-<u>Secuencia de ataques:</u> Realizar ataques naturales y maniobras de combate ahora te cuestan una acción de movimiento en lugar de una estándar. Cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1. A rango III puedes hacer un ataque natural o maniobra de combate una vez por ronda como acción bonus. 
+<u>Secuencia de ataques</u> (pasiva): Reduce el coste en acciones de hacer ataques naturales y maniobras de combate por 1, llegando a un mínimo de 1. Cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1. 
 
-<u>Defensa marcial:</u> Eres capaz de emplear tus habilidades de artes marciales para protegerte de ataques enemigos, incluyendo aquellos hechos con armas. Esta habilidad funciona de la misma manera que una parada, pero si intentas defenderte de un arma cortante o una con espinas sufrirás de inmediato el efecto de estado sangrado.
+<u>Defensa marcial</u> (reacción): Eres capaz de emplear tus habilidades de artes marciales para protegerte de ataques enemigos, incluyendo aquellos hechos con armas. Un tiro de defensa marcial es una reacción por la cual tiras defensa contra un ataque hecho con un arma cuerpo a cuerpo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Si intentas defenderte de un arma cortante o una con espinas sufrirás de inmediato el efecto de estado [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado).
+
+<u>Estilo de combate</u> (1 acción): Tu maestría de las artes marciales te permite combatir en una multitud de estilos, variando así tu forma de combatir según t
 
 ## Rango II
 
