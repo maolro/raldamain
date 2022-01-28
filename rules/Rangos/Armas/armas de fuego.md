@@ -11,15 +11,15 @@ De todas las armas jamás creadas no hay ninguna más letal que el arma de fuego
 
 Añade tu rango a todos los tiros de ataque hechos con armas de fuego. 
 
-<u>Puntería mortal:</u> Tus ataques son especialmente mortales al impactar a enemigos a poca distancia de ti. Al atacar a un objetivo que se encuentre a menos de 30 pies de ti ignorarás toda la defensa que tenga por armadura natural y fabricada (esto es a 15 pies para una pistola de mano) y tus objetivos no podrán emplear esquiva para defenderse salvo que tengan cubierta u oculta. Antes de realizar un ataque puedes añadir un penalizador -2 a tu tiro de ataque para incrementar la distancia a la que puedes utilizar puntería mortal por 15 pies. 
+<u>Puntería mortal</u> (1 acción):
 
-<u>Agilidad del pistolero:</u> Desenfundar tu arma te cuesta una acción de movimiento (esto te cuesta una acción bonus si es una pistola de mano). Incrementa además tu iniciativa por 1, y vuélvela a incrementar cuando alcances rango III y V.
+
 
 ## Rango II
 
-<u>Recarga rápida:</u> Recargar un arma te cuesta una acción de movimiento, mientras las armas grandes requieren una acción estándar. Hacer ataques con tu arma ahora te cuesta una acción de movimiento. A rango IV una vez por ronda puedes recargar como acción bonus (movimiento si es un arma de dos manos).
+<u>Recarga rápida</u> (pasiva): Reduce el coste en acciones para recargar tu arma por 1 (mínimo 1). Hacer ataques con tu arma ahora te cuesta una acción de movimiento. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos y a rango IV aumenta tu máximo de acciones por 1.
 
-<u>Truco de bala:</u> Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu pistola para realizar uno de los siguientes efectos sobre un enemigo:
+<u>Arquero experto</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
 
 - **Disparo falso**: Tu objetivo debe defenderse con averiguar intenciones. Si fracasa, estará fintado contra el siguiente ataque que reciba. 
 - **Disparo atronador:** El disparo provoca un gran estruendo, provocando que tu objetivo se desoriente. Él debe defenderse haciendo un tiro de Constitución y si fracasa deberá moverse 10 pies en una dirección aleatoria y quede Espantado hasta su siguiente turno.
@@ -29,23 +29,23 @@ Añade tu rango a todos los tiros de ataque hechos con armas de fuego.
 
 Aumenta tu probabilidad de golpe crítico a 19-20.
 
-<u>Disparo preciso:</u> Tus ataques se han vuelto mucho más precisos, permitiéndote ignorar todo obstáculo que no proporcione ni cubierta ni ocultamiento completo. Al atacar a un objetivo afectado por puntería mortal esta perderá todos los bonificadores defensivos otorgados por cubierta y ocultamiento. Esta habilidad no funcionará como ya se ha especificado contra enemigos con cubierta u ocultamiento completo.
+<u>Disparo preciso</u> (pasiva): Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las ventajas que estos les otorgarán. Esta habilidad solo se aplica contra enemigos que no estén en ocultamiento o cubierta completa y se encuentren a menos de 30 pies de ti (puedes añadir un dado de desventaja a tu tiro de ataque para aumentar esta distancia por 30 pies adicionales).
 
-<u>Ojo de francotirador:</u> Apuntando tus ataques cuidadosamente eres capaz de realizar disparos mortales contra enemigos aún más alejados. Puedes emplear una acción de movimiento para incrementar tu radio de puntería mortal por 15 pies sin recibir ningún penalizador. Además, puedes añadir tu estadística de destreza a tus tiradas de daño contra objetivos incapaces de defenderse.
+<u>Ojo de francotirador</u> (pasiva): Tu perfecta puntería te permite disparar a enemigos mucho más lejanos. Aumenta tu alcance base y máximo por 30 pies, reduciendo así las penalizaciones por disparar a distancias superiores por un dado de desventaja (vuelve a aumentar tu alcance de esta misma manera cuando alcances el rango V). Añade también tu rango en armas a distancia a todos tus tiros de percepción.
 
 ## Rango IV
 
-<u>Disparo en movimiento:</u> Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees (15 pies antes y 15 pies después, por ejemplo). Tampoco sufrirás penalizaciones al disparar montado o en un vehículo en movimiento y aquellos enemigos en tu radio de puntería mortal no podrán emplear esquiva para evitar tus ataques aunque tengan Esquiva asombrosa (aún lo pueden evitar si tienen esquiva asombrosa superior).
+<u>Disparo en movimiento</u> (pasiva y reacción) Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones por disparar desde una montura o vehículo en movimiento y cada vez que esquives exitosamente un ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto se acumula con el atributo *evasión*).
 
-<u>Disparos a bocajarro:</u> Una vez por ronda puedes emplear una acción bonus para realizar un ataque adicional con tu arma. Esta habilidad puede emplearse también para proporcionar fuego de cubierta a un aliado de tu elección, permitiéndote hacer un tiro defensivo usando tus modificadores de ataque para protegerlo. 
+<u>Fuego de cubierta</u> (reacción):  Eres capaz de disparar flechas para interceptar ataques hechos a tus aliados, permitiéndote añadir tu rango con arma a distancia al tiro defensivo de un aliado a 60 pies de ti. Solo podrás proteger a tus aliados de esta manera si te encuentras en posición defensiva.
 
 ## Rango V
 
 Aumenta tu probabilidad de golpe crítico a 18-20.
 
-<u>Impacto vital:</u> Al impactar a un enemigo incapaz de defenderse con puntería mortal eres capaz de proporcionarle un golpe letal. Un ataque hecho así multiplicará su daño base por 2 e infligirá una herida permanente grave.
+<u>Impacto vital</u> (pasiva):
 
-<u>Puntería experta:</u> Tus ataques son capaces de impactar en el punto débil del objetivo. Al emplear una acción de movimiento para apuntar en un disparo puedes hacer que el defensor no pueda usar escudo o parada mágica para su tiro defensivo. Esta habilidad no funcionará contra personajes que se encuentren en posición defensiva (tampoco funciona contra aquellos en forma defensiva por Escudo).
+<u>Puntería experta</u> (pasiva): Al apuntar a un enemigo eres capaz de sobrepasar sus mismas defensas. Si atacas a un enemigo que intenta detener el ataque en lugar de esquivarlo y tienes ventaja en tu tiro le impactarás de manera automática sin importar su resultado en el tiro defensivo. Esta habilidad no funciona contra enemigos que se encuentren en posición defensiva.
 
 ## Armas 
 

@@ -11,41 +11,41 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 Añade tu rango a todos tus tiros hechos con armas a distancia.
 
-<u>Puntería mortal:</u> Eres capaz de apuntar a los puntos débiles de tu objetivo para ignorar su armadura. Una vez por ataque puedes recibir un penalizador de un dado de desventaja a un tiro de ataque para incrementar el daño base que inflijas por 1d6 (esto puede usarse dos veces por ataque a rango III y tres veces por ataque a rango V). Al atacar a enemigos incapaces de defenderse puedes recibir el daño adicional de puntería mortal solo si no tienes ningún dado de desventaja en tu tiro de ataque (es decir, has anulado todos los penalizadores apuntando).
+<u>Puntería mortal</u> (1 acción):
 
-<u>Ataque apuntado:</u> Puedes emplear una acción de movimiento apuntar a tu objetivo, recibiendo así un dado de ventaja en tu siguiente ataque hecho con un arma a distancia que durará hasta el principio de tu siguiente turno. Al impactar con un ataque apuntado añade tu estadística de destreza al daño provocado.
+<u>Combate furtivo</u> (pasiva): Tus ataques se vuelven más fuertes al atacar a enemigos que se encuentren en una posición vulnerable. Añade tu estadística de destreza a todos tus tiros de daño si tienes ventaja en un tiro de ataque, tu objetivo tiene desventaja contra tus ataques o es incapaz de defenderse. Al realizar un *ataque apuntado* sumarás también tu destreza al daño aunque no tengas ventaja.
 
 ## Rango II
 
-<u>Arquero experto:</u> Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
+<u>Arquero experto</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
 
 - **Disparo falso**: Tu objetivo debe defenderse con averiguar intenciones. Si fracasa, estará fintado contra el siguiente ataque que reciba.
 - **Disparo certero:** Tu objetivo debe defenderse con heroísmo. Si fracasa será inmediatamente desarmado del arma que lleve.
 - **Disparo afortunado**: Tu objetivo debe defenderse con esquiva. Si fracasa, un objeto pequeño que lleve encima se caerá inmediatamente al suelo. Algunas posibilidades son bombas, medicinas o municiones adicionales. Si el objeto es particularmente frágil este será destruido por tu arma.
 
-<u>Ataque rápido:</u> Hacer un ataque con tu arma te cuesta ahora una acción de movimiento. Puedes realizar ataques de oportunidad con tu arma si obtienes una defensa crítica o tu objetivo obtiene un fracaso crítico.
+<u>Ataque rápido</u> (pasiva): Eres capaz de realizar ataques con gran celeridad. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos. A rango IV aumenta tu máximo de acciones por 1.
 
 ## Rango III 
 
 Aumenta tu probabilidad de crítico a 19-20.
 
-<u>Disparo preciso:</u> Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las ventajas que estos les otorgarán. Esta habilidad solo se aplica contra enemigos que no estén en ocultamiento o cubierta completa y se encuentren a menos de 30 pies de ti (puedes añadir un dado de desventaja a tu tiro de ataque para aumentar esta distancia por 30 pies adicionales).
+<u>Disparo preciso</u> (pasiva): Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las ventajas que estos les otorgarán. Esta habilidad solo se aplica contra enemigos que no estén en ocultamiento o cubierta completa y se encuentren a menos de 30 pies de ti (puedes añadir un dado de desventaja a tu tiro de ataque para aumentar esta distancia por 30 pies adicionales).
 
-<u>Ojo de francotirador:</u> Tu perfecta puntería te permite disparar a enemigos mucho más lejanos. Aumenta tu alcance base y máximo por 30 pies, reduciendo así las penalizaciones por disparar a distancias superiores por un dado de desventaja (vuelve a aumentar tu alcance de esta misma manera cuando alcances el rango V). Añade también tu rango en armas a distancia a todos tus tiros de percepción.
+<u>Ojo de francotirador</u> (pasiva): Tu perfecta puntería te permite disparar a enemigos mucho más lejanos. Aumenta tu alcance base y máximo por 30 pies, reduciendo así las penalizaciones por disparar a distancias superiores por un dado de desventaja (vuelve a aumentar tu alcance de esta misma manera cuando alcances el rango V). Añade también tu rango en armas a distancia a todos tus tiros de percepción.
 
 ## Rango IV
 
-<u>Disparo en movimiento</u>: Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones por disparar desde una montura o vehículo en movimiento y cada vez que esquives exitosamente un ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto se acumula con el atributo *evasión*).
+<u>Disparo en movimiento</u> (pasiva y reacción) Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones por disparar desde una montura o vehículo en movimiento y cada vez que esquives exitosamente un ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto se acumula con el atributo *evasión*).
 
-<u>Arquero ágil:</u> Una vez por turno puedes realizar un ataque adicional a distancia como acción bonus. También eres capaz de disparar flechas para interceptar ataques hechos a tus aliados, permitiéndote añadir tu rango con arma a distancia al tiro defensivo de un aliado a 60 pies de ti. Solo podrás proteger a tus aliados de esta manera si te encuentras en posición defensiva.
+<u>Fuego de cubiert</u> (reacción):  Eres capaz de disparar flechas para interceptar ataques hechos a tus aliados, permitiéndote añadir tu rango con arma a distancia al tiro defensivo de un aliado a 60 pies de ti. Solo podrás proteger a tus aliados de esta manera si te encuentras en posición defensiva.
 
 ## Rango V
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Impacto vital</u>: Eres capaz de matar a un enemigo de un único flechazo. Al impactar a un objetivo con un ataque afectado por *puntería mortal* aumenta el nivel de las heridas permanentes provocadas por un paso una cantidad de veces igual al número de d6 que hayas añadido al daño base.
+<u>Impacto vital</u> (pasiva): Eres capaz de matar a un enemigo de un único flechazo. Al impactar a un objetivo con un ataque afectado por *puntería mortal* aumenta el nivel de las heridas permanentes provocadas por un paso una cantidad de veces igual al número de d6 que hayas añadido al daño base.
 
-<u>Puntería experta</u>: Al apuntar a un enemigo eres capaz de sobrepasar sus mismas defensas. Si atacas a un enemigo que intenta detener el ataque en lugar de esquivarlo y tienes ventaja en tu tiro le impactarás de manera automática sin importar su resultado en el tiro defensivo. Esta habilidad no funciona contra enemigos que se encuentren en posición defensiva.
+<u>Puntería experta</u> (pasiva): Al apuntar a un enemigo eres capaz de sobrepasar sus mismas defensas. Si atacas a un enemigo que intenta detener el ataque en lugar de esquivarlo y tienes ventaja en tu tiro le impactarás de manera automática sin importar su resultado en el tiro defensivo. Esta habilidad no funciona contra enemigos que se encuentren en posición defensiva.
 
 ## Armas
 
