@@ -1,6 +1,6 @@
 ---
 title: Character creation
-layout: index
+layout: summary
 menuorder: 1
 ---
 

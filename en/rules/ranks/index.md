@@ -1,5 +1,6 @@
 ---
 title: Ranks
-layout: index
+layout: summary
 menuorder: 2
 ---
+
