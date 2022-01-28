@@ -17,7 +17,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 - **Protección:** Tu dios te otorga poder para proteger un lugar, objeto o persona de cualquier amenaza que atente contra ella. Recibes ventaja en tus tiros de ataque y defensa mientras que te encuentres en el  lugar que buscas proteger o realizas acciones para proteger a la persona u objeto escogido. Perderás los beneficios de protección si te alejas de aquello que buscas proteger.
 - **Venganza:** Tu dios empodera tus sentimientos de ira y venganza, empoderándote para acabar con todos tus enemigos. Recibes ventaja en todos tus tiros de ataque y defensa hechos contra criaturas que hayan provocado daño a ti o a un ser querido. Si sigues este precepto deberás luchar hasta la muerte contra tus enemigos sin ningún tipo de piedad o remordimiento, perdiendo los beneficios de esta habilidad si realizas una acción cobarde a los ojos de tu dios.
 
-<u>Sanador de combate</u> (pasiva): La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de [Primeros auxilios](https://raldamain.com/rules/Crear personajes/talentos.html#primeros-auxilios-sab) para curar a un aliado este recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Una vez al día puedes reducir por un paso el nivel de una [herida permanente](https://raldamain.com/rules/Reglas principales/Heridas permanentes.html) que tenga un objetivo. Recibirás un uso adicional de esa habilidad a Rango III y a Rango V.
+<u>Sanador de combate</u> (2 acciones): La energía divina que recorre tu cuerpo te permite sanar con más facilidad. Al hacer un tiro de [Primeros auxilios](https://raldamain.com/rules/Crear personajes/talentos.html#primeros-auxilios-sab) para curar a un aliado este recuperará Vitalidad igual a tu rango de Guerrero divino + 2. Una vez al día puedes reducir por un paso el nivel de una [herida permanente](https://raldamain.com/rules/Reglas principales/Heridas permanentes.html) que tenga un objetivo. Recibirás un uso adicional de esa habilidad a Rango III y a Rango V.
 
 ## Rango II
 
@@ -27,7 +27,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 ## Rango III
 
-<u>Plegaria</u> (pasiva): Antes de una batalla puedes realizar una plegaria a tu dios junto con tus aliados para concederles buena fortuna en la batalla. Todos aquellos que realicen la plegaria contigo recibirán ventaja en sus tiros de ataque y defensa hasta que reciban una herida permanente o sufran un *[efecto de estado negativo](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html)*. Un personaje no podrá volver a recibir los bonificadores de plegaria de nuevo durante el combate.
+<u>Plegaria</u> (ritual): Antes de una batalla puedes realizar una plegaria a tu dios junto con tus aliados para concederles buena fortuna en la batalla. Todos aquellos que realicen la plegaria contigo recibirán ventaja en sus tiros de ataque y defensa hasta que reciban una herida permanente o sufran un *[efecto de estado negativo](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html)*. Un personaje no podrá volver a recibir los bonificadores de plegaria de nuevo durante el combate.
 
 <u>Guardián de la fe</u> (2 acciones): Empleando 2 acciones puedes permitir que la energía divina fluya por tu cuerpo, otorgándote fuerza sobrenatural. Guardián de la fe aumentará tu FUE y CON por 1 y te da Resistencia 2 contra daño físico, la cual sólo puede ser atravesada por *[armas sacras](https://raldamain.com/rules/Rangos/Religion/guerrero%20divino.html#rango-ii)*. Esta durará una cantidad de rondas igual a tu rango + 2 y cuando alcances el rango V aumenta tres de tus estadísticas de nuevo por 1.
 
@@ -41,7 +41,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 <u>Aura sacra</u> (pasiva): Eres un santo viviente de tu fe. Cuando uses la habilidad Guardián de la fe activas un aura divina de 20 pies que otorgará resistencia 4 a armas físicas y efectos mentales a todas las criaturas que se encuentren en ella (no se acumula con guerrero de la fe). Además, toda criatura de tu fe que muera en tu aura divina podrá revivir a 1 PV una vez por combate (esto no te incluye a ti). Aura sacra se desactiva junto a guardián de la fe y sus bonificadores se acumulan con Hueste divina.
 
-<u>Intervención divina</u> (pasiva): Cuando estés en un momento de mayor peligro, puedes llamar a tu dios para salvarte. Esta habilidad sólo puede usarse una vez al día y cuando estés a 3 o menos PV. Podrás escoger uno de los siguientes efectos para como Intervención divina.
+<u>Intervención divina</u> (pasiva): Cuando estés en un momento de mayor peligro puedes llamar a tu dios para salvarte. Esta habilidad sólo puede usarse una vez al día y cuando estés a 3 o menos PV. Podrás escoger uno de los siguientes efectos para Intervención divina.
 
 - Te sanas toda tu vitalidad, 6 PV y elimina todos los efectos de estado negativos que tengas.
 - Un grupo de hasta 6 aliados que hayan muerto hace como mucho un minuto resucitan a 6 PV y reciben la habilidad Guardián de la fe

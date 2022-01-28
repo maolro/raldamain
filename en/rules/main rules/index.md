@@ -1,6 +1,6 @@
 ---
 title: Main rules
-layout: index
+layout: summary
 menuorder: 3
 ---
 
