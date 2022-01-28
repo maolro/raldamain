@@ -7,9 +7,7 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 ## Rango I
 
-<u>Aptitud con dos armas:</u> Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
-
-<u>Estilo de combate:</u> Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
+<u>Aptitud con dos armas</u> (acción bonus) Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
 
 ## Armas de fuego  
 
