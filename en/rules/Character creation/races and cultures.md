@@ -40,9 +40,9 @@ Jaddites have dark brown skin and eyes. Their hair is mostly black, and they tra
 
 As diverse as the nature they worship, the Shinri are innovative and creative, but at the same time bound by their ancient ways and traditions. Originally from a faraway continent, the Shinri settled in the territory known as the Woodland Provinces millennia ago, bringing with them their culture and knowledge. Their arrival brought hostility from the local spirits and triggered many devastating wars, but in the end a legendary hero known as the Incarnate brought humans and spirits together, creating an ancient truce that lasts to this day. 
 
-Many Shinri are blessed with elemental powers, giving them the control over the four classical elements. Those are known as Takai and hold great prestige in Shinri society, often becoming rulers and heroes of legend. Elemental dynasties stretch on for centuries and their stories say that they descend from the mythical spirits themselves. 
+Many Shinri are blessed with elemental powers, giving them the control over the four classical elements. Those are known as Ekta and hold great prestige in Shinri society, often becoming rulers and heroes of legend. Elemental dynasties stretch on for centuries and their stories say that they descend from the mythical spirits themselves. 
 
-The Shinri homeland is full of untamed wilderness and secretive groves where gates to the Spirit World can be found. At the same time, there are also great and powerful cities such as Klonum or Homay that serve as homes for hundreds of thousands of individuals. In recent times the Shinri lands have become consumed by war between the expansionistic Ustilus empire and the Shinri clans. The conflict has completely broken all central authority and the lands remain under the control of feudal warlords and Takai clans who fight the Ustilian invaders as well as each other for supremacy.
+The Shinri homeland is full of untamed wilderness and secretive groves where gates to the Spirit World can be found. At the same time, there are also great and powerful cities such as Klonum or Homay that serve as homes for hundreds of thousands of individuals. In recent times the Shinri lands have become consumed by war between the expansionistic Ustilus empire and the Shinri clans. The conflict has completely broken all central authority and the lands remain under the control of feudal warlords and Ekta clans who fight the Ustilian invaders as well as each other for supremacy.
 
 Shinri generally have light skin, black hair, and brown eyes. Those gifted with elemental powers may have unique traits, such as different-colored eyes or special markings on their skin
 
@@ -85,13 +85,3 @@ The origins themselves of the dairovian people are shrouded in mystery, making s
 As the Ustilian empire's most backwater province, Dairov is a perfect place for those that wish to begin a new life or hide from the authorities. For this reason many secret societies and criminal organizations have bases in this region, subtly impacting the lives of its native inhabitants and researching the land's darkest lore. Dairovians have a symbiotic relationship with these groups, helping them keep secret in exchange of making sure they do not interfere in their lives or discover secrets that should remain unknown.
 
 Dairovians normally have dark hair and eyes along with pale skin. Some dairovains born with great influence of the Shadowfell develop unique traits such as pitch-black eyes or grayish skin.
-
-## Non-human
-
-### Half-elves
-
-Children of two worlds, Half-elves cause admiration and envy of those around them. Due to their elven heritage Half-elves are blessed with long lifespans and an innate talent for magic, which combined with human ingenuity and creativity grants them the ability to achieve greatness. With no land or culture to truly call their own, Half-elves often travel many lands to search for adventure and figure out their place in the world.
-
-### Hobgoblins
-
-From birth to death, war is a fundamental part of a hobgoblin's life.
