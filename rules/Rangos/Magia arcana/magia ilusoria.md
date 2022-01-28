@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros relacionados con magia ilusoria. Tu reserva au
 
 Si tienes rangos en *[Magia mental](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html)* puedes hacer que tus ilusiones sean sólo percibidas por una criatura de tu elección, las cuales funcionarán como un efecto mental pero no podrán ser desmentidas por contacto.
 
-<u>Cambiar aspecto:</u> Usando ilusiones puedes alterar tu aspecto para crear un disfraz casi indistinguible de la realidad. Con esta habilidad puedes asemejarte a una persona diferente de proporciones similares a las tuyas. Esta ilusión puede desmentirse de la misma manera que una ilusión normal. Mientras estés usando Cambiar aspecto, recibes *[ocultamiento](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ocultamiento)* contra ataques cuerpo a cuerpo hechos por criaturas que no hayan desmentido la ilusión, otorgándote ventaja en tus tiros defensivos.
+<u>Cambiar aspecto</u> (1 acción): Usando ilusiones puedes alterar tu aspecto para crear un disfraz casi indistinguible de la realidad. Con esta habilidad puedes asemejarte a una persona diferente de proporciones similares a las tuyas. Esta ilusión puede desmentirse de la misma manera que una ilusión normal. Mientras estés usando Cambiar aspecto, recibes *[ocultamiento](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ocultamiento)* contra ataques cuerpo a cuerpo hechos por criaturas que no hayan desmentido la ilusión, otorgándote ventaja en tus tiros defensivos.
 
 ## Rango II
 
