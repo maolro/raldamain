@@ -21,7 +21,7 @@ Añade tu rango de Reflejos a todos los tiros defensivos de esquiva.
 
 ## Rango III
 
-Recibes una acción adicional por turno.
+Aumenta tu cantidad máxima de acciones al turno por 1.
 
 <u>Gran acróbata</u> (pasiva): Recibes velocidad de escalada igual a tu velocidad normal. Puedes caminar por superficies estrechas y terreno difícil sin sufrir penalizaciones, además de que puedes esquivar con normalidad en estas. Si tienes un nivel de talento elevado en acrobacias puedes esquivar ataques enemigos con mayor facilidad, puediendo así repetir un tiro defensivo de reflejos una vez por ronda si tienes nivel de talento 3 o más (2 veces por ronda si tienes nivel de talento 5 o más).
 
@@ -35,7 +35,7 @@ Recibes una acción adicional por turno.
 
 ## Rango V
 
-Recibes una acción adicional por turno.
+Aumenta tu cantidad máxima de acciones al turno por 1.
 
 <u>Libertad de movimiento</u> (pasiva): Obtienes resistencia igual a tu destreza contra agarre y otros efectos que intenten retenerte. No provocas ataques de oportunidad al moverte fuera del alcance de una criatura.
 
