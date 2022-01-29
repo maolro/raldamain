@@ -7,21 +7,21 @@ Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras p
 
 ## Rango I
 
-<u>Entrenamiento con armaduras:</u> Reduce por 2 el penalizador de armadura. En el caso que logres reducir el penalizador a 0 podrás moverte y usar habilidades de reflejos como si no llevases armadura, aunque obtendrás desventaja en tiros de esquiva y talentos relacionados con la destreza. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 2
+<u>Entrenamiento con armaduras</u> (pasiva): Reduce por 2 el penalizador de armadura. En el caso que logres reducir el penalizador a 0 podrás moverte y usar habilidades de reflejos como si no llevases armadura, aunque obtendrás desventaja en tiros de esquiva y talentos relacionados con la destreza. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 2
 
-<u>Defensa reforzada:</u> Incrementa tu defensa por 2 si llevas armadura. La defensa volverá a aumentar por 1 cada vez que obtengas un rango en aptitud con armaduras. Este incremento a la defensa también reduce el daño de ataques no-mágicos contra los cuales no se aplica tu armadura, como puntería mortal.
+<u>Defensa reforzada</u> (pasiva): Incrementa tu defensa por 2 si llevas armadura. La defensa volverá a aumentar por 1 cada vez que obtengas un rango en aptitud con armaduras. Este incremento a la defensa también reduce el daño de ataques no-mágicos contra los cuales no se aplica tu armadura, como puntería mortal.
 
 ## Rango II
 
-<u>Blindaje:</u> Recibes resistencia igual a tu rango + 1 contra aturdimiento y ralentizar provocado por ataques no mágicos. Si eres impactado por un arma de fuego con puntería mortal reduce el daño recibido por un valor igual a tu defensa reforzada. Perderás los beneficios de habilidad si la defensa de tu armadura es reducida a la mitad y la recuperarás si esta es reparada.
+<u>Blindaje</u> (pasiva): Recibes resistencia igual a tu rango + 1 contra aturdimiento y ralentizar provocado por ataques no mágicos. Si eres impactado por un arma de fuego con puntería mortal reduce el daño recibido por un valor igual a tu defensa reforzada. Perderás los beneficios de habilidad si la defensa de tu armadura es reducida a la mitad y la recuperarás si esta es reparada.
 
-<u>Protección elemental:</u> Dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado, lo cual requerirá un gasto de 2 créditos. Obtienes resistencia igual a tu rango de armaduras x 2 contra el elemento de tu elección y los efectos de estado producidos por este. Esto se acumula con otras resistencias que poseas. Empleando crédito puedes recibir resistencias adicionales para tu armadura, lo cual te cuesta 2 créditos adicionales y cuenta como una mejora de armaduras.
+<u>Protección elemental</u> (pasiva): Dedicando un mes de trabajo y buscando los materiales correctos puedes hacer que tu armadura te proteja contra un elemento determinado, lo cual requerirá un gasto de 2 créditos. Obtienes resistencia igual a tu rango de armaduras x 2 contra el elemento de tu elección y los efectos de estado producidos por este. Esto se acumula con otras resistencias que poseas. Empleando crédito puedes recibir resistencias adicionales para tu armadura, lo cual te cuesta 2 créditos adicionales y cuenta como una mejora de armaduras.
 
 ## Rango III
 
-<u>Armadura infundida:</u> Tu armadura actúa como extensión de tu cuerpo y se infunde de tu poder mágico. Para ello debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, un proceso que te cuesta 3 créditos. Una armadura mágica incrementa tu resistencia mágica por un valor igual a tu rango de armaduras x 2 y tiene mayor dureza que una armadura de su mismo tipo. A este nivel puedes gastar crédito para añadir mejoras mágicas a tu armadura.
+<u>Armadura infundida</u> (pasiva): Tu armadura actúa como extensión de tu cuerpo y se infunde de tu poder mágico. Para ello debes pasarte un mes obteniendo materiales especiales para fabricar una armadura mágica, un proceso que te cuesta 3 créditos. Una armadura mágica incrementa tu resistencia mágica por un valor igual a tu rango de armaduras x 2 y tiene mayor dureza que una armadura de su mismo tipo. A este nivel puedes gastar crédito para añadir mejoras mágicas a tu armadura.
 
-<u>Campeón de acero:</u> La armadura te protege hasta de ataques mortales. Una vez al turno como reacción puedes reducir el nivel de una herida permanente que sufras por un paso. Esta habilidad puede detener también ataques de muerte instantánea como [maestro cazador](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-v) o [impacto vital](https://raldamain.com/rules/Rangos/Armas/arcos.html#rango-v), evitando el daño adicional y causando que sólo te provoquen una herida grave.
+<u>Campeón de acero</u> (reacción): La armadura te protege hasta de ataques mortales. Una vez al turno como reacción puedes reducir el nivel de una herida permanente que sufras por un paso. Esta habilidad puede detener también ataques de muerte instantánea como [maestro cazador](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-v) o [impacto vital](https://raldamain.com/rules/Rangos/Armas/arcos.html#rango-v), evitando el daño adicional y causando que sólo te provoquen una herida grave.
 
 ## Tipos de armadura
 
