@@ -11,17 +11,19 @@ Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada
 
 Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia de vida.
 
-<u>Fuego celestial:</u> La energía celestial que fluye por tus venas se manifiesta en emanaciones de fuego luminoso. Recibes la capacidad de crear un orbe de luz de manera innata, el cual te seguirá por donde vayas y desprenderá luz brillante en un aura de 20 pies, disipando toda la oscuridad mágica con la que entra en contacto. Una vez por turno puedes emplear una acción bonus para mover a tu orbe de luz 15 pies en cualquier dirección. 
+<u>Fuego celestial</u> (pasiva y 1 acción): La energía celestial que fluye por tus venas se manifiesta en emanaciones de fuego luminoso. Recibes la capacidad de crear un orbe de luz de manera innata, el cual te seguirá por donde vayas y desprenderá luz brillante en un aura de 20 pies. Empleando una acción puedes mover el orbe de luz 15 pies en cualquier dirección y emitir una intensa luz, disipando toda la oscuridad mágica que se encuentre a 20 pies de él y provocando desventaja en todos sus tiros defensivos de parada a toda criatura que se encuentre en la misma posición que el orbe.
 
-<u>Bendito por el cielo:</u> Puedes lanzar hechizos divinos usando tu estadística de carisma en vez de sabiduría. Tienes además resistencia igual a tu Rango contra daño necrótico y radiante. Adicionalmente al utilizar Primeros auxilios sanarás una cantidad de Vitalidad igual a 1d4 + CAR y una vez al día puedes reducir el nivel de un veneno o herida permanente por un paso (2 veces al día a rango III y 3 veces a rango V).
+<u>Bendito por el cielo</u> (pasiva) Puedes lanzar hechizos divinos usando tu estadística de carisma en vez de sabiduría. Tienes además resistencia igual a tu Rango contra daño necrótico y radiante. Adicionalmente al utilizar [*primeros auxilios*](https://raldamain.com/rules/Crear%20personajes/talentos.html#primeros-auxilios-sab) sanarás una cantidad de Vitalidad igual a 1d4 + CAR y una vez al día puedes reducir el nivel de un veneno o herida permanente por un paso (2 veces al día a rango III y 3 veces a rango V).
 
 ## Rango II
 
 Incrementa tu CAR por 1.
 
-<u>Aura de luz:</u> Como acción estándar puedes rodearte de un aura luminosa de 30 pies de radio. El aura elimina toda la oscuridad mágica en ese área y ciega a las criaturas sensibles a la luz. La zona afectada por tu aura cuenta además como si fuese tierra consagrada, impidiendo la sanación y creación de no-muertos. El aura de luz dura 4 turnos y sólo puede usarse un número de veces al día igual a tu rango + 1.
+<u>Aura de luz</u> (2 acciones): Empleando dos acciones puedes rodearte de un aura luminosa de 30 pies de radio. El aura elimina toda la oscuridad mágica en ese área y ciega a las criaturas sensibles a la luz. La zona afectada por tu aura cuenta además como si fuese tierra consagrada, impidiendo la sanación y creación de no-muertos. El aura de luz permanecerá mientras mantengas la concentración en ella y se disipará al entrar en un entorno afectado por oscuridad profunda.
 
-<u>Arma angelical:</u> Tus ataques son muy efectivas contra criaturas malvadas, infligiéndoles +2 daño radiante con tus ataques. Al impactar a una criatura [abisal](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia abisal.html) o [demoníaca](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia infernal.html), anularás su regeneración durante un turno y quedará aturdida si obtienes un golpe crítico. Esta habilidad se acumula con arma sacra 
+<u>Arma angelical</u> (pasiva):
+
+ Tus ataques son muy efectivas contra criaturas malvadas, infligiéndoles +2 daño radiante con tus ataques. Al impactar a una criatura [abisal](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia abisal.html) o [demoníaca](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia infernal.html), anularás su regeneración durante un turno y quedará aturdida si obtienes un golpe crítico. Esta habilidad se acumula con arma sacra 
 
 ## Rango III
 
@@ -35,15 +37,15 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu SAB por 1.
 
-<u>Sentido del mal:</u> Detectas la presencia del mal en un aura 60 pies. Con esta habilidad identificas todas las criaturas, objetos y hechizos relacionados con el abismo, el infierno o los primigenios, conociendo su posición y fuerza aproximada. También eres capaz de notar cuando una criatura te miente intencionalmente como si tuvieses éxito en un tiro de Averiguar intenciones (esta habilidad no funciona con criaturas que tengan la habilidad [lengua del diablo](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia infernal.html#rango-ii)).
+<u>Sentido del mal</u> (pasiva): Detectas la presencia del mal en un aura 60 pies. Con esta habilidad identificas todas las criaturas, objetos y hechizos relacionados con el abismo, el infierno o espíritus malignos, conociendo su posición y fuerza aproximada. También eres capaz de notar cuando una criatura te miente intencionalmente como si tuvieses éxito en un tiro de *averiguar intenciones* (esta habilidad no funciona con criaturas que tengan la habilidad [*lengua del diablo*](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia infernal.html#rango-ii) o con criaturas no-muertas e incorpóreas).
 
-<u>Milagro de restauración:</u> Como acción estándar usable un número de veces al día igual a tu Rango - 2 puedes eliminar un [efecto de estado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html), [veneno](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), [enfermedad](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#enfermedades), maldición o hechizo que afecte a una criatura. Puedes también emplear un uso de esta habilidad mientras sanas a una criatura para incrementar hasta dos estadísticas reducidas por 1.
+<u>Milagro de restauración</u> (2 acciones): Una cantidad de veces al día igual a tu rango - 2 puedes eliminar un [efecto de estado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html), [veneno](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), [enfermedad](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#enfermedades), maldición o hechizo que afecte a una criatura. Puedes también emplear un uso de esta habilidad mientras sanas a una criatura para incrementar hasta dos estadísticas reducidas por 1.
 
 ## Rango V
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-<u>Aura de vida:</u> Al activar tu aura de luz todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si se encuentran al máximo de vitalidad, entonces recuperarán PV (tú estás incluido). Todas las criaturas enemigas de la fe sufrirán 2 daño radiante cada ronda que permanezcan en el aura.
+<u>Aura de vida</u> (pasiva): Al activar tu aura de luz todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si se encuentran al máximo de vitalidad entonces recuperarán 1 PV cada turno (tú te sanarás también vitalidad . Todas las criaturas enemigas de la fe sufrirán 2 daño radiante cada ronda que permanezcan en el aura.
 
 <u>Ver la verdad:</u> Tienes visión verdadera en un área de 80 pies, permitiéndote ver a través de [ilusiones](https://raldamain.com/rules/Rangos/Magia arcana/magia ilusoria.html) y detectar criaturas invisibles. Obtienes resistencia igual a tu rango contra [efectos fantasmales](https://raldamain.com/rules/Rangos/Magia arcana/magia ilusoria.html#rango-i).
 
