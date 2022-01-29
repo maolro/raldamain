@@ -113,13 +113,13 @@ Un ataque conjunto cuenta como un ataque de área, infligiendo daño aunque el d
 
 ## Caídas
 
-Las caídas representan el daño que sufrirá un personaje por impactar un objeto a excesivas velocidades. Este daño sólo es reducido por resistencias a daño físico, ignorando tanto armaduras artificiales y naturales. Un personaje que se cae sufrirá 1 daño contundente por cada 5 pies de distancia que caiga, el cual ignorará armadura natural. Este daño pasará a ser no-letal. Si tu objetivo cae un número determinado de pies sufrirá heridas permanentes tal como indica esta tabla.
+Las caídas representan el daño que sufrirá un personaje por impactar un objeto a excesivas velocidades. Este daño sólo es reducido por resistencias a daño físico, ignorando tanto armaduras artificiales y naturales. La armadura ligera aún se aplicará mientras que otros tipos de armadura incrementarán el daño por 2 según cada categoría de peso por la cual superen la armadura ligera (por ejemplo, la armadura pesada incrementará el daño de caída por 4). El daño y las heridas permanences que recibirá un personaje dependerá de la cantidad de pies que caerá un personaje tal como se especifica en la siguiente tabla.
 
-| Pies  | Herida permanente    |
-| ----- | -------------------- |
-| 5-10  | Ninguna              |
-| 15-20 | Leve                 |
-| 30-45 | 2 leves o una media  |
-| 50-65 | 2 medias o una grave |
-| 70+   | 2 graves             |
+| Pies                                        | **Daño** | Herida permanente |
+| ------------------------------------------- | -------- | ----------------- |
+| 5-10 (caerse de un caballo)                 | 1d4      | Ninguna           |
+| 15-25 (caerse de un edificio de una planta) | 1d6      | Leve              |
+| 30-45 (caerse de un muro)                   | 2d6      | 2 leves           |
+| 50-65 (caerse de una torre de 3 plantas)    | 3d6      | 2 medias          |
+| 70+ (caerse por un precipicio)              | 4d6      | 2 graves          |
 
