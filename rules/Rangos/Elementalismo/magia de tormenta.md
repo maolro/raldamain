@@ -17,7 +17,7 @@ Añade un dado de soltura a todos tus ataques elementales.
 
 ## Rango II
 
-<u>Relámpago en cadena</u> (1 accuñib) Al impactar con un ataque de relámpago puedes emplear una acción  para que este salte de ese objetivo a otro que se encuentre a 20 pies de él, permitiéndote realizar un ataque adicional contra él. Emplear relámpago en cadena te cuesta una acción bonus si tu nuevo objetivo lleva armadura pesada de metal o se encuentra en un espacio cargado. A rango IV puedes afectar a un objetivo adicional a 20 pies cuando utilices relámpago en cadena. Esta habilidad puede emplearse numerosas veces en el mismo ataque.
+<u>Relámpago en cadena</u> (1 acción) Al impactar con un ataque de relámpago puedes emplear una acción  para que este salte de ese objetivo a otro que se encuentre a 20 pies de él, permitiéndote realizar un ataque adicional contra él. Emplear relámpago en cadena te cuesta una acción bonus si tu nuevo objetivo lleva armadura pesada de metal o se encuentra en un espacio cargado. A rango IV puedes afectar a un objetivo adicional a 20 pies cuando utilices relámpago en cadena. Esta habilidad puede emplearse numerosas veces en el mismo ataque.
 
 <u>Cargar el aire</u> (1 acción) Puedes emplear un ataque elemental para cargar una porción de aire de volumen igual a 5 pies por rango con energía eléctrica. Cada vez que una criatura pase por una zona cargada deberá hacer un tiro de CON contra tu ataque elemental o sufrirá 1d6 daño eléctrico y quedará ralentizada durante el resto de la ronda (las criaturas con armadura metálica fracasarán automáticamente este tiro). Un área cargada se desvanecerá al principio de tu siguiente turno salvo que afectes a un muro de viento o un torbellino con esta habilidad.
 
@@ -42,7 +42,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 18-20.
+Aumenta tu probabilidad de crítico a 18-20. Aumenta tu máximo de acciones al turno por 1.
 
 <u>Rayo divino:</u> Tus ataques eléctricos son capaces de atravesar las resistencias de tus objetivos y todos los rayos que lances desde el cielo aumentarán su daño base por 1d6. Criaturas con resistencia al daño eléctrico continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas. Un rayo divino también es capaz de herir a criaturas incorpóreas.
 

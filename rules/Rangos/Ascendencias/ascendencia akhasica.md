@@ -31,7 +31,7 @@ Obtienes Resistencia 2 a daño físico.
 
 ## Rango IV
 
-Incrementa tu SAB por 1.
+Incrementa tu SAB por 1. Aumenta tu cantidad máxima de acciones al turno por 1.
 
 <u>Visión verdadera</u> (pasiva): La razón te permite ver más allá del mundo sensible, percibiendo el mundo como realmente es. Tienes visión verdadera en un radio de 60 pies, lo cual te permite percibir a criaturas invisibles e ilusiones con normalidad. Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede causarte daño mental si intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres pueden ser inconcebibles para mentes humanas.
 
