@@ -19,7 +19,7 @@ Añade tu rango a todos los tiros de ataque hechos con armas de fuego.
 
 ## Rango II
 
-<u>Recarga rápida</u> (pasiva): Reduce el coste en acciones para recargar tu arma por 1 (mínimo 1). Hacer ataques con tu arma ahora te cuesta una acción de movimiento. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos y a rango IV aumenta tu máximo de acciones por 1.
+<u>Recarga rápida</u> (pasiva): Reduce el coste en acciones para recargar tu arma por 1 (mínimo 1). Hacer un ataque con un arma perforante ahora te cuesta una acción menos y a rango IV aumenta tu máximo de acciones por 1.
 
 <u>Arquero experto</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
 

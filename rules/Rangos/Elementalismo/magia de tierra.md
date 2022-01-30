@@ -39,7 +39,7 @@ Incrementa tu probabilidad de crítico a 19-20 y el tamaño de tus ataques por 5
 
 ## Rango V
 
-Incrementa tu probabilidad de crítico a 18-20 y el tamaño de tus ataques por 5 pies.
+Incrementa tu probabilidad de crítico a 18-20 y el tamaño de tus ataques por 5 pies. Aumenta tu máximo de acciones al turno por 1.
 
 <u>Terremoto</u>: Como acción de turno completo puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas localizadas en dicho espacio deberán tirar fuerza o caerán inmediatamente al suelo mientras que los edificios se derrumbarán si están hechos de piedra u otro material frágil (edificios particularmente grandes o sólidos no pueden ser destruidos por este efecto, aunque sufrirán leves daños estructurales). El área afectada por un terremoto se convertirá en terreno difícil a causa de los derrumbamientos ocasionados.
 
