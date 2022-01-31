@@ -9,7 +9,7 @@ Como jinete entrenado eres mejor cuando luchas acompañado de tu montura, emplea
 
 No sufres penalizaciones por disparar montado.
 
-<u>Jinete experto</u> (pasiva y 1 acción): Tienes un poderoso vínculo con un animal, el cual puedes montar en combate. Tu montura es una criatura de [base cuadrúpeda](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#formas-base) de tamaño grande con nivel igual a tu nivel base dividido entre 2 (mínimo nivel 1). Puedes emplear tus acciones para que tu montura realice una acción adicional en su turno. Si eres atacado, podrás usar el tiro de Esquiva de tu montura en lugar del tuyo.
+<u>Jinete experto</u> (pasiva y 1 acción): Tienes un poderoso vínculo con un animal, el cual puedes montar en combate. Tu montura es una criatura de [base cuadrúpeda](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#formas-base) de tamaño grande con nivel igual a tu nivel base dividido entre 2 (mínimo nivel 1). Puedes emplear tus acciones para que tu montura realice una acción adicional en su turno. Si eres atacado podrás usar el tiro de esquiva de tu montura en lugar del tuyo además que puedes emplar tu parada para protege
 
 <u>Carga de caballería</u> (pasiva): Tus ataques son particularmente poderosos al cargar. Si tu montura se mueve 40 pies en una línea recta y realizas un ataque, incrementa tu daño base por 1d6 y podrás realizar una maniobra gratuita de tropezar. Tu montura puede atacar a una criatura adyacente a ella que esté en el suelo como acción bonus. 
 

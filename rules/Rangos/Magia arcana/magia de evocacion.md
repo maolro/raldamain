@@ -17,7 +17,7 @@ Añade tu rango de a todos tus tiros relacionados con magia de evocación. Tu re
 
 ## Rango II
 
-<u>Acelerar hechizo</u> (pasiva): Tu soltura con la magia de evocación te permite lanzar ataques con mayor velocidad. Lanzar un rayo de energía ahora te cuesta una acción en lugar de dos. A rango IV puedes lanzar un Rayo de energía como acción bonus una vez al turno.
+<u>Acelerar hechizo</u> (pasiva): Tu soltura con la magia de evocación te permite lanzar ataques con mayor velocidad. Lanzar un rayo de energía ahora te cuesta una acción en lugar de dos. 
 
 <u>Infundir arma</u> (acción bonus): Puedes gastar 1 chi de tu reserva como acción bonus para infundir tu arma de energía mágica. Tu arma infligirá +2 daño de energía en ataques durante un número de turnos igual a tu rango. Mientras esté infundida tu arma cuenta como arma mágica para el propósito de atravesar resistencias. Puedes gastar 1 chi adicional en esta habilidad para que el daño de energía que inflija aumente por 1 (máximo +5 daño). 
 
@@ -42,13 +42,15 @@ Si pierdes la concentración mientras mantienes energía almacenada esta se libe
 
 ## Rango IV  
 
+Aumenta tu máximo de acciones al turno por 1.
+
 <u>Destrozar defensas</u> (pasiva):Tus ataques pueden drenar la energía mágica del objetivo, debilitando sus defensas y haciéndolo más vulnerable a tus ataques mágicos. Al impactar a un objetivo con armadura mágica con un ataque de magia de evocación empoderado con foco de energía reduce la resistencia mágica que tenga por 1. Puedes gastar chi en habilidades de *[Magia Protectora](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html)* que tengas como *[Eliminar magia](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* o *[Disrupción](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-i)* al impactar con un ataque de evocación. 
 
 <u>Aspecto elemental</u> (pasiva): Tienes la capacidad de canalizar el poder de los elementos en tus ataques mágicos. Puedes hacer ataques elementales de cualquier tipo con magia de evocación. Estos ataques funcionan como si fuesen de Rango I para determinar los efectos adicionales que provocan al infligir daño a los PV. El daño hecho con uno de estos ataques elementales no atraviesa resistencias. Puedes también gastar 1 chi para usar la habilidad *[Reserva de energía](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20de%20evocacion.html#rango-i)* del elemento asociado a tu ataque sin sufrir daño no-letal y 2 chi para recibir una habilidad entre *[Vientos protectores](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20aire.html#rango-iii)*, *[Aura abrasadora](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-iii)*, *[Armadura de piedras](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-ii)* y *[Forma fluida](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii)* (cada una de estas requiere tu concentración). Si posees la habilidad *[Armadura mágica](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* esta otorgará resistencia contra un elemento de tu elección igual a la defensa que esta otorgue.  
 
 ## Rango V   
 
-Aumenta tu probabilidad de crítico a 18-20. 
+Aumenta tu probabilidad de crítico a 18-20,
 
 <u>Desintegrar</u> (pasiva): Al impactar con un ataque de evocación empoderado con 5 o más cargas u obtener un golpe crítico desintegra a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantina o material mágico. Las criaturas que no lleven *[Armadura mágica](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* o la tengan reducida a 0 morirán instantáneamente, y las habilidades de *[Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html)* no podrán protegerlas de ello. 
 
