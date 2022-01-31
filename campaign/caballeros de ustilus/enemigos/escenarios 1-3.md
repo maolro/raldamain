@@ -258,9 +258,9 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ------
 
-**Lanza de caballería** (2 acciones): +7, 1d8 + 4 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
+**Espada larga** (1 acción): +7, 1d8 + 6 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
 
-**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar
 
 **Gran corte** (3 acciones): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
 
