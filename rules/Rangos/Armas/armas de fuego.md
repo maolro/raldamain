@@ -19,6 +19,8 @@ Añade tu rango a todos los tiros de ataque hechos con armas de fuego.
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Recarga rápida</u> (pasiva): Reduce el coste en acciones para recargar tu arma por 1 (mínimo 1). Hacer un ataque con un arma perforante ahora te cuesta una acción menos y a rango IV aumenta tu máximo de acciones por 1.
 
 <u>Arquero experto</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
@@ -36,6 +38,8 @@ Aumenta tu probabilidad de golpe crítico a 19-20.
 <u>Ojo de francotirador</u> (pasiva): Tu perfecta puntería te permite disparar a enemigos mucho más lejanos. Aumenta tu alcance base y máximo por 30 pies, reduciendo así las penalizaciones por disparar a distancias superiores por un dado de desventaja e incrementando el área que puedes afectar con *perforar armaduras* por esa misma cantidad (vuelve a aumentar tu alcance de esta misma manera cuando alcances el rango V). Añade también tu rango en armas a distancia a todos tus tiros de percepción.
 
 ## Rango IV
+
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
 <u>Disparo en movimiento</u> (pasiva y reacción) Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones por disparar desde una montura o vehículo en movimiento y cada vez que esquives exitosamente un ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto se acumula con el atributo *evasión*).
 

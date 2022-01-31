@@ -25,6 +25,8 @@ Añade tu rango a todos tus tiros de ataque hechos con ataques naturales. Aument
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Patada giratoria</u> (1 acción, debes estar en forma del *dragón*, *grulla* o *mono*): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y puedes hacer un intento de *tropezar* empleando tus bonificadores de arma como contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
 
 <u>Golpe aturdidor</u> (1 acción, debes estar en forma del *tigre*, *mono* o *dragón*): Al hacer un ataque puedes emplear una acción adicional para que tu objetivo deba tener éxito en un tiro de CON frente a tu tiro de ataque o sufre el efecto de estado [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Si obtienes éxito crítico con esta habilidad tu objetivo quedará [paralizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#paralizada) hasta que se recupere, haciendo un tiro de CON cada ronda frente a tu tiro de ataque para recuperarse. Si te encuentras en *forma del tigre* aumentas también tu daño base por 1d6 y puedes empujar 10 pies al impactar.
@@ -44,6 +46,8 @@ Aumenta tu probabilidad de crítico a 19-20.
 <u>Carga poderosa</u> (pasiva, debes encontrarte en forma del *tigre* o *dragón*): Tus ataques aumentan en potencia al realizar una carga. Al atacar a un enemigo tras una carga obtienes los beneficios de un *golpe aturdidor* sin la necesidad de gastar acciones, aumentando así el daño base y provocando los adecuados efectos. Puedes también hacer un intento de [tropezar](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada) empleando tus bonificadores de arma como acción bonus contra un enemigo que impactes tras una carga. A rango V todo ataque realizado tras una carga aumentará su daño base de nuevo por 1d6.
 
 ## Rango IV
+
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
 <u>Ajustar alcance</u> (pasiva, debes encontrarte en forma de la *grulla* o *dragón*): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello. 
 

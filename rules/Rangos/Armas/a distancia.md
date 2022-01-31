@@ -17,6 +17,8 @@ Añade tu rango a todos tus tiros hechos con armas a distancia.
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Arquero experto</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
 
 - **Disparo falso**: Tu objetivo debe defenderse con averiguar intenciones. Si fracasa, estará fintado contra el siguiente ataque que reciba.
@@ -27,7 +29,7 @@ Añade tu rango a todos tus tiros hechos con armas a distancia.
 
 ## Rango III 
 
-Aumenta tu probabilidad de crítico a 19-20.
+Aumenta tu probabilidad de crítico a 19-20. 
 
 <u>Disparo preciso</u> (pasiva): Tus ataques a distancia ignoran la cubierta y ocultamiento que tengan tus objetivos, eludiendo las ventajas que estos les otorgarán. Esta habilidad solo se aplica contra enemigos que no estén en ocultamiento o cubierta completa y se encuentren a menos de 30 pies de ti (puedes añadir un dado de desventaja a tu tiro de ataque para aumentar esta distancia por 30 pies adicionales).
 
@@ -35,13 +37,15 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 ## Rango IV
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Disparo en movimiento</u> (pasiva y reacción) Puedes moverte antes y después de disparar, distribuyendo tu movimiento total como desees. Tampoco sufres penalizaciones por disparar desde una montura o vehículo en movimiento y cada vez que esquives exitosamente un ataque puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (esto se acumula con el atributo *evasión*).
 
 <u>Fuego de cubierta</u> (reacción):  Eres capaz de disparar flechas para interceptar ataques hechos a tus aliados, permitiéndote añadir tu rango con arma a distancia al tiro defensivo de un aliado a 60 pies de ti. Solo podrás proteger a tus aliados de esta manera si te encuentras en posición defensiva.
 
 ## Rango V
 
-Aumenta tu probabilidad de crítico a 18-20.
+Aumenta tu probabilidad de crítico a 18-20. 
 
 <u>Impacto vital</u> (pasiva): Eres capaz de matar a un enemigo de un único flechazo. Al impactar a un enemigo con un ataque apuntado aumenta el daño base por 1d6 por cada acción adicional que hayas gastado en el ataque. Incrementa el nivel de todas las heridas permanentes provocadas por un paso adicional al realizar un ataque apuntado contra un enemigo incapaz de defenderse y si logras reducir sus PV a 0 este morirá instantáneamente (solo le protegerá la habilidad *[resistir la muerte](https://raldamain.com/rules/Rangos/Combate/fortitud.html#rango-ii)*).
 

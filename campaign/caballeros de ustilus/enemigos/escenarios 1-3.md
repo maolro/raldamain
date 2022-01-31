@@ -46,8 +46,6 @@ Estas estadísticas pueden también ser empleados para soldados y guardias perte
 
 **Talentos:** Percepción +4, Sigilo +6, Acrobacias +5
 
-**Rangos:** A distancia I, Reflejos I, Armaduras I
-
 **Movimiento:** 20 pies
 
 **Acciones:** 4
@@ -68,7 +66,7 @@ Estas estadísticas pueden también ser empleados para soldados y guardias perte
 
 El ballestero mazarino se especializa en lentos pero poderosos ataques a distancia, empleando la fuerza de los virotes que dispara para penetrar las más sólidas armaduras y provocar heridas permanentes. No obstante, su arma tiene un largo tiempo de recarga y sabe bien que si no acierta un disparo se encontará en una posición vulnerable al tener que recargar. Por ello preferirá combatir junto con aliados con armas cuerpo a cuerpo y realizará ataques a distancia contra otros enemigos aprovechándose de su gran alcance, atacando con prioridad a enemigos especializados en ataques a distancia o mágicos. Por ello empleará sus acciones en emplear la cantidad necesaria de acciones en *apuntar ataque* para provocar una herida y disparará con la ballesta, guardando su última acción para moverse detrás de cubierta o entrar en posición defensiva según su situación. El turno siguiente permanecerá en posición defensiva y empleará sus acciones para recargar para realizar un nuevo ataque el turno siguiente. Si hay un enemigo a menos de 30 pies que no está enfrentado a sus aliados intentará alejarse para evitar que este pueda alcanzarle, prefiriendo combatir junto a un recluta mazarino para que este utilice *preparación contra cargas* para protegerlo de una carga enemiga. Si está muy desesperado hará un último ataque (si puede) y saldrá corriendo tirando su ballesta al suelo para perder la desventaja en tiros defensivos.
 
-## Agete del Pacto (nivel 3)
+## Agente del Pacto (nivel 3)
 
 **PV:** 5			**VT:** 7	 		**DEF:** 2 (ligera)
 
@@ -77,8 +75,6 @@ El ballestero mazarino se especializa en lentos pero poderosos ataques a distanc
 ------
 
 **Talentos:** Engaño +4, Percepción +3, Sigilo +7, Atletismo +4, Acrobacias +5
-
-**Rangos:** Filos ligeros I, Combate doble I, Reflejos I, Rastrear I
 
 **Movimiento:** 20 pies, salto 5 pies, escalada 15 pies (gancho de escalada)
 
@@ -90,13 +86,13 @@ El ballestero mazarino se especializa en lentos pero poderosos ataques a distanc
 
 ------
 
-**Espada corta** (1 acción): +5, 1d6 + 2 perforante.
+**Espada corta** (2 acciones): +5, 1d6 + 2 perforante.
 
 **Arma secundaria** (acción bonus, 1/ronda): +5 - 1d6, 1d6 + 2 perforante. Ventaja y +4 daño si el objetivo ha sido herido por el arma principal.
 
 **Apuntar ataque** (1 acción): +4 daño y provoca una herida permanente leve si el objetivo tiene armadura ligera. Puede pagar una acción adicional para provocar heridas a enemigos con armaduras medias, 2 para pesadas o 3 para completas.
 
-**Enemigo predilecto** (3 acciones):  Recibe ventaja en todos sus tiros de ataque y defensa contra un objetivo específico
+**Enemigo predilecto** (3 acciones): Recibe ventaja en todos sus tiros de ataque y defensa contra un objetivo específico.
 
 ------
 
@@ -120,7 +116,7 @@ Los agentes son individualmente frágiles y se retirarán en el momento que sufr
 
 **Talentos:** Percepción +4, Heroísmo +6, Atletismo +5, Destrozar +5
 
-**Rangos:** Filos cortantes I, Escudo I, Fortitud I, Ira I
+**Tiros de salvación:** CON +6
 
 **Movimiento:** 30 pies
 
@@ -156,7 +152,7 @@ El guerrero norteño emplea su gran fuerza y resistencia para tumbar a todo enem
 
 **Talentos:** Percepción +4, Intimidar +7, Heroísmo +8, Averiguar intenciones +4
 
-**Rangos:** Filos cortantes II, Armaduras I, Montar I, Fortitud I
+**Tiros de salvación:** CON +5
 
 **Movimiento:** 20 pies (montura 3 x 25 pies)
 
@@ -198,8 +194,6 @@ El húsar es una unidad de caballería mazarina especializada en emplear su fuer
 
 **Talentos:** Engaño +4, Percepción +4, Sigilo +7, Atletismo +4, Acrobacias +6
 
-**Rangos:** Filos ligeros II, Dos armas I, A distancia I, Reflejos II, Rastrear I
-
 **Movimiento:** 20 pies, salto 5 pies, escalada 15 pies (cuerda de escalar)
 
 **Acciones:** 4 
@@ -234,15 +228,15 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ## Capitán húsar (nivel 6)
 
-**PV:** 9			**VT:** 11	 		**DEF:** 10 (pesada +2, fortitud +2)
+**PV:** 10			**VT:** 12	 		**DEF:** 11 (pesada +3, fortitud +2)
 
-**FUE:** 6	**DES:** 1	**CON:** 3	**INT:** 1	**SAB:** 2	**CAR:** 2
+**FUE:** 5	**DES:** 1	**CON:** 4	**INT:** 1	**SAB:** 2	**CAR:** 2
 
 ------
 
 **Talentos:** Percepción +4, Intimidar +7, Heroísmo +9, Averiguar intenciones +5, Destrozar +7
 
-**Rangos:** Filos cortantes III, Armaduras II, Montar I, Presencia I
+**Tiros de salvación:** CON +6, VOL +4
 
 **Movimiento:** 20 pies (montura 3 x 25 pies)
 
@@ -254,11 +248,13 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
 
+**Voz del comandante:** Todos los aliados a 30 pies reciben ventaja en sus tiros de ataque y defensa hasta que esta criatura pierda la concentración. Reactivar esta habilidad cuesta 2 acciones. Los enemigos con 5 o menos PV quedarán espantados mientras este efecto permanezca activo.
+
 **Montura:** El capitán húsar combate junto a un caballo de guerra de nivel 3. El caballo tiene 9 PV, 9 Vitalidad y 6 defensa además de heroísmo, fortitud y esquiva +6. La montura puede hacer tres movimientos de 25 pies como acción bonus pero cada movimiento adicional costará 1 acción.
 
 ------
 
-**Espada larga** (1 acción): +7, 1d8 + 6 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
+**Espada larga** (1 acción): +8, 1d8 + 5 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
 
 **Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar
 
@@ -270,32 +266,55 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Parada** +7, puede emplear parada para proteger a su montura.
 
-**Reflejos**: +6, se mueve 5 pies al tener éxito (solo si montado)
+**Reflejos**: +6, se mueve 5 pies al tener éxito (solo si montado).
 
 ## Guerrero élfico (nivel 3)
 
-## Cazador élfico (nivel 5)
+A distancia I, Reflejos I, Filos perforantes I, Rastrear I
 
 ## Guardia real élfico (nivel 5)
 
+Alabardas II, Armaduras I, Escudo II, Reflejos I
+
 ## Matón del Pacto (nivel 2)
+
+Contundentes I, Fortitud I, Ira I
 
 ## Doctor de plagas (nivel 4)
 
+Bombas I, Química II, Reflejos I, Filos perforantes I
+
 ## Espora gaseosa (nivel 2)
+
+Cadenas (tentáculo) I, Fortitud I
+
+Explosión, veneno, levitación
 
 ## Bestia fúngica (nivel 5)
 
+Garras (filo cortante) I, Fortitud I
+
+Veneno, tamaño superior, mordisco
+
 ## Arcabucero (nivel 2)
+
+
 
 ## Soldado (nivel 2)
 
+
+
 ## Sargento (nivel 4)
 
-## Emboscador (nivel 3)
+
 
 ## Sanador de batalla (nivel 4)
 
+
+
 ## Élite de Petrikov (nivel 6)
 
-## Hechicero gélido (niv)
+
+
+## Hechicero gélido (niv 5)
+

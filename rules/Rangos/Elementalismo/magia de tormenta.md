@@ -36,7 +36,7 @@ Aumenta tu probabilidad de crítico a 19-20. Reduce el coste de realizar ataques
 
 ## Rango IV
 
-<u>Jinete del relámpago</u> (1 acción) Eres capaz de emplear tus ataques elementales para propulsarte largas distancias. En lugar de atacar puedes propulsarte 60 pies en una lineal empleando una acción o reduciendo tu reserva elemental por 1. Esto cuenta como una carga, y si en cualquier punto de la línea impactas a una criatura tú sufrirás 2 daño no letal, pero puedes hacerle inmediatamente un ataque elemental (aún puede esquivarlo).
+<u>Jinete del relámpago</u> (1 acción) Eres capaz de emplear tus ataques elementales para propulsarte largas distancias. En lugar de atacar puedes propulsarte 60 pies en una linea empleando una acción o reduciendo tu reserva elemental por 1. Esto cuenta como una carga, y si en cualquier punto de la línea impactas a una criatura tú sufrirás 2 daño no letal, pero puedes hacerle inmediatamente un ataque elemental (aún puede esquivarlo).
 
 <u>Castigo de los cielos</u> (1 acción): Tienes la habilidad de contener la energía eléctrica y liberarla después. Esto funciona como onda destructiva, pero al liberar tu energía haces un ataque de relámpago por cada ataque acumulado. Cada relámpago se dispara en la dirección que tú elijas, y si dos caen en la misma dirección se combinan en un único ataque que hará +1 daño base y aumentará su alcance por 15 pies. Si estás en una tormenta puedes hacer que esos relámpagos acumulados caigan del cielo, atacando a las criaturas que tú desees.
 

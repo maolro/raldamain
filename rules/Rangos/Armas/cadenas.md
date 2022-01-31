@@ -15,6 +15,8 @@ Añade tu rango a todos tus tiros de ataque hechos con cadenas.
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Ataque circular</u> (1 acción) Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y si empleas un ataque cargado puedes hacer un intento de *tropezar* empleando tus bonificadores de arma como contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
 
 <u>Cargar ataque</u> (1 acción): Empleando una acción puedes girar tus cadenas con más velocidad para incrementar tu daño y reforzar tus defensas. Para emplear esta hablidad debes encontrarte en el estado de *danza de cadenas* y cada vez que la utilices almacenas un ataque cargado, llegando a un máximo igual a tu rango + 1. Mientras tengas ataques cargados recibes un bonificador a todos tus tiros de defensa hechos con cadenas igual al número de ataques almacenados que tengas y como acción bonus puedes emplear una carga para que tu siguiente ataque reciba un bonificador +2 a su tiro de ataque y daño. Todos tus ataques cargados se perderán en el momento que abandones el estado de *danza de cadenas.*
@@ -27,7 +29,9 @@ Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque con una cadena te c
 
 <u>Desviar proyectiles</u> (reacción): Eres capaz de protegerte de ataques a distancia o ataques mágicos con área de efecto de 10 pies o menos usando tus cadenas, permitiéndote así emplear tu arma para protegerte de dichos ataques si te encuentras en el estado de *danza de cadenas* Si obtienes defensa crítica o tu oponente obtiene un fallo crítico puedes desviar el ataque hacia otra criatura a 15 pies de ti, haciendo que esta reciba el daño del ataque.
 
-## Rango IV   
+## Rango IV
+
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
 <u>Ajustar alcance</u> (pasiva): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello. 
 

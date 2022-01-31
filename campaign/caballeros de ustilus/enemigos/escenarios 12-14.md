@@ -4,6 +4,8 @@ title: Escenarios 12-14
 
 ## Mercenario de Iakub (nivel 12)
 
+
+
 ## Turba (nivel 10)
 
 ## Guardián de fuego (nivel 17)

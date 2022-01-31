@@ -19,6 +19,8 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas.
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Ajustar alcance</u> (pasiva): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello.
 
 <u>Ataque lateral</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y puedes hacer un intento de *tropezar* empleando tus bonificadores de arma como contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
@@ -36,6 +38,8 @@ Aumenta tu probabilidad de golpe crítico a 19-20. Hacer un ataque con una alaba
 - **Golpear el suelo**: Tu objetivo debe defenderse con esquiva o heroísmo. Si fracasa será empujado 10 pies en cualquier dirección y quedará *tropezado* de inmediato. Si obtienes un golpe crítico sufrirá también una *herida permanente* leve en la pierna.
 
 ## Rango IV
+
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
 <u>Ataque circular</u> (1-2 acciones): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en el radio de alcance de tu arma. Puedes escoger el punto de inicio y el sentido de tu ataque los cuales decidirán el orden en el cual tus objetivos se defenderán de tu ataque circular. Si logras impactar a un objetivo empújalo 5 pies hacia atrás y al igual que *ataque lateral* esta habilidad se detendrá si un enemigo logra detener exitosamente tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Si gastas una acción adicional en un ataque circular puedes hacer una maniobra de tropezar contra todos los enemigos que impactes igual que *ataque lateral*.
 
