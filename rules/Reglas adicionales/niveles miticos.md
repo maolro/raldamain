@@ -61,7 +61,7 @@ Los niveles míticos son capaces de mejorar exponencialmente las habilidades oto
 
 <u>Contundentes:</u> 
 
-<u>Filo cortante:</u>
+<u>Filos cortantes:</u> 
 
 ### Combate
 
@@ -84,21 +84,29 @@ Los niveles míticos son capaces de mejorar exponencialmente las habilidades oto
 
 ### Magia arcana
 
-<u>Espacial:</u> Aumenta tu reserva por 2 chi
+<u>Espacial:</u> Aumenta tu reserva por 2 chi y tu tiro de magia espacial por 1. Escoge una de las siguientes habilidades cada vez que tomes esta mejora:
 
-<u>Evocación:</u>
+- **Maestría de portales:**
+- **Agujero de gusano:**
 
-<u>Ilusoria:</u>
+<u>Evocación:</u> Aumenta tu reserva por 2 chi y tu tiro de magia de evocación por 1. Escoge una de las siguientes habilidades cada vez que tomes esta mejora:
 
-<u>Mental:</u>
+- **Meteorito:**
 
-<u>Protectora:</u>
+<u>Ilusoria:</u> Aumenta tu reserva por 2 chi y tu tiro de magia ilusoria por 1. Escoge una de las siguientes habilidades cada vez que tomes esta mejora:
 
-<u>Temporal:</u>
+<u>Mental:</u> Aumenta tu reserva por 2 chi y tu tiro de magia mental por 1. Escoge una de las siguientes habilidades cada vez que tomes esta mejora:
+
+<u>Protectora:</u> Aumenta tu reserva por 2 chi y tu tiro de magia protectora por 1. Escoge una de las siguientes habilidades cada vez que tomes esta mejora:
+
+<u>Temporal:</u> Aumenta tu reserva por 2 chi y tu tiro de magia temporal por 1. Escoge una de las siguientes habilidades cada vez que tomes esta mejora:
+
+- **Revertir tiempo en masa:**
+- **Premonición superior:**
 
 ### Elementalismo
 
-<u>Agua:</u>
+<u>Agua:</u> 
 
 <u>Aire:</u>
 
@@ -118,17 +126,25 @@ Los niveles míticos son capaces de mejorar exponencialmente las habilidades oto
 
 ### Ascendencias
 
+<u>Abisal:</u>
+
 <u>Aire:</u> 
 
-<u>Abisal:</u>
+<u>Agua:</u>
 
 <u>Akhásica:</u>
 
+<u>Boreal:</u>
+
 <u>Celestial:</u>
+
+<u>Fuego:</u>
 
 <u>Infernal:</u>
 
 <u>Oni:</u>
+
+<u>Tierra:</u>
 
 <u>Sombría:</u>
 
