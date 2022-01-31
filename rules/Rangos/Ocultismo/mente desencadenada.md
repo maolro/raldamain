@@ -23,9 +23,9 @@ Desbloqueas rangos en magia arcana.
 
 Aumenta tu resistencia mágica por 1 al activar mente desencadenada.
 
-<u>Conocimiento arcano superior</u> (pasiva: )Al activar mente desencadenada conoces una habilidad mágica adicional de hasta rango II, la cual podrás lanzar sin la necesidad de gastar chi hasta tres veces al día. En el caso tengas tres rangos de conocimiento la fuerza de este hechizo podrá llegar a la de uno de rango III. Si no tienes la capacidad de lanzar hechizos puedes llegar a crear un nuevo invento con dicha fuerza equivalente, aunque no conoces los planos de él y sólo podrás reconstruirlo si vuelves a entrar en el estado de mente desencadenada.
+<u>Conocimiento arcano superior</u> (pasiva): Al activar mente desencadenada conoces una habilidad mágica adicional de hasta rango II, la cual podrás lanzar sin la necesidad de gastar chi hasta tres veces al día. En el caso tengas tres rangos de conocimiento la fuerza de este hechizo podrá llegar a la de uno de rango III. Si no tienes la capacidad de lanzar hechizos puedes llegar a crear un nuevo invento con dicha fuerza equivalente, aunque no conoces los planos de él y sólo podrás reconstruirlo si vuelves a entrar en el estado de mente desencadenada.
 
-<u>Abrazar la locura</u> (pasiva):Eres inmune a miedo y efectos mentales mientras estés en el estado de mente desencadenada. Si una criatura intenta leer tu mente mientras estés en este estado puedes mostrarle terroríficas visiones del más allá, causándole 1 + INT daño a la cordura. Si tu cordura es reducida a 0 tu cuerpo es controlado momentáneamente por una oscura entidad, causando que pierdas el control durante una hora por cada locura que tengas o hasta que caigas inconsciente.
+<u>Abrazar la locura</u> (pasiva): Eres inmune a miedo y efectos mentales mientras estés en el estado de mente desencadenada. Si una criatura intenta leer tu mente mientras estés en este estado puedes mostrarle terroríficas visiones del más allá, causándole 1 + INT daño a la cordura. Si tu cordura es reducida a 0 tu cuerpo es controlado momentáneamente por una oscura entidad, causando que pierdas el control durante una hora por cada locura que tengas o hasta que caigas inconsciente.
 
 ## Rango IV
 

@@ -19,6 +19,8 @@ Añade tu rango de filos cortantes a tiros de ataque y defensa con un arma de es
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Gran corte</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Ataque poderoso se aplicará para el daño de todos tus ataques hechos con un gran corte. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
 
 <u>Tajo feroz</u> (pasiva): Tus ataques son muy efectivos contra enemigos con poca armadura. Al hacer daño con tu arma a un objetivo cuya armadura otorgue 4 o menos defensa todas las heridas permanentes que le inflijas aumentarán su nivel por un paso. Si tu objetivo lleva armadura natural contará como si no llevase armadura. 
@@ -32,6 +34,8 @@ Aumenta tu probabilidad de golpe crítico a 19-20. Hacer un ataque con un arma d
 <u>Choque de espadas</u> (1 acción) Empleando tu destreza con tu arma eres capaz de trabar la espada de tu enemigo en la tuya para restringir sus movimientos e impedir que te pueda atacar. Para usar esta habilidad deberás hacer un tiro de ataque contra el cual tu enemigo deberá defenderse con *parada* y en el caso que tengas éxito el arma de tu enemigo quedará atrapada. Un enemigo con el arma atrapada no podrá usar *parada* para defenderse contra ataques que no sean el tuyo y no podrá atacarte hasta que escape del agarre. Puedes también emplear una acción contra un enemigo con la espada trabada para hacer un intento de desarme para el cual usarás tus bonificadores de arma (podrás desarmarlo de manera automática si obtienes un golpe crítico en tu tiro de choque de espadas).
 
 ## Rango IV
+
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
 <u>Torbellino de acero</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en el radio de alcance de tu arma. Puedes escoger el punto de inicio y el sentido de tu ataque los cuales decidirán el orden en el cual tus objetivos se defenderán de tu torbellino de acero. Si logras impactar a un objetivo empújalo 5 pies hacia atrás y al igual que *gran corte* esta habilidad se detendrá si un enemigo logra detener exitosamente tu ataque con un escudo o una parada hecha con un arma que no sea ligera. El daño adicional por ataque poderoso se aplicará para todos tus ataques hechos con torbellino de acero.
 

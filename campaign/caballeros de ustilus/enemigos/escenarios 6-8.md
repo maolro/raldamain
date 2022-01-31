@@ -88,35 +88,31 @@ title: Escenarios 6-8
 
 ## Zelota de la Legión (nivel 8)
 
-**PV:** 5			**VT:** 6	 		**DEF:** 6 (media +2)
 
-**FUE:** 1	**DES:** 4	**CON:** 2	 **INT:** 1	**SAB:** 2	**CAR:** 1
-
-------
-
-**Talentos:** Percepción +4, Sigilo +6, Acrobacias +5
-
-**Rangos:** Magia divina II, Armaduras II, Guerrero divino III, Magia de fuego II
-
-**Movimiento:** 15 pies
-
-**Prioridad:** 1 (1 estándar + 2 movimiento)
-
-****
-
-**Hijos de la legión:** Recibe +1d6 en sus tiros de ataque y defensa hechos contra enemigos de la Legión.
 
 ## Campeón de la Legión (nivel 10)
 
+
+
 ## Jinete de huargo (nivel 6)
+
+
 
 ## Reforjado (nivel 7)
 
+
+
 ## Acechador Reforjado (nivel 8)
+
+
 
 ## Soldado de élite Reforjado (nivel 10)
 
+
+
 ## Sicario Reforjado (nivel 10)
+
+
 
 ## Recluta Reforjado (nivel 3)
 

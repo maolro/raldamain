@@ -17,6 +17,8 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contunden
 
 ## Rango II
 
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+
 <u>Concusión</u> (pasiva): Al impactar a un enemigo con un *ataque poderoso* este deberá tener éxito en un tiro de CON frente a tu tiro de ataque o sufre el efecto de estado [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Si obtienes éxito crítico con esta habilidad tu objetivo quedará [paralizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#paralizada) hasta que se recupere, haciendo un tiro de CON cada ronda frente a tu tiro de ataque para recuperarse. Si has empleado más de una acción adicional en *ataque poderoso* tu objetivo quedará también [ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) durante un número de rondas igual a la cantidad de  acciones gastadas.
 
 <u>Maza oscilante</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. *Ataque poderoso* se aplicará para el daño de todos tus ataques hechos con *maza oscilante*. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
@@ -29,7 +31,9 @@ Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque con un arma de filo
 
 <u>Carga poderosa</u> (pasiva): Tus ataques aumentan en potencia al realizar una carga. Al atacar a un enemigo tras una carga obtienes los beneficios de *ataque poderoso* sin la necesidad de gastar acciones, aumentando así el daño base y provocando los adecuados efectos. Puedes también hacer un intento de [tropezar](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada) empleando tus bonificadores de arma como acción bonus contra un enemigo que impactes tras una carga. A rango V todo ataque realizado tras una carga tiene los efectos de haber empleado dos ataques poderosos.
 
-## Rango IV 
+## Rango IV
+
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
 <u>Romper escudos</u> (pasiva): Tus ataques poderosos son capaces de debilitar y hasta destrozar escudos. Si una criatura con un escudo logra detener un *ataque poderoso* este reducirá su valor defensivo por 1. Si el valor defensivo del escudo llega a 0 este será destruido y no podrá ser utilizado para protegerte de ataques. Adicionalmente, si un enemigo intenta bloquear uno de tus *ataques poderosos* con una parada elemental le causarás la mitad de daño si fallas tu ataque.
 
