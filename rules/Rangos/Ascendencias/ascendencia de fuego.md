@@ -30,7 +30,7 @@ Incrementa tu DES por 1.
 
 Aumenta tu resistencia al daño físico por 1.
 
-<u>Aura abrasadora</u> (2 acciones): Empleando 2 acciones puedes rodearte de un aura de calor intenso de radio 15 pies. Todas las criaturas sin resistencias al fuego que empiecen su turno en el Aura abrasadora sufrirán 2 daño de fuego y el nivel de las [quemaduras](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#quemada) que inflijas con ataques elementales aumenta por un paso. Cuando una criatura te impacte con un ataque natural sufrirá una quemadura leve salvo que tenga resistencia al fuego. Una criatura que agarres o te esté agarrando sufrirá automáticamente una quemadura media. Puedes reducir tu reserva elemental por 1 para aumentar la fuerza de las llamas durante una ronda, otorgándote inmunidad al fuego y resistencia al daño frío igual a tu rango de ascendencia en esta a la vez de provocar una quemadura leve a todas las criaturas en el área que lleven armadura metálica. Esta habilidad permaecerá activa durante una cantidad de rondas igual a tu rango + 2 o hasta que pierdas la concentración.
+<u>Aura abrasadora</u> (2 acciones): Empleando 2 acciones puedes rodearte de un aura de calor intenso de radio 15 pies, incrementando el nivel de temperatura por un paso. Todas las criaturas sin resistencias al fuego que empiecen su turno en el *aura abrasadora* sufrirán 2 daño fuego y cuando una criatura en ella te impacte con un ataque natural puedes provocarle como reacción una quemadura leve salvo que tenga resistencia al fuego. Una criatura que agarres o te esté agarrando sufrirá automáticamente una quemadura media. Puedes reducir tu reserva elemental por 1 para aumentar la fuerza de las llamas durante una ronda, otorgándote inmunidad al fuego y resistencia al daño frío igual a tu rango de ascendencia en esta a la vez de provocar una quemadura leve a todas las criaturas en el área que lleven armadura metálica. Esta habilidad permaecerá activa durante una cantidad de rondas igual a tu rango + 2 o hasta que pierdas la concentración.
 
 <u>Conexión elemental</u> (pasiva): El fuego sana tus heridas y te permite recuperar la energía gastada. Al empezar tu turno en un área que esté en llamas o de calor extremo recuperas 1 Vitalidad y un punto de tu reserva elementa. No puedes sanarte PV de esta manera, pero al hacer un descanso corto en una zona con alta presencia de tu elemento (desiertos, volcanes o forjas) recuperas todos tus PV como si realizases un descanso largo. Cuando alcances rango V de esta ascendencia aumenta el número de Vitalidad que te sanas al turno por 1 y recuperarás 2 PV al turno si tu Vitalidad está al máximo.
 
@@ -38,7 +38,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
 
-<u>Propulsión</u> (2 acciones): Eres capaz de propulsarte en el aire con tu magia de fuego. Empleando 2 acciones puedes volar 60 pies en cualquier dirección y recibir ventaja en todos tus tiros de esquiva durante una ronda. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1. 
+<u>Propulsión</u> (2 acciones): Eres capaz de propulsarte en el aire con tu magia de fuego. Empleando 2 acciones puedes volar 60 pies en cualquier dirección y recibir ventaja en todos tus tiros de esquiva y parada elemental durante una ronda. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1. 
 
 <u>Armas infundidas</u> (pasiva): Tus ataques físicos están infundidos con energía elemental de fuego, provocando +2 daño fuego base e infligirán una quemadura leve al reducir los PV de tu objetivo (este daño se acumula con *furia del fuego*). Tus ataques aumentan su daño base por 1d6 al impactar tras una carga.
 
@@ -46,9 +46,9 @@ Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus at
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 2.
 
-<u>Elemento del poder</u> (pasiva): El fuego te propulsa a velocidades sobrehumanas. No sufres daño obligatorio por ataques de área con radio inferior a 20 pies si tienes éxito en el tiro de esquiva y puedes moverte 5 pies adicionales tras esquivar un ataque (esto se acumula con [*reposicionar*](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html#rango-iii)). Si ya tienes el atributo [*evasión*](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii) aumenta el radio de ataques de área que puedes evadir por 15 pies.
+<u>Elemento del poder</u> (pasiva): El fuego te propulsa a velocidades sobrehumanas. No sufres daño obligatorio por ataques de área con radio inferior a 20 pies si tienes éxito en tu tiro defensivo y puedes moverte 5 pies adicionales tras esquivar un ataque (esto se acumula con [*reposicionar*](https://raldamain.com/rules/Rangos/Armas/filos%20perforantes.html#rango-iii)). Si ya tienes el atributo [*evasión*](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii) aumenta el radio de ataques de área que puedes evadir por 15 pies.
 
-<u>Visión térmica</u> (pasiva): Tienes visión térmica en un radio de 60 pies., la cual te permite detectar la posición de criaturas que emanen calor. Vista térmica no funciona con no-muertos, constructos o criaturas con [ascendencia boreal](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia boreal.html). Activar o desactivar la visión térmica te cuesta una acción bonus.
+<u>Visión térmica</u> (pasiva): Tienes visión térmica en un radio de 60 pies, la cual te permite detectar la posición de criaturas que emanen calor. Vista térmica no funciona con no-muertos, constructos o criaturas con [ascendencia boreal](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia boreal.html). Activar o desactivar la visión térmica te cuesta una acción bonus.
 
 ## Rango VI 
 
