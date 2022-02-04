@@ -45,7 +45,7 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Ataque despiadado</u> (1 acción):  Observando atentamente a un enemigo puedes aprovechar un momento de debilidad para asentarle un golpe mortal. Al emplear esta habilidad entras en un estado de preparación que te permite como reacción atacar a un enemigo que se encuentre a una distancia menor o igual a tu alcance si este sufre un [efecto de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html) que le dificulte a la hora de defenderse (cegado, aturdido, agarrado, náuseas, ensordecido o paralizado). No podrás atacar al mismo objetivo más de una vez por ronda y abandonarás el estado de preparación en el momento que pierdas la concentración.
 
-<u>Golpe fulminante</u> (pasiva): Al impactar a un enemigo que tenga 2 o menos defensa (cuenta la defensa por armaduras y la armadura natural) con un *ataque poderoso* deberá tener éxito en un tiro de CON frente a tu tiro de ataque o caerá inconsciente de inmediato. Si impactas a un objetivo incapaz de defenderse qeste caerá inconsciente sin tener la oportunidad de defenderse. La habilidad *resistir la muerte* se aplica también contra este efecto.
+<u>Golpe fulminante</u> (pasiva): Al impactar a un enemigo que tenga 2 o menos defensa (cuenta la defensa por armaduras y la armadura natural) y empleas la habilidad *concusión* tu objetivo caerá también inconsciente de inmediato. Si impactas a un objetivo incapaz de defenderse este caerá inconsciente sin tener la oportunidad de defenderse. La habilidad *resistir la muerte* se aplica también contra este efecto.
 
 ## Armas
 

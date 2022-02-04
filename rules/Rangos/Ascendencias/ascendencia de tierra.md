@@ -9,7 +9,7 @@ Estás conectado con los espíritus de las más lejanas profundidades de la tier
 
 Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental de tierra.
 
-<u>Vínculo con la tierra</u> (ritual): Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Mientras permanezcas en contacto con la tierra de tu región te regenerarás 1 Vitalidad por ronda y recibirás ventaja en tus tiros de ataque elemental (cuenta además como [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) para los propósitos de rastrear). Para declarar un territorio como tu región debes realizar un ritual de una hora para recibir todos sus beneficios y sólo puedes tener una región vinculada de esta manera.
+<u>Vínculo con la tierra</u> (ritual): Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Mientras permanezcas en contacto con la tierra de tu región te regenerarás 1 Vitalidad por ronda y recibe ventaja en todos sus tiros de ataque y defensa hechos con magia elemental de tierra o un *ataque infundido* (cuenta además como [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) para los propósitos de rastrear). Para declarar un territorio como tu región debes realizar un ritual de una hora para recibir todos sus beneficios y sólo puedes tener una región vinculada de esta manera. Esta poción de tierra cuenta como tierra consagrada para ti y los bonificadores de esta habilidad no se acumulan con los de *guerrero de la fe* o *plegaria*.
 
 <u>Geokinesia</u> (acción bonus): Tu herencia elemental te permite controlar la tierra. Como acción bonus puedes manipular una pequeña cantidad de tierra o sentir las características de esta. Sólo puedes usar uno de estos efectos al turno.
 
@@ -22,7 +22,7 @@ Incrementa tu CON por 1.
 
 <u>Puños de tierra</u> (pasiva): Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con reserva de energía). Puedes reducir tu reserva por 1 para infundir tus ataques físicos con tierra elemental durante una ronda. Al emplear esta habilidad tus ataques recibirán los beneficios de las habilidades *ataque poderoso* y *concusión*, incrementando así el daño base por 1d6. Si ya posees dichas habilidades tu ataque ralentizará de manera automática a tu objetivo y reducirás su defensa por 2.
 
-<u>Paso terrestre</u> (pasiva): Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies. Estas velocidades aumentan por 5 pies por cada rango adicional de ascendencia.
+<u>Paso terrestre</u> (pasiva): Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies. Estas velocidades aumentan por 5 pies por cada rango adicional de ascendencia pero no podrán superar tu movimiento base.
 
 <u>Georradar</u> (pasiva): Recibes vista a ciegas en un radio de 30 pies, permitiéndote detectar la posición de todas las criaturas que se encuentren tocando el suelo. Recibes también ventaja en tiros de averiguar intenciones contra criaturas que estén tocando la tierra. Puedes emplear una acción para aumentar el radio de tu georradar por 15 pies durante una ronda.
 
@@ -38,9 +38,9 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu FUE por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
 
-<u>Ola de tierra</u> (2 acciones): Empleando 2 acciones puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas de tamaño grande o inferior que estén en tu camino deben hacer un tiro de esquiva tumagia elemental o sufren 1d6 + SAB daño contundente y son empujadas 15 pies en cada dirección (aquellas con menor fuerza caen al suelo). Cada turno adicional que mantengas la ola deberás reducir tu reserva elemental por 1. Puedes además mantener la habilidad *forma de montaña* aunque utilices la *ola de tierra* para moverte.
+<u>Ola de tierra</u> (2 acciones): Empleando 2 acciones puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas de tamaño grande o inferior que estén en tu camino deben hacer un tiro de esquiva tu magia elemental o sufren 1d6 + SAB daño contundente y son empujadas 15 pies en cada dirección (aquellas con menor fuerza caen al suelo). Cada turno adicional que mantengas la ola deberás reducir tu reserva elemental por 1. Puedes además mantener la habilidad *forma de montaña* aunque utilices la *ola de tierra* para moverte.
 
-<u>Ataques infundidos</u> (pasiva): Tus ataques físicos están infundidos de energía elemental de tierra, aumentando así su daño base por 1d6 y reduciendo la defensa de tu objetivo por 2 cada vez que le impactes (esta reducción se acumula con *golpe poderoso*). Todos tus ataques cuentan además como si estuvieran afectados por *ataque poderoso* para los propóstitos de otros atributos como *golpe fulminante* o *romper escudos*.
+<u>Ataques infundidos</u> (pasiva): Tus ataques físicos están infundidos de energía elemental de tierra, aumentando así su daño base por 2 y reduciendo la defensa de tu objetivo por 2 cada vez que le impactes (esta reducción se acumula con *golpe poderoso*). Todos tus ataques cuentan además como si estuvieran afectados por *ataque poderoso* para los propóstitos de otros atributos como *golpe fulminante* o *romper escudos*.
 
 ## Rango V
 

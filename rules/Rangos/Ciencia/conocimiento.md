@@ -9,7 +9,7 @@ Las armas son aquello que la humanidad lleva empleando desde hace milenios para 
 
 Añade tu rango a todos tus tiros de memoria y sientes la presencia de efectos mágicos a 60 pies de ti. Desbloqueas rangos en magia arcana.
 
-<u>Maestro del saber</u> (pasiva): Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio de tu elección y obtienes una cantidad adicional de niveles de talento igual a tu estadística de inteligencia (si aumentas dicha estadística de manera permanente recibirás un nivel de talento adicional).
+<u>Maestro del saber</u> (pasiva): Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio de tu elección y obtienes una cantidad adicional de niveles de talento igual a tu estadística de inteligencia (si aumentas dicha estadística de manera permanente recibirás un nivel de talento adicional). Puedes además emplear tu estadística de inteligencia en todos tus tiros para resistir efectos mentales y de moral. 
 
 <u>Lingüista</u> (pasiva): Aprendes un idioma adicional de manera fluida. Puedes comunicarte de manera básica usando lenguajes similares al tuyo. Un ejemplo es si hablas ustilés puedes comunicarte de manera básica con alguien que hable kratense. A rango III aprendes un idioma adicional.
 
