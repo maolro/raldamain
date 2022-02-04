@@ -6,19 +6,19 @@ Esta es una lista de los efectos de estado más comunes que pueden afectar a una
 
 ### Agarrada
 
-Una criatura agarrada no puede moverse y será incapaz de defenderse. También será incapaz de atacar y realizar maniobras de combate, pero si le está agarrando otra criatura puede intentar afectarla con sus habilidades aunque recibirá desventaja en todos sus tiros para emplearlas. Intentar escapar cuesta una acción de movimiento con la cual la criatura agarrada debe obtener éxito en una tirada de Heroísmo contra el valor de Heroísmo de quién le esté agarrando. Una criatura agarrada puede también intentar agarrar a la persona quién le está reteniendo, causando que ambas no puedan moverse y pierdan todos los penalizadores en maniobras de combate para afectarse entre sí.
+Una criatura agarrada tiene el cuerpo retenido por completo por otra criatura u objeto, quedando inmovilizada e incapaz de seguir luchando hasta que escape. Dicha criatura no podrá emplear acciones que requieran un movimiento (gesticular, moverse, atacar con un arma) y es incapaz de defenderse. Todos los ataques hechos contra ella contarán como un golpe crítico y no podrá concentrarse en habilidades. Para liberarse de un agarre la criatura afectada deberá emplear una acción para hacer un tiro de heroísmo, juego de manos o destrozar contra aquello que le agarre y en caso de éxito se conseguirá escapar. También puede liberarse si lo que la enreda es destruido por otra criatura o efecto (esto también cuesta una acción).
 
 ### **Asustada** 
 
-Una criatura asustada intenta huir de la fuente de su miedo, empleando sus acciones para correr o esconderse. Esta no se acercará voluntariamente a la fuente de su miedo y sólo luchará si está acorralada. Una criatura asustada recibe las mismas penalizaciones luchando como su estuviese espantada.
+Una criatura asustada ha perdido toda su voluntad de luchar e intenta huir de la fuente de su miedo. Mientras permanezca con este efecto no podrá acercarse voluntariamente hacia la fuente de su miedo y deberá emplear sus acciones para moverse lo más lejos posible de ella y ocultarse (puede usarlas también para entrar en posición defensiva). Si no es capaz de escapar de su miedo podrá emplear sus acciones para atacar (contará entonces como si estuviera espantada) pero si puede intentará escapar lo más lejos posible. Si una criatura asustada vuelve a ser espantada o asustada incrementará su nivel de miedo por 1, pasando de asustada a confundida, confundida a paralizada y paralizada a inconsciente. Para descender de nivel de miedo deberá pasar una ronda en un lugar seguro o tener éxito en un tiro de carisma contra la fuente de su miedo (esto cuesta una acción):
 
 ### **Aturdida** 
 
-Una criatura Aturdida no puede usar acciones ni reacciones, y debe dejar caer todos los objetos que esté llevando salvo aquellos que estén enganchados a su cuerpo. El aturdimiento dura un turno o hasta que la criatura sea impactada por un ataque. Si una criatura voladora queda Aturdida esta empezará a caer.
+Una criatura aturdida ha sufrido un trauma poderoso en la cabeza que lo vuelve incapaz de actuar temporalmente. Al recibir este efecto dejará caer los objetos que lleve en las manos y se volverá incapaz de realizar acciones y reacciones. Si una criatura está volando o escalando cuando reciba este efecto empezará a caer hacia el suelo mientras que si está nadando se hundirá 20 pies y se empieza a ahogar (quedará también enfermada al empezar a ahogarse). Una criatura aturdida se recuperará si sufre daño u otra criatura emplea una acción para despertarla.
 
 ### **Cegada** 
 
-Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su campo de visión a 10 pies y no puede defenderse de ataques que no pueda percibir. Su movimiento queda reducido por 10 pies y recibe desventaja en todos sus tiros de ataque y defensa. Si la criatura tiene una forma de percibir sus alrededores sin necesitar la vista perderá los penalizadores al movimiento y a ataques debidos a la ceguera.
+Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su campo de visión a 10 pies y no puede defenderse de ataques que no pueda percibir. Su movimiento queda reducido por 10 pies y recibe desventaja en todos sus tiros. Si la criatura tiene una forma de percibir sus alrededores sin necesitar la vista perderá los penalizadores al movimiento y a ataques debidos a la ceguera.
 
 ### **Confundida** 
 
@@ -26,39 +26,39 @@ Una criatura confundida actúa de una manera irracional y es incapaz de distingu
 
 ### Deprimida
 
-Una criatura deprimida ha perdido las fuerzas para seguir luchando, resignándose a la derrota. Pierde todos los efectos de moral que tenga activos y deberá dejar de atacar inmediatamente. Si continúa en el combate podrá luchar para protegerse, pero tendrá desventaja en todos sus tiros de ataque y defensa. Si una criatura deprimida tiene su cordura reducida a 0 o le ocurre un hecho que le haga replantearse su existencia, intentará suicidarse de inmediato.
+Una criatura deprimida ha perdido las fuerzas para seguir luchando, resignándose a la derrota. Pierde todos los efectos de moral que tenga activos y deberá dejar de atacar inmediatamente. Si continúa en el combate podrá luchar para protegerse, pero tendrá desventaja en todos sus tiros de ataque y defensa. Si una criatura deprimida tiene su cordura reducida a 0 o le ocurre un hecho que le haga replantearse su existencia intentará suicidarse de inmediato.
 
 ### **Enfermada** 
 
-Una criatura enfermada recibe desventaja en todos sus tiros de ataque, defensa y habilidad. Este efecto de estado puede estar causado tanto por enfermedad, veneno o heridas permanentes.
+Sea por un poderoso golpe en una parte vulnerable del cuerpo o los efectos de una enfermedad física una criatura enfermada tiene serias dificultades realizando acciones de todo tipo hasta que se recupere. Una criatura que sufra este efecto de estado recibirá desventaja en todos sus tiros y no puede concentrarse en habilidades. No obstante, puede eliminar este efecto si se toma el tiempo adecuado para que su cuerpo se recupere, requiriendo así que gaste dos acciones para salvarse de él. Este efecto no se acumula con sí mismo pero si una criatura lo recibe más de una vez deberá gastar 2 acciones adicionales para liberarse de él.
 
 ### **Enredada** 
 
-Una criatura enredada tiene sus movimientos dificultados. Reduce su movimiento por 10 pies y recibe desventaja en todos sus tiros de ataque y defensa. Si la criatura queda enredada por un ataque, como Cadenas o Magia de Naturaleza, no podrá moverse a más de 5 pies de distancia de la criatura que le enrede, además de no poder Esquivar los ataques de esta. Para escapar de un Enredo requiere tener éxito en un tiro de Heroísmo o Juego de manos contra el tiro de ataque de la criatura que le enrede (si no le enreda ninguna criatura, el tiro lo decide el máster). Intentar escapar de un enredo requiere una acción de movimiento.
+Una criatura enredada tiene sus movimientos dificultados al tener parte del cuerpo atado por otra criatura u objeto. Cada vez que una criatura intente moverse deberá realizar un tiro de heroísmo contra aquello que le retenga, desplazándose así 5 pies menos de lo que se movería normalmente y arrastraría a quien le enrede consigo. Esta además recibirá desventaja en sus tiros de esquiva y parada (elemental y mágica también cuenta) además que otras criaturas recibirán ventaja haciendo maniobras de combate contra ella. Para liberarse de un enredo la criatura afectada deberá emplear una acción para hacer un tiro de heroísmo, juego de manos o destrozar contra aquello que le agarre y en caso de éxito se conseguirá escapar. También puede liberarse si lo que la enreda es destruido por otra criatura o efecto (esto también cuesta una acción).
 
 ### **Ensordecida** 
 
-Una criatura ensordecida no puede escuchar sonidos con claridad. Es inmune a efectos que requieran escuchar como Voz del comandante u onda trueno, pero fracasará automáticamente todos los tiros de Percepción que requieran el oído. Recibe además desventaja en todos sus tiros de ataque y defensa.
+Una criatura ensordecida no puede escuchar sonidos con claridad. Es inmune a efectos que requieran escuchar como voz del comandante u onda trueno, pero fracasará automáticamente todos los tiros de percepción que requieran el oído. Recibe además desventaja en todos sus tiros de ataque y defensa mientras dure este efecto y se recuperará si realiza un descanso corto en un entorno relajado.
 
 ### **Espantada** 
 
-Una criatura espantada recibe desventaja en todos sus tiros de ataque y habilidad. Si es atacada por la fuente de su miedo recibirá también desventaja en sus tiros defensivos.
+Una criatura espantada se encuentra superada por sus miedos, resultándole difícil tomar acciones y decisiones con la mente fría. Por ello se vuelve incapaz de mantener la concentración en efectos y recibirá en todos sus tiros hechos contra la fuente de su miedo o relacionados directamente con ella. Este efecto durará hasta que la fuente de su miedo desaparezca, tanto porque se aleje una buena distancia de ella, aparte la vista o se vuelva capaz de hacerle frente (para ello puede emplear una acción para hacer un tiro de carisma contra aquello que le intimide). Si una criatura espantada vuelve a recibir este efecto pasará a estar asustada.
 
 ### **Exhausta** 
 
-Una criatura exhausta reduce su movimiento por 15 pies y recibe un penalizador -2 en su FUE y DES. Además, perderá una acción de movimiento y no podrá realizar acciones de turno completo. Si una criatura es fatigada por algún efecto y ya está exhausta, no recibirá los efectos de fatigada. Este efecto de estado se elimina con un descanso largo.
+Una criatura exhausta se ha empujado hasta el límite y ha perdido gran parte de sus capacidades en un combate. Esta recibe los penalizadores del efecto de estado fatigada además que pierde una de sus acciones, recibe desventaja también en todos sus tiros relacionados con habilidades mentales y no podrá concentrarse en habilidades. Si una criatura exhausta es fatigada perderá una acción adicional (2 acciones si es exhausta) en lugar de recibir de nuevo este efecto y en el caso que esto reduzca su cantidad de acciones a 0 o menos caerá inconsciente de inmediato. Este efecto puede eliminarse realizando un descanso corto o largo.	
 
 ### **Fatigada** 
 
-Una criatura fatigada reduce su movimiento por 10 pies y recibe un penalizador -1 en su FUE y DES. La fatiga no se acumula, y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto. Puedes recibir fatiga si pasas un día entero sin dormir o dormir.
+Una criatura fatigada está aquejada por el cansancio, impidiendo que pueda esforzarse al máximo durante un combate. Esta recibe desventaja en todos sus tiros relacionados con sus tres habilidades físicas y reduce su movimiento por 10 pies. La fatiga no se acumula y si una criatura vuelve a estar fatigada pasará a estar exhausta. La fatiga se elimina con un descanso corto y un personaje puede recibir fatiga si pasa un día entero sin comer o dormir (si es por no comer descansar no quitará este efecto).
 
 ### Fascinada
 
-Una criatura fascinada fija su atención en una fuente determinada, descuidando el entorno que le rodea. Esta no podrá tirar percepción para detectar a criaturas ocultas y su prioridad se reducirá por 2 en el caso que ocurra un combate. En el caso que ocurra un evento que signifique una amenaza para la criatura fascinada, como podría ser una criatura visible que se le acerque, esta podrá tirar Percepción contra el efecto que le esté fascinando, liberándose de él si tiene éxito. Este efecto se pierde de manera automática al sufrir daño.
+Una criatura fascinada fija su atención en una fuente determinada, descuidando el entorno que le rodea. Esta no podrá tirar percepción para detectar a criaturas ocultas y tendrá desventaja en tiros de iniciativa en el caso que ocurra un combate. En el caso que ocurra un evento que signifique una amenaza para la criatura fascinada, como podría ser una criatura visible que se le acerque, esta podrá tirar percepción contra el efecto que le esté fascinando, liberándose de él si tiene éxito. Este efecto se pierde de manera automática al sufrir daño.
 
 ### Inconsciente
 
-Una criatura inconsciente es incapaz de moverse y percibir su entorno. Quedará incapaz de realizar acciones y reacciones, y todos los ataques hechos contra ella contarán como golpes críticos. Si una criatura inconsciente sufre daño se despertará de inmediato.
+Una criatura inconsciente es incapaz de moverse y percibir su entorno, quedando a la merced completa de sus enemigos. Al recibir este efecto de estado dejará caer todos los objetos que lleve en las manos y tomará el camino más cercano hacia el suelo, quedando así tropezada y cegada. Mientras dure este efecto no podrá realizar acciones ni defenderse y todos los ataques hechos contra ella contarán como golpes críticos. Si a una criatura inconsciente aún le quedan PV y no está exhausta o aturdida se despertará si sufre daño, escucha un ruido muy fuerte o ocurre otra acción que lo reanime forzosamente (tirarle agua fría, agitarle...), lo cual costará una acción.
 
 ### Invisible
 
@@ -66,15 +66,11 @@ Una criatura invisible es casi imposible de percibir por la vista debido a su gr
 
 ### **Náuseas** 
 
-Una criatura con náuseas es incapaz de concentrarse. Fracasa automáticamente en todos sus tiros de habilidad y pierde una acción estándar al turno.
-
-### **Pánico** 
-
-Una criatura que entra en pánico intenta huir lo más rápido que pueda de la fuente de su miedo, empleando sus acciones para huir. Esta no podrá atacar a la fuente de su miedo aunque esté acorralada, y sólo podrá usar aquellas habilidades que le ayuden a escapar. Pánico otorga a la criatura los mismos penalizadores que espantado.
+Una criatura con náuseas están aquejadas por un profundo dolor que le dificulta realizar hasta las acciones más básicas. Mientras tenga este efecto de estado todas sus habilidades costarán una acción adicional para realizar y recibirá desventaja en todos sus tiros. Tampoco será capaz de concentrarse en ninguna habilidad y todos sus movimientos se harán en una dirección aleatoria. A diferencia de enfermado una criatura afectada por náuseas no podrá liberarse hasta que reciba la adecuada sanación o el efecto que le ocasione náuseas se acabe.
 
 ### **Paralizada** 
 
-Una criatura paralizada no puede moverse ni tomar acciones, quedándose quieta en un lugar. Funciona como el aturdimiento, pero no terminará hasta que esta tenga éxito en un tiro de CON o FUE dependiendo de la causa de su parálisis contra el tiro de dificultad adecuado. 
+Una criatura paralizada es incapaz de mover su cuerpo, volviéndose así incapaz de realizar acciones y reacciones. Todos los ataques hechos contra una criatura paralizada contarán como un golpe crítico y esta no podrá recuperarse de la parálisis hasta que se libere del efecto que se la ocasione. Una criatura paralizada aún mantendrá sus facultades mentales 	y podrá emplear acciones que no requieran gesticulación.
 
 ### **Quemada**
 
@@ -86,7 +82,7 @@ El daño hecho por quemaduras ignorará la resistencia al fuego aunque sólo pue
 
 ### **Ralentizada** 
 
-Una criatura ralentizada pierde una acción de movimiento y desventaja en todos sus tiros de esquiva. Esta aún puede realizar acciones estándar y bonus con normalidad.
+Los músculos de una criatura ralentizada no responden adecuadamente, causando que sus movimientos sean más lentos y torpes. Una criatura ralentizada reduce su cantidad máxima de acciones por 1 y recibirá desventaja en todos los tiros de esquiva que realice. Si una criatura ralentizada vuelve a recibir este efecto de estado reducirá su máximo de acciones de nuevo por 1.
 
 ### **Sangrado** 
 
@@ -94,4 +90,4 @@ Una criatura con sangrado sufre 1 daño letal al principio de su turno a causa d
 
 ### **Tropezada**
 
- Una criatura tropezada cae al suelo, reduciendo su velocidad por 15 pies y recibe desventaja en todos sus tiros de ataque. No obstante, al estar en el suelo recibirá ventaja en sus tiros para esquivar ataques a distancia hechos por criaturas a más de 30 pies. Levantarse cuesta una acción de movimiento y provoca ataques de oportunidad.
+Una criatura tropezada cae al suelo, reduciendo su velocidad por 15 pies y recibe desventaja en todos sus tiros de ataque. No obstante, al estar en el suelo recibirá ventaja en sus tiros para esquivar ataques a distancia hechos por criaturas a más de 30 pies. Levantarse cuesta una acción y provoca ataques de oportunidad.

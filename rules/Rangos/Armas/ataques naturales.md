@@ -3,7 +3,7 @@ title: Ataques naturales
 category: Armas
 ---
 
-A diferencia de otros maestros de armas tu te has decantado por utilizar tu propio cuerpo para destrozar a tus enemigos, convirtiéndote a ti mismo en un arma mortal. A medida que tu entrenamiento vaya dando sus frutos te volverás capaz aprovechar cualquier pequeña oportunidad para realizar un ataque, golpear con mayor precisión  y hasta protegerte de rápidos proyectiles. Al alcanzar los niveles más altos de maestría tu cuerpo se irá asemejando lentamente cada vez mas a un arma real, dejándote quebrar las armas o armaduras que utilicen tus enemigos como si tu propio cuerpo estuviese hecho de acero así como matar a tus adversarios con un preciso puñetazo.
+A diferencia de otros maestros de armas tu te has decantado por utilizar tu propio cuerpo para destrozar a tus enemigos, convirtiéndote a ti mismo en un arma mortal. A medida que tu entrenamiento vaya dando sus frutos te volverás capaz aprovechar cualquier pequeña oportunidad para realizar un ataque, golpear con mayor precisión  y hasta protegerte de rápidos proyectiles. Al alcanzar los niveles más altos de maestría tu cuerpo se irá asemejando lentamente cada vez mas a un arma real, dejándote quebrar las armas o armaduras que utilicen tus enemigos como si tu propio cuerpo estuviese hecho de acero así como matar a tus adversario con un preciso puñetazo.
 
 # Rangos
 
