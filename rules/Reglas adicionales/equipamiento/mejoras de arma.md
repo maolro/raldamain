@@ -14,7 +14,7 @@ Esta es una lista de las mejoras que se pueden aplicar a un arma. Pueden aplicar
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Truco de bala         | Elige 1 entre Neblina polar, Hielo resbalante o Espinas gélidas |                                                              |
 | Ojo del francotirador | Tormenta de nieve                                            | Cada uso de tormenta de nieve consumirá todas las balas de tu arma. |
-| Disparos a bocajarro  | Muro de hielo                                                | Usar muro de hielo consumirá todas tus balas y te cuesta una acción de turno completo. |
+| Disparos a bocajarro  | Muro de hielo                                                | Usar muro de hielo consumirá todas tus balas y te cuesta 3 accione |
 | Puntería experta      | Frío estigio                                                 |                                                              |
 
 <u>Antimágica</u> (Crédito 3): Tu arma causa una disrupción mágica al impactar, debilitando las defensas de tu objetivo y causando daños a sus objetos infundidos con chi. Al impactar con tu arma causarás los efectos de disrupción en tu objetivo, reduciendo la eficacia de uno de sus objetos mágicos por 1 o provocándole un penalizador -2 a sus tiros de magia (este se elimina gastando 1 chi o empleando una acción de movimiento). Si logras provocar daño puedes deshabilitar un efecto mágico que tenga activo tu oponente de rango II (si tu objetivo lleva una armadura mágica puedes deshabilitar una de sus mejoras durante una ronda). Esta mejora puede emplearse alternativamente para encantar a hasta 20 proyectiles con este efecto.

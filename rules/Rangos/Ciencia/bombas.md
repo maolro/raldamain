@@ -9,7 +9,7 @@ Como un arma con la oportunidad de crear daños devastadores a sus objetivos, la
 
 Añade tu rango a todos tus tiros relacionados con bombas. Puedes usar tu estadística de inteligencia para tiros de ataque con bombas.
 
-<u>Fabricar bombas</u> (proyecto y 2 acciones): Conoces como fabricar explosivos utilizando materiales rudimentarios. Una número de veces al día igual a tu Rango puedes fabricar una bomba, pudiendo tener como máximo INT + 2 bombas preparadas. Hacer un ataque con te cuesta 2 acciones y afectará a todas las criaturas en un radio de impacto de 5 pies. La bomba hará uno de los siguientes efectos.
+<u>Fabricar bombas</u> (proyecto y 2 acciones): Conoces como fabricar explosivos utilizando materiales rudimentarios. Como proyecto de duración igual a un descanso corto puedes fabricar una cantidad de bombas igual a tu rango si posees los materiales adecuados, pudiendo tener como máximo INT + 2 bombas preparadas. Hacer un ataque con te cuesta 2 acciones y afectará a todas las criaturas en un radio de impacto de 5 pies. La bomba hará uno de los siguientes efectos.
 
 - **Bomba incendiaria:** La bomba hace 1d6 + INT daño de fuego y provoca una quemadura leve a todas las criaturas que impacte.
 - **Frasco de ácido:** La bomba hace 1d6 + INT daño de ácido y reducirá la armadura todas las criaturas impactadas por 1 (en el caso que no tengan armadura sufrirán una quemadura leve).
@@ -18,6 +18,8 @@ Añade tu rango a todos tus tiros relacionados con bombas. Puedes usar tu estad�
 - **Granada pegadiza:** La bomba [enreda](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enredada) a todas las criaturas en el radio de efecto, manteniéndolas agarradas hasta que escapen. El área afectada por una granada pegadiza pasa a ser terreno difícil.
 - **Granada criogénica:** La bomba libera un gas extremadamente frío al impactar, infligiendo 1d6 daño frío y ralentizando durante una ronda a todos los objetivos impactados. Esta congelará toda el agua que se encuentre en su zona de impacto y puede usarse para contrarrestar un ataque elemental de agua. 
 - **Bomba de humo:** La bomba llena un radio de 15 pies en la zona de impacto con humo, el cual otorga ocultamiento superior a todas las criaturas en su área.
+- **Relámpago embotellado:** La bomba hace 1d6 + INT daño eléctrico y ralentiza a todas las criaturas en el área.
+- **Piedra atronadora:** La bomba hace 1d6 + INT daño trueno y ensordece a todas las criaturas en el área.
 
 Si fallas con un ataque de bomba esta caerá en un punto aleatorio a 1d6 x 5 pies de tu objetivo, el cual quedará escogido por el máster.
 

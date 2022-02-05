@@ -1,5 +1,5 @@
 ---
-title: Magia de Evocación
+  title: Magia de Evocación
 category: Magia arcana
 ---
 

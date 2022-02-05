@@ -32,22 +32,22 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 
 1. **Debilitada:** La criatura reduce su FUE por 1.
 2. **Agotada:** La criatura reduce su FUE por 1 y reduce su velocidad por 10 pies.
-3. **Atrofiada:** La criatura reduce su FUE por 1 y pierde una acción de movimiento.
+3. **Atrofiada:** La criatura reduce su FUE por 1 y pierde una acción.
 4. **Inmovilizada**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
 5. **Muerte:** La criatura muere envenenada.
 
 ### Veneno de DES
 
-1. **Alentada:** La criatura reduce su DES por 1. Reduce su velocidad por 10 pies.
-2. **Entumecida:** La criatura reduce su DES por 1. No puede Esquivar como reacción.
-3. **Atrofiada:** La criatura reduce su DES por 1 y pierde una acción de movimiento.
+1. **Alentada:** La criatura reduce su DES por 1 y su velocidad por 10 pies.
+2. **Entumecida:** La criatura reduce su DES por 1 y o puede esquivar como reacción.
+3. **Atrofiada:** La criatura reduce su DES por 1 y pierde una acción.
 4. **Inmovilizada**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
 5. **Muerte:** La criatura muere envenenada.
 
 ### Veneno de CON
 
-1. **Debilitada:** La criatura reduce su CON por 1. Sufre 1 daño no-letal cada vez que realice un tiro de Veneno.
-2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar Enfermada. Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
+1. **Debilitada:** La criatura reduce su CON por 1 y sufrirá 1 daño no-letal cada vez que realice un tiro de Veneno.
+2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar enfermada. Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
 3. **Exhausta:** La criatura reduce su CON por 1 y pasa a estar Exhausta. Sufre 1 daño letal cada vez que realice un tiro de veneno.
 4. **Inconsciente**: La criatura cae inmediatamente inconsciente. No puede ser despertada
 5. **Muerte:** La criatura muere envenenada.
