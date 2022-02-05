@@ -57,6 +57,38 @@ Incrementa tu CON por 1.
 
 # Criaturas celestiales
 
+## Haetae (nivel 6)
+
+**PV:** 5			**VT:** 7	 		**DEF:** 8 (pesada +2)
+
+**FUE:** 3 	**DES:** 1	**CON:** 2	**INT:** 0	**SAB:** 1	**CAR:** 0
+
+------
+
+**Talentos:** 
+
+**Rangos:** 
+
+**Mejoras:** Origen celestial, víncu
+
+**Movimiento:** 20 pies
+
+**Resiste:** 
+
+**Acciones:** 3 
+
+****
+
+**Vínculo vital:** El haetae es capa
+
+****
+
+**Garra** (acción estándar):
+
+------
+
+**Parada:** 
+
 ## Malakhim (nivel 12)
 
 

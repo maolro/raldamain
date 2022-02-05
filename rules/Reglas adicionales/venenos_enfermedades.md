@@ -4,7 +4,7 @@ title: Venenos y enfermedades
 
 ## Enfermedades
 
-Cada día después de que una criatura sea contagiada de una enfermedad, esta deberá tirar contra el tiro de gravedad de esta. Si tiene éxito, reduce el nivel de la enfermedad por 1, recuperándose si llega a 0, pero si fracasa aumentará el nivel de la enfermedad por 1. Las ventajas y desventajas generadas añadirán dados de Ventaja o Desventaja al siguiente tiro contra la enfermedad.
+Cuando una criatura sea infectada por una enfermedad no mostrará ningún síntoma hasta que pase el periodo de incubación durante el cual aún podrá contagiar a otras personas. Cuando pase dicho periodo deberá hacer un tiro de CON y superar el valor de gravedad que tenga dicha enfermedad. Si tiene éxito reducirá el nivel que tenga la enfermedad por un paso, recuperándose de ella en el caso que llegue a 0, pero en el caso que fracase aumentará el nivel de la enfermedad por un paso. El contagiado deberá repetir el tiro de CON cada vez que pase una cantidad de tiempo igual a la tasa de incidencia de la enfermedad hasta que se recupere de ella o muera en el intento.
 
 ### Enfermedad física
 
@@ -26,7 +26,7 @@ Cada día después de que una criatura sea contagiada de una enfermedad, esta de
 
 ## Venenos
 
-Después de una cantidad determinada de tiempo según la incidencia del veneno la criatura deberá tirar CON contra el tiro de gravedad del veneno. Si tiene éxito, no sufrirá ningún efecto y reducirá el nivel del veneno por un paso. En el caso que fracase en el tiro de CON, el nivel del veneno aumentará por 1. 
+Un veneno funciona de la misma manera que una enfermedad en lo que respecta los tiros de gravedad y la tasa de incidencia, pero con las diferencias que un veneno no es contagioso y tiene tasa de incidencia más rápida que una enfermedad. Cada veneno afectará a una estadística diferente según su naturaleza y si una criatura envenenada vuelve a ser afectada por el mismo veneno se reducirá la tasa de incidencia del veneno a la mitad (mínimo 1 ronda) y su tasa de graveda
 
 ### Veneno de FUE
 
@@ -47,40 +47,38 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 ### Veneno de CON
 
 1. **Debilitada:** La criatura reduce su CON por 1 y sufrirá 1 daño no-letal cada vez que realice un tiro de Veneno.
-2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar enfermada. Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
-3. **Exhausta:** La criatura reduce su CON por 1 y pasa a estar Exhausta. Sufre 1 daño letal cada vez que realice un tiro de veneno.
-4. **Inconsciente**: La criatura cae inmediatamente inconsciente. No puede ser despertada
+2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar [enfermada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
+3. **Exhausta:** La criatura reduce su CON por 1 y pasa a estar [exhausta](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#exhausta). Sufre 3 daño letal cada vez que realice un tiro de veneno.
+4. **Inconsciente**: La criatura cae inmediatamente inconsciente y no puede ser despertada
 5. **Muerte:** La criatura muere envenenada.
 
 ### Veneno de INT
 
 1. **Sobrecargada:** La criatura reduce su INT por 1.
-2. **Daño cerebral:** La criatura reduce su INT por 1. No puede usar talentos relacionados con inteligencia y pierde un rango de un atributo relacionado con la INT.
-3. **Animalística:** La criatura reduce su INT por 1. No podrá lanzar hechizos ni usar atributos de Conocimiento. 
-4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
+2. **Daño cerebral:** La criatura reduce su INT por 1. No puede usar talentos relacionados con inteligencia y pierde un rango relacionado con dicha estadística.
+3. **Animalística:** La criatura reduce su INT por 1. No podrá lanzar hechizos ni usar atributos de [conocimiento](https://raldamain.com/rules/Rangos/Ciencia/conocimiento.html). 
+4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad.
 5. **Muerte:** La criatura muere envenenada.
 
 ### Veneno de SAB
 
 1. **Abstraída:** La criatura reduce su SAB por 1. 
 2. **Desconcentrada:** La criatura reduce su SAB por 1. Pierde la capacidad de mantener la concentración y no puede usar talentos relacionados con la sabiduría.
-3. **Confusa:** La criatura reduce su SAB por 1 y pasa a estar Confundida.
-4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad. Su FUE y DES se reducen a 0.
+3. **Confusa:** La criatura reduce su SAB por 1 y pasa a estar [confundida](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#confundida).
+4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad.
 5. **Muerte:** La criatura muere envenenada.
 
 ###  Veneno de CAR
 
 1. **Relajada:** La criatura reduce su CAR por 1.
-2. **Dócil:** La criatura reduce su CAR por 1. No puede usar talentos relacionados con el carisma y pierde un rango de un atributo relacionado con la CAR (Presencia o Influenciar).
-3. **Drogada:** La criatura reduce su CAR por 1 y pierde toda fuerza de voluntad. No puede tirar defensa contra habilidades de Presencia e Influenciar y obedece órdenes que recibe sin rechistar.
-4. **Catatónica**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
+2. **Dócil:** La criatura reduce su CAR por 1. No puede usar talentos relacionados con el carisma y pierde un rango de un atributo relacionado con dicha estadística.
+3. **Drogada:** La criatura reduce su CAR por 1 y pierde toda fuerza de voluntad. No puede tirar defensa contra habilidades de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) e [influenciar](https://raldamain.com/rules/Rangos/Social/influenciar.html) y obedece órdenes que recibe sin rechistar.
+4. **Catatónica**: La criatura no puede realizar acciones ni reacciones.
 5. **Muerte:** La criatura muere envenenada.
 
 ## Ejemplos
 
-### Enfermedades
-
-**Cólera:**
+**Cólera:** El cólera es una infección del intestino pequeño ocasionada por una bacteria que se encuentra típicamente en aguas no potables o alimentos contaminados. Su síntoma principal es una diarrea acuosa de gran volumen que termina por ocasionar la deshidratación a sus víctimas, volviéndo azul la piel de sus víctimas en etapas muy avanzadas. El cólera es una enfermedad física con tiempo de incubación de un día, tasa de incidencia de ocho horas (3/día) y un tiro de gravedad de 
 
 **Enfermedad del sueño:**
 
@@ -120,7 +118,7 @@ Después de una cantidad determinada de tiempo según la incidencia del veneno l
 
 **Ricino:**
 
-**Tranquilizante:**
+**Tranquilizante:** Un 
 
 **Veneno de pez globo:**
 
