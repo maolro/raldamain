@@ -9,7 +9,7 @@ Tienes capacidades anormalmente altas en cuanto a lo que tu velocidad de reacci�
 
 Añade tu rango de Reflejos a todos los tiros defensivos de esquiva.
 
-<u>Rapidez</u> (pasiva): Recibes una acción en tu turno. Recibes un bonificador +2 en todos tus tiros de Esquiva para evitar ataques hechos por criaturas de tamaño superior al tuyo por cada paso de diferencia que haya. 
+<u>Rapidez</u> (pasiva): Recibes una acción adicional al turno. Recibes un bonificador +2 en todos tus tiros de Esquiva para evitar ataques hechos por criaturas de tamaño superior al tuyo por cada paso de diferencia que haya. 
 
 <u>Sutileza</u> (pasiva): Las armas ligeras que llevas son difícilmente detectables y capaces de matar antes que tu enemigo se dé cuenta. Desenfundar un arma ligera o sutil te cuesta una acción bonus y al realizar un ataque puedes realizar un tiro de sigilo contra la percepción de tus adversarios para que tu ataque no haga ruido. Si realizas este ataque desde una posición oculta podrás volver a esconderte de manera gratuita si tienes éxito en el tiro.
 
