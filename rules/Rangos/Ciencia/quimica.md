@@ -7,7 +7,7 @@ A lo largo de tus años de estudio has aprendido la influencia que tanto compone
 
 ## Rango I
 
-<u>Curandero</u> (3 acciones): Tus conocimientos médicos te permiten curar a los enfermos y sanar a los heridos. Puedes usar tu estadística de Inteligencia para tiros de primeros auxilios y llevas siempre materiales adecuados para sanar. Un número de veces al día igual a tu rango + 1 puedes fabricar una dosis de medicina, la cual reduce el nivel de una herida permanente, veneno o enfermedad que tenga un objetivo por 1 además de sanar 1d6 + INT Vitalidad (sanará PV si tu objetivo está al máximo de Vitalidad). Aplicar la medicina cuesta 3 acciones (2 acciones a rango III de química y una acción a rango V).
+<u>Curandero</u> (3 acciones): Tus conocimientos médicos te permiten curar a los enfermos y sanar a los heridos. Puedes usar tu estadística de Inteligencia para tiros de primeros auxilios y llevas siempre materiales adecuados para sanar. Un número de veces al día igual a tu rango + 1 puedes fabricar una dosis de medicina, la cual reduce el nivel de una herida permanente, veneno o enfermedad que tenga un objetivo por 1 además de sanar 1d6 + INT Vitalidad. Aplicar la medicina cuesta 3 acciones (2 acciones a rango III de química y una acción a rango V) y aquel que la aplique deberá tener niveles de talento en primeros auxilios.
 
 <u>Uso de venenos</u> (proyecto): Tienes gran conocimiento de los diferentes venenos, sabiendo como identificar y prepararlos. No tienes riesgo de envenenarte accidentalmente al manipular [venenos](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) y puedes preparar hasta rango + 1 dosis de veneno al día con los materiales adecuados. El veneno que fabriques afectará a la estadística que tú elijas y puedes gastar una dosis para aplicarlo en un arma (esto te cuesta 2 acciones). Al herir con un arma envenenada tu objetivo sufrirá los efectos del veneno escogido al primer nivel, y cada ronda deberá repetir el tiro de CON o el nivel del veneno incrementará por un paso
 
@@ -26,7 +26,7 @@ A lo largo de tus años de estudio has aprendido la influencia que tanto compone
 
 <u>Diluir poción</u> (proyecto): Puedes diluir un suero o poción tras una hora de trabajo, fabricando una dosis adicional a partir de esta. Una disolución diluida tiene menor eficacia, causando el siguiente efecto respecto a la disolución base.
 
-- **Medicina:** Una medicina diluida no sana Vitalidad al ser aplicada, reduciendo sólo el nivel de una herida permanente, veneno o enfermedad por 1.
+- **Medicina:** Una medicina diluida solo sanará vitalidad al ser aplicada y no reducirá el nivel de una herida permanente, veneno o enfermedad por 1.
 - **Veneno:** Un veneno diluido reduce su gravedad por 1 y no puede afectar a criaturas resistentes al veneno, pero al aplicarse a un arma la dosis sólo se consume tras un número de turnos igual a tu INT - 1. 
 - **Suero:** Un suero diluido sólo aumentará una estadística física o mental por 1 durante un minuto, pero no dará ningún efecto secundario negativo. Los aumentos producidos por un suero diluido no se acumulan con otros sueros.
 

@@ -14,7 +14,7 @@ La riqueza mide el poder adquisitivo de un personaje y su capacidad para comprar
 
 <u>Nivel 3:</u> A este nivel un personaje tiene una vida modesta, logrando un oficio estable capaz de proporcionar unas condiciones de vida adecuadas. Los ingresos obtenidos le permiten tener un hogar en un barrio de clase media y aunque no pueda permitirse los excesos de las clases más altas podrá acceder a tabernas sencillas y otros establecimientos similares. Algunos ejemplos de este nivel social son artesanos, estudiantes, pequeños propietarios o tenderos.
 
-<u>Nivel 4:</u> Un personaje de este nivel tiene un nivel de vida más cómodo y poseerá un mayor nivel de educación y cultura. Estos pueden permitirse un hogar más espacioso y una mayor red de contactos pertenecientes a la clase media y la clase media-alta. Algunos oficios propios a este nivel social son mercaderes, profesionales educados, funcionarios y oficiales. 
+<u>Nivel 4:</u> Un personaje de este nivel tiene un nivel de vida más cómodo y poseerá un mayor nivel de educación y cultura. Estos pueden permitirse un hogar más espacioso y una mayor red de contactos pertenecientes a la clase media y la clase media-alta. Algunos oficios propios a este nivel social son mercaderes, profesionales educados, funcionarios y oficiales.
 
 <u>Nivel 5:</u> Los personajes de este nivel social forman parte de la clase media-alta, viviendo un estilo de vida lujoso aunque no posean los privilegios asociados con la nobleza. A este nivel social un personaje tendrá propiedades y agentes propios de una organización de nivel 1 y tienen gran prestigio dentro de la clase media. Algunos ejemplos de este nivel social son empresarios, magistrados, comerciantes ricos y oficiales de mayor rango.
 
