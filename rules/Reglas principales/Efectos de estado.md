@@ -90,4 +90,4 @@ Una criatura con sangrado sufre 1 daño letal al principio de su turno a causa d
 
 ### **Tropezada**
 
-Una criatura tropezada cae al suelo, reduciendo su velocidad por 15 pies y recibe desventaja en todos sus tiros de ataque. No obstante, al estar en el suelo recibirá ventaja en sus tiros para esquivar ataques a distancia hechos por criaturas a más de 30 pies. Levantarse cuesta una acción y provoca ataques de oportunidad.
+Una criatura tropezada cae al suelo, reduciendo su velocidad por 15 pies y recibe desventaja en todos sus tiros de ataque y defensa. No obstante, al estar en el suelo recibirá ventaja en sus tiros para esquivar ataques a distancia hechos por criaturas a más de 30 pies. Levantarse cuesta una acción y provoca ataques de oportunidad.
