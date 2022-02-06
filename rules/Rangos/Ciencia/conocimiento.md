@@ -19,7 +19,7 @@ Añade tu rango a todos tus tiros de memoria y sientes la presencia de efectos m
 
 <u>Conocimiento arcano</u> (pasiva): Estudiando tomos antiguos o indagando en tus habilidades mágicas modificas tu propia magia o fabricas un nuevo invento desconocido. Esta habilidad te permite fabricar un invento que replique una habilidad mágica de hasta rango II, pudiendo usarla tres veces al día sin la necesidad de gastar chi. Alternativamente puedes emplearla para modificar una de tus habilidades mágicas, otorgándola una de las siguientes mejoras:
 
-- **Rápido:** La primera vez que utilices dicha habilidad en un combate reduce la acción necesaria para usarla por un paso. De esta manera, si cuesta una acción estándar pasará a ser de movimiento, si es de movimiento pasa a ser bonus y si es de turno completo pasa a ser estándar. Volver a emplear esta habilidad requiere el gasto de 1 chi.
+- **Rápido:** Reduce el coste de emplear la habilidad escogida por 1, llegando a un mínimo de 1. 
 - **Duradero:** Eres capaz de mantener el hechizo un número adicional de rondas igual a tu rango de conocimiento sin la necesidad de mantener la concentración. Esta habilidad solo puede emplearse gratuitamente una vez por combate y para volver a usarla debes gastar 1 chi.
 - **Mental:** Eres capaz de emplear la habilidad escogida sin la necesidad de gesticular, empleando únicamente el poder de tu mente. De esta manera eres capaz de usarla aunque estés agarrado o incapacitado.
 - **Ampliado:** Amplia el área de efecto de dicha habilidad por un número de pies igual a 5 x tu rango de conocimiento. Si la habilidad afecta a las criaturas en una esfera aumenta el radio por el valor indicado y si afecta a una única criatura recibirá un radio de salpicadura de ese valor.
