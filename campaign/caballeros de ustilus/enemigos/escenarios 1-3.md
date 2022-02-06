@@ -74,7 +74,7 @@ El ballestero mazarino se especializa en lentos pero poderosos ataques a distanc
 
 ------
 
-**Talentos:** Engaño +4, Percepción +3, Sigilo +7, Atletismo +4, Acrobacias +5
+**Talentos:** Engaño +4, Percepción +3, Sigilo +6, Atletismo +4
 
 **Movimiento:** 20 pies, salto 5 pies, escalada 15 pies (gancho de escalada)
 
@@ -268,9 +268,35 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Reflejos**: +6, se mueve 5 pies al tener éxito (solo si montado).
 
-## Guerrero élfico (nivel 3)
+## Cazador élfico (nivel 3)
 
-A distancia I, Reflejos I, Filos perforantes I, Rastrear I
+**PV:** 5			**VT:** 7	 		**DEF:** 2 (ligera)
+
+**FUE:** 2	**DES:** 4	**CON:** 2	**INT:** 1	**SAB:** 2	**CAR:** 2
+
+------
+
+**Talentos:** Supervivencia +3, Percepción +4, Sigilo +6, Atletismo +4
+
+**Movimiento:** 20 pies, salto 5 pies
+
+**Acciones:** 4
+
+------
+
+**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+
+------
+
+**Arco** (2 acciones): +5, alcance 90 pies, 2d4 perforante.
+
+**Apuntar ataque** (1 acción): +4 daño y provoca una herida permanente leve si el objetivo tiene armadura media o inferior. Puede pagar una acción adicional para provocar heridas a enemigos con armadura media y 2 para afectar a enemigos con armadura pesada.
+
+**Enemigo predilecto** (3 acciones): Recibe ventaja en todos sus tiros de ataque y defensa contra un objetivo específico.
+
+------
+
+**Reflejos**: +5
 
 ## Guardia real élfico (nivel 5)
 

@@ -50,7 +50,7 @@ Aumenta tu máximo de acciones al turno por 1.
 
 ## Rango V   
 
-Aumenta tu probabilidad de crítico a 18-20,
+Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Desintegrar</u> (pasiva): Al impactar con un ataque de evocación empoderado con 5 o más cargas u obtener un golpe crítico desintegra a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantina o material mágico. Las criaturas que no lleven *[Armadura mágica](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* o la tengan reducida a 0 morirán instantáneamente, y las habilidades de *[Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html)* no podrán protegerlas de ello. 
 

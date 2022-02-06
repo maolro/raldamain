@@ -11,7 +11,7 @@ Rangos
 
 Añade tu rango de filos cortantes a tiros de ataque y defensa con un arma de esta categoría.
 
-<u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y provoca sangrado al herir a tu objetivo. Ataque poderoso puede usarse múltiples veces sobre el mismo ataque, incrementando así el daño por 1d6 por cada ataque poderoso empleado para fortalecerlo (máximo 3d6 daño adicional).
+<u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y provoca sangrado al herir a tu objetivo. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
 
 <u>Combate salvaje</u> (pasiva): Puedes sacrificar tus capacidades defensivas para poder realizar más ataques durante tu turno. Al principio de tu ronda puedes escoger entrar en un estado de combate salvaje, recibiendo así una acción adicional a costa de obtener desventaja en todos tus tiros defensivos hasta el inicio de tu siguiente turno. 
 
