@@ -71,7 +71,7 @@ Incrementa tu CON por 1.
 
 **Movimiento:** 30 pies
 
-**Resiste:** Necrótico 2, radiante 2
+**Resiste:** Necrótico 4, radiante 4
 
 **Acciones:** 4 
 
@@ -101,6 +101,10 @@ Incrementa tu CON por 1.
 
 **Esquiva:** +6, se mueve 10 pies si tiene éxito. No sufre daño obligatorio por ataques de área y puede defenderse de ataques sopresa. (no puede usar esquiva si tiene activa la armadura pétrea)
 
+### Nivel 6
+
+-1 SAB, -2 vitalidad, -1 PV. Pierde las habilidad *defensa pétrea* además que reduce su resistencia al daño por 1. Su aura celestial no regenerará vitalidad al ser activada. Reduce además su tamaño por un paso, bajando su FUE por 2, su CON por 2 y aumentando su DES por 1.
+
 ### Nivel 10
 
 +1 DES (aumenta el tiro de ataque y daño de mordisco por 1), aumenta la probabilidad de crítico a 19-20, +2 Vitalidad, +1 PV, +1 en tiros de ataque con mordisco y rugido luminoso además que reduce el coste en acciones de hacer un mordisco por 1. Recibe las habilidades *sentido de vida* (60 pies), *desviar proyectiles* y al realizar una carga reduce el coste en acciones de mordisco por 1 además de aumentar el daño base por 1d6. Recibe además la siguiente habilidad:
@@ -114,6 +118,48 @@ Incrementa tu CON por 1.
 - **Luz abrasadora:** Todas las criaturas que empiecen su turno en el área del aura celestial sufrirán 2 daño radiante y aquellas con armadura metálica sufrirán una quemadura leve. Una criatura que golpee a haetae con un ataque natural sufrirá también una quemadura leve (una quemadura leve si lo está agarrando).
 - **Telaraña de vida** (2 acciones activar): Todas las criatuas a 30 pies de haetae se sanan 2 vitalidad al principio de su turno y pueden seguir luchando aunque se encuentren a 0 PV. Esta habildad durará 5 rondas o hasta que esta criatura pierda la concentración.
 - **Reforzar defensas:** Si haetae entra en posición defensiva y es impactado por un ataque reduce el daño que recibiría por 2. Esta habilidad no puede usarse si esta criatura es incapaz de defenderse.
+
+Alternativamente el Haetae puede perder las habilidades evasión y esquiva asombrosa para incrementar su tamaño por un paso, aumentando así su FUE y CON por 2, su alcance por 5 pies y sus PV y armadura natural por 1 a costa de reducir también DES por 1.
+
+## Nekomata (nivel 4)
+
+**PV:** 12 / 17			**VT:** 14		**DEF:** 5 / 9 (resistencia 3, armadura pétrea 4, armadura natural 2)
+
+**FUE:** 4 	**DES:** 4	**CON:** 4	**INT:** 0	**SAB:** 4	**CAR:** 0
+
+------
+
+**Talentos:** Percepción +7, Atletismo +7, Heroísmo +7, Sigilo +7
+
+**Inmune:** Veneno, parálisis, dormir
+
+**Movimiento:** 30 pies
+
+**Resiste:** Necrótico 2, radiante 2
+
+**Acciones:** 4 
+
+****
+
+**Aura celestial**
+
+**Ataque furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse.
+
+****
+
+**Zarpa** (1 acción): +6, 1d6 + 4 cortante y 2 radiante. El objetivo tirará heroísmo contra +7 o le agarra con su mordisco, causándole sangrado y una herida permanente leve. La criatura afectada quedará enredada y todos los ataques de mordisco hechos contra ella contarán como golpes críticos.
+
+**Ataque destellante** (1 acción): Antes de atacar puede iluminar intensamente su cuerpo para difuicultar que sus objetivos se puedan defender. Un objetivo deberá tirar percepción contra +6 o no podrá defenderse del siguiente ataque que realice esta criatura.
+
+------
+
+**Parada:** +6.
+
+Magia divina I, Reflejos I, Celestial I, Ataques naturales II
+
+## Okami (nivel 6) 
+
+## Yurei (nivel 6)
 
 ## Malakhim (nivel 12)
 

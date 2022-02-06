@@ -1,5 +1,5 @@
 ---
-title: Heridas permanentes
+  	title: Heridas permanentes
 ---
 
 Las heridas permanentes son todas aquellas heridas que causan daños duraderos al cuerpo de una persona. Un personaje recibirá una herida permanente cada vez que sufra daño a los PV o un golpe crítico, el cual aumentará el nivel de las heridas permanentes infligidas por un paso.
