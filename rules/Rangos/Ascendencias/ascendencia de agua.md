@@ -15,8 +15,9 @@ Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental d
 
 - Evapora una cantidad de agua con volumen máximo de un pie cuadrado. El agua que evapores debe estar adyacente a ti. Si tienes rangos en [magia de sangre](https://raldamain.com/rules/Rangos/Elementalismo/magia de sangre.html) puedes crear una cantidad de agua de volumen igual a un pie cuadrado drenándola de tu entorno.
 - Mueve 30 pies en cualquier dirección una cantidad de agua de volumen igual a un pie cuadrado. El agua que manipules no hará daño ni empujará.
+- Usas el agua para cicatrizar las heridas de un aliado, permitiéndote emplear *primeros auxilios* sin la necesidad de tener los materiales adecuados. Si tienes rangos en magia elemental de agua puedes empl
 
-## Rango II
+##  Rango II
 
 Incrementa tu CON por 1.
 
@@ -24,7 +25,7 @@ Incrementa tu CON por 1.
 
 <u>Respiración acuática</u> (pasiva): Tus pulmones están mejor adaptados para respirar bajo el agua. Eres capaz aguantar tu respiración durante un número de minutos igual a tu rango, y no puedes ser ahogado por magia elemental de agua.
 
-<u>Puñetazo hidráulico:</u> Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con reserva de energía). Puedes reducir tu reserva por 1 para infundir tus ataques físicos con agua durante una ronda. Un ataque infundido incrementa + 2 daño base y recibirás ventaja en todas las maniobras de combate que realices. Si tienes rangos en [magia de hielo](https://raldamain.com/rules/Rangos/Elementalismo/magia de hielo.html) tus ataques infligirán +2 daño de frío y podrás ralentizar a tu objetivo al reducir sus PV.
+<u>Puñetazo hidráulico:</u> Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos, acumulándose con reserva de energía. Puedes reducir tu reserva por 1 para infundir tus ataques físicos con agua durante una ronda. Un ataque infundido incrementa + 2 daño base y recibirás ventaja en todas las maniobras de combate que realices. Si tienes rangos en [magia de hielo](https://raldamain.com/rules/Rangos/Elementalismo/magia de hielo.html) tus ataques infligirán +2 daño de frío y podrás ralentizar a tu objetivo al reducir sus PV.
 
 ## Rango III 
 
