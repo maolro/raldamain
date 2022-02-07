@@ -376,37 +376,53 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 Bombas I, Química II, Reflejos I, Filos perforantes I
 
-## Espora gaseosa (nivel 2)
-
-Cadenas (tentáculo) I, Fortitud I
-
-Explosión, veneno, levitación
-
-## Bestia fúngica (nivel 5)
-
-Garras (filo cortante) I, Fortitud I
-
-Veneno, tamaño superior, mordisco
-
 ## Arcabucero (nivel 2)
 
-
-
-## Soldado (nivel 2)
-
-
+Armas de fuego I, Reflejos I, Armaduras I
 
 ## Sargento (nivel 4)
 
-
+Filos cortantes II, Escudos I, Armaduras I, Presencia I
 
 ## Sanador de batalla (nivel 4)
 
+**PV:** 7			**VT:** 6	 		**DEF:** 4 (ligera, resistencia 2)
 
+**FUE:** 1     **DES:** 1	**CON:** 3	 **INT:** 1	**SAB:** 4	**CAR:** 4
+
+------
+
+**Talentos:** Primeros auxilios +6, Atletismo +2, Percepción +5, Averiguar intenciones +5
+
+**Tiros de salvación:** CON +4
+
+**Movimiento:** 20 pies
+
+**Acciones:** 3, reserva 7
+
+****
+
+**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+
+------
+
+**Torrente de agua** (2 acciones): +6, empuja 20 pies y tropieza (+6 contra heroísmo).
+
+**Cambio de estado** (2 acciones): Crea una neblina de tamaño igual a 20 pies cúbicos, otorgando ocultamiento a todas las criaturas en su área durante una ronda. La neblina se desvanece al final de su turno.
+
+**Muro de agua** (2 acciones): Crea un muro de agua de longitud 30 pies y altura 10 pies. El muro impide el paso de proyectiles y toda criatura que intente cruzarlo deberá tener éxito en un tiro de heroísmo contra +6 o es empujada 5 pies hacia atrás.
+
+**Aguas sanadoras** (2 acciones): Un aliado a 10 pies se sana 1d4 + 4 Vitalidad. (1/día) Reduce el nivel de una herida permanente, veneno o enfermedad por un paso. 
+
+****
+
+**Parada**: +5
+
+**Esquiva:** +5, se mueve 5 pies. 
 
 ## Élite de Petrikov (nivel 6)
 
-
+Filos cortantes III, Fortitud II, Ira I, Escudos I
 
 ## Hechicero gélido (niv 5)
 

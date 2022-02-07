@@ -117,9 +117,9 @@ Aumenta su FUE por 1, sus PV por 3, su armadura natural por 2 y su vitalidad por
 
 ## Bestia fúngica (niv 4)
 
-**PV:** 6			**VT:** 7	 		**DEF:** 4 (resistencia 2, armadura natural 2)
+**PV:** 12			**VT:** 11	 		**DEF:** 5 (resistencia 2, armadura natural 3)
 
-**FUE:** 3	**DES:** 1	**CON:** 3	**INT:** -	**SAB:** 1	**CAR:** -
+**FUE:** 6	**DES:** 0	**CON:** 5	**INT:** -	**SAB:** 1	**CAR:** -
 
 ------
 
@@ -131,7 +131,7 @@ Aumenta su FUE por 1, sus PV por 3, su armadura natural por 2 y su vitalidad por
 
 **Sentidos:** Vista a ciegas 60 pies 
 
-**Movimiento:** 5 pies levitación
+**Movimiento:** 35 pies
 
 **Acciones:** 3
 
@@ -139,16 +139,30 @@ Aumenta su FUE por 1, sus PV por 3, su armadura natural por 2 y su vitalidad por
 
 **Sensibilidad a la luz:** Esta criatura recibe desventaja en todos sus tiros de ataque y defensa si se encuentra en un lugar afectado por luz solar.
 
-
-
-------
-
-**Tentáculos** (2 acciones): +4, alcance 10 pies, el objetivo es enredado y deberá hacer un tiro de CON con dificultad +4 o es infectado con *esporas tóxicas* (veneno de CON, tasa de incidencia 2 rondas, gravedad +3). Para escapar deberá tener éxito en un tiro de heroísmo contra +4.
-
-**Agarre** (1 acción): Un objetivo enredado tira heroísmo contra +4 o es agarrado (tira contra +4 para escapar).
-
-**Escupir ácido** (2 acciones): +4, alcance 5 pies, 1d6 + 1 ácido, reduce la defensa del objetivo por 2. Si reduce los PV de su objetivo este sufrirá una quemadura leve. Tres veces por combate puede hacer un ataque de escupir ácido como acción bonus a una distancia máxima de 60 pies.
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
 
 ------
 
-**Parada** +4. (-1d6 contra ataques hechos por criaturas adyacentes).
+**Garra** (1 acción): +7, alcance 10 pies, 1d6 + 4 cortante + 2 necrótico. El objetivo deberá hacer un tiro de CON con dificultad +5 o es infectado con *esporas tóxicas* (veneno de CON/FUE/SAB, tasa de incidencia 2 rondas, gravedad +6). 
+
+**Mordisco** (2 acciones): +7, alcance 5 pies, 1d6 + 4 perforante +2 necrótico y es infectado por las *esporas tóxicas*. El objetivo tirará heroísmo contra +8 o le agarra con su mordisco, causándole sangrado y una herida permanente leve. La criatura afectada quedará enredada y todos los ataques de mordisco hechos contra ella contarán como golpes críticos.
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y la criatura impactada no podrá sanarse durante.
+
+------
+
+**Parada** +7
+
+### Nivel 6
+
+
+
+### Nivel 8
+
+
+
+### Nivel 10
+
+
+
+### Nivel 12
