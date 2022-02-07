@@ -55,9 +55,10 @@ Aumenta tu probabilidad de crítico a 18-20
 
 # Armas
 
-Una alabarda base hace 1d8 + FUE daño perforante y tiene un alcance de 10 pies. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Una alabarda base hace 1d8 + FUE daño perforante, se usa con dos manos y tiene un alcance de 10 pies. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia (empleará tu estadística de destreza para el tiro de ataque pero seguirá usando tu fuerza para el daño). Sumarás tus bonificadores de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades *preparación contra cargas*, *carga repentina* y *carga con lanza* para él.
+- **Ligera:** El arma reduce su longitud y peso para permitirte usarla con mayor soltura. Un arma con esta mejora puede usarse con una mano pero reducirá su alcance por 5 pies. Perderás también la desventaja en todos tus tiros defensivos con para
 - **Cortante:** El arma tiene una afilada hoja en su punta, infligiendo así daño cortante al impactar. Recibes los atributos *ataque poderoso* a rango I y *tajo feroz* a rango II costa que ya no podrás clavar tu arma con la habilidad *carga con lanza* ni usarla como un arma arrojadiza.
 - **Bastón:** El arma carece de punta, infligiendo así daño contundente al impactar. Recibes el atributo *ataque poderoso* a rango I, *concusión* a rango III y *ataque despiadado* a rango V a costa de perder *carga con lanza* y *carga repentina* además de reducir el daño base a 1d6.
 - **Gancho:** El arma tiene un gancho en su punta que te permite arrastrar con facilidad a tus objetivos. Un gancho reduce su daño base a 1d6 y te permite clavar tu arma al herir con esta. Un enemigo con el arma clavada está agarrado y podrás emplear una acción para arrastrarlo 10 pies en cualquier dirección. A rango IV recibirás la habilidad *impacto* *destructor* perteneciente a filos cortantes en lugar de *corte* *circular*.

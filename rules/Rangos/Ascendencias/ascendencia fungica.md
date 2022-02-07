@@ -5,6 +5,8 @@ category: Ascendencias
 
 Ya sea desde tus inicios o por un aberrante experimento de laboratorio tu cuerpo ha quedado infectado por hongos sobrenaturales, quedando así atado por un horrible destino. Con el paso del tiempo las esporas infectarán cada vez más tu cuerpo, deformándolo y volviéndolo mas cercano a la naturaleza de los hongos que a la de los humanos. Cuando la infección alcance su cúspide llegarás a perder tu cuerpo humano y identidad, transformándote en parte de la misma mente colectiva que ahora desearás esparcir.
 
+# Rangos
+
 ## Rango I
 
 Recibes resistencia 2 a daño físico. 
@@ -19,7 +21,7 @@ Incrementa tu CON por 1.
 
 <u>Infectar cadáver</u> (pasiva): Eres capaz de transformar los cuerpos de los muertos en huestes para parasíticas esporas. Al crear un no-muerto con [animar cadáver](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#rango-ii) este reanimará como una criatura fúngica. Una criatura fúngica puede comunicarse contigo a través de esporas y recibe la capacidad de infectar con esporas al infligir daño. Esto cuenta como una [enfermedad física](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) que al matar a un objetivo lo animará como un no-muerto. Las criaturas fúngicas bajo tu control se comunican constantemente contigo, causando así que tanto tú como estas sólo puedan ser sorprendidas si todas lo están.
 
-<u>Esporas infecciosas</u> (pasiva): Tu cuerpo está infestado de materia fúngica que puedes emplear para fortalecer tus ataques. Recibes una reserva de energía igual a tu rango de ascendencia + 2 (esta se acumula con la reserva de magia de naturaleza) y como acción bonus puedes reducirla por 1 para infectar con esporas tóxicas a una criatura que esté agarrada o incapacitada por un ataque. Las esporas cuentan como un [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) que afectará a una estadística determinada según la naturaleza de las esporas. Mientras este veneno vaya avanzando de etapa el cuerpo de tu objetivo se irá llenando progresivamente de materia fúngica, causando que tus ataques de magia de naturaleza reciban un bonificador contra él igual al nivel del veneno y permitiéndote. A rango IV infectas a los enemigos con tus esporas al impactar con un ataque de magia de naturaleza sin la necesidad de reducir tu reserva. No puedes volver a infectar a una criatura que se haya recuperado de este efecto hasta que pase un día.
+<u>Esporas infecciosas</u> (pasiva): Tu cuerpo está infestado de materia fúngica que puedes emplear para fortalecer tus ataques. Recibes una reserva de energía igual a tu rango de ascendencia + 2 (esta se acumula con la reserva de magia de naturaleza) y como acción bonus puedes reducirla por 1 para infectar con esporas tóxicas a una criatura que esté agarrada o incapacitada por un ataque. Las esporas cuentan como un [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) que afectará a una estadística determinada según la naturaleza de las esporas. Mientras este veneno vaya avanzando de etapa el cuerpo de tu objetivo se irá llenando progresivamente de materia fúngica, causando que tus ataques de magia de naturaleza reciban un bonificador contra él igual al nivel del veneno. A rango IV infectas a los enemigos con tus esporas al impactar con un ataque de magia de naturaleza sin la necesidad de reducir tu reserva. No puedes volver a infectar a una criatura que se haya recuperado de este efecto hasta que pase un día.
 
 ## Rango III
 
@@ -51,5 +53,102 @@ Incrementa tu SAB por 1.
 
 <u>Forma micónica</u> (pasiva): Has abandonado tu humanidad al completo para transformarte en una criatura fúngica. Recibes resistencia 4 a efectos mentales, veneno, enfermedades, [fatiga](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada) y [aturdimiento](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). No necesitas respirar ni dormir y eres capaz de subsistir únicamente con los nutrientes producidos por seres vivos muertos. Como acción de turno completo puedes poseer a una criatura fúngica de tu elección que se encuentre a 60 pies de ti (si has usado comunión fúngica pierdes este límite de distancia), sustituyendo tus capacidades físicas por aquellas que tenga la criatura que posees pero manteniendo tus habilidades mentales y mágicas.
 
-<u>Rejuvenecer</u> (pasiva): Eres capaz de regenerar tu cuerpo a partir del fragmento más pequeño de él. Continúas regenerándote aunque seas reducido a 0 PV y eres capaz de regenerar órganos importantes para tu cuerpo con el adecuado descanso. Puedes también emplear 2 puntos de tu resreva elemental para reducir una herida permanente que afecte tu cuerpo por un nivel. No obstante, pierdes la capacidad de regenerarte si sufres una [quemadura](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#quemada) y morirás permanentemente si tu cuerpo es desintegrado al completo.
+<u>Rejuvenecer</u> (pasiva): Eres capaz de regenerar tu cuerpo a partir del fragmento más pequeño de él. Continúas regenerándote aunque seas reducido a 0 PV y eres capaz de regenerar órganos importantes para tu cuerpo con el adecuado descanso. Puedes también emplear 2 puntos de tu reserva elemental para reducir una herida permanente que afecte tu cuerpo por un nivel. No obstante, pierdes la capacidad de regenerarte si sufres una [quemadura](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#quemada) y morirás permanentemente si tu cuerpo es desintegrado al completo.
 
+# Criaturas fúngicas
+
+## Espora gigante (niv 2)
+
+**PV:** 6			**VT:** 7	 		**DEF:** 4 (resistencia 2, armadura natural 2)
+
+**FUE:** 3	**DES:** 1	**CON:** 3	**INT:** -	**SAB:** 1	**CAR:** -
+
+------
+
+**Resiste:** Necrótico 2
+
+**Vulnerable:** Radiante
+
+**Inmune:** Sangrado, fatiga, veneno, efectos mentales, enfermedades
+
+**Sentidos:** Vista a ciegas 60 pies 
+
+**Movimiento:** 5 pies levitación
+
+**Acciones:** 3
+
+------
+
+**Sensibilidad a la luz:** Esta criatura recibe desventaja en todos sus tiros de ataque y defensa si se encuentra en un lugar afectado por luz solar.
+
+**Explosión:** Cuando esta criatura muera todos los enemigos a 5 pies deberán hacer un tiro de CON con dificultad +4 o son infectados con *esporas tóxicas*.
+
+------
+
+**Tentáculos** (2 acciones): +4, alcance 10 pies, el objetivo es enredado y deberá hacer un tiro de CON con dificultad +4 o es infectado con *esporas tóxicas* (veneno de CON, tasa de incidencia 2 rondas, gravedad +3). Para escapar deberá tener éxito en un tiro de heroísmo contra +4.
+
+**Agarre** (1 acción): Un objetivo enredado tira heroísmo contra +4 o es agarrado (tira contra +4 para escapar).
+
+**Escupir ácido** (2 acciones): +4, alcance 5 pies, 1d6 + 1 ácido, reduce la defensa del objetivo por 2. Si reduce los PV de su objetivo este sufrirá una quemadura leve. Tres veces por combate puede hacer un ataque de escupir ácido como acción bonus a una distancia máxima de 60 pies.
+
+------
+
+**Parada** +4. (-1d6 contra ataques hechos por criaturas adyacentes).
+
+### Nivel 4
+
+Aumenta su FUE por 1, sus PV por 3, su armadura natural por 2 y su vitalidad por 1. Las esporas fúngicas aumentan su gravedad por 1 y reducen su tasa de incidencia a una ronda. Además, la espora gigante recibirá bonificador a tiros de ataque contra criaturas envenenadas igual al grado del veneno que tengan y cuando una criatura muera por el veneno revivirá como un zombi fúngico.
+
+### Nivel 6
+
+
+
+### Nivel 8
+
+
+
+### Nivel 10
+
+
+
+### Nivel 12
+
+
+
+## Bestia fúngica (niv 4)
+
+**PV:** 6			**VT:** 7	 		**DEF:** 4 (resistencia 2, armadura natural 2)
+
+**FUE:** 3	**DES:** 1	**CON:** 3	**INT:** -	**SAB:** 1	**CAR:** -
+
+------
+
+**Resiste:** Necrótico 3
+
+**Vulnerable:** Radiante
+
+**Inmune:** Sangrado, fatiga, veneno, efectos mentales, enfermedades
+
+**Sentidos:** Vista a ciegas 60 pies 
+
+**Movimiento:** 5 pies levitación
+
+**Acciones:** 3
+
+------
+
+**Sensibilidad a la luz:** Esta criatura recibe desventaja en todos sus tiros de ataque y defensa si se encuentra en un lugar afectado por luz solar.
+
+
+
+------
+
+**Tentáculos** (2 acciones): +4, alcance 10 pies, el objetivo es enredado y deberá hacer un tiro de CON con dificultad +4 o es infectado con *esporas tóxicas* (veneno de CON, tasa de incidencia 2 rondas, gravedad +3). Para escapar deberá tener éxito en un tiro de heroísmo contra +4.
+
+**Agarre** (1 acción): Un objetivo enredado tira heroísmo contra +4 o es agarrado (tira contra +4 para escapar).
+
+**Escupir ácido** (2 acciones): +4, alcance 5 pies, 1d6 + 1 ácido, reduce la defensa del objetivo por 2. Si reduce los PV de su objetivo este sufrirá una quemadura leve. Tres veces por combate puede hacer un ataque de escupir ácido como acción bonus a una distancia máxima de 60 pies.
+
+------
+
+**Parada** +4. (-1d6 contra ataques hechos por criaturas adyacentes).

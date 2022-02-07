@@ -126,7 +126,7 @@ Los agentes son individualmente frágiles y se retirarán en el momento que sufr
 
 **Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
 
-**Ira** (3 rondas/combate): El guerrero norteño combate en un estado de furia sobrenatural conocido como ira cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la ira reducirá su FUE por 2, su CON por 2, su velocidad por 10 pies y perderá una acción.
+**Ira** (3 rondas/combate): Entra en un estado de furia sobrenatural conocido como ira cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la ira reducirá su FUE por 2, su CON por 2, su velocidad por 10 pies y perderá una acción.
 
 ------
 
@@ -304,41 +304,73 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ## Guardia real élfico (nivel 5)
 
-**PV:** 9			**VT:** 9	 		**DEF:** 6 (media, armadura natural +2)
+**PV:** 11			**VT:** 12	 		**DEF:** 10 (pesada +2, natural +2)
 
-**FUE:** 5	**DES:** 1	**CON:** 4	 **INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 6	**DES:** 0	**CON:** 5	 **INT:** 1	**SAB:** 3	**CAR:** 1
 
 ------
 
-**Talentos:** Percepción +4, Heroísmo +6, Atletismo +5, Destrozar +5
+**Talentos:** Heroísmo +9, Percepción +6, Atletismo +7, Averiguar intenciones +5
 
-**Tiros de salvación:** CON +6
+**Resiste:** Maniobras de combate 2
 
-**Movimiento:** 30 pies
+**Movimiento:** 20 pies (solo puede moverse una vez por ronda)
 
 **Acciones:** 3
 
 ****
 
-**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+**Forma defensiva** (4 rondas/combate): Entra en un estado de defensa absoluta conocido como forma defensiva cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la forma defensiva reducirá su FUE por 2, su CON por 2, su velocidad por 10 pies, perderá la ventaja en sus tiros defensivos y perderá una acción.
 
 ------
 
-**Lanza doble élfica** (2 acciones): +6, 
+**Lanza** (2 acciones): +8, alcance 10 pies, 1d6 + 6 perforante.
+
+**Ataque lateral** (3 acciones): Realiza un ataque con su lanza contra tres enemigos en su readio de alcance y hace una maniobra de tropezar contra ellos de dificultad +9.
 
 **Golpe de escudo** (acción bonus): +6, 1d6 + 5 contundente, y tropieza +6. Este ataque solo puede realizarse si se mueve 20 pies o más. 
 
-**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
+**Interceptar** (1 acción): Esta criatura se prepara para detener un movimiento enemigo. En cualquier momento de la ronda puede moverse 20 pies y hacer un golpe de escudo contra un enemigo que se esté moviendo, haciendo un ataque de *golpe de escudo* y deteniéndolo en el acto.
+
+**Preparación contra cargas** (1 acción): Esta criatura se prepara praa detener un ataque enemigo. La siguiente vez que una criatura pase por el radio que amenace con su arma sufrirá un ataque de oportunidad inmediato con el cual infligirá +1d6 daño. Si se encuentra en este estado e intercepta un ataque enemigo puede hacer un ataque de oportunidad con su lanza.
 
 ------
 
-**Escudo**: +6, puede defenderse de ataques sorpresa y proteger a aliados que se encuentren a 5 pies.
+**Parada** +8 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
 
-Alabardas II, Armaduras I, Escudo II, Reflejos I
+**Escudo**: +6 + d6, puede proteger a aliados que se encuentren a 5 pies.
 
 ## Matón del Pacto (nivel 2)
 
-Contundentes I, Fortitud I, Ira I
+**PV:** 7			**VT:** 6	 		**DEF:** 4 (ligera, armadura natural +2)
+
+**FUE:** 2     **DES:** 4	**CON:** 2	 **INT:** 1	**SAB:** 2	**CAR:** 1
+
+------
+
+**Talentos:** Heroísmo +7, Atletismo +6, Percepción +3, Destrozar +5
+
+**Tiros de salvación:** CON +4
+
+**Movimiento:** 20 pies
+
+**Acciones:** 4
+
+****
+
+**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+
+------
+
+**Garrote** (2 acciones): +5, 1d6 + 2 contundente. 
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y empuja 5 pies al impactar.
+
+****
+
+**Parada**: +5
+
+**Esquiva:** +5, se mueve 5 pies. 
 
 ## Doctor de plagas (nivel 4)
 
