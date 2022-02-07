@@ -254,7 +254,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ------
 
-**Espada larga** (1 acción): +8, 1d8 + 5 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
+**Espada larga** (1 acción): +8, 1d8 + 5 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o 0media.
 
 **Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar
 
@@ -303,6 +303,36 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 **Reflejos**: +6
 
 ## Guardia real élfico (nivel 5)
+
+**PV:** 9			**VT:** 9	 		**DEF:** 6 (media, armadura natural +2)
+
+**FUE:** 5	**DES:** 1	**CON:** 4	 **INT:** 1	**SAB:** 2	**CAR:** 1
+
+------
+
+**Talentos:** Percepción +4, Heroísmo +6, Atletismo +5, Destrozar +5
+
+**Tiros de salvación:** CON +6
+
+**Movimiento:** 30 pies
+
+**Acciones:** 3
+
+****
+
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+
+------
+
+**Lanza doble élfica** (2 acciones): +6, 
+
+**Golpe de escudo** (acción bonus): +6, 1d6 + 5 contundente, y tropieza +6. Este ataque solo puede realizarse si se mueve 20 pies o más. 
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
+
+------
+
+**Escudo**: +6, puede defenderse de ataques sorpresa y proteger a aliados que se encuentren a 5 pies.
 
 Alabardas II, Armaduras I, Escudo II, Reflejos I
 
