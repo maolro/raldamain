@@ -28,7 +28,7 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de agua.
 - **Toque sanador:** Puedes sanar a cualquier criatura que se encuentre en tu radio de alcance de ataque elemental empleando el agua. Al sanar de esta manera elimina de manera automática todas las quemaduras que tenga tu objetivo.
 - **Descarga luminosa:** En lugar de lanzar rayos luminosos atacas a tus enemigos empleando agua bendita capaz de abrasar a tus enemigos. Un ataque de agua bendita infligirá 1d6 + rango en magia de vida daño radiante al impactar y provocará una quemadura leve si llega a reducir PV además que puedes aumentar su radio de efecto con *danza de agua*. A diferencia de un rayo luminoso un ataque de agua bendita puede esquivarse con normalidad.
 - **Barrera luminosa:** Perderás la habilidad de formar barreras hechas de luz pero a cambio podrás infundir una superfície de agua de tamaño igual a tu rango de magia de vida x 10 pies con agua bendita empleando una acción. Una superfície infundida de esta manera provocará 2 daño radiante a todas las criaturas enemigas que intenten pasar por él y las criaturas aliadas que hagan contacto con él se sanarán 1 vitalidad al principio de su turno. Si escoges infundir un muro podrás llenar toda su superfície aunque esta exceda tu área de efecto máxima con esta habilidad
-- **Foco de energía:**.Tus cargas con *danza de agua* te sirven también para potenciar tus habilidades sanadoras
+- **Foco de energía:** 
 
 ## Rango III
 
