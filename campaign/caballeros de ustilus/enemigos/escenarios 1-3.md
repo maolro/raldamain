@@ -538,7 +538,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
 
-**Forma defensiva** (4 rondas/combate): Entra en un estado de defensa absoluta conocido como forma defensiva cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la forma defensiva reducirá su FUE por 2, su CON por 2, su velocidad por 10 pies, perderá la ventaja en sus tiros defensivos y perderá una acción.
+**Forma defensiva** (4 rondas/combate): Entra en un estado de defensa absoluta conocido como forma defensiva cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la forma defensiva reducirá su FUE por 2, su CON por 2 y perderá la ventaja en sus tiros defensivos y perderá una acción.
 
 ****
 
