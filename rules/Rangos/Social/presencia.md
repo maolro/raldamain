@@ -7,13 +7,13 @@ Tienes el don de inspirar a todos aquellos que tienes cerca con un sentimiento d
 
 ## Rango I
 
-Añade tu rango de presencia a tus tiros defensivos de sabiduría. 
+Añade tu rango de presencia a tus tiros defensivos de sabiduría.
 
 <u>Voz del comandante</u> (2 acciones): A través de inspiradoras palabras u ordenes imperiosas eres capaz de fortalecer la moral y fuerza de tus aliados. Iniciar este efecto te cuesta dos acciones y mientras permanezca activo todos tus aliados a 30 pies de ti que puedan percibirte tendrán ventaja en todos sus tiros de habilidad, ataque y defensa (esta habilidad tiene una distancia máxima de 45 pies a rango III y 60 pies a rango V). El efecto de voz del comandante permanecerá activo hasta que seas incapacitado o sufras una herida permanente (esta debe ser media o superior a rango III y grave o superior a rango V).
 
-<u>Inspirar temor</u> (pasiva): Tu fama o infamia inspira el miedo a tus enemigos más débiles de voluntad, socavando sus ganas de luchar. Cuando actives tu habilidad *voz del comandante* todos los enemigos con 5 o menos PV que empiecen su turno en el área que afectas con *voz del comandante* recibirán el efecto de estado [Espantado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#espantada) hasta que sufras una herida permanente. No podrás utilizar Inspirar temor en personajes afectados por *[voz del comandante](https://raldamain.com/rules/Rangos/Social/presencia.html#rango-i)* o que tengan resistencia al miedo superior a tu rango de Presencia.
+<u>Inspirar temor</u> (pasiva): Tu fama o infamia inspira el miedo a tus enemigos más débiles de voluntad, socavando sus ganas de luchar. Cuando actives tu habilidad *voz del comandante* todos los enemigos que empiecen su turno en el área que afectas con *voz del comandante* deberán hacer un tiro de carisma contra tu tiro de presencia o quedarán [espantados](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#espantada) hasta que sufras una herida permanente. No puedes emplear esta habilidad contra enemigos que 
 
-<u>Voluntad poderosa</u> (pasiva): Tu fuerza de voluntad te permite resistir el miedo y los engaños. Tienes resistencia igual a tu rango + 1 contra el miedo y efectos de moral. Además, al tener éxito en un tiro de habilidad de Persuasión la persona con quién interactúas quedará *[fascinada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fascinada)*.
+<u>Voluntad poderosa</u> (pasiva): Tu fuerza de voluntad te permite resistir el miedo y los engaños. Tienes resistencia igual a tu rango + 1 contra el miedo y efectos de moral. Además, al tener éxito en un tiro de habilidad de ersuasión la persona con quién interactúas quedará *[fascinada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fascinada)*.
 
 ## Rango II  
 

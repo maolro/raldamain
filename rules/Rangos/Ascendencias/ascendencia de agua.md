@@ -25,7 +25,7 @@ Incrementa tu CON por 1.
 
 <u>Respiración acuática</u> (pasiva): Tus pulmones están mejor adaptados para respirar bajo el agua. Eres capaz aguantar tu respiración durante un número de minutos igual a tu rango, y no puedes ser ahogado por magia elemental de agua.
 
-<u>Puñetazo hidráulico:</u> Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos, acumulándose con reserva de energía. Puedes reducir tu reserva por 1 para infundir tus ataques físicos con agua durante una ronda. Un ataque infundido incrementa + 2 daño base y recibirás ventaja en todas las maniobras de combate que realices. Si tienes rangos en [magia de hielo](https://raldamain.com/rules/Rangos/Elementalismo/magia de hielo.html) tus ataques infligirán +2 daño de frío y podrás ralentizar a tu objetivo al reducir sus PV.
+<u>Puñetazo hidráulico:</u> Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos, acumulándose con reserva de energía. Puedes reducir tu reserva por 1 para infundir tus ataques físicos con agua durante una ronda. Un ataque infundido aumenta su daño base por 2 y recibirás ventaja en todas las maniobras de combate que realices. Si tienes rangos en [magia de hielo](https://raldamain.com/rules/Rangos/Elementalismo/magia de hielo.html) tus ataques infligirán +2 daño de frío y podrás ralentizar a tu objetivo al reducir sus PV.
 
 ## Rango III 
 

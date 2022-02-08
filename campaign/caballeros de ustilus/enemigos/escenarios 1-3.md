@@ -62,7 +62,7 @@ Estas estadísticas pueden también ser empleados para soldados y guardias perte
 
 ------
 
-**Reflejos**: +5 - 1d6
+**Reflejos**: +5 (-1d6 contra criaturas adyacentes)
 
 El ballestero mazarino se especializa en lentos pero poderosos ataques a distancia, empleando la fuerza de los virotes que dispara para penetrar las más sólidas armaduras y provocar heridas permanentes. No obstante, su arma tiene un largo tiempo de recarga y sabe bien que si no acierta un disparo se encontará en una posición vulnerable al tener que recargar. Por ello preferirá combatir junto con aliados con armas cuerpo a cuerpo y realizará ataques a distancia contra otros enemigos aprovechándose de su gran alcance, atacando con prioridad a enemigos especializados en ataques a distancia o mágicos. Por ello empleará sus acciones en emplear la cantidad necesaria de acciones en *apuntar ataque* para provocar una herida y disparará con la ballesta, guardando su última acción para moverse detrás de cubierta o entrar en posición defensiva según su situación. El turno siguiente permanecerá en posición defensiva y empleará sus acciones para recargar para realizar un nuevo ataque el turno siguiente. Si hay un enemigo a menos de 30 pies que no está enfrentado a sus aliados intentará alejarse para evitar que este pueda alcanzarle, prefiriendo combatir junto a un recluta mazarino para que este utilice *preparación contra cargas* para protegerlo de una carga enemiga. Si está muy desesperado hará un último ataque (si puede) y saldrá corriendo tirando su ballesta al suelo para perder la desventaja en tiros defensivos.
 
@@ -168,7 +168,7 @@ El guerrero norteño emplea su gran fuerza y resistencia para tumbar a todo enem
 
 ------
 
-**Espada larga** (2 acciones): +7, 1d8 + 4 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
+**Sable** (2 acciones): +7, 1d8 + 4 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o media.
 
 **Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
 
@@ -254,7 +254,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ------
 
-**Espada larga** (1 acción): +8, 1d8 + 5 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con armadura ligera o 0media.
+**Sable** (1 acción): +8, 1d8 + 5 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con 4 o menos defensa por armaduras.
 
 **Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar
 
@@ -374,39 +374,135 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ## Doctor de plagas (nivel 4)
 
-Bombas I, Química II, Reflejos I, Filos perforantes I
+**PV:** 6 	**VT:** 8 	**DEF:** 2 (ligera)
 
-## Arcabucero (nivel 2)
-
-Armas de fuego I, Reflejos I, Armaduras I
-
-## Sargento (nivel 4)
-
-Filos cortantes II, Escudos I, Armaduras I, Presencia I
-
-## Sanador de batalla (nivel 4)
-
-**PV:** 7			**VT:** 6	 		**DEF:** 4 (ligera, resistencia 2)
-
-**FUE:** 1     **DES:** 1	**CON:** 3	 **INT:** 1	**SAB:** 4	**CAR:** 4
+**FUE:** 1  **DES:** 4  **CON:** 2  **INT:** 4  **SAB:** 1  **CAR:** 1
 
 ------
 
-**Talentos:** Primeros auxilios +6, Atletismo +2, Percepción +5, Averiguar intenciones +5
+**Talentos:** Estudio +7 (química, medicina, micología), Sigilo +6, Primeros auxilios +6, Atletismo +2
 
-**Tiros de salvación:** CON +4
+**Resiste:** Veneno 3, efectos mentales 3
 
 **Movimiento:** 20 pies
 
-**Acciones:** 3, reserva 7
+**Acciones:** 4
 
-****
+------
 
 **Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
 
 ------
 
+**Frasco de ácido** (2 acciones, 4/combate): +5, alcance 30 pies y salpicadura 5 pies, 1d6 + 4 ácido y reduce la defensa de todas las criaturas impactadas por 1.
+
+**Bomba de humo** (2 acciones, 2/combate): alcance 30 pies, crea una nube de humo de radio 15 pies.
+
+**Inyección** (2 acciones): +5, 1d4 + 2 perforante. El objetivo debe hacer un tiro de CON frente a +6 o sufre los efectos de un veneno de SAB/DES/FUE (3/combate).
+
+**Medicamento** (3 acciones, 3/combate): Un aliado adyacente se sana 1d6 + 4 Vitalidad y reduce el nivel de una herida permanente, veneno o enfermedad por un paso. 
+
+**Apuntar ataque** (1 acción): +4 daño y provoca una herida permanente leve si el objetivo tiene armadura media o inferior. Puede pagar una acción adicional para provocar heridas a enemigos con armaduras pesadas o 2 para completas.
+
+------
+
+**Parada**: +5. (1/ronda) Puede hacer una segunda parada con +5-1d6 contra un ataque que no haya podido bloquear.
+
+**Reflejos**: +5
+
+Bombas I, Química II, Reflejos I, Filos perforantes I
+
+## Arcabucero (nivel 2)
+
+**PV:** 5 **VT:** 6 **DEF:** 6 (media +2)
+
+**FUE:** 1 **DES:** 4 **CON:** 2 **INT:** 1 **SAB:** 2 **CAR:** 1
+
+------
+
+**Talentos:** Percepción +4, Sigilo +6, Acrobacias +5
+
+**Movimiento:** 20 pies
+
+**Acciones:** 4
+
+------
+
+**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+
+------
+
+**Mosquetón** (2 acciones): +5, alcance 90 pies, 2d6 perforante. Los enemigos a 30 pies o menos no podrán esquivar para defenderse e ignora su defensa. Deberá emplear 3 acciones para recargar el turno siguiente.
+
+**Apuntar ataque** (1 acción): +4 daño y provoca una herida permanente leve si el objetivo tiene armadura media o inferior. Puede pagar una acción adicional para provocar heridas a enemigos con armadura pesada y 2 para afectar a enemigos con armadura completa (puede afectar a enemigos con cualquier armadura si el objetivo está a 30 pies o menos).
+
+------
+
+**Reflejos**: +5 (-1d6 contra criaturas adyacentes)
+
+## Sargento (nivel 4)
+
+**PV:** 7	 **VT:** 9	 **DEF:** 8 (pesada +2)
+
+**FUE:** 4   **DES:** 0   **CON:** 3  **INT:** 1   **SAB:** 1   **CAR:** 3
+
+------
+
+**Talentos:** Liderazgo +5, Heroísmo +6, Atletismo +5, Averiguar intenciones +3
+
+**Tiros de salvación:** SAB +2
+
+**Resiste:** Miedo 2, efectos mentales 2
+
+**Movimiento:** 30 pies
+
+**Acciones:** 3
+
+------
+
+**Inspirar temor:** Si tienes activa la habilidad *voz del comandante* todas las criaturas en un radio de 30 pies deberán hacer un tiro de carisma contra +4 o son espantados. Esta habilidad no afecta a otras criaturas bajo los efectos de *voz del comandante*.
+
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+
+------
+
+**Espada larga** (2 acciones): +6, 1d8 + 4 cortante.
+
+**Voz del comandante** (2 acciones): Todos los aliados a 30 pies reciben ventaja en todos sus tiros de ataque, defensa y habilidad. Esta habilidad durará hasta que esta criatura sufra una herida permanente. Los efectos de *voz del comandante* no se acumulan entre sí.
+
+**Golpe de escudo** (acción bonus): +6, 1d6 + 5 contundente, y tropieza +6. Este ataque solo puede realizarse si se mueve 20 pies o más.
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
+
+------
+
+**Escudo**: +5, puede defenderse de ataques sorpresa y proteger a aliados que se encuentren a 5 pies.
+
+## Sanador de batalla (nivel 4)
+
+**PV:** 5			**VT:** 7	 		**DEF:** 4 (ligera, resistencia 2)
+
+**FUE:** 1     **DES:** 3	**CON:** 1	 **INT:** 1	**SAB:** 4	**CAR:** 4
+
+------
+
+**Talentos:** Primeros auxilios +7, Atletismo +2, Percepción +5, Averiguar intenciones +6
+
+**Movimiento:** 20 pies
+
+**Acciones:** 4, reserva 7
+
+****
+
+**Reserva de energía** (2/turno): Hace un ataque de *torrente de agua*, *agua bendita*, *cambio de estado* o *aguas sanadoras* como acción bonus y reduce su reserva por 1.
+
+------
+
 **Torrente de agua** (2 acciones): +6, empuja 20 pies y tropieza (+6 contra heroísmo).
+
+**Danza de agua** (2 acciones y -1 reserva):  Puede acumular las aguas en torno a su cuerpo para empoderar su habilidad ofensiva o defensiva. Esta habilidad le puede otorgar un bonificador +3 al ataque y daño además de aumentar el área de efecto por 15 pies o recibir +3 en tiros defensivos y permitirle formar un muro de agua una vez por ronda como reacción. Si ha empoderado su habilidad defensiva puede emplear *danza de agua* de manera ofensiva el turno siguiente como acción bonus.
+
+**Agua bendita** (2 acciones): +6, 1d6 + 1 radiante. Provoca una quemadura leve si reduce PV. 
 
 **Cambio de estado** (2 acciones): Crea una neblina de tamaño igual a 20 pies cúbicos, otorgando ocultamiento a todas las criaturas en su área durante una ronda. La neblina se desvanece al final de su turno.
 
@@ -416,13 +512,88 @@ Filos cortantes II, Escudos I, Armaduras I, Presencia I
 
 ****
 
-**Parada**: +5
+**Parada elemental**: +6 (+9 con danza de agua). No puede defenderse de ataques cuerpo a cuerpo. Si tiene *danza de agua* activa puede crear un muro de agua una vez por ronda como reacción.
 
-**Esquiva:** +5, se mueve 5 pies. 
+**Esquiva:** +4, se mueve 5 pies.
 
 ## Élite de Petrikov (nivel 6)
 
-Filos cortantes III, Fortitud II, Ira I, Escudos I
+**PV:** 11			**VT:** 13	 		**DEF:** 11 (pesada, natural +2)
+
+**FUE:** 6	**DES:** 1	**CON:** 5	 **INT:** 1	**SAB:** 3	**CAR:** 1
+
+------
+
+**Talentos:** Heroísmo +9, Destrozar +8, Atletismo +7, Averiguar intenciones +6
+
+**Resiste:** Frío 4, aturdimiento +3
+
+**Tiros de salvación:** CON +6
+
+**Movimiento:** 20 pies (solo puede moverse una vez por ronda)
+
+**Acciones:** 3
+
+****
+
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+
+**Forma defensiva** (4 rondas/combate): Entra en un estado de defensa absoluta conocido como forma defensiva cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la forma defensiva reducirá su FUE por 2, su CON por 2, su velocidad por 10 pies, perderá la ventaja en sus tiros defensivos y perderá una acción.
+
+****
+
+**Gran hacha** (2 acciones): +8, 2d8 + 6 cortante. Aumenta el nivel de todas las heridas provocadas por un paso contra criaturas con 4 o menos defensa por armaduras.
+
+**Golpe de escudo** (acción bonus): +6, 1d6 + 6 contundente, y tropieza +9. Este ataque solo puede realizarse si se mueve 20 pies o más. 
+
+**Interceptar** (1 acción): Esta criatura se prepara para detener un movimiento enemigo. En cualquier momento de la ronda puede moverse 20 pies y hacer un golpe de escudo contra un enemigo que se esté moviendo, haciendo un ataque de *golpe de escudo* y deteniéndolo en el acto.
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
+
+**Gran corte** (3 acciones): Realiza un ataque con su espada larga contra todos los enemigos en un arco de 15 pies.
+
+------
+
+**Escudo**: +6+d6, puede proteger a aliados que se encuentren a 5 pies.
 
 ## Hechicero gélido (niv 5)
 
+**PV:** 5			**VT:** 8	 		**DEF:** 4 (ligera, resistencia 2)
+
+**FUE:** 1     **DES:** 3	**CON:** 1	 **INT:** 1	**SAB:** 3	**CAR:** 5
+
+------
+
+**Talentos:** Acrobacias +6, Percepción +6, Atletismo +2, Averiguar intenciones +5
+
+**Movimiento:** 20 pies
+
+**Acciones:** 4, reserva 8
+
+****
+
+**Reserva de energía** (2/turno): Hace un ataque de *torrente de agua*, *rayo gélido*, *cambio de estado* o *espina de hielo* como acción bonus y reduce su reserva por 1.
+
+------
+
+**Torrente de agua** (2 acciones): +7, alcance 30 pies, empuja 20 pies y tropieza (+6 contra heroísmo).
+
+**Rayo gélido** (2 acciones): +7, alcance 60 pies, 1d6 + 1 frío y ralentiza durante una ronda si el objetivo no tiene protección frente al frío. Si reduce PV el objetivo deberá tirar CON contra +6 o es paralizado hasta que se libere (deberá tirar heroísmo contra +6). Solo puede atacar a criaturas que se encuentren en un entorno afectado por *bajar temperaturas* o *neblina gélida*.
+
+**Espina gélida** (2 acciones): +7, alcance 60 pies, 1d8 + 5 perforante.
+
+**Danza de agua** (2 acciones y -1 reserva):  Puede acumular las aguas en torno a su cuerpo para empoderar su habilidad ofensiva o defensiva. Esta habilidad le puede otorgar un bonificador +3 al ataque y daño además de aumentar el área de efecto por 15 pies o recibir +3 en tiros defensivos y permitirle formar un muro de agua una vez por ronda como reacción. Si ha empoderado su habilidad defensiva puede emplear *danza de agua* de manera ofensiva el turno siguiente como acción bonus.
+
+**Hielo resbalante** (2 acciones): Transforma una superfície mojada por agua en hielo, transformándola en terreno difícil. Toda criatura que intente cruzarla deberá hacer un tiro de atletismo o acrobacias contra +7 o cae al suelo y resbala 10 pies en una dirección aleatoria.
+
+**Neblina gélida** (2 acciones): Crea una neblina de tamaño igual a 20 pies cúbicos, otorgando ocultamiento a todas las criaturas en su área durante una ronda y ralentizando a aquellas sin resistencias al frío. La neblina se desvanece al final de su turno y todos tus ataques con *rayo gélido* o *espina gélida* hechos contra criaturas en el área reciben ventaja.
+
+**Muro de agua** (2 acciones): Crea un muro de agua de longitud 30 pies y altura 10 pies. El muro impide el paso de proyectiles y toda criatura que intente cruzarlo deberá tener éxito en un tiro de heroísmo contra +6 o es empujada 5 pies hacia atrás. Alternativametne puede crear un muro de hielo de las mismas proporciones con 6 PV y 2 defensa.
+
+****
+
+**Parada elemental**: +7 (+10 con danza de agua). No puede defenderse de ataques cuerpo a cuerpo. Si tiene *danza de agua* activa puede crear un muro de agua una vez por ronda como reacción (puede congelar el muro como reacción si se encuentra en un entorno frío).
+
+**Esquiva:** +4, se mueve 5 pies.
+
+Ascendencia agua I, Magia hielo II, Magia 
