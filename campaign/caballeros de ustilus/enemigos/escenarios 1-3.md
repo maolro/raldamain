@@ -398,6 +398,8 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Bomba de humo** (2 acciones, 2/combate): alcance 30 pies, crea una nube de humo de radio 15 pies.
 
+**Cognatógeno**
+
 **Inyección** (2 acciones): +5, 1d4 + 2 perforante. El objetivo debe hacer un tiro de CON frente a +6 o sufre los efectos de un veneno de SAB/DES/FUE (3/combate).
 
 **Medicamento** (3 acciones, 3/combate): Un aliado adyacente se sana 1d6 + 4 Vitalidad y reduce el nivel de una herida permanente, veneno o enfermedad por un paso. 
