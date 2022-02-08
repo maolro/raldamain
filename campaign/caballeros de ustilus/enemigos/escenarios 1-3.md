@@ -374,9 +374,9 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ## Doctor de plagas (nivel 4)
 
-**PV:** 6 	**VT:** 8 	**DEF:** 2 (ligera)
+**PV:** 7 	**VT:** 9 	**DEF:** 2 (ligera)
 
-**FUE:** 1  **DES:** 4  **CON:** 2  **INT:** 4  **SAB:** 1  **CAR:** 1
+**FUE:** 3  **DES:** 5  **CON:** 3  **INT:** 4  **SAB:** 1  **CAR:** 1
 
 ------
 
@@ -390,29 +390,27 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ------
 
-**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+**Combate furtivo:** +5 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+
+**Mutágeno:** Antes de combatir esta criatura se ha bebido un mutágeno para recibir mejoras en el campo de batalla. Mientras haya bebido el mutágeno no puede concentrarse pero recibe bonificadores a sus estadísticas físicas durante los próximos 10 minutos. Cuando se termine el efecto del mutágeno reduce su FUE y CON por 2 y recibe náuseas.
 
 ------
 
-**Frasco de ácido** (2 acciones, 4/combate): +5, alcance 30 pies y salpicadura 5 pies, 1d6 + 4 ácido y reduce la defensa de todas las criaturas impactadas por 1.
+**Frasco de ácido** (2 acciones, 4/combate): +7, alcance 30 pies y salpicadura 5 pies, 1d6 + 4 ácido y reduce la defensa de todas las criaturas impactadas por 1.
 
 **Bomba de humo** (2 acciones, 2/combate): alcance 30 pies, crea una nube de humo de radio 15 pies.
 
-**Cognatógeno**
-
-**Inyección** (2 acciones): +5, 1d4 + 2 perforante. El objetivo debe hacer un tiro de CON frente a +6 o sufre los efectos de un veneno de SAB/DES/FUE (3/combate).
+**Inyección** (2 acciones): +7, 1d4 + 4 perforante. El objetivo debe hacer un tiro de CON frente a +6 o sufre los efectos de un veneno de SAB/DES/FUE (3/combate).
 
 **Medicamento** (3 acciones, 3/combate): Un aliado adyacente se sana 1d6 + 4 Vitalidad y reduce el nivel de una herida permanente, veneno o enfermedad por un paso. 
 
-**Apuntar ataque** (1 acción): +4 daño y provoca una herida permanente leve si el objetivo tiene armadura media o inferior. Puede pagar una acción adicional para provocar heridas a enemigos con armaduras pesadas o 2 para completas.
+**Apuntar ataque** (1 acción): +5 daño y provoca una herida permanente leve si el objetivo tiene armadura media o inferior. Puede pagar una acción adicional para provocar heridas a enemigos con armaduras pesadas o 2 para completas.
 
 ------
 
-**Parada**: +5. (1/ronda) Puede hacer una segunda parada con +5-1d6 contra un ataque que no haya podido bloquear.
+**Parada**: +7
 
-**Reflejos**: +5
-
-Bombas I, Química II, Reflejos I, Filos perforantes I
+**Reflejos**: +6, se mueve 5 pies.
 
 ## Arcabucero (nivel 2)
 
