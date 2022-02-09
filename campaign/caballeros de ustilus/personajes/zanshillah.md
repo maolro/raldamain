@@ -44,3 +44,9 @@ Zanshillah fue una maga arcana y miembro del consejo secreto del Pacto entre 399
 ## Pandeshar
 
 ## Thirion
+
+# Estadísticas
+
+## Zanshillah (nivel 19)
+
+Magia de evocación V, Magia protectora IV, Conocimiento III, Magia temporal IV, Magia espacial IV

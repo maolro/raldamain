@@ -48,3 +48,9 @@ image: xingonu.jpg
 ## Li Zin
 
 ## Yabu
+
+# Estadísticas
+
+## Xingonu (nivel 18)
+
+Contundentes V, Médium V, Ascendencia oni VI, Fortitud III, (Ira II médium)

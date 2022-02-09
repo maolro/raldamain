@@ -12,8 +12,6 @@ title: Escenarios 1-3
 
 **Talentos:** Percepción +3, Intimidar +4, Heroísmo +4, Atletismo +4
 
-**Rangos:** Alabardas I, Armaduras I
-
 **Movimiento:** 20 pies
 
 **Acciones:** 3

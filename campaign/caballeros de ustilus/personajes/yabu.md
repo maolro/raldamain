@@ -90,3 +90,22 @@ image: yabu.jpg
 ## Xingonu
 
 ""
+
+# Estadísticas
+
+## Hob (nivel 13)
+
+Filos cortantes V, Armaduras II, Ascendencia oni V, Magia temporal II
+
+## Hob (nivel 15)
+
+Filos cortantes V, Armaduras III, Ascendencia oni VI, Magia temporal II
+
+## Hob (nivel 18)
+
+Filos cortantes V, Armaduras III, Ascendencia oni VI, Magia temporal V
+
+## Hob (nivel 20)
+
+Filos cortantes V, Armaduras III, Ascendencia oni VI, Magia temporal V, Médium II
+

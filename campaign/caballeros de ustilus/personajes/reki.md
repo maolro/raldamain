@@ -64,3 +64,14 @@ image: reki.jpg
 ## Timmy
 
 ""
+
+# Estadísticas
+
+## Reki (niv 7)
+
+## Reki (niv 10)
+
+## Reki (niv 13)
+
+## Reki (niv 15)
+

@@ -74,45 +74,5 @@ Después de este descubrimiento, si Ileria sigue con el grupo ella les contará 
 
 Cuando el Corazón del Invierno sea arrastrado a la tormenta de Olvangar los jugadores notarán como de inmediato los vientos se enfurecen y empieza a caer una intensa lluvia sobre el barco. Las tropas supervivientes de Petrikov intentarán escapar como puedan, pero el general mismo se queda para asegurarse que las aguas devoren a los responsables de la destrucción de su barco. Ahora los jugadores y todos los PNJ que queden deberán luchar contra Petrikov mismo y sus poderosos esbirros en una batalla para su propia supervivencia. Estos deberán luchar contra **Petrikov**, cuatro **tropas élite de Petrikov** y un **sanador de combate**. Además de la fuerza de Petrikov mismo el clima actúa en contra de los jugadores. Las tormentas del navío otorgarán ocultamiento a todas las criaturas a más de 20 pies y cada dos rondas el barco empezará a agitarse violentamente, causando que todas las criaturas tengan que tirar heroísmo contra dificultad +6 o serán empujados 1d6 x 5 pies y caerán tropezados (Petrikov no necesita hacer este tiro). Si Petrikov se encuentra críticamente herido él se lanzará por la borda y empleará su magia gélida para congelarse, quedando a la merced de las olas. Los jugadores supervivientes quedarán a la merced de la feroz tormenta, quedando en duda si vivirán o no. Es recomendable que el máster cese la sesión en este climático punto antes de llegar al siguiente capítulo.
 
-## Enemigos
 
-**Soldado mazarino** (nivel 2)
-
-- <u>Rangos:</u> Alabardas I, Armaduras I, Fortitud I
-
-**Arcabucero mazarino** (nivel 2)
-
-- <u>Rangos:</u> Armas de fuego I, Armaduras I, Reflejos I
-
-**Sargento mazarino** (nivel 4)
-
-- <u>Rangos:</u> Filos cortantes II, Armaduras I, Fortitud I, Presencia I
-
-**Emboscador mazarino** (nivel 3)
-
-- <u>Rangos:</u> A distancia I o Filos perforantes I, Reflejos I, Rastrear I, Fortitud I
-
-**Sanador de batalla** (nivel 4)
-
-- <u>Rangos:</u> Magia de vida II, Ascendencia de agua I, Fortitud I, Magia de agua I
-
-**Guerrero norteño** (nivel 3)
-
-- <u>Rangos:</u> Filos cortantes I (hacha), Escudo I, Fortitud I, Ira I
-
-**Élite de Petrikov** (nivel 6)
-
-- <u>Rangos:</u> Filos cortantes III (hacha pesada), Fortitud I, Armaduras I, Ira II
-
-**Hechicero gélido** (nivel 5)
-
-- <u>Rangos:</u> Ascendencia de agua II, Magia de agua II, Magia de hielo I, Fortitud I
-
-**Asesino del pacto** (nivel 5)
-
-- <u>Rangos:</u> A distancia II, Rastrear II, Reflejos I, Filos ligeros I
-
-**General Petrikov** (nivel 8)
-
-- <u>Rangos:</u> Ascendencia boreal IV, Magia de hielo III, Reflejos I, Filos perforantes I
 

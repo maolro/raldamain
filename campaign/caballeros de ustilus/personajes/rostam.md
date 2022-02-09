@@ -48,3 +48,5 @@ Rostam fue un revolucionario Temash y gobernador de Tamashkhan entre 4006 y 4010
 ## Lucanor
 
 ## Yabu
+
+# Estadísticas

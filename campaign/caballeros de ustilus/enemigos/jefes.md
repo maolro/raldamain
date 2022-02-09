@@ -12,15 +12,13 @@ title: Jefes
 
 **Talentos:** Percepción +7, Estudio +4 (navegación, historia), Intimidar +5, Acrobacias +8, Atletismo +5
 
-**Rangos:** Magia de hielo IV, scendencia boreal III, Reflejos I, Filos perforantes I
-
 **Resiste:** Frío 4, Fuego 4, daño físico 3
 
 **Sentidos:** Visión árctica 60 pies
 
 **Movimiento:** 15 pies
 
-**Prioridad:** 4 (1 estándar + 2 movimiento)
+**Acciones:** 4
 
 ------
 
@@ -28,21 +26,21 @@ title: Jefes
 
 **Reserva de energía**: Sufre 2 daño no-letal para hacer un ataque adicional de Rayo gélido o espina gélida, herir a todas las criaturas en un cono de 15 pies, aumentar el radio de salpicadura por 10 pies o recargar tormenta de nieve (1/turno).
 
-**Ataque apuntado:** Puede tomar un penalizador -2 en un ataque de espina gélida para ignorar 2 puntos de DEF del oponente.
-
 ------
 
-**Rayo gélido** (acción de movimiento, CRIT 19-20): +9, alcance 60 pies, 1d6 + 4 frío, ralentizado y sufre los efectos de un veneno de DES. Si reduce los PV el objetivo deberá tirar CON contra +9 o acaba congelado.
+**Rayo gélido** (1 acción, CRIT 19-20): +9, alcance 60 pies, 1d6 + 4 frío, ralentizado y sufre los efectos de un veneno de DES. Si reduce los PV el objetivo deberá tirar CON contra +9 o acaba congelado.
 
-**Espada gélida** (acción de movimiento, CRIT 19-20): +9, alcance 5/60 pies, 1d8 + 5 perforante + 2 frío. +4 daño si flanquea o el enemigo es incapaz de defenderse. Si inflige daño a los PV el objetivo quedará ralentizado. Puede emplear una acción de movimiento adicional para ignorar 2 puntos de DEF que tenga el enemigo (si reduce la DEF a 0 todas las heridas permanentes aumentan su nivel por 1).
+**Apuntar ataque** (1 acción): +5 daño y provoca una herida permanente leve si el objetivo tiene armadura ligera (media si usa la ballesta). Puede pagar una acción adicional para provocar heridas a enemigos con armaduras medias, 2 para pesadas o 3 para completas.
 
-**Muro de hielo** (acción estándar): Forma un muro de hielo con proporciones 60 x 20 pies (cada sección de 10x10 pies del muro tiene 6 PV).
+**Espada gélida** (1 acción, CRIT 19-20): +9, alcance 5/60 pies, 1d8 + 5 perforante + 2 frío. +4 daño si flanquea o el enemigo es incapaz de defenderse. Si inflige daño a los PV el objetivo quedará ralentizado. Puede emplear una acción de movimiento adicional para ignorar 2 puntos de DEF que tenga el enemigo (si reduce la DEF a 0 todas las heridas permanentes aumentan su nivel por 1).
 
-**Neblina polar** (acción estándar): Forma una neblina que llena un volumen de 40 pies cúbicos. Todas las criaturas que inicien su turno en una neblina polar quedarán ralentizadas y tus ataques reciben ventaja contra ellas.
+**Muro de hielo** (2 acciones): Forma un muro de hielo con proporciones 60 x 20 pies (cada sección de 10x10 pies del muro tiene 6 PV).
 
-**Tormenta de nieve** (acción estándar, CRIT 19-20): +9, 1d8 + 4 frío y 1d6 contundente. Todo el área en una línea de 15 x 50 pies se convierte en terreno difícil. Debe esperar 2 turnos antes de volver a usar esta habilidad.
+**Neblina polar** (2 acciones): Forma una neblina que llena un volumen de 40 pies cúbicos. Todas las criaturas que inicien su turno en una neblina polar quedarán ralentizadas y tus ataques reciben ventaja contra ellas.
 
-**Ventisca** (acción estándar): +9, empuja 1d6 x 5 pies y 1d6 frío. Puede emplear un ritual de dos rondas de duración para llamar una nevada a la zona.
+**Tormenta de nieve** (2 acciones, CRIT 19-20): +9, 1d8 + 4 frío y 1d6 contundente. Todo el área en una línea de 15 x 50 pies se convierte en terreno difícil. Debe esperar 2 turnos antes de volver a usar esta habilidad.
+
+**Ventisca** (2 acciones): +9, empuja 1d6 x 5 pies y 1d6 frío. Puede emplear un ritual de dos rondas de duración para llamar una nevada a la zona.
 
 **Congelación rápida** (acción bonus): Congela una superfície de 40 pies, convirtiéndola en terreno difícil. Toda criatura que se mueva por ella más de 15 pies deberá tirar acrobacias contra +9 o cae al suelo. Esta habilidad solo puede usarse en entornos fríos. Volver a usar esta habilidad cuesta una acción estándar.
 
@@ -67,8 +65,6 @@ Petrikov solo se enfrentará directamente a sus enemigos si cuenta con la ventaj
 **Talentos:** Estudio +9 (Química, botánica, medicina, tierras prohibidas, biología), Sigilo +5, Percepción +8, Primeros auxilios 3, Supervivencia +8
 
 **Rangos:** Ascendencia fúngica IV, Nigromancia II, Magia de naturaleza III, Fortitud II
-
-**Resiste:** Necrótico 5, Veneno 3, Enfermedades 3
 
 **Sentidos:** Visión nocturna 60 pies
 

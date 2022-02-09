@@ -81,5 +81,22 @@ Pantor fue un soldado ustilés y capitán de la Hermandad del cuervo entre 4001 
 
 ""
 
+# Estadísticas
 
 
+
+## Capitán Pantor (nivel 7)
+
+Armas de fuego II, Combate doble II, Reflejos II, Presencia II
+
+## Capitán Pantor (nivel 10)
+
+Armas de fuego III, Combate doble II, Reflejos III, Presencia III
+
+## Capitán Pantor (nivel 13)
+
+Armas de fuego V, Combate doble III, Reflejos III, Presencia III
+
+## Capitán Pantor (nivel 16)
+
+Armas de fuego V, Combate doble III, Reflejos IV, Presencia V
