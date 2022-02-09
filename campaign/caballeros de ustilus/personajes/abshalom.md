@@ -97,7 +97,55 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 ## Abshalom (nivel 12)
 
-Filos cortantes V, Ataques naturales IV, Armaduras III, Presencia III
+**PV:** 13	 **VT:** 26	 **DEF:** 12 (completa +4)
+
+**FUE:** 7	 **DES:** 1	 **CON:** 7	 **INT:** 2	 **SAB:** 2	 **CAR:** 3
+
+------
+
+**Talentos:** Heroísmo +12, Percepción +4, Estudio +4 (religión, táctica), Atletismo +10, Destrozar +10
+
+**Resiste:** Magia 6, fuego 6, miedo 4, moral 4, aturdimiento 4, ralentizar 4, efectos mentales 6
+
+**Movimiento:** 30 pies
+
+**Acciones:** 4
+
+------
+
+**Inspirar temor:** Si tiene activa la habilidad *voz del comandante* todas las criaturas en un radio de 30 pies deberán hacer un tiro de carisma contra +4 o son espantados. Esta habilidad no afecta a otras criaturas bajo los efectos de *voz del comandante*.
+
+**Última voluntad de Feyn:** Abshalom lucha con la fuerza y fervor como si aún estuviera bendecido por su dios, recibiendo bonificadores a sus estadísticas y vitalidad ya incluidos. Si sufre una herida permanente o pierde la concentración perderá dichos beneficos, reduciendo su FUE y CON por 2, su resistencia a efectos mentales por 3 y su vitalidad por 5.
+
+**Indómito** (3/combate): Repite una tirada y se queda con el mejor resultado.
+
+**Inspiración** (4/combate): Abshalom o un aliado afectado por *voz del comandante* recibe un bonificador +2 en un tiro de ataque, defensa o habilidad. Esta habilidad puede aplicarse múltiples veces por turno (máximo +6 por tirada).
+
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+
+**Carga poderosa:** Al realizar una carga recibe los beneficos de *ataque poderoso* en el siguiente golpe que realice sin la necesidad de gastar acciones, infrementando así su daño por 1d6 y permitiéndole empujar 10 pies a su objeivo y hacerle un intento de aturdimiento contra +10.
+
+------
+
+**Espada larga** (1 acción, CRIT 18-20): +12, 1d10 + 7 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con 4 o menos defensa por armaduras. Aumenta su bonificador al tiro de ataque y al daño por 1 por cada ataque consecutivo que realice.
+
+**Choque de espadas** (1 acción, CRIT 19-20): +12, atrapa el arma de su objetivo impidiendo que pueda atacar o defenderse de otros ataques con ella hasta que se libere.
+
+**Golpe** (1 acción, CRIT 19-20): +10, 1d6 + 6 contundente.Z
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar. Si el objetivo se defiende con un escudo reduce su valor defensivo por 1 (máximo 3 por ataque). Si el objetivo intenta defender un ataque poderoso con parada elemental o mágica le infligirá la mitad de daño aunque falle. Si emplea esta habilidad en un golpe en lugar de provocar sangrado empujará al objetivo 10 pies hacia atrás y este deberá hacer un tiro de CON frente a +10 o es aturdido durante una ronda.
+
+**Ataque torbellino** (2 acciones): Realiza un ataque con su espada larga contra todos los enemigos en un radio de 5 pies.
+
+**Voz del comandante** (2 acciones): Todos los aliados a 30 pies reciben ventaja en todos sus tiros de ataque, defensa y habilidad. Esta habilidad durará hasta que esta criatura sufra una herida permanente. Los efectos de *voz del comandante* no se acumulan entre sí.
+
+**Inspirar heroísmo** (2 acciones): Un aliado recibe +2 en dos estadísticas, recibe resistencia 3 al miedo y aumenta su vitalidad por 5. Solo podrá afectar a un máximo de 2 aliados.
+
+**Atemorizar** (2 acciones): +11 contra SAB, radio 30 pies, todos los objetivos aumentan su nivel de miedo por un paso.
+
+------
+
+**Parada**: +11. Puede defenderse de ataques a distancia si se encuentra en posición defensiva.
 
 ## Abshalom (nivel 15)
 
