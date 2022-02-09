@@ -65,7 +65,7 @@ image: petrikov.jpg
 
 **Neblina polar** (2 acciones): Forma una neblina que llena un volumen de 40 pies cúbicos. Todas las criaturas que inicien su turno en una neblina polar quedarán ralentizadas y tus ataques reciben ventaja contra ellas.
 
-**Tormenta de nieve** (2 acciones, CRIT 19-20): +9, 1d8 + 4 frío y 1d6 contundente. Todo el área en una línea de 15 x 50 pies se convierte en terreno difícil. Debe esperar 2 turnos antes de volver a usar esta habilidad.
+**Tormenta de nieve** (2 acciones, CRIT 19-20): +9, 1d8 + 4 frío y 5 contundente. Todo el área en una línea de 15 x 50 pies se convierte en terreno difícil. Debe esperar 2 turnos antes de volver a usar esta habilidad.
 
 **Ventisca** (2 acciones): +9, empuja 1d6 x 5 pies y 1d6 frío. Puede emplear un ritual de dos rondas de duración para llamar una nevada a la zona.
 

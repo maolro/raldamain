@@ -24,7 +24,7 @@ title: Escenarios 1-3
 
 ------
 
-**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
+​		**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
 
 **Proteger aliado:** Un aliado a 10 pies recibe +1 en tiros defensivos (máximo +3)
 
@@ -266,7 +266,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Reflejos**: +6, se mueve 5 pies al tener éxito (solo si montado).
 
-## Cazador élfico (nivel 4)
+## Cazador (nivel 4)
 
 **PV:** 6			**VT:** 8	 		**DEF:** 2 (ligera)
 
@@ -300,7 +300,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Reflejos**: +6
 
-## Guardia real élfico (nivel 5)
+## Guardián (nivel 5)
 
 **PV:** 11			**VT:** 12	 		**DEF:** 10 (pesada +2, natural +2)
 
@@ -576,7 +576,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Torrente de agua** (2 acciones): +7, alcance 30 pies, empuja 20 pies y tropieza (+6 contra heroísmo).
 
-**Rayo gélido** (2 acciones): +7, alcance 60 pies, 1d6 + 1 frío y ralentiza durante una ronda si el objetivo no tiene protección frente al frío. Si reduce PV el objetivo deberá tirar CON contra +6 o es paralizado hasta que se libere (deberá tirar heroísmo contra +6). Solo puede atacar a criaturas que se encuentren en un entorno afectado por *bajar temperaturas* o *neblina gélida*.
+**Rayo gélido** (2 acciones): +7, alcance 60 pies, 1d6 + 1 frío y ralentiza durante una ronda si el objetivo no tiene protección frente al frío. Si reduce PV el objetivo deberá tirar CON contra +6 o es paralizado hasta que se libere (deberá tirar heroísmo contra +6). Solo puede atacar a criaturas que se encuentren en un entorno afectado por *bajar temperaturas* o *neblina gélida*.	
 
 **Espina gélida** (2 acciones): +7, alcance 60 pies, 1d8 + 5 perforante.
 
