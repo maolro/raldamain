@@ -42,3 +42,13 @@ Chandrial I, conocido como el santo, fue Mhajid del sacro imperio de Arshalán e
 ## Mussafir
 
 ## Yabu
+
+# Estadísticas
+
+## Chandrial (nivel 15)
+
+Ascendencia celestial III, Armaduras III, Filos cortantes V, Guerrero divino V
+
+## Chandrial (nivel 25)
+
+Ascendencia celestial VI, Armaduras III, Filos cortantes V, Guerrero divino V, Presencia V, Ira II

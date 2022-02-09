@@ -1,7 +1,7 @@
 ---
 title: Madeleine
 main: Caballeros de Ustilus
-nacionalidad: Norteña
+nacionalidad: Mazarina
 alineamiento: Neutro verdadero
 fecha-de-nacimiento: 3981
 fecha-de-muerte: desconocida
@@ -102,6 +102,26 @@ image: madeleine.jpg
 ## Yabu
 
 ""
+
+# Estadísticas
+
+## Madeleine (niv 4)
+
+## Madeleine (niv 7)
+
+## Madeleine (niv 10)
+
+## Madeleine (niv 13)
+
+## Madeleine (niv 15)
+
+## Madeleine (niv 18)
+
+## Madeleine (niv 20)
+
+
+
+
 
 
 

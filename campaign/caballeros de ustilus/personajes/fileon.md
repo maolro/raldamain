@@ -86,3 +86,25 @@ Fileon fue caballero de Ustilus, gran maestre de la orden de 4005 a 4010 y emper
 ""
 
 ## Theodora
+
+# Estadísticas
+
+## Fileon (nivel 10)
+
+Filos cortantes IV, Armaduras III, Escudo II, Presencia II
+
+## Fileon (nivel 13)
+
+Filos cortantes V, Armaduras III, Escudo III, Presencia III
+
+## Fileon (nivel 15)
+
+Filos cortantes V, Armaduras III, Escudo III, Presencia III
+
+## Fileon (nivel 18)
+
+Filos cortantes V, Armaduras III, Escudo V, Presencia III, Guerrero divino III
+
+## Fileon (nivel 20)
+
+Filos cortantes V, Armaduras III, Escudo V, Presencia III, Guerrero divino V

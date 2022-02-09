@@ -78,3 +78,63 @@ Es en esencia una persona perceptiva que se vale de la labia principalmente para
 ## Viorica
 
 "Me asombra sea capaz de traicionar a todo lo que conoció por una mísera oportunidad de servicio. Ve la vida como una gran aventura y actúa sin preservación propia. Es útil de usar, pero es mejor quitármela de encima de la forma más favorable posible antes de que piense traicionarme de la misma manera que traicionó a su pueblo."
+
+# Estadísticas
+
+## Laicon de Dairov (nivel 12)
+
+**PV:** 10		**VT:** 18	**DEF:** 5 (ligera, resistencia 3)
+
+**FUE:** 3	**DES:** 7	**CON:** 4	**INT:** 2	**SAB:** 3	**CAR:** 6
+
+------
+
+**Talentos:** Persuasión +10, Engaño +8, Averiguar intenciones +7, Estudio +4 (teología, espíritus), Atletismo 
+
+**Rangos:** Filos perforantes V, Ascendencia sombría IV, Reflejos III, Magia sombría I
+
+**Resiste:** Necrótico 5
+
+**Sentidos:** Visión nocturna 60 pies
+
+**Movimiento:** 25 pies, escalada 25 pies.
+
+**Prioridad:** 7 (2 estándar + 2 movimiento)
+
+------
+
+**Regeneración sombría:** Laicon recupera 1 Vitalidad si se encuentra en un lugar a oscuras.
+
+**Aura de terror:** Todas las criaturas enemigas que acaben su turno a 60 pies de Laicon acabarán Espantadas mientras que continúen observándolo (asustandas si tienen 5 o menos PV). Esta habilidad se desactivará durante una ronda si Laicon sufre una herida permanente. Laicon solo puede emplear esta habilidad si está en un lugar a oscuras.
+
+**Ataque preciso:** Tres veces por ataque puede tomar un penalizador de un dado de desventaja para ignorar 3 puntos de defensa que tenga su objetivo. Si logra reducir la DEF de un enemigo a 0 multiplica el daño infligido por 2 y provocará una herida grave. 
+
+------
+
+**Espada ropera sombría** (acción de movimiento, CRIT 18-20): +12, alcance 10 pies, 1d8 + 3 perforante. +7 daño contra enemigos incapaces de defenderse o flanqueados. Puede sufrir 2 daño no-letal infundir el tajo de energía sombría, añadiendo 1d6 + 1 daño de fuerza al ataque (este daño reducirá los PV máximos de un personaje al reducir PV).
+
+**Apuntar ataque** (acción de movimiento): Reduce el penalizador por ataque preciso o para apuntar a un lugar específico por un dado de desventaja en su siguiente ataque.
+
+**Desarme** (acción de movmiento, CRIT 18-20): +12, el enemigo es desarmado. Esta habilidad solo puede usarse si un enemigo logra detener su ataque exitosamente con una parada.
+
+**Finta** (acción de movimiento, CRIT 18-20): +12, el enemigo es incapaz de defenderse contra su siguiente ataque e ignora 6 puntos de DEF que tenga. Una vez por ronda puede hacer un ataque con su espada ropera como reacción tras fintar.
+
+**Salto acrobático** (acción estándar): Laicon salta 30 pies evitando ataques de oportunidad e ignorando terreno difícil.
+
+**Crear oscuridad** (acción estándar, 5/día): Reduce la luminosidad en un área de 30 pies por un paso. Si está en un lugar a oscuras formará una nube de oscuridad de tamaño 30 pies.
+
+**Salto sombrío** (acción estándar, 4/día): Se teletransporta a otro punto a oscuras que se encuentre a 90 pies. Laicon solo puede emplear esta habilidad si se encuentra en un lugar a oscuras.
+
+**Forma sombría** (acción estándar, 1/día): Laicon se transforma en una sombra viviente, volviéndose así incorpóero. No puede permanecer en este estado durante más de 5 rondas al día.
+
+****
+
+**Parada:** +12, puede defenderse de ataques mágicos y a distancia si está en un lugar a oscuras. (-1d6 contra armas pesadas), Puede moverse 10 pies después de una parada exitosa y una vez por ronda puede hacer un contrataque como reacción.
+
+**Esquiva:** +10, puede moverse 5 pies sin provocar ataques de oportunidad. Puede esquivar ataques sorpresa y ataques hechos por criaturas invisibles. También no sufre daño obligatorio al esquivar exitosamente un ataque de área con radio 20 pies o menos.
+
+**Forma sombría:** Laicon activa de inmediato su habilidad Forma sombría. Esta habilidad solo puede usarse si Laicon está en forma defensiva.
+
+****
+
+Laicon es un enemigo extremadamente astuto e inteligente capaz de aprovechar el terreno y las debilidades de sus adversarios para alcanzar la victoria. Si él lucha será siempre en un entorno a oscuras para poder emplear sus siniestras habilidades a su máximo potencial, retirándose siempre a dicho lugar empleando su gran velocidad en el caso que sea atacado en un lugar que no le beneficia. Cuando empiece el combate en dicho entorno Laicon creará una nube de oscuridad para dividir a un grupo enemigo y esperará fuera de esta para atacar al primero que emerja con su espada ropera, obteniendo así los beneficios de ataque furtivo (el prioritizará enemigos con poca sabiduría y destreza). En su siguiente acción se colocará en posición defensiva y preparará un salto sombrío para teletransportarse junto a otro enemigo poco atento para continuar atacándolo (él esperará hasta que todos sus enemigos hayan atacado para que así no puedan verlo venir). Cuando ataque a dicho enemigo hará un ataque sorpresa y lo seguirá de una finta y otro ataque, guardando una acción estándar para realizar crear oscuridad o salto sombrío según más convenga (gastará vitalidad para infundir su ataque con tajo sombrío si lucha contra enemigos con mucha defensa). Él también flanqueará a sus enemigos junto a su aliado sombrío para poder utilizar ataque furtivo y empleará ataque preciso cada vez que obtenga ventaja para evitar la defensa de su adversario. Si se bate en un duelo contra un único individuo hará siempre dos ataques, una finta o desarme y entrará en posición defensiva para usar forma sombría si su enemigo amenaza los PV. Esta situación es la que más agrada a Laicon debido a su tradición como caballero e irá reduciendo a sus enemigos uno a uno para alcanzar dicho punto, aprovechándo lo que ya conozca de ellos para manipularlos de la manera más conveniente. Laicon intentará siempre huir si puede pero en el caso que esté acorralado sin salida luchará hasta la muerte para convertirse en mártir para su causa.

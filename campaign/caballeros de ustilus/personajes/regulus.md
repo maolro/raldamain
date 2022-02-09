@@ -82,3 +82,16 @@ image: regulus.jpg
 ## Zarsha
 
 ""
+
+# Estadísticas
+
+## Regulus (niv 4)
+
+## Regulus (niv 7)
+
+## Regulus (niv 10)
+
+## Regulus (niv 13)
+
+
+

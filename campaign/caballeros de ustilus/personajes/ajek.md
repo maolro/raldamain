@@ -72,3 +72,25 @@ Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 
 ## Yabu
 
 ""
+
+# Estadísticas
+
+## Ajek (nivel 10)
+
+Filos cortantes III, Fortitud II, Magia de naturaleza II, Ascendencia verdeante II, maldición de la bestia grado 2
+
+## Ajek (nivel 13)
+
+Filos cortantes IV, Fortitud II, Magia de naturaleza III, Ascendencia verdeante III, maldición de la bestia grado 2
+
+## Ajek (nivel 15)
+
+Filos cortantes V, Fortitud III, Magia de naturaleza III, Ascendencia verdeante III, maldición de la bestia grado 2
+
+## Ajek (nivel 18)
+
+Filos cortantes V, Fortitud III, Magia de naturaleza IV, Ascendencia verdeante IV, maldición de la bestia grado 2
+
+## Ajek (nivel 20)
+
+Filos cortantes V, Fortitud III, Magia de naturaleza V, Ascendencia verdeante VI, maldición de la bestia grado 2

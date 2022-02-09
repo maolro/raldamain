@@ -48,3 +48,21 @@ Stannish fue un semielfo guardaespaldas y sicario al servicio de la líder refor
 ## Madeleine
 
 ""
+
+# Estadísticas
+
+## Stannis (niv 7)
+
+A distancia III, Reflejos II, Rastrear II, Filos perforantes II
+
+## Stannis (niv 10)
+
+A distancia V, Reflejos III, Rastrear II, Filos perforantes III
+
+## Stannis (niv 15)
+
+A distancia V, Reflejos V, Rastrear V, Filos perforantes III
+
+## Stannis (niv 18)
+
+A distancia V, Reflejos V, Rastrear V, Filos perforantes IV, Combate doble II
