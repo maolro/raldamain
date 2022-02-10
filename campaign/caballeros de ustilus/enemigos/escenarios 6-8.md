@@ -130,6 +130,32 @@ title: Escenarios 6-8
 
 ## Caballería de élite (nivel 9)
 
+## Huargo de guerra (nivel 7)
+
+**PV:** 5			**VT:** 6	 		**DEF:** 6 (media +2)
+
+**FUE:** 1	**DES:** 4	**CON:** 2	 **INT:** 1	**SAB:** 2	**CAR:** 1
+
+------
+
+**Talentos:** Percepción +4, Sigilo +6, Acrobacias +5
+
+**Rangos:** Armas de fuego I, Reflejos I, Armaduras I, Guerrero divino I
+
+**Movimiento:** 15 pies
+
+**Acciones:** 4
+
+****
+
+**Hijos de la legión:** Recibe +1d6 en sus tiros de ataque y defensa hechos contra enemigos de la Legión.
+
+------
+
+**Mosquete** (acción estándar): +5, 2d6 perforante. Ignora la defensa de enemigos a menos de 30 pies. Debe recargar después de atacar, lo cual cuesta una acción de turno completo
+
+**Apuntar** (acción de movimiento): Aumenta la distancia máxima de mosquete por 15 pies.
+
 ## Guardián del portal oni (nivel 13)
 
 ## Sicario de Sek-Tebos (nivel 11)

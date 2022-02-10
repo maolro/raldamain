@@ -24,7 +24,7 @@ title: Escenarios 1-3
 
 ------
 
-​		**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
+**Parada** +4 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
 
 **Proteger aliado:** Un aliado a 10 pies recibe +1 en tiros defensivos (máximo +3)
 
