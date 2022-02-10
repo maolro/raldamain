@@ -28,7 +28,6 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de agua.
 - **Toque sanador:** Puedes sanar a cualquier criatura que se encuentre en tu radio de alcance de ataque elemental empleando el agua. Al sanar de esta manera elimina de manera automática todas las quemaduras que tenga tu objetivo.
 - **Descarga luminosa:** En lugar de lanzar rayos luminosos atacas a tus enemigos empleando agua bendita capaz de abrasar a tus enemigos. Un ataque de agua bendita infligirá 1d6 + rango en magia de vida daño radiante al impactar y provocará una quemadura leve si llega a reducir PV además que puedes aumentar su radio de efecto con *danza de agua*. A diferencia de un rayo luminoso un ataque de agua bendita puede esquivarse con normalidad.
 - **Barrera luminosa:** Perderás la habilidad de formar barreras hechas de luz pero a cambio podrás infundir una superfície de agua de tamaño igual a tu rango de magia de vida x 10 pies con agua bendita empleando una acción. Una superfície infundida de esta manera provocará 2 daño radiante a todas las criaturas enemigas que intenten pasar por él y las criaturas aliadas que hagan contacto con él se sanarán 1 vitalidad al principio de su turno. Si escoges infundir un muro podrás llenar toda su superfície aunque esta exceda tu área de efecto máxima con esta habilidad
-- **Foco de energía:** 
 
 ## Rango III
 
@@ -42,7 +41,7 @@ Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque elemental ahora te 
 
 <u>Vórtice</u> (2 acciones) Empleando una acción estándar puedes formar un vórtice de 30 pies de radio en una masa de agua de tu elección con tamaño superior a 60 pies cúbicos. Todas las criaturas en el vórtice deben tirar fuerza o serán atrapadas por las corrientes, sufriendo 2 daño no letal al turno y siendo arrastrados 10 pies hacia el centro del vórtice. Cuando lleguen al centro estas empezarán a ahogarse de inmediato. Puedes gastar 2 ataques almacenados a o reducir tu reserva elemental por 1 para aumentar el radio el vórtice por 10 pies. Esta habilidad puede usarse fuera del agua si tus objetivos están rodeados por un muro de agua con longitud total de 60 pies.
 
-<u>Burbujas de agua</u> (2 acciones): Empleando 2 acciones puedes formar una burbuja del tamaño de una cabeza humana que permite a aquel que entre en contacto con ella respirar bajo el agua. Una burbuja de agua puede emplearse también de forma ofensiva, permitiéndote emplear una acción de movimiento para llenar los pulmones de un objetivo agarrado o incapacitado con agua. Una criatura afectada de esta manera tendrá náuseas y se empezará a ahogar (en el caso que ya se esté ahogando reduce la cantidad de rondas en las que puede aguantar su respiración por 1).
+<u>Burbujas de agua</u> (2 acciones): Empleando 2 acciones puedes formar una burbuja del tamaño de una cabeza humana que permite a aquel que entre en contacto con ella respirar bajo el agua. Una burbuja de agua puede emplearse también de forma ofensiva, permitiéndote emplear una acción de para llenar los pulmones de un objetivo agarrado o incapacitado con agua. Una criatura afectada de esta manera tendrá náuseas y se empezará a ahogar (en el caso que ya se esté ahogando reduce la cantidad de rondas en las que puede aguantar su respiración por 1).
 
 ## Rango V
 
