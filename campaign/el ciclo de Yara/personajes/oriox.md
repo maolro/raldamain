@@ -38,7 +38,7 @@ Este sueño se rompe catastróficamente cuando Kuvira pierde la guerra contra Us
 
 Destrozado por no haber podido evitar la muerte de Kuvira viaja a Hakrapeu la tierra de la nigromancia donde derrota al dragón tirano que por tanto tiempo había estado gobernando ocupando su puesto y realizando cambios, lo primero fue dividir a la sociedad en castas y luego volverlas a dividir en clases para provocar la guerra entre ellas protegiendo únicamente algunos pueblos o ciudades para garantizar que la población continuase aumentando para mas tarde poder aumentar su ejercito cada vez mas y repetir este ciclo que torturaría a Hakrapeu durante los años venideros.
 
-Sin embargo no se dedicaría únicamente a aumentar su fuerza sino que esto solo sería un medio para despues de encontrar a la reencarnación de Kuvira llevarla a Hakrapeu donde poder educarla y entrenarla para que el día que ella recupere sus recuerdos esté preparada para el nuevo mundo donde va a estar
+Sin embargo no se dedicaría únicamente a aumentar su fuerza sino que esto solo sería un medio para después de encontrar a la reencarnación de Kuvira llevarla a Hakrapeu donde poder educarla y entrenarla para que el día que ella recupere sus recuerdos esté preparada para el nuevo mundo donde va a estar
 
 ## Conclusión
 
