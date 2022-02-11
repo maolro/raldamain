@@ -137,11 +137,11 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 **Ataque torbellino** (2 acciones): Realiza un ataque con su espada larga contra todos los enemigos en un radio de 5 pies.
 
-**Voz del comandante** (2 acciones): Todos los aliados a 30 pies reciben ventaja en todos sus tiros de ataque, defensa y habilidad. Esta habilidad durará hasta que esta criatura sufra una herida permanente. Los efectos de *voz del comandante* no se acumulan entre sí.
+**Voz del comandante** (2 acciones): Todos los aliados a 45 pies reciben ventaja en todos sus tiros de ataque, defensa y habilidad. Esta habilidad durará hasta que esta criatura sufra una herida permanente. Los efectos de *voz del comandante* no se acumulan entre sí.
 
 **Inspirar heroísmo** (2 acciones): Un aliado recibe +2 en dos estadísticas, recibe resistencia 3 al miedo y aumenta su vitalidad por 5. Solo podrá afectar a un máximo de 2 aliados.
 
-**Atemorizar** (2 acciones): +11 contra SAB, radio 30 pies, todos los objetivos aumentan su nivel de miedo por un paso.
+**Atemorizar** (2 acciones): +6 contra SAB, radio 30 pies, todos los objetivos aumentan su nivel de miedo por un paso.
 
 ------
 
@@ -197,7 +197,7 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 **Inspirar heroísmo** (2 acciones): Un aliado recibe +2 en dos estadísticas, recibe resistencia 3 al miedo y aumenta su vitalidad por 5. Solo podrá afectar a un máximo de 2 aliados.
 
-**Atemorizar** (2 acciones): +11 contra SAB, radio 30 pies, todos los objetivos aumentan su nivel de miedo por un paso.
+**Atemorizar** (2 acciones): +60 contra SAB, radio 30 pies, todos los objetivos aumentan su nivel de miedo por un paso.
 
 ------
 
