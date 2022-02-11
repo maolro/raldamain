@@ -129,11 +129,11 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 **Espada larga** (1 acción, CRIT 18-20): +12, 1d10 + 7 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con 4 o menos defensa por armaduras. Aumenta su bonificador al tiro de ataque y al daño por 1 por cada ataque consecutivo que realice.
 
-**Choque de espadas** (1 acción, CRIT 19-20): +12, atrapa el arma de su objetivo impidiendo que pueda atacar o defenderse de otros ataques con ella hasta que se libere.
+**Choque de espadas** (1 acción, CRIT 18-20): +12, atrapa el arma de su objetivo impidiendo que pueda atacar o defenderse de otros ataques con ella hasta que se libere.
 
 **Golpe** (1 acción, CRIT 19-20): +10, 1d6 + 6 contundente.
 
-**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar. Si el objetivo se defiende con un escudo reduce su valor defensivo por 1 (máximo 3 por ataque). Si el objetivo intenta defender un ataque poderoso con parada elemental o mágica le infligirá la mitad de daño aunque falle. Si emplea esta habilidad en un golpe en lugar de provocar sangrado empujará al objetivo 10 pies hacia atrás y este deberá hacer un tiro de CON frente a +10 o es aturdido durante una ronda.
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 3 al impactar. Si el objetivo se defiende con un escudo reduce su valor defensivo por 1 (máximo 3 por ataque). Si el objetivo intenta defender un ataque poderoso con parada elemental o mágica le infligirá la mitad de daño aunque falle. Si emplea esta habilidad en un golpe en lugar de provocar sangrado empujará al objetivo 10 pies hacia atrás y este deberá hacer un tiro de CON frente a +10 o es aturdido durante una ronda.
 
 **Ataque torbellino** (2 acciones): Realiza un ataque con su espada larga contra todos los enemigos en un radio de 5 pies.
 
@@ -185,11 +185,11 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 **Espada larga** (1 acción, CRIT 18-20): +12, 1d10 + 7 cortante. Aumenta el nivel de todas las heridas por 1 al impactar a enemigos con 4 o menos defensa por armaduras. Aumenta su bonificador al tiro de ataque y al daño por 1 por cada ataque consecutivo que realice.
 
-**Choque de espadas** (1 acción, CRIT 19-20): +12, atrapa el arma de su objetivo impidiendo que pueda atacar o defenderse de otros ataques con ella hasta que se libere.
+**Choque de espadas** (1 acción, CRIT 18-20): +12, atrapa el arma de su objetivo impidiendo que pueda atacar o defenderse de otros ataques con ella hasta que se libere.
 
 **Golpe** (1 acción, CRIT 19-20): +10, 1d6 + 6 contundente.
 
-**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar. Si el objetivo se defiende con un escudo reduce su valor defensivo por 1 (máximo 3 por ataque). Si el objetivo intenta defender un ataque poderoso con parada elemental o mágica le infligirá la mitad de daño aunque falle. Si emplea esta habilidad en un golpe en lugar de provocar sangrado empujará al objetivo 10 pies hacia atrás y este deberá hacer un tiro de CON frente a +10 o es aturdido durante una ronda.
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 3 al impactar. Si el objetivo se defiende con un escudo reduce su valor defensivo por 1 (máximo 3 por ataque). Si el objetivo intenta defender un ataque poderoso con parada elemental o mágica le infligirá la mitad de daño aunque falle. Si emplea esta habilidad en un golpe en lugar de provocar sangrado empujará al objetivo 10 pies hacia atrás y este deberá hacer un tiro de CON frente a +10 o es aturdido durante una ronda.
 
 **Ataque torbellino** (2 acciones): Realiza un ataque con su espada larga contra todos los enemigos en un radio de 5 pies.
 
