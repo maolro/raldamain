@@ -338,6 +338,8 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 **Escudo**: +6 + d6, puede proteger a aliados que se encuentren a 5 pies.
 
+**Proteger aliado:** Un aliado a 10 pies recibe +1 en tiros defensivos (máximo +3)
+
 ## Matón del Pacto (nivel 2)
 
 **PV:** 7			**VT:** 6	 		**DEF:** 4 (ligera, armadura natural +2)

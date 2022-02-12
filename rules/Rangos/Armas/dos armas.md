@@ -31,15 +31,15 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 ### Rango I 
 
-<u>Cadenas giratorias</u> (acción bonus): Eres capaz de entrar en el estado *[danza de cadenas](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-i)* como acción bonus si eliges no atacar con tu arma secundaria. Además, si te encuentras en el estado de danza de cadenas aumenta el daño hecho con ataques de oportunidad por un valor igual al daño base de tu arma secundaria (este daño solo se aplicará una vez por ronda). 
+<u>Cadenas giratorias</u> (acción bonus): Eres capaz de entrar en el estado *[danza de cadenas](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-i)* como acción bonus si eliges no atacar con tu arma secundaria. Además, si te encuentras en el estado de danza de cadenas aumenta el daño hecho con ataques de oportunidad por un valor igual al daño base de tu arma secundaria, el cual se aplicará solo una vez por ronda.
 
 <u>Ataque torbellino</u> (acción bonus y 2 acciones) Puedes emplear tu ataque con el arma secundaria para reducir el coste de *[ataque circular](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-ii)* por 1. Puedes también emplear 2 acciones para atacar a todas las criaturas en un radio de tamaño igual al alcance de tu arma, aplicando los mismos efectos que *ataque circular* al impactar. Entras de inmediato en *danza de cadenas* al usar esta habilidad y esta podrá detenerse de la misma manera que *ataque circular*. 
 
 ### Rango II 
 
-<u>Doble agarre</u> (acción bonus): Si llegas a enredar al mismo objetivo con tus dos cadenas, este queda [agarrado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#agarrada) automáticamente sin que tengas que emplear una acción. Mover o estampar una criatura agarrada te cuesta una acción bonus lo primera vez que lo hagas, y para escapar de tu agarre la criatura debe tener éxito en dos tiradas contra tus cadenas. No puedes usar cadenas giratorias o *[cargar ataque](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-ii)* mientras agarres a una criatura. 
+<u>Doble agarre</u> (acción bonus): Si llegas a enredar al mismo objetivo con tus dos cadenas este quedará [agarrado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#agarrada) automáticamente sin que tengas que emplear una acción. Mover o estampar una criatura agarrada te cuesta una acción bonus lo primera vez que lo hagas y para escapar de tu agarre la criatura debe tener éxito en dos tiradas contra tus cadenas. No puedes usar cadenas giratorias o *[cargar ataque](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-ii)* mientras agarres a una criatura. 
 
-<u>Escudo de cadenas</u> (pasiva): Ambas cadenas actúan como un poderoso escudo para protegerte de ataques. Si te encuentras en el estado de danza de cadenas recibirás ventaja en todos tus tiros para defenderte de ataques a distancia.  
+<u>Escudo de cadenas</u> (pasiva): Ambas cadenas actúan como un poderoso escudo para protegerte de ataques. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener con tu arma principal una vez por ronda (el penalizador por luchar con doble arma se aplica también a este tiro si lo tienes). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
 
 ### Rango III 
 

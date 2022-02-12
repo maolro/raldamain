@@ -382,3 +382,96 @@
 
 ## Horda de malditos (nivel 7)
 
+## 
+
+## Ejecutor de la Legión (nivel 10)
+
+**PV:** 12	 **VT:** 18	 **DEF:** 16 (completa +6, resistencia 2)
+
+**FUE:** 7	 **DES:** 2	 **CON:** 6	 **INT:** 1	 **SAB:** 3	 **CAR:** 1
+
+------
+
+**Talentos:** Heroísmo +12, Averiguar intenciones +6, Percepción +6, Atletismo +9
+
+**Resiste:** Magia 8, aturdimiento 4, fuego 6
+
+**Movimiento:** 20 pies
+
+**Acciones:** 3
+
+------
+
+**Hijos de la legión:** Todos los aliados hobgoblin con los que participe en un combate recibirán ventaja en todos sus tiros de ataque y defensa. Esta habilidad no se acumula consigo misma y se perderá cuando una criatura afectada pierda la concentración.
+
+**Ajustar alcance** (pasiva): Al principio de su turno pued escoger entre aumentar el alcance de todos sus ataques a 15 pies y recibir desventaja en sus tiros defensivos o reducir el alcance a 5 pies y recibir ventaja en tiros defensivos. Cambiar de elección costará una acción.
+
+**Danza de cadenas** (1 acción reactivar): Gira sus cadenas a gran velocidad para protegerse de ataques enemigos. Toda criatura que entre en un espacio que amenace con las cadenas sufrirá un ataque de oportunidad con su cadena eléctrica que infligirá +1d6 daño. Los bonificadores de esta habilidad se perderán si esta criatura pierde la concentración.
+
+------
+
+**Cadena eléctrica** (1 acción): +11+d6, alcance 10 pies, 1d6 + 7 contundente, 2 eléctrico y debe hacer un tiro de CON contra +8 o es ralentizado durante una ronda.
+
+**Enredar** (1 acción): +11+d6, alcance 10 pies, el objetivo es enredado (+12 para escapar), sufre 2 daño eléctrico y debe hacer un tiro de CON contra +8 o es ralentizado durante una ronda. 
+
+**Arma secundaria** (acción bonus, 1/ronda): +11, hace un ataque de *enredar* con el cual agarrará si impacta a un enemigo enredado (+12/+9 para escapar) o puede hacer un ataque de *cadena eléctrica* contra 3 enemigos a una distancia igual a su alcance que infligirá daño y tropezará en lugar de enredar.
+
+**Cargar ataques** (2 acciones): Carga un ataque y gasta otro, recibiendo un bonificador +1 a tiros defensivos (máximo 5) y su siguiente ataque de *cadena eléctrica* recibe un bonificador +1 al tiro de ataque y daño además que podrá hacer un intento de agarre (+12 contra heroísmo) al impactar. Si con esta habilidad ha llegado al máximo valor en tiros defensivos gasta todas sus cargas en un único y devastador ataque, recibiendo un bonificador +5 al tiro de ataque, +4 al daño y +8 al agarre. Perderá todos sus ataques acumulados si pierde la concentración.
+
+**Cadena serpenteante** (1 acción): Hace un ataque con su *cadena eléctrica* contra todos los enemigos en una línea de longitud igual a su alcance y hace un intento de tropezar con dificultad +11 contra todos los enemigos impactados.
+
+**Toque sanador** (2 acciones): Esta criatura o un aliado se sana 5 vitalidad y (2/día) Reduce el nivel de una herida permanente, veneno o enfermedad por un paso.
+
+------
+
+**Cadenas giratorias:** +11+1d6, puede defenderse de ataques mágicos y a distancia. (1/ronda) Puede hacer una segunda parada con +11 contra un ataque que no haya podido bloquear. Si tiene agarrado a un objetivo puede usarlo como escudo humano para recibir +1d6 en su tiro defensivo e infligirle daño si el enemigo falla su ataque.
+
+**Resistir heridas** (1/turno): Reduce el nivel de una herida permantente por un paso.
+
+## Campeón de la Legión (nivel 12)
+
+**PV:** 12	 **VT:** 20	 **DEF:** 16 (completa +6, resistencia 2)
+
+**FUE:** 8	 **DES:** 1	 **CON:** 6	 **INT:** 1	 **SAB:** 4	 **CAR:** 1
+
+------
+
+**Talentos:** Heroísmo +13, Averiguar intenciones +7, Percepción +7, Atletismo +11
+
+**Resiste:** Magia 8, aturdimiento 4, efectos mentales 4, miedo 4, fire 6
+
+**Movimiento:** 25 pies
+
+**Acciones:** 3
+
+------
+
+**Hijos de la legión:** Todos los aliados hobgoblin con los que participe en un combate recibirán ventaja en todos sus tiros de ataque y defensa además de +1 FUE, +1 CON y +2 resistencia al daño físico, miedo y efectos mentales. Esta habilidad no se acumula consigo misma y se perderá cuando una criatura afectada pierda la concentración. Si tiene activa la habilidad *voz del comandante* sus aliados infligirán +1d6 daño si dos de ellos atacan al mismo objeivo y si pierden vida obtendrán +2 en tiros de ataque y daño, +2 Vida y +2 en heroísmo.
+
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+
+**Carga poderosa:** Al atacar tras una carga recibe los bonificadores de *ataque poderoso* sin la necesidad de gastar acciones en él.
+
+**Inspirar temor:** Si tienes activa la habilidad *voz del comandante* todas las criaturas en un radio de 30 pies deberán hacer un tiro de carisma contra +6 o son espantados. Esta habilidad no afecta a otras criaturas bajo los efectos de *voz del comandante*.
+
+**Inspiración** (3/combate): Esta criatura o un aliado afectado por *voz del comandante* recibe un bonificador +2 en un tiro de ataque, defensa o habilidad. Esta habilidad puede aplicarse múltiples veces por turno (máximo +6 por tirada).
+
+------
+
+**Martillo atronador** (1 acción): +12+d6, alcance 20 pies, 1d6 + 8 contundente, 2 trueno y el objetivo hace un tiro de CON frente a +10 o es ensordecido durante una ronda. 
+
+**Maza oscilante** (1 acción): Hace un ataque de *marillo atronador* contra tres enemigos que se encuentren a 20 pies y con 10 pies o menos de distancia entre ellos.
+
+**Quebrar el suelo** (2 acciones): +12+d6, alcance 20 pies, la tierra a 10 pies de la zona de impacto se convierte en terreno difícil y todas las criaturas en el área de efecto deberán tirar heroísmo contra +12 o caen al suelo y son ralentizados durante una ronda. También deberán tener éxito en un tiro de CON frente a +10 o sufren 2 daño trueno y son ensordecidos durante una ronda.
+
+**Voz del comandante** (2 acciones): Todos los aliados a 30 pies reciben ventaja en todos sus tiros de ataque, defensa y habilidad. Esta habilidad durará hasta que esta criatura sufra una herida permanente. Los efectos de *voz del comandante* no se acumulan entre sí.
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, empuja 10 pies y reduce la defensa por 2 al impactar. El objetivo además deberá tener éxito en un tiro de CON frente a +12 o quedará aturdido durante una ronda (ralentizado si tiene éxito). Si el enemigo se defiende con un escudo reduce su valor defensivo por 1 y provoca la mitad de daño si el objetivo se defiende con una parada.
+
+**Toque sanador** (2 acciones): Esta criatura o un aliado se sana 6 vitalidad y (2/día) Reduce el nivel de una herida permanente, veneno o enfermedad por un paso.
+
+**Aliento de vida** (3 acciones, 2/día): Un aliado muerto resucitará a 1 PV y reduce el nivel de todas las heridas permanentes que tenga por un paso. No funcionará contra aliados que hayan muerto hace más de un minuto o que hayan perdido un órgano importante. 
+
+------
+
+**Parada**: +12+d6 

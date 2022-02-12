@@ -23,9 +23,9 @@ Añade tu rango de esta habilidad a tus tiradas defensivas con un escudo.
 
 ## Rango III
 
-<u>Carga poderosa</u> (pasiva): Al impactar con una carga una vez por ronda puedes forzar a tu objetivo a hacer un tiro defensivo de CON frente tu tiro de ataque, quedando aturdido durante una ronda en el caso que fracase. Aumenta además el daño base que infliges tras una carga por 1d6 y al cargar provocas que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino, dejándote vía libre para atacar. A rango V vuelve a aumentar el daño de carga por 1d6.
+<u>Carga poderosa</u> (pasiva): Al impactar con una carga una vez por ronda puedes forzar a tu objetivo a hacer un tiro defensivo de CON frente tu tiro de ataque, quedando aturdido durante una ronda en el caso que fracase. Aumenta además el daño base que infliges contras una carga por 1d6 y al cargar provocas que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino, dejándote vía libre para atacar. A rango V vuelve a aumentar el daño de carga por 1d6.
 
-<u>Barrera móvil</u> (pasiva): Al entrar en *forma defensiva* otorgas cubierta a todas las criaturas que estén detrás de ti en un cono de 15 pies, otorgándoles ventaja en todos sus tiros defensivos. Puedes moverte y mantenerte en la forma defensiva, pero para ello cada movimiento te costará una acción estándar o sufrirás 2 daño no-letal al realizarlo.
+<u>Barrera móvil</u> (pasiva): Al entrar en *forma defensiva* otorgas cubierta a todas las criaturas que estén detrás de ti en un cono de 15 pies, otorgándoles ventaja en todos sus tiros defensivos (esta ventaja no se acumula con posición y forma defensiva). Puedes moverte y mantenerte en la forma defensiva, pero para ello cada movimiento te costará una acción adicional o sufres 2 daño no-letal.
 
 ## Rango IV
 
