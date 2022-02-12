@@ -28,7 +28,7 @@ title: Escenarios 4-5
 
 **Lanza** (2 acciones): +6, alcance 10 pies, 1d8 + 5 perforante. Puede arrojarla a una distancia máxima de 20 pies.
 
-**Ataque lateral** (3 acciones): Realiza un ataque con su lanza contra tres enemigos en su readio de alcance y hace una maniobra de tropezar contra ellos de dificultad +9.
+**Ataque lateral** (3 acciones): Realiza un ata		que con su lanza contra tres enemigos en su readio de alcance y hace una maniobra de tropezar contra ellos de dificultad +9.
 
 **Apuntar ataque** (1 acción): +4 daño y provoca una herida permanente leve si el objetivo tiene armadura ligera. Puede pagar una acción adicional para provocar heridas a enemigos con armaduras medias, 2 para pesadas o 3 para completas. Solo puede usar esta habilidad si arroja su lanza.
 

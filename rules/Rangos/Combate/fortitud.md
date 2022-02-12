@@ -15,7 +15,7 @@ Añade tu rango de fortitud x 2 a todos tus tiros defensivos de Constitución.
 
 ## Rango II
 
-<u>Resistir la muerte</u> (reacción): Una vez por combate como reacción al ser reducido a 0 PV o menos podrás revivir a 1 PV sin sufrir heridas permanentes. Esta habilidad no podrá usarse si estás exhausto, incapacitado o sufres náuseas.
+<u>Resistir la muerte</u> (reacción): Una vez por combate como reacción al ser reducido a 0 PV o menos podrás revivir a 1 PV sin sufrir heridas permanentes. Esta habilidad no podrá usarse si estás exhausto, incapacitado o sufres náuseas o el ataque te reduce a PV negativos iguales a tu estadística de CON.
 
 <u>Constitución férrea</u> (pasiva): Obtienes resistencia contra [venenos](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#venenos), [enfermedades](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#enfermedades), daño necrótico y gases tóxicos igual a tu rango de Fortitud + 1. La resistencia otorgada por esta habilidad también funciona contra venenos y enfermedades sobrenaturales.
 

@@ -29,7 +29,7 @@ Añade tu rango de guerrero divino a tus tiros defensivos de sabiduría.
 
 <u>Plegaria</u> (ritual): Antes de una batalla puedes realizar una plegaria a tu dios junto con tus aliados para concederles buena fortuna en la batalla. Todos aquellos que realicen la plegaria contigo recibirán ventaja en sus tiros de ataque y defensa hasta que reciban una herida permanente o sufran un *[efecto de estado negativo](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html)*. Un personaje no podrá volver a recibir los bonificadores de plegaria de nuevo durante el combate.
 
-<u>Guardián de la fe</u> (2 acciones): Empleando 2 acciones puedes permitir que la energía divina fluya por tu cuerpo, otorgándote fuerza sobrenatural. Guardián de la fe aumentará tu FUE y CON por 1 y te da Resistencia 2 contra daño físico, la cual sólo puede ser atravesada por *[armas sacras](https://raldamain.com/rules/Rangos/Religion/guerrero%20divino.html#rango-ii)*. Esta durará una cantidad de rondas igual a tu rango + 2 y cuando alcances el rango V aumenta tres de tus estadísticas de nuevo por 1.
+<u>Guardián de la fe</u> (2 acciones): Empleando 2 acciones puedes permitir que la energía divina fluya por tu cuerpo, otorgándote fuerza sobrenatural. Guardián de la fe aumentará tu FUE y CON por 1 y te da r2 contra daño físico, la cual sólo puede ser atravesada por *[armas sacras](https://raldamain.com/rules/Rangos/Religion/guerrero%20divino.html#rango-ii)*. Esta durará una cantidad de rondas igual a tu rango + 2 y cuando alcances el rango V aumenta tres de tus estadísticas de nuevo por 1.
 
 ## Rango IV
 

@@ -55,3 +55,10 @@ Incrementa tu SAB por 1. Recibes 3 PT adicionales que puedes gastar en mejoras.
 
 <u>Forma elemental</u> (3 acciones) Empleando 3 acciones puedes rodearte de una gran masa vegetal. Mientras estés en esta forma aumentas tus PV por 6 y tu defensa por 2, además de llenar un área de 10 pies centrado en ti con un [muro de zarzas](https://raldamain.com/rules/Rangos/Elementalismo/magia de naturaleza.html#rango-ii). Aumentas también tu tamaño base, incrementando tu FUE y CON por 2 a costa de reducir tu DES por 1. La forma elemental durará un número de rondas igual a tu rango + 1 o hasta que pierdas la concentración.
 
+# Criaturas espirituales
+
+## Elemental escudo (nivel 10)
+
+## Guerrero de terracotta (nivel 10)
+
+## Hidra forestal (nivel 10)

@@ -106,7 +106,7 @@ En este grado la maldición ha empezado a manifestarse en tu cuerpo, causando qu
 
 - Aumenta tu estadística de SAB por 1. Los animales nunca serán naturalmente hostiles hacia ti y puedes comunicarte con ellos.
 - Tus sentidos se vuelven más agudos. No recibes ninguna penalización a tu percepción por luz tenue y obtienes olfato en un radio de 60 pies (el radio de olfato aumentará por 30 pies si ya lo tienes).
-- En las noches de luna llena perderás temporalmente tu humanidad, transformándote en un híbrido entre humano y bestia. En esta forma híbrida aumentas dos de tus estadísticas físicas por 2, reduces tu INT por 1 y recibes las mejoras corporales Garras y Mordisco (si ya las tienes puedes obtener otras mejoras con coste combinado de 3 PT siempre y cuando sean permitidas por el máster y estén relcon el animal en el cual te estás transformando). Esta transformación durará toda la noche y no recordarás haberte transformado cuando esta termine.
+- En las noches de luna llena perderás temporalmente tu humanidad, transformándote en un híbrido entre humano y bestia. En esta forma híbrida aumentas dos de tus estadísticas físicas por 2, reduces tu INT por 1 y recibes las mejoras corporales Garras y Mordisco (si ya las tienes puedes obtener otras mejoras con coste combinado de 3 PT siempre y cuando sean permitidas por el máster y estén relacionadas con el animal en el cual te estás transformando). Esta transformación durará toda la noche y no recordarás haberte transformado cuando esta termine.
 
 ### Grado 2
 

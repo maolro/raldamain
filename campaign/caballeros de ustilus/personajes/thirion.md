@@ -9,6 +9,10 @@ rangos: Ascendencia de fuego, cadenas, fortitud, ira, reflejos, combate doble
 image: thirion.jpg
 ---
 
+"Dices que este mundo está roto y solo tú puedes salvarlo, pero en esto te estás equivocando. Lo que me dices no es más tu punto de vista, pero ni tú ni nadie tiene la razón más absoluta. 
+
+ Yo no quiero hacerte daño así que te doy una última oportunidad para deponer tu arma antes que sea demasiado tarde. 
+
 # Biografía
 
 ## Orígenes

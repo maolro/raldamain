@@ -130,31 +130,49 @@ title: Escenarios 6-8
 
 ## Caballería de élite (nivel 9)
 
-## Huargo de guerra (nivel 7)
+## Huargo de guerra (nivel 8)
 
-**PV:** 5			**VT:** 6	 		**DEF:** 6 (media +2)
+**PV:** 14			**VT:** 13	 		**DEF:** 13 (media +2, natural +7)
 
-**FUE:** 1	**DES:** 4	**CON:** 2	 **INT:** 1	**SAB:** 2	**CAR:** 1
+**FUE:** 5	**DES:** 4	**CON:** 4	 **INT:** 1	**SAB:** 2	**CAR:** 1
 
 ------
 
-**Talentos:** Percepción +4, Sigilo +6, Acrobacias +5
+**Talentos:** Percepción +8, Sigilo +8, Atletismo +6, Heroísmo +8
 
-**Rangos:** Armas de fuego I, Reflejos I, Armaduras I, Guerrero divino I
+**Tiros de salvación:** CON +8
 
-**Movimiento:** 15 pies
+**Inmune:** Terreno difícil (solo en bosques)
+
+**Sentidos:** Olfato 60 pies
+
+**Resiste:** Veneno 3
+
+**Movimiento:** 30 pies
 
 **Acciones:** 4
 
 ****
 
-**Hijos de la legión:** Recibe +1d6 en sus tiros de ataque y defensa hechos contra enemigos de la Legión.
+**Resistir la muerte** (1/combate): La primera vez que sea reducido a 0 o menos PV resucita a 1 PV. Esta habilidad no funciona si es reducido a -4 PV o sufre un efecto de estado negativo (náuseas, paralizado, agarrado, náuseas).
+
+**Carga poderosa:** Al atacar tras una carga recibe los bonificadores de *ataque poderoso* sin la necesidad de gastar acciones en él.
+
+**Combate en manada:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse.
+
+****
+
+**Mordisco** (2 acciones): +8, 1d6 + 5 perforante y provoca una herida leve si el objetivo tiene 4 o menos defensa. El objetivo tirará heroísmo contra +8 o le agarra con su mordisco, causando que esta se encuentre enredada (+8 para escapar).
+
+**Devorar** (1 acción): Una criatura agarrada por su mordisco sufre 2d6 + 5 daño perforante y una herida leve (media si tiene 4 o menos defensa). Si aplica un *ataque poderoso* aumenta el daño por 1d6 adicional.
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, provoca sangrado y reduce la defensa por 2 al impactar
 
 ------
 
-**Mosquete** (acción estándar): +5, 2d6 perforante. Ignora la defensa de enemigos a menos de 30 pies. Debe recargar después de atacar, lo cual cuesta una acción de turno completo
+**Esquiva:** +5. Si está a 10 pies o menos de otro huargo recibe un bonificador +1 a tiros defensivos (máximo +4).
 
-**Apuntar** (acción de movimiento): Aumenta la distancia máxima de mosquete por 15 pies.
+**Parada:** +8, solo puede defenderse de criaturas enredadas por su mordisco.
 
 ## Guardián del portal oni (nivel 13)
 
