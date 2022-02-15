@@ -12,7 +12,7 @@ Cada talento está asociado con una estadística, lo cual queda indicado a conti
 
 ### Atletismo (FUE)
 
-Tienes soltura en tiros para escalar, nadar o correr largas distancias. Aumenta tu movimiento base por 5 pies y recibes una velocidad de nadar y escalar igual a 5 pies. Cuando alcances el nivel de talento 3 o 5 aumenta tu movimiento de nuevo por 5 pies, incluyendo también tus velocidades de nadar y escalar (esto puede llegar a un máximo de 45 pies).
+Tienes soltura en tiros para escalar, nadar o correr largas distancias. Aumenta tu movimiento base por 5 pies y recibes una velocidad de nadar y escalar igual a 5 pies. Cuando alcances el nivel de talento 3 o 5 aumenta tu movimiento de nuevo por 5 pies, incluyendo también tus velocidades de nadar y escalar (esto puede llegar a un máximo de 45 pies). 
 
 ### Acrobacias (DES)
 
@@ -22,7 +22,7 @@ Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en 
 
 Tienes soltura en todos los tiros relacionados con un arte escénica de tu elección, como puede ser tocar un instrumento, cantar, bailar, oratoria o teatro. Cada vez que subas un nivel de talento puedes escoger un arte escénica diferente a la cual sumarás también tu nivel total. 
 
-Este talento puede ser usado en un combate para distraer a un enemigo, permitiéndote como acción de movimiento hacer un tiro de habilidad contra la percepción de un objetivo y si tienes éxito este se fijará solo en ti durante una ronda, recibiendo el efecto de estado fascinado.
+Este talento puede ser usado en un combate para distraer a un enemigo, permitiéndote como acción hacer un tiro de habilidad contra la percepción de un objetivo y si tienes éxito este se fijará solo en ti durante una ronda, recibiendo el efecto de estado fascinado.
 
 ### Arcanismo (INT)
 

@@ -1,4 +1,6 @@
-Esta es una lista de bestias y espíritus típicos de lugares de bosque, haciéndolos ideales como inspiración para rangos de magia de naturaleza.
+
+
+\Esta es una lista de bestias y espíritus típicos de lugares de bosque, haciéndolos ideales como inspiración para rangos de magia de naturaleza.
 
 ## Elemental de planta (nivel 6)
 
@@ -20,7 +22,7 @@ Esta es una lista de bestias y espíritus típicos de lugares de bosque, hacién
 
 **Movimiento:** 20 pies
 
-**Prioridad:** +4 (1 estándar + 1 movimiento)
+**Prioridad:** +4 (1 estándar + 1 movimiento)   
 
 ****
 
