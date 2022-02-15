@@ -1,0 +1,4 @@
+---
+title: Equipamiento estándar
+---
+
