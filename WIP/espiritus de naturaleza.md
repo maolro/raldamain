@@ -1,6 +1,6 @@
 
 
-\Esta es una lista de bestias y espíritus típicos de lugares de bosque, haciéndolos ideales como inspiración para rangos de magia de naturaleza.
+Esta es una lista de bestias y espíritus típicos de lugares de bosque, haciéndolos ideales como inspiración para rangos de magia de naturaleza.
 
 ## Elemental de planta (nivel 6)
 
@@ -12,11 +12,7 @@
 
 **Talentos:** Percepción +4, Heroísmo +10, Destrozar +10
 
-**Rangos:** Ataques naturales II, Fortitud I
-
-**Mejoras:** Ascendencia espiritual, tamaño superior, manojo de tentáculos, armadura natural, camuflaje, georradar, ferocidad, mordisco
-
-**Vulnerable:** Fuego, cortante
+=**Vulnerable:** Fuego, cortante
 
 **Sentidos:** Georradar 60 pies
 
