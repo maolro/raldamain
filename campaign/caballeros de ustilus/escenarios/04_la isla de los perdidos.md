@@ -6,7 +6,7 @@ niveles: 5-6
 layout: campaign
 ---
 
-
+Los jugadores despiertan en las orillas de una isla paradisíaca tras su presunta muerte en la eterna tormenta de Olvangar. En esta isla libre de las maldades del mundo tanto los jugadores como sus aliados tienen una oportunidad de conocerse mejor y conocer algunos de las motivaciones y secretos que estos esconden, pero esta isla esconde mucho más de lo que aparenta. En el corazón de esta isla 
 
 ## Localidad
 
@@ -69,51 +69,3 @@ Los jugadores entran en las tumbas gélidas en busca de Petrikov, pero deberán 
 Los jugadores llegan a la sala con la corona de Tenebrius. Ahí Petrikov se la pondrá e invocará a un poderoso elemental de hielo praa atacarlos. Petrikov enloquece y escapa volando de la tumba. Después de este evento la gran tormenta se disipará.
 
 1x Elemental de hielo
-
-## Enemigos
-
-**Guerrero tribal nativo** (nivel 4)
-
-- <u>Rangos:</u> Alabardas I (lanzamiento), Fortitud II, Rastrear I, Reflejos I
-
-**Tigre dientes de sable** (nivel 5)
-
-- <u>Mejoras:</u> Grande, mordisco, garras, depredador
-
-- <u>Rangos:</u> Ataques naturales II, Fortitud II
-
-**Arquero nativo** (nivel 4)
-
-- <u>Rangos:</u> Arcos II, Rastrear I, Reflejos I, Fortitud I
-
-**Tamborilero de guerra** (nivel 6)
-
-- <u>Rangos:</u> Presencia III, Ira II, Fortitud I, Contundentes I
-
-**Chamán nativo** (nivel 7)
-
-- <u>Rangos:</u> 
-
-**Soldado de Tenebrius** (nivel 4)
-
-- <u>Rangos:</u> Alabardas I, Armaduras I, Fortitud I
-- <u>Mejoras:</u> Ataques infundidos (hielo), inmunidad (hielo), vulnerabilidad (fuego), no-muerto
-
-**Lobo de las nieves** (nivel 5)
-
-- <u>Rangos:</u> Ataques naturales I, Fortitud I
-- <u>Mejoras:</u> Ataques infundidos (hielo), inmunidad (hielo), vulnerabilidad (fuego), no-muerto, grande, garras, mordisco, depredador
-
-**Arquero gélido** (nivel 5)
-
-- <u>Rangos:</u> Arcos I, Reflejos I, Armaduras I, Fortitud I
-- <u>Mejoras:</u> Ataques infundidos (hielo), inmunidad (hielo), vulnerabilidad (fuego), no-muerto
-
-**Hechicero del invierno** (nivel 6)
-
-- <u>Rangos:</u> Magia de hielo III
-- <u>Mejoras:</u> no-muerto
-
-**Campeón de Tenebrius** (nivel 7)
-
-**Elemental de hielo** (nivel 9)
