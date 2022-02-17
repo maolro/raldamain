@@ -56,13 +56,13 @@ Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 5 p
 
 ### Reflejos
 
-## Ascendencias mágicas
+## Origen mágico
 
 ### Fuego
 
-<u>Rango I:</u>
+<u>Rango I:</u> Recibe resistencia al daño fuego igual a su rango + 1, vulnerabilidad al daño frío y todos sus ataques físicos infligen +2 daño fuego al impactar y provocan una quemadura leve si reducen PV. 
 
-<u>Rango II:</u>
+<u>Rango II:</u> Aumenta su cantidad de 
 
 <u>Rango III:</u>
 
@@ -202,11 +202,11 @@ Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 5 p
 
 <u>Rango I:</u> 
 
-<u>Rango II:</u>
+<u>Rango II:</u> 
 
-<u>Rango III:</u>
+<u>Rango III:</u> 
 
-<u>Rango IV:</u>
+<u>Rango IV:</u> 
 
 <u>Rango V:</u>
 
