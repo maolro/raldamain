@@ -83,7 +83,7 @@ Una persona tiene cubierta cuando se encuentra tras un obstáculo que le permite
 
 Los bonificadores por cubierta se aplicarán también si hay otras criaturas entre el atacante y su objetivo. Un personaje que reciba cubierta por este efecto no podrá esconderse salvo que haya una criatura de tamaño superior a ella bloqueando el camino del atacante. Estos efectos se evitarán si el atacante escoge emplear una acción de movimiento adicional para apuntar.
 
-En determinadas situaciones pueden encontrarse tipos superiores de cubierta. Si una criatura tiene todo el cuerpo cubierto salvo una pequeña obertura esta recibirá cubierta superior, lo cual le otorgará dos dados de desventaja en sus tiros defensivos. Si no hay ningún tipo de obertura entre el atacante y su objetivo este tendrá cubierta completa, lo cual le protegerá de todos los ataques hasta que la cubierta sea destruida.
+En determinadas situaciones pueden encontrarse tipos superiores de cubierta. Si una criatura tiene todo el cuerpo cubierto salvo una pequeña obertura esta recibirá cubierta superior, lo cual le otorgará dos dados de desventaja en sus tiros defensivos. Si no hay ningún tipo de apertura entre el atacante y su objetivo este tendrá cubierta completa, lo cual le protegerá de todos los ataques hasta que la cubierta sea destruida.
 
 ## Flanqueo
 
@@ -93,9 +93,7 @@ Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Para
 
 ## Ocultamiento
 
-Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, recibiendo un dado de desventaja en tiros defensivos de esta por cada 10 pies de distancia que haya entre esta y el atacante. Una criatura con ocultamiento no puede recibir ataques a distancia si se encuentra a más de 60 pies de distancia. Esta distancia se reduce a 15 pies en el caso de que la criatura se encuentre en oscuridad mágica, niebla fuertemente espesa o un terreno con gran cubierta (este tipo de ocultamiento se conoce como ocultamiento superior). Todos los ataques que hagas contra criaturas incapaces de percibirte contarán como ataques sorpresa, añadiéndote un dado de Ventaja a tus tiros de ataque y evitando que estas puedan tirar para defenderse.
-
-Las penalizaciones por ocultamiento pueden contrarrestarse empleando una acción de movimiento para apuntar un ataque. Cada acción empleada así eliminará un dado de Desventaja e incrementará la distancia máxima por 10 pies para el siguiente ataque hecho contra la criatura oculta. Aquellas criaturas que lleven luz o llamen la atención no recibirán ninguna ventaja por ocultamiento.
+Una criatura tiene ocultamiento cuando es difícil percibirla a causa de niebla, oscuridad o efectos similares. El ocultamiento aumenta las probabilidades de que los ataques fallen, otorgando a una criatura con ocultamiento ventaja en todos sus tiros 
 
 ## Preparación de combate
 
