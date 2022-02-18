@@ -6,7 +6,7 @@ Una hoja de personaje muestra por completo las capacidades, habilidades y conoci
 
 ## Hoja de personaje
 
-# <img src="C:\Users\matia\OneDrive\Documents\games\Matias' games\raldamain\hoja de personaje.jpg" style="zoom:150%;" />
+# <img src="hoja de personaje.jpg" style="zoom:150%;" />
 
 ## Conceptos importantes
 
