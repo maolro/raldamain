@@ -1,5 +1,5 @@
 ---
- title: Alabardas
+title: Alabardas
 category: Armas
 ---
 
