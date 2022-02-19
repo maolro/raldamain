@@ -1,5 +1,5 @@
 ---
- title: Magia de Vida
+title: Magia de Vida
 category: Ocultismo
 ---
 

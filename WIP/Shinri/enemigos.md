@@ -380,9 +380,33 @@
 
 
 
-## Horda de malditos (nivel 7)
+## Guardia(nivel 7)
 
-## 
+**PV:** 12	 **VT:** 18	 **DEF:** 16 (completa +6, resistencia 2)
+
+**FUE:** 7	 **DES:** 2	 **CON:** 6	 **INT:** 1	 **SAB:** 3	 **CAR:** 1
+
+------
+
+**Talentos:** Heroísmo +12, Averiguar intenciones +6, Percepción +6, Atletismo +9
+
+**Resiste:** Magia 8, aturdimiento 4, fuego 6
+
+**Movimiento:** 20 pies
+
+**Acciones:** 3
+
+------
+
+
+
+------
+
+
+
+------
+
+Alabardas III, Escudos II, Armaduras II, Fortitud I
 
 ## Ejecutor de la Legión (nivel 10)
 

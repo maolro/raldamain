@@ -6,11 +6,11 @@ Una hoja de personaje muestra por completo las capacidades, habilidades y conoci
 
 ## Hoja de personaje
 
-# <img src="hoja de personaje.jpg" style="zoom:150%;" />
+# <img src="hoja de personaje.jpg" style="zoom:150%;"/>
 
 ## Conceptos importantes
 
-[**Raza y cultura:**](https://raldamain.com/rules/Crear%20personajes/razas%20y%20culturas.html) La raza y la cultura definen el lugar del personaje dentro del mundo y pueden llegar a ser una parte fundamental de su identidad. Aquellas razas y culturas disponibles quedarán a decisión del máster según el lugar donde se desarrolle la campaña. Mientras que la cultura no tendrá ningún efecto sobre las estadísticas, algunas razas distintas a la humana pueden tener habilidades únicas las cuales se describirán en el capítulo 8.
+[**Raza y cultura:**](https://raldamain.com/rules/Crear%20personajes/razas%20y%20culturas.html) La raza y la cultura definen el lugar del personaje dentro del mundo y pueden llegar a ser una parte fundamental de su identidad. Aquellas razas y culturas disponibles quedarán a decisión del máster según el lugar donde se desarrolle la campaña. Mientras que la cultura no tendrá ningún efecto sobre las estadísticas algunas razas distintas a la humana pueden tener habilidades únicas.
 
 **Nivel:** El nivel representa la fuerza y capacidades que tiene un personaje. El nivel que este tenga definirá la cantidad de talentos y rangos que podrá llegar a obtener y modificará muchas más estadísticas. Este valor oscilará desde el 1 como más bajo y el 20 como más alto.
 
