@@ -1,0 +1,93 @@
+verbosity: INFO
+input-files:
+- rules\Crear personajes\la hoja de personaje.md
+- rules\Crear personajes\crear personajes.md
+- rules\Crear personajes\talentos.md
+- rules\Rangos\Armas\a distancia.md
+- rules\Rangos\Armas\alabardas.md
+- rules\Rangos\Armas\armas de fuego.md
+- rules\Rangos\Armas\ataques naturales.md
+- rules\Rangos\Armas\cadenas.md
+- rules\Rangos\Armas\contundentes.md
+- rules\Rangos\Armas\dos armas.md
+- rules\Rangos\Armas\escudo.md
+- rules\Rangos\Armas\filos cortantes.md
+- rules\Rangos\Armas\filos perforantes.md	
+- rules\Rangos\Ascendencias\ascendencia abisal.md
+- rules\Rangos\Ascendencias\ascendencia akhasica.md
+- rules\Rangos\Ascendencias\ascendencia boreal.md
+- rules\Rangos\Ascendencias\ascendencia celestial.md
+- rules\Rangos\Ascendencias\ascendencia de agua.md
+- rules\Rangos\Ascendencias\ascendencia de aire.md
+- rules\Rangos\Ascendencias\ascendencia de fuego.md
+- rules\Rangos\Ascendencias\ascendencia de tierra.md
+- rules\Rangos\Ascendencias\ascendencia fungica.md
+- rules\Rangos\Ascendencias\ascendencia infernal.md
+- rules\Rangos\Ascendencias\ascendencia insectoide.md
+- rules\Rangos\Ascendencias\ascendencia oni.md
+- rules\Rangos\Ascendencias\ascendencia sombria.md
+- rules\Rangos\Ascendencias\ascendencia verdeante.md
+- rules\Rangos\Ciencia\bombas.md
+- rules\Rangos\Ciencia\conocimiento.md
+- rules\Rangos\Ciencia\fabricacion.md
+- rules\Rangos\Ciencia\quimica.md
+- rules\Rangos\Ciencia\sabotaje.md
+- rules\Rangos\Combate\armaduras.md
+- rules\Rangos\Combate\companero salvaje.md
+- rules\Rangos\Combate\fortitud.md
+- rules\Rangos\Combate\ira.md
+- rules\Rangos\Combate\montar.md
+- rules\Rangos\Combate\rastrear.md
+- rules\Rangos\Combate\reflejos.md
+- rules\Rangos\Elementalismo\index.md
+- rules\Rangos\Elementalismo\magia de agua.md
+- rules\Rangos\Elementalismo\magia de aire.md
+- rules\Rangos\Elementalismo\magia de arena.md
+- rules\Rangos\Elementalismo\magia de fuego.md
+- rules\Rangos\Elementalismo\magia de hielo.md
+- rules\Rangos\Elementalismo\magia de metal.md
+- rules\Rangos\Elementalismo\magia de naturaleza.md
+- rules\Rangos\Elementalismo\magia de sangre.md
+- rules\Rangos\Elementalismo\magia de tierra.md
+- rules\Rangos\Elementalismo\magia de tormenta.md
+- rules\Rangos\Magia arcana\index.md
+- rules\Rangos\Magia arcana\magia de evocacion.md
+- rules\Rangos\Magia arcana\magia espacial.md
+- rules\Rangos\Magia arcana\magia ilusoria.md
+- rules\Rangos\Magia arcana\magia mental.md
+- rules\Rangos\Magia arcana\magia protectora.md
+- rules\Rangos\Magia arcana\magia temporal.md
+- rules\Rangos\Ocultismo\magia de vida.md
+- rules\Rangos\Ocultismo\magia gravitatoria.md
+- rules\Rangos\Ocultismo\magia onirica.md
+- rules\Rangos\Ocultismo\magia sombria.md
+- rules\Rangos\Ocultismo\medium.md
+- rules\Rangos\Ocultismo\mente desencadenada.md
+- rules\Rangos\Ocultismo\nigromancia.md
+- rules\Rangos\Ocultismo\telekinesia.md
+- rules\Rangos\Religion\guerrero divino.md
+- rules\Rangos\Religion\magia divina.md
+- rules\Rangos\Social\comercio.md
+- rules\Rangos\Social\influenciar.md
+- rules\Rangos\Social\presencia.md
+- rules\Reglas adicionales\riqueza.md
+- rules\Reglas adicionales\equipamiento estandar.md
+- rules\Reglas adicionales\equipamiento\dispositivos de chi.md
+- rules\Reglas adicionales\equipamiento\mejoras de arma.md
+- rules\Reglas adicionales\equipamiento\mejoras de armadura.md
+- rules\Reglas adicionales\equipamiento\artefactos.md
+- rules\Reglas principales\reglas de combate.md
+- rules\Reglas principales\Efectos de estado.md
+- rules\Reglas principales\Heridas permanentes.md
+- rules\Reglas principales\tipos de dano.md
+- rules\Reglas adicionales\terreno.md
+- rules\Reglas adicionales\venenos_enfermedades.md
+- rules\Reglas adicionales\locura.md
+- rules\Reglas adicionales\armas de asedio.md
+- rules\Reglas adicionales\niveles miticos.md
+- rules\Reglas adicionales\crear criaturas.md
+- rules\Reglas adicionales\criaturas malditas.md
+- rules\Reglas adicionales\organizaciones.md
+- rules\Reglas adicionales\agentes.md
+- rules\Reglas adicionales\bases.md
+- rules\Crear personajes\razas y culturas.md
