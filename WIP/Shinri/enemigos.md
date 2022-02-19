@@ -380,33 +380,49 @@
 
 
 
-## Guardia(nivel 7)
+## Guardia de la Legión (nivel 7)
 
-**PV:** 12	 **VT:** 18	 **DEF:** 16 (completa +6, resistencia 2)
+**PV:** 11			**VT:** 12	 		**DEF:** 11 (pesada +3, natural +2)
 
-**FUE:** 7	 **DES:** 2	 **CON:** 6	 **INT:** 1	 **SAB:** 3	 **CAR:** 1
+**FUE:** 5	**DES:** 4	**CON:** 5	 **INT:** 1	**SAB:** 3	**CAR:** 1
 
 ------
 
-**Talentos:** Heroísmo +12, Averiguar intenciones +6, Percepción +6, Atletismo +9
+**Talentos:** Heroísmo +10, Percepción +6, Atletismo +8, Averiguar intenciones +5
 
-**Resiste:** Magia 8, aturdimiento 4, fuego 6
+**Resiste:** Maniobras de combate 2, fuego 4, aturdimiento 2
 
-**Movimiento:** 20 pies
+**Movimiento:** 20 pies (solo puede moverse una vez por ronda)
 
 **Acciones:** 3
 
-------
+****
 
+**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
 
-
-------
-
-
+**Forma defensiva** (4 rondas/combate): Entra en un estado de defensa absoluta conocido como forma defensiva cuyas mejoras ya se incluyen en sus estadísticas. En el momento que abandone la forma defensiva reducirá su FUE por 2, su CON por 2, su velocidad por 10 pies, perderá la ventaja en sus tiros defensivos y perderá una acción.
 
 ------
 
-Alabardas III, Escudos II, Armaduras II, Fortitud I
+**Lanza** (1 acción): +8, alcance 10 pies, 1d8 + 5 perforante + 2 eléctrico. Al impactar el objetivo tira CON frente a +5 o es ralentizado (esto es automático si reduce PV).
+
+**Ataque lateral** (2 acciones): Realiza un ataque con su lanza contra tres enemigos en su readio de alcance y hace una maniobra de tropezar contra ellos de dificultad +8.
+
+**Maniobra de lanza** (1 acción): +8 contra SAB, FUE o DES, el objetivo es fintado, tropezado o desarmado.
+
+**Golpe de escudo** (acción bonus): +7, 1d6 + 5 contundente, y tropieza +6. Este ataque solo puede realizarse si se mueve 20 pies o más. 
+
+**Interceptar** (1 acción): Esta criatura se prepara para detener un movimiento enemigo. En cualquier momento de la ronda puede moverse 20 pies y hacer un golpe de escudo contra un enemigo que se esté moviendo, haciendo un ataque de *golpe de escudo* y deteniéndolo en el acto.
+
+**Preparación contra cargas** (1 acción): Esta criatura se prepara praa detener un ataque enemigo. La siguiente vez que una criatura pase por el radio que amenace con su arma sufrirá un ataque de oportunidad inmediato con el cual infligirá +1d6 daño. Si se encuentra en este estado e intercepta un ataque enemigo puede hacer un ataque de oportunidad con su lanza.
+
+------
+
+**Parada** +8 (-1d6 deteniendo ataques hechos por enemigos adyacentes)
+
+**Escudo**: +6 + d6, puede proteger a aliados que se encuentren a 5 pies.
+
+**Proteger aliado:** Un aliado a 10 pies recibe +1 en tiros defensivos (máximo +3)
 
 ## Ejecutor de la Legión (nivel 10)
 
@@ -428,7 +444,7 @@ Alabardas III, Escudos II, Armaduras II, Fortitud I
 
 **Hijos de la legión:** Todos los aliados hobgoblin con los que participe en un combate recibirán ventaja en todos sus tiros de ataque y defensa. Esta habilidad no se acumula consigo misma y se perderá cuando una criatura afectada pierda la concentración.
 
-**Ajustar alcance** (pasiva): Al principio de su turno pued escoger entre aumentar el alcance de todos sus ataques a 15 pies y recibir desventaja en sus tiros defensivos o reducir el alcance a 5 pies y recibir ventaja en tiros defensivos. Cambiar de elección costará una acción.
+**Ajustar alcance** (pasiva): Al principio de su turno puede escoger entre aumentar el alcance de todos sus ataques a 15 pies y recibir desventaja en sus tiros defensivos o reducir el alcance a 5 pies y recibir ventaja en tiros defensivos. Cambiar de elección costará una acción.
 
 **Danza de cadenas** (1 acción reactivar): Gira sus cadenas a gran velocidad para protegerse de ataques enemigos. Toda criatura que entre en un espacio que amenace con las cadenas sufrirá un ataque de oportunidad con su cadena eléctrica que infligirá +1d6 daño. Los bonificadores de esta habilidad se perderán si esta criatura pierde la concentración.
 
@@ -462,7 +478,7 @@ Alabardas III, Escudos II, Armaduras II, Fortitud I
 
 **Talentos:** Heroísmo +13, Averiguar intenciones +7, Percepción +7, Atletismo +11
 
-**Resiste:** Magia 8, aturdimiento 4, efectos mentales 4, miedo 4, fire 6
+**Resiste:** Magia 8, aturdimiento 4, efectos mentales 4, miedo 4, fuego 6
 
 **Movimiento:** 25 pies
 
