@@ -14,3 +14,4 @@
 [religión]: {% link rules/Rangos/Religion/index.md %}
 [talento]:  {% link rules/Crear personajes/talentos.md %}
 [ventaja]:  {% link rules/Reglas principales/reglas de combate.md %}#factores-adicionales
+
