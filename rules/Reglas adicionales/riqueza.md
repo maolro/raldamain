@@ -32,7 +32,7 @@ Cada nivel social posee una cantidad de crédito igual a su nivel de riqueza, el
 
 Estas son algunas posibilidades en las cuales se puede invertir el crédito.
 
-<u>[Propiedades](https://raldamain.com/rules/Reglas%20adicionales/bases.html)</u>: Un punto de crédito puede ser empleado para comprar 1 PC, el cual puede ser gastado en salas y mejoras. Si el total de PC gastados excede a aquellos permitidos por tu organización debes gastar 1 punto de crédito cada año por cada 3 PC superiores al total para mantenerlo (aquellos otorgados por comercio no cuentan).
+[Propiedades](https://raldamain.com/rules/Reglas%20adicionales/bases.html): Un punto de crédito puede ser empleado para comprar 1 PC, el cual puede ser gastado en salas y mejoras. Si el total de PC gastados excede a aquellos permitidos por tu organización debes gastar 1 punto de crédito cada año por cada 3 PC superiores al total para mantenerlo (aquellos otorgados por comercio no cuentan).
 
 <u>[Agentes](https://raldamain.com/rules/Reglas%20adicionales/agentes.html):</u> Puedes emplear un número de puntos de crédito para contratar a hasta 4 agentes de NC igual al total gastado. Dichos agentes realizarán un servicio determinado después del cual abandonarán tu servicio si estos superan el máximo de agentes permitidos por tu nivel de influencia, requiriendo que vuelvan a ser contratados. 
 
