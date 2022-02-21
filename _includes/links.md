@@ -1,16 +1,16 @@
-[armaduras]: /rules/Rangos/Combate/armaduras.html
-[armas]: /rules/Rangos/Armas/
-[Ascendencia de tierra]: /rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html
-[ataques naturales]: /rules/Rangos/Armas/ataques%20naturales.html#armas
-[combate]: /rules/Rangos/Combate/
-[Conocimiento]: /rules/Rangos/Ciencia/conocimiento.html
-[estadística]: /rules/Crear%20personajes/crear%20personajes.html#las-seis-estad%C3%ADsticas
-[fabricación]: /rules/Rangos/Ciencia/fabricacion.html
-[Fortitud]: /rules/Rangos/Combate/fortitud.html
-[Guerrero divino]: /rules/Rangos/Religion/
-[Ira]: /rules/Rangos/Combate/ira.html
-[rango]: /rules/Crear%20personajes/talentos.html
-[Reflejos]: /rules/Rangos/Combate/reflejos.html
-[religión]: /rules/Rangos/Religion/
-[talento]: /rules/Crear%20personajes/talentos.html
-[ventaja]: /rules/Reglas%20principales/reglas%20de%20combate.html#factores-adicionales
+[armaduras]: {% link rules/Rangos/Combate/armaduras.md %}
+[armas]: {% link rules/Rangos/Armas/index.md %}
+[Ascendencia de tierra]: {% link rules/Rangos/Ascendencias/ascendencia de tierra.md %}
+[ataques naturales]: {% link rules/Rangos/Armas/ataques naturales.md %}#armas
+[combate]: {% link rules/Rangos/Combate/index.md %}
+[Conocimiento]: {% link rules/Rangos/Ciencia/conocimiento.md %}
+[estadística]: {% link rules/Crear personajes/crear personajes.md %}#las-seis-estad%C3%ADsticas
+[fabricación]: {% link rules/Rangos/Ciencia/fabricacion.md %}
+[Fortitud]: {% link rules/Rangos/Combate/fortitud.md %}
+[Guerrero divino]: {% link rules/Rangos/Religion/index.md %}
+[Ira]: {% link rules/Rangos/Combate/ira.md %}
+[rango]: {% link rules/Crear personajes/talentos.md %}
+[Reflejos]: {% link rules/Rangos/Combate/reflejos.md %}
+[religión]: {% link rules/Rangos/Religion/index.md %}
+[talento]:  {% link rules/Crear personajes/talentos.md %}
+[ventaja]:  {% link rules/Reglas principales/reglas de combate.md %}#factores-adicionales
