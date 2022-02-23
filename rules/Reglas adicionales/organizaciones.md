@@ -83,9 +83,19 @@ Estas acciones buscan ampliar y mejorar las capacidades de la organización, for
 
 <u>Invertir en región:</u> emplea 1 crédito. aumenta una estadística de la región por 1. Si empleas esta acción tres veces en la misma región creas una organización sucursal de nivel igual al nivel de la organización - 2 o aumentas el nivel de una organización sucursal ya existente por 1.
 
+<u>Desarrollo tecnológico:</u> tiro de CUL y paga 1 crédito.
+
+- **Éxito rotundo:** Haces un gran descubrimiento. Aumenta una estadística por 1 y el máximo de la región por 1 según la naturaleza del invento. 
+- **Éxito:** Haces un descubrimiento notable. Aumenta una estadística por 1 y otorga +1d6 en tu siguiente tiro de desarrollo tecnológico.
+- **Éxito parcial:** Haces un descubrimiento notable pero con un riesto. Aumenta una estadística por 1 y otorga +1d6 en tu siguiente tiro de desarrollo tecnológico pero ocurre una consecuencia negativa.
+- **Resultado neutro:** Puedes repetir el tiro gastando una acción.
+- **Fracaso parcial:** Puedes realizar otra acción con un penalizador de 1d6.
+- **Fracaso:** No descubres nada y no puedes volver a emplear desarrollo tecnológico esta fase.
+- **Fracaso estrepitoso:** No descubres nada y ocurre una consecuencia negativa.
+
 ## Bélicas
 
-Estas acciones buscan fortalecer la organización a través de la fuerza y la intriga además de enfrentarse a otras organizaciones rivales. Se puede asignar a un teniente a estas misiones para añadir sus bonificadores al tiro si estos se aplican y un jugador puede participar también, requiriendo que deba tener éxito en varios tiros de habilidad decididos por el máster con dificultad igual a +3 x nivel de organización. Las acciones bélicas son las siguientes:
+Estas acciones buscan fortalecer la organización a través de la fuerza y la intriga además de enfrentarse a otras organizaciones rivales. Se puede asignar a un teniente a estas misiones para azñadir sus bonificadores al tiro si estos se aplican y un jugador puede participar también, requiriendo que deba tener éxito en varios tiros de habilidad decididos por el máster con dificultad igual a +3 x nivel de organización. Las acciones bélicas son las siguientes:
 
 <u>Asalto:</u> La organización envía a sus efectivos a tomar control de un territorio de manera forzosa o vencer a una fuerza enemiga determinada. Haz un tiro empleando tu estadística de MIL contra un tiro decidido por el máster contra la dificultad del combate, equivaliendo normalmente al nivel de la organización si es fácil, el nivel + 1 si es medio y el nivel + 2 si es difícil.. Paga 1 crédito para +1d6 (máximo 3). Dependiendo del resultado ocurrirá uno de los siguientes efectos:
 
@@ -167,7 +177,7 @@ Estas acciones buscan fortalecer la organización a través de la fuerza y la in
 - **Fracaso:** Recibes +1d6 en un tiro defensivo contra una única estadística y -1d6 en todos los demás.
 - **Fracaso estrepitoso:** Recibes +1d6 en un tiro defensivo contra una única estadística y -2d6 en todos los demás.
 
-## Consecuencias
+# Consecuencias
 
 <u>Accidente:</u> Tiro protección contra tiro organización o pierdes 2 crédito (1 crédito en éxito). 
 
@@ -188,4 +198,24 @@ Estas acciones buscan fortalecer la organización a través de la fuerza y la in
 <u>Rebelión:</u> Tus subordinados se sublevan, evitando que puedas emplear acciones de expansión y tu crédito se reduce por 1 cada fase. Puedes acabar con la rebelión empleando diplomacia o militar, tirando contra tu tiro de organización. +1 crédito para +1d6.
 
 <u>Traición:</u> Un teniente con lealtad 1 se vuelve un traidor, actuando como un infiltrado. Su lealtad no puede volver a subir. Si no hay ninguno reduce la lealtad de un teniente por 1.
+
+# Ejemplos de organizaciones
+
+## Pandilla de bandidos (nivel 1)
+
+**MIL** 1, **SUB** 1, **PRO** 0, **CUL** 0, **SEC** 1, **DIP** 0
+
+**Crédito:** 1
+
+****
+
+**Asalto a caravanas:** Todos los tiros de actividad económica relacionados reciben +1d6 de dificultad durante el resto de la fase. Si se tiene éxito en un tiro de PRO o MIL contra el subterfugio de los bandidos el penalizador se perderá y los bandidos reducen su crédito por 1. En el caso que no sean detenidos aumentarán su crédito por 1 y una de sus estadísticas por 1.
+
+**Batalla campal:** Los bandidos reducen su crédito por 1 para aumentar una estadística por 1, preparándose para atacar a otra facción. Primero harán un tiro de secretos contra la PRO de la organización (SEC si ha realizado una acción de buscar información esta fase) y luego harán una acción de asalto contra la facción escogido. 
+
+## Culto a Sek-Tebos (nivel 5)
+
+**MIL** , **SUB** , **PRO** , **CUL** , **SEC** , **DIP** 
+
+**Crédito:** 1
 
