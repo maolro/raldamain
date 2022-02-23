@@ -12,9 +12,9 @@ Los humanos son la raza más abundante y diversa del planeta, encontrándose en 
 
 Aunque los humanos tienen centenares de culturas diferentes como ya se muestra en el siguiente apartado todos ellos tienen las siguientes características raciales:
 
-- +1 en una [estadística](https://raldamain.com/rules/Crear%20personajes/crear%20personajes.html#las-seis-estad%C3%ADsticas)
-- +2 niveles de [talento](https://raldamain.com/rules/Crear%20personajes/talentos.html)
-- Escoge un [rango](https://raldamain.com/rules/Rangos/) adicional en una habilidad de su elección
+- +1 en una [estadística]
+- +2 niveles de [talento]
+- Escoge un [rango] adicional en una habilidad de su elección
 
 ### Arshalaníes
 
@@ -61,9 +61,9 @@ Los aven son criaturas humanoides con aspecto de pájaro, teniendo el cuerpo cub
 Los aven tienen las siguientes características raciales
 
 - +1 DES, +1 INT, -1 FUE
-- Reciben un rango adicional en [Conocimiento](https://raldamain.com/rules/Rangos/Ciencia/conocimiento.html) o [Reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html)
-- Los aven son capaces de volar a una velocidad de 30 pies. Mientras se encuentren en el aire reciben [ventaja](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#factores-adicionales) en todos sus tiros para esquivar ataques a distancia y atacando a criaturas que se encuentren en el suelo con ataques cuerpo a cuerpo
-- Pueden realizar sus garras para realizar [ataques naturales](https://raldamain.com/rules/Rangos/Armas/ataques%20naturales.html#armas), recibiendo así la mejora fisiológica garras
+- Reciben un rango adicional en [Conocimiento] o [Reflejos]
+- Los aven son capaces de volar a una velocidad de 30 pies. Mientras se encuentren en el aire reciben [ventaja] en todos sus tiros para esquivar ataques a distancia y atacando a criaturas que se encuentren en el suelo con ataques cuerpo a cuerpo
+- Pueden realizar sus garras para realizar [ataques naturales], recibiendo así la mejora fisiológica garras
 
 ### Chothgar
 
@@ -76,7 +76,7 @@ Los chothgar son más altos y fuertes que los humanos, y se caracterizan por su 
 Los chothgar cuentan con las siguientes características raciales:
 
 - +1 FUE, +1 CON
-- Reciben un rango en [Ira](https://raldamain.com/rules/Rangos/Combate/ira.html), [Guerrero divino](https://raldamain.com/rules/Rangos/Religion/) o [Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html).
+- Reciben un rango en [Ira], [Guerrero divino] o [Fortitud].
 - El cuerpo de los chothgar es capaz de resistir heridas a un nivel superior. Estos pueden seguir luchando a 0 PV sin caer inconscientes (aunque recibirán el efecto de estado fatigado) y reciben resistencia +2 a miedo y enfermedades
 
 Algunos chothgar han elegido abandonar el camino tradicional de su pueblo, convirtiéndose a la fe de Mekhatim e integrándose en el Imperio de Arshalán. Estos chothgar, conocidos como Shetyen, son algunos de los seguidores más fervorosos de su fe y muchos acaban convirtiéndose en guerreros sacros de Arshalán. Los Shetyen y los chothgar se odian mutuamente y si se encuentran en el campo de batalla lucharán entre sí hasta la muerte para demostrar cuál de sus dos creencias es superior, emulando así el legendario duelo entre la profeta Mekhatim y el Viajero.
@@ -92,9 +92,9 @@ Los leoninos se caracterizan por tener el cuerpo recubierto de pelo, afiladas ga
 Los leoninos cuentan con las siguientes características raciales:
 
 - +1 FUE, +1 SAB
-- Recibe un rango relacionado con [religión](https://raldamain.com/rules/Rangos/Religion/), [armas](https://raldamain.com/rules/Rangos/Armas/) o [combate](https://raldamain.com/rules/Rangos/Combate/)
+- Recibe un rango relacionado con [religión] o [combate]
 - Aumentan su velocidad de escalada por 15 pies, su velocidad de salto por 10 pies y olfato a una distancia máxima de 60 pies.
-- Pueden emplear sus afiladas garras y colmillos para realizar [ataques naturales](https://raldamain.com/rules/Rangos/Armas/ataques%20naturales.html#armas), recibiendo así las características fisiológicas garras y mordisco.
+- Pueden emplear sus afiladas garras y colmillos para realizar [ataques naturales], recibiendo así las características fisiológicas garras y mordisco.
 
 ### Urlok
 
@@ -107,8 +107,9 @@ Los urlok son de apariencia más bajos y robustos que los humanos, pero debido a
 Los Urlok tienen las siguientes características raciales:
 
 - +1 CON, +1 SAB
-- Recibe un rango de [Ascendencia de tierra](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html), [fabricación](https://raldamain.com/rules/Rangos/Ciencia/fabricacion.html) o [fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html)
-- Reducen su velocidad por 10 pies pero reciben un rango adicional en [armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html)
+- Recibe un rango de [Ascendencia de tierra], [fabricación] o [Fortitud]
+- Reducen su velocidad por 10 pies pero reciben un rango adicional en [armaduras]
 - Tiene visión nocturna a una distancia máxima de 60 pies y resistencia +2 a venenos y enfermedades
 - Los Urlok son extremadamente sensibles a la luz, provocando que si una parte de su piel entra en contacto con ella sufren de inmediato una quemadura leve. Si sus ojos observan la luz sin protección quedarán cegados hasta que se aparten de esta.
 
+{% include links.md %}
