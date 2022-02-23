@@ -14,9 +14,4 @@
 [religión]: {% link rules/Rangos/Religion/index.md %}
 [talento]:  {% link rules/Crear personajes/talentos.md %}
 [ventaja]:  {% link rules/Reglas principales/reglas de combate.md %}#factores-adicionales
-<<<<<<< HEAD
-
 [herida permanente leve]: {% link raldamain\rules\Reglas principales/heridas permanentes.md %}
-
-=======
->>>>>>> parent of 4f7c1b4 (w)
