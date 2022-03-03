@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros relacionados con telekinesia.
 
 ## Rango III
 
-Aumenta tu probabilidad de crítico a 19-20
+Aumenta tu probabilidad de crítico a 19-20. 
 
 <u>Almacenar objetos</u> (pasivo): Cuando atraigas a tu posición un objeto usando tu telekinesia puedes mantenerlo almacenado en lugar de atacar con él, llegando a almacenar un máximo de objetos iguales a tu Rango + 1. Obtienes un bonificador a tus tiros defensivos igual a la cantidad de objetos que agarres y toda criatura que pase por un espacio que se encuentre a 10 pies de ti deberá tirar esquiva o sufrirá daño físico igual al número de objeto atrapados en tu aura (este daño será automático si acaba su turno adyacente a ti). Este daño ignorará la armadura natural y si tu objetivo lleva armadura metálica esta reducirá la defensa que otorga por 1. Puedes gastar un objeto almacenado para fortalecer un ataque de *[Lanzamiento](https://raldamain.com/rules/Rangos/Ocultismo/telekinesia.html#rango-i)*, usándolo para que este haga +2 daño base y aumente su área de efecto por 5 pies. Realizar un ataque de *[Lanzamiento](https://raldamain.com/rules/Rangos/Ocultismo/telekinesia.html#rango-i)* o *[Empuje telequinético](https://raldamain.com/rules/Rangos/Ocultismo/telekinesia.html#rango-ii)* ahora cuesta una acción.
 
