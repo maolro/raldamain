@@ -1,5 +1,5 @@
 ---
 title: Bloodlines
-layout: summ
+layout: summary
 ---
 
