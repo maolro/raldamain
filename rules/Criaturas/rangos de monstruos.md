@@ -38,6 +38,16 @@ Realizar un mordisco cuesta 2 acciones, tiene un alcance de 5 pies e inflige 1d8
 
 Realizar un ataque con una garra cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño perforante al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura (1d8, 1d10, 2d6 y 2d8 respectivamente).
 
+<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *combate salvaje* y *parada*. Recibe un bonificador a sus tiros de ataque con un mordisco igual a su rango.
+
+<u>Rango II:</u> Recibe las habilidades *tajo feroz* y *gran corte* además de un rango adicional en otro ataque natural de su elección.
+
+<u>Rango III:</u> Aumenta su probabilidad de crítico a 19-20. Recibe las habilidades *golpe destructor* y **
+
+<u>Rango IV:</u>  
+
+<u>Rango V:</u> 
+
 ### Golpe
 
 Realizar un ataque con un golpe cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño contundente al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura(1d8, 1d10, 2d6 y 2d8 respectivamente).
