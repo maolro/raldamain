@@ -14,7 +14,6 @@
 [religión]: {% link rules/Rangos/Religion/index.md %}
 [talento]:  {% link rules/Crear personajes/talentos.md %}
 [ventaja]:  {% link rules/Reglas principales/reglas de combate.md %}#factores-adicionales
-[herida permanente leve]: {% link rules/Reglas principales/heridas permanentes.md %}
-
+[herida permanente leve]: {% link rules/Reglas principales/Heridas permanentes.md %}
 [armadura]: {% link rules/Rangos/Combate/armaduras.md %}
 
