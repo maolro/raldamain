@@ -38,15 +38,15 @@ Realizar un mordisco cuesta 2 acciones, tiene un alcance de 5 pies e inflige 1d8
 
 Realizar un ataque con una garra cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño perforante al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura (1d8, 1d10, 2d6 y 2d8 respectivamente).
 
-<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *combate salvaje* y *parada*. Recibe un bonificador a sus tiros de ataque con un mordisco igual a su rango.
+<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *secuencia de ataques* y *parada*. Recibe un bonificador a sus tiros de ataque con un mordisco igual a su rango.
 
 <u>Rango II:</u> Recibe las habilidades *tajo feroz* y *gran corte* además de un rango adicional en otro ataque natural de su elección.
 
-<u>Rango III:</u> Aumenta su probabilidad de crítico a 19-20. Recibe las habilidades *golpe destructor* y **
+<u>Rango III:</u> Aumenta su probabilidad de crítico a 19-20. Recibe las habilidades *golpe destructor* y *desviar proyectiles*.
 
-<u>Rango IV:</u>  
+<u>Rango IV:</u> Recibe las habilidades *romper escudos* y *ataque torbellino* además de un rango adicional en otro ataque natural de su elección.
 
-<u>Rango V:</u> 
+<u>Rango V:</u> Aumenta su probabilidad de crítico a 18-20 y su máximo de acciones por 1. Recibe las habilidades *tajo cercenador* y *ataque oportunista*.
 
 ### Golpe
 
@@ -62,9 +62,17 @@ Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 5 p
 
 ### Armadura natural
 
-### Primigenia
+Una criatura base puede obtener un valor inicial de 2 a su armadura natural a costa de reducir su DES por 1 (esta mejora puede tomarse hasta 4 veces). Una criatura que tenga DES 1 o menos por esta habilidad no podrá emplear rangos relacionados con *reflejos*.
 
-### Reflejos
+<u>Rango I:</u> Aumenta sus PV y armadura natural por 2, además que no sufrirá heridas permanentes al perder PV si estos no son reducidos a menos de la mitad. Volverá a aumentar sus PV y armadura natural de la misma manera cada vez que obtenga un rango adicional.
+
+<u>Rango II:</u> Recibe la habilidad *resistir la muerte* además de resistencia a venenos, enfermedades y aturdimiento igual a su rango + 1.
+
+<u>Rango III:</u> Una vez por ronda como reacción es capaz de reducir el nivel de una herida permanente que reciba por un paso. Se regenerará también 1 vitalidad por turno y podrá reducir el nivel de una herida permanente que haya sufrido por un paso al realizar un descanso corto (reducirá todas por un paso si hace un descanso largo).
+
+<u>Rango IV:</u> Su armadura natural cuenta como si fuera armadura artificial para los propósitos de *tajo feroz* y recibe resistencia a un elemento igual a su rango + 1.
+
+<u>Rango V:</u> Aumenta su resistencia mágica por 6 y aumenta la cantidad de vitalidad que se regenera por 1. Puede reducir el nivel de una herida permanente por un paso una vez adicional por ronda y su armadura es tan sólida que cuenta como si estuviera hecha de un material especial, haciendo así que no pueda reducirse por golpe destructor salvo que el ataque esté hecho con un arma de un material superior.
 
 ## Origen mágico
 
@@ -244,10 +252,10 @@ Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 5 p
 
 Cada una de estas mejoras es independiente a los rangos de las criaturas y equivalen a un nivel. Algunas pueden tomarse varias veces para otorgar beneficios superiores a la criatura que las seleccione mientras que otras están más limitadas.
 
-<u>Volador</u>:
+<u>Volador</u>: La criatura está dotada de alas u otro método de propulsión que le permiten aumentar su velocidad de vuelo por 30 pies. Una criatura voladora tiene ventaja esquivando ataques a distancia y realizando ataques cuerpo a cuerpo contra criaturas que se encuentren en el suelo. 
+
+<u>Tamaño superior:</u> La criatura es de un tamaño más grande de lo normal, aumentando así su FUE y CON por 2, reduciendo su DES por 1 e incrementando sus PV y armadura natural por 1. Esta incrementará también el espacio que ocupa y su alcance por 5 pies además que podrá ignorar terreno difícil que afecte un espacio de tamaño inferior al espacio que ocupa. Para una invocación esta mejora no puede tomarse más de dos veces salvo que el máster diga lo contrario.
 
 <u>Cabeza adicional</u>:
 
 <u>Regeneración superior</u>: 
-
-## 
