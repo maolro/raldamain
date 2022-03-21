@@ -198,7 +198,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango II:</u>
 
-<u>Rango III:</u>
+<u>Rango III: </u>
 
 <u>Rango IV:</u>
 
@@ -208,17 +208,17 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 ### Infernal
 
-<u>Rango I:</u>
+<u>Rango I:</u> Recibe resistencia 2 a daño físico, resistencia igual a su rango + 1 contra un elemento, inmunidad a venenos y enfermedades y todas las heridas permanentes que provoca pasan a ser heridas profanas (cuentan como si fueran de un paso superior para los propósitos de sanación e infligen 1 daño al turno). 
 
-<u>Rango II:</u>
+<u>Rango II:</u> Aumenta su CAR por 1 y recibe *visión infernal* hasta una distancia máxima de 60 pies. Recibe además ventaja en todos sus tiros de ataque y defensa hechos contra abisales, celestiales y espíritus caóticos. Obtiene un hechizo innato adicional de rango I o menos y sus ataques físicos cuentan como si fueran de hierro frío para los propósitos de resistencias.
 
-<u>Rango III:</u>
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 2 y al daño mágico por 2. Una de sus armas recibe una mejora de coste igual a 3 créditos o menos y obtiene un hechizo innato adicional de rango II o menos. Recibe también resistencia igual a su rango + 1 contra un elemento adicional.
 
-<u>Rango IV:</u>
+<u>Rango IV:</u> Aumenta su INT por 1 y recibe un hechizo innato adicional de rango III o menos. Todos los demás demonios y adoradores de Sek-Tebos que se encuentren a 60 pies recibirán ventaja en sus tiros de ataque (no se acumula con *guerrero de la fe* ni el dado de ventaja que recibe a rango II). También es capaz de activar la habilidad *guardián de la fe* durante una cantidad de rondas igual a su rango + 1 con la variación que puede incrementar 2 estadísticas de su elección.
 
-<u>Rango V:</u>
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además que puede emplear la habilidad *salto infernal* tres veces al día. Recibe un hechizo innato adicional de rango IV o menos y cuando entre en el estado de *guardián de la fe* todos sus aliados recibirán +1 FUE, +1 CON, +2 resistencia a daño físico y efectos mentales además que podrán revivir a 1 PV la primera vez que mueran.
 
-<u>Rango VI:</u>
+<u>Rango VI:</u> Aumenta su CON por 1 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
 
 ### Abisal
 

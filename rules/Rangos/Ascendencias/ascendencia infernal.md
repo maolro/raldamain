@@ -9,7 +9,7 @@ De las profundidades de la tierra sale una voz que clama tu nombre y que hace pa
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico. Desbloqueas rangos en todas las magias arcanas para los cuales puedes emplear tu estadíst
+Obtienes Resistencia 2 a daño físico. Desbloqueas rangos en todas las magias arcanas para los cuales puedes emplear tu estadística de carisma.
 
 <u>Resistencias infernales</u> (pasiva): Recibes resistencia igual a tu rango + 1 contra un tipo de daño de tu elección y todas las condiciones asociadas con él. Algunas opciones son fuego, frío, veneno, eléctrico, necrótico y psíquico. A rango III y V puedes escoger otro tipo de daño contra el cual tener resistencia.
 
@@ -25,9 +25,9 @@ Incrementa tu CAR por 1.
 
 <u>Visión infernal</u> (pasiva): Recibes visión a oscuras en un radio de 60 pies y puedes ver a través de oscuridad mágica y no mágica. Detectas también la posición y salud de criaturas que hayan firmado un contrato infernal en un área de 100 pies.
 
-## Rango III
+## Rango III		
 
-Obtienes Resistencia 2 a daño físico. 
+Aumenta su resistencia al daño físico por 1.
 
 <u>Alas demoniacas</u> (pasiva): Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar. Puedes sustituir esta habilidad por otras características similares que no sumen más de 3 PT entre ellas.
 
@@ -41,7 +41,7 @@ Incrementa tu INT por 1.
 
 <u>Blasfemia</u> (pasiva): Tus habilidades de influenciar, presencia y magia mental son capaces de traspasar las resistencias que tenga el objetivo. Sólo podrán ser detenidas por personajes que tengan [mente en blanco](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-v) o [aura sacra](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html#rango-v).
 
-## Rango V
+## Rango  V
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
