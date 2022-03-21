@@ -38,7 +38,7 @@ Realizar un mordisco cuesta 2 acciones, tiene un alcance de 5 pies e inflige 1d8
 
 Realizar un ataque con una garra cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño perforante al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura (1d8, 1d10, 2d6 y 2d8 respectivamente).
 
-<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *secuencia de ataques* y *parada*. Recibe un bonificador a sus tiros de ataque con un mordisco igual a su rango.
+<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *secuencia de ataques* y *parada*. Recibe un bonificador a sus tiros de ataque con una garra igual a su rango.
 
 <u>Rango II:</u> Recibe las habilidades *tajo feroz* y *gran corte* además de un rango adicional en otro ataque natural de su elección.
 
@@ -208,9 +208,9 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 ### Infernal
 
-<u>Rango I:</u> Recibe resistencia 2 a daño físico, resistencia igual a su rango + 1 contra un elemento, inmunidad a venenos y enfermedades y todas las heridas permanentes que provoca pasan a ser heridas profanas (cuentan como si fueran de un paso superior para los propósitos de sanación e infligen 1 daño al turno). 
+<u>Rango I:</u> Recibe resistencia 2 a daño físico, resistencia igual a su rango + 1 contra un elemento, inmunidad a fuego, venenos y enfermedades y todas las heridas permanentes que provoca pasan a ser heridas profanas (cuentan como si fueran de un paso superior para los propósitos de sanación e infligen 1 daño al turno). 
 
-<u>Rango II:</u> Aumenta su CAR por 1 y recibe *visión infernal* hasta una distancia máxima de 60 pies. Recibe además ventaja en todos sus tiros de ataque y defensa hechos contra abisales, celestiales y espíritus caóticos. Obtiene un hechizo innato adicional de rango I o menos y sus ataques físicos cuentan como si fueran de hierro frío para los propósitos de resistencias.
+<u>Rango II:</u> Aumenta su CAR por 1 y recibe *visión infernal* hasta una distancia máxima de 60 pies. Recibe además ventaja en todos sus tiros de ataque y defensa hechos contra abisales, celestiales y espíritus caóticos además de sus adoradores (puede obtener esta ventaja contra otras criaturas si se lo ordena un demonio superior). Obtiene un hechizo innato adicional de rango I o menos y sus ataques físicos cuentan como si fueran de hierro frío para los propósitos de resistencias.	
 
 <u>Rango III:</u> Aumenta su resistencia al daño físico por 2 y al daño mágico por 2. Una de sus armas recibe una mejora de coste igual a 3 créditos o menos y obtiene un hechizo innato adicional de rango II o menos. Recibe también resistencia igual a su rango + 1 contra un elemento adicional.
 
@@ -218,7 +218,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además que puede emplear la habilidad *salto infernal* tres veces al día. Recibe un hechizo innato adicional de rango IV o menos y cuando entre en el estado de *guardián de la fe* todos sus aliados recibirán +1 FUE, +1 CON, +2 resistencia a daño físico y efectos mentales además que podrán revivir a 1 PV la primera vez que mueran.
 
-<u>Rango VI:</u> Aumenta su CON por 1 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
+<u>Rango VI:</u> Aumenta su CON por 1 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también 	la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
 
 ### Abisal
 
