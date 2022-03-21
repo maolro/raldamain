@@ -1,5 +1,5 @@
 ---
-title: Magia Temporal
+  title: Magia Temporal
 category: Magia arcana
 ---
 
@@ -9,7 +9,7 @@ El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo
 
 Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
 
-<u>Premonición</u> (bonus): Tu conexión con el flujo temporal causa que recibas visiones de momentos futuros, preparándote para inminentes peligros. Tienes un número de cargas de premonición igual a 1 + Rango, las cuales recuperas después de un día. Como acción bonus puedes gastar una carga de premonición para repetir un tiro de tu elección y quedarte con el mejor resultado o recibir la habilidad *[esquiva asombrosa](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)* durante un turno. Puedes gastar 1 chi de tu reserva durante un combate para recuperar una carga de premonición.
+<u>Premonición</u> (reacción): Tu conexión con el flujo temporal causa que recibas visiones de momentos futuros, preparándote para inminentes peligros. Tienes un número de cargas de premonición igual a 1 + Rango, las cuales recuperas después de un día. Como reacción puedes gastar una carga de premonición para repetir un tiro de tu elección y quedarte con el mejor resultado o recibir la habilidad *[esquiva asombrosa](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)* durante un turno. Puedes gastar 1 chi de tu reserva durante un combate para recuperar una carga de premonición.
 
 <u>Alteración temporal</u> (2 acciones) Haciendo uso de dos acciones puedes gastar 1 chi de tu reserva para alterar el tiempo en una burbuja de 5 pies de diámetro. Con esta habilidad puedes restaurar los objetos que estén en la burbuja a su estado anterior (arreglándolos y eliminando todos los daños) o a un estado futuro (reduciendo su eficacia por 1). No puedes afectar a seres orgánicos con esta habilidad, y a Rango III Alteración temporal te cuesta una acción.
 
