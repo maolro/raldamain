@@ -34,8 +34,8 @@ Añade tu rango a todos tus tiros de percepción, supervivencia, y averiguar int
 - **Ártico**: Recibes Resistencia a daño frío igual a tu Rango de Rastrear. No sufres efectos negativos por frío extremo y tienes [visión árctica](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia boreal.html#rango-ii) en un radio de 60 pies.
 - **Desierto**: Recibes Resistencia a daño fuego y necrótico igual a tu rango de Rastrear. No sufres efectos negativos por calor extremo y puedes sobrevivir un día adicional sin comer ni beber. 
 - **Montaña**: Incrementa tu velocidad de Escalada por 15 pies (no puede exceder tu movimiento base). No sufres efectos negativos por frío extremo ni por grandes altitudes.
+- **Pantano**: Incrementa tu velocidad de Nadar por 15 pies (no puede exceder tu movimiento base). Puedes aguantar tu respiración durante dos turnos adicionales y recibe resistencia igual a su rango + 1 contra venenos y enfermedades.
 - **Subterráneo**: Incrementa tu velocidad de Escalada por 15 pies (no puede exceder tu movimiento base). Recibes Resistencia a venenos igual a tu rango de Rastrear y tienes visión a oscuras en un radio de 60 pies
-- **Acuático**: Incrementa tu velocidad de Nadar por 15 pies (no puede exceder tu movimiento base). Puedes aguantar tu respiración durante dos turnos adicionales.
 - **Urbano**: Incrementa tu velocidad de salto por 10 pies. Eres capaz de emplear Acechar para ocultarte en aglomeraciones de personas.
 - **Bosque:** Recibes Resistencia a magia de naturaleza igual a tu rango de Rastrear. Incrementa tu velocidad base por 15 pies y los animales no son naturalmente hostiles hacia ti.
 

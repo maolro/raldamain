@@ -47,7 +47,7 @@ Incrementa tu CON por 1.
 - **Kurungor**: Aumenta tu tamaño por un paso, llegando como máximo a tamaño gigante.
 - **Alzebun**: Te sanas 1 PV y 2 VT al devorar carne de un ser vivo. Detectas la posición de todas las criaturas vivas en un radio de 60 pies.
 
-<u>Invocación abisal</u> (3 acciones): Empoleando 3 acciones puedes invocar una criatura abisal que seguirá fielmente tus órdenes. La criatura que invoques no puede nivel superior a tu rango de ascendencia x 2 y recibirá la mejora *origen abisal*. Invocación sombría puede emplearse un número de veces al día igual a tu Rango - 2 y las criaturas invocadas permanecerán en el mundo durante dos horas. Puedes gastar un uso adicional de esta habilidad al invocar una criatura para que esta tenga dos niveles adicionales siempre y cuando su nivel no sea superior al tuyo.
+<u>Invocación abisal</u> (3 acciones): Empleando 3 acciones puedes invocar una criatura abisal que seguirá fielmente tus órdenes. La criatura que invoques no puede nivel superior a tu rango de ascendencia x 2 y recibirá la mejora *origen abisal*. Invocación abisal puede emplearse un número de veces al día igual a tu Rango - 2 y las criaturas invocadas permanecerán en el mundo durante dos horas. Puedes gastar un uso adicional de esta habilidad al invocar una criatura para que esta tenga dos niveles adicionales siempre y cuando su nivel no sea superior al tuyo.
 
 ## Rango V
 
