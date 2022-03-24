@@ -1,19 +1,3 @@
-# Formas base
-
-<u>Cuadrúpedo:</u>
-
-<u>Bípedo:</u>
-
-<u>Ave:</u>
-
-<u>Acuático:</u>
-
-<u>Sierpe:</u>
-
-<u>Cienpiés:</u>
-
-<u>Aberrante:</u>
-
 # Rangos
 
 ## Ataques naturales
@@ -88,7 +72,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango IV:</u> Aumenta su CAR por 1, recibe un bonificador igual a si rango - 2 en todos los tiros de ataque con ataques físicos, sus ataques infligen 2 daño fuego adicional e infligen una quemadura leve (media se reducen PV o el objetivo lleva armadura metálica). Adicionalmente cuando haga un ataque de aliento todo el área afectado quedará recubierto por un *muro de fuego* durante una ronda.
 
-<u>Rango V:</u> Aumenta su resistencia al daño físico por 1, su resistencia mágica por un valor igual a su rango - 2, recibe *visión térmica* en un radio de 60 pies y las habilidades *evasión* y *resposicionar* (*evasión superior* si ya la tiene). Se regenerará también 1 PV y 1 vitalidad adicional por turno.
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1, su resistencia mágica por un valor igual a su rango - 2, recibe *visión térmica* en un radio de 60 pies y las habilidades *evasión* y *reposicionar* (*evasión superior* si ya la tiene). Se regenerará también 1 PV y 1 vitalidad adicional por turno.
 
 <u>Rango VI:</u> Aumenta su DES por 1, obtiene inmunidad a venenos, efectos mentales y enfermedades, incrementa el daño del *aura abrasadora* por 2 y todo el daño fuego provocado cuenta como *fuego puro*. Una vez por ronda como acción bonus puede hacer un ataque elemental modificado con *maestría del fuego* que infligirá 1d6 + CON daño fuego o emplear la habilidad *pirokinesia* en un radio de 60 pies.
 
@@ -166,17 +150,19 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 ### Verdeante
 
-<u>Rango I:</u>
+<u>Rango I:</u> Recibe resistencia 2 al daño físico y 3 PT para gastar en mejoras. Todos sus ataques físicos incrementan su daño base por 2 y al impactar reduce la defensa del objetivo por 1 si lleva armadura metálica.
 
-<u>Rango II:</u>
+<u>Rango II:</u> Aumenta su SAB por 1 y recibe vista a oscuras y olfato en un radio de 60 pies. La criatura obtiene los beneficios de las habilidades *terreno predilecto* y *terreno predilecto superior* propias de rastrear además de un hechizo innato adicional de rango I y recibe la siguiente habilidad:
 
-<u>Rango III:</u>
+- **Armonizar terreno**: Una cantidad de veces al día igual a su rango - 1 empleando 3 acciones la criatura puede infundir un espacio de 100 pies con energía espiritual, transformando el entorno en su terreno predilecto. Un terreno armonizado cuenta como tierra consagrada para adoradores de la fe espiritual.
 
-<u>Rango IV:</u>
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 1 y recibe un hechizo innato adicional de rango II o menos. Recibe ventaja en todos sus tiros de ataque y defensa si se mantiene en su terreno predilecto además de regenerarse 1 vitalidad al turno (2 vitalidad si tiene rango V o más). 
 
-<u>Rango V:</u>
+<u>Rango IV:</u> Aumenta su DES por 1 y todos sus ataques físicos aumentan su daño base por 2, su alcance por 5 pies y reducen un punto de defensa adicional por 1. Recibe un hechizo innato adicional de rango III o menos y puede emplear *animar plantas* una vez al día (dos veces a rango VI).
 
-<u>Rango VI:</u>
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3. Recibe un hechizo innato adicional de rango IV o menos, tres usos al día de la habilidad *puerta arbórea* y la habilidad *aura primigenia*.
+
+<u>Rango VI:</u> Aumenta su SAB por 1 y obtiene inmunidad a veneno, enfermedades y efectos mentales. Recibe un hechizo innato adicional de rango V o menos además de un uso diario de *furia de la naturaleza*. Incrementa su tamaño base por un paso y está rodeado de una masa vegetal que le otorga +6 PV y +2 DEF. Todos sus ataques físicos y su armadura natural cuentan como si estuvieran hechos de madera férrea, incrementando el daño base de nuevo por 2. 	
 
 ### Sombría
 
@@ -247,15 +233,3 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 <u>Rango V:</u>
 
 <u>Rango VI:</u>
-
-# Mejoras
-
-Cada una de estas mejoras es independiente a los rangos de las criaturas y equivalen a un nivel. Algunas pueden tomarse varias veces para otorgar beneficios superiores a la criatura que las seleccione mientras que otras están más limitadas.
-
-<u>Volador</u>: La criatura está dotada de alas u otro método de propulsión que le permiten aumentar su velocidad de vuelo por 30 pies. Una criatura voladora tiene ventaja esquivando ataques a distancia y realizando ataques cuerpo a cuerpo contra criaturas que se encuentren en el suelo. 
-
-<u>Tamaño superior:</u> La criatura es de un tamaño más grande de lo normal, aumentando así su FUE y CON por 2, reduciendo su DES por 1 e incrementando sus PV y armadura natural por 1. Esta incrementará también el espacio que ocupa y su alcance por 5 pies además que podrá ignorar terreno difícil que afecte un espacio de tamaño inferior al espacio que ocupa. Para una invocación esta mejora no puede tomarse más de dos veces salvo que el máster diga lo contrario.
-
-<u>Cabeza adicional</u>:
-
-<u>Regeneración superior</u>: 

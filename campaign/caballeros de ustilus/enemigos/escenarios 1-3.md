@@ -282,7 +282,7 @@ El asesino prefiere combatir junto a aliados y evitará aquellos combates donde 
 
 ------
 
-**Ataque coordinato:** +1d6 daño si realiza un ataque conjunto con su compañero animal o este lo flanquea.
+**Ataque coordinado:** +1d6 daño si realiza un ataque conjunto con su compañero animal o este lo flanquea.
 
 **Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
 

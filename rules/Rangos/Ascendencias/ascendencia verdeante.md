@@ -21,13 +21,13 @@ Incrementa tu SAB por 1.
 
 <u>Comunión con la naturaleza:</u> Tus sentidos aumentan su eficacia, llegando a ser como los de un animal salvaje. Tienes vista a oscuras y olfato en un radio de 60 pies. Puedes además realizar un ritual de una hora de duración donde entras en harmonía con la naturaleza de tu región, lo cual te permite conocer información sobre los espíritus y localidades de esta. Si tienes rangos en [rastrear](https://raldamain.com/rules/Rangos/Combate/rastrear.html) puedes convertir una región en tu terreno predilecto tras armonizar con ella.
 
-<u>Fuerza primigenia</u> (pasiva): Recibes una reserva de energía elemental igual a 2 + tu rango la cual puedes consumir para incrementar la fuerza de tus ataques (esta se acumula con la habilidad reserva de energía). Como acción bonus usable una vez al turno puedes reducir tu reserva elemental por 1 para infundir tus ataques naturales y armas hechas de madera con energía natural durante una ronda. Un ataque infundido con la naturaleza hace +2 daño base y al impactar a un enemigo con armadura reducirá la defensa de esta por 1. No sufres daño no-letal la primera vez que utilices esta habilidad si has armonizado con la región.
+<u>Fuerza primigenia</u> (pasiva): Recibes una reserva de energía elemental igual a 2 + tu rango la cual puedes consumir para incrementar la fuerza de tus ataques (esta se acumula con la habilidad reserva de energía). Como acción bonus usable una vez al turno puedes reducir tu reserva elemental por 1 para infundir tus ataques naturales y armas hechas de madera con energía natural durante una ronda. Un ataque infundido con la naturaleza hace +2 daño base y al impactar a un enemigo con armadura reducirá la defensa de esta por 1.
 
 ## Rango III 
 
 Aumenta tu resistencia a daño físico por 1. Recibes 3 PT adicionales que puedes gastar en mejoras.
 
-<u>Espíritu protector</u> (ritual): Un espíritu de la naturaleza actúa como tu guía, dándote consejo y protegiéndote de peligros. Mientras te encuentres en un terreno armonizado el espíritu protector te alertará de la presencia de enemigos ocultos y te otorgará los beneficios de estar en *posición de*. Conoces también como realizar un ritual para contactar a tu espíritu protector y recibir su sabiduría. Este ritual tiene una duración de 10 minutos y te permite convertir un terreno en armonizado y hacerle hasta 4 preguntas a tu espíritu. Estas preguntas deben ser contestadas sinceramente por el máster siempre y cuando el espíritu conozca la respuesta, aunque la respuesta puede ser tan críptica como el máster desee. Empleando 2 acciones puedes invocar a tu espíritu protector, el cual se manifestará como una criatura con nivel igual a tu rango de ascendencia x 2 que empieza con la habilidad *origen espiritual*. Si el espíritu está invocado perderás los bonificadores defensivos que este te otorga.
+<u>Espíritu protector</u> (ritual): Un espíritu de la naturaleza actúa como tu guía, dándote consejo y protegiéndote de peligros. Mientras te encuentres en un terreno armonizado el espíritu protector te alertará de la presencia de enemigos ocultos y te otorgará los beneficios de estar en *posición defensiva*. Conoces también como realizar un ritual para contactar a tu espíritu protector y recibir su sabiduría. Este ritual tiene una duración de 10 minutos y te permite convertir un terreno en armonizado y hacerle hasta 4 preguntas a tu espíritu. Estas preguntas deben ser contestadas sinceramente por el máster siempre y cuando el espíritu conozca la respuesta, aunque la respuesta puede ser tan críptica como el máster desee. Empleando 2 acciones puedes invocar a tu espíritu protector, el cual se manifestará como una criatura con nivel igual a tu rango de ascendencia x 2 que empieza con la habilidad *origen espiritual*. Si el espíritu está invocado perderás los bonificadores defensivos que este te otorga.
 
 <u>Conexión elemental</u> (pasiva): La energía vital de la naturaleza sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno en un terreno armonizado te regeneras 1 vitalidad y recuperas 1 punto de tu reserva elemental. No puedes sanarte PV de esta manera, pero si realizas un descanso corto en tu terreno armonizado reduce el nivel de una herida permanente por 1 (todas tus heridas si es un descanso largo). Cuando alcances rango V de esta ascendencia aumenta el número de Vitalidad que te sanas al turno por 1 y recuperarás 2 PV al turno si tu Vitalidad está al máximo.
 
@@ -55,10 +55,3 @@ Incrementa tu SAB por 1. Recibes 3 PT adicionales que puedes gastar en mejoras.
 
 <u>Forma elemental</u> (3 acciones) Empleando 3 acciones puedes rodearte de una gran masa vegetal. Mientras estés en esta forma aumentas tus PV por 6 y tu defensa por 2, además de llenar un área de 10 pies centrado en ti con un [muro de zarzas](https://raldamain.com/rules/Rangos/Elementalismo/magia de naturaleza.html#rango-ii). Aumentas también tu tamaño base, incrementando tu FUE y CON por 2 a costa de reducir tu DES por 1. La forma elemental durará un número de rondas igual a tu rango + 1 o hasta que pierdas la concentración.
 
-# Criaturas espirituales
-
-## Elemental escudo (nivel 10)
-
-## Guerrero de terracotta (nivel 10)
-
-## Hidra forestal (nivel 10)
