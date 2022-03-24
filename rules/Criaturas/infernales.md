@@ -102,8 +102,6 @@
 
 **Talentos:** 
 
-Filos cortantes II, Infernal IV, Armadura natural II, Aura de terror, Alabardas I  
-
 **Resiste:** 
 
 **Inmune:** 
