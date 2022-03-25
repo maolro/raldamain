@@ -234,7 +234,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además que puede emplear la habilidad *salto infernal* tres veces al día. Recibe un hechizo innato adicional de rango IV o menos y cuando entre en el estado de *guardián de la fe* todos sus aliados recibirán +1 FUE, +1 CON, +2 resistencia a daño físico y efectos mentales además que podrán revivir a 1 PV la primera vez que mueran.
 
-<u>Rango VI:</u> Aumenta su CON por 1 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
+<u>Rango VI:</u> Aumenta su CON por 1, reci y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
 
 ### Abisal
 
@@ -246,19 +246,19 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango IV:</u> Aumenta su CON por 1 y recibe un hechizo innato adicional de rango III o menos. Todos sus aliados abisales a 60 pies entran en un estado de ira sobrenatural, otorgándoles ventaja en sus tiros de ataque y defensa (no se acumula con guerrero divino). La criatura puede escoger también un señor del caos al que venerar, recibiendo una de las siguientes habilidades:
 
-- **Ayanuu:** La criatura es elegida por Ayanuu, la entidad primigenia del caos y el conocimiento prohibido. La criatura recibe las habildiades *duelo psíquico* y *horror onírico* además que todos sus hechizos reciben la mejora *mental* propia de la habilidad *conocimiento arcano*.
-- **Ekdavor:** La criatura es elegida por Ekdavor, la entidad primienia de la guerra, la dominación y los espíritus oscuros. La criatura recibe la habilidad *niebla de pesadillas* además que puede transormarse en una criatura incorpórea durante una cantidad de rondas igual su rango de ascendencia abisal, pudiendo poseer a otras criaturas en dicha forma como si tuviera la habilidad *posesión*.
+- **Ayanuu:** La criatura es elegida por Ayanuu, la entidad primigenia del caos y el conocimiento prohibido. Recibe la capacidad de provocar alteraciones en la realidad misma, permitiéndole emplear las habilidades *duelo psíquico* y *manipular sueño* tres veces al día en el plano material. Si activa *duelo psíquico* el objetivo deberá hacer un tiro de sabiduría contra su habilidad mágica + rango o su mente quedará atrapada, causando que solo pueda defenderse de los ataques de esta criatura empleando su inteligencia (se modificará con su resistencia a efectos mentales) hasta que se libere de este efecto.
+- **Ekdavor:** La criatura es elegida por Ekdavor, la entidad primienia de la guerra, la dominación y los espíritus oscuros. Recibe la habilidad *niebla de pesadillas* además que puede transormarse en una criatura incorpórea durante una cantidad de rondas igual su rango de ascendencia abisal.
 - **Gulmaht:** La criatura es elegida por Gulmaht, la entidad primigenia del apocalipsis y el abismo. Aumenta su resistencia al daño físico y la magia por 2 además de volverse capaz de activar la habilidad *guardián de la fe* durante una cantidad de rondas igual a su rango + 1 con la variación que puede incrementar 2 estadísticas de su elección. Todos sus hecizos reciben la mejora *empoderado* propia de *conocimiento arcano*.
-- **Shade:**
+- **Shade:** La criatura es elegida por Shade, la entidad primigenia de las sombras y la desesperación. Recibe *crear oscuridad* tres veces al día, *forma sombría* rango + 1 rondas al día y *ocultarse en las sombras*, además que todos sus ataques infligen +2 daño necrótico. Obtiene también inmunidad al daño necrótico y vulnerabilidad al daño radiante.
 
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además de recibir 3 usos de *paso abisal*. Obtiene también la habilidad *aura de caos* y es capaz de emplear de manera innata un hechizo de rango IV o menos.
 
 <u>Rango VI:</u> Aumenta su DES por 1, obtiene 3 PT adicionales y recibe un hechizo innato adicional de rango V o menos. Recibe la habilidad *aura sacra* y recibe una habilidad adicional según el señor del caos al que venera tal como se indica a continuación:
 
-- **Ayanuu:**
-- **Ekdavor:**
-- **Gulmaht:**
-- **Shade:**
+- **Ayanuu:** Recibe *agujero negro*, *sueño compartido* y *alterar densidad*.
+- **Ekdavor:** Recibe *despertar el demonio*, *posesión* y *atrapar alma*.
+- **Gulmaht:** Recibe *hueste divina* y *desastre natural*.
+- **Shade:** Recibe *esfera sombría*, *furia de shade* y *ejecución sombría*.
 
 ### Onírica
 
