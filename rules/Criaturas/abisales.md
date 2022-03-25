@@ -84,7 +84,11 @@ __________________
 
 ____
 
-Esta pequeña criatura se dedicará a apoyar a sus aliados y estorbas a sus rivales antes que enfrascarse directamente en la batalla. Una vez comience el combate dará celeridad a 
+El Chasteneth intentará mantenerse al margen del combate tanto como le sea posible, apoyando a sus aliados desde las líneas traseras y buscando estorbar al enemigo. Normalmente buscará garantizar su supervivencia, por lo que cuando note que pueda desatarse un combate comenzará a lanzarse sobre si mismo celeridad y armadura mágica. Una vez comience el combate fortalecerá a sus aliados con celeridad si les beneficia un aumento en la destreza o una mayor cantidad de acciones, o con armadura mágica si necesitan de una pequeña ayuda para poder aguantar dentro del combate. En el caso de que haya luchadores cuerpo a cuerpo que se aprovechen de estadísticas de fuerza buscará alterar sus emociones para aumentar su ira y reforzar sus capacidades física.
+
+Si ya no puede o no es conveniente fortalecer a los aliados entonces se decantará por acciones mas directas sobre los enemigos, haciendo uso de asalto psíquico para dañar y deteriorar a aquellos de mente débil entre las filas enemigas. Así mismo buscará emplear detectar pensamientos en esas mismas personas vulnerables para tratar de sacar la estrategia del enemigo, información importante o su proximo movimiento inmediato para avisar a sus aliados.
+
+En el caso de que el combate parezca estar siendo dominado por el enemigo y que el enemigo sean varios individuos el Chesteneth siempre buscará dividirlos y volverlos contra ellos. Ya sea por haber utilizado asalto psíquico o por información que ha conseguido por detectar pensamientos, él buscará al mas vulnerable mentalmente y intentará afectarlo con alterar emociones potenciando su Ira. En el caso de afectarlo avisará a sus aliados e intentará conducir al afectado por la Ira contra sus propios aliados, pudiendo incluso fortalecerlo con algún uso como acelerar o armadura mágica para convertirlo en un verdadero peligro.
 
 ## Khutul (nivel 4)
 
