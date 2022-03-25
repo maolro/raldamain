@@ -68,19 +68,23 @@ Abisal II (tamaño inferior, vuelo, invisibilidad, teletransporte, detectar pens
 
 **Teletransporte (1 acción, 3/combate):** Podrá teletransportarse hasta 60 pies evitando ataques de oportunidad.
 
-**Detectar pensamientos (bonus, 3/día):** mientras mantenga la concentración podrá detectar todas las mentes en 60 pies y leer sus pensamientos superficiales. Empleando un uso adicional y tirando contra la inteligencia de tu objetivo podrá intentar entrar mas profundo en su mente o leer que será lo siguiente que va a hacer para tener ventaja en su próximo tiro.
+**Detectar pensamientos (bonus, 3/día):** mientras mantenga la concentración podrá detectar todas las mentes en 60 pies y leer sus pensamientos superficiales. Empleando un uso adicional, una acción y tirando contra la inteligencia de tu objetivo podrá intentar entrar mas profundo en su mente o leer que será lo siguiente que va a hacer para tener ventaja en su próximo tiro.
 
 **Asalto psíquico (2 acciones, 3/día):** +7, provoca 7 daño psíquico y reduce una de las estadísticas mentales del objetivo por 1. 
 
 **Prisa (2 acciones, 2/día):** Puede prolongar su efecto de celeridad por 3 rondas o dárselo a un aliado.
 
-**Alterar emociones (2 acciones, 3/día):** +7, potencia una emoción durante tres rondas.
+**Alterar emociones (2 acciones, 3/día):** +7, potenciando su Ira durante tres rondas.
 
 **Armadura mágica (2 acciones, 2/día):** Prolonga el efecto de su armadura mágica por 3 rondas o se lo da a un aliado.
 
 __________________
 
-Esquiva: +5+1d6.
+**Esquiva:** +5.
+
+____
+
+Esta pequeña criatura se dedicará a apoyar a sus aliados y estorbas a sus rivales antes que enfrascarse directamente en la batalla. Una vez comience el combate dará celeridad a 
 
 ## Khutul (nivel 4)
 
