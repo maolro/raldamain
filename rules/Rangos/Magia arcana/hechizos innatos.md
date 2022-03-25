@@ -69,7 +69,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Asalto psíquico</u> (Rango I): Puede emplearse 3 veces al día, cuesta 2 acciones y el objetivo reducirá su cordura por 1 + INT además que perderá la concentración y reducirá una de sus estadísticas mentales por 1. 
 
-<u>Detectar pensamientos</u> (Rango I): Puede emplearse 3 veces al día, cuesta una acción bonus y mientras mantenga la concentración en este efecto podrá detectar todas las mentes pensantes a 60 pies y leer sus pensamientos superficiales. Puede emplear un uso adicional para penetrar en la mente de un objetivo o conocer la siguiente acción que este realizará, recibiendo así ventaja en tu siguiente tiro (en ambos casos deberá tener éxito en un tiro de ataque contra su inteligencia).
+<u>Detectar pensamientos</u> (Rango I): Puede emplearse 3 veces al día, cuesta una acción bonus y mientras mantenga la concentración en este efecto podrá detectar todas las mentes pensantes a 60 pies y leer sus pensamientos superficiales. Puede emplear un uso adicional y gastar una acción para penetrar en la mente de un objetivo o conocer la siguiente acción que este realizará, recibiendo así ventaja en tu siguiente tiro (en ambos casos deberá tener éxito en un tiro de ataque contra su inteligencia).
 
 <u>Inflamar emociones</u> (Rango II): Puede emplearse 3 veces al día, cuesta 2 acciones y hace un ataque mental contra el objetivo, potenciando una emoción durante 3 rondas. La emoción para potenciar se escoge al obtener esta habilidad y no podrá cambiarse.
 
