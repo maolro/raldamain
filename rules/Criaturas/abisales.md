@@ -36,47 +36,51 @@ Abisal II (tamaño inferior, vuelo, invisibilidad, teletransporte, detectar pens
 
 -------------------------
 
-Talentos: Percepción 6, Engaño 5, Sigilo 5
+**Talentos:** Percepción +9, Engaño +7, Sigilo +6
 
-Resistencias: Resistencia mágica 3, necrótico 3, 
+**Resistencias:** Resistencia mágica 3, necrótico 3, 
 
-Inmunidades: Venenos, enfermedades y efectos mentales
+**Inmunidades:** Venenos, enfermedades y efectos mentales
 
-Sentidos: Vista del vacio 60 pies
+**Sentidos:** Vista del vacio 60 pies
 
-Movimiento: 15 pies, vuelo 30 pies
+**Movimiento:** 15 pies, vuelo 30 pies
 
-Acciones: 4
+**Acciones:** 4
 
 ---------------------------------------------------------
 
-Tamaño inferior: al enfrentarse contra criaturas de tamaño mediano recibirá +1d6 en tiros de esquiva y ataque contra ellos. (Recibirá +1d6 adicional por cada escala de tamaño superior de la criatura contra la que se enfrente).
+**Tamaño inferior:** al enfrentarse contra criaturas de tamaño mediano recibirá +1d6 en tiros de esquiva y ataque contra ellos. (Recibirá +1d6 adicional por cada escala de tamaño superior de la criatura contra la que se enfrente).
 
-Celeridad: Durante las 3 primeras rondas del combate la criatura estará sobrecargada por la energía del abismo dándole gran agilidad. Cuando el efecto desaparezca reducirá sus acciones y su destreza por 1.
+**Celeridad:** Durante las 3 primeras rondas del combate la criatura estará sobrecargada por la energía del abismo dándole gran agilidad. Cuando el efecto desaparezca reducirá sus acciones y su destreza por 1.
 
-Canalizando el abismo: Durante las 3 primeras rondas del combate su mente está abierta a las influencias del abismo. Al terminar el efecto reducirá su sabiduría y su carisma por 2
+**Canalizando el abismo:** Durante las 3 primeras rondas del combate su mente está abierta a las influencias del abismo. Al terminar el efecto reducirá su sabiduría y su carisma por 2
 
-Armadura mágica: Durante las 3 primeras rondas del combate su cuerpo se verá fortalecido por una coraza, pudiendo extender este efecto con concentración. Cuando el efecto se acabe reducirá su armadura y su armadura mágica por 3.
+**Armadura mágica:** Durante las 3 primeras rondas del combate su cuerpo se verá fortalecido por una coraza, pudiendo extender este efecto con concentración. Cuando el efecto se acabe reducirá su armadura y su armadura mágica por 3.
 
-Aura antinatural: Recibe ventaja en tiros de intimidar, persuasión y engaño, mientras que criaturas a 30 pies de ti tendrán desventaja en talentos relacionados con las estadísticas de sabiduría e inteligencia. 
+**Aura antinatural:** Recibe ventaja en tiros de intimidar, persuasión y engaño, mientras que criaturas a 30 pies de ti tendrán desventaja en talentos relacionados con las estadísticas de sabiduría e inteligencia. 
 
-Toque infeccioso: Puede dar la plaga abisal a un objetivo imcapacitado.
+**Toque infeccioso:** Puede dar la plaga abisal a un objetivo incapacitado.
 
 ------------------------------
 
-Invisibilidad (2 acciones): Chasteneth podrá volverse invisible hasta que pierda la concentración o realice cualquier ataque.
+**Invisibilidad (2 acciones):** Chasteneth podrá volverse invisible hasta que pierda la concentración o realice cualquier ataque.
 
-Teletransporte (1 acción, 3/combate): Podrá teletransportarse hasta 60 pies evitando ataques de oportunidad.
+**Teletransporte (1 acción, 3/combate):** Podrá teletransportarse hasta 60 pies evitando ataques de oportunidad.
 
-Detectar pensamientos (bonus, 3/día): mientras mantenga la concentración podrá detectar todas las mentes en 60 pies y leer sus pensamientos superficiales. Empleando un uso adicional y tirando contra la inteligencia de tu objetivo podrá intentar entrar mas profundo en su mente o leer que será lo siguiente que va a hacer para tener ventaja en su próximo tiro.
+**Detectar pensamientos (bonus, 3/día):** mientras mantenga la concentración podrá detectar todas las mentes en 60 pies y leer sus pensamientos superficiales. Empleando un uso adicional y tirando contra la inteligencia de tu objetivo podrá intentar entrar mas profundo en su mente o leer que será lo siguiente que va a hacer para tener ventaja en su próximo tiro.
 
-Asalto psíquico (2 acciones, 3/día): +7, provoca 7 daño psíquico y reduce una de las estadísticas mentales del objetivo por 1. 
+**Asalto psíquico (2 acciones, 3/día):** +7, provoca 7 daño psíquico y reduce una de las estadísticas mentales del objetivo por 1. 
 
-Prisa (2 acciones, 2/día): Puede prolongar su efecto de celeridad por 3 rondas o dárselo a un aliado.
+**Prisa (2 acciones, 2/día):** Puede prolongar su efecto de celeridad por 3 rondas o dárselo a un aliado.
 
-Alterar emociones (2 acciones, 3/día): +7, potencia una emoción durante tres rondas.
+**Alterar emociones (2 acciones, 3/día):** +7, potencia una emoción durante tres rondas.
 
-Armadura mágica (2 acciones, 2/día): Prolonga el efecto de su armadura mágica por 3 rondas o se lo da a un aliado.
+**Armadura mágica (2 acciones, 2/día):** Prolonga el efecto de su armadura mágica por 3 rondas o se lo da a un aliado.
+
+__________________
+
+Esquiva: +5+1d6.
 
 ## Khutul (nivel 4)
 
