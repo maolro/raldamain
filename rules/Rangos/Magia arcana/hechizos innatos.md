@@ -95,29 +95,31 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 ### Magia protectora
 
-<u>Disrupción de chi</u> (Rango I):
+<u>Disrupción de chi</u> (Rango I): Puede emplearse 3 veces al día, cuesta 2 acciones y otorga un penalizador -2 al objetivo en todos sus tiros relacionados con magia arcana o reduce la eficacia de un objeto mágico por 1. Eliminar este efecto requiere gastar una acción y emplear 1 chi (un uso de una habilidad mágica si tiene magia innata). 
 
-<u>Contrahechizo</u> (Rango I):
+<u>Contrahechizo</u> (Rango I): Como reacción empleable 3 veces al día puede contrarrestar un hechizo enemigo de rango I sin la necesidad de tirar. Esta habilidad solo puede emplearse si está en posición defensiva y para contrarrestar un hechizo de rango superior debe emplear un uso adicional por cada rango por encima de 1. Puede defenderse de hechizos con un tiro de magia modificado el rango más alto entre sus hechizos de magia protectora y su resistencia mágica.
 
-<u>Armadura mágica</u> (Rango II):
+<u>Armadura mágica</u> (Rango II): Tres veces al día empleando 2 acciones puede aumentar sus resistencias al daño físico y mágico por 3 durante 3 rondas (para que permanezca activa más rondas debe mantener la concentración).
 
-<u>Eliminar magia</u> (Rango II, requiere *disrupción*):
+<u>Eliminar magia</u> (Rango II, requiere *disrupción*): Puede emplearse 3 veces al día, cuesta 2 acciones y te permite eliminar los efectos de una habilidad mágica pasiva de rango II o menos que tenga activa tu objetivo (este puede defenderse si tiene la habilidad contrahechizo). 
 
-<u>Absorber magia</u> (Rango III, requiere *eliminar magia*):
+<u>Absorber magia</u> (Rango III, requiere *eliminar magia*): Tres veces al día empleando 3 acciones puede drenar el chi de un objeto mágico para recuperar sus habilidades mágicas, anulando sus propiedades durante un día y recuperando un uso de un hechizo de rango III o menos (V o menos si tiene la habilidad *disyunción mágica*). Cada vez que impacte con *eliminar magia* el objetivo reduce su reserva de chi por 1 o pierde un uso de la habilidad innata con menor rango que tenga.
 
-<u>Retener persona</u> (Rango III):
+<u>Retener persona</u> (Rango III): Puede emplearse 3 veces al día, cuesta 2 acciones y haces un ataque mágico contra una criatura el cual agarrará en caso de éxito. Mientras tu objetivo permanezca agarrado por esta habilidad no podrá emplear habilidades mágicas y puedes emplear una acción para moverla 15 pies en cualquier dirección (mantenerla agarrada requiere mantener la concentración).
 
-<u>Aura antimágica</u> (Rango IV, requiere *armadura mágica*):
+<u>Rebotar magia</u> (Rango IV, requiere *contrahechizo*): Obtienes 3 usos adicionales de *contrahechizo* y al contrarrestar exitosamente un hechizo o defenderte existosamente de él una vez por ronda puedes hacer que afecte a un objetivo diferente de tu elección (se empleará el tiro del objetivo que te atacó). 
 
-<u>Disyunción mágica</u> (Rango V, requiere *eliminar magia*):
+<u>Aura antimágica</u> (Rango IV, requiere *armadura mágica*): Puede emplearse 2 veces al día, cuesta 2 acciones y al activar esta habilidad formas un aura de radio 15 pies que anula toda la magia, impidiendo que otras criaturas puedan lanzar hechizos y eliminando las propiedades de todos los objetos que utilicen chi (esto te incluye a ti también). No obstante, aún es posible emplear habilidades innatas en un aura antimágica creada de esta manera.
 
-<u>Aprisionar</u> (Rango V, requiere *retener persona*):
+<u>Disyunción mágica</u> (Rango V, requiere *eliminar magia*): Una vez al día puedes emplear 2 acciones para eliminar todas las habilidades mágicas que tenga tu objetivo, y en el caso que no tenga ninguna reducirá su reserva de chi a 0 (si no tiene reserva de chi y solo habilidades innatas entonces las perderá todas). Recibes 2 usos adicionales de *eliminar magia* y esta habilidad ahora puede anular hechizos pasivos de hasta rango V.
+
+<u>Aprisionar</u> (Rango V, requiere *retener persona*): Una vez al día empleando un ritual de 2 turnos puedes encerrar a una criatura incapacitada en un demiplano accesible solo por ti. El demiplano solo puede ser accedido por ti y está siempre afectado por un *aura antimágica* y si la criatura encerrada muera resucitará ahí de inmuediato.
 
 ### Magia temporal
 
 <u>Premonición</u> (Rango I): Como reacción empleable 3 veces al día puedes repetir un tiro de su elección y quedarte con el resultado que más le conviene o recibir la habilidad *esquiva asombrosa* durante una ronda.
 
-<u>Alteración temporal</u> (Rango I):
+<u>Alteración temporal</u> (Rango I): Tres veces al día empleando 2 acciones puedes alterar el tiempo en una burbuja de 5 pies, restaurando objetos a su estado anterior eliminando todos los daños o a un estado futuro, reduciendo así su eficacia por 1. No se pueden afectar a seres orgánicos con esta habilidad.
 
 <u>Desplazamiento</u> (Rango II): Puede emplearse 3 veces al día como reacción para evitar automáticamente un ataque, pero solo una única vez por ronda. También puedes emplear un uso de esta habilidad para impactar a una criatura que haya empleado *desplazamiento* para evadir un ataque.
 
@@ -125,16 +127,16 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Ralentizar</u> (Rango II): Puede emplearse 3 veces al día, cuesta 2 acciones y creará una burbuja de 20 pies de radio que *ralentizará* a todas las criaturas en su área. 
 
-<u>Visión</u> (Rango III, requiere *premonición*): 1/día
+<u>Visión</u> (Rango III, requiere *premonición*): Tres veces al día empleando un ritual de 10 minutos la criatura puede recibir una visión sobre el pasado, presente o futuro, funcionando como la habilidad de magia temporal con el mismo nombre. Emplear esta habilidad innatamente no acarrea ninguna consecuencia negativa a la cordura.
 
-<u>Predecir movimiento</u> (Rango III, requiere *premonición*): Aumenta su cantidad de usos de *premonición* por 2 y sl emplear *premonición* recibirá ventaja en el nuevo tiro que realice.
+<u>Predecir movimiento</u> (Rango III, requiere *premonición*): Aumenta su cantidad de usos de *premonición* por 2 y sl emplear *premonición* recibirá ventaja en el nuevo tiro que realice. Si esta habilidad se emplea en un jugador este debe contestar sinceramente cuáles serán las acciones que realizará en su siguiente ronda.
 
-<u>Estasis</u> (Rango IV, requiere *alentar*): 2/día
+<u>Estasis</u> (Rango IV, requiere *alentar*): Dos veces al día empleando 2 acciones puede realizar un ataque mágico contra un objetivo a 30 pies, el cual se defenderá con su constitución y quedará paralizado en caso de éxito. Este efecto durará hasta que la criatura sea dañada o pierdas la concentración.
 
-<u>Revertir el tiempo</u> (Rango IV, requiere *alteración temporal*): 2/día
+<u>Revertir el tiempo</u> (Rango IV, requiere *alteración temporal*): Puede empelarse 2 veces al día, cuesta una acción y te volver a una posición anterior y recuperarte de todo el daño, heridas permanentes y efectos de estado que hayas sufrido este turno. Empleando un uso adicional puedes emplear esta habilidad en otra criatura, restaurándola de la misma manera y hasta resucitándola si ha muerto hace un turno.
 
-<u>Ataque retardado</u> (Rango IV, requiere *alteración temporal*): 3/día
+<u>Ataque retardado</u> (Rango IV, requiere *alteración temporal*): Tres veces al día como acción bonus la criatura puede retardar el efecto de un ataque, causando que el daño y las heridas permanentes tengan efecto de una a cuatro rondas más tarde a cambio que todas las heridas permanentes aumenten su nivel por un paso. Si has retardado 2 o más ataques de esta manera la criatura quedará aturdida durante una ronda.
 
-<u>Parar el tiempo</u> (Rango V, requiere *estasis*): 1/día
+<u>Parar el tiempo</u> (Rango V, requiere *estasis*): Una vez al día empleando 3 acciones puedes congelar el tiempo en una burbuja de 60 pies, paralizando a todas las criaturas que se encuentren en dicho espacio durante una ronda (puede extenderse más si mantienes la concentración). Una criatura con *estasis* o *revertir el tiempo* como habilidad innata puede gastar un uso para moverse con normalidad y esta habilidad no afectará a criaturas que tengan activa un *aura sacra* o un *aura antimágica*.
 
-<u>Visión futura</u> (Rango V, requiere *predecir movimiento*): pasiva
+<u>Visión futura</u> (Rango V, requiere *predecir movimiento*): Recibes la habilidad *visión futura* de manera pasiva y aumentas tu cantidad de usos de *premonición* y *predecir movimiento* por 2.

@@ -17,7 +17,7 @@ Obtienes Resistencia 2 a daño físico.
 
 ## Rango II
 
-Incrementa tu FUE Por 1.
+Incrementa tu FUE por 1.
 
 <u>Rasgo monstruoso</u> (pasiva): Tienes 3 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html) para gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2 PT), garras (1 PT), ataques infundidos (2 PT), y armadura natural (1 PT). 
 
@@ -41,7 +41,7 @@ Incrementa tu CON por 1.
 
 - **Samsotiq**: Tus garras hacen +2 daño base. Tienes sangre ácida, la cual hace 1 daño ácido a las criaturas que te hagan daño con ataques naturales y causa que las armas que te hieran reduzcan su efectividad por 1.
 - **Kosnaskye**: Todas las criaturas a menos de 15 pies están [enfermadas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Incrementa tu resistencia a enfermedades y veneno por 4.
-- **Shebatoth**: Eres capaz de lanzar un hechizo de rango II o menos sin la necesidad de gastar chi hasta tres veces al día. Alternativamente puedes recibir una habilidad nueva de rango II o menos perteneciente a otra rama de magia arcana u ocultismo.
+- **Shebatoth**: Eres capaz de lanzar un hechizo de rango II o menos de manera innata.
 - **Tempramentik**: Recibes una acción de movimiento adicional al turno y no puedes ser flanqueado.
 - **Ichobal**: Tus ataques hacen +2 daño necrótico. El daño necrótico te sana vitalidad como si fueses un no-muerto y te recuperas 2 vitalidad al hacer daño con un ataque.
 - **Kurungor**: Aumenta tu tamaño por un paso, llegando como máximo a tamaño gigante.
