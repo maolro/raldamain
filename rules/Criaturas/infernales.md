@@ -1,3 +1,7 @@
+---
+title: Inferna
+---
+
 ## Spator (nivel 6)
 
 **PV:** 11			**VT:** 13	 		**DEF:** 8 (natural 4, resistencia 4)
@@ -130,6 +134,8 @@
 
 ## Vassagis (nivel 10)
 
+Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Armadura natural I, Reflejos III, (Aguijón I)
+
 **PV:** 			**VT:** 	 		**DEF:** 
 
 **FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
@@ -137,8 +143,6 @@
 ------
 
 **Talentos:** 
-
-Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Armadura natural III, Reflejos I, Aguijón I
 
 **Resiste:** 
 
@@ -167,6 +171,8 @@ Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Ar
 **Tácticas:** 
 
 ## Osyloth (nivel 12)
+
+Infernal V (vuelo mágico, rayo de energía, muro de energía, tormenta de chi, meteoro de chi), Mente desencadenada II, Magia innata (salto espacial, ataque mágico empoderado, inflamar emociones, armadura mágica, contrahechizo, acelerar, desplazamiento, ancla dimensional, aura emocional)
 
 **PV:** 			**VT:** 	 		**DEF:** 
 
@@ -204,6 +210,8 @@ Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Ar
 
 ## Melabranche (nivel 14)
 
+Infernal VI (vuelo, tamaño superior, fusión ígnea, mejora antimágica, salto espacial, rayo de energía, muro de energía, tormenta de chi, bomba de chi), Cadenas V, (Aguijón II, Garras I), Armadura natural IV
+
 **PV:** 			**VT:** 	 		**DEF:** 
 
 **FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
@@ -239,6 +247,8 @@ Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Ar
 **Tácticas:** 
 
 ## Nergeth (nivel 16)
+
+Infernal VI (miembros adicionales 2, tamaño superior, fusión ígnea, mejora chupavidas, armadura mágica, inflamar emociones, aura emocional, asalto psíquico, salto dimensional), Filos cortantes V, (Filos perforantes II), Combate doble III, Armadura natural III
 
 **PV:** 			**VT:** 	 		**DEF:** 
 
@@ -276,6 +286,8 @@ Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Ar
 
 ## Puragaus (nivel 18)
 
+Infernal VI (tamaño superior 2, fusión ígnea, fusión atronadora, rayo de energía, ataque mágico mejorado, desastre natural, muro de energía, tormenta de chi), Golpe V, (Mordisco II), Armadura natural V, Ira IV
+
 **PV:** 			**VT:** 	 		**DEF:** 
 
 **FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
@@ -311,6 +323,8 @@ Infernal IV (tormenta de chi, cambiar aspecto, muro de energía), Garras III, Ar
 **Tácticas:**
 
 ## Exar (nivel 20)
+
+Infernal VI (tamaño superior, vuelo mágico, fusión ígnea, fusión chupavidas, rayo de energía, muro de energía, ataque mágico empoderado, tormenta de chi, desastre natural), Mente desencadenada IV, Magia innata (armadura mágica, aura antimágica, retener persona, meteoro de chi, inflamar emociones, aura emocional, sugesión, geas, esclavizar, salto dimensional, prisa, premonición), Garras IV (Tentáculo II).
 
 **PV:** 			**VT:** 	 		**DEF:** 
 
