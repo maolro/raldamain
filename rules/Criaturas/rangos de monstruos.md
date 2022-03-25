@@ -210,17 +210,17 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 ### Celestial
 
-<u>Rango I:</u>
+<u>Rango I:</u> Recibe resistencia 2 al daño físico, inmunidad al veneno, enfermedades, efectos mentales y daño radiante además de resistencia al daño necrótico igual a su rango + 1. La criatura desprenderá luz brillante en un radio de 20 pies de manera pasiva y se regenera 1 vitalidad al principio de su turno.
 
-<u>Rango II:</u>
+<u>Rango II:</u> Aumenta su CAR por 1 y recibe *sentido del mal* a una distancia máxima de 60 pies. Su aura de luz se vuelve capaz de disipar la oscuridad mágica además de cegar a las criaturas sensibles a la luz. Todos sus ataques físicos infligen +2 daño radiante y recibe un hechizo innato de rango I, el cual infligirá daño radiante en el caso que pertenezca a la rama de evocación. Todo el espacio en un radio de 30 pies cuenta además como tierra consagrada y todos sus ataques físicos cuentan como si estuvieran hechos de plata celestial, incrementando su daño base por 2.
 
-<u>Rango III: </u>
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 1, recibe 3 PT para gastar en mejoras además de un hechizo innato adicional de rango II o menos. Obtiene además la habilidad *conexión vital* y podrá sanar 1d4 + SAB vitalidad o 1 + SAB PV al emplear primeros auxilios con dicha habilidad.
 
-<u>Rango IV:</u>
+<u>Rango IV:</u> Aumenta su SAB por 1 y obtiene un hechizo innato adicional de rango III o menos además de una cantidad de usos de *milagro de restauración* igual a su rango - 2. Todos los demás celestiales y adoradores de la Hueste Celestial que se encuentren a 60 pies recibirán ventaja en sus tiros de ataque (no se acumula con *guerrero de la fe* o *tierra consagrada*) y en caso que ya los tengan obtienen los efectos de *hueste divina*.
 
-<u>Rango V:</u>
+<u>Rango V:</u> Aumenta sus resistencia al daño físico por 1 y a la magia por 3, aumenta su regeneración por 1 y recibe de *visión verdadera* a una distancia máxima de 80 pies. Mientras tenga activa su aura de luz todas las criaturas en su radio de 30 pies se sanan 1 vitalidad al principio de su turno (1 PV si están al máximo) y todas las criaturas abisales o infernales sufren 2 daño radiante. Recibe también un hechizo innato adicional de rango IV o menos.
 
-<u>Rango VI:</u>
+<u>Rango VI:</u> Aumenta su CON por 1, obtiene 3 PT adicionales y recibe un hechizo innato adicional de rango V o menos. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Obtiene también la habilidad *sanador supremo*, incrementando los PV y Vitalidad que sana por 1d4 y permitiéndole hacer un milagro de restauración una vez al día
 
 ### Infernal
 
@@ -228,7 +228,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango II:</u> Aumenta su CAR por 1 y recibe *visión infernal* hasta una distancia máxima de 60 pies. Recibe además ventaja en todos sus tiros de ataque y defensa hechos contra abisales, celestiales y espíritus caóticos además de sus adoradores (puede obtener esta ventaja contra otras criaturas si se lo ordena un demonio superior). Obtiene un hechizo innato adicional de rango I o menos y sus ataques físicos cuentan como si fueran de hierro frío para los propósitos de resistencias.	
 
-<u>Rango III:</u> Aumenta su resistencia al daño físico por 2 y al daño mágico por 2. Una de sus armas recibe una mejora de coste igual a 3 créditos o menos y obtiene un hechizo innato adicional de rango II o menos. Recibe también 3 PT adicionales para gastar en mejoras-
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 2 y al daño mágico por 2. Una de sus armas recibe una mejora de coste igual a 3 créditos o menos y obtiene un hechizo innato adicional de rango II o menos. Recibe también 3 PT adicionales para gastar en mejoras.
 
 <u>Rango IV:</u> Aumenta su INT por 1 y recibe un hechizo innato adicional de rango III o menos. Todos los demás demonios y adoradores de Sek-Tebos que se encuentren a 60 pies recibirán ventaja en sus tiros de ataque (no se acumula con *guerrero de la fe* ni el dado de ventaja que recibe a rango II). También es capaz de activar la habilidad *guardián de la fe* durante una cantidad de rondas igual a su rango + 1 con la variación que puede incrementar 2 estadísticas de su elección.
 
@@ -238,17 +238,27 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 ### Abisal
 
-<u>Rango I:</u> Recibe resistencia 2 a daño físico, resistencia igual a su rango + 1 al daño necrótico e inmunidad a venenos, enfermedades y efectos mentales. Obtiene además 3 PT para gastar en mejoras además de la habilidad *aura antinatural*, afectando solo a criaturas que no tengan ninguna locura.
+<u>Rango I:</u> Recibe resistencia 2 a daño físico, resistencia igual a su rango + 1 al daño necrótico e inmunidad a venenos, enfermedades y efectos mentales. Obtiene además 3 PT para gastar en mejoras además de la habilidad *aura antinatural*, afectando solo a criaturas que no tengan ninguna locura. Si tiene rangos en Ira o Mente desencadenada puede saltarse directamente el rango III, obteniendo de inmediato el rango IV.
 
-<u>Rango II:</u> Aumenta su FUE por 1, recibe *visión del vacío* y sus armas reciben una mejora de coste equivalente a 3 créditos o m. Recibe un hechizo innnato adicional de rango I o menos y cada vez que impacte con un ataque infectará al objetivo con *plaga abisal*.
+<u>Rango II:</u> Aumenta su FUE por 1, recibe *visión del vacío* y sus armas reciben una mejora de coste equivalente a 3 créditos o menos. Recibe un hechizo innato adicional de rango I o menos y cada vez que impacte con un ataque infectará al objetivo con *plaga abisal*.	
 
 <u>Rango III:</u> Aumenta su resistencia al daño físico por 1 y recibe 3 PT además de un hechizo innato adicional de rango II o menos. Obtiene también la habilidad *mirada terrorífica* y todas las criaturas que estén afectadas por dicha habilidad en un área de 30 pies reducirán su cordura por 1 al principio de su turno (la reducción a la cordura escala con el nivel de miedo). 
 
 <u>Rango IV:</u> Aumenta su CON por 1 y recibe un hechizo innato adicional de rango III o menos. Todos sus aliados abisales a 60 pies entran en un estado de ira sobrenatural, otorgándoles ventaja en sus tiros de ataque y defensa (no se acumula con guerrero divino). La criatura puede escoger también un señor del caos al que venerar, recibiendo una de las siguientes habilidades:
 
+- **Ayanuu:** La criatura es elegida por Ayanuu, la entidad primigenia del caos y el conocimiento prohibido. La criatura recibe las habildiades *duelo psíquico* y *horror onírico* además que todos sus hechizos reciben la mejora *mental* propia de la habilidad *conocimiento arcano*.
+- **Ekdavor:** La criatura es elegida por Ekdavor, la entidad primienia de la guerra, la dominación y los espíritus oscuros. La criatura recibe la habilidad *niebla de pesadillas* además que puede transormarse en una criatura incorpórea durante una cantidad de rondas igual su rango de ascendencia abisal, pudiendo poseer a otras criaturas en dicha forma como si tuviera la habilidad *posesión*.
+- **Gulmaht:** La criatura es elegida por Gulmaht, la entidad primigenia del apocalipsis y el abismo. Aumenta su resistencia al daño físico y la magia por 2 además de volverse capaz de activar la habilidad *guardián de la fe* durante una cantidad de rondas igual a su rango + 1 con la variación que puede incrementar 2 estadísticas de su elección. Todos sus hecizos reciben la mejora *empoderado* propia de *conocimiento arcano*.
+- **Shade:**
+
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además de recibir 3 usos de *paso abisal*. Obtiene también la habilidad *aura de caos* y es capaz de emplear de manera innata un hechizo de rango IV o menos.
 
-<u>Rango VI:</u> Aumenta su DES por 1, obtie y recibe un hechizo innato adicional de rango V o menos. 
+<u>Rango VI:</u> Aumenta su DES por 1, obtiene 3 PT adicionales y recibe un hechizo innato adicional de rango V o menos. Recibe la habilidad *aura sacra* y recibe una habilidad adicional según el señor del caos al que venera tal como se indica a continuación:
+
+- **Ayanuu:**
+- **Ekdavor:**
+- **Gulmaht:**
+- **Shade:**
 
 ### Onírica
 

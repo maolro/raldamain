@@ -24,6 +24,18 @@
 
 **Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
 
+## Chasteneth, familiar abisal (nivel 4)
+
+Pequeños servidores del abismo, los Chasteneth actúan típicamente como familiares para hechiceros con el insidioso objetivo de corromperlos progresivamente para conducirles a la locura. Son físicamente muy débiles y basan la mayoría de sus habilidades en apoyar a su amo y zafarse del combate.
+
+Abisal II (tamaño inferior, vuelo, invisibilidad, teletransporte, detectar pensamientos), Mente desencadenada I, Magia innata (asalto psíquico, prisa, alterar emociones, armadura mágica)
+
+## Khutul (nivel 4)
+
+Los soldados rasos de las colosales hordas abisales, los Khutul disfrutan destruyendo las grandes obras de la humanidad y dejando nada más que ruinas a su paso. Su método de asalto se basa en agarrar a sus objetivos con sus tentáculos corrosivos y luego devorarlos poco a poco, condenando a sus víctimas a una muerte lenta y dolorosa. 
+
+Abisal II (explosión, drenar sangre, mejora corrosiva, rayo mágico), Tentáculo II, Mordisco I, Armadura natural I
+
 ## Samsotiq (nivel 6)
 
 **PV:** 9			**VT:** 11	 		**DEF:** 4
@@ -58,13 +70,27 @@ Garras II, (Mordisco I), Reflejos I, Abisal II (aliento, corrosiva, salto espaci
 
 **Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
 
+## Dispator, demonio maldito (nivel 6)
+
+Formados a partir de demonios corrompidos por las fuerzas del abismo, los Dispator buscan acabar con las fuerzas del orden que antaño sirvieron y corromper a los fieles servidores de Sek-Tebos. Son típicamente creados a partir de demonios de la categoría Spator y aún conservan parte de las habilidades que tuvieron como infernales.
+
+Para representar estadísticas de otros demonios corrompidos por el abismo solo hay que sustituir sus rangos de origen infernal por origen abisal, haciendo las adecuadas sustituciones según sea necesario y modificando sus habilidades mágicas para que se adecuen más al abismo.
+
+Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto espacial, armadura mágica), Alabardas II, (Garras I), Ira I, Armadura natural II. 
+
 ## Alzebun, los famélicos (nivel 8)
 
-(Mordisco II), Tentáculos IV,  Abisal III (tamaño superior, cieno, asalto psíquico, armadura mágica), Armadura natural II
+(Mordisco II), Tentáculos IV,  Abisal III (tamaño superior, cieno, mejora chupavidas, asalto psíquico, armadura mágica), Armadura natural II
 
 ## Kosnaskye (nivel 10)
 
-Garras IV, (Aguijón II), Abisal IV (tamaño superior, miembros adicionales, movimiento adicional, foco Gulmaht, asalto psíquico, sobrecarga mental, acelerar), Armadura natural III
+Garras IV, (Aguijón II), Abisal IV (tamaño superior, miembros adicionales, movimiento adicional, mejora corrosiva, foco Gulmaht, asalto psíquico, sobrecarga mental, acelerar), Armadura natural III
+
+## Ormuzeg, esclavista abisal (nivel 12)
+
+Uno de los abisales más temidos en la ciudadela, los Ormuzeg capturan a humanos y se los llevan a las profundidades de la tierra para transformarlos en abisales, condenándolos a un destino peor que la muerte. Emplean sus habilidades mágicas y su gran fuerza física para dominar a sus víctimas e impedir que puedan resistirse.
+
+Abisal IV (tamaño superior, teleportación, ferocidad, asalto psíquico, sobrecarga mental, armadura mágica, foco Ekdavor), Magia innata (geas, sugestión, retener persona), Golpe V, (Aguijón II), Armadura natural II
 
 ## Shebototh (nivel 12)
 
@@ -72,17 +98,16 @@ Abisal V (miembros adicionales, desplazamiento, teleportación, asalto psíquico
 
 ## Vraukai (nivel 14)
 
-Abisal (cieno, cambiaformas, visión periférica, ), Tentáculo V,  (Aguijón II),  
+Abisal V (cieno, cambiaformas, visión periférica, asalto psíquico, mejora corrosiva, detectar pensamientos, alterar memorias, sobrecarga mental, foco Ekdavor), Tentáculo V, (Aguijón II), Armadura natural II, Reflejos III
 
 ## Tempramentik, diez caras (nivel 16)
 
-
+Abisal VI (tamaño superior, vuelo mágico, visión periférica, miembros adicionales, rayo de energía, ataque mágico empoderado, muro de energía, tormenta de chi, bomba mágica, foco Gulmaht), Mente desencadenada IV, Hechizos innatos (salto espacial, contrahechizo, acelerar, ralentizar, desplazamiento, armadura mágica, retener persona, premonición, aura antimágica, intercambio espacial, predecir movimiento, visión futura)
 
 ## Kurungor (nivel 18)
 
-
+Abisal VI (tamaño superior 3, asalto psíquico, mejora material superior, sobrecarga mental, destrozar mente, armadura mágica, zona antimágica, foco Gulmaht), Golpe V, (Mordisco II, Tentáculo I), Armadura natural V, Ira IV
 
 ## Ichobal, señores del abismo (nivel 20)
 
-
-
+Abisal VI (miembros adicionales, regeneración, desplazamiento, teleportación, 5 hechizos innatos de cualquier tipo, foco de cualquier abisal), Mente desencadenada IV, Hechizos innatos (18 hechizos innatos de cualquier tipo)	

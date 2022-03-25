@@ -1,110 +1,14 @@
 ## Nekomata (nivel 4)
 
-**PV:** 			**VT:** 	 		**DEF:** 
-
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
-
-------
-
-
-
-****
-
-
-
-****
-
-**Tácticas:** 
+Celestial II (premonición), Reflejos I, Tamaño inferior, Garras I (sustituye ataque poderoso por ataque apuntado y parada por combate furtivo), Magia innata (crear ilusión, salto dimensional, desplazamiento)
 
 ## Okami (nivel 6) 
 
-**PV:** 			**VT:** 	 		**DEF:** 
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
-
-------
-
-
-
-****
-
-
-
-****
-
-**Tácticas:** 
 
 ## Yurei (nivel 6)
 
-**PV:** 			**VT:** 	 		**DEF:** 
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
-
-------
-
-
-
-****
-
-
-
-****
-
-**Tácticas:** 
 
 ## Haetae (nivel 8)
 
@@ -168,112 +72,17 @@
 - **Telaraña de vida** (2 acciones activar): Todas las criatuas a 30 pies de haetae se sanan 2 vitalidad al principio de su turno y pueden seguir luchando aunque se encuentren a 0 PV. Esta habildad durará 5 rondas o hasta que esta criatura pierda la concentración.
 - **Reforzar defensas:** Si haetae entra en posición defensiva y es impactado por un ataque reduce el daño que recibiría por 2. Esta habilidad no puede usarse si esta criatura es incapaz de defenderse.
 
-Alternativamente el Haetae puede perder las habilidades evasión y esquiva asombrosa para incrementar su tamaño por un paso, aumentando así su FUE y CON por 2, su alcance por 5 pies y sus PV y armadura natural por 1 a costa de reducir también DES por 1.
+Alternativamente el Haetae pue	de perder las habilidades evasión y esquiva asombrosa para incrementar su tamaño por un paso, aumentando así su FUE y CON por 2, su alcance por 5 pies y sus PV y armadura natural por 1 a costa de reducir también DES por 1.
 
 ## Malakhim (nivel 12)
 
-**PV:** 			**VT:** 	 		**DEF:** 
-
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
-
-------
-
-
-
-****
-
-
-
-****
-
-**Tácticas:** 
+Celestial V (vuelo, rayo mágico, muro de energía, tormenta de chi, ataque mágico superior), Filos cortantes V, (A distancia II), Armadura natural III
 
 ## Keruvim (nivel 16)
 
-**PV:** 			**VT:** 	 		**DEF:** 
-
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
-
-------
-
-
-
-****
-
-
-
-****
-
-**Tácticas:** 
+Celestial VI (vuelo mágico, tamaño superior, mejora antimágica, tamaño superior, rayo mágico, muro de energía, tormenta de chi, ataque mágico superior, desastre natural), Filos cortantes V, (A distancia II), Armadura natural IV, Magia innata (retener persona, acelerar, armadura mágica, meteoro de chi)
 
 ## Seraph (nivel 20)
 
-**PV:** 			**VT:** 	 		**DEF:** 
+Celestial VI (vuelo mágico, regeneración, mejora retornante, tamaño superior, rayo mágico, muro de energía, tormenta de chi, ataque mágico superior, desastre natural), Filos cortantes V, (A distancia II), Armadura natural IV, Magia innata (aura antimágica, acelerar, armadura mágica, meteoro de chi, infundir arma, retener persona, bomba de chi, inflamar emociones, aura emocional)
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
-
-------
-
-
-
-****
-
-
-
-****
-
-**Tácticas:** 
