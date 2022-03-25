@@ -32,6 +32,8 @@ Esta es una lista de las mejoras que se pueden aplicar a un arma. Pueden aplicar
 | Disparos a bocajarro  | Cargar el aire        | Usar cargar el aire consumirá todas tus balas y te cuesta una acción de turno completo. |
 | Puntería experta      | Rayo divino           |                                                              |
 
+<u>Fusión corrosiva</u> (Crédito 3): Tu arma está infundida con ácidos capaces de corroer metales y piel. Un arma con esta mejora hará +2 daño ácido al impactar y reducirá la defensa del objetivo por 1, provocándole una quemadura leve en el caso que reduzcas sus PV o su defensa haya sido reducida a 0.
+
 <u>Fusión ígnea</u> (Crédito 3): Tu arma está infundida con energía elemental de fuego. Un arma con esta mejora hará +2 daño fuego al impactar y provocará una quemadura al reducir los PV de tu objetivo. Si tienes la habilidad Armas infundidas de ascendencia de fuego el daño de fuego que causas incrementa por 1 y las quemaduras provocadas aumentarán su gravedad por 1, infligiendo una quemadura leve siempre que impacte. Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.
 
 <u>Fusión gélida</u> (Crédito 3): Tu arma está infundida con energía elemental de hielo. Un arma con esta mejora hará +2 daño de frío al impactar y al reducir los PV de tu objetivo lo ralentizará durante una ronda. Si tienes la habilidad Armas infundidas al infligir daño a los PV reduce la DES de tu objetivo por 1 durante una ronda. Si usas esta habilidad en un objetivo cuya destreza ya hayas reducido con esta habilidad puedes emplear tus ventajas para volver a reducir su DES por 1 o extender el efecto durante una ronda adicional. Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.

@@ -33,7 +33,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu SAB por 1. Aumenta tu cantidad máxima de acciones al turno por 1.
+Incrementa tu SAB por 1.
 
 <u>Sentido del mal</u> (pasiva): Detectas la presencia del mal en un aura 60 pies. Con esta habilidad identificas todas las criaturas, objetos y hechizos relacionados con el abismo, el infierno o espíritus malignos, conociendo su posición y fuerza aproximada. También eres capaz de notar cuando una criatura te miente intencionalmente como si tuvieses éxito en un tiro de *averiguar intenciones* (esta habilidad no funciona con criaturas que tengan la habilidad [*lengua del diablo*](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia infernal.html#rango-ii) o con criaturas no-muertas e incorpóreas).
 
@@ -43,7 +43,7 @@ Incrementa tu SAB por 1. Aumenta tu cantidad máxima de acciones al turno por 1.
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-<u>Aura de vida</u> (pasiva): Al activar tu aura de luz todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si se encuentran al máximo de vitalidad entonces recuperarán 1 PV cada turno (tú te sanarás también vitalidad . Todas las criaturas enemigas de la fe sufrirán 2 daño radiante cada ronda que permanezcan en el aura.
+<u>Aura de vida</u> (pasiva): Al activar tu aura de luz todas las criaturas que se encuentren en ella se sanan 1 Vitalidad al principio de su turno. Si se encuentran al máximo de vitalidad entonces recuperarán 1 PV cada turno (tú te sanarás también vitalidad y PV por esta habilidad). Todas las criaturas enemigas de la fe sufrirán 2 daño radiante cada ronda que permanezcan en el aura.
 
 <u>Ver la verdad</u> (pasiva): Tienes visión verdadera en un área de 80 pies, permitiéndote ver a través de [ilusiones](https://raldamain.com/rules/Rangos/Magia arcana/magia ilusoria.html) y detectar criaturas invisibles. Obtienes resistencia igual a tu rango contra [efectos fantasmales](https://raldamain.com/rules/Rangos/Magia arcana/magia ilusoria.html#rango-i).
 

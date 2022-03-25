@@ -75,7 +75,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Sugestión</u> (Rango II): Puede emplearse 3 veces al día, cuesta 2 acciones y hace un ataque mental contra el objetivo, volviéndolo más susceptible a tus órdenes en caso de éxito. Eso mejorará su actitud hacia ti por un paso y puedes pedirle que cumpla un favor por ti que no requiera gran sacrificio personal.
 
-<u>Sanador mental</u> (Rango II): Puede emplearse 3 veces al día, cuesta 2 acciones y eliminará un efecto de *sugestión* o *inflamar emociones* que afecte a un objetivo además de sanarle 3 puntos de cordura y restaurar una estadística mental que haya sido reducida por 1.
+<u>Sanador mental</u> (Rango II): Puede emplearse 3 veces al día, cuesta 2 acciones y eliminará un efecto de *sugestión* o *inflamar emociones* que afecte a un objetivo además de sanarle 3 puntos de cordura y restaurar una estadística mental que haya sido reducida por 1.	
 
 <u>Sobrecarga mental</u> (Rango III, requiere *asalto psíquico*): Como reacción empleable 3 veces al día puedes confundir a una criatura que hayas impactado exitosamente con un *asalto psíquico*. Reduce el coste de *asalto psíquico* por 1 acción y aumenta su cantidad de usos por 2.
 
@@ -89,9 +89,9 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Orden implantada</u> (Rango V, requiere *geas*): Tras afectar a un objetivo con *geas* tres veces al día puedes escoger que la orden implantada permanezca latente en su mente y se active en un momento posterior, lo cual se conoce como una orden implantada (no puedes implantar más de una orden en la misma criatura). Recibes un uso adicional de *geas*.
 
-<u>Esclavizar</u> (Rango VI, requiere *geas*): Una vez al día empleando 3 acciones puedes doblegar la mente de una criatura a tu voluntad, haciendo así un tiro de magia contra su inteligencia y en caso de éxito esta deberá obedecer todas tus órdenes mientras mantengas la concentración en ella. No necesitas mantener la concentración en una criatura esclavizada si has reducido su cordura a 0, haciendo así que el efecto sea indefinido.
+<u>Esclavizar</u> (Rango V, requiere *geas*): Una vez al día empleando 3 acciones puedes doblegar la mente de una criatura a tu voluntad, haciendo así un tiro de magia contra su inteligencia y en caso de éxito esta deberá obedecer todas tus órdenes mientras mantengas la concentración en ella. No necesitas mantener la concentración en una criatura esclavizada si has reducido su cordura a 0, haciendo así que el efecto sea indefinido.
 
-<u>Destrozar mente</u> (Rango VI, requiere *sobrecarga mental*): Tres veces al día empleando 2 acciones puedes hacer un devastador ataque mental contra un objetivo. Esta habilidad funciona como una *sobrecarga mental* que inflige 1d6 + INT daño a la cordura y en el caso que logres reducirla a 0 tu objetivo reducirá sus estadísticas mentales a -4, perdiendo todos sus rangos de las categorías de ciencia, social, religión, elementalismo y magia arcana. Recibes 2 usos adicionales de *asalto psíquico* y *sobrecarga mental*.
+<u>Destrozar mente</u> (Rango V, requiere *sobrecarga mental*): Tres veces al día empleando 2 acciones puedes hacer un devastador ataque mental contra un objetivo. Esta habilidad funciona como una *sobrecarga mental* que inflige 1d6 + INT daño a la cordura y en el caso que logres reducirla a 0 tu objetivo reducirá sus estadísticas mentales a -4, perdiendo todos sus rangos de las categorías de ciencia, social, religión, elementalismo y magia arcana. Recibes 2 usos adicionales de *asalto psíquico* y *sobrecarga mental*.
 
 ### Magia protectora
 
