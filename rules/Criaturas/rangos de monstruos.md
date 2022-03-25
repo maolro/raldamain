@@ -36,13 +36,43 @@ Realizar un ataque con una garra cuesta una acción, tiene un alcance de 5 pies 
 
 Realizar un ataque con un golpe cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño contundente al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura(1d8, 1d10, 2d6 y 2d8 respectivamente).
 
+<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *combate salvaje* y *secuencia de ataques*. Recibe un bonificador a sus tiros de ataque con unigual a su rango.
+
+<u>Rango II:</u> Recibe las habilidades *concusión* y *maza oscilante* además de un rango adicional en otro ataque natural de su elección.
+
+<u>Rango III:</u> Aumenta su probabilidad de crítico a 19-20. Recibe las habilidades *carga poderosa* y *golpe destructor*.
+
+<u>Rango IV:</u> Recibe las habilidades *romper escudos* y *romper el suelo* además de un rango adicional en otro ataque natural de su elección.
+
+<u>Rango V:</u> Aumenta su probabilidad de crítico a 18-20 y su máximo de acciones por 1. Recibe las habilidades *golpe fulminante* y *ataque despiadado*.
+
 ### Tentáculo
 
-Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 10 pies y enredará al objetivo al impactar. 
+Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 10 pies e inflige 1d4 + FUE daño contundente al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura(1d6, 1d8, 1d10 y 2d6 respectivamente). Todas las maniobras de combate hechas con un tentáculo cuestan una acción en lugar de 2.
+
+<u>Rango I:</u> Obtiene las habilidades *enredar*, *parada* y *secuencia de ataques*. Recibe un bonificador a sus tiros de ataque con un tentáculo igual a su rango.
+
+<u>Rango II:</u> Recibe las habilidades *ataque circular* y *ajustar alcance*.
+
+<u>Rango III:</u> Aumenta su probabilidad de crítico a 19-20 y recibes las habilidades *agarre superior* y *desviar proyectiles*.
+
+<u>Rango IV:</u> Recibe las habilidades *escudo humano* y *cadena serpenteante* además de un rango adicional en otro ataque natural de su elección. Al impactar a un objetivo enredado puede causarle los efectos de *golpe destructor*.
+
+<u>Rango V:</u> Aumenta su probabilidad de crítico a 18-20 y su máximo de acciones por 1. Recibe las habilidades *ahorcar*, *forma defensiva* y *reposicionar*.
 
 ### Aguijón
 
-Realizar un ataque con un tentáculo cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño perforante al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura(1d8, 1d10, 2d6 y 2d8 respectivamente).
+Realizar un ataque con un aguijón cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño perforante al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura(1d8, 1d10, 2d6 y 2d8 respectivamente).
+
+<u>Rango I:</u> Obtiene las habilidades *ataque apuntado*, *combate furtivo* y *secuencia de ataques*. Recibe un bonificador a sus tiros de ataque con un aguijón igual a su rango.
+
+<u>Rango II:</u> Recibe las habilidades *finta* además de un rango adicional en otro ataque natural de su elección. Recibe gratuitamente la mejora *veneno*.
+
+<u>Rango III:</u> Aumenta su probabilidad de crítico a 19-20. Recibe las habilidades *reposicionar* y puedes emplear la habilidad *golpe destructor* al impactar con un *ataque apuntado*.
+
+<u>Rango IV:</u> Recibe las habilidades *ataque saltarín* y *buscar apertura* además de un rango adicional en otro ataque natural de su elección.
+
+<u>Rango V:</u> Aumenta su probabilidad de crítico a 18-20 y su máximo de acciones por 1. Recibe las habilidades *ataque vital* y *ataque oportunista*.
 
 ### Armadura natural
 
@@ -152,7 +182,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango I:</u> Recibe resistencia 2 al daño físico y 3 PT para gastar en mejoras. Todos sus ataques físicos incrementan su daño base por 2 y al impactar reduce la defensa del objetivo por 1 si lleva armadura metálica.
 
-<u>Rango II:</u> Aumenta su SAB por 1 y recibe vista a oscuras y olfato en un radio de 60 pies. La criatura obtiene los beneficios de las habilidades *terreno predilecto* y *terreno predilecto superior* propias de rastrear además de un hechizo innato adicional de rango I y recibe la siguiente habilidad:
+<u>Rango II:</u> Aumenta su SAB por 1 y recibe vista a oscuras y olfato en un radio de 60 pies. La criatura obtiene los beneficios de las habilidades *terreno predilecto* y *terreno predilecto superior* propias de rastrear además de un hechizo innato adicional de rango I y la siguiente habilidad:
 
 - **Armonizar terreno**: Una cantidad de veces al día igual a su rango - 1 empleando 3 acciones la criatura puede infundir un espacio de 100 pies con energía espiritual, transformando el entorno en su terreno predilecto. Un terreno armonizado cuenta como tierra consagrada para adoradores de la fe espiritual.
 
@@ -198,27 +228,27 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango II:</u> Aumenta su CAR por 1 y recibe *visión infernal* hasta una distancia máxima de 60 pies. Recibe además ventaja en todos sus tiros de ataque y defensa hechos contra abisales, celestiales y espíritus caóticos además de sus adoradores (puede obtener esta ventaja contra otras criaturas si se lo ordena un demonio superior). Obtiene un hechizo innato adicional de rango I o menos y sus ataques físicos cuentan como si fueran de hierro frío para los propósitos de resistencias.	
 
-<u>Rango III:</u> Aumenta su resistencia al daño físico por 2 y al daño mágico por 2. Una de sus armas recibe una mejora de coste igual a 3 créditos o menos y obtiene un hechizo innato adicional de rango II o menos. Recibe también resistencia igual a su rango + 1 contra un elemento adicional.
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 2 y al daño mágico por 2. Una de sus armas recibe una mejora de coste igual a 3 créditos o menos y obtiene un hechizo innato adicional de rango II o menos. Recibe también 3 PT adicionales para gastar en mejoras-
 
 <u>Rango IV:</u> Aumenta su INT por 1 y recibe un hechizo innato adicional de rango III o menos. Todos los demás demonios y adoradores de Sek-Tebos que se encuentren a 60 pies recibirán ventaja en sus tiros de ataque (no se acumula con *guerrero de la fe* ni el dado de ventaja que recibe a rango II). También es capaz de activar la habilidad *guardián de la fe* durante una cantidad de rondas igual a su rango + 1 con la variación que puede incrementar 2 estadísticas de su elección.
 
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además que puede emplear la habilidad *salto infernal* tres veces al día. Recibe un hechizo innato adicional de rango IV o menos y cuando entre en el estado de *guardián de la fe* todos sus aliados recibirán +1 FUE, +1 CON, +2 resistencia a daño físico y efectos mentales además que podrán revivir a 1 PV la primera vez que mueran.
 
-<u>Rango VI:</u> Aumenta su CON por 1 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también 	la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
+<u>Rango VI:</u> Aumenta su CON por 1 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
 
 ### Abisal
 
-<u>Rango I:</u>
+<u>Rango I:</u> Recibe resistencia 2 a daño físico, resistencia igual a su rango + 1 al daño necrótico e inmunidad a venenos, enfermedades y efectos mentales. Obtiene además 3 PT para gastar en mejoras además de la habilidad *aura antinatural*, afectando solo a criaturas que no tengan ninguna locura.
 
-<u>Rango II:</u>
+<u>Rango II:</u> Aumenta su FUE por 1, recibe *visión del vacío* y sus armas reciben una mejora de coste equivalente a 3 créditos o m. Recibe un hechizo innnato adicional de rango I o menos y cada vez que impacte con un ataque infectará al objetivo con *plaga abisal*.
 
-<u>Rango III:</u>
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 1 y recibe 3 PT además de un hechizo innato adicional de rango II o menos. Obtiene también la habilidad *mirada terrorífica* y todas las criaturas que estén afectadas por dicha habilidad en un área de 30 pies reducirán su cordura por 1 al principio de su turno (la reducción a la cordura escala con el nivel de miedo). 
 
-<u>Rango IV:</u>
+<u>Rango IV:</u> Aumenta su CON por 1 y recibe un hechizo innato adicional de rango III o menos. Todos sus aliados abisales a 60 pies entran en un estado de ira sobrenatural, otorgándoles ventaja en sus tiros de ataque y defensa (no se acumula con guerrero divino). La criatura puede escoger también un señor del caos al que venerar, recibiendo una de las siguientes habilidades:
 
-<u>Rango V:</u>
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además de recibir 3 usos de *paso abisal*. Obtiene también la habilidad *aura de caos* y es capaz de emplear de manera innata un hechizo de rango IV o menos.
 
-<u>Rango VI:</u>
+<u>Rango VI:</u> Aumenta su DES por 1, obtie y recibe un hechizo innato adicional de rango V o menos. 
 
 ### Onírica
 

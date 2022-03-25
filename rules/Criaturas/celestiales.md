@@ -1,38 +1,38 @@
 ## Nekomata (nivel 4)
 
-**PV:** 12 / 17			**VT:** 14		**DEF:** 5 / 9 (resistencia 3, armadura pétrea 4, armadura natural 2)
+**PV:** 			**VT:** 	 		**DEF:** 
 
-**FUE:** 4 	**DES:** 4	**CON:** 4	**INT:** 0	**SAB:** 4	**CAR:** 0
-
-------
-
-**Talentos:** Percepción +7, Atletismo +7, Heroísmo +7, Sigilo +7
-
-**Inmune:** Veneno, parálisis, dormir
-
-**Movimiento:** 30 pies
-
-**Resiste:** Necrótico 2, radiante 2
-
-**Acciones:** 4 
-
-****
-
-**Aura celestial**
-
-**Ataque furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse.
-
-****
-
-**Zarpa** (1 acción): +6, 1d6 + 4 cortante y 2 radiante. El objetivo tirará heroísmo contra +7 o le agarra con su mordisco, causándole sangrado y una herida permanente leve. La criatura afectada quedará enredada y todos los ataques de mordisco hechos contra ella contarán como golpes críticos.
-
-**Ataque destellante** (1 acción): Antes de atacar puede iluminar intensamente su cuerpo para difuicultar que sus objetivos se puedan defender. Un objetivo deberá tirar percepción contra +6 o no podrá defenderse del siguiente ataque que realice esta criatura.
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
 
 ------
 
-**Parada:** +6.
+**Talentos:** 
 
-Magia divina I, Reflejos I, Celestial I, Ataques naturales II
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
 
 ## Okami (nivel 6) 
 
