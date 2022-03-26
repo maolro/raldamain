@@ -142,6 +142,70 @@ Para representar estadísticas de otros demonios corrompidos por el abismo solo 
 
 Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto espacial, armadura mágica), Alabardas II, (Garras I), Ira I, Armadura natural II. 
 
+**PV:** 14			**VT:** 14 	 		**DEF:** 10
+
+**FUE:** 6 	**DES:** 4	**CON:** 6	**INT:** 1	**SAB:** 2	**CAR:** 1	
+
+----------------------------
+
+**Talentos:** Heroísmo +6, Av. Intenciones +5, Acrobacias +6
+
+**Resistencia:** Resistencia magica 3, necrótico 4, aturdimiento 3
+
+**Inmunidad:** Veneno, enfermedades y efectos mentales
+
+**Sentidos:** Visión del vacío 60 pies
+
+**Movimiento:** 25 pies 
+
+**Acciones:** 3
+
+----------------------
+
+**Regeneración:** Al principio de su turno recupera 2 vitalidad o 1 vida al turno.
+
+**Ferocidad:** Podrá seguir luchando aún cuando llegue a 0 PV durante 7 rondas estando fatigado. No recibirá heridas permanentes hasta que caiga a 7 PV
+
+**Resistir la muerte:** La primera vez que caiga por debajo de 0 PV volverá a 1 PV nuevamente.
+
+**Ira:** Durante las 7 primeras rondas de un combate Dispator estará en un estado de ira sobrenatural. Cuando este efecto acabe perderá 2 fuerza, 2 constitución y perderá 10 pies de movimiento 
+
+**Armadura mágica:** Durante las 3 primeras rondas del combate Dispator cuenta con los efectos de una armadura protectora. Cuando este efecto acabe reducirá su defensa y su resistencia mágica por 3.
+
+**Proteger aliados:** Aliados a 10 pies de él reciben un bonificador +2 a tiros defensivos.
+
+**Ajustar alcance:** Al comenzar su turno puede escoger entre aumentar el alcance de su alabarda a 15 pies recibiendo una desventaja adicional en defensa contra objetivos adyacentes, mantenerse en una postura neutra o reducir su alcance a 5 pies evitando así penalizadores defensivos contra enemigos adyacentes.
+
+**Aura antinatural:** Recibe ventaja en tiros de intimidar, persuasión y engaño, mientras que criaturas a 30 pies de ti tendrán desventaja en talentos relacionados con las estadísticas de sabiduría e inteligencia. 
+
+**Plaga abisal:** Al hacer ataques con garras puede transmitir la plaga abisal, la cual actuará como una enfermedad física con una gravedad de +7. Si vuelve a infectar con la plaga a una criatura ya infectada, subirá el nivel de la enfermedad por 1 nivel.
+
+**Mirada de locura:** Las criaturas en 30 pies pasan a estar espantadas y sufrirán 1 daño de cordura cada ronda.
+
+------------
+
+**Tridente (2 acciones):** +8, 1d8+6 perforante+2 fuego, alcance 10 pies. Al provocar daño a los PV producirá una quemadura leve.
+
+**Preparación contra cargas (1 acción):** Entra en una postura de preparación, pudiendo realizar un ataque contra una persona de su elección que entre en su área amenazada con +1d6 daño. Tras el primer ataque el estado de preparación contra cargas se anula.
+
+**Ataque lateral (3 acción):** Realizas un ataque contra hasta 3 criaturas que se encuentren a 5 pies de distancia entre si.
+
+**Garra (1 acción):** +7, 1d6+6 perforante+2 fuego. Recibe +1 a tiros de ataque por cada ataque consecutivo contra la misma criatura. Provoca quemaduras al hacer daño a los PV.
+
+**Ataque poderoso (+1 acción):** uno de tus ataques de garras tendrá +1d6 daño y provocará sangrado. 
+
+**Salto espacial (1 acción, 3/día):** Puede teletransportarse 30 pies en cualquier dirección.
+
+**Armadura mágica (2 acciones, 2/día):** Puede prolongar la duración de su armadura mágica por 3 rondas o dar tres rondas del efecto a una persona de su elección.
+
+----------------------
+
+**Parada:** +8, recibe -1d6 contra objetivos adyacentes.
+
+**Garras:** +7, 1d6+6 perforante al impactar.
+
+**Salto espacial (consume un uso):** Si se encuentra en posición defensiva puede usar salto espacial para evadir automáticamente un ataque una vez por ronda.
+
 ## Alzebun, los famélicos (nivel 8)
 
 (Mordisco II), Tentáculos IV,  Abisal III (tamaño superior, cieno, mejora chupavidas, asalto psíquico, armadura mágica), Armadura natural II
