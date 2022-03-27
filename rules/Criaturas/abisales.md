@@ -206,6 +206,10 @@ Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto 
 
 **Salto espacial (consume un uso):** Si se encuentra en posición defensiva puede usar salto espacial para evadir automáticamente un ataque una vez por ronda.
 
+----------------------------------------------------------------------------
+
+El Dispator es un buen combatiente tanto en grupo como en solitario, pudiendo abrumar a sus enemigos de numerosas maneras.
+
 ## Alzebun, los famélicos (nivel 8)
 
 (Mordisco II), Tentáculos IV,  Abisal III (tamaño superior, cieno, mejora chupavidas, asalto psíquico, armadura mágica), Armadura natural II
