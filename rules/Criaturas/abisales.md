@@ -208,7 +208,9 @@ Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto 
 
 ----------------------------------------------------------------------------
 
-El Dispator es un buen combatiente tanto en grupo como en solitario, pudiendo abrumar a sus enemigos de numerosas maneras.
+El Dispator es un buen combatiente tanto en grupo como en solitario, pudiendo abrumar a sus enemigos de numerosas maneras. Normalmente buscará combatir con un pequeño número de aliados que le apoyen y que se queden cerca suya, limitando sus movimientos al área que el es capaz de alcanzar.
+
+Cuando tenga aliados a su alcance siempre tratará de mantenerlos a 10 pies suyo dándoles cobertura con los movimientos erráticos de su tridente y sacando solamente a los que quiera usar como sacrificio o distracción. Al comenzar la batalla empleará a sus aliados para distraer a aquellos enemigos que parezcan tener gran fortitud física, yendo él personalmente a por aquellos mas frágiles para atacarlos con sus garras en secuencia buscando infectarlos gravemente con la plaga del abismo y sacarlos del combate lo mas pronto posible. En turnos posteriores y si no hay amenazas directas buscará aprovecharse de sus enemigos empleando su preparación contra cargas, aumentando el alcance de su tridente a 15 pies y atrayendo a los enemigos a su alcance haciendo un ataque lateral potenciado contra todos ellos.
 
 ## Alzebun, los famélicos (nivel 8)
 
