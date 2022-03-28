@@ -2,6 +2,14 @@
 title: Inferna
 ---
 
+## Diablillo (nivel 2)
+
+Infernal I, tamaño inferior, vuelo, Magia innata (crear ilusión, rayo de evocación), Reflejos I
+
+## Sabuesto infernal (nivel 4)
+
+Infernal I, Mordisco II, (Golpe I), Armadura natural I, tamaño superior
+
 ## Spator (nivel 6)
 
 **PV:** 11			**VT:** 13	 		**DEF:** 8 (natural 4, resistencia 4)

@@ -96,7 +96,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango II:</u> Aumenta su cantidad de acciones al turno por 1, su velocidad de salto por rango x 5 pies, su DES por 1 y es capaz de ver a través de las llamas y el humo sin dificultades. Obtiene además la capacidad de atacar con un aliento de fuego, el cual costará 2 acciones para activar, tiene un área de efecto de una línea de 30 pies o un cono de 15 pies y hará 1d6 + CON daño fuego. Para volver a usar el aliento hace falta esperar 4 rondas (puede emplear una acción para reducir el tiempo de espera por una ronda) y por cada aumento de tamaño que tenga el daño aumentará por 1d6 y el área de efecto por 15 pies si es un cono o 5 pies en horizontal y 15 en vertical si es una línea.
 
-<u>Rango III:</u> Incrementa su resistencia al daño físico por 1, obtiene inmunidad al daño fuego, pierde la vulnerabilidad al frío y recibe resistencia igual a su rango + 1 contra dicho elemento (sigue siendo vulnerable contra el frío estigio)(, se regenerará 1 vitalidad de manera pasiva cada ronda salvo que haya sufrido daño frío o se encuentre en un clima gélido y obtiene la siguiente habilidad:
+<u>Rango III:</u> Incrementa su resistencia al daño físico por 1, obtiene inmunidad al daño fuego, pierde la vulnerabilidad al frío y recibe resistencia igual a su rango + 1 contra dicho elemento (sigue siendo vulnerable contra el frío estigio), se regenerará 1 vitalidad de manera pasiva cada ronda salvo que haya sufrido daño frío o se encuentre en un clima gélido y obtiene la siguiente habilidad:
 
 - **Aura abrasadora**: La criatura desprende calor abrasador, infligiendo así 2 daño fuego a toda criatura que inicie su turno en un espacio a 20 pies de ella. Si dicha criatura lleva armadura metálica recibirá también una quemadura leve. El aura abrasadora se desactivará si la criatura entra en un entorno gélido, es sumergida en agua o sufre un ataque de área que inflija daño frío., volviendo a activarse tras una ronda cuando escape de dicha situación. Si se desactiva el aura abrasadora perderá también su resistencia al daño frío.
 
@@ -117,6 +117,20 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 <u>Rango IV:</u>
 
 <u>Rango V:</u>
+
+<u>Rango VI:</u>
+
+### Tierra
+
+<u>Rango I:</u> Aumenta su resistencia al daño físico por 2, aumenta el daño de sus ataques físicos por 1d6 además que estos empujan 10 pies al impactar y se regenera 1 vitalidad al turno si está en contacto con la tierra. Una vez por ronda puede emplear la habildiad *concusión* contra un objetivo que haya impactado con un ataque físico (si ya tiene esta habildiad puede ralentizar y reducir la defensa del objetivo por 2 al emplearla en un ataque). Obtiene también inmunidad a heridas permanentes hechas por armas que no sean contundentes y vulnerabilidad al daño trueno.
+
+<u>Rango II:</u> Incrementa su CON por 1, recibe *georradar* en un radio de 30 pies y aumenta sus velocidades de excavar y escalada por 15 pies. Obtiene también inmunidad a terreno difícil y recibe la capacidad de lanzar una gran roca empleando 2 acciones, la cual tiene un alcance de 60 pies y radio de salpicadura 5 pies e infligirá 2d6 + CON daño contundente al impactar. La piedra aumentará su radio de salpicadura por 5 pies y el daño por 1d6 por cada incremento de tamaño que tenga la criatura y para volver a emplear esta habilidad la criatura deberá esperar 4 rondas (puede emplear una acción para reducir el tiempo de espera por una ronda).
+
+<u>Rango III:</u> Incrementa su resistencia al daño físico por 3 y sus PV por un valor igual a su rango + 1. Si está en contacto con la tierra se regenera 1 punto adicional de vitalidad y cada vez que sea impactado por un arma que no sea contundente o hecha de un material superior esta reducirá su eficacia por 1 (esto le otorgará un penalizador -1 a tiros de ataque y daño). Recibe también inmunidad al daño perforante, cortante y contundente hecho por armas que no tengan la mejora *material superior* o la habilidad *golpe destructor*.
+
+<u>Rango IV:</u> Incrementa su FUE por 1, recibe un bonificador igual a su rango - 2 a sus tiros de ataque y defensa hechos con armas físicas y su daño base vuelve a aumentar por 1d6 y cada vez que impacte reducirá la defensa del objetivo por 2 (se acumula con *golpe destructor*). Adicionalmente, todos los enemigos que impacte con su roca quedarán agarrados por dicho efecto (tiran contra la FUE + rango de esta criatura para escapar) y recibe las habildiades *derrumbamiento* y *espinas de tierra* (esto afectará a la roca que lance).
+
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la 
 
 <u>Rango VI:</u>
 
@@ -186,11 +200,11 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 - **Armonizar terreno**: Una cantidad de veces al día igual a su rango - 1 empleando 3 acciones la criatura puede infundir un espacio de 100 pies con energía espiritual, transformando el entorno en su terreno predilecto. Un terreno armonizado cuenta como tierra consagrada para adoradores de la fe espiritual.
 
-<u>Rango III:</u> Aumenta su resistencia al daño físico por 1 y recibe un hechizo innato adicional de rango II o menos. Recibe ventaja en todos sus tiros de ataque y defensa si se mantiene en su terreno predilecto además de regenerarse 1 vitalidad al turno (2 vitalidad si tiene rango V o más). 
+<u>Rango III:</u> Aumenta su resistencia al daño físico por 1, recibe 3 PT adicionales y un hechizo innato adicional de rango II o menos. Recibe ventaja en todos sus tiros de ataque y defensa si se mantiene en su terreno predilecto además de regenerarse 1 vitalidad al turno (2 vitalidad si tiene rango V o más). 
 
 <u>Rango IV:</u> Aumenta su DES por 1 y todos sus ataques físicos aumentan su daño base por 2, su alcance por 5 pies y reducen un punto de defensa adicional por 1. Recibe un hechizo innato adicional de rango III o menos y puede emplear *animar plantas* una vez al día (dos veces a rango VI).
 
-<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3. Recibe un hechizo innato adicional de rango IV o menos, tres usos al día de la habilidad *puerta arbórea* y la habilidad *aura primigenia*.
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además de recibir 3 PT adicionales. Recibe un hechizo innato adicional de rango IV o menos, tres usos al día de la habilidad *puerta arbórea* y la habilidad *aura primigenia*.
 
 <u>Rango VI:</u> Aumenta su SAB por 1 y obtiene inmunidad a veneno, enfermedades y efectos mentales. Recibe un hechizo innato adicional de rango V o menos además de un uso diario de *furia de la naturaleza*. Incrementa su tamaño base por un paso y está rodeado de una masa vegetal que le otorga +6 PV y +2 DEF. Todos sus ataques físicos y su armadura natural cuentan como si estuvieran hechos de madera férrea, incrementando el daño base de nuevo por 2. 	
 
