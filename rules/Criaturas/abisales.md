@@ -88,7 +88,11 @@ __________________
 
 ____
 
-Esta pequeña criatura se dedicará a apoyar a sus aliados y estorbas a sus rivales antes que enfrascarse directamente en la batalla. Una vez comience el combate dará celeridad a 
+Esta pequeña criatura se dedicará a apoyar a sus aliados y estorbas a sus rivales antes que enfrascarse directamente en la batalla. Una vez comience el combate dará celeridad y armadura mágica a su aliado.
+
+## Sabueso abisal (nivel 4)
+
+Abisal I (tamaño superior), Mordisco II, (Golpe I), Armadura natural I, Ira I
 
 ## Khutul (nivel 4)
 
