@@ -18,11 +18,13 @@ title:
 
 ****
 
-**Explosión:** Cuando esta criatura muera infligirá 1d6 + 1 daño necrótico a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
+**Explosión:** Cuando esta criatura muera infligirá 1d6 + 1 daño fuego a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
 
 ------
 
 **Garras** (1 acción): +5, 1d6 cortante. Al infligir una herida permanente causa sangrado y puede desenganchar como acción bonus. 
+
+**Apuntar ataque** (1 acción): Aumenta su daño base por 4 e inflige una herida permanente leve si el objetivo tiene armadura ligera o inferior.
 
 ****
 

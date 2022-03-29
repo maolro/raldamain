@@ -36,7 +36,7 @@ Realizar un ataque con una garra cuesta una acción, tiene un alcance de 5 pies 
 
 Realizar un ataque con un golpe cuesta una acción, tiene un alcance de 5 pies e inflige 1d6 + FUE daño contundente al impactar. Este daño aumenta por un paso proporcional según cada incremento de tamaño que tenga la criatura(1d8, 1d10, 2d6 y 2d8 respectivamente).
 
-<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *combate salvaje* y *secuencia de ataques*. Recibe un bonificador a sus tiros de ataque con unigual a su rango.
+<u>Rango I:</u> Obtiene las habilidades *ataque poderoso*, *combate salvaje* y *secuencia de ataques*. Recibe un bonificador a sus tiros de ataque con igual a su rango.
 
 <u>Rango II:</u> Recibe las habilidades *concusión* y *maza oscilante* además de un rango adicional en otro ataque natural de su elección.
 
@@ -100,7 +100,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 - **Aura abrasadora**: La criatura desprende calor abrasador, infligiendo así 2 daño fuego a toda criatura que inicie su turno en un espacio a 20 pies de ella. Si dicha criatura lleva armadura metálica recibirá también una quemadura leve. El aura abrasadora se desactivará si la criatura entra en un entorno gélido, es sumergida en agua o sufre un ataque de área que inflija daño frío., volviendo a activarse tras una ronda cuando escape de dicha situación. Si se desactiva el aura abrasadora perderá también su resistencia al daño frío.
 
-<u>Rango IV:</u> Aumenta su CAR por 1, recibe un bonificador igual a si rango - 2 en todos los tiros de ataque con ataques físicos, sus ataques infligen 2 daño fuego adicional e infligen una quemadura leve (media se reducen PV o el objetivo lleva armadura metálica). Adicionalmente cuando haga un ataque de aliento todo el área afectado quedará recubierto por un *muro de fuego* durante una ronda.
+<u>Rango IV:</u> Aumenta su CAR por 1, recibe un bonificador igual a si rango - 2 en todos los tiros de ataque con ataques físicos, sus ataques infligen 2 daño fuego adicional e infligen una quemadura leve (media se reducen PV o el objetivo lleva armadura metálica). Adicionalmente cuando haga un ataque de aliento todo el área afectado quedará recubierto por un *muro de fuego* durante una ronda. Recibe una velocidad de vuelo igual a 30 pies, aumentando su velocidad de vuelo por dicha cantidad en el caso que ya la tenga.
 
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1, su resistencia mágica por un valor igual a su rango - 2, recibe *visión térmica* en un radio de 60 pies y las habilidades *evasión* y *reposicionar* (*evasión superior* si ya la tiene). Se regenerará también 1 PV y 1 vitalidad adicional por turno.
 
@@ -122,17 +122,17 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 ### Tierra
 
-<u>Rango I:</u> Aumenta su resistencia al daño físico por 2, aumenta el daño de sus ataques físicos por 1d6 además que estos empujan 10 pies al impactar y se regenera 1 vitalidad al turno si está en contacto con la tierra. Una vez por ronda puede emplear la habildiad *concusión* contra un objetivo que haya impactado con un ataque físico (si ya tiene esta habildiad puede ralentizar y reducir la defensa del objetivo por 2 al emplearla en un ataque). Obtiene también inmunidad a heridas permanentes hechas por armas que no sean contundentes y vulnerabilidad al daño trueno.
+<u>Rango I:</u> Aumenta su resistencia al daño físico por 2, aumenta el daño de sus ataques físicos por 1d6 además que estos empujan 10 pies al impactar y se regenera 1 vitalidad al turno si está en contacto con la tierra. Una vez por ronda puede emplear la habildiad *concusión* contra un objetivo que haya impactado con un ataque físico (si ya tiene esta habildiad puede ralentizar y reducir la defensa del objetivo por 2 al emplearla en un ataque). Obtiene también inmunidad a venenos, enfermedades y heridas permanentes hechas por armas que no sean contundentes y vulnerabilidad al daño trueno.
 
 <u>Rango II:</u> Incrementa su CON por 1, recibe *georradar* en un radio de 30 pies y aumenta sus velocidades de excavar y escalada por 15 pies. Obtiene también inmunidad a terreno difícil y recibe la capacidad de lanzar una gran roca empleando 2 acciones, la cual tiene un alcance de 60 pies y radio de salpicadura 5 pies e infligirá 2d6 + CON daño contundente al impactar. La piedra aumentará su radio de salpicadura por 5 pies y el daño por 1d6 por cada incremento de tamaño que tenga la criatura y para volver a emplear esta habilidad la criatura deberá esperar 4 rondas (puede emplear una acción para reducir el tiempo de espera por una ronda).
 
 <u>Rango III:</u> Incrementa su resistencia al daño físico por 3 y sus PV por un valor igual a su rango + 1. Si está en contacto con la tierra se regenera 1 punto adicional de vitalidad y cada vez que sea impactado por un arma que no sea contundente o hecha de un material superior esta reducirá su eficacia por 1 (esto le otorgará un penalizador -1 a tiros de ataque y daño). Recibe también inmunidad al daño perforante, cortante y contundente hecho por armas que no tengan la mejora *material superior* o la habilidad *golpe destructor*.
 
-<u>Rango IV:</u> Incrementa su FUE por 1, recibe un bonificador igual a su rango - 2 a sus tiros de ataque y defensa hechos con armas físicas y su daño base vuelve a aumentar por 1d6 y cada vez que impacte reducirá la defensa del objetivo por 2 (se acumula con *golpe destructor*). Adicionalmente, todos los enemigos que impacte con su roca quedarán agarrados por dicho efecto (tiran contra la FUE + rango de esta criatura para escapar) y recibe las habildiades *derrumbamiento* y *espinas de tierra* (esto afectará a la roca que lance).
+<u>Rango IV:</u> Incrementa su FUE por 1, su daño base vuelve a aumentar por 1d6 y cada vez que impacte reducirá la defensa del objetivo por 2 (se acumula con *golpe destructor*). Adicionalmente, todos los enemigos que impacte con su roca quedarán agarrados por dicho efecto (tiran contra la FUE + rango de esta criatura para escapar) y recibe las habildiades *derrumbamiento* y *espinas de tierra* (esto afectará a la roca que lance). Puede también emplear la habilidad *Ola de tierra* gastando 2 acciones sin la necesidad de tener reserva elemental, aumentando su movimiento a 60 pies y atacando a todas las criaturas de tamaño inferior que estén en su camino.
 
-<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la 
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia, fuego, frío, rayo y ácido por un valor igual a su rango - 2 además de perder su vulnerabilidad al daño trueno. Su radio del *georradar* aumenta por 30 pies y recibe ventaja en todos sus tiros de ataque y defensa mientras esté en contacto con la tierra además que una vez por ronda puede repetir un tiro de ataque o defensa.
 
-<u>Rango VI:</u>
+<u>Rango VI:</u> Aumenta su SAB por 1, su resistencia al daño físico y PV por 2 y su tamaño por un paso. Una vez al día puede emplear la habilidad *Terremoto* empleando 3 acciones además que una vez por ronda puede hacer un ataque elemental de tierra que inflige 2d6 + CON daño contundente en un radio de 10 pies o emplear la habilidad *control terrestre* en un radio de 60 pies. Obtiene también inmunidad a efectos mentales y si tiene rangos en Ira puede saltarse directamente el rango III.
 
 ### Tormenta
 
