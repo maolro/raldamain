@@ -46,7 +46,7 @@ Incrementa tu FUE por 1. Puedes añadir tu rango de magia elemental - 2 a tus at
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-<u>Elemento de equilibrio</u> (pasiva): Tu constitución es sólida como una roca. Obtienes resistencia contra [venenos](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), fuego, ácido y frío igual a tu rango. Incrementa además tus PV por un valor igual a tu rango de ascendencia – 2.
+<u>Elemento de equilibrio</u> (pasiva): Tu constitución es sólida como una roca. Obtienes resistencia contra [venenos](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), fuego, rayo, ácido y frío igual a tu rango. Incrementa además tus PV por un valor igual a tu rango de ascendencia – 2.
 
 <u>Georradar predictivo</u> (pasiva) El radio de tu georradar aumenta por 30 pies. No puedes ser sorprendido por criaturas que estén tocando el suelo y eres capaz de predecir sus movimientos, permitiéndote repetir una tirada de ataque o defensa una vez al turno y evitando que estos te pillen por sorpresa. Tu [prioridad](https://raldamain.com/rules/Reglas principales/prioridad.html) además aumenta por 2 si te encuentras en tu región vinculada.
 

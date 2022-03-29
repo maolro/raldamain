@@ -107,7 +107,7 @@ Al construir una criatura de un nivel determinado es posible sustituir un rango 
 
 ### Mejoras de 3 PT
 
-<u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 10 pies y aumenta su alcance por 5 pies. Cada aumento de tamaño aumenta además la Armadura natural por 1 y los PV base por 1. Esta mejora puede tomarse hasta un máximo de dos veces, pero la FUE y CON de la criatura no podrán exceder 9 (12 si tiene nivel 12 o más).
+<u>Tamaño superior:</u> Aumenta el tamaño de la criatura por 5 pies. Al aumentar su tamaño, la criatura aumenta su FUE y CON por 2, reduce su DES por 1, incrementa todos sus movimientos base por 5 pies y aumenta su alcance por 5 pies. Cada aumento de tamaño aumenta además la Armadura natural por 1 y los PV base por 1. Esta mejora puede tomarse hasta un máximo de dos veces, pero la FUE y CON de la criatura no podrán exceder 9 (12 si tiene nivel 12 o más).
 
 <u>Regeneración:</u> El cuerpo de la criatura se regenera fácilmente de heridas. Al principio de su turno, la criatura recupera 2 Vitalidad, y si está al máximo de Vitalidad se recupera 1 PV. Puedes emplear 1 PT adicional para que la criatura se sane +1 Vitalidad al turno y +1 PV si está al máximo de Vitalidad (máximo 5 vitalidad). Si has gastado 6 PT en esta habilidad la criatura recibe la capacidad de recuperar órganos perdidos de su cuerpo, reduciendo el nivel de una herida permanente que tenga por un paso cada turno.
 
