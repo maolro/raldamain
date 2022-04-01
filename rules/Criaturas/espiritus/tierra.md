@@ -202,7 +202,7 @@ Origen de tierra III, Mordisco III, (Garras I), Armadura natural II, tamaño sup
 
 Origen de tierra V, Golpe III, Armadura natural I, tamaño superior 2
 
-**PV:** 24			**VT:** 22	**DEF:** 10 (armadura natural 5, resistencia 5)
+**PV:** 25			**VT:** 22	**DEF:** 10 (armadura natural 5, resistencia 5)
 
 **FUE:** 10	**DES:** -3	**CON:** 10	**INT:** -1	**SAB:** 4	**CAR:** -1
 
@@ -246,7 +246,69 @@ Origen de tierra V, Golpe III, Armadura natural I, tamaño superior 2
 
 **Parada:** +13 + d6, puede defenderse de ataques a distancia y mágicos que no sean de área. (1/turno) Repite un tiro defensivo
 
+****
+
+**Tácticas:** Espinas rocosas, Ola de tierra + golpe, ataque poderoso + ataque lateral, golpe + ataque poderoso + golpe
+
 ## Elemental de naturaleza campeón (nivel 10)
+
+Verdeante V, Tentáculo IV, Golpe II, Armadura natural II
+
+**PV:** 25			**VT:** 22	 		**DEF:** 15  (resistencia 7, armadura natural 8)
+
+**FUE:** 10	**DES:** -1	**CON:** 10	**INT:** -1	**SAB:** 4	**CAR:** -1
+
+------
+
+**Talentos:** Heroísmo +13, Destrozar +13, Percepción +9, Atletismo +11
+
+**Resiste:** Magia de naturaleza 5, magia 6, daño físico 9, aturdimiento 3
+
+**Inmune:** Veneno, enfermedades, efectos mentales, terreno difícil
+
+**Vulnerable:** Fuego
+
+**Sentidos**: olfato 60 pies
+
+**Movimiento:** 35 pies
+
+**Acciones:** 3
+
+****
+
+**Aura primigenia:** Se regenera 2 vitalidad cada ronda. Todo el área en un radio de 30 pies cuenta como terreno difícil, las criaturas ahí se sanan 1 vitalidad al turno y todos los tiros de magia recibirán desventaja. (1/turno) reduce la reserva por 1 para provocar los efectos de *disrupción*.
+
+**Guardián de la naturaleza** (3 rondas al día): Durante 3 rondas al día recibe +2 armadura natural, +3 resistencia, +3 resistencia mágica, +4 PV y es capaz de emplear *muro de zarzas* como reacción para defenderse (estas mejoras ya están incluidas en sus estadísticas).
+
+**Resistir la muerte** (1/combate): Revive a 1 PV la primera vez que muera.
+
+------
+
+**Zarcillo** (1 acción): +14+d6, alcance 25 pies, el objetivo es enredado y reduce la defensa por 2 al impactar. (1/turno) El objetivo tira heroísmo contra +14 o es agarrado.
+
+**Golpe** (1 acción): +14+d6, alcance 25 pies, 1d10 + 14 contundente y reduce la defensa por 2 (por 4 si está enredado). 
+
+**Aliento luminoso** (2 acciones, 3/día): +7 + d6, cono 15 pies, 1d6 + 3 radiante y ciega si reduce PV.
+
+**Muro de zarzas** (2 acciones, 3/día): Crea un muro de zarcas de proporciones 30 x 10 pies, 6 PV, 2 DEF, regeneración 1 y vulnerabilidad al daño fuego. Las zarzas provocan *sangrado* a toda criatura enredada que esté en contacto con él. 
+
+**Ataque poderoso** (1 acción): Aumenta su daño base por 1d6, empuja 10 pies y el objetivo tira CON frente a +12 o es aturdido durante un turno.
+
+**Ataque múltiple** (2 acciones): Hace un ataque de *golpe* contra tres criaturas en un radio de 25 o todas las criaturas en una línea de 25 pies pies que tropezará al impactar.
+
+**Animar plantas** (3 acciones, 1/día):  Las plantas en un radio de 30 pies se vuelven agresivas, atacando a toda criatura que se acerque a ellas. Esta habilidad solo puede emplearse en un espacio afectado por *crecimiento acelerado*, durará mientras mantengas la concentración y mientras permanezca activa toda criatura que se mueva por dicho espacio provocará un ataque de oportunidad de las plantas (+13 para atacar) de *enmarañar*.	
+
+**Armonizar terreno** (3 acciones, 3/día): Armoniza un área de 100 pies, convirtiéndolo en terreno difícil y recibiendo +d6 en todos sus tiros de ataque y defensa si se encuentra en él (esto ya es incluye en sus estadísticas).
+
+**Puerta arbórea** (2 acciones, 3/día): Crea un portal espiritual a otra posición a 90 pies de distancia.
+
+****
+
+**Parada:** +14+d6. Puede defenderse de ataques a distancia que no sean de área. Si tiene a un objetivo agarrado una vez al turno puede obtener +d6 defensa y hacer que el ataque impacte al objetivo agarrado. (1/turno): Crea un muro de zarzas para defenderse
+
+****
+
+**Tácticas:** Animar plantas, Ataque poderoso + Ataque múltiple, 2x Zarcillo + golpe, puerta arbórea + golpe 
 
 ## Elemental de arena campeón (nivel 10)
 
