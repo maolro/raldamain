@@ -204,7 +204,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango IV:</u> Aumenta su DES por 1 y todos sus ataques físicos aumentan su daño base por 2, su alcance por 5 pies y reducen un punto de defensa adicional por 1. Recibe un hechizo innato adicional de rango III o menos y puede emplear *animar plantas* una vez al día (dos veces a rango VI).
 
-<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además de recibir 3 PT adicionales. Recibe un hechizo innato adicional de rango IV o menos, tres usos al día de la habilidad *puerta arbórea* y la habilidad *aura primigenia*.
+<u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además de recibir 3 PT adicionales. Recibe un hechizo innato adicional de rango IV o menos, tres usos al día de la habilidad *puerta arbórea* y la habilidad *aura primigenia* (no podrá poseer a otros elementales empleando la habilidad *puerta arbórea*),
 
 <u>Rango VI:</u> Aumenta su SAB por 1 y obtiene inmunidad a veneno, enfermedades y efectos mentales. Recibe un hechizo innato adicional de rango V o menos además de un uso diario de *furia de la naturaleza*. Incrementa su tamaño base por un paso y está rodeado de una masa vegetal que le otorga +6 PV y +2 DEF. Todos sus ataques físicos y su armadura natural cuentan como si estuvieran hechos de madera férrea, incrementando el daño base de nuevo por 2. 	
 

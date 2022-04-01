@@ -18,68 +18,6 @@ Guerrero divino III, Armaduras III, (Filos cortantes III o Alabardas III), Magia
 
 Ascendencia de fuego IV, Magia de fuego IV, Armaduras II, Mente desencadenada II
 
-## Cazador espiritual (nivel 11)
-
-Filos perforantes II, (A distancia I), Guerrero divino III, Rastrear III, Reflejos III, Médium I
-
-**PV:** 9			**VT:** 17	 		**DEF:** 8 (resistencia 4, armadura ligera de madera férrea 4)
-
-**FUE:** 2	**DES:** 6	**CON:** 4	**INT:** 4	**SAB:** 4	**CAR:** 1
-
-------
-
-**Talentos:** Percepción +7, Averiguar intenciones +10, Supervivencia +7, Sigilo +9, Estudio +9 (espíritus, historia), Acrobacias +9, Atletismo +5
-
-**Resiste:** magia 3, armas físicas 2, efectos mentales 4
-
-**Sentidos**: Sentido de no-muertos 90 pies
-
-**Movimiento:** 25 pies, escalada 25 pies, salto 10 pies
-
-**Acciones:** 5
-
-****
-
-**Resistir la muerte** (1/combate): La primera vez que muera revive a 1 PV.
-
-------
-
-**Katana** (1 acción): +8 + 2d6, 1d8 + 4 cortante. Puede herir a criaturas incorpóreas y al impactar produce los efectos de *eliminar magia* (elimina hechizo de rango II o menos) y *disrupción* (-2 a tiros de magia),  
-
-**Arco** (2 acciones): +7 + 2d6, alcance 60 pies, 2d4 + 6 perforante. 
-
-**Apuntar ataque** (1 acción): provoca una herida permanente leve si el objetivo tiene armadura ligera o inferior (+1 acción por cada categoría superior de armadura).
-
-**Finta** (1 acción): El objetivo se defiende con averiguar intenciones contra +8 + d6, el objetivo no puede defenderse de su siguiente ataque.
-
-**Exorcizar** (2 acciones): +5 + d6 contra carisma, 1d6 + 4 daño obligatorio y ralentiza.
-
-**Sanador de combate** (2 acciones): Sana 5 Vitalidad a sí mismo o un aliado y (2/día) reduce el nivel de una herida que le afecte por un paso.
-
-**Rastreador experto** (1 acción): Reduce los dados de ventaja que tenga un enemigo en un tiro defensivo por 1 (mínimo 0).
-
-**Enemigo predilecto** (3 acciones): Obtiene ventaja en todos sus tiros de ataque y defensa además de +6 daño contra un objetivo hasta que muera. (1/día) Emplea esta habilidad gastando 1 acción y mientras permaneza activa aumenta el nivel de todas las heridas permanentes infligidas por un paso.
-
-**Acechar** (2 acciones): Se vuelve invisible si se encuentra fuera del campo de vista de su objetivo y perderá este efecto en el momento que ataque.
-
-****
-
-**Esquiva:** +9 + 2d6, se mueve 10 pies, no sufre daño obligatorio por ataques de área además que puede defenderse de ataques sorpresa y fintas. Reduce el daño recibido por 2 si está en posición defensiva (repite tiro 1/turno). (3/día) Evita instantáneamente un ataque.
-
-**Parada:** +9 + 2d6.
-
-****
-
-Su estilo de combate se basa en centrarse en un único objetivo y hacerle ataques lo más precisos posibles para provocarle heridas permanentes.
-
-Contra armadura pesada: Enemigo predilecto (presa) + posición defensiva + 2 apuntar ataque, 2 apuntar ataque + finta + katana/posición defensiva
-
-Contra armadura ligera: Enemigo predilecto (presa) + apuntar ataque + katana + rastreador experto/finta + posición defensiva; apuntar ataque/katana + rastreador experto/finta + katana + apuntar ataque/katana/movimiento + posición defensiva; desenganchar + movimiento + acechar + sanador de combate
-
-Contra espectros y médium: Enemigo predilecto + exorcizar (colectivo si puede), exorcizar (colectivo si puede) + 2x katana + katana/posición defensiva
-
-Debilidades: elementalistas de aire, telekineticistas, nigromantes, elementalistas de sangre
-
 ## Jinete de las llamas (nivel 12)
 
 Montar III, Ascendencia de fuego III, Magia de fuego IV, Armaduras III
@@ -104,7 +42,7 @@ Verdeante V, Naturaleza V (1 x aliado salvaje nivel 11), Médium III, Magia de v
 
 **Movimiento:** 25 pies, escalada 25 pies
 
-**Acciones:** 3 (reserva mágica 14)
+**Acciones:** 4 (reserva mágica 18)
 
 ****
 
@@ -114,18 +52,38 @@ Verdeante V, Naturaleza V (1 x aliado salvaje nivel 11), Médium III, Magia de v
 
 **Bastón de madera férrea** (1 acción): +13 + 1d6, alcance 15 pies, 1d10 + 10 daño, reduce defensa por 2. (-1 reserva) +2 daño y reduce defensa por 1.
 
-**Enmarañar** (1 acción): +13 + 2d6, el objetivo está enredado (agarrado si ya está enredado).
+**Enmarañar** (2 acciones, 1 acción en *crecmimiento acelerado*): +13 + 2d6, el objetivo está enredado (afecta a criaturas incorpóreas). Puede emplear esta habilidad como acción bonus reduciendo su reserva por 1. Si el objetivo está agarrado sufre 2d10 + 10 daño perforante, una herida leve y reduce su defensa por 2. La criatura enredada reducirá su defensa por 2 al final de su turno
+
+**Agarre elemental** (1 acción): +13 + d6 contra heroísmo, el objetivo está agarrado. 
 
 **Crecimiento acelerado** (3 acciones y -2 reserva): Convierte un área de 100 pies en terreno difícil y recibe ventaja en todos sus tiros de *enmarañar* y *parada elemental* contra criaturas que estén tocando el suelo en ese espacio. Todos sus ataques de enmarañar reducen su coste en acciones a 1 acción en ese área (los beneficios de crecimiento acelerado ya se incluyen).
 
-**Muro de zarzas** (2 acciones y -1 reserva): Crea un muro de zarcas de proporciones 75 x 25 pies, 15 PV, 5 DEF, regeneración 1 y vulnerabilidad al daño fuego. Las zarzas provocan *sangrado* a toda criatura enredada que esté en contacto con él.
+**Muro de zarzas** (2 acciones y -1 reserva): Crea un muro de zarcas de proporciones 75 x 25 pies, 15 PV, 5 DEF, regeneración 1 y vulnerabilidad al daño fuego. Las zarzas provocan *sangrado* a toda criatura enredada que esté en contacto con él. Alternativamente, este muro puede estar hecho de pura luz, otorgando cubierta y haciendo 2 daño radiante a las criaturas que intenten cruzarlo
+
+**Revertir crecimiento** (1 acción): Elimina el terreno difícil que forman las plantas en un radio de 25 pies o cancela un efecto de magia de naturaleza, tirando +13 + d6 contra el creador de dicho efecto y cancelándolo en éxito.
+
+**Animar plantas** (3 acciones y -2 reserva): Las plantas en un radio de 30 pies se vuelven agresivas, atacando a toda criatura que se acerque a ellas. Esta habilidad solo puede emplearse en un espacio afectado por *crecimiento acelerado*, durará mientras mantengas la concentración y mientras permanezca activa toda criatura que se mueva por dicho espacio provocará un ataque de oportunidad de las plantas (+13 para atacar) de *enmarañar*.
 
 **Invocar espíritu** (3 acciones y -1 reserva, máximo 5 criaturas): Invoca a un *elemental gigante*, un *elemental campeón* (-1 reserva adicional), una *dríada* (-1 reserva adicional) o un *elemental anciano* (-2 resrva adicional). Todos los elementales pueden ser de tierra o de naturaleza.
 
+**Puerta arbórea** (2 acciones y -1 reserva): Crea un portal espiritual a otra posición a 90 pies de distancia. Esta habilidad puede usarse también para poseer un elemental de planta.
+
+**Furia de la naturaleza** (3 acciones y -3 reserva): +13 + 2d6, cilindro 60 pies, 3d10 + 10 daño cortante de área y el objetivo es agarrado. Esta habilidad solo puede emplearse en terreno afectado por *animar plantas*.
+
+**Exorcismo** (2 acciones, 1 acción en *armonizar*): +8, solo afecta a criaturas incorpóreas, 1d6 + 5 daño y ralentiza. 
+
+**Armonizar** (2 acciones): Revela la posición de todos los espectros en un área de 90 pies. Si logra concentrarse durante 4 rondas mata instantáneamente a todos los espectros y los médium perderán sus habilidades.
+
+**Toque sanador** (2 acciones): Sana 1d4 + 7 Vitalidad y (5/día) Reduce el nivel de una herida permanente, veneno o enfermedad por un paso. Una vez al turno puede emplear esta habilidad como acción bonus reduciendo su reserva por 1.
+
+**Descarga luminosa** (2 acciones): +9 + d6, 1d6 + 2 radiante y ciega si reduce PV.
+
+**Conexión vital** (3 acciones): Liga la vida de un aliado a la suya, permitiéndole absorber hasta la mitad del daño si ese es herido y sanarle sin contacto físico si está a menos de 60 pies (máximo una criatura ligada).
+
 ****
 
-**Parada elemental:** +13 + 3d6, puede defenderse de ataques cuerpo a cuerpo. (1/turno) Forma un *muro de zarzas* para defenderse.
+**Parada elemental:** +13 + 3d6, puede defenderse de ataques cuerpo a cuerpo. (2/turno) Forma un *muro de zarzas* para defenderse.
 
 ****
 
-**Tácticas:** 
+**Tácticas:** Crecimiento acelerado + 2 x eq	nmarañar (-3 reserva), Puerta arbórea + Armonizar + enmarañar (-3 reserva), Furia de la naturaleza  + 2 x enmarañar (-4 reserva), Conexión vital + 2x bastón (-1 reserva)

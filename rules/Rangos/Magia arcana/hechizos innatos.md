@@ -101,7 +101,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Armadura mágica</u> (Rango II): Tres veces al día empleando 2 acciones puede aumentar sus resistencias al daño físico y mágico por 3 durante 3 rondas (para que permanezca activa más rondas debe mantener la concentración).
 
-<u>Eliminar magia</u> (Rango II, requiere *disrupción*): Puede emplearse 3 veces al día, cuesta 2 acciones y te permite eliminar los efectos de una habilidad mágica pasiva de rango II o menos que tenga activa tu objetivo (este puede defenderse si tiene la habilidad contrahechizo). 
+<u>Eliminar magia</u> (Rango II, requiere *disrupción*): Puede emplearse 3 veces al día, cuesta 2 acciones y te permite eliminar los efectos de una habilidad mágica pasiva de rango II o menos que tenga activa tu objetivo (este puede defenderse si tiene la habilidad *contrahechizo*). 
 
 <u>Absorber magia</u> (Rango III, requiere *eliminar magia*): Tres veces al día empleando 3 acciones puede drenar el chi de un objeto mágico para recuperar sus habilidades mágicas, anulando sus propiedades durante un día y recuperando un uso de un hechizo de rango III o menos (V o menos si tiene la habilidad *disyunción mágica*). Cada vez que impacte con *eliminar magia* el objetivo reduce su reserva de chi por 1 o pierde un uso de la habilidad innata con menor rango que tenga.
 

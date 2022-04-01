@@ -4,6 +4,44 @@
 
 ## Dragón oscuro (nivel 4)
 
+## Juramentado de guerra (nivel 4)
+
+Verdeante II, Armadura natural I, Filos cortantes II, Ira I
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:**  
+
+**Resiste:** 
+
+**Inmune:** necrótico
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
+
 ## Pira fatua (nivel 6)
 
 ## Trol (nivel 6)
@@ -64,14 +102,228 @@
 
 Espíritu del odio, la miseria y el infortunio
 
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
+
+## Juramentado de guerra nigromante (nivel 8)
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
+
 ## Enjambre Yoko-Kosume (nivel 10)
+
+## Gran ogro (nivel 10)
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
 
 ## Dragón oscuro adulto (nivel 12)
 
+## Juramentado de guerra elegido (nivel 12)
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
+
 ## Jorogumo (nivel 12)
+
+## Espíritu del dolor (nivel 13)
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
 
 ## Dragón oscuro anciano (nivel 16)
 
 ## Shinigami (nivel 18)
+
+## Espíritu de la luna ensangrentada (nivel 19)
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
 
 ## Dragón oscuro legendario (nivel 20)
