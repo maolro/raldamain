@@ -4,6 +4,8 @@ title: Equipamiento estándar
 
 Esta es una lista de numerosos objetos más mundanos que puede llegar a utilizar un personaje además del coste en crédito que estos tienen. El precio de estos objetos no depende del nivel tecnológico y pueden adecuarse a todo tipo de campañas:
 
+## Equipamiento estándar
+
 <u>Caja de disfraces</u> (1 crédito): máscaras, pelucas, trajes.
 
 <u>Equipo del aventurero</u> (1 crédito): mochila, saco de dormir, raciones para 10 días, cantimplora, linterna/antorcha, brújula u objeto similar para la orientación, armadura ligera, arma ligera.
@@ -28,4 +30,14 @@ Esta es una lista de numerosos objetos más mundanos que puede llegar a utilizar
 
 <u>Herramientas artesanales</u> (1 crédito): 
 
-​         
+## Productos químicos
+
+<u>Veneno</u> (1 crédito): 2 dosis
+
+<u>Medicina</u> (1 crédito): 2 dosis
+
+<u>Mutágeno</u> (1 crédito): 2 dosis
+
+<u>Cognatógeno</u> (1 crédito): 2 dosis
+
+## Bombas         
