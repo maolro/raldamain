@@ -6,41 +6,43 @@
 
 ## Juramentado de guerra (nivel 4)
 
-Verdeante II, Armadura natural I, Filos cortantes II, Ira I
+Abisal (variante) II, Armaduras I, Filos cortantes II, Ira I
 
-**PV:** 			**VT:** 	 		**DEF:** 
+**PV:** 9			**VT:** 11	 		**DEF:** 8 (armadura 6, resistencia 2)
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
-
-------
-
-**Talentos:**  
-
-**Resiste:** 
-
-**Inmune:** necrótico
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
+**FUE:** 6	**DES:** 1	**CON:** 5	**INT:** 1	**SAB:** 4	**CAR:** 1
 
 ------
 
+**Talentos:** Atletismo +7, Heroísmo +8, Percepción +7
 
+**Resiste:** necrótico 3
+
+**Inmune:** miedo, efectos mentales, heridas permanentes leves y medias
+
+**Sentidos**: vista a oscuras 60 pies
+
+**Movimiento:** 20 pies
+
+**Acciones:** 3
 
 ****
 
+**Espada maldita** (2 acciones): +8 + d6, 1d10 + 6 cortante + 2 necrótico. El daño no puede ser sanado y al provocar una herida permanente se recupera 1 + gravedad vitalidad (se sana +CON vitalidad si lo mata). Aumenta el nivel de las heridas provocadas por 1 paso si el objetivo tiene 4 o menos defensa.
 
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y provoca sangrado al impactar.
+
+**Aliento necrótico** (2 acciones, 3/día): +5 + d6, cono 15 pies, 1d6 + 3 necrótico y fatiga si reduce PV.
+
+**Gran corte** (1 acción): Hace un ataque con su *espada maldita* a 3 criaturas a una distancia de 5 pies.
 
 ****
 
-**Tácticas:** 
+**Parada:** +8 + d6
+
+****
+
+**Tácticas:** espada maldita + gran corte/ataque poderoso/posición defensiva, movimiento + aliento necrótico
 
 ## Pira fatua (nivel 6)
 
