@@ -28,7 +28,7 @@ Filos perforantes II, (A distancia I), Guerrero divino III, Rastrear III, Reflej
 
 **Arco** (2 acciones): +7 + 2d6, alcance 60 pies, 2d4 + 6 perforante. 
 
-**Apuntar ataque** (1 acción): provoca una herida permanente leve si el objetivo tiene armadura ligera o inferior (+1 acción por cada categoría superior de armadura).
+**Apuntar ataque** (1 acción):  provoca una herida permanente leve si el objetivo tiene armadura ligera o inferior (+1 acción por cada categoría superior de armadura).
 
 **Finta** (1 acción): El objetivo se defiende con averiguar intenciones contra +8 + d6, el objetivo no puede defenderse de su siguiente ataque.
 

@@ -37,7 +37,7 @@
 
 **Parada**: +4
 
-**Escudo**: +4, puede defenderse de ataques a distancia.
+**Escudo**: +10, puede defenderse de ataques a distancia.
 
 ****
 

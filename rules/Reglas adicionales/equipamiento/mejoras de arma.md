@@ -51,7 +51,7 @@ Esta es una lista de las mejoras que se pueden aplicar a un arma. Pueden aplicar
 | Disparos a bocajarro  | Muro de fuego      | Usar muro de fuego consumirá todas tus balas y te cuesta una acción de turno completo. |
 | Puntería experta      | Fuego puro         |                                                              |
 
-<u>Material superior</u> (Crédito 2): Tu arma está hecha de un material de calidad superior, aumentando su efectividad contra armaduras de mayor calibre y su dureza. Un arma así no puede romperse por armas hechas de manteriales de dureza inferior y aumenta su daño base por un paso (1d8 si su daño base es 1d6, 1d10 si es 1d8, 2d6 si es 1d10 y 2d8 si es 2d6).
+<u>Material superior</u> (Crédito 2): Tu arma está hecha de un material de calidad superior, aumentando su efectividad contra armaduras de mayor calibre y su dureza. Un arma así no puede romperse por armas hechas de materiales de dureza inferior y aumenta su daño base por un paso (1d8 si su daño base es 1d6, 1d10 si es 1d8, 2d6 si es 1d10 y 2d8 si es 2d6).
 
 <u>Motosierra</u> (Crédito 3): El filo de tu arma opera de manera automática, infligiendo letales heridas a costa de dificultar su uso. Un arma con esta mejora infligen +2 daño y al impactar reducirá la defensa de la armadura de tu objetivo por 1 (si bloquea con un escudo, la defensa de este también por el mismo valor), pero recibirás un penalizador -2 en todos tus ataques con ella. Si tienes el atributo Impacto destructor o Rompe escudos las reducciones que estas causan aumentará por 1. Esta mejora sólo puede aplicarse a armas que causen daño cortante.
 
