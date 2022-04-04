@@ -19,4 +19,3 @@ El aliado llamará la atención de todos los enemigos que no estén enfrentados 
 | 15-17     | 1 impacto                          | 2 impactos                         | 2 impactos                         | 3 impactos                         |
 | 18-19     | 1 impacto                          | 2 impactos                         | 3 impactos                         | 4 impactos                         |
 | 20 o más  | 2 impactos                         | 3 impactos                         | 4 impactos                         | 5 impactos                         |
-

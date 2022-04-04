@@ -12,7 +12,11 @@ Ascendencia de fuego IV, Artes marciales III, Reflejos I, Ira III
 
 ## Guardián Hibotoru (nivel 10)
 
-Guerrero divino III, Armaduras III, (Filos cortantes III o Alabardas III), Magia de fuego II
+Guerrero divino III, Armaduras III, Filos cortantes III, Alabardas I, Magia de fuego II
+
+## Guardián de Homay (nivel 10)
+
+Guerrero divino III, Armaduras III, Alabardas III, Filos cortantes I, Magia de naturaleza II
 
 ## Ekta del clan Hibotoru (nivel 11)
 
@@ -32,7 +36,7 @@ Verdeante V, Naturaleza V (1 x aliado salvaje nivel 11), Médium III, Magia de v
 
 ------
 
-**Talentos:** Averiguar intenciones +5, Arcanismo +5, Percepción +3, Atletismo +3
+**Talentos:** Averiguar intenciones +13, Arcanismo +10, Percepción +11, Atletismo +5
 
 **Resiste:** magia de naturaleza 5, magia 3, armas físicas 4
 
@@ -86,4 +90,4 @@ Verdeante V, Naturaleza V (1 x aliado salvaje nivel 11), Médium III, Magia de v
 
 ****
 
-**Tácticas:** Crecimiento acelerado + 2 x eq	nmarañar (-3 reserva), Puerta arbórea + Armonizar + enmarañar (-3 reserva), Furia de la naturaleza  + 2 x enmarañar (-4 reserva), Conexión vital + 2x bastón (-1 reserva)
+**Tácticas:** Crecimiento acelerado + 2 x enmarañar (-3 reserva), Puerta arbórea + Armonizar + enmarañar (-3 reserva), Furia de la naturaleza  + 2 x enmarañar (-4 reserva), Conexión vital + toque sanador + bastón (-1 reserva)

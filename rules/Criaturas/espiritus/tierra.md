@@ -190,6 +190,12 @@ Origen de tierra IV, Garra II, (Golpe I), Armadura natural I, tamaño superior 2
 
 ## Elemental de arena gigante (nivel 8)
 
+## Bullette (nivel 8)
+
+Mordisco IV, Origen de tierra III, (Garras II), Armadura natural II
+
+
+
 ## Dragón de tierra joven (nivel 8)
 
 Origen de tierra III, Mordisco III, (Garras I), Armadura natural II, tamaño superior
@@ -296,7 +302,7 @@ Verdeante V, Tentáculo IV, Golpe II, Armadura natural II
 
 **Ataque múltiple** (2 acciones): Hace un ataque de *golpe* contra tres criaturas en un radio de 25 o todas las criaturas en una línea de 25 pies pies que tropezará al impactar.
 
-**Animar plantas** (3 acciones, 1/día):  Las plantas en un radio de 30 pies se vuelven agresivas, atacando a toda criatura que se acerque a ellas. Esta habilidad solo puede emplearse en un espacio afectado por *crecimiento acelerado*, durará mientras mantengas la concentración y mientras permanezca activa toda criatura que se mueva por dicho espacio provocará un ataque de oportunidad de las plantas (+13 para atacar) de *enmarañar*.	
+**Animar plantas** (3 acciones, 1/día):  Las plantas en un radio de 30 pies se vuelven agresivas, atacando a toda criatura que se acerque a ellas. Esta habilidad solo puede emplearse en un espacio afectado por *crecimiento acelerado*, durará mientras mantengas la concentración y mientras permanezca activa toda criatura que se mueva por dicho espacio provocará un ataque de oportunidad de las plantas (+9 para atacar) de *enmarañar*.	
 
 **Armonizar terreno** (3 acciones, 3/día): Armoniza un área de 100 pies, convirtiéndolo en terreno difícil y recibiendo +d6 en todos sus tiros de ataque y defensa si se encuentra en él (esto ya es incluye en sus estadísticas).
 

@@ -104,6 +104,8 @@ Abisal (variante) II, Armaduras I, Filos cortantes II, Ira I
 
 Espíritu del odio, la miseria y el infortunio
 
+Ascendencia abisal (variante) III (incorpóreo, invisibilidad, visión periférica, inflamar emociones, asalto psíquico, sobrecarga mental), Magia innata (aura emocional, armadura mágica, salto dimensional, crear ilusión, terreno alucinatorio, contrahechizo, acelerar, detectar pensamientos, doble ilusorio)
+
 **PV:** 			**VT:** 	 		**DEF:** 
 
 **FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
@@ -178,35 +180,41 @@ Espíritu del odio, la miseria y el infortunio
 
 ## Gran ogro (nivel 10)
 
-**PV:** 			**VT:** 	 		**DEF:** 
+Ascendencia abisal (variante) III (tamaño superior, regeneración, armadura mágica, premonición, mejora chupavidas), Ira II, Filos cortantes IV, Armadura natural II
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+**PV:** 20			**VT:** 21	 		**DEF:** 11	 (resistencia 6, armadura natural 5)
 
-------
-
-**Talentos:** 
-
-**Resiste:** 
-
-**Inmune:** 
-
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 
-
-****
-
-
+**FUE:** 9	**DES:** 0	**CON:** 9	**INT:** -1	**SAB:** 3	**CAR:** -1
 
 ------
 
+**Talentos:** Heroísmo +14, Atletismo +12, Destrozar +12
 
+**Resiste:** armas físicas 6, magia 3
+
+**Inmune:** efectos mentales, miedo
+
+**Sentidos**: visión del vacío 30 pies
+
+**Movimiento:** 40 pies
+
+**Acciones:** 3
 
 ****
 
+**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
 
+**Regeneración:** Se sana 2 vitalidad al principio de su turno.
+
+**Mirada terrorífica:** Al principio de su turno todas las criaturas a 30 pies tiran carisma contra +12 o son aumentan su nivel de miedo por un paso. Sin importar el resultado reducen su cordura por 1.
+
+------
+
+**Espada aserradora** (1 acción): +12, 2d6 + 9 cortante + 2 necrótico. El daño no puede ser sanado y al provocar una herida permanente se recupera 1 + gravedad vitalidad (se sana +CON vitalidad si lo mata). Aumenta el nivel de las heridas provocadas por 1 paso si el objetivo tiene 4 o menos defensa.
+
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, reduce la defensa por 3 y provoca sangrado al impactar. El sangrado inflige +1 daño al turno y aumenta el nivel de una herida permanente cada turno por un paso.
+
+**Atrapar espada** (1 acción): +12, el arma del objetivo es agarrada, impidiendo que pueda atacar con ella hasta que escape del agarre.
 
 ****
 
