@@ -69,7 +69,7 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 <u>Desviar ataques</u> (pasiva): Tu arma secundaria puede desviar ataques que traspasen tus defensas. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener (el penalizador de tu arma secundaria continuará aplicándose). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
 
-<u>Combate furtivo</u> (pasiva): Tienes ventaja en tus tiros de ataque contra enemigos heridos por tu arma principal y añadirás tu estadística de destreza al daño. No recibirás ningún beneficio de esta habilidad si eres desarmado de tu arma principal o tu objetivo tiene la habilidad *esquiva asombrosa superior*.
+<u>Combate furtivo</u> (pasiva): Tienes ventaja en tus tiros de ataque contra enemigos heridos por tu arma principal y añadirás tu estadística de destreza al daño (si también se aplica *combate furtivo* provoca los efectos de *apuntar ataque*). No recibirás ningún beneficio de esta habilidad si eres desarmado de tu arma principal o tu objetivo tiene la habilidad *esquiva asombrosa superior*.
 
 ### Rango II
 

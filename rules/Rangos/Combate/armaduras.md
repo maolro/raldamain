@@ -5,6 +5,8 @@ category: Combate
 
 Has decidido mejorar tanto tu aptitud como tu conocimiento sobre las armaduras para evitar las penalizaciones que normalmente limitarían a los demás e incrementar sus capacidades defensivas. A medida que tu conocimiento y entrenamiento avanzan te vas volviendo más apto a la hora de llevarla así como de modificarla para que se adapte mejor at tus habilidades, llegando incluso a poder vestirla como si se tratase de una extensión de tu propio cuerpo.
 
+<u>Requisitos:</u> 2 o más fuerza, llevar una armadura.
+
 ## Rango I
 
 <u>Entrenamiento con armaduras</u> (pasiva): Reduce por 2 el penalizador de armadura. En el caso que logres reducir el penalizador a 0 podrás moverte y usar habilidades de reflejos como si no llevases armadura, aunque obtendrás desventaja en tiros de esquiva y talentos relacionados con la destreza. Cada vez que obtengas un rango en aptitud con armaduras vuelve a reducir el penalizador por 2

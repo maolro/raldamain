@@ -64,9 +64,12 @@ Tus sentidos te permiten darte cuenta de detalles y alertarte del peligro. Tiene
 
 ### Sigilo (DES)
 
-Eres experto evitando ser detectado, recibiendo soltura en tiros para esconderte y moverte silenciosamente. Esconderte es una acción de movimiento y solo se podrá usar si tienes algún tipo de cubierta u ocultamiento. Si atacas a una criatura que no se ha dado cuenta de tu posición esta no podrá defenderse de tu ataque, recibiendo el daño de manera automática. Estando oculto puedes aún moverte sin llamar la atención, pero te moverás a mitad de velocidad. Abandonas automáticamente el sigilo cuando hagas un ataque.
+Eres experto evitando ser detectado, recibiendo soltura en tiros para esconderte y moverte silenciosamente. Esconderte cuesta una acción y solo se podrá usar si tienes algún tipo de cubierta u ocultamiento. Si atacas a una criatura que no se ha dado cuenta de tu posición esta no podrá defenderse de tu ataque, recibiendo el daño de manera automática. Estando oculto puedes aún moverte sin llamar la atención, pero te moverás a mitad de velocidad. Abandonas automáticamente el sigilo cuando hagas un ataque.
 
 ### Supervivencia (SAB)
 
 Tienes soltura en tiros para sobrevivir en un entorno salvaje o seguir huellas de criaturas. El tiro de dificultad queda decidido por el máster y depende de la peligrosidad del entorno y de factores relacionados con las criaturas que rastrees (por ejemplo, el número de criaturas y cómo de recientes son las huellas). Algunas situaciones que utilizan supervivencia son buscar comida y agua en un entorno salvaje, predecir el clima, orientarse y fabricar trampas sencillas.
 
+### Voluntad (CAR)
+
+Tienes soltura en tiros para intimidar o animar a otras criaturas y resistir el miedo y los efectos mentales. Puedes emplear 2 acciones para desmoralizar o reforzar la moral de otra criatura en el campo de batalla. Si escoges desmoralizar haz un tiro de voluntad contra la voluntad de tu objetivo y en éxito aumenta el nivel de miedo que tenga por un paso hasta que tú sufras una herida permanente o efecto de estado negativo, mientras si escoges animar puedes reducir el nivel de miedo que tenga otra criatura por un paso si tienes éxito en un tiro de voluntad contra el efecto que le provoque el miedo (eso lo determinará el máster). Puedes también emplear una acción para intentar recuperarte de un efecto de miedo haciendo un tiro de voluntad contra el efecto que te lo esté provocando, reduciendo tu miedo por un paso si tienes éxito.

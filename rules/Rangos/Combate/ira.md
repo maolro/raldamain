@@ -5,6 +5,8 @@ category: Combate
 
 La ira es un sentimiento que fluye a través de todas las personas, sin embargo tú eres capaz de canalizarla para superar los límites de tu cuerpo e incrementar tus habilidades físicas. Casi entrando en un efecto similar a un trance eres capaz de desconectar parcialmente tu consciencia para dejar tu instinto de supervivencia mas básico de tu interior y de este modo acabar con cualquier cosa o adversario que ose cruzarse en tu camino. A medida que obtienes mas experiencia y vas dominando esta habilidad serás capaz de realizar proezas físicas por encima de cualquier límite humano. 
 
+<u>Requisitos:</u> dos estadísticas físicas iguales a 2 o más y rangos en un arma.
+
 ## Rango I
 
 <u>Ira</u> (1 acción): Empleando una acción puedes entrar en un estado de ferocidad superior conocido como ira. Mientras estés en el estado de ira aumentas dos de tus estadísticas físicas por 2 y recibes resistencia igual a tu rango + 1 contra efectos mentales y de moral. Ira durará un número de rondas igual a tu rango + 2 y mientras mantengas este efecto no podrás usar habilidades que requieran paciencia y concentración, atacando cada turno si es posible. Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente, quedando fatigado cuando salgas de esta. No podrás entrar en Ira si estás fatigado salvo que seas reducido a más de la mitad de tus PV, pero caerás inconsciente cuando esta ira acabe. Si tienes rangos en presencia puedes otorgar los efectos de Ira a un aliado de tu elección como acción estándar.
