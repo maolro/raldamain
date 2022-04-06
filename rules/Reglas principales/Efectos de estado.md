@@ -18,7 +18,7 @@ Una criatura aturdida ha sufrido un trauma poderoso en la cabeza que lo vuelve i
 
 ### **Cegada** 
 
-Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su campo de visión a 10 pies y no puede defenderse de ataques que no pueda percibir. Su movimiento queda reducido por 10 pies y recibe desventaja en todos sus tiros. Si la criatura tiene una forma de percibir sus alrededores sin necesitar la vista perderá los penalizadores al movimiento y a ataques debidos a la ceguera.
+Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su campo de visión a 10 pies y no puede defenderse de ataques que no pueda percibir. Todos sus movimientos superiores a 10 pies se harán en una dirección aleatoria y recibe desventaja en todos sus tiros. Si la criatura tiene una forma de percibir sus alrededores sin necesitar la vista perderá los penalizadores al movimiento y a ataques debidos a la ceguera.
 
 ### **Confundida** 
 

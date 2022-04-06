@@ -9,11 +9,11 @@ Tu mente tiene un poder superior que el de la mayoría de personas que te rodean
 
 Añade tu rango a todos tus tiros relacionados con telekinesia.
 
-<u>Lanzamiento</u> (1 acción/2 acciones): Eres capaz de mover y manipular pequeños objetos con tu mente. Con esta habilidad puedes mover a un objeto pequeño hasta 15 pies en cualquier dirección empleando una acción. El objeto que manipules debe estar a menos de 60 pies de ti. Empleando dos acciones puedes lanzar ese objeto hacia un enemigo, haciendo 1d6 + INT daño físico de tipo contundente, cortante o perforante. 
+<u>Lanzamiento</u> (1 acción/2 acciones): Eres capaz de mover y manipular pequeños objetos con tu mente. Con esta habilidad puedes mover a un objeto pequeño hasta 15 pies en cualquier dirección empleando una acción. El objeto que manipules debe estar a menos de 60 pies de ti. Empleando dos acciones puedes lanzar ese objeto hacia un enemigo que se encuentre a una distancia máxima de 40 pies, infligiendo 1d6 + INT daño físico de tipo contundente, cortante o perforante al impactar.
 
-<u>Escudo telequinético</u> (reacción): Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción y te permite hacer un tiro defensivo de telekinesia para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva o te ocasionará 1 daño no-letal (esto no tiene ningún coste si está en *[posición defensiva](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#acción-de-movimiento)*).
+<u>Escudo telequinético</u> (reacción): Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción y te permite hacer un tiro defensivo de telekinesia para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva (esto no tiene ningún coste si estás en *[posición defensiva](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#acción-de-movimiento)*).
 
-<u>Reserva de chi:</u>  Puedes elegir sufrir 1 daño no-letal o gastar 1 chi de tu reserva para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque adicional de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
+<u>Reserva de chi:</u> Posees una reserva de chi con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques.  Con esta habilidad puedes hacer un ataque adicional de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
 
 ## Rango II
 

@@ -107,13 +107,13 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Retener persona</u> (Rango III): Puede emplearse 3 veces al día, cuesta 2 acciones y haces un ataque mágico contra una criatura el cual agarrará en caso de éxito. Mientras tu objetivo permanezca agarrado por esta habilidad no podrá emplear habilidades mágicas y puedes emplear una acción para moverla 15 pies en cualquier dirección (mantenerla agarrada requiere mantener la concentración).
 
-<u>Rebotar magia</u> (Rango IV, requiere *contrahechizo*): Obtienes 3 usos adicionales de *contrahechizo* y al contrarrestar exitosamente un hechizo o defenderte existosamente de él una vez por ronda puedes hacer que afecte a un objetivo diferente de tu elección (se empleará el tiro del objetivo que te atacó). 
+<u>Rebotar magia</u> (Rango IV, requiere *contrahechizo*): Obtienes 3 usos adicionales de *contrahechizo* y al contrarrestar exitosamente un hechizo o defenderte exitosamente de él una vez por ronda puedes hacer que afecte a un objetivo diferente de tu elección (se empleará el tiro del objetivo que te atacó). 
 
 <u>Aura antimágica</u> (Rango IV, requiere *armadura mágica*): Puede emplearse 2 veces al día, cuesta 2 acciones y al activar esta habilidad formas un aura de radio 15 pies que anula toda la magia, impidiendo que otras criaturas puedan lanzar hechizos y eliminando las propiedades de todos los objetos que utilicen chi (esto te incluye a ti también). No obstante, aún es posible emplear habilidades innatas en un aura antimágica creada de esta manera.
 
 <u>Disyunción mágica</u> (Rango V, requiere *eliminar magia*): Una vez al día puedes emplear 2 acciones para eliminar todas las habilidades mágicas que tenga tu objetivo, y en el caso que no tenga ninguna reducirá su reserva de chi a 0 (si no tiene reserva de chi y solo habilidades innatas entonces las perderá todas). Recibes 2 usos adicionales de *eliminar magia* y esta habilidad ahora puede anular hechizos pasivos de hasta rango V.
 
-<u>Aprisionar</u> (Rango V, requiere *retener persona*): Una vez al día empleando un ritual de 2 turnos puedes encerrar a una criatura incapacitada en un demiplano accesible solo por ti. El demiplano solo puede ser accedido por ti y está siempre afectado por un *aura antimágica* y si la criatura encerrada muera resucitará ahí de inmuediato.
+<u>Aprisionar</u> (Rango V, requiere *retener persona*): Una vez al día empleando un ritual de 2 turnos puedes encerrar a una criatura incapacitada en un demiplano accesible solo por ti. El demiplano solo puede ser accedido por ti y está siempre afectado por un *aura antimágica* y si la criatura encerrada muera resucitará ahí de inmediato.
 
 ### Magia temporal
 

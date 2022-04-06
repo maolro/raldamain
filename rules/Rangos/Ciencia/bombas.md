@@ -9,7 +9,7 @@ Como un arma con la oportunidad de crear daños devastadores a sus objetivos, la
 
 Añade tu rango a todos tus tiros relacionados con bombas. Puedes usar tu estadística de inteligencia para tiros de ataque con bombas.
 
-<u>Fabricar bombas</u> (proyecto y 2 acciones): Conoces como fabricar explosivos utilizando materiales rudimentarios. Como proyecto de duración igual a un descanso corto puedes fabricar una cantidad de bombas igual a tu rango si posees los materiales adecuados, pudiendo tener como máximo INT + 2 bombas preparadas. Hacer un ataque con te cuesta 2 acciones, tiene alcance de 30 pi y afectará a todas las criaturas en un radio de impacto de 5 pies. La bomba hará uno de los siguientes efectos.
+<u>Fabricar bombas</u> (proyecto y 2 acciones): Conoces como fabricar explosivos utilizando materiales rudimentarios. Como proyecto de duración igual a un descanso corto puedes fabricar una cantidad de bombas igual a tu rango si posees los materiales adecuados, pudiendo tener como máximo INT + 2 bombas preparadas. Hacer un ataque con te cuesta 2 acciones, tiene alcance de 30 pies y afectará a todas las criaturas en un radio de impacto de 5 pies. La bomba hará uno de los siguientes efectos.
 
 - **Bomba incendiaria:** La bomba hace 1d6 + INT daño de fuego y provoca una quemadura leve a todas las criaturas que impacte.
 - **Frasco de ácido:** La bomba hace 1d6 + INT daño de ácido y reducirá la defensa todas las criaturas impactadas por 1 (en el caso que no tengan armadura sufrirán una quemadura leve).
@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros relacionados con bombas. Puedes usar tu estad�
 
 Si fallas con un ataque de bomba esta caerá en un punto aleatorio a 1d6 x 5 pies de tu objetivo, el cual quedará escogido por el máster.
 
-<u>Experto ingeniero</u> (proyecto) Eres capaz de identificar automáticamente las propiedades de un artilugio mecánico sin la necesidad de un tiro. Puedes usar tu estadística de inteligencia en tiros de juego de manos para abrir cerraduras o desactivar trampas. Además, puedes fabricar trampas mecánicas de tu propia creación utilizando una hora de trabajo, pudiendo tener un número de trampas al día igual a tu rango. Los efectos de las trampas son variados y tú eliges sus propiedades exactas, pero el tiro de ataque siempre será igual a tus dados de ataque con bombas. Algunos ejemplos de trampa son los siguientes:
+<u>Experto ingeniero</u> (proyecto) Eres capaz de identificar automáticamente las propiedades de un artilugio mecánico sin la necesidad de un tiro. Puedes usar tu estadística de inteligencia en tiros de juego de manos para abrir cerraduras o desactivar trampas. Además, puedes fabricar trampas mecánicas de tu propia creación utilizando una hora de trabajo, pudiendo tener un número de trampas al día igual a tu rango. Los efectos de las trampas son variados y tú eliges sus propiedades exactas, pero el tiro de ataque siempre será igual a tu tiro de ataque con bombas. Algunos ejemplos de trampa son los siguientes:
 
 - **Trampa de oso:** Esta trampa provoca una herida permanente leve a la criatura que la pise y mantendrá su pierna agarrada en ella, infligiéndole 1 daño no-letal cada turno que permanezca atrapada.
 - **Trampa de mina:** La trampa encenderá una de tus bombas al ser activada. Fabricar una trampa de mina gasta una de tus bombas.
