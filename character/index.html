@@ -59,7 +59,7 @@
                             <div class="row">
                                 <div v-for="(value, name) in attributes" class="col">
                                     {{ name }}
-                                    <v-minusplusfield v-bind:value="value" :min="0" :max="Math.min(value + attributes_points_available, level == 1 ? 3 : 6)"
+                                    <v-minusplusfield v-bind:value="value" :min="-5" :max="Math.min(value + attributes_points_available, level == 1 ? 3 : (level < 12 ? 6 : 9))"
                                         v-on:input="attributes[name] = $event"></v-minusplusfield>
                                 </div>
                             </div> 

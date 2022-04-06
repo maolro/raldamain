@@ -4,7 +4,7 @@ title:
 
 ## Ukron, remanente del odio (nivel 2)
 
-**PV:** 4			**VT:** 5	 		**DEF:** 2
+**PV:** 4			**VT:** 5	 		**DEF:** 2 (natural 2)
 
 **FUE:** 0 	**DES:** 4	**CON:** 1	**INT:** -1	**SAB:** 1	**CAR:** -1	
 
@@ -14,7 +14,7 @@ title:
 
 **Movimiento:** 20 pies
 
-**Acciones:** 3
+**Acciones:** 4
 
 ****
 
@@ -29,6 +29,38 @@ title:
 ****
 
 **Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
+
+## Enjambre abisal (nivel 2)
+
+Tamaño inferior, Aguijón I, Reflejos I, Abisal I (veneno, explosión, vuelo)
+
+**PV:** 4			**VT:** 5	 		**DEF:** 2 (natural 2)
+
+**FUE:** 0 	**DES:** 4	**CON:** 1	**INT:** -1	**SAB:** 2	**CAR:** -1	
+
+------
+
+**Talentos:** Atletismo +1, Sigilo +5, Percepción +5
+
+**Movimiento:** 20 pies, vuelo 30 pies
+
+**Acciones:** 4
+
+****
+
+**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+
+**Explosión:** Cuando esta criatura muera infligirá 1d6 + 1 daño ácido a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
+
+------
+
+**Aguijón** (1 acción): +5, 1d6 perforante. Al impactar el objetivo tira CON frente a +2 o es envenenado con un veneno de FUE.
+
+**Apuntar ataque** (1 acción): Aumenta su daño base por 4 e inflige una herida permanente leve si el objetivo tiene armadura ligera o inferior.
+
+****
+
+**Esquiva**: +7, se mueve 5 pies.
 
 ## Chasteneth, familiar abisal (nivel 4)
 

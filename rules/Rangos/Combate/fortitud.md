@@ -5,6 +5,8 @@ category: Combate
 
 La resistencia de tu cuerpo es superior a la media, siendo por ello mas difícil de matar que otros miembros de tu especie. A medida que tu cuerpo cicatriza nuevas heridas y se enfrenta a los climas adversos que te rodean tu fortaleza física va aumentando y adaptándose para sobrevivir a condiciones cada vez mas difíciles y peligros mayores, pudiendo incluso ser capaz de resistir ataques que acabarían al instante con cualquier otra persona.
 
+<u>Requisitos:</u> 2 o más constitución.
+
 ## Rango I
 
 Añade tu rango de fortitud x 2 a todos tus tiros defensivos de Constitución.

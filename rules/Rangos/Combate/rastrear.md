@@ -5,11 +5,13 @@ category: Combate
 
 Te has entrenado para ser experto en todo lo relacionado con un terreno determinado, teniendo un completo conocimiento sobre él así como todo lo relacionado con el mismo. A medida que tu experiencia incrementa a lo largo de tus viajes, tu habilidad también lo va haciendo, volviéndote capaz de aplicar tus conocimientos en otros terrenos, así como servirte de estos para dar caza a tu presa.
 
+<u>Requisitos:</u> 2 o más sabiduría, rangos en un arma, mínimo un nivel en percepción, sigilo o supervivencia.
+
 ## Rango I
 
 Añade tu rango a todos tus tiros de percepción, supervivencia, y averiguar intenciones.
 
-<u>Enemigo predilecto</u> (3 acciones): Eres capaz de aprender las fortalezas y debilidades de tu objetivo a través de cuidadosa observación. Si empleas tres acciones observando a una criatura de tu elección obtienes ventaja en todos tus tiros relacionados con ella e incrementas tu daño base por 1d6. Enemigo predilecto solo funcionará contra una única criatura y para escoger a otra deberás emplear otra acción de turno completo.
+<u>Enemigo predilecto</u> (3 acciones): Eres capaz de aprender las fortalezas y debilidades de tu objetivo a través de cuidadosa observación. Si empleas tres acciones observando a una criatura de tu elección obtienes ventaja en todos tus tiros relacionados con ella e incrementas tu daño base por 1d6. Enemigo predilecto solo funcionará contra una única criatura y para escoger a otra deberás volver a emplear 3 acciones.
 
 <u>Terreno predilecto</u> (pasiva): Eres un guía experto en terreno determinado. Escoge un terreno entre bosque, desierto, pradera, árctico, montaña, subterráneo y urbano. Mientras estés en tu terreno predilecto, no puedes perderte y no dejas huellas al menos que tú lo desees. Recibes además un bonificador +1 en todos tus tiros de habilidad, ataque y defensa siempre y cuando estén relacionados directamente con tu terreno. Cuando alcances el rango III y V puedes escoger un terreno predilecto adicional en el cual obtengas tus beneficios o puedes incrementar los bonificadores de un terreno predilecto que ya conozcas por 2.
 

@@ -1,7 +1,7 @@
 var listofskills = { 
     "Alabardas":
         [
-            { name: "Alabarda", level:1, type: "standardaction", description:""},       
+            { name: "Alabarda", level:1, type: "standardaction", cost: 2, description:""},       
             { name: "Parada", level:1, type: "reaction", description:""},       
             { name: "Flanqueador experto", level:3, type: "passive", description:"Tu arma hace +2 daño base contra objetivos que flanquees"},
             { name: "Carga con lanza", level:4, type: "passive", description:"Aumenta tu daño base por 2 al hacer una carga. Además, puedes gastar 2 ventajas generadas en una carga para agarrar a un objetivo clavándole tu arma"},
