@@ -9,7 +9,7 @@ Has decidido ir a por una de las armas mas resistentes y destructivas que hay, d
 
 Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contundentes
 
-<u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y empujará 5 pies a tu objetivo al impactar. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
+<u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y puedes hacer una maniobra de *tropezar* o *empujar* como acción bonus al impactar. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
 
 <u>Combate salvaje</u> (pasiva): Puedes sacrificar tus capacidades defensivas para poder realizar más ataques durante tu turno. Al principio de tu ronda puedes escoger entrar en un estado de combate salvaje, recibiendo así una acción adicional a costa de obtener desventaja en todos tus tiros defensivos hasta el inicio de tu siguiente turno. 
 

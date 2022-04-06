@@ -120,7 +120,7 @@
 					<h6>Talents:</h6>
 					<ul>
 					<template v-for="(value, name) in talents">
-						<li v-if="value.points>0">{{name}} +{{Math.floor((value.points+1)/2)}} </li>
+						<li v-if="value.points>0">{{name}} +{{value.points + attributes[value.attribute]}} </li>
 					</template>
 					</ul>
 				</div>
@@ -168,27 +168,26 @@
                 skills: skillstate,
                 talents: {
                     athletics: { attribute: "str", points: 0 },
-                    intimidation: { attribute: "str", points: 0 },
                     heroics: { attribute: "str", points: 0 },
                     wreck: { attribute: "str", points: 0 },
                     acrobatics: { attribute: "dex", points: 0 },
                     stealth: { attribute: "dex", points: 0 },
                     "sleight of hand": { attribute: "dex", points: 0 },
                     memory: { attribute: "int", points: 0 },
-                    investigate: { attribute: "int", points: 0 },
                     arcana: { attribute: "int", points: 0 },
                     perception: { attribute: "wis", points: 0 },
                     insight: { attribute: "wis", points: 0 },
                     survival: { attribute: "wis", points: 0 },
                     "first aid": { attribute: "wis", points: 0 },
-                    persuasion: { attribute: "cha", points: 0 },
+                    performance: { attribute: "cha", points: 0 },
                     deception: { attribute: "cha", points: 0 },
+					willpower: { attribute: "cha", points: 0 },
                 }
 
             },
             computed: {
                 attributes_points_max: function () {
-                    return Math.floor(6 + this.level / 2);
+                    return Math.floor(4 + this.level / 2);
                 },
                 attributes_points_available: function () {
                     var t = this.attributes_points_max + 6;
@@ -214,7 +213,7 @@
                     var t = this.skill_points_max;
                     for (var a in this.skills) {
                         t -= this.skills[a].points;
-                    }
+                    }	
                     return t;
                 },          
                 hp: function () {

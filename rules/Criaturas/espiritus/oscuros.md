@@ -142,6 +142,8 @@ Ascendencia abisal (variante) III (incorpóreo, invisibilidad, visión periféri
 
 ## Juramentado de guerra nigromante (nivel 8)
 
+Nigromancia IV, Ascendencia abisal (variante, armadura mágica, premonición) III, Mente desencadenada II
+
 **PV:** 			**VT:** 	 		**DEF:** 
 
 **FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
@@ -180,9 +182,9 @@ Ascendencia abisal (variante) III (incorpóreo, invisibilidad, visión periféri
 
 ## Gran ogro (nivel 10)
 
-Ascendencia abisal (variante) III (tamaño superior, regeneración, armadura mágica, premonición, mejora chupavidas), Ira II, Filos cortantes IV, Armadura natural II
+Ascendencia abisal (variante) III (tamaño superior, regeneración, armadura mágica, premonición, mejora chupavidas), Ira II, Filos cortantes IV, (Mordisco II), Armadura natural II
 
-**PV:** 20			**VT:** 21	 		**DEF:** 11	 (resistencia 6, armadura natural 5)
+**PV:** 21			**VT:** 21	 		**DEF:** 11 (resistencia 6, armadura natural 5)
 
 **FUE:** 9	**DES:** 0	**CON:** 9	**INT:** -1	**SAB:** 3	**CAR:** -1
 
@@ -190,9 +192,9 @@ Ascendencia abisal (variante) III (tamaño superior, regeneración, armadura má
 
 **Talentos:** Heroísmo +14, Atletismo +12, Destrozar +12
 
-**Resiste:** armas físicas 6, magia 3
+**Resiste:** armas físicas 6, magia 3, aturdimiento 3
 
-**Inmune:** efectos mentales, miedo
+**Inmune:** efectos mentales, miedo, veneno, enfermedades, heridas permanentes leves y medias
 
 **Sentidos**: visión del vacío 30 pies
 
@@ -206,31 +208,47 @@ Ascendencia abisal (variante) III (tamaño superior, regeneración, armadura má
 
 **Regeneración:** Se sana 2 vitalidad al principio de su turno.
 
+**Resistir la muerte** (1/combate): Revive a 1 PV la primera vez que muera.
+
 **Mirada terrorífica:** Al principio de su turno todas las criaturas a 30 pies tiran carisma contra +12 o son aumentan su nivel de miedo por un paso. Sin importar el resultado reducen su cordura por 1.
+
+**Inspiración de batalla** (3/día): Puede repetir un tiro de ataque o defensa y quedarse con el resultado que más le convenga (máximo una vez por tiro).
 
 ------
 
-**Espada aserradora** (1 acción): +12, 2d6 + 9 cortante + 2 necrótico. El daño no puede ser sanado y al provocar una herida permanente se recupera 1 + gravedad vitalidad (se sana +CON vitalidad si lo mata). Aumenta el nivel de las heridas provocadas por 1 paso si el objetivo tiene 4 o menos defensa.
+**Espada aserradora** (1 acción): +13, alcance 10 pies, 2d6 + 9 cortante + 2 necrótico. El daño no puede ser sanado y al provocar una herida permanente se recupera 1 + gravedad vitalidad (se sana +CON vitalidad si lo mata). Aumenta el nivel de las heridas provocadas por 1 paso si el objetivo tiene 4 o menos defensa.
 
-**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, reduce la defensa por 3 y provoca sangrado al impactar. El sangrado inflige +1 daño al turno y aumenta el nivel de una herida permanente cada turno por un paso.
+**Devorar** (2 acciones): +11, alcance 10 pies, el objetivo es agarrado (+13 para escapar) y sufre 2d10 + 9 daño perforante además de una herida leve (media si tiene 4 o menos defensa). Futuros usos de esta habilidad contra una criatura agarrada cuestan una acción menos.
 
-**Atrapar espada** (1 acción): +12, el arma del objetivo es agarrada, impidiendo que pueda atacar con ella hasta que escape del agarre.
+**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6, reduce la defensa por 3 y provoca sangrado al impactar. El sangrado inflige +1 daño al turno y aumenta el nivel de una herida permanente cada turno por un paso. Si el objetivo se defiende con un escudo reduce su valor defensivo por 1 y si emplea *parada elemental* sufrirá la mitad de daño-
+
+**Atrapar espada** (1 acción): +13, el arma del objetivo es agarrada, impidiendo que pueda atacar con ella hasta que escape del agarre (dificultad +13). El objetivo tiene éxito automático en este tiro si no se defiende con *parada*.
+
+**Torbellino de acero** (1 acción): Ataca a todos los enemigos que se encuentren a 10 pies de él con su *espada aserradora*.
 
 ****
 
-**Tácticas:** 
+**Parada con espada:** +12 (no puede defenderse de ataques hechos con armas ligeras por criaturas medianas)
+
+**Parada marcial:** +10
+
+****
+
+**Tácticas:** (-1d6 en tiros defensivos) ataque poderoso + espada aserradora + (atrapar espada + posición defensiva)/(ataque poderoso + espada aserradora), ataque poderoso + espada aserradora + torbellino de acero, (contra un objetivo en pánico o paralizado por el miedo), devorar + ataque poderoso + espada aserradora
 
 ## Dragón oscuro adulto (nivel 12)
 
 ## Juramentado de guerra elegido (nivel 12)
 
+Infernal (variante) V (levitación, rayo de evocación, muro de energía, tormenta de chi, ataque mágico empoderado, mejora chupavidas, mejora drenadora), Filos cortantes III, Armaduras III, Ira II
+
 **PV:** 			**VT:** 	 		**DEF:** 
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+**FUE:** 9	**DES:** 1	**CON:** 8	**INT:** 1	**SAB:** 9	**CAR:** 1
 
 ------
 
-**Talentos:** 
+**Talentos:** Heroísmo 5, Averiugar intenciones 4, Percepción 4, Atletismo 3
 
 **Resiste:** 
 

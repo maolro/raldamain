@@ -2,6 +2,40 @@
 
 Ascendencia de fuego III, Magia de fuego III, Reflejos I, Mente desencadenada I
 
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
+
 ## Caballería Hibotoru (nivel 9)
 
 Guerrero divino III, Montar II, (Alabardas III, Arcos III o Filos cortantes III), Armaduras II
@@ -16,11 +50,101 @@ Guerrero divino III, Armaduras III, Filos cortantes III, Alabardas I, Magia de f
 
 ## Guardián de Homay (nivel 10)
 
-Guerrero divino III, Armaduras III, Alabardas III, Filos cortantes I, Magia de naturaleza II
+Ascendencia verdeante IV, Armaduras II, Alabardas III, Filos cortantes I, Magia de naturaleza II
+
+**PV:** 12			**VT:** 17	 		**DEF:** 14 (11 armaduras, resistencia 3)
+
+**FUE:** 6	**DES:** 3 	**CON:** 5	**INT:** 1	**SAB:** 5	**CAR:** 1 
+
+------
+
+**Talentos:** Heroísmo +9, Averiguar intenciones 3, Percepción 3, Atletismo 1, Acrobacias 3
+
+**Resiste:** magia 3, aturdimiento 3, magia de naturaleza 4
+
+**Inmune:** terreno difícil
+
+**Sentidos**: visión a oscuras 60 pies
+
+**Movimiento:** 20 pies
+
+**Acciones:** 3 (reserva 10)
+
+****
+
+**Flanqueador experto:** Sus ataques contra criaturas que flanquea infligen +3 daño.
+
+**Conexión elemental:** Se regenera 1 vitalidad y 1 reserva al principio de su turno. 
+
+------
+
+**Naginata de madera férrea** (1 acción y -1 reserva): +9 + d6, alcance 15 pies, 1d10 + 12 cortante y reduce la defensa del objetivo por 2. Aumenta el nivel de las heridas provocadas por un paso si el objetivo tiene 4 o menos defensa.
+
+**Ataque serpenteante** (1 acción): Escoge una de las siguientes maniobras de combate:
+
+- +9 contra averiguar intenciones, el objetivo es finado
+- +9 contra aptitud con arma, el objetivo es desarmado
+- +9 contra esquiva o heroísmo, el objetivo es empujado 10 pies y tropezado
+
+**Ataque lateral** (2 acciones): Realiza un ataque con su lanza contra tres enemigos en su readio de alcance y hace una maniobra de tropezar contra ellos de dificultad +9.
+
+**Preparación contra cargas** (1 acción): Esta criatura se prepara contra un ataque. La siguiente vez que una criatura pase por el radio que amenace con su arma sufrirá un ataque de oportunidad inmediato con su *naginata* el cual infligirá +1d6 daño.
+
+**Enmarañar** (2 acciones, 1 acción en *crecmimiento acelerado*): +7 + 1d6, el objetivo está enredado. Puede emplear esta habilidad como acción bonus reduciendo su reserva por 1. Si el objetivo está agarrado sufre 2d6 + 5 daño perforante y una herida leve.
+
+**Agarre elemental** (1 acción): +7 + d6 contra heroísmo, el objetivo está agarrado. 
+
+**Crecimiento acelerado** (3 acciones y -2 reserva): Convierte un área de 100 pies en terreno difícil y recibe ventaja en todos sus tiros de *enmarañar* y *parada elemental* contra criaturas que estén tocando el suelo en ese espacio. Todos sus ataques de enmarañar reducen su coste en acciones a 1 acción en ese área (los beneficios de crecimiento acelerado ya se incluyen).
+
+**Muro de zarzas** (2 acciones y -1 reserva): Crea un muro de zarcas de proporciones 30 x 10 pies, 6 PV, 2 DEF, regeneración 1 y vulnerabilidad al daño fuego. Las zarzas provocan *sangrado* a toda criatura enredada que esté en contacto con él. 
+
+****
+
+**Parada**: +8 + d6. Los aliados a 15 pies reciben +3 en tiros defensivos y esta criatura recibe -1d6 contra ataques hechos por criaturas adyacentes.
+
+**Parada elemental:** +7 + 2d6. Solo puede defenderse de ataques a distancia. (1/turno y -1 reserva) Crea un *muro de zarzas* para detener un ataque.
+
+****
+
+**Tácticas:** Crecimiento acelerado + enmarañar (-3 reserva), 2x enmarañar + naginata/agarre elemental + preparación contra cargas (-2 o -3 reserva), ataque lateral + preparación contra cargas + enmarañar (-2 o -3 reserva)
 
 ## Ekta del clan Hibotoru (nivel 11)
 
 Ascendencia de fuego IV, Magia de fuego IV, Armaduras II, Mente desencadenada II
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 
+
+****
+
+
+
+------
+
+
+
+****
+
+
+
+****
+
+**Tácticas:** 
 
 ## Jinete de las llamas (nivel 12)
 

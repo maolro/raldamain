@@ -260,7 +260,7 @@ Origen de tierra V, Golpe III, Armadura natural I, tamaño superior 2
 
 Verdeante V, Tentáculo IV, Golpe II, Armadura natural II
 
-**PV:** 25			**VT:** 22	 		**DEF:** 15  (resistencia 7, armadura natural 8)
+**PV:** 25			**VT:** 22	 		**DEF:** 13  (resistencia 7, armadura natural 6)
 
 **FUE:** 10	**DES:** -1	**CON:** 10	**INT:** -1	**SAB:** 4	**CAR:** -1
 

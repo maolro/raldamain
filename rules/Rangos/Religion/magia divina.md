@@ -9,7 +9,7 @@ Como ferviente creyente de tu fe, tus oraciones se han visto recompensadas por a
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia divina. Desbloqueas magia elemental y arcana, para la cual puedes utilizar tu estadística de sabiduría.
+Añade tu rango a todos tus tiros relacionados con magia divina. Desbloqueas magia elemental y arcana, para la cual puedes utilizar tu estadística de sabiduría. Si tienes rangos en *guerrero divino* estos se pueden aplicar también a tus habilidades de magia arcana o elemental.
 
 <u>Milagro menor</u> (acciones bonus): Tu deidad te permite dar pequeñas maldiciones y bendiciones a criaturas de tu elección. Como acción bonus una criatura de tu elección puede repetir un tiro de ataque, habilidad o defensa y quedarse con el mejor resultado. Esta habilidad se puede usarse un número de veces al día igual a tu Rango + 2 y también puede emplearse para recibir una pequeña ayuda de tu dios no relacionada con el combate.
 
