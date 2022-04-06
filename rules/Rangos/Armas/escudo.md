@@ -15,6 +15,8 @@ Añade tu rango de esta habilidad a tus tiradas defensivas con un escudo.
 
 <u>Proteger aliados</u> (reacción): Puedes defender a un aliado a 5 pies de ti como reacción utilizando tu escudo para protegerlo. Si lo haces usarás tu tirada en lugar de la tirada de defensa del aliado, pero en el caso de fracasar tú sufrirás el daño del ataque.
 
+<u>Defensa mejorada</u> (reacción): Tu soltura con el escudo te permite bloquear ataques que en otras circunstancias serían un impacto indiscutible. Una vez por ronda como reacción puedes detener un ataque enemigo que haya logrado sobreparar tu tiro defensivo a costa de reducir el valor defensivo de tu escudo por 1 (redúcelo por 2 si bloquea un golpe crítico, un *ataque poderoso* o un ataque que cause daño de fuego, radiante o fuerza), quedando destruido si su valor defensivo queda reducido a 0.
+
 ## Rango II
 
 <u>Interceptar</u> (1 acción): Puedes gastar una acción para prepararte a interceptar un ataque enemigo en cualquier momento de la ronda. Mientras te encuentres en el estado de interceptar en cualquier momento de la ronda puedes cargar una cantidad de pies igual a tu movimiento base hacia un enemigo que se esté moviendo y hacerle un ataque de oportunidad con tu escudo, deteniéndolo en el acto si logras impactar (este ataque contará como una carga). Si has entrado en el estado de *preparación contra cargas* puedes hacerle un ataque de oportunidad con tu lanza al objetivo tras impactarle con el escudo.
@@ -41,7 +43,7 @@ Añade tu rango de esta habilidad a tus tiradas defensivas con un escudo.
 
 ## Armas
 
-Un escudo base está hecho de madera y te permite protegerte de ataques a distancia, mágicos o cuerpo a cuerpo como reacción. Para ello empleará un valor conocido como el valor defensivo que no dependerá de ninguna estadística, el cual es equivalente a +4 para un escudo normal. No obstante, recibirás una penalización -2 en todos tus tiros de DES y una vez por ronda como reacción puedes bloquear un ataque enemigo que haya impactado a costa de reducir el valor defensivo de tu escudo por 1 (redúcelo por 2 si bloquea un golpe crítico, un *ataque poderoso* o un ataque que cause daño de fuego, radiante o fuerza), quedando destruido si su valor defensivo queda reducido a 0. Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
+Un escudo base está hecho de madera y te permite protegerte de ataques a distancia, mágicos o cuerpo a cuerpo como reacción. Para ello empleará un valor conocido como el valor defensivo que no dependerá de ninguna estadística, el cual es equivalente a +4 para un escudo normal. No obstante, recibirás una penalización -2 en todos tus tiros de DES.  Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
 
 - **Ligero:** Un escudo ligero es más fácil de transportar y utilizar a costa de protegerte menos. No sufres ninguna penalización a tu DES al defenderte con un escudo ligero, pero este reducirá su bonificador defensivo a 3.
 - **Metálico:** Un escudo metálico tiene mayor resistencia que uno de madera, causando que deba resistir dos impactos antes que el valor defensivo que otorga pueda ser reducida. Escudos de este tipo incrementan el penalizador a la DES por 1 a causa de su gran peso.

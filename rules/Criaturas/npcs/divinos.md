@@ -1,3 +1,43 @@
+## Acólito divino (nivel 1)
+
+Magia divina I, Magia de vida I
+
+## Guerrero de la fe (nivel 2)
+
+Guerrero divino I, Filos cortantes I, Armaduras I
+
+## Sacerdote erudito (nivel 3)
+
+Magia divina I, Magia de evocación I, Magia protectora I, Magia temporal I
+
+## Sacerdote espiritual (nivel 4)
+
+Magia divina I, Magia de naturaleza I, Ascendencia verdeante II, Magia de vida I
+
+## Paladín (nivel 5)
+
+Guerrero divino II, Filos cortantes II, Contundentes I, Armaduras I, Escudos I
+
+## Líder elegido (nivel 6)
+
+Guerrero divino II, Contunentes II, Artes marciales I, Armaduras I, Presencia II
+
+## Azote del dolor (nivel 7)
+
+Magia divina II, Magia de sangre III, Ascendencia sombría II, Mente desencadenada I
+
+## Canalizador de la destrucción (nivel 8)
+
+Magia divina I, Ascendencia abisal III, Magia de evocación III, Magia protectora II
+
+## Sectario de la muerte (nivel 9)
+
+Magia divina II, Nigromancia IV, Mente desencadenada II, Magia protectora II
+
+## Invocador abisal (nivel 10)
+
+Abisal IV, Magia divina II, Evocación III, Mental II
+
 ## Cazador espiritual (nivel 11)
 
 Filos perforantes II, (A distancia I), Guerrero divino III, Rastrear III, Reflejos III, Médium I
@@ -59,3 +99,9 @@ Contra armadura ligera: Enemigo predilecto (presa) + apuntar ataque + katana + r
 Contra espectros y médium: Enemigo predilecto + exorcizar (colectivo si puede), exorcizar (colectivo si puede) + 2x katana + katana/posición defensiva
 
 Debilidades: elementalistas de aire, telekineticistas, nigromantes, elementalistas de sangre
+
+## Gran inquisidor infernal (nivel 12) 
+
+## General consagrado (nivel 13)
+
+Guerrero divino V, Filos cortantes III, Magia divina I, Magia de evocación III, Armaduras II

@@ -13,7 +13,7 @@ Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental d
 
 <u>Pirokinesia</u> (acción bonus): Tu herencia elemental te permite controlar el fuego. Como acción bonus puedes crear una pequeña llama que durará mientras mantengas la concentración. Sólo puedes usar esta habilidad si estás en contacto con el oxígeno y puedes tener más de una llama activa. La llama puede usarse para hacer uno de los siguientes efectos (sólo puedes tener activo un único efecto al turno).
 
-- Desprende luz en un área de 20 pies, incrementando el nivel de luz de esa área por 1. La luz es distinguible a una distancia de 40 pies en oscuridad mágica.
+- Desprende luz en un área de 20 pies, incrementando el nivel de luz de esa área por un paso. La luz es distinguible a una distancia de 40 pies en oscuridad mágica.
 - Enciende un fuego de tamaño de 5 pies. Para esto la llama debe estar en contacto con material inflamable. Cada espacio con fuego se extenderá 5 pies en una dirección si hay material inflamable y provocará una quemadura leve a las criaturas en contacto con él. Si el fuego llega a ocupar un espacio de 30 pies se convertirá en un incendio.
 
 ## Rango II

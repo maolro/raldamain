@@ -6,7 +6,7 @@ Esta es una lista de los efectos de estado más comunes que pueden afectar a una
 
 ### Agarrada
 
-Una criatura agarrada tiene el cuerpo retenido por completo por otra criatura u objeto, quedando inmovilizada e incapaz de seguir luchando hasta que escape. Dicha criatura no podrá emplear acciones que requieran un movimiento (gesticular, moverse, atacar con un arma) y es incapaz de defenderse. Todos los ataques hechos contra ella contarán como un golpe crítico y no podrá concentrarse en habilidades. Para liberarse de un agarre la criatura afectada deberá emplear una acción para hacer un tiro de heroísmo, juego de manos o destrozar contra aquello que le agarre y en caso de éxito se conseguirá escapar. También puede liberarse si lo que la enreda es destruido por otra criatura o efecto (esto también cuesta una acción).
+Una criatura agarrada tiene el cuerpo retenido por completo por otra criatura u objeto, quedando inmovilizada e incapaz de seguir luchando hasta que escape. Dicha criatura no podrá emplear acciones que requieran un movimiento (gesticular, moverse, atacar con un arma) y es incapaz de defenderse. Todos los ataques hechos contra ella contarán como un golpe crítico y no podrá concentrarse en habilidades. Para liberarse de un agarre la criatura afectada deberá emplear una acción para hacer un tiro de heroísmo, juego de manos o destrozar contra aquello que le agarre y en caso de éxito se conseguirá escapar. También puede liberarse si lo que la agarra 	es destruido por otra criatura o efecto (esto también cuesta una acción).
 
 ### **Asustada** 
 
@@ -24,7 +24,7 @@ Una criatura cegada tiene dificultades percibiendo sus alrededores. Reduce su ca
 
 Una criatura confundida actúa de una manera irracional y es incapaz de distinguir aliados de enemigos. Una criatura confundida se moverá en una dirección aleatoria y atacará a la criatura más cercana, persiguiéndola hasta que esta muera o escape de su campo de visión. Si una criatura confundida está en un combate no se moverá aleatoriamente y podrá decidir cuáles acciones usar, pero no recibirá ninguna ventaja por flanqueo y es inmune a efectos beneficiosos otorgados por aliados (como Voz del comandante o Inspirar Heroísmo). Este efecto termina cuando la criatura salga del combate.
 
-### Deprimida
+### **Deprimida**
 
 Una criatura deprimida ha perdido las fuerzas para seguir luchando, resignándose a la derrota. Pierde todos los efectos de moral que tenga activos y deberá dejar de atacar inmediatamente. Si continúa en el combate podrá luchar para protegerse, pero tendrá desventaja en todos sus tiros de ataque y defensa. Si una criatura deprimida tiene su cordura reducida a 0 o le ocurre un hecho que le haga replantearse su existencia intentará suicidarse de inmediato.
 
@@ -58,11 +58,11 @@ Una criatura fascinada fija su atención en una fuente determinada, descuidando 
 
 ### Inconsciente
 
-Una criatura inconsciente es incapaz de moverse y percibir su entorno, quedando a la merced completa de sus enemigos. Al recibir este efecto de estado dejará caer todos los objetos que lleve en las manos y tomará el camino más cercano hacia el suelo, quedando así tropezada y cegada. Mientras dure este efecto no podrá realizar acciones ni defenderse y todos los ataques hechos contra ella contarán como golpes críticos. Si a una criatura inconsciente aún le quedan PV y no está exhausta o aturdida se despertará si sufre daño, escucha un ruido muy fuerte o ocurre otra acción que lo reanime forzosamente (tirarle agua fría, agitarle...), lo cual costará una acción.
+Una criatura inconsciente es incapaz de moverse y percibir su entorno, quedando a la merced completa de sus enemigos. Al recibir este efecto de estado dejará caer todos los objetos que lleve en las manos y tomará el camino más cercano hacia el suelo, quedando así tropezada y cegada. Mientras dure este efecto no podrá realizar acciones ni reacciones y todos los ataques hechos contra ella contarán como golpes críticos. Si a una criatura inconsciente aún le quedan PV y no está exhausta o aturdida se despertará si sufre daño, escucha un ruido muy fuerte o ocurre otra acción que lo reanime forzosamente (tirarle agua fría, agitarle...), lo cual costará una acción.
 
 ### Invisible
 
-Una criatura invisible es casi imposible de percibir por la vista debido a su gran sigilo o a un efecto mágico. Recibe ventaja en todos sus tiros defensivos de sigilo y detectar a la criatura con percepción requiere un gasto de una acción estándar. No pueden realizarse ataques apuntados a criaturas invisibles y estas obtendrán ventaja en sus tiros defensivos.
+Una criatura invisible es casi imposible de percibir por la vista debido a su gran sigilo o a un efecto mágico. Recibe ventaja en todos sus tiros defensivos de sigilo y detectar a la criatura con percepción requiere un gasto de una acción adicional. No pueden realizarse ataques apuntados a criaturas invisibles y estas obtendrán ventaja en sus tiros defensivos.
 
 ### **Náuseas** 
 
@@ -70,7 +70,7 @@ Una criatura con náuseas están aquejadas por un profundo dolor que le dificult
 
 ### **Paralizada** 
 
-Una criatura paralizada es incapaz de mover su cuerpo, volviéndose así incapaz de realizar acciones y reacciones. Todos los ataques hechos contra una criatura paralizada contarán como un golpe crítico y esta no podrá recuperarse de la parálisis hasta que se libere del efecto que se la ocasione. Una criatura paralizada aún mantendrá sus facultades mentales 	y podrá emplear acciones que no requieran gesticulación.
+Una criatura paralizada es incapaz de mover su cuerpo, volviéndose así incapaz de realizar acciones y reacciones. Todos los ataques hechos contra una criatura paralizada contarán como un golpe crítico y esta no podrá recuperarse de la parálisis hasta que se libere del efecto que se la ocasione. Una criatura paralizada aún mantendrá sus facultades mentales y podrá emplear acciones que no requieran gesticulación.
 
 ### **Quemada**
 

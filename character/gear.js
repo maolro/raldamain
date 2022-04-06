@@ -1,6 +1,9 @@
 var listofgear = { 
    "Armor":[
-       {name:"Cuero",def:1, penalty:0}
+       {name:"Ligera",def:2, penalty:0},
+	   {name:"Media",def:4, penalty:-2},
+	   {name:"Pesada",def:6, penalty:-4},
+	   {name:"Completa",def:8, penalty:-6}
    ],
    "Weapons":[
        {name:"Espada larga",damage:3,type:"Filos cortantes",hands:1,reach:5},

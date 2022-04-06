@@ -248,7 +248,7 @@ Una criatura base puede obtener un valor inicial de 2 a su armadura natural a co
 
 <u>Rango V:</u> Aumenta su resistencia al daño físico por 1 y a la magia por 3 además que puede emplear la habilidad *salto infernal* tres veces al día. Recibe un hechizo innato adicional de rango IV o menos y cuando entre en el estado de *guardián de la fe* todos sus aliados recibirán +1 FUE, +1 CON, +2 resistencia a daño físico y efectos mentales además que podrán revivir a 1 PV la primera vez que mueran.
 
-<u>Rango VI:</u> Aumenta su CON por 1, reci y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
+<u>Rango VI:</u> Aumenta su CON por 1	 y aumenta tres estadísticas por 1 al entrar en estado de *guardián de la fe*. Recibe también la habilidad *aura sacra* y sus ataques físicos recibirán una nueva mejora de coste equivalente a 3 créditos o menos. Es también capaz de lanzar un hechizo de rango V de manera innata.
 
 ### Abisal
 
