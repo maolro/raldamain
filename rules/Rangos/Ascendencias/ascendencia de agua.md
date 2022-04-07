@@ -37,7 +37,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
+Incrementa tu CAR por 1. 
 
 <u>Columna de agua</u> (2 acciones) Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Empleando 2 acciones puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies durante una ronda (no podrás elevarte más de 45 pies por encima del suelo. Deberás gastar una acción o reducir tu reserva elemental cada turno para mantener la columna de agua. Columna de agua solo puede ser usada si estás en contacto con una superficie de agua con volumen igual o superior a la distancia a la que te intentes elevar. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1.
 

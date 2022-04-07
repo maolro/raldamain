@@ -106,12 +106,12 @@
 
                     </div>
                     <div class="row">
-                        <div class="col">HP:&nbsp;{{hp}}</div>
-                        <div class="col">Vitality:&nbsp;{{vitality}}</div>
-                        <div class="col">Sanity:&nbsp;{{sanity}}</div>
+                        <div class="col">HP:&nbsp;{{computedstats.hp}}</div>
+                        <div class="col">Vitality:&nbsp;{{computedstats.vitality}}</div>
+                        <div class="col">Sanity:&nbsp;{{computedstats.sanity}}</div>
                         <div class="col">DEF:&nbsp; </div>
                     </div>
-                    <div v-for="(value, name) in attributes" class="row">
+                    <div v-for="(value, name) in computedstats.basestats" class="row">
                         <div class="col">{{ name }}</div>
                         <div class="col">{{ value }}</div>
                     </div>
@@ -132,7 +132,7 @@
 					</div>
 					<ul>
 					<li v-for="(skilltype, skillname) in value">
-						{{skillname}}:{{skilltype}}
+						<strong>{{skillname}}</strong> <small>{{skilltype}}</small>
 					</li>
 					</ul>
 				</template>
@@ -141,13 +141,14 @@
         </div>
     </div>
     <script>
+
         var skillstate = {};
         for(r in listofskills)
         {
             var maxlevel = 0;
-            for(a in listofskills[r])
+            for(a in listofskills[r].skills)
             {
-                maxlevel = Math.max(maxlevel, listofskills[r][a].level);
+                maxlevel = Math.max(maxlevel, listofskills[r].skills[a].level);
             }
             skillstate[r] = { points:0, max:maxlevel };
         }
@@ -186,6 +187,46 @@
 
             },
             computed: {
+			    computedstats: function()
+				{
+				    var context = 
+					{
+						basestats:
+						{
+							str: this.attributes.str,
+							dex: this.attributes.dex,
+							con: this.attributes.con,
+							int: this.attributes.int,
+							wis: this.attributes.wis,
+							cha: this.attributes.cha,
+						},
+						resistences: [],
+						temp:
+						{
+							hpbonus: 0
+						}
+					};
+					
+					for(var s in this.skills)
+					{
+						var points = this.skills[s].points;
+						if (points > 0)
+						{
+						
+						    if (listofskills[s].bonus != undefined)
+							{
+								listofskills[s].bonus(context, workingspace, points);
+						    }
+						}
+				    }
+					
+					context.hp = 3 + Math.floor((this.level - 1) / 3) + context.basestats.con + context.temp.hpbonus;
+					context.vitality = 2 + this.level + context.basestats.con;
+					context.sanity = 2 + this.level + context.basestats.wis;
+					delete context.temp;
+					return context;
+				},
+			
                 attributes_points_max: function () {
                     return Math.floor(4 + this.level / 2);
                 },
@@ -216,15 +257,6 @@
                     }	
                     return t;
                 },          
-                hp: function () {
-                    return 3 + Math.floor((this.level - 1) / 3) + this.attributes.con;
-                },
-                vitality: function () {
-                    return 2 + this.level + this.attributes.con;
-                },
-                sanity: function () {
-                    return 2 + this.level + this.attributes.wis;
-                },
 				
 				/* calculates the list of all skills that have points */
 				allskills: function() {
@@ -235,13 +267,18 @@
 						var points = this.skills[s].points;
 						if (points > 0)
 						{
-							retval[s] = {};
-							
-							for(var r in listofskills[s])
+							for(var r in listofskills[s].skills)
 							{
-								if (listofskills[s][r].level <= points)
+								var item = listofskills[s].skills[r];
+							
+								if (item.level <= points)
 								{
-									retval[s][listofskills[s][r].name] = listofskills[s][r].type;
+									if (retval[item.type] == undefined)
+									{
+									    retval[item.type] = {};
+									}
+								
+								    retval[item.type][item.name] = item.description;
 								}
 							}
 						}

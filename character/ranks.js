@@ -1,21 +1,26 @@
 var listofskills = { 
     "Alabardas":
-        [
-            { name: "Alabarda", level:1, type: "standardaction", cost: 2, description:""},       
+	{
+        skills: 
+		[
+            { name: "Alabarda", level:1, type: "action", cost: 2, description:"+({ this.foo }x + rank) to hit, 1d8 + (STR) damage"},       
             { name: "Parada", level:1, type: "reaction", description:""},       
             { name: "Flanqueador experto", level:3, type: "passive", description:"Tu arma hace +2 daño base contra objetivos que flanquees"},
             { name: "Carga con lanza", level:4, type: "passive", description:"Aumenta tu daño base por 2 al hacer una carga. Además, puedes gastar 2 ventajas generadas en una carga para agarrar a un objetivo clavándole tu arma"},
-            { name: "Preparación contra cargas", level:1, type: "moveaction", description:"En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual infliges +2 daño. Si impactas, el objetivo debe detenerse de inmediato"},
-            { name: "Ajustar alcance", level:2, type: "moveaction", description:"Cambia el alcance de tu arma por 5 pies. Si lo reduces a 5 pies, perderás todas las penalizaciones al defenderte, mientras que si lo aumentas a 15 pies pierdes un dado de dificultad en tiros defensivos"},
-            { name: "Ataque lateral", level:4, type: "standardaction", description:"Haz un ataque con tu arma contra todas las criaturas en un arco de 15 pies. Gasta 2 ventajas para tropezar a tu objetivo"},
-            { name: "Ataque circular", level:4, type: "fullround", description:""},
+            { name: "Preparación contra cargas", level:1, type: "action", cost: 1, description:"En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual infliges +2 daño. Si impactas, el objetivo debe detenerse de inmediato"},
+            { name: "Ajustar alcance", level:2, type: "passive", description:"Cambia el alcance de tu arma por 5 pies. Si lo reduces a 5 pies, perderás todas las penalizaciones al defenderte, mientras que si lo aumentas a 15 pies pierdes un dado de dificultad en tiros defensivos"},
+            { name: "Ataque lateral", level:4, type: "action", cost: 1, description:"Haz un ataque con tu arma contra todas las criaturas en un arco de 15 pies. Gasta 2 ventajas para tropezar a tu objetivo"},
+            { name: "Ataque circular", level:4, type: "action", cost: 1, description:""},
             { name: "Ataque serpenteante", level:3, type: "addon", base:"Alabarda", description:""},
             { name: "Carga repentina", level:4, type: "addon", base:"Preparación contra cargas", description:"En cualquier momento de la ronda puedes hacer una carga como reacción"},
             { name: "Ataque vital", level:5, type: "addon", base:"Alabarda", description:"Las heridas permanentes que provocas son de un nivel superior al hacer preparación contra cargas. Gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo"},
             { name: "Reposicionar", level:5, type: "addon", base:"Parada", description:"Muévete 5 pies tras hacer una parada exitosa"}
-        ],
-    "Arcos":
-        [
+        ]
+	},
+    "Arcos": 
+	{
+        skills: 
+		[
             { name: "Disparo preciso", level:3, type: "passive", description:"Tus ataques a distancia ignoran cubierta y ocultamiento al atacar a objetivos en tu radio de puntería mortal"},
             { name: "Ojo del francotirador", level:3, type: "passive", description:"Reduce todas las penalizadores por disparar a distancia por un dado de dificultad"},
             { name: "Puntería mortal", level:1, type: "passive", description:"Ignoras la defensa que tengan objetivos que se encuentren a menos de 15 pies de ti"},
@@ -25,17 +30,19 @@ var listofskills = {
             { name: "Arquero experto", level:2, type: "addon", base:"Arco", description:""},
             { name: "Impacto vital", level:5, type: "addon", base:"Arco", description:""},
             { name: "Disparo en movimiento", level:4, type: "passive", description:""}
-
-        ],
-     "Armaduras":
-        [
+		]
+	},
+     "Armaduras": 
+	 {
+		 bonus: ( context, workingspace, level ) => { context.basestats.str += level; },
+		 skills: [
             { name: "Blindaje", level:2, type: "passive", description:""},       
             { name: "Protección elemental", level:2, type: "passive", description:""},       
             { name: "Campeón de acero", level:3, type: "reaction", description:""},       
-    
-        ],
-    "Armas de fuego":
-        [
+	 ]},
+    "Armas de fuego": 
+	{
+		skills: [
             { name: "Agilidad del pistolero", level:1, type: "passive", description:""},
             { name: "Disparo preciso", level:3, type: "passive", description:"Al disparar a un objetivo que se encuentre a menos de 15 pies de ti ignorarás todos los puntos de defensa que tenga por su armadura. Antes de atacar puedes añadir un dado de dificultad a tu tiro de ataque para duplicar la distancia a la que puedes utilizar Puntería mortal"},
             { name: "Ojo del francotirador", level:3, type: "fullroundaction", description:"Haz un disparo con el cual reduces todas las penalizaciones por distancia en un dado de dificultad y duplicas la distancia a la que puedes usar Puntería mortal"},
@@ -46,9 +53,11 @@ var listofskills = {
             { name: "Recarga", level:2, type: "moveaction", description:""},
             { name: "Puntería experta", level:5, type: "moveaction", description:""},
             { name: "Disparos a bocajarro", level:4, type: "fullroundaction", description:""},
-        ],
-    "Artes marciales":
-        [
+        ]
+	},
+    "Artes marciales": 
+	{
+        skills: [
             { name: "Puño preciso", level:3, type: "moveaction", description:""},
             { name: "Puño aturdidor", level:2, type: "addon",base:"Golpe", description:""},
             { name: "Patada feroz", level:2, type: "addon",base:"Golpe", description:""},
@@ -61,9 +70,10 @@ var listofskills = {
             { name: "Golpe", level:1, type: "attack", description:""},
             { name: "Defensa marcial", level:1, type: "block", description:""},
             { name: "Secuencia de ataques", level:1, type: "moveaction", description:""}
-        ],
-    "Cadenas":
-        [
+	]},
+    "Cadenas": 
+	{
+        skills:[
             { name: "Enredar", level:1, type: "addon",base:"Cadena", description:""},
             { name: "Cadena", level:1, type: "attack", description:""},
             { name: "Parada", level:1, type: "block", description:""},
@@ -76,9 +86,10 @@ var listofskills = {
             { name: "Escudo humano", level:4, type: "addon",base:"Cadena", description:""},
             { name: "Ahorcar", level:5, type: "addon",base:"Cadena", description:""},
             { name: "Reposicionar", level:5, type: "addon",base:"Parada", description:""}
-        ],
+	]},
     "Contundentes":
-    [
+	{
+    skills:[
         { name: "Maza", level:1, type: "standardacion", description:""},
         { name: "Ataque poderoso", level:1, type: "passive", description:"Antes de realizar un ataque puedes escoger reducir los dados de habilidad que tiras por 1 para incrementar tu daño base por 2"},
         { name: "Impacto de choque", level:1, type: "addon",base:"Ataque", description:""},
@@ -90,9 +101,10 @@ var listofskills = {
         { name: "Quebrar el suelo", level:4, type: "fullroundaction", description:""},
         { name: "Golpe fulminante", level:5, type: "addon",base:"Maza", description:""},
         { name: "Ataque despiadado", level:5, type: "bonusaction", description:""},
-    ],
+    ]},
     "Escudo":
-    [
+	{
+    skills:[
         { name: "Golpe de escudo", level:1, type: "bonusaction", description:""},        
         { name: "Proteger aliado", level:1, type: "reaction", description:""},        
         { name: "Escudo", level:1, type: "reaction", description:""},        
@@ -104,9 +116,10 @@ var listofskills = {
         { name: "Guardián", level:4, type: "addon",base:"Forma defensiva", description:""},        
         { name: "Maestría con escudo", level:5, type: "addon",base:"Forma defensiva", description:""}, 
         { name: "Detener hechizos", level:5, type: "passive", description:""}       
-    ],
+    ]},
     "Filos cortantes":
-    [
+	{
+    skills:[
         { name: "Espada", level:1, type: "standardaction", description:""},       
         { name: "Parada", level:1, type: "reaction", description:""},       
         { name: "Tajo feroz", level:1, type: "addon",base:"Espada", description:""},       
@@ -118,9 +131,10 @@ var listofskills = {
         { name: "Torbellino de acero", level:4, type: "fullroundaction", description:""},       
         { name: "Rompe escudos", level:4, type: "addon",base:"Espada", description:""},       
         { name: "Tajo cercenador", level:5, type: "addon",base:"Espada", description:""},       
-    ],
+    ]},
     "Filos perforantes":
-    [
+	{
+    skills:[
         { name: "Ataque preciso", level:1, type: "passive", description:""},       
         { name: "Daga", level:1, type: "standardaction", description:""},       
         { name: "Parada", level:1, type: "reaction", description:""},       
@@ -131,8 +145,10 @@ var listofskills = {
         { name: "Ataque fintado", level:4, type: "bonusaction", description:""},       
         { name: "Impacto vital", level:5, type: "addon",base:"Daga", description:""},
         { name: "Contrataque", level:5, type: "addon",base:"Parada", description:""}     
-    ],
+    ]},
     "Reflejos":
+	{
+	skill:
     [
         { name: "Sutileza", level:1, type: "passive", description:""},
         { name: "Rapidez", level:1, type: "passive", description:""},              
@@ -144,15 +160,17 @@ var listofskills = {
         { name: "Esquiva asombrosa superior", level:4, type: "addon",base:"Esquiva asombrosa", description:""},
         { name: "Libertad de movimiento", level:5, type: "passive", description:""},       
         { name: "Oportunista", level:5, type: "reaction", description:""}      
-    ],
+    ]},
 
-    "Fortitud":
+    "Fortitud": 
+	{ 
+	skill:
     [
         { name: "Resistir la muerte", level:2, type: "passive", description:""},       
         { name: "Resistir armas", level:3, type: "reaction", description:""},       
         { name: "Recuperación rápida", level:3, type: "passive", description:""},       
-    ],
-    "Ira":
+    ]},
+    "Ira": { skill: 
     [
         { name: "Ira", level:1, type: "passive", description:""},       
         { name: "Movimiento ágil", level:1, type: "addon",base:"Ira", description:""},       
@@ -162,8 +180,8 @@ var listofskills = {
         { name: "Temerario", level:3, type: "passive", description:""},    
         { name: "Ira primigenia", level:4, type: "passive", description:""},       
         { name: "Difícil de matar", level:4, type: "passive", description:""},          
-    ],
-    "Rastrear":
+    ]},
+    "Rastrear":  { skill: 
     [
         { name: "Enemigo predilecto", level:1, type: "fullroundaction", description:""},       
         { name: "Terreno predilecto", level:1, type: "passive", description:""},       
@@ -176,8 +194,8 @@ var listofskills = {
         { name: "Maestro cazador", level:5, type: "addon",base:"Enemigo predilecto", description:""},     
         { name: "Presa", level:5, type: "bonusaction", description:""},        
         { name: "Depredador imparable", level:5, type: "addon",base:"Presa", description:""},       
-    ],
-    "Guerrero divino":
+    ]},
+    "Guerrero divino":  { skill: 
     [
         { name: "Sanación", level:1, type: "standardaction", description:""},      
         { name: "Guerrero de la fe", level:1, type: "passive", description:""}, 
@@ -190,8 +208,8 @@ var listofskills = {
         { name: "Aura sacra", level:5, type: "addon",base:"Guardián de la fe", description:""},       
         { name: "Intervención divina", level:5, type: "reaction", description:""},       
 
-    ],
-    "Influenciar":
+    ]},
+    "Influenciar": { skill: 
     [
         { name: "Máscara", level:1, type: "passive", description:""},       
         { name: "Persuasivo", level:1, type: "standardaction", description:""},       
@@ -202,9 +220,10 @@ var listofskills = {
         { name: "Persuasión en masa", level:5, type: "addon",base:"Persuasivo", description:""},       
         { name: "Maestro titiritero", level:6, type: "addon",base:"Persuasivo", description:""}, 
         { name: "Conducir a la desesperación", level:6, type: "standardaction", description:""}     
-    ],
-    "Presencia":
-    [
+    ]},
+    "Presencia":  
+	{ 
+	skill:  [
         { name: "Voz del comandante", level:1, type: "standardaction", description:""},     
         { name: "Inspirar temor", level:1, type: "passive", description:""},       
         { name: "Atemorizar", level:2, type: "standardaction", description:""},       
@@ -216,5 +235,5 @@ var listofskills = {
         { name: "Inflamar emociones", level:4, type: "standardaction", description:""},       
         { name: "Inspirar leyenda", level:5, type: "addon",base:"Inspirar heroísmo", description:""},
         { name: "Bonus táctico", level:5, type: "addon",base:"Voz del comandante", description:""}      
-    ]
+    ]}
 }

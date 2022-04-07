@@ -4,13 +4,13 @@ title:
 
 ## Ukron, remanente del odio (nivel 2)
 
-**PV:** 4			**VT:** 5	 		**DEF:** 2 (natural 2)
+**PV:** 4			**VT:** 5	 		**DEF:** 4 (natural 4)
 
 **FUE:** 0 	**DES:** 4	**CON:** 1	**INT:** -1	**SAB:** 1	**CAR:** -1	
 
 ------
 
-**Talentos:** Sigilo +5, Percepción +2, Atletismo +1
+**Talentos:** Sigilo +5, Percepción +2, Acrobacias +5
 
 **Movimiento:** 20 pies
 
