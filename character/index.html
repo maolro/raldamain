@@ -15,6 +15,7 @@
     <script src="js/v-minusplusfield.js" type="text/javascript"></script>
     <link href="css/v-minusplusfield.css" rel="stylesheet" />
     <script src = "ranks.js" type="text/javascript" charset="utf-8"></script>
+	<script src = "gear.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -91,8 +92,13 @@
                         total: {{skill_points_max}} points {{skill_points_available}}
                     </div>
                     <div id="gear" role="tabpanel" aria-labelledby="gear-tab" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>Some content in menu 3.</p>
+                        <h3>Equipamiento</h3>
+						<div>Armaduras</div>
+						<select v-model="selectedarmor">
+							<template v-for="(value, name) in gear.armor">
+								<option> {{name}}</option>
+							</template>
+						</select>
                     </div>
                 </div>
             </div>
@@ -109,7 +115,7 @@
                         <div class="col">HP:&nbsp;{{computedstats.hp}}</div>
                         <div class="col">Vitality:&nbsp;{{computedstats.vitality}}</div>
                         <div class="col">Sanity:&nbsp;{{computedstats.sanity}}</div>
-                        <div class="col">DEF:&nbsp; </div>
+                        <div class="col">DEF:&nbsp; {{gear.armor[selectedarmor].def}}</div>
                     </div>
                     <div v-for="(value, name) in computedstats.basestats" class="row">
                         <div class="col">{{ name }}</div>
@@ -187,7 +193,9 @@
                     performance: { attribute: "cha", points: 0 },
                     deception: { attribute: "cha", points: 0 },
 					willpower: { attribute: "cha", points: 0 },
-                }
+                },
+				gear: listofgear,
+				selectedarmor: "Ligera"
 
             },
             computed: {
@@ -198,7 +206,7 @@
 						basestats:
 						{
 							str: this.attributes.str,
-							dex: this.attributes.dex,
+							dex: (this.attributes.dex + this.gear.armor[this.selectedarmor].penalty),
 							con: this.attributes.con,
 							int: this.attributes.int,
 							wis: this.attributes.wis,
