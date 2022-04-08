@@ -130,7 +130,41 @@ En el caso de que el combate parezca estar siendo dominado por el enemigo y que 
 
 ## Sabueso abisal (nivel 4)
 
-Abisal I (tamaño superior), Mordisco II, (Golpe I), Armadura natural I, Ira I
+Mordisco II, (Garras I), Reflejos I, 6 PT (tocado por la locura)
+
+**PV:** 			**VT:** 	 		**DEF:** 
+
+**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+
+------
+
+**Talentos:** 
+
+**Resiste:** 
+
+**Inmune:** 
+
+**Sentidos**: 
+
+**Movimiento:** 
+
+**Acciones:** 4
+
+****
+
+
+
+------
+
+**Mordisco** (2 acciones): 
+
+****
+
+
+
+****
+
+**Tácticas:** 
 
 ## Khutul (nivel 4)
 

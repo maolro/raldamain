@@ -7,9 +7,9 @@ Algunas criaturas son capaces de emplear habilidades mágicas de una manera comp
 
 Aquí se presenta una lista de las variaciones que tendrán las habilidades de magia arcana al convertirse a hechizos innatos. Un personaje que tenga hechizos innatos no tiene porqué seguir la progresión de los hechizos según los rangos pero si desea tener determinados hechizos de alto nivel antes deberá cumplir los requisitos que se especifican en la lista.
 
-## Lista de hechizos
+# Lista de hechizos
 
-### Magia de evocación
+## Magia de evocación
 
 <u>Rayo de energía</u> (Rango I): Puede emplearse 3 veces al día, cuesta 2 acciones e infligirá 1d6 + 3 daño de fuerza, frío, fuego, rayo o trueno en un cono de 15 pies o un rayo con alcance 60 pies y radio de salpicadura 5 pies. El tipo de daño y la forma del ataque se escoge al obtener esta habilidad y no podrá cambiarse.
 
@@ -27,7 +27,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Bomba mágica</u> (Rango V, requiere ataque mágico empoderado): Puede emplearse una vez al día, cuesta 3 acciones y inflige 1d6 + 13 daño fuerza a todas las criaturas en un radio de 40 pies. Todas las criaturas en el área que no tengan resistencia mágica o la tengan reducida a 0 morirán instantáneamente y si lo tienen redúcela por 1. Pulveriza también todos los objetos que no estén hechos de un material superior o mágico. Aumenta tu cantidad de usos de rayo de energía y ataque mágico empoderado por 2 y puedes escoger un elemento adicional para ambas habilidades.
 
-### Magia espacial
+## Magia espacial
 
 <u>Salto espacial</u> (Rango I): Puede empelarse 3 veces al día, cuesta una acción y la criatura se teletransportará 30 pies en cualquier dirección. Si la criatura está en posición defensiva puede gastar un uso de este hechizo como reacción para evitar automáticamente un ataque (solo podrá usarse así una vez por ronda).
 
@@ -43,7 +43,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Umbral</u> (Rango V, requiere *teletransportar*): Una vez al día empleando 3 acciones puedes abrir una brecha que conecta este plano con otro planeta o dimensión. Esta habilidad funciona como *puertas del infierno*, *portal sombrío*, *invocar la tormenta* o *portal espiritual* y permanecerá abierto 10 rondas o hasta que pierdas la concentración.
 
-### Magia ilusoria
+## Magia ilusoria
 
 <u>Cambiar aspecto</u> (Rango I): La criatura puede alterar su aspecto como una acción sin cambiar su tamaño ni fisiología empleando una acción. Tres veces al día como acción bonus puede emplear las ilusiones para protegerse, dándole así ocultamiento ocultamiento durante una ronda. Si tiene activa esta habilidad reduce la cantidad de ilusiones en las que puede concentrarse simultáneamente por 1.
 
@@ -65,7 +65,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Monstruo ilusorio</u> (Rango V, requiere *espejismo arcano*): Tres veces al día puedes crear una criatura viva empleando ilusiones, la cual se comportará como si fuera real. Si creas un monstruo todas las criaturas que puedan verlo deberán hacer un tiro de carisma contra tu magia o aumentan su nivel de miedo por un paso. Puedes flanquear junto a tu criatura ilusoria frente a todas las criaturas que no la hayan desmentido y si esta es atacada puedes emplear tu magia ilusoria para defenderla. 
 
-### Magia mental
+## Magia mental
 
 <u>Asalto psíquico</u> (Rango I): Puede emplearse 3 veces al día, cuesta 2 acciones y el objetivo reducirá su cordura por 1 + INT además que perderá la concentración y reducirá una de sus estadísticas mentales por 1. 
 
@@ -93,7 +93,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Destrozar mente</u> (Rango V, requiere *sobrecarga mental*): Tres veces al día empleando 2 acciones puedes hacer un devastador ataque mental contra un objetivo. Esta habilidad funciona como una *sobrecarga mental* que inflige 1d6 + INT daño a la cordura y en el caso que logres reducirla a 0 tu objetivo reducirá sus estadísticas mentales a -4, perdiendo todos sus rangos de las categorías de ciencia, social, religión, elementalismo y magia arcana. Recibes 2 usos adicionales de *asalto psíquico* y *sobrecarga mental*.
 
-### Magia protectora
+## Magia protectora
 
 <u>Disrupción de chi</u> (Rango I): Puede emplearse 3 veces al día, cuesta 2 acciones y otorga un penalizador -2 al objetivo en todos sus tiros relacionados con magia arcana o reduce la eficacia de un objeto mágico por 1. Eliminar este efecto requiere gastar una acción y emplear 1 chi (un uso de una habilidad mágica si tiene magia innata). 
 
@@ -115,7 +115,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de m
 
 <u>Aprisionar</u> (Rango V, requiere *retener persona*): Una vez al día empleando un ritual de 2 turnos puedes encerrar a una criatura incapacitada en un demiplano accesible solo por ti. El demiplano solo puede ser accedido por ti y está siempre afectado por un *aura antimágica* y si la criatura encerrada muera resucitará ahí de inmediato.
 
-### Magia temporal
+## Magia temporal
 
 <u>Premonición</u> (Rango I): Como reacción empleable 3 veces al día puedes repetir un tiro de su elección y quedarte con el resultado que más le conviene o recibir la habilidad *esquiva asombrosa* durante una ronda.
 

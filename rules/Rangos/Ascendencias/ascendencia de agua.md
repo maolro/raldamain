@@ -15,15 +15,15 @@ Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental d
 
 - Evapora una cantidad de agua con volumen máximo de un pie cuadrado. El agua que evapores debe estar adyacente a ti. Si tienes rangos en [magia de sangre](https://raldamain.com/rules/Rangos/Elementalismo/magia de sangre.html) puedes crear una cantidad de agua de volumen igual a un pie cuadrado drenándola de tu entorno.
 - Mueve 30 pies en cualquier dirección una cantidad de agua de volumen igual a un pie cuadrado. El agua que manipules no hará daño ni empujará.
-- Usas el agua para cicatrizar las heridas de un aliado, permitiéndote emplear *primeros auxilios* sin la necesidad de tener los materiales adecuados. Si tienes rangos en magia elemental de agua puedes empl
+- Usas el agua para cicatrizar las heridas de un aliado, permitiéndote emplear *primeros auxilios* sin la necesidad de tener los materiales adecuados.
 
 ##  Rango II
 
 Incrementa tu CON por 1.
 
-<u>Nadador hábil</u> (pasiva) Recibes una velocidad de natación de 30 pies. Estar bajo el agua no impide tu visión y tienes éxito automático en tiros para nadar en aguas rugientes (estas aún reducirán tu velocidad). No sufres daño no-letal a causa de nadar durante un tiempo excesivo.
+<u>Nadador hábil</u> (pasiva) Recibes una velocidad de natación de 15 pies. Estar bajo el agua no impide tu visión y tienes éxito automático en tiros para nadar en aguas rugientes (estas aún reducirán tu velocidad). No sufres daño no-letal a causa de nadar durante un tiempo excesivo.
 
-<u>Respiración acuática</u> (pasiva): Tus pulmones están mejor adaptados para respirar bajo el agua. Eres capaz aguantar tu respiración durante un número de minutos igual a tu rango, y no puedes ser ahogado por magia elemental de agua.
+<u>Respiración acuática</u> (pasiva): Tus pulmones están mejor adaptados para respirar bajo el agua. Eres capaz aguantar tu respiración durante un número de minutos igual a tu rango, y no puedes ser ahogado por magia elemental de agua. Si tienes la mejora *aguantar respiración* te vuelves capaz de respirar tanto el aire como el agua, permitiéndote pasar una cantidad ilimitada de tiempo bajo el agua.
 
 <u>Puñetazo hidráulico</u> (pasiva) Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos, acumulándose con reserva de energía. Puedes reducir tu reserva por 1 para infundir tus ataques físicos con agua durante una ronda. Un ataque infundido aumenta su daño base por 2 y recibirás ventaja en todas las maniobras de combate que realices. Si tienes rangos en [magia de hielo](https://raldamain.com/rules/Rangos/Elementalismo/magia de hielo.html) tus ataques infligirán +2 daño de frío y podrás ralentizar a tu objetivo al reducir sus PV.
 
@@ -37,7 +37,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1. 
+Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de agua a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Columna de agua</u> (2 acciones) Eres capaz de caminar por el agua sin sufrir penalizaciones a tu movimiento. Empleando 2 acciones puedes propulsarte con una columna de agua, la cual te otorga una velocidad de vuelo igual a 30 pies durante una ronda (no podrás elevarte más de 45 pies por encima del suelo. Deberás gastar una acción o reducir tu reserva elemental cada turno para mantener la columna de agua. Columna de agua solo puede ser usada si estás en contacto con una superficie de agua con volumen igual o superior a la distancia a la que te intentes elevar. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1.
 

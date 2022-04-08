@@ -200,7 +200,7 @@
 							wis: this.attributes.wis,
 							cha: this.attributes.cha,
 						},
-						resistences: [],
+						resistances: [],
 						temp:
 						{
 							hpbonus: 0
@@ -215,7 +215,7 @@
 						
 						    if (listofskills[s].bonus != undefined)
 							{
-								listofskills[s].bonus(context, workingspace, points);
+								listofskills[s].bonus(context, points);
 						    }
 						}
 				    }
@@ -262,6 +262,8 @@
 				allskills: function() {
 					var retval = {};
 					
+					var context = this.computedstats;
+					
 					for(var s in this.skills)
 					{
 						var points = this.skills[s].points;
@@ -278,7 +280,21 @@
 									    retval[item.type] = {};
 									}
 								
-								    retval[item.type][item.name] = item.description;
+									var description;
+									if (typeof item.description === 'function')
+									{
+										description = item.description(context, points);
+									}
+									else
+									{
+										description = item.description;
+									}
+									if(item.cost != undefined){		
+										description += " ("+item.cost+" accion" + (item.cost > 1 ? "es" : "") + ")";
+									}
+
+									
+									retval[item.type][item.name] = description;
 								}
 							}
 						}

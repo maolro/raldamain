@@ -33,7 +33,7 @@ Aumenta tu resistencia a daño físico por 1.
 
 ## Rango IV
 
-Incrementa tu DES por 1. Puedes sumar tu rango de magia elemental de hielo a todos los tiros de ataque hechos con un arma de tu elección sustituyendo a tu rango de arma.
+Incrementa tu DES por 1. Puedes sumar tu rango en magia elemental de hielo a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Caminante del viento</u> (pasiva): Eres capaz de volar a una velocidad de 60 pies si te encuentras en un lugar afectado por una tormenta o vientos con fuerza 3 o más. Puedes también volar en otros entornos, pero ronda que lo intentes reducirás tu reserva elemental por 1. Atacar a una persona desde el aire no provoca ataques de oportunidad.
 
