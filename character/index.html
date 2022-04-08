@@ -99,6 +99,18 @@
 								<option> {{name}}</option>
 							</template>
 						</select>
+						<div>Mano principal</div>
+						<select v-model="mainhandweapon">
+							<template v-for="(value, name) in gear.weapons">
+								<option> {{name}}</option>
+							</template>
+						</select>
+						<div>Mano secundaria</div>
+						<select v-model="offhandweapon" v-if="gear.weapons[mainhandweapon].hands==1">
+							<template v-for="(value, name) in gear.weapons">
+								<option v-if="gear.weapons[name].hands==1">{{name}}</option>
+							</template>
+						</select>
                     </div>
                 </div>
             </div>
@@ -195,7 +207,9 @@
 					willpower: { attribute: "cha", points: 0 },
                 },
 				gear: listofgear,
-				selectedarmor: "Ligera"
+				selectedarmor: "Ligera",
+				mainhandweapon: "Golpe",
+				offhandweapon: "Golpe",
 
             },
             computed: {
