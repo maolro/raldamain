@@ -115,6 +115,10 @@
                         <div class="col">{{ name }}</div>
                         <div class="col">{{ value }}</div>
                     </div>
+					<div class="row">
+                        <div class="col">Acciones: </div>
+                        <div class="col">{{computedstats.actions}}</div>
+                    </div>
 				</div>
 				<div>
 					<h6>Talents:</h6>
@@ -200,6 +204,7 @@
 							wis: this.attributes.wis,
 							cha: this.attributes.cha,
 						},
+						actions: 3, 
 						resistances: [],
 						temp:
 						{
@@ -217,6 +222,18 @@
 							{
 								listofskills[s].bonus(context, points);
 						    }
+							for(var r in listofskills[s].skills)
+							{
+								var item = listofskills[s].skills[r];
+							
+								if (item.level <= points)
+								{
+									if (item.bonus != undefined)
+									{
+										item.bonus(context, points);
+									}
+								}
+							}
 						}
 				    }
 					

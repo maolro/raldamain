@@ -148,10 +148,10 @@ var listofskills = {
     ]},
     "Reflejos":
 	{
-	skill:
+	skills:
     [
         { name: "Sutileza", level:1, type: "passive", description:""},
-        { name: "Rapidez", level:1, type: "passive", description:""},              
+        { name: "Rapidez", level:1, type: "passive", description:"", bonus:( context, level ) => { context.actions += 1 }},              
         { name: "Evasión", level:2, type: "passive", description:""},       
         { name: "Esquiva asombrosa", level:2, type: "passive", description:""},       
         { name: "Prisa", level:3, type: "passive", description:""},       
@@ -164,13 +164,13 @@ var listofskills = {
 
     "Fortitud": 
 	{ 
-	skill:
+	skills:
     [
         { name: "Resistir la muerte", level:2, type: "passive", description:""},       
         { name: "Resistir armas", level:3, type: "reaction", description:""},       
         { name: "Recuperación rápida", level:3, type: "passive", description:""},       
     ]},
-    "Ira": { skill: 
+    "Ira": { skills: 
     [
         { name: "Ira", level:1, type: "passive", description:""},       
         { name: "Movimiento ágil", level:1, type: "addon",base:"Ira", description:""},       
