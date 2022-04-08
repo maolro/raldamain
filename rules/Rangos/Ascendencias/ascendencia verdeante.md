@@ -25,7 +25,7 @@ Incrementa tu SAB por 1.
 
 ## Rango III 
 
-Aumenta tu resistencia a daño físico por 1. Recibes 3 PT adicionales que puedes gastar en mejoras.
+Aumenta tu resistencia a daño físico por 1. Recibes 2 PT adicionales que puedes gastar en mejoras.
 
 <u>Espíritu protector</u> (ritual): Un espíritu de la naturaleza actúa como tu guía, dándote consejo y protegiéndote de peligros. Mientras te encuentres en un terreno armonizado el espíritu protector te alertará de la presencia de enemigos ocultos y te otorgará los beneficios de estar en *posición defensiva*. Conoces también como realizar un ritual para contactar a tu espíritu protector y recibir su sabiduría. Este ritual tiene una duración de 10 minutos y te permite convertir un terreno en armonizado y hacerle hasta 4 preguntas a tu espíritu. Estas preguntas deben ser contestadas sinceramente por el máster siempre y cuando el espíritu conozca la respuesta, aunque la respuesta puede ser tan críptica como el máster desee. 
 
@@ -33,7 +33,7 @@ Aumenta tu resistencia a daño físico por 1. Recibes 3 PT adicionales que puede
 
 ## Rango IV 
 
-Incrementa tu DES por 1.
+Incrementa tu DES por 1. Puedes sumar tu rango en magia elemental de naturaleza a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Ataques infundidos</u> (pasiva): Tus ataques físicos están recubiertos de madera y zarzas para incrementar su fuerza, aumentando así su daño base por 2 y tu alcance por 5 pies. Si empleas furia de la naturaleza en un ataque infundido podrás reducir la DEF de la armadura que lleve objetivo por 2 al impactar (le provocas sangrado si esta ha sido reducida a 2 o menos).
 
@@ -49,7 +49,7 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
 ## Rango VI
 
-Incrementa tu SAB por 1. Recibes 3 PT adicionales que puedes gastar en mejoras.
+Incrementa tu SAB por 1. Recibes 2 PT adicionales que puedes gastar en mejoras.
 
 <u>Elegido de los espíritus</u> (pasiva) Eres un campeón bendecido por los espíritus. Recibes resistencia 4 a efectos mentales, enfermedades y venenos, y tu cuerpo envejece un ritmo dos veces inferior. Los espíritus no serán naturalmente hostiles hacia ti y tendrán profundo respeto hacia ti.
 

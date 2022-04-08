@@ -9,7 +9,7 @@ Los insectos han estado presentes en tu vida desde tu nacimiento o tal vez hicie
 
 Recibes resistencia 2 a daño físico. 
 
-<u>Aspecto entrópico</u> (pasiva): Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades. Tienes la capacidad de tomar una forma híbrida entre humano e insecto conocida como forma entotrópica, recibiendo 3 [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) para emplear en mejoras (estas mejoras pueden sí alterar tu fisiología). Algunas posibilidades son alas (2 PT), perforar (1 PT), armadura natural (1 PT) o veneno (2 PT). Cambiar de forma te cuesta una acción de movimiento y tu aspecto humano recibe ciertos rasgos similares a tu forma insectoide, como podrían ser un timbre extraño en tu voz u ojos de colores fuera de lo común. Los insectos y criaturas insectoides nunca serán naturalmente hostiles hacia ti.
+<u>Aspecto entrópico</u> (pasiva): Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades. Tienes la capacidad de tomar una forma híbrida entre humano e insecto conocida como forma entotrópica, recibiendo 2 [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) para emplear en mejoras (estas mejoras pueden sí alterar tu fisiología). Algunas posibilidades son alas (2 PT), perforar (1 PT), armadura natural (1 PT) o veneno (2 PT). Cambiar de forma te cuesta una acción de movimiento y tu aspecto humano recibe ciertos rasgos similares a tu forma insectoide, como podrían ser un timbre extraño en tu voz u ojos de colores fuera de lo común. Los insectos y criaturas insectoides nunca serán naturalmente hostiles hacia ti.
 
 <u>Mente insectoide</u> (pasiva): Tu mente funciona de una manera extraña más propia de los insectos que de los seres humanos. Recibes resistencia a [influenciar](https://raldamain.com/rules/Rangos/Social/influenciar.html) y efectos mentales igual a tu rango de ascendencia insectoide + 1 además de  recibir la capacidad de percibir las vibraciones, otorgándote vista a ciegas en un radio de 30 pies. 
 
@@ -23,7 +23,7 @@ Incrementa tu DES por 1.
 
 ## Rango III
 
-Aumenta tu resistencia a daño físico por 1 e incrementa tus PT por 3.
+Aumenta tu resistencia a daño físico por 1 e incrementa tus PT por 2.
 
 <u>Ovoposición</u> (3 acciones) Empleando 3 acciones puedes implantar una o varias larvas de insecto en una criatura incapacitada o inconsciente de tu elección. La criatura no se dará cuenta de tu implantación si esta fracasa en un tiro de percepción contra tu sigilo (si está está dormida recibirá dos dados de desventaja en su tiro). Una ovoposición funciona como una [enfermedad](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) física o mental dependiendo de la naturaleza de las larvas, teniendo gravedad igual a tu estadística de CON + tu rango de ascendencia y incidencia de un día. Cuando la enfermedad llegue a su máximo la criatura morirá al instante y la larva emergerá como una criatura de nivel igual a tu rango de ascendencia x 2. Puedes tener bajo tu control un número de criaturas insectoides cuyos PT combinados no excedan tu rango x 4.
 

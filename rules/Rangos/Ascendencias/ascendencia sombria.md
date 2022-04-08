@@ -31,7 +31,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV
 
-Incrementa tu CAR por 1.
+Incrementa tu CAR por 1. Puedes sumar tu rango en magia sombría a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Aura de terror</u> (1 acción): Tu presencia causa temor en los débiles de carácter. Emplean puedes activar un aura de miedo con radio de 60 pies. Todas las criaturas que estén en tu aura de terror pasarán a estar [espantadas](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#espantada) ([asustadas](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#asustada) si tienen 5 o menos PV). Aquellos con resistencia al miedo que entren en tu aura podrán pasar un número de turnos igual a su valor de resistencia en esta sin sufrir ningún efecto adverso. Aura de terror se desactivará durante un turno en el caso de que sufras una herida permanente, estés incapacitado o empieces tu turno en un área de luz intensa.
 

@@ -36,7 +36,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV
 
-Incrementa tu CAR por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
+Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de fuego a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Propulsión</u> (2 acciones): Eres capaz de propulsarte en el aire con tu magia de fuego. Empleando 2 acciones puedes volar 60 pies en cualquier dirección y recibir ventaja en todos tus tiros de esquiva y parada elemental durante una ronda. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1. 
 

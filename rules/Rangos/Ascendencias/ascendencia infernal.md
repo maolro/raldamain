@@ -29,7 +29,7 @@ Incrementa tu CAR por 1.
 
 Aumenta su resistencia al daño físico por 1.
 
-<u>Alas demoniacas</u> (pasiva): Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar. Puedes sustituir esta habilidad por otras características similares que no sumen más de 3 PT entre ellas.
+<u>Alas demoniacas</u> (pasiva): Tu herencia infernal se manifiesta en alas demoníacas, las cuales te otorgan una velocidad de vuelo de 60 pies. Puedes esconder tus alas como acción estándar, las cuales se retraerán hasta que las vuelvas a sacar. Volver a sacarlas también cuenta como acción estándar. Puedes sustituir esta habilidad por otras características similares que no sumen más de 2 PT entre ellas.
 
 <u>Ataques profanos</u> (pasiva): Tus armas y ataques naturales están infundidos del poder del infierno. Cada vez que reduzcas los PV de un objetivo con un ataque este sufrirá una herida profana además de todos los demás efectos (si provocas una herida permanente con otra habilidad estas no se acumulan). Haces además +2 daño elemental con tus ataques y estos cuentan como si fuesen hechos con un arma de hierro frío.
 
@@ -53,7 +53,7 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
 Incrementa tu CON por 1.
 
-<u>Señor de la sima</u> (pasiva): Realizando un ritual oscuro abandonas tu cuerpo mortal para convertirte en un demonio. Como demonio eres inmortal y obtienes resistencia 4 contra enfermedades, venenos y efectos mentales. Recibes 6 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) para gastar en mejoras y los demonios de menor nivel te obedecen sin cuestionarte.
+<u>Señor de la sima</u> (pasiva): Realizando un ritual oscuro abandonas tu cuerpo mortal para convertirte en un demonio. Como demonio eres inmortal y obtienes resistencia 4 contra enfermedades, venenos y efectos mentales. Recibes 4 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n) para gastar en mejoras y los demonios de menor nivel te obedecen sin cuestionarte.
 
 <u>Puertas del infierno</u> (3 acciones): Empleando 3 acciones puedes abrir un portal al mismo infierno. Cada turno que el portal permanezca abierto recibes 4 puntos de invocación, los cuales podrás gastar para invocar criaturas. Como acción bonus puedes gastar cualquier número tus puntos de invocación en que un demonio de ese nivel pase por el portal. Mantener el portal te cuesta una acción al turno y se cierra si pie El portal se cierra automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto el portal será bendecida por el infierno, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para los adoradores de entidades infernales.
 

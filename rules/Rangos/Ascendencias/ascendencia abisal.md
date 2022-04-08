@@ -19,7 +19,7 @@ Obtienes Resistencia 2 a daño físico.
 
 Incrementa tu FUE por 1.
 
-<u>Rasgo monstruoso</u> (pasiva): Tienes 3 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html) para gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2 PT), garras (1 PT), ataques infundidos (2 PT), y armadura natural (1 PT). 
+<u>Rasgo monstruoso</u> (pasiva): Tienes 2 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html) para gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2 PT), garras (1 PT), ataques infundidos (2 PT), y armadura natural (1 PT). 
 
 <u>Aura antinatural</u> (pasiva): Los animales se apartan instintivamente de ti y tu presencia resalta sospechas y miedo. Recibes ventaja tus tiros de intimidar, persuasión y engaño mientras que todos los tiros relacionados con talentos de inteligencia y sabiduría hechos a 30 pies de ti reciben desventaja (esto no afecta a criaturas que tengan resistencia contra efectos mentales o estén afectadas por habilidades de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) o [guerrero divino](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html)). Los abisales no son naturalmente hostiles hacia ti.
 
@@ -37,7 +37,7 @@ Aumenta tu resistencia a daño físico por 1
 
 Incrementa tu CON por 1.
 
-<u>Rasgo monstruoso superior</u> (pasiva): Recibes 3 PT adicionales, los cuales puedes emplear para tu habilidad rasgo monstruoso. Además, tienes una habilidad relacionado con una criatura abisal de tu elección. Estas son algunas de las posibilidades:
+<u>Rasgo monstruoso superior</u> (pasiva): Recibes 2 PT adicionales, los cuales puedes emplear para tu habilidad rasgo monstruoso. Además, tienes una habilidad relacionado con una criatura abisal de tu elección. Estas son algunas de las posibilidades:
 
 - **Samsotiq**: Tus garras hacen +2 daño base. Tienes sangre ácida, la cual hace 1 daño ácido a las criaturas que te hagan daño con ataques naturales y causa que las armas que te hieran reduzcan su efectividad por 1.
 - **Kosnaskye**: Todas las criaturas a menos de 15 pies están [enfermadas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Incrementa tu resistencia a enfermedades y veneno por 4.
@@ -61,6 +61,6 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
 Incrementa tu DES por 1. Puedes superar el límite de 6 con tus estadísticas, llegando como máximo a 9 (12 si eres de nivel 12 o más).
 
-<u>Transformación abisal</u> (pasiva): Abrazas el poder del abismo, transformándote en una criatura de puro caos. Eres inmortal y recibes resistencia 4 contra necrótico, veneno, enfermedades y efectos mentales y recibes 3 PT adicionales para gastar en mejoras. Tu cordura no puede reducirse y recibes una locura adicional. Los abisales te obedecerán como si fueses uno de ellos.
+<u>Transformación abisal</u> (pasiva): Abrazas el poder del abismo, transformándote en una criatura de puro caos. Eres inmortal y recibes resistencia 4 contra necrótico, veneno, enfermedades y efectos mentales y recibes 2 PT adicionales para gastar en mejoras. Tu cordura no puede reducirse y recibes una locura adicional. Los abisales te obedecerán como si fueses uno de ellos.
 
 <u>Invocar a la Tormenta</u> (3 acciones): Empleando 3 acciones puedes liberar el poder del caos en una zona, formando un portal a Tormenta. Cada turno que el portal permanezca abierto recibes 4 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un abisal de ese nivel pase por el portal. Mantener el portal te cuesta una acción al turno y se cierra si pierdes la co. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será infundida del caos, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.

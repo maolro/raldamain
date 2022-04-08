@@ -3,7 +3,7 @@ var listofskills = {
 	{
         skills: 
 		[
-            { name: "Alabarda", level:1, type: "action", cost: 2, description:"+({ this.foo }x + rank) to hit, 1d8 + (STR) damage"},       
+            { name: "Alabarda", level:1, type: "action", cost: 2, description: (context, points) => "+ " + (points + context.basestats.str) + " to hit, 1d8 + " + context.basestats.str + " damage"},       
             { name: "Parada", level:1, type: "reaction", description:""},       
             { name: "Flanqueador experto", level:3, type: "passive", description:"Tu arma hace +2 daño base contra objetivos que flanquees"},
             { name: "Carga con lanza", level:4, type: "passive", description:"Aumenta tu daño base por 2 al hacer una carga. Además, puedes gastar 2 ventajas generadas en una carga para agarrar a un objetivo clavándole tu arma"},
@@ -34,7 +34,7 @@ var listofskills = {
 	},
      "Armaduras": 
 	 {
-		 bonus: ( context, workingspace, level ) => { context.basestats.str += level; },
+		 bonus: ( context, level ) => { context.basestats.str += level },
 		 skills: [
             { name: "Blindaje", level:2, type: "passive", description:""},       
             { name: "Protección elemental", level:2, type: "passive", description:""},       

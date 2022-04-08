@@ -38,7 +38,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1.
+Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de aire a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Viajero de los cielos</u> (pasiva): Aumenta tu velocidad de vuelo por 30 pies. Mientras estés volando obtienes ventaja atacando a criaturas que se encuentren en el suelo con ataques físicos cuerpo a cuerpo y empleando esquiva para defenderte. Esta velocidad de vuelo queda reducida por armadura pesada y empezarás a caer si eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Volar largas distancias te cansa con más facilidad, dejándote [fatigado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#fatigada) si intentas volar durante más de una hora seguida y si no te encuentras en un entorno afectado por una tormenta deberás reducir tu reserva por 1 si acabas tu turno en el aire.
 

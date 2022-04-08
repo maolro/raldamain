@@ -36,7 +36,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu FUE por 1. Puedes añadir tu rango de magia elemental - 2 a tus ataques hechos con un arma de tu elección.
+Incrementa tu FUE por 1. Puedes sumar tu rango en magia elemental de tierra a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
 <u>Ola de tierra</u> (2 acciones): Empleando 2 acciones puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas de tamaño grande o inferior que estén en tu camino deben hacer un tiro de esquiva tu magia elemental o sufren 1d6 + SAB daño contundente y son empujadas 15 pies en cada dirección (aquellas con menor fuerza caen al suelo). Cada turno adicional que mantengas la ola deberás reducir tu reserva elemental por 1. Puedes además mantener la habilidad *forma de montaña* aunque utilices la *ola de tierra* para moverte.
 
