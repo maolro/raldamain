@@ -31,7 +31,7 @@ Aumenta tu resistencia a daño físico por 1
 
 <u>Infección</u> (pasiva): Al hacer daño con un ataque natural puedes infectar a tu objetivo con una mortal [enfermedad](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) conocida como una plaga abisal. La plaga abisal se trata de una enfermedad de naturaleza física con tiro de gravedad igual a tu estadística de CON + 1. Si obtienes un golpe crítico esta enfermedad actuará con la misma velocidad que un [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos). Cada vez que vuelvas a impactar a una criatura con plaga abisal esta deberá tener éxito en un tiro de CON contra la gravedad de la plaga o esta aumenta su nivel por un paso. No puedes volver a infectar a una criatura que se haya recuperado de la plaga abisal hasta que haya pasado un día.
 
-<u>Transformación</u> (pasiva): Al usar fuerza del abismo recibes un bonificador igual a tu rango de ascendencia - 1 en todos tus tiros de ataques físicos y mágicos además de aumentar tu cantidad máxima de acciones al turno por 1. Si activas este bonificador perderás la capacidad de utilizar habilidades que requieran concentración y esfuerzo mental salvo aquellas relacionadas con ascendencia abisal.
+<u>Fuerza abisal</u> (pasiva): Al usar fuerza del abismo recibes un bonificador igual a tu rango de ascendencia - 1 en todos tus tiros de ataques físicos y mágicos además de aumentar tu cantidad máxima de acciones al turno por 1. Si activas este bonificador perderás la capacidad de utilizar habilidades que requieran concentración y esfuerzo mental salvo aquellas relacionadas con ascendencia abisal.
 
 ## Rango IV
 
