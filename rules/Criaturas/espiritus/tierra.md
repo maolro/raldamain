@@ -10,7 +10,7 @@ Origen de tierra I, Golpe I, Armadura natural I, tamaño inferior, Reflejos I
 
 **Talentos:** Sigilo +4, Heroísmo +5, Atletismo +4
 
-**Resiste:** daño físico 2
+**Resiste:** daño físico 2 
 
 **Inmune:** veneno, enfermedades, efectos mentales, heridas permanentes
 
