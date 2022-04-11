@@ -30,19 +30,19 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="stats-tab" data-toggle="tab" href="#stats" role="tab"
-                            aria-controls="stats" aria-selected="true">Stats</a>
+                            aria-controls="stats" aria-selected="true">Estadísticas</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="talent-tab" data-toggle="tab" href="#talent" role="tab"
-                            aria-controls="talent" aria-selected="false">Talent</a>
+                            aria-controls="talent" aria-selected="false">Talentos</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="skill-tab" data-toggle="tab" href="#skill" role="tab" aria-controls="skill"
-                            aria-selected="false">Skills</a>
+                            aria-selected="false">Rangos</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="gear-tab" data-toggle="tab" href="#gear" role="tab" aria-controls="gear"
-                            aria-selected="false">Gear</a>
+                            aria-selected="false">Equipamiento</a>
                     </li>
                 </ul>
 
@@ -52,10 +52,10 @@
                     <div id="stats" role="tabpanel" aria-labelledby="stats-tab" class="tab-pane active">
                         <div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" v-model="charactername" placeholder="Name"
+                                <input type="text" class="form-control" v-model="charactername" placeholder="Nombre"
                                     aria-label="Name" aria-describedby="basic-addon1">
                             </div>
-                            Level: <v-minusplusfield v-bind:value="level" :min="1" :max="20"
+                            Nivel: <v-minusplusfield v-bind:value="level" :min="1" :max="20"
                                 v-on:input="level = $event"></v-minusplusfield>
                             <div class="row">
                                 <div v-for="(value, name) in attributes" class="col">
@@ -64,7 +64,7 @@
                                         v-on:input="attributes[name] = $event"></v-minusplusfield>
                                 </div>
                             </div> 
-                            total: {{attributes_points_max}} points {{attributes_points_available}}
+                            total: {{attributes_points_max}} niveles de talento: {{attributes_points_available}}
                         </div>
                     </div>
                     <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
@@ -89,7 +89,7 @@
                                     v-on:input="skills[name].points = $event"></v-minusplusfield>
                             </div>
                         </div>
-                        total: {{skill_points_max}} points {{skill_points_available}}
+                        total: {{skill_points_max}} rangos disponibles: {{skill_points_available}}
                     </div>
                     <div id="gear" role="tabpanel" aria-labelledby="gear-tab" class="tab-pane fade">
                         <h3>Equipamiento</h3>
@@ -120,14 +120,14 @@
                 <div>
                     <div class="row">
                         <div class="col">{{ charactername }}</div>
-                        <div class="col">Level: {{level}}</div>
+                        <div class="col">Nivel: {{level}}</div>
 
                     </div>
                     <div class="row">
-                        <div class="col">HP:&nbsp;{{computedstats.hp}}</div>
-                        <div class="col">Vitality:&nbsp;{{computedstats.vitality}}</div>
-                        <div class="col">Sanity:&nbsp;{{computedstats.sanity}}</div>
-                        <div class="col">DEF:&nbsp; {{gear.armor[selectedarmor].def}}</div>
+                        <div class="col">PV:&nbsp;{{computedstats.hp}}</div>
+                        <div class="col">Vitalidad:&nbsp;{{computedstats.vitality}}</div>
+                        <div class="col">Cordura:&nbsp;{{computedstats.sanity}}</div>
+                        <div class="col">DEF:&nbsp; {{computedstats.def}}</div>
                     </div>
                     <div v-for="(value, name) in computedstats.basestats" class="row">
                         <div class="col">{{ name }}</div>
@@ -139,7 +139,7 @@
                     </div>
 				</div>
 				<div>
-					<h6>Talents:</h6>
+					<h6>Talentos:</h6>
 					<ul>
 					<template v-for="(value, name) in talents">
 						<li v-if="value.points>0">{{name}} +{{value.points + attributes[value.attribute]}} </li>
@@ -147,7 +147,7 @@
 					</ul>
 				</div>
 				<div>
-				<h6>Skills: </h6>
+				<h6>Habilidades: </h6>
 				<template v-for="(value, name) in allskills">
 					<div>
 					{{name}}
@@ -217,10 +217,11 @@
 				{
 				    var context = 
 					{
+						armorpenalty: this.gear.armor[this.selectedarmor].penalty,
 						basestats:
 						{
 							str: this.attributes.str,
-							dex: (this.attributes.dex + this.gear.armor[this.selectedarmor].penalty),
+							dex: (this.attributes.dex + this.armorpenalty),
 							con: this.attributes.con,
 							int: this.attributes.int,
 							wis: this.attributes.wis,
@@ -230,7 +231,8 @@
 						resistances: [],
 						temp:
 						{
-							hpbonus: 0
+							hpbonus: 0,
+							defbonus: 0,
 						}
 					};
 					
@@ -258,10 +260,11 @@
 							}
 						}
 				    }
-					
+					context.def = this.gear.armor[this.selectedarmor].def + context.temp.defbonus;
 					context.hp = 3 + Math.floor((this.level - 1) / 3) + context.basestats.con + context.temp.hpbonus;
 					context.vitality = 2 + this.level + context.basestats.con;
 					context.sanity = 2 + this.level + context.basestats.wis;
+					context.mainWeapon = this.gear.weapons[this.mainhandweapon];
 					delete context.temp;
 					return context;
 				},

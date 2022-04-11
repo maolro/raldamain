@@ -29,7 +29,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 Aumenta tu probabilidad de golpe crítico a 19-20. Hacer un ataque con una alabarda te cuesta una acción menos.
 
-<u>Flanqueador experto</u> (pasiva): Tu arma hace daño adicional igual a tu estadística de destreza contra objetivos que flanquees. Los beneficios de flanqueo se aplicarán a cualquier criatura que esté en tu radio de alcance y que esté adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
+<u>Flanqueador experto</u> (pasiva): Tu arma hace daño adicional igual a tu estadística de destreza contra objetivos que flanquees (mínimo +1 daño). Los beneficios de flanqueo se aplicarán a cualquier criatura que esté en tu radio de alcance y que esté adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
 
 <u>Ataque serpenteante</u> (1 acción) Tu soltura con tu arma te permite hacer complejas técnicas de combate. Empleando una acción puedes realizar una de las siguientes técnicas de combate contra un enemigo que se encuentre en el área de alcance con tu arma. Emplearás tu bonificador de ataque con alabarda para cualquiera de estas técnicas especiales, las cuales contarán como maniobras de combate.
 
