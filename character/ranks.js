@@ -3,18 +3,51 @@ var listofskills = {
 	{
         skills: 
 		[
-            { name: "Alabarda", level:1, type: "action", cost: 2, description: (context, points) => "+ " + (points + context.basestats.str) + " to hit, 1d8 + " + context.basestats.str + " damage"},       
-            { name: "Parada", level:1, type: "reaction", description:""},       
-            { name: "Flanqueador experto", level:3, type: "passive", description:"Tu arma hace +2 daño base contra objetivos que flanquees"},
-            { name: "Carga con lanza", level:4, type: "passive", description:"Aumenta tu daño base por 2 al hacer una carga. Además, puedes gastar 2 ventajas generadas en una carga para agarrar a un objetivo clavándole tu arma"},
-            { name: "Preparación contra cargas", level:1, type: "action", cost: 1, description:"En cualquier momento de la ronda, cuando una criatura que esté cargando pase por el radio de tu alabarda, haz un ataque inmediato con el cual infliges +2 daño. Si impactas, el objetivo debe detenerse de inmediato"},
-            { name: "Ajustar alcance", level:2, type: "passive", description:"Cambia el alcance de tu arma por 5 pies. Si lo reduces a 5 pies, perderás todas las penalizaciones al defenderte, mientras que si lo aumentas a 15 pies pierdes un dado de dificultad en tiros defensivos"},
-            { name: "Ataque lateral", level:4, type: "action", cost: 1, description:"Haz un ataque con tu arma contra todas las criaturas en un arco de 15 pies. Gasta 2 ventajas para tropezar a tu objetivo"},
-            { name: "Ataque circular", level:4, type: "action", cost: 1, description:""},
-            { name: "Ataque serpenteante", level:3, type: "addon", base:"Alabarda", description:""},
-            { name: "Carga repentina", level:4, type: "addon", base:"Preparación contra cargas", description:"En cualquier momento de la ronda puedes hacer una carga como reacción"},
-            { name: "Ataque vital", level:5, type: "addon", base:"Alabarda", description:"Las heridas permanentes que provocas son de un nivel superior al hacer preparación contra cargas. Gasta 4 ventajas para dejar al objetivo a 0 PV y moribundo"},
-            { name: "Reposicionar", level:5, type: "addon", base:"Parada", description:"Muévete 5 pies tras hacer una parada exitosa"}
+            { name: "Alabarda", level:1, type: "action", cost: 2, description: 
+			(context, points) => 
+			{
+				if (context.mainWeapon.type == "Alabardas"){
+					return "+" + (points + context.basestats.str) + " para impactar, alcance "+ context.mainWeapon.reach+ " pies, " + context.mainWeapon.damage  + " + "+ context.basestats.str + " daño "+context.mainWeapon.dmgtype
+				}
+				else{
+					return "No has seleccionado un arma de esta categoría"
+				}
+			}	
+			},       
+            { name: "Parada", level:1, type: "reaction", description: 
+			(context, points) => 
+			{
+				if (context.mainWeapon.type == "Alabardas"){
+					return "+" + (points + context.basestats.str) + " para defenderse, solo puede protegerse de ataques cuerpo a cuerpo. Recibe desventaja defendiéndose de enemigos adyacentes"
+				}
+				else{
+					return "No has seleccionado un arma de esta categoría"
+				}
+			}	
+			},
+			{ name: "Preparación contra cargas", level:1, type: "action", cost: 1, description:"Entras en un estado de preparación hasta el principio de tu siguiente turno o cuando pierdas la concentración. En este estado cada vez que una criatura enemiga pase por un espacio a 10 pies de ti puedes hacerle un ataque como reacción que inflige +1d6 daño y lo detiene en el acto si logras impactar"},			
+			{ name: "Ajustar alcance", level:2, type: "passive", description:" Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello."},
+            { name: "Ataque lateral", level:2, type: "action", cost: 1, description:
+			(context, points) =>{return "Tu siguiente ataque de alabardas podrá impactar a hasta tres criaturas en tu radio de alcance que se encuentren a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y puedes hacer un intento de tropezar (+"+(points+context.basestats.str)+") contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. "}},
+            { name: "Flanqueador experto", level:3, type: "passive", description:
+			(context, points) =>{return "Tu arma hace +"+((context.basestats.dex<=0 ? 1 : context.basestats.dex))+" daño base contra objetivos que flanquees"}},
+            { name: "Ataque serpenteante", level:3, type: "action", cost: 1, description:
+			(context, points) =>{return "Haz una de las siguientes maniobras de combate con un bonificador +"+(points+context.basestats.str)+": Tu objetivo se defiende con averiguar intenciones. Si fracasa no podrá defenderse de tu siguiente ataque. \r Tu objetivo se defiende con heroísmo y si fracasa será desarmado del arma que lleve. Esta acción solo puede usarse después que tu objetivo haya parado exitosamente uno de tus ataques. \r Tu objetivo se defiende con heroísmo o esquiva. Si fracasa será empujado 10 pies en cualquier dirección y es tropezado"}},
+			{ name: "Alabarda", level:3, type: "action", cost: 1, description: 
+			(context, points) => 
+			{
+				if (context.mainWeapon.type == "Alabardas"){
+					return "+" + (points + context.basestats.str) + " para impactar, alcance "+ context.mainWeapon.reach+ " pies, " + context.mainWeapon.damage  + " + "+ context.basestats.str + " daño "+context.mainWeapon.dmgtype
+				}
+				else{
+					return "No has seleccionado un arma de esta categoría"
+				}
+			}	
+			},
+			{ name: "Ataque circular", level:4, type: "action", cost:1, description:"Tu siguiente ataque de alabardas atacará todas las criaturas que se encuentren en el radio de alcance de tu arma. Si logras impactar a un objetivo empújalo 5 pies hacia atrás y esta habilidad se detendrá si un enemigo logra detener exitosamente tu ataque con un escudo o una parada hecha con un arma que no sea ligera.  Si gastas una acción adicional en un ataque circular puedes hacer una maniobra de tropezar contra todos los enemigos que impactes."},
+		    { name: "Carga con lanza", level:4, type: "passive", description:"Aumenta tu daño base por 1d6 al hacer una carga y al impactar con tu ataque puedes clavarle tu lanza al objetivo para aumentar el nivel de todas las heridas permanentes por un paso. Mientras tengas la lanza enganchada no podrás usarla para atacar o defenderte hasta que gastes una acción para desengancharla"},        
+            { name: "Carga repentina", level:5, type: "reaction", description:" Al entrar en el estado de preparación contra cargas en cualquier momento de la ronda puedes moverte una distancia igual a tu movimiento base y hacer un ataque contra un objetivo en tu alcance. Este ataque contará como una carga si te mueves 20 pies o más y al impactar con tu ataque aumenta el nivel de todas las heridas permanentes infligidas por un paso."},
+            { name: "Reposicionar", level:5, type: "reaction", base:"Parada", description:"Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad."},
         ]
 	},
     "Arcos": 
@@ -34,7 +67,9 @@ var listofskills = {
 	},
      "Armaduras": 
 	 {
-		 bonus: ( context, level ) => { context.basestats.str += level },
+		 bonus: ( context, level ) => { 
+		 context.defbonus += 2
+		 },
 		 skills: [
             { name: "Blindaje", level:2, type: "passive", description:""},       
             { name: "Protección elemental", level:2, type: "passive", description:""},       
