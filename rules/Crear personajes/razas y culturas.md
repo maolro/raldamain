@@ -44,13 +44,13 @@ Los Temash suelen tener la piel morena con el pelo y los ojos oscuros. Algunas t
 
 Los Jaddi son un pueblo guerrero proveniente de los más agrestes páramos, viviendo estrictamente según sus leyes tradicionales y poniendo orden en tierras sin ley. Son un faro de civilización y ley en tierras salvajes, pero los constantes ataques de los monstruosos habitantes del desierto ha obligado a muchos Jaddi a emigrar y establecerse en las tierras más prósperas del norte. Esto ha provocado conflictos entre los Jaddi y los Temash nativos de los desiertos, creando una antigua enemistad entre las dos culturas. Cuando el imperio de Ustilus llegó al continente del sur, encontró fieles aliados en los jaddi que les ayudarían a conquistar a los temash. Ahora, los papeles históricos de ambos se han invertido, con los Jaddi controlando las tierras del sur mientras los Temash se resienten bajo su liderazgo.
 
-La cultura Jaddi ha sido históricamente nómada, con grandes clanes que migran de un lugar a otro en busca de un refugio seguro donde su gente pueda vivir en paz. Cada clan tiene un código de leyes único que siguen celosamente al pie de la letra. Estas leyes son las que mantienen unido al clan y su incumplimiento suele acarrear la muerte o el exilio. Aunque sus reglas son duras, los Jaddi son uno de los pueblos más caritativos del continente, asegurándose de que los pobres y los ancianos de sus tribus estén bien atendidos y suelen echar una mano a los viajeros solitarios que encuentran.
+La cultura Jaddi ha sido históricamente nómada, con grandes clanes que migran de un lugar a otro en busca de un refugio seguro donde su gente pueda vivir en paz. Cada clan tiene un código de leyes único que siguen fervorosamente al pie de la letra. Estas leyes son las que mantienen unido al clan y su incumplimiento suele acarrear la muerte o el exilio. Aunque sus reglas son duras, los Jaddi son uno de los pueblos más caritativos del continente, asegurándose de que los pobres y los ancianos de sus tribus estén bien atendidos y suelen echar una mano a los viajeros solitarios que encuentran.
 
 La caballería Jaddi es una de las fuerzas de combate más temidas del Continente, famosa por su feroz resistencia y valentía ante una muerte segura. Se les puede encontrar sirviendo a los ejércitos ustileses por todas las tierras del imperio y protegiendo la legendaria fortaleza conocida como la Ciudadela de los monstruos del abismo. Muchos Jaddi son fervientes seguidores de Feyn y a menudo se convierten en Caballeros de Ustilus, y algunos incluso entran en el Cónclave o alcanzan el puesto de Gran Maestre.
 
 Los Jaddi tienen la piel y los ojos de color marrón oscuro. Su pelo es mayoritariamente negro, y tradicionalmente lo trenzan una vez por cada victoria que consiguen. Un jinete Jaddi siente una gran devoción por su caballo, al que trata como un compañero y un héroe. Sus nombres completos se componen de su nombre personal, el nombre de un pariente anterior que haya muerto y el nombre de su clan.
 
-**Nombres:** (masc) Eleyas, Gershem, Habtamu, Ilezar, Kiros, Temesjan, Yeshef, (fem) Asheli, Esyena, Jaliyen, Maresha, Rahnya, Yehedit, Zedeni (clan) Almetsehai, Berehanu, Gebrekis, Haymanot, Matsebiya, Sekardis, Yitgarek
+​	
 
 ### Shinri
 
@@ -82,7 +82,7 @@ Herederos del mayor imperio de tiempos pasados, los mazarinos están estancados 
 
 La patria mazarina es un lugar de clima extremo y naturaleza indómita, cubierta de kilómetros de inmensos bosques y taiga helada. La tierra, a su vez, ha dado forma a la cultura mazarina, fomentando fuertes lazos comunitarios y una reverencia a los espíritus de la naturaleza que persiste hasta hoy en los pueblos y aldeas más aislados. Aunque la iglesia de Feyn tiene un gran poder y muchos mazarinos son devotos seguidores del dios de la humanidad, la antigua influencia de los espíritus sigue manifestándose en el predominio de la magia de la naturaleza, la tierra y el hielo entre su población. Aunque en tiempos pasados la magia elemental ha sido perseguida por la iglesia de Feyn, la muerte del dios de la humanidad ha revitalizado las antiguas tradiciones entre la población mazarina y ha hecho que los elementalistas vuelvan a ser respetados.
 
-El gobierno actual de Mazarín es, en teoría, una monarquía absoluta, pero la debilidad del actual rey ha dado mucho poder a los nobles regionales y ha hecho que la nación vuelva a ser un estado más feudal. La iglesia de Feyn, antes venerada y temida, ha perdido la mayor parte de su poder tras la muerte de su dios y está manchada por la corrupción y las luchas internas. Tal colapso institucional masivo ha fomentado una cultura de la decadencia, en la que muchos mazarinos, tanto nobles como plebeyos, se entregan a muchos excesos y pasatiempos artísticos para evadir tan miserable realidad y seguir creyendo la mentira que Mazarín sigue siendo el mayor imperio de la tierra.
+El gobierno actual de Mazarín es, en teoría, una monarquía absoluta, pero la debilidad del actual rey ha dado mucho poder a los nobles regionales y ha hecho que la nación vuelva a ser un estado más feudal. La iglesia de Feyn, antes venerada y temida, ha perdido la mayor parte de su poder tras la muerte de su dios y está manchada por la corrupción y las luchas internas. 	
 
 Los mazarinos suelen tener la piel clara y el pelo entre negro y rubio. Sus ojos son marrones, azules o verdes. Aquellos que tienen rastros de líneas de sangre elementales normalmente tienen un color de ojos asociado a su magia, como el azul hielo o el verde esmeralda.
 
@@ -98,7 +98,7 @@ Al ser la provincia más atrasada del imperio Ustilés, Dairov es un lugar perfe
 
 Los dairovios suelen tener el pelo y los ojos oscuros junto con la piel pálida. Algunos dairovios nacidos con gran influencia del Suelo Sombrío desarrollan rasgos únicos como ojos negros como el carbón o piel grisácea.
 
-**Nombres:** (masc) , (fem) , (familia) 
+**Nombres:** (masc) Akutain, , Kauldin, (fem) , (familia) 
 
 ### Iskarianos
 
