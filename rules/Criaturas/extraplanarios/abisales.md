@@ -32,7 +32,7 @@ title:
 
 ## Enjambre abisal (nivel 2)
 
-Tamaño inferior, Aguijón I, Reflejos I, Abisal I (veneno, explosión, vuelo)
+Tamaño inferior, Aguijón I, Reflejos I, Abisal I (veneno, vuelo)
 
 **PV:** 4			**VT:** 5	 		**DEF:** 2 (natural 2)
 
@@ -130,11 +130,11 @@ En el caso de que el combate parezca estar siendo dominado por el enemigo y que 
 
 ## Sabueso abisal (nivel 4)
 
-Mordisco II, (Garras I), Reflejos I, 6 PT (tocado por la locura)
+Mordisco II, (Garras I), Reflejos I, 5 PT (tocado por la locura, aura de terror), Armadur
 
 **PV:** 			**VT:** 	 		**DEF:** 
 
-**FUE:** 	**DES:** 	**CON:** 	**INT:** 	**SAB:** 	**CAR:** 
+**FUE:** 4	**DES:** 4	**CON:** 2	**INT:** 0	**SAB:** 1	**CAR:** 0
 
 ------
 
@@ -170,7 +170,7 @@ Mordisco II, (Garras I), Reflejos I, 6 PT (tocado por la locura)
 
 Los soldados rasos de las colosales hordas abisales, los Khutul disfrutan destruyendo las grandes obras de la humanidad y dejando nada más que ruinas a su paso. Su método de asalto se basa en agarrar a sus objetivos con sus tentáculos corrosivos y luego devorarlos poco a poco, condenando a sus víctimas a una muerte lenta y dolorosa. 
 
-Abisal II (explosión, drenar sangre, mejora corrosiva, rayo mágico), Tentáculo II, Mordisco I, Armadura natural I
+8 PT, (explosión, plaga abisal, visión del vacío, mejora corrosiva, tocado por la locura), Tentáculo II, (Mordisco I), Armadura natural I
 
 ## Samsotiq (nivel 6)
 
@@ -274,7 +274,7 @@ Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto 
 
 **Parada:** +8, recibe -1d6 contra objetivos adyacentes.
 
-**Garras:** +7, 1d6+6 perforante al impactar.
+**Garras:** +7
 
 **Salto espacial (consume un uso):** Si se encuentra en posición defensiva puede usar salto espacial para evadir automáticamente un ataque una vez por ronda.
 
