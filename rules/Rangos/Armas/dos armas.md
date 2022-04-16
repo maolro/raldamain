@@ -80,4 +80,3 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 ### Rango III
 
 <u>Cuchillada</u> (pasiva y 2 acciones): Eres capaz de atacar una vez adicional por ronda empleando tu arma secundaria. Adicionalmente, empleando 2 acciones puedes realizar un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad emplearás uno de tus ataques con tu arma secundaria para incrementar tu daño por un valor igual a su daño base de esta y aumentas el nivel de todas las heridas permanentes infligidas por un paso. 
-

@@ -21,9 +21,9 @@ Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo p
 
 Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
-<u>Ataque rápido</u> (pasiva): Eres capaz de realizar ataques con gran celeridad. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos. A rango IV aumenta tu máximo de acciones por 1.
+<u>Ataque rápido</u> (pasiva): Eres capaz de realizar ataques con gran celeridad. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos. 
 
-<u>Finta</u> (1 acción): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. Al hacer una finta tu objetivo se defenderá con un tiro de averiguar intenciones (esquiva si tiene *esquiva asombrosa*) y si fracasa no podrá defenderse del siguiente ataque hecho por ti o un aliado. Si obtienes un golpe crítico en una finta el siguiente ataque realizado contará también como un crítico mientras que provocas un ataque de oportunidad si obtienes un fracaso crítico. Si tienes nivel 3 de talento en engaño una vez por ronda puedes realizar una finta como acción bonus o repetir un tiro (dos veces por ronda si tienes nivel de talento 5).
+<u>Finta</u> (1 acción): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. Al hacer una finta tu objetivo se defenderá con un tiro de averiguar intenciones (esquiva si tiene *esquiva asombrosa*) y si fracasa no podrá defenderse del siguiente ataque hecho por ti o un aliado. Si obtienes un golpe crítico en una finta el siguiente ataque realizado contará también como un crítico mientras que provocas un ataque de oportunidad si obtienes un fracaso crítico. Si tienes nivel 3 de talento en engaño una vez por ronda puedes repetir un tiro de finta (dos veces por ronda si tienes nivel de talento 5).
 
 ## Rango III 
 
@@ -35,7 +35,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 ## Rango IV
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1 y obtiene una acción adicional.
 
 <u>Ataque saltarín</u> (pasiva y 2 acciones): El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en esa área. Empleando 2 acciones puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con *ataque saltarín*.
 
