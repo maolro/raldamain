@@ -24,6 +24,4 @@ Aparecen tantos **Ukron** como jugadores. Cuando pasen 2 rondas llega un **Ukron
 
 <u>Sabueso abisal:</u> 
 
-
-
 <u>Enjambre abisal:</u>
