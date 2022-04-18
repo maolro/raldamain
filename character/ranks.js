@@ -68,7 +68,8 @@ var listofskills = {
      "Armaduras": 
 	 {
 		 bonus: ( context, level ) => { 
-		 context.defbonus += 2
+		 context.temp.defbonus += 1 + level
+		 context.armorpenalty += 2*level
 		 },
 		 skills: [
             { name: "Blindaje", level:2, type: "passive", description:""},       

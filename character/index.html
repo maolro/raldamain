@@ -221,7 +221,7 @@
 						basestats:
 						{
 							str: this.attributes.str,
-							dex: (this.attributes.dex + this.armorpenalty),
+							dex: this.attributes.dex,
 							con: this.attributes.con,
 							int: this.attributes.int,
 							wis: this.attributes.wis,
@@ -261,6 +261,7 @@
 						}
 				    }
 					context.def = this.gear.armor[this.selectedarmor].def + context.temp.defbonus;
+					context.basestats.dex += Math.min(0,context.armorpenalty);
 					context.hp = 3 + Math.floor((this.level - 1) / 3) + context.basestats.con + context.temp.hpbonus;
 					context.vitality = 2 + this.level + context.basestats.con;
 					context.sanity = 2 + this.level + context.basestats.wis;
