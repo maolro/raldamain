@@ -64,7 +64,7 @@
                                         v-on:input="attributes[name] = $event"></v-minusplusfield>
                                 </div>
                             </div> 
-                            total: {{attributes_points_max}} niveles de talento: {{attributes_points_available}}
+                            total: {{attributes_points_max}} puntos de estadistica: {{attributes_points_available}}
                         </div>
                     </div>
                     <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
@@ -77,7 +77,7 @@
                                     v-on:input="talents[name].points = $event"></v-minusplusfield>
                             </div>
                         </div>
-                        total: {{talent_points_max}} points {{talent_points_available}}
+                        total: {{talent_points_max}} puntos de talento: {{talent_points_available}}
                     </div>
                     <div id="skill" role="tabpanel" aria-labelledby="skill-tab" class="tab-pane fade">
                         <div class="row" v-for="(value, name) in skills">
