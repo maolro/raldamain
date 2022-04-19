@@ -26,7 +26,7 @@ var listofskills = {
 			}	
 			},
 			{ name: "Preparación contra cargas", level:1, type: "action", cost: 1, description:"Entras en un estado de preparación hasta el principio de tu siguiente turno o cuando pierdas la concentración. En este estado cada vez que una criatura enemiga pase por un espacio a 10 pies de ti puedes hacerle un ataque como reacción que inflige +1d6 daño y lo detiene en el acto si logras impactar"},			
-			{ name: "Ajustar alcance", level:2, type: "passive", description:" Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello."},
+			{ name: "Proteger aliado", level:1, type: "reaction", description:(context, points) =>{return "Un aliado en su radio de alcance recibe +"+points+" en sus tiros defensivos"}},
             { name: "Ataque lateral", level:2, type: "action", cost: 1, description:
 			(context, points) =>{return "Tu siguiente ataque de alabardas podrá impactar a hasta tres criaturas en tu radio de alcance que se encuentren a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y puedes hacer un intento de tropezar (+"+(points+context.basestats.str)+") contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. "}},
             { name: "Flanqueador experto", level:3, type: "passive", description:
@@ -70,11 +70,14 @@ var listofskills = {
 		 bonus: ( context, level ) => { 
 		 context.temp.defbonus += 1 + level
 		 context.armorpenalty += 2*level
+		 if(level >= 3){
+			context.resistances.magia += level*2
+		 }
 		 },
 		 skills: [
-            { name: "Blindaje", level:2, type: "passive", description:""},       
-            { name: "Protección elemental", level:2, type: "passive", description:""},       
-            { name: "Campeón de acero", level:3, type: "reaction", description:""},       
+            { name: "Blindaje", level:2, type: "passive", description: (context, points) =>{return "Reduce el daño de todos los ataques físicos que ignoren tu armadura por "+(points+1)+". Este efecto se perderá si tu armadura se reduce por "+(context.def/2)+" o más puntos"}},       
+            { name: "Protección elemental", level:2, type: "passive", description:"Eres inmuene a los efectos negativos provocados por calor extremo y a las quemaduras", bonus: (context, level) =>{context.resistances.fuego += level*2}},       
+            { name: "Campeón de acero", level:3, type: "reaction", description:"Una vez por turno reduce el nivel de una herida permanente que sufras por un paso"},       
 	 ]},
     "Armas de fuego": 
 	{

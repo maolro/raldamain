@@ -137,6 +137,14 @@
                         <div class="col">Acciones: </div>
                         <div class="col">{{computedstats.actions}}</div>
                     </div>
+					<div class="row">
+                        <div class="col">Resistencias:</div>
+                        <span v-for="(value, name) in computedstats.resistances">
+						<template v-if="value>0">
+							 {{ name }}: {{ value }}, 
+						</template>
+						</span>
+                    </div>
 				</div>
 				<div>
 					<h6>Talentos:</h6>
@@ -228,7 +236,21 @@
 							cha: this.attributes.cha,
 						},
 						actions: 3, 
-						resistances: [],
+						resistances:
+						{
+							frio: 0,
+							magia: 0,
+							fuego: 0,
+							electrico: 0,
+							trueno: 0,
+							acido: 0,
+							radiante: 0,
+							necrotico: 0,
+							veneno: 0,
+							miedo: 0,
+							aturdimiento: 0,
+							"efectos mentales": 0,
+						},
 						temp:
 						{
 							hpbonus: 0,
