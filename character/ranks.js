@@ -50,19 +50,21 @@ var listofskills = {
             { name: "Reposicionar", level:5, type: "reaction", base:"Parada", description:"Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad."},
         ]
 	},
-    "Arcos": 
+    "A distancia": 
 	{
         skills: 
 		[
-            { name: "Disparo preciso", level:3, type: "passive", description:"Tus ataques a distancia ignoran cubierta y ocultamiento al atacar a objetivos en tu radio de puntería mortal"},
-            { name: "Ojo del francotirador", level:3, type: "passive", description:"Reduce todas las penalizadores por disparar a distancia por un dado de dificultad"},
-            { name: "Puntería mortal", level:1, type: "passive", description:"Ignoras la defensa que tengan objetivos que se encuentren a menos de 15 pies de ti"},
-            { name: "Ataque furtivo", level:1, type: "passive", description:"Haz un ataque con tu arma contra todas lsa criaturas en un arco de 15 pies. Gasta 2 ventajas para tropezar a tu objetivo"},
-            { name: "Puntería experta", level:5, type: "moveaction", description:""},
-            { name: "Ataque rápido", level:4, type: "bonusaction", description:""},
-            { name: "Arquero experto", level:2, type: "addon", base:"Arco", description:""},
-            { name: "Impacto vital", level:5, type: "addon", base:"Arco", description:""},
-            { name: "Disparo en movimiento", level:4, type: "passive", description:""}
+            { name: "Ataque", level:1, type: "action", cost: 2, description: 
+			(context, points) => 
+			{
+				if (context.mainWeapon.type == "A distancia"){
+					return "+" + (points + context.basestats.str) + " para impactar, alcance "+ context.mainWeapon.reach+ " pies, " + context.mainWeapon.damage  + " + "+ context.basestats.str + " daño "+context.mainWeapon.dmgtype
+				}
+				else{
+					return "No has seleccionado un arma de esta categoría"
+				}
+			}	
+			},
 		]
 	},
      "Armaduras": 
