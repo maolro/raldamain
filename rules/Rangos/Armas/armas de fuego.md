@@ -23,7 +23,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 <u>Recarga rápida</u> (pasiva): Reduce el coste en acciones para recargar tu arma por 1 (mínimo 1). Hacer un ataque con un arma perforante ahora te cuesta una acción menos y a rango IV aumenta tu máximo de acciones por 1.
 
-<u>Arquero experto</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
+<u>Truco de bala</u> (1 acción): Tu experta puntería te permite emplear tus ataques de una manera inesperada para debilitar las defensas de tu oponente. En lugar de atacar puedes emplear tu arma para realizar uno de los siguientes efectos sobre un enemigo:
 
 - **Disparo falso**: Tu objetivo debe defenderse con averiguar intenciones. Si fracasa, estará fintado contra el siguiente ataque que reciba. 
 - **Disparo atronador:** El disparo provoca un gran estruendo, provocando que tu objetivo se desoriente. Él debe defenderse haciendo un tiro de Constitución y si fracasa deberá moverse 10 pies en una dirección aleatoria y quede Espantado hasta su siguiente turno.
