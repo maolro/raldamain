@@ -32,7 +32,7 @@ Los personajes son escolta de Ileria para una misión diplomática.
 
 ### Depredador y presa
 
--Trampas mágicas: Teletransporte, observar, glifo de protección, barrera de fuerza, proyector ilusorio, campo antimático, revertir la gravedad
+-Trampas mágicas: Teletransporte, observar, glifo de protección, barrera de fuerza, proyector ilusorio, campo antimágico, revertir la gravedad
 
 ### Las bóvedas Razem
 
