@@ -1,0 +1,100 @@
+{
+  "main": {
+    "id": "d1a5270a82358a16",
+    "type": "split",
+    "children": [
+      {
+        "id": "afeebbdb49867a5f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "campaign/caballeros de ustilus/personajes/eliyet.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ebb75f55ac8b5288",
+    "type": "split",
+    "children": [
+      {
+        "id": "41f33b947229063c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0192a8b9a854080a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f8195c2acc0de523",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 322
+  },
+  "right": {
+    "id": "42d194453f116bae",
+    "type": "split",
+    "children": [
+      {
+        "id": "065a53a44fadf803",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89d033d4b5447e94",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "campaign/caballeros de ustilus/personajes/eliyet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "afeebbdb49867a5f",
+  "lastOpenFiles": [
+    "campaign/caballeros de ustilus/personajes/eliyet.md",
+    "rules/Reglas principales/Heridas permanentes.md",
+    "rules/Rangos/Armas/filos cortantes.md",
+    "rules/Rangos/Elementalismo/magia de agua.md",
+    "rules/Rangos/Armas/index.md",
+    "rules/Criaturas/espiritus/aire.md",
+    "rules/Criaturas/espiritus/agua.md"
+  ]
+}
