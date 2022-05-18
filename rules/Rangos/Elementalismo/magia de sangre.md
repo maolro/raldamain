@@ -21,7 +21,7 @@ Añade tu rango a todos tus tiros de magia elemental de sangre.
 - **Abdomen:** Tu objetivo queda enfermado durante el resto de la ronda.
 - **Cabeza:** Tu objetivo queda ralentizado durante el resto de la ronda.
 
-Esta habilidad también puede usarse defensivamente para evitar ataques enemigos. Para emplearla así debes encontrarte en posición defensiva y con ella puedes forzar a un atacante a tirar CON contra tu magia elemental como reacción. Si tienes éxito su ataque fallará por completo, pero puedes usar esta habilidad en conjunto a otras reacciones defensivas.
+Esta habilidad también puede usarse defensivamente para evitar ataques enemigos. Para emplearla así debes encontrarte en posición defensiva y con ella puedes forzar a un atacante a tirar CON contra tu magia elemental como reacción. Si tienes éxito su ataque fallará por completo, pero no puedes usar esta habilidad en conjunto a otras reacciones defensivas.
 
 ## Rango II
 
