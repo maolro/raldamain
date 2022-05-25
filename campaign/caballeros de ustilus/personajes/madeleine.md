@@ -9,7 +9,7 @@ rangos: Magia de agua, Magia de hielo, Magia de sangre, Plantilla boreal, Influe
 image: madeleine.jpg
 ---
 
-""
+"Después de tantos años en el servicio me he acabado ganando la reputación de no ser de fiar, debido a que mi papel en las misiones consiste en engañar al enemigo para obtener información o que haga lo que deseo. Sin embargo, olvidan que es debido a esas mentiras que se han evitado conflictos y detenido criminales. Pero no me importa lo que piensen, porque se que si no estuviese para ocupar ese papel los daños serían catastróficos. Al final estamos en un mundo en el que a todos le gustan las mentiras pero detestan a los mentirosos, pero se que llegado el momento me estarán agradecidos por mantenerlos a salvo de la verdad."
 
 # Biografía
 
@@ -35,7 +35,7 @@ image: madeleine.jpg
 
 # Rasgos y especialidades
 
-
+Madeleine se alistó al ejercito cuando era joven tras perder a su familia, siendo consciente desde una edad temprana de la cruda realidad del mundo que la rodeaba. Desde ese momento se escondió tras una mascara de mentiras mientras interactuaba con todos los de su entorno buscando solamente ascender y sobrevivir, tratándolos como si solamente fuesen parte de su misión para recuperar lo que una vez perdió. A pesar de eso Madeleine atesora a quienes se acercan lo suficiente a ella, buscando protegerlos a toda costa independientemente de los métodos necesarios. Es implacable con sus objetivos y enemigos, ocultando sus verdaderas intenciones bajo palabras bonitas y falsas buenas intenciones mientras los analiza en busca de la manera de conseguir lo que desea o hacerlos caer.
 
 # Relaciones
 

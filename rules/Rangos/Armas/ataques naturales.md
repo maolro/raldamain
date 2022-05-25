@@ -63,7 +63,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 Aumenta tu probabilidad de crítico a 18-20.
 
-<u>Golpe mortal</u> (pasiva): Al impactar a un enemigo que tenga 2 o menos defensa (cuenta la defensa por armaduras y la armadura natural) con un *golpe aturdidor* deberá tener éxito en un tiro de CON frente a tu tiro de ataque o caerá inconsciente de inmediato. Si impactas a un objetivo incapaz de defenderse qeste caerá inconsciente sin tener la oportunidad de defenderse. La habilidad *resistir la muerte* se aplica también contra este efecto.
+<u>Golpe mortal</u> (pasiva): Al impactar a un enemigo que tenga 2 o menos defensa (cuenta la defensa por armaduras y la armadura natural) con un *golpe aturdidor* deberá tener éxito en un tiro de CON frente a tu tiro de ataque o caerá inconsciente de inmediato. Si impactas a un objetivo incapaz de defenderse caerá inconsciente poder hacer un tiro. La habilidad *resistir la muerte* se aplica también contra este efecto.
 
 <u>Ahorcar</u> (1 acción, debes encontrarte en forma del *mono*): Empleando una acción puedes agarrar con fuerza el cuello de una criatura ahogada, causando que se empiece a ahogar. Una criatura agarrada de esta manera quedará [fatigada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada) y si pasa más turnos agarrada que su estadística de CON caerá inconsciente y morirá ahogada el turno siguiente. Puedes también emplear una acción para apretar tu cadena aún más fuerte, reduciendo así el número de rondas que puede sobrevivir la criatura por 1. Si empleas esta habilidad contra una criatura sorprendida reduce la cantidad de rondas que puede sobrevivir por 1 (mínimo 0). 
 

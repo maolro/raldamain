@@ -44,8 +44,10 @@ Esta es una lista de las mejoras que se pueden aplicar a un arma. Pueden aplicar
 
 <u>Lanzallamas</u> (Crédito 2) Tu arma escupe una abrasadora llama al disparar, causando que inflija 1d6 daño de fuego en lugar de físico. Además, al reducir los PV de tu objetivo puedes provocarle una quemadura leve, pasando a ser una quemadura media si este lleva armadura metálica. Puedes pagar un crédito adicional para incrementar el daño base de tu arma por 1d6 (máximo 4d6). Esta mejora sólo puede aplicarse a armas a distancia o armas con fusión abrasadora. En el caso que se apliquen a armas a distancia los atributos de esta variarán de la siguiente manera:
 
-| Atributo              | Sustitución        | Modificaciones                                               |
+| Atributo              | Sustitución        | Modificación                                                 |
 | --------------------- | ------------------ | ------------------------------------------------------------ |
+| Combate furtivo       | Parada elemental   | Solo puedes detener ataques a distancia y mágicos            |
+| Puntería mortal       | Reserva de energía | Gastas una bala adicional en lugar de reducir la reserva elemental y solo puedes hacer que afecte a un cono de 15 pies en lugar de realizar un ataque adicional. |
 | Truco de bala         | Llamas abrasadoras |                                                              |
 | Ojo del francotirador | Sobrecarga         | Cada uso de sobrecarga consumirá una bala de tu arma.        |
 | Disparos a bocajarro  | Muro de fuego      | Usar muro de fuego consumirá todas tus balas y te cuesta una acción de turno completo. |
