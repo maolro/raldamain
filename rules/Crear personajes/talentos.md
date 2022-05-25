@@ -26,7 +26,7 @@ Este talento puede ser usado en un combate para distraer a un enemigo, permitié
 
 ### Arcanismo (INT)
 
-Tienes gran conocimiento sobre la magia y todo lo referente a ella, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día a coste de 2 mientras que a nivel de talento 5 puedes emplearla tres veces al día. El tiro de magia empleará tu estadística de inteligencia y se le sumará tu nivel de talento en arcanismo - 2.
+Tienes gran conocimiento sobre la magia y todo lo referente a ella, recibiendo así soltura en todos tus tiros para identificar objetos mágicos, reconocer hechizos o realizar rituales. A nivel de talento 3 eres capaz de emplear innatamente una habilidad mágica de rango máximo II una vez al día a cos mientras que a nivel de talento 5 puedes emplearla tres veces al día. El tiro de magia empleará tu estadística de inteligencia y se le sumará tu nivel de talento en arcanismo - 2.
 
 ### Averiguar intenciones (SAB)
 

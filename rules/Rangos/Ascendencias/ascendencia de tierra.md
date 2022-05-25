@@ -20,7 +20,7 @@ Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental d
 
 Incrementa tu CON por 1.
 
-<u>Puños de tierra</u> (pasiva): Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con reserva de energía). Puedes reducir tu reserva por 1 para infundir tus ataques físicos con tierra elemental durante una ronda. Al emplear esta habilidad tus ataques recibirán los beneficios de las habilidades *ataque poderoso* y *concusión*, incrementando así el daño base por 1d6. Si ya posees dichas habilidades tu ataque ralentizará de manera automática a tu objetivo y reducirás su defensa por 2.
+<u>Puños de tierra</u> (pasiva): Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con reserva de energía). Puedes reducir tu reserva por 1  para infundir tus ataques físicos con tierra elemental durante una ronda. Al emplear esta habilidad tus ataques incrementan el daño base por 1d6, reducen la defensa por 1 y ralentizarán al objetivo durante una ronda al impactar si logran reducir PV. 
 
 <u>Paso terrestre</u> (pasiva): Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies. Estas velocidades aumentan por 5 pies por cada rango adicional de ascendencia pero no podrán superar tu movimiento base.
 
@@ -30,7 +30,7 @@ Incrementa tu CON por 1.
 
 Aumenta tu resistencia al daño físico por 1.
 
-<u>Armadura de piedra</u> (2 acciones): Empleando 2 acciones puedes rodearte de una sólida armadura hecha de piedra. Esa armadura incrementa tu defensa por 2 y te otorga un número de puntos de vida temporales iguales a tu rango de ascendencia + 1. Puedes reduc ir tu reserva elemental por 1 para fortalecer las defensas de tu armadura de piedra, regenerando así todos los puntos de vida temporales que esta te otorga. Esta habilidad permaecerá activa durante una cantidad de rondas igual a tu rango + 2 o hasta que pierdas la concentración.
+<u>Armadura de piedra</u> (2 acciones): Empleando 2 acciones puedes rodearte de una sólida armadura hecha de piedra. Esa armadura incrementa tu defensa por 2 y te otorga un número de puntos de vida temporales iguales a tu rango de ascendencia + 1. Puedes reduc ir tu reserva elemental por 1 para fortalecer las defensas de tu armadura de piedra, regenerando así todos los puntos de vida temporales que esta te otorga. Esta habilidad permanecerá activa durante una cantidad de rondas igual a tu rango + 2 o hasta que pierdas la concentración.
 
 <u>Conexión elemental</u> (pasiva): La tierra sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno tocando la tierra te recuperarás 1 vitalidad y un punto de tu reserva elemental. Al realizar un descanso corto en contacto con la tierra reduces el nivel de una herida permanente por 1 (reduce el nivel de todas tus heridas si es un descanso largo). Cuando alcances rango V de esta ascendencia podrás sanarte 2 vitalidad o 1 PV cada ronda si estás tocando la tierra.
 
@@ -40,7 +40,7 @@ Incrementa tu FUE por 1. Puedes sumar tu rango en magia elemental de tierra a to
 
 <u>Ola de tierra</u> (2 acciones): Empleando 2 acciones puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas de tamaño grande o inferior que estén en tu camino deben hacer un tiro de esquiva tu magia elemental o sufren 1d6 + SAB daño contundente y son empujadas 15 pies en cada dirección (aquellas con menor fuerza caen al suelo). Cada turno adicional que mantengas la ola deberás reducir tu reserva elemental por 1. Puedes además mantener la habilidad *forma de montaña* aunque utilices la *ola de tierra* para moverte.
 
-<u>Ataques infundidos</u> (pasiva): Tus ataques físicos están infundidos de energía elemental de tierra, aumentando así su daño base por 1d6 y reduciendo la defensa de tu objetivo por 2 cada vez que le impactes (esta reducción se acumula con *golpe destruct*). Todos tus ataques cuentan además como si estuvieran afectados por *ataque poderoso* para los propóstitos de otros atributos como *golpe fulminante* o *romper escudos*.
+<u>Ataques infundidos</u> (pasiva): Tus ataques físicos están infundidos de energía elemental de tierra, aumentando así su daño base por 1d6 y reduciendo la defensa de tu objetivo por 1 cada vez que le impactes (esta reducción se acumula con *golpe destructivo*). 
 
 ## Rango V
 
