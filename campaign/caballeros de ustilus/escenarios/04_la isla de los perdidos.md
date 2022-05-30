@@ -50,10 +50,6 @@ Los exteriores del poblado están patrullados por un grupo de cazadores formados
 
 Petrikov se aprovecha de la batalla para entrar en las tumbas gélidas. Cuando esto ocurra el chamán ofrecerá una tregua. Él les explicará la historia de la isla y qué están custodiando.
 
-3x Guerrero tribal, 2x Arquero nativo, 1x Tigre dientes de sable (patrulla de caza)
-
-5x Arquero nativo (defensores de la muralla)
-
 ### Las tumbas gélidas
 
 Los jugadores entran en las tumbas gélidas en busca de Petrikov, pero deberán enfrentarse al ejército de soldados malditos de Tenebrius.
