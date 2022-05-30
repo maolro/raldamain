@@ -9,4 +9,3 @@ rangos: Ascendencia infernal, magia de evocación, magia espacial, magia de prot
 image: basileos.jpg
 ---
 
-​	

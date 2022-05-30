@@ -9,7 +9,7 @@ rangos: Aptitud con filos pesados, Combate doble, Armaduras, Guerrero divino, Ca
 image: regulus.jpg
 ---
 
-
+"Y si me preguntais porque mi fe no se ha quebrado después de que dos de mis Maestros me hayan fallado, la razón por la cual sigo otra vez en el camino de la religión. La respuesta es simple, los dioses me aportan la visión, la determinación y la fuerza para proteger a aquellos que no puedo permitirme perder, el poder para mantener segura a mi nueva familia."
 
 # Biografía
 
