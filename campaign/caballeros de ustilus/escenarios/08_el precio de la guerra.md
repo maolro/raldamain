@@ -64,7 +64,7 @@ Belzor Garrasangrienta, 2x Zelota de la Legión
 
 ### Reinicio de las hostilidades
 
-Un supuesto ataque en un fuerte ustilés rompe las negociaciones de paz y da un nuevo inicio al conflicto. 
+Un supuesto ataque en un fuerte ustilés rompe las negociaciones de paz y da un nuevo inicio al conflicto. Ese ataque fue realmente provocado por el "grupo de ustileses patrióticos", quienes atacaron a los hobgoblin para que estos atacaran a los ustileses y así acabar con las negociaciones de paz
 
 ### La ciudadela de la Legión
 

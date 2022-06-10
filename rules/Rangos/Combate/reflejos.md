@@ -27,7 +27,7 @@ Aumenta tu cantidad máxima de acciones al turno por 1.
 
 <u>Gran acróbata</u> (pasiva): Recibes velocidad de escalada igual a tu velocidad normal. Puedes caminar por superficies estrechas y terreno difícil sin sufrir penalizaciones, además de que puedes esquivar con normalidad en estas. Si tienes un nivel de talento elevado en acrobacias puedes esquivar ataques enemigos con mayor facilidad, puediendo así repetir un tiro defensivo de reflejos una vez por ronda si tienes nivel de talento 3 o más (2 veces por ronda si tienes nivel de talento 5 o más).
 
-<u>Giro defensivo</u> (pasiva): Eres capaz de reposicionar tu cuerpo para reducir la fuerza de los impactos enemigos. Si te encuentras en posición defensiva y un ataque enemigo te impacta puedes reducir el daño que te infligiría por un valor igual a tu rango - 1. Esta reducción se aplica al daño de todo tipo que recibas, incluyendo el daño mágico y el daño elemental. No puedes emplear *giro defenivo* en una situación donde eres incapaz de defenderte.
+<u>Giro defensivo</u> (pasiva): Eres capaz de reposicionar tu cuerpo para reducir la fuerza de los impactos enemigos. Si te encuentras en posición defensiva y un ataque enemigo te impacta puedes reducir el daño que te infligiría por un valor igual a tu rango - 1. Esta reducción se aplica al daño de todo tipo que recibas, incluyendo el daño mágico y el daño elemental. No puedes emplear *giro defensivo* en una situación donde eres incapaz de defenderte.
 
 ## Rango IV
 
