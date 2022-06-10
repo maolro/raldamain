@@ -18,7 +18,11 @@ Informe que Tirion se ha fugado.
 
 ### Bienvenido a Elyon
 
+Los jugadores llegan a la ciudad de Elyon, la segunda ciudad ustilesa más importante. Esta ciudad es un importante puerto comercial que ahora se encuentra ahogado por la pobreza y la corrupción. Aquí es donde se cree que ha huido Thirion.
+
 ### Capitán de la guardia
+
+Los jugadores se reúnen con Rutger Bellamy, capitán de la guarida de Elyon. Él les informa de la situación actual de la ciudad y pone a disposición los recursos de la guardia para encontrar a Thirion.
 
 ### El barrio arshalaní
 
