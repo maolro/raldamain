@@ -17,11 +17,27 @@ Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 
 
 ## Orígenes
 
+Criado por su tío Jorek, un renombrado caballero de Ustilus, Ajek sintió desde pequeño una fuerte conexión con la orden y soñaba con entrar en ella. Gracias al entrenamiento de su tío él logró entrar en la orden como novicio teniendo tan solo 14 años, ganándose la reputación de ser un prodigio con gran potencial. A diferencia de otros en esta misma posición, Ajek no deseaba la fama y prefirió mantener un perfil más bajo en lugar de fardar de sus habilidades. Su talento no fue ignorado por los superiores de la orden y por ello fue asignado como aprendiz del renombrado caballero Laicon, quien entonces era considerado un elegido de Feyn.
 
+Ajek participó en muchas aventuras junto a su maestro y su tío, pero la que más marcaría su vida fue una arriesgada misión en las tierras Shinri donde los caballeros debían derrotar a un clan shinri que estaba amenazando las colonias ustilesas. En su lucha contra el clan acabaron adentrándose en un profundo bosque donde fueron atacados por un poderoso espíritu patrón de dicho clan. La lucha fue encarnizada e intensa, pero debido a una ataque temerario de Ajek el espíritu acabó arrastrándolo al mundo espiritual y solo Jorek pudo entrar por el portal tras él dejando atrás a Laicon. Jorek logró finalmente derrotar al espíritu y salvar a su sobrino, pero a costa de sufrir una maldición espiritual que le condenaría a poco a poco transformarse en una bestia. 
+
+-Pasa un tiempo con Jorek viviendo con el clan Tamashebu, quienes ayudan a su tío a amaestrar el poder de la bestia y le enseñan la fe espiritual.
+
+-Años después Jorek toma un joven aprendiz llamado Fileon, un elegido de Feyn con gran potencial. Ambos tenían personalidades al principio casi opuestas pero con el paso del tiempo acabaron volviéndose mejores amigos.
+
+-Los caballeros fueron a Iskaria para derrotar a una notorio grupo de bandidos hobgoblin liderados por el oni Xingonu, colabornado con los monjes de Li Zin. Jorek murió a manos del oni pero antes de morir confirió a Ajek sus poderes de bestia.
+
+-La muerte de Feyn fue un duro golpe para Ajek, quien empezó a venerar a los espíritus tras la pérdida de su dios.
 
 ## La invasión mazarina y lucha contra el Pacto (4001-4002)
 
+-Sirve con distinción en el ejército ustilés, combatiendo en el frente contra los mazarinos
 
+-Junto a Fileon encuentran y destruyen un laboratorio de armas biológicas controlado por el Pacto y logran vencer al general Petrikov en la batalla el archipélago ferroso.
+
+-Ambos quedaron atrapados por la tormenta de Olvangar y quedaron varados en una isla desierta. Ahí Ajek descubrió el amor de Fileon e Ileria y se comprometió a guardar el secreto de su amigo.
+
+-Tras enterarse de la existencia del Pacto y el alto cargo que tiene Laicon
 
 ## Golpe de estado y guerras hobgoblin (4002-4005)
 
