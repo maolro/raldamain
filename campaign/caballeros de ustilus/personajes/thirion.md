@@ -37,6 +37,10 @@ Thirion fue el 1º sujeto de pruebas para la ligación elemental, aunque resulto
 
 # Rasgos y especialidades
 
+Thirion es alguien introvertido y empático, aunque su apariencia diga lo contrario, es alguien el cual es incapaz de entender como funcionan las relaciones, siendo alguien que empatiza muy rápido con las personas (1 día es 1 mes , 1 mes es 1 año ...), aparte todas sus relaciones son familiares aunque no compartan sangre siendo incapaz de sentir "amor romántico" por otra persona. También es alguien obediente haciendo que si una persona con buena relación con el le pide algo el será capaz de hacerlo (independientemente del tipo de cosa que le pidan). Pese a todo esto Thirion siempre prefiere ser una buena persona, pese lo que le pidan otros y lo que su "ira" muestre
+
+
+
 Thirion es el perfecto usuario de la ligación elemental, con un cuerpo que supera la fuerza humana y siendo capaz de conectar con el elemental de forma perfecta, llegado cierto punto Thirion fue capaz de combinar la fuerza elemental junto con su fuerza sin desgaste. Thirion pese a su potencial y fuerza, el no sabe luchar con las cadenas, puesto que para el son mas como una extension de su cuerpo, luchando mas como un animal salvaje acorralado.
 
 # Relaciones
