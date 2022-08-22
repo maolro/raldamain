@@ -66,13 +66,13 @@
 
 <u>Agarre de viento</u> (Rango III, requiere secuencia de ataques):
 
-<u>Despertar la tormenta</u> (Rango III, requiere vendaval):
+<u>Despertar la tormenta</u> (Rango III, requiere vendaval): 
 
 <u>Torbellino</u> (Rango IV, requiere despertar la tormenta):
 
 <u>Ahogar</u> (Rango IV, requiere agarre de viento):
 
-<u>Huracán</u> (Rango V, requiere depertar la tormenta):
+<u>Huracán</u> (Rango V, requiere despertar la tormenta): 
 
 <u>Cambiar el clima</u> (Rango V, requiere despertar la tormenta):
 

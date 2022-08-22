@@ -23,8 +23,6 @@ Añade tu rango a todos tus tiros relacionados con nigromancia. Sientes la prese
 
 ## Rango III
 
-Incrementa tu probabilidad de crítico a 19-20. 
-
 <u>Tormenta de energía negativa</u> (2 acciones): Empleando dos acciones puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + rango daño necrótico al impactar (2d6 + rango a rango V). Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear *[toque necrótico](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#rango-i)* ahora te cuesta una acción y puedes emplear tu tiro de nigromancia para defenderte de ataques mágicos.
 
 <u>Aspecto de no-muerto</u> (pasiva): Estás un paso más cerca de la no-muerte que cualquier mortal. Eres capaz de subsistir sólo con la esencia vital de los demás, causando que no sufras efectos negativos por pasar un día sin comer ni beber si has matado a un ser vivo con *toque necrótico* en 24 horas. Al hacer un tiro de Intimidar puedes tirar tus dados de Nigromancia en lugar de los dados correspondientes a ese talento. Si ya has alcanzado la no-muerte al recibir esta habilidad recibes la mejora *[Mirada terrorífica](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#mejoras-de-3-pt)*, espantando así a todas las criaturas que se encuentren a 60 pies de ti que te estén mirando (en el caso que ya la poseas aumenta el nivel de miedo que provocas con dicha habilidad por un paso).
@@ -36,8 +34,6 @@ Incrementa tu probabilidad de crítico a 19-20.
 <u>Crear no muerto superior</u> (pasiva): Conoces los rituales para convertir cadáveres en no muertos más poderosos. Utilizando un ritual de duración igual a un descanso corto puedes transformar a un cadáver, un no-muerto menor o una persona voluntaria en una criatura más poderosa conocida como un *[no-muerto superior](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#no-muertos-superiores)*. Los diferentes métodos de creación para *[no-muertos superiores](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#no-muertos-superiores)* se describen en su respectivo apartado y normalmente su nivel no podrá superar tu rango de nigromancia x 2. No puedes tener bajo tu control más de 4 *[no-muerto superior](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#no-muertos-superiores)*. Emplear animar cadáver ahora te cuesta dos acciones. Un *[no-muerto superior](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#no-muertos-superiores)* solo podrá emplear esta habilidad si se encuentra fuera del control de un nigromante.
 
 ## Rango V 
-
-Aumenta tu probabilidad de crítico a 18-20.
 
 <u>Toque de la muerte:</u> Tu toque necrótico es capaz de levantar a tus enemigos caídos como no-muertos. Cada vez que reduzcas a una criatura enemiga a 0 PV con un toque necrótico esta morirá instantáneamente y revivirá como un *[no-muerto menor](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#no-muertos-inferiores)* bajo tu control (una criatura con rangos de *[fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html)* puede tirar CON para resistir este efecto). Esta habilidad también se activará si matas a una criatura empleando *[enervación](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#rango-iv)*.
 

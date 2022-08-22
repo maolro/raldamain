@@ -23,7 +23,7 @@ La ira es un sentimiento que fluye a través de todas las personas, sin embargo 
 
 <u>Fortitud interna</u> (pasiva): Tu cuerpo es capaz de soportar esfuerzos a límites sobrehumanos. Eres inmune a [veneno](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), [enfermedades](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#enfermedades) y [náuseas](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#náuseas) mientras estés en ira. Puedes entrar en Ira aunque estés [fatigado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#fatigada), pero acabarás exhausto cuando esta ira acabe (aún puedes entrar en ira con normalidad cuando estés a menos de la mitad de tus PV)
 
-<u>Temerario</u> (pasiva): La ira libera tus instintos de las cadenas de la razón, impulsándote a atacar sin temer la muerte. Eres inmune a miedo y efectos de moral mientras estés en ira. Obtienes además ventaja en todos tus tiros de intimidación o presencia hechos mientras te encuentres en ira.
+<u>Temerario</u> (pasiva): La ira libera tus instintos de las cadenas de la razón, impulsándote a atacar sin temer la muerte. Eres inmune a miedo y efectos mentales mientras estés en ira. Obtienes además ventaja en todos tus tiros de intimidación o presencia hechos mientras te encuentres en ira.
 
 ## Rango IV
 

@@ -1,5 +1,5 @@
 ---
-title: Magia de Agua
+  title: Magia de Agua
 category: Magia elemental
 ---
 
@@ -7,7 +7,7 @@ Esta magia te permite tener un control absoluto sobre el agua cuando esta se enc
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros relacionados con magia elemental de agua.
+Para desbloquear este rango necesitas tener un rango en Ascendencia de agua. Añade tu rango a todos tus ataques hechos con magia elemental de agua.
 
 <u>Ataque elemental</u> (2 acciones): Empleando 2 acciones puedes lanzar un poderoso torrente de agua de longitud 30 pies capaz de arrastrar a tus enemigos junto a él. Este ataque empujará a tu objetivo una cantidad de pies igual a CAR x 5 al impactar en una dirección de tu elección y puedes hacer una maniobra de tropezar como acción bonus (usarás tu magia elemental de agua contra su heroísmo). Si este se choca con una superficie sólida sufrirá daño de caída como si se hubiese caído de una altura igual al número de pies de movimiento que no ha podido recorrer (por ejemplo, si es empujado 30 pies y se choca tras 10 pies de empuje, sufrirá daño como si se hubiese caído 20 pies). Para lanzar a tu objetivo en dirección vertical deberás gastar una acción adicional al impactar con tu ataque y tener éxito en un ataque elemental contra el cual se defenderá con Heroísmo.
 
@@ -19,7 +19,7 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de agua.
 
 ## Rango II
 
-<u>Danza de agua</u> (1 acción): Puedes emplear una acción para almacenar energía elemental para incrementar la fuerza de tu siguiente ataque, haciendo que el agua baile en torno a tu cuerpo para reforzar tus defensas. Puedes guardar así un número máximo de ataques igual a tu rango de magia elemental + 1 y perderás todos los ataques guardados si eres desconcentrado. Como acción bonus puedes emplear un ataque almacenado para fortalecer a otro, incrementando el área de efecto por 5 pies y recibiendo un bonificador +1 en el tiro de ataque y en la cantidad de pies que empujaría (si empoderas un ataque elemental de hielo incrementará su daño por 2). Los ataques almacenados también fortalecen tus defensas, otorgándote un bonificador +1 en tiros defensivos por cada ataque guardado. 
+<u>Danza de agua</u> (1 acción): Puedes emplear una acción o reducir tu reserva por 1 para almacenar energía elemental para incrementar la fuerza de tu siguiente ataque, haciendo que el agua baile en torno a tu cuerpo para reforzar tus defensas. Puedes guardar así un número máximo de ataques igual a tu rango de magia elemental + 1 y perderás todos los ataques guardados si eres desconcentrado. Como acción bonus puedes emplear un ataque almacenado para fortalecer a otro, incrementando el área de efecto por 5 pies y recibiendo un bonificador +1 en el tiro de ataque y en la cantidad de pies que empujaría (si empoderas un ataque elemental de hielo incrementará su daño por 2). Los ataques almacenados también fortalecen tus defensas, otorgándote un bonificador +1 en tiros defensivos por cada ataque guardado. 
 
 <u>Muro de agua</u> (2 acciones): Empleando 2 acciones puedes formar un muro de aguas rugientes con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. El muro impide el paso a proyectiles y una criatura debe gastar una acción de movimiento para atravesarlo, causando que esta tenga que tirar heroísmo contra tu tiro de magia elemental (no le hace falta tirar si gasta una acción estándar y tiene fuerza igual o superior a tu carisma). El muro permanecerá hasta que pierdas la concentración, y para crear un muro adicional deberás reducir tu reserva elemental por 1 cada ronda que este siga activo. El muro se destruye si es convertido en gas con la habilidad *cambio de estado* o detiene un ataque elemental de fuego de radio igual o superior a la altura del muro. Muro de agua puede crearse como reacción gastando 2 ataques almacenados o reduciendo tu reserva elemental por 1, deteniendo instantáneamente un ataque a distancia o reduciendo el daño de un ataque mágico o elemental por tu rango + 4.
 
@@ -27,7 +27,7 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de agua.
 
 - **Toque sanador:** Puedes sanar a cualquier criatura que se encuentre en tu radio de alcance de ataque elemental empleando el agua. Al sanar de esta manera elimina de manera automática todas las quemaduras que tenga tu objetivo.
 - **Descarga luminosa:** En lugar de lanzar rayos luminosos atacas a tus enemigos empleando agua bendita capaz de abrasar a tus enemigos. Un ataque de agua bendita infligirá 1d6 + rango en magia de vida daño radiante al impactar y provocará una quemadura leve si llega a reducir PV además que puedes aumentar su radio de efecto con *danza de agua*. A diferencia de un rayo luminoso un ataque de agua bendita puede esquivarse con normalidad.
-- **Barrera luminosa:** Perderás la habilidad de formar barreras hechas de luz pero a cambio podrás infundir una superfície de agua de tamaño igual a tu rango de magia de vida x 10 pies con agua bendita empleando una acción. Una superfície infundida de esta manera provocará 2 daño radiante a todas las criaturas enemigas que intenten pasar por él y las criaturas aliadas que hagan contacto con él se sanarán 1 vitalidad al principio de su turno. Si escoges infundir un muro podrás llenar toda su superfície aunque esta exceda tu área de efecto máxima con esta habilidad
+- **Barrera luminosa:** Perderás la habilidad de formar barreras hechas de luz pero a cambio podrás infundir una superficie de agua de tamaño igual a tu rango de magia de vida x 10 pies con agua bendita empleando una acción. Una superficie infundida de esta manera provocará 2 daño radiante a todas las criaturas enemigas que intenten pasar por él y las criaturas aliadas que hagan contacto con él se sanarán 1 vitalidad al principio de su turno. Si escoges infundir un muro podrás llenar toda su superficie aunque esta exceda tu área de efecto máxima con esta habilidad
 
 ## Rango III
 

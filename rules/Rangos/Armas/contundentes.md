@@ -7,7 +7,7 @@ Has decidido ir a por una de las armas mas resistentes y destructivas que hay, d
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contundentes
+Para desbloquear este rango necesitas 2 FUE y un nivel de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango IV.
 
 <u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y puedes hacer una maniobra de *tropezar* o *empujar* como acción bonus al impactar. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
 
@@ -17,7 +17,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con armas contunden
 
 ## Rango II
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango V.
 
 <u>Concusión</u> (pasiva): Al impactar a un enemigo con un *ataque poderoso* este deberá tener éxito en un tiro de CON frente a tu tiro de ataque o sufre el efecto de estado [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Si obtienes éxito crítico con esta habilidad tu objetivo quedará [paralizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#paralizada) hasta que se recupere, haciendo un tiro de CON cada ronda frente a tu tiro de ataque para recuperarse. Si has empleado más de una acción adicional en *ataque poderoso* tu objetivo quedará también [ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) durante un número de rondas igual a la cantidad de acciones gastadas.
 
@@ -25,7 +25,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango III
 
-Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque con un arma contundente cuesta una acción menos.
+Para desbloquear este rango necesitas 4 FUE y tres niveles de talento en destrozar. Hacer un ataque con un arma contundente cuesta una acción menos.
 
 <u>Impacto destructor</u> (pasiva): Al impactar a un objetivo con armadura con un *ataque poderoso* podrás reducir su DEF por 2. Esta reducción puede eliminarse reparando la armadura y si la defensa de la armadura queda reducida a 2 o menos esta esta se vuelve inutilizable. Si tienes nivel de talento 3 en [destrozar](https://raldamain.com/rules/Crear%20personajes/talentos.html#destrozar-fue) aumenta la cantidad de defensa que reduces con esta habilidad por 1 (incrementa la reducción por 2 si tienes nivel de talento 5). La reducción a la defensa se aplica después de hacer daño a tu objetivo.
 
@@ -33,7 +33,7 @@ Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque con un arma contund
 
 ## Rango IV
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Para desbloquear este rango necesitas 5 FUE y cuatro niveles de talento en destrozar.
 
 <u>Romper escudos</u> (pasiva): Tus ataques poderosos son capaces de debilitar y hasta destrozar escudos. Si una criatura con un escudo logra detener un *ataque poderoso* este reducirá su valor defensivo por 1. Si el valor defensivo del escudo llega a 0 este será destruido y no podrá ser utilizado para protegerte de ataques. Adicionalmente, si un enemigo intenta bloquear uno de tus *ataques poderosos* con una parada elemental le causarás la mitad de daño si fallas tu ataque.
 
@@ -41,7 +41,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 18-20.
+Para desbloquear este rango necesitas 6 FUE y cinco niveles de talento en destrozar.
 
 <u>Ataque despiadado</u> (1 acción):  Observando atentamente a un enemigo puedes aprovechar un momento de debilidad para asentarle un golpe mortal. Al emplear esta habilidad entras en un estado de preparación que te permite como reacción atacar a un enemigo que se encuentre a una distancia menor o igual a tu alcance si este sufre un [efecto de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html) que le dificulte a la hora de defenderse (cegado, aturdido, agarrado, náuseas, ensordecido o paralizado). No podrás atacar al mismo objetivo más de una vez por ronda y abandonarás el estado de preparación en el momento que pierdas la concentración.
 

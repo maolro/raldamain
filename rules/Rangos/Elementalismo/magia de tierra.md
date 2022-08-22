@@ -25,7 +25,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de tierra.
 
 ## Rango III
 
-Incrementa tu probabilidad de crítico a 19-20 y el tamaño de tus ataques por 5 pies. Hacer un ataque elemental ahora te cuesta solo una acción.
+Incrementa  el tamaño de tus ataques por 5 pies. Hacer un ataque elemental ahora te cuesta solo una acción.
 
 <u>Abrazo de la tierra</u> (1 acción): Al impactar con un ataque elemental puedes emplear una acción adicional o reducir tu reserva elemental por 1 para hacer un intento de agarre contra tu objetivo empleando tu tiro de magia elemental. Un objetivo agarrado de esta manera puede ser movido hasta 15 pies en cualquier dirección como acción de movimiento y no podrá escapar salvo que tenga éxito en un tiro de destrozar contra tu ataque elemental. Si agarras una parte específica del cuerpo de tu objetivo sufrirá los mismos efectos que la habilidad enredo y no puedes agarrar simultáneamente a más criaturas que tu rango de magia elemental – 2.
 
@@ -39,7 +39,7 @@ Incrementa tu probabilidad de crítico a 19-20 y el tamaño de tus ataques por 5
 
 ## Rango V
 
-Incrementa tu probabilidad de crítico a 18-20 y el tamaño de tus ataques por 5 pies. Aumenta tu máximo de acciones al turno por 1.
+Incrementa el tamaño de tus ataques por 5 pies. Aumenta tu máximo de acciones al turno por 1.
 
 <u>Terremoto</u> (3 acciones): Empleando 3 acciones y reduciendo tu reserva elemental por 3 puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas localizadas en dicho espacio deberán tirar fuerza o caerán inmediatamente al suelo mientras que los edificios se *derrumbarán* si están hechos de piedra u otro material frágil (edificios particularmente grandes o sólidos no pueden ser destruidos por este efecto, aunque sufrirán leves daños estructurales). El área afectada por un terremoto se convertirá en terreno difícil a causa de los derrumbamientos ocasionados.
 

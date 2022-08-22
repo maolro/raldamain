@@ -7,7 +7,7 @@ Al escoger esta escuela has decidido especializarte en una de las formas mas des
 
 ## Rango I
 
-Añade tu rango de a todos tus tiros relacionados con magia de evocación. Tu reserva aumenta por 2+Rango chi.
+Necesitas tener un rango en mente desencadenada o conocimiento además de 3 o más en una estadística mental y un nivel de talento en arcanismo.
 
 <u>Rayo de energía</u> (2 acciones): Empleando 2 acciones dispara un rayo de energía pura a un enemigo en hasta 60 pies de distancia. Este ataque hace 1d6 + rango daño de fuerza y atraviesa toda la defensa salvo Resistencia mágica. Un rayo de energía no consume chi de tu reserva. Una vez por ataque puedes gastar 1 chi con esta habilidad para hacer que el rayo tenga un radio de impacto de 5 pies e incremente su daño por 2, convirtiéndolo en un ataque de área. A rango III el radio de impacto aumenta por 5 pies y su daño por 3 (a rango V el daño aumentará por 4 y el radio de impacto por 10 pies) al gastar 1 chi para infundir el ataque.
 
@@ -17,6 +17,8 @@ Añade tu rango de a todos tus tiros relacionados con magia de evocación. Tu re
 
 ## Rango II
 
+Necesitas tener 4 o más en una estadística mental y dos niveles de talento en arcanismo.
+
 <u>Acelerar hechizo</u> (pasiva): Tu soltura con la magia de evocación te permite lanzar ataques con mayor velocidad. Lanzar un rayo de energía ahora te cuesta una acción en lugar de dos. 
 
 <u>Infundir arma</u> (acción bonus): Puedes gastar 1 chi de tu reserva como acción bonus para infundir tu arma de energía mágica. Tu arma infligirá +2 daño de energía en ataques durante un número de turnos igual a tu rango + 1. Mientras esté infundida tu arma cuenta como arma mágica para el propósito de atravesar resistencias. Puedes gastar 1 chi adicional en esta habilidad para que el daño de energía que inflija aumente por 1 (máximo +5 daño). 
@@ -25,15 +27,15 @@ Añade tu rango de a todos tus tiros relacionados con magia de evocación. Tu re
 
 ## Rango III  
 
-Aumenta tu probabilidad de crítico a 19-20. 
+Necesitas tener 5 o más en una estadística mental y tres niveles de talento en arcanismo.
 
 <u>Tormenta de chi</u> (3 acciones): Empleando 3 acciones y consumiendo 2 chi de tu reserva, puedes sobrecargar un radio de 20 pies centrado en ti con energía pura. Mientras la tormenta de chi siga activa, recibes *[cubierta](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta)* contra ataques mágicos y a distancia y tus ataques hacen +2 daño base. Cuando una criatura sin Resistencia mágica empiece su turno en el área de Tormenta de chi esta sufrirá 1 daño de energía obligatorio. Tormenta de chi permanecerá activa hasta que pierdas la concentración o pasen rango + 2 rondas. Puedes además formar un *[muro de energía](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20de%20evocacion.html#rango-ii)* como reacción una vez por ronda si tienes activa esta habilidad.
 
 <u>Foco de energía</u> (acción bonus): En lugar de atacar puedes contener el chi para liberarlo en un devastador ataque. Cada ataque que almacenes te otorga un punto de energía, pudiendo almacenar un total de puntos iguales a tu rango de magia de evocación. Al hacer un ataque mágico, puedes gastar un número de puntos de energía para incrementar la fuerza de este de la siguiente manera: 
 
-- **Empoderar hechizo (1 punto de energía):** Aumenta el daño base del hechizo por 1 y su área de efecto por 5 pies. 
+- **Empoderar hechizo (1 punto de energía):** Aumenta el tiro de ataque y el daño base del hechizo por 1 y su área de efecto por 5 pies. 
 - **Conversión elemental (1 punto de energía):** Tu hechizo hace daño de otro elemento distinto a fuerza. Si tienes la habilidad Aspecto elemental tu ataque será capaz de traspasar resistencias a dicho elemento salvo que tu objetivo tenga tanto resistencia a ese elemento como resistencia mágica.
-- **Látigo (2 puntos de energía):** Ataca a todas las criaturas en una línea de 30 pies, ignorando *[cubierta](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta)* y *[ocultamiento](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ocultamiento)*. En lugar de hacer daño puedes hacer maniobras de combate con el látigo.  
+- **Látigo (2 puntos de energía):** Ataca a todas las criaturas en una línea de 30 pies, ignorando *[cubierta](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta)* y *[ocultamiento](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ocultamiento)*. En lugar de hacer daño puedes hacer maniobras de combate con el látigo empleando tu tiro de evocación
 - **Castigo del cielo (2 puntos de energía)**: Ataca a todas las criaturas en un cilindro con radio 10 pies y altura 60 pies, ignorando *[cubierta](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta)* y *[ocultamiento](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#ocultamiento)*.   
 - **Meteoro de chi (2 puntos de energía)**: Forma un meteoro de chi que rodea tu cuerpo. Cada meteoro formado te otorga un bonificador +1 en tiros defensivos y en cualquier momento de la ronda puedes lanzar el meteoro a una criatura que esté a 30 pies como acción bonus, realizando un ataque mágico. Los meteoros explotarán en tu posición en el caso que pierdas la concentración, infligiendo 2 x número de meteoros daño fuerza a ti y a todas las criaturas a 10 pies (estas podrán tirar esquiva contra tu tiro de magia de evocación) y no puedes formar más meteoros que tu rango. 
 - **Desastre natural (5 puntos de energía):** Provoca el efecto de *[Huracán](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20aire.html#rango-v)*, *[Terremoto](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html#rango-v)*, *[Tsunami](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20agua.html#rango-v)* o *[Lluvia de brasas](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20fuego.html#rango-v)*. Esta habilidad solo puede usarse a rango V. 
@@ -42,7 +44,7 @@ Si pierdes la concentración mientras mantienes energía almacenada esta se libe
 
 ## Rango IV  
 
-Aumenta tu máximo de acciones al turno por 1.
+Necesitas tener 6 o más en una estadística mental y cuatro niveles de talento en arcanismo. Aumenta tu máximo de acciones al turno por 1.
 
 <u>Destrozar defensas</u> (pasiva):Tus ataques pueden drenar la energía mágica del objetivo, debilitando sus defensas y haciéndolo más vulnerable a tus ataques mágicos. Al impactar a un objetivo con armadura mágica con un ataque de magia de evocación empoderado con foco de energía reduce la resistencia mágica que tenga por 1. Puedes gastar chi en habilidades de *[Magia Protectora](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html)* que tengas como *[Eliminar magia](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* o *[Disrupción](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-i)* al impactar con un ataque de evocación. 
 
@@ -50,7 +52,7 @@ Aumenta tu máximo de acciones al turno por 1.
 
 ## Rango V   
 
-Aumenta tu probabilidad de crítico a 18-20.
+Necesitas tener 7 o más en una estadística mental y cinco niveles de talento en arcanismo. 
 
 <u>Desintegrar</u> (pasiva): Al impactar con un ataque de evocación empoderado con 5 o más cargas u obtener un golpe crítico desintegra a todos los objetivos en tu área de efecto. Al usar esta habilidad todos los objetos no-mágicos en el área de efecto son pulverizados, incluyendo armas y armaduras que no estén compuestas de adamantina o material mágico. Las criaturas que no lleven *[Armadura mágica](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* o la tengan reducida a 0 morirán instantáneamente, y las habilidades de *[Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html)* no podrán protegerlas de ello. 
 

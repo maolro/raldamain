@@ -5,11 +5,11 @@ category: Armas
 
 Has decidido valerte de las armas que llevan utilizando los caballeros y guerreros desde la antigüedad para defenderse y acabar con todo enemigo con un letal corte.  A medida que tu entrenamiento se vaya haciendo mas presente, iras aprendiendo habilidades que te permitirán hacer ataques en grandes áreas con tu arma o que te dejen atacar con gran fuerza a la armadura del enemigo para destruirla. Según tu entrenamiento vaya alcanzando sus ultimas etapas de aprendizaje, tu poder ofensivo con la espada se volverá mayor permitiéndote realizar ahora un mayor número de ataques con tu arma al turno así como valerte de su letal filo para cercenar las extremidades de tu enemigo.
 
-Rangos
+# Rangos
 
 ## Rango I
 
-Añade tu rango de filos cortantes a tiros de ataque y defensa con un arma de esta categoría.
+Para desbloquear este rango necesitas 2 FUE y un nivel de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango IV.
 
 <u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y provoca sangrado al herir a tu objetivo. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
 
@@ -19,7 +19,7 @@ Añade tu rango de filos cortantes a tiros de ataque y defensa con un arma de es
 
 ## Rango II
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango V.
 
 <u>Gran corte</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Ataque poderoso se aplicará para el daño de todos tus ataques hechos con un gran corte. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
 
@@ -27,7 +27,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango III
 
-Aumenta tu probabilidad de golpe crítico a 19-20. Hacer un ataque con un arma de filo cortante cuesta una acción menos.
+Para desbloquear este rango necesitas 4 FUE y tres niveles de talento en destrozar.
 
 <u>Impacto destructor</u> (pasiva): Al impactar a un objetivo con armadura con un *ataque poderoso* podrás reducir su DEF por 2. Esta reducción puede eliminarse reparando la armadura y si la defensa de la armadura queda reducida a 2 o menos esta esta se vuelve inutilizable, contando como si no tuviera armadura para los propósitos de *tajo feroz*. Si tienes nivel de talento 3 en [destrozar](https://raldamain.com/rules/Crear%20personajes/talentos.html#destrozar-fue) aumenta la cantidad de defensa que reduces con esta habilidad por 1 (incrementa por 2 si tienes nivel de talento 5). La reducción a la defensa se aplica después de hacer daño a tu objetivo.
 
@@ -35,7 +35,7 @@ Aumenta tu probabilidad de golpe crítico a 19-20. Hacer un ataque con un arma d
 
 ## Rango IV
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Para desbloquear este rango necesitas 5 FUE y cuatro niveles de talento en destrozar.
 
 <u>Torbellino de acero</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en el radio de alcance de tu arma. Puedes escoger el punto de inicio y el sentido de tu ataque los cuales decidirán el orden en el cual tus objetivos se defenderán de tu torbellino de acero. Si logras impactar a un objetivo empújalo 5 pies hacia atrás y al igual que *gran corte* esta habilidad se detendrá si un enemigo logra detener exitosamente tu ataque con un escudo o una parada hecha con un arma que no sea ligera. El daño adicional por ataque poderoso se aplicará para todos tus ataques hechos con torbellino de acero.
 
@@ -43,13 +43,17 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango V
 
+Para desbloquear este rango necesitas 6 FUE y cinco niveles de talento en destrozar.
+
 <u>Cortes en secuencia</u> (pasiva): Tu espada es capaz de atacar con gran celeridad. Recibes una acción adicional y cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1.
 
 <u>Tajo cercenador</u> (pasiva): Al realizar un ataque poderoso aumenta el nivel de todas las heridas permanentes que provocas por un paso por cada dado de daño adicional que te otorgue ataque poderoso (máximo 4 pasos). Si logras provocar una herida crítica con esta habilidad podrás cortarle de inmediato la parte del cuerpo impactada si se trata de un brazo, una pierna o la cabeza.
 
 ## Armas
 
-Un arma de filo cortante base hace 1d8 + FUE daño cortante, se usa con una mano y tiene un alcance de 5 pies. Un arma de filo cortante puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Un arma de filo cortante base hace 1d8 + FUE daño cortante, se usa con una mano y tiene un alcance de 5 pies.  Realizar un tiro de ataque con un arma de filo cortante te cuesta 2 acciones y tu bonificador de ataque es igual a la suma de tu estadística de fuerza y tu rango en filos cortantes. 
+
+Un arma de filo cortante puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Pesada:** El arma es tamaño superior a la normal, incrementando su daño base a 1d10 (2d8 si es un hacha) a costa de que sea necesaria utilizarla con dos manos. Tienes además desventaja en tiros de parada contra armas ligeras. Si tienes fuerza 6 o más podrás sujetar un arma pesada con una sola mano.
 - **Ligera:** El arma es de menor tamaño y más fácil de utilizar. Un arma ligera reduce su daño base a 1d6 (2d4 si es un hacha), pero podrás utilizar tu estadística de DES para tiros de ataque hechos con ella. Si el arma es una espada perderá el atributo *ataque poderoso* y *combate salvaje* además de recibir [*ataque apuntado*](https://raldamain.com/rules/Rangos/Armas/filos perforantes.html#rango-i) y [*combate furtivo*]() (con un hacha ligera no ocurre nada). Para los propósitos de combate con dos armas puedes escoger la rama de filos ligeros aunque el arma se trate un filo cortante.

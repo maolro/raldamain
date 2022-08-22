@@ -9,7 +9,7 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 
 ## Rango I
 
-Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo perforante.
+Para desbloquear este rango necesitas 2 DES y un nivel de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango IV.
 
 <u>Ataque apuntado</u> (1+ acciones): Eres capaz de apuntar con precisión a los puntos débiles de tu objetivo. Empleando una acción adicional al atacar puedes provocar una [herida permanente leve]() en una parte del cuerpo de tu objetivo escogida por ti al impactar. Tienes más dificultades apuntando a criaturas que lleven [armadura](https://raldamain.com/rules/Rangos/Combate/armaduras.html#tipos-de-armadura) más voluminosa, requiriendo así que gastes una acción adicional al apuntar si tu objetivo lleva armadura media, dos acciones si lleva armadura pesada y tres si lleva armadura completa. Las acciones gastadas en un ataque apuntado permanecerán vigentes hasta que realices un ataque o pierdas la concentración, pudiendo así gastar acciones para apuntar y hacer el ataque en tu siguiente turno. 
 
@@ -19,7 +19,7 @@ Añade tu rango a todos los tiros de ataque y defensa hechos con armas de filo p
 
 ## Rango II
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Para desbloquear este rango necesitas 3 DES y dos niveles de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango V.
 
 <u>Ataque rápido</u> (pasiva): Eres capaz de realizar ataques con gran celeridad. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos. 
 
@@ -27,7 +27,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango III 
 
-Aumenta tu probabilidad de crítico a 19-20. 
+Para desbloquear este rango necesitas 4 DES y tres niveles de talento en juego de manos.
 
 <u>Desarme</u> (1 acción): Si un enemigo logra detener tu ataque exitosamente con una parada puedes emplear una acción para intentar desarmarlo. Para ello tu enemigo deberá defenderse con parada y si tienes éxito su arma caerá de inmediato en una posición aleatoria a 5 pies de él (1d6 x 5 pies si obtienes un golpe crítico). Recoger un arma caída cuesta una acción y realizarlo provoca ataques de oportunidad. No puedes desarmar armas más grandes que la tuya salvo que tu objetivo tenga una herida permanente en el brazo.
 
@@ -35,7 +35,7 @@ Aumenta tu probabilidad de crítico a 19-20.
 
 ## Rango IV
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1 y obtiene una acción adicional.
+Para desbloquear este rango necesitas 5 DES y cuatro niveles de talento en juego de manos.
 
 <u>Ataque saltarín</u> (pasiva y 2 acciones): El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en esa área. Empleando 2 acciones puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con *ataque saltarín*.
 
@@ -43,7 +43,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 18-20.
+Para desbloquear este rango necesitas 6 DES y cinco niveles de talento en juego de manos.
 
 <u>Ataque vital</u> (pasiva): Al impactar a un enemigo con un ataque apuntado aumenta el daño base por 1d6 por cada acción adicional que hayas gastado en el ataque. Incrementa el nivel de todas las heridas permanentes provocadas por un paso adicional al realizar un ataque apuntado contra un enemigo incapaz de defenderse y si logras reducir sus PV a 0 este morirá instantáneamente (solo le protegerá la habilidad *[resistir la muerte](https://raldamain.com/rules/Rangos/Combate/fortitud.html#rango-ii)*).
 
@@ -51,7 +51,7 @@ Aumenta tu probabilidad de crítico a 18-20.
 
 ## Armas
 
-Un arma de filo perforante base hace 1d6 + FUE daño perforante y tiene un alcance de 5 pies. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
+Un arma de filo perforante base hace 1d6 + FUE daño perforante y tiene un alcance de 5 pies. Realizar un tiro de ataque con un arma de filo perforante te cuesta 2 acciones y tu bonificador de ataque es igual a la suma de tu estadística de destreza y tu rango en filos perforantes. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades *ataque furtivo*, *ataque vital* y *finta*. Lanzamiento puede aplicarse a cualquier arma de filo perforante que tenga la característica sutil.
 - **Sutil:** El arma es de menor tamaño y más fácil de utilizar. Un arma sutil reduce su daño base a 1d4, pero es capaz de penetrar los puntos débiles de la armadura de tu objetivo. Al realizar un ataque apuntado reduce el coste adicional en acciones por 1 debido a la armadura que lleve tu objetivo (mínimo 1). Vuelve a reducir el coste de acciones por 1 cuando alcances rango III y V con tu arma.
