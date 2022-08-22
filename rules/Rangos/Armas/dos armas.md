@@ -7,6 +7,8 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 ## Rango I
 
+Para desbloquear rangos de esta rama necesitas tener la misma cantidad de rangos en las ramas relacionadas con las armas que usarás en cada mano.
+
 <u>Aptitud con dos armas</u> (acción bonus) Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
 
 ## Armas de fuego  
@@ -43,7 +45,7 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 ### Rango III 
 
-<u>Danza de destrucción</u> (pasiva): En lugar de atacar con tus dos cadenas puedes hacer que giren en torno a ti a grandes velocidades, permitiéndote cargar un ataque con cada una de tus cadenas y activando inmediatamente la habilidad *[danza de cadenas](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-i).* Si haces daño al mismo objetivo con tus dos ataques reduce su defensa por un valor igual a la cantidad de turnos que llevas cargando tus cadenas (redú). Si hieres a un enemigo sin armadura aumenta el nivel de todas las heridas permanentes infligidas por un paso. 
+<u>Danza de destrucción</u> (pasiva): En lugar de atacar con tus dos cadenas puedes hacer que giren en torno a ti a grandes velocidades, permitiéndote cargar un ataque con cada una de tus cadenas y activando inmediatamente la habilidad *[danza de cadenas](https://raldamain.com/rules/Rangos/Armas/cadenas.html#rango-i).* Si haces daño al mismo objetivo con tus dos ataques reduce su defensa por un valor igual a la cantidad de turnos que llevas cargando tus cadenas (no podrás reducir armaduras completas o con material superior de esta manera). Si hieres a un enemigo sin armadura aumenta el nivel de todas las heridas permanentes infligidas por un paso. 
 
 ## Filos cortantes
 

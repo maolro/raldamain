@@ -10,11 +10,13 @@ La herida que provoques afectará a una parte aleatoria del cuerpo de tu objetiv
 
 Para apuntar a la cabeza debes tomar un dado de desventaja adicional a tus tiros de ataque. Si eres impactado en la cabeza, haz un tiro adicional de 1d10 para determinar si sufres una herida adicional en tus ojos, orejas o cuello. Los efectos que recibes al ser impactado en una de esas partes de la cabeza depende del tipo de herida permanente que hayas sufrido.
 
-**Leve:** Estás [ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) durante un turno y reduces tus estadísticas de INT, SAB y CAR por 1.
+**Leve:** Pierdes una acción durante tu siguiente turno y reduces tus estadísticas de INT, SAB y CAR por 1.
 
-**Media:** Reduce tu INT, SAB y CAR por 1. Estás [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) durante una ronda y recibes el efecto de estado [ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) hasta que recibas sanación además recibir las reducciones estadísticas de una herida leve.
+**Media:** Reduce tu INT, SAB y CAR por 1. Estás [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) durante una ronda y pierdes una acción hasta que seas sanado además de recibir las reducciones estadísticas de una herida leve.
 
-**Grave:** Reduce tu INT, SAB y CAR por 1. Caes [inconsciente](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#inconsciente) hasta que sufras daño o una criatura te despierte además de recibir las reducciones estadísticas de una herida media. Si sufres una herida permanente adicional en la cabeza sufrirás daño cerebral lo cual te matará en un turno si no recibes sanación. Aunque seas sanado de una herida crítica recibirás una locura escogida por el máster.
+**Grave:** Reduce tu INT, SAB y CAR por 1. Caes [inconsciente](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#inconsciente) hasta que sufras daño o una criatura te despierte además de recibir las reducciones estadísticas de una herida media. 
+
+**Crítica:** Sufres daño suficiente en la cabeza para matarte instantáneamente. En algunos casos puedes ser salvado si recibes sanación de inmediato, pero aunque sobrevivas recibirás los efectos de una herida grave además de una locura permanente.
 
 | Resultado (1d10) | Herida adicional |
 | ---------------- | ---------------- |
@@ -35,25 +37,31 @@ Para apuntar a un brazo específico debes tomar un dado de desventaja adicional.
 
 **Leve:** Recibes desventaja en todas las acciones en las que uses tu brazo herido, incluyendo tiros de ataque y defensa. 
 
-**Media:** Dejas caer de inmediato todos los objetos que lleves en tu brazo herido y reduces tu DES y FUE por 1. Recibes los mismos penalizadores al ataque y a la defensa que te otorga una herida leve. Si eres un mago arcano o elementalista que utilice sus brazos para gesticular recibirás también desventaja en todos tus tiros relacionados con dicas habilidades
+**Media:** Dejas caer de inmediato todos los objetos que lleves en tu brazo herido y reduces tu DES y FUE por 1. Recibes los mismos penalizadores al ataque y a la defensa que te otorga una herida leve. Si eres un mago arcano o elementalista que utilice sus brazos para gesticular recibirás también desventaja en todos tus tiros relacionados con dichas habilidades
 
-**Grave:** Reduce tu DES y FUE por 2. El brazo queda inutilizado, haciendo que no puedas coger objetos con él ni usarlo para realizar acciones. Si sufres una  herida permanente adicional en el brazo este quedará tan herido que deberá ser amputado.
+**Grave:** Reduce tu DES y FUE por 2. El brazo queda inutilizado, haciendo que no puedas coger objetos con él ni usarlo para realizar acciones. 
+
+**Crítica:** Tu brazo es amputado de inmediato. El efecto de la herida te deja aturdido durante una ronda, impidendo que puedas realizar acciones y reacciones. Recibirás también sangrado hasta que la herida sea sanada.
 
 ## Pecho
 
-**Leve:** Reduce tu CON por 1 y eres [fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada) durante una ronda.
+**Leve:** Reduce tu CON por 1 y tienes desventaja en todos tus tiros relacionados con estadísticas físicas durante una ronda.
 
-**Media:** Reduce tu CON por 1 y quedas fatigado hasta que te recuperes de esta herida. Recibes también las reducciones a las estadísticas por una herida leve.
+**Media:** Reduce tu CON por 1 y recibes desventaja en todos tus tiros relacionados con tus estadísticas físicas hasta que te recuperes de esta herida. Recibes también las reducciones a las estadísticas por una herida leve.
 
-**Grave:** Reduce tu CON por 1 y quedas [exhausto](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#exhausta) hasta que te recuperes de esta harida además de recibir las reducciones a las estadísticas de una herida media. Si sufres una herida permanente adicional en el pecho sufrirás una herida en el corazón, lo cual te matará instantáneamente en un turno si no recibes sanación. Aunque te recuperes de esta herida reduce permanentemente tu cantidad de acciones por 1 (no podrás sanarte de este efecto).
+**Grave:** Reduce tu CON por 1, recibes desventaja en todos tus tiros y pierdes una acción hasta que te recuperes de esta herida además de recibir las reducciones a las estadísticas de una herida media. No podrás concentrarte mientras tengas activa esta herida.
+
+**Crítica:** Sufres una herida en el corazón, lo cual te matará instantáneamente en un turno si no recibes sanación. Aunque te recuperes de esta herida reduce permanentemente tu cantidad de acciones por 1 (no podrás sanarte de este efecto) además de recibir las penalizaciones de una herida grave.
 
 ## Abdomen
 
-**Leve:** Reduce tu CON por 1 y eres [enfermado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada) durante una ronda.
+**Leve:** Reduce tu CON por 1 y además de perder la concentración. Al recibir esta herida puedes escoger entre perder una acción o recibir desventaja en todos tus tiros durante una ronda.
 
-**Media:** Reduce tu CON por 1. Recibes el efecto de estado [náuseas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#náuseas) durante una ronda y quedarás enfermado hasta que te recuperes de la herida. Recibes también las reducciones a las estadísticas por una herida leve.
+**Media:** Reduce tu CON por 1. Todas tus habilidades te cuestan una acción adicional para utilizar durante una ronda y recibes desventaja en todos tus tiros hasta que te recuperes de la herida. Recibes también las reducciones a las estadísticas por una herida leve.
 
-**Grave:** Reduce tu CON por 1. Recibes náuseas hasta que seas sanado y obtienes las mismas reducciones a las estadísticas que te otorga una herida media. Si sufres una herida permanente adicional en el abdomen recibirás una hemorragia interna, la cual te hace 2 daño letal al turno y te deja [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Sanar una hemorragia interna requiere tener éxito en tres tiros consecutivos de primeros auxilios o magia de vida (dos si tienes el material adecuado y estás fuera de un combate), pero aunque seas sanado reduce permanentemente tus tres estadísticas físicas por 1.
+**Grave:** Reduce tu CON por 1. Todas tus habilidades te cuestan una acción adicional para emplear hasta que seas sanado y obtienes las mismas reducciones a las estadísticas que te otorga una herida media. 
+
+**Crítica**: Recibes una hemorragia interna, la cual reducirá tu CON por 1 cada turno y te deja incapaz de tomar acciones y reacciones. Sanar una hemorragia interna requiere tener éxito en tres tiros consecutivos de primeros auxilios o magia de vida (dos si tienes el material adecuado y estás fuera de un combate), pero aunque seas sanado reduce permanentemente tus tres estadísticas físicas por 1.
 
 ## Piernas
 
@@ -61,7 +69,9 @@ Para apuntar a un brazo específico debes tomar un dado de desventaja adicional.
 
 **Media:** Reduce tu DES por 1 y caes inmediatamente al suelo. Recibes los mismos penalizadores al movimiento y a tiros de habilidad que te otorga una herida leve.
 
-**Grave:** Reduce tu DES por 1 además de recibir los mismos penalizadores a las estadísticas que una herida media. Tu pierna queda inutilizada, cayendo inmediatamente al suelo y fracasarás automáticamente todos tus tiros de esquiva, acrobacias y atletismo además de reducir tu movimiento . Si sufres una herida permanente adicional en la pierna esta quedará tan herida que deberá ser amputada.
+**Grave:** Reduce tu DES por 1 además de recibir los mismos penalizadores a las estadísticas que una herida media. Tu pierna queda inutilizada, haciedo que te caigas inmediatamente al suelo y fracasarás automáticamente todos tus tiros de esquiva, acrobacias y atletismo además de reducir tu movimiento.
+
+**Crítica:** Tu pierna es amputada de inmediato o queda tan herida que deberá ser amputada. Si pierdes una pierna de esta manera no podrás volver a caminar y recibirás los efectos de una herida gra
 
 | Resultado (1d10) | Lugar afectado                                   |
 | ---------------- | ------------------------------------------------ |

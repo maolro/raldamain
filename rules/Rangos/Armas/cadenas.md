@@ -23,7 +23,7 @@ Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por
 
 ## Rango III   
 
-Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque con una cadena te cuesta una acción menos.
+Hacer un ataque con una cadena te cuesta una acción menos.
 
 <u>Agarre con cadena</u> (pasiva): Puedes emplear los ataques cargados para realizar maniobras de combate con mayor facilidad. Si empleas un ataque almacenado en un ataque de *enredar* puedes realizar una maniobra de agarre al impactar sin la necesidad de gastar acciones (cada ataque almacenado adicional por encima del primero te otorgará un bonificador +2 en el tiro de la maniobra). Además, tienes éxito automático en todas las maniobras de empujar y tropezar hechas contra enemigos que se encuentren agarrados por tu cadena.
 
@@ -33,15 +33,13 @@ Aumenta tu probabilidad de crítico a 19-20. Hacer un ataque con una cadena te c
 
 Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
-<u>Ajustar alcance</u> (pasiva): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello. 
+​                    <u>Ajustar alcance</u> (pasiva): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello. 
 
 <u>Escudo humano</u> (reacción): Puedes emplear criaturas agarradas por ti como escudos humanos, reposicionándolos para que reciban ataques hechos hacia ti. Si te encuentras en danza de cadenas puedes emplear a una criatura agarrada para bloquear un ataque dirigido hacia ti, causando que esta reciba el daño del ataque si el ataque falla y otorgándote ventaja en tu tiro defensivo (esto cuenta como cubierta).
 
 <u>Cadena serpenteante</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en una línea con longitud igual al alcance de tu arma. Estas se defenderán en el orden en el que se encuentren en la línea y a diferencia de *ataque circular* tu ataque no se detendrá si este es bloqueado exitosamente con un escudo o parada elemental (estos aún pueden ser detenidos por muros). Los ataques hechos con esta habilidad ignorarán los beneficios defensivos por cubierta y cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
 
 ## Rango V
-
-Aumenta tu probabilidad de crítico a 19-20. 
 
 <u>Reposicionar</u> (1 acción): Tu arma actúa como una extensión de tu cuerpo, permitiéndote usarla para incrementar tu movimiento. Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad. Esto se acumula con la cantidad de pies que puedes moverte con la habilidad *[evasión](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)*.
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "campaign/caballeros de ustilus/personajes/eliyet.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "campaign/caballeros de ustilus/personajes/eliyet.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "afeebbdb49867a5f",
   "lastOpenFiles": [
+    "Untitled 2.md",
     "campaign/caballeros de ustilus/personajes/eliyet.md",
     "rules/Reglas principales/Heridas permanentes.md",
     "rules/Rangos/Armas/filos cortantes.md",

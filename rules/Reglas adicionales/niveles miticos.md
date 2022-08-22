@@ -29,13 +29,13 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 <u>Iniciativa mítica:</u> A nivel mítico 2 recibes un incremento a tu prioridad igual a la tu nivel mítico dividido entre 2 (redondeando hacia abajo) y te posicionarás antes que otros personajes no-míticos con el mismo valor de prioridad sin importar el arma que utilicen. Las criaturas no-míticas no obtendrán ningún bonificador por flanqueo ni ataque sorpresa contra ti.
 
-<u>Acciones adicionales:</u> A nivel mítico 2 eres capaz de actuar con gran celeridad, recibiendo una acción de movimiento adicional en tu turno. Cuando alcances niveles míticos superiores recibirás más acciones, obteniendo una acción estándar adicional a nivel mítico 6 y una acción de movimiento adicional a nivel mítico 10.
+<u>Acciones adicionales:</u> A nivel mítico 2 eres capaz de actuar con gran celeridad, recibiendo una acción adicional en tu turno. Cuando alcances niveles míticos superiores recibirás más acciones, obteniendo una acción adicional a nivel mítico 6 otra a nivel mítico 10.
 
 <u>Difícil de matar:</u> A nivel mítico 3 la energía mítica que emana de tu cuerpo te protege de las heridas más mortales y te fortalece para seguir luchando en las situaciones más desesperadas. Todas las heridas permanentes que sufras pasan a ser de un nivel inferior, acumulándose con atributos como Difícil de matar o Resistir armas. Puedes seguir luchando a 0 PV sin sufrir ninguna penalización, cayendo inconsciente solo cuando seas reducido a un número de PV negativos igual a tu CON negativa. 
 
 <u>Regeneración superior:</u> A nivel mítico 3 tu cuerpo es capaz de sanarse a velocidades muy rápidas. Al principio de la ronda recuperas 2 Vitalidad y 2 PV, acumulándose con otros atributos que otorguen regeneración. Además de ello, al descansar tus heridas permanentes reducen su gravedad con mayor rapidez, permitiéndote reducir el nivel de una de tus heridas por 1 al realizar un descanso corto y el nivel de todas tus heridas al realizar un descanso largo (esto se acumula con otras habilidades similares como Conexión elemental).
 
-<u>Inspiración mítica:</u> A nivel mítico 4 eres capaz de emplear tu poder mítico para empujarte a ti mismo y a tus aliados a conseguir lo imposible. Recibes una reserva de puntos de inspiración igual a tu nivel mítico - 1, los cuales puedes gastar para que tanto tú como un aliado reciban ventaja o desventaja en un tiro (no puedes afectar a la misma persona con más de 3 puntos de inspiración a la vez). Los puntos recibidos por esta habilidad se acumulan con el atributo Inspiración.
+<u>Inspiración mítica:</u> A nivel mítico 4 eres capaz de emplear tu poder mítico para empujarte a ti mismo y a tus aliados a conseguir lo imposible. Recibes una reserva de puntos de inspiración igual a tu nivel mítico - 1, los cuales puedes gastar para que tanto tú como un aliado puedan repetir un tiro. Esta habilidad se acumula con *indómito* y *premonición*.
 
 <u>Resistencias míticas:</u> A nivel mítico 5 incrementa tu armadura natural junto con todas las resistencias elementales y mágicas que tengas por 2. Te vuelves además inmune a todos los efectos de estado infligidos por criaturas no-míticas.
 
@@ -47,7 +47,7 @@ Cuando un personaje alcance un nivel mítico recibirá una de las siguientes hab
 
 <u>Invulnerabilidad:</u> A nivel mítico 9 recibes inmunidad a todo el daño físico hecho por fuentes no-míticas. Tienes además la capacidad de resucitar cuando te encuentres al borde de la muerte, recibiendo una descarga de poder mítico para continuar luchando. Esta habilidad solo puede usarse una vez al día y al emplearse te resucitará al instante con todos tus PV y Vitalidad. Invulnerabilidad no puede emplearse si sufres una herida crítica infligida por otra criatura mítica.
 
-<u>Semidivino:</u> A nivel mítico 10 has alcanzado el poder máximo posible permitido para un mortal, encontrándote a un paso de la divinidad. Un ser semidivino es inmortal y capaz de conceder una pequeña porción de poder divino a sus seguidores, permitiéndoles obtener rangos en Guerrero divino y Magia divina. Recibe además un conocimiento profundo de la magia elemental, arcana y oculta, permitiéndole tirar los dados de soltura más altos que tenga para todos sus tiros de magia. 
+<u>Semidivino:</u> A nivel mítico 10 has alcanzado el poder máximo posible permitido para un mortal, encontrándote a un paso de la divinidad. Un ser semidivino es inmortal y capaz de conceder una pequeña porción de poder divino a sus seguidores, permitiéndoles obtener rangos en Guerrero divino y Magia divina. Recibe además un conocimiento profundo de la magia elemental, arcana y oculta, permitiéndole tirar el bonificador más alto que tenga para todos sus tiros de magia. 
 
 ## Atributos míticos
 

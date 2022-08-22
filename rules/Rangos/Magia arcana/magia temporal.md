@@ -23,8 +23,6 @@ Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta
 
 ## Rango III  
 
-Aumenta tu probabilidad de crítico a 19-20. 
-
 <u>Visión</u> (pasiva): Realizando un ritual de diez minutos de duración puedes tener una visión de un evento pasado, presente o futuro. Visión sólo puede usarse una vez al día y sus efectos varían según qué tipo de visión deseas tener. En todos los casos la naturaleza de la visión queda escogida por el máster. 
 
 - **Pasado:** Tu visión consiste en un evento importante que haya ocurrido en el lugar donde estés o haya afectado un objeto en tu posesión. La visión puede ser de cualquier momento histórico, pero se recomienda que de alguna manera esté asociada con la campaña.
@@ -44,8 +42,6 @@ Un uso excesivo de esta habilidad puede ocasionar *[enfermedades mentales](https
 <u>Revertir el tiempo</u> (1 acción): Puedes saltar hacia atrás en el tiempo empleando una acción, volviendo a tu posición anterior y recuperándote del daño sufrido. Revertir el tiempo consume 2 chi de tu reserva y te permite recuperarte de todos los *[efectos de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html)*, *[heridas permanentes](https://raldamain.com/rules/Reglas%20principales/Heridas%20permanentes.html)* y daño que hayas sufrido este turno, además de volver a tu posición inicial. Revertir el tiempo puede usarse también en otra criatura de tu elección empleando 2 acciones y gastando 1 chi adicional, lo cual te permite restaurarla de la misma manera y hasta revivirla si ha muerto este turno.   
 
 ## Rango V  
-
-Aumenta tu probabilidad de crítico a 18-20. 
 
 <u>Visión futura</u> (pasiva): Tienes un sexto sentido que te avisa de todos los peligros inminentes. No puedes ser sorprendido y recibes ventaja en todos tus tiros de ataque y defensa. Además, una vez al turno puedes repetir un tiro de tu elección y quedarte con el mejor resultado. Visión futura también te da avisos sobre peligros que afectarán a tus aliados, lo cual te permite gastar una carga de *[Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i)* para permitir que un aliado repita un tiro de Defensa o pueda protegerse de un ataque sorpresa. Visión futura no te alertará de los efectos de *[glifos mágicos](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-iii)* salvo que gastes una carga de *[premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i)*, lo cual te permitirá protegerte de los efectos de *[glifos](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-iii)* durante una ronda. 
 

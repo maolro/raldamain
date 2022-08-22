@@ -87,7 +87,7 @@ En determinadas situaciones pueden encontrarse tipos superiores de cubierta. Si 
 
 ## Flanqueo
 
-Una criatura es flanqueada si está siendo atacada desde dos puntos opuestos. Al atacar a una criatura flanqueada el atacante recibirá ventaja en su tiro y el defensor no podrá Esquivar para defenderse. Ataque furtivo se aplica contra criaturas flanqueadas y el defensor sólo podrá evitar estas penalizaciones si tiene el atributo Esquiva asombrosa mejorada.
+Una criatura es flanqueada si está siendo atacada desde dos puntos opuestos, recibiendo desventaja en todos sus tiros defensivos contra ambas criaturas. Esta penalización se puede evitar con *esquiva asombrosa* en el caso de tiros para esquivar y combate con dos armas en el caso de parada.
 
 Si una criatura está rodeada por una marabunta sólo podrá usar Esquiva o Parada contra aquellos enemigos que se encuentren en su flanco delantero. Los ataques hechos por una marabunta contra una única persona cuentan como ataques de área, ya que el defensor sufrirá daño obligatorio aunque tenga éxito en el ataque.
 
