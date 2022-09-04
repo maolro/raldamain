@@ -4,35 +4,41 @@ title:
 
 ## Ukron, remanente del odio (nivel 2)
 
-**PV:** 4			**VT:** 5	 		**DEF:** 4 (natural 4)
+**PV:** 4			**VT:** 5	 		**DEF:** 2
 
 **FUE:** 0 	**DES:** 4	**CON:** 1	**INT:** -1	**SAB:** 1	**CAR:** -1	
 
 ------
 
-**Talentos:** Sigilo +5, Percepción +2, Acrobacias +5
+**Talentos**: Sigilo +5, Percepción +2, Acrobacias +5
 
-**Movimiento:** 20 pies
+**Movimiento:** Base 2
 
-**Acciones:** 4
+**Resiste:** Magia 3
 
-****
-
-**Explosión:** Cuando esta criatura muera infligirá 1d6 + 1 daño fuego a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
-
-------
-
-**Garras** (1 acción): +5, 1d6 cortante. Al infligir una herida permanente causa sangrado y puede desenganchar como acción bonus. 
-
-**Apuntar ataque** (1 acción): Aumenta su daño base por 4 e inflige una herida permanente leve si el objetivo tiene armadura ligera o inferior.
+**Inmunidades:** Venenos, enfermedades y efectos mentales
 
 ****
 
-**Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
+PASIVAS
+
+**Abrumar:** Hace +4 daño al atacar a un objetivo que también esté enfrentado por un aliado.
+
+**Explosión**: Al morir hace 1d6 + 1 daño ácido contra todas las criaturas adyacentes. Si reduce PV provoca una quemadura.
+
+****
+
+ACCIONES
+
+**Garras:** +5, 1d6 daño cortante. Provoca una herida leve a criaturas con armadura ligera.
+
+****
+
+REACCIONES
+
+**Esquiva**: +5 y desengancha
 
 ## Enjambre abisal (nivel 2)
-
-Tamaño inferior, Aguijón I, Reflejos I, Abisal I (veneno, vuelo)
 
 **PV:** 4			**VT:** 5	 		**DEF:** 2 (natural 2)
 
@@ -40,33 +46,31 @@ Tamaño inferior, Aguijón I, Reflejos I, Abisal I (veneno, vuelo)
 
 ------
 
-**Talentos:** Atletismo +1, Sigilo +5, Percepción +5
+**Talentos:** Acrobacias +5, Sigilo +5, Percepción +5
 
-**Movimiento:** 20 pies, vuelo 30 pies
+**Movimiento:** Vuelo 2, Base 1
 
-**Acciones:** 4
+**Resiste:** Magia 3
+
+**Inmunidades:** Venenos, enfermedades y efectos mentales
 
 ****
 
-**Combate furtivo:** +4 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+**Abrumar:** Hace +4 daño al atacar a un objetivo que también esté enfrentado por un aliado.
 
-**Explosión:** Cuando esta criatura muera infligirá 1d6 + 1 daño ácido a todas las criaturas que se encuentren a 5 pies de ella. Toda criatura que sufra daño a los PV con este ataque recibirá una quemadura leve. 
+**Explosión**: Al morir hace 1d6 + 1 daño ácido contra todas las criaturas adyacentes. Si reduce PV provoca una quemadura.
 
 ------
 
-**Aguijón** (1 acción): +5, 1d6 perforante. Al impactar el objetivo tira CON frente a +2 o es envenenado con un veneno de FUE.
-
-**Apuntar ataque** (1 acción): Aumenta su daño base por 4 e inflige una herida permanente leve si el objetivo tiene armadura ligera o inferior.
+**Aguijón:** +5, 1d6 daño perforante. Provoca una herida leve a criaturas con armadura ligera y envenena (+2)
 
 ****
 
-**Esquiva**: +7, se mueve 5 pies.
+**Esquiva**: +5+d6 y desengancha
 
 ## Chasteneth, familiar abisal (nivel 4)
 
 Pequeños servidores del abismo, los Chasteneth actúan típicamente como familiares para hechiceros con el insidioso objetivo de corromperlos progresivamente para conducirles a la locura. Son físicamente muy débiles y basan la mayoría de sus habilidades en apoyar a su amo y zafarse del combate.
-
-Abisal II (tamaño inferior, vuelo, invisibilidad, teletransporte, detectar pensamientos), Mente desencadenada I, Magia innata (asalto psíquico, prisa, alterar emociones, armadura mágica)
 
 **PV:** 5			**VT:** 7 	 		**DEF:** 5
 
@@ -76,49 +80,33 @@ Abisal II (tamaño inferior, vuelo, invisibilidad, teletransporte, detectar pens
 
 **Talentos:** Percepción +9, Engaño +7, Sigilo +6
 
-**Resistencias:** Resistencia mágica 3, necrótico 3, 
+**Resistencias:** Resistencia mágica 3, necrótico 3
 
 **Inmunidades:** Venenos, enfermedades y efectos mentales
 
-**Sentidos:** Vista del vacio 60 pies
-
-**Movimiento:** 15 pies, vuelo 30 pies
-
-**Acciones:** 4
+**Movimiento:** Base 1, Vuelo 2
 
 ---------------------------------------------------------
 
-**Tamaño inferior:** al enfrentarse contra criaturas de tamaño mediano recibirá +1d6 en tiros de esquiva y ataque contra ellos. (Recibirá +1d6 adicional por cada escala de tamaño superior de la criatura contra la que se enfrente).
+PASIVAS
 
-**Celeridad:** Durante las 3 primeras rondas del combate la criatura estará sobrecargada por la energía del abismo dándole gran agilidad. Cuando el efecto desaparezca reducirá sus acciones y su destreza por 1.
+**Vista del vacío:** Detecta todas las mentes pensantes a 60 pies. Como acción bonus usable 3/combate puede leer los pensamientos de un objetivo (+7 para defenderse).
 
-**Canalizando el abismo:** Durante las 3 primeras rondas del combate su mente está abierta a las influencias del abismo. Al terminar el efecto reducirá su sabiduría y su carisma por 2
-
-**Armadura mágica:** Durante las 3 primeras rondas del combate su cuerpo se verá fortalecido por una coraza, pudiendo extender este efecto con concentración. Cuando el efecto se acabe reducirá su armadura y su armadura mágica por 3.
-
-**Aura antinatural:** Recibe ventaja en tiros de intimidar, persuasión y engaño, mientras que criaturas a 30 pies de ti tendrán desventaja en talentos relacionados con las estadísticas de sabiduría e inteligencia. 
-
-**Toque infeccioso:** Puede dar la plaga abisal a un objetivo incapacitado.
+**Vínculo del familiar:** Forma un vínculo telepático con un aliado que venere al abismo, otorgándole los efectos de *prisa*, *armadura mágica* y *mente desencadenada* a rango I. Esto equivale a la oportunidad de entrar en *posición defensiva* como acción bonus, +3 resistencia física y mágica además de +2 en dos estadísticas mentales.
 
 ------------------------------
 
-**Invisibilidad (2 acciones):** Chasteneth podrá volverse invisible hasta que pierda la concentración o realice cualquier ataque.
+ACCIONES
 
-**Teletransporte (1 acción, 3/combate):** Podrá teletransportarse hasta 60 pies evitando ataques de oportunidad.
+**Invisibilidad:** El Chasteneth podrá volverse invisible hasta que pierda la concentración o realice cualquier ataque.
 
-**Detectar pensamientos (bonus, 3/día):** mientras mantenga la concentración podrá detectar todas las mentes en 60 pies y leer sus pensamientos superficiales. Empleando un uso adicional, una acción y tirando contra la inteligencia de tu objetivo podrá intentar entrar mas profundo en su mente o leer que será lo siguiente que va a hacer para tener ventaja en su próximo tiro.
-
-**Asalto psíquico (2 acciones, 3/día):** +7, provoca 7 daño psíquico y reduce una de las estadísticas mentales del objetivo por 1. 
-
-**Prisa (2 acciones, 2/día):** Puede prolongar su efecto de celeridad por 3 rondas o dárselo a un aliado.
-
-**Alterar emociones (2 acciones, 3/día):** +7, potenciando su Ira durante tres rondas.
-
-**Armadura mágica (2 acciones, 2/día):** Prolonga el efecto de su armadura mágica por 3 rondas o se lo da a un aliado.
+**Asalto psíquico** (3/combate): +7, provoca 7 daño psíquico y reduce una de las estadísticas mentales del objetivo por 1. Si reduce la cordura a 0 este pasará a caer bajo el control del Chasteneth mientras mantenga la concentración.
 
 __________________
 
-**Esquiva:** +5.
+**Esquiva:** +5. 
+
+**Teletransporte** (3/combate): Se teletransporta dos pasos de un enemigo, evitando de inmediato un ataque.
 
 ____
 
@@ -130,89 +118,111 @@ En el caso de que el combate parezca estar siendo dominado por el enemigo y que 
 
 ## Sabueso abisal (nivel 4)
 
-Mordisco II, (Garras I), Reflejos I, 5 PT (tocado por la locura, aura de terror), Armadur
-
-**PV:** 			**VT:** 	 		**DEF:** 
+**PV:** 8			**VT:** 8	 		**DEF:** 6
 
 **FUE:** 4	**DES:** 4	**CON:** 2	**INT:** 0	**SAB:** 1	**CAR:** 0
 
 ------
 
-**Talentos:** 
+**Talentos:** Sigilo +5, Percepción +3, Atletismo +6, Heroísmo +6
 
-**Resiste:** 
+**Resiste:** Magia 3, CON +4
 
-**Inmune:** 
+**Inmune:** Efectos mentales, venenos	
 
-**Sentidos**: 
-
-**Movimiento:** 
-
-**Acciones:** 4
+**Movimiento:** base 2
 
 ****
 
+**Olfato sensible:** Puede notar la presencia de criaturas vivas en un radio medio y tiene ventaja en tiros de percepción para oler.
 
+**Abrumar:** Hace +4 daño al atacar a un objetivo que también esté enfrentado por un aliado.
 
 ------
 
-**Mordisco** (2 acciones): 
+**Mordisco:** +6, 2d8 + 4 daño perforante y 2 ácido. Si realiza una carga el objetivo está *agarrado* (+6 para escapar)
+
+**Aullido terrorífico (recarga 5-6):** Todos los objetivos que le puedan escuchar deberán tirar Voluntad contra +3 o quedan paralizados del miedo y reducen su cordura por 4.
 
 ****
 
-
-
-****
-
-**Tácticas:** 
+**Esquiva**: +5
 
 ## Khutul (nivel 4)
 
 Los soldados rasos de las colosales hordas abisales, los Khutul disfrutan destruyendo las grandes obras de la humanidad y dejando nada más que ruinas a su paso. Su método de asalto se basa en agarrar a sus objetivos con sus tentáculos corrosivos y luego devorarlos poco a poco, condenando a sus víctimas a una muerte lenta y dolorosa. 
 
-8 PT, (explosión, plaga abisal, visión del vacío, mejora corrosiva, tocado por la locura), Tentáculo II, (Mordisco I), Armadura natural I
+**PV:** 8			**VT:** 8	 		**DEF:** 6
 
-## Samsotiq (nivel 6)
-
-**PV:** 9			**VT:** 11	 		**DEF:** 4
-
-**FUE:** 2 	**DES:** 5	**CON:** 3	**INT:** 0	**SAB:** 1	**CAR:** 0	
+**FUE:** 5	**DES:** 1	**CON:** 4	**INT:** -1	**SAB:** 1	**CAR:** 0
 
 ------
 
-**Talentos:** Sigilo +5, Percepción +2, Atletismo +1
+**Talentos:** Percepción +2, Atletismo +6, Heroísmo +7
 
-**Movimiento:** 30 pies
+**Resiste:** Magia 3, CON +4
+
+**Inmune:** Efectos mentales, venenos	
+
+**Movimiento:** base 1
+
+****
+
+**Sentido de vida:** Puede notar la presencia de criaturas vivas y magia en un radio largo.
+
+**Explosión**: Al morir hace 1d6 + 4 daño ácido contra todas las criaturas adyacentes. Si reduce PV provoca una quemadura.
+
+------
+
+**Tentáculo:** +7, 1d8 + 5 daño contundente y 2 ácido. El objetivo está enredado y si vuelve a impactar quedará agarrado (+7 para escapar). Una criatura agarrada sufrirá 1d6 + 2 daño ácido al principio de su turno y reducirá su defensa por 2.
+
+****
+
+**Parada**: +7. Puede defenderse de ataques a distancia
+
+## Samsotiq (nivel 6)
+
+**PV:** 11			**VT:** 11	 		**DEF:** 9 (resistencia 5)
+
+**FUE:** 4 	**DES:** 5	**CON:** 3	**INT:** 0	**SAB:** 1	**CAR:** 0	
+
+------
+
+**Talentos:** Sigilo +8, Percepción +4, Atletismo +7, Heroísmo +7
+
+**Resiste:** Magia 6, CON +7, energía 4
+
+**Inmune:** veneno, efectos mentales
+
+**Movimiento:** base 1
 
 **Acciones:** 4
-
-Garras II, (Mordisco I), Reflejos I, Abisal II (aliento, corrosiva, salto espacial), Armadura natural I, Ira I
 
 ****
 
 **Sangre ácida:** Esta criatura tiene sangre ácida, causando que cada vez que sea herida el atacante sufra 1 daño ácido y reducirá la efectividad de un arma por 1. 
 
-**Combate furtivo:** +5 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse (no se acumula con el bonificador de apuntar ataque).
+**Combate furtivo:** +5 daño si tiene ventaja en un tiro de ataque, el objetivo tiene desventaja o no puede defenderse.
 
-**Ferocidad:** Esta criatura seguirá luchando aunque se encuentre a 0 PV y no recibirá heridas permanentes hasta que pierda más de la mitad de sus PV
+**Ferocidad:** Esta criatura seguirá luchando aunque se encuentre a 0 PV y no recibirá heridas permanentes hasta que pierda más de la mitad de sus PV. La primera vez que caiga a 0 PV resucitará a 1 PV.
 
 ------
 
-**Garras** (1 acción): +7, 1d6 + 4 perforante y + 2 ácido. El objetivo deberá tirar CON contra +5 o es infectado con Plaga abisal además que reduce su defensa por 1.
+**Multiataque:** Hace dos ataques con sus garras.
 
-**Finta** (1 acción): +7 contra Averiguar intenciones, el objetivo no puede defenderse de su siguiente ataque.
+**Mordisco:** Un objetivo agarrado sufre 2d6 + 4 perforante y 2 ácido además de reducir su defensa por 2.
+
+**Garras**: +7, 1d6 + 4 perforante y + 2 ácido. El objetivo deberá tirar CON contra +5 o es infectado con Plaga abisal además que reduce su defensa por 1. En lugar de hacer daño puede escoger *agarrar* al objetivo (+7 para escapar).
 
 ****
 
-**Esquiva**: +7, se mueve 5 pies. +1d6 en tiros para evitar ataques de oportunidad.
+**Esquiva**: +7 y desengancha.
 
 ## Dispator, demonio maldito (nivel 6)
 
 Formados a partir de demonios corrompidos por las fuerzas del abismo, los Dispator buscan acabar con las fuerzas del orden que antaño sirvieron y corromper a los fieles servidores de Sek-Tebos. Son típicamente creados a partir de demonios de la categoría Spator y aún conservan parte de las habilidades que tuvieron como infernales.
 
 Para representar estadísticas de otros demonios corrompidos por el abismo solo hay que sustituir sus rangos de origen infernal por origen abisal, haciendo las adecuadas sustituciones según sea necesario y modificando sus habilidades mágicas para que se adecuen más al abismo.
-
-Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto espacial, armadura mágica), Alabardas II, (Garras I), Ira I, Armadura natural II. 
 
 **PV:** 14			**VT:** 14 	 		**DEF:** 10
 
@@ -224,7 +234,7 @@ Abisal III (inmunidad al fuego, ferocidad, regeneración, fusión ígnea, salto 
 
 **Resistencia:** Resistencia magica 3, necrótico 4, aturdimiento 3
 
-**Inmunidad:** Veneno, enfermedades y efectos mentales
+**Inmunidad:** Veneno, enfermedades y efectos ment	ales
 
 **Sentidos:** Visión del vacío 60 pies
 

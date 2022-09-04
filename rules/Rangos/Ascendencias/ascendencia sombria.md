@@ -7,19 +7,23 @@ Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándot
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico. Desbloqueas los rangos de nigromancia, para los cuales puedes emplear tu estadística de Carisma en lugar de tu inteligencia, y magia sombría.
+Recibes resistencia 2 al daño físico y aumentas tu reserva de chi por un valor igual a tu rango + 2.
 
-<u>Sigilo sombrío</u> (pasiva): No haces ruido al pasar ni dejas huellas, moviéndote con el sigilo de una sombra. Si estás en un área de luz tenue u oscuridad puedes emplear una acción de movimiento para ocultarte aunque estés a la vista de otros personajes.
+<u>Sigilo sombrío</u> (pasiva): No haces ruido al pasar ni dejas huellas, moviéndote con el sigilo de una sombra. Si estás en un área de luz tenue u oscuridad puedes emplear una acción para ocultarte aunque estés a la vista de otros personajes. Al esconderte de esta manera no puedes ser detectado por criaturas incapaces de ver en la oscuridad.
 
-<u>Nacido de las tinieblas</u> (pasiva): Puedes ver en la oscuridad mágica y no mágica a una distancia de 60 pies. Además, recibes Resistencia contra daño frío y necrótico igual a tu Rango. Los no-muertos no son naturalmente hostiles hacia ti. 
+<u>Nacido de las tinieblas</u> (pasiva): La oscuridad permea tu cuerpo y te convierte en parte de ella. Puedes ver en la oscuridad mágica y no mágica a una distancia de 60 pies, evitando recibir penalizaciones a causa de dicho efecto. Además, recibes resistencia al daño frío y necrótico igual a tu rango. Los no-muertos y criaturas propias del plano sombrío no son naturalmente hostiles hacia ti. 
 
 ## Rango II
 
 Incrementa tu DES por 1.
 
-<u>Crear oscuridad</u> (2 acciones): Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con la reserva elemental de *magia sombría*). Puedes apagar todas las luces en un espacio de 5 x rango pies de radio a un máximo de 60 pies de distancia empleando 2 acciones y reduciendo tu reserva elemental por 1, reduciendo la luminosidad de dicho espacio por un paso. Si el área ya está a oscuras este se llenará de una nube de oscuridad mágica. Todos tus ataques contarán como ataque sorpresa contra criaturas incapaces de ver en la oscuridad y recibes los efectos de ocultamiento superior.
+<u>Crear oscuridad</u> (2 acciones y 1 chi): Puedes apagar todas las luces en un espacio de 5 x rango pies de radio a un máximo de 60 pies de distancia, reduciendo la luminosidad de dicho espacio por un paso (luz brillante a luz tenue y luz tenue a oscuridad). Si el área ya está a oscuras este se llenará de una nube de oscuridad mágica. Todos tus ataques contarán como ataque sorpresa contra criaturas incapaces de ver en la oscuridad y recibes los efectos de ocultamiento superior.
 
-<u>Aliado sombrío</u> (pasiva): Puedes tener una Sombra como tu familiar, la cual te servirá con absoluta lealtad. Esa Sombra no puede manifestarse si hay luz brillante y no puede estar a una distancia de ti mayor de 60 pies. Una sombra se trata una criatura con nivel igual a tu rango de ascendencia x 2 y la mejora *origen sombrío*.
+<u>Aliado sombrío</u> (pasiva): Puedes tener una Sombra como tu familiar, la cual te servirá con absoluta lealtad. Esa Sombra no puede manifestarse si hay luz brillante y no puede estar a una distancia de ti mayor de 60 pies. Una sombra empieza siendo una criatura de nivel 4 y sus estadísticas iniciales serán estas:
+
+![image-20220903153335746](C:\Users\matia\AppData\Roaming\Typora\typora-user-images\image-20220903153335746.png)
+
+
 
 ## Rango III
 

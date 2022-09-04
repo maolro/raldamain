@@ -7,21 +7,19 @@ category: Ocultismo
 
 Añade tu rango a todos tus tiros relacionados con magia sombría.
 
-<u>Tajo de las tinieblas</u> (2 acciones):  Empleando dos acciones puedes cortar a través de la frontera entre el plano material y el sombrío, formando un corte de pura oscuridad mortal para cualquier ser vivo. Este ataque hace 1d6 + rango daño de fuerza y tiene un alcance máximo de 30 pies. Todo el daño a los PV hecho con un tajo de las tinieblas reducirá también el máximo de PV de dicho personaje, impidiendo que este se pueda sanar (eliminar esta reducción a los PV requiere sanación con *[magia divina](https://raldamain.com/rules/Rangos/Religion/magia%20divina.html)* o atención médica avanzada). Si tu objetivo se encuentra en un lugar a oscuras será incapaz de defenderse de tu ataque.
+<u>Tajo de las tinieblas</u> (2 acciones, una acción a rango III):  Empleando dos acciones puedes cortar a través de la frontera entre el plano material y el sombrío, formando un corte de pura oscuridad mortal para cualquier ser vivo. Este ataque hace 1d6 + rango daño de fuerza y tiene un alcance corto. Todo el daño a los PV hecho con un tajo de las tinieblas reducirá también el máximo de PV de dicho personaje, impidiendo que este se pueda sanar durante el resto del combate (este efecto puede eliminarse como si fuera una maldición y dejará de afectar al personaje tras un descanso largo). Si tu objetivo se encuentra en un lugar a oscuras este ataque contará como si fuera un ataque sorpresa, impidiendo que pueda defenderse de él. Puedes emplear 1 chi para afectar a un objetivo adicional con este ataque.
 
-<u>Reserva de energía</u> (bonus): Puedes elegir sufrir 1 daño no letal para aumentar la fuerza de tus ataques. Con esta habilidad puedes atacar a todas las criaturas en un radio de 10 pies centrado en ti, hacer un ataque elemental adicional o bajar la luminosidad de un área de 20 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
+<u>Garra sombría</u> (2 acciones, 1 acción a rango III):  
+
+<u>Crear oscuridad</u> (2 acciones y 1 chi):
 
 <u>Parada sombría</u> (reacción): Eres capaz de emplear las sombras para protegerte de ataques, lo cual se conoce como una parada sombría. Una parada sombría sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo. 
 
 ## Rango II
 
-<u>Manipular las sombras</u> (1 acción/2 acciones): Empleando una acción puedes manipular un volumen de oscuridad mágica de tamaño igual a tu rango x 5 pies, el cual puedes mover 15 pies en cualquier dirección o expandir su tamaño por 5 pies en cada dirección. Adicionalmente, usando dos acciones puedes aumentar la densidad de una nube de oscuridad de rango x 10 pies, convirtiéndola en *[terreno difícil](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#terreno-difícil)* y *[cegando](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#cegada)* a todas las criaturas que se encuentren en ella.
 
-<u>Capullo sombrío</u> (2 acciones) Empleando dos acciones puedes rodearte de densas sombras para formar una capa protectora semejante a un capullo. Mientras te encuentres en dicho estado recibes puntos de vida temporales iguales a tu rango + 2 y aumentas tu defensa por 2, pero no podrás esquivar para defenderte y reducirás tu velocidad por 10 pies. Si el capullo es destruido o tú escoges disiparlo este formará una nube de oscuridad mágica con radio 10 pies centrado en ti.
 
 ## Rango III
-
-Aumenta tu probabilidad de crítico a 19-20.
 
 <u>Absorber oscuridad</u> (1 acción/bonus): Puedes drenar la oscuridad de tu entorno para fortalecer tus ataques. Empleando una acción puedes disipar 10 pies de oscuridad mágica para obtener un punto de energía, llegando a un máximo igual a tu rango + 1. Al hacer un ataque puedes gastar una cantidad de puntos de energía para incrementar su radio de efecto por 5 pies y obtener un bonificador al tiro de ataque y el daño igual a la cantidad de puntos gastados. Las sombras drenadas se liberarán al impactar, formando una nube de oscuridad mágica de tamaño 10 pies en el punto donde has impactado. Adicionalmente, tu capullo sombrío aumenta sus PV por un valor igual a la cantidad de puntos de energía que tengas y estos te otorgarán un bonificador +1 en tiros defensivos. Hacer un ataque de tajo sombrío ahora te cuesta una acción.
 
