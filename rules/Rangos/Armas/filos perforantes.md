@@ -41,7 +41,7 @@ Para desbloquear este rango necesitas 5 DES y cuatro niveles de talento en juego
 
 <u>Buscar apertura</u> (1 acción): Observando atentamente a un enemigo puedes aprovechar un momento de debilidad para asentarle un golpe mortal. Al emplear esta habilidad entras en un estado de preparación que te permite como reacción atacar a un enemigo que se encuentre a una distancia menor o igual a tu alcance si este sufre un [efecto de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html) que le dificulte a la hora de defenderse (cegado, aturdido, agarrado, náuseas, ensordecido o paralizado). No podrás atacar al mismo objetivo más de una vez por ronda y abandonarás el estado de preparación en el momento que pierdas la concentración.
 
-## Rango V 
+## Rango V 	
 
 Para desbloquear este rango necesitas 6 DES y cinco niveles de talento en juego de manos.
 

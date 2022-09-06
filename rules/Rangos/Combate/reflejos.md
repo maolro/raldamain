@@ -3,8 +3,6 @@ title: Reflejos
 category: Combate
 ---
 
-Tienes capacidades anormalmente altas en cuanto a lo que tu velocidad de reacción se refiere, permitiéndote realizar maniobras mas complejas que dependan de tu agilidad y reflejos. Cuanto mas avanzado se vuelve tu entrenamiento en este área mas capaz eres de evadir cualquier efecto adverso dirigido hacia ti, desarrollando un sexto sentido que te permita esquivar ataques que no puedes ver así como evitar ágilmente múltiples ataques enemigos sin que estos tengan la oportunidad de tomar ventaja de ello. 
-
 ## Rango I
 
 Para desbloquear este rango necesitas 2 DES y un nivel de talento en acrobacias y sigilo.
