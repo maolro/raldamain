@@ -36,7 +36,7 @@ Reduce el coste en acciones de *asalto psíquico* por 1.
 
 <u>Telepatía</u> (pasiva): Puedes comunicarte telepáticamente con todas las criaturas en un radio de 30 pies. Además, detectas la posición exacta de todas las criaturas en esa área que no tengan la habilidad *[Mente custodiada](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-i).* Tus ataques mentales no requieren gesticulación y puedes usarlos siempre que tu mente esté consciente.  
 
-### Rango IV
+## Rango IV
 
 <u>Geas</u> (2 acciones): Empleando dos acciones puedes dar una orden mental a una criatura que deberá cumplir sin reparos. Tu objetivo podrá resistir con su SAB, pero si fracasa deberá obedecer la orden que le pidas. Utilizar Geas consume 2 chi y no podrás usar esta habilidad para hacer que tu objetivo realice acciones dañinas hacia sí mismo o sus seres queridos. Esta restricción puede traspasarse si tu objetivo está *[Confundido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#confundida)* o su cordura ha sido reducida a 0, lo cual te permite ordenar hasta el suicidio.  
 

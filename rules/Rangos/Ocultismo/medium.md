@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros relacionados con habilidades de médium. Eres 
 
 <u>Invocar espectro</u> (3 acciones): Usando tres acciones puedes invocar a tu alma ligada para que te proteja frente al peligro, la cual se manifestará en la forma de una criatura *[incorpórea](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#mejoras-de-3-pt)* conocida como un espectro. Este espectro tendrá nivel igual a tu rango de médium x 2 y empezará con la mejora *[incorpóreo](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#mejoras-de-3-pt)* (sus ataques físicos infligirán daño necrótico). El espectro permanecerá en el mundo durante un minuto o hasta que pierdas la concentración, y mientras él viva recibirás ventaja en todos tus tiros defensivos pero no podrás emplear la habilidad *[Canalizar ánima](https://raldamain.com/rules/Rangos/Ocultismo/medium.html#rango-i)*. A rango IV el espectro no requerirá tu concentración para manifestarse.
 
-## Rango III
+## Rango III	
 
 Aumenta tu probabilidad de crítico con exorcizar a 19-20.
 
@@ -55,7 +55,7 @@ Estas son las estadísticas de algunas criaturas espectrales para que sirvan de 
 
 **PV:** 8			**VT:** 10	 		**DEF:** 0
 
-**FUE:** - 	**DES:** 3	**CON:** -	**INT:** 2	**SAB:** 2	**CAR:** 4 	
+**FUE:** - 	**DES:** 3	  **CON:** -	**INT:** 2	**SAB:** 2	**CAR:** 4 	
 
 ------
 
