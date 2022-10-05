@@ -39,7 +39,7 @@ Añade tu rango a todos tus tiros relacionados con nigromancia. Sientes la prese
 
 <u>Alma corrompida:</u> Tu cuerpo recibe las resistencias de un no-muerto. Recibes Resistencia 2 contra daño físico y puedes usar tu carisma en lugar de tu constitución para calcular tus PV y Vitalidad. Puedes seguir luchando aunque llegues a 0 PV, el efecto de estado *[Ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada)*. Sólo morirás cuando tus PV negativos sean iguales a tu carisma. Tus hechizos de *[magia mental](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html)* pueden afectar a no-muertos, aunque estos posean inmunidad a ellos. Si ya has alcanzado la no-muerte te regeneras 2 Vitalidad por ronda (2 PV si estás al máximo de Vitalidad) y reduces el nivel de todas las *[heridas permanentes](https://raldamain.com/rules/Reglas%20principales/Heridas%20permanentes.html)* que te afecten por un paso.
 
-# No-muertos
+# No-muertos	
 
 Un no-muerto es un cadáver que ha recibido una semblanza de vida por magia oscura. La mayoría de no-muertos, conocidos como no-muertos inferiores, carecen de todo recuerdo de su vida pasada y viven sólo para consumir a los seres vivos (por ello perderán todos los rangos, talentos y habilidades innatas que tengan). Algunos no-muertos son capaces de conservar su inteligencia y habilidades pasadas, pero la magia oscura empleada para resucitarlos corrompe su alma y les conduce hacia la maldad. 
 

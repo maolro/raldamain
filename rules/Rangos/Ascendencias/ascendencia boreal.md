@@ -1,5 +1,5 @@
 ---
-title: Ascendencia Boreal
+ title: Ascendencia Boreal
 category: Ascendencias
 ---
 
@@ -21,7 +21,7 @@ Incrementa tu CON por 1.
 
 <u>Canalizar el frío</u> (pasiva): Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con reserva de energía). Puedes reducir tu reserva por 1 para infundir tus ataques físicos con hielo durante una ronda, haciendo que estos inflijan +2 daño frío al impactar y ralenticen al objetivo si logras reducir sus PV. Si te encuentras en un entorno frío el efecto de ataques infundidos durará una ronda adicional. La reserva de energía se recuperará por completo al realizar un descanso largo.
 
-<u>Visión ártica</u> (pasiva): as tormentas de nieve y niebla no dificultan tu visión, permitiéndote ver sin penalizaciones en un radio de 60 pies. Esta habilidad no funciona con humo o gases que dificultan la visión.
+<u>Visión ártica</u> (pasiva): Las tormentas de nieve y niebla no dificultan tu visión, permitiéndote ver sin penalizaciones en un radio de 60 pies. Esta habilidad no funciona con humo o gases que dificultan la visión.
 
 ## Rango III
 
@@ -53,7 +53,7 @@ Incrementa tu CAR por 1
 
 <u>Hijo del invierno</u> (pasiva): Te conviertes en una criatura primigenia del invierno. Recibes resistencia 4 a los efectos de estado [fatigado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#fatigada), [exhausto](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#exhausta), [ralentizado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#ralentizada) y [paralizado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#paralizada). Tu esperanza de vida se duplica y los espíritus no serán naturalmente hostiles hacia ti, teniéndote en muy alta estima.
 
-<u>Forma elemental</u> (3 acciones): Puedes emplear tres acciones y reducir tu reserva elemental por 2 para infundir tu cuerpo de hielo transformarte en un poderoso elementla de hielo. Entrar en forma elemental sólo puede usarse una vez por combate y permanecerá activa durante un número de rondas igual a tu rango + 1 o hasta que pierdas la concentración. Al activar forma elemental tienes dos opciones para escoger:
+<u>Forma elemental</u> (3 acciones): Puedes emplear tres acciones y reducir tu reserva elemental por 2 para infundir tu cuerpo de hielo transformarte en un poderoso elemental de hielo. Entrar en forma elemental sólo puede usarse una vez por combate y permanecerá activa durante un número de rondas igual a tu rango + 1 o hasta que pierdas la concentración. Al activar forma elemental tienes dos opciones para escoger:
 
 - **Coloso gélido:** Te rodeas de una poderosa armadura de hielo. Tu tamaño aumenta a grande, recibes 8 PV temporales, incrementa tu armadura natural por 2 además de tu fuerza y constitución por 2. A causa de tu gran tamaño tu destreza se reduce por 1 y no podrás volar.
 - **Tormenta viviente:** Te rodeas de una tormenta de nieve con de radio de 60 pies. Esta tormenta te da ocultamiento y hará 2 daño frío no-letal a todas las criaturas que empiecen su turno en ella, acumulándose con *manto nevado*. Podrás utilizar Forma gaseosa y Caminante del viento en este área y el daño de todos tus ataques elementales hechos dentro de tu área de tormenta aumentará por 1d6.

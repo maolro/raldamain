@@ -15,7 +15,7 @@ Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta
 
 ## Rango II
 
-<u>Desplazamiento</u> (reacción): Tu control por el tiempo te permite estar fuera de sincronía con él, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes gastar 1 chi de tu reserva como reacción empleable una vez por ronda para realizar un pequeño salto temporal, anulando así todo el daño y efectos del ataque. Una criatura con esta habilidad puede gastar 1 chi para evitar que puedas utilizar Desplazamiento para protegerte.
+<u>Desplazamiento</u> (reacción): Tu control por el tiempo te permite estar fuera de sincronía con él, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes gastar 1 chi de tu reserva como reacción empleable una vez por ronda para realizar un peueño salto temporal, anulando así todo el daño y efectos del ataque. Una criatura con esta habilidad puede gastar 1 chi para evitar que puedas utilizar Desplazamiento para protegerte.
 
 <u>Acelerar</u> (2 acciones): Empleando dos acciones y consumiendo 1 chi puedes hacer que una criatura pueda moverse y actuar con mayor velocidad. Una criatura afectada por Acelerar recibirá una acción adicional al turno e incrementará su DES por 1 durante un número de rondas igual a tu rango + 1. Acelerar contrarresta y es contrarrestado por *[Alentar](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-ii)*.
 
