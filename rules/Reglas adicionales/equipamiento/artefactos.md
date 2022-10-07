@@ -48,7 +48,7 @@ Para obtener afinidad con el cubo infinito es necesario tener éxito en cuatro t
 
 - Aumenta su reserva de chi por 7 y cada ronda recuperará 1 chi de esta.
 - El usuario puede concentrarse en un hechizo adicional por ronda y obtiene ventaja en todos sus tiros relacionados con magia arcana.
-- La acción necesaria para lanzar un hechizo se reduce por un paso, permitiendo al usuario lanzar hechizos de acción de turno completo como acción estándar, de acción estándar como acción de movimiento y de acción de movimiento como acción bonus usable una vez por turno.
+- La acción necesaria para lanzar un hechizo se reduce por 1, llegando a un mínimo de 0. Aquellos hechizos que tengan el coste de acciones reducidos a 0 solo podrán emplearse una vez por rond
 - El usuario es capaz de drenar chi de su entrono para incrementar temporalmente su reserva de chi. Cada vez que mate a un ser vivo inteligente que se encuentre a menos de 30 pies con un hechizo recibirá 1 chi temporal, el cual podrá emplear para sus habilidades mágicas. Determinadas criaturas mágicas y míticas otorgarán cantidades superiores de chi al ser matadas, lo cual queda a discreción del máster. Alternativamente, el usuario podrá emplear un ritual de tres rondas para drenar todo el chi en un territorio de 100 pies cuadrados, obteniendo 1 chi temporal y matando instantáneamente a todas las plantas y animales en la zona.
 - El cubo infinito es capaz de drenar chi de manera permanente para empoderar a su usuario. Para esto el cubo consumirá 8 chi permanentemente para otorgar un nivel mítico a su usuario, y cada uso adicional de esta habilidad duplicará el coste de chi para consumir. El chi empleado para esta habilidad puede ser chi temporal que reciba el usuario drenando chi de su entorno.
 

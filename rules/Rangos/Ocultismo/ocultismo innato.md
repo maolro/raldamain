@@ -8,7 +8,7 @@ Aquí se presenta una lista de las variaciones que tendrán las habilidades de o
 
 <u>Toque sanador</u> (Rango I, requiere *ascendencia celestial*, *ascendencia verdeante* o los rangos de monstruos asociados a ambas ramas): Como acción bonus empleable 3 veces al día puedes sanar 1d4 + SAB vitalidad a ti mismo o una criatura adyacente a ti. Puedes empelar un uso adicional de esta habilidad para reducir el nivel de una herida permanente, veneno o enfermedad por un paso al sanar.
 
-<u>Conexión vital</u> (Rango II, requiere *toque sanador*):
+<u>Conexión vital</u> (Rango II, requiere *toque sanador*): Tres veces al día empleando 2 acciones puedes formar un vínculo vital con otra criatura
 
 <u>Barrera luminosa</u> (Rango II, requiere *descarga luminosa*):
 

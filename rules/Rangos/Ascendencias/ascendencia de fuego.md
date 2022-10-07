@@ -38,7 +38,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de fuego a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
-<u>Propulsión</u> (2 acciones): Eres capaz de propulsarte en el aire con tu magia de fuego. Empleando 2 acciones puedes volar 60 pies en cualquier dirección y recibir ventaja en todos tus tiros de esquiva y parada elemental durante una ronda. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1. 
+<u>Propulsión</u> (2 acciones): Eres capaz de propulsarte en el aire con tu magia de fuego. Empleando 2 acciones puedes volar 60 pies en cualquier dirección y recibir ventaja en todos tus tiros de esquiva y parada elemental durante una ronda. Puedes reducir el coste en acciones de esta habilidad por 1 si reduces también tu reserva elemental por 1. Además, si tu rango de ascendencia es superior a tu rango de reflejos puedes emplearlo para todos tus tiros de esquiva sustituyendo tu anterior
 
 <u>Armas infundidas</u> (pasiva): Tus ataques físicos están infundidos con energía elemental de fuego, provocando +2 daño fuego base e infligirán una quemadura leve al reducir los PV de tu objetivo (este daño se acumula con *furia del fuego*). Tus ataques aumentan su daño base por 1d6 al impactar tras una carga.
 

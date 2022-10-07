@@ -6,7 +6,7 @@ niveles: 5-6
 layout: campaign
 ---
 
-Los jugadores despiertan en las orillas de una isla paradisíaca tras su presunta muerte en la eterna tormenta de Olvangar. En esta isla libre de las maldades del mundo tanto los jugadores como sus aliados tienen una oportunidad de conocerse mejor y conocer algunos de las motivaciones y secretos que estos esconden, pero esta isla esconde mucho más de lo que aparenta. En el corazón de esta isla 
+Los jugadores despiertan en las orillas de una isla paradisíaca tras su presunta muerte en la eterna tormenta de Olvangar. En esta isla libre de las maldades del mundo tanto los jugadores como sus aliados tienen una oportunidad de conocerse mejor y conocer algunos de las motivaciones y secretos que estos esconden, pero esta isla esconde mucho más de lo que aparenta. En el corazón de esta isla hay un antiguo artefacto tan poderoso com
 
 ## Localidad
 

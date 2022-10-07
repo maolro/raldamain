@@ -24,7 +24,7 @@ Una hoja de personaje muestra por completo las capacidades, habilidades y conoci
 
 **Resistencias e inmunidades:** Las resistencias e inmunidades representan la capacidad de un personaje de soportar tipos determinados de daño, como podría ser armas físicas, fuego o daño mágico. La resistencia reducirá dicho daño por una cantidad igual a su valor mientras que si un personaje posee inmunidad contra un tipo determinado de daño este no le afectará.
 
-**[Talentos](https://raldamain.com/rules/Crear%20personajes/crear%20personajes.html#talentos):** Los talentos indican la aptitud del personaje en numerosas habilidades desvinculadas de los rangos que tienen utilidad en todo tipo de situaciones tanto en el campo de batalla como en la vida diaria. 
+**[Talen](https://raldamain.com/rules/Crear%20personajes/crear%20personajes.html#talentos):** Los talentos indican la aptitud del personaje en numerosas habilidades desvinculadas de los rangos que tienen utilidad en todo tipo de situaciones tanto en el campo de batalla como en la vida diaria. 
 
 **[Rangos](https://raldamain.com/rules/Crear%20personajes/crear%20personajes.html#rangos):** Los rangos, como ya se ha explicado, son la base del sistema Raldamain y forman una parte fundamental de la identidad del personaje. Estos representan las habilidades más destacables del personaje, cubriendo ámbitos como la aptitud con armas o la magia. 
 

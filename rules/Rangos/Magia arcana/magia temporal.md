@@ -15,15 +15,13 @@ Tira un dado de soltura adicional en tiros de magia temporal. Tu reserva aumenta
 
 ## Rango II
 
-<u>Desplazamiento</u> (reacción): Tu control por el tiempo te permite estar fuera de sincronía con él, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes gastar 1 chi de tu reserva como reacción empleable una vez por ronda para realizar un pequeño salto temporal, anulando así todo el daño y efectos del ataque. Una criatura con esta habilidad puede gastar 1 chi para evitar que puedas utilizar Desplazamiento para protegerte.
+<u>Desplazamiento</u> (reacción): Tu control por el tiempo te permite estar fuera de sincronía con él, pudiendo realizar pequeños saltos temporales para evitar ataques. Puedes gastar 1 chi de tu reserva como reacción empleable una vez por ronda para realizar un peueño salto temporal, anulando así todo el daño y efectos del ataque. Una criatura con esta habilidad puede gastar 1 chi para evitar que puedas utilizar Desplazamiento para protegerte.
 
 <u>Acelerar</u> (2 acciones): Empleando dos acciones y consumiendo 1 chi puedes hacer que una criatura pueda moverse y actuar con mayor velocidad. Una criatura afectada por Acelerar recibirá una acción adicional al turno e incrementará su DES por 1 durante un número de rondas igual a tu rango + 1. Acelerar contrarresta y es contrarrestado por *[Alentar](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-ii)*.
 
 <u>Alentar</u> (2 acciones): Puedes atrasar el tiempo en una burbuja de 20 pies de radio haciendo uso de dos acciones y consumiendo 1 chi, ralentizando a todas las criaturas que se encuentren en ella. Una criatura afectada por Alentar pierde una acción y reduce su DES por 1. Los ataques mágicos y distancia que pasen por una burbuja de alentar están también ralentizados, lo cual otorgará desventaja a todos los tiros de ataque de estos. Una burbuja de Alentar permanece hasta que pierdas la concentración y contrarresta a todos los efectos de *[Acelerar](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-ii)* que haya en su radio. 
 
 ## Rango III  
-
-Aumenta tu probabilidad de crítico a 19-20. 
 
 <u>Visión</u> (pasiva): Realizando un ritual de diez minutos de duración puedes tener una visión de un evento pasado, presente o futuro. Visión sólo puede usarse una vez al día y sus efectos varían según qué tipo de visión deseas tener. En todos los casos la naturaleza de la visión queda escogida por el máster. 
 
@@ -44,8 +42,6 @@ Un uso excesivo de esta habilidad puede ocasionar *[enfermedades mentales](https
 <u>Revertir el tiempo</u> (1 acción): Puedes saltar hacia atrás en el tiempo empleando una acción, volviendo a tu posición anterior y recuperándote del daño sufrido. Revertir el tiempo consume 2 chi de tu reserva y te permite recuperarte de todos los *[efectos de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html)*, *[heridas permanentes](https://raldamain.com/rules/Reglas%20principales/Heridas%20permanentes.html)* y daño que hayas sufrido este turno, además de volver a tu posición inicial. Revertir el tiempo puede usarse también en otra criatura de tu elección empleando 2 acciones y gastando 1 chi adicional, lo cual te permite restaurarla de la misma manera y hasta revivirla si ha muerto este turno.   
 
 ## Rango V  
-
-Aumenta tu probabilidad de crítico a 18-20. 
 
 <u>Visión futura</u> (pasiva): Tienes un sexto sentido que te avisa de todos los peligros inminentes. No puedes ser sorprendido y recibes ventaja en todos tus tiros de ataque y defensa. Además, una vez al turno puedes repetir un tiro de tu elección y quedarte con el mejor resultado. Visión futura también te da avisos sobre peligros que afectarán a tus aliados, lo cual te permite gastar una carga de *[Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i)* para permitir que un aliado repita un tiro de Defensa o pueda protegerse de un ataque sorpresa. Visión futura no te alertará de los efectos de *[glifos mágicos](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-iii)* salvo que gastes una carga de *[premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i)*, lo cual te permitirá protegerte de los efectos de *[glifos](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-iii)* durante una ronda. 
 
