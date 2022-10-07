@@ -11,27 +11,29 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 
 Para desbloquear este rango necesitas 2 DES y un nivel de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango IV.
 
-<u>Ataque apuntado</u> (1+ acciones): Eres capaz de apuntar con precisión a los puntos débiles de tu objetivo. Empleando una acción adicional al atacar puedes provocar una [herida permanente leve]() en una parte del cuerpo de tu objetivo escogida por ti al impactar. Tienes más dificultades apuntando a criaturas que lleven [armadura](https://raldamain.com/rules/Rangos/Combate/armaduras.html#tipos-de-armadura) más voluminosa, requiriendo así que gastes una acción adicional al apuntar si tu objetivo lleva armadura media, dos acciones si lleva armadura pesada y tres si lleva armadura completa. Las acciones gastadas en un ataque apuntado permanecerán vigentes hasta que realices un ataque o pierdas la concentración, pudiendo así gastar acciones para apuntar y hacer el ataque en tu siguiente turno. 
+<u>Ataque con arma</u> (2 acciones): Haz un ataque con tu arma, infligiendo daño especificado por su tipo. Emplearás como bonificador de ataque tu estadística de DES a la cual le sumarás tu rango en filos perforantes
 
-<u>Combate furtivo</u> (pasiva): Tus ataques se vuelven más fuertes al atacar a enemigos que se encuentren en una posición vulnerable. Añade tu estadística de destreza a todos tus tiros de daño si tienes ventaja en un tiro de ataque, tu objetivo tiene desventaja contra tus ataques o es incapaz de defenderse. Al realizar un *ataque apuntado* sumarás también tu destreza al daño aunque no tengas ventaja.
+<u>Apuntar ataque</u> (1+ acciones): Inflige una herida leve al impactar con tu siguiente ataque si el objetivo lleva armadura ligera o inferior. +1 AP para aumentar el nivel de armadura que puedes afectar por un paso
 
-<u>Parada</u> (reacción) Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Tienes desventaja defendiéndote con parada de armas que tengan tamaño excesivamente superior o inferior al tuyo (por ejemplo si bloqueas un arma pesada con un arma de tamaño normal).
+<u>Combate furtivo</u> (pasiva): Añade +DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
+
+<u>Parada</u> (reacción) Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando el bonificador de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Tienes desventaja defendiéndote con parada de armas que tengan tamaño excesivamente superior o inferior al tuyo (por ejemplo si bloqueas un arma pesada con un arma de tamaño normal).
 
 ## Rango II
 
 Para desbloquear este rango necesitas 3 DES y dos niveles de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango V.
 
-<u>Ataque rápido</u> (pasiva): Eres capaz de realizar ataques con gran celeridad. Hacer un ataque con un arma perforante ahora te cuesta una acción en lugar de dos. 
+<u>Desarme</u> (1 acción): El objetivo se defiende con su tiro de arma y si fracasa es desarmado de un arma ligera (el arma es de cualquier tipo si tiene una herida permanente en el brazo)
 
-<u>Finta</u> (1 acción): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. Al hacer una finta tu objetivo se defenderá con un tiro de averiguar intenciones (esquiva si tiene *esquiva asombrosa*) y si fracasa no podrá defenderse del siguiente ataque hecho por ti o un aliado. Si obtienes un golpe crítico en una finta el siguiente ataque realizado contará también como un crítico mientras que provocas un ataque de oportunidad si obtienes un fracaso crítico. Si tienes nivel 3 de talento en engaño una vez por ronda puedes repetir un tiro de finta (dos veces por ronda si tienes nivel de talento 5).
+<u>Finta</u> (1 acción): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. El objetivo se defiende con su SAB y si fracasa no puede defenderse de tu siguiente ataque.
 
 ## Rango III 
 
 Para desbloquear este rango necesitas 4 DES y tres niveles de talento en juego de manos.
 
-<u>Desarme</u> (1 acción): Si un enemigo logra detener tu ataque exitosamente con una parada puedes emplear una acción para intentar desarmarlo. Para ello tu enemigo deberá defenderse con parada y si tienes éxito su arma caerá de inmediato en una posición aleatoria a 5 pies de él (1d6 x 5 pies si obtienes un golpe crítico). Recoger un arma caída cuesta una acción y realizarlo provoca ataques de oportunidad. No puedes desarmar armas más grandes que la tuya salvo que tu objetivo tenga una herida permanente en el brazo.
+<u>Asesinato</u> (1 acción): Cada impacto contra una criatura sorprendida cuenta como golpe crítico.
 
-<u>Reposicionar</u> (reacción): Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad. Esto se acumula con la cantidad de pies que puedes moverte con la habilidad *[evasión](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)* y a rango V te mueves 10 pies al detener exitosamente un ataque.
+<u>Reposicionar</u> (reacción): Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
 
 ## Rango IV
 
