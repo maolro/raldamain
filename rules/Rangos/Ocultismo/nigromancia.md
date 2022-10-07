@@ -23,8 +23,6 @@ Añade tu rango a todos tus tiros relacionados con nigromancia. Sientes la prese
 
 ## Rango III
 
-Incrementa tu probabilidad de crítico a 19-20. 
-
 <u>Tormenta de energía negativa</u> (2 acciones): Empleando dos acciones puedes liberar una destructiva onda de energía necrótica. Esta habilidad funciona un ataque de toque necrótico hecho contra todas las criaturas en un radio de 30 pies centrado en ti el cual provocará 2d4 + rango daño necrótico al impactar (2d6 + rango a rango V). Tormenta de energía negativa sólo podrá usarse un número de veces al día igual a tu Rango - 1. Emplear *[toque necrótico](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#rango-i)* ahora te cuesta una acción y puedes emplear tu tiro de nigromancia para defenderte de ataques mágicos.
 
 <u>Aspecto de no-muerto</u> (pasiva): Estás un paso más cerca de la no-muerte que cualquier mortal. Eres capaz de subsistir sólo con la esencia vital de los demás, causando que no sufras efectos negativos por pasar un día sin comer ni beber si has matado a un ser vivo con *toque necrótico* en 24 horas. Al hacer un tiro de Intimidar puedes tirar tus dados de Nigromancia en lugar de los dados correspondientes a ese talento. Si ya has alcanzado la no-muerte al recibir esta habilidad recibes la mejora *[Mirada terrorífica](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#mejoras-de-3-pt)*, espantando así a todas las criaturas que se encuentren a 60 pies de ti que te estén mirando (en el caso que ya la poseas aumenta el nivel de miedo que provocas con dicha habilidad por un paso).
@@ -37,13 +35,11 @@ Incrementa tu probabilidad de crítico a 19-20.
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 18-20.
-
 <u>Toque de la muerte:</u> Tu toque necrótico es capaz de levantar a tus enemigos caídos como no-muertos. Cada vez que reduzcas a una criatura enemiga a 0 PV con un toque necrótico esta morirá instantáneamente y revivirá como un *[no-muerto menor](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#no-muertos-inferiores)* bajo tu control (una criatura con rangos de *[fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html)* puede tirar CON para resistir este efecto). Esta habilidad también se activará si matas a una criatura empleando *[enervación](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#rango-iv)*.
 
 <u>Alma corrompida:</u> Tu cuerpo recibe las resistencias de un no-muerto. Recibes Resistencia 2 contra daño físico y puedes usar tu carisma en lugar de tu constitución para calcular tus PV y Vitalidad. Puedes seguir luchando aunque llegues a 0 PV, el efecto de estado *[Ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada)*. Sólo morirás cuando tus PV negativos sean iguales a tu carisma. Tus hechizos de *[magia mental](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html)* pueden afectar a no-muertos, aunque estos posean inmunidad a ellos. Si ya has alcanzado la no-muerte te regeneras 2 Vitalidad por ronda (2 PV si estás al máximo de Vitalidad) y reduces el nivel de todas las *[heridas permanentes](https://raldamain.com/rules/Reglas%20principales/Heridas%20permanentes.html)* que te afecten por un paso.
 
-# No-muertos
+# No-muertos	
 
 Un no-muerto es un cadáver que ha recibido una semblanza de vida por magia oscura. La mayoría de no-muertos, conocidos como no-muertos inferiores, carecen de todo recuerdo de su vida pasada y viven sólo para consumir a los seres vivos (por ello perderán todos los rangos, talentos y habilidades innatas que tengan). Algunos no-muertos son capaces de conservar su inteligencia y habilidades pasadas, pero la magia oscura empleada para resucitarlos corrompe su alma y les conduce hacia la maldad. 
 

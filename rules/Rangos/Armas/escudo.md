@@ -9,13 +9,13 @@ Tu estilo de combate se asemeja al de una sólida barrera defensiva, empleando t
 
 ## Rango I
 
-Añade tu rango de esta habilidad a tus tiradas defensivas con un escudo.
+Para desbloquear este rango necesitas tener una cantidad de fuerza requerida por el escudo que estés llevando.
 
 <u>Ataque con escudo</u> (acción bonus): Al realizar una carga puedes hacer un ataque con tu escudo como acción bonus, empleando tu estadística de fuerza y tu rango de arma en el tiro de ataque. Si impactas tu objetivo sufre 1d6 + FUE daño contundente y puedes realizar una maniobra de empujar o tropezar contra él (ambas si obtienes un golpe crítico). El daño de un escudo se reduce a 1d4 + FUE si es un escudo ligero y aumenta a 1d8 + FUE si es un escudo de torre. Esta habilidad puede empelarse fuera de una carga empleando dos acciones (a rango III costará una acción).
 
 <u>Proteger aliados</u> (reacción): Puedes defender a un aliado a 5 pies de ti como reacción utilizando tu escudo para protegerlo. Si lo haces usarás tu tirada en lugar de la tirada de defensa del aliado, pero en el caso de fracasar tú sufrirás el daño del ataque.
 
-<u>Defensa mejorada</u> (reacción): Tu soltura con el escudo te permite bloquear ataques que en otras circunstancias serían un impacto indiscutible. Una vez por ronda como reacción puedes detener un ataque enemigo que haya logrado sobreparar tu tiro defensivo a costa de reducir el valor defensivo de tu escudo por 1 (redúcelo por 2 si bloquea un golpe crítico, un *ataque poderoso* o un ataque que cause daño de fuego, radiante o fuerza), quedando destruido si su valor defensivo queda reducido a 0.
+<u>Defensa mejorada</u> (reacción): Tu soltura con el escudo te permite bloquear ataques que en otras circunstancias serían un impacto indiscutible. Si te encuentras en posición defensiva una vez por ronda como reacción puedes detener un ataque enemigo que haya logrado sobreparar tu tiro defensivo a costa de reducir el valor defensivo de tu escudo por 1 (redúcelo por 2 si bloquea un golpe crítico, un *ataque poderoso* o un ataque que cause daño de fuego, radiante o fuerza), quedando destruido si su valor defensivo queda reducido a 0. Esta habilidad no funciona contra ataques de área o combinados.
 
 ## Rango II
 
@@ -43,7 +43,7 @@ Añade tu rango de esta habilidad a tus tiradas defensivas con un escudo.
 
 ## Armas
 
-Un escudo base está hecho de madera y te permite protegerte de ataques a distancia, mágicos o cuerpo a cuerpo como reacción. Para ello empleará un valor conocido como el valor defensivo que no dependerá de ninguna estadística, el cual es equivalente a +4 para un escudo normal. No obstante, recibirás una penalización -2 en todos tus tiros de DES.  Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
+Un escudo base está hecho de madera y te permite protegerte de ataques a distancia, mágicos o cuerpo a cuerpo como reacción. Para ello empleará un valor conocido como el valor defensivo que no dependerá de ninguna estadística, el cual es equivalente a +4 para un escudo normal y quedará modificado por tu rango en escudos. No obstante, recibirás una penalización -2 en todos tus tiros de DES.  Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
 
 - **Ligero:** Un escudo ligero es más fácil de transportar y utilizar a costa de protegerte menos. No sufres ninguna penalización a tu DES al defenderte con un escudo ligero, pero este reducirá su bonificador defensivo a 3.
 - **Metálico:** Un escudo metálico tiene mayor resistencia que uno de madera, causando que deba resistir dos impactos antes que el valor defensivo que otorga pueda ser reducida. Escudos de este tipo incrementan el penalizador a la DES por 1 a causa de su gran peso.

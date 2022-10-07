@@ -5,11 +5,9 @@ category: Combate
 
 Te has entrenado para ser experto en todo lo relacionado con un terreno determinado, teniendo un completo conocimiento sobre él así como todo lo relacionado con el mismo. A medida que tu experiencia incrementa a lo largo de tus viajes, tu habilidad también lo va haciendo, volviéndote capaz de aplicar tus conocimientos en otros terrenos, así como servirte de estos para dar caza a tu presa.
 
-<u>Requisitos:</u> 2 o más sabiduría, rangos en un arma, mínimo un nivel en percepción, sigilo o supervivencia.
-
 ## Rango I
 
-Añade tu rango a todos tus tiros de percepción, supervivencia, y averiguar intenciones.
+Para desbloquear este rango necesitas 2 SAB y un nivel de talento en supervivencia y sigilo.
 
 <u>Enemigo predilecto</u> (3 acciones): Eres capaz de aprender las fortalezas y debilidades de tu objetivo a través de cuidadosa observación. Si empleas tres acciones observando a una criatura de tu elección obtienes ventaja en todos tus tiros relacionados con ella e incrementas tu daño base por 1d6. Enemigo predilecto solo funcionará contra una única criatura y para escoger a otra deberás volver a emplear 3 acciones.
 
@@ -17,17 +15,23 @@ Añade tu rango a todos tus tiros de percepción, supervivencia, y averiguar int
 
 ## Rango II
 
+Para desbloquear este rango necesitas 3 SAB y dos niveles de talento en supervivencia y sigilo.
+
 <u>Rastreador experto</u> (1 acción) Eres capaz de averiguar información de tu presa sólo viendo su rastro. Empleando una acción puedes encontrar una apertura en la defensa de un enemigo, reduciendo así la cantidad de dados de ventaja que tiene en tiros defensivos por 1 contra tu siguiente ataque o eliminando un dado de desventaja que tengas en un tiro de ataque. Cada acción adicional que gastes así volverá a reducir los dados defensivos por 1 o eliminar un dado de desventaja adicional, llegando a un mínimo de 0. También puedes emplear un descanso corto en un lugar para encontrar pistas de eventos que hayan sucedido ahí hace menos de dos horas.
 
 <u>Acechar</u> (2 acciones): Te mueves con gran sigilo mientras rastreas. Empleando 2 acciones puedes ocultarte de tal manera que no puedes ser visto por tiros de Percepción, contando efectivamente como si fueses invisible. Para usar esta habilidad deber estar fuera del campo de vista de criaturas enemigas. Este efecto permanecerá activo hasta que realices una acción particularmente ruidosa, y mientras estés oculto deberás moverte a la mitad de tu velocidad. Criaturas con la habilidad *rastreador experto* pueden intentar localizarte empleando tiros de percepción. Acechar sólo puede usarse si estás en uno de tus terrenos predilectos.
 
 ## Rango III
 
+Para desbloquear este rango necesitas 4 SAB y tres niveles de talento en supervivencia y sigilo.
+
 <u>Presa</u> (1 acción, 1/día) Empleando una acción puedes designar a un objetivo como tu presa, convirtiéndolo inmediatamente en tu *enemigo predilecto*. Tienes éxito automático rastreando a tu presa mientras que esta no esté en su terreno predilecto y las heridas permanentes que le infliges serán de un nivel superior. Solo puedes tener como máximo una presa al día, y si ella muere o escapa no puedes volver a usar esta habilidad durante el resto del día.
 
 <u>Rastreador rápido</u> (pasiva) Eres capaz de moverte con tu velocidad normal cuando rastreas o acechas. Además, declarar a un objetivo como *enemigo predilecto* ahora te cuesta una acción menos y una vez al turno puedes emplear la habilidad *rastreador experto* como acción bonus.
 
 ## Rango IV
+
+Para desbloquear este rango necesitas 5 SAB y cuatro niveles de talento en supervivencia y sigilo.
 
 <u>Camuflaje</u> (pasiva) Puedes usar acechar en tu terreno predilecto aún estando en el campo de visión de tu víctima. Además, eres capaz de utilizar *acechar* gastando una acción menos y no necesitas estar en tu terreno predilecto para usar esta habilidad.
 
@@ -42,6 +46,8 @@ Añade tu rango a todos tus tiros de percepción, supervivencia, y averiguar int
 - **Bosque:** Recibes Resistencia a magia de naturaleza igual a tu rango de Rastrear. Incrementa tu velocidad base por 15 pies y los animales no son naturalmente hostiles hacia ti.
 
 ## Rango V 
+
+Para desbloquear este rango necesitas 6 SAB y cinco niveles de talento en supervivencia y sigilo.
 
 <u>Maestro cazador</u> (pasiva): El primer golpe que haces es el más mortal. El primer ataque que hagas contra cada criatura aumentará su daño base por 1d6 y si logras infligir un golpe crítico esta deberá tener éxito en un tiro de CON o morirá instantáneamente. El daño recibido por maestro cazador se acumula con Ataque furtivo.
 

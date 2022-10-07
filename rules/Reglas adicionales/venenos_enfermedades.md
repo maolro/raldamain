@@ -31,8 +31,8 @@ Un veneno funciona de la misma manera que una enfermedad en lo que respecta los 
 ### Veneno de FUE
 
 1. **Debilitada:** La criatura reduce su FUE por 1.
-2. **Agotada:** La criatura reduce su FUE por 1 y reduce su velocidad por 10 pies.
-3. **Atrofiada:** La criatura reduce su FUE por 1 y pierde una acción.
+2. **Agotada:** La criatura reduce su FUE por 1 y pierde una acción.
+3. **Atrofiada:** La criatura reduce su FUE por 1 y tiene desventaja en todos sus tiros,.
 4. **Inmovilizada**: La criatura no puede realizar acciones ni reacciones. Su fuerza se reduce a 0.
 5. **Muerte:** La criatura muere envenenada.
 

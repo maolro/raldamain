@@ -25,8 +25,6 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de fuego.
 
 ## Rango III
 
-Aumenta tu probabilidad de crítico a 19-20.
-
 <u>Sobrecarga</u> (1 acción): Empleando 1 acción o reduciendo tu reserva elemental por 1 puedes almacenar la energía de un ataque elemental para liberarla después. Cada ataque que almacenes te otorga un punto de energía, llegando a tener un número máximo de puntos de energía igual a tu rango de magia de fuego + 1. Al hacer un ataque elemental puedes gastar tantos puntos de energía para incrementar la fuerza de tu ataque como haya en tu reserva. Cada punto de energía gastado añade un bonificador +1 al tiro de ataque, +2 al daño e incrementa el radio de efecto por 5 pies. Si pierdes la concentración mientras mantienes energía almacenada esta se liberará en una devastadora explosión que hace daño de fuego a todas las criaturas en un radio igual a 5 x puntos de energía igual y 1d6 + el número de puntos de energía que tengas almacenados daño fuego. Tú también sufrirás daño no-letal igual a 2 + el número de puntos de energía a causa de esta explosión.
 
 <u>Pirotecnia</u> (2 acciones): Empleando 2 acciones puedes manipular las llamas en un área de volumen igual a 10 x rango. Para esta habilidad puedes elegir un número de fuegos igual a 3 + rango e incrementar o decrecer su área de efecto por 5 pies. Si uno de estos fuegos se extiende a un área ya ocupado por otra criatura esta deberá hacer un tiro de DES o sufrirá una quemadura leve.
@@ -46,9 +44,8 @@ En el caso que gastes un ataque almacenado el tiro de ataque y el daño de dicho
 
 ## Rango V
 
-Aumenta tu probabilidad de crítico a 18-20 y tu máximo de acciones al turno por 1.
+Aumenta tu máximo de acciones al turno por 1.
 
-<u>Lluvia de brasas</u> (3 acciones): Empleando 3 acciones puedes formar una tormenta de ardientes brasas empleando seis ataques almacenados o reduciendo tu reserva elemental por 3. Este ataque llenará hasta 6 espacios de 10 pies cúbicos e infligirá 3d6 + rango daño de fuego y una quemadura media a todas las criaturas que logre impactar. Adicionalmente, todos los espacios que impactes quedarán afectados por un muro de llamas hasta tu siguiente turno.
+<u>Lluvia de brasas</u> (3 acciones): Empleando 3 acciones puedes formar una tormenta de ardientes brasas empleando seis ataques almacenados o reduciendo tu reserva elemental por 3. Este ataque llenará hasta 6 espacios de 10 pies cúbicos e infligirá 2d6 + CAR daño de fuego y una quemadura media a todas las criaturas que logre impactar. Adicionalmente, todos los espacios que impactes quedarán afectados por un muro de llamas hasta tu siguiente turno. 
 
-<u>Fuego puro</u> (pasiva): Tus ataques de fuego son capaces de atravesar las resistencias de tus objetivos y todas las quemaduras infligidas incrementarán su severidad por un paso (esto no afecta a lluvia de brasas). Criaturas con resistencia al fuego continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas. El fuego puro también es capaz de herir a criaturas incorpóreas.
-
+<u>Fuego puro</u> (pasiva): Tus ataques de fuego son capaces de atravesar las resistencias de tus objetivos y todas las quemaduras infligidas incrementarán su severidad por un paso (esto no afecta a lluvia de brasas). Criaturas con resistencia al fuego continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas. El fuego puro también es capaz de herir a criaturas incorpóreas

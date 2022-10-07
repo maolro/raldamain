@@ -9,7 +9,7 @@ Tu mente está conectada con la inteligencia colectiva del universo, transformá
 
 Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia arcana y ocultismo. 
 
-<u>Vínculo akhásico</u> (acción bonus) Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 1 como acción bonus usable una vez al turno puedes repetir un tiro de habilidad, ataque o defensa de tu elección y quedarte con el mejor resultado. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) en lugar de acumular los usos de ambos atributos perderás todos los usos de Premonición a cambio de repetir un tiro de tu elección cuando utilices Vínculo akhásico. 
+<u>Vínculo akhásico</u> (acción bonus) Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 1 como acción bonus usable una vez al turno puedes repetir un tiro de habilidad, ataque o defensa de tu elección y quedarte con el mejor resultado. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) acumula los usos de ambas habilidades.
 
 <u>Hipercognición</u> (pasiva): Tu mente tiene mayor capacidad para recopilar y recordar información. Puedes conocer información de cualquier ámbito de estudio al hacer un tiro de conocimiento y aprender un lenguaje nuevo sólo te cuesta un mes de estudio (no puedes aprender más idiomas que el valor de tu estadística de inteligencia).
 
