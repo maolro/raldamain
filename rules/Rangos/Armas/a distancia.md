@@ -11,17 +11,11 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 Para desbloquear este rango necesitas 2 DES y un nivel de talento en percepción. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango IV.
 
-<<<<<<< HEAD
 **Ataque furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
 
 **Apuntar ataque (1 AP):** Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
 
 **Ataque con arma (2 AP):** Hace un ataque modificado por el tipo de arma escogida de la [tabla](https://raldamain.com/rules/Rangos/Armas/a%20distancia.html#armas)
-=======
-<u>Puntería mortal</u> (1 acción): Eres capaz de apuntar tus ataques a distancia para impactar a los puntos débiles de tu objetivo. Empleando una acción adicional al atacar puedes provocar una [herida permanente leve] en una parte aleatoria del cuerpo de tu objetivo al impactar. Si tu objetivo es incapaz de defenderse puedes escoger la parte del cuerpo donde le provocas la herida. Tienes más dificultades apuntando a criaturas que lleven [armadura] más voluminosa, requiriendo así que gastes una acción adicional al apuntar si tu objetivo lleva armadura media, dos acciones si lleva armadura pesada y tres si lleva armadura completa. Las acciones gastadas en un ataque apuntado permanecerán vigentes hasta que realices un ataque o pierdas la concentración, pudiendo así gastar acciones para apuntar y hacer el ataque en tu siguiente turno. En 
-
-<u>Combate furtivo</u> (pasiva): Tus ataques se vuelven más fuertes al atacar a enemigos que se encuentren en una posición vulnerable. Añade tu estadística de destreza a todos tus tiros de daño si tienes ventaja en un tiro de ataque, tu objetivo tiene desventaja contra tus ataques o es incapaz de defenderse. 
->>>>>>> f51cbb78f5a85ffd4970a5671ea7f854a72c4f95
 
 ## Rango II
 
@@ -53,7 +47,7 @@ Para desbloquear este rango necesitas 5 DES y cuatro niveles de talento en perce
 
 ## Rango V
 
-Para desbloquear este rango necesitas 6 DES y cinco niveles de talento enpercepción. 
+Para desbloquear este rango necesitas 6 DES y cinco niveles de talento en percepción. 
 
 <u>Impacto vital</u> (pasiva): Eres capaz de matar a un enemigo de un único flechazo. Al impactar a un enemigo con un ataque apuntado aumenta el daño base por 1d6 por cada acción adicional que hayas gastado en el ataque. Incrementa el nivel de todas las heridas permanentes provocadas por un paso adicional al realizar un ataque apuntado contra un enemigo incapaz de defenderse y si logras reducir sus PV a 0 este morirá instantáneamente (solo le protegerá la habilidad *[resistir la muerte](https://raldamain.com/rules/Rangos/Combate/fortitud.html#rango-ii)*).
 
