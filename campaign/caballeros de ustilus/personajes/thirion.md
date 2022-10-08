@@ -11,7 +11,9 @@ image: thirion.jpg
 
 "Dices que este mundo está roto y solo tú puedes salvarlo, pero en ese camino de solucionar el mundo vas a cavar miles de tumbas, esas tumbas podrían ser de mis seres queridos, así que por favor retírate de tu objetivo, no quiero tener que matar a nadie mas."
 
-Thirion fue el 1º sujeto de pruebas para la ligación elemental, aunque resulto que Thirion era el perfecto sujeto para la ligación, ya que su fuerza era sobrehumana para alguien de su edad. Al final el experimento no se termino de completar ya que los caballeros de Ustiulus irrumpieron en el mismo. Thirion termino incompleto puesto que aunque su ligación era perfecta su estado mental no se completo volviéndolo inestable.
+"Thirion" nacio en Temash siendo abandonado por sus padres a la corta edad de 3 años, despues de eso estuvo en un orfanato durante algunos años, asta que un dia (por culpa de su extraña fuerza) mato en un accidente a una de las niñas del orfanato, luego de eso huyo a las calles en donde estuvo sobreviviendo como pudo. Un dia Pandeshar lo acogio en su casa para usarlo en su experimento sobre la ligación elemental, al principio el empezo a vivir con el y Zanshila pero Pandeshar termino por encerrarlo y empezar su experimento con el.
+
+Esta época fue una tortura para "Thirion" Pandeshar empezó a trastocar sus recuerdos añadiendo, modificando y  borrando todo para convertirlo en una perfecta arma, el problema es que Pandehsar aun no tenia todos los datos para hacer el experimento perfecto por lo que aun quedan rastros humanos dentro de "Thirion" haciendo que se vuelva inestable, lo bueno fue que gracias al extraño físico de "Thirion" el y el elemental eran una perfecta combinación haciendo que "Thirion" se vuelva el perfecto guerrero físicamente
 
 # Biografía
 

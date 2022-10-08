@@ -11,11 +11,11 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 
 Para desbloquear este rango necesitas 2 DES y un nivel de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango IV.
 
-<u>Ataque con arma</u> (2 acciones): Haz un ataque con tu arma, infligiendo daño especificado por su tipo. Emplearás como bonificador de ataque tu estadística de DES a la cual le sumarás tu rango en filos perforantes
+<u>Ataque con arma</u> (2 acciones): Haz un ataque con tu arma infligiendo daño especificado por su tipo. Emplearás como bonificador de ataque tu estadística de DES a la cual le sumarás tu rango en filos perforantes. Todas las armas pertenecientes a la categoría de *filos perforantes* pueden encontrarse en el apartado inferior y puedes consultar al máster si quieres usar un arma nueva que no esté ya especificada.
 
-<u>Apuntar ataque</u> (1+ acciones): Inflige una herida leve al impactar con tu siguiente ataque si el objetivo lleva armadura ligera o inferior. +1 AP para aumentar el nivel de armadura que puedes afectar por un paso
+<u>Apuntar ataque</u> (1 o más acciones): Eres capaz de apuntar tus ataques a distancia para impactar a los puntos débiles de tu objetivo. Al impactar con tu siguiente ataque provocas una herida permanente leve si el objetivo lleva armadura ligera o inferior. Puedes gastar una acción adicional para aumentar el nivel de armadura que puedes afectar con esta habilidad por un paso
 
-<u>Combate furtivo</u> (pasiva): Añade +DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
+<u>Combate furtivo</u> (pasiva): Tus ataques se vuelven más fuertes al atacar a enemigos que se encuentren en una posición vulnerable. Añade tu estadística de destreva al tiro de daño si tienes ventaja en el tiro de ataque o el objetivo es incapaz de defenderse. El daño por esta habilidad solo se aplicará una vez aunque poseas esta habilidad por diferentes fuentes
 
 <u>Parada</u> (reacción) Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando el bonificador de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Tienes desventaja defendiéndote con parada de armas que tengan tamaño excesivamente superior o inferior al tuyo (por ejemplo si bloqueas un arma pesada con un arma de tamaño normal).
 
@@ -25,7 +25,7 @@ Para desbloquear este rango necesitas 3 DES y dos niveles de talento en juego de
 
 <u>Desarme</u> (1 acción): El objetivo se defiende con su tiro de arma y si fracasa es desarmado de un arma ligera (el arma es de cualquier tipo si tiene una herida permanente en el brazo)
 
-<u>Finta</u> (1 acción): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. El objetivo se defiende con su SAB y si fracasa no puede defenderse de tu siguiente ataque.
+<u>Finta</u> (1 acción): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. El objetivo deberá hacer un tiro defensivo de SAB contra tu tiro de ataque con arma y si fracasa no puede defenderse de tu siguiente ataque. Este podrá también añadir su nivel de talento de *averiguar intenciones* al tiro defensivo mientras que tú puedes emplear el bonificador que tengas en *engaño* en lugar de tu tiro de arm
 
 ## Rango III 
 
