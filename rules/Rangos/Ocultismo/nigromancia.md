@@ -9,17 +9,21 @@ Al igual que un médium, tienes una fuerte conexión con el plano de los muertos
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con nigromancia. Sientes la presencia de no-muertos en un área de 90 pies.
+Añade tu rango a todos los tiros para usar hechizos de nigromancia y aumenta tu reserva de chi por 2+rango.
 
-<u>Toque necrótico</u> (2 acciones): Empleando dos acciones puedes drenar el chi de un objetivo localizado a 15 pies de ti. Este ataque inflige 1d6 + rango daño necrótico al impactar contra el cual tu objetivo se defenderá empleando su CON. Todo el daño a los PV hecho con un toque necrótico reducirá también el máximo de PV de dicho personaje, impidiendo que este se pueda sanar (eliminar esta reducción a los PV requiere sanación con *[magia divina](https://raldamain.com/rules/Rangos/Religion/magia%20divina.html)* o atención médica avanzada). Esta habilidad puede emplearse para infundir tus armas de energía necrótica empleando dos acciones, causando que esta inflija +2 daño necrótico al impactar (provocará el mismo efecto sobre los PV que toque necrótico). Este efecto permanecerá activo hasta que pierdas la concentración.
+**Toque necrótico** (2 AP): Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu tiro de nigromancia o sufrirá 1d6 + rango daño necrótico. El daño hecho por este ataque reducirá también el máximo de PV y Vitalidad, impidiendo así que pueda ser sanado hasta que pase un descanso largo. (1 chi) Aumenta el alcance a cercano.
 
-<u>Bendición de la muerte</u> (pasiva): Tus estudios sobre la muerte te han hecho más cercano a ella. Los no-muertos no son naturalmente hostiles hacia ti, considerándote como si fueses uno de ellos. Obtienes Resistencia a daño Necrótico y Venenos igual a tu rango + 1, y puedes aguantar la respiración durante un turno adicional por cada rango de Nigromancia que tengas. Esta bendición se manifiesta en ti como un rasgo físico relacionado con la no-muerte, como puede ser piel pálida, ojeras pronunciadas o un toque frío. Si ya has alcanzado la no-muerte recibirás resistencia a magia divina y exorcizar igual a tu rango + 1 además de perder la vulnerabilidad al daño radiante.
+**Descarga de energía negativa** (2 AP): Haz un ataque con nigromancia contra un objetivo a distancia media que infligirá 1d6 + rango daño necrótico al impactar y *enfermará* durante una ronda al reducir PV. (1 chi) Afecta a un objetivo adicional.
+
+**Bendición de la muerte**: Los no-muertos no serán naturalmente hostiles hacia ti y recibes resistencia a venenos y daño necrótico igual a tu rango + 1 además que puedes aguantar la respiración un turno adicional por rango. Si ya eres un no-muerto perderás la vulnerabilidad al daño radiante y recibirás resistencia a maldiciones y habilidades de médium igual a tu rango + 1. 
 
 ## Rango II
 
-<u>Toque vampírico</u> (pasiva): Cuando infliges daño necrótico recuperarás una cantidad de vitalidad igual a la mitad del daño provocado. En el caso que tu vitalidad está al máximo, te sanarás puntos de vida equivalentes al excedente. Si logras provocar un golpe crítico con un toque necrótico puedes reducir el nivel de una *[herida permanente](https://raldamain.com/rules/Reglas%20principales/Heridas%20permanentes.html)* por un paso o eliminar un *[efecto de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html)*.
+**Vínculo parasítico** (3 AP y 1 chi): Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu nigromancia o formas un vínculo parasítico con ella. Mientras mantengas el vínculo como reacción a sufrir daño puedes transferir hasta la mitad del daño que sufras a la criatura con la que tengas el vínculo además que puedes afectarla con *toque necrótico* sin la necesidad de estar adyacente a ella. Cada ronda la criatura puede repetir el tiro de CON para liberarse del efecto y este permanecerá activo hasta que pierdas la concentración. No puedes tener más de un vínculo activo a la vez.
 
-<u>Animar cadáver</u> (3 acciones): Empleando dos acciones puedes infundir a un cadáver con una semblanza de vida. El cadáver escogido resucitará como un *[zombi](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#zombi)* o *[esqueleto](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#esqueleto)*, y este seguirá tus órdenes al pie de la letra. Eres capaz de comandar como máximo un número de no muertos menores igual a tres veces tu rango de nigromancia. Puedes hacer un ataque de *toque necrótico* a cualquier criatura adyacente a un no-muerto bajo tu control como si tú estuvieses en esa posición. Si ya has alcanzado la no-muerte todas las criaturas que mates con daño necrótico renacerán como un zombis bajo tu control al cabo de una ronda sin la necesidad de hacer un ritual.
+**Animar no-muerto** (3 AP y 1 chi): Animas un cadáver como un no-muerto de tipo zombi o esqueleto el cual seguirá tus órdenes al pie de la letra. No puedes comandar simultáneamente a más no-muertos que tu rango x 3.
+
+**Drenar vitalidad** (1 chi): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico te sanarás Vitalidad igual a la mitad del daño provocado. Si logras matar a un objetivo con dicho ataque podrás reducir el nivel de una herida permanente por un paso. .
 
 ## Rango III
 
@@ -53,23 +57,15 @@ Un cadáver animado por magia oscura, el zombi es el tipo más sencillo de no-mu
 
 Una criatura transformada en un zombi reducirá sus estadísticas de inteligencia y carisma a 0 además de recibir las mejoras corporales golpe y mordisco (no sumará ningún dado de soltura). También su cuerpo se volverá más resistente, recibiendo así 2 PV adicionales e incrementando su armadura natural por 2. Debido a su condición como cadáveres los zombis se mueven de una manera lenta y torpe, reduciendo así su estadística de DES por 2 (mínimo 0) y su movimiento por 5 pies. Algunas variantes de zombi pueden tener mutaciones y habilidades únicas, las cuales podrán otorgarse siempre y cuando cuenten con el consentimiento del máster.
 
-Las estadísticas básicas de un zombi son las siguientes:
-
-**PV:** 8, **VT:** 8, **DEF:** 2
-
-**FUE** 3, **DES** 0, **CON** 3, **INT** 0, **SAB** 1, **CAR** 0
-
-------
-
-**Movimiento:** 10 pies
-
-**Prioridad**: 0 (1 estándar + 1 movimiento)
-
-------
-
-**Golpe** (acción de movimiento): +4, 1d4+3 daño contundente. En lugar de hacer daño puede agarrar a su objetivo.
-
-**Mordisco** (acción bonus): Inflige 1d6+3 daño perforante a una criatura agarrada o incapacitada.
+- **Estadísticas:** 4 FUE, 0 DES, 3 CON, 1 SAB. Carece de INT y CAR. Si las estadísticas de FUE y CON de la criatura base eran más altas usará esas
+- **PV:** 5 + CON
+- **Vitalidad:** 3 + CON
+- **Defensa**: 4 (armadura natural)
+-  **Inmunidades:** veneno, efectos mentales, necrótico, enfermedades, heridas leves
+- **Vulnerabilidades**: radiante
+- **Movimiento:** paso 1
+- **Acciones:** 2
+- Obtiene un rango en *garras* y *mordisco*
 
 ### Esqueleto
 

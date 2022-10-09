@@ -7,19 +7,21 @@ Tu mente tiene un poder superior que el de la mayoría de personas que te rodean
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con telekinesia.
+Añade tu rango a todos tus tiros relacionados con telekinesia y aumenta tu reserva de chi por rango + 2.
 
-<u>Lanzamiento</u> (1 acción/2 acciones): Eres capaz de mover y manipular pequeños objetos con tu mente. Con esta habilidad puedes mover a un objeto pequeño hasta 15 pies en cualquier dirección empleando una acción. El objeto que manipules debe estar a menos de 60 pies de ti. Empleando dos acciones puedes lanzar ese objeto hacia un enemigo que se encuentre a una distancia máxima de 40 pies, infligiendo 1d6 + INT daño físico de tipo contundente, cortante o perforante al impactar.
+**Manipulación telequinética** (2 AP): Mueve un objeto pequeño hasta un paso en cualquier dirección. Puedes también atacar con dicho objeto, lanzándolo hacia un objetivo a distancia media infligiendo 1d6 + INT daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional o haz una maniobra de desarme
 
-<u>Escudo telequinético</u> (reacción): Puedes detener ataques físicos lanzados hacia ti creando una pequeña barrera de fuerza. Escudo es una reacción y te permite hacer un tiro defensivo de telekinesia para protegerte de cualquier tipo de ataque, incluyendo aquellos hechos por criaturas adyacentes. Puedes proteger a un aliado con esta habilidad, pero esto consumirá 1 chi de tu reserva (esto no tiene ningún coste si estás en *[posición defensiva](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#acción-de-movimiento)*).
+**Onda de fuerza** (2 AP y 1 chi): Todas las criaturas a distancia cercana de ti deberán tener éxito en un tiro de FUE contra tu tiro de telekinesia o son empujadas un paso hacia atrás, sufriendo 1d6 daño de caída si impactan contra un objeto. Este ataque también lanzará por los aires a todos los objetos pequeños que haya.
 
-<u>Reserva de chi:</u> Posees una reserva de chi con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques.  Con esta habilidad puedes hacer un ataque adicional de telekinesia o aumentar el área de ataque por 5 pies. Esta habilidad solo puede usarse una vez por turno.
+**Escudo telequinético:** Puedes usar *telekinesia* para defenderte de ataques cuerpo a cuerpo y cualquier habilidad que afecte a tu FUE. (1 chi) Protege a un aliado adyacente con *telekinesia*.
 
 ## Rango II
 
-<u>Muro de fuerza</u> (2 acciones): Empleando dos acciones, crea un muro de fuerza con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. Este muro se trata de una barrera que otorga *[cubierta completa](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta)* a todas las criaturas que se encuentren detrás de él. El muro permanecerá hasta que pierdas la concentración, y si intentas crear un muro adicional sufrirás 2 daño no-letal cada turno que mantengas a los dos muros activos. Cada sección de 10 pies cuadrados del muro tiene PV iguales a 4 + tu rango de telekinesia es inmune a todo el daño no-mágico. Muro de fuerza puede crearse como reacción una vez por ronda si te encuentras en *[posición defensiva](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#acción-de-movimiento)*.
+**Barrera de fuerza** (2 AP y 1 chi): Crea una barrera de fuerza con PV igual a tu rango + 4 e inmunidad a todo el daño no-mágico. Toda criatura que intente cruzar la barrera deberá tener éxito en un tiro de FUE contra tu telekinesia o será lanzado hacia atrás. Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
 
-<u>Empuje telequinético</u> (2 acciones): En lugar de lanzar un objeto puedes emplear dos acciones para empujar a un objetivo usando la fuerza de tu mente. Para esta habilidad tiras telekinesia contra el *[Heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#heroísmo-fue)* de tu objetivo, empujándolo 1d6 x 5 pies si tienes éxito. Si el objetivo choca contra un objeto sólido sufre daño como si fuese una *[caída](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#caídas)* y quedará *[tropezado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada)*. Esta habilidad puede emplearse también para lanzar a un enemigo por los aires si empleas una acción adicional.
+**Lanzamiento humano** (2 AP y 1 chi): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu telekinesia o es lanzada un paso en cualquier dirección y sufre 1d6 + INT daño físico. (1 chi) Afecta a un objetivo adicional
+
+**Furia telequinética** (2 AP y 1 chi) Haz un ataque con *manipulación telequinética* contra todos los objetivos en un radio pequeño centrado en el punto de impacto. Este ataque infligirá un dado de daño adicional y dependiendo de la naturaleza de los objetos lanzados puedes convertir el área en terreno difícil.
 
 ## Rango III
 
