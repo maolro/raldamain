@@ -7,41 +7,49 @@ Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote 
 
 ## Rango I
 
-Añade tu rango a todos tus ataques hechos con magia elemental de tierra.
+Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incrementa tu reserva de chi por un valor igual a tu rango + 2.
 
-<u>Ataque elemental</u> (2 acciones): Empleando 2 acciones puedes atacar a un objetivo lanzándole una piedra a gran velocidad. Este ataque infligirá 1d6 + CAR daño contundente al impactar y puede afectar a un área de 5 pies cuadrados que se encuentre a menos de 60 pies de ti. Si impactas a una criatura con un ataque elemental de tamaño superior a esta deberá tener éxito en un tiro de heroísmo contra tu ataque elemental o será empujada CAR x 5 pies y caerá al suelo.
+**Pedrada** (2 AP): Lanzas una piedra pequeña contra una criatura a distancia media, infligiendo 1d6 + SAB daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional.
 
-<u>Parada elemental</u> (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Crear obstáculo** (2 AP): Manipulas la tierra para controlar el campo de batalla, formando así un agujero o barrera pequeña en un espacio a distancia media de ti. La barrera otorgará *cubierta parcial* a las criaturas detrás de ella mientras que el agujero *tropezará* a las criaturas que pasen por encima de él (pueden tirar DES contra tu SAB para evitarlo)
 
-<u>Reserva de energía</u> (pasiva): Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes realizar un ataque adicional o aumentar el área de efecto por 5 pies y el daño base de tu ataque por 1d6.
+**Terratemblor** (2 AP y 1 chi): Haz un ataque con magia de tierra contra todas las criaturas a distancia cercana de ti contra el cual solo podrán defenderse con FUE o DES. Aquellas que impactes quedarán *tropezadas* y sufrirán 1d6 daño de caída. Además, todo el terreno afectado pasará a ser *terreno difícil* y destruye todos los obstáculos pequeños. (1 chi) Aumenta el radio a medio
 
 ## Rango II
 
-<u>Muro de piedra</u> (2 acciones): Empleando 2 acciones puedes formar un muro hecho de sólidas piedras con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. Este muro se trata de una barrera que otorga cubierta completa a todas las criaturas que se encuentren detrás de él (otorgará cubierta parcial si estas intentan atacar desde detrás del muro). Cada sección de 10 pies cuadrados del muro tiene PV iguales a 3 x tu rango de elementalismo y defensa igual a tu rango + 1. Muro de piedra puede crearse como reacción una vez por ronda te encuentras en forma de la montaña.
+**Muro de piedra** (2 AP y 1 chi): Crea un muro de sólidas piedras con rango x 3 PV, DEF igual a tu rango + 2 y vulnerabilidad al daño sónico y contundente que otorgará cubierta completa a todas las criaturas tras él. Puedes crear el muro como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
 
-<u>Control terrestre</u> (2 acciones): Eres capaz de manipular la misma tierra que tienes bajo tus pies. Empleando 2 acciones puedes manipular un volumen total de tierra igual a 10 x tu rango de magia elemental pies de lado, moldeándola como lo desees. Con esta habilidad puedes formar terreno difícil, barreras, elevaciones o agujeros en los lugares que tú desees. La altura y profundidad de estos obstáculos no podrá exceder los 5 pies y estas otorgarán cubierta a las criaturas que se encuentren detrás de estas.
+**Tierra viva** (2 AP y 1 chi): La tierra en un punto a distancia media de ti erupciona furiosamente, atacando a todas las criaturas en un radio corto a él. Esto funciona como un ataque de *pedrada* con un dado de daño adicional que convertirá el área de efecto en *terreno difícil*.
 
-<u>Forma de la montaña</u> (1 acción): Eres capaz de entrar en un estado de defensa y concentración absoluta conocido como forma de la montaña empleando una acción. Mientras permanezcas en forma de la montaña todos tus ataques elementales incrementarán su tamaño por 5 pies y su daño base por 1d6 además de otorgarte un bonificador igual a tu rango + 1 en tiros defensivos. Estar en forma de la montaña requiere tu concentración absoluta y saldrás de dicho estado si pierdes la concentración o te mueves más de 5 pies en una ronda. A rango IV esta habilidad incrementará el tamaño de tus ataques por 10 pies y el daño base por 1d8.
+**Moldear la tierra** (3 AP y 1 chi): Moldea una cantidad de tierra que ocupa un radio pequeño como desees, formando terreno difícil, barreras o fosos en las posiciones donde desees o eliminar esos mismos efectos del terreno. Al luchar en dicho terreno recibirás ventaja en todos tus tiros relacionados con magia de tierra. (1 chi) Aumenta el radio a medio. 
 
 ## Rango III
 
-Incrementa  el tamaño de tus ataques por 5 pies. Hacer un ataque elemental ahora te cuesta solo una acción.
+Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obstáculo* y *terratemblor* cuestan -1 AP
 
-<u>Abrazo de la tierra</u> (1 acción): Al impactar con un ataque elemental puedes emplear una acción adicional o reducir tu reserva elemental por 1 para hacer un intento de agarre contra tu objetivo empleando tu tiro de magia elemental. Un objetivo agarrado de esta manera puede ser movido hasta 15 pies en cualquier dirección como acción de movimiento y no podrá escapar salvo que tenga éxito en un tiro de destrozar contra tu ataque elemental. Si agarras una parte específica del cuerpo de tu objetivo sufrirá los mismos efectos que la habilidad enredo y no puedes agarrar simultáneamente a más criaturas que tu rango de magia elemental – 2.
+**Abrazo de la tierra** (1 AP y 2 chi): La tierra se levanta desde bajo los pies de un objetivo a distancia media para intentar retenerlo, permitiéndote así hacer un ataque de *pedrada* que al impactar *agarrará* al objetivo. Solo es posible escapar de este agarre usando la FUE y las piedras que lo agarren son tan sólidas como un *muro de piedra* con la mitad de PV. (1 chi) Afecta a un objetivo adicional.
 
-<u>Esperar y golpear</u> (reacción): Has amaestrado el arte de esperar pacientemente hasta la oportunidad correcta, resistiendo golpes hasta que tu enemigo cometa un fallo mortal. Si te encuentras en forma de la montaña y entras en posición defensiva eres capaz de realizar un ataque de oportunidad contra una criatura que falle su ataque (este ataque será fintado si obtienes defensa crítica). Los beneficios de posición defensiva se perderán tras realizar un ataque así. 
+**Forma de la montaña** (2 AP y 2 chi): Levantas una cantidad de grandes piedras igual a tu rango – 1 que permanecerán a tu lado hasta que pierdas la concentración. Puedes sacrificar una piedra como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *pedrada* contra un objetivo a distancia media. 
+
+**Invocar elementales de tierra** (3 AP y 2 chi): Invoca a un elemental de tierra que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez
 
 ## Rango IV
 
-<u>Derrumbamiento</u> (3 acciones): Empleando 3 acciones puedes provocar un derrumbamiento en un espacio compuesto principalmente por tierra, como podría ser una cueva o un edificio. Todas las criaturas que se encuentren en ese espacio deberán hacer un tiro de esquiva contra tu ataque elemental o sufrirán 3d6 + CAR daño contundente y quedarán enterrados por la tierra, estando tanto agarrados como cegados. Una criatura puede escaparse de la misma manera que se escaparía de un agarre, pero si pasa más de una ronda enterrada se empezará a ahogar.
+**Pilares de la tierra** (3 AP y 2 chi): Creas seis sólidos cilindros de radio corto que emergerán de seis puntos en contacto con la tierra a distancia lejana. Las criaturas que se encuentren en dichas posiciones pueden tirar DES para evitar este efecto y si fracasan serán elevadas por los pilares. Si el pilar acaba chocando con una superficie sólida las criaturas encima de él sufrirán los efectos de *derrumbamiento*.  
 
-<u>Espinas de piedra</u> (1 acción) Puedes hacer daño perforante con ataques elementales. Un ataque elemental que inflija daño perforante incrementará su daño base por 2 y todas las heridas permanentes que provoque serán de un nivel superior, pero para formar un ataque así deberás gastar una acción o reducir tu reserva elemental por 1 para moldear la tierra de esta manera. Esta habilidad también te permite llenar un espacio de espinas empleando Control terrestre, lo cual además de contar como terreno difícil infligirá 2 daño no-letal a las criaturas sin armadura pesada que pasen por él.
+**Derrumbamiento** (2 AP y 2 chi): Una estructura de piedra en un radio cercano empieza a derrumbarse, haciendo un ataque contra todas las criaturas cercanas a estas que al impactar infligirá daño igual a *tierra viva* y *agarra*. Una criatura agarrada por este efecto también estará *cegada* y no podrá respirar.
+
+**Espinas de piedra** (2 AP y 2 chi): Ataca a todas las criaturas en un radio medio con colosales espinas de piedra, infligiendo daño igual al de una *pedrada* con un dado de daño adicional. El área afectada pasa a ser terreno difícil y hasta que pierdas la concentración cada ronda puedes hacer un ataque con una espina de piedra como acción bonus que inflige daño igual a un a *pedrada* contra cualquier objetivo a distancia media. 
 
 ## Rango V
 
-Incrementa el tamaño de tus ataques por 5 pies. Aumenta tu máximo de acciones al turno por 1.
+**Terremoto** (3 AP y 3 chi): Liberas una onda expansiva que llena un radio lejano, llenándolo con *terreno difícil* y provocando los efectos de *derrumbamiento* a todas las estructuras frágiles en el área. Todas las criaturas en el área deberán tirar FUE o caerán al suelo y si te concentras en dicho efecto puedes prolongarlo una cantidad adicional de rondas igual a tu rango – 1.
 
-<u>Terremoto</u> (3 acciones): Empleando 3 acciones y reduciendo tu reserva elemental por 3 puedes liberar una onda expansiva de radio 60 pies. Todas las criaturas localizadas en dicho espacio deberán tirar fuerza o caerán inmediatamente al suelo mientras que los edificios se *derrumbarán* si están hechos de piedra u otro material frágil (edificios particularmente grandes o sólidos no pueden ser destruidos por este efecto, aunque sufrirán leves daños estructurales). El área afectada por un terremoto se convertirá en terreno difícil a causa de los derrumbamientos ocasionados.
+**Brecha** (3 AP y 3 chi): Formas una profunda brecha de gran longitud y profundidad. Todas las criaturas en su área de efecto deberán tener éxito en un tiro de DES o caerán por la brecha, sufriendo 3d6 daño de caída y una herida leve además de caer al suelo.
 
-<u>Brecha</u> (3 acciones): Empleando 3 acciones y reduciendo tu reserva elemental por 3 puedes formar una profunda brecha de 60 pies de longitud y 30 pies de profundidad. Todas las criaturas en el área de la brecha deben tirar esquiva o caerán en ella, sufriendo el adecuado daño de [caída](https://raldamain.com/rules/Reglas principales/reglas de combate.html#caídas) (2d6 daño y 2 heridas leves). Aquellas criaturas que se encuentren dentro de una brecha pueden ser afectadas por un *derrumbamiento*. 
+**Bastión de piedra** (3 AP y 3 chi): Crea una gran fortaleza de piedra que llenará un cubo con lado de longitud grande. Este bastión tendrá la estructura interna que desees y otorgará *cubierta completa* a todas las criaturas en él. Su estructura externa está formada por cuatro grandes *muros de piedra* con el doble de PV que son inmunes a todo el daño de armas no-mágicas.dentro de una brecha pueden ser afectadas por un *derrumbamiento*. 
+
+## Rango VI
+
+**Lluvia de meteoritos** (3 AP y 5 chi): Levantas la tierra para formar cuatro colosales meteoritos que puedes lanzar a cuatro espacios a distancia lejana de ti. El meteorito impactará toda la tierra en un radio medio y atacará a todas las criaturas en el área, infligiendo 3d10 + SAB daño contundente al impactar y enterrará al objetivo de la misma manera que *derrumbamiento* (si un objetivo está en el área de efecto de dos meteoritos deberá tirar para defenderse de ambos). Toda el área afectada por un meteorito contará como terreno difícil y estos destruirán todas las estructuras en el área.
 

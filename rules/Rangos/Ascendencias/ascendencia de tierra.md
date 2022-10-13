@@ -7,53 +7,48 @@ Estás conectado con los espíritus de las más lejanas profundidades de la tier
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y desbloqueas rangos en magia elemental de tierra.
+Aumenta tu reserva de chi por 2 + rango y recibes resistencia 2 al daño físico
 
-<u>Vínculo con la tierra</u> (ritual): Desarrollas un fuerte con una región, actuando como su guardián en caso de peligro. Mientras permanezcas en contacto con la tierra de tu región te regenerarás 1 Vitalidad por ronda y recibe ventaja en todos sus tiros de ataque y defensa hechos con magia elemental de tierra o un *ataque infundido* (cuenta además como [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i) para los propósitos de rastrear). Para declarar un territorio como tu región debes realizar un ritual de una hora para recibir todos sus beneficios y sólo puedes tener una región vinculada de esta manera. Esta poción de tierra cuenta como tierra consagrada para ti y los bonificadores de esta habilidad no se acumulan con los de *guerrero de la fe* o *plegaria*.
+**Vínculo con la tierra:** Eres inmune al terreno difícil y recibes los beneficios de *terreno predilecto* si te encuentras en contacto con la tierra. Obtienes también resistencia al daño eléctrico igual a tu rango + 1.
 
-<u>Geokinesia</u> (acción bonus): Tu herencia elemental te permite controlar la tierra. Como acción bonus puedes manipular una pequeña cantidad de tierra o sentir las características de esta. Sólo puedes usar uno de estos efectos al turno.
-
-- Mueve 30 pies en cualquier dirección una cantidad de tierra de volumen igual a un pie cuadrado. La tierra que manipules no hará daño ni empujará. 
-- Realiza un análisis completo de todos los objetos de tierra y metálicos en un área de 10 pies cuadrados, detectando secretos y anomalías que tengan.
+**Geokinesia:** Como acción bonus empleable una vez por turno mueves una pequeña cantidad de tierra hasta un paso en cualquier dirección, la cual no hará daño ni empujará. (1 chi) Analiza toda la tierra en un radio corto, detectando secretos y anomalías que tengan.
 
 ## Rango II
 
 Incrementa tu CON por 1.
 
-<u>Puños de tierra</u> (pasiva): Recibes una reserva de energía elemental equivalente a 2 + rango la cual puedes consumir para potenciar tus ataques físicos (esta se acumula con reserva de energía). Puedes reducir tu reserva por 1  para infundir tus ataques físicos con tierra elemental durante una ronda. Al emplear esta habilidad tus ataques incrementan el daño base por 1d6, reducen la defensa por 1 y ralentizarán al objetivo durante una ronda al impactar si logran reducir PV. 
+**Puños de tierra** (1 chi): Durante esta ronda todos tus ataques de *artes marciales* y hechos con armas contundentes tiran un dado adicional de daño al impactar.
 
-<u>Paso terrestre</u> (pasiva): Puedes moldear la tierra para moverte por ella. Ignoras terreno difícil y tienes una velocidad de excavar y escalada de 15 pies. Estas velocidades aumentan por 5 pies por cada rango adicional de ascendencia pero no podrán superar tu movimiento base.
-
-<u>Georradar</u> (pasiva): Recibes vista a ciegas en un radio de 30 pies, permitiéndote detectar la posición de todas las criaturas que se encuentren tocando el suelo. Recibes también ventaja en tiros de averiguar intenciones contra criaturas que estén tocando la tierra. Puedes emplear una acción para aumentar el radio de tu georradar por 15 pies durante una ronda.
+**Georradar**: Tienes vista a ciegas en un radio medio, permitiéndote detectar la posición de todas las criaturas en contacto con la tierra. Recibes también ventaja en todos tus tiros de *averiguar intenciones* hechos contra criaturas en contacto con la tierra.
 
 ## Rango III 
 
 Aumenta tu resistencia al daño físico por 1.
 
-<u>Armadura de piedra</u> (2 acciones): Empleando 2 acciones puedes rodearte de una sólida armadura hecha de piedra. Esa armadura incrementa tu defensa por 2 y te otorga un número de puntos de vida temporales iguales a tu rango de ascendencia + 1. Puedes reduc ir tu reserva elemental por 1 para fortalecer las defensas de tu armadura de piedra, regenerando así todos los puntos de vida temporales que esta te otorga. Esta habilidad permanecerá activa durante una cantidad de rondas igual a tu rango + 2 o hasta que pierdas la concentración.
+**Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Aura abrasadora* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
 
-<u>Conexión elemental</u> (pasiva): La tierra sana tus heridas y te fortalece en el campo de batalla. Cuando empieces tu turno tocando la tierra te recuperarás 1 vitalidad y un punto de tu reserva elemental. Al realizar un descanso corto en contacto con la tierra reduces el nivel de una herida permanente por 1 (reduce el nivel de todas tus heridas si es un descanso largo). Cuando alcances rango V de esta ascendencia podrás sanarte 2 vitalidad o 1 PV cada ronda si estás tocando la tierra.
+**Conexión elemental**: Si te encuentras en contacto con la tierra te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto tocando tierra firme recuperas también todos tus PV.
 
 ## Rango IV 
 
 Incrementa tu FUE por 1. Puedes sumar tu rango en magia elemental de tierra a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
-<u>Ola de tierra</u> (2 acciones): Empleando 2 acciones puedes manipular la tierra para formar una inmensa ola bajo tus pies. La ola te mueve 60 pies por turno y todas las criaturas de tamaño grande o inferior que estén en tu camino deben hacer un tiro de esquiva tu magia elemental o sufren 1d6 + SAB daño contundente y son empujadas 15 pies en cada dirección (aquellas con menor fuerza caen al suelo). Cada turno adicional que mantengas la ola deberás reducir tu reserva elemental por 1. Puedes además mantener la habilidad *forma de montaña* aunque utilices la *ola de tierra* para moverte.
+**Ola de tierra** (2 AP y 1 chi): Manipulas la tierra para formar una gran ola bajo tus pies con la cual puedes moverte 2 pasos como acción bonus usable una vez por turno. La ola ignorará el terreno difícil y barrerá con todos los eectos en el suelo como *crecimiento acelerado*. Si hay criaturas en el camino de la ola puedes hacer un ataque de *artes marciales* o *lanzamiento* (si lo tienes) que empujará un paso al impactar. La ola acabará al principio de tu siguiente turno salvo que pagues 1 chi.
 
-<u>Ataques infundidos</u> (pasiva): Tus ataques físicos están infundidos de energía elemental de tierra, aumentando así su daño base por 1d6 y reduciendo la defensa de tu objetivo por 1 cada vez que le impactes (esta reducción se acumula con *golpe destructivo*). 
+**Ataques infundidos:** Tus ataques de *artes marciales* y armas contundentes cuentan como si estuvieran afectados por *material superior*. (1 chi) Un arma contundente consigue los efectos de *material superior*.
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 1.
 
-<u>Elemento de equilibrio</u> (pasiva): Tu constitución es sólida como una roca. Obtienes resistencia contra [venenos](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), fuego, rayo, ácido y frío igual a tu rango. Incrementa además tus PV por un valor igual a tu rango de ascendencia – 2.
+**Elemento del equilibrio:** Obtienes resistencia contra venenos, daño fuego, frío y ácido igual a tu rango + 1. Incrementa también tus PV máximos por un valor igual a tu rango – 2.
 
-<u>Georradar predictivo</u> (pasiva) El radio de tu georradar aumenta por 30 pies. No puedes ser sorprendido por criaturas que estén tocando el suelo y eres capaz de predecir sus movimientos, permitiéndote repetir una tirada de ataque o defensa una vez al turno y evitando que estos te pillen por sorpresa. Tu [prioridad](https://raldamain.com/rules/Reglas principales/prioridad.html) además aumenta por 2 si te encuentras en tu región vinculada.
+**Georradar predictivo:** El alcance de tu georradar aumenta a lejano y tienes los beneficios de *visión futura* al luchar contra otras criaturas que estén en contacto con la tierra y puedas sentir con tu georradar.
 
 ## Rango VI
 
 Incrementa tu SAB por 1.
 
-<u>Forma elemental</u> (3 acciones): Empleando 3 acciones puedes rodearte de una gran masa de tierra para adoptar la forma de un gigantesco elemental. Mientras estés en *forma elemental* la habilidad *armadura de piedra* aumenta la DEF y los PV temporales que otorga por 2. La habilidad *ola de tierra* reduce su coste en acciones por 1 y aumenta tu tamaño por un paso, incrementando así tu FUE y CON por 2 a costa de reducir tu DES por 1. Además, al impactar una superficie terrestre con un ataque natural conviertes toda la tierra en un radio de 10 pies en terreno difícil. La forma elemental durará un número de rondas igual a tu rango + 1 o hasta que pierdas la concentración.
+**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de tierra te obedecen.
 
-<u>Elegido de los espíritus</u> (pasiva): Eres un campeón bendecido por los espíritus. Recibes resistencia 4 a efectos mentales, enfermedades y venenos, y tu esperanza de vida se duplica. Los espíritus no serán naturalmente hostiles hacia ti y tendrán profundo respeto hacia ti.
+**Forma elemental** (3 AP y 3 chi): Invoca un *elemental de tierra* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. Todas las heridas permanentes que sufra la *forma elemental* 
