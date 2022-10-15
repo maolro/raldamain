@@ -11,7 +11,7 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 Para desbloquear este rango necesitas 2 DES y un nivel de talento en percepción. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango IV.
 
-**Ataque furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
+**Combate furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
 
 **Apuntar ataque (1 AP):** Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
 

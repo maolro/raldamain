@@ -7,206 +7,114 @@ Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aqu
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia de naturaleza.
+Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumentas tu reserva de chi por rango + 2.
 
-<u>Enmarañar</u> (2 acciones): Empleando 2 acciones puedes atacar a un enemigo con un látigo de zarcillos. Este ataque emergerá de un punto en la tierra a 60 pies de ti y al impactar tu objetivo quedará enredado por él. Empleando una acción puedes realizar una maniobra de combate de agarre, empujar o tropezar contra una criatura enredada para la cual emplearás tu tiro de magia de naturaleza. Escapar de un zarcillo funciona la misma manera que huir de un agarre convencional y este se destruirá si sufre daño cortante o de fuego.
+**Zarcillo enredador** (2 AP): Ataca a un enemigo a distancia media que *enreda* al impactar (máximo rango + 1 objetivos a la vez). Las maniobras contra él cuestan 1 AP. (+1 chi) Ataca a un objetivo adicional. 
 
-<u>Reserva de energía</u> (pasiva): Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque de Enmarañar que afecte a un área con radio 10 pies o hacer un ataque adicional de Enmarañar o Alterar madera. Si tu reserva de energía se reduce a 0 todas las habilidades que requieran un gasto de reserva de energía podrán usarse si sufres 2 daño no-letal por cada punto que esta costaría.
+**Espina de madera** (2 AP): Ataca a un enemigo a distancia media e inflige 1d6 + SAB daño físico. (1 chi) Ataca a un objetivo adicional. 
 
-<u>Alterar madera</u> (2 acciones): Empleando 2 acciones puedes modificar la composición de un objeto hecho de madera o plantas con tamaño máximo de 5 pies cúbicos que se encuentre a 60 pies de ti. El objeto alterado puede usarse como un arma, por lo cual infligirá 1d6 + SAB daño cortante, contundente o perforante al impactar y puede lanzarse a una distancia máxima de 60 pies. A rangos III y V el tamaño de los objetos que puedes alterar con esta habilidad aumenta por 5 pies y el daño base aumenta a 1d8 y 1d10 respectivamente.
+**Enmarañar** (2 AP y 1 chi): Ataca a 1d4 + 2 objetivos a distancia lejana que estén cerca entre sí y al impactar los *enredas*. (1 chi) Durante la siguiente ronda repite el efecto contra cada criatura que se encuentre o entre en el área afectada además que moverse por ella cuesta +1 AP
 
-<u>Parada elemental</u> (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Parada elemental** (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
 ## Rango II
 
-<u>Crecimiento acelerado</u> (3 acciones y -1 reserva) Empleando 3 acciones y reduciendo tu reserva elemental por 1 puedes aumentar el tamaño de las plantas en un radio de 100 pies, convirtiendo toda el área en terreno difícil (esta habilidad no se acumula consigo misma). Recibes ventaja en todos tus tiros de ataque y defensa hechos con magia elemental en esa zona y emplear enmarañar o alterar madera ahora te costará una acción (usar una maniobra de combate te costará una acción bonus la primera vez por turno). Si afectas un campo de cultivo con esta habilidad su producción anual aumentará.
+**Muro de zarzas** (2 AP y 1 chi): Crea un muro de zarzas con rango x 3 PV, 2 DEF y vulnerabilidad al daño fuego y cortante que otorgará cubierta completa a todas las criaturas tras él. Cada criatura que lo intente cruzar sufrirá *sangrado* y puedes hacerle un ataque de oportunidad de *zarcillo enredador* o *espina de madera*. Si estás en *crecimiento acelerado* puedes formar un muro como reacción 1/turno para detener un ataque
 
-<u>Muro de zarzas</u> (2 acciones) Como acción estándar que reduce tu reserva por 1 puedes formar un muro hecho de afiladas zarzas con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. Este muro se trata de una barrera con rango x 3 PV y defensa igual a tu rango, regeneración 1 y vulnerabilidad al daño fuego y cortante que otorgará cubierta completa a todas las criaturas que se encuentren detrás de él. El muro permanecerá hasta que pierdas la concentración,y para crear un muro adicional deberás reducir tu reserva elemental por 1 cada ronda que este siga activo. Las zarzas de muro provocan [sangrado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#sangrado) a las criaturas agarradas por *enmarañar* que estén en contacto con él. Si una criatura es absorbida al completo por el muro esta quedará incapacitada y puedes hacerle un ataque de alterar madera como acción bonus (para escapar deberán tener éxito en dos tiros contra tu magia de naturaleza). Un muro de zarzas puede formarse como reacción una vez por ronda si te encuentras en un terreno afectado por crecimiento acelerado, el cual puede usarse para bloquear inmediatamente un ataque físico o mágico.
+**Crecimiento acelerado** (3 AP y 1 chi): Llenas todo el campo de batalla de plantas que aumentan el coste para moverse por 1 AP y te otorgan ventaja en todos tus ataques con magia de naturaleza además de alcance lejano.
+
+**Planta devoradora de chi** (2 AP y 1 chi): Haz un ataque de *zarcillo enredador* que al impactar el objetivo pierde 1 chi y se desconcentra. Cada turno que permanezca *enredado* pierde 1 chi y tú ganas 1 chi. 
 
 ## Rango III	
 
-Aumenta tu probabilidad de crítico a 19-20.
+Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 AP. *Espina de madera* aumenta el daño base a 1d8
 
-<u>Animar plantas</u> (3 acciones y -2 reserva): Empleando 3 acciones y reduciendo tu reserva elemental por 2 puedes infundir de vida a las plantas en un área de 70 pies. Esta habilidad sólo afectará a los espacios que tengan un gran volumen de plantas (es decir, los lugares donde las plantas provocan terreno difícil) y todas las criaturas en el área sufrirán un ataque inmediato de alterar madera que infligirá el doble de dados de daño. La primera vez por ronda que una criatura hostil pase por un espacio infestado por plantas animadas recibirá un ataque de oportunidad inmediato de *enmarañar* o *alterar madera*. Al final de la ronda todas las criaturas agarradas sufrirán 1d6 + SAB daño contundente que ignora la defensa otorgada por armaduras. Un terreno afectado por animar plantas cuenta como un terreno armonizado para los propósitos de *conexión elemental* y *espíritu protector*. 
+**Animar plantas** (2 AP y 2 chi): Un espacio de radio medio se llena de plantas agresivas que atacan a cada objetivo (1d4 + 2 de media) e infligen 2d6 + SAB daño y *agarran* al impactar. El efecto se mantiene mientras te concentres y las plantas vuelven a atacar a cada criatura que empiece su turno en el área o entre en ella, infligiendo 1d6 + SAB daño y *agarrando*.
 
-Si un ataque de área que causa daño fuego, frío, radiante, fuerza o necrótico impacte a un área afectada por animar plantas estas morirán de manera instantánea. A rango V las plantas solo pueden ser destruidas por daño fuerza, fuego puro, frío estigio u otras habilidadades capaces de provocar destrucción masiva (tsumani, terremoto, torbellino...).
+**Espina parasítica** (1 AP y 2 chi): Haz un ataque de *espina de madera* con el doble de dados de daño que al impactar se clava en el objetivo. Inflige daño cada ronda igual a 2 + cantidad de rondas que esté clavada y para arrancarla hace falta tirar FUE contra tu tiro de magia de naturaleza.
 
-<u>Revertir crecimiento</u> (2 acciones): Eres capaz de revertir el crecimiento de las plantas para mantener el equilibrio natural. Empleando 2 acciones puedes reducir el tamaño de las plantas en un radio de 5 x rango pies, eliminando el terreno difícil que estas formen. Esta habilidad puede emplearse también para eliminar un efecto de *muro de zarzas*, *animar plantas* o *enmarañar*, necesitando en este caso que tengas éxito en un tiro de magia de naturaleza contra el tiro de magia de naturaleza que tenga el creador de dicho efecto (esto puedes conseguirlo de manera automática si reduces tu reserva elemental por 1 y el creador del efecto tiene rango inferior o igual al tuyo). Usar esta habilidad cuesta una acción a rango V.
+**Invocar elementales de planta** (3 AP y 2 chi): Invoca a un elemental de naturaleza que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez (se acumula con el máximo por *espíritu guardián*)
 
 ## Rango IV
 
-<u>Naturalizar</u> (pasiva): Al agarrar a una criatura con *enmarañar* puedes naturalizar los objetos artificiales no mágicos que lleve, provocando que su armadura reciba un penalizador - 2 a la defensa y sus armas reciban un penalizador - 2 al daño base. Si un arma logra infligir 0 daño en un ataque o la defensa de una armadura es reducida a 0 esta se destruirá al momento.
+**Florecimiento mortal** (3 AP y 2 chi): Llena un espacio de radio medio (1d8 + 3 objetivos) con flores que desprenden un polen tóxico. Todas las criaturas deben tirar CON frente a tu SAB o sufren un veneno (CON) a paso 1. Cada ronda estas repiten el tiro o avanzan de paso con el veneno. El efecto dura rango + 2 rondas o hasta que pierdas la concentración y si estás en *crecimiento acelerado* cada ronda puedes crear una flor nueva que provoca el efecto a las criaturas en un radio pequeño (1d4 + 2). 
 
-<u>Puerta arbórea</u> (2 acciones) Conoces caminos secretos al mundo de los espíritus que te permiten viajar grandes distancias en un instante. Empleando 2 acciones y reduciendo tu reserva elemental por 1 puedes formar un portal espiritual en un árbol que estés tocando, conectando el lugar donde la creas con otro árbol visible que esté a un máximo de 90 pies de distancia. El portal se cerrará tras un turno salvo que gastes una acción para mantenerlo abierto. Puerta arbórea puede emplearse también para viajar al mundo de los espíritus, aunque para este uso debes realizar un ritual de una hora de duración. 
+**Espinas espontáneas** (2 AP y 2 chi): Haz un ataque en un área de radio medio (1d8 + 3 objetivos) que hace 2d8 + SAB daño. Todo el espacio afectado se llena de plantas de la misma manera que *animar plantas* pero infligen 2d8 + SAB daño, no agarran y si impactan a un objetivo debe dejar de moverse. 
 
-Esta habilidad puede usarse también para poseer elementales de planta bajo tu control, sustituyendo así tus estadísticas físicas, vida, vitalidad y defensa por las suyas mientras permanezcas dentro de su cuerpo. Puedes también emplear las acciones del elemental durante tu turno además de las tuyas propias a costa que dejaréis de actuar por separado sino que realizarás acciones como una única criatura. Si el elemental que estás poseyendo muere recibirás el efecto náuseas durante una ronda.
+**Prisión de madera** (2 AP y 2 chi): Haz un ataque que al impactar *agarra* al objetivo y elimina todos los efectos mágicos que tenga. Mientras esté agarrado no podrá usar magia y solo puede intentar escapar una vez por ronda.
 
 ## Rango V
 
-Aumenta tu probabilidad de crítico a 18-20. Aumenta tu máximo de acciones al turno por 1.
+**Furia de la naturaleza** (3 AP y 3 chi): Haz un ataque contra todas las criaturas en un cilindro de radio largo (1d12 + 6 objetivos) que al impactar inflige 2d10 + SAB daño y *agarra*. El terreno pasa a estar afectado por *crecimiento acelerado* que también reduce el movimiento de criaturas voladoras y este ataque hace +1d10 daño si el terreno ya está afectado por *espinas espontáneas*, *animar plantas* y *gran árbol drenador*
 
-<u>Madera férrea</u> (pasiva): La madera que modificas con *alterar madera* se vuelve sólida como el hierro, volviéndose capaz de penetrar las más sólidas armaduras. Puedes también mejorar la resistencia de objetos de madera, causando así que una armadura de madera férrea aumente su defensa por 2 mientras que un arma aumentará su daño base por 2 y podrá romper el metal con la habilidad *golpe destructor.* La madera férrea también es capaz de herir a criaturas incorpóreas.
+**Gran árbol drenador** (3 AP y 3 chi): Formas un gran árbol que al ser invocado hace un ataque contra todas las criaturas en un radio medio (1d8 + 4 objetivos) infligiendo 2d10 + SAB daño físico y 1d6 daño necrótico y tú te regeneras 1 Vitalidad por cada criatura impactada. El árbol tiene rango x 5 PV, rango x 2 DEF y vulnerabilidad al daño fuego y cortante, y este permanecerá en el campo de batalla hasta ser destruido. Cada ronda que permanezca puedes hacer un ataque de *zarcillo enredador, espina de madera* o *enmarañar* como acción bonus que infligirá +1d6 daño necrótico y te regenerará 1 Vitalidad por impacto.
 
-<u>Furia de la naturaleza</u> (3 acciones): Empleando 3 acciones y reduciendo tu reserva elemental por 3 puedes castigar a tus enemigos con el poder de la tierra. Esta habilidad solo puede usarse en un entorno afectado por *animar plantas* y con ella atacas a todas las criaturas en un cilindro de 60 pies de radio. Furia de la naturaleza hace 3d10 + SAB daño físico y los objetivos impactados quedarán agarrados. Puedes afectar hasta a criaturas voladoras que se encuentren a una altura máxima de 60 pies, las cuales [caerán](https://raldamain.com/rules/Reglas principales/reglas de combate.html#caídas) al suelo después de ser agarradas. 
+**Naturalizar** (2 AP y 3 chi): Un objetivo *agarrado* o *enredado* tira CON frente a tu SAB o está maldecido. Cada ronda debe repetir el tiro y si fracasa aumentará la maldición por un paso y si fracasa la reduce:
 
-# Criaturas aliadas
+- Paso 1: Desventaja en todos los tiros de DES y vulnerabilidad al daño fuego  
+- Paso 2: Desventaja en todos sus tiros físicos y -1 AP
+- Paso 3: No puede tomar acciones ni reacciones
+- Paso 4: Se transforma en una estatua de madera. Ya no puede volver a tirar.
 
-La magia de naturaleza es capaz de invocar a criaturas de todo tipo para asistir en el campo de batalla. Aquí se especifican los tipos más comunes de criaturas que se pueden invocar y numerosas variaciones sobre estas para crearlas a cualquier nivel.
+## Rango VI
 
-## Elementales de tierra
+**Guardián de la tierra** (3 AP y 5 chi): Invocas a un poderoso espíritu usando como base una criatura espiritual que recibirá todas las mejoras y acciones del elemental de planta además de las de la criatura espiritual (puede llegar como máximo a 12 en una estadística). Mientras esa criatura permanezca en el campo de batalla puedes emplear una acción para poseer a dicha criatura y protegerte del daño, causando que el daño recibido pase a la criatura. Si estas poseyendo también recibirás las acciones de la criatura como si fueran las tuyas pero esta perderá su turno.
 
-Los elementales de tierra son potentes criaturas compuestas por sólidas piedras que cobran el aspecto de un ser vivo. Su gran resistencia y fuerza les hace ideales guardianes contra las fuerzas que buscan profanar la naturaleza. Estos son algunos ejemplos de elementales de tierra:
+# Elemental de planta
 
-### Pequeño (niv 2)
+## Base
 
-**FUE** 2, **DES** 2, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 6, **VT** 5, **DEF** 6
+**Estadísticas**: Físicas 5,4,3
 
-- **Mejoras:** Pequeño, ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe
-- **Rangos:** Ataques naturales I, Fortitud I
-- **Ataques:** Puño (acción de movimiento, 1d6+3 para atacar, 1d6+6 contundente)
-- **Defensa:** Esquiva (1d6+2), Parada (+3)
+**PV:** 6 + CON
 
-### Mediano (niv 4)
+**Vitalidad:** 8 + CON
 
-**FUE** 4, **DES** 1, **CON** 3, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 9, **DEF** 6
+**Defensa**: 6 (armadura natural)
 
-- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe
-- **Rangos:** Ataques naturales II, Fortitud I
-- **Ataques:** Puño (acción de movimiento, +6 para atacar, 1d6+8 contundente y empuja 10 pies. Una vez por ronda +6 o aturde)
-- **Defensa:** Parada (+6)
+**Resistencias:** armas físicas 7, magia 7
 
-### Grande (niv 6)
+**Inmunidades:** terreno difícil, veneno, efectos mentales
 
-**FUE** 6, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 15, **VT** 14, **DEF** 9
+**Vulnerabilidades**: fuego, cortante
 
-- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe, tamaño superior
-- **Rangos:** Ataques naturales II, Fortitud II
-- **Ataques:** Puño (acción de movimiento, +8 para atacar, 1d6+10 contundente y empuja 10 pies. Una vez por ronda +8 o aturde)
-- **Defensa:** Parada (+8)
+**Movimiento:** paso 1, excavar 1
 
-### Campeón (niv 8)
+**Acciones:** 4
 
-**FUE** 7, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 21, **VT** 16, **DEF** 11
+**Habilidades:**
 
-- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe, tamaño superior, ola de tierra, armadura de piedra, conexión elemental
-- **Rangos:** Ataques naturales III, Fortitud II
-- **Ataques:** Puño (acción de movimiento, +10 para atacar, 1d6+11 contundente y empuja 10 pies. Una vez por ronda +10 o aturde), Secuencia de ataques (acción bonus, hace un ataque de puño)
-- **Defensa:** Parada (+10, puede defenderse de ataques a distancia)
+- Vista a ciegas*: Puede sentir la presencia de seres vivos que estén en contacto con la tierra en un radio cercano*
+- Ataque elemental*: El elemental recibe las acciones de ataque *zarcillo enredador, enmarañar* (recarga 5-6) y *espina de madera* empleando como estadística principal la FUE o DES y sumando +1 a su tiro de ataque
 
-### Gigante (niv 10)
+## Mejora 1
 
-**FUE** 9, **DES** -1, **CON** 9, **INT** -1, **SAB** 1, **CAR** -1; **PV** 24, **VT** 21, **DEF** 12
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
 
-- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe tamaño superior (2), ola de tierra, armadura de piedra, conexión elemental
-- **Rangos:** Ataques naturales IV, Fortitud II
-- **Ataques:** Puño (acción de movimiento, +13 para atacar, 1d6+13 contundente, empuja 10 pies y reduce la defensa por 2. Una vez por ronda +10 o aturde), Secuencia de ataques (acción bonus, hace un ataque de puño)
-- **Defensa:** Parada (+13, puede defenderse de ataques a distancia)
+Aumenta todas sus resistencias por 2 y recibe +1 en todos sus tiros de ataque
 
-### Guardián (niv 12)
+Se regenera 2 Vitalidad al principio de su turno
 
-**FUE** 9, **DES** -1, **CON** 10, **INT** -1, **SAB** 1, **CAR** -1; **PV** 27, **VT** 24, **DEF** 14
+Recibe las acciones *muro de zarzas* (1/ronda), *planta drenadora de chi*
 
-- **Mejoras:** Ascendencia espiritual, ataques infundidos, defensa natural, georradar, movimiento adicional (excavar), ceguera, golpe tamaño superior (2), ola de tierra, armadura de piedra, conexión elemental
-- **Rangos:** Ataques naturales V, Fortitud III
-- **Ataques:** Puño (acción de movimiento, +14 para atacar, 1d6+13 contundente, empuja 10 pies y reduce la defensa por 2. Una vez por ronda +10 o aturde), Ataque oportunista (acción bonus, hace un ataque de puño contra un enemigo aturdido o que sufra una herida), Secuencia de ataques (acción bonus, hace un ataque de puño)
-- **Defensa:** Parada (+14, puede defenderse de ataques a distancia)
+Al ser invocado afecta el terreno con *crecimiento acelerado*
 
-## Elementales de planta
+## Mejora 2
 
-Los elementales de planta son firmes guardianes creados por la naturaleza misma para proteger las tierras salvajes. Estos seres están compuestos de materia vegetal y acaban con sus enemigos agarrándolos con las plantas que forman su cuerpo. Estos son algunos ejemplos de elementales de planta:
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
 
-### Pequeño (niv 2)
+Reduce el coste de hacer ataques con *zarcillo enredador, espina de madera* y *enmarañar* por 1
 
-**FUE** 2, **DES** 2, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 6, **VT** 5, **DEF** 6
+Recibe +1 en todos sus tiros de ataque
 
-- **Mejoras:** Pequeño, ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar
-- **Rangos:** Ataques naturales I, Fortitud I
-- **Ataques:** Tentáculos (acción estándar, 1d6+3 para atacar, 1d6+4 contundente y agarra), Zarzas (acción bonus, hace 1d6+4 daño perforante contra una criatura que agarre)
-- **Defensa:** Esquiva (1d6+2), Parada (+3)
+Al ser invocado está rodeado del efecto de *animar plantas*
 
-### Mediano (niv 4)
+Puede gastar +1 AP en un ataque de *espina de madera* para afectarla con *espina parasítica*
 
-**FUE** 4, **DES** 1, **CON** 3, **INT** -1, **SAB** 1, **CAR** -1; **PV** 9, **VT** 9, **DEF** 6
+## Mejora 3
 
-- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar
-- **Rangos:** Ataques naturales II, Fortitud I
-- **Ataques:** Tentáculos (acción estándar, +6 para atacar, 1d6+6 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+6 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 10 pies de él)
-- **Defensa:** Parada (+6)
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
 
-### Grande (niv 6)
+Aumenta todas sus resistencias por 2 y recibe +1 en sus tiros de ataque
 
-**FUE** 6, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 15, **VT** 14, **DEF** 9
-
-- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior
-- **Rangos:** Ataques naturales II, Fortitud II
-- **Ataques:** Tentáculos (acción estándar, +6 para atacar, 1d6+8 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+8 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 10 pies de él que en lugar de agarrar empuja 10 pies)
-- **Defensa:** Parada (+8)
-
-### Campeón (niv 8)
-
-**FUE** 7, **DES** 0, **CON** 6, **INT** -1, **SAB** 1, **CAR** -1; **PV** 16, **VT** 16, **DEF** 10
-
-- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior, puerta arbórea, aura primigenia, conexión elemental
-- **Rangos:** Ataques naturales III, Fortitud II
-- **Ataques:** Tentáculos (acción de movimiento, +10 para atacar, 1d6+9 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+9 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 15 pies de él que agarra)
-- **Defensa:** Parada (+10, puede defenderse de ataques a distancia).
-
-### Gigante (niv 10)
-
-**FUE** 9, **DES** -1, **CON** 9, **INT** -1, **SAB** 1, **CAR** -1; **PV** 21, **VT** 21, **DEF** 10
-
-- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior, puerta arbórea, aura primigenia, conexión elemental
-- **Rangos:** Ataques naturales IV, Fortitud II
-- **Ataques:** Tentáculos (acción de movimiento, +13 para atacar, 1d6+11 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+11 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 20 pies de él que agarra)
-- **Defensa:** Parada (+13, puede defenderse de ataques a distancia y puede bloquear ataques usando a criaturas agarradas que tenga)
-
-### Guardián (niv 12)
-
-**FUE** 9, **DES** -1, **CON** 10, **INT** -1, **SAB** 1, **CAR** -1; **PV** 22, **VT** 24, **DEF** 12
-
-- **Mejoras:** Ascendencia espiritual, defensa natural, manojo de tentáculos, paso forestal, mordisco, vulnerabilidad a fuego, ceguera, georradar, excavar, tamaño superior (2), ola de tierra, armadura de piedra, conexión elemental
-- **Rangos:** Ataques naturales V, Fortitud III
-- **Ataques:** Tentáculos (acción estándar, +14 para atacar, 1d6+11 contundente, agarra y arrastra 10 pies), Zarzas (acción bonus, hace 1d6+11 daño perforante contra una criatura que agarre), Ataque circular (acción de turno completo, hace un ataque de tentáculos contra todas las criaturas a 15 pies de él), Estampar (acción bonus, hace 1d6+11 daño contundente contra una criatura que agarre y empuja 10 pies), Ahorcar (acción de movimiento, una criatura agarrada se empieza a ahogar)
-- **Defensa:** Parada (+14, puede defenderse de ataques a distancia)
-
-## Bestia
-
-Un invocador puede llamar a todo tipo de criaturas de las tierras salvajes para que estas luchen a su lado y acaben con sus enemigos. Mientras asciende en poder puede invocar a bestias más poderosas provenientes del plano espiritual para arrasar con todo a su paso. Estos son algunos ejemplos de bestias tanto naturales como espirituales:
-
-### Lobo (niv 2)
-
-**FUE** 3, **DES** 3, **CON** 2, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 6, **DEF** 2
-
-- **Mejoras:** Mordisco, defensa natural, depredador
-- **Rangos:** Ataques naturales I, Reflejos I
-- **Ataques:** Mordisco (acción de movimiento, +4, 1d6+3 perforante y maniobra de agarre o tropieza), Desgarrar (acción bonus, 1d6+3 daño contra una criatura en el suelo o agarrada)
-- **Defensa:** Esquiva (+4)
-
-### Águila (niv 2)
-
-**FUE** 1, **DES** 4, **CON** 1, **INT** -1, **SAB** 1, **CAR** -1; **PV** 4, **VT** 5, **DEF** 0
-
-- **Mejoras:** Perforar, alas, tamaño inferior, movilidad, depredador, visión periférica
-- **Rangos:** Ataques naturales I, Reflejos I
-- **Ataques:** Garras (acción de movimiento, 1d6+5, 1d4+5 perforante con ataque furtivo)
-- **Defensa:** Esquiva (2d6+5)
-
-### Oso (niv 4)
-
-**FUE** 5, **DES** 0, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 13, **VT** 11, **DEF** 4
-
-- **Mejoras:** Mordisco, defensa natural, garras, tamaño superior
-- **Rangos:** Ataques naturales I, Fortitud II
-- **Ataques:** Garras (acción de movimiento, +6, 1d6 + 5 cortante), Mordisco (acción bonus, 1d6+5 daño contra una criatura agarrada)
-- **Defensa:** Parada (+6)
-
-### Bestia espiritual (niv 6)
-
-**FUE** 6, **DES** 0, **CON** 5, **INT** -1, **SAB** 1, **CAR** -1; **PV** 5, **VT** 6, **DEF** 6
-
-- **Mejoras:** Mordisco, defensa natural, garras, tamaño superior, ascendencia espiritual
-- **Rangos:** Ataques naturales II, Fortitud II
-- **Ataques:** Garras (acción de movimiento, +6, 1d6 + 8 cortante), Mordisco (acción bonus, 1d6+8 daño contra una criatura agarrada)
-- **Defensa:** Parada (+6)
-
-## Dragón
+Recibe *florecimiento mortal* (1/día), *espinas espontáneas* (1/día) y *prisión de madera* como acción de ataque
