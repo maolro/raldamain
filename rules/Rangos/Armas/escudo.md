@@ -9,43 +9,44 @@ Tu estilo de combate se asemeja al de una sólida barrera defensiva, empleando t
 
 ## Rango I
 
-Para desbloquear este rango necesitas tener una cantidad de fuerza requerida por el escudo que estés llevando.
+Añade tu rango a todos tus tiros relacionados con escudos.
 
-<u>Ataque con escudo</u> (acción bonus): Al realizar una carga puedes hacer un ataque con tu escudo como acción bonus, empleando tu estadística de fuerza y tu rango de arma en el tiro de ataque. Si impactas tu objetivo sufre 1d6 + FUE daño contundente y puedes realizar una maniobra de empujar o tropezar contra él (ambas si obtienes un golpe crítico). El daño de un escudo se reduce a 1d4 + FUE si es un escudo ligero y aumenta a 1d8 + FUE si es un escudo de torre. Esta habilidad puede empelarse fuera de una carga empleando dos acciones (a rango III costará una acción).
+**Carga con escudo:** Si te mueves en línea recta antes de hacer un *golpe de escudo* este contará como acción bonus y el objetivo deberá tirar fuerza contra tu tiro o pasará a estar *tropezado*.
 
-<u>Proteger aliados</u> (reacción): Puedes defender a un aliado a 5 pies de ti como reacción utilizando tu escudo para protegerlo. Si lo haces usarás tu tirada en lugar de la tirada de defensa del aliado, pero en el caso de fracasar tú sufrirás el daño del ataque.
+**Proteger aliados:** Puedes defender a un aliado empleando tu tiro defensivo de escudos si este está adyacente a ti y te encuentras en posición defensiva.
 
-<u>Defensa mejorada</u> (reacción): Tu soltura con el escudo te permite bloquear ataques que en otras circunstancias serían un impacto indiscutible. Si te encuentras en posición defensiva una vez por ronda como reacción puedes detener un ataque enemigo que haya logrado sobreparar tu tiro defensivo a costa de reducir el valor defensivo de tu escudo por 1 (redúcelo por 2 si bloquea un golpe crítico, un *ataque poderoso* o un ataque que cause daño de fuego, radiante o fuerza), quedando destruido si su valor defensivo queda reducido a 0. Esta habilidad no funciona contra ataques de área o combinados.
+**Golpe de escudo (2 AP):** Haz un ataque con tu arma cuyo daño estará determinado según las armas de la siguiente [tabla](https://raldamain.com/rules/Rangos/Armas/escudo.html#armas)
 
 ## Rango II
 
-<u>Interceptar</u> (1 acción): Puedes gastar una acción para prepararte a interceptar un ataque enemigo en cualquier momento de la ronda. Mientras te encuentres en el estado de interceptar en cualquier momento de la ronda puedes cargar una cantidad de pies igual a tu movimiento base hacia un enemigo que se esté moviendo y hacerle un ataque de oportunidad con tu escudo, deteniéndolo en el acto si logras impactar (este ataque contará como una carga). Si has entrado en el estado de *preparación contra cargas* puedes hacerle un ataque de oportunidad con tu lanza al objetivo tras impactarle con el escudo.
+**Forma defensiva:** Entras en un estado de defensa absoluta durante (rango+2) rondas. Mientras estés en este estado tu fuerza y constitución aumentarán por 2 y tendrás los beneficios de *posición defensiva* sin la necesidad de gastar acciones, sin embargo tu velocidad de movimiento se reducirá por 1. Cuando *forma defensiva* termine estarás *fatigado*, impidiendo que vuelvas a usar la habilidad hasta que te recuperes.
 
-<u>Forma defensiva</u> (1 acción) Tienes la capacidad de entrar en un estado de defensa absoluta, convirtiéndote en una barrera infranqueable. Entrar en forma defensiva cuesta una acción y mientras permanezcas en dicho estado incrementa tu FUE y CON por 2. Recibirás adicionalmente resistencia igual a tu rango contra maniobras de combate y ventaja en todos tus tiros defensivos con tu escudo. Esta habilidad durará un número de rondas igual a tu rango + 2 y mientras permanezca activa no podrás moverte más de 20 pies por ronda. Cuando salgas de forma defensiva acabarás fatigado y no podrás volver a entrar hasta que se te pase la fatiga. Esta habilidad solo podrá usarse si llevas un escudo.
+**Defensa mejorada:** Al fracasar en un tiro defensivo podrás escoger reducir el valor defensivo del escudo por 1 para desviar el ataque.
 
 ## Rango III
 
-<u>Carga poderosa</u> (pasiva): Al impactar con una carga una vez por ronda puedes forzar a tu objetivo a hacer un tiro defensivo de CON frente tu tiro de ataque, quedando aturdido durante una ronda en el caso que fracase. Aumenta además el daño base que infliges contras una carga por 1d6 y al cargar provocas que las criaturas con menor fuerza que la tuya se aparten instintivamente de tu camino, dejándote vía libre para atacar. A rango V vuelve a aumentar el daño de carga por 1d6.
+*Golpe de escudo* ahora cuesta 1 AP
 
-<u>Barrera móvil</u> (pasiva): Al entrar en *forma defensiva* otorgas cubierta a todas las criaturas que estén detrás de ti en un cono de 15 pies, otorgándoles ventaja en todos sus tiros defensivos (esta ventaja no se acumula con posición y forma defensiva). Puedes moverte y mantenerte en la forma defensiva, pero para ello cada movimiento te costará una acción adicional o sufres 2 daño no-letal.
+**Carga poderosa:** Al realizar una carga el daño de *golpe de escudo* aumentará en 1d6 y al impactar el objetivo tendrá que tirar constitución frente a tu fuerza o pasará a estar aturdido durante una ronda. Podrás además atacar a cada objetivo en tu camino con el escudo al moverte. 
+
+**Barrera móvil:** Al entrar en posición defensiva todos los aliados que se encuentren detrás de ti recibirán también sus efectos sin la necesidad de gastar acciones.
 
 ## Rango IV
 
-<u>Guardián</u> (pasiva): Al entrar en *forma defensiva* aumenta tu DEF por 2 y los enemigos adyacentes a ti recibirán desventaja en todos sus tiros de ataque hechos contra aliados adyacentes a ti. Recibes también inmunidad a flanqueo y puedes defenderte de ataques sorpresa usando tu escudo.
+**Guardián:** Al entrar en *posición defensiva* reduce todo el daño recibido por 2 y recibes inmunidad a flanqueo y ataques sorpresa.
 
-<u>Mantener posición</u> (reacción): Puedes hacer un ataque de oportunidad contra cualquier criatura que pase por un espacio adyacente a ti mientras te encuentras en *forma defensiva*, deteniéndolo de inmediato si logras impactarlo. Si un aliado a 10 pies de ti es atacado puedes moverte 5 pies hacia él como reacción para protegerlo de un ataque enemigo.
+**Mantener posición:** La primera vez que una criatura entre en un espacio adyacente a ti mientras te encuentres en posición defensiva podrás hacerle un ataque de oportunidad con tu escudo y detenerlo al impactar.
 
 ## Rango V
 
-<u>Maestría con escudo</u> (pasiva): Entrar en *forma defensiva* te otorga un bonificador adicional de un dado de ventaja en tiros de escudo e incrementa los aumentos de estadísticas por 2. Los aliados que se encuentren adyacentes a ti reciben inmunidad a ataques a distancia como si tuvieran cubierta superior. 
+**Maestría con escudo:** Al entrar en *forma defensiva* tu fuerza y constitución aumentarán por 4 en lugar de por 2. Mientras permanezcas en *forma defensiva* también podrás repetir un tiro defensivo por ronda sumándole una ventaja
 
-<u>Detener hechizos</u> (reacción): El escudo puede proteger a tus aliados de ataques mágicos. Al tener éxito en un tiro defensivo con tu escudo para bloquear un ataque de área podrás reflejarlo con tu escudo, impidiendo que todos tus aliados que se encuentren tras tu barrera defensiva sufran daño obligatorio de área. Tú tampoco sufrirás daño obligatorio de ataques de área al bloquear exitosamente con tu escudo. Esta habilidad no funciona contra ataques lanzados por enemigos que se no se encuentren delante de ti.
+**Detener hechizos:** Puedes bloquear ataques de área con tu escudo y no sufrirás daño obligatorio si los bloqueas de forma exitosa. Si te encuentras en forma defensiva los aliados adyacentes también se beneficiaran de esta habilidad.
 
 ## Armas
 
-Un escudo base está hecho de madera y te permite protegerte de ataques a distancia, mágicos o cuerpo a cuerpo como reacción. Para ello empleará un valor conocido como el valor defensivo que no dependerá de ninguna estadística, el cual es equivalente a +4 para un escudo normal y quedará modificado por tu rango en escudos. No obstante, recibirás una penalización -2 en todos tus tiros de DES.  Un escudo puede modificarse con las siguientes características para dar lugar a todo tipo de escudos:
+Los escudos permiten defenderse al portador contra toda clase de ataques, sin embargo estos no están atados a ninguna estadística en particular y en lugar usarán un valor conocido como *valor defensivo*. El valor defensivo representa cuanto protege un escudo a su portador y este se sumará al rango a la hora de determinar los tiros. 
 
-- **Ligero:** Un escudo ligero es más fácil de transportar y utilizar a costa de protegerte menos. No sufres ninguna penalización a tu DES al defenderte con un escudo ligero, pero este reducirá su bonificador defensivo a 3.
-- **Metálico:** Un escudo metálico tiene mayor resistencia que uno de madera, causando que deba resistir dos impactos antes que el valor defensivo que otorga pueda ser reducida. Escudos de este tipo incrementan el penalizador a la DES por 1 a causa de su gran peso.
-- **Torre:**  Un escudo de torre es una gran barrera capaz de proteger todo tu cuerpo de ataques a costa de reducir inmensamente tu movilidad. Un escudo de torre aumentará su bonificador defensivo por 2 a costa de incrementar el penalizador a la DES por 1 e impedir que puedas usar atributos de reflejos. Cuando utilices la habilidad *barrera móvil* todas las criaturas que se encuentren en un cono de 15 pies detrás de ti reciben cubierta completa contraataques enemigos. Debes tener 4 FUE o más para emplear efectivamente un escudo de torre.
-- **Espinado:** Tu escudo está recubierto de afiladas espinas capaces de herir a las criaturas que impacten con él. Un escudo con esta característica inflige +1 daño perforante al impactar y causará el efecto [sangrado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#sangrado) si tu objetivo no lleva armadura. Al defenderte exitosamente de un ataque natural o de artes marciales el atacante sufrirá sangrado de inmediato. Los pinchos se destruyen si el valor defensivo de tu escudo se reduce por 2 o más.
+- **Escudo básico:** Valor defensivo 4. 1d6+fuerza daño contundente. Llevarlo dará un penalizador de -1 a la destreza.
+- **Escudo ligero:** Valor defensivo 3. 1d4+fuerza daño contundente. 
+- **Escudo de torre:** Valor defensivo 6. 1d8+fuerza daño contundente. Llevarlo dará un penalizador de -2 a la destreza e impedirá esquivar al portador. Requiere 4 o mas defensa para usarse.
