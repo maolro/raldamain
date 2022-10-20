@@ -7,31 +7,29 @@ Las armas son aquello que la humanidad lleva empleando desde hace milenios para 
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de memoria y sientes la presencia de efectos mágicos a 60 pies de ti. Desbloqueas rangos en magia arcana.
+Puedes emplear tu inteligencia para defenderte de efectos mentales y de miedo.
 
-<u>Maestro del saber</u> (pasiva): Tienes una gran diversidad de conocimiento y facilidad para aprender nuevas ideas. Recibes éxito automático en tiradas para recordar conceptos básicos de una rama de estudio de tu elección y obtienes una cantidad adicional de niveles de talento igual a tu estadística de inteligencia (si aumentas dicha estadística de manera permanente recibirás un nivel de talento adicional). Puedes además emplear tu estadística de inteligencia en todos tus tiros para resistir efectos mentales y de moral. 
+**Maestro del saber:** Tienes éxito para recordar los conceptos básicos relacionados con una rama de conocimiento de tu elección y adquirirás la habilidad de hablar un idioma adicional.
 
-<u>Lingüista</u> (pasiva): Aprendes un idioma adicional de manera fluida. Puedes comunicarte de manera básica usando lenguajes similares al tuyo. Un ejemplo es si hablas ustilés puedes comunicarte de manera básica con alguien que hable kratense. A rango III aprendes un idioma adicional.
-
-<u>Aprendizaje rápido</u> (ritual): Puedes mejorar tus atributos mentales y físicos con el adecuado tiempo de estudio. Si dedicas tu tiempo de descanso a estudiar, al cabo de un mes aumenta de manera permanente una de tus estadísticas por 1 (no podrás escoger tu INT de esta manera). Esa estadística no puede exceder tu estadística de inteligencia y sólo puedes usar esta habilidad de nuevo cuando incrementes tu INT de manera permanente. 
+**Aprendizaje rápido:** Obtienes una cantidad de niveles de talento adicionales igual a (rango+2) y podrás aumentar una de tus estadísticas por 1 mientras no sea la inteligencia. La estadística mejorada no podrá superar en número a tu inteligencia.
 
 ## Rango II
 
-<u>Conocimiento arcano</u> (pasiva): Estudiando tomos antiguos o indagando en tus habilidades mágicas modificas tu propia magia o fabricas un nuevo invento desconocido. Esta habilidad te permite fabricar un invento que replique una habilidad mágica de hasta rango II, pudiendo usarla tres veces al día sin la necesidad de gastar chi. Alternativamente puedes emplearla para modificar una de tus habilidades mágicas, otorgándola una de las siguientes mejoras:
+**Conocimiento arcano:** Estudiando tomos antiguos o indagando en tus habilidades mágicas modificas tu propia magia o fabricas un nuevo invento desconocido. Esta habilidad te permite fabricar un invento que replique una habilidad mágica de hasta rango II, teniendo una reserva de 3 chi. Alternativamente puedes modificar una de tus habilidades mágicas, otorgándole una de las siguientes mejoras:
 
 - **Rápido:** Reduce el coste de emplear la habilidad escogida por 1, llegando a un mínimo de 1. 
-- **Duradero:** Eres capaz de mantener el hechizo un número adicional de rondas igual a tu rango de conocimiento sin la necesidad de mantener la concentración. Esta habilidad solo puede emplearse gratuitamente una vez por combate y para volver a usarla debes gastar 1 chi.
+- **Duradero:** Eres capaz de mantener el hechizo una ronda adicional sin la necesidad de concentrarte. 
 - **Mental:** Eres capaz de emplear la habilidad escogida sin la necesidad de gesticular, empleando únicamente el poder de tu mente. De esta manera eres capaz de usarla aunque estés agarrado o incapacitado.
-- **Ampliado:** Amplia el área de efecto de dicha habilidad por un número de pies igual a 5 x tu rango de conocimiento. Si la habilidad afecta a las criaturas en una esfera aumenta el radio por el valor indicado y si afecta a una única criatura recibirá un radio de salpicadura de ese valor.
-- **Empoderado:** Aumenta el daño base de la habilidad escogida por un valor igual tu rango en conocimiento. Puedes también gastar 1 chi de tu reserva para convertir el daño de esta a otro elemento de tu elección.
+- **Ampliado:** Aumenta el área de efecto del hechizo por un paso.
+- **Empoderado:** Puedes hacer dos veces el tiro del daño del hechizo y quedarte con el mejor resultado.
 
-<u>Uso de objetos mágicos</u> (1 acción) Eres capaz de identificar las propiedades de un objeto mágico sin tener que tirar. Emp	sleando 1 acción puedes drenar el chi de un objeto mágico en tu posesión, permitiéndote recuperar 1 chi de tu reserva mágica. El objeto que drenes perderá una carga y recibirás un penalizador -1 en todos los tiros relacionados con él hasta que realices un descanso largo (en el caso que sea una armadura reduce su valor defensivo por 1 y si es un arma reduce su daño base por 1). Si intentas afectar a un objeto mágico perteneciente a otra persona deberás tener éxito en una tirada de conocimiento contra un tiro de dificultad escogido por el máster según la calidad de dicho objeto.
+**Uso de objetos mágico:**Eres capaz de identificar las propiedades de objetos mágicos y emplear su reserva de chi como si fuese tuya. Empleando 1 AP podrás recuperar chi igual al nivel del objeto mágico objetivo a costa de anular sus efectos durante el resto del combate.
 
 ## Rango III 
 
-Crea un nuevo invento con Conocimiento arcano que contenga un hechizo de rango II o modificas un hechizo nuevo de tu elección.
+Aplica *conocimiento arcano* a un nuevo hechizo o crea un nuevo invento con él.
 
-<u>Ritualista</u> (ritual): Empleando complejos rituales eres capaz de lanzar poderosos hechizos fuera de tu alcance. Ritualista te permite emplear cualquier habilidad relacionada con la magia arcana en forma de ritual, incluyendo aquellas que no conozcas. Un ritual requiere el gasto de una acción de turno completo y deberás mantener la concentración en él durante un número de rondas igual al rango de dicha habilidad. Si eres interrumpido mientras lanzas un ritual deberás tener éxito en un tiro de conocimiento contra una dificultad escogida por el máster según la complejidad del ritual o sufrirás 1d4 + rango del ritual daño a la cordura. Los rituales requieren también que pagues 1 chi o componentes mágicos del coste de 1 crédito ronda que lo mantengas activo. Puedes también lanzar rituales de tu propia creación si lo permite el máster.
+**Ritualista:** Eres capaz de emplear complejos hechizos conocidos como rituales, los cuales requieren que mantengas la concentración durante un periodo prolongado de tiempo y tener éxito en determinados tiros de arcanismo. Un ritual será igual que un hechizo de cualquier rama de magia el cual durará igual al coste de acciones del hechizo y tendrá un tiro de dificultad igual a 10+(rangox2), el cual tendrá que superarse dos veces para hechizos que sean de rango IV o superior. El coste de iniciar un ritual es de 3 AP y en caso de que el ritualista falle el hechizo sufrirá daño a su cordura igual a el rango del hechizo a replicar+2, además de otras posibles consecuencias decididas por el master. 
 
-<u>Saber verdadero</u> (3 acciones) Tu gran cultura te permite conocer con rapidez una gran variedad de datos con un ágil análisis. Una vez al día puedes identificar todos los hechizos, propiedades mágicas y rangos de magia de todas las criaturas en 60 pies empleando. Esta habilidad también puede emplearse si estás investigando en una biblioteca para conocer todas las historias y leyendas relacionadas un lugar, persona o evento.
+**Saber verdadero (3 AP):**  Identificas todos los hechizos, criaturas y propiedades mágicas que se encuentren en el campo de batalla. Esta habilidad también puede usarse para descubrir todos los datos relacionados con un tema de tu elección en un archivo o biblioteca.
 
