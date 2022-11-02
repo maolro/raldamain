@@ -15,7 +15,7 @@ Para desbloquear este rango necesitas 2 DES y un nivel de talento en percepción
 
 **Apuntar ataque (1 AP):** Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
 
-**Ataque con arma (2 AP):** Hace un ataque modificado por el tipo de arma escogida de la [tabla](https://raldamain.com/rules/Rangos/Armas/a%20distancia.html#armas)
+**Ataque con arma** (2 acciones): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
 
 ## Rango II
 
