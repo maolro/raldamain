@@ -39,24 +39,15 @@ Hacer un ataque con una alabarda te cuesta una acción menos.
 
 **Ataque circular:** Al hacer la habilidad *ataque lateral* atacas a todos los enemigos que se encuentren en el radio de alcance de tu arma.
 
-**Carga con lanza:** Al realizar una carga infliges +1d6 daño y puedes clavar tu lanza a un objetivo para aumentar el nivel de heridas por un paso. Sacar la lanza tras clavarla cuesta 1 AP.
-
 ## Rango V
 
 **Carga repentina:** Al entrar en estado *preparación contra cargas* en cualquier momento de la ronda puedes hacer una carga y atacar a un objetivo. Este ataque aplicará el daño adicional de *preparación contra cargas* 
 
-**Movimiento fluido**: Cada vez que impactes con un ataque puedes moverte una vez.
-
+**Movimiento fluido:** Cada vez que impactes con un ataque podrás moverte una vez como reacción.
 # Armas
 
-Una alabarda base hace 1d10 + FUE daño perforante, se usa con dos manos y tiene un alcance de 10 pies. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
-
-- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia (empleará tu estadística de destreza para el tiro de ataque pero seguirá usando tu fuerza para el daño). Sumarás tus bonificadores de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades *preparación contra cargas*, *carga repentina* y *carga con lanza* para él.
-- **Ligera:** El arma reduce su longitud y peso para permitirte usarla con mayor soltura. Un arma con esta mejora puede usarse con una mano pero reducirá su alcance por 5 pies y el daño a 1d8. Perderás también la desventaja en todos tus tiros defensivos con para defenderte de criaturas adyacentes.
-- **Cortante:** El arma tiene una afilada hoja en su punta, infligiendo así daño cortante al impactar y reduciendo su daño base a 1d8. Recibes los atributos *ataque poderoso* a rango I y *tajo feroz* a rango II costa que ya no podrás clavar tu arma con la habilidad *carga con lanza* ni usarla como un arma arrojadiza.
-- **Bastón:** El arma carece de punta, infligiendo así daño contundente al impactar. Recibes el atributo *ataque poderoso* a rango I, *concusión* a rango III y *ataque despiadado* a rango V a costa de perder *carga con lanza* y *carga repentina* además de reducir el daño base a 1d6.
-- **Gancho:** El arma tiene un gancho en su punta que te permite arrastrar con facilidad a tus objetivos. Un gancho reduce su daño base a 1d6 y te permite clavar tu arma al herir con esta. Un enemigo con el arma clavada está agarrado y podrás emplear una acción para arrastrarlo 10 pies en cualquier dirección. A rango IV recibirás la habilidad *impacto* *destructor* perteneciente a filos cortantes en lugar de *corte* *circular*.
-- **Gigante:** El arma tiene un tamaño superior a lo normal. Aumenta tu alcance por 5 pies y el daño base a 2d6, pero recibirás desventaja en todos tus ataques hechos con ella si tienes 6 o menos FUE. Un arma gigante se puede coger con una mano si estás montado.
-- **Agarre:** El arma tiene una pinza en su punta que puede agarrar al enemigo. Un arma con agarre no infligirá daño al impactar sino que enredará a tu objetivo y puedes emplear una acción para hacer una maniobra de agarre contra él. Puedes gastar una acción para apretar con la pinza, infligiendo 1d4 + FUE daño con ella. A rango IV recibes la habilidad *impacto* *destructor* perteneciente a filos cortantes en lugar de *corte circular*. La pinza puede estar cubierta de espinas, las cuales infligirán sangrado a la criatura que agarren.
-- **Doble:** El arma tiene una segunda punta con la cual puedes realizar ataques. Al hacer un ataque con tu arma puedes declararlo un ataque doble, pudiendo así hacer un ataque adicional como acción bonus contra un enemigo diferente a costa de recibir desventaja en ambos ataques. Cuando alcances el rango III tendrás desventaja únicamente en uno de los dos ataques y a rango V no tendrás ninguna penalización en un ataque doble.
-
+- **Lanza:** 1d10+Fue daño perforante. Deberá usarse con dos manos
+- **Lanza arrojadiza:** 1d8+Fue daño perforante. Podrá emplearse para hacer un ataque a distancia contra un objetivo a distancia corta. 
+- **Guja:** 1d8+Fue daño cortante. Deberá usarse con dos manos. Recibirá los atributos de *ataque poderoso* y *tajo feroz* pero no  podrá clavarse en su objetivo al emplear la habilidad *carga con lanza*.
+- **Bastón:** 1d6+Fue daño contundente. Deberá usarse con dos manos. Recibirá los atributos de *ataque poderoso* y *golpe aturdidor* pero no podrá clavarse en su objetivo al emplear la habilidad *carga con lanza*.
+- **Lanza doble:** 1d8+Fue daño. Deberá usarse con dos manos .Permite hacer un segundo ataque con desventaja como acción bonus contra otro objetivo.
