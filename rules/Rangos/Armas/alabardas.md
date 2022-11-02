@@ -9,49 +9,43 @@ Eres experto empleando armas compuestas por un largo palo, acabando así con tus
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas.
+Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas. Puedes obtener este rango de manera gratuita si tienes 4 o más FUE, 4 o más DES y 4 niveles de talento en heroísmo
 
-<u>Preparación contra cargas</u> (1 acción): Puedes prepararte contra cargas enemigas para alcanzarles con tu arma antes de que puedan llegar a ti. Mientras estés en el estado de preparación puedes realizar un ataque de oportunidad en cualquier momento de la ronda contra una criatura que pase por el radio de alcance de tu alabarda. Este ataque infligirá +1d6 daño base y en el caso que impactes el objetivo deberá detenerse de inmediato. El ataque que prepares no se perderá al final de la ronda y sólo saldrás del estado de preparación si realizas un ataque, te mueves más de 10 pies de tu posición o eres desconcentrado (no abandonarás el estado de preparación si tu montura se mueve, pero sí lo perderás en el momento que gastes acciones para que esta se desplace más).
+**Preparación contra cargas** (1 AP): La siguiente vez que un enemigo se mueva a tu radio de alcance haz un ataque de oportunidad con +d6 daño y deteniéndolo en el acto si impactas. Dura hasta que pierdas la concentración o actives la habilidad.
 
-<u>Proteger aliados</u> (reacción): El largo alcance de tu arma te permite proteger a aliados cercanos de ataques enemigos. Cuando un aliado a 10 pies de ti realice un tiro defensivo recibirá un bonificador a este igual a tu rango de alabardas. Este bonificador se acumula con hasta tres otras criaturas con alabardas que tengan esta habilidad. 
+**Proteger aliado**: Puedes proteger a un aliado usando tu tiro defensivo de alabarda si te encuentras en *preparación contra cargas* o *posición defensiva*
 
-<u>Parada</u> (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma. No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes lo cual te otorga desventaja en tus tiros defensivos contra sus ataques.
+**Ataque con arma** (2 acciones): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de FUE y tu rango.
+
+**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma. No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes lo cual te otorga desventaja en tus tiros defensivos contra sus ataques.
 
 ## Rango II
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+Puedes obtener este rango de manera gratuita si tienes 5 o más FUE, 5 o más DES y 5 niveles de talento en heroísmo
 
-<u>Ajustar alcance</u> (pasiva): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello.
+**Ataque lateral** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
 
-<u>Ataque lateral</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y puedes hacer un intento de *tropezar* empleando tus bonificadores de arma como contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
+**Ataque serpenteante** (1 AP): El objetivo se defiende con DES o FUE o es empujado y cae al suelo. Si estás en *preparación contra cargas* puedes hacerle un ataque de oportunidad si cae al suelo
 
 ## Rango III 
 
-Aumenta tu probabilidad de golpe crítico a 19-20. Hacer un ataque con una alabarda te cuesta una acción menos.
+Hacer un ataque con una alabarda te cuesta una acción menos.
 
-<u>Flanqueador experto</u> (pasiva): Tu arma hace daño adicional igual a tu estadística de destreza contra objetivos que flanquees (mínimo +1 daño). Los beneficios de flanqueo se aplicarán a cualquier criatura que esté en tu radio de alcance y que esté adyacente a uno de tus aliados. No puedes afectar a criaturas inmunes a flanqueo con esta habilidad.
+**Flanqueador experto:** Añade +DES al daño al atacar a un enemigo que esté adyacente a uno de tus aliados en tu alcance. Puedes usar tu estadística de destreza como bonificador para tiros de ataque sustituyendo a la fuerza.
 
-<u>Ataque serpenteante</u> (1 acción) Tu soltura con tu arma te permite hacer complejas técnicas de combate. Empleando una acción puedes realizar una de las siguientes técnicas de combate contra un enemigo que se encuentre en el área de alcance con tu arma. Emplearás tu bonificador de ataque con alabarda para cualquiera de estas técnicas especiales, las cuales contarán como maniobras de combate.
-
-- **Ataque engañoso**: Tu objetivo debe defenderse con averiguar intenciones. Si fracasa este no podrá defenderse del siguiente ataque que reciba hasta que llegue su turno (esta habilidad cuenta como una finta para los propósitos de *esquiva asombrosa*). Si obtienes un golpe crítico puedes hacer un ataque inmediato con tu arma como acción bonus. No puedes emplear esta técnica contra enemigos que se encuentren en posición defensiva.
-- **Desarme:** Tu objetivo debe defenderse con heroísmo. Si fracasa será inmediatamente desarmado del arma que lleve, la cual caerá a un espacio aleatorio a 5 pies de él (1d6x5 pies si es un crítico). Solo puedes emplear esta técnica en respuesta a que tu objetivo se haya defendido exitosamente de uno de tus ataques con una parada.
-- **Golpear el suelo**: Tu objetivo debe defenderse con esquiva o heroísmo. Si fracasa será empujado 10 pies en cualquier dirección y quedará *tropezado* de inmediato. Si obtienes un golpe crítico sufrirá también una *herida permanente* leve en la pierna.
+**Reposicionar**: Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
 
 ## Rango IV
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+**Ataque circular:** Al hacer la habilidad *ataque lateral* atacas a todos los enemigos que se encuentren en el radio de alcance de tu arma.
 
-<u>Ataque circular</u> (1-2 acciones): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en el radio de alcance de tu arma. Puedes escoger el punto de inicio y el sentido de tu ataque los cuales decidirán el orden en el cual tus objetivos se defenderán de tu ataque circular. Si logras impactar a un objetivo empújalo 5 pies hacia atrás y al igual que *ataque lateral* esta habilidad se detendrá si un enemigo logra detener exitosamente tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Si gastas una acción adicional en un ataque circular puedes hacer una maniobra de tropezar contra todos los enemigos que impactes igual que *ataque lateral*.
-
-<u>Carga con lanza</u> (pasiva): Al realizar una *carga* aumenta el daño base de tu arma por 1d6 y al impactar a un enemigo puedes escoger clavarle tu lanza para aumentar el nivel de todas las *heridas permanentes* infligidas por un paso. Mientras tengas tu lanza clavada no podrás usarla para atacar a otros enemigos ni para defenderte de ataques mientras hasta que gastes una acción para desengancharla. Si estás agarrando tu lanza un enemigo que esté clavado por ella no podrá moverse más de 10 pies de ti ni defenderse de otros ataques usando esquiva o magia (podrá aún emplear acciones para intentar escaparse como si lo estuvieras agarrando)
+**Carga con lanza:** Al realizar una carga infliges +1d6 daño y puedes clavar tu lanza a un objetivo para aumentar el nivel de heridas por un paso. Sacar la lanza tras clavarla cuesta 1 AP.
 
 ## Rango V
 
-Aumenta tu probabilidad de crítico a 18-20
+**Carga repentina:** Al entrar en estado *preparación contra cargas* en cualquier momento de la ronda puedes hacer una carga y atacar a un objetivo. Este ataque aplicará el daño adicional de *preparación contra cargas* 
 
-<u>Carga repentina</u> (reacción): Al entrar en el estado de *preparación contra cargas* en cualquier momento de la ronda puedes moverte una distancia igual a tu movimiento base y hacer un ataque contra un objetivo en tu alcance. Este ataque contará como una carga si te mueves 20 pies o más y al impactar con tu ataque aumenta el nivel de todas las heridas permanentes infligidas por un paso.
-
-<u>Reposicionar</u> (reacción): Tu arma actúa como una extensión de tu cuerpo, permitiéndote usarla para incrementar tu movimiento. Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad. Esto se acumula con la cantidad de pies que puedes moverte con la habilidad *[evasión](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)*.
+**Movimiento fluido**: Cada vez que impactes con un ataque puedes moverte una vez.
 
 # Armas
 

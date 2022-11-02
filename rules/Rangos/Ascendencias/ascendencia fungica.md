@@ -11,158 +11,113 @@ Ya sea desde tus inicios o por un aberrante experimento de laboratorio tu cuerpo
 
 Recibes resistencia 2 a daño físico. 
 
-<u>Manipular hongos</u> (pasiva): Tu cuerpo libera extrañas esporas que te permiten comunicarte y hasta manipular materia fúngica. Desbloqueas rangos en [magia de naturaleza](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20naturaleza.html) con la variación que en lugar de afectar a plantas con tus habilidades afectarás sólo a hongos. Si tienes rangos en magia de naturaleza los ataques hechos con alterar madera no harán daño físico sino daño ácido. Todas las criaturas relacionadas con los hongos no serán naturalmente hostiles hacia ti y puedes comunicarles información básica. 		
+**Manipular hongos:** Puedes comunicarte con criaturas fúngicas y estas no serán naturalmente hostiles hacia ti. (1 chi) Durante esta ronda tus ataques con *magia de naturaleza* que inflijan daño físico provocarán +1d6 daño ácido al impactar además de *enfermar* durante una ronda al reducir PV.
 
-<u>Carroñero</u> (pasiva): Los seres vivos se han convertido en tu forma principal de alimentación. Desbloqueas los rangos de [nigromancia](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html) para los cuales puedes utilizar tu estadística de Sabiduría. Además, tienes resistencia a daño necrótico igual a tu rango de ascendencia fúngica + 1 y puedes ver en la oscuridad sin problemas en un radio de 60 pies. No obstante, tu infección fúngica te hace especialmente vulnerable a la luz del sol, causando que recibas el efecto de estado [cegado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#cegada) si sufres daño radiante o pasas un turno en un área de luz brillante.
+**Carroñero:** Tienes resistencia a daño necrótico y ácido igual a tu rango + 1 además que puedes ver en la oscuridad sin dificultades. Puedes emplear 2 AP para drenar 1 chi de una criatura que haya muerto hace menos de un día (máximo una vez por cadáver). Recibes también vulnerabilidad al daño radiante y estás *cegado* si te encuentras en un entorno con luz brillante
 
 ## Rango II
 
 Incrementa tu CON por 1.
 
-<u>Infectar cadáver</u> (pasiva): Eres capaz de transformar los cuerpos de los muertos en huestes para parasíticas esporas. Al crear un no-muerto con [animar cadáver](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html#rango-ii) este reanimará como una criatura fúngica. Una criatura fúngica puede comunicarse contigo a través de esporas y recibe la capacidad de infectar con esporas al infligir daño. Esto cuenta como una [enfermedad física](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) que al matar a un objetivo lo animará como un no-muerto. Las criaturas fúngicas bajo tu control se comunican constantemente contigo, causando así que tanto tú como estas sólo puedan ser sorprendidas si todas lo están.
+**Infectar cadáver** (3 acciones y 1 chi): Reanimas un cadáver como una criatura fúngica cuyas estadísticas están detalladas en el siguiente apartado. No puedes controlar a más criaturas fúngicas que tu rango + 1.
 
-<u>Esporas infecciosas</u> (pasiva): Tu cuerpo está infestado de materia fúngica que puedes emplear para fortalecer tus ataques. Recibes una reserva de energía igual a tu rango de ascendencia + 2 (esta se acumula con la reserva de magia de naturaleza) y como acción bonus puedes reducirla por 1 para infectar con esporas tóxicas a una criatura que esté agarrada o incapacitada por un ataque. Las esporas cuentan como un [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) que afectará a una estadística determinada según la naturaleza de las esporas. Mientras este veneno vaya avanzando de etapa el cuerpo de tu objetivo se irá llenando progresivamente de materia fúngica, causando que tus ataques de magia de naturaleza reciban un bonificador contra él igual al nivel del veneno. A rango IV infectas a los enemigos con tus esporas al impactar con un ataque de magia de naturaleza sin la necesidad de reducir tu reserva. No puedes volver a infectar a una criatura que se haya recuperado de este efecto hasta que pase un día.
+**Esporas infecciosas** (1 chi): Durante esta ronda tus ataques infectarán al objetivo al impactar con esporas venenosas. Estas actúan como un veneno que afecta a la estadística que quieras y tiene gravedad igual a tu rango + 3 
 
 ## Rango III
 
 Aumenta tu resistencia a daño físico por 1.
 
-<u>Nube tóxica</u> (2 acciones): Empleando 2 acciones y reduciendo tu reserva elemental por 1 puedes liberar una nube de tóxicas esporas. Esta nube ocupará un espacio de 5 x rango pies cúbicos  y emergerá de un punto de tu elección que esté infestado por hongos (puedes escogerte a ti mismo con esta habilidad). Todas las criaturas que empiecen su turno en un espacio ocupado por una nube tóxica serán infectados automáticamente por tus esporas. Aquellos que ya estén infectados aumentarán el nivel del veneno por 1 cada turno que pasen ahí. Las criaturas con resistencia a veneno podrán pasar un turno adicional por cada punto de resistencia en tu nube tóxica sin sufrir efectos nocivos. Las protecciones contra gases se aplican también contra tu nube tóxica. Una vez por ronda si eres impactado por un ataque para liberar una nube tóxica como reacción si reduces tu reserva por 1 (*nube tóxica* puede usarse veces ilimitadas por turno a rango V siempre y cuando reduzcas tu reserva).
+**Nube tóxica** (2 acciones y 1 chi): Formas una nube tóxica desde un espacio a distancia lejana infestado por hongos que ocupará un espacio pequeño (medio a rango V). Todas las criaturas que empiecen su turno en el radio de la nube o se encontraban en su área de efecto cuando esta fue invocada serán afectados de inmediato por tus *esporas infecciosas.* (1 chi, 1/turno) Emplea esta habilidad como reacción 
 
-<u>Metabolismo fúngico</u> (pasiva): Tienes la capacidad de recuperarte de tus heridas con mayor rapidez, pudiendo regenerar hasta miembros perdidos. Al principio de tu turno te recuperas 1 vitalidad y 1 punto de tu reserva si te encuentras en un lugar húmedo o a oscuras. Este efecto no te permite recuperarte PV. Si realizas un descanso largo en un lugar infestado por hongos estos se enganchan a tu cuerpo, reduciendo el nivel de todas las heridas permanentes que te aquejan por 1. Si has perdido una parte del cuerpo esta se regenerará al cabo de una semana. A rango V el número de vitalidad que te sanas al turno incrementa por 1 y si estás al máximo de vitalidad te sanarás 2 PV al turno.
+**Metabolismo fúngico:** Si te encuentras en un espacio a oscuras o húmedo te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto en ese terreno recuperas también todos tus PV y reduces todas las heridas que tengas por un paso. Puedes regenerar partes del cuerpo perdidas al cabo de una semana.
 
 ## Rango IV
 
 Incrementa tu FUE por 1.
 
-<u>Transporte fúngico</u> (2 acciones): Empleando 2 acciones y reduciendo tu reserva elemental por 1 puedes fusionarte con materia fúngica para cruzar grandes distancias en un instante. Para utilizar esta habilidad debes estar en contacto con un conjunto de hongos de tamaño igual o superior al tuyo y con ella podrás reemerger en un espacio infestado por hongos localizado como máximo a 90 pies de ti. Si el hongo con el que te has fusionado sufre daño de fuego serás expulsado inmediatamente de él, recibiendo el efecto de estado [náuseas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#n%C3%A1useas) durante un turno.
+**Transporte fúngico** (2 acciones y 1 chi): Te fusionas con materia fúngica y en cualquier momento de la ronda puedes reemerger de otro espacio infestado por hongos a una distancia lejana. Si estás fusionado con los hongos no puedes tomar acciones ni ser atacado, pero si los hongos con los que te fusionas sufren daño fuego o radiante volverás a tu estado original y sufres *náuseas* durante una ronda.
 
-<u>Engendrar criatura fúngica</u> (2 acciones): Un número de veces al día igual a tu rango - 1 puedes emplear 2 acciones para engendrar a una criatura fúngica. Esa criatura empezará siendo de nivel 2 y empezará a crecer mientras pase el tiempo, recibiendo 1 nivel adicional cada hora. No podrá tener un nivel superior a tu rango de ascendencia fúngica x 2 y sólo podrá crecer si se encuentra en un lugar oscuro o húmedo. En el caso que tu criatura fúngica pase un turno en un lugar infestado por hongos el nivel que tiene incrementará automáticamente por 1. Puedes tener bajo tu control un número de criaturas fúngicas cuyos niveles combinados no excedan tu rango x 4 (si tienes rangos en nigromancia podrás controlar un total de niveles de hongos y no-muertos igual a tu rango de ascendencia x 4 + tu rango de nigromancia x 4). Esta habilidad puede utilizarse para mejorar la fuerza de un no-muerto bajo tu control, aumentando su nivel de la misma manera.
+**Crecimiento fúngico** (2 acciones y 1 chi): Una criatura fúngica o no-muerto que controles recibe una mejora adicional (máximo rango – 3 mejoras). Esta habilidad puede usarse también para crear una nueva criatura fúngica sin mejoras en un espacio infestado por hongos.
 
 ## Rango V
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-<u>Aura tóxica</u> (pasiva): Tus esporas tóxicas ahora permean el espacio a tu alrededor, infectando a las criaturas débiles de salud. Las criaturas que empiecen su turno a 15 pies de ti recibirán el efecto de estado [enfermado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada), el cual durará un número de turnos igual a tu rango de plantilla fúngica. Las criaturas que tengan resistencia al veneno podrán pasar un turno adicional por cada punto de resistencia que tengan en el aura sin sufrir ningún efecto negativo. Reciben ventaja en todos tus ataques de magia de naturaleza atacando a criaturas enfermadas y al infectar con esporas a una criatura enfermada esta recibirá el efecto de estado [náuseas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#n%C3%A1useas) durante un turno.
+**Aura tóxica:** Todas las criaturas que empiecen su turno en un espacio cercano a ti o entren en él por primera vez deberán tirar CON contra tu rango + 3 o son *enfermados* durante una ronda. Al afectar con tus *esporas infecciosas* a una criatura *enfermada* esta sufrirá el efecto *nauseas*
 
-<u>Comunión fúngica</u> (ritual): Empleando diez minutos de meditación puedes fusionar tu mente con todos los hongos en un radio de 100 metros. En este estado eres capaz de percibir la posición exacta de todas las criaturas que estén a 10 pies de un hongo, recibiendo así inmunidad a ataques sorpresa y flanqueo. Si tienes rangos en [rastrear](https://raldamain.com/rules/Rangos/Combate/rastrear.html) todo el área donde hayas realizado la comunión fúngica cuenta como [terreno predilecto](https://raldamain.com/rules/Rangos/Combate/rastrear.html#rango-i).
+**Comunión fúngica** (3 acciones y 2 chi): Fusionas tu mente con todos los hongos en el campo de batalla, permitiéndote conocer la posición exacta de todos los seres vivos cercanos a un hongo y recibiendo inmunidad a *flanqueo* y ataques sorpresa.  
 
 ## Rango VI
 
 Incrementa tu SAB por 1.
 
-<u>Forma micónica</u> (pasiva): Has abandonado tu humanidad al completo para transformarte en una criatura fúngica. Recibes resistencia 4 a efectos mentales, veneno, enfermedades, [fatiga](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada) y [aturdimiento](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). No necesitas respirar ni dormir y eres capaz de subsistir únicamente con los nutrientes producidos por seres vivos muertos. Como acción de turno completo puedes poseer a una criatura fúngica de tu elección que se encuentre a 60 pies de ti (si has usado comunión fúngica pierdes este límite de distancia), sustituyendo tus capacidades físicas por aquellas que tenga la criatura que posees pero manteniendo tus habilidades mentales y mágicas.
+**Señor de los hongos:** Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los hongos te obedecen sin cuestionarlo. Además, te regeneras 2 PV al turno si estás al máximo de Vitalidad y puedes gastar 1 chi para reducir el nivel de una herida por un paso.
 
-<u>Rejuvenecer</u> (pasiva): Eres capaz de regenerar tu cuerpo a partir del fragmento más pequeño de él. Continúas regenerándote aunque seas reducido a 0 PV y eres capaz de regenerar órganos importantes para tu cuerpo con el adecuado descanso. Puedes también emplear 2 puntos de tu reserva elemental para reducir una herida permanente que afecte tu cuerpo por un nivel. No obstante, pierdes la capacidad de regenerarte si sufres una [quemadura](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#quemada) y morirás permanentemente si tu cuerpo es desintegrado al completo.
+**Forma micónica** (3 acciones y 3 chi): Invocas una *criatura fúngica* con tres mejoras y la posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. Los PV y Vitalidad de la criatura poseída contarán como si fueran PV temporales tuyos mientras dure el efecto.
 
-# Criaturas fúngicas
+# Criatura fúngica
 
-## Espora gigante (niv 2)
+## Base
 
-**PV:** 6			**VT:** 7	 		**DEF:** 4 (resistencia 2, armadura natural 2)
+**Estadísticas base:** 4,3,3,2,1,0
 
-**FUE:** 3	**DES:** 1	**CON:** 3	**INT:** -	**SAB:** 1	**CAR:** -
+**PV:** 5 + CON
 
-------
+**Vitalidad:** 6 + CON
 
-**Resiste:** Necrótico 2
+**Defensa**: 4 (armadura natural)
 
-**Vulnerable:** Radiante
+**Resistencias:** daño físico 2
 
-**Inmune:** Sangrado, fatiga, veneno, efectos mentales, enfermedades
+**Inmunidades:** veneno, enfermedades, efectos mentales, terreno difícil, necrótico, ácido
 
-**Sentidos:** Vista a ciegas 60 pies 
+**Vulnerabilidades**: fuego, radiante
 
-**Movimiento:** 5 pies levitación
-
-**Acciones:** 3
-
-------
-
-**Sensibilidad a la luz:** Esta criatura recibe desventaja en todos sus tiros de ataque y defensa si se encuentra en un lugar afectado por luz solar.
-
-**Explosión:** Cuando esta criatura muera todos los enemigos a 5 pies deberán hacer un tiro de CON con dificultad +4 o son infectados con *esporas tóxicas*.
-
-------
-
-**Tentáculos** (2 acciones): +4, alcance 10 pies, el objetivo es enredado y deberá hacer un tiro de CON con dificultad +4 o es infectado con *esporas tóxicas* (veneno de CON, tasa de incidencia 2 rondas, gravedad +3). Para escapar deberá tener éxito en un tiro de heroísmo contra +4.
-
-**Agarre** (1 acción): Un objetivo enredado tira heroísmo contra +4 o es agarrado (tira contra +4 para escapar).
-
-**Escupir ácido** (2 acciones): +4, alcance 5 pies, 1d6 + 1 ácido, reduce la defensa del objetivo por 2. Si reduce los PV de su objetivo este sufrirá una quemadura leve. Tres veces por combate puede hacer un ataque de escupir ácido como acción bonus a una distancia máxima de 60 pies.
-
-------
-
-**Parada** +4. (-1d6 contra ataques hechos por criaturas adyacentes).
-
-### Nivel 4
-
-Aumenta su FUE por 1, sus PV por 3, su armadura natural por 2 y su vitalidad por 1. Las esporas fúngicas aumentan su gravedad por 1 y reducen su tasa de incidencia a una ronda. Además, la espora gigante recibirá bonificador a tiros de ataque contra criaturas envenenadas igual al grado del veneno que tengan y cuando una criatura muera por el veneno revivirá como un zombi fúngico.
-
-### Nivel 6
-
-
-
-### Nivel 8
-
-
-
-### Nivel 10
-
-
-
-### Nivel 12
-
-
-
-## Bestia fúngica (niv 4)
-
-**PV:** 12			**VT:** 11	 		**DEF:** 5 (resistencia 2, armadura natural 3)
-
-**FUE:** 6	**DES:** 0	**CON:** 5	**INT:** -	**SAB:** 1	**CAR:** -
-
-------
-
-**Resiste:** Necrótico 3
-
-**Vulnerable:** Radiante
-
-**Inmune:** Sangrado, fatiga, veneno, efectos mentales, enfermedades
-
-**Sentidos:** Vista a ciegas 60 pies 
-
-**Movimiento:** 35 pies
+**Movimiento:** Base 1, excavar 1, escalada 1
 
 **Acciones:** 3
 
-------
+**Rangos:** Tiene rango I en un arma de tu elección
 
-**Sensibilidad a la luz:** Esta criatura recibe desventaja en todos sus tiros de ataque y defensa si se encuentra en un lugar afectado por luz solar.
+**Habilidades:**
 
-**Combate salvaje:** Puede recibir una acción adicional a costa de recibir desventaja en todos sus tiros defensivos.
+- *Esporas infecciosas*: Al impactar con un ataque infectará al objetivo con *esporas infecciosas* que afectan a la estadística que escoja el invocador. Su gravedad es igual a su CON + 2 + nivel de mejora.
+- *Regeneración:* Esta criatura se regenera 2 VT al principio de su turno y es inmune a los efectos de heridas permanentes leves. Su regeneración se anula durante un turno si sufre daño fuego o radiante
+- *Vista a ciegas*: Puede sentir la posición de seres vivos a una distancia media.
 
-------
+## Mejora 1
 
-**Garra** (1 acción): +7, alcance 10 pies, 1d6 + 4 cortante + 2 necrótico. El objetivo deberá hacer un tiro de CON con dificultad +5 o es infectado con *esporas tóxicas* (veneno de CON/FUE/SAB, tasa de incidencia 2 rondas, gravedad +6). 
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 5). Obtiene resistencia mágica 4
 
-**Mordisco** (2 acciones): +7, alcance 5 pies, 1d6 + 4 perforante +2 necrótico y es infectado por las *esporas tóxicas*. El objetivo tirará heroísmo contra +8 o le agarra con su mordisco, causándole sangrado y una herida permanente leve. La criatura afectada quedará enredada y todos los ataques de mordisco hechos contra ella contarán como golpes críticos.
+Recibe un rango adicional en dos armas diferentes y una acción adicional
 
-**Ataque poderoso** (1 acción): Aumenta el daño base por 1d6 y la criatura impactada no podrá sanarse durante.
+Obtiene estas nuevas habilidades:
 
-------
+- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
+- *Nube tóxica* (recarga 5-6): Desprende una nube tóxica en un radio corto, infectando a las criaturas en ella con sus *esporas infecciosas*. Esta habilidad se activará también cuando esta criatura muera.
 
-**Parada** +7
+## Mejora 2
 
-### Nivel 6
+Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 6)
 
+Recibe un rango adicional en dos armas diferentes
 
+Aumenta todas sus resistencias por 2
 
-### Nivel 8
+Obtiene esta nueva habilidad
 
+- *Ataques infundidos superiores:* Todos sus ataques infligen +1d6 daño ácido al impactar y reducen la defensa del objetivo por 2. 
+- *Mente vinculada*: Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes
+- *Resistir la muerte*: La primera vez que esta criatura muera como reacción revivirá a 1 PV.
 
+## Mejora 3
 
-### Nivel 10
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
 
+Recibe un rango adicional en dos armas diferentes
 
+Se regenera 2 VT adicional por turno y 2 PV en el caso que esté al máximo de VT.
 
-### Nivel 12
+Obtiene esta nueva habilidad
+
+- *Aura tóxica:* Todas las criaturas que empiecen su turno en un espacio cercano o entren en él deben tirar CON frente a el valor de gravedad de sus esporas o son *enfermadas* durante una ronda.

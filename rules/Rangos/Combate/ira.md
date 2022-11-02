@@ -5,28 +5,26 @@ category: Combate
 
 La ira es un sentimiento que fluye a través de todas las personas, sin embargo tú eres capaz de canalizarla para superar los límites de tu cuerpo e incrementar tus habilidades físicas. Casi entrando en un efecto similar a un trance eres capaz de desconectar parcialmente tu consciencia para dejar tu instinto de supervivencia mas básico de tu interior y de este modo acabar con cualquier cosa o adversario que ose cruzarse en tu camino. A medida que obtienes mas experiencia y vas dominando esta habilidad serás capaz de realizar proezas físicas por encima de cualquier límite humano. 
 
-<u>Requisitos:</u> dos estadísticas físicas iguales a 2 o más y rangos en un arma.
-
 ## Rango I
 
-<u>Ira</u> (1 acción): Empleando una acción puedes entrar en un estado de ferocidad superior conocido como ira. Mientras estés en el estado de ira aumentas dos de tus estadísticas físicas por 2 y recibes resistencia igual a tu rango + 1 contra efectos mentales y de moral. Ira durará un número de rondas igual a tu rango + 2 y mientras mantengas este efecto no podrás usar habilidades que requieran paciencia y concentración, atacando cada turno si es posible. Tu ira termina automáticamente cuando no haya enemigos cerca o caigas inconsciente, quedando fatigado cuando salgas de esta. No podrás entrar en Ira si estás fatigado salvo que seas reducido a más de la mitad de tus PV, pero caerás inconsciente cuando esta ira acabe. Si tienes rangos en presencia puedes otorgar los efectos de Ira a un aliado de tu elección como acción estándar.
+**Ira**: Durante 2 + r rondas de combate entras en un estado de furia sobrenatural, incrementando dos estadísticas físicas por 2 además de recibir resistencia 2 contra miedo y efectos mentales. No podrás concentrarte estando en *ira* y deberás siempre atacar al enemigo más cercano. Curando *ira* termine estarás *fatigado* hasta tomar un descanso y no podrás volver a entrar en *ira* hasta que te recuperes de la fatiga.
 
-<u>Movimiento ágil</u> (pasiva): Al entrar en el estado de Ira te mueves con velocidades superiores a la normal. Tu velocidad base aumenta por 5 pies y eres capaz de defenderte de ataques sorpresa al entrar en ira (el atacante recibirá ventaja en el tiro de ataque y el daño de [ataque furtivo](https://raldamain.com/rules/Rangos/Armas/filos perforantes.html#rango-i) se aplicará con normalidad). Tu velocidad vuelve a aumentar 5 pies cuando alcances el rango III. Si tienes otros tipos de movimiento que dependan de tu velocidad base (nadar, volar...) estas aumentaran de la misma manera.
+**Ataque salvaje:** Antes de atacar puedes obtener ventaja en todos los ataques realizados durante la ronda a costa de recibir desventaja en todos tus tiros defensivos.
 
 ## Rango II
 
-<u>Reducción al daño</u> (pasiva): Al entrar en ira eres capaz de aguantar heridas con mayor facilidad. Reduce el daño físico que recibas mientras estés en Ira por 2 y podrás ignorar los penalizadores provocados por heridas permanentes mientras te encuentres en ira (estas volverán a entrar en efecto cuando termine tu ira y no puedes protegerte de heridas graves o críticas con esta habilidad). Cada vez que recibas un rango adicional de Ira tu resistencia al daño volverá a aumentar por 1.
+**Reducción al daño**: Mientras te encuentres en *ira* ignoras los penalizadores otorgados por heridas permanentes medias o inferiores y reduce todo el daño físico recibido por un valor igual a tu rango.
 
-<u>Golpe decisivo</u> (acción bonus): Una vez por ira puedes concentrar todas tus fuerzas en un único ataque. Golpe decisivo es una acción bonus y te otorga un bonificador +2 en el tiro de ataque y el daño. Ambos bonificadores aumentarán por 2 cada vez que recibas un rango adicional en ira.
+**Golpe de adrenalina:** Al entrar en *ira* puedes obtener una acción adicional en tu turno y entrar en *posición defensiva* a costa de recibir una herida permanente leve en tu siguiente turno que no puede ser reducida.
 
 ## Rango III
 
-<u>Fortitud interna</u> (pasiva): Tu cuerpo es capaz de soportar esfuerzos a límites sobrehumanos. Eres inmune a [veneno](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#venenos), [enfermedades](https://raldamain.com/rules/Reglas adicionales/venenos_enfermedades.html#enfermedades) y [náuseas](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#náuseas) mientras estés en ira. Puedes entrar en Ira aunque estés [fatigado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#fatigada), pero acabarás exhausto cuando esta ira acabe (aún puedes entrar en ira con normalidad cuando estés a menos de la mitad de tus PV)
+**Fortitud interna:** Ignora los efectos negativos de venenos y enfermedades mientras estés en *ira*. Puedes volver a entrar en *ira* estando *fatigado*, pero cuando esta ira acabe pasarás a estar *exhausto*.
 
-<u>Temerario</u> (pasiva): La ira libera tus instintos de las cadenas de la razón, impulsándote a atacar sin temer la muerte. Eres inmune a miedo y efectos mentales mientras estés en ira. Obtienes además ventaja en todos tus tiros de intimidación o presencia hechos mientras te encuentres en ira.
+**Temerario**: Eres inmune a miedo y efectos mentales mientras te encuentres en *ira* además de obtener ventaja en todos tus tiros para provocar miedo.
 
 ## Rango IV
 
-<u>Ira primigenia</u> (pasiva): Tu ira lleva tu cuerpo a un nivel superior de fuerza. Aumenta todas tus estadísticas físicas adicionalmente por 1, llegando como máximo a 9 (12 si eres de nivel 12 o superior). Incrementa además todo el daño que inflijas estando en Ira por 1d6 y recibirás adicionalmente 4 PV temporales.
+**Ira primigenia**: Entrar en *ira* te otorga +1 en todas las estadísticas físicas, +1d6 daño, +4 PV temporales y aumenta tu limitador estadístico por 2. 
 
-<u>Difícil de matar</u> (pasiva): Puedes seguir luchando aunque estés a 0 PV, luchando hasta llevar a tu cuerpo al límite. En este estado activas los efectos de ira de manera automática sin importar que estés fatigado o exhausto y sufres 1 daño no-letal cada vez que realices una acción. Adicionalmente, no serás capaz de emplear acciones de turno completo y todas las heridas permanentes que tengas serán anuladas temporalmente. Si tus PV al acabar la ira exceden tu CON negativa, morirás al instante.
+**Difícil de matar:** Cuando caigas a 0 PV activas *ira* aunque estés *exhausto,* anulando temporalmente los efectos de todas las heridas permanentes. Cada vez que uses 2 acciones o más sufrirás 1 daño y cuando acabe la *ira* y te encuentras a -CON PV morirás.

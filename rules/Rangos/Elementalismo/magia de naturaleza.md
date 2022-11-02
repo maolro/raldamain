@@ -29,7 +29,7 @@ Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumenta
 
 Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 AP. *Espina de madera* aumenta el daño base a 1d8
 
-**Animar plantas** (2 AP y 2 chi): Un espacio de radio medio se llena de plantas agresivas que atacan a cada objetivo (1d4 + 2 de media) e infligen 2d6 + SAB daño y *agarran* al impactar. El efecto se mantiene mientras te concentres y las plantas vuelven a atacar a cada criatura que empiece su turno en el área o entre en ella, infligiendo 1d6 + SAB daño y *agarrando*.
+**Animar plantas** (2 AP y 2 chi): Un espacio de radio medio se llena de plantas agresivas que atacan a cada objetivo (1d4 + 2 de media) e infligen 1d8 + SAB daño y *agarran* al impactar. El efecto se mantiene mientras te concentres y las plantas vuelven a atacar a cada criatura que empiece su turno en el área o entre en ella, infligiendo 1d8 + SAB daño y *agarrando*.
 
 **Espina parasítica** (1 AP y 2 chi): Haz un ataque de *espina de madera* con el doble de dados de daño que al impactar se clava en el objetivo. Inflige daño cada ronda igual a 2 + cantidad de rondas que esté clavada y para arrancarla hace falta tirar FUE contra tu tiro de magia de naturaleza.
 

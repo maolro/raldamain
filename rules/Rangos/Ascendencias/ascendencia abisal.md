@@ -9,15 +9,15 @@ La llamada de la sangre de entidades olvidadas hace eones te reclama desde la pa
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico. 
+Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
 
-<u>Furia del abismo</u> (1 acción): Como acción bonus puedes entrar en un estado de furia sobrenatural con el cual recibes gran poder al precio de tu cordura. En este estado aumenta una de tus estadísticas por 2, acumulándose con los bonificadores de ira y mente desencadenada siempre y cuando la suma total sea igual a 6 o menos (9 o menos si es de nivel 12 o más). Cada turno que mantengas este efecto te sanas 1 vitalidad y reducirás tu cordura por 1. Si tu cordura llega a 0 perderás el control, actuando de manera irracional y salvaje hasta que salgas del combate o caigas inconsciente. 
+**Tocado por la locura:** Recibes resistencia al daño necrótico y al daño a la cordura igual a tu rango + 1 a costa de obtener una locura permanente. Los abisales no son naturalmente hostiles hacia ti.
 
-<u>Tocado por la locura</u> (pasiva): Recibes una locura permanente de la cual no te puedes recuperar mientras tengas rangos de ascendencia abisal. Desbloqueas las ramas de [nigromancia](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html) y [magia arcana](https://raldamain.com/rules/Rangos/Magia%20arcana/) para las cuales puedes emplear tu estadística de carisma en lugar de la inteligencia. Tienes además resistencia a efectos mentales y daño necrótico igual a tu rango + 1 además que no sufrirás locuras permanentes cuando tu cordura sea reducida a 0. Tu cordura se recuperará a su valor máximo al realizar un descanso largo en lugar de al cabo de una semana.
+**Furia abisal**: Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para otorgarte ventaja en todos tus tiros relacionados con una estadística de tu elección. Cuando pases rango + 2 rondas con este efecto activo deberás pagar 1 chi o tener éxito en un tiro de SAB contra una dificultad escogida por el máster o perderás temporalmente control de tu personaje.
 
 ## Rango II
 
-Incrementa tu FUE por 1.
+Incrementa tu FUE por 1.1
 
 <u>Rasgo monstruoso</u> (pasiva): Tienes 2 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html) para gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2 PT), garras (1 PT), ataques infundidos (2 PT), y armadura natural (1 PT). 
 
