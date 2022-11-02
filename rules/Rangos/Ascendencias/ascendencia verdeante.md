@@ -41,9 +41,9 @@ Incrementa tu DES por 1. Puedes sumar tu rango en magia de naturaleza a todos tu
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Vínculo primigenio**: Puedes comunicarte con animales, plantas y espíritus y preguntarles información. Obtienes resistencia igual a tu rango a todo el daño elemental
+**Madera férrea:** Tus ataques de *artes marciales,* magia de naturaleza y armas de madera cuentan como si estuvieran afectados por *material superior*. Si llevas armadura de madera también quedará afectada por *material superior*. (1 chi) Un arma o armadura de madera consigue los efectos de *material superior*.
 
-**Puerta arbórea** (2 AP y 2 chi): Abres dos portales separados por una distancia lejana por los cuales cualquier criatura puede viajar mientras mantengas la concentración en ellos. Los portales deben formarse en materia vegetal.
+**Aura primigenia:** Infundes un espacio de distancia cercana centrado en ti con energía de naturaleza, otorgando desventaja a todos los tiros relacionados con magia arcana u ocultismo y todos tus aliados recuperan 2 Vitalidad al principio de su turno. (x chi) Contrarresta un hechizo de rango x o menos usado en el área.
 
 ## Rango VI
 
