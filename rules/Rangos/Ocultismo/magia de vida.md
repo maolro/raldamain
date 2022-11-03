@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumenta
 
 **Muro luminoso** (2 AP y 1 chi): Crea una barrera de luz intensa que otorga cubierta completa y afecta toda el área en una línea media con *halo cegador*. Toda criatura que cruce el muro sufrirá 2 daño radiante y quedará *cegada* durante una ronda. El muro permanecerá activo hasta que pierdas la concentración o sea destruido.
 
-**Látigo solar** (2 AP y 1 chi): Ataca a todos los enemigos en una línea media con un látigo hecho de energía vital (1d4 + 2 de media) que infligirá 1d6 + CAR daño radiante y *ciega* al reducir PV. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
+**Látigo solar** (2 AP y 1 chi): Ataca a todos los enemigos en una línea media con un látigo hecho de energía vital (1d4 + 2 de media) que infligirá daño igual a tu *descarga luminosa* pero modificado por tu CAR en lugar de tu rango. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
 
 ## Rango III
 
@@ -55,4 +55,52 @@ Reduce el coste de *toque sanador, descarga luminosa* y *halo cegador* por 1 AP.
 
 ## Rango VI
 
-**Fuente de toda la vida** (3 AP y 5 chi): Sobrecargas el campo de batalla con energía vital, haciendo un ataque contra todos los no-muertos y extraplanarios malignos que inflige 4d6 + CAR daño radiante además de aturdir. Además, al principio de la ronda todos tus aliados recuperan 4 Vitalidad y aquellos que hayan muerto resucitan a 1 PV mientras que los no-muertos y extraplanarios malignos sufrirán 4 daño radiante. Recibes además ventaja en todos tus ataques de magia de vida e infligen +1d6 daño al impactar. Este efecto permanecerá activo durante una cantidad de rondas igual a tu rango + 1 y solo puede ser eliminado por otro de igual magnitud.
+**Fuente de toda la vida** (3 AP y 5 chi): Sobrecargas el campo de batalla con energía vital, haciendo un ataque contra todos los no-muertos y extraplanarios malignos que inflige 3d10 + CAR daño radiante además de aturdir. Además, al principio de la ronda todos tus aliados recuperan 4 Vitalidad y aquellos que hayan muerto resucitan a 1 PV mientras que los no-muertos y extraplanarios malignos sufrirán 4 daño radiante. Recibes además ventaja en todos tus ataques de magia de vida e infligen +1d6 daño al impactar. Este efecto permanecerá activo durante una cantidad de rondas igual a tu rango + 1 y solo puede ser eliminado por otro de igual magnitud.
+
+# Rangos míticos
+
+Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 en todos los tiros y +1 chi. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
+
+## Rango I
+
+**Descarga luminosa:** Tira un dado de daño adicional del mismo tipo que el dado base al impactar. Si el ataque impacta a una criatura sin resistencias al daño radiante quedará *cegada* durante una ronda (cegará permanentemente si reduce PV).
+
+**Toque sanador:** Puedes sanar PV con toque sanador y al usarlo reducirás el nivel de una herida permanente, veneno o enfermedad por un paso. (1 chi) Reduce dicho efecto por dos pasos.
+
+**Halo cegador:** Hacer un ataque de *halo cegador* te cuesta una acción bonus usable una vez por turno y su efecto siempre te rodeará sin que te haga falta mantener la concentración en él.
+
+## Rango II
+
+**Conexión vital:** En respuesta a que un aliado con *conexión vital* sufra daño puedes hacerle un *toque sanador* una vez por ronda como acción bonus antes de dividir el daño.
+
+**Barrera luminosa:** Crear una barrera luminosa te cuesta una acción bonus y permanecerá hasta que sea disipada. No necesitas estar en *posición defensiva* para usar la barrera luminosa para protegerte.
+
+**Látigo solar:** Formas dos látigos solares al usar esta habilidad y su daño aumenta de la misma manera que *descarga luminosa*.
+
+## Rango III
+
+**Lanza luminosa:** Creas dos lanzas luminosas al usar esta habilidad y puedes dirigir ambas como acción bonus.
+
+**Sanación superior:** Al usar *sanación superior* usas tu CAR en lugar del rango para modificar la cantidad de PV y Vitalidad que sanes además que eliminarás dos efectos al usarla. (1 chi) Elimina un efecto de estado provocado por una criatura mítica.
+
+**Telaraña de vida:** Activar este efecto te cuesta una acción bonus y permanecerá en el campo como si fuera una habilidad pasiva. Sanas también +2 Vitalidad con esta habilidad.
+
+## Rango IV
+
+**Castigo del cielo:** Aumenta el radio a grande y no puede ser esquivado por criaturas no-míticas.
+
+**Espadas de justicia:** Invocar las espadas cuesta una acción bonus y pueden usarse dos espadas al turno para detener un impacto o realizar un ataque
+
+**Transferencia vital:** Una vez por ronda cuando una criatura afectada por *transferencia vital* sufra daño puedes usar *toque sanador* en ella como acción bonus (esto afectará también a todas las criaturas con la conexión)
+
+## Rango V
+
+**Explosión solar:** Aumenta el radio a grande y podrás afectar a tus aliados con *sanación superior* en lugar de *toque sanador*. Además, todas las criaturas no-míticas en el área de efecto que sean vulnerables al daño radiante morirán instantáneamente.
+
+**Milagro de restauración:** El milagro puede resucitar a alguien que haya muerto hace menos de un día y al usar resta habilidad en una criatura viva sanará todos sus PV, Vitalidad y se recuperará de todos los efectos de estado, heridas permanentes, venenos y enfermedades no-míticas que tenga.
+
+**Sello de regeneración:** El sello sanará +2 Vitalidad y PV por ronda y reducirá todas las heridas permanentes que tenga el personaje por un paso cada ronda. Puedes activar dicho sello en ti como acción bonus y este permanecerá durante el resto del combate.
+
+## Rango VI
+
+**Fuente de toda la vida:** Activar esta habilidad matará instantáneamente a todos los no-muertos y criaturas extraplanarias no-míticas además que el efecto de sanación recuperará lo mismo que *sello de regeneración*. Además, tu dado de ventaja se transformará en 1d8 y aumentarás el daño por 1d10.
