@@ -9,13 +9,15 @@ Has decidido valerte de las armas que llevan utilizando los caballeros y guerrer
 
 ## Rango I
 
-Para desbloquear este rango necesitas 2 FUE y un nivel de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango IV.
+Para desbloquear este rango de manenecesitas 5 FUE y cuatro niveles de talento en destrozar.
 
-<u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y provoca sangrado al herir a tu objetivo. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
+**Combate salvaje:** Recibes 1 AP adicional a costa de obtener desventaja en todos tus tiros defensivos durante una ronda.
 
-<u>Combate salvaje</u> (pasiva): Puedes sacrificar tus capacidades defensivas para poder realizar más ataques durante tu turno. Al principio de tu ronda puedes escoger entrar en un estado de combate salvaje, recibiendo así una acción adicional a costa de obtener desventaja en todos tus tiros defensivos hasta el inicio de tu siguiente turno. 
+**Ataque poderoso** (1 AP): Aumenta el daño de tu siguiente ataque por 1d6 y provoca sangrado al impactar.
 
-<u>Parada</u> (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. 
+**Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo.
+
+**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. 
 
 ## Rango II
 
