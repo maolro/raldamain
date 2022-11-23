@@ -29,38 +29,30 @@ Incrementa tu FUE por 1.1
 
 Aumenta tu resistencia a daño físico por 1
 
-<u>Infección</u> (pasiva): Al hacer daño con un ataque natural puedes infectar a tu objetivo con una mortal [enfermedad](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) conocida como una plaga abisal. La plaga abisal se trata de una enfermedad de naturaleza física con tiro de gravedad igual a tu estadística de CON + 1. Si obtienes un golpe crítico esta enfermedad actuará con la misma velocidad que un [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos). Cada vez que vuelvas a impactar a una criatura con plaga abisal esta deberá tener éxito en un tiro de CON contra la gravedad de la plaga o esta aumenta su nivel por un paso. No puedes volver a infectar a una criatura que se haya recuperado de la plaga abisal hasta que haya pasado un día.
+**Invocación abisal** (3 AP y 2 chi): Invoca a una criatura abisal que permanecerá a tu lado durante el combate. Este mejorará su fuerza cada vez que aumentes de rango y no puedes tener invocadas a más de 4 criaturas a la vez.
 
-<u>Fuerza abisal</u> (pasiva): Al usar fuerza del abismo recibes un bonificador igual a tu rango de ascendencia - 1 en todos tus tiros de ataques físicos y mágicos además de aumentar tu cantidad máxima de acciones al turno por 1. Si activas este bonificador perderás la capacidad de utilizar habilidades que requieran concentración y esfuerzo mental salvo aquellas relacionadas con ascendencia abisal.
+**Poder de la locura**: Tres veces por turno puedes reducir tu cordura por 2 para restaurar 1 chi de tu reserva. Si reduces tu cordura a 0 con esta habilidad perderás control de tu personaje durante una hora empezando el turno siguiente. 
 
 ## Rango IV
 
 Incrementa tu CON por 1.
 
-<u>Rasgo monstruoso superior</u> (pasiva): Recibes 2 PT adicionales, los cuales puedes emplear para tu habilidad rasgo monstruoso. Además, tienes una habilidad relacionado con una criatura abisal de tu elección. Estas son algunas de las posibilidades:
+**Rasgo monstruoso superior:** Una mutación abisal de tu elección se volverá permanente en tu cuerpo, recibiendo siempre sus beneficios. Cambiar esta mutación cuesta 2 chi.
 
-- **Samsotiq**: Tus garras hacen +2 daño base. Tienes sangre ácida, la cual hace 1 daño ácido a las criaturas que te hagan daño con ataques naturales y causa que las armas que te hieran reduzcan su efectividad por 1.
-- **Kosnaskye**: Todas las criaturas a menos de 15 pies están [enfermadas](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Incrementa tu resistencia a enfermedades y veneno por 4.
-- **Shebatoth**: Eres capaz de lanzar un hechizo de rango II o menos de manera innata.
-- **Tempramentik**: Recibes una acción de movimiento adicional al turno y no puedes ser flanqueado.
-- **Ichobal**: Tus ataques hacen +2 daño necrótico. El daño necrótico te sana vitalidad como si fueses un no-muerto y te recuperas 2 vitalidad al hacer daño con un ataque.
-- **Kurungor**: Aumenta tu tamaño por un paso, llegando como máximo a tamaño gigante.
-- **Alzebun**: Te sanas 1 PV y 2 VT al devorar carne de un ser vivo. Detectas la posición de todas las criaturas vivas en un radio de 60 pies.
-
-<u>Invocación abisal</u> (3 acciones): Empleando 3 acciones puedes invocar una criatura abisal que seguirá fielmente tus órdenes. La criatura que invoques no puede nivel superior a tu rango de ascendencia x 2 y recibirá la mejora *origen abisal*. Invocación abisal puede emplearse un número de veces al día igual a tu Rango - 2 y las criaturas invocadas permanecerán en el mundo durante dos horas. Puedes gastar un uso adicional de esta habilidad al invocar una criatura para que esta tenga dos niveles adicionales siempre y cuando su nivel no sea superior al tuyo.
+**Paso abisal** (2 AP y 2 chi): Formas una brecha en el espacio que te permite teletransportarte una distancia lejana en cualquier dirección. Esta permitirá a cualquier criatura abisal cruzarla y teletransportarse de la misma manera que tú mientras que todas otras criaturas adyacentes a ella sufrirán un ataque de *brecha espacial* modificada por tu CAR y rango de ascendencia. Este efecto durará mientras mantengas la concentración en él. 
 
 ## Rango V
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-<u>Aura de caos</u> (pasiva): La magia y tecnología tiene efectos imprevisibles en un área de 30 pies centrado en ti. Todos los tiros de magia y con objetos tecnológicos reciben desventaja y puedes emplear una acción de movimiento para provocar una mal función en un objeto tecnológico, la cual reducirá su efectividad por 1. Si obtienes defensa crítica o un enemigo obtiene un fracaso crítico puedes provocar un efecto mágico aleatorio a decisión del máster
+**Visiones de la locura:** Eres capaz de percibir más allá del plano material, recibiendo inmunidad a ilusiones y a efectos que te provoquen miedo o daño a la cordura de manera pasiva, como *aura de terror*. 
 
-<u>Paso abisal</u> (2 acciones): Empleando dos acciones puedes abrir una brecha en el espacio para teletransportarte a un lugar que se encuentre a 90 pies de ti. Esta habilidad solo puede usarse rango - 2 veces por combate y todos sus usos se recargarán con un descanso corto. Además, al usar esta habilidad puedes hacer una descarga de energía inmediata, afectando a todas las criaturas a 15 pies de ti. Esa descarga hará 1d6 + rango daño elemental y el tiro de ataque será igual a tu CON + tu rango de ascendencia abisal. Si tienes rangos en una magia elemental, [nigromancia](https://raldamain.com/rules/Rangos/Ocultismo/nigromancia.html) o [telekinesia](https://raldamain.com/rules/Rangos/Ocultismo/telekinesia.html) puedes hacer un ataque de ese tipo en lugar de una descarga de energía. Si tienes rangos en [magia espacial](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20espacial.html) puedes gastar 1 chi para emplear los efectos de esta habilidad cuando teletransportes. 
+**Aura del caos** (2 chi): Como acción bonus irradia la tierra en un radio cercano a ti con energía abisal, otorgando desventaja en todos los tiros de magia arcana hechos por criaturas que no sean abisales y provocando que todos los glifos en dicho espacio tengan una probabilidad de 50% de fallar además que cada vez que una criatura obtenga un 20 o un 1 natural ocurrirá un efecto mágico aleatorio escogido por el máster.  Este efecto durará una cantidad de rondas igual a tu rango y no requiere tu concentración. (x chi) Contrarresta un hechizo lanzado en el área que tenga rango x o menos
 
 ## Rango VI
 
-Incrementa tu DES por 1. Puedes superar el límite de 6 con tus estadísticas, llegando como máximo a 9 (12 si eres de nivel 12 o más).
+Incrementa tu DES por 1. 
 
-<u>Transformación abisal</u> (pasiva): Abrazas el poder del abismo, transformándote en una criatura de puro caos. Eres inmortal y recibes resistencia 4 contra necrótico, veneno, enfermedades y efectos mentales y recibes 2 PT adicionales para gastar en mejoras. Tu cordura no puede reducirse y recibes una locura adicional. Los abisales te obedecerán como si fueses uno de ellos.
+**Transformación abisal:** Duplicas tu esperanza de vida y recibes resistencia 4 al veneno, efectos mentales, enfermedades y maldiciones. Los abisales dejarán de ser hostiles hacia ti y te tratarán como un igual. También recibes inmunidad a todos los hechizos ajenos que inflijan daño a la cordura a costa que recibirás una locura escogida por el máster (*poder de la locura* se sigue aplicando).
 
-<u>Invocar a la Tormenta</u> (3 acciones): Empleando 3 acciones puedes liberar el poder del caos en una zona, formando un portal a Tormenta. Cada turno que el portal permanezca abierto recibes 4 puntos de invocación, con los cuales podrás invocar criaturas. Puedes gastar cualquier cantidad de tus puntos de invocación como acción bonus para que un abisal de ese nivel pase por el portal. Mantener el portal te cuesta una acción al turno y se cierra si pierdes la co. El portal se cerrará automáticamente al cabo de diez rondas y no puede volver a ser abierto en un día, pero toda la región donde haya sido abierto será infundida del caos, contando como [tierra consagrada](https://raldamain.com/rules/Rangos/Religi%C3%B3n/magia%20divina.html#rango-ii) para sus adoradores.
+**Llamar a la tormenta** (3 AP y 5 chi): Abre un portal abisal durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada* y está afectada por *aura del caos*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura abisal que tenga x-1 mejoras.

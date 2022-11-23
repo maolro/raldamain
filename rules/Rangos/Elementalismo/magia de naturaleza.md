@@ -31,7 +31,7 @@ Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 A
 
 **Animar plantas** (2 AP y 2 chi): Un espacio de radio medio se llena de plantas agresivas que atacan a cada objetivo (1d4 + 2 de media) e infligen 1d8 + SAB daño y *agarran* al impactar. El efecto se mantiene mientras te concentres y las plantas vuelven a atacar a cada criatura que empiece su turno en el área o entre en ella, infligiendo 1d8 + SAB daño y *agarrando*.
 
-**Espina parasítica** (1 AP y 2 chi): Haz un ataque de *espina de madera* con el doble de dados de daño que al impactar se clava en el objetivo. Inflige daño cada ronda igual a 2 + cantidad de rondas que esté clavada y para arrancarla hace falta tirar FUE contra tu tiro de magia de naturaleza.
+**Espina parasítica** (1 AP y 2 chi): Haz un ataque de *espina de madera* con el doble de dados de daño que al impactar se clava en el objetivo. Inflige daño cada ronda igual a 2 + cantidad de rondas que esté clavada y para arrancarla hace falta tirar FUE contra tu tiro de magia de naturaleza. El daño de una espina parasítica ignorará las resistencias y la defensa, y si esta no es arrancada en 3 rondas se enterrará tan profundo que no podrá ser arrancada.
 
 **Invocar elementales de planta** (3 AP y 2 chi): Invoca a un elemental de naturaleza que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez (se acumula con el máximo por *espíritu guardián*)
 
@@ -45,7 +45,7 @@ Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 A
 
 ## Rango V
 
-**Furia de la naturaleza** (3 AP y 3 chi): Haz un ataque contra todas las criaturas en un cilindro de radio largo (1d12 + 6 objetivos) que al impactar inflige 2d10 + SAB daño y *agarra*. El terreno pasa a estar afectado por *crecimiento acelerado* que también reduce el movimiento de criaturas voladoras y este ataque hace +1d10 daño si el terreno ya está afectado por *espinas espontáneas*, *animar plantas* y *gran árbol drenador*
+**Furia de la naturaleza** (3 AP y 3 chi): Haz un ataque contra todas las criaturas en un cilindro de radio largo (1d12 + 6 objetivos) que al impactar inflige 2d10 + SAB daño y *agarra*. El terreno pasa a estar afectado por *crecimiento acelerado* que también reduce el movimiento de criaturas voladoras y este ataque hace +1d10 daño si el terreno ya está afectado por *espinas espontáneas*, *animar plantas* o *gran árbol drenador*
 
 **Gran árbol drenador** (3 AP y 3 chi): Formas un gran árbol que al ser invocado hace un ataque contra todas las criaturas en un radio medio (1d8 + 4 objetivos) infligiendo 2d10 + SAB daño físico y 1d6 daño necrótico y tú te regeneras 1 Vitalidad por cada criatura impactada. El árbol tiene rango x 5 PV, rango x 2 DEF y vulnerabilidad al daño fuego y cortante, y este permanecerá en el campo de batalla hasta ser destruido. Cada ronda que permanezca puedes hacer un ataque de *zarcillo enredador, espina de madera* o *enmarañar* como acción bonus que infligirá +1d6 daño necrótico y te regenerará 1 Vitalidad por impacto.
 
@@ -84,8 +84,8 @@ Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 A
 
 **Habilidades:**
 
-- Vista a ciegas*: Puede sentir la presencia de seres vivos que estén en contacto con la tierra en un radio cercano*
-- Ataque elemental*: El elemental recibe las acciones de ataque *zarcillo enredador, enmarañar* (recarga 5-6) y *espina de madera* empleando como estadística principal la FUE o DES y sumando +1 a su tiro de ataque
+- *Vista a ciegas*: Puede sentir la presencia de seres vivos que estén en contacto con la tierra en un radio cercano
+- *Ataque elemental*: El elemental recibe las acciones de ataque *zarcillo enredador, enmarañar* (recarga 5-6) y *espina de madera* empleando como estadística principal la FUE o DES y sumando +1 a su tiro de ataque
 
 ## Mejora 1
 

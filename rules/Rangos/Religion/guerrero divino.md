@@ -5,6 +5,8 @@ category: Religión
 
 Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. Este don otorgado por los dioses crecerá alimentándose de tu fe y ambición siempre que estos coincidan con los deseos de tus dioses dándote fuertes habilidades que te convertirán en un santo viviente de tu religión o en el castigador que acabará con los herejes de tu religión. A medida que tu fe vaya creciendo, la energía divina de tu patrón comenzará a hacerse mas presente en ti imbuyéndote con su fuerza, permitiéndote resistir cualquier ataque lanzado hacia tí, volviéndote mas fuerte durante tus cruzadas e incluso trayéndote de vuelta de entre los muertos para que puedas volver a luchar en su nombre.
 
+# Rangos
+
 ## Rango I
 
 Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldiciones. Incrementa también tu reserva de chi por 2 + rango.
@@ -29,9 +31,9 @@ Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldicion
 
 Para desbloquear este rango necesitas tener cuatro niveles de talento en estudio (religión), voluntad y primeros auxilios.
 
-<u>Aliento de vida</u> (3 acciones): Tu dios te otorga la capacidad de resucitar aquellos muertos en combate para continuar la guerra santa. Empleando tres acciones podrás resucitar a una criatura muerta en combate. La criatura muerta resucitará a 1 PV y reducirá el nivel de todas las heridas permanentes que tenga por un paso. Esta habilidad sólo podrá usarse un número veces al día igual a tu rango - 2 y para poder resucitarle no debe de haber estado muerta más de 1 minuto. No puedes resucitar a criaturas a las que les falten órganos vitales, como sería la cabeza o el corazón.
+**Hueste divina:** La energía divina que te rodea es capaz de fortalecer a tus aliados, mejorando sus capacidades de combate. Al entrar en estado de *guerrero de la fe* todos tus aliados a una distancia cercana reciben ventaja en todos sus tiros de ataque y defensa. Este bonificador no se acumula con *guerrero de la fe* ni con otros efectos de *hueste divina*.
 
-<u>Hueste divina</u> (pasiva): Al entrar en el estado de *guardián de la fe* activas un aura de radio corto que fortalece a tus compañeros, aumentando su fuerza para luchar contra enemigos de tu fe. Como acción bonus usable una vez por ronda puedes otorgar un aumento temporal de fuerza a un aliado que se encuentre en el aura, incrementado dos estadísticas diferentes por 1 y aumentando su resistencia al daño por 2 (no se acumula con *guerrero de la fe*). Este efecto permanecerá activo siempre y cuando el personaje escogido permanezca en el aura y en caso que salga de ella se perderán los bonificadores al cabo de una ronda. Los bonificadores de múltiples auras de *hueste divina* no se acumulan entre sí.
+**Aliento de vida** (3 AP y 2 chi): Resucita a una criatura muerta en combate a 1 PV y reduce el nivel de todas las heridas permanentes que tenga por un paso. Solo podrás resucitar a personas que hayan muerto hace poco tiempo y no funcionará si el cuerpo está gravemente dañado o le falta una parte vital, como puede ser la cabeza.
 
 ## Rango V
 
@@ -46,3 +48,22 @@ Entrar en *guerrero de la fe* te otorga +1 en tres estadísticas y +2 resistenci
 - Invoca una criatura relacionada con tu dios de nivel igual al tuyo
 - Recibes ventaja en todos tus tiros de ataque y defensa con cualquier arma durante el combate
 - Replica los efectos de un hechizo de rango V o menos empleando tu estadística de SAB y rango en guerrero divino
+
+# Rangos míticos
+
+Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 chi y +1 contra efectos mentales, miedo y maldiciones. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
+
+## Rango I
+
+**Guerrero de la fe:** Recibes siempre un dado de ventaja en todos los tiros de ataque y defensa con un arma de tu elección. (1 chi) Durante una ronda añade un dado de ventaja adicional a tus tiros de ataque y defensa con esa misma arma.
+
+**Sanador de combate:** Puedes sanar PV con esta habilidad y al usarlo reducirás el nivel de una herida permanente, veneno o enfermedad por un paso. (1 chi) Reduce dicho efecto por dos pasos.
+
+## Rango II
+
+## Rango III
+
+## Rango IV
+
+## Rango V
+

@@ -9,41 +9,39 @@ Eres experto empleando exóticas cadenas y látigos, inmovilizando a tus enemigo
 
 Añade tu rango a todos tus tiros de ataque hechos con cadenas.
 
-<u>Enredar</u> (2 acciones): Eres un experto empleando tu cadena para retener a tus objetivos y moverlos a tu voluntad. Empleando dos acciones puedes hacer un ataque con tu cadena el cual [enredará](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enredada) a tu objetivo al impactarle en lugar de hacerle daño (quedará [agarrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#agarrada) si obtienes un golpe crítico). Todas las maniobras de combate que realices contra una criatura enredada reducen su coste en acciones por 1 (mínimo 1) y si tienes niveles de talento en heroísmo cada vez que afectes a un enemigo con una maniobra de combate le provocarás daño contundente igual a tu rango de cadenas + 1 (este daño ignorará la defensa y solo podrá ser reducido por resistencias al daño físico o armaduras con la habilidad blindaje). El coste en acciones de esta habilidad se reduce por 1 cuando alcances el rango III.
+**Enredar** (2 AP): Haz un ataque con tu arma que al impactar *enredará* al objetivo. Si tienes a un objetivo enredado todas las maniobras para desarmar, tropezar o agarrar cuestan una acción.
 
-<u>Danza de cadenas</u> (1 acción): Girando tu cadena a gran velocidad eres capaz de protegerte de ataques enemigos. Empleando una acción puedes entrar en un estado de concentración absoluta conocido como danza de cadenas. Mientras permanezcas en dicho estado eres capaz de protegerte de ataques empleando tu cadena, pudiendo así hacer un tiro de de ataque con tu cadena como reacción frente a un ataque enemigo y deteniéndolo en el caso que tengas éxito. Además  toda criatura que pase por el área que alcanzas con tu arma sufrirá un ataque de oportunidad inmediato. Los beneficios de esta habilidad se perderán si eres desconcentrado.
+**Danza de cadenas** (1 AP): La siguiente vez que un enemigo entre en un espacio en tu alcance puedes realizar una acción perteneciente este rango contra él como reacción.
+
+**Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo.
 
 ## Rango II
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+**Ataque circular** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
 
-<u>Ataque circular</u> (1 acción) Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y si empleas un ataque cargado puedes hacer un intento de *tropezar* empleando tus bonificadores de arma como contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
+**Ataque serpenteante** (1 AP): El objetivo se defiende con DES o FUE o cae al suelo. Si estás en *danza de cadenas* puedes hacerle un ataque de oportunidad si cae al suelo
 
-<u>Cargar ataque</u> (1 acción): Empleando una acción puedes girar tus cadenas con más velocidad para incrementar tu daño y reforzar tus defensas. Para emplear esta habilidad debes encontrarte en el estado de *danza de cadenas* y cada vez que la utilices almacenas un ataque cargado, llegando a un máximo igual a tu rango + 1. Mientras tengas ataques cargados recibes un bonificador a todos tus tiros de defensa hechos con cadenas igual al número de ataques almacenados que tengas y como acción bonus puedes emplear una carga para que tu siguiente ataque reciba un bonificador +1 a su tiro de ataque y daño además que podrás enredar al objetivo además de hacerle daño. Todos tus ataques cargados se perderán en el momento que abandones el estado de *danza de cadenas.*
+**Desarme** (1 AP): El objetivo se defiende con su tiro de arma y si fracasa es desarmado de un arma ligera (el arma es de cualquier tipo si tiene una herida permanente en el brazo)
 
 ## Rango III   
 
-Hacer un ataque con una cadena te cuesta una acción menos.
+*Atacar con arma* y *enredar* cuestan -1 AP
 
-<u>Agarre con cadena</u> (pasiva): Puedes emplear los ataques cargados para realizar maniobras de combate con mayor facilidad. Si empleas un ataque almacenado en un ataque de *enredar* puedes realizar una maniobra de agarre al impactar sin la necesidad de gastar acciones (cada ataque almacenado adicional por encima del primero te otorgará un bonificador +2 en el tiro de la maniobra). Además, tienes éxito automático en todas las maniobras de empujar y tropezar hechas contra enemigos que se encuentren agarrados por tu cadena.
+**Desviar proyectiles:** Puedes protegerte de ataques a distancia físicos usando tu cadena si te encuentras en *danza de cadenas* (no funciona contra balas)
 
-<u>Desviar proyectiles</u> (reacción): Eres capaz de protegerte de ataques a distancia o ataques mágicos con área de efecto de 10 pies o menos usando tus cadenas, permitiéndote así emplear tu arma para protegerte de dichos ataques si te encuentras en el estado de *danza de cadenas* Si obtienes defensa crítica o tu oponente obtiene un fallo crítico puedes desviar el ataque hacia otra criatura a 15 pies de ti, haciendo que esta reciba el daño del ataque.
+**Agarre superior** (1 AP): Haz un ataque con tu arma que al impactar *agarrará* al objetivo. Tienes ventaja en todos tus tiros para usar *ataque serpenteante* y *desarme* contra tu objetivo agarrado.
 
 ## Rango IV
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+**Escudo humano**: Si tienes a un objetivo agarrado y recibes un ataque puedes usarlo para bloquearlo, recibiendo ventaja en tu tiro defensivo y provocando que el ataque le impacte si te falla.
 
-​                    <u>Ajustar alcance</u> (pasiva): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello. 
-
-<u>Escudo humano</u> (reacción): Puedes emplear criaturas agarradas por ti como escudos humanos, reposicionándolos para que reciban ataques hechos hacia ti. Si te encuentras en danza de cadenas puedes emplear a una criatura agarrada para bloquear un ataque dirigido hacia ti, causando que esta reciba el daño del ataque si el ataque falla y otorgándote ventaja en tu tiro defensivo (esto cuenta como cubierta).
-
-<u>Cadena serpenteante</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en una línea con longitud igual al alcance de tu arma. Estas se defenderán en el orden en el que se encuentren en la línea y a diferencia de *ataque circular* tu ataque no se detendrá si este es bloqueado exitosamente con un escudo o parada elemental (estos aún pueden ser detenidos por muros). Los ataques hechos con esta habilidad ignorarán los beneficios defensivos por cubierta y cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
+**Danza de destrucción**: Al usar *ataque circular* afectas a todas las criaturas en tu alcance y aquellas que impactes deberán tirar FUE contra tu tiro de arma o caerán al suelo. Si te encuentras en *danza de cadenas* infliges +1d6 daño.
 
 ## Rango V
 
-<u>Reposicionar</u> (1 acción): Tu arma actúa como una extensión de tu cuerpo, permitiéndote usarla para incrementar tu movimiento. Cada vez que detengas un ataque enemigo de manera exitosa podrás moverte 5 pies en cualquier dirección sin provocar ataques de oportunidad. Esto se acumula con la cantidad de pies que puedes moverte con la habilidad *[evasión](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)*.
+**Reposicionar***:* Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción. El objetivo agarrado se moverá contigo.
 
-<u>Ahorcar</u> (1 acción): Empleando una acción puedes agarrar el cuello de una criatura agarrada con tu cadena, causando que se empiece a ahogar. Una criatura agarrada de esta manera quedará fatigada y si pasa más turnos agarrada que su estadística de CON caerá inconsciente y morirá ahogada el turno siguiente. Puedes también emplear una acción de movimiento para apretar tu cadena aún más fuerte, reduciendo así el número de rondas que puede sobrevivir la criatura por 1. Si empleas esta habilidad contra una criatura sorprendida reduce la cantidad de rondas que puede sobrevivir por 1 (mínimo 0). Si una criatura agarrada de esta manera cae verticalmente deberá tener éxito en un tiro de heroísmo o morirá instantáneamente (este tiro se repetirá cada ronda que permanezca en dicho estado).
+**Ahorcar** (1 AP): Un objetivo agarrado se empieza a ahogar, pasando a estar *fatigado*. Si no se libera en una cantidad de turnos igual a su CON caerá inconsciente y al turno siguiente morirá ahogado. +1 AP para reducir la cantidad de rondas que puede aguantar tu objetivo por 1. 
 
 # Armas  
 

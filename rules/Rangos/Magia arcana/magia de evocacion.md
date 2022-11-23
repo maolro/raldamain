@@ -29,7 +29,7 @@ Reduce el coste de *rayo de energía* y *moldear los elementos* por 1 AP. *Rayo 
 
 **Combinar técnicas** (2 chi): Al lanzar un hechizo combinas sus efectos con otro hechizo de tu elección sin la necesidad de gastar acciones. 
 
-**Meteoros de chi** (2 AP y 2 chi): Formas una cantidad de meteoros de chi igual a tu rango – 1 que orbitarán en torno a ti. Puedes sacrificar un meteoro como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *rayo de energía* contra un objetivo a distancia media. Los meteoros permanecerán activos mientras mantengas la concentración y en el momento que la pierdas estos explotarán, provocando una explosión que infligirá 1d4 daño fuerza por meteoro a todas las criaturas en el área (un tiro defensivo contra +3 x meteoro reducirá el daño a la mitad)
+**Meteoros de chi** (2 AP y 2 chi): Formas una cantidad de meteoros de chi igual a tu rango – 1 que orbitarán en torno a ti. Puedes sacrificar un meteoro como acción bonus usable una vez al turno para detener un ataque que te haya impactado o hacer un ataque de *rayo de energía* contra un objetivo a distancia media (no puedes detener ataques de área con esta habilidad). Los meteoros permanecerán activos mientras mantengas la concentración y en el momento que la pierdas estos explotarán, provocando una explosión que infligirá 1d4 daño fuerza por meteoro a todas las criaturas en el área (un tiro defensivo contra +3 x meteoro reducirá el daño a la mitad)
 
 ## Rango IV  
 

@@ -27,14 +27,13 @@ Aumenta tu resistencia al daño físico por 1.
 
 **Regeneración sombría:** Si te encuentras en un espacio afectado por oscuridad una localidad con fuerte presencia sombría te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto en ese terreno recuperas también todos tus PV.
 
-**Invocación sombría** (5 AP y 2 chi): Invocas a una criatura sombría como aliada cuyas estadísticas quedan especificadas a continuación. Cada vez que obtengas un rango adicional esta recibirá una mejora.
+**Invocación sombría** (3 AP y 2 chi): Invocas a una criatura sombría como aliada cuyas estadísticas quedan especificadas a continuación. Cada vez que obtengas un rango adicional esta recibirá una mejora.
 
 ## Rango IV
 
 Incrementa tu CAR por 1. Puedes sumar tu rango en magia sombría a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
-**Arma de tinieblas** (2 chi): Invocas un arma hecha de pura oscuridad que permanecerá a tu lado durante el resto del combate. El daño del arma ignorará la defensa otorgada por fuentes no-mágicas y solo puede ser detenida por efectos mágicos. Esta arma puede usar tu
-bonificador de magia sombría o arma para atacar y se aplicaran todos tus atributos de armas.
+**Arma de tinieblas** (2 chi): Invocas un arma hecha de pura oscuridad que permanecerá a tu lado durante el resto del combate. El daño del arma ignorará la defensa otorgada por fuentes no-mágicas y solo puede ser detenida por efectos mágicos. Esta arma puede usar tu bonificador de magia sombría o arma para atacar y se aplicaran todos tus atributos de armas.
 
 **Paso sombrío** (2 AP y 2 chi): Abres dos portales separados por una distancia lejana por los cuales cualquier criatura puede viajar mientras mantengas la concentración en ellos. Los portales deben formarse en espacios a oscuras.
 
@@ -42,17 +41,15 @@ bonificador de magia sombría o arma para atacar y se aplicaran todos tus atribu
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con
-magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática como reacción. Esta habilidad puede usarse como reacción si estás en posición defensiva.
+**Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática como reacción. Esta habilidad puede usarse como reacción si estás en posición defensiva.
 
-**Luces y sombras** (2 chi): Infundes a una ilusión con energía del plano de las sombras para que se vuelva parcialmente real. Si es un objeto sólido o un efecto ambiental se vuelve físico durante una hora y si es una ser vivo se transformará en una criatura sombría, En
-el caso que no tengas habilidades ilusorias recibes el hechizo crear ilusión sin limite de uso.
+**Luces y sombras** (2 chi): Infundes a una ilusión con energía del plano de las sombras para que se vuelva parcialmente real. Si es un objeto sólido o un efecto ambiental se vuelve físico durante una hora y si es una ser vivo se transformará en una criatura sombría, En el caso que no tengas habilidades ilusorias recibes el hechizo crear ilusión sin limite de uso.
 
 ## Rango VI
 
 Incrementa tu INT por 1.
 
-**Sombra viviente:** Recibes resistencia 4 al veneno, enfermedades y efectos mentales además de inmunidad al daño necrótico. No obstante, obtienes vulnerabilidad al daño radiante y sensibilidad a la luz.
+**Sombra viviente:** Recibes resistencia 4 al veneno, enfermedades y efectos mentales además de inmunidad al daño necrótico. No obstante, obtienes vulnerabilidad al daño radiante y sensibilidad a la luz. Además, al entrar en *forma sombría* puedes emplear 3 AP y 1 chi para intentar poseer a otra criatura viva o muerta, la cual puede defenderse superándote en un tiro de CAR.
 
 **Portal sombrío** (3 AP y 5 chi): Abre un portal sombrío durante 10 rondas que llena todo el espacio a distancia media de él con oscuridad mágica. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura sombría con x-1 mejoras.
 

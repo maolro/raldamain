@@ -9,7 +9,7 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros relacionados con armas a distancia.
+Añade tu rango a todos tus tiros relacionados con armas a distancia. Puedes obtener este rango de manera gratuita si tienes 5 o más SAB y 4 niveles de talento en percepción.
 
 **Combate furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
 
@@ -19,7 +19,7 @@ Añade tu rango a todos tus tiros relacionados con armas a distancia.
 
 ## Rango II
 
-Tus ataques con armas a distancia cuestan 1 AP.
+Tus ataques con armas a distancia cuestan 1 AP. Puedes obtener este rango de manera gratuita si tienes 6 o más SAB y 5 niveles de talento en percepción.
 
 **Finta (1 AP):** El objetivo tendrá que defenderse de tu ataque empleando su sabiduría, siendo incapaz de defenderse contra tu próximo ataque si fracasa en su tiro.
 
