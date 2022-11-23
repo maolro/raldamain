@@ -31,7 +31,6 @@ Tienes capacidades anormalmente altas en cuanto a lo que tu velocidad de reacci�
 
 ## Rango V
 
-**Libertad de movimiento:** No provocas ataques de oportunidad al moverte y recibes +DES contra agarres.
+**Libertad de movimiento:** No provocarás ataques de oportunidad al moverte fuera del área amenazada por tus enemigos y obtendrás resistencia a agarres igual a tu destreza.
 
-**Reflejos supremos:** Podrás tomar un segundo turno de combate en la ronda con -10 iniciativa y 3 AP.
-
+**Reflejos supremos:** Podrás tomar un segundo turno de combate en la misma ronda. Este tendrá -10 iniciativa y te permitirá emplear 3 AP.
