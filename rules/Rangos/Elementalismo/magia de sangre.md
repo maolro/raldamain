@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros de magia elemental de sangre y aumenta tu rese
 
 **Extraer sangre** (2 acciones): Un objetivo a distancia cercana deberá tener éxito en un tiro de CON frente a tu tiro de ataque o sufrirá 1d6 + rango daño necrótico además de *sangrado* (la mitad de daño si lo consigue). Si el objetivo ya está sufriendo *sangrado* o reduces PV con esta habilidad entonces le provocarás una herida permanente leve. (1 chi)  Afecta a un objetivo adicional.
 
-**Espasmos** (2 acciones): Provocas espasmos en el cuerpo de un objetivo al manipular su sangre, forzándole a tener éxito en un tiro de CON frente a tu tiro de ataque o sufrirá el efecto *enfermado* durante una ronda, recibiendo así desventaja en todos sus tiros. (1 chi) El objetivo se mueve un paso en una dirección aleatoria o es desarmado.
+**Espasmos** (2 acciones): Provocas espasmos en el cuerpo de un objetivo al manipular su sangre, forzándole a tener éxito en un tiro de CON frente a tu tiro de ataque o sufrirá el efecto *enfermado* durante una ronda y será *tropezado*. (1 chi) El objetivo se mueve un paso en una dirección aleatoria o es desarmado.
 
 **Parada sanguínea:** Si te encuentras en posición defensiva puedes intentar manipular la sangre de un atacante para que falle su ataque, permitiéndote hacer un tiro de ataque de magia de sangre como reacción en respuesta a recibir un ataque a manos de un enemigo a distancia media. Dicho enemigo deberá defenderse con un tiro de CON y si fracasa su ataque fallará de manera automática.  No puedes afectar a la misma persona más de una vez por ronda con esta habilidad y no funciona contra enemigos resistentes al daño necrótico. (1 chi) Tienes éxito automático en el tiro de ataque. 
 
@@ -35,7 +35,7 @@ Aumenta el daño de *extraer sangre* a 1d8. Reduce el coste de *espasmos* y *dre
 
 **Sanación sanguínea** (2 acciones y 2 chi): Limpias impurezas en la sangre de un objetivo a distancia cercana, haciendo que se recupere de un veneno, enfermedad o efecto de estado negativo que tenga activo. Esta habilidad también eliminará cualquier efecto de magia de sangre que aqueje a otra criatura.
 
-**Provocar dolor** (1 acción y 2 chi): Una criatura a distancia media debe tener éxito en un tiro de CON frente a tu ataque elemental o sufrirá 1d8 + CAR daño necrótico (1d10 a rango V) y será aquejado de una hemorragia interna (sufrirá la mitad de daño en caso de éxito). Una criatura con hermorragia interna sufrirá el daño de *sangrado* cada ronda pero este incrementará por 1 cada ronda que esté activo además de recibir una herida permanente cada dos rondas. Una hemorragia interna no puede ser sanada por *primeros auxilios*, pero *sanación superior* o efectos sanadores de magnitud similar pueden curarla. (1 chi) Afecta a un objetivo adicional.
+**Provocar dolor** (1 acción y 2 chi): Una criatura a distancia media debe tener éxito en un tiro de CON frente a tu ataque elemental o sufrirá 1d8 + CAR daño necrótico (1d10 a rango V) y será aquejado de una hemorragia interna (sufrirá la mitad de daño en caso de éxito). Una criatura con hemorragia interna sufrirá el daño de *sangrado* cada ronda pero este incrementará por 1 cada ronda que esté activo además de recibir una herida permanente cada dos rondas. Una hemorragia interna no puede ser sanada por *primeros auxilios*, pero *sanación superior* o efectos sanadores de magnitud similar pueden curarla. (1 chi) Afecta a un objetivo adicional.
 
 ## Rango IV
 

@@ -39,7 +39,9 @@ Usar *tajo sombrío*, *toque necrótico* y *crear oscuridad* cuestan -1 AP. Aume
 
 **Terror nocturno** (3 AP y 2 chi): Te rodeas de una tenebrosa nube de oscuridad que llenará un radio medio. Toda criatura en el área de efecto deberá superarte en un tiro de CAR o aumenta su nivel de miedo por un paso y se desorientará temporalmente, impidiendo que pueda salir de la nube de oscuridad. Cada criatura que empiece su turno en la nube o entre en ella deberá volver a tirar para evitar el miedo y esta durará rango + 2 rondas o cuando pierdas la concentración. 
 
-**Sombras malditas** (2 AP y 2 chi): Invoca a una cantidad de sombras malditas igual a tu rango que permanecerán durante el resto del combate. Cada sombra maldita se enfocará en perseguir a un objetivo de tu elección y estas se moverán 1 paso cada ronda para perseguirlo. Si una sombra maldita acaba en una posición adyacente al objetivo este sufrirá un ataque de *toque necrótico*. Estas criaturas tienen 1 PV, son inmunes a todo el daño no-mágico y perecerán si acaban su turno en un espacio con luz brillante.
+**Sombras malditas** (2 AP y 2 chi): Invoca a una cantidad de sombras malditas igual a tu rango que permanecerán durante el resto del combate. Cada sombra maldita se enfocará en perseguir a un objetivo de tu elección y estas se moverán 1 paso cada ronda para perseguirlo. Si una sombra maldita acaba en una posición adyacente al objetivo este sufrirá un ataque de *toque necrótico*. 
+
+Si hay muchas sombras que atacan a la misma persona este será un ataque combinado, recibiendo +2 al tiro de ataque y al daño por cada sombra adicional que participe e infligiendo la mitad de daño en caso de éxito. Estas criaturas tienen 1 PV, son inmunes a todo el daño no-mágico y perecerán si acaban su turno en un espacio con luz brillante.
 
 ## Rango V
 
