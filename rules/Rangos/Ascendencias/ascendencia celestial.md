@@ -43,7 +43,7 @@ Incrementa tu SAB por 1.
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Visión verdadera**: Puedes ver a través de ilusiones y percibir criaturas invisibles a una distancia lejana. Recibes resistencia igual al rango contra ilusiones fantasmales
+**Visión verdadera**: Eres capaz de percibir la Puedes ver a través de ilusiones y percibir criaturas invisibles a una distancia lejana. Recibes resistencia igual al rango contra ilusiones fantasmales
 
 **Aura de vida**: Al activar *aura de luz* tú y todos tus aliados os sanáis 2 VT al principio de la ronda y todas las criaturas malignas en ella sufrirán 2 daño radiante la primera vez que entren en ella o si empiezan su turno ahí.
 

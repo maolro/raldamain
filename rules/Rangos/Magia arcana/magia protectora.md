@@ -41,11 +41,11 @@ Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Ra
 
 ## Rango V 
 
-**Campo antimágico** (2 AP y 2 chi): Deshabilita toda la magia en un radio pequeño a distancia media, anulando los efectos mágicos que permanezcan activos e impidiendo que se pueda usar magia arcana en el área. Puedes prolongar la duración del campo antimágico manteniendo la concentración, el cual disipará todos los efectos mágicos que pasen por él.
+**Disyunción** (2 AP y 3 chi): Un objetivo a distancia media pierde todas las habilidades de magia arcana persistentes que tenga activas, deshabilita todos los objetos mágicos y reduce su reserva de chi por 3. Esta habilidad solo puede defenderse con magia protectora.
 
-**Exilio** (2 AP y 2 chi): Haz un tiro de magia protectora contra una criatura a distancia media superando una dificultad igual a su nivel + 3 y si tienes éxito la devolverás a su plano natal. (1 chi) Afecta a una criatura adicional con el ataque
+**Ligación planar** (5 AP y 3 chi): Haz un tiro de magia de protección contra una criatura a distancia media superando una dificultad igual a su nivel + 3 y en caso de que lo consigas esa criatura caerá bajo tu control. Una criatura ligada obedecerá tus órdenes al pie de la letra y el efecto permanecerá activo mientras mantengas la concentración en él. No puedes tener ligadas más de 4 criaturas a la vez.
 
-**Esfera de fuerza** (2 AP y 2 chi): Formas una barrera esférica de fuerza con radio pequeño en un punto a distancia media. La barrera tiene PV iguales a tu rango x 3 y es inmune al daño no-mágico. Esta permanecerá durante una ronda o hasta que pierdas la concentración (1 chi) Aumenta el radio de la barrera a medio o forma una esfera adicional.
+**Invertir chi** (2 AP y 3 chi): Una criatura a distancia media aumenta su reserva de chi por 3 y sufre daño fuerza igual a su reserva de chi total. Si logras reducir PV con este ataque la criatura estará aturdida durante una ronda. Este ataque solo puede detenerse con magia protectora.
 
 ## Rango VI
 

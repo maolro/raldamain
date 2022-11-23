@@ -9,7 +9,7 @@ Has decidido valerte de las armas que llevan utilizando los caballeros y guerrer
 
 ## Rango I
 
-Para desbloquear este rango de manenecesitas 5 FUE y cuatro niveles de talento en destrozar.
+Para desbloquear este rango de manera gratuita manenecesitas 5 FUE y cuatro niveles de talento en destrozar.
 
 **Combate salvaje:** Recibes 1 AP adicional a costa de obtener desventaja en todos tus tiros defensivos durante una ronda.
 
@@ -21,35 +21,37 @@ Para desbloquear este rango de manenecesitas 5 FUE y cuatro niveles de talento e
 
 ## Rango II
 
-Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango V.
+Para desbloquear este rango de manera gratuita manenecesitas 6 FUE y cinco niveles de talento en destrozar.
 
-<u>Gran corte</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Ataque poderoso se aplicará para el daño de todos tus ataques hechos con un gran corte. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
+**Gran corte** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas adyacentes a ti que también estén adyacentes entre sí.
 
-<u>Tajo feroz</u> (pasiva): Tus ataques son muy efectivos contra enemigos con poca armadura. Al hacer daño con tu arma a un objetivo cuya armadura otorgue 4 o menos defensa todas las heridas permanentes que le inflijas aumentarán su nivel por un paso. Si tu objetivo lleva armadura natural contará como si no llevase armadura. 
+**Tajo feroz:** Aumenta el nivel de todas las heridas permanentes por un paso provocadas contra enemigos con 4 o menos defensa.
 
 ## Rango III
 
 Para desbloquear este rango necesitas 4 FUE y tres niveles de talento en destrozar.
 
-<u>Impacto destructor</u> (pasiva): Al impactar a un objetivo con armadura con un *ataque poderoso* podrás reducir su DEF por 2. Esta reducción puede eliminarse reparando la armadura y si la defensa de la armadura queda reducida a 2 o menos esta esta se vuelve inutilizable, contando como si no tuviera armadura para los propósitos de *tajo feroz*. Si tienes nivel de talento 3 en [destrozar](https://raldamain.com/rules/Crear%20personajes/talentos.html#destrozar-fue) aumenta la cantidad de defensa que reduces con esta habilidad por 1 (incrementa por 2 si tienes nivel de talento 5). La reducción a la defensa se aplica después de hacer daño a tu objetivo.
+*Atacar con arma* cuesta -1 AP
 
-<u>Choque de espadas</u> (1 acción) Empleando tu destreza con tu arma eres capaz de trabar la espada de tu enemigo en la tuya para restringir sus movimientos e impedir que te pueda atacar. Para usar esta habilidad deberás hacer un tiro de ataque contra el cual tu enemigo deberá defenderse con *parada* y en el caso que tengas éxito el arma de tu enemigo quedará atrapada. Un enemigo con el arma atrapada no podrá usar *parada* para defenderse contra ataques que no sean el tuyo y no podrá atacarte hasta que escape del agarre. Puedes también emplear una acción contra un enemigo con la espada trabada para hacer un intento de desarme para el cual usarás tus bonificadores de arma (podrás desarmarlo de manera automática si obtienes un golpe crítico en tu tiro de choque de espadas).
+**Impacto destructor**: Al impactar a un enemigo con un *ataque poderoso* reduce su DEF por 2.
+
+**Choque de espadas** (1 AP): El objetivo se defiende de tu ataque haciendo parada y si tienes éxito atrapa su arma, impidiendo que pueda atacarte con ella hasta que la libere (cada intento cuesta 1 AP)
 
 ## Rango IV
 
 Para desbloquear este rango necesitas 5 FUE y cuatro niveles de talento en destrozar.
 
-<u>Torbellino de acero</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a todas las criaturas que se encuentren en el radio de alcance de tu arma. Puedes escoger el punto de inicio y el sentido de tu ataque los cuales decidirán el orden en el cual tus objetivos se defenderán de tu torbellino de acero. Si logras impactar a un objetivo empújalo 5 pies hacia atrás y al igual que *gran corte* esta habilidad se detendrá si un enemigo logra detener exitosamente tu ataque con un escudo o una parada hecha con un arma que no sea ligera. El daño adicional por ataque poderoso se aplicará para todos tus ataques hechos con torbellino de acero.
+**Torbellino de acero:** Al hacer la habilidad *Gran corte* atacas a todos los enemigos adyacentes a ti con tu arma.
 
-<u>Rompe escudos</u> (pasiva): Tus ataques poderosos son capaces de debilitar y hasta destrozar escudos. Si una criatura con un escudo logra detener un *ataque poderoso* este reducirá su valor defensivo por 1. Si el valor defensivo del escudo llega a 0 este será destruido y no podrá ser utilizado para protegerte de ataques. Adicionalmente, si un enemigo intenta bloquear uno de tus *ataques poderosos* con una parada elemental le causarás la mitad de daño si fallas tu ataque.
+**Romper escudos:** Si un enemigo se defiende de un *ataque poderoso* con un escudo reduce su valor defensivo por 1 tengas éxito o no. Si se defiende con magia le haces la mitad de daño en caso de que falles el ataque.
 
 ## Rango V
 
 Para desbloquear este rango necesitas 6 FUE y cinco niveles de talento en destrozar.
 
-<u>Cortes en secuencia</u> (pasiva): Tu espada es capaz de atacar con gran celeridad. Recibes una acción adicional y cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1.
+**Tajo cercenador:** Al realizar un ataque poderoso aumenta el nivel de todas las heridas permanentes provocadas por un paso.
 
-<u>Tajo cercenador</u> (pasiva): Al realizar un ataque poderoso aumenta el nivel de todas las heridas permanentes que provocas por un paso por cada dado de daño adicional que te otorgue ataque poderoso (máximo 4 pasos). Si logras provocar una herida crítica con esta habilidad podrás cortarle de inmediato la parte del cuerpo impactada si se trata de un brazo, una pierna o la cabeza.
+**Cortes en secuencia** (X AP): Haz x ataques contra el mismo objetivo el cuál tirará solo una vez y deberá usar el mismo resultado. Cada ataque más allá del primero tiene +1 al tiro y +1 daño por cada ataque anterior. La secuencia se detendrá si eres interrumpido.
 
 ## Armas
 

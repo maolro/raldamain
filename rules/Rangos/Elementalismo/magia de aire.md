@@ -6,19 +6,23 @@ Tienes un control absoluto sobre el elemento que se encuentra en casi todas las 
 
 ## Rango I 
 
-Para desbloquear este rango necesitas tener un rango en Ascendencia de aire. Añade tu rango a todos tus ataques hechos con magia elemental de aire.
+Añade tu rango a todos tus ataques hechos con magia elemental de aire e incrementa tu reserva por 2 + rango chi.
 
-<u>Vendaval</u> (2 acciones): Em puedes liberar una poderosa ráfaga de aire de longitud 30 pies capaz de lanzar a tus enemigos por los aires. Este ataque empujará a tu objetivo CAR x 5 pies al impactar en una dirección de tu elección. Si este se choca con una superficie sólida sufrirá daño de caída como si se hubiese caído de una altura igual al número de pies de movimiento que no ha podido recorrer (por ejemplo, si es empujado 30 pies y se choca tras 10 pies de empuje, sufrirá daño como si se hubiese caído 20 pies). Para lanzar a tu objetivo en dirección vertical es necesario tener éxito en una maniobra de combate contra él tras impactar con tu ataque.
+**Vendaval** (2 AP): Haz un ataque elemental contra un objetivo a distancia media contra el cual deberá defenderse con su FUE. Si logras impactar este será empujado un paso hacia atrás y caerá *tropezado* si choca con una pared. (1 chi) Ataca a un objetivo adicional.
 
-<u>Reserva de energía</u> (acción bonus) Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes aumentar el área de tu ataque a una línea de 10 pies de ancho y 60 de largo, hacer un ataque elemental adicional o aumentar la fuerza de los vientos en un área de 40 pies por un paso. Esta habilidad sólo puede usarse una vez al turno.
+**Lanzamiento** (2 AP): Empleas el viento para lanzar un objeto a un enemigo que se encuentre a una distancia lejana, lo cual es un ataque físico que inflige 1d6 + CAR daño al impactar del tipo según el objeto empleado (1 chi) Lanzas otro objeto hacia un objetivo adicional o +1d6 daño y *tropiezas* al impactar.
 
-<u>Parada elemental</u> (reacción) Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Viento furibundo** (2 AP y 1 chi): Ataca a todos los enemigos a distancia corta con un ataque elemental que inflige 1d6 + CAR daño contundente y los empuja un paso hacia atrás. (1 chi) Al principio de tu siguiente turno haz el mismo ataque como acción bonus sin la necesidad de gastar más chi.
+
+**Parada elemental** (reacción) Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
 ## Rango II
 
-<u>Muro de viento</u> (2 acciones): Como acción estándar puedes formar un muro de vientos furiosos con longitud igual a 15 x rango pies de largo y altura igual a 5 x rango pies. El muro impide el paso de proyectiles y gases, incluyendo a criaturas en forma gaseosa además que toda criatura que desee cruzarlo deberá tener éxito en un tiro de heroísmo contra tu tiro de magia elemental, siendo empujado 5 pies en el caso que fracase. El muro permanecerá hasta que pierdas la concentración y para crear un muro adicional deberás reducir tu reserva elemental por 1 cada ronda que este siga activo. El muro se destruirá si es impactado por otro efecto elemental de aire o un ataque de área con radio igual o superior a su altura. Muro de viento puede crearse como reacción una vez por ronda si te encuentras en un área afectados por vientos de fuerza 3 o superior.
+**Muro de viento** (2 AP y 1 chi): Formas una barrera media de vientos furiosos que te protegerá de ataques mágicos, proyectiles y gases. Toda criatura que intente cruzar el muro deberá tener éxito en un tiro de FUE contra tu magia de aire o los vientos le empujarán hacia atrás. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*. No obstante, muro de aire no funciona contra ataques de área particularmente grandes.
 
-<u>Secuencia de ataques</u> (pasiva) Hacer un ataque elemental ahora te cuesta una acción. Si lanzas a un enemigo por los aires con tu primer ataque podrás seguir empujándolo en la misma dirección sin la necesidad de emplear una maniobra de combate o estamparlo hacia el suelo con mayor fuerza, lo cual le hará sufrir 1d6 daño de caída adicional y sufrirá una herida permanente adicional.
+**Esfera de aire** (2 AP y 1 chi): 
+
+**Danza de los vientos** (2 AP y 1 chi): 
 
 ## Rango III 
 
