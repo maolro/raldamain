@@ -17,13 +17,11 @@ Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango
 
 ## Rango II
 
-Incrementa tu FUE por 1.1
+Incrementa tu FUE por 1
 
-<u>Rasgo monstruoso</u> (pasiva): Tienes 2 [puntos de transformación](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html) para gastar en mejoras corporales. Estas mejoras solo se manifiestan cuando uses fuerza del abismo y desaparecen cuando salgas de él o tu decidas. Algunas de las posibilidades son alas (2 PT), garras (1 PT), ataques infundidos (2 PT), y armadura natural (1 PT). 
+**Mutación** (1 chi): Durante una ronda recibes una mutación abisal que otorga +1d6 daño de cualquier tipo a todos tus ataques físicos, aumenta uno de tus movimientos por 1 o recibes resistencia igual a tu rango contra un tipo de daño de tu elección. No puedes usar el mismo efecto más de una vez por turno.
 
-<u>Aura antinatural</u> (pasiva): Los animales se apartan instintivamente de ti y tu presencia resalta sospechas y miedo. Recibes ventaja tus tiros de intimidar, persuasión y engaño mientras que todos los tiros relacionados con talentos de inteligencia y sabiduría hechos a 30 pies de ti reciben desventaja (esto no afecta a criaturas que tengan resistencia contra efectos mentales o estén afectadas por habilidades de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) o [guerrero divino](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html)). Los abisales no son naturalmente hostiles hacia ti.
-
-<u>Vista del vacío</u> (pasiva): Tienes visión a ciegas en un área de 30 pies y visión a oscuras en 60 pies. Eres capaz también de detectar influencias abisales en un área de hasta una milla, pero no conocerás su posición exacta ni su identidad.
+**Poder antinatural**: Tienes visión a ciegas en un radio medio y todas las criaturas a distancia corta de ti deberán tener éxito en un tiro de SAB contra tu CAR o tendrán desventaja en todos sus tiros relacionados con estadísticas mentales durante una ronda. 
 
 ## Rango III
 
@@ -56,3 +54,80 @@ Incrementa tu DES por 1.
 **Transformación abisal:** Duplicas tu esperanza de vida y recibes resistencia 4 al veneno, efectos mentales, enfermedades y maldiciones. Los abisales dejarán de ser hostiles hacia ti y te tratarán como un igual. También recibes inmunidad a todos los hechizos ajenos que inflijan daño a la cordura a costa que recibirás una locura escogida por el máster (*poder de la locura* se sigue aplicando).
 
 **Llamar a la tormenta** (3 AP y 5 chi): Abre un portal abisal durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada* y está afectada por *aura del caos*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura abisal que tenga x-1 mejoras.
+
+# Invocación abisal
+
+## Base
+
+**Estadísticas base:** 5,4,3,2,1,0
+
+**PV:** 6 + CON
+
+**Vitalidad:** 8 + CON
+
+**Defensa**: 6 (armadura natural)
+
+**Resistencias:** daño físico 4, magia 4, un elemento de tu elección 4
+
+**Inmunidades:** veneno, enfermedades, efectos mentales, terreno difícil
+
+**Vulnerabilidades**: Armas de plata celestial, radiante
+
+**Movimiento:** Base 1, cualquier movimiento +1
+
+**Acciones:** 4
+
+**Rangos:** Tiene rango II en un arma de tu elección y rango I en otra
+
+**Habilidades:**
+
+- *Ataques infundidos*: Todos sus ataques físicos están afectados por una mejora de arma que tú escojas.
+- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
+- *Magia innata*: Puede usar una habilidad mágica de rango I tres veces por combate sin gastar chi usando SAB.
+
+## Mejora 1
+
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+
+Recibe un rango adicional en dos armas diferentes
+
+Aumenta todas sus resistencias por 2
+
+Se regenera 2 Vitalidad al principio de su turno
+
+Aprende un nuevo hechizo de rango II que puede usar tres veces por combate.
+
+Obtiene esta nueva habilidad:
+
+- *Presencia enloquecedora:* Cada criatura que le pueda percibir deberá tener éxito en un tiro de CAR contra su CON + mejora + 1 o son espantadas durante una ronda. Si se encuentran a distancia corta reducirán su cordura por 2.
+
+## Mejora 2
+
+Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 7)
+
+Recibe un rango adicional en un arma
+
+Aumenta su cantidad de acciones por 1
+
+Obtiene +1 en cualquier tipo dme movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
+
+Aprende un nuevo hechizo de rango III que puede usar dos veces por combate.
+
+Obtiene esta nueva habilidad
+
+- *Ataques infundidos superiores:* Todos sus ataques están afectados por una mejora nueva de tu elección. Si ambas son la misma el daño adicional se acumula. 
+- *Fusión abisal:* El invocador puede fusionarse con esta criatura, recibiendo sus estadísticas físicas y una reserva de PV temporales igual a la suma de los PV y Vitalidad de esta criatura. No obstante, ambos compartirán acciones y al usar esta habilidad el invocador perderá 2 cordura por ronda.
+
+## Mejora 3
+
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
+
+Recibe un rango adicional en dos armas diferentes
+
+Aumenta todas sus resistencias por 2
+
+Aprende un nuevo hechizo de rango IV que puede usar una vez por combate.
+
+Obtiene esta nueva habilidad
+
+- *Furia abisal:* La primera vez que esta criatura o su invocador caiga a 0 PV revivirá a 1 PV y recuperará 5 + CON Vitalidad. Obtendrá además los bonificadores de Ira a rango I.
