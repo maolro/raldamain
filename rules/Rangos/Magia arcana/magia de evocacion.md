@@ -37,7 +37,7 @@ Aprendes dos técnicas de rango III pertenecientes a magias o ascendencias eleme
 
 **Rayo desintegrador** (2 AP y 2 chi): Haz un ataque con magia de evocación que inflige 2d8 + INT daño fuerza, reduce resistencia mágica por 2 y provoca una herida leve al reducir PV (media si el objetivo no tiene resistencia mágica). Si logras reducir los PV del objetivo a 0 este será desintegrado por el ataque, muriendo instantáneamente. (1 chi) Ataca a un objetivo adicional.
 
-**Irradiación de chi** (2 AP y 2 chi): Infundes el campo de batalla con energía mágica, otorgando ventaja a todos los tiros de magia arcana hechos en el área además que cada vez que impactes a un objetivo con un ataque que inflija daño fuerza este reducirá su resistencia mágica por 1. Además, la magia arcana funcionará de manera errática causando que los glifos tengan un 50% de probabilidad de fallar al activarse y cada vez que una criatura obtenga un 20 o 1 natural ocurra un efecto mágico aleatorio escogido por el máster (esto imitará un hechizo de rango III o menos) 
+**Irradiación de chi** (2 AP y 2 chi): Infundes el campo de batalla con energía mágica, otorgando ventaja a todos los tiros de magia arcana hechos en el área además que cada vez que impactes a un objetivo con un ataque que inflija daño fuerza este reducirá su resistencia mágica por 1. Además, la magia arcana funcionará de manera errática causando que los glifos tengan un 50% de probabilidad de fallar al activarse y cada vez que una criatura obtenga un 20 o 1 natural en un tiro con un hechizo mágico ocurrirá un efecto mágico aleatorio escogido por el máster (esto imitará un hechizo de rango III o menos) 
 
 ## Rango V   
 
