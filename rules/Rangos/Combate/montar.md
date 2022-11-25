@@ -9,23 +9,54 @@ Como jinete entrenado eres mejor cuando luchas acompañado de tu montura, emplea
 
 No sufres penalizaciones por disparar montado.
 
-<u>Jinete experto</u> (pasiva y 1 acción): Tienes un poderoso vínculo con un animal, el cual puedes montar en combate. Tu montura es una criatura de [base cuadrúpeda](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#formas-base) de tamaño grande con nivel igual a tu nivel base dividido entre 2 (mínimo nivel 1). Puedes emplear tus acciones para que tu montura realice una acción adicional en su turno. Si eres atacado podrás usar el tiro de esquiva de tu montura en lugar del tuyo además que puedes emplear tu parada para protegerla.
+**Jinete experto**: Tienes un poderoso vínculo con una criatura que te permite usarla como montura. Puedes gastar cualquier cantidad de acciones para que tu montura reciba esa misma cantidad de acciones adicionales y mientras estés montando puedes hacer que la montura tire defensa por ti. Las estadísticas de la montura se especificarán en el adecuado apartado y si eres capaz de invocar criaturas puedes emplear una de ellas como montura, la cual no requerirá chi para ser invocada. 
 
-<u>Carga de caballería</u> (pasiva): Tus ataques son particularmente poderosos al cargar. Si tu montura se mueve 40 pies en una línea recta y realizas un ataque, incrementa tu daño base por 1d6 y podrás realizar una maniobra gratuita de tropezar. Tu montura puede atacar a una criatura adyacente a ella que esté en el suelo como acción bonus. 
+**Carga poderosa**: Si tu montura hace una carga tu siguiente ataque físico infligirá +1d6 daño y *tropezará* al objetivo (este deberá superarte en un tiro de FUE para evitar este efecto). Si lo logras *tropezar* tu montura puede hacerle un ataque de oportunidad
 
 ## Rango II
 
-Tu montura aumenta su nivel por 2.
+Tu montura recibe una mejora
 
-<u>Ataque de paseo</u> (pasiva): Puedes moverte antes y después de una carga sin provocar ataques de oportunidad si aún te queda movimiento en tu turno. Sólo podrás moverte en una línea recta de esta manera, pero continuarás recibiendo los beneficios de Carga de caballería contra otras criaturas que haya en tu camino.
+**Ataque de paseo**: Al impactar a un objetivo tras una carga puedes *desenganchar* como acción bonus. Si a tu montura aún le queda movimiento puedes seguir cargando en línea recta, recibiendo los beneficios de *carga poderosa* contra el resto de los enemigos que haya en tu camino. 
 
-<u>Justa</u> (pasiva): Eres experto luchando contra otros enemigos montados. Al impactar a otra criatura que esté montada tras una carga puedes realizar una maniobra de empujar contra ella. Si obtienes éxito tu objetivo caerá de su montura, sufriendo 2 daño no-letal y quedando tropezado.
+**Justa**: Si atacas a un objetivo montado tras una carga este deberá superarte en un tiro de FUE o caerá de su montura, quedando *tropezado* y sufriendo 1d6 daño de caída. Todos los intentos para subirse a una montura tras una justa cuestan 1 AP adicional durante esta ronda.
 
 ## Rango III
 
-Tu montura aumenta su nivel por 2.
+Tu montura recibe una mejora
 
-<u>Carga devastadora</u> (pasiva) Tus cargas son capaces de decimar ejércitos. Al hacer una carga podrás atacar a todas las criaturas en un arco de 15 pies centrado en ti. El nivel de las heridas permanentes que provocas aumenta por un paso y si logras tropezar a tu objetivo este perderá los beneficios de su táctica de combate durante una ronda.
+**Carga devastadora:** Al hacer una carga puedes atacar a dos objetivos adicionales con tu ataque que estén adyacentes a tu objetivo principal. Además, todas las heridas permanentes que tengas aumentarán su efectividad por un paso y si logras *tropezar* a un objetivo este también quedará *ralentizado* durante una ronda.
 
-<u>Vínculo inquebrantable</u> (pasiva) Tu montura tiene absoluta confianza en ti. Puedes realizar saltos de hasta 20 pies en tu montura y no tienes que hacer un tiros para mantener el control de ella. Si tienes habilidades de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html), [reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html), [armadura](https://raldamain.com/rules/Rangos/Combate/armaduras.html), [fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html) o [guerrero divino](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html) estas se aplicarán tanto a ti como a tu montura. En el caso de que tu montura muera debes pasarte tres meses entrenando a otra para recibir esta habilidad.
+**Vínculo inquebrantable**: Tu montura tiene absoluta confianza en ti, causando que no te haga falta tirar para mantener el control de ella. Todas las habilidades que tengas de *fortitud, armaduras, presencia, guerrero divino* y *reflejos* se aplicarán también a la montura como si fueran suyos siempre y cuando sea posible según su naturaleza (las habilidades por rangos iguales no se acumulan)
 
+# Montura
+
+## Base
+
+- **Estadísticas base:** 4,3,2,1,1,0
+- **PV:** 3 + CON
+- **Vitalidad:** 3 + CON
+- **Defensa**: 4 (armadura natural)
+- **Movimiento:** Base 1, cualquier movimiento +1
+- **Resistencias**: +2 en todos sus tiros de CON
+- **Acciones:** 4
+- **Rangos:** Tiene rango I en un arma de tu elección y rango I en reflejos
+- **Habilidades:**
+  - Entrenamiento*: La montura recibe +1 Vitalidad por un valor igual al nivel del jinete / 2 y +1 PV por su nivel / 4. Recibirá además +1 rango en un arma de tu elección por cada 4 niveles que tenga el invocador. 
+  - *Sensibilidad*: Cada vez que la montura sufra una herida permanente el jinete deberá tener éxito en un tiro de Voluntad frente a una dificultad escogida por el máster según la relación con la montura. Si fracasa el jinete perderá control de ella durante esta ronda y deberá repetir el tiro la ronda siguiente para reestablecer control.
+
+## Mejora 1
+
+- Aumenta sus PV y armadura natural por 2
+- Recibe un rango adicional en reflejos y +2 en sus tiros de CON
+- Aumenta su resistencia al veneno, enfermedades y miedo por 3
+- Obtiene las siguientes habilidades:
+  - *Resistir la muerte*: La primera vez que caiga a menos de 0 PV puede revivir a 1 PV sin sufrir heridas permanentes.
+
+## Mejora 2
+
+- Aumenta sus PV y armadura natural por 2
+- Se regenera 2 Vitalidad al principio de su turno
+- Recibe un rango adicional en reflejos y +2 en sus tiros de CON
+- Obtiene las siguientes habilidades:
+  - *Resistir armas*: Una vez por ronda como reacción puede reducir el nivel de una herida permanente que sufra por 1.
