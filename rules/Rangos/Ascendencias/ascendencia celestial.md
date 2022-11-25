@@ -35,7 +35,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu SAB por 1.
 
-**Sentido del mal:** Detectas todas las criaturas y efectos mágicos relacionados con entidades malignas a una distancia media. Tienes ventaja en todos tus tiros de *averiguar intenciones*
+**Sentido del mal:** Detectas todas las criaturas y efectos mágicos relacionados con entidades malignas a una distancia media. Tienes ventaja en todos tus tiros de *averiguar intenciones*.
 
 **Milagro de restauración** (2 acciones y 2 chi): Sanas un efecto de estado, veneno, enfermedad, maldición o hechizo que afecte a una criatura adyacente.
 
@@ -53,7 +53,7 @@ Incrementa tu CON por 1.
 
 **Ascensión**: Eres inmortal y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los seres celestiales y espíritus benignos te obedecen
 
-**Portal celestial** (3 acciones y 5 chi): Abre un portal celestial durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura celestial con x-1 mejoras.
+**Portal celestial** (3 acciones y 5 chi): Abre un portal celestial durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura celestial con x-1 mejoras. ·La tierra en un radio cercano al portal está afectada por un *aura de vida* y un *aura de luz.*
 
 # Criatura celestial
 
@@ -87,19 +87,13 @@ Incrementa tu CON por 1.
 
 ## Mejora 1
 
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-
-Recibe un rango adicional en un arma
-
-Sana +1 Vitalidad con *toque sanador* (+1 por cada mejora adicional)
-
-Aumenta su resistencia al daño físico y a la magia por 2
-
-Otorga tres usos adicionales de *milagro menor* a su invocador
-
-Obtiene esta nueva habilidad:
-
-- *Conexión vital*: Escoge a una criatura. Cada vez que la criatura escogida sufra daño puede absorber la mitad de dicho daño y usar *toque sanador* en ella sin la necesidad que esté adyacente
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Recibe un rango adicional en un arma
+- Sana +1 Vitalidad con *toque sanador* (+1 por cada mejora adicional)
+- Aumenta su resistencia al daño físico y a la magia por 2
+- Otorga tres usos adicionales de *milagro menor* a su invocador
+- Obtiene esta nueva habilidad:
+  - *Conexión vital*: Escoge a una criatura. Cada vez que la criatura escogida sufra daño puede absorber la mitad de dicho daño y usar *toque sanador* en ella sin la necesidad que esté adyacente
 
 ## Mejora 2
 

@@ -91,8 +91,7 @@ Incrementa tu INT por 1.
 - Aumenta su cantidad de acciones por 1
 - Obtiene esta nueva habilidad:
   - *Golpes sombríos:* El daño de los ataques físicos de esta criatura ignora la defensa otorgada por fuentes no-mágicos y no puede ser detenido con parada salvo por armas mágicas.
-  - *Aspecto terrorífico:* Cada personaje que empiece su turno percibiendo a la criatura sombría deberá tener éxito en
-    un tiro de CAR frente a un valor igual a 4 + nivel de mejora x 2 o esté espantada durante una ronda (si ya lo está aumenta su nivel de miedo por un paso). Este efecto se perderá cuando la criatura sombría pierda PV.
+  - *Aspecto terrorífico:* Cada criatura que empiece su turno percibiendo a la criatura sombría deberá tener éxito en un tiro de CAR frente a un valor igual a 4 + nivel de mejora x 2 o esté espantada durante una ronda (si ya lo está aumenta su nivel de miedo por un paso). Este efecto se perderá cuando la criatura sombría pierda PV.
 
 ## Mejora III
 

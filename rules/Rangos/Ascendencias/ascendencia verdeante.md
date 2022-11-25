@@ -81,51 +81,34 @@ Incrementa tu CON por 1.
 
 - *Ataques infundidos*: Todos sus ataques físicos están afectados por una mejora de arma que tú escojas.
 - *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
-- *Magia innata*: Puede usar una habilidad mágica de rango I tres veces por combate sin gastar chi usando SAB.
+- *Magia innata*: Tiene una reserva de 3 chi que puede emplear para usar un hechizo de rango I de su elección. Empleará su estadística de SAB modificada por el nivel de mejora + 1.
 
 ## Mejora 1
 
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-
-Recibe un rango adicional en dos armas diferentes
-
-Aumenta todas sus resistencias por 2
-
-Se regenera 2 Vitalidad al principio de su turno
-
-Aprende un nuevo hechizo de rango II que puede usar tres veces por combate.
-
-Obtiene esta nueva habilidad:
-
-- *Defensor:* Si está adyacente a otra criatura puede usar parada como reacción para defender cualquier ataque hecho hacia él y recibir el daño que este inflija
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Recibe un rango adicional en dos armas diferentes
+- Aumenta todas sus resistencias por 2
+- Se regenera 2 Vitalidad al principio de su turno
+- Aprende un nuevo hechizo de rango II y aumenta su reserva de chi por 2.
+- Obtiene esta nueva habilidad:
+  - *Defensor:* Si está adyacente a otra criatura puede usar parada como reacción para defender cualquier ataque hecho hacia él y recibir el daño que este inflija
 
 ## Mejora 2
 
-Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 7)
-
-Recibe un rango adicional en un arma
-
-Aumenta su cantidad de acciones por 1
-
-Obtiene +1 en cualquier tipo de movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
-
-Aprende un nuevo hechizo de rango III que puede usar dos veces por combate.
-
-Obtiene esta nueva habilidad
-
-- *Ataques infundidos superiores:* Todos sus ataques están afectados por una mejora nueva de tu elección. Si ambas son la misma el daño adicional se acumula. 
-- *Mente vinculada*: Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes
+- Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 7)
+- Recibe un rango adicional en un arma
+- Aumenta su cantidad de acciones por 1
+- Obtiene +1 en cualquier tipo de movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
+- Aprende un nuevo hechizo de rango III y aumenta su reserva de chi por 2.
+- Obtiene esta nueva habilidad
+  - *Ataques infundidos superiores:* Todos sus ataques están afectados por una mejora nueva de tu elección. Si ambas son la misma el daño adicional se acumula. 
+  - *Mente vinculada*: Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes
 
 ## Mejora 3
 
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-
-Recibe un rango adicional en dos armas diferentes
-
-Aumenta todas sus resistencias por 2
-
-Aprende un nuevo hechizo de rango IV que puede usar una vez por combate.
-
-Obtiene esta nueva habilidad
-
-- *Furia espiritual:* La primera vez que esta criatura o su invocador caiga a 0 PV revivirá a 1 PV y recuperará 5 + CON Vitalidad. Obtendrá además los bonificadores de Ira a rango I.
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
+- Recibe un rango adicional en dos armas diferentes
+- Aumenta todas sus resistencias por 2
+- Aprende un nuevo hechizo de rango IV y aumenta su reserva de chi por 2.
+- Obtiene esta nueva habilidad
+  - *Furia espiritual:* La primera vez que esta criatura o su invocador caiga a 0 PV revivirá a 1 PV y recuperará 5 + CON Vitalidad. Obtendrá además los bonificadores de Ira a rango I.
