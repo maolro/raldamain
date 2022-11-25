@@ -9,7 +9,7 @@ Los insectos han estado presentes en tu vida desde tu nacimiento o tal vez hicie
 
 Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
 
-**Aspecto entrópico**: Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades. Tienes la capacidad de tomar una forma híbrida entre humano e insecto conocida como forma entotrópica durante una cantidad de rondas igual a tu rango + 2, la cual te otorará una de las siguientes mejoras según el insecto que escogas:
+**Aspecto entrópico**: Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades. Tienes la capacidad de tomar una forma híbrida entre humano e insecto conocida como forma entotrópica durante una cantidad de rondas igual a tu rango + 2, la cual te otorgará una de las siguientes mejoras según el insecto que escojas:
 
 - *Araña:* Obtienes un rango en el ataque natural *mordisco* y al morder a otra criatura le infectarás con un veneno que afecta a una estadística de tu elección con gravedad igual a tu rango de ascendencia + 3.  
 - *Avispa:* Obtienes un rango en el ataque natural *aguijón* y al picar a otra criatura le infectarás con un veneno que afecta a una estadística de tu elección con gravedad igual a tu rango de ascendencia + 3.  
@@ -24,7 +24,7 @@ Más formas insectoides son posibles, pero para acordar las mejoras que te otorg
 
 Incrementa tu DES por 1.
 
-**Escalada superior**: Las palmas de tus manos y de tus pies están dotadas con una multitud de pequeños filamentos que te permiten engancharte a superficies lisas. De esta manera, recibes una velocidad de escalada 1 y eres capaz de escalar por cualquier superficie vertical y horizontal (incluyendo boca abajo). Puedes esquivar ataques mientras estás escalando sin recibir desventaja,
+**Escalada superior**: Las palmas de tus manos y de tus pies están dotadas con una multitud de pequeños filamentos que te permiten engancharte a superficies lisas. De esta manera, recibes una velocidad de escalada 1 y eres capaz de escalar por cualquier superficie vertical y horizontal (incluyendo boca abajo). Puedes esquivar ataques mientras estás escalando sin recibir desventaja.
 
 **Empatía con alimañas**: Tienes una conexión superior con las criaturas insectoides, permitiéndote comunicarte con ellas como si hablasen tu idioma. Con esta habilidad puedes emplear a los insectos como fuente de información, aunque estos sólo podrán comunicar aquello que perciban desde su punto de vista (es decir, no podrán comunicar conceptos que no puedan comprender).  
 
