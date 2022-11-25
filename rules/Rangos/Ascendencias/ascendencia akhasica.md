@@ -9,7 +9,7 @@ Tu mente está conectada con la inteligencia colectiva del universo, transformá
 
 Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por rango + 2.
 
-**Vínculo akhásico** (acción bonus) Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 1 como acción bonus usable una vez al turno puedes repetir un tiro de habilidad, ataque o defensa de tu elección y quedarte con el mejor resultado. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) acumula los usos de ambas habilidades. (1 chi) Recarga un uso de esta habilidad
+**Vínculo akhásico** (acción bonus) Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 2 como acción bonus usable una vez al turno puedes repetir un tiro de habilidad, ataque o defensa de tu elección y quedarte con el mejor resultado. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) acumula los usos de ambas habilidades. (1 chi) Recarga un uso de esta habilidad
 
 **Hipercognición**: Tu mente tiene mayor capacidad para recopilar y recordar información. Puedes conocer información de cualquier ámbito de estudio al hacer un tiro de conocimiento y aprender un lenguaje nuevo sólo te cuesta un mes de estudio. (1 chi) Conoces instantáneamente un dato relacionado con cualquier ámbito o recibes la capacidad de hablar y entender un idioma cualquiera durante una hora.
 
