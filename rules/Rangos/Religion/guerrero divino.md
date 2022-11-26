@@ -29,8 +29,6 @@ Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldicion
 
 ## Rango IV
 
-Para desbloquear este rango necesitas tener cuatro niveles de talento en estudio (religión), voluntad y primeros auxilios.
-
 **Hueste divina:** La energía divina que te rodea es capaz de fortalecer a tus aliados, mejorando sus capacidades de combate. Al entrar en estado de *guerrero de la fe* todos tus aliados a una distancia cercana reciben ventaja en todos sus tiros de ataque y defensa. Este bonificador no se acumula con *guerrero de la fe* ni con otros efectos de *hueste divina*.
 
 **Aliento de vida** (3 AP y 2 chi): Resucita a una criatura muerta en combate a 1 PV y reduce el nivel de todas las heridas permanentes que tenga por un paso. Solo podrás resucitar a personas que hayan muerto hace poco tiempo y no funcionará si el cuerpo está gravemente dañado o le falta una parte vital, como puede ser la cabeza.

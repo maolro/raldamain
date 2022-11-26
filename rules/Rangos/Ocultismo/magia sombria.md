@@ -21,7 +21,7 @@ Añade tu rango a todos tus tiros relacionados con magia sombría y aumenta tu r
 
 **Bola sombra** (2 AP y 1 chi): Haz un ataque de *tajo sombrío* con radio de salpicadura corto cuyo daño estará modificado por tu CAR en lugar de tu rango.  (1 chi) Crea una nube de oscuridad en el radio de efecto de esta habilidad.
 
-**Devorar esperanza** (2 AP y 1 chi): Haz un ataque de *toque necrótico* que al impactar reduce la reserva de chi del objetivo y lo *enreda*. Si permanece *enredado* al final de su turno volverá a reducir su reserva por 1 (sufre 2 daño necrótico si no tiene). No puedes *enredar* a más de rango + 1 objetivos a la vez.
+**Devorar esperanza** (2 AP y 1 chi): Haz un ataque de *toque necrótico* que al impactar reduce la reserva de chi del objetivo por 1 y lo *enreda*. Si permanece *enredado* al final de su turno volverá a reducir su reserva por 1 (sufre 2 daño necrótico si no tiene). No puedes *enredar* a más de rango + 1 objetivos a la vez.
 
 ## Rango III
 

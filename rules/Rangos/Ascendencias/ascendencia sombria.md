@@ -41,7 +41,7 @@ Incrementa tu CAR por 1. Puedes sumar tu rango en magia sombría a todos tus tir
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática como reacción. Esta habilidad puede usarse como reacción si estás en posición defensiva.
+**Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática si te encuentras en posición defensiva.
 
 **Luces y sombras** (2 chi): Infundes a una ilusión con energía del plano de las sombras para que se vuelva parcialmente real. Si es un objeto sólido o un efecto ambiental se vuelve físico durante una hora y si es una ser vivo se transformará en una criatura sombría, En el caso que no tengas habilidades ilusorias recibes el hechizo crear ilusión sin limite de uso.
 
@@ -57,7 +57,7 @@ Incrementa tu INT por 1.
 
 ## Base
 
-- **Estadísticas base:** 5,4,5,2,1,0
+- **Estadísticas base:** 5,4,4,2,1,0
 - **PV: **4 + CON
 - **Vitalidad**: 8 +CON
 - **Defensa:** 4 (armadura natural) 
@@ -82,7 +82,7 @@ Incrementa tu INT por 1.
 - Se regenera 2 Vitalidad al principio de su turno
 - Obtiene esta nueva habilidad:
   - *Aliento de oscuridad* (2 AP, recarga 5-6): Crea una nube de oscuridad mágica con radio pequeño que ciega a todas las criaturas en ella. Está durará una ronda o hasta que sea disipada.
-  - Salto sombrío(2 AP): Si está en un lugar a oscuras se teletransporta una distancia media a otro lugar que se  encuentre a oscuras. Recibe +2 en tiros de esquiva, aumentando por 1 por cada nivel de mejora adicional que tenga, y una vez por turno puede usar esta habilidad como reacción si esté en posición defensiva para evitar automáticamente un ataque.
+  - *Salto* *sombrío* (2 AP): Si está en un lugar a oscuras se teletransporta una distancia media a otro lugar que se  encuentre a oscuras. Recibe +2 en tiros de esquiva, aumentando por 1 por cada nivel de mejora adicional que tenga, y una vez por turno puede usar esta habilidad como reacción si esté en posición defensiva para evitar automáticamente un ataque.
 
 ## Mejora II
 
@@ -100,7 +100,7 @@ Incrementa tu INT por 1.
 - Aumenta su resistencia al daño físico y a la magia por 2
 - El aliento de oscuridad inflige 1d8 + CAR daño necrótico y usará su estadística de CAR + 5 para el tiro de ataque
 - Obtiene esta nueva habilidad:
-  - *Sombra viviente:* La criatura se vuelve inmune 2 todo el daño no-mágico y es capaz de pasar a través de las ranuras más pequeñas.
+  - *Sombra viviente:* La criatura se vuelve inmune a todo el daño no-mágico y es capaz de pasar a través de las ranuras más pequeñas.
 
  
 

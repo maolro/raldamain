@@ -27,6 +27,8 @@ Añade tu rango a todos tus tiros relacionados con habilidades de médium y aume
 
 ## Rango III	
 
+Aumenta el daño de exorcizar a 1d8
+
 **Viaje astral** (3 acciones y 2 chi): Separas tu alma de tu cuerpo para convertirte en un ser incorpóreo. Mientras permanezcas en este estado puedes herir a criaturas espectrales y eres inmune a todo el daño no-mágico. Las heridas recibidas en estado incorpóreo no repercutirán en tu cuerpo físico, el cual caerá inconsciente mientras dure este efecto. *Viaje astral* durará una hora o hasta que tu cuerpo material sea herido.
 
 **Canalización superior**: Al usar *canalizar ánima* aumentas una estadística por 2 y recibes un rango adicional de tu elección, el cual permanecerá activo solo mientras canalices.
@@ -41,7 +43,7 @@ Añade tu rango a todos tus tiros relacionados con habilidades de médium y aume
 
 ## Rango V
 
-Aumenta tu probabilidad de crítico con exorcizar a 18-20.
+Aumenta el daño de exorcizar a 1d10
 
 **Posesión** (3 AP y 1 chi): Si estás en *forma astral* puedes intentar poseer a otra criatura, haciendo un tiro de médium contra su SAB. En caso de éxito la criatura cae bajo tu control, permitiéndote usar sus acciones como si fueran tuyas. La criatura poseída pude repetir el tiro cada ronda y si no logra liberarse en 4 rondas no podrá repetir el tiro hasta el día siguiente.
 
