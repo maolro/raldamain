@@ -51,7 +51,7 @@ Incrementa tu CAR por 1.
 
 **Invocar marabunta** (3 acciones y 1 chi) Llamas a una furiosa marabunta de insectos a atacar a tus enemigos. La marabunta aparecerá en tu posición y mientras permanezca viva puedes moverla un paso en cualquier dirección cada ronda. Todas las criaturas enemigas que se muevan al espacio de la marabunta o empiecen su turno ahí sufrirán 1d6 daño físico que ignora armadura y deberán tener éxito en un tiro de CON frente a tu rango de ascendencia + 3 o serán *enfermados* durante una ronda (*náuseas* si ya están enfermados). Eliminar una marabunta requiere impactarla con un ataque de área de radio corto o superior. 
 
-Cada vez que obtentas un rango adicional en esta ascendencia podrás invocar una marabunta adicional con esta habilidad, llegando a controlar tantas como tu rango - 3. Si una criatura se encuentra en el espacio de más de una marabunta sufrirá +1d6 daño físico y el tiro de dificultad de CON aumentará por 2. Las marabuntas permanecerán en el campo de batalla hasta que caigas inconsciente o escojas dispersarlas. No puedes invocar marabuntas si no hay suficientes insectos en el campo de batalla, lo cual queda a decisión del máster.
+Cada vez que obtengas un rango adicional en esta ascendencia podrás invocar una marabunta adicional con esta habilidad, llegando a controlar tantas como tu rango - 3. Si una criatura se encuentra en el espacio de más de una marabunta sufrirá +1d6 daño físico y el tiro de dificultad de CON aumentará por 2. Las marabuntas permanecerán en el campo de batalla hasta que caigas inconsciente o escojas dispersarlas. No puedes invocar marabuntas si no hay suficientes insectos en el campo de batalla, lo cual queda a decisión del máster.
 
 **Depredador imparable**: Tus fauces y garras aumentan su fuerza, permitiéndote perforar armaduras metálicas para devorar la deliciosa carne que se encuentra en su interior. Tus ataques naturales están afectados por *material superior* y al impactar a un objetivo puedes reducir la defensa de su armadura por 2. Estas bonificaciones se acumulan con [*golpe devastador*](https://raldamain.com/rules/Rangos/Armas/artes%20marciales.html#rango-iv) y [*ataque poderoso*](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-ii). Tienes la capacidad de devorar sustancias hechas de madera u otros materiales naturales.
 
@@ -75,7 +75,7 @@ Incrementa tu INT por 1.
 
 ## Base
 
-- **Estadísticas base:** 5,4,5,2,1,0
+- **Estadísticas base:** 5,4,4,2,1,0
 - **PV: **4 + CON
 - **Vitalidad**: 8 + CON
 - **Defensa:** 4 (armadura natural)
@@ -96,7 +96,7 @@ Incrementa tu INT por 1.
 - Aumenta su resistencia al daño físico y a la magia por 2
 - Se regenera 2 Vitalidad al principio de su turno
 - Recibe la siguiente habilidad
-  - *Mente colmena:* Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes. Si esta criatura entra en *posición defensiva* su invocador lo hará también.
+  - *Mente colmena:* Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes. Si esta criatura entra en *posición defensiva* su invocador lo hará también y viceversa.
 
 ## Mejora 2
 

@@ -109,7 +109,7 @@ Recibe un rango adicional en un arma
 
 Aumenta su cantidad de acciones por 1
 
-Obtiene +1 en cualquier tipo dme movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
+Obtiene +1 en cualquier tipo de movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
 
 Aprende un nuevo hechizo de rango III que puede usar dos veces por combate.
 

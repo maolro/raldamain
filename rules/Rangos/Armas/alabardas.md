@@ -39,11 +39,14 @@ Hacer un ataque con una alabarda te cuesta una acción menos.
 
 **Ataque circular:** Al hacer la habilidad *ataque lateral* atacas a todos los enemigos que se encuentren en el radio de alcance de tu arma.
 
+**Carga con lanza:** Al realizar una carga infliges +1d6 daño y puedes clavar tu lanza a un objetivo para aumentar el nivel de heridas por un paso. Sacar la lanza tras clavarla cuesta 1 AP.
+
 ## Rango V
 
 **Carga repentina:** Al entrar en estado *preparación contra cargas* en cualquier momento de la ronda puedes hacer una carga y atacar a un objetivo. Este ataque aplicará el daño adicional de *preparación contra cargas* 
 
 **Movimiento fluido:** Cada vez que impactes con un ataque podrás moverte una vez como reacción.
+
 # Armas
 
 - **Lanza:** 1d10+Fue daño perforante. Deberá usarse con dos manos
