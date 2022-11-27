@@ -1,5 +1,5 @@
 ---
-title: Ataques naturales
+title: Artes marciales
 category: Armas
 ---
 
@@ -9,73 +9,45 @@ A diferencia de otros maestros de armas tu te has decantado por utilizar tu prop
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de ataque hechos con ataques naturales. Aumenta tu daño base a 1d4 + FUE.
+Añade tu rango a todos tus tiros de ataque hechos con artes marciales. Aumenta tu daño base a 1d4 + FUE.
 
-<u>Secuencia de ataques</u> (pasiva): Reduce el coste en acciones de hacer ataques naturales y maniobras de combate por 1, llegando a un mínimo de 1. Cada ataque consecutivo en la misma ronda que realices contra el mismo objetivo incrementará tu tiro de ataque por 1 y el daño base por 1. 
+**Golpes en secuencia** (X AP): Haz x ataques contra el mismo objetivo el cuál tirará solo una vez y deberá usar el mismo resultado. Cada ataque más allá del primero tiene +1 al tiro y +1 daño por cada ataque anterior. La secuencia se detendrá si eres interrumpido.
 
-<u>Defensa marcial</u> (reacción): Eres capaz de emplear tus habilidades de artes marciales para protegerte de ataques enemigos, incluyendo aquellos hechos con armas. Un tiro de defensa marcial es una reacción por la cual tiras defensa contra un ataque hecho con un arma cuerpo a cuerpo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Si intentas defenderte de un arma cortante o una con espinas sufrirás de inmediato el efecto de estado [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado).
+**Técnica de combate** (1 AP): Haz un ataque con tu cuerpo que al impactar tropezará, empujará o *enredará* al objetivo.
 
-<u>Estilo de combate</u> (1 acción): Tu maestría de las artes marciales te permite combatir en una multitud de estilos, variando así tu forma de combatir según la situación en la que te encuentres. A rango I el máximo de estilos conocidos es de 2, esto aumentara a 3 a rango III y a 4 a rango V. Empleando una acción puedes adoptar uno de los siguientes estilos de combate el cual te otorgará determinadas habilidades mientras permanezcas en él. No puedes tener más de un estilo de combate activo a la vez y lo perderás si escoges cambiarlo gastando una acción o si pierdes la concentración.
-
-- **Forma del dragón:** Tu estilo de combate se centra en emplear tus piernas para golpear a tus enemigos antes que puedan acercarse a ti de una manera similar a la cola de un dragón. Aumenta tu alcance por 5 pies y al entrar en posición defensiva cada vez que un enemigo entre en un espacio que se encuentre a tu alcance puedes hacerle un ataque de oportunidad que inflige +1d6 daño, deteniéndolo de inmediato si tienes éxito en el ataque.
-- **Forma de la grulla:** Tu estilo de combate se asemeja a una majestuosa grulla, basándote en tu agilidad para evadir ataques enemigos y emplear la fuerza de tus oponentes contra sí mismos. Mientras permanezcas en este estilo puedes añadir tu rango en reflejos a todos tus tiros defensivos de ataques naturales y cada vez que detengas un ataque enemigo de manera exitosa puedes moverte 5 pies como reacción sin provocar ataques de oportunidad (se acumula con *[evasión](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-ii)*).
-- **Forma del mono:** Tu estilo de combate se basa en agarrar a un enemigo y dificultar sus movimientos como haría un mono. Puedes emplear una acción para hacer un ataque el cual [enredará](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enredada) a tu objetivo al impactar en lugar de hacerle daño. No puedes enredar a más de una criatura de esta manera y todas las maniobras de combate realizadas contra una criatura enredada recibirán ventaja. Aumenta además tu velocidad base por 10 pies mientras permanezcas en este estilo.
-- **Forma de la serpiente:** Tu estilo de combate imita la velocidad y precisión de una serpiente, impactando a tus enemigos en sus puntos débiles para ir debilitándolo poco a poco. Añade tu estadística de destreza a todos tus tiros de daño si tienes ventaja en un tiro de ataque, tu objetivo tiene desventaja contra tus ataques o es incapaz de defenderse.
-- **Forma del tigre:** Tu estilo de combate es feroz e implacable como el de un tigre, centrándote en infligir rápidos y poderosos golpes con tus puños. Puedes emplear una acción adicional en un ataque para incrementar el daño base por 1d6 y empujar 10 pies a tu objetivo al impactar (solo puedes gastar una acción por ataque a rango I, dos acciones a rango III y tres acciones a rango V).
+**Golpe** (1 AP): Haz un ataque con tu cuerpo que inflige 1d4 + FUE daño contundente.
 
 ## Rango II
 
-Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
+**Golpe aturdidor** (1 AP): Al impactar con tu siguiente ataque el objetivo deberá tener éxito en un tiro de CON frente a tu FUE o queda *aturdido* durante una ronda.
 
-<u>Patada giratoria</u> (1 acción, debes estar en forma del *dragón*, *grulla* o *mono*): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Estas se defenderán de tu ataque en el orden que tú escojas y puedes hacer un intento de *tropezar* empleando tus bonificadores de arma como contra aquellas criaturas que fallen su tiro defensivo. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
-
-<u>Golpe aturdidor</u> (1 acción, debes estar en forma del *tigre*, *mono* o *dragón*): Al hacer un ataque puedes emplear una acción adicional para que tu objetivo deba tener éxito en un tiro de CON frente a tu tiro de ataque o sufre el efecto de estado [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Si obtienes éxito crítico con esta habilidad tu objetivo quedará [paralizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#paralizada) hasta que se recupere, haciendo un tiro de CON cada ronda frente a tu tiro de ataque para recuperarse. Si te encuentras en *forma del tigre* aumentas también tu daño base por 1d6 y puedes empujar 10 pies al impactar.
-
-<u>Finta</u> (1 acción, debes estar en forma de la *serpiente*): Al hacer un ataque puedes emplear una acción adicional para engañar a tu enemigo con un ataque falso para dejarlo en un estado vulnerable frente a tu ataque verdadero. Al hacer una finta tu objetivo se defenderá con un tiro de averiguar intenciones (esquiva si tiene *esquiva asombrosa*) y si fracasa no podrá defenderse del siguiente ataque hecho por ti o un aliado. Si obtienes un golpe crítico en una finta el siguiente ataque realizado contará también como un crítico mientras que provocas un ataque de oportunidad si obtienes un fracaso crítico. Si tienes nivel 3 de talento en engaño una vez por ronda puedes realizar una finta como acción bonus o repetir un tiro (dos veces por ronda si tienes nivel de talento 5).
+**Estilo de combate:** Escoge dos estilos de combate de artes marciales y recibes sus respectivas habilidades a rango I. Activar las habilidades de un estilo o cambiar de estilo cuesta 1 AP
 
 ## Rango III
 
-Aumenta tu probabilidad de crítico a 19-20.
+El daño de tus golpes aumenta a 1d6
 
-<u>Desviar proyectiles</u> (reacción, debes encontrarte en forma de la *grulla*): Eres capaz de protegerte contra veloces proyectiles empleando tu maestría con artes marciales. Eres capaz de emplear *defensa marcial* para detener ataques a distancia y ataques elementales físicos (no podrás protegerte de armas de fuego o ataques elementales con tamaño superior a 10 pies). Si obtienes defensa crítica o tu oponente obtiene un fracaso crítico puedes desviar el proyectil hacia una criatura de tu elección a 15 pies de ti.
+Escoge dos estilos de combate conocidos o nuevos y recibes sus habilidades a un rango superior.
 
-<u>Ataque apuntado</u> (1+ acciones, debes encontrarte en forma de la *serpiente* o *grulla*): Eres capaz de apuntar con precisión a los puntos débiles de tu objetivo. Empleando una acción adicional al atacar puedes provocar una [herida permanente leve]() en cualquier parte del cuerpo de tu objetivo al impactar. Tienes más dificultades apuntando a criaturas que lleven [armadura](https://raldamain.com/rules/Rangos/Combate/armaduras.html#tipos-de-armadura) más voluminosa, requiriendo así que gastes una acción adicional al apuntar si tu objetivo lleva armadura media, dos acciones si lleva armadura pesada y tres si lleva armadura completa. Las acciones gastadas en un ataque apuntado permanecerán vigentes hasta que realices un ataque o pierdas la concentración, pudiendo así gastar acciones para apuntar y hacer el ataque en tu siguiente turno. 
-
-<u>Agarre superior</u> (pasiva, debes encontrarte en forma del *mono*): Al enredar exitosamente a un enemigo tras impactarlo puedes realizar una maniobra de agarre contra él como acción bonus (esta habilidad solo se activará en el turno cuando agarres). Tienes además éxito automático en todas las maniobras de empujar y tropezar hechas contra enemigos que se encuentren [agarrados](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#agarrada) por ti.
-
-<u>Carga poderosa</u> (pasiva, debes encontrarte en forma del *tigre* o *dragón*): Tus ataques aumentan en potencia al realizar una carga. Al atacar a un enemigo tras una carga obtienes los beneficios de un *golpe aturdidor* sin la necesidad de gastar acciones, aumentando así el daño base y provocando los adecuados efectos. Puedes también hacer un intento de [tropezar](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada) empleando tus bonificadores de arma como acción bonus contra un enemigo que impactes tras una carga. A rango V todo ataque realizado tras una carga aumentará su daño base de nuevo por 1d6.
+**Desviar proyectiles:** Puedes protegerte de ataques a distancia físicos usando artes marciales si te encuentras en *posición defensiva* (no funciona contra balas)
 
 ## Rango IV
 
 Aumenta tu rango en una habilidad de armas que no sea combate doble o escudo por 1.
 
-<u>Ajustar alcance</u> (pasiva, debes encontrarte en forma de la *grulla* o *dragón*): Eres capaz de ajustar el alcance de tu arma para impactar a enemigos más lejanos o protegerte de ataques con mayor facilidad. Al principio de tu turno puedes entrar en estado ofensivo o estado defensivo, el cual se mantendrá a lo largo de la ronda hasta que llegue tu siguiente turno. Si te encuentras en estado ofensivo aumentas el alcance de tu arma por 5 pies a costa de obtener un dado adicional de desventaja en tus tiros de parada contra ataques hechos por criaturas adyacentes mientras que si te encuentras en estado defensivo reduces tu alcance por 5 pies y pierdes la desventaja en tiros de parada. Puedes volver a cambiar de estado en cualquier momento de la ronda si gastas una acción para ello. 
+Escoge dos estilos de combate conocidos o nuevos y recibes sus habilidades a un rango superior.
 
-<u>Romper escudos</u> (pasiva, debes encontrarte en forma del *tigre* o *dragón*): Tus ataques poderosos son capaces de debilitar y hasta destrozar escudos. Si una criatura con un escudo logra detener un *ataque poderoso* este reducirá su valor defensivo por 1. Si el valor defensivo del escudo llega a 0 este será destruido y no podrá ser utilizado para protegerte de ataques. Adicionalmente, si un enemigo intenta bloquear uno de tus *ataques poderosos* con una parada elemental le causarás la mitad de daño si fallas tu ataque.
-
-<u>Ataque saltarín</u> (pasiva y 2 acciones, debes encontrarte en forma de la *grulla* o *serpiente*): El alcance de tu arma aumenta por 5, permitiéndote atacar y hacer ataques de oportunidad a enemigos en esa área. Empleando 2 acciones puedes hacer un salto de 30 pies con el cual evitas ataques de oportunidad que recibas al retirarte del combate. Las criaturas que tengan acciones preparadas no podrán usarlas para atacarte si te mueves con *ataque saltarín*.
-
-<u>Golpe devastador</u> (pasiva) Tus ataques naturales pueden romper madera y hasta metal. Al impactar a un objetivo con armadura con un *golpe aturdidor* o un *ataque apuntado* podrás reducir su DEF por 2. Esta reducción puede eliminarse reparando la armadura y si la defensa de la armadura queda reducida a 2 o menos esta esta se vuelve inutilizable. Si tienes nivel de talento 3 en [destrozar](https://raldamain.com/rules/Crear%20personajes/talentos.html#destrozar-fue) aumenta la cantidad de defensa que reduces con esta habilidad por 1 (incrementa la reducción por 2 si tienes nivel de talento 5). La reducción a la defensa se aplica después de hacer daño a tu objetivo.
-
-<u>Escudo humano</u> (reacción, debes estar en forma del *mono*): Puedes emplear criaturas agarradas por ti como escudos humanos, reposicionándolos para que reciban ataques hechos hacia ti. Si te encuentras en danza de cadenas puedes emplear a una criatura agarrada para bloquear un ataque dirigido hacia ti, causando que esta reciba el daño del ataque si el ataque falla y otorgándote ventaja en tu tiro defensivo (esto cuenta como cubierta).
+**Puño destructor**: Tus ataques son capaces de romper piedra y metal. Al hacer un *golpe aturdidor* reduce la defensa que tenga el objetivo por 2.
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 18-20.
+El daño de tus golpes aumenta a 1d8
 
-<u>Golpe mortal</u> (pasiva): Al impactar a un enemigo que tenga 2 o menos defensa (cuenta la defensa por armaduras y la armadura natural) con un *golpe aturdidor* deberá tener éxito en un tiro de CON frente a tu tiro de ataque o caerá inconsciente de inmediato. Si impactas a un objetivo incapaz de defenderse caerá inconsciente poder hacer un tiro. La habilidad *resistir la muerte* se aplica también contra este efecto.
+Escoge dos estilos de combate conocidos o nuevos y recibes sus habilidades a un rango superior.
 
-<u>Ahorcar</u> (1 acción, debes encontrarte en forma del *mono*): Empleando una acción puedes agarrar con fuerza el cuello de una criatura ahogada, causando que se empiece a ahogar. Una criatura agarrada de esta manera quedará [fatigada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada) y si pasa más turnos agarrada que su estadística de CON caerá inconsciente y morirá ahogada el turno siguiente. Puedes también emplear una acción para apretar tu cadena aún más fuerte, reduciendo así el número de rondas que puede sobrevivir la criatura por 1. Si empleas esta habilidad contra una criatura sorprendida reduce la cantidad de rondas que puede sobrevivir por 1 (mínimo 0). 
+**Puñetazo mortal**: Al hacer un ataque de *golpe aturdidor* contra un objetivo con 2 o menos DEF si fracasa el tiro de CON sufrirá una herida grave en la cabeza o pecho.
 
-<u>Buscar apertura</u> (1 acción): Observando atentamente a un enemigo puedes aprovechar un momento de debilidad para asentarle un golpe mortal. Al emplear esta habilidad entras en un estado de preparación que te permite como reacción atacar a un enemigo que se encuentre a una distancia menor o igual a tu alcance si este sufre un [efecto de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html) que le dificulte a la hora de defenderse (cegado, aturdido, agarrado, náuseas, ensordecido o paralizado). No podrás atacar al mismo objetivo más de una vez por ronda y abandonarás el estado de preparación en el momento que pierdas la concentración.
+# Estilos de combate
 
-# Armas
-
-Un ataque natural base es un puñetazo que 1 + FUE daño contundente. Un ataque natural puede modificarse con las siguientes características tanto fisiológicas como tecnológicas para variar los atributos de tus ataques:
-
-- **Guantelete**: Tus puños están reforzados con un guantelete metálico, incrementando la potencia de tus ataques. Mientras lleves guanteletes aumentas tu daño base a 1d4 (1d6 si tienes rango I de artes marciales) y no sufrirás heridas permanentes utilizando defensa natural al defenderte de armas a costa de dificultar el movimiento de tus manos, otorgándote desventaja en tiros de juego de manos o aquellos que requieran gesticulación compleja, como es el caso de magia arcana o elemental (no recibirás ningún dado de desventaja si tienes la habilidad Ataques infundidos). Puedes añadir las mejoras garra y perforar a tu guantelete, recibiendo las alteraciones que estas otorgarían. 
-- **Garra:** Estás dotado de afiladas zarpas capaces de desgarrar a tus enemigos. Las garras te permiten hacer daño cortante con ataques naturales y todas las heridas permanentes que provoques causarán sangrado. 
-- **Mordisco:** Tu mandíbula está dotada de gran fuerza y con ella puedes morder a tus objetivos. Una vez al turno como acción bonus puedes morder a un objetivo agarrado o incapacitado. El mordisco hará 1d6 + FUE daño perforante modificado por tu fuerza y las heridas permanentes que provocas con tu mordisco son de un nivel superior a las normales.
-- **Tentáculo:** Posees un flexible tentáculo en una parte de su cuerpo con el cual puedes atacar. Un ataque de tentáculo tiene un alcance de 10 pies e infligirá daño contundente al impactar. En lugar de hacer daño puedes agarrar una parte del cuerpo de tu objetivo, causando un efecto similar a la habilidad Enredar. En el caso que tengas la mejora manojo de tentáculos hacer un ataque te costará una acción estándar (movimiento si tienes una cola) y pasará a ser acción de movimiento a rango III. 
-- **Perforar:** Tienes una afilada espina en una parte de tu cuerpo capaz de ágilmente perforar a tus objetivos. Un ataque de perforar inflige 1d6 + FUE daño perforante al impactar y será capaz de infligir heridas permanentes aunque el daño sea reducido a 0. 
+Un ataque base de artes marciales es un puñetazo, patada o golpe que inflige 1 + FUE daño contundente. Puedes usar tu estadística de FUE o DES para tus tiros de ataque con artes marciales. Existen numerosos estilos de artes marciales que se basan en usar tu cuerpo 
 
