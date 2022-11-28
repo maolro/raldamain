@@ -44,10 +44,36 @@ Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. *Lanza
 
 ## Rango V
 
-
-
-
+**Huracán** (3 AP y 3 chi): Liberas el poder de los vientos para formar un devastador huracán que arrasará con todo en su camino. Todas las criaturas en su área de efecto deberán defenderse usando su FUE contra un ataque elemental de aire que provocará 3d6 daño de caída además de empujar dos pasos hacia atrás. Si hay escombros en el área todas las criaturas deberán también defenderse de un ataque elemental que infligirá 2d10 + CAR daño contundente, y en el caso que haya estructuras particularmente grandes los escombros infligirán +1d10 daño y *agarrarán* al objetivo. Si la habilidad *controlar los vientos* está activa estos aumentarán enormemente su fuerza durante las siguientes tres rondas, impidiendo los ataques a distancia y que otras criaturas puedan volar.
 
 ## Rango VI
 
-**Huracán** (3 AP y 5 chi): Liberas el poder de los vientos para formar un devastador huracán que arrasará con todo en su camino. Todas las criaturas en su área de efecto deberán defenderse usando su FUE contra un ataque elemental de aire que provocará 3d6 daño de caída además de empujar dos pasos hacia atrás. Si hay escombros en el área todas las criaturas deberán también defenderse de un ataque elemental que infligirá 2d10 + CAR daño contundente, y en el caso que haya estructuras particularmente grandes los escombros infligirán +1d10 daño y *agarrarán* al objetivo. Si mantienes la concentración en el huracán podrás atacar el turno siguiente con él a todos los objetivos que se encuentren en un cono grande, repitiendo el mismo efecto. Si el huracán permanece activo durante dos o más rondas también llenarás todo el campo de batalla con el efecto de *controlar los vientos*.
+**Vientos de la devastación** (3 AP y 5 chi): 
+
+# Elemental de aire
+
+## Base
+
+- **Estadísticas**: Carece de FUE y CON. Tiene 4 DES y 5 CAR
+- **PV:** 4 + CAR
+- **Vitalidad:** 8 + CAR
+- **Defensa:** 0
+- **Resistencias:** magia 4
+- **Inmunidades:** daño no-mágico, veneno, efectos mentales, eléctrico, sónico
+- **Movimiento:** vuelo 
+- **Acciones:** 4
+- **Habilidades:**
+  - Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
+  - *Ataque elemental*: El elemental recibe las acciones de ataque *vendaval, viento furibundo* (recarga 5-6) y *lanzamiento* empleando como estadística principal la CAR y sumando +1 a su tiro de ataque
+  - *Parada elemental:* Puede defenderse de ataques a distancia y mágicos usando su DES y sumándole +1
+
+## Mejora 1
+
+
+
+## Mejora 2
+
+
+
+## Mejora 3
+
