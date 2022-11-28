@@ -37,7 +37,7 @@ Reduce el coste de *manipulación telequinética* y *onda de fuerza* por 1. Pued
 
 **Levitación** (2 AP y 2 chi): Una criatura a distancia media recibe velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar hasta que pierdas la concentración.
 
-**Estrangulación telequinética** (2 AP y 2 chi): Haz un ataque de *agarre telequinético* que al impactar empezará a estrangular al objetivo, *fatigándolo* de inmediato. Si este no logra escapar tras una cantidad de rondas igual a su CON caerá *inconsciente* y morirá tras una ronda si no es liberado. Puedes emplear 2 AP para reducir la cantidad de rondas que puede sobrevivir por 1.
+**Estrangulación telequinética** (2 AP y 2 chi): Haz un ataque de *agarre telequinético* que al impactar empezará a estrangular al objetivo, *fatigándolo* de inmediato. Si este no logra escapar tras una cantidad de rondas igual a su CON caerá *inconsciente* y morirá tras una ronda si no es liberado. Puedes emplear 2 AP para reducir la cantidad de rondas que puede sobrevivir por 1. (1 chi) Afecta a un objetivo adicional
 
 **Batidora humana** (2 AP y 2 chi): Haz un ataque con telekinesia contra un objetivo a distancia media que al impactar lo retendrá en una *barrera de fuerza* que lo rodeará por completo. Mientras la criatura permanezca en esa barrera empezará a ser estampado furiosamente contra las paredes de esta, sufriendo 2d6 + INT daño físico al principio de su turno y sufriendo el efecto de estado *náuseas* durante una ronda. El afectado puede intentar escapar de la misma manera que una *barrera de fuerza.*
 
