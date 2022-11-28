@@ -49,5 +49,54 @@ Escoge dos estilos de combate conocidos o nuevos y recibes sus habilidades a un 
 
 # Estilos de combate
 
-Un ataque base de artes marciales es un puñetazo, patada o golpe que inflige 1 + FUE daño contundente. Puedes usar tu estadística de FUE o DES para tus tiros de ataque con artes marciales. Existen numerosos estilos de artes marciales que se basan en usar tu cuerpo 
+Un ataque base de artes marciales es un puñetazo, patada o golpe que inflige 1 + FUE daño contundente. Puedes usar tu estadística de FUE o DES para tus tiros de ataque con artes marciales. Existen numerosos estilos de artes marciales que se basan en usar tu cuerpo de maneras particulares para emular determinados animales, los cuales quedan especificados a continuación
 
+## Forma del dragón
+
+I. **Patada del dragón**: Al entrar en *posición defensiva* la siguiente vez que un enemigo entre en un espacio en tu alcance puedes hacerle un ataque de oportunidad que inflige +1d6 daño y lo empuja al impactar.
+
+II. **Giro enfurecido** (1 AP): Haz tu siguiente ataque contra tres criaturas en tu alcance que también estén adyacentes entre sí.
+
+III. **Carga poderosa:** Si te mueves en línea recta antes de atacar a un objetivo infliges +1d6 daño y puedes usar *golpe aturdidor* sin la necesidad de gastar acciones
+
+IV. **Romper escudos:** Si un enemigo se defiende de una *patada del dragón* o una *carga poderosa* usando un escudo reduce su valor defensivo por 1 tengas éxito o no. Si se defiende con magia le haces la mitad de daño en caso de que falles el ataque.
+
+## Forma de la grulla
+
+I. **Vuelo de la grulla:** Una vez por ronda al fallar un tiro defensivo con artes marciales puedes repetirlo tirando esquiva. Tus habilidades de *reflejos* obtenidas al esquivar se aplican también al usar artes marciales para defenderte.
+
+II. **Patada giratoria** (1 AP): Haz tu siguiente ataque contra tres criaturas en tu alcance que estén adyacentes entre sí. Cada criatura que impactes será empujada hacia atrás,
+
+III. **Reposicionar:** Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
+
+IV. **Ataque saltarín:** Tu arma aumenta su alcance a cercano.
+
+## Forma del mono
+
+I. **Agilidad del mono**: Añade +DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
+
+II. **Golpes furia** (2 AP): Haz un ataque contra tres criaturas en tu alcance adyacentes entre sí que inflige +1d6 daño y al impactar el objetivo debe tirar FUE contra tu tiro de ataque o cae al suelo  
+
+III. **Agarre superior** (1 AP): Haz un ataque con tu arma que al impactar *agarrará* al objetivo. Mientras estés agarrando no puedes moverte ni esquivar.
+
+IV. **Escudo humano:** Si tienes a un objetivo agarrado y recibes un ataque puedes usarlo para bloquearlo, recibiendo ventaja en tu tiro defensivo y provocando que el ataque le impacte si te falla.
+
+## Forma de la serpiente
+
+I. **Mordisco de serpiente** (1 AP): Inflige una herida leve al impactar con tu siguiente ataque si el objetivo lleva armadura ligera o inferior. +1 AP para aumentar el nivel de armadura que puedes afectar por un paso
+
+II. **Finta** (1 AP): El objetivo se defiende con su SAB y si fracasa no puede defenderse de tu siguiente ataque
+
+III. **Reposicionar:** Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
+
+IV. **Precisión mortal:** Al realizar un ataque apuntado puedes escoger la parte del cuerpo donde infliges una herida permanente.
+
+## Forma del tigre
+
+I. **Furia del tigre** (1 AP): Tu siguiente ataque inflige +1d6 daño y empujará al impactar.
+
+II. **Romper huesos:** Al impactar a un enemigo con 4 o menos DEF aumenta el nivel de las heridas infligidas por un paso.
+
+III. **Carga poderosa:**  Si te mueves en línea recta antes de atacar a un objetivo obtienes los efectos de *furia del tigre* y *golpe aturdidor* sin la necesidad de gastar acciones y al impactar el objetivo deberá tirar FUE contra tu tiro de ataque o caerá al suelo.
+
+IV. **Asalto consecutivo** (1 AP): Haz tu siguiente ataque todas las criaturas adyacentes a ti y todos los objetivos que impactes deberán tirar FUE contra tu tiro de arma o caerán al suelo. El daño adicional de *furia del tigre* se aplica a todos los objetivos.

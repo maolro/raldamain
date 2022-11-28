@@ -47,7 +47,7 @@ Añade tu rango a todos los tiros para usar hechizos de nigromancia y aumenta tu
 
 *Toque necrótico* y *descarga de energía negativa* aumentan el daño base a 1d10
 
-**Toque de la muerte** (1 acción y 3 chi): Una criatura adyacente debe tener éxito en un tiro de CON contra tu nigromancia o sufrirá 3d10 + CAR daño necrótico que también provocará *enervación*. Si el objetivo muere por este ataque se transformará en un no-muerto menor. (1 chi) Afecta a un objetivo adicional
+**Toque de la muerte** (1 acción y 3 chi): Una criatura adyacente debe tener éxito en un tiro de CON contra tu nigromancia o sufrirá 3d10 + CAR daño necrótico que también provocará *enervación* (la mitad de daño en caso de éxito). Si el objetivo muere por este ataque se transformará en un no-muerto menor. (1 chi) Afecta a un objetivo adicional
 
 **Alma corrompida:** Recibes resistencia 2 contra el daño físico y puedes usar tu CAR en lugar de tu CON para calcular tus PV y Vitalidad. Además puedes seguir luchando con 0 PV recibiendo el efecto de estado *ralentizando*, muriendo solo cuando el valor absoluto de tus PV negativos sea igual a tu CAR. Si ya eres un no-muerto te regenerarás 2 Vitalidad al principio de tu turno y todas las heridas permanentes hechas contra ti serán de un grado inferior.
 

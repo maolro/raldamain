@@ -23,7 +23,7 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de fuego y au
 
 **Bola de fuego** (2 AP y 1 chi): Haz un ataque de *llamarada* con radio de salpicadura corto cuyo daño estará modificado por tu CAR en lugar de tu rango. (1 chi) Aumenta el radio de efecto a medio
 
-**Látigo flamígero** (2 AP y 1 chi): Ataca a todos los enemigos en una línea media con un látigo de fuego (1d4 + 2 de media) que infligirá 1d6 + CAR daño fuego y provoca una quemadura leve al reducir PV. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes 
+**Látigo flamígero** (2 AP y 1 chi): Ataca a todos los enemigos en una línea media con un látigo de fuego (1d4 + 2 de media) que infligirá los efectos de *toque abrasador* al impactar pero estará modificado por tu estadística de CAr en lugar de tu rango. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes 
 
 ## Rango III
 

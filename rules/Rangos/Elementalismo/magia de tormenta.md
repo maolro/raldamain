@@ -7,48 +7,46 @@ Tu control avanzado sobre el aire te ha permitido desviarte de su forma más bá
 
 ## Rango I 
 
-Añade un dado de soltura a todos tus ataques elementales.
+Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de chi por 3
 
-<u>Relámpago</u> (2 acciones): Empleando 2 acciones ataca a un objetivo con un relámpago. Este ataque tiene alcance de 30 pies y hace 1d6 + rango daño eléctrico al impactar. Si logras provocar daño a los PV con este ataque tu objetivo quedará ralentizado durante una ronda (aturdido si provocas un golpe crítico). Un relámpago no puede evitarse usando *[reflejos](https://raldamain.com/rules/Rangos/Combate/reflejos.html)* si tu enemigo se encuentra a menos de 30 pies de ti salvo que tenga la habilidad [*Esquiva asombrosa superior*](https://raldamain.com/rules/Rangos/Combate/reflejos.html#rango-iv). Obtienes ventaja atacando a criaturas que lleven armadura o escudo metálicos y en el caso que te encuentres en un lugar afectado por una tormenta puedes hacer que un rayo caiga sobre un objetivo en un lugar a 60 pies de ti empleando 2 acciones (este tampoco puede ser esquivado). 
+**Toque chispeante** (2 AP): Haz un ataque de magia de tormenta contra un objetivo adyacente que inflige 1d6 + rango daño eléctrico y *ralentiza* durante una ronda (*aturde* si reduces PV). Tienes ventaja atacando a enemigos que lleven metal y aquellos con armadura completa no podrán defenderse. (1 chi) Aumenta el alcance a cercano
 
-<u>Onda trueno</u> (2 acciones): Empleando 2 acciones puedes provocar una atronadora onda afectando un radio de 15 pies. Todos los objetivos en su área deberán tirar CON frente a tu ataque elemental o sufren 1d6 + rango daño trueno y si provocas daño a los PV quedarán ensordecidos durante una ronda (aturdido si provocas un golpe crítico). Una onda trueno es también capaz de todos los objetos de cristal u otros materiales frágiles en el área de efecto.
+**Arco eléctrico** (2 AP): Ataca a un objetivo a distancia media infligiendo 1d6 + rango daño eléctrico al impactar y *ralentizando* si reduces PV. Tienes ventaja atacando a criaturas que lleven armadura metálica (1 chi) Formas un rayo adicional en otra dirección.
 
-<u>Reserva de energía</u> (pasiva): Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes hacer un ataque elemental adicional, incrementar el radio de onda trueno por 15 pies o causar que relámpago tenga un área de salpicadura de 5 pies. Esta habilidad solo puede usarse una vez al turno.
+**Onda trueno** (2 AP y 1 chi): Emites una onda sonora que rompe todos los objetos frágiles a una distancia cercana y los objetivos deben tener éxito en un tiro CON frente a tu magia de tormenta o sufrirán 1d6 + rango daño trueno y son ensordecidos si reduces PV (la mitad de daño si tienen éxito). 
 
 ## Rango II
 
-<u>Relámpago en cadena</u> (1 acción o -1 reserva) Al impactar con un ataque de relámpago puedes emplear una acción o reducir tu reserva elemental por 1 para que este salte de ese objetivo a otro que se encuentre a 20 pies, permitiéndote realizar un ataque adicional contra él. Emplear relámpago en cadena te cuesta una acción bonus si tu nuevo objetivo lleva armadura pesada de metal o se encuentra en un espacio cargado. Esta habilidad puede emplearse varias veces en un ataque siempre y cuando consigas impactar a un nuevo objetivo. A rango IV puedes afectar a un objetivo adicional a 20 pies cuando utilices relámpago en cadena. 
+**Barrera de rayos** (2 AP y 1 chi): Cargas el aire para formar una barrera de relámpagos que te otorga cubierta completa contra todos los ataques. Si una criatura intenta cruzar la barrera deberá tirar CON frente a tu magia de tormenta o sufrirá 1d6 daño eléctrico y quedará aturdido durante una ronda. Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
 
-<u>Cargar el aire</u> (1 acción) Puedes emplear una acción o reducir tu reserva elemental por 1 para cargar una porción de aire de volumen igual a 5 pies por rango con energía eléctrica. Cada vez que una criatura pase por una zona cargada deberá hacer un tiro de CON contra tu ataque elemental o sufrirá 3 daño eléctrico y quedará ralentizada durante el resto de la ronda (las criaturas con armadura metálica fracasarán automáticamente este tiro). Un área cargada se desvanecerá al principio de tu siguiente turno salvo que afectes a un muro de viento o un torbellino con esta habilidad.
+**Relámpago** (2 AP y 1 chi): Haz un ataque contra todos los objetivos en una línea de longitud grande infligiendo daño igual a *arco eléctrico* pero modificado por tu CAR en lugar del rango además de *ralentizar* al impactar (*aturdes* si reduces PV). Este ataque no puede ser esquivado y la línea puede divergir de su camino si hay algún conductor eléctrico a distancia cercana de ella (1 chi) Formas un rayo adicional en otra dirección.	
+
+**Bomba sónica** (2 AP y 1 chi): Haz un ataque de magia de tormenta con alcance medio que atacará a todos los objetivos a un radio corto del punto del impacto. Este ataque infligirá daño trueno igual al *toque chispeante* pero estará modificado por tu estadística de CAR en lugar de tu rango además que *ensordecerá* en el caso que reduzca PV. Este ataque también destruirá todas las estructuras frágiles en el área de efecto y no puede ser detenido por un muro. (1 chi) Defenderse de este ataque requiere un tiro de CON de la misma manera que *onda trueno*.
 
 ## Rango III
 
-Aumenta tu probabilidad de crítico a 19-20. Reduce el coste de realizar ataques de relámpago por 1 acción.
+**Furia de los cielos** (3 AP y 2 chi): Lanzas un poderoso relámpago hacia el aire para cargarlo y formar una pequeña tormenta. Esta tormenta permanecerá durante el resto del combate y esta te permite una cantidad de veces igual a tu rango lanzar un *arco eléctrico* desde ella hacia cualquier punto en el campo de batalla una vez por turno como acción bonus. Cuando hayas agotado los usos de esta habilidad la tormenta cesará y el clima volverá a la normalidad.
 
-<u>Voltio cruel</u> (acción bonus): Reduciendo tu reserva elemental por 1 puedes provocar espasmos en los músculos de tu objetivo al impactar con un ataque elemental, ocasionando que empiece a moverse de una manera errática y desordenada. Una criatura afectada por esta habilidad deberá tener éxito en un tiro de CON contra tu ataque elemental o sufrirá uno de los siguientes efectos según la parte del cuerpo impactada (si no apuntas a una parte del cuerpo específica el lugar impactado será aleatorio):
+**Esferas del relámpago** (2 AP y 2 chi): Formas una cantidad de esferas del relámpago igual a tu rango – 1 que orbitarán en torno a ti. Mientras te quede almenos una esfera todos tus ataques que provoquen daño eléctrico tendrán ventaja y aumentan su alcance a medio. Además, como reacción usable una vez por turno puedes atacar a un objetivo a distancia cercana con un ataque de *toque chispeante* que no puede ser esquivado.  Las esferas permanecerán activos mientras mantengas la concentración y en el momento que la pierdas estas explotarán, provocando una explosión que infligirá 1d4 daño eléctirco por esfera a todas las criaturas en el área (un tiro defensivo contra +3 x esfera reducirá el daño a la mitad). 
 
-- **Piernas:** Tu objetivo se mueve 10 pies en una dirección aleatoria y cae al suelo
-- **Brazos:** Tu objetivo empieza a mover sus brazos en direcciones aleatorias, quedando desarmado de un objeto y recibiendo desventaja en todos sus tiros de parada.
-- **Torso:** Tu objetivo queda fatigado durante una ronda.
-- **Abdomen:** Tu objetivo queda enfermado durante una ronda.
-- **Cabeza:** Tu objetivo queda aturdido durante una ronda.
-
-<u>Onda destructora</u> (1 acción): Puedes contener la energía del trueno para liberarla después en una destructiva onda. Puedes emplear una acción o reducir tu reserva elemental por 1 almacenar la energía de una onda trueno, recibiendo un punto de energía llegando a un máximo igual a tu rango + 1. Al hacer un ataque puedes gastar un número de puntos de energía para incrementar su fuerza, aumentando así el área de efecto por 5 pies y el daño por 1 un número de veces igual al total de puntos empleados. Si gastas 3 o más cargas la onda resultante destruirá todas las estructuras frágiles en el área y ensordecerá a todas las criaturas en el área (aturde si logra reducir los PV) mientras que si gastas 5 o más cargas podrás destruir estructuras más sólidas como muros de piedra o hielo y convertir todo el área en terreno difícil.
+**Invocar elemental de rayo** (3 AP y 2 chi): Invoca a un elemental de rayo que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
 
 ## Rango IV
 
-<u>Jinete del relámpago</u> (1 acción) Eres capaz de emplear tus ataques elementales para propulsarte largas distancias. En lugar de atacar puedes propulsarte 60 pies en una linea empleando una acción o reduciendo tu reserva elemental por 1. Esto cuenta como una carga, y si en cualquier punto de la línea impactas a una criatura tú sufrirás 2 daño no letal, pero puedes hacerle inmediatamente un ataque elemental (aún puede esquivarlo).
+**Relámpago en cadena** (2 AP y 2 chi): Haz un ataque de *relámpago* que al impactar saltará hacia un objetivo adicional a distancia corta de este, haciendo así un ataque adicional. El relámpago puede seguir saltando hacia nuevos objetivos hasta que no haya ninguno más o tu ataque falle. (1 chi) Crea un *relámpago en cadena* adicional.
 
-<u>Castigo de los cielos</u> (1 acción): Tienes la habilidad de contener la energía eléctrica y liberarla después. Esto funciona como onda destructiva, pero al liberar tu energía haces un ataque de relámpago por cada ataque acumulado. Cada relámpago se dispara en la dirección que tú elijas, y si dos caen en la misma dirección se combinan en un único ataque que hará +1 daño base y aumentará su alcance por 15 pies. Si estás en una tormenta puedes hacer que esos relámpagos acumulados caigan del cielo, atacando a las criaturas que tú desees.
+**Furia de la tormenta** (2 AP y 2 chi): Eres capaz de sobrecargar los conductos de chi conectados con tu cuerpo hasta llevarlos al límite, provocando que desaten una enorme explosión de rayos y truenos. El área de la explosión será pequeño y todos en la zona deberán defenderse de un ataque que infligirá 2d8+CAR daño eléctrico (2d10 a rango V) y 1d10+rango daño trueno al impactar. El ataque partirá de tu propio cuerpo salvo que te encuentres en una tormenta, donde puedes hacer que parta desde cualquier punto a distancia media. (1 chi) Aumenta el área d
+
+**Jinete del relámpago** (2 AP y 2 chi): Te mueves a la velocidad del rayo durante un breve periodo de tiempo, incrementando tu velocidad de vuelo por 1 y recibiendo ventaja en todos tus tiros de esquiva durante una ronda. Además, al realizar una carga te mueves con tal velocidad que tus ataques no pueden ser esquivados por adversarios que no tengan la habilidad *sexto sentido*.
 
 ## Rango V 
 
-Aumenta tu probabilidad de crítico a 18-20. Aumenta tu máximo de acciones al turno por 1.
+**Cambiar el clima** (3 AP y 3 chi): 
 
-<u>Rayo divino</u> (pasiva): Tus ataques eléctricos son capaces de atravesar las resistencias de tus objetivos y todos los rayos que lances desde el cielo aumentarán su daño base por 1d6. Criaturas con resistencia al daño eléctrico continuarán recibiendo bonificadores para evitar efectos de estado provocados por tus llamas. Un rayo divino también es capaz de herir a criaturas incorpóreas.
+**Descenso relampagueante** (2 AP y 3 chi): 
 
-<u>Tormenta de venganza</u> (3 acciones): Empleando 3 acciones puedes invocar una devastadora tormenta capaz de arrasar con todo a su alrededor. Para usar esta habilidad debe haber clima tormentoso y permanecerá activa durante seis rondas. Esta tormenta te otorgará los siguientes beneficios:
+**Voltio cruel** (1 AP y 3 chi): Haz un ataque contra una criatura adyacente que no puede ser esquivado el cual inflige 2d10 + CAR daño eléctrico y *aturde* durante una ronda. Si este ataque logra reducir PV provocará heridas permanentes y si una herida permanente llega a impactar al pecho esta aumentará su efectividad por un paso.
 
-- No se pueden hacer ataques a distancia y es imposible concentrarse mientras la tormenta siga activa
-- Las fuertes lluvias reducen la visibilidad a 15 pies y todas las criaturas que no sean Elementalistas de agua o aire se mueven a mitad de velocidad.
-- Puedes hacer un ataque elemental de rayo, trueno o aire como acción bonus una vez al turno.
+## Rango VI
+
+ **Tormenta de venganza** (3 AP y 5 chi): 
