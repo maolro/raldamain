@@ -65,7 +65,7 @@ Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. *Lanza
 - **Movimiento:** vuelo 
 - **Acciones:** 4
 - **Habilidades:**
-  - Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
+  - *Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
   - *Ataque elemental*: El elemental recibe las acciones de ataque *vendaval, viento furibundo* (recarga 5-6) y *lanzamiento* empleando como estadística principal la CAR y sumando +1 a su tiro de ataque
   - *Parada elemental:* Puede defenderse de ataques a distancia y mágicos usando su DES y sumándole +1
 
