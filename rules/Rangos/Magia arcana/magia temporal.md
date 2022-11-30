@@ -9,11 +9,11 @@ El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo
 
 Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
 
-**Premonición**:  Como reacción repite un tiro de tu elección y te quedas con el resultado que más te convenga (máximo una vez por tiro). Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
+**Premonición**: Como reacción repite un tiro de tu elección y te quedas con el resultado que más te convenga (máximo una vez por tiro). Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
 
 **Alteración temporal** (1 AP y 1 chi): Restaura un objeto pequeño a su estado anterior reparándolo de todos los daños sufridos en la última ronda. Si esta habilidad se usa en una persona puedes sanarle una cantidad de Vitalidad igual a tu rango + 2.
 
-**Robar el tiempo** (2 AP): Haz un ataque con magia temporal contra un objetivo a distancia corta el cual se defenderá tirando CON. Si es un objeto reducirá su efectividad y empezará a romperse mientras que si es una persona sufrirá 1d6 + rango daño fuerza y quedará *fatigada* si pierde PV. (1 chi) El objetivo reduce su reserva de chi por 1 y recuperas un uso de *premonición*.
+**Robar el tiempo** (2 AP): Haz un ataque con magia temporal contra un objetivo a distancia corta el cual se defenderá tirando CON o magia protectora. Si es un objeto reducirá su efectividad y empezará a romperse mientras que si es una persona sufrirá 1d6 + rango daño fuerza y quedará *fatigada* si pierde PV. (1 chi) Si logras impactar con tu ataque el objetivo reducirá su reserva de chi por 1 y recuperas un uso de *premonición*.
 
 ## Rango II
 
@@ -52,3 +52,25 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 ## Rango VI
 
 **Retroceso en masa** (3 AP y 5 chi): Retrocedes los eventos en una burbuja de tamaño grande a cualquier momento anterior del combate. Todos los personajes afectados volverán a dicho momento, restaurando todas sus estadísticas a aquellas que tenían en dicho momento y volviendo a las posiciones que tenían entonces. No obstante, recordarán todos los eventos sucedidos y las reservas de chi no se restaurarán. Esta habilidad no es un viaje temporal y los eventos sucedidos fuera de esta habilidad no se verán alterados.	
+
+# Rangos míticos
+
+## Rango I
+
+**Premonición:** Aumenta los usos de esta habilidad por cada rango mítico que tengas y puedes emplear un uso para que un enemigo tenga que tirar una segunda vez y quedarse con el peor resultado. 
+
+**Alteración temporal:** Al reparar un objeto lo restauras a su estado original, reparando así todos los daños que haya sufrido a lo largo de su existencia. Además, si usas esta habilidad en una persona puedes sanarle PV y reducirás el nivel de una herida permanente que tenga por un paso.
+
+**Robar el tiempo:** Al emplear esta habilidad en un objeto no-mágico lo harás inutilizable mientras que si la usas en una persona le infligirás el efecto de estado *exhausto* al impactar y tiras un dado de daño adicional. (1 chi) Reduce la reserva de chi por 2 y recuperas 2 usos de *premonición* al impactar.
+
+## Rango II
+
+## Rango III
+
+## Rango IV
+
+## Rango V
+
+## Rango VI
+
+**Retroceso en masa:** Al usar esta habilidad puedes decidir quiénes volverán a su estado original y quiénes no, manipulando el flujo del tiempo como desees. Además, la burbuja permanecerá activa mientras mantengas la concentración en ella y cuando pase una cantidad de tiempo igual a la diferencia entre el momento al que vuelves y el momento en el que lanzaste este efecto puedes volver a usar esta habilidad sin la necesidad de gastar chi.

@@ -22,7 +22,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de aire e increme
 
 **Esfera de aire** (2 AP y 1 chi): Formas una esfera de vientos cortantes en la palma de tu mano y ataca a una criatura adyacente con ella, haciendo un ataque elemental de aire que inflige daño cortante igual al de *lanzamiento* pero con un dado de daño adicional y empujando un paso al impactar. (1 chi) La esfera permanecerá en tu mano hasta el final de tu siguiente turno o hasta que pierd, permitiéndote atacar con ella hasta que se disipe empleando 2 AP sin la necesidad de gastar chi.
 
-**Azote del viento** (2 AP y 1 chi): Creas una masa de aire que eres capaz de mantener y controlar a voluntad para atacar a tus enemigos. Mientras mantengas la concentración podrás hacer un ataque de *vendaval* como acción bonus contra un objetivoa distancia cercana además que puedes sacrificar la masa de aire para detener un ataque mágico o a distancia que te haya impactado, perdiendo de inmediato sus beneficios. (1 chi) Creas una segunda masa de aire para aumentar tu dominio del campo de batalla, permitiéndote repetir uno de tus tiros de magia de viento una vez por ronda mientras la habilidad permanezca activa.
+**Azote del viento** (2 AP y 1 chi): Creas una masa de aire que eres capaz de mantener y controlar a voluntad para atacar a tus enemigos. Mientras mantengas la concentración podrás hacer un ataque de *vendaval* como acción bonus contra un objetivos distancia cercana además que puedes sacrificar la masa de aire para detener un ataque mágico o a distancia que te haya impactado, perdiendo de inmediato sus beneficios. (1 chi) Creas una segunda masa de aire para aumentar tu dominio del campo de batalla, permitiéndote repetir uno de tus tiros de magia de viento una vez por ronda mientras la habilidad permanezca activa.
 
 ## Rango III 
 
@@ -45,6 +45,8 @@ Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. *Lanza
 ## Rango V
 
 **Huracán** (3 AP y 3 chi): Liberas el poder de los vientos para formar un devastador huracán que arrasará con todo en su camino. Todas las criaturas en su área de efecto deberán defenderse usando su FUE contra un ataque elemental de aire que provocará 3d6 daño de caída además de empujar dos pasos hacia atrás. Si hay escombros en el área todas las criaturas deberán también defenderse de un ataque elemental que infligirá 2d10 + CAR daño contundente, y en el caso que haya estructuras particularmente grandes los escombros infligirán +1d10 daño y *agarrarán* al objetivo. Si la habilidad *controlar los vientos* está activa estos aumentarán enormemente su fuerza durante las siguientes tres rondas, impidiendo los ataques a distancia y que otras criaturas puedan volar.
+
+
 
 ## Rango VI
 
