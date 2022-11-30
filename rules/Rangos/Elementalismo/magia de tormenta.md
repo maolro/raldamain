@@ -80,7 +80,7 @@ Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de c
 - Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
 - Recibe +1 en todos sus ataques elementales y sus tiros de parada además de aumentar su reserva de chi por 1
 - Aumenta el daño base de *arco eléctrico* y *toque chispeante* a 1d8 y reduce su coste por 1 AP.
-- Si hay una tormenta activa puede usarla para viajar a gran velocidad, fusionándose con ella empleando 2 AP. Si está fusionado con la tormenta puede aparecer en cualquier punto del campo de batalla cayendo del cielo como si fuera un relámpago. Si hay una criatura en dicha posición el siguiente ataque de *toque chispeante* que haga no puede ser esq
+- Si hay una tormenta activa puede usarla para viajar a gran velocidad, fusionándose con ella empleando 2 AP. Si está fusionado con la tormenta puede aparecer en cualquier punto del campo de batalla cayendo del cielo como si fuera un relámpago. Si hay una criatura en dicha posición el siguiente ataque de *toque chispeante* que haga no puede ser esquivado
 - Al ser invocado tiene activa la habilidad *esferas del relámpago* hasta que pierda PV. 
 
 ## Mejora 3
