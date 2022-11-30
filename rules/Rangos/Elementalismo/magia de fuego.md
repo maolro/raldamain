@@ -56,3 +56,43 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 ## Rango VI
 
 **Descenso del dragón** (3 AP y 5 chi): Creas un gigantesco dragón hecho de llamas que arrasará con todo a tu paso. Al invocar al dragón haz un ataque contra cada criatura en un cilindro horizontal grande que inflige 2d10 + CAR daño fuego y una quemadura grave además de llenar el área afectado con un *muro de llamas*. Mientras mantengas la concentración puedes hacer que el dragón vuele dos pasos como acción bonus y ataque de nuevo a cada criatura en su camino, infligiendo la misma cantidad de daño. Si el dragón permanece a tu lado recibes los beneficios de *muro de fuego*, incluyendo la cubierta que otorga.
+
+# Elemental de fuego
+
+## Base
+
+- **Estadísticas**: Carece de FUE y CON. Tiene 4 DES y 5 CAR
+- **PV:** 4 + CAR
+- **Vitalidad:** 8 + CAR
+- **Defensa:** 0
+- **Resistencias:** magia 4, frío 4, radiante 4
+- **Inmunidades:** daño no-mágico, veneno, efectos mentales, fuego, necrótico
+- **Vulnerable:** ataques elementales de agua y arena
+- **Movimiento:** vuelo 2
+- **Acciones:** 4
+- **Habilidades:**
+  - Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
+  - *Ataque elemental*: El elemental recibe las acciones de ataque *toque abrasador, llamarada* y *aliento de fuego* (recarga 5-6) usando como estadística principal la CAR y sumando +1 a su tiro de ataque. 
+  - *Fuente de fuego*: Una vez por ronda el invocador puede reducir la Vitalidad y PV máximos de esta criatura por 2 para reducir el coste en chi de un hechizo de magia elemental de fuego por 1.
+
+## Mejora 1
+
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada
+- Se regenera 2 Vitalidad al principio de su turno
+- Puede usar *muro de llamas* una vez por ronda como reacción además que puede modificar uno de sus ataques con *bola de fuego* o *látigo flamígero* gastando +1 AP
+
+## Mejora 2
+
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada además de aumentar su reserva de chi por 1
+- Aumenta el daño base de *llamarada* y *toque abrasador* a 1d8 y reduce su coste por 1 AP.
+- Esta criatura está siempre rodeada por un *aura abrasadora*
+- Cada vez que pase por un espacio en llamas activará la habilidad *pirotecnia* y tiene activa *serpiente de fuego* hasta que pierda PV. 
+
+## Mejora 3
+
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada
+- Esta criatura está rodeada por la habilidad *danza de las llamas*. Recibe también la habilidad *inmolación* con recarga 5-6, la cual puede recargar reduciendo su Vitalidad y PV máximos por 2.
+- Empleando 2 AP puede cambiar de estado para transformarse en un *torbellino de fuego,* infligiendo este ataque contra las criaturas en su área de efecto. Mientras permanezca en este estado perderá sus acciones pero podrá moverse una vez por ronda como acción bonus.

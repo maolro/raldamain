@@ -50,3 +50,42 @@ Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de c
 ## Rango VI
 
 **Tormenta de venganza** (3 AP y 5 chi): Invocas una tormenta enormemente destructiva emulando la furia de los dioses. Esta habilidad afectará el campo de batalla con *cambiar el clima* y mientras pasen las rondas aumentará su fuerza. A partir de la segunda ronda puedes hacer un ataque de *relámpago* o *onda trueno* cada ronda como acción bonus sin coste de chi y a partir de la cuarta puedes hacer que el ataque sea de *furia de la tormenta* o *relámpago en cadena*. No necesitarás concentrarte en ninguno de estos efectos y la *tormenta de venganza* se desvanecerá al cabo de 7 rondas. Estos ataques bonus se acumulan con aquellos que otorga la habilidad *llamar a la tormenta*.
+
+# Elemental de tormenta
+
+## Base
+
+- **Estadísticas**: Carece de FUE y CON. Tiene 4 DES y 5 CAR
+- **PV:** 4 + CAR
+- **Vitalidad:** 8 + CAR
+- **Defensa:** 0
+- **Resistencias:** magia 4
+- **Inmunidades:** daño no-mágico, veneno, efectos mentales, eléctrico, sónico
+- **Movimiento:** vuelo 
+- **Acciones:** 4
+- **Habilidades:**
+  - *Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
+  - *Ataque elemental*: El elemental recibe las acciones de ataque *arco eléctrico, *on* (recarga 5-6) y *toque chispeante* empleando como estadística principal la CAR y sumando +1 a su tiro de ataque
+  - *Parada elemental:* Puede defenderse de ataques a distancia y mágicos usando su DES y sumándole +1
+
+## Mejora 1
+
+- ·Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada
+- Se regenera 2 Vitalidad al principio de su turno
+- Puede usar *barrera de rayos* una vez por ronda como reacción además que puede modificar uno de sus ataques con *relámpago* o *bomba sónica* gastando +1 AP
+
+## Mejora 2
+
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada además de aumentar su reserva de chi por 1
+- Aumenta el daño base de *arco eléctrico* y *toque chispeante* a 1d8 y reduce su coste por 1 AP.
+- Si hay una tormenta activa puede usarla para viajar a gran velocidad, fusionándose con ella empleando 2 AP. Si está fusionado con la tormenta puede aparecer en cualquier punto del campo de batalla cayendo del cielo como si fuera un relámpago. Si hay una criatura en dicha posición el siguiente ataque de *toque chispeante* que haga no puede ser esq
+- Al ser invocado tiene activa la habilidad *esferas del relámpago* hasta que pierda PV. 
+
+## Mejora 3
+
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada
+- Tiene ventaja en todos sus tiros de esquiva y aumenta su velocidad por 1. Además, todos sus ataques de *toque chispeante* y *arco eléctrico* no pueden ser esquivados salvo por criaturas con *sexto sentido*.
+- Puede usar las habilidades *relámpago en cadena* y *furia de la tormenta* ambas con recarga 5-6
