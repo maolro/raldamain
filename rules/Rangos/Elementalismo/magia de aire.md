@@ -71,11 +71,17 @@ Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. *Lanza
 
 ## Mejora 1
 
-
+- ·Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada
+- Se regenera 2 Vitalidad al principio de su turno
+- Puede usar *muro de viento* una vez por ronda como reacción además que puede modificar uno de sus ataques con *esfera de aire* gastando +1 AP
+- Al ser invocado tiene activa la habilidad *azote del viento* hasta que pierda PV, permitiéndole hacer un ataque adicional de *vendaval* al turno como acción bonus 
 
 ## Mejora 2
 
-
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
+- Recibe +1 en todos sus ataques elementales y sus tiros de parada además de aumentar su reserva de chi por 1
+- Aumenta el daño base de *lanzamiento* a 1d8 y reduce su coste por 1 AP.
 
 ## Mejora 3
 
