@@ -47,7 +47,7 @@ Reduce el coste de *toque sanador, descarga luminosa* y *halo cegador* por 1 AP.
 
 *Descarga luminosa* aumenta el daño base a 1d10
 
-**Explosión solar** (3 AP y 3 chi): Haz un ataque contra todos tus enemigos a radio medio que inflige 3d6 + CAR daño radiante y ciega durante una ronda al impactar. Las criaturas con las que tengas *conexión vital* en el área se sanan 2 + rango Vitalidad y reducen el nivel de una herida permanente o veneno por un paso.
+**Explosión solar** (3 AP y 3 chi): Haz un ataque contra todos tus enemigos a radio medio que inflige 2d10 + CAR daño radiante y ciega durante una ronda al impactar. Las criaturas con las que tengas *conexión vital* en el área se sanan 2 + rango Vitalidad y reducen el nivel de una herida permanente o veneno por un paso.
 
 **Milagro de sanación** (2 AP y 3 chi): Una criatura que haya muerto hace menos de una hora resucita a 1 PV y reduce el nivel de todas las heridas recibidas por un paso. Si usas esta habilidad en una criatura viva se sana toda su Vitalidad y 2 + rango PV además de eliminar una herida permanente, veneno, enfermedad o maldición que tenga.
 
@@ -103,4 +103,4 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 
 ## Rango VI
 
-**Fuente de toda la vida:** Activar esta habilidad matará instantáneamente a todos los no-muertos y criaturas extraplanarias no-míticas además que el efecto de sanación recuperará lo mismo que *sello de regeneración*. Además, tu dado de ventaja se transformará en 1d8 y aumentarás el daño por 1d10.
+**Fuente de toda la vida:** Activar esta habilidad matará instantáneamente a todos los no-muertos y criaturas extraplanarias no-míticas además que el efecto de sanación regenerará lo mismo que *sello de regeneración*. Además, tu dado de ventaja se transformará en 1d8 y aumentarás el daño por 1d10.
