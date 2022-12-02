@@ -9,7 +9,7 @@ Eres capaz de luchar con dos armas simultáneamente como si fuesen una sola, sat
 
 Para desbloquear rangos de esta rama necesitas tener la misma cantidad de rangos en las ramas relacionadas con las armas que usarás en cada mano.
 
-<u>Aptitud con dos armas</u> (acción bonus) Eres capaz de hacer ataques con tu arma secundaria como acción bonus. Este ataque solo puede ser empleado una vez por ronda y recibirá desventaja en su tiro de ataque. A rango III no recibes ningún penalizador atacando con tu arma secundaria.
+**Aptitud con dos armas**: Puedes atacar con tu arma secundaria como acción bonus una vez por ronda recibiendo desventaja en el tiro de ataque.
 
 ## Armas de fuego  
 
@@ -51,34 +51,38 @@ Para desbloquear rangos de esta rama necesitas tener la misma cantidad de rangos
 
 ### Rango I
 
-<u>Parada doble</u> (reacción): Eres capaz de detener ataques tanto con tu arma principal como con la secundaria. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener con tu arma principal una vez por ronda (el penalizador por luchar con doble arma se aplica también a este tiro si lo tienes). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
+**Desviar ataques**: Al fallar un tiro de defensa con tu arma una vez por ronda puedes repetir el tiro con desventaja (2/ronda a rango III)
 
-<u>Tajo cruzado</u> (pasiva): Tu ataque secundario es muy efectivo contra enemigos que ya hayas herido. Al impactar al mismo objetivo con tus dos armas en la misma ronda tu segundo ataque recibirá los beneficios de *ataque poderoso* sin la necesidad de empelar acciones en él.
+**Tajo cruzado**: Si hieres a un enemigo con tu arma principal tu arma secundaria recibe los bonificadores de *ataque poderoso* al atacarlo. 
 
 ### Rango II
 
-<u>Corte circular</u> (acción bonus): Cuando uses la acción *gran corte* puedes atacar también con tu arma secundaria. Un corte hecho de esta manera recibirá un penalizador de un dado de desventaja, pero con él podrás atacar a todas las criaturas que se encuentren a 5 pies de ti. Si un enemigo con escudo logra protegerse de este ataque no lo detendrá, pero sí podrá proteger a las criaturas adyacentes a él. Este penalizador se perderá a rango III.
+**Corte circular**: Al usar la habilidad *gran corte* puedes emplear un ataque con tu arma secundaria para atacar a 3 objetivos adicionales adyacentes a ti.
 
-<u>Juego de espadas</u> (acción bonus): Empleando tus dos armas eres capaz realizar técnicas de combate más complejas para vencer a otros espadachines menos capacitados. Puedes emplear uno de tus ataques con el arma secundaria para recibir ventaja en todos los intentos de *choque de espadas* durante una ronda y si logras atrapar a un enemigo este deberá tener éxito en dos tiros de ataque para poder escapar (tu penalizador por combate doble se aplicará a tiros con tu arma secundaria). Tu arma secundaria puede usarte también para hacer maniobras de desarme. 
+**Juego de espadas**: Al usar la habilidad *choque de espadas* puedes emplear un ataque con tu arma secundaria para obtener ventaja en el tiro o forzar al enemigo a repetir su tiro para escapar
 
 ### Rango III
 
-<u>Muerte por mil cortes</u> (pasiva): Al utilizar Torbellino de acero recibirás un bonificador al daño igual al daño base de tu arma secundaria y aumentas el nivel de las heridas infligidas por un paso. También eres capaz de hacer un ataque adicional al turno con tu arma secundaria.
+No recibes penalizadores al atacar con tu arma secundaria y recibes un ataque adicional al turno con ella.
+
+**Muerte por mil cortes**: Al hacer un ataque de *gran corte* aumenta el daño por un valor igual al daño base de tu arma secundaria. Si empleas un ataque con tu arma secundaria aumenta el nivel de las heridas por un paso
 
 ## Filos perforantes
 
 ### Rango I
 
-<u>Desviar ataques</u> (pasiva): Tu arma secundaria puede desviar ataques que traspasen tus defensas. Esta habilidad te permite hacer una parada adicional contra un ataque que no hayas logrado detener (el penalizador de tu arma secundaria continuará aplicándose). Esta habilidad puede ser empleada una vez adicional por ronda a rango III.
+**Desviar ataques**: Al fallar un tiro de defensa con tu arma una vez por ronda puedes repetir el tiro con desventaja (2/ronda a rango III)
 
-<u>Combate furtivo</u> (pasiva): Tienes ventaja en tus tiros de ataque contra enemigos heridos por tu arma principal y añadirás tu estadística de destreza al daño (si también se aplica *combate furtivo* provoca los efectos de *apuntar ataque*). No recibirás ningún beneficio de esta habilidad si eres desarmado de tu arma principal o tu objetivo tiene la habilidad *esquiva asombrosa superior*.
+**Combate furtivo**: Si hieres a un enemigo con tu arma principal recibes ventaja en todos tus tiros con tu arma secundaria y esta aplicará el daño adicional de *ataque furtivo*. 
 
 ### Rango II
 
-<u>Atrapar arma</u> (pasiva): Usando tus dos armas puedes trabar espadas más grandes que la tuya. Esta habilidad te permite emplear tu ataque principal y secundario para atrapar el arma de tu contrincante, provocándole el efecto de *espadas trabadas*. Si has atrapado el arma de tu enemigo no lo podrás fintar salvo que tengas la habilidad *finta superior*.
+**Arma versátil:**  Puedes emplear un ataque con tu arma secundaria para usar la habilidad *ataque apuntado*, *finta* o *desarme* como acción bonus.
 
-<u>Ataques apuntados</u> (acción bonus): Puedes emplear un ataque con tu arma secundaria para reducir el coste de acciones de un *ataque apuntado* por una acción. Tu arma secundaria puede usarse también para realizar maniobras de finta o desarme.
+**Atrapar arma** (1 AP): Emplea un ataque con tu arma secundaria para realizar un intento de *choque de espadas* contra un arma enemiga (si ya tienes esa habilidad *atrapar arma* cuesta una acción bonus). 
 
 ### Rango III
 
-<u>Cuchillada</u> (pasiva y 2 acciones): Eres capaz de atacar una vez adicional por ronda empleando tu arma secundaria. Adicionalmente, empleando 2 acciones puedes realizar un ataque con tus dos armas en un punto específico del cuerpo de tu adversario. Al usar esta habilidad emplearás uno de tus ataques con tu arma secundaria para incrementar tu daño por un valor igual a su daño base de esta y aumentas el nivel de todas las heridas permanentes infligidas por un paso. 
+No recibes penalizadores al atacar con tu arma secundaria y recibes un ataque adicional al turno con ella.
+
+**Cuchillada** (2 AP): Emplea un ataque con tu arma secundaria para realizar un ataque con tu arma principal con daño adicional igual al daño base de tu arma secundaria y aumentando el nivel de todas las heridas permanentes por un paso.

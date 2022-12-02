@@ -7,45 +7,47 @@ Has decidido ir a por una de las armas mas resistentes y destructivas que hay, d
 
 ## Rango I
 
-Para desbloquear este rango necesitas 2 FUE y un nivel de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango IV.
+Añade tu rango para todos tus tiros de ataque con un arma contundente.
 
-<u>Ataque poderoso</u> (1 acción): Empleando una acción puedes incrementar la fuerza de un ataque a costa de hacerlo más lento. Al realizar un ataque poderoso incrementa el daño base de tu ataque por 1d6 y puedes hacer una maniobra de *tropezar* o *empujar* como acción bonus al impactar. Ataque poderoso solo puede usarse una vez por ataque a rango I, dos veces a rango III y tres veces a rango V, incrementando el daño base por 1d6 por cada acción que gastes en ataque poderoso.
+**Combate salvaje:** Recibes 1 AP adicional a costa de obtener desventaja en todos tus tiros defensivos durante una ronda.
 
-<u>Combate salvaje</u> (pasiva): Puedes sacrificar tus capacidades defensivas para poder realizar más ataques durante tu turno. Al principio de tu ronda puedes escoger entrar en un estado de combate salvaje, recibiendo así una acción adicional a costa de obtener desventaja en todos tus tiros defensivos hasta el inicio de tu siguiente turno. 
+**Ataque poderoso** (1 AP): Aumenta el daño de tu siguiente ataque por 1d6 y empujas al objetivo si impactas. 
 
-<u>Parada</u> (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. 
+**Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. 
+
+**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. 
 
 ## Rango II
 
 Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango V.
 
-<u>Concusión</u> (pasiva): Al impactar a un enemigo con un *ataque poderoso* este deberá tener éxito en un tiro de CON frente a tu tiro de ataque o sufre el efecto de estado [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida). Si obtienes éxito crítico con esta habilidad tu objetivo quedará [paralizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#paralizada) hasta que se recupere, haciendo un tiro de CON cada ronda frente a tu tiro de ataque para recuperarse. Si has empleado más de una acción adicional en *ataque poderoso* tu objetivo quedará también [ralentizado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) durante un número de rondas igual a la cantidad de acciones gastadas.
+**Golpe aturdidor:** Al impactar con un ataque poderoso el objetivo deberá tirar CON frente a tu FUE o será *aturdido* durante una ronda.
 
-<u>Maza oscilante</u> (1 acción): Al hacer un ataque con tu arma puedes emplear una acción adicional para atacar a hasta tres criaturas diferentes que se encuentren en tu radio de alcance que se encuentre a 5 pies una de otra. Tu ataque se detendrá de inmediato si un defensor logra bloquear tu ataque con un escudo o una parada hecha con un arma que no sea ligera. *Ataque poderoso* se aplicará para el daño de todos tus ataques hechos con *maza oscilante*. Los ataques hechos con esta habilidad cuentan como ataques de área al atacar a [tropas](https://raldamain.com/rules/Reglas%20adicionales/combate%20de%20masas.html).
+**Ataque oscilante** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
 
 ## Rango III
 
-Para desbloquear este rango necesitas 4 FUE y tres niveles de talento en destrozar. Hacer un ataque con un arma contundente cuesta una acción menos.
+*Atacar con arma* cuesta -1 AP
 
-<u>Impacto destructor</u> (pasiva): Al impactar a un objetivo con armadura con un *ataque poderoso* podrás reducir su DEF por 2. Esta reducción puede eliminarse reparando la armadura y si la defensa de la armadura queda reducida a 2 o menos esta esta se vuelve inutilizable. Si tienes nivel de talento 3 en [destrozar](https://raldamain.com/rules/Crear%20personajes/talentos.html#destrozar-fue) aumenta la cantidad de defensa que reduces con esta habilidad por 1 (incrementa la reducción por 2 si tienes nivel de talento 5). La reducción a la defensa se aplica después de hacer daño a tu objetivo.
+**Impacto destructor***:* Al impactar a un enemigo con un *ataque poderoso* reduce su DEF por 2.
 
-<u>Carga poderosa</u> (pasiva): Tus ataques aumentan en potencia al realizar una carga. Al atacar a un enemigo tras una carga obtienes los beneficios de *ataque poderoso* sin la necesidad de gastar acciones, aumentando así el daño base y provocando los adecuados efectos. Puedes también hacer un intento de [tropezar](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada) empleando tus bonificadores de arma como acción bonus contra un enemigo que impactes tras una carga. A rango V todo ataque realizado tras una carga tiene los efectos de haber empleado dos ataques poderosos.
+**Carga poderosa**: Si te mueves en línea recta antes de atacar a un objetivo obtienes los efectos de *ataque poderoso* sin la necesidad de gastar acciones y al impactar el objetivo deberá tirar FUE contra tu tiro de ataque o caerá al suelo.
 
 ## Rango IV
 
 Para desbloquear este rango necesitas 5 FUE y cuatro niveles de talento en destrozar.
 
-<u>Romper escudos</u> (pasiva): Tus ataques poderosos son capaces de debilitar y hasta destrozar escudos. Si una criatura con un escudo logra detener un *ataque poderoso* este reducirá su valor defensivo por 1. Si el valor defensivo del escudo llega a 0 este será destruido y no podrá ser utilizado para protegerte de ataques. Adicionalmente, si un enemigo intenta bloquear uno de tus *ataques poderosos* con una parada elemental le causarás la mitad de daño si fallas tu ataque.
+**Romper escudos:** Si un enemigo se defiende de un *ataque poderoso* con un escudo reduce su valor defensivo por 1 tengas éxito o no. Si se defiende con magia le haces la mitad de daño en caso de que falles el ataque.
 
-<u>Quebrar el suelo</u> (2 acciones): Empleando dos acciones puedes golpear al suelo con la fuerza de tu arma, convirtiendo la tierra en un radio de 10 pies del punto de impacto en terreno difícil. Todas las criaturas que se encuentren en esa zona deberán tener éxito en un tiro de esquiva contra tu ataque o son [tropezados](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#tropezada) y [ralentizados](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ralentizada) durante una ronda. Si obtienes golpe crítico inflige una [herida permanente](https://raldamain.com/rules/Reglas%20principales/Heridas%20permanentes.html) leve en la pierna a todos los objetivos en tu área de efecto.
+**Giro quebrantador:** Al hacer un ataque con *maza oscilante* afectas a todas las criaturas adyacentes a ti y aquellas que impactes deberán tirar FUE contra tu tiro de arma o caerán al suelo.
 
 ## Rango V 
 
 Para desbloquear este rango necesitas 6 FUE y cinco niveles de talento en destrozar.
 
-<u>Ataque despiadado</u> (1 acción):  Observando atentamente a un enemigo puedes aprovechar un momento de debilidad para asentarle un golpe mortal. Al emplear esta habilidad entras en un estado de preparación que te permite como reacción atacar a un enemigo que se encuentre a una distancia menor o igual a tu alcance si este sufre un [efecto de estado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html) que le dificulte a la hora de defenderse (cegado, aturdido, agarrado, náuseas, ensordecido o paralizado). No podrás atacar al mismo objetivo más de una vez por ronda y abandonarás el estado de preparación en el momento que pierdas la concentración.
+**Golpes en secuencia** (X AP): Haz x ataques contra el mismo objetivo el cuál tirará solo una vez y deberá usar el mismo resultado. Cada ataque más allá del primero tiene +1 al tiro y +1 daño por cada ataque anterior. La secuencia se detendrá si eres interrumpido.
 
-<u>Golpe fulminante</u> (pasiva): Al impactar a un enemigo que tenga 2 o menos defensa (cuenta la defensa por armaduras y la armadura natural) y empleas la habilidad *concusión* tu objetivo caerá también inconsciente de inmediato. Si impactas a un objetivo incapaz de defenderse este caerá inconsciente sin tener la oportunidad de defenderse. La habilidad *resistir la muerte* se aplica también contra este efecto.
+**Golpe fulminante:** Al impactar a un enemigo con 2 o menos DEF con un *ataque poderoso* este sufrirá una herida grave en la cabeza o el pecho
 
 ## Armas
 
