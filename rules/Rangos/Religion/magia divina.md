@@ -54,15 +54,15 @@ Aprendes dos técnicas de rango III pertenecientes a una rama de elementalismo, 
 
 Aprendes dos técnicas de rango IV pertenecientes a una rama de elementalismo, magia arcana u ocultismo relacionada con tu dios.
 
-**Palabra divina** (2 AP y 3 chi):
+**Palabra divina** (2 AP y 3 chi): Pronuncias palabras en el lenguaje prohibido de los dioses capaces de ensordecer y hasta matar a los mortales que las escuchen. Toda criatura enemiga de tu fe a una distancia media que pueda escucharte deberá tener éxito en un tiro de CON frente a tu magia divina o sufrirá  2d10 + INT daño trueno y quedará *ensordecida* durante una ronda. Si logras reducir los PV de un enemigo con esta habilidad quedará *confundido* durante una ronda por el miedo. Si te encuentras en *tierra consagrada* todas las criaturas extraplanarias relacionadas con religiones enemigas que fracasen este tiro morirán instantáneamente.
 
-**Exaltado** (2 AP y 3 chi): Dejas que el poder de tu dios te posea temporalmente, recibiendo grandes mejoras a tus abilidades. Este efecto permanecerá activo durante rango + 1 rondas y mientras lo esté recibes +2 en tres estadísticas diferentes, resistencia 4 a la magia y el daño físico además de inmunidad a posesión y maldiciones. Tu dios también te protege de efectos de muerte instantánea y alteraciones nocivas del chi, permitiéndote resucitar una vez por combate a 1 PV.
+**Exaltado** (2 AP y 3 chi): Dejas que el poder de tu dios te posea temporalmente, recibiendo grandes mejoras a tus habilidades. Este efecto permanecerá activo durante rango + 1 rondas y mientras lo esté recibes +2 en tres estadísticas diferentes, resistencia 4 a la magia y el daño físico además de inmunidad a posesión y maldiciones. Tu dios también te protege de efectos de muerte instantánea y alteraciones nocivas del chi, permitiéndote resucitar una vez por combate a 1 PV.
 
 ## Rango VI
 
 Aprendes dos técnicas de rango V pertenecientes a una rama de elementalismo, magia arcana u ocultismo relacionada con tu dios.
 
-**Ira de dios** (3 AP y 5 chi): 
+**Ira de dios** (3 AP y 5 chi): No hay nada más temible que la ira de un dios y esta poderosa habilidad lo demuestra. Haz un ataque de magia divina que afecta a un radio grande e infligirá 3d10 + INT daño radiante, necrótico o fuerza al impactar. Este ataque matará instantáneamente a todas las criaturas extraplanarias que logre impactar y todos los supervivientes a este ataque que hayan perdido PV quedarán afectados por la habilidad *castigo divino*. Este ataque arrasará con todas las estructuras que haya en el área y eliminará toda la *tierra consagrada* que haya en él relacionada con otros dioses.
 
 # Divinidades
 

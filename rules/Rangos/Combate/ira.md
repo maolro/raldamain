@@ -7,7 +7,7 @@ La ira es un sentimiento que fluye a través de todas las personas, sin embargo 
 
 ## Rango I
 
-**Ira**: Durante 2 + rrango rondas de combate entras en un estado de furia sobrenatural, incrementando dos estadísticas físicas por 2 además de recibir resistencia 2 contra miedo y efectos mentales. No podrás concentrarte estando en *ira* y deberás siempre atacar al enemigo más cercano. Curando *ira* termine estarás *fatigado* hasta tomar un descanso y no podrás volver a entrar en *ira* hasta que te recuperes de la fatiga.
+**Ira**: Durante 2 + rango rondas de combate entras en un estado de furia sobrenatural, incrementando dos estadísticas físicas por 2 además de recibir resistencia 2 contra miedo y efectos mentales. No podrás concentrarte estando en *ira* y deberás siempre atacar al enemigo más cercano. Curando *ira* termine estarás *fatigado* hasta tomar un descanso y no podrás volver a entrar en *ira* hasta que te recuperes de la fatiga.
 
 **Ataque salvaje:** Antes de atacar puedes obtener ventaja en todos los ataques realizados durante la ronda a costa de recibir desventaja en todos tus tiros defensivos.
 

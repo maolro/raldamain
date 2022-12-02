@@ -9,20 +9,19 @@ La resistencia de tu cuerpo es superior a la media, siendo por ello mas difícil
 
 ## Rango I
 
-Añade tu rango de fortitud x 2 a todos tus tiros defensivos de Constitución.
+Aumenta tus PV máximos por 2 y recibes +2 armadura natural. Añade además tu rango x 2 a todos tus tiros de CON.
 
-<u>Vitalidad mejorada</u> (pasiva): No sufrirás heridas permanentes por perder PV si el daño no los reduce por debajo de la mitad de tus PV máximos e incrementas tus PV base por un valor igual a tu rango de fortitud x 2. Eres capaz de seguir consciente estando a 0 PV, permitiéndote luchar hasta en el borde de la muerte durante un número de turnos igual a tu rango + CON. No obstante, en este estado estarás Fatigado y no podrás realizar acciones de turno completo.
-
-<u>Armadura natural</u> (pasiva): Tu cuerpo es capaz de resistir ataques de armas. Obtienes armadura natural igual a tu rango de fortitud x 2. La armadura natural reducirá el daño de armas que sufras, pero no contará como armadura para los propósitos de filos cortantes. La armadura natural otorgada por esta habilidad se acumula con la mejora por PT con el mismo nombre.
+**Segundo aliento**: Una vez por combate puedes recuperar vitalidad igual a tu rango + CON y suprime el efecto de las heridas permanentes como si fueran de un paso inferior. Estas volverán a su estado original tras 3 rondas (+1 ronda/Rango)
 
 ## Rango II
 
-<u>Resistir la muerte</u> (reacción): Una vez por combate como reacción al ser reducido a 0 PV o menos podrás revivir a 1 PV sin sufrir heridas permanentes. Esta habilidad no podrá usarse si estás exhausto, incapacitado o sufres náuseas o el ataque te reduce a PV negativos iguales a tu estadística de CON.
+**Resistir la muerte**: Una vez por combate como reacción al caer a menos de 0 PV puedes revivir a 1 PV sin sufrir heridas permanentes. Esta habilidad no puede usarse si estás incapacitado, exhausto o sufriendo náuseas, el ataque enemigo te provoca una herida permanente grave o te reduce a PV negativa igual a tu CON.
 
-<u>Constitución férrea</u> (pasiva): Obtienes resistencia contra [venenos](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#venenos), [enfermedades](https://raldamain.com/rules/Rangos/venenos_enfermedades.md#enfermedades), daño necrótico y gases tóxicos igual a tu rango de Fortitud + 1. La resistencia otorgada por esta habilidad también funciona contra venenos y enfermedades sobrenaturales.
+**Constitución férrea:** Recibes resistencia igual a tu rango + 1 a venenos, enfermedades, gases tóxicos y daño necrótico, La resistencia otorgada por esta habilidad también funciona contra venenos y enfermedades sobrenaturales.
 
 ## Rango III
 
-<u>Recuperación rápida</u> (pasiva): Tu cuerpo se recupera a velocidades prodigiosas, causando que te sanes todos tus PV perdidos con un descanso cortos. Además, con un descanso largo podrás reducir el nivel de una herida permanente por un paso sin la necesidad de acción médica. Si ya tienes una habilidad que te otorgue regeneración aumentas el número de Vitalidad que te sana al turno por 1.
+**Recuperación rápida**: Tu cuerpo se recupera a velocidades prodigiosas, causando que te sanes todos tus PV perdidos con un descanso corto y recuperes 2 Vitali. Además, con un descanso largo podrás reducir el nivel de una herida permanente por un paso sin la necesidad de acción médica. 
 
-<u>Resistir armas</u> (reacc) Una vez al turno como reacción puedes reducir el nivel de una herida permanente que recibes por un paso. Esta habilidad también puede emplearse para convertir un ataque de muerte instantánea como [maestro cazador](https://raldamain.com/rules/Rangos/Combate/rastrear.html) en una herida permanente grave. 
+**Resistir armas:** Una vez al turno como reacción puedes reducir el nivel de una herida permanente que recibes por un paso. Esta habilidad también puede emplearse para convertir un ataque de muerte instantánea como [maestro cazador](https://raldamain.com/rules/Rangos/Combate/rastrear.html) en una herida permanente grave. 
+
