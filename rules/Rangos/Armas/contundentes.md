@@ -29,7 +29,7 @@ Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destroza
 
 *Atacar con arma* cuesta -1 AP
 
-**Impacto destructor***:* Al impactar a un enemigo con un *ataque poderoso* reduce su DEF por 2.
+**Impacto destructor**: Al impactar a un enemigo con un *ataque poderoso* reduce su DEF por 2.
 
 **Carga poderosa**: Si te mueves en línea recta antes de atacar a un objetivo obtienes los efectos de *ataque poderoso* sin la necesidad de gastar acciones y al impactar el objetivo deberá tirar FUE contra tu tiro de ataque o caerá al suelo.
 

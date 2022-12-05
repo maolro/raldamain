@@ -43,13 +43,13 @@ Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de c
 
 **Cambiar el clima** (3 AP y 3 chi): Llamas una gran tormenta al campo de batalla, provocando lluvia, rayos y truenos durante el resto del combate. Mientras la tormenta permanezca activa reduces el campo de visión de todas las criaturas a una distancia media y además que todas tus habilidades de magia de tormenta recibirán ventaja (no se acumula con *esferas del relámpago*). Además, el campo de batalla quedará afectado por la habilidad *controlar los vientos* y otorgará los mismos beneficios que esta. Esta habilidad también puede usarse para calmar una tormenta ya existente, eliminando los beneficios que esta otorga.
 
-**Descenso relampagueante** (2 AP y 3 chi): Un devastador relámpago desciende de los cielos para castigar a tus enemigos. Esta habilidad solo puede usarse en un entorno afectado por una tormenta y con esta puedes atacar a todas las criaturas que se encuentren en radio medio a distancia lejana de ti. Un *descenso relampagueante* no puede ser esquivado y infligirá 2d10 + CAR daño eléctrico y 1d10 + rango daño trueno, *aturdiendo* en el caso que reduzca PV. La ronda siguiente al descenso puedes hacer un segundo ataque de este tipo empleando 2 AP sin la necesidad de pagar chi, infligiendo la misma cantidad de daño y efectos al impactar. (1 chi) Puedes hacer un tercer ataque de este tipo en la tercera ronda sin la necesidad de gastar chi.
+**Descenso relampagueante** (2 AP y 3 chi): Un devastador relámpago desciende de los cielos para castigar a tus enemigos. Esta habilidad solo puede usarse en un entorno afectado por una tormenta y con esta puedes atacar a todas las criaturas que se encuentren en radio medio a distancia lejana de ti. Un *descenso relampagueante* no puede ser esquivado y infligirá 2d10 + CAR daño eléctrico e 1d10 + rango daño trueno, *aturdiendo* en el caso que reduzca PV. La ronda siguiente al descenso puedes hacer un segundo ataque de este tipo empleando 2 AP sin la necesidad de pagar chi, infligiendo la misma cantidad de daño y efectos al impactar. (1 chi) Puedes hacer un tercer ataque de este tipo en la tercera ronda sin la necesidad de gastar chi.
 
 **Voltio cruel** (1 AP y 3 chi): Haz un ataque contra una criatura adyacente que no puede ser esquivado el cual inflige 3d10 + CAR daño eléctrico y el objetivo deberá tener éxito en un tiro de CON frente a tu CAR o quedará *aturdido* durante una ronda. Si este ataque logra reducir PV provocará heridas permanentes y si una herida permanente llega a impactar al pecho esta aumentará su efectividad por un paso.
 
 ## Rango VI
 
-**Tormenta de venganza** (3 AP y 5 chi): Invocas una tormenta enormemente destructiva emulando la furia de los dioses. Esta habilidad afectará el campo de batalla con *cambiar el clima* y mientras pasen las rondas aumentará su fuerza. A partir de la segunda ronda puedes hacer un ataque de *relámpago* o *onda trueno* cada ronda como acción bonus sin coste de chi y a partir de la cuarta puedes hacer que el ataque sea de *furia de la tormenta* o *relámpago en cadena*. No necesitarás concentrarte en ninguno de estos efectos y la *tormenta de venganza* se desvanecerá al cabo de 7 rondas. Estos ataques bonus se acumulan con aquellos que otorga la habilidad *llamar a la tormenta*.
+**Tormenta de venganza** (3 AP y 5 chi): Invocas una tormenta enormemente destructiva emulando la furia de los dioses. Esta habilidad afectará el campo de batalla con *cambiar el clima* y mientras pasen las rondas aumentará su fuerza. A partir de la segunda ronda puedes hacer un ataque de *relámpago* u *onda trueno* cada ronda como acción bonus sin coste de chi y a partir de la cuarta puedes hacer que el ataque sea de *furia de la tormenta* o *relámpago en cadena*. No necesitarás concentrarte en ninguno de estos efectos y la *tormenta de venganza* se desvanecerá al cabo de 7 rondas. Estos ataques bonus se acumulan con aquellos que otorga la habilidad *llamar a la tormenta*.
 
 # Elemental de tormenta
 
@@ -65,12 +65,12 @@ Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de c
 - **Acciones:** 4
 - **Habilidades:**
   - *Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
-  - *Ataque elemental*: El elemental recibe las acciones de ataque *arco eléctrico, *on* (recarga 5-6) y *toque chispeante* empleando como estadística principal la CAR y sumando +1 a su tiro de ataque
+  - *Ataque elemental*: El elemental recibe las acciones de ataque *arco eléctrico*, *onda trueno* (recarga 5-6) y *toque chispeante* empleando como estadística principal la CAR y sumando +1 a su tiro de ataque
   - *Parada elemental:* Puede defenderse de ataques a distancia y mágicos usando su DES y sumándole +1
 
 ## Mejora 1
 
-- ·Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
 - Recibe +1 en todos sus ataques elementales y sus tiros de parada
 - Se regenera 2 Vitalidad al principio de su turno
 - Puede usar *barrera de rayos* una vez por ronda como reacción además que puede modificar uno de sus ataques con *relámpago* o *bomba sónica* gastando +1 AP

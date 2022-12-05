@@ -14,7 +14,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de aire e increme
 
 **Viento furibundo** (2 AP y 1 chi): Ataca a todos los enemigos a distancia corta con un ataque elemental que inflige 1d6 + CAR daño contundente y los empuja un paso hacia atrás. (1 chi) Al principio de tu siguiente turno haz el mismo ataque como acción bonus sin la necesidad de gastar más chi.
 
-**Parada elemental** (reacción) Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Parada elemental** (reacción) Eres capaz de emplear tu elemento para defenderte de ataques, permitiéndote usar tu tiro de magia de aire de manera defensiva. Una parada elemental sólo puede protegerte ataques físicos a distancia, gases y ataques pertenecientes a magia de fuego, aire, agua o evocación que no sean de área.
 
 ## Rango II
 
@@ -22,7 +22,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de aire e increme
 
 **Esfera de aire** (2 AP y 1 chi): Formas una esfera de vientos cortantes en la palma de tu mano y ataca a una criatura adyacente con ella, haciendo un ataque elemental de aire que inflige daño cortante igual al de *lanzamiento* pero con un dado de daño adicional y empujando un paso al impactar. (1 chi) La esfera permanecerá en tu mano hasta el final de tu siguiente turno o hasta que pierdas la concentración, permitiéndote atacar con ella hasta que se disipe empleando 2 AP sin la necesidad de gastar chi.
 
-**Azote del viento** (2 AP y 1 chi): Creas una masa de aire que eres capaz de mantener y controlar a voluntad para atacar a tus enemigos. Mientras mantengas la concentración podrás hacer un ataque de *vendaval* como acción bonus contra un objetivos distancia cercana además que puedes sacrificar la masa de aire para detener un ataque mágico o a distancia que te haya impactado, perdiendo de inmediato sus beneficios. (1 chi) Creas una segunda masa de aire para aumentar tu dominio del campo de batalla, permitiéndote repetir uno de tus tiros de magia de viento una vez por ronda mientras la habilidad permanezca activa.
+**Azote del viento** (2 AP y 1 chi): Creas una masa de aire que eres capaz de mantener y controlar a voluntad para atacar a tus enemigos. Mientras mantengas la concentración podrás hacer un ataque de *vendaval* como acción bonus contra un objetivos distancia cercana además que puedes sacrificar la masa de aire para tener éxito automático en un tiro de parada, perdiendo de inmediato sus beneficios. (1 chi) Creas una segunda masa de aire para aumentar tu dominio del campo de batalla, permitiéndote repetir uno de tus tiros de magia de viento una vez por ronda mientras la habilidad permanezca activa. Ambas masas de aire se desvanecerán si pierdes la concentración.
 
 ## Rango III 
 
@@ -44,11 +44,11 @@ Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. *Lanza
 
 ## Rango V
 
-**Huracán** (3 AP y 3 chi): Liberas el poder de los vientos para formar un devastador huracán que arrasará con todo en su camino. Todas las criaturas en su área de efecto deberán defenderse usando su FUE contra un ataque elemental de aire que provocará 3d6 daño de caída además de empujar dos pasos hacia atrás. Si hay escombros en el área todas las criaturas deberán también defenderse de un ataque elemental que infligirá 2d10 + CAR daño contundente. Si la habilidad *controlar los vientos* está activa estos aumentarán enormemente su fuerza durante las siguientes tres rondas, impidiendo los ataques a distancia y que otras criaturas puedan volar.
+**Huracán** (3 AP y 3 chi): Liberas el poder de los vientos para formar un devastador huracán que arrasará con todo en su camino. Todas las criaturas en su área de efecto deberán defenderse usando su FUE contra un ataque elemental de aire que provocará 3d6 daño de caída además de empujar dos pasos hacia atrás. Si hay escombros en el área todas las criaturas deberán también defenderse de un ataque elemental que infligirá 2d10 + CAR daño contundente. Si la habilidad *controlar los vientos* está activa los vientos aumentarán enormemente su fuerza durante las siguientes tres rondas, impidiendo los ataques a distancia y que otras criaturas puedan volar.
 
 **Marioneta del viento** (1 AP y 3 chi): Los objetivos que agarres quedan por completo a la merced del viento, moviéndolos a tu voluntad y rompiendo su cuerpo como si fueran meras marionetas. Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu magia de aire o es movida un paso en cualquier dirección, sufriendo 1d6 daño físico que ignora defensa y una herida leve además de estar *agarrada* (funciona igual que *agarre del viento*). Al principio de tu turno puedes mover a todas las criaturas agarradas con esta habilidad un paso en cualquier dirección, infligiéndoles 1d6 daño físico que ignora defensa y de nuevo una herida leve. Si uno de tus objetivos agarrados se estampa contra un objeto sólido sufrirá también 1d6 daño de caída. (1 chi) Afecta a un objetivo adicional.
 
-**Danza de los vientos** (3 AP y 3 chi): Te mueves en absoluta armonía con el aire, usándolo para protegerte de ataques y castigar a tus enemigos. Al activar esta habilidad te rodeas del efecto de *controlar los vientos* en un radio medio y mientras permanezca activa recibes siempre los beneficios de *posición defensiva*. Además, una vez por ronda al ser impactado por un ataque puedes hacerle un ataque de *vendaval* como reacción a tu enemigo, el cual fallará automáticamente su ataque si falla su tiro de FUE. Esta habilidad permanecerá activa mientras mantengas la concentración en ella o pasen rango + 1 rondas. También se disipará si otro elementalista de aire elimina le efecto de *controlar los vientos* que te rodea.
+**Danza de los vientos** (3 AP y 3 chi): Te mueves en absoluta armonía con el aire, usándolo para protegerte de ataques y castigar a tus enemigos. Al activar esta habilidad te rodeas del efecto de *controlar los vientos* en un radio medio y mientras permanezca activa recibes siempre los beneficios de *posición defensiva*. Además, una vez por ronda al ser impactado por un ataque puedes hacerle un ataque de *vendaval* como reacción a tu enemigo, el cual fallará automáticamente su ataque si falla su tiro de FUE. Esta habilidad permanecerá activa mientras mantengas la concentración en ella o pasen rango + 1 rondas. También se disipará si otro elementalista de aire elimina el efecto de *controlar los vientos* que te rodea.
 
 ## Rango VI
 
@@ -73,7 +73,7 @@ Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. *Lanza
 
 ## Mejora 1
 
-- ·Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
 - Recibe +1 en todos sus ataques elementales y sus tiros de parada
 - Se regenera 2 Vitalidad al principio de su turno
 - Puede usar *muro de viento* una vez por ronda como reacción además que puede modificar uno de sus ataques con *esfera de aire* gastando +1 AP

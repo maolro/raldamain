@@ -69,9 +69,9 @@ Para apuntar a un brazo específico debes tomar un dado de desventaja adicional.
 
 **Media:** Reduce tu DES por 1 y caes inmediatamente al suelo. Recibes los mismos penalizadores al movimiento y a tiros de habilidad que te otorga una herida leve.
 
-**Grave:** Reduce tu DES por 1 además de recibir los mismos penalizadores a las estadísticas que una herida media. Tu pierna queda inutilizada, haciedo que te caigas inmediatamente al suelo y fracasarás automáticamente todos tus tiros de esquiva, acrobacias y atletismo además de reducir tu movimiento.
+**Grave:** Reduce tu DES por 1 además de recibir los mismos penalizadores a las estadísticas que una herida media. Tu pierna queda inutilizada, haciendo que te caigas inmediatamente al suelo y fracasarás automáticamente todos tus tiros de esquiva, acrobacias y atletismo además de reducir tu movimiento.
 
-**Crítica:** Tu pierna es amputada de inmediato o queda tan herida que deberá ser amputada. Si pierdes una pierna de esta manera no podrás volver a caminar y recibirás los efectos de una herida gra
+**Crítica:** Tu pierna es amputada de inmediato o queda tan herida que deberá ser amputada. Si pierdes una pierna de esta manera no podrás volver a caminar y recibirás los efectos de una herida grave
 
 | Resultado (1d10) | Lugar afectado                                   |
 | ---------------- | ------------------------------------------------ |
