@@ -2,10 +2,10 @@
 title: Imperio de Ustilus
 main: Caballeros de Ustilus
 capital: Trono de Feyn
-gobierno: Monarquía absoluta (3497- ), Monarquía parlamentaria (), Monarquía constitucional (4005-4010)
+gobierno: Monarquía absoluta (3497-4005) Monarquía constitucional (4005-4010)
 fecha-de-fundacion: 3497
 fecha-de-disolucion: 4010
-image: abshalom.jpg
+image: 
 ---
 
 El imperio de Ustilus es una nación que se encuentra en el continente de Raldamain, ocupando vastos territorios en ambas mitades del mismo además de numerosas islas y colonias de ultramar. Fundado en el año 3497, el imperio de Ustilus se expandió rápidamente en los siguientes años impulsado por su santa misión de unificar toda la humanidad en nombre de su dios Feyn. En su momento de máxima expansión en el año 4000 Ustilus se extendió desde la frontera norteña de Kratoi hasta los abrasadores desiertos de Tamashkhan, incluyendo también colonias en las tierras Shinri y las islas Kerbala. Debido a su extenso territorio Ustilus es una nación que acapara una vasta diversidad de culturas humanas y no-humanas, entre ellas los kratenses, jaddi, temash, iskarianos, elfos y hobgoblin. Su forma de gobierno es una monarquía parlamentaria, donde el emperador actúa como jefe de estado pero sus poderes están limitados por las Cortes ustilesas formadas por los nobles más importantes de cada región. En materia religiosa el feynismo es la religión oficial del estado y la única permitida, contando con la veneración de la mayoría de ustileses. Debido a la gran importancia que tiene la religión en la sociedad ustilesa la iglesia de Feyn y su brazo armado, conocido como los Caballeros de Ustilus, acaparan una gran cantidad de poder e influencia. Mientras que en el año 4000 Ustilus se encontraba en su máximo auge territorial y económico, existían numerosos problemas que plagaban la nación como su gran disparidad territorial entre las provincias centrales y las periféricas, una creciente división política y la discriminación institucional hacia minorías étnicas y religiosas como los hobgoblin y temash. Cuando en ese mismo año el dios Feyn despareció misteriosamente causando la pérdida de poder divino por parte de sus clérigos todos estos problemas saldrían de nuevo a la luz y amenazarían con llevar al gran imperio de Ustilus hacia la ruina.

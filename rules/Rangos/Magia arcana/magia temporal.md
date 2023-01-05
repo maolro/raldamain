@@ -31,11 +31,11 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 **Predecir movimiento**: Al gastar un uso de *premonición* tendrás ventaja en el tiro repetido. Alternativamente puedes tener una visión escogida por el máster del siguiente movimiento que realizará un enemigo.
 
-**Doble temporal** (2 AP y 2 chi): Te rodeas de una cantidad de dobles temporales igual a tu rango que representan tus movimientos pasados y futuros. Puedes sacrificar un doble como acción bonus para que un ataque enemigo le impacte a él en lugar de ti o anular un tiro de ataque que hayas realizado, recuperando las acciones gastadas. Los dobles permanecerán activos durante rango + 1 rondas.
+**Doble temporal** (2 AP y 2 chi): Te rodeas de una cantidad de dobles temporales igual a tu rango que representan tus movimientos pasados y futuros. Una vez por turno puedes sacrificar un doble como acción bonus para que un ataque enemigo le impacte a él en lugar de ti o anular un tiro de ataque que hayas realizado, recuperando las acciones gastadas. Los dobles permanecerán activos durante rango + 1 rondas.
 
 ## Rango IV  
 
-**Revertir el tiempo** (1 AP y 2 chi): Saltas hacia atrás en el tiempo para recuperarte de todos los efectos que hayas sufrido este turno como si nunca hubieran ocurrido y volviendo a tu posición anterior. (1 chi) Afecta a otra criatura con esta habilidad
+**Revertir el tiempo** (1 AP y 2 chi): Guardas tu estado actual para poder volver a dicho momento para evitar una desgracia que te ocurra. Al emplear esta habilidad anota tus datos actuales de PV y Vitalidad además de los efectos de estado, posición y heridas permanentes. Durante las siguientes dos rondas en cualquier momento del combate como reacción puedes volver a tu estado anterior sea cual sea tu situación actual, sustituyendo tus datos actuales por los que tenías en el momento que activaste esta habilidad (no necesitas mantener la concentración y se activará automáticamente en el caso que te mueras). Esta habilidad no te permite recuperar tu reserva de chi ni alterar la duración de efectos pasivos como *ira*, *mente desencadenada* o *meteoros de chi*. Puedes usar esta habilidad en otra persona u objeto gastando 1 chi, permitiéndote hasta resucitarle.
 
 **Estasis** (2 AP y 2 chi): Una criatura a distancia media hace un tiro de CON frente a tu magia temporal y si fracasa quedará *paralizada*. Este efecto durará hasta que pierdas la concentración o la criatura paralizada sufra daño y esta no podrá tirar para escapar.
 

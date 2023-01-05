@@ -9,7 +9,7 @@ Has decidido estudiar los planos que muestran los conductos de chi a lo largo de
 
 Añade tu rango a todos tus tiros relacionados con magia espacial. Tu reserva aumenta por 2+Rango chi.
 
-**Salto espacial** (1 AP y 1 chi): Te teletransportas una distancia media en cualquier dirección, evitado ataques de oportunidad. Esta habilidad puede usarse como reacción 1/turno si estás en *posición defensiva* para evitar un ataque.
+**Salto espacial** (1 AP y 1 chi): Te teletransportas una distancia media en cualquier dirección, evitado ataques de oportunidad. Esta habilidad puede usarse como reacción una vez al turno si estás en *posición defensiva* para evitar un ataque.
 
 **Portal menor** (2 AP): Formas un portal en una posición adyacente del tamaño de tu mano que se conectará con otro punto a distancia media. Todo lo que pase por un lado del portal acabará en el otro y puedes afectar el entorno al otro lado del portal como si estuviera adyacente a ti. El portal permanecerá durante una ronda salvo que gastes 1 chi y no puedes tener más portales activos a la vez que tu rango.
 
@@ -29,7 +29,7 @@ Añade tu rango a todos tus tiros relacionados con magia espacial. Tu reserva au
 
 **Brecha espacial** (1 AP y 2 chi): Haz un ataque con magia espacial contra un objetivo a distancia lejana que al impactar provocará una brecha espacial, infligiéndole 1d8 + INT daño fuerza que provoca heridas permanentes al reducir PV además que todos los objetos cercanos a la brecha serán transportados a otra dimensión (se puede tirar FUE para evitar este efecto). La brecha permanecerá mientras te concentres en ella y cada criatura adyacente a ella al principio de su turno deberá volver a tirar para defenderse o sufrirá de nuevo sus efectos.
 
-**Bifurcación espacial** (1 AP y 2 chi): Creas un *portal menor* que conecta simultáneamente con dos puntos en el espacio. Todos los ataques mágicos que crucen el portal emergerán de los dos portales, permitiéndote hacer un ataque adicional con dicho ataque sin la necesidad de gastar chi. Esta habilidad permanecerá activa durante una ronda y puedes prolongar su efecto gastando 1 chi.
+**Bifurcación espacial** (1 AP y 2 chi): Creas un *portal menor* que conecta simultáneamente con dos puntos en el espacio. Todos los ataques mágicos que crucen el portal emergerán de los dos portales, permitiéndote hacer un ataque adicional del mismo tipo sin la necesidad de gastar chi. Esta habilidad permanecerá activa durante una ronda y puedes prolongar su efecto gastando 1 chi.
 
 **Invocar extraplanario** (3 AP y 2 chi): Invoca a una criatura extraplanaria perteneciente a cualquier rama ascendencia o magia. La criatura invocada no te obedecerá salvo que tengas buena relación con ella, comportándose según su naturaleza al ser invocada. Al mejorar de rango puedes invocarla con una mejora adicional o invocar una criatura adicional sin mejora.
 

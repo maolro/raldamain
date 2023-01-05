@@ -1,5 +1,5 @@
 ---
-title: Ascendencia verdeante
+ title: Ascendencia verdeante
 category: Ascendencias
 ---
 
@@ -17,7 +17,7 @@ Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango
 
 Incrementa tu SAB por 1.
 
-**Fuerza primigenia** (1 chi): Durante esta ronda todos tus ataques de *artes marciales* y hechos con armas de madera tiran un dado adicional de daño al impactar.
+**Fuerza primigenia** (1 chi): Durante esta ronda todos tus ataques de *artes marciales* y hechos con armas de madera tiran un dado adicional de daño al impactar. Esta habilidad solo puede usarse una vez por ronda.
 
 **Comunión con la naturaleza** (3 AP y 1 chi): Tienes conocimiento del terreno a 1 km que te rodea, convirtiéndolo en tu *terreno predilecto* y detectando todas las presencias espirituales y localidades importantes en él. Puedes también hacer 3 preguntas al espíritu de la región sobre cualquier tema que pueda llegar a conocer.
 
@@ -39,7 +39,7 @@ Incrementa tu DES por 1. Puedes sumar tu rango en magia de naturaleza a todos tu
 
 ## Rango V 
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 2.
 
 **Madera férrea:** Tus ataques de *artes marciales,* magia de naturaleza y armas de madera cuentan como si estuvieran afectados por *material superior*. Si llevas armadura de madera también quedará afectada por *material superior*. (1 chi) Un arma o armadura de madera consigue los efectos de *material superior*.
 

@@ -47,7 +47,7 @@ Usar *crear ilusión* y *disfraz ilusorio* cuestan -1 AP y las ilusiones aumenta
 
 **Muerte fantasmal**: Tus ilusiones son capaces de provocar la misma muerte. Cuando una criatura sufra daño por ilusiones fantasmales sufrirá dolor como si el daño fuera real y si sus PV sean reducidos a 0 morirá de un palo cardíaco. Las resistencias al daño no se aplican al evitar el daño provocado por ilusiones fantasmales.
 
-**Capa de ilusiones** (1 AP y 3 chi): Te rodeas de una capa de ilusiones que te permiten alterar tu aspecto, localización y voz como desees. Mientras tengas activa la capa de ilusiones recibes los beneficios de *disfraz ilusorio* y recibes ventaja en todos tus tiros de ataque frente a aquellos objetivos que no hayan desmentido tus ilusiones. Además, una vez por ronda puedes volverte invisible como acción bonus sin la necesidad de gastar chi o evitar un ataque que te haya impactado exitosamente. Esta ilusión no se desmentirá al interactuar con ella sino cuando pierdas la concentración o pasen rango + 1 rondas.
+**Capa de ilusiones** (1 AP y 3 chi): Te rodeas de una capa de ilusiones que te permiten alterar tu aspecto, localización y voz como desees. Mientras tengas activa la capa de ilusiones recibes los beneficios de *disfraz ilusorio* y recibes ventaja en todos tus tiros de ataque frente a aquellos objetivos que no hayan desmentido tus ilusiones. Además, una vez por ronda puedes volverte invisible como acción bonus sin la necesidad de gastar chi para evitar un ataque que te haya impactado exitosamente. Esta ilusión no se desmentirá al interactuar con ella sino cuando pierdas la concentración o pasen rango + 1 rondas.
 
 ## Rango VI
 
