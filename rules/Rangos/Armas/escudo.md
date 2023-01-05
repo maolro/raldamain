@@ -19,9 +19,9 @@ Añade tu rango a todos tus tiros relacionados con escudos.
 
 ## Rango II
 
-**Forma defensiva:** Entras en un estado de defensa absoluta durante (rango+2) rondas. Mientras estés en este estado tu fuerza y constitución aumentarán por 2 y tendrás los beneficios de *posición defensiva* sin la necesidad de gastar acciones, sin embargo tu velocidad de movimiento se reducirá por 1. Cuando *forma defensiva* termine estarás *fatigado*, impidiendo que vuelvas a usar la habilidad hasta que te recuperes.
+**Forma defensiva:** Entras en un estado de defensa absoluta durante rango + 2 rondas. Mientras estés en este estado tu fuerza y constitución aumentarán por 2 y tendrás los beneficios de *posición defensiva* sin la necesidad de gastar acciones, sin embargo tu velocidad de movimiento se reducirá por 1. Cuando *forma defensiva* termine estarás *fatigado*, impidiendo que vuelvas a usar la habilidad hasta que te recuperes.
 
-**Defensa mejorada:** Al fracasar en un tiro defensivo podrás escoger reducir el valor defensivo del escudo por 1 para desviar el ataque.
+**Defensa mejorada:** Al fracasar en un tiro defensivo podrás escoger reducir el valor defensivo del escudo por 1 para desviar el ataque. Debes estar en *posición defensiva* para usar esta habilidad.
 
 ## Rango III
 
@@ -49,4 +49,4 @@ Los escudos permiten defenderse al portador contra toda clase de ataques, sin em
 
 - **Escudo básico:** Valor defensivo 4. 1d6+fuerza daño contundente. Llevarlo dará un penalizador de -1 a la destreza.
 - **Escudo ligero:** Valor defensivo 3. 1d4+fuerza daño contundente. 
-- **Escudo de torre:** Valor defensivo 6. 1d8+fuerza daño contundente. Llevarlo dará un penalizador de -2 a la destreza e impedirá esquivar al portador. Requiere 4 o mas defensa para usarse.
+- **Escudo de torre:** Valor defensivo 6. 1d8+fuerza daño contundente. Llevarlo dará un penalizador de -2 a la destreza e impedirá esquivar al portador. Requiere 4 o mas FUE para usarse.

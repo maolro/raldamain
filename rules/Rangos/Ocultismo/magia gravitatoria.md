@@ -9,7 +9,7 @@ Posees cierta habilidad para realizar pequeños cambios en como funciona la grav
 
 Añade tu rango a todos tus tiros relacionados con magia gravitatoria y aumenta tu reserva de chi por rango + 2.
 
-**Lanzamiento** (2 acciones ): Lanzas un objeto pequeño adyacente a ti contra una criatura a distancia media, infligiendo 1d6 + INT daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional.
+**Lanzamiento** (2 acciones): Lanzas un objeto pequeño adyacente a ti contra una criatura a distancia media, infligiendo 1d6 + INT daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional.
 
 **Repeler ataque:** Puedes usar *magia gravitatoria* para defenderte de ataques cuerpo a cuerpo y puedes gastar 1 chi como reacción para que el objetivo deba tener éxito en un tiro de FUE contra tu magia gravitatoria para impactarte. (1 chi) Protege a un aliado adyacente con *magia gravitatoria*.
 

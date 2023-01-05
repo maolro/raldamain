@@ -9,31 +9,31 @@ Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos
 
 Añade tu rango a todos tus tiros relacionados con magia elemental de fuego y aumenta tu reserva de chi por 2 + rango.
 
-**Llamarada** (2 AP): Haz un ataque con magia elemental de fuego contra un objetivo a distancia media que inflige 1d6 + rango daño fuego y provoca una quemadura leve si reduce PV. El lugar impactado saltará en llamas si está hecho de material inflamable. (1 chi) Ataca a un objetivo adicional.
+**Llamarada** (2 acciones): Haz un ataque con magia elemental de fuego contra un objetivo a distancia media que inflige 1d6 + rango daño fuego y provoca una quemadura leve si reduce PV. El lugar impactado saltará en llamas si está hecho de material inflamable. (1 chi) Ataca a un objetivo adicional.
 
-**Toque abrasador** (2 AP): Ataca a un objetivo adyacente con magia de fuego que al impactar infligirá 1d6 + rango daño fuego y provoca una quemadura leve (media si reduce PV). (1 chi) Aumenta el alcance a cercano.
+**Toque abrasador** (2 acciones): Ataca a un objetivo adyacente con magia de fuego que al impactar infligirá 1d6 + rango daño fuego y provoca una quemadura leve (media si reduce PV). (1 chi) Aumenta el alcance a cercano.
 
-**Aliento de fuego** (2 AP y 1 chi): Haz un ataque contra a todos los objetivos en un cono pequeño (1d4 + 1) que inflige 1d6 + CAR daño fuego y provoca una quemadura leve si reduce PV. Todos los objetos inflamables en el área saltarán en llamas. 
+**Aliento de fuego** (2 acciones y 1 chi): Haz un ataque contra a todos los objetivos en un cono pequeño (1d4 + 1) que inflige 1d6 + CAR daño fuego y provoca una quemadura leve si reduce PV. Todos los objetos inflamables en el área saltarán en llamas. 
 
 **Parada elemental** (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
 ## Rango II
 
-**Muro de llamas** (2 AP y 1 chi): Formas un muro de llamas furiosas que te otorga cubierta completa contra todos los ataques mágicos y a distancia. Si una criatura intenta cruzar la barrera deberá tirar DES frente a tu magia de fuego o sufrirá 1d6 daño fuego y una quemadura media (leve si tiene éxito en el tiro). Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
+**Muro de llamas** (2 acciones y 1 chi): Formas un muro de llamas furiosas que te otorga cubierta completa contra todos los ataques mágicos y a distancia. Si una criatura intenta cruzar la barrera deberá tirar DES frente a tu magia de fuego o sufrirá 1d6 daño fuego y una quemadura media (leve si tiene éxito en el tiro). Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
 
-**Bola de fuego** (2 AP y 1 chi): Haz un ataque de *llamarada* con radio de salpicadura corto cuyo daño estará modificado por tu CAR en lugar de tu rango. (1 chi) Aumenta el radio de efecto a medio
+**Bola de fuego** (2 acciones y 1 chi): Haz un ataque de *llamarada* con radio de salpicadura corto cuyo daño estará modificado por tu CAR en lugar de tu rango. (1 chi) Aumenta el radio de efecto a medio
 
-**Látigo flamígero** (2 AP y 1 chi): Ataca a todos los enemigos en una línea media con un látigo de fuego (1d4 + 2 de media) que infligirá los efectos de *toque abrasador* al impactar pero estará modificado por tu estadística de CAr en lugar de tu rango. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes 
+**Látigo flamígero** (2 acciones y 1 chi): Ataca a todos los enemigos en una línea media con un látigo de fuego (1d4 + 2 de media) que infligirá los efectos de *toque abrasador* al impactar pero estará modificado por tu estadística de CAR en lugar de tu rango. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes 
 
 ## Rango III
 
 Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *Toque abrasador* y *llamarada* aumentan el daño base a 1d8
 
-**Serpiente de fuego** (1 AP y 2 chi): Moldeas el fuego para formar una serpiente hecha de llamas que permanecerá a tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que la serpiente se mueva volando un paso y ataque a un enemigo adyacente, el cual funciona igual que a un *toque abrasador*. En lugar de atacar con la serpiente puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
+**Serpiente de fuego** (1 acciones y 2 chi): Moldeas el fuego para formar una serpiente hecha de llamas que permanecerá a tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que la serpiente se mueva volando un paso y ataque a un enemigo adyacente, el cual funciona igual que a un *toque abrasador*. En lugar de atacar con la serpiente puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
 
-**Pirotecnia** (2 AP y 2 chi): Aumentas o disminuyes la fuerza de las llamas del campo de batalla. Esta habilidad te permite llenar todos los espacios que se encuentren llenos de fuego con un *muro de llamas* o disiparlos. Al usar *pirotecnia* todas las criaturas adyacentes a un muro de llamas sufrirán un ataque de *toque abrasador* y dichos espacios se llenarán de un humo espeso que otorga *ocultamiento*, el cual permanecerá durante una ronda.
+**Pirotecnia** (2 acciones y 2 chi): Aumentas o disminuyes la fuerza de las llamas del campo de batalla. Esta habilidad te permite llenar todos los espacios que se encuentren llenos de fuego con un *muro de llamas* o disiparlos. Al usar *pirotecnia* todas las criaturas adyacentes a un muro de llamas sufrirán un ataque de *toque abrasador* y dichos espacios se llenarán de un humo espeso que otorga *ocultamiento*, el cual permanecerá durante una ronda.
 
-**Invocar elementales de fuego** (3 AP y 2 chi): Invoca a un elemental de fuego que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
+**Invocar elementales de fuego** (3 acciones y 2 chi): Invoca a un elemental de fuego que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
 
 ## Rango IV
 
@@ -71,8 +71,8 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 - **Movimiento:** vuelo 2
 - **Acciones:** 4
 - **Habilidades:**
-  - Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
-  - *Ataque elemental*: El elemental recibe las acciones de ataque *toque abrasador, llamarada* y *aliento de fuego* (recarga 5-6) usando como estadística principal la CAR y sumando +1 a su tiro de ataque. 
+  - *Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
+  - *Ataque elemental*: El elemental recibe las acciones de ataque *toque abrasador, llamarada* y *aliento de fuego* (recarga 5-6) usando como estadística principal la CAR y sumando +1 a su tiro de ataque. Usará su nivel de mejora + 1 en lugar del rango para calcular los bonificadores del daño.
   - *Fuente de fuego*: Una vez por ronda el invocador puede reducir la Vitalidad y PV máximos de esta criatura por 2 para reducir el coste en chi de un hechizo de magia elemental de fuego por 1.
 
 ## Mejora 1
@@ -82,7 +82,7 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 - Se regenera 2 Vitalidad al principio de su turno
 - Puede usar *muro de llamas* una vez por ronda como reacción además que puede modificar uno de sus ataques con *bola de fuego* o *látigo flamígero* gastando +1 AP
 
-## Mejora 2
+## Mejora 2				
 
 - Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
 - Recibe +1 en todos sus ataques elementales y sus tiros de parada además de aumentar su reserva de chi por 1

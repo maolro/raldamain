@@ -21,7 +21,7 @@ Incrementa tu CAR por 1.
 
 **Aura de luz** (2 acciones y 1 chi): Iluminas un espacio de distancia cercana con luz divina, disipando toda la oscuridad mágica y cegando a criaturas sensibles a la luz. Esta habilidad durará hasta que pierdas la concentración o pasen rango + 1 rondas.
 
-**Arma angelical** (1 chi): Durante esta ronda todos tus ataques físicos infligen +1d6 daño radiante y ciegan durante una ronda si reducen PV. 
+**Arma angelical** (1 chi): Durante esta ronda todos tus ataques físicos infligen +1d6 daño radiante y ciegan durante una ronda si reducen PV. Esta habilidad solo puede usarse una vez por ronda.
 
 ## Rango III
 

@@ -51,7 +51,7 @@ Para desbloquear este rango necesitas 6 DES y cinco niveles de talento en juego 
 
 **Ataque vital:** Al realizar un ataque apuntado aumenta el daño por 1d6 por cada acción empleada para apuntar.
 
-**Oportunista:** Como reacción cuando un enemigo sea impactado por un aliado puedes hacerle un ataque de arma que cuenta como flanqueo. Esta habilidad puede usarse solo una vez por enemigo 
+**Oportunista:** Como reaccióncuando un enemigo sea impactado por un aliado puedes hacerle un ataque de arma que cuenta como flanqueo. Esta habilidad puede usarse solo una vez por enemigo 
 
 ## Armas
 

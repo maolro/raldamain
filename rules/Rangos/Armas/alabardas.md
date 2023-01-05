@@ -23,9 +23,9 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas. Pued
 
 Puedes obtener este rango de manera gratuita si tienes 5 o más FUE, 5 o más DES y 5 niveles de talento en heroísmo
 
-**Ataque lateral** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
+**Ataque lateral** (1 acción): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
 
-**Ataque serpenteante** (1 AP): El objetivo se defiende con DES o FUE o es empujado y cae al suelo. Si estás en *preparación contra cargas* puedes hacerle un ataque de oportunidad si cae al suelo
+**Ataque serpenteante** (1 acción): El objetivo se defiende con DES o FUE o es empujado y cae al suelo. Si estás en *preparación contra cargas* puedes hacerle un ataque de oportunidad si cae al suelo
 
 ## Rango III 
 

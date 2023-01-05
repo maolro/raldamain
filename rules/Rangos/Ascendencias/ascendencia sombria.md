@@ -7,11 +7,11 @@ Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándot
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumentas tu resreva de chi por 2 + rango.
+Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por 2 + rango.
 
-**Nacido de las tinieblas:** Puedes ver en la oscuridad magica y normal sin problemas y recibes resistencia igual a tu rango + 1 al dato frfo y necrético. Los no-muertos y criaturas sombrias no son naturalmente hostiles hacia ti.
+**Nacido de las tinieblas:** Puedes ver en la oscuridad mágica y normal sin problemas y recibes resistencia igual a tu rango + 1 al daño frío y necrótico. Los no-muertos y criaturas sombrías no son naturalmente hostiles hacia ti.
 
-**Sigilo sombrío:** No haces ruido al pasar ni dejas huellas, recibiendo ventaja en tus tiros de sigilo. (1 chi) Te ocultas como accién bonus si te encuentras en un entorno afectado por luz tenue u oscuridad.
+**Sigilo sombrío:** No haces ruido al pasar ni dejas huellas, recibiendo ventaja en tus tiros de sigilo. (1 chi) Te ocultas como acción bonus si te encuentras en un entorno afectado por luz tenue u oscuridad.
 
 ## Rango II
 

@@ -1,5 +1,5 @@
 ---
-title: Ascendencia Abisal
+  title: Ascendencia Abisal
 category: Ascendencias
 ---
 
@@ -13,7 +13,7 @@ Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango
 
 **Tocado por la locura:** Recibes resistencia al daño necrótico y al daño a la cordura igual a tu rango + 1 a costa de obtener una locura permanente. Los abisales no son naturalmente hostiles hacia ti.
 
-**Furia abisal**: Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para otorgarte ventaja en todos tus tiros relacionados con una estadística de tu elección. Cuando pases rango + 2 rondas con este efecto activo deberás pagar 1 chi o tener éxito en un tiro de SAB contra una dificultad escogida por el máster o perderás temporalmente control de tu personaje.
+**Furia abisal**: Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para otorgarte ventaja en todos tus tiros de ataque, defensa y habilidad relacionados con una estadística de tu elección. Cuando pases rango + 2 rondas con este efecto activo deberás pagar 1 chi o tener éxito en un tiro de SAB contra una dificultad escogida por el máster o perderás temporalmente control de tu personaje.
 
 ## Rango II
 

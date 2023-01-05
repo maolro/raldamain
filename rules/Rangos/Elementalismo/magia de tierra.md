@@ -53,3 +53,44 @@ Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obst
 
 **Lluvia de meteoritos** (3 AP y 5 chi): Levantas la tierra para formar cuatro colosales meteoritos que puedes lanzar a cuatro espacios a distancia lejana de ti. El meteorito impactará toda la tierra en un radio medio y atacará a todas las criaturas en el área, infligiendo 3d10 + SAB daño contundente al impactar y enterrará al objetivo de la misma manera que *derrumbamiento* (si un objetivo está en el área de efecto de dos meteoritos deberá tirar para defenderse de ambos). Toda el área afectada por un meteorito contará como terreno difícil y estos destruirán todas las estructuras en el área.
 
+# Elemental de tierra
+
+## Base (niv 6)
+
+- **PV:** 6 + CON
+- **Estadísticas:** Sus estadísticas físicas son 5 FUE, 1 DES y 5 CON
+- **Vitalidad:** 8 + CON
+- **Defensa**: 6 (armadura natural)
+- **Resistencias:** armas físicas 4, magia 4
+- **Inmunidades:** terreno difícil, veneno, efectos mentales, eléctrico
+- **Vulnerabilidades**: sónico, contundente
+- **Movimiento:** paso 1, excavar 1
+- **Acciones:** 4
+- **Rangos:** Tiene rango I en un arma de tu elección
+- **Habilidades:**
+  - *Georradar:* Puede sentir la posición de todas las criaturas en contacto con la tierra a distancia medi
+  - *Ataque elemental*: El elemental recibe las acciones de ataque *pedrada* y *terratemblor* (recarga 5-6) usando su estadística de FUE y un bonificador +1
+  - *Ataques infundidos*: Tira un dado de daño adicional al impactar con un ataque cuerpo a cueque inflija daño contundente y este cuenta como si tuviera *material superior*.
+
+## Mejora 1 (+2 nivel)
+
+- Aumenta su Vitalidad por 2, sus PV por 6 y dos estadísticas por 1 (máximo 6)
+- Aumenta todas sus resistencias por 2 y recibe +1 en todos sus tiros de ataque elemental
+- Se regenera 2 Vitalidad al principio de su turno
+- Puede usar *muro de piedra* una vez por turno y *tierra viva* con recarga 5-6. 
+
+## Mejora 2 (+2 nivel)
+
+- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
+- Cada vez que se mueva provoca los efectos de *ola de tierra*.
+- Reduce el coste de hacer ataques con *pedrada* y *terratemblor* por 1
+- Recibe +1 en todos sus tiros de ataque y tiene activa la habilidad *forma de la montaña* al ser invocado, pero no podrá restaurarla.
+- Puede gastar +1 AP para provocar los efectos de *abrazo de la tierra* al impactar con un ataque cuerpo a cuerpo.
+
+## Mejora 3 (+2 nivel)
+
+- Aumenta su Vitalidad por 2, sus PV por 4 y dos estadísticas por 1 (máximo 8)
+- Aumenta todas sus resistencias ya existentes por 2 y recibe +1 en sus tiros de ataque
+- Recibe resistencia 6 al daño fuego, frío y ácido además que pierde la vulnerabilidad al daño trueno.      
+- Si combate estando en contacto con la tierra recibe ventaja en todos sus tiros de ataque y defensa contra otras criaturas que pueda sentir con su *georradar*
+- Puede usar las habilidades *pilares de la tierra* y *derrumbamiento* ambas con recarga 5-6

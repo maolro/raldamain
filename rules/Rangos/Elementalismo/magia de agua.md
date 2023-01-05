@@ -51,7 +51,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP y *torrente* au
 
 ## Rango VI
 
-**Furia de  los océanos** (3 AP y 5 chi): Invocas la furia del mar en todo el campo de batalla, haciendo que las aguas y el cielo se enfurezcan. Esta habilidad afectará el campo de batalla con *lluvia torrencial* y mientras pasen las rondas la tormenta aumentará su fuerza. A partir de la segunda ronda formar una *ola chocante* cada ronda como acción bonus sin coste de chi que emergerá de una superficie de agua para atacar a todas las criaturas cercanas y a partir de la cuarta puedes formar un *vórtice* en lugar de una *ola.* No necesitarás concentrarte en ninguno de estos efectos y la *furia de los océanos* se desvanecerá al cabo de 7 rondas.
+**Furia de los océanos** (3 AP y 5 chi): Invocas la furia del mar en todo el campo de batalla, haciendo que las aguas y el cielo se enfurezcan. Esta habilidad afectará el campo de batalla con *lluvia torrencial* y mientras pasen las rondas la tormenta aumentará su fuerza. A partir de la segunda ronda formar una *ola chocante* cada ronda como acción bonus sin coste de chi que emergerá de una superficie de agua para atacar a todas las criaturas cercanas y a partir de la cuarta puedes formar un *vórtice* en lugar de una *ola.* No necesitarás concentrarte en ninguno de estos efectos y la *furia de los océanos* se desvanecerá al cabo de 7 rondas.
 
 # Invocación
 

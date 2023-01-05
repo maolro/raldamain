@@ -17,7 +17,7 @@ Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldicion
 
 ## Rango II
 
-**Arma sacra**: Tu arma inflige +1d6 daño de un tipo relacionado con tu dios además del efecto de estado asociado al impactar. (1 chi) El arma de un aliado recibe la misma mejora durante el resto del combate.
+**Arma sacra**: Tu arma inflige +1d6 daño de un tipo relacionado con tu dios además del efecto de estado asociado al reducir. (1 chi) El arma de un aliado recibe la misma mejora durante el resto del combate.
 
 **Armadura consagrada:** Tu armadura recibe la mejora *material superior* además de resistencia igual a su defensa base contra un tipo de daño de tu elección. (1 chi) La armadura de un aliado recibe la misma resistencia durante el resto del combate.
 
@@ -35,7 +35,7 @@ Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldicion
 
 ## Rango V
 
-Entrar en *guerrero de la fe* te otorga +1 en tres estadísticas y +2 resistencia al daño físico
+Entrar en *guerrero de la fe* te otorga +1 en tres estadísticas y +2 resistencia al daño físico además de resistencia 4 a la magia.
 
 **Aura sacra:** Al entrar en estado *guerrero de la fe* todos tus aliados reciben resistencia +4 al daño físico, efectos mentales y magia divina. Además, que la primera vez que mueran revivirán a 1 PV
 
@@ -43,7 +43,7 @@ Entrar en *guerrero de la fe* te otorga +1 en tres estadísticas y +2 resistenci
 
 - Recuperas toda la Vitalidad, 6 PV y te sanas todos los efectos de estado negativos
 - Un grupo de hasta 6 aliados resucitan a 6 PV y activan *guerrero de la fe*
-- Invoca una criatura relacionada con tu dios de nivel igual al tuyo
+- Invoca una criatura relacionada con tu dios con tres mejoras
 - Recibes ventaja en todos tus tiros de ataque y defensa con cualquier arma durante el combate
 - Replica los efectos de un hechizo de rango V o menos empleando tu estadística de SAB y rango en guerrero divino
 
