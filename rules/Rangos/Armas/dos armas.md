@@ -15,19 +15,19 @@ Para desbloquear rangos de esta rama necesitas tener la misma cantidad de rangos
 
 ### Rango I 
 
-<u>Debilitar defensas</u> (pasiva): Puedes disparar con tu arma secundaria para dejar expuesto al enemigo a otros ataques. Obtienes ventaja en trucos de bala hechos con tu arma secundaria y al impactar a un enemigo con esta todos los ataques posteriores que realices contra el mismo objetivo recibirán ventaja también. 
+**Debilitar defensas** (pasiva): Puedes disparar con tu arma secundaria para dejar expuesto al enemigo a otros ataques. Obtienes ventaja en trucos de bala hechos con tu arma secundaria y al impactar a un enemigo con esta todos los ataques posteriores que realices contra el mismo objetivo recibirán ventaja también. 
 
-<u>Cubierta de disparos</u> (acción bonus): Eres capaz de hacer disparos a bocajarro con tu arma secundaria para protegerte de ataques. Al utilizar esta habilidad no podrás emplear tu arma secundaria para atacar durante una ronda en todos tus ataques hechos con tu arma secundaria, pero podrás emplear tus armas de fuego para protegerte de ataques, añadiendo tus bonificadores de ataque a tiradas defensivas. Usar cubierta de disparos consumirá una bala adicional al turno. 
+**Cubierta de disparos** (acción bonus): Eres capaz de hacer disparos a bocajarro con tu arma secundaria para protegerte de ataques. Esto te permite añadir tu bonificador con armas de fuego a una tirada defensiva a costa que no podrás hacer un ataque con tu arma secundaria esta ronda. Puedes declarar que estás usando *cubierta de disparos* tanto antes como después de hacer un tiro y se seguirá aplicando aunque lo repitas. Si te encuentras en *posición defensiva* podrás aplicar el bonificador a más de tus tiros defensivos a costa que consumirás una bala adicional por cada tiro al que se aplique.
 
 ### Rango II
 
-<u>Lluvia de plomo</u> (pasiva): Puedes hacer múltiples disparos a la vez para atacar a un gran número de enemigos. Esta habilidad de permite concentrar numerosos ataques en uno solo, incrementando el área de efecto por 5 pies y el daño base por 1d6 por cada ataque empleado de esta manera. Los ataques hechos con lluvia de plomo contarán como ataques de área, infligiendo así la mitad de daño contra aquellos enemigos que superen tu tiro de ataque. 
+**Lluvia de plomo** (pasiva): Puedes hacer múltiples disparos a la vez para atacar a un gran número de enemigos. Esta habilidad de permite concentrar numerosos ataques en uno solo, incrementando el área de efecto a un radio corto y recibiendo +1d6 daño por cada ataque empleado de esta manera (se aplican tanto ataques hechos con tu arma principal como con tu arma secundaria). Los ataques hechos con lluvia de plomo contarán como ataques de área, infligiendo así la mitad de daño contra aquellos enemigos que superen tu tiro de ataque. 
 
-<u>Predecir movimiento</u> (pasiva): Tienes un instinto sobrenatural del peligro. Recibes la habilidad *esquiva asombrosa* (*esquiva asombrosa mejorada* si ya la tienes) y al recibir un ataque sorpresa puedes hacer un ataque de oportunidad con tu arma secundaria como reacción. 
+**Disparo instintivo** (pasiva): Tienes un instinto sobrenatural del peligro y conoces el momento adecuado para disparar. Al usar *cubierta de disparos* para protegerte de un ataque una vez por ronda puedes disparar para herir a un oponente que te haya impactado y así evitar el golpe, permitiéndote atacarle como reacción. Si dicho ataque logra herir a tu objetivo entonces fallará su ataque de manera automática. Debes declarar que estás usando *disparo instintivo* antes que se especifique el daño o efectos del ataq
 
-### Rango III 
+### Rango III  
 
-<u>Maestro pistolero</u> (pasiva): Cuando empleas una acción para apuntar recibirás ventaja en el tiro de ataque de tanto tu arma primaria como tu arma secundaria. Puedes además realizar un ataque adicional por ronda con tu arma secundaria como acción bonus.
+**Maestro pistolero** (pasiva): Cuando empleas una acción para apuntar recibirás ventaja en el tiro de ataque de tanto tu arma primaria como tu arma secundaria. Puedes además realizar un ataque adicional por ronda con tu arma secundaria como acción bonus.
 
 ## Cadenas  
 
