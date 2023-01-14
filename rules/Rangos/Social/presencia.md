@@ -23,7 +23,7 @@ Tienes una reserva de liderazgo (RL) igual a tu rango + CAR
 
 **Furia de batalla** (1 AP, 1 RL): Tú y todos tus aliados que puedan oírte recibirán una acción adicional y +1d6 daño en todos sus ataques a costa que recibirán desventaja en todos sus tiros defensivos. (1 RL) Un aliado repite un tiro de daño y se queda con el mejor resultado.
 
-## Rango III
+## Rango III	
 
 **Inspirar heroísmo** (2 AP, 2 RL): Una cantidad de aliados igual a tu rango que puedan oírte reciben PV temporales iguales a tu rango + 2 y ventaja en todos sus tiros de ataque, defensa y contra el miedo. Los bonificadores de esta habilidad se perderán cuando se acaben los PV temporales.
 

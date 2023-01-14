@@ -23,7 +23,7 @@ Para desbloquear rangos de esta rama necesitas tener la misma cantidad de rangos
 
 **Lluvia de plomo** (pasiva): Puedes hacer múltiples disparos a la vez para atacar a un gran número de enemigos. Esta habilidad de permite concentrar numerosos ataques en uno solo, incrementando el área de efecto a un radio corto y recibiendo +1d6 daño por cada ataque empleado de esta manera (se aplican tanto ataques hechos con tu arma principal como con tu arma secundaria). Los ataques hechos con lluvia de plomo contarán como ataques de área, infligiendo así la mitad de daño contra aquellos enemigos que superen tu tiro de ataque. 
 
-**Disparo instintivo** (pasiva): Tienes un instinto sobrenatural del peligro y conoces el momento adecuado para disparar. Al usar *cubierta de disparos* para protegerte de un ataque una vez por ronda puedes disparar para herir a un oponente que te haya impactado y así evitar el golpe, permitiéndote atacarle como reacción. Si dicho ataque logra herir a tu objetivo entonces fallará su ataque de manera automática. Debes declarar que estás usando *disparo instintivo* antes que se especifique el daño o efectos del ataq
+**Disparo instintivo** (pasiva): Tienes un instinto sobrenatural del peligro y conoces el momento adecuado para disparar. Al usar *cubierta de disparos* para protegerte de un ataque una vez por ronda puedes disparar para herir a un oponente que te haya impactado y así evitar el golpe, permitiéndote atacarle como reacción. Si dicho ataque logra herir a tu objetivo entonces fallará su ataque de manera automática. Debes declarar que estás usando *disparo instintivo* antes que se especifique el daño o efectos del ataque.
 
 ### Rango III  
 
