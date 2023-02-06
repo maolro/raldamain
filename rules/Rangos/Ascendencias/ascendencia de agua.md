@@ -55,8 +55,8 @@ Incrementa tu CAR por 1.
 
 **Forma elemental** (3 AP y 3 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 30 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 
-- Recibes inmunidad al daño no-mágico, veneno y efectos mentales. Tu estadística de DES pasa a ser 7
-- Tu resistencia mágica y tu resistencia al fuego pasan a ser 8
+- Recibes inmunidad al daño no-mágico, veneno, efectos mentales y cualquier tiro de FUE cuya fuente sea física (Magia gravitatoria, magia de agua y telekinesia son excepciones),
+- Tu resistencia mágica y tu resistencia al fuego pasan a ser 8. Tus estadísticas de DES, FUE y CON pasan a ser 8.
 - Te regeneras 4 Vitalidad al principio de tu turno y cada vez que pases por una superficie de agua puedes emplear la habilidad *controlar el agua* sin la necesidad de emplear acciones o chi además que obtendrás velocidad de vuelo 1.
 - Puedes emplear el hechizo *torrente* empleando 1 AP con bonificador de ataque +12 y provocando 1d8 + 8 daño contundente al impactar. Empleando una acción adicional puedes mejorar el ataque para realizar un hechizo entre *prisión de agua*, *taladro de agua* o *escaldar*. También eres capaz de emplear el hechizo *vórtice* gastando 3 AP con recarga 5-6. Ninguno de estos hechizos requerirá un gasto de chi
 - Recibes parada de agua con bonificador +12 y puedes usar *muro de agua* una vez por ronda reacción para detener un ataque (esto se acumula con el hechizo base)
@@ -70,7 +70,7 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 
 **Nacido de las profundidades:** Eres capaz de respirar bajo el agua sin dificultades y eres inmune al daño frío no-mítico.
 
-**Hidrokinesia:** La cantidad de agua que mueves con hidrokinesia pasa a ser mediana y puedes usar un hechizo de magia de agua o hielo de rango I como acción bonus una vez al turno. Tu bonificador será igual a tu CAR + 1 en el caso que no tengas rangos en magia de agua.
+**Hidrokinesia:** La cantidad de agua que mueves con hidrokinesia pasa a ser mediana y puedes usar un hechizo de magia de agua de rango I como acción bonus una vez al turno. Tu bonificador será igual a tu CAR + 1 en el caso que no tengas rangos en magia de agua.
 
 ## Rango II
 
@@ -100,4 +100,4 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 
 **Campeón de los espíritus:** Pasas a ser una criatura espiritual, volviéndote inmortal y recibiendo inmunidad al veneno, efectos mentales y enfermedades. Puedes comandar a espírius de agua de cualquier tipo y no neceitas comer, dormir o respirar.
 
-**Forma elemental:** Aumenta los PV temporales al activar esta habilidad por 15 e incrementarás tu tamaño a gargantuesco al activarla. Además, todos los hechizos que uses con dicha habilidad pasarán a ser míticos y tu tiro de ataque y parada aumentarán por 6. Serás también inmune al fuego y a los hechizos de magia arcana no-míticos en dicho estado.
+**Forma elemental:** Aumenta los PV temporales al activar esta habilidad por 15 e incrementarás tu tamaño a gargantuesco al activarla. Además, todos los hechizos que uses con dicha habilidad pasarán a ser míticos y tu tiro de ataque y parada aumentarán por 6. Serás también inmune al fuego y a los hechizos de magia arcana no-míticos en dicho estado, y mientras permanezcas en este estado tus estadísticas de DES y FUE pasarán a ser 10.
