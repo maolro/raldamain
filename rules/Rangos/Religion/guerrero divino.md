@@ -11,7 +11,7 @@ Los dioses te han bendecido para que lideres sus huestes hacia la victoria contr
 
 Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldiciones. Incrementa también tu reserva de chi por 2 + rango.
 
-**Guerrero de la fe**: Invoca el poder de tu dios durante un combate, recibiendo ventaja en todos tus ataques y tiros defensivos con un arma durante rango + 2 rondas. (1 chi) Este efecto dura una ronda adicional.
+**Guerrero de la fe**: Invoca el poder de tu dios durante un combate, recibiendo ventaja en todos tus tiros relacionados con un arma durante una cantidad de rondas igual a tu rango + 2. (1 chi) Este efecto dura una ronda adicional.
 
 **Sanador de combate** (2 acciones): Sana 2 + rango Vitalidad a un personaje adyacente. (1 chi) Reduce el nivel de una herida permanente, enfermedad o veneno por un paso
 

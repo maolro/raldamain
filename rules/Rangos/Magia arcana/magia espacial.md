@@ -9,7 +9,7 @@ Has decidido estudiar los planos que muestran los conductos de chi a lo largo de
 
 Añade tu rango a todos tus tiros relacionados con magia espacial. Tu reserva aumenta por 2+Rango chi.
 
-**Salto espacial** (1 AP y 1 chi): Te teletransportas una distancia media en cualquier dirección, evitado ataques de oportunidad. Esta habilidad puede usarse como reacción una vez al turno si estás en *posición defensiva* para evitar un ataque.
+**Salto espacial** (1 AP y 1 chi): Te teletransportas una distancia media en cualquier dirección, evitado ataques de oportunidad. Esta habilidad puede usarse como reacción una vez al turno si estás en *posición defensiva* para tener éxito automático en un tiro defensivo hecho con magia espacial.
 
 **Portal menor** (2 AP): Formas un portal en una posición adyacente del tamaño de tu mano que se conectará con otro punto a distancia media. Todo lo que pase por un lado del portal acabará en el otro y puedes afectar el entorno al otro lado del portal como si estuviera adyacente a ti. El portal permanecerá durante una ronda salvo que gastes 1 chi y no puedes tener más portales activos a la vez que tu rango.
 

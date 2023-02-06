@@ -21,7 +21,7 @@ Añade tu rango a todos tus tiros relacionados con escudos.
 
 **Forma defensiva:** Entras en un estado de defensa absoluta durante rango + 2 rondas. Mientras estés en este estado tu fuerza y constitución aumentarán por 2 y tendrás los beneficios de *posición defensiva* sin la necesidad de gastar acciones, sin embargo tu velocidad de movimiento se reducirá por 1. Cuando *forma defensiva* termine estarás *fatigado*, impidiendo que vuelvas a usar la habilidad hasta que te recuperes.
 
-**Defensa mejorada:** Al fracasar en un tiro defensivo podrás escoger reducir el valor defensivo del escudo por 1 para desviar el ataque. Debes estar en *posición defensiva* para usar esta habilidad.
+**Defensa mejorada:** Al fracasar en un tiro defensivo podrás escoger reducir el valor defensivo del escudo por 1 para tener éxito automático en tu tiro de parada (redúcelo por 2 en el caso que intentes detener un golpe crítico). Debes estar en *posición defensiva* para usar esta habilidad.
 
 ## Rango III
 

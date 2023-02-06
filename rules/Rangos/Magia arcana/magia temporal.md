@@ -9,7 +9,7 @@ El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo
 
 Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
 
-**Premonición**: Como reacción repite un tiro de tu elección y te quedas con el resultado que más te convenga (máximo una vez por tiro). Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
+**Premonición**: Como reacción repite un tiro de ataque, defensa o habilidad y te quedas con el resultado que más te convenga (máximo una vez por tiro). Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
 
 **Alteración temporal** (1 AP y 1 chi): Restaura un objeto pequeño a su estado anterior reparándolo de todos los daños sufridos en la última ronda. Si esta habilidad se usa en una persona puedes sanarle una cantidad de Vitalidad igual a tu rango + 2.
 
@@ -45,7 +45,7 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 **Parar el tiempo** (3 AP y 3 chi): Detienes el tiempo en una burbuja de tamaño grande, paralizando a todas las criaturas que se encuentren en ella. Este efecto durará una ronda o hasta que ataques a cualquier criatura paralizada por el efecto. *Parar el tiempo* no funciona contra criaturas afectadas por *campo antimágico* o *aura divina*. 
 
-**Visión futura**: Tienes un sexto sentido que te avisa de peligros inminentes, volviéndote inmune ataques sorpresa y obteniendo ventaja en todos tus tiros durante un combate. Puedes gastar cargas de premonición para asistir tiros de aliados (3 chi) Otorgas *visión futura* a un aliado adyacente durante el resto del combate.
+**Visión futura**: Tienes un sexto sentido que te avisa de peligros inminentes, volviéndote inmune ataques sorpresa y obteniendo ventaja en todos tus tiros de ataque y defensa durante un combate. Puedes gastar cargas de premonición para asistir tiros de aliados (3 chi) Otorgas *visión futura* a un aliado adyacente durante el resto del combate.
 
 **Brecha temporal** (3 AP y 3 chi):  Obtienes control del tiempo en el campo de batalla durante el resto del combate o hasta que pierdas la concentración, manejando su flujo como más te convenga. Al principio de tu turno puedes escoger adelantar o atrasar el tiempo, lo cual te permite afectar a cualquier cantidad de objetivos con *alteración temporal* o *robar el tiempo.* Además, puedes gastar cargas de premonición para sustituir el coste de chi en las habilidades *acelerar* y *ralentizar*. 
 
@@ -61,7 +61,7 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 **Alteración temporal:** Al reparar un objeto lo restauras a su estado original, reparando así todos los daños que haya sufrido a lo largo de su existencia. Además, si usas esta habilidad en una persona puedes sanarle PV y reducirás el nivel de una herida permanente que tenga por un paso.
 
-**Robar el tiempo:** Al emplear esta habilidad en un objeto no-mágico lo harás inutilizable mientras que si la usas en una persona le infligirás el efecto de estado *exhausto* al impactar y tiras un dado de daño adicional. (1 chi) Reduce la reserva de chi por 2 y recuperas 2 usos de *premonición* al impactar.
+**Robar el tiempo:** Al emplear esta habilidad en un objeto no-mágico lo harás inutilizable mientras que si la usas en una persona le infligirás el efecto de estado *exhausto* al impactar y tiras un dado de daño adicional. (1 chi) Reduce la reserva de chi del objetivo por 2 y recuperas 2 usos de *premonición* al impactar.
 
 ## Rango II
 
