@@ -5,6 +5,8 @@ category: Magia elemental
 
 Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aquellos entes naturales a tu alrededor permitiendo controlar así las formas más básicas en las que la naturaleza lleva desarrollándose desde el inicio de los tiempos. A medida que tu control avanza serás capaz de asumir el rol de guardián de la naturaleza que has decidido controlar, sometiéndose a tu voluntad e incluso devolviendo a su estado original maquinas u otros materiales hechos por el hombre. En última instancia serás incluso capaz de controlar toda la flora en una gran área y manipularla toda junta para realizar un gran ataque sobre aquel que se atreva a desafiar el orden natural de las cosas.
 
+# Rangos
+
 ## Rango I
 
 Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumentas tu reserva de chi por rango + 2.
@@ -118,3 +120,32 @@ Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
 Aumenta todas sus resistencias por 2 y recibe +1 en sus tiros de ataque
 
 Recibe *florecimiento mortal* (1/día), *espinas espontáneas* (1/día) y *prisión de madera* como acción de ataque
+
+# Rangos míticos
+
+Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 en todos los tiros y +1 chi. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
+
+## Rango I
+
+
+
+## Rango II
+
+
+
+## Rango III
+
+
+
+## Rango IV
+
+
+
+## Rango V
+
+
+
+## Rango VI
+
+
+
