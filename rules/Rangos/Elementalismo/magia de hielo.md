@@ -52,3 +52,68 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 ## Rango VI
 
 **Medianoche polar** (3 AP Y 5 chi): Llenas el campo de batalla con frío extremo, congelando toda el agua en él y apagando todas las fuentes de calor. Si ya te encuentras en frío extremo haz un ataque de *congelación rápida* contra todas las criaturas en el área de efecto las cuales deberán defenderse con su estadística de CON. Este efecto permanecerá activo hasta que pierdas la concentración (si *llamada del invierno* está activa esto no te hace falta) y mientras lo esté puedes hacer un ataque de *congelación rápida*, *tormenta de nieve* o *neblina polar* como acción bonus una vez por turno contra cualquier objetivo en el campo de batalla. Además, todas las habilidades de magia elemental de fuego y agua tendrán desventaja y aquellas de rango III o menos no podrán funcionar (no se aplica a personajes con la habilidad *campeón de los espíritus*)
+
+# Invocación
+
+## Base
+
+·     **Estadísticas**: Físicas 5,4,3
+
+·     **PV:** 6 + CON
+
+·     **Vitalidad:** 8 + CON
+
+·     **Defensa**: 6 (armadura natural)
+
+·     **Resistencias:** armas físicas 4, magia 4
+
+·     **Inmunidades:** terreno difícil, veneno, efectos mentales, frío
+
+·     **Vulnerabilidades**: fuego, contundente
+
+·     **Movimiento:** paso 1
+
+·     **Acciones:** 4
+
+·     **Habilidades:**
+
+o  *Sentido de vida*: Puede sentir la presencia de seres vivos a una distancia lejana y el *ocultamiento* no afecta su visión.
+
+o  *Ataque elemental*: El elemental recibe las acciones de ataque *espina gélida* usando su estadística de FUE o DES y *rayo gélido* usando su CON. Ambos ataques tendrán un bonificador +1.
+
+o  *Aura de frío*: Todo el espacio a distancia media de esta criatura está afectado por *bajar temperaturas*
+
+o  *Caminante del hielo*: Puede caminar encima del agua congelándola a su paso.
+
+## Mejora 1
+
+·     Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+
+·     Aumenta sus resistencias por 2 y recibe +1 en todos sus ataques elementales
+
+·     Se regenera 2 Vitalidad al principio de su turno
+
+·     Sus ataques físicos infligen +1d6 daño frío y *fatigan* al reducir PV.
+
+·     Puede usar *muro de hielo* una vez por ronda como reacción, *neblina polar* con recarga 5-6 y todo el espacio por el que pase quedará afectado por *hielo resbalante*.
+
+## Mejora 2
+
+·     Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
+
+·     Recibe +1 en todos sus ataques elementales y reduce su coste por 1 AP
+
+·     Tiene la habilidad *manto nevado* la cual permanecerá activa hasta que sufra daño fuego y sus ataques infligen hipotermia al reducir PV.
+
+·     Puede usar *tormenta de nieve* con recarga 5-6 (usará la estadística de CON para el tiro y el daño) o gastar 1 AP para afectar a un objetivo que impacte con *congelación rápida*.
+
+## Mejora 3	
+
+·     Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
+
+·     Aumenta todas sus resistencias por 2 y recibe +6 PV y +2 DEF
+
+·     Todos sus ataques físicos infligen +1d6 daño frío y puede usar *ventisca* en lugar de *tormenta de nieve* con la misma recarga.
+
+·     Tiene la capacidad de entrar en *forma gaseosa* con 2 AP. En dicho estado tiene velocidad de vuelo 1 e inmunidad al daño no-mágico pero no podrá hacer ataques físicos y reduce su DEF y resistencias a 0
+
