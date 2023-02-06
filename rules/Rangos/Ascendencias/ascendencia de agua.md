@@ -5,6 +5,8 @@ category: Ascendencias
 
 Sientes una gran afinidad por los espíritus de las aguas de todo el mundo, convirtiéndote un reflejo de tanto la atroz naturaleza de los océanos como la adaptabilidad de los ríos. A medida que su influencia se va haciendo más presente en ti recibes la capacidad de resistir los efectos más adversos de las aguas y transformarte en un testimonio viviente de la fluidez de las corrientes y la fuerza de las mareas.
 
+# Rangos
+
 ## Rango I
 
 Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
@@ -33,7 +35,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de agua a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
-**Columna de agua:** Recibes velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar si te encuentras encima de una gran masa de agua. No podrás volar más de dos pasos encima del agua y dejarás inmediatamente de volar si pierdes la concentración (1 chi) Puedes volar encima de una superficie de tierra cercana a la masa de agua durante una ronda. 
+**Columna de agua:** Recibes velocidad de vuelo 1 y ventaja en todos tus tiros de esquiva y de ataque con armas cuerpo a cuerpo contra criaturas incapaces de volar. No podrás volar más de dos pasos encima del agua y dejarás inmediatamente de volar si pierdes la concentración (1 chi) Puedes volar encima de una superficie de tierra cercana a la masa de agua durante una ronda. 
 
 **Ataques infundidos**: Al impactar con un ataque físico cuerpo a cuerpo puedes *desenganchar* como acción bonus y puedes gastar 1 chi para entrar en *posición defensiva* (esto es gratuito si estás en *forma fluida*). Si tienes rangos en magia de hielo obtienes la habilidad con el mismo nombre perteneciente a *ascendencia boreal*.
 
@@ -41,7 +43,7 @@ Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de agua a todo
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Elemento del cambio**: Obtienes resistencia al daño fuego igual a tu rango + 1 y al principio de tu turno puedes obtener resistencia contra el efecto de estado de tu elección igual a tu rango durante esta ronda (debes escoger entre *ralentizado, enfermado, fatigado, aturdido* o *confundido*). Además, eres capaz de respirar bajo el agua sin dificultades como si fueras anfibio.
+**Elemento del cambio**: Obtienes resistencia al daño fuego igual a tu rango + 1 y al principio de tu turno puedes obtener immunidad contra el efecto de estado de tu elección durante esta ronda (debes escoger entre *ralentizado, enfermado, fatigado, aturdido* o *confundido*). Además, eres capaz de respirar bajo el agua sin dificultades como si fueras anfibio.
 
 **Ecolocación**: Tienes vista a ciegas en un radio medio y puedes predecir los movimientos de otras criaturas que se encuentren en la misma superficie de agua que tú, obteniendo así los beneficios de *visión futura* contra ellos.
 
@@ -49,6 +51,53 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
 Incrementa tu CAR por 1.
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del agua te obedecen
+**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del agua te obedecerán.
 
-**Forma elemental** (3 AP y 3 chi): Invoca un *elemental de agua* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. No obstante carecerás de la inmunidad al daño físico que tiene el elemental.
+**Forma elemental** (3 AP y 3 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 30 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+
+- Recibes inmunidad al daño no-mágico, veneno y efectos mentales. Tu estadística de DES pasa a ser 7
+- Tu resistencia mágica y tu resistencia al fuego pasan a ser 8
+- Te regeneras 4 Vitalidad al principio de tu turno y cada vez que pases por una superficie de agua puedes emplear la habilidad *controlar el agua* sin la necesidad de emplear acciones o chi además que obtendrás velocidad de vuelo 1.
+- Puedes emplear el hechizo *torrente* empleando 1 AP con bonificador de ataque +12 y provocando 1d8 + 8 daño contundente al impactar. Empleando una acción adicional puedes mejorar el ataque para realizar un hechizo entre *prisión de agua*, *taladro de agua* o *escaldar*. También eres capaz de emplear el hechizo *vórtice* gastando 3 AP con recarga 5-6. Ninguno de estos hechizos requerirá un gasto de chi
+- Recibes parada de agua con bonificador +12 y puedes usar *muro de agua* una vez por ronda reacción para detener un ataque (esto se acumula con el hechizo base)
+- Empleando 1 AP puedes congelar partes de tu cuerpo para recibir resistencia 14 al daño físico hasta final de turno a costa de perder tu inmunidad al daño no-mágico y recibir vulnerabilidad al fuego. Deshacer esta habilidad también cuesta 1 AP.
+
+# Rangos míticos
+
+Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de aumentar la resistencia física, la resistencia mágica y la reserva de chi por 1. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
+
+## Rango I
+
+**Nacido de las profundidades:** Eres capaz de respirar bajo el agua sin dificultades y eres inmune al daño frío no-mítico.
+
+**Hidrokinesia:** La cantidad de agua que mueves con hidrokinesia pasa a ser mediana y puedes usar un hechizo de magia de agua o hielo de rango I como acción bonus una vez al turno. Tu bonificador será igual a tu CAR + 1 en el caso que no tengas rangos en magia de agua.
+
+## Rango II
+
+**Puñetazo hidráulico:** Aumentas el daño que provocas con *puñetazo hidráulico* por 1d6 y empujas un paso adicional al impactar.
+
+**Nadador hábil:** Vuelve a aumentar tu velocidad de natación por 1 y puedes caminar encima del agua sin importar su estado. Eres también inmune a todos los efectos de agua no-míticos que intenten agarrarte, como *vórtice* o *prisión de agua*.
+
+## Rango III
+
+**Forma fluida:** Activar esta habilidad te cuesta una acción bonus y mientras esté activa serás inmune a todo el daño no-mágico. 
+
+**Conexión elemental:** Aumenta tu regeneración por 2 y si estás en contacto con el agua una vez por ronda puedes reducir el coste en chi de una de tus habilidades por 1.
+
+## Rango IV
+
+**Columna de agua:** Al activar esta habilidad toda el agua que te rodea quedará afectada por la habilidad *vórtice* en su versión no-mítica. Dicha habilidad empleará tu CAR como bonificador al ataque y se le sumará tu rango en magia de agua si la tienes.
+
+**Ataques infundidos:** Aumenta tu alcance por un paso y al impactar con uno de tus ataques puedes empujar un paso adicional.
+
+## Rango V
+
+**Elemento del cambio:** Eres inmune al daño fuego no-mítico y a todos los efectos de estado *ralentizado*, *fatigado*, *aturdido*, *enfermado* o *confundido* provocados por criaturas no-míticas. 
+
+**Ecolocación:** El alcance aumenta a distancia grande y puedes notar también el estado actual de tus enemigos, identificando sus PV y Vitalidad además de los efectos de estado que tengan activos.
+
+## Rango VI
+
+**Campeón de los espíritus:** Pasas a ser una criatura espiritual, volviéndote inmortal y recibiendo inmunidad al veneno, efectos mentales y enfermedades. Puedes comandar a espírius de agua de cualquier tipo y no neceitas comer, dormir o respirar.
+
+**Forma elemental:** Aumenta los PV temporales al activar esta habilidad por 15 e incrementarás tu tamaño a gargantuesco al activarla. Además, todos los hechizos que uses con dicha habilidad pasarán a ser míticos y tu tiro de ataque y parada aumentarán por 6. Serás también inmune al fuego y a los hechizos de magia arcana no-míticos en dicho estado.
