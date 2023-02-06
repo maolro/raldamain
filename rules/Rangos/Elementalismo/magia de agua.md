@@ -33,7 +33,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los 
 
 **Controlar el agua** (3 AP y 2 chi): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a lejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
 
-**Invocar elementales de agua** (3 AP y 2 chi): Invoca a un elemental de agua que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
+**Invocar elementales de agua** (3 AP y 2 chi): Invoca a un elemental de agua que permanecerá a tu lado durante el combate. Al mejorar de rango cada elemental creado tendrá una mejora adicional. No puedes controlar a más de 4 elementales a la vez.
 
 ## Rango IV
 
@@ -147,6 +147,3 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 ## Rango VI
 
 **Furia de los océanos:** Activar esta habilidad te cuesta una acción bonus y todos los hechizos que activa contarán como su versión mítica.
-
-
-
