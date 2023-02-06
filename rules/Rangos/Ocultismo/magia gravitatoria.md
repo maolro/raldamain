@@ -35,7 +35,7 @@ Puedes coger un objeto mediano con *lanzamiento*, aumentando su daño base a 1d8
 
 ## Rango IV
 
-**Levitación** (2 acciones  y 2 chi): Una criatura a distancia media recibe velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar hasta que pierdas la concentración (cuenta como un *centro gravitatorio*). 
+**Levitación** (2 acciones  y 2 chi): Una criatura a distancia media recibe velocidad de vuelo 1 y ventaja en todos sus tiros de esquiva además de sus ataques cuerpo a cuerpo contra criaturas incapaces de volar. Este efecto durará hasta que pierdas la concentración (cuenta como un *centro gravitatorio*). 
 
 **Maestría de gravedad** (3 acciones y 2 chi): Alteras la gravedad en un radio de tamaño grande durante el resto del combate o hasta que pierdas la concentración. Puedes incrementar la gravedad para *ralentizar* a todas las criaturas en el área y afectar todos los objetos con *aumentar densidad* o reducir la gravedad para que todas las criaturas reciban velocidad de salto 1 y desventaja en tiros de FUE además de afectar a todos los objetos con *reducir densidad*. Debes escoger un efecto al usar esta habilidad y cambiarlo te cuesta 2 AP. 
 

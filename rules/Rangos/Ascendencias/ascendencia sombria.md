@@ -39,7 +39,7 @@ Incrementa tu CAR por 1. Puedes sumar tu rango en magia sombría a todos tus tir
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 2.
 
 **Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática si te encuentras en posición defensiva.
 

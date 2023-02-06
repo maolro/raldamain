@@ -67,7 +67,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP y *torrente* au
 - **Movimiento:** nadar 2
 - **Acciones:** 4
 - **Habilidades:**
-  - Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
+  - *Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
   - *Ataque elemental*: El elemental recibe la acción de ataque *torrente* como estadística principal la CAR y sumando +1 a su tiro de ataque
   - *Parada elemental:* Puede defenderse de ataques a distancia y mágicos usando su DES y sumándole +1
   - *Agua de vida*: Mientras esta criatura esté adyacente a su invocador este recuperará 2 Vitalidad al principio de su turno.

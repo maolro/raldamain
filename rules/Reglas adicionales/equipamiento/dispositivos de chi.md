@@ -46,3 +46,4 @@ title: Dispositivos de chi
 
 <u>Implante de concentración:</u> Un implante de concentración es un aparato capaz de mejorar las habilidades mentales del usuario proporcionándole información en un instante y minimizando las distracciones. Mientras una persona posea un implante de concentración recibirá ventaja en todos sus tiros de memoria y arcanismo además de poder concentrarse en un efecto adicional por ronda. Una única persona no puede llevar más de un único implante de concentración.
 
+​	

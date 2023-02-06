@@ -49,6 +49,6 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
 Incrementa tu SAB por 1.
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del aire te obedecen
+**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del aire te obedecen y el daño eléctrico que provocas atravesará resistencias. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al daño eléctrico como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
 
 **Forma elemental** (3 AP y 3 chi): Invoca un *elemental de aire* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. No obstante carecerás de la inmunidad al daño físico que tiene el elemental.

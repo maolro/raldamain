@@ -55,7 +55,7 @@ Reduce el coste de *toque sanador, descarga luminosa* y *halo cegador* por 1 AP.
 
 ## Rango VI
 
-**Fuente de toda la vida** (3 AP y 5 chi): Sobrecargas el campo de batalla con energía vital, haciendo un ataque contra todos los no-muertos y extraplanarios malignos que inflige 3d10 + CAR daño radiante además de aturdir. Además, al principio de la ronda todos tus aliados recuperan 4 Vitalidad y aquellos que hayan muerto resucitan a 1 PV mientras que los no-muertos y extraplanarios malignos sufrirán 4 daño radiante. Recibes además ventaja en todos tus ataques de magia de vida e infligen +1d6 daño al impactar. Este efecto permanecerá activo durante una cantidad de rondas igual a tu rango + 1 y solo puede ser eliminado por otro de igual magnitud.
+**Fuente de toda la vida** (3 AP y 5 chi): Sobrecargas el campo de batalla con energía vital, haciendo un ataque contra todos los no-muertos y extraplanarios malignos que inflige 3d10 + CAR daño radiante además de aturdir. Además, al principio de la ronda todos tus aliados recuperan 4 Vitalidad y aquellos que hayan muerto resucitan a 1 PV mientras que los no-muertos y extraplanarios malignos sufrirán 4 daño radiante. Recibes además ventaja en todos tus ataques de magia de vida y estos infligen +1d6 daño al impactar. Este efecto permanecerá activo durante una cantidad de rondas igual a tu rango + 1 y solo puede ser eliminado por otro de igual magnitud.
 
 # Rangos míticos
 

@@ -31,7 +31,7 @@ Tu montura recibe una mejora
 
 # Montura
 
-## Base
+## Base (nivel 2+)
 
 - **Estadísticas base:** 4,3,2,1,1,0
 - **PV:** 3 + CON
@@ -45,7 +45,7 @@ Tu montura recibe una mejora
   - *Entrenamiento*: La montura recibe +1 Vitalidad por un valor igual al nivel del jinete / 2 y +1 PV por su nivel / 4. Recibirá además +1 rango en un arma de tu elección por cada 4 niveles que tenga el invocador. 
   - *Sensibilidad*: Cada vez que la montura sufra una herida permanente el jinete deberá tener éxito en un tiro de Voluntad frente a una dificultad escogida por el máster según la relación con la montura. Si fracasa el jinete perderá control de ella durante esta ronda y deberá repetir el tiro la ronda siguiente para reestablecer control.
 
-## Mejora 1
+## Mejora 1 (nivel +2)
 
 - Aumenta sus PV, su armadura natural por 2 y dos estadísticas por 1.
 - Recibe un rango adicional en reflejos y +2 en sus tiros de CON
@@ -53,7 +53,7 @@ Tu montura recibe una mejora
 - Obtiene las siguientes habilidades:
   - *Resistir la muerte*: La primera vez que caiga a menos de 0 PV puede revivir a 1 PV sin sufrir heridas permanentes.
 
-## Mejora 2
+## Mejora 2 (nivel +2)
 
 - Aumenta sus PV, su armadura natural por 2 y dos estadísticas por 1.
 - Se regenera 2 Vitalidad al principio de su turno

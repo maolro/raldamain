@@ -33,9 +33,9 @@ Aumenta tu resistencia a daño físico por 1
 
 Incrementa tu FUE por 1.
 
-**Vuelo**: Al entrar en *furia del oni* recibes la capacidad de volar, aumentando tu velocidad de vuelo por 1. Mientras estés volando recibes ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar. Si sufres una herida permanente o eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) mientras vuelas empezarás a caer inmediatamente.
+**Vuelo**: Al entrar en *furia del oni* recibes la capacidad de volar, aumentando tu velocidad de vuelo por 1. Mientras estés volando recibes ventaja en todos tus tiros hechos con armas cuerpo a cuerpo y de esquiva hechos contra criaturas incapaces de volar. Si sufres una herida permanente o eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) mientras vuelas empezarás a caer inmediatamente.
 
-**Forma gaseosa** (2 acciones y 2 chi): Recibes la capacidad de transformar tu cuerpo en un estado gaseoso, volviéndote incorpóreo e inmune a daño físico a costa que no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo un número rondas seguidas igual a tu rango de ascendencia + 1 en forma gaseosa, tras las cuales volverás a tu forma corpórea. Forma gaseosa puede utilizarse como reacción si te encuentras en *posición defensiva para evitar por completo el daño de un ataque.
+**Forma gaseosa** (2 acciones y 2 chi): Recibes la capacidad de transformar tu cuerpo en un estado gaseoso, volviéndote incorpóreo e inmune a daño físico a costa que no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo un número rondas seguidas igual a tu rango de ascendencia + 1 en forma gaseosa, tras las cuales volverás a tu forma corpórea. Forma gaseosa puede utilizarse como reacción si te encuentras en *posición defensiva* para evitar por completo el daño de un ataque.
 
 ## Rango V
 

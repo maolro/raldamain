@@ -49,6 +49,6 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un va
 
 Incrementa tu DES por 1.
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de fuego te obedecen y el daño fuego que provocas atraviesa resistencias.
+**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de fuego te obedecen y el daño fuego que provocas pasa a ser fuego puro, el cual atravesará las resistencias al fuego. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al fuego como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
 
 **Forma elemental** (3 AP y 3 chi): Invoca un *elemental de fuego* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. No obstante carecerás de la inmunidad al daño físico que tiene el elemental.
