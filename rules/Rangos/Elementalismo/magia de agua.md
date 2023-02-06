@@ -5,6 +5,8 @@ category: Magia elemental
 
 Esta magia te permite tener un control absoluto sobre el agua cuando esta se encuentra en estado fluido, pudiendo así aprovecharte de sus propiedades para emplearla en multitud de formas. A medida que tu control va en aumento serás capaz de mayores proezas que involucren al agua en un estado más salvaje, empleándola para formar fuertes torrentes o colosales olas capaces de devastar todo a su paso.
 
+# Rangos
+
 ## Rango I 
 
 Añade tu rango a todos tus ataques hechos con magia elemental de agua y aumenta tu reserva de chi por 2 + rango.
@@ -19,17 +21,17 @@ Añade tu rango a todos tus ataques hechos con magia elemental de agua y aumenta
 
 **Muro de agua** (2 AP y 1 chi): Formas una barrera media de aguas rugientes para protegerte de ataques, otorgándote *cubierta completa* contra ellos. Toda criatura que intente cruzar el muro deberá tener éxito en un tiro de FUE contra tu magia de agua o las aguas le impedirán el paso. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*.
 
-**Ola chocante** (2 AP y 1 chi): Atacas a todas las criaturas en una línea media con una ola rugiente, infligiéndoles el mismo daño y efectos que *torrente*. Si mantienes la concentración en la ola esta avanzará un paso en línea recta, volviendo a atacar a todas las criaturas en su camino. La ola continuará hasta que choque con una pared o haya sido movida 3 pasos. (1 chi) Crea una ola adicional en otra dirección
+**Ola chocante** (2 AP y 1 chi): Atacas a todas las criaturas en una línea media con una ola rugiente, infligiendo 1d6 + CAR daño contundente y empujando un paso. Si mantienes la concentración en la ola esta avanzará un paso en línea recta, volviendo a atacar a todas las criaturas en su camino. La ola continuará hasta que choque con una pared o haya sido movida 3 pasos. (1 chi) Crea una ola adicional en otra dirección
 
 **Tentáculo de agua** (2 AP y 1 chi): Creas un tentáculo de agua que permanecerá a tu lado hasta que pierdas la concentración. Mientras el tentáculo esté activo puedes hacer un ataque adicional de *torrente* al turno como acción bonus contra un objetivo a distancia cercana y puedes sacrificarlo para detener un ataque. No puedes tener activos más tentáculos que tu rango – 1 y aunque tengas múltiples tentáculos solo podrás hacer un ataque al turno, pero este afectará a un objetivo adicional por cada tentáculo que tengas.
 
 ## Rango III
 
-Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP y *torrente* aumenta el daño base a 1d8
+Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los dados de daño de todos los hechizos de magia de agua a d8.
 
 **Prisión de agua** (1 AP y 2 chi): Haz un ataque de magia de agua que al impactar *agarrará* al objetivo con una esfera de aguas rugientes. Mientras el objetivo esté *agarrado* empezará a ahogarse y para escapar deberá usar atletismo en lugar de heroísmo. Si el objetivo se encuentra sumergido en el agua no podrá defenderse de este ataque salvo tirando FUE. (1 chi) Afecta a un objetivo adicional.
 
-**Controlar el agua** (3 AP y 2 chi): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a lejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. 
+**Controlar el agua** (3 AP y 2 chi): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a lejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
 
 **Invocar elementales de agua** (3 AP y 2 chi): Invoca a un elemental de agua que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
 
@@ -37,13 +39,15 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP y *torrente* au
 
 **Vórtice** (3 AP y 2 chi): Formas un vórtice de aguas rugientes que hará un ataque de *torrente* contra todas las criaturas en un radio medio (grande si formas el vórtice en una superficie de agua) que al impactar provocará los efectos de *prisión de agua*. El vórtice permanecerá activo mientras mantengas la concentración y cada criatura que empiece su turno en él o entre en su área de efecto volverá a sufrir el ataque.
 
-**Escaldar** (1 AP y 2 chi): Durante esta ronda todos tus ataques de magia de agua provocan 1d6 + rango daño adicional de fuego y una quemadura leve al reducir PV. Si usas esta habilidad en una superficie de agua todas las criaturas en ella sufrirán 1d6 + rango daño de fuego y una quemadura leve (media si reduce PV) sin la posibilidad de defenderse.
+**Escaldar** (1 AP y 2 chi): Durante esta ronda todos tus ataques de magia de agua provocan 1d6 + rango daño adicional de fuego y una quemadura leve al reducir PV. Si usas esta habilidad en una superficie de agua todas las criaturas en ella sufrirán 1d6 + rango daño de fuego y una quemadura leve (media si reduce PV) sin la posibilidad de defenderse. Este daño fuego ignorará todas las resistencias al fuego que tenga el objetivo al tratarse de agua abrasante.
 
 **Taladro de agua** (2 AP y 2 chi): Haz un ataque de *torrente* con un dado de daño adicional que atacará a todos los objetivos en un cilindro horizontal grande de radio pequeño. Este ataque destruirá también todas las estructuras frágiles y muros en el área.
 
 ## Rango V
 
-**Tsunami** (3 AP y 3 chi): Formas una ola colosal que arrasará con todo lo que se encuentre en una barrera grande, destruyendo las estructuras frágiles que haya. Todas las criaturas en su área de efecto sufrirán un ataque que infligirá 2d10 + CAR daño contundente y les provocará los efectos de *prisión de agua*. La ola se moverá un espacio cada ronda mientras mantengas la concentración en ella, volviendo a atacar a todas las criaturas en su camino mientras que las criaturas agarradas sufrirán el daño de *torrente*. Esta continuará hasta que choque con una barrera lo suficientemente grande o pasen 4 rondas. Si creas esta habilidad a partir de una superficie de agua lo suficientemente grande como un lago o el mar infligirá +1d10 daño al impactar.
+Sustituye los dados de daño de todos los hechizos de magia de agua a d10.
+
+**Tsunami** (3 AP y 3 chi): Formas una ola colosal que arrasará con todo lo que se encuentre en una barrera grande, destruyendo las estructuras frágiles que haya. Todas las criaturas en su área de efecto sufrirán un ataque que infligirá 2d10 + CAR daño contundente y les provocará los efectos de *prisión de agua*. La ola se moverá un espacio cada ronda mientras mantengas la concentración en ella, volviendo a atacar a todas las criaturas en su camino mientras que las criaturas agarradas sufrirán 1d10 + CAR daño contundente al turno. Esta continuará hasta que choque con una barrera lo suficientemente grande o pasen 4 rondas. Si creas esta habilidad a partir de una superficie de agua lo suficientemente grande como un lago o el mar infligirá +1d10 daño al impactar.
 
 **Lluvia torrencial** (3 AP y 3 chi): Invocas una lluvia torrencial que llenará el campo de batalla con una gran cantidad de agua y oscurecerá la visión, provocando así los efectos de *controlar el agua* y *neblina*. La lluvia permanecerá durante el resto del combate y todas las masas de agua en el área empezarán a desbordarse, provocando inundaciones en el área cercana a ellos. Esta habilidad no puede ser usada en entornos donde el clima no lo permita.
 
@@ -96,4 +100,53 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP y *torrente* au
 - Puede gastar 1 AP para emplear la habilidad *escaldar* o *taladro de agua* en uno de sus ataques de *torrente*. Recibe también la habilidad *vórtice* con recarga 5-6.
 - Empleando 2 AP puede cambiar de estado para transformarse en un elemental de hielo de la misma cantidad de mejoras o en una *neblina* de tamaño grande (los PV y Vitalidad que tenga se mantendrán)
 
-· 
+# Niveles míticos
+
+Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 en todos los tiros y +1 chi. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
+
+## Rango I
+
+**Torrente:** Recibes un dado de daño adicional en todos tus ataques de torrente y al impactar empujará un paso adicional. Además, cada ataque de torrente se hará contra todos los enemigos en una línea de longitud media. (1 chi) Haz un segundo ataque de torrente en otra dirección diferente.
+
+**Agua de vida:** Puedes sanar PV con agua de vida y al usar dicha habilidad reducirás el nivel de una herida permanente, veneno o enfermedad por un paso. (1 chi) Reduce dicho efecto por dos pasos.
+
+**Neblina:** Esta habilidad no requiere acciones para usarse ni necesita tu concentración para que se mantenga el efecto.
+
+## Rango II
+
+**Muro de agua:** El muro aumenta su tamaño a grande y crearlo te cuesta una acción bonus. Además, no necesitas encontrarte en *posición defensiva* para usar el muro para protegerte y al formarlo defensivamente las criaturas con FUE 9 o menos son incapaces de atravesarlo.
+
+**Ola chocante:** La ola aumenta su anchura a grande y se moverá durante 5 rondas o hasta que choque. Recibe un dado de daño adicional y al impactar el objetivo deberá tener éxito en un tiro de CON frente a tu CAR o quedará *aturdido* una ronda.
+
+**Tentáculo de agua:** Al emplear esta habilidad te rodearás de una cantidad de tentáculos de agua igual a tu rango - 1. Si ya tienes tentáculos de agua activos la cantidad total no podrá superar tu rango - 1.
+
+## Rango III
+
+**Prisión de agua:** Las criaturas no-míticas no podrán liberarse de este efecto por su cuenta si tienen FUE 9 o menos, forzando a que deban ser rescatadas por otras. Además, la esfera aumentará su tamaño a medio pudiendo afectar a todos los objetivos en ese espacio.
+
+**Controlar el agua:** Activar esta habilidad te cuesta una acción bonus y no se disipará si pierdes la concentración, sustentándose solo con tu poder mítico.
+
+**Invocar elementales de agua:** Puedes un espíritu de agua con esta habilidad de nivel máximo igual a tu rango total x 2. No podrán invocarse criaturas míticas con esta habilidad.
+
+## Rango IV
+
+**Vórtice:** El vórtice aumenta su tamaño a grande, recibe un dado de daño adicional y las criaturas agarradas no podrán escapar por su cuenta si tienen FUE 9 o menos. Si el vórtice se crea en el agua tendrá tamaño extremo y será capaz de agarrar hasta barcos enteros.
+
+**Escaldar:** Los ataques mejorados con esta habilidad provocan un daño de fuego adicional y aumentan todas las quemaduras provocadas por un paso. Lo mismo ocurre al afectar una superficie de agua.
+
+**Taladro de agua:** El taladro aumenta su radio a medio, tirará un dado de daño adicional y empujará un paso adicional al impactar. El taladro tendrá la fuerza suficiente para arrollar con cualquier barrera mágica y es capaz de perforar piedra y acero, impidiendo que las criaturas no-míticas puedan usar *parada* para bloquearlo.
+
+## Rango V
+
+**Tsunami:** El tsunami provoca un dado de daño adicional y arrasará con cualquier barrera mágica. Las criaturas *agarradas* no podrán escapar por su cuenta si tienen FUE 9 o menos y el daño que reciben al turno aumenta por 1d10. Puedes también manipular el rumbo del tsunami para que siga el camino que desees mientras mantengas la concentración y cuando se disuelva este efecto todas las criaturas *agarradas* sufrirán de inmediato 3d10 + CAR daño contundente de caída.
+
+**Lluvia torrencial:** Activar esta habilidad te cuesta una acción bonus y no se disipará si pierdes la concentración, sustentándose solo con tu poder mítico.
+
+**Vapores abrasantes:** La nube de vapor aumenta su radio a grande y todas las criaturas no-míticas o que no tengan ascendencia de agua quedarán *cegadas* si están en la nube. Además, el daño de fuego que provoca la nube al turno aumenta por 1d10 e incrementa las quemaduras provocadas por un paso.  
+
+## Rango VI
+
+**Furia de los océanos:** Activar esta habilidad te cuesta una acción bonus y todos los hechizos que activa contarán como su versión mítica.
+
+
+
