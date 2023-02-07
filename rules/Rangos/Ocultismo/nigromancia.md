@@ -19,7 +19,7 @@ Añade tu rango a todos los tiros para usar hechizos de nigromancia y aumenta tu
 
 ## Rango II
 
-**Vínculo parasítico** (3 AP y 1 chi): Un objetivo adyacentedebe tener éxito en un tiro de CON frente a tu nigromancia o formas un vínculo parasítico con ella. Mientras mantengas el vínculo una vez por ronda como reacción a sufrir daño puedes transferir hasta la mitad del daño que sufras a la criatura con la que tengas el vínculo además que puedes afectarla con *toque necrótico* sin la necesidad de estar adyacente a ella. Cada ronda la criatura puede repetir el tiro de CON para liberarse del efecto y este permanecerá activo hasta que pierdas la concentración. No puedes tener más de un vínculo activo a la vez.
+**Vínculo parasítico** (3 AP y 1 chi): Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu nigromancia o formas un vínculo parasítico con ella. Mientras mantengas el vínculo una vez por ronda como reacción a sufrir daño puedes transferir hasta la mitad del daño que sufras a la criatura con la que tengas el vínculo además que puedes afectarla con *toque necrótico* sin la necesidad de estar adyacente a ella. Cada ronda la criatura puede repetir el tiro de CON para liberarse del efecto y este permanecerá activo hasta que pierdas la concentración. No puedes tener más de un vínculo activo a la vez.
 
 **Animar no-muerto** (3 AP y 1 chi): Animas un cadáver como un no-muerto de tipo zombi o esqueleto el cual seguirá tus órdenes al pie de la letra. No puedes comandar simultáneamente a más no-muertos que tu rango x 3.
 
