@@ -11,7 +11,7 @@ Añade tu rango a todos tus tiros de ataque hechos con cadenas.
 
 **Enredar** (2 AP): Haz un ataque con tu arma que al impactar *enredará* al objetivo. Si tienes a un objetivo enredado todas las maniobras para desarmar, tropezar o agarrar cuestan una acción.
 
-**Danza de cadenas** (1 AP): La siguiente vez que un enemigo entre en un espacio en tu alcance puedes realizar una acción perteneciente este rango contra él como reacción.
+**Danza de cadenas** (1 AP): La siguiente vez que un enemigo entre en un espacio en tu alcance puedes realizar una acción perteneciente este rango contra él como reacción. Esta habilidad dura hasta que pierdas la concentración o la actives.
 
 **Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo.
 

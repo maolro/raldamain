@@ -127,6 +127,10 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 
 ## Rango I
 
+**Zarcillo enredador:** 
+
+**Alterar madera:** 
+
 
 
 ## Rango II
