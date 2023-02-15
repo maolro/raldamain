@@ -9,7 +9,7 @@ Tu has decidido caminar por una senda algo diferente al de el resto de escuelas 
 
 Añade tu rango a todos tus tiros relacionados con magia mental. Tu reserva aumenta por 2+Rango chi. 
 
-**Asalto mental** (2 AP): Un objetivo a distancia lejana debe tirar SAB contra tu magia mental o reduce su cordura por 1 + rango y pierde la concentración de inmediato. Si logras reducir su cordura a 0 caerá inconsciente. (1 chi) El objetivo está enfermado durante una ronda si impactas.
+**Asalto mental** (2 AP): Un objetivo a distancia lejana debe tener éxito en un tiro de salvación de SAB contra tu magia mental o reduce su cordura por 1 + rango y pierde la concentración de inmediato. Si logras reducir su cordura a 0 caerá inconsciente. (1 chi) El objetivo está enfermado durante una ronda si impactas.
 
 **Leer pensamientos** (2 AP y 1 chi): Detectas los pensamientos superficiales de todas las criaturas a una distancia lejana, conociendo información básica sobre ellas y su estado emocional actual. Este efecto dura mientras mantengas la concentración y mientras permanezca activo puedes gastar 2 AP para intentar penetrar en los pensamientos interiores del objetivo, lo cual se trata de un tiro de magia mental contra su SAB y si tienes éxito aprenderás un dato de él escogido por el máster. 
 
