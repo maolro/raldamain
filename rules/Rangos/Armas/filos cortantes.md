@@ -1,5 +1,5 @@
 ---
-  title: Filos cortantes
+title: Filos cortantes
 category: Armas
 ---
 
