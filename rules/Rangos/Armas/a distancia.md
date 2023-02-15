@@ -45,7 +45,34 @@ Tus ataques con armas a distancia cuestan 1 AP. Puedes obtener este rango de man
 
 **Puntería experta:** Tus ataques hechos con armas a distancia no podrán ser detenidos por  habilidades de parada siempre que tengas ventaja en tu tiro. Esta habilidad no funcionará contra objetivos que se encuentren en posición defensiva.
 
-## Armas
+# Armas
 
-- **Arco:** 2d4+Fue daño, alcance medio. (largo tomando desventaja).
-- **Ballesta:** 3d6 daño, alcance largo (extremo tomando desventaja). Aumenta el nivel de armadura a la que puede afectar con *puntería mortal* por un paso sin la necesidad de gastar acciones adicionales. Tras disparar habrá que emplear 3 acciones para recargar la ballesta antes de poder volver a atacar con ella.
+## Manuales
+
+**Arco:** 2d4+Fue daño, alcance medio. (largo tomando desventaja).
+
+- **Arco corto:** 
+- **Arco compuesto:** 
+
+**Ballesta:** 3d6 daño, alcance largo (extremo tomando desventaja). Aumenta el nivel de armadura a la que puede afectar con *puntería mortal* por un paso sin la necesidad de gastar acciones adicionales. Tras disparar habrá que emplear 3 acciones para recargar la ballesta antes de poder volver a atacar con ella.
+
+- **Ballesta ligera**: 
+- **Ballesta pesada:** 
+- **Ballesta recargable:** 
+
+**Honda:**
+
+## Pólvora
+
+Un arma de fuego base hace 2d6 daño perforante, tiene un alcance lejano y se debes emplear 3 acciones para recargarla después de atacar con ella (estas pueden distribuirse a lo largo de varios turnos). Además, el daño de un arma de fuego ignora la defensa otorgada por armadura que tenga el objetivo y sus ataques no pueden ser esquivados por criaturas que se encuentren a distancia media o inferior.
+
+Para mostrar su poca precisión y gran volumen las armas de fuego obtienen un fallo crítico con un 1-2 y cuando esto ocurra quedarán atascadas durante una ronda (algunas armas primitivas llegarán a explotar si se obtiene un fallo crítico con ellas) además que un usuario de un arma de fuego recibirá desventaja defendiéndose de ataques hechos con armas cuerpo a cuerpo. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongruentes.
+
+- **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base a 2d4 y su distancia a media a cambio de una mayor facilidad de uso. Recargar una pistola de mano cuesta 2 acciones y esta puede utilizarse en combate con dos armas.
+- **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
+- **Perdigones:** En lugar de balas el arma disparará una lluvia de perdigones de plomo. Un arma de perdigones debe tener recámara y al atacar impactará a todas las criaturas en un cono corto al disparar e infligirá 2d8 daño perforante (2d6 si es una pistola de mano). No obstante, un arma de perdigones reduce su distancia máxima a 30 pies.
+- **Doble cañón:** El arma dispara dos balas al turno con un ataque a costa de hacerla más difícil de utilizar. Un arma así tendrá 2d8 daño base a costa de recibir desventaja en todos los tiros de ataque. Esta mejora no puede aplicarse a pistolas de mano.
+- **Potente:** Un arma potente dispara las balas con mayor potencia, pero tendrá una gran fuerza de retroceso. Un arma con esta mejora aumentará su daño base a 2d8 (2d6 si es una pistola de mano, 3d6 si es un arma de perdigones) pero cada ataque hecho con ella recibirá un penalizador -2 por cada ataque anterior que se haya realizado en la misma ronda.
+- **Automática:** El arma tiene un sistema para disparar balas de forma automática. Hacer un ataque de forma automática te cuesta una acción estándar y podrás atacar a cada criatura que se encuentre en un cono de 30 pies, empezando por la más cercana. Estos ataques consumirán 4 balas pero añadirán 1d6 al daño base al impactar. Las armas con esta habilidad tendrán una recámara de 40 balas y son típicas de campañas ambientadas en épocas modernas o de ciencia-ficción. Recargar un arma con esta mejora cuesta cuatro acciones aunque estas pueden distribuirse entre varios turnos.
+- **Francotirador:** El arma puede disparar a objetivos a mayor distancia y eliminarlos con una única bala. Como acción estándar puedes apuntar con tu arma, aumentando tu alcance a como máximo 200 pies de distancia. En este estado recibirás la habilidad Ataque furtivo y podrás utilizar Puntería mortal si realizas un ataque sorpresa contra tu objetivo. Las armas de esta categoría son típicas de campañas de épocas modernas o de ciencia-ficción.
+
