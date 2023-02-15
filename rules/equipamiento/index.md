@@ -1,5 +1,5 @@
 ---
-title: Reglas básicas de objetos
+title: Equipamiento
 layout: summary
 menuorder: 4
 ---
