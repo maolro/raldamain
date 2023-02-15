@@ -1,5 +1,4 @@
 ---
 title: Criaturas
-layout: summary
 ---
 
