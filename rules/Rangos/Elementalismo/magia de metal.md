@@ -9,27 +9,33 @@ Tras un estudio sobre el control de la tierra has conseguido aprender ha detecta
 
 Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental de metal. Aumenta tu reserva de chi por un valor igual a tu rango + 2.
 
-**Manipular metal** (2 acciones, Metal, Maniobra): Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Al usar esta habilidad escoge un objeto metálico a distancia media de ti y muévelo hasta un paso en cualquier dirección o altera su estructura como desees. Si el objeto está enganchado o permanece en manos de otra persona deberás tener éxito en un tiro de magia de metal contra una dificultad escogida por el máster (si el objetivo es una persona deberás superar su tiro para defenderse de maniobras de combate). 
+**Manipular metal** (2 acciones, Metal, Maniobra): Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Al usar esta habilidad escoge un objeto metálico pequeño a distancia media de ti y muévelo hasta un paso en cualquier dirección o altera su estructura como desees. Si el objeto está enganchado o permanece en manos de otra persona deberás tener éxito en un tiro de magia de metal contra una dificultad escogida por el máster (si el objetivo es una persona deberás superar su tiro para defenderse de maniobras de combate). 
 
-Alternativamente, si escoges afectar la estructura de un objeto metálico deberás hacer otro tiro de magia de metal contra una dificultad asignada por el máster y en caso que lo superes el objeto sufrirá el efecto de estado *roto* o quedará reparado, recuperándos. Aunque puedes alterar armas mágicas con esta habilidad el tiro es mucho más complicado y no podrás afectar a artefactos o armas de calibre especialmente bueno.
+Alternativamente, si escoges afectar la estructura de un objeto metálico deberás hacer otro tiro de magia de metal contra una dificultad asignada por el máster y en caso que lo superes el objeto sufrirá el efecto de estado *roto* o quedará reparado, recuperándos. Aunque puedes alterar armas mágicas con esta habilidad el tiro es mucho más complicado y no podrás afectar a artefactos o armas de calibre especialmente bueno. En ambos casos puedes gastar 1 chi para afectar un objeto adicional o repetir el tiro de destrozar.
 
-<u>Ataque elemental</u> (2 acciones): Empleando 2 acciones puedes atacar a tu objetivo con un proyectil metálico. Este ataque hace 1d6 + CAR daño físico, el cual es perforante, contundente o cortante dependiendo del objeto que uses para atacar. Obtienes la habilidad [tajo feroz](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-i) al atacar con objetos cortantes, [combate furtivo](https://raldamain.com/rules/Rangos/Armas/arcos.html#rango-i) al atacar con objetos perforantes y [concusión](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-i) si atacas con objetos contundentes. 
+**Golpe metálico** (2 acciones, Metal, Físico, A distancia): Haz un ataque contra un objetivo a distancia media con un proyectil metálico que inflige 1d6 + CAR daño físico que puede ser tanto perforante, contundente o cortante dependiendo del objeto que uses para atacar. Si tienes rangos en un arma puedes emplear tu estadística de CAR para los tiros de ataque y daño con ella además que puedes aplicarle otras habilidades de magia de metal que tengas. (1 chi) Ataca a un objetivo adicional.
 
-<u>Control de metal</u> (1 acción): Eres capaz de manipular objetos metálicos en un radio de 30 pies. Empleando 1 acción puedes mover de posición un objeto metálico pequeño hasta 15 pies en cualquier dirección. Para manipular objetos metálicos que lleve una persona deberás tener éxito en un tiro de magia elemental contra su tiro de [heroísmo](https://raldamain.com/rules/Crear%20personajes/talentos.html#hero%C3%ADsmo-fue), por lo cual puedes desarmarle del objeto, reducir su efectividad por 1 o en el caso que sea una armadura reducir su defensa por 2. Esta habilidad no funciona con metales mágicos o materiales especiales como la adamantina salvo que te tengas rango V.
-
-<u>Reserva de energía</u> (pasiva): Puedes empujar tu cuerpo al límite para aumentar la fuerza de tus ataques sacrificando tu chi interior. Posees una reserva de energía con valor igual a tu rango + 2 y como acción bonus empleable una vez por ronda puedes reducirla por 1 para aumentar la fuerza de tus ataques. Con esta habilidad puedes realizar un ataque adicional, aumentar el área de efecto por 5 pies o recibir los beneficios de *ataque poderoso* o *ataque apuntado* en uno de tus ataques elementales.
-
-<u>Parada elemental</u> (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Parada elemental** (reacción, Metal, Físico, Barrera): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
 ### Rango II
 
-<u>Sinergia terrestre</u> (pasiva):  Si tienes rangos en [magia elemental de tierra](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html), puedes manipular objetos metálicos con las habilidades [*control terrestre*](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html#rango-ii) y *[muro de piedra](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html#rango-ii).* Las habilidades que fortalezcan tus ataques elementales como [*forma de la montaña*](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html#rango-ii) o [*esperar y golpear*](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html#rango-iii) también pueden emplearse en ataques elementales de metal. En el caso que no poseas la habilidad control terrestre recibes la capacidad de manipular un volumen total de objetos metálicos igual a 5 x tu rango de magia elemental empleando 2 acciones, formando terreno difícil, barreras, elevaciones o agujeros en los lugares que desees.
+**Escudo de metal** (2 acciones y 1 chi): 
+
+**Reflejar ataques** (reacción): 
+
+**Aura magnética** (2 acciones y 1 chi)
 
 <u>Magnetismo</u> (pasiva): Tu cuerpo es capaz de mantener a los metales agarrados en un aura magnética, permitiéndote usarlos para herir a tus enemigos o protegerte de ataques. Cuando atraigas a tu posición un objeto metálico usando *control de metal* puedes añadirlo a tu aura magnética, pudiendo agarrar así a un número máximo de objetos iguales a tu Rango + 1. Obtienes un bonificador a tus tiros defensivos igual a la cantidad de objetos que agarres y toda criatura que pase por un espacio que se encuentre a 10 pies de ti deberá tirar esquiva o sufrirá daño físico igual al número de objeto atrapados en tu aura (este daño será automático si acaba su turno adyacente a ti). Este daño ignorará la armadura natural y si tu objetivo lleva armadura metálica esta reducirá la defensa que otorga por 1. Si te encuentras en posición defensiva puedes detener un proyectil metálico de manera inmediata una vez por ronda y añadirlo a tu aura de magnetismo.
 
 ## Rango III
 
-Aumenta tu probabilidad de crítico a 19-20. Reduce el coste de realizar ataques elementales por 1 acción.
+Reduce el coste de usar *golpe metálico* y *manipular metal* por 1 acción. Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d8.
+
+**Coraza de acero** (2 acciones y 2 chi):  
+
+**Arma teledirigida** (2 acciones y 2 chi): 
+
+**Ferrokinesia** (2 acciones y 2 chi): 
 
 <u>Fortalecer ataques</u> (1 acción): Puedes emplear una acción para incrementar la fuerza de un ataque elemental, aumentando su tamaño por 5 pies y su daño base por 2. Usar esta habilidad te cuesta una acción bonus si empleas uno de los objetos metálicos atrapados en tu aura magnética para incrementar su fuerza.
 
@@ -37,13 +43,17 @@ Aumenta tu probabilidad de crítico a 19-20. Reduce el coste de realizar ataques
 
 ## Rango IV
 
+**Espina metálica** (2 chi): 
+
 <u>Espinas metálicas</u> (1 acción) Al impactar con un ataque elemental puedes emplear una acción para clavarle una espina metálica. La espina provocará [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) al objetivo y un bonificador +1 en tiros de ataque contra ella por cada espina que tenga clavada. Una criatura que tenga espinas clavadas cuenta como si llevase armadura metálica para los propósitos de la habilidad Ferrokinesia. Para eliminar una espina metálica es necesario gastar una acción de movimiento, pero al hacerlo la criatura afectada sufrirá daño de sangrado de manera inmediata al arrancársela.
 
 <u>Reflejar ataques</u> (reacción): Cuando un enemigo te ataque con un arma metálica y tengas éxito en el tiro defensivo, una vez por ronda puedes realizar un tiro de control del metal como reacción. Si tienes éxito el objeto quedará atrapado en tu aura magnética, y en el caso que sea un arma cuerpo a cuerpo su propietario quedará desarmado. Esta habilidad puede emplearse una vez adicional por ronda si estás en posición defensiva y si te encuentras en forma de la montaña puedes además atacar con un objeto de tu arma magnética como reacción al usar reflejar ataques.
 
 ## Rango V
 
-Aumentra tu probabilidad de crítico a 18-20.
+Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d10.
+
+**Golpe mortal** 
 
 <u>Golpe mortal</u> (3 acciones): Empleando 3 acciones puedes hacer un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. Esta habilidad funciona como un ataque de elementalismo de metal pero tu objetivo no podrá defenderse y las heridas permanentes que inflijas serán de un nivel superior. No puedes usar esta habilidad en el mismo objetivo salvo que le claves otra espina metálica. 
 
