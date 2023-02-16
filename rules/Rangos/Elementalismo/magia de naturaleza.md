@@ -60,7 +60,14 @@ Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 A
 
 ## Rango VI
 
-**Guardián de la tierra** (3 AP y 5 chi): Invocas a un poderoso espíritu usando como base una criatura espiritual que recibirá todas las mejoras y acciones del elemental de planta además de las de la criatura espiritual (puede llegar como máximo a 12 en una estadística). Mientras esa criatura permanezca en el campo de batalla puedes emplear una acción para poseer a dicha criatura y protegerte del daño, causando que el daño recibido pase a la criatura. Si estas poseyendo también recibirás las acciones de la criatura como si fueran las tuyas pero esta perderá su turno.
+**Guardián de la tierra** (3 AP y 5 chi): Te rodeas de una gran cantidad de materia vegetal para adoptar la forma de una criatura colosal, incrementando enormemente tu fuerza física. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+
+- Eres inmune a todos los efectos de toque y a aquellos que provoquen daño de antienergía.
+- Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.
+- Al estar hecho de plantas el elemental provocará el efecto de *crecimiento acelerado* en un radio corto centrado en él. No obstante el daño cortante y fuego atravesará su resistencia al ser más débil frente a ellos. Si el invocador lo escoge puede anular estas características.
+- Aumenta dos de tus movimientos por 1 y tienes visión a ciegas en un radio medio. 
+- Puedes hacer ataques a través del coloso, los cuales simularán un ataque de un arma a rango V. El arma escogida tirará un dado de daño adicional. Puedes también usar las habilidades *planta devoradora de chi*, *prisión de madera*, *espina parasítica* y *enmarañar* sin la necesidad de gastar chi.
+- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico vuelve a reduce tu tiro por un punto adicional.
 
 # Elemental de planta
 
