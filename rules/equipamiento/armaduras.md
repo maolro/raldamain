@@ -12,3 +12,4 @@ Una armadura puede ser antigua o moderna, lo cual determinará su resistencia co
 | Media    | 2      | 0      | Cuero tachonado, camisón de malla     | Fibra de carbono    | 4                      | -2          |
 | Pesada   | 3      | 0      | Coraza, placas y malla, cota de malla | Armadura de asalto  | 6                      | -4          |
 | Completa | 4      | 1      | Placas, laminada                      | Armadura mecanizada | 8                      | -6          |
+
