@@ -49,22 +49,22 @@ Tus ataques con armas a distancia cuestan 1 AP. Puedes obtener este rango de man
 
 ## Manuales
 
-**Arco:** 2d4+Fue daño, alcance medio. (largo tomando desventaja).
+**Arco:** Un arco inflige 2d4 + FUE daño perforante al impactar, tiene alcance medio y requerirá las dos manos para ser usado. Recargar un arco no costará acciones y esta arma tendrá las siguientes variaciones.
 
-- **Arco corto:** 
-- **Arco compuesto:** 
+- **Arco corto:** Un arco corto reduce su daño base a 1d6 + FUE a cambio que el usuario no recibirá penalizaciones al disparar montado o en un vehículo.
+- **Arco compuesto:** Un arco compuesto aumenta su daño a 2d6 + FUE pero debido a su gran tamaño requerirá que su portador tenga gran fuerza física, requiriendo así que deba tener 3 o más FUE para poder usar esta arma en condiciones.
 
-**Ballesta:** 3d6 daño, alcance largo (extremo tomando desventaja). Aumenta el nivel de armadura a la que puede afectar con *puntería mortal* por un paso sin la necesidad de gastar acciones adicionales. Tras disparar habrá que emplear 3 acciones para recargar la ballesta antes de poder volver a atacar con ella.
+**Ballesta:** Una ballesta inflige 3d6 daño perforante al impactar, tiene alcance largo y requerirá las dos manos para ser usada. Debido a la fuerza de los proyectiles disparados al usar *puntería mortal* añadirá su bonificador de DES al daño y podrá infligir heridas permanentes a enemigos con armadura media o inferior sin la necesidad de gastar más acciones. Tras disparar el usuario deberá emplear 3 acciones para recargar la ballesta antes de poder volver a atacar con ella.
 
-- **Ballesta ligera**: 
-- **Ballesta pesada:** 
-- **Ballesta recargable:** 
+- **Ballesta ligera**: Una ballesta ligera reduce su daño base a 2d6 pero podrá ser usada con una mano. Recargar una ballesta ligera también es más fácil, reduciendo las acciones que se deben gastar para recargarla por 1.
+- **Ballesta pesada:** Una ballesta pesada aumenta su daño base a 3d8 y al usar *puntería mortal* el usuario podrá infligir heridas permanentes a enemigos con armadura pesada o inferior. Como contraparte una ballesta pesada requiere 4 o más FUE para ser usada y el portador recibirá desventaja en todos sus tiros de esquiva. 
+- **Ballesta recargable:** Una ballesta recargable tiene un complejo mecanismo que le permite almacenar múltiples virotes para hacer que haga varios disparos seguidos sin la necesidad de recargarla. Una ballesta de este tipo puede almacenar hasta 4 virotes de esta manera y hasta que se le acaben el portador podrá seguir atacando sin la necesidad de recargar. 
 
-**Honda:**
+**Honda:** Una honda inflige 1d4 + FUE daño contundente al impactar, tiene alcance medio y puede usarse con una mano. Un usuario de esta arma recibirá también las habilidades *ataque poderoso* y *concusión*.
 
 ## Pólvora
 
-Un arma de fuego base hace 2d6 daño perforante, tiene un alcance lejano y se debes emplear 3 acciones para recargarla después de atacar con ella (estas pueden distribuirse a lo largo de varios turnos). Además, el daño de un arma de fuego ignora la defensa otorgada por armadura que tenga el objetivo y sus ataques no pueden ser esquivados por criaturas que se encuentren a distancia media o inferior.
+Un arma de fuego base inflige 2d6 daño perforante al impac, tiene un alcance lejano y se debes emplear 3 acciones para recargarla después de atacar con ella (estas pueden distribuirse a lo largo de varios turnos). Además, el daño de un arma de fuego ignora la defensa otorgada por armadura que tenga el objetivo y sus ataques no pueden ser esquivados por criaturas que se encuentren a distancia media o inferior.
 
 Para mostrar su poca precisión y gran volumen las armas de fuego obtienen un fallo crítico con un 1-2 y cuando esto ocurra quedarán atascadas durante una ronda (algunas armas primitivas llegarán a explotar si se obtiene un fallo crítico con ellas) además que un usuario de un arma de fuego recibirá desventaja defendiéndose de ataques hechos con armas cuerpo a cuerpo. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongruentes.
 
