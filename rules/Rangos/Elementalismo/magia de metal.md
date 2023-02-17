@@ -13,7 +13,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental
 
 Alternativamente, si escoges afectar la estructura de un objeto metálico deberás hacer otro tiro de magia de metal contra una dificultad asignada por el máster y en caso que lo superes el objeto sufrirá el efecto de estado *roto* o quedará reparado, recuperándos. Aunque puedes alterar armas mágicas con esta habilidad el tiro es mucho más complicado y no podrás afectar a artefactos o armas de calibre especialmente bueno. En ambos casos puedes gastar 1 chi para afectar un objeto adicional o repetir el tiro de destrozar.
 
-**Golpe metálico** (2 acciones, Metal, Físico, A distancia): Haz un ataque contra un objetivo a distancia media con un proyectil metálico que inflige 1d6 + CAR daño físico que puede ser tanto perforante, contundente o cortante dependiendo del objeto que uses para atacar. Si tienes rangos en un arma puedes emplear tu estadística de CAR para los tiros de ataque y daño con ella además que puedes aplicarle otras habilidades de magia de metal que tengas. (1 chi) Ataca a un objetivo adicional.
+**Golpe metálico** (2 acciones, Metal, Físico, A distancia): Haz un ataque contra un objetivo a distancia media con un proyectil metálico que inflige 1d6 + CAR daño físico que puede ser tanto perforante, contundente o cortante dependiendo del objeto que uses para atacar. Si tienes rangos en un arma puedes emplear tu estadística de CAR para los tiros de ataque y daño con ella además que puedes aplicarle otras habilidades de magia de metal que tengas. (1 chi) Ataca a un objetivo adicional o repite un tiro de ataque hecho con un arma a distancia que dispare proyectiles metálicos.
 
 **Parada elemental** (reacción, Metal, Físico, Barrera): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
 
@@ -43,9 +43,7 @@ Reduce el coste de usar *golpe metálico* y *manipular metal* por 1 acción. Sus
 
 ## Rango IV
 
-**Espina metálica** (2 chi): 
-
-<u>Espinas metálicas</u> (1 acción) Al impactar con un ataque elemental puedes emplear una acción para clavarle una espina metálica. La espina provocará [sangrado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#sangrado) al objetivo y un bonificador +1 en tiros de ataque contra ella por cada espina que tenga clavada. Una criatura que tenga espinas clavadas cuenta como si llevase armadura metálica para los propósitos de la habilidad Ferrokinesia. Para eliminar una espina metálica es necesario gastar una acción de movimiento, pero al hacerlo la criatura afectada sufrirá daño de sangrado de manera inmediata al arrancársela.
+**Espina metálica** (2 chi, Metal): Como reacción tras impactar con un ataque de *golpe metálico* puedes clavarle a tu objetivo una espina metálica que se introducirá en su cuerpo y le provocará graves daños internos. Mientras la espina permanezca clavada el objetivo sufrirá los efectos de *sangrado* y tienes ventaja en todos tus ataques de *magia de metal* contra ella además que contará como si llevara armadura metálica para los propósitos de tu habilidad *ferrokinesia*. Para eliminar una espina metálica el objetivo debe emplear una acción y tener éxito en un tiro de *primeros auxilios* contra una dificultad escogida por el máster (normalmente +10) o sufrirá inmediatamente el daño de *golpe metálico* y una herida leve.
 
 <u>Reflejar ataques</u> (reacción): Cuando un enemigo te ataque con un arma metálica y tengas éxito en el tiro defensivo, una vez por ronda puedes realizar un tiro de control del metal como reacción. Si tienes éxito el objeto quedará atrapado en tu aura magnética, y en el caso que sea un arma cuerpo a cuerpo su propietario quedará desarmado. Esta habilidad puede emplearse una vez adicional por ronda si estás en posición defensiva y si te encuentras en forma de la montaña puedes además atacar con un objeto de tu arma magnética como reacción al usar reflejar ataques.
 
@@ -58,3 +56,13 @@ Sustituye todos los dados de daño que tengas en habilidades de magia de metal p
 <u>Golpe mortal</u> (3 acciones): Empleando 3 acciones puedes hacer un golpe de gracia contra un objetivo que lleve armadura metálica o tenga una espina metálica clavada. Esta habilidad funciona como un ataque de elementalismo de metal pero tu objetivo no podrá defenderse y las heridas permanentes que inflijas serán de un nivel superior. No puedes usar esta habilidad en el mismo objetivo salvo que le claves otra espina metálica. 
 
 <u>Maestría del metal</u> (pasiva): Ignoras la defensa de tu objetivo otorgada por armadura metálica siempre que lleve un metal que puedas manipular. Si tu objetivo lleva una armadura reforzada con glifos debes causarle daño considerable antes que puedas moldearla, requiriendo que reduzcas su valor de defensa por 3 o más. Adicionalmente puedes emplear una acción estándar para destruir una superficie de 15 pies de radio hecha de materiales metálicos.
+
+## Rango VI
+
+**Titán de metal** (3 AP y 5 chi): Te rodeas de una gran cantidad de objetos metálicos para adoptar la forma de una criatura colosal, incrementando enormemente tu fuerza física. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+
+- Eres inmune a todos los efectos de toque y a aquellos que provoquen daño de antienergía.
+- Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.
+- Aumenta dos de tus movimientos por 1 y tienes visión a ciegas en un radio medio. 
+- Puedes hacer ataques a través del coloso, los cuales simularán un ataque de un arma a rango V. El arma escogida tirará un dado de daño adicional. 
+- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico vuelve a reduce tu tiro por un punto adicional.
