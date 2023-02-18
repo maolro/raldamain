@@ -1,5 +1,5 @@
 ---
-title: Telequinesia
+  title: Telequinesia
 category: Ocultismo
 ---
 
