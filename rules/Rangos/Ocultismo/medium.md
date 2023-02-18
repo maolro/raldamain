@@ -1,5 +1,5 @@
 ---
-title: Médium
+  title: Médium
 category: Ocultismo
 ---
 
