@@ -11,11 +11,13 @@ Al igual que un médium, tienes una fuerte conexión con el plano de los muertos
 
 Añade tu rango a todos los tiros para usar hechizos de nigromancia y aumenta tu reserva de chi por 2+rango
 
-### Toque necrótico (2 acciones. Nigromancia, Toque, Aflicción, Antienergía)
+### **Toque necrótico (2 acciones.** Nigromancia, Toque, Aflicción, Antienergía)
 
 Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu tiro de nigromancia o sufrirá 1d6 + rango daño necrótico. El daño hecho por este ataque reducirá también el máximo de PV y Vitalidad, impidiendo así que pueda ser sanado hasta que pase un descanso largo. (1 chi) Aumenta el alcance a cercano.
 
-**Descarga de energía negativa** (2 Acciones, Nigromancia, A distancia, Antienergía): Haz un ataque con nigromancia contra un objetivo a distancia media que infligirá 1d6 + rango daño necrótico al impactar y *enfermará* durante una ronda al reducir PV. (1 chi) Afecta a un objetivo adicional.
+### **Descarga de energía negativa** (2 Acciones, Nigromancia, A distancia, Antienergía)
+
+Haz un ataque con nigromancia contra un objetivo a distancia media que infligirá 1d6 + rango daño necrótico al impactar y *enfermará* durante una ronda al reducir PV. (1 chi) Afecta a un objetivo adicional.
 
 **Bendición de la muerte**: Los no-muertos no serán naturalmente hostiles hacia ti y recibes resistencia a venenos y daño necrótico igual a tu rango + 1 además que puedes aguantar la respiración un turno adicional por rango. Si ya eres un no-muerto perderás la vulnerabilidad al daño radiante y recibirás resistencia a maldiciones y habilidades de médium igual a tu rango + 1. 
 
