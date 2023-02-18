@@ -31,7 +31,7 @@ Reduce el coste de *manipulación telequinética* y *onda de fuerza* por 1. Pued
 
 **Arma danzante** (1 AP y 2 chi, Telekinesia, Concentración, Físico): Un arma levitará en el aire y obedecerá tu voluntad, permaneciendo tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que el arma se mueva volando un paso y ataque a un enemigo adyacente, infligiendo daño igual al daño base de esta. Si tienes aptitud con dicha arma puedes gastar acciones seguir atacando con ella y tendrás ventaja en tus tiros de ataque como si estuvieras volando. En lugar de atacar con el arma puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
 
-**Almacenar objetos** (2 AP y 2 chi, Telekinesia, Concentración, Defensivo): Levantas una cantidad de objetos igual a tu rango. Puedes gastar objeto como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *manipulación telequinética.* Esta habilidad permanecerá activa mientras mantengas el campo y para recuperar un objeto debes emplear 1 AP.
+**Almacenar objetos** (2 AP y 2 chi, Telekinesia, Concentración, Defensivo): Levantas una cantidad de objetos igual a tu rango. Puedes gastar un objeto como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *manipulación telequinética.* Esta habilidad permanecerá activa mientras mantengas el campo y para recuperar un objeto debes emplear 1 AP.
 
 ## Rango IV
 
