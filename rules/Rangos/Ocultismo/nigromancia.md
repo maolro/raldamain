@@ -21,9 +21,9 @@ Añade tu rango a todos los tiros para usar hechizos de nigromancia y aumenta tu
 
 **Vínculo parasítico** (3 Acciones y 1 chi. Nigromancia, Toque, Aflicción): Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu nigromancia o formas un vínculo parasítico con ella. Mientras mantengas el vínculo una vez por ronda como reacción a sufrir daño puedes transferir hasta la mitad del daño que sufras a la criatura con la que tengas el vínculo además que puedes afectarla con *toque necrótico* sin la necesidad de estar adyacente a ella. Cada ronda la criatura puede repetir el tiro de CON para liberarse del efecto y este permanecerá activo hasta que pierdas la concentración. No puedes tener más de un vínculo activo a la vez.
 
-**Animar no-muerto** (3 AP y 1 chi): Animas un cadáver como un no-muerto de tipo zombi o esqueleto el cual seguirá tus órdenes al pie de la letra. No puedes comandar simultáneamente a más no-muertos que tu rango x 3.
+**Animar no-muerto** (3 AP y 1 chi, Nigromancia): Animas un cadáver como un no-muerto de tipo zombi o esqueleto el cual seguirá tus órdenes al pie de la letra. No puedes comandar simultáneamente a más no-muertos que tu rango x 3.
 
-**Drenar vitalidad** (1 chi): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico y requiera un tiro de CON te sanarás Vitalidad igual a la mitad del daño provocado. Si logras matar a un objetivo con dicho ataque podrás reducir el nivel de una herida permanente por un paso.
+**Drenar vitalidad** (1 chi, Nigromancia): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico y requiera un tiro de CON te sanarás Vitalidad igual a la mitad del daño provocado. Si logras matar a un objetivo con dicho ataque podrás reducir el nivel de una herida permanente por un paso.
 
 ## Rango III
 
@@ -31,31 +31,31 @@ Añade tu rango a todos los tiros para usar hechizos de nigromancia y aumenta tu
 
 **Aspecto de no-muerto**: Eres capaz de subsistir únicamente drenando la energía vital de los demás. Recibes inmunidad al daño necrótico a costa de obtener vulnerabilidad al daño radiante y puedes usar tu estadística de CAR para tus tiros de intimidar. Si ya has alcanzado la no-muerte recibes la habilidad *aura de terror* para la cual puedes usar tu rango en nigromancia.
 
-**Tormenta de energía negativa** (2 acciones y 2 chi): Haz un ataque de *descarga de energía negativa* contra todas las criaturas a una distancia corta de ti que al impactar infligirá 2d8 + CAR daño necrótico (2d10 a rango V). Las habilidades *enervación* y *toque vampírico* se aplicarán contra cada criatura afectada si estas están activas.
+**Tormenta de energía negativa** (2 acciones y 2 chi, Nigromancia, Área, Antienergía): Haz un ataque de *descarga de energía negativa* contra todas las criaturas a una distancia corta de ti que al impactar infligirá 2d8 + CAR daño necrótico (2d10 a rango V). Las habilidades *enervación* y *toque vampírico* se aplicarán contra cada criatura afectada si estas están activas.
 
-**Aura de muerte** (2 acciones y 2 chi): Incrementas el flujo de energía negativa para que todas las criaturas a distancia media sufran 2 daño necrótico al principio de su turno y no puedan recibir sanación. Este efecto permanecerá durante rango + 1 rondas y mientras esté activo puedes detectar la posición de todos los seres vivos en el área.
+**Aura de muerte** (2 acciones y 2 chi, Nigromancia, Ámbiental, Antienergía): Incrementas el flujo de energía negativa para que todas las criaturas a distancia media sufran 2 daño necrótico al principio de su turno y no puedan recibir sanación. Este efecto permanecerá durante rango + 1 rondas y mientras esté activo puedes detectar la posición de todos los seres vivos en el área.
 
 ## Rango IV
 
-**Crear no-muerto superior** (3 acciones y 2 chi): Transformas un cadáver, no-muerto menor o a una criatura voluntaria en no-muerto superior cuyas estadísticas quedan especificadas en el siguiente apartado. No puedes controlar a no-muertos cuyo nivel supere al tuyo y puedes comandar como máximo a una cantidad igual a tu rango.
+**Crear no-muerto superior** (3 acciones y 2 chi. Nigromancia): Transformas un cadáver, no-muerto menor o a una criatura voluntaria en no-muerto superior cuyas estadísticas quedan especificadas en el siguiente apartado. No puedes controlar a no-muertos cuyo nivel supere al tuyo y puedes comandar como máximo a una cantidad igual a tu rango.
 
-**Drenar chi** (3 acciones y 2 chi): Formas un *vínculo parasítico* con un objetivo que reducirá su reserva de chi por 1 cada ronda y recuperarás 1 chi de tu reserva (en el caso que el objetivo no le quede reserva sufrirá 2 daño necrótico). Solo puedes tener una conexión de este tipo.
+**Drenar chi** (3 acciones y 2 chi. Nigromancia, Toque): Formas un *vínculo parasítico* con un objetivo que reducirá su reserva de chi por 1 cada ronda y recuperarás 1 chi de tu reserva (en el caso que el objetivo no le quede reserva sufrirá 2 daño necrótico). Solo puedes tener una conexión de este tipo.
 
-**Enervación** (2 chi): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico empiezas a enervar su cuerpo, provocándole el efecto de un veneno de CON que tiene gravedad igual a tu tiro de ataque de nigromancia y no se puede reducir su efecto salvo por sanación.
+**Enervación** (2 chi. Nigromancia, Aflicción): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico empiezas a enervar su cuerpo, provocándole el efecto de un veneno de CON que tiene gravedad igual a tu tiro de ataque de nigromancia y no se puede reducir su efecto salvo por sanación.
 
 ## Rango V 
 
 *Toque necrótico* y *descarga de energía negativa* aumentan el daño base a 1d10
 
-**Toque de la muerte** (1 acción y 3 chi): Una criatura adyacente debe tener éxito en un tiro de CON contra tu nigromancia o sufrirá 3d10 + CAR daño necrótico que también provocará *enervación* (la mitad de daño en caso de éxito). Si el objetivo muere por este ataque se transformará en un no-muerto menor. (1 chi) Afecta a un objetivo adicional
+**Toque de la muerte** (1 acción y 3 chi. Nigromancia, Toque, Aflicción, Antienergía): Una criatura adyacente debe tener éxito en un tiro de CON contra tu nigromancia o sufrirá 3d10 + CAR daño necrótico que también provocará *enervación* (la mitad de daño en caso de éxito). Si el objetivo muere por este ataque se transformará en un no-muerto menor. (1 chi) Afecta a un objetivo adicional
 
 **Alma corrompida:** Recibes resistencia 2 contra el daño físico y puedes usar tu CAR en lugar de tu CON para calcular tus PV y Vitalidad. Además puedes seguir luchando con 0 PV recibiendo el efecto de estado *ralentizando*, muriendo solo cuando el valor absoluto de tus PV negativos sea igual a tu CAR. Si ya eres un no-muerto te regenerarás 2 Vitalidad al principio de tu turno y todas las heridas permanentes hechas contra ti serán de un grado inferior.
 
-**Nube de aniquilación** (3 acciones y 3 chi): Formas una nube de energía negativa que ocupará un espacio de tamaño medio. Todas las criaturas en el área de la nube deberán tirar CON frente a tu nigromancia o sufrirán 1d10 + CAR daño necrótico y sufrirán los efectos de *enervación*. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá tirar CON o sufrirá los efectos de un *toque necrótico* modificado por *enervación*. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. 
+**Nube de aniquilación** (3 acciones y 3 chi. Nigromancia, Concentración, Gas, Antienergía): Formas una nube de energía negativa que ocupará un espacio de tamaño medio. Todas las criaturas en el área de la nube deberán tirar CON frente a tu nigromancia o sufrirán 1d10 + CAR daño necrótico y sufrirán los efectos de *enervación*. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá tirar CON o sufrirá los efectos de un *toque necrótico* modificado por *enervación*. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. 
 
 ## Rango VI
 
-**Hueste de los malditos** (3 AP y 5 chi): Levantas todos los muertos en el campo de batalla formando una horda de no-muertos cuya fuerza dependerá de la cantidad de cadáveres que haya (esto lo decidirá el máster y suele calcularse como 2d6). Todo el campo de batalla será profanado, otorgando así los beneficios de *guerrero de la fe* a todos los no-muertos en el área y provocando que cada criatura que muera en él reanime como un no-muerto, añadiéndose a la horda de no-muertos. 
+**Hueste de los malditos** (3 AP y 5 chi. Nigromancia, Ambiental): Levantas todos los muertos en el campo de batalla formando una horda de no-muertos cuya fuerza dependerá de la cantidad de cadáveres que haya (esto lo decidirá el máster y suele calcularse como 2d6). Todo el campo de batalla será profanado, otorgando así los beneficios de *guerrero de la fe* a todos los no-muertos en el área y provocando que cada criatura que muera en él reanime como un no-muerto, añadiéndose a la horda de no-muertos. 
 
 # No-muertos	
 
