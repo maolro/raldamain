@@ -2,7 +2,13 @@
 title: Talentos
 ---
 
-Los talentos representan tu aptitud en varias habilidades no relacionadas con los rangos. Tu soltura con una habilidad va marcada por tus nivel de talento, los cuales oscilan entre 0 y 5. A nivel 1 tienes cuatro niveles de talento para distribuir (como máximo puedes llegar a 2), y a cada nivel posterior recibes dos niveles de talento adicionales. El nivel de talento máximo queda regulado por el nivel de un personaje tal como indica la siguiente tabla.
+Mientras que las estadísticas muestran las capacidades básicas de un personaje, los **talentos** representan aquellas habilidades que ha obtenido un personaje debido al entrenamiento y la experiencia. Estos no están vinculados a los rangos y actúan de manera independiente a ellos, marcando la soltura que tiene un personaje en cada talento a través de un valor conocido como el **nivel de talento**, que oscila entre 0 y 5. Cada talento está también vinculado a una estadística específica, la cual se muesta entre paréntesis al lado del nombre del talento. En este capítulo se mostrará toda la información relevante a los talentos, particularmente sobre todos los tipos de talento que hay, lo que abarcan y las habilidades que estos otorgan.
+
+# Información básica
+
+## Distribución de niveles de talento
+
+A la hora de crear un personaje a nivel 1 se recibirán cuatro niveles de talento para distribuir entre todos los todos los talentos disponibles. Cada vez que un personaje suba de nivel recibirá dos niveles de talento adicionales para distribuir. En todo caso los niveles máximos de talento que puede alcanzar un personaje quedan limitados por el nivel que tenga este mismo, indicándose con la siguiente tabla.
 
 | Franja de nivel | Nivel de talento máximo |
 | --------------- | ----------------------- |
@@ -11,20 +17,43 @@ Los talentos representan tu aptitud en varias habilidades no relacionadas con lo
 | 8-10            | 4                       |
 | 11 o más        | 5                       |
 
-Al realizar un tiro relacionado con un talento en el cual tengas soltura, lo cual se conoce como **tiro de habilidad**, le sumarás el nivel de talento que tengas además d. Si no tienes nivel de habilidad en un talento no podrás realizar un tiro de habilidad relacionado con él, fracasando de manera automática. Un jugador puede tomar el valor medio en dicho tiro, el cual es igual a 10 + nivel de talento + estadística asociada al talento, como resultado de su tirada en lugar de arriesgarse con la suerte. Si el resultado del valor medio supera a la dificultad escogida por el máster entonces el jugador tendrá éxito en el tiro mientras que será un fracaso en caso contrario. En determinadas situaciones el máster puede determinar que debido al estrés no es posible tomar el valor medio además que un personaje no podrá tomar el valor medio si tiene desventaja en los tiros relacionados con la estadística asociada al talento (como ocurre con heridas permanentes o algunos efectos de estado).
+## Tiros de habilidad
 
-Cada tiro de habilidad se realizará contra una dificultad escogida por el máster. Esta dificultad será un valor que oscilará de 15 a 30 según la situación y para tener éxito en el tiro el jugador deberá superar el valor de la dificultad. Si el jugador no logra superar el tiro por 5 o menos entonces el máster puede decidir que el resultado sea un éxito parcial u ofrecerle una oportunidad adicional para repetir el tiro a una dificultad mayor. Los cuatro valores típicos de dificultad se conocen como dificultad fácil (15), media (20), extrema (25) y casi imposible (30).
+Cuando un personaje utilice un talento para resolver una situación específica deberá hacer un **tiro de habilidad**, tirando así el d20 y sumándole su bonificador que tenga en el talento específico. Dicho bonificador es igual a la suma entre la estadística asociada al talento y el nivel de talento que tenga un jugador en él. Para determinar si el tiro es un éxito o fracaso el resultado del tiro deberá igualar o superar un número escogido por el máster, el cual representará la dificultad de tener éxito en esa decisión. Dicha dificultad será un valor que oscilará de 10 a 30 según la situación, donde 10 representa que la acción es excesivamente fácil y un 30 representa algo imposible.
 
-## Lista de talentos
+En algunas circunstancias un personaje se enfrentará a situaciones donde deberá emplear su talento para superar a otra criatura en un ámbito específico. Esto se conoce como un **tiro enfrentado** y en dicho caso ambos implicados deberán hacer un tiro de habilidad relacionado con el talento usado y aquel que obtenga el resultado más grande serán victorioso. Un ejemplo es usar sigilo frente a la percepción de otra criatura.
+
+Como último añadido es posible asistir a un aliado en un tiro de habilidad si ambos compartes al menos un nivel en el mismo talento y las circunmstancias lo permiten (el máster decidirá si es posible o no). Cada personaje que asista en un tiro le otorgará un bonificador +2. Si esto intenta realizarse en un combate funciona de la misma manera que la acción *asistir*.
+
+# Lista de talentos
+
+En este apartado se especificarán todos los talentos diferentes que se pueden escoger. Cada talento tendrá además varias acciones asociadas que puede usar un personaje en un combate. En esta tabla se recoge un índice de los talentos principales además de las estadísticas y atributos asociados indicando el tipo de estos entre paréntesis. Todos ellos quedarán explicados a más detalle más adelante.
+
+| Talento               | Estadística asociada | Atributos otorgados                                          |
+| --------------------- | -------------------- | ------------------------------------------------------------ |
+| Acrobacias            | DES                  | Persecución (acción), Agarrar el borde (reacción),           |
+| Actuación             | CAR                  | Distraer (acción), Intérprete (proyecto)                     |
+| Arcanismo             | INT                  | Aprender hechizo (proyecto), Identificar magia (acción)      |
+| Atletismo             | FUE                  | Perseguir (acción), Escalar (acción), Nadar (acción)         |
+| Averiguar intenciones | SAB                  | Predecir movimiento (reacción)                               |
+| Destrozar             | FUE                  | Romper objeto (acción)                                       |
+| Engaño                | CAR                  | Finta (acción), Mentir (pasiva)                              |
+| Estudio               | INT                  | Recordar información (acción)                                |
+| Heroísmo              | FUE                  | Agarrar (acción), Empujar (acción), Resistir maniobra (reacción), Tropezar (acción), Desarmar (acción) |
+| Intimidar             | FUE o CAR            | Desmoralizar (acción), Coerción (pasiva)                     |
+| Juego de manos        | DES                  | Forzar cerradura (acción), Robar objeto (acción), Deslizarse (acción) |
+| Percepción            | SAB                  | Análisis (acción)                                            |
+| Persuasión            | CAR                  | Convencer (pasiva), Buscar información (proyecto)            |
+| Primeros auxilios     | INT                  | Aplicar primeros auxilios (acción)                           |
+| Sigilo                | DES                  | Ocultarse (acción), Movimiento silencioso (acción)           |
+| Supervivencia         | SAB                  | Orientarse (pasiva), Encontrar comida y agua (pasiva), Seguir rastro (pasiva) |
+| Voluntad              | CAR                  | Resistir el miedo (reacción)                                 |
+
+
 
 ### Atletismo (FUE)
 
-Tienes soltura en tiros para escalar, nadar o correr largas distancias. Aumenta tu movimiento base por 5 pies y recibes una velocidad de nadar y escalar igual a 5 pies. Cuando alcances el nivel de talento 3 o 5 aumenta tu movimiento de nuevo por 5 pies, incluyendo también tus velocidades de nadar y escalar (esto puede llegar a un máximo de 45 pies). 
-
-- <u>Fácil:</u> Escalar una pared con equipamiento de escalada, nadar en aguas calmadas, correr una distancia media a velocidad moderada
-- <u>Media:</u> Escalar un muro, nadar o correr a gran velocidad o largas distancias
-- <u>Extrema:</u> Escalar un precipicio, nadar en aguas con corrientes intensas, ganar un campeonato difícil de velocidad
-- <u>Casi imposible:</u> Escalar una pared lisa, nadar en un tsunami o remolino, recorrer una distancia maratoniana sin descanso, superar en velocidad a un vehículo. 
+Tienes soltura en tiros para escalar, nadar o correr largas distancias. A diferencia de otros talentos puedes hacer tiros de atletismo aunque no tengas niveles de talento
 
 ### Acrobacias (DES)
 
