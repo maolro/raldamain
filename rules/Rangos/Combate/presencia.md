@@ -1,6 +1,6 @@
 ---
 title: Presencia
-category: Social
+category: Combate
 ---
 
 Tienes el don de inspirar a todos aquellos que tienes cerca con un sentimiento de lucha o de intimidar a aquellos enemigos que osen oponerse a ti. A medida que pules tu habilidad con la experiencia de las batallas te vas volviendo mas hábil para comandar a las tropas y hacer que estas luchen de una manera mas eficaz así como evitar que estas sucumban fácilmente al pánico, siendo incluso capaz de aumentar la habilidad de tus seres mas cercanos con palabras de aliento para que tengan incluso mas fuerza.
