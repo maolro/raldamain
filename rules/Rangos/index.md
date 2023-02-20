@@ -4,7 +4,7 @@ layout: summary
 menuorder: 3
 ---
 
-Los rangos forman la base del sistema Raldamain, representando la fuerza y las capacidades combativas de un personaje. Estos rangos representan la soltura con armas, el estilo de combate y la maestría de la magia, oscilando normalmente entre el 1 y el 6 (dichos números se reperesentan como números romanos). A nivel 1 obtienes rango I en dos ramas diferentes. Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos. Además, algunos rangos pueden estar restringidos según la temática de la campaña, lo cual quedará a decisión del máster quien los puede permitir si el jugador da una buena justificación sobre la fuente de sus habilidades.
+Los rangos forman la base del sistema Raldamain, representando la fuerza y las capacidades combativas de un personaje. Estos rangos representan la soltura con armas, el estilo de combate y la maestría de la magia, oscilando normalmente entre el 1 y el 6 (dichos números se representan como números romanos). A nivel 1 obtienes rango I en dos ramas diferentes. Con el consentimiento del máster un jugador puede modificar levemente las habilidades que un rango otorgue sin alterar valores numéricos. Además, algunos rangos pueden estar restringidos según la temática de la campaña, lo cual quedará a decisión del máster quien los puede permitir si el jugador da una buena justificación sobre la fuente de sus habilidades.
 
 A cada nivel por encima del primero puedes ascender tu rango en una rama de tu elección siempre y cuando no superes un limitador establecido por el nivel, el cual se determina según la siguiente tabla:
 

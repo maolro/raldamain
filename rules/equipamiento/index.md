@@ -10,9 +10,9 @@ A la hora de crear un personaje el jugador deberá escoger con qué objetos empe
 
 # Riqueza
 
-Como puede observarse en la mayoría de estos casos debe emplearse una manera de indicar el dinero que posea un personaje, lo cual se conoce como el valor de **riqueza**. La riqueza se trata de una representación abstracta del dinero que tenga un personaje y determinará cuáles objetos es capaz de comprar y cuáles no. Este valor va indicado del 0 al 10 donde 0 indica la pobreza más absoluta mientras 10 representa la riqueza de la realeza. Cada objeto viene marcado con un valor de **precio** que oscila entre los mismos valores, que representa el precio de mercado que típicamente tiene un objeto de ese tipo.
+Como puede observarse en la mayoría de estos casos debe emplearse una manera de indicar el dinero que posea un personaje, lo cual se conoce como el valor de **riqueza**. La riqueza se trata de una representación abstracta del dinero que tenga un personaje y determinará cuáles objetos es capaz de comprar y cuáles no. Este valor va indicado del 0 al 10 donde 0 indica la pobreza más absoluta mientras 10 representa la riqueza de la realeza. Cada objeto viene marcado con un valor de **precio** que oscila entre los mismos valores, que representa el precio de mercado que típicamente tiene un objeto de ese tipo. 
 
-Como regla general un personaje es capaz de comprar sin dificultad todos aquellos objetos con precio igual a su nivel de riqueza - 1. Aquellos con precio igual a su nivel de riqueza representan un gasto más cuantioso y solo podrá comprarse uno en cada etapa de descanso, y aquellos que lo superen por 1 podrán comprarse a costa que el jugador que lo desee deberá bajar su nivel de riqueza por 1 representando que eso fundirá buena parte de sus ahorros. Dichos valores también quedan a decisión del máster, quien puede subir o bajar el precio de los objetos según la rareza y disponibilidad que estos tengan. 
+Durante una etapa de descanso un personaje podrá comprar una cantidad total de objetos cuya suma sea igual a su nivel de riqueza siempre y cuando estos queden disponibles en el mercado. 
 
 # Llevar y usar objetos
 
@@ -29,7 +29,3 @@ A continuación se indican las ranuras que tiene un personaje y los objetos que 
 - **Piernas**: botas, grebas
 
 Además del espacio otro limitante para el máximo de objetos que pueda llevar un personaje es una propiedad que poseen algunos objetos mágicos conocida como la **conexión**, la cual representa el vínculo entre el portador y el objeto. Una persona solo puede usar como máximo **dos** objetos con conexión a la vez representando así la capacidad máxima que tiene una persona para vincularse con ellos. Este atributo viene indicado en las propiedades del objeto y si no va marcada entonces el objeto no la requiere.
-
-# Rareza de un objeto
-
-Cada objeto viene además con un valor conocido como rareza que oscila del 0 al 6, siendo 0 el valor de aquellos objetos muy comunes y fáciles de fabricar y el 6 indicando artefactos u objetos mágicos muy poderosos. Este valor es meramente informativo para el máster a la hora de permitir qué objetos puedan encontrar los jugadores para evitar desbalances en el juego. Este valor también se usa a la hora de crear enemigos para determinar qué combinación de objetos podrían tener. La rareza viene especificada en la información sobre el objeto como fórmula básica un personaje no debería tener objetos cuya rareza supere su nivel / 3 - 2 salvo que circunstancias especiales lo permitan.
