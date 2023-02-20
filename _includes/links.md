@@ -8,10 +8,8 @@
 [Fortitud]: {% link rules/Rangos/Combate/fortitud.md %}
 [Guerrero divino]: {% link rules/Rangos/Religion/index.md %}
 [Ira]: {% link rules/Rangos/Combate/ira.md %}
-[rango]: {% link rules/Crear personajes/talentos.md %}
 [Reflejos]: {% link rules/Rangos/Combate/reflejos.md %}
 [religión]: {% link rules/Rangos/Religion/index.md %}
-[talento]:  {% link rules/Crear personajes/talentos.md %}
 [ventaja]:  {% link rules/Reglas principales/reglas de combate.md %}#factores-adicionales
 [herida permanente leve]: {% link rules/Reglas principales/Heridas permanentes.md %}
 [armadura]: {% link rules/Rangos/Combate/armaduras.md %}
