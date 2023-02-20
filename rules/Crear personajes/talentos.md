@@ -34,7 +34,7 @@ En este apartado se especificarán todos los talentos diferentes que se pueden e
 | Acrobacias            | DES                  | Persecución (acción), Agarrar el borde (reacción),           |
 | Actuación             | CAR                  | Distraer (acción), Intérprete (proyecto)                     |
 | Arcanismo             | INT                  | Aprender hechizo (proyecto), Identificar magia (acción)      |
-| Atletismo             | FUE                  | Perseguir (acción), Escalar (acción), Nadar (acción)         |
+| Atletismo             | FUE                  | Perseguir (acción), Huida (acción), Escalar (acción), Nadar (acción) |
 | Averiguar intenciones | SAB                  | Predecir movimiento (reacción)                               |
 | Destrozar             | FUE                  | Romper objeto (acción)                                       |
 | Engaño                | CAR                  | Finta (acción), Mentir (pasiva)                              |
@@ -51,11 +51,17 @@ En este apartado se especificarán todos los talentos diferentes que se pueden e
 
 
 
-### Atletismo (FUE)
+## Atletismo (FUE)
 
-Tienes soltura en tiros para escalar, nadar o correr largas distancias. A diferencia de otros talentos puedes hacer tiros de atletismo aunque no tengas niveles de talento
+Tienes soltura en tiros para escalar, nadar o correr largas distancias. A diferencia de otros talentos puedes hacer tiros de atletismo y usar sus acciones asociadas aunque no tengas niveles de talento en esta habilidad.
 
-### Acrobacias (DES)
+**Huida** (1 acción): Empujas tu cuerpo para intentar escapar de un enemigo. Muévete una cantidad de pasos especificada por el movimiento base de tu elección provocando ataques de oportunidad y haz un tiro de habilidad con atletismo frente a una dificultad escogida por el máster según tu estado actual y el terreno. Si tienes éxito en este tiro podrás moverte un paso adicional en cualquier dirección. Al usar esta habilidad provocarás una apertura con la que un enemigo podrá usar su habilidad *perseguir* en respuesta a tu huida en el caso que la tenga. Puedes emplear una acción adicional en *huida* para moverte un paso más.
+
+**Perseguir** (1 acción): Al ver como uno de tus enemigos intenta escapar empujas tu cuerpo para intentar ir a por él. Esta habilidad funciona de la misma manera que *huida* pero puede usarse fuera de tu turno en respuesta a que un enemigo se aleje de ti y su dificultad viene determinada por el resultado que saque tu oponente en un tiro de atletismo si está huyendo. Si tienes éxito en el tiro te moverás un paso adicional y acabarás en una posición adyacente a tu objetivo. Puedes emplear una acción adicional en *perseguir* para moverte un paso más. 
+
+**Nadar** (1 acción): Si te encuentras en una superficie acuosa puedes nadar un paso en cualquier dirección. En algunas circunstancias debes tener éxito en un tiro de atletismo frente a una dificultad escogida por el máster para poder nadar hacia donde desees.
+
+## Acrobacias (DES)
 
 Posees un fino sentido de equilibrio y una gran flexibilidad. Tienes soltura en tiros de habilidad para moverte por superficies estrechas, hacer saltos acrobáticos y evitar caídas. A nivel 1 tienes éxito automático en todos los tiros para realizar saltos de longitudes inferiores a 5 pies (esta longitud aumenta por 5 pies cuando alcances nivel de talento 3 y 5)
 
