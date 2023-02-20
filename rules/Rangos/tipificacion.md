@@ -1,6 +1,8 @@
 ---
-title: Tipificación
+title: Lectura de un rango
 ---
+
+
 
 Cada habilidad tiene determinados rasgos para indicar el tipo que tiene para los propósitos de resistencias y su interacción con otras normas. Estos son los tipos que puede tener una habilidad
 
