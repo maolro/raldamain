@@ -10,11 +10,7 @@ Las razas y culturas disponibles en una campaña dependen fuertemente de la natu
 
 Los humanos son la raza más abundante y diversa del planeta, encontrándose en todas las tierras conocidas y al frente de la mayoría de naciones civilizadas. La clave de su éxito se encuentra en su gran adaptabilidad, creatividad y capacidad de colaborar en grandes números para lograr hazañas increíbles. Su ya mencionada diversidad causa que los humanos tengan una inmensa variedad de creencias y tradiciones, las cuales son capaces de unir a millones de individuos o incitar grandes guerras capaces de provocar destrucción a una inmensa escala. 
 
-Aunque los humanos tienen centenares de culturas diferentes como ya se muestra en el siguiente apartado todos ellos tienen las siguientes características raciales:
-
-- +1 en una estadística
-- +2 niveles de habilidad
-- Escoge un rango adicional en una habilidad de su elección
+Los humanos no reciben ningún beneficio o perjuicio estadístico, por lo cua
 
 ### Ustileses
 
