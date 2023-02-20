@@ -12,9 +12,9 @@ Los humanos son la raza más abundante y diversa del planeta, encontrándose en 
 
 Aunque los humanos tienen centenares de culturas diferentes como ya se muestra en el siguiente apartado todos ellos tienen las siguientes características raciales:
 
-- +1 en una [estadística]
-- +2 niveles de [talento]
-- Escoge un [rango] adicional en una habilidad de su elección
+- +1 en una estadística
+- +2 niveles de talento
+- Escoge un rango adicional en una habilidad de su elección
 
 ### Arshalaníes
 
