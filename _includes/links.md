@@ -4,7 +4,6 @@
 [ataques naturales]: {% link rules/Rangos/Armas/ataques naturales.md %}#armas
 [combate]: {% link rules/Rangos/Combate/index.md %}
 [Conocimiento]: {% link rules/Rangos/Ciencia/conocimiento.md %}
-[estadística]: {% link rules/Crear personajes/crear personajes.md %}#las-seis-estad%C3%ADsticas
 [fabricación]: {% link rules/Rangos/Ciencia/fabricacion.md %}
 [Fortitud]: {% link rules/Rangos/Combate/fortitud.md %}
 [Guerrero divino]: {% link rules/Rangos/Religion/index.md %}
