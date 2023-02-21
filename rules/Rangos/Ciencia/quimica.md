@@ -28,7 +28,7 @@ A lo largo de tus años de estudio has aprendido la influencia que tanto compone
 
 - **Medicina:** Una medicina diluida solo sanará vitalidad al ser aplicada y no reducirá el nivel de una herida permanente, veneno o enfermedad por 1.
 - **Veneno:** Un veneno diluido reduce su gravedad por 2 y no puede afectar a criaturas resistentes al veneno, pero al aplicarse a un arma la dosis sólo se consume tras un número de turnos igual a tu INT - 1. 
-- **Suero:** Un suero diluido sólo aumentará una estadística física o mental por 1 durante un minuto, pero no dará ningún efecto secundario negativo. Los aumentos producidos por un suero diluido no se acumulan con otros sueros.
+- **Suero:** Un suero diluido sólo aumentará una estadística física o mental por 2 durante un minuto, pero no dará ningún efecto secundario negativo. Los aumentos producidos por un suero diluido no se acumulan con otros sueros.
 
 Si intentas diluir un concentrado tendrá los efectos de una dosis normal.
 
