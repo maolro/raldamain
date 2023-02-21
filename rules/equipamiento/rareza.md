@@ -10,12 +10,12 @@ Como fórmula básica un personaje no debería tener objetos cuya rareza supere 
 
 | Franja de niveles | Rareza 1 | Rareza 2 | Rareza 3 | Rareza 4 | Rareza 5 | Rareza 6 |
 | ----------------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| 1-3               | 1-4      | 0        | 0        | 0        | 0        | 0        |
-| 4-6               | 1-4      | 1-3      | 0        | 0        | 0        | 0        |
-| 7-9               | 0-4      | 1-4      | 1-2      | 0        | 0        | 0        |
-| 10-12             | 0-4      | 0-4      | 1-2      | 1-2      | 0        | 0        |
-| 13-15             | 0-4      | 0-4      | 1-4      | 1-2      | 1-2      | 0        |
-| 16+               | 0-4      | 0-4      | 1-6      | 1-4      | 1-3      | 1        |
+| 1-3               | 0-3      | 0        | 0        | 0        | 0        | 0        |
+| 4-6               | 3-4      | 0-3      | 0        | 0        | 0        | 0        |
+| 7-9               | 0-2      | 3-4      | 0-3      | 0        | 0        | 0        |
+| 10-12             | 0        | 0-2      | 3-4      | 0-3      | 0        | 0        |
+| 13-15             | 0        | 0        | 0-2      | 3-4      | 0-3      | 0        |
+| 16+               | 0        | 0        | 0        | 0-2      | 3-4      | 0-3      |
 
 # Tablas de tesoros
 
@@ -27,13 +27,13 @@ Para mostrar un indicio de los objetos que pueden encontrarse a cada nivel y ofr
 
 | Resultado | Objeto                                                       |
 | --------- | ------------------------------------------------------------ |
-| 1         | 4 pociones de cualquier tipo                                 |
+| 1         | 3 productos químicos de precio 1                             |
 | 2         | armadura de material superior                                |
 | 3         | arma de material superior                                    |
-| 4         | 4 bombas de cualquier tipo                                   |
+| 4         | 2 productos químicos de precio 2                             |
 | 5         | Piedras de enviar                                            |
 | 6         | Bolsa extradimensional                                       |
-| 7         |                                                              |
+| 7         | Equipamiento estándar de rareza 1                            |
 | 8         |                                                              |
 | 9         |                                                              |
 | 10        | Suficiente dinero para aumentar el nivel de riqueza por 1 si era 4 o inferior. |

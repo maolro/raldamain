@@ -2,68 +2,86 @@
 title: Mejoras de arma
 ---
 
-Esta es una lista de las mejoras que se pueden aplicar a un arma. Pueden aplicarse múltiples mejoras a una única arma siempre y cuando estas no se cancelen mutuamente. 
+Esta es una lista de las mejoras que se pueden aplicar a un arma. Pueden aplicarse múltiples mejoras a una única arma siempre y cuando estas no se cancelen mutuamente. En cada una se especifica el valor con el que aumentan el precio, la rareza que tienen y las propiedades que aplican. Si un arma tiene múltiples mejoras el arma nueva tendrá rareza igual a la suma de sus rarezas salvo que en la mejora misma especifique lo contrario.
 
-## Mejoras de arma
+# Mejoras de arma
 
-<u>Chupavidas</u> (Crédito 3): Tu arma está infundida de energía nigromántica, absorbiendo la vitalidad de tu enemigo para regenerarte. Esta mejora causará que tu arma inflija +2 daño necrótico al impactar y el daño provocado no puede ser sanado salvo por magia. En el caso que logres provocar heridas permanentes con esta arma te recuperas vitalidad igual a 1 + la gravedad de la herida (Si tu objetivo muere, entonces te sanarás vitalidad igual a la Constitución de este en el momento de su muerte). Esta sanación de vitalidad funciona como la habilidad Toque vampírico, pudiendo sanarte PV si tu vitalidad está al máximo. Esta mejora puede aplicarse tanto a armas cuerpo a cuerpo como a armas a distancia, aunque para poder sanar tu vitalidad debes encontrarte a menos de 20 pies de tu objetivo.
+## Rareza 1
 
-<u>Criogénica</u> (Crédito 2): Tu arma forma una nube de aire gélido al disparar, causando que inflija 1d6 daño de frío en lugar de físico. Además, al reducir los PV de un objetivo este quedará ralentizado durante una ronda (paralizado en un golpe crítico) y bajarás la temperatura por un paso en un área de 15 pies a la zona de impacto  durante una ronda. Si disparas a un objetivo que se encuentre en un espacio de frío extremo recibes ventaja en tu tiro de ataque. Puedes también pagar 1 crédito adicional para incrementar el daño de tu arma por 1d6 (máximo 4d6). Esta mejora sólo puede aplicarse a armas a distancia y sustituirá los siguientes atributos tal como indica la siguiente tabla.
+### **Corrosiva** (+2 precio)
 
-| Atributo              | Sustitución                                                  | Modificaciones                                               |
-| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Truco de bala         | Elige 1 entre Neblina polar, Hielo resbalante o Espinas gélidas |                                                              |
-| Ojo del francotirador | Tormenta de nieve                                            | Cada uso de tormenta de nieve consumirá todas las balas de tu arma. |
-| Disparos a bocajarro  | Muro de hielo                                                | Usar muro de hielo consumirá todas tus balas y te cuesta 3 accione |
-| Puntería experta      | Frío estigio                                                 |                                                              |
+El arma está cubierta de ácido corrosivo, infligiendo 1d6 daño ácido adicional al impactar a un objetivo. Si logras reducir PV con un arma de este tipo el objetivo sufrirá una *quemadura leve*. En el caso que el arma ya sea capaz de provocar daño ácido cada vez que impactes a un enemigo puedes provocarle el efecto de estado *roto* a su armadura (si usa parada para detenerla puedes provocar dicho efecto a su arma). 
 
-<u>Antimágica</u> (Crédito 3): Tu arma causa una disrupción mágica al impactar, debilitando las defensas de tu objetivo y causando daños a sus objetos infundidos con chi. Al impactar con tu arma causarás los efectos de disrupción en tu objetivo, reduciendo la eficacia de uno de sus objetos mágicos por 1 o provocándole un penalizador -2 a sus tiros de magia (este se elimina gastando 1 chi o empleando una acción de movimiento). Si logras provocar daño puedes deshabilitar un efecto mágico que tenga activo tu oponente de rango II (si tu objetivo lleva una armadura mágica puedes deshabilitar una de sus mejoras durante una ronda). Esta mejora puede emplearse alternativamente para encantar a hasta 20 proyectiles con este efecto. Un arma con esta mejora puede además emplear *parada* para detener un ataque de magia arcana si el usuario se encuentra en posición defensiva.
+Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea ácido o necrótico. Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea necrótico, frío o ácido. Si esta se aplica sobre un arma hecha de esquirla de icor se reducirá el precio de esta por 1.
 
-<u>Drenadora</u> (Crédito 2): Tu arma está encantada con poderosa magia protectora que le permite drenar el chi en sus alrededores. Esta arma ignorará la defensa otorgada por armadura mágica que tenga tu objetivo y al impactar a un objetivo con rangos en magia arcana reduce su reserva de chi por 1. Un arma drenadora es capaz de dañar muros de fuerza y destruir glifos mágicos. Esta mejora sólo puede aplicarse a un arma antimágica.
+### **Gélida** (+2 precio)
 
-<u>Fantasmal</u> (Crédito 3): Tu arma está infundida de magia ilusoria, alterando su aspecto y confundiendo al defensor. Recibes ventaja en todos tus tiros de ataque contra todos aquellos objetivos que no hayan desmentido la ilusión, activándose el efecto de Ataque furtivo aunque el tu objetivo no esté ni sorprendido ni flanqueado. La ilusión se desmentirá en el momento que impacte a una criatura o sea eliminada con magia y para volver a activarla se necesita el gasto de una acción de movimiento. Además, una vez por ronda puedes repetir un tiro de ataque hecho contra un objetivo contra el cual tenga efecto Ataque furtivo.
+El arma está infundida con energía elemental de hielo. Un arma con esta mejora infligirá +1d6 daño de frío al impactar y al reducir los PV de tu objetivo lo *fatigará* durante una ronda. Si esta ya es capaz de provocar daño frío tu objetivo quedará *fatigado* cada vez que reciba un impacto y sufrirá *hipotermia* de un grado al reducir sus PV, la cual tendrá tiro de gravedad +9. Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea frío o necrótico.
 
-<u>Fulgurante</u> (Crédito 2): Tu arma libera una fulgurante descarga eléctrica, causando que inflija 1d6 daño eléctrico en lugar de físico. Además, al reducir los PV de tu objetivo este quedará ralentizado durante una ronda (Aturdido si obtienes un golpe crítico), y recibes ventaja en tiros de ataque contra criaturas con armadura metálica. Puedes pagar un crédito adicional para incrementar el daño base de tu arma por 1d6 (máximo 4d6). Esta mejora sólo puede aplicarse a armas a distancia y sustituirá los siguientes atributos tal como indica la siguiente tabla.
+### **Fulgurante** (+2 precio)
 
-| Atributo              | Sustitución           | Modificaciones                                               |
-| --------------------- | --------------------- | ------------------------------------------------------------ |
-| Truco de bala         | Relámpago en cadena   |                                                              |
-| Ojo del francotirador | Castigo de los cielos | Cada uso de castigo de los cielos consumirá una bala de tu arma. |
-| Disparos a bocajarro  | Cargar el aire        | Usar cargar el aire consumirá todas tus balas y te cuesta una acción de turno completo. |
-| Puntería experta      | Rayo divino           |                                                              |
+El arma está infundida con energía eléctrica, causando que produzca una fulgurante descarga con cada golpe. Un arma con esta mejora infligirá +1d6 daño eléctrico al impactar y al reducir los PV de tu objetivo lo *ralentizará* durante una ronda (quedará *aturdido* si obtienes un golpe crítico). Si esta ya es capaz de provocar daño eléctrico tu objetivo quedará *ralentizado* una ronda cada vez que reciba un impacto (en el caso que reduzcas sus PV quedará *aturdido*). Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea eléctrico o sónico.
 
-<u>Fusión corrosiva</u> (Crédito 3): Tu arma está infundida con ácidos capaces de corroer metales y piel. Un arma con esta mejora hará +2 daño ácido al impactar y reducirá la defensa del objetivo por 1, provocándole una quemadura leve en el caso que reduzcas sus PV o su defensa haya sido reducida a 0.
+### **Hiriente** (+2 precio)
 
-<u>Fusión ígnea</u> (Crédito 3): Tu arma está infundida con energía elemental de fuego. Un arma con esta mejora hará +2 daño fuego al impactar y provocará una quemadura al reducir los PV de tu objetivo. Si tienes la habilidad Armas infundidas de ascendencia de fuego el daño de fuego que causas incrementa por 1 y las quemaduras provocadas aumentarán su gravedad por 1, infligiendo una quemadura leve siempre que impacte. Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.
+El arma está infundida con energía negativa, provocando que sus heridas sean más difíciles de sanar. Un arma con esta mejora infligirá +1d6 daño necrótico al impactar y al provocar daño reducirá también los PV y Vitalidad máxima del objetivo por un valor igual al daño necrótico infligido, impidiendo así que pueda sanarse (esta reducción se eliminará con un descanso largo o cualquier efecto capaz de eliminar maldiciones). Si esta ya es capaz de provocar daño necrótico tu objetivo sufrirá *enervación* de un grado cada vez que reduzcas sus PV, la cual tendrá tiro de gravedad +9. 
 
-<u>Fusión gélida</u> (Crédito 3): Tu arma está infundida con energía elemental de hielo. Un arma con esta mejora hará +2 daño de frío al impactar y al reducir los PV de tu objetivo lo ralentizará durante una ronda. Si tienes la habilidad Armas infundidas al infligir daño a los PV reduce la DES de tu objetivo por 1 durante una ronda. Si usas esta habilidad en un objetivo cuya destreza ya hayas reducido con esta habilidad puedes emplear tus ventajas para volver a reducir su DES por 1 o extender el efecto durante una ronda adicional. Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.
+Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea necrótico, frío o ácido. Si esta se aplica sobre un arma hecha de acero necrario o esquirla de icor se reducirá el precio de esta por 1.
 
-<u>Fusión atronadora</u> (Crédito 3):  Tu arma está infundida con energía sónica, liberando un poderoso estruendo al impactar. Un arma con esta mejora hará +2 daño de trueno al impactar y al reducir los PV de tu objetivo este quedará ensordecido durante una ronda (aturdido si obtienes un golpe crítico). Si tienes la capacidad de aturdir a un objetivo con tu arma, sea con la habilidad Puño aturdidor o Concusión, el objetivo quedará ensordecido durante  una ronda adicional al ser aturdido y si reduces sus PV recibirá el efecto de estado náuseas después del aturdimiento. Esta mejora sólo puede aplicarse a armas contundentes.
+### **Imbuida de chi** (+2 precio) 
 
-<u>Fusión eléctrica</u> (Crédito 3): Tu arma está infundida con energía eléctrica, causando que produzca una fulgurante descarga. Un arma con esta mejora hará +2 daño eléctrico al impactar y al reducir los PV de tu objetivo lo ralentizará durante una ronda (quedará aturdido si obtienes un golpe crítico).  Si tienes la habilidad Armas infundidas de ascendencia de aire el daño eléctrico que causas incrementa por 1 y recibes la habilidad Concusión. Además, al obtener un golpe crítico puedes electrocutar a las criaturas cercanas a tu objetivo, causando que estas sufran 2 daño eléctrico y estén Ralentizadas durante una ronda.  Esta mejora puede aplicarse a cualquier arma cuerpo a cuerpo.
+El arma está imbuida de chi puro que fortalece su fuerza y la hace más fácil de manipular con magia. Esta infligirá +1d6 daño fuerza al impactar reducible por resistencia arcana y al reducir los PV de un objetivo afectará también su resistencia arcana, disminuyéndola por 1. Si el portador conoce el hechizo *infundir arma* puede usarlo en un arma imbuida de chi como acción bonus para cambiar el daño fuerza que provoca a cualquier tipo de energía o antienergía. 
 
-<u>Lanzallamas</u> (Crédito 2) Tu arma escupe una abrasadora llama al disparar, causando que inflija 1d6 daño de fuego en lugar de físico. Además, al reducir los PV de tu objetivo puedes provocarle una quemadura leve, pasando a ser una quemadura media si este lleva armadura metálica. Puedes pagar un crédito adicional para incrementar el daño base de tu arma por 1d6 (máximo 4d6). Esta mejora sólo puede aplicarse a armas a distancia o armas con fusión abrasadora. En el caso que se apliquen a armas a distancia los atributos de esta variarán de la siguiente manera:
+Un arma con esta mejora puede recibir daño no-físico adicional siempre y cuando no tenga dos tipos diferentes que sean contradictorios, como fuego y frío. Esta norma se aplica también si se cambia el tipo de daño con *infundir arma*.
 
-| Atributo              | Sustitución        | Modificación                                                 |
-| --------------------- | ------------------ | ------------------------------------------------------------ |
-| Combate furtivo       | Parada elemental   | Solo puedes detener ataques a distancia y mágicos            |
-| Puntería mortal       | Reserva de energía | Gastas una bala adicional en lugar de reducir la reserva elemental y solo puedes hacer que afecte a un cono de 15 pies en lugar de realizar un ataque adicional. |
-| Truco de bala         | Llamas abrasadoras |                                                              |
-| Ojo del francotirador | Sobrecarga         | Cada uso de sobrecarga consumirá una bala de tu arma.        |
-| Disparos a bocajarro  | Muro de fuego      | Usar muro de fuego consumirá todas tus balas y te cuesta una acción de turno completo. |
-| Puntería experta      | Fuego puro         |                                                              |
+### **Ígnea** (+2 precio)
 
-<u>Material superior</u> (Crédito 2): Tu arma está hecha de un material de calidad superior, aumentando su efectividad contra armaduras de mayor calibre y su dureza. Un arma así no puede romperse por armas hechas de materiales de dureza inferior y aumenta su daño base por un paso (1d8 si su daño base es 1d6, 1d10 si es 1d8, 2d6 si es 1d10 y 2d8 si es 2d6).
+El arma está infundida con energía elemental de fuego, provocando +1d6 daño fuego al impactar e infligiendo una *quemadura leve* al objetivo si logra reducir sus PV. En el caso que el arma ya sea capaz de provocar daño fuego esta provocará una *quemadura leve* cada vez que impacte y una *quemadura media* al reducir los PV del objetivo. 
 
-<u>Motosierra</u> (Crédito 3): El filo de tu arma opera de manera automática, infligiendo letales heridas a costa de dificultar su uso. Un arma con esta mejora infligen +2 daño y al impactar reducirá la defensa de la armadura de tu objetivo por 1 (si bloquea con un escudo, la defensa de este también por el mismo valor), pero recibirás un penalizador -2 en todos tus ataques con ella. Si tienes el atributo Impacto destructor o Rompe escudos las reducciones que estas causan aumentará por 1. Esta mejora sólo puede aplicarse a armas que causen daño cortante.
+Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea fuego o radiante. Si esta se aplica sobre un arma hecha de bronce estigio reducirá el precio de esta por 1.
 
-<u>Pulso sónico</u> (Crédito 2) Tu arma dispara ondas de sonido a frecuencias extremas, causando que 1d6 daño de trueno en lugar de físico. Además, al reducir los PV de tu objetivo este quedará ensordecido durante una ronda (aturdido si obtienes un golpe crítico) y destruirás todos los objetos frágiles en un área de 15 pies a la zona de impacto. Puedes pagar un crédito adicional para incrementar el daño base de tu arma por 1d6 (máximo 4d6). Esta mejora sólo puede aplicarse a armas a distancia y sustituirá los siguientes atributos tal como indica la siguiente tabla.
+### **Radiante** (+2 precio)
 
-| Atributo              | Sustitución                    | Modificaciones                                               |
-| --------------------- | ------------------------------ | ------------------------------------------------------------ |
-| Truco de bala         | Concusión                      |                                                              |
-| Ojo del francotirador | Onda destructora               | Cada uso de onda destructora consumirá una bala de tu arma.  |
-| Disparos a bocajarro  | Puño destructor, Rompe escudos |                                                              |
-| Puntería experta      | Derrumbamiento                 | Usar esta habilidad consumirá todas tus balas y te cuesta una acción de turno completo. |
+El arma está infundida de energía positiva, infligiendo +1d6 daño radiante al impactar. En el caso que el arma ya sea capaz de provocar daño radiante aumentará el nivel de todas las heridas permanentes provocadas por un paso. 
 
-<u>Retornante</u> (Crédito 2): Tu arma esta conectada a tu posición a través de magia espacial, volviendo a tus manos de manera automática aunque esta sea separada de ti. Recuperar un arma retornante te cuesta una acción bonus y sólo puede emplearse si esta se encuentra a 30 pies de ti. Si al recuperar tu arma retornante hay una criatura en el camino puedes realizar un ataque contra esta, el cual recibirá los bonificadores de flanqueo.
+Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea fuego o radiante. Si esta se aplica sobre un arma hecha de plata celestial reducirá el precio de esta por 1.
+
+### **Repulsiva** (+1 precio)
+
+El arma genera una onda expansiva al impactar capaz de lanzar a los objetivos impactados por los aires. Cada vez que el arma impacte a un enemigo este deberá tener éxito en un tiro de salvación de FUE frente a tu tiro con el arma o será empujado un paso hacia atrás (si reduces sus PV fracasará automáticamente en este tiro). Esta mejora no puede aplicarse a armas ligeras.
+
+### **Retornante** (+1 precio)
+
+El arma está atada a ti a través de un vínculo espacial por el cual volverá a tus manos cada vez que sea lanzada. Al arrojar un arma con esta categoría esta volverá a tus manos tras realizar el ataque siempre y cuando no se encuentre en una posición superior a distancia media. Esta mejora no puede aplicarse a armas pesadas.
+
+### **Sónica** (+2 precio)
+
+El arma es capaz de formar poderosas ondas sónicas, infligiendo así +1d6 daño sónico al impactar y *ensordeciendo* al objetivo una ronda si logra reducir sus PV. Si el arma escogida ya era capaz de provocar daño sónico *ensordecerá* al objetivo al impactar y le *aturdirá* una ronda si logra reducir sus PV. Un arma con esta mejora no podrá recibir daño no-físico adicional que no sea eléctrico o sónico. 
+
+## Rareza 2
+
+### **Chupavidas** (+3 precio)
+
+El arma es capaz de drenar la esencia vital de tu objetivo con cada golpe, sanándote con cada impacto provocado. Un arma con esta mejora funciona de la misma manera que un arma *hiriente* pero al impactar te sanarás Vitalidad igual al daño necrótico infligido (podrás sanarte PV si logras reducir los PV del objetivo o infligir un golpe crítico). Si esta arma llega a matar a un enemigo podrás también reducir el nivel de una herida permanente que te aqueje por un paso. 
+
+Algunas armas de esta categoría requieren ser bañadas constantemente con sangre humana, perdiendo su efectividad si esto no se cumple. Si el arma tiene esta propiedad o no queda a decisión del máster.
+
+### **Antimágica** (+2 precio)
+
+## Rareza 3
+
+### **Drenadora** (+1 precio)
+
+### **Ilusoria** (+2 precio)
+
+### **Danzante** (+3 precio) 
+
+## Rareza 4
+
+### **Antienergía** (+5 precio) 
+
+### **Energía** (+5 precio)
+
+### **Inteligente** (+2 precio)
+
+### **Plasma** (+5 precio)
