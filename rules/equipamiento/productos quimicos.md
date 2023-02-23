@@ -6,6 +6,10 @@
 
 ### Agua bendita (precio 1)
 
+Este frasco de agua está bendecido por un dios o espíritu benigno, haciendo que sea nociva para las fuerzas del mal. El agua bendita puede usarse para rociar a una criatura abisal, infernal o un espíritu oscuro que se encuentre a distancia corta, lo cual costará dos acciones y constará de un tiro de ataque hecho con heroísmo que al impactar infligirá 1d6 daño radiante además de *enfermar* una ronda al objetivo. 
+
+Si el usuario tiene rangos en *bombas* puede emplear su tiro de ataque en dicho rango para atacar con agua bendita además de sumarle su INT al daño. A diferencia de otros productos químicos para formar *agua bendita* una criatura con rango II o más en magia divina debe consagrarla.
+
 ### Bomba de humo (precio 1)
 
 ### Bomba ígnea (precio 1)
