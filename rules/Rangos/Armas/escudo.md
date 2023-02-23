@@ -50,3 +50,18 @@ Los escudos permiten defenderse al portador contra toda clase de ataques, sin em
 - **Escudo básico:** Valor defensivo 4. 1d6+fuerza daño contundente. Llevarlo dará un penalizador de -1 a la destreza.
 - **Escudo ligero:** Valor defensivo 3. 1d4+fuerza daño contundente. 
 - **Escudo de torre:** Valor defensivo 6. 1d8+fuerza daño contundente. Llevarlo dará un penalizador de -2 a la destreza e impedirá esquivar al portador. Requiere 4 o mas FUE para usarse.
+
+## Armadura natural (Variante)
+
+En lugar de un escudo tu piel misma es capaz de detener ataques como si fuera uno. Si escoges esta variante no podrás hacer ataques con el escudo pero al ser tu piel la que bloqueará ataques no necesitas cogerlo con tus manos y empleará siempre tu valor defensivo en el tiro. Para determinar el valor defensivo deberás escoger un grado de armadura natural como se especifica a continuación. Como regla general lo más resistente que sea el armadura natural mayor penalizador otorgará a la destreza.
+
+| Grado | Valor defensivo | Penalizador a la DES |
+| ----- | --------------- | -------------------- |
+| 1     | 4               | 0                    |
+| 2     | 5               | -1                   |
+| 3     | 6               | -2                   |
+| 4     | 7               | -3                   |
+| 5     | 8               | -4                   |
+| 6     | 9               | -5                   |
+
+Esta variante solo puede escogerse si tus características fisiológicas lo permiten. En general no puede obtenerse por humanos.

@@ -15,9 +15,11 @@ Para desbloquear este rango de manera gratuita manenecesitas 5 FUE y cuatro nive
 
 **Ataque poderoso** (1 AP): Aumenta el daño de tu siguiente ataque por 1d6 y provoca sangrado al impactar.
 
-**Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo.
+**Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo y modificado por tu estadística de FUE. 
 
-**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. 
+**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con ataques físicos cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensivamente contra un ataque enemigo empleando tus bonificadores de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. 
+
+Una *parada* puede usarse también para detener determinados ataques mágicos si el máster lo decide. A rango III puedes usar *parada* para bloquear ataques a distancia que no sean demasiado rápidos y algunos ataques de área que sea posible detener como *enmarañar* (el máster tendrá la última decisión y para algunos hará falta estar en *posición d*).
 
 ## Rango II
 
@@ -67,3 +69,4 @@ Un arma de filo cortante puede modificarse con las siguientes características p
 - **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Sumarás tus bonificadores de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades *ataque poderoso*, *impacto destructor* y *rompe escudos*. Lanzamiento sólo puede aplicarse a armas ligeras.
 - **Aserrada:** El filo del arma está dotado de varias pequeñas cuchillas que causan graves heridas al impactar. Todos los efectos de sangrado infligidos con esta arma harán +1 daño al turno y provocarán que cada turno la criatura aumente la efectividad de una herida permanente que tenga por un paso. No obstante, las cuchillas de esta arma son frágiles y se romperán si empleas esta arma para dañar la armadura de tu objetivo.
 - **Rompespadas:** El arma tiene varias cuñas en el filo con las cuales puede romper las espadas de tus enemigos. Si el enemigo se defiende con un ataque de Parada contra un Ataque poderoso podrás otorgarle un penalizador -2 al daño. Si un arma con este penalizador logra infligir 0 daño en un tiro de ataque se romperá al instante. Como desventaja esta arma se rompe con mayor facilidad al impactar superficies sólidas, causando que reduzca su daño base por 1 cada vez que impacte a un escudo o un muro.
+- **Garra**: Tienes afiladas garras con las que puedes rajar a tus enemigos, funcionando como un arma que inflige 1d6 + FUE daño base (1d8 si eres grande y 1d10 si eres gigante). Recibes también la habilidad *desviar proyectiles* en lugar de *choque de espadas* a rango III y *oportunista* a rango V. Solos puedes obtener esta arma si tus características fisiológicas lo permiten.
