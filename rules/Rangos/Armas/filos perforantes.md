@@ -9,9 +9,9 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 
 ## Rango I
 
-Para desbloquear este rango necesitas 2 DES y un nivel de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango IV.
+Puedes obtener este rango de manera gratuita si tienes 5 o más DES y cuatro niveles de talento en juego de manos. 
 
-**Ataque furtivo:** Añade +DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
+**Ataque furtivo:** Suma tu estadística de DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
 
 **Apuntar ataque** (1 acción): Inflige una herida leve al impactar con tu siguiente ataque si el objetivo lleva armadura ligera o inferior. +1 AP para aumentar el nivel de armadura que puedes afectar por un paso
 
@@ -19,9 +19,11 @@ Para desbloquear este rango necesitas 2 DES y un nivel de talento en juego de ma
 
 **Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando el bonificador de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Tienes desventaja defendiéndote con parada de armas que tengan tamaño excesivamente superior o inferior al tuyo (por ejemplo si bloqueas un arma pesada con un arma de tamaño normal).
 
+A rango III eres capaz de combinar paradas con tu velocidad, permitiéndote hacer dos tiros defensivos para evitar un ataque, uno con reflejos y otro con *parada*, y quedarte con el resultado que más te convenga. Solo podrás detener ataques de esta manera si estás en *posición defensiva* y estos son evitables tanto con parada como reflejos
+
 ## Rango II
 
-Para desbloquear este rango necesitas 3 DES y dos niveles de talento en juego de manos. Puedes desbloquearlo de manera gratuita si también cumples los requisitos del rango V.
+Puedes obtener este rango de manera gratuita si tienes 6 o más DES y cinco niveles de talento en juego de manos. 
 
 *Atacar con arma* cuesta -1 acción
 
@@ -31,23 +33,17 @@ Para desbloquear este rango necesitas 3 DES y dos niveles de talento en juego de
 
 ## Rango III 
 
-Para desbloquear este rango necesitas 4 DES y tres niveles de talento en juego de manos.
-
 **Reposicionar**: Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
 
 **Asesinato**: Cada impacto contra una criatura sorprendida cuenta como golpe crítico.
 
 ## Rango IV
 
-Para desbloquear este rango necesitas 5 DES y cuatro niveles de talento en juego de manos.
-
 **Ataque saltarín:** Tu arma aumenta su alcance a cercano.
 
 **Precisión mortal:** Al realizar un ataque apuntado puedes escoger la parte del cuerpo donde infliges una herida permanente.
 
 ## Rango V 
-
-Para desbloquear este rango necesitas 6 DES y cinco niveles de talento en juego de manos.
 
 **Ataque vital:** Al realizar un ataque apuntado aumenta el daño por 1d6 por cada acción empleada para apuntar.
 
@@ -62,3 +58,4 @@ Un arma de filo perforante base hace 1d6 + FUE daño perforante y tiene alcance 
 - **Duelo:** El arma es más larga y fina, haciéndola ideal para duelos de espadas. Un arma de duelo aumenta su daño base a 1d8 y recibe la habilidad [*choque de espadas*](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-iii) a rango III, pero no podrá usarse en tu mano secundaria. Aun así, puedes obtener atributos en combate con dos armas si tienes un arma de duelo en tu mano principal y un arma sutil en tu mano secundaria.
 - **Cuchilla:**· El arma está dotada de varias cuchillas con las que puede infligir letales cortes. 1d6 + FUE daño cortante. +1 nivel heridas si el objetivo tiene 4 o menos DEF, pero apuntar cuesta +1 acción
 - **Retráctil:** El arma tiene la capacidad de encogerse con gran velocidad, permitiéndote mantenerla oculta y atacar cuándo tu objetivo menos se lo espera. Un arma retráctil es indetectable a primera vista y con ella podrás realizar ataques sorpresa, aunque tu objetivo te vea. Si atacas a una persona que te esté vigilando esta tendrá la oportunidad de tirar percepción o averiguar intenciones contra tus dados de ataque, dándose cuenta de tu arma si tiene éxito en el tiro. Como consecuencia de su versatilidad las armas retráctiles son muy frágiles y se romperán inmediatamente si las empleas para detener un arma que no tenga la característica *sutil*, *ligera* o *duelo*.
+- **Aguijón:** Tu cuerpo tiene un aguijón capaz de perforar a tus enemigos de la misma manera que una daga. Un aguijón infligirá 1d6 + FUE daño al impactar (1d8 si eres grande y 1d10 si eres gigante) y recibes *golpe destructor* a rango III pero dicha habilidad se aplicará a *ataque apuntado* en lugar de *ataque poderoso.* Solo puede usar esta arma si tus características fisiológicas lo permiten.
