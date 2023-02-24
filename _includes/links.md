@@ -10,6 +10,5 @@
 [Ira]: {% link rules/Rangos/Combate/ira.md %}
 [Reflejos]: {% link rules/Rangos/Combate/reflejos.md %}
 [religión]: {% link rules/Rangos/Religion/index.md %}
-[ventaja]:  {% link rules/Reglas principales/reglas de combate.md %}#factores-adicionales
 [herida permanente leve]: {% link rules/Reglas principales/Heridas permanentes.md %}
 [armadura]: {% link rules/Rangos/Combate/armaduras.md %}
