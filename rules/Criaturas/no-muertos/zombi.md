@@ -1,14 +1,13 @@
 ---
 title: Zombi
-categoria: No-muerto
-image: zombi.png
+
 ---
 
 Un zombi es el cadáver animado de una criatura muerta, creado frecuentemente con magia oscura o siniestros experimentos capaces de levantar a los muertos. Al tratarse de poco más que cadáveres animados los zombis carecen de inteligencia y sin nadie para comandarles no hacen más que merodear buscando a seres vivos para devorar. Estos seres atacan hasta morir, careciendo de todo instinto de autopreservación.
 
 # Estadísticas
 
-## Zombi (nivel 1)
+## Zombi humano (nivel 1)
 
 **PV:** 9		**VT:** 7 		**DEF:** 4 (resistencia física 2)
 
@@ -34,11 +33,11 @@ Un zombi es el cadáver animado de una criatura muerta, creado frecuentemente co
 
 ------
 
-**Garras** (2 acciones): +4, 1d6 + 3 daño cortante.
+**Garras** (2 acciones): +4, 1d6 + 4 daño cortante.
 
 **Agarre** (2 acciones): +4, el objetivo está *agarrado* (+4 para escapar)
 
-**Devorar** (3 acciones): Un objetivo agarrado sufre 2d6 + 3 daño perforante y *sangrado*
+**Devorar** (3 acciones): Un objetivo agarrado sufre 2d6 + 4 daño perforante y *sangrado*
 
 ****
 
@@ -70,7 +69,7 @@ Un zombi abotargado es especialmente grande comparado con uno normal, recibiendo
 
 ## Zombi infectado
 
-Los zombis infectados son portadores de una mortal enfermedad capaz de convertir a sus víctimas en no-muertos como ellos. Los zombis de esta categoría son extremadamente peligrosos ya que si no se controlan adecuadamente pueden provocar una mortal epidemia de zombis.Un zombi infectado recibe las siguientes habilidades:
+Los zombis infectados son portadores de una mortal enfermedad capaz de convertir a sus víctimas en no-muertos como ellos. Los zombis de esta categoría son extremadamente peligrosos ya que si no se controlan adecuadamente pueden provocar una mortal epidemia de zombis. Un zombi infectado recibe las siguientes habilidades:
 
 **Plaga de la no-muerte:** Cada vez que un zombi infectado hiera a una criatura viva esta deberá tener éxito en un tiro de salvación de CON frente a una dificultad +5 (esto equivale a la CON del zombi + 2) o quedará infectada con la *plaga de la no-muerte*, una enfermedad física que mientras permanezca activa impedirá la sanación del afectado. Si una criatura con esta plaga llega a morir reanimará como un zombi infectado.
 
