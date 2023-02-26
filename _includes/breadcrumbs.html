@@ -1,15 +1,20 @@
 <nav aria-label="breadcrumb">
 <ol class="breadcrumb">
 	{% assign dirs = page.path | split: "/" %}
+	{% assign lastitem = dirs | last %}
+
+	{% assign dirs = dirs | reverse | shift | reverse %}
+	{% if lastitem == "index.md" %}
+		{% assign dirs = dirs | reverse | shift | reverse %}
+	{% endif %}
 	{% assign currentdir = "" %}
+
 	{% for item in dirs %}
 		{% assign currentdir = currentdir | append: item | append: "/" %}
 		{% assign currentpath = currentdir | append: "index.md" %}
+	
+		{% include_cached breadcrumb-item.html currentpath=currentpath %}
 		
-		{% assign d = site.pages | where_exp: "p", "p.path == currentpath" | first %}
-		{% if d and d.path != page.path %}
-		<li class="breadcrumb-item"><a href="{{ d.url }}">{{ d.title }}</a></li>
-		{% endif %}
 	{% endfor %}
 	<li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
 </ol>
