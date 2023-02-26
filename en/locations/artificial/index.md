@@ -1,0 +1,5 @@
+---
+title: Artificial
+layout: summary
+---
+
