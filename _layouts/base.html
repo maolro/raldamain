@@ -34,9 +34,9 @@
 </head>
 
 <body id="page-top" class="{% if page.layout == site.landing_template %}landing {% endif %}">
-  {% include_cached nav.html %}
+  {% include_cached nav.html lang=page.lang%}
   {{ content }}
-  {% include_cached footer.html %}
+  {% include_cached footer.html lang=page.lang %}
 
   <!-- Bootstrap core JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

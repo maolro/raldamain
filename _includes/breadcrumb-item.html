@@ -1,0 +1,4 @@
+{% assign d = site.pages | where_exp: "p", "p.path == include.currentpath" | first %}
+{% if d %}
+   <li class="breadcrumb-item"><a href="{{ d.url }}">{{ d.title }}</a></li>
+{% endif %}
