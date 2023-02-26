@@ -1,5 +1,7 @@
 ---
 title: Zombi
+layout: character
+image: zombi.png
 ---
 
 Un zombi es el cadáver animado de una criatura muerta, creado frecuentemente con magia oscura o siniestros experimentos capaces de levantar a los muertos. Al tratarse de poco más que cadáveres animados los zombis carecen de inteligencia y sin nadie para comandarles no hacen más que merodear buscando a seres vivos para devorar. Estos seres atacan hasta morir, careciendo de todo instinto de autopreservación.
