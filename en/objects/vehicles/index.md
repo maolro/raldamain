@@ -1,0 +1,5 @@
+---
+title: Vehicles
+layout: summary
+---
+

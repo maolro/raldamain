@@ -1,0 +1,5 @@
+---
+title: Creatures
+layout: summary
+---
+
