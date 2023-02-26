@@ -1,5 +1,6 @@
 ---
 title: Esqueleto
+layout: character
 ---
 
 Los esqueletos son creaciones oscuras formadas a partir de los huesos de los muertos y animadas por magia oscura. Estos seres existen para obedecer a su creador y a diferencia de los zombis aún conservan un mínimo de inteligencia que tenían cuando aún estaban vivos, permitiéndoles usar armas y emplear razonamientos básicos a la hora de combatir. Debido a su fácil creación los nigromantes especialmente poderosos los usan como soldados rasos para sus grandes ejércitos, siendo así la columna vertebral de toda legión de no-muertos.
