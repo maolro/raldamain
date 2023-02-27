@@ -1,3 +1,7 @@
+---
+title: Yinamu
+---
+
 ### **Yinamu: God of Wisdom and Knowledge**
 
 Personality: Guru who knows many things and seeks to enlighten humanity. Often uses parables and proverbs when speaking. 

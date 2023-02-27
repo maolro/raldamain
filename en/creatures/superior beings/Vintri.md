@@ -1,3 +1,7 @@
+---
+title
+---
+
 ### **Vintri: God of The Moon, Culture, The Arts, Pleasure**
 
 Personality: Gregarious but prone to emotional outbursts. Musically inclined and adventurous.

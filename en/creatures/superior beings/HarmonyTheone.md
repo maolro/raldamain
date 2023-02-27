@@ -1,3 +1,7 @@
+---
+title: Theone
+---
+
 ### **Harmony/Theone: Leader of the Gods, Goddess of Balance**
 
 Personality: 

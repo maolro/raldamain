@@ -1,3 +1,7 @@
+---
+title: Nanami
+---
+
 ### **Nanami: Goddess of the Sea, Trade and Travellers**
 
 Personality: Mysterious and manipulative. Knows the right words to use when interacting with others to get what she wants. She prefers to remain neutral in conflicts between gods and occasionally plays both sides. Enjoys making deals with humans.

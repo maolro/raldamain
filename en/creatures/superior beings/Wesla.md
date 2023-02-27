@@ -1,3 +1,7 @@
+---
+title: Wesl
+---
+
 ### **Wesla: Goddess of nature and creator of the Spirit World**
 
 Personality: A loner who prefers being in nature than with other people. Very humble, down-to-earth, and loves taking care of animals.
