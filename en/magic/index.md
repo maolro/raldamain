@@ -1,6 +1,6 @@
 ---
 title: Magic
 layout: summary
-menuorde
+menuorder: 5
 ---
 
