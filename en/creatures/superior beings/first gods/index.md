@@ -1,5 +1,5 @@
 ---
 title: First Gods
-layout: summar
+layout: summary
 ---
 
