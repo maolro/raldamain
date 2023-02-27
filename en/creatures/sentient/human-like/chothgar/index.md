@@ -8,3 +8,5 @@ layout: summary
 # Biology
 
 # Distribution
+
+# Chothgar characters

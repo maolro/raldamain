@@ -1,0 +1,4 @@
+---
+title: Shinri regio
+---
+
