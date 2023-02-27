@@ -1,3 +1,7 @@
+---
+title: Cosmagus
+---
+
 ### **Cosmagus: God of Magic, Mischief, Luck**
 
 Personality: Witty prankster who enjoys doing tricks and playing around with humanity and other gods.

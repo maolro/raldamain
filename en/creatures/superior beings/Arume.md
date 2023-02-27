@@ -1,3 +1,7 @@
+---
+title: Arume
+---
+
 ### **Arume: God of War and The Forge**
 
 Personality: A show-off who always tries to display his strength to other gods. Enjoys seeing humans fight and sees it as great entertainment. He uses conflicts to test out the items he makes in the forge.

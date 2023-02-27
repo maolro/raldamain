@@ -1,3 +1,7 @@
+---
+title: Antaka
+---
+
 ### **Antaka: Governor of The Dead, Creator of the Shadow realm**
 
 Personality: (ISTJ) Calm, dry and cynical. Believes that death is inevitable for everyone and humans must accept once their time is up. Loves listening to the stories of the dead and learning about their lives.

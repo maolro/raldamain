@@ -1,3 +1,7 @@
+---
+title: Aisha
+---
+
 ### **Aisha: Goddess of The Sun, Love, Beauty, Healing**
 
 Personality: Sweet and caring to others. Always wants to help out those in need. Prefers compromise and negotiations to fighting.
