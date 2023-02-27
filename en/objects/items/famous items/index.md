@@ -1,5 +1,5 @@
 ---
-title: Famou
+title: Famous items
 layout: summary
 ---
 
