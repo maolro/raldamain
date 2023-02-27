@@ -1,4 +1,4 @@
 ---
-title: Shinri regio
+title: Shinri region
 ---
 

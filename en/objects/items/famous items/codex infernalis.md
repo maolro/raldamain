@@ -1,6 +1,5 @@
 ---
 title: Codex infernalis
-layout: character
 creator: Sek-Tebos
 type: Tome
 renowned-owners: Basileos
