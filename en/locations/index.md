@@ -1,6 +1,6 @@
 ---
 title: Locations
 layout: summary
-menuorder: 3
+menuorder: 4
 ---
 

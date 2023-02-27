@@ -1,6 +1,6 @@
 ---
 title: Creatures
 layout: summary
-menuorder: 1
+menuorder: 2
 ---
 

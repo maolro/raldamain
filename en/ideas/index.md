@@ -1,6 +1,6 @@
 ---
 title: Ideas
 layout: summary
-menuorder: 2
+menuorder: 3
 ---
 
