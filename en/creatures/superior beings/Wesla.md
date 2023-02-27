@@ -1,5 +1,5 @@
 ---
-title: Wesl
+title: Wesla
 ---
 
 ### **Wesla: Goddess of nature and creator of the Spirit World**
