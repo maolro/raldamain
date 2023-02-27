@@ -8,7 +8,7 @@ renowned-owners: Meisodh the Traveler, Arshalani royal family
 abilities: Its edge is unbreakable and supernaturally sharp. The bearer also gains mastery of earth and metal elemental magic.
 ---
 
-The pride and shame of the Chothgar people, the legendary blade Ida Karun was forged and wielded by their prophet Meisodh and became a powerful symbol of their faith. Rumored to be unbreakable and capable of slicing through anything, this weapon is believed to be one of the most powerful swords in existence matched only by Edge of Justice and Dramako Kinara. While the blade is one of the holiest artifacts of the Chothgar people, it was stolen from them long ago by the Arshalani empire after their prophet's death and remains in their hands to this day, thus filling the Chothgar with shame and humiliation.
+The pride and shame of the Chothgar people, the legendary blade Ida Karun was forged and wielded by their prophet Meisodh and became a powerful symbol of their faith. Rumored to be unbreakable and capable of slicing through anything, this weapon is believed to be one of the most powerful swords in existence matched only by Edge of Justice and Dramako Kinara. While the blade is one of the holiest artifacts of the Chothgar people, it was stolen from them long ago by the [Arshalani empire](https://raldamain.com/en/ideas/nations/arshalan.html) after their prophet's death and remains in their hands to this day, thus filling the Chothgar with shame and humiliation.
 
 # History
 
