@@ -1,6 +1,6 @@
 ---
 title: Chothgar
-layout: index
+layout: summary
 ---
 
 

@@ -1,5 +1,5 @@
 ---
 title: Chothgar characters
-layout: inde
+layout: summary
 ---
 
