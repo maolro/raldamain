@@ -1,0 +1,4 @@
+---
+title: Ashura curse
+---
+

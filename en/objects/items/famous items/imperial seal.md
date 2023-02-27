@@ -1,4 +1,4 @@
 ---
-title: Imperial Se
+title: Imperial Seal
 ---
 
