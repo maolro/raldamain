@@ -1,5 +1,5 @@
 ---
 title: Human-like creatures
-layout: index
+layout: summary
 ---
 
