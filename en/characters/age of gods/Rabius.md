@@ -1,5 +1,5 @@
 ---
-title: Rabiu
+title: Rabius
 ---
 
 # **Rabius**
