@@ -1,5 +1,4 @@
 ---
-layout: character
 title: Ida Karun
 image: idakarun.jpg
 creator: Meisodh the Traveler
