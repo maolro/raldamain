@@ -1,4 +1,4 @@
 ---
-title: C
+title: Cup of wrath
 ---
 
