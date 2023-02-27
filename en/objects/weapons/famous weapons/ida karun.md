@@ -1,6 +1,7 @@
 ---
-title: Edge of Justice
+title: Ida Karun
 layout: character
+image: idakarun.jpg
 creator: Meisodh the Traveler
 type: Sword
 renowned-owners: Meisodh the Traveler, Arshalani royal family
