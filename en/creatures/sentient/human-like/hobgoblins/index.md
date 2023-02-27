@@ -1,0 +1,5 @@
+---
+title: Hobgoblins
+layout: summary
+---
+
