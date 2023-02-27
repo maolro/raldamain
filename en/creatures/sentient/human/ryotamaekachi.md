@@ -1,4 +1,4 @@
 ---
-title: Ryo 
+title: Ryo Tamaekachi
 ---
 
