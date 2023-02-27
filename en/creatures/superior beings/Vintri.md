@@ -1,5 +1,5 @@
 ---
-title
+title: Vintri
 ---
 
 ### **Vintri: God of The Moon, Culture, The Arts, Pleasure**
