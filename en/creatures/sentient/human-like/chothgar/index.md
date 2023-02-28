@@ -1,6 +1,5 @@
 ---
 title: Chothgar
-layout: summary
 ---
 
 # History

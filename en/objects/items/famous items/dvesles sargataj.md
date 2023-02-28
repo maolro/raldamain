@@ -1,6 +1,5 @@
 ---
 title: Dveseles Sargataj
-layout: character
 creator: Godhunter Syd
 type: Medallion
 renowned-owners: Godhunter Syd

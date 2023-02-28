@@ -1,6 +1,5 @@
 ---
 title: Edge of Justice
-layout: character
 creator: Ithanatron
 type: Sword
 renowned-owners: Mekhatim

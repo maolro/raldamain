@@ -1,5 +1,4 @@
 ---
 title: Elves
-layout: summary
 ---
 
