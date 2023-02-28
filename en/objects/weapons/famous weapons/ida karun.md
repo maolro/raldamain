@@ -1,10 +1,13 @@
 ---
 title: Ida Karun
 image: idakarun.jpg
-creator: Meisodh the Traveler
-type: Sword
-renowned-owners: Meisodh the Traveler, Arshalani royal family
-abilities: Its edge is unbreakable and supernaturally sharp. The bearer also gains mastery of earth and metal elemental magic.
+sections:
+ - type: infobox.html
+   content:
+    "Creator": Meisodh the Traveler
+    "Type": Sword
+    "Renowned owners": Meisodh the Traveler, Arshalani royal family
+    "Abilities": Its edge is unbreakable and supernaturally sharp. The bearer also gains mastery of earth and metal elemental magic.
 ---
 
 The pride and shame of the [Chothgar](https://raldamain.com/en/creatures/sentient/human-like/chothgar/) people, the legendary blade Ida Karun was forged and wielded by their prophet [Meisodh](https://raldamain.com/en/characters/age%20of%20striu/meisodh.html) and became a powerful symbol of their faith. Rumored to be unbreakable and capable of slicing through anything, this weapon is believed to be one of the most powerful swords in existence matched only by [Edge of Justice](https://raldamain.com/en/objects/weapons/famous%20weapons/edge%20of%20justice.html) and [Dramako Kinara](https://raldamain.com/en/objects/weapons/famous%20weapons/dramako%20kinara.html). While the blade is one of the holiest artifacts of the Chothgar people, it was stolen from them long ago by the [Arshalani empire](https://raldamain.com/en/ideas/nations/arshalan.html) after their prophet's death and remains in their hands to this day, thus filling the Chothgar with shame and humiliation.
