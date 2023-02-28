@@ -1,5 +1,4 @@
 ---
 title: Hobgoblins
-layout: summary
 ---
 

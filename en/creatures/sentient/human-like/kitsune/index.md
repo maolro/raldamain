@@ -1,6 +1,5 @@
 ---
 title: Kitsune
-layout: summary
 ---
 
 # History
