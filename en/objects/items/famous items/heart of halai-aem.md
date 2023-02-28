@@ -23,4 +23,4 @@ These defenses were put to the test when the [new Incarnate](https://raldamain.c
 
 # Abilities
 
-The Heart of Halai-Aem grants whoever touches it mastery over the earth beyond that of even the greatest earth elementalist. Those attuned with the heart can create devastating earthquakes or even move mountains, but so far its full power has not been unlocked as this artifact has remained sealed away for most of its existence. In addition, the land around the artifact will be unusually fertile even in harsh conditions and earth spirits will manifest with greater f
+The Heart of Halai-Aem grants whoever touches it mastery over the earth beyond that of even the greatest earth elementalist. Those attuned with the heart can create devastating earthquakes or even move mountains, but so far its full power has not been unlocked as this artifact has remained sealed away for most of its existence. In addition, the land around the artifact will be unusually fertile even in harsh conditions and earth spirits will manifest with greater frequency.
