@@ -1,0 +1,15 @@
+<div class="float-lg-right card ml-2 mb-1" style="max-width:400px;width:100%" >
+    {% if page.image %}
+    <img class="card-img-top" style="max-width:100%;height:auto;" src="{{ page.image }}">
+    {% endif %}
+    <div class="card-body">
+      <h4 class="card-title">{{ page.title }}</h4>
+      <div class="card-text">
+          <dl class="row">
+     {% for item in section.content  %}
+            <dt class="col-sm-6">{{ item[0] }}</dt> <dd class="col-sm-6">{{ item[1] }}</dd> 
+     {% endfor %}
+          </dl>
+      </div>
+    </div>
+  </div>
