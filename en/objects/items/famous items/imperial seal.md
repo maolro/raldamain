@@ -1,5 +1,12 @@
 ---
 title: Imperial Seal
+sections:
+ - type: infobox.html
+   content:
+    "Creator": First Incarnate
+    "Type": Stone
+    "Renowned owners": First Incarnate, all Seishin-Gumi leaders, Kenamaru, the Oni
+    "Abilities": Ability to command all major spirits and control of the boundary between the Spirit and Material planes. 
 ---
 
 A symbol of the separation between both worlds and the authority of the Shinri Emperor, the Imperial Seal is a great stone tablet inscribed with the peace agreement accepted by the [First Incarnate](https://raldamain.com/en/characters/age%20of%20succesion/firstincarnate.html) and the [Primal Spirits of Shinri](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri/). But this tablet holds more than mere words as the ancient spirits gave part of their essence to honor their deal and entrust the Imperial Seal with power over both worlds. As long as the Imperial Seal remains in good hands [Shinri](https://raldamain.com/en/locations/natural/shinri%20region.html) will remain in balance, but if someone would use its power for immoral purposes the land itself would be threatened with a new era of chaos and suffering.
@@ -12,7 +19,7 @@ While the First Incarnate's intentions were noble he did not anticipate that the
 
 The seal would remain in Seishin-Gumi control even after the collapse of the Shinri state and throughout the age of warlords, ensuring that the border between both realms would remain closed no matter who ruled Shinri. Thanks to the power of the seal they managed to contain the fallout from the Oni's attempt in 4010 to open rifts between both realms, protecting the land from destruction. Nevertheless, thanks to this incident the Oni discovered the existence of the Imperial Seal and plotted for many years to recover it from the Seishin-Gumi. 
 
-The Oni had a stroke of luck thanks to the conflict between the Seishin-Gumi and the Incarnate's companions, an event that not only caused the deaths of many high-ranking members of the organization but also distracted them long enough so the Oni could slowly increase their power and influence in Shinri. Once the Incarnate's companions reached the inner sanctum of the Seishin-Gumi and killed the order's leader Kenamaru the Oni snuck in and stole the Imperial Seal, achieving their long-awaited victory. Now the barrier between both worlds is compromised and some speculate a new Spirit war is coming as the once-sealed spirits will seek revenge on humanity.
+The Oni had a stroke of luck thanks to the conflict between the Seishin-Gumi and the Incarnate's companions, an event that not only caused the deaths of many high-ranking members of the organization but also distracted them long enough so the Oni could slowly increase their power and influence in Shinri. Once the Incarnate's companions reached the inner sanctum of the Seishin-Gumi and killed the order's leader [Kenamaru](https://raldamain.com/en/characters/age%20of%20heresy/kenamaru.html) the Oni snuck in and stole the Imperial Seal, achieving their long-awaited victory. Now the barrier between both worlds is compromised and some speculate a new Spirit war is coming as the once-sealed spirits will seek revenge on humanity.
 
 
 

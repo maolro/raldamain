@@ -1,10 +1,13 @@
 ---
 title: Kage to Hitari
 image: kagetohitari.jpg
-creator: Emma-sama and Yamma-sama
-type: Sword
-renowned-owners: Fuku Sareta, Ryo Tamaekachi, Nejiro Norowa, Shizen Shi
-abilities: The blade can adopt two forms, either a sword of shining light that can heal its user or a sword of darkness that can curse others. Its bearer can also command lesser spirits and the sword will fight on its own if its bearer gains affinity with it.
+sections:
+ - type: infobox.html
+   content:
+    "Creator": Emma-sama and Yamma-sama
+    "Type": Sword
+    "Renowned owners": Fuku Sareta, Ryo Tamaekachi, Nejiro Norowa, Shizen Shi
+    "Abilities": The blade can adopt two forms, either a sword of shining light that can heal its user or a sword of darkness that can curse others. Its bearer can also command lesser spirits and the sword will fight on its own if its bearer gains affinity with it.
 ---
 
 Kage to Hitari is a legendary sword from [Shinri](https://raldamain.com/en/locations/natural/shinri%20region.html) blessed by both [Yamma-Sama](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri/yammasama.html), [spirit](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri) of light and motherhood, and [Emma-sama](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri/emmasama.html), spirit of darkness and calamity. Because of this strange creation the blade is both a weapon of life and death, capable of healing those it touches or inflicting incurable wounds. Due to this weapon's great power it is said that whoever bears it will be the strongest warrior in all of Shinri, a reputation it rightfully earned since many of the land's greatest legends such as [Ryo Tamaekachi](https://raldamain.com/en/characters/age%20of%20heresy/ryotamaekachi.html), [Nejiro Norowa](https://raldamain.com/en/characters/age%20of%20heresy/nejiro.html) and [Shizen Shi](https://raldamain.com/en/characters/age%20of%20heresy/shizen.html) are counted among its bearers.
