@@ -50,7 +50,7 @@ Some members of the Incarnate's court proposed to change the capital to Klonum c
 
 (FUTURE EVENTS WILL BE ADDED AS THE SHINRI CAMPAIGN PROGRESSES)
 
-## Shinri alliance (until 4112)
+## Shinri alliance (until 4100)
 
 In the era of the [Shinri alliance](https://raldamain.com/en/ideas/nations/shinri_alliance.html) the old capital of Homay had lost some of its past greatness but still remained as one of the nation's most important cities. Homay's beautiful temples and monuments would draw scores of tourists and pilgrims to the city, making it Shinri's second most visited city after Klonum. It also retained parts of its traditional form of government as part of Incarnate Seigo's policies with the Spiritual Custodian remaining as the ceremonial leader of the city. The new Incarnate [Yara](https://raldamain.com/en/characters/age%20of%20imperialism/yara.html) visited the city in 4098 as part of her grand tour through Shinri, drawing a massive crowd of people who wished to meet Seigo's reincarnation.
 
