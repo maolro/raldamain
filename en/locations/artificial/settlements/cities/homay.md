@@ -4,9 +4,13 @@ image: homay.jpg
 sections:
  - type: infobox.html
    content:
+    "Founder": The First Incarnate
     "Founding date": 3246
     "Country": Shinri empire
-    "Region": Southwest Shinri
+    "Region":Homay province, Southwest Shinri
+    "Importance": National capital (3246-40XX), Cultural capital (40XX onwards)
+    "Cultures": Shinri
+    "Religions": Spirit faith, Harmonious path
     "Historical owners": Shinri state (3246-3919), Independent city-state (3919-4022), occupied by Hidetsu Takenaga (4022), Seishin-Gumi (4022-4026), Shinri alliance (4026-4113), Shinri empire (4113 onwards)
 ---
 
