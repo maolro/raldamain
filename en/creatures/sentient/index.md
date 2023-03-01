@@ -1,5 +1,5 @@
 ---
-title: Sentient creatures
+title: Sapient creatures
 layout: summary
 ---
 

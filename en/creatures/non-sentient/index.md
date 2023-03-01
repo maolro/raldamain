@@ -1,5 +1,5 @@
 ---
-title: Non-sentient
+title: Non-sapient creatures
 layout: summary
 ---
 
