@@ -1,4 +1,4 @@
 ---
-title: The
+title: The Spirit World
 ---
 

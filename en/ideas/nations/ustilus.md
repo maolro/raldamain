@@ -1,9 +1,14 @@
 ---
 title: Ustilian Empire
-capital: Feyn's throne
-gobernment: Absolute monarchy (3497-4005), Constitutional monarchy (4005-4010), Absolute monarchy (4010 onwards)
-founding-date: 3497
-image: 
+sections:
+ - type: infobox.html
+   content:
+    "Capital": Feyn's Throne
+    "Founding date": 3497
+    "Government": Absolute monarchy (3497-4005), Constitutional monarchy (4005-4010), Absolute monarchy (4010 onwards)
+    "Climates": Mediterranean, hot desert, tropical monsoon and semi-arid.
+    "Cultures": Ustilian (majority), Temash, Jaddite, Kratian,, Hobgoblin, Iskarian (minorities)
+    "Religion": Feynism (3497-4010), Cult of the Inheritor (4010 onwards)
 ---
 
 "Ustilus represents the hopes and dreams of humanity, a shining beacon of what humans can achieve once they work together. Our nation has spread civilization and progress throughout the continent and beyond, bringing millions under the banner of Feyn and vastly improving their standard of living. But, at the same time, our name is also associated with violence and conquest, and we must not forget that many of the people who we rule see us not as benevolent overlords but as brutal tyrants. If we will move forward, even in these troubled times, we must remember what made Ustilus great and right the wrongs of our past. Because if we remain blind any longer and refuse to face reality we will face an inevitable collapse and once we fall history will judge us harshly." 

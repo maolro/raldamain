@@ -23,7 +23,7 @@ Puedes emplear tu inteligencia para defenderte de efectos mentales y de miedo.
 - **Ampliado:** Aumenta el área de efecto del hechizo por un paso.
 - **Empoderado:** Puedes hacer dos veces el tiro del daño del hechizo y quedarte con el mejor resultado.
 
-**Uso de objetos mágico:**Eres capaz de identificar las propiedades de objetos mágicos y emplear su reserva de chi como si fuese tuya. Empleando 1 AP podrás recuperar chi igual al nivel del objeto mágico objetivo a costa de anular sus efectos durante el resto del combate.
+**Uso de objetos mágico:** Eres capaz de identificar las propiedades de objetos mágicos y emplear su reserva de chi como si fuese tuya. Empleando 1 AP podrás recuperar chi igual al nivel del objeto mágico objetivo a costa de anular sus efectos durante el resto del combate.
 
 ## Rango III 
 

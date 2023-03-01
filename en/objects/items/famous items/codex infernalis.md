@@ -1,5 +1,6 @@
 ---
 title: Codex infernalis
+image: codexinfernalis.jpg
 sections:
  - type: infobox.html
    content:
