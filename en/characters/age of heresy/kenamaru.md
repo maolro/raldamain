@@ -1,4 +1,4 @@
 ---
-title: Kenamaru
+title: Kenamaru Wakashido
 ---
 

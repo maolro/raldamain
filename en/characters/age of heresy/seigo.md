@@ -1,4 +1,4 @@
 ---
-title: Seigo
+title: Seigo Kyoji
 ---
 
