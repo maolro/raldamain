@@ -1,0 +1,4 @@
+---
+title: Renshin Kyoji
+---
+
