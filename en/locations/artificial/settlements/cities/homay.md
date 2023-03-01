@@ -1,5 +1,6 @@
 ---
 title: Homay
+image: homay.jpg
 sections:
  - type: infobox.html
    content:
@@ -37,7 +38,7 @@ Throughout the war the Seishin-Gumi lost many powerful members in their fight ag
 
 ## Unification of Shinri and spirit crisis (4026-)
 
-With the Seishin-Gumi defeated Renshin abdicated his throne to Seigo not long after, accepting that he was not fit to rule and retiring from politics to pursue his personal goals. The new emperor would officialy proclaim the unification of Shinri, creating a new centralized and modern state abandoning the worst practices of feudalism. Due to the looming threat posed by the Oni the new Incarnate chose to maintain the Seishin-Gumi, renaming the organization as the Guardians of Harmony and placing his trusted ally Shizen as its leader. He also named his mentor Vashir as the city's new Spiritual custodian, an unpopular decision among the traditional clergy as Vashir was the leader of a new religious movement named the Harmonious Path which preached the supremacy of the Incarnate over the land's primal spirits.
+With the Seishin-Gumi defeated Renshin abdicated his throne to Seigo not long after, accepting that he was not fit to rule and retiring from politics to pursue his personal goals. The new emperor would officialy proclaim the unification of Shinri, creating a new centralized and modern state abandoning the worst practices of feudalism. Due to the looming threat posed by the Oni the new Incarnate chose to maintain the Seishin-Gumi, renaming the organization as the Guardians of Harmony and placing his trusted ally [Shizen](https://raldamain.com/en/characters/age%20of%20heresy/shizen.html) as its leader. He also named his mentor [Vashir](https://raldamain.com/en/characters/age%20of%20heresy/vashir.html) as the city's new Spiritual custodian, an unpopular decision among the traditional clergy as Vashir was the leader of a new religious movement named the Harmonious Path which preached the supremacy of the Incarnate over the land's primal spirits.
 
 While the Incarnate's policies were popular with the merchant and lower classes, the old nobility strongly rejected them feeling it was a betrayal of Shinri traditions. To quell their protests the Incarnate placed those willing to compromise in government positions and sent his secret intelligence forces led by Keito to purge those who posed a threat to his rule. The Homay court was the main focus of these actions and not long after his ascension all of the city's most powerful nobles were either dead, exiled or in service of the Incarnate. 
 
