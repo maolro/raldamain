@@ -1,5 +1,6 @@
 ---
 title: Imperial Seal
+image: imperialseal.jpg
 sections:
  - type: infobox.html
    content:
