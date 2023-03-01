@@ -1,5 +1,6 @@
 ---
 title: Heart of Halai-Aem
+image: halaiaemheart.jpg
 sections:
  - type: infobox.html
    content:

@@ -6,7 +6,7 @@ sections:
     "Creator": Shade
     "Type": Liquid
     "Renowned owners": Cult of Shade
-    "Abilities": Those who gaze into the cup's three eyes will face a painful death. It is a vital component in powerful dark rituals such . 
+    "Abilities": Those who gaze into the cup's three eyes will face a painful death. It is a vital component in powerful dark rituals such as the path to lichdom.
 ---
 
 The death of a god is a harrowing and age-changing event, often bringing devastating consequences to the mortal world. Even though a god may die parts of their essence might still live on, but to the dissapointment of their former followers they are often corrupted by the trauma of the god's untimely demise. One of the most well-known examples is are the Cups of Wrath, deadly artifacts that contain the blood of the [First God](https://raldamain.com/en/creatures/superior%20beings/first%20gods/) [Antaka](https://raldamain.com/en/creatures/superior%20beings/first%20gods/Antaka.html), lord of the undreworld. The liquid inside these cups is among the deadliest materials in the world as the dead god's blood is imbued with their boundless hatred and despair, killing all who would dare even gaze at it.
