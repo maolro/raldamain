@@ -7,7 +7,7 @@ sections:
     "Founder": The First Incarnate
     "Founding date": 3246
     "Country": Shinri empire
-    "Region":Homay province, Southwest Shinri
+    "Region": Homay province, Southwest Shinri
     "Importance": National capital (3246-40XX), Cultural capital (40XX onwards)
     "Cultures": Shinri
     "Religions": Spirit faith, Harmonious path
