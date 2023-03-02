@@ -4,7 +4,7 @@ sections:
  - type: infobox.html
    content:
     "Founder": First empire
-    "Founding date": 
+    "Founding date": 3592
     "Country": Mazarine republic
     "Region": Western Mazarin
     "Importance": National capital
