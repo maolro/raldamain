@@ -11,7 +11,7 @@ sections:
     "Importance": Regional capital (3246-3919), Clan capital (3919-4022), Regional capital (4022 onwards)
     "Cultures": Shinri
     "Religions": Spirit faith (with Suzakushin as the local patron)
-    "Historical owners": Shinri state (mid 31st century-3919), Hibotoru domain (3919-4026), Shinri alliance (4026-4113), Shinri empire (4113 onwards)
+    "Historical owners": Shinri state (mid 31st century-3919), Hibotoru domain (3919-4027), Shinri alliance (4027-4113), Shinri empire (4113 onwards)
 ---
 
 The traditional seat of the [Hibotoru clan](https://raldamain.com/en/ideas/factions/hibotoruclan.html), Iwakashi is the most prosperous city in northwestern Shinri thanks to its strategic position in the Shinri-Iskarian trade route. This city has been destroyed and rebuilt multiple times throughout its history because of the many wars and natural disasters that ravaged the region, caused in part because of the city's proximity to the tempramental fire spirit [Suzakushin's](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri/suzakus.html) domain. Just as the phoenix rises again from the ashes the city has always managed to survive and return to its former strength even after great calamities.
@@ -36,7 +36,7 @@ This incident also caused even more destructive consequences for the city as the
 
 The city gained national attention in 4022 when Incarnate [Renshin](https://raldamain.com/en/characters/age%20of%20heresy/renshin.html) was hosted by lord Hibotoru and the clan officially announced it would back his claim to unify all Shinri, starting a war against the rival [Takenaga clan](https://raldamain.com/en/ideas/factions/takenagaclan.html) who wished the same goal. Iwakashi would become the den of many plots and intrigue by members of both great clans as the Takenaga sent spies to try to turn lord Hibotoru's vassals against him. The city would face a brief period of chaos after Jiro died in battle against the Takenaga as factions close to the old lord and friendly to lord [Hidetsu Takenaga](https://raldamain.com/en/characters/age%20of%20heresy/hidetsutakenaga.html) fought in the streets for control. This abruptly ended with Takenaga's assassination and the ascention of Jiro's son [Kaimon](https://raldamain.com/en/characters/age%20of%20heresy/kaimon.html) to the position of clan leader, returning peace once more to the clan.
 
-## War of two incarnates (4025-4026)
+## War of two incarnates (4025-4027)
 
 Kaimon was renowned in Hibotoru clan history as a peacemaker, helping bring an end to the age of warlords and marrying [Megura](https://raldamain.com/en/characters/age%20of%20heresy/megura.html), a member of the Katamashi clan, to bring peace between both ancient enemies. He strongly collaborated with the elven mage [Edenor](https://raldamain.com/en/characters/age%20of%20heresy/edenor.html) to bring prosperity and development to the clan, funding the construction of Shinri's first chi foundry. The [restored Shikurai clan](https://raldamain.com/en/ideas/factions/newshikuraiclan.html) also established itself near the city, counting with support from the city's governor lord [Yoshiko Imada](https://raldamain.com/en/characters/age%20of%20heresy/yoshikoimada.html). They would act as the clan's secret police force, fighting against the [Akatora-Tai](https://raldamain.com/en/ideas/factions/akatoratai.html) criminal organization who attempted extend their influence into the city.
 
@@ -44,7 +44,7 @@ Iwakashi's internal politics would face a powerful change when the [Seishin-Gumi
 
 To defeat the numerically superior Hibotoru armies the true Incarnate's faction hatched a secret plot with the Oni to open Suzakushin's spirit gate once more, unleashing the fire spirit's wrath on Hibotoru lands. Suzakushin's rage was immense, ravaging crops and burning large parts of Iwakashi itself. While the spirit was eventually contained by Kenamaru and the Seishin-Gumi, the destruction it caused would trigger a massive revolt against Kaimon incited by Seigo's agents, who claimed Suzakushin's wrath was due to the Hibotoru clan fighting against the true Incarnate. Kaimon's wife Megura, a close ally of Edenor, supported the rebels and they quickly took control of the clan, pulling it out from the war and pushing it to join the Shinri alliance.
 
-## Shinri alliance and empire (4026 onwards)
+## Shinri alliance and empire (4027 onwards)
 
 With Seigo´s ascension and the creation of the Shinri alliance the city of Iwakashi recived large amounts of investment from Edenor's business, the Mirai corporation, for rebuilding and developing the city. He also lobbied the government to reestablish the trade routes with Iskaria create new trade agreements with the elves to make Iwakashi once more into a vital trade nexus. 
 
