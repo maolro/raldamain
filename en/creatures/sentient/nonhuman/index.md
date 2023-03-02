@@ -1,5 +1,4 @@
 ---
 title: Non-human creatures
-layout: summar
+layout: summary
 ---
-

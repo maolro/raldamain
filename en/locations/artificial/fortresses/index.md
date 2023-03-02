@@ -4,4 +4,3 @@ layout: summary
 
 ---
 
-fortmortgamry: 
