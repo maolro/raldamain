@@ -14,7 +14,7 @@ sections:
     "Historical owners": Shinri state (mid 31st century-3919), Hibotoru domain (3919-4027), Shinri alliance (4027-4113), Shinri empire (4113 onwards)
 ---
 
-The traditional seat of the [Hibotoru clan](https://raldamain.com/en/ideas/factions/hibotoruclan.html), Iwakashi is the most prosperous city in northwestern Shinri thanks to its strategic position in the Shinri-Iskarian trade route. This city has been destroyed and rebuilt multiple times throughout its history because of the many wars and natural disasters that ravaged the region, caused in part because of the city's proximity to the tempramental fire spirit [Suzakushin's](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri/suzakushin.html) domain. Just as the phoenix rises again from the ashes the city has always managed to survive and return to its former strength even after great calamities.
+The traditional seat of the [Hibotoru clan](https://raldamain.com/en/ideas/factions/hibotoruclan.html), Iwakashi is the most prosperous city in northwestern [Shinri](https://raldamain.com/en/locations/natural/shinri%20region.html) thanks to its strategic position in the Shinri-[Iskarian](https://raldamain.com/en/ideas/nations/iskaria.html) trade route. This city has been destroyed and rebuilt multiple times throughout its history because of the many wars and natural disasters that ravaged the region, caused in part because of the city's proximity to the tempramental fire spirit [Suzakushin's](https://raldamain.com/en/creatures/superior%20beings/primal%20spirits/shinri/suzakushin.html) domain. Just as the phoenix rises again from the ashes the city has always managed to survive and return to its former strength even after great calamities.
 
 # History
 
@@ -46,7 +46,7 @@ To defeat the numerically superior Hibotoru armies the true Incarnate's faction 
 
 ## Shinri alliance and empire (4027 onwards)
 
-With Seigo´s ascension and the creation of the Shinri alliance the city of Iwakashi recived large amounts of investment from Edenor's business, the Mirai corporation, for rebuilding and developing the city. He also lobbied the government to reestablish the trade routes with Iskaria create new trade agreements with the elves to make Iwakashi once more into a vital trade nexus. 
+With Seigo´s ascension and the creation of the Shinri alliance the city of Iwakashi recived large amounts of investment from Edenor's business, the [Mirai corporation](https://raldamain.com/en/ideas/factions/), for rebuilding and developing the city. He also lobbied the government to reestablish the trade routes with Iskaria create new trade agreements with the elves to make Iwakashi once more into a vital trade nexus. 
 
 Now that Shinri is mining vast amounts of raw chi the trade routes will be extremely lucrative for all those involved and Iskaria has also given large loans to the Hibotoru clan to assist with the city's reconstruction. It waits to be seen if these policies will be successful but without a doubt they are putting Iwakashi on the right track.
 
