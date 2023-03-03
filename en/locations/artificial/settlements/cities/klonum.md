@@ -1,5 +1,6 @@
 ---
 title: Klonum
+image: klonum.jpg
 sections:
  - type: infobox.html
    content:
