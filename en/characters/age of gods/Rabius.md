@@ -1,5 +1,6 @@
 ---
 title: Rabius
+image: rabius.jpg
 ---
 
 # **Rabius**
