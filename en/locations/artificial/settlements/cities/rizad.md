@@ -15,3 +15,25 @@ sections:
 ---
 
 A city of three cultures, Rizad sits on the [Continental canal](https://raldamain.com/en/locations/natural/continental_canal.html) as the crossroads between two continents and two seas. Its strategically important position guarantees that whoever controls it will be in charge of all trade between the Inner sea and the great western ocean, making it coveted by the continent's great empires. Due to its long history of changing hands the city has developed a unique culture of its own blending traditions of both north and south. The city boasts a diverse population mostly composed of [Ustilians](https://raldamain.com/en/ideas/cultures/ustilian.html), [Temash](https://raldamain.com/en/ideas/cultures/temash.html) and [Jaddites](https://raldamain.com/en/ideas/cultures/jaddite.html) whose relationship has historically fluctuated between harmony and ethnic strife. Because of its complicated history and unpredictable future the city many have defined it as a place of organized chaos where anything can happen and changes strike when they are least expected. 
+
+# History
+
+## Origin
+
+## Temash control and southern holy wars 
+
+## Ustilian empire (37th century - 4000)
+
+## Feyn's death and Rizad revolution (4000-4004)
+
+## Restored Ustilian empire
+
+# Geography
+
+
+
+# Culture
+
+
+
+# Economy
