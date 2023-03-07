@@ -1,5 +1,6 @@
 ---
 title: Ustilian Empire
+image: ustilusflagold.jpg
 sections:
  - type: infobox.html
    content:
