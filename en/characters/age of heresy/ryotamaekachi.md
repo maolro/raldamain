@@ -9,7 +9,7 @@ sections:
     "Occupation": Noble and swordfighter
     "Alignment": Lawful good
     "Religion": Spirit faith with Yamma-Sama as her patron
-    "Alleigance": Tamaekachi clan
+    "Allegiance": Tamaekachi clan
     "Offices held": Tamaekachi clan leader (4001-4015)
 ---
 

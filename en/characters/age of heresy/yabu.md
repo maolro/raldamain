@@ -9,7 +9,7 @@ sections:
     "Occupation": Wanderer (former soldier and politician)
     "Alignment": True neutral
     "Religion": None
-    "Alleigance": None (formerly Ustilus empire, Arshalani empire and Oni syndicate)
+    "Allegiance": None (formerly Ustilus empire, Arshalani empire and Oni syndicate)
     "Offices held": Crow brotherhood member (4001-4004), Governor of Thalos (4004-4008, 4009-4010)
 ---
 

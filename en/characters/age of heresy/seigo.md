@@ -10,7 +10,7 @@ sections:
     "Occupation": Ruler and holy figure
     "Alignment": Neutral good
     "Religion": Spirit faith
-    "Alleigance": Shinri alliance
+    "Allegiance": Shinri alliance
     "Offices held": Emperor of Shinri (4027 onwards)
 ---
 
