@@ -18,6 +18,8 @@ A city of three cultures, Rizad sits on the [Continental canal](https://raldamai
 
 # History
 
+
+
 ## Origin
 
 ## Temash control and southern holy wars 

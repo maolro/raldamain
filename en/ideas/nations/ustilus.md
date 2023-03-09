@@ -16,7 +16,7 @@ sections:
 
 ​	-Ileria, prime minister of Ustilus under the Constitutional monarch Theodora
 
-[intro]
+The Ustilian empire was a transcontinental state which ruled vast lands in [Raldamain](https://raldamain.com/en/locations/continents/raldamain.html) from the southern deserts of Tamashkhan to the northern mountains in Kratoi. Claiming to be the successor state of the [First empire](https://raldamain.com/en/ideas/nations/first_empire.html), Ustilus fought massive wars with Mazarin and [Arshalan](https://raldamain.com/en/ideas/nations/arshalan.html) for supremacy over the continent and achieved its greatest extent and power in the 40th century. The empire's founding and rise sparked an era of cultºural renaissance and technological development which began the Age of Triumph, creating a new golden age not seen in Raldamain since the First empire. Ustilian supremacy lasted until the year 4000 as the sudden disappearance of [Feyn](https://raldamain.com/en/creatures/superior%20beings/feyn.html) threw the empire into nearly a decade of turmoil which caused territorial losses and rapid political changes. This would last until the year 4010 when the rise to power of a new emperor and proclamation of the cult of the Inheritor as the new national religion forever changed the Ustilian empire and massively reformed its institutions. Now Ustilus is at a crossroads where it is no longer the strongest nation in the Continent and only fate will decide if it can rise again to its former strength or fall even more towards ruin.
 
 # History
 
@@ -76,8 +76,6 @@ During his final days the emperor began to receive visions from Feyn which revea
 
 Under the rule of Emperor Itakamendros I, the Empire of Ustilus expanded north and south, reconquering Pradjati from the Tamash and Kratoi from the Mazarines in two brilliant campaigns. In order to gain the loyalty of the conquered populations, the emperor allowed them to keep their traditions and granted them a small measure of autonomy.
 
-- Dyuring Akrodios' reign the Church of Feyn returned to its former power and the order of the Knights of Ustilus was reformed. The knights fought a prolonged campaign to exterminate all heretics in Ustilus and managed to wipe out most of the cult of Sek-Tebos. The cult's remnants plotted for the next centuries 
-- The Ustilian empire expanded towards the north and south, reconquering Pradjati from the Temash and Kratoi from the Mazarines in two brilliant campaigns waged by emperor Itakamendros I. To gain the loyalty of the conquered population the emperor allowed them to keep their traditions and gain a small measure of autonomy,
 - Ustilus' ambitions were cut short with the rise of the Arshalani empire in the east and the ascension of king Alden I in Mazarin, an intelligent and ambitious monarch who reformed the mazarine kingdom after the loss of Kratoi and made it into a dangerous foe once more. These three nations would spend the next century competing for supremacy in Raldamain.
 - During its expansion Ustilus encountered the Hobgoblin Legion and fought many wars to conquer their lands. In one of these conflicts the Legion managed to reach the capital and was forced to retreat after a prolonged siege.
 - In the year 3898 emperor Variager the cruel rose to power. During his reign he finally subjugated the Legion after waging a genocidal campaign against them. The legion lands were split into the province of Thalos and the protectorate of Iskaria in order to weaken legion authority and most of the hobgoblin population was enslaved.
@@ -86,30 +84,59 @@ Under the rule of Emperor Itakamendros I, the Empire of Ustilus expanded north a
 - Due to the extreme cost of the wars Lysandros was forced to make concessions to the nobility to gain their support, granting them more independence and creating the Ustilian Parliament, a state organ that would advise the emperor and create laws subject to the emperor's approval.
 - Lysandros' son Stepanos III went even further, delegating most of his power to the parliament and increasing representation to many of the new regions. During his reign Ustilus established colonies in Shinri and incorporated the elven lands as protectorates.
 - With the discovery of the magical properties of chi a new boom in technology and magical development began. The church adamantly opposed arcane magic and many of Ustilus' greatest minds were persecuted and imprisoned. 
-- While Stepanos' daughter Theodora was opposed to these policies, the knights had become very powerful since Variager's time and the emperor was too weak to oppose them. She formed a secret organization known as the Pact  which gathered forbidden knowledge and protected dissidents from persecution.
+- While Stepanos' daughter Theodora was opposed to these policies, the knights had become very powerful since Variager's time and the emperor was too weak to oppose them. She formed a secret organization known as the Pact which gathered forbidden knowledge and protected dissidents from persecution.
 
 ## The death of Feyn and the era of Heresy  (4000 - 4010)
 
 - On the day when Akrodios' prophecy would be fulfilled the great god Feyn suddenly disappeared, throwing the empire in turmoil and severely weakening the power of the church and the knights. Parliament was split between two political factions, the Reformists who wanted change for Ustilus and the Imperialists who wanted to preserve it.
+
 - Mazarin used this chance to try and invade Kratoi but failed miserably thanks to the actions of a legendary military unit known as the Brotherhood of the Crow. While the ustilian army was distracted, the Pact now led by the rogue knight Laicon of Dairov began to organize rebel groups in the Temash and hobgoblin lands.
+
 - Laicon attempted to cause a temash revolt in the lands of Pradjati but he was caught by the Ustilian authorities. His execution at the hands of the knights made him into a martyr and triggered a great revolution which threatened to tear apart the empire.
+
 - In response to the rebellion the knights of Ustilus led by Grand Master Abshalom declared a state of emergency and closed down Parliament, an action described by many prominent nobles as a bloodless coup. As the highest authority of the empire the knights began a massive military campaign to crush all rebel movements. 
+
 - After two years of war the Ustilians managed to defeat the hobgoblin rebels, but victory came at a great economic cost. To maintain control they had no choice but to install a new government formed by hobgoblins allied with Ustilus which to the Imperialists' anger were granted more autonomy and seats in the Parliament.
+
 - During a military expedition to defeat Temash rebels in the south grand master Abshalom perished in battle. Authority passed to Fileon, a popular knight and military hero, who continued the campaign and successfully defeated the Temash.
+
 - Once Fileon became the new grand master he ended the state of emergency and returned power to the Parliament. Not long after the old emperor Stepanos III died of old age and the throne passed to his daughter Theodora, a longtime supporter of the Reformists. The new empress named the Reformist leader Ileria as prime minister
+
 - Fileon changed many of the order's rules such as the prohibition to marry non-humans and made it subordinate to the State instead of the church. To show his commitment to these new ideals he married prime minister Ileria, who was his longtime secret lover.
+
 - With Theodora's support Ileria passed the empire's first Constitution, which granted freedom of religion to Ustilian citizens and ending enslavement of non-humans. It also granted vast autonomy to the regions and led them choose their own representatives for Parliament, which was now the empire's most powerful authority.
+
 - A succession war within Arshalan in 4006 caused a massive flow of refugees into Ustilus. These refugees were forced into slums where they lived in terrible conditions and suffered religious discrimination at the hands of the authorities, since they followed the Celestial Host instead of Feyn.
+
 - The Imperialists saw this as an opportunity to cause tensions with Arshalan to make the Reformist government seem weak and incapable of ruling. In the Imperialist-ruled province of Elyon a massacre unfolded against the Arshalani minority, who were accused of being enemy spies.
+
 - In response to the massacre the Arshalani monarch Chandrial, a military genius and devoted follower of the Celestial Host, declared war on Ustilus using the justification of protecting the Arshalani minorities within Ustilus. He took the city of Elyon in a surprise attack and dealt a powerful blow to the Ustilian government.
+
 - After the fall of Elyon, Ileria resigned after pressure from the army and the war against Arshalan began. The Ustilians   were unprepared and incapable of facing the much stronger Arshalani army, which counted with divine blessings and a brilliant leader at its head. In the end they were pushed back all the way to Feyn's throne where a new siege unfolded.
+
 - While the Arshalani army moved towards the capital Chadrial began to convert many ustilians to his faith, proclaiming that the Celestial Host were the true successors of Feyn. The Temash and the hobgoblins revolted once again, seeing Arshalan as their liberator from Ustilian oppression.
-- 
 
-## The empire reborn under Fileon (4010 - 4114)
+  
 
-- 
+## The empire born under Fileon (4010 - 4114)
+
+
 
 ## Reign of Crassus (4114 - 4130)
 
-- 
+
+
+# Geography
+
+
+
+# Politics
+
+
+
+# Economy
+
+
+
+# Culture
+
