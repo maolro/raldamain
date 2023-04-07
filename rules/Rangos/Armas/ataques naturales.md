@@ -9,15 +9,17 @@ A diferencia de otros maestros de armas tu te has decantado por utilizar tu prop
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de ataque hechos con artes marciales. Aumenta tu daño base a 1d4 + FUE.
+Añade tu rango a todos tus tiros de ataque hechos con artes marciales. Aumenta tu daño base a 1d4 + FUE. Puedes obtener este rango de manera gratuita si tienes 4 o más FUE o DES y 4 niveles de talento en atletismo.
 
 **Golpes en secuencia** (X AP): Haz x ataques contra el mismo objetivo el cuál tirará solo una vez y deberá usar el mismo resultado. Cada ataque más allá del primero tiene +1 al tiro y +1 daño por cada ataque anterior. La secuencia se detendrá si eres interrumpido.
 
 **Técnica de combate** (1 AP): Haz un ataque con tu cuerpo que al impactar tropezará, empujará o *enredará* al objetivo.
 
-**Golpe** (1 AP): Haz un ataque con tu cuerpo que inflige 1d4 + FUE daño contundente.
+**Golpe** (1 AP, Físico, Cuerpo a cuerpo): Haz un ataque con tu cuerpo que inflige 1d4 + FUE daño contundente.
 
 ## Rango II
+
+Puedes obtener este rango de manera gratuita si tienes 6 o más FUE o DES y 5 niveles de talento en atletismo.
 
 **Golpe aturdidor** (1 AP): Al impactar con tu siguiente ataque el objetivo deberá tener éxito en un tiro de CON frente a tu FUE o queda *aturdido* durante una ronda.
 
