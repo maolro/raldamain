@@ -13,19 +13,19 @@ Añade tu rango a todos tus tiros relacionados con armas a distancia. Puedes obt
 
 **Combate furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
 
-**Apuntar ataque (1 AP):** Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
+**Apuntar ataque** (1 AP): Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
 
-**Ataque con arma** (2 acciones): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
+**Ataque con arma** (2 acciones, A distancia, Físico): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
 
 ## Rango II
 
 Tus ataques con armas a distancia cuestan 1 AP. Puedes obtener este rango de manera gratuita si tienes 6 o más SAB y 5 niveles de talento en percepción.
 
-**Finta (1 AP):** El objetivo tendrá que defenderse de tu ataque empleando su sabiduría, siendo incapaz de defenderse contra tu próximo ataque si fracasa en su tiro.
+**Finta** (1 AP): El objetivo tendrá que defenderse de tu ataque empleando su sabiduría, siendo incapaz de defenderse contra tu próximo ataque si fracasa en su tiro.
 
-**Desarme (1 AP):** El objetivo tendrá que defenderse de tu ataque empleando su parada, quedando desarmado de un arma ligera que empuñe en caso de fracasar. Si el objetivo lleva un arma de categoría mas pesada tendrá que tener una herida permanente en su brazo para que funcione la habilidad.
+**Desarme** (1 AP): El objetivo tendrá que defenderse de tu ataque empleando su parada, quedando desarmado de un arma ligera que empuñe en caso de fracasar. Si el objetivo lleva un arma de categoría mas pesada tendrá que tener una herida permanente en su brazo para que funcione la habilidad.
 
-**Truco de flecha (1 AP):** Dirige un ataque hacia un objeto pequeño que lleve su objetivo, provocando que este caiga al suelo o se rompa si el ataque impacta.
+**Truco de flecha** (1 AP): Dirige un ataque hacia un objeto pequeño que lleve su objetivo, provocando que este caiga al suelo o se rompa si el ataque impacta.
 
 ## Rango III 
 

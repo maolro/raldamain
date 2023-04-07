@@ -9,7 +9,7 @@ Has decidido valerte de las armas que llevan utilizando los caballeros y guerrer
 
 ## Rango I
 
-Para desbloquear este rango de manera gratuita manenecesitas 5 FUE y cuatro niveles de talento en destrozar.
+Puedes obtener este rango de manera gratuita si tienes 5 o más FUE y cuatro niveles de talento en destrozar.
 
 **Combate salvaje:** Recibes 1 AP adicional a costa de obtener desventaja en todos tus tiros defensivos durante una ronda.
 
@@ -23,15 +23,13 @@ Una *parada* puede usarse también para detener determinados ataques mágicos si
 
 ## Rango II
 
-Para desbloquear este rango de manera gratuita manenecesitas 6 FUE y cinco niveles de talento en destrozar.
+Puedes obtener este rango de manera gratuita si tienes 6 o más FUE y 5 niveles de talento en destrozar.
 
 **Gran corte** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas adyacentes a ti que también estén adyacentes entre sí.
 
 **Tajo feroz:** Aumenta el nivel de todas las heridas permanentes por un paso provocadas contra enemigos con 4 o menos defensa.
 
 ## Rango III
-
-Para desbloquear este rango necesitas 4 FUE y tres niveles de talento en destrozar.
 
 *Atacar con arma* cuesta -1 AP
 
@@ -41,15 +39,11 @@ Para desbloquear este rango necesitas 4 FUE y tres niveles de talento en destroz
 
 ## Rango IV
 
-Para desbloquear este rango necesitas 5 FUE y cuatro niveles de talento en destrozar.
-
 **Torbellino de acero:** Al hacer la habilidad *Gran corte* atacas a todos los enemigos adyacentes a ti con tu arma.
 
 **Romper escudos:** Si un enemigo se defiende de un *ataque poderoso* con un escudo reduce su valor defensivo por 1 tengas éxito o no. Si se defiende con magia le haces la mitad de daño en caso de que falles el ataque.
 
 ## Rango V
-
-Para desbloquear este rango necesitas 6 FUE y cinco niveles de talento en destrozar.
 
 **Tajo cercenador:** Al realizar un ataque poderoso aumenta el nivel de todas las heridas permanentes provocadas por un paso.
 
