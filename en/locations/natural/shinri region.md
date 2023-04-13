@@ -2,4 +2,3 @@
 title: Shinri region
 ---
 
-The 
