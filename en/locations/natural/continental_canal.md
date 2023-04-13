@@ -1,4 +1,4 @@
 ---
-title: Contin
+title: Continental canal
 ---
 

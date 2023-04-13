@@ -26,7 +26,7 @@ Aumenta tu resistencia al daño físico por 1
 
 **Alas del dragón**. Al entrar en *furia del dragón* te crece un par de alas escamosas semejantes a las de un dragón, otorgándote así velocidad de vuelo 1. Estas te otorgan también ventaja en todos tus tiros de esquiva y de ataque contra criaturas incapaces de volar.
 
-**Armadura de escamas**: Tu cuerpo está cubierto de una sólida armadura natural que te otorga inmunidad a heridas medias o inferiores además de armadura natural y PV adicionales iguales a tu rango – 1. (1 chi) Recuperas Vitalidad igual a tu rango + 2.
+**Armadura de escamas**: Tu cuerpo está cubierto de una sólida armadura natural que te otorga inmunidad a heridas medias o inferiores además de armadura natural y PV adicionales iguales a tu rango – 1. (1 chi, 1/turno) Recuperas Vitalidad igual a tu rango + 2.
 
 ## Rango IV
 
