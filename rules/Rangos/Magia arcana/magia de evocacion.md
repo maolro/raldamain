@@ -52,3 +52,17 @@ Aprendes dos técnicas de rango IV pertenecientes a magias elementales. *Rayo de
 Aprendes tres técnicas de rango V pertenecientes a magias elementales. 
 
 **Aniquilación mágica** (3 AP y 5 chi, Arcano, Área, Energía): Liberas una cantidad masiva de energía mágica en un radio grande centrado en ti, arrasando con todo a tu paso. Este ataque inflige 3d10 + INT daño fuerza y al reducir PV matará instantáneamente a todas las criaturas sin resistencia mágica. Este ataque arrasará con todas las estructuras simples que haya en el camino del ataque y afectará el área con *irradiación de chi*.
+
+# Rangos míticos
+
+## Rango I
+
+## Rango II
+
+## Rango III
+
+## Rango IV
+
+## Rango V
+
+## Rango VI

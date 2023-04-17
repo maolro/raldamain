@@ -65,11 +65,35 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 ## Rango II
 
+**Prisa:** Al activar esta habilidad otorgarás una ronda adicional con tres acciones al afectado. Dicha ronda tendrá iniciativa igual a la iniciativa que haya obtenido este en el combate -10. Esto sustituirá al efecto anterior de *prisa*.
+
+**Ralentizar:** El aura de ralentizado hace que los afectados se muevan tan lento que no podrán ni alcanzarte. Cada vez que una criatura entre en el aura o empiece su turno en ella deberá tener éxito en un tiro de salvación de FUE frente a tu magia arcana o no podrá moverse ni tomar acciones. Puede repetir este tiro tantas veces como desee gastando una acción como si estuviera *agarrado*. Adicionalmente, mientras esta habilidad permanezca activa eres inmune a ataques a distancia.
+
+**Desplazamiento:** Te encuentras siempre parcialmente desplazado, permitiéndote usar esta habilidad cualquier cantidad de veces por ronda para evitar ataques. No obstante hay un intervalo de tiempo donde aún puedes ser atacado, impidiedo así que puedas usar esta habilidad dos veces seguidas. Si eres afectado exitosamente con *eliminar magia* no podrás desplazarte durante una ronda.
+
 ## Rango III
+
+**Visión:** Recibirás visiones mucho más profundas sobre el pasado, presente y futuro que te permiten vaticinar tu propio destino. Al usar esta habilidad el máster te mostrará información mucho más secreta y relevante además que puede escoger que veas tu propia muerte. Esto te otorga una habilidad similar a *conocer el destino* perteneciente a Ascendencia akhásica.
+
+**Predecir movimiento:** Eres capaz de gastar dos cargas de premonición para tener éxito automático en un tiro de tu elección tanto de ataque, defensa o habilidad. No podrás usar esta habilidad para impactar a criaturas míticas o defenderte de efectos relacionados con ellas.
+
+**Doble temporal:** Tus dobles temporales están parcialmente vivos, actuando de la misma manera que la habilidad *clones sombríos*. De igual manera estos tendrán la mitad de nivel que tú y solo 1 PV.
 
 ## Rango IV
 
+**Revertir el tiempo:** 
+
+**Estasis:** 
+
+**Ataque retardado:** 
+
 ## Rango V
+
+**Visión futura:** 
+
+**Parar el tiempo:** 
+
+**Brecha temporal:** 
 
 ## Rango VI
 

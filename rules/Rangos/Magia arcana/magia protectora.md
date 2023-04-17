@@ -50,3 +50,17 @@ Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Ra
 ## Rango VI
 
 **Sello extraplanario** (6 AP y 5 chi): Absorbes una criatura extraplanaria que tengas ligada para obtener parte de su poder. Debes hacer un último tiro contra el nivel de la criatura + 3 y en caso de éxito obtienes todas las habilidades pasivas, resistencias, inmunidades, movimientos y acciones que tenga, las cuales puedes usar como si fueran tuyas. Puedes también aumentar una de tus estadísticas y su respectivo limitador por 1 por cada mejora que tenga (máximo +3). Solo puedes tener una única criatura ligada de esta manera y en determinadas situaciones la criatura puede intentar liberarse, forzándote a repetir el tiro de magia protectora y si fracasas esta se liberará y dejará de estar ligada además de infligiéndote los efectos de *disyunción* e *invertir chi*.
+
+# Rangos míticos
+
+## Rango I
+
+## Rango II
+
+## Rango III
+
+## Rango IV
+
+## Rango V
+
+## Rango VI

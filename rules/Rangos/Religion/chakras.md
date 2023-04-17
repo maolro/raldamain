@@ -40,18 +40,22 @@ title: Chakras
 
 ## Rango V
 
-**Maestría del camino marcial:**
+**Maestría del camino marcial:** El poder de los chakras convierte tu cuerpo en una máquina de matar. Si tienes 8 o más chakras abiertos a la vez tus puños contarán como si tuvieran la mejora *material superior* y pueden romper piedra y hasta metal. Además eres capaz de fintar y realizar ataques sorpresa a criaturas con *esquiva asombrosa superior* o *premonición* (no funcionará contra sus versiones míticas).
 
-**Chakra del alma** (Chakra 2): El primer chakra externo a tu cuerpo, el chakra del alma representa la conexión de tu alma con el más allá. Al activar este chakra recibirás resistencia mágica igual a tu rango + 1 además de la capacidad de usar las siguientes técnicas:
+**Chakra del alma** (Chakra 2): El primer chakra externo a tu cuerpo, el chakra del alma representa la conexión de tu alma con el más allá. Para activar esta habilidad debes haber realizado previamente un complejo ritual donde tu mente viaje por las dimensiones superiores del conocimiento. Al activar este chakra recibirás resistencia mágica igual a tu rango + 1 además de la capacidad de usar las siguientes técnicas:
 
-- **Ejército de los sacen** (1/combate): Llamas a miles de almas representando a otros maestros del chakra para asistirte en un ataque 
+- **Ejército de los ascendidos** (1/combate): Llamas a miles de almas representando a otros maestros del chakra para asistirte en un ataque. Haz un efecto de *secuencia de ataques* contra un objetivo que no se detendrá aunque falles un ataque, incrementando el tiro de ataque y daño de cada ataque sucesivo por +1.
+- **Sobrecarga de velocidad** (1/ronda): Tu cuerpo se mueve con una velocidad sobrenatural, permitiéndote realizar un segundo turno con 3 AP a -10 iniciativa. Al usar esta habilidad sufrirás una herida grave en una parte aleatoria del cuerpo al principio de tu siguiente turno.
+- **Sobrecarga de fuerza** (1/ronda): Concentras tu fuerza en un único ataque devastador. Si impactas con tu siguiente ataque tiras el doble de dados de daño y provocarás efectos adicionales como si redujeras los PV de tu objetivo. Al usar esta habilidad duplica el daño recibido por los chakras esta ronda.
 
-**Chakra del espacio** (Chakra 2):
+**Chakra del espacio** (Chakra 2): El chakra del espacio conecta tu mente con energías cósmicas a escala universal. Para despertar este chakra debes encontrarte en un lugar exterior para que la energía del espacio pueda fluir por tu cuerpo. Al activarla recibes la habiliad de detener ataques mágicos usando tu tiro de parada de artes marciales. Tus ataques también aumentan su alcance a medio y una vez por combate puedes hacer la siguiente técnica:
+
+- **Puño estelar** (1/combate): Centras la energía de las estrellas en un único puñetazo, aumentando enormemente el daño que provoca. Al impactar con tu siguiente ataque tira el doble de dados de daño y provoca efectos equivalentes como si obtuvieras un golpe crítico.
 
 ## Rango VI
 
-**Aura de perfección**:
+**Aura de perfección**: Al alcanzar la cúspide del poder la energía de los chakras se manifestará en forma de varias palmas de fuerza que te protegerán del daño. Si tienes 10 o más chakras activos a la vez estarás siempre en *posición defensiva* y una vez por ronda puedes detener un ataque de manera automática a costa de sufrir 4 daño obligatorio.
 
-**Chakra de la armonía** (Chakra 2): 
+**Chakra de la armonía** (Chakra 2): El chakra del armonía es uno de los chakras exteriores y representa el equilibrio entre energía positiva y negativa a escala universal. Al activar este chakra tus tres estadísticas físicas o mentales se igualarán a la más alta que tengas en cada categoría. Debes escoger una de las dos opciones al activar esta habilidad y para cambiar sufrirás 2 daño obligatorio. Para despertar este chakra debes ser un maestro iluminado de tu orden, abandonando todo deseo y atadura material.
 
-**Chakra universal** (Chakra 10):
+**Chakra universal** (Chakra 10): El más poderoso de los doce chakras, el chakra universal representa el poder del mismo Fuego Celestial. Hacer que la energía de este chakra fluya por tu cuerpo te otorgará temporalmente poderes casidivinos a costa de provocarte graves daños. Cada ronda que permanezca activo este chakra recibirás un bonificador +10 a todos tus tiros de ataque, defensa y daño. Además, una vez por ronda puedes hacer que tu ataque golpee con tal velocidad que ignora una barrera no-mítica a costa que la ronda siguiente sufrirás una herida leve que no puede sanarse. Para despertar este chakra debes tener abiertas al menos ocho chakras. 
