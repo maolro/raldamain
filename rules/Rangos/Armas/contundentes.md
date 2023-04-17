@@ -7,7 +7,7 @@ Has decidido ir a por una de las armas mas resistentes y destructivas que hay, d
 
 ## Rango I
 
-Añade tu rango para todos tus tiros de ataque con un arma contundente.
+Añade tu rango para todos tus tiros de ataque con un arma contundente. Puedes obtener este rango de manera gratuita si tienes 5 o más FUE y cuatro niveles de talento en destrozar.
 
 **Combate salvaje:** Recibes 1 AP adicional a costa de obtener desventaja en todos tus tiros defensivos durante una ronda.
 
@@ -19,7 +19,7 @@ Añade tu rango para todos tus tiros de ataque con un arma contundente.
 
 ## Rango II
 
-Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destrozar. Puedes desbloquearlo de manera gratuita si cumples también los requisitos del rango V.
+Puedes obtener este rango de manera gratuita si tienes 6 o más FUE y cinco niveles de talento en destrozar.
 
 **Golpe aturdidor:** Al impactar con un ataque poderoso el objetivo deberá tirar CON frente a tu FUE o será *aturdido* durante una ronda.
 
@@ -35,15 +35,11 @@ Para desbloquear este rango necesitas 3 FUE y dos niveles de talento en destroza
 
 ## Rango IV
 
-Para desbloquear este rango necesitas 5 FUE y cuatro niveles de talento en destrozar.
-
 **Romper escudos:** Si un enemigo se defiende de un *ataque poderoso* con un escudo reduce su valor defensivo por 1 tengas éxito o no. Si se defiende con magia le haces la mitad de daño en caso de que falles el ataque.
 
 **Giro quebrantador:** Al hacer un ataque con *maza oscilante* afectas a todas las criaturas adyacentes a ti y aquellas que impactes deberán tirar FUE contra tu tiro de arma o caerán al suelo.
 
 ## Rango V 
-
-Para desbloquear este rango necesitas 6 FUE y cinco niveles de talento en destrozar.
 
 **Golpes en secuencia** (X AP): Haz x ataques contra el mismo objetivo el cuál tirará solo una vez y deberá usar el mismo resultado. Cada ataque más allá del primero tiene +1 al tiro y +1 daño por cada ataque anterior. La secuencia se detendrá si eres interrumpido.
 

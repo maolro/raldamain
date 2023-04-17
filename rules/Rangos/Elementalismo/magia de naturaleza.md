@@ -67,7 +67,7 @@ Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 A
 - Al estar hecho de plantas el elemental provocará el efecto de *crecimiento acelerado* en un radio corto centrado en él. No obstante el daño cortante y fuego atravesará su resistencia al ser más débil frente a ellos. Si el invocador lo escoge puede anular estas características.
 - Aumenta dos de tus movimientos por 1 y tienes visión a ciegas en un radio medio. 
 - Puedes hacer ataques a través del coloso, los cuales simularán un ataque de un arma a rango V. El arma escogida tirará un dado de daño adicional. Puedes también usar las habilidades *planta devoradora de chi*, *prisión de madera*, *espina parasítica* y *enmarañar* sin la necesidad de gastar chi.
-- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico vuelve a reduce tu tiro por un punto adicional.
+- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico o un ataque de área con radio superior vuelve a reduce tu tiro por un punto adicional para deternerlo.
 
 # Elemental de planta
 

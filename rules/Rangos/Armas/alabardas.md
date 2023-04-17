@@ -15,7 +15,7 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas. Pued
 
 **Proteger aliado**: Puedes proteger a un aliado usando tu tiro defensivo de alabarda si te encuentras en *preparación contra cargas* o *posición defensiva*
 
-**Ataque con arma** (2 acciones): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de FUE y tu rango.
+**Ataque con arma** (2 acciones, Cuerpo a cuerpo, Físic): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de FUE y tu rango.
 
 **Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma. No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes lo cual te otorga desventaja en tus tiros defensivos contra sus ataques.
 

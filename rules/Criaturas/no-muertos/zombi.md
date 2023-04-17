@@ -34,19 +34,21 @@ Un zombi es el cadáver animado de una criatura muerta, creado frecuentemente co
 
 ------
 
-**Garras** (2 acciones): +4, 1d6 + 4 daño cortante.
+**Garras** (2 acciones, Físico, Cuerpo a cuerpo): +4, 1d6 + 4 daño cortante.
 
-**Agarre** (2 acciones): +4, el objetivo está *agarrado* (+4 para escapar)
+**Agarre** (2 acciones, Físico, Maniobra): +4, el objetivo está *agarrado* (+4 para escapar)
 
-**Devorar** (3 acciones): Un objetivo agarrado sufre 2d6 + 4 daño perforante y *sangrado*
-
-****
-
-**Parada:** +4 - d6. Solo puede protegerse de ataques cuerpo a cuerpo que no sean cortantes.
+**Devorar** (3 acciones, Físico, Cuerpo a cuerpo): Un objetivo agarrado sufre 2d6 + 4 daño perforante y *sangrado*
 
 ****
 
-**Tácticas:** Al tratarse de una criatura incapaz de pensar las tácticas de un zombi son sencillas de planificar. Hacen poco más que moverse hacia el enemigo más cercano y hacerle un ataque de *agarre* si le quedan acciones. En el caso que tengan un objetivo agarrado le hará un ataque de *devorar*. Son demasiado estúpidos para *desenganchar* y entrar en *posición defensiva*, y siempre tomarán el camino más corto hacia su objetivo sin importarles lo que haya por medio. 
+**Parada** (Cuerpo a cuerpo): +4 - d6. No puede defenderse de ataques cortantes.
+
+****
+
+## Tácticas
+
+Al tratarse de una criatura incapaz de pensar las tácticas de un zombi son sencillas de planificar. Hacen poco más que moverse hacia el enemigo más cercano y hacerle un ataque de *agarre* si le quedan acciones. En el caso que tengan un objetivo agarrado le hará un ataque de *devorar*. Son demasiado estúpidos para *desenganchar* y entrar en *posición defensiva*, y siempre tomarán el camino más corto hacia su objetivo sin importarles lo que haya por medio. 
 
 # Crear un zombi
 
@@ -66,13 +68,13 @@ Un zombi puede crearse a partir de cualquier criatura que una vez estuvo viva ap
 
 ## Zombi abotargado (+1 nivel)
 
-Un zombi abotargado es especialmente grande comparado con uno normal, recibiendo una resistencia superior. Los zombis de esta categoría aumentarán su CON por 1 y aumentarán su Vitalidad por 5 admeás de su DEF por 2. Un zombi abotargado no podrá ser también *rápido*.
+Un zombi abotargado es especialmente grande comparado con uno normal, recibiendo una resistencia superior. Los zombis de esta categoría aumentarán su CON por 1, su Vitalidad por 5 y su DEF por 2. Un zombi abotargado no podrá ser también *rápido*.
 
 ## Zombi infectado
 
 Los zombis infectados son portadores de una mortal enfermedad capaz de convertir a sus víctimas en no-muertos como ellos. Los zombis de esta categoría son extremadamente peligrosos ya que si no se controlan adecuadamente pueden provocar una mortal epidemia de zombis. Un zombi infectado recibe las siguientes habilidades:
 
-**Plaga de la no-muerte:** Cada vez que un zombi infectado hiera a una criatura viva esta deberá tener éxito en un tiro de salvación de CON frente a una dificultad +5 (esto equivale a la CON del zombi + 2) o quedará infectada con la *plaga de la no-muerte*, una enfermedad física que mientras permanezca activa impedirá la sanación del afectado. Si una criatura con esta plaga llega a morir reanimará como un zombi infectado.
+**Plaga de la no-muerte** (Aflicción) Cada vez que un zombi infectado hiera a una criatura viva esta deberá tener éxito en un tiro de salvación de CON frente a una dificultad +5 (esto equivale a la CON del zombi + 2) o quedará infectada con la *plaga de la no-muerte*, una enfermedad física que mientras permanezca activa impedirá la sanación del afectado. Si una criatura con esta plaga llega a morir reanimará como un zombi infectado.
 
 ## Zombi rápido (+1 nivel)
 

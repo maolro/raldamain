@@ -10,7 +10,7 @@ sections:
     "Occupation": Spirit hunter and businessman
     "Alignment": Chaotic neutral
     "Religion": Spirit faith
-    "Alleigance": Guardians of Harmony
+    "Allegiance": Guardians of Harmony
     "Offices held": Leader of the Guardians of Harmony (4027 onwards), Mirai board member (4028)
 ---
 

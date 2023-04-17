@@ -1,6 +1,5 @@
 ---
 ttitle: Fortresses
 layout: summary
-
 ---
 

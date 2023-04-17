@@ -25,7 +25,7 @@ Incrementa tu CON por 1.
 
 Aumenta tu resistencia al daño físico por 1.
 
-**Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Aura abrasadora* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
+**Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadur* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
 
 **Conexión elemental**: Si te encuentras en contacto con la tierra te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto tocando tierra firme recuperas también todos tus PV.
 
@@ -51,4 +51,11 @@ Incrementa tu SAB por 1.
 
 **Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de tierra te obedecen.
 
-**Forma elemental** (3 AP y 3 chi): Invoca un *elemental de tierra* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. Todas las heridas permanentes que sufra la *forma elemental* 
+**Forma elemental** (3 Acciones y 5 chi, Tierra, Concentración): Adoptas la forma de un poderoso elemental de tierra, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 45 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+
+- Recibes inmunidad al veneno, efectos mentales, necrótico y efectos de toque. Tampoco puedes ser afectado por heridas permanentes si te encuentras en esta forma.
+- Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.
+- Aumenta tu regeneración por 2 y la habilidad *georradar* aumenta su alcance a grande. Cada vez que te muevas provocas los efectos de *ola de tierra*, eliminando así todo el terreno difícil y obstáculos en tu camino además que empujas a cada criatura en tu camino (+19 dificultad)
+- Puedes hacer ataques físicos cuerpo a cuerpo con tu forma elemental que tendrán bonificador +18 al tiro e infligirán 1d10 + 13 daño contundente al impactar. Puedes emplear una acción adicional para añadirle los efectos de *ataque poderoso* de la rama de armas contundentes como si tuvieras rango V o los de *abrazo de la tierra*. 
+- Eres capaz de emplear las habilidades *derrumbamiento*, *pilares de la tierra* o *tierra viva* sin la necesidad de gastar chi cada una con bonificador +18 para impactar y +13 al daño. Puedes también usar *muro de piedra* una vez por ronda para defenderte de un ataque sin la necesidad de gastar chi.
+- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico o un ataque de área con radio superior vuelve a reduce tu tiro por un punto adicional para deternerlo.
