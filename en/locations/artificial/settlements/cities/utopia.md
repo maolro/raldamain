@@ -1,5 +1,6 @@
 ---
 title: Utopia
+image: utopia.jpg
 sections:
  - type: infobox.html
    content:
@@ -10,6 +11,6 @@ sections:
     "Importance": National capital
     "Cultures": Akashian, Jaddite, Gahannian, Madanite
     "Religions": Repository of Eternal Knowledge, (minority) Feynism
-    "Historical owners": Utopia (30th-37th cen)
+    "Historical owners": Utopia (30th-37th century)
 ---
 

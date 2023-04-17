@@ -45,7 +45,7 @@ Puedes coger un objeto mediano con *lanzamiento*, aumentando su daño base a 1d8
 
 Puedes coger un objeto mediano con *lanzamiento*, aumentando su daño base a 1d10
 
-**Revertir la gravedad** (3 acciones y 3 chi): Todas las criaturas en un radio corto a un *centro de gravedad* deben tirar FUE contra tu magia gravitatoria o sufren los efectos de *agarre gravitatorio* y puedes elevados 1 paso hacia arriba o estamparlos contra el suelo para infligirles 1d6 daño de caída. Este efecto permanecerá activo mientras te concentres en el *centro de gravedad* y cada ronda puedes repetir el ataque contra los objetivos en el área de efecto. Si el campo de batalla está afectado por *maestría de gravedad* puedes afectar a todas las criaturas en él con esta habilidad.
+**Invertir la gravedad** (3 acciones y 3 chi): Todas las criaturas en un radio corto a un *centro de gravedad* deben tirar FUE contra tu magia gravitatoria o sufren los efectos de *agarre gravitatorio* y puedes elevados 1 paso hacia arriba o estamparlos contra el suelo para infligirles 1d6 daño de caída. Este efecto permanecerá activo mientras te concentres en el *centro de gravedad* y cada ronda puedes repetir el ataque contra los objetivos en el área de efecto. Si el campo de batalla está afectado por *maestría de gravedad* puedes afectar a todas las criaturas en él con esta habilidad.
 
 **Compresión gravitatoria** (1 acciones y 3 chi): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu magia gravitatoria o sufre 2d6 daño físico que ignora defensa y una herida leve además de estar agarrada (funciona igual que *agarre gravitatorio*). Al principio de tu turno todas las criaturas afectadas por esta habilidad sufrirán de nuevo 2d6 daño obligatorio y una herida permanente leve.
 

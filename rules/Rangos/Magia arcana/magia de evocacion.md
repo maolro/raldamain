@@ -9,11 +9,11 @@ Al escoger esta escuela has decidido especializarte en una de las formas mas des
 
 Añade tu rango a todos tus tiros de magia de evocación y aumenta tu reserva de chi por 2 + rango.
 
-**Rayo de energía** (2 AP, Arcano, A distancia, Energía): Haz un ataque con magia de evocación contra un objetivo a distancia media que inflige 1d6 + rango daño fuerza. (1 chi) Afectas a un enemigo adicional
+**Rayo de energía** (2 Acciones, Arcano, A distancia, Energía): Haz un ataque con magia de evocación contra un objetivo a distancia media que inflige 1d6 + rango daño fuerza. (1 chi) Afectas a un enemigo adicional
 
-**Moldear los elementos** (1 AP): Moldeas una cantidad pequeña de cualquier elemento de la naturaleza, lo cual funciona como la habilidad *aerokinesia, pirokinesia, hidrokinesia* o *geokinesia* incluyendo a su coste adicional de chi.
+**Moldear los elementos** (1 Acción, Arcano, Energía): Moldeas una cantidad pequeña de cualquier elemento de la naturaleza, lo cual funciona como la habilidad *aerokinesia, pirokinesia, hidrokinesia* o *geokinesia* incluyendo a su coste adicional de chi.
 
-**Descarga de energía** (2 AP y 1 chi, Arcano, Área, Energía): Ataca a todas las criaturas en un cono pequeño (1d4 + 2 objetivos de media) infligiendo daño igual a tu *rayo de energía* pero modificado por tu INT en lugar del rango. 
+**Descarga de energía** (2 Acciones y 1 chi, Arcano, Área, Energía): Ataca a todas las criaturas en un cono pequeño (1d4 + 2 objetivos de media) infligiendo daño igual a tu *rayo de energía* pero modificado por tu INT en lugar del rango. 
 
 ## Rango II
 

@@ -7,7 +7,7 @@ Eres experto empleando exóticas cadenas y látigos, inmovilizando a tus enemigo
 
 ## Rango I
 
-Añade tu rango a todos tus tiros de ataque hechos con cadenas.
+Añade tu rango a todos tus tiros de ataque hechos con cadenas. Puedes obtener este rango de manera gratuita si tienes 5 o más FUE o DES y 4 niveles de talento en acrobacias.
 
 **Enredar** (2 AP): Haz un ataque con tu arma que al impactar *enredará* al objetivo. Si tienes a un objetivo enredado todas las maniobras para desarmar, tropezar o agarrar cuestan una acción.
 
@@ -16,6 +16,8 @@ Añade tu rango a todos tus tiros de ataque hechos con cadenas.
 **Ataque con arma** (2 AP): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo.
 
 ## Rango II
+
+Puedes obtener este rango de manera gratuita si tienes 6 o más FUE o DES y 5 niveles de talento en acrobacias.
 
 **Ataque circular** (1 AP): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
 

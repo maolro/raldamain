@@ -9,7 +9,7 @@ sections:
     "Occupation": Noble and military officer
     "Alignment": Lawful good
     "Religion": Spirit faith
-    "Alleigance": Hibotoru clan
+    "Allegiance": Hibotoru clan
     "Offices held": Lord of Iwakashi (4007 onwards)
 ---
 
