@@ -11,6 +11,7 @@ title: Age of Gods
 |      | The First Gods begin to reshape the planet                   |
 |      | Creation of the underworld by Antaka                         |
 |      | Wesla creates the Spirit world and Tanios creates the Ascendant Court |
+|      | First records of the Averi apprar in southern Raldamain. They will later begin to migrate towards northern Raldamain and Morandio. |
 |      | Founding of Krosos and Eutheria                              |
 |      | Rabius and Alexander are born in Krosos. They are both children of Tanios and a mortal. |
 |      | Rabius participates in the Isatan games and loses in the final due to foul play. After losing control due to his rage he is punished by Tanios with a curse of rage and exiled from Krosos. |
