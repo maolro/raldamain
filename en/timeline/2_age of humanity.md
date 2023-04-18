@@ -4,6 +4,23 @@ title: Age of Humanity
 
 # Raldamain
 
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1</h2>
+      <p>Feyn begins travelling the world to spread his message. He gains many followers and disciples</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>x</h2>
+      <p>Strakian colonists found the city of Melkhart</p>
+    </div>
+  </div>
+</div>
+
+# Raldamain
+
 | Year | Event                                                        |
 | ---- | ------------------------------------------------------------ |
 | 1    | Feyn begins travelling the world to spread his message. He gains many followers and disciples. |
