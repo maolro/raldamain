@@ -6,8 +6,13 @@ title: Age of succession
 
 | Year         | Event                                                        |
 | ------------ | ------------------------------------------------------------ |
-|              |                                                              |
+|              | Feynist noble Arkedan founds a successor state from the ruins of the First empire. It is named Arkedania in his honor. |
+|              | The Chothgar form their own kingdom claiming to be the true heirs of the First empire. It becomes a powerful regional rival of Arkedania. |
 |              | The kingdom of Elyon is founded by soldiers from the First Empire. |
+|              | A powerful necromancer becomes the ruler of the Ayutan people. |
+|              | The necromancer's armies attack the Chothgar kingdom.        |
+|              | The necromancer is defeated by a combined army of Arkedania and the Chothgar. The Chothgar are so devastated by the war that their kingdom collapses. |
+|              | Arkedania splits into three successor states after a dynastic struggle. These are Ithoria, Selphor and Letemi. |
 | 2481         | King Zarin I unites the northern lands, founding the kingdom of Mazarin. His nation becomes the most powerful Feynist state outside Kimon. |
 |              | King Zarin III attempts to reconquer all lands that once belonged to the First empire, starting a grand campaign. |
 | 2577         | A devastating plague kills Zarin III and brings ruin to Mazarin, killing nearly a quarter of its population. |
@@ -22,9 +27,9 @@ title: Age of succession
 |              | A group of mythical archmages from Morandio found the city of Utopia in southern Raldamain. |
 |              | Rogue Mazarine holy warriors sack the city of Feyn's Throne on their way to the Citadel. This begins centuries of bad blood between Mazarin and Ustilus. |
 |              | The holy wars between the Feynists and the Temash finally end, bringing peace to Pradjati. |
-| 31st century | Strakian colonists led by prince Shin begin settling in Raldamain. |
-|              | Conflict begins between the Strakians and the elves over resources and lands. Many elves are massacred and forced to flee northwards in the coming years. |
-|              | The spirits of the land are angered at the massacre of the elves and attack the Strakians, starting a brutal war between spirits and humans. |
+| 31st century | Xiangdi colonists led by prince Shin begin settling in Raldamain. |
+|              | Conflict begins between the xiangdi and the elves over resources and lands. Many elves are massacred and forced to flee northwards in the coming years. |
+|              | The spirits of the land are angered at the massacre of the elves and attack the Xiangdi, starting a brutal war between spirits and humans. |
 |              | The first Incarnate brings peace between both worlds and founds the first Shinri state. The Shinri people begin worshipping the spirits. |
 | 3246         | The city of Homay is build to symbolize harmony between both worlds. It becomes the Shinri emperor's seat of power. |
 |              |                                                              |

@@ -30,6 +30,7 @@ title: Age of Triumph
 | 3898 | Variager ascends to the throne, boosted by his popularity. He begins to purge his political enemies and begins a genocidal campaign against the hobgoblins, becoming known as the cruel. |
 |      | The Knights of Ustilus are transformed into the empire's religious police by Variager. They become very powerful and act like a state within a state. |
 |      | Variager defeats the Legion and conquers their lands, enslaving the hobgoblin people. He creates the protectorate of Iskaria to further divide and weaken the former Legion lands. |
+| 3919 | The Shinri royal family is killed in a civil war. The Shinri state collapses, leading to a century of chaos known as the Age of Warlords. |
 |      | The Ustilian empire conquers the Temash lands, gaining control of the chi mines in the south. |
 | 3942 | Variager is succeeded by his son Lysandros, who continues his father's policies of expansion and fights against Arshalan and Shiraj for hegemony. |
 |      | Lysandros grants more power to the Ustilian parliament and makes concessions to the nobility, paving the road for a Constitutional monarchy. |
