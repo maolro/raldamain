@@ -20,14 +20,14 @@ title: Age of Humanity
 |      | Misreya dies of old age. Tensions between the kingdom's three great families begin to grow. |
 |      | Feyn's grandchildren fight a destructive civil war as the three families fight over control over the kingdom. |
 |      | Feyn's great-grandson Talmandas leads a popular revolt to overthrow the monarchy. He is blessed by Feyn to succeed. |
-|      | Talmandas founds the Feynist Republic, the first of its kind in history. |
+| 432  | Talmandas founds the Feynist Republic, the first of its kind in history. |
 |      | The Feynist Republic begins a period of expansion and economic growth |
 |      | The Flying city is finished and takes to the skies powered by the Infinite cube. |
 |      | A great war breaks out between the Feynist Republic and the Melkhartian theocracy. |
-|      | Melkhart is destroyed in a daring assault by Feynist forces led by the hero Dekelion the bold. The war ends and the Melkhartian state collapses. |
-|      | The Feynist Republic begins to grow inefficient and corrupt. Populist leader Galen rises to power and becomes an authoritarian ruler. |
+| 1456 | Melkhart is destroyed in a daring assault by Feynist forces led by the hero Dekelion the bold. The war ends and the Melkhartian state collapses. |
+| 1776 | The Feynist Republic begins to grow inefficient and corrupt. Populist leader Galen rises to power and becomes an authoritarian ruler. |
 |      | Galen is killed in a violent coup and the Republic falls to civil war. |
-|      | The civil war ends after general Velyrian, a chosen of Feyn, takes absolute power and declares himself Emperor of Humanity. The Feynist Republic transforms into the First Empire of Humanity |
+| 1792 | The civil war ends after general Velyrian, a chosen of Feyn, takes absolute power and declares himself Emperor of Humanity. The Feynist Republic transforms into the First Empire of Humanity |
 |      | Velyrian is assassinated by his general Tivilus, who named himself the next emperor. |
 |      | Tivilus begins a reign of terror, executing many enemies both real and imagined. |
 |      | The emperor begins breeding a race of magically-enhanced super soldiers to act as his bodyguards. These will be the ancestors of the Chothgar. |
@@ -39,12 +39,12 @@ title: Age of Humanity
 |      |                                                              |
 |      |                                                              |
 |      |                                                              |
-|      | Empress Livia the Just ascends to the throne. She was a compassionate ruler who passed many policies to help the poor. |
+| 1872 | Empress Livia the Just ascends to the throne. She was a compassionate ruler who passed many policies to help the poor. |
 |      | Livia sends a diplomatic expedition to Xiangdi. This is the first time both great empires from the ancient world meet each other. |
 |      |                                                              |
-|      | Emperor Haridius the Wise ascends to the throne. He was a highly intellectual ruler known for his patronage of the arts. Under his rule the empire experienced a long period of peace and prosperity. |
+| 1930 | Emperor Haridius the Wise ascends to the throne. He was a highly intellectual ruler known for his patronage of the arts. Under his rule the empire experienced a long period of peace and prosperity. |
 |      |                                                              |
-|      | War breaks out between the First Empire and the Urlok over valuable resources in their lands. More Chothgar are bred by the empire to fight the Urlok, but the conflict drags on for years without a conclusive end. |
+| 2065 | War breaks out between the First Empire and the Urlok over valuable resources in their lands. More Chothgar are bred by the empire to fight the Urlok, but the conflict drags on for years without a conclusive end. |
 |      |                                                              |
 |      | The Tangarin horde migrates in large numbers into Raldamain, invading the lands of the First empire. |
 |      | The Tangarin son of heaven is slain by the high priest of Feyn. The Tangarin horde is defeated and flees to the Abyssal rift. |
