@@ -58,5 +58,5 @@ title: Age of Gods
 |      | Arume regains his divine powers to help in the fight. The Godslayers fight against hordes of Abyssals led by Gulmaht, a primal entity of chaos awakened by Ayanuu. |
 |      | Gulmaht is sealed once more in the depths of the earth at the cost of Syd's life. |
 |      | Theone sacrifices her essence to create the Seal of Harmony, trapping Ayanuu in the planet and ensuring no being can gain divine power ever again in the world. |
-|      | Arume is named guardian of Humanity by Theone as the last remaining god. He takes a new name, a name that will make him be remembered forever: Feyn. |
+|      | Arume is named guardian of Humanity by Theone as the last remaining god. He takes a new name, a name that will make him be remembered forever: [Feyn](https://raldamain.com/en/creatures/superior%20beings/feyn.html). |
 
