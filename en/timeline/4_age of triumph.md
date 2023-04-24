@@ -13,6 +13,7 @@ title: Age of Triumph
 |      | Alden I changes the Mazarine capital to Svaikal, a city built by his greatest architects to rival Feyn's Throne in splendor. |
 |      | Utopia and Nekthys fight a massive war over control of the southern continent. Hundreds of thousands will die in both sides as magic and technology clashes against the power of gods. |
 |      | The use of magical superweapons completely annihilates both Utopia and Nekthys, leaving behind nothing but a magic-irradiated wasteland full of ruins. |
+|      | The Jaddites begin to migrate north after the destruction of Utopia |
 |      | The prophet Mekhatim is exiled into the Kajmasar mountains fleeing persecution from Feynist authorities. She is taken in by the leonin led by chief Canrim, who become her first converts. |
 |      | The Chothgar chieftain's son Meisodh is exiled after a struggle for power against his brother. He travels south guided by his clan spirit in search for a way to become stronger. |
 |      | Meisodh arrives to the Citadel and fights against the abyssals. Guided by visions sent by his clan spirit he slays a powerful abyssal monster and crafts Ida Karun from its essence. |

@@ -9,7 +9,7 @@ Tienes capacidades anormalmente altas en cuanto a lo que tu velocidad de reacci�
 
 **Rapidez**: Recibes una acción adicional en tu turno. Añade tu rango en reflejos a todos tus tiros para esquivar.
 
-**Instinto de supervivencia:** Dos veces por combate puedes repetir un tiro de DES y quedarte con el mejor resultado (Aumenta por 1 cada rango)
+**Instinto de supervivencia:** Tres veces por combate puedes repetir un tiro de DES y quedarte con el mejor resultado (Aumenta por 1 cada rango)
 
 ## Rango II
 
