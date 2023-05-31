@@ -25,7 +25,7 @@ Incrementa tu CAR por 1.
 
 Aumenta tu resistencia a daño físico por 1
 
-**Rayo ocular** (1 chi): Como acción bonus usable una vez por turno puedes disparar un rayo de energía elemental desde tu tercer ojo. Esto es una acción bonus empleable una vez por ronda y el tiro es igual a tu CAR + tu rango de ascendencia. El rayo ocular inflige 1d6 + rango daño de tu elemento elegido al impactar. Si tienes rangos en magia elemental puedes aplicar sus habilidades en tu rayo ocular como si se tratase de un ataque elemental y emplearás tu tiro de magia elemental si este es superior.
+**Rayo ocular** (1 chi): Como acción bonus usable una vez por turno puedes disparar un rayo de energía elemental desde tu tercer ojo. Esto es una acción bonus empleable una vez por ronda y el tiro es igual a tu CAR + tu rango de ascendencia. El rayo ocular inflige 1d6 + CAR daño de tu elemento elegido al impactar. Si tienes rangos en magia elemental puedes aplicar sus habilidades en tu rayo ocular como si se tratase de un ataque elemental y emplearás tu tiro de magia elemental si este es superior.
 
 **Niebla de pesadillas** (2 acciones y 1 chi): Llenas un área de radio corto con una tenebrosa neblina que provoca temor a tus enemigos. Todas las criaturas en el área de efecto tener éxito en un tiro de SAB contra tu rango de ascendencia + CAR y aumentarán el nivel de miedo en el caso que fracasen. Toda criatura que permanezca en el área de efecto de la niebla deberá repetir este tiro al principio de su turno o el nivel de miedo volverá a aumentar. Esta niebla dura un número de turnos igual a tu rango de ascendencia + 1 o hasta que pierdas la concentración.
 
@@ -41,7 +41,7 @@ Incrementa tu FUE por 1.
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Regeneración**: Tu cuerpo se sana a velocidades prodigiosas, permitiéndote que te recuperes del daño y hasta las heridas permanentes. Al principio de tu turno te sanas 2 vitalidad de manera automática, y si te encuentras al máximo de vitalidad te sanas 2 PV. Al hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por un paso, mientras que si realizas un descanso largo te recuperarás de todas tus heridas salvo las graves. Después de una semana eres capaz de recuperar órganos y partes del cuerpo perdidas. (1 chi) Recuperas Vitalidad igual a tu rango.
+**Regeneración**: Tu cuerpo se sana a velocidades prodigiosas, permitiéndote que te recuperes del daño y hasta las heridas permanentes. Al principio de tu turno te sanas 2 vitalidad de manera automática, y si te encuentras al máximo de vitalidad te sanas 2 PV. Al hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por un paso, mientras que si realizas un descanso largo te recuperarás de todas tus heridas salvo las graves. Después de una semana eres capaz de recuperar órganos y partes del cuerpo perdidas. (1 chi, 1/ronda) Recuperas Vitalidad igual a tu rango.
 
 **Furia superior**: Al entrar en *furia del oni* obtendrás ventaja en todos los tiros relacionados con hasta tres estadísticas diferentes de tu elección. Puedes además aumentar tu tamaño por un paso, incrementando tu fuerza y constitución por 2 pero reduciendo tu DES por 1. Tu regeneración en tamaño grande se reduce por 1 y las criaturas de tamaño inferior al tuyo reciben ventaja en tiros de esquiva para evitar tus ataques.
 

@@ -20,7 +20,7 @@ Puedes obtener este rango de forma gratuita si tienes 5 o más FUE y nivel de ta
 
 Puedes obtener este rango de forma gratuita si tienes 6 o más FUE y nivel de talento 5 en destrozar.
 
-**Mandíbula devoradora:** Al impactar con un ataque de *mordisco* el objetivo debe tener éxito en un tiro de FUE frente a su tiro de ataque o será *enredado*. Mientras el objetivo permanezca *enredado* todos tus ataques de *mordisco* impactarán automáticamente. Además, si el objetivo es de un tamaño inferior por dos o más pasos será devorado por esta habilidad, quedando *agarrado* y sufriendo 1d6 + CON daño contundente y 1d6 daño ácido cada ronda hasta que escape.
+**Mandíbula devoradora:** Al impactar con un ataque poderoso de *mordisco* el objetivo debe tener éxito en un tiro de FUE frente a su tiro de ataque o será *enredado*. Mientras el objetivo permanezca *enredado* todos tus ataques de *mordisco* impactarán automáticamente. Además, si el objetivo es de un tamaño inferior por dos o más pasos será devorado por esta habilidad, quedando *agarrado* y sufriendo 1d6 + CON daño contundente y 1d6 daño ácido cada ronda hasta que escape.
 
 **Colmillos desgarradores:** Aumenta el nivel de todas las heridas permanentes por un paso provocadas contra enemigos con 4 o menos defensa.
 

@@ -35,7 +35,7 @@ Añade tu rango a todos tus tiros relacionados con magia espacial. Tu reserva au
 
 ## Rango IV
 
-**Cambio de posición** (2 Acciones y 2 chi, Espacial, Arcano, Defens): Haz un ataque con magia espacial contra un objetivo a distancia media que solo puede defenderse con magia protectora o espacial que al impactar intercambiará tu posición con la suya. Esta habilidad puede usarse como reacción si estás en *posición defensiva*, evitando así un ataque hecho hacia ti.
+**Cambio de posición** (2 Acciones y 2 chi, Espacial, Arcano, Defensivo): Haz un ataque con magia espacial contra un objetivo a distancia media que solo puede defenderse con magia protectora o espacial que al impactar intercambiará tu posición con la suya. Esta habilidad puede usarse como reacción si estás en *posición defensiva*, evitando así un ataque hecho hacia ti.
 
 **Teletransportar** (3 Acciones y 2 chi, Espacial, Arcano): Creas un portal que conecta con cualquier lugar del mundo. Al cruzar el portal debes tener éxito en un tiro de magia espacial contra una dificultad escogida por el máster según tu familiaridad con el lugar donde desees viajar, apareciendo en una localización diferente si fracasas. Si atas este hechizo a un glifo puedes teletransportarte a la posición de dicho glifo con probabilidad absoluta de éxito
 

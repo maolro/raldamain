@@ -50,7 +50,7 @@ title: Age of Humanity
 |      | The Tangarin son of heaven is slain by the high priest of Feyn. The Tangarin horde is defeated and flees to the Abyssal rift. |
 | 2170 | The First Empire sends a great expedition led by the emperor's son Alithei to the Abyssal rift to eliminate the surviving Tangarines. |
 | 2171 | Many Imperial forts and trading posts are built by the empire as they expand into the lands of Pradjati. Alithei finds the legendary sword Dramako Kinara. |
-| 2171 | First contact between the Jaddites and the First empire, introducing them to |
+| 2171 | First contact between the Jaddites and the First empire, introducing them to the Feynist faith. |
 | 2171 | The expeditionary army builds a fortress to guard the Abyssal rift. It will later become the Citadel. |
 | 2172 | Emperor x dies and the high priest proclaims himself as the new emperor, usurping the throne. A civil war breaks out between supporters of Alithei and the high priest. |
 | 2176 | Alithei wins the war and crowns himself as the new emperor. He starts a cult of personality centered around himself. |

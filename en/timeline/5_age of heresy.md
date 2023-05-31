@@ -67,7 +67,7 @@ title: Age of Heresy
 |      |                                                              |
 |      |                                                              |
 | 4073 | Seigo dies of old age, reincarnating in a new form. Seigo's companion Kajin becomes regent of Shinri until his reincarnation is found. |
-| 4094 | Kesenia Revilo becomes president of Kratoi, the first not to belong to one of the republic's two major political parties. |
+| 4090 | Kesenia Revilo becomes president of Kratoi, the first not to belong to one of the republic's two major political parties. |
 | 4097 | Seigo's reincarnation is discovered in Klonum to be a young woman named Yara, who was raised as a child by the Supreme Truth cult. |
 | 4097 | Kajin dies of old age and his granddaughter Eliosa becomes the new regent of Shinri. |
 | 4097 | The Supreme Truth cult orchestrates a terrorist attack in Klonum attempting to recapture Yara. They are defeated and their leaders killed. |
@@ -77,7 +77,7 @@ title: Age of Heresy
 | 4103 | King Kuril III is assassinated by crimson revolutionaries, triggering the Mazarine civil war as many factions fight for the throne. |
 | 4104 | General Kuvira reunites the Mazarine lands, becoming its new leader. She declares the creation of the new Mazarine empire. |
 | 4105 | The Shinri civil war ends with the reconquest of Klonum and the defeat of the People's Republic. |
-| 4107 | Kesenia Revilo dies in an airship accident. Her husband and vice-president Damyan becomes the new president |
+| 4105 | Kesenia Revilo dies in an airship accident. Her husband and vice-president Damyan becomes the new president |
 | 4109 | The Mazarine empire begins to conquer more lands in the Free Kingdom, expanding its reach and influence. |
 | 4109 | Kratoi faces its most divided elections in history and Damyan wins by a very small margin. Ustilus, fearing that the new government is friendly to the Crimson revolutionaries, begins to plot an invasion. |
 | 4109 | Ustilus launches a full-scale invasion of Kratoi claiming to protect Ustilian citizens living in the country against Crimson revolutionaries. |

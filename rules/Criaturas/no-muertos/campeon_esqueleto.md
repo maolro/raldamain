@@ -32,7 +32,7 @@ Mientras que la mayoría de esqueletos han olvidado su existencia anterior y exi
 
 **Espada** (2 acciones, Físico, Cuerpo a cuerpo): +5, 1d8 + 4 daño cortante.
 
-**Corte feroz** (2 acciones, Físico, Cuerpo a cuerpo): +5, 1d8 + 1d6 + 4 cortante y *sangrado*. Recibirá desventaja en sus tiros defensivos esta ronda.
+**Corte feroz** (2 acciones, Físico, Cuerpo a cuerpo): +5, 1d8 + 1d6 + 4 cortante y *sangrado*. Recibirá desventaja en sus tiros defensivos esta ronda (no se acumula con múltiples usos).
 
 **Golpe de escudo** (2 acciones, Físico, Cuerpo a cuerpo): Se mueve hasta dos pasos y hace un ataque con bonificador +5 que provoca al impactar 1d6 + 4 daño contundente y el objetivo debe tener éxito en un tiro de FUE frente a +5 o será *tropezado*. 
 

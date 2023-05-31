@@ -29,7 +29,7 @@ title: Age of succession
 |              | The Temash besiege the city of Feyn's Throne, the first of many to affect the city. |
 |              | King Vardel of Ustilus pushes back the Temash and founds the Knights of Ustilus. |
 | 2953         | The Feynists achieve a great victory against the Temash in the battle of Rizad. Both sides agree on a truce, temporarily halting the holy war. This victory came at a cost as king Semiyon I of Mazarin died in battle. |
-|              | A group of mythical archmages from Morandio found the city of Utopia in southern Raldamain. |
+| 296X         | A group of mythical archmages from Morandio found the city of Utopia in southern Raldamain. |
 | 2967         | Rogue Mazarine holy warriors sack the city of Feyn's Throne on their way to the Citadel. This begins centuries of bad blood between Mazarin and Ustilus. |
 | 2991         | The holy wars between the Feynists and the Temash finally end, bringing peace to Pradjati. |
 | 31st century | Xiangdi colonists led by prince Shin begin settling in Raldamain. |
