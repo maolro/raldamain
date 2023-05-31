@@ -4,6 +4,8 @@ title: Sombra
 
 
 
+En la tenebrosa dimensión sombría ni la muerte es un alivio para los desafortunados que acaban perdidos en ella. Los sentimientos de odio, desesperación y miedo que tenían momentos antes de su muerte combinados con la nociva influencia del plano sombrío hacen que sus almas sean incapaces de ir al más allá y permanezcan atrapadas en esta maldita dimensión durante toda la eternidad. Este tormento hace que las almas cobren la forma de sombras vivientes animadas únicamente por su deseo de consumir la esencia vital de otros desafortunados que encuentren. Las sombras vivientes son el peligro más común en el plano sombrío y en ocasiones entran en el plano material en busca de más víctimas para consumir.
+
 # Estadísticas
 
 ## Sombra viviente (niv 4)
@@ -46,4 +48,10 @@ title: Sombra
 
 ## Tácticas
 
-La sombra viviente es un depredador sigiloso que embosca a sus víctimas desde la oscuridad y drena su esencia vital hasta que perezcan. Al empezar el combate usará *devorar la luz* para oscurecer el campo de batalla y atacará al enemigo más cercano la ronda siguiente con *drenar vitalidad*. Como hay muy pocas cosas capaces de herir a la sombra esta continuará atacando hasta que su víctima muera, ocultándose en la oscuridad al terminar para atacar a su siguiente objetivo. Lo que más teme la sombra es la luz brillante, la cual le motivará a huir de inmediato al lugar oscuro más cercan
+La sombra viviente es un depredador sigiloso que embosca a sus víctimas desde la oscuridad y drena su esencia vital hasta que perezcan. Al empezar el combate usará *devorar la luz* para oscurecer el campo de batalla y atacará al enemigo más cercano la ronda siguiente con *drenar vitalidad*. Como hay muy pocas cosas capaces de herir a la sombra esta continuará atacando hasta que su víctima muera, ocultándose en la oscuridad al terminar para atacar a su siguiente objetivo. Lo que más teme la sombra es la luz brillante, la cual le motivará a huir de inmediato al lugar oscuro más cercano y esperar hasta que la luz se apaque.
+
+# Variaciones
+
+## Sombra maldita
+
+Algunas sombras que permanecen el suficiente tiempo en el plano sombrío o han sido creadas a partir de individuos con gran potencial mágico se manifiestan como seres mucho más poderosos conocidos como Sombras malditas. Mientras que a primera vista aparentan ser sombras vivientes, estas criaturas son mucho más poderosas y aquellos que les subestiman acaban pagando el precio. Debido a su notable fuerza las sombras malditas son consideradas casi como líderes por las sombras viventes y es típico encontrar a pequeñas manadas de estas criaturas acompañando a una sombra maldita.

@@ -2,7 +2,7 @@
 title: Sombra maldita
 ---
 
-
+Algunas sombras que permanecen el suficiente tiempo en el plano sombrío o han sido creadas a partir de individuos con gran potencial mágico se manifiestan como seres mucho más poderosos conocidos como Sombras malditas. Mientras que a primera vista aparentan ser sombras vivientes, estas criaturas son mucho más poderosas y aquellos que les subestiman acaban pagando el precio. Debido a su notable fuerza las sombras malditas son consideradas casi como líderes por las sombras viventes y es típico encontrar a pequeñas manadas de estas criaturas acompañando a una sombra maldita.
 
 # Estadísticas
 

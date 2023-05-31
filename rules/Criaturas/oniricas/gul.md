@@ -74,7 +74,7 @@ En ocasiones los gules manifestan algo más de inteligencia o conservan los recu
 
 **Habilidades pasivas:** Obtendrá las habilidades pasivas *toxina paralizante* y *plaga del gul*.
 
-**Rangos:** Conservará cualquier cantidad de rangos que tuvo en vida. Recibirá también un rango gratuiten *mordisco* y podrá usar la variante *garras* de la categoría de filos cortantes.
+**Rangos:** Conservará cualquier cantidad de rangos que tuvo en vida. Recibirá también un rango gratuito en *mordisco* y podrá usar la variante *garras* de la categoría de filos cortantes.
 
 # Variaciones
 

@@ -99,7 +99,7 @@ Aprende un nuevo hechizo de rango II que puede usar tres veces por combate.
 
 Obtiene esta nueva habilidad:
 
-- *Presencia enloquecedora:* Cada criatura que le pueda percibir deberá tener éxito en un tiro de CAR contra su CON + mejora + 1 o son espantadas durante una ronda. Si se encuentran a distancia corta reducirán su cordura por 2.
+- *Presencia enloquecedora (Miedo, mental):* Cada criatura que le pueda percibir deberá tener éxito en un tiro de CAR contra su CON + mejora + 1 o son espantadas durante una ronda. Si se encuentran a distancia corta reducirán su cordura por 2.
 
 ## Mejora 2
 
