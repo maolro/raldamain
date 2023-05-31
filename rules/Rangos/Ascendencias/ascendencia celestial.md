@@ -97,19 +97,18 @@ Incrementa tu CON por 1.
 
 ## Mejora 2
 
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
+Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
 
 Recibe un rango adicional en un arma
 
-Sana +1 Vitalidad con *toque sanador* (+1 por cada mejora adicional)
+Aumenta su cantidad de acciones por 1
 
-Aumenta su resistencia al daño físico y a la magia por 2
+Su invocador recibe los bonificadores de *guerrero de la fe* a rango I si se encuentra a distancia cercana
 
-Otorga tres usos adicionales de *milagro menor* a su invocador
+Obtiene las siguientes habilidades:
 
-Obtiene esta nueva habilidad:
-
-- *Conexión vital*: Escoge a una criatura. Cada vez que la criatura escogida sufra daño puede absorber la mitad de dicho daño y usar *toque sanador* en ella sin la necesidad que esté adyacente
+- *Aliento de vida* (3 AP, 1/combate): Resucita a 1 PV a una criatura que haya muerto la ronda anterior y reduce las heridas permanentes que tenga por un paso.
+- *Aliento de luz* (2 AP, recarga 5-6): Hace un ataque contra 1d4+2 criaturas en un cono pequeño que inflige 1d8+Car daño radiante y ciega si reduce PV. El bonificador es igual a la estadística de Car+nivel de mejor+2
 
 ## Mejora 3
 
