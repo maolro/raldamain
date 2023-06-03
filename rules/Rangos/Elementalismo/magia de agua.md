@@ -1,11 +1,11 @@
 ---
-  title: Magia de Agua
+ title: Magia de Agua
 category: Magia elemental
 ---
 
 Esta magia te permite tener un control absoluto sobre el agua cuando esta se encuentra en estado fluido, pudiendo así aprovecharte de sus propiedades para emplearla en multitud de formas. A medida que tu control va en aumento serás capaz de mayores proezas que involucren al agua en un estado más salvaje, empleándola para formar fuertes torrentes o colosales olas capaces de devastar todo a su paso.
 
-# Rangos
+# Rangos	
 
 ## Rango I 
 
