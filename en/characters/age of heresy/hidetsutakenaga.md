@@ -1,5 +1,6 @@
 ---
 title: Hidetsu Takenaga
+image: hidetsu_takenaga.jpg
 sections:
  - type: infobox.html
    content:

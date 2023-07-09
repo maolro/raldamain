@@ -1,5 +1,6 @@
 ---
 title: Chodao Khodole
+image: chodao.jpg
 sections:
  - type: infobox.html
    content:

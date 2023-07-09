@@ -8,7 +8,7 @@ sections:
     "Nationality": Shinri
     "Occupation": Warlord
     "Alignment": True neutral
-    "Religion": Spirit faith
+    "Religion": Spirit faith with S
     "Alleigance": Hibotoru clan
     "Offices held": Lord of the Hibotoru clan (4010-4022)
 ---
