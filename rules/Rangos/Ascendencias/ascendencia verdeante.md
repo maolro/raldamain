@@ -51,7 +51,7 @@ Incrementa tu CON por 1.
 
 **Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de la naturaleza te obedecen
 
-**Llamar a los espíritus** (3 AP y 5 chi): Abre un portal al mundo de los espíritus durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada* y está afectada por *aura primigenia*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura espiritual que tenga x-1 mejoras.
+**Llamar a los espíritus** (3 AP y 5 chi): Abre un portal al mundo de los espíritus durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada* y está afectada por *aura primigenia*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura espiritual que tenga x-1 mejoras, llegando como máximo a tres mejoras
 
 # Criatura espiritual
 

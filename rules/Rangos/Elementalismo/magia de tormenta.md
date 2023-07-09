@@ -49,6 +49,8 @@ Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de c
 
 ## Rango VI
 
+El daño eléctrico que provocas atravesará las resistencias elementales que tengan tus objetivos. 
+
 **Tormenta de venganza** (3 AP y 5 chi): Invocas una tormenta enormemente destructiva emulando la furia de los dioses. Esta habilidad afectará el campo de batalla con *cambiar el clima* y mientras pasen las rondas aumentará su fuerza. A partir de la segunda ronda puedes hacer un ataque de *relámpago* u *onda trueno* cada ronda como acción bonus sin coste de chi y a partir de la cuarta puedes hacer que el ataque sea de *furia de la tormenta* o *relámpago en cadena*. No necesitarás concentrarte en ninguno de estos efectos y la *tormenta de venganza* se desvanecerá al cabo de 7 rondas. Estos ataques bonus se acumulan con aquellos que otorga la habilidad *llamar a la tormenta*.
 
 # Elemental de tormenta

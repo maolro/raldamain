@@ -27,9 +27,9 @@ Incrementa tu CON por 1.
 
 Aumenta tu resistencia al daño físico por 1.
 
-**Forma fluida** (2 AP y 1 chi): Te rodeas de una capa de aguas rugientes que reduce todo el daño que recibas por un valor igual a tu rango – 1 además que todo el espacio a distancia cercana de ti cuenta como terreno difícil (1 chi) Todas las criaturas adyacentes a ti deberán tener éxito en un tiro de FUE contra tu CAR o serán empujadas un paso hacia atrás (la CAR es modificada por tu rango en magia de agua). Esta habilidad dura rango + 1 rondas o hasta que pierdas la concentración.
+**Forma fluida** (2 AP y 1 chi, Agua, Concentración): Te rodeas de una capa de aguas rugientes que reduce todo el daño que recibas por un valor igual a tu rango – 1 además que todo el espacio a distancia cercana de ti cuenta como terreno difícil. (1 chi, 1/ronda) Todas las criaturas adyacentes a ti deberán tener éxito en un tiro de FUE contra tu CAR o serán empujadas un paso hacia atrás (la CAR es modificada por tu rango en magia de agua). Esta habilidad dura una cantidad de rondas igual a tu rango + 1 o hasta que pierdas la concentración.
 
-**Conexión elemental**: Si te encuentras en contacto con el agua te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto sumergido en el agua recuperas también todos tus PV.     
+**Conexión elemental**: Si te encuentras en contacto con el agua te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto sumergido en el agua recuperas también todos tus PV. (1 chi, 1/ronda) Recuperas una cantidad de Vitalidad igual a tu rango de ascendencia + 2 si estás en contacto con el agua. 
 
 ## Rango IV 
 
@@ -43,9 +43,9 @@ Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de agua a todo
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 
-**Elemento del cambio**: Obtienes resistencia al daño fuego igual a tu rango + 1 y al principio de tu turno puedes obtener immunidad contra el efecto de estado de tu elección durante esta ronda (debes escoger entre *ralentizado, enfermado, fatigado, aturdido* o *confundido*). Además, eres capaz de respirar bajo el agua sin dificultades como si fueras anfibio.
+**Elemento del cambio**: Obtienes resistencia al daño fuego igual a tu rango + 1 y al principio de tu turno puedes obtener immunidad contra el efecto de estado de tu elección durante esta ronda (debes escoger entre *ralentizado, enfermado, fatigado, aturdido* o *confundido*). Además, si te encuentras en un entorno rodeado por agua recibes los beneficios de *visión futura*, recibiendo así ventaja en todos tus tir
 
-**Ecolocación**: Tienes vista a ciegas en un radio medio y puedes predecir los movimientos de otras criaturas que se encuentren en la misma superficie de agua que tú, obteniendo así los beneficios de *visión futura* contra ellos.
+**Ecolocación**: Has desarrollado un nuevo sentido similar al de los animales marinos que te permite detecar figuras sólidas cerca de ti empleando el agua como método de transmisión. Esta habilidad te otorga el sentido *ecolocación*, el cual te otorga vista a ciegas a una distancia media. Si te encuentras en un entorno lleno de agua como un lago, río o entorno con fuertes lluvias el alcance de *ecolocación* aumenta a lejano además que te vuelves inmune a ataques sorpresa. Además, eres capaz de respirar bajo el agua sin dificultades como si fueras anfibio.
 
 ## Rango VI
 
@@ -53,14 +53,14 @@ Incrementa tu CAR por 1.
 
 **Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del agua te obedecerán.
 
-**Forma elemental** (3 AP y 3 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 30 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+**Forma elemental** (3 AP y 5 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 
 - Recibes inmunidad al daño no-mágico, veneno, efectos mentales y cualquier tiro de FUE cuya fuente sea física (Magia gravitatoria, magia de agua y telekinesia son excepciones),
-- Tu resistencia mágica y tu resistencia al fuego pasan a ser 8. Tus estadísticas de DES, FUE y CON pasan a ser 8.
+- Tu resistencia mágica y tu resistencia al fuego pasan a ser 14. Tus estadísticas de DES, FUE y CON pasan a ser 13. Recibes también nivel de talento 5 en heroísmo.
 - Te regeneras 4 Vitalidad al principio de tu turno y cada vez que pases por una superficie de agua puedes emplear la habilidad *controlar el agua* sin la necesidad de emplear acciones o chi además que obtendrás velocidad de vuelo 1.
 - Puedes emplear el hechizo *torrente* empleando 1 AP con bonificador de ataque +12 y provocando 1d8 + 8 daño contundente al impactar. Empleando una acción adicional puedes mejorar el ataque para realizar un hechizo entre *prisión de agua*, *taladro de agua* o *escaldar*. También eres capaz de emplear el hechizo *vórtice* gastando 3 AP con recarga 5-6. Ninguno de estos hechizos requerirá un gasto de chi
-- Recibes parada de agua con bonificador +12 y puedes usar *muro de agua* una vez por ronda reacción para detener un ataque (esto se acumula con el hechizo base)
-- Empleando 1 AP puedes congelar partes de tu cuerpo para recibir resistencia 14 al daño físico hasta final de turno a costa de perder tu inmunidad al daño no-mágico y recibir vulnerabilidad al fuego. Deshacer esta habilidad también cuesta 1 AP.
+- Recibes parada de agua con bonificador +15 y puedes usar *muro de agua* una vez por ronda reacción para detener un ataque (esto se acumula con el hechizo base)
+- Empleando 1 AP puedes congelar partes de tu cuerpo para recibir resistencia 20 al daño físico hasta final de turno a costa de perder tu inmunidad al daño no-mágico y recibir vulnerabilidad al fuego. Deshacer esta habilidad también cuesta 1 AP.
 
 # Rangos míticos
 

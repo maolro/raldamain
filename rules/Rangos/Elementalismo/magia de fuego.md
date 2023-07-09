@@ -55,6 +55,8 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 ## Rango VI
 
+El daño de fuego que provocas pasa a ser fuego puro, atravesando así las resistencias elementales que tengan tus objetivos. 
+
 **Descenso del dragón** (3 AP y 5 chi. Energía, Fuego, Área, Concentración): Creas un gigantesco dragón hecho de llamas que arrasará con todo a tu paso. Al invocar al dragón haz un ataque contra cada criatura en un cilindro horizontal grande que inflige 2d10 + CAR daño fuego y una quemadura grave además de llenar el área afectado con un *muro de llamas*. Mientras mantengas la concentración puedes hacer que el dragón vuele dos pasos como acción bonus y ataque de nuevo a cada criatura en su camino, infligiendo la misma cantidad de daño. Si el dragón permanece a tu lado recibes los beneficios de *muro de fuego*, incluyendo la cubierta que otorga.
 
 # Elemental de fuego

@@ -31,7 +31,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los 
 
 **Prisión de agua** (1 AP y 2 chi. Agua, Concentración): Haz un ataque de magia de agua que al impactar *agarrará* al objetivo con una esfera de aguas rugientes. Mientras el objetivo esté *agarrado* empezará a ahogarse y para escapar deberá usar atletismo en lugar de heroísmo (la resistencia a *agarres* no se aplica). Si el objetivo se encuentra sumergido en el agua no podrá defenderse de este ataque salvo tirando FUE. (1 chi) Afecta a un objetivo adicional.
 
-**Controlar el agua** (3 AP y 2 chi. Agua, Concentración, Ambiental): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a lejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
+**Controlar el agua** (3 AP y 2 chi. Agua, Concentración, Ambiental): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a l	ejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
 
 **Invocar elementales de agua** (3 AP y 2 chi. Agua, Invocación): Invoca a un elemental de agua que permanecerá a tu lado durante el combate. Al mejorar de rango cada elemental creado tendrá una mejora adicional. No puedes controlar a más de 4 elementales a la vez.
 
@@ -41,7 +41,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los 
 
 **Escaldar** (1 AP y 2 chi. Agua): Durante esta ronda todos tus ataques de magia de agua provocan 1d6 + rango daño adicional de fuego y una quemadura leve al reducir PV. Si usas esta habilidad en una superficie de agua todas las criaturas en ella sufrirán 1d6 + rango daño de fuego y una quemadura leve (media si reduce PV) sin la posibilidad de defenderse. Este daño fuego ignorará todas las resistencias al fuego que tenga el objetivo al tratarse de agua abrasante.
 
-**Taladro de agua** (2 AP y 2 chi. Agua): Haz un ataque de *torrente* con un dado de daño adicional que atacará a todos los objetivos en un cilindro horizontal grande de radio pequeño. Este ataque destruirá también todas las estructuras frágiles y muros en el área.
+**Taladro de agua** (2 AP y 2 chi. Agua, Ár): Haz un ataque de *torrente* con un dado de daño adicional que atacará a todos los objetivos en un cilindro horizontal grande de radio pequeño. Este ataque destruirá también todas las estructuras frágiles y muros en el área.
 
 ## Rango V
 
