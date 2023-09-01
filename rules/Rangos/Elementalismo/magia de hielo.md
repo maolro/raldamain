@@ -17,7 +17,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 
 ## Rango II
 
-**Muro de hielo** (2 AP y 1 chi): Formas una barrera media hecha de hielo para protegerte de ataques, otorgándote *cubierta completa* contra ellos. El muro tendrá PV igual a tu rango x 2, DEF igual a tu rango y vulnerabilidad al daño fuego y contundente. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*.
+**Muro de hielo** (2 AP y 1 chi): Formas una barrera media hecha de hielo para protegerte de ataques2 otorgándote *cubierta completa* contra ellos. El muro tendrá PV igual a tu rango x 3, DEF igual a tu rango y vulnerabilidad al daño fuego y contundente. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*.
 
 **Neblina polar** (2 AP y 1 chi): Creas una niebla sobrenaturalmente fría que llenará un espacio de radio medio. La niebla otorga *ocultamiento* a todas las criaturas que se encuentren en ella y cada criatura sin protección contra el frío que entre en la niebla o empiece su turno ahí sufrirá 2 daño frío. Todos tus ataques de magia de hielo tienen ventaja contra criaturas en la neblina, y esta permanecerá hasta que pasen rango + 1 rondas o pierdas la concentración
 

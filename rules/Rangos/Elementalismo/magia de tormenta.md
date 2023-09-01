@@ -37,7 +37,7 @@ Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de c
 
 **Furia de la tormenta** (2 AP y 2 chi): Eres capaz de sobrecargar los conductos de chi conectados con tu cuerpo hasta llevarlos al límite, provocando que desaten una enorme explosión de rayos y truenos. El área de la explosión será igual a un radio corto y todos en la zona deberán defenderse de un ataque que infligirá 1d8+CAR daño eléctrico (1d10 a rango V) y 1d10+rango daño trueno al impactar. El ataque partirá de tu propio cuerpo salvo que te encuentres en una tormenta, donde puedes hacer que parta desde cualquier punto a distancia media. (1 chi) Aumenta el área de efecto a un radio medio.
 
-**Jinete del relámpago** (2 AP y 2 chi): Te mueves a la velocidad del rayo durante un breve periodo de tiempo, incrementando tu velocidad de vuelo por 1 y recibiendo ventaja en todos tus tiros de esquiva durante una ronda. Además, al realizar una carga te mueves con tal velocidad que tus ataques cuerpo a cuerpo no pueden ser esquivados por adversarios que no tengan la habilidad *sexto sentido*.
+**Jinete del relámpago** (2 chi): Te mueves a la velocidad del rayo durante un breve periodo de tiempo, incrementando tu velocidad de vuelo por 1 y recibiendo ventaja en todos tus tiros de esquiva durante una ronda. Además, al realizar una carga te mueves con tal velocidad que tus ataques cuerpo a cuerpo no pueden ser esquivados por adversarios que no tengan la habilidad *sexto sentido*.
 
 ## Rango V 
 

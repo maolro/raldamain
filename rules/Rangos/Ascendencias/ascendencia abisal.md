@@ -1,5 +1,5 @@
 ---
-  title: Ascendencia Abisal
+  title: Ascendencia Abisal	
 category: Ascendencias
 ---
 

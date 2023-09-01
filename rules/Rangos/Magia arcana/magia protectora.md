@@ -19,13 +19,13 @@ Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Ra
 
 **Eliminar magia** (2 AP y 1 chi): Anula un efecto mágico de rango igual al tuyo que se encuentre a una distancia media. Si ha sido lanzado por otra criatura debes tener éxito en un tiro de magia protectora contra su tiro de magia. (1 chi) Haz un tiro para anular un efecto adicional
 
-**Armadura mágica** (2 AP): Aumenta tu defensa y tu resistencia mágica por un valor igual a tu rango + 1 durante el resto del combate. (1 chi) Otorga este efecto a un aliado adyacente.
+**Armadura mágica** (2 AP): Tu defensa y tu resistencia mágica pasan a ser un valor igual a tu rango + 1 durante el resto del combate. El valor de armadura mágica no se acumula con la defensa otorgada por armaduras ni la resistencia mágica proveniente de otros efectos (1 chi) Otorga este efecto a un aliado adyacente.
 
-**Círculo de sellado** (4 AP y 1 chi): Forma un círculo mágico en el suelo que impide que criaturas mágicas entren o salgan de él además de otorgarles desventaja en sus ataques contra otros objetivos al otro lado del círculo e impedir que puedan usar efectos mágicos contra ellos. El círculo permanece durante el combate y si una criatura intenta cruzarlo deberás tirar magia protectora contra una dificultad igual a su nivel + 3, impidiéndole el paso si tienes éxito. 
+**Círculo de sellado** (3 AP y 1 chi): Forma un círculo mágico en el suelo que impide que criaturas mágicas entren o salgan de él además de otorgarles desventaja en sus ataques contra otros objetivos al otro lado del círculo e impedir que puedan usar efectos mágicos contra ellos. El círculo permanece durante el combate y si una criatura intenta cruzarlo deberás tirar magia protectora contra una dificultad igual a su nivel + 3, impidiéndole el paso si tienes éxito. 
 
 ## Rango III
 
-**Retener persona** (2 AP y 2 chi): Haz un ataque mágico usando tu tiro de magia protectora que al impactar *agarra* al objetivo e impide que pueda usar magia mientras dure el agarre. Mantenerlo requiere la concentración y puedes moverlo un paso como acción. (1 chi) Afecta a un objetivo adicional 
+**Retener persona** (2 AP y 2 chi): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu magia protectora o quedará atrapada por cuerdas de chi, las cuales le *agarran* e impiden que pueda usar magia arcana. Mantenerlo requier1e la concentración y puedes moverlo un paso como acción. (1 chi) Afecta a un objetivo adicional 
 
 **Glifo mágico** (3 AP y 2 chi): Inscribe un glifo mágico que liga un hechizo con rango igual a tu rango de magia protectora (tienes que también gastar los AP y chi del hechizo escogido). El glifo activará el hechizo en el momento que tú desees y permanecerá escrito hasta que se active o sea anulado. Si es un hechizo que requiere concentración permanecerá durante rango + 2 rondas y puedes gastar 1 chi para aumentar la duración a una hora (un día si gastas 2 chi)
 
@@ -37,19 +37,19 @@ Añade tu rango a todos tus tiros relacionados con magia protectora. Añade 2+Ra
 
 **Exilio** (2 AP y 2 chi): Haz un tiro de magia protectora contra una criatura a distancia media superando una dificultad igual a su nivel + 3 y si tienes éxito la devolverás a su plano natal. (1 chi) Afecta a una criatura adicional con el ataque
 
-**Esfera de fuerza** (2 AP y 2 chi): Formas una barrera esférica de fuerza con radio pequeño en un punto a distancia media. La barrera tiene PV iguales a tu rango x 3 y es inmune al daño no-mágico. Esta permanecerá durante una ronda o hasta que pierdas la concentración (1 chi) Aumenta el radio de la barrera a medio o forma una esfera adicional.
+**Esfera de fuerza** (2 AP y 2 chi): Formas una barrera esférica de fuerza con radio pequeño rodeando tu cuerpo que permanecerá activa hasta que pierdas la concentración. La barrera te otorgará *contadores de escudo* iguales a tu rango y mientras permanezca activa eres inmune a efectos de toque, gaseosos y daño no-mágico. Puedes escoger alternativamente que la esfera se forme alrededor de una criatura de tu elección para atraparla, forzándola a tener éxito en un tiro de DES frente a tu magia protectora para evitar este efecto.
 
 ## Rango V 
 
 **Disyunción** (2 AP y 3 chi): Un objetivo a distancia media pierde todas las habilidades de magia arcana persistentes que tenga activas, deshabilita todos los objetos mágicos y reduce su reserva de chi por 3. Esta habilidad solo puede defenderse con magia protectora.
 
-**Ligación planar** (5 AP y 3 chi): Haz un tiro de magia de protección contra una criatura a distancia media superando una dificultad igual a su nivel + 3 y en caso de que lo consigas esa criatura caerá bajo tu control. Una criatura ligada obedecerá tus órdenes al pie de la letra y el efecto permanecerá activo mientras mantengas la concentración en él. No puedes tener ligadas más de 4 criaturas a la vez.
+**Ligación planar** (3 AP y 3 chi): Haz un tiro de magia de protección contra una criatura a distancia media superando una dificultad igual a su nivel + 3 y en caso de que lo consigas esa criatura caerá bajo tu control. Una criatura ligada obedecerá tus órdenes al pie de la letra y el efecto permanecerá activo mientras mantengas la concentración en él. No puedes tener ligadas más de 4 criaturas a la vez.
 
-**Invertir chi** (2 AP y 3 chi): Una criatura a distancia media aumenta su reserva de chi por 3 y sufre daño fuerza igual a su reserva de chi total. Si logras reducir PV con este ataque la criatura estará aturdida durante una ronda. Este ataque solo puede detenerse con magia protectora.
+**Invertir chi** (2 AP y 3 chi): Una criatura que puedas tocar debe tener éxito en un tiro de CON frente a tu magia protectora o aumentará su reserva de chi por 3 y sufrirá daño fuerza igual a su reserva de chi total. Si logras reducir PV con este ataque la criatura estará aturdida durante una ronda. Este ataque solo puede detenerse con magia protectora.
 
 ## Rango VI
 
-**Sello extraplanario** (6 AP y 5 chi): Absorbes una criatura extraplanaria que tengas ligada para obtener parte de su poder. Debes hacer un último tiro contra el nivel de la criatura + 3 y en caso de éxito obtienes todas las habilidades pasivas, resistencias, inmunidades, movimientos y acciones que tenga, las cuales puedes usar como si fueran tuyas. Puedes también aumentar una de tus estadísticas y su respectivo limitador por 1 por cada mejora que tenga (máximo +3). Solo puedes tener una única criatura ligada de esta manera y en determinadas situaciones la criatura puede intentar liberarse, forzándote a repetir el tiro de magia protectora y si fracasas esta se liberará y dejará de estar ligada además de infligiéndote los efectos de *disyunción* e *invertir chi*.
+**Sello extraplanario** (3 AP y 5 chi): Absorbes una criatura extraplanaria que tengas ligada para obtener parte de su poder. Debes hacer un último tiro contra el nivel de la criatura + 3 y en caso de éxito obtienes todas las habilidades pasivas, resistencias, inmunidades, movimientos y ataques que tenga, las cuales puedes usar como si fueran tuyas. Puedes también aumentar una de tus estadísticas y su respectivo limitador por 1 por cada mejora que tenga (máximo +3). Solo puedes tener una única criatura ligada de esta manera y en determinadas situaciones la criatura puede intentar liberarse, forzándote a repetir el tiro de magia protectora y si fracasas esta se liberará y dejará de estar ligada además de infligiéndote los efectos de *disyunción* e *invertir chi*.
 
 # Rangos míticos
 

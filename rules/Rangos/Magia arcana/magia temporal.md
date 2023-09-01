@@ -43,7 +43,7 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 ## Rango V  
 
-**Parar el tiempo** (3 Acciones y 3 chi, Temporal, Arcano): Detienes el tiempo en una burbuja de tamaño grande, paralizando a todas las criaturas que se encuentren en ella. Este efecto durará una ronda o hasta que ataques a cualquier criatura paralizada por el efecto. *Parar el tiempo* no funciona contra criaturas afectadas por *campo antimágico* o *aura divina*. 
+**Parar el tiempo** (3 Acciones y 3 chi, Temporal, Arcano): Detienes el tiempo en una burbuja de tamaño grande, paralizando a todas las criaturas que se encuentren en ella que fracasen un tiro de CON frente a tu magia temporal. Este efecto durará una ronda o hasta que ataques a cualquier criatura paralizada por el efecto. *Parar el tiempo* no funciona contra criaturas afectadas por *campo antimágico*.
 
 **Visión futura** (Temporal, Arcano): Tienes un sexto sentido que te avisa de peligros inminentes, volviéndote inmune ataques sorpresa y obteniendo ventaja en todos tus tiros de ataque y defensa durante un combate. Puedes gastar cargas de premonición para asistir tiros de aliados (3 chi) Otorgas *visión futura* a un aliado adyacente durante el resto del combate.
 

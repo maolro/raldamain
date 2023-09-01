@@ -11,19 +11,19 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de fuego y au
 
 **Llamarada** (2 acciones. A distancia, Energía, Fuego): Haz un ataque con magia elemental de fuego contra un objetivo a distancia media que inflige 1d6 + rango daño fuego y provoca una quemadura leve si reduce PV. El lugar impactado saltará en llamas si está hecho de material inflamable. (1 chi) Ataca a un objetivo adicional.
 
-**Toque abrasador** (2 acciones. Toque, Energía, fuego): Ataca a un objetivo adyacente con magia de fuego que al impactar infligirá 1d6 + rango daño fuego y provoca una quemadura leve (media si reduce PV). (1 chi) Aumenta el alcance a cercano.
+**Toque abrasador** (2 acciones. Toque, Energía, fuego): Un objetivo adyacente hace un tiro de salvación de CON frente a tu magia de fuego o sufre 1d6 + rango daño fuego y una quemadura leve (media si pierde PV). (1 chi) Aumenta el alcance a cercano.
 
-**Aliento de fuego** (2 acciones y 1 chi. Área, Energía, Fuego): Haz un ataque contra a todos los objetivos en un cono pequeño (1d4 + 1) que inflige 1d6 + CAR daño fuego y provoca una quemadura leve si reduce PV. Todos los objetos inflamables en el área saltarán en llamas. 
+**Aliento de fuego** (2 acciones y 1 chi. Área, Energía, Fuego): Haz un ataque contra a todos los objetivos en un cono pequeño que inflige 1d6 + CAR daño fuego y una quemadura leve (media si reduce PV). Todos los objetos inflamables en el área saltarán en llamas. 
 
-**Parada elemental** (reacción. Defensivo, Energía, Fuego): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Parada elemental** (reacción. Defensivo, Energía, Fuego): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. 
 
 ## Rango II
 
 **Muro de llamas** (2 acciones y 1 chi. Defensivo, Energía, Fuego): Formas un muro de llamas furiosas que te otorga cubierta completa contra todos los ataques mágicos y a distancia. Si una criatura intenta cruzar la barrera deberá tirar DES frente a tu magia de fuego o sufrirá 1d6 daño fuego y una quemadura media (leve si tiene éxito en el tiro). Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
 
-**Bola de fuego** (2 acciones y 1 chi. Área, Energía, Fuego): Haz un ataque de *llamarada* con radio de salpicadura corto cuyo daño estará modificado por tu CAR en lugar de tu rango. (1 chi) Aumenta el radio de efecto a medio
+**Bola de fuego** (2 acciones y 1 chi. Área, Energía, Fuego): Lanzas una explosiva bola de fuego hacia un punto a distancia media que explotará en un radio pequeño, atacando a cada criatura en su área. Aquellas que impactes sufrirán 2d6 + CAR daño fuego y una quemadura leve si logras reducir PV. (1 chi) Aumenta el radio de efecto a medio
 
-**Látigo flamígero** (2 acciones y 1 chi. Área, Energía, Fuego): Ataca a todos los enemigos en una línea media con un látigo de fuego (1d4 + 2 de media) que infligirá los efectos de *toque abrasador* al impactar pero estará modificado por tu estadística de CAR en lugar de tu rango. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
+**Látigo flamígero** (2 acciones y 1 chi. Área, Energía, Fuego): Ataca a todos los enemigos en una línea media con un látigo de fuego que infligirá 1d6 + CAR daño fuego y una quemadura leve (media si logras reducir PV). Todos aquellos afectados que no consigan eliminar la quemadura sufrirán 1d6 + Rango daño fuego al final de la siguiente ronda. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
 
 ## Rango III
 
@@ -31,7 +31,7 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 **Serpiente de fuego** (1 acciones y 2 chi. Energía, Fuego, Concentración): Moldeas el fuego para formar una serpiente hecha de llamas que permanecerá a tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que la serpiente se mueva volando un paso y ataque a un enemigo adyacente, el cual funciona igual que a un *toque abrasador*. En lugar de atacar con la serpiente puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
 
-**Pirotecnia** (2 acciones y 2 chi. Energía, Fuego, Área): Aumentas o disminuyes la fuerza de las llamas del campo de batalla. Esta habilidad te permite llenar todos los espacios que se encuentren llenos de fuego con un *muro de llamas* o disiparlos. Al usar *pirotecnia* todas las criaturas adyacentes a un muro de llamas sufrirán un ataque de *toque abrasador* y dichos espacios se llenarán de un humo espeso que otorga *ocultamiento*, el cual permanecerá durante una ronda.
+**Pirotecnia** (2 acciones y 2 chi. Energía, Fuego, Área): Aumentas la fuerza de las llamas del campo de batalla. Mientras esta habilidad permanezca activa todos los hechizos de magia de fuego lanzados en el área tendrán ventaja. Además  todas las criaturas adyacentes a un muro de llamas sufrirán un ataque de *toque abrasador* y dichos espacios se llenarán de un humo espeso que otorga *ocultamiento*, el cual permanecerá durante una ronda. Esta habilidad permanecerá en el campo de batalla mientras mantengas la concentración en ella.
 
 **Invocar elementales de fuego** (3 acciones y 2 chi. Energía, Fuego, Invocación): Invoca a un elemental de fuego que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
 
@@ -41,7 +41,7 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 **Torbellino de fuego** (2 AP y 2 chi. Energía, Fuego, Área, Concentración): Formas un torbellino de llamas furiosas que hará un ataque de *bola de fuego* contra todas las criaturas en un radio medio (grande si formas el torbellino en una posición afectada por *muro de llamas*) cuyas quemaduras son de un nivel superior. Si tienes activa la habilidad *serpiente de fuego* puedes manipular el torbellino en lugar de la serpiente, moviéndolo un paso como acción bonus y repitiendo el ataque contra todas las criaturas en su radio de efecto. Además, todo el espacio por el que pase saltará en llamas.
 
-**Inmolación** (2 AP y 2 chi. Energía, Fuego, Área): Formas una explosión de fuego centrada en un punto que esté en llamas, haciendo un ataque contra todas las criaturas a distancia media que inflige daño igual a *bola de fuego* cuyas quemaduras son de un nivel superior. Todos los objetivos que se encuentren a distancia corta del punto y se encuentren en un espacio en llamas no podrán defenderse de este ataque. (1 chi, 1/ataque) Tira un dado de daño adicional.
+**Inmolación** (2 AP y 2 chi. Energía, Fuego, Área): Formas una explosión de fuego centrada en un punto que esté en llamas, haciendo un ataque contra todas las criaturas a distancia media que inflige 2d8 + CAR daño y una quemadura media (grave si reduce PV). Todos los objetivos que se encuentren a distancia corta del punto y se encuentren en un espacio en llamas no podrán defenderse de este ataque. (1 chi, 1/ataque) Tira un dado de daño adicional.
 
 ## Rango V
 
@@ -49,7 +49,7 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 **Lluvia de brasas** (3 AP y 3 chi. Energía, Fuego, Área): Haz un ataque contra cada criatura en un cono grande que inflige 2d10 + CAR daño fuego y provoca una quemadura media (grave al reducir PV). Todo el material inflamable en el área de efecto saltará en llamas, provocando un efecto similar a *muro de fuego*.
 
-**Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto.
+**Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe sufrirá 1d10 + rango daño fuego y deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto además de recibir un dado de daño adicional (esto eliminará automáticamente la nube).
 
 **Combustión espontánea** (1 AP y 3 chi. Energía, Fuego, A distancia): Una criatura adyacente a un espacio en llamas o que esté afectada por una quemadura sufre un ataque de *toque abrasador* modificado por tu CAR que provoca una quemadura grave que contará como un ataque sorpresa. Mientras que la criatura continúe afectada por la quemadura grave y se mantenga en tu campo de visión puedes hacer ataques de *toque abrasador* contra ella y toda criatura adyacente a su posición sin importar la distancia que os separe (aún podrá tirar DES para evitarlo)
 
@@ -57,9 +57,9 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 El daño de fuego que provocas pasa a ser fuego puro, atravesando así las resistencias elementales que tengan tus objetivos. 
 
-**Descenso del dragón** (3 AP y 5 chi. Energía, Fuego, Área, Concentración): Creas un gigantesco dragón hecho de llamas que arrasará con todo a tu paso. Al invocar al dragón haz un ataque contra cada criatura en un cilindro horizontal grande que inflige 2d10 + CAR daño fuego y una quemadura grave además de llenar el área afectado con un *muro de llamas*. Mientras mantengas la concentración puedes hacer que el dragón vuele dos pasos como acción bonus y ataque de nuevo a cada criatura en su camino, infligiendo la misma cantidad de daño. Si el dragón permanece a tu lado recibes los beneficios de *muro de fuego*, incluyendo la cubierta que otorga.
+**Infierno abrasador** (3 AP y 5 chi. Fuego, Ambiental): Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Esta habilidad activará los efectos de *pirotecnia* sobre el campo de batalla y mientras permanezca activa tus ataques de *bola de fuego* no te costarán chi. En la cuarta ronda tras la activación inicial todo el campo de batalla erupcionará en una colosal explosión flamígera, permitiéndote hacer un ataque de *lluvia de brasas* contra todos los tus enemigos con un dado de daño adicional. Esta habilidad no necesita tu concentración para sostenerse y puede ser contrarrestada por efectos ambie similares.
 
-# Elemental de fuego
+# Elemental de fuego 
 
 ## Base
 

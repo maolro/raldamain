@@ -33,7 +33,7 @@ Aumenta tu resistencia a daño físico por 1.
 
 Incrementa tu DES por 1. Puedes sumar tu rango en magia de naturaleza a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
 
-**Vínculo primigenio**: Puedes comunicarte con animales, plantas y espíritus y preguntarles información. Obtienes resistencia igual a tu rango a todo el daño elemental
+**Vínculo primigenio**: Puedes comunicarte con animales, plantas y espíritus y preguntarles información. Obtienes resistencia igual a tu rango a todo el daño elemental.
 
 **Puerta arbórea** (2 AP y 2 chi): Abres dos portales separados por una distancia lejana por los cuales cualquier criatura puede viajar mientras mantengas la concentración en ellos. Los portales deben formarse en materia vegetal.
 

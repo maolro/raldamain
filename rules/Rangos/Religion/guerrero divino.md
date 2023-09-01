@@ -17,7 +17,7 @@ Añade tu rango + 1 a todos tus tiros contra miedo, efectos mentales o maldicion
 
 ## Rango II
 
-**Arma sacra** (Divino): Tu arma inflige +1d6 daño de un tipo relacionado con tu dios además del efecto de estado asociado al reducir. (1 chi) El arma de un aliado recibe la misma mejora durante el resto del combate.
+**Arma sacra** (Divino): Tu arma inflige +1d6 daño de un tipo relacionado con tu dios además del efecto de estado asociado al reducir PV. (1 chi) El arma de un aliado recibe la misma mejora durante el resto del combate.
 
 **Armadura consagrada** (Divino) Tu armadura recibe la mejora *material superior* además de resistencia igual a su defensa base contra un tipo de daño de tu elección. (1 chi) La armadura de un aliado recibe la misma resistencia durante el resto del combate.
 

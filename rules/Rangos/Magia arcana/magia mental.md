@@ -51,4 +51,4 @@ Usar *asalto mental* y *detectar pensamientos* te cuestan -1 AP
 
 ## Rango VI  
 
-**Ráfaga mental** (3 Accy 5 chi): Haz un ataque de *destrozar mente* contra todas las criaturas cuyas mentes puedas detectar que al impactar *aturdirá* durante una ronda. Si logras reducir la cordura de un objetivo a 0 con esta habilidad puedes escoger matarlo instantáneamente de un derrame cerebral. Todos los objetivos con *mente en blanco* o *escudo mental* en el área perderán su habilidad durante el resto del combate salvo que paguen 1 chi (3 chi para *mente en blanco*).
+**Ráfaga mental** (3 Acciones y 5 chi): Haz un ataque de *destrozar mente* contra todas las criaturas cuyas mentes puedas detectar que al impactar *aturdirá* durante una ronda. Si logras reducir la cordura de un objetivo a 0 con esta habilidad puedes escoger matarlo instantáneamente de un derrame cerebral. Todos los objetivos con *mente en blanco* o *escudo mental* en el área perderán su habilidad durante el resto del combate salvo que paguen 1 chi (3 chi para *mente en blanco*).

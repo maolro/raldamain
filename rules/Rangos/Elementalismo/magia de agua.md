@@ -1,13 +1,11 @@
----
- title: Magia de Agua
+title: Magia de Agua
 category: Magia elemental
----
 
 Esta magia te permite tener un control absoluto sobre el agua cuando esta se encuentra en estado fluido, pudiendo así aprovecharte de sus propiedades para emplearla en multitud de formas. A medida que tu control va en aumento serás capaz de mayores proezas que involucren al agua en un estado más salvaje, empleándola para formar fuertes torrentes o colosales olas capaces de devastar todo a su paso.
 
 # Rangos	
 
-## Rango I 
+## Rango I 			
 
 Añade tu rango a todos tus ataques hechos con magia elemental de agua y aumenta tu reserva de chi por 2 + rango.
 
@@ -31,7 +29,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los 
 
 **Prisión de agua** (1 AP y 2 chi. Agua, Concentración): Haz un ataque de magia de agua que al impactar *agarrará* al objetivo con una esfera de aguas rugientes. Mientras el objetivo esté *agarrado* empezará a ahogarse y para escapar deberá usar atletismo en lugar de heroísmo (la resistencia a *agarres* no se aplica). Si el objetivo se encuentra sumergido en el agua no podrá defenderse de este ataque salvo tirando FUE. (1 chi) Afecta a un objetivo adicional.
 
-**Controlar el agua** (3 AP y 2 chi. Agua, Concentración, Ambiental): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a l	ejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
+**Controlar el agua** (3 AP y 2 chi. Agua, Concentración, Ambiental): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a lejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
 
 **Invocar elementales de agua** (3 AP y 2 chi. Agua, Invocación): Invoca a un elemental de agua que permanecerá a tu lado durante el combate. Al mejorar de rango cada elemental creado tendrá una mejora adicional. No puedes controlar a más de 4 elementales a la vez.
 
@@ -41,7 +39,7 @@ Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los 
 
 **Escaldar** (1 AP y 2 chi. Agua): Durante esta ronda todos tus ataques de magia de agua provocan 1d6 + rango daño adicional de fuego y una quemadura leve al reducir PV. Si usas esta habilidad en una superficie de agua todas las criaturas en ella sufrirán 1d6 + rango daño de fuego y una quemadura leve (media si reduce PV) sin la posibilidad de defenderse. Este daño fuego ignorará todas las resistencias al fuego que tenga el objetivo al tratarse de agua abrasante.
 
-**Taladro de agua** (2 AP y 2 chi. Agua, Ár): Haz un ataque de *torrente* con un dado de daño adicional que atacará a todos los objetivos en un cilindro horizontal grande de radio pequeño. Este ataque destruirá también todas las estructuras frágiles y muros en el área.
+**Taladro de agua** (2 AP y 2 chi. Agua, Área): Haz un ataque de *torrente* con un dado de daño adicional que atacará a todos los objetivos en un cilindro horizontal grande de radio pequeño. Este ataque destruirá también todas las estructuras frágiles y muros en el área.
 
 ## Rango V
 
@@ -51,7 +49,7 @@ Sustituye los dados de daño de todos los hechizos de magia de agua a d10.
 
 **Lluvia torrencial** (3 AP y 3 chi. Agua, Ambiental): Invocas una lluvia torrencial que llenará el campo de batalla con una gran cantidad de agua y oscurecerá la visión, provocando así los efectos de *controlar el agua* y *neblina*. La lluvia permanecerá durante el resto del combate y todas las masas de agua en el área empezarán a desbordarse, provocando inundaciones en el área cercana a ellos. Esta habilidad no puede ser usada en entornos donde el clima no lo permita.
 
-**Vapores abrasantes** (3 AP y 3 chi. Agua, Concentración, Aflicción): Evaporas el agua en un espacio medio para formar una nube de vapor abrasante del mismo tamaño, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de agua o sufrirán 1d10 + CAR daño fuego y una quemadura leve (media si reduce PV). Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá sufrirá 2 daño fuego y una quemadura leve. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración.
+**Vapores abrasantes** (3 AP y 3 chi. Agua, Concentración, Aflicción): Evaporas el agua en un espacio medio para formar una nube de vapor abrasante del mismo tamaño, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de agua o sufrirán 1d10 + CAR daño fuego y una quemadura leve (media si reduce PV). Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá sufrirá 2 daño fuego y una quemadura leve. La nube permanecerá en el campo de batalla  hasta que pierdas la concentración.
 
 ## Rango VI
 
@@ -126,13 +124,13 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 
 **Controlar el agua:** Activar esta habilidad te cuesta una acción bonus y no se disipará si pierdes la concentración, sustentándose solo con tu poder mítico.
 
-**Invocar elementales de agua:** Puedes un espíritu de agua con esta habilidad de nivel máximo igual a tu rango total x 2. No podrán invocarse criaturas míticas con esta habilidad.
+**Invocar elementales de agua:** Puedes invocar a un espíritu de agua con esta habilidad de nivel máximo igual a tu rango total x 2. No podrán invocarse criaturas míticas con esta habilidad.
 
 ## Rango IV
 
 **Vórtice:** El vórtice aumenta su tamaño a grande, recibe un dado de daño adicional y las criaturas agarradas no podrán escapar por su cuenta si tienen FUE 9 o menos. Si el vórtice se crea en el agua tendrá tamaño extremo y será capaz de agarrar hasta barcos enteros.
 
-**Escaldar:** Los ataques mejorados con esta habilidad provocan un daño de fuego adicional y aumentan todas las quemaduras provocadas por un paso. Lo mismo ocurre al afectar una superficie de agua.
+**Escaldar:** Los ataques mejorados con esta habilidad provocan 1d6 daño fuego adicional y aumentan todas las quemaduras provocadas por un paso. Lo mismo ocurre al afectar una superficie de agua.
 
 **Taladro de agua:** El taladro aumenta su radio a medio, tirará un dado de daño adicional y empujará un paso adicional al impactar. El taladro tendrá la fuerza suficiente para arrollar con cualquier barrera mágica y es capaz de perforar piedra y acero, impidiendo que las criaturas no-míticas puedan usar *parada* para bloquearlo.
 

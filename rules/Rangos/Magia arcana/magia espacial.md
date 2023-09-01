@@ -1,5 +1,5 @@
 ---
-title: Magia Espacial
+=title: Magia Espacial
 category: Magia arcana
 ---
 

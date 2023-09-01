@@ -1,5 +1,5 @@
 ---
-title: Magia de Aire
+  title: Magia de Aire
 category: Magia elemental
 ---
 Tienes un control absoluto sobre el elemento que se encuentra en casi todas las partes del planeta, el aire, pudiendo manipularlo a tu antojo para servirte de sus cualidades. Cuanto más profundices en el control de este elemento, mayor será la cantidad de aire que podrás manejar pudiendo crear desde leves brisas de aire hasta feroces huracanes. Al alcanzar la cúspide de tu poder serás capaz de manipular el propio clima para crear devastadores desastres naturales.
@@ -96,3 +96,17 @@ Sustituye los dados de daño de todos los hechizos de magia de aire a d10.
 - Puede usar la habilidad *tajo de los vientos* empleando 3 AP sin la necesidad de gastar chi
 - Al agarrar a una criatura puede emplear 1 AP para usar *robar el aire* contra ella
 - Empleando 2 AP puede cambiar de estado para transformarse en un *tornado,* infligiendo dicho ataque contra las criaturas en su área de efecto. Mientras permanezca en este estado perderá sus acciones pero podrá moverse una vez por ronda como acción bonus.
+
+# Niveles míticos
+
+## Rango I
+
+## Rango II
+
+## Rango III
+
+## Rango IV
+
+## Rango V
+
+## Rango VI
