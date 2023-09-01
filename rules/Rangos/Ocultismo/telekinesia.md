@@ -1,5 +1,5 @@
 ---
-  title: Telequinesia
+title: Telequinesia
 category: Ocultismo
 ---
 
@@ -39,11 +39,11 @@ Reduce el coste de *manipulación telequinética* y *onda de fuerza* por 1. Pued
 
 **Estrangulación telequinética** (2 AP y 2 chi, Telekinesia, Concentración, Maniobra): Haz un ataque de *agarre telequinético* que al impactar empezará a estrangular al objetivo, *fatigándolo* de inmediato. Si este no logra escapar tras una cantidad de rondas igual a su CON caerá *inconsciente* y morirá tras una ronda si no es liberado. Puedes emplear 2 AP para reducir la cantidad de rondas que puede sobrevivir por 1. (1 chi) Afecta a un objetivo adicional
 
-**Batidora humana** (2 AP y 2 chi, Telekinesia, Maniobra, Concentración): Haz un ataque con telekinesia contra un objetivo a distancia media que al impactar lo retendrá en una *barrera de fuerza* que lo rodeará por completo. Mientras la criatura permanezca en esa barrera empezará a ser estampado furiosamente contra las paredes de esta, sufriendo 2d6 + INT daño físico al principio de su turno y sufriendo el efecto de estado *náuseas* durante una ronda. El afectado puede intentar escapar de la misma manera que una *barrera de fuerza.*
+**Batidora humana** (2 AP y 2 chi, Telekinesia, Maniobra, Concentración): Haz un ataque con telekinesia contra un objetivo a distancia media que al impactar lo retendrá en una *barrera de fuerza* que lo rodeará por completo. Mientras la criatura permanezca en esa barrera empezará a ser estampado furiosamente contra las paredes de esta, sufriendo 2d6 + INT daño físico al principio de su turno y el efecto de estado *náuseas* durante una ronda. El afectado puede intentar escapar de la misma manera que una *barrera de fuerza.*
 
 ## Rango V
 
-Puedes coger un objeto grande con *manipulación telequinética*, aumentando su daño base a 1d1o.
+Puedes coger un objeto grande con *manipulación telequinética*, aumentando su daño base a 1d10.
 
 **Tormenta telequinética** (3 AP y 3 chi, Telekinesia, Área, Físico): Levanta una gran cantidad de objetos y empléalos para atacar a todos los objetivos en un radio medio centrado en cualquier punto a distancia lejana. Este ataque infligirá 3d10 + INT daño físico al impactar y toda el área afectada se convertirá en terreno difícil.
 
@@ -53,7 +53,7 @@ Puedes coger un objeto grande con *manipulación telequinética*, aumentando su 
 
 ## Rango VI
 
-**Manipulación universal** (3 AP y 5 chi, Telekinesia, Concentración): Mueves una gran cantidad de objetos para formar un coloso en torno a tu cuerpo que actuará como una extensión de él. Mientras esta habilidad permanezca activa recibirás 45 PV temporales y esta cesará cuando se te acaben los PV temporales, pierdas la concentración o pasen seis rondas. Obtendrás también los siguientes beneficios:
+**Manipulación universal** (3 AP y 5 chi, Telekinesia, Concentración): Mueves una gran cantidad de objetos para formar un coloso en torno a tu cuerpo que actuará como una extensión de él. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales, pierdas la concentración o pasen seis rondas. Obtendrás también los siguientes beneficios:
 
 - Eres inmune a todos los efectos de toque y a aquellos que provoquen daño de antienergía.
 - Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.

@@ -21,7 +21,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incre
 
 **Tierra viva** (2 AP y 1 chi): La tierra en un punto a distancia media de ti erupciona furiosamente, atacando a todas las criaturas en un radio corto a él. Esto funciona como un ataque de *pedrada* con un dado de daño adicional que convertirá el área de efecto en *terreno difícil*.
 
-**Moldear la tierra** (3 AP y 1 chi): Moldea una cantidad de tierra que ocupa un radio pequeño como desees, formando terreno difícil, barreras o fosos en las posiciones donde desees o eliminar esos mismos efectos del terreno. Al luchar en dicho terreno recibirás ventaja en todos tus tiros relacionados con magia de tierra. (1 chi) Aumenta el radio a medio. 
+**Moldear la tierra** (3 AP y 1 chi): Moldea una cantidad de tierra que ocupa un radio grande como desees, formando terreno difícil, barreras o fosos en las posiciones donde desees o eliminar esos mismos efectos del terreno. Al luchar en dicho terreno recibirás ventaja en todos tus tiros relacionados con magia de tierra. 
 
 ## Rango III
 
@@ -45,9 +45,9 @@ Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obst
 
 **Terremoto** (3 AP y 3 chi): Liberas una onda expansiva que llena un radio lejano, llenándolo con *terreno difícil* y provocando los efectos de *derrumbamiento* a todas las estructuras frágiles en el área. Todas las criaturas en el área deberán tirar FUE o caerán al suelo y si te concentras en dicho efecto puedes prolongarlo una cantidad adicional de rondas igual a tu rango – 1.
 
-**Brecha** (3 AP y 3 chi): Formas una profunda brecha de gran longitud y profundidad. Todas las criaturas en su área de efecto deberán tener éxito en un tiro de DES o caerán por la brecha, sufriendo 3d6 daño de caída y una herida leve además de caer al suelo.
+**Brecha** (3 AP y 3 chi): Formas una profunda brecha de gran longitud y profundidad. Todas las criaturas en su área de efecto deberán tener éxito en un tiro de DES o caerán por la brecha, sufriendo 3d6 daño de caída y una herida leve además de caer al suelo. Dentro de una brecha pueden ser afectadas por un *derrumbamiento*. 
 
-**Bastión de piedra** (3 AP y 3 chi): Crea una gran fortaleza de piedra que llenará un cubo con lado de longitud grande. Este bastión tendrá la estructura interna que desees y otorgará *cubierta completa* a todas las criaturas en él. Su estructura externa está formada por cuatro grandes *muros de piedra* con el doble de PV que son inmunes a todo el daño de armas no-mágicas.dentro de una brecha pueden ser afectadas por un *derrumbamiento*. 
+**Bastión de piedra** (3 AP y 3 chi): Crea una gran fortaleza de piedra que llenará un cubo con lado de longitud grande. Este bastión tendrá la estructura interna que desees y otorgará *cubierta completa* a todas las criaturas en él. Su estructura externa está formada por cuatro grandes *muros de piedra* con el doble de PV que son inmunes a todo el daño de armas no-mágicas.
 
 ## Rango VI
 
@@ -68,9 +68,9 @@ Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obst
 - **Acciones:** 4
 - **Rangos:** Tiene rango I en un arma de tu elección
 - **Habilidades:**
-  - *Georradar:* Puede sentir la posición de todas las criaturas en contacto con la tierra a distancia medi
+  - *Georradar:* Puede sentir la posición de todas las criaturas en contacto con la tierra a distancia media
   - *Ataque elemental*: El elemental recibe las acciones de ataque *pedrada* y *terratemblor* (recarga 5-6) usando su estadística de FUE y un bonificador +1
-  - *Ataques infundidos*: Tira un dado de daño adicional al impactar con un ataque cuerpo a cueque inflija daño contundente y este cuenta como si tuviera *material superior*.
+  - *Ataques infundidos*: Tira un dado de daño adicional al impactar con un ataque cuerpo a cuerpo que inflija daño contundente y este cuenta como si tuviera *material superior*.
 
 ## Mejora 1 (+2 nivel)
 

@@ -1,5 +1,5 @@
 ---
-title: Factores adicionales
+ title: Factores adicionales
 ---
 
 En un combate ocurren todo tipo de situaciones que facilitan o dificultan una acción, dando dinamismo a una pelea y haciéndola más impredecible. Estos factores se especifican en la siguiente lista y numerosas habilidades hacen referencia a ellos, haciendo imprescindible que un jugador conozca cómo funcionan.

@@ -51,4 +51,11 @@ Incrementa tu SAB por 1.
 
 **Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del aire te obedecen y el daño eléctrico que provocas atravesará resistencias. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al daño eléctrico como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
 
-**Forma elemental** (3 AP y 3 chi): Invoca un *elemental de aire* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. No obstante carecerás de la inmunidad al daño físico que tiene el elemental.
+**Forma elemental** (3 AP y 5 chi): Adoptas la forma de un poderoso elemental de aire, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+
+- Recibes inmunidad al daño no-mágico, veneno, efectos mentales y cualquier tiro de FUE cuya fuente sea física (Magia gravitatoria, magia de agua y telekinesia son excepciones),
+- Tu resistencia mágica y tu resistencia al daño eléctrico y truenopasan a ser 14. Tus estadísticas de DES, FUE y CON pasan a ser 13. Recibes también nivel de talento 5 en heroísmo.
+- Te regeneras 4 Vitalidad al principio de tu turno y la habilidad *controlar el aire* estará siempre activa a tu alrededor sin la necesidad de emplear acciones o chi además que obtendrás velocidad de vuelo 2.
+- Puedes emplear el hechizo *vendaval* empleando 1 AP con bonificador de ataque +15 y provocando 1d10 + 8 daño contundente al impactar. Empleando una acción adicional puedes mejorar el ataque para realizar un hechizo entre *agarre de los vientos* o *esfera del aire*. 
+- Recibes parada de aire con bonificador +15 y puedes usar *muro de aire* una vez por ronda reacción para detener un ataque (esto se acumula con el hechizo base)
+- Estás siempre rodeado del hechizo *tornado*
