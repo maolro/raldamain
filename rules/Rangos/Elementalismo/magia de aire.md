@@ -8,13 +8,52 @@ Tienes un control absoluto sobre el elemento que se encuentra en casi todas las 
 
 Añade tu rango a todos tus ataques hechos con magia elemental de aire e incrementa tu reserva por 2 + rango chi.
 
-**Vendaval** (2 AP. Aire, Maniobra): Haz un ataque elemental contra un objetivo a distancia media contra el cual deberá defenderse con su FUE. Si logras impactar este será empujado un paso hacia atrás y caerá *tropezado* si choca con una pared. (1 chi) Ataca a un objetivo adicional.
+### Vendaval
 
-**Lanzamiento** (2 AP. Aire, A distancia, Físico): Empleas el viento para lanzar un objeto a un enemigo que se encuentre a una distancia lejana, lo cual es un ataque físico que inflige 1d6 + CAR daño al impactar del tipo según el objeto empleado (1 chi) Lanzas otro objeto hacia un objetivo adicional o +1d6 daño y *tropiezas* al impactar.
+*Aire, Maniobra, Físico* 
 
-**Viento furibundo** (2 AP y 1 chi. Aire, Área, Físico, Maniobra): Ataca a todos los enemigos a distancia corta con un ataque elemental que inflige 1d6 + CAR daño contundente y los empuja un paso hacia atrás. (1 chi) Al principio de tu siguiente turno haz el mismo ataque como acción bonus sin la necesidad de gastar más chi.
+> **Precio**: 2 acciones 
+>
+> **Alcance**: Medio 
+>
+> **Efecto crítico**: Tu objetivo sufre una herida permanente leve
+>
+> **Duración**: Instantánea 
 
-**Parada elemental** (reacción, Aire) Eres capaz de emplear tu elemento para defenderte de ataques, permitiéndote usar tu tiro de magia de aire de manera defensiva. Una parada elemental sólo puede protegerte ataques físicos a distancia, gases y ataques pertenecientes a magia de fuego, aire, agua o evocación que no sean de área.
+Soplas una poderosa ráfaga de viento para desequilibrar a tu objetivo. Un objetivo que alcances debe superar una prueba de Heroísmo o Acrobacia contra tu magia de Aire o será empujado un paso hacia atrás y será *tropezado*. Si tu objetivo no puede ser empujado hacia atrás sufrirá 1d6 + CAR daño contundente al fracasar su prueba.
+
+Este hechizo también se puede utilizar para empujar objetos de un tamaño similar, requiriendo sólo una prueba de dificultad elegida por el DJ si son particularmente grandes o pesados. 
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional que alcances con este hechizo
+
+### Tajo de los vientos
+
+*Aire, Ataque, A Distancia, Físico* 
+
+> **Precio**: 2 acciones 
+>
+> **Alcance**: Medio 
+>
+> **Efecto crítico**: Tu objetivo sufre una *herida permanente leve*
+>
+> **Duración**: Instantánea 
+
+Concentras el poder de los vientos en un espacio pequeño para crear una intensa ráfaga de aire capaz de cortar la carne. Haz un ataque con magia de Aire contra un objetivo en tu alcance que inflige 1d6 + CAR de daño cortante al impactar. Este ataque ignora todas las resistencias a los ataques a distancia y todos los beneficios otorgados por *ocultamiento*. 
+
+**Empoderar** (1 chi): Haz un ataque contra un objetivo adicional en tu alcance
+
+### Viento furibundo 
+
+*Aire, Ataque, Área, Físico*
+
+> **Coste**: 2 acciones y 1 chi
+> **Tamaño**: Línea mediana
+> **Efecto crítico**: Tu objetivo sufre una *herida permanente leve* y es *tropezado*
+> **Duración**: Instantánea 
+
+Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Realiza un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + CAR de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
+
+**Empoderar** (1 chi): Los vientos siguen siendo fuertes durante la siguiente ronda, convirtiendo el área afectada por tu ataque en un *terreno difícil*. Todas las criaturas que comiencen su turno allí o se muevan al espacio afectado deben superar una prueba de Heroísmo o Acrobacia o serán empujadas hacia atrás un paso y caerán *tropezad*
 
 ## Rango II
 
