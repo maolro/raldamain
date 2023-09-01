@@ -1,0 +1,5 @@
+---
+title: Weapons
+layout: summary
+---
+
