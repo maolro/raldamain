@@ -3,8 +3,6 @@ title: Armas pesadas
 category: Armas
 ---
 
-
-
 # Rangos
 
 ## Rango I
