@@ -9,13 +9,40 @@ category: Ocultismo
 
 Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumentas tu reserva de chi por rango + 2.
 
-**Toque sanador** (2 AP, Vida, Sanación, Toque): Un personaje adyacente se sana 2 + rango Vitalidad. (1 chi) El objetivo reduce el nivel de una herida permanente, veneno o enfermedad por un paso.
+### Toque sanador
 
-**Descarga luminosa** (2 AP, Vida, A distancia, Energía): Haz un ataque con magia de vida contra un objetivo a distancia media que inflige 1d6 + rango daño radiante y *ciega* si reduce PV. Este ataque no puede ser esquivado. (1 chi) Afectas a un objetivo adicional
+*Vida, Sanación, Toque*
+**Precio**: 2 acciones
+**Alcance**: Toque
+**Duración**: Instantánea
 
-**Halo cegador** (2 AP y 1 chi, Vida, Área, Visual): Aumenta la luminosidad en una distancia media y todos los objetivos a una distancia corta de ti deben tirar DES frente a tu magia de vida o quedarán *cegados* durante una ronda. Este ataque inflige además 1d6 + rango daño radiante contra todos los enemigos sensibles a la luz. (1 chi) Este efecto permanece activo una ronda adicional, causando que los enemigos que estén mirándote directamente tengan desventaja en todos sus tiros.
+Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado al que puedas tocar se sana Vitalidad igual a tu Rango + 2. 
 
-**Parada elemental** (reacción, Vida, Defensiva): Tu conexión con la vida te permite manifestar la energía vital como un escudo para protegerte de ataques. Una parada luminosa sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo. 
+**Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción en fase 1.
+
+### Rayo de luz
+
+*Vida, Ataque, A distancia, Radiante*
+**Coste**: 2 acciones
+**Alcance**: Medio
+**Efecto crítico:** El objetivo queda *cegado* durante una ronda.
+**Duración**: Instantánea
+
+Atacas a tu enemigo con un rayo de luz cegadora. Realiza un ataque con Magia de Vida contra un objetivo a distancia media que inflige 1d6 + Rango daño Radiante al impactar. Este ataque no puede ser Esquivado por objetivos a distancia corta de ti.
+
+**Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo distinto a distancia media.
+
+### Halo cegador
+
+*Vida, Visual, Área, Radiante*
+**Coste**: 2 acciones y 1 chi
+**Alcance**: Propio
+**Tamaño**: Radio corto
+**Efecto crítico**: Los objetivos afectados quedarán *cegados* hasta que reciban curación
+**Duración**: Instantánea
+
+Emites una ráfaga de luz abrasadora que ciega a todos los que te rodean. Todas las criaturas hostiles a corta distancia deben tener éxito en un chequeo de CON contra tu magia de Vida o recibir 1d6 + Rango de magia radiante y quedar ciegas durante un asalto. Este hechizo también disipará todos los hechizos de Sombra en tu radio.
+Aumentar (1 chi): Tu cuerpo continúa brillando con una luz cegadora hasta el comienzo de tu siguiente turno, concediendo Desventaja a todos los ataques a distancia realizados contra ti y obligando a todas las criaturas que entren en una posición a corto alcance a tener éxito en un chequeo de CON contra tu magia de Vida o quedar cegadas durante un asalto.
 
 ## Rango II
 
