@@ -12,7 +12,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de aire e increme
 
 *Aire, Maniobra, Físico* 
 
-> **Precio**: 2 acciones 
+> **Coste**: 2 acciones 
 >
 > **Alcance**: Medio 
 >
@@ -53,7 +53,7 @@ Concentras el poder de los vientos en un espacio pequeño para crear una intensa
 
 Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Realiza un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + CAR de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
 
-**Empoderar** (1 chi): Los vientos siguen siendo fuertes durante la siguiente ronda, convirtiendo el área afectada por tu ataque en un *terreno difícil*. Todas las criaturas que comiencen su turno allí o se muevan al espacio afectado deben superar una prueba de Heroísmo o Acrobacia o serán empujadas hacia atrás un paso y caerán *tropezad*
+**Empoderar** (1 chi): Los vientos siguen siendo fuertes durante la siguiente ronda, convirtiendo el área afectada por tu ataque en un *terreno difícil*. Todas las criaturas que comiencen su turno allí o se muevan al espacio afectado deben superar una prueba de Heroísmo o Acrobacia o serán empujadas hacia atrás un paso y caerán *tropezadas*.
 
 ## Rango II
 
