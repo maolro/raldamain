@@ -3,6 +3,8 @@ title: Armas pesadas
 category: Armas
 ---
 
+
+
 # Rangos
 
 ## Rango I
@@ -47,7 +49,7 @@ Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te ro
 
 ### Golpe aturdidor
 
-*Pesado, Mejora, Físico*
+*Pesado, Mejora, Físico, Aturdidor*
 
 **Coste**: 1 vigor
 
@@ -86,9 +88,7 @@ Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. Tras impactar 
 *Pesado, cuerpo a cuerpo, físico*
 
 **Coste**: 2 acciones y 2 vigor
-
 **Alcance**: Cuerpo a cuerpo
-
 **Tamaño**: Línea media
 
 Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruzarse en tu camino. Avanza un paso en cualquier dirección que elijas y realiza un ataque con tu arma contra cada enemigo que en tu camino que inflige 1d6 puntos de daño adicionales y empuja un paso al impactar. 
@@ -116,7 +116,6 @@ Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador ant
 *Pesado, Ataque, Cuerpo a cuerpo, Área, Físico*
 
 **Coste**: 2 acciones y 2 vigor
-
 **Tamaño**: Radio corto
 
 Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige 2d6 puntos de daño adicionales y los *tropieza* al impactar. 
@@ -126,7 +125,6 @@ Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus e
 *Pesado, Defensivo*
 
 **Coste**: 2 acciones y 2 vigor
-
 **Duración**: Concentración
 
 Tu maestría con un arma pesada te permite utilizarla como escudo para protegerte de ataques poderosos. Una vez que activas esta habilidad obtienes *contadores de escudo* iguales a tu rango, que permanecerán hasta que pierdas la concentración o seas desarmado. Tus contadores de escudo sólo pueden utilizarse para reducir el daño de ataques cuerpo a cuerpo y ataques a distancia de un tamaño y velocidad adecuados.
@@ -146,9 +144,7 @@ Estás dispuesto a arriesgar tu propia vida para herir a tu enemigo. Esta habili
 *Pesado, Ataque, Cuerpo a cuerpo, Físico*
 
 **Coste**: 1 acción y 3 vigor
-
 **Alcance**: Cuerpo a cuerpo
-
 **Efecto crítico:** tu objetivo recibe una *herida permanente crítica*.
 
 Concentras toda tu energía en un único ataque capaz de matar incluso a los enemigos más poderosos. Realiza un ataque de ataque con arma que inflige 3d6 puntos de daño adicionales al impactar junto con una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
@@ -157,7 +153,7 @@ Concentras toda tu energía en un único ataque capaz de matar incluso a los ene
 
 *Pesado, Mejora, Cuerpo a cuerpo, Físico*
 
-**Coste**: 3 aguante
+**Coste**: 3 vigor
 
 Golpeas con extrema velocidad y luego utilizas la inercia para golpear de nuevo con aún más potencia. Una vez que realizas un ataque puedes realizar un segundo golpe como acción adicional contra el mismo objetivo que inflige 2d6 puntos de daño adicionales y puede ser mejorado con otras habilidades. Tu objetivo debe emplear el mismo resultado de su tirada defensiva contra tu ataque anterior.
 

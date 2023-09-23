@@ -1,5 +1,5 @@
 ---
-  title: Magia de Aire
+title: Magia de Aire
 category: Magia elemental
 ---
 Tienes un control absoluto sobre el elemento que se encuentra en casi todas las partes del planeta, el aire, pudiendo manipularlo a tu antojo para servirte de sus cualidades. Cuanto más profundices en el control de este elemento, mayor será la cantidad de aire que podrás manejar pudiendo crear desde leves brisas de aire hasta feroces huracanes. Al alcanzar la cúspide de tu poder serás capaz de manipular el propio clima para crear devastadores desastres naturales.
@@ -46,10 +46,10 @@ Concentras el poder de los vientos en un espacio pequeño para crear una intensa
 
 *Aire, Ataque, Área, Físico*
 
-> **Coste**: 2 acciones y 1 chi
-> **Tamaño**: Línea mediana
-> **Efecto crítico**: Tu objetivo sufre una *herida permanente leve* y es *tropezado*
-> **Duración**: Instantánea 
+**Coste**: 2 acciones y 1 chi
+**Tamaño**: Línea mediana
+**Efecto crítico**: Tu objetivo sufre una *herida permanente leve* y es *tropezado**
+***Duración**: Instantánea 
 
 Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Realiza un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + CAR de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
 
