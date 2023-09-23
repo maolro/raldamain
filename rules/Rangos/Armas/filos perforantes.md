@@ -59,3 +59,63 @@ Un arma de filo perforante base hace 1d6 + FUE daño perforante y tiene alcance 
 - **Cuchilla:**· El arma está dotada de varias cuchillas con las que puede infligir letales cortes. 1d6 + FUE daño cortante. +1 nivel heridas si el objetivo tiene 4 o menos DEF, pero apuntar cuesta +1 acción
 - **Retráctil:** El arma tiene la capacidad de encogerse con gran velocidad, permitiéndote mantenerla oculta y atacar cuándo tu objetivo menos se lo espera. Un arma retráctil es indetectable a primera vista y con ella podrás realizar ataques sorpresa, aunque tu objetivo te vea. Si atacas a una persona que te esté vigilando esta tendrá la oportunidad de tirar percepción o averiguar intenciones contra tus dados de ataque, dándose cuenta de tu arma si tiene éxito en el tiro. Como consecuencia de su versatilidad las armas retráctiles son muy frágiles y se romperán inmediatamente si las empleas para detener un arma que no tenga la característica *sutil*, *ligera* o *duelo*.
 - **Aguijón:** Tu cuerpo tiene un aguijón capaz de perforar a tus enemigos de la misma manera que una daga. Un aguijón infligirá 1d6 + FUE daño al impactar (1d8 si eres grande y 1d10 si eres gigante) y recibes *golpe destructor* a rango III pero dicha habilidad se aplicará a *ataque apuntado* en lugar de *ataque poderoso.* Solo puede usar esta arma si tus características fisiológicas lo permiten.
+
+# Rangos
+
+## Rango I
+
+### Ataque con arma
+
+### Combate furtivo
+
++DES al daño si tiene ventaja/desventaja
+
+### Impacto penetrante
+
+**Coste:** 1 vigor
+
+Ignora DEF del objetivo
+
+## Rango II
+
+### Clavar arma
+
+**Coste:** 1 vigor
+
+Inflige +1d6 daño y clava el arma, infligiendo desventaja al objetivo
+
+### Ataque oculto
+
+**Coste:** 1 vigor
+
+Objetivo tira percepción y si falla 
+
+## Rango III
+
+### Clavar arma
+
+**Coste:** 1 vigor
+
+Inflige +1d6 daño y clava el arma, infligiendo desventaja al objetivo
+
+## Rango IV
+
+### Combinar técnicas
+
+**Coste:** 2 vigor
+
+Hace ataque como acción bonus.
+
+## Rango V
+
+### Combinar técnicas
+
+**Coste:** 2 vigor
+
+Hace ataque como acción bonus.
+
+## Rango VI
+
+### Maestría de armas ligeras
+
+Recibe +2 técnicas de armas

@@ -31,7 +31,7 @@ Aumenta el daño de exorcizar a 1d8
 
 **Viaje astral** (3 acciones y 2 chi): Separas tu alma de tu cuerpo para convertirte en un ser incorpóreo. Mientras permanezcas en este estado puedes herir a criaturas espectrales y eres inmune a todo el daño no-mágico. Las heridas recibidas en estado incorpóreo no repercutirán en tu cuerpo físico, el cual caerá inconsciente mientras dure este efecto. *Viaje astral* durará una hora o hasta que tu cuerpo material sea herido.
 
-**Canalización superior**: Al usar *canalizar ánima* aumentas una estadística por 2 y recibes un rango adicional de tu elección, el cual permanecerá activo solo mientras canalices. Además mientras estés canalizando obtienes los mismos sentidos que el espectro, recibiendo así 
+**Canalización superior**: Al usar *canalizar ánima* aumentas una estadística por 2 y recibes un rango adicional de tu elección, el cual permanecerá activo solo mientras canalices. Además mientras estés canalizando obtienes los mismos sentidos que el espectro.
 
 **Armonizar** (2 acciones y 2 chi): Todos los espectros en un área grande deberán mostrarse y sufren un ataque inmediato de *exorcizar*. Si mantienes la concentración en este efecto todos tus ataques de *exorcizar* te costarán una acción menos y cuando pasen 4 rondas todos los espectros en el área morirán instantáneamente.
 
