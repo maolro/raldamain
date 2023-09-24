@@ -23,11 +23,8 @@ Magia de Evocación se adhiere a un conjunto de reglas fundamentales que sustent
 *Evocación, Arcano, Ataque, A distancia*
 
 **Coste:** 2 acciones
-
 **Alcance:** Medio
-
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
-
 **Duración:** Instantáneo
 
 Concentras energía mágica en la forma de un rayo para atacar a tus enemigos. Haz un ataque contra un enemigo que alcances que inflige 1d6 + Rango daño Arcano. Este ataque no puede ser Esquivado por criaturas a distancia corta.
@@ -52,11 +49,8 @@ A rangos superiores podrás obtener afinidad con nuevos elementos y aprender hec
 *Evocación, Arcano, Ataque, Área*
 
 **Coste:** 2 acciones y 1 chi
-
 **Tamaño:** Cono pequeño
-
 **Efecto crítico:** Los afectados sufren una *herida permanente leve*
-
 **Duración:** Instantáneo
 
 Liberas la energía mágica de tu interior en forma de una poderosa descarga. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + INT daño Arcano al impactar. Aquellos enemigos que eviten tu ataque sufrirán la mitad del daño total.
@@ -72,11 +66,8 @@ Aprendes dos hechizos de Rango I pertenecientes a una magia asociada a tu Especi
 *Evocación, Arcano, Defensivo, Duradero*
 
 **Coste:** 1 acción y 1 chi
-
 **Alcance:** Medio
-
 **Tamaño:** Línea mediana o esfera pequeña
-
 **Duración:** Concentración
 
 Moldeas la energía mágica en forma de un muro para detener ataques enemigos. El muro emergerá de cualquier espacio que alcances y tendrá la forma de una línea mediana o una esfera pequeña. Como barrera tiene PV iguales a tu Rango x 3 y es inmune al daño físico no-mágico (ataques físicos de grandes dimensiones como cañonazos sí que funcionarán). El muro permanecerá en el campo de batalla hasta que pierdas la concentración o sea eliminado.
@@ -92,9 +83,7 @@ Este hechizo puede ser empleado defensivamente para protegerte a ti o a un aliad
 *Evocación, Arcano, Mejora, Toque, Duradero*
 
 **Coste:** 3 acciones y 1 chi
-
 **Alcance:** Cuerpo a cuerpo
-
 **Duración:** Una hora
 
 Infundes un arma física que puedas tocar con un hechizo específico para mejorar su fuerza. Un arma encantada de esta manera contará como Arcana para los propósitos de resistencias e incrementará la reserva de chi del portador por 1. La infusión durará una hora y puede ser suprimida por habilidades capaces de anular efectos de objetos mágicos y tecnológicos.
@@ -112,7 +101,6 @@ Tus hechizos de Evocación convierten sus dados de daño a d8 y los de Rango I r
 *Evocación, Arcano, Duradero, Defensivo*
 
 **Coste:** 2 acciones y 2 chi
-
 **Duración:** Concentración
 
 Te rodeas de varios meteoros hechos de pura energía de chi para defenderte de ataques. Al activar esta habilidad recibes *contadores de escudo* iguales a tu Rango que permanecerán activos hasta que pierdas la concentración o pierdas todos tus *contadores de escudo*. Dichos meteoros pueden emplearse también para atacar a tus enemigos, permitiéndote hacer un ataque de Rayo arcano una vez por ronda como acción bonus si este hechizo permanece activo.
@@ -138,11 +126,8 @@ Tus hechizos de Rango II reducen su coste en acciones por 1 (mínimo 1) y  apren
 *Evocación, Arcano, Ataque, A distancia*
 
 **Coste:** 2 acciones
-
 **Alcance:** Medio
-
 **Efecto crítico:** Tu objetivo sufre una *herida permanente media*
-
 **Duración:** Instantáneo
 
 Disparas un rayo de energía enormenente empoderado capaz de desintegrar el cuerpo de los que hiere. Haz un ataque contra un objetivo en tu alcance que inflige 2d8 + INT daño Arcano además de una *herida permanente leve*. Este ataque destruirá también las defensas de tu objetivo, eliminando un *contador de escudo* que tenga y infligiendo el efecto de estado *roto* en su armadura. Si logras reducir los PV de tu objetivo a 0 este se convertirá en polvo y morirá instantáneamente.
@@ -154,9 +139,7 @@ Disparas un rayo de energía enormenente empoderado capaz de desintegrar el cuer
 *Evocación, Arcano, Ambiental*
 
 **Coste:** 2 acciones y 2 chi
-
 **Tamaño:** Radio grande
-
 **Duración:** Diez minutos
 
 Irradias el campo de batalla con una gran cantidad de energía mágica que empoderará la magia arcana. Recibirás así ventaja en todos tus tiros relacionados con efectos Arcanos además que aumentas todo el daño Arcano provocado por 1d6. Este efecto permanecerá activo durante el resto del combate o hasta que sea eliminado. 
@@ -172,13 +155,9 @@ Tus hechizos de Evocación convierten sus dados de daño a d10 y los de Rango II
 ### Cañón de chi
 
 **Coste:** 3 acciones y 3 chi
-
 **Alcance:** Medio
-
 **Tamaño:** Radio medio
-
 **Efecto crítico:** Los objetivos afectados sufren una *herida permanente media*
-
 **Duración:** Instantáneo
 
 Haces un poderoso ataque de energía mágica que provoca una explosión de chi a una distancia media. Haz un ataque contra todas las criaturas en un radio medio centrado en un punto que alcances que infligirá 2d10 + INT daño Arcano además de una *herida permanente leve*. 
@@ -191,7 +170,7 @@ Este ataque no puede ser detenido por barreras mágicas y todos los afectados pe
 
 *Evocación, Pasivo*
 
-Has alcanzado un nivel de maestría que te permite moldear la magia de todo tipo.  Aprendes dos Especialidades arcanas adicionales y los beneficios que estas otorgan. Además, cada vez que realices un descanso largo puedes cambiar cualquier cantidad de hechizos que conozcas a otros con el mismo rango pertenecientes a ramas elementales diferentes que tengas disponibles.
+Has alcanzado un nivel de maestría que te permite moldear la magia de todo tipo.  Aprendes todas las Especialidades arcanas de Rango I y los beneficios que estas otorgan. Además, cada vez que realices un descanso largo puedes cambiar cualquier cantidad de hechizos que conozcas a otros con el mismo rango pertenecientes a ramas elementales diferentes.
 
 ## Rango VI
 
@@ -199,14 +178,9 @@ Tus hechizos de Rango IV reducen su coste en acciones por 1 (mínimo 1) y  apren
 
 ### Aniquilación mágica
 
-*Evocación, Arcano, Ataque, Área*
-
 **Coste:** 3 acciones y 5 chi
-
 **Tamaño:** Radio grande
-
 **Efecto crítico:** Los objetivos afectados mueren instantáneamente si no tienen Resistencia Arcana. En caso contrario sufrirán una *herida permanente grave*
-
 **Duración:** Instantáneo
 
 Liberas toda la energía mágica en tu interior para aniquilar todo a tu paso. Haz un ataque contra todas las criaturas a un radio grande que inflige 3d10 + INT daño Arcano además de una *herida permanente media*. Este ataque destruirá todas las barreras y defensas a su paso, haciendo así que no pueda ser detenido por *contadores de escudo* ni muros. 
