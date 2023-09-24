@@ -5,25 +5,7 @@ category: Combate
 
 La ira es un sentimiento que fluye a través de todas las personas, sin embargo tú eres capaz de canalizarla para superar los límites de tu cuerpo e incrementar tus habilidades físicas. Casi entrando en un efecto similar a un trance eres capaz de desconectar parcialmente tu consciencia para dejar tu instinto de supervivencia mas básico de tu interior y de este modo acabar con cualquier cosa o adversario que ose cruzarse en tu camino. A medida que obtienes mas experiencia y vas dominando esta habilidad serás capaz de realizar proezas físicas por encima de cualquier límite humano. 
 
-### Reglas fundamentales
-
-Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
-
-- **Reserva de vigor:** Tu rango en Ira mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Voluntad para luchar:**
-- **Completamente innato:** 
-
-# Rangos
-
 ## Rango I
-
-### Ira de combate
-
-Entras en un estado de fur
-
-### Ataque desquiciado
-
-
 
 **Ira**: Durante 2 + rango rondas de combate entras en un estado de furia sobrenatural, incrementando dos estadísticas físicas por 2 además de recibir resistencia 2 contra miedo y efectos mentales. No podrás concentrarte estando en *ira* y deberás siempre atacar al enemigo más cercano. Curando *ira* termine estarás *fatigado* hasta tomar un descanso y no podrás volver a entrar en *ira* hasta que te recuperes de la fatiga.
 
