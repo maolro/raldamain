@@ -139,7 +139,7 @@ Tu maestría con un arma pesada te permite utilizarla como escudo para protegert
 
 Estás dispuesto a arriesgar tu propia vida para herir a tu enemigo. Esta habilidad sólo puede activarse cuando estás defendiéndote de un ataque y una vez lo hagas el ataque enemigo te impactará automáticamente. Antes de recibir daño esta habilidad te permite realizar un Ataque con arma inmediato contra tu enemigo que no podrá detener y que puede mejorarse con otras técnicas. Tras realizar este ataque tanto tú como el enemigo recibiréis la cantidad adecuada de daño y los efectos correspondientes.
 
-### Impacto mortal
+### Golpe mortal
 
 *Pesado, Ataque, Cuerpo a cuerpo, Físico*
 
