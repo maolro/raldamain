@@ -124,7 +124,7 @@ Un rango mítico mejorará los atributos otorgados por cualquier rango de tu ele
 
 **Explosión solar:** Aumenta el radio a grande y podrás afectar a tus aliados con *sanación superior* en lugar de *toque sanador*. Además, todas las criaturas no-míticas en el área de efecto que sean vulnerables al daño radiante morirán instantáneamente.
 
-**Milagro de restauración:** El milagro puede resucitar a alguien que haya muerto hace menos de un día y al usar esta habilidad en una criatura viva sanará todos sus PV, Vitalidad y se recuperará de todos los efectos de estado, heridas permanentes, venenos y enfermedades no-míticas que tenga.
+**Milagro de restauración:** El milagro puede resucitar a alguien que haya muerto hace menos de un día y al usar resta habilidad en una criatura viva sanará todos sus PV, Vitalidad y se recuperará de todos los efectos de estado, heridas permanentes, venenos y enfermedades no-míticas que tenga.
 
 **Sello de regeneración:** El sello sanará +2 Vitalidad y PV por ronda y reducirá todas las heridas permanentes que tenga el personaje por un paso cada ronda. Puedes activar dicho sello en ti como acción bonus y este permanecerá durante el resto del combate.
 

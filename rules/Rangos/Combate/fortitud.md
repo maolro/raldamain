@@ -5,78 +5,27 @@ category: Combate
 
 La resistencia de tu cuerpo es superior a la media, siendo por ello mas difícil de matar que otros miembros de tu especie. A medida que tu cuerpo cicatriza nuevas heridas y se enfrenta a los climas adversos que te rodean tu fortaleza física va aumentando y adaptándose para sobrevivir a condiciones cada vez mas difíciles y peligros mayores, pudiendo incluso ser capaz de resistir ataques que acabarían al instante con cualquier otra persona.
 
-### Reglas fundamentales
-
-Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
-
-- **Reserva de vigor:** Tu rango en Fortitud mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Constitución superior:** Obtener este rango mejorará tus capacidades de resistir efectos que atenten contra tu Constitución. Recibes un bonificador igual a tu Rango + 1 en todos tus tiros defensivos de CON.
-- **Absolutamente innato:** Las habilidades otorgadas por este rango representan tu resistencia física superior nacida de duro entrenamiento y tu experiencia combatiendo. Por tanto no pueden ser contrarrestadas ni suprimidas por ningún efecto.
-
-# Rangos
+<u>Requisitos:</u> 2 o más constitución.
 
 ## Rango I
 
-### Armadura natural
+Aumenta tus PV máximos por 2 y aumenta tu resistencia al daño físico por 2. Añade además tu rango x 2 a todos tus tiros de CON.
 
-Tu cuerpo es capaz de resistir heridas que en otras circunstancias serían mortales. Aumenta tu cantidad máxima de PV y tu DEF por un valor igual a tu Rango de Fortitud + 1. El bonificador a la defensa sí se acumula con aquel otorgado por armaduras.
-
-### Segundo aliento
-
-**Coste:** 1 vigor
-
-Aunque estés al borde de la muerte eres capaz de volver a levantarte para seguir luchando. Al activar esta habilidad recuperas Vitalidad igual a tu Rango + 2 como acción bonus. No puedes sanarte de esta manera más de una vez por ronda.
-
-**Empoderar** (1 vigor): Trata una herida permanente que te afecte actualmente como si fuera de un nivel menor para eliminar sus penalizadores. La herida volverá a su nivel anterior al final del combate. 
+**Segundo aliento**: Una vez por combate puedes recuperar vitalidad igual a tu rango + CON y suprime el efecto de las heridas permanentes como si fueran de un paso inferior. Estas volverán a su estado original tras una cantidad de rondas igual a tu rango + 2. 
 
 ## Rango II
 
-### Duro de pelar
+Aumenta tus PV máximos por 2 y aumenta tu resistencia al daño físico por 2.
 
-Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Aturdidores además que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
+**Resistir la muerte**: Una vez por combate como reacción al caer a menos de 0 PV puedes revivir a 1 PV sin sufrir heridas permanentes. Esta habilidad no puede usarse si estás incapacitado, exhausto o sufriendo náuseas, el ataque enemigo te provoca una herida permanente grave o te reduce a PV negativa igual a tu CON.
 
-### Resiliencia
-
-**Coste:** 1 vigor
-
-Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce el daño que recibas de un ataque a la mitad después de aplicar DEF y Resistencias. Resiliencia solo puede usarese una vez por ataque y se redondeará siempre hacia abajo.
+**Constitución férrea:** Recibes resistencia igual a tu rango + 1 a venenos, enfermedades, gases tóxicos y daño necrótico, La resistencia otorgada por esta habilidad también funciona contra venenos y enfermedades sobrenaturales.
 
 ## Rango III
 
-### Hasta la muerte
+Aumenta tus PV máximos por 2 y aumenta tu resistencia al daño físico por 2.
 
-Tu gran resistencia al dolor te permite seguir luchando hasta la muerte. Todas las *heridas permanentes* que recibas reducirán su gravedad por un paso además que podrás seguir luchando a 0 o menos PV. En dicho estado deberás seguir haciendo tiros de muerte al final de tu turno y morirás si fracasas dicho tiro o caes a puntos de vida negativos iguales a tu estadística de CON.
+**Recuperación rápida**: Tu cuerpo se recupera a velocidades prodigiosas, causando que te sanes todos tus PV perdidos con un descanso corto y recuperes 2 Vitalidad por ronda. Además, con un descanso largo podrás reducir el nivel de una herida permanente por un paso sin la necesidad de acción médica. 
 
-### Constitución férrea
+**Resistir armas:** Una vez al turno como reacción puedes reducir el nivel de una herida permanente que recibes por un paso. Esta habilidad también puede emplearse para convertir un ataque de muerte instantánea como [maestro cazador](https://raldamain.com/rules/Rangos/Combate/rastrear.html) en una herida permanente grave. 
 
-Tu fuerte constitución te permite resistir los efectos de las aflicciones que sufras. Recibes Resistencia a Aflicciones de todo tipo y a efectos Necróticos además que no puedes ser *enfermeado* o sufrir *náuseas* con efectos críticos.
-
-## Rango IV
-
-### Muro viviente
-
-**Coste:** 2 acciones y 2 vigor
-**Alcance:** Propio
-**Duración:** Concentración
-
-Preparas tu cuerpo para el combate, haciendo así que tu piel sea dura como el acero. Al activar esta habilidad recibes una cantidad de *contadores de escudo* igual a tu Rango que durarán hasta que pierdas la concentración. 
-
-**Empoderar** (1 vigor): Si este efecto permanece activo recuperas *contadores de escudo* iguales a tu Rango dividido entre dos redondeando hacia abajo.
-
-### Aguantar los elementos
-
-Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resistencia a efectos de la categoría Frío, Fuego o Eléctrico además que no puedes ser *quemado* o *paralizado* con efectso críticos.
-
-## Rango V
-
-### Sanación rápida
-
-Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 2. Si tienes alguna *herida permanente* activa en lugar de sanarte reducirás su nivel por un paso, haciendo así que solo puedas recuperar Vitalidad si estás libre de heridas. 7
-
-**Empoderar** (1 vigor): Reduce el nivel de una herida permanente que te afecte actualmente por un paso. Esto no funcionará contra *heridas permanentes críticas*.
-
-### Una última resistencia
-
-**Coste:** 3 vigor
-
-Cuando estás al borde de la muerte empleas toda la fuerza que te queda para una última resistencia. Esta habilidad solo puede activarse cuando caigas a 0 PV y al hacerlo recuperarás toda tu Vitalidad además de la mitad de tus PV. No obstante, las *heridas permanentes* que tengas seguirán activas.
