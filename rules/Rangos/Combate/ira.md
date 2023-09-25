@@ -10,8 +10,8 @@ La ira es un sentimiento que fluye a través de todas las personas, sin embargo 
 Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Reserva de vigor:** Tu rango en Ira mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Voluntad para luchar:**
-- **Completamente innato:** 
+- **Voluntad para luchar:** Para activar habilidades de Ira debes estar en un combate y tener una motivación de seguir combatiendo. Dado que el poder de la ira depende plenamente de tu voluntad para combatir perderás las habilidades de este rango si perdieras la motivación de seguir luchando.
+- **Completamente innato:** Las habilidades otorgadas por este rango representan tu capacidad de empujar a tu cuerpo al límite para ganar un combate. Por tanto no pueden ser contrarrestadas ni suprimidas por ningún efecto.
 
 # Rangos
 
@@ -19,30 +19,46 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ### Ira de combate
 
-Entras en un estado de fur
+Entras en un estado de furia desquiciada donde únicamente deseas acabar con todo enemigo a tu paso. Cuando actives esta habilidad durante una cantidad de rondas de tu elección recibirás Ventaja en todos tus tiros de ataque, talento y salvación relacionados con tus estadísticas físicas. Aumentarás también todo el daño provocado por armas o artes marciales por 1d6 siempre que el daño base esté modificado por una estadística física.
 
-### Ataque desquiciado
+Combatir en un estado de ira te da grandes ventajas luchando pero a su vez inconvenientes. Mientras te encuentres en ira no podrás concentrarte en ningún efecto ni entrar en *posición defensiva*. No hay un límite máximo de cuantas rondas puedes estar en ira, pero cuando esta acabe reducirás tu Vigor por un valor igual a la cantidad de rondas pasadas. Si tu reserva fuera reducida a un valor negativo quedarás *exhausto* hasta que tomes un descanso, y si esta fuera igual o inferior a tu CON negativa entonces caerás *inconsciente*.
 
+### Frenesí de batalla
 
-
-**Ira**: Durante 2 + rango rondas de combate entras en un estado de furia sobrenatural, incrementando dos estadísticas físicas por 2 además de recibir resistencia 2 contra miedo y efectos mentales. No podrás concentrarte estando en *ira* y deberás siempre atacar al enemigo más cercano. Curando *ira* termine estarás *fatigado* hasta tomar un descanso y no podrás volver a entrar en *ira* hasta que te recuperes de la fatiga.
-
-**Ataque salvaje:** Antes de atacar puedes obtener una ventaja estratégica en todos los ataques realizados durante la ronda a costa de recibir desventaja en todos tus tiros defensivos.
+Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Durante esta ronda recibirás Ventaja en todos tus ataques de arma o artes marciales a costa que obtendrás Desventaja en todos tus tiros defensivos. Esta habilidad puede usarse tanto dentro como fuera de Ira.
 
 ## Rango II
 
-**Reducción al daño**: Mientras te encuentres en *ira* ignoras los penalizadores otorgados por heridas permanentes medias o inferiores y reduce todo el daño físico recibido por un valor igual a tu rango.
+### Demostración terrorífica
 
-**Golpe de adrenalina:** Al entrar en *ira* puedes obtener una acción adicional en tu turno y entrar en *posición defensiva* a costa de recibir una herida permanente leve en tu siguiente turno que no puede ser reducida.
+*Miedo, Visual*
+
+**Coste:** 1 vigor
+
+**Tamaño:** Radio medio
+
+**Efecto crítico:** Los afectados aumentan su nivel de *miedo* por un paso adicional.
+
+Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Esta habilidad solo puede activarse en Ira y al empleara todos tus enemigos a radio medio deben tener éxito en un tiro de salvación de Voluntad o Intimidar contra tu talento de Intimidar o aumentarán su nivel de *miedo* por un paso. Esta habilidad solo puede usarse una vez por ronda.
+
+### Resistencia salvaje
+
+Cuando combates ni sientes las heridas que sufres, luchando hasta el final sin importar el daño que recibas. Mientras te encuentres en Ira reduce todo el daño recibido por un valor igual a tu Rango. También ignorarás los efectos que te provoquen todas las *heridas permanentes* que no sean graves y las Aflicciones. Dichos efectos actuarán con normalidad cuando abandones la Ira y aunque suprimas las desventajas que otorguen permanecerán en tu cuerpo.
 
 ## Rango III
 
-**Fortitud interna:** Ignora los efectos negativos de venenos y enfermedades mientras estés en *ira*. Puedes volver a entrar en *ira* estando *fatigado*, pero cuando esta ira acabe pasarás a estar *exhausto*.
+### Ira temeraria
 
-**Temerario**: Eres inmune a miedo y efectos mentales mientras te encuentres en *ira* además de obtener ventaja en todos tus tiros para provocar miedo.
+### Hasta el límite
 
 ## Rango IV
 
-**Ira primigenia**: Entrar en *ira* te otorga +1 en todas las estadísticas físicas, +1d6 daño, +4 PV temporales y aumenta tu limitador estadístico por 2. 
+### Golpe de adrenalina
 
-**Difícil de matar:** Cuando caigas a 0 PV activas *ira* aunque estés *exhausto,* anulando temporalmente los efectos de todas las heridas permanentes. Cada vez que uses 2 acciones o más sufrirás 1 daño y cuando acabe la *ira* y te encuentras a -CON PV morirás.
+### Furia imparable
+
+## Rango V
+
+### Superar los límites
+
+### Furia invulnerable
