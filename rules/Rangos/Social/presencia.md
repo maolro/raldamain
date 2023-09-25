@@ -29,7 +29,7 @@ Tienes una reserva de liderazgo (RL) igual a tu rango + CAR
 
 **Movimiento estratégico** (1 AP, 2 RL): Todos los aliados que puedan oírte aumentan su movimiento base por 1 esta ronda y podrán *desenganchar* sin la necesidad de gastar acciones.
 
-**Indómito**: Una cantidad de veces igual a tu r0ango + 2 puedes repetir un tiro y quedarte con el mejor resultado. (1 RL) Recupera un uso o un aliado repite un tiro y se queda con el mejor resultado.
+**Indómito**: Una cantidad de veces igual a tu rango + 2 puedes repetir un tiro y quedarte con el mejor resultado. (1 RL) Recupera un uso o un aliado repite un tiro y se queda con el mejor resultado.
 
 ## Rango IV
 
