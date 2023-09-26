@@ -19,11 +19,15 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ### Ira de combate
 
+*Ira, Innata, Pasiva*
+
 Entras en un estado de furia desquiciada donde únicamente deseas acabar con todo enemigo a tu paso. Cuando actives esta habilidad durante una cantidad de rondas de tu elección recibirás Ventaja en todos tus tiros de ataque, talento y salvación relacionados con tus estadísticas físicas. Aumentarás también todo el daño provocado por armas o artes marciales por 1d6 siempre que el daño base esté modificado por una estadística física.
 
 Combatir en un estado de ira te da grandes ventajas luchando pero a su vez inconvenientes. Mientras te encuentres en ira no podrás concentrarte en ningún efecto ni entrar en *posición defensiva*. No hay un límite máximo de cuantas rondas puedes estar en ira, pero cuando esta acabe reducirás tu Vigor por un valor igual a la cantidad de rondas pasadas. Si tu reserva fuera reducida a un valor negativo quedarás *exhausto* hasta que tomes un descanso, y si esta fuera igual o inferior a tu CON negativa entonces caerás *inconsciente*.
 
 ### Frenesí de batalla
+
+*Innata, Pasiva*
 
 Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Durante esta ronda recibirás Ventaja en todos tus ataques de arma o artes marciales a costa que obtendrás Desventaja en todos tus tiros defensivos. Esta habilidad puede usarse tanto dentro como fuera de Ira.
 
@@ -31,7 +35,7 @@ Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Duran
 
 ### Demostración terrorífica
 
-*Miedo, Visual*
+*Ira, Miedo, Visual, Innata*
 
 **Coste:** 1 vigor
 
@@ -43,22 +47,56 @@ Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Esta ha
 
 ### Resistencia salvaje
 
-Cuando combates ni sientes las heridas que sufres, luchando hasta el final sin importar el daño que recibas. Mientras te encuentres en Ira reduce todo el daño recibido por un valor igual a tu Rango. También ignorarás los efectos que te provoquen todas las *heridas permanentes* que no sean graves y las Aflicciones. Dichos efectos actuarán con normalidad cuando abandones la Ira y aunque suprimas las desventajas que otorguen permanecerán en tu cuerpo.
+*Ira, Pasiva, Innata*
+
+Cuando combates ni sientes las heridas que sufres, luchando hasta el final sin importar el daño que recibas. Mientras te encuentres en Ira reduce todo el daño recibido por un valor igual a tu Rango. También ignorarás los efectos que te provoquen todas las *heridas permanentes* que no sean graves y recibirás Resistencia a todas las Aflicciones. Dichos efectos actuarán con normalidad cuando abandones la Ira y aunque suprimas las desventajas que otorguen permanecerán en tu cuerpo.
 
 ## Rango III
 
 ### Ira temeraria
 
+*Ira, Pasiva, Innata*
+
+Al entrar en ira tu mente se centra únicamente en luchar, ignorando toda distracción e intento de hacerte ceder. Mientras te encuentras en Ira recibes inmunidad a efectos de Miedo o Mentales además que suprimirás todos los efectos de este tipo que tengas ya activos al entrar en Ira. 
+
 ### Hasta el límite
+
+*Pasiva, Innata*
+
+Empujas a tu cuerpo hasta el límite para seguir luchando sin importar las consecuencias. Hasta tres veces por ronda puedes reducir tu Vitalidad máxima por 2 o tus PV máximos por 1 para recuperar un punto de Vigor. Estas reducciones durarán hasta que realices un descanso largo después del cual tu Vitalidad y PV volverán a sus valores anteriores.
 
 ## Rango IV
 
 ### Golpe de adrenalina
 
+*Ira, Innata, Pasiva*
+
+Tus instintos de batalla y tu velocidad mejoran notablemente cuando entras en Ira, permitiéndote así suplir tu debilidad defensiva. Mientras te encuentres en Ira recibirás una acción adicional en tu turno y podrás entrar en *posición defensiva* como acción bonus una vez por ronda. Tus instintos te permiten también protegerte de ataques sorpresa con Desventaja, evitando así que te impacten automáticamente.
+
 ### Furia imparable
+
+*Ira, Innata, Reacción*
+
+**Coste:** 2 vigor
+
+Ni la magia ni los escudos son capaces de detener tus impactos. En respuesta a que un enemigo detenga un ataque que haya impactado con un hechizo o habilidad para reducir su daño puedes emplear esta habilidad para cancelarlo automáticamente. Si usara *contadores de escudo* para este propósito cada contador gastado reducirá el daño por 5 en lugar de por 10 además que perderá un *contador de escudo* que tenga.
 
 ## Rango V
 
 ### Superar los límites
 
+*Ira, Innata, Mejora, Duradera*
+
+**Coste:** 3 vigor
+
+**Duración:** Cinco rondas
+
+Rompes tus límites físicos para alcanzar niveles sobrehumanos de fuerza durante un breve periodo de tiempo. Hasta que termine esta habilidad recibirás 20 PV temporales y tus estadísticas de FUE, DES y CON pasarán a ser 12. Aumenta también tu DEF por 5 y una vez por ronda podrás reducir el coste de vigor de una técnica de arma por 1 (mínimo 0).
+
+Esta habilidad solo podrá activarse estando en Ira y los bonificadores de esta se apilarán con aquellos que recibas en dicho estado. Perderás los beneficios de Superar los límites su llegas a perder todos tus PV temporales o una habilidad te fuerza a salir de Ira.
+
 ### Furia invulnerable
+
+*Ira, Innata, Pasiva*
+
+Cuando entras en Ira no cesarás de luchar hasta que la abandones, retando hasta a la misma muerte. Mientras te encuentres en Ira puedes seguir luchando a menos de 0 PV sin ningún penalizador además que no necesitarás hacer tiros de muerte. Ignorarás también los efectos de todas las *heridas permanentes* que no sean críticas, las cuales solo te afectarán cuando abandones la Ira. Podrás continuar en pie aunque caigas a PV negativos, pero en el momento que la ira acabe morirás instantáneamente si te encuentras a PV negativos inferiores a tu CON negativa. 
