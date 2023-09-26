@@ -19,9 +19,13 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ### Armadura natural
 
+*Innata, Pasiva*
+
 Tu cuerpo es capaz de resistir heridas que en otras circunstancias serían mortales. Aumenta tu cantidad máxima de PV y tu DEF por un valor igual a tu Rango de Fortitud + 1. El bonificador a la defensa sí se acumula con aquel otorgado por armaduras.
 
 ### Segundo aliento
+
+*Innata, Sanación*
 
 **Coste:** 1 vigor
 
@@ -33,9 +37,13 @@ Aunque estés al borde de la muerte eres capaz de volver a levantarte para segui
 
 ### Duro de pelar
 
+*Innata, Pasiva*
+
 Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Aturdidores además que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
 
 ### Resiliencia
+
+*Innata, Defensiva*
 
 **Coste:** 1 vigor
 
@@ -45,9 +53,13 @@ Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce e
 
 ### Hasta la muerte
 
+*Innata, Pasiva*
+
 Tu gran resistencia al dolor te permite seguir luchando hasta la muerte. Todas las *heridas permanentes* que recibas reducirán su gravedad por un paso además que podrás seguir luchando a 0 o menos PV. En dicho estado deberás seguir haciendo tiros de muerte al final de tu turno y morirás si fracasas dicho tiro o caes a puntos de vida negativos iguales a tu estadística de CON.
 
 ### Constitución férrea
+
+*Innata, Pasiva*
 
 Tu fuerte constitución te permite resistir los efectos de las aflicciones que sufras. Recibes Resistencia a Aflicciones de todo tipo y a efectos Necróticos además que no puedes ser *enfermeado* o sufrir *náuseas* con efectos críticos.
 
@@ -55,8 +67,12 @@ Tu fuerte constitución te permite resistir los efectos de las aflicciones que s
 
 ### Muro viviente
 
+*Innata, Defensiva, Duradera*
+
 **Coste:** 2 acciones y 2 vigor
+
 **Alcance:** Propio
+
 **Duración:** Concentración
 
 Preparas tu cuerpo para el combate, haciendo así que tu piel sea dura como el acero. Al activar esta habilidad recibes una cantidad de *contadores de escudo* igual a tu Rango que durarán hasta que pierdas la concentración. 
@@ -65,17 +81,23 @@ Preparas tu cuerpo para el combate, haciendo así que tu piel sea dura como el a
 
 ### Aguantar los elementos
 
-Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resistencia a efectos de la categoría Frío, Fuego o Eléctrico además que no puedes ser *quemado* o *paralizado* con efectso críticos.
+*Innata, Pasiva*
+
+Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resistencia a efectos de la categoría Frío, Fuego o Eléctrico además que no puedes ser *quemado* o *paralizado* con efectos críticos.
 
 ## Rango V
 
 ### Sanación rápida
+
+*Innata, Pasiva, Sanación*
 
 Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 2. Si tienes alguna *herida permanente* activa en lugar de sanarte reducirás su nivel por un paso, haciendo así que solo puedas recuperar Vitalidad si estás libre de heridas. 7
 
 **Empoderar** (1 vigor): Reduce el nivel de una herida permanente que te afecte actualmente por un paso. Esto no funcionará contra *heridas permanentes críticas*.
 
 ### Una última resistencia
+
+*Innata, Sanación*
 
 **Coste:** 3 vigor
 
