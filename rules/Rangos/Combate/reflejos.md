@@ -39,7 +39,7 @@ Eres capaz de reaccionar en el último segundo a situaciones peligrosas para sal
 
 *Innata, Pasiva*
 
-Tus instintos te permiten reaccionar al peligro instantes antes que te afecte. Puedes emplear Esquiva para defenderte de ataques sorpresa o efectos imposibles de esquivar. Seguirás teniendo Desventaja para defenderte de ataques de dicha categoría y no funcionará si estás *agarrado*, *paralizado* o *inconsciente*.
+Tus instintos te permiten reaccionar al peligro instantes antes que te afecte. Puedes emplear Esquiva para defenderte de ataques sorpresa o efectos imposibles de esquivar siempre y cuando te encuentres a una adecuada distancia. Seguirás teniendo Desventaja para defenderte de ataques de dicha categoría y no funcionará si estás *agarrado*, *paralizado* o *inconsciente*.
 
 ### Evasión
 
@@ -63,16 +63,38 @@ Conoces como esquivar adecuadamente los ataques enemigos para reducir las herida
 
 *Innata, Pasiva*
 
-Te mueves con la 
+Tienes la agilidad y equilibrio de un gran acróbata, recibiendo así Inmunidad a *terreno difícil* en el suelo y a ser *tropezado* por efectos críticos. Obtienes también velocidad de Escalada 1 y Resistencia a daño de caídas.
+
+**Empoderar** (1 vigor): Te levantas inmediatamente tras caer *tropezado*
 
 ## Rango IV
 
 ### Sexto sentido
 
+*Innata, Pasiva*
+
+Tu intuición se ha desarrollado hasta límites sobrehumanos, permitiéndote notar la presencia de enemigos ocultos y esquivar balas. Recibes *vista a ciegas* de radio medio y podrás emplear Esquiva sin penalizadores para evitar ataques extremadamente rápidos sin importar su distancia. Obtendrás también Resistencia a Ilusiones y efectos Visuales.
+
 ### Punto ciego
+
+*Innata, Reacción*
+
+**Precio:** 2 vigor
+
+Te mueves con tal agilidad que no puedes ser apuntado adecuadamente. Al activar esta habilidad puedes usar Esquiva en un tiro de salvación contra un efecto que te apunte explícitamente, como es el caso de hechizos que intenten afectar tu mente o cuerpo. Esta habilidad no podrá ser utilizada si eres incapaz de Esquivar.
 
 ## Rango V
 
 ### Libertad de movimiento
 
+*Innata, Pasiva*
+
+Eres capaz de contorsionar tu cuerpo de maneras imposibles para eludir cualquier intento de mantenerte atado. Recibes Resistencia a efectos de Agarre además de Ventaja en todos tus tiros para escaparte de cualquier habilidad que te retenga (no se acumula con la Resistencia). Debido a tu capacidad de moverte de maneras inesperadas eres también capaz de *desenganchar* como acción bonus, pudiendo así entrar y salir de un enfrentamiento sin dificultades.
+
+**Empoderar** (1 vigor): Te liberas inmediatamente de un efecto que te esté *agarrando*. 
+
 ### Reflejos supremos
+
+*Innata, Pasiva*
+
+Tu velocidad ha alcanzado límites sobrehumanos, convirtiéndote en un combatiente imposible de detener. Durante un combate recibirás un turno adicional a -10 iniciativa con tres acciones. Las acciones obtenidas por este turno adicional no podrán incrementarse ni se acumulan con otras habilidades similares.
