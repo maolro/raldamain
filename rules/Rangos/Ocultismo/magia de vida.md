@@ -7,14 +7,19 @@ category: Ocultismo
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumentas tu reserva de chi por rango + 2.
+Añade tu rango a todos tus tiros relacionados con magia de vida y aumentas tu reserva de chi por rango + 2.
 
 ### Toque sanador
 
-*Vida, Sanación, Toque*
+*Vida, Sanación, Toque
+
 **Precio**: 2 acciones
+
 **Alcance**: Toque
+
 **Duración**: Instantánea
+
+
 
 Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado al que puedas tocar se sana Vitalidad igual a tu Rango + 2. 
 
@@ -24,8 +29,11 @@ Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado
 
 *Vida, Ataque, A distancia, Radiante*
 **Coste**: 2 acciones
+
 **Alcance**: Medio
+
 **Efecto crítico:** El objetivo queda *cegado* durante una ronda.
+
 **Duración**: Instantánea
 
 Atacas a tu enemigo con un rayo de luz cegadora. Realiza un ataque con Magia de Vida contra un objetivo a distancia media que inflige 1d6 + Rango daño Radiante al impactar. Este ataque no puede ser Esquivado por objetivos a distancia corta de ti.

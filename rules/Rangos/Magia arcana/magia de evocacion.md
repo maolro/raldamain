@@ -10,9 +10,9 @@ Al escoger esta escuela has decidido especializarte en una de las formas mas des
 Magia de Evocación se adhiere a un conjunto de reglas fundamentales que sustentan sus hechizos y habilidades: 
 
 - **Reserva de Chi**: Tu rango de magia de Evocación mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal: La eficacia de la manipulación de pura energía mágica está influenciada por la capacidad de estudiar y entender el flujo del chi que permea el universo.  Por esta razón, tu modificador de magia de Evocación será igual a la suma de tu estadística de Inteligencia y tu rango de magia de Evocación. 
+- **Estadística principal**: La eficacia de la manipulación de pura energía mágica está influenciada por la capacidad de estudiar y entender el flujo del chi que permea el universo. Por esta razón, tu modificador de magia de Evocación será igual a la suma de tu estadística de Inteligencia y tu rango en esta habilida. 
 - **Equilibrio elemental:** La manipulación de las energías puras del chi y los cuatro elementos depende enormemente del entorno donde se encuentra el usuario. Por ello cualquier efecto que afecte a la magia arcana o a una rama de magia elemental alterará de la misma manera a tus hechizos de Evocación asociados con la misma rama.
-- **Parada elemental:** Eres capaz de usar magia de Evocación para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Evocación para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades de tipo Fuego, Frío, Radiante, Madera, Tierra o Agua, sustituyendo el talento que usarías normalmente.
+- **Parada mágica:** Eres capaz de usar magia de Evocación para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Evocación para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades de tipo Fuego, Frío, Radiante, Madera, Tierra o Agua, sustituyendo el talento que usarías normalmente.
 
 # Rangos
 

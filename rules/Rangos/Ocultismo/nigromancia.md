@@ -1,5 +1,5 @@
 ---
-t	itle: Nigromancia
+title: Nigromancia
 category: Ocultismo
 ---
 

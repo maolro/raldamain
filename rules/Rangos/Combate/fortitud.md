@@ -39,7 +39,7 @@ Aunque estés al borde de la muerte eres capaz de volver a levantarte para segui
 
 *Innata, Pasiva*
 
-Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Aturdidores además que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
+Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Maniobraademás que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
 
 ### Resiliencia
 
