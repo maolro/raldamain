@@ -23,7 +23,7 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 Entras en un estado de furia desquiciada donde únicamente deseas acabar con todo enemigo a tu paso. Cuando actives esta habilidad durante una cantidad de rondas de tu elección recibirás Ventaja en todos tus tiros de ataque, talento y salvación relacionados con tus estadísticas físicas. Aumentarás también todo el daño provocado por armas o artes marciales por 1d6 siempre que el daño base esté modificado por una estadística física.
 
-Combatir en un estado de ira te da grandes ventajas luchando pero a su vez inconvenientes. Mientras te encuentres en ira no podrás concentrarte en ningún efecto ni entrar en *posición defensiva*. No hay un límite máximo de cuantas rondas puedes estar en ira, pero cuando esta acabe reducirás tu Vigor por un valor igual a la cantidad de rondas pasadas. Si tu reserva fuera reducida a un valor negativo quedarás *exhausto* hasta que tomes un descanso, y si esta fuera igual o inferior a tu CON negativa entonces caerás *inconsciente*.
+Combatir en un estado de ira te da grandes ventajas luchando pero a su vez inconvenientes. Mientras te encuentres en ira no podrás concentrarte en ningún efecto ni entrar en *posición defensiva*. No podrás pasar más de seis rondas seguidas en dicho estado y cuando este acabe reducirás tu Vigor por un valor igual a la cantidad de rondas pasadas. Si tu reserva fuera reducida a un valor negativo quedarás *exhausto* hasta que tomes un descanso, y si esta fuera igual o inferior a tu CON negativa entonces caerás *inconsciente*.
 
 ### Frenesí de batalla
 

@@ -3,7 +3,7 @@ title: Reflejos
 category: Combate
 ---
 
-Tienes capacidades anormalmente altas en cuanto a lo que tu velocidad de reacción se refiere, permitiéndote realizar maniobras mas complejas que dependan de tu agilidad y reflejos. Cuanto mas avanzado se vuelve tu entrenamiento en este área mas capaz eres de evadir cualquier efecto adverso dirigido hacia ti, desarrollando un sexto sentido que te permita esquivar ataques que no puedes ver así como evitar ágilmente múltiples ataques enemigos sin que estos tengan la oportunidad de tomar ventaja de ello. 
+Posees habilidades extraordinarias en cuanto a tu velocidad de reacción, lo que te permite llevar a cabo maniobras excepcionalmente complejas que dependen de tu agilidad y reflejos sobrenaturales. A medida que avanzas en tu entrenamiento en esta disciplina, desarrollas un sexto sentido agudizado que te permite esquivar ataques invisibles y sortear ágilmente múltiples amenazas enemigas antes de que tengan la oportunidad de aprovecharse de tu presencia. Esta maestría en evasión te convierte en un adversario formidable, capaz de esquivar cualquier efecto adverso dirigido hacia ti, incluso cuando no es perceptible a simple vista. Tus reflejos y agilidad te permiten anticipar y evitar con precisión los ataques enemigos, lo que te confiere una ventaja estratégica invaluable en el campo de batalla.
 
 ## Reglas fundamentales
 

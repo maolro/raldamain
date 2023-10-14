@@ -3,17 +3,64 @@ category: Magia elemental
 
 Esta magia te permite tener un control absoluto sobre el agua cuando esta se encuentra en estado fluido, pudiendo así aprovecharte de sus propiedades para emplearla en multitud de formas. A medida que tu control va en aumento serás capaz de mayores proezas que involucren al agua en un estado más salvaje, empleándola para formar fuertes torrentes o colosales olas capaces de devastar todo a su paso.
 
+# Reglas fundamentales
+
+Magia de Agua se adhiere a un conjunto de reglas fundamentales que sustentan sus hechizos y habilidades: 
+
+- **Reserva de Chi**: Tu rango de magia de Agua mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Por esta razón, tu modificador de magia de Agua será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad
+
 # Rangos	
 
-## Rango I 			
+## Rango I 
 
-Añade tu rango a todos tus ataques hechos con magia elemental de agua y aumenta tu reserva de chi por 2 + rango.
+### Torrente 
 
-**Torrente** (2 AP. A distancia, Físico, Agua): Ataca a un objetivo que esté a distancia media, infligiendo 1d6 + CAR daño contundente y empuja un paso al impactar, *tropezando* si el objetivo impacta contra una pared. (1 chi) Ataca a un objetivo adicional.
+*Agua, Ataque, a Distancia, Físico* 
 
-**Agua de vida** (2 AP. Sanación, Agua): Un objetivo adyacente se sana Vitalidad igual a tu rango + 2. (1 chi) El objetivo reduce el nivel de una herida permanente, veneno o enfermedad por un paso.
+**Coste**: 2 acciones 
 
-**Neblina** (2 AP y 1 chi. Agua, Concentración): Evaporas el agua para crear una niebla que llenará un espacio de radio medio. La niebla otorga *ocultamiento* a todas las criaturas que se encuentren en ella. La neblina permanecerá durante rango + 2 rondas o hasta que pierdas la concentración
+**Alcance**: Medio 
+
+**Efecto crítico:** Tu objetivo será empujado un paso y cae *tropezado*
+
+**Duración**: Instantáneo 
+
+Atacas a un enemigo con un chorro de agua a presión para derribarlo. Haz un ataque con magia de Agua contra un objetivo a distancia media que inflige 1d6 + SAB daño Contundente al impactar. Si tu objetivo está adyacente puedes *desenganchar* como acción bonus tras impactar exitosamente. 
+
+**Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo distinto que puedas alcanzar.
+
+### Aguas de la Vida 
+
+*Agua, Toque, Curación* 
+
+**Coste**: 2 acciones 
+
+**Alcance**: Toque
+
+ **Duración**: Instantáneo 
+
+Utilizas el poder del agua para curar a otros, restaurando así su salud y chi interior. Un aliado que puedas tocar recuperará Vitalidad igual a tu Rango + 2. 
+
+**Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción que esté en la primera etapa.
+
+### Niebla Envolvente 
+
+*Agua, Gaseosa, Visual, Duradera* 
+
+**Coste**: 2 acciones y 1 chi 
+
+**Alcance**: Medio 
+
+**Tamaño**: Esfera pequeña o mediana
+
+**Duración**: Concentración 
+
+Evaporas una cantidad sustancial de agua y la moldeas para crear una densa neblina. La neblina emergerá desde un punto a distancia con una cantidad adecuada de agua, extendiéndose alrededor de las esquinas hasta llenar una esfera pequeña. Si te encuentras en un área con una cantidad especialmente alta de agua el tamaño de la niebla aumentará hasta ocupar una esfera mediana. 
+
+Todas las criaturas dentro de la neblina tendrán dificultades para ver su entorno, quedando *embotados* mientras permanezcan en su interior. También obtendrán *ocultamiento* contra todos los ataques que provengan desde fuera de la niebla debido a la dificultad para determinar su posición exacta. La niebla se dispersará cuando pierdas la concentración o si afectada por un viento lo suficientemente fuerte.
+
+**Empoderar** (1 chi): La niebla se vuelve especialmente densa durante una ronda, *cegando* a todas las criaturas en su interior que fallen una tirada de Percepción contra tu magia de Agua.
 
 ## Rango II
 

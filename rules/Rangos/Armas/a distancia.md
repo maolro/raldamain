@@ -9,13 +9,19 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros relacionados con armas a distancia. Puedes obtener este rango de manera gratuita si tienes 5 o más SAB y 4 niveles de talento en percepción.
+### Ataque con arma
 
-**Combate furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
+*A distancia, Físico, Ataque*
 
-**Apuntar ataque** (1 AP): Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
+**Coste**: 2 acciones
 
-**Ataque con arma** (2 acciones, A distancia, Físico): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
+**Alcance**: Depende del arma
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantáneo
+
+Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de DES. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de armas a distancia.
 
 ## Rango II
 

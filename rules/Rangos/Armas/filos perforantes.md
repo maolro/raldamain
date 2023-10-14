@@ -1,15 +1,23 @@
 ---
-title: Filos perforantes
+title: Estilo de duelo
 category: Armas
 ---
 
 Te has especializado en un estilo de combate más rápido y preciso, apuntando a los puntos débiles de tu adversario con tu arma para eliminarlo antes que pueda contratacar. A medida que tu entrenamiento mejore serás capaz de engañar a tu adversario con tu arma para que sea incapaz de defenderse o valerte de tu movilidad para entrar y salir del combate. A medida que alcances las ultimas etapas de aprendizaje con tu arma serás capaz de eliminar a un enemigo con un único ataque preciso o emplear cada apertura en la defensa de tu adversario para atacar de nuevo.
 
+# Reglas fundamentales
+
 # Rangos
 
 ## Rango I
 
-Puedes obtener este rango de manera gratuita si tienes 5 o más DES y cuatro niveles de talento en juego de manos. 
+### Ataque de arma
+
+### Destreza defensiva
+
+### Ataque preciso
+
+
 
 **Ataque furtivo:** Suma tu estadística de DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
 
@@ -17,15 +25,13 @@ Puedes obtener este rango de manera gratuita si tienes 5 o más DES y cuatro niv
 
 **Ataque con arma** (2 acciones): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
 
-**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando el bonificador de ataque con tu arma, deteniendo el ataque enemigo si tienes éxito. Tienes desventaja defendiéndote con parada de armas que tengan tamaño excesivamente superior o inferior al tuyo (por ejemplo si bloqueas un arma pesada con un arma de tamaño normal).
-
-A rango III eres capaz de combinar paradas con tu velocidad, permitiéndote hacer dos tiros defensivos para evitar un ataque, uno con reflejos y otro con *parada*, y quedarte con el resultado que más te convenga. Solo podrás detener ataques de esta manera si estás en *posición defensiva* y estos son evitables tanto con parada como reflejos
-
 ## Rango II
 
-Puedes obtener este rango de manera gratuita si tienes 6 o más DES y cinco niveles de talento en juego de manos. 
+### Finta engañosa
 
-*Atacar con arma* cuesta -1 acción
+### Golpe de mango
+
+### Estoque ágil
 
 **Finta** (1 acción): El objetivo se defiende con su SAB y si fracasa no puede defenderse de tu siguiente ataque
 
