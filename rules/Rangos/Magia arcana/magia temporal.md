@@ -9,6 +9,12 @@ El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo
 
 Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
 
+### Premonición
+
+### Alteración temporal
+
+### Robar el tiempo
+
 **Premonición** (Temporal, Arcano): Como reacción repite un tiro de ataque, defensa o habilidad y te quedas con el resultado que más te convenga, pudiendo usarse como máximo una vez por tiro. Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
 
 **Alteración temporal** (1 Acción y 1 chi, Temporal, Arcano): Restaura un objeto pequeño a su estado anterior reparándolo de todos los daños sufridos en la última ronda. Si esta habilidad se usa en una persona puedes sanarle una cantidad de Vitalidad igual a tu rango + 2.
@@ -16,6 +22,12 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 **Robar el tiempo** (2 Acciones, Temporal, Arcano, Aflicción): Haz un ataque con magia temporal contra un objetivo a distancia corta el cual se defenderá tirando CON o magia protectora. Si es un objeto reducirá su efectividad y empezará a romperse mientras que si es una persona sufrirá 1d6 + rango daño fuerza y quedará *fatigada* si pierde PV. (1 chi) Si logras impactar con tu ataque el objetivo reducirá su reserva de chi por 1 y recuperas un uso de *premonición*.
 
 ## Rango II
+
+### Acelerar
+
+### Ralentizar
+
+### Desplazamiento
 
 **Acelerar** (2 AP y 1 chi, Temporal, Arcano): Una criatura cercana recibe una acción adicional por turno durante una cantidad de rondas igual a tu rango + 1. 
 
@@ -27,6 +39,12 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 *Robar el tiempo* y *alteración temporal* cuestan -1 AP
 
+### Visión
+
+### Predecir movimiento
+
+### Doble temporal
+
 **Visión** (Ritual, Temporal, Arcano): Realizas un ritual de duración igual a un descanso corto que te permite recibir una visión del pasado, presente o futuro relacionada con un lugar, persona o evento de tu elección. La naturaleza de la visión queda escogida por el máster. 
 
 **Predecir movimiento** (Temporal, Arcano): Al gastar un uso de *premonición* tendrás ventaja en el tiro repetido. Alternativamente puedes tener una visión escogida por el máster del siguiente movimiento que realizará un enemigo.
@@ -34,6 +52,12 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 **Doble temporal** (2 Acciones y 2 chi, Temporal, Arcano, Concentración): Te rodeas de una cantidad de dobles temporales igual a tu rango que representan tus movimientos pasados y futuros. Una vez por turno puedes sacrificar un doble como acción bonus para que un ataque enemigo le impacte a él en lugar de ti o anular un tiro de ataque que hayas realizado, recuperando las acciones gastadas. Los dobles permanecerán activos durante rango + 1 rondas.
 
 ## Rango IV  
+
+### Revertir el tiempo
+
+### Estasis
+
+### Ataque retardado
 
 **Revertir el tiempo** (1 Acciones y 2 chi, Temporal, Arcano): Guardas tu estado actual para poder volver a dicho momento para evitar una desgracia que te ocurra. Al emplear esta habilidad anota tus datos actuales de PV y Vitalidad además de los efectos de estado, posición y heridas permanentes. Durante las siguientes dos rondas en cualquier momento del combate como reacción puedes volver a tu estado anterior sea cual sea tu situación actual, sustituyendo tus datos actuales por los que tenías en el momento que activaste esta habilidad (no necesitas mantener la concentración y se activará automáticamente en el caso que te mueras). Esta habilidad no te permite recuperar tu reserva de chi ni alterar la duración de efectos pasivos como *ira*, *mente desencadenada* o *meteoros de chi*. Puedes usar esta habilidad en otra persona u objeto gastando 1 chi, permitiéndote hasta resucitarle.
 
@@ -43,6 +67,12 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 ## Rango V  
 
+### Parar el tiempo
+
+### Visión futura
+
+### Brecha temporal
+
 **Parar el tiempo** (3 Acciones y 3 chi, Temporal, Arcano): Detienes el tiempo en una burbuja de tamaño grande, paralizando a todas las criaturas que se encuentren en ella que fracasen un tiro de CON frente a tu magia temporal. Este efecto durará una ronda o hasta que ataques a cualquier criatura paralizada por el efecto. *Parar el tiempo* no funciona contra criaturas afectadas por *campo antimágico*.
 
 **Visión futura** (Temporal, Arcano): Tienes un sexto sentido que te avisa de peligros inminentes, volviéndote inmune ataques sorpresa y obteniendo ventaja en todos tus tiros de ataque y defensa durante un combate. Puedes gastar cargas de premonición para asistir tiros de aliados (3 chi) Otorgas *visión futura* a un aliado adyacente durante el resto del combate.
@@ -50,6 +80,8 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 **Brecha temporal** (3 Acciones y 3 chi, Temporal, Arcano, Concentración, Ambiental):  Obtienes control del tiempo en el campo de batalla durante el resto del combate o hasta que pierdas la concentración, manejando su flujo como más te convenga. Al principio de tu turno puedes escoger adelantar o atrasar el tiempo, lo cual te permite afectar a cualquier cantidad de objetivos con *alteración temporal* o *robar el tiempo.* Además, puedes gastar cargas de premonición para sustituir el coste de chi en las habilidades *acelerar* y *ralentizar*. 
 
 ## Rango VI
+
+### Retroceso en masa
 
 **Retroceso en masa** (3 Acciones y 5 chi, Temporal, Arcano): Retrocedes los eventos en una burbuja de tamaño grande a cualquier momento anterior del combate. Todos los personajes afectados volverán a dicho momento, restaurando todas sus estadísticas a aquellas que tenían en dicho momento y volviendo a las posiciones que tenían entonces. No obstante, recordarán todos los eventos sucedidos y las reservas de chi no se restaurarán. Esta habilidad no es un viaje temporal y los eventos sucedidos fuera de esta habilidad no se verán alterados.	
 

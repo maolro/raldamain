@@ -19,8 +19,6 @@ Añade tu rango a todos tus tiros relacionados con magia de vida y aumentas tu r
 
 **Duración**: Instantánea
 
-
-
 Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado al que puedas tocar se sana Vitalidad igual a tu Rango + 2. 
 
 **Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción en fase 1.
@@ -28,6 +26,7 @@ Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado
 ### Rayo de luz
 
 *Vida, Ataque, A distancia, Radiante*
+
 **Coste**: 2 acciones
 
 **Alcance**: Medio
@@ -43,34 +42,46 @@ Atacas a tu enemigo con un rayo de luz cegadora. Realiza un ataque con Magia de 
 ### Halo cegador
 
 *Vida, Visual, Área, Radiante*
+
 **Coste**: 2 acciones y 1 chi
-**Alcance**: Propio
+
 **Tamaño**: Radio corto
-**Efecto crítico**: Los objetivos afectados quedarán *cegados* hasta que reciban curación
+
+**Efecto crítico**: Los objetivos afectados quedarán *cegados* hasta que reciban sanación
+
 **Duración**: Instantánea
 
-Emites una ráfaga de luz abrasadora que ciega a todos los que te rodean. Todas las criaturas hostiles a corta distancia deben tener éxito en un chequeo de CON contra tu magia de Vida o recibir 1d6 + Rango de magia radiante y quedar ciegas durante un asalto. Este hechizo también disipará todos los hechizos de Sombra en tu radio.
-Aumentar (1 chi): Tu cuerpo continúa brillando con una luz cegadora hasta el comienzo de tu siguiente turno, concediendo Desventaja a todos los ataques a distancia realizados contra ti y obligando a todas las criaturas que entren en una posición a corto alcance a tener éxito en un chequeo de CON contra tu magia de Vida o quedar cegadas durante un asalto.
+Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas las criaturas hostiles a distancia cercana deben tener éxito en un tiro de CON frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. Este hechizo también disipará todos los hechizos Sombríos en su radio de efecto.
+
+**Empoderar** (1 chi): Tu cuerpo continúa brillando con una luz cegadora hasta el comienzo de tu siguiente turno, concediendo Desventaja a todos los ataques a distancia realizados contra ti y forzando a todas las criaturas que empiecen su turno a una distancia corta de ti o se muevan a dicha posición a defenderse de nuevo contra este hechizo.
 
 ## Rango II
 
-**Conexión vital** (3 AP y 1 chi, Vida): Formas un vínculo con un aliado a distancia media, permitiéndote absorber la mitad del daño que reciba de un ataque como reacción y afectarle con *toque sanador* sin la necesidad que estés adyacente a él. 
+### Muro luminoso
 
-**Muro luminoso** (2 AP y 1 chi, Vida, Visual, Energía, Defensiva): Crea una barrera de luz intensa que otorga cubierta completa y afecta toda el área en una línea media con *halo cegador*. Toda criatura que cruce el muro sufrirá 2 daño radiante y quedará *cegada* durante una ronda. El muro permanecerá activo hasta que pierdas la concentración o sea destruido.
+### Conexión vital
 
-**Látigo solar** (2 AP y 1 chi, Vida, Área, Energía): Ataca a todos los enemigos en una línea media con un látigo hecho de energía vital (1d4 + 2 de media) que infligirá daño igual a tu *descarga luminosa* pero modificado por tu CAR en lugar de tu rango. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
+### Arma solar
 
 ## Rango III
 
-Reduce el coste de *toque sanador, descarga luminosa* y *halo cegador* por 1 AP. *Descarga luminosa* aumenta el daño base a 1d8
+Todos tus hechizos de Vida sustituyen sus dados de daño por d8 y aquellos de Rango I cuestan una acción menos para emplear (mínimo 1).
 
-**Lanza luminosa** (1 AP y 2 chi, Vida, Energía, Concentración): Moldeas la luz para formar una lanza luminosa que permanecerá a tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que la lanza se mueva volando un paso y ataque a un enemigo adyacente, el cual funciona igual que a una *descarga luminosa*. En lugar de atacar con la lanza puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
+### Luz viviente
 
-**Sanación superior** (2 AP y 2 chi, Vida, Toque, Sanación): Un aliado adyacente se sana 2 + rango Vitalidad y PV además que se recupera de una herida permanente, veneno, enfermedad o maldición que tenga. (1 chi) Sana un efecto adicional.
+### Sanación superior
 
-**Telaraña de vida** (2 AP y 2 chi, Vida, Ambiental, Sanación): Incrementas el flujo de energía vital para que todos tus aliados a una distancia media de ti se regeneran 2 Vitalidad al principio de su turno. Este efecto permanecerá durante rango + 1 rondas y mientras esté activo puedes detectar la posición de todos los seres vivos en el área.
+### Telaraña de vida
 
 ## Rango IV
+
+Todos tus hechizos de Vida de Rango II cuestan una acción menos para emplear (mínimo 1).
+
+### Espadas de justicia
+
+### Transferencia vital
+
+### Castigo del cie
 
 **Castigo del cielo** (2 AP y 2 chi, Vida, Área, Energía): Ataca a todas las criaturas que se encuentren en un cilindro de radio medio a distancia lejana de ti (1d6 + 3 objetivos como media). Este ataque inflige 1d10 + CAR daño radiante, provoca una quemadura leve y ciega en caso de reducir PV.
 
@@ -80,7 +91,13 @@ Reduce el coste de *toque sanador, descarga luminosa* y *halo cegador* por 1 AP.
 
 ## Rango V
 
-*Descarga luminosa* aumenta el daño base a 1d10
+Todos tus hechizos de Vida sustituyen sus dados de daño por d10 y aquellos de Rango III cuestan una acción menos para emplear (mínimo 1).
+
+### Explosión solar
+
+### Milagro de sanación
+
+### Sello de re
 
 **Explosión solar** (3 AP y 3 chi, Vida, Área, Energía): Haz un ataque contra todos tus enemigos a radio medio que inflige 2d10 + CAR daño radiante y ciega durante una ronda al impactar. Las criaturas con las que tengas *conexión vital* en el área se sanan 2 + rango Vitalidad y reducen el nivel de una herida permanente o veneno por un paso.
 
@@ -89,6 +106,10 @@ Reduce el coste de *toque sanador, descarga luminosa* y *halo cegador* por 1 AP.
 **Sello de regeneración** (3 AP y 3 chi, Vida, Sanación, Persistente): Colocas un sello en un objetivo que le regenera periódicamente, sanándole 4 Vitalidad (2 PV si está al máximo) al principio de su turno y permitiéndole reducir una herida permanente que tenga por un paso. El sello dura rango + 1 rondas o hasta que sea eliminado.
 
 ## Rango VI
+
+Todos tus hechizos de Vida de Rango IV cuestan una acción menos para emplear (mínimo 1).
+
+### Fuente de toda la vida
 
 **Fuente de toda la vida** (3 AP y 5 chi, Vida, Sanación, Energía, Ambiental): Sobrecargas el campo de batalla con energía vital, haciendo un ataque contra todos los no-muertos y extraplanarios malignos que inflige 3d10 + CAR daño radiante además de aturdir. Además, al principio de la ronda todos tus aliados recuperan 4 Vitalidad y aquellos que hayan muerto resucitan a 1 PV mientras que los no-muertos y extraplanarios malignos sufrirán 4 daño radiante. Recibes además ventaja en todos tus ataques de magia de vida y estos infligen +1d6 daño al impactar. Este efecto permanecerá activo durante una cantidad de rondas igual a tu rango + 1 y solo puede ser eliminado por otro de igual magnitud.
 

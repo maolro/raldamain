@@ -180,3 +180,11 @@ Liberas la energía divina en tu interior en la forma de una devastadora explosi
 
 **Duración:** Seis rondas
 
+Invocas el poder de tu dios para que te transforme en un invencible avatar divino, representando su enorme fuerza en el plano de los mortales. Al transformarte en un Avatar divino recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Avatar divino por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Avatar divino te otorgará los siguientes beneficios:
+
+- Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Recibes Resistencia a daño Fuego, Frío, Radiante, Necrótico, Ácido, Eléctrico y Sónico además de Inmunidad a Aflicciones y efectos de Toque.
+- Obtienes velocidad de vuelo 1 y eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Puedes emplear tu Rango de Guerrero divino para cualquier bonificador en tiros relacionados con armas, sustituyendo el Rango que usarías normalmente.
+- Todos tus hechizos obtenidos por Guerrero divino no te costarán chi o vigor para ser lanzados.

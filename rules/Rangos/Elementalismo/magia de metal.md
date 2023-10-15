@@ -1,4 +1,6 @@
-
+---
+title: Magia de metal
+---
 
 Tras un estudio sobre el control de la tierra has conseguido aprender ha detectar las impurezas que se encuentran en casi todos los metales que el hombre ha aprendido a manejar, pudiendo deformar férreas estructuras con tan solo unos pocos movimientos de tu cuerpo. A medida que tu control sobre el metal se va afianzando te volverás capaz de manipular cantidades mas grandes así como de hacerlo de formas mas complejas, pudiendo así mover diferentes trozos de metal de diferentes formas todos en perfecta sincronía sirviéndote de la atracción casi magnética que eres capaz de producir. En sus ultimas instancias serás incluso capaz de aprovechar las mas mínimas cantidades de este elemento para producir ataques devastadores sobre el cuerpo de tu enemigo.
 

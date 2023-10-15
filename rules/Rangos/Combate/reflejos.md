@@ -63,7 +63,7 @@ Conoces como esquivar adecuadamente los ataques enemigos para reducir las herida
 
 *Innata, Pasiva*
 
-Tienes la agilidad y equilibrio de un gran acróbata, recibiendo así Inmunidad a *terreno difícil* en el suelo y a ser *tropezado* por efectos críticos. Obtienes también velocidad de Escalada 1 y Resistencia a daño de caídas.
+Tienes la agilidad y equilibrio de un gran acróbata, recibiendo así Inmunidad a *terreno difícil* en el suelo y a ser *tropezado* por efectos críticos. Obtienes también velocidad de Escalada 1 y Resistencia a daño de Caídas.
 
 **Empoderar** (1 vigor): Te levantas inmediatamente tras caer *tropezado*
 
