@@ -189,7 +189,7 @@ Todos tus hechizos de Gravedad de Rango II cuestan una acción menos para emplea
 
 **Duración:** Concentración
 
-Manipulas la fuerza gravitatoria en torno a ti para formar un vórtice gravitatorio que te protegerá de ataques. Al activar esta habilidad recibes *contadores de escudo* iguales a tu Rango además de Resistencia a ataques a distancia. Este hechizo durará hasta que pierdas la concentración o se te acaben los contadores de escudo. 
+Manipulas la fuerza gravitatoria en torno a ti para levantar una gran cantidad de objetos en forma de un vórtice que te protegerá de ataques. Al activar esta habilidad recibes *contadores de escudo* iguales a tu Rango además de Resistencia a ataques a distancia. Este hechizo durará hasta que pierdas la concentración o se te acaben los contadores de escudo. 
 
 La fuerza del vórtice afectará también a los enemigos que se acerquen a ti, permitiéndote hacer un ataque de *pulso gravitatorio* o *arrastre gravitatorio* como reacción contra cada enemigo que entre en un espacio a distancia corta de ti o empiece su turno ahí. Solo podrás afectar a un enemigo de esta manera una vez por ronda.
 
@@ -213,9 +213,23 @@ Este hechizo alterará también la gravedad de maneras inesperadas, permitiendo 
 
 ### Dilatación temporal
 
+*Gravedad, Duradero, Maniobra*
+
 **Coste:** 1 acción y 2 chi
 
-Creas una cantidad de zonas de distorsión temporal en una cantidad de espacios iguales a tu Rango a distancia lejana, las cuales tomarán la forma de esferas pequeñas.  Todas las criaturas que se encuentren en dichas esferas quedarán afectadas por el hechizo *acelerar* o *ralentizar*, 
+**Alcance:** Media
+
+**Tamaño:** Esfera pequeña
+
+**Efecto crítico:** Una criatura afectada quedará *paralizada* durante una ronda o hasta que sufra daño.
+
+**Duración:** Concentración
+
+Dilatas el tiempo empleando tu control gravitatorio en una esfera pequeña que se encuentre a distancia media de ti. Todas las criaturas que empiecen su turno en una esfera de dilatación o entren en ella deberán tener éxito en un tiro de Heroísmo o Atletismo frente a tu Magia Gravitatoria o se moverán de una manera sobrehumanamente lenta, recibiendo así los efectos de *náuseas* mientras permanezcan en ella. Si una criatura ya está bajo los efectos de este hechizo y vuelve a fracasar el tiro quedará entonces *paralizada* hasta que le ataques o se libere.
+
+Este hechizo también frenará todos los ataques que pasen por ella, otorgando Desventaja en todos los tiros de ataque contra criaturas dentro de la esfera. De igual manera que Pozo gravitatorio, este hechizo puede centrarse en una criatura para que se mueva siguiendo sus pasos. Una criatura hostil rodeada por este hechizo podrá liberarse si tiene éxito dos veces en su tiro contra el hechizo.
+
+**Empoderar** (1 chi): La esfera impedirá todos los ataques hechos contra ti esta ronda a costa que no podrás atacar ni emplear ningún hechizo que afecte un lugar fuera de la esfera. Aquellos ataques retenidos por la esfera te atacaran con normalidad la ronda siguiente.
 
 ## Rango V
 
@@ -223,15 +237,45 @@ Todos tus hechizos de Gravedad sustituyen sus dados de daño por d10 y aquellos 
 
 ### Invertir la gravedad
 
+**Coste:** 3 acciones y 3 chi
+
+**Tamaño:** Esfera grande
+
+**Efecto crítico:** Las criaturas afectadas se mueven un paso adicional en la dirección escogida. Si chocarían ya al moverse dos pasos sufrirán una *herida permanente leve*.
+
+**Duración:** Concentración
+
+Inviertes la gravedad en una esfera grande para que empuje en un sentido diferente al normal. Al activar esta habilidad todas las criaturas que escojas empezarán a caer hacia la dirección designada, forzándoles a tener éxito en un tiro de Heroísmo o Acrobacias o serán empujadas dos pasos hacia esa dirección, chocando contra una superficie sólida o contra los límites de la esfera en el caso que no los hubiera. Este impacto les infligirá 1d10 + INT daño Contundente de caída además de hacer que caigan *tropezadas*. Este hechizo afectará de nuevo a todas las criaturas en su área hasta que pierdas la concentración. 
+
+Una inversión gravitatoria afectará también a la dirección de todos los ataques a distancia y de área, haciendo así que cada que un personaje haga un ataque de ese tipo tendrá una probabilidad de 50% que su ataque impacte a un objetivo diferente a esa misma distancia que escoges tú. No puedes afectar a habilidades pertenecientes a las categorías Aire, Telekinesia o Gravedad de esta manera.
+
+**Empoderar** (1 chi): Cambia la dirección de la inversión a otra diferente que escojas.
+
 ### Compresión gravitatoria
+
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** El objetivo sufre una *herida permanente media*
+
+**Duración:** Concentración
+
+Ejerces una presión gravitatoria enormemente fuerte en un objetivo para aplastar su cuerpo. Un objetivo a distancia media debe tener éxito en un tiro de Heroísmo o Destrozar contra tu Magia Gravitatoria o sufrirá una inmensa presión gravitatoria en su cuerpo que le infligirá 2d10 + INT daño Contundente además de una *herida permanente leve* y le *agarrará*. El objetivo permanecerá *agarrado* hasta que pierdas la concentración y cada vez que fracase su tiro para escapar del agarre sufrirá de nuevo 2d10 + INT daño Contundente y una *herida permanente leve*.
+
+**Empoderar** (1 chi): Al lanzar este hechizo afectas a un objetivo adicional.
 
 ### Empuje todopoderoso
 
-**Invertir la gravedad** (3 acciones y 3 chi): Todas las criaturas en un radio corto a un *centro de gravedad* deben tirar FUE contra tu magia gravitatoria o sufren los efectos de *agarre gravitatorio* y puedes elevados 1 paso hacia arriba o estamparlos contra el suelo para infligirles 1d6 daño de caída. Este efecto permanecerá activo mientras te concentres en el *centro de gravedad* y cada ronda puedes repetir el ataque contra los objetivos en el área de efecto. Si el campo de batalla está afectado por *maestría de gravedad* puedes afectar a todas las criaturas en él con esta habilidad.
+**Coste:** 3 acciones y 3 chi 
 
-**Compresión gravitatoria** (1 acciones y 3 chi): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu magia gravitatoria o sufre 2d6 daño físico que ignora defensa y una herida leve además de estar agarrada (funciona igual que *agarre gravitatorio*). Al principio de tu turno todas las criaturas afectadas por esta habilidad sufrirán de nuevo 2d6 daño obligatorio y una herida permanente leve.
+**Tamaño:** Esfera grande
 
-**Empuje todopoderoso** (3 acciones y 3 chi): Formas una devastadora onda de repulsión que arrasa con todas las estructuras a una distancia lejana. Todas las criaturas en el área deberán tirar FUE contra tu magia gravitatoria o son empujadas 2 pasos en cualquier dirección y sufren 3d6 daño de caída además de caer *tropezadas*. Estas además recibirán un ataque con tu magia gravitatoria que inflige 2d10 + INT daño físico debido a los escombros lanzados por esta habilidad. Si hay estructuras particularmente masivas como edificios este ataque infligirá +1d10 daño y las criaturas impactadas serán *agarradas* por los escombros. Todos los objetos medianos quedarán empujados fuera del área de efecto mientras que los de más grandes se derruirán, convirtiéndose en terreno difícil.
+**Duración:** Instantáneo
+
+Formas una devastadora onda de repulsión que arrasa con todas las estructuras en tu camino. Haz un ataque contra todas las criaturas a una distancia lejana de ti que provoca 3d10 + INT daño Contundente al impactar además que destruirá todos las estructuras débiles en el área afectada. Todo el campo de batalla pasará a ser *terreno difícil* y si hay estructuras particularmente grandes las criaturas impactadas deberán tener éxito en un tiro de Heroísmo o Destrozar contra tu Magia Gravitatoria o quedarán *agarradas* por los escombros. 
+
+**Empoderar** (1 chi): Haz un ataque de nuevo con este hechizo la ronda siguiente sin la necesidad de gastar chi.
 
 ## Rango VI
 
@@ -239,4 +283,18 @@ Todos tus hechizos de Gravedad de Rango IV cuestan una acción menos para emplea
 
 ### Agujero negro
 
-**Agujero negro** (3 AP y 5 chi): Formas un agujero negro en un punto a distancia lejana de ti que ejercerá una colosal presión gravitatoria. Toda criatura que empiece su turno o pase por un espacio a distancia lejana del agujero negro deberá tener éxito en un tiro de FUE contra tu magia gravitatoria o será arrastrada un paso hacia el agujero negro. Aquellas criaturas que acaben a distancia corta de él serán *agarradas* por la poderosa presión gravitatoria y las que se encuentren en su posición sufrirán los efectos de *compresión gravitatoria* al principio de su turno. El agujero negro también atraerá objetos de hasta tamaño grande, permitiéndote hacer un ataque de *lanzamiento* con un dado de daño adicional contra todas las criaturas a distancia media del agujero negro. El agujero durará 4 rondas y cuando eso ocurra todas las criaturas que se encuentren en su posición morirán instantáneamente y se producirá un ataque de *empuje todopoderoso*.
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Lejano
+
+**Tamaño:** Esfera pequeña
+
+**Duración:** Cinco rondas
+
+Formas un agujero negro en un punto a distancia lejana de ti que ejercerá una colosal presión gravitatoria. Toda criatura que se encuentre a distancia lejana del agujero negro en el momento que lo creas o empiece su turno ahí deberá tener éxito en un tiro de Heroísmo o Acrobacias o será arrastrada un paso hacia él. Una criatura arrastrada de esta manera no podrá alejarse del agujero negro salvo que tenga éxito en ese mismo tiro. El agujero negro permanecerá en el campo durante cinco rondas sin la necesidad de mantener la concentración en él.
+
+Aquellas criaturas que sean arrastradas en la posición del agujero negro o empiecen su turno ahí sufrirán de inmediato 2d10 + INT daño Contundente y una *herida permanente leve*. Sin embargo, si una criatura se encontraba en la posición del agujero negro en el momento de su creación podrá emplear Esquiva para alejarse de él, pudiendo así moverse dos pasos en caso de éxito. 
+
+Cuando pasen las cinco rondas que dura este hechizo el agujero negro implosionará, forzando a todas las criaturas en su espacio a tener éxito en un último tiro de Heroísmo o Acrobacias contra tu magia gravitatoria o quedarán absorbidas por él, desapareciendo para siempre del mundo. Aquellas que tengan éxito sufrirán en su lugar 3d10 + INT daño Contundente además de una *herida permanente media*.
+
+**Empoderar** (1 chi): Mueve al agujero negro hasta dos pasos en cualquier dirección, haciendo un ataque contra todas las criaturas en su espacio que infligirá 2d10 + INT daño Contundente y una *herida permanente leve* al impactar.
