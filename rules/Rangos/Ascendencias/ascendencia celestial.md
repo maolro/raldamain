@@ -5,19 +5,35 @@ category: Ascendencias
 
 Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada de los seres superiores de la creación, llamándote a ser luz y guía de la humanidad. Según vas alimentando la fe en tus dioses tu cuerpo se irá volviendo uno con la luz que da vida a todos los seres del universo, permitiéndote sanar heridas incurables con un toque e invocar a las fuerzas del cielo para erradicar al mal.
 
+# Reglas fundamentales
+
+Ascendencia celestial tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia celestial mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
 # Rangos
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por 2 + rango.
+Aumenta tu estadística de CAR por 1.
 
-**Nacido del cielo:** Recibes resistencia igual al rango + 1 contra daño radiante y necrótico. Los seres celestiales y espíritus benignos serán amistosos contigo.
+### Nacido del cielo
 
-**Luz celestial:** Puede formar un orbe de luz que ilumina un espacio de radio pequeño. El orbe puede moverse un paso como acción bonus y disipa toda la oscuridad mágica en su camino. (1 chi) un enemigo adyacente al orbe tiene desventaja en sus tiros defensivos.
+*Innata, Pasiva*
+
+El poder del cielo corre por tus venas, otorgándote la semblanza de un ángel. Recibes Resistencia a efectos Radiantes además que las criaturas celestiales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos.
+
+### Luz celestial
+
+*Innata, Pasiva*
+
+Tu cuerpo emitirá luz de manera natural, iluminando todo el espacio a distancia media de ti. El poder celestial en tu interior te permite lanzar los hechizos *halo cegador*, *rayo luminoso* y *toque sanador* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia Celestial. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
 
 ## Rango II
 
-Incrementa tu CAR por 1.
+### Arma angelical
+
+### Cuerpo puro
 
 **Aura de luz** (2 acciones y 1 chi): Iluminas un espacio de distancia cercana con luz divina, disipando toda la oscuridad mágica y cegando a criaturas sensibles a la luz. Esta habilidad durará hasta que pierdas la concentración o pasen rango + 1 rondas.
 
@@ -25,7 +41,11 @@ Incrementa tu CAR por 1.
 
 ## Rango III
 
-Aumenta tu resistencia al daño físico por 1.
+Aumenta tu CON por 1.
+
+### Ángel protector
+
+### Poder de los cielos
 
 **Alas de ángel** (2 chi): Manifiestas unas alas que te otorgan vuelo 2 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar.  Permanecerán activas durante el resto del combate o hasta que pierdas la concentración.
 
@@ -33,7 +53,11 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu SAB por 1.
+### Alas angelicales	
+
+### Visión verdadera
+
+
 
 **Sentido del mal:** Detectas todas las criaturas y efectos mágicos relacionados con entidades malignas a una distancia media. Tienes ventaja en todos tus tiros de *averiguar intenciones*.
 
@@ -41,7 +65,9 @@ Incrementa tu SAB por 1.
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+### Regeneración superior
+
+### Alma ascendida
 
 **Visión verdadera**: Eres capaz de percibir la Puedes ver a través de ilusiones y percibir criaturas invisibles a una distancia lejana. Recibes resistencia igual al rango contra ilusiones fantasmales
 
@@ -50,6 +76,8 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 ## Rango VI
 
 Incrementa tu CON por 1.
+
+### Ángel v
 
 **Ascensión**: Eres inmortal y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los seres celestiales y espíritus benignos te obedecen
 

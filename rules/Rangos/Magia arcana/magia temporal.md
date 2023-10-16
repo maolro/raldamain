@@ -11,9 +11,35 @@ Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Ra
 
 ### Premonición
 
+*Temporal, Arcana, Pasiva*
+
+Vislumbras el futuro por unos instantes para predecir un suceso específico. Una cantidad de veces al día igual a tu Rango + 2 puedes repetir un tiro de ataque, defensa, salvación o habilidad y quedarte con el resultado que más te convenga. Esta habilidad solo puede usarse una vez por tiro y puede contrarrestarse si la criatura enfrentada emplea una habilidad que le permita repetir tiros. 
+
+**Empoderar** (1 chi): Recuperas un uso de esta habilidad.
+
 ### Alteración temporal
 
+*Temporal, Arcana, Toque*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Instantáneo
+
+Reviertes el tiempo en una pequeña burbuja para restaurar aquello que toques a su estado anterior. Reparas los daños recientes de un objeto que puedas tocar, restaurándolo de la condición *roto* y permitiendo que pueda volver a ser utilizado. Esta habilidad puede usarse también para revertir las heridas recientes de un aliado, sanándole Vitalidad igual a tu Rango + 2. Solo podrás curar de esta manera el daño que haya sufrido la ronda pasada y la sanación otorgada por esta habilidad solo puede detenerse con habilidades que anulen magia Arcana.
+
+**Empoderar** (1 chi): Afecta con esta habilidad a todos los objetos y criaturas en una esfera pequeña o reduce por un paso el nivel de una *herida permanente* o Aflicción que tenga tu objetivo.
+
 ### Robar el tiempo
+
+*Temporal, Arcana, Aflicción, Toque*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** El objetivo está *fatigado* una ronda.
 
 **Premonición** (Temporal, Arcano): Como reacción repite un tiro de ataque, defensa o habilidad y te quedas con el resultado que más te convenga, pudiendo usarse como máximo una vez por tiro. Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
 

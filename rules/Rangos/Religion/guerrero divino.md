@@ -138,7 +138,7 @@ Cargas un ataque con suficiente energía divina para exiliar a criaturas ajenas 
 
 ## Rango V
 
-Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu dios, los cuales puedes lanzar empleando vigor en lugar de chi.
+Aprendes dos hechizos de Rango III pertenecientes a una magia asociada a tu dios, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Azote ejecutor
 

@@ -9,11 +9,19 @@ Sientes una gran afinidad por los espíritus de las aguas de todo el mundo, conv
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
+Aumenta tu estadística de DES por 1.
 
-**Nacido de las profundidades:** Eres capaz de aguantar la respiración durante una cantidad de minutos igual a tu rango y los animales marinos no serán naturalmente hostiles hacia ti. Recibes además resistencia al frío igual a tu rango.
+### Nacido de las profundidades
 
-**Hidrokinesia**: Como acción bonus empleable una vez por turno mueves una pequeña cantidad de agua hasta un paso en cualquier dirección o cambias el estado de una porción pequeña de hielo, vapor o agua. (1 chi) Crea o destruye una porción de agua del mismo tamaño
+*Innata, Pasiva*
+
+Las influencias marinas se manifiestan en tu cuerpo, convirtiéndote en un híbrido de tierra y mar. Eres capaz de aguantar la respiración bajo el agua hasta un máximo de diez minutos y los animales marinos no serán naturalmente hostiles hacia ti. Recibes también Resistencia al Frío y a efectos de Agua además de aumentar tu velocidad de natación por 1. Si escoges este Rango y perteneces a una raza que pueda respirar bajo el agua podrás respirar el aire de la superficie durante un máximo de una hora.
+
+### Hidrokinesia
+
+*Innata, Pasiva*
+
+Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipular el flujo de agua canalizando tu fuerza interior. Eres capaz de lanzar hechizos *neblina*, *torrente* y *agua de la vida* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia de Agua. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
 
 ##  Rango II
 
