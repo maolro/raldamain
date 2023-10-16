@@ -3,11 +3,18 @@ title: Magia de Vida
 category: Ocultismo
 ---
 
+# Reglas fundamentales
+
+La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus hechizos y habilidades:
+
+- **Reserva de Chi**: Tu rango de magia de Vida mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Para canalizar eficazmente la magia de Vida necesitas una profunda conexión con los flujos de energía vital que permean el universo. Por esta razón, tu modificador de Magia de Vida se calculará como la suma de tu estadística de Sabiduría y tu rango en la Magia de Vida.
+- **Fuerza vital**: La fuerza de esta magia depende enormemente de los flujos de energía vital en tu entorno, aumentando su fuerza en lugares con fuerte energía positiva y reduciéndose en lugares donde domine la energía negativa. El DJ puede otorgar Ventaja o Desventaja a tus hechizos de Vida dependiendo del flujo de energía vital que tenga un entorno.
+- **Defensa vital**: Al igual que sucede con muchas disciplinas mágicas, la magia de Vida te permite defenderte de una amplia variedad de ataques, utilizando tu modificador de Magia de Vida para tiros defensivos. Este mismo modificador también puede ser empleado en tiros de salvación para protegerte de efectos pertenecientes a las categorías Vida, Sombría, Muerte, y Fuego, reemplazando el atributo que normalmente usarías.
+
 # Rangos
 
 ## Rango I
-
-Añade tu rango a todos tus tiros relacionados con magia de vida y aumentas tu reserva de chi por rango + 2.
 
 ### Toque sanador
 
@@ -57,11 +64,59 @@ Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas 
 
 ## Rango II
 
-### Muro luminoso
+### Enlace Vital 
 
-### Conexión vital
+*Vida, Curación, Toque, Duradero* 
 
-### Arma solar
+**Coste**: 3 acciones y 1 chi 
+
+**Alcance**: Toque 
+
+**Duración**: Concentración 
+
+Estableces un vínculo mágico con una criatura dispuesta a la que tocas, lo que permite que ambos compartan su fuerza vital. Mientras este hechizo esté activo, en respuesta a que tu aliado vinculado reciba daño por un ataque puedes absorber hasta la mitad de ese daño como reacción, disminuyendo tu propia Vitalidad en la cantidad correspondiente. También puedes afectar a tu aliado vinculado con tus hechizos de Sanación como si estuviera adyacente a ti, sin necesidad de tocarlo. 
+
+Un Vínculo Vital durará hasta que tu aliado vinculado elija cancelarlo o pierdas la Concentración. Solo puedes mantener un Vínculo Vital activo a la vez y crear uno nuevo romperá automáticamente tu vínculo anterior. 
+
+**Empoderar** (1 chi): Lanzas Toque Sanador en tu aliado vinculado como acción bonus. Solo puedes empoderar de esta manera una vez por ronda.
+
+**Barrera luminosa**
+
+*Vida, Defensiva, Duradera, Radiante* 
+
+**Coste**: 1 acción y 1 chi 
+
+**Alcance**: Medio 
+
+**Tamaño**: Esfera pequeña o línea media 
+
+**Efecto crítico:** Los objetivos afectados quedarán *cegados* hasta que sean curados
+
+**Duración**: Concentración 
+
+Creas una barrera de luz deslumbrante para protegerte a ti mismo y a otros de los daños. La barrera surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana. La barrera es completamente intangible y no puede ser destruida por medios convencionales, pero será disipada por efectos de Sombra o Gaseosos con la suficiente potencia. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. 
+
+La barrera proporcionará Inmunidad a todos los ataques a distancia para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de CON frente a tu magia de Vida o recibirán 1d6 + Rango de daño radiante y quedarán *cegadas* durante una ronda. 
+
+Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de CON frente a tu magia de Vida o la luz hará que fallen automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
+
+**Empoderar** (1 chi): Las criaturas a una distancia corta de la barrera deben tener éxito en una tirada de CON como si intentaran cruzarla. Solo puedes empoderar de esta manera una vez por ronda.
+
+### Arma Solar 
+
+*Vida, Ataque, Radiante, Duradera*
+
+**Coste**: 2 acciones y 1 chi 
+
+**Tamaño**: Línea mediana 
+
+**Efecto crítico:** Los objetivos afectados quedan *cegados* durante una ronda 
+
+**Duración**: Concentración 
+
+Moldeas la energía luminosa para que tome la forma de un arma de tu elección y la desatas contra tus enemigos. Haz un ataque de magia de Vida contra todas las criaturas en una línea mediana que inflige 1d6 + CAR de daño Radiante al impactar. Una vez creada, el arma solar permanecerá a tu lado, lo que te permite emplear una acción para realizar un ataque con ella contra un objetivo a distancia medio que inflige 1d6 + CAR de daño Radiante al impactar. Este efecto permanecerá activo hasta que pierdas la Concentración. 
+
+**Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo diferente a distancia media.
 
 ## Rango III
 
@@ -69,41 +124,141 @@ Todos tus hechizos de Vida sustituyen sus dados de daño por d8 y aquellos de Ra
 
 ### Luz viviente
 
+*Vida, Defensiva, Duradera*
+
+**Coste**: 2 acciones y 2 chi
+
+**Duración**: Concentración
+
+Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehumanas, desplazándote como si estuvieras hecho de luz. Una vez que activas este hechizo, aumentas todas tus velocidades de movimiento por 1 y puedes entrar en *posición defensiva* una vez por turno como una acción bonus. Obtienes también la capacidad de usar tu modificador de magia de Vida en todos tus tiros de Esquiva. Este hechizo durará hasta que pierdas la concentración o entres en un área afectada por un hechizo de Sombra.
+
+**Empoderar** (1 chi): Tienes éxito automático en una tirada de defensa para defenderte de un efecto que te tenga explícitamente como objetivo y te mueves un paso en cualquier dirección. Puedes empoderar de esta manera cualquier cantidad de veces por turno.
+
 ### Sanación superior
 
+*Vida, Curación, Toque*
+
+**Coste**: 2 acciones y 2 chi
+
+**Alcance**: Cuerpo a cuerpo
+
+**Duración**: Instantáneo
+
+Infundes un poderoso flujo de energía vital en tu toque para sanar las heridas más graves. Un objetivo que puedas tocar se curará Vitalidad y Puntos de Vida iguales a tu Rango + 2. Una vez que lanzas este hechizo, puedes elegir entre reducir el nivel de una *herida permanente* que tenga tu objetivo por dos pasos o curarlos de cualquier Aflicción, Maldición o efecto de estado negativo.
+
+**Intensificar** (1 chi): Puedes lanzar este hechizo como una acción bonus en ti mismo.
+
 ### Telaraña de vida
+
+*Vida, Curación, Ambiental*
+
+**Coste**: 2 acciones y 2 chi
+
+**Tamaño**: Radio grande
+
+**Duración**: Concentración
+
+Aumentas el flujo de energía vital a tu alrededor para potenciar tus hechizos de magia de Vida. Una vez que lances este hechizo obtienes Ventaja en todos los tiros de magia de Vida y además de obtener *vista a ciegas* a distancia media que te permite detectar a todos los seres vivos en el área. Todos tus hechizos de Sanación aumentan la cantidad de Vitalidad que curan en 2 y su alcance pasa a ser corto. Este efecto durará hasta que pierdas la concentración o sea disipado por un hechizo de magia Sombría o Nigromancia del mismo rango o superior.
+
+**Empoderar** (1 chi): Lanza uno de tus hechizos de Sanación como acción bonus.
 
 ## Rango IV
 
 Todos tus hechizos de Vida de Rango II cuestan una acción menos para emplear (mínimo 1).
 
-### Espadas de justicia
+### Espadas de Justicia
 
-### Transferencia vital
+*Vida, Defensiva, Duradera*
 
-### Castigo del cie
+**Coste**: 2 acciones y 2 chi
 
-**Castigo del cielo** (2 AP y 2 chi, Vida, Área, Energía): Ataca a todas las criaturas que se encuentren en un cilindro de radio medio a distancia lejana de ti (1d6 + 3 objetivos como media). Este ataque inflige 1d10 + CAR daño radiante, provoca una quemadura leve y ciega en caso de reducir PV.
+**Duración**: Concentración
 
-**Espadas de justicia** (2 AP y 2 chi, Vida, Concentración, Defensiva, Energía, Sanación): Creas una cantidad de espadas hechas de energía positiva igual a tu rango, las cuales permanecerán a tu lado. Puedes sacrificar una espada como acción bonus usable una vez al turno para detener un ataque que haya impactado o emplear *descarga luminosa* o *toque sanador* contra un objetivo a distancia media. Las espadas permanecerán activas mientras mantengas la concentración.
+Manipulas la energía de la vida en varias espadas de vida que pueden tanto sanar como herir. Este hechizo te otorga *contadores de escudo* igual a tu rango y permanecerá activo hasta que pierdas la concentración o te quedes sin contadores de escudo. Mientras este hechizo esté activo puedes lanzar Rayo Luminoso o Toque Sanador como una acción bonus que puedes usar una vez por turno. Ambos hechizos aumentarán su alcance a Medio.
 
-**Transferencia vital** (3 AP y 2 chi, Vida): Forma un vínculo con hasta dos criaturas aliadas para transferir vida entre vosotros. En cualquier momento de la ronda como reacción una criatura con el vínculo puede absorber cualquier cantidad de daño que reciba otra (este daño traspasará resistencias). Además, cada vez que te sanes con magia de vida todos los aliados afectados por el vínculo también se sanarán. Cualquier criatura afectada puede romper el vínculo cuando quiera.
+**Empoderar** (1 chi): Repones uno de tus *contadores de escudo* perdidos. Si te encuentras en un área infundida con energía vital puedes reponer un *contador de escudo* adicional al intensificar.
+
+### Transferencia Vital
+
+*Vida, Curación, Toque, Duradera*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Toque
+
+**Duración**: Una hora
+
+Vinculas tu fuerza vital con otras dos criaturas de tu elección para que todos compartan tanto salud como dolor. Este vínculo debe formarse con dos criaturas aliadas a las que puedas tocar y persistirá hasta que uno de los participantes vinculados muera, se mueva a una distancia mayor que el alcance medio de los demás o escoja terminarlo.
+
+Mientras este hechizo esté activo cada vez que uno de los participantes sufra daño, puede transferir tanto daño como desee a cualquiera de los otros personajes vinculados. Este hechizo no puede transferir daño que hiera los PV y el daño transferido ignorará todas las resistencias e inmunidades que tenga el receptor. Además, cuando uno de los participantes vinculados se cure daño puede distribuir la cantidad total que se cure como quiera para también sanar a sus aliados.
+
+**Empoderar** (1 chi): El siguiente hechizo de Sanación que lances afectará a todos los participantes en el vínculo como si lo hubieras lanzado sobre ellos.
+
+### Castigo Celestial
+
+*Vida, Ataque, Área, Radiante*
+
+**Coste**: 2 acciones y 2 chi
+
+**Tamaño**: Línea Mediana
+
+**Efecto crítico:** Los objetivos afectados sufren una *quemadura media* y quedan *cegados* durante una ronda.
+
+**Duración**: Instantáneo
+
+Desatas un poderoso rayo de energía de la vida capaz de convertir a tus enemigos en cenizas. Realiza un ataque de magia de Vida contra todos los enemigos en una línea media que inflige 2d8 + CAR daño Radiante al impactar junto con una *quemadura leve*. Este ataque no puede ser esquivado por objetivos a una distancia corta de ti.
+
+**Empoderar** (1 chi): Cuando lances este hechizo realiza un segundo ataque que afecta a todos los objetivos en una dirección diferente.
 
 ## Rango V
 
 Todos tus hechizos de Vida sustituyen sus dados de daño por d10 y aquellos de Rango III cuestan una acción menos para emplear (mínimo 1).
 
-### Explosión solar
+### Explosión Solar
+
+*Vida, Ataque, Área, Sanación, Visual*
+
+**Coste**: 3 acciones y 3 chi
+
+**Tamaño**: Radio medio
+
+**Efecto crítico**: Los objetivos afectados sufren una *quemadura media* y quedan *cegados* durante una ronda.
+
+**Duración**: Instantáneo
+
+Desatas toda la energía vital que hay en tu interior en forma de una explosión devastadora. Realiza un ataque de magia de Vida contra todas las criaturas en un radio medio que inflige 2d10 + CAR daño Radiante y una *quemadura media* al impactar. Este hechizo también curará a las criaturas vinculadas contigo a través del hechizo Vínculo Vital o Transferencia de Vida en lugar de hacerles daño, sanándoles 2 + Rango de Vitalidad y reduciendo en un paso el nivel de una herida permanente o Aflicción que les afecte.
+
+**Empoderar** (1 chi): Aumenta el radio de este hechizo en un paso y puedes elegir qué criaturas serán curadas y cuáles recibirán daño.
 
 ### Milagro de sanación
 
-### Sello de re
+*Vida, Sanación, Toque*
 
-**Explosión solar** (3 AP y 3 chi, Vida, Área, Energía): Haz un ataque contra todos tus enemigos a radio medio que inflige 2d10 + CAR daño radiante y ciega durante una ronda al impactar. Las criaturas con las que tengas *conexión vital* en el área se sanan 2 + rango Vitalidad y reducen el nivel de una herida permanente o veneno por un paso.
+**Coste**: 2 acciones y 3 chi
 
-**Milagro de sanación** (2 AP y 3 chi, Vida, Sanación, Toque, Resurrección): Una criatura que haya muerto hace menos de una hora resucita a 1 PV y reduce el nivel de todas las heridas recibidas por un paso. Si usas esta habilidad en una criatura viva se sana toda su Vitalidad y 2 + rango PV además de eliminar una herida permanente, veneno, enfermedad o maldición que tenga.
+**Alcance**: Toque
 
-**Sello de regeneración** (3 AP y 3 chi, Vida, Sanación, Persistente): Colocas un sello en un objetivo que le regenera periódicamente, sanándole 4 Vitalidad (2 PV si está al máximo) al principio de su turno y permitiéndole reducir una herida permanente que tenga por un paso. El sello dura rango + 1 rondas o hasta que sea eliminado.
+**Duración**: Instantáneo
+
+Esta asombrosa habilidad te permite obrar un verdadero milagro, canalizando la esencia de la vida para sanar las heridas más graves. Un objetivo que puedas tocar recuperará toda su Vitalidad y se sanará PV igual a tu Rango + 2. Este hechizo también  eliminará todas las *heridas permanentes*, Aflicciones o Maldiciones que tenga tu objetivo, restaurándole a un estado de plena salud. 
+
+Este hechizo también puede usarse para resucitar a los muertos, permitiéndote revivir a un personaje que haya muerto hace menos de una hora a 1 PV y libre de heridas permanentes. Para resucitar a un personaje necesitas que su cadáver se encuentre en un estado adecuado y que no le falte ninguno de sus órganos vitales.
+
+**Empoderar** (1 chi): Lanza este hechizo sobre ti mismo como una acción bonus.
+
+### Sello de Regeneración
+
+*Vida, Curación, Toque, Duradero*
+
+**Coste**: 2 acciones y 3 chi
+
+**Alcance**: Toque
+
+**Duración**: Seis rondas
+
+Formas un sello en una criatura que toques que infundirá su cuerpo con energía vital, aumentando enormemente su capacidad regenerativa. Una criatura que tenga puesto un Sello de Regeneración recuperará una cantidad de Vitalidad igual a tu Rango + 2 al principio de su turno y reducirá el nivel de una *herida permanente* o Aflicción que le esté afectando por un paso. Este sello durará seis rondas desde el momento de su colocación y sus efectos no se acumulan con otros hechizos del mismo tipo. 
+
+**Empoderar:** Una criatura que tenga el sello puesto regenerará el doble de Vitalidad esta ronda.
 
 ## Rango VI
 
@@ -111,7 +266,22 @@ Todos tus hechizos de Vida de Rango IV cuestan una acción menos para emplear (m
 
 ### Fuente de toda la vida
 
-**Fuente de toda la vida** (3 AP y 5 chi, Vida, Sanación, Energía, Ambiental): Sobrecargas el campo de batalla con energía vital, haciendo un ataque contra todos los no-muertos y extraplanarios malignos que inflige 3d10 + CAR daño radiante además de aturdir. Además, al principio de la ronda todos tus aliados recuperan 4 Vitalidad y aquellos que hayan muerto resucitan a 1 PV mientras que los no-muertos y extraplanarios malignos sufrirán 4 daño radiante. Recibes además ventaja en todos tus ataques de magia de vida y estos infligen +1d6 daño al impactar. Este efecto permanecerá activo durante una cantidad de rondas igual a tu rango + 1 y solo puede ser eliminado por otro de igual magnitud.
+*Vida, Ambiental, Ataque, Área, Sostenida, Radian*
+
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Radio grande
+
+**Efecto crítico:** Los afectados quedarán *cegados* durante una ronda.
+
+**Duración:** Siete rondas
+
+Al lanzar este hechizo haz un ataque con Magia de Vida contra todas las criaturas en un radio grande que inflige 3d10 + CAR daño Radiante al impactar. Tras este ataque el campo de batalla quedará sobrecargado de energía positiva, empoderando tu magia y sanando a tus aliados. Esta sobrecarga permanecerá activa durante siete rondas y otorgará los siguientes efectos. Solo podrá ser eliminada por hechizos y habilidades de similar magnitud.
+
+- Todos los hechizos de Magia de Vida quedarán empoderados, otorgando Ventaja a todos los tiros relacionados con esta magia empleados en el área afectada.
+- La energía vital sanará rápidamente a los heridos, haciendo así que al principio de tu turno todos los seres vivos se sanarán Rango + 2 Vitalidad. Puedes escoger que esta sanación no afecte a los personajes que escojas.
+- Una vez por ronda en respuesta a la muerte de una criatura aliada puedes resucitarla a 1 PV. No podrás revivir de esta manera a un objetivo si ha perdido sus órganos vitales o su cuerpo ha quedado dañado en exceso.
+- No se podrán crear no-muertos ni invocar criaturas extraplanarias malignas en el área afectada. Aquellas que ya estén ahí deberán tener éxito en un tiro de CON frente a tu Magia de Vida al principio de su turno o sufrirán 1d10 + CAR daño Radiante.
 
 # Rangos míticos
 
