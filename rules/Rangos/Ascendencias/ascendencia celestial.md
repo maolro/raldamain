@@ -33,6 +33,8 @@ Tu cuerpo emitirá luz de manera natural, iluminando todo el espacio a distancia
 
 ### Arma angelical
 
+
+
 ### Cuerpo puro
 
 **Aura de luz** (2 acciones y 1 chi): Iluminas un espacio de distancia cercana con luz divina, disipando toda la oscuridad mágica y cegando a criaturas sensibles a la luz. Esta habilidad durará hasta que pierdas la concentración o pasen rango + 1 rondas.
