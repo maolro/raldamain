@@ -85,9 +85,13 @@ La zona afectada permanecerá en el campo de batalla hasta que pierdas la concen
 
 ### Desplazamiento
 
+*Temporal, Arcana, Defensiva, Reacción*
 
+**Coste:** 1 chi
 
-**Desplazamiento** (1 chi, Temporal, Arcano, Defensivo): Una vez por ronda como reacción a ser impactado por un ataque puedes realizar un salto temporal para evitarlo automáticamente. Esta habilidad también puede usarse para cancelar otro desplazamiento.
+**Duración:** Instantánea
+
+Realizas un pequeño salto temporal para que el último ataque que hayas recibido nunca te impactase. Como reacción empleable en cualquier momento de la ronda cancelas el daño y los efectos del último ataque que hayas recibido, tratándolo como si nunca te impactase. Solo puedes usar este hechizo una vez por ronda y no podrás anular ataques que te hayan impactado la ronda anterior.
 
 ## Rango III  
 
@@ -95,11 +99,25 @@ La zona afectada permanecerá en el campo de batalla hasta que pierdas la concen
 
 ### Visión
 
+*Temporal, Arcana, Ritual*
+
+A través de un complejo ritual meditativo vislumbras temporalmente tu línea temporal, recibiendo así visiones del pasado, presente o futuro. Cada uso de este ritual te otorgará una visión relacionada con un objeto, lugar o persona de tu elección que esté junto a ti mientras realices el ritual. La naturaleza de las visiones que recibas quedará escogida por el máster y un uso excesivo de este ritual puede desencadenar en la locura.
+
 ### Predecir movimiento
 
-### Doble temporal
+*Temporal, Reacción, Arcana*
 
-**Visión** (Ritual, Temporal, Arcano): Realizas un ritual de duración igual a un descanso corto que te permite recibir una visión del pasado, presente o futuro relacionada con un lugar, persona o evento de tu elección. La naturaleza de la visión queda escogida por el máster. 
+**Coste:** 2 chi
+
+**Duración:** Instantánea
+
+Vislumbras el futuro por unos instantes para predecir un suceso y prepararte contra él. Como reacción al realizar un tiro defensivo o de habilidad contra un hechizo puedes emplear este hechizo para tener éxito automático en él. Este hechizo no te protegerá de ataques contra los que no puedes defenderte o en 
+
+### Dobles temporales
+
+*Temporal, Sostenida, Arcana, Defensiva*
+
+**Empoderar** (1 chi): Restaura la mitad de tus dobles temporales redondeando hacia abajo.
 
 **Predecir movimiento** (Temporal, Arcano): Al gastar un uso de *premonición* tendrás ventaja en el tiro repetido. Alternativamente puedes tener una visión escogida por el máster del siguiente movimiento que realizará un enemigo.
 
@@ -109,9 +127,15 @@ La zona afectada permanecerá en el campo de batalla hasta que pierdas la concen
 
 ### Revertir el tiempo
 
+*Temporal, Arcana, Sostenida*
+
 ### Estasis
 
+*Temporal, Arcana, Parálisis*
+
 ### Ataque retardado
+
+*Temporal, Arcana, Mejora*
 
 **Revertir el tiempo** (1 Acciones y 2 chi, Temporal, Arcano): Guardas tu estado actual para poder volver a dicho momento para evitar una desgracia que te ocurra. Al emplear esta habilidad anota tus datos actuales de PV y Vitalidad además de los efectos de estado, posición y heridas permanentes. Durante las siguientes dos rondas en cualquier momento del combate como reacción puedes volver a tu estado anterior sea cual sea tu situación actual, sustituyendo tus datos actuales por los que tenías en el momento que activaste esta habilidad (no necesitas mantener la concentración y se activará automáticamente en el caso que te mueras). Esta habilidad no te permite recuperar tu reserva de chi ni alterar la duración de efectos pasivos como *ira*, *mente desencadenada* o *meteoros de chi*. Puedes usar esta habilidad en otra persona u objeto gastando 1 chi, permitiéndote hasta resucitarle.
 
@@ -123,9 +147,15 @@ La zona afectada permanecerá en el campo de batalla hasta que pierdas la concen
 
 ### Parar el tiempo
 
+*Temporal, Arcana, Área, Parálisis*
+
 ### Visión futura
 
+*Temporal, Pasiva, Arcana*
+
 ### Brecha temporal
+
+*Temporal, Ambiental, Arcana*
 
 **Parar el tiempo** (3 Acciones y 3 chi, Temporal, Arcano): Detienes el tiempo en una burbuja de tamaño grande, paralizando a todas las criaturas que se encuentren en ella que fracasen un tiro de CON frente a tu magia temporal. Este efecto durará una ronda o hasta que ataques a cualquier criatura paralizada por el efecto. *Parar el tiempo* no funciona contra criaturas afectadas por *campo antimágico*.
 
@@ -136,6 +166,8 @@ La zona afectada permanecerá en el campo de batalla hasta que pierdas la concen
 ## Rango VI
 
 ### Retroceso en masa
+
+*Temporal, Arcana, Ambiental*
 
 **Retroceso en masa** (3 Acciones y 5 chi, Temporal, Arcano): Retrocedes los eventos en una burbuja de tamaño grande a cualquier momento anterior del combate. Todos los personajes afectados volverán a dicho momento, restaurando todas sus estadísticas a aquellas que tenían en dicho momento y volviendo a las posiciones que tenían entonces. No obstante, recordarán todos los eventos sucedidos y las reservas de chi no se restaurarán. Esta habilidad no es un viaje temporal y los eventos sucedidos fuera de esta habilidad no se verán alterados.	
 
