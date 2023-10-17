@@ -27,13 +27,15 @@ Vislumbras el futuro por unos instantes para predecir un suceso específico. Una
 
 **Duración:** Instantáneo
 
-Reviertes el tiempo en una pequeña burbuja para restaurar aquello que toques a su estado anterior. Reparas los daños recientes de un objeto que puedas tocar, restaurándolo de la condición *roto* y permitiendo que pueda volver a ser utilizado. Esta habilidad puede usarse también para revertir las heridas recientes de un aliado, sanándole Vitalidad igual a tu Rango + 2. Solo podrás curar de esta manera el daño que haya sufrido la ronda pasada y la sanación otorgada por esta habilidad solo puede detenerse con habilidades que anulen magia Arcana.
+Reviertes el tiempo en una pequeña burbuja para restaurar aquello que toques a su estado anterior. Reparas los daños recientes de un objeto que puedas tocar, restaurándolo de la condición *roto* y permitiendo que pueda volver a ser utilizado. 
+
+Esta habilidad puede usarse también para revertir las heridas recientes de un aliado, sanándole Vitalidad igual a tu Rango + 2. Solo podrás curar de esta manera el daño que haya sufrido la ronda pasada y la sanación otorgada por esta habilidad solo puede detenerse con habilidades que anulen magia Arcana.
 
 **Empoderar** (1 chi): Afecta con esta habilidad a todos los objetos y criaturas en una esfera pequeña o reduce por un paso el nivel de una *herida permanente* o Aflicción que tenga tu objetivo.
 
 ### Robar el tiempo
 
-*Temporal, Arcana, Aflicción, Toque*
+*Temporal, Arcana, Aflicción, Toque, Fuerza*
 
 **Coste:** 2 acciones
 
@@ -41,23 +43,49 @@ Reviertes el tiempo en una pequeña burbuja para restaurar aquello que toques a 
 
 **Efecto crítico:** El objetivo está *fatigado* una ronda.
 
-**Premonición** (Temporal, Arcano): Como reacción repite un tiro de ataque, defensa o habilidad y te quedas con el resultado que más te convenga, pudiendo usarse como máximo una vez por tiro. Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
+Aceleras el flujo del tiempo en una pequeña burbuja para envejecer rápidamente todo lo que toque. Un objetivo que puedas tocar deberá tener éxito en un tiro de CON frente a tu Magia Temporal o sufrirá 1d6 + Rango daño Fuerza que traspasará toda defensa. Este hechizo no afectará a criaturas inmortales o incorpóreas.
 
-**Alteración temporal** (1 Acción y 1 chi, Temporal, Arcano): Restaura un objeto pequeño a su estado anterior reparándolo de todos los daños sufridos en la última ronda. Si esta habilidad se usa en una persona puedes sanarle una cantidad de Vitalidad igual a tu rango + 2.
+Si tocas un objeto no-mágico con este hechizo adquirirá el efecto de estado *roto* mientras que si afectas un hechizo Duradero reducirás su duración por dos rondas si superas el tiro de magia de su lanzador (en el caso que sea de concentración se perderá si lo afectas exitosamente tres veces). 
 
-**Robar el tiempo** (2 Acciones, Temporal, Arcano, Aflicción): Haz un ataque con magia temporal contra un objetivo a distancia corta el cual se defenderá tirando CON o magia protectora. Si es un objeto reducirá su efectividad y empezará a romperse mientras que si es una persona sufrirá 1d6 + rango daño fuerza y quedará *fatigada* si pierde PV. (1 chi) Si logras impactar con tu ataque el objetivo reducirá su reserva de chi por 1 y recuperas un uso de *premonición*.
+**Empoderar** (1 chi): Aumenta el alcance a medio o afecta a un objetivo adicional que puedas alcanzar.
 
 ## Rango II
 
 ### Acelerar
 
+*Temporal, Arcano, Mejora, Duradero*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Aceleras temporalmente a un personaje para que se mueva a velocidades sobrehumanas. Una criatura a distancia media quedará temporalmente acelerada, recibiendo así una acción adicional en su turno además de Ventaja en todos sus tiros relacionados con la DES. Este hechizo durará hasta que pierdas la concentración y sus efectos no se acumulan con otros hechizos del mismo tipo.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo. No hay límite de la cantidad de personajes que puedes tener acelerados pero si pierdes la concentración todos los afectados perderán este hechizo.
+
 ### Ralentizar
+
+*Temporal, Arcano, Duradero*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio pequeño
+
+**Duración:** Concentración
+
+Ralentizas enormemente el tiempo en una esfera pequeña para que tus enemigos se muevan a paso de tortuga. La esfera aparecerá en un punto a distancia media y todos los objetivos en ella deberán tener éxito en un tiro de CON frente a tu Magia Temporal o quedarán *ralentizados* durante una ronda. 
+
+La zona afectada permanecerá en el campo de batalla hasta que pierdas la concentración y toda criatura que entre en ella o acabe su turno ahí deberá repetir el tiro contra este hechizo o será afectada de nuevo. Además, una vez por ronda puedes mover la esfera hasta un paso en cualquier dirección como acción bonus.
+
+**Empoderar** (1 chi): Ralentizas el tiempo alrededor de ti para que todos los ataques que recibas tengan Desventaja en su tiro.
 
 ### Desplazamiento
 
-**Acelerar** (2 AP y 1 chi, Temporal, Arcano): Una criatura cercana recibe una acción adicional por turno durante una cantidad de rondas igual a tu rango + 1. 
 
-**Ralentizar** (2 AP y 1 chi, Temporal, Arcano, Concentración): Todas las criaturas hostiles a una distancia corta de ti se mueven a una velocidad más lenta, reduciendo su cantidad de acciones al turno por 1. El efecto permanecerá activo mientras mantengas la concentración y mientras esté todos los ataques contra ti que pasen por la burbuja tienen desventaja.
 
 **Desplazamiento** (1 chi, Temporal, Arcano, Defensivo): Una vez por ronda como reacción a ser impactado por un ataque puedes realizar un salto temporal para evitarlo automáticamente. Esta habilidad también puede usarse para cancelar otro desplazamiento.
 
