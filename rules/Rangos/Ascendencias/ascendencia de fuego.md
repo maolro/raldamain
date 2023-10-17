@@ -9,6 +9,10 @@ Guardas relación con los espíritus más caóticos y destructivos de los fuegos
 
 Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por un valor igual a tu rango + 2.
 
+### Adaptación al calor
+
+### Piroquinesia
+
 **Adaptación al calor:** Recibes resistencia igual a tu rango + 1 al daño fuego e inmunidad a las quemaduras leves y los efectos de calor extremo.
 
 **Piroquinesia**: Como acción bonus empleable una vez por turno creas una cantidad de fuego en la palma de tu mano que iluminará todo el espacio a distancia pequeña o manipulas un fuego del mismo tamaño para que se desplace un paso en cualquier dirección. (1 chi) Provoca una quemadura leve a una criatura adyacente al fuego.
@@ -16,6 +20,8 @@ Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por un valor 
 ## Rango II
 
 Incrementa tu DES por 1.
+
+### Furia del fuego
 
 **Furia del fuego** (1 chi): Durante una ronda tus ataques físicos infligen +1d6 daño fuego y provocan una quemadura leve si reducen PV. 
 
