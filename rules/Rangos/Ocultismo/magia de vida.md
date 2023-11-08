@@ -64,7 +64,7 @@ Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas 
 
 ## Rango II
 
-### Enlace Vital 
+### Vínculo Vital 
 
 *Vida, Curación, Toque, Duradero* 
 
@@ -146,7 +146,7 @@ Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehum
 
 Infundes un poderoso flujo de energía vital en tu toque para sanar las heridas más graves. Un objetivo que puedas tocar se curará Vitalidad y Puntos de Vida iguales a tu Rango + 2. Una vez que lanzas este hechizo, puedes elegir entre reducir el nivel de una *herida permanente* que tenga tu objetivo por dos pasos o curarlos de cualquier Aflicción, Maldición o efecto de estado negativo.
 
-**Intensificar** (1 chi): Puedes lanzar este hechizo como una acción bonus en ti mismo.
+**Empodera** (1 chi): Puedes lanzar este hechizo como una acción bonus en ti mismo.
 
 ### Telaraña de vida
 
@@ -174,9 +174,11 @@ Todos tus hechizos de Vida de Rango II cuestan una acción menos para emplear (m
 
 **Duración**: Concentración
 
-Manipulas la energía de la vida en varias espadas de vida que pueden tanto sanar como herir. Este hechizo te otorga *contadores de escudo* igual a tu rango y permanecerá activo hasta que pierdas la concentración o te quedes sin contadores de escudo. Mientras este hechizo esté activo puedes lanzar Rayo Luminoso o Toque Sanador como una acción bonus que puedes usar una vez por turno. Ambos hechizos aumentarán su alcance a Medio.
+Manipulas la energía de la vida en varias espadas de vida que pueden tanto sanar como herir. Este hechizo te otorga *contadores de escudo* igual a tu rango y permanecerá activo hasta que pierdas la concentración o te quedes sin contadores de escudo. 
 
-**Empoderar** (1 chi): Repones uno de tus *contadores de escudo* perdidos. Si te encuentras en un área infundida con energía vital puedes reponer un *contador de escudo* adicional al intensificar.
+Mientras este hechizo esté activo puedes lanzar Rayo Luminoso o Toque Sanador como una acción bonus que puedes usar una vez por turno. Ambos hechizos aumentarán su alcance a Medio. Además, si te encuentras en un área infundida con energía vital puedes reponer un *contador de escudo* adicional al intensificar.
+
+**Empoderar** (1 chi): Repones un *contador de escudo* perdido adicional. 
 
 ### Transferencia Vital
 
@@ -258,7 +260,7 @@ Este hechizo también puede usarse para resucitar a los muertos, permitiéndote 
 
 Formas un sello en una criatura que toques que infundirá su cuerpo con energía vital, aumentando enormemente su capacidad regenerativa. Una criatura que tenga puesto un Sello de Regeneración recuperará una cantidad de Vitalidad igual a tu Rango + 2 al principio de su turno y reducirá el nivel de una *herida permanente* o Aflicción que le esté afectando por un paso. Este sello durará seis rondas desde el momento de su colocación y sus efectos no se acumulan con otros hechizos del mismo tipo. 
 
-**Empoderar:** Una criatura que tenga el sello puesto regenerará el doble de Vitalidad esta ronda.
+**Empoderar** (1 chi): Una criatura que tenga el sello puesto regenerará el doble de Vitalidad esta ronda.
 
 ## Rango VI
 

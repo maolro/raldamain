@@ -64,7 +64,11 @@ title: Age of Heresy
 | 4027 | The Mirai corporation is established in Shinri, the first large state corporation in the country. |
 | 4027 | Seigo is crowned ruler of all Shinri, founding the Shinri alliance. He passes many revolutionary laws such as the abolition of feudalism and the end to Shinri's isolationism. |
 | 4028 | Madness spirit Hentsu-Myokai enters the material plane, causing chaos in the city of Klonum |
-|      |                                                              |
+| 4028 | The Oni Republic of Thalos launches an invasion of Shinri.   |
+| 4029 | The Oni gate is sealed by the Incarnate and his companions, ending the Thalos-Shinri conflict. Renshin becomes trapped in the Spirit world during the fight. Seigo then breaks the Imperial Seal to separate both worlds. |
+| 4030 | Ustilus invades the Republic of Thalos, annexing it into the empire |
+| 4041 | The Mirai corporation collapses after a corruption scandal is brought to light. Its chairman Senjuro is assassinated not long after. |
+| 4041 | Renshin leads an Ekta revolt and attempts to trap all of Shinri in the Spirit world. He is defeated by Seigo and his companions but many of Shinri's heroes die in the fight. |
 |      |                                                              |
 | 4073 | Seigo dies of old age, reincarnating in a new form. Seigo's companion Kajin becomes regent of Shinri until his reincarnation is found. |
 | 4090 | Kesenia Revilo becomes president of Kratoi, the first not to belong to one of the republic's two major political parties. |

@@ -27,63 +27,107 @@ El poder del cielo corre por tus venas, otorgándote la semblanza de un ángel. 
 
 *Innata, Pasiva*
 
-Tu cuerpo emitirá luz de manera natural, iluminando todo el espacio a distancia media de ti. El poder celestial en tu interior te permite lanzar los hechizos *halo cegador*, *rayo luminoso* y *toque sanador* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia Celestial. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
+Tu cuerpo emitirá luz de manera natural, iluminando todo el espacio a distancia media de ti. El poder celestial en tu interior te permite lanzar los hechizos *halo cegador*, *rayo luminoso* y *toque sanador* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia Celestial.
 
 ## Rango II
 
 ### Arma angelical
 
+*Innata, Mejora*
 
+**Coste:** 1 vigor o chi
+
+**Duración:** Una ronda
+
+Eres capaz de emplear la energía celestial en tu interior para empoderar tus ataques. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo podrás lanzar un hechizo de Vida como acción bonus contra ese mismo objetivo. 
+
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.
 
 ### Cuerpo puro
 
-**Aura de luz** (2 acciones y 1 chi): Iluminas un espacio de distancia cercana con luz divina, disipando toda la oscuridad mágica y cegando a criaturas sensibles a la luz. Esta habilidad durará hasta que pierdas la concentración o pasen rango + 1 rondas.
+*Innata, Pasiva*
 
-**Arma angelical** (1 chi): Durante esta ronda todos tus ataques físicos infligen +1d6 daño radiante y ciegan durante una ronda si reducen PV. Esta habilidad solo puede usarse una vez por ronda.
+La energía en tu interior de dota de resistencia sobrehumana que te hace especialmente difícil de matar. Recibes Resistencia a Aflicciones y efectos Necróticos además que tu DEF aumentará por un valor igual a tu Rango + 1. 
+
+**Empoderar** (1 vigor o chi): Repites un tiro de muerte y te quedas con el resultado que más te convenga.
 
 ## Rango III
 
-Aumenta tu CON por 1.
+Aumenta tu CON por 1. Aprendes los hechizos Barrera luminosa y Látigo solar los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Ángel protector
 
+**Coste:** 3 acciones y 2 chi
+
+**Duración:** Una hora
+
+Invocas a una criatura celestial para que te asista en el campo de batalla, protegiéndote de ataques y castigando a tus enemigos. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
+
+**Empoderar** (1 chi o vigor): La criatura invocada recupera la mitad de su Vitalidad.
+
 ### Poder de los cielos
 
-**Alas de ángel** (2 chi): Manifiestas unas alas que te otorgan vuelo 2 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar.  Permanecerán activas durante el resto del combate o hasta que pierdas la concentración.
+*Innata, Pasiva*
 
-**Ángel protector** (3 acciones y 2 chi): Invoca a una criatura celestial que permanecerá a tu lado durante el combate. Este mejorará su fuerza cada vez que aumentes de rango. No puedes tener invocadas a más de 4 criaturas a la vez.
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Liberas la energía luminosa de tu interior en la forma de un aura de luz intensa. Mientras esta habilidad permanezca activa estarás rodeado de un aura luminosa que te otorga Ventaja en todos tus tiros relacioneados con hechizos de magia de Vida o armas. El aura durará hasta que pierdas la concentración o sea disipada por un efecto de magnitud similar.
+
+El aura también otorgará Resistencia contra efectos Sombríos y ataques A distancia de todo tipo a todas las criaturas a distancia corta de ti. Los bonificadores otorgados por esta habilidad no se acumulan con aquellos de Telaraña de vida.
+
+**Empoderar** (1 chi o vigor): Reduce el coste de un hechizo de magia de Vida que conozcas por una acción (mínimo 1).
 
 ## Rango IV 
 
-### Alas angelicales	
+### Alas angelicales
+
+*Innata, Pasiva*	
+
+Eres capaz de manifestar alas hechas de luz a tu espalda con las que podrás surcar los cielos. Las alas te otorgarán velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Puedes hacer que las alas aparezcan o desaparezcan como acción bonus y estas se desvanecerán durante una ronda al perder la concentración.
 
 ### Visión verdadera
 
+*Innata, Pasiva*
 
-
-**Sentido del mal:** Detectas todas las criaturas y efectos mágicos relacionados con entidades malignas a una distancia media. Tienes ventaja en todos tus tiros de *averiguar intenciones*.
-
-**Milagro de restauración** (2 acciones y 2 chi): Sanas un efecto de estado, veneno, enfermedad, maldición o hechizo que afecte a una criatura adyacente.
+Eres capaz de percibir la verdad que se oculta tras las mentiras del plano material. Obtienes Inmunidad a efectos Ilusorios y puedes ver a través de ellas como si no existieran. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
 
 ## Rango V
 
+Aumenta tu SAB por 1. Aprendes los hechizos Sanación superior y Luz viviente los cuales puedes lanzar empleando vigor en lugar de chi.
+
 ### Regeneración superior
+
+*Innata, Pasiva*
+
+La energía vital en tu interior sana tu cuerpo a velocidades prodigiosas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 2 además de reducir el nivel de una *herida permanente* o Aflicción que te afecte por un paso. Esta regeneración se acumula con aquella otorgada por Sello de regeneración y se suprimirá durante una ronda si eres herido por un arma hecha de un material asesino de celestiales, como puede ser Bronce estigio o Icor abisal. 
+
+**Empoderar** (1 chi o vigor): Reduce el nivel de una *herida permanente* o Aflicción adicional que te afecte por un paso.
 
 ### Alma ascendida
 
-**Visión verdadera**: Eres capaz de percibir la Puedes ver a través de ilusiones y percibir criaturas invisibles a una distancia lejana. Recibes resistencia igual al rango contra ilusiones fantasmales
+*Innata, Pasiva*
 
-**Aura de vida**: Al activar *aura de luz* tú y todos tus aliados os sanáis 2 VT al principio de la ronda y todas las criaturas malignas en ella sufrirán 2 daño radiante la primera vez que entren en ella o si empiezan su turno ahí.
+Tu alma ha alcanzado el escalafón más alto de la iluminación, ascendiendo a un nivel semejante a un celestial. Recibes Resistencia a efectos de Miedo, Arcanos, y Maldiciones además de Resistencia superior a Aflicciones, Necrótico, Radiante y Miedo. Eres también capaz de comunicarte con criaturas celestiales de todo tipo y estas te tratarán como un igual. 
 
 ## Rango VI
 
-Incrementa tu CON por 1.
+### Ángel vengador
 
-### Ángel v
+**Coste:** 3 acciones y 5 chi o vigor
 
-**Ascensión**: Eres inmortal y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los seres celestiales y espíritus benignos te obedecen
+**Duración:** Seis rondas
 
-**Portal celestial** (3 acciones y 5 chi): Abre un portal celestial durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura celestial con x-1 mejoras. ·La tierra en un radio cercano al portal está afectada por un *aura de vida* y un *aura de luz.*
+Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu camino. Al activar Ángel vengador recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Ángel vengador por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Ángel vengador te otorgará los siguientes beneficios:
+
+- Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque.
+- Todos tus ataques físicos infligirán 1d10 + Rango daño Radiante al impactar además que tirarás un dado de daño adicional en todos tus hechizos de Vida. 
+- Estás siempre bajo los efectos de Poder de los cielos y sanarás el doble de Vitalidad con todos tus hechizos de Sanación
+- Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Todos tus hechizos obtenidos por Ascendencia celestial no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
 
 # Criatura celestial
 

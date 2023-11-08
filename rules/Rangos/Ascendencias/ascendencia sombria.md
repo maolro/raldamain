@@ -7,7 +7,15 @@ Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándot
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por 2 + rango.
+Incrementa tu DES por 1.
+
+### Nacido de las tinieblas
+
+Ver en oscuridad y resiste frío y necrótico. Puedes emplear los hechizos Crear oscuridad y Toque necrótico pagando vigor.
+
+### Sigilo sombrío
+
+No hace ruido y ventaja en sigilo. Ocultarse te cuesta una acción bonus si estás en un lugar a oscuras.
 
 **Nacido de las tinieblas:** Puedes ver en la oscuridad mágica y normal sin problemas y recibes resistencia igual a tu rango + 1 al daño frío y necrótico. Los no-muertos y criaturas sombrías no son naturalmente hostiles hacia ti.
 
@@ -15,7 +23,13 @@ Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por 2 + rang
 
 ## Rango II
 
-Incrementa tu DES por 1.
+### Infusión sombría
+
+Puede cargar un ataque con un hechizo Necrótico o hacer que infliga 1d6 + Rango daño Necrótico al impactar.
+
+### Salto sombrío
+
+Te teletransportas a un espacio con sombras a distancia lejana. Puede usarse para evitar ataques si estás en posición defensiva.
 
 **Infusión sombría** (1 chi): Todos tus ataques físicos infligen +1d6 daño necrótico durante una ronda y el daño que estos infligen reducirá también el máximo de PV y Vitalidad, impidiendo que pueda ser sanado.
 
@@ -23,7 +37,15 @@ Incrementa tu DES por 1.
 
 ## Rango III
 
-Aumenta tu resistencia al daño físico por 1.
+Aprendes los hechizos XXXX
+
+### Llamar las tinieblas
+
+Ventaja en sus tiros con magia sombría y ataques. Absorbes la luz a tu alrededor, bajando la luminosidad que te rodea por un paso.
+
+### Invocación sombría
+
+Invocas una criatura sombría para asistirte en el campo de batalla.
 
 **Regeneración sombría:** Si te encuentras en un espacio afectado por oscuridad una localidad con fuerte presencia sombría te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto en ese terreno recuperas también todos tus PV.
 
@@ -31,7 +53,15 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV
 
-Incrementa tu CAR por 1. Puedes sumar tu rango en magia sombría a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
+Incrementa tu CAR por 1. 
+
+### Arma de tinieblas
+
+Crea arma de tinieblas que no puede ser detenida por fuerzas no-mágicas y provoca daño necrótico o frío al impactar. Puedes aplicar técnicas de combate.
+
+### Forma sombría
+
+Te transformas en una sombra intangible donde eres incorpóreo. Puedes poseer a no-muertos y cadáveres en esta forma.
 
 **Arma de tinieblas** (2 chi): Invocas un arma hecha de pura oscuridad que permanecerá a tu lado durante el resto del combate. El daño del arma ignorará la defensa otorgada por fuentes no-mágicas y solo puede ser detenida por efectos mágicos. Esta arma puede usar tu bonificador de magia sombría o arma para atacar y se aplicaran todos tus atributos de armas.
 
@@ -39,7 +69,15 @@ Incrementa tu CAR por 1. Puedes sumar tu rango en magia sombría a todos tus tir
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 2.
+Aprendes los hechizos XXXX
+
+### Sombra viviente
+
+Resistencia a veneno, arcano, miedo y efectos mentales. Inmunidad a necrótico. Vulnerabilidad a Radiante y sensibilidad a la luz.
+
+### Dominio de pesadilla
+
+Desliga una porción del plano material al sombrío para convertirlo en tierra profanada y darte la habilidad de saltar entre planos.
 
 **Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática si te encuentras en posición defensiva.
 
@@ -47,7 +85,9 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un va
 
 ## Rango VI
 
-Incrementa tu INT por 1.
+### Tirano sombrío
+
+Entras en una forma tocha que mejora enormemente tus habilidades.
 
 **Sombra viviente:** Recibes resistencia 4 al veneno, enfermedades y efectos mentales además de inmunidad al daño necrótico. No obstante, obtienes vulnerabilidad al daño radiante y sensibilidad a la luz. Además, al entrar en *forma sombría* puedes emplear 3 AP y 1 chi para intentar poseer a otra criatura viva o muerta, la cual puede defenderse superándote en un tiro de CAR.
 

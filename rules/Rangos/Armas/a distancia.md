@@ -23,9 +23,11 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de DES. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de armas a distancia.
 
+
+
 ## Rango II
 
-Tus ataques con armas a distancia cuestan 1 AP. Puedes obtener este rango de manera gratuita si tienes 6 o más SAB y 5 niveles de talento en percepción.
+### Disparo triple
 
 **Finta** (1 AP): El objetivo tendrá que defenderse de tu ataque empleando su sabiduría, siendo incapaz de defenderse contra tu próximo ataque si fracasa en su tiro.
 

@@ -1,5 +1,7 @@
+---
 title: Magia de Agua
 category: Magia elemental
+---
 
 Esta magia te permite tener un control absoluto sobre el agua cuando esta se encuentra en estado fluido, pudiendo así aprovecharte de sus propiedades para emplearla en multitud de formas. A medida que tu control va en aumento serás capaz de mayores proezas que involucren al agua en un estado más salvaje, empleándola para formar fuertes torrentes o colosales olas capaces de devastar todo a su paso.
 
@@ -64,43 +66,259 @@ Todas las criaturas dentro de la neblina tendrán dificultades para ver su entor
 
 ## Rango II
 
-**Muro de agua** (2 AP y 1 chi. Agua, Defensivo): Formas una barrera media de aguas rugientes para protegerte de ataques, otorgándote *cubierta completa* contra ellos. Toda criatura que intente cruzar el muro deberá tener éxito en un tiro de FUE contra tu magia de agua o las aguas le impedirán el paso. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*.
+### Muro de Agua
 
-**Ola chocante** (2 AP y 1 chi. Agua, Físico, Área): Atacas a todas las criaturas en una línea media con una ola rugiente, infligiendo 1d6 + CAR daño contundente y empujando un paso. Si mantienes la concentración en la ola esta avanzará un paso en línea recta, volviendo a atacar a todas las criaturas en su camino. La ola continuará hasta que choque con una pared o haya sido movida 3 pasos. (1 chi) Crea una ola adicional en otra dirección
+*Agua, Defensivo, Duradero*
 
-**Tentáculo de agua** (2 AP y 1 chi. Agua, Físico, Concentración): Creas un tentáculo de agua que permanecerá a tu lado hasta que pierdas la concentración. Mientras el tentáculo esté activo puedes hacer un ataque adicional de *torrente* al turno como acción bonus contra un objetivo a distancia cercana y puedes sacrificarlo para detener un ataque que afecte a un único objetivo (deberás sacrificar uno adicional si intentas detener un golpe crítico). Si quieres detener ataques más poderosos deberás sacrificar más tentáculos, forzándote a emplear dos para un ataque de radio corto, tres para uno de radio medio y cuatro para uno de radio grande. No puedes tener activos más tentáculos que tu rango – 1 y aunque tengas múltiples tentáculos solo podrás hacer un ataque al turno, pero este afectará a un objetivo adicional por cada tentáculo que tengas.
+**Coste**: 1 acción y 1 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Esfera pequeña o línea mediana
+
+**Duración**: Concentración
+
+Formas un muro de aguas rugientes para protegerte a ti y a tus aliados de ataques enemigos. El muro surgirá desde cualquier punto a distancia media, tomando la forma de una esfera pequeña o una línea mediana. Como barrera tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
+
+El muro proporcionará *cubierta completa* a todas las criaturas al otro lado y las protegerá de efectos Gaseosos (esto incluye criaturas Incorpóreas). Cualquier criatura hostil que intente cruzarlo deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de agua y luego afectarán hacia sus objetivos escogidos.
+
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo tu oponente deberá tener éxito en una tiro para cruzar el muro o su golpe fallará. Para hacerlo, debes estar en posición defensiva y solo puedes crear un muro de esta manera una vez por ronda.
+
+**Empoderar** (1 chi): El muro recupera todos los puntos de impacto perdidos. Esta habilidad solo se puede usar si tienes suficiente agua para rellenar el muro.
+
+### Ola chocante
+
+*Agua, Ataque, Área, Físico, Duradero*
+
+**Coste**: 2 acciones y 1 chi
+
+**Alcance**: Corto
+
+**Tamaño**: Línea mediana
+
+**Efecto crítico**: Los objetivos fallarán automáticamente su tirada de Heroísmo o Atletismo contra esta habilidad.
+
+**Duración**: Concentración
+
+Moldeas el agua en forma de una poderosa ola para derribar a tus enemigos. Al lanzar este hechizo creas una ola que ataca a todos los objetivos en una línea de tamaño mediano, infligiendo 1d6 + SAB de daño contundente al impactar. Además, los objetivos que sean impactados por la ola deberán tener éxito en una tirada de Heroísmo o Atletismo contra tu magia de Agua o serán empujados un paso hacia atrás y caerán *tropezados*.
+
+Si mantienes la concentración en la ola esta se moverá un paso en línea recta cada ronda, atacando de nuevo a todos los objetivos en su camino. La ola se disipará si choca contra una superficie sólida grande o pierdes la concentración. Este efecto también puede ser destruido de la misma manera que un muro de agua, teniendo así la misma cantidad de PV e Inmunidades.
+
+**Empoderar** (1 chi): Cuando lanzas este hechizo creas una segunda ola que se moverá en una dirección diferente, atacando a todos los objetivos en su camino.
+
+### Tentáculos de Agua
+
+*Agua, Defensivo, Duradero*
+
+**Coste**: 2 acciones y 1 chi
+
+**Duración**: Concentración
+
+A través de movimientos elegantes moldeas el agua para formar un fluido tentáculo que te protegerá del daño. Mientras el tentáculo permanezca activo una vez por ronda puedes realizar un ataque de Torrente como acción bonus contra un objetivo adyacente. El tentáculo también te otorgará una cantidad de *contadores de escudo* igual a tu Rango - 1 que podrás emplear bloquear ataques enemigos. Este hechizo permanecerá activo hasta que pierdas la concentración o gastes tu último contador de escudo.
+
+**Empoderar** (1 chi): Creas un tentáculo adicional que aumentará tus *contadores de escudo* totales en 1 y te permite atacar a un objetivo adicional cuando uses la acción bonus de esta habilidad. No puedes tener más de cuatro tentáculos simultáneos con este hechizo.
 
 ## Rango III
 
-Reduce el coste de *torrente, agua de vida* y *neblina* por 1 AP. Sustituye los dados de daño de todos los hechizos de magia de agua a d8.
+Todos tus hechizos de Agua sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
 
-**Prisión de agua** (1 AP y 2 chi. Agua, Concentración): Haz un ataque de magia de agua que al impactar *agarrará* al objetivo con una esfera de aguas rugientes. Mientras el objetivo esté *agarrado* empezará a ahogarse y para escapar deberá usar atletismo en lugar de heroísmo (la resistencia a *agarres* no se aplica). Si el objetivo se encuentra sumergido en el agua no podrá defenderse de este ataque salvo tirando FUE. (1 chi) Afecta a un objetivo adicional.
+### Prisión Acuosa
 
-**Controlar el agua** (3 AP y 2 chi. Agua, Concentración, Ambiental): Manipulas una cantidad significativa de agua en el campo de batalla para obtener una gran ventaja durante el resto del combate. Con esta habilidad puedes provocar que el agua inunde el campo de batalla, convirtiéndolo en terreno difícil y aumentando tu alcance con magia de agua a lejano además de obtener ventaja en ellos. Si el campo de batalla ya está inundado puedes provocar que se llene de corrientes que otorgarán desventaja en todos los tiros de atletismo y todas las criaturas en él sufrirán un ataque de *torrente* al principio de su turno. Esta habilidad desaparecerá si pierdes la concentración o pasa una cantidad de rondas igual a tu rango + 2.
+*Agua, Mejora, Agarre, Duradera*
 
-**Invocar elementales de agua** (3 AP y 2 chi. Agua, Invocación): Invoca a un elemental de agua que permanecerá a tu lado durante el combate. Al mejorar de rango cada elemental creado tendrá una mejora adicional. No puedes controlar a más de 4 elementales a la vez.
+**Coste**: 2 chi
+
+**Alcance**: Medio
+
+**Efecto crítico**: Tu objetivo comienza inmediatamente a ahogarse, quedando así *fatigado* y avanzando su nivel de ahogamiento por un paso.
+
+**Duración**: Concentración
+
+Al impactar a un enemigo con un ataque de agua puedes lanzar este hechizo como acción bonus para atraparlo en una esfera de aguas enfurecidas. Tu objetivo debe tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua para evitar este efecto, pero si falla quedará *agarrado* hasta que escape o pierdas la concentración. Al a estar rodeados de agua aquellos atrapados por este hechizo empezarán también a *ahogarse*, avanzando su nivel de ahogamiento cada ronda hasta que escapen.
+
+**Empoderar** (1 chi): La Prisión Acuosa afectará a un objetivo adicional si fue impactado por el mismo hechizo que afectó a tu objetivo principal, como puede ser un ataque de Torrente empoderado o uno de Ola chocante
+
+### Control del Agua
+
+*Agua, Ambiental, Duradera*
+
+**Coste**: 3 acciones y 2 chi
+
+**Tamaño**: Radio grande
+
+**Duración**: Concentración
+
+Manipulas las aguas que te rodean para que inunden el campo de batalla, empoderando así tus hechizos de agua. Este hechizo solo puede lanzarse si hay una cantidad adecuada de agua a tu alrededor y al emplearlo todo el espacio en un radio grande centrado en ti se convierte en terreno difícil. Este efecto permanecerá activo hasta que pierdas la concentración u otro hechizo Ambiental de una magnitud similar lo anule.
+
+Mientras Controlar el Agua permanezca activo todos tus hechizos de Agua se potencian, otorgando Ventaja en todos los tiros de Magia de Agua realizados en el área afectada. Este efecto también creará corrientes fuertes en todas las superficies de agua que otorgarán desventaja en las tiradas de Atletismo para nadar a través de ellas. Aquellos que no superen una tirada de Atletismo para nadar a través de una corriente serán empujados un paso en cualquier dirección y empezarán a *ahogarse*.
+
+**Empoderar** (1 chi): El siguiente hechizo de Agua que lances reduce su coste de acciones en 1. Esto solo se puede usar una vez por hechizo.
+
+### Invocar Elemental de Agua
+
+*Agua, Invocación*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Duración**: Una hora
+
+Concedes una semblanza  de vida a una masa de aguas enfurecidas para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Agua de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
+
+**Empoderar** (1 chi): Un elemental bajo tu control se cura de Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 
-**Vórtice** (3 AP y 2 chi. Agua, Concentración, Área): Formas un vórtice de aguas rugientes que hará un ataque de *torrente* contra todas las criaturas en un radio medio (grande si formas el vórtice en una superficie de agua) que al impactar provocará los efectos de *prisión de agua*. El vórtice permanecerá activo mientras mantengas la concentración y cada criatura que empiece su turno en él o entre en su área de efecto volverá a sufrir el ataque.
+Todos tus hechizos de Agua de Rango II cuestan una acción menos para emplear (mínimo 1).
 
-**Escaldar** (1 AP y 2 chi. Agua): Durante esta ronda todos tus ataques de magia de agua provocan 1d6 + rango daño adicional de fuego y una quemadura leve al reducir PV. Si usas esta habilidad en una superficie de agua todas las criaturas en ella sufrirán 1d6 + rango daño de fuego y una quemadura leve (media si reduce PV) sin la posibilidad de defenderse. Este daño fuego ignorará todas las resistencias al fuego que tenga el objetivo al tratarse de agua abrasante.
+### Vórtice
 
-**Taladro de agua** (2 AP y 2 chi. Agua, Área): Haz un ataque de *torrente* con un dado de daño adicional que atacará a todos los objetivos en un cilindro horizontal grande de radio pequeño. Este ataque destruirá también todas las estructuras frágiles y muros en el área.
+*Agua, Ataque, Área, Restricción, Duradera*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Pequeño radio
+
+**Efecto crítico**: Los objetivos afectados fallarán automáticamente sus tiradas para evitar ser *agarrados*
+
+**Duración**: Concentración
+
+Formas un vórtice de corrientes poderosas para atrapar a tus enemigos. Haz un ataque de Magia de Agua contra todas las criaturas en el área afectada por este hechizo que inflige 1d8 + SAB daño Contundente al impactar. Aquellos que sean impactados deben tener éxito en una tirada de Heroísmo o Atletismo contra tu magia de Agua o quedarán atrapados por el vórtice y empezarán a *ahogarse*. Aunque tengan éxito los impactados serán empujados un paso y caerán *tropezados*.
+
+El vórtice permanecerá en el campo de batalla hasta que pierdas la concentración. Las criaturas que comiencen su turno dentro del Vórtice o entren en su área de efecto en cualquier momento de la ronda deberán defenderse nuevamente de este hechizo y sufrirán los mismos efectos al fracasar. Las criaturas atrapadas dentro del vórtice recibirán 1d8 + SAB daño Contundente al inicio de su turno y serán arrastradas hacia el interior del Vórtice, lo que las obliga a realizar tiradas de Atletismo si desean escapar del *agarre*.
+
+**Empoderar** (1 chi): Aumenta el tamaño del vórtice a un radio mediano.
+
+### Escaldar
+
+*Agua, Mejora*
+
+**Coste**: 1 acción y 2 chi
+
+**Alcance**: Personal
+
+**Tamaño**: Pequeño radio
+
+**Efecto crítico**: Los objetivos sufren una quemadura de segundo grado.
+
+**Duración**: Un asalto
+
+Sobrecalientas las aguas en un pequeño radio a tu alrededor para hacerlas hervir. Durante esta ronda todas las criaturas que se encuentren en una superficie de agua o que entren en ella sufrirán 1d6 + Rango daño de Fuego y una *quemadura leve*. Este daño y sus efectos tratarán la resistencia al Fuego que tenga el afectado como si fuera de un nivel inferior.
+
+Si utilizas agua hirviente para tus ataques de Magia de Agua estos infligirán 1d6 + Rango de daño adicional de Fuego y una *quemadura leve* al impactar. También obtendrán el efecto crítico de este hechizo además de cualquier efecto crítico que ya posean.
+
+Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni proporcionará efectos adicionales. Tampoco tendrá ningún efecto si se lugar con frío extremo, limitándose solo a calentar las aguas en el área afectada.
+
+**Empoderar** (1 chi): Aumenta el radio de este hechizo a mediano.
+
+### Taladro Hidráulico
+
+*Agua, Ataque, Área*
+
+**Coste**: 2 acciones y 2 chi
+
+**Tamaño**: Línea mediana
+
+**Efecto crítico**: Los objetivos afectados sufren una *herida permanente media* y caen *tropezados*. También perderán un *contador de escudo* adicional si lo tuvieran.
+
+**Duración**: Instantáneo
+
+Atacas a todas las criaturas en una línea mediana con un chorro de agua a alta presión capaz de perforar barreras e incluso armaduras. Haz un ataque de Magia de Agua contra todas las criaturas en una línea mediana que inflige 2d8 + SAB daño Contundente y una *herida permanente leve* al impacto.
+
+Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además,  la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa de estructuras sólidas y criaturas como muros de piedra o elementales de tierra.
+
+**Empoderar** (1 chi): Cuando lances este hechizo haz un segundo ataque que afecta a todos los objetivos en una dirección diferente.
 
 ## Rango V
 
-Sustituye los dados de daño de todos los hechizos de magia de agua a d10.
+Todos tus hechizos de Agua sustituyen sus dados de daño por d10 y aquellos de Rango III que conozcas cuestan una acción menos para emplear (mínimo 1).
 
-**Tsunami** (3 AP y 3 chi. Agua, Área): Formas una ola colosal que arrasará con todo lo que se encuentre en una barrera grande, destruyendo las estructuras frágiles que haya. Todas las criaturas en su área de efecto sufrirán un ataque que infligirá 2d10 + CAR daño contundente y les provocará los efectos de *prisión de agua*. La ola se moverá un espacio cada ronda mientras mantengas la concentración en ella, volviendo a atacar a todas las criaturas en su camino mientras que las criaturas agarradas sufrirán 1d10 + CAR daño contundente al turno. Esta continuará hasta que choque con una barrera lo suficientemente grande o pasen 4 rondas. Si creas esta habilidad a partir de una superficie de agua lo suficientemente grande como un lago o el mar infligirá +1d10 daño al impactar.
+### Tsunami
 
-**Lluvia torrencial** (3 AP y 3 chi. Agua, Ambiental): Invocas una lluvia torrencial que llenará el campo de batalla con una gran cantidad de agua y oscurecerá la visión, provocando así los efectos de *controlar el agua* y *neblina*. La lluvia permanecerá durante el resto del combate y todas las masas de agua en el área empezarán a desbordarse, provocando inundaciones en el área cercana a ellos. Esta habilidad no puede ser usada en entornos donde el clima no lo permita.
+*Agua, Ataque, Área, Agarre, Duradera*
 
-**Vapores abrasantes** (3 AP y 3 chi. Agua, Concentración, Aflicción): Evaporas el agua en un espacio medio para formar una nube de vapor abrasante del mismo tamaño, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de agua o sufrirán 1d10 + CAR daño fuego y una quemadura leve (media si reduce PV). Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá sufrirá 2 daño fuego y una quemadura leve. La nube permanecerá en el campo de batalla  hasta que pierdas la concentración.
+**Coste**: 3 acciones y 3 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Línea grande
+
+**Efecto crítico**: Los objetivos afectados fallarán automáticamente sus tiradas para evitar ser *agarrados*
+
+**Duración**: Concentración
+
+Invocas una ola colosal capaz de destruir todo a tu paso. La ola surgirá desde un punto con la cantidad adecuada de agua a distancia media y llenará un área del tamaño de una línea grande. Haz un ataque de Magia de Agua contra todas las criaturas en el espacio del hechizo que inflige 2d10 + SAB daño Contundente al impactar. Todas las criaturas afectadas deben tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia de Agua o quedarán *agarradas* por la ola. Si tienen éxito, serán empujadas un paso hacia atrás y caerán *tropezadas*.
+
+La ola continuará moviéndose un paso cada ronda, atacando de nuevo a todas las criaturas en su camino. Las criaturas que empiecen su turno *agarradas* por la ola sufrirán 1d10 + SAB daño Contundente y empezarán a *ahogarse*. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración o la ola choque contra una barrera lo suficientemente grande como para detenerla. Una vez que lo haga, todas las criaturas *agarradas* por la ola sufrirán 2d10 + SAB daño Contundente y caerán *tropezadas*.
+
+**Potenciar** (1 chi): El tsunami aumentará su daño por 1d10 esta ronda. Solo puedes empoderar de esta manera una vez por ronda y necesitas una gran cantidad de agua para hacerlo.
+
+### Lluvias Torrenciales
+
+*Agua, Ambiental*
+
+**Coste**: 3 acciones y 3 chi
+
+**Alcance**: Personal
+
+**Tamaño**: Campo de batalla
+
+**Duración**: Una hora
+
+Invocas una lluvia intensa que cubrirá todo el campo de batalla. Mientras llueva intensamente todos los tiros de Magia de Agua recibirán Ventaja debido al clima favorable (este bonificador no se acumula con Controlar el Agua). Debido a la lluvia constante siempre tendrás una cantidad adecuada de agua para lanzar tus hechizos de Agua y las criaturas en el área afectada se quedarán *embotadas* debido a la visibilidad reducida.
+
+Las lluvias durarán una hora o hasta que un hechizo Ambiental de similar magnitud cambie el clima. Este hechizo no puede lanzarse en entornos donde lluvias intensas son imposibles o en estaciones poco favorables para ellas.
+
+**Empoderar** (1 chi): El siguiente hechizo de Agua que lances reduce su coste de acciones en 1. Esto solo se puede usar una vez por hechizo.
+
+### Vapor Hirviente
+
+*Agua, Gaseoso, Área, Duradera*
+
+**Coste**: 3 acciones y 3 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Esfera mediana
+
+**Efecto crítico**: Los afectados sufren una *quemadura media*
+
+**Duración**: Concentración
+
+Sobrecalientas una superficie de agua para formar una nube de vapor hirviente. El vapor llenará una esfera de tamaño mediano, expandiéndose alrededor de esquinas y paredes. Las criaturas dentro de la nube quedarán *embotadas* debido a la baja visibilidad y tienen los beneficios de *ocultamiento* ante ataques desde el exterior. La nube permanecerá en el campo de batalla hasta que pierdas la concentración o se disipe. Debido al calor necesario para este hechizo este no funcionará si se lanza en entornos muy fríos.
+
+Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta empezarán a sufrir efectos adversos debido al vapor ardiente. Las criaturas que empiecen su turno dentro de la nube o entren en ella deberán tener éxito en un tiro de CON frente a tu Magia de Agua. Si fracasan sufrirán 1d10 + SAB de daño Fuego (la mitad daño en caso de éxito) y una *quemadura leve*. Este daño tratará las resistencias al Fuego que tengan los afectados como si fueran de un nivel inferior ya que proviene de vapor hirviente.
+
+**Empoderar** (1 chi): Aumenta el radio de la nube a mediano o incrementa el daño de este hechizo a 2d10 + SAB durante esta ronda.
 
 ## Rango VI
 
-**Furia de los océanos** (3 AP y 5 chi. Agua, Ambiental): Invocas la furia del mar en todo el campo de batalla, haciendo que las aguas y el cielo se enfurezcan. Esta habilidad afectará el campo de batalla con *lluvia torrencial* y mientras pasen las rondas la tormenta aumentará su fuerza. A partir de la segunda ronda formar una *ola chocante* cada ronda como acción bonus sin coste de chi que emergerá de una superficie de agua para atacar a todas las criaturas cercanas y a partir de la cuarta puedes formar un *vórtice* en lugar de una *ola.* No necesitarás concentrarte en ninguno de estos efectos y la *furia de los océanos* se desvanecerá al cabo de 7 rondas.
+Todos tus hechizos de Agua de Rango IV cuestan una acción menos para emplear (mínimo 1).
+
+### Furia del Océano
+
+*Agua, Ambiental*
+
+**Coste**: 3 acciones y 5 chi
+
+**Alcance**: Personal
+
+**Tamaño**: Campo de batalla
+
+**Duración**: Siete asaltos
+
+Desatas una gran tormenta en el campo de batalla, enfureciendo tanto al mar como al cielo. Este hechizo inicialmente afectará al campo de batalla de manera similar a las Lluvias torrenciales, pero su poder aumentará rápidamente con el paso del tiempo. Este efecto permanecerá en el campo de batalla durante siete rondas o hasta que sea disipado por otro hechizo Ambiental de igual o mayor magnitud.
+
+Mientras este efecto permanezca en el campo de batalla puedes utilizar una de las siguientes habilidades una vez por ronda como acción bonus después de que hayan transcurrido las rondas requeridos:
+
+- **Ronda 2**: Puedes lanzar el hechizo Ola Aplastante sin la necesidad gastar chi. La ola surgirá desde cualquier punto en un radio grande centrado en ti y durará solo una ronda.
+- **Ronda 4**: Puedes lanzar el hechizo Vórtice sin la necesidad gastar chi. El Vórtice surgirá en cualquier lugar del campo de batalla y permanecerá fijo en ese punto. No necesitas mantener la concentración en los hechizos de vórtice lanzados de esta manera.
+- **Ronda 7**: Puedes lanzar el hechizo Tsunami sin la necesidad gastar chi. Emergerá desde la masa de agua más grande en el área y se moverá automáticamente un paso en cualquier dirección.
+
+Una vez que este hechizo finalice, todos los hechizos Duraderos que haya creado cesarán de inmediato. No puedes volver a lanzar este hechizo en el mismo lugar hasta que pase por lo menos un día.
 
 # Invocación
 
