@@ -39,7 +39,7 @@ Aunque estés al borde de la muerte eres capaz de volver a levantarte para segui
 
 *Innata, Pasiva*
 
-Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Maniobraademás que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
+Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Maniobras además que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
 
 ### Resiliencia
 
@@ -47,7 +47,7 @@ Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así
 
 **Coste:** 1 vigor
 
-Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce el daño que recibas de un ataque a la mitad después de aplicar DEF y Resistencias. Resiliencia solo puede usarese una vez por ataque y se redondeará siempre hacia abajo.
+Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce el daño que recibas de un ataque a la mitad después de aplicar DEF y Resistencias. Resiliencia solo puede usarse una vez por ronda y se redondeará siempre hacia abajo.
 
 ## Rango III
 
@@ -101,4 +101,4 @@ Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al prin
 
 **Coste:** 3 vigor
 
-Cuando estás al borde de la muerte empleas toda la fuerza que te queda para una última resistencia. Esta habilidad solo puede activarse cuando caigas a 0 PV y al hacerlo recuperarás toda tu Vitalidad además de la mitad de tus PV. No obstante, las *heridas permanentes* que tengas seguirán activas.
+Cuando estás al borde de la muerte empleas toda la fuerza que te queda para una última resistencia. Esta habilidad solo puede activarse cuando caigas a 0 PV y al hacerlo recuperarás toda tu Vitalidad además de la mitad de tus PV. No obstante, las *heridas permanentes* que tengas seguirán activas y no podrás volver a activar esta habilidad hasta que tomes 

@@ -141,7 +141,9 @@ Todos tus hechizos de Gravedad sustituyen sus dados de daño por d8 y aquellos d
 
 **Duración:** Concentración
 
-Manipulas la gravedad en torno a un enemigo para retenerlo y controlar sus movimientos. Un objetivo a distancia media debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia Gravitatoria o quedará *agarrado* por este hechizo, quedando a la merced de tu control gravitatorio. Mientras la criatura permanezca *agarrada* fallará todos sus tiros contra otras Maniobras pertenecientes a esta magia y podrá repetir el tiro cada ronda para intentar liberarse. Este efecto durará hasta que pierdas la concentración o se libere.
+Manipulas la gravedad en torno a un enemigo para retenerlo y controlar sus movimientos. Un objetivo a distancia media debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia Gravitatoria o quedará *agarrado* por este hechizo, quedando a la merced de tu control gravitatorio. 
+
+Mientras la criatura permanezca *agarrada* fallará todos sus tiros contra otras Maniobras pertenecientes a esta magia y podrá repetir el tiro cada ronda para intentar liberarse. Este efecto durará hasta que pierdas la concentración o se libere.
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 

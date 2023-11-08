@@ -25,7 +25,7 @@ Incrementa tu CON por 1.
 
 Aumenta tu resistencia al daño físico por 1.
 
-**Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadur* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
+**Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadura de piedra* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
 
 **Conexión elemental**: Si te encuentras en contacto con la tierra te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto tocando tierra firme recuperas también todos tus PV.
 

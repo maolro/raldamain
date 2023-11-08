@@ -11,6 +11,7 @@ Guerrero divino tiene las siguientes reglas fundamentales que se aplican a cualq
 
 - **Fuerza y magia:** Tu rango en Guerrero divino mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
 - **Estadística principal**: Para canalizar el poder de un dios necesitas una devoción inquebrantable y la voluntad para luchar hasta la muerte por tu fe.  Por esta razón, tu modificador de Guerrero Divino será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad. 
+- **Conocimiento de los dioses:** Esta habilidad canalizar una pequeña porción de los poderes de tu dios para emplearlos en el campo de batalla. Cada dios tiene de tres a cinco magias relacionadas, las cuales podrás aprender a rangos superiores de Guerrero divino. 
 
 # Rangos
 
@@ -94,7 +95,7 @@ A su vez que infundes terror a tus enemigos tus aliados se llenan de coraje para
 
 *Divina, Pasiva*
 
-El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera.
+El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte una vez por ronda puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera.
 
 ## Rango IV
 

@@ -1,4 +1,8 @@
-## 
+---
+title: Divinidades
+---
+
+Aquí se presenta una lista de divinidades junto a las magias con las que están vinculadas para su uso en rangos de Religión. 
 
 # Tipos de entidades
 
@@ -37,7 +41,7 @@
 | Ishiyuko        | Espíritu del caos, la libertad y la rebelión                 | Temporal, Espacial, Aire           |
 | Kajokobi        | Espíritu de los kitsune, las artimañas y el placer           | Ilusoria, Mental, Espacial         |
 | Kihakaze        | Espíritu de las tormentas, los secretos y los vientos        | Tormenta, Aire, Ilusoria           |
-| Kitsuri-Dento   | Espíritu de las artes marciales, la disciplina y el honor    | Tierra, Protectora,                |
+| Kitsuri-Dento   | Espíritu de las artes marciales, la disciplina y el honor    | Metal, Protectora, Tormenta        |
 | Muhin-Shoku     | Espíritu de los huérfanos, los perdidos y los lugares secretos | Ilusoria, Espacial, Vida           |
 | Nawm Tanshi     | Espíritu del conocimiento, la magia y el progreso            | Temporal, Protectora, Mental       |
 | Ryoshasaki      | Espíritu de los caminos, los viajeros y los inicios          | Espacial, Temporal, Ilusoria       |
@@ -65,6 +69,12 @@
 | Liulang    | Espírtu del equilibrio natural, la fertilidad y los bosques | Naturaleza, Vida, Protectora |
 
 ### Espíritus mazarinos
+
+| **Nombre** | **Descripción** | **Magias aso** |
+| ---------- | --------------- | -------------- |
+|            |                 |                |
+|            |                 |                |
+|            |                 |                |
 
 
 
@@ -100,4 +110,4 @@
 | ---------- | ------------------------------------------------------------ | ------------------------------------------- |
 | Feyn       | Dios de la Humanidad y su protector.                         | Vida, Fuego, Protectora, Espacial, Temporal |
 | Legión     | Entidad colectiva formada por todos los hobgoblin muertos.   | Vida, Protectora, Fuego, Metal              |
-| Meisodh    | Profeta ascendido de los chothgar. Sus enseñanzas se basan en la fuerza por encima de todo. |                                             |
+| Meisodh    | Profeta ascendido de los chothgar. Sus enseñanzas se basan en la fuerza por encima de todo. | Telekinesia, Temporal, Fuego, Transmutación |

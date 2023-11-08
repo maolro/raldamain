@@ -5,17 +5,59 @@ category: Magia elemental
 
 Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos de tu cuerpo para así poder emplear todo su poder destructivo. Cuanto más vas conectando con tu elemento, mayor se va volviendo tu sincronía con él dejándote alterarlo a un mayor nivel, cambiando su intensidad en incluso dándole forma. En el momento que tu poder alcance sus últimas etapas de crecimiento tu control será casi absoluto, pudiendo cualquier cosa entre tus llamas o incluso hacer que llueva fuego desde el mismísimo cielo.
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Fuego mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Fuego será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de usar magia de Fuego para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Fuego para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades de tipo Fuego, Frío, Radiante, Agua o Madera, sustituyendo el talento que usarías normalmente.
+
+# Rangos
+
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia elemental de fuego y aumenta tu reserva de chi por 2 + rango.
+### Llamarada
 
-**Llamarada** (2 acciones. A distancia, Energía, Fuego): Haz un ataque con magia elemental de fuego contra un objetivo a distancia media que inflige 1d6 + rango daño fuego y provoca una quemadura leve si reduce PV. El lugar impactado saltará en llamas si está hecho de material inflamable. (1 chi) Ataca a un objetivo adicional.
+*Fuego, Ataque, A distancia*
 
-**Toque abrasador** (2 acciones. Toque, Energía, fuego): Un objetivo adyacente hace un tiro de salvación de CON frente a tu magia de fuego o sufre 1d6 + rango daño fuego y una quemadura leve (media si pierde PV). (1 chi) Aumenta el alcance a cercano.
+**Coste:** 2 acciones
 
-**Aliento de fuego** (2 acciones y 1 chi. Área, Energía, Fuego): Haz un ataque contra a todos los objetivos en un cono pequeño que inflige 1d6 + CAR daño fuego y una quemadura leve (media si reduce PV). Todos los objetos inflamables en el área saltarán en llamas. 
+**Alcance:** Medio
 
-**Parada elemental** (reacción. Defensivo, Energía, Fuego): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. 
+**Efecto crítico:** Tu objetivo sufrirá una *quemadura leve*
+
+**Duración:** Instantáneo
+
+Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. Haz un ataque de Magia de fuego contra un enemigo a distancia media que infligirá 1d6 + Rango daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo
+
+### Asalto abrasador
+
+*Fuego, Cuerpo a cuerpo, Ataque*
+
+**Coste:** 2 o más acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** Tu objetivo sufrirá una *quemadura leve*
+
+**Duración:** Instantáneo
+
+Aumentas la velocidad de tus ataques para penetrar las defensas enemigas a costa de reducir su alcance. Haz un ataque de magia de Fuego contra un objetivo adyacente que inflige 1d6 + Rango daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
+
+Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma cantidad de ataques extra contra el mismo objetivo quien usará el mismo resultado defensivo para protegerse de todos ellos (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Cada ataque adicional que realices aumentará su tiro de ataque y daño por 1 contra ese mismo objetivo llegando a un bonificador máximo de 3.
+
+**Empoderar** (1 chi): Aumenta el alcance de este ataque a cercano
+
+### Aliento de fuego
+
+*Fuego, Ataque, Área*
+
+**Coste:** 2 acciones y 1 chi
+
+
+
+
 
 ## Rango II
 
@@ -27,7 +69,23 @@ Añade tu rango a todos tus tiros relacionados con magia elemental de fuego y au
 
 ## Rango III
 
-Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *Toque abrasador* y *llamarada* aumentan el daño base a 1d8
+Tus hechizos de Fuego convierten sus dados de daño a d8 y los de Rango I reducen su coste en acciones por 1 (mínimo 1). 
+
+### Erupción abrasadora
+
+*Fuego, Ataque, Área*
+
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Esfera mediana
+
+**Efecto crítico:** Todos los afectados sufrirán una *quemadura media*
+
+**Duración:** Instantáneo
+
+Canalizas tu fuego interior para formar una devastadora explosión ígnea alrededor de ti. Haz un ataque de Magia de Fuego contra todas las criaturas a distancia media de ti que infligirá 2d8 + CAR daño Fuego al impactar además de una *quemadura leve*. Este ataque no puede ser detenido con Parada por criaturas adyacentes a ti además que todos los objetos inflamables en el área afectada saltarán en llamas.
+
+**Empoderar** (1 chi): Empleas este ataque como reacción al ser impactado por un ataque.
 
 **Serpiente de fuego** (1 acciones y 2 chi. Energía, Fuego, Concentración): Moldeas el fuego para formar una serpiente hecha de llamas que permanecerá a tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que la serpiente se mueva volando un paso y ataque a un enemigo adyacente, el cual funciona igual que a un *toque abrasador*. En lugar de atacar con la serpiente puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
 
@@ -37,6 +95,8 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 ## Rango IV
 
+Tus hechizos de Fuego de Rango II reducen su coste en acciones por 1 (mínimo 1). 
+
 **Danza de las llamas** (3 AP y 2 chi. Defensivo, Energía, Fuego, Concentración): Te rodeas de una cantidad de llamas danzantes igual a tu rango – 1, las cuales permanecerán a tu lado mientras mantengas la concentración. Puedes sacrificar una llama como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *llamarada* contra un objetivo a distancia media (puedes sacrificar dos para que el ataque sea de *látigo flamígero* o *bola de fuego*). Además, toda criatura que empiece su turno o entre en una posición adyacente a ti sufrirá los efectos de un *muro de fuego* (podrá tirar DES para evitarlo). 
 
 **Torbellino de fuego** (2 AP y 2 chi. Energía, Fuego, Área, Concentración): Formas un torbellino de llamas furiosas que hará un ataque de *bola de fuego* contra todas las criaturas en un radio medio (grande si formas el torbellino en una posición afectada por *muro de llamas*) cuyas quemaduras son de un nivel superior. Si tienes activa la habilidad *serpiente de fuego* puedes manipular el torbellino en lugar de la serpiente, moviéndolo un paso como acción bonus y repitiendo el ataque contra todas las criaturas en su radio de efecto. Además, todo el espacio por el que pase saltará en llamas.
@@ -45,7 +105,7 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 ## Rango V
 
-*Toque abrasador* y *llamarada* aumentan el daño base a 1d10
+Tus hechizos de Fuego convierten sus dados de daño a d10 y los de Rango III reducen su coste en acciones por 1 (mínimo 1). 
 
 **Lluvia de brasas** (3 AP y 3 chi. Energía, Fuego, Área): Haz un ataque contra cada criatura en un cono grande que inflige 2d10 + CAR daño fuego y provoca una quemadura media (grave al reducir PV). Todo el material inflamable en el área de efecto saltará en llamas, provocando un efecto similar a *muro de fuego*.
 
@@ -55,7 +115,7 @@ Reduce el coste de *llamarada, toque abrasador* y *aliento de fuego* por 1 AP. *
 
 ## Rango VI
 
-El daño de fuego que provocas pasa a ser fuego puro, atravesando así las resistencias elementales que tengan tus objetivos. 
+Tus hechizos de Fuego de Rango IV reducen su coste en acciones por 1 (mínimo 1) además que todos ellos tratarán la resistencia al Fuego que tenga tu objetivo como si fuera un paso inferior.
 
 **Infierno abrasador** (3 AP y 5 chi. Fuego, Ambiental): Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Esta habilidad activará los efectos de *pirotecnia* sobre el campo de batalla y mientras permanezca activa tus ataques de *bola de fuego* no te costarán chi. En la cuarta ronda tras la activación inicial todo el campo de batalla erupcionará en una colosal explosión flamígera, permitiéndote hacer un ataque de *lluvia de brasas* contra todos los tus enemigos con un dado de daño adicional. Esta habilidad no necesita tu concentración para sostenerse y puede ser contrarrestada por efectos ambie similares.
 

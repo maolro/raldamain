@@ -47,7 +47,7 @@ Tus instintos te permiten reaccionar al peligro instantes antes que te afecte. P
 
 **Coste:** 1 vigor
 
-Evades un ataque en el último momento para amortiguar el daño que te provocaría. Al fallar un tiro de Esquiva para defenderte de un ataque puedes reducir el daño provocado a la mitad después de aplicar DEF además de *desenganchar* y moverte un paso como acción bonus. Si empleas esta habilidad al recibir daño de un ataque de área no sufrirás daño obligatorio si tienes éxito en el tiro defensivo. Evasión no funcionará si no eres capaz de defenderte de un ataque.
+Evades un ataque en el último momento para amortiguar el daño que te provocaría. Al fallar un tiro de Esquiva para defenderte de un ataque puedes reducir el daño provocado a la mitad después de aplicar DEF además de *desenganchar* y moverte un paso como acción bonus. Si empleas esta habilidad al recibir daño de un ataque de área no sufrirás daño obligatorio si tienes éxito en el tiro defensivo. Evasión no funcionará si no eres capaz de defenderte de un ataque y solo podrá emplearse una vez por ronda.
 
 ## Rango III
 

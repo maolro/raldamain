@@ -70,7 +70,7 @@ No dejas escapar a tus enemigos cuando intenten enfrentarse a ti. En respuesta a
 
 *Salvaje, Marcial, Agarre, Cuerpo a cuerpo, Físico*
 
-**Coste:** 1 acción
+**Coste:** 1 vigor
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
 

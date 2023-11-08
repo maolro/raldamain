@@ -242,30 +242,67 @@ Una vez que lances este hechizo la fuerza de todos los vientos de la zona afecta
 
 **Empoderar** (1 chi): Puedes lanzar este mismo hechizo la ronda siguiente sin la necesidad de pagar chi. Debes afectar la misma zona que la última vez que lanzaste este hechizo.
 
-Esfera de vacío
-Aire, Aflicción, Área, Sostenido, Físico
-Coste: 2 acciones y 3 chi
-Alcance: Propio
-Tamaño: Esfera pequeña
-Efecto crítico: Las criaturas afectadas quedan exhaustas y avanzan un paso en la ruta de asfixia.
-Duración Enfoque
-Reduces la cantidad de oxígeno en una esfera a tu alrededor, transformándola lentamente en un vacío mortal para todas las criaturas que necesitan aire para respirar. Todas las criaturas dentro de una pequeña esfera centrada en ti deben tener éxito en un chequeo de CON contra tu magia Aire o se fatigan y comienzan a asfixiarse hasta que entren en un lugar con aire respirable. 
-La esfera de vacío permanecerá activa hasta que pierdas la concentración o sea disipada por otro efecto de magia de Aire de magnitud similar. Todas las criaturas que comiencen su turno dentro de la esfera de vacío o entren en ella en cualquier punto del asalto deben volver a hacer el chequeo de CON o sufrir los mismos efectos al fallar. 
-Aumentar (1 chi): Drenas el aire de todas las criaturas dentro de la esfera, recuperando 5 de Vitalidad por cada criatura que haya fallado su chequeo este asalto.
-Corrientes cambiantes
-Aire, Ataque, Físico
-Coste: 2 o más acciones y 3 chi
-Alcance: Medio
-Efecto crítico: Tu objetivo sufre una herida leve permanente
-Duración: Instantánea Instantánea
-Realizas una rápida secuencia de golpes de viento para desgarrar las defensas de tu objetivo sin darle oportunidad de reaccionar. Realiza un ataque mágico de Aire contra una única criatura dentro del alcance que inflige 2d10 + CHA de daño cortante al impactar junto con empujarla o arrastrarla un paso en cualquier dirección.
-Puedes gastar cualquier cantidad de acciones adicionales para realizar ese mismo número de ataques extra contra el mismo objetivo (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Deberán utilizar el mismo resultado defensivo que obtuvieron la última vez y el modificador a tu tirada y daño aumentará en 1 por cada acción adicional que gastes. 
-Si golpeas a tu objetivo dos veces durante la secuencia caerá tendido y si lo golpeas tres veces será empujado un paso adicional y sufrirá una herida leve permanente. La secuencia de ataques funciona igual que un combo de armas y puede romperse de la misma manera.
-Intensificación (1 chi): Tras ser golpeado por un ataque, tu objetivo debe repetir su chequeo defensivo y obtener el peor resultado.
+### Esfera de vacío
+
+*Aire, Aflicción, Área, Duradero, Físico*
+
+**Coste**: 2 acciones y 3 chi
+
+**Tamaño**: Esfera pequeña
+
+**Efecto crítico:** Las criaturas afectadas quedan *exhaustas* y empiezan a *ahogarse*
+
+**Duración:** Concentración
+
+Reduces la cantidad de oxígeno en una esfera a tu alrededor, transformándola lentamente en vacío para matar lentamente todas las criaturas que necesitan aire para respirar. Todas las criaturas dentro de una pequeña esfera centrada en ti deben tener éxito en un tiro de CON frente a tu magia Aire o quedarán *fatigados* y comienzan a *ahogarse* hasta que entren en un lugar con aire respirable. 
+
+La Esfera de vacío permanecerá activa hasta que pierdas la concentración o sea disipada por otro efecto de magia de Aire de magnitud similar. Todas las criaturas que empiecen su turno dentro de la Esfera de vacío o entren en ella en cualquier momento de la ronda asalto deberán repetir el tiro de CON, sufriendo los mismos efectos al fracasar. 
+
+**Empoderar** (1 chi): Drenas el aire de todas las criaturas dentro de la esfera, recuperando 5 de Vitalidad por cada criatura que haya fallado su tiro esta ronda.
+
+### Corrientes cambiantes
+
+*Aire, Ataque, Físico*
+
+**Coste**: 2 o más acciones y 3 chi
+
+**Alcance**: Medio
+
+**Efecto crítico**: Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantánea
+
+Realizas una rápida secuencia de golpes de viento para destrozar las defensas de tu objetivo sin darle una oportunidad para reaccionar. Haz un ataque de magia de Aire contra una única criatura a distancia media que inflige 2d10 + CAR daño Cortante al impactar además de con empujarla o arrastrarla un paso en cualquier dirección.
+
+Puedes gastar cualquier cantidad de acciones adicionales para realizar ese mismo número de ataques adicionales contra el mismo objetivo (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Deberán emplear el mismo resultado defensivo que obtuvieron la última vez y el modificador a tu tirada y daño aumentará en 1 por cada acción adicional que gastes. 
+
+Si impactas a tu objetivo dos veces durante la secuencia quedará *tropezado* y si lo impactar tres veces lo empujarás un paso adicional y sufrirá una *herida permanente leve*. La secuencia de ataques se romperá si eres impactado por un ataque mientras la realices.
+
+**Empoderar** (1 chi): Tras ser impactado por un ataque tu objetivo debe repetir su tiro defensivo y quedarse con el peor resultado.
 
 ## Rango VI
 
-**Vientos de la devastación** (3 AP y 5 chi, Aire, Ambiental, Concen): Invocas un poderoso viento de tal magnitud que es capaz de arrasar con toda la civilización a tu paso. Al activar esta habilidad todo el campo de batalla quedará afectado por la habilidad *controlar los vientos* con fuerza mejorada, impidiendo los ataques a distancia y que otras criaturas puedan volar. A partir de la segunda ronda puedes llamar la verdadera fuerza de los vientos, permitiéndote usar la habilidad *huracán* o *torbellino* una vez por ronda sin la necesidad de gastar chi (deberás seguir pagando el coste en acciones). Esta habilidad permanecerá activa durante las siguientes 5 rondas o hasta que pierdas la concentración.
+### Vientos de la devastación
+
+*Aire, Ataque, Área, Físico, Duradero, Ambiental*
+
+**Coste**: 3 acciones y 5 chi
+
+**Tamaño**: Esfera grande
+
+**Duración**: Siete rondas
+
+Liberas el verdadero poder de los vientos para destruir todo a tu paso. Este hechizo afectará el campo de batalla inicialmente de manera similar al Control de Vientos, pero su poder crecerá rápidamente a medida que pasa el tiempo. Este efecto permanecerá en el campo de batalla durante siete asaltos o hasta que sea disipado por otro hechizo Ambiental de igual o mayor poder.
+
+Mientras este efecto permanezca en el campo de batalla puedes usar una de las siguientes habilidades una vez por ronda como acción bonus una vez que hayan pasado la cantidad requerida de rondas: 
+
+- **Ronda 2:** Puedes lanzar los hechizos Viento Furibundo y Viento Arrastrante sin la necesidad de gastar chi. El tamaño de Viento Furioso se incrementa a una línea grande y el alcance de Viento Revuelto aumenta a lejano. 
+- **Ronda 4**: Puedes lanzar el hechizo Tornado sin la necesidad de gastar chi. El tornado surgirá en cualquier punto del campo de batalla y permanecerá fijo en ese lugar. No necesitas concentrarte en los hechizos de Tornado lanzados de esta manera.
+- **Ronda 7**: Puedes lanzar el hechizo Huracán sin la necesidad gastar chi, afectando a toda la esfera con él. No puedes gastar más chi para potenciar este hechizo. 
+
+Una vez que este hechizo acabe todos los hechizos Duraderos que hayan sido creados en él cesarán de inmediato. No se podrá volver a lanzar este hechizo en el mismo lugar hasta que haya transcurrido por lo menos menos un día.
+
+**Potenciar** (1 chi): Empleas el Muro de Vientos para defenderte de un ataque sin la necesidad de estar en *posición defensiva*.
 
 # Elemental de aire
 
@@ -307,17 +344,3 @@ Intensificación (1 chi): Tras ser golpeado por un ataque, tu objetivo debe repe
 - Puede usar la habilidad *tajo de los vientos* empleando 3 AP sin la necesidad de gastar chi
 - Al agarrar a una criatura puede emplear 1 AP para usar *robar el aire* contra ella
 - Empleando 2 AP puede cambiar de estado para transformarse en un *tornado,* infligiendo dicho ataque contra las criaturas en su área de efecto. Mientras permanezca en este estado perderá sus acciones pero podrá moverse una vez por ronda como acción bonus.
-
-# Niveles míticos
-
-## Rango I
-
-## Rango II
-
-## Rango III
-
-## Rango IV
-
-## Rango V
-
-## Rango VI
