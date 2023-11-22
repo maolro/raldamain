@@ -9,15 +9,57 @@ Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aqu
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumentas tu reserva de chi por rango + 2.
+### Zarcillo enredador
 
-**Zarcillo enredador** (2 AP): Ataca a un enemigo a distancia media que *enreda* al impactar (máximo rango + 1 objetivos a la vez). Las maniobras contra él cuestan 1 AP. (+1 chi) Ataca a un objetivo adicional. 
+*Naturaleza, Ataque, Físico, Agarre, Duradero*
 
-**Espina de madera** (2 AP): Ataca a un enemigo a distancia media e inflige 1d6 + SAB daño físico. (1 chi) Ataca a un objetivo adicional. 
+**Coste:** 2 acciones
 
-**Enmarañar** (2 AP y 1 chi): Ataca a 1d4 + 2 objetivos a distancia lejana que estén cerca entre sí y al impactar los *enredas*. (1 chi) Durante la siguiente ronda repite el efecto contra cada criatura que se encuentre o entre en el área afectada además que moverse por ella cuesta +1 AP
+**Alcance:** Medio
 
-**Parada elemental** (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Efecto Crítico:** El objetivo queda *enredado* al impactar
+
+**Duración:** Concentración
+
+Formas un látigo hecho de materia vegetal para retener a un enemigo que esté a distancia media de ti. Haz un ataque de magia de Naturaleza que *enredará* a tu objetivo al impactar. Este podrá intentar liberarse en su turno si tiene éxito en un tiro de Heroísmo o Destrozar frente a tu tiro de magia de Naturaleza. Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consiga liberarse de este efecto.
+
+Si has enredado a un objetivo con este hechizo puedes intentar retenerlo aún más, forzándolo a tener éxito en una tirada de Destrozar o Heroísmo contra tu magia de Madera o quedara *agarrado*. Cada intento de agarre te cuesta tantas acciones como las que emplearía al lanzar este hechizo y tu enemigo podrá intentar escaparse de la misma manera.
+
+**Potenciar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
+
+### Espina de Madera
+
+*Madera, Ataque, a Distancia, Físico*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto Crítico:** El objetivo sufre una *herida permanente leve* y *sangrado*. Si lleva armadura ligera en su lugar sufrirá una *herida permanente media*.
+
+**Duración:** Instantánea
+
+Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enemigo que se encuentre a distancia media de ti. Haz un ataque de magia de Naturaleza 	que inflige 1d6 + SAB daño Perforante al impactar. Este ataque es especialmente efectivo contra objetivos con armaduras ligeras, infligiéndoles *sangrado* al impactar. Si tienes técnicas de armas puedes aplicarlas a tus ataques hechos con este hechizo siempre que esa posible.
+
+**Empoderar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
+
+### Enmarañar
+
+*Madera, Ataque, Área, Físico, Agarre, Duradero*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio corto
+
+**Efecto Crítico:** Los objetivos afectados automáticamente fallan sus tiros para evitar ser *agarrados*
+
+**Duración:** Concentración
+
+Una masa de enredaderas emerge del suelo en un punto a distancia media y llena un radio pequeño centrado en él. Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que las *enreda* al impactar. Estas deberán tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarradas*. Este hechizo durará hasta que pierdas la concentración o las enredaderas son destruidas por un ataque de área de magnitud similar.
+
+**Empoderar** (1 chi): Este hechizo aumenta su tamaño a un radio medio.
 
 ## Rango II
 

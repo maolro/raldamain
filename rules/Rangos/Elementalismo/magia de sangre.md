@@ -197,8 +197,6 @@ Una criatura *agarrada* por este hechizo no podrá tomar acciones o reacciones, 
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
 
-
-
 ## Rango V 
 
 Todos tus hechizos de Sangre sustituyen sus dados de daño por d10 y aquellos de Rango III que conozcas cuestan una acción menos para emplear (mínimo 1).
@@ -245,4 +243,18 @@ Cuando recibas daño de un ataque puedes transferir cualquier cantidad de daño 
 
 Todos tus hechizos de Sangre de Rango IV cuestan una acción menos para emplear (mínimo 1).
 
-**Baile de títeres sanguíneos** (3 acciones y 5 chi): Manipulas la sangre de una gran cantidad de criaturas para convertirlas en tus títeres. Haz un ataque de magia de sangre con un radio grande contra todas las criaturas vivientes en el área, las cuales se defenderán tirando CON. Aquellas que fracasen caerán bajo tu control, permitiéndote dirigir sus acciones como tú desees. Los objetivos afectados por esta habilidad podrán repetir el tiro al principio de su turno o si son forzados a tomar una acción que vaya en contra de su instinto de supervivencia, liberándose del efecto si tienen éxito. Este efecto durará mientras mantengas la concentración y no podrás obligar a otras criaturas a lanzar hechizos salvo que gastes acciones para que una criatura lo use de la misma manera que *telekinesia sanguínea*.
+### Baile de Títeres Sanguíneos
+
+*Sangre, Aflicción, Agarre, Duradero*
+
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+Tu maestría en la magia de la sangre te otorga el poder de convertir incluso a grandes ejércitos en títeres bajo tu control. Todas las criaturas un radio medio deben tener éxito en un tiro de CON frente a tu magia de Sangre o perderán el control de sus cuerpos, dándote la capacidad de dirigir sus acciones a tu antojo. Este efecto permanecerá activo hasta que pierdas la concentración.
+
+Una criatura controlada por este hechizo puede repetir el tiro al final de su turno para intentar escapar, liberándose si tiene éxito. Puedes forzar a aquellos bajo tu control a realizar cualquier acción que desees salvo lanzar hechizos. Si intentas obligar a una criatura a dañarse a sí misma o a un ser querido pueden intentar un tiro de CON para liberarse antes de que lo hagas.
+
+**Potenciación** (1 chi): Una criatura bajo tu control lanza un hechizo que conozca, gastando el número apropiado de acciones y chi. No puedes obligarles a empoderar un hechizo ni a gastar más chi que su coste básico.

@@ -16,6 +16,20 @@ Tu has decidido caminar por una senda algo diferente al de el resto de escuelas 
 
 ### Asalto mental
 
+*Mental, Arcana*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu objetivo quedará *aturdido* durante una ronda
+
+**Duración:** Instantáneo
+
+Atacas la mente de un enemigo para romper sus facultades mentales y su capacidad para concentrarse. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Averiguar intenciones contra tu Magia Mental o reducirá su Cordura por un valor igual a tu Rango + 1 y perderá de inmediato la concentración. Si logras reducir la Cordura de un enemigo a 0 este caerá Inconsciente de inmediato.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional a distancia media con este hechizo.
+
 ### Leer pensamientos
 
 *Mental, Arcana, Duradera*
@@ -36,19 +50,49 @@ Además, mientras este hechizo esté activo puedes emplear una acción para pene
 
 **Empoderar** (1 chi): Puedes detectar los pensamientos profundos de una criatura como reacción para preveer su siguiente acción, la cual te contará el máster con sinceridad. Esto te otorgará Ventaja en tu tiro defensivo o de habilidad donde sea lógico que se aplicase.
 
-**Asalto mental** (2 Acciones, Mental): Un objetivo a distancia lejana debe tener éxito en un tiro de salvación de SAB contra tu magia mental o reduce su cordura por 1 + rango y pierde la concentración de inmediato. Si logras reducir su cordura a 0 caerá inconsciente. (1 chi) El objetivo está enfermado durante una ronda si impactas.
+### Escudo mental
 
-**Escudo mental** (Mental): Puedes tirar magia mental como reacción para protegerte de otros efectos mentales y aumenta tu cordura por un valor igual a tu rango. (1 chi) Otorga esta habilidad a un aliado durante el combate, el cual usará tu tiro de magia mental para defenderse de otros efectos mentales.
+*Mental, Arcana, Duradera*
+
+**Coste:** 2 acciones
+
+**Duración:** Concentración
+
+Aumentas tus defensas mentales frente a intrusiones enemigas. Mientras este hechizo permanezca activo puedes emplear tu tiro de Magia mental para defenderte de otros efectos Mentales y aumentas tu Cordura por un valor igual a tu Rango. Además, no puedes ser detectado pasivamente con Leer pensamientos si no lo deseas. Los bonificadores de este hechizo durarán hasta que pierdas la concentración.
+
+**Empoderar** (1 chi): Otorgas esta habilidad a un aliado que puedas tocar. Este podrá emplear tu bonificador de Magia mental en lugar del suyo propio para defenderse de efectos Mentales.
 
 ## Rango II  
 
-**Sugestión** (2 Acciones y 1 chi, Mental): Haz un tiro de magia mental contra la SAB de un objetivo a distancia lejana y si tienes éxito este mejorará su actitud hacia ti y estará dispuesto a hacer pequeños favores. Este efecto durará un día o hasta que tomes una acción hostil contra el objetivo.
-
-**Sanación mental** (2 Acciones y 1 chi, Mental): Elimina un efecto mental de rango igual o inferior que afecte a un aliado cuya mente puedas leer o le sanas cordura igual a tu rango + 1. Si el efecto escogido está provocado por otro mago mental deberás tener éxito en un tiro de magia mental contra el suyo.
-
 ### Sugestión
 
+*Mental, Arcana*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu condicionamiento es especialmente efectivo, permitiéndote convencer a tu objetivo que tome una acción que típicamente no haría.
+
+**Duración:** Instantáneo
+
+Eres capaz de sugestionar determinados comportamientos a otras personas para qeu actúen de una manera más afín a tus intenciones. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Voluntad contra tu Magia mental o le condicionarás mentalmente para que actúe de una manera específica. Este nuevo comportamiento no debe contradecir la personalidad de tu objetivo ni ser ilógico para la situación en la que se encuentre. Algunos ejemplos son hacerle más amistoso hacia ti o que esté dispuesto a hacerte un pequeño favor.
+
+Si empleas este hechizo en un combate puedes condicionar a tu objetivo para que tome una acción específica en su turno siempre y cuando sea lógica según la situación. Algunos ejemplos son moverse a un lugar, emplear una habilidad de tu elección o atacar a un enemigo específico. 
+
+**Empoderar** (1 chi): Vuelves a emplear este hechizo en el mismo objetivo como acción bonus sin la necesidad de pagar chi. Solo puedes empoderar de esta manera una vez por hechizo.
+
 ### Sanación mental
+
+*Mental, Arcana, Toque*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Toque
+
+Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes dañadas y alteradas forzosamente. Un aliado que puedas tocar recupera una cantidad de Cordura igual a tu Rango + 1. Si está afectado por un hechizo Mental ajeno puedes eliminarlo si tienes éxito en un tiro de Magia mental contra una dificultad igual al modificador de magia Mental que tenga el lanzador de dicho efecto. Este hechizo no puede eliminar efectos míticos ni sanar a individuos que hayan enloquecido.
+
+**Empoderar** (1 chi): Eliminas un hechizo Mental adicional si tienes éxito en el tiro.
 
 ### Alterar emociones
 
@@ -78,21 +122,51 @@ Los efectos exactos que otorga este hechizo dependen de la emoción que busques 
 
 ## Rango III  
 
-Usar *asalto mental* y *detectar pensamientos* te cuestan -1 AP
+Tus hechizos Mentales de Rango I reducen su coste en acciones por 1 (mínimo 1).
 
 ### Sobrecarga mental
 
+*Mental, Arcana*
+
+**Coste:** 1 acción y 2 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña
+
+**Efecto crítico:** Los afectados reducirán de nuevo su cordura por un valor igual a tu Rango + 1.
+
+**Duración:** Hasta que sea eliminada
+
+Haces un ataque destructivo contra las mentes de un grupo de enemigos a distancia media que les enloquecerá temporalmente. Todas las criaturas en una esfera pequeña centrada en un punto a distancia media deben tener éxito en un tiro de Concentración o Voluntad contra tu Magia mental o reducirán su cordura por un valor igual a tu Rango + 1 y quedarán *confundidos* durante el resto del combate. 
+
+Una criatura *confundida* podrá repetir el tiro una vez por ronda y se liberará de él en caso de éxito. Este hechizo también dejará de funcionar si un afectado ya no se encuentra una situación estresante durante una ronda.
+
+**Empoderar** (1 chi): Lanzas este hechizo como acción bonus contra todas las criaturas en otra esfera de tamaño pequeño a distancia media de ti.
+
 ### Geas
+
+*Mental, Arcana*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu objetivo reduce su Cordura por un valor igual a tu Rango + 1.
+
+**Duración:** Un día
+
+Tus habilidades de condicionamiento mental te permiten sobrepasar el comportamiento normal de una criatura para que siga una orden sin rechistar. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Averiguar Intenciones contra tu Magia Mental o le implantas una orden mental que estará forzado a seguir. 
+
+Esa orden mental permanecerá implantada durante un día y puedes activarla cuando desees para que tu objetivo la obedezca forzosamente durante una ronda. Dicha orden no puede atentar contra el instinto de supervivencia de tu objetivo y ni forzarlo a herir a sus seres queridos salvo que su cordura haya sido reducida a 0 o se encuentre *confundido*.
+
+**Empoderar** (1 chi): Afectas a un objetivo adicional con este hechizo.
 
 ### Telepatía
 
 *Mental, Pasiva*
 
 Tu maestría mental te permite hablar con otras criaturas usando únicamente el poder del pensamiento. Mientras tengas activo el hechizo Detectar pensamientos eres capaz de comunicarte mentalmente con todas las criaturas que detectes, pudiendo así comunicarles y recibir información de ellas sin la necesidad de hablar. Esta habilidad te permite también afectar a toda criatura que puedas detectar telepáticamente con hechizos Mentales sin la necesidad de percibirlas.
-
-**Sobrecarga mental** (1 Acción y 2 chi, Mental):  Haz un ataque de *asalto mental* contra 1d4 + 2 objetivos en una esfera de radio pequeño que al impactar los *confundirá* durante el resto del combate. Estos pueden repetir el tiro de SAB cada ronda liberándose del efecto en caso de éxito. (1 chi) Afecta a 2 objetivos adicionales
-
-**Geas** (2 Acción y 2 chi, Mental): Un objetivo a distancia media debe tener éxito en un tiro de SAB o estará obligado a seguir una orden mental que le des sin cuestionarla. Esta orden no puede ir en contra del instinto de autopreservación del objetivo ni podrás forzarlo a herir a sus seres queridos salvo que su cordura haya sido reducida a 0 o esté *confundido*.
 
 ## Rango IV
 

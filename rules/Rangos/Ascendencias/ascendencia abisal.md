@@ -9,27 +9,68 @@ La llamada de la sangre de entidades olvidadas hace eones te reclama desde la pa
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
+Aumenta tu estadística de FUE por 1.
 
-**Tocado por la locura:** Recibes resistencia al daño necrótico y al daño a la cordura igual a tu rango + 1 a costa de obtener una locura permanente. Los abisales no son naturalmente hostiles hacia ti.
+### Tocado por la locura
 
-**Furia abisal** (Abisal, Estado): Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para otorgarte ventaja en todos tus tiros de ataque, defensa y habilidad relacionados con una estadística de tu elección. Cuando pases rango + 2 rondas con este efecto activo deberás pagar 1 chi o tener éxito en un tiro de SAB contra una dificultad escogida por el máster o perderás temporalmente control de tu personaje.
+*Innata, Pasiva*
+
+El poder del abismo refuerza tus capacidades mentales y físicas a costa de tu cordura. Obtienes Resistencia a efectos Mentales y Necróticos además que las criaturas abisales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos. Esta habilidad te otorgará también una locura permanente que conservarás siempre que tengas Rangos en Ascendencia Abisal.
+
+### Furia abisal
+
+*Innata, Mejora*
+
+Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para recibir gran poder a costa de tu mente. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados dos estadísticas de tu elección además de aumentar tu DEF por un valor igual a tu Rango + 1. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
+
+Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede conducirte a la locura. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Furia abisal. Si llegaras a perder toda tu cordura pasarán inmediatamente a Furia abisal y perderás control de tu personaje durante un día, comportándote como un abisal y siendo un peligro tanto para amigos como enemigos.
+
+Debido a la naturaleza innata de esta habilidad puede manifestarse sola cuando te encuentres en lugares con fuerte energía abisal o en momento de gran dolor emocional. Esta transformación espontánea quedará decidida por el DJ y en algunas circunstancias puedes perder control de tu personaje.
 
 ## Rango II
 
-Incrementa tu FUE por 1
+### Mutación
 
-**Mutación** (1 chi, Abisal): Durante una ronda recibes una mutación abisal que otorga +1d6 daño de cualquier tipo a todos tus ataques físicos, aumenta uno de tus movimientos por 1 o recibes resistencia igual a tu rango contra un tipo de daño de tu elección. No puedes usar el mismo efecto más de una vez por turno.
+*Innata, Mejora*
 
-**Poder antinatural**: Tienes visión a ciegas en un radio medio y todas las criaturas a distancia corta de ti deberán tener éxito en un tiro de SAB contra tu CAR o tendrán desventaja en todos sus tiros relacionados con estadísticas mentales durante una ronda. 
+**Coste:** 1 chi o vigor
+
+**Duración:** Una ronda
+
+Mutas tu cuerpo con energías abisales para obtener nuevas habilidades. Dicha mutación durará una ronda y te otorgará un efecto específico según la manera que quieras mutar tu cuerpo. A continuación se presentan algunos ejemplos de mutaciones y eres libre de modificarlas como desees siempre y cuando cuentes con permiso del DJ.
+
+- **Resistencia adaptiva:** Obtienes Resistencia contra un tipo de daño entre Fuego, Frío, Ácido, Eléctrico o Sónico.
+- **Anfibio:** Eres capaz de respirar bajo el agua y obtienes velocidad de natación 1.
+- **Arma natural:** Te crece una masa de carne y huesos que simula un arma de tu elección cuyo daño base sea 1d6 o inferior. Aprendes todas las técnicas de Rango I pertenecientes a la categoría de esa misma arma. A Rango IV el daño base máximo que puedes tener aumenta a 1d8 y a Rango VI aumenta a 1d10.
+- **Vuelo:** Te crecen temporalmente unas alas que te otorgan velocidad de vuelo 1.
+- **Toxina:** La siguiente vez que impactes puedes infectar a tu objetivo con un veneno cuya gravedad es igual a la suma de tu CON y tu Rango de Ascendencia abisal. El veneno tendrá tasa de efecto de una ronda y afectará a cualquier estadística de tu elección.
+- **Infusión mágica:** Infundes tus ataques con un hechizo para provocar sus efectos la siguiente vez que impactes esta ronda. Debes seguir pagando el coste del hechizo escogido.
+
+### Poder antinatural
+
+*Innata, Pasiva*
+
+El poder antinatural de tu interior te otorga nuevos sentidos y poderes mágicos. Puedes sentir la posición y naturaleza de todos los efectos mágicos a distancia media de ti además que recibes *visión a ciegas* en un radio medio. Aprendes también dos hechizos de Rango I vinculados a una entidad abisal y puedes lanzarlos usando vigor en lugar de chi. Dichos hechizos deben ser aprobados por el DJ.
 
 ## Rango III
 
-Aumenta tu resistencia a daño físico por 1
+### Poder de la locura
 
-**Invocación abisal** (3 AP y 2 chi, Abisal, Invocación): Invoca a una criatura abisal que permanecerá a tu lado durante el combate. Este mejorará su fuerza cada vez que aumentes de rango y no puedes tener invocadas a más de 4 criaturas a la vez.
+*Innata, Pasiva*
 
-**Poder de la locura**: Tres veces por turno puedes reducir tu cordura por 2 para restaurar 1 chi de tu reserva. Si reduces tu cordura a 0 con esta habilidad perderás control de tu personaje durante una hora empezando el turno siguiente. 
+Eres capaz de usar el poder del abismo para reponer tus fuerzas a costa de destruir tu ya fragmentada mente. Mientras te encuentres en Furia abisal puedes reducir tu cordura por 2 para recuperar 1 chi o vigor de tu reserva. Esta habilidad solo puede emplearse un máximo de tres veces por ronda.
+
+### Invocación abisal
+
+*Innata, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Duración:** Una hora
+
+Invocas a una criatura abisal para que te asista en el campo de batalla y acabe con todos los enemigos en tu camino. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
+
+**Empoderar** (1 chi o vigor): La criatura invocada recupera la mitad de su Vitalidad.
 
 ## Rango IV
 

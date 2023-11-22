@@ -7,7 +7,13 @@ Los insectos han estado presentes en tu vida desde tu nacimiento o tal vez hicie
 
 ## Rango I
 
-Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
+### Aspecto insectoide
+
+### Mente colmena
+
+*Innata, Pasiva*
+
+Tu mente funciona de una manera extraña más propia de los insectos que de los seres humanos. Obtienes Resistencia a efectos Mentales además que puedes comunicarte con otros insectos del mismo tipo que el tuyo. Estos insectos nunca serán naturalmente hostiles hacia ti y te tratarán como uno de los suyos,
 
 **Aspecto entrópico**: Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades. Tienes la capacidad de tomar una forma híbrida entre humano e insecto conocida como forma entotrópica durante una cantidad de rondas igual a tu rango + 2, la cual te otorgará una de las siguientes mejoras según el insecto que escojas:
 
@@ -17,8 +23,6 @@ Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
 - *Escarabajo:* Obtienes un rango en el ataque natural *golpe* y aumenta tu armadura natural y tus PV por 2.
 
 Más formas insectoides son posibles, pero para acordar las mejoras que te otorguen deberás consultarlo con el máster. Puedes pagar 1 chi para extender esta habilidad una ronda adicional
-
-**Mente insectoide**: Tu mente funciona de una manera extraña más propia de los insectos que de los seres humanos. Recibes resistencia al miedo y efectos mentales igual a tu rango de ascendencia insectoide + 1 además de recibir la capacidad de percibir las vibraciones, otorgándote vista a ciegas en un radio medio.
 
 ## Rango II
 

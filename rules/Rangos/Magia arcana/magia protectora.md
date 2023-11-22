@@ -141,11 +141,11 @@ Los efectos de un glifo variarán levemente según el glifo escogido. El alcance
 
 *Protectora, Pasiva*
 
-
-
-**Absorber chi**: Al anular un hechizo con *eliminar magia* o *contrahechizo* recupera 1 chi de tu reserva. Además, si afectas a un enemigo con reserva de chi con una habilidad de magia protectora este perderá 1 chi y tú ganas 1 chi (3 AP) Desactiva las propiedades de un objeto mágico para recuperar chi igual a su rango. 
+En respuesta a que anules un hechizo u objeto mágico con *eliminar magia*, *disrupción mágica* o *contrahechizo* recuperas 1 chi de tu reserva. Además, cada vez que afectes a un enemigo que tenga reserva de chi con una habilidad de magia protectora este perderá 1 chi y tú ganas 1 chi.
 
 ## Rango IV
+
+Tus hechizos Protectores de Rango II reducen su coste en acciones por 1 (mínimo 1).
 
 ### Campo antimágico
 
@@ -189,11 +189,15 @@ Envías a una criatura extraplanaria a distancia media de ti de vuelta a su plan
 
 **Duración:** Concentración
 
+Empleas la energía mágica en su estado más puro para generar una barrera impenetrable. Al lanzar este hechizo formas una esfera de fuerza de tamaño pequeño rodeando tu cuerpo con PV iguales a tu Rango x 6 y DEF igual a tu Rango + 4 que recibirá todos los ataques dirigidos hacia ti. Además, mientras permanezca activa recibes Inmunidad a efectos de Toque y Gaseosos además del daño no-mágico. La esfera durará hasta que pierdas la concentración o se le acaben los PV.
 
+De manera alternativa puedes escoger que la esfera se forme alrededor de una criatura de tu elección para atraparla, forzándola a tener éxito en un tiro de Esquiva frente a tu magia Protectora para evitar este efecto. Si fracasa su tiro la esfera le rodeará, impidiendo sus movimientos fuera de ella y que sea afectada por ataques. La esfera puede ser destruida de la misma manera que aquella que te rodea.
 
-**Esfera de fuerza** (2 AP y 2 chi): Formas una barrera esférica de fuerza con radio pequeño rodeando tu cuerpo que permanecerá activa hasta que pierdas la concentración. La barrera te otorgará *contadores de escudo* iguales a tu rango y mientras permanezca activa eres inmune a efectos de toque, gaseosos y daño no-mágico. Puedes escoger alternativamente que la esfera se forme alrededor de una criatura de tu elección para atraparla, forzándola a tener éxito en un tiro de DES frente a tu magia protectora para evitar este efecto. 4 x Rango PV
+**Empoderar** (1 chi): La esfera recupera todos sus PV si le queda por lo menos 1 PV.
 
 ## Rango V 
+
+Tus hechizos Protectores de Rango III reducen su coste en acciones por 1 (mínimo 1).
 
 ### Disyunción
 
@@ -205,7 +209,9 @@ Envías a una criatura extraplanaria a distancia media de ti de vuelta a su plan
 
 **Duración:** Instantáneo
 
+Deshaces todas las conexiones de chi que rodean a un enemigo para anular toda la magia que tenga. Un objetivo a distancia media pierde todos los hechizos Arcanos Duraderos que tenga activos además que todos sus objetos mágicos dejarán de funcionar durante el resto del combate. Este hechizo solo puede detenerse con Magia Protectora y no anulará hechizos míticos ni artefactos.
 
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
 ### Ligación planar
 
@@ -241,6 +247,8 @@ Inviertes el chi de un enemigo para provocarle una explosión interna de energí
 
 ## Rango VI
 
+Tus hechizos Protectores de Rango IV reducen su coste en acciones por 1 (mínimo 1).
+
 ### Sello extraplanario
 
 *Protectora, Arcana, Duradera*
@@ -249,6 +257,6 @@ Inviertes el chi de un enemigo para provocarle una explosión interna de energí
 
 **Duración:** Hasta que termine
 
+Absorbes una criatura extraplanaria que tengas ligada para obtener parte de su poder. Debes hacer un último tiro contra el nivel de la criatura + 3 y en caso de éxito obtienes todas las habilidades pasivas, resistencias, inmunidades, movimientos y ataques que tenga, las cuales puedes usar como si fueran tuyas. Puedes también aumentar una de tus estadísticas y su respectivo limitador por 1 por cada cuatro niveles que tenga (no podrás incrementar un limitador por más de 3). 
 
-
-**Sello extraplanario** (3 AP y 5 chi): Absorbes una criatura extraplanaria que tengas ligada para obtener parte de su poder. Debes hacer un último tiro contra el nivel de la criatura + 3 y en caso de éxito obtienes todas las habilidades pasivas, resistencias, inmunidades, movimientos y ataques que tenga, las cuales puedes usar como si fueran tuyas. Puedes también aumentar una de tus estadísticas y su respectivo limitador por 1 por cada mejora que tenga (máximo +3). Solo puedes tener una única criatura ligada de esta manera y en determinadas situaciones la criatura puede intentar liberarse, forzándote a repetir el tiro de magia protectora y si fracasas esta se liberará y dejará de estar ligada además de infligiéndote los efectos de *disyunción* e *invertir chi*.
+Solo puedes tener una única criatura ligada de esta manera y en determinadas situaciones la criatura puede intentar liberarse, forzándote a repetir el tiro de magia protectora contra esa misma dificultad. Si fracasas esta se liberará y dejará de estar ligada además de infligiéndote los efectos de *disyunción* e *invertir chi*. Una sello extraplanario es un proceso extremadamente doloroso para la criatura afectada y ninguna lo aceptará voluntariamente, impidiéndote usar esta habilidad en tus propias invocaciones salvo casos excepcionales.

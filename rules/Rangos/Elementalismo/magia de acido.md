@@ -4,7 +4,19 @@
 
 ### Escupitajo ácido
 
-A distancia, 1d6 + Rango daño ácido. 
+*Ácido, Ataque, A distancia*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto crítico:** El objetivo sufre una *quemadura leve*
+
+**Duración:** Instantáneo
+
+Haz un ataque contra una criatura a distancia media que inflige 1d6 + Rango daño Ácido al impactar. Si el objetivo tiene armadura metálica o emplea un objeto para detener este ataque sufrirá el efecto de estado *roto*.
+
+**Empoderar** (1 chi): Ataca a un objetivo distinto a distancia media.
 
 ### Toque corrosivo
 

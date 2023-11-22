@@ -7,11 +7,17 @@ Estás conectado con los espíritus de las más lejanas profundidades de la tier
 
 ## Rango I
 
-Aumenta tu reserva de chi por 2 + rango y recibes resistencia 2 al daño físico
+### Vínculo con la tierra
 
-**Vínculo con la tierra:** Eres inmune al terreno difícil y recibes los beneficios de *terreno predilecto* si te encuentras en contacto con la tierra. Obtienes también resistencia al daño eléctrico igual a tu rango + 1.
+*Innata, Pasiva*
 
-**Geokinesia:** Como acción bonus empleable una vez por turno mueves una pequeña cantidad de tierra hasta un paso en cualquier dirección, la cual no hará daño ni empujará. (1 chi) Analiza toda la tierra en un radio corto, detectando secretos y anomalías que tengan.
+Tienes una profunda conexión con la tierra que te permite moverte a través de ella sin dificultades. Obtienes velocidad de Excavar y Escalada 1 además de Inmunidad a *terreno difícil* formado por materiales rocosos. Este vínculo también te otorga Resistencia al daño Eléctrico.
+
+### Geokinesia
+
+*Innata, Pasiva*
+
+Tu control sobre la tierra te permite moldearla como desees y notar su estado. Eres capaz de sentir todas las anomalías y características en la tierra a distancia corta de ti. Si conoces los hechizos Lanzamiento, Crear obstáculo y Terratemblor puedes lanzarlos pagando vigor en lugar de chi. En el caso que no los conozcas podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia de Tierra.
 
 ## Rango II
 
