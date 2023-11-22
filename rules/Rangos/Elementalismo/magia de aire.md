@@ -80,7 +80,7 @@ Formas un muro de vientos rugientes para protegerte a ti mismo y a los demás de
 
 El muro protegerá a las criaturas del otro lado de efectos Gaseosos y de ataques Físicos a distancia. Cualquier criatura hostil que intente cruzarlo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire. Todos los ataques a distancia o de área contra criaturas al otro lado de la barrera dañarán primero tu muro de viento antes de pasar a sus objetivos.
 
-Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un aliado de un ataque, reduciendo el daño que recibirías como si estuviera bloqueando el ataque. Si intentas bloquear un ataque Físico cuerpo a cuerpo, tu enemigo debe tener éxito en un tiro para atravesar el muro o su ataque fallará. No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
+Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un aliado de un ataque, reduciendo el daño que recibirías como si estuviera bloqueando el ataque. Si intentas bloquear un ataque Físico cuerpo a cuerpo tu enemigo debe tener éxito en un tiro para atravesar el muro o su ataque fallará. No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
 
 **Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. 
 

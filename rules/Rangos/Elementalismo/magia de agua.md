@@ -84,7 +84,7 @@ El muro proporcionará *cubierta completa* a todas las criaturas al otro lado y 
 
 Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo tu oponente deberá tener éxito en una tiro para cruzar el muro o su golpe fallará. Para hacerlo, debes estar en posición defensiva y solo puedes crear un muro de esta manera una vez por ronda.
 
-**Empoderar** (1 chi): El muro recupera todos los puntos de impacto perdidos. Esta habilidad solo se puede usar si tienes suficiente agua para rellenar el muro.
+**Empoderar** (1 chi): El muro recupera todos sus PV perdidos. Esta habilidad solo se puede usar si tienes suficiente agua para rellenar el muro.
 
 ### Ola chocante
 
@@ -312,7 +312,7 @@ Todos tus hechizos de Agua de Rango IV cuestan una acción menos para emplear (m
 
 Desatas una gran tormenta en el campo de batalla, enfureciendo tanto al mar como al cielo. Este hechizo inicialmente afectará al campo de batalla de manera similar a las Lluvias torrenciales, pero su poder aumentará rápidamente con el paso del tiempo. Este efecto permanecerá en el campo de batalla durante siete rondas o hasta que sea disipado por otro hechizo Ambiental de igual o mayor magnitud.
 
-Mientras este efecto permanezca en el campo de batalla puedes utilizar una de las siguientes habilidades una vez por ronda como acción bonus después de que hayan transcurrido las rondas requeridos:
+Mientras este efecto permanezca en el campo de batalla puedes utilizar una de las siguientes habilidades una vez por ronda como acción bonus después de que hayan transcurrido las rondas requeridas:
 
 - **Ronda 2**: Puedes lanzar el hechizo Ola Aplastante sin la necesidad gastar chi. La ola surgirá desde cualquier punto en un radio grande centrado en ti y durará solo una ronda.
 - **Ronda 4**: Puedes lanzar el hechizo Vórtice sin la necesidad gastar chi. El Vórtice surgirá en cualquier lugar del campo de batalla y permanecerá fijo en ese punto. No necesitas mantener la concentración en los hechizos de vórtice lanzados de esta manera.

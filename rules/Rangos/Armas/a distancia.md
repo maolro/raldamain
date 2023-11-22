@@ -23,11 +23,15 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de DES. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de armas a distancia.
 
-
-
 ## Rango II
 
 ### Disparo triple
+
+*A distancia, Mejora*
+
+**Coste:** 1 vigor
+
+Disparas tres proyectiles en un abrir y cerrar de ojos para acabar con múltiples enemigos. Tu siguiente ataque a distancia afectará a tres enemigos diferentes a una distancia igual a su alcance. Estos ataques pueden ser mejorados con otras técnicas de combate si lo deseas. No puedes emplear esta técnica si tu arma requiere recarga salvo que tenga la capacidad de disparar múltiples proyectiles.
 
 **Finta** (1 AP): El objetivo tendrá que defenderse de tu ataque empleando su sabiduría, siendo incapaz de defenderse contra tu próximo ataque si fracasa en su tiro.
 

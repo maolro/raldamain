@@ -25,7 +25,7 @@ Estilo de Armas pesadas tiene las siguientes reglas fundamentales que se aplican
 
 **Duración**: Instantáneo
 
-Realiza un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de FUE. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Pesada.
+Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de FUE. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Pesada.
 
 ### Estilo salvaje
 
@@ -105,7 +105,7 @@ Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruz
 
 **Coste**: 2 vigor
 
-Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo.
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y no puedes volver a emplear esta habilidad más de una vez por ataque.
 
 ## Rango IV
 
@@ -122,6 +122,7 @@ Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador ant
 *Pesado, Ataque, Cuerpo a cuerpo, Área, Físico*
 
 **Coste**: 2 acciones y 2 vigor
+
 **Tamaño**: Radio corto
 
 Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige 2d6 puntos de daño adicionales y los *tropieza* al impactar. 
@@ -131,6 +132,7 @@ Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus e
 *Pesado, Defensivo*
 
 **Coste**: 2 acciones y 2 vigor
+
 **Duración**: Concentración
 
 Tu maestría con un arma pesada te permite utilizarla como escudo para protegerte de ataques poderosos. Una vez que activas esta habilidad obtienes *contadores de escudo* iguales a tu rango, que permanecerán hasta que pierdas la concentración o seas desarmado. Tus contadores de escudo sólo pueden utilizarse para reducir el daño de ataques cuerpo a cuerpo y ataques a distancia de un tamaño y velocidad adecuados.

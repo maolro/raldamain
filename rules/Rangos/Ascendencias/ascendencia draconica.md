@@ -2,6 +2,12 @@
 title: Ascendencia Dracónica
 ---
 
+# Reglas fundamentales
+
+Ascendencia primigenia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Fuerza y magia:** Tu rango en Ascendencia primigenia mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
 # Rangos
 
 ## Rango I
@@ -48,7 +54,7 @@ Tus sentidos se agudizan emulando los de un dragón. Tienes un sentido de olfato
 
 ## Rango III
 
-Aumenta tu estadística de CON por 1.
+Aumenta tu estadística de CON por 1. Tu habilidad *aliento dracónico* convierte sus dados de daño a d8.
 
 ### Alas del dragón
 
@@ -77,42 +83,51 @@ Al entrar en *furia del dragón* tu cuerpo se infundirá con tu elemento princip
 - **Fuego:** Desprendes un aura de calor extremo en un radio medio que otorga Desventaja a todas las habilidades de Agua, Madera o Hielo.
 - **Hielo:** Desprendes un aura de frío extremo en un radio medio que otorga Desventaja a todas las habilidades de Fuego, Agua o Madera.
 - **Ácido:** Se forma una nube corrosiva en un radio medio que otorga el efecto de estado *roto* a todos los objetos no-mágicos en ella.
-- **Eléctrico:** Desprendes un aura de electricidad estática que *ralentizará* a todas las criaturas que lleven encima objetos 
+- **Eléctrico:** Desprendes un aura de electricidad estática que *ralentizará* a todas las criaturas que lleven encima objetos metálicos a distancia media.
 
 ### Presencia aterradora
 
-Aterroriza a todas las criaturas más débiles. Inmunidad al miedo, resistencia a efectos mentales y los dragones te reconocen como un igual.
+*Innata, Pasiva, Miedo, Visual*
 
-**Ataques infundidos:** Al entrar en *furia del dragón* tus ataques físicos infligen +1d6 daño del mismo tipo que tu aliento y provocarán un efecto de estado al reducir PV. (1 chi) Durante una ronda añade un dado de daño adicional del mismo tipo.
+Emulas la terrorífica presencia de un dragón para aterrorizar a tus enemigos. Mientras te encuentres en *furia del dragón* todas las criaturas a distancia media que puedan verte deberán tener éxito en un tiro de Voluntad frente a tu modificador de Intimidar o aumentarán su nivel de *miedo* por un paso. 
 
-**Presencia aterradora**: Todas las criaturas más débiles que puedan verte deben tener éxito en un tiro de CAR frente a una dificultad igual a tu CAR + rango de ascendencia o quedarán *espantadas* durante el resto del combate (cada ronda puede repetir el tiro para recuperarse). Aquellas criaturas que se recuperen de este efecto son inmunes a él durante el resto del combate. (1 chi) Haz un tiro de intimidar como acción bonus contra todas las criaturas que puedan oírte.
+Cada ronda que permanezcas en dicho estado todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de *miedo* si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate. 
+
+**Empoderar** (1 vigor o chi): Haz un tiro de Intimidar como acción bonus contra una criatura que pueda verte a distancia media.
 
 ## Rango V
 
-Aumenta tu estadística de CAR por 1.
+Aumenta tu estadística de CAR por 1. Tu habilidad *aliento dracónico* convierte sus dados de daño a d10.
 
 ### Escamas impenetrables
 
-Obtienes *contadores del escudo* igual a tu rango al entrar en furia draconica. Recarga pagando chi. 
+*Innata, Pasiva*
+
+Tus escamas se vuelven aún más sólidas, haciéndose capaces de detener ataques que en otros casos serían mortales. Al entrar en *furia del dragón* recibes una cantidad de *contadores de escudo* igual a tu Rango que puedes usar para detener ataques. Estos contadores se acumulan con otras habilidades que los den y no requieren tu concentración. No obstante, si los pierdes todos no los recuperarás hasta que realices un descanso corto aunque vuelvas a entrar en *furia del dragón*.
+
+**Empoderar** (1 vigor o chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo.
 
 ### Magia dracónica
 
-Puede añadir la ventaja a tiros de magias del mismo tipo que el elemento escogido y estos infligen un dado de daño adicional.
+*Innata, Pasiva*
 
-**Escamas impenetrables** (1 chi): Tus escamas son capaces de deflejar ataques que en otros casos serían mortales. Como reacción detienes un ataque cuerpo a cuerpo o a distancia hecho contra ti (debes pagar 1 chi adicional si es un golpe crítico). Esta habilidad también te protege de ataques de área que provoquen el mismo tipo de daño del que tengas resistencia.
-
-**Magia Dracónica:** Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destructiva. Al entrar en *furia dracónica* puedes añadir tu dado de ventaja también a todos tus tiros de magia además que añadirás un dado de daño adicional a todos los efectos que provoquen el mismo tipo de daño que tu aliento.
+Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destructiva. Todos tus hechizos del mismo tipo que tu elemento escogido aumentan su daño base por 1d10 y podrás vigor en lugar de chi para lanzarl. Además, al entrar en *forma del dragón* añadirás tu dado de Ventaja a todos tus tiros con esos hechizos si no lo tienes ya.
 
 ## Rango VI
 
 ### Forma del dragón
 
-Forma tocha que te hace muy fuerte.
+*Innata, Mejora, Duradera*
 
-**Forma del dragón** (3 acciones y 5 chi): Has alcanzado la cima del poder de tu ascendencia, recibiendo la capacidad de transformarte en un gran y destructivo dragón. Dicha transformación permanecerá activa durante el resto del combate y mientras lo esté recibiras los beneficios de la habilidad *furia dracónica*. La forma del dragón te otorgará los siguientes beneficios:
+**Coste:** 3 acciones y 5 chi o vigor
 
-- Tu FUE y CON pasan a ser 14 a costa que tu DES pasa a ser 0. Aumenta tu tamaño a enorme.
-- Aumenta tu velocidad de vuelo por 1 y duplica los beneficios de la habilidad *armadura de escamas*. Recibes además usar seis veces la habilidad *escamas impenetrables* sin la necesidad de gastar chi.
+**Duración:** Seis rondas
+
+Has alcanzado la cima del poder de tu ascendencia, recibiendo la capacidad de transformarte en un gran y destructivo dragón. Dicha transformación permanecerá activa durante las siguientes seis rondas y mientras lo esté recibirás los beneficios de la habilidad *furia dracónica* además de 40 Vitalidad temporal. La transformación también acabará cuando pierdas toda tu Vitalidad temporal y cuando eso ocurra no podrás volver a activar esta habilidad hasta que pasen seis rondas. La forma del dragón te otorgará los siguientes beneficios:
+
+- Tu FUE y CON pasan a ser 14 a costa que tu DES pasa a ser 0. 
+- Aumentas tu tamaño a enorme y tu velocidad de vuelo por 1
+- Recibes seis usos de la habilidad *escamas impenetrables* sin la necesidad de gastar chi además que tu DEF pasa a ser 14.
 - Eres inmune a heridas permanentes y efectos de estado provocados por armas que no estén hechas para matar dragones. 
-- Recibes las acciones *garra* (1 Acción, +19, 1d10 + 14 cortante), *mordisco* (1 acción, +19, 2d6 + 14 perforante y *agarra*) y *cola* (1 acción, +19, 1d10 + 14 contundente, empuja y tropieza DC +19). Puedes usar la habilidad *ataque poderoso* como si tuvieras rango V para mejorar tus ataques.
-- Tu aliento pasa a hacer 3d10 + CON daño del tipo escogido a costa de recibir recarga 5-6. Este además ignorará todas las resistencias al daño escogido, contando así como *fuego puro* o sus equivalentes.
+- Recibes las acciones *garra* (1 Acción, +19, 1d10 + 14 cortante), *mordisco* (1 acción, +19, 2d6 + 14 perforante y *agarra*) y *cola* (1 acción, +19, 1d10 + 14 contundente, empuja y tropieza DC +19). Aprendes también todas las técnicas de Rango II o menos de Estilo salvaje y puedes usarlas sin la necesidad de pagar vig
+- Tu aliento pasa a hacer 3d10 + CON daño del tipo escogido a costa de requerir una ronda de recarga. Este además tratará todas las resistencias que tengan tus objetivos como si fueran de un nivel inferior.

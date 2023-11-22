@@ -55,17 +55,63 @@ Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma 
 
 **Coste:** 2 acciones y 1 chi
 
+**Tamaño:** Cono pequeño
 
+**Efecto crítico:** Los afectados sufren una *quemadura leve*
 
+**Duración:** Instantáneo
 
+Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Fuego al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
+
+**Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cono mediano y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
 ## Rango II
 
-**Muro de llamas** (2 acciones y 1 chi. Defensivo, Energía, Fuego): Formas un muro de llamas furiosas que te otorga cubierta completa contra todos los ataques mágicos y a distancia. Si una criatura intenta cruzar la barrera deberá tirar DES frente a tu magia de fuego o sufrirá 1d6 daño fuego y una quemadura media (leve si tiene éxito en el tiro). Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
+### Muro de llamas
 
-**Bola de fuego** (2 acciones y 1 chi. Área, Energía, Fuego): Lanzas una explosiva bola de fuego hacia un punto a distancia media que explotará en un radio pequeño, atacando a cada criatura en su área. Aquellas que impactes sufrirán 2d6 + CAR daño fuego y una quemadura leve si logras reducir PV. (1 chi) Aumenta el radio de efecto a medio
+*Fuego, Defensivo, Duradero*
 
-**Látigo flamígero** (2 acciones y 1 chi. Área, Energía, Fuego): Ataca a todos los enemigos en una línea media con un látigo de fuego que infligirá 1d6 + CAR daño fuego y una quemadura leve (media si logras reducir PV). Todos aquellos afectados que no consigan eliminar la quemadura sufrirán 1d6 + Rango daño fuego al final de la siguiente ronda. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
+**Coste**: 1 acción y 1 chi 
+
+**Alcance**: Medio 
+
+**Tamaño**: Esfera pequeña o línea media 
+
+**Efecto crítico:** Los objetivos afectados sufren una *quemadura media*
+
+**Duración**: Concentración 
+
+Formas un muro de llamas que quemarán a todo aquel que intente cruzarlas. El muro surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana.  Como barrera tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
+
+El muro proporcionará *cubierta parcial* a todas las criaturas al otro lado y las protegerá de todos los ataques hechos con materiales inflamables, como por ejemplo flechas o efectos de magia de Naturaleza. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de Esquiva contra tu magia de Fuego o sufrirá 1d6 + CAR daño Fuego y una *quemadura leve* (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de Fuego y luego afectarán hacia sus objetivos escogidos.
+
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
+
+**Empoderar** (1 chi): El muro recupera todos sus PV perdidos.
+
+### Bola de Fuego
+
+*Fuego, Ataque, Área*
+
+**Coste:** 2 o más acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio pequeño
+
+**Efecto crítico:** Todos los afectados sufren una *quemadura media*
+
+**Duración:** Instantánea
+
+Disparas una bola explosiva de llamas hacia un punto a distancia media. Haz un ataque de magia de Fuego contra todas las criaturas en un radio corto centrado en dicho punto, infligiendo 1d6 + CAR daño Fuego y una *quemadura leve* al impactar. Este ataque también prenderá fuego a todos los materiales inflamables en el área.
+
+Este ataque puede potenciarse aún más si cargas la bola de fuego antes de lanzarla. En lugar de atacar puedes cargar tu bola de fuego si mantienes la concentración en ella. Puedes gastar cualquier cantidad de acciones en tu turno para cargar la bola de fuego, aumentando su daño en 1d6 y el tamaño de su radio en un paso por cada 2 acciones que gastes. No puedes gastar más de cuatro acciones para cargar tu bola de fuego y esta se desvanecerá inmediatamente si pierdes la concentración.
+
+**Empoderar** (1 chi): Al emplear este hechizo lanzas una bola de fuego adicional en una dirección diferente para atacar a otros objetivos. Estará tan cargada como tu bola de fuego original.
+
+### Látigo flamígero
+
+(2 acciones y 1 chi. Área, Energía, Fuego): Ataca a todos los enemigos en una línea media con un látigo de fuego que infligirá 1d6 + CAR daño fuego y una quemadura leve (media si logras reducir PV). Todos aquellos afectados que no consigan eliminar la quemadura sufrirán 1d6 + Rango daño fuego al final de la siguiente ronda. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
 
 ## Rango III
 
@@ -106,6 +152,26 @@ Tus hechizos de Fuego de Rango II reducen su coste en acciones por 1 (mínimo 1)
 ## Rango V
 
 Tus hechizos de Fuego convierten sus dados de daño a d10 y los de Rango III reducen su coste en acciones por 1 (mínimo 1). 
+
+### Lluvia de brasas
+
+*Fuego, Ataque, Área*
+
+**Costo:** 3 acciones y 5 chi
+
+**Alcance:** Lejano
+
+**Tamaño:** Cuatro esferas de tamaño medio
+
+**Efecto Crítico:** Los objetivos afectados sufren una *quemadura grave*
+
+**Duración:** Instantáneo o concentración
+
+Levantas cuatro enormes rocas desde el suelo y las lanzas hacia tus enemigos, atacándoles con la fuerza de un meteorito. Lanza cada una de las cuatro rocas para impactar en cualquier punto dentro a una distancia lejana, haciendo un ataque de magia de Tierra contra todas las criaturas en de una esfera pequeña centrada en ese punto. Una roca inflige 4d10 + SAB daño Contundente al impactar además de *tropezar* al objetivo. Las criaturas voladoras que impactes caerán hacia el suelo, sufriendo el daño de caída adecuado. Este ataque convertirá el área afectada en *terreno difícil* y destruirá todas las estructuras débiles en ella.
+
+En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier cantidad de rocas suspendidas en el aire en lugar de atacar con ellas. Si decides hacerlo puedes hacer un ataque con cualquiera de las cuatro rocas en cualquier momento futuro empleando una acción, infligiendo la misma cantidad de daño y efectos al impactar. Perderás todas las rocas que estés sosteniendo si pierdes la concentración o si son destruidas por un ataque de Área con la magnitud adecuada.
+
+**Potenciar** (1 chi): Creas una roca adicional con este hechizo.
 
 **Lluvia de brasas** (3 AP y 3 chi. Energía, Fuego, Área): Haz un ataque contra cada criatura en un cono grande que inflige 2d10 + CAR daño fuego y provoca una quemadura media (grave al reducir PV). Todo el material inflamable en el área de efecto saltará en llamas, provocando un efecto similar a *muro de fuego*.
 
