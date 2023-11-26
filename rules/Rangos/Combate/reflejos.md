@@ -55,7 +55,7 @@ Evades un ataque en el último momento para amortiguar el daño que te provocar�
 
 *Innata, Pasiva*
 
-Conoces como esquivar adecuadamente los ataques enemigos para reducir las heridas que estos te causarían. Si te encuentras en *posición defensiva* reducirás todo el daño recibido por un valor igual a tu Rango + 1 antes de aplicar tu DEF. Puedes también emplear 
+Conoces como esquivar adecuadamente los ataques enemigos para reducir las heridas que estos te causarían. Si te encuentras en *posición defensiva* reducirás todo el daño recibido por un valor igual a tu Rango + 1 antes de aplicar tu DEF. Perderás los efectos de esta habilidad si eres incapaz de Esquivar o defenderte.
 
 **Empoderar** (1 vigor): Entras en *posición defensiva* como acción bonus.
 

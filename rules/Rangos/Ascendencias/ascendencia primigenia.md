@@ -1,6 +1,5 @@
 ---
-title: Ascendencia primigenia
-category: Ascendencias
+title: Ascendencia Primigenia
 ---
 
 Tienes una fuerte conexión con la naturaleza así como con los orígenes de la vida en el planeta, comprendiendo que todos los seres vivos existen en un equilibrio fundamental para preservar la vida misma. A medida que tu conexión crece, tu comunión con la naturaleza va volviéndose más profunda hasta convertirte en un guardián de la vida misma, permitiéndote comandar a plantas, animales e incluso espíritus para proteger la naturaleza de aquellos que busquen profanarla. 
@@ -15,8 +14,6 @@ Ascendencia primigenia tiene las siguientes reglas fundamentales que se aplican 
 
 ## Rango I
 
-Aumenta tu estadística de SAB por 1.
-
 ### Aspecto primigenio
 
 *Innata, Pasiva*
@@ -27,21 +24,21 @@ La influencia de energías primigenias en tu interior te hace desarrollar rasgos
 
 *Innata, Mejora*
 
-Eres capaz de adoptar temporalmente una forma híbrida entre animal y persona que te dará enorme fuerza a costa de hacerte cada vez menos humano. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con tus estadísticas físicas además de aumentar tu DEF por un valor igual a tu Rango + 1. El bonificador de esta habilidad se aplicará también a todos los hechizos que aprendas con este Rango a niveles superiores. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
+Eres capaz de adoptar temporalmente una forma híbrida entre animal y persona que te dará enorme fuerza a costa de hacerte cada vez menos humano. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con tus estadísticas físicas además de aumentar tu DEF por un valor igual a tu Rngo + 1. El bonificador de esta habilidad se aplicará también a todos los hechizos que aprendas con este Rango a niveles superiores. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
 
 Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede conducirte a la locura. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Forma de la bestia. Si llegaras a perder toda tu cordura pasarán inmediatamente a Forma de la bestia y perderás control de tu personaje durante un día, actuando como un animal salvaje y siendo un peligro tanto para amigos como enemigos.
 
-Debido a la naturaleza innata de esta habildiad puede manifestarse sola cuando te encuentres en lugares con fuerte energía espiritual o en momentos cuando ambos planos se vuelven más cercanos. Esta transformación espontánea quedará decidida por el DJ y en algunas circunstancias puedes perder control de tu personaje.
+Debido a la naturaleza innata de esta habilidad puede manifestarse sola cuando te encuentres en lugares con fuerte energía espiritual o en momentos cuando ambos planos se vuelven más cercanos. Esta transformación espontánea quedará decidida por el DJ y en algunas circunstancias puedes perder control de tu personaje.
 
 ## Rango II
 
-### Fuerza salvaje
+Aumenta tu estadística de SAB y su limitador por 1.
 
-*Innata, Mejora*
+### Fuerza salvaje
 
 **Coste:** 1 vigor o chi
 
-Imbuyes tu siguiente ataque físico con un hechizo que conozcas, permitiéndote provocar sus efectos al siguiente enemigo que impactes esta ronda como acción bonus. Si el hechizo imbuido es un ataque sumará su daño base al daño de tu ataque mientras que si escoges un hechizo que requiera un tiro de habilidad el afectado podrá realizarlo para intentar evitar sus efectos. Deberás seguir pagando el coste en chi o vigor del hechizo imbuido
+Imbuyes tu siguiente ataque físico con un hechizo que conozcas, permitiéndote provocar sus efectos al siguiente enemigo que impactes esta ronda como acción bonus. Si el hechizo imbuido es un ataque sumará su daño base al daño de tu ataque mientras que si escoges un hechizo que requiera un tiro de habilidad el afectado podrá realizarlo para intentar evitar sus efectos. Deberás seguir pagando el coste en chi o vigror del hechizo imbuido
 
 ### Comunión con la naturaleza
 
@@ -53,8 +50,6 @@ Obtienes también un vínculo con un Espíritu mayor de tu elección, el cual te
 
 ## Rango III 
 
-Aumenta tu estadística de FUE por 1.
-
 ### Transformación animal
 
 *Innata, Transmutación, Duradera*
@@ -63,12 +58,12 @@ Aumenta tu estadística de FUE por 1.
 
 **Duración:** Hasta una hora
 
-Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidendo que pueda ser usado. A continuación se presentan algunos ejemplos de formas animales y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
+Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidiendo que pueda ser usado. A continuación se presentan algunos ejemplos de formas animales y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
 
-- **Águila:** Tu DES pasa a ser 9 si era más baja mientras que tu FUE pasa a ser 1. Recibes velocidad de vuelo 2 y Ventaja en todos tus tiros de Esquiva. Tu tamaño pasará a ser pequeño y el daño base de tus ataques naturales pasa a ser 1d4 daño Cortante.
+- **Águila:** Tu DES pasa a ser 9si era más baja mientras que tu FUE pasa a ser 1. Recibes velocidad de vuelo 2 y Ventaja en todos tus tiros de Esquiva. Tu tamaño pasará a ser pequeño y el daño base de tus ataques naturales pasa a ser 1d4 daño Cortante.
 - **Oso:** Tu FUE y CON pasan a ser 8 si eran más bajas mientras que tu DES pasa a ser 1. Tu DEF base pasa a ser 8 además que recibes Resistencia a Aflicciones. Tu tamaño pasará a ser grande y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
 - **Lobo:** Tu FUE y DES pasan a ser 7 si eran más bajas. Aumenta tu velocidad por 1 y recibes Ventaja en todos tus tiros de Sigilo y Percepción. Tu DEF base pasa a ser 4 y el daño base de tus ataques naturales pasa a ser 1d8 daño Perforante.
-- **León:** Tu FUE, DES y CON y pasan a ser 6 si eran más bajas. Aumenta tu velocidad de salto y escalada por 1 además que recibes Ventaja en todos tus tiros de Acrobacias y Atletismo. Tu DEF base pasa a ser 6 y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
+- **León:** Tu FUE, DES y CON y pasan a ser 6 si eran más bajas. Aumenta to velocidad de salto y escalada por 1 admeás que recibes Ventaja en todos tus tiros de Acrobacias y Atletismo. Tu DEF base pasa a ser 6 y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
 
 ### Llamar  a los espíritus
 
@@ -86,7 +81,7 @@ Abres una pequeña brecha entre ambos planos para llamar a una criatura espiritu
 
 ## Rango IV 
 
-Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu espíritu, los cuales puedes lanzar empleando vigor en lugar de chi.
+Aumenta tu estadística de FUE y su limitador por 1. Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu espíritu, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Vínculo primigenio
 
@@ -101,8 +96,6 @@ Tu vínculo con el plano espiritual se ahonda hasta el punto de volverte semejan
 La energía vital del mundo de los espíritus sana tus heridas y te permite recuperarte a velocidades prodigiosas del daño. Al principio de tu turno reduce el nivel de una *herida permanente* que te afecte por un paso además que recuperas Vitalidad igual a tu Rango. Esta regeneración se acumula con otras habilidades que también te permitan regenerarte como Sello de regeneración. No podrás regenerarte durante una ronda si eres herido un arma hecha de Hierro frío.
 
 ## Rango V 
-
-Aumenta tu estadística de CON por 1.
 
 ### Aura primigenia
 
@@ -126,13 +119,13 @@ Desligas una porción del plano material a tu alrededor para fusionarla con el m
 
 El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el mundo de los espíritus debido a este hechizo volverá al plano material.
 
-Debido a las diferencias temporales toda persona que se encuentre en el plano espiritual recibirá efectivamente tres acciones adicionales respecto a aquellos que estén en el plano material. El plano espiriutal se solapará exactamente con el material debido a este hechizo, haciendo así que las distancias entre ambas sean iguales
+Debido a las diferencias temporales toda persona que se encuentre en el plano espiritual recibirá efectivamente tres acciones adicionales respecto a aquellos que estén en el plano material. El plano espiritual se solapará exactamente con el material debido a este hechizo, haciendo así que las distancias entre ambas sean iguales
 
 **Empoderar** (1 chi o vigor): Cambias de plano como reacción para evitar un ataque enemigo. Esto cuenta como un efecto Espacial.
 
 ## Rango VI
 
-Aprendes dos hechizos de Rango III pertenecientes a una magia asociada a tu espíritu, los cuales puedes lanzar empleando vigor en lugar de chi.
+Aumenta tu estadística de CON y su limitador por 1. Aprendes dos hechizos de Rango III pertenecientes a una magia asociada a tu espíritu, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Despertar la bestia
 
@@ -146,11 +139,11 @@ Liberas todo el poder espiritual en tu interior para transformarte en una podero
 
 - Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque.
-- Aumentas el daño base de tus ataques naturales a 1d10 además que estos contarán como si fueran de material superior III para los propósitos de calcular su dureza.
-- Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas la primera vez que las uses en una ronda.
+- Aumentas el daño base de tus ataques naturales a 1d10 además que estos contarán como si fueran de material superior III para los propósitos de calcular su duerza.
+- Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas.
 - Obtienes velocidad de vuelo 1 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
-- Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor parla primera vez que los lances en una ronda. No obstante, debes seguir pagando para empoderar.
+- Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
 
 # Criatura espiritual
 

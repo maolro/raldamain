@@ -43,7 +43,7 @@ Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Duran
 
 **Efecto crítico:** Los afectados aumentan su nivel de *miedo* por un paso adicional.
 
-Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Esta habilidad solo puede activarse en Ira y al empleara todos tus enemigos a radio medio deben tener éxito en un tiro de salvación de Voluntad o Intimidar contra tu talento de Intimidar o aumentarán su nivel de *miedo* por un paso. Esta habilidad solo puede usarse una vez por ronda.
+Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Esta habilidad solo puede activarse en Ira y al emplearla todos tus enemigos a radio medio deben tener éxito en un tiro de salvación de Voluntad o Intimidar contra tu talento de Intimidar o aumentarán su nivel de *miedo* por un paso. Esta habilidad solo puede usarse una vez por ronda.
 
 ### Resistencia salvaje
 

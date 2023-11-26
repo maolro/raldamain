@@ -166,7 +166,7 @@ Concedes una semblanza de vida a una masa de vientos furiosos para que puedan pr
 
 En rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia del Aire por encima de III. 
 
-**Empoderar** (1 chi): Un elemental bajo tu control cura Vitalidad igual a la mitad de su valor total.
+**Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV 
 
@@ -190,7 +190,7 @@ Invocas la ira de los cielos en forma de un poderoso tornado. El tornado emerger
 
 El tornado permanecerá en el campo de batalla hasta que pierdas la concentración. Mientras permanezca activo puedes gastar una acción para moverlo un paso en cualquier dirección. Las criaturas que comiencen su turno dentro del tornado o entren en su área de efecto en cualquier momento de la ronda deberán defenderse una vez más de este hechizo, sufriendo los mismos efectos al fallar. Las criaturas retenidas dentro del tornado sufrirán 1d8 + CAR daño contundente al comienzo de su turno. 
 
-**Empoderar** (1 chi): Crea un tornado adicional en un punto diferente dentro del alcance o amplía el tamaño de un tornado activo a un cilindro mediano.
+**Empoderar** (1 chi): Crea un tornado adicional en un punto diferente dentro del alcance o amplía el tamaño de un tornado activo a un cilindro mediano. No puedes tener más de tres tornados activos a la vez.
 
 ### Danza de los vientos
 
@@ -236,7 +236,7 @@ Todos tus hechizos de Aire sustituyen sus dados de daño por d10 y aquellos de R
 
 **Duración**: Instantáneo
 
-Desatas la furia de un huracán para arrasar con todo en tu camino. Realiza un ataque de Aire contra todas las criaturas en un cono grande que inflige 3d10 + CHA daño Contundente al impactar además de empujar un paso y *tropezar* a los enemigos que impactes. Este hechizo destruirá todas las estructuras débiles a su paso todo intentos de Esquivarlo tendrá Desventaja. 
+Desatas la furia de un huracán para arrasar con todo en tu camino. Realiza un ataque de Aire contra todas las criaturas en un cono grande que inflige 3d10 + CHA daño Contundente al impactar además de empujar un paso y *tropezar* a los enemigos que impactes. Este hechizo destruirá todas las estructuras débiles a su paso y todo intento de Esquivarlo tendrá Desventaja. 
 
 Una vez que lances este hechizo la fuerza de todos los vientos de la zona afectada aumentará enormemente durante una ronda, impidiendo que tus enemigos puedan volar o hacer ataques a distancia. El área afectada también se convertirá en *terreno difícil* durante el resto del combate. Si empleas este hechizo en una zona que potencie la magia de aire los vientos potenciados permanecerán activos hasta que pierdas la concentración.
 
@@ -254,7 +254,7 @@ Una vez que lances este hechizo la fuerza de todos los vientos de la zona afecta
 
 **Duración:** Concentración
 
-Reduces la cantidad de oxígeno en una esfera a tu alrededor, transformándola lentamente en vacío para matar lentamente todas las criaturas que necesitan aire para respirar. Todas las criaturas dentro de una pequeña esfera centrada en ti deben tener éxito en un tiro de CON frente a tu magia Aire o quedarán *fatigados* y comienzan a *ahogarse* hasta que entren en un lugar con aire respirable. 
+Reduces la cantidad de oxígeno en una esfera a tu alrededor, transformándola progresivamente en un vacío para matar lentamente todas las criaturas que necesiten aire para respirar. Todas las criaturas dentro de una pequeña esfera centrada en ti deben tener éxito en un tiro de CON frente a tu magia Aire o quedarán *fatigados* y comienzan a *ahogarse* hasta que entren en un lugar con aire respirable. 
 
 La Esfera de vacío permanecerá activa hasta que pierdas la concentración o sea disipada por otro efecto de magia de Aire de magnitud similar. Todas las criaturas que empiecen su turno dentro de la Esfera de vacío o entren en ella en cualquier momento de la ronda asalto deberán repetir el tiro de CON, sufriendo los mismos efectos al fracasar. 
 
@@ -272,9 +272,9 @@ La Esfera de vacío permanecerá activa hasta que pierdas la concentración o se
 
 **Duración**: Instantánea
 
-Realizas una rápida secuencia de golpes de viento para destrozar las defensas de tu objetivo sin darle una oportunidad para reaccionar. Haz un ataque de magia de Aire contra una única criatura a distancia media que inflige 2d10 + CAR daño Cortante al impactar además de con empujarla o arrastrarla un paso en cualquier dirección.
+Realizas una rápida secuencia de golpes de viento para destrozar las defensas de tu objetivo sin darle una oportunidad para reaccionar. Haz un ataque de magia de Aire contra una única criatura a distancia media que inflige 2d10 + CAR daño Cortante al impactar además de empujarla o arrastrarla un paso en cualquier dirección.
 
-Puedes gastar cualquier cantidad de acciones adicionales para realizar ese mismo número de ataques adicionales contra el mismo objetivo (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Deberán emplear el mismo resultado defensivo que obtuvieron la última vez y el modificador a tu tirada y daño aumentará en 1 por cada acción adicional que gastes. 
+Puedes gastar cualquier cantidad de acciones adicionales para realizar ese mismo número de ataques adicionales contra el mismo objetivo (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques adicionales con este hechizo). Deberán emplear el mismo resultado defensivo que obtuvieron la última vez y el modificador a tu tirada y daño aumentará en 1 por cada acción adicional que gastes. 
 
 Si impactas a tu objetivo dos veces durante la secuencia quedará *tropezado* y si lo impactar tres veces lo empujarás un paso adicional y sufrirá una *herida permanente leve*. La secuencia de ataques se romperá si eres impactado por un ataque mientras la realices.
 
@@ -294,7 +294,7 @@ Si impactas a tu objetivo dos veces durante la secuencia quedará *tropezado* y 
 
 Liberas el verdadero poder de los vientos para destruir todo a tu paso. Este hechizo afectará el campo de batalla inicialmente de manera similar al Control de Vientos, pero su poder crecerá rápidamente a medida que pasa el tiempo. Este efecto permanecerá en el campo de batalla durante siete asaltos o hasta que sea disipado por otro hechizo Ambiental de igual o mayor poder.
 
-Mientras este efecto permanezca en el campo de batalla puedes usar una de las siguientes habilidades una vez por ronda como acción bonus una vez que hayan pasado la cantidad requerida de rondas: 
+Mientras este efecto permanezca en el campo de batalla su potencia mejorará con el paso del tiempo. Una vez por ronda como acción bonus puedes emplear una de las siguientes habilidades cuando hayan pasado la cantidad indicada de rondas desde el momento que hayas lanzado este hechizo.
 
 - **Ronda 2:** Puedes lanzar los hechizos Viento Furibundo y Viento Arrastrante sin la necesidad de gastar chi. El tamaño de Viento Furioso se incrementa a una línea grande y el alcance de Viento Revuelto aumenta a lejano. 
 - **Ronda 4**: Puedes lanzar el hechizo Tornado sin la necesidad de gastar chi. El tornado surgirá en cualquier punto del campo de batalla y permanecerá fijo en ese lugar. No necesitas concentrarte en los hechizos de Tornado lanzados de esta manera.

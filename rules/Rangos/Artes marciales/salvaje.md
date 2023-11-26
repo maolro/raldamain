@@ -56,7 +56,7 @@ Atacas a tu enemigo en su punto más débil sin importarte el honor o el juego l
 
 Muerdes a tu objetivo como si fueras una bestia salvaje, desconcentrándole repentinamente y dejándolo en una mala posición. Haz un ataque bonus contra un enemigo adyacente que inflige 1d4 + FUE o DES daño Perforante al impactar. 
 
-Si logras provocarle daño saldrá inmediatamente de *posición defensiva* y recibirá una *herida permanente leve* si lleva armadura ligera. El daño base de este ataque mejorará de la misma manera que un Ataque natural y si empleas esta técnica una segunda vez por ronda te costará una acci
+Si logras provocarle daño saldrá inmediatamente de *posición defensiva* y recibirá una *herida permanente leve* si lleva armadura ligera. El daño base de este ataque mejorará de la misma manera que un Ataque natural y si vuelves a utilizar esta técnica en la misma ronda deberás pagar una acción. 
 
 ### Persecución
 
@@ -86,7 +86,7 @@ Un enemigo *enredado* de esta manera podrá repetir el tiro cada ronda para esca
 
 **Precio:** 1 acción y 2 vigor
 
-Te abalanzas sobre un enemigo con impulso suficiente para tirarlo al suelo. Salta un paso en cualquier dirección y haz un Ataque natural contra un enemigo adyacente que inflige 1d6 daño adicional. Además, al impactar este ataque tu objetivo este debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo salvaje o quedará *tropezado*. Tu objetivo deberá realizar el mismo tiro si se defiende con Parada aunque tenga éxito.
+Te abalanzas sobre un enemigo con impulso suficiente para tirarlo al suelo. Salta un paso en cualquier dirección y haz un Ataque natural contra un enemigo adyacente que inflige 1d6 daño adicional. Además, al impactar este ataque tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo salvaje o quedará *tropezado*. Tu objetivo deberá realizar el mismo tiro si se defiende con Parada aunque tenga éxito.
 
 ### Zarpazo desmembrador
 
