@@ -119,7 +119,7 @@ Levantas cuatro enormes rocas desde el suelo y las lanzas hacia tus enemigos, at
 
 En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier cantidad de rocas suspendidas en el aire en lugar de atacar con ellas. Si decides hacerlo puedes hacer un ataque con cualquiera de las cuatro rocas en cualquier momento futuro empleando una acción, infligiendo la misma cantidad de daño y efectos al impactar. Perderás todas las rocas que estés sosteniendo si pierdes la concentración o si son destruidas por un ataque de Área con la magnitud adecuada.
 
-**Potenciar** (1 chi): Creas una roca adicional con este hechizo.
+**Empoderar** (1 chi): Creas una roca adicional con este hechizo.
 
 # Elemental de tierra
 

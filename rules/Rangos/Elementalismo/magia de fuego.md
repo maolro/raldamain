@@ -157,23 +157,23 @@ Tus hechizos de Fuego convierten sus dados de daño a d10 y los de Rango III red
 
 *Fuego, Ataque, Área*
 
-**Costo:** 3 acciones y 5 chi
+**Costo:** 3 acciones y 3 chi
 
-**Alcance:** Lejano
+**Alcance:** Medio
 
-**Tamaño:** Cuatro esferas de tamaño medio
+**Tamaño:** Cuatro esferas de tamaño pequeño
 
 **Efecto Crítico:** Los objetivos afectados sufren una *quemadura grave*
 
 **Duración:** Instantáneo o concentración
 
-Levantas cuatro enormes rocas desde el suelo y las lanzas hacia tus enemigos, atacándoles con la fuerza de un meteorito. Lanza cada una de las cuatro rocas para impactar en cualquier punto dentro a una distancia lejana, haciendo un ataque de magia de Tierra contra todas las criaturas en de una esfera pequeña centrada en ese punto. Una roca inflige 4d10 + SAB daño Contundente al impactar además de *tropezar* al objetivo. Las criaturas voladoras que impactes caerán hacia el suelo, sufriendo el daño de caída adecuado. Este ataque convertirá el área afectada en *terreno difícil* y destruirá todas las estructuras débiles en ella.
+Disparas una lluvia de bolas de fuego para que todo arda a tu paso. Disparas cuatro bolas de fuego hacia hace cuatro puntos a una distancia media de ti, haciendo un ataque de magia de Fuego contra todas las criaturas en de una esfera pequeña centrada en ese punto. Una bola de fuego inflige 3d10 + CAR daño Contundente al impactar además de provocar una *quemadura media*. Este ataque provocará que todos los objetos inflamables en el área afectada salten en llamas, provocando un efecto equivalente a un Muro de fuego. 
 
-En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier cantidad de rocas suspendidas en el aire en lugar de atacar con ellas. Si decides hacerlo puedes hacer un ataque con cualquiera de las cuatro rocas en cualquier momento futuro empleando una acción, infligiendo la misma cantidad de daño y efectos al impactar. Perderás todas las rocas que estés sosteniendo si pierdes la concentración o si son destruidas por un ataque de Área con la magnitud adecuada.
+En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier cantidad de bolas de fuego suspendidas en el aire en lugar de atacar con ellas. Si decides hacerlo puedes hacer un ataque con cualquiera las cuatro bolas de fuego en un momento futuro empleando una acción, infligiendo la misma cantidad de daño y efectos al impactar. Perderás todas las bolas de fuego que estés sosteniendo si pierdes la concentración o si son destruidas por un ataque de Área con la magnitud adecuada.
 
-**Potenciar** (1 chi): Creas una roca adicional con este hechizo.
+**Empoderar** (1 chi): Creas una bola de fuego adicional con este hechizo.
 
-**Lluvia de brasas** (3 AP y 3 chi. Energía, Fuego, Área): Haz un ataque contra cada criatura en un cono grande que inflige 2d10 + CAR daño fuego y provoca una quemadura media (grave al reducir PV). Todo el material inflamable en el área de efecto saltará en llamas, provocando un efecto similar a *muro de fuego*.
+
 
 **Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe sufrirá 1d10 + rango daño fuego y deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto además de recibir un dado de daño adicional (esto eliminará automáticamente la nube).
 
