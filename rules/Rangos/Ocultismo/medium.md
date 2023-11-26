@@ -1,29 +1,47 @@
 ---
-title: Médium
+title: Magia de almas
 category: Ocultismo
 ---
 
 Estas un paso mas cerca de la muerte que la gente corriente, pudiendo escuchar las voces de las personas que dejaron nuestro mundo ya hace tiempo. A medida que tu conexión con estas fuerzas se va haciendo mas fuerte te iras volviendo capaz de convocarlas para que te presten parte de las fuerzas de las que estos se sirvieron en vida, convocar a los espectros para hacerles preguntas o incluso desligar parcialmente tu alma de tu cuerpo para realizar viajes entre el plano de los vivos y el de los muertos. En tus últimas etapas en las que tu conexión haya alcanzado su punto mas alto te volverás capaz de desterrar un gran número de estos espectros sirviéndote de rituales, atrapar las almas de algunos de las personas que mueran para usarlas para tus propios propósitos e incluso imbuir tu cuerpo con parte de su esencia para obtener algunas de las habilidades de las que estos se sirven atando tu alma al propio mundo a menos que lo desees.
 
+# Reglas fundamentales
+
+Magia de Almas tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de chi:** Tu rango en Magia de almas mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+
 # Rangos
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros relacionados con habilidades de médium y aumentas tu reserva de chi por 2 + rango.
+### Canalizar ánima
 
-**Sentir la muerte**: Notas la presencia de no-muertos y criaturas espectrales a una distancia lejana. Recibes además resistencia a posesión igual a tu rango + 1.
+*Alma, Pasiva*
 
-**Canalizar ánima**: Un espectro aliado te posee temporalmente para otorgarte ventaja en todos tus tiros relacionados con una estadística de tu elección. Cuando pases rango + 2 rondas canalizando debes pagar 1 chi cada ronda adicional o tener éxito en un tiro de SAB contra una dificultad escogida por el máster o el espectro te poseerá temporalmente. 
 
-**Exorcismo** (2 acciones): Haz un ataque usando tu rango de médium contra una criatura espectral que inflige 1d6 + INT daño que atraviesa todas las defensas y la *ralentiza* durante una ronda (*aturde* si reduces PV). Si este ataque llega a reducir los PV de un espectro a 0 este dejará de rejuvenecer. (1 chi) El espectro deja de poseer a un objetivo. 
+
+### Exorcismo
+
+*Alma, Ataque*
+
+### Sentido de muerte
+
+*Alma, Pasiva*
 
 ## Rango II
 
-**Hablar con los muertos** (ritual): Llamas al alma de un individuo para que te responda hasta 4 preguntas. Para llamar a un alma debes poseer un objeto valioso suyo o encontrarte en un lugar significativo para ella. Solo puedes invocar a la misma persona una vez al día y puede no manifestarse si lo escoge.
+### Invocar espectro
 
-**Ecos del pasado** (ritual): Identificas las presencias mágicas que hayan afectado a un objeto o lugar además de recibir una visión escogida por el máster sobre un evento significativo que haya ocurrido ahí. Esta habilidad solo puede usarse una vez al día por cada lugar. 
+*Alma, Invocación*
 
-**Invocar espectro** (3 acciones y 1 chi): Invocas a un espectro como aliado que permanecerá a tu lado durante el resto del combate o hasta que pierdas la concentración. El espectro recibirá una mejora adicional cada rango y mientras esté invocado no puedes canalizarlo. Cada rango adicional que recibas conoces un espectro nuevo que puedes invocar.
+### Hablar con los muertos
+
+*Alma, Ritual*
+
+### Robar alma
+
+*Alma, Reacción*
 
 ## Rango III	
 

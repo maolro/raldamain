@@ -62,7 +62,3 @@ Un canino tiene las siguientes características básicas para los propósitos de
 
 **Rangos:** Empezará con un rango en *mordisco*.
 
-
-
-# Variantes
-

@@ -1,26 +1,30 @@
 ---
-  title: Magia de Aire
+title: Magia de Aire
 category: Magia elemental
 ---
 Tienes un control absoluto sobre el elemento que se encuentra en casi todas las partes del planeta, el aire, pudiendo manipularlo a tu antojo para servirte de sus cualidades. Cuanto más profundices en el control de este elemento, mayor será la cantidad de aire que podrás manejar pudiendo crear desde leves brisas de aire hasta feroces huracanes. Al alcanzar la cúspide de tu poder serás capaz de manipular el propio clima para crear devastadores desastres naturales.
 
-## Rango I 
+# Reglas fundamentales
 
-Añade tu rango a todos tus ataques hechos con magia elemental de aire e incrementa tu reserva por 2 + rango chi.
+
+
+# Rangos
+
+## Rango I 
 
 ### Vendaval
 
 *Aire, Maniobra, Físico* 
 
-> **Coste**: 2 acciones 
->
-> **Alcance**: Medio 
->
-> **Efecto crítico**: Tu objetivo sufre una herida permanente leve
->
-> **Duración**: Instantánea 
+**Coste**: 2 acciones 
 
-Soplas una poderosa ráfaga de viento para desequilibrar a tu objetivo. Un objetivo que alcances debe superar una prueba de Heroísmo o Acrobacia contra tu magia de Aire o será empujado un paso hacia atrás y será *tropezado*. Si tu objetivo no puede ser empujado hacia atrás sufrirá 1d6 + CAR daño contundente al fracasar su prueba.
+**Alcance**: Medio 
+
+**Efecto crítico**: Tu objetivo sufre una herida permanente leve
+
+**Duración**: Instantánea 
+
+Soplas una poderosa ráfaga de viento para desequilibrar a tu objetivo. Un objetivo que alcances debe superar una prueba de Heroísmo o Acrobacia contra tu magia de Aire o será empujado un paso hacia atrás y será *tropezado*. Si tu objetivo no puede ser empujado hacia atrás sufrirá 1d6 + INT daño contundente al fracasar su prueba.
 
 Este hechizo también se puede utilizar para empujar objetos de un tamaño similar, requiriendo sólo una prueba de dificultad elegida por el DJ si son particularmente grandes o pesados. 
 
@@ -30,15 +34,15 @@ Este hechizo también se puede utilizar para empujar objetos de un tamaño simil
 
 *Aire, Ataque, A Distancia, Físico* 
 
-> **Precio**: 2 acciones 
->
-> **Alcance**: Medio 
->
-> **Efecto crítico**: Tu objetivo sufre una *herida permanente leve*
->
-> **Duración**: Instantánea 
+**Precio**: 2 acciones 
 
-Concentras el poder de los vientos en un espacio pequeño para crear una intensa ráfaga de aire capaz de cortar la carne. Haz un ataque con magia de Aire contra un objetivo en tu alcance que inflige 1d6 + CAR de daño cortante al impactar. Este ataque ignora todas las resistencias a los ataques a distancia y todos los beneficios otorgados por *ocultamiento*. 
+**Alcance**: Medio 
+
+**Efecto crítico**: Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantánea 
+
+Concentras el poder de los vientos en un espacio pequeño para crear una intensa ráfaga de aire capaz de cortar la carne. Haz un ataque con magia de Aire contra un objetivo en tu alcance que inflige 1d6 + INT daño cortante al impactar. Este ataque ignora todas las resistencias a los ataques a distancia y todos los beneficios otorgados por *ocultamiento*. 
 
 **Empoderar** (1 chi): Haz un ataque contra un objetivo adicional en tu alcance
 
@@ -46,54 +50,259 @@ Concentras el poder de los vientos en un espacio pequeño para crear una intensa
 
 *Aire, Ataque, Área, Físico*
 
-> **Coste**: 2 acciones y 1 chi
-> **Tamaño**: Línea mediana
-> **Efecto crítico**: Tu objetivo sufre una *herida permanente leve* y es *tropezado*
-> **Duración**: Instantánea 
+**Coste**: 2 acciones y 1 chi
 
-Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Realiza un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + CAR de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
+**Tamaño**: Línea mediana
 
-**Empoderar** (1 chi): Los vientos siguen siendo fuertes durante la siguiente ronda, convirtiendo el área afectada por tu ataque en un *terreno difícil*. Todas las criaturas que comiencen su turno allí o se muevan al espacio afectado deben superar una prueba de Heroísmo o Acrobacia o serán empujadas hacia atrás un paso y caerán *tropezadas*.
+**Efecto crítico**: Tu objetivo sufre una *herida permanente leve* y es *tropezado*
+
+**Duración**: Instantánea 
+
+Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Realiza un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + INT de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
+
+**Empoderar** (1 chi): Los vientos siguen siendo fuertes durante la siguiente ronda, convirtiendo el área afectada por tu ataque en un *terreno difícil*. Todas las criaturas que comiencen su turno allí o se muevan al espacio afectado deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Aire o serán empujadas hacia atrás un paso y caerán *tropezadas*.
 
 ## Rango II
 
-**Muro de viento** (2 AP y 1 chi, Aire, Concentración): Formas una barrera media de vientos furiosos que te protegerá de ataques a distancia tantos físicos como mágicos y gases. La barrera permanecerá activa mientras te concentres en ella y toda criatura que intente cruzarla deberá tener éxito en un tiro de FUE contra tu magia de aire o los vientos le empujarán hacia atrás. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva* para protegerte de un ataque de área que englobe como máximo un radio corto, y puedes pagar 1 chi para aumentar el radio que puedes detener por un paso alcanzando como máximo un radio grande.
+### Muro de los vientos
 
-**Esfera de aire** (2 AP y 1 chi, Aire, Área, Físico, Concentración): Formas una esfera de vientos cortantes en la palma de tu mano y ataca a una criatura adyacente con ella, haciendo un ataque elemental de aire que inflige 2d6 + CAR daño cortante y empuja un paso al impactar. (1 chi) La esfera permanecerá en tu mano hasta el final de tu siguiente turno o hasta que pierdas la concentración, permitiéndote atacar con ella hasta que se disipe empleando 2 AP sin la necesidad de gastar chi.
+*Aire, Defensiva, Duradera*
 
-**Azote del viento** (2 AP y 1 chi, Aire, Físico, Concentración): Creas una masa de aire que eres capaz de mantener y controlar a voluntad para atacar a tus enemigos. Mientras mantengas la concentración podrás hacer un ataque de *vendaval* como acción bonus contra un objetivo a distancia cercana además que puedes sacrificar la masa de aire para tener éxito automático en un tiro de parada, perdiendo de inmediato sus beneficios. (1 chi) Creas una segunda masa de aire para aumentar tu dominio del campo de batalla, permitiéndote repetir uno de tus tiros de magia de viento una vez por ronda mientras la habilidad permanezca activa. Ambas masas de aire se desvanecerán si pierdes la concentración.
+**Coste**: 2 acciones y 1 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Esfera pequeña o línea mediana
+
+**Duración**: Concentración
+
+Formas un muro de vientos rugientes para protegerte a ti mismo y a los demás de cualquier daño. El muro surgirá de cualquier punto dentro de su alcance y adopta la forma de una esfera pequeña o una línea mediana. Como barrera, tiene puntos de vida iguales a tu Rango x 3 y es inmune al daño de armas no mágicas (el daño de ataques físicos de área, como los cañonazos, sigue funcionando). Permanecerá en el campo de batalla hasta que se quede sin puntos de vida o pierdas la concentración.
+
+El muro protegerá a las criaturas del otro lado de efectos Gaseosos y de ataques Físicos a distancia. Cualquier criatura hostil que intente cruzarlo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire. Todos los ataques a distancia o de área contra criaturas al otro lado de la barrera dañarán primero tu muro de viento antes de pasar a sus objetivos.
+
+Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un aliado de un ataque, reduciendo el daño que recibirías como si estuviera bloqueando el ataque. Si intentas bloquear un ataque Físico cuerpo a cuerpo tu enemigo debe tener éxito en un tiro para atravesar el muro o su ataque fallará. No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
+
+**Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. 
+
+### Esfera de viento
+
+*Aire, Ataque, Cuerpo a cuerpo, Duradera*
+
+**Coste**: 2 acciones y 1 chi
+
+**Alcance**: Cuerpo a cuerpo
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve* y falla automáticamente su tiro de Heroísmo o Acrobacias contra este efecto.
+
+**Duración**: Concentración
+
+Concentras el poder del viento en la palma de tu mano y lo moldeas su forma en una pequeña esfera de vientos cortantes. Realiza un ataque mágico de Aire contra una criatura adyacente que inflige 2d6 + CAR daño cortante al impactar. Tu objetivo también debe tener éxito en un tiro de Heroicidad o Acrobacias contra tu Magia de aire o será empujado un paso hacia atrás y cae *tropezado*.
+
+**Empoderar** (1 chi): La esfera de viento permanece en tu mano hasta el final de tu siguiente turno, permitiéndote lanzar este hechizo tantas veces como desees sin tener que gastar chi. Debes gastar aun así el número apropiado de acciones y la esfera se desvanecerá si pierdes la concentración.
+
+### Viento arrastrante
+
+*Aire, Maniobra, Físico*
+
+**Coste**: 1 acción y 1 chi
+
+**Alcance**: Medio
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*.
+
+**Duración**: Instantánea
+
+Los vientos arrastran a un enemigo hacia ti, rompiendo sus defensas y dejándolo en una posición más vulnerable. Un objetivo de tu elección a distancia media debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Aire o es arrastrado hasta dos pasos hacia ti y sale inmediatamente de *posición defensiva*. Si hay algún obstáculo o barrera en tu camino tu objetivo sufrirá también 1d6 + CAR daño contundente. 
+
+**Aumentar** (1 chi): Afectas a una criatura adicional a distancia media con este hechizo.
 
 ## Rango III 
 
-Reduce el coste de *vendaval, viento furibundo* y *lanzamiento* por 1 AP. Sustituye los dados de daño de todos los hechizos de magia de aire a d8.
+Todos tus hechizos de Aire sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
 
-**Agarre del viento** (1 AP y 2 chi, Aire, Maniobra, Concentración): Hace un ataque elemental contra un objetivo a distancia media que al impactar lo *agarra* manteniéndolo sostenido en el aire. Un objetivo en el aire no puede defenderse de tus ataques de *vendaval* y puedes estamparlo contra el suelo con ellos para hacerle 1d6 daño de caída adicional. Puedes agarrar como máximo a un número de criaturas igual a tu rango - 2 y permanecerán en dicho estado hasta que pierdas la concentración.
+### Agarre del Aire
 
-**Controlar los vientos** (3 AP y 2 chi, Aire, Ambiental, Concentración): Manipulas los vientos en el campo de batalla para que te apoyen, los cuales te obedecerán durante el resto del combate. Mientras este efecto permanezca activo el campo de batalla contará como *terreno difícil* para todas las criaturas sin elementalismo de aire y todos los ataques a distancia que no sean de aire tendrán desventaja. Recibes también ventaja en todos tus tiros de ataque hechos con elementalismo de aire mientras te encuentres en un entorno afectado por *controlar los vientos* (dicho bonificador no se acumula con múltiples efectos de *controlar los vientos*). Esta habilidad también puede usarse para disipar un efecto de magia elemental de aire con rango igual o inferior al tuyo, pero deberás superar al lanzador de dicho efecto en un tiro de magia de aire para tener éxito.
+*Aire, Agarre, Físico, Duradero*
 
-**Invocar elemental de aire** (3 AP y 2 chi, Aire, Invocación): Invoca a un elemental de aire que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
+**Coste**: 1 acción y 2 chi
+
+**Alcance**: Medio
+
+**Efecto crítico:** Tu objetivo quedará *fatigado* hasta el final de su siguiente turno
+
+**Duración**: Concentración
+
+Formas poderosos vientos alrededor de un objetivo de tu elección para inmovilizarlo y retenerlo. Un objetivo dentro del alcance debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire o quedará *agarrado* por este hechizo hasta que escape o pierdas la concentración. Puedes gastar una acción para hacer que una criatura retenida por este hechizo vuele un paso en cualquier dirección.
+
+**Aumentar** (1 chi): Afectas a una criatura adicional a distancia media con este hechizo
+
+### Controlar vientos
+
+*Aire, Ambiental, Duradero*
+
+**Coste**: 3 acciones y 1 chi
+
+**Tamaño**: Esfera grande
+
+**Duración**: Enfoque
+
+Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando activas este hechizo, todos los vientos dentro de una esfera grande aumentará su fuerza, convirtiendo la zona afectada en *terreno difícil* para las criaturas que elijas y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
+
+Mientras este hechizo esté activo todos los hechizos de Aire se potencian, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque a distancia puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
+
+**Empoderar** (1 chi): El siguiente hechizo de Aire que lances reduce su coste de acción en 1. Esto sólo puede usarse una vez por hechizo.
+
+### Invocar elemental de aire
+
+*Aire, Invocación*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Duración**: 1 hora 
+
+Concedes una semblanza de vida a una masa de vientos furiosos para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental del Aire de nivel 6 que luchará a tu lado hasta que sea destruido. 
+
+En rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia del Aire por encima de III. 
+
+**Empoderar** (1 chi): Un elemental bajo tu control cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV 
 
-**Tornado** (3 AP y 2 chi, Aire, Concentración): Formas un feroz tornado que hará un ataque de *agarre del viento* que infligirá 1d8 + CAR daño al impactar contra todas las criaturas en un radio corto. El tornado permanecerá mientras mantengas la concentración en él o pasen rango – 1 rondas, y cada criatura que permanezca atrapada por el torbellino sufrirá el daño de este ataque al principio de su turno. Si tienes activa la habilidad *controlar los vientos* el tornado aumentará su radio a medio y en las rondas sucesivas puedes moverlo un paso como acción bonus empleable una vez por ronda, repitiendo su efecto contra las criaturas en el área.
+Todos tus hechizos de Aire de Rango II cuestan una acción menos para emplear (mínimo 1).
 
-**Robar el aire** (2 AP y 2 chi, Aire, Fatiga): Haz un ataque de *agarre de los vientos* que al impactar robará el aire que tenga objetivo en sus pulmones, *fatigándolo* de inmediato. Si este no logra escapar tras una cantidad de rondas igual a su CON caerá *inconsciente* y morirá tras una ronda si no es liberado. Puedes emplear 2 AP para reducir la cantidad de rondas que puede sobrevivir por 1. (1 chi) Afecta a un objetivo adicional
+### Tornado
 
-**Tajo de los vientos** (2 AP y 2 chi, Aire, Físico, Área): Eres capaz de concentrar el poder de los vientos para que corten con gran precisión y fuerza. Ataca a todas las criaturas en un radio medio, infligiendo 2d8 + CAR daño cortante y una herida leve en el caso que el objetivo no lleve armadura pesada o superior (media si reduces sus PV). Este ataque también destruirá todos los muros y estructuras frágiles que haya en el área de efecto. 
+*Aire, Ataque, Área, Agarre, Físico, Duradero*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Cilindro pequeño
+
+**Efecto crítico:** Los objetivos afectados fallarán automáticamente su tiro para evitar ser *agarrados* o un objetivo *agarrado* no podrá realizar intentos para escapar esta ronda.
+
+**Duración**: Concentración
+
+Invocas la ira de los cielos en forma de un poderoso tornado. El tornado emergerá de cualquier punto que alcances y realizará un ataque contra todas las criaturas en el área de efecto que inflige 1d8 + CAR de daño contundente al impactar. Los objetivos impactados deberán tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire o quedarán *agarrados* por el tornado, elevándose un paso en el aire. Incluso si tienen éxito serán empujados un paso hacia atrás y quedarán *tropezados*.
+
+El tornado permanecerá en el campo de batalla hasta que pierdas la concentración. Mientras permanezca activo puedes gastar una acción para moverlo un paso en cualquier dirección. Las criaturas que comiencen su turno dentro del tornado o entren en su área de efecto en cualquier momento de la ronda deberán defenderse una vez más de este hechizo, sufriendo los mismos efectos al fallar. Las criaturas retenidas dentro del tornado sufrirán 1d8 + CAR daño contundente al comienzo de su turno. 
+
+**Empoderar** (1 chi): Crea un tornado adicional en un punto diferente dentro del alcance o amplía el tamaño de un tornado activo a un cilindro mediano.
+
+### Danza de los vientos
+
+*Aire, Defensivo, Duradero*
+
+**Coste**: 2 acciones y 2 chi
+
+**Duración**: Concentración
+
+Bailas con la gracia de los vientos para obtener la habilidad de volar y moverte a velocidades sobrehumanas. Este hechizo te rodea de poderosos vientos que te otorgan velocidad de vuelo 1, Resistencia a ataques A distancia e Inmunidad a efectos Gaseosos. Este efecto permanecerá activo hasta que pierdas la concentración. 
+
+Los vientos formarán un aura protectora en torno a ti que te otorga una cantidad de *contadores de escudo* iguales a tu Rango. Al gastar un contador para defenderte de un ataque podrás volar un paso en cualquier dirección sin provocar ataques de oportunidad. 
+
+**Empoderar** (1 chi): Recuperas uno de tus *contadores de escudo* perdidos. Si te encuentras en una zona afectada por fuertes vientos puedes reponer un *contador de escudo* adicional al empoderar.
+
+### Vendaval cortante
+
+*Aire, Ataque, Área, Físico*
+
+**Coste**: 2 acciones y 2 chi
+
+**Tamaño**: Cono mediano
+
+**Efecto crítico:** Inflige una *herida permanente media* a todos los afectados
+
+**Duración**: Instantáneo
+
+Liberas una ráfaga de aire a presión capaz de partir la materia sólida por la mitad. Realiza un ataque de Aire contra todos los objetivos dentro de un cono mediano que inflige 2d8 + CAR de daño cortante al impactar y una *herida permanente leve*. Todo intento de Esquivar este ataque tendrá Desventaja y al impactar tu objetivo perderá un *contador de escudo* en el caso que los tenga.
+
+**Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi.
 
 ## Rango V
 
-Sustituye los dados de daño de todos los hechizos de magia de aire a d10.
+Todos tus hechizos de Aire sustituyen sus dados de daño por d10 y aquellos de Rango III cuestan una acción menos para emplear (mínimo 1).
 
-**Huracán** (3 AP y 3 chi, Aire, Área, Físico): Liberas el poder de los vientos para formar un devastador huracán que arrasará con todo en su camino. Todas las criaturas en su área de efecto deberán defenderse usando su FUE contra un ataque elemental de aire que provocará 3d6 daño de caída además de empujar dos pasos hacia atrás. Si hay escombros en el área todas las criaturas deberán también defenderse de un ataque elemental que infligirá 2d10 + CAR daño contundente. Si la habilidad *controlar los vientos* está activa los vientos aumentarán enormemente su fuerza durante las siguientes tres rondas, impidiendo los ataques a distancia y que otras criaturas puedan volar.
+### Huracán
 
-**Marioneta del viento** (1 AP y 3 chi, Aire, Maniobra, Concentración): Los objetivos que agarres quedan por completo a la merced del viento, moviéndolos a tu voluntad y rompiendo su cuerpo como si fueran meras marionetas. Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu magia de aire o es movida un paso en cualquier dirección, sufriendo 1d6 daño físico que ignora defensa y una herida leve además de estar *agarrada* (funciona igual que *agarre del viento*). Al principio de tu turno puedes mover a todas las criaturas agarradas con esta habilidad un paso en cualquier dirección, infligiéndoles 1d6 daño físico que ignora defensa y de nuevo una herida leve. Si uno de tus objetivos agarrados se estampa contra un objeto sólido sufrirá también 1d6 daño de caída. (1 chi) Afecta a un objetivo adicional.
+*Aire, Ataque, Área, Físico*
 
-**Danza de los vientos** (3 AP y 3 chi, Aire, Concentración): Te mueves en absoluta armonía con el aire, usándolo para protegerte de ataques y castigar a tus enemigos. Al activar esta habilidad te rodeas del efecto de *controlar los vientos* en un radio medio y mientras permanezca activa recibes siempre los beneficios de *posición defensiva*. Además, una vez por ronda al ser impactado por un ataque puedes hacerle un ataque de *vendaval* como reacción a tu enemigo, el cual fallará automáticamente su ataque si falla su tiro de FUE. Esta habilidad permanecerá activa mientras mantengas la concentración en ella o pasen rango + 1 rondas. También se disipará si otro elementalista de aire elimina el efecto de *controlar los vientos* que te rodea.
+**Coste**: 3 acciones y 3 chi
+
+**Tamaño**: Cono grande
+
+**Duración**: Instantáneo
+
+Desatas la furia de un huracán para arrasar con todo en tu camino. Realiza un ataque de Aire contra todas las criaturas en un cono grande que inflige 3d10 + CHA daño Contundente al impactar además de empujar un paso y *tropezar* a los enemigos que impactes. Este hechizo destruirá todas las estructuras débiles a su paso todo intentos de Esquivarlo tendrá Desventaja. 
+
+Una vez que lances este hechizo la fuerza de todos los vientos de la zona afectada aumentará enormemente durante una ronda, impidiendo que tus enemigos puedan volar o hacer ataques a distancia. El área afectada también se convertirá en *terreno difícil* durante el resto del combate. Si empleas este hechizo en una zona que potencie la magia de aire los vientos potenciados permanecerán activos hasta que pierdas la concentración.
+
+**Empoderar** (1 chi): Puedes lanzar este mismo hechizo la ronda siguiente sin la necesidad de pagar chi. Debes afectar la misma zona que la última vez que lanzaste este hechizo.
+
+### Esfera de vacío
+
+*Aire, Aflicción, Área, Duradero, Físico*
+
+**Coste**: 2 acciones y 3 chi
+
+**Tamaño**: Esfera pequeña
+
+**Efecto crítico:** Las criaturas afectadas quedan *exhaustas* y empiezan a *ahogarse*
+
+**Duración:** Concentración
+
+Reduces la cantidad de oxígeno en una esfera a tu alrededor, transformándola lentamente en vacío para matar lentamente todas las criaturas que necesitan aire para respirar. Todas las criaturas dentro de una pequeña esfera centrada en ti deben tener éxito en un tiro de CON frente a tu magia Aire o quedarán *fatigados* y comienzan a *ahogarse* hasta que entren en un lugar con aire respirable. 
+
+La Esfera de vacío permanecerá activa hasta que pierdas la concentración o sea disipada por otro efecto de magia de Aire de magnitud similar. Todas las criaturas que empiecen su turno dentro de la Esfera de vacío o entren en ella en cualquier momento de la ronda asalto deberán repetir el tiro de CON, sufriendo los mismos efectos al fracasar. 
+
+**Empoderar** (1 chi): Drenas el aire de todas las criaturas dentro de la esfera, recuperando 5 de Vitalidad por cada criatura que haya fallado su tiro esta ronda.
+
+### Corrientes cambiantes
+
+*Aire, Ataque, Físico*
+
+**Coste**: 2 o más acciones y 3 chi
+
+**Alcance**: Medio
+
+**Efecto crítico**: Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantánea
+
+Realizas una rápida secuencia de golpes de viento para destrozar las defensas de tu objetivo sin darle una oportunidad para reaccionar. Haz un ataque de magia de Aire contra una única criatura a distancia media que inflige 2d10 + CAR daño Cortante al impactar además de con empujarla o arrastrarla un paso en cualquier dirección.
+
+Puedes gastar cualquier cantidad de acciones adicionales para realizar ese mismo número de ataques adicionales contra el mismo objetivo (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Deberán emplear el mismo resultado defensivo que obtuvieron la última vez y el modificador a tu tirada y daño aumentará en 1 por cada acción adicional que gastes. 
+
+Si impactas a tu objetivo dos veces durante la secuencia quedará *tropezado* y si lo impactar tres veces lo empujarás un paso adicional y sufrirá una *herida permanente leve*. La secuencia de ataques se romperá si eres impactado por un ataque mientras la realices.
+
+**Empoderar** (1 chi): Tras ser impactado por un ataque tu objetivo debe repetir su tiro defensivo y quedarse con el peor resultado.
 
 ## Rango VI
 
-**Vientos de la devastación** (3 AP y 5 chi, Aire, Ambiental, Concen): Invocas un poderoso viento de tal magnitud que es capaz de arrasar con toda la civilización a tu paso. Al activar esta habilidad todo el campo de batalla quedará afectado por la habilidad *controlar los vientos* con fuerza mejorada, impidiendo los ataques a distancia y que otras criaturas puedan volar. A partir de la segunda ronda puedes llamar la verdadera fuerza de los vientos, permitiéndote usar la habilidad *huracán* o *torbellino* una vez por ronda sin la necesidad de gastar chi (deberás seguir pagando el coste en acciones). Esta habilidad permanecerá activa durante las siguientes 5 rondas o hasta que pierdas la concentración.
+### Vientos de la devastación
+
+*Aire, Ataque, Área, Físico, Duradero, Ambiental*
+
+**Coste**: 3 acciones y 5 chi
+
+**Tamaño**: Esfera grande
+
+**Duración**: Siete rondas
+
+Liberas el verdadero poder de los vientos para destruir todo a tu paso. Este hechizo afectará el campo de batalla inicialmente de manera similar al Control de Vientos, pero su poder crecerá rápidamente a medida que pasa el tiempo. Este efecto permanecerá en el campo de batalla durante siete asaltos o hasta que sea disipado por otro hechizo Ambiental de igual o mayor poder.
+
+Mientras este efecto permanezca en el campo de batalla puedes usar una de las siguientes habilidades una vez por ronda como acción bonus una vez que hayan pasado la cantidad requerida de rondas: 
+
+- **Ronda 2:** Puedes lanzar los hechizos Viento Furibundo y Viento Arrastrante sin la necesidad de gastar chi. El tamaño de Viento Furioso se incrementa a una línea grande y el alcance de Viento Revuelto aumenta a lejano. 
+- **Ronda 4**: Puedes lanzar el hechizo Tornado sin la necesidad de gastar chi. El tornado surgirá en cualquier punto del campo de batalla y permanecerá fijo en ese lugar. No necesitas concentrarte en los hechizos de Tornado lanzados de esta manera.
+- **Ronda 7**: Puedes lanzar el hechizo Huracán sin la necesidad gastar chi, afectando a toda la esfera con él. No puedes gastar más chi para potenciar este hechizo. 
+
+Una vez que este hechizo acabe todos los hechizos Duraderos que hayan sido creados en él cesarán de inmediato. No se podrá volver a lanzar este hechizo en el mismo lugar hasta que haya transcurrido por lo menos menos un día.
+
+**Potenciar** (1 chi): Empleas el Muro de Vientos para defenderte de un ataque sin la necesidad de estar en *posición defensiva*.
 
 # Elemental de aire
 
@@ -135,17 +344,3 @@ Sustituye los dados de daño de todos los hechizos de magia de aire a d10.
 - Puede usar la habilidad *tajo de los vientos* empleando 3 AP sin la necesidad de gastar chi
 - Al agarrar a una criatura puede emplear 1 AP para usar *robar el aire* contra ella
 - Empleando 2 AP puede cambiar de estado para transformarse en un *tornado,* infligiendo dicho ataque contra las criaturas en su área de efecto. Mientras permanezca en este estado perderá sus acciones pero podrá moverse una vez por ronda como acción bonus.
-
-# Niveles míticos
-
-## Rango I
-
-## Rango II
-
-## Rango III
-
-## Rango IV
-
-## Rango V
-
-## Rango VI

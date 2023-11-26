@@ -7,9 +7,27 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia ilusoria. Tu reserva aumenta por 2+Rango chi.
+### Crear ilusión
 
-**Crear ilusión** (2 Acciones, Ilusión, Concentración): Creas una imagen incorpórea conocida como ilusión de un objeto, criatura o fenómeno visual de tamaño mediano en un espacio a distancia media de ti. Identificar una ilusión requiere un tiro exitoso de percepción usando tu tiro de magia ilusoria como dificultad (intentarlo cuesta 1 AP). La ilusión permanecerá activa mientras te concentres en ella y no puedes tener más ilusiones que tu rango + 1 simultáneamente. Si tienes una ilusión activa puedes gastar 1 AP para moverla un paso. (1 chi) Crea una ilusión adicional.
+*Ilusoria, Visual, Duradera*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña
+
+**Duración:** Concentración
+
+Creas una imagen incorpórea conocida como una ilusión que se imitará un objeto, criatura o fenómeno visual. Una ilusión no debe ocupar un espacio de tamaño superior a una esfera pequeña y no podrá emitir sonidos. Esta permanecerá activa hasta que pierdas la concentración o escojas acabarla. Esta también será destruida si es afectada por un hechizo Arcano.
+
+Una ilusión parecerá completamente real hasta que una criatura interactúe con ella ya que carece de sustancia física. Puede también ser identificada como tal con un tiro exitoso de Percepción contra una dificultad igual a tu tiro de Magia Ilusoria. Cada criatura solo puede tirar para identificar ilusiones una vez por ronda como acción bonus salvo que ocurra un suceso que le haga sospechar que la imagen puede ser una ilusión.
+
+**Empoderar** (1 chi): Creas una ilusión adicional en otro espacio a distancia media de ti o aumentas el tamaño de una ilusión para que ocupe una esfera mediana.
+
+### Disfraz ilusorio
+
+### Imagen fantasmal
 
 **Disfraz ilusorio** (2 Acciones, Ilusión, Concentración): Te rodeas de ilusiones para cambiar tu apariencia, tomando el aspecto que tú desees. La ilusión se moverá contigo y mientras permanezca activa puedes usar tu tiro de magia ilusoria para defenderte de ataques. Esta habilidad cuenta como una ilusión para calcular el máximo y se disipa de la misma manera.
 

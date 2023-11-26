@@ -9,29 +9,95 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros relacionados con armas a distancia. Puedes obtener este rango de manera gratuita si tienes 5 o más SAB y 4 niveles de talento en percepción.
+### Ataque con arma
 
-**Combate furtivo:** Suma la destreza al daño si el ataque cuenta con ventaja o el enemigo es incapaz de defenderse.
+*A distancia, Físico, Ataque*
 
-**Apuntar ataque** (1 AP): Inflige una herida permanente leve al impactar con el siguiente ataque si el objetivo lleva armadura ligera o inferior. Puede emplearse 1 AP adicional para aumentar el nivel de armadura a la que esta habilidad puede afectar.
+**Coste**: 2 acciones
 
-**Ataque con arma** (2 acciones, A distancia, Físico): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
+**Alcance**: Depende del arma
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantáneo
+
+Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de DES. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de armas a distancia.
+
+### Apuntar ataque
+
+*A distancia, Mejora*
+
+**Coste:** 1 acción
+
+Te preparas antes de disparar para mejorar notablemente tu precisión. Al emplear una acción para apuntar sumarás tu nivel de talento en Percepción al siguiente tiro de ataque que realices con un arma a distancia. No podrás emplear esta habilidad si estás *cegado* o tienes *heridas permanentes* en la cabeza. 
+
+### Disparo certero
+
+*A distancia, Mejora*
+
+**Coste:** 1 vigor
+
+Apuntas tu siguiente disparo hacia una parte específica del cuerpo de tu objetivo para herirle aún más. Tu siguiente ataque a distancia aumenta su daño base por 1d6 y provocará al impactar una *herida permanente leve* en la parte del cuerpo que escojas. Si el ataque ya es capaz de provocar una *herida permanente* esta aumentará su nivel por un paso y afectará a la parte del cuerpo escogida. 
 
 ## Rango II
 
-Tus ataques con armas a distancia cuestan 1 AP. Puedes obtener este rango de manera gratuita si tienes 6 o más SAB y 5 niveles de talento en percepción.
+### Disparo triple
 
-**Finta** (1 AP): El objetivo tendrá que defenderse de tu ataque empleando su sabiduría, siendo incapaz de defenderse contra tu próximo ataque si fracasa en su tiro.
+*A distancia, Mejora*
 
-**Desarme** (1 AP): El objetivo tendrá que defenderse de tu ataque empleando su parada, quedando desarmado de un arma ligera que empuñe en caso de fracasar. Si el objetivo lleva un arma de categoría mas pesada tendrá que tener una herida permanente en su brazo para que funcione la habilidad.
+**Coste:** 1 vigor
 
-**Truco de flecha** (1 AP): Dirige un ataque hacia un objeto pequeño que lleve su objetivo, provocando que este caiga al suelo o se rompa si el ataque impacta.
+Disparas tres proyectiles en un abrir y cerrar de ojos para acabar con múltiples enemigos. Tu siguiente ataque a distancia afectará a tres enemigos diferentes a una distancia igual a su alcance. Estos ataques pueden ser mejorados con otras técnicas de combate si lo deseas. No puedes emplear esta técnica si tu arma requiere recarga salvo que tenga la capacidad de disparar múltiples proyectiles.
+
+### Recarga rápida
+
+*A distancia, Mejora*
+
+**Coste:** 1 vigor
+
+Tu soltura con tu arma te permite recargarla a velocidades sobrehumanas. AL emplear esta habilidad recargas tu arma como acción bonus, pudiendo así volver a usarla inmediatamente. Solo puedes emplear esta habilidad en armas con la propiedad *recarga*.
+
+### Disparo engañoso
+
+*A distancia, Mejora, Visual*
+
+**Coste:** 1 vigor
+
+Fallas intencionalmente un disparo para que tu enemigo abandone sus defensas y acabe en una posición más vulnerable. Al fallar un ataque a distancia contra un enemigo puedes forzarle a realizar un tiro de Percepción o Averiguar Intenciones contra tu modificador de arma. Si falla este tiro el disparo le fintará, provocando que reciba Desventaja en su siguiente tiro defensivo contra ti. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
+
+### Desarme ágil
+
+*A distancia, Maniobra*
+
+**Coste:** 1 vigor
+
+Disparas con gran velocidad y precisión para desarmar a un enemigo antes que pueda reaccionar. Haz un ataque a distancia como acción bonus que al impactar desarmará a tu objetivo de un arma u objeto pequeño que lleve en una mano o hará que un objeto del mismo tamaño que lleve encima caiga al suelo. Si el objeto que impactaste es particularmente frágil se destruirá de inmediato, como ocurrirá con bombas o pociones..
 
 ## Rango III 
 
-**Ojo de francotirador:** El alcance base de las armas a distancia incrementará por un paso cuando las uses. De esta forma puede alcanzarse a objetivos a distancia extrema tomando una desventaja. Empleando esta habilidad podrá ignorarse el penalizador de la ballesta al atacar a objetivos que se encuentren a distancia extrema.
+### Ojo del francotirador
 
-**Disparo preciso:** Los ataques dirigidos a objetivos a distancia media ignorarán cubierta y ocultamiento. 
+*A distancia, Mejora*
+
+**Coste:** 2 vigor
+
+Disparas con la precisión de un francotirador para eliminar a enemigos cada vez más distantes. Tu siguiente ataque a distancia aumentará su alcance por un paso, su daño por 2d6 y provocará una *herida permanente leve* a tu objetivo en la parte del cuerpo que escojas. Además, si logras impactar exitosamente podrás esconderte como acción bonus si te encuentras en un lugar que tenga *cubierta* u *ocultamiento*. Este ataque puede mejorarse con otras técnicas si lo deseas siempre y cuando sea posible.
+
+### Disparo impredecible
+
+*A distancia, Mejora*
+
+**Coste:** 2 vigor
+
+Disparas de una manera impredecible y aprovechas el rebote de tu ataque para impactar a enemigos que hagan todo lo posible para evitar tu ataque. Tu siguiente ataque a distancia no puede ser detenido por muros u otras habilidades que permitan evitar ataques como Desplazamiento o Evasión, infligiendo así daño normal. 
+
+Las únicas habilidades que podrán detenerlo son aquellas que otorguen cubierta completa a un objetivo o le den Inmunidad a ataques de la misma categoría que el tuyo. Cabe recalcar que los *contadores de escudo* seguirán funcionando de manera normal si los otorga una habilidad que dé protección completa a un objetivo.
+
+### Combinar técnicas
+
+**Coste:** 2 vigor
+
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y no puedes volver a emplear esta habilidad más de una vez por ataque.
 
 ## Rango IV
 
