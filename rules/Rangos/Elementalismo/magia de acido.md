@@ -52,7 +52,7 @@ Si logras impactar tu objetivo se recubrirá de ácido corrosivo, forzándole a 
 
 Escupes un chorro de ácido corrosivo contra todos los enemigos cercano. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Ácido al impactar. Todos los objetos metálicos o hechos de madera que sean impactados por este ataque sufrirán el efecto de estado *roto* además que eliminarás todos los efectos Duraderos de Naturaleza o Metal en el área afectada con Rango igual al tuyo.
 
-**Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cono mediano y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
+**Empoderar** (1 chi): Aumenta el tamaño de este ataque por un pasy su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
 ## Rango II
 
@@ -74,7 +74,7 @@ Formas una barrera de lodo corrosivo que destruirá todo lo que intente cruzarla
 
 El muro proporcionará *cubierta completa* a todas las criaturas al otro lado y todo objeto que pase por él sufrirá el efecto de estado *roto*. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de Esquiva contra tu magia de Ácido o sufrirá 1d6 + CAR daño Ácido y una *quemadura leve* (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de Lodo y luego afectarán hacia sus objetivos escogidos.
 
-Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si empleas este hechizo para detener un ataque cuerpo a cuerpo tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos.
 
@@ -90,7 +90,7 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 Conviertes la tierra debajo de un enemigo en un lodo corrosivo para que empiece a hundirse. Un objetivo a distancia media debe tener éxito en un tiro de Esquiva frente a tu Magia de Ácido o empieza a hundirse en la tierra, sufriendo 1d6  + Rango daño Ácido y quedando *enredado*. Este hechizo solo puede usarse en lugares de tierra suave.
 
-Un objetivo *enredado* por este hechizo podrá hacer un tiro de Heroísmo o Atletismo contra tu magia de Ácido al principio de su turno para intentar liberarse. Si fracasa el tiro se hundirá aún más en el ácido, quedando así *agarrado* por él y sufriendo de nuevo 1d6 + Rango daño Ácido (la mitad si tiene éxito). Si el afectado ya está *agarrado* entonces empezará a *ahogarse*. 
+Un objetivo *enredado* por este hechizo podrá hacer un tiro de Heroísmo o Atletismo contra tu magia de Ácido al principio de su turno para intentar liberarse. Si fracasa el tiro se hundirá aún más en el ácido, quedando así *agarrado* por él y sufriendo de nuevo 1d6 + Rango daño Ácido. En caso de éxito sufre la mitad de daño y se liberará d. Si el afectado ya está *agarrado* entonces empezará a *ahogarse*. 
 
 Aunque el afectado logre escapar el foso permanecerá en el campo de batalla hasta que pierdas la concentración, provocando sus efectos a otras criaturas desafortunadas que caigan en él. Si pierdes la concentración y hay un objetivo atrapado en el foso será expulsado inmediatamente de él.
 
@@ -134,9 +134,9 @@ Si impactas a una criatura voladora esta caerá inmediatamente al suelo, quedand
 
 Formas varios tentáculos de lodo ácido a tu alrededor para retener a tus enemigos. Haz un ataque contra todas las criaturas a distancia corta de ti que provoca 1d8 + CAR daño Ácido al impactar. Además, los afectados deberán tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Ácido o quedarán *agarrados* por los tentáculos de ácido.
 
-Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. Todas las criaturas que empiecen su turno a distancia cercana de ti o entren por primera vez en un espacio a esa distancia deberán defenderse de nuevo contra este hechizo. Aquellas que estén ya agarradas sufrirán 1d8 + CAR daño Ácido y uno de los objetos que lleven encima sufrirá el efecto de estado *roto*.
+Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. Todas las criaturas que empiecen su turno a distancia cercana de ti o entren por primera vez en un espacio a esa distancia deberán defenderse de nuevo contra este hechizo. Aquellas que estén ya agarradas sufrirán 1d8 + CAR daño Ácido y uno de los objetos que lleven encima sufrirá el efecto de estado *roto*. 
 
-**Empoderar** (1 chi): Extiende el tamaño de los tentáculos a un radio medio.
+**Empoderar** (1 chi): Un ataque hecho contra ti impactará a una de las criaturas agarradas. Para empoderar de esta manera debes encontrarte en *posición de*
 
 ### Llamar al pantano
 
