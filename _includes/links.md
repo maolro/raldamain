@@ -1,4 +1,3 @@
-[armaduras]: {% link rules/Rangos/Combate/armaduras.md %}
 [armas]: {% link rules/Rangos/Armas/index.md %}
 [Ascendencia de tierra]: {% link rules/Rangos/Ascendencias/ascendencia de tierra.md %}
 [ataques naturales]: {% link rules/Rangos/Armas/ataques naturales.md %}#armas
