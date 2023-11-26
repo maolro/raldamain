@@ -104,7 +104,7 @@ Haz un Ataque natural que infligirá 2d6 daño adicional y *sangrado* al impacta
 
 **Precio:** 2 vigor
 
-Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un Ataque natural puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo.
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un Ataque natural puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un gasto de acciones.
 
 ## Rango IV
 

@@ -1,3 +1,7 @@
+---
+title: Magia de Ácido
+---
+
 # Rangos
 
 ## Rango I
