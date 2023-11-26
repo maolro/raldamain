@@ -5,7 +5,7 @@ category: Combate
 
 La ira es un sentimiento que fluye a través de todas las personas, sin embargo tú eres capaz de canalizarla para superar los límites de tu cuerpo e incrementar tus habilidades físicas. Casi entrando en un efecto similar a un trance eres capaz de desconectar parcialmente tu consciencia para dejar tu instinto de supervivencia mas básico de tu interior y de este modo acabar con cualquier cosa o adversario que ose cruzarse en tu camino. A medida que obtienes mas experiencia y vas dominando esta habilidad serás capaz de realizar proezas físicas por encima de cualquier límite humano. 
 
-### Reglas fundamentales
+# Reglas fundamentales
 
 Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
