@@ -5,44 +5,214 @@ category: Combate
 
 Tienes el don de inspirar a todos aquellos que tienes cerca con un sentimiento de lucha o de intimidar a aquellos enemigos que osen oponerse a ti. A medida que pules tu habilidad con la experiencia de las batallas te vas volviendo mas hábil para comandar a las tropas y hacer que estas luchen de una manera mas eficaz así como evitar que estas sucumban fácilmente al pánico, siendo incluso capaz de aumentar la habilidad de tus seres mas cercanos con palabras de aliento para que tengan incluso mas fuerza.
 
+## Reglas fundamentales
+
+Presencia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de vigor:** Tu rango en Presencia mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+
+# Rangos
+
 ## Rango I
 
-Tienes una reserva de liderazgo (RL) igual a tu rango + CAR
+### Voz del comandante
 
-**Voz del comandante**: A través de inspiradoras palabras u ordenes imperiosas eres capaz de fortalecer la moral y fuerza de tus aliados. Como acción bonus usable una cantidad de veces al día igual a tu rango + 2 otorgas un dado de ventaja en su siguiente tiro a un aliado que pueda oírte. (1 RL) Recupera un uso de esta habilidad
+*Moral, Mejora, Auditiva, Innata*
 
-**Voluntad poderosa:** Tienes resistencia igual a tu rango + 1 contra el miedo y efectos mentales. (1 RL) Un aliado repite un tiro contra un efecto mental o de miedo usando tu bonificador en Voluntad.
+**Alcance:** Medio
 
-**Inspirar temor** (2 AP, 1 RL): Haz un tiro de habilidad de intimidación contra la voluntad de todos tus enemigos a distancia media. Todos aquellos que fracasen quedarán *espantados* hasta que pierdas PV. (1 RL) Los que fracasen quedarán *asustados*
+A través de palabras inspiradores u órdenes imperiosas refuerzas la motivación de un aliado para un momento crítico. Esta habilidad puede emplearse una cantidad de veces por combate igual a tu Rango + 2 y al usarla un aliado en tu alcance recibirá Ventaja en su siguiente tiro de ataque, defensa, salvación o habilidad. Recuperarás todos los usos empleados de esta habilidad al realizar un descanso corto.
+
+**Empoderar** (1 vigor): Recuperas un uso de esta habilidad o un aliado que afectes podrá emplear tu modificador de Presencia para defenderse de un efecto Mental o de Miedo.
+
+### Voluntad poderosa
+
+*Innata, Pasiva*
+
+Como líder jamás mostrarás debilidad ante tus compañeros aunque te enfrentes a situaciones imposibles. Recibes Resistencia a efectos de Miedo y Mentales además que tu nivel de miedo no puede ser aumentado con efectos críticos. Puedes emplear tu bonificador de Presencia en todos tus tiros para defenderte de efectos de dichas categorías.
+
+### Inspirar temor
+
+*Moral, Miedo, Innata, Visual/Auditiva, Duradera*
+
+**Coste:** 1 acción y 1 vigor
+
+**Tamaño:** Radio medio
+
+**Efecto crítico:** Los afectados aumentarán su nivel de *miedo* por un paso adicional.
+
+**Duración:** Concentración
+
+Tu fama o infamia hace que tus enemigos pierdan la voluntad de luchar con solo verte. Todos los enemigos que puedan verte u oírte a una distancia media deberán tener éxito en un tiro de Voluntad o Intimidar frente a tu bonificador de Presencia o aumentarán su nivel de *miedo* por un paso. Este efecto durará hasta que pierdas la concentración o escojas acabarlo.
+
+Mientras continúes inspirando terror todo enemigo a distancia media de ti que pueda verte u oírte deberá repetir el tiro y si fracasa aumentará su nivel de miedo por un paso adicional. En el caso que tenga éxito podrá reducir su nivel de miedo por un paso, liberándose de este efecto durante el resto del combate si fuera reducido a cero. 
+
+**Empoderar** (1 vigor): En esta ronda cada enemigo que fracase su tiro contra este efecto aumentará su nivel de miedo por un paso adicional.
 
 ## Rango II  
 
-**Revigorar** (2 AP, 1 RL): Un aliado que pueda oírte recupera Vitalidad igual a tu rango + 2 y trata los efectos de una herida permanente como si fuera de un nivel inferior durante el resto del combate. (1 RL) Afecta a un aliado adicional.
+### Línea defensiva
 
-**Línea defensiva** (1 AP, 1 RL): Tú y todos los aliados que puedan oírte a distancia media entran en *posición defensiva* sin la necesidad de gastar acciones. (1 RL) Un aliado puede defenderse de un ataque sorpresa
+*Moral, Innata, Duradera, Visual/Auditiva*
 
-**Furia de batalla** (1 AP, 1 RL): Tú y todos tus aliados que puedan oírte recibirán una acción adicional y +1d6 daño en todos sus ataques a costa que recibirán desventaja en todos sus tiros defensivos. (1 RL) Un aliado repite un tiro de daño y se queda con el mejor resultado.
+**Coste:** 1 acción y 1 vigor
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+Organizas a tus aliados para puedan defenderse adecuadamente de ataques enemigos. Mientras esta habilidad permanezca activa tú todos los aliados que se encuentren a distancia media podrán entrar en *posición defensiva* como acción bonus. Línea defensiva durará hasta que pierdas la concentración o escojas acabar este efecto.
+
+Los afectados por esta habilidad podrán también defenderse de ataques sorpresa si al menos uno de ellos ha podido percibir el ataque. Si uno de ellos llegara a salir de *posición defensiva* no podrá volver a entrar en ella como acción bonus hasta la ronda siguiente.
+
+**Empoderar** (1 vigor): Un aliado afectado por esta habilidad podrá repetir un tiro defensivo y quedarse con el mejor resultado.
+
+### Furia de batalla
+
+*Moral, Innata, Duradera, Visual/Auditiva*
+
+**Coste:** 1 acción y 1 vigor
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+Incitas a tus aliados a luchar con salvaje abandono para que maten a todo enemigo en vuestro camino sin importar las consecuencias. Mientras esta habilidad permanezca activa tú todos los aliados que se encuentren a distancia media recibirán Ventaja en todos sus tiros de ataque a costa de recibir Desventaja en sus tiros defensivos. Furia de batalla durará hasta que pierdas la concentración o escojas acabar este efecto.
+
+Aquellos afectados por esta habilidad perderán sus beneficios y penalizadores si entran en *posición defensiva*, pero podrán recuperarlos si salen de ella y este efecto permanece activo. Los beneficios de Furia de batalla no se acumulan con aquellos de Ataque salvaje.
+
+**Empoderar** (1 vigor): Un aliado afectado por esta habilidad podrá repetir un tiro de ataque o daño y quedarse con el mejor resultado.
+
+### Revigorar
+
+*Moral, Innata, Mejora, Visual/Auditiva*
+
+**Coste:** 1 acción y 1 vigor
+
+**Alcance:** Medio
+
+**Duración:** Instantáneo
+
+Eres capaz de inspirar a los heridos a seguir combatiendo y superar sus límites. Un aliado a distancia media que pueda verte o escucharte recuperará Vitalidad igual a tu Rango + 2 además que podrá hacer un tiro inmediato con Ventaja para intentar liberarse de un efecto negativo persistente que requiera tiro de salvación. Algunos ejemplos son efectos de Agarre, Mentales o Miedo. Puedes afectarte a ti mismo con esta habilidad en lugar un aliado.
+
+**Empoderar** (1 vigor): Afecta a un aliado adicional con esta habilidad.
 
 ## Rango III	
 
-**Inspirar heroísmo** (2 AP, 2 RL): Una cantidad de aliados igual a tu rango que puedan oírte reciben PV temporales iguales a tu rango + 2 y ventaja en todos sus tiros de ataque, defensa y contra el miedo. Los bonificadores de esta habilidad se perderán cuando se acaben los PV temporales.
+### Inspirar heroísmo
 
-**Movimiento estratégico** (1 AP, 2 RL): Todos los aliados que puedan oírte aumentan su movimiento base por 1 esta ronda y podrán *desenganchar* sin la necesidad de gastar acciones.
+*Moral, Innata, Mejora, Duradera, Visual, Auditiva*
 
-**Indómito**: Una cantidad de veces igual a tu rango + 2 puedes repetir un tiro y quedarte con el mejor resultado. (1 RL) Recupera un uso o un aliado repite un tiro y se queda con el mejor resultado.
+**Coste:** 2 acciones y 2 vigor
+
+**Tamaño:** Radio medio
+
+**Duración:** Seis rondas
+
+Eres capaz de sacar el héroe interior de aquellos que te acompañan e inspirarles a realizar grandes hazañas. Al activar esta habilidad todos los aliados a distancia media que puedan oírte y escucharte quedarán inspirados, otorgándoles así PV temporales iguales a tu Rango + 2 además de Ventaja en todos sus tiros de ataque, defensa y habilidad. Los bonificadores de Inspirar heroísmo no se acumulan con aquellos que otorgues con Voz del comandante y se perderán cuando al afectado se le acaben sus PV temporales o pasen seis rondas.
+
+En lugar de inspirar puedes emplear esta habilidad  para empujarte a realizar grandes hazañas, afectándote únicamente a ti mismo y recibiendo los mismos bonificadores. Al igual que tus aliados perderás los bonificadores de esta habilidad cuando se acaben tus PV temporales.
+
+**Empoderar** (1 vigor): Los afectados por esta habilidad recibirán el doble de PV temporales.
+
+### Movimiento estratégico
+
+*Moral, Duradero, Mejora, Auditivo/Visual*
+
+**Coste:** 2 vigor
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+Diriges los movimientos de tus aliados para que tomen acciones de manera estratégica y aprovechen cada apretura que les dé el campo de batalla. Mientras esta habilidad permanezca activa todos tus aliados que puedan verte o escucharte a distancia media recibirán una acción adicional en su turno y podrán *desenganchar* como acción bonus una vez por ronda. 
+
+Movimiento estratégico durará hasta que pierdas la concentración o escojas acabar este efecto. También cabe recalcar que esta habilidad no afectará a aliados con más de cuatro acciones.
+
+**Empoderar** (1 vigor): Cambias tu posición como acción bonus con un aliado que se encuentre a distancia corta. Ninguno de los implicados puede realizar esta maniobra en contra de su voluntad.
+
+### Indómito
+
+*Moral, Reacción*
+
+**Coste:** 2 vigor
+
+Tu voluntad poderosa te da fuerza para superar situaciones imposibles. Tras fracasar un tiro defensivo puedes emplear esta habilidad para transformarlo en un éxito, evitando así los efectos que te daría un fracaso. Esta habilidad no puede usarse para evitar efectos míticos o protegerte de ataques.
+
+**Empoderar** (1 vigor): Un aliado a distancia media tiene éxito automático en un tiro defensivo que haya fracasado. Dicho aliado debe oírte y escucharte además que no podrás hacer que evite ataques o efectos míticos.
 
 ## Rango IV
 
-**Coordinación defensora** (1 AP, 2 RL): Durante esta ronda todos tus aliados reciben la habilidad *proteger aliado*, permitiéndoles usar su tiro defensivo para proteger a un aliado adyacente de un ataque enemigo (el aliado puede estar a distancia cercana si usan parada mágica). 
+### Asalto coordinado
 
-**Asalto combinado** (1 AP, 2 RL): Durante esta ronda todos los aliados que participen en un ataque combinado contigo añadirán 1d6 al tiro en lugar de +2.
+*Moral, Innata, Reacción, Visual/Auditiva*
 
-**Incitar el pánico** (2 AP, 2 RL): Haz un tiro de intimidar contra todos los enemigos que puedan oírte, los cuales se defenderán con Voluntad. Aquellos que fracasen quedarán *espantados* y perderán todos los efectos de habilidades de presencia además de la concentración. Los afectados por esta habilidad no podrán hacer ataques combinados ni recibir beneficios por flanqueo durante una ronda.
+**Coste:** 2 vigor
+
+**Alcance:** Medio
+
+**Duración:** Instantáneo
+
+Diriges a dos de tus aliados para que compenetren sus acciones a la perfección. En respuesta a que un aliado realice una acción das una señal visual o auditiva a otro personaje a distancia media de ti para que coordine sus acciones con él. Esto permitirá al segundo personaje a emplear cualquiera de sus habilidades como acción bonus justo después de su aliado. Queda claro que deberá seguir pagando los costes de vigor o chi que tenga la habilidad utilizada en caso que los tenga.
+
+### Defensa táctica
+
+*Moral, Innata, Duradera, Mejora, Auditivo/Visual*
+
+**Coste:** 1 acción y 2 vigor
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+Diriges a tus aliados con tal estrategia que son capaces de combatir como si fueran una única persona, protegiéndose entre sí para que ninguno caiga. Mientras esta habilidad permanezca activa todos tus aliados a distancia media que pueda verte o escucharte podrán defenderse entre sí de ataques enemigos si están cerca unos de otros. 
+
+Esta habilidad te otorgará también una cantidad de *contadores de escudo* iguales a tu Rango que puedes emplear para detener ataques que afecten a aliados que se encuentren a distancia media. Defensa táctica permanecerá activa hasta que pierdas la concentración, se acaben los *contadores de escudo* o escojas acabar este efecto.
+
+**Empoderar** (1 vigor): Restauras la mitad de los *contadores de escudo* totales otorgados por esta habilidad redondeando hacia abajo.
+
+### Incitar el pánico
+
+*Moral, Miedo, Innata, Visual/Auditiva*
+
+**Coste:** 2 acciones y 2 vigor
+
+**Tamaño:** Radio medio
+
+**Efecto crítico:** Los afectados aumentarán su nivel de *miedo* por un paso adicional.
+
+**Duración:** Instantánea
+
+Tu gran presencia es capaz de incitar el pánico entre tus enemigos, haciendo que pierdan las ganas de combatir y la capacidad de coordinarse. Todos tus enemigos a distancia media que puedan verte o escucharte deberán tener éxito en un tiro de Voluntad o Concentración contra tu tiro de Presencia o aumentarán su nivel de *miedo* por dos pasos. Todos los que fallen el tiro perderán además los beneficios de toda habilidad de Moral y no podrán hacer ataques combinados durante una ronda.
+
+**Empoderar** (1 vigor): Este efecto durará una ronda adicional.
 
 ## Rango V
 
-**Victoria motivadora**: Cada vez que derrotes a un enemigo cuyo nivel supere el tuyo – 4 o impactes con un golpe crítico recuperas un uso de tu reserva de liderazgo. 
+### Inspirar leyenda
 
-**Inspirar leyenda** (1 RL): Una criatura afectada por *inspirar heroísmo* recibe +2 en dos de sus estadísticas, un uso de la habilidad *indómito* e ignorará los penalizadores de heridas medias o inferiores. Tampoco perderá los beneficios de *inspirar heroísmo* aunque pierda sus PV temporales, desvaneciéndose al cabo de rango + 1 rondas o si pierde la moral (3 RL) Tú recibes los beneficios de *inspirar leyenda* e *inspirar heroísmo*. 
+*Moral, Duradera, Innata, Visual, Auditiva*
 
-**Líder nato**: Puedes afectar a hasta tres aliados con cada uso de *voz del comandante*, quienes podrán usar el dado de ventaja en cualquier tiro a lo largo de la ronda. (1 RL) Los aliados afectados con *voz del comandante* se recuperan de un efecto de miedo 
+**Coste:** 2 acciones y 3 vigor
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+A través de inspiradores palabras o una épica gesta inspiras a tus aliados a combatir como héroes de leyenda. Todos tus aliados que puedan verte y escucharte recibirán 20 Vitalidad temporal y la capacidad de emplear la habilidad Indómito. Mientras esta habilidad permanezca activa obtendrán también Ventaja en todos sus tiros de ataque, defensa y talento además que tratarán los penalizadores de todas las heridas permanentes que reciban como si fueran de un paso inferior. 
+
+Los beneficios de esta habilidad no se acumulan con Inspirar heroísmo y se acabarán cuando pierdas la concentración o escojas terminarlos. A diferencia de Inspirar heroísmo tú también obtendrás los beneficios de esta habilidad mientras permanezca activa. 
+
+**Empoderar** (1 vigor): Un aliado recupera la mitad de su Vitalidad temporal si aún le queda.
+
+### Líder nato
+
+*Moral, Pasiva, Innata*
+
+Has alcanzado un gran renombre como líder, ganándote así el respeto con facilidad de todos los que te escuchen y dirigiéndolos a realizar estrategias cada vez más complejas. Cada vez que utilices la habilidad Voz del comandante otorgarás un dado de Ventaja a hasta tres aliados diferentes quienes podrán utilizarlo en cualquier momento de la ronda. Una aliado no podrá acumular más de un dado de Ventaja de esta manera.
+
+### Nervios de acero
+
+*Moral, Pasiva, Innata*
+
+Has pasado por tantas batallas que eres capaz de mantener la cabeza fría hasta en las situaciones más peligrosas. No perderás la concentración si recibes *heridas permanentes* o efectos de estado negativos si aún eres capaz de mantenerte consciente. Además, si llegaras a perder la concentración en una habilidad de Moral sus efectos permanecerán activos hasta el final de la ronNo obstante, aún perderás la concentración si recibes *heridas permanentes graves* o quedas completamente incapacitado. 

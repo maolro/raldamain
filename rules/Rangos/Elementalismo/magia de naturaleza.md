@@ -9,33 +9,165 @@ Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aqu
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia de naturaleza y aumentas tu reserva de chi por rango + 2.
+### Zarcillo enredador
 
-**Zarcillo enredador** (2 AP): Ataca a un enemigo a distancia media que *enreda* al impactar (máximo rango + 1 objetivos a la vez). Las maniobras contra él cuestan 1 AP. (+1 chi) Ataca a un objetivo adicional. 
+*Naturaleza, Ataque, Físico, Agarre, Duradero*
 
-**Espina de madera** (2 AP): Ataca a un enemigo a distancia media e inflige 1d6 + SAB daño físico. (1 chi) Ataca a un objetivo adicional. 
+**Coste:** 2 acciones
 
-**Enmarañar** (2 AP y 1 chi): Ataca a 1d4 + 2 objetivos a distancia lejana que estén cerca entre sí y al impactar los *enredas*. (1 chi) Durante la siguiente ronda repite el efecto contra cada criatura que se encuentre o entre en el área afectada además que moverse por ella cuesta +1 AP
+**Alcance:** Medio
 
-**Parada elemental** (reacción): Eres capaz de emplear tu elemento para protegerte de ataques, lo cual se conoce como una parada elemental. Una parada elemental sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo.
+**Efecto Crítico:** El objetivo queda *enredado* al impactar
+
+**Duración:** Concentración
+
+Formas un látigo hecho de materia vegetal para retener a un enemigo que esté a distancia media de ti. Haz un ataque de magia de Naturaleza que *enredará* a tu objetivo al impactar. Este podrá intentar liberarse en su turno si tiene éxito en un tiro de Heroísmo o Destrozar frente a tu tiro de magia de Naturaleza. Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consiga liberarse de este efecto.
+
+Si has enredado a un objetivo con este hechizo puedes intentar retenerlo aún más, forzándolo a tener éxito en una tirada de Destrozar o Heroísmo contra tu magia de Madera o quedara *agarrado*. Cada intento de agarre te cuesta tantas acciones como las que emplearía al lanzar este hechizo y tu enemigo podrá intentar escaparse de la misma manera.
+
+**Potenciar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
+
+### Espina de Madera
+
+*Madera, Ataque, a Distancia, Físico*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto Crítico:** El objetivo sufre una *herida permanente leve* y *sangrado*. Si lleva armadura ligera en su lugar sufrirá una *herida permanente media*.
+
+**Duración:** Instantánea
+
+Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enemigo que se encuentre a distancia media de ti. Haz un ataque de magia de Naturaleza 	que inflige 1d6 + SAB daño Perforante al impactar. Este ataque es especialmente efectivo contra objetivos con armaduras ligeras, infligiéndoles *sangrado* al impactar. Si tienes técnicas de armas puedes aplicarlas a tus ataques hechos con este hechizo siempre que esa posible.
+
+**Empoderar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
+
+### Enmarañar
+
+*Madera, Ataque, Área, Físico, Agarre, Duradero*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio corto
+
+**Efecto Crítico:** Los objetivos afectados automáticamente fallan sus tiros para evitar ser *agarrados*
+
+**Duración:** Concentración
+
+Una masa de enredaderas emerge del suelo en un punto a distancia media y llena un radio pequeño centrado en él. Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que las *enreda* al impactar. Estas deberán tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarradas*. Este hechizo durará hasta que pierdas la concentración o las enredaderas son destruidas por un ataque de área de magnitud similar.
+
+**Empoderar** (1 chi): Este hechizo aumenta su tamaño a un radio medio.
 
 ## Rango II
 
-**Muro de zarzas** (2 AP y 1 chi): Crea un muro de zarzas con rango x 3 PV, 2 DEF y vulnerabilidad al daño fuego y cortante que otorgará cubierta completa a todas las criaturas tras él. Cada criatura que lo intente cruzar sufrirá *sangrado* y puedes hacerle un ataque de oportunidad de *zarcillo enredador* o *espina de madera*. Si estás en *crecimiento acelerado* puedes formar un muro como reacción 1/turno para detener un ataque
+### Muro de espinas
 
-**Crecimiento acelerado** (3 AP y 1 chi): Llenas todo el campo de batalla de plantas que aumentan el coste para moverse por 1 AP y te otorgan ventaja en todos tus ataques con magia de naturaleza además de alcance lejano.
+*Naturaleza, Defensivo, Físico, Duradero*
 
-**Planta devoradora de chi** (2 AP y 1 chi): Haz un ataque de *zarcillo enredador* que al impactar el objetivo pierde 1 chi y se desconcentra. Cada turno que permanezca *enredado* pierde 1 chi y tú ganas 1 chi. 
+**Coste:** 1 acción y 1 chi
 
-## Rango III	
+**Alcance:** Medio
 
-Reduce el coste de *zarcillo enredador, espina de madera* y *enmarañar* por 1 AP. *Espina de madera* aumenta el daño base a 1d8
+**Tamaño:** Esfera pequeña o Línea mediana
 
-**Animar plantas** (2 AP y 2 chi): Un espacio de radio medio se llena de plantas agresivas que atacan a cada objetivo (1d4 + 2 de media) e infligen 1d8 + SAB daño y *agarran* al impactar. El efecto se mantiene mientras te concentres y las plantas vuelven a atacar a cada criatura que empiece su turno en el área o entre en ella, infligiendo 1d8 + SAB daño y *agarrando*.
+**Duración:** Instantánea
 
-**Espina parasítica** (1 AP y 2 chi): Haz un ataque de *espina de madera* con el doble de dados de daño que al impactar se clava en el objetivo. Inflige daño cada ronda igual a 2 + cantidad de rondas que esté clavada y para arrancarla hace falta tirar FUE contra tu tiro de magia de naturaleza. El daño de una espina parasítica ignorará las resistencias y la defensa, y si esta no es arrancada en 3 rondas se enterrará tan profundo que no podrá ser arrancada.
+Creas un muro de zarzas espinosas para protegerte de ataques enemigos. El muro surgirá desde cualquier punto a distancia media y tomará la forma de una esfera pequeña o una línea mediana. Como muro tiene puntos de vida iguales a tu Rango x 3 y DEF igual a tu rango. Tiene también Inmunidad al daño Contundente y Perforante a costa que tiene Vulnerabilidad al daño Cortante y Fuego (los ataques de área particularmente grandes quedan exentos de esta inmunidad). El muro permanecerá en el campo de batalla hasta que pierda todos sus PV.
 
-**Invocar elementales de planta** (3 AP y 2 chi): Invoca a un elemental de naturaleza que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez (se acumula con el máximo por *espíritu guardián*)
+El muro proporcionará *cubierta completa* a todas las criaturas al otro lado de él, protegiéndolas de ataques a distancia. Cualquier criatura hostil que intente cruzarlo debe tener éxito en un tiro de Heroísmo, Destrozar o Esquiva contra tu magia de Naturaleza o sufrirá *sangrado* y quedará *enredada* (esto funciona de la misma manera que el Zarcillo enredador). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de agua y luego afectarán hacia sus objetivos escogidos.
+
+Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en el camino. Si intentas bloquear un ataque cuerpo a cuerpo tu enemigo debe tener éxito en un tiro para cruzar el muro o su ataque fallará.  No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
+
+**Potenciar (1 chi):** El muro recupera todos sus puntos de golpe perdidos. Esta habilidad solo se puede utilizar si el campo de batalla tiene una cantidad adecuada de plantas.
+
+### Crecimiento acelerado
+
+*Naturaleza, Ambiental, Duradero*
+
+**Coste:** 3 acciones y 1 chi
+
+**Tamaño:** Radio grande
+
+**Duración:** Una hora
+
+Infundes las plantas en el campo de batalla con energía vital para acelerar su crecimiento. Todas las plantas en un radio grande se volverán más grandes y densas, transformando el campo de batalla en *terreno difícil*. Este efecto durará una hora y mientras permanezca activo todos los hechizos de magia de Naturaleza lanzados en él área reciben Ventaja y aumentan su alcance por un paso. Este efecto solo puede ser destruido por hechizos de Área o Ambientales de magnitud similar o superior.
+
+Empoderar (1 chi): El siguiente hechizo de Naturaleza que lances reduce su coste de acciones en 1. Solo puedes empoderar de esta manera una vez por hechizo.
+
+### Drenar magia
+
+*Madera, Mejora*
+
+**Coste:** 1 chi
+
+**Efecto Crítico:** Tu objetivo queda *enfermado* durante una ronda si tiene reserva de chi.
+
+**Duración:** Instantánea
+
+Infundes un hechizo de Naturaleza con la capacidad de absorber efectos mágicos antinaturales. Al *enredar* o *agarrar* a un objetivo empleando un hechizo de Naturaleza puedes hacer un tiro empleando tu bonificador en esta magia para eliminar un hechizo Arcano Duradero que tenga activo o anular las propiedades de un objeto mágico durante el resto del combate. La dificultad de este tiro será igual al modificador que tenga el lanzador del hechizo que intentes eliminar o un valor escogido por el máster cuando esto no sea aplicable.
+
+Este hechizo no puede usarse en el mismo objetivo más de una vez por ronda. Además, si tienes éxito en el tiro recuperarás un chi de tu reserva y tu objetivo perderá la concentración de inmediato. Esta habilidad no podrá afectar a artefactos o efectos mágicos de rango superior al tuyo.
+
+**Empoderar** (1 chi): Esta habilidad afectará a todos los hechizos de Naturaleza que lances esta ronda.
+
+## Rango III
+
+Todos tus hechizos de Naturaleza sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).	
+
+### Animar plantas
+
+*Naturaleza, Ataque, Área, Físico, Agarre, Duradero*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio medio
+
+**Efecto Crítico:** Los objetivos afectados fallarán automáticamente sus tiros para evitar ser *agarrados*
+
+**Duración:** Concentración
+
+Infundes a una masa de plantas con una semblanza de vida para que ataquen a tus enemigos. Este hechizo afectará a todas las plantas en un radio medio centrado en cualquier punto dentro del alcance y una vez activado las plantas atacarán a todas las criaturas que puedan tocar. 
+
+Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que inflige 1d8 + SAB daño Cortante y *enreda* al impactar. Además, los objetivos que hayas impactado deben tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarrados*.
+
+Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración o sea eliminado por otro hechizo de una magnitud similar. Las criaturas que empiecen su turno en el área afectada o entren en ella en cualquier momento de la ronda deberán defenderse nuevamente de este hechizo, sufriendo los mismos efectos en caso de fracasar.
+
+**Empoderar** (1 chi): Las plantas aumentan su alcance durante una ronda, transformando el área afectada en un cilindro mediano.
+
+### Espina parasítica
+
+*Naturaleza, Mejora, Toque*
+
+**Coste:** 2 chi
+
+**Efecto Crítico:** El objetivo sufre una *herida permanente media*
+
+**Duración:** Instantánea
+
+Al herir a un enemigo con un hechizo de magia de Naturaleza puedes lanzar este hechizo como una acción bonus para clavarle una espina de madera y hacerla crecer rápidamente, provocándole los efectos de *sangrado*. La espina permanecerá dentro del cuerpo de tu objetivo hasta que sea arrancada con un tiro exitoso de Primeros auxilios contra tu magia de Naturaleza. Este hechizo cuenta como un efecto de Toque para los propósitos de Inmunidades.
+
+Cada vez que un personaje empiece su turno con una espina parasítica en él debe tener éxito en un tiro de CON frente a tu magia de Naturaleza o sufrirá 1d8 daño Perforante que ignora defensa y resistencias junto con una *herida permanente leve* (a mitad de daño si tiene éxito). Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de CON contra la espina.
+
+**Empoderar** (1 chi): Un objetivo adicional impactado por el mismo ataque de Naturaleza también se le clavará una espina, sufriendo los mismos efectos.
+
+### Invocar elemental de madera
+
+*Naturaleza, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Una hora
+
+Llamas a un espíritu guardián hecho de plantas y madera para que te asista en el combate. Este hechizo invocará un Elemental de Madera de nivel 6 que luchará a tu lado hasta que sea destruido. A rangos superiores, puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Madera por encima del III. 
+
+**Empoderar** (1 chi): Un elemental bajo tu control se cura una cantidad de Vitalidad igual a la mitad de su valor máximo.
 
 ## Rango IV
 

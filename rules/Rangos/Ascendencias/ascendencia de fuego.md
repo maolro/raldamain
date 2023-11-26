@@ -7,19 +7,37 @@ Guardas relación con los espíritus más caóticos y destructivos de los fuegos
 
 ## Rango I 
 
-Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por un valor igual a tu rango + 2.
+### Fuego interior
 
-**Adaptación al calor:** Recibes resistencia igual a tu rango + 1 al daño fuego e inmunidad a las quemaduras leves y los efectos de calor extremo.
+*Innata, Pasiva*
 
-**Piroquinesia**: Como acción bonus empleable una vez por turno creas una cantidad de fuego en la palma de tu mano que iluminará todo el espacio a distancia pequeña o manipulas un fuego del mismo tamaño para que se desplace un paso en cualquier dirección. (1 chi) Provoca una quemadura leve a una criatura adyacente al fuego.
+El fuego de tu interior te hace sobrehumanamente resistente al calor y las llamas. Obtienes Resistencia al Fuego además de Inmunidad a *quemaduras leves* y a efectos ocasionados por calor extremo. Adicionalmente, los elementales de fuego no serán naturalmente hostiles hacia ti.
+
+### Piroquinesia
+
+*Innata, Pasiva*
+
+Tienes la voluntad suficiente para que el fuego se doblegue a ti. Eres capaz de lanzar todos los hechizos pertenecientes a magia de Fuego con Rango I empleando vigor en lugar de chi. 
+
+En el caso que no conozcas ningún hechizo de estas categorías aprenderás los hechizos *llamarada, asalto abrasador* y *aliento de fuego* que podrás lanzar pagando 1 vigor o chi adicional. Emplearás como bonificador la suma de tu CAR y tu Rango en Ascendencia de Fuego. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
 
 ## Rango II
 
-Incrementa tu DES por 1.
+Incrementa tu estadística de DES y su limitador por 1.
 
-**Furia del fuego** (1 chi): Durante una ronda tus ataques físicos infligen +1d6 daño fuego y provocan una quemadura leve si reducen PV. 
+### Furia del fuego
 
-**Impulso ígneo:** Aumenta tu velocidad de salto por 1 y las llamas no dificultan tu visión. (1 chi) Recibes una acción adicional esta ronda.
+*Innata, Mejora*
+
+**Coste:** 1 vigor o chi
+
+**Duración:** Una ronda
+
+Refuerzas tus ataques con el poder del fuego para que hagan arder a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo podrás lanzar un hechizo de Fuego como acción bonus contra ese mismo objetivo. 
+
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.
+
+### Impulso ígneo
 
 ## Rango III 
 

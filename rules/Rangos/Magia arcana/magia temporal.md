@@ -5,53 +5,246 @@ category: Magia arcana
 
 El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo es inevitable el estar atados a su inexorable paso sin embargo eso no es así para los practicantes de esta magia. Te has especializado tanto en en funcionamiento del chi que has sido capaz de averiguar como usarlo para hacer pequeñas modificaciones en tu entorno, creando una especie de engaño para la existencia que te rodea y haciendo pequeñas modificaciones en lo escrito por el universo. Según tus estudios van avanzando comienzan a volverse mas firmes comienzas a verte irradiado por la misma energía con la que trabajas, pudiendo obtener algunos de sus beneficios incluso sin mantener la concentración sobre ellos, así como también aumentar el entorno total que puedes alterar pudiendo incluso alterar el mismo flujo del tiempo a tu alrededor al incurrir en un gran uso de chi.
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia Temporal mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia Temporal será igual a la suma de tu estadística de Inteligencia y tu rango en esta habilidad.
+
+# Rangos
+
 ## Rango I
 
-Añade tu rango a todos tus tiros de magia temporal. Tu reserva aumenta por 2+Rango chi.
+### Premonición
 
-**Premonición** (Temporal, Arcano): Como reacción repite un tiro de ataque, defensa o habilidad y te quedas con el resultado que más te convenga, pudiendo usarse como máximo una vez por tiro. Esta habilidad puede usarse 2 + rango veces al día y puedes pagar 1 chi para recuperar un uso.
+*Temporal, Arcana, Pasiva*
 
-**Alteración temporal** (1 Acción y 1 chi, Temporal, Arcano): Restaura un objeto pequeño a su estado anterior reparándolo de todos los daños sufridos en la última ronda. Si esta habilidad se usa en una persona puedes sanarle una cantidad de Vitalidad igual a tu rango + 2.
+Vislumbras el futuro por unos instantes para predecir un suceso específico. Una cantidad de veces al día igual a tu Rango + 2 puedes repetir un tiro de ataque, defensa, salvación o habilidad y quedarte con el resultado que más te convenga. Esta habilidad solo puede usarse una vez por tiro y puede contrarrestarse si la criatura enfrentada emplea una habilidad que le permita repetir tiros. 
 
-**Robar el tiempo** (2 Acciones, Temporal, Arcano, Aflicción): Haz un ataque con magia temporal contra un objetivo a distancia corta el cual se defenderá tirando CON o magia protectora. Si es un objeto reducirá su efectividad y empezará a romperse mientras que si es una persona sufrirá 1d6 + rango daño fuerza y quedará *fatigada* si pierde PV. (1 chi) Si logras impactar con tu ataque el objetivo reducirá su reserva de chi por 1 y recuperas un uso de *premonición*.
+**Empoderar** (1 chi): Recuperas un uso de esta habilidad.
+
+### Alteración temporal
+
+*Temporal, Arcana, Toque*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Instantáneo
+
+Reviertes el tiempo en una pequeña burbuja para restaurar aquello que toques a su estado anterior. Reparas los daños recientes de un objeto que puedas tocar, restaurándolo de la condición *roto* y permitiendo que pueda volver a ser utilizado. 
+
+Esta habilidad puede usarse también para revertir las heridas recientes de un aliado, sanándole Vitalidad igual a tu Rango + 2. Solo podrás curar de esta manera el daño que haya sufrido la ronda pasada y la sanación otorgada por esta habilidad solo puede detenerse con habilidades que anulen magia Arcana.
+
+**Empoderar** (1 chi): Afecta con esta habilidad a todos los objetos y criaturas en una esfera pequeña o reduce por un paso el nivel de una *herida permanente* o Aflicción que tenga tu objetivo.
+
+### Robar el tiempo
+
+*Temporal, Arcana, Aflicción, Toque, Fuerza*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** El objetivo está *fatigado* una ronda.
+
+Aceleras el flujo del tiempo en una pequeña burbuja para envejecer rápidamente todo lo que toque. Un objetivo que puedas tocar deberá tener éxito en un tiro de CON frente a tu Magia Temporal o sufrirá 1d6 + Rango daño Fuerza que traspasará toda defensa. Este hechizo no afectará a criaturas inmortales o incorpóreas.
+
+Si tocas un objeto no-mágico con este hechizo adquirirá el efecto de estado *roto* mientras que si afectas un hechizo Duradero reducirás su duración por dos rondas si superas el tiro de magia de su lanzador (en el caso que sea de concentración se perderá si lo afectas exitosamente tres veces). 
+
+**Empoderar** (1 chi): Aumenta el alcance a medio o afecta a un objetivo adicional que puedas alcanzar.
 
 ## Rango II
 
-**Acelerar** (2 AP y 1 chi, Temporal, Arcano): Una criatura cercana recibe una acción adicional por turno durante una cantidad de rondas igual a tu rango + 1. 
+### Acelerar
 
-**Ralentizar** (2 AP y 1 chi, Temporal, Arcano, Concentración): Todas las criaturas hostiles a una distancia corta de ti se mueven a una velocidad más lenta, reduciendo su cantidad de acciones al turno por 1. El efecto permanecerá activo mientras mantengas la concentración y mientras esté todos los ataques contra ti que pasen por la burbuja tienen desventaja.
+*Temporal, Arcano, Mejora, Duradero*
 
-**Desplazamiento** (1 chi, Temporal, Arcano, Defensivo): Una vez por ronda como reacción a ser impactado por un ataque puedes realizar un salto temporal para evitarlo automáticamente. Esta habilidad también puede usarse para cancelar otro desplazamiento.
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Aceleras temporalmente a un personaje para que se mueva a velocidades sobrehumanas. Una criatura a distancia media quedará temporalmente acelerada, recibiendo así una acción adicional en su turno además de Ventaja en todos sus tiros relacionados con la DES. Este hechizo durará hasta que pierdas la concentración y sus efectos no se acumulan con otros hechizos del mismo tipo.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo. No hay límite de la cantidad de personajes que puedes tener acelerados pero si pierdes la concentración todos los afectados perderán este hechizo.
+
+### Ralentizar
+
+*Temporal, Arcano, Duradero*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio pequeño
+
+**Duración:** Concentración
+
+Ralentizas enormemente el tiempo en una esfera pequeña para que tus enemigos se muevan a paso de tortuga. La esfera aparecerá en un punto a distancia media y todos los objetivos en ella deberán tener éxito en un tiro de CON frente a tu Magia Temporal o quedarán *ralentizados* durante una ronda. 
+
+La zona afectada permanecerá en el campo de batalla hasta que pierdas la concentración y toda criatura que entre en ella o acabe su turno ahí deberá repetir el tiro contra este hechizo o será afectada de nuevo. Además, una vez por ronda puedes mover la esfera hasta un paso en cualquier dirección como acción bonus.
+
+**Empoderar** (1 chi): Ralentizas el tiempo alrededor de ti para que todos los ataques que recibas tengan Desventaja en su tiro.
+
+### Desplazamiento
+
+*Temporal, Arcana, Defensiva, Reacción*
+
+**Coste:** 1 chi
+
+**Duración:** Instantánea
+
+Realizas un pequeño salto temporal para que el último ataque que hayas recibido nunca te impactase. Como reacción empleable en cualquier momento de la ronda cancelas el daño y los efectos del último ataque que hayas recibido, tratándolo como si nunca te impactase. Solo puedes usar este hechizo una vez por ronda y no podrás anular ataques que te hayan impactado la ronda anterior.
 
 ## Rango III  
 
-*Robar el tiempo* y *alteración temporal* cuestan -1 AP
+Tus hechizos Temporales convierten sus dados de daño a d8 y los de Rango I reducen su coste en acciones por 1 (mínimo 1).
 
-**Visión** (Ritual, Temporal, Arcano): Realizas un ritual de duración igual a un descanso corto que te permite recibir una visión del pasado, presente o futuro relacionada con un lugar, persona o evento de tu elección. La naturaleza de la visión queda escogida por el máster. 
+### Visión
 
-**Predecir movimiento** (Temporal, Arcano): Al gastar un uso de *premonición* tendrás ventaja en el tiro repetido. Alternativamente puedes tener una visión escogida por el máster del siguiente movimiento que realizará un enemigo.
+*Temporal, Arcana, Ritual*
 
-**Doble temporal** (2 Acciones y 2 chi, Temporal, Arcano, Concentración): Te rodeas de una cantidad de dobles temporales igual a tu rango que representan tus movimientos pasados y futuros. Una vez por turno puedes sacrificar un doble como acción bonus para que un ataque enemigo le impacte a él en lugar de ti o anular un tiro de ataque que hayas realizado, recuperando las acciones gastadas. Los dobles permanecerán activos durante rango + 1 rondas.
+A través de un complejo ritual meditativo vislumbras tu línea temporal durante unos instan, recibiendo así visiones del pasado, presente o futuro. Cada uso de este ritual te otorgará una visión relacionada con un objeto, lugar o persona de tu elección que esté junto a ti mientras realices el ritual. La naturaleza de las visiones que recibas quedará escogida por el máster y un uso excesivo de este ritual puede desencadenar en la locura.
+
+### Predecir movimiento
+
+*Temporal, Reacción, Arcana*
+
+**Coste:** 2 chi
+
+**Duración:** Instantánea
+
+Vislumbras el futuro por unos instantes para predecir un suceso y prepararte contra él. Una vez por ronda como reacción al realizar un tiro defensivo o de habilidad puedes emplear este hechizo para tener éxito automático en él. Este hechizo no te permitirá tener éxito automático en tiros de habilidad contra efectos de las categorías Aflicción, Mental, Miedo, Maldición o Agarre.
+
+**Empoderar** (1 chi): Puedes volver a usar este hechizo esta ronda. 
+
+### Dobles temporales
+
+*Temporal, Sostenida, Arcana, Defensiva*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Provocas una anomalía temporal a tu alrededor que formará varias copias intangibles de ti que representan tus movimientos pasados y futuros. Al lanzar este hechizo creas una cantidad de dobles temporales a tu alrededor igual a tu Rango que seguirán tu movimientos, permaneciendo a tu alrededor hasta que pierdas la concentración o seas impactado por un ataque de área. 
+
+Puedes emplear a tus los dobles para burlar ataques contra ti o usarlos para engañar a tus enemigos. Una vez por ronda como reacción puedes hacer que un ataque hecho contra ti impacte a uno de tus dobles, destruyéndolo de inmediato. Dicho ataque no puede ser de área ni funcionará contra criaturas con vista a ciegas. 
+
+De manera alternativa puedes sacrificar un doble para anular un ataque que realices, tratándolo como si nunca hubieras tomado esa acción y recuperando todas las reservas gastadas en él. Tu objetivo no recuperará reservas ni usos de habilidades gastadas para defenderse de dicho ataque aunque sea anulado. No obstante, debido a que los dobles representan acciones pasadas o futuras solo podrás anular ataques que sean iguales al que hayas realizado justo antes o vayas a utilizar justo después.
+
+**Empoderar** (1 chi): Restaura la mitad de tus dobles temporales redondeando hacia abajo.
 
 ## Rango IV  
 
-**Revertir el tiempo** (1 Acciones y 2 chi, Temporal, Arcano): Guardas tu estado actual para poder volver a dicho momento para evitar una desgracia que te ocurra. Al emplear esta habilidad anota tus datos actuales de PV y Vitalidad además de los efectos de estado, posición y heridas permanentes. Durante las siguientes dos rondas en cualquier momento del combate como reacción puedes volver a tu estado anterior sea cual sea tu situación actual, sustituyendo tus datos actuales por los que tenías en el momento que activaste esta habilidad (no necesitas mantener la concentración y se activará automáticamente en el caso que te mueras). Esta habilidad no te permite recuperar tu reserva de chi ni alterar la duración de efectos pasivos como *ira*, *mente desencadenada* o *meteoros de chi*. Puedes usar esta habilidad en otra persona u objeto gastando 1 chi, permitiéndote hasta resucitarle.
+Tus hechizos Temporales de Rango II reducen su coste en acciones por 1 (mínimo 1).
 
-**Estasis** (2 Acciones y 2 chi, Temporal, Arcano, Aflicción): Una criatura a distancia media hace un tiro de CON frente a tu magia temporal y si fracasa quedará *paralizada*. Este efecto durará hasta que pierdas la concentración o la criatura paralizada sufra daño y esta no podrá tirar para escapar.
+### Revertir el tiempo
 
-**Ataque retardado** (2 chi, Temporal, Arcano): Al impactar con un ataque puedes retardar sus efectos para que sean más efectivos en el futuro. Por ello puedes adelantar los efectos hasta 4 rondas en el futuro y cuando estos se activen aumenta el nivel de todas las heridas permanentes por un paso y el objetivo deberá tirar CON frente a tu INT o quedará aturdido durante una ronda. 
+*Temporal, Arcana, Sostenida*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Cuatro rondas
+
+Preparas un pequeño salto temporal para volver atrás en caso de gran peligro. Al lanzar este hechizo guardas tu estado físico actual, anotando la Vitalidad, PV, efectos de estado, posición y *heridas permanentes* que tengas en este momento. Mientras este hechizo permanezca activo en cualquier momento de la ronda puedes terminarlo como acción bonus puedes para volver a tu estado anterior, sustituyendo tus datos actuales por los que tenías en el momento que lo lanzaste. 
+
+Revertir el tiempo no restaurará tu reserva de chi ni afectará la duración de hechizos y habilidades Sostenidas. Este hechizo se activará de manera automática en el momento que mueras, permitiéndote resucitar y volver a tu estado anterior. No puedes tener este hechizo activado múltiples veces en una única persona.
+
+**Empoderar** (1 chi): Lanza este hechizo en otro personaje que puedas tocar para que vuelva a su estado anterior en el momento que desees. Si lo empleas en un enemigo deberás tener éxito en un tiro de Magia Temporal frente a su CON para afectarle.
+
+### Estasis
+
+*Temporal, Arcana, Parálisis*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu objetivo no podrá intentar liberarse la primera ronda que esté afectado
+
+**Duración:** Concentración
+
+Congelas el tiempo alrededor de un enemigo para dejarlo en estasis temporal. Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu Magia Temporal o quedará *paralizado* y congelado en su posición actual. Este efecto durará hasta que tu objetivo sufra daño de un ataque o pierdas la concentración además que podrá repetir el tiro al principio de su turno para intentar liberarse. Si falla tres veces contra este hechizo no podrá volver a tirar hasta que pase un día o sea liberado.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
+
+### Ataque retardado
+
+*Temporal, Arcana, Mejora*
+
+**Coste:** 2 chi
+
+**Duración:** Instantáneo
+
+Al emplear un ataque o hechizo puedes retardarlo cualquier cantidad de rondas en el futuro para potenciar sus efectos y atacar inesperadamente a tus enemigos. Deberás retardar dicha habilidad como mínimo una ronda y esta desaparecerá temporalmente, contando como si nunca la hubieras usado. Cuando pase la cantidad de rondas escogida podrás emplear la habilidad retardada como acción bonus, la cual activará su efecto crítico al impactar además que contará como un ataque sorpresa. 
 
 ## Rango V  
 
-**Parar el tiempo** (3 Acciones y 3 chi, Temporal, Arcano): Detienes el tiempo en una burbuja de tamaño grande, paralizando a todas las criaturas que se encuentren en ella que fracasen un tiro de CON frente a tu magia temporal. Este efecto durará una ronda o hasta que ataques a cualquier criatura paralizada por el efecto. *Parar el tiempo* no funciona contra criaturas afectadas por *campo antimágico*.
+Tus hechizos Temporales convierten sus dados de daño a d10 y los de Rango I reducen su coste en acciones por 1 (mínimo 1).
 
-**Visión futura** (Temporal, Arcano): Tienes un sexto sentido que te avisa de peligros inminentes, volviéndote inmune ataques sorpresa y obteniendo ventaja en todos tus tiros de ataque y defensa durante un combate. Puedes gastar cargas de premonición para asistir tiros de aliados (3 chi) Otorgas *visión futura* a un aliado adyacente durante el resto del combate.
+### Parar el tiempo
 
-**Brecha temporal** (3 Acciones y 3 chi, Temporal, Arcano, Concentración, Ambiental):  Obtienes control del tiempo en el campo de batalla durante el resto del combate o hasta que pierdas la concentración, manejando su flujo como más te convenga. Al principio de tu turno puedes escoger adelantar o atrasar el tiempo, lo cual te permite afectar a cualquier cantidad de objetivos con *alteración temporal* o *robar el tiempo.* Además, puedes gastar cargas de premonición para sustituir el coste de chi en las habilidades *acelerar* y *ralentizar*. 
+*Temporal, Arcana, Área, Parálisis*
+
+**Coste:** 3 acciones y 3 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Una ronda
+
+Todas las criaturas en una esfera grande deben tener éxito en un tiro de CON frente a tu Magia Temporal o quedarán *paralizadas* hasta que termine este hechizo. Tras parar el tiempo terminarás de inmediato la ronda actual, pasando al principio de tu siguiente turno. Este hechizo acabará cuando termine tu turno o ataques a cualquier criatura afectada por él.
+
+**Empoderar** (1 chi): Vuelves a emplear este hechizo sin la necesidad de pagar acciones o chi al final de tu turno para extender sus efectos una ronda adicional. Las criaturas afectadas repetirán el tiro y se liberarán de él en caso de éxito.
+
+### Visión futura
+
+*Temporal, Mejora, Arcana*
+
+**Coste:** 3 chi
+
+**Duración:** Seis rondas
+
+Obtienes la capacidad de percibir el futuro inmediato para anticiparte a todas las acciones enemigas. Este hechizo te otorgará Ventaja en todos tus tiros de ataque, defensa y habilidad durante las siguientes seis rondas además de Inmunidad a ataques sorpresa. Mientras que este hechizo te permite predecir acciones futuras sus ventajas no se aplicarán a tiros contra efectos de las categorías Aflicción, Mental, Miedo, Maldición o Agarre.
+
+Visión futura mejorará también tus capacidades de predecir y defenderte de acciones futuras. Recuperarás también una carga de Premonición al principio de tu turno sin la necesidad de gastar chi además puedes lanzar el hechizo Predecir movimiento empleando cargas de Premonición en lugar de chi.
+
+**Empoderar** (1 chi): Otorga este hechizo a un aliado que puedas tocar durante el resto del combate.
+
+### Brecha temporal
+
+*Temporal, Ambiental, Arcana*
+
+**Coste:** 3 acciones y 3 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Concentración
+
+Provocas una brecha temporal en el campo de batalla donde podrás manipular el flujo del tiempo a tu antojo. La brecha ocupará un espacio igual a una esfera grande y transformará todo el lugar en un dominio cuyo tiempo fluye de manera distinta al plano material. Por ello, mientras dure este hechizo puedes escoger la relación entre el tiempo fuera de la burbuja y el tiempo dentro de ella, haciendo así que los todos los sucesos dentro de la brecha duren tan poco como un minuto o tanto como un día entero a ojos de los individuos fuera de ella. Debido al enorme esfuerzo que supone una brecha durará hasta que pierdas la concentración o pase una hora.
+
+La brecha temporal te permitirá alterar el tiempo de maneras nuevas e inesperadas. Al principio de una ronda puedes escoger el orden de Iniciativa que tendrán todos los personajes en ella, colocándote como más te convenga. Esto también te permite emplear tus acciones en cualquier momento de la ronda teniendo siempre prioridad. Además, todos tus hechizos temporales reducirán su coste en acciones por 1 y aquellos que la vean reducida a 0 podrán ser lanzados como acción bonus una vez por ronda.
+
+**Empoderar** (1 chi): Lanza uno de tus hechizos temporales con coste de una acción como acción bonus.
 
 ## Rango VI
 
-**Retroceso en masa** (3 Acciones y 5 chi, Temporal, Arcano): Retrocedes los eventos en una burbuja de tamaño grande a cualquier momento anterior del combate. Todos los personajes afectados volverán a dicho momento, restaurando todas sus estadísticas a aquellas que tenían en dicho momento y volviendo a las posiciones que tenían entonces. No obstante, recordarán todos los eventos sucedidos y las reservas de chi no se restaurarán. Esta habilidad no es un viaje temporal y los eventos sucedidos fuera de esta habilidad no se verán alterados.	
+Tus hechizos Temporales de Rango IV reducen su coste en acciones por 1 (mínimo 1).
+
+### Retroceso en masa
+
+*Temporal, Arcana, Ambiental*
+
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Cinco rondas
+
+Al lanzar este hechizo guardas el estado actual del campo de batalla, anotando la posición, valores defensivos y estado físico de cada criatura en una esfera grande. En cualquier momento de las siguientes cinco rondas puedes activar este hechizo para retroceder todos los sucesos hasta el momento que lo lanzaste, sustituyendo las estadísticas de todas las criaturas afectadas por las que tenían en dicho momento.
+
+Mientras que este hechizo afecta enormemente el flujo del tiempo en el campo de batalla no se trata de un viaje temporal ya que los eventos fuera del área afectada no se verán alterados. Además, no se restaurarán reservas de chi ni de vigor pero sí desaparecerán todos los hechizos y habilidades Duraderas que hayan sido lanzadas después del momento que guardaste. 
 
 # Rangos míticos
 
