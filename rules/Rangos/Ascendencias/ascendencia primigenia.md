@@ -150,7 +150,7 @@ Liberas todo el poder espiritual en tu interior para transformarte en una podero
 - Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas la primera vez que las uses en una ronda.
 - Obtienes velocidad de vuelo 1 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
-- Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor para ser lanzados la primera vez que los lances en una ronda. No obstante, debes seguir pagando para empoderar.
+- Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor parla primera vez que los lances en una ronda. No obstante, debes seguir pagando para empoderar.
 
 # Criatura espiritual
 

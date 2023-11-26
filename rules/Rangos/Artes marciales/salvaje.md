@@ -54,9 +54,9 @@ Atacas a tu enemigo en su punto más débil sin importarte el honor o el juego l
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*. Si lleva armadura ligera esta pasará a ser *media*.
 
-Muerdes a tu objetivo como si fueras una bestia salvaje, desconcentrándole repentinamente y dejándolo en una mala posición. Haz un ataque bonus contra un enemigo adyacente que inflige 1d4 + FUE o DES daño Perforante al impactar. No puedes emplear esta habilidad más de una vez por ronda contra el mismo objetivo.
+Muerdes a tu objetivo como si fueras una bestia salvaje, desconcentrándole repentinamente y dejándolo en una mala posición. Haz un ataque bonus contra un enemigo adyacente que inflige 1d4 + FUE o DES daño Perforante al impactar. 
 
-Si logras provocarle daño saldrá inmediatamente de *posición defensiva* y recibirá una *herida permanente leve* si lleva armadura ligera. El daño base de este ataque mejorará de la misma manera que un Ataque natural. 
+Si logras provocarle daño saldrá inmediatamente de *posición defensiva* y recibirá una *herida permanente leve* si lleva armadura ligera. El daño base de este ataque mejorará de la misma manera que un Ataque natural y si empleas esta técnica una segunda vez por ronda te costará una acci
 
 ### Persecución
 

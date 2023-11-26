@@ -10,7 +10,7 @@ Posees habilidades extraordinarias en cuanto a tu velocidad de reacción, lo que
 Reflejos tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Reserva de vigor:** Tu rango en Reflejos mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Gran agilidad:** Obtener este rango mejorará tus capacidades para evadir ataques de todo tipo. Recibes un bonificador igual a tu Rango + 1 en todos tus tiros defensivos de Esquiva.
+- **Gran agilidad:** Obtener este rango mejorará tus capacidades para evadir ataques de todo tipo. Suma tu Rango de Reflejos a todos tus tiros defensivos de Esquiva.
 - **Absolutamente innato:** Las habilidades otorgadas por este rango representan tu agilidad y velocidad de reacción en un combate nacidas tanto por tus capacidades físicas como por tu entrenamiento. Por tanto no pueden ser contrarrestadas ni suprimidas por ningún efecto.
 
 # Rangos

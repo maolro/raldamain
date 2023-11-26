@@ -11,7 +11,7 @@ Tienes una fuerte conexión con los espíritus de las más antiguas antiguas tor
 
 *Innata, Pasiva*
 
-El poder de las tormentas fluye por tus venas, otorgándote resistencias a sus efectos además de una mayor agilidad. Obtienes Resistencia a efectos Eléctricos y Sónicos además de velocidad de salto 1. Adicionalmente, los elementales de aire no serán naturalmente hostiles hacia ti.
+El poder de las tormentas fluye por tus venas, otorgándote resistencias a sus efectos además de la capacidad de maniobrar libremente en el aire. Obtienes Resistencia a efectos Eléctricos y Sónicos además que puedes planear hasta un paso en cualquier dirección mientras estés cayendo. Adicionalmente, los elementales de aire no serán naturalmente hostiles hacia ti.
 
 ### Aerokinesia
 
@@ -23,15 +23,15 @@ En el caso que no conozcas ningún hechizo de estas categorías aprenderás dos 
 
 ## Rango II
 
-Incrementa tu estadística de DES y tu limitador por 1.
+Incrementa tu estadística de DES y su limitador por 1.
 
-### Cojín de aire
+### Infusión tormentosa
 
-*Innata, Reacción*
+*Innata, Mejora*
 
-Eres capaz de seguir maniobrando aunque estés cayendo hacia el suelo, evitando impactos que serían mortales para otros. Mientras estás cayendo puedes planear hasta un paso en cualquier dirección como acción además si entras en *posición defensiva* antes de chocar contra el suelo caerás de pie y no sufrirás daño de caída. Los efectos de esta habilidad no funcionarán si estás *aturdido* o incapaz de tomar acciones mientras caes.
+Cargas un ataque con tu poder elemental para lanzar a tus enemigos por los aires o impactarles con el poder de una tormenta. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo podrás lanzar un hechizo de Aire o Tormenta que conozcas como acción bonus contra ese mismo objetivo. 
 
-**Empoderar** (1 chi o vigor): Una criatura a distancia media de ti no sufre daño de caída al impactar contra el suelo y caerá de pie.
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.
 
 ### Agilidad del viento
 
@@ -39,43 +39,39 @@ Eres capaz de seguir maniobrando aunque estés cayendo hacia el suelo, evitando 
 
 **Coste:** 1 vigor o chi
 
-Eres capaz de moverte con la velocidad de un vendaval. Realizas una acción adicional en cualquier momento de la ronda, interrumpiendo todo aquello que esté ocurriendo. Si empleas esta habilidad para evitar o detener un ataque con otra acción reducirás el daño de este a la mitad después de aplicar defensa. Esta habilidad solo puede usarse una vez por ronda.
+Eres capaz de moverte con la velocidad de un vendaval. una acción adicional en cualquier momento de la ronda, interrumpiendo todo aquello que esté ocurriendo. Si empleas esta habilidad para evitar o detener un ataque con otra acción reducirás el daño de este a la mitad después de aplicar defensa. Esta habilidad solo puede usarse una vez por ronda.
 
 ## Rango III 
 
-Puedes emplear todos tus hechizos pertenecientes a magia de Aire o Tormenta usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango II pertenecientes a esas magias.
+Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Aire o Tormenta usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango II pertenecientes a esas magias.
 
 ### Vientos protectores
 
 *Innata, Pasiva*
 
-Eres capaz de manipular instintivamente las corrientes de aire a tu alrededor para evitar efectos hostiles. Recibes así Resistencia a efectos Gaseosos y a ataques A distancia tango físicos como mágicos. Esta resistencia no se aplicará contra ataques de área y todas las resistencias otorgadas por esta habilidad quedarán anuladas durante una ronda si eres incapaz de defenderte.
+Eres capaz de manipular instintivamente las corrientes de aire a tu alrededor para evitar efectos hostiles. Al entrar en *posición defensiva* recibes Resistencia a efectos Gaseosos y a ataques A distancia tango físicos como mágicos. Esta resistencia no se aplicará contra ataques de área.
 
-**Empoderar** (1 chi o vigor): Los vientos se hacen particularmente poderosos esta ronda, impidiendo el paso a efectos Gaseosos y convirtiendo todo el espacio a distancia corta de ti en *terreno difícil*.
-
-### Poder tormentoso
-
-*Innata, Mejora*
-
-Recibes Ventaja en todos tus tiros relacionados con la estadística de Destreza y efectos pertenecientes a la categoría Aire. 
-
-## Rango IV 
-
-Incrementa tu CAR por 1. 
+**Empoderar** (1 chi o vigor): Los vientos se hacen particularmente poderosos esta ronda, impidi el paso a efectos Gaseosos y convirtiendo todo el espacio a distancia corta de ti en *terreno difícil*.
 
 ### Viajero de los cielos
 
 *Innata, Pasiva*
 
-Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Recibes velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Si no te encuentras en un entorno afectado por una tormenta debes gastar 1 chi o vigor si acabas tu turno en el aire.
+Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Recibes velocidad de vuelo 1 además de Ventaja en todos tus tiros de Esquiva. Si no te encuentras en un entorno afectado por una tormenta debes gastar 1 chi o vigor si acabas tu turno en el aire.
 
+## Rango IV 
 
+Incrementa tu CAR por 1. 
+
+### Poder tormentoso
 
 **Ataques infundidos**: Tus ataques físicos infligen +1d6 daño eléctrico o sónico (escoge al obtener esta habilidad) y ralentizan al reducir PV. (1 chi) Haz una maniobra de *finta, desarme* o *tropezar* como acción bonus usando tu bonificador de arma.
 
 ## Rango V 
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+
+### Elemento de la libertad
 
 **Elemento de libertad:** Recibes resistencia a ser *agarrado* o *enredado* igual a tu rango además de inmunidad al terreno difícil. 
 

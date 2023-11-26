@@ -82,7 +82,7 @@ Formas un muro de aguas rugientes para protegerte a ti y a tus aliados de ataque
 
 El muro proporcionará *cubierta completa* a todas las criaturas al otro lado y las protegerá de efectos Gaseosos (esto incluye criaturas Incorpóreas). Cualquier criatura hostil que intente cruzarlo deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de agua y luego afectarán hacia sus objetivos escogidos.
 
-Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo tu oponente deberá tener éxito en una tiro para cruzar el muro o su golpe fallará. Para hacerlo, debes estar en posición defensiva y solo puedes crear un muro de esta manera una vez por ronda.
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo tu oponente deberá tener éxito en una tiro para cruzar el muro o su golpe fallará. No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos. Esta habilidad solo se puede usar si tienes suficiente agua para rellenar el muro.
 
@@ -290,9 +290,9 @@ Las lluvias durarán una hora o hasta que un hechizo Ambiental de similar magnit
 
 Sobrecalientas una superficie de agua para formar una nube de vapor hirviente. El vapor llenará una esfera de tamaño mediano, expandiéndose alrededor de esquinas y paredes. Las criaturas dentro de la nube quedarán *embotadas* debido a la baja visibilidad y tienen los beneficios de *ocultamiento* ante ataques desde el exterior. La nube permanecerá en el campo de batalla hasta que pierdas la concentración o se disipe. Debido al calor necesario para este hechizo este no funcionará si se lanza en entornos muy fríos.
 
-Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta empezarán a sufrir efectos adversos debido al vapor ardiente. Las criaturas que empiecen su turno dentro de la nube o entren en ella deberán tener éxito en un tiro de CON frente a tu Magia de Agua. Si fracasan sufrirán 1d10 + SAB de daño Fuego (la mitad daño en caso de éxito) y una *quemadura leve*. Este daño tratará las resistencias al Fuego que tengan los afectados como si fueran de un nivel inferior ya que proviene de vapor hirviente.
+Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta empezarán a sufrir efectos adversos debido al vapor ardiente. Las criaturas que empiecen su turno dentro de la nube o entren en ella deberán tener éxito en un tiro de CON frente a tu Magia de Agua. Si fracasan sufrirán 1d10 + SAB daño Fuego (la mitad daño en caso de éxito) y una *quemadura leve*. Este daño tratará las resistencias al Fuego que tengan los afectados como si fueran de un nivel inferior ya que proviene de vapor hirviente.
 
-**Empoderar** (1 chi): Aumenta el radio de la nube a mediano o incrementa el daño de este hechizo a 2d10 + SAB durante esta ronda.
+**Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o incrementa el daño de este hechizo a 2d10 + SAB durante esta ronda.
 
 ## Rango VI
 

@@ -63,7 +63,7 @@ Aumenta tu CON por 1. Aprendes los hechizos Barrera luminosa y Látigo solar los
 
 Invocas a una criatura celestial para que te asista en el campo de batalla, protegiéndote de ataques y castigando a tus enemigos. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
 
-**Empoderar** (1 chi o vigor): La criatura invocada recupera la mitad de su Vitalidad.
+**Empoderar** (1 chi o vigor): Una criatura invocada recupera la mitad de su Vitalidad.
 
 ### Poder de los cielos
 
@@ -75,7 +75,7 @@ Invocas a una criatura celestial para que te asista en el campo de batalla, prot
 
 Liberas la energía luminosa de tu interior en la forma de un aura de luz intensa. Mientras esta habilidad permanezca activa estarás rodeado de un aura luminosa que te otorga Ventaja en todos tus tiros relacioneados con hechizos de magia de Vida o armas. El aura durará hasta que pierdas la concentración o sea disipada por un efecto de magnitud similar.
 
-El aura también otorgará Resistencia contra efectos Sombríos y ataques A distancia de todo tipo a todas las criaturas a distancia corta de ti. Los bonificadores otorgados por esta habilidad no se acumulan con aquellos de Telaraña de vida.
+La intensa luz generada por el aura protegerá a los que permanezcan en ella de determinados ataques, otorgando así Desventaja a todos los ataques a Distancia hechos contra criaturas dentro de ella. Además, las criaturas en el aura recibirán Resistencia a efectos Sombríos de todo tipo. Los bonificadores otorgados por esta habilidad no se acumulan con aquellos de Telaraña de vida.
 
 **Empoderar** (1 chi o vigor): Reduce el coste de un hechizo de magia de Vida que conozcas por una acción (mínimo 1).
 

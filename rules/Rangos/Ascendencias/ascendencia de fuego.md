@@ -23,7 +23,7 @@ En el caso que no conozcas ningún hechizo de estas categorías aprenderás los 
 
 ## Rango II
 
-Incrementa tu DES por 1.
+Incrementa tu estadística de DES y su limitador por 1.
 
 ### Furia del fuego
 

@@ -9,27 +9,79 @@ Ya sea desde tus inicios o por un aberrante experimento de laboratorio tu cuerpo
 
 ## Rango I
 
-Recibes resistencia 2 a daño físico. 
+### Metabolismo fúngico
 
-**Manipular hongos:** Puedes comunicarte con criaturas fúngicas y estas no serán naturalmente hostiles hacia ti. (1 chi) Durante esta ronda tus ataques con *magia de naturaleza* que inflijan daño físico provocarán +1d6 daño ácido al impactar además de *enfermar* durante una ronda al reducir PV.
+*Innata, Pasiva*
 
-**Carroñero:** Tienes resistencia a daño necrótico y ácido igual a tu rango + 1 además que puedes ver en la oscuridad sin dificultades. Puedes emplear 2 AP para drenar 1 chi de una criatura que haya muerto hace menos de un día (máximo una vez por cadáver). Recibes también vulnerabilidad al daño radiante y estás *cegado* si te encuentras en un entorno con luz brillante
+Has desarrollado un extraño metabolismo semejante a los hongos que te da resistencias sobrenaturales. Recibes Resistencia a efectos Ácidos y Necróticos además que puedes ver en la oscuridad sin dificultades. Puedes además comunicarte con criaturas fúngicas y estas no serán naturalmente hostiles hacia ti. Tu metabolismo fúngico también te hace muy sensible a la luz, otorgándote Vulnerabilidad a efectos Radiantes y quedarás *cegado* si te encuentras en un entorno con luz brillante
+
+### Manipular hongos
+
+*Innata, Pasiva*
+
+Eres capaz de manipular materia fúngica de la misma manera que otros podrían controlar plantas. Eres capaz de lanzar todos los hechizos pertenecientes a magia de Naturaleza o Nigromancia con Rango I empleando vigor en lugar de chi además que podrás manipular hongos con ellos.
+
+En el caso que no conozcas ningún hechizo de estas categorías aprenderás dos hechizos de Rango I pertenecientes a estas que podrás lanzar pagando 1 vigor o chi adicional. Emplearás como bonificador la suma de tu SAB y tu Rango en Ascendencia Fúngica. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
 
 ## Rango II
 
-Incrementa tu CON por 1.
+Incrementa tu estadística de CON y su limitador por 1.
 
-**Infectar cadáver** (3 acciones y 1 chi): Reanimas un cadáver como una criatura fúngica cuyas estadísticas están detalladas en el siguiente apartado. No puedes controlar a más criaturas fúngicas que tu rango + 1.
+### Esporas infecciosas
 
-**Esporas infecciosas** (1 chi): Durante esta ronda tus ataques infectarán al objetivo al impactar con esporas venenosas. Estas actúan como un veneno que afecta a la estadística que quieras y tiene gravedad igual a tu rango + 3 
+*Innata, Mejora, Aflicción*
+
+**Coste:** 1 vigor o chi
+
+Al impactar con un ataque puedes infectar a tu objetivo con esporas venenosas, forzándole a tener éxito en un tiro de CON frente a una dificultad igual a la suma de tu Rango de Ascendencia y tu estadística de CON. Si fracasa ese tiro quedará infectado, sufriendo los efectos de un veneno del tipo que desees. 
+
+El afectado repetirá ese tiro cada ronda y si fracasa el nivel del veneno aumentará por un paso, provocándole sus efectos. Si el afectado infectado por esporas muere su cadáver se llenará de hongos, transformándolo en materia fúngica que puedes manipular.
+
+### Carroñero
+
+*Innata, Sanación*
+
+**Coste:** 1 vigor
+
+Eres capaz de drenar la energía vital de cadáveres y hongos para sanar tus heridas. Al activar esta habilidad recuperas Vitalidad igual a tu Rango + 2 y reduces el nivel de una *herida permanente* que te afecte por un paso. 
+
+Para emplear esta habilidad debes estar tocando un cadáver o una porción de materia fúngica y no podrás usarla si has sufrido daño Radiante esta ronda. Además, si realizas un descanso largo en un lugar lleno de hongos podrás recuperar partes del cuerpo perdidas, regenerándolas con materia fúngica.
 
 ## Rango III
 
-Aumenta tu resistencia a daño físico por 1.
+Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Aire o Tormenta usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango II pertenecientes a esas magias.
 
-**Nube tóxica** (2 acciones y 1 chi): Formas una nube tóxica desde un espacio a distancia lejana infestado por hongos que ocupará un espacio pequeño (medio a rango V). Todas las criaturas que empiecen su turno en el radio de la nube o se encontraban en su área de efecto cuando esta fue invocada serán afectados de inmediato por tus *esporas infecciosas.* (1 chi, 1/turno) Emplea esta habilidad como reacción 
+### Nube tóxica
 
-**Metabolismo fúngico:** Si te encuentras en un espacio a oscuras o húmedo te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto en ese terreno recuperas también todos tus PV y reduces todas las heridas que tengas por un paso. Puedes regenerar partes del cuerpo perdidas al cabo de una semana.
+*Innata, Área, Gaseosa*
+
+**Coste:** 2 acciones y 2 vigor
+
+**Alcance:** Medio 
+
+**Tamaño:** Esfera pequeña
+
+**Efecto crítico:** Los afectados sufren *náuseas* durante una ronda
+
+**Duración:** Hasta que sea disipada
+
+Expulsas una nube de esporas tóxicas desde cualquier lugar a distancia media lleno de materia fúngica. El vapor llenará una esfera de tamaño pequeño, expandiéndose alrededor de esquinas y paredes. Las criaturas dentro de la nube quedarán *embotadas* debido a la baja visibilidad y tienen los beneficios de *ocultamiento* ante ataques desde el exterior. La nube permanecerá en el campo de batalla hasta que sea disipada.
+
+Las esporas se empezarán a introducir en el sistema respiratorio de todas las criaturas que se encuentren en la nube. Las criaturas que empiecen su turno dentro de la nube o entren en ella quedarán infectadas con tus Esporas infecciosas, haciendo de inmediato el tiro para defenderse de ellas. Si ya están infectadas recibirán Desventaja en todos sus tiros de CON para evitar sus efectos mientras permanezcan en la nube.
+
+**Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o expulsas una nube tóxica adicional en otro punto a distancia media que permanecerá acti
+
+### Animar hongos
+
+*Innata, Invocación*
+
+**Coste:** 3 acciones y 2 vigor
+
+**Duración:** Una hora
+
+Aumentas el tamaño de una masa de hongos y le das una semblanza de vida para que luche por ti. Este hechizo invocará una Criatura Fúngica de nivel 6 que luchará a tu lado hasta que sea destruida. A niveles más altos puedes invocar criaturas de mayor poder, aumentando el nivel de la criatura invocada en 2 por cada Rango que tengas en Ascendencia Fúngica por encima del III. 
+
+**Empoderar** (1 chi): Una criatura fúngica bajo tu control se cura de Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 
