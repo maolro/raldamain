@@ -137,9 +137,9 @@ Movimiento estratégico durará hasta que pierdas la concentración o escojas ac
 
 **Coste:** 2 vigor
 
-Tu voluntad poderosa te da fuerza para superar situaciones imposibles. Tras fracasar un tiro defensivo puedes emplear esta habilidad para transformarlo en un éxito, evitando así los efectos que te daría un fracaso. Esta habilidad no puede usarse para evitar efectos míticos o protegerte de ataques.
+Tu voluntad poderosa te da fuerza para superar situaciones imposibles. Tras fracasar un tiro para defenderte de una habilidad o hechizo puedes transformarlo en un éxito, evitando así los efectos que te daría un fracaso. Esta habilidad no puede usarse para protegerte de ataques y no funcionará contra efectos míticos.
 
-**Empoderar** (1 vigor): Un aliado a distancia media tiene éxito automático en un tiro defensivo que haya fracasado. Dicho aliado debe oírte y escucharte además que no podrás hacer que evite ataques o efectos míticos.
+**Empoderar** (1 vigor): Un aliado a distancia media tiene éxito automático en un tiro defensivo que haya fracasado. Dicho aliado debe oírte y escucharte además que no podrás hacer que pueda protegerse de ataques o efectos míticos.
 
 ## Rango IV
 
