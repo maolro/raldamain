@@ -31,7 +31,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 *Pesado, Pasiva*
 
-Te lanzas de lleno al ataque, golpeando con mayor velocidad a costa de quedar en una mala posición defensiva. Al principio de tu turno puedes obtener una acción adicional esta ronda a costa que no podrás entrar en *posición defensiva*. Esta habilidad también anulará los beneficios de cualquier atributo que te permita entrar en posición defensiva como acción adicional u obtener sus beneficios de forma pasiva.
+Te lanzas de lleno al ataque, golpeando con mayor velocidad a costa de quedar en una mala posición defensiva. Al principio de tu turno puedes obtener una acción adicional esta ronda a costa que no podrás entrar en *posición defensiva*. Esta habilidad también anulará los beneficios de cualquier atributo que te permita entrar en *posición defensiva* como acción adicional u obtener sus beneficios de forma pasiva.
 
 ### Golpe desestabilizador
 
@@ -57,7 +57,7 @@ Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te ro
 
 **Coste**: 1 vigor
 
-Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador en Armas pesadas o quedará *aturdido* durante una ronda.
+Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador en Armas pesadas o quedará *aturdido* durante una ronda. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Contundente.
 
 ### Tajo feroz
 
@@ -65,7 +65,7 @@ Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras 
 
 **Coste**: 1 vigor
 
-Hundes tu espada en la carne de un enemigo para infligirle graves heridas. Tras herir a un enemigo con tu arma este sufrirá una *herida permanente leve* y el efecto *sangrado*. Si tu enemigo lleva armadura ligera recibirá en su lugar una *herida permanente media*.
+Hundes tu espada en la carne de un enemigo para infligirle graves heridas. Tras herir a un enemigo con tu arma este sufrirá una *herida permanente leve* y el efecto *sangrado*. Si tu enemigo lleva armadura ligera recibirá en su lugar una *herida permanente media*. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Cortante.
 
 ### Reposición forzosa
 

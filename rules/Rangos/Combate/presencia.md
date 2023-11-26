@@ -21,7 +21,7 @@ Presencia tiene las siguientes reglas fundamentales que se aplican a cualquiera 
 
 **Alcance:** Medio
 
-A través de palabras inspiradores u órdenes imperiosas refuerzas la motivación de un aliado para un momento crítico. Esta habilidad puede emplearse una cantidad de veces por combate igual a tu Rango + 2 y al usarla un aliado en tu alcance recibirá Ventaja en su siguiente tiro de ataque, defensa, salvación o habilidad. Recuperarás todos los usos empleados de esta habilidad al realizar un descanso corto.
+A través de palabras inspiradores u órdenes imperiosas refuerzas la motivación de un aliado para un momento crítico. Esta habilidad puede emplearse una cantidad de veces igual a tu Rango + 2 y al usarla un aliado en a distancia media recibirá Ventaja en su siguiente tiro de ataque, defensa o habilidad. Recuperarás todos los usos empleados de esta habilidad al realizar un descanso corto.
 
 **Empoderar** (1 vigor): Recuperas un uso de esta habilidad o un aliado que afectes podrá emplear tu modificador de Presencia para defenderse de un efecto Mental o de Miedo.
 
@@ -215,4 +215,4 @@ Has alcanzado un gran renombre como líder, ganándote así el respeto con facil
 
 *Moral, Pasiva, Innata*
 
-Has pasado por tantas batallas que eres capaz de mantener la cabeza fría hasta en las situaciones más peligrosas. No perderás la concentración si recibes *heridas permanentes* o efectos de estado negativos si aún eres capaz de mantenerte consciente. Además, si llegaras a perder la concentración en una habilidad de Moral sus efectos permanecerán activos hasta el final de la ronNo obstante, aún perderás la concentración si recibes *heridas permanentes graves* o quedas completamente incapacitado. 
+Has pasado por tantas batallas que eres capaz de mantener la cabeza fría hasta en las situaciones más peligrosas. No perderás la concentración si recibes *heridas permanentes* o efectos de estado negativos si aún eres capaz de mantenerte consciente. Además, si llegaras a perder la concentración en una habilidad de Moral sus efectos permanecerán activos hasta el final de la ronda. No obstante, aún perderás la concentración si recibes *heridas permanentes graves* o quedas completamente incapacitado. 
