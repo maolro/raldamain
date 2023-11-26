@@ -74,13 +74,13 @@ Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas 
 
 **Duración**: Concentración 
 
-Estableces un vínculo mágico con una criatura dispuesta a la que tocas, lo que permite que ambos compartan su fuerza vital. Mientras este hechizo esté activo, en respuesta a que tu aliado vinculado reciba daño por un ataque puedes absorber hasta la mitad de ese daño como reacción, disminuyendo tu propia Vitalidad en la cantidad correspondiente. También puedes afectar a tu aliado vinculado con tus hechizos de Sanación como si estuviera adyacente a ti, sin necesidad de tocarlo. 
+Estableces un vínculo mágico con una criatura dispuesta a la que tocas, lo que permite que ambos compartan su fuerza vital. Mientras este hechizo permanezca activo puedes absorber hasta la mitad del daño que reciba tu aliado vinculado como reacción, disminuyendo tu propia Vitalidad por un valor igual al daño que absorbas. También puedes afectar a tu aliado vinculado con hechizos de Sanación como si te encontraras en una posición adyacente a él.
 
-Un Vínculo Vital durará hasta que tu aliado vinculado elija cancelarlo o pierdas la Concentración. Solo puedes mantener un Vínculo Vital activo a la vez y crear uno nuevo romperá automáticamente tu vínculo anterior. 
+Un Vínculo Vital durará hasta que tu aliado vinculado elija cancelarlo o pierdas la Concentración. Este hechizo también se romperá si ambas criaturas vinculadas se encuentran a distancia lejana o superior. Solo puedes mantener un Vínculo Vital activo a la vez y crear uno nuevo romperá automáticamente tu vínculo anterior. 
 
 **Empoderar** (1 chi): Lanzas Toque Sanador en tu aliado vinculado como acción bonus. Solo puedes empoderar de esta manera una vez por ronda.
 
-**Barrera luminosa**
+### Barrera luminosa
 
 *Vida, Defensiva, Duradera, Radiante* 
 
@@ -176,9 +176,9 @@ Todos tus hechizos de Vida de Rango II cuestan una acción menos para emplear (m
 
 Manipulas la energía de la vida en varias espadas de vida que pueden tanto sanar como herir. Este hechizo te otorga *contadores de escudo* igual a tu rango y permanecerá activo hasta que pierdas la concentración o te quedes sin contadores de escudo. 
 
-Mientras este hechizo esté activo puedes lanzar Rayo Luminoso o Toque Sanador como una acción bonus que puedes usar una vez por turno. Ambos hechizos aumentarán su alcance a Medio. Además, si te encuentras en un área infundida con energía vital puedes reponer un *contador de escudo* adicional al intensificar.
+Mientras este hechizo esté activo puedes lanzar Rayo Luminoso o Toque Sanador como una acción bonus que puedes usar una vez por turno. Ambos hechizos aumentarán su alcance a Medio. Además, si te encuentras en un área infundida con energía vital puedes reponer un *contador de escudo* al principio de tu turno.
 
-**Empoderar** (1 chi): Repones un *contador de escudo* perdido adicional. 
+**Empoderar** (1 chi): Repones un *contador de escudo* perdido.
 
 ### Transferencia Vital
 

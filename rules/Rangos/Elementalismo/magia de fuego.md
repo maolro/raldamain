@@ -61,7 +61,7 @@ Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma 
 
 **Duración:** Instantáneo
 
-Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Ácido al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
+Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Fuego al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
 
 **Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cono mediano y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
@@ -83,7 +83,7 @@ Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz u
 
 Formas un muro de llamas que quemarán a todo aquel que intente cruzarlas. El muro surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana.  Como barrera tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
 
-El muro proporcionará *cubierta parcial* a todas las criaturas al otro lado y las protegerá de todos los ataques hechos con materiales inflamables, como por ejemplo flechas o efectos de magia de Naturaleza. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de Esquiva contra tu magia de Fuego o sufrirá 1d6 + CAR daño Fuego y una *quemadura leve* (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de Fuego y luego afectarán hacia sus objetivos escogidos.
+El muro proporcionará *cubierta parcial* a todas las criaturas al otro lado y las protegerá de todos los ataques hechos con materiales inflamables, como por ejemplo flechas o efectos de magia de Naturaleza. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de Esquiva contra tu magia de Fuego o sufrirá 1d6 + CAR daño Fuego y una *quemadura leve* (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán a tu muro de Fuego y luego afectarán a sus objetivos escogidos siempre y cuando esto sea posible.
 
 Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
 
@@ -167,13 +167,11 @@ Tus hechizos de Fuego convierten sus dados de daño a d10 y los de Rango III red
 
 **Duración:** Instantáneo o concentración
 
-Disparas una lluvia de bolas de fuego para que todo arda a tu paso. Disparas cuatro bolas de fuego hacia hace cuatro puntos a una distancia media de ti, haciendo un ataque de magia de Fuego contra todas las criaturas en de una esfera pequeña centrada en ese punto. Una bola de fuego inflige 3d10 + CAR daño Contundente al impactar además de provocar una *quemadura media*. Este ataque provocará que todos los objetos inflamables en el área afectada salten en llamas, provocando un efecto equivalente a un Muro de fuego. 
+Disparas una lluvia de bolas de fuego para que todo arda a tu paso. Disparas cuatro bolas de fuego hacia puntos distintos que se encuentren a una distancia media de ti, realizando un ataque de magia de Fuego contra todas las criaturas en una esfera pequeña centrada en dichos puntos. Una bola de fuego inflige 3d10 + CAR daño Fuego al impactar además de provocar una *quemadura media*. Este ataque incendiará objetos inflamables en el área impactada, provocando un efecto equivalente a un Muro de llamas. 
 
 En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier cantidad de bolas de fuego suspendidas en el aire en lugar de atacar con ellas. Si decides hacerlo puedes hacer un ataque con cualquiera las cuatro bolas de fuego en un momento futuro empleando una acción, infligiendo la misma cantidad de daño y efectos al impactar. Perderás todas las bolas de fuego que estés sosteniendo si pierdes la concentración o si son destruidas por un ataque de Área con la magnitud adecuada.
 
 **Empoderar** (1 chi): Creas una bola de fuego adicional con este hechizo.
-
-
 
 **Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe sufrirá 1d10 + rango daño fuego y deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto además de recibir un dado de daño adicional (esto eliminará automáticamente la nube).
 
