@@ -96,7 +96,7 @@ Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un
 
 **Duración**: Concentración
 
-Concentras el poder del viento en la palma de tu mano y lo moldeas su forma en una pequeña esfera de vientos cortantes. Realiza un ataque mágico de Aire contra una criatura adyacente que inflige 2d6 + CAR daño cortante al impactar. Tu objetivo también debe tener éxito en un tiro de Heroicidad o Acrobacias contra tu Magia de aire o será empujado un paso hacia atrás y cae *tropezado*.
+Concentras el poder del viento en la palma de tu mano y lo moldeas su forma en una pequeña esfera de vientos cortantes. Realiza un ataque mágico de Aire contra una criatura adyacente que inflige 2d6 + CAR daño cortante al impactar. Tu objetivo también debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de aire o será empujado un paso hacia atrás y cae *tropezado*.
 
 **Empoderar** (1 chi): La esfera de viento permanece en tu mano hasta el final de tu siguiente turno, permitiéndote lanzar este hechizo tantas veces como desees sin tener que gastar chi. Debes gastar aun así el número apropiado de acciones y la esfera se desvanecerá si pierdes la concentración.
 
@@ -148,7 +148,7 @@ Formas poderosos vientos alrededor de un objetivo de tu elección para inmoviliz
 
 Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando activas este hechizo, todos los vientos dentro de una esfera grande aumentará su fuerza, convirtiendo la zona afectada en *terreno difícil* para las criaturas que elijas y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
 
-Mientras este hechizo esté activo todos los hechizos de Aire se potencian, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque a distancia puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
+Mientras este hechizo esté activo todos los hechizos de Aire se potencian, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque A distancia Físico puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
 
 **Empoderar** (1 chi): El siguiente hechizo de Aire que lances reduce su coste de acción en 1. Esto sólo puede usarse una vez por hechizo.
 

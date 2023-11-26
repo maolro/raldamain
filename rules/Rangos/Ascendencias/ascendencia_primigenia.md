@@ -59,7 +59,7 @@ Obtienes también un vínculo con un Espíritu mayor de tu elección, el cual te
 
 **Duración:** Hasta una hora
 
-Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidendo que pueda ser usado. A continuación se presentan algunos ejemplos de formas animales y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
+Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidiendo que pueda ser usado. A continuación se presentan algunos ejemplos de formas animales y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
 
 - **Águila:** Tu DES pasa a ser 9si era más baja mientras que tu FUE pasa a ser 1. Recibes velocidad de vuelo 2 y Ventaja en todos tus tiros de Esquiva. Tu tamaño pasará a ser pequeño y el daño base de tus ataques naturales pasa a ser 1d4 daño Cortante.
 - **Oso:** Tu FUE y CON pasan a ser 8 si eran más bajas mientras que tu DES pasa a ser 1. Tu DEF base pasa a ser 8 además que recibes Resistencia a Aflicciones. Tu tamaño pasará a ser grande y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
@@ -120,7 +120,7 @@ Desligas una porción del plano material a tu alrededor para fusionarla con el m
 
 El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el mundo de los espíritus debido a este hechizo volverá al plano material.
 
-Debido a las diferencias temporales toda persona que se encuentre en el plano espiritual recibirá efectivamente tres acciones adicionales respecto a aquellos que estén en el plano material. El plano espiriutal se solapará exactamente con el material debido a este hechizo, haciendo así que las distancias entre ambas sean iguales
+Debido a las diferencias temporales toda persona que se encuentre en el plano espiritual recibirá efectivamente tres acciones adicionales respecto a aquellos que estén en el plano material. El plano espiritual se solapará exactamente con el material debido a este hechizo, haciendo así que las distancias entre ambas sean iguales
 
 **Empoderar** (1 chi o vigor): Cambias de plano como reacción para evitar un ataque enemigo. Esto cuenta como un efecto Espacial.
 
