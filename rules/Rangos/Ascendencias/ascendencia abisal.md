@@ -1,5 +1,5 @@
 ---
-  title: Ascendencia Abisal	
+title: Ascendencia Abisal	
 category: Ascendencias
 ---
 
@@ -9,13 +9,11 @@ La llamada de la sangre de entidades olvidadas hace eones te reclama desde la pa
 
 ## Rango I
 
-Aumenta tu estadística de FUE por 1.
-
 ### Tocado por la locura
 
 *Innata, Pasiva*
 
-El poder del abismo refuerza tus capacidades mentales y físicas a costa de tu cordura. Obtienes Resistencia a efectos Mentales y Necróticos además que las criaturas abisales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos. Esta habilidad te otorgará también una locura permanente que conservarás siempre que tengas Rangos en Ascendencia Abisal.
+El poder del abismo refuerza tus capacidades mentales y físicas a costa de tu cordura. Obtienes Resistencia a efectos Mentales y Necróticos además que las criaturas abisales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos. Esta habilidad te otorgará también una *locura permanente* que conservarás siempre que tengas Rangos en Ascendencia Abisal.
 
 ### Furia abisal
 
@@ -28,6 +26,8 @@ Mientras que esta habilidad no tiene una duración específica un uso excesivo d
 Debido a la naturaleza innata de esta habilidad puede manifestarse sola cuando te encuentres en lugares con fuerte energía abisal o en momento de gran dolor emocional. Esta transformación espontánea quedará decidida por el DJ y en algunas circunstancias puedes perder control de tu personaje.
 
 ## Rango II
+
+Incrementa tu estadística de FUE y su limitador por 1.
 
 ### Mutación
 
@@ -74,27 +74,59 @@ Invocas a una criatura abisal para que te asista en el campo de batalla y acabe 
 
 ## Rango IV
 
-Incrementa tu CON por 1.
+Incrementa tu estadística de CON y su limitador por 1. Aprendes también dos hechizos de Rango II vinculados a una entidad abisal y puedes lanzarlos usando vigor en lugar de chi. Dichos hechizos deben ser aprobados por el DJ.
 
-**Rasgo monstruoso superior:** Una mutación abisal de tu elección se volverá permanente en tu cuerpo, recibiendo siempre sus beneficios. Cambiar esta mutación cuesta 2 chi.
+### Rasgo monstruoso superior
 
-**Paso abisal** (2 AP y 2 chi, Abisal, Espacial): Formas una brecha en el espacio que te permite teletransportarte una distancia lejana en cualquier dirección. Esta permitirá a cualquier criatura abisal cruzarla y teletransportarse de la misma manera que tú mientras que todas otras criaturas adyacentes a ella sufrirán un ataque de *brecha espacial* modificada por tu CAR y rango de ascendencia. Este efecto durará mientras mantengas la concentración en él. 
+*Innata, Pasiva*
+
+Tu cuerpo se transforma para asemejarse cada vez más a una criatura abisal. Una Mutación que escojas se volverá permanente en tu cuerpo, pudiendo activar sus efectos cada ronda sin la necesidad de pagar vigor o chi. Puedes recibir los efectos de una mutación de tu propia creación si lo permite el DJ.
+
+**Empoderar** (2 vigor): Sustituye el rasgo monstruoso que tengas por otro de tu elección durante este combate. No podrás tener más de un rasgo activo a la vez.
+
+### Paso abisal
+
+*Innata, Espacial*
+
+**Coste:** 1 acción y 2 chi o vigor
+
+**Duración:** Instantánea
+
+Rompes la barrera del espacio-tiempo para entrar en el vacío infinito entre planos. Al activar esta habilidad viajas instantáneamente a esa dimensión, abandonando el plano material. Mientras te encuentres en el vacío podrás emerger desde cualquier punto en el campo de batalla, terminando de inmediato este hechizo. Este hechizo también puede usarse como reacción para evitar instantánemente un ataque si te encuentras en *posición defensiva*.
+
+Esta habilidad puede usarse también para viajar a otras dimensiones o incluso demiplanos que estén vinculados a la región donde actives esta habilidad. Por ello podrás emerger en un punto de cualquiera de estos planos sin la necesidad de hacer un tiro, acabando este hechizo de la misma manera. Debido a las influencias nocivas del vacío no podrás permanecer en él durante más de una hora.
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 2.
+### Aura del caos
 
-**Visiones de la locura:** Eres capaz de percibir más allá del plano material, recibiendo inmunidad a ilusiones y a efectos que te provoquen miedo o daño a la cordura de manera pasiva, como *aura de terror*. 
+*Innata, Pasiva*
 
-**Aura del caos** (2 chi, Abisal): Como acción bonus irradia la tierra en un radio cercano a ti con energía abisal, otorgando desventaja en todos los tiros de magia arcana hechos por criaturas que no sean abisales y provocando que todos los glifos en dicho espacio tengan una probabilidad de 50% de fallar además que cada vez que una criatura obtenga un 20 o un 1 natural ocurrirá un efecto mágico aleatorio escogido por el máster.  Este efecto durará una cantidad de rondas igual a tu rango y no requiere tu concentración. (x chi) Contrarresta un hechizo lanzado en el área que tenga rango x o menos
+El poder del abismo que habita en tu interior provoca disrupciones en el funcionamiento natural de la magia, otorgándote así Resistencia a todos los efectos Arcanos y Divinos. Además, todos los objetos mágicos y glifos activados a distancia corta de ti tendrán una probabilidad del 50% de fallar. 
+
+**Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera.
+
+### Corrupción absoluta
+
+*Innata, Pasiva*
+
+Has alcanzado un nivel de corrupción donde ya no hay vuelta atrás, abrazando completamente el caos que habita en tu interior. Esto te otorga Resistencia a Aflicciones y Maldiciones además que los abisales de menor nivel te obedecerán sin cuestionarlo. También recibirás Inmunidad a efectos de Miedo, Ilusiones y hechizos ajenos que reduzcan tu cordura. Obtener esta habilidad te otorgará otra *locura permanente* escogida por le DJ.
 
 ## Rango VI
 
-Incrementa tu DES por 1. 
+Incrementa tu estadística de DES y su limitador por 1. Aprendes también dos hechizos de Rango III vinculados a una entidad abisal y puedes lanzarlos usando vigor en lugar de chi. Dichos hechizos deben ser aprobados por el DJ.
 
-**Transformación abisal:** Duplicas tu esperanza de vida y recibes resistencia 4 al veneno, efectos mentales, enfermedades y maldiciones. Los abisales dejarán de ser hostiles hacia ti y te tratarán como un igual. También recibes inmunidad a todos los hechizos ajenos que inflijan daño a la cordura a costa que recibirás una locura escogida por el máster (*poder de la locura* se sigue aplicando).
+### Transformación abisal
 
-**Llamar a la tormenta** (3 AP y 5 chi, Abisal, Ambiental, Invocación): Abre un portal abisal durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada* y está afectada por *aura del caos*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura abisal que tenga x-1 mejoras.
+Abrazas el poder del abismo para convertirte en un avatar viviente del caos. Al activar Transformación abisal recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Transformación abisal por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Transformación abisal otorgará los siguientes beneficios:
+
+- Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque.
+- Aumentas el daño base de tus ataques naturales a 1d10 y podrás manifestar cualquier arma de tu elección a partir de tu cuerpo.
+- Aprendes todas las técnicas hasta rango V relacionadas con un arma o estilo marcial de tu elección. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas la primera vez que las uses en una ronda.
+- Una mutación adicional se vuelve permanente en ti además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus. Dicha mutación puede ser una que diseñes si la aprueba el DJ.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Todos tus hechizos obtenidos por Ascendencia abisal no te costarán chi o vigor la primera vez que los lances en una ronda. No obstante, debes seguir pagando para empoderar.
 
 # Invocación abisal
 

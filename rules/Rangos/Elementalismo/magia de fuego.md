@@ -61,7 +61,7 @@ Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma 
 
 **Duración:** Instantáneo
 
-Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Fuego al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
+Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Ácido al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
 
 **Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cono mediano y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 

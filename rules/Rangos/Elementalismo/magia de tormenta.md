@@ -5,15 +5,57 @@ category: Magia elemental
 
 Tu control avanzado sobre el aire te ha permitido desviarte de su forma más básica hacia la parte más destructiva que puede representar, permitiéndote así valerte de poderosas descargas o truenos ensordecedores para abrumar a tu enemigo con una fuerza devastadora. A medida que tu control se vaya haciendo más fuerte serás más capaz de almacenar en tu propio cuerpo grandes cantidades de esta energía de forma que luego puedas desatarla en una gran oleada. en última instancia serás capaz incluso de vengarte de aquellos enemigos que se atrevan a atacarte haciendo caer sobre ellos la ira directa del cielo o tormentas devastadoras que arrasen con todo a tu alrededor
 
+# Rangos
+
 ## Rango I 
 
-Añade tu rango a todos tus tiros con magia de tormenta. Aumenta tu reserva de chi por 3
+### Toque chispeante
 
-**Toque chispeante** (2 AP): Haz un ataque de magia de tormenta contra un objetivo adyacente que inflige 1d6 + rango daño eléctrico y *ralentiza* durante una ronda (*aturde* si reduces PV). Tienes ventaja atacando a enemigos que lleven metal y aquellos con armadura completa no podrán defenderse. (1 chi) Aumenta el alcance a cercano
+*Tormenta, Ataque, Eléctrico, Toque*
 
-**Arco eléctrico** (2 AP): Ataca a un objetivo a distancia media infligiendo 1d6 + rango daño eléctrico al impactar y *ralentizando* si reduces PV. Tienes ventaja atacando a criaturas que lleven armadura metálica (1 chi) Formas un rayo adicional en otra dirección.
+**Coste:** 2 acciones
 
-**Onda trueno** (2 AP y 1 chi): Emites una onda sonora que rompe todos los objetos frágiles a una distancia cercana y los objetivos deben tener éxito en un tiro CON frente a tu magia de tormenta o sufrirán 1d6 + rango daño trueno y son ensordecidos si reduces PV (la mitad de daño si tienen éxito). 
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** El objetivo está *aturdido* durante una ronda
+
+**Duración:** Instantáneo
+
+Infundes tu mano con electricidad para provocarle una descarga a un enemigo que puedas tocar. Haz un ataque de Magia de Tormenta que al impactar infligirá 1d6 + Rango daño Eléctrico además de *ralentizar* a tu objetivo durante una ronda. Tienes ventaja atacando a enemigos que lleven objetos metálicos y aquellos con armadura completa no podrán defenderse. 
+
+**Empoderar** (1 chi): Aumenta tu alcance a cercano.
+
+### Arco eléctrico
+
+*Tormenta, Ataque, Eléctrico, A distancia*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto crítico:** El objetivo está *ralentizado* durante una ronda
+
+**Duración:** Instantáneo
+
+Formas un arco eléctrico desde tu mano que saltará hacia un enemigo. Haz un ataque de Magia de Tormenta contra un enemigo a distancia media que infligirá 1d6 + Rango daño Eléctrico al impactar. Si tu objetivo lleva armadura metálica o muchos objetos capaces de conducir la electricidad recibirás Ventaja en tu tiro de ataque.
+
+**Empoderar** (1 chi): Ataca a un objetivo adicional a distancia media con este hechizo.
+
+### Onda trueno
+
+*Tormenta, Área, Sónico*
+
+**Coste:** 2 acciones y 1 chi
+
+**Tamaño:** Radio corto
+
+**Efecto crítico:** Los afectados quedarán *ensordecidos* durante una ronda
+
+**Duración:** Instantáneo
+
+Emites una fuerte onda sónica que romperá todos los objetos frágiles a una distancia cercana. Todas las criaturas que se encuentren en el área afectada deberán tener éxito en un tiro de CON frente a tu Magia de Tormenta o sufrirán 1d6 + CAR daño Sónico. Aquellos que tengan éxito en el tiro sufrirán la mitad de daño y la onda no podrá sobrepasar barreras particularmente sólidas.
+
+**Empoderar** (1 chi): Aumenta el tamaño de la onda por un paso.
 
 ## Rango II
 
