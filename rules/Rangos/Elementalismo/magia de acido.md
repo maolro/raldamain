@@ -140,11 +140,33 @@ Este efecto permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 ### Llamar al pantano
 
-Llena el campo de batalla de terreno difícil y charcos de ácido. Los hechizos de Lodo reciben ventaja.
+*Ácido, Ambiental, Duradero*
+
+**Coste:** 3 acciones y 2 chi
+
+**Tamaño:** Radio grande
+
+**Duración:** Seis rondas
+
+Trasmutas la tierra y el agua a tu alrededor para convertir el campo de batalla en un repugnante pantano. Al lanzar este hechizo toda la tierra en un radio grande se transformará en *terreno difícil* y las plantas que estén creciendo en ella morirán instantáneamente. A su vez, el agua se volverá tóxica y putrefacta, ocasionando los efectos de un *veneno* de CON con gravedad igual a tu modificador de magia de Ácido e incidencia de una ronda a toda persona que la beba.
+
+Estos efectos permanecerán activos durante seis rondas o hasta que este hechizo sea eliminado por otro de magnitud similar. El campo de batalla favorecerá los hechizos de esta rama, otorgando así Ventaja a todos los tiros relacionados con magia de Ácido que se realicen en el área afectada. 
+
+**Empoderar** (1 chi): El siguiente hechizo de Ácido que lances reducirá su coste de acciones por 1. Esto solo puede usarse una vez por hechizo.
 
 ### Invocar elemental de lodo
 
-Invoca un elemental de lodo para asistirte en el campo de batalla
+*Ácido, Invocación*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Duración**: Una hora
+
+Animas una masa de lodo repugnante para crear un guardián elemental que luchará por ti. Este hechizo invocará un Elemental de Lodo de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Ácido por encima del III. 
+
+**Empoderar** (1 chi): Un elemental bajo tu control se sana Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 
