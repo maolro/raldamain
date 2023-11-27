@@ -268,7 +268,7 @@ La ola continuará moviéndose un paso cada ronda, atacando de nuevo a todas las
 
 **Duración**: Una hora
 
-Invocas una lluvia intensa que cubrirá todo el campo de batalla. Mientras llueva intensamente todos los tiros de Magia de Agua recibirán Ventaja debido al clima favorable (este bonificador no se acumula con Controlar el Agua). Debido a la lluvia constante siempre tendrás una cantidad adecuada de agua para lanzar tus hechizos de Agua y las criaturas en el área afectada se quedarán *embotadas* debido a la visibilidad reducida.
+Invocas una lluvia intensa que cubrirá todo el campo de batalla. Mientras llueva intensamente todos los tiros de Magia de Agua recibirán Ventaja debido al clima favorable (este bonificador no se acumula con Controlar el Agua). Debido a la lluvia constante siempre tendrás una cantidad adecuada de agua para lanzar tus hechizos de Agua y todo el campo de batalla tendrá los efectos de *ocultamiento* debida la visibilidad reducida.
 
 Las lluvias durarán una hora o hasta que un hechizo Ambiental de similar magnitud cambie el clima. Este hechizo no puede lanzarse en entornos donde lluvias intensas son imposibles o en estaciones poco favorables para ellas.
 
@@ -288,7 +288,7 @@ Las lluvias durarán una hora o hasta que un hechizo Ambiental de similar magnit
 
 **Duración**: Concentración
 
-Sobrecalientas una superficie de agua para formar una nube de vapor hirviente. El vapor llenará una esfera de tamaño mediano, expandiéndose alrededor de esquinas y paredes. Las criaturas dentro de la nube quedarán *embotadas* debido a la baja visibilidad y tienen los beneficios de *ocultamiento* ante ataques desde el exterior. La nube permanecerá en el campo de batalla hasta que pierdas la concentración o se disipe. Debido al calor necesario para este hechizo este no funcionará si se lanza en entornos muy fríos.
+Sobrecalientas una superficie de agua para formar una nube de vapor hirviente. El vapor llenará una esfera de tamaño mediano, expandiéndose alrededor de esquinas y paredes. El espacio ocupado por la nube otorgará *ocultamiento* a todas las criaturas para ataques tanto exteriores como interiores. La nube permanecerá en el campo de batalla hasta que pierdas la concentración o se disipe. Debido al calor necesario para este hechizo este no funcionará si se lanza en entornos muy fríos.
 
 Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta empezarán a sufrir efectos adversos debido al vapor ardiente. Las criaturas que empiecen su turno dentro de la nube o entren en ella deberán tener éxito en un tiro de CON frente a tu Magia de Agua. Si fracasan sufrirán 1d10 + SAB daño Fuego (la mitad daño en caso de éxito) y una *quemadura leve*. Este daño tratará las resistencias al Fuego que tengan los afectados como si fueran de un nivel inferior ya que proviene de vapor hirviente.
 
