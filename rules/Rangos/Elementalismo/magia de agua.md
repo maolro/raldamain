@@ -152,7 +152,7 @@ Manipulas las aguas que te rodean para que inunden el campo de batalla, empodera
 
 Mientras Controlar el Agua permanezca activo todos tus hechizos de Agua se potencian, otorgando Ventaja en todos los tiros de Magia de Agua realizados en el área afectada. Este efecto también creará corrientes fuertes en todas las superficies de agua que otorgarán desventaja en las tiradas de Atletismo para nadar a través de ellas. Aquellos que no superen una tirada de Atletismo para nadar a través de una corriente serán empujados un paso en cualquier dirección y empezarán a *ahogarse*.
 
-**Empoderar** (1 chi): El siguiente hechizo de Agua que lances reduce su coste de acciones en 1. Esto solo se puede usar una vez por hechizo.
+**Empoderar** (1 chi): El siguiente hechizo de Agua que lances reducirá su coste de acciones por 1. Esto solo puede usarse una vez por hechizo.
 
 ### Invocar Elemental de Agua
 
@@ -166,7 +166,7 @@ Mientras Controlar el Agua permanezca activo todos tus hechizos de Agua se poten
 
 Concedes una semblanza  de vida a una masa de aguas enfurecidas para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Agua de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
 
-**Empoderar** (1 chi): Un elemental bajo tu control se cura de Vitalidad igual a la mitad de su valor total.
+**Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 
