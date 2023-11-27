@@ -24,9 +24,9 @@ La influencia de energías primigenias en tu interior te hace desarrollar rasgos
 
 *Innata, Mejora*
 
-Eres capaz de adoptar temporalmente una forma híbrida entre animal y persona que te dará enorme fuerza a costa de hacerte cada vez menos humano. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con tus estadísticas físicas además de aumentar tu DEF por un valor igual a tu Rngo + 1. El bonificador de esta habilidad se aplicará también a todos los hechizos que aprendas con este Rango a niveles superiores. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
+Eres capaz de adoptar temporalmente una forma híbrida entre animal y persona que te dará enorme fuerza a costa de hacerte cada vez menos humano. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con tus estadísticas físicas además de aumentar tu DEF por un valor igual a tu Rango + 1. El bonificador de esta habilidad se aplicará también a todos los hechizos que aprendas con este Rango a niveles superiores. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
 
-Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede conducirte a la locura. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Forma de la bestia. Si llegaras a perder toda tu cordura pasarán inmediatamente a Forma de la bestia y perderás control de tu personaje durante un día, actuando como un animal salvaje y siendo un peligro tanto para amigos como enemigos.
+Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede conducirte a la locura. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Forma de la bestia. Si llegaras a perder toda tu cordura pasarás inmediatamente a Forma de la bestia y perderás control de tu personaje durante un día, actuando como un animal salvaje y siendo un peligro tanto para amigos como enemigos.
 
 Debido a la naturaleza innata de esta habilidad puede manifestarse sola cuando te encuentres en lugares con fuerte energía espiritual o en momentos cuando ambos planos se vuelven más cercanos. Esta transformación espontánea quedará decidida por el DJ y en algunas circunstancias puedes perder control de tu personaje.
 
@@ -38,7 +38,7 @@ Aumenta tu estadística de SAB y su limitador por 1.
 
 **Coste:** 1 vigor o chi
 
-Imbuyes tu siguiente ataque físico con un hechizo que conozcas, permitiéndote provocar sus efectos al siguiente enemigo que impactes esta ronda como acción bonus. Si el hechizo imbuido es un ataque sumará su daño base al daño de tu ataque mientras que si escoges un hechizo que requiera un tiro de habilidad el afectado podrá realizarlo para intentar evitar sus efectos. Deberás seguir pagando el coste en chi o vigror del hechizo imbuido
+Imbuyes tu siguiente ataque físico con un hechizo que conozcas, permitiéndote provocar sus efectos al siguiente enemigo que impactes esta ronda como acción bonus. Si el hechizo imbuido es un ataque sumará su daño base al daño de tu ataque mientras que si escoges un hechizo que requiera un tiro de habilidad el afectado podrá realizarlo para intentar evitar sus efectos. Deberás seguir pagando el coste en chi o vigor del hechizo imbuido
 
 ### Comunión con la naturaleza
 
@@ -60,22 +60,22 @@ Obtienes también un vínculo con un Espíritu mayor de tu elección, el cual te
 
 Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidiendo que pueda ser usado. A continuación se presentan algunos ejemplos de formas animales y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
 
-- **Águila:** Tu DES pasa a ser 9si era más baja mientras que tu FUE pasa a ser 1. Recibes velocidad de vuelo 2 y Ventaja en todos tus tiros de Esquiva. Tu tamaño pasará a ser pequeño y el daño base de tus ataques naturales pasa a ser 1d4 daño Cortante.
+- **Águila:** Tu DES pasa a ser 9 si era más baja mientras que tu FUE pasa a ser 1. Recibes velocidad de vuelo 2 y Ventaja en todos tus tiros de Esquiva. Tu tamaño pasará a ser pequeño y el daño base de tus ataques naturales pasa a ser 1d4 daño Cortante.
 - **Oso:** Tu FUE y CON pasan a ser 8 si eran más bajas mientras que tu DES pasa a ser 1. Tu DEF base pasa a ser 8 además que recibes Resistencia a Aflicciones. Tu tamaño pasará a ser grande y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
 - **Lobo:** Tu FUE y DES pasan a ser 7 si eran más bajas. Aumenta tu velocidad por 1 y recibes Ventaja en todos tus tiros de Sigilo y Percepción. Tu DEF base pasa a ser 4 y el daño base de tus ataques naturales pasa a ser 1d8 daño Perforante.
-- **León:** Tu FUE, DES y CON y pasan a ser 6 si eran más bajas. Aumenta to velocidad de salto y escalada por 1 admeás que recibes Ventaja en todos tus tiros de Acrobacias y Atletismo. Tu DEF base pasa a ser 6 y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
+- **León:** Tu FUE, DES y CON pasan a ser 6 si eran más bajas. Aumenta tu velocidad de salto y escalada por 1 además que recibes Ventaja en todos tus tiros de Acrobacias y Atletismo. Tu DEF base pasa a ser 6 y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
 
 ### Llamar  a los espíritus
 
 *Divina, Invocación*
 
-**Coste:** 2 acciones y 2 chi o vigor
+**Coste:** 3 acciones y 2 chi o vigor
 
 **Alcance:** Medio
 
 **Duración:** Una hora
 
-Abres una pequeña brecha entre ambos planos para llamar a una criatura espiritual para que te asista en el campo de batalla. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y podrás tener invocadas a más de cuatro criaturas simultáneamente.
+Abres una pequeña brecha entre ambos planos para llamar a una criatura espiritual para que te asista en el campo de batalla. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
 
 **Empoderar** (1 chi o vigor): La criatura invocada recupera la mitad de su Vitalidad.
 
@@ -135,7 +135,7 @@ Aumenta tu estadística de CON y su limitador por 1. Aprendes dos hechizos de Ra
 
 **Duración:** Seis rondas
 
-Liberas todo el poder espiritual en tu interior para transformarte en una poderosa criatura espiritual. Al activar Despertar de la bestia recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Despertar la bestia por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Despertar la bestia te otorgará los siguientes beneficios:
+Liberas todo el poder espiritual en tu interior para transformarte en una poderosa criatura espiritual. Al activar Despertar de la bestia recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Despertar la bestia por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento que empleaste esta habilidad. Despertar la bestia te otorgará los siguientes beneficios:
 
 - Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque.

@@ -9,11 +9,37 @@ Eres experto empleando armas compuestas por un largo palo, acabando así con tus
 
 ## Rango I 
 
-Añade tu rango a todos tus tiros de ataque y defensa hechos con alabardas. Puedes obtener este rango de manera gratuita si tienes 4 o más FUE, 4 o más DES y 4 niveles de talento en heroísmo
+### Ataque con arma
 
-**Preparación contra cargas** (1 AP): La siguiente vez que un enemigo se mueva a tu radio de alcance haz un ataque de oportunidad con +d6 daño y deteniéndolo en el acto si impactas. Dura hasta que pierdas la concentración o actives la habilidad.
+*Alabardas, Ataque, Físico, Cuerpo a cuerpo*
 
-**Proteger aliado**: Puedes proteger a un aliado usando tu tiro defensivo de alabarda si te encuentras en *preparación contra cargas* o *posición defensiva*
+**Coste**: 2 acciones
+
+**Alcance**: Cercano
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantáneo
+
+Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Alabardas.
+
+### Ajustar alcance
+
+*Alabardas, Pasiva*
+
+Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una distancia respecto a tus enemigos donde puedas mantener el control. Cada vez que impactes un ataque con tu arma puedes *desenganchar* como acción bonus. Además, si te encuentras en *posición defensiva* puedes tirar Esquiva a la vez de Parada al protegerte de un ataque cuerpo a cuerpy quedarte con el mejor resultado para tu tiro defensivo.
+
+### Preparación contra cargas
+
+*Alabardas, Duradera, Defensiva*
+
+**Coste:** 1 acción y 1 vigor
+
+**Duración:** Una ronda o concentración
+
+Entras en un estado de preparación para atacar a todos los enemigos que intenten acercarse a ti, impidiendo así que continúen avanzando. Mientras permanezcas en dicho estado cada vez que una criatura enemiga intente entrar en una posición adyacente a ti puedes hacerle un ataque de Alabarda como reacción que aumenta su daño base por 1d6. Si impactas con este ataque impedirás que tu objetivo siga avanzando, malgastando las acciones que haya usado para moverse.
+
+Preparación contra cargas permanecerá activo hasta que pierdas la concentración o empiece tu siguiente turno. Esta habilidad no te costará acciones para activar si te encuentras en *posición defensiva*.
 
 **Ataque con arma** (2 acciones, Cuerpo a cuerpo, Físic): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de FUE y tu rango.
 

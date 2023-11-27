@@ -40,7 +40,7 @@ Atacas a un enemigo con un chorro de agua a presión para derribarlo. Haz un ata
 
 **Alcance**: Toque
 
- **Duración**: Instantáneo 
+**Duración**: Instantáneo 
 
 Utilizas el poder del agua para curar a otros, restaurando así su salud y chi interior. Un aliado que puedas tocar recuperará Vitalidad igual a tu Rango + 2. 
 
@@ -58,9 +58,9 @@ Utilizas el poder del agua para curar a otros, restaurando así su salud y chi i
 
 **Duración**: Concentración 
 
-Evaporas una cantidad sustancial de agua y la moldeas para crear una densa neblina. La neblina emergerá desde un punto a distancia con una cantidad adecuada de agua, extendiéndose alrededor de las esquinas hasta llenar una esfera pequeña. Si te encuentras en un área con una cantidad especialmente alta de agua el tamaño de la niebla aumentará hasta ocupar una esfera mediana. 
+Evaporas una cantidad sustancial de agua y la moldeas para crear una densa neblina. La neblina emergerá desde un punto a distancia media con una cantidad adecuada de agua, extendiéndose alrededor de las esquinas hasta llenar una esfera pequeña. Si te encuentras en un área con una cantidad especialmente alta de agua el tamaño de la niebla aumentará hasta ocupar una esfera mediana. 
 
-Todas las criaturas dentro de la neblina tendrán dificultades para ver su entorno, quedando *embotados* mientras permanezcan en su interior. También obtendrán *ocultamiento* contra todos los ataques que provengan desde fuera de la niebla debido a la dificultad para determinar su posición exacta. La niebla se dispersará cuando pierdas la concentración o si afectada por un viento lo suficientemente fuerte.
+Todas las criaturas dentro de la neblina tendrán dificultades para ver su entorno, quedando *cegados* mientras permanezcan en su interior. También obtendrán *ocultamiento* contra todos los ataques que provengan desde fuera de la niebla debido a la dificultad para determinar su posición exacta. La niebla se dispersará cuando pierdas la concentración o si es afectada por un viento lo suficientemente fuerte.
 
 **Empoderar** (1 chi): La niebla se vuelve especialmente densa durante una ronda, *cegando* a todas las criaturas en su interior que fallen una tirada de Percepción contra tu magia de Agua.
 
@@ -114,7 +114,7 @@ Si mantienes la concentración en la ola esta se moverá un paso en línea recta
 
 **Duración**: Concentración
 
-A través de movimientos elegantes moldeas el agua para formar un fluido tentáculo que te protegerá del daño. Mientras el tentáculo permanezca activo una vez por ronda puedes realizar un ataque de Torrente como acción bonus contra un objetivo adyacente. El tentáculo también te otorgará una cantidad de *contadores de escudo* igual a tu Rango - 1 que podrás emplear bloquear ataques enemigos. Este hechizo permanecerá activo hasta que pierdas la concentración o gastes tu último contador de escudo.
+A través de movimientos elegantes moldeas el agua para formar un fluido tentáculo que te protegerá del daño. Mientras el tentáculo permanezca activo una vez por ronda puedes realizar un ataque de Torrente como acción bonus contra un objetivo adyacente. El tentáculo también te otorgará una cantidad de *contadores de escudo* igual a tu Rango - 1 que podrás emplear para detener ataques enemigos. Este hechizo permanecerá activo hasta que pierdas la concentración o gastes tu último contador de escudo.
 
 **Empoderar** (1 chi): Creas un tentáculo adicional que aumentará tus *contadores de escudo* totales en 1 y te permite atacar a un objetivo adicional cuando uses la acción bonus de esta habilidad. No puedes tener más de cuatro tentáculos simultáneos con este hechizo.
 
@@ -134,7 +134,7 @@ Todos tus hechizos de Agua sustituyen sus dados de daño por d8 y aquellos de Ra
 
 **Duración**: Concentración
 
-Al impactar a un enemigo con un ataque de agua puedes lanzar este hechizo como acción bonus para atraparlo en una esfera de aguas enfurecidas. Tu objetivo debe tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua para evitar este efecto, pero si falla quedará *agarrado* hasta que escape o pierdas la concentración. Al a estar rodeados de agua aquellos atrapados por este hechizo empezarán también a *ahogarse*, avanzando su nivel de ahogamiento cada ronda hasta que escapen.
+Al impactar a un enemigo con un ataque de agua puedes lanzar este hechizo como acción bonus para atraparlo en una esfera de aguas enfurecidas. Tu objetivo debe tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua para evitar este efecto, pero si falla quedará *agarrado* hasta que escape o pierdas la concentración. Al estar rodeados de agua aquellos atrapados por este hechizo empezarán también a *ahogarse*, avanzando su nivel de ahogamiento cada ronda hasta que escapen.
 
 **Empoderar** (1 chi): La Prisión Acuosa afectará a un objetivo adicional si fue impactado por el mismo hechizo que afectó a tu objetivo principal, como puede ser un ataque de Torrente empoderado o uno de Ola chocante
 
