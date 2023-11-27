@@ -57,13 +57,13 @@ Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enem
 
 **Duración:** Concentración
 
-Una masa de enredaderas emerge del suelo en un punto a distancia media y llena un radio pequeño centrado en él. Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que las *enreda* al impactar. Estas deberán tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarradas*. Este hechizo durará hasta que pierdas la concentración o las enredaderas son destruidas por un ataque de área de magnitud similar.
+Una masa de enredaderas emerge del suelo en un punto a distancia media y llena un radio pequeño centrado en él. Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que las *enreda* al impactar. Estas deberán tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarradas*. Este hechizo durará hasta que pierdas la concentración o las enredaderas sean destruidas por un ataque de área de magnitud similar.
 
 **Empoderar** (1 chi): Este hechizo aumenta su tamaño a un radio medio.
 
 ## Rango II
 
-### Muro de espinas
+### Muro de zarzas
 
 *Naturaleza, Defensivo, Físico, Duradero*
 
@@ -77,11 +77,11 @@ Una masa de enredaderas emerge del suelo en un punto a distancia media y llena u
 
 Creas un muro de zarzas espinosas para protegerte de ataques enemigos. El muro surgirá desde cualquier punto a distancia media y tomará la forma de una esfera pequeña o una línea mediana. Como muro tiene puntos de vida iguales a tu Rango x 3 y DEF igual a tu rango. Tiene también Inmunidad al daño Contundente y Perforante a costa que tiene Vulnerabilidad al daño Cortante y Fuego (los ataques de área particularmente grandes quedan exentos de esta inmunidad). El muro permanecerá en el campo de batalla hasta que pierda todos sus PV.
 
-El muro proporcionará *cubierta completa* a todas las criaturas al otro lado de él, protegiéndolas de ataques a distancia. Cualquier criatura hostil que intente cruzarlo debe tener éxito en un tiro de Heroísmo, Destrozar o Esquiva contra tu magia de Naturaleza o sufrirá *sangrado* y quedará *enredada* (esto funciona de la misma manera que el Zarcillo enredador). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de agua y luego afectarán hacia sus objetivos escogidos.
+El muro proporcionará *cubierta completa* a todas las criaturas al otro lado de él, protegiéndolas de ataques a distancia. Cualquier criatura hostil que intente cruzarlo debe tener éxito en un tiro de Heroísmo, Destrozar o Esquiva contra tu magia de Naturaleza o sufrirá *sangrado* y quedará *enredada* (esto funciona de la misma manera que el Zarcillo enredador). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de zarzas y luego afectarán hacia sus objetivos escogidos.
 
 Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en el camino. Si intentas bloquear un ataque cuerpo a cuerpo tu enemigo debe tener éxito en un tiro para cruzar el muro o su ataque fallará.  No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
 
-**Potenciar (1 chi):** El muro recupera todos sus puntos de golpe perdidos. Esta habilidad solo se puede utilizar si el campo de batalla tiene una cantidad adecuada de plantas.
+**Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. Esta habilidad solo se puede utilizar si el campo de batalla tiene una cantidad adecuada de plantas.
 
 ### Crecimiento acelerado
 
@@ -93,7 +93,7 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 **Duración:** Una hora
 
-Infundes las plantas en el campo de batalla con energía vital para acelerar su crecimiento. Todas las plantas en un radio grande se volverán más grandes y densas, transformando el campo de batalla en *terreno difícil*. Este efecto durará una hora y mientras permanezca activo todos los hechizos de magia de Naturaleza lanzados en él área reciben Ventaja y aumentan su alcance por un paso. Este efecto solo puede ser destruido por hechizos de Área o Ambientales de magnitud similar o superior.
+Infundes las plantas en el campo de batalla con energía vital para acelerar su crecimiento. Todas las plantas en un radio grande se volverán más grandes y densas, transformando el campo de batalla en *terreno difícil*. Este efecto durará una hora y mientras permanezca activo todos los hechizos de magia de Naturaleza lanzados en el área afectada reciben Ventaja y aumentan su alcance por un paso. Este efecto solo puede ser destruido por hechizos de Área o Ambientales de magnitud similar o superior.
 
 **Empoderar** (1 chi): El siguiente hechizo de Naturaleza que lances reduce su coste de acciones en 1. Solo puedes empoderar de esta manera una vez por hechizo.
 

@@ -63,7 +63,7 @@ Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma 
 
 Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Fuego al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
 
-**Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cono mediano y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
+**Empoderar** (1 chi): Aumenta el tamaño de este ataque a un paso y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
 ## Rango II
 
@@ -171,7 +171,7 @@ Disparas una lluvia de bolas de fuego para que todo arda a tu paso. Disparas cua
 
 En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier cantidad de bolas de fuego suspendidas en el aire en lugar de atacar con ellas. Si decides hacerlo puedes hacer un ataque con cualquiera las cuatro bolas de fuego en un momento futuro empleando una acción, infligiendo la misma cantidad de daño y efectos al impactar. Perderás todas las bolas de fuego que estés sosteniendo si pierdes la concentración o si son destruidas por un ataque de Área con la magnitud adecuada.
 
-**Empoderar** (1 chi): Creas una bola de fuego adicional con este hechizo.
+**Empoderar** (1 chi): Creas una bola de fuego adicional con este hechizo. No puedes crear más de tres bolas de fuego de esta manera.
 
 **Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe sufrirá 1d10 + rango daño fuego y deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto además de recibir un dado de daño adicional (esto eliminará automáticamente la nube).
 

@@ -59,7 +59,7 @@ Desatas una poderosa onda sísmica que provocará un terremoto en todo el campo 
 
 Una vez lanzado puedes mantener el Terremoto en rondas futuras si mantienes la concentración en él. La fuerza del terremoto aumentará con el tiempo, otorgándote la capacidad de emplear una de las siguientes habilidades una vez por ronda como acción bonus una vez que haya pasado el número requerido de rondas:
 
-- **Ronda 2:** Puedes lanzar Terratemblor o Crear obstáculo sin gastar chi. El Terratemblor a aumenta su alcance a Lejano.
+- **Ronda 2:** Puedes lanzar Terratemblor o Crear obstáculo sin gastar chi. El Terratemblor aumenta su alcance a Lejano.
 - **Ronda 4:** Puedes lanzar Tierra viva, Espinas de piedra o Derrumbamiento sin gastar chi. Todos estos hechizos aumentan su alcance a Lejano.
 - **Ronda 7:** Puedes lanzar Brecha sin gastar chi. Si lo haces este hechizo terminará de inmediato.
 
@@ -79,7 +79,7 @@ Una vez lanzado puedes mantener el Terremoto en rondas futuras si mantienes la c
 
 Abres una gran brecha que desgarra la tierra misma. La brecha originará desde tu posición y se extiende en forma de una gran línea. Todas las criaturas que estén a una distancia corta de este efecto deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Tierra o caerán por la brecha, sufriendo 4d10 + SAB daño Contundente y quedarán *tropezadas*. La fisura también destruirá todas las estructuras en su camino, haciéndolas caer hacia su interior.
 
-**Empoderar** (1 chi): Amplías la anchura de la brecha en un paso para obligar a todas las criaturas dentro a una distancia media de ella a defenderse contra este efecto.
+**Empoderar** (1 chi): Amplías la anchura de la brecha en un paso para obligar a todas las criaturas a una distancia media de ella a defenderse contra este efecto.
 
 ### Bastión de Piedra
 
