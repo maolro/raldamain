@@ -210,7 +210,7 @@ Sobrecalientas las aguas en un pequeño radio a tu alrededor para hacerlas hervi
 
 Si utilizas agua hirviente para tus ataques de Magia de Agua estos infligirán 1d6 + Rango de daño adicional de Fuego y una *quemadura leve* al impactar. También obtendrán el efecto crítico de este hechizo además de cualquier efecto crítico que ya posean.
 
-Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni proporcionará efectos adicionales. Tampoco tendrá ningún efecto si se lugar con frío extremo, limitándose solo a calentar las aguas en el área afectada.
+Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni proporcionará efectos adicionales. Tampoco tendrá ningún efecto si se emplea en lugar con frío extremo, limitándose solo a calentar las aguas en el área afectada.
 
 **Empoderar** (1 chi): Aumenta el radio de este hechizo a mediano.
 
@@ -226,9 +226,9 @@ Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni
 
 **Duración**: Instantáneo
 
-Atacas a todas las criaturas en una línea mediana con un chorro de agua a alta presión capaz de perforar barreras e incluso armaduras. Haz un ataque de Magia de Agua contra todas las criaturas en una línea mediana que inflige 2d8 + SAB daño Contundente y una *herida permanente leve* al impacto.
+Atacas a todas las criaturas en una línea mediana con un chorro de agua a alta presión capaz de perforar barreras e incluso armaduras. Haz un ataque de Magia de Agua contra todas las criaturas en una línea mediana que inflige 2d8 + SAB daño Contundente y una *herida permanente leve* al impactar.
 
-Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además,  la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa de estructuras sólidas y criaturas como muros de piedra o elementales de tierra.
+Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además,  la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa que tengan estructuras sólidas y criaturas elementales.
 
 **Empoderar** (1 chi): Cuando lances este hechizo haz un segundo ataque que afecta a todos los objetivos en una dirección diferente.
 
