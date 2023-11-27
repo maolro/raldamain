@@ -55,7 +55,7 @@ Disparas tres proyectiles en un abrir y cerrar de ojos para acabar con múltiple
 
 **Coste:** 1 vigor
 
-Tu soltura con tu arma te permite recargarla a velocidades sobrehumanas. AL emplear esta habilidad recargas tu arma como acción bonus, pudiendo así volver a usarla inmediatamente. Solo puedes emplear esta habilidad en armas con la propiedad *recarga*.
+Tu soltura con tu arma te permite recargarla a velocidades sobrehumanas. Al emplear esta habilidad recargas tu arma como acción bonus, pudiendo así volver a usarla inmediatamente. Solo puedes emplear esta habilidad en armas con la propiedad *recarga*.
 
 ### Disparo engañoso
 
@@ -71,7 +71,7 @@ Fallas intencionalmente un disparo para que tu enemigo abandone sus defensas y a
 
 **Coste:** 1 vigor
 
-Disparas con gran velocidad y precisión para desarmar a un enemigo antes que pueda reaccionar. Haz un ataque a distancia como acción bonus que al impactar desarmará a tu objetivo de un arma u objeto pequeño que lleve en una mano o hará que un objeto del mismo tamaño que lleve encima caiga al suelo. Si el objeto que impactaste es particularmente frágil se destruirá de inmediato, como ocurrirá con bombas o pociones..
+Disparas con gran velocidad y precisión para desarmar a un enemigo antes que pueda reaccionar. Haz un ataque a distancia como acción bonus que al impactar desarmará a tu objetivo de un arma u objeto pequeño que lleve en una mano o hará que un objeto del mismo tamaño que lleve encima caiga al suelo. Si el objeto que impactaste es particularmente frágil se destruirá de inmediato, como ocurrirá con bombas o pociones.
 
 ## Rango III 
 

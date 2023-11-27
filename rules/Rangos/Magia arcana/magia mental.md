@@ -40,10 +40,6 @@ Atacas la mente de un enemigo para romper sus facultades mentales y su capacidad
 
 **Duración:** Concentración
 
-### Escudo mental
-
-*Mental, Arcana, Pasiva*
-
 Eres capaz de percibir los pensamientos superficiales y estado emocional de las criaturas que te rodean, aportándote información valiosa sobre ellas tanto en combate como en situaciones sociales. Mientras este hechizo permanezca activo detectas todas las criaturas pensantes en un radio grande y puedes leer sus pensamientos superficiales, conociendo información básica sobre ellas y su estado emocional actual. Este hechizo terminará cuando pierdas la concentración o escojas acabarlo. Cabe recalcar que no podrás detectar a criaturas que tengan Resistencia o Inmunidad a efectos Mentales.
 
 Además, mientras este hechizo esté activo puedes emplear una acción para penetrar en los pensamientos profundos de un objetivo para descubrir más información sobre él. Tu objetivo podrá evitarlo si tiene éxito en un tiro de Concentración o Averiguar Intenciones frente a tu Magia mental y en caso que falle aprenderás un dato de él escogido por el máster. 
@@ -76,7 +72,7 @@ Aumentas tus defensas mentales frente a intrusiones enemigas. Mientras este hech
 
 **Duración:** Instantáneo
 
-Eres capaz de sugestionar determinados comportamientos a otras personas para qeu actúen de una manera más afín a tus intenciones. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Voluntad contra tu Magia mental o le condicionarás mentalmente para que actúe de una manera específica. Este nuevo comportamiento no debe contradecir la personalidad de tu objetivo ni ser ilógico para la situación en la que se encuentre. Algunos ejemplos son hacerle más amistoso hacia ti o que esté dispuesto a hacerte un pequeño favor.
+Eres capaz de sugestionar determinados comportamientos a otras personas para que actúen de una manera más afín a tus intenciones. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Voluntad contra tu Magia mental o le condicionarás mentalmente para que actúe de una manera específica. Este nuevo comportamiento no debe contradecir la personalidad de tu objetivo ni ser ilógico para la situación en la que se encuentre. Algunos ejemplos son hacerle más amistoso hacia ti o que esté dispuesto a hacerte un pequeño favor.
 
 Si empleas este hechizo en un combate puedes condicionar a tu objetivo para que tome una acción específica en su turno siempre y cuando sea lógica según la situación. Algunos ejemplos son moverse a un lugar, emplear una habilidad de tu elección o atacar a un enemigo específico. 
 
@@ -186,7 +182,7 @@ Tu maestría mental te permite hablar con otras criaturas usando únicamente el 
 
 Al activar esta hechizo todas las criaturas a distancia media de ti deben tener éxito en un tiro de Concentración o Voluntad frente a tu Magia mental o reforzarás una de sus emociones durante una ronda, funcionando de igual manera a Alterar emociones. Este hechizo permanecerá activo hasta que pierdas la concentración y mientras lo esté toda criatura que acabe su turno o entre por primera vez esta ronda en un espacio a distancia media de ti volverá a ser afectado por este hechizo.
 
-**Empoderar** (1 chi): Cancela un efecto Mental o Moral empleado contra una criatura que se encuentre en el área afectada por esta habilidad.
+**Empoderar** (1 chi): Cancela un efecto Mental o de Moral empleado contra una criatura que se encuentre en el área afectada por esta habilidad.
 
 **Sugestión en masa** (3 Acciones y 2 chi, Mental, Concentración): Haz el efecto de *sugestión* contra todas las criaturas en una distancia lejana de ti. Las criaturas afectadas estarán también más dispuestas a tomar determinadas acciones que propongas siempre y cuando les parezcan razonables, y cuando el efecto pare no sabrán que han sido influenciadas.
 

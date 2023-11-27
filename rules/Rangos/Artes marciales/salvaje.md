@@ -136,7 +136,7 @@ A diferencia de Abrazo de oso puedes moverte con libertad aunque tengas a un ene
 
 **Tamaño:** Línea larga
 
-Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruzarse en tu camino. Avanza dos pasos en cualquier dirección que elijas y realiza un Ataque natural contra cada enemigo que en tu camino que al impactar inflige 1d6 puntos de daño adicionales y empujará un paso.
+Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruzarse en tu camino. Avanza dos pasos en cualquier dirección que elijas y haz un Ataque natural contra cada enemigo en tu camino que al impactar inflige 1d6 puntos de daño adicionales y empujará un paso.
 
 ## Rango V
 

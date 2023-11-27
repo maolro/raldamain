@@ -42,7 +42,7 @@ Tu profundo conocimiento de los procesos que hay detrás de lo que otros denomin
 
 - **Flujo:** Tu control del chi te permite alterar los movimientos de los átomos cuando estos se encuentran en forma gaseosa o líquida. Recibes Resistencia a efectos de las categorías Aire y Agua además que a rangos superiores podrás aprender hechizos pertenecientes a magias de Aire o Agua.
 - **Energía:** Eres capaz de generar energía con el poder del chi para canalizarla en destructivos ataques. Recibes Resistencia a efectos de las categorías Fuego, Eléctrico y Radiante además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Fuego o Tormenta.
-- **Antienergía:** Tu enfoque del chi se centra en absorber en lugar de generar, permitiéndote drenar el chi y hasta la vida de aquellos qeu te rodean. Recibes Resistencia a efectos de las categorías Frío y Necrótico además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Hielo o Sangre. 
+- **Antienergía:** Tu enfoque del chi se centra en absorber en lugar de generar, permitiéndote drenar el chi y hasta la vida de aquellos que te rodean. Recibes Resistencia a efectos de las categorías Frío y Necrótico además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Hielo o Sangre. 
 - **Materia:** Con el poder del chi puedes alterar las propiedades de la materia y hasta crearla donde no la hay. Recibes Resistencia a efectos de las categorías Madera y Tierra además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Madera o Tierra.
 - **Electromagnetismo:** A través del poder del chi puedes manipular las fuerzas electromagnéticas para manipular objetos metálicos y formar corrientes eléctricas. Recibes Resistencia a efectos de las categorías Metal y Eléctrico además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Metal o Tormenta
 
@@ -210,6 +210,6 @@ Tus hechizos de Rango IV reducen su coste en acciones por 1 (mínimo 1) y  apren
 
 **Duración:** Instantáneo
 
-Liberas toda la energía mágica en tu interior para aniquilar todo a tu paso. Haz un ataque contra todas las criaturas a un radio grande que inflige 3d10 + INT daño Arcano además de una *herida permanente media*. Este ataque destruirá todas las barreras y defensas a su paso, haciendo así que no pueda ser detenido por *contadores de escudo* ni muros. 
+Liberas toda la energía mágica en tu interior para aniquilar todo a tu paso. Haz un ataque contra todas las criaturas en un radio grande que inflige 3d10 + INT daño Arcano además de una *herida permanente media*. Este ataque destruirá todas las barreras y defensas a su paso, haciendo así que no pueda ser detenido por *contadores de escudo* ni muros. 
 
 Todos los objetivos que impacte perderán todos sus *contadores de escudo* además que todos sus objetos no-mágicos quedarán destruidos. Si llevan objetos mágicos estos recibirán el efecto de estado *roto* hasta que sean reparados. El área afectada por una Aniquilación mágica se llenará de grandes cantidades de energía, provocando así los efectos de Irradiación de chi.
