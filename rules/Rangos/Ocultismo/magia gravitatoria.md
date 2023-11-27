@@ -66,7 +66,7 @@ Este hechizo puede también arrastrar objetos de tamaño mediano un paso hacia t
 
 **Duración:** Concentración
 
-Aumentas enormemente la gravedad en en cualquier punto a distancia media de ti para formar un pozo de gravedad. Mientras el pozo permanezca activo toda criatura a distancia cercana de él deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia Gravitatoria si desea alejarse del pozo. Además, todas las criaturas en el área afectada por el pozo recibirán Vulnerabilidad a ataques a distancia y tendrán Desventaja atacando a enemigos fuera del pozo debido a la presión gravitatoria. 
+Aumentas enormemente la gravedad en cualquier punto a distancia media de ti para formar un pozo de gravedad. Mientras el pozo permanezca activo toda criatura a distancia cercana de él deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia Gravitatoria si desea alejarse del pozo. Además, todas las criaturas en el área afectada por el pozo recibirán Vulnerabilidad a ataques a distancia y tendrán Desventaja atacando a enemigos fuera del pozo debido a la presión gravitatoria. 
 
 De manera alternativa puedes hacer que el pozo esté centrado en un objeto o criatura, fijando así su posición a la del objetivo afectado. Si escoges una criatura viva esta puede tirar una vez cada ronda para intentar liberarse de este efecto, eliminándolo si tiene éxito en un tiro de Heroísmo o Destrozar contra tu Magia gravitatoria. En ambos casos pozo permanecerá activo hasta que pierdas la concentración o sea eliminado.
 
@@ -173,7 +173,7 @@ Burlas a la gravedad misma para obtener la capacidad de volar. Al activar este h
 
 **Duración:** Instantáneo
 
-Comprimes varios objetos para formar un proyectil minúsculo y lo lanzas una distancia media, aumentando enormemente su capacidad destructiva. Haz una ataque contra todas las criaturas que se encuentren en un radio corto al punto de impacto que provocará 2d8 + INT daño Contundente y empujará un paso. Este ataque atravesará toda barrera en su camino y eliminará todo efecto de Gravedad en la zona de impacto.
+Comprimes varios objetos para formar un proyectil minúsculo y lo lanzas una distancia media, aumentando enormemente su capacidad destructiva. Haz un ataque contra todas las criaturas que se encuentren en un radio corto al punto de impacto que provocará 2d8 + INT daño Contundente y empujará un paso. Este ataque atravesará toda barrera en su camino y eliminará todo efecto de Gravedad en la zona de impacto.
 
 **Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi.
 
@@ -243,13 +243,13 @@ Todos tus hechizos de Gravedad sustituyen sus dados de daño por d10 y aquellos 
 
 **Tamaño:** Esfera grande
 
-**Efecto crítico:** Las criaturas afectadas se mueven un paso adicional en la dirección escogida. Si chocarían ya al moverse dos pasos sufrirán una *herida permanente leve*.
+**Efecto crítico:** Las criaturas afectadas se mueven un paso adicional en la dirección escogida. Se se chocan contra una superfície sólida al moverse dos pasos sufrirán una *herida permanente leve*.
 
 **Duración:** Concentración
 
 Inviertes la gravedad en una esfera grande para que empuje en un sentido diferente al normal. Al activar esta habilidad todas las criaturas que escojas empezarán a caer hacia la dirección designada, forzándoles a tener éxito en un tiro de Heroísmo o Acrobacias o serán empujadas dos pasos hacia esa dirección, chocando contra una superficie sólida o contra los límites de la esfera en el caso que no los hubiera. Este impacto les infligirá 1d10 + INT daño Contundente de caída además de hacer que caigan *tropezadas*. Este hechizo afectará de nuevo a todas las criaturas en su área hasta que pierdas la concentración. 
 
-Una inversión gravitatoria afectará también a la dirección de todos los ataques a distancia y de área, haciendo así que cada que un personaje haga un ataque de ese tipo tendrá una probabilidad de 50% que su ataque impacte a un objetivo diferente a esa misma distancia que escoges tú. No puedes afectar a habilidades pertenecientes a las categorías Aire, Telekinesia o Gravedad de esta manera.
+Una inversión gravitatoria afectará también a la dirección de todos los ataques físicos a distancia y de área, haciendo así que cada vez que un personaje haga un ataque de ese tipo tendrá una probabilidad de 50% que su ataque impacte a un objetivo diferente a esa misma distancia que escoges tú. No puedes afectar a habilidades pertenecientes a las categorías Aire, Telekinesia o Gravedad de esta manera.
 
 **Empoderar** (1 chi): Cambia la dirección de la inversión a otra diferente que escojas.
 
