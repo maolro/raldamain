@@ -33,25 +33,93 @@ Si te encuentras en *posición defensiva* puedes teletransportarte para evitar a
 
 ### Portal menor
 
+*Espacial, Arcana, Duradera*
+
+**Coste:** 2 acciones
+
+**Duración:** Concentración
+
+Conectas dos posiciones distantes en el espacio a través de un pequeño portal del tamaño de tu mano. Dicho portal se formará en una posición adyacente a ti y estará conectado con otro punto que puedas ver a distancia media. El portal durará hasta que pierdas la concentración y puedes emplear una acción para cambiar la posición de salida que tenga el portal. 
+
+Mientras el portal permanezca activo puedes afectar a objetos o criaturas que se encuentren al otro lado del portal como si estuvieran adyacentes a ti además que todos los ataques que pasen por el portal emergerán por el otro lado. 
+
+**Empoderar** (1 chi): Creas un portal menor adicional como acción bonus que permanecerá activo solo una ronda.
+
 ### Bolsillo interdimensional
 
-**Salto espacial** (1 Acción y 1 chi, Espacial, Defensivo, Arcano): Te teletransportas una distancia media en cualquier dirección, evitado ataques de oportunidad. (1 chi) Aumenta la distancia que te teletransportas por un paso, llegando como máximo a . Esta habilidad puede usarse como reacción una vez al turno si estás en *posición defensiva* para tener éxito automático en un tiro defensivo hecho con magia espacial. Esta habilidad no funcionará para defenderte de ataques de área con radio igual o superior a la distancia que te teletransportes.
+*Espacial, Arcana*
 
-**Portal menor** (2 Acciones, Espacial, Concentración, Arcano): Formas un portal en una posición adyacente del tamaño de tu mano que se conectará con otro punto a distancia media. Todo lo que pase por un lado del portal acabará en el otro y puedes afectar el entorno al otro lado del portal como si estuviera adyacente a ti. El portal permanecerá durante una ronda salvo que gastes 1 chi y no puedes tener más portales activos a la vez que tu rango.
+**Coste:** 2 acciones
 
-**Distorsión espacial** (2 Acciones, Espacial, A distancia, Arcano): Un objetivo a distancia media se defiende de un ataque mágico hecho con magia espacial que si impacta lo teletransportará forzosamente a otra posición aleatoria a distancia media de él, perdiendo la concentración de inmediato. Si fuera teletransportado a una pared acabará en la posición factible más cercana y sufrirá 1d6 daño obligatorio. (1 chi) Afecta a un objetivo adicional
+**Duración:** Instantánea
+
+Eres capaz de abrir un agujero en el espacio que conecta con un punto específico del vacío entre dimensiones que puedes usar para almacenar objetos o sacarlos en el momento más conveniente. Este hechizo te permite sacar un objeto pequeño del bolsillo interdimensional o guardarlo ahí. Solo puedes manifestar los objetos escogidos en la palma de tu mano y si intentas guardar seres vivos pequeños ahí estos morirán.
+
+**Empoderar** (1 chi): Guardas o sacas un objeto del bolsillo interdimensional como acción bonus.
 
 ## Rango II
 
-**Puerta dimensional** (2 Acciones y 1 chi, Espacial, Concentración, Arcano): Formas un portal que conecta dos puntos separados por una distancia larga que durará una ronda o hasta que pierdas la concentración.
+### Puerta dimensional
 
-**Ancla dimensional** (2 Acciones y 1 chi, Arcano, Espacial): Haz un ataque mágico contra un objetivo a distancia media que solo puede defenderse con magia protectora. Si impactas el objetivo será incapaz de teletransportarse
+*Espacial, Arcano, Duradero*
 
-**Redirigir ataque** (Arcano, Espacial, Defensivo): Puedes emplear magia espacial para protegerte de ataques mágicos y a distancia. Si logras protegerte exitosamente de un ataque puedes gastar 1 chi para redirigirlo hacia otro objetivo de tu elección, haciendo que tenga que defenderse de él con desventaja (se usará el mismo resultado de ataque que ese obtuvo contra ti)
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Cercano
+
+**Duración:** Concentración
+
+Formas un portal del tamaño de una persona que conectará dos puntos distantes en el espacio. La puerta dimensional se manifestará en un punto a distancia cercana de ti y está conectada con otro punto que puedas ver a distancia lejana. Toda criatura, objeto o efecto que cruce la puerta dimensional emergerá en el punto con el que conecta.
+
+Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado. Si intentas cerrar una puerta dimensional y hay una criatura cruzándola esta puede hacer un tiro de Atletismo o Acrobacias contra tu Magia Espacial y si tiene éxito podrá aparecer en el lado de la puerta que más le convenga. En el caso que fracase se quedará donde está y sufrirá una *herida permanente leve* que no puede reducirse.
+
+**Empoderar** (1 chi): Creas una Puerta dimensional como reacción para evitar un ataque enemigo o provocar que un objetivo pase por ella. Solo puedes crear una Puerta dimensional así si te encuentras en *posición defensiva* y un objetivo que intente pasar por la puerta puede evitarlo teniendo éxito en un tiro de Esquiva contra tu Magia Espacial.
+
+### Ancla dimensional
+
+*Espacial, Arcano, Duradero, Toque*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Una hora
+
+Inscribes un sello mágico en un objetivo que repele la magia espacial, impidiendo que pueda teletransportarse, cruzar portales o ser objetivo de efectos Espaciales. Solo puedes colocar un ancla dimensional en objetivos que puedas tocar y este efecto puede defenderse con un tiro de CON frente a tu Magia Espacial. Este efecto permanecerá activo hasta que pase una hora o sea disipado. 
+
+**Empoderar** (1 chi): Anulas el Ancla dimensional durante una ronda, haciendo así que su portador pueda ser afectado por hechizos Espaciales con normalidad.
+
+### Distorsión espacial
+
+*Espacial, Arcano*
+
+**Coste:** 1 acción y 1 chi
+
+**Alcance:** Medio
+
+**Duración:** Instantáneo
+
+Distorsionas el espacio alrededor de un enemigo para que teletransportarlo forzosamente a otra posición. Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu Magia Espacial o será teletransportado un paso en cualquier dirección. Este cambio de posición repentino hará que tu objetivo pierda inmediatamente la concentración e interrumpirás toda acción que intente realizar. 
+
+Esto no afectará a objetivos con habilidades que les permitan mantener la concentración ante situaciones difíciles como Concentración superior. Tampoco podrás teletransportar al afectado dentro de una superficie sólida pero sí podrás moverlo a lugares que no puedas percibir claramente.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
 ## Rango III
 
-*Portal menor* y *distorsión espacial* cuestan -1 AP
+Todos tus hechizos de Rango I reducen su coste en acciones por 1 (mínimo 1)
+
+### Brecha espacial
+
+*Espacial, Arcano, Ataque, Área*
+
+### Bifurcación espacial
+
+*Espacial, Arcano, Mejora*
+
+### Invocar extraplanario
+
+*Espacial, Arcano, Invoc*
 
 **Brecha espacial** (1 Acción y 2 chi, Arcano, Espacial, A distancia): Haz un ataque con magia espacial contra un objetivo a distancia lejana que al impactar provocará una brecha espacial, infligiéndole 1d8 + INT daño fuerza que provoca heridas permanentes al reducir PV además que todos los objetos cercanos a la brecha serán transportados a otra dimensión (se puede tirar FUE para evitar este efecto). La brecha permanecerá mientras te concentres en ella y cada criatura adyacente a ella al principio de su turno deberá volver a tirar para defenderse o sufrirá de nuevo sus efectos.
 
