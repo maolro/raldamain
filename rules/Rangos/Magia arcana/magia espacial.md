@@ -97,6 +97,8 @@ Inscribes un sello mágico en un objetivo que repele la magia espacial, impidien
 
 **Alcance:** Medio
 
+**Efecto crítico:** El afectado cae *tropezado* en su nueva posición
+
 **Duración:** Instantáneo
 
 Distorsionas el espacio alrededor de un enemigo para que teletransportarlo forzosamente a otra posición. Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu Magia Espacial o será teletransportado un paso en cualquier dirección. Este cambio de posición repentino hará que tu objetivo pierda inmediatamente la concentración e interrumpirás toda acción que intente realizar. 
@@ -111,21 +113,49 @@ Todos tus hechizos de Rango I reducen su coste en acciones por 1 (mínimo 1)
 
 ### Brecha espacial
 
-*Espacial, Arcano, Ataque, Área*
+*Espacial, Arcano, Mejora*
 
-### Bifurcación espacial
+**Coste:** 2 chi
+
+**Duración:** Instantáneo
+
+Provocas una brecha entre dimensiones con uno de tus ataques para que sea capaz de atravesar cualquier barrera a su paso. Al lanzar este hechizo tu siguiente ataque podrá atravesar todo obstáculo en su paso, permitiéndote ignorar muros y barreras defensivas además de DEF y resistencias que tenga tu objetivo. Esto hará también que el ataque no pueda ser detenido empleando *contadores de escudo*.
+
+Un ataque infundido con una brecha espacial atravesará hasta la realidad misma, permitiéndote impactar a enemigos que intenten viajar a otras dimensiones o volverse incorpóreos para evitar el ataque. Si usas este hechizo en un dominio puedes crear inmediatamente una puerta al plano material para escapar de él.
+
+**Empoderar** (1 chi): Este hechizo afectará un ataque adicional que realices esta ronda, permitiéndote recibir sus efectos de nuevo sin la necesidad de pagar chi.
+
+### Portal múltiple
 
 *Espacial, Arcano, Mejora*
 
+**Coste:** 1 acción y 2 chi
+
+**Tamaño:** Esfera mediana
+
+**Duración:** Concentración
+
+Formas una red de portales pequeños que te permite atacar de maneras inesperadas y redirigir ataques fallidos. La red de portales llenará un espacio del tamaño de una esfera mediana y mientras permanezca activa todo ataque o hechizo que lances en ella incrementará su alcance a mediano e ignorará barreras y cubierta en su camino. Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado.
+
+
+
 ### Invocar extraplanario
 
-*Espacial, Arcano, Invoc*
+*Espacial, Arcano, Invocación*
 
-**Brecha espacial** (1 Acción y 2 chi, Arcano, Espacial, A distancia): Haz un ataque con magia espacial contra un objetivo a distancia lejana que al impactar provocará una brecha espacial, infligiéndole 1d8 + INT daño fuerza que provoca heridas permanentes al reducir PV además que todos los objetos cercanos a la brecha serán transportados a otra dimensión (se puede tirar FUE para evitar este efecto). La brecha permanecerá mientras te concentres en ella y cada criatura adyacente a ella al principio de su turno deberá volver a tirar para defenderse o sufrirá de nuevo sus efectos.
+**Coste:** 3 acciones y 2 chi
+
+**Duración:** Una hora
+
+Llamas a una criatura extraplanaria a través de los caminos del chi para que entre en el plano material. La criatura puede ser de cualquier tipo siempre y cuando su nivel sea igual o inferior a 6. A diferencia de otros hechizos las criaturas invocadas de esta manera no te obedecerán salvo que tengas buena relación con ellas, comportándose según su naturaleza tal como lo vea oportuno el DJ. 
+
+Las invocaciones permanecerán en el campo de batalla durante una hora o hasta que mueran y no puedes tener invocadas más de cuatro criaturas simultáneamente. A rangos más altos podrás invocar criaturas de mayor poder, aumentando el nivel de la criatura invocada en 2 por cada Rango que tengas en magia Espacial por encima del III. 
+
+**Empoderar** (1 chi): Invoca una criatura adicional del mismo nivel con este hechizo.
+
+**Brecha espacial** (1 Acción y 2 chi, Arcano, Espacial, A distancia): Haz un ataque con magia es pacial contra un objetivo a distancia lejana que al impactar provocará una brecha espacial, infligiéndole 1d8 + INT daño fuerza que provoca heridas permanentes al reducir PV además que todos los objetos cercanos a la brecha serán transportados a otra dimensión (se puede tirar FUE para evitar este efecto). La brecha permanecerá mientras te concentres en ella y cada criatura adyacente a ella al principio de su turno deberá volver a tirar para defenderse o sufrirá de nuevo sus efectos.
 
 **Bifurcación espacial** (1 Acción y 2 chi, Espacial, Concentración, Arcano): Creas un *portal menor* que conecta simultáneamente con dos puntos en el espacio. Todos los ataques mágicos que crucen el portal emergerán de los dos portales, permitiéndote hacer un ataque adicional del mismo tipo sin la necesidad de gastar chi. Esta habilidad permanecerá activa durante una ronda y puedes prolongar su efecto gastando 1 chi.
-
-**Invocar extraplanario** (3 Acciones y 2 chi, Arcano, Espacial, Invocación): Invoca a una criatura extraplanaria perteneciente a cualquier rama ascendencia o magia. La criatura invocada no te obedecerá salvo que tengas buena relación con ella, comportándose según su naturaleza al ser invocada. Al mejorar de rango puedes invocarla con una mejora adicional o invocar una criatura adicional sin mejora.
 
 ## Rango IV
 
@@ -146,6 +176,10 @@ Dada la complejidad de este hechizo los portales que creas tienen una probabilid
 Si tienes éxito en el tiro la criatura aparecerá en el lugar deseado mientras que si fracasas aparecerá en un lugar cercano o similar a él. No necesitarás hacer este tiro si atas este hechizo a un Glifo de Protección y lo programas previamente para que transporte a la criatura que tenga activo el glifo al lugar que desees.
 
 **Empoderar** (1 chi): Al fracasar un tiro para transportar a otra criatura puedes repetirlo y quedarte con el mejor resultado.
+
+### Cambio de posición
+
+### Cierre dimensional
 
 **Cambio de posición** (2 Acciones y 2 chi, Espacial, Arcano, Defensivo): Haz un ataque con magia espacial contra un objetivo a distancia media que solo puede defenderse con magia protectora o espacial que al impactar intercambiará tu posición con la suya. Esta habilidad puede usarse como reacción si estás en *posición defensiva*, evitando así un ataque hecho hacia ti.
 
