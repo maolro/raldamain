@@ -5,7 +5,7 @@ category: Combate
 
 Posees habilidades extraordinarias en cuanto a tu velocidad de reacción, lo que te permite llevar a cabo maniobras excepcionalmente complejas que dependen de tu agilidad y reflejos sobrenaturales. A medida que avanzas en tu entrenamiento en esta disciplina, desarrollas un sexto sentido agudizado que te permite esquivar ataques invisibles y sortear ágilmente múltiples amenazas enemigas antes de que tengan la oportunidad de aprovecharse de tu presencia. Esta maestría en evasión te convierte en un adversario formidable, capaz de esquivar cualquier efecto adverso dirigido hacia ti, incluso cuando no es perceptible a simple vista. Tus reflejos y agilidad te permiten anticipar y evitar con precisión los ataques enemigos, lo que te confiere una ventaja estratégica invaluable en el campo de batalla.
 
-## Reglas fundamentales
+# Reglas fundamentales
 
 Reflejos tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 

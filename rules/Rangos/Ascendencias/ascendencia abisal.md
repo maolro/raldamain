@@ -19,7 +19,7 @@ El poder del abismo refuerza tus capacidades mentales y físicas a costa de tu c
 
 *Innata, Mejora*
 
-Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para recibir gran poder a costa de tu mente. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados dos estadísticas de tu elección además de aumentar tu DEF por un valor igual a tu Rango + 1. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
+Dejas que la fuerza del abismo infunda temporalmente tu cuerpo para recibir gran poder a costa de tu mente. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con dos estadísticas de tu elección además de aumentar tu DEF por un valor igual a tu Rango + 1. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
 
 Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede conducirte a la locura. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Furia abisal. Si llegaras a perder toda tu cordura pasarán inmediatamente a Furia abisal y perderás control de tu personaje durante un día, comportándote como un abisal y siendo un peligro tanto para amigos como enemigos.
 
