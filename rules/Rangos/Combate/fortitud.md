@@ -91,7 +91,7 @@ Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resis
 
 *Innata, Pasiva, Sanación*
 
-Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 2. Si tienes alguna *herida permanente* activa en lugar de sanarte reducirás su nivel por un paso, haciendo así que solo puedas recuperar Vitalidad si estás libre de heridas. 7
+Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 2. Si tienes alguna *herida permanente* activa en lugar de sanarte reducirás su nivel por un paso, haciendo así que solo puedas recuperar Vitalidad si estás libre de heridas. 
 
 **Empoderar** (1 vigor): Reduce el nivel de una herida permanente que te afecte actualmente por un paso. Esto no funcionará contra *heridas permanentes críticas*.
 
