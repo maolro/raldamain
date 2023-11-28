@@ -101,4 +101,4 @@ Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al prin
 
 **Coste:** 3 vigor
 
-Cuando estás al borde de la muerte empleas toda la fuerza que te queda para una última resistencia. Esta habilidad solo puede activarse cuando caigas a 0 PV y al hacerlo recuperarás toda tu Vitalidad además de la mitad de tus PV. No obstante, las *heridas permanentes* que tengas seguirán activas y no podrás volver a activar esta habilidad hasta que tomes 
+Cuando estás al borde de la muerte empleas toda la fuerza que te queda para una última resistencia. Esta habilidad solo puede activarse cuando caigas a 0 PV y al hacerlo recuperarás toda tu Vitalidad además de la mitad de tus PV. No obstante, las *heridas permanentes* que tengas seguirán activas y no podrás volver a activar esta habilidad hasta que tomes un descanso largo.
