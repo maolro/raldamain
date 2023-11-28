@@ -74,7 +74,7 @@ Entrar en Mente desencadenada da la capacidad de percibir los canales de chi a t
 
 *Mente desencadenada, Innata, Pasiva*
 
-Tu mente se ha retorcido de maneras inpensables debido a tu constante uso de sus capacidades, haciendo así que todo intento de afectarla mentalmente resulte desastroso. Recibes Inmunidad a efectos Mentales y de Miedo mientras te encuentres en Mente desencadenada. Además, cada vez que una criatura utilice un efecto Mental contra ti podrás emplearlo contra ella como reacción, forzándola a defenderse de su propio hechizo. Usarás tu bonificador de Mente Desencadenada para esta
+Tu mente se ha retorcido de maneras inpensables debido a tu constante uso de sus capacidades, haciendo así que todo intento de afectarla mentalmente resulte desastroso. Recibes Inmunidad a efectos Mentales y de Miedo mientras te encuentres en Mente desencadenada. Además, cada vez que una criatura utilice un efecto Mental contra ti podrás emplearlo contra ella como reacción, forzándola a defenderse de su propio hechizo. Usarás tu bonificador de Mente Desencadenada para esta habilidad, la cual deberá defenderse empleando Concentración o Averiguar Intenciones.
 
 ## Rango V
 
