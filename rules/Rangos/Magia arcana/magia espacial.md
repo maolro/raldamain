@@ -137,7 +137,7 @@ Un ataque infundido con una brecha espacial atravesará hasta la realidad misma,
 
 Formas una red de portales pequeños que te permite atacar de maneras inesperadas y redirigir ataques fallidos. La red de portales llenará un espacio del tamaño de una esfera mediana y mientras permanezca activa todo ataque o hechizo que lances en ella incrementará su alcance a mediano e ignorará barreras y cubierta en su camino. Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado.
 
-Eres también capaz de aprovechar los portales para redirigir ataques fallidos hechos por cualquier criatura en la zona afectada. Una vez por ronda como reacción a que un ataque de cualquier falle a su objetivo original puedes redirigirlo hacia la misma criatura o una diferente forzando a su lanzador a tirar de nuevo para impactar. Dado que es el mismo ataque no significará un gasto de chi o acciones. 
+Eres también capaz de aprovechar los portales para redirigir ataques fallidos hechos por cualquier criatura en la zona afectada. Una vez por ronda como reacción a que un ataque de cualquier tipo falle a su objetivo original puedes redirigirlo hacia la misma criatura o una diferente forzando a su lanzador a tirar de nuevo para impactar. Dado que es el mismo ataque no significará un gasto de chi o acciones. 
 
 **Empoderar** (1 chi): Redirige un ataque adicional esta ronda. No puedes empoderar de esta manera para redirigir el mismo ataque de nuevo.
 
@@ -169,7 +169,7 @@ Las invocaciones permanecerán en el campo de batalla durante una hora o hasta q
 
 Formas un portal que conecta con cualquier lugar del mundo que conozcas. Este portal se formará en un espacio a distancia media de ti y permanecerá activo hasta que lo cruces o pierdas la concentración. Si hay una criatura en la posición escogida deberá tener éxito en un tiro de Esquiva contra tu Magia Espacial o será transportada forzosamente por el portal.
 
-Dada la complejidad de este hechizo los portales que creas tienen una probabilidad de fallar si intentas hacer que conecten que lugares que no conozcas bien. Por ello cada vez que una criatura cruce el portal debes hacer un tiro de Magia Espacial contra una dificultad escogida por el DJ dependiendo de tu familiaridad con el lugar escogido. 
+Dada la complejidad de este hechizo los portales que creas tienen una probabilidad de fallar si intentas hacer que conecten con lugares que no conozcas bien. Por ello cada vez que una criatura cruce el portal debes hacer un tiro de Magia Espacial contra una dificultad escogida por el DJ dependiendo de tu familiaridad con el lugar escogido. 
 
 Si tienes éxito en el tiro la criatura aparecerá en el lugar deseado mientras que si fracasas aparecerá en un lugar cercano o similar a él. No necesitarás hacer este tiro si atas este hechizo a un Glifo de Protección y lo programas previamente para que transporte a la criatura que tenga activo el glifo al lugar que desees.
 
