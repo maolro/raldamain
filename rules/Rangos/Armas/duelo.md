@@ -27,29 +27,69 @@ Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcan
 
 ### Destreza defensiva
 
-### Ataque preciso
+*Duelo, Pasiva*
+
+Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo usando Parada puedes hacer también un tiro de Esquiva y quedarte con el resultado que más te convenga. Esto te permite también usar habilidades pertenecientes a Reflejos para en tus tiros de Parada.
+
+### Estocada poderosa
+
+*Duelo, Mejora*
+
+**Coste:** 1 vigor
 
 
-
-**Ataque furtivo:** Suma tu estadística de DES al daño si tienes ventaja en el ataque o el objetivo no puede defenderse
-
-**Apuntar ataque** (1 acción): Inflige una herida leve al impactar con tu siguiente ataque si el objetivo lleva armadura ligera o inferior. +1 AP para aumentar el nivel de armadura que puedes afectar por un paso
-
-**Ataque con arma** (2 acciones): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de DES y tu rango.
 
 ## Rango II
 
 ### Finta engañosa
 
+*Duelo, Visual*
+
+**Coste:** 1 vigor
+
+Haces un ataque falso para engañar a un enemigo para que acabe en una posición más vulnerable. En respuesta a fallar uno de tus ataques puedes forzar a tu objetivo a tener éxito en un tiro de Percepción o Averiguar intenciones o saldrá inmediatamente de *posición defensiva*. Además, en caso de éxito recuperarás las acciones que hayas gastado en tu ataque original además del vigor usado para mejoras. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
+
 ### Golpe de mango
 
-### Estoque ágil
+*Duelo, Ataque, Físico*
 
-**Finta** (1 acción): El objetivo se defiende con su SAB y si fracasa no puede defenderse de tu siguiente ataque
+**Coste:** 1 vigor
 
-**Desarme** (1 acción): El objetivo se defiende con su tiro de arma y si fracasa es desarmado de un arma ligera (el arma es de cualquier tipo si tiene una herida permanente en el brazo)
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y romper sus defensas. Haz un ataque de arma contra un enemigo adyacente que infligirá 1d4 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda.
 
 ## Rango III 
+
+### Espadas trabadas
+
+*Duelo, Maniobra, Duradero*
+
+**Coste:** 2 vigor
+
+**Duración:** Concentración
+
+Trabas diestramente el arma de un enemigo para impidir que pueda usarla, obteniendo así una posición dominante en el enfrentamiento. En respuesta a que un enemigo detenga uno de tus ataques usando Parada puedes forzarle a hacer un tiro empleando su bonifiador de arma contra el tuyo propio. Si fracasa en este tiro su arma quedará trabada, impidiendo que pueda atacar o realizar técnicas de combate con ella hasta que escape. Esta técnica también puede usarse como reacción si detienes un ataque enemigo con Parada y te encuentras en *posición defensiva*.
+
+Un enemigo con la espada trabada podrá repetir el tiro al principio de su turno y en caso de un éxito podrá escapar. Si vuelve a fracasar su tiro puedes desarmarlo inmediatamente como reacción, haciendo que su arma caiga al suelo en una posición cercana. Este efecto también acabará si pierdes la concentración, te separas de tu objetivo o usas tu arma para cualquier otro propósito que no involucre a tu objetivo trabado.
+
+### Contrataque
+
+*Duelo, Reacción*
+
+**Coste:** 2 vigor
+
+Haces un rápido ataque para forzar 
+
+### Combinar técnicas
+
+*Duelo, Mejora*
+
+**Coste**: 2 vigor
+
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un coste en acciones.
 
 **Reposicionar**: Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
 

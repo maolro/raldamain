@@ -101,7 +101,7 @@ Inscribes un sello mágico en un objetivo que repele la magia espacial, impidien
 
 **Duración:** Instantáneo
 
-Distorsionas el espacio alrededor de un enemigo para que teletransportarlo forzosamente a otra posición. Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu Magia Espacial o será teletransportado un paso en cualquier dirección. Este cambio de posición repentino hará que tu objetivo pierda inmediatamente la concentración e interrumpirás toda acción que intente realizar. 
+Distorsionas el espacio alrededor de un enemigo para teletransportarlo forzosamente a otra posición. Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu Magia Espacial o será teletransportado un paso en cualquier dirección. Este cambio de posición repentino hará que tu objetivo pierda inmediatamente la concentración e interrumpirás toda acción que intente realizar. 
 
 Esto no afectará a objetivos con habilidades que les permitan mantener la concentración ante situaciones difíciles como Concentración superior. Tampoco podrás teletransportar al afectado dentro de una superficie sólida pero sí podrás moverlo a lugares que no puedas percibir claramente.
 
