@@ -85,7 +85,7 @@ Usar la acción de Ataque con arma con un arma pesada te cuesta una acción meno
 
 **Coste**: 2 vigor
 
-Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. Tras impactar a un objetivo aumenta tu daño base por 1d6 y este perderá un *contador de escudo* además de reducir su DEF por 2. Si ha detenido tu ataque con Parada su arma quedará *rota* si está hecha de un material inferior a la tuya.
+Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. Tras impactar a un objetivo aumenta tu daño base por 1d6 y este perderá un *contador de escudo* además que su armadura quedará *rota*. Si ha detenido tu ataque con Parada su arma quedará *rota* si está hecha de un material inferior a la tuya.
 
 ### Carga salvaje
 
