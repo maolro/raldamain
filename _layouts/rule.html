@@ -6,16 +6,6 @@ layout: page
   {% if page.image %}
   <img class="card-img-top" style="max-width:100%;height:auto;" src="{{ page.image }}">
   {% endif %}
-  <div class="card-body">
-    <h4 class="card-title">{{ page.title }}</h4>
-	<div class="card-text">
-		<dl class="row">
- {% for item in site.data.infobox.fields  %}
-		{% if page[ item.name ] %}<dt class="col-sm-6">{{ item.text }}</dt> <dd class="col-sm-6">{{ page[item.name] }}</dd> {% endif %}
- {% endfor %}
-		</dl>
-	</div>
-  </div>
 </div>
 <div class="container text-justify">
 
