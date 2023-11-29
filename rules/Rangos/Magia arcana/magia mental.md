@@ -166,6 +166,8 @@ Tu maestría mental te permite hablar con otras criaturas usando únicamente el 
 
 ## Rango IV
 
+Todos tus hechizos Mentales de Rango II reducen su coste en acciones por 1 (mínimo 1).
+
 ### Sugestión en masa
 
 *Mental, Arcana, Área, Duradera*
