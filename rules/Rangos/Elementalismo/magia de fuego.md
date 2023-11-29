@@ -1,6 +1,6 @@
 ---
 title: Magia de Fuego
-category: Magia elemental
+image: magia_fuego.jpg
 ---
 
 Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos de tu cuerpo para así poder emplear todo su poder destructivo. Cuanto más vas conectando con tu elemento, mayor se va volviendo tu sincronía con él dejándote alterarlo a un mayor nivel, cambiando su intensidad en incluso dándole forma. En el momento que tu poder alcance sus últimas etapas de crecimiento tu control será casi absoluto, pudiendo cualquier cosa entre tus llamas o incluso hacer que llueva fuego desde el mismísimo cielo.
