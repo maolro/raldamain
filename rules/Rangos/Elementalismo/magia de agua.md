@@ -1,5 +1,6 @@
 ---
 title: Magia de Agua
+image: magia_agua.jpg
 category: Magia elemental
 ---
 
