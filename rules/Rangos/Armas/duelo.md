@@ -13,6 +13,18 @@ category: Armas
 
 ### Ataque de arma
 
+*Duelo, Físico, Cuerpo a cuerpo*
+
+**Coste**: 2 acciones
+
+**Alcance**: Cuerpo a cuerpo
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+**Duración**: Instantáneo
+
+Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Duelo.
+
 ### Destreza defensiva
 
 ### Ataque preciso
