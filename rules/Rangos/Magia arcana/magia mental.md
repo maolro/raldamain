@@ -72,7 +72,7 @@ Aumentas tus defensas mentales frente a intrusiones enemigas. Mientras este hech
 
 **Duración:** Instantáneo
 
-Eres capaz de sugestionar determinados comportamientos a otras personas para que actúen de una manera más afín a tus intenciones. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Voluntad contra tu Magia mental o le condicionarás mentalmente para que actúe de una manera específica. Este nuevo comportamiento no debe contradecir la personalidad de tu objetivo ni ser ilógico para la situación en la que se encuentre. Algunos ejemplos son hacerle más amistoso hacia ti o que esté dispuesto a hacerte un pequeño favor.
+Eres capaz de sugestionar determinados comportamientos a otras personas para que actúen de una manera más afín a tus intenciones. Un objetivo a distancia media debe tener éxito en un tiro de Averiguar intenciones o Concentración  contra tu Magia mental o le condicionarás mentalmente para que actúe de una manera específica. Este nuevo comportamiento no debe contradecir la personalidad de tu objetivo ni ser ilógico para la situación en la que se encuentre. Algunos ejemplos son hacerle más amistoso hacia ti o que esté dispuesto a hacerte un pequeño favor.
 
 Si empleas este hechizo en un combate puedes condicionar a tu objetivo para que tome una acción específica en su turno siempre y cuando sea lógica según la situación. Algunos ejemplos son moverse a un lugar, emplear una habilidad de tu elección o atacar a un enemigo específico. 
 
@@ -102,7 +102,7 @@ Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes da
 
 **Duración:** Hasta que se recupere
 
-Tu control mental te permite cambiar las emociones de los demás con solo un gesto. Un objetivo a distancia media de ti deberá tener éxito en un tiro de Voluntad o Concentración frente a tu magia mental o alterarás su mente para que caiga en un estado emocional escogido por ti. 
+Tu control mental te permite cambiar las emociones de los demás con solo un gesto. Un objetivo a distancia media de ti deberá tener éxito en un tiro de Averiguar intenciones o Concentración  frente a tu magia mental o alterarás su mente para que caiga en un estado emocional escogido por ti. 
 
 Dicho estado permanecerá activo hasta que termine el combate y tu objetivo podrá repetir el tiro cada ronda para intentar liberarse de él. También se liberará de este efecto si acaba en una situación donde sienta una emoción suficientemente fuerte para cancelar el efecto recibido o empoderas una emoción distinta con este hechizo.
 
@@ -134,7 +134,7 @@ Tus hechizos Mentales de Rango I reducen su coste en acciones por 1 (mínimo 1).
 
 **Duración:** Hasta que sea eliminada
 
-Haces un ataque destructivo contra las mentes de un grupo de enemigos a distancia media que les enloquecerá temporalmente. Todas las criaturas en una esfera pequeña centrada en un punto a distancia media deben tener éxito en un tiro de Concentración o Voluntad contra tu Magia mental o reducirán su cordura por un valor igual a tu Rango + 1 y quedarán *confundidos* durante el resto del combate. 
+Haces un ataque destructivo contra las mentes de un grupo de enemigos a distancia media que les enloquecerá temporalmente. Todas las criaturas en una esfera pequeña centrada en un punto a distancia media deben tener éxito en un tiro de Averiguar intenciones o Concentración  contra tu Magia mental o reducirán su cordura por un valor igual a tu Rango + 1 y quedarán *confundidos* durante el resto del combate. 
 
 Una criatura *confundida* podrá repetir el tiro una vez por ronda y se liberará de él en caso de éxito. Este hechizo también dejará de funcionar si un afectado ya no se encuentra una situación estresante durante una ronda.
 
@@ -152,7 +152,7 @@ Una criatura *confundida* podrá repetir el tiro una vez por ronda y se liberar�
 
 **Duración:** Un día
 
-Tus habilidades de condicionamiento mental te permiten sobrepasar el comportamiento normal de una criatura para que siga una orden sin rechistar. Un objetivo a distancia media debe tener éxito en un tiro de Concentración o Averiguar Intenciones contra tu Magia Mental o le implantas una orden mental que estará forzado a seguir. 
+Tus habilidades de condicionamiento mental te permiten sobrepasar el comportamiento normal de una criatura para que siga una orden sin rechistar. Un objetivo a distancia media debe tener éxito en un tiro de Averiguar intenciones o Concentración  contra tu Magia Mental o le implantas una orden mental que estará forzado a seguir. 
 
 Esa orden mental permanecerá implantada durante un día y puedes activarla cuando desees para que tu objetivo la obedezca forzosamente durante una ronda. Dicha orden no puede atentar contra el instinto de supervivencia de tu objetivo y ni forzarlo a herir a sus seres queridos salvo que su cordura haya sido reducida a 0 o se encuentre *confundido*.
 
@@ -168,7 +168,37 @@ Tu maestría mental te permite hablar con otras criaturas usando únicamente el 
 
 ### Sugestión en masa
 
+*Mental, Arcana, Área, Duradera*
+
+**Coste:** 3 acciones y 2 chi
+
+**Tamaño:** Esfera media
+
+**Duración:** Concentración
+
+Manipulas sutilmente el comportamiento de un gran grupo de individuos para que actúen tal como desees. Todas las criaturas a distancia media de ti deben tener éxito en un tiro de Averiguar intenciones o Concentración o quedarán mentalmente condicionadas a realizar las acciones que escojas esta ronda. Dichas acciones no deben resultar ilógicas para la situación ni ir en contra de la personalidad y estado mental de los afectados, funcionando de la misma manera que el hechizo Sugestión. 
+
+Este hechizo permanecerá activo hasta que pierdas la concentración y toda criatura que permanezca a distancia media de ti deberá repetir el tiro al principio de su turno o volverás a afectarle con este hechizo. Aquellas criaturas que hayan tenido éxito una vez en este tiro no podrán volver a ser afectadas y no notarán que han sido condicionadas por un efecto mental. 
+
+**Empoderar** (1 chi): Una criatura que ya esté afectada por Sugestión deberá repetir el tiro inmediatamente contra este hechizo y si fracasa seguirá una de tus órdenes sin rechistar, afectándole de la misma manera que Geas. 
+
 ### Modificar recuerdos
+
+*Mental, Arcana, Duradera*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Permanente
+
+Modificas la memoria de una criatura que puedas detectar para que olvide información clara o recuerde determinados sucesos de una manera diferente. Una criatura a distancia media  cuya mente puedas detectar deberá tener éxito en un tiro de Averiguar intenciones o Concentración contra tu Magia mental o manipulas una porción de sus recuerdos de hasta diez minutos de duración. 
+
+Este hechizo permite hacer que el objetivo olvide determinados sucesos o reciba varios recuerdos implantados. No obstante, si le implantas recuerdos demasiado inverosímiles o contradictorios los tratará como si fueran un sueño o alucinaciones suyas. Dicha alteración durará hasta que el afectado se dé cuenta que esos recuerdos eran ficticios si tiene evidencias suficientes para desmentirlo. 
+
+Una modificación de los recuerdos es especialmente peligrosa para enemigos al borde de la locura. Si afectas a un objetivo con 0 cordura con este hechizo puedes alterar recuerdos de cualquier momento de su vida o hasta hacerle olvidar determinadas habilidades que tiene, pudiendo así eliminarle hasta cuatro Rangos de habilidad que tenga hasta que se recupere de este hechizo.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechiz
 
 ### Aura emocional
 
@@ -180,13 +210,9 @@ Tu maestría mental te permite hablar con otras criaturas usando únicamente el 
 
 **Duración:** Concentración
 
-Al activar esta hechizo todas las criaturas a distancia media de ti deben tener éxito en un tiro de Concentración o Voluntad frente a tu Magia mental o reforzarás una de sus emociones durante una ronda, funcionando de igual manera a Alterar emociones. Este hechizo permanecerá activo hasta que pierdas la concentración y mientras lo esté toda criatura que acabe su turno o entre por primera vez esta ronda en un espacio a distancia media de ti volverá a ser afectado por este hechizo.
+Al activar esta hechizo todas las criaturas a distancia media de ti deben tener éxito en un tiro de Averiguar intenciones o Concentración  frente a tu Magia mental o reforzarás una de sus emociones durante una ronda, funcionando de igual manera a Alterar emociones. Este hechizo permanecerá activo hasta que pierdas la concentración y mientras lo esté toda criatura que acabe su turno o entre por primera vez esta ronda en un espacio a distancia media de ti volverá a ser afectado por este hechizo.
 
 **Empoderar** (1 chi): Cancela un efecto Mental o de Moral empleado contra una criatura que se encuentre en el área afectada por esta habilidad.
-
-**Sugestión en masa** (3 Acciones y 2 chi, Mental, Concentración): Haz el efecto de *sugestión* contra todas las criaturas en una distancia lejana de ti. Las criaturas afectadas estarán también más dispuestas a tomar determinadas acciones que propongas siempre y cuando les parezcan razonables, y cuando el efecto pare no sabrán que han sido influenciadas.
-
-**Modificar recuerdos** (3 Acciones y 2 chi, Mental): Manipulas hasta 10 minutos de recuerdos que tenga un objetivo cuya mente puedas detectar, el cual se defender tirando SAB. Esta habilidad te permite hacer que el objetivo olvide lo que tú desees o reciba varios recuerdos implantados, pero si estos son demasiado inverosímiles el afectado lo tratará como si fuera un sueño. Si el objetivo tiene 0 cordura puedes alterar recuerdos de cualquier momento de su vida.
 
 ## Rango V  
 

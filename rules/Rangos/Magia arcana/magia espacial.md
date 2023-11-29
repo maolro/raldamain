@@ -137,7 +137,9 @@ Un ataque infundido con una brecha espacial atravesará hasta la realidad misma,
 
 Formas una red de portales pequeños que te permite atacar de maneras inesperadas y redirigir ataques fallidos. La red de portales llenará un espacio del tamaño de una esfera mediana y mientras permanezca activa todo ataque o hechizo que lances en ella incrementará su alcance a mediano e ignorará barreras y cubierta en su camino. Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado.
 
+Eres también capaz de aprovechar los portales para redirigir ataques fallidos hechos por cualquier criatura en la zona afectada. Una vez por ronda como reacción a que un ataque de cualquier falle a su objetivo original puedes redirigirlo hacia la misma criatura o una diferente forzando a su lanzador a tirar de nuevo para impactar. Dado que es el mismo ataque no significará un gasto de chi o acciones. 
 
+**Empoderar** (1 chi): Redirige un ataque adicional esta ronda. No puedes empoderar de esta manera para redirigir el mismo ataque de nuevo.
 
 ### Invocar extraplanario
 
@@ -152,10 +154,6 @@ Llamas a una criatura extraplanaria a través de los caminos del chi para que en
 Las invocaciones permanecerán en el campo de batalla durante una hora o hasta que mueran y no puedes tener invocadas más de cuatro criaturas simultáneamente. A rangos más altos podrás invocar criaturas de mayor poder, aumentando el nivel de la criatura invocada en 2 por cada Rango que tengas en magia Espacial por encima del III. 
 
 **Empoderar** (1 chi): Invoca una criatura adicional del mismo nivel con este hechizo.
-
-**Brecha espacial** (1 Acción y 2 chi, Arcano, Espacial, A distancia): Haz un ataque con magia es pacial contra un objetivo a distancia lejana que al impactar provocará una brecha espacial, infligiéndole 1d8 + INT daño fuerza que provoca heridas permanentes al reducir PV además que todos los objetos cercanos a la brecha serán transportados a otra dimensión (se puede tirar FUE para evitar este efecto). La brecha permanecerá mientras te concentres en ella y cada criatura adyacente a ella al principio de su turno deberá volver a tirar para defenderse o sufrirá de nuevo sus efectos.
-
-**Bifurcación espacial** (1 Acción y 2 chi, Espacial, Concentración, Arcano): Creas un *portal menor* que conecta simultáneamente con dos puntos en el espacio. Todos los ataques mágicos que crucen el portal emergerán de los dos portales, permitiéndote hacer un ataque adicional del mismo tipo sin la necesidad de gastar chi. Esta habilidad permanecerá activa durante una ronda y puedes prolongar su efecto gastando 1 chi.
 
 ## Rango IV
 
