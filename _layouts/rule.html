@@ -28,3 +28,9 @@ layout: page
   Index
 {%endif%}
 </h2>
+
+{% include toc.html html=content %}
+
+<h{{ content | split: '<h' | shift | join:'<h' }}
+
+</div>
