@@ -61,6 +61,10 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y romper sus defensas. Haz un ataque de arma contra un enemigo adyacente que infligirá 1d4 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda.
 
+### Ataque torbellino
+
+*Duelo, Mejora*
+
 ## Rango III 
 
 ### Espadas trabadas
@@ -75,13 +79,9 @@ Trabas diestramente el arma de un enemigo para impidir que pueda usarla, obtenie
 
 Un enemigo con la espada trabada podrá repetir el tiro al principio de su turno y en caso de un éxito podrá escapar. Si vuelve a fracasar su tiro puedes desarmarlo inmediatamente como reacción, haciendo que su arma caiga al suelo en una posición cercana. Este efecto también acabará si pierdes la concentración, te separas de tu objetivo o usas tu arma para cualquier otro propósito que no involucre a tu objetivo trabado.
 
-### Contrataque
+### Ataque saltarín
 
-*Duelo, Reacción*
-
-**Coste:** 2 vigor
-
-Haces un rápido ataque para forzar 
+*Duelo, Mejora*
 
 ### Combinar técnicas
 
@@ -91,15 +91,19 @@ Haces un rápido ataque para forzar
 
 Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un coste en acciones.
 
-**Reposicionar**: Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
-
-**Asesinato**: Cada impacto contra una criatura sorprendida cuenta como golpe crítico.
-
 ## Rango IV
 
-**Ataque saltarín:** Tu arma aumenta su alcance a cercano.
+### Contrataque
 
-**Precisión mortal:** Al realizar un ataque apuntado puedes escoger la parte del cuerpo donde infliges una herida permanente.
+*Duelo, Reacción*
+
+**Coste:** 2 vigor
+
+### Danza del espadachín
+
+*Duelo, Duradera*
+
+
 
 ## Rango V 
 
