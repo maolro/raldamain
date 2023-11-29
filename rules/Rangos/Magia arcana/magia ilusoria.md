@@ -108,7 +108,7 @@ Esta alteración del terreno afectará también a determinadas habilidades ambie
 
 ## Rango III
 
-Todos tus hechizos Ilusorios de Rango I reducen su coste en acciones por 1 (mínimo 1): Además, las ilusiones que creas su tamaño a una esfera mediana además que serán sonoras.
+Todos tus hechizos Ilusorios de Rango I reducen su coste en acciones por 1 (mínimo 1).  Además, las ilusiones que creas su tamaño a una esfera mediana además que serán sonoras.
 
 ### Dobles ilusorios
 
@@ -161,6 +161,8 @@ Empleando ilusiones simulas cualquier hechizo que conozcas o hayas observado, co
 Si conviertes tu hechizo en fantasmal tu objetivo creerá que sus efectos son reales, pudiendo así provocarle daño y efectos de estado hasta que durarán hasta que desmienta la ilusión. En el caso que logres reducir a un enemigo a menos de 0 PV con un hechizo fantasmal tu objetivo caerá inconsciente de inmediato al creer que está mortalmente herido. En todo caso no presentará heridas reales y todo el daño que sufra de esta manera será meramente psicológico.
 
 ## Rango IV
+
+Todos tus hechizos Ilusorios de Rango II reducen su coste en acciones por 1 (mínimo 1).
 
 **Velo de engaños** (2 AP y 2 chi, Ilusión, Concentración): Empleas ilusiones para alterar la apariencia de todas las criaturas en un radio medio para que no sean capaces de distinguir aliados de enemigos. Los afectados deberán tirar SAB contra tu magia ilusoria y si fracasan estarán *confundidos* además que perderán todos los beneficios de moral y flanqueo. Cada vez que un objetivo desmienta una ilusión podrá repetir el tiro de SAB contra ti para desmentir el efecto total.
 
