@@ -2,16 +2,29 @@
 layout: page
 ---
 
+<div class="float-lg-right card ml-2 mb-1" style="max-width:400px;width:100%" >
+  {% if page.image %}
+  <img class="card-img-top" style="max-width:100%;height:auto;" src="{{ page.image }}">
+  {% endif %}
+  <div class="card-body">
+    <h4 class="card-title">{{ page.title }}</h4>
+	<div class="card-text">
+		<dl class="row">
+ {% for item in site.data.infobox.fields  %}
+		{% if page[ item.name ] %}<dt class="col-sm-6">{{ item.text }}</dt> <dd class="col-sm-6">{{ page[item.name] }}</dd> {% endif %}
+ {% endfor %}
+		</dl>
+	</div>
+  </div>
+</div>
 <div class="container text-justify">
 
-{% include breadcrumbs.html page=page %}
-
 {{ content | split: '<h' | first | markdownify }}
-
-<h2>{% if page.lang == 'es' %}Índice{%else%}Index{%endif%}</h2>
     
-{% include toc.html html=content %}
-
-<h{{ content | split: '<h' | shift | join:'<h' }}
-
-</div>
+<h2>
+{% if page.lang == "es" %}
+  Índice    
+{%else%}
+  Index
+{%endif%}
+</h2>
