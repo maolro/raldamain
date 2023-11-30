@@ -9,31 +9,61 @@ Tu mente está conectada con la inteligencia colectiva del universo, transformá
 
 ### Vínculo akhásico
 
+*Innata, Pasiva*
+
+Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Una cantidad de veces al día igual a tu Rango + 2 puedes repetir un tiro de ataque, defensa, salvación o habilidad y quedarte con el resultado que más te convenga. Esta habilidad solo puede usarse una vez por tiro y puede contrarrestarse si la criatura enfrentada emplea una habilidad que le permita repetir tiros. 
+
+**Empoderar** (1 chi o vigor): Recuperas un uso de esta habilidad.
+
 ### Hipercognición
 
-**Vínculo akhásico** (acción bonus) Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 2 como acción bonus usable una vez al turno puedes repetir un tiro de habilidad, ataque o defensa de tu elección y quedarte con el mejor resultado. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) acumula los usos de ambas habilidades. (1 chi) Recarga un uso de esta habilidad
+*Innata, Pasiva*
 
-**Hipercognición**: Tu mente tiene mayor capacidad para recopilar y recordar información. Puedes conocer información de cualquier ámbito de estudio al hacer un tiro de conocimiento y aprender un lenguaje nuevo sólo te cuesta un mes de estudio. (1 chi) Conoces instantáneamente un dato relacionado con cualquier ámbito o recibes la capacidad de hablar y entender un idioma cualquiera durante una hora.
+Tu mente tiene mayor capacidad para recopilar y recordar información, pudiendo así aprender de manera extremadamente rápida. Puedes conocer información de cualquier ámbito de estudio al hacer un tiro de Memoria y aprender un lenguaje nuevo sólo te costará un mes de estudio. Este nivel superior de cognición te otrogará también Resistencia a efectos Mentales.
+
+Este nivel superior de conocimiento te permite también descubrir los secretos detrás de la magia arcana. Aprendes dos hechizos adicionales pertenecientes a cualquier rama de Magia Arcana, los cuales puedes lanzar empleando vigor en lugar de chi. Dichos hechizos emplearán como bonificador la suma de tu INT y tu Rango de Ascendencia Akhásica además que deben ser aprobados por el DJ. En el caso que no tengas ningún Rango relacionado con la Magia Arcana tus hechizos tendrán un sobrecoste de 1 chi o vigor adicional.
 
 ## Rango II
 
 Incrementa tu estadística de INT y su limitador por 1.
 
-### Meditación
+### Meditación ilumindada
+
+*Innata, Duradera*
+
+**Coste:** 3 acciones y 1 chi
+
+**Duración:** Concentración
+
+Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, alcanzando así un estado mental superior. Mientras permanezcas en dicho estado recibirás Ventaja en todos tus tiros relacionados con la estadística de INT además de la capacidad de defenderte de ataques sorpresa. Los beneficios de Meditación Iluminada durarán hasta que pierdas la concentración o pases por una situación intensa emocional.
 
 ### Sentido mágico
 
-**Meditación** (3 acciones y 1 chi) Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. El estado meditativo durará hasta que pierdas la concentración y mientras permanezca activo recibes ventaja en todos tus tiros de estudio y recibirás un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de ascendencia akhásica - 1. Recibirás también ventaja tiros de magia si has entrado en el mundo onírico o en un duelo psíquico en estado de meditación.
+*Innata, Pasiva*
 
-**Sentido mágico**: Tienes un sexto sentido para la magia, el cual te permite detectar las impresiones y efectos dejados por ella. Con esta habilidad detectas la posición y fuerza aproximada de todas las criaturas y auras mágicas en una distancia media. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia puedes emplear 1 chi para conocer más información sobre la naturaleza de la presencia mágica que le afecte (la información será proporcionada por el máster).
+Tienes un sexto sentido para la magia, el cual te permite detectar las impresiones y efectos dejados por ella. Eres capaz de detectar la posición y fuerza aproximada de todas las criaturas y auras mágicas a distancia media de ti. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia magia puedes aprender más información sobre la fuerza, antigüedad o naturaleza de esta.
 
 ## Rango III
 
-Obtienes Resistencia 2 a daño físico. 
+Aprendes dos hechizos Arcanos adicionales de Rango II o menos, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-**Fortaleza del pensamiento** (2 acciones y 1 chi): Forma una barrera física o mental que envolverá un radio cercano centrado en ti sustentada por la fuerza de tu voluntad. Si escoges barrera física esta funcionará cómo un muro hecho de fuerza con 3 defensa y PV iguales a tu rango de ascendencia x 2, mientras que la barrera mental aumentará la resistencia mental de todas las criaturas aliadas por un valor igual a tu rango de ascendencia + 1. Fortaleza del pensamiento permanecerá mientras mantengas la concentración, desvaneciéndose si eres incapacitado o sufres un efecto mental. 
+### Forma astral
 
-**Psicomagia**: Eres capaz de lanzar hechizos usando únicamente el poder de tu mente. Con esta habilidad no necesitas gesticular para usar magia, requiriendo sólo mantener tus facultades mentales. Además, puedes elegir sufrir 2 daño a la cordura para añadir 1 chi adicional a tu reserva hasta tres veces al turno.  
+*Innata, Duradera*
+
+**Coste:** 3 acciones y 2 chi
+
+**Duración:** concentración
+
+A través de un ritual de meditación puedes liberar a tu mente de las ataduras del cuerpo, convirtiéndote en una criatura de pensamiento puro. Cuando actives este hechizo tu cuerpo físico caerá inconsciente y manifestarás un cuerpo incorpóreo, el cual adoptará el aspecto que desees y no podrá alejarse más de cien metros de tu cuerpo. La forma astral se desvanecerá si tu cuerpo físico es dañado o si es afectada con *eliminar magia* u otros hechizos similares.
+
+En esta forma eres completamente incorpóreo, recibiendo así Inmunidad a todos los efectos que no sean Arcanos o Divinos además que recibirás velocidad de vuelo 1. No obstante, solo podrás realizar acciones que requieran esfuerzo únicamente mental y no podrás interactuar con objetos físicos. A rango V puedes utilizar esta habilidad para viajar al vacío entre dimensiones, pudiendo así entrar como criatura astral en otros planos o dominios conecntados con la región del plano material donde te encuentres.
+
+### Psicomagia
+
+*Innata, Pasiva*
+
+Eres capaz de lanzar hechizos empleando únicamente el poder de tu mente. No necesitas gesticular o hablar para lanzar hechizos, requiriendo únicamente que mantengas tus facultades mentales. Además, puedes reducir tu Cordura por 2 para recuperar 1 chi o vigor de tus reservas hasta tres veces por ronda.
 
 ## Rango IV
 
@@ -41,7 +71,7 @@ Incrementa tu SAB por 1.
 
 **Visión verdadera**: La razón te permite ver más allá del mundo sensible, percibiendo el mundo como realmente es. Tienes visión verdadera en un radio medio, lo cual te permite percibir a criaturas invisibles e ilusiones como realmente son. Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede causarte daño mental si intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres pueden ser inconcebibles para mentes humanas.
 
-**Forma astral** (3 acciones y 2 chi): A través de un ritual de meditación puedes liberar a tu mente de las ataduras del cuerpo, convirtiéndote en una criatura de pensamiento puro. Tu forma astral puede tener el aspecto que tú desees y no podrá alejarse más de 100 metros de tu posición. En esta forma eres incorpóreo e inmune a daño elemental y mágico, pero sólo podrás realizar acciones que requieran esfuerzo únicamente mental. Forma astral se desvanecerá si tu cuerpo es dañado o si esta es afectada con *eliminar magia* o efectos similares. A rango VI puedes utilizar esta habilidad para viajar al Plano Astral, una dimensión paralela a la realidad que conecta todos los mundos.
+**Fortaleza del pensamiento** (2 acciones y 1 chi): Forma una barrera física o mental que envolverá un radio cercano centrado en ti sustentada por la fuerza de tu voluntad. Si escoges barrera física esta funcionará cómo un muro hecho de fuerza con 3 defensa y PV iguales a tu rango de ascendencia x 2, mientras que la barrera mental aumentará la resistencia mental de todas las criaturas aliadas por un valor igual a tu rango de ascendencia + 1. Fortaleza del pensamiento permanecerá mientras mantengas la concentración, desvaneciéndose si eres incapacitado o sufres un efecto mental. 
 
 ## Rango V
 

@@ -19,15 +19,31 @@ Magia de Almas tiene las siguientes reglas fundamentales que se aplican a cualqu
 
 *Alma, Pasiva*
 
+Eres capaz de establecer fuertes vínculos con almas fallecidas para obtener temporalmente su poder y conocimientos para asistirte en el campo de batalla. Esta habilidad te permite obtener Ventaja en todos tus tiros relacionados con una estadística de tu elección además de la capacidad de emplear dos hechizos o técnicas de combate de Rango I relacionados con el alma canalizada. La naturaleza exacta de los beneficios debe estar permitida con el DJ y ser coherente con el alma canalizada.
 
+Canalizar el poder de los muertos tiene el riesgo que el alma canalizada intente suplantar tu identidad, poniendo en riesgo tu mente misma. No podrás pasar más de seis rondas seguidas canalizando un alma en el momento que abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado canalizando un alma. Si esto redujera tu cordura a 0 recibirás una *locura permanente* y tu cuerpo quedará poseído por el espectro canalizado, perdiendo así control de tu personaje hasta que pase un día o el espectro escoja marcharse.
 
 ### Exorcismo
 
 *Alma, Ataque*
 
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto crítico:** El espectro afectado quedará *aturdido* durante una ronda
+
+**Duración:** Instantáneo
+
+Empleas tu control sobre las almas para enviar a espectros hostiles de vuelta al mundo de los muertos. Un espectro a distancia media deberá tener éxito en un tiro de CAR frente a tu Magia de Alcmas o sufrirá 1d6 + INT daño obligatorio y quedará *ralentizado* durante una ronda. Si logras reducir los PV de un espectro a 0 lo enviarás  de vuelta al mundo de los muertos y no podrá volver a ser invocado hasta que pase un día.
+
+**Empoderar** (1 chi): Afecta a un espectro adicional a distancia media con este hechizo.
+
 ### Sentido de muerte
 
 *Alma, Pasiva*
+
+Tus conocimientos del más allá te han dotado un sexto sentido capaz de notar las presencias espectrales. Obtienes la capacidad de detectar la presencia de no-muertos y criaturas extraplanarias a distancia grande además que puedes percibir su posición exacta. Obtienes también Resistencia a todos los hechizos y habilidades empleadas por espectros contra ti.
 
 ## Rango II
 
@@ -35,13 +51,35 @@ Magia de Almas tiene las siguientes reglas fundamentales que se aplican a cualqu
 
 *Alma, Invocación*
 
+**Coste:** 3 acciones y 1 chi
+
+Llamas a un espectro aliado para que te asista en el campo de batalla, confiando en sus servicios para acabar con tus enemigos. El espectro tendrá como máximo nivel 4 y permanecerá en el campo de batalla durante una hora o hasta que pierda todos sus PV. No puedes volver a invocar a un espectro derrotado de esta manera hasta que pase un día. Mientras que el espectro será un aliado puede rechazar tus órdenes si van en contra de su naturaleza y priorizará sus objetivos sobre los tuyos tal como decida el DJ.
+
+No puedes canalizar al mismo espectro mientras lo invocas y no podrás tener invocados a más de cuatro espectros invocados a la vez. Al aumentar tu Rango de Médium el nivel máximo de los espetros invocados incrementará en 2 por cada Rango que tengas por encima de II.
+
+**Empoderar** (1 chi): Puedes canalizar a un espectro invocado durante una ronda, pudiendo así obtener los beneficios de Canalizar ánima con normalidad
+
 ### Hablar con los muertos
 
 *Alma, Ritual*
 
+Llamas a un alma fallecida para que te responda determinadas preguntas y te revele secretos del pasado. Para realizar este ritual debes poseer un objeto valioso suyo o encontrarte en un lugar significativo para ella. Cuando sea invocada puedes hacerle un máximo de cuatro preguntas que te responderá con sinceridad en base a sus conocimientos. 
+
+Dependiendo de la antigüedad del alma y su relación contigo el DJ puede fijar una dificultad que deberás superar con tu tiro de Magia de Almas para completar exitosamente este ritual. Después de realizar este ritual no puedes volver a invocar a la misma alma hasta que pase por lo menos un día y esta puede no manifestarse si así lo desea.
+
 ### Robar alma
 
 *Alma, Reacción*
+
+**Coste:** 1 chi
+
+**Duración:** Un día
+
+Capturas el alma de otra criatura en un momento que se encuentre cerca de la muerte para enviarla al más allá. Como reacción empleable cuando un enemigo caiga a 0 PV puedes forzarle a tener éxito en un tiro de CON frente a tu Magia de Almas o separas su alma de su cuerpo, matándolo instantáneamente.
+
+Después de capturar un alma puedes mantenerla cautiva durante un periodo de como máximo de un día. momento en el cual migrará al más allá y quedará fuera de tu control. Eres capaz de emplear los hechizos Hablar con los Muertos, Invocar espectro y Canalizar Ánima en el alma robada sin que tenga la oportunidad de resistirse, obteniendo efectos apropiados tal como decida el DJ. El alma también se liberará si piredes la concentración durante un combate.
+
+**Empoderar** (1 chi): Absorbe un alma adicional de otra criatura a 0 PV. No puedes tener cautivas más de cuatro almas simultáneamente.
 
 ## Rango III	
 
