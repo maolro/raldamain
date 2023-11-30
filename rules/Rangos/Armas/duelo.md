@@ -7,6 +7,10 @@ category: Armas
 
 # Reglas fundamentales
 
+Estilo de Armas de Duelo tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de vigor:** Tu rango en Estilo de Armas de Duelo mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+
 # Rangos
 
 ## Rango I
@@ -31,13 +35,18 @@ Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcan
 
 Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo usando Parada puedes hacer también un tiro de Esquiva y quedarte con el resultado que más te convenga. Esto te permite también usar habilidades pertenecientes a Reflejos para en tus tiros de Parada.
 
-### Estocada poderosa
+### Truco de espada
 
-*Duelo, Mejora*
+*Duelo, Mejora, Maniobra*
 
 **Coste:** 1 vigor
 
+Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al activar esta habilidad puedes hacer una maniobra de combate como acción bonus, mejorando el ataque que acabas de hacer. Solo puedes activar una maniobra por ataque y puedes crear técnicas propias si lo permite el DJ. Estos son algunos ejemplos de maniobras que puedes realizar.
 
+- **Paso rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
+- **Al suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. 
+- **Cambio repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
+- **Estocada fuerte:** Aumentas el daño base de tu ataque por 1d6 y provocas *sangrado* al impactar si tu objetivo lleva armadura li
 
 ## Rango II
 
@@ -65,6 +74,12 @@ Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y rompe
 
 *Duelo, Mejora*
 
+**Coste:** 1 vigor
+
+Giras velozmente tu arma para acabar con todos los enemigos que te rodean, atacándoles como si fueras un torbellino de acero. Tu siguiente ataque de arma afectará a todos los objetivos adyacentes a ti además que aumentará su daño base por 1d6. 
+
+No podrás añadir mejoras a este ataque que afecten a un objetivo específico. Además, si un enemigo elige emplear Parada para detener tu tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del suyo. Lo mismo ocurrirá si gasta *contadores de escudo* o coloca una barrera en medio.
+
 ## Rango III 
 
 ### Espadas trabadas
@@ -75,13 +90,19 @@ Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y rompe
 
 **Duración:** Concentración
 
-Trabas diestramente el arma de un enemigo para impidir que pueda usarla, obteniendo así una posición dominante en el enfrentamiento. En respuesta a que un enemigo detenga uno de tus ataques usando Parada puedes forzarle a hacer un tiro empleando su bonifiador de arma contra el tuyo propio. Si fracasa en este tiro su arma quedará trabada, impidiendo que pueda atacar o realizar técnicas de combate con ella hasta que escape. Esta técnica también puede usarse como reacción si detienes un ataque enemigo con Parada y te encuentras en *posición defensiva*.
+Trabas diestramente el arma de un enemigo para impidir que pueda usarla, obteniendo así una posición dominante en el enfrentamiento. En respuesta a que un enemigo detenga uno de tus ataques usando Parada puedes forzarle a hacer un tiro empleando su bonificador de arma contra el tuyo propio. Si fracasa en este tiro su arma quedará trabada, impidiendo que pueda atacar o realizar técnicas de combate con ella hasta que escape. Esta técnica también puede usarse como reacción si detienes un ataque enemigo con Parada y te encuentras en *posición defensiva*.
 
 Un enemigo con la espada trabada podrá repetir el tiro al principio de su turno y en caso de un éxito podrá escapar. Si vuelve a fracasar su tiro puedes desarmarlo inmediatamente como reacción, haciendo que su arma caiga al suelo en una posición cercana. Este efecto también acabará si pierdes la concentración, te separas de tu objetivo o usas tu arma para cualquier otro propósito que no involucre a tu objetivo trabado.
 
 ### Ataque saltarín
 
 *Duelo, Mejora*
+
+**Coste:** 2 vigor
+
+Haces un rápido salto para atacar a enemigos lejanos y mejorar la potencia de tu ataque. Antes de hacer un ataque puedes activar esta habilidad para saltar un paso en cualquier dirección y mejorar su daño base por 2d6. Este salto puede hacerse en vertical para atacar a enemigos que estén encima de ti.
+
+Al hacer un ataque de esta manera obtendrás Ventaja defendiéndote de ataques almacenados y de oportunidad, como son aquellos otorgados por Preparación contra Cargas. Además, si atacas a una criatura voladora esta recibirá Desventaja en su tiro defensivo. 
 
 ### Combinar técnicas
 
@@ -99,25 +120,38 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 **Coste:** 2 vigor
 
+Aprovechas las apreturas que genera un enemigo al atacarte para hacer un rápido golpe con tu espada capaz de interrumpir sus acciones. En respuesta a que un enemigo adyacente realice una acción de cualquier tipo puedes hacerle un ataque empleando tu arma como reacción. 
+
+Si logras impactar con este ataque interrumpirás la acción enemiga, provocando así que nunca llegue a acabarla y pierda todas las acciones invertidas en ella. No obstante, tu objetivo no perderá el chi o vigor que haya invertido en la acción interrumpida dado que nunca llegó a finalizarse.
+
 ### Danza del espadachín
 
 *Duelo, Duradera*
 
+**Coste:** 2 acciones y 2 vigor
 
+**Duración:** Concentración
+
+Entras en un estado de absoluta concentración donde te vuelves uno con la espada, atacando y defendiéndote como si fuera una extensión de tu cuerpo. Mientras esta habilidad permanezca activa recibirás Ventaja en todos tus tiros de ataque relacionados con armas de Duelo además que podrás entrar en *posición defensiva* como acción bonus una vez por ronda. 
+
+Esta habilidad durará hasta que pierdas la concentración o seas desarmado. Esta habilidad también te permite emplear tu arma de Duelo para detener ataques a distancia físicos que no sean excesivamente rápidos, como flechas o piedras.
+
+**Empoderar** (1 vigor): Reduces el daño de un ataque que no hayas logrado detener exitosamente con tu Parada a la mitad. Esta reducción se aplicará antes de la DEF y solo puedes activarla una vez por ataque.
+
+### Estocada fuerte
+
+*Duelo, Mejora*
+
+**Coste:** 2 chi
+
+Haces una poderosa estocada hacia un enemigo para penetrar sus defensas y herirlo gravemente en una parte específica del cuerpo. Esta técnica mejorará el daño base de tu siguiente ataque por 2d6 y provocará una *herida permanente leve* al impactar. 
+
+Este ataque ignorará la DEF otorgada por armaduras que no sean completas y hará falta gastar un *contador de escudo* adicional para detenerlo. Si el afectado emplea un hechizo para detener un ataque tuyo que haya impactado le seguirás infligiendo la mitad de daño.
 
 ## Rango V 
 
-**Ataque vital:** Al realizar un ataque apuntado aumenta el daño por 1d6 por cada acción empleada para apuntar.
+### Secuencia de cortes
 
-**Oportunista:** Como reaccióncuando un enemigo sea impactado por un aliado puedes hacerle un ataque de arma que cuenta como flanqueo. Esta habilidad puede usarse solo una vez por enemigo 
+## Rango VI
 
-## Armas
-
-Un arma de filo perforante base hace 1d6 + FUE daño perforante y tiene alcance cuerpo a cuerpo. Esta puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
-
-- **Lanzamiento:** El arma puede lanzarse a una distancia de 20 pies, funcionando como un arma a distancia. Tirarás tus dados de arma para un ataque de lanzamiento y se continuarán aplicando las habilidades *ataque furtivo*, *ataque vital* y *finta*. Lanzamiento puede aplicarse a cualquier arma de filo perforante que tenga la característica sutil.
-- **Sutil:** El arma es de menor tamaño y más fácil de utilizar. Un arma sutil reduce su daño base a 1d4, pero es capaz de penetrar los puntos débiles de la armadura de tu objetivo. Al realizar un ataque apuntado reduce el coste adicional en acciones por 1 debido a la armadura que lleve tu objetivo (mínimo 1). Vuelve a reducir el coste de acciones por 1 cuando alcances rango III y V con tu arma.
-- **Duelo:** El arma es más larga y fina, haciéndola ideal para duelos de espadas. Un arma de duelo aumenta su daño base a 1d8 y recibe la habilidad [*choque de espadas*](https://raldamain.com/rules/Rangos/Armas/filos%20cortantes.html#rango-iii) a rango III, pero no podrá usarse en tu mano secundaria. Aun así, puedes obtener atributos en combate con dos armas si tienes un arma de duelo en tu mano principal y un arma sutil en tu mano secundaria.
-- **Cuchilla:**· El arma está dotada de varias cuchillas con las que puede infligir letales cortes. 1d6 + FUE daño cortante. +1 nivel heridas si el objetivo tiene 4 o menos DEF, pero apuntar cuesta +1 acción
-- **Retráctil:** El arma tiene la capacidad de encogerse con gran velocidad, permitiéndote mantenerla oculta y atacar cuándo tu objetivo menos se lo espera. Un arma retráctil es indetectable a primera vista y con ella podrás realizar ataques sorpresa, aunque tu objetivo te vea. Si atacas a una persona que te esté vigilando esta tendrá la oportunidad de tirar percepción o averiguar intenciones contra tus dados de ataque, dándose cuenta de tu arma si tiene éxito en el tiro. Como consecuencia de su versatilidad las armas retráctiles son muy frágiles y se romperán inmediatamente si las empleas para detener un arma que no tenga la característica *sutil*, *ligera* o *duelo*.
-- **Aguijón:** Tu cuerpo tiene un aguijón capaz de perforar a tus enemigos de la misma manera que una daga. Un aguijón infligirá 1d6 + FUE daño al impactar (1d8 si eres grande y 1d10 si eres gigante) y recibes *golpe destructor* a rango III pero dicha habilidad se aplicará a *ataque apuntado* en lugar de *ataque poderoso.* Solo puede usar esta arma si tus características fisiológicas lo permiten.
+### Maestro espadachín

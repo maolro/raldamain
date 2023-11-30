@@ -73,6 +73,8 @@ Formas un portal del tamaño de una persona que conectará dos puntos distantes 
 
 Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado. Si intentas cerrar una puerta dimensional y hay una criatura cruzándola esta puede hacer un tiro de Atletismo o Acrobacias contra tu Magia Espacial y si tiene éxito podrá aparecer en el lado de la puerta que más le convenga. En el caso que fracase se quedará donde está y sufrirá una *herida permanente leve* que no puede reducirse.
 
+Aquellos magos espaciales que tengan demiplanos o dominios propios pueden emplear este hechizo para viajar a él o transportar ahí a otras criaturas de manera forzosa. Si empleas este hechizo de tal manera su Alcance pasará a ser cuerpo a cuerpo y al emplearlo en una criatura hostil esta podrá resistirse con un tiro de CON frente a tu Magia Espacial.
+
 **Empoderar** (1 chi): Creas una Puerta dimensional como reacción para evitar un ataque enemigo o provocar que un objetivo pase por ella. Solo puedes crear una Puerta dimensional así si te encuentras en *posición defensiva* y un objetivo que intente pasar por la puerta puede evitarlo teniendo éxito en un tiro de Esquiva contra tu Magia Espacial.
 
 ### Ancla dimensional
@@ -121,7 +123,7 @@ Todos tus hechizos de Rango I reducen su coste en acciones por 1 (mínimo 1)
 
 Provocas una brecha entre dimensiones con uno de tus ataques para que sea capaz de atravesar cualquier barrera a su paso. Al lanzar este hechizo tu siguiente ataque podrá atravesar todo obstáculo en su paso, permitiéndote ignorar muros y barreras defensivas además de DEF y resistencias que tenga tu objetivo. Esto hará también que el ataque no pueda ser detenido empleando *contadores de escudo*.
 
-Un ataque infundido con una brecha espacial atravesará hasta la realidad misma, permitiéndote impactar a enemigos que intenten viajar a otras dimensiones o volverse incorpóreos para evitar el ataque. Si usas este hechizo en un dominio puedes crear inmediatamente una puerta al plano material para escapar de él.
+Un ataque infundido con una brecha espacial atravesará hasta la realidad misma, permitiéndote impactar a enemigos que intenten viajar a otras dimensiones o volverse incorpóreos para evitar el ataque. Si usas este hechizo en otra dimensión puedes crear inmediatamente una puerta al plano material para escapar de él mientras que si controlas tú un dominio o demiplano puedes transportar ahí forzosamente a la criatura que impactes en lugar de hacerle daño.
 
 **Empoderar** (1 chi): Este hechizo afectará un ataque adicional que realices esta ronda, permitiéndote recibir sus efectos de nuevo sin la necesidad de pagar chi.
 
@@ -177,15 +179,47 @@ Si tienes éxito en el tiro la criatura aparecerá en el lugar deseado mientras 
 
 ### Cambio de posición
 
+*Espacial, Arcana, Defensiva*
+
+**Coste:** 1 acción y 2 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** El afectado saldrá de *posición defensiva* al ser teletransportado forzosamente
+
+**Duración:** Instantánea
+
+Empleas tu control de magia espacial para intercambiar tu posición con la de otra criatura a distancia media de ti. Al afectar a una criatura hostil con este hechizo podrá resistirlo si tiene éxito en un tiro de CON frente a tu Magia Espacial, pero si fracasa ambos os teletransportaréis intercambiando vuestras posiciones. 
+
+Si te encuentras en *posición defensiva* puedes emplear este hechizo para intercambiar tu posición con un enemigo para evitar un ataque. Al emplear Cambio de posición de esta manera podrás evitar un ataque que te consiga impactar, provocando que este cambie su objetivo al nuevo objetivo con el que hayas cambiado tu posición. El afectado podrá defenderse del ataque que acabe de recibir si se encuentra en *posición defensiva*, pero en caso contrario recibirá el daño y los efectos del nuevo ataque.
+
+**Empoderar** (1 chi): Intercambias la posición de dos criaturas ajenas a distancia media de ti, las cuales pueden tirar CON para resistir este hechizo si lo desean.
+
 ### Cierre dimensional
 
-**Cambio de posición** (2 Acciones y 2 chi, Espacial, Arcano, Defensivo): Haz un ataque con magia espacial contra un objetivo a distancia media que solo puede defenderse con magia protectora o espacial que al impactar intercambiará tu posición con la suya. Esta habilidad puede usarse como reacción si estás en *posición defensiva*, evitando así un ataque hecho hacia ti.
+*Espacial, Arcano, Concentración*
 
-**Cierre dimensional** (3 Acciones y 2 chi, Espacial, Arcano, Concentración): Formas un sello en un área de radio largo que impide la teletransportación y el uso de magia espacial. El cierre durará una ronda o hasta que pierdas la concentración en él.
+**Coste:** 3 acciones y 2 chi
+
+**Tamaño:** Radio grande
+
+**Duración:** Concentración
+
+Cierras los canales de chi que conectan las diferentes posiciones del espacio para impedir que sean manipulados por otros magos. Al activar este hechizo colocarás un cierre dimensional en un radio grande, impidiendo así que otras criaturas puedan usar hechizos Espaciales o viajar a otras dimensiones. Un cierre impedirá también que criaturas fuera de él puedan teletransportarse ahí y permanecerá activo hasta que pierdas la concentración.
+
+Los efectos de un cierre también perjudicarán tu magia Espacial, provocándote Desventaja en todos tus tiros relacionados con ella e impidiendo que puedas lanzar hechizos Duraderos pertenecientes a esa categoría dentro de él. 
+
+**Empoderar** (1 chi): Permites que una criatura de tu elección pueda lanzar un hechizo espacial sin dificultades o evitas los penalizadores del cierre durante una ronda.
 
 ## Rango V 
 
-**Crear demiplano** (Ritual, Espacial, Arcano): Formas una dimensión de bolsillo conocida como demiplano con tamaño igual a 1 kilómetro cuadrado. El demiplano tiene la apariencia que tú desees, pudiendo así añadirle cualquier cantidad de edificios, terreno o efectos ambientales. No puedes tener más de un demiplano activo a la vez y puedes gastar 3 chi y 5 AP para alterar el demiplano como desees. Además, mientras te encuentres en tu demiplano puedes usar cualquier habilidad perteneciente a magia elemental u ocultismo para alterar el terreno pagando la adecuada cantidad de chi y acciones. Algunos ejemplos son *controlar el agua, crear oscuridad, pirotecnia, pilares de tierra, revertir la gravedad* y *cambiar el clima* (el máster decidirá cuáles son factibles). 
+### Crear demiplano
+
+*Espacial, Pasiva*
+
+Controlas una dimensión de bolsillo conocida como demiplano que se encuentra en el vacío entre dimensiones. El demiplano tiene el tamaño de un kilómetro cuadrado y la apariencia que tú desees, pudiendo así añadirle cualquier cantidad de edificios, terreno o efectos ambientales. No podrás tener más de un demiplano activo a la vez y toda criatura ajena que acabe en él solo podrá salir de ahí si lo permites o emplea un hechizo adecuado para escapar.
+
+Además, mientras te encuentres en tu demiplano puedes emplear cualquier habilidad perteneciente a Magia Elemental u Ocultismo para alterar el terreno, pagando la adecuada cantidad de chi y acciones. Algunos ejemplos son *controlar el agua, crear oscuridad, pirotecnia, pilares de tierra, revertir la gravedad* y *cambiar el clima*. Toda alteración o hechizo que lances dentro del demiplano debe estar permitido por el DJ.
 
 ### Puerta interdimensional
 
@@ -205,8 +239,37 @@ Mantener abierto este portal permitirá también que otras criaturas e influenci
 - **Ronda 3**: Una criatura nativa al plano escogido entra por el portal. Si eres capaz de Invocar criaturas nativas al plano escogido puedes escoger que una de tus invocaciones pase por el portal. En caso contrario la criatura quedará escogida por el DJ.
 - **Ronda 7**: El portal se desestabiliza, provocando un efecto similar a un efecto de Área de Rango V o menos relacionado con el plano que conectes. El efecto en cuestión queda decidido por el DJ y cuando esto ocurra el portal se cerrará de inmediato.
 
-**Desfase espacial** (3 chi, Espacial, Arcano, Concentración) Eres capaz de transportar porciones de tu cuerpo a tu demiplano para evitar ataques. Mientras te encuentres desfasado eres inmune a todos los efectos provenientes del plano material a costa que no podrás afectar al plano material con ninguna habilidad. Puedes también pagar 1 chi para desfasar parte de tu cuerpo y atacar, por lo cual puedes interactuar con el plano material durante tu turno a costa que puedes ser impactado por ataques de oportunidad. Perderás los beneficios de esta habilidad si pierdes la concentración o sufres un efecto que te impida usar magia espacial.
+### Desfase espacial
+
+*Espacial, Arcano, Duradero*
+
+**Coste:** 1 acción y 3 chi
+
+**Duración:** Concentración
+
+Eres capaz de transportar porciones de tu cuerpo a tu demiplano para evitar ataques enemigos. Mientras te encuentres desfasado eres inmune a todos los efectos provenientes del plano material a costa que no podrás afectar al plano material con ninguna habilidad, ataque o hechizo. Este hechizo permanecerá activo hasta que pierdas la concentración o sufras un efecto que te impida usar Magia Espacial.
+
+**Empoderar** (1 chi): Te desfasas parcialmente durante una ronda, pudiendo así emplear ataques o habilidades sin problemas en el plano material. Esto provocará que puedas recibir ataques enemigos hasta el inicio de tu siguiente turno o hasta que pagues 1 chi de nuevo para volver a desfasarte.
 
 ## Rango VI
 
-**Cambio de plano** (3 Acciones y 5 chi, Espacial, Arcano, Área, Ambiental): Transportas todo el campo de batalla a tu demiplano, recibiendo las habilidades y beneficios que eso te permite. Este efecto solo puede ser detenido con magia protectora en el caso que los afectados sepan que les estás intentando transportar. Aquellas criaturas que estén en tu demiplano podrán usar sus acciones con normalidad pero no podrán abandonarlo hasta que tú lo escojas o abandones el demiplano. Se puede usar *umbral* para entrar o salir de un demiplano aunque a este le afecte *cierre dimensional*.
+### Extensión de dominio
+
+*Espacial, Arcano, Ambiental*
+
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Concentración
+
+Extiendes el poder de tu demiplano al campo de batalla para transportarlo a un espacio entre ambos mundos que reforzará enormemente tus habilidades espaciales. Este hechizo afectará todo el espacio en una esfera grande y mientras permanezca activo recibirás Ventaja en todos tus hechizos relacionados con Magia Espacial y podrás lanzar los hechizos Espaciales de Rango II o menos sin la necesidad de pagar chi. Cabe recalcar que una Expansión de dominio anulará el hechizo Cierre dimensional si este ha sido creado por un lanzador de Rango menor.
+
+Mientras el dominio continúe extendido podrás también lanzar cualquier hechizo Ambiental de Rango II o menos relacionado con tu demiplano, pagando la adecuada cantidad de acciones y chi. Una extensión de dominio permanecerá activa hasta que pierdas la concentración y solo podrá ser anulada con otros hechizos de la misma magnitud. 
+
+Extender dominios supone una poderosa alteración del campo de batalla pero también te deja vulnerable a manipulaciones espaciales ajenas. Una criatura que tenga por lo menos un Rango en Magia Espacial puede hacer un tiro enfrentado contra ti con esa magia al principio de su turno para reducir los efectos de este hechizo. Si tiene éxito tu nivel de control se reducirá por un paso, el cual puedes recuperar al hacer un tiro de Magia Espacial al principio de tu turno contra ese mismo objetivo y superarlo. Ambos tiros de control solo pueden realizarse una vez por ronda. Los niveles de control van indicados de la siguiente manera:
+
+- **Nivel de control 3:** Tienes control absoluto sobre el campo de batalla, haciendo así que este hechizo actúe con normalidad. 
+- **Nivel de control 2:** Tienes control parcial sobre el campo de batalla. Perderás así la capacidad de emplear hechizos Ambientales de tu dominio en el campo de batalla.
+- **Nivel de control 1:** Tu control sobre el campo de batalla se ha debilitado notablemente. No obtendrás ningún beneficio por esta habilidad pero esta no terminará, pudiendo aún obtener más control.
+- **Nivel de control 0:** Has perdido control sobre el campo de batalla. Tu dominio está vulnerable a intrusiones enemigos y se han formado suficientes puertas en él que permiten a criaturas entrar y salir libremente de él. 

@@ -7,7 +7,9 @@ Tu mente está conectada con la inteligencia colectiva del universo, transformá
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por rango + 2.
+### Vínculo akhásico
+
+### Hipercognición
 
 **Vínculo akhásico** (acción bonus) Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conocimiento universal. Un número de veces al día igual a tu rango + 2 como acción bonus usable una vez al turno puedes repetir un tiro de habilidad, ataque o defensa de tu elección y quedarte con el mejor resultado. Si tienes la habilidad [Premonición](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20temporal.html#rango-i) acumula los usos de ambas habilidades. (1 chi) Recarga un uso de esta habilidad
 
@@ -15,9 +17,13 @@ Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por rango + 
 
 ## Rango II
 
-Incrementa tu INT por 1.
+Incrementa tu estadística de INT y su limitador por 1.
 
-**Meditación** (3 acciones y 1 chi) Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. El estado meditativo durará hasta que pierdas la concentración y mientras permanezca activo recibes ventaja en todos tus tiros de estudio y recibirás un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de ascendencia akhásica - 1. Recibirás también ventaja tiros de magia si has entrado en el mundo onírico o en un [duelo psíquico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20on%C3%ADrica.html#rango-iii) en estado de meditación.
+### Meditación
+
+### Sentido mágico
+
+**Meditación** (3 acciones y 1 chi) Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, respondiendo a tus dudas más profundas. El estado meditativo durará hasta que pierdas la concentración y mientras permanezca activo recibes ventaja en todos tus tiros de estudio y recibirás un número de visiones sobre el pasado, presente o futuro decididas por el máster igual a tu rango de ascendencia akhásica - 1. Recibirás también ventaja tiros de magia si has entrado en el mundo onírico o en un duelo psíquico en estado de meditación.
 
 **Sentido mágico**: Tienes un sexto sentido para la magia, el cual te permite detectar las impresiones y efectos dejados por ella. Con esta habilidad detectas la posición y fuerza aproximada de todas las criaturas y auras mágicas en una distancia media. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia puedes emplear 1 chi para conocer más información sobre la naturaleza de la presencia mágica que le afecte (la información será proporcionada por el máster).
 

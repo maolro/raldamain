@@ -49,7 +49,7 @@ Pones el peso de tu cuerpo sobre el arma para desequilibrar a un enemigo. Al imp
 
 **Coste**: 1 vigor
 
-Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te rodean. Tu siguiente ataque con arma afectará a todas las criaturas en un radio corto e infligirá 1d6 puntos de daño adicional al golpear. Si un enemigo elige emplear Parada para detener tu tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del suyo.
+Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te rodean. Tu siguiente ataque con arma afectará a todas las criaturas en un radio corto e infligirá 1d6 puntos de daño adicional al impactar. Si un enemigo elige emplear Parada para detener tu tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del suyo.
 
 ### Golpe aturdidor
 
