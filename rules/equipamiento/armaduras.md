@@ -4,7 +4,7 @@ title: Armaduras
 
 La armadura un objeto indispensable para todo guerrero, marcando en muchos casos la fina frontera entre la vida y la muerte. Las armaduras otorgarán un bonificador a la defensa según la dureza y protección que estas ofrecen, el cual se acumula con la resistencia física. Un personaje con armadura no puede sufrir heridas permanentes si el daño es reducido a 0, un hecho que no se produce con la resistencia física. 
 
-No obstante, las armaduras más pesadas dificultan los movimientos diestros y la concentración para aquellos incapaces de cargar con su peso. Esto reducirá los tiros relacionados con la destreza por un valor igual a la diferencia entre el penalizador y su estadística de FUE además de impedir que el portador pueda usar habilidades que requieran *concentración*. Además, un personaje que posea un penalizador por armaduras perderá los efectos de todas las habilidades de *reflejos* que tenga. 
+No obstante, las armaduras más pesadas dificultan los movimientos diestros y la concentración para aquellos incapaces de cargar con su peso. Esto reducirá los tiros relacionados con la destreza por un valor igual a la diferencia entre el penalizador y su estadística de FUE además de impedir que el portador pueda usar habilidades que requieran *concentración* pertenecientes a Magia Arcana, Elementalismo u Ocultismo. Además, un personaje que posea un penalizador por armaduras perderá los efectos de todas las habilidades de *reflejos* que tenga. 
 
 # Tipos de armaduras
 

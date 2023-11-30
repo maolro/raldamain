@@ -220,9 +220,23 @@ Al activar esta hechizo todas las criaturas a distancia media de ti deben tener 
 
 ### Esclavizar
 
+*Mental, Arcana, Duradera*
+
+**Coste:** 3 acciones y 3 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
 ### Mente en blanco
 
+*Mental, Pasiva, Duradera*
+
 ### Destrozar mente
+
+*Mental, Arcana*
+
+**Coste:** 2 acciones y 3 chi
 
 **Esclavizar** (3 Acciones y 3 chi, Mental, Concentración): Un objetivo a cuya mente puedas detectar debe tener éxito en un tiro de SAB contra tu magia mental o doblegas su mente a tu voluntad. Una criatura esclavizada debe obedecer tus órdenes sin cuestionarlas siempre que no atenten contra su vida y este efecto permanecerá activo siempre que te puedas comunicar con tu objetivo y mantengas la concentración. Solo puedes tener una criatura esclavizada a la vez y las criaturas con 0 cordura no cuentan para este límite.
 

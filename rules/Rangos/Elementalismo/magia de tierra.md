@@ -1,6 +1,6 @@
 ---
 title: Magia de Tierra
-category: Magia elemental
+image: magia_tierra.jpg
 ---
 
 Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote realizar grandes hazañas siempre y cuando mantengas el contacto con ella. A medida que tu control se vuelve más avanzado, te vuelves capaz de manipular mayores cantidades de tierra, así como deformarla para utilizarla como una extensión de tu cuerpo en devastadores ataques. En última instancia tu control de la tierra será tan fuerte que te permitirá incluso provocar fuertes seísmos o grandes cambios en la forma de un terreno.

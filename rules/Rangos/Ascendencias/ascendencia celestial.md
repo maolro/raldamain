@@ -15,8 +15,6 @@ Ascendencia celestial tiene las siguientes reglas fundamentales que se aplican a
 
 ## Rango I
 
-Aumenta tu estadística de CAR por 1.
-
 ### Nacido del cielo
 
 *Innata, Pasiva*
@@ -30,6 +28,8 @@ El poder del cielo corre por tus venas, otorgándote la semblanza de un ángel. 
 Tu cuerpo emitirá luz de manera natural, iluminando todo el espacio a distancia media de ti. El poder celestial en tu interior te permite lanzar los hechizos *halo cegador*, *rayo luminoso* y *toque sanador* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia Celestial.
 
 ## Rango II
+
+Aumenta tu estadística de CAR y su limitador por 1.
 
 ### Arma angelical
 
@@ -53,7 +53,7 @@ La energía en tu interior de dota de resistencia sobrehumana que te hace especi
 
 ## Rango III
 
-Aumenta tu CON por 1. Aprendes los hechizos Barrera luminosa y Látigo solar los cuales puedes lanzar empleando vigor en lugar de chi.
+Aprendes los hechizos Barrera luminosa y Látigo solar, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Ángel protector
 
@@ -79,7 +79,9 @@ La intensa luz generada por el aura protegerá a los que permanezcan en ella de 
 
 **Empoderar** (1 chi o vigor): Reduce el coste de un hechizo de magia de Vida que conozcas por una acción (mínimo 1).
 
-## Rango IV 
+## Rango IV
+
+Aumenta tu estadística de CON y su limitador por 1.
 
 ### Alas angelicales
 
@@ -95,7 +97,7 @@ Eres capaz de percibir la verdad que se oculta tras las mentiras del plano mater
 
 ## Rango V
 
-Aumenta tu SAB por 1. Aprendes los hechizos Sanación superior y Luz viviente los cuales puedes lanzar empleando vigor en lugar de chi.
+Aprendes los hechizos Sanación superior y Luz viviente, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Regeneración superior
 
@@ -112,6 +114,8 @@ La energía vital en tu interior sana tu cuerpo a velocidades prodigiosas. Al pr
 Tu alma ha alcanzado el escalafón más alto de la iluminación, ascendiendo a un nivel semejante a un celestial. Recibes Resistencia a efectos de Miedo, Arcanos, y Maldiciones además de Resistencia superior a Aflicciones, Necrótico, Radiante y Miedo. Eres también capaz de comunicarte con criaturas celestiales de todo tipo y estas te tratarán como un igual. 
 
 ## Rango VI
+
+Aumenta tu estadística de SAB y su limitador por 1.
 
 ### Ángel vengador
 

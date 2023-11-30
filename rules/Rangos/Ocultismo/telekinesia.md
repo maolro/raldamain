@@ -7,7 +7,9 @@ Tu mente tiene un poder superior que el de la mayoría de personas que te rodean
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con telekinesia y aumenta tu reserva de chi por rango + 2.
+### Lanzamiento telequinético
+
+### Furia telequinética
 
 **Manipulación telequinética** (2 AP, Telekinesia, A distancia, Físico): Mueve un objeto pequeño hasta un paso en cualquier dirección. Puedes también atacar con dicho objeto, lanzándolo hacia un objetivo a distancia media infligiendo 1d6 + INT daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional o haz una maniobra de desarme
 
