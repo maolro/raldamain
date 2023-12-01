@@ -77,7 +77,7 @@ Dependiendo de la antigüedad del alma y su relación contigo el DJ puede fijar 
 
 Capturas el alma de otra criatura en un momento que se encuentre cerca de la muerte para enviarla al más allá. Como reacción empleable cuando un enemigo caiga a 0 PV puedes forzarle a tener éxito en un tiro de CON frente a tu Magia de Almas o separas su alma de su cuerpo, matándolo instantáneamente.
 
-Después de capturar un alma puedes mantenerla cautiva durante un periodo de como máximo de un día. momento en el cual migrará al más allá y quedará fuera de tu control. Eres capaz de emplear los hechizos Hablar con los Muertos, Invocar espectro y Canalizar Ánima en el alma robada sin que tenga la oportunidad de resistirse, obteniendo efectos apropiados tal como decida el DJ. El alma también se liberará si piredes la concentración durante un combate.
+Después de capturar un alma puedes mantenerla cautiva durante un periodo de como máximo de un día. momento en el cual migrará al más allá y quedará fuera de tu control. Eres capaz de emplear los hechizos Hablar con los Muertos, Invocar espectro y Canalizar Ánima en el alma robada sin que tenga la oportunidad de resistirse, obteniendo efectos apropiados tal como decida el DJ. El alma también se liberará si pierdes la concentración durante un combate.
 
 **Empoderar** (1 chi): Absorbe un alma adicional de otra criatura a 0 PV. No puedes tener cautivas más de cuatro almas simultáneamente.
 
