@@ -147,7 +147,7 @@ Mientras la criatura permanezca *agarrada* fallará todos sus tiros contra otras
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Levitación
+### Levitaci
 
 *Gravedad, Duradero*
 
