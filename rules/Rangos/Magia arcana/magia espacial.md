@@ -1,6 +1,6 @@
 ---
 title: Magia Espacial
-image: magia_e
+image: magia_espacial.jpg
 ---
 
 Has decidido estudiar los planos que muestran los conductos de chi a lo largo de la existencia decantándote por la escuela de magia espacial. Esta escuela se basa en escoger un conducto de chi  y provocar una dilatación en dos de sus extremos, de esta forma viajando a través de la misma energía para solventar distancias cortas, sin embargo al tener que poseer pleno conocimiento del flujo de los conductos de chi en muchas ocasiones te veras limitado a usar esta magia en lugares conocidos o que puedas ver. A medida que avances en tu estudio sobre el funcionamiento de dichos conductos serás capaz de separarlos y diferenciarlos con mayor facilidad permitiéndote viajar mayores distancias, así mismo tu control se irá volviendo cada vez mas firme llegando incluso a poder usar la energía misma que usen tus portales cono un arma contra todos aquellos que se encuentren en tus portales.
