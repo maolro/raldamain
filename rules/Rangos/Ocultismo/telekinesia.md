@@ -7,27 +7,127 @@ Tu mente tiene un poder superior que el de la mayoría de personas que te rodean
 
 ## Rango I
 
-### Lanzamiento telequinético
+### Manipulación telequinética
+
+*Telequinesia, Ataque, A distancia, Físico*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto crítico:** El afectado sufre una *herida permanente leve*
+
+**Duración:** Concentración
+
+Eres capaz de manipular objetos que percibas empleando el poder de tu mente. Un objeto pequeño a distancia cercana empieza a levitar y se mueve un paso en cualquier dirección. Si el objeto está en manos de otra criatura debes tener éxito en un tiro de Telekinesia contra su Heroísmo para quitárselo. El objeto manipulado permanecerá en el aire hasta que pierdas la concentración o cuando tú lo escojas.
+
+Un objeto que esté levitando puede usarse para hacer ataques contra enemigos a distancia media de ti. Al lanzar este hechizo puedes alternativamente hacer un ataque contra un enemigo a distancia media que infligirá 1d6 + INT daño Contundente, Cortante o Perforante al impactar según la naturaleza del objeto manipulado. Hacer un ataque acabará inmediatamente tu control sobre el objeto sin importar el resultado de este.
+
+**Empoderar** (1 chi): Puedes manipular un objeto adicional a distancia cercana de ti y usarlo para hacer otro ataque contra un objetivo distinto.
+
+### Lanzamiento humano
+
+*Telekinesia, Maniobra*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Efecto crítico:** El afectado sufre una *herida permanente leve*
+
+**Duración:** Instantáneo
+
+Lanzas a un enemigo por los aires empleando tus poderes telequinéticos. Un objetivo a distancia media de ti debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Telequinesia o será empujado un paso en cualquier dirección y caerá *tropezado*.  Si tu objetivo no puede ser empujado hacia atrás sufrirá 1d6 + INT daño Contundente al fallar el tiro.
+
+**Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo
 
 ### Furia telequinética
 
-**Manipulación telequinética** (2 AP, Telekinesia, A distancia, Físico): Mueve un objeto pequeño hasta un paso en cualquier dirección. Puedes también atacar con dicho objeto, lanzándolo hacia un objetivo a distancia media infligiendo 1d6 + INT daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional o haz una maniobra de desarme
+*Telequinesia, Ataque, Físico, Área*
 
-**Onda de fuerza** (2 AP y 1 chi, Telekinesia, Maniobra, Área): Todas las criaturas a distancia cercana de ti deberán tener éxito en un tiro de FUE contra tu tiro de telekinesia o son empujadas un paso hacia atrás, sufriendo 1d6 daño de caída si impactan contra un objeto. Este ataque también lanzará por los aires a todos los objetos pequeños que haya.
+**Coste:** 2 acciones y 1 chi
 
-**Escudo telequinético** (Telekinesia, Defensivo) Puedes usar *telekinesia* para defenderte de ataques cuerpo a cuerpo y cualquier habilidad que afecte a tu FUE. (1 chi) Protege a un aliado adyacente con *telekinesia*.
+**Tamaño:** Cono o esfera pequeña
+
+**Efecto crítico:** El afectado sufre una *herida permanente leve*
+
+**Duración:** Instantáneo
+
+Canalizas tus sentimientos de ira para lanzar telequinéticamente una gran cantidad de objetos hacia tus enemigos. Haz un ataque contra todos los objetivos en un cono o esfera pequeña que infligirá 2d6 + INT daño Cortante, Contundente o Perforante al impactar según la naturaleza de los objetos que arrojes (aquellos que tengan éxito sufrirán la mitad de daño). La zona afectada se transformará en *terreno difícil* debido a los escombros que lances ahí.
+
+**Empoderar** (1 chi): Aumenta el tamaño de este ataque por un paso y su daño por 1d6.  No puedes empoderar así más de dos veces por ataque.
 
 ## Rango II
 
-**Barrera de fuerza** (2 AP y 1 chi, Telekinesia, Defensivo): Crea una barrera de fuerza con PV igual a tu rango + 4 e inmunidad a todo el daño no-mágico. Toda criatura que intente cruzar la barrera deberá tener éxito en un tiro de FUE contra tu telekinesia o será lanzado hacia atrás. Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
+### Barrera de fuerza
 
-**Lanzamiento humano** (2 AP y 1 chi, Telekinesia, Maniobra): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu telekinesia o es lanzada un paso en cualquier dirección y sufre 1d6 + INT daño físico. (1 chi) Afecta a un objetivo adicional
+*Telekinesia, Defensiva, Duradera*
 
-**Furia telequinética** (2 AP y 1 chi, Telekinesia, Físico, Área) Haz un ataque con *manipulación telequinética* contra todos los objetivos en un radio pequeño centrado en el punto de impacto. Este ataque infligirá un dado de daño adicional y dependiendo de la naturaleza de los objetos lanzados puedes convertir el área en terreno difícil.
+**Coste:** 1 acción y 1 chi
+
+**Tamaño:** Línea mediana o esfera pequeña
+
+**Duración:** Concentración
+
+Sostienes una barrera de fuerza con el poder de tu mente para protegerte de ataques enemigos. La barrera surgirá desde cualquier punto a distancia media y tomará la forma de una esfera pequeña o una línea mediana. Como muro tiene puntos de vida iguales a tu Rango x 3 e Inmunidad a todo el daño no-mágico (los ataques de área particularmente grandes quedan exentos de esta inmunidad). La barrera permanecerá en el campo de batalla hasta que pierda todos sus PV.
+
+La barrera proporcionará *cubierta completa* a todas las criaturas al otro lado de él, protegiéndolas de ataques a distancia. Cualquier criatura hostil que intente cruzarlo debe tener éxito en un tiro de Heroísmo o Destrozar contra tu Telequinesia o será empujada un paso hacia atrás. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu Barrera de Fuerza y luego afectarán a sus objetivos escogidos.
+
+Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si la barrera estuviera en el camino. Si intentas bloquear un ataque cuerpo a cuerpo tu enemigo debe tener éxito en un tiro para cruzar el muro o su ataque fallará.  No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
+
+**Empoderar** (1 chi): La barrera recupera todos sus puntos de vida perdidos. 
+
+### Sanación etérea
+
+*Telequinesia, Sanación, Toque*
+
+**Coste: **2 acciones y 1 chi
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Instantáneo
+
+Empleas la telekinesia para reponer tejidos rotos y coagular rápidamente tus heridas. Una criatura que puedas tocar recuperará Vitalidad igual a tu Rango + 2 y reducirá el nivel de una *herida permanente* que sufra por un paso. Dado que este hechizo te permite manipular hilos etéreos puedes usarlo para curar a criaturas incorpóreas o hechas de energía mágica pura, reponiendo las partes dañadas de su cuerpo. 
+
+**Empoderar** (1 chi): Empleas este hechizo en ti mismo como acción bonus
+
+### Arrastre telequinético
+
+*Telequinesia, Maniobra*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu objetivo cae *tropezado* al afectarle con este hechizo
+
+**Duración:** Instantáneo
+
+Arrastras a una criatura con el poder de la telequinesia, descolocando sus defensas y dejándola vulnerable a futuros ataques. Una criatura a distancia media debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Telekinesia o será arrastrada un paso hacia ti, abandonando inmediatamente *posición defensiva*. Si te encuentras en *posición defensiva* puedes aprovechar su mala posición para hacerle un ataque como reacción empleando cualquiera de tus habilidades.
+
+**Empoderar** (1 chi): Afecta a una criatura adicional con este hechizo. Solo podrás hacer el ataque que te otorga este hechizo contra un único objetivo.
 
 ## Rango III
 
-Reduce el coste de *manipulación telequinética* y *onda de fuerza* por 1. Puedes coger un objeto mediano con *manipulación telequinética*, aumentando su daño base a 1d8.
+### Agarre telequinético
+
+*Telekinesia, Maniobra, Duradera*
+
+**Coste:** 1 acción y 2 chi
+
+### Arma teledirigida
+
+*Telekinesia, Mejora, Duradera*
+
+**Coste:** 1 acción y 2 chi
+
+**Duración:** Concentración
+
+### Refuerzo telequinético
+
+*Telekinesia, Mejora*
+
+**Coste:** 2 acciones y 2 chi
 
 **Agarre telequinético** (1 AP y 2 chi, Telekinesia, Maniobra, Concentración): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu telequinesia o quedará agarrada por ella y la moverás un paso en cualquier dirección. Esta puede tirar para liberarse cada ronda y puedes emplear 1 acción para usar la habilidad *lanzamiento humano* contra un objetivo agarrado sin la necesidad de gastar chi. (1 chi) Afecta a un objetivo adicional
 
@@ -36,6 +136,14 @@ Reduce el coste de *manipulación telequinética* y *onda de fuerza* por 1. Pued
 **Almacenar objetos** (2 AP y 2 chi, Telekinesia, Concentración, Defensivo): Levantas una cantidad de objetos igual a tu rango. Puedes gastar un objeto como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *manipulación telequinética.* Esta habilidad permanecerá activa mientras mantengas el campo y para recuperar un objeto debes emplear 1 AP.
 
 ## Rango IV
+
+### Animar objeto
+
+*Telekinesia, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Duración:** Una hora
 
 **Levitación** (2 AP y 2 chi, Telekinesia, Concentración): Una criatura a distancia media recibe velocidad de vuelo 1 y ventaja en todos sus tiros de esquiva además de sus tiros de ataque con armas cuerpo a cuerpo contra criaturas incapaces de volar. Este efecto durará hasta que pierdas la concentración
 
