@@ -1,6 +1,6 @@
 ---
 title: Magia de naturaleza
-image: ma
+image: magia_naturaleza.jpg
 ---
 
 Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aquellos entes naturales a tu alrededor permitiendo controlar así las formas más básicas en las que la naturaleza lleva desarrollándose desde el inicio de los tiempos. A medida que tu control avanza serás capaz de asumir el rol de guardián de la naturaleza que has decidido controlar, sometiéndose a tu voluntad e incluso devolviendo a su estado original maquinas u otros materiales hechos por el hombre. En última instancia serás incluso capaz de controlar toda la flora en una gran área y manipularla toda junta para realizar un gran ataque sobre aquel que se atreva a desafiar el orden natural de las cosas.
