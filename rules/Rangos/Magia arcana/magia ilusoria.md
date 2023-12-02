@@ -158,7 +158,7 @@ Cada criatura que pueda ver la ilusión al principio de su turno deberá repetir
 
 Empleando ilusiones simulas cualquier hechizo que conozcas o hayas observado, confundiendo a tus enemigos respecto a tus capacidades. Esta habilidad te permite lanzar cualquier hechizo o habilidad con Rango igual al tuyo sin la necesidad de gastar chi. Debes seguir pagando su coste en acciones y al tratarse de una ilusión no tendrá ningún efecto negativo al impactar. 
 
-Si conviertes tu hechizo en fantasmal tu objetivo creerá que sus efectos son reales, pudiendo así provocarle daño y efectos de estado hasta que durarán hasta que desmienta la ilusión. En el caso que logres reducir a un enemigo a menos de 0 PV con un hechizo fantasmal tu objetivo caerá inconsciente de inmediato al creer que está mortalmente herido. En todo caso no presentará heridas reales y todo el daño que sufra de esta manera será meramente psicológico.
+Si conviertes tu hechizo en fantasmal tu objetivo creerá que sus efectos son reales, pudiendo así provocarle daño y efectos de estado que durarán hasta que desmienta la ilusión. En el caso que logres reducir a un enemigo a menos de 0 PV con un hechizo fantasmal tu objetivo caerá inconsciente de inmediato al creer que está mortalmente herido. En todo caso no presentará heridas reales y todo el daño que sufra de esta manera será meramente psicológico.
 
 ## Rango IV
 
