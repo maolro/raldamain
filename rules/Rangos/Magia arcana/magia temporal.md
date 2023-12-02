@@ -1,6 +1,6 @@
 ---
 title: Magia Temporal
-image: magia_temporal
+image: magia_temporal.jpg
 ---
 
 El flujo del tiempo es algo que siempre ha estado fijo y para casi todo el mundo es inevitable el estar atados a su inexorable paso sin embargo eso no es así para los practicantes de esta magia. Te has especializado tanto en en funcionamiento del chi que has sido capaz de averiguar como usarlo para hacer pequeñas modificaciones en tu entorno, creando una especie de engaño para la existencia que te rodea y haciendo pequeñas modificaciones en lo escrito por el universo. Según tus estudios van avanzando comienzan a volverse mas firmes comienzas a verte irradiado por la misma energía con la que trabajas, pudiendo obtener algunos de sus beneficios incluso sin mantener la concentración sobre ellos, así como también aumentar el entorno total que puedes alterar pudiendo incluso alterar el mismo flujo del tiempo a tu alrededor al incurrir en un gran uso de chi.

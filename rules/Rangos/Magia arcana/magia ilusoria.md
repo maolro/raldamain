@@ -26,7 +26,7 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 **Duración:** Concentración
 
-Creas una imagen incorpórea conocida como una ilusión que se imitará un objeto, criatura o fenómeno visual. Una ilusión no debe ocupar un espacio de tamaño superior a una esfera pequeña y no podrá emitir sonidos. Esta permanecerá activa hasta que pierdas la concentración o escojas acabarla. Esta también será destruida si es afectada por un hechizo Arcano.
+Creas una imagen incorpórea conocida como una ilusión que imitará un objeto, criatura o fenómeno visual. Una ilusión no debe ocupar un espacio de tamaño superior a una esfera pequeña y no podrá emitir sonidos. Esta permanecerá activa hasta que pierdas la concentración o escojas acabarla. Esta también será destruida si es afectada por un hechizo Arcano.
 
 Una ilusión parecerá completamente real hasta que una criatura interactúe con ella ya que carece de sustancia física. Puede también ser identificada como tal con un tiro exitoso de Percepción contra una dificultad igual a tu tiro de Magia Ilusoria. Cada criatura solo puede tirar para identificar ilusiones una vez por ronda como acción bonus salvo que ocurra un suceso que le haga sospechar que la imagen puede ser una ilusión.
 
@@ -108,7 +108,7 @@ Esta alteración del terreno afectará también a determinadas habilidades ambie
 
 ## Rango III
 
-Todos tus hechizos Ilusorios de Rango I reducen su coste en acciones por 1 (mínimo 1).  Además, las ilusiones que creas su tamaño a una esfera mediana además que serán sonoras.
+Todos tus hechizos Ilusorios de Rango I reducen su coste en acciones por 1 (mínimo 1).  Además, las ilusiones que creas aumentan su tamaño a una esfera mediana además que serán sonoras.
 
 ### Dobles ilusorios
 
