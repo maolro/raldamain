@@ -9,7 +9,7 @@ Tu mente está conectada con un plano superior de pensamiento, permitiéndote al
 
 Mente desencadenada tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Reserva de vigor:** Tu rango en Mente desencadenada mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Reserva de chi:** Tu rango en Mente desencadenada mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
 - **Poder de la mente:** Varias habilidades pertenecientes a esta rama requierirán que utilices el poder de tu mente para afectar a otros. Emplearás para dichas habilidades tu bonificador de Mente desencadenada, el cual será igual a la suma de tu INT y tu Rango de esta habilidad.
 
 # Rangos

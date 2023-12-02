@@ -178,7 +178,9 @@ Congelas el tiempo alrededor de un enemigo para dejarlo en estasis temporal. Un 
 
 **Duración:** Instantáneo
 
-Al emplear un ataque o hechizo puedes retardarlo cualquier cantidad de rondas en el futuro para potenciar sus efectos y atacar inesperadamente a tus enemigos. Deberás retardar dicha habilidad como mínimo una ronda y esta desaparecerá temporalmente, contando como si nunca la hubieras usado. Cuando pase la cantidad de rondas escogida podrás emplear la habilidad retardada como acción bonus, la cual activará su efecto crítico al impactar además que contará como un ataque sorpresa. 
+Al emplear un ataque o hechizo puedes retardarlo cualquier cantidad de rondas en el futuro para potenciar sus efectos y atacar inesperadamente a tus enemigos. Deberás retardar dicha habilidad como mínimo una ronda y esta desaparecerá temporalmente, contando como si nunca la hubieras usado. 
+
+Cuando pase la cantidad de rondas escogida podrás emplear la habilidad retardada como acción bonus, la cual activará su efecto crítico al impactar además que contará como un ataque sorpresa. No puedes emplear esta habilidad para retardar hechizos que no se traten de ataques.
 
 ## Rango V  
 
