@@ -23,7 +23,7 @@ Estudiar la magia está bien, pero una de las mayores amenazas para un mago es i
 
 **Duración:** Concentración
 
-Formas un campo de fuerza que rodea tu cuerpo para protegerte de ataques enemigos. Mientras este hechizo permanezca activo tu DEF base pasará a ser un valor igual a tu Rango + 1 y recibirás Resistencia a efectos Arcanos. Los bonificadores de este hechizo durarán hasta que pierdas la concentración y no se acumulan con la defensa y resistencias otorgadas por armaduras.
+Formas un campo de fuerza que rodea tu cuerpo para protegerte de ataques enemigos. Mientras este hechizo permanezca activo tu DEF base pasará a ser un valor igual a tu Rango + 2 y recibirás Resistencia a efectos Arcanos. Los bonificadores de este hechizo durarán hasta que pierdas la concentración y no se acumulan con la defensa y resistencias otorgadas por armaduras.
 
 **Empoderar** (1 chi): Otorga los beneficios de hechizo a un aliado que puedas tocar.
 
