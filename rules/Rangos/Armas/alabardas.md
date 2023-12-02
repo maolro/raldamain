@@ -5,6 +5,12 @@ category: Armas
 
 Eres experto empleando armas compuestas por un largo palo, acabando así con tus enemigos antes que sus torpes espadas y hachas puedan ni siquiera tocarte. A medida que tu dominio sobre estas armas se vaya volviendo mas profundo serás capaz de detener cargas de adversarios mucho mas grandes y fuertes que tú, así como servirte de su adaptabilidad y gran movilidad para usar todo tipo de maniobras de combate. En las últimas instancias de tu entrenamiento será capaz devastadores ataques que afecten grandes áreas, realizar letales y repentinas cargas, inmovilizar a tus enemigos e incluso servirte de la forma de tu arma para infringir heridas de mayor gravedad.
 
+# Reglas fundamentales
+
+Estilo de Alabardas tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de vigor:** Tu rango en Estilo de Alabardas mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+
 # Rangos
 
 ## Rango I 

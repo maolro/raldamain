@@ -6,9 +6,13 @@ Tras un estudio sobre el control de la tierra has conseguido aprender ha detecta
 
 ## Rango I
 
+### Manipular metal
+
+Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Al emplear esta habilidad escoge un objeto metálico pequeño a distancia cercana de ti y muévelo hasta un paso en cualquier dirección o altera su estructura tal como desees. Si el objeto está enganchado o está en manos de otra persona deberás tener éxito en un tiro de Magia de Metal contra una dificultad escogida por el máster (si el objetivo es una persona deberás superar su tiro para defenderse de maniobras de combate). 
+
 Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental de metal. Aumenta tu reserva de chi por un valor igual a tu rango + 2.
 
-**Manipular metal** (2 acciones, Metal, Maniobra): Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Al usar esta habilidad escoge un objeto metálico pequeño a distancia media de ti y muévelo hasta un paso en cualquier dirección o altera su estructura como desees. Si el objeto está enganchado o permanece en manos de otra persona deberás tener éxito en un tiro de magia de metal contra una dificultad escogida por el máster (si el objetivo es una persona deberás superar su tiro para defenderse de maniobras de combate). 
+**Manipular metal** (2 acciones, Metal, Maniobra):
 
 Alternativamente, si escoges afectar la estructura de un objeto metálico deberás hacer otro tiro de magia de metal contra una dificultad asignada por el máster y en caso que lo superes el objeto sufrirá el efecto de estado *roto* o quedará reparado. Aunque puedes alterar armas mágicas con esta habilidad el tiro es mucho más complicado y no podrás afectar a artefactos o armas de calibre especialmente bueno. En ambos casos puedes gastar 1 chi para afectar un objeto adicional o repetir el tiro de destrozar.
 
