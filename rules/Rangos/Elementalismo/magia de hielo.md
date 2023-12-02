@@ -1,6 +1,6 @@
 ---
 title: Magia de Hielo
-title: magia_hielo.jpg
+image: magia_hielo.jpg
 ---
 
 Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estado líquido como algunos elementalistas tú te has decantado por emplear una versión más agresiva aprendiendo a cómo utilizarlo en su forma sólida. A medida que tu control sobre el hielo se va haciendo más fuerte serás capaz de darle multitud de formas, moldeándolo para crear letales armas de matar bajo tu absoluto control, así como servirte del mismo frío que usas como una herramienta para congelar a tus enemigos hasta los huesos. En los niveles más altos serás incluso de evadir las limitaciones de tiempo, traer con tu llegada temperaturas gélidas a los entornos más cálidos o volviendo incluso más intenso el frío que te rodee.
