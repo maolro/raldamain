@@ -5,6 +5,12 @@ category: Armas
 
 Has preferido un arma de largo alcance que te permita acabar con tus enemigos antes que puedan acercarse a ti, apuntando a sus puntos débiles para eliminarlo rápidamente. A medida que tu maestría vaya en aumento te volverás capaz de disparar tus flechas con mayor velocidad y precisión. En las ultimas etapas de tu aprendizaje serás capaz de matar a poderosos adversarios con una única flecha y disparar precisamente sin sacrificar tu movilidad.
 
+# Reglas fundamentales
+
+Estilo de Armas A distancia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de vigor:** Tu rango en Estilo de Armas A distancia mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+
 # Rangos
 
 ## Rango I 
