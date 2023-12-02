@@ -1,6 +1,6 @@
 ---
 title: Magia de Vida
-category: Ocultismo
+image: magia_vida.jpg
 ---
 
 # Reglas fundamentales
