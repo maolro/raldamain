@@ -5,6 +5,12 @@ category: Ascendencias
 
 Ya sea desde tus inicios o por un aberrante experimento de laboratorio tu cuerpo ha quedado infectado por hongos sobrenaturales, quedando así atado por un horrible destino. Con el paso del tiempo las esporas infectarán cada vez más tu cuerpo, deformándolo y volviéndolo mas cercano a la naturaleza de los hongos que a la de los humanos. Cuando la infección alcance su cúspide llegarás a perder tu cuerpo humano y identidad, transformándote en parte de la misma mente colectiva que ahora desearás esparcir.
 
+# Reglas fundamentales
+
+Ascendencia Fúngica tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Fúngica mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
 # Rangos
 
 ## Rango I
@@ -49,7 +55,7 @@ Para emplear esta habilidad debes estar tocando un cadáver o una porción de ma
 
 ## Rango III
 
-Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Aire o Tormenta usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango II pertenecientes a esas magias.
+Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Naturaleza o Nigromancia usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango II pertenecientes a esas magias.
 
 ### Nube tóxica
 

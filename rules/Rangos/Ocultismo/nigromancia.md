@@ -11,9 +11,17 @@ Al igual que un médium, tienes una fuerte conexión con el plano de los muertos
 
 ### Toque necrótico
 
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
 Tiro CON o 1d6 + Rango daño necrótico
 
 ### Descarga de energía negatica
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
 
 Ataque que inflige 1d6 + Rango daño necrótico
 
