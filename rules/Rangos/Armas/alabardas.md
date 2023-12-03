@@ -33,7 +33,7 @@ Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcan
 
 *Alabardas, Pasiva*
 
-Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una distancia respecto a tus enemigos donde puedas mantener el control. Cada vez que impactes un ataque con tu arma puedes *desenganchar* como acción bonus. Además, si te encuentras en *posición defensiva* puedes tirar Esquiva a la vez de Parada al protegerte de un ataque cuerpo a cuerpy quedarte con el mejor resultado para tu tiro defensivo.
+Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una distancia respecto a tus enemigos donde puedas mantener el control. Cada vez que impactes un ataque con tu arma puedes *desenganchar* como acción bonus. Además, si te encuentras en *posición defensiva* puedes tirar Esquiva a la vez de Parada al protegerte de un ataque cuerpo a cuerpo y quedarte con el mejor resultado para tu tiro defensivo.
 
 ### Preparación contra cargas
 
@@ -47,11 +47,9 @@ Entras en un estado de preparación para atacar a todos los enemigos que intente
 
 Preparación contra cargas permanecerá activo hasta que pierdas la concentración o empiece tu siguiente turno. Esta habilidad no te costará acciones para activar si te encuentras en *posición defensiva*.
 
-**Ataque con arma** (2 acciones, Cuerpo a cuerpo, Físic): Haz un ataque con tu arma, infligiendo daño igual especificado por su tipo. El bonificador al tiro de ataque es igual a la suma de tu estadística de FUE y tu rango.
-
-**Parada** (reacción): Puedes emplear tu arma para protegerte de ataques enemigos hechos con armas cuerpo a cuerpo. Un tiro de parada es una reacción por la cual tiras defensa contra un ataque enemigo empleando tus bonificadores de ataque con tu arma. No obstante, tu arma es difícil de usar para protegerte de enemigos adyacentes lo cual te otorga desventaja en tus tiros defensivos contra sus ataques.
-
 ## Rango II
+
+### Ataque lateral
 
 Puedes obtener este rango de manera gratuita si tienes 5 o más FUE, 5 o más DES y 5 niveles de talento en heroísmo
 

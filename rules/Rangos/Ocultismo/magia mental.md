@@ -16,7 +16,7 @@ Tu has decidido caminar por una senda algo diferente al de el resto de escuelas 
 
 ### Asalto mental
 
-*Mental, Arcana*
+*Mental, Cordura*
 
 **Coste:** 2 acciones
 
@@ -32,7 +32,7 @@ Atacas la mente de un enemigo para romper sus facultades mentales y su capacidad
 
 ### Leer pensamientos
 
-*Mental, Arcana, Duradera*
+*Mental, Duradera*
 
 **Coste:** 2 acciones y 1 chi
 
@@ -48,7 +48,7 @@ Además, mientras este hechizo esté activo puedes emplear una acción para pene
 
 ### Escudo mental
 
-*Mental, Arcana, Duradera*
+*Mental, Duradera*
 
 **Coste:** 2 acciones
 
@@ -80,7 +80,7 @@ Si empleas este hechizo en un combate puedes condicionar a tu objetivo para que 
 
 ### Sanación mental
 
-*Mental, Arcana, Toque*
+*Mental, Toque*
 
 **Coste:** 2 acciones y 1 chi
 
@@ -92,13 +92,11 @@ Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes da
 
 ### Alterar emociones
 
-*Mental, Arcana*
+*Mental*
 
 **Coste:** 2 acciones y 1 chi
 
 **Alcance:** Medio
-
-**Efecto crítico:** 
 
 **Duración:** Hasta que se recupere
 
@@ -122,7 +120,7 @@ Tus hechizos Mentales de Rango I reducen su coste en acciones por 1 (mínimo 1).
 
 ### Sobrecarga mental
 
-*Mental, Arcana*
+*Mental, Cordura*
 
 **Coste:** 1 acción y 2 chi
 
@@ -142,7 +140,7 @@ Una criatura *confundida* podrá repetir el tiro una vez por ronda y se liberar�
 
 ### Geas
 
-*Mental, Arcana*
+*Mental*
 
 **Coste:** 2 acciones y 2 chi
 
@@ -170,7 +168,7 @@ Todos tus hechizos Mentales de Rango II reducen su coste en acciones por 1 (mín
 
 ### Sugestión en masa
 
-*Mental, Arcana, Área, Duradera*
+*Mental, Área, Duradera*
 
 **Coste:** 3 acciones y 2 chi
 
@@ -186,7 +184,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y toda cria
 
 ### Modificar recuerdos
 
-*Mental, Arcana, Duradera*
+*Mental, Duradera*
 
 **Coste:** 3 acciones y 2 chi
 
@@ -204,7 +202,7 @@ Una modificación de los recuerdos es especialmente peligrosa para enemigos al b
 
 ### Aura emocional
 
-*Mental, Duradera, Arcana*
+*Mental, Duradera*
 
 **Coste:** 2 acciones y 2 chi
 
@@ -220,7 +218,7 @@ Al activar esta hechizo todas las criaturas a distancia media de ti deben tener 
 
 ### Esclavizar
 
-*Mental, Arcana, Duradera*
+*Mental, Duradera*
 
 **Coste:** 3 acciones y 3 chi
 
@@ -230,11 +228,11 @@ Al activar esta hechizo todas las criaturas a distancia media de ti deben tener 
 
 ### Mente en blanco
 
-*Mental, Pasiva, Duradera*
+*Mental, Pasiva*
 
 ### Destrozar mente
 
-*Mental, Arcana*
+*Mental, Cordura*
 
 **Coste:** 2 acciones y 3 chi
 
