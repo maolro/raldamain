@@ -46,7 +46,7 @@ Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al acti
 - **Paso rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
 - **Al suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. 
 - **Cambio repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
-- **Estocada fuerte:** Aumentas el daño base de tu ataque por 1d6 y provocas *sangrado* al impactar si tu objetivo lleva armadura li
+- **Estocada fuerte:** Aumentas el daño base de tu ataque por 1d6 y provocas *sangrado* al impactar si tu objetivo lleva armadura ligera
 
 ## Rango II
 
