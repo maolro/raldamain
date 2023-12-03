@@ -1,6 +1,6 @@
 ---
 title: Magia sombría
-category: Ocultismo
+image: magia_sombria.jpg
 ---
 
 ## Rango I

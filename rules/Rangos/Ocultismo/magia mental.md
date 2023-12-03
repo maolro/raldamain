@@ -1,6 +1,6 @@
 ---
 title: Magia Mental
-title: magia_
+image: magia_mental.jpg
 ---
 
 Tu has decidido caminar por una senda algo diferente al de el resto de escuelas prefiriendo centrarte mas en que se encuentra dentro de nuestro cuerpo y el como funciona en lugar de mirar hacia que nos rodea. Mediante ligeras modificaciones en el chi interno de las personas has conseguido encontrar las partes exactas que se relacionan con la mente del individuo, tanto de su comportamiento como de su memoria y no solo has sido capaz de localizarla sino que también has encontrado una forma de alterarla. A medida que encuentras mas sujetos en los que poder practicar sin que otras personas se enteren de ello tus conocimientos se van volviendo mas extensos, como sobrecargar la mente o como detectar los pensamientos mas simples de la mente humana ya no te parece tan sorprendente y has decidido ir a por mas, encontrando las formulas exactas que te permitan llevar a los humanos que te rodean a seguir tu voluntad sin que ellos siquiera sean conscientes de que están siendo manipulados o incluso haciéndoles creer que es su propio voluntad lo que están siguiendo, sin embargo siempre hay que tener una pequeña carta bajo la manga por si algo sale mal y resulta que todos los humanos tienen un punto débil fácil de encontrar para ti en lo mas recóndito de tu mente que si se daña probablemente no les permitirá volver a ser los mismos.
