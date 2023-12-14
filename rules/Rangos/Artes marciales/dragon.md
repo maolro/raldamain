@@ -4,13 +4,15 @@
 
 ### Golpe marcial
 
+### Patada poderosa
 
+### Secuencia de ataques
 
 ## Rango II
 
 ### Patada desequilibrante
 
-### Rugido del dragón
+### Golpe aturdidor
 
 ## Rango III
 

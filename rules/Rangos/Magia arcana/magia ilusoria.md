@@ -164,20 +164,102 @@ Si conviertes tu hechizo en fantasmal tu objetivo creerá que sus efectos son re
 
 Todos tus hechizos Ilusorios de Rango II reducen su coste en acciones por 1 (mínimo 1).
 
-**Velo de engaños** (2 AP y 2 chi, Ilusión, Concentración): Empleas ilusiones para alterar la apariencia de todas las criaturas en un radio medio para que no sean capaces de distinguir aliados de enemigos. Los afectados deberán tirar SAB contra tu magia ilusoria y si fracasan estarán *confundidos* además que perderán todos los beneficios de moral y flanqueo. Cada vez que un objetivo desmienta una ilusión podrá repetir el tiro de SAB contra ti para desmentir el efecto total.
+### Velo de engaños
 
-**Espejismo arcano** (3 AP y 2 chi, Ilusión, Concentración, Ambiental): Creas una gran ilusión que cambia todo el campo de batalla de la manera que desees, creando estructuras y efectos ambientales de tu elección. Esta habilidad funciona igual que *terreno alucinatorio* pero puedes formar barreras, ocultamiento y terreno difícil en las posiciones que desees, las cuales durarán hasta que sean desmentidas. 
+*Ilusoria, Arcana, Visual, Duradera*
 
-**Asalto ilusorio**: Al activar *disfraz ilusorio* todos tus ataques físicos quedarán infundidos de ilusiones, otorgándoles los beneficios de *combate furtivo* y permitiéndote repetir un tiro de ataque o defensa con ventaja una vez por ronda. Puedes usar dicha habilidad una vez adicional gastando 1 chi. 
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Esfera media
+
+**Duración:** Concentración
+
+Empleas ilusiones para alterar la apariencia de tus enemigos para que no sean capaces de distinguir aliados de enemigos. Todas las criaturas a distancia media de ti deben tener éxito en un tiro de Percepción o Averiguar intenciones contra tu Magia Ilusoria o quederán *confundidas* además de perder todos los beneficios de Moral que tengan activos. 
+
+Este hechizo permanecerá activo hasta que pierdas la concentración o sea disipado. Cada vez que una criatura afectada hiera a otra podrá repetir el tiro contra este hechizo y en caso de éxito se liberará de sus efectos. Una criatura con Presencia puede tirar con su Rango para intentar liberarse a sí misma o a otras criaturas afectadas.
+
+**Empoderar** (1 chi): Cambias tu apariencia por la de otra criatura para burlar un ataque enemigo, provocando así que una criatura afectada por este hechizo que intente atacarte acabe impactando a un objetivo diferente.
+
+### Espejismo arcano
+
+*Ilusoria, Arcana, Ambiental*
+
+**Coste:** 2 chi
+
+Creas una gran ilusión que cambia todo el campo de batalla de la manera que desees, creando estructuras y efectos ambientales de tu elección. Este hechizo solo puede lanzarse en un campo de batalla afectado por Terreno Alucinatorio y cuando lo hagas puedes formar barreras, *ocultamiento* y *terreno difícil* hecho de ilusiones en las posiciones que desees. 
+
+Las ilusiones creadas de esta manera se comportarán como el efecto real de terreno hasta que sean desmentidas y permanecerán activas hasta que pierdas la concentración. Si conviertes este hechizo en fantasmal podrás imitar cualquier hechizo Ambiental de Rango III o menos, el cual afectará con normalidad a todas las criaturas que no hayan fallado su tiro.
+
+**Empoderar** (1 chi): Cambias la posición de todos los obstáculos y efectos ambientales creados con este hechizo tal como desees. Si te encuentras en *posición defensiva* los cambios creados harán que una criatura que te esté atacando falle automáticamente si no ha desmentido tus ilusiones
+
+### Asalto ilusorio
+
+*Ilusoria, Arcana, Pasiva*
+
+Eres capaz de emplear las ilusiones alrededor de tu cuerpo para reforzar tus ataques y capacidades defensivas. Al combatir con un efecto Ilusorio activo a distancia corta de ti recibirás Ventaja en todos tus tiros de Ataque además que podrás repetir un tiro de ataque, salvación o defensa una vez por ronda y quedarte con el resultado que más te convenga. Las ilusiones también te permitirán emplear tu estadística de INT para el daño de tus armas, sustituyendo así la estadística que emplearías normalmente.
+
+**Empoderar** (1 chi): Repite un tiro adicional esta ronda y te quedas con el resultado que más te convenga. No podrás repetir el mismo tiro más de una vez.
 
 ## Rango V 
 
-**Monstruo ilusorio** (3 AP y 3 chi, Ilusión, Concentración): Creas una criatura de tamaño grande hecha de ilusiones semejante a una invocación con tres mejoras. Esta tomará acciones como si fuera real y recibirás beneficios de *flanqueo* si combates junto a ella. Además, si la criatura es atacada podrá defenderse usando tu tiro de magia ilusoria para evitar ser impactada. Si haces que esta criatura sea fantasmal el afectado la tratará como si fuera real y será afectado por sus ataques y habilidades, las cuales tienen el mismo efecto que *copiar hechizo.*
+Todos tus hechizos Ilusorios de Rango III reducen su coste en acciones por 1 (mínimo 1).
 
-**Muerte fantasmal**: Tus ilusiones son capaces de provocar la misma muerte. Cuando una criatura sufra daño por ilusiones fantasmales sufrirá dolor como si el daño fuera real y si sus PV sean reducidos a 0 morirá de un palo cardíaco. Las resistencias al daño no se aplican al evitar el daño provocado por ilusiones fantasmales.
+### Monstruo ilusorio
 
-**Capa de ilusiones** (1 AP y 3 chi, Ilusión, Concentración): Te rodeas de una capa de ilusiones que te permiten alterar tu aspecto, localización y voz como desees. Mientras tengas activa la capa de ilusiones recibes los beneficios de *disfraz ilusorio* y recibes ventaja en todos tus tiros de ataque frente a aquellos objetivos que no hayan desmentido tus ilusiones. Además, una vez por ronda puedes volverte invisible como acción bonus sin la necesidad de gastar chi para evitar un ataque que te haya impactado exitosamente. Esta ilusión no se desmentirá al interactuar con ella sino cuando pierdas la concentración o pasen rango + 1 rondas.
+*Ilusoria, Arcana, Duradera*
+
+**Coste:** 3 acciones y 3 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera media
+
+**Duración:** Concentración
+
+Moldeas una gran cantidad de ilusiones para crear una criatura monstruosa que parece completamente real. El monstruo ilusorio emergerá de un punto a distancia media de ti y ocupará un espacio de como máximo una esfera media. Mientras este hechizo permanezca activo el monstruo podrá tomar acciones como si fuera real, empleando las estadísticas de una criatura de nivel 12 como máximo. 
+
+El monstruo permanecerá en el campo de batalla hasta que sea impactado por un ataque de área de la magnitud adecuada y puede desmentirse con un tiro exitoso de Percepción o Averiguar intenciones contra tu Magia Ilusoria. Al tratarse de una ilusión todo ataque empleado por el monstruo contra criaturas que no lo hayan desmentido contará como si estuviera afectado por Ataque fantasmal mientras que los hechizos que utilice contarán como si tuvieran los efectos de Copiar hechizo. Si es atacado puede emplear tu tiro de Magia Ilusoria para defenderse de ataques enemigos y así evitar ser desmentido.
+
+Un monstruo ilusorio será especialmente peligroso si lo transformas en fantasmal. Toda criatura que afectes exitosamente con una ilusión fantasmal tratará el monstruo como si fuera real, pudiendo así afectarles con sus ataques y habilidades. Aunque la hagas fantasmal la criatura invocada no podrá en ningún momento sanarte ni otorgarte efectos mágicos pasivos como Vínculo vital dado que sigue siendo una ilusión.
+
+**Empoderar** (1 chi): Crea un monstruo adicional con este hechizo. No podrás tener más de cuatro monstruos ilusorios activos a la vez.
+
+### Muerte fantasmal
+
+*Ilusoria, Arcana, Pasiva*
+
+Tus ilusiones son capaces de provocar la misma muerte. Cada vez que una criatura sea herida por ilusiones fantasmales sufrirá dolor como si fueran reales, reduciendo así su Vitalidad y PV por una cantidad adecuada dependiendo de la ilusión (esto queda a discreción del DJ). Si redujeras los PV de una criatura a 0 con una ilusión fantasmal esta morirá de un palo cardíaco y todo el daño provocado atravesará las Resistencias que tengan tus objetivos.
+
+### Capa de ilusiones
+
+*Ilusoria, Arcana, Duradera*
+
+**Coste:** 1 acción y 3 chi
+
+**Duración:** Concentración
+
+Te rodeas de una capa de ilusiones que te permiten alterar tu aspecto, localización y voz como desees. Mientras este hechizo permanezca activo recibirás siempre los beneficios de *disfraz ilusorio* además de Ventaja en todos tus tiros de ataque frente a aquellos objetivos que no hayan desmentido tus ilusiones. Podrás también lanzar un hechizo Ilusorio de Rango II o menos una vez por ronda sin la necesidad de pagar chi.
+
+Este hechizo permanecerá activo hasta que pierdas la concentración y no podrá ser desmentido. Dado que tu posición exacta es indeterminable puedes emplear tu tiro de Magia Ilusoria para defenderte de cualquier ataque o hechizo que te afecte explícitamente, incluyendo efectos Mentales y Aflicciones.
+
+**Empoderar** (1 chi): Empleas las ilusiones para tener éxito automático en un tiro defensivo. Si vuelves a emplear esta habilidad contra la misma persona podrá evitarla si tiene éxito en un tiro de Percepción o Averiguar intenciones contra tu Magia Ilusoria.
 
 ## Rango VI
 
-**Mundo de los espejos** (3 AP y 5 chi, Ilusión, Miedo, Concentración): Mezclas la realidad y las ilusiones para crear un mundo donde todo es posible. Esta habilidad te permite afectar todo el campo de batalla con un *espejismo arcano* con propiedades fantasmales, forzando así a cada criatura a tirar SAB contra tu magia ilusoria o quedarán atrapados en él. Todas las criaturas que se encuentren atrapadas en tu *mundo de los espejos* tratarán todas las ilusiones que creas como si fueran fantasmales, evitando así que puedan desmentirlas y sufriendo sus efectos como si fueran reales. Cada ronda las criaturas atrapadas pueden repetir el tiro para intentar escapar de esta habilidad y esta cesará cuando pierdas la concentración o pasen 10 rondas.
+Todos tus hechizos Ilusorios de Rango IV reducen su coste en acciones por 1 (mínimo 1).
+
+### Mundo de los espejos
+
+*Ilusoria, Arcana, Duradera, Ambiental*
+
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Concentración
+
+Mezclas la realidad y las ilusiones para crear un mundo donde todo es posible. Este hechizo te permite afectar todo el campo de batalla en una esfera grande con un Espejismo Arcano con propiedades fantasmales. Todas las criaturas en el área afectada deben tener éxito en un tiro de Percepción o Averiguar intenciones contra tu Magia Ilusoria o tratarán todas las ilusiones que creas como si fueran reales, evitando así que puedan desmentirlas y sufriendo sus efectos. 
+
+Este hechizo permanecerá activo hasta que pierdas la concentración. Toda criatura que se encuentre atrapada en él solo podrán repetir el tiro para intentar escaparse cada vez que haya un choque entre la realidad y las ilusiones que creas, como ocurrirá cuando una criatura impacte o sea impactada por una ilusión. 
+
+Además, mientras el Mundo de los Espejos permanezca activo tus habilidades ilusorias mejorarán de manera notable, recibiendo así Ventaja en todos tus tiros relacionados con ellas. Una vez por ronda podrás reconfigurar el campo de batalla como desees, funcionando de la misma manera que al empoderar el hechizo Espejismo Arcan

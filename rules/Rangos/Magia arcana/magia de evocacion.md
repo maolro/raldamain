@@ -138,7 +138,7 @@ Tus hechizos de Rango II reducen su coste en acciones por 1 (mínimo 1) y  apren
 
 *Evocación, Arcano, Ataque, A distancia*
 
-**Coste:** 2 acciones
+**Coste:** 2 acciones y 2 chi
 
 **Alcance:** Medio
 
