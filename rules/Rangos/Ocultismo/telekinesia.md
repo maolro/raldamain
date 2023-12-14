@@ -1,6 +1,6 @@
 ---
 title: Telequinesia
-category: Ocultismo
+image: telekinesia.jpg
 ---
 
 Tu mente tiene un poder superior que el de la mayoría de personas que te rodean, pudiendo manifestar fragmentos de su voluntad en forma de fuerzas invisibles que actuaran sobre todo aquello que se encuentre dentro de tu alcance. A medida que avances en tu entrenamiento y practiques como usar esta habilidad te volverás capaz de manifestar mayores cantidades de esta fuerza y así realizar hazañas de mayor escala, como levantar pesos cada vez mayores, crear escudos que te protejan o inmovilizar a personas. En sus ultimas instancias en las que te encuentres en la cúspide de tus habilidades te volverás capaz de manifestar está fuerza por completo pudiendo provocar tormentas de entropía con cualquier cosa que se encuentre a tu paso, así mismo podrás concentrar toda esa fuerza en un único individuo para aplastarlo o destruirlo valiéndote de la gran presión que eres capaz de producir.
@@ -115,7 +115,17 @@ Arrastras a una criatura con el poder de la telequinesia, descolocando sus defen
 
 **Coste:** 1 acción y 2 chi
 
-### Arma teledirigida
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Eres capaz de levantar y manipular objetos aún más grandes e incluso seres vivos empleando el poder de tu mente. Una criatura u objeto de tamaño grande a distancia media de ti empezará a levitar con el poder de la telekinesia, quedando bajo tu control. Si afectas a un enemigo podrá resistirse si tiene éxito en un tiro de Heroísmo o Acrobacias contra tu Telekinesia, pero si fracasa quedará *agarrado* por este hechizo hasta que se libere. No obstante, el afectado podrá repetir el tiro al principio de su turno y se liberará de sus efectos en caso de éxito.
+
+Este hechizo permanecerá activo hasta que pierdas la concentración o dejes de controlar todo aquello que estés agarrando. Si estás sosteniendo un objeto puedes emplear una acción para hacer un ataque contra todas las criaturas a una distancia corta de un punto que percibas a distancia media de ti, infligiéndoles una cantidad de daño y efectos al impactar según la naturaleza del objeto escogido (generalmente no superará 2d8 + INT daño físico de cualquier tipo). Esto mismo te hará perder el control sobre el objeto que estás sosteniendo.
+
+**Empoderar** (1 chi): Afecta a una criatura u objeto adicional con este hechizo
+
+### Arma danzante
 
 *Telekinesia, Mejora, Duradera*
 
@@ -123,15 +133,17 @@ Arrastras a una criatura con el poder de la telequinesia, descolocando sus defen
 
 **Duración:** Concentración
 
+Un arma levitará en el aire y actuará como una extensión de tu cuerpo, atacando a tus enemigos y defendiéndote de ataques. Mientras este hechizo permanezca activo el arma que controles podrá volar un paso en cualquier dirección y atacar a un enemigo adyacente a ella como acción bonus. El tiro de ataque será igual a tu bonificador de Telekinesia y tendrá el daño base del arma escogida modificado por tu estadística de INT. 
+
+Este hechizo permanecerá activo hasta que pierdas la concentración o el arma sea destruida. Si conoces técnicas de combate puedes aplicarlas en el arma danzante pagando chi en lugar de vigor y empleando tu bonficador de Telekineisia en lugar del que usarías normalmente. El arma también te protegerá de ataques enemigos que pueda detener, pudiendo así repetir todos los tiros de Parada que realices contra ataques Físicos que pueda bloquear el arma y quedarte con el mejor resultado.
+
+**Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simu
+
 ### Refuerzo telequinético
 
 *Telekinesia, Mejora*
 
 **Coste:** 2 acciones y 2 chi
-
-**Agarre telequinético** (1 AP y 2 chi, Telekinesia, Maniobra, Concentración): Una criatura a distancia media debe tener éxito en un tiro de FUE contra tu telequinesia o quedará agarrada por ella y la moverás un paso en cualquier dirección. Esta puede tirar para liberarse cada ronda y puedes emplear 1 acción para usar la habilidad *lanzamiento humano* contra un objetivo agarrado sin la necesidad de gastar chi. (1 chi) Afecta a un objetivo adicional
-
-**Arma danzante** (1 AP y 2 chi, Telekinesia, Concentración, Físico): Un arma levitará en el aire y obedecerá tu voluntad, permaneciendo tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que el arma se mueva volando un paso y ataque a un enemigo adyacente, infligiendo daño igual al daño base de esta. Si tienes aptitud con dicha arma puedes gastar acciones seguir atacando con ella y tendrás ventaja en tus tiros de ataque como si estuvieras volando. En lugar de atacar con el arma puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
 
 **Almacenar objetos** (2 AP y 2 chi, Telekinesia, Concentración, Defensivo): Levantas una cantidad de objetos igual a tu rango. Puedes gastar un objeto como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *manipulación telequinética.* Esta habilidad permanecerá activa mientras mantengas el campo y para recuperar un objeto debes emplear 1 AP.
 

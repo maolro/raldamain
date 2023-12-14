@@ -64,6 +64,8 @@ Este hechizo puede también arrastrar objetos de tamaño mediano un paso hacia t
 
 **Tamaño:** Esfera pequeña
 
+**Efecto crítico:** Los afectados quedan *tropezados* durante una ronda
+
 **Duración:** Concentración
 
 Aumentas enormemente la gravedad en cualquier punto a distancia media de ti para formar un pozo de gravedad. Mientras el pozo permanezca activo toda criatura a distancia cercana de él deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia Gravitatoria si desea alejarse del pozo. Además, todas las criaturas en el área afectada por el pozo recibirán Vulnerabilidad a ataques a distancia y tendrán Desventaja atacando a enemigos fuera del pozo debido a la presión gravitatoria. 

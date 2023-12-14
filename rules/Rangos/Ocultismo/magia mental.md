@@ -216,6 +216,8 @@ Al activar esta hechizo todas las criaturas a distancia media de ti deben tener 
 
 ## Rango V  
 
+Todos tus hechizos Mentales de Rango III reducen su coste en acciones por 1 (mínimo 1).
+
 ### Esclavizar
 
 *Mental, Duradera*
@@ -226,9 +228,25 @@ Al activar esta hechizo todas las criaturas a distancia media de ti deben tener 
 
 **Duración:** Concentración
 
+El más peligroso entre los hechizos mentales, este prohibido conjuro te permite doblegar completamente la mente de un enemigo para convertirlo en tu esclavo. Una criatura a distancia media de ti cuya mente puedes detectar debe tener éxito en un tiro de Concentración o Averiguar intenciones contra tu Magia mental o caerá bajo el control de este hechizo. Este hechizo permanecerá activo hasta que pierdas la concentración o el afectado se libere.
+
+Una criatura controlada de esta manera debe obedecer tus órdenes sin cuestionarlas siempre y cuando no atenten contra su propia vida. Podrás escoger exactamente qué acciones realiza en su turno y te tratará como si fueras un aliado. La criatura afectada podrá repetir el tiro si le ordenas que mate a un ser querido o realice otra acción que atente fuertemente contra sus principios o su instinto de superviviencia. Podrás saltarte estos límites y el afectado no podrá hacer ningún tiro si ha perdido toda su cordura.
+
+**Empoderar** (1 chi): Afectas a una criatura adicional con este hechizo
+
 ### Mente en blanco
 
-*Mental, Pasiva*
+*Mental, Mejora, Toque*
+
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Hasta que sea eliminada
+
+Creas una poderosa barrera psíquica que protegerá a un objetivo de toda intrusión mental. Una criatura que puedas tocar recibirá Inmunidad a efectos Mentales y no podrá ser detectado por Telepatía o Leer pensamientos mientras este hechizo permanezca activo. Este hechizo cesará cuando sea eliminado o la cordura del afectado es reducida a más de la mitad de su valor original. 
+
+**Empoderar** (1 chi): Cuando una criatura ajena intente afectarte con un hechizo Mental puedes devolvérselo como reacción sin la necesidad de gastar chi o acciones. Emplearás tu bonificador de Magia Mental en todos los tiros relacionados con ese hechizo.
 
 ### Destrozar mente
 
@@ -236,16 +254,34 @@ Al activar esta hechizo todas las criaturas a distancia media de ti deben tener 
 
 **Coste:** 2 acciones y 3 chi
 
-**Esclavizar** (3 Acciones y 3 chi, Mental, Concentración): Un objetivo a cuya mente puedas detectar debe tener éxito en un tiro de SAB contra tu magia mental o doblegas su mente a tu voluntad. Una criatura esclavizada debe obedecer tus órdenes sin cuestionarlas siempre que no atenten contra su vida y este efecto permanecerá activo siempre que te puedas comunicar con tu objetivo y mantengas la concentración. Solo puedes tener una criatura esclavizada a la vez y las criaturas con 0 cordura no cuentan para este límite.
+**Alcance:** Medio
 
-**Mente en blanco**: Tu mente está protegida contra influencias mentales, impidiendo que puedas ser percibido por *detectar pensamientos* y recibiendo inmunidad a efectos mentales. Esta habilidad se perderá si tu cordura se reduce a menos de la mitad  y puedes otorgarla a un aliado durante un combate pagando 3 chi.
+**Efecto crítico:** El afectado caerá *inconsciente* de inmediato
 
-**Destrozar mente** (3 Acciones y 3 chi, Mental): Haz un ataque de *asalto mental* que provoca 1d10 + INT daño a la cordura al impactar. Si logras reducir la cordura de un objetivo a 0 este perderá sus capacidades mentales, volviéndose incapaz de utilizar habilidades que requieran una estadística mental y reduciendo su intelecto al de un animal. Si este efecto no se sana al cabo de un día se volverá permanente y tratarlo requerirá semanas de cuidados con *sanador mental*.
+**Duración:** Instantáneo
+
+Atacas la mente de un enemigo con el fin de destrozar su capacidad de raciocinio. Una criatura a distancia media de ti debe tener éxito en un tiro de Concentración o Averiguar intenciones contra tu Magia Mental o reducirá su cordura por 1d10 + INT además de quedar *aturdido* durante una ronda. La reducción a la cordura que provoca este hechizo puede afectar incluso a objetivos protegidos por Mente en Blanco.
+
+Si este hechizo logra reducir la cordura del afectado a 0 este perderá completamente sus capacidades mentales, volviéndose incapaz de emplear habilidades que requieran una estadística mental y reduciendo su intelecto al de un animal. Si este efecto no se sana al cabo de un día se volverá permanente y tratarlo requerirá semanas de cuidados y uso reiterado del hechizo *sanador mental*.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
 ## Rango VI  
 
+Todos tus hechizos Mentales de Rango IV reducen su coste en acciones por 1 (mínimo 1).
+
 ### Ráfaga mental
 
-Asaltos mentales e
+*Mental, Área, Cordura*
 
-**Ráfaga mental** (3 Acciones y 5 chi): Haz un ataque de *destrozar mente* contra todas las criaturas cuyas mentes puedas detectar que al impactar *aturdirá* durante una ronda. Si logras reducir la cordura de un objetivo a 0 con esta habilidad puedes escoger matarlo instantáneamente de un derrame cerebral. Todos los objetivos con *mente en blanco* o *escudo mental* en el área perderán su habilidad durante el resto del combate salvo que paguen 1 chi (3 chi para *mente en blanco*).
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Esfera media
+
+**Efecto crítico:** Los afectados fallarán su tiro contra el hechizo mental que les intentes implantar
+
+**Duración:** Concentración
+
+Enfocas todo el poder de tu mente en una ráfaga psíquica que demolerá las capacidades de pensar y actuar de todos tus enemigos. Todos los objetivos a distancia media de ti deberán tener éxito en un tiro de Concentración o Averiguar intenciones o reducirán su cordura por 1d10 + INT y quedarán afectados por otro hechizo Mental que conozcas de Rango III o menos, forzándoles a tirar de nuevo contra él (no necesitarás pagar chi o acciones para ese hechizo). 
+
+Ráfaga mental permanecerá activa mientras mantengas la concentración y podrás repetir sus efectos al principio de tu turno. Si logras reducir la cordura de un objetivo a 0 con este hechizo puedes provocarle un derrame cerebral que lo matará instantáneamente. Además, mientras este hechizo permanezca activo todas las criaturas sin Resistencia a efectos Mentales serán incapaces de concentrarse debido al constante ruido mental que les provocas.

@@ -1,6 +1,6 @@
 ---
 title: Nigromancia
-category: Ocultismo
+image: nigromancia.jpg
 ---
 
 Al igual que un médium, tienes una fuerte conexión con el plano de los muertos que otros no pueden ni comprender, sin embargo tus habilidades son mas intrusivas esclavizando eternamente los cuerpos de los muertos bajo tu dominio y corrompiendo sus almas hasta que se conviertan en una sombra de lo que alguna vez fueron. A medida que tu conocimiento sobre la muerte vaya haciéndose mas profundo te volverás capaz de emplear la energía que usas para componer a tus creaciones como una potente arma que drene cualquier rastro de vida de cualquiera que entre en contacto con ella, así mismo serás capaz de levantar mayores grupos de no muertos así como guardar en cada uno de ellos una mayor cantidad de energía para darles habilidades superiores. En el momento en el que tu conocimiento sobre la muerte alcanza sus ultimas etapas  tu cuerpo comenzará a infundirse con las mismas energías con las que trabajas para crear tus no muertos dándote habilidades superiores relacionadas con las que ellos poseen, así mismo serás capaz incluso de realizar el mismísimo trabajo de la parca pudiendo así arrebatar cualquier rastro de vida de cualquiera al que roces con tu toque y levantarlo como tu vasallo.
@@ -11,47 +11,89 @@ Al igual que un médium, tienes una fuerte conexión con el plano de los muertos
 
 ### Toque necrótico
 
+*Nigromancia, Toque, Aflicción, Necrótico*
+
 **Coste:** 2 acciones
 
 **Alcance:** Cuerpo a cuerpo
 
-Tiro CON o 1d6 + Rango daño necrótico
+**Efecto crítico:** El objetivo quedará *fatigado* hasta que se recupere.
+
+**Duración:** Instantáneo
+
+Tu toque drena la energía vital misma de un enemigo. Una criatura adyacente a ti deberá tener éxito en un tiro de CON frente a tu Nigromancia o sufrirá 1d6 + Rango daño Necrótico. Este daño reducirá también la Vitalidad y PV máximos del afectado, impidiendo así que pueda sanarse hasta que realice un descanso largo. Este efecto cuenta como una Aflicción a nivel 1 para los propósitos de habilidades sanadoras.
+
+**Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio.
 
 ### Descarga de energía negatica
+
+*Nigromancia, Ataque, A distancia, Necrótico*
 
 **Coste:** 2 acciones
 
 **Alcance:** Medio
 
-Ataque que inflige 1d6 + Rango daño necrótico
+**Efecto crítico:** El afectado quedará *fatigado* hasta que se recupere
+
+**Duración:** Instantáneo
+
+Concentras la antienergía en la forma de un rayo y lo disparas a un enemigo. Haz un ataque contra un objetivo a distancia media que infligirá 1d6 + Rango daño Necrótico al impactar. El daño provocado por este ataque reducirá también la Vitalidad y PV máximos del afectado, impidiendo así que pueda sanarse hasta que realice un descanso largo. Este efecto cuenta como una Aflicción a nivel 1 para los propósitos de habilidades sanadoras.
+
+**Empoderar** (1 chi): Afecta a una criatura adicional a distancia media de ti.
 
 ### Bendición de la muerte
 
-Los no-muertos no son hostiles y resistencia a Aflicciones y daño Necrótico. Vulnerabilidad a Radiante.
+*Nigromancia, Pasiva*
 
-**Toque necrótico** (2 Acciones, Nigromancia, Toque, Aflicción, Antienergía): Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu tiro de nigromancia o sufrirá 1d6 + rango daño necrótico. El daño hecho por este ataque reducirá también el máximo de PV y Vitalidad, impidiendo así que pueda ser sanado hasta que pase un descanso largo. (1 chi) Aumenta el alcance a cercano.
+Tu aprendizaje de las artes prohibidas te vuelve un paso más cercano a la no-muerte. Obtienes Resistencia a Aflicciones y efectos Necróticos a costa de recibir Vulnerabilidad a efectos Radiantes. Además, los no-muertos no serán naturalmente hostiles hacia ti y te reconocerán como uno de los suyos. 
 
-**Descarga de energía negativa** (2 Acciones, Nigromancia, A distancia, Antienergía): Haz un ataque con nigromancia contra un objetivo a distancia media que infligirá 1d6 + rango daño necrótico al impactar y *enfermará* durante una ronda al reducir PV. (1 chi) Afecta a un objetivo adicional.
-
-**Bendición de la muerte**: Los no-muertos no serán naturalmente hostiles hacia ti y recibes resistencia a venenos y daño necrótico igual a tu rango + 1 además que puedes aguantar la respiración un turno adicional por rango. Si ya eres un no-muerto perderás la vulnerabilidad al daño radiante y recibirás resistencia a maldiciones y habilidades de médium igual a tu rango + 1. 
+En el caso que ya seas un no-muerto y recibas esta habilidad la energía profana en tu interior te volverá aún más poderoso. Perderás así la Vulnerabilidad a efectos Radiantes además que recibirás Resistencia a efectos Arcanos y Divinos.
 
 ## Rango II
 
 ### Vínculo parasítico
 
-Vínculo involuntario donde divide daño.
+*Nigromancia, Toque, Maldición*
+
+**Coste:** 3 acciones y 1 chi
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Concentración
+
+Ligas forzosamente tu esencia vital a otra criatura para transferirle una parte del daño que sufras. Una criatura adyacente debe tener éxito en un tiro de CON frente a tu Nigromancia o formarás un Vínculo parasítico con ella. Este vínculo permanecerá activo hasta que pierdas la concentración o la criatura afectada se libere. 
+
+Mientras dicho vínculo permanezca activo una vez por ronda puedes transferir hasta la mitad del daño que sufras de un ataque a la criatura vinculada además que podrás afectarla con tus hechizos de Toque sin importar la distancia que os separe. La criatura vinculada podrá repetir este tiro al principio de su turno y en caso de éxito se liberará. 
+
+**Empoderar** (1 chi): Transfieres una *herida permanente* o efecto de estado negativo a la criatura con la que compartas en vínculo.
 
 ### Animar no-muerto
 
-Anima cadáver como no-muerto. Máximo Rango x 3. Puedes lanzar hechizos de Nigromancia a través de ellos y usarlos como reacción para que absorban daño hecho contra ti.
+*Nigromancia, Invocación*
+
+**Coste:** 3 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Duración:** Permanente
+
+Infundes un cadáver de energía necrótica para animarlo como un no-muerto bajo tus órdenes. El no-muerto se tratará de un Zombi o Esqueleto según el estado de descomposición del cadáver y este permanecerá activo hasta que muera. No podrás tener bajo tus órdenes a más de Rango x 3 no-muertos y aquellos fuera de tu control se descompondrán al cabo de un día.
+
+Mientras que los no-muertos son individualmente débiles siguen siendo muy útiles como carne de cañón y para reforzar tus hechizos necróticos. De esta manera puedes lanzar hechizos de Toque pertenecientes a este Rango a través de tus no-muertos, empleando así su posición como si fuera la tuya. Además, si te encuentras en *posición defensiva* puedes sacrificar a un no-muerto bajo tus órdenes a distancia corta para que reciba el daño de un ataque que iba dirigido específicamente hacia ti.
+
+**Empoderar** (1 chi): Anima dos no-muertos adicionales con este hechizo.
 
 ### Maldición vampírica
 
+*Nigromancia, Toque, Maldición*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Toque
+
+**Duración:** Hasa
+
 Colocas una maldición en un objetivo que te permite recuperar Vitalidad cada vez que le hagas un ataque que le provoque daño necrótico.
-
-**Vínculo parasítico** (3 Acciones y 1 chi. Nigromancia, Toque, Aflicción): Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu nigromancia o formas un vínculo parasítico con ella. Mientras mantengas el vínculo una vez por ronda como reacción a sufrir daño puedes transferir hasta la mitad del daño que sufras a la criatura con la que tengas el vínculo además que puedes afectarla con *toque necrótico* sin la necesidad de estar adyacente a ella. Cada ronda la criatura puede repetir el tiro de CON para liberarse del efecto y este permanecerá activo hasta que pierdas la concentración. No puedes tener más de un vínculo activo a la vez.
-
-**Animar no-muerto** (3 AP y 1 chi, Nigromancia): Animas un cadáver como un no-muerto de tipo zombi o esqueleto el cual seguirá tus órdenes al pie de la letra. No puedes comandar simultáneamente a más no-muertos que tu rango x 3.
 
 **Drenar vitalidad** (1 chi, Nigromancia): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico y requiera un tiro de CON te sanarás Vitalidad igual a la mitad del daño provocado. Si logras matar a un objetivo con dicho ataque podrás reducir el nivel de una herida permanente por un paso.
 
