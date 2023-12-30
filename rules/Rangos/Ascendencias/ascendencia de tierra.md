@@ -5,6 +5,14 @@ category: Ascendencias
 
 Estás conectado con los espíritus de las más lejanas profundidades de la tierra y las más altas montañas, transformándote en un inquebrantable guardián capaz de mantenerse sólido frente a un mundo cambiante. A medida que su naturaleza cristalice en ti la tierra se convertirá en un nuevo medio para alcanzar tus ideales, protegiendo tu cuerpo como una férrea cubierta así como sometiendo a tus enemigos bajo toneladas de inamovible roca.
 
+# Reglas fundamentales
+
+Ascendencia de Tierra tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia de Timejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I
 
 ### Vínculo con la tierra

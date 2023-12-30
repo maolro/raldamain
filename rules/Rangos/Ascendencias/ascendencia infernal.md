@@ -5,6 +5,12 @@ category: Ascendencias
 
 De las profundidades de la tierra sale una voz que clama tu nombre y que hace parecer insignificante a todo aquello que una vez te rodeó, desafiando la jerarquía impuesta por otros con una nueva promesa de poder. Según el dogma de tu dios va arraigando en ti este va convirtiéndose en una nueva realidad que altera tu cuerpo, rechazando todo aquello que una vez te pareció importante por una oportunidad de apostar con aquellos que rigen el mundo y convertirte en su nuevo señor.
 
+# Reglas fundamentales
+
+Ascendencia Infernal tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Infernal mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
 # Rangos
 
 ## Rango I

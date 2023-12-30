@@ -149,7 +149,7 @@ Mientras la criatura permanezca *agarrada* fallará todos sus tiros contra otras
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Levitaci
+### Levitación
 
 *Gravedad, Duradero*
 
@@ -193,7 +193,7 @@ Todos tus hechizos de Gravedad de Rango II cuestan una acción menos para emplea
 
 **Duración:** Concentración
 
-Manipulas la fuerza gravitatoria en torno a ti para levantar una gran cantidad de objetos en forma de un vórtice que te protegerá de ataques. Al activar esta habilidad recibes *contadores de escudo* iguales a tu Rango además de Resistencia a ataques a distancia. Este hechizo durará hasta que pierdas la concentración o se te acaben los contadores de escudo. 
+Manipulas la fuerza gravitatoria en torno a ti para levantar una gran cantidad de objetos en forma de un vórtice que te protegerá de ataques. Al activar esta habilidad recibes *contadores de escudo* iguales a tu Rango además de Resistencia a ataques a distancia. Este hechizo permanecerhasta que pierdas la concentración o se te acaben los contadores de escudo. 
 
 La fuerza del vórtice afectará también a los enemigos que se acerquen a ti, permitiéndote hacer un ataque de *pulso gravitatorio* o *arrastre gravitatorio* como reacción contra cada enemigo que entre en un espacio a distancia corta de ti o empiece su turno ahí. Solo podrás afectar a un enemigo de esta manera una vez por ronda.
 

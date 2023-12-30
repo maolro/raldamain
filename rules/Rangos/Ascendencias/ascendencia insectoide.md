@@ -5,6 +5,14 @@ category: Ascendencias
 
 Los insectos han estado presentes en tu vida desde tu nacimiento o tal vez hicieron su primera aparición después de que un desastroso accidente ocurriese, lo que es seguro es que su aparición es algo más siniestro que humana pueda imaginar. En el transcurso en el que la influencia insectoide aumente su poder irá alterando en cuerpo y mente hasta transformarte en un ser cada vez más insecto que humano. Cuando el tiempo suficiente haya pasado ya lo único que pasará a ser importante es la colmena, siempre creciente, siempre hambrienta.
 
+# Reglas fundamentales
+
+Ascendencia Insectoide tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Insectoimejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I
 
 ### Aspecto insectoide

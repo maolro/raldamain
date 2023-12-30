@@ -5,19 +5,51 @@ category: Armas
 
 Tu estilo de combate se asemeja al de una sólida barrera defensiva, empleando tu escudo para proteger a tus aliados y para realizar poderosas cargas contra tus enemigos. A medida que tu entrenamiento avance te volverás capaz de realizar fuertes cargas valiéndote de tu escudo como una férrea cubierta que te protegerá de cualquier obstáculo en el camino y mejorar tus capacidades físicas a través de un estado de defensa absoluta. En última instancia serás capaz de convertirte en una infranqueable barrera, bloqueando todo ataque hecho contra tus aliados y convirtiéndote en una invencible fortaleza andante.
 
+# Reglas fundamentales
+
+Estilo de Escudos tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de vigor:** Tu rango en Estilo de Escudos mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+
 # Rangos
 
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con escudos.
+### Golpe de escudo
 
-**Carga con escudo:** Si te mueves en línea recta antes de hacer un *golpe de escudo* este contará como acción bonus y el objetivo deberá tirar fuerza contra tu tiro o pasará a estar *tropezado*.
+*Escudo, Ataque, Físico, Cuerpo a cuerpo*
 
-**Proteger aliados:** Puedes defender a un aliado empleando tu tiro defensivo de escudos si este está adyacente a ti y te encuentras en posición defensiva.
+**Coste:** 2 acciones
 
-**Golpe de escudo (2 AP):** Haz un ataque con tu arma cuyo daño estará determinado según las armas de la siguiente [tabla](https://raldamain.com/rules/Rangos/Armas/escudo.html#armas)
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+**Duración:** Instantáneo
+
+Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Escudo.
+
+### Estilo defensor
+
+*Pasiva, Innata*
+
+Tu estilo se centra en asegurarte que ningún de tus aliados acabe herido, poniendo en juego hasta tu propia vida para que eso sea posible. Mientras te encuentres en *posición defensiva* puedes tirar Parada para detener cualquier ataque hecho contra aliados adyacentes a ti. Si fallas el tiro dichos ataques te impactarán a ti en lugar de al aliado que intentaste proteger. Esta habilidad no funcionará contra ataques de área.
+
+Tu escudo también te proporcionará cierta cantidad de *contadores de escudo* iniciales que puedes emplear para reducir el daño de ataques que recibas. La cantidad exacta de contadores dependerá del escudo escogido y este recibirá el efecto de estado *roto* cuando gastes su último contador. Dichos contadores se recuperarán tras reparar tu escudo, un proceso que tardará como mínimo una cantidad de tiempo igual a un descanso largo.
+
+### Carga con escudo
+
+*Escudo, Mejora*
+
+**Coste:** 1 vigor
+
+Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*.
 
 ## Rango II
+
+### Forma defensiva
+
+### Detener ataque
 
 **Forma defensiva:** Entras en un estado de defensa absoluta durante rango + 2 rondas. Mientras estés en este estado tu fuerza y constitución aumentarán por 2 y tendrás los beneficios de *posición defensiva* sin la necesidad de gastar acciones, sin embargo tu velocidad de movimiento se reducirá por 1. Cuando *forma defensiva* termine estarás *fatigado*, impidiendo que vuelvas a usar la habilidad hasta que te recuperes.
 

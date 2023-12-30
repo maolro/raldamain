@@ -4,9 +4,9 @@ title: Ascendencia Dracónica
 
 # Reglas fundamentales
 
-Ascendencia primigenia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+Ascendencia Dracónica tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Fuerza y magia:** Tu rango en Ascendencia primigenia mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Poder innato:** Tu rango en Ascendencia Dracónica mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
 
 # Rangos
 

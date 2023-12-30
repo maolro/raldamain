@@ -138,7 +138,7 @@ Esta habilidad durará hasta que pierdas la concentración o seas desarmado. Est
 
 **Empoderar** (1 vigor): Reduces el daño de un ataque que no hayas logrado detener exitosamente con tu Parada a la mitad. Esta reducción se aplicará antes de la DEF y solo puedes activarla una vez por ataque.
 
-### Estocada fuerte
+### Estocada poderosa
 
 *Duelo, Mejora*
 

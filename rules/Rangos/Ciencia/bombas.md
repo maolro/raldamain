@@ -5,9 +5,31 @@ category: Ciencia
 
 Como un arma con la oportunidad de crear daños devastadores a sus objetivos, las bombas siempre han conseguido llamar la atención de aquellos con las habilidades suficientes como para utilizarlas y tu eres uno de ellos. A lo largo de tu estudio sobre sus mecanismos has aprendido tanto el como fabricarlas como la forma exacta de utilizarlas para evitar convertirte en un daño colateral de tu propia creación, de este modo, a medida que avanzas en tus estudios sobre este ingenioso invento descubres nuevas formas en las que puedan utilizarse dándoles mas aplicaciones que la de simplemente servir como un explosivo. Así mismo, cuando has adquirido la suficiente experiencia como para llamarte a ti mismo un maestro serás capaz de realizar incluso hasta los cálculos más minuciosos permitiéndote incluir en ellas trazas de chi para darles efectos adicionales e incluso utilizar cantidades específicas para lograr tus objetivos sin que termine en una catástrofe.
 
+# Reglas fundamentales
+
+
+
+# Rangos
+
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con bombas. Puedes usar tu estadística de inteligencia para tiros de ataque con bombas.
+### Bomba incendiaria
+
+*Bomba, A distancia, Área, Fuego*
+
+### Frasco de ácido
+
+*Bomba, A distancia, Área, Ácido*
+
+### Bomba de humo
+
+*Bomba, A distancia, Área, Gaseosa, Visual*
+
+### Bomba fétida
+
+*Bomba, A distancia, Área, Gaseosa, Aflicción*
+
+
 
 **Fabricar bombas** (proyecto y 2 acciones): Conoces como fabricar explosivos utilizando materiales rudimentarios. Como proyecto de duración igual a un descanso corto puedes fabricar una cantidad de bombas igual a tu rango si posees los materiales adecuados, pudiendo tener como máximo INT + 2 bombas preparadas. Hacer un ataque con te cuesta 2 acciones, tiene alcance medio y afectará a todas las criaturas en un radio de impacto corto. La bomba hará uno de los siguientes efectos.
 

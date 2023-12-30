@@ -5,6 +5,14 @@ category: Ascendencias
 
 Tienes una fuerte conexión con los espíritus de las más antiguas antiguas tormentas, permitiéndote sentir el eco de sus vientos y el rugir de las tempestades. Según su influencia se va haciendo más notable en ti el poder del aire empieza a infundirse en tu cuerpo, permitiéndote liberar tu cuerpo de las cadenas de la tierra para explorar los más lejanos cielos y moverte con la agilidad del mismo viento.
 
+# Reglas fundamentales
+
+Ascendencia de Aire tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia de Aire mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I
 
 ### Nacido de las tormentas

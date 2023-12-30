@@ -62,7 +62,7 @@ Evaporas una cantidad sustancial de agua y la moldeas para crear una densa nebli
 
 Todas las criaturas dentro de la neblina tendrán dificultades para ver su entorno, quedando *cegados* mientras permanezcan en su interior. También obtendrán *ocultamiento* contra todos los ataques que provengan desde fuera de la niebla debido a la dificultad para determinar su posición exacta. La niebla se dispersará cuando pierdas la concentración o si es afectada por un viento lo suficientemente fuerte.
 
-**Empoderar** (1 chi): La niebla se vuelve especialmente densa durante una ronda, *cegando* a todas las criaturas en su interior que fallen una tirada de Percepción contra tu magia de Agua.
+**Empoderar** (1 chi): Extiende el área de efecto de la neblina a una esfera mediana durante una ronda o muévela un paso en cualquier dirección.
 
 ## Rango II
 
@@ -138,7 +138,7 @@ Al impactar a un enemigo con un ataque de agua puedes lanzar este hechizo como a
 
 **Empoderar** (1 chi): La Prisión Acuosa afectará a un objetivo adicional si fue impactado por el mismo hechizo que afectó a tu objetivo principal, como puede ser un ataque de Torrente empoderado o uno de Ola chocante
 
-### Control del Agua
+### Controlar el Agua
 
 *Agua, Ambiental, Duradera*
 

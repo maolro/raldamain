@@ -6,9 +6,9 @@ Tienes una fuerte conexión con la naturaleza así como con los orígenes de la 
 
 # Reglas fundamentales
 
-Ascendencia primigenia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+Ascendencia Primigenia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Fuerza y magia:** Tu rango en Ascendencia primigenia mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Poder innato:** Tu rango en Ascendencia Primigenia mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
 
 # Rangos
 

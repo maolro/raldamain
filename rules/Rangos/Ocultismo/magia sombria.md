@@ -3,25 +3,108 @@ title: Magia sombría
 image: magia_sombria.jpg
 ---
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia Sombría mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia Sombría será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+
+# Rangos
+
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con magia sombría y aumenta tu reserva de chi por 3.
+### Toque drenador
 
-**Toque necrótico** (2 AP, Sombra, Toque, Aflicción, Antienergía): Un objetivo adyacente debe tener éxito en un tiro de CON frente a tu tiro de nigromancia o sufrirá 1d6 + rango daño necrótico. El daño hecho por este ataque reducirá también el máximo de PV y Vitalidad, impidiendo así que pueda ser sanado hasta que pase un descanso largo. (1 chi) Aumenta el alcance a cercano.
+*Sombrío, Toque, Aflicción, Frío*
 
-**Tajo sombrío** (2 AP, Sombra, A distancia, Antienergía): Haz un ataque con magia sombría contra un objetivo a distancia media que inflige 1d6 + rango daño frío. Si este ataque logra dañar los PV reducirá también el valor máximo de dicho valor, impidiendo que pueda ser sanado hasta que pase un descanso largo. Si el objetivo se encuentra en un entorno a oscuras este ataque cuenta como un ataque sorpresa. (1 chi) Afectas a un objetivo adicional.
+**Coste:** 2 acciones
 
-**Crear oscuridad** (2 AP y 1 chi, Sombra, Área, Concentración): Formas una nube de oscuridad mágica en una posición a distancia media de ti que ocupará un radio corto, *cegando* a todas las criaturas que se encuentren en ella. La nube permanecerá hasta que pierdas la concentración o pasen rango + 1 rondas y si se intenta crear en un entorno afectado por luz brillante esta reducirá su luminosidad por un paso y se disipará de inmediato. (1 chi) Aumenta el radio a medio
+**Alcance:** Cuerpo a cuerpo
 
-**Parada sombría** (reacción): Eres capaz de emplear las sombras para protegerte de ataques, lo cual se conoce como una parada sombría. Una parada sombría sólo puede protegerte de ataques mágicos y a distancia. A rango III esta habilidad puede protegerte contra ataques cuerpo a cuerpo. 
+**Efecto crítico:** El afectado quedará *fatigado* durante una ronda
+
+**Duración:** Instantáneo
+
+Infundes tu toque de energía sombría para drenar la energía vital de un enemigo. Una criatura adyacente a ti deberá tener éxito en un tiro de CON frente a tu magia Sombría o sufrirá 1d6 + Rango daño Frío. Este daño reducirá también la Vitalidad y PV máximos del afectado, impidiendo así que pueda sanarse hasta que realice un descanso largo. Este efecto cuenta como una Aflicción a nivel 1 para los propósitos de habilidades sanadoras.
+
+**Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio.
+
+### Tajo umbrío
+
+*Sombrío, Ataque, A distancia, Frío*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** El afectado quedará *fatigado* durante una ronda
+
+**Duración:** Instantáneo
+
+Formas un corte entre el plano material y el plano sombrío que consumirá la energía vital de toda persona que toque. Haz un ataque contra un objetivo a distancia media que infligirá 1d6 + Rango daño Frío al impactar. El daño provocado por este ataque reducirá también la Vitalidad y PV máximos del afectado, impidiendo así que pueda sanarse hasta que realice un descanso largo. Este efecto cuenta como una Aflicción a nivel 1 para los propósitos de habilidades sanadoras. 
+
+**Empoderar** (1 chi): Afecta a una criatura adicional a distancia media de ti.
+
+### Crear oscuridad
+
+*Sombrío, Gaseoso, Duradero*
+
+**Coste:** 2 acciones
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña
+
+**Duración:** Concentración
+
+Formas una nube de oscuridad que absorberá toda la luz que toque. La nube de oscuridad emergerá desde un punto a distancia media y se extenderá alrededor de las esquinas hasta llenar una esfera pequeña. Esta apagará todas las fuentes de luz en su área y disipará todos los efectos de Vida activos de menor Rango al tuyo.
+
+Todas las criaturas en la nube de oscuridad serán incapaces de ver su entorno, quedando así *cegadas* mientras permanezcan en su interior. También obtendrán *ocultamiento* contra todos los ataques que provengan desde fuera de la niebla debido a la dificultad para determinar su posición exacta. La nube de oscuridad se dispersará cuando pierdas la concentración o si es afectada por un viento lo suficientemente fuerte.
+
+**Empoderar** (1 chi): Extiende el área de efecto de la nube a una esfera mediana durante una ronda o muévela un paso en cualquier dirección.
 
 ## Rango II
 
-**Capullo sombrío** (2 AP y 1 chi, Sombra, Defensiva, Antienergía): Te rodeas de oscuridad mágica para protegerte, recibiendo PV temporales igual a tu rango + 2 y *ocultamiento* contra todos los ataques. Esta habilidad permanecerá activa hasta que pierdas tus PV temporales y mientras lo esté puedes hacer un ataque de *toque necrótico* una vez por turno en respuesta a ser impactado. Cuando sea destruido formará una nube de oscuridad con radio corto en tu posición que se disipará al final del turno. El *capullo sombrío* puede crearse como reacción si te encuentras en *posición defensiva*.
+### Bola sombra
 
-**Bola sombra** (2 AP y 1 chi, Sombra, Área, Antienergía): Haz un ataque de *tajo sombrío* con radio de salpicadura corto cuyo daño estará modificado por tu CAR en lugar de tu rango.  (1 chi) Crea una nube de oscuridad en el radio de efecto de esta habilidad.
+*Sombría, Ataque, Área, Frío*
 
-**Devorar esperanza** (2 AP y 1 chi, Sombra, Toque, Antienergía, Concentración): Haz un ataque de *toque necrótico* que al impactar reduce la reserva de chi del objetivo por 1 y lo *enreda*. Si permanece *enredado* al final de su turno volverá a reducir su reserva por 1 (sufre 2 daño necrótico si no tiene). No puedes *enredar* a más de rango + 1 objetivos a la vez.
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña
+
+**Efecto crítico:** El afectado quedará *fatigado* durante una ronda
+
+**Duración:** Instantáneo
+
+Formas una bola explosiva hecha de energía sombría y la lanzas hacia tus enemigos. Haz un ataque contra todos los enemigos en una esfera pequeña centrada en un punto a distancia media de ti que inflige 1d6 + CAR daño Frío al impactar. 
+
+El daño provocado por este ataque reducirá también la Vitalidad y PV máximos del afectado, impidiendo así que pueda sanarse hasta que realice un descanso largo. Este efecto cuenta como una Aflicción a nivel 1 para los propósitos de habilidades sanadoras. 
+
+Este ataque puede potenciarse aún más si cargas la bola sombría con energía sombría antes de lanzarla. En lugar de atacar puedes cargar tu bola sombría si mantienes la concentración en ella y te encuentras en un lugar a oscuras. Puedes gastar cualquier cantidad de acciones en tu turno para cargar la bola sombría, aumentando su daño en 1d6 y el tamaño de su radio en un paso por cada 2 acciones que gastes. No puedes gastar más de cuatro acciones para cargar tu bola sombría y esta se desvanecerá inmediatamente si pierdes la concentración.
+
+**Empoderar** (1 chi): Al emplear este hechizo lanzas una bola sombría adicional en una dirección diferente para atacar a otros objetivos. Estará tan cargada como tu bola sombría original.
+
+### Capullo sombrío
+
+*Sombría, Defensiva, Duradera*
+
+**Coste:** 1 acción y 1 chi
+
+**Duración:** Concentración
+
+Te rodeas de una capa de oscuridad mágica que te protegerá de ataques enemigos. El capullo sombrío te otorgará Vitalidad temporal igual a tu Rango x 3 además de Inmunidad a efectos de Toque. El capullo sombrío permanecerá activo hasta que se te acabe la Vitalidad temporal o pierdas la concentración.
+
+Las sombras creadas por el capullo recibirán todo el daño que sufras además que ocultarán tu posición exacta, otorgándote así los beneficios de *ocultamiento*. Estas también absorberán la energía vital de los enemigos que se te intenten acercar, forzando a cada enemigo que entre en una posición adyacente a ti o empiece su turno ahí a tener éxito en un tiro de CON frente a tu Magia Sombría o sufrirá 1d6 + Rango daño Frío, el cual funciona de la misma manera que el hechizo Toque Drenad
+
+**Empoderar** (1 chi): El capullo sombrío recupera toda su Vitalidad temporal. No puedes empoderar de esta manera si te encuentras en un lugar iluminado.
+
+### Devorar esperanza
+
+
+
+**Devorar esperanza** (2 AP y 1 chi, Sombra, Toque, Antienergía, Concentració-**n): Haz un ataque de *toque necrótico* que al impactar reduce la reserva de chi del objetivo por 1 y lo *enreda*. Si permanece *enredado* al final de su turno volverá a reducir su reserva por 1 (sufre 2 daño necrótico si no tiene). No puedes *enredar* a más de rango + 1 objetivos a la vez.
 
 ## Rango III
 

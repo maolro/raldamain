@@ -5,9 +5,27 @@ image: magia_hielo.jpg
 
 Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estado líquido como algunos elementalistas tú te has decantado por emplear una versión más agresiva aprendiendo a cómo utilizarlo en su forma sólida. A medida que tu control sobre el hielo se va haciendo más fuerte serás capaz de darle multitud de formas, moldeándolo para crear letales armas de matar bajo tu absoluto control, así como servirte del mismo frío que usas como una herramienta para congelar a tus enemigos hasta los huesos. En los niveles más altos serás incluso de evadir las limitaciones de tiempo, traer con tu llegada temperaturas gélidas a los entornos más cálidos o volviendo incluso más intenso el frío que te rodee.
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Hielo mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Hielo será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de usar magia de Hielo para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Hielo para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades de tipo Fuego, Agua, Frío, Naturaleza y Ácido, sustituyendo el talento que usarías normalmente.
+
+# Rangos
+
 ## Rango I
 
-Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aumenta tu reserva de chi por 2 + rango.
+### Espina de hielo
+
+*Hielo, Ataque, A distancia, Físico*
+
+### Rayo gélido
+
+*Hielo, Ataque, A distancia, Frío*
+
+### Bajar temperaturas
+
+*Hielo, Ambiental, Frío*
 
 **Espina de hielo** (2 AP): Haz un ataque con magia de hielo contra un objetivo a distancia media que inflige 1d6 + CAR daño físico al impactar. (1 chi) Afecta a un objetivo adicional.
 
@@ -16,6 +34,18 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 **Bajar temperaturas** (2 AP y 1 chi): Reduces las temperaturas a una distancia media, haciendo que el terreno se enfríe sobrenaturalmente durante el resto del combate. Si ya te encuentras en un entorno frío este quedará afectado por frío extremo, congelando toda el agua en el área y provocando que todas las criaturas en él sin protección contra el frío tengan que tirar CON frente a tu magia de hielo o estarán *fatigadas* hasta que entren en calor. 
 
 ## Rango II
+
+### Muro de hielo
+
+*Hielo, Defensiva, Duradera*
+
+### Neblina polar
+
+*Hielo, Gaseosa, Duradera*
+
+### Hielo resbalante
+
+*Hielo, Ambiental*
 
 **Muro de hielo** (2 AP y 1 chi): Formas una barrera media hecha de hielo para protegerte de ataques2 otorgándote *cubierta completa* contra ellos. El muro tendrá PV igual a tu rango x 3, DEF igual a tu rango y vulnerabilidad al daño fuego y contundente. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*.
 
@@ -27,6 +57,18 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 
 *Espina de hielo, bajar temperaturas* y *rayo gélido* cuestan -1 AP. *Espina de hielo* y *rayo gélido* aumentan su daño base a 1d8.
 
+### Tormenta de nieve
+
+*Hielo, Ataque, Área, Físico, Frío*
+
+### Congelación rápida
+
+*Hielo, Ataque, A distancia, Frío, Agarre*
+
+### Invocar elemental de hielo
+
+*Hielo, Invocación*
+
 **Tormenta de nieve** (3 AP y 2 chi): Haz un ataque contra todas las criaturas en un cilindro horizontal de radio medio que al impactar infligirá daño contundente igual al de una *espina de hielo* y daño frío igual a *rayo gélido.* Toda el área afectada pasará a ser terreno difícil el cual permanecerá activo mientras que el entorno sea frío. Si te encuentras en un entorno afectado por una tormenta de nieve el cilindro puede ser vertical. 
 
 **Congelación rápida** (1 AP y 2 chi): Haz un ataque de *rayo gélido* modificado por tu CAR en lugar del rango que al impactar *enredará* al objetivo (lo *agarra* si reduce PV). Si afectas a un objetivo en el agua no podrá defenderse de este ataque. (1 chi) Afecta a un objetivo adicional
@@ -34,6 +76,18 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 **Invocar elemental de hielo** (3 AP y 2 chi):  Invoca a un elemental de hielo que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
 
 ## Rango IV 
+
+### Ventisca
+
+*Hielo, Ataque, Área, Frío*
+
+### Armadura de hielo
+
+*Hielo, Defensiva, Duradera*
+
+### Cuchillos gélidos
+
+*Hielo, Duradera, Física*
 
 **Ventisca** (2 AP y 2 chi): Ataca a todas las criaturas en un cono medio, infligiendo 2d8 + CAR daño frío al impactar y provocando hipotermia si reduces PV, la cual funciona igual que un veneno de DES con gravedad igual a tu tiro de magia de hielo. Si una criatura con hipotermia empieza su turno en un entorno afectado por frío extremo esta avanzará de etapa.
 
@@ -43,6 +97,18 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 
 ## Rango V
 
+### Llamada del invierno
+
+*Hielo, Ambiental*
+
+### Alud
+
+*Hielo, Ataque, Área, Física, Frío, Agarre*
+
+### Congelar la sangre
+
+*Hielo, Aflicción, Frío*
+
 **Llamada del invierno** (3 AP y 3 chi): Invocas una tormenta de nieve que afectará todo el campo de batalla con *neblina polar* y permanecerá activa durante el resto del combate. Además, toda la temperatura del área bajará a frío extremo y todos tus ataques de magia de hielo provocarán hipotermia al impactar. Esta habilidad no puede ser usada en entornos donde el clima no lo permita.
 
 **Alud** (3 AP y 3 chi): Haz un ataque contra todas las criaturas en cono grande que al impactar inflige 2d10 + CAR daño contundente, 1d6 daño frío y *agarra*, enterrando a los afectados bajo una capa de nieve que tiene la misma resistencia que un *muro de hielo*. El área afectada pasa a estar afectado por terreno difícil y destruyes todas las estructuras frágiles en ella. Además, todas las criaturas *agarradas* por esta habilidad sufrirán los efectos de *hipotermia* al principio de su turno y no podrán respirar. Si te encuentras en un terreno con gran cantidad de hielo o afectado por una tormenta de nieve este ataque inflige +1d10 daño.
@@ -50,6 +116,10 @@ Añade tu rango a todos tus ataques hechos con magia elemental de hielo y aument
 **Congelar la sangre** (2 AP y 3 chi): Un objetivo que se encuentre en un entorno afectado por frío extremo debe tener éxito en un tiro de CON frente a tu magia de hielo o sufre 2d10 + CAR daño frío y los efectos de *hipotermia* a grado 2. La criatura deberá tirar cada ronda para evitar *hipotermia* y solo podrá liberarse de este efecto si sufre daño fuego. (1 chi) Afecta a un objetivo adicional
 
 ## Rango VI
+
+### Medianoche polar
+
+*Hielo, Ambiental*
 
 **Medianoche polar** (3 AP Y 5 chi): Llenas el campo de batalla con frío extremo, congelando toda el agua en él y apagando todas las fuentes de calor. Si ya te encuentras en frío extremo haz un ataque de *congelación rápida* contra todas las criaturas en el área de efecto las cuales deberán defenderse con su estadística de CON. Este efecto permanecerá activo hasta que pierdas la concentración (si *llamada del invierno* está activa esto no te hace falta) y mientras lo esté puedes hacer un ataque de *congelación rápida*, *tormenta de nieve* o *neblina polar* como acción bonus una vez por turno contra cualquier objetivo en el campo de batalla. Además, todas las habilidades de magia elemental de fuego y agua tendrán desventaja y aquellas de rango III o menos no podrán funcionar (no se aplica a personajes con la habilidad *campeón de los espíritus*)
 

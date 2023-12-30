@@ -91,11 +91,11 @@ Mientras que los no-muertos son individualmente débiles siguen siendo muy útil
 
 **Alcance:** Toque
 
-**Duración:** Hasa
+**Duración:** Hasta que sea eliminada
 
-Colocas una maldición en un objetivo que te permite recuperar Vitalidad cada vez que le hagas un ataque que le provoque daño necrótico.
+Colocas una marca maldita en un enemigo que te permite emplear su esencia vital Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Nigromancia o le provocas una maldición vampírica. Mientras la maldición permanezca activa cada vez que hieras al afectado con un efecto Necrótico podrás recuperar Vitalidad igual a la mitad del daño provocado. Dicha maldición permanecerá activa hasta que pase un día o sea eliminada.
 
-**Drenar vitalidad** (1 chi, Nigromancia): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico y requiera un tiro de CON te sanarás Vitalidad igual a la mitad del daño provocado. Si logras matar a un objetivo con dicho ataque podrás reducir el nivel de una herida permanente por un paso.
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo o reduces el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a un objetivo con un efecto Necrótico.
 
 ## Rango III
 
