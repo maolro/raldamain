@@ -5,6 +5,14 @@ category: Ascendencias
 
 Como hobgoblin que eres se supone que deberías ser un fiel y leal guerrero de la Legión, pero tú has escuchado desde el principio una voz que te promete poder ilimitado y el potencial de ser libre de las cadenas que tanto te han oprimido. Según la influencia de tu espíritu interior se vuelve más fuerte empiezas a obtener nuevas habilidades sobrenaturales que deberás ocultar de tus compañeros hobgoblin para evitar que estos acaben contigo. Pero cuando alcances la cúspide de tu poder ya no tendrás que temerlos: ahora ellos te se doblegarán ante ti.
 
+# Reglas fundamentales
+
+Ascendencia Oni tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Oni mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I
 
 Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por rango + 2.

@@ -5,6 +5,14 @@ category: Ascendencias
 
 Tu mente está conectada con la inteligencia colectiva del universo, transformándote en una parte de los engranajes que hacen girar la gran rueca del destino. Gracias a esta conexión pequeños fragmentos del tejido del universo son discernibles para ti, permitiéndote obtener respuestas a tus más profundas preguntas. Al alcanzar el último escalón de esta senda de conocimiento tu mente alcanzará un estado cognitivo superior en el cual comprenderás los más grandes secretos universales.
 
+# Reglas fundamentales
+
+Ascendencia Akhásica tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Akhásica mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I
 
 ### Vínculo akhásico
@@ -61,30 +69,52 @@ En esta forma eres completamente incorpóreo, recibiendo así Inmunidad a todos 
 
 ### Psicomagia
 
-*Innata, Pasiva*
+*Innata, Pasiva, Mental*
 
 Eres capaz de lanzar hechizos empleando únicamente el poder de tu mente. No necesitas gesticular o hablar para lanzar hechizos, requiriendo únicamente que mantengas tus facultades mentales. Además, puedes reducir tu Cordura por 2 para recuperar 1 chi o vigor de tus reservas hasta tres veces por ronda.
 
 ## Rango IV
 
-Incrementa tu SAB por 1. 
+Incrementa tu estadística de SAB y su limitador por 1.
 
-**Visión verdadera**: La razón te permite ver más allá del mundo sensible, percibiendo el mundo como realmente es. Tienes visión verdadera en un radio medio, lo cual te permite percibir a criaturas invisibles e ilusiones como realmente son. Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede causarte daño mental si intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres pueden ser inconcebibles para mentes humanas.
+### Visión verdadera
 
-**Fortaleza del pensamiento** (2 acciones y 1 chi): Forma una barrera física o mental que envolverá un radio cercano centrado en ti sustentada por la fuerza de tu voluntad. Si escoges barrera física esta funcionará cómo un muro hecho de fuerza con 3 defensa y PV iguales a tu rango de ascendencia x 2, mientras que la barrera mental aumentará la resistencia mental de todas las criaturas aliadas por un valor igual a tu rango de ascendencia + 1. Fortaleza del pensamiento permanecerá mientras mantengas la concentración, desvaneciéndose si eres incapacitado o sufres un efecto mental. 
+*Innata, Pasiva*
+
+La razón te permite ver más allá del mundo sensible, percibiendo el mundo como realmente es. Obtienes así Inmunidad a efectos Ilusorios, pudiendo así percibir a criaturas invisibles y ver a través de ilusiones. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
+
+Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede reducirsi intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres puede ser inconcebible para mentes humanas.
+
+### Fortaleza del pensamiento
+
+*Innata, Duradera, Defensiva, Mental*
+
+**Coste:** 2 acciones y 2 chi o vigor
+
+Formas una barrera mágica que envolverá tu cuerpo centrado sustentada tu fuerza de voluntad. Al activar esta habilidad recibes *contadores de escudo* iguales a tu Rango además de Resistencia a efectos Mentales y Arcanos. Este hechizo permanecerá activo hasta que pierdas la concentración o se te acaben los *contadores de escudo*. 
+
+Dado que la resistencia de esta barrera depende de tu fuerza mental puedes empujar a tu mente hasta el límite para reforzarla. Como acción bonus empleable hasta tres veces por ronda puedes reducir tu cordura por 2 para recuperar un *contador de escudo* perdido.
+
+**Empoderar** (1 chi o vigor): Recuperas un *contador de escudo* adicional al expoliar tu mente.
 
 ## Rango V
 
-Aumenta tu resistencia a daño físico por 1  y tu resistencia mágica poro 2.
+### Palacio de la mente
 
-**Palacio de la mente**: Al entrar en meditación puedes acceder a un demiplano creado únicamente con el poder de tu mente. Este demiplano tendrá el aspecto que tú desees y es impenetrable por intrusiones psíquicas. Cada minuto que pases en tu palacio mental contará como un segundo en el mundo real, lo cual te permite entrar en esa dimensión para realizar acciones mentales de larga duración en un instante. Si estás afectado por un hechizo mental o la habilidad inducción mental el control de tu palacio de la mente quedará disputado, requiriendo que tengas éxito en un [duelo psíquico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20on%C3%ADrica.html#rango-iii) contra la persona que esté atacando tu mente. Otras criaturas que tú elijas pueden entrar también en tu palacio de la mente a través de la meditación, aunque no podrán usar hechizos ni atacar salvo que tú lo desees.
+*Innata, Pasiva, Mental*
 
-**Xenoglosia**: Eres capaz de hablar y entender todas las lenguas mortales, hasta aquellas que nunca has hablado. También puedes entender las lenguas de los dioses y pronunciar palabras incomprensibles para las mentes humanas. (1 chi) Puedes emplear una acción bonus para reforzar la fuerza de un hechizo hablando en una lengua prohibida. Esto causará que todos aquellos que todos los que escuchen tu hechizo deban taparse los oídos, quedando [ensordecidos](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#ensordecida) durante un turno, o reduzcan su cordura por un valor igual al rango que tengas en la magia relacionada con dicho hechizo. Usar *xenoglosia* de esta manera no tienen ningún efecto contra aquellos que puedan hablar dicha lengua prohibida. 
+Eres capaz de entrar en un demiplano sustentado únicamente por el poder de tu mente al meditar. Dicho demiplano tendrá el aspecto que desees y es impenetrable por intrusiones psíquicas. Cada minuto que pases en tu palacio mental contará como un segundo en el mundo real, lo cual te permite entrar en esa dimensión para realizar acciones mentales de larga duración en un instante. Abandonarás el palacio mental en el momento que dejes de meditar o sufras un efecto Mental.
+
+### Mente iluminada
+
+*Innata, Pasiva*
+
+Tu mente ha alcanzado el peldaño más alto del conocimiento. Recibes Inmunidad a efectos Mentales y eres capaz de hablar y entender todas las lenguas mortales. Tienes también conocimiento de todas las magias Arcanas, permitiéndote emplear tu bonificador más alto para todos tus tiros de magia. Las entidades relacionadas con la memoria akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
 
 ## Rango VI
 
-Incrementa tu CAR por 1.
+Incrementa tu estadística de CAR y su limitador por 1.
 
-**Mente iluminada**: Tu mente ha alcanzado el peldaño más alto del conocimiento. Eres inmune a efectos mentales y al daño hecho a tu cordura. Tienes conocimiento de todas las magias, permitiéndote emplear tu bonificador más alto para todos tus tiros de magia. Las entidades relacionadas con la memoria akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
+### Árbitro del destino
 
 **Conocer el destino**: Has vislumbrado tu destino en la memoria akhásica, conociendo el momento predestinado de tu muerte. Los detalles de este momento deberán ser discutidos con el máster y recibir su consentimiento. Cualquier vez que mueras por una causa que no esté relacionada con tu muerte predestinada sobrevivirás milagrosamente, permaneciendo sólo a 0 PV y recibiendo una herida permanente grave en su lugar. Una vez al día cuando te encuentres en una situación peligrosa puedes invocar la fuerza del destino para librarte de ella, lo cual causará un efecto similar a [intervención divina](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html#rango-v). No obstante, si actúas de una manera demasiado temeraria o arrogante el máster te puede castigar adelantando tu fecha de muerte a un momento más cercano.

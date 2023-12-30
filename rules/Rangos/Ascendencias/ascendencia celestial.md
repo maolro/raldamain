@@ -93,7 +93,9 @@ Eres capaz de manifestar alas hechas de luz a tu espalda con las que podrás sur
 
 *Innata, Pasiva*
 
-Eres capaz de percibir la verdad que se oculta tras las mentiras del plano material. Obtienes Inmunidad a efectos Ilusorios y puedes ver a través de ellas como si no existieran. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
+Eres capaz de percibir la verdad que se oculta tras las mentiras del plano material. Obtienes Inmunidad a efectos Ilusorios y puedes ver a través de ilusionecomo si no existieran. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
+
+Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad tendrá consecuencias negativas intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres puede ser inconcebible para mentes humanas.
 
 ## Rango V
 

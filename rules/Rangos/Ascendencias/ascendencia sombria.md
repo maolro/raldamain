@@ -5,35 +5,53 @@ category: Ascendencias
 
 Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándote en un delicado equilibrio entre el mundo de los humanos y el mundo de los muertos. Mientras avanzas con tu poder sacrificas tu humanidad para abrazar el poder del plano sombrío, acechando todo lo que te rodea sin ser visto y debilitando las fronteras entre el plano material y el tenebroso mundo de las sombras.
 
-## Rango I
+# Reglas fundamentales
 
-Incrementa tu DES por 1.
+Ascendencia Sombría tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Sombría mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
+## Rango I
 
 ### Nacido de las tinieblas
 
-Ver en oscuridad y resiste frío y necrótico. Puedes emplear los hechizos Crear oscuridad y Toque necrótico pagando vigor.
+*Innata, Pasiva*
+
+El siniestro poder en tu interior te da la capacidad de manipular las mismas sombras. Recibes Resistencia al daño Frío y Necrótico además de la capacidad de lanzar los hechizos *crear oscuridad*, *tajo sombrío* y *toque drenador* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia Sombría.
 
 ### Sigilo sombrío
 
-No hace ruido y ventaja en sigilo. Ocultarse te cuesta una acción bonus si estás en un lugar a oscuras.
+*Innata, Pasiva*
 
-**Nacido de las tinieblas:** Puedes ver en la oscuridad mágica y normal sin problemas y recibes resistencia igual a tu rango + 1 al daño frío y necrótico. Los no-muertos y criaturas sombrías no son naturalmente hostiles hacia ti.
-
-**Sigilo sombrío:** No haces ruido al pasar ni dejas huellas, recibiendo ventaja en tus tiros de sigilo. (1 chi) Te ocultas como acción bonus si te encuentras en un entorno afectado por luz tenue u oscuridad.
+Te mueves con el sigilo de una sombra viviente. Eres capaz de ver en la oscuridad sin dificultades y no haces ruido al moverte, recibiendo así Ventaja en tus tiros de Sigilo. Además, si te encuentras en un lugar a oscuras o poco iluminado puedes esconderte como acción bonus una vez por ronda aunque te encuentres en el campo de visión de tus enemigos.
 
 ## Rango II
 
+Incrementa tu estadística de DES y su limitador por 1.
+
 ### Infusión sombría
 
-Puede cargar un ataque con un hechizo Necrótico o hacer que infliga 1d6 + Rango daño Necrótico al impactar.
+*Innata, Mejora*
+
+**Coste:** 1 vigor o chi
+
+**Duración:** Una ronda
+
+Refuerzas tus ataques con energía necrótica para herir la esencia vital de tus enemigos. La siguiente vez que impactes con un ataque de cualquier tipo esta ronda podrás lanzar un hechizo Sombrío como acción bonus contra ese mismo objetivo. 
+
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
 ### Salto sombrío
 
-Te teletransportas a un espacio con sombras a distancia lejana. Puede usarse para evitar ataques si estás en posición defensiva.
+*Innata, Espacial*
 
-**Infusión sombría** (1 chi): Todos tus ataques físicos infligen +1d6 daño necrótico durante una ronda y el daño que estos infligen reducirá también el máximo de PV y Vitalidad, impidiendo que pueda ser sanado.
+**Coste:** 1 acción y 1 chi o vigor
 
-**Sombra aliada**: Tienes un aliado sombrío que se manifestará si te encuentras en un entorno afectado por luz tenue u oscuridad. La sombra es incapaz de tomar acciones, solo pudiendo moverse un paso por ronda llegando como máximo a distancia lejana pero puede atravesar obstáculos y barreras si hay una ranura. Empleando 2 AP y 1 chi puedes intercambiar tu posición con ella. Puedes también emplear 1 chi para realizar un ataque desde su posición. La sombra se desvanecerá durante una ronda si sufre daño radiante.
+**Duración:** Instantáneo
+
+Creas una pequeña brecha al plano sombrío para viajar rápidamente de un lugar a otro. Esta habilidad solo puede emplearse si te encuentras en un lugar a oscuras y al emplearla te teletransportas a un espacio a distancia lejana de ti que se encuentre también a oscuras. Si te encuentras en *posición defensiva* puedes usarla una vez por ronda como reacción para evitar un ataque enemigo al teletransportarte.
 
 ## Rango III
 
@@ -53,7 +71,7 @@ Invocas una criatura sombría para asistirte en el campo de batalla.
 
 ## Rango IV
 
-Incrementa tu CAR por 1. 
+Incrementa tu estadística de CAR y su limitador por 1.
 
 ### Arma de tinieblas
 
@@ -84,6 +102,8 @@ Desliga una porción del plano material al sombrío para convertirlo en tierra p
 **Luces y sombras** (2 chi): Infundes a una ilusión con energía del plano de las sombras para que se vuelva parcialmente real. Si es un objeto sólido o un efecto ambiental se vuelve físico durante una hora y si es una ser vivo se transformará en una criatura sombría, En el caso que no tengas habilidades ilusorias recibes el hechizo crear ilusión sin limite de uso.
 
 ## Rango VI
+
+Incrementa tu estadística de CON y su limitador por 1.
 
 ### Tirano sombrío
 

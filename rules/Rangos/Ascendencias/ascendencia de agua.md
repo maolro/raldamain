@@ -5,6 +5,12 @@ category: Ascendencias
 
 Sientes una gran afinidad por los espíritus de las aguas de todo el mundo, convirtiéndote un reflejo de tanto la atroz naturaleza de los océanos como la adaptabilidad de los ríos. A medida que su influencia se va haciendo más presente en ti recibes la capacidad de resistir los efectos más adversos de las aguas y transformarte en un testimonio viviente de la fluidez de las corrientes y la fuerza de las mareas.
 
+# Reglas fundamentales
+
+Ascendencia de Agua tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia de Agua mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
 # Rangos
 
 ## Rango I
@@ -25,15 +31,33 @@ Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipu
 
 ##  Rango II
 
-Incrementa tu CON por 1.
+### Golpe hidráulico
 
-**Puñetazo hidráulico** (1 chi): Durante esta ronda todos tus ataques cuerpo a cuerpo infligen +1d6 daño y empujan un paso al impactar. Estos también podrán atravesar muros de agua y aire sin dificultades. Si tienes rangos en magia de hielo también obtienes la habilidad *canalizar el frío*.
+*Innata, Mejora*
 
-**Nadador hábil**: Aumenta tu movimiento de natación por un paso y no sufres penalizadores al nadar en corrientes fuertes**.** Puedes también caminar sobre el agua si está calmada,
+**Coste:** 1 chi o vigor
+
+Infundes uno de tus ataques con el poder del agua para incrementar notablemente su potencia. La siguiente vez que impactes con un ataque de cualquier tipo esta ronda puedes emplear un hechizo de Agua, Hielo o Sangre que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de Magia de agua en lugar del que emplearías normalmente en tu tiro de ataque.
+
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
+
+### Ecolocación
+
+*Innata, Pasiva*
+
+Has desarrollado un nuevo sentido similar al de los animales marinos que te permite detectar figuras sólidas cerca de ti empleando el agua como método de transmisión. Este sentido te otorga *vista a ciegas* a una distancia lejana si te encuentras en entornos llenos de agua como lagos, ríos o lugares con fuertes lluvias. Recibes también Inmunidad a ataques sorpresa si te encuentras en entornos donde puedas emplear tu ecolocación.
 
 ## Rango III 
 
-Aumenta tu resistencia al daño físico por 1.
+Aumenta tu estadística de SAB por 1. Eres capaz de emplear los hechizos Muro de agua y Ola chocante empleando vigor en lugar de chi.
+
+### Forma fluida
+
+*Innata, Agua, Duradera*
+
+**Coste:** 2 acciones y 1 chi
+
+
 
 **Forma fluida** (2 AP y 1 chi, Agua, Concentración): Te rodeas de una capa de aguas rugientes que reduce todo el daño que recibas por un valor igual a tu rango – 1 además que todo el espacio a distancia cercana de ti cuenta como terreno difícil. (1 chi, 1/ronda) Todas las criaturas adyacentes a ti deberán tener éxito en un tiro de FUE contra tu CAR o serán empujadas un paso hacia atrás (la CAR es modificada por tu rango en magia de agua). Esta habilidad dura una cantidad de rondas igual a tu rango + 1 o hasta que pierdas la concentración.
 
@@ -41,7 +65,7 @@ Aumenta tu resistencia al daño físico por 1.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de agua a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
+### Columna de agua
 
 **Columna de agua:** Recibes velocidad de vuelo 1 y ventaja en todos tus tiros de esquiva y de ataque con armas cuerpo a cuerpo contra criaturas incapaces de volar. No podrás volar más de dos pasos encima del agua y dejarás inmediatamente de volar si pierdes la concentración (1 chi) Puedes volar encima de una superficie de tierra cercana a la masa de agua durante una ronda. 
 
@@ -49,17 +73,17 @@ Incrementa tu CAR por 1. Puedes sumar tu rango en magia elemental de agua a todo
 
 ## Rango V 
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Aumenta tu estadística de CON por 1. Eres capaz de emplear los hechizos Prisión acuosa y Controlar el agua empleando vigor en lugar de chi.
+
+### Elemento del cambio
+
+### Señor de los mares
 
 **Elemento del cambio**: Obtienes resistencia al daño fuego igual a tu rango + 1 y al principio de tu turno puedes obtener immunidad contra el efecto de estado de tu elección durante esta ronda (debes escoger entre *ralentizado, enfermado, fatigado, aturdido* o *confundido*). Además, si te encuentras en un entorno rodeado por agua recibes los beneficios de *visión futura*, recibiendo así ventaja en todos tus tir
 
-**Ecolocación**: Has desarrollado un nuevo sentido similar al de los animales marinos que te permite detecar figuras sólidas cerca de ti empleando el agua como método de transmisión. Esta habilidad te otorga el sentido *ecolocación*, el cual te otorga vista a ciegas a una distancia media. Si te encuentras en un entorno lleno de agua como un lago, río o entorno con fuertes lluvias el alcance de *ecolocación* aumenta a lejano además que te vuelves inmune a ataques sorpresa. Además, eres capaz de respirar bajo el agua sin dificultades como si fueras anfibio.
-
 ## Rango VI
 
-Incrementa tu CAR por 1.
-
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del agua te obedecerán.
+### Forma elemental
 
 **Forma elemental** (3 AP y 5 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 

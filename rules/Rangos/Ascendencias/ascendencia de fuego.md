@@ -5,6 +5,14 @@ category: Ascendencias
 
 Guardas relación con los espíritus más caóticos y destructivos de los fuegos que llevan asolando el mundo desde sus inicios, otorgándote la capacidad de desatar un poder asolador. A medida que su cruenta naturaleza se abre paso dentro de ti serás capaz de consumir todo a tu paso con las abrasadoras llamas que constantemente componen tu ser, devorando hasta que todo obstáculo en tu camino sea reducido a cenizas.
 
+# Reglas fundamentales
+
+Ascendencia de Fuego tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia de Fuego mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I 
 
 ### Fuego interior
@@ -33,9 +41,9 @@ Incrementa tu estadística de DES y su limitador por 1.
 
 **Duración:** Una ronda
 
-Refuerzas tus ataques con el poder del fuego para que hagan arder a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo podrás lanzar un hechizo de Fuego como acción bonus contra ese mismo objetivo. 
+Refuerzas tus ataques con el poder del fuego para que hagan arder a tus enemigos. La siguiente vez que impactes con un ataque de cualquier tipo esta ronda podrás lanzar un hechizo de Fuego como acción bonus contra ese mismo objetivo. 
 
-Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
 ### Impulso ígneo
 

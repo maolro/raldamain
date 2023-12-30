@@ -107,6 +107,12 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
+### Interceptar ataque
+
+*A distancia, Reacción*
+
+**Coste:** 2 vigor
+
 **Interceptar ataque:** Una vez por ronda puedes defender a un aliado empleando tu tiro de armas a distancia. Esta habilidad puede usarse una vez adicional por ronda si te encuentras en posición defensiva.
 
 **Precisión mortal:** Al realizar un ataque apuntado podrás escoger la parte del cuerpo donde quieres infligirla.

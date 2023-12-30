@@ -5,6 +5,14 @@ category: Ascendencias
 
 Tienes una íntima conexión con los espíritus del antiguo frío que una vez estuvo presente en todo el mundo, permitiéndote canalizar su poder para invocarlo en esta nueva era. A medida que permitas que esta nueva fuerza ahonde en ti serás capaz de mayores hazañas, encerrando tu antiguo ser bajo una tumba helada y llamando al poder de los antiguos inviernos para consumir a todo enemigo en tu camino.
 
+# Reglas fundamentales
+
+Ascendencia Boreal tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Boreal mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+# Rangos
+
 ## Rango I
 
 Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.

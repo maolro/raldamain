@@ -5,22 +5,69 @@ category: Ciencia
 
 A lo largo de tus años de estudio has aprendido la influencia que tanto componentes mágicos como naturales tienen sobre el cuerpo, pudiendo así saber como afectarle con estos creando potentes venenos y eficaces pociones de sanación. A medida que tu conocimiento se abra a nuevos horizontes seras capaz de crear efectos mas poderosos que crucen los limites del cuerpo humano e incluso desafiar los conocimientos que se consideraban básicos.
 
+# Reglas fundamentales
+
+- **Ranuras de objeto:** Este Rango te otorga una cierta cantidad de ranuras de objeto, las cuales muestran la cantidad de objetos de cada Rango que tienes disponibles cada día. La cantidad exacta de ranuras que recibes en cada Rango queda indicada ahí y estas se acumulan con aquellas otorgadas por otras habilidades.
+
+# Rangos
+
 ## Rango I
 
-**Curandero** (3 acciones o proyecto): Tus conocimientos médicos te permiten curar a los enfermos y sanar a los heridos. Puedes usar tu estadística de Inteligencia para tiros de primeros auxilios y llevas siempre materiales adecuados para sanar. Un número de veces al día igual a tu rango + 1 puedes fabricar una dosis de medicina, la cual sanará 1d6 + INT Vitalidad a tu objetivo y te permitirá reducir el nivel de una herida permanente, veneno o enfermedad por un paso si logras tener éxito en un tiro de *primeros auxilios* al que le sumas tu rango en química contra la gravedad del efecto que buscas sanar. Aplicar la medicina cuesta 3 acciones (2 acciones a rango III de química y una acción a rango V) y aquel que la aplique deberá tener niveles de talento en primeros auxilios.
+Recibes dos ranuras de objeto de Rango I
 
-**Uso de venenos** (proyecto): Tienes gran conocimiento de los diferentes venenos, sabiendo como identificar y prepararlos. No tienes riesgo de envenenarte accidentalmente al manipular [venenos](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) y puedes preparar hasta rango + 1 dosis de veneno al día con los materiales adecuados, el cual tendrá gravedad igual a tu INT + rango. El veneno que fabriques afectará a la estadística que tú elijas y puedes gastar una dosis para aplicarlo en un arma (esto te cuesta 2 acciones). Al herir con un arma envenenada tu objetivo sufrirá los efectos del veneno escogido al primer nivel, y cada ronda deberá repetir el tiro de CON o el nivel del veneno incrementará por un paso.
+### Poción de sanación
 
-**Conocimiento alquímico** (proyecto): Eres experto en los vínculos entre el chi y las ciencias naturales, sabiendo como sintetizar valiosos cristales de chi a partir de impurezas. Crear un cristal puro de chi es un proceso largo y difícil que requiere minerales irradiados por la magia, lo cual causa que solo puedas crear un cristal al mes por cada rango de Química que poseas si tienes los materiales adecuados (si deseas crear más deberás gastar 1 crédito por cristal). Un cristal puro de chi puede utilizarse para crear todo tipo de objetos mágicos, glifos o rituales, los cuales requieren un coste de chi puro determinado por el máster. 
+*Objeto, Químico, Consumible, Sanación*
+
+Eres capaz de fabricar medicinas milagrosas capaces de curar a los heridos en un instante. Una poción de sanación cuesta dos acciones para utilizarse y sanará una cantidad de Vitalidad al afectado igual a tu INT + 2. Esta también reducirá el nivel de una *herida permanente* o Aflicción que tenga activa por un paso. Cada uso de una poción de sanación consumirá una ranura de objeto que tengas.
+
+### Veneno
+
+*Objeto, Químico, Consumible, Aflicción*
+
+Tienes gran conocimiento de los diferentes venenos, sabiendo como identificar y prepararlos. Los venenos que fabriques afectarán a una estadística de tu elección y tendrán una gravedad igual a tu modificador de Química. Todos los venenos fabricados de esta manera tendrán tasa de infección de una ronda, haciendo así que el afectado tenga que tirar al principio de su turno para intentar evitar sus efectos.
+
+Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres dosis de este. Dichas dosis pueden aplicarse a un arma empleando dos acciones para provocar los efectos del veneno al impactar. Un único ataque no puede tener más de un veneno aplicado a la vez y cada dosis adicional del mismo veneno que afecte al mismo objetivo aumentará su gravedad por 2. 
+
+### Valentía embotellada
+
+*Objeto, Químico, Consumible*
+
+Fabricas una droga que inhibe la aversión al riesgo del afectado, incitándolo a seguir luchando sin importar las circunstancias. Este objeto cuesta una acción para consumirse y al hacerlo el afectado se recuperará de todos los efectos de Miedo que tenga activos y recibirá Resistencia al Miedo durante el resto del combate. 
+
+Los efectos inhibidores del riesgo provocan también que el afectado jamás abandone  voluntariamente un combate y siga luchando sin importarle su estado actual. Cada uso de Valentía embotellada consumirá una ranura de objeto que tengas.
 
 ## Rango II
 
-**Sintetizar suero** (proyecto): Un número de veces al día igual a tu rango + 1 puedes fabricar una dosis de suero químico empleando 2 horas de trabajo. El suero que creas puede implantarse de la misma manera que un veneno y tendrá uno de los siguientes efectos:
+Recibes dos ranuras de objeto de Rango II y una ranura adicional de Rango I
 
-- **Cognatógeno:** El suero abre tu mente a nuevas posibilidades, dándote unos instantes de conocimiento verdadero entremezclados con alucinaciones psicodélicas. El cognatógeno otorga los efectos de *mente desencadenada* al usuario durante una cantidad de rondas igual a tu rango + 2, pero el usuario quedará confundido si se encuentra en una situación estresante o de combate. El abuso excesivo de cognatógenos puede desencadenar en una [enfermedad mental](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedad-mental) o provocar [locura](https://raldamain.com/rules/Reglas%20adicionales/locura.html). 
-- **Mutágeno:** El suero fortalece el cuerpo de tu objetivo durante un breve periodo de tiempo, transformándolo en una bestia incontrolada. El mutágeno otorga los efectos de *ira* a tu objetivo durante una cantidad de rondas igual a tu rango de química + 2. El abuso excesivo de mutágenos puede provocar en cambios permanentes en el cuerpo de tu objetivo o desencadenar en una enfermedad mental.
+### Poción de resistencia
 
-**Resistencia a drogas** (pasiva): Tu exposición a varios productos químicos ha hecho que tu cuerpo se acostumbre a ellos. Recibes resistencia a venenos y efectos mentales igual a tu rango de Química + 1. 
+*Objeto, Químico, Consumible*
+
+Este mágico brebaje otorga resistencia contra un elemento específico a quien lo consuma. Este objeto cuesta una acción para consumirse y al hacerlo el afectado recibirá Resistencia contra todos los efectos pertenecientes a una categoría entre Fuego, Ácido, Frío o Eléctrico. Dicha resistencia permanecerá activa durante el resto del combate y se acumula con otras resistencias existentes del mismo tipo.
+
+### Mutágeno
+
+*Objeto, Químico, Consumible*
+
+Fabricas un suero que fortalece el cuerpo de tu objetivo durante un breve periodo de tiempo, transformándolo en una bestia incontrolada. Toda criatura que consuma un Mutágeno recibirá Ventaja en todos sus tiros relacionados con estadísticas Físicas durante los siguientes diez minutos a costa que no podrá concentrarse ni retirarse de un combate.
+
+Los bonificadores de un mutágeno no se acumulan con aquellos otorgados por la habilidad Ira y un abuso excesivo de estos puede provocar una enfermedad o a una adicción. Cada uso de Mutágeno consumirá una ranura de objeto que tengas.
+
+### Cognatógeno
+
+*Objeto, Químico, Consumible*
+
+Fabricas un suero que abre tu mente a nuevas posibilidades, dándote unos instantes de conocimiento verdadero entremezclados con alucinaciones psicodélicas. Toda criatura que consuma un Cognatógeno recibirá Ventaja en todos sus tiros relacionados con estadísticas Mentales durante los siguientes diez minutos a costa que quedará *confundida* si acaba en una situación estresante. 
+
+Los bonificadores de un cognatógeno no se acumulan con aquellos otorgados por la habilidad Mente Desencadenada y un abuso excesivo de estos puede conducir a la locura o a una adicción. Cada uso de Cognatógeno consumirá una ranura de objeto que tengas.
+
+### Resistencia a drogas
+
+*Innata, Pasiva*
+
+Tu exposición a varios productos químicos ha hecho que tu cuerpo se acostumbre a ellos. Recibes así Resistencia a Aflicciones y Efectos mentales además que puedes identificar las propiedades de productos químicos con los que interactúes sin la necesidad de tirar.
 
 ## Rango III
 

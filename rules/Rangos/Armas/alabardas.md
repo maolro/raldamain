@@ -51,11 +51,53 @@ Preparación contra cargas permanecerá activo hasta que pierdas la concentraci�
 
 ### Ataque lateral
 
-Puedes obtener este rango de manera gratuita si tienes 5 o más FUE, 5 o más DES y 5 niveles de talento en heroísmo
+*Alabarda, Mejora*
 
-**Ataque lateral** (1 acción): Haz tu siguiente ataque con arma contra tres criaturas en tu alcance que también estén adyacentes entre sí.
+**Coste:** 1 vigor
 
-**Ataque serpenteante** (1 acción): El objetivo se defiende con DES o FUE o es empujado y cae al suelo. Si estás en *preparación contra cargas* puedes hacerle un ataque de oportunidad si cae al suelo
+Realizas un ágil barrido con tu arma para atacar a todos tus enemigos cercanos.. Haz un ataque contra todas las criaturas a distancia cercana de ti que al impactar forzará a los afectados a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerán *tropezados*. 
+
+Si un enemigo elige emplear Parada para detener tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del que hayan obtenido. En el caso que gaste *contadores de escudo* para detenerlo podrá proteger a cualquier número de criaturas que amenaces con este ataque. Solo puedes emplear esta técnica si tu arma es capaz de provocar daño Cortante.
+
+### Lanzazo penetrante
+
+*Alabarda, Mejora*
+
+**Coste:** 1 vigor
+
+Clavas tu arma en el cuerpo de tu enemigo para infligirle graves heridas y limitar su capacidad de moverse. Al impactar a un enemigo puedes clavarle tu lanza para aumentar el daño base de tu ataque por 1d6 y el nivel de todas las *heridas permanentes* infligidas por un paso.
+
+La lanza permanecerá clavada en tu objetivo hasta que otra criatura la separe de su cuerpo empleando una acción, impidiendo así que puedas atacar con ella mientras se encuentre así. Un enemigo con un arma clavada de esta manera quedará *ralentizado* y cuando se libere de esta recibirá el efecto de estado *sangrado*. Esta habilidad solo puede usarse si tu arma es capaz de provocar daño Perforante.
+
+### Golpe aturdidor
+
+*Alabarda, Mejora*
+
+**Coste**: 1 vigor
+
+Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador de Alabardas o quedará *aturdido* durante una ronda. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Contundente.
+
+### Reposicionar enemigo
+
+*Alabarda, Mejora*
+
+*Pesado, Mejora, Físico*
+
+**Coste**: 1 vigor
+
+Mueves tu alabarda de una manera serpenteante para descolocar a un enemigo que intente esquivarte y dejarlo en una mala posición. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador de Alabardas o se mueve un paso en la dirección que elijas y saldrá inmediatamente de *posición defensiva*.  
+
+### Golpe trasero
+
+*Alabarda, Ataque, Físico*
+
+**Coste:** 1 vigor
+
+**Alcance:** Cercano
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
+
+Atacas a un enemigo con la parte trasera de tu arma para descolocar sus defensas. Haz un ataque de arma contra un enemigo a distancia cercana de ti que infligirá 1d4 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda y este debe encontrarse detrás de ti.
 
 ## Rango III 
 

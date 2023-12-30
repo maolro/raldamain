@@ -6,21 +6,39 @@ title: Chakras
 
 ## Rango I
 
-**Activación de chakras:** Los chakras son canales por los que fluye la energía vital del universo y permean todos los seres vivos en él. Al encontrarte en armonía con los chakras aumentas enormemente tu energía vital y eres capaz de sobrecargar algunos de estos canales para recibir temporalmente habilidades sobrenaturales. No obstante, cada ronda que mantengas abiertos dichos canales empezarás a sufrir graves daños internos que no pueden curarse sin un descanso largo (ese daño se indica en un valor numérico en la descripción de la habilidad). No hay límite del número de chakras que puedas abrir pero las reducciones de estas se acumulan.
+### Activación de chakras 
 
-**Fuerza vital**: Tener chakras abiertos aumenta enormemente tu resistencia física para compensar el daño que recibes. Si tienes al menos un chakra abierto recibirás 5 PV temporales por cada rango que tengas y recibes resistencia física igual a tu rango + 1.
+*Innato, Pasivo*
 
-**Chakra terrenal** (Chakra 1): El chakra de la tierra te conecta con la tierra y te une con su energía vital, encontrándose en la planta de tus pies. Al activar este chakra recibes *vista a ciegas* en un radio medio, permitiéndote detectar a todas las criaturas a tu alrededor que estén en contacto con la tierra. Para abrir este chakra debes tener los pies descalzos y una firme convicción.
+Los chakras son canales por los que fluye la energía vital del universo y permean todos los seres vivos en él. Al entrar en armonía con los chakras recibes la capacidad de aumentar enormemente tu energía vital y sobrecargar algunos de estos canales para recibir temporalmente habilidades sobrenaturales. 
 
-**Chakra raíz** (Chakra 1): El chakra sacral es uno de los principales puntos de energía de tu vuerpo, encontrándose en la base de tu columna vertebral. Este chakra te une con la tierra para que puedas estar seguro y centrado. Al activar este chakra recibirás un bonificador +2 en todos tus tiros. Para abrir este chakra no debes llevar armas ni armaduras.
+No obstante, cada ronda que mantengas abiertos dichos canales empezarás a sufrir graves heridas internas que no podrán curarse hasta que realices descanso largo. Al principio de tu turno sufrirás daño obligatorio igual al valor indicado en cada habilidad de Chakras que tengas activa. No hay límite del número de chakras que puedas abrir pero el daño que estas provocan se acumula.
+
+### Fuerza vital 
+
+Tener chakras abiertos aumenta enormemente tu resistencia física para compensar el daño que recibes. Si tienes al menos un chakra abierto recibirás 5 PV temporales por cada Rango que tengas y además que tu Defensa aumentará por un valor igual a tu Rango + 1.
+
+### Chakra terrenal (Chakra 1)
+
+El chakra terrenal te conecta con la tierra y te une con su energía vital, encontrándose en la planta de tus pies. Al activar este chakra recibes *vista a ciegas* en un radio medio, permitiéndote detectar a todas las criaturas a tu alrededor que estén en contacto con la tierra. Para abrir este chakra debes tener los pies descalzos y una firme convicción.
+
+### Chakra raíz (Chakra 1)
+
+El chakra raíz es uno de los principales puntos de energía de tu vuerpo, encontrándose en la base de tu columna vertebral. Este chakra te une con la tierra para que puedas estar seguro y centrado. Al activar este chakra recibirás Ventaja en todos tus tiros relacionados dos estadísticas de tu elección, las cuales puedes cambiar al principio de tu turno. Para abrir este chakra no debes llevar armas ni armaduras.
 
 ## Rango II
 
-**Puños de fuerza:** La energía vital infunde tu fuerza física y la potencia de tus ataques naturales. Si tienes dos o más chakras abiertos tus ataques físicos contarán como si fueran mágicos y provocarán 1d6 daño fuerza adicional al impactar.
+### Puños de fuerza
 
-**Chakra sacral** (Chakra 1): El chakra sacral se encuentra en tu abdomen inferior y se centra en los aspectos de la pasión, la creatividad y tus relaciones con los demás. Al activar este chakra eres capaz de ver los caminos de chi que conectan a todos los seres vivos, otorgándote inmunidad a fintas y permitiéndote realizar un *ataque apuntado* una vez por ronda como acción bonus. Activar este chakra requiere que estes combatiendo en un lugar o junto a una persona con quien sientas un poderoso vínculo emocional. 
+La energía vital infunde tu fuerza física y la potencia de tus ataques naturales. Si tienes dos o más chakras abiertos tus ataques físicos contarán como si fueran mágicos y provocarán 1d6 daño adicional al impactar.
 
-**Chakra solar** (Chakra 2): El chakra solar se encuentra en el centro de tu cuerpo y almacena la energía tanto positiva como negativa de tu alrededor. Esta combinación de energías forma la base de tu personalidad y tu poder innato. Al activar este chakra te rodeas de un aura de energía protectora que aumenta tu resistencia física por un valor igual a tu rango y te vuelve inmune a heridas medias o inferiores. Activar este chakra requiere que no tengas ninguna maldición o bendición divina que te esté afectando y no podrás usar magia divina al activarla.
+### Chakra sacral (Chakra 1)
+
+El chakra sacral se encuentra en tu abdomen inferior y se centra en los aspectos de la pasión, la creatividad y tus relaciones con los demás. Al activar este chakra eres capaz de ver los caminos de chi que conectan a todos los seres vivos, otorgándote inmunidad a ataques sorpresa además de la capacidad de identificar toda la magia empleada a una distancia media de ti. Activar este chakra requiere que estes combatiendo en un lugar o junto a una persona con quien sientas un poderoso vínculo emocional. 
+
+### **Chakra solar** (Chakra 2)
+
+El chakra solar se encuentra en el centro de tu cuerpo y almacena la energía tanto positiva como negativa de tu alrededor. Esta combinación de energías forma la base de tu personalidad y tu poder innato. Al activar este chakra te rodeas de un aura de energía protectora que aumenta tu Defensa por un valor igual a tu rango y te vuelve inmune a heridas medias o inferiores. Activar este chakra requiere que no tengas ninguna maldición o bendición divina que te esté afectando y no podrás emplear magia divina de ningúnal activarla.
 
 ## Rango III
 

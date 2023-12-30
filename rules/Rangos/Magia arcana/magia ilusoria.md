@@ -262,4 +262,4 @@ Mezclas la realidad y las ilusiones para crear un mundo donde todo es posible. E
 
 Este hechizo permanecerá activo hasta que pierdas la concentración. Toda criatura que se encuentre atrapada en él solo podrán repetir el tiro para intentar escaparse cada vez que haya un choque entre la realidad y las ilusiones que creas, como ocurrirá cuando una criatura impacte o sea impactada por una ilusión. 
 
-Además, mientras el Mundo de los Espejos permanezca activo tus habilidades ilusorias mejorarán de manera notable, recibiendo así Ventaja en todos tus tiros relacionados con ellas. Una vez por ronda podrás reconfigurar el campo de batalla como desees, funcionando de la misma manera que al empoderar el hechizo Espejismo Arcan
+Además, mientras el Mundo de los Espejos permanezca activo tus habilidades ilusorias mejorarán de manera notable, recibiendo así Ventaja en todos tus tiros relacionados con ellas. Una vez por ronda podrás reconfigurar el campo de batalla como desees, funcionando de la misma manera que al empoderar el hechizo Espejismo Arcano.

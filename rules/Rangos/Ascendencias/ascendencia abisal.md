@@ -5,6 +5,12 @@ category: Ascendencias
 
 La llamada de la sangre de entidades olvidadas hace eones te reclama desde la parte mas oscura y siniestra de la existencia, tentándote con la oportunidad de cumplir tus más oscuros deseos. Transformando tu cuerpo y empujando tu mente hacia los límites de la razón, cada vez te sientes más atraído por esas voces en tu cabeza, esas voces que te prometen conocimiento, que te prometen poder, que te prometen la única y autentica verdad. 
 
+# Reglas fundamentales
+
+Ascendencia Abisal tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Poder innato:** Tu rango en Ascendencia Abisal mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
 # Rangos
 
 ## Rango I

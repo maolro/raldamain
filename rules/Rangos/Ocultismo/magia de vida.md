@@ -98,7 +98,7 @@ Creas una barrera de luz deslumbrante para protegerte a ti mismo y a otros de lo
 
 La barrera proporcionará Inmunidad a todos los ataques a distancia para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de CON frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. 
 
-Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de CON frente a tu magia de Vida o la luz hará que fallen automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
+Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de CON frente a tu magia de Vida o la luz hará que falle automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
 
 **Empoderar** (1 chi): Las criaturas a una distancia corta de la barrera deben tener éxito en una tirada de CON como si intentaran cruzarla. Solo puedes empoderar de esta manera una vez por ronda.
 
