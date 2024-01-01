@@ -96,19 +96,37 @@ Este ataque puede potenciarse aún más si cargas la bola sombría con energía 
 
 Te rodeas de una capa de oscuridad mágica que te protegerá de ataques enemigos. El capullo sombrío te otorgará Vitalidad temporal igual a tu Rango x 3 además de Inmunidad a efectos de Toque. El capullo sombrío permanecerá activo hasta que se te acabe la Vitalidad temporal o pierdas la concentración.
 
-Las sombras creadas por el capullo recibirán todo el daño que sufras además que ocultarán tu posición exacta, otorgándote así los beneficios de *ocultamiento*. Estas también absorberán la energía vital de los enemigos que se te intenten acercar, forzando a cada enemigo que entre en una posición adyacente a ti o empiece su turno ahí a tener éxito en un tiro de CON frente a tu Magia Sombría o sufrirá 1d6 + Rango daño Frío, el cual funciona de la misma manera que el hechizo Toque Drenad
+Las sombras creadas por el capullo recibirán todo el daño que sufras además que ocultarán tu posición exacta, otorgándote así los beneficios de *ocultamiento*. Estas también absorberán la energía vital de los enemigos que se te intenten acercar, forzando a cada enemigo que entre en una posición adyacente a ti o empiece su turno ahí a tener éxito en un tiro de CON frente a tu Magia Sombría o sufrirá 1d6 + Rango daño Frío, el cual funciona de la misma manera que el hechizo Toque Drenador.
 
 **Empoderar** (1 chi): El capullo sombrío recupera toda su Vitalidad temporal. No puedes empoderar de esta manera si te encuentras en un lugar iluminado.
 
-### Devorar esperanza
+### Oscuridad devoradora
 
+*Sombría, Agarre, Duradera*
 
+**Coste:** 2 acciones y 1 chi
 
-**Devorar esperanza** (2 AP y 1 chi, Sombra, Toque, Antienergía, Concentració-**n): Haz un ataque de *toque necrótico* que al impactar reduce la reserva de chi del objetivo por 1 y lo *enreda*. Si permanece *enredado* al final de su turno volverá a reducir su reserva por 1 (sufre 2 daño necrótico si no tiene). No puedes *enredar* a más de rango + 1 objetivos a la vez.
+**Alcance:** Medio
+
+**Efecto crítico:** El afectado quedará *fatigado* durante una ronda
+
+**Duración:** Concentración
+
+Solidificas una masa de oscuridad para atrapar a un enemigo y drenar poco a poco su esencia vital. Un objetivo que se encuentre en un lugar a oscuras a distancia media de ti debe tener éxito en un tiro de Heroísmo o Destrozar contra tu Magia Sombría o sufre 1d6 + Rango daño Frío y queda *enredado*. 
+
+El afectado podrá repetir el tiro al principio de su turno para intentar escapar pero en el caso que fracase sufrirá de nuevo 1d6 + Rango daño Frío. Este hechizo permanecerá activo hasta que todos los afectados escapen o pierdas la concentración.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
 ## Rango III
 
 Usar *tajo sombrío*, *toque necrótico* y *crear oscuridad* cuestan -1 AP. Aumenta también el daño base de *tajo sombrío* y *toque necrótico* a 1d8.
+
+### Tentáculos de oscuridad
+
+### Maldición de Shade
+
+### Sombras malditas
 
 **Tentáculos de oscuridad** (2 AP y 2 chi, Sombra, Área, Ambiental, Concentración): Un espacio de radio medio se llena de tentáculos de oscuridad que atacan a todos los objetivos en él, infligiendo 1d8 + CAR daño frío y *agarrando* al impactar. El efecto se mantiene mientras te concentres en él o pasen rango + 1 rondas y los tentáculos volverán a atacar a cada criatura que empiece su turno en el área de efecto o entren en ella, infligiendo daño igual a *tajo sombrío* y *agarrando*.
 
@@ -117,6 +135,12 @@ Usar *tajo sombrío*, *toque necrótico* y *crear oscuridad* cuestan -1 AP. Aume
 **Clon sombrío** (3 AP y 2 chi, Sombra, Invocación): Crea una cantidad de clones sombríos igual a tu rango – 1 que permanecerán a tu lado durante el resto del combate. Un clon sombrío tendrá estadísticas similares a las tuyas pero su nivel será la mitad y solo tendrá 1 PV además de carecer de Vitalidad. Si tienes clones sombríos activos una vez con turno en respuesta a ser impactado puedes hacer que el ataque impacte a un clon sombrío en lugar de a ti. Esto solo funcionará si el objetivo no conoce tu posición exacta con certeza.
 
 ## Rango IV
+
+### Titiritero sombrío
+
+### Terror nocturno
+
+### Clones sombríos
 
 **Titiritero sombrío** (2 AP y 2 chi, Sombra, Maniobra, Concentración): Una criatura que se encuentre en un entorno a oscuras debe tener éxito en un tiro de FUE contra tu magia sombría o es *agarrado*. Mientras permanezca bajo este agarre y te encuentres a distancia media del objetivo puedes gastar AP para que el objetivo tome una acción que tú desees con el mismo coste. No puedes tener a más de rango – 2 criaturas bajo tu control con esta habilidad y al principio de su turno el objetivo puede tirar para intentar escapar.
 
@@ -130,6 +154,12 @@ Si hay muchas sombras que atacan a la misma persona este será un ataque combina
 
 Aumenta el daño base de *tajo sombrío* y *toque necrótico* a 1d10.
 
+### Furia de Shade
+
+### Ejecución sombría
+
+### Tinieblas del olvido
+
 **Furia de Shade** (3 AP y 3 chi, Sombra, Área, Antienergía, Maldición): Haz un ataque contra todas las criaturas en un radio grande que infligirá 2d10 + CAR daño necrótico además de los efectos de la *maldición de Shade*. Este ataque disipará todas las fuentes de luz en el área y hará que toda el área de efecto cuente como tierra consagrada dedicada a Shade durante el resto del combate. Esta habilidad solo puede usarse si te encuentras en una posición a oscuras. 
 
 **Ejecución sombría** (1 AP y 3 chi, Sombra, Aflicción, Antienergía): Un objetivo afectado por la *maldición de Shade* a distancia lejana deberá tirar CON frente a tu magia sombría o será consumido por la oscuridad, sufriendo 2d10 + CAR daño necrótico que también reducirá el máximo de Vitalidad y PV (la mitad en caso de éxito). Además, al impactar exitosamente puedes hacer un ataque de *tajo sombrío* contra todas las criaturas en un radio corto al objetivo. 
@@ -137,5 +167,7 @@ Aumenta el daño base de *tajo sombrío* y *toque necrótico* a 1d10.
 **Oscuridad devoradora** (2 AP y 3 chi, Sombra, Concentración, Aflicción, Antienergía): Formas una nube de oscuridad que llenará un radio medio y te permite hacer un ataque de *devorar esperanza* contra todas las criaturas que se encuentren en ella. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá tirar CON o sufrirán los efectos de *devorar esperanza*. La oscuridad permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Puedes además gastar 1 AP para mover la nube de oscuridad un paso en cualquier dirección.
 
 ## Rango VI
+
+### Brecha sombría
 
 **Tinieblas del olvido** (3 AP y 5 chi, Sombra, Ambiental, Miedo, Mental): Formas una brecha entre el plano sombrío y el material en una posición a distancia lejana de ti. Todo el terreno a distancia lejana de la brecha contará como terreno difícil y cuenta como si estuviera a oscuras para los propósitos de tus habilidades. Aquellas criaturas que se encuentren a esa distancia deberán superar tu magia sombría en un tiro de CAR aumentarán su nivel de miedo por un paso y aquellas criaturas *asustadas* que fracasen sentirán la compulsión de caminar hacia el portal, forzándolas a emplear sus acciones para caminar hasta ahí. Toda criatura que empiece su turno a distancia corta de la brecha sufrirá los efectos de *devorar esperanza*. La brecha durará 4 rondas y cuando su duración acabe hará el efecto de *furia de Shade* en toda el área de efecto.

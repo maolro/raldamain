@@ -2,6 +2,12 @@
 title: Magia de Ácido
 ---
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Ácido mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Ácido será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de emplear esta magia para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Agua para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades pertenecientes a las categorías Naturaleza, Metal, Tierra, Hielo o Agua sustituyendo el talento que usarías normalmente.
+
 # Rangos
 
 ## Rango I

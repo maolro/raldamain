@@ -7,10 +7,9 @@ Esta magia te permite tener un control absoluto sobre el agua cuando esta se enc
 
 # Reglas fundamentales
 
-Magia de Agua se adhiere a un conjunto de reglas fundamentales que sustentan sus hechizos y habilidades: 
-
 - **Reserva de Chi**: Tu rango de magia de Agua mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal**: Por esta razón, tu modificador de magia de Agua será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad
+- **Estadística principal**: Tu modificador de magia de Agua será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de emplear esta magia para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Agua para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades pertenecientes a las categorías Agua, Fuego, Tierra, Aire o Ácido sustituyendo el talento que usarías normalmente.
 
 # Rangos	
 

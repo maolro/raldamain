@@ -5,6 +5,11 @@ image: magia_sangre.jpg
 
 Te has decantado por la forma mas compleja en la que se puede encontrar el agua y  que se encuentra presente dentro de todos los seres vivos, la sangre.  A medida que tu control sobre ella se va haciendo mas fuerte serás capaz de manipularla con mayor intensidad pudiendo incluso hacer que se mueva siguiendo tu voluntad dentro del cuerpo de tu objetivo, pudiendo provocar devastadores ataques a sus órganos o estructura o incluso manipularla para arrebatarle el control sobre su cuerpo.
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Sangre mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Sangre será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+
 # Rangos
 
 ## Rango I
