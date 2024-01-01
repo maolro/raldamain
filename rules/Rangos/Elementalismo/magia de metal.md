@@ -5,6 +5,14 @@ image: magia_metal.jpg
 
 Tras un estudio sobre el control de la tierra has conseguido aprender ha detectar las impurezas que se encuentran en casi todos los metales que el hombre ha aprendido a manejar, pudiendo deformar férreas estructuras con tan solo unos pocos movimientos de tu cuerpo. A medida que tu control sobre el metal se va afianzando te volverás capaz de manipular cantidades mas grandes así como de hacerlo de formas mas complejas, pudiendo así mover diferentes trozos de metal de diferentes formas todos en perfecta sincronía sirviéndote de la atracción casi magnética que eres capaz de producir. En sus ultimas instancias serás incluso capaz de aprovechar las mas mínimas cantidades de este elemento para producir ataques devastadores sobre el cuerpo de tu enemigo.
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Metal mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Metal será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de emplear esta magia para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Metal para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades pertenecientes a las categorías Metal, Naturaleza, Fuego, Tierra o Hielo sustituyendo el talento que usarías normalmente
+
+# Rangos
+
 ## Rango I
 
 ### Manipular metal

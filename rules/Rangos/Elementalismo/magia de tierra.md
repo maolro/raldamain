@@ -5,6 +5,14 @@ image: magia_tierra.jpg
 
 Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote realizar grandes hazañas siempre y cuando mantengas el contacto con ella. A medida que tu control se vuelve más avanzado, te vuelves capaz de manipular mayores cantidades de tierra, así como deformarla para utilizarla como una extensión de tu cuerpo en devastadores ataques. En última instancia tu control de la tierra será tan fuerte que te permitirá incluso provocar fuertes seísmos o grandes cambios en la forma de un terreno.
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Tierra mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Tierra será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de emplear esta magia para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Tierra para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades pertenecientes a las categorías Tierra, Agua, Aire, Fuego o Tormenta, sustituyendo el talento que usarías normalmente
+
+# Rangos
+
 ## Rango I
 
 Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incrementa tu reserva de chi por un valor igual a tu rango + 2.

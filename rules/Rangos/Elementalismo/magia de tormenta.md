@@ -5,6 +5,12 @@ image: magia_tormenta.jpg
 
 Tu control avanzado sobre el aire te ha permitido desviarte de su forma más básica hacia la parte más destructiva que puede representar, permitiéndote así valerte de poderosas descargas o truenos ensordecedores para abrumar a tu enemigo con una fuerza devastadora. A medida que tu control se vaya haciendo más fuerte serás más capaz de almacenar en tu propio cuerpo grandes cantidades de esta energía de forma que luego puedas desatarla en una gran oleada. en última instancia serás capaz incluso de vengarte de aquellos enemigos que se atrevan a atacarte haciendo caer sobre ellos la ira directa del cielo o tormentas devastadoras que arrasen con todo a tu alrededor
 
+# Reglas fundamentales
+
+- **Reserva de Chi**: Tu rango de magia de Tormenta mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Estadística principal**: Tu modificador de magia de Tormenta será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+- **Parada mágica:** Eres capaz de emplear esta magia para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Tormenta para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades pertenecientes a las categorías Tormenta, Fuego, Radiante, Tierra o Naturaleza, sustituyendo el talento que usarías normalmente
+
 # Rangos
 
 ## Rango I 

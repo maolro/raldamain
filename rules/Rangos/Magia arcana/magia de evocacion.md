@@ -5,7 +5,7 @@ image: magia_evocacion.jpg
 
 Al escoger esta escuela has decidido especializarte en una de las formas mas destructivas en las que el chi puede expresarse, utilizándolo para provocar potentes explosiones elementales o incluso ráfagas de energía pura. Esta escuela basa su magia en cerrar temporalmente los conductos de chi de un área, limitando el paso de energía que puede circular por ellos para luego abrirlos de manera abrupta liberando todo el excedente acumulado .A medida que tus estudios sobre esta área avanzar, tu exposición al estrés mental que supone esta escuela te vuelve mas ágil mentalmente dándote mayor facilidad de concentración así como mejorando tus habilidades para conjurar sus hechizos, de esta forma pudiendo lanzar numerosos hechizos en un muy corto espacio de tiempo así como mantenerte firme sin que tu conjuración se vea interrumpida a pesar de que tu integridad física se vea comprometida.
 
-## Reglas fundamentales
+# Reglas fundamentales
 
 Magia de Evocación se adhiere a un conjunto de reglas fundamentales que sustentan sus hechizos y habilidades: 
 

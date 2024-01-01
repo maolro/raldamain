@@ -8,7 +8,7 @@ Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estad
 # Reglas fundamentales
 
 - **Reserva de Chi**: Tu rango de magia de Hielo mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal**: Tu modificador de magia de Hielo será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
+- **Estadística principal**: Tu modificador de magia de Hielo será igual a la suma de tu estadística de Sabidy tu rango en esta habilidad.
 - **Parada mágica:** Eres capaz de usar magia de Hielo para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Hielo para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades de tipo Fuego, Agua, Frío, Naturaleza y Ácido, sustituyendo el talento que usarías normalmente.
 
 # Rangos

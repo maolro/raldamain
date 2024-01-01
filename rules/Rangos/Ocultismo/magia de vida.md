@@ -158,7 +158,9 @@ Infundes un poderoso flujo de energía vital en tu toque para sanar las heridas 
 
 **Duración**: Concentración
 
-Aumentas el flujo de energía vital a tu alrededor para potenciar tus hechizos de magia de Vida. Una vez que lances este hechizo obtienes Ventaja en todos los tiros de magia de Vida y además de la capacidad de detectar a todos los seres vivos en el área afectada, lo cual funciona de la misma manera que *vista a ciegas*. Todos tus hechizos de Sanación aumentan la cantidad de Vitalidad que curan en 2 y su alcance pasa a ser corto. Este efecto durará hasta que pierdas la concentración o sea disipado por un hechizo de magia Sombría o Nigromancia del mismo rango o superior.
+Aumentas el flujo de energía vital a tu alrededor para potenciar tus hechizos de magia de Vida. Mientras este hechizo permanezca activo obtienes Ventaja en todos los tiros de magia de Vida y además de la capacidad de detectar a todos los seres vivos en el área afectada, lo cual funciona de la misma manera que *vista a ciegas*. 
+
+Adicionalmente, todos tus hechizos de Sanación aumentan la cantidad de Vitalidad que curan en 2 y su alcance pasa a ser corto. Este efecto durará hasta que pierdas la concentración o sea disipado por un hechizo de magia Sombría o Nigromancia del mismo rango o superior.
 
 **Empoderar** (1 chi): Lanza uno de tus hechizos de Sanación como acción bonus.
 

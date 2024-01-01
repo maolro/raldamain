@@ -25,7 +25,7 @@ Tu toque drena la energía vital misma de un enemigo. Una criatura adyacente a t
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio.
 
-### Descarga de energía negatica
+### Descarga de energía negativa
 
 *Nigromancia, Ataque, A distancia, Necrótico*
 
@@ -99,25 +99,53 @@ Colocas una marca maldita en un enemigo que te permite emplear su esencia vital 
 
 ## Rango III
 
-*Toque necrótico y descarga de energía negativa* aumentan el daño base a 1d8 y reducen su coste a 1 AP
+Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d8 y aquellos de Rango I cuestan una acción menos para emplear (mínimo 1).
 
 ### Aspecto de no-muerto
 
-Puede subsistir únicamente con energía vital de los demás y recibes Resistencia al miedo. Recibe un aspecto específico de no-muerto entre las siguientes:
+*Nigromancia, Pasiva*
+
+Tu cuerpo se ha expuesto a tanta energía negativa que has empezado a adoptar los rasgos de un no-muerto. La naturaleza exacta de estos rasgos depende del no-muerto que intentes emular y puedes diseñarlos tú siempre y cuando cuenten con el permiso del DJ. Aquí se presentan algunos ejemplos de rasgos de conocidos no-muertos.
+
+- **Gul:** Desarrollas la capacidad de inyectar un veneno paralítico a tus enemigos. Una vez por ronda puedes envenenar a un enemigo que logres herir con un ataque Físico. Dicho veneno tendrá gravedad igual a tu modificador de Nigromancia y afectará a la estadística de DES.
+- **Momia:** Tu toque es capaz de pudrir la carne de tus enemigos. Una vez por ronda puedes envenenar a un enemigo que logres herir con un ataque Físico. Dicho veneno tendrá gravedad igual a tu modificador de Nigromancia y afectará a la estadística de CON.
+- **Vampiro:** Tienes el siniestro carisma de un vampiro que te permite doblegar a tus enemigos. Aprendes los hechizos Sugestión y Alterar emociones para los cuales puedes emplear tu modificador de Ni
+- **Esqueleto:** Te crecen varias espinas óseas duras como el acero. 
+- **Zombi:** Tu cuerpo se vuelve especialmente resistente a las heridas. Aumenta tu DEF por 2 además que todas las *heridas permanentes* que sufras te afectarán como si fueran de un nivel inferior.
 
 ### Tormenta de energía negativa
 
-Ataque de área que provoca daño necrótico.
+*Nigromancia, Ataque, Área, Necrótico*
+
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Radio corto
+
+**Efecto crítico:** Los afectados quedan *fatigados* hasta que se recuperen
+
+**Duración:** Instantáneo
+
+Expulsas una gran cantidad de energía negativa a partir de tu cuerpo para atacar a todos los enemigos cercanos. Haz un ataque de Nigromancia contra todas las criaturas a distancia corta de ti que inflige 2d8 + CAR daño Necrótico al impactar. Aquellos que tengan éxito defendiéndose de este ataque sufrirán en su lugar la mitad de daño. 
+
+El daño provocado por este ataque reducirá también la Vitalidad y PV máximos de los afectados, impidiendo así que puedan sanarse hasta que realicen un descanso largo. La energía negativa generada por este ataque curará a los no-muertos en el área afectada, sanándoles Vitalidad igual a tu Rango + 2. 
+
+**Empoderar** (1 chi): Aumenta el área afectada por este hechizo a un radio medio
 
 ### Aura de muerte
 
-Aura que empodera hechizos de Nigromancia e impide que aquellos en el área puedan sanarse.
+*Nigromancia, Ambiental, Duradera*
 
-**Aspecto de no-muerto**: Eres capaz de subsistir únicamente drenando la energía vital de los demás. Recibes inmunidad al daño necrótico a costa de obtener vulnerabilidad al daño radiante y puedes usar tu estadística de CAR para tus tiros de intimidar. Si ya has alcanzado la no-muerte recibes la habilidad *aura de terror* para la cual puedes usar tu rango en nigromancia.
+**Coste:** 2 acciones y 2 chi
 
-**Tormenta de energía negativa** (2 acciones y 2 chi, Nigromancia, Área, Antienergía): Haz un ataque de *descarga de energía negativa* contra todas las criaturas a una distancia corta de ti que al impactar infligirá 2d8 + CAR daño necrótico (2d10 a rango V). Las habilidades *enervación* y *toque vampírico* se aplicarán contra cada criatura afectada si estas están activas.
+**Tamaño:** Radio medio
 
-**Aura de muerte** (2 acciones y 2 chi, Nigromancia, Ámbiental, Antienergía): Incrementas el flujo de energía negativa para que todas las criaturas a distancia media sufran 2 daño necrótico al principio de su turno y no puedan recibir sanación. Este efecto permanecerá durante rango + 1 rondas y mientras esté activo puedes detectar la posición de todos los seres vivos en el área.
+**Duración:** Concentración
+
+Aumentas el flujo de energía negativa a tu alrededor para potenciar tus hechizos de magia oscura e impedir que tus enemigos puedan sanarse. Mientras este hechizo permanezca activo obtienes Ventaja en todos los tiros relacionados con hechizos de Nigromancia que lances en el área afectada además que esta contará como Tierra consagrada para no-muertos.
+
+La energía negativa perjudicará también la capacidad de tus enemigos para curarse, provocando así que los hechizos y habilidades de Sanación lanzados en el área afectada no funcionen salvo que tú lo escojas. Este hechizo permanecerá activo hasta que pierdas la concentración o sea disipado por un hechizo de magia de Vida del mismo rango o superior.
+
+**Empoderar** (1 chi): El siguiente hechizo de Nigromancia que lances reducirá su coste de acciones por 1 (mínimo 0). Esto solo puede usarse una vez por hechizo.
 
 ## Rango IV
 
