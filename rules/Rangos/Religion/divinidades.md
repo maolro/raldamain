@@ -17,10 +17,6 @@ Aquí se presenta una lista de divinidades junto a las magias con las que están
 | Gulmaht    | Abisal primigenio del apocalipsis, la transmutación y los desastres naturales | Tierra, Fuego, Gravitatoria, Transmutación         |
 | Shade      | Abisal primigenio de las sombras, la desesperación y la no-muerte | Sombría, Nigromancia, Ilusoria, Mental             |
 
-### Señores abisales
-
-
-
 ## Espíritus
 
 ### Espíritus de Shinri
@@ -70,11 +66,11 @@ Aquí se presenta una lista de divinidades junto a las magias con las que están
 
 ### Espíritus mazarinos
 
-| **Nombre** | **Descripción** | **Magias aso** |
-| ---------- | --------------- | -------------- |
-|            |                 |                |
-|            |                 |                |
-|            |                 |                |
+| **Nombre** | **Descripción** | **Magias asociadas** |
+| ---------- | --------------- | -------------------- |
+|            |                 |                      |
+|            |                 |                      |
+|            |                 |                      |
 
 
 

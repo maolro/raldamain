@@ -109,8 +109,8 @@ Tu cuerpo se ha expuesto a tanta energía negativa que has empezado a adoptar lo
 
 - **Gul:** Desarrollas la capacidad de inyectar un veneno paralítico a tus enemigos. Una vez por ronda puedes envenenar a un enemigo que logres herir con un ataque Físico. Dicho veneno tendrá gravedad igual a tu modificador de Nigromancia y afectará a la estadística de DES.
 - **Momia:** Tu toque es capaz de pudrir la carne de tus enemigos. Una vez por ronda puedes envenenar a un enemigo que logres herir con un ataque Físico. Dicho veneno tendrá gravedad igual a tu modificador de Nigromancia y afectará a la estadística de CON.
-- **Vampiro:** Tienes el siniestro carisma de un vampiro que te permite doblegar a tus enemigos. Aprendes los hechizos Sugestión y Alterar emociones para los cuales puedes emplear tu modificador de Ni
-- **Esqueleto:** Te crecen varias espinas óseas duras como el acero. 
+- **Vampiro:** Tienes el siniestro carisma de un vampiro que te permite doblegar a tus enemigos. Aprendes los hechizos Sugestión y Alterar emociones para los cuales puedes emplear tu modificador de Nigromancia.
+- **Esqueleto:** Te crecen varias espinas óseas duras como el acero. Aumenta tu DEF por 2 además que todas tus armas naturales incrementarán sus dados de daño por un paso y contarán como si fueran *material superior*.
 - **Zombi:** Tu cuerpo se vuelve especialmente resistente a las heridas. Aumenta tu DEF por 2 además que todas las *heridas permanentes* que sufras te afectarán como si fueran de un nivel inferior.
 
 ### Tormenta de energía negativa
