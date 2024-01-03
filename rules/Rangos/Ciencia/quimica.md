@@ -61,7 +61,7 @@ Los bonificadores de un mutágeno no se acumulan con aquellos otorgados por la h
 
 Fabricas un suero que abre tu mente a nuevas posibilidades, dándote unos instantes de conocimiento verdadero entremezclados con alucinaciones psicodélicas. Toda criatura que consuma un Cognatógeno recibirá Ventaja en todos sus tiros relacionados con estadísticas Mentales durante los siguientes diez minutos a costa que quedará *confundida* si acaba en una situación estresante. 
 
-Los bonificadores de un cognatógeno no se acumulan con aquellos otorgados por la habilidad Mente Desencadenada y un abuso excesivo de estos puede conducir a la locura o a una adicción. Cada uso de Cognatógeno consumirá una ranura de objeto que tengas.
+Los bonificadores de un Cognatógeno no se acumulan con aquellos otorgados por la habilidad Mente Desencadenada y un abuso excesivo de estos puede conducir a la locura o a una adicción. Cada uso de Cognatógeno consumirá una ranura de objeto que tengas.
 
 ### Resistencia a drogas
 

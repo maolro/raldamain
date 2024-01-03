@@ -8,7 +8,7 @@ title: Chakras
 
 ### Activación de chakras 
 
-*Innato, Pasivo*
+*Innata, Pasiva*
 
 Los chakras son canales por los que fluye la energía vital del universo y permean todos los seres vivos en él. Al entrar en armonía con los chakras recibes la capacidad de aumentar enormemente tu energía vital y sobrecargar algunos de estos canales para recibir temporalmente habilidades sobrenaturales. 
 
@@ -16,13 +16,19 @@ No obstante, cada ronda que mantengas abiertos dichos canales empezarás a sufri
 
 ### Fuerza vital 
 
+*Innata, Pasiva*
+
 Tener chakras abiertos aumenta enormemente tu resistencia física para compensar el daño que recibes. Si tienes al menos un chakra abierto recibirás 5 PV temporales por cada Rango que tengas y además que tu Defensa aumentará por un valor igual a tu Rango + 1.
 
-### Chakra terrenal (Chakra 1)
+### Chakra terrenal
+
+*Chakra 1, Pasiva*
 
 El chakra terrenal te conecta con la tierra y te une con su energía vital, encontrándose en la planta de tus pies. Al activar este chakra recibes *vista a ciegas* en un radio medio, permitiéndote detectar a todas las criaturas a tu alrededor que estén en contacto con la tierra. Para abrir este chakra debes tener los pies descalzos y una firme convicción.
 
-### Chakra raíz (Chakra 1)
+### Chakra raíz
+
+*Chakra 1, Pasiva*
 
 El chakra raíz es uno de los principales puntos de energía de tu vuerpo, encontrándose en la base de tu columna vertebral. Este chakra te une con la tierra para que puedas estar seguro y centrado. Al activar este chakra recibirás Ventaja en todos tus tiros relacionados dos estadísticas de tu elección, las cuales puedes cambiar al principio de tu turno. Para abrir este chakra no debes llevar armas ni armaduras.
 
@@ -30,13 +36,19 @@ El chakra raíz es uno de los principales puntos de energía de tu vuerpo, encon
 
 ### Puños de fuerza
 
+*Innata, Pasiva*
+
 La energía vital infunde tu fuerza física y la potencia de tus ataques naturales. Si tienes dos o más chakras abiertos tus ataques físicos contarán como si fueran mágicos y provocarán 1d6 daño adicional al impactar.
 
-### Chakra sacral (Chakra 1)
+### Chakra sacral
+
+*Chakra 1, Pasiva*
 
 El chakra sacral se encuentra en tu abdomen inferior y se centra en los aspectos de la pasión, la creatividad y tus relaciones con los demás. Al activar este chakra eres capaz de ver los caminos de chi que conectan a todos los seres vivos, otorgándote inmunidad a ataques sorpresa además de la capacidad de identificar toda la magia empleada a una distancia media de ti. Activar este chakra requiere que estes combatiendo en un lugar o junto a una persona con quien sientas un poderoso vínculo emocional. 
 
-### **Chakra solar** (Chakra 2)
+### **Chakra solar** 
+
+*Chakra 2, Pasiva*
 
 El chakra solar se encuentra en el centro de tu cuerpo y almacena la energía tanto positiva como negativa de tu alrededor. Esta combinación de energías forma la base de tu personalidad y tu poder innato. Al activar este chakra te rodeas de un aura de energía protectora que aumenta tu Defensa por un valor igual a tu rango y te vuelve inmune a heridas medias o inferiores. Activar este chakra requiere que no tengas ninguna maldición o bendición divina que te esté afectando y no podrás emplear magia divina de ningúnal activarla.
 
