@@ -25,9 +25,11 @@ Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental
 
 Alternativamente, si escoges afectar la estructura de un objeto metálico deberás hacer otro tiro de magia de metal contra una dificultad asignada por el máster y en caso que lo superes el objeto sufrirá el efecto de estado *roto* o quedará reparado. Aunque puedes alterar armas mágicas con esta habilidad el tiro es mucho más complicado y no podrás afectar a artefactos o armas de calibre especialmente bueno. En ambos casos puedes gastar 1 chi para afectar un objeto adicional o repetir el tiro de destrozar.
 
-**Golpe metálico** (2 acciones, Metal, Físico, A distancia): Haz un ataque contra un objetivo a distancia media con un proyectil metálico que inflige 1d6 + CAR daño físico que puede ser tanto perforante, contundente o cortante dependiendo del objeto que uses para atacar. (1 chi) Ataca a un objetivo adicional o repite un tiro de ataque hecho con un arma a distancia que dispare proyectiles metálicos.
+### Golpe metálico
 
-**Parada de metal** (Metal, Físico, Defensivo): Eres capaz de emplear tu elemento para protegerte de ataques, pudiendo así emplear tu tiro de magia de metal de manera defensiva para bloquear ataques físicos tanto a distancia como cuerpo a cuerpo. También puedes usar esta habilidad para defenderte de otras técnicas de magia de metal aunque estas sean de área. A rango III puedes bloquear ataques de energía que no provoquen daño eléctrico y ataques de antienergía.
+### Hilos de acero
+
+**Golpe metálico** (2 acciones, Metal, Físico, A distancia): Haz un ataque contra un objetivo a distancia media con un proyectil metálico que inflige 1d6 + CAR daño físico que puede ser tanto perforante, contundente o cortante dependiendo del objeto que uses para atacar. (1 chi) Ataca a un objetivo adicional o repite un tiro de ataque hecho con un arma a distancia que dispare proyectiles metálicos.
 
 **Hilos de acero** (2 acciones y 1 chi, Metal, Físico, A distancia): Moldeas el metal para que adopte la forma de una sólida cuerda y la usas para atacar a un enemigo que se encuentre a distancia media de ti, *enredándolo* si consigues tener éxito. Dicho ataque tendrá ventaja si el objetivo lleva armadura metálica o una gran cantidad de objetos hechos de este material. 
 
