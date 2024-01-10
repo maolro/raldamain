@@ -20,5 +20,3 @@ Información sobre la apariencia típica de esa cultura y su ropa tradicional. 1
 # Relaciones
 
 Relación de esa cultura con sus vecinos además de sus opiniones de los demás. Poner aliados, enemigos y esteriotipos que tienen. 2-4 párrafos.
-
-# 
