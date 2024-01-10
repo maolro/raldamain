@@ -32,9 +32,9 @@ defaults:
       layout: character
   -
     scope:
-      path: "events"
+      path: "world"
     values:
-      layout: character
+      layout: rule
   -
     scope:
       path: "rules"
