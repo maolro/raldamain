@@ -17,25 +17,57 @@ Tras un estudio sobre el control de la tierra has conseguido aprender ha detecta
 
 ### Manipular metal
 
-Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Al emplear esta habilidad escoge un objeto metálico pequeño a distancia cercana de ti y muévelo hasta un paso en cualquier dirección o altera su estructura tal como desees. Si el objeto está enganchado o está en manos de otra persona deberás tener éxito en un tiro de Magia de Metal contra una dificultad escogida por el máster (si el objetivo es una persona deberás superar su tiro para defenderse de maniobras de combate). 
+*Metal, Maniobra*
 
-Añade tu rango a todos tus tiros de ataque y defensa hechos con magia elemental de metal. Aumenta tu reserva de chi por un valor igual a tu rango + 2.
+**Coste:** 1 acción
 
-**Manipular metal** (2 acciones, Metal, Maniobra):
+**Alcance:** Medio
 
-Alternativamente, si escoges afectar la estructura de un objeto metálico deberás hacer otro tiro de magia de metal contra una dificultad asignada por el máster y en caso que lo superes el objeto sufrirá el efecto de estado *roto* o quedará reparado. Aunque puedes alterar armas mágicas con esta habilidad el tiro es mucho más complicado y no podrás afectar a artefactos o armas de calibre especialmente bueno. En ambos casos puedes gastar 1 chi para afectar un objeto adicional o repetir el tiro de destrozar.
+**Duración:** Instantáneo
+
+Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Escoge un objeto metálico pequeño a distancia cercana de ti y muévelo hasta un paso en cualquier dirección o altera su estructura tal como desees. Si el objeto se encuentra en manos de otra persona esta podrá evitar tu efecto teniendo éxito en un tiro de Heroísmo frente a tu Magia de Metal. En el caso que fracases recibirás Desventaja en todos tus tiros futuros para afectar al mismo objetivo durante el resto de la ronda.
+
+Alternativamente, si escoges afectar la estructura de un objeto metálico deberás tener éxito un tiro de magia de Metal contra una dificultad asignada por el máster según la composición del objeto. En caso que lo consigas puedes otorgarle el efecto de estado *roto* o repararlo para quitarle dicho estado. Aunque puedes alterar armas mágicas con esta habilidad recibirás y no podrás afectar a artefactos o armas de calibre especialmente bueno. 
+
+**Empoderar** (1 chi): Afecta a un objeto adicional con esta habilidad o repite tu tiro.
 
 ### Golpe metálico
 
+*Metal, Ataque, A distancia, Físico*
+
+**Coste:** 1 acción
+
+**Alcance:** Medio
+
+**Duración:** Instantáneo
+
+Usas el magnetismo para lanzar un proyectil metálico a gran velocidad contra tus enemigos. Haz un ataque contra un objetivo a distancia media que inflige 1d6 + CAR daño físico al impactar que puede ser tanto Perforante, Contundente o Cortante dependiendo del proyectil empleado. En el caso que emplees un arma metálica como proyectil el daño base de este ataque será igual al suyo con la única diferencia que será modificado por tu estadística de CAR.
+
+**Empoderar** (1 chi): Ataca a un objetivo adicional con este hechizo o repite un tiro de ataque hecho con un arma a distancia que dispare proyectiles metálicos. Puedes también empoderar para que un proyectil lanzado vuelva a tu mano como acción bonus si se encuentra a distancia media de ti.
+
 ### Hilos de acero
 
-**Golpe metálico** (2 acciones, Metal, Físico, A distancia): Haz un ataque contra un objetivo a distancia media con un proyectil metálico que inflige 1d6 + CAR daño físico que puede ser tanto perforante, contundente o cortante dependiendo del objeto que uses para atacar. (1 chi) Ataca a un objetivo adicional o repite un tiro de ataque hecho con un arma a distancia que dispare proyectiles metálicos.
+*Metal, Ataque, Agarre, Duradero*
 
-**Hilos de acero** (2 acciones y 1 chi, Metal, Físico, A distancia): Moldeas el metal para que adopte la forma de una sólida cuerda y la usas para atacar a un enemigo que se encuentre a distancia media de ti, *enredándolo* si consigues tener éxito. Dicho ataque tendrá ventaja si el objetivo lleva armadura metálica o una gran cantidad de objetos hechos de este material. 
+**Coste:** 1 acción y 1 chi
 
-Tras ser creada puedes seguir atacando con la cuerda empleando dos acciones, pero no obtendrás ventaja en tu tiro de ataque salvo que gastes 1 chi. Puedes emplearla también para empujar, tropezar o agarrar a un objetivo enredado, lo cual te costará una acción. No obstante, debes tener una mano libre para poder manipular la cuerda y si esta es cortada deberás volver a usar esta habilidad para restaurarla. (1 chi) Haz un ataque adicional con la cuerda o crea una cuerda adicional al usar esta habilidad.
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Moldeas el metal para que adopte la forma de una sólida cuerda y la usas para agarrar a tus enemigos. Haz un ataque contra un objetivo a distancia media de ti empleando tu magia de Metal que lo *enredará* en caso de éxito. Dicho ataque recibirá Ventaja si el objetivo lleva armadura metálica o tiene encima una gran cantidad de objetos hechos de este material. 
+
+Tras ser creada puedes seguir atacando con la cuerda empleando una acción. Puedes emplearla también para *tropezar*, *agarrar* o empujar un paso a un objetivo *enredado*, lo cual te costará una acción y el afectado podrá defenderse empleando Heroísmo o Destrozar. Si logras *agarrar* o *enredar* a un enemigo este podrá repetir el tiro al principio de su turno y se liberará en caso de éxito. Este hechizo permanecerá activo hasta que pierdas la concentración o la cuerda sea rota.
+
+**Empoderar** (1 chi): Haz un ataque adicional con la cuerda como acción bonus contra un objetivo diferente.
 
 ## Rango II
+
+### Nube de cuchillas
+
+### Repulsión magnética
+
+### Fortalecer metal
 
 **Nube de cuchillas** (2 acciones y 1 chi, Metal, Área, Físico, Concentración): Lanzas una gran cantidad de pequeñas cuchillas metálicas contra un objetivo que se encuentre a distancia media de ti, infligiéndole 1d6 + CAR daño cortante al impactar y aumenta la gravedad de todas las heridas permanentes provocadas por un paso si tiene armadura leve o inferior. Si mantienes la concentración en la nube esta permanecerá en el campo de batalla más tiempo, permitiéndote emplear una acción para moverla un paso en cualquier dirección y atacar a un objetivo que se encuentre ahí. (1 chi) La nube de cuchillas pasa a afectar un radio corto.
 
@@ -47,7 +79,13 @@ Si te encuentras en posición defensiva puedes emplear 1 chi para detener instan
 
 ## Rango III
 
-Reduce el coste de usar *golpe metálico*, *hilos de acero* y *manipular metal* por 1 acción. Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d8.
+Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d8.
+
+### Coraza de acero
+
+### Arma teledirigida
+
+### Ferrokinesia
 
 **Coraza de acero** (2 acciones y 2 chi, Metal, Concentración, Defensiva): Usas tu control magnético para rodearte de numerosos objetos metálicos para poder defenderte de ataques, los cuales permanecerán a tu lado mientras mantengas la concentración. La cantidad de objetos que permanecerán en el aura será igual a tu rango y una vez por ronda puedes gastar uno de ellos para hacer un ataque de *golpe metálico* como acción bonus o tener éxito automático en un tiro de parada de metal contra un ataque a distancia o cuerpo a cuerpo (deberás gastar un objeto adicional si es un golpe crítico o has sacado un fallo crítico). Puedes bloquear ataques de área de esta manera si gastas un objeto adicional por cada magnitud de tamaño que tenga (por ejemplo dos objetos para detener un ataque de radio leve). Puedes emplear la habilidad *manipular metal* para atraer un objeto adicional al aura siempre y cuando no superes el máximo especificado por tu rango.
 
@@ -61,6 +99,12 @@ También puedes usar esta habilidad para intentar agarrar a un objetivo con arma
 
 ## Rango IV
 
+### Espina metálica
+
+### Chirrido estridente
+
+### Torbellino de filos
+
 **Espina metálica** (2 chi, Metal): Como reacción tras impactar con un ataque de *golpe metálico* puedes clavarle a tu objetivo una espina metálica que se introducirá en su cuerpo y le provocará graves daños internos. Mientras la espina permanezca clavada el objetivo sufrirá los efectos de *sangrado* y tienes ventaja en todos tus ataques de *magia de metal* contra ella además que contará como si llevara armadura metálica para los propósitos de tu habilidad *ferrokinesia*. 
 
 Para eliminar una espina metálica el objetivo debe emplear una acción y tener éxito en un tiro de *primeros auxilios* contra una dificultad escogida por el máster (normalmente +10) o sufrirá inmediatamente el daño de *golpe metálico* y una herida leve. Puedes clavarle más de una espina metálica a un objetivo, lo cual aumentará su daño de sangrado por 2 por cada espina que tenga pero no recibirás dados de ventaja adicionales en tus tiros de ataque contra ella.
@@ -73,6 +117,12 @@ Para eliminar una espina metálica el objetivo debe emplear una acción y tener 
 
 Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d10.
 
+### Disección interna
+
+### Polvo  metálico
+
+### Pulso magnético
+
 **Disección interna** (3 acciones y 3 chi, Metal, Físico, Área): Lanza numerosas espinas metálicas contra un objetivo a distancia media de ti, haciendo un ataque con magia de metal que provoca 2d10 + CAR daño perforante al impactar (la mitad de daño si logra evitarlo exitosamente). Aquellos enemigos que sufran al menos un punto de daño con este ataque tendrán clavada una *espina metálica* (dos espinas si logras reducir PV). Si tu objetivo permanece a distancia media de ti puedes emplear 2 acciones o 1 chi para que la espina se introduzca aún más en su cuerpo, provocándole una 2 daño de sangrado y una herida leve en cualquier parte del cuerpo. 
 
 **Polvo metálico** (3 acciones y 3 chi, Metal, Área, Gas, Concentración): Formas una gran nube de polvo metálico que puedes moldear para formar todo tipo de objetos o introducirla en los pulmones de tus objetivos para envenenarles. La nube abarcará un radio medio y permanecerá en el campo de batalla mientras mantengas la concentración en ella. Al crear la nube cada enemigo que se encuentre en su área de efecto deberá tener éxito en un tiro de CON frente a tu magia de metal o sufrirá los efectos de un veneno que afecta a la estadística de CON que tiene gravedad igual a tu tiro de ataque con magia de metal e incidencia de dos rondas. Durante las rondas siguientes cada criatura que permanezca en el área de efecto de la nube deberá repetir este tiro y aumentará el efecto del veneno por un paso si fracasa. Además, mientras la nube permanezca activa puedes emplearla para atacar o defenderte, permitiéndote gastar acciones para usar uno de los siguientes efectos. En todos ellos puedes reducir el coste por una acción pagando 1 chi adicional (mínimo 0 acciones):
@@ -84,6 +134,8 @@ Sustituye todos los dados de daño que tengas en habilidades de magia de metal p
 **Pulso magnético** (3 acciones y 3 chi, Metal, Toque): Formas un poderoso pulso magnético y lo enfocas contra una criatura a distancia corta de ti, la cual deberá tener éxito en un tiro de salvación de DES frente a tu magia de metal para evitar este efecto. Si logras impactar todos los objetos metálicos que tenga se destruirán de inmediato y los objetos y mejoras mágicas que lleve se deshabilitarán hasta que sean reparadas. En el caso que tu objetivo llevara armadura media o inferior sufrirá además el efecto de estado *náuseas* durante el resto del combate ya que el pulso electromagnético dañará gravemente su cuerpo. Puedes también usar esta habilidad para destruir instantáneamente una estructura metálica de tamaño gigante o inferior, incluyendo aquella hecha de materiales superiores o encantada con magia.
 
 ## Rango VI
+
+### Titán de metal
 
 **Titán de metal** (3 acciones y 5 chi, Metal, Concentración): Te rodeas de una gran cantidad de objetos metálicos para adoptar la forma de una criatura colosal, incrementando enormemente tu fuerza física. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 

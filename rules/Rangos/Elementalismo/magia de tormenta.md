@@ -19,7 +19,7 @@ Tu control avanzado sobre el aire te ha permitido desviarte de su forma más bá
 
 *Tormenta, Ataque, Eléctrico, Toque*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Cuerpo a cuerpo
 
@@ -35,7 +35,7 @@ Infundes tu mano con electricidad para provocarle una descarga a un enemigo que 
 
 *Tormenta, Ataque, Eléctrico, A distancia*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 

@@ -21,5 +21,3 @@ Intro
 ## Menadar
 
 ## Qandesh
-
-## 

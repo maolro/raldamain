@@ -17,6 +17,12 @@ Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote 
 
 Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incrementa tu reserva de chi por un valor igual a tu rango + 2.
 
+### Pedrada
+
+### Crear obstáculo
+
+### Terratemblor
+
 **Pedrada** (2 AP): Lanzas una piedra pequeña contra una criatura a distancia media, infligiendo 1d6 + SAB daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional.
 
 **Crear obstáculo** (2 AP): Manipulas la tierra para controlar el campo de batalla, formando así un agujero o barrera pequeña en un espacio a distancia media de ti. La barrera otorgará *cubierta parcial* a las criaturas detrás de ella mientras que el agujero *tropezará* a las criaturas que pasen por encima de él (pueden tirar DES contra tu SAB para evitarlo)
@@ -24,6 +30,12 @@ Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incre
 **Terratemblor** (2 AP y 1 chi): Haz un ataque con magia de tierra contra todas las criaturas a distancia cercana de ti contra el cual solo podrán defenderse con FUE o DES. Aquellas que impactes quedarán *tropezadas* y sufrirán 1d6 daño de caída. Además, todo el terreno afectado pasará a ser *terreno difícil* y destruye todos los obstáculos pequeños. (1 chi) Aumenta el radio a medio
 
 ## Rango II
+
+### Muro de piedra
+
+### Tierra viva
+
+### Moldear la tierra
 
 **Muro de piedra** (2 AP y 1 chi): Crea un muro de sólidas piedras con rango x 3 PV, DEF igual a tu rango + 2 y vulnerabilidad al daño sónico y contundente que otorgará cubierta completa a todas las criaturas tras él. Puedes crear el muro como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
 
@@ -35,6 +47,12 @@ Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incre
 
 Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obstáculo* y *terratemblor* cuestan -1 AP
 
+### Abrazo de la tierra
+
+### Forma de la montaña
+
+### Invocar elemental de tierra
+
 **Abrazo de la tierra** (1 AP y 2 chi): La tierra se levanta desde bajo los pies de un objetivo a distancia media para intentar retenerlo, permitiéndote así hacer un ataque de *pedrada* que al impactar *agarrará* al objetivo. Solo es posible escapar de este agarre usando la FUE y las piedras que lo agarren son tan sólidas como un *muro de piedra* con la mitad de PV. (1 chi) Afecta a un objetivo adicional.
 
 **Forma de la montaña** (2 AP y 2 chi): Levantas una cantidad de grandes piedras igual a tu rango – 1 que permanecerán a tu lado hasta que pierdas la concentración. Puedes sacrificar una piedra como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *pedrada* contra un objetivo a distancia media. 
@@ -42,6 +60,12 @@ Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obst
 **Invocar elementales de tierra** (3 AP y 2 chi): Invoca a un elemental de tierra que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez
 
 ## Rango IV
+
+### Pilares de la tierra
+
+### Derrumbamiento
+
+### Espinas 
 
 **Pilares de la tierra** (3 AP y 2 chi): Creas seis sólidos cilindros de radio corto que emergerán de seis puntos en contacto con la tierra a distancia lejana. Las criaturas que se encuentren en dichas posiciones pueden tirar DES para evitar este efecto y si fracasan serán elevadas por los pilares. Si el pilar acaba chocando con una superficie sólida las criaturas encima de él sufrirán los efectos de *derrumbamiento*.  
 

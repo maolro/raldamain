@@ -19,7 +19,7 @@ Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aqu
 
 *Naturaleza, Ataque, Físico, Agarre, Duradero*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -37,7 +37,7 @@ Si has enredado a un objetivo con este hechizo puedes intentar retenerlo aún m�
 
 *Madera, Ataque, a Distancia, Físico*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 

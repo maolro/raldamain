@@ -1,4 +1,5 @@
 ---
 title: Culturas
+layout: summary
 ---
 

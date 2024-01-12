@@ -42,7 +42,7 @@ Esta habilidad puede usarse también para revertir las heridas recientes de un a
 
 *Temporal, Arcana, Aflicción, Toque, Fuerza*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Cuerpo a cuerpo
 

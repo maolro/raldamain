@@ -22,7 +22,7 @@ Magia de Evocación se adhiere a un conjunto de reglas fundamentales que sustent
 
 *Evocación, Arcano, Ataque, A distancia*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 

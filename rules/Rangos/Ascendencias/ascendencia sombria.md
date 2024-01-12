@@ -55,19 +55,31 @@ Creas una pequeña brecha al plano sombrío para viajar rápidamente de un lugar
 
 ## Rango III
 
-Aprendes los hechizos XXXX
+Aprendes los hechizos Capullo sombrío y Bola sombra
 
-### Llamar las tinieblas
+### Absorber oscuridad
 
-Ventaja en sus tiros con magia sombría y ataques. Absorbes la luz a tu alrededor, bajando la luminosidad que te rodea por un paso.
+*Innata, Mejora*
+
+**Coste:** 2 chi o vigor
+
+Obtienes la capacidad de cambiar temporalmente las características de tu cuerpo para que este se asemeje al de un no-muerto. Mientras esta habilidad permanezca activa recibes Inmunidad a los efectos de las categorías Necrótico y Frío además que el daño Necrótico te sana Vitalidad en lugar de herirte. Además, si empiezas tu turno en un lugar afectado por un hechizo Sombrío te sanarás Vitalidad igual a tu Rango. 
+
+No obstante, transformar tu cuerpo para que se asemeje a un no-muerto es un arma de doble filo al obtener también sus debilidades. Por ello obtendrás también Vulnerabilidad a efectos Radiantes y no podrás sanarte por efectos que no sean Necróticos. Activar o desactivar esta habilidad cuesta una acción bonus.
 
 ### Invocación sombría
 
-Invocas una criatura sombría para asistirte en el campo de batalla.
+*Sombría, Invocación*
 
-**Regeneración sombría:** Si te encuentras en un espacio afectado por oscuridad una localidad con fuerte presencia sombría te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto en ese terreno recuperas también todos tus PV.
+**Coste**: 3 acciones y 2 chi o vigor
 
-**Invocación sombría** (3 AP y 2 chi): Invocas a una criatura sombría como aliada cuyas estadísticas quedan especificadas a continuación. Cada vez que obtengas un rango adicional esta recibirá una mejora.
+**Alcance**: Medio
+
+**Duración**: Una hora
+
+Llamas a una siniestra criatura proveniente del Plano Sombrío para que te asista en el campo de batalla. Este hechizo invocará una criatura Sombría de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar criaturas de mayor poder, aumentando el nivel de la criatura invocada en 2 por cada Rango que tengas en Ascendencia Sombría por encima del III. 
+
+**Empoderar** (1 chi o vigor): Una criatura sombría bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 
@@ -75,31 +87,53 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 ### Arma de tinieblas
 
-Crea arma de tinieblas que no puede ser detenida por fuerzas no-mágicas y provoca daño necrótico o frío al impactar. Puedes aplicar técnicas de combate.
+*Sombría, Duradera*
+
+**Coste:** 1 acción y 2 chi o vigor
+
+**Duración:** Concentración
+
+Invocas un arma hecha de pura oscuridad para atacar a tus enemigos. El arma se manifestará en la palma de tu mano y permanecerá activa hasta que pierdas la concentración. Puede tomar la forma de cualquier arma cuerpo a cuerpo que elijas y al impactar provocará daño Necrótico o Frío igual al daño base de esta modificado por tu estadística de DES o CAR. 
+
+El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán una acción (dos acciones si el arma requiere las dos manos para ser empleada) y puedes usar tu modificador de Magia Sombría para tu tiro de ataque con ella. Al estar hecha de sombras esta no puede ser detenida con tiros de Parada hechos con armas no-mágicas. Además, puedes aplicar cualquier técnica de combate que ya tengas a los ataques realizados con esta arma.
 
 ### Forma sombría
 
-Te transformas en una sombra intangible donde eres incorpóreo. Puedes poseer a no-muertos y cadáveres en esta forma.
+*Sombría, Mejora*
 
-**Arma de tinieblas** (2 chi): Invocas un arma hecha de pura oscuridad que permanecerá a tu lado durante el resto del combate. El daño del arma ignorará la defensa otorgada por fuentes no-mágicas y solo puede ser detenida por efectos mágicos. Esta arma puede usar tu bonificador de magia sombría o arma para atacar y se aplicaran todos tus atributos de armas.
+**Coste:** 1 acción y 2 chi o vigor
 
-**Paso sombrío** (2 AP y 2 chi): Abres dos portales separados por una distancia lejana por los cuales cualquier criatura puede viajar mientras mantengas la concentración en ellos. Los portales deben formarse en espacios a oscuras.
+**Duración:** Concentración
+
+Eres capaz de transformar tu cuerpo en pura oscuridad, pudiendo así convertirte en una sombra viviente. Al activar esta habilidad te volverás Incorpóreo, recibiendo así Inmunidad a todos los efectos Físicos, Mentales y Aflicciones además que puedes deslizarte por las ranuras más pequeñas. Forma sombría permanecerá activa hasta que pierdas la concentración, sufras daño Radiante o entres en un lugar afectado por luz brillante. Si te encuentras en *posición defensiva* puedes emplear esta habilidad como reacción para evitar ataques enemigos.
 
 ## Rango V
 
-Aprendes los hechizos XXXX
+Aprendes los hechizos Tentáculos de oscuridad y Maldición de Shade
 
 ### Sombra viviente
 
-Resistencia a veneno, arcano, miedo y efectos mentales. Inmunidad a necrótico. Vulnerabilidad a Radiante y sensibilidad a la luz.
+*Innata, Pasiva*
+
+El siniestro poder en tu interior se ha desatado por completo, transformándote en un ser más propio del Plano Sombrío que el material. Obtienes Resistencia a efectos Arcanos Arcanos, Mentales, Maldiciones, Aflicciones y Miedo además que las criaturas sombrías de menor nivel te obedecerán sin cuestionarlo. Obtener esta habilidad te otorgará una *locura permanente* escogida por le DJ.
 
 ### Dominio de pesadilla
 
-Desliga una porción del plano material al sombrío para convertirlo en tierra profanada y darte la habilidad de saltar entre planos.
+*Innata, Sombría, Ambiental, Espacial*
 
-**Forma sombría** (2 AP y 2 chi): Te transformas en un ser incorpóreo hecho de sombras durante rango + 1 rondas. En este estado eres inmune a todo el daño no-mágico y vulnerable a daño radiante además que no puedes usar acciones que no estén relacionadas con magia o ascendencia sombría, (1 chi) Evitas un ataque de manera automática si te encuentras en posición defensiva.
+**Coste:** 3 acciones y 3 chi o vigor
 
-**Luces y sombras** (2 chi): Infundes a una ilusión con energía del plano de las sombras para que se vuelva parcialmente real. Si es un objeto sólido o un efecto ambiental se vuelve físico durante una hora y si es una ser vivo se transformará en una criatura sombría, En el caso que no tengas habilidades ilusorias recibes el hechizo crear ilusión sin limite de uso.
+**Tamaño:** Radio grande
+
+**Duración:** Seis rondas
+
+Desligas una porción del plano material a tu alrededor para fusionarla con el Plano Sombrío, transformándolo en un terrorífico dominio en el que puedes atormentar a tus enemigos. Este hechizo afectará una zona de tamaño igual a un radio grande y mientras permanezca activo todo el terreno que ocupe se convertirá en Tierra consagrada para los adoradores de entidades sombrías o abisales además que se encontrará siempre a oscuras. Dominio de pesadilla durará seis rondas o hasta que sea eliminado por otros efectos de similar magnitud.
+
+El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el Plano sombrío debido a este hechizo volverá al plano material.
+
+La nociva influencia del plano sombrío perjudicará la salud de aquellos que no estén adaptados a ella. Toda criatura sin resistencia Necrótica que empiece su turno en él  sufrirá los efectos de un veneno de SAB con tasa de efecto de una ronda y gravedad igual a tu modificador de Ascendencia sombría. Además, todos los tiros relacionados con entidades Divinas ajenas al plano sombrío recibirán Desventaja debido a que su influencia queda debilitada en este plano.
+
+**Empoderar** (1 chi o vigor): Cambias de plano como reacción para evitar un ataque enemigo. Esto cuenta como un efecto Espacial.
 
 ## Rango VI
 
@@ -107,11 +141,21 @@ Incrementa tu estadística de CON y su limitador por 1.
 
 ### Tirano sombrío
 
-Entras en una forma tocha que mejora enormemente tus habilidades.
+*Innata, Mejora*
 
-**Sombra viviente:** Recibes resistencia 4 al veneno, enfermedades y efectos mentales además de inmunidad al daño necrótico. No obstante, obtienes vulnerabilidad al daño radiante y sensibilidad a la luz. Además, al entrar en *forma sombría* puedes emplear 3 AP y 1 chi para intentar poseer a otra criatura viva o muerta, la cual puede defenderse superándote en un tiro de CAR.
+**Coste:** 3 acciones y 5 chi o vigor
 
-**Portal sombrío** (3 AP y 5 chi): Abre un portal sombrío durante 10 rondas que llena todo el espacio a distancia media de él con oscuridad mágica. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura sombría con x-1 mejoras.
+**Duración:** Seis rondas
+
+Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu camino. Al activar Ángel vengador recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Ángel vengador por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Ángel vengador te otorgará los siguientes beneficios:
+
+- Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Recibes Inmunidad a efectos Mentales, Necróticos, Aflicciones, Frío, Miedo y de Toque.
+- Todos tus ataques físicos infligirán 1d10 + Rango daño Frío al impactar además que tirarás un dado de daño adicional en todos tus hechizos Sombríos. 
+- Estas rodeado por un Aura de muerte y estás s
+- Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Todos tus hechizos obtenidos por Ascendencia sombría no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
 
 # Criatura sombría
 

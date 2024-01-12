@@ -121,6 +121,8 @@ Aumenta tu estadística de SAB y su limitador por 1.
 
 ### Ángel vengador
 
+*Innata, Mejora*
+
 **Coste:** 3 acciones y 5 chi o vigor
 
 **Duración:** Seis rondas

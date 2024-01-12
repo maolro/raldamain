@@ -35,7 +35,7 @@ Si te encuentras en *posición defensiva* puedes teletransportarte para evitar a
 
 *Espacial, Arcana, Duradera*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Duración:** Concentración
 
@@ -49,7 +49,7 @@ Mientras el portal permanezca activo puedes afectar a objetos o criaturas que se
 
 *Espacial, Arcana*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Duración:** Instantánea
 
@@ -81,7 +81,7 @@ Aquellos magos espaciales que tengan demiplanos o dominios propios pueden emplea
 
 *Espacial, Arcano, Duradero, Toque*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 accióny 1 chi
 
 **Alcance:** Cuerpo a cuerpo
 

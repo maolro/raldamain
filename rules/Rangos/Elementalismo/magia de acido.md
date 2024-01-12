@@ -16,7 +16,7 @@ title: Magia de Ácido
 
 *Ácido, Ataque, A distancia*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -32,7 +32,7 @@ Formas una esfera de ácido corrosivo en la palma de tu mano y la lanzas hacia u
 
 *Ácido, Ataque, Toque*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Cuerpo a cuerpo
 
@@ -56,7 +56,7 @@ Si logras impactar tu objetivo se recubrirá de ácido corrosivo, forzándole a 
 
 **Duración:** Instantáneo
 
-Escupes un chorro de ácido corrosivo contra todos los enemigos cercano. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Ácido al impactar. Todos los objetos metálicos o hechos de madera que sean impactados por este ataque sufrirán el efecto de estado *roto* además que eliminarás todos los efectos Duraderos de Naturaleza o Metal en el área afectada con Rango igual al tuyo.
+Escupes un chorro de ácido corrosivo contra todos los enemigos cercanos. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Ácido al impactar. Todos los objetos metálicos o hechos de madera que sean impactados por este ataque sufrirán el efecto de estado *roto* además que eliminarás todos los efectos Duraderos de Naturaleza o Metal en el área afectada con Rango igual al tuyo.
 
 **Empoderar** (1 chi): Aumenta el tamaño de este ataque por un pasy su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
