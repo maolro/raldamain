@@ -18,7 +18,7 @@ La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus 
 
 ### Toque sanador
 
-*Vida, Sanación, Toque
+*Vida, Sanación, Toque*
 
 **Precio**: 2 acciones
 
@@ -114,7 +114,9 @@ Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un al
 
 **Duración**: Concentración 
 
-Moldeas la energía luminosa para que tome la forma de un arma de tu elección y la desatas contra tus enemigos. Haz un ataque de magia de Vida contra todas las criaturas en una línea mediana que inflige 1d6 + CAR de daño Radiante al impactar. Una vez creada, el arma solar permanecerá a tu lado, lo que te permite emplear una acción para realizar un ataque con ella contra un objetivo a distancia medio que inflige 1d6 + CAR de daño Radiante al impactar. Este efecto permanecerá activo hasta que pierdas la Concentración. 
+Moldeas la energía luminosa para que tome la forma de un arma de tu elección y la desatas contra tus enemigos. Haz un ataque de magia de Vida contra todas las criaturas en una línea mediana que inflige 1d6 + CAR de daño Radiante al impactar.
+
+Una vez creada el arma solar permanecerá a tu lado, lo que te permite emplear una acción para realizar un ataque con ella contra un objetivo a distancia medio que inflige 1d6 + CAR de daño Radiante al impactar. Este efecto permanecerá activo hasta que pierdas la Concentración. 
 
 **Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo diferente a distancia media.
 
@@ -130,7 +132,7 @@ Todos tus hechizos de Vida sustituyen sus dados de daño por d8 y aquellos de Ra
 
 **Duración**: Concentración
 
-Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehumanas, desplazándote como si estuvieras hecho de luz. Una vez que activas este hechizo, aumentas todas tus velocidades de movimiento por 1 y puedes entrar en *posición defensiva* una vez por turno como una acción bonus. Obtienes también la capacidad de usar tu modificador de magia de Vida en todos tus tiros de Esquiva. Este hechizo durará hasta que pierdas la concentración o entres en un área afectada por un hechizo de Sombra.
+Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehumanas, desplazándote como si estuvieras hecho de luz. Una vez que activas este hechizo, aumentas todas tus velocidades de movimiento por 1 y puedes entrar en *posición defensiva* una vez por turno como una acción bonus. Obtienes también la capacidad de usar tu modificador de magia de Vida en todos tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración o entres en un área afectada por un hechizo de Sombra.
 
 **Empoderar** (1 chi): Tienes éxito automático en una tirada de defensa para defenderte de un efecto que te tenga explícitamente como objetivo y te mueves un paso en cualquier dirección. Puedes empoderar de esta manera cualquier cantidad de veces por turno.
 

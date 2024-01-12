@@ -19,7 +19,7 @@ Esta magia te permite tener un control absoluto sobre el agua cuando esta se enc
 
 *Agua, Ataque, a Distancia, Físico* 
 
-**Coste**: 2 acciones 
+**Coste**: 1 acción
 
 **Alcance**: Medio 
 

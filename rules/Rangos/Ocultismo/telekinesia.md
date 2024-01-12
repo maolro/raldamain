@@ -11,7 +11,7 @@ Tu mente tiene un poder superior que el de la mayoría de personas que te rodean
 
 *Telequinesia, Ataque, A distancia, Físico*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -95,7 +95,7 @@ Empleas la telekinesia para reponer tejidos rotos y coagular rápidamente tus he
 
 *Telequinesia, Maniobra*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 accy 1 chi
 
 **Alcance:** Medio
 

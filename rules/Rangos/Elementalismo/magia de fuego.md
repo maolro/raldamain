@@ -19,7 +19,7 @@ Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos
 
 *Fuego, Ataque, A distancia*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -35,7 +35,7 @@ Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. 
 
 *Fuego, Cuerpo a cuerpo, Ataque*
 
-**Coste:** 2 o más acciones
+**Coste:** 1 o más acciones
 
 **Alcance:** Cuerpo a cuerpo
 

@@ -18,7 +18,7 @@ Te has decantado por la forma mas compleja en la que se puede encontrar el agua 
 
 *Sangre, Aflicción, Toque, Necrótico*
 
-**Coste**: 2 acciones
+**Coste**: 1 acción
 
 **Alcance**: Cuerpo a cuerpo
 
@@ -106,7 +106,7 @@ Utilizas la sangre de un enemigo para curar tus heridas como si fueras un vampir
 
 Formas un arma con tu propia sangre solidificada para atacar a tus enemigos. Al lanzar este hechizo creas un Arma sanguínea que durará hasta que pierdas la concentración. Puede tomar la forma de cualquier arma cuerpo a cuerpo que elijas y tiene la misma cantidad de daño base con la diferencia que se modificará con tu estadística de CAR en lugar de tu FUE o DES.
 
-El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán dos acciones (una acción en rango IV), y puedes usar tu modificador de Magia de Sangre para los ataques realizados con ella. Puedes aplicar cualquier habilidad de arma que ya tengas a los ataques realizados con esta arma.
+El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán una acción (dos acciones si el arma requiere las dos manos para ser empleada) y puedes usar tu modificador de Magia de Sangre para tu tiro de ataque con ella. Además, puedes aplicar cualquier técnica de combate que ya tengas a los ataques realizados con esta arma.
 
 **Empoderar** (1 chi): Al impactar a un enemigo con el arma sanguínea puedes lanzar un hechizo de Sangre contra él como acción bonus. Ese hechizo debe tener el mismo objetivo que tu ataque y debes seguir pagando su coste de chi.
 
