@@ -22,7 +22,7 @@ La magia Gravitatoria se adhiere a un conjunto de reglas fundamentales que rigen
 
 *Gravedad, Maniobra, Físico*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Cercano
 
@@ -30,7 +30,7 @@ La magia Gravitatoria se adhiere a un conjunto de reglas fundamentales que rigen
 
 **Duración:** Instantáneo
 
-Alteras la gravedad de maneras erráticas para lanzar a tus enemigos por los aires. Un objetivo a distancia cercana debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia Gravitatoria o será empujado un paso y caerá *tropezado*. Si hay obstáculos en su camino sufrirá 1d6 + INT daño contundente al chocar con ellos y no podrá moverse más.
+Alteras la gravedad de maneras erráticas para lanzar a tus enemigos por los aires. Un objetivo a distancia cercana debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia Gravitatoria o será empujado un paso y caerá *tropezado*. Si hay obstáculos en su camino sufrirá 1d6 + INT daño Contundente al chocar con ellos y no podrá moverse más.
 
 Este hechizo puede también empujar objetos de tamaño mediano un paso en cualquier dirección, pero no se moverán a suficiente velocidad para provocar daño a objetivos en su trayectoria. También puede ser empleada de manera alternativa para eliminar efectos Duraderos o Ambientales ajenos pertenecientes a una categoría que puedas detener con Parada, desestabilizando el control ejercido por otras criaturas. Para emplear este hechizo así debes superar el modificador del lanzador enemigo con tu tiro de Magia Gravitatoria además de pagar una cantidad de chi igual al coste empleado por el lanzador.
 
@@ -40,7 +40,7 @@ Este hechizo puede también empujar objetos de tamaño mediano un paso en cualqu
 
 *Gravedad, Maniobra, Físico*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 

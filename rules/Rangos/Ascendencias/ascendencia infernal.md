@@ -15,25 +15,51 @@ Ascendencia Infernal tiene las siguientes reglas fundamentales que se aplican a 
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumentas tu reserva de chi por 2 + rango.
+### Resistencias infernales
 
-**Resistencias infernales**: Recibes resistencia igual a tu rango + 1 contra un tipo de daño de tu elección y todas las condiciones asociadas con él. Algunas opciones son fuego, frío, veneno, eléctrico y necrótico. A rango III y V puedes escoger otro tipo de daño contra el cual tener resistencia.
+*Innata, Pasiva*
 
-**Maestro del engaño:** Tienes ventaja en todos tus tiros de persuasión y engaño además que la magia no puede detectar si estás mintiendo. Todas las criaturas que interactúen contigo por primera vez mejorarán su actitud hacia ti por un paso. (1 chi) Una criatura que afectes con magia mental no será consciente que ha sido influenciada y creerá que ha sido afectada por una habilidad diferente, recibiendo desventaja en todos sus tiros para liberarse o identificar el efecto. 
+El poder del infierno muta tu cuerpo para otorgarte las resistencias naturales de un demonio. Recibes Resistencia a efectos Mentales, Aflicciones, Fuego y Frío además que las criaturas infernales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos.
+
+### Pacto del diablo
+
+*Innata, Pasiva*
+
+Haces un pacto con las fuerzas del infierno para abrir tu mente a nuevos secretos mágicos. Aprendes dos hechizos de Rango I pertenecientes a una rama de magia Arcana, Elemental u Ocultismo para los cuales puedes emplear vigor en lugar de chi. Dichos hechizos emplearán la suma de tu Rango de Ascendencia y tu estadística de CAR como bonificador y deben estar relacionados con tu patrón infernal, lo cual queda a decisión del máster.
 
 ## Rango II
 
-Incrementa tu CAR por 1.
+Aumenta tu estadística de CAR y su limitador por 1.
 
-**Arma profana** (1 chi): Durante esta ronda todos tus ataques infligen +1d6 daño de cualquier elemento de tu elección y todas las heridas permanentes que provoques son más difíciles de sanar, haciendo que sea necesario gastar 1 chi adicional para curarlas mágicamente. 
+### Arma profana
 
-**Secretos de la magia:** Tu pacto con fuerzas del infierno abre tu mente a nuevos secretos mágicos. Conoces dos hechizos adicionales de rango I pertenecientes a cualquier rama de elementalismo, magia arcana u ocultismo que puedes usará tu estadística de INT y rango en *ascendencia infernal* para su bonificador y habilidades. Cada vez que obtengas un rango adicional en esta ascendencia conocerás un hechizo adicional cuyo rango no podrá superar tu rango en *ascendencia infernal* - 1. 
+*Innata, Mejora, Maldición*
+
+**Coste:** 1 vigor o chi
+
+**Duración:** Una ronda
+
+Infundes tu arma con el poder del infierno para provocar letales heridas. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo provocarás una herida infernal a tu objetivo, reduciendo su Vitalidad y PV máximos por una cantidad igual al daño provocado e infligiendo una *herida permanente leve*. Al tratarse de una Maldición una herida profana puede ser eliminada por hechizos de Vida con la adecuada magnitud.
+
+### Visión infernal
+
+*Innata, Pasiva*
+
+Desarrollas los mismos sentidos que un demonio para ver en la oscuridad más profunda y percibir los deseos de tus enemigos. Eres capaz de ver sin dificultades en oscuridad mágica y no-mágica además que puedes detectar la posición de todos los seres inteligentes a distancia media de ti. Si tienes hechizos de Magia Mental estos tratarán las resistencias de tus enemigos como si fueran de un paso inferior.
 
 ## Rango III		
 
-Aumenta su resistencia al daño físico por 1.
+Aprendes dos hechizos de Rango II o menos relacionados con tu patrón infernal.
 
-**Alas demoniacas:** (2 chi): Manifestas unas alas infernales que aumentan tu velocidad de vuelo por 2 y permanecerán activas durante el resto del combate. Recibes también ventaja en todos tus tiros de ataque y defensa hechos contra criaturas incapaces de volar.
+### Alas demoniacas
+
+*Innata, Pasiva*
+
+### Siervos del contrato
+
+*Innata, Invocación*
+
+**Alas demoniacas:** (2 chi): Manifiestas unas alas infernales que aumentan tu velocidad de vuelo por 2 y permanecerán activas durante el resto del combate. Recibes también ventaja en todos tus tiros de ataque y defensa hechos contra criaturas incapaces de volar.
 
 **Siervos del contrato** (3 acciones y 2 chi): Tu lealtad al infierno es recompensada con varios demonios a tu servicio. Con esta habilidad invocas a uno de los demonios que te sirven, el cual tendrá las estadísticas de una criatura infernal. Cada vez que obtengas un rango adicional tus invocaciones recibirán una mejora y no puedes invocar a más de 4 demonios a la vez.
 

@@ -1,6 +1,8 @@
 ---
 title: Leoninos
 image: Leonin.jpg
+regiones-predilectas: Arshalán
+religiones-predilectas: Mekhatimismo
 ---
 
 Fuertes, valientes y orgullosos, así es como la mayoría definiría a los leoninos, que conforman las castas mas altas de la sociedad Arshalani. Luchan desde que tienen consciencia con sus hermanos y con su entorno con tal de tener la oportunidad de alzarse sobre la cima, no como un propósito autoimpuesto, sino como un deber que clama su sangre, como una necesidad sin la que no podrían vivir, y para ello los dioses los dotaron en cuerpo y mente, dándoles robustos físicos y templada disciplina para acabar con todo lo que se interponga en su camino. Para los leoninos, no hay opción de desviarse, y quienes no tratan de alcanzar lo mas alto o se apartan del camino serán rápidamente eliminados. 

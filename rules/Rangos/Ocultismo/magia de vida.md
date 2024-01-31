@@ -114,11 +114,11 @@ Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un al
 
 **Duración**: Concentración 
 
-Moldeas la energía luminosa para que tome la forma de un arma de tu elección y la desatas contra tus enemigos. Haz un ataque de magia de Vida contra todas las criaturas en una línea mediana que inflige 1d6 + CAR de daño Radiante al impactar.
+Moldeas la energía luminosa para que tome la forma de un arma de tu elección y la desatas contra tus enemigos. Haz un ataque de magia de Vida contra todas las criaturas en una línea mediana que inflige 1d6 + CAR daño Radiante al impactar.
 
-Una vez creada el arma solar permanecerá a tu lado, lo que te permite emplear una acción para realizar un ataque con ella contra un objetivo a distancia medio que inflige 1d6 + CAR de daño Radiante al impactar. Este efecto permanecerá activo hasta que pierdas la Concentración. 
+Una vez creada el arma solar permanecerá a tu lado, lo que te permite emplear una acción para realizar un ataque con ella contra un objetivo a distancia medio que inflige 1d6 + CAR de daño Radiante al impactar. Este efecto permanecerá activo hasta que pierdas la concentración. 
 
-**Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo diferente a distancia media.
+**Empoderar** (1 chi): Haz un ataque adicional contra un objetivo diferente a distancia media.
 
 ## Rango III
 

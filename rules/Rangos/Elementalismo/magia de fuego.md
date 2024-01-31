@@ -111,7 +111,21 @@ Este ataque puede potenciarse aún más si cargas la bola de fuego antes de lanz
 
 ### Látigo flamígero
 
-(2 acciones y 1 chi. Área, Energía, Fuego): Ataca a todos los enemigos en una línea media con un látigo de fuego que infligirá 1d6 + CAR daño fuego y una quemadura leve (media si logras reducir PV). Todos aquellos afectados que no consigan eliminar la quemadura sufrirán 1d6 + Rango daño fuego al final de la siguiente ronda. (1 chi) Crea un látigo adicional que ataque a objetivos diferentes.
+*Fuego, Ataque, Duradero*
+
+**Coste**: 1 acción y 1 chi 
+
+**Alcance**: Cercano
+
+**Efecto crítico:** El objetivo sufrirá una *quemadura leve*
+
+**Duración**: Concentración 
+
+Moldeas el fuego en la forma de un látigo de llamas que puedes usar para atacar a tus enemigos. El látigo permanecerá a tu lado hasta que pierdas la concentración y mientras lo esté puedes emplear una acción para atacar a un enemigo a distancia corta con él. Dicho ataque empleará tu modificador de Magia de Fuego e infligirá 1d6 + CAR daño Fuego al impactar. Al tratarse de un ataque mágico solo puede ser detenido con habilidades de Parada con propiedades mágicas.
+
+Mientras mantengas concentración en el látigo puedes emplearlo también para alejar a los enemigos que se te acerquen. Por ello al entrar en *posición defensiva* una vez por ronda puedes hacer un ataque con el látigo contra un enemigo que entre en una posición a distancia corta o adyacente ti. Si logras impactar a un enemigo de esta manera deberá detenerse de inmediato y puedes *desenganchar* como acción bonus.
+
+**Empoderar** (1 chi): Haz un ataque adicional contra un objetivo diferente a distancia corta.
 
 ## Rango III
 
@@ -131,23 +145,95 @@ Tus hechizos de Fuego convierten sus dados de daño a d8 y los de Rango I reduce
 
 Canalizas tu fuego interior para formar una devastadora explosión ígnea alrededor de ti. Haz un ataque de Magia de Fuego contra todas las criaturas a distancia media de ti que infligirá 2d8 + CAR daño Fuego al impactar además de una *quemadura leve*. Este ataque no puede ser detenido con Parada por criaturas adyacentes a ti además que todos los objetos inflamables en el área afectada saltarán en llamas.
 
-**Empoderar** (1 chi): Empleas este ataque como reacción al ser impactado por un ataque.
+**Empoderar** (1 chi): Empleas este hechizo como reacción al ser impactado por un ataque enemigo.
 
-**Serpiente de fuego** (1 acciones y 2 chi. Energía, Fuego, Concentración): Moldeas el fuego para formar una serpiente hecha de llamas que permanecerá a tu lado mientras te concentres en ella y atacará a tus enemigos. Como acción bonus puedes hacer que la serpiente se mueva volando un paso y ataque a un enemigo adyacente, el cual funciona igual que a un *toque abrasador*. En lugar de atacar con la serpiente puedes emplearla para entrar en *posición defensiva* sin la necesidad de gastar acciones.
+### Maestro de las llamas
 
-**Pirotecnia** (2 acciones y 2 chi. Energía, Fuego, Área): Aumentas la fuerza de las llamas del campo de batalla. Mientras esta habilidad permanezca activa todos los hechizos de magia de fuego lanzados en el área tendrán ventaja. Además  todas las criaturas adyacentes a un muro de llamas sufrirán un ataque de *toque abrasador* y dichos espacios se llenarán de un humo espeso que otorga *ocultamiento*, el cual permanecerá durante una ronda. Esta habilidad permanecerá en el campo de batalla mientras mantengas la concentración en ella.
+*Fuego, Ambiental*
 
-**Invocar elementales de fuego** (3 acciones y 2 chi. Energía, Fuego, Invocación): Invoca a un elemental de fuego que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
+**Coste**: 3 acciones y 2 chi
+
+**Tamaño**: Radio medio
+
+**Duración**: Concentración
+
+Entras en un estado de concentración para volverte uno con las llamas, mejorando enormemente tu capacidad ofensiva y obteniendo la capacidad de controlar el fuego en el campo de batalla. Mientras este hechizo permanezca activo recibirás Ventaja en todos tus tiros relacionados con Magia de Fuego y aumentarás el nivel de temperatura en un espacio a distancia media de ti por un paso. 
+
+Este efecto permanecerá activo hasta que pierdas la concentración u otro hechizo Ambiental de una magnitud similar lo anule. Al principio de tu turno puedes apagar o fortalecer las llamas en un espacio a distancia media de ti como acción bonus. Dicho espacio debe tener material inflamable y contar con las adecuadas condiciones ambientales. 
+
+Si escoges fortalecer las llamas provocarás ahí el mismo efecto que Muro de Llamas contra todas las criaturas que se encuentren en él o intenten entrar ahí mientras que si escoges apagarlas eliminarás un Muro de Llamas en dicho espacio. Si el fuego está siendo manipulado por otra criatura debes superarla en un tiro de Magia de Fuego para tener éxito.
+
+**Empoderar** (1 chi): Reduce el coste del siguiente hechizo de magia de fuego que lances por una acción (mínimo 0). No puedes empoderar el mismo hechizo más de una vez.
+
+### Invocar elemental de fuego
+
+*Fuego, Invocación*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Duración**: Una hora
+
+Animas una masa de furiosas llamas para crear un guerrero elemental que luchará a tu lado contra tus enemigos. Este hechizo invocará un Elemental de Fuego de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
+
+**Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 
 Tus hechizos de Fuego de Rango II reducen su coste en acciones por 1 (mínimo 1). 
 
-**Danza de las llamas** (3 AP y 2 chi. Defensivo, Energía, Fuego, Concentración): Te rodeas de una cantidad de llamas danzantes igual a tu rango – 1, las cuales permanecerán a tu lado mientras mantengas la concentración. Puedes sacrificar una llama como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *llamarada* contra un objetivo a distancia media (puedes sacrificar dos para que el ataque sea de *látigo flamígero* o *bola de fuego*). Además, toda criatura que empiece su turno o entre en una posición adyacente a ti sufrirá los efectos de un *muro de fuego* (podrá tirar DES para evitarlo). 
+### Danza de las llamas
 
-**Torbellino de fuego** (2 AP y 2 chi. Energía, Fuego, Área, Concentración): Formas un torbellino de llamas furiosas que hará un ataque de *bola de fuego* contra todas las criaturas en un radio medio (grande si formas el torbellino en una posición afectada por *muro de llamas*) cuyas quemaduras son de un nivel superior. Si tienes activa la habilidad *serpiente de fuego* puedes manipular el torbellino en lugar de la serpiente, moviéndolo un paso como acción bonus y repitiendo el ataque contra todas las criaturas en su radio de efecto. Además, todo el espacio por el que pase saltará en llamas.
+*Fuego, Duradera, Defensiva*
 
-**Inmolación** (2 AP y 2 chi. Energía, Fuego, Área): Formas una explosión de fuego centrada en un punto que esté en llamas, haciendo un ataque contra todas las criaturas a distancia media que inflige 2d8 + CAR daño y una quemadura media (grave si reduce PV). Todos los objetivos que se encuentren a distancia corta del punto y se encuentren en un espacio en llamas no podrán defenderse de este ataque. (1 chi, 1/ataque) Tira un dado de daño adicional.
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Te conviertes en uno con las llamas, moldeándolas a tu alrededor para que sigan tus movimientos y te protejan de ataques enemigos. Este hechizo te otorga una cantidad de *contadores de escudo* igual a tu Rango y permanecerá activo hasta que pierdas la concentración o se te acaben los contadores. 
+
+Mientras este hechizo permanezca activo puedes emplear el fuego que te rodea para atacar a tus enemigos, pudiendo así hacer un ataque de *llamarada* una vez por ronda como acción bonus. Dado que este hechizo se sustenta con el fuego a tu alrededor recuperarás un *contador de escudo* al principio de tu turno si te encuentras en un lugar en llamas.
+
+**Empoderar** (1 chi): Recuperas un *contador de escudo* adicional en tu turno.
+
+### Torbellino de fuego
+
+*Fuego, Ataque, Área, Duradero*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Tamaño**: Cilindro pequeño
+
+**Efecto crítico:** Los objetivos afectados sufrirán una *quemadura media*
+
+**Duración**: Concentración
+
+Manipulas las llamas en la forma de un torbellino de fuego capaz de abrasar todo a tu paso. El torbellino emergerá de cualquier punto que alcances y al activarlo haz un ataque contra todas las criaturas en el área afectada que inflige 1d8 + CAR daño Fuego y una *quemadura leve* al impactar. El lugar afectado saltará en llamas, quemando todos los objetos inflamables y llenándolo de un efecto similar a un Muro de Llamas.
+
+El torbellino permanecerá en el campo de batalla hasta que pierdas la concentración. Mientras permanezca activo puedes emplear una acción para moverlo un paso en cualquier dirección, llenando todo el espacio por el que cruza con un Muro de Llamas. Todas las criaturas que se encuentren en la trayectoria del torbellino deben defenderse de nuevo contra este hechizo, sufriendo los mismos efectos al fallar.
+
+**Empoderar** (1 chi): Crea un torbellino adicional en un punto diferente que puedas alcanzar o aumenta el daño de un torbellino activo por 1d8 durante el resto del combate. No puedes tener más de tres torbellinos activos a la vez y el daño no puede ser superior a 3d8.
+
+### Inmolación
+
+*Fuego, Área*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera corta
+
+**Efecto crítico:** Los afectados sufren una *quemadura grave*
+
+**Duración:** Instantáneo
+
+Haz un ataque de Magia de Fuego contra todas las criaturas a distancia corta de un objetivo que alcances que inflige 3d8 + CAR daño Fuego y una *quemadura leve* al impactar. Si el objetivo se encuentra en llamas no podrá defenderse salvo con un tiro exitoso de CON frente a tu Magia de Fuego. Aquellos que tengan éxito en el tiro sufrirán la mitad de daño y este hechizo provocará que todos los objetos inflamables salten en llamas.
+
+**Empoderar** (1 chi): Lanza este hechizo contra un objetivo adicional o aumenta su alcan
 
 ## Rango V
 
@@ -173,6 +259,10 @@ En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier
 
 **Empoderar** (1 chi): Creas una bola de fuego adicional con este hechizo. No puedes crear más de tres bolas de fuego de esta manera.
 
+### Nube incendiaria
+
+### Rayo de plasma
+
 **Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe sufrirá 1d10 + rango daño fuego y deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto además de recibir un dado de daño adicional (esto eliminará automáticamente la nube).
 
 **Combustión espontánea** (1 AP y 3 chi. Energía, Fuego, A distancia): Una criatura adyacente a un espacio en llamas o que esté afectada por una quemadura sufre un ataque de *toque abrasador* modificado por tu CAR que provoca una quemadura grave que contará como un ataque sorpresa. Mientras que la criatura continúe afectada por la quemadura grave y se mantenga en tu campo de visión puedes hacer ataques de *toque abrasador* contra ella y toda criatura adyacente a su posición sin importar la distancia que os separe (aún podrá tirar DES para evitarlo)
@@ -180,6 +270,8 @@ En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier
 ## Rango VI
 
 Tus hechizos de Fuego de Rango IV reducen su coste en acciones por 1 (mínimo 1) además que todos ellos tratarán la resistencia al Fuego que tenga tu objetivo como si fuera un paso inferior.
+
+### Infierno abrasador
 
 **Infierno abrasador** (3 AP y 5 chi. Fuego, Ambiental): Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Esta habilidad activará los efectos de *pirotecnia* sobre el campo de batalla y mientras permanezca activa tus ataques de *bola de fuego* no te costarán chi. En la cuarta ronda tras la activación inicial todo el campo de batalla erupcionará en una colosal explosión flamígera, permitiéndote hacer un ataque de *lluvia de brasas* contra todos los tus enemigos con un dado de daño adicional. Esta habilidad no necesita tu concentración para sostenerse y puede ser contrarrestada por efectos ambie similares.
 

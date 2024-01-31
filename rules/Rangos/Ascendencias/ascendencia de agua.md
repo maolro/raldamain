@@ -27,7 +27,7 @@ Las influencias marinas se manifiestan en tu cuerpo, convirtiéndote en un híbr
 
 *Innata, Pasiva*
 
-Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipular el flujo de agua canalizando tu fuerza interior. Eres capaz de lanzar hechizos *neblina*, *torrente* y *agua de la vida* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia de Agua. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
+Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipular el flujo de agua canalizando tu fuerza interior. Eres capaz de lanzar hechizos *neblina*, *torrente* y *agua de la vida* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia de Agua. Este sobrecoste desaparecerá si obtienes por lo menos un rango en Magia de Agua.
 
 ##  Rango II
 
@@ -37,7 +37,7 @@ Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipu
 
 **Coste:** 1 chi o vigor
 
-Infundes uno de tus ataques con el poder del agua para incrementar notablemente su potencia. La siguiente vez que impactes con un ataque de cualquier tipo esta ronda puedes emplear un hechizo de Agua, Hielo o Sangre que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de Magia de agua en lugar del que emplearías normalmente en tu tiro de ataque.
+Infundes uno de tus ataques con el poder del agua para incrementar notablemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Agua, Hielo o Sangre que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de Magia de agua en lugar del que emplearías normalmente en tu tiro de ataque.
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
@@ -49,7 +49,7 @@ Has desarrollado un nuevo sentido similar al de los animales marinos que te perm
 
 ## Rango III 
 
-Aumenta tu estadística de SAB por 1. Eres capaz de emplear los hechizos Muro de agua y Ola chocante empleando vigor en lugar de chi.
+Eres capaz de emplear los hechizos Muro de agua y Ola chocante empleando vigor en lugar de chi.
 
 ### Forma fluida
 

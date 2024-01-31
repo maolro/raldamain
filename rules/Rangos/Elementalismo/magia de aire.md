@@ -166,7 +166,7 @@ Mientras este hechizo esté activo todos los hechizos de Aire se potencian, otor
 
 **Duración**: 1 hora 
 
-Concedes una semblanza de vida a una masa de vientos furiosos para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental del Aire de nivel 6 que luchará a tu lado hasta que sea destruido. 
+Concedes una semblanza de vida a una masa de vientos furiosos para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Aire de nivel 6 que luchará a tu lado hasta que sea destruido. 
 
 En rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia del Aire por encima de III. 
 
@@ -190,7 +190,7 @@ Todos tus hechizos de Aire de Rango II cuestan una acción menos para emplear (m
 
 **Duración**: Concentración
 
-Invocas la ira de los cielos en forma de un poderoso tornado. El tornado emergerá de cualquier punto que alcances y realizará un ataque contra todas las criaturas en el área de efecto que inflige 1d8 + SAB de daño contundente al impactar. Los objetivos impactados deberán tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire o quedarán *agarrados* por el tornado, elevándose un paso en el aire. Incluso si tienen éxito serán empujados un paso hacia atrás y quedarán *tropezados*.
+Invocas la ira de los cielos en forma de un poderoso tornado. El tornado emergerá de cualquier punto que alcances y realizará un ataque contra todas las criaturas en el área afectada que inflige 1d8 + SAB daño Contundente al impactar. Los objetivos impactados deberán tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire o quedarán *agarrados* por el tornado, elevándose un paso en el aire. Incluso si tienen éxito serán empujados un paso hacia atrás y quedarán *tropezados*.
 
 El tornado permanecerá en el campo de batalla hasta que pierdas la concentración. Mientras permanezca activo puedes gastar una acción para moverlo un paso en cualquier dirección. Las criaturas que comiencen su turno dentro del tornado o entren en su área de efecto en cualquier momento de la ronda deberán defenderse una vez más de este hechizo, sufriendo los mismos efectos al fallar. Las criaturas retenidas dentro del tornado sufrirán 1d8 + SAB daño contundente al comienzo de su turno. 
 
@@ -222,9 +222,9 @@ Los vientos formarán un aura protectora en torno a ti que te otorga una cantida
 
 **Duración**: Instantáneo
 
-Liberas una ráfaga de aire a presión capaz de partir la materia sólida por la mitad. Realiza un ataque de Aire contra todos los objetivos dentro de un cono mediano que inflige 2d8 + SAB de daño cortante al impactar y una *herida permanente leve*. Todo intento de Esquivar este ataque tendrá Desventaja y al impactar tu objetivo perderá un *contador de escudo* en el caso que los tenga.
+Liberas una ráfaga de aire a presión capaz de partir la materia sólida por la mitad. Haz un ataque de Aire contra todos los objetivos en de un cono mediano que inflige 2d8 + SAB de daño cortante al impactar y una *herida permanente leve*. Todo intento de Esquivar este ataque tendrá Desventaja y al impactar tu objetivo perderá un *contador de escudo* en el caso que los tenga.
 
-**Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi.
+**Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi. Debes seguir pagando su coste en acciones.
 
 ## Rango V
 
