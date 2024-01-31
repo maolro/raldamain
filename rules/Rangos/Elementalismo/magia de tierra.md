@@ -17,29 +17,91 @@ Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote 
 
 Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incrementa tu reserva de chi por un valor igual a tu rango + 2.
 
-### Pedrada
+### Lanzamiento de roca 
 
-### Crear obstáculo
+*Tierra, Ataque, A Distancia, Físico* 
+
+**Coste**: 2 acciones
+
+**Alcance**: Medio 
+
+**Efecto crítico:** Tu objetivo sufre una *herida permanente leve* y cae *tropezado*
+
+**Duración**: Instantáneo 
+
+Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alcanzar. Haz un ataque de Magia de Tierra contra un objetivo a distancia media que inflige 1d6 + SAB daño Contundente al impactar. Este ataque ignora resistencias a ataques a distancia debido a su gran volumen. 
+
+**Mejora** (1 chi): Haz un ataque adicional contra un objetivo diferente que puedas alcanzar. 
+
+### Crear obstáculo 
+
+*Tierra, Físico, Ambiental* 
+
+**Coste**: 2 acciones 
+
+**Alcance**: Medio 
+
+**Duración**: Instantáneo 
+
+Manipulas la tierra en el campo de batalla para crear un terreno favorable para ti. Forma una barrera o trinchera de tamaño pequeño en cualquier punto en tu alcance que permanecerá en el campo de batalla hasta que sea destruida. Estos obstáculos otorgarán los efectos de *cubierta* a todas las criaturas adyacentes a ellos y solo pueden ser destruidos por ataques de área de magnitud igual o superior.
+
+**Mejora** (1 chi): Crea un obstáculo pequeño adicional en el campo de batalla como acción bonus o aumenta el tamaño de un obstáculo existente a mediano. 
 
 ### Terratemblor
 
-**Pedrada** (2 AP): Lanzas una piedra pequeña contra una criatura a distancia media, infligiendo 1d6 + SAB daño físico al impactar dependiendo del tipo de objeto utilizado. (1 chi) Ataca a un objetivo adicional.
+*Tierra, Físico, Maniobra* 
 
-**Crear obstáculo** (2 AP): Manipulas la tierra para controlar el campo de batalla, formando así un agujero o barrera pequeña en un espacio a distancia media de ti. La barrera otorgará *cubierta parcial* a las criaturas detrás de ella mientras que el agujero *tropezará* a las criaturas que pasen por encima de él (pueden tirar DES contra tu SAB para evitarlo)
+**Coste**: 2 acciones y 1 chi 
 
-**Terratemblor** (2 AP y 1 chi): Haz un ataque con magia de tierra contra todas las criaturas a distancia cercana de ti contra el cual solo podrán defenderse con FUE o DES. Aquellas que impactes quedarán *tropezadas* y sufrirán 1d6 daño de caída. Además, todo el terreno afectado pasará a ser *terreno difícil* y destruye todos los obstáculos pequeños. (1 chi) Aumenta el radio a medio
+**Tamaño**: Radio pequeño 
+
+**Duración**: Instantáneo 
+
+**Efecto crítico:** Los afectados sufren una *herida permanente leve* en la pierna y son empujados un paso 
+
+Golpeas el suelo con gran fuerza para generar un terratemblor. Todas las criaturas a distancia corta de ti que estén tocando el suelo deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Tierra o sufrirán 1d6 + SAB daño Contundente y caerán *tropezados*. El área afectada se convertirá en *terreno difícil* y todas las estructuras pequeñas en ella se desmoronarán. 
+
+**Mejora** (1 chi): Aumenta el radio de este hechizo a mediano.
 
 ## Rango II
 
 ### Muro de piedra
 
+*Tierra, Defensivo*
+
+**Coste:** 1 acción y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Línea media o esfera pequeña
+
+**Duración:** Hasta que sea destruido
+
+Formas un muro de roca sólida para protegerte de ataques enemigos. El muro surgirá desde cualquier punto a distancia media de ti y tomará la forma de una esfera pequeña o una línea mediana. Como barrera, tiene puntos de impacto iguales a tu Rango x 3 y resistencia física igual a tu Rango + 4, pero es vulnerable al daño sónico. Permanecerá en el campo de batalla hasta que se quede sin puntos de impacto y proporciona cobertura total a todas las criaturas al otro lado.
+
+Esta habilidad se puede utilizar de manera defensiva para protegerte a ti mismo o a un aliado de un ataque, reduciendo el daño que recibirías como si estuviera en el camino. Si intentas bloquear un ataque cuerpo a cuerpo, tu oponente debe tener éxito en una tirada para cruzar el muro o su ataque fallará. Para hacerlo, debes estar en posición defensiva y solo puedes crear un muro de esta manera una vez por ronda.
+
+**Mejora** (1 chi): El muro recupera todos sus puntos de impacto perdidos.
+
 ### Tierra viva
 
-### Moldear la tierra
+*Tierra, Ataque, Área, Físico*
 
-**Muro de piedra** (2 AP y 1 chi): Crea un muro de sólidas piedras con rango x 3 PV, DEF igual a tu rango + 2 y vulnerabilidad al daño sónico y contundente que otorgará cubierta completa a todas las criaturas tras él. Puedes crear el muro como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
+**Costo:** 2 acciones y 1 chi
 
-**Tierra viva** (2 AP y 1 chi): La tierra en un punto a distancia media de ti erupciona furiosamente, atacando a todas las criaturas en un radio corto a él. Esto funciona como un ataque de *pedrada* con un dado de daño adicional que convertirá el área de efecto en *terreno difícil*.
+**Alcance:** Medio
+
+**Tamaño:** Cilindro mediano
+
+**Duración:** Instantáneo
+
+**Efecto crítico:** Los objetivos afectados sufren una herida permanente leve y caen al suelo. Si son criaturas voladoras, caerán inmediatamente hacia el suelo.
+
+La tierra en un punto dentro del alcance entra en erupción furiosamente, atacando a todas las criaturas en un cilindro mediano centrado en él. Este ataque inflige 2d6 + SAB de daño contundente al impactar y transforma la tierra en un radio pequeño centrado en el punto en terreno difícil.
+
+Este ataque es especialmente efectivo contra criaturas voladoras, ya que puede derribarlas. Si dañas a una criatura voladora con este ataque, deben intentar una tirada de CON contra tu magia de tierra. En caso de fracaso, caerán inmediatamente del cielo, sufriendo el daño de caída adecuado y quedando en el suelo.
+
+**Mejora** (1 chi): Aumenta el tamaño de este ataque a un cilindro grande.
 
 **Moldear la tierra** (3 AP y 1 chi): Moldea una cantidad de tierra que ocupa un radio grande como desees, formando terreno difícil, barreras o fosos en las posiciones donde desees o eliminar esos mismos efectos del terreno. Al luchar en dicho terreno recibirás ventaja en todos tus tiros relacionados con magia de tierra. 
 

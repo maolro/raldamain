@@ -163,7 +163,7 @@ Mientras Controlar el Agua permanezca activo todos tus hechizos de Agua se poten
 
 **Duración**: Una hora
 
-Concedes una semblanza  de vida a una masa de aguas enfurecidas para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Agua de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
+Concedes una semblanza de vida a una masa de aguas enfurecidas para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Agua de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
 
 **Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 

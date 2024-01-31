@@ -1,6 +1,8 @@
 ---
 title: Tapetíes
 image: Tapeti.jpg
+regiones-predilectas: Thas-Tapet
+religiones-predilectas: Prisdevelianismo
 ---
 
 Astutos y engañosos los tapeties regatearan con cualquiera que busque negociar con ellos hasta el último Fiorin de cobre, empleando sus muchas frases ya practicadas y sus abundantes trucos escondidos bajo sus mangas. Pese a ello, toda nación importante que se precie del continente tiene al menos una o dos líneas de comercio dirigidas a Tash-tapet, ya que aunque con toda certeza al negociar con ellos cualquiera podría decir que ellos siempre saldrán ganando, su neutralidad y su buena capacidad para conseguir todo aquello que se les solicita los ha convertido en un servicio casi imprescindible para cualquiera que quiera mantenerse en la cima, ya sea de formas licitas o menos convencionales, ya que al contrario que sus vecinos el dinero nunca juzga al comprador.

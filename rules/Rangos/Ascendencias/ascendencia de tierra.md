@@ -25,11 +25,17 @@ Tienes una profunda conexión con la tierra que te permite moverte a través de 
 
 *Innata, Pasiva*
 
-Tu control sobre la tierra te permite moldearla como desees y notar su estado. Eres capaz de sentir todas las anomalías y características en la tierra a distancia corta de ti. Si conoces los hechizos Lanzamiento, Crear obstáculo y Terratemblor puedes lanzarlos pagando vigor en lugar de chi. En el caso que no los conozcas podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia de Tierra.
+Tu control sobre la tierra te permite moldearla como desees y notar su estado. Eres capaz de sentir todas las anomalías y características en la tierra a distancia corta de ti. Si conoces los hechizos *Lanzamiento*, *Crear obstáculo* y *Terratemblor* puedes lanzarlos pagando vigor en lugar de chi. 
+
+En el caso que no los conozcas podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia de Tierra. Este sobrecoste desaparecerá si obtienes por lo menos un rango en Magia de Tierra.
 
 ## Rango II
 
 Incrementa tu CON por 1.
+
+### Georradar
+
+### Puños de tierra
 
 **Puños de tierra** (1 chi): Durante esta ronda todos tus ataques de *artes marciales* y hechos con armas contundentes tiran un dado adicional de daño al impactar.
 

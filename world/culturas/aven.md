@@ -1,9 +1,11 @@
 ---
 title: Aven
 image: Aven.jpg
+regiones-predilectas: Isla de Sindhal, Arshalán
+religiones-predilectas: Ninguna
 ---
 
-Aislados en su isla cercana a la peninsula de Kimon los aven surcan los cielos como bovedas de conocimientos pasados, con cientos de historias y planos en su haber que a día de hoy sus vecinos no podrían creer que alguna vez hubieran existido. De esta manera los aven son considerados un pueblo pacifico y sabio, poco interesado en cualquier cosa que ocurra mas allá de los límites de su isla a menos que ellos mismos hayan alzado el vuelo hasta llegar allí. Pese a eso e incluso con sus muchos conocimientos ni ellos están excentos de dejarse llevar por la corriente de los tiempos, habiendose visto una vez mas involucrados en el plano político de la mano de Arshalan con tal de garantizar su seguridad, del mismo modo que ya hicieron en el pasado. 
+Aislados en sus pequeñas comunidades repartidas a lo largo del subcontinente de Kimon, los Aven dedican sus vidas a destapar conocimientos olvidados para alcanzar la cúspide del conocimiento. Sus vecinos les consideran un pueblo pacifico y sabio, poco interesado en cualquier cosa que ocurra mas allá de los límites de su isla a menos que ellos mismos hayan alzado el vuelo hasta llegar allí. Pese a eso e incluso con sus muchos conocimientos ni ellos están exentos de dejarse llevar por la corriente de los tiempos, habiéndose visto una vez mas involucrados en el plano político de la mano de Arshalan con tal de garantizar su seguridad, del mismo modo que ya hicieron en el pasado. 
 
 # Historia
 

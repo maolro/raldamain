@@ -25,9 +25,9 @@ El poder de las tormentas fluye por tus venas, otorgándote resistencias a sus e
 
 *Innata, Pasiva*
 
-Los vientos y las tormentas se someten a tu voluntad como hijo de los cielos. Eres capaz de lanzar todos los hechizos pertenecientes a magia de Aire o Tormenta con Rango I empleando vigor en lugar de chi. 
+Los vientos y las tormentas se someten a tu voluntad como hijo de los cielos. Eres capaz de lanzar todos los hechizos pertenecientes a magia de Aire o Tormenta con Rango I empleando vigor en lugar de chi. Si solo conoces hechizos pertenecientes a una de las dos categorías no aprenderás ningún hechizo adicional.
 
-En el caso que no conozcas ningún hechizo de estas categorías aprenderás dos hechizos de Rango I pertenecientes a estas que podrás lanzar pagando 1 vigor o chi adicional. Emplearás como bonificador la suma de tu SAB y tu Rango en Ascendencia de Aire. Quedan exentos de este sobrecoste los hechizos que ya cuesten chi para ser lanzados.
+En el caso que no conozcas ningún hechizo perteneciente a ambas categorías aprenderás dos hechizos de Rango I de Aire o Tormenta que podrás lanzar pagando 1 vigor o chi adicional. Emplearás como bonificador la suma de tu SAB y tu Rango en Ascendencia de Aire. Este sobrecoste desaparecerá si aprendes ese mismo hechizo por algún otro medio.
 
 ## Rango II
 

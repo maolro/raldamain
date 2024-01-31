@@ -15,23 +15,47 @@ Ascendencia Boreal tiene las siguientes reglas fundamentales que se aplican a cu
 
 ## Rango I
 
-Obtienes Resistencia 2 a daño físico y aumenta tu reserva de chi por 2 + rango.
+### Adaptación al frío
 
-**Adaptación al frío:** Recibes resistencia igual a tu rango + 1 al daño frío e inmunidad a los efectos del frío extremo.
+*Innata, Pasiva*
 
-**Crioquinesia:** Como acción bonus puedes congelar una cantidad pequeña de agua o mover una porción de hielo del mismo tamaño hasta un paso en cualquier dirección. (1 chi, 1/turno) Una criatura adyacente sin resistencia al frío está *fatigada* durante una ronda.
+Tu vínculo con las tierras árcticas te hace sobrehumanamente resistente al frío. Obtienes Resistencia al Frío además de Inmunidad al frío extremo y a efectos críticos ocasionados por habilidades pertenecientes a dicha categoría. Adicionalmente, los elementales y espíritus de hielo no serán naturalmente hostiles hacia ti.
+
+### Crioquinesia
+
+*Innata, Pasiva*
+
+El frío y el hielo obedecen tu llamada, pudiendo así invocar su poder para congelar a tus enemigos. Eres capaz de lanzar los hechizos *rayo gélido*, *espina de hielo* y *bajar temperaturas* empleando vigor en lugar de chi. Puedes también convertir una porción pequeña de agua en hielo con solo tocarla o moldear una porción de hielo de ese mismo tamaño para que adopte la forma que desees.
+
+En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia Boreal. Este sobrecoste desaparecerá si obtienes por lo menos un rango en Magia de Hielo.
 
 ## Rango II
 
-Incrementa tu CON por 1.
+Incrementa tu estadística de CON y su limitador por 1.
 
-**Canalizar el frío** (1 chi): Durante una ronda tus ataques físicos infligen +1d6 daño frío y *fatigan* durante una ronda si reducen PV. 
+### Canalizar el frío
 
-**Caminante del hielo:** No sufres penalizaciones al caminar sobre el hielo y puedes ver sin problemas a través de niebla y tormentas de nieve. Puedes también caminar sobre el agua si está calmada, congelándola a tu paso. 
+*Innata, Mejora*
+
+**Coste:** 1 chi o vigor
+
+Infundes uno de tus ataques con el poder del hielo para congelar a los enemigos que toques. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Hielo que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de Magia de Hielo en lugar del que emplearías normalmente en tu tiro de ataque.
+
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
+
+### Caminante del hielo
+
+*Innata, Pasiva*
+
+Eres capaz de emplear la magia de hielo como una extensión de tu cuerpo, pudiendo así superar las dificultades propias de terrenos árticos. No sufres penalizaciones al caminar sobre el hielo y puedes ver sin problemas en lugares afectados por niebla o tormentas de nieve. Obtienes también la capacidad de caminar encima del agua si esta se encuentra calmada y hace un clima adecuado, congelándola a tu paso con tu magia.
 
 ## Rango III
 
-Aumenta tu resistencia a daño físico por 1.
+Eres capaz de emplear los hechizos Muro de hielo y Neblina polar empleando vigor en lugar de chi.
+
+### Manto nevado
+
+### Corazón de hielo
 
 **Manto nevado** (2 acciones y 1 chi): Te rodeas de vientos gélidos que te otorgan *ocultamiento* además de ventaja en tus tiros de sigilo. Toda criatura que empiece su turno o entre en un espacio a distancia corta de ti sufrirá 2 daño frío obligatorio. (1 chi, 1/turno) Todas las criaturas a una distancia corta de ti sufren 2 daño frío y estás protegido por un *muro de viento* durante una ronda. Esta habilidad dura rango + 1 rondas o hasta que pierdas la concentración.
 
@@ -39,7 +63,11 @@ Aumenta tu resistencia a daño físico por 1.
 
 ## Rango IV
 
-Incrementa tu DES por 1. Puedes sumar tu rango en magia de hielo a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
+Incrementa tu estadística de SAB y su limitador por 1.
+
+### Caminante del viento
+
+### Sentido de vida
 
 **Caminante del viento** (1 chi): Durante esta ronda recibes velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar. Esta habilidad no cuesta chi si te encuentras en un entorno afectado por una tormenta de nieve.
 
@@ -47,7 +75,9 @@ Incrementa tu DES por 1. Puedes sumar tu rango en magia de hielo a todos tus tir
 
 ## Rango V
 
-Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 2.
+### Forma gaseosa
+
+### Campeón de los espíritus
 
 **Sentido de vida:** Eres capaz de sentir la posición de todos los seres vivos con sangre cálida a una distancia lejana de ti. También puedes detectar la posición de todas las criaturas con *ascendencia boreal* y determinar su poder aproximado.
 
@@ -55,7 +85,9 @@ Obtienes Resistencia 3 a daño físico y Resistencia mágica igual a tu Rango - 
 
 ## Rango VI
 
-Incrementa tu CAR por 1
+Incrementa tu estadística de DES y su limitador por 1.
+
+### Forma elemental
 
 **Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de hielo te obedecen y el daño frío pasará a ser frío estigio, el cual atravesará resistencias. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al frío como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
 

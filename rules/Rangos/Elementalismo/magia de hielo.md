@@ -8,7 +8,7 @@ Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estad
 # Reglas fundamentales
 
 - **Reserva de Chi**: Tu rango de magia de Hielo mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal**: Tu modificador de magia de Hielo será igual a la suma de tu estadística de Sabidy tu rango en esta habilidad.
+- **Estadística principal**: Tu modificador de magia de Hielo será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad.
 - **Parada mágica:** Eres capaz de usar magia de Hielo para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Hielo para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades de tipo Fuego, Agua, Frío, Naturaleza y Ácido, sustituyendo el talento que usarías normalmente.
 
 # Rangos
@@ -19,19 +19,49 @@ Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estad
 
 *Hielo, Ataque, A distancia, Físico*
 
+**Coste:** 1 acción
+
+**Alcance:** Medio
+
+**Duración:** Instantáneo
+
+Moldeas el hielo en la forma de una afilada espina para atacar a tus enemigos. Haz un ataque contra un objetivo a distancia media que inflige 1d6 + SAB daño Perforante al impactar. Puedes emplear esta habilidad de manera alternativa para moldear una porción de hielo para que adopte la forma de un arma de tu elección con la cual puedes atacar en futuras rondas. 
+
+El daño base y acciones requeridas para atacar con esa arma son iguales a las normales salvo la diferencia que puedes modificar su daño base con tu estadística de SAB. Dado que el hielo es un material frágil el arma quedará *rota* si llega a impactar una superficie sólida y se destruirá por completo si es impactada por fuego.
+
+**Empoderar** (1 chi): Ataca a un objetivo adicional con este hechizo o elimina el efecto de estado *roto* de un arma de hielo que tengas. Puedes también empoderar para crear un arma de hielo como acción bonus.
+
 ### Rayo gélido
 
 *Hielo, Ataque, A distancia, Frío*
+
+**Coste:** 1 acción
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu objetivo quedará *ralentizado* durante una ronda.
+
+**Duración:** Instantáneo
+
+Formas un gélido viento capaz de congelar a tus enemigos. Haz un ataque de Magia de Hielo contra un enemigo a distancia media que infligirá 1d6 + Rango daño Frío impactar. Este ataque apagará todas las fuentes de calor que tenga encima tu enemigo además que congelará el agua cercana a él.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo
 
 ### Bajar temperaturas
 
 *Hielo, Ambiental, Frío*
 
-**Espina de hielo** (2 AP): Haz un ataque con magia de hielo contra un objetivo a distancia media que inflige 1d6 + CAR daño físico al impactar. (1 chi) Afecta a un objetivo adicional.
+**Coste:** 2 acciones y 1 chi
 
-**Rayo gélido** (2 AP): Haz un ataque con magia de hielo contra un objetivo a distancia media que inflige 1d6 + rango daño frío y *fatiga* al reducir PV. (1 chi) Afecta a un objetivo adicional.
+**Tamaño:** Esfera media
 
-**Bajar temperaturas** (2 AP y 1 chi): Reduces las temperaturas a una distancia media, haciendo que el terreno se enfríe sobrenaturalmente durante el resto del combate. Si ya te encuentras en un entorno frío este quedará afectado por frío extremo, congelando toda el agua en el área y provocando que todas las criaturas en él sin protección contra el frío tengan que tirar CON frente a tu magia de hielo o estarán *fatigadas* hasta que entren en calor. 
+**Duración:** Concentración
+
+Reduces sobrenaturalmente la temperatura a tu alrededor para que el campo de batalla se enfríe sobrenaturalmente. Al lanzar este hechizo todo el espacio en un radio medio contará como un entorno frío para los propósitos de tus hechizos, permitiéndote lanzarlos con normalidad sin preocuparte por el ambiente en el que te encuentres. Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado por otro hechizo de Fuego con magnitud igual o superior.
+
+La fuerza de este hechizo variará según el entorno en el que lo lances. Si lanzas este hechizo en un entorno afectado por calor extremo podrás evitar sus efectos nocivos pero seguirás recibiendo penalizadores a tus hechizos. En el caso que lo lances en un entorno que ya este frío este pasará a estar afectado por frío extremo, forzando a tus enemigos a tener éxito en un tiro de CON frente a tu Magia de Hielo o quedarán *fatigados* durante una ronda o hasta que entren en calor. Si tus enemigos permanecen en el área afectada de este hechizo deberán repetir el tiro al principio de su turno o el efecto de estado seguirá activo.
+
+**Empoderar** (1 chi): Durante esta ronda el hechizo provocará los mismos efectos como si el entorno fuera un paso más frío. De esta manera convertirá un entorno normal en uno frío y uno frío en uno afectado por frío extremo.
 
 ## Rango II
 
@@ -39,41 +69,105 @@ Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estad
 
 *Hielo, Defensiva, Duradera*
 
+**Coste:** 1 acción y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña o Línea mediana
+
+**Duración:** Instantánea
+
+Creas un muro de hielo sólido para protegerte de ataques enemigos. El muro surgirá desde cualquier punto a distancia media y tomará la forma de una esfera pequeña o una línea mediana. Como muro tiene puntos de vida iguales a tu Rango x 3 y DEF igual a tu rango + 2. Tiene también Inmunidad al daño Frío a costa que tiene Vulnerabilidad al daño Contundente y Fuego (los ataques de área particularmente grandes quedan exentos de esta inmunidad). El muro permanecerá en el campo de batalla hasta que pierda todos sus PV.
+
+El muro proporcionará *cubierta completa* a todas las criaturas al otro lado de él, protegiéndolas de ataques a distancia. Al tratarse de una barrera sólida este no puede ser cruzado hasta que sea destruido. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de hielo y luego afectarán a sus objetivos escogidos. 
+
+Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en el camino. A diferencia de otros muros este te protegerá contra ataques cuerpo a cuerpo con normalidad. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
+
+**Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. Esta habilidad solo se puede utilizar si el campo de batalla tiene una cantidad adecuada de plantas.
+
 ### Neblina polar
 
 *Hielo, Gaseosa, Duradera*
+
+**Coste:** 2 acciones y 1 chi
+
+**Tamaño:** Esfera mediana
+
+**Duración:** Concentración
+
+Formas una niebla sobrenaturalmente fría que dificultará la visión y empoderará tus habilidades de hielo. La niebla ocupará una esfera mediana centrada en ti y mientras permanezca activa todas las criaturas en ella quedarán *cegadas* y recibirán *ocultamiento* frente a ataques enemigos. La neblina permanecerá activa hasta que pierdas la concentración o sea disipada por un hechizo de igual magnitud.
+
+Mientras permanezcas en la niebla tu magia mejorará notablemente, recibiendo así Ventaja en todos tus tiros relacionados con Magia de Hielo. Si creas la niebla en un lugar afectado por Bajar Temperaturas todos los hechizos ajenos lanzados en ella pertenecientes a las categorías Fuego, Agua y Naturaleza recibirán Desventaja.
+
+**Empoderar** (1 chi): El siguiente hechizo de Hielo que lances reducirá su coste de acciones por 1. Esto solo puede usarse una vez por hechizo.
 
 ### Hielo resbalante
 
 *Hielo, Ambiental*
 
-**Muro de hielo** (2 AP y 1 chi): Formas una barrera media hecha de hielo para protegerte de ataques2 otorgándote *cubierta completa* contra ellos. El muro tendrá PV igual a tu rango x 3, DEF igual a tu rango y vulnerabilidad al daño fuego y contundente. Puedes usar esta habilidad como reacción una vez por turno si te encuentras en *posición defensiva*.
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio medio
+
+**Efecto crítico:** Los afectados sufren una *herida permanente leve* en la pierna
+
+**Duración:** Hasta que sea destruido
+
+Cubres el suelo con una capa de hielo resbalante para tropezar a tus enemigos. Todos los enemigos que se encuentren en un radio medio centrado en un punto que puedas alcanzar deben tener éxito en un tiro de Acrobacias o Heroísmo o caen *tropezados* de inmediato y son empujados un paso en cualquier dirección.
+
+El hielo se mantendrá en el campo de batalla hasta que se derrita, lo cual ocurrirá si es impactado por un efecto de Fuego o está en un lugar con calor extremo. Mientras permanezca activo toda criatura que entre en un lugar afectado por él o intente salir de ahí deben repetir el tiro contra tu hechizo o quedarán *tropezados* de nuevo además de desplazarse un paso en cualquier dirección.
+
+**Empoderar** (1 chi): Al moverte un paso puedes crear este efecto como acción bonus en el lugar que ocupaste antes, llenando así un espacio de radio pequeño con hielo resbalante.
 
 **Neblina polar** (2 AP y 1 chi): Creas una niebla sobrenaturalmente fría que llenará un espacio de radio medio. La niebla otorga *ocultamiento* a todas las criaturas que se encuentren en ella y cada criatura sin protección contra el frío que entre en la niebla o empiece su turno ahí sufrirá 2 daño frío. Todos tus ataques de magia de hielo tienen ventaja contra criaturas en la neblina, y esta permanecerá hasta que pasen rango + 1 rondas o pierdas la concentración
 
-**Hielo resbalante** (2 AP y 1 chi): Llenas todo el suelo en un radio medio con una capa de hielo resbalante, el cual contará como terreno difícil y provocará que cada criatura que sea empujada en ella o intente realizar una carga deba tener éxito en un tiro de DES o FUE contra tu magia de hielo o caerá *tropezada.* 
-
 ## Rango III
 
-*Espina de hielo, bajar temperaturas* y *rayo gélido* cuestan -1 AP. *Espina de hielo* y *rayo gélido* aumentan su daño base a 1d8.
+Todos tus hechizos de Hielo sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
 
 ### Tormenta de nieve
 
 *Hielo, Ataque, Área, Físico, Frío*
 
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Cono mediano
+
+**Efecto crítico:** Los afectados quedarán *paralizados* durante una ronda
+
+**Duración:** Instantáneo
+
+Manipulas el clima para formar una tormenta de granizo y fríos vientos para acabar con tus enemigos. Haz un ataque contra todos los objetivos en un cono mediano que inflige 1d8 + SAB daño Cortante y 1d8 + SAB daño Frío. Este ataque congelará todo el suelo en el área afectada, convirtiéndolo en *terreno difícil*. Si te encuentras en un entorno frío o afectado por una tormenta de nieve este hechizo tendrá alcance mediano.
+
+**Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi. Debes seguir pagando su coste en acciones.
+
 ### Congelación rápida
 
-*Hielo, Ataque, A distancia, Frío, Agarre*
+*Hielo, Mejora, Agarre, Frío*
+
+**Coste:** 2 chi
+
+**Efecto crítico:** Tu objetivo quedará *paralizado* hasta que se libere
+
+**Duración:** Hasta que el afectado escape
+
+Aumentas la intensidad de tu magia para congelar a tus enemigos en el acto. Al impactar a un enemigo con un ataque que inflija daño Frío puedes forzarle a tener éxito en un tiro de Heroísmo o Destrozar frente a tu Magia de Hielo o su cuerpo quedará parcialmente congelado, recibiendo el efecto de estado *enredado*. No necesitas concentrarte para congelar a enemigos de esta manera.
+
+Un enemigo congelado de esta manera podrá repetir el tiro al principio de su turno para intentar liberarse. Si se encuentra en un entorno frío el hielo empezará a provocarle los efectos de hipotermia, forzándole a realizar un tiro de CON al principio de su turno o sufrirá los efectos de un veneno de DES con gravedad igual a tu Magia de Hielo. La hipotermia es una Aflicción con el rasgo Frío y solo podrá curarse si el afectado permanece una ronda en un lugar con la cantidad adecuada de calor, lo cual lo reducirá su nivel por un .
+
+**Empoderar** (1 chi): Afecta a un enemigo adicional con este hechizo.
 
 ### Invocar elemental de hielo
 
 *Hielo, Invocación*
 
-**Tormenta de nieve** (3 AP y 2 chi): Haz un ataque contra todas las criaturas en un cilindro horizontal de radio medio que al impactar infligirá daño contundente igual al de una *espina de hielo* y daño frío igual a *rayo gélido.* Toda el área afectada pasará a ser terreno difícil el cual permanecerá activo mientras que el entorno sea frío. Si te encuentras en un entorno afectado por una tormenta de nieve el cilindro puede ser vertical. 
+Invocas un espíritu de las tierras árcticas para que combata junto a ti y acabe con tus enemigos. Este hechizo invocará un Elemental de Hielo de nivel 6 que luchará a tu lado hasta que sea destruido. 
 
-**Congelación rápida** (1 AP y 2 chi): Haz un ataque de *rayo gélido* modificado por tu CAR en lugar del rango que al impactar *enredará* al objetivo (lo *agarra* si reduce PV). Si afectas a un objetivo en el agua no podrá defenderse de este ataque. (1 chi) Afecta a un objetivo adicional
+En rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia del Hielo por encima de III. 
 
-**Invocar elemental de hielo** (3 AP y 2 chi):  Invoca a un elemental de hielo que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
+**Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV 
 

@@ -95,7 +95,7 @@ Empleas la telekinesia para reponer tejidos rotos y coagular rápidamente tus he
 
 *Telequinesia, Maniobra*
 
-**Coste:** 1 accy 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Medio
 
