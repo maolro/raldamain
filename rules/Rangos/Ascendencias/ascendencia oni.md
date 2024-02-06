@@ -17,6 +17,10 @@ Ascendencia Oni tiene las siguientes reglas fundamentales que se aplican a cualq
 
 Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por rango + 2.
 
+### Furia del oni
+
+### Sanación rápida
+
 **Furia del oni:** Liberas la energía de tu oni interior para mejorar tus capacidades físicas o mentales. Al activar esta habilidad recibes ventaja en todos tus tiros relacionados con una estadística de tu elección y recibes resistencia igual a tu rango + 1 a efectos mentales y miedo. Puedes permanecer en dicho estado durante una cantidad de rondas al día igual a tu rango + 2, y puedes extenderlo una ronda adicional reduciendo tu cordura por 2 o pagando 1 chi. En el caso que tu cordura sea reducida a 0 tu oni interior tomará control de tu cuerpo hasta que caigas inconsciente o pase un día. Las mejoras de furia de oni se acumulan con aquellas otorgadas por rangos en [ira](https://raldamain.com/rules/Rangos/Combate/ira.html), pero si entras en *ira* y *furia del oni* a la vez acabarás *exhausto* cuando estas terminen.
 
 **Sanación rápida:** Te recuperas de tus heridas con mayor rapidez. Al realizar un descanso corto te sanas todos tus PV y eres capaz de sanarte tus heridas permanentes en un descanso largo sin necesidad de atención medica, reduciendo el nivel de todas ellas por un paso. (1 chi) Reduce una herida permanente que te afecte por un paso.
@@ -24,6 +28,10 @@ Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por rango + 2.
 ## Rango II
 
 Incrementa tu CAR por 1.
+
+### Foco elemental
+
+### Tercer ojo
 
 **Foco elemental:** Tu espíritu está asociado con un elemento de tu elección. Tienes resistencia igual a tu rango de ascendencia + 1 contra un tipo de daño determinado relacionado con él. (1 chi) Tus ataques físicos infligen +1d6 daño del elemento escogido durante una ronda.
 

@@ -297,7 +297,7 @@ Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta
 
 Todos tus hechizos de Agua de Rango IV cuestan una acción menos para emplear (mínimo 1).
 
-### Furia del Océano
+### Furia del océano
 
 *Agua, Ambiental*
 
