@@ -19,7 +19,7 @@ Estilo de Escudos tiene las siguientes reglas fundamentales que se aplican a cua
 
 *Escudo, Ataque, Físico, Cuerpo a cuerpo*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Cuerpo a cuerpo
 
@@ -43,21 +43,49 @@ Tu escudo también te proporcionará cierta cantidad de *contadores de escudo* i
 
 **Coste:** 1 vigor
 
-Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*.
+Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. Si tienes otras habilidades relacionadas por cargas podrás activarlas también al hacer una Carga con escudo sin la 
 
 ## Rango II
 
-### Forma defensiva
+### Defensa absoluta
+
+*Escudo, Defensiva, Duradera*
+
+**Coste:** 1 acción y 1 vigor
+
+**Duración:** Concentración
+
+Entras en un estado de defensa absoluta donde te centras única y exclusivamente en resistir todo ataque dirigido hacia ti. Mientras dicho estado permanezca activo recibirás Ventaja en todos tus tiros de relacionados con las estadísticas de Fuerza y Constitución además de la capacidad de entrar en *posición defensiva* una vez por ronda como acción bonus. Defensa absoluta permanecerá activa hasta que pierdas la concentración o seas desarmado de tu escudo.
+
+Mantener la Defensa absoluta requiere que te muevas de manera lenta y cuidadosa, recibiendo así Desventaja en todos tus relacionados con tu estadística de Destreza y en tiros de ataques además que no puedes moverte más de un paso por ronda. Si te encuentras en Defensa absoluta no podrás entrar en Ira ni emplear los efectos de habilidades relacionados con ella, abandonando así dicho estado de inmediato en el caso que lo hicieras.
 
 ### Detener ataque
 
-**Forma defensiva:** Entras en un estado de defensa absoluta durante rango + 2 rondas. Mientras estés en este estado tu fuerza y constitución aumentarán por 2 y tendrás los beneficios de *posición defensiva* sin la necesidad de gastar acciones, sin embargo tu velocidad de movimiento se reducirá por 1. Cuando *forma defensiva* termine estarás *fatigado*, impidiendo que vuelvas a usar la habilidad hasta que te recuperes.
+*Escudo, Reacción*
 
-**Defensa mejorada:** Al fracasar en un tiro defensivo podrás escoger reducir el valor defensivo del escudo por 1 para tener éxito automático en tu tiro de parada (redúcelo por 2 en el caso que intentes detener un golpe crítico). Debes estar en *posición defensiva* para usar esta habilidad.
+**Coste:** 1 vigor
+
+Eres capaz de emplear tu escudo con tal soltura que puedes detener ataques enemigos sin preocuparte que este se rompa. Al activar esta habilidad puedes recuperar inmediatamente una cantidad de *contadores de escudo* igual a la mitad de tu Rango (redondeando hacia abajo) empleados para detener un ataque enemigo. Esta habilidad solo puede activarse si te encuentras en *posición defensiva*.
+
+### Reposición forzosa
+
+*Escudo, Reacción*
+
+**Coste:** 1 vigor
+
+Empleas tu escudo para manipular los movimientos de un enemigo para que acabe en una posición desfavorable. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador en Armas pesadas o se mueve un paso en la dirección que escojas y saldrá inmediatamente de *posición defensiva*. Si ya tienes esta habilidad puedes moverte tú también un paso en cualquier dirección cada vez que la actives sin abandonar Defensa absoluta.
 
 ## Rango III
 
-*Golpe de escudo* ahora cuesta 1 AP
+### Mente custodiada
+
+Inmunidad al miedo y efectos mentales si te encuentras en forma defensiva
+
+### Carga poderosa
+
+Daño mejorado y aturde al impactar
+
+### Combinar técnicas
 
 **Carga poderosa:** Al realizar una carga el daño de *golpe de escudo* aumentará en 1d6 y al impactar el objetivo tendrá que tirar constitución frente a tu fuerza o pasará a estar aturdido durante una ronda. Podrás además atacar a cada objetivo en tu camino con el escudo al moverte. 
 
@@ -65,35 +93,22 @@ Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte
 
 ## Rango IV
 
+### Mantener posición
+
+Resistencia a maniobras y puede hacer ataques contra enemigos que entren en su área amenazada
+
 **Guardián:** Al entrar en *posición defensiva* reduce todo el daño recibido por 2 y recibes inmunidad a flanqueo y ataques sorpresa.
 
 **Mantener posición:** La primera vez que una criatura entre en un espacio adyacente a ti mientras te encuentres en posición defensiva podrás hacerle un ataque de oportunidad con tu escudo y detenerlo al impactar.
 
 ## Rango V
 
+
+
 **Maestría con escudo:** Al entrar en *forma defensiva* tu fuerza y constitución aumentarán por 4 en lugar de por 2. Mientras permanezcas en *forma defensiva* también podrás repetir un tiro defensivo por ronda sumándole una ventaja
 
 **Detener hechizos:** Puedes bloquear ataques de área con tu escudo y no sufrirás daño obligatorio si los bloqueas de forma exitosa. Si te encuentras en forma defensiva los aliados adyacentes también se beneficiaran de esta habilidad.
 
-## Armas
+## Rango VI
 
-Los escudos permiten defenderse al portador contra toda clase de ataques, sin embargo estos no están atados a ninguna estadística en particular y en lugar usarán un valor conocido como *valor defensivo*. El valor defensivo representa cuanto protege un escudo a su portador y este se sumará al rango a la hora de determinar los tiros. 
-
-- **Escudo básico:** Valor defensivo 4. 1d6+fuerza daño contundente. Llevarlo dará un penalizador de -1 a la destreza.
-- **Escudo ligero:** Valor defensivo 3. 1d4+fuerza daño contundente. 
-- **Escudo de torre:** Valor defensivo 6. 1d8+fuerza daño contundente. Llevarlo dará un penalizador de -2 a la destreza e impedirá esquivar al portador. Requiere 4 o mas FUE para usarse.
-
-## Armadura natural (Variante)
-
-En lugar de un escudo tu piel misma es capaz de detener ataques como si fuera uno. Si escoges esta variante no podrás hacer ataques con el escudo pero al ser tu piel la que bloqueará ataques no necesitas cogerlo con tus manos y empleará siempre tu valor defensivo en el tiro. Para determinar el valor defensivo deberás escoger un grado de armadura natural como se especifica a continuación. Como regla general lo más resistente que sea el armadura natural mayor penalizador otorgará a la destreza.
-
-| Grado | Valor defensivo | Penalizador a la DES |
-| ----- | --------------- | -------------------- |
-| 1     | 4               | 0                    |
-| 2     | 5               | -1                   |
-| 3     | 6               | -2                   |
-| 4     | 7               | -3                   |
-| 5     | 8               | -4                   |
-| 6     | 9               | -5                   |
-
-Esta variante solo puede escogerse si tus características fisiológicas lo permiten. En general no puede obtenerse por humanos.
+### Maestría con escudos

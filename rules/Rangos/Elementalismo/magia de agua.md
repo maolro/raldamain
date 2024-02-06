@@ -227,7 +227,7 @@ Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni
 
 Atacas a todas las criaturas en una línea mediana con un chorro de agua a alta presión capaz de perforar barreras e incluso armaduras. Haz un ataque de Magia de Agua contra todas las criaturas en una línea mediana que inflige 2d8 + SAB daño Contundente y una *herida permanente leve* al impactar.
 
-Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además,  la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa que tengan estructuras sólidas y criaturas elementales.
+Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además, la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa que tengan estructuras sólidas y criaturas elementales.
 
 **Empoderar** (1 chi): Cuando lances este hechizo haz un segundo ataque que afecta a todos los objetivos en una dirección diferente.
 
@@ -303,11 +303,9 @@ Todos tus hechizos de Agua de Rango IV cuestan una acción menos para emplear (m
 
 **Coste**: 3 acciones y 5 chi
 
-**Alcance**: Personal
+**Tamaño**: Radio grande
 
-**Tamaño**: Campo de batalla
-
-**Duración**: Siete asaltos
+**Duración**: Siete rondas
 
 Desatas una gran tormenta en el campo de batalla, enfureciendo tanto al mar como al cielo. Este hechizo inicialmente afectará al campo de batalla de manera similar a las Lluvias torrenciales, pero su poder aumentará rápidamente con el paso del tiempo. Este efecto permanecerá en el campo de batalla durante siete rondas o hasta que sea disipado por otro hechizo Ambiental de igual o mayor magnitud.
 

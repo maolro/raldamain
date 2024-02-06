@@ -10,11 +10,17 @@ title: Estilo de la serpiente
 
 ### Combate furtivo
 
-Añade DES al daño si flanquea con aliados o el objetivo tiene desventaja defendiéndose.
+*Serpiente, Marcial, Pasiva*
+
+Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemigos para herirles con mayor gravedad. Cada vez que realices un ataque combinado con dos o más aliados o impactes a un enemigo incapaz de defenderse aumentarás el nivel de todas las *heridas permanentes* infligidas por un paso.
 
 ### Mordisco de la serpiente
 
-Provoca heridas permanentes en el lugar de impacto y +1d6 daño.
+*Marcial, Mejora*
+
+**Coste:** 1 acción
+
+Apuntas a uno de los puntos de presión de tu objetivo para provocarle graves heridas. Tu siguiente ataque marcial aumentará su daño base por 1d6 y provocarár una *herida permanente leve* al impactar en la parte del cuerpo que escojas. Si el ataque ya es capaz de provocar una *herida permanente* esta aumentará su nivel por un paso y afectará a la parte del cuerpo escogida. 
 
 ## Rango II
 
@@ -28,7 +34,7 @@ Objetivo hace un tiro de habilidad con arma o es desarmado y sufre herida perman
 
 ### Golpe desorientante
 
-Objetivo tira SAB o está *embotado* esta ronda
+Objetivo tira SAB o está *cegado* esta ronda
 
 ## Rango III
 

@@ -12,9 +12,13 @@ Estilo de Boxeo tiene las siguientes reglas fundamentales que se aplican a cualq
 
 ## Rango I
 
-### Puñetazo fuerte
+### Golpe
 
 ## Rango II
+
+### Puño aturdidor
+
+
 
 ## Rango III
 
