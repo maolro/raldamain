@@ -55,7 +55,11 @@ Eres capaz de emplear los hechizos Muro de hielo y Neblina polar empleando vigor
 
 ### Manto nevado
 
-### Corazón de hielo
+Otorga Ventaja en tiros de ataque y Magia de Hielo además de un aura de frío
+
+### Caminante del viento
+
+Puede volar en tormentas de nieve 
 
 **Manto nevado** (2 acciones y 1 chi): Te rodeas de vientos gélidos que te otorgan *ocultamiento* además de ventaja en tus tiros de sigilo. Toda criatura que empiece su turno o entre en un espacio a distancia corta de ti sufrirá 2 daño frío obligatorio. (1 chi, 1/turno) Todas las criaturas a una distancia corta de ti sufren 2 daño frío y estás protegido por un *muro de viento* durante una ronda. Esta habilidad dura rango + 1 rondas o hasta que pierdas la concentración.
 
@@ -65,9 +69,13 @@ Eres capaz de emplear los hechizos Muro de hielo y Neblina polar empleando vigor
 
 Incrementa tu estadística de SAB y su limitador por 1.
 
-### Caminante del viento
+### Corazón de hielo
+
+Mayor resistencia al daño y Resistencia a Aflicciones
 
 ### Sentido de vida
+
+Puede sentir seres vivos en el área afectada
 
 **Caminante del viento** (1 chi): Durante esta ronda recibes velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar. Esta habilidad no cuesta chi si te encuentras en un entorno afectado por una tormenta de nieve.
 

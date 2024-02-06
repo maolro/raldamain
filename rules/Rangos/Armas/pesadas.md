@@ -73,7 +73,7 @@ Hundes tu espada en la carne de un enemigo para infligirle graves heridas. Tras 
 
 **Coste**: 1 vigor
 
-Extiendes tu alcance para obligar a un enemigo que esquiva a reposicionarse, dejándolo temporalmente vulnerable a ataques adicionales. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador en Armas pesadas o se mueve un paso en la dirección que elijas y saldrá inmediatamente de *posición defensiva*.  
+Extiendes tu alcance para obligar a un enemigo que esquiva a reposicionarse, dejándolo temporalmente vulnerable a ataques adicionales. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador en Armas pesadas o se mueve un paso en la dirección que escojas y saldrá inmediatamente de *posición defensiva*.  
 
 ## Rango III
 

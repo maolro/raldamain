@@ -261,11 +261,43 @@ En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier
 
 ### Nube incendiaria
 
+*Fuego, Gaseosa, Duradera, Aflicción*
+
+**Coste:** 2 acciones y 3 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña
+
+**Efecto crítico:** Los afectados aumentarán el nivel del veneno de CON por un paso
+
+**Duración:** Concentración
+
+Formas una tóxica nube de humo que abrasará los pulmones de tus enemigos. La nube de humo emergerá de un punto en llamas a distancia media de ti llenará una esfera de tamaño pequeño, expandiéndose alrededor de esquinas y paredes. El espacio ocupado por la nube otorgará *ocultamiento* a todas las criaturas para ataques tanto exteriores como interiores. La nube permanecerá en el campo de batalla hasta que pierdas la concentración o se disipe. 
+
+Aquellos que permanezcan demasiado tiempo dentro del humo empezarán a sufrir efectos adversos. Las criaturas que empiecen su turno dentro de la nube o entren en ella deberán tener éxito en un tiro de CON frente a tu Magia de Fuego. Si fracasan sufrirán 1d10 + CAR daño Fuego (la mitad daño en caso de éxito), una *quemadura leve* además que el humo invadirá sus pulmones, provocándoles el mismo efecto que un veneno de CON con gravedad igual a tu Magia de Fuego. Dicho veneno aumentará su nivel por un paso si una criatura que ya ha sido afectada por él fracasa su tiro.
+
+**Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o incrementa el daño de este hechizo a 2d10 + CAR durante esta ronda.
+
 ### Rayo de plasma
 
-**Nube incendiaria** (3 AP y 3 chi. Energía, Fuego, Área, Aflicción, Concentración): Formas una nube de humo nocivo que llenará un radio medio, otorgando *ocultamiento* a todas las criaturas en el área. Todas las criaturas en el área de la nube deberán tirar CON frente a tu magia de fuego o sufrirán 1d10 + CAR daño fuego, una quemadura leve (media si reduce PV) y quedarán *enfermados* durante una ronda. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe sufrirá 1d10 + rango daño fuego y deberá tener éxito en un tiro de CON frente a tu CAR o el humo invadirá sus pulmones, provocándole un efecto equivalente a un veneno de CON. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Además, si haces un ataque con magia de fuego contra la nube puedes detonarla para que el ataque afecte a cada criatura en su área de efecto además de recibir un dado de daño adicional (esto eliminará automáticamente la nube).
+*Fuego, Ataque, A distancia*
 
-**Combustión espontánea** (1 AP y 3 chi. Energía, Fuego, A distancia): Una criatura adyacente a un espacio en llamas o que esté afectada por una quemadura sufre un ataque de *toque abrasador* modificado por tu CAR que provoca una quemadura grave que contará como un ataque sorpresa. Mientras que la criatura continúe afectada por la quemadura grave y se mantenga en tu campo de visión puedes hacer ataques de *toque abrasador* contra ella y toda criatura adyacente a su posición sin importar la distancia que os separe (aún podrá tirar DES para evitarlo)
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Lejano
+
+**Efecto crítico:** El afectado sufre una *herida permanente grave*
+
+**Duración:** Concentración
+
+Concentras una enorme cantidad de energía en el fuego para trasnformarlo en plasma, creando un letal rayo que pulverizará hasta a los más poderosos. Haz un ataque contra un objetivo a distancia lejana de ti que infligirá 3d10 + CAR daño Radiante al impactar además de provocar una *herida permanente media*.
+
+Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además, la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa que tengan estructuras sólidas y criaturas elementales.
+
+Eres capaz de generar plasma de manera sostenida empleando tu fuerza interior. Si mantienes la concentración en este hechizo puedes volver a emplearlo la ronda siguiente sin la necesidad de pagar chi. Debes seguir pagando una acción y no podrás usarlo más de una vez por ronda de esta manera. 
+
+**Empoderar** (1 chi): Afecta un objetivo adicional con este hechizo. Si te estás concentrando en este hechizo y logras detener un Rayo de plasma lanzado contra ti por un enemigo puedes empoderar para redirigirlo contra él, haciendo así un ataque de oportunidad.
 
 ## Rango VI
 
@@ -273,7 +305,17 @@ Tus hechizos de Fuego de Rango IV reducen su coste en acciones por 1 (mínimo 1)
 
 ### Infierno abrasador
 
-**Infierno abrasador** (3 AP y 5 chi. Fuego, Ambiental): Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Esta habilidad activará los efectos de *pirotecnia* sobre el campo de batalla y mientras permanezca activa tus ataques de *bola de fuego* no te costarán chi. En la cuarta ronda tras la activación inicial todo el campo de batalla erupcionará en una colosal explosión flamígera, permitiéndote hacer un ataque de *lluvia de brasas* contra todos los tus enemigos con un dado de daño adicional. Esta habilidad no necesita tu concentración para sostenerse y puede ser contrarrestada por efectos ambie similares.
+*Fuego, Ambiental*
+
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño**: Radio grande
+
+**Duración**: Siete rondas
+
+Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Al activar esta habilidad provocarás los efectos de Pirotecnia en el campo de batalla además que se llenará de calor extremo, disipando todos los efectos de Frío que de rango inferior que estén activos. Este efecto permanecerá en el campo de batalla durante cuatro rondas o hasta que sea disipado por otro hechizo Ambiental de igual o mayor magnitud.
+
+Mientras este hechizo permanezca en el campo de batalla todos los hechizos de Fuego con Rango II o inferior no te costarán chi para ser lanzados, requiriendo únicamente el pago en acciones. Además, en cualquier momento a partir de la cuarta ronda puedes hacer que todo el campo erupcione en una devastadora explosión flamígera permitiéndote lanzar el hechizo Inmolación contra todos tus enemigos en un radio grande. Dicho hechizo infligirá un dado de daño adicional y no costará chi ni acciones para ser lanzado. Al causar la explosión este hechizo acabará de inmediato.
 
 # Elemental de fuego 
 
