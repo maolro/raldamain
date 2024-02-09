@@ -35,11 +35,15 @@ Incrementa tu CON por 1.
 
 ### Georradar
 
+*Tierra, Pasiva*
+
+Has desarrollado un sentido especial que te permite detectar las vibraciones a tu alrededor. Recibes vista a ciegas en un radio medio, permitiéndote detectar la posición de todas las criaturas que estén en contacto con la tierra. Dada tu capacidad de predecir vibraciones obtienes también Ventaja en todos tus tiros de Averiguar intenciones hechos contra criaturas en contacto con la tierra además que no puedes ser sorprendido.
+
 ### Puños de tierra
 
-**Puños de tierra** (1 chi): Durante esta ronda todos tus ataques de *artes marciales* y hechos con armas contundentes tiran un dado adicional de daño al impactar.
+*Tierra, Mejora*
 
-**Georradar**: Tienes vista a ciegas en un radio medio, permitiéndote detectar la posición de todas las criaturas en contacto con la tierra. Recibes también ventaja en todos tus tiros de *averiguar intenciones* hechos contra criaturas en contacto con la tierra.
+Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
 
 ## Rango III 
 
