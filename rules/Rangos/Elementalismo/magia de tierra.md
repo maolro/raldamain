@@ -103,11 +103,25 @@ Este ataque es especialmente efectivo contra criaturas voladoras, ya que puede d
 
 **Mejora** (1 chi): Aumenta el tamaño de este ataque a un cilindro grande.
 
-**Moldear la tierra** (3 AP y 1 chi): Moldea una cantidad de tierra que ocupa un radio grande como desees, formando terreno difícil, barreras o fosos en las posiciones donde desees o eliminar esos mismos efectos del terreno. Al luchar en dicho terreno recibirás ventaja en todos tus tiros relacionados con magia de tierra. 
+### Moldear la tierra
+
+*Tierra, Ambiental*
+
+**Coste:** 2 acciones y 1 chi
+
+**Tamaño:** Radio grande
+
+**Duración:** Hasta que sea eliminado
+
+Formas una conexión con la tierra que te rodea para obtener la capacidad de moldearla a tu voluntad. Al lanzar este hechizo puedes crear o eliminar cualquier cantidad de obstáculos, barreras, *terreno difícil* o fosos en un radio grande, manipulando así el campo de batalla como desees. Las alteraciones al terreno permanecerán activas hasta que sean destruidas por otros efectos.
+
+La conexión con la tierra moldeada también reforzará tus habilidades mágicas. Mientras permanezcas en el terreno afectado y tus pies estén en contacto con la tierra recibirás Ventaja en todos tus tiros relacionados con magia de Tierra. Si llegas a perder esta ventaja no la recuperarás hasta que vuelvas a lanzar este hechizo.
+
+**Empoderar** (1 chi): Reduce el coste del siguiente hechizo de Tierra que lances por una acción (mínimo 0). Solo puedes empoderar de esta manera una vez por hechizo.
 
 ## Rango III
 
-Aumenta el daño base de *pedrada* a 1d8 y tus ataques de *pedrada*, *crear obstáculo* y *terratemblor* cuestan -1 AP
+Todos tus hechizos de Tierra sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
 
 ### Abrazo de la tierra
 

@@ -65,17 +65,57 @@ Tras ser creada puedes seguir atacando con la cuerda empleando una acción. Pued
 
 ### Nube de cuchillas
 
+*Metal, Ataque, Área, Físico, Duradero*
+
+**Coste**: 2 acciones y 1 chi
+
+**Alcance:** Medio 
+
+**Tamaño**: Esfera pequeña
+
+**Efecto crítico:** Los afectados sufren una *herida permanente leve* 
+
+**Duración**: Concentración 
+
+Manipulas magnéticamente una masa de afiladas cuchillas para formar una letal nube que herirá a todo enemigo en ella. Haz un ataque con magia de Metal contra todas las criaturas que se encuentren en una esfera pequeña a distancia media de ti que infligirá 2d6 + CAR daño Cortante al impactar. Tras atacar crearás una nube de cuchillas en dicha posición que se mantendrá hasta que pierdas la concentración.
+
+Mientras la nube permanezca activa puedes emplear una acción para moverla un paso en cualquier dirección y atacar a todas las criaturas que se encuentren ahí, pudiendo así repetir el ataque. Además, toda criatura que entre en un espacio afectado por la nube o empiece su turno ahí deberá defenderse de nuevo contra ella o sufrirá 1d6 + CAR daño Cortante (la mitad en caso de éxito). 
+
+**Empoderar** (1 chi): La nube aumenta su daño por 1d6 esta ronda. Para aumentarlo de esta manera debes tener una cantidad adecuada de cuchillas metálicas y no puedes empoderarla más de dos veces por ronda.
+
 ### Repulsión magnética
+
+*Metal, Duradero, Defensivo*
+
+**Coste:** 1 acción y 1 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Esfera pequeña
+
+**Duración:** Concentración
+
+Usas tu control del magnetismo para formar una fuerza capaz de repeler todos los metales que se acerquen a ti. Mientras este hechizo permanezca activo obtienes Resistencia contra ataques hechos con armas metálicas. Además, toda criatura con armadura metálica que se entre en el área afectada o se encuentre en ella deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Magia de Metal o será empujado fuera de él, impidiendo así que pueda entrar.
+
+Este hechizo puede ser empleado de manera alternativa para crear el campo magnético en torno a ti para defenderte de ataques. Crearlo de esta manera te costará una acción bonus si estás en *posición defensiva* y se moverá contigo, otorgándote sus beneficios para protegerte de ataques. 
+
+**Empoderar** (1 chi): Un ataque hecho con un arma metálica contra una criatura dentro del campo magnético fallará automáticamente. Puedes detener ataques de área con radio corto de esta manera y puedes pagar 1 chi adicional para aumentar el radio por un paso.
 
 ### Fortalecer metal
 
-**Nube de cuchillas** (2 acciones y 1 chi, Metal, Área, Físico, Concentración): Lanzas una gran cantidad de pequeñas cuchillas metálicas contra un objetivo que se encuentre a distancia media de ti, infligiéndole 1d6 + CAR daño cortante al impactar y aumenta la gravedad de todas las heridas permanentes provocadas por un paso si tiene armadura leve o inferior. Si mantienes la concentración en la nube esta permanecerá en el campo de batalla más tiempo, permitiéndote emplear una acción para moverla un paso en cualquier dirección y atacar a un objetivo que se encuentre ahí. (1 chi) La nube de cuchillas pasa a afectar un radio corto.
+*Metal, Ambiental*
 
-**Repulsión magnética** (2 acciones y 1 chi, Metal, Concentración, Defensiva): Usas tu control del magnetismo para formar una fuerza capaz de repeler todos los metales que se acerquen a ti, la cual permanecerá activa mientras mantengas la concentración en ella. Mientras este efecto permanezca activo los proyectiles metálicos son incapaces de atravesar el espacio afectado por él y toda criatura con armadura metálica que intente cruzarla deberá tener éxito en un tiro de salvación de FUE frente a tu magia de metal para poder pasar sin dificultades. 
+**Coste:** 2 acciones y 1 chi
 
-Si te encuentras en posición defensiva puedes emplear 1 chi para detener instantáneamente un ataque hecho por un proyectil o arma cuerpo a cuerpo hecha de metal. Esto afecta también a ataques de área hechos con objetos metálicos que tengan radio corto o inferior (paga 1 chi adicional para aumentar el radio por un paso).
+**Alcance:** Toque
 
-**Fortalecer metales** (3 acciones y 1 chi, Metal, Toque): Un arma o armadura que puedas tocar aumenta temporalmente su resistencia, recibiendo los beneficios de la mejora *material superior* durante el resto del combate (si escoges un arma a distancia modificarás a todos sus proyectiles). Para poder reforzar un objeto de esta manera necesitas la adecuada cantidad de fragmentos metálicos y no podrás afectar a metales que seas incapaces de moldear, como son algunos objetos mágicos o aquellos que estén hechos de materiales específicos (todo esto queda a elección del máster). (1 chi) Afecta a un objeto adicional con esta habilidad.
+**Duración:** Una hora
+
+Un arma o armadura que puedas tocar aumenta temporalmente su resistencia, recibiendo los beneficios de *material superior* durante una hora, aumentando así su daño base por un paso si se trata de un arma o su DEF por 2 si se trata de un armadura. 
+
+Para poder reforzar un objeto de esta manera necesitas la adecuada cantidad de fragmentos metálicos y no podrás afectar a metales que seas incapaz de moldear, como son algunos objetos mágicos o aquellos que estén hechos de materiales específicos.
+
+**Empoderar** (1 chi): Afecta un objeto metálico adicional que puedas tocar con este hechizo. 
 
 ## Rango III
 

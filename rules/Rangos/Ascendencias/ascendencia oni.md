@@ -19,23 +19,39 @@ Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por rango + 2.
 
 ### Furia del oni
 
-### Sanación rápida
+*Innata, Mejora*
 
-**Furia del oni:** Liberas la energía de tu oni interior para mejorar tus capacidades físicas o mentales. Al activar esta habilidad recibes ventaja en todos tus tiros relacionados con una estadística de tu elección y recibes resistencia igual a tu rango + 1 a efectos mentales y miedo. Puedes permanecer en dicho estado durante una cantidad de rondas al día igual a tu rango + 2, y puedes extenderlo una ronda adicional reduciendo tu cordura por 2 o pagando 1 chi. En el caso que tu cordura sea reducida a 0 tu oni interior tomará control de tu cuerpo hasta que caigas inconsciente o pase un día. Las mejoras de furia de oni se acumulan con aquellas otorgadas por rangos en [ira](https://raldamain.com/rules/Rangos/Combate/ira.html), pero si entras en *ira* y *furia del oni* a la vez acabarás *exhausto* cuando estas terminen.
+Liberas la energía de tu oni interior para mejorar tus capacidades físicas o mentales. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con dos estadísticas de tu elección además de aumentar tu DEF por un valor igual a tu Rango + 1. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
 
-**Sanación rápida:** Te recuperas de tus heridas con mayor rapidez. Al realizar un descanso corto te sanas todos tus PV y eres capaz de sanarte tus heridas permanentes en un descanso largo sin necesidad de atención medica, reduciendo el nivel de todas ellas por un paso. (1 chi) Reduce una herida permanente que te afecte por un paso.
-
-## Rango II
-
-Incrementa tu CAR por 1.
+Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede provocar que el espíritu oscuro en tu interior tome control de tu cuerpo. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Furia abisal. Si llegaras a perder toda tu cordura pasarán inmediatamente a Furia del Oni y perderás control de tu personaje durante un día, comportándote como un oni y siendo un peligro tanto para amigos como enemigos.
 
 ### Foco elemental
 
+*Innata, Pasiva*
+
+Tu espíritu está asociado con un elemento de tu elección. Recibes Resistencia contra un elemento a tu elección entre Fuego, Agua, Hielo, Tormenta, Necrótico o Ácido además de inmunidad a los efectos críticos provocados por hechizos pertenecientes a dicha categoría. El poder elemental del oni te otorga también la capacidad de lanzar dos hechizos de Rango I empleando vigor en lugar de chi pertenecientes a la misma categoría que el elemento escogido.
+
+## Rango II
+
+Incrementa tu estadística de CAR y su limitador por 1.
+
+### Sanación rápida
+
+*Innata, Pasiva*
+
+Tu espíritu oscuro interior te otorga la capacidad de sanar tus heridas con mayor rapidez. Al realizar un descanso corto te sanas todos tus PV y al realizar un descanso largo te recuperarás de todas tus *heridas permanentes* que no sean graves o críticas sin necesidad de atención médica.
+
+**Empoderar** (1 chi o vigor): Reduce el nivel de una *herida permanente* que te afecte por un paso.
+
 ### Tercer ojo
 
-**Foco elemental:** Tu espíritu está asociado con un elemento de tu elección. Tienes resistencia igual a tu rango de ascendencia + 1 contra un tipo de daño determinado relacionado con él. (1 chi) Tus ataques físicos infligen +1d6 daño del elemento escogido durante una ronda.
+*Innata, Pasiva*
 
-**Tercer ojo:** Tienes además un tercer ojo en la frente, el cual puedes abrir y cerrar como acción bonus. Mientras que tu tercer ojo esté abierto tienes visión a oscuras a una distancia media y puedes ver a través de tu elemento sin dificultades como si tuvieses [georradar](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20tierra.html#rango-ii), [visión ígnea](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20fuego.html#rango-ii) o [visión árctica](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20boreal.html#rango-ii).
+**Coste:** 1 chi o vigor
+
+**Duración:** 1 ronda
+
+Obtienes la capacidad de abrir un tercer ojo en la frente para obtener nuevos sentidos y reforzar tus habilidades mágicas. Mientras que tu tercer ojo esté abierto puedes detectar la posición de todos los seres vivos a distancia media y una vez por ronda puedes lanzar un hechizo elemental como acción bonus. El ojo se cerrará al final de tu turno salvo que te encuentres en Furia del Oni.
 
 ## Rango III
 

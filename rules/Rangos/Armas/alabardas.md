@@ -103,6 +103,10 @@ Atacas a un enemigo con la parte trasera de tu arma para descolocar sus defensas
 
 Hacer un ataque con una alabarda te cuesta una acción menos.
 
+
+
+### Combinar técnicas
+
 **Flanqueador experto:** Añade +DES al daño al atacar a un enemigo que esté adyacente a uno de tus aliados en tu alcance. Puedes usar tu estadística de destreza como bonificador para tiros de ataque sustituyendo a la fuerza.
 
 **Reposicionar**: Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.

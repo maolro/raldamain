@@ -101,7 +101,7 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 Infundes las plantas en el campo de batalla con energía vital para acelerar su crecimiento. Todas las plantas en un radio grande se volverán más grandes y densas, transformando el campo de batalla en *terreno difícil*. Este efecto durará una hora y mientras permanezca activo todos los hechizos de magia de Naturaleza lanzados en el área afectada reciben Ventaja y aumentan su alcance por un paso. Este efecto solo puede ser destruido por hechizos de Área o Ambientales de magnitud similar o superior.
 
-**Empoderar** (1 chi): El siguiente hechizo de Naturaleza que lances reduce su coste de acciones en 1. Solo puedes empoderar de esta manera una vez por hechizo.
+**Empoderar** (1 chi): El siguiente hechizo de Naturaleza que lances reduce su coste de acciones en 1 (mínimo 0). Solo puedes empoderar de esta manera una vez por hechizo.
 
 ### Drenar magia
 
