@@ -5,26 +5,86 @@ category: Ciencia
 
 Tienes amplios conocimientos sobre como funcionan los conductos de chi dentro de las maquinas que te rodean y tienes las habilidades suficientes para modificar su funcionamiento. Según aumentes tu experiencia serás capaz de reforzar sistemas de forma que sean inaccesibles o por lo contrario, invadir cualquier sistema que caiga en tus manos.
 
+# Reglas fundamentales
+
+- **Estadística principal**: Tu modificador de Sabotaje será igual a la suma de tu estadística de Inteligencia y tu rango en esta habilidad.
+
+# Rangos
+
 ## Rango I
 
-Añade tu rango a todos tus tiros relacionados con sabotaje.
+### Sobrecarga
 
-**Sobrecarga** (2 acciones) Empleando 2 acciones puedes alterar los conductos de chi de una máquina o un objeto. Si tienes éxito en el tiro contra una dificultad escogida por el máster el objeto dejará de funcionar adecuadamente, quedando deshabilitado si se trata de un glifo o otorgando desventaja a su portador en todos los tiros si se trata de un arma. En el caso que afectes a una máquina inte0ligente esta sufrirá 1d4 + INT daño de cordura si tienes éxito en tu tiro. Para emplear esta acción debes a distancia corta de dicho objeto y ser capaz de detectarlo con la habilidad *percibir información*. Esta habilidad solo puede usarse una cantidad de veces por combate igual a tu rango + 2. 
+*Sabotaje, Tecnología*
 
-**Percibir información**: Conoces como fabricar un Detector del flujo, un implante customizado que puedes enganchar a una parte de tu cuerpo que te permite detectar todos los aparatos que funcionen con chi en un área de distancia media. Si un objeto activa un efecto mágico presientes cuando este es usado y puedes notar la categoría de magia arcana con la cual se asocia. Mientras tu Detector del flujo permanezca activo no puedes ser sorprendido por trampas mágicas. 
+**Coste:** 2 acciones y 1 chi
 
-**Traspasar sistema** (3 acciones): Eres capaz de cruzar las defensas de un sistema operativo para acceder la información que aguarda. Empleando 3 acciones puedes hacer un tiro de Sabotaje para lograr acceso a un sistema adyacente a ti, tirando contra el nivel de seguridad que tenga. Si tienes éxito logras entrar en el interior de dicho sistema, conociendo la información superficial de este y los códigos de acceso. En el caso que el sistema tenga contramedidas deberás tener éxito en un tiro adicional de sabotaje para evitar los efectos de estas, activándolas de inmediato en el caso que fracases.
+**Alcance:** Corto
+
+**Efecto crítico:** El objeto queda deshabilitado hasta que sea reparado. Si afectas a un constructo este caerá *inconsciente* de inmediato.
+
+**Duración:** Permanente
+
+Alteras los conductos de chi de una máquina o un objeto a distancia corta de ti. Si tienes éxito en el tiro contra una dificultad escogida por el DJ según la naturaleza de este mismo el objetivo dejará de funcionar adecuadamente, quedando deshabilitado si se trata de un glifo u otorgando Desventaja a su portador en todos los tiros si se trata de un arma hasta que sea reparada.
+
+Esta técnica puede ser especialmente letal contra máquinas inteligentes y constructos al perjudicar su funcionamiento mismo. Una máquina inteligente se defenderá usando su INT y en caso de éxito reducirá su Cordura por un valor igual a tu INT + 2 y quedará *confundida* durante una ronda. Si redujeras la cordura del afectado a 0 este dejará de funcionar, cayendo *inconsciente* hasta que sea reparado. Solo puedes afectar a objetivos que puedas detectar usando Percibir información y los efectos de esta técnica traspasarán las Resistencias e Inmunidades que tengan los constructos.
+
+### Percibir información
+
+*Sabotaje, Tecnología, Pasiva*
+
+Conoces como fabricar un Detector del flujo, un implante customizado que puedes enganchar a una parte de tu cuerpo que te permite detectar los cambios a los flujos de chi. Toda criatura con dicho implante es capaz de detectar la posición y propiedades de todos los objetos mágicos en un radio medio, impidiendo así que pueda ser sorprendida por trampas mágicas. Fabricar e implantar un objeto de esta categoría requiere la tecnología y recursos adecuados para ello, lo cual queda a decisión del DJ.
+
+### Traspasar sistema
+
+*Sabotaje, Tecnología*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Instantáneo
+
+Eres capaz de cruzar las defensas de un sistema operativo para acceder la información que aguarda. Al activar esta técnica haz un tiro de Sabotaje contra el nivel de seguridad de un sistema adyacente a ti. Si tienes éxito logras entrar en el interior de dicho sistema, conociendo la información superficial de este y los códigos de acceso. 
+
+Para traspasar las defensas de un sistema necesitas las herramientas adecuadas para poder entrar en él. En el caso que el sistema tenga contramedidas deberás tener éxito en un tiro adicional de Sabotaje para evitar los efectos de estas, activándolas de inmediato en el caso que fracases.
+
+**Empoderar** (1 chi): Repite un tiro de Sabotaje realizado con esta técnica y te quedas con el resultado que más te convenga.
 
 ## Rango II
 
-**Instalar contramedida** (proyecto) Gracias a tu conocimiento sobre el sabotaje sabes cómo detener sus infiltraciones. Empleando un día de trabajo y 1 crédito puedes instalar una de las siguientes contramedidas en un objeto mágico o sistema operativo. Un objeto no puede tener más contramedidas instaladas que tu rango de Sabotaje:
+### Instalar contramedida
 
-- *Alarma*: El objeto te enviará un mensaje de aviso si este sufre los efectos de *traspasar sistema* o *Sobrecarga*. Al aplicar esta contramedida a un sistema operativo puedes hacer que en el caso de alarma este active una máquina o una trampa de tu elección.
-- *Disrupción recíproca:* Cuando el sistema u objeto sufra los efectos de Traspasar o Sobrecarga este enviará un pulso disruptivo al usuario que intentó infiltrarlo, dañando el sistema usado para la infiltración como si este fuese afectado por Sobrecarga.
-- *Cierre*: En el caso que un usuario intente entrar repetidamente en el sistema de forma no autorizada este se cerrará a cualquier intento de entrada, suspendiendo parte de sus funciones para evitar la infiltración. El cierre durará un número de tiempo escogido por ti (normalmente de 10 minutos a una hora) y mientras dure el sistema no puede ser afectado por *traspasar* a costa de hacerlo completamente inaccesible.
-- *Borrar datos:* El sistema operativo borrará automáticamente determinados datos confidenciales si es traspasado o alguien intenta entrar de forma no autorizada un número determinado de veces. Estos datos pueden ser recuperados por ti si empleas 8 horas de trabajo reparando el sistema.
+*Sabotaje, Tecnología*
 
-**Alterar órdenes** (2 acciones) Al infiltrarte en un sistema puedes manipular su código para hacerlo susceptible a tus órdenes. Utilizar *alterar órdenes* te cuesta 2 acciones y para ello debes hacer un tiro de sabotaje contra el valor de seguridad de tu objetivo. En el caso que tengas éxito puedes causar que esta obedezca una orden simple o altere su comportamiento de una manera leve (esto funciona dentro de los límites de [*sugestión*](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-ii)). 
+Gracias a tu conocimiento sobre el sabotaje sabes cómo detener sus infiltraciones. Empleando un día de trabajo además de la cantidad adecuada de materiales y chi puedes instalar una de las siguientes contramedidas en un objeto mágico o sistema operativo. Un objeto no puede tener más contramedidas instaladas que tu rango de Sabotaje. Algunos ejemplos de contramedidas son las siguientes:
+
+- **Alarma**: El objeto te enviará un mensaje de aviso si este sufre los efectos de Traspasar sistema o Sobrecarga. Al aplicar esta contramedida a un sistema operativo puedes hacer que en el caso de alarma este active una máquina o una trampa de tu elección.
+- **Disrupción recíproca:** Cuando el sistema u objeto sufra los efectos de Traspasar sistema o Sobrecarga este enviará un pulso disruptivo al usuario que intentó infiltrarlo, dañando el sistema usado para la infiltración como si este fuese afectado por Sobrecarga.
+- **Cierre**: En el caso que un usuario intente entrar repetidamente en el sistema de forma no autorizada este se cerrará a cualquier intento de entrada, suspendiendo parte de sus funciones para evitar la infiltración. El cierre durará un número de tiempo escogido por ti (normalmente de 10 minutos a una hora) y mientras dure el sistema no puede ser afectado por Traspasar a costa de hacerlo completamente inaccesible.
+- **Borrar datos:** El sistema operativo borrará automáticamente determinados datos confidenciales si es traspasado o alguien intenta entrar de forma no autorizada un número determinado de veces. Estos datos pueden ser recuperados por ti si empleas 8 horas de trabajo reparando el sistema.
+
+### Alterar órdenes
+
+*Sabotaje, Tecnología*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Efecto crítico:** Tu condicionamiento es especialmente efectivo, permitiéndote convencer a tu objetivo que tome una acción que típicamente no haría.
+
+**Duración:** Instantáneo
+
+Al infiltrarte en un sistema puedes manipular su código para hacerlo susceptible a tus órdenes. Haz un tiro de Sabotaje contra el valor de seguridad de un sistema en el que hayas entrado o un constructo a distancia media de ti. En el caso que tengas éxito puedes causar que esta obedezca una orden simple o altere su comportamiento de una manera leve, funcionando de la misma manera que el hechizo Sugestión. 
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con esta técnica
+
+### Tecnomancia
+
+*Sabotaje, Tecnología, Pasiva*
+
+Tu conocimiento de la magia arcana y la tecnología te permite combinar ambas para fabricar todo tipo de objetos útiles. Al obtener este atributo aprendes dos hechizos de Magia Arcana de Rango I que puedes lanzar empleando tu reserva de chi y usando tu modificador de Sabotaje para todos los tiros relacionados con ellos. Además, empleando una cantidad adecuada de recursos y trabajo puedes fabricar objetos tecnológicos asociados con los hechizos aprendidos con este rango.
 
 ## Rango III
 

@@ -22,35 +22,60 @@ Atacas a un enemigo adyacente con un poderoso puñetazo o patada. Si eres un hum
 
 En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos.
 
-### Patada poderosa
+### Movimientos sutiles
 
-*Marcial, Dragón, Mejora*
+*Dragón, Pasiva*
 
-**Coste:** 1 vigor
+Mueves tu cuerpo cada vez que detienes un ataque enemigo para volverte más difícil de impactar. Al defenderte de un ataque enemigo usando Parada puedes hacer también un tiro de Esquiva y quedarte con el resultado que más te convenga. Esto te permite también usar habilidades pertenecientes a Reflejos para en tus tiros de Parada. 
 
+En el caso que ya poseas esta habilidad por Alabardas o Duelo puedes hacer también un tiro de Parada con esa arma y quedarte con el resultado que más te convenga. Al igual que con Reflejos esto te permite emplear habilidades defensivas pertenecientes a dichos Rangos al defenderte con Parada Marcial.
 
+### Arte de la lucha
 
-### Secuencia de ataques
+*Dragón, Marcial, Mejora*
 
-*Marcial, Dragón, Pasiva*
+Tu constante práctica de formas marciales te otorga la capacidad de emplear varias técnicas novedosas. Al activar esta habilidad puedes hacer una maniobra de combate como acción bonus, mejorando el ataque que acabas de hacer. Solo puedes activar una maniobra por ataque y puedes crear técnicas propias si lo permite el DJ. Estos son algunos ejemplos de maniobras que puedes realizar.
 
-La fuerza de tus ataques mejora con cada golpe consecutivo que haces contra un mismo enemigo. Cada vez que hagas un ataque Marcial contra el mismo objetivo en una misma ronda aumentarás tu tiro de ataque y tu daño base por 1 contra él. Todos los bonificadores obtenidos por esta habilidad se perderán si tu enemigo se aleja de ti o te hace un contrataque.
+- **Paso rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
+- **Al suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo Dragón o caerá *tropezado*. 
+- **Cambio repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
+- **Desarme:** Tu objetivo debe tener éxito en un tiro de arma contra tu modificador de Estilo Dragón o el objeto que lleve en una mano caerá de inmediato al suelo.
 
 ## Rango II
 
 ### Patada desequilibrante
 
-### Golpe aturdidor
+*Marcial, Dragón, Mejora*
+
+**Coste:** 1 vigor
+
+Haces una ágil patada para desequilibrar a un enemigo y dejarlo vulnerable para tu siguiente ataque. Al impactar a un enemigo puedes forzarle a hacer un tiro de CON frente a tu Estilo Dragón o quedará *enfermado* durante el resto de la ronda y puedes hacerle un ataque de Golpe como acción bonus. No puedes emplear esta técnica contra el mismo objetivo más de una vez por ronda.
+
+### Asalto múltiple
 
 *Marcial, Dragón, Mejora*
 
 **Coste:** 1 vigor
 
-Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador en Armas pesadas o quedará *aturdido* durante una ronda. Si tu objetivo falla su tiro aumenta el bonificador de Secuencia de ataques como si realizaras un ataque adicional.
+Atacas con extraordinaria velocidad a todos los enemigos que te rodean antes que puedan reaccionar. Puedes atacar a cada criatura adyacente a ti con tu siguiente ataque Marcial sin provocar ataques de oportunidad o reacciones. A diferencia de otras habilidades similares cada objetivo atacado debe tirar por separado para defenderse y puedes mejorar los ataques que haces con otras técnicas de combate pagando la adecuada cantidad de vigor.
+
+### Reposicionar enemigo
+
+*Marcial, Dragón, Mejora*
+
+*Pesado, Mejora, Físico*
+
+**Coste**: 1 vigor
+
+Golpeas a un enemigo de tal manera para que se mueva a una mala posición y quede vulnerable frente a tus ataques futuros. Un enemigo que acaba de esquivar uno de tus ataques Marciales debe tener éxito en un tiro de Acrobacias contra tu modificador de Estilo Dragón o se mueve un paso en la dirección que elijas y saldrá inmediatamente de *posición defensiva*.  
 
 ## Rango IV
 
-### Golpe del cielo y la tierra
+### Romper ladrillos
+
+### Patada salto alta
+
+### Combinar técnicas
 
 ## Rango V
 

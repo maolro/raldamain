@@ -2,7 +2,7 @@
 title: Kratoi
 ---
 
-Intro
+La república de Kratoi es el primer estado democrático del continente de Raldamain y
 
 # Historia
 

@@ -43,7 +43,7 @@ Tu escudo también te proporcionará cierta cantidad de *contadores de escudo* i
 
 **Coste:** 1 vigor
 
-Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. Si tienes otras habilidades relacionadas por cargas podrás activarlas también al hacer una Carga con escudo sin la 
+Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. Si tienes otras habilidades relacionadas por cargas podrás activarlas también al hacer una Carga con escudo sin la necesidad de gastar acciones.
 
 ## Rango II
 

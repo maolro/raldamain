@@ -8,12 +8,13 @@ A lo largo de tus años de estudio has aprendido la influencia que tanto compone
 # Reglas fundamentales
 
 - **Ranuras de objeto:** Este Rango te otorga una cierta cantidad de ranuras de objeto, las cuales muestran la cantidad de objetos de cada Rango que tienes disponibles cada día. La cantidad exacta de ranuras que recibes en cada Rango queda indicada ahí y estas se acumulan con aquellas otorgadas por otras habilidades.
+- **Estadística principal**: Tu modificador en Química será igual a la suma de tu estadística de Inteligencia y tu rango en esta habilidad.
 
 # Rangos
 
 ## Rango I
 
-Recibes dos ranuras de objeto de Rango I
+Recibes cuatro ranuras de objeto de Rango I
 
 ### Poción de sanación
 

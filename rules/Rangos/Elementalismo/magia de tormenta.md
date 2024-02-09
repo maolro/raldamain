@@ -65,11 +65,63 @@ Emites una fuerte onda sónica que romperá todos los objetos frágiles a una di
 
 ## Rango II
 
-**Barrera de rayos** (2 AP y 1 chi): Cargas el aire para formar una barrera de relámpagos que te otorga cubierta completa contra todos los ataques. Si una criatura intenta cruzar la barrera deberá tirar CON frente a tu magia de tormenta o sufrirá 1d6 daño eléctrico y quedará aturdido durante una ronda. Puedes crear la barrera como reacción si te encuentras en *posición defensiva* una vez por ronda para defenderte automáticamente de un ataque.
+### Barrera de rayos
 
-**Relámpago** (2 AP y 1 chi): Haz un ataque contra todos los objetivos en una línea de longitud grande infligiendo daño igual a *arco eléctrico* pero modificado por tu CAR en lugar del rango además de *ralentizar* al impactar (*aturdes* si reduces PV). Este ataque no puede ser esquivado y la línea puede divergir de su camino si hay algún conductor eléctrico a distancia cercana de ella (1 chi) Formas un rayo adicional en otra dirección.	
+*Tormenta, Defensivo, Duradero, Eléctrico*
 
-**Bomba sónica** (2 AP y 1 chi): Haz un ataque de magia de tormenta con alcance medio que atacará a todos los objetivos a un radio corto del punto del impacto. Este ataque infligirá daño trueno igual al *toque chispeante* pero estará modificado por tu estadística de CAR en lugar de tu rango además que *ensordecerá* en el caso que reduzca PV. Este ataque también destruirá todas las estructuras frágiles en el área de efecto y no puede ser detenido por un muro. (1 chi) Defenderse de este ataque requiere un tiro de CON de la misma manera que *onda trueno*.
+**Coste**: 1 acción y 1 chi 
+
+**Alcance**: Medio 
+
+**Tamaño**: Esfera pequeña o línea media 
+
+**Efecto crítico:** 
+
+**Duración**: Concentración 
+
+Cargas el aire para formar una barrera de relámpagos que te protege de ataques enemigos. La barrera surgirá desde cualquier punto en tu alcance, tomando la forma de una pequeña esfera o una línea mediana. Esta tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). La barrera permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
+
+La barrera proporcionará *cubierta parcial* a todas las criaturas al otro lado. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de CON frente a tu magia de Tormenta o sufrirá 1d6 + CAR daño Eléctrico y quedará *ralentizado* durante una ronda (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán a tu barrera y luego afectarán a sus objetivos escogidos siempre y cuando esto sea posible.
+
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si la barrera estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
+
+**Empoderar** (1 chi): La barrera recupera todos sus PV perdidos.
+
+### Relámpago
+
+*Tormenta, Ataque, Eléctrico*
+
+**Coste:** 2 acciones y 1 chi
+
+**Tamaño:** Línea grande
+
+**Efecto crítico:** Los afectados quedarán *aturdidos* durante una ronda
+
+**Duración:** Instantáneo
+
+Canalizas el poder de la tormenta en la forma de un letal relámpago. Haz un ataque de magia de Tormenta contra todas las criaturas en una línea grande, infligiendo 1d6 + CAR daño Eléctrico y *ralentizando* a los afectados durante una ronda al impactar. Este ataque no puede ser esquivado por enemigos a distancia corta y aquellos que lleven armadura metálica u otros elementos conductores tendrán Desventaja en su tiro para evitarlo. Si hay conductores eléctricos en el camino del relámpago puedes alterar su área afectada para que pase por ellos.
+
+Este ataque puede potenciarse aún más si cargas el relámpago con más energía eléctrica antes de lanzarlo. En lugar de atacar puedes cargar tu relámpago si mantienes la concentración en él. Puedes gastar cualquier cantidad de acciones en tu turno para cargar el relámpago, aumentando su daño en 1d6. No puedes gastar más de cuatro acciones para cargar tu relámpago y se desvanecerá inmediatamente si pierdes la concentración.
+
+**Empoderar** (1 chi): Al emplear este hechizo lanzas un relámpago adicional en una dirección diferente para atacar a otros objetivos. Estará tan cargado como tu relámpago original.
+
+### Bomba sónica
+
+*Tormenta, Ataque, Área, Sónico*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Mediano
+
+**Tamaño:** Esfera pequeña
+
+**Efecto crítico:** Los afectados quedarán *aturdidos* durante una ronda
+
+**Duración:** Instantáneo
+
+Disparas una ensordecedora bomba sónica hacia un punto a distancia media. Haz un ataque de magia de Tormenta contra todas las criaturas en un radio corto centrado en dicho punto, infligiendo 1d6 + CAR daño Trueno y *ensordeciendo* durante una ronda al impactar. Este ataque destruirá todos los objetos y estructuras frágiles en el área afectada y no puede ser detenido por muros o barreras.
+
+**Empoderar** (1 chi): Al emplear este hechizo lanzas una bomba sónica adicional en una dirección diferente para atacar a otros objetivos. Alternativamente puedes provocar que la bomba sónica no pueda detenerse, forzando a los afectados a tener éxito en un tiro de CON frente a tu Magia de Tormenta para evitarla.
 
 ## Rango III
 
