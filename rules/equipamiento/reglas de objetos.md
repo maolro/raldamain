@@ -8,11 +8,11 @@ En este apartado se muestran algunas reglas generales sobre objetos de todo tipo
 
 Además de la naturaleza del objeto otra propiedad fundamental es el material del que está hecho, siendo un indicador de su calidad general. En este apartado se indican las propiedades que recibirá un objeto según el material del que esté hecho
 
-## Material de baja calidad (-1 precio)
+## Material de baja calidad (-1 rareza)
 
 Improvisados o de origen dudoso, aquellos objetos hechos de materiales de baja calidad suelen romperse con facilidad y no realizan bien su función designada. Los objetos de este tipo se romperán de inmediato si llegan a sufrir el efecto de estado *roto* y en algunas situaciones están en tal mal estado que no pueden repararse.
 
- Un arma de baja calidad se romperá si su portador obtiene un 1 natural en un tiro de ataque y otorgará desventaja a todos los tiros mientras que una armadura de baja calidad reducirá la DEF que otorga por 2. Todos los objetos de este tipo reducirán también su **precio** por 1 (mínimo 0).
+Un arma de baja calidad se romperá si su portador obtiene un 1 natural en un tiro de ataque y otorgará desventaja a todos los tiros mientras que una armadura de baja calidad reducirá la DEF que otorga por 2. Todos los objetos de este tipo reducirán también su **rareza** por 1 (mínimo 0).
 
 ## Material normal
 
