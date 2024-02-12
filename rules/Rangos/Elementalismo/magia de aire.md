@@ -20,7 +20,7 @@ Tienes un control absoluto sobre el elemento que se encuentra en casi todas las 
 
 *Aire, Maniobra, Físico* 
 
-**Coste**: 2 acciones 
+**Coste**: 1 acción
 
 **Alcance**: Medio 
 
@@ -28,7 +28,7 @@ Tienes un control absoluto sobre el elemento que se encuentra en casi todas las 
 
 **Duración**: Instantánea 
 
-Soplas una poderosa ráfaga de viento para desequilibrar a tu objetivo. Un objetivo que alcances debe superar una prueba de Heroísmo o Acrobacia contra tu magia de Aire o será empujado un paso hacia atrás y será *tropezado*. Si tu objetivo no puede ser empujado hacia atrás sufrirá 1d6 + INT daño contundente al fallar el tiro.
+Soplas una poderosa ráfaga de viento para desequilibrar a tu objetivo. Un objetivo que alcances debe superar una prueba de Heroísmo o Acrobacia contra tu magia de Aire o será empujado un paso hacia atrás y caerá *tropezado*. Si tu objetivo no puede ser empujado hacia atrás sufrirá 1d6 + INT daño Contundente al fallar el tiro.
 
 Este hechizo también se puede utilizar para empujar objetos de un tamaño similar, requiriendo sólo una prueba de dificultad elegida por el DJ si son particularmente grandes o pesados. 
 

@@ -29,7 +29,7 @@ Esta magia te permite tener un control absoluto sobre el agua cuando esta se enc
 
 Atacas a un enemigo con un chorro de agua a presión para derribarlo. Haz un ataque con magia de Agua contra un objetivo a distancia media que inflige 1d6 + SAB daño Contundente al impactar. Si tu objetivo está adyacente puedes *desenganchar* como acción bonus tras impactar exitosamente. 
 
-**Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo distinto que puedas alcanzar.
+**Empoderar** (1 chi): Afecta a un objetivo adicional que alcances con este hechizo
 
 ### Aguas de la Vida 
 
