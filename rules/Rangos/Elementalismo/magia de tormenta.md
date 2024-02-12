@@ -125,6 +125,12 @@ Disparas una ensordecedora bomba sónica hacia un punto a distancia media. Haz u
 
 ## Rango III
 
+### Furia de los cielos
+
+### Esferas del relámpago
+
+### Invocar elemental de rayo
+
 **Furia de los cielos** (3 AP y 2 chi): Lanzas un poderoso relámpago hacia el aire para cargarlo y formar una pequeña tormenta. Esta tormenta permanecerá durante el resto del combate y esta te permite una cantidad de veces igual a tu rango lanzar un *arco eléctrico* desde ella hacia cualquier punto en el campo de batalla una vez por turno como acción bonus. Cuando hayas agotado los usos de esta habilidad la tormenta cesará y el clima volverá a la normalidad. Esta habilidad cuesta -2 AP si te encuentras en un entorno ya afectado por una tormenta.
 
 **Esferas del relámpago** (2 AP y 2 chi): Formas una cantidad de esferas del relámpago igual a tu rango – 1 que orbitarán en torno a ti. Mientras te quede al menos una esfera recibes los beneficios de *cubierta* frente a ataques mágicos y todos tus ataques que provoquen daño eléctrico tendrán ventaja y aumentan su alcance a medio. Además, como reacción usable una vez por turno puedes atacar a un objetivo a distancia cercana con un ataque de *toque chispeante* que no puede ser esquivado.  Las esferas permanecerán activos mientras mantengas la concentración y en el momento que la pierdas estas explotarán, provocando una explosión que infligirá 1d4 daño eléctrico por esfera a todas las criaturas en el área (un tiro defensivo contra +3 x esfera reducirá el daño a la mitad). 

@@ -26,7 +26,7 @@ title: Magia de Ácido
 
 Formas una esfera de ácido corrosivo en la palma de tu mano y la lanzas hacia un enemigo. Haz un ataque empleando Magia de Ácido contra una criatura a distancia media que inflige 1d6 + Rango daño Ácido al impactar. Si el objetivo tiene armadura metálica o emplea un objeto para detener este ataque sufrirá el efecto de estado *roto*.
 
-**Empoderar** (1 chi): Ataca a un objetivo distinto a distancia media.
+**Empoderar** (1 chi): Afecta a un objetivo adicional que alcances con este hechizo
 
 ### Toque corrosivo
 
@@ -35,6 +35,8 @@ Formas una esfera de ácido corrosivo en la palma de tu mano y la lanzas hacia u
 **Coste:** 1 acción
 
 **Alcance:** Cuerpo a cuerpo
+
+**Efecto crítico:** El objetivo sufre una *quemadura leve*
 
 **Duración:** Instantáneo
 
@@ -58,7 +60,7 @@ Si logras impactar tu objetivo se recubrirá de ácido corrosivo, forzándole a 
 
 Escupes un chorro de ácido corrosivo contra todos los enemigos cercanos. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Ácido al impactar. Todos los objetos metálicos o hechos de madera que sean impactados por este ataque sufrirán el efecto de estado *roto* además que eliminarás todos los efectos Duraderos de Naturaleza o Metal en el área afectada con Rango igual al tuyo.
 
-**Empoderar** (1 chi): Aumenta el tamaño de este ataque por un pasy su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
+**Empoderar** (1 chi): Aumenta el tamaño de este ataque por un paso y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
 ## Rango II
 
@@ -116,7 +118,7 @@ Aunque el afectado logre escapar el foso permanecerá en el campo de batalla has
 
 **Duración:** Instantáneo
 
-Provocas una erupción de ácido para atacar a tus adversarios voladores. La erupción aparecerá desde un punto que puedas percibir a distancia media y atacará a todos los enemigos en una columna mediana, infligiendo 1d8 + CAR daño Ácido al impactar. Solo puedes provocar erupciones ácidas en terrenos llenos de lodo o agua.
+Provocas una erupción de ácido para atacar a tus adversarios voladores. La erupción aparecerá desde un punto que puedas percibir a distancia media y atacará a todos los enemigos en una columna mediana, infligiendo 1d6 + CAR daño Ácido al impactar. Solo puedes provocar erupciones ácidas en terrenos llenos de lodo o agua.
 
 Si impactas a una criatura voladora esta caerá inmediatamente al suelo, quedando *tropezada* y sufriendo el adecuado daño de caída. Debido al ácido no podrá volver a volar hasta el principio de su siguiente turno. 
 

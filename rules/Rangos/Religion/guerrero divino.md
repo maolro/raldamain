@@ -188,4 +188,4 @@ Invocas el poder de tu dios para que te transforme en un invencible avatar divin
 - Obtienes velocidad de vuelo 1 y eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Puedes emplear tu Rango de Guerrero divino para cualquier bonificador en tiros relacionados con armas, sustituyendo el Rango que usarías normalmente.
-- Todos tus hechizos obtenidos por Guerrero divino no te costarán chi o vigor para ser lanzados.
+- Todos tus hechizos pertenecientes a rangos ajenos aprendidos por Guerrero divino no te costarán chi o vigor para ser lanzados. Debes seguir pagando su coste en acciones y aquellos que cuestan una acción bonus solo pueden ser empleados gratuitamente una vez por ronda. No obstante, si deseas empoderar un hechizo debes seguir pagando la cantidad adecuada de chi o vigor.

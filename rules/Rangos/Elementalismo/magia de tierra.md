@@ -31,13 +31,13 @@ Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incre
 
 Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alcanzar. Haz un ataque de Magia de Tierra contra un objetivo a distancia media que inflige 1d6 + SAB daño Contundente al impactar. Este ataque ignora resistencias a ataques a distancia debido a su gran volumen. 
 
-**Mejora** (1 chi): Haz un ataque adicional contra un objetivo diferente que puedas alcanzar. 
+**Empoderar** (1 chi): Haz un ataque adicional contra un objetivo diferente que puedas alcanzar. 
 
 ### Crear obstáculo 
 
 *Tierra, Físico, Ambiental* 
 
-**Coste**: 2 acciones 
+**Coste**: 1 acción
 
 **Alcance**: Medio 
 
@@ -45,7 +45,7 @@ Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alc
 
 Manipulas la tierra en el campo de batalla para crear un terreno favorable para ti. Forma una barrera o trinchera de tamaño pequeño en cualquier punto en tu alcance que permanecerá en el campo de batalla hasta que sea destruida. Estos obstáculos otorgarán los efectos de *cubierta* a todas las criaturas adyacentes a ellos y solo pueden ser destruidos por ataques de área de magnitud igual o superior.
 
-**Mejora** (1 chi): Crea un obstáculo pequeño adicional en el campo de batalla como acción bonus o aumenta el tamaño de un obstáculo existente a mediano. 
+**Empoderar** (1 chi): Crea un obstáculo pequeño adicional en el campo de batalla como acción bonus o aumenta el tamaño de un obstáculo existente a mediano. 
 
 ### Terratemblor
 
@@ -61,7 +61,7 @@ Manipulas la tierra en el campo de batalla para crear un terreno favorable para 
 
 Golpeas el suelo con gran fuerza para generar un terratemblor. Todas las criaturas a distancia corta de ti que estén tocando el suelo deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Tierra o sufrirán 1d6 + SAB daño Contundente y caerán *tropezados*. El área afectada se convertirá en *terreno difícil* y todas las estructuras pequeñas en ella se desmoronarán. 
 
-**Mejora** (1 chi): Aumenta el radio de este hechizo a mediano.
+**Empoderar** (1 chi): Aumenta el radio de este hechizo a mediano.
 
 ## Rango II
 
@@ -81,7 +81,7 @@ Formas un muro de roca sólida para protegerte de ataques enemigos. El muro surg
 
 Esta habilidad se puede utilizar de manera defensiva para protegerte a ti mismo o a un aliado de un ataque, reduciendo el daño que recibirías como si estuviera en el camino. Si intentas bloquear un ataque cuerpo a cuerpo, tu oponente debe tener éxito en una tirada para cruzar el muro o su ataque fallará. Para hacerlo, debes estar en posición defensiva y solo puedes crear un muro de esta manera una vez por ronda.
 
-**Mejora** (1 chi): El muro recupera todos sus puntos de impacto perdidos.
+**Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos.
 
 ### Tierra viva
 
@@ -101,7 +101,7 @@ La tierra en un punto dentro del alcance entra en erupción furiosamente, atacan
 
 Este ataque es especialmente efectivo contra criaturas voladoras, ya que puede derribarlas. Si dañas a una criatura voladora con este ataque, deben intentar una tirada de CON contra tu magia de tierra. En caso de fracaso, caerán inmediatamente del cielo, sufriendo el daño de caída adecuado y quedando en el suelo.
 
-**Mejora** (1 chi): Aumenta el tamaño de este ataque a un cilindro grande.
+**Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cilindro grande.
 
 ### Moldear la tierra
 

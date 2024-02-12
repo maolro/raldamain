@@ -29,7 +29,7 @@ Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos
 
 Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. Haz un ataque de Magia de fuego contra un enemigo a distancia media que infligirá 1d6 + Rango daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
 
-**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo
+**Empoderar** (1 chi): Afecta a un objetivo adicional que alca con este hechizo
 
 ### Asalto abrasador
 
