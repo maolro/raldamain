@@ -38,6 +38,14 @@ Fabricas una droga que inhibe la aversión al riesgo del afectado, incitándolo 
 
 Los efectos inhibidores del riesgo provocan también que el afectado jamás abandone  voluntariamente un combate y siga luchando sin importarle su estado actual. Cada uso de Valentía embotellada consumirá una ranura de objeto que tengas.
 
+### Frasco de ácido
+
+*Objeto, Químico, Consumible, Ácido*
+
+Creas un compuesto ácido extremadamente potente capaz de disolver el metal y la carne humana. Una criatura que tenga el frasco de ácido puede verterlo sobre un objeto de cualquier tipo para hacerle un agujero pequeño, dejándolo *roto* si es particularmente pequeño. 
+
+El ácido también puede usarse para atacar a otras criaturas, lo cual funcionará como un ataque que empleará tu bonificador de armas A distancia, Bombas u otro que sea aplicable para esta situación. Si logras impactar al afectado le provocarás 1d6 + INT daño Ácido además de provocar el efecto *roto* a un objeto que lleve encima. Si provocas un Efecto Crítico con este ataque tu objetivo sufrirá una *quemadura leve*.
+
 ## Rango II
 
 Recibes dos ranuras de objeto de Rango II y una ranura adicional de Rango I
@@ -64,6 +72,22 @@ Fabricas un suero que abre tu mente a nuevas posibilidades, dándote unos instan
 
 Los bonificadores de un Cognatógeno no se acumulan con aquellos otorgados por la habilidad Mente Desencadenada y un abuso excesivo de estos puede conducir a la locura o a una adicción. Cada uso de Cognatógeno consumirá una ranura de objeto que tengas.
 
+### Veneno alucinógeno
+
+*Objeto, Química, Consumible, Aflicción*
+
+Fabricas un veneno capaz de provocar alucinaciones a quienes lo consuman para que no puedan distinguir realidad de ficción. Una criatura que consuma este veneno o sea impactada por un arma imbuida con él debe tener éxito en un tiro de CON frente a tu modificador de Química o quedará *confundido* además de sufrir los efectos de un veneno de SAB. 
+
+La confusión permanecerá hasta que el veneno sea eliminado por completo, forzando al afectado a repetir el tiro cada ronda hasta que tenga éxito dos veces o consuma un antídoto para dicho veneno.
+
+### Suero de la verdad
+
+*Objeto, Química, Consumible, Aflicción*
+
+Esta infame droga inhibirá la capacidad de mentir del afectado, forzándole a compartir contigo sus más profundos pensamientos. Una criatura que consuma el suero de verdad deberá tener éxito en un tiro de CON o caerá bajo sus efectos, quedando obligado a contestar con absoluta sinceridad cada pregunta que le plantees. 
+
+Este efecto permanecerá activo hasta que la droga sea eliminada por completo, forzando al afectado a repetir el tiro cada ronda hasta que tenga éxito dos veces o consuma un antídoto para dicha droga.
+
 ### Resistencia a drogas
 
 *Innata, Pasiva*
@@ -71,6 +95,22 @@ Los bonificadores de un Cognatógeno no se acumulan con aquellos otorgados por l
 Tu exposición a varios productos químicos ha hecho que tu cuerpo se acostumbre a ellos. Recibes así Resistencia a Aflicciones y Efectos mentales además que puedes identificar las propiedades de productos químicos con los que interactúes sin la necesidad de tirar.
 
 ## Rango III
+
+### Fabricar concentrado
+
+Convierte un producto químico en un concentrado, aumentando la potencia de sus efectos y haciendo que ocupe un espacio de un nivel superior. Puedes emplear esta habilidad también para fusionar múltiples productos químicos.
+
+### Vaporización química
+
+Convierte un producto químico en un gas para que afecte a múltiples criaturas que lo respiren. Aumenta su nivel por un paso.
+
+### Elixir de la vida
+
+Cura efectos de estado, heridas permanentes y PV.
+
+### Agente nervioso
+
+Veneno que paraliza al afectado y lo mata rápidamente.
 
 **Diluir poción** (proyecto): Puedes diluir un suero o poción tras una hora de trabajo, fabricando una dosis adicional a partir de esta. Una disolución diluida tiene menor eficacia, causando el siguiente efecto respecto a la disolución base.
 
@@ -88,6 +128,18 @@ Si intentas diluir un concentrado tendrá los efectos de una dosis normal.
 
 ## Rango IV
 
+### Alteración genética
+
+Provoca cambios temporales o permanentes a la fisiología del afectado, simulando aspectos de otras criaturas. Cambios estadísticos y de habilidades.
+
+### Infusión de magia
+
+Otorga la capacidad de emplear determinados hechizos al afectado de manera temporal o permanente además de mejoras estadísticas.
+
+### Lavacerebros
+
+Esclaviza a la persona que lo consuma.
+
 **Alteración genética** (proyecto): Eres capaz de alterar la fisionomía de seres vivos a través de experimentación con mutágenos. Empleando un total de dos horas de experimentación y el gasto de dos dosis de suero puedes alterar la fisionomía del objetivo, otorgándole una de las siguientes habilidades:
 
 - Recibe un nuevo sentido que llega hasta una distancia media como visión a oscuras o georradar.
@@ -101,6 +153,22 @@ Cada vez que un personaje reciba una mutación de este tipo deberá hacer un tir
 
 ## Rango V
 
+### Lágrimas de lich
+
+Veneno que traspasa resistencias e impide que el afectado pueda ser curado o resucitado.
+
+### Panacea universal
+
+Elimina todo efecto químico que tenga el afectado salvo lágrimas de lich. Reduce también el envejecimiento por una cierta cantidad de años.
+
+### Esencia de vida
+
+Otorga Regeneración igual a tu Rango + 2 además de recuperación rápida de venenos y heridas permanentes. 
+
+### Semilla de la ascensión
+
+Convierte a la persona que lo consuma en un abisal, infernal, celestial, espíritu o no-muerto fuerte.
+
 **Gran descubrimiento** (proyecto): Realizas un descubrimiento en el campo de la química muy avanzado a tu tiempo. El descubrimiento puede ser cualquier invento de tu elección que tenga consentimiento del máster. Algunas posibilidades para un descubrimiento son las siguientes:
 
 - **Resucitar:** Conoces como fabricar una medicina milagrosa capaz de revivir a los muertos. Sólo puedes fabricar una dosis de esta medicina a la semana y te permite revivir a una criatura que haya muerto hace menos de una hora. Esta medicina también puede consumirse para que la próxima vez que el objetivo muera resucitará a 1 PV pero este conservará todas las heridas permanentes que tenga. Los efectos de la medicina expiran al cabo de una semana si es consumida.
@@ -109,3 +177,9 @@ Cada vez que un personaje reciba una mutación de este tipo deberá hacer un tir
 - **Mutación constante:** Al utilizar Alteración genética en una criatura puedes añadirle un suero especial de mutación, el cual mejorará su fisionomía a costa de hacer que su forma sea menos estable. Un suero de mutación le permitirá al afectado cambiar una de sus mutaciones a cualquier otra una vez por ronda como acción bonus.-
 
 **Químico ágil** (3 acciones): Con los materiales adecuados puedes sintetizar disoluciones en una cantidad mínima de tiempo. Empleando 3 acciones puedes crear una dosis adicional de suero, veneno o medicina. Usar esta habilidad ocasionará un gasto de materiales, lo cual causa que sólo puedas usar esta habilidad tres veces al día. Aplicar veneno a un arma te cuesta una acción bonus.
+
+## Rango VI
+
+### Gran descubrimiento
+
+Descubres un nuevo producto milagroso. Debe estar permitido por el máster.
