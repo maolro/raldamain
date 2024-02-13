@@ -10,6 +10,7 @@ Eres experto empleando exóticas cadenas y látigos, inmovilizando a tus enemigo
 Estilo de Cadenas tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Reserva de vigor:** Tu rango en Estilo de Cadenas mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo de Cadenas será igual a la suma de tu estadística de Fuerza y tu rango en esta habilidad.
 
 # Rangos
 

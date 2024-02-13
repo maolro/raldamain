@@ -9,6 +9,7 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 Estilo de Armas Ligeras tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Reserva de vigor:** Tu rango en Estilo de Armas Ligeras mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo de Armas Ligeras será igual a la suma de tu estadística de Destreza y tu rango en esta habilidad.
 
 # Rangos
 

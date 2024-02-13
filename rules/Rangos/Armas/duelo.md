@@ -7,9 +7,10 @@ category: Armas
 
 # Reglas fundamentales
 
-Estilo de Armas de Duelo tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+Estilo de Duelo tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Reserva de vigor:** Tu rango en Estilo de Armas de Duelo mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Reserva de vigor:** Tu rango en Estilo de Duelo mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo de Duelo será igual a la suma de tu estadística de Fuerza o Destreza y tu rango en esta habilidad.
 
 # Rangos
 
