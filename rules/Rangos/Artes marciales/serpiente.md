@@ -1,6 +1,13 @@
 ---
-title: Estilo de la serpiente
+title: Estilo serpiente
 ---
+
+# Reglas fundamentales
+
+Estilo Serpiente tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+
+- **Reserva de vigor:** Tu rango en Estilo Serpiente mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo Serpiente será igual a la suma de tu estadística de Destreza y tu rango en esta habilidad.
 
 # Rangos
 

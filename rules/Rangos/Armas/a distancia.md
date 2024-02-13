@@ -7,9 +7,10 @@ Has preferido un arma de largo alcance que te permita acabar con tus enemigos an
 
 # Reglas fundamentales
 
-Estilo de Armas A distancia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+Estilo a distancia tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Reserva de vigor:** Tu rango en Estilo de Armas A distancia mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Reserva de vigor:** Tu rango en Estilo a distancia mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo a distancia será igual a la suma de tu estadística de Destreza y tu rango en esta habilidad.
 
 # Rangos
 
@@ -69,7 +70,7 @@ Tu soltura con tu arma te permite recargarla a velocidades sobrehumanas. Al empl
 
 **Coste:** 1 vigor
 
-Fallas intencionalmente un disparo para que tu enemigo abandone sus defensas y acabe en una posición más vulnerable. Al fallar un ataque a distancia contra un enemigo puedes forzarle a realizar un tiro de Percepción o Averiguar Intenciones contra tu modificador de arma. Si falla este tiro el disparo le fintará, provocando que reciba Desventaja en su siguiente tiro defensivo contra ti. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
+Fallas intencionalmente un disparo para que tu enemigo abandone sus defensas y acabe en una posición más vulnerable. Al fallar un ataque a distancia contra un enemigo puedes forzarle a realizar un tiro de Percepción o Averiguar Intenciones contra tu modificador de Estilo a distancia. Si falla este tiro el disparo le fintará, provocando que reciba Desventaja en su siguiente tiro defensivo contra ti. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
 
 ### Desarme ágil
 

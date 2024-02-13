@@ -66,7 +66,7 @@ Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas 
 
 ### Vínculo Vital 
 
-*Vida, Curación, Toque, Duradero* 
+*Vida, Sanación, Toque, Duradero* 
 
 **Coste**: 3 acciones y 1 chi 
 
