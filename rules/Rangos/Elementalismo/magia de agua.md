@@ -41,7 +41,7 @@ Atacas a un enemigo con un chorro de agua a presión para derribarlo. Haz un ata
 
 **Duración**: Instantáneo 
 
-Utilizas el poder del agua para curar a otros, restaurando así su salud y chi interior. Un aliado que puedas tocar recuperará Vitalidad igual a tu Rango + 2. 
+Utilizas el poder del agua para curar a otros, restaurando así su salud y chi interior. Un aliado que puedas tocar recuperará Vitalidad igual a tu Rango + 2. Si empleas este hechizo contra un no-muerto este debe tener éxito en un tiro de CON frente a tu modificador de Magia de Agua o sufre 1d6 + SAB daño Radiante. 
 
 **Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción que esté en la primera etapa.
 

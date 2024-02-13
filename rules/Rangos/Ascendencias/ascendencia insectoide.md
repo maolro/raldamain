@@ -17,7 +17,9 @@ Ascendencia Insectoide tiene las siguientes reglas fundamentales que se aplican 
 
 ### Aspecto entrópico
 
-Armas naturales y puedes lanzar hechizos de Transmutación pagando vigor
+*Innata, Pasiva*
+
+Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades además de sus habilidades de metam
 
 ### Mente insectoide
 
@@ -40,9 +42,17 @@ Incrementa tu DES por 1.
 
 ### Ovoposición
 
+*Innata, Aflicción*
+
 Coloca larvas insectoides en un objetivo que te permiten controlarlo
 
 ### Invocar marabunta
+
+*Innata, Invocación*
+
+**Coste:** 2 acciones y 1 chi o vigor
+
+**Duración:** Una hora	
 
 Invoca una nube de insectos que provoca náuseas
 
