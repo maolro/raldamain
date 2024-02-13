@@ -58,7 +58,7 @@ Pegas tus puños al cuerpo y te colocas en guardia para resistir todo ataque dir
 
 **Coste:** 1 vigor
 
-Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Al impactar con tu siguiente ataque Marcial puedes tu objetivo deberá superar un tiro de CON contra tu modificador en Estilo Boxeo o quedará *aturdido* durante una ronda. Si tu objetivo falla su tiro aumenta el bonificador de Secuencia de ataques como si realizaras un ataque adicional. No podrás aturdir de esta manera a enemigos que lleven armadura pesada o completa. 
+Golpeas a tu objetivo con gran potencia para dejarlo fuera de combate. Al impactar con tu siguiente ataque Marcial tu objetivo deberá superar un tiro de CON contra tu modificador en Estilo Boxeo o quedará *aturdido* durante una ronda. Si tu objetivo falla su tiro aumenta el bonificador de Secuencia de ataques como si realizaras un ataque adicional. No podrás aturdir de esta manera a enemigos que lleven armadura pesada o completa. 
 
 ### Puñetazo falso
 

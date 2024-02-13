@@ -20,13 +20,13 @@ La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus 
 
 *Vida, Sanación, Toque*
 
-**Precio**: 2 acciones
+**Coste**: 2 acciones
 
 **Alcance**: Toque
 
 **Duración**: Instantánea
 
-Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado al que puedas tocar se sana Vitalidad igual a tu Rango + 2. 
+Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado al que puedas tocar se sana Vitalidad igual a tu Rango + 2. Si tu objetivo se encuentra afectado por una Aflicción en lugar dpuedes emplear tu tiro de Magia de Vida contra su gravedad para reducir su nivel por un paso.
 
 **Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción en fase 1.
 
