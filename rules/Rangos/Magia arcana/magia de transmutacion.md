@@ -55,10 +55,11 @@ Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas inte
 
 Alteras la fisiología de una criatura que toques para mejorar sus capacidades básicas. La mejora otorgada permanecerá activa durante una hora y una misma criatura no puede tener más de tres mejoras activas a la vez. Puedes escoger la naturaleza exacta de la mejora otorgada siempre y cuando cuente con la aprobación del DJ. A continuación se presentan algunos ejemplos de mejoras que puedes otorgar.
 
-- **Visión nocturna:** 
-- **Garras:** 
+- **Visión nocturna:** Desarrollas sentidos especiales para ver en la oscuridad o en entornos de baja visibilidad sin dificultades.
+- **Armas naturales:** Te crecen garras, colmillos o espinas que puedes emplear para atacar a tus enemigos, aumentando el daño de tus ataques Marciales por un paso y pudiendo infligir daño del tipo que escojas.
 - **Armadura natural:** Tu cuerpo aumenta notablemente su resistencia al daño, aumentando así tu DEF y tus PV por un valor igual a tu Rango de Transmutación + 1.
-- **Inyectar veneno:** 
+- **Inyectar veneno:** Eres capaz de inyectar un veneno a los enemigos que logres herir. Dicho veneno será del tipo que escojas y tendrá gravedad igual a tu modificador de Transmutación.
+- **Movimiento especial:** Alteras tu cuerpo para mejorar tu movilidad en un ámbito específico, aumentando así tu velocidad de escalada o natación por un paso.
 
 **Empoderar** (1 chi): Cambia la mejora que tenga activa una criatura que puedas tocar por otra de tu elección.
 
@@ -66,15 +67,52 @@ Alteras la fisiología de una criatura que toques para mejorar sus capacidades b
 
 ### Arma ósea
 
-Moldeas tu cuerpo para transformarlo en un arma viviente
+*Transmutación, Duradero, Físico, Cuerpo a Cuerpo*
+
+**Coste**: 2 acciones y 1 chi
+
+**Alcance:** Toque
+
+**Duración**: Una hora
+
+Transmutas el cuerpo de una criatura que toques para formar sólidas armas hechas de tus propios huesos. Al lanzar este hechizo a tu objetivo le crece un arma ósea que tomará r la forma de cualquier arma cuerpo a cuerpo que elijas. teniendo la misma cantidad de daño base con la diferencia que se modificará con tu estadística de INT en lugar de tu FUE o DES.
+
+El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán una acción (dos acciones si el arma requiere las dos manos para ser empleada) y puedes usar tu modificador de Magia de Transmutación para tu tiro de ataque con ella. Además, puedes aplicar cualquier técnica de combate que ya tengas a los ataques realizados con esta arma.
+
+**Empoderar** (1 chi): Cambias el tipo del arma ósea a otra que escojas o la lanzas para atacar a un enemigo a distancia media de ti. Si escoges lanzar el arma te volverá a crecer sin dificultades.
 
 ### Alterar tamaño
 
-Haces que un objetivo sea más grande o más pequeño
+*Transmutación, Mejora, Duradero*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Toque
+
+**Duración:** Concentración
+
+Alteras el tamaño de una criatura que toques para hacerla más grande o más pequeña. El objetivo puede resistirse si tiene éxito en un tiro de CON frente a tu Magia de Transmutación, pero si fracasa su tamaño crecerá o se reducirá por un paso junto al equipamiento que lleve.
+
+Este efecto permanecerá activo mientras mantengas la concentración y no hay límite de cuantos objetivos puedes afectar simultáneamente, pero todo efecto activo desaparecerá cuando pierdas la concentración. Al activar este hechizo escoge una de estas dos opciones para afectar a tu objetivo.
+
+- **Reducir tamaño:** Reduces el tamaño objetivo, disminuyendo su peso y altura a y aumentando su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de DES a costa de obtener Desventaja en todos sus tiros relacionados con la FUE y la CON. Las armas del afectado también reducen su tamaño, disminuyendo el daño que provocan por un paso.
+- **Aumentar peso:** Aumentas la fuerza gravitatoria que afecta a tu objetivo, incrementando su peso y altura a costa de reducir su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de FUE y CON a costa de obtener Desventaja en todos sus tiros relacionados con la DES. Las armas del afectado también aumentarán su tamaño, incrementando el daño que provocan por un paso.
+
+**Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a distancia media, o afecta a un objetivo adicional con él.
 
 ### Consumir esencia
 
-Absorbe la esencia vital de un objetivo para quitarle la fuerza física/provocar heridas y recuperar Vitalidad
+*Transmutación, Aflicción, Sanación*
+
+**Coste:** 1 acción y 1 chi
+
+**Alcance:** Cuerpo a cuerpo
+
+**Duración:** Instantáneo
+
+Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heridas. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Transmutación o 1d6 + INT daño Físico obligatorio además de quedar Enfermado durante el resto del combate. Tras atacar recuperarás también Vitalidad igual a tu Rango + 2.
+
+**Empoderar** (1 chi):Reduce el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a tu objetivo.
 
 ## Rango III
 
