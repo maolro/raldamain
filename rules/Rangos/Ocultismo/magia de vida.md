@@ -64,7 +64,7 @@ Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas 
 
 ## Rango II
 
-### Vínculo Vital 
+### Vínculo  Vital 
 
 *Vida, Sanación, Toque, Duradero* 
 

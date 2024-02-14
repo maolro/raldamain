@@ -16,35 +16,95 @@ Tienes un gran conocimiento de como funciona la mente humana en sus etapas de su
 
 ### Soñador lúcido
 
-Estás consciente cuando sueñas y conservarás ahí todo tu equipamiento. Recuperas tu cordura con un descanso largo.
+*Onírica, Pasiva*
+
+Tu conocimiento del mundo de los sueños te permite cruzar la barrera que separa ambos mundos. Antes de hacer un descanso largo puedes realizar un ritual de 10 minutos de duración para entrar en el Plano Onírico cuando te duermas. Al entrar en el Plano Onírico de forma lúcida mantendrás tu equipamiento y objetos que tendrías en la vida real además de poder emplear tus habilidades con normalidad. Esta habilidad te otorga también Resistencia a efectos Mentales u Oníricos.
+
+Podrás interactuar con otras criaturas que se encuentren en dicho mundo y hacer las mismas acciones que podrías realizar en el mundo real. En el caso de que mueras en el Plano Onírico te despertarás al momento sin sufrir ningún daño físico, pero no recibirás los beneficios de un descanso largo y acabarás *fatigado*. Cabe recalcar que los efectos mentales y las pérdidas de cordura que recibas en el mundo onírico se conservarán en el mundo real.
 
 ### Alteración onírica
 
+*Onírica, Duradera*
+
 **Coste:** 1 acción
 
-Creas un objeto pequeño o cambias la naturaleza de otro. Solo puedes emplear esta habilidad en el plano onírico o en lugares fuertemente influenciados por él. Puedes afectar a criaturas oníricas con esta habilidad para hacerles daño obligatorio.
+**Alcance:** Medio
+
+**Efecto crítico:** La criatura onírica afectada quedará *enfermada* durante una ronda
+
+**Duración:** Instantáneo o una hora
+
+Empleas tu control del Plano Onírico para manipular la materia, pudiendo así crear y destruir objetos además de cambiar la naturaleza de estos. Este hechizo solo puede emplearse en el Plano Onírico o en lugares fuertemente influenciados por él y al usarlo puedes crear o destruir un objeto pequeño a distancia media de ti o cambiar su forma a la que desees. Este cambio durará hasta que otra criatura lo cambie o pase una hora.
+
+Si empleas este hechizo en objetos mágicos puede no funcionar o requerir que superes una dificultad escogida por el DJ para que funcione exitosamente. Este hechizo también puede usarse para transmutar forzosamente a criaturas oníricas, forzando a una criatura a distancia media de ti a tener éxito en un tiro de CON frente a tu Magia Onírica o sufre 1d6 + INT daño obligatorio. 
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional a distancia media con este hechizo
 
 ### Manto de sueños
 
+*Onírica, Mental, Área, Duradera*
+
 **Coste:** 2 acciones y 1 chi
 
-Un grupo de criaturas tira contra efecto mental o se empieza a dormir, quedando fatigado->exhausto->inconsciente. Concentración.
+**Alcance:** Medio
 
-<u>Soñador lúcido</u> (pasiva): Tu conocimiento del mundo de los sueños te permite cruzar la barrera que separa ambos mundos. Antes de hacer un descanso largo puedes realizar un ritual de 10 minutos de duración para entrar en el mundo de los sueños cuando te duermas. Al entrar en el mundo de los sueños de forma lúcida mantendrás tu equipamiento y objetos que tendrías en la vida real además de poder emplear tus habilidades con normalidad. Podrás interactuar con otras criaturas que se encuentren en dicho mundo y hacer las mismas acciones que podrías realizar en el mundo real. En el caso de que mueras en el mundo de los sueños te despertarás al momento sin sufrir ningún daño físico, pero no recibirás los beneficios de un descanso largo y acabarás fatigado. Los efectos mentales que recibas en el mundo onírico se conservarán en el mundo real.
+**Tamaño:** Radio medio
 
-<u>Manto de sueños</u> (pasiva y 1 acción): Tu cuerpo se encuentra infundido de magia onírica por tus constantes viajes en el mundo de los sueños. Recibes resistencia igual a tu rango a ser dormido en contra de tu voluntad y puedes utilizar la habilidad *[Sugestión](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-ii)* para que tu objetivo caiga inconsciente al momento (esto no funciona en un combate salvo que tu objetivo tenga 0 vitalidad o esté *[Exhausto](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#exhausta)*). Puedes emplear una acción para adormecer a todas las criaturas en un área de 10 pies, dándoles desventaja en tiros de Percepción y tiros de Sabiduría contra efectos mentales. Tus objetivos pueden resistir con un tiro de sabiduría y no podrás afectar a la misma criatura más de una vez con esta habilidad. 
+**Efecto crítico:** Los afectados quedarán *exhaustos* hasta que acabe este hechizo. Si ya se encuentran *fatigados* caerán *inconscientes*.
+
+**Duración:** Concentración
+
+Tu cuerpo se encuentra infundido de Magia Onírica debido a tus constantes viajes al Plano Onírico y puedes emplear dicho poder para enviar ahí a tus enemigos. Al activar este hechizo todas las criaturas que se encuentren a distancia media de un punto que alcances deben tener éxito en un tiro de Concentración o Voluntad contra tu Magia Onírica o empiezan a caer dormidas, quedando *fatigadas* hasta que se liberen de este hechizo o sufran daño.
+
+Este hechizo permanecerá activo hasta que pierdas la concentración y cada ronda que lo esté las criaturas afectadas deben repetir el tiro o quedarán aún más adormecidas. Si fallan de nuevo quedarán *exhaustas* mientras que si ya están *exhaustas* caerán *inconscientes*. Al lanzar este hechizo contra criaturas que no se encuentren en combate estas recibirán Desventaja en todos sus tiros para defenderse de esta habilidad. 
+
+**Empoderar** (1 chi): Una criatura que ya se encuentra afectada por este hechizo caerá *inconsciente* si falla su tiro esta ronda.
 
 ## Rango II
 
 ### Inducción onírica
 
-Entras en los sueños de una criatura dormida cercana. Todos los hechizos mentales que lances contra ella traspasan Resistencias pero tras emplear tu primer hechizo activarás las defensas de tu mente. 
+*Onírica, Duradera*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Medio
+
+**Duración:** Hasta que te desipertes
+
+Conoces cómo entrar en los sueños de una persona de tu elección, invadiendo su mente y descubriendo los secretos de su subconsciente. Al emplear este hechizo caes dormido de inmediato y entras en los sueños de otra criatura dormida a distancia media de ti. Permanecerás en sus sueños hasta que te despiertes o escojas terminar este hechizo.
+
+Al penetrar en la mente de un objetivo aparecerás dentro del sueño que esté teniendo, el cual se basará en los recuerdos y preocupaciones de tenga. Ahí puedes interactuar con tu objetivo, quién te hablará con mayor sinceridad y recordará determinados detalles de la conversación al despertarse. No obstante, si entras en la mente de una persona abiertamente hostil hacia ti actuará como si te viera en la vida real.
+
+Los sueños de una persona también son una puerta hacia su subconsciente y puedes aprovecharte de ello para entrar en la mente de tu objetivo de forma más profunda. Todos los hechizos Mentales que lances contra un objetivo afectado de esta manera ignorarán las Resistencias e Inmunidades que tenga además de ser indetectables. 
+
+No obstante, emplear hechizos en la mente de un enemigo activará sus defensas mentales, las cuales tomarán la forma de criaturas oníricas o trampas escogidas por el DJ con nivel total igual a la suma del nivel del afectado y su estadística de INT. Las defensas mentales te pueden llegar a matar en el plano onírico y una vez que las actives volverán a atacarte cada vez que vuelvas a entrar en la mente del afectado. Un objetivo con la cordura reducida a 0 carecerá completamente de defensas mentales.
+
+Este hechizo puede emplearse en criaturas más lejanas si realizas un ritual antes de dormirte empleando como componente un objeto que pertenezca a tu objetivo. Para tener éxito en el ritual debes tener superar una dificultad decidida por el máster según la distancia y la familiaridad de tu objetivo con un tiro de Magia Onírica.
 
 ### Atrapasueños
 
-Colocas un velo protector en una criatura que le otorga Resistencia a efectos Mentales y que pueda emplear tu tiro para defenderse de efectos Oníricos. Conocerás automáticamente si este velo ha sido penetrado por una criatura hostil.
+*Onírica, Defensiva*
+
+**Coste:** 3 acciones y 1 chi
+
+**Alcance:** Toque
+
+**Duración:** Ocho horas
+
+Colocas un velo protector en la mente de una criatura que le protegerá de intrusiones mentales y oníricas. Dicho velo debe colocarse en una criatura que puedas tocar y mientras permanezca activo le otorgará Resistencia a efectos Mentales además que empleará tu modificador de Magia Onírica para defenderse de efectos Oníricos hostiles. Si dicha criatura falla su tiro o el velo es eliminado por una criatura ajena lo sabrás de inmediato. Este hechizo permanecerá activo durante ocho horas o hasta que sea eliminado.
+
+**Empoderar** (1 chi): Infundes el velo de una capa adicional de protección, permitiendo a la criatura afectada a tener éxito automático en un tiro para defenderse de un efecto Onírico. Dicha capa se desvanecerá después de ser usada y solo podrás colocar un máx
 
 ### Pesadillas malditas
+
+*Onírica, Mental, Maldición*
+
+**Coste:** 2 acciones y 1 chi
+
+**Alcance:** Toque
+
+**Duración:** Hasta que sea eliminada
 
 Maldices a una criatura para que tenga dificultades a la hora de dormir. Cada vez que haga un descanso largo debe tirar contra tu Magia Onírica o es incapaz de dormir y sufre 1 + Rango daño a la cordura. Hasta que se libere de la maldición no puede recuperar cordura. También puedes entrar en los sueños de esa criatura sin importar dónde se encuentre.
 
