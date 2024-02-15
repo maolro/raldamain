@@ -1,5 +1,5 @@
 ---
-title: Asccendencia fúngica
+title: Ascendencia fúngica
 category: Ascendencias
 ---
 
@@ -75,7 +75,7 @@ Expulsas una nube de esporas tóxicas desde cualquier lugar a distancia media ll
 
 Las esporas se empezarán a introducir en el sistema respiratorio de todas las criaturas que se encuentren en la nube. Las criaturas que empiecen su turno dentro de la nube o entren en ella quedarán infectadas con tus Esporas infecciosas, haciendo de inmediato el tiro para defenderse de ellas. Si ya están infectadas recibirán Desventaja en todos sus tiros de CON para evitar sus efectos mientras permanezcan en la nube.
 
-**Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o expulsas una nube tóxica adicional en otro punto a distancia media que permanecerá acti
+**Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o expulsas una nube tóxica adicional en otro punto a distancia media que permanecerá activa durante una ronda.
 
 ### Animar hongos
 
@@ -87,7 +87,7 @@ Las esporas se empezarán a introducir en el sistema respiratorio de todas las c
 
 Aumentas el tamaño de una masa de hongos y le das una semblanza de vida para que luche por ti. Este hechizo invocará una Criatura Fúngica de nivel 6 que luchará a tu lado hasta que sea destruida. A niveles más altos puedes invocar criaturas de mayor poder, aumentando el nivel de la criatura invocada en 2 por cada Rango que tengas en Ascendencia Fúngica por encima del III. 
 
-**Empoderar** (1 chi): Una criatura fúngica bajo tu control se cura de Vitalidad igual a la mitad de su valor total.
+**Empoderar** (1 chi): Una criatura fúngica bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 ## Rango IV
 

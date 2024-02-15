@@ -94,7 +94,7 @@ Este hechizo puede emplearse en criaturas más lejanas si realizas un ritual ant
 
 Colocas un velo protector en la mente de una criatura que le protegerá de intrusiones mentales y oníricas. Dicho velo debe colocarse en una criatura que puedas tocar y mientras permanezca activo le otorgará Resistencia a efectos Mentales además que empleará tu modificador de Magia Onírica para defenderse de efectos Oníricos hostiles. Si dicha criatura falla su tiro o el velo es eliminado por una criatura ajena lo sabrás de inmediato. Este hechizo permanecerá activo durante ocho horas o hasta que sea eliminado.
 
-**Empoderar** (1 chi): Infundes el velo de una capa adicional de protección, permitiendo a la criatura afectada a tener éxito automático en un tiro para defenderse de un efecto Onírico. Dicha capa se desvanecerá después de ser usada y solo podrás colocar un máx
+**Empoderar** (1 chi): Infundes el velo de una capa adicional de protección, permitiendo a la criatura afectada a tener éxito automático en un tiro para defenderse de un efecto Onírico. Dicha capa se desvanecerá después de ser usada y solo podrás colocar un máximo de tres capas por velo.
 
 ### Pesadillas malditas
 
@@ -106,13 +106,11 @@ Colocas un velo protector en la mente de una criatura que le protegerá de intru
 
 **Duración:** Hasta que sea eliminada
 
-Maldices a una criatura para que tenga dificultades a la hora de dormir. Cada vez que haga un descanso largo debe tirar contra tu Magia Onírica o es incapaz de dormir y sufre 1 + Rango daño a la cordura. Hasta que se libere de la maldición no puede recuperar cordura. También puedes entrar en los sueños de esa criatura sin importar dónde se encuentre.
+Colocas una marca maldita en una criatura que le dará pesadillas horripilantes cada vez que intente dormir. La marca es indetectable y la criatura afectada no puede tirar para evitarla en el momento que la reciba. Mientras esta permanezca activa cada vez que la criatura maldita intente dormir deberá tener éxito en un tiro de Voluntad o Concentración contra tu Magia Onírica o es incapaz de dormir y sufre daño a la cordura igual a tu Rango + 1. 
 
-<u>Manipular sueño</u> (2 acciones): Al entrar en el mundo de los sueños tienes la capacidad de manipular el entorno que te rodea, realizando hazañas imposibles en el mundo real. Haciendo uso de dos acciones puedes alterar la forma y composición de un área de tamaño igual a 5 x rango pies cúbicos en el mundo de los sueños. Si alteras el área a algo que pueda resultar dañino a una criatura que se encuentre en él esta podrá tirar esquiva para evitar el efecto. Manipular sueño puede utilizarse como reacción para contrarrestar una manipulación hecha por otra criatura, permitiéndote emplear tu tiro de magia onírica de forma defensiva. A rango IV utilizar Manipular sueño te cuesta una acción. Las *[ilusiones](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20ilusoria.html)* que creas en el mundo de los sueños serán parcialmente reales como si fuesen creadas con *[Horror onírico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-ii)*.
+Una criatura maldita tampoco es capaz de recuperar cordura de ninguna manera y cada vez que entre en el Plano Onírico atraerá a monstruos de pesadilla. La marca también te permite acceder libremente a los sueños de la criatura afectada sin importar su localización. Esta maldición solo puede eliminarse con hechizos capaces de quitarla como Atrapasueños.
 
-<u>Horror onírico</u> (pasiva): Eres capaz de infundir las ilusiones que creas con energía del mundo de los sueños, otorgándoles un aspecto de terrorífica realidad. Horror onírico puede utilizarse un número de veces al día igual a tu rango y te permite crear *[ilusiones](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20ilusoria.html)* parcialmente reales. Una *[ilusión](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20ilusoria.html)* creada de esta manera no se desvanece al ser interactuada con ella y no requiere tu concentración para existir, pero es mucho más frágil que el objeto que buscas imitar y se desvanecerá al ser destruida. 
-
-Puedes emplear un uso de Horror onírico para invocar a cualquier número de criaturas con nivel combinado igual o inferior a 4. El nivel máximo aumentará por 4 cada vez que obtengas un rango adicional y no podrás controlar criaturas con nivel superior al tuyo. Si descubres el mayor miedo de una criatura utilizando *[Detectar pensamientos](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html)* puedes crear una criatura que le recuerde a dicho miedo, lo cual le dará la habilidad *[Mirada terrorífica](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#mejoras-de-3-pt)* sin la necesidad de gastar PT pero sólo afectando a dicha criatura.
+**Empoderar** (1 chi): Una criatura maldita empieza a recordar sus peores pesadillas, forzándola a tener éxito en un tiro de Concentración o Voluntad contra tu Magia Onírica o aumenta su nivel de miedo por un paso. Solo puedes empoderar así una vez por ronda.
 
 ## Rango III
 
