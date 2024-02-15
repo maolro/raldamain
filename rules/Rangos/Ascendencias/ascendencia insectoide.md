@@ -19,7 +19,7 @@ Ascendencia Insectoide tiene las siguientes reglas fundamentales que se aplican 
 
 *Innata, Pasiva*
 
-Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades además de sus habilidades de metam
+Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades además de sus capacidad de metamorfosis.  Obtienes vista a ciegas a una distancia media además de velocidad de escalada 1 junto a la capacidad de escalar superficies lisas y horizontales. Eres también capaz de emplear el hechizo Inyección mutagénica pagando vigor en lugar de chi para obtener las características de un insecto específico. 
 
 ### Mente insectoide
 
@@ -27,24 +27,31 @@ Tu cuerpo adopta las características de un insecto determinado, otorgándote al
 
 Tu mente funciona de una manera extraña más propia de los insectos que de los seres humanos. Obtienes Resistencia a efectos Mentales además que puedes comunicarte con otros insectos del mismo tipo que el tuyo. Estos insectos nunca serán naturalmente hostiles hacia ti y te tratarán como uno de los suyos,
 
-**Aspecto entrópico**: Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades. Tienes la capacidad de tomar una forma híbrida entre humano e insecto conocida como forma entotrópica durante una cantidad de rondas igual a tu rango + 2, la cual te otorgará una de las siguientes mejoras según el insecto que escojas:
-
-- *Araña:* Obtienes un rango en el ataque natural *mordisco* y al morder a otra criatura le infectarás con un veneno que afecta a una estadística de tu elección con gravedad igual a tu rango de ascendencia + 3.  
-- *Avispa:* Obtienes un rango en el ataque natural *aguijón* y al picar a otra criatura le infectarás con un veneno que afecta a una estadística de tu elección con gravedad igual a tu rango de ascendencia + 3.  
-- *Mantis:* Obtienes un rango en el ataque natural *garras* y tus ataques físicos aumentan su alcance a cercano. Recibes también la habilidad *ataque furtivo*.
-- *Escarabajo:* Obtienes un rango en el ataque natural *golpe* y aumenta tu armadura natural y tus PV por 2.
-
-Más formas insectoides son posibles, pero para acordar las mejoras que te otorguen deberás consultarlo con el máster. Puedes pagar 1 chi para extender esta habilidad una ronda adicional
-
 ## Rango II
 
 Incrementa tu DES por 1.
 
 ### Ovoposición
 
-*Innata, Aflicción*
+*Innata, Mejora, Aflicción*
 
-Coloca larvas insectoides en un objetivo que te permiten controlarlo
+**Coste:** 1 vigor o chi
+
+**Efecto crítico:** El nivel de la infección avanza por un paso adicional
+
+**Duración:** Hasta que sea eliminado
+
+Inyectas larvas parasíticas en un enemigo para matarlo por dentro o tomar control de su cuerpo. Al impactar a un enemigo con un ataque Marcial puedes forzarle a tener éxito en un tiro de CON frente a tu modificador de Ascendencia Insectoide o queda infectado por las larvas. Esta habilidad puede incluso afectar criaturas corpóreas inmunes a Aflicciones ya que las larvas operan de una manera distinta.
+
+Una criatura infectada debe repetir este tiro al principio de su turno o el nivel de infección avanzará por un paso. Si tiene éxito en el tiro el nivel de la infección se reducirá por un paso y en el caso que se encuentre en paso 1 esta quedará neutralizada, impidiendo que tenga que volver a tirar hasta que pase un día. 
+
+Una vez ocurre una infección las larvas solo pueden ser eliminadas por medios mágicos o químicos de Rango superior. Una infección repetida forzará al afectado a tirar de nuevo o su nivel de infección avanzará por un paso. Los pasos de la infección quedan especificados a continuación:
+
+- **Paso 1:** El afectado no sufre ningún efecto negativo
+- **Paso 2:** El afectado quedará *enfermado*
+- **Paso 3:** El afectado sufrirá los efectos de *náuseas*
+- **Paso 4:** Las larvas toman control de su cuerpo, convirtiéndolo en un esclavo a tu voluntad. 
+- **Paso 5:** El afectado está más allá de toda salvación, impidiendo que pueda volver a tirar. Si lo deseas puedes hacer que las larvas lo maten instantáneamente.
 
 ### Invocar marabunta
 
@@ -52,15 +59,19 @@ Coloca larvas insectoides en un objetivo que te permiten controlarlo
 
 **Coste:** 2 acciones y 1 chi o vigor
 
-**Duración:** Una hora	
+**Alcance:** Medio
 
-Invoca una nube de insectos que provoca náuseas
+**Duración:** Una hora
 
-**Empatía con alimañas**: Tienes una conexión superior con las criaturas insectoides, permitiéndote comunicarte con ellas como si hablasen tu idioma. Con esta habilidad puedes emplear a los insectos como fuente de información, aunque estos sólo podrán comunicar aquello que perciban desde su punto de vista (es decir, no podrán comunicar conceptos que no puedan comprender).  
+Desprendes feromonas especiales para comandar a una marabunta de insectos para que obedezca tus órdenes, llamándola al campo de batalla para que te asista. La marabunta aparecerá en un punto a distancia media de ti y ocupará una esfera de tamaño medio. Esta permanecerá en el campo de batalla durante una hora o hasta que sea dispersada, lo cual ocurrirá si sufre ataques de área de la magnitud adecuada.
+
+La marabunta de insectos perjudicará enormemente a las criaturas que se empiezen su turno en el espacio que amenaza o entren ahí, forzándolas a tener éxito en un tiro de CON al principio de su turno o sufren los efectos de *náuseas* durante una ronda. Dependiendo de los insectos escogidos puedes proporcionar desventajas específicas a tus enemigos y la marabunta se moverá un paso una vez por ronda.
+
+**Empoderar** (1 chi o vigor): Invoca una marabunta adicional en otro espacio a distancia media de ti.
 
 ## Rango III
 
-Aprendes hechizos de Transmutación de Rango II
+Eres capaz de emplear los hechizos Consumir esencia y Arma ósea pagando vigor en lugar de chi. 
 
 ### Fortalecer prole
 
@@ -84,7 +95,7 @@ Obtienes más defensa, resistencia a heridas y contadores de escudo
 
 ## Rango V
 
-Aprendes hechizos de Transmutación de Rango III
+Eres capaz de emplear los hechizos Asimilar rasgos y Defensa adaptable pagando vigor en lugar de chi. 
 
 ### Mente colectiva
 
