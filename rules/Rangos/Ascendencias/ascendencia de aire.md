@@ -47,7 +47,7 @@ Si escoges un ataque este impactará de manera automática, sumando su daño bas
 
 **Coste:** 1 vigor o chi
 
-Eres capaz de moverte con la velocidad de un vendaval. una acción adicional en cualquier momento de la ronda, interrumpiendo todo aquello que esté ocurriendo. Si empleas esta habilidad para evitar o detener un ataque con otra acción reducirás el daño de este a la mitad después de aplicar defensa. Esta habilidad solo puede usarse una vez por ronda.
+Eres capaz de moverte con la velocidad de un vendaval. Obtienes una acción adicional que puedes emplear cualquier momento de la ronda, interrumpiendo todo aquello que esté ocurriendo. Si empleas esta habilidad para evitar o detener un ataque con otra acción reducirás el daño de este a la mitad después de aplicar defensa. Esta habilidad solo puede usarse una vez por ronda.
 
 ## Rango III 
 

@@ -127,15 +127,49 @@ Disparas una ensordecedora bomba sónica hacia un punto a distancia media. Haz u
 
 ### Furia de los cielos
 
+*Tormenta, Ambiental, Duradero*
+
+**Coste:** 3 acciones y 2 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Cuatro rondas
+
+Lanzas un poderoso relámpago hacia el cielo para cargarlo y formar una pequeña tormenta. Mientras este hechizo permanezca activo todos tus hechizos relacionados con este rango quedarán empoderadas, obteniendo así Ventaja en todos tus tiros relacionados con Magia de Tormenta. Este hechizo permanecerá activo durante cuatro rondas o hasta que sea disipado por otro hechizo de magnitud similar.
+
+La tormenta también te permitirá lanzar tus hechizos Eléctricos desde el cielo para castigar a tus enemigos. Un hechizo empleado de esta manera tiene alcance lejano y al caer del cielo no puede ser Esquivado. Si atacas a una criatura voladora con un relámpago esta recibirá Desventaja en su tiro defensivo y al impactará caerá inmediatamente del cielo.
+
+**Empoderar** (1 chi): El siguiente hechizo de Tormenta que lances reduce su coste en acciones por 1 (mínimo 0). Solo puedes empoderar así una vez por hechizo.
+
 ### Esferas del relámpago
+
+*Tormenta, Defensivo, Duradero*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Moldeas la energía eléctrica para formar varias esferas de relámpago que te protegerán de ataques enemigos y electrocutarán a tus enemigos. Este hechizo te otorga una cantidad de *contadores de escudo* igual a tu Rango y permanecerá activo hasta que pierdas la concentración o se te acaben los contadores. Puedes también emplear la electricidad que te rodea para atacar a tus enemigos, pudiendo así hacer un ataque de *arco eléctrico* una vez por ronda como acción bonus. 
+
+**Empoderar** (1 chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo. Para empoderar este hechizo debe quedarte por lo menos un contador.
 
 ### Invocar elemental de rayo
 
-**Furia de los cielos** (3 AP y 2 chi): Lanzas un poderoso relámpago hacia el aire para cargarlo y formar una pequeña tormenta. Esta tormenta permanecerá durante el resto del combate y esta te permite una cantidad de veces igual a tu rango lanzar un *arco eléctrico* desde ella hacia cualquier punto en el campo de batalla una vez por turno como acción bonus. Cuando hayas agotado los usos de esta habilidad la tormenta cesará y el clima volverá a la normalidad. Esta habilidad cuesta -2 AP si te encuentras en un entorno ya afectado por una tormenta.
+*Tormenta, Invocación*
+
+**Coste**: 3 acciones y 2 chi
+
+**Alcance**: Medio
+
+**Duración**: Una hora 
+
+Invocas un espíritu de la tormenta para asistirte en el campo de batalla y castigar a tus enemigos. Este hechizo invocará un Elemental de Aire de nivel 6 que luchará a tu lado hasta que sea destruido. 
+
+A rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia de Tormenta por encima de III. 
+
+**Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
 **Esferas del relámpago** (2 AP y 2 chi): Formas una cantidad de esferas del relámpago igual a tu rango – 1 que orbitarán en torno a ti. Mientras te quede al menos una esfera recibes los beneficios de *cubierta* frente a ataques mágicos y todos tus ataques que provoquen daño eléctrico tendrán ventaja y aumentan su alcance a medio. Además, como reacción usable una vez por turno puedes atacar a un objetivo a distancia cercana con un ataque de *toque chispeante* que no puede ser esquivado.  Las esferas permanecerán activos mientras mantengas la concentración y en el momento que la pierdas estas explotarán, provocando una explosión que infligirá 1d4 daño eléctrico por esfera a todas las criaturas en el área (un tiro defensivo contra +3 x esfera reducirá el daño a la mitad). 
-
-**Invocar elemental de rayo** (3 AP y 2 chi): Invoca a un elemental de rayo que permanecerá a tu lado durante el combate. Al mejorar de rango puedes invocarlo con una mejora adicional o invocar a un elemental adicional sin mejora. No puedes controlar a más de 4 elementales a la vez.
 
 ## Rango IV
 

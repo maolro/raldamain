@@ -62,7 +62,7 @@ Concentras el poder de los vientos en un espacio pequeño para crear una intensa
 
 **Duración**: Instantánea 
 
-Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Realiza un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + SAB de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
+Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo lo que encuentres a tu paso. Haz un ataque con magia de Aire contra todas las criaturas en una línea media que inflige 1d6 + SAB de daño contundente al impactar y empuja un paso hacia atrás. Este ataque también destruirá todas las barreras débiles y disipará todos los efectos gaseosos a su paso. 
 
 **Empoderar** (1 chi): Los vientos siguen siendo fuertes durante la siguiente ronda, convirtiendo el área afectada por tu ataque en un *terreno difícil*. Todas las criaturas que comiencen su turno allí o se muevan al espacio afectado deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Aire o serán empujadas hacia atrás un paso y caerán *tropezadas*.
 
@@ -150,11 +150,11 @@ Formas poderosos vientos alrededor de un objetivo de tu elección para inmoviliz
 
 **Duración**: Enfoque
 
-Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando activas este hechizo, todos los vientos dentro de una esfera grande aumentará su fuerza, convirtiendo la zona afectada en *terreno difícil* para las criaturas que elijas y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
+Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando actives este hechizo todos los vientos dentro de una esfera grande aumentarán su fuerza, convirtiendo la zona afectada en *terreno difícil* para las criaturas que elijas y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
 
-Mientras este hechizo esté activo todos los hechizos de Aire se potencian, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque A distancia Físico puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
+Mientras este hechizo esté activo todos los hechizos de Aire quedan empoderados, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque A distancia Físico puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
 
-**Empoderar** (1 chi): El siguiente hechizo de Aire que lances reduce su coste de acción en 1. Esto sólo puede usarse una vez por hechizo.
+**Empoderar** (1 chi): El siguiente hechizo de Tormenta que lances reduce su coste en acciones por 1 (mínimo 0). Solo puedes empoderar así una vez por hechizo.
 
 ### Invocar elemental de aire
 
@@ -168,7 +168,7 @@ Mientras este hechizo esté activo todos los hechizos de Aire se potencian, otor
 
 Concedes una semblanza de vida a una masa de vientos furiosos para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Aire de nivel 6 que luchará a tu lado hasta que sea destruido. 
 
-En rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia del Aire por encima de III. 
+A rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia del Aire por encima de III. 
 
 **Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
