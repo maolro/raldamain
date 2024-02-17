@@ -17,11 +17,12 @@ Cada vez que un personaje suba de nivel podrá incrementar una de sus estadísti
 | Franja de niveles | Limitante |
 | ----------------- | --------- |
 | 1                 | 3         |
-| 2-6               | 4         |
-| 7-10              | 5         |
-| 11-14             | 6         |
-| 15-18             | 7         |
-| 19-20             | 8         |
+| 2-5               | 4         |
+| 6-8               | 5         |
+| 9-11              | 6         |
+| 12-14             | 7         |
+| 15-17             | 8         |
+| 18-20             | 9         |
 
 # Las seis estadísticas
 

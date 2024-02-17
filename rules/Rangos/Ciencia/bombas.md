@@ -96,9 +96,21 @@ Mientras que combinar tiene sus ventajas cabe recalcar que aumentará también e
 
 Al fabricar una bomba puedes añadir componentes especiales para retrasar el momento exacto de la explosión. El tiempo de retraso puede ser como mínimo una ronda y como máximo una hora, provocando los mismos efectos que un ataque cuando esta finalmente explote sin la necesidad de gastar acciones. Lanzar una bomba retardada sigue costando acciones aunque realmente no explote.
 
-Si una persona encuentra la bomba antes que explote esta puede ser desarmada, impidiendo su explosión. Para desarmar una bomba se necesita tener éxito en un tiro de Juego de M¡manos contra tu modificador de Bombas. Si fracasa más de tres veces en el tiro u obtiene un fracaso crítico la bomba explotará al instante sin que el afectado pueda defenderse.
+Si una persona encuentra la bomba antes que explote esta puede ser desarmada, impidiendo su explosión. Para desarmar una bomba se necesita tener éxito en un tiro de Juego de Manos contra tu modificador de Bombas. Si fracasa más de tres veces en el tiro u obtiene un fracaso crítico la bomba explotará al instante sin que el afectado pueda defenderse.
 
 ## Rango III
+
+### Bomba de gas venenoso
+
+Crea gas venenoso al explotar.
+
+### Bomba de chi
+
+Activa un hechizo Arcano o Elemental al explotar
+
+### Explosión defensiva
+
+Puedes emplear bombas para detener ataques enemigos, pudiendo usarlas como reacción si te encuentras en *posición defensiva* para hacer un contrataque con Ventaja.
 
 **Bomba de gas** (proyecto): Conoces como fabricar bombas de gases tóxicos. El gas llena un radio de 15 pies centrado en la zona de impacto y envenenará a todas las criaturas que se encuentren en ese radio que no lleven ninguna clase de protección. El [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos) producido por tus bombas de gas afectará a una estadística de tu elección y su gravedad es igual a la suma de tu INT y tu rango en bombas. Cada turno que una criatura permanezca en el área de un gas deberá tirar contra la gravedad del veneno, aumentando el nivel de este por un paso si fracasa. Aquellos que aguanten la respiración continuarán siendo afectados por el veneno pero a menor efecto, haciendo este tiro sólo una vez cada cuatro turnos. El gas se extenderá por todo el espacio cerrado donde esté y se disipará al cabo de un minuto si hay aperturas al exterior. 
 
@@ -111,12 +123,42 @@ Si una persona encuentra la bomba antes que explote esta puede ser desarmada, im
 
 ## Rango IV
 
+### Detonación a distancia
+
+Puedes crear un mando detonador de hasta tres bombas.
+
+### Bomba teledirigida
+
+La bomba seguirá a un objetivo específico, ignorando cubierta y atacando repetidamente a un enemigo hasta que explote o sea detenida.
+
+### Bomba carnicera
+
+Provoca grandes cantidades de daño físico y heridas permanentes.
+
 **Detonación a distancia** (proyecto): Empleando un mando conectado a las diferentes bombas bajo tu control puedes escoger el momento exacto cuando estas explotan. Puedes ligar como máximo a tres bombas a un único mando de detonación, y en el momento que lo aprietes las bombas escogidas explotarán al instante (las bombas que conectes pueden ser combinadas). Si las bombas estaban ocultas entonces contarán como un ataque sorpresa. No puedes fabricar más de un mando de detonación al día.
 
 **Bomba precisa** (pasiva): Tu buen ojo de granadero evita que tus bombas caigan en posiciones indeseadas. Un número de veces por combate igual a tu rango + 2 puedes repetir un tiro de ataque hecho con bombas y quedarte con el resultado que más desees. Si hay algún aliado en el radio de impacto de la bomba este no sufrirá daño de área si tiene éxito en el tiro de destreza. 
 
 ## Rango V
 
+### Bomba de entropía
+
+La bomba explota y luego implosiona, haciendo mucho daño
+
+### Bomba sísmica
+
+Causa una onda sónica extremadamente poderosa que además provoca un terremoto
+
+### Lluvia de bombas
+
+Puedes lanzar hasta cuatro bombas gastando una sola acción, haciendo todos esos ataques. Esas bombas pueden a su vez estar combinadas y deben ser de rango menor. Al ser tantas son extremadamente difíciles de predecir y detener.
+
 **Bomba devastadora** (proyecto): Una vez al día pagando 3 chi o pagando una cuantiosa suma de dinero puedes fabricar una bomba de gran calibre que causará inmensa destrucción al explotar. Una bomba devastadora es de tamaño mediano, lo cual evita que pueda ser lanzada, y una cuenta atrás de diez minutos como mínimo. Al explotar la bomba devastadora hará los efectos de [terremoto](https://raldamain.com/rules/Rangos/Elementalismo/magia%20de%20tierra.html#rango-v) en un radio grande y matará instantáneamente a todas las criaturas que se localicen a una distancia corta de ella. La bomba devastadora puede ser desarmada de la misma manera que una *bomba retardada*,
 
 **Trampa mágica** (proyecto): Puedes fabricar trampas mágicas usando chi puro, ligando así un hechizo a ellas. El hechizo puede ser cualquiera conocido por ti o un aliado dispuesto a ayudarte en la fabricación de la trampa. Si el hechizo es de un único uso, este tendrá efecto cuando la trampa sea activada y se gastará al momento (como por ejemplo [geas](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20mental.html#rango-iv), [rayo de energía]() o [eliminar magia](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)), mientras que si el hechizo es de larga duración este permanecerá activo tras la activación de la trampa hasta que haya pasado una hora, como es el caso de [terreno alucinatorio](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20ilusoria.html#rango-ii), [cierre dimensional](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20espacial.html#rango-iv) o [zona antimágica](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-iv). No puedes fabricar más de una trampa mágica al día.
+
+## Rango VI
+
+### Destructora de mundos
+
+Fabricas una bomba nuclear
