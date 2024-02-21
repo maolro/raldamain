@@ -175,7 +175,7 @@ Si escoges fortalecer las llamas provocarás ahí el mismo efecto que Muro de Ll
 
 **Duración**: Una hora
 
-Animas una masa de furiosas llamas para crear un guerrero elemental que luchará a tu lado contra tus enemigos. Este hechizo invocará un Elemental de Fuego de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
+Animas una masa de furiosas llamas para crear un guerrero elemental que luchará a tu lado contra tus enemigos. Este hechizo invocará un Elemental de Fuego de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Fuego por encima del III. 
 
 **Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 

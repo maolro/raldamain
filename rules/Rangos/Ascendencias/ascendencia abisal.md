@@ -74,7 +74,7 @@ Eres capaz de usar el poder del abismo para reponer tus fuerzas a costa de destr
 
 **Duración:** Una hora
 
-Invocas a una criatura abisal para que te asista en el campo de batalla y acabe con todos los enemigos en tu camino. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
+Invocas a una criatura abisal para que te asista en el campo de batalla y acabe con todos los enemigos en tu camino. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el DJ. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
 
 **Empoderar** (1 chi o vigor): La criatura invocada recupera la mitad de su Vitalidad.
 

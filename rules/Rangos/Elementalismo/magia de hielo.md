@@ -121,8 +121,6 @@ El hielo se mantendrá en el campo de batalla hasta que se derrita, lo cual ocur
 
 **Empoderar** (1 chi): Al moverte un paso puedes crear este efecto como acción bonus en el lugar que ocupaste antes, llenando así un espacio de radio pequeño con hielo resbalante.
 
-**Neblina polar** (2 AP y 1 chi): Creas una niebla sobrenaturalmente fría que llenará un espacio de radio medio. La niebla otorga *ocultamiento* a todas las criaturas que se encuentren en ella y cada criatura sin protección contra el frío que entre en la niebla o empiece su turno ahí sufrirá 2 daño frío. Todos tus ataques de magia de hielo tienen ventaja contra criaturas en la neblina, y esta permanecerá hasta que pasen rango + 1 rondas o pierdas la concentración
-
 ## Rango III
 
 Todos tus hechizos de Hielo sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).

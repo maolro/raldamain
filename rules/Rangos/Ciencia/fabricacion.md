@@ -18,27 +18,47 @@ Recibes cuatro ranuras de objeto de Rango I
 
 ### Reparación rápida
 
-Elimina el efecto de estado *roto* de un objeto o curas a un constructo
+*Fabricación, Toque*
+
+**Coste:** 2 acciones
+
+**Alcance:** Cuerpo a cuerpo
+
+Empleas tus conocimientos técnicos para arreglar rápidamente un objeto dañado en el fragor del combate. Al emplear esta habilidad puedes eliminar el efecto de estado *roto* de un objeto que tengas en tus manos, devolviéndolo a su estado anterior. Para arreglar un objeto de esta manera necesitas tener las herramientas adecuadas y este debe encontrarse en un estado donde la reparación sea posible. 
+
+Esta habilidad también puede emplearse para reparar los daños que haya sufrido un constructo, pudiendo así sanarle Vitalidad igual a tu Rango + 2. Si el constructo afectado tiene activa una *herida permanente* o efecto de estado negativo puedes eliminarla si tienes éxito en un tiro de Fabricación contra una dificultad escogida por el DJ según la naturaleza del efecto. Cada uso de esta habilidad solo te permite eliminar un único efecto.
 
 ### Piedra de enviar
 
-Construyes una piedra de enviar, un aparato que permite la comunicación rápida entre individuos
+*Objeto, Espacial*
+
+Una piedra de enviar es un pequeño dispositivo semejante a una gema azulada unida con otra piedra de igual tamaño y apariencia por medio de un glifo de magia espacial. Ambas piedras están unidas por magia espacial para que estas actúen como si se encontrasen en el mismo punto del espacio, permitiendo que todos los sonidos cercanos a esta sean escuchados en la otra sin importar los límites de la distancia mientras se encuentre activa.
+
+Si una de las dos piedras es destruida la otra dejará de funcionar, y para reactivarla es necesario colocar un glifo igual en otra piedra de tu elección. Puedes unir una tercera piedra a la conexión gastando una ranura de proyecto adicional en ella llegando hasta un máximo de 4. 
 
 ### Imbuir hechizo
 
-Colocas un hechizo que conozcas en un objeto para que lo use tres veces antes de requerir reparación con rango igual al rango de la ranura de proyecto empleada. Puedes colaborar con otros que conozcan el hechizo pero eso consumirá una ranura de proyecto adicional. El DJ puede vetar combinaciones imposibles.
+*Objeto, Proyecto*
+
+Empleas tu conocimiento de la magia para imbuir objetos con su poder. Al finalizar este proyecto creas un objeto imbuido con un hechizo que conozcas con Rango igual al de la ranura de proyecto empleada. El usuario del objeto puede lanzar el objeto sin la necesidad de gastar chi, empleando tu modificador de Fabricación y tu Rango en esta habilidad para los propósitos de sus efectos. 
+
+Después que el hechizo sea lanzado tres veces el objeto quedará desactivando, requiriendo que lo repares para que sea empleable de nuevo. Puedes colaborar con otros individuos para crear objetos imbuidos con hechizos que ellos conozcan a costa de consumir una ranura de proyecto adicional. Cabe recalcar que el DJ puede vetar determinadas combinaciones de hechizos y objetos si lo considera inválido.
 
 ### Fabricar aleación
 
-Conviertes el material de un arma o armadura en *material superior*. (material superior 2 a rango III y material superior 3 a rango V).
+*Objeto, Proyecto*
+
+Mezclas varios metales y minerales para crear una sólida aleación que puedes usar para crear armas o armaduras. Un arma o armadura creada de esta manera tendrá la propiedad *material superior*, impidiendo que pueda ser destruida por objetos que no cuenten con la misma propiedad. 
+
+Un arma con *material superior* aumenta sus dados de daño por un paso mientras que un armadura incrementará su DEF por 2 y reducirá su penalizador de armadura por esa misma cantidad. Estas mejoras no se acumulan con otras habilidades que otorguen lo mismo.
+
+A rangos superiores puedes fabricar aleaciones aún más potentes. Si empleas esta habilidad a Rango III aplica las mejoras de *material superior* una vez adicional en el mismo objeto mientras que si la usas a Rango V podrás aplicarlas dos veces adicionales. 
 
 ### Respirador
 
-Permite al portador respirar bajo el agua y filtrar gases venenosos
+*Objeto, Proyecto*
 
-<u>Reparar objeto</u> (3 acciones): Tu conocimiento de ingeniería te permite ágilmente reparar objetos dañados. Puedes emplear una hora de trabajo para incrementar la efectividad de un objeto dañado por 1, restaurándolo a su estado anterior. Un número de veces al día igual a tu rango de Fabricación + 1 puedes realizar un Arreglo rápido, lo cual te permite emplear 3 acciones para aumentar la efectividad de un objeto dañado por 1. Debes llevar las herramientas adecuadas para emplear esta habilidad. Reparar objeto te permite también usar el talento Primeros Auxilios para sanar a constructos, empleando tu estadística de Inteligencia para el tiro.
-
-<u>Tecnomancia</u> (proyecto): Empleando los adecuados inventos puedes manipular el chi a tu voluntad, simulando los efectos de la magia. Este rango te permite fabricar inventos que simulen las habilidades de determinados hechizos de magia arcana que conocidos por ti o un aliado. Cada invento podrá tener contenido un único hechizo cuyo rango no exceda tu rango de fabricación, y en el caso que ninguno de tus aliados conozca el hechizo que busques deberás pagar una cantidad de crédito igual al rang. Un hechizo ligado a un objeto de esta manera se usará de manera innata, teniendo así un efecto y una cantidad de usos según la naturaleza del hechizo empleado. Un objeto de este tipo cuenta como un sistema operativo y puede ser afectado por efectos de [Sabotaje](https://raldamain.com/rules/Rangos/Ciencia/sabotaje.html) o [Disrupción](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-i).
+Este dispositivo te permite filtrar el aire y proporciona oxígeno para que puedas sobrevivir hasta en los entornos más hostiles. El respirador te otorga Inmunidad a efectos Gaseosos y te permite mantener la respiración hasta un máximo de 30 minutos. Este objeto es bastante frágil y se romperá si sufres un ataque apuntado a la cabeza.
 
 ## Rango II
 
@@ -46,27 +66,45 @@ Recibes dos ranuras de objeto de Rango II y una ranura adicional de Rango I
 
 ### Infusión elemental
 
-Imbuye un arma con poderes relacionados con un elemento específico. Provocará así daño adicional de ese elemento y un efecto crítico específico. Si escoges una armadura otorgará Resistencia.
+*Objeto, Proyecto, Mejora*
+
+Infundes un arma o armadura con energía poderes relacionados con un elemento mágico. Escoge un elemento entre Fuego, Hielo, Ácido, Eléctrico, Sónico, Radiante o Necrótico. El objeto afectado recibirá el rasgo del mismo nombre que el elemento escogido y no puedes colocar más de un elemento al mismo objeto.
+
+Los efectos exactos de una infusión dependen del objeto escogido. Si la aplicas en un arma esta infligirá 1d6 + Rango daño adicional del mismo tipo que el elemento escogido y obtendrá un efecto crítico igual a un hechizo de Rango I con el mismo tipo. Si la aplicas a una armadura otorgará Resistencia a ese elemento además de Inmunidad a los efectos críticos provocados por hechizos de esa categoría.
 
 ### Prótesis mecánica
 
-Fabricas una prótesis de un brazo o una pierna perfectamente utilizable. El brazo puede tener armas integradas.
+*Objeto, Proyecto, Mejora*
+
+Fabricas una prótesis mecánica de un brazo o una pierna capaz de funcionar igual que uno de carne y hueso. Un personaje puede usar una prótesis mecánica para sustituir un miembro perdido, funcionando de la misma manera que este. Al tratarse de un miembro mecánico puedes integrarle armas o mejoras específicas que conozcas como ranuras ocultas o propulsores. 
+
+Un usuario de un arma integrada no podrá ser desarmado de ella salvo que el brazo sea destruido y puede emplear tu modificador de Fabricación en sus tiros de ataque si así lo desea. Si tiene Rangos en el arma escogida podrá aplicar sus habilidades en el arma integrada sin ningún problema.
 
 ### Antimágica
 
-Un arma recibe la capacidad de eliminar hechizos que impacte además de detenerlos. Si aplicas esta mejora a un armadura otorgará Resistencia Arcana al portador y PV temporales.
+*Objeto, Proyecto, Arcano*
+
+Fabricas un objeto capaz de repeler la magia misma usando materiales especiales o infusiones de Magia Protectora. Un objeto con esta mejora no puede tener hechizos infundidos pero podrá protegerte de estos. Las propiedades del objeto variarán si se trata de un arma o un armadura tal como se indica a continuación.
+
+Si aplicas esta mejora a un arma puedes usarla en tiros de Parada para defenderte de efectos Arcanos además que puedes emplear el hechizo Eliminar magia sin la necesidad de gastar chi cada vez que impactes a un enemigo con hechizos Arcanos activos. Dicho hechizo empleará tu modificador de Fabricación y contará con Rango igual al que tengas en esta habilidad. 
+
+Si aplicas esta mejora en un armadura hará que esta otorgue q su portador Resistencia a efectos Arcanos. Esta también otorgará PV temporales a su portador igual a tu Rango + 2 además de la capacidad de emplear tu modificador de Fabricación en sus tiros para defenderse de efectos Arcanos.
 
 ### Batería de chi
 
-Puede guardar hasta tres chi en su interior para uso futuro. El chi almacenado se mantiene hasta que sea absorbido.
+*Objeto, Proyecto, Arcano*
+
+Una batería de chi es un dispositivo capaz de almacenar energía mágica para uso futuro. Una batería conectada otro dispositivo de chi este duplicará su duración antes de necesitar una recarga. Esta también puede ser empleada por un mago arcano para lanzar sus hechizos, permitiéndole incrementar su reserva por 3 por cada batería que lleve.
+
+Debido al volumen de una batería no es posible llevar más de dos baterías encima. Estas también se caracterizan por ser muy inestables, explotando con facilidad si son impactadas por un ataque de cualquier tipo. Una batería que explote provocará una explosión de chi que provoca 2d6 + INT daño Arcano y con dificultad igual a tu Modificador de Fabricación para evitarla .
 
 ### Visión mejorada
 
-Permite al portador ver en la oscuridad, percibir el calor o recibir vista a ciegas en un radio corto.
+*Objeto, Proyecto*
 
-<u>Mejora mágica</u> (proyecto): Eres capaz de modificar armas y armaduras empleando el chi para mejorar sus capacidades. Aplicar una mejora mágica requiere un gasto de los recursos adecuados además de una hora de trabajo por nivel de mejora. No puedes añadir mejoras a un arma o armadura que tengan un valor en créditos superior a tu rango de fabricación.
+Fabricas unas gafas equipadas con sensores infrarrojos capaces de percibir el calor a distancia media. Activar los sensores infrarrojos te cuesta una acción y con ellos puedes detectar la posición exacta de todas las criaturas que desprendan calor en el área de los sensores, evitando así que tus enemigos obtengan ventajas por invisibilidad o ataques sorpresa. 
 
-<u>Programar sistema</u> (proyecto): Empleando tus conocimientos de magia y ciencia puedes elaborar complejos sistemas mágicos capaces de guardar información o ejercer trabajos de manera automática. La naturaleza de estos sistemas queda decidida por ti con el consentimiento del máster y tendrán un coste en créditos equivalente al suyo.
+Puedes crear variantes de este objeto que te otorguen visión a oscuras a distancia lejana o vista a ciegas en un radio corto. Solo puedes tener un tipo de visión especial activa a la vez. 
 
 ## Rango III
 
