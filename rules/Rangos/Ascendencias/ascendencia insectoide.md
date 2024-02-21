@@ -65,7 +65,7 @@ Una vez ocurre una infección las larvas solo pueden ser eliminadas por medios m
 
 Desprendes feromonas especiales para comandar a una marabunta de insectos para que obedezca tus órdenes, llamándola al campo de batalla para que te asista. La marabunta aparecerá en un punto a distancia media de ti y ocupará una esfera de tamaño medio. Esta permanecerá en el campo de batalla durante una hora o hasta que sea dispersada, lo cual ocurrirá si sufre ataques de área de la magnitud adecuada.
 
-La marabunta de insectos perjudicará enormemente a las criaturas que se empiezen su turno en el espacio que amenaza o entren ahí, forzándolas a tener éxito en un tiro de CON al principio de su turno o sufren los efectos de *náuseas* durante una ronda. Dependiendo de los insectos escogidos puedes proporcionar desventajas específicas a tus enemigos y la marabunta se moverá un paso una vez por ronda.
+La marabunta de insectos perjudicará enormemente a las criaturas que empiezen su turno en el espacio que amenaza o entren ahí, forzándolas a tener éxito en un tiro de CON al principio de su turno o sufren los efectos de *náuseas* durante una ronda. Dependiendo de los insectos escogidos puedes proporcionar desventajas específicas a tus enemigos y la marabunta se moverá un paso una vez por ronda.
 
 **Empoderar** (1 chi o vigor): Invoca una marabunta adicional en otro espacio a distancia media de ti.
 
