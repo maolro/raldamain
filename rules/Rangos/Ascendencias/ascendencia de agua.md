@@ -55,21 +55,51 @@ Eres capaz de emplear los hechizos Muro de agua y Ola chocante empleando vigor e
 
 *Innata, Agua, Duradera*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 2 acciones y 2 chi o vigor
 
+**Duración:** Concentración
 
+Manipulas las aguas a tu alrededor para crear una cubierta que te protegerá de ataques enemigos y empoderará tu magia de Agua. Mientras esta habilidad permanezca activa recibes Ventaja en todos tus tiros relacionados con Magia de Agua y reduces todo el daño recibido por un valor igual a tu Rango + 1. Este hechizo permanecerá activo hasta que pierdas la concentración o las aguas sean disipadas por otro efecto.
 
-**Forma fluida** (2 AP y 1 chi, Agua, Concentración): Te rodeas de una capa de aguas rugientes que reduce todo el daño que recibas por un valor igual a tu rango – 1 además que todo el espacio a distancia cercana de ti cuenta como terreno difícil. (1 chi, 1/ronda) Todas las criaturas adyacentes a ti deberán tener éxito en un tiro de FUE contra tu CAR o serán empujadas un paso hacia atrás (la CAR es modificada por tu rango en magia de agua). Esta habilidad dura una cantidad de rondas igual a tu rango + 1 o hasta que pierdas la concentración.
+Las aguas también dificultarán el paso a todo enemigo que se intente acercar a ti, convirtiendo el espacio a distancia cercana en *terreno difícil* y otorgándote la capacidad de emplear tu modificador de Ascendencia de Agua para defenderte de todo tipo de ataques enemigos. Las ventajas otorgadas por esta habilidad no se acumulan con aquellas otorgadas por Controlar el Agua o Lluvias torrenciales.
 
-**Conexión elemental**: Si te encuentras en contacto con el agua te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto sumergido en el agua recuperas también todos tus PV. (1 chi, 1/ronda) Recuperas una cantidad de Vitalidad igual a tu rango de ascendencia + 2 si estás en contacto con el agua. 
+**Empoderar** (1 chi o vigor): Tienes éxito automático en un tiro de Parada contra un ataque A distancia o lanza el hechizo Torrente como acción bonus contra todos los enemigos a distancia cercana de ti.
+
+### Conexión elemental
+
+*Innata, Pasiva*
+
+Tu profunda conexión con el agua hace que esta sane tus heridas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 1 si te encuentras en contacto con el agua además que puedes sanarte de una *herida permanente leve* o *quemadura* que tengas activa. 
+
+**Empoderar** (1 chi o vigor): Reduce el coste de un hechizo de Agua que conozcas por una acción. Solo puedes empoderar así una vez por hechizo.
 
 ## Rango IV 
 
 ### Columna de agua
 
-**Columna de agua:** Recibes velocidad de vuelo 1 y ventaja en todos tus tiros de esquiva y de ataque con armas cuerpo a cuerpo contra criaturas incapaces de volar. No podrás volar más de dos pasos encima del agua y dejarás inmediatamente de volar si pierdes la concentración (1 chi) Puedes volar encima de una superficie de tierra cercana a la masa de agua durante una ronda. 
+*Innata, Duradera*
 
-**Ataques infundidos**: Al impactar con un ataque físico cuerpo a cuerpo puedes *desenganchar* como acción bonus y puedes gastar 1 chi para entrar en *posición defensiva* (esto es gratuito si estás en *forma fluida*). Si tienes rangos en magia de hielo obtienes la habilidad con el mismo nombre perteneciente a *ascendencia boreal*.
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+El agua a tus pies surge hasta formar un columna de aguas rugientes que te permite volar una cantidad limitada. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 siempre y cuando te encuentres encima de una superficie de agua, lo cual te otorga Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración o pases una ronda entera fuera del agua.
+
+La columna de agua creará un vórtice de agua a tus pies que dificultará que tus enemigos puedan acercarse a ti. Cada vez que te muevas toda criatura en tu camino debe tener éxito en un tiro de Heroísmo o Atletismo contra tu modificador de Ascendencia de Agua o sufren 1d8 + SAB daño Contundente y son empujados un paso hacia atrás. Lo mismo ocurrirá si una criatura incapaz de volar entra en un espacio a distancia cercana de ti.
+
+### Flagelo de las corrientes
+
+*Innata, Mejora*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Formas dos tentáculos de agua en tus manos para aumentar el alcance y fuerza de tus ataques físicos. Mientras este hechizo permanezca activo tus ataques Físicos aumentan su alcance a medio y al impactar tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Ascendencia de Agua o serán empujados o arrastrados un paso. 
+
+Adicionalmente, cada vez que impactes a un enemigo con un ataque infundido este perderá un *contador de escudo* si tiene alguno y su armadura quedará *rota*. Dicho ataque también ignorará las defensas otorgadas por muros o cubierta. Este hechizo permanecerá activo hasta que pierdas la concentración. 
+
+**Empoderar** (1 chi o vigor): Haz un ataque adicional contra un objetivo diferente que puedas alcanzar.
 
 ## Rango V 
 
@@ -77,13 +107,29 @@ Aumenta tu estadística de CON por 1. Eres capaz de emplear los hechizos Prisió
 
 ### Elemento del cambio
 
-### Señor de los mares
+*Innata, Pasiva*
 
-**Elemento del cambio**: Obtienes resistencia al daño fuego igual a tu rango + 1 y al principio de tu turno puedes obtener immunidad contra el efecto de estado de tu elección durante esta ronda (debes escoger entre *ralentizado, enfermado, fatigado, aturdido* o *confundido*). Además, si te encuentras en un entorno rodeado por agua recibes los beneficios de *visión futura*, recibiendo así ventaja en todos tus tir
+Tu conexión elemental ha hecho que tu cuerpo sea adaptable y versátil como el agua misma. Obtienes Resistencia a efectos de Fuego, Frío, Ácido, Miedo, Mentales y Aflicciones. Puedes también respirar bajo el agua durante una cantidad ilimitada de tiempo y eres capaz de comunicarte con criaturas marinas y elementales de agua de todo tipo, quienes te tratarán como un igual.
+
+### Forma acuosa
+
+*Innata, Duradera*
+
+**Coste:** 1 acción y 2 chi
+
+**Duración:** Concentración
+
+Conviertes tu cuerpo en líquido para volverte aún más versátil y peligroso.  Mientras esta habilidad permanezca activa tu cuerpo se transforma en agua, otorgándote Inmunidad a efectos Físicos, Aflicciones y Mentales a costa de recibir Vulnerabilidad al daño Frío y Fuego. No obstante, al estar hecho de agua no puedes usar armas físicas ni emplear habilidades que no sean de Agua pero puedes pasar por las ranuras más pequeñas.
+
+Tu forma de agua te permite también absorber el agua que te rodea para potenciar tus habilidades. Esto te permite emplear las habilidades Forma fluida, Columna de agua y Flagelo de las corrientes como acción bonus si te encuentras en una superficie de agua.
+
+Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con neblinas o tormentas de nieve activas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos. 
 
 ## Rango VI
 
 ### Forma elemental
+
+Forma tocha
 
 **Forma elemental** (3 AP y 5 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 

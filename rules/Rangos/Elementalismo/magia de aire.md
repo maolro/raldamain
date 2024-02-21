@@ -72,7 +72,7 @@ Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo
 
 *Aire, Defensiva, Duradera*
 
-**Coste**: 2 acciones y 1 chi
+**Coste**: 1 acción y 1 chi
 
 **Alcance**: Medio
 

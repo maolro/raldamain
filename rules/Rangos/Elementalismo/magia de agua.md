@@ -1,5 +1,5 @@
 ---
-title: Magia de Agua
+ title: Magia de Agua
 image: magia_agua.jpg
 ---
 
@@ -119,7 +119,7 @@ A través de movimientos elegantes moldeas el agua para formar un fluido tentác
 
 ## Rango III
 
-Todos tus hechizos de Agua sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
+Todos tus hechizos de Agua sustituyen sus dados de daño por d8.
 
 ### Prisión Acuosa
 
@@ -141,7 +141,7 @@ Al impactar a un enemigo con un ataque de agua puedes lanzar este hechizo como a
 
 *Agua, Ambiental, Duradera*
 
-**Coste**: 3 acciones y 2 chi
+**Coste**: 2 acciones y 2 chi
 
 **Tamaño**: Radio grande
 
@@ -169,13 +169,11 @@ Concedes una semblanza de vida a una masa de aguas enfurecidas para que puedan p
 
 ## Rango IV
 
-Todos tus hechizos de Agua de Rango II cuestan una acción menos para emplear (mínimo 1).
-
 ### Vórtice
 
 *Agua, Ataque, Área, Restricción, Duradera*
 
-**Coste**: 3 acciones y 2 chi
+**Coste**: 2 acciones y 2 chi
 
 **Alcance**: Medio
 
@@ -217,7 +215,7 @@ Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni
 
 *Agua, Ataque, Área*
 
-**Coste**: 2 acciones y 2 chi
+**Coste**: 1 acción y 2 chi
 
 **Tamaño**: Línea mediana
 
@@ -233,13 +231,13 @@ Este ataque no puede ser detenido por muros elementales de cualquier tipo. Adem�
 
 ## Rango V
 
-Todos tus hechizos de Agua sustituyen sus dados de daño por d10 y aquellos de Rango III que conozcas cuestan una acción menos para emplear (mínimo 1).
+Todos tus hechizos de Agua sustituyen sus dados de daño por d10.
 
 ### Tsunami
 
 *Agua, Ataque, Área, Agarre, Duradera*
 
-**Coste**: 3 acciones y 3 chi
+**Coste**: 2 acciones y 3 chi
 
 **Alcance**: Medio
 
@@ -259,7 +257,7 @@ La ola continuará moviéndose un paso cada ronda, atacando de nuevo a todas las
 
 *Agua, Ambiental*
 
-**Coste**: 3 acciones y 3 chi
+**Coste**: 2 acciones y 3 chi
 
 **Alcance**: Personal
 
@@ -277,7 +275,7 @@ Las lluvias durarán una hora o hasta que un hechizo Ambiental de similar magnit
 
 *Agua, Gaseoso, Área, Duradera*
 
-**Coste**: 3 acciones y 3 chi
+**Coste**: 2 acciones y 3 chi
 
 **Alcance**: Medio
 
@@ -294,8 +292,6 @@ Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta
 **Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o incrementa el daño de este hechizo a 2d10 + SAB durante esta ronda.
 
 ## Rango VI
-
-Todos tus hechizos de Agua de Rango IV cuestan una acción menos para emplear (mínimo 1).
 
 ### Furia del océano
 

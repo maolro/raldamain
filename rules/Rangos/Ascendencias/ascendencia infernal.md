@@ -49,23 +49,37 @@ Desarrollas los mismos sentidos que un demonio para ver en la oscuridad más pro
 
 ## Rango III		
 
-Aprendes dos hechizos de Rango II o menos relacionados con tu patrón infernal.
+Aprendes dos hechizos de Rango II o menos relacionados con tu patrón infernal y puedes emplear vigor en lugar de chi para lanzarlos.
 
 ### Alas demoniacas
 
 *Innata, Pasiva*
 
+Manifiestas alas demoníacas semejantes a las de un murciélago para obtener la capacidad de volar. Las alas te otorgarán velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Puedes hacer que las alas aparezcan o desaparezcan como acción bonus y estas se desvanecerán durante una ronda al perder la concentración.
+
 ### Siervos del contrato
 
 *Innata, Invocación*
 
-**Alas demoniacas:** (2 chi): Manifiestas unas alas infernales que aumentan tu velocidad de vuelo por 2 y permanecerán activas durante el resto del combate. Recibes también ventaja en todos tus tiros de ataque y defensa hechos contra criaturas incapaces de volar.
+**Coste:** 3 acciones y 2 chi
 
-**Siervos del contrato** (3 acciones y 2 chi): Tu lealtad al infierno es recompensada con varios demonios a tu servicio. Con esta habilidad invocas a uno de los demonios que te sirven, el cual tendrá las estadísticas de una criatura infernal. Cada vez que obtengas un rango adicional tus invocaciones recibirán una mejora y no puedes invocar a más de 4 demonios a la vez.
+**Duración:** Una hora
+
+Tu contrato con un señor infernal te permite llamar a sus esbirros para que te asistan en el campo de batalla. Invoca una criatura Infernal cuyo nivel no supere tu Rango x 2. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente. Las estadísticas de la invocación deben ser permitidas por el DJ.
+
+**Empoderar** (1 chi o vigor): Una criatura invocada recupera la mitad de su Vitalidad
 
 ## Rango IV
 
-Incrementa tu INT por 1.
+Aumenta tu estadística de INT y su limitador por 1.
+
+### Presencia majestuosa
+
+*Innata, Miedo, Duradera*
+
+### Cadenas del contrato
+
+Formar pacto de vida con hasta dos otras criaturas para transferirle daño.
 
 **Ataques profanos**: Tus armas y ataques naturales están infundidos del poder del infierno. Infliges +1d6 daño de energía con tus ataques físicos y todas las heridas permanentes que provoques son consideradas como profanas, las cuales cuestan 1 chi adicional para sanar mágicamente. Si usas la habilidad *arma profana* el daño se acumula y todas tus heridas permanentes aumentan su efectividad por un paso.
 
@@ -73,7 +87,31 @@ Incrementa tu INT por 1.
 
 ## Rango  V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 1
+Aprendes dos hechizos de Rango III o menos relacionados con tu patrón infernal y puedes emplear vigor en lugar de chi para lanzarlos.
+
+### Corrupción demoníaca
+
+*Innata, Pasiva*
+
+A través de un siniestro ritual corrompes tu alma para adoptar las características de un demonio. Obtienes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a Aflicciones, Fuego, Hielo y Miedo. Eres también capaz de comunicarte con criaturas infernales de todo tipo y las de menor nivel te obedecerán sin rechistar. 
+
+### Puertas del infierno
+
+*Innata, Ambiental*
+
+**Coste:** 3 acciones y 3 chi o vigor
+
+**Tamaño:** Radio grande
+
+**Duración:** Seis rondas
+
+A. Este hechizo afectará una zona de tamaño igual a un radio grande y mientras permanezca activo todo el terreno que ocupe se convertirá en Tierra consagrada para los adoradores de los espíritus. Portal espiritual durará seis rondas o hasta que sea eliminado por otros efectos de similar magnitud.
+
+El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el mundo de los espíritus debido a este hechizo volverá al plano material.
+
+Debido a las diferencias temporales toda persona que se encuentre en el plano espiritual recibirá efectivamente tres acciones adicionales respecto a aquellos que estén en el plano material. El plano espiritual se solapará exactamente con el material debido a este hechizo, haciendo así que las distancias entre ambas sean iguales
+
+**Empoderar** (1 chi o vigor): Cambias de plano como reacción para evitar un ataque enemigo. Esto cuenta como un efecto Espacial.
 
 **Blasfemia:** Tus hechizos mentales e ilusorios son capaces de traspasar la resistencia a efectos mentales que tengan tus objetivos, tratándola como si no tuviesen. Esto no funcionará contra criaturas con *mente en blanco* o efectos equivalentes que les otorguen resistencias. (1 chi) Pronuncias una horripilante blasfemia al usar un hechizo, forzando a todos los objetivos que puedan escucharte deberán escoger entre quedarse *ensordecidos* durante una ronda o reducir su cordura por un valor igual al rango del hechizo. 
 
@@ -83,7 +121,22 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un va
 
 Incrementa tu CON por 1.
 
-**Señor de la sima**: Realizando un ritual oscuro abandonas tu cuerpo mortal para convertirte en un demonio. Como demonio duplicas tu esperanza de vida y obtienes resistencia 4 contra enfermedades, venenos y efectos mentales. Los demonios de menor nivel te obedecen sin cuestionarte.
+### Señor de la sima
+
+*Innata, Mejora*
+
+**Coste:** 3 acciones y 5 chi o vigor
+
+**Duración:** Seis rondas
+
+Te fusionas con un demonio poderoso para mejorar notablemente tu fuerza y poderes mágicos. Al activar Señor de la sima recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Señor de la sima por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Señor de la sima te otorgará los siguientes beneficios:
+
+- Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque.
+- Todos tus ataques físicos provocarán los efectos de Arma profana al impactar.
+- Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Todos tus hechizos obtenidos por Ascendencia infernal no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
 
 **Puertas del infierno** (3 acciones y 5 chi): Abres un portal al mismo infierno durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura celestial con x-1 mejoras. Además, todo el área cercano al portal se llena de un calor abrasador que infligirá una quemadura leve a todas las criaturas que empiecen su turno ahí.
 

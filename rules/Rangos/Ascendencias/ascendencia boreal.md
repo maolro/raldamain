@@ -1,5 +1,5 @@
 ---
- title: Ascendencia Boreal
+title: Ascendencia Boreal
 category: Ascendencias
 ---
 
@@ -55,15 +55,23 @@ Eres capaz de emplear los hechizos Muro de hielo y Neblina polar empleando vigor
 
 ### Manto nevado
 
-Otorga Ventaja en tiros de ataque y Magia de Hielo además de un aura de frío
+*Innata, Hielo, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Absorbes el calor a tu alrededor para rodearte de un aura de frío extremo que empoderará tus habilidades mágicas. Mientras este hechizo permanezca activo recibirás Ventaja en todos tus tiros relacionados con Magia de Hielo además que todo el espacio a distancia cercana contará como frío extremo. 
+
+El aura te otorgará también Resistencia a efectos de Agua, Fuego y Naturaleza. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada. Las ventajas otorgadas por esta habilidad no se acumulan con aquellas otorgadas por Neblina polar.
+
+**Empoderar** (1 chi o vigor): Congelas el siguiente ataque dirigido contra ti, teniendo éxito automático en un tiro defensivo para defenderte de un efecto de Fuego, Agua o A distancia. Si empleas esta habilidad en un enemigo que haga un ataque cuerpo a cuerpo contra ti este debe tener éxito en un tiro de CON frente a tu modificador de Ascendencia de Hielo o sufrirá 1d8 + Rango daño Frío.
 
 ### Caminante del viento
 
-Puede volar en tormentas de nieve 
+*Innata, Pasiva*
 
-**Manto nevado** (2 acciones y 1 chi): Te rodeas de vientos gélidos que te otorgan *ocultamiento* además de ventaja en tus tiros de sigilo. Toda criatura que empiece su turno o entre en un espacio a distancia corta de ti sufrirá 2 daño frío obligatorio. (1 chi, 1/turno) Todas las criaturas a una distancia corta de ti sufren 2 daño frío y estás protegido por un *muro de viento* durante una ronda. Esta habilidad dura rango + 1 rondas o hasta que pierdas la concentración.
-
-**Conexión elemental**: Si te encuentras en un espacio afectado por una tormenta de nieve, frío extremo o fuerte presencia espiritual te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto en ese terreno recuperas también todos tus PV.
+Has desarrollado una conexión más profunda con el poder del hielo que te permite convertirte en uno con las tormentas de nieve. Obtienes velocidad de vuelo 2 si te encuentras en un lugar afectado por una tormenta de nieve además de Ventaja en todos tus tiros de Esquiva. El hielo a tu alrededor curará también tus heridas, pudiendo así sanarte 1 + Rango Vitalidad al principio de tu turno si te encuentras en un lugar afectado por frío extremo.
 
 ## Rango IV
 
@@ -71,11 +79,15 @@ Incrementa tu estadística de SAB y su limitador por 1.
 
 ### Corazón de hielo
 
-Mayor resistencia al daño y Resistencia a Aflicciones
+*Innata, Pasiva*
 
-### Sentido de vida
+Tu exposición constante al frío disminuye tu capacidad de sentir el dolor, incrementando notablemente tu resistencia. Aumentas tu DEF y PV por un valor igual a tu Rango + 1 y obtienes Resistencia a Aflicciones. Si te encuentras en un lugar afectado por frío extremo no sentirás el dolor por *heridas permanentes,* permitiéndote ignorar sus efectos hasta que abandones dicho entorno siempre y cuando no sean graves o críticas.
 
-Puede sentir seres vivos en el área afectada
+### 
+
+*Innata, Mejora*
+
+
 
 **Caminante del viento** (1 chi): Durante esta ronda recibes velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar. Esta habilidad no cuesta chi si te encuentras en un entorno afectado por una tormenta de nieve.
 
@@ -83,13 +95,23 @@ Puede sentir seres vivos en el área afectada
 
 ## Rango V
 
+Eres capaz de emplear los hechizos Congelación rápida y Tormenta de nieve empleando vigor en lugar de chi.
+
 ### Forma gaseosa
 
-### Campeón de los espíritus
+*Innata, Duradera, Gaseosa*
 
-**Sentido de vida:** Eres capaz de sentir la posición de todos los seres vivos con sangre cálida a una distancia lejana de ti. También puedes detectar la posición de todas las criaturas con *ascendencia boreal* y determinar su poder aproximado.
+**Coste:** 1 acción y 2 chi o vigor
 
-**Forma gaseosa** (2 acciones y 1 chi): Transformas tu cuerpo en viento polar, recibiendo inmunidad al daño no-mágico y velocidad de vuelo 1 a costa que no puedes hacer ataques físicos y recibes vulnerabilidad al daño fuego. Este efecto permanecerá activo durante una ronda (rango – 1 rondas si te encuentras en una tormenta de nieve) y puedes entrar en él como reacción si te encuentras en *posición defensiva.*
+**Duración:** Concentración
+
+Eres capaz de transformar tu cuerpo en viento polar para transformarte en una tormenta viviente. Mientras esta habilidad permanezca activa te transformarás en un ser incorpóreo hecho de niebla polar, recibiendo Inmunidad a efectos Físicos, Agarres, Mentales, Frío y Aflicciones a costa de recibir Vulnerabilidad al Fuego. Obtienes también velocidad de vuelo 1 y puedes pasar a través de las ranuras más pequeñas sin dificultades. No obstante, al estar hecho de niebla no puedes atacar con armas físicas ni emplear habilidades que no sean de Hielo.
+
+Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con neblinas o tormentas de nieve activas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos. 
+
+### Guardián del ártico
+
+Has desarrollado un profundo vínculo con los espíritus del ártico, empoderando notablemente tus resistencias físicas. Obtienes Resistencia a efectos de Fuego, Frío, Agua, Miedo, Mentales y Aflicciones además que desarrollas la capacidad de detectar la posición de seres vivos a distancia lejana de ti. Eres Inmune al frío extremo y puedes comunicarte con espíritus y elementales de hielo, quienes te tratarán como un igual. 
 
 ## Rango VI
 
@@ -97,6 +119,3 @@ Incrementa tu estadística de DES y su limitador por 1.
 
 ### Forma elemental
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de hielo te obedecen y el daño frío pasará a ser frío estigio, el cual atravesará resistencias. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al frío como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
-
-**Forma elemental** (3 acciones y 3 chi): Invoca un *elemental de hielo* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. No obstante carecerás de la inmunidad al daño físico que tiene el elemental.

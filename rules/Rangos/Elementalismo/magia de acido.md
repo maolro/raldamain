@@ -130,7 +130,7 @@ Si impactas a una criatura voladora esta caerá inmediatamente al suelo, quedand
 
 *Ácido, Ataque, Agarre, Duradero*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 2 acciones y 2 chi
 
 **Alcance:** Medio
 
@@ -180,13 +180,19 @@ Animas una masa de lodo repugnante para crear un guardián elemental que luchar�
 
 ### Vapores abrasivos
 
+**Coste:** 2 acciones y 2 chi
+
 Área y gaseosa, todos los afectados tiran CON o sufren un veneno.
 
 ### Torrente cáustico
 
+**Coste:** 1 acción y 2 chi
+
 Línea, 2d8 + CAR ácido y destruye todas las barreras y objetos metálicos. Reduce contadores de escudo.
 
 ### Armadura ácida
+
+**Co**
 
 Recibes *contadores de escudo* iguales a tu rango y cada vez que gastes un contador para defenderte de un ataque puedes provocarle un efecto de toque corrosivo a tu enemigo. Se recarga en terrenos ácidos.
 

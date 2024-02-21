@@ -57,11 +57,13 @@ Aprendes los hechizos Barrera luminosa y Arma solar, los cuales puedes lanzar em
 
 ### Ángel protector
 
+*Innata, Invocación*
+
 **Coste:** 3 acciones y 2 chi
 
 **Duración:** Una hora
 
-Invocas a una criatura celestial para que te asista en el campo de batalla, protegiéndote de ataques y castigando a tus enemigos. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
+Invocas a una criatura celestial para que te asista en el campo de batalla, protegiéndote de ataques y castigando a tus enemigos. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el DJ. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
 
 **Empoderar** (1 chi o vigor): Una criatura invocada recupera la mitad de su Vitalidad.
 

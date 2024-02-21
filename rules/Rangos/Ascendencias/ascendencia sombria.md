@@ -147,12 +147,12 @@ Incrementa tu estadística de CON y su limitador por 1.
 
 **Duración:** Seis rondas
 
-Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu camino. Al activar Ángel vengador recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Ángel vengador por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Ángel vengador te otorgará los siguientes beneficios:
+Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu camino. Al activar Tirano Sombrío recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Tirano Sombrío por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Tirano Sombrío te otorgará los siguientes beneficios:
 
 - Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Necróticos, Aflicciones, Frío, Miedo y de Toque.
 - Todos tus ataques físicos infligirán 1d10 + Rango daño Frío al impactar además que tirarás un dado de daño adicional en todos tus hechizos Sombríos. 
-- Estas rodeado por un Aura de muerte y estás s
+- Estas rodeado por un Aura de muerte y cuentas siempre como si estuvieras a oscuras.
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia sombría no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.

@@ -19,13 +19,13 @@ Ascendencia de Aire tiene las siguientes reglas fundamentales que se aplican a c
 
 *Innata, Pasiva*
 
-El poder de las tormentas fluye por tus venas, otorgándote resistencias a sus efectos además de la capacidad de maniobrar libremente en el aire. Obtienes Resistencia a efectos Eléctricos y Sónicos además que puedes planear hasta un paso en cualquier dirección mientras estés cayendo. Adicionalmente, los elementales de aire no serán naturalmente hostiles hacia ti.
+El poder de las tormentas fluye por tus venas, otorgándote resistencias a sus efectos además de la capacidad de maniobrar libremente en el aire. Obtienes Resistencia a efectos Eléctricos y Sónicos además que puedes planear hasta un paso en cualquier dirección mientras estés cayendo. Esto te permite también tirar tanto Esquiva como Parada de Aire o Tormenta para defenderte de ataques enemigos y quedarte con el resultado que más te convenga.
 
 ### Aerokinesia
 
 *Innata, Pasiva*
 
-Los vientos y las tormentas se someten a tu voluntad como hijo de los cielos. Eres capaz de lanzar todos los hechizos pertenecientes a magia de Aire o Tormenta con Rango I empleando vigor en lugar de chi. Si solo conoces hechizos pertenecientes a una de las dos categorías no aprenderás ningún hechizo adicional.
+Los vientos y las tormentas se someten a tu voluntad como hijo de los cielos. Eres capaz de lanzar todos los hechizos pertenecientes a magia de Aire o Tormenta con Rango I empleando vigor en lugar de chi. Si solo conoces hechizos pertenecientes a una de las dos categorías no aprenderás ningún hechizo adicional. 
 
 En el caso que no conozcas ningún hechizo perteneciente a ambas categorías aprenderás dos hechizos de Rango I de Aire o Tormenta que podrás lanzar pagando 1 vigor o chi adicional. Emplearás como bonificador la suma de tu SAB y tu Rango en Ascendencia de Aire. Este sobrecoste desaparecerá si aprendes ese mismo hechizo por algún otro medio.
 
@@ -55,31 +55,67 @@ Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Aire o T
 
 ### Vientos protectores
 
-*Innata, Pasiva*
+*Innata, Mejora*
 
-Eres capaz de manipular instintivamente las corrientes de aire a tu alrededor para evitar efectos hostiles. Al entrar en *posición defensiva* recibes Resistencia a efectos Gaseosos y a ataques A distancia tango físicos como mágicos. Esta resistencia no se aplicará contra ataques de área.
+**Coste:** 2 acciones y 2 chi o vigor
 
-**Empoderar** (1 chi o vigor): Los vientos se hacen particularmente poderosos esta ronda, impidi el paso a efectos Gaseosos y convirtiendo todo el espacio a distancia corta de ti en *terreno difícil*.
+**Duración:** Concentración
+
+Manipulas las corrientes de agua a tu alrededor para crear una barrera de vientos poderosos. Mientras esta habilidad permanezca activa recibes Ventaja en todos tus tiros relacionados con Magia de Aire o Tormenta y recibes Resistencia a ataques A distancia y efectos Gaseosos. Este hechizo permanecerá activo hasta que pierdas la concentración o los vientos sean disipados por otro efecto.
+
+Los vientos también dificultarán el paso a todo enemigo que se intente acercar a ti, convirtiendo el espacio a distancia cercana en *terreno difícil* y otorgándote la capacidad de emplear tu modificador de Ascendencia de Aire para defenderte de todo tipo de ataques enemigos. Las ventajas otorgadas por esta habilidad no se acumulan con aquellas otorgadas por Controlar los Vientos o Furia de los cielos.
+
+**Empoderar** (1 chi o vigor): Los vientos se hacen particularmente poderosos esta ronda, impidiendo el paso a efectos Gaseosos y convirtiendo todo el espacio a distancia corta de ti en *terreno difícil*.
 
 ### Viajero de los cielos
 
-*Innata, Pasiva*
+*Innata, Mejora*
 
-Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Recibes velocidad de vuelo 1 además de Ventaja en todos tus tiros de Esquiva. Si no te encuentras en un entorno afectado por una tormenta debes gastar 1 chi o vigor si acabas tu turno en el aire.
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Duración:** Concentración
+
+Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 siempre y Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede lanzarse si te encuentras en un entorno con vientos adecuadamente fuertes.
+
+**Empoderar** (1 chi o vigor): Te impulsas a la velocidad del viento para evitar un ataque, teniendo así éxito automático en un tiro de Esquiva y volando un paso en cualquier dirección.
 
 ## Rango IV 
 
-Incrementa tu CAR por 1. 
+Incrementa tu estadística de CAR y su limitador por 1. 
 
-### Poder tormentoso
+### jinete de la tormenta
 
-**Ataques infundidos**: Tus ataques físicos infligen +1d6 daño eléctrico o sónico (escoge al obtener esta habilidad) y ralentizan al reducir PV. (1 chi) Haz una maniobra de *finta, desarme* o *tropezar* como acción bonus usando tu bonificador de arma.
+*Innata, Pasiva*
+
+Eres capaz de absorber el poder de la tormenta para sanar tus heridas y empoderar tus ataques. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 1 si te encuentras en un entorno afectado por una tormenta o vientos poderosos. Reducirás también el coste de todos los hechizos y habilidades de Aire o Tormenta que lances por una acción (mínimo 1) si te encuentras en dicho entorno.
+
+**Empoderar** (1 chi o vigor): Absorbes un hechizo de Aire o Tormenta que te acaba de impactar, ignorando todo el daño que te provocaría. Tras absorber un hechizo puedes lanzarlo tú como acción bonus contra tus enemigos añadiéndolo un dado adicional de daño.
+
+### Golpes de vacío
+
+*Innata, Mejora*
+
+Tus ataques mágicos se vuelven extremadamente rápidos e imposibles de detener. Cuando utilices la habilidad Infusión tormentosa el daño adicional que proporciones atravesará todas las Resistencias que tenga tu objetivo además que se mueve a tal velocidad que no puede ser Esquivado. 
+
+**Empoderar** (1 chi o vigor): En respuesta a que un enemigo detenga un ataque con un muro, *contador de escudo* o lo esquive automáticamente puedes volver a hacerlo como acción bonus contra el mismo objetivo sin la necesidad de pagar chi o 
 
 ## Rango V 
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Eres capaz de emplear dos hechizos de Aire o Tormenta de Rango III que no sean de Invocación.
 
 ### Elemento de la libertad
+
+*Innata, Pasiva*
+
+Al igual que el aire mismo no puedes ser atado o encadenado por tus enemigos. Obtienes Resistencia a efectos Sónicos, Eléctricos, Agarres y Maniobras además de Inmunidad al terreno difícil. También recibes velocidad de vuelo 1 y puedes comunicarte con elementales de aire, quienes te tratarán como un igual.
+
+**Empoderar** (1 chi o vigor): Tienes éxito automático en un tiro para defenderte de un efecto de Agarre o una Maniobra.
+
+### Uno con la tormenta
+
+*Innata, Mejora*
+
+**Coste:** 1 acción y 2 chi
 
 **Elemento de libertad:** Recibes resistencia a ser *agarrado* o *enredado* igual a tu rango además de inmunidad al terreno difícil. 
 
@@ -88,6 +124,12 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 ## Rango VI
 
 Incrementa tu SAB por 1.
+
+### Forma elemental
+
+*Innata, Mejora*
+
+Forma tocha elemental de aire.
 
 **Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del aire te obedecen y el daño eléctrico que provocas atravesará resistencias. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al daño eléctrico como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
 
