@@ -47,7 +47,11 @@ Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su poten
 
 ## Rango III 
 
-Aumenta tu resistencia al daño físico por 1.
+Eres capaz de emplear los hechizos Muro de llamas y Tierra viva empleando vigor en lugar de chi.
+
+### Armadura de piedra
+
+### 
 
 **Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadura de piedra* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
 
