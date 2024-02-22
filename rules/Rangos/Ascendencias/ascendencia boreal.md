@@ -83,15 +83,17 @@ Incrementa tu estadística de SAB y su limitador por 1.
 
 Tu exposición constante al frío disminuye tu capacidad de sentir el dolor, incrementando notablemente tu resistencia. Aumentas tu DEF y PV por un valor igual a tu Rango + 1 y obtienes Resistencia a Aflicciones. Si te encuentras en un lugar afectado por frío extremo no sentirás el dolor por *heridas permanentes,* permitiéndote ignorar sus efectos hasta que abandones dicho entorno siempre y cuando no sean graves o críticas.
 
-### 
+### Poder del invierno
 
 *Innata, Mejora*
 
+**Coste:** 2 acciones y 2 chi
 
+Tu cuerpo recibe la capacidad de absorber el calor a su alrededor, convirtiéndote en una encarnación viviente del invierno mismo. Mientras este hechizo permanezca activo tus ataques Físicos infligen 1d6 + Rango daño Frío al impactar además de provocar los efectos de Hipotermia, la cual contará como un veneno de DES con gravedad igual a tu Modificador de Ascendencia. 
 
-**Caminante del viento** (1 chi): Durante esta ronda recibes velocidad de vuelo 1 y ventaja en todos tus tiros de ataque y defensa contra criaturas incapaces de volar. Esta habilidad no cuesta chi si te encuentras en un entorno afectado por una tormenta de nieve.
+Dicho daño se acumula con el otorgado por Ataques Infundidos y contará como un ataque de Área, provocando así la mitad de daño al fallar. Esta habilidad permanecerá activa hasta que pierdas la concentración o seas impactado por un ataque de Fuego del tamaño adecuado.
 
-**Ataques infundidos:** Tus ataques físicos infligen +1d6 daño frío y *fatigan* durante una ronda al reducir PV. Al activar *canalizar el frío* provocas hipotermia a tu objetivo al impactar, lo cual funciona como un veneno de DES con gravedad igual a tu rango + 3.
+**Empoderar** (1 chi o vigor): El afectado sufre el daño Frío de tu ataque físico aunque se defienda exitosamente con un tiro de Parada. Esto no funcionará si usa Fuego, Agua o
 
 ## Rango V
 
