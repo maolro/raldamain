@@ -73,15 +73,33 @@ Engañas a tu objetivo con un ataque falso para que baje la guardia y quede en u
 
 ### Abrazo de la serpiente
 
-Agarre que deshabilita puntos de presión
+*Marcial, Serpiente, Aflicción*
+
+**Coste:** 2 vigor
+
+**Duración:** Concentración
+
+Agarras a un enemigo de tal manera que deshabilitas sus puntos de presión, evitando que pueda emplear su fuerza para escapar de ti. Al impactar a un enemigo puedes forzarle a tener éxito en un tiro de CON frente a tu modificador de Estilo Serpiente o quedará *agarrado* hasta que escape. Al contar como un tiro de CON no se aplicarán las resistencias a Maniobras de combate para esta habilidad pero no podrás afectar a enemigos que lleven armadura completa.
+
+Una criatura agarrada de esta manera puede repetir el tiro al principio de su turno para intentar escapar, liberándose en caso de éxito. Al estar agarrando a un enemigo quedarás *enredado* y no podrás atacar a otros enemigos. Esta habilidad permanecerá activa hasta que tu objetivo escape o pierdas la concentración.
 
 ### Combinar técnicas
 
-Emplea otra técnica como acción bonus.
+*Marcial, Mejora*
+
+**Coste:** 2 vigor
+
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque Marcial puedes emplear esta habilidad para hacer un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede emplearse en ataques que no supongan un gasto de acciones.
 
 ## Rango IV
 
 ### Velo de la serpiente
+
+*Innata, Marcial, Serpiente, Duradera*
+
+**Coste:** 2 acciones y 2 vigor
+
+**Duración:** C
 
 Está siempre en posición defensiva y puede hacer contrataques
 

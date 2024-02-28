@@ -111,7 +111,7 @@ Tus escamas se vuelven aún más sólidas, haciéndose capaces de detener ataque
 
 *Innata, Pasiva*
 
-Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destructiva. Todos tus hechizos del mismo tipo que tu elemento escogido aumentan su daño base por 1d10 y podrás vigor en lugar de chi para lanzarl. Además, al entrar en *forma del dragón* añadirás tu dado de Ventaja a todos tus tiros con esos hechizos si no lo tienes ya.
+Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destructiva. Todos tus hechizos del mismo tipo que tu elemento escogido aumentan su daño base por 1d10 y podrás vigor en lugar de chi para lanzarlos. Además, al entrar en *forma del dragón* añadirás tu dado de Ventaja a todos tus tiros con esos hechizos si no lo tienes ya.
 
 ## Rango VI
 

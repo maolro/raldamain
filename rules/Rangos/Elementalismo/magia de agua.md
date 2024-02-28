@@ -1,5 +1,5 @@
 ---
- title: Magia de Agua
+title: Magia de Agua
 image: magia_agua.jpg
 ---
 

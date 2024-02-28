@@ -47,11 +47,29 @@ Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su poten
 
 ## Rango III 
 
-Eres capaz de emplear los hechizos Muro de llamas y Tierra viva empleando vigor en lugar de chi.
+Eres capaz de emplear los hechizos Muro de piedra y Tierra viva empleando vigor en lugar de chi.
 
 ### Armadura de piedra
 
-### 
+*Innata, Duradera*
+
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Duración:** Concentración
+
+Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia física. Mientras esta habilidad permanezca activa aumenta tu DEF por un valor igual a tu Rango + 1 y recibes Inmunidad a *heridas permanentes* y *sangrado*. Recibirás también Vitalidad temporal igual a tu Rango x 2
+
+**Empoderar** (1 chi o vigor): Recuperas toda tu Vitalidad temporal. Solo puedes empoderar así si te queda por lo menos un punto de Vitalidad o te encuentras en *posición defensiva*. 
+
+### Ola de tierra
+
+*Innata, Duradera*
+
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Duración:** Concentración
+
+
 
 **Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadura de piedra* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
 
@@ -59,7 +77,19 @@ Eres capaz de emplear los hechizos Muro de llamas y Tierra viva empleando vigor 
 
 ## Rango IV 
 
-Incrementa tu FUE por 1. Puedes sumar tu rango en magia elemental de tierra a todos tus tiros de ataque con armas si es más alto que tu rango en el arma escogida, sustituyendo al anterior bonificador.
+Incrementa tu estadística de FUE y su limitador por 1.
+
+### Mole viviente
+
+*Innata, Mejora, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+### Georradar predictivo
+
+*Innata, Pasiva*
+
+
 
 **Ola de tierra** (2 AP y 1 chi): Manipulas la tierra para formar una gran ola bajo tus pies con la cual puedes moverte 2 pasos como acción bonus usable una vez por turno. La ola ignorará el terreno difícil y barrerá con todos los eectos en el suelo como *crecimiento acelerado*. Si hay criaturas en el camino de la ola puedes hacer un ataque de *artes marciales* o *lanzamiento* (si lo tienes) que empujará un paso al impactar. La ola acabará al principio de tu siguiente turno salvo que pagues 1 chi.
 
@@ -68,6 +98,8 @@ Incrementa tu FUE por 1. Puedes sumar tu rango en magia elemental de tierra a to
 ## Rango V
 
 Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 1.
+
+### Elemento del equilibrio
 
 **Elemento del equilibrio:** Obtienes resistencia contra venenos, daño fuego, frío y ácido igual a tu rango + 1. Incrementa también tus PV máximos por un valor igual a tu rango – 2.
 

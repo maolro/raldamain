@@ -85,7 +85,7 @@ Un enemigo *enredado* de esta manera podrá repetir el tiro cada ronda para esca
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico, Agarre*
 
-**Precio:** 1 acción y 2 vigor
+**Coste:** 1 acción y 2 vigor
 
 Te abalanzas sobre un enemigo con impulso suficiente para tirarlo al suelo. Salta un paso en cualquier dirección y haz un Ataque natural contra un enemigo adyacente que inflige 1d6 daño adicional. Además, al impactar este ataque tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo salvaje o quedará *tropezado*. Tu objetivo deberá realizar el mismo tiro si se defiende con Parada aunque tenga éxito.
 
@@ -93,7 +93,7 @@ Te abalanzas sobre un enemigo con impulso suficiente para tirarlo al suelo. Salt
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico*
 
-**Precio:** 1 acción y 2 vigor
+**Coste:** 1 acción y 2 vigor
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente media*
 
@@ -103,7 +103,7 @@ Haz un Ataque natural que infligirá 2d6 daño adicional y *sangrado* al impacta
 
 *Salvaje, Reacción*
 
-**Precio:** 2 vigor
+**Coste:** 2 vigor
 
 Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un Ataque natural puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un gasto de acciones.
 
