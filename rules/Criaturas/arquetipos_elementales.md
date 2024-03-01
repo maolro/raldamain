@@ -1,8 +1,13 @@
 # Arquetipos
 
-## Cuerpo elemental (+2)
+## Cuerpo ígneo (+2)
 
-Es incorpóreo y hecho de una energía elemental específica. Varía según el elemento específico.
+La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
+
+- Se vuelve Incorpórea, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Fuego a costa de recibir Vulnerabilidad a efectos de Hielo y Agua.
+- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Fuego.
+- Recibe velocidad de vuelo 1 y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista y todo espacio por el que pase saltará en llamas.
+- Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. Si ya tiene una *quemadura* activa el nivel de esta aumentará por un paso hasta que se
 
 ## Esencia de agua (+2)
 
@@ -30,9 +35,23 @@ Congela cada vez que impacta, puede usar Tormenta de nieve y Ventisca sin gastar
 
 ## Esencia de fuego (+2)
 
-Una acción adicional y salto 1, visión térmica, Resistencia al fuego, puede emplear los hechizos Llamarada y Asalto abrasador además de Aliento de fuego. Sus ataques físicos infligen 1d6 + 1 daño Fuego.
+La criatura está infundida por energía elemental de fuego que le permite canalizar las llamas para quemar todo a su paso. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta sus estadísticas de CAR y DES o FUE por 1.
+- Recibe un bonificador +2 en sus tiros relacionados con Magia de Fuego además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Fuego.
+- Obtiene una acción adicional hasta un máximo de 4 y recibe Visión térmica hasta una distancia media.
+- Recibe Inmunidad al Fuego y todos sus ataques físicos infligen 1d6 + 1 daño Fuego al impactar. 
+- Es capaz de lanzar los hechizos Llamarada, Asalto abrasador y Aliento de Fuego como si tuviera Rango II empleando como estadística principal su CON o CAR. 
 
 ## Esencia de fuego superior (+2, 3 mejoras)
+
+La criatura está infundida por energía elemental de fuego que le permite canalizar las llamas para quemar todo a su paso. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta sus estadísticas de CAR y DES o FUE por 1.
+- Recibe un bonificador +2 en sus tiros relacionados con Magia de Fuego además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Fuego.
+- Obtiene una acción adicional hasta un máximo de 4 y recibe Visión térmica hasta una distancia media.
+- Recibe Inmunidad al Fuego y todos sus ataques físicos infligen 1d6 + 1 daño Fuego al impactar. 
+- Es capaz de lanzar los hechizos Llamarada, Asalto abrasador y Aliento de Fuego como si tuviera Rango II empleando como estadística principal su CON o CAR. 
 
 Tiene aura abrasadora activa, puede usar Muro de Fuego 1/ronda para defenderse de ataques y aprende el hechizo Bola de fuego. El daño de Asalto abrasador aumenta a 1d8 + CAR/CON.
 
