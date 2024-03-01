@@ -102,7 +102,7 @@ La criatura tiene un fuerte vínculo con su invocador que ata su esencia directa
 La criatura ha sido enviada por fuerzas celestiales para castigar a pecadores y maldecir a tus enemigos. Este arquetipo otorga las siguientes mejoras:
 
 - Aumenta sus estadísticas de SAB o CAR y CON por 1. Si carece de CON podrá aumentar otra estadística de su elección.
-- Recibe un bonificador +2 en sus tiros relacionados con Magia Divina además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Vida.
-- Invocar esta criatura Consagrará de manera automática la tierra que le rodea de igual manera que el hechizo con el mismo nombre.
+- Recibe un bonificador +2 en sus tiros relacionados con Magia Divina además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia Divina.
+- Invocar esta criatura Consagrará de manera automática la tierra que le rodea de igual manera que el hechizo con el mismo nombre. La tierra consagrada desaparecerá cuando esta criatura muera.
 - Es capaz de lanzar los hechizos Llamarada y Asalto abrasador como si tuviera Rango II empleando como estadística principal su CON o CAR. Empleará su modificador de Magia Divina para dichos tiros.
 - Esta criatura puede emplear el hechizo Manifestación Divina sin la necesidad de pagar chi o vigor. Este usará su modificador de Magia Divina y no puede maldecir a la misma criatura más de una vez por combate.
