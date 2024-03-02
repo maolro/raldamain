@@ -100,7 +100,7 @@ Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes da
 
 **Duración:** Hasta que se recupere
 
-Tu control mental te permite cambiar las emociones de los demás con solo un gesto. Un objetivo a distancia media de ti deberá tener éxito en un tiro de Averiguar intenciones o Concentración  frente a tu magia mental o alterarás su mente para que caiga en un estado emocional escogido por ti. 
+Tu control mental te permite cambiar las emociones de los demás con solo un gesto. Un objetivo a distancia media de ti deberá tener éxito en un tiro de Averiguar intenciones o Concentración frente a tu magia mental o alterarás su mente para que caiga en un estado emocional escogido por ti. 
 
 Dicho estado permanecerá activo hasta que termine el combate y tu objetivo podrá repetir el tiro cada ronda para intentar liberarse de él. También se liberará de este efecto si acaba en una situación donde sienta una emoción suficientemente fuerte para cancelar el efecto recibido o empoderas una emoción distinta con este hechizo.
 
