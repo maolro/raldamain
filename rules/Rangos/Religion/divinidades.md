@@ -56,21 +56,24 @@ Aquí se presenta una lista de divinidades junto a las magias con las que están
 
 ### Espíritus iskarianos
 
-| **Nombre** | **Descripción**                                             | **Magias asociadas**         |
-| ---------- | ----------------------------------------------------------- | ---------------------------- |
-| Byeonhun   | Espíritu del caos, el cambio y la libertad                  | Metal, Ilusoria, Mental      |
-| Gisujeon   | Espíritu de la maquinaria, el avance y los artificieros     | Metal, Protectora, Temporal  |
-| Heonbul    | Espíritu de la devoción, las llamas y el ejército           | Metal, Fuego, Mental         |
-| Kalozera   | Espíritu de la maternidad, las aves y la fortuna            | Vida, Aire, Temporal         |
-| Liulang    | Espírtu del equilibrio natural, la fertilidad y los bosques | Naturaleza, Vida, Protectora |
+| **Nombre** | **Descripción**                                              | **Magias asociadas**         |
+| ---------- | ------------------------------------------------------------ | ---------------------------- |
+| Byeonhun   | Espíritu del caos, el cambio y la libertad                   | Metal, Ilusoria, Mental      |
+| Gisujeon   | Espíritu de la maquinaria, el avance y los artificieros      | Metal, Protectora, Temporal  |
+| Heonbul    | Espíritu de la devoción, las llamas y el ejército            | Metal, Fuego, Mental         |
+| Kalozera   | Espíritu de la maternidad, las aves y la fortuna             | Vida, Aire, Temporal         |
+| Liulang    | Espíritu del equilibrio natural, la fertilidad y los bosques | Naturaleza, Vida, Protectora |
 
 ### Espíritus mazarinos
 
-| **Nombre** | **Descripción** | **Magias asociadas** |
-| ---------- | --------------- | -------------------- |
-|            |                 |                      |
-|            |                 |                      |
-|            |                 |                      |
+| **Nombre** | **Descripción**                                      | **Magias asociadas**       |
+| ---------- | ---------------------------------------------------- | -------------------------- |
+| Daruvei    | Espíritu de la prosperidad, la nobleza y el sol      | Vida, Protectora, Ilusoria |
+| Zernovog   | Espíritu del día y la noche                          | Vida, Sombría              |
+| Lydesna    | Espíritu de la primavera, la fertilidad y la pérdida | Naturaleza, Vida, Sombría  |
+| Vohonir    | Espíritu del fuego, la innovación y el renacer       | Fuego, Espacial            |
+| Chalkha    | Espíritu del invierno, la muerte y la perdición      | Hielo, Médium, Nigromancia |
+|            |                                                      |                            |
 
 
 

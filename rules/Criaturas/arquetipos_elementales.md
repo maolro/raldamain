@@ -1,5 +1,13 @@
 # Arquetipos
 
+## Cuerpo ácido (+2)
+
+## Cuerpo acuoso (+2)
+
+## Cuerpo de rocas (+2)
+
+## Cuerpo de ventisca (+2)
+
 ## Cuerpo ígneo (+2)
 
 La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
@@ -8,6 +16,8 @@ La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Es
 - Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Fuego.
 - Recibe velocidad de vuelo 1 y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista y todo espacio por el que pase saltará en llamas.
 - Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. Si ya tiene una *quemadura* activa el nivel de esta aumentará por un paso hasta que se
+
+## Esencia de ácido (+2)
 
 ## Esencia de agua (+2)
 
@@ -20,6 +30,8 @@ Puede usar Muro de Agua 1/ronda y tiene activo el hechizo Tentáculos de agua. P
 ## Esencia de agua suprema (+2, 5 mejoras)
 
 Ventaja en todos sus tiros de Magia de Agua, al impactar los afectados tiran contra Agarre, Vuelo 1 si está encima del agua, cuenta como Vórtice si es incorpóreo.
+
+## Esencia de arena (+2)
 
 ## Esencia de hielo (+2)
 
@@ -58,3 +70,5 @@ Tiene aura abrasadora activa, puede usar Muro de Fuego 1/ronda para defenderse d
 ## Esencia de fuego suprema (+2, 5 mejoras)
 
 Ventaja en todos sus tiros de Magia de Fuego, puede usar Erupción abrasadora y se activará esta habilidad al morir, tiene activo el hechizo Danza de las llamas y cuenta como Torbellino de fuego si es incorpóreo.
+
+## Esencia de tormenta (+2)

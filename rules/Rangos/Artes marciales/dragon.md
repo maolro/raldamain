@@ -41,6 +41,8 @@ En el caso que ya poseas esta habilidad por Alabardas o Duelo puedes hacer tambi
 
 *Dragón, Marcial, Mejora*
 
+**Coste:** 1 vigor
+
 Tu constante práctica de formas marciales te otorga la capacidad de emplear varias técnicas novedosas. Al activar esta habilidad puedes hacer una maniobra de combate como acción bonus, mejorando el ataque que acabas de hacer. Solo puedes activar una maniobra por ataque y puedes crear técnicas propias si lo permite el DJ. Estos son algunos ejemplos de maniobras que puedes realizar.
 
 - **Paso rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
