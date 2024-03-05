@@ -2,7 +2,21 @@
 
 ## Cuerpo ácido (+2)
 
+La criatura está compuesta de ácido corrositvo, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
+
+- Su cuerpo se transforma en líquido, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Ácido a costa de recibir Vulnerabilidad a efectos de Hielo y Agua.
+- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Ácido.
+- Recibe velocidad de natación 1 y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista y corroerá todo objeto por el que pase que no esté hecho de *material superior*, provocando el efecto de estado *roto*.
+- Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. En el caso que lleve armadura o impacte a esta criatura con un arma dicho objeto recibirá el efecto de estado *roto*.
+
 ## Cuerpo acuoso (+2)
+
+La criatura está compuesta de aguas fluidas, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
+
+- Su cuerpo se transforma en líquido, obteniendo así Inmunidad a efectos Físicos, Mentales y Aflicciones a costa de recibir Vulnerabilidad a efectos de Hielo y Fuego.
+- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad. No podrá emplear habilidades o ataques que no sean de Agua.
+- Recibe velocidad de natación 1 y puede pasar a través de las ranuras más pequeñas. No puede ser detectada por ningún sentido salvo la vista y tiene Ecolocación a una distancia media. También es capaz de caminar encima del agua sin dificultades.
+- Su cuerpo se sana con el agua que tenga cerca, permitinedo que se regenere 4 Vitalidad al princpio de su turno si se encuentra en un lugar con la adecuada cantidad de agua. También es capaz de fusionarse con efectos Duraderos de Agua existentes, permitiendo que pueda usarlos sin la necesidad de mantener la concentración siempre y cuando se muevan de la misma manera que esta criatura.
 
 ## Cuerpo de rocas (+2)
 
@@ -15,7 +29,7 @@ La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Es
 - Se vuelve Incorpórea, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Fuego a costa de recibir Vulnerabilidad a efectos de Hielo y Agua.
 - Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Fuego.
 - Recibe velocidad de vuelo 1 y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista y todo espacio por el que pase saltará en llamas.
-- Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. Si ya tiene una *quemadura* activa el nivel de esta aumentará por un paso hasta que se
+- Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. Si ya tiene una *quemadura* activa el nivel de esta aumentará por un paso hasta que sea *grave*.
 
 ## Esencia de ácido (+2)
 
