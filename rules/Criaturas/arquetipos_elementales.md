@@ -71,18 +71,24 @@ La criatura está infundida por energía elemental de fuego que le permite canal
 
 ## Esencia de fuego superior (+2, 3 mejoras)
 
-La criatura está infundida por energía elemental de fuego que le permite canalizar las llamas para quemar todo a su paso. Este arquetipo otorga las siguientes mejoras:
+El fuego interior de esta criatura aumenta notablemente su fuerza, otorgándole la capacidad de lanzar nuevos hechizos cada vez más poderosos. Obtener este arquetipo requiere que la criatura tenga ya Esencia de fuego y otorgará las siguientes mejoras adicionales:
 
 - Aumenta sus estadísticas de CAR y DES o FUE por 1.
-- Recibe un bonificador +2 en sus tiros relacionados con Magia de Fuego además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Fuego.
-- Obtiene una acción adicional hasta un máximo de 4 y recibe Visión térmica hasta una distancia media.
-- Recibe Inmunidad al Fuego y todos sus ataques físicos infligen 1d6 + 1 daño Fuego al impactar. 
-- Es capaz de lanzar los hechizos Llamarada, Asalto abrasador y Aliento de Fuego como si tuviera Rango II empleando como estadística principal su CON o CAR. 
-
-Tiene aura abrasadora activa, puede usar Muro de Fuego 1/ronda para defenderse de ataques y aprende el hechizo Bola de fuego. El daño de Asalto abrasador aumenta a 1d8 + CAR/CON.
+- Incrementa su bonificador a tiros de Magia de Fuego por 1 y todos los hechizos que conozca contarán como si tuvieran Rango III. 
+- Todos sus tiros relacionados con Magia de Fuego recibirán Ventaja y todo el espacio a distancia cercana está afectado por calor extremo.
+- Si la criatura tiene tamaño medio obtiene velocidad de vuelo 1 y Ventaja en sus tiros de Esquiva. En caso contrario su gran tamaño le permite incrementar la intensidad de su fuego interior, permitiendo que esté siempre rodeada por un Aura abrasadora que puede empoderar sin la necesidad de pagar chi o vigor.
+- Puede emplear el hechizo Muro de Llamas una vez por ronda sin la necesidad de gastar chi o vigor. Aprende también el hechizo Bola de fuego.
+- Tiene siempre activo el hechizo Látigo flamígero, lo cual le permite hacer ataques con dicha arma empleando una acción que provocarán 1d6 + CAR o CON daño Fuego al impactar. Si el arma creada es cuerpo a cuerpo el daño base de esta pasará a ser 1d8. 
 
 ## Esencia de fuego suprema (+2, 5 mejoras)
 
-Ventaja en todos sus tiros de Magia de Fuego, puede usar Erupción abrasadora y se activará esta habilidad al morir, tiene activo el hechizo Danza de las llamas y cuenta como Torbellino de fuego si es incorpóreo.
+La criatura se vuelve poderosa como un volcán viviente, abrasando todo a su paso para que solo queden cenizas. Obtener este arquetipo requiere que la criatura tenga ya Esencia de fuego superior y otorgará las siguientes mejoras adicionales:
+
+- Aumenta sus estadísticas de CAR y DES o FUE por 1.
+- Incrementa su bonificador a tiros de Magia de Fuego por 1 y todos los hechizos que conozca ya contarán como si tuvieran Rango IV. 
+- Sus ataques físicos provocan 1d6 + 4 daño Fuego adicional y una *quemadura leve* al impactar. Si no es capaz de provocar ataques físicos la criatura está siempre rodeada por un Torbellino de Fuego que se moverá junto a ella.
+- Puede emplear los hechizos Erupción abrasadora e Inmolación sin la necesidad de gastar vigor o chi. Dichos hechizos no pueden ser empoderados y la criatura solo puede usarlos una vez por ronda. 
+- Obtiene cuatro *contadores de escudo* que puede emplear para detener ataques enemigos. Si se encuentra en un entorno en llamas podrá recuperar un *contador de escudo* cada ronda.
+- La criatura se regenera 5 Vitalidad al principio de su turno si se encuentra en un entorno en llamas. Dicha regeneración se anulará durante una ronda si esta criatura sufre daño Frío y la primera vez que esta criatura muera resucitará a 1 PV y podrá lanzar el hechizo Erupción abrasadora como acción bonus.
 
 ## Esencia de tormenta (+2)

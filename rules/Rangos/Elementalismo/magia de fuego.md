@@ -233,7 +233,7 @@ El torbellino permanecerá en el campo de batalla hasta que pierdas la concentra
 
 Haz un ataque de Magia de Fuego contra todas las criaturas a distancia corta de un objetivo que alcances que inflige 3d8 + CAR daño Fuego y una *quemadura leve* al impactar. Si el objetivo se encuentra en llamas no podrá defenderse salvo con un tiro exitoso de CON frente a tu Magia de Fuego. Aquellos que tengan éxito en el tiro sufrirán la mitad de daño y este hechizo provocará que todos los objetos inflamables salten en llamas.
 
-**Empoderar** (1 chi): Lanza este hechizo contra un objetivo adicional o aumenta su alcan
+**Empoderar** (1 chi): Lanza este hechizo contra un objetivo adicional o aumenta su tamaño por un paso.
 
 ## Rango V
 
