@@ -15,3 +15,13 @@ Transmutación, Fortitud
 ## No-muerto (+2)
 
 Nigromancia
+
+## Lich (3 mejoras, +2)
+
+## Vampiro (3 mejoras, +2)
+
+## Momia (3 mejoras, +2)
+
+## Caballero profano (3 mejoras, +2)
+
+## Gul (+2)
