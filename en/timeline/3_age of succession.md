@@ -22,7 +22,7 @@ title: Age of succession
 |              | Exiled mazarine prince Kelsar lands in the northern coast of Ustal and founds the kingdom of Deverent |
 |              | The desert seer Hadrassan unites the temash tribes and formes the empire of Tamashkhan. He builds the Seven Holy Cities using the artifact Agha Iryan |
 |              | Deverent and Elyon fight a prolonged war over supremacy in Ustal, each claiming to be the chosen nation of Feyn. |
-|              | King Althar of Deverent and queen Sarani of Elyon sign a treaty to end the war and unite their lands through marriage, founding the kingdom of Ustilus. |
+| 2552         | King Althar of Deverent and queen Sarani of Elyon sign a treaty to end the war and unite their lands through marriage, founding the kingdom of Ustilus. |
 | 2639         | Construction of the city of Feyn's throne begins, started by king Arimion of Ustilus. |
 | 30th century | The Temash begin to expand towards Pradjati, threatening the Citadel itself. This triggers a century-long holy war between the temash and the Feynist kingdoms. |
 | 2919         | King Semiyon I the holy ascends to the Mazarine throne. He is a devout Feynist who spends most of his reign fighting against the Temash in holy wars. |

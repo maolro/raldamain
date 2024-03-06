@@ -210,7 +210,7 @@ Una modificación de los recuerdos es especialmente peligrosa para enemigos al b
 
 **Duración:** Concentración
 
-Al activar esta hechizo todas las criaturas a distancia media de ti deben tener éxito en un tiro de Averiguar intenciones o Concentración  frente a tu Magia mental o reforzarás una de sus emociones durante una ronda, funcionando de igual manera a Alterar emociones. Este hechizo permanecerá activo hasta que pierdas la concentración y mientras lo esté toda criatura que acabe su turno o entre por primera vez esta ronda en un espacio a distancia media de ti volverá a ser afectado por este hechizo.
+Al activar esta hechizo todas las criaturas a distancia media de ti deben tener éxito en un tiro de Averiguar intenciones o Concentración frente a tu Magia mental o reforzarás una de sus emociones durante una ronda, funcionando de igual manera a Alterar emociones. Este hechizo permanecerá activo hasta que pierdas la concentración y mientras lo esté toda criatura que acabe su turno o entre por primera vez esta ronda en un espacio a distancia media de ti volverá a ser afectado por este hechizo.
 
 **Empoderar** (1 chi): Cancela un efecto Mental o de Moral empleado contra una criatura que se encuentre en el área afectada por esta habilidad.
 
