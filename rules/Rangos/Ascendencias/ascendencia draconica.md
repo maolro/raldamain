@@ -66,8 +66,6 @@ Tu cuerpo es capaz de metamorfosearse temporalmente para que te crezcan alas. Al
 
 *Innata, Mejora*
 
-PV adicionales e inmunidad a heridas leves y medias. Resistencia a efectos Arcanos.
-
 Tu cuerpo está cubierto de una sólida armadura escamosa que aumenta notablemente tu resistencia al daño. Esta te otorga Inmunidad a *heridas permanentes leves* y *medias* además de Resistencia a efectos Arcanos. La armadura aumentará también la resistencia de tu cuerpo, aumentando tus PV máximos por un valor igual a tu Rango + 1. La Inmunidad a heridas otorgada por esta habilidad no te protegerá frente a armas hechas para matar dragones.
 
 **Empoderar** (1 chi, 1/ronda): Recuperas una cantidad de Vitalidad igual a tu Rango + 2 

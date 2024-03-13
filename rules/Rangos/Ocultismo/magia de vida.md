@@ -34,7 +34,7 @@ Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado
 
 *Vida, Ataque, A distancia, Radiante*
 
-**Coste**: 2 acciones
+**Coste**: 1 acción
 
 **Alcance**: Medio
 
@@ -122,7 +122,7 @@ Una vez creada el arma solar permanecerá a tu lado, lo que te permite emplear u
 
 ## Rango III
 
-Todos tus hechizos de Vida sustituyen sus dados de daño por d8 y aquellos de Rango I cuestan una acción menos para emplear (mínimo 1).
+Todos tus hechizos de Vida sustituyen sus dados de daño por d8.
 
 ### Luz viviente
 
@@ -272,7 +272,7 @@ Todos tus hechizos de Vida de Rango IV cuestan una acción menos para emplear (m
 
 ### Fuente de toda la vida
 
-*Vida, Ambiental, Ataque, Área, Sostenida, Radian*
+*Vida, Ambiental, Ataque, Área, Sostenida, Radiante*
 
 **Coste:** 3 acciones y 5 chi
 
