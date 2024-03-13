@@ -17,7 +17,7 @@ En el momento en el que tu conocimiento sobre la muerte alcanza sus ultimas etap
 
 *Nigromancia, Toque, Aflicción, Necrótico*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción 
 
 **Alcance:** Cuerpo a cuerpo
 
@@ -33,7 +33,7 @@ Tu toque drena la energía vital misma de un enemigo. Una criatura adyacente a t
 
 *Nigromancia, Ataque, A distancia, Necrótico*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -103,7 +103,7 @@ Colocas una marca maldita en un enemigo que te permite emplear su esencia vital 
 
 ## Rango III
 
-Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d8 y aquellos de Rango I cuestan una acción menos para emplear (mínimo 1).
+Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d8.
 
 ### Aspecto de no-muerto
 
@@ -155,51 +155,123 @@ La energía negativa perjudicará también la capacidad de tus enemigos para cur
 
 ### Crear no-muerto superior
 
-Crea un no-muerto superior hasta un máximo igual a tu rango.
+*Nigromancia, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Permanente
+
+Empleas el poder de la nigromancia para levantar un cadáver como un no-muerto mucho más inteligente y poderoso. Un cadáver a distancia media de ti se transforma en una criatura no-muerta de nivel igual o inferior a tu Rango x 2, la cual quedará bajo tu control hasta que muera. No puedes controlar simultáneamente a más no-muertos superiores que tu Rango y puedes construirla como desees siempre y cuando cuente con el permiso del DJ.
+
+**Empoderar** (1 chi): Anima un cadáver adicional como un no-muerto superior
 
 ### Cadenas de la muerte
 
-Crea un vínculo con hasta cuatro no-muertos con los que puede distribuir el daño que sufra.
+*Nigromancia, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Formas un poderoso vínculo parasítico con varios no-muertos bajo tu control que te permite absorber su esencia para recuperarte de ataques mortales. Al lanzar este hechizo crearás un vínculo con un máximo de cuatro no-muertos a distancia media de ti que se encuentren bajo tu control que durará hasta que todos sean eliminados o pierdas la concentración. 
+
+Mientras este hechizo permanezca activo eres capaz de distribuir todo el daño que sufras por ataques enemigos entre los no-muertos que tengas vinculados. La cantidad de daño que distribuyas no puede superar el cociente entre el daño total y el número de no-muertos vinculados además que no puedes transferir *heridas permanentes* o efectos de estado.
+
+**Empoderar** (1 chi): Vincula un no-muerto adicional bajo tu control a distancia media de ti siempre y cuando tengas menos de cuatro no-muertos vinculados.
 
 ### Enervación
 
-Afectas al objetivo con una maldición necrótica muy poderosa que le acaba transformando en un no-muerto.
+*Nigromancia, Maldición, Mejora*
 
-**Crear no-muerto superior** (3 acciones y 2 chi. Nigromancia): Transformas un cadáver, no-muerto menor o a una criatura voluntaria en no-muerto superior cuyas estadísticas quedan especificadas en el siguiente apartado. No puedes controlar a no-muertos cuyo nivel supere al tuyo y puedes comandar como máximo a una cantidad igual a tu rango.
+**Coste:** 2 chi
 
-**Drenar chi** (3 acciones y 2 chi. Nigromancia, Toque): Formas un *vínculo parasítico* con un objetivo que reducirá su reserva de chi por 1 cada ronda y recuperarás 1 chi de tu reserva (en el caso que el objetivo no le quede reserva sufrirá 2 daño necrótico). Solo puedes tener una conexión de este tipo.
+**Efecto crítico:** Aumenta el nivel del efecto provocado por un paso.
 
-**Enervación** (2 chi. Nigromancia, Aflicción): Durante esta ronda cada vez que impactes a un objetivo con un ataque que inflija daño necrótico empiezas a enervar su cuerpo, provocándole el efecto de un veneno de CON que tiene gravedad igual a tu tiro de ataque de nigromancia y no se puede reducir su efecto salvo por sanación.
+**Duración:** Hasta que sea eliminada
+
+Refuerzas la energía necrótica que generas para provocar una poderosa maldición capaz de corromper el alma de los afectados. En respuesta a impactar a cualquier cantidad de enemigos con un ataque que provoque daño Necrótico puedes emplear este hechizo para maldecirles, forzando a todos los afectados a tener éxito en un tiro de CON frente a tu Nigromancia para evitarla. Aquellos que fracasen quedarán maldecidos hasta que esta sea eliminada.
+
+Una criatura afectada por una maldición de enervación será incapaz de sanarse y todo hechizo de Sanación le herirá en lugar de curarle como si fuera un no-muerto. Adicionalmente, cada vez que pase un día o sufra de nuevo daño Necrótico debe volver a tirar contra la maldición o el nivel de esta aumentará por un paso tal como se indica a continuación:
+
+- **Paso 1:** El afectado quedará *fatigado* hasta que se recupere.
+- **Paso 2:** El afectado quedará *exhausto* hasta que se recupere.
+- **Paso 3:** El afectado obtiene Resistencia a Aflicciones y Vulnerabilidad a efectos Radiantes además que solo podrá alimentarse de carne humana. Puedes controlarlo como si fuera un no-muerto empleando una acción y forzándole a tener éxito en un tiro de Voluntad o Concentración contra tu modificador de Nigromancia. Esto funciona de la misma manera que el hechizo Geas.
+- **Paso 4:** La criatura se muere instantáneamente y se transforma en una criatura no-muerta del mismo nivel redondeando hacia abajo.
 
 ## Rango V 
 
-*Toque necrótico* y *descarga de energía negativa* aumentan el daño base a 1d10
+Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d10. 
 
 ### Toque de la muerte
 
-Tiro de CON o mete mucho daño necrótico.
+*Nigromancia, Necrótico, Toque*
+
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Toque
+
+**Efecto crítico:** El afectado 
+
+**Duración:** Instantáneo
+
+Corrompes el alma de un enemigo con un toque para transformarlo en un no-muerto. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu Nigromancia o sufrirá 3d10 + CAR daño Necrótico y la maldición de Enervación a paso 1. Si logras reducir los puntos de vida de tu enemigo a 0 con este hechizo morirá instantáneamente y se transformará en un no-muerto menor o mayor bajo tu control. Los objetivos que tengan éxito en su tirada solo sufrirán la mitad del daño y no quedarán afectados por la maldición.
+
+**Empoderar** (1 chi): Afectas a una criatura adicional con este hechizo.
 
 ### Alma corrompida
 
-Cada vez que sufras daño necrótico recuperas Vitalidad igual a la mitad del daño recibido. Puedes seguir luchando a menos de 0 PV y no morirás hasta que seas decapitado o acabes a -CON PV.
+*Nigromancia, Pasiva*
+
+La energía necrótica ha corrompido por completo tu alma, transformándote en un ser que se alimenta de la esencia vital de los demás. Obtienes Inmunidad al daño Necrótico y cada vez que seas herido por un efecto Necrótico recuperarás Vitalidad igual a la mitad del daño recibido. En el caso que ya seas un no-muerto te regenerarás Vitalidad al princpio de tu turno igual a tu Rango + 2 si te encuentras en un entorno infundido con energía negativa.
+
+El poder necrótico te hace aún más difícil de matar, permitiéndote seguir luchando aunque caigas a menos de 0 PV recibiendo únicamente el efecto de estado *ralentizado*. Solo morirás completamente si eres decapitado o cuando el valor absoluto de tus PV negativos sea inferior a tu estadística de CAR. 
 
 ### Nube de aniquilación
 
-Crea una nube que hace daño necrótico a quienes fracasan tu tiro de CON además de la maldición de enervación.
+*Nigromancia, Necrótica, Gaseosa, Duradera*
 
-**Toque de la muerte** (1 acción y 3 chi. Nigromancia, Toque, Aflicción, Antienergía): Una criatura adyacente debe tener éxito en un tiro de CON contra tu nigromancia o sufrirá 3d10 + CAR daño necrótico que también provocará *enervación* (la mitad de daño en caso de éxito). Si el objetivo muere por este ataque se transformará en un no-muerto menor. (1 chi) Afecta a un objetivo adicional
+**Coste:** 2 acciones y 3 chi
 
-**Alma corrompida:** Recibes resistencia 2 contra el daño físico y puedes usar tu CAR en lugar de tu CON para calcular tus PV y Vitalidad. Además puedes seguir luchando con 0 PV recibiendo el efecto de estado *ralentizando*, muriendo solo cuando el valor absoluto de tus PV negativos sea igual a tu CAR. Si ya eres un no-muerto te regenerarás 2 Vitalidad al principio de tu turno y todas las heridas permanentes hechas contra ti serán de un grado inferior.
+**Alcance:** Medio
 
-**Nube de aniquilación** (3 acciones y 3 chi. Nigromancia, Concentración, Gas, Antienergía): Formas una nube de energía negativa que ocupará un espacio de tamaño medio. Todas las criaturas en el área de la nube deberán tirar CON frente a tu nigromancia o sufrirán 1d10 + CAR daño necrótico y sufrirán los efectos de *enervación*. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá tirar CON o sufrirá los efectos de un *toque necrótico* modificado por *enervación*. La nube permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. 
+**Tamaño:** Esfera mediana
+
+**Efecto crítico:** Los afectados aumentan su nivel de la maldición Enervación por un paso.
+
+**Duración:** Concentración
+
+Formas una nube de energía negativa que drenará la esencia vital de todo aquel que toque. La nube llenará una esfera de tamaño mediano, expandiéndose alrededor de esquinas y paredes. El espacio ocupado por la nube otorgará *ocultamiento* a todas las criaturas para ataques tanto exteriores como interiores. La nube permanecerá en el campo de batalla hasta que pierdas la concentración o se disipe. 
+
+Aquellos que permanezcan dentro de la nube empezarán a corromperse por la energía negativa. Las criaturas que empiecen su turno dentro de la nube o entren en ella deberán tener éxito en un tiro de CON frente a tu Nigromancia. Si fracasan sufrirán 1d10 + CAR daño Necrótico (la mitad daño en caso de éxito) y además que serán afectados por el hechizo Enervación. Si una criatura muere por culpa de la nube su cadáver se reanimará como un no-muerto menor.
+
+**Empoderar** (1 chi): Aumenta el tamaño de la nube a una esfera mediana o incrementa el daño de este hechizo a 2d10 + CAR durante esta ronda.
 
 ## Rango VI
 
-### Hueste de los malditos
+### Apocalipsis de la no-muerte
 
-Hace ataque fuerte necrótico. Llena todo el campo de batalla con aura de muerte y revive todos los que mueran como no-muertos. Es tierra profanadpara no-muertos y cada criatura sufre 1d10 + Rango daño Necrótico al principio de su turno (que puede resistirse tirando CON y sana los no-muertos). 
+*Nigromancia, Ambiental, Ataque, Área, Duradera, Necrótica*
 
-**Hueste de los malditos** (3 AP y 5 chi. Nigromancia, Ambiental): Levantas todos los muertos en el campo de batalla formando una horda de no-muertos cuya fuerza dependerá de la cantidad de cadáveres que haya (esto lo decidirá el máster y suele calcularse como 2d6). Todo el campo de batalla será profanado, otorgando así los beneficios de *guerrero de la fe* a todos los no-muertos en el área y provocando que cada criatura que muera en él reanime como un no-muerto, añadiéndose a la horda de no-muertos. 
+**Coste:** 3 acciones y 5 chi
+
+**Tamaño:** Radio grande
+
+**Efecto crítico:** Los afectados sufrirán la maldición de Enervación.
+
+**Duración:** Siete rondas
+
+Liberas una cantidad inmensa de energía negativa que aniquilará completamente a tus enemigos y profanará la tierra a tu alrededor. Al lanzar este hechizo haz un ataque con Nigromancia contra todas las criaturas en un radio grande que inflige 3d10 + CAR daño Necrótico al impactar que transformará a aquellos que mate en no-muertos menores. 
+
+Tras este ataque el campo de batalla quedará sobrecargado de energía negativa, empoderando tu magia y a los no-muertos que controles. Esta sobrecarga permanecerá activa durante siete rondas y otorgará los siguientes efectos. Solo podrá ser eliminada por hechizos y habilidades de similar magnitud.
+
+- Todos los hechizos de Nigromancia quedarán empoderados, otorgando Ventaja a todos los tiros relacionados con esta magia empleados en el área afectada. Esto no se acumula con Aura de muerte.
+- La energía negativa sanará rápidamente a los no-muertos, haciendo así que al principio de tu turno todos los no-muertos se sanen Rango + 2 Vitalidad además que estarán bajo los efectos de Guerrero de la fe. Esto no se acumula con la sanación otorgada por Alma corrompida. 
+- Cada vez que una criatura en el campo de batalla caiga a menos de 0 PV revivirá inmediatamente como un no-muerto menor. Los hechizos de Sanación no funcionarán y todo intento de revivir a una criatura que haya muerto no funcionarán.
+- Los seres vivos que se encuentren en el área afectada deberán tener éxito en un tiro de CON frente a tu Nigromancia al principio de su turno o sufrirán 1d10 + CAR daño Necrótico. Este daño reducirá también la Vitalidad y PV de los afectados de la misma manera que Toque necrótico.
 
 # No-muertos	
 

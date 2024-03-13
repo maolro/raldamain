@@ -160,7 +160,7 @@ Todos tus hechizos de Sangre de Rango II cuestan una acción menos para emplear 
 
 *Sangre, Aflicción, Área, Sanación, Necrótico*
 
-**Coste**: 3 acciones y 2 chi
+**Coste**: 2 acciones y 2 chi
 
 **Tamaño**: Radio corto
 
@@ -190,7 +190,7 @@ Mientras el Vínculo de Sangre permanezca activo cada vez que una de las criatur
 
 *Sangre, Aflicción, Agarre, Duradero*
 
-**Coste**: 2 acciones y 2 chi
+**Coste**: 1 accy 2 chi
 
 **Alcance**: Medio
 
@@ -198,13 +198,13 @@ Mientras el Vínculo de Sangre permanezca activo cada vez que una de las criatur
 
 Manipulas la sangre de una criatura para convertirla en un títere bajo tu control. Una criatura a distancia media deberá tener éxito en un tiro de CON frente a tu Magia de Sangre o quedará *agarrada* y caerá bajo tu control. Este efecto durará hasta que pierdas la concentración o la criatura se libere.
 
-Una criatura *agarrada* por este hechizo no podrá tomar acciones o reacciones, ni siquiera para escapar. En lugar de ello deben realizar un tiro de CON al principio de su turno contra tu Magia de Sangre y se liberarán de este hechizo en caso de éxito. Puedes controlar criaturas restringidas por este hechizo como títeres, permitiéndote gastar cualquier cantidad de acciones para forzarlos a realizar una acción de tu elección con el mismo coste. Si intentas forzar a una criatura restringida a hacerse daño a sí misma o a un ser querido podrá intentar una tirada de CON para liberarse antes que lo haga.
+Una criatura *agarrada* por este hechizo no podrá tomar acciones o reacciones, ni siquiera para escapar. En lugar de ello deben realizar un tiro de CON al principio de su turno contra tu Magia de Sangre y se liberarán de este hechizo en caso de éxito. Puedes controlar criaturas restringidas por este hechizo como títeres, permitiéndote gastar cualquier cantidad de acciones para forzarlos a realizar una acción de tu elección con el mismo coste. Si intentas forzar a una criatura agarrada a hacerse daño a sí misma o a un ser querido podrá intentar una tirada de CON para liberarse antes que lo haga.
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
 
 ## Rango V 
 
-Todos tus hechizos de Sangre sustituyen sus dados de daño por d10 y aquellos de Rango III que conozcas cuestan una acción menos para emplear (mínimo 1).
+Todos tus hechizos de Sangre sustituyen sus dados de daño por d10.
 
 ### Autocontrol sanguíneo
 
@@ -232,7 +232,7 @@ Manipulas la sangre de un enemigo para matarlo desde dentro. Un objetivo a dista
 
 *Sangre, Aflicción, Necrótico, Duradero*
 
-**Coste**: 3 acciones y 3 chi
+**Coste**: 2 acciones y 3 chi
 
 **Tamaño**: Radio medio
 

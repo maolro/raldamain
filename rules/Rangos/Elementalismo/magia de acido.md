@@ -144,7 +144,7 @@ Formas varios tentáculos de lodo ácido a tu alrededor para retener a tus enemi
 
 Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. Todas las criaturas que empiecen su turno a distancia cercana de ti o entren por primera vez en un espacio a esa distancia deberán defenderse de nuevo contra este hechizo. Aquellas que estén ya agarradas sufrirán 1d8 + CAR daño Ácido y uno de los objetos que lleven encima sufrirá el efecto de estado *roto*. 
 
-**Empoderar** (1 chi): Un ataque hecho contra ti impactará a una de las criaturas agarradas. Para empoderar de esta manera debes encontrarte en *posición de*
+**Empoderar** (1 chi): Un ataque hecho contra ti impactará a una de las criaturas agarradas. Para empoderar de esta manera debes encontrarte en *posición defensiva*
 
 ### Llamar al pantano
 

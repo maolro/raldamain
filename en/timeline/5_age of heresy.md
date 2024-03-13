@@ -63,6 +63,7 @@ title: Age of Heresy
 | 4027 | Seishin-Gumi leader Kenamaru is killed by Seigo's companions, ending the organization's control over Shinri. The oni take advantage of the chaos to steal the Imperial seal. |
 | 4027 | The Mirai corporation is established in Shinri, the first large state corporation in the country. |
 | 4027 | Seigo is crowned ruler of all Shinri, founding the Shinri alliance. He passes many revolutionary laws such as the abolition of feudalism and the end to Shinri's isolationism. |
+| 4027 | The Red Dragon takes a vital Arshalani border castle in a daring night attack. His victory grants him enough prestige to unite the chothgar |
 | 4028 | Madness spirit Hentsu-Myokai enters the material plane, causing chaos in the city of Klonum |
 | 4028 | The Oni Republic of Thalos launches an invasion of Shinri.   |
 | 4029 | The Oni gate is sealed by the Incarnate and his companions, ending the Thalos-Shinri conflict. Renshin becomes trapped in the Spirit world during the fight. Seigo then breaks the Imperial Seal to separate both worlds. |

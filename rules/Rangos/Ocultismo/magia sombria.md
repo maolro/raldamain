@@ -120,15 +120,54 @@ El afectado podrá repetir el tiro al principio de su turno para intentar escapa
 
 ## Rango III
 
-Usar *tajo sombrío*, *toque necrótico* y *crear oscuridad* cuestan -1 AP. Aumenta también el daño base de *tajo sombrío* y *toque necrótico* a 1d8.
+Todos tus hechizos Sombríos sustituyen sus dados de daño por d8.
 
 ### Tentáculos de oscuridad
 
+*Sombrío, Frío, Ataque, Agarre, Duradero*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio corto
+
+**Efecto crítico:** Todos los afectados fallarán automáticamente su tiro para evitar ser *agarrados*.
+
+**Duración:** Concentración
+
+Moldeas la oscuridad para formar varios tentáculos hechos de energía sombría para agarrar a tus enemigos. Los tentáculos emergerán de un punto a distancia media de ti que se encuentre al oscuras y tras invocarlos harán un ataque contra todas las criaturas a distancia corta de ellos que provocará 1d8 + CAR daño Frío al impactar. Además, los afectados deberán tener éxito en un tiro de Heroísmo o Atletismo contra tu magia Sombría o quedarán *agarrados* por los tentáculos sombríos.
+
+Los tentáculos permanecerán en el campo de batalla hasta que pierdas la concentración o sean disipados por un efecto de magnitud similar. Todas las criaturas que empiecen su turno a distancia cercana de los tentáculos o entren por primera vez en un espacio a esa distancia deberán defenderse de nuevo contra este hechizo. Aquellas que estén ya agarradas sufrirán 1d8 + CAR daño Necrótico que reducirá su Vitalidad y PV máximos.
+
+**Empoderar** (1 chi): Un ataque hecho contra ti impactará a una de las criaturas agarradas. Para empoderar de esta manera debes encontrarte en *posición defensiva* y encontrarte a distancia cercana de los tentáculos.
+
 ### Maldición de Shade
+
+*Sombrío, Mejora, Maldición*
+
+**Coste:** 2 chi
+
+**Duración:** Hasta que sea eliminada
+
+Maldices a un enemigo con el poder del plano sombrío para chuparle sus ganas de vivir, hundiéndolo lentamente en la desesperación. En respuesta a impactar a cualquier cantidad de enemigos con un ataque Sombrío puedes emplear este hechizo para maldecirles, forzando a todos los afectados a tener éxito en un tiro de CON frente a tu Magia Sombría para evitarla. Aquellos que fracasen quedarán maldecidos hasta que esta sea eliminada.
+
+Una criatura afectada por la maldición de Shade no podrá recuperar cordura ni recibir sanación. Adicionalmente, cada vez que pase un día o sufra de nuevo daño por un efecto Sombrío debe volver a tirar contra la maldición o el nivel de esta aumentará por un paso tal como se indica a continuación:
+
+- **Paso 1:** El afectado se volverá incapaz de concentrarse y no podrá ser afectado por efectos de Moral positivos o negativos.
+- **Paso 2:** El afectado quedará *exhausto* hasta que se recupere.
+- **Paso 3:** El afectado pierde sus ganas de luchar y queda en un estado catatónico. Se vuelve incapaz de realizar acciones o reacciones salvo que su vida corra peligro.
+- **Paso 4:** El afectado pierde sus ganas de vivir e intenta suicidarse. Si el intento de suicidio es exitoso se muere y su alma se transformará en una Criatura Sombría mientras que si fracasa el nivel de la maldición se reducirá por un paso.
+
+**Empoderar** (1 chi): Haz un ataque de Toque Sombrío contra una criatura maldita que se encuentre a distancia media de ti como acción bonus. Solo puedes empoderar así una vez por ronda.
 
 ### Sombras malditas
 
-**Tentáculos de oscuridad** (2 AP y 2 chi, Sombra, Área, Ambiental, Concentración): Un espacio de radio medio se llena de tentáculos de oscuridad que atacan a todos los objetivos en él, infligiendo 1d8 + CAR daño frío y *agarrando* al impactar. El efecto se mantiene mientras te concentres en él o pasen rango + 1 rondas y los tentáculos volverán a atacar a cada criatura que empiece su turno en el área de efecto o entren en ella, infligiendo daño igual a *tajo sombrío* y *agarrando*.
+*Sombrío, Invocación, Durader*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Hasta 
 
 **Maldición de Shade** (1 AP y 2 chi, Sombra, Aflicción, Antienergía, Maldición): Haz un ataque de *toque sombrío* contra un objetivo a distancia media que al impactar aquejará al objetivo con una maldición del plano sombrío. Esta maldición funciona como un veneno de SAB con gravedad igual a tu tiro de magia sombría. Además, aumenta el alcance de tu *toque necrótico* contra un objetivo afectado por la maldición a distancia lejana y si el objetivo muere no podrá ser resucitado.
 
@@ -138,11 +177,25 @@ Usar *tajo sombrío*, *toque necrótico* y *crear oscuridad* cuestan -1 AP. Aume
 
 ### Titiritero sombrío
 
+*Sombrío, Duradero, Agarre*
+
+**Coste:** 1 acción y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Agarras a un enemigo con zarcillos sombríos y los empleas para manipular sus movimientos, controlándolo como si fuera un títere. Una criatura a distancia media de ti que se encuentre en un entorno a oscuras debe tener éxito en un tiro de Heroísmo o Destrozar contra tu modificador de Magia Sombría o quedará *agarrada* hasta que escape o pierdas la concentración. 
+
+La criatura agarrada puede repetir el tiro al principio de su turno para intentar escapar. Si esta permanece *agarrada* puedes gastar cualquier cantidad de acciones para forzarla a realizar una acción de tu elección con el mismo coste. Si intentas forzar a una criatura agarrada a hacerse daño a sí misma o a un ser querido podrá hacer un tiro para intentar liberarse antes que lo haga. 
+
+**Empoderar** (1 chi): Afectas a un objetivo adicional con este hechizo
+
 ### Terror nocturno
 
 ### Clones sombríos
 
-**Titiritero sombrío** (2 AP y 2 chi, Sombra, Maniobra, Concentración): Una criatura que se encuentre en un entorno a oscuras debe tener éxito en un tiro de FUE contra tu magia sombría o es *agarrado*. Mientras permanezca bajo este agarre y te encuentres a distancia media del objetivo puedes gastar AP para que el objetivo tome una acción que tú desees con el mismo coste. No puedes tener a más de rango – 2 criaturas bajo tu control con esta habilidad y al principio de su turno el objetivo puede tirar para intentar escapar.
+
 
 **Terror nocturno** (3 AP y 2 chi, Sombra, Miedo, Área, Concentración): Te rodeas de una tenebrosa nube de oscuridad que llenará un radio medio. Toda criatura en el área de efecto deberá superarte en un tiro de CAR o aumenta su nivel de miedo por un paso y se desorientará temporalmente, impidiendo que pueda salir de la nube de oscuridad. Cada criatura que empiece su turno en la nube o entre en ella deberá volver a tirar para evitar el miedo y esta durará rango + 2 rondas o cuando pierdas la concentración. 
 
@@ -152,15 +205,41 @@ Si hay muchas sombras que atacan a la misma persona este será un ataque combina
 
 ## Rango V
 
-Aumenta el daño base de *tajo sombrío* y *toque necrótico* a 1d10.
+Todos tus hechizos Sombríos sustituyen sus dados de daño por d10
 
 ### Furia de Shade
 
+*Sombrío, Ataque, Área, Necrótico*
+
+**Coste:** 2 acciones y 3 chi
+
+**Tamaño:** Cono grande
+
+**Efecto crítico:** Los afectados fallarán su tiro para evitar la Maldición de Shade
+
+**Duración:** Instantáneo
+
+Invocas el poder del plano sombrío para que consuma la esencia vital de tus enemigos. Haz un ataque contra todas las criaturas en un cono grande que infligirá 3d10 + CAR daño Necrótico al impactar además de maldecir a los afectados con la Maldición de Shade. Este ataque disipará también todas las fuentes de luz en el área afectada y la convertirá en Tierra Consagrada dedicada al plano sombrío durante el resto del combate. Cabe recalcar que debes encontrarte en un espacio a oscuras para emplear este hechizo.
+
+**Empoderar** (1 chi): El siguiente hechizo Sombrío que lances tras la Furia de Shade te cuesta una acción bonus. 
+
 ### Ejecución sombría
 
-### Tinieblas del olvido
+*Sombra, Aflicción, Necrótico*
 
-**Furia de Shade** (3 AP y 3 chi, Sombra, Área, Antienergía, Maldición): Haz un ataque contra todas las criaturas en un radio grande que infligirá 2d10 + CAR daño necrótico además de los efectos de la *maldición de Shade*. Este ataque disipará todas las fuentes de luz en el área y hará que toda el área de efecto cuente como tierra consagrada dedicada a Shade durante el resto del combate. Esta habilidad solo puede usarse si te encuentras en una posición a oscuras. 
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Lejano
+
+**Duración:** Instantáneo
+
+Empleas la MaldicUn objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de CON frente a tu Magia Sombría o sufre 3d10 + CAR daño Necrótico que reducirá también su cantidad máxima de Vitalidad y PV. 
+
+Este hechizo infligirá la mitad de daño si el afectado se defiende exitosamente y en el caso que fracase las criaturas a distancia corta deberán defenderse también de este hechizo, sufriendo 1d10 + CAR daño Necrótico en caso de fracaso.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
+
+### Tinieblas del olvido
 
 **Ejecución sombría** (1 AP y 3 chi, Sombra, Aflicción, Antienergía): Un objetivo afectado por la *maldición de Shade* a distancia lejana deberá tirar CON frente a tu magia sombría o será consumido por la oscuridad, sufriendo 2d10 + CAR daño necrótico que también reducirá el máximo de Vitalidad y PV (la mitad en caso de éxito). Además, al impactar exitosamente puedes hacer un ataque de *tajo sombrío* contra todas las criaturas en un radio corto al objetivo. 
 
