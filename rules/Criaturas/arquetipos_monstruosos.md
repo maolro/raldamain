@@ -2,6 +2,8 @@
 
 ## Corrupción fúngica (+2)
 
+La criatura está infestada por hongos parasíticos que anim
+
 Ascendencia Fúngica, Naturaleza/Nigromancia
 
 ## Siervo de la colmena (+2)

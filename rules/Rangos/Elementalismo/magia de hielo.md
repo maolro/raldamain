@@ -153,7 +153,7 @@ Manipulas el clima para formar una tormenta de granizo y fríos vientos para aca
 
 Aumentas la intensidad de tu magia para congelar a tus enemigos en el acto. Al impactar a un enemigo con un ataque que inflija daño Frío puedes forzarle a tener éxito en un tiro de Heroísmo o Destrozar frente a tu Magia de Hielo o su cuerpo quedará parcialmente congelado, recibiendo el efecto de estado *enredado*. No necesitas concentrarte para congelar a enemigos de esta manera.
 
-Un enemigo congelado de esta manera podrá repetir el tiro al principio de su turno para intentar liberarse. Si se encuentra en un entorno frío el hielo empezará a provocarle los efectos de hipotermia, forzándole a realizar un tiro de CON al principio de su turno o sufrirá los efectos de un veneno de DES con gravedad igual a tu Magia de Hielo. La hipotermia es una Aflicción con el rasgo Frío y solo podrá curarse si el afectado permanece una ronda en un lugar con la cantidad adecuada de calor, lo cual lo reducirá su nivel por un .
+Un enemigo congelado de esta manera podrá repetir el tiro al principio de su turno para intentar liberarse. Si se encuentra en un entorno frío el hielo empezará a provocarle los efectos de hipotermia, forzándole a realizar un tiro de CON al principio de su turno o sufrirá los efectos de un veneno de DES con gravedad igual a tu Magia de Hielo. La hipotermia es una Aflicción con el rasgo Frío y solo podrá curarse si el afectado permanece una ronda en un lugar con la cantidad adecuada de calor, lo cual lo reducirá su nivel por un paso.
 
 **Empoderar** (1 chi): Afecta a un enemigo adicional con este hechizo.
 

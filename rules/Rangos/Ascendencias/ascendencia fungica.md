@@ -91,27 +91,72 @@ Aumentas el tamaño de una masa de hongos y le das una semblanza de vida para qu
 
 ## Rango IV
 
-Incrementa tu FUE por 1.
+Incrementa tu estadística de FUE y su limitador por 1.
 
-**Transporte fúngico** (2 acciones y 1 chi): Te fusionas con materia fúngica y en cualquier momento de la ronda puedes reemerger de otro espacio infestado por hongos a una distancia lejana. Si estás fusionado con los hongos no puedes tomar acciones ni ser atacado, pero si los hongos con los que te fusionas sufren daño fuego o radiante volverás a tu estado original y sufres *náuseas* durante una ronda.
+### Comunión fúngica
 
-**Crecimiento fúngico** (2 acciones y 1 chi): Una criatura fúngica o no-muerto que controles recibe una mejora adicional (máximo rango – 3 mejoras). Esta habilidad puede usarse también para crear una nueva criatura fúngica sin mejoras en un espacio infestado por hongos.
+*Innata, Ambiental*
+
+**Coste:** 3 acciones y 2 chi o vigor
+
+**Duración:** Una hora
+
+Extiendes tu voluntad a todos los hongos a tu alrededor, convirtiéndolos en extensión de tu cuerpo y mente. Esta habilidad solo puede emplearse en un lugar con la adecuada cantidad e hongos y tras usarla entras en comunión con ellos, transformando así todo el terreno en Tierra Consagrada para todas las criaturas Fúngicas. Este hechizo permanecerá activo durante una hora o hasta que todos los hongos sean destruidos.
+
+Esta habilidad te permite también fusionarte con los hongos o sentir lo que ellos sienten. Mientras Comunión Fúngica permanezca activa puedes detectar la posición de toda criatura que se encuentre cerca de un hongo como si tuvieras visión a ciegas. Puedes también emplear una acción para teletransportarte a otra posición a distancia media de ti si tanto tu posición final como inicial tienen la cantidad adecuada de hongos.
+
+**Empoderar** (1 chi o vigor): Te teletransportas como reacción para evitar un ataque enemigo. Esta habilidad solo puede usarse si te encuentras en *posición defensiva* y solo funcionará si tanto la posición final como inicial tienen la adecuada cantidad de hongos.
+
+### Regeneración maldita
+
+*Innata, Pasiva*
+
+La composición fúngica de tu cuerpo te permite regenerarte a velocidades prodigiosas. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 2 y reduces el nivel de una *herida permanente* que te afecte por un paso si te encuentras en un lugar con la cantidad adecuada de hongos. 
+
+Esta regeneración te permite recuperar miembros perdidos y si haces un descanso en un lugar infestado por hongos podrás recuperarte de todas las *heridas permanentes* que tengas. Debido a su naturaleza fúngica no funcionará durante una ronda si llegas a sufrir daño Radiante.
+
+**Empoderar** (1 chi o vigor): Te recuperas de una *herida permanente media*. 
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Puedes emplear todos tus hechizos de Rango III pertenecientes a magia de Naturaleza o Nigromancia usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango III pertenecientes a esas magias.
 
-**Aura tóxica:** Todas las criaturas que empiecen su turno en un espacio cercano a ti o entren en él por primera vez deberán tirar CON contra tu rango + 3 o son *enfermados* durante una ronda. Al afectar con tus *esporas infecciosas* a una criatura *enfermada* esta sufrirá el efecto *nauseas*
+### Aura tóxica
 
-**Comunión fúngica** (3 acciones y 2 chi): Fusionas tu mente con todos los hongos en el campo de batalla, permitiéndote conocer la posición exacta de todos los seres vivos cercanos a un hongo y recibiendo inmunidad a *flanqueo* y ataques sorpresa.  
+*Innata, Pasiva*
+
+Estas siempre rodeado por una nube de esporas tóxicas capaces de infectar a tus enemigos. Tus ataques físicos están siempre afectados por Esporas tóxicas y toda criatura que empiece su turno a distancia cercana de ti o se mueva ahí deberá tener éxito en un tiro de CON frente a tu Ascendencia Fúngica o será infectado por las esporas, funcionando de la misma manera que el hechizo Nube Tóxica.
+
+Si empleas las habilidades ya mencionadas gastando  o vigor sus efectos se harán más fuertes al usarlas contra criaturas en tu Aura Tóxica. Esto hará que toda criatura que fracase su tiro para defenderse de cualquiera de esas habilidades sufra el efecto *náuseas* durante una ronda. El Aura Tóxica se desactivará durante una ronda si eres afectado por un hechizo de Aire o Radiante.
+
+### Señor de los hongos
+
+*Innata, Pasiva*
+
+Te has transformado en un ser tanto hongo como humano. Obtienes Inmunidad a efectos Mentales, Aflicciones, Necróticos y Miedo además de Resistencia a efectos Arcanos y Maldiciones. Las criaturas fúngicas te obedecerán instintivamente y los hongos empezarán a crecer en todo lugar a oscuras o húmedo por el que pases. 
+
+**Empoderar** (1 chi o vigor): Transfieres hasta la mitad del daño que sufras por un ataque a una criatura fúngica a distancia media de ti. 
 
 ## Rango VI
 
-Incrementa tu SAB por 1.
+Incrementa tu estadística de SAB y su limitador por 1.
 
-**Señor de los hongos:** Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los hongos te obedecen sin cuestionarlo. Además, te regeneras 2 PV al turno si estás al máximo de Vitalidad y puedes gastar 1 chi para reducir el nivel de una herida por un paso.
+### Forma Micónica
 
-**Forma micónica** (3 acciones y 3 chi): Invocas una *criatura fúngica* con tres mejoras y la posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. Los PV y Vitalidad de la criatura poseída contarán como si fueran PV temporales tuyos mientras dure el efecto.
+*Innata, Mejora*
+
+**Coste:** 3 acciones y 5 chi o vigor
+
+**Duración:** Seis rondas
+
+Te fusionas con una enorme cantidad de hongos para transformarte en una monstruosa criatura fúngica. Al activar Forma Micónica recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Forma Micónica por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Forma Micónica te otorgará los siguientes beneficios:
+
+- Tu FUE, CON y SAB pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Recibes Inmunidad a efectos de Toque y tu Aura Tóxica aumenta su alcance a medio. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
+- Puedes manifestar armas hechas de materia fúngica, las cuales tendrán daño base igual al que tendrían normalmente pero infligirán 1d10 + Rango daño Áci. Activas de inmediato los efectos del hechizo Comunión fúngica, obteniendo así los beneficios que este otorga.
+- Eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus además obtienes los efectos de Transferencia Vital con todas las criaturas Fúngicas que hayas invocado.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Todos tus hechizos obtenidos por Ascendencia Fúngica no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
 
 # Criatura fúngica
 

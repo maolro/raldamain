@@ -169,8 +169,6 @@ A rangos superiores puedes invocar elementales de poder aún mayor, aumentando e
 
 **Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
 
-**Esferas del relámpago** (2 AP y 2 chi): Formas una cantidad de esferas del relámpago igual a tu rango – 1 que orbitarán en torno a ti. Mientras te quede al menos una esfera recibes los beneficios de *cubierta* frente a ataques mágicos y todos tus ataques que provoquen daño eléctrico tendrán ventaja y aumentan su alcance a medio. Además, como reacción usable una vez por turno puedes atacar a un objetivo a distancia cercana con un ataque de *toque chispeante* que no puede ser esquivado.  Las esferas permanecerán activos mientras mantengas la concentración y en el momento que la pierdas estas explotarán, provocando una explosión que infligirá 1d4 daño eléctrico por esfera a todas las criaturas en el área (un tiro defensivo contra +3 x esfera reducirá el daño a la mitad). 
-
 ## Rango IV
 
 **Relámpago en cadena** (2 AP y 2 chi): Haz un ataque de *relámpago* que al impactar saltará hacia un objetivo adicional a distancia corta de este, haciendo así un ataque adicional. El relámpago puede seguir saltando hacia nuevos objetivos hasta que no haya ninguno más o tu ataque falle. (1 chi) Crea un *relámpago en cadena* adicional.

@@ -132,7 +132,7 @@ Aumenta tu estadística de SAB y su limitador por 1.
 Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu camino. Al activar Ángel vengador recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Ángel vengador por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Ángel vengador te otorgará los siguientes beneficios:
 
 - Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
-- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque.
+- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
 - Todos tus ataques físicos infligirán 1d10 + Rango daño Radiante al impactar además que tirarás un dado de daño adicional en todos tus hechizos de Vida. 
 - Estás siempre bajo los efectos de Poder de los cielos y sanarás el doble de Vitalidad con todos tus hechizos de Sanación
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.

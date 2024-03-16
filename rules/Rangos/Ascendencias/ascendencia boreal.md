@@ -113,6 +113,8 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y solo pued
 
 ### Guardián del ártico
 
+*Innata, Pasiva*
+
 Has desarrollado un profundo vínculo con los espíritus del ártico, empoderando notablemente tus resistencias físicas. Obtienes Resistencia a efectos de Fuego, Frío, Agua, Miedo, Mentales y Aflicciones además que desarrollas la capacidad de detectar la posición de seres vivos a distancia lejana de ti. Eres Inmune al frío extremo y puedes comunicarte con espíritus y elementales de hielo, quienes te tratarán como un igual. 
 
 ## Rango VI
