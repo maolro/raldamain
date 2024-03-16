@@ -243,8 +243,6 @@ Inviertes el chi de un enemigo para provocarle una explosión interna de energí
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo a medio
 
-**Disyunción** (2 AP y 3 chi): Un objetivo a distancia media pierde todas las habilidades de magia arcana persistentes que tenga activas, deshabilita todos los objetos mágicos y reduce su reserva de chi por 3. Esta habilidad solo puede defenderse con magia protectora.
-
 ## Rango VI
 
 Tus hechizos Protectores de Rango IV reducen su coste en acciones por 1 (mínimo 1).

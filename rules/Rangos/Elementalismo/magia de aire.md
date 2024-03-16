@@ -306,7 +306,7 @@ Mientras este efecto permanezca en el campo de batalla su potencia mejorará con
 
 Una vez que este hechizo acabe todos los hechizos Duraderos que hayan sido creados en él cesarán de inmediato. No se podrá volver a lanzar este hechizo en el mismo lugar hasta que haya transcurrido por lo menos menos un día.
 
-**Potenciar** (1 chi): Empleas el Muro de Vientos para defenderte de un ataque sin la necesidad de estar en *posición defensiva*.
+**Empoderar** (1 chi): Empleas el Muro de Vientos para defenderte de un ataque sin la necesidad de estar en *posición defensiva*.
 
 # Elemental de aire
 

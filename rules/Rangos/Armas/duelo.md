@@ -143,7 +143,7 @@ Esta habilidad durará hasta que pierdas la concentración o seas desarmado. Est
 
 *Duelo, Mejora*
 
-**Coste:** 2 chi
+**Coste:** 2 vigor
 
 Haces una poderosa estocada hacia un enemigo para penetrar sus defensas y herirlo gravemente en una parte específica del cuerpo. Esta técnica mejorará el daño base de tu siguiente ataque por 2d6 y provocará una *herida permanente leve* al impactar. 
 

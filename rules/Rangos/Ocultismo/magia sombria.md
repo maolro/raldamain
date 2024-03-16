@@ -48,7 +48,7 @@ Formas un corte entre el plano material y el plano sombrío que consumirá la en
 
 *Sombrío, Gaseoso, Duradero*
 
-**Coste:** 2 acciones
+**Coste:** 2 acciones y 1 chi
 
 **Alcance:** Medio
 
@@ -161,17 +161,23 @@ Una criatura afectada por la maldición de Shade no podrá recuperar cordura ni 
 
 **Empoderar** (1 chi): Haz un ataque de Toque Sombrío contra una criatura maldita que se encuentre a distancia media de ti como acción bonus. Solo puedes empoderar así una vez por ronda.
 
-### Sombras malditas
+### Terror nocturno
 
-*Sombrío, Invocación, Durader*
+*Sombrío, Duradero, Miedo, Visual*
 
 **Coste:** 2 acciones y 2 chi
 
-**Duración:** Hasta 
+**Alcance:** Medio
 
-**Maldición de Shade** (1 AP y 2 chi, Sombra, Aflicción, Antienergía, Maldición): Haz un ataque de *toque sombrío* contra un objetivo a distancia media que al impactar aquejará al objetivo con una maldición del plano sombrío. Esta maldición funciona como un veneno de SAB con gravedad igual a tu tiro de magia sombría. Además, aumenta el alcance de tu *toque necrótico* contra un objetivo afectado por la maldición a distancia lejana y si el objetivo muere no podrá ser resucitado.
+**Tamaño:** Esfera media
 
-**Clon sombrío** (3 AP y 2 chi, Sombra, Invocación): Crea una cantidad de clones sombríos igual a tu rango – 1 que permanecerán a tu lado durante el resto del combate. Un clon sombrío tendrá estadísticas similares a las tuyas pero su nivel será la mitad y solo tendrá 1 PV además de carecer de Vitalidad. Si tienes clones sombríos activos una vez con turno en respuesta a ser impactado puedes hacer que el ataque impacte a un clon sombrío en lugar de a ti. Esto solo funcionará si el objetivo no conoce tu posición exacta con certeza.
+**Duración:** Concentración
+
+Creas una extensa nube de oscuridad que atemorizará a tus enemigos con sus peores pesadillas. La nube emergerá de un punto a distancia media que se encuentre a oscuras y llenará un espacio del tamaño de una esfera media. Esta apagará todas las fuentes de luz en el área afectada y mientras permanezcas en ella recibes Ventaja en todos tus tiros relacionados con Magia Sombría.
+
+Mientras este hechizo permanezca activo toda criatura que empiece su turno en el área afectada o se mueva ahí debe tener éxito en un tiro de Voluntad o Percepción frente a tu Magia Sombría o se desorientará en la nube, aumentando su nivel de miedo por un paso y volviéndose incapaz de abandonar el espacio afectado. Al tratarse de una nube de oscuridad las criaturas afectadas quedarán también *cegadas* y recibirán *ocultamiento* frente a ataques de la misma manera que el hechizo Crear Oscuridad.
+
+**Empoderar** (1 chi): Reduce el coste de acciones del siguiente hechizo de Magia Sombría que lances por 1 hasta un mínimo de 0 acciones. No puedes empoderar el mismo hechizo más de una vez por ronda.
 
 ## Rango IV
 
@@ -191,13 +197,21 @@ La criatura agarrada puede repetir el tiro al principio de su turno para intenta
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional con este hechizo
 
-### Terror nocturno
-
 ### Clones sombríos
 
+*Sombría, Invocación, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Concentración
+
+Divides tu esencia vital para crear varios clones de ti hechos de energía sombría. Al lanzar este hechizo creas una cantidad de clones sombríos iguales a tu Rango, los cuales aparecerán en posiciones a distancia cercana de ti. Un clon sombrío tiene estadísticas similares a las tuyas pero tendrá la mitad de nivel que tú, tomando así las mismas habilidades pero a rango inferior. Estos durarán hasta que pierdas la concentración o sean todos eliminados.
+
+Los clones además son Inmunes a efectos Mentales, Miedo, Aflicciones, Necróticos y de Moral pero solo tendrán 1 PV y carecerán de Vitalidad. Si un enemigo no conoce tu posición exacta y te impacta con un ataque puedes hacer que dicho ataque haya herido a un clon sombrío en lugar que a ti. 
+
+**Empoderar** (1 chi): Crea un clon sombrío adicional hasta un máximo igual a tu Rango.
 
 
-**Terror nocturno** (3 AP y 2 chi, Sombra, Miedo, Área, Concentración): Te rodeas de una tenebrosa nube de oscuridad que llenará un radio medio. Toda criatura en el área de efecto deberá superarte en un tiro de CAR o aumenta su nivel de miedo por un paso y se desorientará temporalmente, impidiendo que pueda salir de la nube de oscuridad. Cada criatura que empiece su turno en la nube o entre en ella deberá volver a tirar para evitar el miedo y esta durará rango + 2 rondas o cuando pierdas la concentración. 
 
 **Sombras malditas** (2 AP y 2 chi, Sombra, Invocación): Invoca a una cantidad de sombras malditas igual a tu rango que permanecerán durante el resto del combate. Cada sombra maldita se enfocará en perseguir a un objetivo de tu elección y estas se moverán 1 paso cada ronda para perseguirlo. Si una sombra maldita acaba en una posición adyacente al objetivo este sufrirá un ataque de *toque necrótico*. 
 
@@ -231,22 +245,34 @@ Invocas el poder del plano sombrío para que consuma la esencia vital de tus ene
 
 **Alcance:** Lejano
 
+**Efecto crítico:** Aumenta el nivel de la Maldición de Shade que tenga activa tu objetivo por un paso. Si llegas a matarlo este se transformará en una criatura Sombría de nivel igual a tu Rango x 2.
+
 **Duración:** Instantáneo
 
-Empleas la MaldicUn objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de CON frente a tu Magia Sombría o sufre 3d10 + CAR daño Necrótico que reducirá también su cantidad máxima de Vitalidad y PV. 
+Empleas el poder de las sombras para consumir por completo la esencia de una criatura maldita, provocándole una muerte instantánea. Un objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de CON frente a tu Magia Sombría o sufre 3d10 + CAR daño Necrótico que reducirá también su cantidad máxima de Vitalidad y PV. 
 
-Este hechizo infligirá la mitad de daño si el afectado se defiende exitosamente y en el caso que fracase las criaturas a distancia corta deberán defenderse también de este hechizo, sufriendo 1d10 + CAR daño Necrótico en caso de fracaso.
+Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa todas las criaturas a distancia cercana de él deberán defenderse también de este mismo hechizo con la diferencia que el daño infligido será 1d10 + CAR.
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Tinieblas del olvido
 
-**Ejecución sombría** (1 AP y 3 chi, Sombra, Aflicción, Antienergía): Un objetivo afectado por la *maldición de Shade* a distancia lejana deberá tirar CON frente a tu magia sombría o será consumido por la oscuridad, sufriendo 2d10 + CAR daño necrótico que también reducirá el máximo de Vitalidad y PV (la mitad en caso de éxito). Además, al impactar exitosamente puedes hacer un ataque de *tajo sombrío* contra todas las criaturas en un radio corto al objetivo. 
 
 **Oscuridad devoradora** (2 AP y 3 chi, Sombra, Concentración, Aflicción, Antienergía): Formas una nube de oscuridad que llenará un radio medio y te permite hacer un ataque de *devorar esperanza* contra todas las criaturas que se encuentren en ella. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá tirar CON o sufrirán los efectos de *devorar esperanza*. La oscuridad permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Puedes además gastar 1 AP para mover la nube de oscuridad un paso en cualquier dirección.
 
 ## Rango VI
 
 ### Brecha sombría
+
+*Sombrío, Ataque, Área, Frío*
+
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Medio
+
+**Tamaño:** Radio grande
+
+**Duración:** Instantáneo
+
+Rompes la barrera entre el plano material y el sombrío para provocar una masiva descarga de energía negativa que consumirá todo a su paso. La brecha emergerá de un punto a distancia media de ti y toda criatura a distancia media de ella deberá defenderse de un ataque de Magia Sombría que infligirá 4d10 + CAR daño Frío.
 
 **Tinieblas del olvido** (3 AP y 5 chi, Sombra, Ambiental, Miedo, Mental): Formas una brecha entre el plano sombrío y el material en una posición a distancia lejana de ti. Todo el terreno a distancia lejana de la brecha contará como terreno difícil y cuenta como si estuviera a oscuras para los propósitos de tus habilidades. Aquellas criaturas que se encuentren a esa distancia deberán superar tu magia sombría en un tiro de CAR aumentarán su nivel de miedo por un paso y aquellas criaturas *asustadas* que fracasen sentirán la compulsión de caminar hacia el portal, forzándolas a emplear sus acciones para caminar hasta ahí. Toda criatura que empiece su turno a distancia corta de la brecha sufrirá los efectos de *devorar esperanza*. La brecha durará 4 rondas y cuando su duración acabe hará el efecto de *furia de Shade* en toda el área de efecto.
