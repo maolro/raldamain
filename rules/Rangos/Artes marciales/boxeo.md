@@ -71,11 +71,43 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 ## Rango III
 
+### Impacto destructor 
+
+*Marcial, Mejora*
+
+**Coste:** 2 vigor
+
+Los constantes 
+
+### Golpe veloz
+
+*Marcial, Mejora*
+
+**Coste:** 2 vigor
+
+Todo plan cae a pedazos con un golpe a la cara. En respuesta a que un enemigo adyacente te ataque puedes emplear esta habilidad como reacción para hacer un ágil contrataque antes que pueda reaccionar. Si impactas con dicho contrataque tu enemigo no solo sufrirá el daño sino que también fallará automáticamente el ataque que haya intentado utilizar, perdiendo todas las acciones y reservas gastadas. Un ataque de golpe veloz no puede ser mejorado con otras técnicas.
+
 ### Combinar técnicas
+
+*Marcial, Mejora*
+
+**Coste:** 2 vigor
+
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque Marcial puedes emplear esta habilidad para hacer un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede emplearse en ataques que no supongan un gasto de acciones.
 
 ## Rango IV
 
 ## Rango V
+
+### Puño certero
+
+*Marcial, Ataque, Físico*
+
+**Coste:** 1 acción y 3 vigor
+
+**Alcance:** Cuerpo a cuerpo
+
+Concentras toda tu energía en un único puñetazo capaz de noquear a un enemigo de un solo golpe. Esta habilidad te permite hacer un ataque Marcial que provoca 3d6 daño adicional al impactar y fuerza al afectado a tener éxito en un tiro de CON frente a tu modificador de Estilo Boxeo o cae *inconsciente* de inmediato. Un objetivo que caiga inconsciente así no despertará hasta que reciba sanación o pase una hora. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
 
 ## Rango VI
 

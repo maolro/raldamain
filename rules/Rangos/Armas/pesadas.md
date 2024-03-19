@@ -158,7 +158,7 @@ Estás dispuesto a arriesgar tu propia vida para herir a tu enemigo. Esta habili
 
 **Efecto crítico:** tu objetivo recibe una *herida permanente crítica*.
 
-Concentras toda tu energía en un único ataque capaz de matar incluso a los enemigos más poderosos. Haz un ataque con tu arma que inflige 3d6 daño adicional al impactar junto a una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
+Concentras toda tu energía en un único ataque capaz de matar incluso a los enemigos más poderosos. Haz un ataque con tu arma que provoca 3d6 daño adicional al impactar junto a una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
 
 ### Vuelo de golondrina
 
