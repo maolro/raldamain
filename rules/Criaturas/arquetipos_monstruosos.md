@@ -2,9 +2,13 @@
 
 ## Corrupción fúngica (+2)
 
-La criatura está infestada por hongos parasíticos que anim
+La criatura es un cadáver infestado por hongos parasíticos que animan su cuerpo. Este arquetipo otorga las siguientes mejoras:
 
-Ascendencia Fúngica, Naturaleza/Nigromancia
+- Aumenta su estadística de CON por 1 junto a una estadística física o mental de su elección.
+- Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Incrementa también su DEF y PV por 2 además que no le afectarán las *heridas permanentes medias* o *leves*.
+- Obtiene visión a ciegas en un radio medio. Si se encuentra en un entorno infestado por hongos se regenerará 3 Vitalidad al principio de su turno.
+- La primera vez que impacte a un enemigo cada ronda con un ataque físico le infectará con la habilidad Esporas infecciosas. Empleará como modificador su estadística de CON + 2. 
+- Cuando la criatura muera llenará una esfera pequeña centrada en su cadáver con esporas infecciosas, provocando el mismo efecto que la habilidad Nube Tóxica. Dicha nube se disipará tras una ronda.
 
 ## Siervo de la colmena (+2)
 
@@ -16,7 +20,12 @@ Transmutación, Fortitud
 
 ## No-muerto (+2)
 
-Nigromancia
+La criatura ha sido levantada entre los muertos con magia negra para transformarla en sierva de un nigromante u otro hechicero malévolo. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta su estadística de CON por 1 junto a una estadística física o mental de su elección.
+- Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido.
+- Incrementa su DEF y PV por 2 además que no le afectarán las *heridas permanentes leves*. Es capaz también de detectar la posición de todos los seres vivos a distancia media.
+- El daño base de sus ataques naturales incrementa por un paso además que recibirá una mejora perteneciente a Aspecto de No-muerto. Si se requiere un modificador para dicha mejora empleará su estadística de CON + 2.
 
 ## Lich (3 mejoras, +2)
 
@@ -25,5 +34,3 @@ Nigromancia
 ## Momia (3 mejoras, +2)
 
 ## Caballero profano (3 mejoras, +2)
-
-## Gul (+2)
