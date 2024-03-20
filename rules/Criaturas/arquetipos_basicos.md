@@ -114,3 +114,8 @@ La criatura se ha especializado en combatir empleando las artes marciales, entre
 - Incrementa su número e acciones por 1 hasta un máximo de 4. Recibe también las habilidades Esquiva asombrosa y Secuencia de ataques.
 - Al impactar con un ataque de Artes marciales provocará un efecto de Arte de la lucha sin la necesidad de pagar vigor. No podrá emplear el mismo efecto más de una vez por ronda.
 - Aumenta su bonificador en tiros de Esquiva por +2 y puede emplear tanto Esquiva como Parada para defenderse de ataques enemigos de la misma manera que Movimientos sutiles.
+
+## Jinete (+2)
+
+La criatura se ha especializado en combatir sobre una montura o la 
+
