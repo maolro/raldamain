@@ -117,5 +117,10 @@ La criatura se ha especializado en combatir empleando las artes marciales, entre
 
 ## Jinete (+2)
 
-La criatura se ha especializado en combatir sobre una montura o la 
+La criatura se ha especializado en combatir sobre una montura o la parte inferior de su cuerpo se asemeja a una, otorgándole movilidad y fuerza de carga superior. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta dos estadísticas físicas por 1.
+- Incrementa su número de acciones por 1 hasta un máximo de 5. Su velocidad de paso, natación o escalada pasa a ser 2 según la montura que tenga.
+- Aumenta su bonificador en tiros de Esquiva por +2 y puede emplear la habilidad Evasión una vez por ronda si se encuentra en terreno despejado. Esto no se acumula con otros usos de Evasión recibidos y los beneficios de esta habilidad se perderán si muere la montura o sufre una *herida permanente* en la pierna.
+- Cada vez que impacte a un objetivo tras moverse un paso en línea recta aumentará su daño base por 1d6 además que puede *desenganchar* como acción bonus. El afectado deberá también tener éxito en un tiro de Heroísmo o Acrobacias frente a su modificador de arma o será empujado un paso y quedará *tropezado*. Si el afectado emplea Parada para defenderse deberá seguir tirando. 
 
