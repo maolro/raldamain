@@ -52,7 +52,7 @@ Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consig
 
 **Duración:** Concentración
 
-Giras tu cadena con gran velocidad alrededor de ti para impedir que tus enemigos avancen hacia ti. Al activar esta habilidad entrarás en un estado de Danza de cadenas que te otorgará siempre los beneficios de *posición defensiva*. Además, mientras permanezcas en dicho estado la primera vez que un enemigo entre en un espacio a distancia corta de ti puedes hacerle un ataque con tu arma como reacción que le empujará un paso hacia atrás al impactar. Danza de cadenas permanecerá activa hasta que pierdas la concentración o seas incapaz de atacar con tu cadena.
+Giras tu cadena con gran velocidad alrededor de ti para impedir que tus enemigos avancen hacia ti. Al activar esta habilidad entrarás en un estado de Danza de cadenas que te otorgará siempre los beneficios de *posición defensiva*. Además, mientras permanezcas en dicho estado la primera vez que un enemigo entre en un espacio a distancia corta de ti puedes hacerle un ataque con tu arma como reacción que le empujará un paso hacia atrás al impactar además de hacerle daño. Danza de cadenas permanecerá activa hasta que pierdas la concentración o seas incapaz de atacar con tu cadena.
 
 ## Rango II
 
