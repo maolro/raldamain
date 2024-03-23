@@ -22,6 +22,8 @@ Ascendencia Espiritual, Magia de Naturaleza
 
 ## Hilo del destino (+2)
 
+La criatura está favorecida por el destino mismo, haciendo así que sea capaz de evitar situaciones cercanas a la muerte. Este arquetipo otorga las siguientes mejoras.
+
 Temporal, Presencia
 
 ## Mímico (+2)

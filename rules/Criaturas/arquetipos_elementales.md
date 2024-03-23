@@ -49,9 +49,17 @@ Ventaja en todos sus tiros de Magia de Agua, al impactar los afectados tiran con
 
 ## Esencia de hielo (+2)
 
-Resistencia al frío, baja las temperaturas por donde pasa, puede emplear los ataques Espina de hielo y rayo gélido, sus ataques físicos infligen 1d6 + 1 daño Frío.
+La criatura está infundida de energía elemental de hielo, vinculándola con los espíritus antiguos de regiones invernales. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta sus estadísticas de SAB y DES o FUE por 1.
+- Recibe un bonificador +2 en sus tiros relacionados con Magia de Hielo además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Hielo.
+- Recibe Resistencia al Frío además de Inmunidad al frío extremo. Todos sus ataques físicos infligen 1d6 + 2 daño Frío al impactar. Puede también usar su modificar de Magia de Hielo para sus ataques Físicos si este es más alto.
+- Es capaz de lanzar el hechizo Rayo gélido como si tuviera Rango II empleando como estadística principal su CON o SAB. Está también siempre rodeado de un aura gélida que provoca el mismo efecto que Bajar Temperaturas.
+- No sufre penalizaciones al caminar sobre el hielo y puede ver sin problemas en entornos afectados por niebla o tormentas de nieve. Es también capaz de caminar sobre el agua si esta se encuentra calmada y hace un clima adecuado.
 
 ## Esencia de hielo superior (+2, 3 mejoras)
+
+
 
 Puede usar Muro de Hielo 1/ronda, crea una capa de hielo por donde camina, Resistencia al Fuego, Agua y Naturaleza, obtiene Vuelo y sentido de vida.
 
@@ -66,7 +74,7 @@ La criatura está infundida por energía elemental de fuego que le permite canal
 - Aumenta sus estadísticas de CAR y DES o FUE por 1.
 - Recibe un bonificador +2 en sus tiros relacionados con Magia de Fuego además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Fuego.
 - Obtiene una acción adicional hasta un máximo de 4 y recibe Visión térmica hasta una distancia media.
-- Recibe Inmunidad al Fuego y todos sus ataques físicos infligen 1d6 + 1 daño Fuego al impactar. 
+- Recibe Resistencia al Fuego además de Inmunidad al calor extremo. Todos sus ataques físicos infligen 1d6 + 1 daño Fuego al impactar. 
 - Es capaz de lanzar los hechizos Llamarada, Asalto abrasador y Aliento de Fuego como si tuviera Rango II empleando como estadística principal su CON o CAR. 
 
 ## Esencia de fuego superior (+2, 3 mejoras)
@@ -92,3 +100,4 @@ La criatura se vuelve poderosa como un volcán viviente, abrasando todo a su pas
 - La criatura se regenera 5 Vitalidad al principio de su turno si se encuentra en un entorno en llamas. Dicha regeneración se anulará durante una ronda si esta criatura sufre daño Frío y la primera vez que esta criatura muera resucitará a 1 PV y podrá lanzar el hechizo Erupción abrasadora como acción bonus.
 
 ## Esencia de tormenta (+2)
+
