@@ -49,6 +49,17 @@ La criatura se ha especializado en combatir con armas a distancia, mejorando sus
 - Incrementa su número de acciones por 1 hasta un máximo de 4 y recibe las habilidad pasiva Esquiva asombrosa.
 - Aumenta su bonificador en tiros de Esquiva por +2 y puede emplear Evasión una vez por ronda. No tendrá que pagar vigor para esta habilidad.
 
+## Arquero superior(+2, 3 mejoras)
+
+La criatura se convierte en maestra con armas a distancia, obteniendo la capacidad de matar a sus enemigos de forma rápida y precisa. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta sus estadísticas de DES y CON por 1
+- Recibe un bonificador +1 en sus tiros relacionados con Armas a Distancia y aumenta el daño provocado con estas por un paso. 
+- El daño infligido con un ataque apuntado aumenta por 1d6 y tras impactar puede ocultarse como acción bonus si se encuentra en un lugar que tenga *cubierta*.
+- La primera vez que falle a un enemigo con un arma A distancia puede afectarle con la habilidad Disparo engañoso, empleando para él su bonificador de Armas A distancia. 
+- Reduce su coste en acciones para disparar con arcos por 1. En el caso que use armas a distancia que requieran recarga obtiene la capacidad de recargarla una vez por ronda como acción bonus.
+- Aumenta su bonificador en tiros de Esquiva por +1 y reduce el daño recibido por 4 si usa Esquiva para defenderse de un ataque enemigo. Obtiene también Inmunidad a ataques sorpresa y *terreno difícil*.
+
 ## Asesino (+2)
 
 La criatura se ha especializado en combatir con armas ligeras y se centra en hacer ataques rápidos y precisos. Este arquetipo otorga las siguientes mejoras:
@@ -123,4 +134,6 @@ La criatura se ha especializado en combatir sobre una montura o la parte inferio
 - Incrementa su número de acciones por 1 hasta un máximo de 5. Su velocidad de paso, natación o escalada pasa a ser 2 según la montura que tenga.
 - Aumenta su bonificador en tiros de Esquiva por +2 y puede emplear la habilidad Evasión una vez por ronda si se encuentra en terreno despejado. Esto no se acumula con otros usos de Evasión recibidos y los beneficios de esta habilidad se perderán si muere la montura o sufre una *herida permanente* en la pierna.
 - Cada vez que impacte a un objetivo tras moverse un paso en línea recta aumentará su daño base por 1d6 además que puede *desenganchar* como acción bonus. El afectado deberá también tener éxito en un tiro de Heroísmo o Acrobacias frente a su modificador de arma o será empujado un paso y quedará *tropezado*. Si el afectado emplea Parada para defenderse deberá seguir tirando. 
+
+
 

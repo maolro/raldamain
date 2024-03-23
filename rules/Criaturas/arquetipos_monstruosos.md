@@ -10,6 +10,15 @@ La criatura es un cadáver infestado por hongos parasíticos que animan su cuerp
 - La primera vez que impacte a un enemigo cada ronda con un ataque físico le infectará con la habilidad Esporas infecciosas. Empleará como modificador su estadística de CON + 2. 
 - Cuando la criatura muera llenará una esfera pequeña centrada en su cadáver con esporas infecciosas, provocando el mismo efecto que la habilidad Nube Tóxica. Dicha nube se disipará tras una ronda.
 
+## Mente despierta (+2)
+
+La criatura ha despertado el verdadero poder e su mente, recibiendo así nuevas y terroríficas habilidades mágicas. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta sus tres estadísticas mentales por 2.
+- Obtiene cuatro niveles de talento adicionales además que no puede perder la concentración salvo si sufre *heridas permanentes graves*. Aumenta también su modificador en todos los tiros relacionados con hechizos Arcanos por 1.
+- Es capaz de detectar las mentes pensantes a distancia media de la misma manera que Detectar Pensamientos. Puede detectar también las presencias mágicas a esa misma distancia junto a su fuerza aproximada.
+- Obtiene Resistencia al efectos Mentales, de Miedo y Arcanos. Su DEF pasa a ser 4 si era antes más baja y puede defenderse de hechizos Arcanos empleando su estadística de CON. 
+
 ## Siervo de la colmena (+2)
 
 Ascendencia Insectoide, Transmutación
