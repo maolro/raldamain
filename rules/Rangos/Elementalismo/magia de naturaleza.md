@@ -45,7 +45,7 @@ Si has enredado a un objetivo con este hechizo puedes intentar retenerlo aún m�
 
 **Duración:** Instantánea
 
-Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enemigo que se encuentre a distancia media de ti. Haz un ataque de magia de Naturaleza 	que inflige 1d6 + SAB daño Perforante al impactar. Este ataque es especialmente efectivo contra objetivos con armaduras ligeras, infligiéndoles *sangrado* al impactar. Si tienes técnicas de armas puedes aplicarlas a tus ataques hechos con este hechizo siempre que esa posible.
+Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enemigo que se encuentre a distancia media de ti. Haz un ataque de magia de Naturaleza que inflige 1d6 + SAB daño Perforante al impactar. Este ataque es especialmente efectivo contra objetivos con armaduras ligeras, infligiéndoles *sangrado* al impactar. Si tienes técnicas de armas puedes aplicarlas a tus ataques hechos con este hechizo siempre que esa posible.
 
 **Empoderar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
 
