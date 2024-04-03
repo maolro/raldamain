@@ -66,14 +66,14 @@ Aquí se presenta una lista de divinidades junto a las magias con las que están
 
 ### Espíritus mazarinos
 
-| **Nombre** | **Descripción**                                      | **Magias asociadas**       |
-| ---------- | ---------------------------------------------------- | -------------------------- |
-| Daruvei    | Espíritu de la prosperidad, la nobleza y el sol      | Vida, Protectora, Ilusoria |
-| Zernovog   | Espíritu del día y la noche                          | Vida, Sombría              |
-| Lydesna    | Espíritu de la primavera, la fertilidad y la pérdida | Naturaleza, Vida, Sombría  |
-| Vohonir    | Espíritu del fuego, la innovación y el renacer       | Fuego, Espacial            |
-| Chalkha    | Espíritu del invierno, la muerte y la perdición      | Hielo, Médium, Nigromancia |
-|            |                                                      |                            |
+| **Nombre** | **Descripción**                                             | **Magias asociadas**           |
+| ---------- | ----------------------------------------------------------- | ------------------------------ |
+| Daruvei    | Espíritu de la prosperidad, la nobleza y el sol             | Vida, Protectora, Ilusoria     |
+| Zernovog   | Espíritu del día y la noche                                 | Vida, Sombría                  |
+| Lydesna    | Espíritu de la primavera, la fertilidad y la pérdida        | Naturaleza, Vida, Sombría      |
+| Vohonir    | Espíritu del fuego, la innovación y el renacer              | Fuego, Vida, Espacial          |
+| Chalkha    | Espíritu del invierno, la muerte y la perdición             | Hielo, Médium, Nigromancia     |
+| Neshvest   | Espíritu de la mala suerte, la magia negra y las desgracias | Nigromancia, Sombría, Ilusoria |
 
 
 

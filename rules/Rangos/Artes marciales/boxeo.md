@@ -71,13 +71,13 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 ## Rango III
 
-### Impacto destructor 
+### Golpe de gacela
 
 *Marcial, Mejora*
 
-**Coste:** 2 vigor
+**Coste**: 2 vigor
 
-Los constantes 
+Aunque no lo parezca has entrenado mucho tus piernas para dar avances sorpresivos a altas velocidades, cuando realices un ataque puedes mejorar tu ataque, al hacerlo puedes como accion bonus avanzar una casilla sin probocar ataque de oportunidad, si el objetivo se encuentra en la casilla a la que te has movido tu ataque tendra ventaja y sumara 1d6 de daño.
 
 ### Golpe veloz
 
@@ -97,6 +97,32 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
+Dempsey roll
+Boxeo, Marcial, mejora, Defensa
+
+Duracion - 1 ronda
+
+Coste: 2 vigor
+
+Requisito: estar en posicion defensiva
+
+Eres capaz de mover tu cuerpo en de forma rotativa pero constante haciendo que sea mas dificil impactar y mas facil contratacar con gran potencia. cuando activas esta habilidad ganas la capacidad de en respuesta a ESQUIVAR un ataque puedes usar tu reaccion para realizar un ataque que ira con ventaja y con 1d6 de daño extra
+
+Golpe al punto debil (Golpe al pancreas)
+Marcial, mejora, aflicion
+
+Coste - 1 accion y 2 vigor
+
+Sabes donde se encuentra el punto debil de tus enemigos por lo que eres capaz de golpearlo con gran fuerza en sus zonas mas dolorosas. Realiza un ataque que proboca 2d6 de daño adicional al impactar y fuerza al afectado a salvar constitucion o quedara enfermado. (ganas la habilidad de sumar 1d6 de daño contra enemigos aturdidos o enfermados)
+
+Duelo ininterrumpido
+Boxeo, Marcial, mejora
+
+
+Has recibido multitud de golpes de la vida y ya nada te detiene, ganas X(rango) def
+
+Emporedar - (2 vigor) en respuesta a vayas a perder tu secuencia de ataques o perder la concentracion, puedes gastar el vigor para no hacerlo
+
 ## Rango V
 
 ### Puño certero
@@ -108,6 +134,12 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 **Alcance:** Cuerpo a cuerpo
 
 Concentras toda tu energía en un único puñetazo capaz de noquear a un enemigo de un solo golpe. Esta habilidad te permite hacer un ataque Marcial que provoca 3d6 daño adicional al impactar y fuerza al afectado a tener éxito en un tiro de CON frente a tu modificador de Estilo Boxeo o cae *inconsciente* de inmediato. Un objetivo que caiga inconsciente así no despertará hasta que reciba sanación o pase una hora. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
+
+### Golpe a los organos
+
+Marcial, mejora
+
+has entrenado para que tus ataques sean capaces de trasmitir el impacto a los organos de tus enemigos, siempre que impactes a un enemigo realizaras 1d6 de daño que ignora DEF
 
 ## Rango VI
 
