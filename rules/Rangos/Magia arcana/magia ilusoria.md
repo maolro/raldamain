@@ -60,7 +60,7 @@ Proyectas tus ilusiones en la mente de un enemigo para que esté convencido que 
 
 Una ilusión fantasmal solo podrá ser percibida por el objetivo afectado y estará convencido que es real. Si intenta interactuar con ella se sentirá completamente real y no podrá tirar Percepción para desmentirla, pero al hacerlo podrá repetir el tiro de Concentración o Averiguar intenciones para intentar liberarse de este efecto. Este efecto se desmentirá si otra persona convence al afectado que el objeto es una ilusión o esta actúa de una manera inverosímil.
 
-**Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
+**Empoderar** (1 chi o vigo): Afectas a un objetivo adicional a distancia media con este hechizo.
 
 ## Rango II
 

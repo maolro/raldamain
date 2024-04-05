@@ -51,7 +51,7 @@ Golpeas a un enemigo con tal fuerza que le haces perder el equilibrio. Tu siguie
 
 Pegas tus puños al cuerpo y te colocas en guardia para resistir todo ataque dirigido hacia ti. Activar esta técnica hará que entres inmediatamente en *posición defensiva* y te otorgará una cantidad de *contadores de escudo* igual a tu Rango que puedes emplear para reducir el daño de ataques físicos que no hayas podido detener con tiros de Parada. Esta técnica permanecerá activo hasta que pierdas la concentración o gastes tu último *contador de escudo*.
 
-**Empoderar** (1 vigor): Recuperas la mitad de tus *contadores de escudo*.
+**Empoderar** (1 vigor): Recuperas la mitad de tus *contadores de escudo*
 
 ### Puño aturdidor
 
@@ -75,9 +75,9 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 *Marcial, Mejora*
 
-**Coste**: 2 vigor
+**Coste**: 1 acción y 2 vigor
 
-Aunque no lo parezca has entrenado mucho tus piernas para dar avances sorpresivos a altas velocidades, cuando realices un ataque puedes mejorar tu ataque, al hacerlo puedes como accion bonus avanzar una casilla sin probocar ataque de oportunidad, si el objetivo se encuentra en la casilla a la que te has movido tu ataque tendra ventaja y sumara 1d6 de daño.
+Has entrenado mucho tus piernas para dar saltos repentinos a gran velocidad. Al emplear esta técnica te mueves un paso como acción bonus y haces un ataque Marcial contra un enemigo adyacente a ti en esa nueva posición que tendrá Ventaja e infligirá 1d6 daño adicional al impactar. Si te encuentras en *posición defensiva* una vez por ronda puedes emplear esta técnica como reacción, aprovechando así el mejor momento para atacar.
 
 ### Golpe veloz
 
@@ -97,31 +97,33 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-Dempsey roll
-Boxeo, Marcial, mejora, Defensa
+### Giro del boxeador
 
-Duracion - 1 ronda
+*Boxeo, Marcial, Defensiva, Duradera*
 
-Coste: 2 vigor
+**Coste:** 2 vigor
 
-Requisito: estar en posicion defensiva
+**Duración:** Concentración
 
-Eres capaz de mover tu cuerpo en de forma rotativa pero constante haciendo que sea mas dificil impactar y mas facil contratacar con gran potencia. cuando activas esta habilidad ganas la capacidad de en respuesta a ESQUIVAR un ataque puedes usar tu reaccion para realizar un ataque que ira con ventaja y con 1d6 de daño extra
+Eres capaz de girar tu cuerpo constantemente para volverte más difícil de impactar y poder contratacar con mayor facilidad. Mientras esta habilidad permanezca activa puedes tirar tanto Esquiva como Parada para defenderte de ataques enemigos y quedarte con el resultado que más te convenga. Además, cada contrataque que hagas mientras te encuentres en este estado recibirá Ventaja y aumentará su daño base por 1d6. Esta habilidad permanecerá activa hasta que pierdas la concentración o abandones *posición defensiva*.
 
-Golpe al punto debil (Golpe al pancreas)
-Marcial, mejora, aflicion
+**Empoderar** (1 vigor): En respuesta a defenderte exitosamente de un ataque enemigo puedes hacer un ataque Marcial contra él como reacción. Dicho ataque no puede mejorarse con otras habilidades.
 
-Coste - 1 accion y 2 vigor
+### Golpe debilitador
 
-Sabes donde se encuentra el punto debil de tus enemigos por lo que eres capaz de golpearlo con gran fuerza en sus zonas mas dolorosas. Realiza un ataque que proboca 2d6 de daño adicional al impactar y fuerza al afectado a salvar constitucion o quedara enfermado. (ganas la habilidad de sumar 1d6 de daño contra enemigos aturdidos o enfermados)
+*Boxeo, Marcial, Mejora*
 
-Duelo ininterrumpido
-Boxeo, Marcial, mejora
+**Coste**: 2 vigor
 
+Golpeas a tu enemigo en su punto más doloroso para debilitarlo durante el resto del combate. Tu siguiente ataque aumentará su daño base por 2d6 y al impactar el afectado deberá tener éxito en un tiro de CON frente a tu modificador de Boxeo o quedará *enfermado* durante el resto del combate. Si el objetivo ya tiene un efecto de estado negativo aumenta el daño de este ataque por 1d6 y puedes provocarle una *herida permanente leve*.
 
-Has recibido multitud de golpes de la vida y ya nada te detiene, ganas X(rango) def
+### Duelo ininterrumpido
 
-Emporedar - (2 vigor) en respuesta a vayas a perder tu secuencia de ataques o perder la concentracion, puedes gastar el vigor para no hacerlo
+*Boxeo, Marcial, Pasiva*
+
+Has recibido una multitud de golpes en la vida y ya nada puede detenerte. Aumentas tu DEF por un valor igual a tu Rango + 2 además que no puedes perder la concentración o abandonar *posición defensiva* salvo que sufras un efecto de estado que te incapacite o una *herida permanente grave* o *crítica*. Obtienes también Resistencia a efectos Mentales y Miedo.
+
+**Empoderar** (1 vigor): Te recuperas inmediatamente del efecto de estado *aturdido* o mantienes tu secuencia de ataques aunque hayas sido herido por un ataque enemigo.
 
 ## Rango V
 
@@ -135,12 +137,30 @@ Emporedar - (2 vigor) en respuesta a vayas a perder tu secuencia de ataques o pe
 
 Concentras toda tu energía en un único puñetazo capaz de noquear a un enemigo de un solo golpe. Esta habilidad te permite hacer un ataque Marcial que provoca 3d6 daño adicional al impactar y fuerza al afectado a tener éxito en un tiro de CON frente a tu modificador de Estilo Boxeo o cae *inconsciente* de inmediato. Un objetivo que caiga inconsciente así no despertará hasta que reciba sanación o pase una hora. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
 
-### Golpe a los organos
+### Golpes penetrantes
 
-Marcial, mejora
+*Boxeo, Pasiva*
 
-has entrenado para que tus ataques sean capaces de trasmitir el impacto a los organos de tus enemigos, siempre que impactes a un enemigo realizaras 1d6 de daño que ignora DEF
+Tus ataques golpean con tal fuerza que transmiten el impacto a los órganos internos de tus enemigos. De esta manera el daño base de tus ataques Marciales ignorará la DEF que tenga tu objetivo tanto por armaduras u otros efectos. Dicho daño no quedará modificado por tus estadísticas pero se aplicarán a él los incrementos que vengan por otras habilidades de este rango.
+
+**Empoderar** (1 vigor): En respuesta a que un enemigo emplee un muro o barrera para detener un ataque puedes destruirlo de manera automática. 
+
+### Descarga de puñetazos
+
+*Boxeo, Marcial, Ataque*
+
+**Coste:** 3 acciones y 3 vigor
+
+**Alcance:** Cuerpo a cuerpo
+
+Te dejas llevar por la ira y atacas salvajemente a un enemigo con una secuencia de poderosos puñetazos. Este ataque te permite hacer cuatro golpes seguidos contra el mismo objetivo que recibirán Ventaja además de los beneficios de Secuencia de ataques. Dicha secuencia no se interrumpirá por ataques enemigos salvo que seas incapacitado.
+
+Además, cada vez que impactes al objetivo con más de un puñetazo aumentarás el daño base del siguiente golpe por 1d6, el cual se acumula con cada impacto consecutivo (llegando a un máximo de 3d6). Si impactas con tres golpes tu objetivo sufrirá los efectos de Puño Aturdidor mientras que si le impactas con cuatro sufrirá los efectos de Golpe Debilitador. No necesitarás pagar vigor para ninguna de esas habilidades.
 
 ## Rango VI
 
-### Maestría de estilo
+### Maestría de artes marciales
+
+*Boxeo, Pasiva*
+
+Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques Estas técnicas pueden intercambiarse durante un descanso largo a través del entrenamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.

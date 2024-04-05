@@ -167,6 +167,6 @@ Sabes donde apuntar para matar a un enemigo con un único golpe. Haz un ataque c
 
 ### Maestría de artes marciales
 
-*Salvaje, Marcial, Pasiva*
+*Salvaje, Pasiva*
 
-Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques Estas técnicas pueden intercambiarse durante un descanso largo a través del entranamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.
+Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques Estas técnicas pueden intercambiarse durante un descanso largo a través del entrenamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.

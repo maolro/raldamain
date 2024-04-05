@@ -313,49 +313,6 @@ Mientras este efecto permanezca en el campo de batalla puedes utilizar una de la
 
 Una vez que este hechizo finalice, todos los hechizos Duraderos que haya creado cesarán de inmediato. No puedes volver a lanzar este hechizo en el mismo lugar hasta que pase por lo menos un día.
 
-# Invocación
-
-## Base
-
-- **Estadísticas**: Carece de FUE y CON. Tiene 4 DES y 5 CAR
-- **PV:** 4 + CAR
-- **Vitalidad:** 8 + CAR
-- **Defensa:** 0
-- **Resistencias:** magia 4, fuego 4
-- **Inmunidades:** daño no-mágico, veneno, efectos mentales
-- **Vulnerable:** Frío
-- **Movimiento:** nadar 2
-- **Acciones:** 4
-- **Habilidades:**
-  - *Amorfo:* Puede moverse a través de cualquier ranura en una barrera física y moldear su forma como sea necesario
-  - *Ataque elemental*: El elemental recibe la acción de ataque *torrente* como estadística principal la CAR y sumando +1 a su tiro de ataque
-  - *Parada elemental:* Puede defenderse de ataques a distancia y mágicos usando su DES y sumándole +1
-  - *Agua de vida*: Mientras esta criatura esté adyacente a su invocador este recuperará 2 Vitalidad al principio de su turno.
-  - *Fuente de agua*: Una vez por ronda el invocador puede reducir los PV y Vitalidad máximos de esta criatura por 2 para reducir el coste en chi de un hechizo por 1.
-
-## Mejora 1
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-- Recibe +1 en todos sus ataques elementales y sus tiros de parada
-- Se regenera 2 Vitalidad al principio de su turno
-- Al hacer una carga empleará la habilidad *ola chocante* contra tres objetivos adyacentes.
-- Puede usar *muro de agua* una vez por ronda como reacción y al ser invocado tendrá activa la habilidad *tentáculo de agua* hasta que sufra daño a los PV.
-
-## Mejora 2
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
-- Recibe +1 en todos sus ataques elementales y sus tiros de parada
-- Aumenta el daño base de *torrente* a 1d8 y reduce su coste por 1 AP
-- Obtiene velocidad de vuelo 1 si se encuentra encima de una superficie grande de agua.
-- Cada vez que pase por una superficie de agua activará la habilidad *controlar el agua* y puede gastar 1 AP para usar la habilidad *prisión de agua* en uno de sus ataques de *torrente*.
-
-## Mejora 3
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-- Recibe +1 en todos sus ataques elementales y sus tiros de parada
-- Puede gastar 1 AP para emplear la habilidad *escaldar* o *taladro de agua* en uno de sus ataques de *torrente*. Recibe también la habilidad *vórtice* con recarga 5-6.
-- Empleando 2 AP puede cambiar de estado para transformarse en un elemental de hielo de la misma cantidad de mejoras o en una *neblina* de tamaño grande (los PV y Vitalidad que tenga se mantendrán)
-
 # Niveles míticos
 
 Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 en todos los tiros y +1 chi. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
