@@ -261,7 +261,7 @@ Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa 
 
 ## Rango VI
 
-### Brecha sombría
+### Eclipse de pesadilla
 
 *Sombrío, Ataque, Área, Frío*
 
@@ -271,8 +271,8 @@ Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa 
 
 **Tamaño:** Radio grande
 
-**Duración:** Instantáneo
+**Duración:** Siete rondas
 
-Rompes la barrera entre el plano material y el sombrío para provocar una masiva descarga de energía negativa que consumirá todo a su paso. La brecha emergerá de un punto a distancia media de ti y toda criatura a distancia media de ella deberá defenderse de un ataque de Magia Sombría que infligirá 4d10 + CAR daño Frío.
+Invocas el poder del plano sombrío para crear una profunda oscuridad que tapa el sol, llenando todo el campo de batalla de oscuridad y pesadillas. Al emplear este hechizo crearás una esfera de tamaño grande en la que no entrará el sol, haciendo que el campo de batalla cuente como si fuera de noche. Este hechizo permanecerá activo durante siete rondas y mientras lo esté recibirás Ventaja en todos tus tiros relacionados con Magia Sombría además que el campo de batalla entero contará como si estuviera a oscuras.
 
-**Tinieblas del olvido** (3 AP y 5 chi, Sombra, Ambiental, Miedo, Mental): Formas una brecha entre el plano sombrío y el material en una posición a distancia lejana de ti. Todo el terreno a distancia lejana de la brecha contará como terreno difícil y cuenta como si estuviera a oscuras para los propósitos de tus habilidades. Aquellas criaturas que se encuentren a esa distancia deberán superar tu magia sombría en un tiro de CAR aumentarán su nivel de miedo por un paso y aquellas criaturas *asustadas* que fracasen sentirán la compulsión de caminar hacia el portal, forzándolas a emplear sus acciones para caminar hasta ahí. Toda criatura que empiece su turno a distancia corta de la brecha sufrirá los efectos de *devorar esperanza*. La brecha durará 4 rondas y cuando su duración acabe hará el efecto de *furia de Shade* en toda el área de efecto.
+Mientras el eclipse continúe activo las fuerzas de oscuridad empezarán a emerger en el plano material, transformando el campo de batalla en un lugar cada vez más terrorífico. Todas las criaturas que se encuentren en él deberán tener éxito en un tiro de CON frente a tu Magia Sombría o sufrirán los efectos de la Maldición de Shade. 
