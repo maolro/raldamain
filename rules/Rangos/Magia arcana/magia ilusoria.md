@@ -174,7 +174,7 @@ Todos tus hechizos Ilusorios de Rango II reducen su coste en acciones por 1 (mí
 
 **Duración:** Concentración
 
-Empleas ilusiones para alterar la apariencia de tus enemigos para que no sean capaces de distinguir aliados de enemigos. Todas las criaturas a distancia media de ti deben tener éxito en un tiro de Percepción o Averiguar intenciones contra tu Magia Ilusoria o quederán *confundidas* además de perder todos los beneficios de Moral que tengan activos. 
+Empleas ilusiones para alterar la apariencia de tus enemigos para que no sean capaces de distinguir aliados de enemigos. Todas las criaturas a distancia media de ti deben tener éxito en un tiro de Percepción o Averiguar intenciones contra tu Magia Ilusoria o quedarán *confundidas* además de perder todos los beneficios de Moral que tengan activos. 
 
 Este hechizo permanecerá activo hasta que pierdas la concentración o sea disipado. Cada vez que una criatura afectada hiera a otra podrá repetir el tiro contra este hechizo y en caso de éxito se liberará de sus efectos. Una criatura con Presencia puede tirar con su Rango para intentar liberarse a sí misma o a otras criaturas afectadas.
 
