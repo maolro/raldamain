@@ -211,11 +211,23 @@ Los clones además son Inmunes a efectos Mentales, Miedo, Aflicciones, Necrótic
 
 **Empoderar** (1 chi): Crea un clon sombrío adicional hasta un máximo igual a tu Rango.
 
+### Oscuridad enloquecedora
 
+*Sombría, Mental, Visual, Duradera*
 
-**Sombras malditas** (2 AP y 2 chi, Sombra, Invocación): Invoca a una cantidad de sombras malditas igual a tu rango que permanecerán durante el resto del combate. Cada sombra maldita se enfocará en perseguir a un objetivo de tu elección y estas se moverán 1 paso cada ronda para perseguirlo. Si una sombra maldita acaba en una posición adyacente al objetivo este sufrirá un ataque de *toque necrótico*. 
+**Coste:** 2 acciones y 2 chi
 
-Si hay muchas sombras que atacan a la misma persona este será un ataque combinado, recibiendo +2 al tiro de ataque y al daño por cada sombra adicional que participe e infligiendo la mitad de daño en caso de éxito. Estas criaturas tienen 1 PV, son inmunes a todo el daño no-mágico y perecerán si acaban su turno en un espacio con luz brillante.
+**Tamaño:** Esfera media
+
+**Duración:** Concentración
+
+Enloqueces a tus enemigos para que se vean rodeados por sus peores miedos, haciéndolos incapaces de distinguir amigos de enemigos. Todas las criaturas a distancia media de ti deben tener éxito en un tiro de Voluntad o Concentración contra tu Magia Sombría o quedarán *confundidas* además de perder todos los beneficios de Moral que tengan activos. 
+
+Este hechizo permanecerá activo hasta que pierdas la concentración o sea disipado y solo puede emplearse si te encuentras en un entorno a oscuras. Cada vez que una criatura afectada hiera a otra podrá repetir el tiro contra este hechizo y en caso de éxito se liberará de sus efectos. Una criatura con Presencia puede tirar con su Rango para intentar liberarse a sí misma o a otras criaturas afectadas.
+
+Si una criatura con la Maldición de Shade falla el tiro contra este hechizo esta adoptará la forma de una criatura sombría, haciendo que sus aliados la vean como una enemiga aunque se liberen de este hechizo. En el caso que esta muera a manos de un aliado aquel que la haya matado este heredará la Maldición de Shade a paso 0.
+
+**Empoderar** (1 chi): Cambias tu apariencia por la de otra criatura para burlar un ataque enemigo, provocando así que una criatura afectada por este hechizo que intente atacarte acabe impactando a un objetivo diferente.
 
 ## Rango V
 
@@ -255,13 +267,27 @@ Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa 
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
+### Laberinto de pesadillas
 
+*Sombría, Espacial, Duradero*
 
-**Oscuridad devoradora** (2 AP y 3 chi, Sombra, Concentración, Aflicción, Antienergía): Formas una nube de oscuridad que llenará un radio medio y te permite hacer un ataque de *devorar esperanza* contra todas las criaturas que se encuentren en ella. Toda criatura que empiece su turno en ella o pase por un espacio que ocupe deberá tirar CON o sufrirán los efectos de *devorar esperanza*. La oscuridad permanecerá en el campo de batalla durante rango – 1 rondas o hasta que pierdas la concentración. Puedes además gastar 1 AP para mover la nube de oscuridad un paso en cualquier dirección.
+**Coste:** 2 acciones y 3 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Atrapas a un enemigo en un horripilante demiplano perteneciente al plano sombrío  donde perderá progresivamente su cordura. Un enemigo a distancia media de ti deberá tener éxito en un tiro de CON frente a tu tiro de Magia Sombría o será exiliado a un demiplano sombrío. Dicho demiplano adoptará la forma que desees y los enemigos atrapados en él permanecerán ahí hasta que escapen o pierdas la concentración.
+
+Una criatura atrapada en el demiplano puede emplear una acción para buscar la salida, lo cual requiere tener éxito en un tiro de Voluntad frente a tu Magia Sombría. Si esta tiene éxito en tres tiros así encontrará la salida y escapará, pero si permanece atrapada ahí al final de su turno reducirá su cordura por 2 y sufrirá los efectos de la Maldición de Shade. Una criatura también puede escapar empleando hechizos de Magia Espacial o similares que le permitan viajar entre dimensiones.
+
+Aunque las criaturas atrapadas en el demiplano se encuentren en otra dimensión puedes percibir su posición en todo momento desde el plano material si te encuentras en un entorno a oscuras. Puedes también lanzar tus hechizos en cualquier punto del demiplano aunque no te encuentres ahí, afectando a los pobres desgraciados que se encuentren atrapados en él. No obstante, debido a la particular naturaleza de este demiplano no podrás entrar físicamente en él.
+
+**Empoderar** (1 chi): Afecta a un enemigo adicional con este hechizo.
 
 ## Rango VI
 
-### Eclipse de pesadilla
+### Eclipse de sacrificio
 
 *Sombrío, Ataque, Área, Frío*
 
@@ -273,6 +299,12 @@ Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa 
 
 **Duración:** Siete rondas
 
-Invocas el poder del plano sombrío para crear una profunda oscuridad que tapa el sol, llenando todo el campo de batalla de oscuridad y pesadillas. Al emplear este hechizo crearás una esfera de tamaño grande en la que no entrará el sol, haciendo que el campo de batalla cuente como si fuera de noche. Este hechizo permanecerá activo durante siete rondas y mientras lo esté recibirás Ventaja en todos tus tiros relacionados con Magia Sombría además que el campo de batalla entero contará como si estuviera a oscuras.
+Invocas el poder del plano sombrío para crear una profunda oscuridad que tapa el sol, llenando todo el campo de batalla de oscuridad y pesadillas. Al emplear este hechizo crearás una esfera de tamaño grande en la que no entrará el sol, haciendo que el campo de batalla cuente como si fuera de noche. Este hechizo permanecerá activo durante siete rondas y mientras lo esté recibirás Ventaja en todos tus tiros relacionados con Magia Sombría además que el campo de batalla entero contará como si estuviera a oscuras. Además, toda criatura que empiece su turno ahí deberá tener éxito en un tiro de CON frente a tu Magia Sombría o aumentará el nivel de la maldición de Shade que le afecte por un paso.
 
-Mientras el eclipse continúe activo las fuerzas de oscuridad empezarán a emerger en el plano material, transformando el campo de batalla en un lugar cada vez más terrorífico. Todas las criaturas que se encuentren en él deberán tener éxito en un tiro de CON frente a tu Magia Sombría o sufrirán los efectos de la Maldición de Shade. 
+Mientras el eclipse continúe activo las fuerzas de oscuridad empezarán a emerger en el plano material, transformando el campo de batalla en un lugar cada vez más terrorífico. Cuando pase la cantidad indicada de rondas podrás emplear el efecto indicado en todo el campo de batalla sin la necesidad de gastar chi o vigor.
+
+- **Ronda 2**: Invoca una criatura sombría de nivel igual a tu Rango x 2 por cada enemigo con la Marca de Shade que se encuentre en el campo de batalla. Dichas criaturas atacarán únicamente a enemigos malditos y si llegasen a morir resucitarán la ronda siguiente recuperando todos sus PV y Vitalidad. Solo puedes emplear esta habilidad una vez por eclipse.
+- **Ronda 4:** Empleas las sombras para moldear el campo de batalla como desees, creando todo tipo de terreno y estructuras como si usaras el hechizo Espejismo Arcano con la diferencia que es tangible. La materia creada con este hechizo está hecha de energía sombría y por tanto se rompe con más facilidad. Una vez cada ronda puedes cambiar el terreno generado como desees.
+- **Ronda 7**: Todo el campo de batalla queda consumido por oscuridad, permitiéndote emplear el hechizo Furia de Shade contra todas las criaturas en él con un dado de daño adicional.
+
+Una vez que este hechizo acabe todos los efectos e invocaciones que hayan sido creados en él cesarán de inmediato. No se podrá volver a lanzar este hechizo en el mismo lugar hasta que haya transcurrido por lo menos menos un día
