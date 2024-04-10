@@ -148,7 +148,7 @@ Formas poderosos vientos alrededor de un objetivo de tu elección para inmoviliz
 
 **Tamaño**: Esfera grande
 
-**Duración**: Enfoque
+**Duración**: Concentra
 
 Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando actives este hechizo todos los vientos dentro de una esfera grande aumentarán su fuerza, convirtiendo la zona afectada en *terreno difícil* para las criaturas que elijas y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
 

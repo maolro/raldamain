@@ -117,9 +117,7 @@ Al igual que el aire mismo no puedes ser atado o encadenado por tus enemigos. Ob
 
 **Coste:** 1 acción y 2 chi
 
-**Elemento de libertad:** Recibes resistencia a ser *agarrado* o *enredado* igual a tu rango además de inmunidad al terreno difícil. 
 
-**Velocidad repentina** (2 chi): Como acción bonus aumentas tu velocidad durante esta ronda, recibiendo la capacidad de moverte un paso como acción bonus y no provocas ataques de oportunidad al abandonar un enfrentamiento. Al usar esta habilidad entras también en *posición defensiva* esta ronda.
 
 ## Rango VI
 
