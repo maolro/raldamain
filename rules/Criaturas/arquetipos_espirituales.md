@@ -31,8 +31,8 @@ La criatura está compuesta de plantas animadas por energía espiritual, convirt
 La criatura está favorecida por el destino mismo, haciendo así que sea capaz de evitar situaciones cercanas a la muerte. Este arquetipo otorga las siguientes mejoras.
 
 - Aumenta tres estadísticas de su elección por 1
-- Obtiene cinco usos de la habilidad Milagro Menor, la cual puede emplear para forzar a otras criaturas para que repitan tiros y quedarse con el resultado que más le convenga.
-- Recibe una acción adicional hasta un máximo de 5 y Ventaja en todos sus tiros de ataque, defensa y salvación. Este modificador no se acumula con aquel de Guerrero Divino o Tier
+- Obtiene seis usos de la habilidad Milagro Menor, la cual puede emplear para forzar a otras criaturas para que repitan tiros y quedarse con el resultado que más le convenga.
+- Recibe una acción adicional hasta un máximo de 5 y Ventaja en todos sus tiros de ataque, defensa y salvación. Este modificador no se acumula con aquel de Guerrero Divino o Tierra consagrada.
 - La primera vez que esta criatura caiga a menos de 0 PV revivirá a 1 PV sin importar la cantidad de daño que haya sufrido. Esta habilidad no funcionará contra efectos de muerte instantánea o que provoquen *heridas críticas*.
 
 ## Mímico (+2)
