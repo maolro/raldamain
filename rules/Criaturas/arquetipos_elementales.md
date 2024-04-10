@@ -39,7 +39,7 @@ La criatura está vinculada a fuerzas elementales de aire, otorgándole la veloc
 
 - Aumenta sus estadísticas de CAR o SAB y DES por 1.
 - Recibe un bonificador +2 en sus tiros relacionados con Magia de Aire además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Aire.
-- Todos sus ataques Cortantes o Perforantes aumentan su daño base por 1d6 + 2 y su alcance por un paso. Además, si impacta a un enemigo con un ataque Contundente el afectado deberáº tener éxito en un tiro de Heroísmo frente a su modificador de Magia de Aire o serán empujados un paso y *tropezarán* al impactar.
+- Todos sus ataques de armas o Marciales que provoquen daño Cortante o Perforante aumentan su daño base por 1d6 + 2 y su alcance por un paso. Además, si impacta a un enemigo con un ataque de arma o Marcial Contundente el afectado deberá tener éxito en un tiro de Heroísmo frente a su modificador de Magia de Aire o serán empujados un paso y *tropezarán* al impactar.
 - Obtiene una acción adicional hasta un máximo de 5 y aumenta su velocidad de vuelo por 1. En el caso que no pueda volar aumentará su velocidad de salto por 1.
 - Recibe Resistencia a efectos Eléctricos y Sónicos además que puede usar tanto Parada de Aire como Esquiva para defenderse de ataques enemigos y quedarse con el mejor resultado
 - Es capaz de lanzar los hechizos Vendaval, Tajo de los vientos y Viento furibundo como si tuviera Rango II empleando como estadística principal su CON o CAR. 
