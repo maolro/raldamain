@@ -121,11 +121,11 @@ Empleas tu chi interior como fuente de energía para tus habilidades mágicas, s
 
 **Duración:** Concentración
 
-Conviertes tu cuerpo en una llama viviente para convertirte en uno con el fuego. Mientras esta habilidad permanezca activa te transformarás en un ser incorpóreo hecho de fuego, recibiendo Inmunidad a efectos Físicos, Agarres, Mentales, Fuego y Aflicciones a costa de recibir Vulnerabilidad efectos de Agua y Hielo. Todo espacio por el que te muevas saltará en llamas y puedes pasar a través de las ranuras más pequeñas sin dificultades. No obstante, al estar hecho de fuego no puedes atacar con armas físicas ni emplear habilidades que no sean de Fuego.
+Conviertes tu cuerpo en una llama viviente para transformarte en uno con el fuego. Mientras esta habilidad permanezca activa te transformarás en un ser incorpóreo hecho de fuego, recibiendo Inmunidad a efectos Físicos, Agarres, Mentales, Fuego y Aflicciones a costa de recibir Vulnerabilidad efectos de Agua y Hielo. Todo espacio por el que te muevas saltará en llamas y puedes pasar a través de las ranuras más pequeñas sin dificultades. No obstante, al estar hecho de fuego no puedes atacar con armas físicas ni emplear habilidades que no sean de Fuego.
 
 Tu forma de fuego te permite también absorber el fuego que te rodea para potenciar tus habilidades. Esto te permite emplear las habilidades Aura abrasadora, Propulsión y Asalto flamígero como acción bonus si estás rodeado por fuego. Además, toda criatura que empiece su turno en una posición adyacente ti o que te impacte con un ataque físico deberá tener éxito en un tiro de CON frente a tu modificador de Ascendencia de Fuego o sufre 1d6 + CAR daño Fuego.
 
-Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con en llamas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos. 
+Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con en llamas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos
 
 ## Rango VI 
 

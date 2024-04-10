@@ -83,7 +83,7 @@ Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder d
 
 Incrementa tu estadística de CAR y su limitador por 1. 
 
-### jinete de la tormenta
+### Jinete de la tormenta
 
 *Innata, Pasiva*
 
@@ -97,9 +97,9 @@ Eres capaz de absorber el poder de la tormenta para sanar tus heridas y empodera
 
 Tus ataques mágicos se vuelven extremadamente rápidos e imposibles de detener. Cuando utilices la habilidad Infusión tormentosa el daño adicional que proporciones atravesará todas las Resistencias que tenga tu objetivo además que se mueve a tal velocidad que no puede ser Esquivado. 
 
-**Empoderar** (1 chi o vigor): En respuesta a que un enemigo detenga un ataque con un muro, *contador de escudo* o lo esquive automáticamente puedes volver a hacerlo como acción bonus contra el mismo objetivo sin la necesidad de pagar chi o 
+**Empoderar** (1 chi o vigor): En respuesta a que un enemigo detenga un ataque con un muro, *contador de escudo* o lo esquive automáticamente puedes volver a hacerlo como acción bonus contra el mismo objetivo sin la necesidad de pagar chi.
 
-## Rango V 
+## Rango VI 
 
 Eres capaz de emplear dos hechizos de Aire o Tormenta de Rango III que no sean de Invocación.
 
@@ -115,9 +115,13 @@ Al igual que el aire mismo no puedes ser atado o encadenado por tus enemigos. Ob
 
 *Innata, Mejora*
 
-**Coste:** 1 acción y 2 chi
+**Coste:** 1 acción y 2 chi o vigor
 
+**Duración:** Concentración
 
+Fusionas tu cuerpo con una poderosa tormenta para transformarte en un ser hecho únicamente. Mientras esta habilidad permanezca activa te transformas en un ser incorpóreo, recibiendo así Inmunidad a efectos Físicos, Aflicciones, Mentales, Miedo a costa de recibir Vulnerabilidad a efectos de Aire lanzados por criaturas enemigas. 
+
+Además, en dicho estado solo podrás emplear habilidades elementales pertenecientes a Magia de Aire o Tormenta además que podrás moverte por las ranuras más pequeñas. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con en llamas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos
 
 ## Rango VI
 
@@ -129,7 +133,7 @@ Incrementa tu SAB por 1.
 
 Forma tocha elemental de aire.
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus del aire te obedecen y el daño eléctrico que provocas atravesará resistencias. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al daño eléctrico como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
+
 
 **Forma elemental** (3 AP y 5 chi): Adoptas la forma de un poderoso elemental de aire, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 
