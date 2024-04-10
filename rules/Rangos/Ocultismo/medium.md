@@ -83,15 +83,43 @@ Después de capturar un alma puedes mantenerla cautiva durante un periodo de com
 
 ## Rango III	
 
-Aumenta el daño de exorcizar a 1d8
+Aumenta el daño de base de Exorcizar a 1d8.
 
-**Viaje astral** (3 acciones y 2 chi): Separas tu alma de tu cuerpo para convertirte en un ser incorpóreo. Mientras permanezcas en este estado puedes herir a criaturas espectrales y eres inmune a todo el daño no-mágico. Las heridas recibidas en estado incorpóreo no repercutirán en tu cuerpo físico, el cual caerá inconsciente mientras dure este efecto. *Viaje astral* durará una hora o hasta que tu cuerpo material sea herido.
+### Viaje astral
 
-**Canalización superior**: Al usar *canalizar ánima* aumentas una estadística por 2 y recibes un rango adicional de tu elección, el cual permanecerá activo solo mientras canalices. Además mientras estés canalizando obtienes los mismos sentidos que el espectro, recibiendo así 
+*Médium, Duradera*
 
-**Armonizar** (2 acciones y 2 chi): Todos los espectros en un área grande deberán mostrarse y sufren un ataque inmediato de *exorcizar*. Si mantienes la concentración en este efecto todos tus ataques de *exorcizar* te costarán una acción menos y cuando pasen 4 rondas todos los espectros en el área morirán instantáneamente.
+**Coste:** 2 acciones y 2 chi
+
+**Duración:** Una hora
+
+Separas tu alma de tu cuerpo para convertirte en un ser semejante a un espectro. Para emplear este hechizo necesitas estar meditando y tras emplearlo te vuelves incorpóreo, dejando atrás tu cuepro material en un estado inconsciente. Este hechizo permanecerá activo hasta que pase una hora o tu cuerpo material sea herido.
+
+Mientras permanezcas en forma espectral recibes Inmunidad a todo el daño no-mágico y puedes pasar a través de objetos sólidos. Carecerás también de estadísticas de FUE y CON, impidiendo así que utilices cualquier habilidad relacionada con estas. Además, si eres impactado exitosamente por el hechizo Exorcizar tu alma volverá inmediatamente a tu cuerpo material (puedes defenderte contra él usando tu modificador de Médium).
+
+### Canalización superior
+
+*Médium, Pasiva*
+
+Eres capaz de canalizar espectros a un nivel más profundo para despertar habilidades adicionales que poseían en vida. Al emplear el hechizo Canalizar Ánima obtienes Ventaja en todos los tiros relacionados con una estadística adicional de tu elección además que puedes lanzar los hechizos que conozca el espectro que estés canalizando. Dichos hechizos emplearán tu modificador y rango de Médium para calcular su fuerza.
+
+### Armonizar
+
+*Médium, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Esfera mediana
+
+**Duración:** 3 rondas o concentración
+
+Lanzas un poderoso ritual capaz de enviar las almas en pena de vuelta al más allá. Al emplear este hechizo todos los espectros a distancia media de ti deberán tener éxito en un tiro de Voluntad frente a tu modificador de Médium o sufren 1d8 + INT daño obligatorio que ocasiona los mismos efectos que Exorcizar. 
+
+Tras lanzar este hechizo puedes continuar este ritual para exiliar definivamente todos los espectros y no-muertos a tu alrededor. Si logras mantener la concentración en Armoniza durante tres rondas podrás liberar una onda expansiva que matará instantáneamente a todos los espectros y no-muertos de menor nivel a distancia media. La tierra afectada por este hechizo impedirá que sea posible invocar nuevos espectros o no-muertos hasta que pase por lo menos un día.
 
 ## Rango IV
+
+### Aullido de almas en pena
 
 **Reino de los muertos:** Tu fuerte conexión con el más allá ha llamado la atención de entidades superiores de dicha dimensión con las que puedes comunicarte y hacer pactos. La personalidad, intenciones y métodos de comunicación de dichos seres quedan a elección del máster según la campaña, pero el trato más común que ofrecen es la oportunidad de tener control sobre un demiplano intermedio conocido como un dominio espectral donde descansan las almas de los espectros que invocas con mayor frecuencia.  Viajar al domino requiere realizar un ritual y este tendrá un aspecto decidido por el máster según la naturaleza de los espectros y la entidad que te lo ha otorgado. No hay límite de tiempo que puedes pasar en el dominio y puedes traer a otras personas a él siempre y cuando estas lo decidan voluntariamente o no puedan oponer resistencia.
 
@@ -107,69 +135,9 @@ Aumenta el daño de exorcizar a 1d10
 
 **Señor espectral:** Los espectros no son naturalmente hostiles hacia ti y tus ataques físicos pueden herir a criaturas incorpóreas. Recibes un rango adicional al usar *canalización* y eres capaz de usar magia contra criaturas físicas al entrar en *forma astral*. 
 
-# Espectros
+## Reino de los muertos
 
-## Base
 
-**Estadísticas**: Carece de FUE y CON. Tiene 3 DES y 4 CAR
-
-**PV:** 4 + CAR
-
-**Vitalidad:** 6 + CAR
-
-**Defensa:** 0
-
-**Resistencias:** magia 4
-
-**Inmunidades:** daño no-mágico, veneno, efectos mentales, necrótico
-
-**Movimiento:** vuelo 2
-
-**Sentidos:** Detecta todos los seres vivos a distancia media
-
-**Acciones:** 3
-
-**Habilidades:**
-
-- *Incorpóreo*: Es capaz de pasar a través de objetos físicos y seres vivos sin dificultades
-- *Foco emocional*: Recibe dos hechizos de rango I pertenecientes a cualquier rama de magia arcana, ocultismo o magia elemental. Estos deben estar relacionados con su naturaleza. Obtiene además una reserva de 3 chi.
-- *Vínculo telepático*: El espectro puede hablar telepáticamente con su invocador y ninguno de los dos puede ser sorprendido salvo que ambos lo estén.
-
-## Mejora 1
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 5)
-
-Aumenta su reserva de chi por 1
-
-Recibe dos hechizos adicionales de rango II o menos. Estos deben ser aprobados por el máster.
-
-Recibe +1 acción por turno
-
-Obtiene esta nueva habilidad:
-
-- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
-
-## Mejora 2
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-
-Aumenta su reserva de chi por 1 y su resistencia mágica por 2
-
-Recibe dos hechizos adicionales de rango III o menos. Estos deben ser aprobados por el máster. 
-
-Obtiene la habilidad *posesión*, empleando para ella su estadística de CAR. No le supone ningún coste de chi.
-
-## Mejora 3
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
-
-Aumenta su reserva de chi por 1
-
-Recibe dos hechizos adicionales de rango IV o menos. Estos deben ser aprobados por el máster. 
-
-Obtiene esta nueva habilidad:
-
-- *Transferir magia*: Puede transferir hasta 3 chi por ronda a su invocador y viceversa. El invocador además puede lanzar hechizos desde la posición del espectro si ambos comparten la misma rama mágica
 
 # Niveles míticos
 
