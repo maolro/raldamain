@@ -23,7 +23,7 @@ Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por rango + 2.
 
 Liberas la energía de tu oni interior para mejorar tus capacidades físicas o mentales. Tras activar esta habilidad recibirás Ventaja en todos tus tiros relacionados con dos estadísticas de tu elección además de aumentar tu DEF por un valor igual a tu Rango + 1. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
 
-Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede provocar que el espíritu oscuro en tu interior tome control de tu cuerpo. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Furia abisal. Si llegaras a perder toda tu cordura pasarán inmediatamente a Furia del Oni y perderás control de tu personaje durante un día, comportándote como un oni y siendo un peligro tanto para amigos como enemigos.
+Mientras que esta habilidad no tiene una duración específica un uso excesivo de ella puede provocar que el espíritu oscuro en tu interior tome control de tu cuerpo. Por ello, cuando abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Furia del Oni. Si llegaras a perder toda tu cordura pasarán inmediatamente a Furia del Oni y perderás control de tu personaje durante un día, comportándote como un oni y siendo un peligro tanto para amigos como enemigos.
 
 ### Foco elemental
 

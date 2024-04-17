@@ -103,7 +103,7 @@ Adicionalmente, cada vez que impactes a un enemigo con un ataque infundido este 
 
 ## Rango V 
 
-Aumenta tu estadística de CON por 1. Eres capaz de emplear los hechizos Prisión acuosa y Controlar el agua empleando vigor en lugar de chi.
+Eres capaz de emplear los hechizos Prisión acuosa y Controlar el agua empleando vigor en lugar de chi.
 
 ### Elemento del cambio
 
@@ -126,6 +126,8 @@ Tu forma de agua te permite también absorber el agua que te rodea para potencia
 Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con neblinas o tormentas de nieve activas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos. 
 
 ## Rango VI
+
+Aumenta tu estadística de CON y su limitador por 1.
 
 ### Forma elemental
 

@@ -56,7 +56,7 @@ Preparación contra cargas permanecerá activo hasta que pierdas la concentraci�
 
 **Coste:** 1 vigor
 
-Realizas un ágil barrido con tu arma para atacar a todos tus enemigos cercanos.. Haz un ataque contra todas las criaturas a distancia cercana de ti que al impactar forzará a los afectados a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerán *tropezados*. 
+Realizas un ágil barrido con tu arma para atacar a todos tus enemigos cercanos.. Haz un ataque contra todas las criaturas a distancia cercana de ti que al impactar inflige +1d6 daño y forzará a los afectados a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerán *tropezados*. 
 
 Si un enemigo elige emplear Parada para detener tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del que hayan obtenido. En el caso que gaste *contadores de escudo* para detenerlo podrá proteger a cualquier número de criaturas que amenaces con este ataque. Solo puedes emplear esta técnica si tu arma es capaz de provocar daño Cortante.
 

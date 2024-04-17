@@ -10,12 +10,12 @@ Aquí se presenta una lista de divinidades junto a las magias con las que están
 
 ### Generales de la tormenta
 
-| **Nombre** | **Descripción**                                              | **Magias asociadas**                               |
-| ---------- | ------------------------------------------------------------ | -------------------------------------------------- |
-| Ayanuu     | Abisal primigenio del caos, los sueños y la locura           | Gravitatoria, Mental, Espacial, Ilusoria, Temporal |
-| Ekdavor    | Abisal primigenio de la calamidad, el poder y progenitor de los oni | Fuego, Mental, Tormenta, Espacial                  |
-| Gulmaht    | Abisal primigenio del apocalipsis, la transmutación y los desastres naturales | Tierra, Fuego, Gravitatoria, Transmutación         |
-| Shade      | Abisal primigenio de las sombras, la desesperación y la no-muerte | Sombría, Nigromancia, Ilusoria, Mental             |
+| **Nombre** | **Descripción**                                              | **Magias asociadas**                              |
+| ---------- | ------------------------------------------------------------ | ------------------------------------------------- |
+| Ayanuu     | Abisal primigenio del caos, los sueños y la locura           | Gravitatoria, Mental, Espacial, Onírica, Temporal |
+| Ekdavor    | Abisal primigenio de la calamidad, el poder y progenitor de los oni | Fuego, Mental, Tormenta, Espacial                 |
+| Gulmaht    | Abisal primigenio del apocalipsis, la transmutación y los desastres naturales | Tierra, Fuego, Gravitatoria, Transmutación        |
+| Shade      | Abisal primigenio de las sombras, la desesperación y la no-muerte | Sombría, Nigromancia, Ilusoria, Mental            |
 
 ## Espíritus
 
