@@ -60,7 +60,7 @@ El poder antinatural de tu interior te otorga nuevos sentidos y poderes mágicos
 
 ## Rango III
 
-### Poder de la locura
+### Abrazar la locura
 
 *Innata, Pasiva*
 

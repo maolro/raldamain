@@ -36,7 +36,7 @@ Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoc
 
 *Divina, Ritual*
 
-Empleando diez minutos de oración y contemplación puedes comunicarte directamente con tu dios para recibir respuestas a tus más profundas preguntas y obtener sus. Oración te permite hacerle hasta 4 preguntas a tu dios, quién te contestará con sinceridad tal como escoja el DJ. 
+Empleando diez minutos de oración y contemplación puedes comunicarte directamente con tu dios para recibir respuestas a tus más profundas preguntas. Oración te permite hacerle hasta 4 preguntas a tu dios, quién te contestará con sinceridad tal como escoja el DJ. 
 
 No obstante, tu dios puede hablarte de forma críptica o no contestar determinadas preguntas. Cada vez sucesiva del mismo día que utilices oración reduce el número de preguntas que puedas hacerle a tu dios por 1 y un uso excesivo de este ritual puede perjudicar la relación que tengas con tu dios.
 

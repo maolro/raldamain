@@ -39,7 +39,7 @@ Aunque estés al borde de la muerte eres capaz de volver a levantarte para segui
 
 *Innata, Pasiva*
 
-Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos y Maniobras además que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
+Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así Resistencia a efectos Sónicos, Aturdidores y Maniobras además que no puedes ser *aturdido* o *ralentizado* con efectos críticos.
 
 ### Resiliencia
 
@@ -61,7 +61,7 @@ Tu gran resistencia al dolor te permite seguir luchando hasta la muerte. Todas l
 
 *Innata, Pasiva*
 
-Tu fuerte constitución te permite resistir los efectos de las aflicciones que sufras. Recibes Resistencia a Aflicciones de todo tipo y a efectos Necróticos además que no puedes ser *enfermeado* o sufrir *náuseas* con efectos críticos.
+Tu fuerte constitución te permite resistir los efectos de las aflicciones que sufras. Recibes Resistencia a Aflicciones de todo tipo y a efectos Necróticos además que no puedes ser *enfermado* o sufrir *náuseas* con efectos críticos.
 
 ## Rango IV
 
@@ -83,7 +83,7 @@ Preparas tu cuerpo para el combate, haciendo así que tu piel sea dura como el a
 
 *Innata, Pasiva*
 
-Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resistencia a efectos de la categoría Frío, Fuego o Eléctrico además que no puedes ser *quemado* o *paralizado* con efectos críticos.
+Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resistencia a efectos de la categoría Frío, Fuego, Ácido o Eléctrico además que no puedes ser *quemado* o *paralizado* con efectos críticos.
 
 ## Rango V
 

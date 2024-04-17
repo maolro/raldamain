@@ -81,7 +81,7 @@ Aquellos magos espaciales que tengan demiplanos o dominios propios pueden emplea
 
 *Espacial, Arcano, Duradero, Toque*
 
-**Coste:** 1 accióny 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Cuerpo a cuerpo
 

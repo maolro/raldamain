@@ -129,7 +129,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y solo pued
 
 ## Rango VI 
 
-Incrementa tu DES por 1.
+Incrementa tu estadística de CON y su limitador por 1.
 
 ### Forma elemental
 
