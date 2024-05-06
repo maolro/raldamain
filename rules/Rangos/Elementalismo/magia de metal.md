@@ -99,7 +99,7 @@ Usas tu control del magnetismo para formar una fuerza capaz de repeler todos los
 
 Este hechizo puede ser empleado de manera alternativa para crear el campo magnético en torno a ti para defenderte de ataques. Crearlo de esta manera te costará una acción bonus si estás en *posición defensiva* y se moverá contigo, otorgándote sus beneficios para protegerte de ataques. 
 
-**Empoderar** (1 chi): Un ataque hecho con un arma metálica contra una criatura dentro del campo magnético fallará automáticamente. Puedes detener ataques de área con radio corto de esta manera y puedes pagar 1 chi adicional para aumentar el radio por un paso.
+**Empoderar** (1 chi): 1/Ronda. Un ataque hecho con un arma metálica contra una criatura dentro del campo magnético fallará automáticamente. Puedes detener ataques de área con radio corto de esta manera y puedes pagar 1 chi adicional para aumentar el radio por un paso.
 
 ### Fortalecer metal
 
@@ -121,7 +121,7 @@ Para poder reforzar un objeto de esta manera necesitas la adecuada cantidad de f
 
 Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d8.
 
-### Coraza de acero
+### Gólem de Hierro
 
 ### Arma teledirigida
 
@@ -141,7 +141,7 @@ También puedes usar esta habilidad para intentar agarrar a un objetivo con arma
 
 ### Espina metálica
 
-### Chirrido estridente
+### Coraza de Acero
 
 ### Torbellino de filos
 
@@ -175,9 +175,9 @@ Sustituye todos los dados de daño que tengas en habilidades de magia de metal p
 
 ## Rango VI
 
-### Titán de metal
+### Titán de hierro
 
-**Titán de metal** (3 acciones y 5 chi, Metal, Concentración): Te rodeas de una gran cantidad de objetos metálicos para adoptar la forma de una criatura colosal, incrementando enormemente tu fuerza física. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+**Titán de hierro** (3 acciones y 5 chi, Metal, Concentración): Te rodeas de una gran cantidad de objetos metálicos para adoptar la forma de una criatura colosal, incrementando enormemente tu fuerza física. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
 
 - Eres inmune a todos los efectos de toque y a aquellos que provoquen daño de antienergía.
 - Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.

@@ -20,7 +20,7 @@ Recibes cuatro ranuras de objeto de Rango I
 
 *Objeto, Químico, Consumible, Sanación*
 
-Eres capaz de fabricar medicinas milagrosas capaces de curar a los heridos en un instante. Una poción de sanación cuesta dos acciones para utilizarse y sanará una cantidad de Vitalidad al afectado igual a tu INT + 2. Esta también reducirá el nivel de una *herida permanente* o Aflicción que tenga activa por un paso. Cada uso de una poción de sanación consumirá una ranura de objeto que tengas.
+Eres capaz de fabricar medicinas milagrosas capaces de curar a los heridos en un instante. Una poción de sanación cuesta una acción para utilizarse y sanará una cantidad de Vitalidad al afectado igual a tu INT + 2. Esta también reducirá el nivel de una *herida permanente* o Aflicción que tenga activa por un paso. Cada uso de una poción de sanación consumirá una ranura de objeto que tengas.
 
 ### Veneno
 
@@ -28,7 +28,7 @@ Eres capaz de fabricar medicinas milagrosas capaces de curar a los heridos en un
 
 Tienes gran conocimiento de los diferentes venenos, sabiendo como identificar y prepararlos. Los venenos que fabriques afectarán a una estadística de tu elección y tendrán una gravedad igual a tu modificador de Química. Todos los venenos fabricados de esta manera tendrán tasa de infección de una ronda, haciendo así que el afectado tenga que tirar al principio de su turno para intentar evitar sus efectos.
 
-Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres dosis de este. Dichas dosis pueden aplicarse a un arma empleando dos acciones para provocar los efectos del veneno al impactar. Un único ataque no puede tener más de un veneno aplicado a la vez y cada dosis adicional del mismo veneno que afecte al mismo objetivo aumentará su gravedad por 2. 
+Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres dosis de este. Dichas dosis pueden aplicarse a un arma empleando una acción para provocar los efectos del veneno al impactar. Un único ataque no puede tener más de un veneno aplicado a la vez y cada dosis adicional del mismo veneno que afecte al mismo objetivo aumentará su gravedad por 2. 
 
 ### Valentía embotellada
 
@@ -36,7 +36,7 @@ Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres do
 
 Fabricas una droga que inhibe la aversión al riesgo del afectado, incitándolo a seguir luchando sin importar las circunstancias. Este objeto cuesta una acción para consumirse y al hacerlo el afectado se recuperará de todos los efectos de Miedo que tenga activos y recibirá Resistencia al Miedo durante el resto del combate. 
 
-Los efectos inhibidores del riesgo provocan también que el afectado jamás abandone  voluntariamente un combate y siga luchando sin importarle su estado actual. Cada uso de Valentía embotellada consumirá una ranura de objeto que tengas.
+Los efectos inhibidores del riesgo provocan también que el afectado jamás abandone voluntariamente un combate y siga luchando sin importarle su estado actual. Cada uso de Valentía embotellada consumirá una ranura de objeto que tengas.
 
 ### Frasco de ácido
 

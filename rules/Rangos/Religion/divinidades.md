@@ -21,34 +21,35 @@ Aquí se presenta una lista de divinidades junto a las magias con las que están
 
 ### Espíritus de Shinri
 
-| **Nombre**      | **Descripción**                                              | **Magias asociadas**               |
-| --------------- | ------------------------------------------------------------ | ---------------------------------- |
-| Arashimi        | Espíritu del amor, la creatividad y el arte                  | Ilusoria, Mental, Vida             |
-| Barashijoga     | Espíritu de la paz, la iluminación y la disciplina           | Vida, Protectora, Tierra           |
-| Chiso-Shitari   | Espíritu del mar, las tormentas y la longevidad              | Agua, Tormenta, Vida               |
-| Dasokoya        | Espíritu de las enfermedades, las ilusiones y la sanación    | Nigromancia, Vida, Ilusoria        |
-| Emma-Sama       | Espíritu de las maldiciones, la brujería y el infortunio     | Nigromancia, Mental, Transmutación |
-| Fukuro-Tami     | Espíritu del dolor, la tragedia y la oscuridad               | Sombría, Nigromancia, Mental       |
-| Futami-Shou     | Espíritu del olvido, los ríos y el duelo                     | Agua, Mental, Sombría              |
-| Halai-Aem       | Espíritu de la tierra, la comunidad y la agricultura         | Tierra, Naturaleza, Vida           |
-| Hangokudou      | Espíritu de la sangre, el sacrificio y el asesinato          | Sangre, Nigromancia, Sombría       |
-| Hentsu-Myokai   | Espíritu de la locura, la niebla y el engaño                 | Mental, Ilusoria, Transmutación    |
-| Idaina-Senshi   | Espíritu de la guerra, la victoria y las armas               | Metal, Protectora, Tierra          |
-| Ishiyuko        | Espíritu del caos, la libertad y la rebelión                 | Temporal, Espacial, Aire           |
-| Kajokobi        | Espíritu de los kitsune, las artimañas y el placer           | Ilusoria, Mental, Espacial         |
-| Kihakaze        | Espíritu de las tormentas, los secretos y los vientos        | Tormenta, Aire, Ilusoria           |
-| Kitsuri-Dento   | Espíritu de las artes marciales, la disciplina y el honor    | Metal, Protectora, Tormenta        |
-| Muhin-Shoku     | Espíritu de los huérfanos, los perdidos y los lugares secretos | Ilusoria, Espacial, Vida           |
-| Nawm Tanshi     | Espíritu del conocimiento, la magia y el progreso            | Temporal, Protectora, Mental       |
-| Ryoshasaki      | Espíritu de los caminos, los viajeros y los inicios          | Espacial, Temporal, Ilusoria       |
-| Seiryuu         | Espíritu del hielo, las montañas y los supervivientes        | Hielo, Aire, Medium                |
-| Suzakushin      | Espíritu del fuego, la regeneración y los juramentos         | Fuego, Vida, Protectora            |
-| Tamagatai       | Espíritu de la caza, los bosques y las bestias salvajes      | Naturaleza, Vida, Ilusoria         |
-| Tamashi-Kuso    | Espíritu de los muertos, el más allá y los espectros         | Medium, Temporal, Telekinesia      |
-| Tanzo no Kekaru | Espíritu de la fragua, los trabajadores y el metal           | Fuego, Metal, Protectora           |
-| Tomii-Koyatu    | Espíritu de la suerte, las apuestas y los juegos             | Temporal, Ilusoria, Protectora     |
-| Unokudai        | Espíritu de los desafíos, la fuerza y los aventureros        | Temporal, Aire, Transmutación      |
-| Yamma-Sama      | Espíritu de la vida, la maternidad y la familia              | Vida, Protectora, Espacial         |
+| **Nombre**      | **Descripción**                                              | **Magias asociadas**                 |
+| --------------- | ------------------------------------------------------------ | ------------------------------------ |
+| Arashimi        | Espíritu del amor, la creatividad y el arte                  | Ilusoria, Mental, Vida               |
+| Barashijoga     | Espíritu de la paz, la iluminación y la disciplina           | Vida, Protectora, Tierra             |
+| Chiso-Shitari   | Espíritu del mar, las tormentas y la longevidad              | Agua, Tormenta, Vida                 |
+| Dasokoya        | Espíritu de las enfermedades, las ilusiones y la sanación    | Nigromancia, Vida, Ilusoria          |
+| Emma-Sama       | Espíritu de las maldiciones, la brujería y el infortunio     | Nigromancia, Mental, Transmutación   |
+| Fukuro-Tami     | Espíritu del dolor, la tragedia y la oscuridad               | Sombría, Nigromancia, Mental         |
+| Futami-Shou     | Espíritu del olvido, los ríos y el duelo                     | Agua, Mental, Sombría                |
+| Halai-Aem       | Espíritu de la tierra, la comunidad y la agricultura         | Tierra, Naturaleza, Vida             |
+| Hangokudou      | Espíritu de la sangre, el sacrificio y el asesinato          | Sangre, Nigromancia, Sombría         |
+| Hakibu-isogi    | Encarnacidel Plano Espiritual de Shinri                      | Naturaleza, Espacial, Temporal, Vida |
+| Hentsu-Myokai   | Espíritu de la locura, la niebla y el engaño                 | Mental, Ilusoria, Transmutación      |
+| Idaina-Senshi   | Espíritu de la guerra, la victoria y las armas               | Metal, Protectora, Tierra            |
+| Ishiyuko        | Espíritu del caos, la libertad y la rebelión                 | Temporal, Espacial, Aire             |
+| Kajokobi        | Espíritu de los kitsune, las artimañas y el placer           | Ilusoria, Mental, Espacial           |
+| Kihakaze        | Espíritu de las tormentas, los secretos y los vientos        | Tormenta, Aire, Ilusoria             |
+| Kitsuri-Dento   | Espíritu de las artes marciales, la disciplina y el honor    | Metal, Protectora, Tormenta          |
+| Muhin-Shoku     | Espíritu de los huérfanos, los perdidos y los lugares secretos | Ilusoria, Espacial, Vida             |
+| Nawm Tanshi     | Espíritu del conocimiento, la magia y el progreso            | Temporal, Protectora, Mental         |
+| Ryoshasaki      | Espíritu de los caminos, los viajeros y los inicios          | Espacial, Temporal, Ilusoria         |
+| Seiryuu         | Espíritu del hielo, las montañas y los supervivientes        | Hielo, Aire, Medium                  |
+| Suzakushin      | Espíritu del fuego, la regeneración y los juramentos         | Fuego, Vida, Protectora              |
+| Tamagatai       | Espíritu de la caza, los bosques y las bestias salvajes      | Naturaleza, Vida, Ilusoria           |
+| Tamashi-Kuso    | Espíritu de los muertos, el más allá y los espectros         | Medium, Temporal, Telekinesia        |
+| Tanzo no Kekaru | Espíritu de la fragua, los trabajadores y el metal           | Fuego, Metal, Protectora             |
+| Tomii-Koyatu    | Espíritu de la suerte, las apuestas y los juegos             | Temporal, Ilusoria, Protectora       |
+| Unokudai        | Espíritu de los desafíos, la fuerza y los aventureros        | Temporal, Aire, Transmutación        |
+| Yamma-Sama      | Espíritu de la vida, la maternidad y la familia              | Vida, Protectora, Espacial           |
 
 ### Espíritus élficos
 

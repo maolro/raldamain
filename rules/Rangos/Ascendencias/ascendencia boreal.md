@@ -41,7 +41,7 @@ Incrementa tu estadística de CON y su limitador por 1.
 
 Infundes uno de tus ataques con el poder del hielo para congelar a los enemigos que toques. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Hielo que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de Magia de Hielo en lugar del que emplearías normalmente en tu tiro de ataque.
 
-Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
 ### Caminante del hielo
 
@@ -57,7 +57,7 @@ Eres capaz de emplear los hechizos Muro de hielo y Neblina polar empleando vigor
 
 *Innata, Hielo, Duradera*
 
-**Coste:** 2 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi o vigor
 
 **Duración:** Concentración
 
@@ -87,7 +87,9 @@ Tu exposición constante al frío disminuye tu capacidad de sentir el dolor, inc
 
 *Innata, Mejora*
 
-**Coste:** 2 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Duración:** Concentración
 
 Tu cuerpo recibe la capacidad de absorber el calor a su alrededor, convirtiéndote en una encarnación viviente del invierno mismo. Mientras este hechizo permanezca activo tus ataques Físicos infligen 1d6 + Rango daño Frío al impactar además de provocar los efectos de Hipotermia, la cual contará como un veneno de DES con gravedad igual a tu Modificador de Ascendencia. 
 

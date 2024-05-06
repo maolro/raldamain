@@ -92,13 +92,13 @@ Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un
 
 *Aire, Ataque, Cuerpo a cuerpo, Duradera*
 
-**Coste**: 2 acciones y 1 chi
+**Coste**: 1 y 1 chi
 
 **Alcance**: Cuerpo a cuerpo
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve* y falla automáticamente su tiro de Heroísmo o Acrobacias contra este efecto.
 
-**Duración**: Concentración
+**Duración**: Instantáneo
 
 Concentras el poder del viento en la palma de tu mano y lo moldeas su forma en una pequeña esfera de vientos cortantes. Realiza un ataque mágico de Aire contra una criatura adyacente que inflige 2d6 + SAB daño cortante al impactar. Tu objetivo también debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de aire o será empujado un paso hacia atrás y cae *tropezado*.
 
@@ -144,13 +144,13 @@ Formas poderosos vientos alrededor de un objetivo de tu elección para inmoviliz
 
 *Aire, Ambiental, Duradero*
 
-**Coste**: 3 acciones y 1 chi
+**Coste**: 3 acciones y 2 chi
 
 **Tamaño**: Esfera grande
 
-**Duración**: Concentra
+**Duración**: Concentración
 
-Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando actives este hechizo todos los vientos dentro de una esfera grande aumentarán su fuerza, convirtiendo la zona afectada en *terreno difícil* para las criaturas que elijas y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
+Entras en un estado de armonía con las corrientes de aire que te rodean, recibiendo así el poder de manipularlas como si fueran una extensión de tu cuerpo. Cuando actives este hechizo todos los vientos dentro de una esfera grande aumentarán su fuerza, convirtiendo la zona afectada en *terreno difícil* para criaturas voladoras y disipando todos los efectos Gaseosos en su interior. Esta habilidad permanecerá activa hasta que pierdas la concentración o sea disipada por otro hechizo de magnitud similar.
 
 Mientras este hechizo esté activo todos los hechizos de Aire quedan empoderados, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque A distancia Físico puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
 
@@ -192,7 +192,7 @@ Todos tus hechizos de Aire de Rango II cuestan una acción menos para emplear (m
 
 Invocas la ira de los cielos en forma de un poderoso tornado. El tornado emergerá de cualquier punto que alcances y realizará un ataque contra todas las criaturas en el área afectada que inflige 1d8 + SAB daño Contundente al impactar. Los objetivos impactados deberán tener éxito en un tiro de Heroísmo o Acrobacias contra tu magia de Aire o quedarán *agarrados* por el tornado, elevándose un paso en el aire. Incluso si tienen éxito serán empujados un paso hacia atrás y quedarán *tropezados*.
 
-El tornado permanecerá en el campo de batalla hasta que pierdas la concentración. Mientras permanezca activo puedes gastar una acción para moverlo un paso en cualquier dirección. Las criaturas que comiencen su turno dentro del tornado o entren en su área de efecto en cualquier momento de la ronda deberán defenderse una vez más de este hechizo, sufriendo los mismos efectos al fallar. Las criaturas retenidas dentro del tornado sufrirán 1d8 + SAB daño contundente al comienzo de su turno. 
+El tornado permanecerá en el campo de batalla hasta que pierdas la concentración y todo el área que ocupe quedará afectado por Muro de los Vientos. Mientras permanezca activo puedes gastar una acción para moverlo un paso en cualquier dirección. Las criaturas que comiencen su turno dentro del tornado o entren en su área de efecto en cualquier momento de la ronda deberán defenderse una vez más de este hechizo, sufriendo los mismos efectos al fallar. Las criaturas retenidas dentro del tornado sufrirán 1d8 + SAB daño contundente al comienzo de su turno. 
 
 **Empoderar** (1 chi): Crea un tornado adicional en un punto diferente dentro del alcance o amplía el tamaño de un tornado activo a un cilindro mediano. No puedes tener más de tres tornados activos a la vez.
 
@@ -210,11 +210,11 @@ Los vientos formarán un aura protectora en torno a ti que te otorga una cantida
 
 **Empoderar** (1 chi): Recuperas uno de tus *contadores de escudo* perdidos. Si te encuentras en una zona afectada por fuertes vientos puedes reponer un *contador de escudo* adicional al empoderar.
 
-### Vendaval cortante
+### Viento cortante
 
 *Aire, Ataque, Área, Físico*
 
-**Coste**: 2 acciones y 2 chi
+**Coste**: 1 acción y 2 chi
 
 **Tamaño**: Cono mediano
 
@@ -276,7 +276,7 @@ La Esfera de vacío permanecerá activa hasta que pierdas la concentración o se
 
 **Duración**: Instantánea
 
-Realizas una rápida secuencia de golpes de viento para destrozar las defensas de tu objetivo sin darle una oportunidad para reaccionar. Haz un ataque de magia de Aire contra una única criatura a distancia media que inflige 2d10 + SAB daño Cortante al impactar además de empujarla o arrastrarla un paso en cualquier dirección.
+Realizas una rápida secuencia de golpes de viento para destrozar las defensas de tu objetivo sin darle una oportunidad para reaccionar. Haz dos ataques de magia de Aire contra una única criatura a distancia media que inflige 2d10 + SAB daño Cortante al impactar además de empujarla o arrastrarla un paso en cualquier dirección.
 
 Puedes gastar cualquier cantidad de acciones adicionales para realizar ese mismo número de ataques adicionales contra el mismo objetivo (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques adicionales con este hechizo). Deberán emplear el mismo resultado defensivo que obtuvieron la última vez y el modificador a tu tirada y daño aumentará en 1 por cada acción adicional que gastes. 
 
@@ -302,7 +302,7 @@ Mientras este efecto permanezca en el campo de batalla su potencia mejorará con
 
 - **Ronda 2:** Puedes lanzar los hechizos Viento Furibundo y Viento Arrastrante sin la necesidad de gastar chi. El tamaño de Viento Furioso se incrementa a una línea grande y el alcance de Viento Revuelto aumenta a lejano. 
 - **Ronda 4**: Puedes lanzar el hechizo Tornado sin la necesidad de gastar chi. El tornado surgirá en cualquier punto del campo de batalla y permanecerá fijo en ese lugar. No necesitas concentrarte en los hechizos de Tornado lanzados de esta manera.
-- **Ronda 7**: Puedes lanzar el hechizo Huracán sin la necesidad gastar chi, afectando a toda la esfera con él. No puedes gastar más chi para potenciar este hechizo. 
+- **Ronda 6**: Puedes lanzar el hechizo Huracán sin la necesidad gastar chi, afectando a toda la esfera con él. No puedes gastar más chi para potenciar este hechizo. 
 
 Una vez que este hechizo acabe todos los hechizos Duraderos que hayan sido creados en él cesarán de inmediato. No se podrá volver a lanzar este hechizo en el mismo lugar hasta que haya transcurrido por lo menos menos un día.
 

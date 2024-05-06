@@ -83,7 +83,7 @@ Cargas el aire para formar una barrera de relámpagos que te protege de ataques 
 
 La barrera proporcionará *cubierta parcial* a todas las criaturas al otro lado. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de CON frente a tu magia de Tormenta o sufrirá 1d6 + CAR daño Eléctrico y quedará *ralentizado* durante una ronda (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán a tu barrera y luego afectarán a sus objetivos escogidos siempre y cuando esto sea posible.
 
-Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si la barrera estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si la barrera estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de CON o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
 
 **Empoderar** (1 chi): La barrera recupera todos sus PV perdidos.
 
@@ -163,7 +163,7 @@ Moldeas la energía eléctrica para formar varias esferas de relámpago que te p
 
 **Duración**: Una hora 
 
-Invocas un espíritu de la tormenta para asistirte en el campo de batalla y castigar a tus enemigos. Este hechizo invocará un Elemental de Aire de nivel 6 que luchará a tu lado hasta que sea destruido. 
+Invocas un espíritu de la tormenta para asistirte en el campo de batalla y castigar a tus enemigos. Este hechizo invocará un Elemental de Rayo de nivel 6 que luchará a tu lado hasta que sea destruido. 
 
 A rangos superiores puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en Magia de Tormenta por encima de III. 
 

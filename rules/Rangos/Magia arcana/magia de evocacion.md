@@ -38,12 +38,12 @@ Concentras energía mágica en la forma de un rayo para atacar a tus enemigos. H
 
 *Evocación, Pasiva*
 
-Tu profundo conocimiento de los procesos que hay detrás de lo que otros denominan como magias elementales te permite aprovechar sus habilidades. Escoge una de las siguientes especialidades que decidirá los hechizos que puedes aprender a rangos futuros. Una vez escogida la especialidad no podrá cambiarse pero con el adeucado estudio y la ayuda de un maestro puedes aprender hechizos pertenecientes a especialidades ajenas. Las cuatro especialidades principales quedan detalladas a continuación.
+Tu profundo conocimiento de los procesos que hay detrás de lo que otros denominan como magias elementales te permite aprovechar sus habilidades. Escoge una de las siguientes especialidades que decidirá los hechizos que puedes aprender a rangos futuros. Una vez escogida la especialidad no podrá cambiarse pero con el adecuado estudio y la ayuda de un maestro puedes aprender hechizos pertenecientes a especialidades ajenas. Las cuatro especialidades principales quedan detalladas a continuación.
 
 - **Flujo:** Tu control del chi te permite alterar los movimientos de los átomos cuando estos se encuentran en forma gaseosa o líquida. Recibes Resistencia a efectos de las categorías Aire y Agua además que a rangos superiores podrás aprender hechizos pertenecientes a magias de Aire o Agua.
 - **Energía:** Eres capaz de generar energía con el poder del chi para canalizarla en destructivos ataques. Recibes Resistencia a efectos de las categorías Fuego, Eléctrico y Radiante además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Fuego o Tormenta.
 - **Antienergía:** Tu enfoque del chi se centra en absorber en lugar de generar, permitiéndote drenar el chi y hasta la vida de aquellos que te rodean. Recibes Resistencia a efectos de las categorías Frío y Necrótico además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Hielo o Sangre. 
-- **Materia:** Con el poder del chi puedes alterar las propiedades de la materia y hasta crearla donde no la hay. Recibes Resistencia a efectos de las categorías Madera y Tierra además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Madera o Tierra.
+- **Materia:** Con el poder del chi puedes alterar las propiedades de la materia y hasta crearla donde no la hay. Recibes Resistencia a efectos de las categorías Madera y Tierra además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Naturaleza o Tierra.
 - **Electromagnetismo:** A través del poder del chi puedes manipular las fuerzas electromagnéticas para manipular objetos metálicos y formar corrientes eléctricas. Recibes Resistencia a efectos de las categorías Metal y Eléctrico además que a rangos superiores podrás aprender hechizos pertenecientes a magia de Metal o Tormenta
 
 A rangos superiores podrás obtener afinidad con nuevos elementos y aprender hechizos pertenecientes a ellos. No obstante, seguirás sin poder conocer hechizos pertenecientes a tu elemento opuesto salvo que dediques una gran cantidad de tiempo al estudio y entrenes bajo un maestro afín con él. Todo este proceso quedará a decisión del máster.
@@ -120,7 +120,7 @@ Te rodeas de varios meteoros hechos de pura energía de chi para defenderte de a
 
 **Empoderar** (1 chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo. Para empoderar este hechizo debe quedarte por lo menos un contador.
 
-### Combinar técnicas
+### Combinar hechizos
 
 *Pasiva, Evocación, Arcano, Mejora*
 
@@ -158,7 +158,7 @@ Disparas un rayo de energía enormenente empoderado capaz de desintegrar el cuer
 
 **Tamaño:** Radio grande
 
-**Duración:** Diez minutos
+**Duración:** Seis rondas
 
 Irradias el campo de batalla con una gran cantidad de energía mágica que empoderará la magia arcana. Recibirás así ventaja en todos tus tiros relacionados con efectos Arcanos además que aumentas todo el daño Arcano provocado por 1d6. Este efecto permanecerá activo durante el resto del combate o hasta que sea eliminado. 
 
@@ -172,7 +172,7 @@ Tus hechizos de Evocación convierten sus dados de daño a d10 y los de Rango II
 
 ### Cañón de chi
 
-**Coste:** 3 acciones y 3 chi
+**Coste:** 2 acciones y 3 chi
 
 **Alcance:** Medio
 

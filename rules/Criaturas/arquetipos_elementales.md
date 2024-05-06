@@ -106,7 +106,7 @@ La criatura está infundida por energía elemental de fuego que le permite canal
 - Aumenta sus estadísticas de CAR y DES o FUE por 1.
 - Recibe un bonificador +2 en sus tiros relacionados con Magia de Fuego además que puede usar dicha magia como Parada. Al carecer de reserva no puede empoderar hechizos y estos mejorarán si obtiene habilidades de rangos superiores pertenecientes a Magia de Fuego.
 - Obtiene una acción adicional hasta un máximo de 4 y recibe Visión térmica hasta una distancia media.
-- Recibe Resistencia al Fuego además de Inmunidad al calor extremo. Todos sus ataques físicos infligen 1d6 + 1 daño Fuego al impactar. 
+- Recibe Resistencia al Fuego además de Inmunidad al calor extremo. Todos sus ataques físicos infligen 1d6 + 2 daño Fuego al impactar. 
 - Es capaz de lanzar los hechizos Llamarada, Asalto abrasador y Aliento de Fuego como si tuviera Rango II empleando como estadística principal su CON o CAR. 
 
 ## Esencia de fuego superior (+2, 3 mejoras)

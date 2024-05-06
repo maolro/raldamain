@@ -243,7 +243,7 @@ Tus hechizos de Fuego convierten sus dados de daño a d10 y los de Rango III red
 
 *Fuego, Ataque, Área*
 
-**Costo:** 3 acciones y 3 chi
+**Costo:** 2 acciones y 3 chi
 
 **Alcance:** Medio
 
@@ -313,7 +313,7 @@ Tus hechizos de Fuego de Rango IV reducen su coste en acciones por 1 (mínimo 1)
 
 **Duración**: Siete rondas
 
-Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Al activar esta habilidad provocarás los efectos de Pirotecnia en el campo de batalla además que se llenará de calor extremo, disipando todos los efectos de Frío que de rango inferior que estén activos. Este efecto permanecerá en el campo de batalla durante cuatro rondas o hasta que sea disipado por otro hechizo Ambiental de igual o mayor magnitud.
+Desprendes un intenso calor que llenará todo el campo de batalla, haciéndolo arder como si se tratara del mismo infierno. Al activar esta habilidad provocarás los efectos de Maestro de las Llamas en el campo de batalla además que se llenará de calor extremo, disipando todos los efectos de Frío que de rango inferior que estén activos. Este efecto permanecerá en el campo de batalla durante cuatro rondas o hasta que sea disipado por otro hechizo Ambiental de igual o mayor magnitud.
 
 Mientras este hechizo permanezca en el campo de batalla todos los hechizos de Fuego con Rango II o inferior no te costarán chi para ser lanzados, requiriendo únicamente el pago en acciones. Además, en cualquier momento a partir de la cuarta ronda puedes hacer que todo el campo erupcione en una devastadora explosión flamígera permitiéndote lanzar el hechizo Inmolación contra todos tus enemigos en un radio grande. Dicho hechizo infligirá un dado de daño adicional y no costará chi ni acciones para ser lanzado. Al causar la explosión este hechizo acabará de inmediato.
 

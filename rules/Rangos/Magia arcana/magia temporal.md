@@ -86,7 +86,7 @@ Ralentizas enormemente el tiempo en una esfera pequeña para que tus enemigos se
 
 La zona afectada permanecerá en el campo de batalla hasta que pierdas la concentración y toda criatura que entre en ella o acabe su turno ahí deberá repetir el tiro contra este hechizo o será afectada de nuevo. Además, una vez por ronda puedes mover la esfera hasta un paso en cualquier dirección como acción bonus.
 
-**Empoderar** (1 chi): Ralentizas el tiempo alrededor de ti para que todos los ataques que recibas tengan Desventaja en su tiro.
+**Empoderar** (1 chi): Ralentizas el tiempo alrededor de ti para que todos los ataques que recibas tengan Desventaja en su tiro durante una ronda.
 
 ### Desplazamiento
 
@@ -138,8 +138,6 @@ De manera alternativa puedes sacrificar un doble para anular un ataque que reali
 
 ## Rango IV  
 
-Tus hechizos Temporales de Rango II reducen su coste en acciones por 1 (mínimo 1).
-
 ### Revertir el tiempo
 
 *Temporal, Arcana, Sostenida*
@@ -150,7 +148,7 @@ Tus hechizos Temporales de Rango II reducen su coste en acciones por 1 (mínimo 
 
 Preparas un pequeño salto temporal para volver atrás en caso de gran peligro. Al lanzar este hechizo guardas tu estado físico actual, anotando la Vitalidad, PV, efectos de estado, posición y *heridas permanentes* que tengas en este momento. Mientras este hechizo permanezca activo en cualquier momento de la ronda puedes terminarlo como acción bonus puedes para volver a tu estado anterior, sustituyendo tus datos actuales por los que tenías en el momento que lo lanzaste. 
 
-Revertir el tiempo no restaurará tu reserva de chi ni afectará la duración de hechizos y habilidades Sostenidas. Este hechizo se activará de manera automática en el momento que mueras, permitiéndote resucitar y volver a tu estado anterior. No puedes tener este hechizo activado múltiples veces en una única persona.
+Revertir el tiempo no restaurará tu reserva de chi ni afectará la duración de hechizos y habilidades Duraderas. Este hechizo se activará de manera automática en el momento que mueras, permitiéndote resucitar y volver a tu estado anterior. No puedes tener este hechizo activado múltiples veces en una única persona.
 
 **Empoderar** (1 chi): Lanza este hechizo en otro personaje que puedas tocar para que vuelva a su estado anterior en el momento que desees. Si lo empleas en un enemigo deberás tener éxito en un tiro de Magia Temporal frente a su CON para afectarle.
 
@@ -158,7 +156,7 @@ Revertir el tiempo no restaurará tu reserva de chi ni afectará la duración de
 
 *Temporal, Arcana, Parálisis*
 
-**Coste:** 2 acciones y 2 chi
+**Coste:** 1 acción y 2 chi
 
 **Alcance:** Medio
 

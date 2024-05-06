@@ -114,9 +114,9 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 *Pesado, Ataque, Cuerpo a cuerpo, Físico*
 
-**Coste**: 2 acciones y 2 vigor
+**Coste**: 2 vigor
 
-Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador antes que pueda reaccionar. Salta verticalmente un paso en cualquier dirección y realiza un ataque con tu arma contra un objetivo volador quien obtendrá Desventaja en su tirada defensiva. Si impactas con éxito a tu objetivo caerá inmediatamente al suelo y quedará *tropezado*, recibiendo el adecuado daño de caída.
+Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador antes que pueda reaccionar. Antes de atacar saltas verticalmente un paso en cualquier dirección y el siguiente ataque que realices inflige un ataque con tu arma que infligirá 2d6 daño adicional. Si atacas a un enemigo volador tendrá Desventaja defendiéndose y en el caso que impactas caerá inmediatamente al suelo y quedará *tropezado*, recibiendo el adecuado daño de caída.
 
 ### Impacto meteoro
 
@@ -126,7 +126,7 @@ Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador ant
 
 **Tamaño**: Radio corto
 
-Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige 2d6 puntos de daño adicionales y los *tropieza* al impactar. 
+Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige +2d6 puntos de daño adicionales y los *tropieza* al impactar. 
 
 ### Guardia fluida
 

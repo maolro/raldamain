@@ -85,7 +85,7 @@ Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu dios,
 
 **Duración:** Concentración
 
-Tomas un aspecto casi divino para llenar de valentía a tus aliados y aterrorizar a tus enemigos. Mientras esta habilidad permanezca activa todo enemigo que empiece su turno a distancia media de ti y pueda verte deberá tener éxito en un tiro de Voluntad frente a tu Guerrero divino o aumentará su nivel de miedo por un paso. Aquellos enemigos que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierdas la concentración.
+Tomas un aspecto casi divino para llenar de valentía a tus aliados y aterrorizar a tus enemigos. Mientras esta habilidad permanezca activa todo enemigo que empiece su turno a distancia media de ti y pueda verte deberá tener éxito en un tiro de Voluntad o Intimidar frente a tu Guerrero divino o aumentará su nivel de miedo por un paso. Aquellos enemigos que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierdas la concentración.
 
 A su vez que infundes terror a tus enemigos tus aliados se llenan de coraje para seguir luchando, otorgando así Resistencia a efectos de Miedo y Mentales a todos tus aliados a distancia media. Estos bonificadores se acumulan con otras habilidades de Presencia activas en el campo de batalla.
 
@@ -117,7 +117,7 @@ Eres capaz de fortalecer a tus aliados con energía divina para mejorar notablem
 
 *Divina, Resurrección* 
 
-**Coste:** 2 acciones y 2 chi o vigor
+**Coste:** 1 acción y 2 chi o vigor
 
 **Alcance:** Toque
 
@@ -167,7 +167,7 @@ Empoderas un ataque con tal fuerza para que tu enemigo acabe conociendo en perso
 
 **Duración:** Instantáneo
 
-Liberas la energía divina en tu interior en la forma de una devastadora explosión. Haz un ataque empleando tu bonificador de Guerrero divino contra todas las criaturas a distancia media que infligirá 2d10 + CAR daño de una categoría relacionada con tu dios al impactar. Aquellos que tengan éxito en su tiro defensivo sufrirán la mitad de daño y aquellos adyacentes a ti fallarán automáticamente sus tiros defensivos.
+Liberas la energía divina en tu interior en la forma de una devastadora explosión. Haz un ataque empleando tu bonificador de Guerrero divino contra todas las criaturas a distancia media que infligirá 3d10 + CAR daño de una categoría relacionada con tu dios al impactar. Aquellos que tengan éxito en su tiro defensivo sufrirán la mitad de daño y aquellos adyacentes a ti fallarán automáticamente sus tiros defensivos.
 
 **Empoderar** (1 chi o vigor): Lanzas este hechizo como acción bonus tras hacer un ataque con tu arma. No necesitas impactar para lanzarlo de esta manera.
 

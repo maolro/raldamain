@@ -20,7 +20,7 @@ Aumenta tu estadística de FUE por 1.
 
 La herencia dracónica en tu interior se empieza a manifestar, otorgándote algunas propiedades pertenecientes a los grandes dragones. Escoge un elemento entre Fuego, Frío, Ácido y Eléctrico, el cual pasará a ser tu elemento principal. Dicho elemento principal será importante para futuras habilidades y cuando lo escojas no podrás cambiarlo.
 
-Recibirás Resistencia a todos los efectos de la misma categoría que tu elemento principal además de ser inmune a sus efectos críticos. Podrás también emplear tu Parada física para defenderte de ataques pertenecientes a cualquier categoría contra la cual tengas Resistencia.
+Recibirás Resistencia a todos los efectos de la misma categoría que tu elemento principal además de ser inmune a sus efectos críticos. Podrás también emplear tu Parada física para defenderte de ataques pertenecientes a cualquier categoría contra la cual tengas Resistencia. Si conoces hechizos relacionados con él puedes lanzarlos empleando vigor en lugar de chi.
 
 ### Furia del dragón
 
@@ -32,6 +32,8 @@ No puedes estar en Furia del dragón más de seis rondas por combate y cuando es
 
 ## Rango II
 
+Aprendes dos hechizos de Rango I relacionados con ese elemento
+
 ### Aliento del dragón
 
 *Innata, Ataque, Área, Fuego/Frío/Ácido/Eléctrico*
@@ -42,9 +44,11 @@ No puedes estar en Furia del dragón más de seis rondas por combate y cuando es
 
 **Efecto crítico:** Varía según el elemento escogido. Si es Fuego o Ácido provoca una *quemadura leve* mientras que si es Frío o Eléctrico *ralentiza* una ronda.
 
+**Duración:** Instantánea
+
 Has desarrollado la capacidad de tener un aliento semejante a un dragón elemental que puedes usar para atacar a tus enemigos. Haz un ataque contra todas las criaturas en un cono pequeño o una línea mediana que inflige 1d6 + CON daño del mismo tipo que tu elemento principal. Tu tiro de ataque con el aliento será igual a la suma de tu Rango y tu estadística de CON.
 
-**Empoderar** (1 chi o vigor): Aumenta el tamaño de este ataque a un cono mediano o una línea grande además de aumentar su daño por 1d6. Solo puedes empoderar de esta manera una vez por ataque.
+**Empoderar** (1 chi o vigor): Aumenta el tamaño de este ataque por un paso además de aumentar su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque. Si tiene tamaño grande la primera vez que empodere es gratuito mientras que si tiene tamaño gigante empoderar hasta dos veces es gratuito.
 
 ### Sentidos dracónicos
 
@@ -72,11 +76,13 @@ Tu cuerpo está cubierto de una sólida armadura escamosa que aumenta notablemen
 
 ## Rango IV
 
+Aprendes dos hechizos de Rango II relacionados con ese elemento
+
 ### Poder elemental
 
 *Innata, Mejora*
 
-Al entrar en *furia del dragón* tu cuerpo se infundirá con tu elemento principal, permitiéndote infligir 1d6 + Rango daño adicional cada vez que impactes con un ataque físico. Este daño será del mismo tipo que tu elemento principal y obtendrás también el mismo efecto crítico que tu aliento en tus ataques físicos. Esta infusión elemental te otorgará también uno de las siguientes habilidades pasivas:
+Al entrar en *furia del dragón* tu cuerpo se infundirá con tu elemento principal, permitiéndote infligir 1d8 + Rango daño adicional cada vez que impactes con un ataque físico. Este daño será del mismo tipo que tu elemento principal y obtendrás también el mismo efecto crítico que tu aliento en tus ataques físicos. Esta infusión elemental te otorgará también uno de las siguientes habilidades pasivas:
 
 - **Fuego:** Desprendes un aura de calor extremo en un radio medio que otorga Desventaja a todas las habilidades de Agua, Madera o Hielo.
 - **Hielo:** Desprendes un aura de frío extremo en un radio medio que otorga Desventaja a todas las habilidades de Fuego, Agua o Madera.
@@ -87,7 +93,7 @@ Al entrar en *furia del dragón* tu cuerpo se infundirá con tu elemento princip
 
 *Innata, Pasiva, Miedo, Visual*
 
-Emulas la terrorífica presencia de un dragón para aterrorizar a tus enemigos. Mientras te encuentres en *furia del dragón* todas las criaturas a distancia media que puedan verte deberán tener éxito en un tiro de Voluntad frente a tu modificador de Intimidar o aumentarán su nivel de *miedo* por un paso. 
+Emulas la terrorífica presencia de un dragón para aterrorizar a tus enemigos. Mientras te encuentres en *furia del dragón* todas las criaturas a distancia media que puedan verte deberán tener éxito en un tiro de Voluntad o Intimidar frente a tu modificador de Intimidar o aumentarán su nivel de *miedo* por un paso. 
 
 Cada ronda que permanezcas en dicho estado todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de *miedo* si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate. 
 
@@ -109,9 +115,11 @@ Tus escamas se vuelven aún más sólidas, haciéndose capaces de detener ataque
 
 *Innata, Pasiva*
 
-Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destructiva. Todos tus hechizos del mismo tipo que tu elemento escogido aumentan su daño base por 1d10 y podrás vigor en lugar de chi para lanzarlos. Además, al entrar en *forma del dragón* añadirás tu dado de Ventaja a todos tus tiros con esos hechizos si no lo tienes ya.
+Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destructiva. Todos tus hechizos del mismo tipo que tu elemento escogido aumentan su daño base por 1d10. Además, al entrar en *forma del dragón* añadirás tu dado de Ventaja a todos tus tiros con esos hechizos si no lo tienes ya.
 
 ## Rango VI
+
+Aprendes dos hechizos de Rango III relacionados con ese elemento
 
 ### Forma del dragón
 

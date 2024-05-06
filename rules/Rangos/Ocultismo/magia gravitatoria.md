@@ -125,7 +125,7 @@ Inviertes la fuerza de gravedad en un punto a distancia media para formar un cam
 
 Este hechizo puede ser empleado de manera alternativa para crear el campo de repulsión en torno a ti para defenderte de ataques. Crearlo de esta manera te costará una acción bonus si estás en *posición defensiva* y se moverá contigo, otorgándote sus beneficios para protegerte de ataques. 
 
-**Empoderar** (1 chi): Un ataque a distancia hecho contra una criatura dentro del campo de repulsión fallará automáticamente. 
+**Empoderar** (1 chi): 1/Ronda. Un ataque a distancia hecho contra una criatura dentro del campo de repulsión fallará automáticamente. 
 
 ## Rango III
 
@@ -265,13 +265,13 @@ Una inversión gravitatoria afectará también a la dirección de todos los ataq
 
 **Duración:** Concentración
 
-Ejerces una presión gravitatoria enormemente fuerte en un objetivo para aplastar su cuerpo. Un objetivo a distancia media debe tener éxito en un tiro de Heroísmo o Destrozar contra tu Magia Gravitatoria o sufrirá una inmensa presión gravitatoria en su cuerpo que le infligirá 2d10 + INT daño Contundente además de una *herida permanente leve* y le *agarrará*. El objetivo permanecerá *agarrado* hasta que pierdas la concentración y cada vez que fracase su tiro para escapar del agarre sufrirá de nuevo 2d10 + INT daño Contundente y una *herida permanente leve*.
+Ejerces una presión gravitatoria enormemente fuerte en un objetivo para aplastar su cuerpo. Un objetivo a distancia media debe tener éxito en un tiro de Heroísmo o Destrozar contra tu Magia Gravitatoria o sufrirá una inmensa presión gravitatoria en su cuerpo que le infligirá 3d10 + INT daño Contundente además de una *herida permanente leve* y le *agarrará*. El objetivo permanecerá *agarrado* hasta que pierdas la concentración y cada vez que fracase su tiro para escapar del agarre sufrirá de nuevo 2d10 + INT daño Contundente y una *herida permanente leve*.
 
 **Empoderar** (1 chi): Al lanzar este hechizo afectas a un objetivo adicional.
 
 ### Empuje todopoderoso
 
-**Coste:** 3 acciones y 3 chi 
+**Coste:** 2 acciones y 3 chi 
 
 **Tamaño:** Esfera grande
 
@@ -297,7 +297,7 @@ Todos tus hechizos de Gravedad de Rango IV cuestan una acción menos para emplea
 
 Formas un agujero negro en un punto a distancia lejana de ti que ejercerá una colosal presión gravitatoria. Toda criatura que se encuentre a distancia lejana del agujero negro en el momento que lo creas o empiece su turno ahí deberá tener éxito en un tiro de Heroísmo o Acrobacias o será arrastrada un paso hacia él. Una criatura arrastrada de esta manera no podrá alejarse del agujero negro salvo que tenga éxito en ese mismo tiro. El agujero negro permanecerá en el campo durante cinco rondas sin la necesidad de mantener la concentración en él.
 
-Aquellas criaturas que sean arrastradas en la posición del agujero negro o empiecen su turno ahí sufrirán de inmediato 2d10 + INT daño Contundente y una *herida permanente leve*. Sin embargo, si una criatura se encontraba en la posición del agujero negro en el momento de su creación podrá emplear Esquiva para alejarse de él, pudiendo así moverse dos pasos en caso de éxito. 
+Aquellas criaturas que sean arrastradas en la posición del agujero negro o empiecen su turno ahí sufrirán de inmediato 3d10 + INT daño Contundente y una *herida permanente leve*. Sin embargo, si una criatura se encontraba en la posición del agujero negro en el momento de su creación podrá emplear Esquiva para alejarse de él, pudiendo así moverse dos pasos en caso de éxito. 
 
 Cuando pasen las cinco rondas que dura este hechizo el agujero negro implosionará, forzando a todas las criaturas en su espacio a tener éxito en un último tiro de Heroísmo o Acrobacias contra tu magia gravitatoria o quedarán absorbidas por él, desapareciendo para siempre del mundo. Aquellas que tengan éxito sufrirán en su lugar 3d10 + INT daño Contundente además de una *herida permanente media*.
 

@@ -34,7 +34,7 @@ Drenas la sangre de un objetivo al que puedas tocar para debilitarlo gravemente.
 
 *Sangre, Aflicción*
 
-**Coste**: 2 acciones
+**Coste**: 1 acción
 
 **Alcance**: Medio
 
@@ -120,11 +120,11 @@ Todos tus hechizos de Sangre sustituyen sus dados de daño por d8 y aquellos de 
 
 Has desarrollado la habilidad de sentir la sangre de las criaturas vivas a tu alrededor. Obtienes *vista a ciegas* con alcance medio que te permite detectar todas las criaturas vivas en alrededor de ti, incluyendo aquellas que son invisibles o estén ocultas. Esta habilidad pasiva también te permite lanzar el hechizo Biografía de Sangre  cualquier criatura que puedas detectar sin necesidad de poseer físicamente su sangre.
 
-### Curación de Sangre
+### Sanación Sanguínea
 
 *Sangre, Sanación, Toque*
 
-**Coste**: 2 acciones y 2 chi
+**Coste**: 1 acción y 2 chi
 
 **Alcance**: Cuerpo a cuerpo
 
@@ -146,7 +146,7 @@ Purificas la sangre y coagulas todas las heridas de un objetivo que puedes tocar
 
 **Duración**: Instantáneo
 
-Controlas el flujo de sangre de un objetivo que puedes sentir a para causarle hemorragia interna, infligiendo un dolor agonizante en su cuerpo. Un objetivo a distancia media debe tener éxito en una tirada de CON frente a tu Magia de Sangre o sufrirá 1d8 + CAR daño Necrótico y una hemorragia interna que permanecerá durante el resto del encuentro o hasta que sea sanada por un hechizo de Rango III o superior del tipo apropiado. Los objetivos que tengan éxito en su tirada solo recibirán la mitad del daño y no tendrán *sangrado*.
+Controlas el flujo de sangre de un objetivo que puedes sentir a para causarle hemorragia interna, infligiendo un dolor agonizante en su cuerpo. Un objetivo a distancia media debe tener éxito en una tirada de CON frente a tu Magia de Sangre o sufrirá 1d8 + CAR daño Necrótico, una *herida permanente leve* y una hemorragia interna que permanecerá durante el resto del encuentro o hasta que sea sanada por un hechizo de Rango III o superior del tipo apropiado. Los objetivos que tengan éxito en su tirada solo recibirán la mitad del daño y no tendrán *sangrado*.
 
 Cada vez que una criatura con hemorragia interna empiece su turno deberá superar un tiro de CON frente a tu Magia de Sangre o sufrirá 1d8 + Rango daño Necrótico junto con una *herida permanente leve* (la mitad del daño si tienen éxito). Los objetivos con hemorragia interna también sufrirán el efecto de estado *náuseas* hasta que se recuperen.
 
@@ -190,7 +190,7 @@ Mientras el Vínculo de Sangre permanezca activo cada vez que una de las criatur
 
 *Sangre, Aflicción, Agarre, Duradero*
 
-**Coste**: 1 accy 2 chi
+**Coste**: 1 acción y 2 chi
 
 **Alcance**: Medio
 
@@ -262,4 +262,4 @@ Tu maestría en la magia de la sangre te otorga el poder de convertir incluso a 
 
 Una criatura controlada por este hechizo puede repetir el tiro al final de su turno para intentar escapar, liberándose si tiene éxito. Puedes forzar a aquellos bajo tu control a realizar cualquier acción que desees salvo lanzar hechizos. Si intentas obligar a una criatura a dañarse a sí misma o a un ser querido pueden intentar un tiro de CON para liberarse antes de que lo hagas.
 
-**Potenciación** (1 chi): Una criatura bajo tu control lanza un hechizo que conozca, gastando el número apropiado de acciones y chi. No puedes obligarles a empoderar un hechizo ni a gastar más chi que su coste básico.
+**Empoderar** (1 chi): Una criatura bajo tu control lanza un hechizo que conozca, gastando el número apropiado de acciones y chi. No puedes obligarles a empoderar un hechizo ni a gastar más chi que su coste básico.

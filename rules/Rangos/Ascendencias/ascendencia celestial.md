@@ -95,7 +95,7 @@ Eres capaz de manifestar alas hechas de luz a tu espalda con las que podrás sur
 
 *Innata, Pasiva*
 
-Eres capaz de percibir la verdad que se oculta tras las mentiras del plano material. Obtienes Inmunidad a efectos Ilusorios y puedes ver a través de ilusionecomo si no existieran. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
+Eres capaz de percibir la verdad que se oculta tras las mentiras del plano material. Obtienes Inmunidad a efectos Ilusorios y puedes ver a través de ilusiones como si no existieran. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
 
 Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad tendrá consecuencias negativas intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres puede ser inconcebible para mentes humanas.
 
@@ -103,7 +103,7 @@ Visión verdadera también revelará el verdadero aspecto de las criaturas en es
 
 Aprendes los hechizos Sanación superior y Luz viviente, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Regeneración superior
+### Regeneración celestial
 
 *Innata, Pasiva*
 
@@ -138,72 +138,3 @@ Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia celestial no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
-
-# Criatura celestial
-
-## Base
-
-**Estadísticas base:** 5,4,3,2,1,0
-
-**PV:** 4 + CON
-
-**Vitalidad:** 8 + CON
-
-**Defensa**: 4 (armadura natural)
-
-**Resistencias:** daño físico 4, magia 4, necrótico 6
-
-**Inmunidades:** veneno, enfermedades, efectos mentales, radiante
-
-**Movimiento:** Base 1, vuelo 2
-
-**Acciones:** 4
-
-**Rangos:** Tiene rango I en un arma de tu elección
-
-**Habilidades:**
-
-- *Arma angelical:* Sus ataques físicos infligen +1d6 daño radiante y ciegan al reducir PV
-- *Toque sanador* (2 AP): Sana 3 VT a un aliado adyacente. 
-- *Aura de luz*: Todo el espacio a una distancia cercana está iluminado por luz brillante
-- *Sentido del mal*: Puede notar la presencia de entidades malignas a una distancia larga
-- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
-
-## Mejora 1
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-- Recibe un rango adicional en un arma
-- Sana +1 Vitalidad con *toque sanador* (+1 por cada mejora adicional)
-- Aumenta su resistencia al daño físico y a la magia por 2
-- Otorga tres usos adicionales de *milagro menor* a su invocador
-- Obtiene esta nueva habilidad:
-  - *Conexión vital*: Escoge a una criatura. Cada vez que la criatura escogida sufra daño puede absorber la mitad de dicho daño y usar *toque sanador* en ella sin la necesidad que esté adyacente
-
-## Mejora 2
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
-
-Recibe un rango adicional en un arma
-
-Aumenta su cantidad de acciones por 1
-
-Su invocador recibe los bonificadores de *guerrero de la fe* a rango I si se encuentra a distancia cercana
-
-Obtiene las siguientes habilidades:
-
-- *Aliento de vida* (3 AP, 1/combate): Resucita a 1 PV a una criatura que haya muerto la ronda anterior y reduce las heridas permanentes que tenga por un paso.
-- *Aliento de luz* (2 AP, recarga 5-6): Hace un ataque contra 1d4+2 criaturas en un cono pequeño que inflige 1d8+Car daño radiante y ciega si reduce PV. El bonificador es igual a la estadística de Car+nivel de mejor+2
-
-## Mejora 3
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-
-Recibe un rango adicional en un arma
-
-Aumenta su resistencia al daño físico y a la magia por 2
-
-Otorga los beneficios de *aura divina* a su invocador si está a una distancia cercana
-
-Obtiene esta nueva habilidad
-
-- *Milagro de restauración* (3/combate): Al usar *toque sanador* elimina un veneno, enfermedad, maldición o efecto de estado que tenga el objetivo

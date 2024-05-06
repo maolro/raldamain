@@ -78,7 +78,7 @@ Atacas con extraordinaria velocidad a todos los enemigos que te rodean antes que
 
 Golpeas a un enemigo de tal manera para que se mueva a una mala posición y quede vulnerable frente a tus ataques futuros. Un enemigo que acaba de esquivar uno de tus ataques Marciales debe tener éxito en un tiro de Acrobacias contra tu modificador de Estilo Dragón o se mueve un paso en la dirección que elijas y saldrá inmediatamente de *posición defensiva*.  
 
-## Rango IV
+## Rango III
 
 ### Romper ladrillos
 

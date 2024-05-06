@@ -4,7 +4,9 @@ title: Venenos y enfermedades
 
 ## Enfermedades
 
-Cuando una criatura sea infectada por una enfermedad no mostrará ningún síntoma hasta que pase el periodo de incubación durante el cual aún podrá contagiar a otras personas. Cuando pase dicho periodo deberá hacer un tiro de CON y superar el valor de gravedad que tenga dicha enfermedad. Si tiene éxito reducirá el nivel que tenga la enfermedad por un paso, recuperándose de ella en el caso que llegue a 0, pero en el caso que fracase aumentará el nivel de la enfermedad por un paso. El contagiado deberá repetir el tiro de CON cada vez que pase una cantidad de tiempo igual a la tasa de incidencia de la enfermedad hasta que se recupere de ella o muera en el intento.
+Cuando una criatura sea infectada por una enfermedad no mostrará ningún síntoma hasta que pase el periodo de incubación durante el cual aún podrá contagiar a otras personas. Cuando pase dicho periodo deberá hacer un tiro de CON y superar el valor de gravedad que tenga dicha enfermedad. 
+
+Si tiene éxito el nivel de la enfermedad se mandendrá como está, pero en el caso que fracase aumentará el nivel de la enfermedad por un paso además que reducirá su Vitalidad y PV máximos por un valor indicado por su gravedad. El contagiado deberá repetir el tiro de CON cada vez que pase una cantidad de tiempo igual a la tasa de incidencia de la enfermedad hasta que se recupere de ella o muera en el intento.
 
 ### Enfermedad física
 
@@ -26,7 +28,9 @@ Cuando una criatura sea infectada por una enfermedad no mostrará ningún sínto
 
 ## Venenos
 
-Un veneno funciona de la misma manera que una enfermedad en lo que respecta los tiros de gravedad y la tasa de incidencia, pero con las diferencias que un veneno no es contagioso y tiene tasa de incidencia más rápida que una enfermedad. Cada veneno afectará a una estadística diferente según su naturaleza y si una criatura envenenada vuelve a ser afectada por el mismo veneno se reducirá la tasa de incidencia del veneno a la mitad (mínimo 1 ronda) y su tasa de graveda
+Un veneno funciona de la misma manera que una enfermedad en lo que respecta los tiros de gravedad y la tasa de incidencia, pero con las diferencias que un veneno no es contagioso y tiene tasa de incidencia más rápida que una enfermedad. 
+
+Cada veneno afectará a una estadística diferente según su naturaleza y si una criatura envenenada vuelve a ser afectada por el mismo veneno se reducirá la tasa de incidencia del veneno a la mitad (mínimo 1 ronda) y su tasa de gravedad aumentará por 2. Los tiros funcionarán de igual manera que una enfermedad pero aquellos venenos que sean físicos infligirán 1d6 daño obligatorio con cada tiro fracasado mientras que los venenos mentales reducirán la cordura por 2.
 
 ### Veneno de FUE
 

@@ -90,15 +90,11 @@ Disparas con gran velocidad y precisión para desarmar a un enemigo antes que pu
 
 Disparas con la precisión de un francotirador para eliminar a enemigos cada vez más distantes. Tu siguiente ataque a distancia aumentará su alcance por un paso, su daño por 2d6 y provocará una *herida permanente leve* a tu objetivo en la parte del cuerpo que escojas. Además, si logras impactar exitosamente podrás esconderte como acción bonus si te encuentras en un lugar que tenga *cubierta* u *ocultamiento*. Este ataque puede mejorarse con otras técnicas si lo deseas siempre y cuando sea posible.
 
-### Disparo impredecible
+### Cubierta de disparos
 
-*A distancia, Mejora*
+*A distancia, Pasiva*
 
-**Coste:** 2 vigor
-
-Disparas de una manera impredecible y aprovechas el rebote de tu ataque para impactar a enemigos que hagan todo lo posible para evitar tu ataque. Tu siguiente ataque a distancia no puede ser detenido por muros u otras habilidades que permitan evitar ataques como Desplazamiento o Evasión, infligiendo así daño normal. 
-
-Las únicas habilidades que podrán detenerlo son aquellas que otorguen cubierta completa a un objetivo o le den Inmunidad a ataques de la misma categoría que el tuyo. Cabe recalcar que los *contadores de escudo* seguirán funcionando de manera normal si los otorga una habilidad que dé protección completa a un objetivo.
+Puede usar su tiro de armas A distancia para defenderse de ataques a la vez que esquiva y quedarse con el resultado que más le convenga
 
 ### Combinar técnicas
 
@@ -116,44 +112,40 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 **Coste:** 2 vigor
 
-**Interceptar ataque:** Una vez por ronda puedes defender a un aliado empleando tu tiro de armas a distancia. Esta habilidad puede usarse una vez adicional por ronda si te encuentras en posición defensiva.
+1/Acción enemiga, Hace un ataque de arma que interrumpe una acción enemiga al impactar, malgastando sus acciones y reservas
 
-**Precisión mortal:** Al realizar un ataque apuntado podrás escoger la parte del cuerpo donde quieres infligirla.
+### Disparo impredecible
+
+*A distancia, Mejora*
+
+**Coste:** 2 vigor
+
+Disparas de una manera impredecible y aprovechas el rebote de tu ataque para impactar a enemigos que hagan todo lo posible para evitar tu ataque. Tu siguiente ataque a distancia no puede ser detenido por muros u otras habilidades que permitan evitar ataques como Desplazamiento o Evasión, infligiendo así daño normal. 
+
+Las únicas habilidades que podrán detenerlo son aquellas que otorguen cubierta completa a un objetivo o le den Inmunidad a ataques de la misma categoría que el tuyo. Cabe recalcar que los *contadores de escudo* seguirán funcionando de manera normal si los otorga una habilidad que dé protección completa a un objetivo.
+
+### Disparo penetrante
+
+Su siguiente ataque inflige +2d6 daño, ignora la DEF por armaduras que tenga el objetivo y elimina un contador de escudo. Puede acumularse con ojo del francotirador pagando +1 vigor.
 
 ## Rango V
 
-**Impacto vital:** Al realizar un ataque apuntado el daño del ataque aumentará en 1d6 por cada acción empleada para apuntar.
+### Disparo ejecutor
 
-**Puntería experta:** Tus ataques hechos con armas a distancia no podrán ser detenidos por  habilidades de parada siempre que tengas ventaja en tu tiro. Esta habilidad no funcionará contra objetivos que se encuentren en posición defensiva.
+**Coste:** 3 vigor
 
-# Armas
++3d6 daño, herida grave y mata si reduce a 0 PV
 
-## Manuales
+### Puntería experta
 
-**Arco:** Un arco inflige 2d4 + FUE daño perforante al impactar, tiene alcance medio y requerirá las dos manos para ser usado. Recargar un arco no costará acciones y esta arma tendrá las siguientes variaciones.
+Apuntar le cuesta una acción bonus y 1/ronda puede repetir un ataque y quedarse con el mejor resultado.
 
-- **Arco corto:** Un arco corto reduce su daño base a 1d6 + FUE a cambio que el usuario no recibirá penalizaciones al disparar montado o en un vehículo.
-- **Arco compuesto:** Un arco compuesto aumenta su daño a 2d6 + FUE pero debido a su gran tamaño requerirá que su portador tenga gran fuerza física, requiriendo así que deba tener 3 o más FUE para poder usar esta arma en condiciones.
+### Lluvia de plomo
 
-**Ballesta:** Una ballesta inflige 3d6 daño perforante al impactar, tiene alcance largo y requerirá las dos manos para ser usada. Debido a la fuerza de los proyectiles disparados al usar *puntería mortal* añadirá su bonificador de DES al daño y podrá infligir heridas permanentes a enemigos con armadura media o inferior sin la necesidad de gastar más acciones. Tras disparar el usuario deberá emplear 3 acciones para recargar la ballesta antes de poder volver a atacar con ella.
+Tras atacar hace dos ataques de arma contra el mismo objetivo contra los cuales tirará solo una vez para defenderse. Cada ataque consecutivo tiene +1 al tiro de ataque y +1 daño. Paga +1 Vigor si es un arma de recarga
 
-- **Ballesta ligera**: Una ballesta ligera reduce su daño base a 2d6 pero podrá ser usada con una mano. Recargar una ballesta ligera también es más fácil, reduciendo las acciones que se deben gastar para recargarla por 1.
-- **Ballesta pesada:** Una ballesta pesada aumenta su daño base a 3d8 y al usar *puntería mortal* el usuario podrá infligir heridas permanentes a enemigos con armadura pesada o inferior. Como contraparte una ballesta pesada requiere 4 o más FUE para ser usada y el portador recibirá desventaja en todos sus tiros de esquiva. 
-- **Ballesta recargable:** Una ballesta recargable tiene un complejo mecanismo que le permite almacenar múltiples virotes para hacer que haga varios disparos seguidos sin la necesidad de recargarla. Una ballesta de este tipo puede almacenar hasta 4 virotes de esta manera y hasta que se le acaben el portador podrá seguir atacando sin la necesidad de recargar. 
+## Rango VI
 
-**Honda:** Una honda inflige 1d4 + FUE daño contundente al impactar, tiene alcance medio y puede usarse con una mano. Un usuario de esta arma recibirá también las habilidades *ataque poderoso* y *concusión*.
+### Maestría con armas a distancia
 
-## Pólvora
-
-Un arma de fuego base inflige 2d6 daño perforante al impactar, tiene un alcance lejano y se debes emplear 3 acciones para recargarla después de atacar con ella (estas pueden distribuirse a lo largo de varios turnos). Además, el daño de un arma de fuego ignora la defensa otorgada por armadura que tenga el objetivo y sus ataques no pueden ser esquivados por criaturas que se encuentren a distancia media o inferior.
-
-Para mostrar su poca precisión y gran volumen las armas de fuego obtienen un fallo crítico con un 1-2 y cuando esto ocurra quedarán atascadas durante una ronda (algunas armas primitivas llegarán a explotar si se obtiene un fallo crítico con ellas) además que un usuario de un arma de fuego recibirá desventaja defendiéndose de ataques hechos con armas cuerpo a cuerpo. Esta arma está hecha para campañas ambientadas en la época renacentista o de piratas, pero también sirve para campañas más modernas con las adecuadas mejoras. Un arma de fuego base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas siempre y cuando las características escogidas no sean incongruentes.
-
-- **Pistola de mano:** El arma puede utilizarse con una sola mano, reduciendo su daño base a 2d4 y su distancia a media a cambio de una mayor facilidad de uso. Recargar una pistola de mano cuesta 2 acciones y esta puede utilizarse en combate con dos armas.
-- **Recámara:** El arma tiene una recámara con la cual puede contener varias balas. La recámara permite que el arma pueda realizar 6 disparos antes de que deba ser recargada. Un arma con recámara es propia de campañas ambientadas en la era industrial o del viejo oeste. 
-- **Perdigones:** En lugar de balas el arma disparará una lluvia de perdigones de plomo. Un arma de perdigones debe tener recámara y al atacar impactará a todas las criaturas en un cono corto al disparar e infligirá 2d8 daño perforante al impactar, contando como si fuera un ataque de área (2d6 si es una pistola de mano). No obstante, un arma de perdigones reduce su alcance a corto.
-- **Doble cañón:** El arma dispara dos balas al turno con un ataque a costa de hacerla más difícil de utilizar. Un arma así tendrá 2d8 daño base a costa de recibir desventaja en todos los tiros de ataque. Esta mejora no puede aplicarse a pistolas de mano.
-- **Potente:** Un arma potente dispara las balas con mayor potencia, pero tendrá una gran fuerza de retroceso. Un arma con esta mejora aumentará su daño base a 2d8 (2d6 si es una pistola de mano, 3d6 si es un arma de perdigones) pero cada ataque hecho con ella recibirá un penalizador -2 por cada ataque anterior que se haya realizado en la misma ronda.
-- **Automática:** El arma tiene un sistema para disparar balas de forma automática. Hacer un ataque de forma automática te cuesta una acción estándar y podrás atacar a cada criatura que se encuentre en un cono de 30 pies, empezando por la más cercana. Estos ataques consumirán 4 balas pero añadirán 1d6 al daño base al impactar. Las armas con esta habilidad tendrán una recámara de 40 balas y son típicas de campañas ambientadas en épocas modernas o de ciencia-ficción. Recargar un arma con esta mejora cuesta cuatro acciones aunque estas pueden distribuirse entre varios turnos.
-- **Francotirador:** El arma puede disparar a objetivos a mayor distancia y eliminarlos con una única bala. Como acción estándar puedes apuntar con tu arma, aumentando tu alcance a como máximo 200 pies de distancia. En este estado recibirás la habilidad Ataque furtivo y podrás utilizar Puntería mortal si realizas un ataque sorpresa contra tu objetivo. Las armas de esta categoría son típicas de campañas de épocas modernas o de ciencia-ficción.
-
+Aprendes tres técnicas de cualquier rama de Rango IV o menos. Pueden cambiarse en cada d

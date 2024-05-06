@@ -65,7 +65,7 @@ Las aguas también dificultarán el paso a todo enemigo que se intente acercar a
 
 **Empoderar** (1 chi o vigor): Tienes éxito automático en un tiro de Parada contra un ataque A distancia o lanza el hechizo Torrente como acción bonus contra todos los enemigos a distancia cercana de ti.
 
-### Conexión elemental
+### Aguas sanadoras
 
 *Innata, Pasiva*
 
@@ -79,13 +79,13 @@ Tu profunda conexión con el agua hace que esta sane tus heridas. Al principio d
 
 *Innata, Duradera*
 
-**Coste:** 2 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi o vigor
 
 **Duración:** Concentración
 
 El agua a tus pies surge hasta formar un columna de aguas rugientes que te permite volar una cantidad limitada. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 siempre y cuando te encuentres encima de una superficie de agua, lo cual te otorga Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración o pases una ronda entera fuera del agua.
 
-La columna de agua creará un vórtice de agua a tus pies que dificultará que tus enemigos puedan acercarse a ti. Cada vez que te muevas toda criatura en tu camino debe tener éxito en un tiro de Heroísmo o Atletismo contra tu modificador de Ascendencia de Agua o sufren 1d8 + SAB daño Contundente y son empujados un paso hacia atrás. Lo mismo ocurrirá si una criatura incapaz de volar entra en un espacio a distancia cercana de ti.
+La columna de agua creará un vórtice de agua a tus pies que dificultará que tus enemigos puedan acercarse a ti. Cada vez que te muevas toda criatura en tu camino debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Ascendencia de Agua o sufren 1d8 + SAB daño Contundente y son empujados un paso hacia atrás. Lo mismo ocurrirá si una criatura incapaz de volar entra en un espacio a distancia cercana de ti.
 
 ### Flagelo de las corrientes
 
@@ -95,7 +95,7 @@ La columna de agua creará un vórtice de agua a tus pies que dificultará que t
 
 **Duración:** Concentración
 
-Formas dos tentáculos de agua en tus manos para aumentar el alcance y fuerza de tus ataques físicos. Mientras este hechizo permanezca activo tus ataques Físicos aumentan su alcance a medio y al impactar tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Ascendencia de Agua o serán empujados o arrastrados un paso. 
+Formas dos tentáculos de agua en tus manos para aumentar el alcance y fuerza de tus ataques físicos. Mientras este hechizo permanezca activo tus ataques Físicos aumentan su alcance a medio, aumentan su daño base por 1d8+Rango y al impactar tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Ascendencia de Agua o serán empujados o arrastrados un paso. 
 
 Adicionalmente, cada vez que impactes a un enemigo con un ataque infundido este perderá un *contador de escudo* si tiene alguno y su armadura quedará *rota*. Dicho ataque también ignorará las defensas otorgadas por muros o cubierta. Este hechizo permanecerá activo hasta que pierdas la concentración. 
 

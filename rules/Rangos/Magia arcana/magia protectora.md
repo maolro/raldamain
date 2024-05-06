@@ -41,7 +41,7 @@ Debes encontrarte en *posición defensiva* para contrarrestar hechizos ajenos y 
 
 *Protectora, Arcana, Toque*
 
-**Coste:** 2 acciones
+**Coste:** 1 Acción	
 
 **Alcance:** Toque
 
@@ -59,7 +59,7 @@ Eres capaz de provocar graves disrupciones en objetos mágicos para impedir su f
 
 *Protectora, Arcana*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 Acción y 1 chi
 
 **Alcance:** Medio
 

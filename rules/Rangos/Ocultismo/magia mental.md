@@ -18,7 +18,7 @@ Tu has decidido caminar por una senda algo diferente al de el resto de escuelas 
 
 *Mental, Cordura*
 
-**Coste:** 2 acciones
+**Coste:** 1 Acción
 
 **Alcance:** Medio
 
@@ -64,7 +64,7 @@ Aumentas tus defensas mentales frente a intrusiones enemigas. Mientras este hech
 
 *Mental, Arcana*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Medio
 
@@ -94,7 +94,7 @@ Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes da
 
 *Mental*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Medio
 
@@ -142,7 +142,7 @@ Una criatura *confundida* podrá repetir el tiro una vez por ronda y se liberar�
 
 *Mental*
 
-**Coste:** 2 acciones y 2 chi
+**Coste:** 1 acción y 2 chi
 
 **Alcance:** Medio
 
@@ -170,7 +170,7 @@ Todos tus hechizos Mentales de Rango II reducen su coste en acciones por 1 (mín
 
 *Mental, Área, Duradera*
 
-**Coste:** 3 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi
 
 **Tamaño:** Esfera media
 
@@ -186,7 +186,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y toda cria
 
 *Mental, Duradera*
 
-**Coste:** 3 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi
 
 **Alcance:** Medio
 
@@ -222,7 +222,7 @@ Todos tus hechizos Mentales de Rango III reducen su coste en acciones por 1 (mí
 
 *Mental, Duradera*
 
-**Coste:** 3 acciones y 3 chi
+**Coste:** 1 acción y 3 chi
 
 **Alcance:** Medio
 
@@ -252,7 +252,7 @@ Creas una poderosa barrera psíquica que protegerá a un objetivo de toda intrus
 
 *Mental, Cordura*
 
-**Coste:** 2 acciones y 3 chi
+**Coste:** 1 Acción y 3 chi
 
 **Alcance:** Medio
 

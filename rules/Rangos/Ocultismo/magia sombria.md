@@ -16,7 +16,7 @@ image: magia_sombria.jpg
 
 *Sombrío, Toque, Aflicción, Frío*
 
-**Coste:** 2 acciones
+**Coste:** 1 Acción
 
 **Alcance:** Cuerpo a cuerpo
 
@@ -32,9 +32,9 @@ Infundes tu toque de energía sombría para drenar la energía vital de un enemi
 
 *Sombrío, Ataque, A distancia, Frío*
 
-**Coste:** 2 acciones
+**Coste:** 1 Acción
 
-**Alcance:** Cuerpo a cuerpo
+**Alcance:** Medio
 
 **Efecto crítico:** El afectado quedará *fatigado* durante una ronda
 
@@ -245,7 +245,7 @@ Todos tus hechizos Sombríos sustituyen sus dados de daño por d10
 
 **Duración:** Instantáneo
 
-Invocas el poder del plano sombrío para que consuma la esencia vital de tus enemigos. Haz un ataque contra todas las criaturas en un cono grande que infligirá 3d10 + CAR daño Necrótico al impactar además de maldecir a los afectados con la Maldición de Shade. Este ataque disipará también todas las fuentes de luz en el área afectada y la convertirá en Tierra Consagrada dedicada al plano sombrío durante el resto del combate. Cabe recalcar que debes encontrarte en un espacio a oscuras para emplear este hechizo.
+Invocas el poder del plano sombrío para que consuma la esencia vital de tus enemigos. Haz un ataque contra todas las criaturas en un cono grande que infligirá 3d10 + CAR daño Frío al impactar además de maldecir a los afectados con la Maldición de Shade. Este ataque disipará también todas las fuentes de luz en el área afectada y la convertirá en Tierra Consagrada dedicada al plano sombrío durante el resto del combate. Cabe recalcar que debes encontrarte en un espacio a oscuras para emplear este hechizo.
 
 **Empoderar** (1 chi): El siguiente hechizo Sombrío que lances tras la Furia de Shade te cuesta una acción bonus. 
 
@@ -261,7 +261,7 @@ Invocas el poder del plano sombrío para que consuma la esencia vital de tus ene
 
 **Duración:** Instantáneo
 
-Empleas el poder de las sombras para consumir por completo la esencia de una criatura maldita, provocándole una muerte instantánea. Un objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de CON frente a tu Magia Sombría o sufre 3d10 + CAR daño Necrótico que reducirá también su cantidad máxima de Vitalidad y PV. 
+Empleas el poder de las sombras para consumir por completo la esencia de una criatura maldita, provocándole una muerte instantánea. Un objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de CON frente a tu Magia Sombría o sufre 3d10 + CAR daño Frío que reducirá también su cantidad máxima de Vitalidad y PV. 
 
 Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa todas las criaturas a distancia cercana de él deberán defenderse también de este mismo hechizo con la diferencia que el daño infligido será 1d10 + CAR.
 

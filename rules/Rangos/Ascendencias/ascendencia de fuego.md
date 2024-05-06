@@ -87,7 +87,7 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 Eres capaz de emplear el poder del fuego para sanar tus heridas, renaciendo desde las cenizas como si fueras un fénix. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 1 si te encuentras en un entorno en llamas o afectado por calor extremo. Adicionalmente, la primera vez que mueras en un entorno en llamas puedes revivir a 1 PV.
 
-**Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad si te encuentras en *posición d*
+**Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad si te encuentras en *posición defensiva*
 
 ### Asalto flamígero
 
@@ -105,7 +105,7 @@ Dicho daño se acumula con el otorgado por Ataques Infundidos y contará como un
 
 ## Rango V
 
-Eres capaz de emplear los hechizos Erupción abrasadora y Látigo flamígero empleando vigor en lugar de chi.
+Eres capaz de emplear los hechizos Erupción abrasadora y Maestro de las Llamas empleando vigor en lugar de chi.
 
 ### Elemento del poder
 
@@ -133,8 +133,15 @@ Incrementa tu estadística de CON y su limitador por 1.
 
 ### Forma elemental
 
-Forma tocha
+**Coste:** 3 acciones y 5 chi o vigor
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de fuego te obedecen y el daño fuego que provocas pasa a ser fuego puro, el cual atravesará las resistencias al fuego. Las resistencias aún se aplicarán en el caso que el objetivo tenga tanto resistencia al fuego como resistencia mágica, pero deberá usar la más baja de las dos para reducir el daño.
+**Duración:** Seis rondas
 
-**Forma elemental** (3 AP y 3 chi): Invoca un *elemental de fuego* con tres mejoras y lo posees temporalmente, permitiéndote usar sus acciones y estadísticas como si fueran las tuyas. No obstante carecerás de la inmunidad al daño físico que tiene el elemental.
+Liberas tu fuego interior para transformarte en un poderoso elemental de fuego. Al activar Forma elemental recibirás 40 Vitalidad temporal además de enormes mejoras mágicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Despertar la bestia por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento que empleaste esta habilidad. Despertar la bestia te otorgará los siguientes beneficios:
+
+- Obtienes Resistencia a efectos de Fuego, Frío, Naturaleza y Agarres y tus estadísticas de DES, CAR y CON pasan a ser 12. 
+- Recibes un dado de daño adicional en todas tus habilidades de Fuego, incluyendo aquellas otorgadas por la Ascendencia. Esto se acumula con Infierno Abrasador.
+- Tu cuerpo está rodeado por un Muro de Llamas, el cual infligirá 1d10 + CAR daño a toda criatura que empiece su turno en una posición adyacente a ti o que se mueva ahí. Este daño puede evitarse tirando Parada mágica y el muro solo reducirá el daño una vez por ronda.
+- Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
+- Todos tus hechizos obtenidos por Ascendencia de Fuego no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
+- Te encuentras siempre bajo los efectos de Propulsión, Asalto Flamígero y Aura Abrasadora además que una vez por ronda puedes entrar en *posición defensiva*

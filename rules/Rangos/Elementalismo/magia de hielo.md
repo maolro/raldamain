@@ -173,13 +173,19 @@ En rangos superiores puedes invocar elementales de poder aún mayor, aumentando 
 
 *Hielo, Ataque, Área, Frío*
 
+Inflige 2DD+STAT daño Frío y tiran CON o aumentan su nivel de hipotermia por un paso. Enemigos en el agua quedan congelados
+
 ### Armadura de hielo
 
 *Hielo, Defensiva, Duradera*
 
-### Cuchillos gélidos
+Recibe RANGO contadores de escudo y Resistencia a efectos de Fuego, Agua y Naturaleza. Recupera uno cada ronda si está en entornos fríos
 
-*Hielo, Duradera, Física*
+### Ola de Frío
+
+*Hielo, Aflicción, Área*
+
+Esfera media, Todos tiran CON o sufren 2DD+STAT daño Frío área, hipotermia rango 1 y el área afectada es terreno difícil. Enemigos en el agua quedan congelados
 
 **Ventisca** (2 AP y 2 chi): Ataca a todas las criaturas en un cono medio, infligiendo 2d8 + CAR daño frío al impactar y provocando hipotermia si reduces PV, la cual funciona igual que un veneno de DES con gravedad igual a tu tiro de magia de hielo. Si una criatura con hipotermia empieza su turno en un entorno afectado por frío extremo esta avanzará de etapa.
 
@@ -193,13 +199,19 @@ En rangos superiores puedes invocar elementales de poder aún mayor, aumentando 
 
 *Hielo, Ambiental*
 
+Reduce la tempertaura a frío extremo, Ventaja en tiros de Magia de Hielo y genera neblina que ciega y da ocultamiento. Todos sin fuentes de calor tiran CON cada ronda o sufren hipotermia 1
+
 ### Alud
 
 *Hielo, Ataque, Área, Física, Frío, Agarre*
 
+Inflige 2DD+STAT daño Contundente y 1DD+STAT daño Frío área y todos tiran Heroísmo o Destrozar o quedan agarrados y sufren hipotermia grado 1. Destruye estructuras frágiles y genera terreno difícil
+
 ### Congelar la sangre
 
 *Hielo, Aflicción, Frío*
+
+Tira CON o sufre 3DD+STAT daño Frío y hipotermia a nivel 2. Requiere entorno frío
 
 **Llamada del invierno** (3 AP y 3 chi): Invocas una tormenta de nieve que afectará todo el campo de batalla con *neblina polar* y permanecerá activa durante el resto del combate. Además, toda la temperatura del área bajará a frío extremo y todos tus ataques de magia de hielo provocarán hipotermia al impactar. Esta habilidad no puede ser usada en entornos donde el clima no lo permita.
 

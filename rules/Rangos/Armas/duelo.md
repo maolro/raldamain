@@ -151,7 +151,17 @@ Este ataque ignorará la DEF otorgada por armaduras que no sean completas y har�
 
 ## Rango V 
 
-### Secuencia de cortes
+### Golpe de gracia
+
+Su siguiente ataque inflige +3d6 daño, una herida grave e ignora la DEF otorgada por armaduras que tenga. Mata instantáneamente si reduce a 0 PV
+
+### Cortes en cadena
+
+Tras impactar desengancha, salta un paso y ataca a un nuevo enemigo. Sigue repitiendo este ataque hasta que falle o impacte a todos los enemigos en el campo de batalla
+
+### Secuencia de ataques
+
+Hace dos ataques contra el mismo objetivo tras atacar, forzándole a usar el mismo resultado defensivo. Recibe +1 en su tiro de ataque y daño con cada ataque consecutivo y puede emplear una acción adicional para 
 
 ## Rango VI
 
