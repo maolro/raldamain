@@ -199,7 +199,7 @@ Si te encuentras en *posición defensiva* puedes emplear este hechizo para inter
 
 *Espacial, Arcano, Concentración*
 
-**Coste:** 3 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi
 
 **Tamaño:** Radio grande
 

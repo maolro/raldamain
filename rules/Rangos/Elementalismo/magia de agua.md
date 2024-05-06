@@ -195,15 +195,13 @@ El vórtice permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 **Coste**: 1 acción y 2 chi
 
-**Alcance**: Personal
-
-**Tamaño**: Pequeño radio
+**Tamaño**: Radio pequeño
 
 **Efecto crítico**: Los objetivos sufren una quemadura de segundo grado.
 
-**Duración**: Un asalto
+**Duración**: Una ronda
 
-Sobrecalientas las aguas en un pequeño radio a tu alrededor para hacerlas hervir. Durante esta ronda todas las criaturas que se encuentren en una superficie de agua o que entren en ella sufrirán 1d6 + Rango daño de Fuego y una *quemadura leve*. Este daño y sus efectos tratarán la resistencia al Fuego que tenga el afectado como si fuera de un nivel inferior.
+Sobrecalientas las aguas en un radio pequeño a tu alrededor para hacerlas hervir. Durante esta ronda todas las criaturas que se encuentren en una superficie de agua o que entren en ella sufrirán 1d6 + Rango daño de Fuego y una *quemadura leve*. Este daño y sus efectos tratarán la resistencia al Fuego que tenga el afectado como si fuera de un nivel inferior.
 
 Si utilizas agua hirviente para tus ataques de Magia de Agua estos infligirán 1d6 + Rango de daño adicional de Fuego y una *quemadura leve* al impactar. También obtendrán el efecto crítico de este hechizo además de cualquier efecto crítico que ya posean.
 
@@ -249,7 +247,7 @@ Todos tus hechizos de Agua sustituyen sus dados de daño por d10.
 
 Invocas una ola colosal capaz de destruir todo a tu paso. La ola surgirá desde un punto con la cantidad adecuada de agua a distancia media y llenará un área del tamaño de una línea grande. Haz un ataque de Magia de Agua contra todas las criaturas en el espacio del hechizo que inflige 2d10 + SAB daño Contundente al impactar. Todas las criaturas afectadas deben tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia de Agua o quedarán *agarradas* por la ola. Si tienen éxito, serán empujadas un paso hacia atrás y caerán *tropezadas*.
 
-La ola continuará moviéndose un paso cada ronda, atacando de nuevo a todas las criaturas en su camino. Las criaturas que empiecen su turno *agarradas* por la ola sufrirán 1d10 + SAB daño Contundente y empezarán a *ahogarse*. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración o la ola choque contra una barrera lo suficientemente grande como para detenerla. Una vez que lo haga, todas las criaturas *agarradas* por la ola sufrirán 2d10 + SAB daño Contundente y caerán *tropezadas*.
+La ola continuará moviéndose un paso cada ronda, atacando de nuevo a todas las criaturas en su camino. Las criaturas que empiecen su turno *agarradas* por la ola sufrirán 2d10 + SAB daño Contundente y empezarán a *ahogarse*. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración o la ola choque contra una barrera lo suficientemente grande como para detenerla. Una vez que lo haga, todas las criaturas *agarradas* por la ola sufrirán 3d10 + SAB daño Contundente y caerán *tropezadas*.
 
 **Potenciar** (1 chi): El tsunami aumentará su daño por 1d10 esta ronda. Solo puedes empoderar de esta manera una vez por ronda y necesitas una gran cantidad de agua para hacerlo.
 
@@ -309,7 +307,7 @@ Mientras este efecto permanezca en el campo de batalla puedes utilizar una de la
 
 - **Ronda 2**: Puedes lanzar el hechizo Ola Aplastante sin la necesidad gastar chi. La ola surgirá desde cualquier punto en un radio grande centrado en ti y durará solo una ronda.
 - **Ronda 4**: Puedes lanzar el hechizo Vórtice sin la necesidad gastar chi. El Vórtice surgirá en cualquier lugar del campo de batalla y permanecerá fijo en ese punto. No necesitas mantener la concentración en los hechizos de vórtice lanzados de esta manera.
-- **Ronda 7**: Puedes lanzar el hechizo Tsunami sin la necesidad gastar chi. Emergerá desde la masa de agua más grande en el área y se moverá automáticamente un paso en cualquier dirección.
+- **Ronda 6**: Puedes lanzar el hechizo Tsunami sin la necesidad gastar chi. Emergerá desde la masa de agua más grande en el área y se moverá automáticamente un paso en cualquier dirección.
 
 Una vez que este hechizo finalice, todos los hechizos Duraderos que haya creado cesarán de inmediato. No puedes volver a lanzar este hechizo en el mismo lugar hasta que pase por lo menos un día.
 

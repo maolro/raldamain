@@ -20,7 +20,7 @@ La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus 
 
 *Vida, Sanación, Toque*
 
-**Coste**: 2 acciones
+**Coste**: 1 acción
 
 **Alcance**: Toque
 
@@ -140,7 +140,7 @@ Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehum
 
 *Vida, Curación, Toque*
 
-**Coste**: 2 acciones y 2 chi
+**Coste**: 1 acción y 2 chi
 
 **Alcance**: Cuerpo a cuerpo
 
@@ -156,7 +156,7 @@ Infundes un poderoso flujo de energía vital en tu toque para sanar las heridas 
 
 **Coste**: 2 acciones y 2 chi
 
-**Tamaño**: Radio grande
+**Tamaño**: Radio medio
 
 **Duración**: Concentración
 
@@ -167,8 +167,6 @@ Adicionalmente, todos tus hechizos de Sanación aumentan la cantidad de Vitalida
 **Empoderar** (1 chi): Lanza uno de tus hechizos de Sanación como acción bonus.
 
 ## Rango IV
-
-Todos tus hechizos de Vida de Rango II cuestan una acción menos para emplear (mínimo 1).
 
 ### Espadas de Justicia
 
@@ -212,21 +210,21 @@ Mientras este hechizo esté activo cada vez que uno de los participantes sufra d
 
 **Duración**: Instantáneo
 
-Desatas un poderoso rayo de energía de la vida capaz de convertir a tus enemigos en cenizas. Realiza un ataque de magia de Vida contra todos los enemigos en una línea media que inflige 2d8 + CAR daño Radiante al impactar junto con una *quemadura leve*. Este ataque no puede ser esquivado por objetivos a una distancia corta de ti.
+Desatas un poderoso rayo de energía de la vida capaz de convertir a tus enemigos en cenizas. Haz un ataque de magia de Vida contra todos los enemigos en una línea media que inflige 2d8 + CAR daño Radiante al impactar junto con una *quemadura leve*. Este ataque no puede ser esquivado por objetivos a una distancia corta de ti.
 
 **Empoderar** (1 chi): Cuando lances este hechizo realiza un segundo ataque que afecta a todos los objetivos en una dirección diferente.
 
 ## Rango V
 
-Todos tus hechizos de Vida sustituyen sus dados de daño por d10 y aquellos de Rango III cuestan una acción menos para emplear (mínimo 1).
+Todos tus hechizos de Vida sustituyen sus dados de daño por d10.
 
 ### Explosión Solar
 
 *Vida, Ataque, Área, Sanación, Visual*
 
-**Coste**: 3 acciones y 3 chi
+**Coste**: 2 acciones y 3 chi
 
-**Tamaño**: Radio medio
+**Tamaño**: Esfera mediana
 
 **Efecto crítico**: Los objetivos afectados sufren una *quemadura media* y quedan *cegados* durante una ronda.
 
@@ -240,7 +238,7 @@ Desatas toda la energía vital que hay en tu interior en forma de una explosión
 
 *Vida, Sanación, Toque*
 
-**Coste**: 2 acciones y 3 chi
+**Coste**: 1 accióny 3 chi
 
 **Alcance**: Toque
 

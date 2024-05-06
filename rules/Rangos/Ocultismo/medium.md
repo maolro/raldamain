@@ -27,7 +27,7 @@ Canalizar el poder de los muertos tiene el riesgo que el alma canalizada intente
 
 *Alma, Ataque*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -35,7 +35,7 @@ Canalizar el poder de los muertos tiene el riesgo que el alma canalizada intente
 
 **Duración:** Instantáneo
 
-Empleas tu control sobre las almas para enviar a espectros hostiles de vuelta al mundo de los muertos. Un espectro a distancia media deberá tener éxito en un tiro de CAR frente a tu Magia de Alcmas o sufrirá 1d6 + INT daño obligatorio y quedará *ralentizado* durante una ronda. Si logras reducir los PV de un espectro a 0 lo enviarás  de vuelta al mundo de los muertos y no podrá volver a ser invocado hasta que pase un día.
+Empleas tu control sobre las almas para enviar a espectros hostiles de vuelta al mundo de los muertos. Un espectro a distancia media deberá tener éxito en un tiro de CAR frente a tu Magia de Almas o sufrirá 1d6 + INT daño obligatorio y quedará *ralentizado* durante una ronda. Si logras reducir los PV de un espectro a 0 lo enviarás  de vuelta al mundo de los muertos y no podrá volver a ser invocado hasta que pase un día.
 
 **Empoderar** (1 chi): Afecta a un espectro adicional a distancia media con este hechizo.
 
@@ -65,7 +65,7 @@ No puedes canalizar al mismo espectro mientras lo invocas y no podrás tener inv
 
 Llamas a un alma fallecida para que te responda determinadas preguntas y te revele secretos del pasado. Para realizar este ritual debes poseer un objeto valioso suyo o encontrarte en un lugar significativo para ella. Cuando sea invocada puedes hacerle un máximo de cuatro preguntas que te responderá con sinceridad en base a sus conocimientos. 
 
-Dependiendo de la antigüedad del alma y su relación contigo el DJ puede fijar una dificultad que deberás superar con tu tiro de Magia de Almas para completar exitosamente este ritual. Después de realizar este ritual no puedes volver a invocar a la misma alma hasta que pase por lo menos un día y esta puede no manifestarse si así lo desea.
+Dependiendo de la antigüedad del alma y su relación contigo el DJ puede fijar una dificultad que deberás superar con tu tiro de Médium para completar exitosamente este ritual. Después de realizar este ritual no puedes volver a invocar a la misma alma hasta que pase por lo menos un día y esta puede no manifestarse si así lo desea.
 
 ### Robar alma
 
@@ -95,13 +95,13 @@ Aumenta el daño de base de Exorcizar a 1d8.
 
 Separas tu alma de tu cuerpo para convertirte en un ser semejante a un espectro. Para emplear este hechizo necesitas estar meditando y tras emplearlo te vuelves incorpóreo, dejando atrás tu cuepro material en un estado inconsciente. Este hechizo permanecerá activo hasta que pase una hora o tu cuerpo material sea herido.
 
-Mientras permanezcas en forma espectral recibes Inmunidad a todo el daño no-mágico y puedes pasar a través de objetos sólidos. Carecerás también de estadísticas de FUE y CON, impidiendo así que utilices cualquier habilidad relacionada con estas. Además, si eres impactado exitosamente por el hechizo Exorcizar tu alma volverá inmediatamente a tu cuerpo material (puedes defenderte contra él usando tu modificador de Médium).
+Mientras permanezcas en forma espectral recibes Inmunidad a todo el daño no-mágico y puedes pasar a través de objetos sólidos. Carecerás también de estadísticas de FUE y CON, impidiendo así que utilices cualquier habilidad relacionada con estas. Además, si eres impactado exitosamente por el hechizo Exorcizar tu alma volverá inmediatamente a tu cuerpo material (puedes defenderte contra él usando tu modificador de Magia de ).
 
 ### Canalización superior
 
 *Médium, Pasiva*
 
-Eres capaz de canalizar espectros a un nivel más profundo para despertar habilidades adicionales que poseían en vida. Al emplear el hechizo Canalizar Ánima obtienes Ventaja en todos los tiros relacionados con una estadística adicional de tu elección además que puedes lanzar los hechizos que conozca el espectro que estés canalizando. Dichos hechizos emplearán tu modificador y rango de Médium para calcular su fuerza.
+Eres capaz de canalizar espectros a un nivel más profundo para despertar habilidades adicionales que poseían en vida. Al emplear el hechizo Canalizar Ánima obtienes Ventaja en todos los tiros relacionados con una estadística adicional de tu elección y aprendes dos hechizos o técnicas de combate de Rango II o menos relacionados con el espectro canalizado. Si canalizas un espectro aliado obtendrás una habilidad pasiva relacionada con él siempre y cuando esté permitida por el DJ.
 
 ### Armonizar
 
@@ -121,6 +121,10 @@ Tras lanzar este hechizo puedes continuar este ritual para exiliar definivamente
 
 ### Aullido de almas en pena
 
+### Alma Resiliente
+
+### Vincular Almas
+
 **Reino de los muertos:** Tu fuerte conexión con el más allá ha llamado la atención de entidades superiores de dicha dimensión con las que puedes comunicarte y hacer pactos. La personalidad, intenciones y métodos de comunicación de dichos seres quedan a elección del máster según la campaña, pero el trato más común que ofrecen es la oportunidad de tener control sobre un demiplano intermedio conocido como un dominio espectral donde descansan las almas de los espectros que invocas con mayor frecuencia.  Viajar al domino requiere realizar un ritual y este tendrá un aspecto decidido por el máster según la naturaleza de los espectros y la entidad que te lo ha otorgado. No hay límite de tiempo que puedes pasar en el dominio y puedes traer a otras personas a él siempre y cuando estas lo decidan voluntariamente o no puedan oponer resistencia.
 
 **Robar alma** (1 chi): Una vez por turno atrapas el alma de una criatura que haya muerto esta ronda. No puedes atrapar más de 4 almas de esta manera y las almas atrapadas pueden ser invocadas o canalizadas como si fueran un espectro además que puedes usar *hablar con muertos* ilimitadamente con ellas.
@@ -131,11 +135,19 @@ Tras lanzar este hechizo puedes continuar este ritual para exiliar definivamente
 
 Aumenta el daño de exorcizar a 1d10
 
+### Posesión
+
+### Reino de los Muertos
+
+### Señor Espectral
+
 **Posesión** (3 AP y 1 chi): Si estás en *forma astral* puedes intentar poseer a otra criatura, haciendo un tiro de médium contra su SAB. En caso de éxito la criatura cae bajo tu control, permitiéndote usar sus acciones como si fueran tuyas. La criatura poseída pude repetir el tiro cada ronda y si no logra liberarse en 4 rondas no podrá repetir el tiro hasta el día siguiente.
 
 **Señor espectral:** Los espectros no son naturalmente hostiles hacia ti y tus ataques físicos pueden herir a criaturas incorpóreas. Recibes un rango adicional al usar *canalización* y eres capaz de usar magia contra criaturas físicas al entrar en *forma astral*. 
 
-## Reino de los muertos
+## Rango VI
+
+### Intersticio de Vida y Muerte
 
 
 

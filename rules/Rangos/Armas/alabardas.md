@@ -100,34 +100,50 @@ Mueves tu alabarda de una manera serpenteante para descolocar a un enemigo que i
 
 Atacas a un enemigo con la parte trasera de tu arma para descolocar sus defensas. Haz un ataque de arma contra un enemigo a distancia cercana de ti que infligirá 1d4 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda y este debe encontrarse detrás de ti.
 
-## Rango III 
+## Rango III
 
-Hacer un ataque con una alabarda te cuesta una acción menos.
+### Ataque saltarín
 
+**Coste:** 2 vigor
 
+Salta un paso, inflige +2d6 daño y vuelve a su posición anterior. No provoca ataques de oportunidad ni se pueden usar ataques cargados.
 
 ### Combinar técnicas
 
-**Flanqueador experto:** Añade +DES al daño al atacar a un enemigo que esté adyacente a uno de tus aliados en tu alcance. Puedes usar tu estadística de destreza como bonificador para tiros de ataque sustituyendo a la fuerza.
-
-**Reposicionar**: Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción.
-
 ## Rango IV
 
-**Ataque circular:** Al hacer la habilidad *ataque lateral* atacas a todos los enemigos que se encuentren en el radio de alcance de tu arma.
+### Ataque antiaéreo
 
-**Carga con lanza:** Al realizar una carga infliges +1d6 daño y puedes clavar tu lanza a un objetivo para aumentar el nivel de heridas por un paso. Sacar la lanza tras clavarla cuesta 1 AP.
+**Coste:** 2 vigor
+
+Salta un paso en vertical y ataca, infligiendo +2d6 daño y lanzando al suelo. Los enemigos voladores tienen Desventaja defendiéndose.
 
 ## Rango V
 
-**Carga repentina:** Al entrar en estado *preparación contra cargas* en cualquier momento de la ronda puedes hacer una carga y atacar a un objetivo. Este ataque aplicará el daño adicional de *preparación contra cargas* 
+### Lanzazo devastador
 
-**Movimiento fluido:** Cada vez que impactes con un ataque podrás moverte una vez como reacción.
+**Coste:** 3 vigor
 
-# Armas
+Ataca a todos los enemigos en una línea media, infligiendo +3d6 daño y una herida leve. Clava a cada enemigo que impacte en una brocheta. Solo armas perforantes
 
-- **Lanza:** 1d10+Fue daño perforante. Deberá usarse con dos manos
-- **Lanza arrojadiza:** 1d8+Fue daño perforante. Podrá emplearse para hacer un ataque a distancia contra un objetivo a distancia corta. 
-- **Guja:** 1d8+Fue daño cortante. Deberá usarse con dos manos. Recibirá los atributos de *ataque poderoso* y *tajo feroz* pero no  podrá clavarse en su objetivo al emplear la habilidad *carga con lanza*.
-- **Bastón:** 1d6+Fue daño contundente. Deberá usarse con dos manos. Recibirá los atributos de *ataque poderoso* y *golpe aturdidor* pero no podrá clavarse en su objetivo al emplear la habilidad *carga con lanza*.
-- **Lanza doble:** 1d8+Fue daño. Deberá usarse con dos manos .Permite hacer un segundo ataque con desventaja como acción bonus contra otro objetivo.
+### Abanico de acero
+
+**Coste:** 3 vigor
+
+Ataca a cada enemigo a distancia media infligiendo +3d6 daño, +1 nivel herida y empuja un paso hacia atrás. Solo armas cortantes.
+
+### Tornado de madera
+
+**Coste:** 3 vigor
+
+Ataca a cada enemigo a distancia corta infligiendo +3d6 daño, +1 nivel herida y tiran CON o aturdidos una ronda. Solo armas contundentes
+
+### Extensión de tu cuerpo
+
+Mientras lleves tu arma tienes velocidad de salto 1, Inmunidad a terreno difícil y Resistencia a Maniobras y daño de caídas. No necesitas estar en posición defensiva para recibir los beneficios de Ajustar Alcance.
+
+### 
+
+## Rango VI
+
+### Maestría con Alabardas

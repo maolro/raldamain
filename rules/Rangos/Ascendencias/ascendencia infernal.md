@@ -61,7 +61,7 @@ Manifiestas alas demoníacas semejantes a las de un murciélago para obtener la 
 
 *Innata, Invocación*
 
-**Coste:** 3 acciones y 2 chi
+**Coste:** 3 acciones y 2 chi o vigor
 
 **Duración:** Una hora
 
@@ -93,7 +93,7 @@ Aprendes dos hechizos de Rango III o menos relacionados con tu patrón infernal 
 
 *Innata, Pasiva*
 
-A través de un siniestro ritual corrompes tu alma para adoptar las características de un demonio. Obtienes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a Aflicciones, Fuego, Hielo y Miedo. Eres también capaz de comunicarte con criaturas infernales de todo tipo y las de menor nivel te obedecerán sin rechistar. 
+A través de un siniestro ritual corrompes tu alma para adoptar las características de un demonio. Obtienes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a efectos Mentales, Aflicciones, Fuego, Hielo y Miedo. Eres también capaz de comunicarte con criaturas infernales de todo tipo y las de menor nivel te obedecerán sin rechistar. 
 
 ### Puertas del infierno
 
@@ -105,7 +105,7 @@ A través de un siniestro ritual corrompes tu alma para adoptar las característ
 
 **Duración:** Seis rondas
 
-A. Este hechizo afectará una zona de tamaño igual a un radio grande y mientras permanezca activo todo el terreno que ocupe se convertirá en Tierra consagrada para los adoradores de los espíritus. Portal espiritual durará seis rondas o hasta que sea eliminado por otros efectos de similar magnitud.
+Este hechizo afectará una zona de tamaño igual a un radio grande y mientras permanezca activo todo el terreno que ocupe se convertirá en Tierra consagrada para los adoradores de los espíritus. Portal espiritual durará seis rondas o hasta que sea eliminado por otros efectos de similar magnitud.
 
 El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el mundo de los espíritus debido a este hechizo volverá al plano material.
 

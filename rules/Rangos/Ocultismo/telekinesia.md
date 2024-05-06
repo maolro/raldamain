@@ -3,7 +3,7 @@ title: Telequinesia
 image: telekinesia.jpg
 ---
 
-Tu mente tiene un poder superior que el de la mayoría de personas que te rodean, pudiendo manifestar fragmentos de su voluntad en forma de fuerzas invisibles que actuaran sobre todo aquello que se encuentre dentro de tu alcance. A medida que avances en tu entrenamiento y practiques como usar esta habilidad te volverás capaz de manifestar mayores cantidades de esta fuerza y así realizar hazañas de mayor escala, como levantar pesos cada vez mayores, crear escudos que te protejan o inmovilizar a personas. En sus ultimas instancias en las que te encuentres en la cúspide de tus habilidades te volverás capaz de manifestar está fuerza por completo pudiendo provocar tormentas de entropía con cualquier cosa que se encuentre a tu paso, así mismo podrás concentrar toda esa fuerza en un único individuo para aplastarlo o destruirlo valiéndote de la gran presión que eres capaz de producir.+
+Tu mente tiene un poder superior que el de la mayoría de personas que te rodean, pudiendo manifestar fragmentos de su voluntad en forma de fuerzas invisibles que actuaran sobre todo aquello que se encuentre dentro de tu alcance. A medida que avances en tu entrenamiento y practiques como usar esta habilidad te volverás capaz de manifestar mayores cantidades de esta fuerza y así realizar hazañas de mayor escala, como levantar pesos cada vez mayores, crear escudos que te protejan o inmovilizar a personas. En sus ultimas instancias en las que te encuentres en la cúspide de tus habilidades te volverás capaz de manifestar está fuerza por completo pudiendo provocar tormentas de entropía con cualquier cosa que se encuentre a tu paso, así mismo podrás concentrar toda esa fuerza en un único individuo para aplastarlo o destruirlo valiéndote de la gran presión que eres capaz de producir.
 
 # Reglas fundamentales
 
@@ -36,7 +36,7 @@ Un objeto que esté levitando puede usarse para hacer ataques contra enemigos a 
 
 *Telekinesia, Maniobra*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 
@@ -142,7 +142,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración o dejes de 
 
 Un arma levitará en el aire y actuará como una extensión de tu cuerpo, atacando a tus enemigos y defendiéndote de ataques. Mientras este hechizo permanezca activo el arma que controles podrá volar un paso en cualquier dirección y atacar a un enemigo adyacente a ella como acción bonus. El tiro de ataque será igual a tu bonificador de Telekinesia y tendrá el daño base del arma escogida modificado por tu estadística de INT. 
 
-Este hechizo permanecerá activo hasta que pierdas la concentración o el arma sea destruida. Si conoces técnicas de combate puedes aplicarlas en el arma danzante pagando chi en lugar de vigor y empleando tu bonficador de Telekineisia en lugar del que usarías normalmente. El arma también te protegerá de ataques enemigos que pueda detener, pudiendo así repetir todos los tiros de Parada que realices contra ataques Físicos que pueda bloquear el arma y quedarte con el mejor resultado.
+Este hechizo permanecerá activo hasta que pierdas la concentración o el arma sea destruida. Si conoces técnicas de combate puedes aplicarlas en el arma danzante pagando chi en lugar de vigor y empleando tu bonificador de Telekineisia en lugar del que usarías normalmente. El arma también te protegerá de ataques enemigos que pueda detener, pudiendo así repetir todos los tiros de Parada que realices contra ataques Físicos que pueda bloquear el arma y quedarte con el mejor resultado.
 
 **Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simu
 

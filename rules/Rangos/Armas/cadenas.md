@@ -32,7 +32,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 *Cadena, Ataque, Maniobra*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Corto
 
@@ -78,7 +78,7 @@ Giras tu cadena a gran velocidad para lanzar hacia atrás a todos tus enemigos. 
 
 **Coste:** 1 vigor
 
-Clavas tu cadena de la misma manera que un gancho para retener a tu enemigo y causarle gran dolor. Al impactar con tu Cadena aumentas su daño por 1d6 y dejándolo *enredado*. Mientras tu objetivo permanezca *enredado* de esta manera recibirá Desventaja en todos sus tiros debido al dolor que le ocasiona el gancho. 
+Clavas tu cadena de la misma manera que un gancho para retener a tu enemigo y causarle gran dolor. Al impactar con tu Cadena aumentas su daño por 1d6, provocas una *herida permanente leve* y lo dejas *enredado*. Mientras siga *enredado* no podrá ser sanado de su herida.
 
 Escapar de esta habilidad funciona de igual manera que el ataque Enredar y tu cadena quedará inutilizada de la misma manera. Además, cuando tu enemigo logre escapar este sufrirá los efectos de *sangrado*. Este atributo solo puede emplearse si tu arma es capaz de infligir daño Perforante.
 
@@ -88,7 +88,7 @@ Escapar de esta habilidad funciona de igual manera que el ataque Enredar y tu ca
 
 **Coste:** Cualquier cantidad de acciones y 1 vigor
 
-Giras tu cadena a gran velocidad para aumentar su potencia y luego la empleas para un poderoso ataque. Tu siguiente ataque con una cadena infligirá 1d6 daño adicional y forzará a tu objetivo a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de cadena o será empujado un paso hacia atrás. Este atributo solo puede emplearse si tu arma es capaz de infligir daño Contundente.
+Giras tu cadena a gran velocidad para aumentar su potencia y luego la empleas para un poderoso ataque. Tu siguiente ataque con una cadena infligirá 1d6 daño adicional y forzará a tu objetivo a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de cadena o será empujado un paso hacia atrás y cae *tropezado*. Este atributo solo puede emplearse si tu arma es capaz de infligir daño Contundente.
 
 Puedes gastar hasta dos acciones adicionales empoderar tu ataque contra ese mismo objetivo. Cada acción gastada aumentará el daño por 1d6 y provocará un efecto adicional. Si gastas una acción tu objetivo deberá tener éxito en un tiro de CON frente a tu modificador de cadenas o quedará *ralentizado* mientras que si gastas dos acciones tu objetivo quedará *aturdido* si falla ese mismo tiro. Estas acciones pueden emplearse en turnos separados si mantienes la concentración en tu ataque, perdiéndolas todas si eres interrumpido mientras cargas.
 
@@ -134,23 +134,14 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-**Escudo humano**: Si tienes a un objetivo agarrado y recibes un ataque puedes usarlo para bloquearlo, recibiendo ventaja en tu tiro defensivo y provocando que el ataque le impacte si te falla.
 
-**Danza de destrucción**: Al usar *ataque circular* afectas a todas las criaturas en tu alcance y aquellas que impactes deberán tirar FUE contra tu tiro de arma o caerán al suelo. Si te encuentras en *danza de cadenas* infliges +1d6 daño.
 
 ## Rango V
 
-**Reposicionar***:* Al atacar o defenderte con éxito empleando tu arma puedes desenganchar como reacción. El objetivo agarrado se moverá contigo.
+### Ahorcar
 
-**Ahorcar** (1 AP): Un objetivo agarrado se empieza a ahogar, pasando a estar *fatigado*. Si no se libera en una cantidad de turnos igual a su CON caerá inconsciente y al turno siguiente morirá ahogado. +1 AP para reducir la cantidad de rondas que puede aguantar tu objetivo por 1. 
+**Coste:** 3 vigor
 
-# Armas  
 
-Una cadena base hace 1d6 + FUE daño contundente, se usa con dos manos y tiene un alcance de 10 pies. Una cadena base puede modificarse con las siguientes características para dar lugar a todo tipo de armas relacionadas.
 
-- **Látigo:** En lugar de una cadena te especializas luchando con un látigo. Un látigo causa 1d4 + FUE daño contundente al impactar, se usa con una mano y no provocará heridas permanentes contra criaturas con armadura. Hacer un ataque con él te cuesta una acción de movimiento y a rango III puedes hacer un ataque de látigo una vez al turno como acción bonus.
-- **Gancho:** El arma tiene un gancho en su punta con el cual puede agarrar con mayor facilidad. A rango I en lugar de enredar a tu objetivo puedes clavarle un gancho, el cual dificultará sus movimientos y le causará daño cuando forcejee contra él. Una criatura que tenga un gancho clavado no puede separarse de tu cadena y sufrirá 2 daño no-letal cada vez que realice una acción. Arrancar un gancho cuesta una acción de movimiento y causará [sangrado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#sangrado) a la criatura que se separe de él. Una cadena con un gancho inflige daño perforante en lugar de cortante.
-- **Contundente:** El arma tiene una sólida esfera de piedra o metal capaz de romper escudos y armaduras al ser acelerada con la adecuada velocidad. Al emplear la habilidad *cargar ataque* con un arma que tenga esta mejora tu enemigo deberá tener éxito en un tiro de CON contra tu tiro de ataque o quedará aturdido durante una ronda. Si gastas 2 o más cargas en un ataque reduce la defensa de tu objetivo por un valor igual a la cantidad de cargas gastadas (si bloquea con un escudo reduce su valor defensivo por ese mismo valor – 1). Una cadena con esta mejora debe ser empleada con dos manos e infligirá 1d8 + FUE daño contundente al impactar.
-- **Aserrada:** El arma está recubierta de varias afiladas espinas que causan devastadores cortes a las víctimas que agarres. Una cadena aserrada inflige los efectos de [sangrado](https://raldamain.com/rules/Reglas principales/Efectos de estado.html#sangrado) a las criaturas que logres agarrar o enredar (para que esto pueda aplicarse debes agarrar a una criatura en un punto donde no lleve armadura) y al atacar a una criatura agarrada con ella esta sufrirá una herida permanente leve si lleva armadura ligera o media.
-- **Tentáculo**: Tienes un sinuoso tentáculo que puedes usar para atacar como si fuera una cadena. Este tiene alcance corto e inflige 1d6 + FUE daño contundente al impactar (1d8 si eres grande y 1d10 si eres gigante). Solo puedes escoger este ataque si tus características fisiológicas lo permiten.
-
+## Rango VI

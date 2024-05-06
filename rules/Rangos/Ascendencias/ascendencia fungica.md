@@ -19,7 +19,7 @@ Ascendencia Fúngica tiene las siguientes reglas fundamentales que se aplican a 
 
 *Innata, Pasiva*
 
-Has desarrollado un extraño metabolismo semejante a los hongos que te da resistencias sobrenaturales. Recibes Resistencia a efectos Ácidos y Necróticos además que puedes ver en la oscuridad sin dificultades. Puedes además comunicarte con criaturas fúngicas y estas no serán naturalmente hostiles hacia ti. Tu metabolismo fúngico también te hace muy sensible a la luz, otorgándote Vulnerabilidad a efectos Radiantes y quedarás *cegado* si te encuentras en un entorno con luz brillante
+Has desarrollado un extraño metabolismo semejante a los hongos que te da resistencias sobrenaturales. Recibes Resistencia a efectos Ácidos y Necróticos además que puedes ver en la oscuridad sin dificultades a distancia media. Puedes además comunicarte con criaturas fúngicas y estas no serán naturalmente hostiles hacia ti. Tu metabolismo fúngico también te hace muy sensible a la luz, otorgándote Vulnerabilidad a efectos Radiantes y quedarás *cegado* si te encuentras en un entorno con luz brillante
 
 ### Manipular hongos
 
@@ -71,7 +71,7 @@ Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Naturale
 
 **Duración:** Hasta que sea disipada
 
-Expulsas una nube de esporas tóxicas desde cualquier lugar a distancia media lleno de materia fúngica. El vapor llenará una esfera de tamaño pequeño, expandiéndose alrededor de esquinas y paredes. Las criaturas dentro de la nube quedarán *embotadas* debido a la baja visibilidad y tienen los beneficios de *ocultamiento* ante ataques desde el exterior. La nube permanecerá en el campo de batalla hasta que sea disipada.
+Expulsas una nube de esporas tóxicas desde cualquier lugar a distancia media lleno de materia fúngica. El vapor llenará una esfera de tamaño pequeño, expandiéndose alrededor de esquinas y paredes. Las criaturas dentro de la nube quedarán *cegadas* debido a la baja visibilidad y tienen los beneficios de *ocultamiento* ante ataques desde el exterior. La nube permanecerá en el campo de batalla hasta que sea disipada.
 
 Las esporas se empezarán a introducir en el sistema respiratorio de todas las criaturas que se encuentren en la nube. Las criaturas que empiecen su turno dentro de la nube o entren en ella quedarán infectadas con tus Esporas infecciosas, haciendo de inmediato el tiro para defenderse de ellas. Si ya están infectadas recibirán Desventaja en todos sus tiros de CON para evitar sus efectos mientras permanezcan en la nube.
 
@@ -153,7 +153,7 @@ Te fusionas con una enorme cantidad de hongos para transformarte en una monstruo
 
 - Tu FUE, CON y SAB pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos de Toque y tu Aura Tóxica aumenta su alcance a medio. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
-- Puedes manifestar armas hechas de materia fúngica, las cuales tendrán daño base igual al que tendrían normalmente pero infligirán 1d10 + Rango daño Áci. Activas de inmediato los efectos del hechizo Comunión fúngica, obteniendo así los beneficios que este otorga.
+- Puedes manifestar armas hechas de materia fúngica, las cuales tendrán daño base igual al que tendrían normalmente pero infligirán 1d10 + Rango daño Ácido. Activas de inmediato los efectos del hechizo Comunión fúngica, obteniendo así los beneficios que este otorga.
 - Eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus además obtienes los efectos de Transferencia Vital con todas las criaturas Fúngicas que hayas invocado.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia Fúngica no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.

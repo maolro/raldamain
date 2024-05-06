@@ -127,7 +127,7 @@ Todos tus hechizos de Naturaleza sustituyen sus dados de daño por d8 y aquellos
 
 *Naturaleza, Ataque, Área, Físico, Agarre, Duradero*
 
-**Coste:** 3 acciones y 2 chi
+**Coste:** 2 acciones y 2 chi
 
 **Alcance:** Medio
 
@@ -161,7 +161,7 @@ Cada vez que un personaje empiece su turno con una espina parasítica en él deb
 
 **Empoderar** (1 chi): Un objetivo adicional impactado por el mismo ataque de Naturaleza también se le clavará una espina, sufriendo los mismos efectos.
 
-### Invocar elemental de madera
+### Invocar elemental de naturaleza
 
 *Naturaleza, Invocación*
 
@@ -171,7 +171,7 @@ Cada vez que un personaje empiece su turno con una espina parasítica en él deb
 
 **Duración:** Una hora
 
-Llamas a un espíritu guardián hecho de plantas y madera para que te asista en el combate. Este hechizo invocará un Elemental de Madera de nivel 6 que luchará a tu lado hasta que sea destruido. A rangos superiores, puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Madera por encima del III. 
+Llamas a un espíritu guardián hecho de plantas y madera para que te asista en el combate. Este hechizo invocará un Elemental de Naturaleza de nivel 6 que luchará a tu lado hasta que sea destruido. A rangos superiores, puedes invocar elementales de poder aún mayor, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Naturaleza por encima del III. 
 
 **Empoderar** (1 chi): Un elemental bajo tu control se cura una cantidad de Vitalidad igual a la mitad de su valor máximo.
 

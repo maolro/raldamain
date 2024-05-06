@@ -17,7 +17,7 @@ Magia de Transmutación se adhiere a un conjunto de reglas fundamentales que sus
 
 *Transmutación, Toque, Sanación*
 
-**Coste**: 2 acciones
+**Coste**: 1 Acción
 
 **Alcance**: Toque
 
@@ -39,7 +39,7 @@ Reparas los tejidos corporales de un aliado para sanarle las heridas que haya su
 
 **Duración:** Instantáneo
 
-Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas internas. Una criatura adyacente a ti deberá tener éxito en un tiro de CON frente a tu Magia de Transmutación o sufre una *herida permanente leve* en la parte del cuerpo que toques. Dicha herida solo puede sanarse por medios mágicos o científicos de rango alto y puedes afectar con esta habilidad incluso a criaturas inmunes a *heridas permanentes*.
+Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas internas. Una criatura adyacente a ti deberá tener éxito en un tiro de CON frente a tu Magia de Transmutación o sufre una *herida permanente leve* en la parte del cuerpo que toques. Dicha herida solo puede sanarse por medios mágicos o científicos de rango alto y puedes afectar con esta habilidad incluso a criaturas orgánicas inmunes a *heridas permanentes*.
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio, o afecta a un objetivo adicional que alcances.
 
@@ -89,14 +89,14 @@ El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán
 
 **Alcance:** Toque
 
-**Duración:** Concentración
+**Duración:** Un combate
 
-Alteras el tamaño de una criatura que toques para hacerla más grande o más pequeña. El objetivo puede resistirse si tiene éxito en un tiro de CON frente a tu Magia de Transmutación, pero si fracasa su tamaño crecerá o se reducirá por un paso junto al equipamiento que lleve.
+Alteras el tamaño de una criatura que toques para hacerla más grande o más pequeña. El objetivo puede resistirse si tiene éxito en un tiro de CON frente a tu Magia de Transmutación, pero si fracasa su tamaño crecerá o se reducirá por un paso.
 
-Este efecto permanecerá activo mientras mantengas la concentración y no hay límite de cuantos objetivos puedes afectar simultáneamente, pero todo efecto activo desaparecerá cuando pierdas la concentración. Al activar este hechizo escoge una de estas dos opciones para afectar a tu objetivo.
+Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de cuantos objetivos puedes afectar simultáneamente, pero todo efecto activo desaparecerá cuando se acabe el tiempo. Un afectado involuntario puede repetir este tiro al principio de cada turno para intentar liberarse. Al activar este hechizo escoge una de estas dos opciones para afectar a tu objetivo.
 
-- **Reducir tamaño:** Reduces el tamaño objetivo, disminuyendo su peso y altura a y aumentando su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de DES a costa de obtener Desventaja en todos sus tiros relacionados con la FUE y la CON. Las armas del afectado también reducen su tamaño, disminuyendo el daño que provocan por un paso.
-- **Aumentar peso:** Aumentas la fuerza gravitatoria que afecta a tu objetivo, incrementando su peso y altura a costa de reducir su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de FUE y CON a costa de obtener Desventaja en todos sus tiros relacionados con la DES. Las armas del afectado también aumentarán su tamaño, incrementando el daño que provocan por un paso.
+- **Reducir tamaño:** Reduces el tamaño de tu objetivo, disminuyendo su peso y altura y aumentando su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de DES a costa de obtener Desventaja en todos sus tiros relacionados con la FUE y la CON. El daño de sus ataques naturales se reducirá también por un paso debido a su tamaño menor.
+- **Aumentar peso:** Aumentas el tamaño de tu objetivo, incrementando su peso y altura a costa de reducir su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de FUE y CON a costa de obtener Desventaja en todos sus tiros relacionados con la DES. El daño de sus ataques naturales se reducirá también por un paso debido a su tamaño menor.
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a distancia media, o afecta a un objetivo adicional con él.
 
@@ -112,7 +112,7 @@ Este efecto permanecerá activo mientras mantengas la concentración y no hay l�
 
 Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heridas. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Transmutación o 1d6 + INT daño Físico obligatorio además de quedar Enfermado durante el resto del combate. Tras atacar recuperarás también Vitalidad igual a tu Rango + 2.
 
-**Empoderar** (1 chi):Reduce el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a tu objetivo.
+**Empoderar** (1 chi): Reduce el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a tu objetivo.
 
 ## Rango III
 

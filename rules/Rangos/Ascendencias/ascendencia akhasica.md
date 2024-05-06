@@ -29,7 +29,7 @@ Tu conexión con la memoria akhásica te permite vislumbrar brevemente el conoci
 
 Tu mente tiene mayor capacidad para recopilar y recordar información, pudiendo así aprender de manera extremadamente rápida. Puedes conocer información de cualquier ámbito de estudio al hacer un tiro de Memoria y aprender un lenguaje nuevo sólo te costará un mes de estudio. Este nivel superior de cognición te otrogará también Resistencia a efectos Mentales.
 
-Este nivel superior de conocimiento te permite también descubrir los secretos detrás de la magia arcana. Aprendes dos hechizos adicionales pertenecientes a cualquier rama de Magia Arcana, los cuales puedes lanzar empleando vigor en lugar de chi. Dichos hechizos emplearán como bonificador la suma de tu INT y tu Rango de Ascendencia Akhásica además que deben ser aprobados por el DJ. En el caso que no tengas ningún Rango relacionado con la Magia Arcana tus hechizos tendrán un sobrecoste de 1 chi o vigor adicional.
+Este nivel superior de conocimiento te permite también descubrir los secretos detrás de la magia arcana. Aprendes dos hechizos adicionales Mentales o pertenecientes a cualquier rama de Magia Arcana, los cuales puedes lanzar empleando vigor en lugar de chi. Dichos hechizos emplearán como bonificador la suma de tu INT y tu Rango de Ascendencia Akhásica además que deben ser aprobados por el DJ. En el caso que no tengas ningún Rango relacionado con la Magia Arcana tus hechizos tendrán un sobrecoste de 1 chi o vigor adicional.
 
 ## Rango II
 
@@ -53,7 +53,7 @@ Tienes un sexto sentido para la magia, el cual te permite detectar las impresion
 
 ## Rango III
 
-Aprendes dos hechizos Arcanos adicionales de Rango II o menos, los cuales puedes lanzar empleando vigor en lugar de chi.
+Aprendes dos hechizos Arcanos o Mentales adicionales de Rango II o menos, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Forma astral
 
@@ -61,7 +61,7 @@ Aprendes dos hechizos Arcanos adicionales de Rango II o menos, los cuales puedes
 
 **Coste:** 3 acciones y 2 chi
 
-**Duración:** concentración
+**Duración:** Concentración
 
 A través de un ritual de meditación puedes liberar a tu mente de las ataduras del cuerpo, convirtiéndote en una criatura de pensamiento puro. Cuando actives este hechizo tu cuerpo físico caerá inconsciente y manifestarás un cuerpo incorpóreo, el cual adoptará el aspecto que desees y no podrá alejarse más de cien metros de tu cuerpo. La forma astral se desvanecerá si tu cuerpo físico es dañado o si es afectada con *eliminar magia* u otros hechizos similares.
 
@@ -77,7 +77,7 @@ Eres capaz de lanzar hechizos empleando únicamente el poder de tu mente. No nec
 
 Incrementa tu estadística de SAB y su limitador por 1.
 
-### Visión verdadera
+### Abrir el Tercer Ojo
 
 *Innata, Pasiva*
 
@@ -98,6 +98,8 @@ Dado que la resistencia de esta barrera depende de tu fuerza mental puedes empuj
 **Empoderar** (1 chi o vigor): Recuperas un *contador de escudo* adicional al expoliar tu mente.
 
 ## Rango V
+
+Aprendes dos hechizos Arcanos o Mentales adicionales de Rango III o menos, los cuales puedes lanzar empleando vigor en lugar de chi.
 
 ### Palacio de la mente
 

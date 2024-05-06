@@ -39,7 +39,7 @@ Incrementa tu estadística de DES y su limitador por 1.
 
 **Duración:** Una ronda
 
-Refuerzas tus ataques con energía necrótica para herir la esencia vital de tus enemigos. La siguiente vez que impactes con un ataque de cualquier tipo esta ronda podrás lanzar un hechizo Sombrío como acción bonus contra ese mismo objetivo. 
+Refuerzas tus ataques con energía necrótica para herir la esencia vital de tus enemigos. La siguiente vez que impactes con un ataque físico esta ronda podrás lanzar un hechizo Sombrío como acción bonus contra ese mismo objetivo. 
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
@@ -115,7 +115,7 @@ Aprendes los hechizos Tentáculos de oscuridad y Maldición de Shade
 
 *Innata, Pasiva*
 
-El siniestro poder en tu interior se ha desatado por completo, transformándote en un ser más propio del Plano Sombrío que el material. Obtienes Resistencia a efectos Arcanos Arcanos, Mentales, Maldiciones, Aflicciones y Miedo además que las criaturas sombrías de menor nivel te obedecerán sin cuestionarlo. Obtener esta habilidad te otorgará una *locura permanente* escogida por le DJ.
+El siniestro poder en tu interior se ha desatado por completo, transformándote en un ser más propio del Plano Sombrío que el material. Obtienes Resistencia a efectos Arcanos, Mentales, Maldiciones, Aflicciones y Miedo además que las criaturas sombrías de menor nivel te obedecerán sin cuestionarlo. Obtener esta habilidad te otorgará una *locura permanente* escogida por le DJ.
 
 ### Dominio de pesadilla
 

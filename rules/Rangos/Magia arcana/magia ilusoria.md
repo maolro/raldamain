@@ -80,7 +80,7 @@ Si ha empleado habilidades defensivas para detener tu ataque serán malgastadas 
 
 *Ilusoria, Arcana, Visual, Duradera*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 Acción y 1 chi
 
 **Duración:** Concentración
 
@@ -170,7 +170,7 @@ Todos tus hechizos Ilusorios de Rango II reducen su coste en acciones por 1 (mí
 
 **Coste:** 2 acciones y 2 chi
 
-**Tamaño:** Esfera media
+**Tamaño:** Esfera mediana
 
 **Duración:** Concentración
 

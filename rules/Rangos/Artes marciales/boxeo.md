@@ -79,7 +79,7 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 Has entrenado mucho tus piernas para dar saltos repentinos a gran velocidad. Al emplear esta técnica te mueves un paso como acción bonus y haces un ataque Marcial contra un enemigo adyacente a ti en esa nueva posición que tendrá Ventaja e infligirá 1d6 daño adicional al impactar. Si te encuentras en *posición defensiva* una vez por ronda puedes emplear esta técnica como reacción, aprovechando así el mejor momento para atacar.
 
-### Golpe veloz
+### Puñetazo veloz
 
 *Marcial, Mejora*
 
@@ -163,4 +163,4 @@ Además, cada vez que impactes al objetivo con más de un puñetazo aumentarás 
 
 *Boxeo, Pasiva*
 
-Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques Estas técnicas pueden intercambiarse durante un descanso largo a través del entrenamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.
+Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques. Estas técnicas pueden intercambiarse durante un descanso largo a través del entrenamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.

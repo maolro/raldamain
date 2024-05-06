@@ -23,7 +23,7 @@ La criatura tiene un tamaño especialmente superior a lo normal, incrementando n
 
 La criatura no es un único ser sino una nube de pequeñas criaturas con una mente colmena. Este arquetipo otorga las siguientes características:
 
-- La criatura se vuelve casi incorpórea, haciendo que sus estadísticas de FUE y CAR pasen a ser -1. Empleará su estadística de SAB o CAR para calcular sus PV y Vitalidad además de sus tiros de ataque con armas naturales.
+- La criatura se vuelve casi incorpórea, haciendo que sus estadísticas de FUE y CON pasen a ser -1. Empleará su estadística de SAB o CAR para calcular sus PV y Vitalidad además de sus tiros de ataque con armas naturales.
 - Ocupará un espacio del tamaño de una esfera pequeña y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista. Su forma de plaga le permite pasar hasta por las ranuras más pequeñas.
 - Obtiene Inmunidad a todos los efectos dirigidos a un único objetivo sin importar su fuerza. No obstante, obtendrá Vulnerabilidad a ataques de Área y al daño provocado por estos.
 - Al tratarse de una nube de criaturas no puede emplear armas o maniobras. Sus ataques físicos solo podrán afectar a criaturas que se encuentren en una posición que ocupe y estas solo podrán defenderse con Parada mágica o tirando CON frente a su modificador. Dichos ataques contarán como si fueran de Área y provocan la mitad de daño en caso de éxito.
@@ -33,7 +33,7 @@ La criatura no es un único ser sino una nube de pequeñas criaturas con una men
 
 La criatura se ha especializado en combatir con un lanzas, alabardas y armas similares. Este arquetipo otorga las siguientes mejoras:
 
-- Aumenta dos estadísticas físicas por 1
+- Aumenta sus tres estadísticas físicas por 1
 - Recibe un bonificador +2 en sus tiros relacionados con Alabardas y aumenta el daño provocado con estas por un paso. 
 - Puede emplear la habilidad Preparación contra cargas sin la necesidad de pagar vigor si se encuentra en *posición defensiva* y al impactar con un ataque puede emplear la habilidad Clavar arma gratuitamente.
 - Incrementa su número e acciones por 1 hasta un máximo de 4.

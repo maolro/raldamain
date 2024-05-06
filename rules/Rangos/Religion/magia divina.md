@@ -113,7 +113,7 @@ Aprendes dos hechizos de rango III pertenecientes a una magia relacionada con tu
 
 *Divina, Maldición*
 
-**Coste:** 2 acciones y 2 chi
+**Coste:** 1 acción y 2 chi
 
 **Alcance:** Medio
 
@@ -150,7 +150,7 @@ Aprendes dos hechizos de rango IV pertenecientes a una magia relacionada con tu 
 
 *Divina, Área, Auditiva, Sónica*
 
-**Coste:** 3 acciones y 3 chi
+**Coste:** 2 acciones y 3 chi
 
 **Tamaño:** Esfera mediana
 
@@ -164,7 +164,7 @@ Pronuncias palabras en el lenguaje prohibido de los dioses capaces de ensordecer
 
 *Divina, Mejora, Duradero*
 
-**Coste:** 3 acciones y 3 chi
+**Coste:** 2 acciones y 3 chi
 
 **Duración:** Seis rondas
 

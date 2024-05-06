@@ -77,9 +77,9 @@ Aprovechas tu gran velocidad para atacar a múltiples enemigos en un instante. T
 
 *Ligera, Mejora*
 
-**Coste:** 2 vigor
+**Coste:** 1 Acción y 2 vigor
 
-Acuchillas a tu objetivo con dos rápidos ataques para provocarle una herida más profunda. Tras impactar con un ataque de arma puedes hacer un segundo ataque contra el mismo objetivo como acción bonus. Si impactas con dicho ataque incrementa su daño base por 2d6 y aumenta el nivel de las *heridas permanentes* infligidas por un paso. El segundo ataque que realices con esta habilidad no puede ser mejorado con más técnicas y solo puedes emplear esta técnica en ataques que te cuesten por lo menos una acción.
+Acuchillas a tu objetivo con dos rápidos ataques para provocarle una herida más profunda. Al emplear esta técnica hace dos ataques empleando su arma contra el mismo objetivo. Si ambos impactan el segundo ataque incrementa su daño base por 2d6 y aumenta el nivel de las *heridas permanentes* infligidas por un paso. El segundo ataque que realices con esta habilidad no puede ser mejorado con más técnicas.
 
 ### Asalto impredecible
 
@@ -113,7 +113,7 @@ Haces un rápido ataque para interrumpir a un enemigo antes que pueda atacarte. 
 
 **Coste:** 2 vigor
 
-Haces un ataque preciso y mortal contra una parte específica del cuerpo de tu enemigo con el fin de deshabilitarla. Tu siguiente ataque infligirá 2d6 daño adicional al impactar además que provocará una *herida permanente media* en una parte específica del cuerpo de tu objetivo. Si un ataque mejorado de esta manera logra provocar un efecto crítico puedes infligir la *herida permanente* que este provocaría en la misma parte del cuerpo.
+Haces un ataque preciso y mortal contra una parte específica del cuerpo de tu enemigo con el fin de deshabilitarla. Tu siguiente ataque infligirá 3d6 daño adicional al impactar además que provocará una *herida permanente media* en una parte específica del cuerpo de tu objetivo. Si un ataque mejorado de esta manera logra provocar un efecto crítico puedes infligir la *herida permanente* que este provocaría en la misma parte del cuerpo.
 
 ### Salto mortal
 
@@ -135,7 +135,7 @@ Saltas repentinamente para atacar a un enemigo lejano antes que tenga la oportun
 
 **Efecto crítico:** tu objetivo recibe una *herida permanente crítica*.
 
-Apuntas a los órganos vitales de un enemigo para darle un golpe de gracia. Haz un ataque con tu arma que inflige 3d6 daño adicional al impactar junto a una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad además que este ignorará la Defensa otorgada por armaduras que tenga 
+Apuntas a los órganos vitales de un enemigo para darle un golpe de gracia. Haz un ataque con tu arma que inflige 3d6 daño adicional al impactar junto a una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad además que este ignorará la Defensa otorgada por armaduras que tenga.
 
 ### Puñaladas en secuencia
 
@@ -151,7 +151,7 @@ Atacas repetidamente al mismo enemigo para desgastar sus defensas e impactarle c
 
 **Coste:** 3 vigor
 
-Te desplazas ágil. Salta un paso en cualquier dirección y haz un Ataque con tu arma contra un objetivo adyacente que inflige 1d6 daño adicional. Si impactas con este ataque puedes volver a saltar un paso en cualquier dirección y atacar a un nuevo enemigo, continuando así hasta que falles un ataque o no te queden más nuevos enemigos para atacar. Si mejoras un ataque hecho de esta manera con otra técnica esta terminará de inmediato.
+Te desplazas ágilmente para atacar a múltiples enemigos en el campo de batalla antes que tengan la oportu. Salta un paso en cualquier dirección y haz un Ataque con tu arma contra un objetivo adyacente que inflige 1d6 daño adicional. Si impactas con este ataque puedes volver a saltar un paso en cualquier dirección y atacar a un nuevo enemigo, continuando así hasta que falles un ataque o no te queden más nuevos enemigos para atacar. Si mejoras un ataque hecho de esta manera con otra técnica esta terminará de inmediato.
 
 ## Rango VI
 

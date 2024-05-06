@@ -87,9 +87,9 @@ Aumenta tu estadística de FUE y su limitador por 1. Aprendes dos hechizos de Ra
 
 *Innata, Pasiva*
 
-Tu vínculo con el plano espiritual se ahonda hasta el punto de volverte semejante a una criatura espiritual. Recibes Resistencia a todos los efectos de las categorías Fuego, Frío, Eléctrico, Sónico y Radiante además que eres Inmune a sus efectos críticos. Eres  también capaz comunicarte con animales y espíritus, quienes te tratarán como un igual y serán amistosos hacia ti.
+Tu vínculo con el plano espiritual se ahonda hasta el punto de volverte semejante a una criatura espiritual. Recibes Resistencia a todos los efectos de las categorías Fuego, Frío, Eléctrico, Sónico y Radiante además que eres Inmune a sus efectos críticos. Eres también capaz comunicarte con animales y espíritus, quienes te tratarán como un igual y serán amistosos hacia ti.
 
-### Sanación rápida
+### Sanación espiritual
 
 *Innata, Pasiva*
 
@@ -103,7 +103,7 @@ La energía vital del mundo de los espíritus sana tus heridas y te permite recu
 
 La energía espiritual que emite tu cuerpo es capaz de causar disrupciones en la magia, otorgándote así Resistencia a todos los efectos Arcanos y Divinos. Además, todos los objetos mágicos y glifos activados a distancia corta de ti tendrán una probabilidad del 50% de fallar. 
 
-**Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera.
+**Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera además que no puedes contrarrestar hechizos de rango superior a
 
 ### Portal espiritual
 
@@ -139,7 +139,7 @@ Liberas todo el poder espiritual en tu interior para transformarte en una podero
 
 - Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
-- Aumentas el daño base de tus ataques naturales a 1d10 además que estos contarán como si fueran de material superior III para los propósitos de calcular su duerza.
+- Aumentas el daño base de tus ataques naturales a 1d10 además que estos contarán como si fueran de material superior III para los propósitos de calcular su dureza.
 - Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas.
 - Obtienes velocidad de vuelo 1 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.

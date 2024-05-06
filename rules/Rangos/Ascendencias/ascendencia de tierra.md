@@ -43,7 +43,7 @@ Has desarrollado un sentido especial que te permite detectar las vibraciones a t
 
 *Tierra, Mejora*
 
-Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
+Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Natur o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
 
 ## Rango III 
 

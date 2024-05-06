@@ -35,7 +35,7 @@ Tu espíritu está asociado con un elemento de tu elección. Recibes Resistencia
 
 Incrementa tu estadística de CAR y su limitador por 1.
 
-### Sanación rápida
+### Aguantar heridas
 
 *Innata, Pasiva*
 
@@ -55,7 +55,15 @@ Obtienes la capacidad de abrir un tercer ojo en la frente para obtener nuevos se
 
 ## Rango III
 
-Aumenta tu resistencia a daño físico por 1
+Aprende dos hechizos adicionales de Rango II o menos relacionados con su foco elemental.
+
+### Levitación
+
+Recibe velocidad  de vuelo 2 y Ventaja en tiros de Esquiva si entra en Furia del Oni
+
+### Transformación Gig
+
+Cuando entra en  Furia de Oni su tamaño crece por un paso, obteniendo Ventaja en tiros de FUE  y CON a costa de Desventaja en tiros de DES. Sus ataques físicos aumentan  dados daño por un paso
 
 **Rayo ocular** (1 chi): Como acción bonus usable una vez por turno puedes disparar un rayo de energía elemental desde tu tercer ojo. Esto es una acción bonus empleable una vez por ronda y el tiro es igual a tu CAR + tu rango de ascendencia. El rayo ocular inflige 1d6 + CAR daño de tu elemento elegido al impactar. Si tienes rangos en magia elemental puedes aplicar sus habilidades en tu rayo ocular como si se tratase de un ataque elemental y emplearás tu tiro de magia elemental si este es superior.
 
@@ -65,13 +73,31 @@ Aumenta tu resistencia a daño físico por 1
 
 Incrementa tu FUE por 1.
 
+### Regeneración del Oni
+
+Se regenera RANGO  Vitalidad al princpio de su turno y reduce el nivel de una herida o aflicción  por un paso. Esto funciona incluso con heridas críticas
+
+### Presencia Terrorífica
+
+**Coste:** 1 acción y 2 chi o vigor
+
+Todos a su  alrededor tiran Voluntad o Intimidar o aumentan nivel e miedo por un paso.  Repite cada ronda contra todo enemigo que lo vea
+
 **Vuelo**: Al entrar en *furia del oni* recibes la capacidad de volar, aumentando tu velocidad de vuelo por 1. Mientras estés volando recibes ventaja en todos tus tiros hechos con armas cuerpo a cuerpo y de esquiva hechos contra criaturas incapaces de volar. Si sufres una herida permanente o eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) mientras vuelas empezarás a caer inmediatamente.
 
 **Forma gaseosa** (2 acciones y 2 chi): Recibes la capacidad de transformar tu cuerpo en un estado gaseoso, volviéndote incorpóreo e inmune a daño físico a costa que no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo un número rondas seguidas igual a tu rango de ascendencia + 1 en forma gaseosa, tras las cuales volverás a tu forma corpórea. Forma gaseosa puede utilizarse como reacción si te encuentras en *posición defensiva* para evitar por completo el daño de un ataque.
 
 ## Rango V
 
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
+Aprende dos hechizos adicionales de Rango III o menos relacionados con su foco elemental.
+
+### Alma de Oni
+
+Resistencia a efectos Arcanos, Divinos, Mentales, Aflicciones y Miedo.
+
+### Forma espectral
+
+Se transforma en un ser incorpóreo que puede poseer cuerpos de hobgoblin
 
 **Regeneración**: Tu cuerpo se sana a velocidades prodigiosas, permitiéndote que te recuperes del daño y hasta las heridas permanentes. Al principio de tu turno te sanas 2 vitalidad de manera automática, y si te encuentras al máximo de vitalidad te sanas 2 PV. Al hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por un paso, mientras que si realizas un descanso largo te recuperarás de todas tus heridas salvo las graves. Después de una semana eres capaz de recuperar órganos y partes del cuerpo perdidas. (1 chi, 1/ronda) Recuperas Vitalidad igual a tu rango.
 
@@ -80,6 +106,10 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por 3.
 ## Rango VI
 
 Incrementa tu CON por 1.
+
+### Despertar el demonio
+
+Recibe 40  Vitalidad temporal, 12 FUE, CAR y CON, 20 DEF, Inmunidad a Mental, Miedo,  Aflicciones, +1 dado daño físico, está siempre en Furia Oni, 6 contadores de  escudo, hechizos Ascendencia son gratis, pos def, transforma hobgoblins en  Oni
 
 **Despertar el demonio** (3 acciones y 3 chi): Liberas el oni interior de todos los Hobgoblin a una distancia lejana de ti. Todos los que tengan nivel inferior al tuyo - 2 reciben la ascendencia oni a rango I y entran inmediatamente en *furia del oni*. Un Hobgoblin de cualquier nivel puede aceptar voluntariamente que lo transformes en oni, superando así la restricción de nivel. En el caso que afectes a un Hobgoblin de mayor nivel tendrá la oportunidad de realizar un tiro de SAB contra tu estadística de carisma + rango, recibiendo desventaja si está a menos de 6 PV. También recibes la capacidad de alterar tu aspecto temporalmente, tomando la forma de un humanoide de tu elección empleando tres acciones.
 
