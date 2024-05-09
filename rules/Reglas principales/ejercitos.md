@@ -13,16 +13,16 @@ title: Reglas de Ejércitos
 - **Cohesión:** 2
 - **Movimiento:** 3
 - **Habilidades especiales:** Todoterreno
-- **Posibles mejoras:** Asesino (+1), Incendiario (+1)
+- **Posibles mejoras:** Asesino (+1), Incendiario (+1), Élite (+2), Sanador (+2)
 
-## Infantería ligera
+## Infantería a distancia
 
 - **Coste base:** 7
 - **Tiro base:** 1d6 Combate, 2d6 A Distancia (alcance 4)
 - **Cohesión:** 3
 - **Movimiento:** 3
 - **Habilidades especiales:** Penetrante
-- **Posibles mejoras:** Escudos (+1), Estacas (+1)
+- **Posibles mejoras:** Escudos (+1), Estacas (+1), Mediocre (-2), Élite (+2)
 
 ## Infantería media
 
@@ -30,7 +30,7 @@ title: Reglas de Ejércitos
 - **Tiro base:** 2d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Posibles mejoras:** Arma Pesada (+1), Escudos (+1), Estacas (+1), Impetuoso (+1), Lanza (+1), Apoyo disparo (+1), Armadura (+2), Unidad mixta (+2), Artillería integrada (+3)
+- **Posibles mejoras:** Arma Pesada (+1), Escudos (+1), Estacas (+1), Impetuoso (+1), Lanza (+1), Apoyo disparo (+1), Armadura (+2), Unidad mixta (+2), Artillería integrada (+3), Mediocre (-2), Élite (+2), Sanador (+2)
 
 ## Infantería pesada
 
@@ -39,7 +39,7 @@ title: Reglas de Ejércitos
 - **Cohesión:** 4
 - **Movimiento:** 2
 - **Habilidades especiales:** Armadura
-- **Posibles mejoras:** Escudos (+1), Impetuoso (+1), Arma Pesada (+1), Lanzas (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3)
+- **Posibles mejoras:** Escudos (+1), Impetuoso (+1), Arma Pesada (+1), Lanzas (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Mediocre (-2), Élite (+2)
 
 ## Artillería
 
@@ -48,6 +48,7 @@ title: Reglas de Ejércitos
 - **Cohesión:** 2
 - **Movimiento:** 1
 - **Habilidades especiales:** Penetrante, Artillería
+- **Posibles mejoras:** Mediocre (-2), Élite (+2)
 
 ## Caballería ligera
 
@@ -56,7 +57,7 @@ title: Reglas de Ejércitos
 - **Cohesión:** 2
 - **Movimiento:** 5
 - **Habilidades especiales:** Caballería
-- **Posibles mejoras:** Unidad mixta (+1), Jinete de bestia (+1), Terror (+1)
+- **Posibles mejoras:** Unidad mixta (+1), Jinete de bestia (+1), Terror (+1), Élite (+2)
 
 ## Caballería media
 
@@ -64,8 +65,8 @@ title: Reglas de Ejércitos
 - **Tiro base:** 2d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 4
-- **Habilidades especiales:** Armadura
-- **Posibles mejoras:** Jinete de bestia (+1), Impetuoso (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Terror (+1)
+- **Habilidades especiales:** Caballería
+- **Posibles mejoras:** Jinete de bestia (+1), Impetuoso (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Terror (+1), Élite (+2), Mediocre (-2), Armadura (+2)
 
 ## Caballería pesada
 
@@ -73,8 +74,8 @@ title: Reglas de Ejércitos
 - **Tiro base:** 3d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Habilidades especiales:** Armadura
-- **Posibles mejoras:** Jinete de bestia (+1), Impetuoso (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Terror (+1)
+- **Habilidades especiales:** Caballería, Armadura
+- **Posibles mejoras:** Jinete de bestia (+1), Impetuoso (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Terror (+1), Élite (+2), Mediocre (-2)
 
 ## Bestia de batalla
 
@@ -83,7 +84,7 @@ title: Reglas de Ejércitos
 - **Cohesión:** 3
 - **Movimiento:** 3
 - **Habilidades especiales:** Armadura, Terror
-- **Posibles mejoras:** Artillería integrada (+3)
+- **Posibles mejoras:** Artillería integrada (+3), Mediocre (-3), Élite (+3)
 
 ## Milicia
 
@@ -91,7 +92,7 @@ title: Reglas de Ejércitos
 - **Tiro base:** 1d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Posibles mejoras:** Impetuoso (+1), Sacrificable (-1)
+- **Posibles mejoras:** Impetuoso (+1), Sacrificable (-1), Sanador (+2)
 
 ## Carreta de guerra
 
@@ -132,6 +133,10 @@ Puede oculta en cualquier terreno una vez por ronda si el terreno lo permite y r
 
 Aumenta su tiro de combate por 1d6 al hacer una carga. Este modificador no se aplica a enemigos con Lanzas.
 
+## Élite
+
+Aumenta su tiro base de combate y a distancia (si lo tiene) por 1d6
+
 ## Escudos
 
 Aumenta su tiro para defenderse de ataques a distancia por 1d6.
@@ -156,6 +161,10 @@ Obtiene una habilidad especial según el monstruo que monte. Algunas posibilidad
 
 Aumenta su tiro de combate por 1d6 al luchar contra caballería, infantería ligera o a distancia.
 
+## Mediocre
+
+Reduce su tiro de combate y a distancia (si lo tiene) por 1d6 hasta un mínimo de 1d6.
+
 ## Penetrante
 
 Sus ataques ignoran la reducción al daño otorgada por armaduras.
@@ -163,6 +172,10 @@ Sus ataques ignoran la reducción al daño otorgada por armaduras.
 ## Sacrificable
 
 No puede perder moral pero tampoco puede recibir modificadores de moral ni ser apoyado.
+
+## Sanador
+
+En lugar de atacar puede emplear su turno para curar a un aliado adyacente, haciendo así que recupere 1 cohesión
 
 ## Terror
 
