@@ -1,26 +1,34 @@
 ---
-title: Alianza Shinri
+title: Tierras Shinri
 ---
 
-Intro
+Diversas como la naturaleza misma, las tierras Shinri son una región única en el continente donde las fronteras entre el mundo espiritual y el humano son especialmente débiles. Esto causa que los espíritus puedan influir en los asuntos materiales y compartir sus poderes con la humanidad, dando lugar a numerosos clanes bendecidos por grandes espíritus que son capaces de canalizar su poder mágico. Aunque antaño estuvieron unificadas bajo un emperador, las Tierras Shinri se encuentran en una era conflicto constante donde los grandes clanes se enfrentan por territorio y poder. Cuenta la leyenda que surgirá un gran héroe capaz de traer la paz y reunificar al pueblo Shinri, pero con el paso del tiempo y tras casi un siglo de guerra este suceso parece cada vez más improbable.
 
 # Historia
 
+## Orígenes (siglos XXXI-XXXII)
 
+## La guerra espiritual y auge del Encarnado (siglo XXXIII)
+
+## El primer estado Shinri (siglos XXXIII-XXXIX)
+
+## La era de los señores de guerra (siglo XL)
 
 # Gobierno
 
+# Economía
 
+# Cultura
 
 # Lugares importantes
 
 ## Klonum
 
-Klonum es la ciudad del progreso y las oportunidades, una viva representación el futuro brillante de Shinri y el gran avance por el que ha pasado. La ciudad es la segunda más poblada del continente además del centro económico y financiero de la Alianza Shinri, albergando sus más grandes empresas y el puerto comercial más importante de la nación. Aunque se trata de una de las zonas más desarrolladas y ricas del mundo, la ciudad continúa lastrada por la desigualdad económica, el crimen organizado y los movimientos políticos radicales. Sin embargo, hay esperanza de que Klonum pueda superar estas dificultades y estar a la altura de su fama como la ciudad del futuro.
+Klonum es la ciudad del progreso y las oportunidades, una viva representación el futuro brillante de Shinri y el gran avance por el que ha pasado. La ciudad es la segunda más poblada del continente además del centro económico y financiero de las tierras Shinri, albergando sus más grandes empresas y el puerto comercial más importante de la nación. Aunque se trata de una de las zonas más desarrolladas y ricas del mundo, la ciudad continúa lastrada por la desigualdad económica, el crimen organizado y los movimientos políticos radicales. Sin embargo, hay esperanza de que Klonum pueda superar estas dificultades y estar a la altura de su fama como la ciudad del futuro.
 
 ## Homay
 
-La ciudad de Homay es considerada por muchos como el alma de Shinri, un testamento vivo a la unión entre espíritus y humanos. Desde tiempos ancestrales la ciudad ha sido la residencia del emperador Shinri y de la corte imperial, preservando su importancia hasta en la era de los Señores de Guerra. Su belleza arquitectónica y natural la convierte en la capital cultural de Shinri, con sus impresionantes templos, palacios y jardines siendo admirados y visitados por miles de peregrinos. Hoy en día ha empezado a perder peso político frente a la ciudad de Klonum debido a la industrialización de Shinri, pero debido a su enorme valor histórico siendo empleada como sede del Encarnado y su corte. 
+La ciudad de Homay es considerada por muchos como el alma de Shinri, un testamento vivo a la unión entre espíritus y humanos. Desde tiempos ancestrales la ciudad ha sido la residencia del emperador Shinri y de la corte imperial, preservando su importancia hasta en la era de los Señores de Guerra. Su belleza arquitectónica y natural la convierte en la capital cultural de Shinri, con sus impresionantes templos, palacios y jardines siendo admirados y visitados por miles de peregrinos. 
 
 ## Iwakashi
 
@@ -47,3 +55,11 @@ Puerto Pedang es  la ciudad donde la fortuna sonríe a los audaces y los desespe
 ## Yaibiro
 
 ## Sounai
+
+# Relaciones exteriores
+
+## Arshalán
+
+## Comunas élficas
+
+## Ustilus

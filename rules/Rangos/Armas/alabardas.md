@@ -102,21 +102,41 @@ Atacas a un enemigo con la parte trasera de tu arma para descolocar sus defensas
 
 ## Rango III
 
-### Ataque saltarín
+### Lanzazo saltarín
 
 **Coste:** 2 vigor
 
 Salta un paso, inflige +2d6 daño y vuelve a su posición anterior. No provoca ataques de oportunidad ni se pueden usar ataques cargados.
 
+### Danza del Alabarda
+
+**Coste:** 2 vigor
+
+Entra en un estado donde recibe Ventaja en todos sus tiros de ataque y defensa relacionados con Alabardas. Está siempre en estado Preparación contra Cargas y puede detener ataques a distancia con el alabarda.
+
 ### Combinar técnicas
+
+Tras impactar con un ataque hace un ataque adicional de Alabardas como acción bonus. No puede usar esta habilidad en ataques que no cuesten acciones
 
 ## Rango IV
 
-### Ataque antiaéreo
+### Lanzazo aéreo
 
 **Coste:** 2 vigor
 
 Salta un paso en vertical y ataca, infligiendo +2d6 daño y lanzando al suelo. Los enemigos voladores tienen Desventaja defendiéndose.
+
+### Estocada serpenteante
+
+**Coste:** 2 vigor
+
+Su siguiente ataque no puede ser detenido por muros u otras habilidades que permitan evitar ataques
+
+### Atravesar defensas
+
+**Coste:** 2 vigor
+
+Su siguiente ataque inflige +2d6 daño, provoca herida leve e ignora la defensa otorgada por armaduras que tenga el objetivo. Hace falta un contador de escudo adicional para detener este ataque
 
 ## Rango V
 
@@ -142,7 +162,11 @@ Ataca a cada enemigo a distancia corta infligiendo +3d6 daño, +1 nivel herida y
 
 Mientras lleves tu arma tienes velocidad de salto 1, Inmunidad a terreno difícil y Resistencia a Maniobras y daño de caídas. No necesitas estar en posición defensiva para recibir los beneficios de Ajustar Alcance.
 
-### 
+### Lanzazos en cadena
+
+**Coste:** 3 vigor
+
+Tras impactar con su ataque se mueve un paso sin provocar ataques de oportunidad y ataca a otro enemigo que alcance. Sigue así hasta que ataque a todos los enemigos o fa
 
 ## Rango VI
 

@@ -45,7 +45,7 @@ Tu experiencia combatiendo en un estilo basado en agarres te da una gran facilid
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
 
-Empleas tu peso para forzar a un enemigo agarrado para que caiga al suelo. Un objetivo adyacente *enredado* o *agarrado* por ti debe tener éxito en un tiro de Heroísmo o Atletismo contra tu modificador de Estilo de Agarre o cae inmediatamente *tropezado* y sufre 1d4 + FUE daño Contundente. 
+Empleas tu peso para forzar a un enemigo agarrado para que caiga al suelo. Un objetivo adyacente *enredado* o *agarrado* por ti debe tener éxito en un tiro de Heroísmo o Atletismo contra tu modificador de Estilo de Agarre o cae inmediatamente *tropezado* y sufre 1d4 + FUE daño de caída. 
 
 Si el afectado permanece *enredado* o *agarrado* debe tener éxito en un tiro de Heroísmo o Juego de manos contra ti si desea levantarse. Esta técnica solo puede usarse una vez por ronda contra el mismo objetivo.
 
