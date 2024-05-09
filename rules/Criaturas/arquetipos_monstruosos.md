@@ -23,10 +23,6 @@ La criatura ha despertado el verdadero poder e su mente, recibiendo así nuevas 
 
 Ascendencia Insectoide, Transmutación
 
-## Quimera (+2)
-
-Transmutación, Fortitud
-
 ## No-muerto (+2)
 
 La criatura ha sido levantada entre los muertos con magia negra para transformarla en sierva de un nigromante u otro hechicero malévolo. Este arquetipo otorga las siguientes mejoras:

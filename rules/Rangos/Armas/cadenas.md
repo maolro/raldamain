@@ -134,13 +134,21 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
+### Danza de destrucción
 
+**Coste:** 1 acción y 2 vigor
+
+Su siguiente ataque afecta a cada enemigo a distancia cercana e inflige +2d6 daño. Si mantiene la concentración puede repetir este ataque una vez cada ronda sin gastar vigor. Debe estar en Danza de Cadenas.
+
+### 
 
 ## Rango V
 
 ### Ahorcar
 
 **Coste:** 3 vigor
+
+Un enemigo agarrado tira CON o sufre el daño del arma con +3d6 daño, herida leve y se empieza a ahogar. Si reduce a 0 PV lo mata instantáneamente partiéndole el cuello.
 
 
 

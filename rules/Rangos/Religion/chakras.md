@@ -50,7 +50,7 @@ El chakra sacral se encuentra en tu abdomen inferior y se centra en los aspectos
 
 *Chakra 2, Pasiva*
 
-El chakra solar se encuentra en el centro de tu cuerpo y almacena la energía tanto positiva como negativa de tu alrededor. Esta combinación de energías forma la base de tu personalidad y tu poder innato. Al activar este chakra te rodeas de un aura de energía protectora que aumenta tu Defensa por un valor igual a tu rango y te vuelve inmune a heridas medias o inferiores. Activar este chakra requiere que no tengas ninguna maldición o bendición divina que te esté afectando y no podrás emplear magia divina de ningúnal activarla.
+El chakra solar se encuentra en el centro de tu cuerpo y almacena la energía tanto positiva como negativa de tu alrededor. Esta combinación de energías forma la base de tu personalidad y tu poder innato. Al activar este chakra te rodeas de un aura de energía protectora que aumenta tu Defensa por un valor igual a tu rango y te vuelve inmune a heridas medias o inferiores. Activar este chakra requiere que no tengas ninguna maldición o bendición divina que te esté afectando y no podrás emplear magia divina de ningún tipo al activarla.
 
 ## Rango III
 

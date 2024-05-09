@@ -104,6 +104,12 @@ Arshalán representa todo lo que Ustilus odia y desea destruir. No solo son infi
 
 Para complicar aún más esta tensa situación los Arshalaníes han enviado numerosos misioneros a tierras ustilesas para llenar el vacío dejado por Feyn con la doctrina Mekhatimista. Ante el horror de los caballeros esta herética fe ha logrado numerosos adeptos entre las clases más bajas del imperio debido al énfasis que pone la religión Arshalaní en la igualdad, la caridad y la búsqueda de la salvación. Aunque los Mekhatimistas han sido perseguidos sin cuartel, su fe no hace más que crecer y hay una creciente preocupación que estas conversiones no son más que un primer paso hacia una inevitable invasión arshalaní.
 
+## Comunas Élficas
+
+Los elfos son la única raza no-humana admirada y respetada por los Ustileses, quienes ven a este pueblo inmortal como seres que representan las mejores cualidades de la humanidad. Esta buena relación entre elfos y humanos existe desde tiempos del Primer Imperio, el cual mantuvo buenas relaciones con el Imperio Élfico que existió entonces.
+
+En tiempos recientes los Ustileses han firmado varios tratados de protección con las comunas élficas vecinas, convirtiéndolas en protectorados del Imperio con el fin de extender su influencia por el centro del continente. Aunque a los Feynistas más intransigentes les desagrada el trato preferencial que tienen los elfos en el Imperio, los buenos vínculos entre los elfos y la nobleza ustilesa garantiza su posición privilegiada en un Imperio dominado por humanos.
+
 ## Mazarín
 
 Los Ustileses ven a Mazarín como poco más que un viejo enfermo obsesionado con su pasada gloria e incapaz de darse cuenta de su actual decadencia. Aunque antaño fue el gran rival al que se enfrentó Ustilus para alzarse como la única nación elegida por Feyn, sus numerosas derrotas a manos del Imperio la han sumido en un periodo de decadencia que no ha hecho más que acrecentarse con la desaparición del Dios de la Humanidad. Ahora Ustilus solo siente vergüenza al ver en qué se ha convertido su histórico enemigo y teme por encima de todo acabar de la misma manera que este miserable reino. 
@@ -119,7 +125,3 @@ El control Ustilés se limita a unas pocas colonias en las costas del sur de Shi
 La relación entre Tapetíes y Ustileses se resume en una bolsa de dinero en la mano y un puñal tras la espalda. El Imperio ve a la república mercantil como un socio comercial muy útil pero a su vez traicionero, siempre dispuesta a obtener tratos preferentes y apoyando desde las sombras a sus enemigos para evitar que se hagan demasiado fuertes. La extraña religión sincretista que practican los Tapetíes trae aún más desconfianza de parte de los Ustileses, a quienes les desagrada enormemente aquello que no pueden comprender ni doblegar.
 
 La flota Tapetí es además la única capaz de retar a la Ustilesa en una batalla naval, haciendo que ambas potencias prefieran enfrentarse de manera más sutil que a través de una guerra directa. Aunque la situación actual entre ambas naciones es tensa y desconfiada, el comercio sigue fluyendo entre las dos y tanto las casas nobles Ustilesas como los príncipes mercantiles Tapetíes prefieren la paz por encima de la guerra.
-
-## Tierras Élficas
-
-Los elfos son la única raza no-humana admirada y respetada por los Ustileses, quienes ven a este pueblo inmortal como seres que representan las mejores cualidades de la humanidad. Los Ustileses han firmado varios tratados de protección con las comunas élficas vecinas, convirtiéndolas en protectorados del Imperio con el fin de extender su influencia por el centro del continente. Aunque a los Feynistas más intransigentes les desagrada el trato preferencial que tienen los elfos en el Imperio, los buenos vínculos entre los elfos y la nobleza ustilesa garantiza su posición privilegiada en un Imperio dominado por humanos.

@@ -82,12 +82,46 @@ Golpeas a un enemigo de tal manera para que se mueva a una mala posición y qued
 
 ### Romper ladrillos
 
+**Coste:** 2 vigor
+
+Su siguiente ataque inflige +2d6 daño y rompe la armadura del objetivo. Si usa armas como Parada la rompe también y elimina un contador de escudo
+
 ### Patada salto alta
+
+**Coste:** 2 vigor
+
+Antes de atacar salta dos pasos en el aire y su ataque inflige +2d6 daño al impactar. Enemigos voladores tienen Desventaja defendiéndose y al impactarlos los estampa contra el suelo. Si falla sufre 2d6 daño de caída
 
 ### Combinar técnicas
 
+Tras impactar con un ataque hace un ataque adicional de Estilo Dragón como acción bonus. No puede usar esta habilidad en ataques que no cuesten acciones
+
+## Rango IV
+
+### Danza del Dragón
+
+Obtiene Ventaja en todos sus tiros de Artes Marciales y sus ataques aumentan su alcance a cercano. Obtiene contadores de escudo iguales a su Rango.
+
+### Golpe Oculto
+
+En respuesta a que un enemigo evite un ataque hace un segundo golpe con Ventaja y las mismas propiedades que el anterior. Esto funciona incluso con habilidades de esquiva automática y se mueve un paso si fuera necesario.
+
+### Control del Chi Interior
+
+Puede aguantar el doble de tiempo sin comer, dormir o respirar. Recibe Resistencia a efectos Mentales, Ilusiones, Aflicciones y Miedo. (1 chi) 1/Ronda, se libera de un efecto Mental, Aflicción, Miedo o herida permanente que no sea grave
+
 ## Rango V
 
-### Furia del dragón
+### Patada decapitadora
+
+Su siguiente ataque inflige +3d6 daño, una herida media y el afectado tira CON o cae inconsciente. Si reduce a 0 PV mata instantáneamente
+
+### Patada torbellino
+
+Ataca a cada enemigo a distancia media infligiendo +3d6 daño y forzando a los afectados a tirar CON o caen aturdidos una ronda
+
+### Ascensión del Dragón
+
+Vuela dos pasos y hace dos ataques seguidos contra un enemigo quien solo tirará una vez para defenderse y sufre +2d6 daño si le impacta con ambos. Puede atacar a enemigos voladores hasta que acabe la ronda, quienes tendrán Desventaja defendiéndose
 
 ## Rango VI
