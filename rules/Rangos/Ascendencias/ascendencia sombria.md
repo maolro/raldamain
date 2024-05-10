@@ -147,7 +147,7 @@ Incrementa tu estadística de CON y su limitador por 1.
 
 **Duración:** Seis rondas
 
-Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu camino. Al activar Tirano Sombrío recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Tirano Sombrío por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Tirano Sombrío te otorgará los siguientes beneficios:
+Adoptas la forma de un tirano sombrío, convirtiéndote en la peor de las pesadillas para aquellos lo suficientemente desgraciados como para encontrarse en tu camino. Al activar Tirano Sombrío recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Tirano Sombrío por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Tirano Sombrío te otorgará los siguientes beneficios:
 
 - Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Necróticos, Aflicciones, Frío, Miedo y de Toque. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
