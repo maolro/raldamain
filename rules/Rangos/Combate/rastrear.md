@@ -33,7 +33,7 @@ Observas con atención los movimientos y la forma de combatir de un enemigo para
 
 **Duración:** Instantáneo
 
-Has desarrollado la capacidad de aplicar primeros auxilios en situaciones de vida o muerte hasta el punto que puedes sanar graves heridas por instinto. Una criatura que puedas tocar recupera Vitalidad igual a tu Rango + 2 y reduce la gravedad de una *herida permanente* o Aflicciónque le esté afectando por un paso. Para emplear esta habilidad necesitas tener materiales adecuados para curar, como pueden ser vendas o desinfectantes.
+Has desarrollado la capacidad de aplicar primeros auxilios en situaciones de vida o muerte hasta el punto que puedes sanar graves heridas por instinto. Una criatura que puedas tocar recupera Vitalidad igual a tu Rango + 2 y reduce la gravedad de una *herida permanente* o Aflicción que le esté afectando por un paso. Para emplear esta habilidad necesitas tener materiales adecuados para curar, como pueden ser vendas o desinfectantes.
 
 ## Rango II
 
