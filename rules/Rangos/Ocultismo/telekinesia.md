@@ -88,7 +88,7 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 *Telequinesia, Sanación, Toque*
 
-**Coste: **2 acciones y 1 chi
+**Coste:** 2 acciones y 1 chi
 
 **Alcance:** Cuerpo a cuerpo
 
@@ -144,7 +144,7 @@ Un arma levitará en el aire y actuará como una extensión de tu cuerpo, atacan
 
 Este hechizo permanecerá activo hasta que pierdas la concentración o el arma sea destruida. Si conoces técnicas de combate puedes aplicarlas en el arma danzante pagando chi en lugar de vigor y empleando tu bonificador de Telekineisia en lugar del que usarías normalmente. El arma también te protegerá de ataques enemigos que pueda detener, pudiendo así repetir todos los tiros de Parada que realices contra ataques Físicos que pueda bloquear el arma y quedarte con el mejor resultado.
 
-**Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simu
+**Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simultáneamente. 
 
 ### Refuerzo telequinético
 
