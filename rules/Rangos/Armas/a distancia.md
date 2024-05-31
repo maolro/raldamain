@@ -94,7 +94,7 @@ Disparas con la precisión de un francotirador para eliminar a enemigos cada vez
 
 *A distancia, Pasiva*
 
-Puede usar su tiro de armas A distancia para defenderse de ataques a la vez que esquiva y quedarse con el resultado que más le convenga
+Con agiles movimientos puedes disparar eficazmente mientras realizas maniobras evasivas contra aquellos que traten de acercársete, colocando distancia y plomo entre tú y tus atacantes. De esta manera al hacer tiros de esquiva para defenderte de ataques enemigos podrás también hacer un tiro con armas A distancia, quedándote con el resultado mas conveniente. 
 
 ### Combinar técnicas
 
@@ -112,7 +112,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 **Coste:** 2 vigor
 
-1/Acción enemiga, Hace un ataque de arma que interrumpe una acción enemiga al impactar, malgastando sus acciones y reservas
+Con rápidos reflejos y una impresionante habilidad con el gatillo eres capaz de actuar antes que nadie, incluso cuando parece que tienen la ventaja. De esta manera, una vez por acción enemiga, podrás hacer un ataque en respuesta a que un enemigo tome cualquier acción. En caso de que el ataque sea exitoso el enemigo verá su acción interrumpida, perdiendo también las acciones y reserva que hubiese empleado para ella. 
 
 ### Disparo impredecible
 
@@ -126,26 +126,45 @@ Las únicas habilidades que podrán detenerlo son aquellas que otorguen cubierta
 
 ### Disparo penetrante
 
-Su siguiente ataque inflige +2d6 daño, ignora la DEF por armaduras que tenga el objetivo y elimina un contador de escudo. Puede acumularse con ojo del francotirador pagando +1 vigor.
+*A distancia, Mejora*
+
+**Coste:** 2 vigor
+
+Ejecutas un disparo impecable y preciso capaz de impactar en los puntos mas vulnerables de tu enemigo. De esta manera tu siguiente ataque infligirá +2d6 daño, además de ignorar la defensa por armaduras que tenga tu objetivo y eliminar uno de sus contadores de escudo. 
+
+**Empoderar (1 vigor):** El próximo disparo mejorado con esta habilidad se acumulará además con los efectos de *Ojo del francotirador*.
 
 ## Rango V
 
 ### Disparo ejecutor
 
+*A distancia, Mejora*
+
 **Coste:** 3 vigor
 
-+3d6 daño, herida grave y mata si reduce a 0 PV
+Eres capaz de realizar los disparos mas mortales y precisos, habiendo pocos que puedan rivalizar con tu dominio de tu arma y acabando con quien sea tu objetico con un solo movimiento fulminante. Tu siguiente ataque infligirá +3d6 daño, provocándole además una herida permanente grave. En el caso de que este daño reduzca los PV del objetivo a 0 morirá instantáneamente.
 
 ### Puntería experta
 
-Apuntar le cuesta una acción bonus y 1/ronda puede repetir un ataque y quedarse con el mejor resultado.
+*A distancia, Pasiva*
+
+Apuntar se ha vuelto ahora una parte de ti, algo en lo que ya no tienes ni siquiera que pensar para poder hacerlo, casi como si tu arma fuese una extensión de ti. Por ello ahora *Apuntar* contará como una acción bonus, además de que una vez por ronda podrás repetir un tiro con Armas a distancia que hagas, quedándote con el resultado mas conveniente. 
 
 ### Lluvia de plomo
 
-Tras atacar hace dos ataques de arma contra el mismo objetivo contra los cuales tirará solo una vez para defenderse. Cada ataque consecutivo tiene +1 al tiro de ataque y +1 daño. Paga +1 Vigor si es un arma de recarga
+*Reacción*
+
+**Coste:** 3 vigor
+
+Eres capaz de desatar una implacable lluvia de proyectiles sobre tus oponentes sin despeinarte, convirtiéndolos en un colador antes de que siquiera tengan tiempo de actuar. Tras atacar con tu arma podrás realizar dos ataques adicionales contra el mismo objetivo, para los que tendrá que emplear un único tiro de defensa. Debido a la dificultad de evitar los múltiples ataques cada ataque consecutivo contará con un bonificador +1 al tiro y al daño. 
+
+Sin embargo, en caso de que el arma se trate de una con la característica *recarga* esta habilidad aumentará su costo de vigor en 1. 
 
 ## Rango VI
 
 ### Maestría con armas a distancia
 
-Aprendes tres técnicas de cualquier rama de Rango IV o menos. Pueden cambiarse en cada d
+Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. 
+
+Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
+
