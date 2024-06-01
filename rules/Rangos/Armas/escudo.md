@@ -98,9 +98,7 @@ Daño mejorado y aturde al impactar
 
 Resistencia a maniobras y puede hacer ataques contra enemigos que entren en su área amenazada
 
-**Guardián:** Al entrar en *posición defensiva* reduce todo el daño recibido por 2 y recibes inmunidad a flanqueo y ataques sorpresa.
 
-**Mantener posición:** La primera vez que una criatura entre en un espacio adyacente a ti mientras te encuentres en posición defensiva podrás hacerle un ataque de oportunidad con tu escudo y detenerlo al impactar.
 
 ## Rango V
 

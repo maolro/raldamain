@@ -77,13 +77,11 @@ Aumenta tu estadística de INT y su limitador por 1.
 
 *Innata, Miedo, Duradera*
 
+Ventaja en todos sus tiros relacionados con su estadística de CAR y sus hechizos de Magia Mental son indetectables. Ignora las resistencias mentales de aquellos que no sean directamente hostiles
+
 ### Cadenas del contrato
 
 Formar pacto de vida con hasta dos otras criaturas para transferirle daño.
-
-**Ataques profanos**: Tus armas y ataques naturales están infundidos del poder del infierno. Infliges +1d6 daño de energía con tus ataques físicos y todas las heridas permanentes que provoques son consideradas como profanas, las cuales cuestan 1 chi adicional para sanar mágicamente. Si usas la habilidad *arma profana* el daño se acumula y todas tus heridas permanentes aumentan su efectividad por un paso.
-
-**Visión infernal:** Eres capaz de ver sin dificultades en oscuridad mágica y no-mágica además que eres capaz de usar la habilidad *leer pensamientos* de manera pasiva sin la necesidad de gastar chi. Puedes también identificar los deseos de otra criatura empleando 2 acciones y teniendo éxito en un tiro de INT modificado por tu rango contra la sabiduría del objetivo. Si fracasas en este tiro no podrás volver a usarla en la misma persona durante un día salvo que gastes 1 chi.
 
 ## Rango  V
 
@@ -95,27 +93,7 @@ Aprendes dos hechizos de Rango III o menos relacionados con tu patrón infernal 
 
 A través de un siniestro ritual corrompes tu alma para adoptar las características de un demonio. Obtienes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a efectos Mentales, Aflicciones, Fuego, Hielo y Miedo. Eres también capaz de comunicarte con criaturas infernales de todo tipo y las de menor nivel te obedecerán sin rechistar. 
 
-### Puertas del infierno
 
-*Innata, Ambiental*
-
-**Coste:** 3 acciones y 3 chi o vigor
-
-**Tamaño:** Radio grande
-
-**Duración:** Seis rondas
-
-Este hechizo afectará una zona de tamaño igual a un radio grande y mientras permanezca activo todo el terreno que ocupe se convertirá en Tierra consagrada para los adoradores de los espíritus. Portal espiritual durará seis rondas o hasta que sea eliminado por otros efectos de similar magnitud.
-
-El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el mundo de los espíritus debido a este hechizo volverá al plano material.
-
-Debido a las diferencias temporales toda persona que se encuentre en el plano espiritual recibirá efectivamente tres acciones adicionales respecto a aquellos que estén en el plano material. El plano espiritual se solapará exactamente con el material debido a este hechizo, haciendo así que las distancias entre ambas sean iguales
-
-**Empoderar** (1 chi o vigor): Cambias de plano como reacción para evitar un ataque enemigo. Esto cuenta como un efecto Espacial.
-
-**Blasfemia:** Tus hechizos mentales e ilusorios son capaces de traspasar la resistencia a efectos mentales que tengan tus objetivos, tratándola como si no tuviesen. Esto no funcionará contra criaturas con *mente en blanco* o efectos equivalentes que les otorguen resistencias. (1 chi) Pronuncias una horripilante blasfemia al usar un hechizo, forzando a todos los objetivos que puedan escucharte deberán escoger entre quedarse *ensordecidos* durante una ronda o reducir su cordura por un valor igual al rango del hechizo. 
-
-**Presencia dominante** (2 chi): Tomas un aspecto majestuoso que te permite hacer un ataque mental con bonificador igual a la suma de tu INT y tu rango en ascendencia infernal contra todas las criaturas que te perciban, las cuales se defenderán con su SAB. Aquellas que fracasen quedarán *espantadas* durante una ronda y volverán a ser afectadas al principio de su turno si pueden percibirte. Este efecto durará mientras mantengas la concentración en él. (1 chi) Una criatura que tenga activo uno de tus efectos mentales fallará automáticamente uno de sus ataques, perdiendo la voluntad de herirte.
 
 ## Rango VI
 
@@ -137,64 +115,3 @@ Te fusionas con un demonio poderoso para mejorar notablemente tu fuerza y podere
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia infernal no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
-
-**Puertas del infierno** (3 acciones y 5 chi): Abres un portal al mismo infierno durante 10 rondas que convierte toda la tierra a una distancia media en *tierra consagrada*. Cada ronda obtienes 1 punto de invocación y como acción bonus puedes gastar x puntos de invocación para invocar a una criatura celestial con x-1 mejoras. Además, todo el área cercano al portal se llena de un calor abrasador que infligirá una quemadura leve a todas las criaturas que empiecen su turno ahí.
-
-# Criaturas infernales
-
-## Base
-
-**Estadísticas base:** 5,4,3,2,1,0
-
-**PV:** 4 + CON
-
-**Vitalidad:** 8 + CON
-
-**Defensa**: 4 (armadura natural)
-
-**Resistencias:** daño físico 4, magia 4, cualquier elemento 6
-
-**Inmunidades:** veneno, enfermedades, efectos mentales, necrótico
-
-**Movimiento:** Base 1
-
-**Acciones:** 4
-
-**Rangos:** Tiene rango I en un arma de tu elección
-
-**Habilidades:**
-
-- *Arma profana:* Sus ataques físicos infligen +1d6 daño de cualquier elemento y las heridas permanentes provocadas requieren 1 chi adicional para sanar.
-- *Visión infernal*: Puede ver sin problemas en oscuridad mágica y no-mágica
-- *Magia innata:* Tiene una reserva de 3 chi que puede usar para lanzar dos hechizos de rango I. Empleará como bonificador su CAR modificada por su nivel de mejora + 1.
-- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
-
-## Mejora 1
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-- Recibe un rango adicional en un arma
-- Obtiene velocidad de vuelo 1 y ventaja en sus tiros de ataque y defensa contra criaturas incapaces de volar
-- Aumenta su resistencia al daño físico y a la magia por 2
-- Aprende un hechizo nuevo de rango II o menos y aumenta su reserva de chi por 2.
-- Obtiene esta nueva habilidad:
-  - *Defensor:* Si está adyacente a otra criatura puede usar parada como reacción para defender cualquier ataque hecho hacia él y recibir el daño que este inflija
-
-## Mejora 2
-
-- Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 7)
-- Recibe un rango adicional en un arma
-- Aumenta su cantidad de acciones por 1
-- Obtiene resistencia 6 contra un tipo de daño de energía de tu elección
-- Aprende un nuevo hechizo de rango III y aumenta su reserva de chi por 2.
-- Obtiene esta nueva habilidad
-  - *Presencia dominante:* Cada criatura que empiece su turno percibiendole deberá tener éxito en un tiro de CAR frente a un valor igual a su CAR + mejora x 2 o estará *espantada* durante una ronda (si ya lo está aumenta su nivel de miedo por un paso). Este efecto se perderá cuando la criatura infernal pierda PV.
-  - *Mente vinculada*: Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes
-
-## Mejora 3
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-- Recibe un rango adicional en dos armas diferentes
-- Aumenta todas sus resistencias por 2
-- Aprende un nuevo hechizo de rango IV y aumenta su reserva de chi por 2.
-- Obtiene esta nueva habilidad
-  - *Aura divina:* Otorga los beneficios de *aura divina* a su invocador si se encuentra a distancia cercana, aumentando su resistencia al daño físico y la magia por 4 además de volverla inmune a la posesión y permitiéndole resucitar a 1 PV la primera vez que muera.
