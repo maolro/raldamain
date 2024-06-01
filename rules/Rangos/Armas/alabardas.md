@@ -104,70 +104,110 @@ Atacas a un enemigo con la parte trasera de tu arma para descolocar sus defensas
 
 ### Lanzazo saltarín
 
+*Alabarda, Mejora*
+
 **Coste:** 2 vigor
 
-Salta un paso, inflige +2d6 daño y vuelve a su posición anterior. No provoca ataques de oportunidad ni se pueden usar ataques cargados.
+Con movimientos agiles y precisos eres capaz de atacar a tu objetivo y retirarte antes siquiera de que tenga tiempo para reaccionar. De esta manera podrás atacar a un objetivo que se encuentre a un paso de distancia de ti, saltando en su dirección y provocando +2d6 daño al impactar. Tras realizar la maniobra podrás volver de un salto nuevamente a tu posición anterior, desplazándote nuevamente ignorando ataques de oportunidad. Sin embargo debido a la agilidad y flexibilidad que requiere esta maniobra no se podrá usar en conjunto con ataques cargados de ningún tipo.
 
 ### Danza del Alabarda
 
+*Alabarda, Duradera, Defensiva*
+
 **Coste:** 2 vigor
 
-Entra en un estado donde recibe Ventaja en todos sus tiros de ataque y defensa relacionados con Alabardas. Está siempre en estado Preparación contra Cargas y puede detener ataques a distancia con el alabarda.
+Aumentando tu concentración y colocándote de la forma adecuada puedes dificultar a todo aquel que se te acerque el salir impune con los movimientos mas mínimos, moviéndolos al son de tu propia música. De esta manera al activarse recibirás ventaja en todos tus tiros de ataque y defensa relacionados con *Alabardas*. 
+
+Así mismo siempre contarás como si estuvieras en *Preparación contra cargas*, además de que podrás defenderte de ataques a distancia con tu arma siempre que estos vayan a la velocidad adecuada. 
 
 ### Combinar técnicas
 
-Tras impactar con un ataque hace un ataque adicional de Alabardas como acción bonus. No puede usar esta habilidad en ataques que no cuesten acciones
+*Reacción*
+
+**Coste:** 2 vigor
+
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un gasto de acciones.
 
 ## Rango IV
 
 ### Lanzazo aéreo
 
+*Alabarda, Mejora* 
+
 **Coste:** 2 vigor
 
-Salta un paso en vertical y ataca, infligiendo +2d6 daño y lanzando al suelo. Los enemigos voladores tienen Desventaja defendiéndose.
+Con movimientos agiles y ligeros eres capaz de saltar a una buena altura, aprovechando la inercia para maniobrar brevemente en el aire y asestar un potente ataque a un objetivo que se encuentre en el aire. De esta manera podrás saltar un paso en vertical y realizar un ataque que al impactar infligirá +2d6 daño adicional y arrojará a tu objetivo al suelo, dejándolo *tropezado*. En el caso de que tu objetivo sea uno volador este tendrá además desventaja defendiendose de este ataque. 
 
 ### Estocada serpenteante
 
+*Alabarda, Mejora*
+
 **Coste:** 2 vigor
 
-Su siguiente ataque no puede ser detenido por muros u otras habilidades que permitan evitar ataques
+Con rapidos y fluidos movimientos eres capaz de mover tu alabarda de maneras impredecibles, anticipandote incluso a los enemigos mas esquivos. De esta manera tu proximo ataque no podrá ser detenido por reacciones defensivas enemigas tales como muros, u otras que permitan evitar ataques. 
 
 ### Atravesar defensas
 
+*Alabarda, Mejora*
+
 **Coste:** 2 vigor
 
-Su siguiente ataque inflige +2d6 daño, provoca herida leve e ignora la defensa otorgada por armaduras que tenga el objetivo. Hace falta un contador de escudo adicional para detener este ataque
+Con un furioso ataque concentras toda tu fuerza en la punta de tu arma, perforando cualquier defensa que el enemigo trate de poner entre él y tú casi como si fuera un taladro. De esta manera el próximo ataque que hagas infligirá +2d6 daño adicional, además de que provocará una herida permanente leve, ignorando toda la defensa otorgada por armaduras que tu objetivo pueda tener. 
+
+En el caso de que tu objetivo trate de defenderse empleando contadores de escudo tendrá que emplear uno adicional para poder detener este ataque.   
 
 ## Rango V
 
 ### Lanzazo devastador
 
+*Alabarda, Mejora*
+
 **Coste:** 3 vigor
 
-Ataca a todos los enemigos en una línea media, infligiendo +3d6 daño y una herida leve. Clava a cada enemigo que impacte en una brocheta. Solo armas perforantes
+Propinas un poderoso ataque capaz de abrirse paso a través de cualquier obstáculo, incluso aunque ese obstáculo sean tus enemigos. De esta manera tu próximo ataque infligirá +3d6 daño adicional además de una herida permanente leve. Además, cada enemigo al que impacte quedará perdorado por la lanza, dejándolos así a todos clavados en tu arma. 
+
+Esta técnica sin embargo solamente podrá emplearse en armas que provoquen daño perforante. 
 
 ### Abanico de acero
 
+*Alabarda, Mejora*
+
 **Coste:** 3 vigor
 
-Ataca a cada enemigo a distancia media infligiendo +3d6 daño, +1 nivel herida y empuja un paso hacia atrás. Solo armas cortantes.
+Haciendo un arco abierto con tu arma eres capaz de propinar un enorme corte cercenador que amenazará con herir de gravedad a cualquier enemigo que se encuentre en su camino. De esta manera tu próximo ataque afectará a todos los enemigos que se encuentren a distancia media, infligiendoles +3d6 daño adicional. Este ataque además aumentará el nivel de las heridas permanentes provocadas en 1 paso, además de empujar a los afectados un paso hacia atrás. 
+
+Esta técnica sin embargo solamente podrá emplearse en armas que provoquen daño cortante. 
 
 ### Tornado de madera
 
+*Alabarda, Mejora* 
+
 **Coste:** 3 vigor
 
-Ataca a cada enemigo a distancia corta infligiendo +3d6 daño, +1 nivel herida y tiran CON o aturdidos una ronda. Solo armas contundentes
+Realizando un ataque circular de corto rango eres capaz de propinar un poderoso impacto a tantos como tengas cerca, poniendo en grave peligro su equilibrio y su consciencia, si es que llegas a impactarles. De esta manera tu próximo ataque afectará a todos los enemigos que se encuentren a distancia corta, infligiendoles +3d6 daño adicional. Este ataque además aumentará el nivel de todas las heridas permanentes provocadas en 1 paso, y todos aquellos que sean impactados deberán tirar constitución contra tu modificador de alabardas o quedarán aturdidos una ronda. 
+
+Esta técnica sin embargo solamente podrá emplearse en armas que provoquen daño contundente. 
 
 ### Extensión de tu cuerpo
 
-Mientras lleves tu arma tienes velocidad de salto 1, Inmunidad a terreno difícil y Resistencia a Maniobras y daño de caídas. No necesitas estar en posición defensiva para recibir los beneficios de Ajustar Alcance.
+*Alabarda, Pasiva*
+
+Mientras poseas tu leal arma serás capaz de moverte de maneras inimaginables, maniobrando agilmente por el terreno como si fuese una extensión de tu propio cuerpo. De esta forma mientras cuentes con tu arma aumentarás tu velocidad de salto por un paso, recibirás inmunidad a terreno difícil y resistencia tanto a *maniobras* como al daño de caída. Además ya no necesitarás estar en posición defensiva para recibir los beneficios de *Ajustar alcance*.
 
 ### Lanzazos en cadena
 
+*Alabarda, Mejora*
+
 **Coste:** 3 vigor
 
-Tras impactar con su ataque se mueve un paso sin provocar ataques de oportunidad y ataca a otro enemigo que alcance. Sigue así hasta que ataque a todos los enemigos o fa
+Moviendo rapidamente y de forma precisa tu arma eres capaz de asestar ataques a multiples enemigos sin que estos tengan la oportunidad de defenderse. De esta manera tras impactar con tu ataque podrás moverte un paso sin provocar ataques de oportunidad y atacar a otro enemigo que se encuentre en tu alcance. 
+
+Esta cadena de ataques se mantendrá hasta que ya no queden enemigos nuevos a los que golpear dentro de tu alcance o hasta que falles tu ataque.
 
 ## Rango VI
 
 ### Maestría con Alabardas
+
+Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. 
+
+Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
