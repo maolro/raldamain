@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos monstruosos
 
 ## Corrupción fúngica (+2)
 
