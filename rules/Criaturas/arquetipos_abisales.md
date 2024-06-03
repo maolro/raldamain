@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos abisales
 
 ## Origen abisal (+2)
 

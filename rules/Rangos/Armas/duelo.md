@@ -153,16 +153,32 @@ Este ataque ignorará la DEF otorgada por armaduras que no sean completas y har�
 
 ### Golpe de gracia
 
-Su siguiente ataque inflige +3d6 daño, una herida grave e ignora la DEF otorgada por armaduras que tenga. Mata instantáneamente si reduce a 0 PV
+*Duelo, Mejora* 
+
+**Coste:** 3 vigor
+
+Con un rápido y preciso movimiento rematas a tu oponente, empleando los mínimos movimientos para lograr el máximo resultado. De esta manera tu próximo ataque infligirá 3d6 daño adicional, además de una herida permanente grave. Además, este ataque ignorará la defensa otorgada por armaduras, y si llega a reducir a tu objetivo a 0 PV, lo matará instantáneamente. 
 
 ### Cortes en cadena
 
-Tras impactar desengancha, salta un paso y ataca a un nuevo enemigo. Sigue repitiendo este ataque hasta que falle o impacte a todos los enemigos en el campo de batalla
+*Duelo, Mejora*
+
+**Coste:** 3 vigor
+
+Con rápidos y gráciles movimientos eres capaz de asestar una lluvia de veloces cortes y estocadas, abriéndote paso a través de todos tus enemigos. De esta manera tras impactar con tu siguiente golpe podrás desenganchar y moverte un paso, atacando a un enemigo que se encuentre en tu alcance en esa posición. Podrás seguir golpeando enemigos de este modo hasta que alguno de tus ataques falle o ya no queden enemigos nuevos a los que golpear. 
 
 ### Secuencia de ataques
 
-Hace dos ataques contra el mismo objetivo tras atacar, forzándole a usar el mismo resultado defensivo. Recibe +1 en su tiro de ataque y daño con cada ataque consecutivo y puede emplear una acción adicional para 
+*Duelo, Reacción*
+
+**Coste:** 3 vigor
+
+Eres capaz de aprovechar las mas mínimas brechas para sobrepasar a tus rivales, llevándolos al límite antes de dar el golpe final. De esta manera en respuesta a impactar con un ataque puedes hacer dos ataques adicionales contra él, de los que tendrá que defenderse empleando el mismo tiro defensivo. Cada uno de estos ataques adicionales recibirá un bonificador +1 al tiro de ataque y de daño por cada ataque consecutivo que el objetivo reciba. 
 
 ## Rango VI
 
 ### Maestro espadachín
+
+Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. 
+
+Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 

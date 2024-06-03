@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos infernales
 
 ## Origen demoníaco (+2)
 

@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos celestiales
 
 ## Cuerpo luminoso (+2)
 
