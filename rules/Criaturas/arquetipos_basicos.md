@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos básicos
 
 ## Bestia (+2)
 

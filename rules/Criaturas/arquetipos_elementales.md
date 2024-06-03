@@ -1,8 +1,8 @@
-# Arquetipos
+# Arquetipos elementales
 
 ## Cuerpo ácido (+2)
 
-La criatura está compuesta de ácido corrositvo, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
+La criatura está compuesta de ácido corrosivo, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
 
 - Su cuerpo se transforma en líquido, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Ácido a costa de recibir Vulnerabilidad a efectos de Hielo y Agua.
 - Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Ácido.

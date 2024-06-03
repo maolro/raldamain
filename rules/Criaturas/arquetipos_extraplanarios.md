@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos extraplanarios
 
 ## Espectro (+2)
 
