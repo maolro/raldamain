@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos constructos
 
 ## Constructo (+2)
 

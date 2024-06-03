@@ -1,4 +1,4 @@
-# Arquetipos
+# Arquetipos espirituales
 
 ## Espiritual (+2)
 
