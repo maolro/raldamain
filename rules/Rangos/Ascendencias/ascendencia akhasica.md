@@ -119,4 +119,17 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 ### Árbitro del destino
 
-**Conocer el destino**: Has vislumbrado tu destino en la memoria akhásica, conociendo el momento predestinado de tu muerte. Los detalles de este momento deberán ser discutidos con el máster y recibir su consentimiento. Cualquier vez que mueras por una causa que no esté relacionada con tu muerte predestinada sobrevivirás milagrosamente, permaneciendo sólo a 0 PV y recibiendo una herida permanente grave en su lugar. Una vez al día cuando te encuentres en una situación peligrosa puedes invocar la fuerza del destino para librarte de ella, lo cual causará un efecto similar a [intervención divina](https://raldamain.com/rules/Rangos/Religi%C3%B3n/guerrero%20divino.html#rango-v). No obstante, si actúas de una manera demasiado temeraria o arrogante el máster te puede castigar adelantando tu fecha de muerte a un momento más cercano.
+*Innata, Mejora*
+
+**Coste:** 3 acciones y 5 chi
+
+**Duración:** 6 rondas
+
+Adoptar la forma de un avatar del destino, un enviado de la mismísimas memoria Akhashika, con tal de reestablecer el orden de las cosas en el mundo. De esta forma recibirás 40 vitalidad temporal, además de grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin vitalidad no podrá volver a activarse hasta que hayan pasado 6 rondas desde el momento en el que la habilidad se activó en primer lugar. Los demás beneficios de Árbitro del destino serían los siguientes:
+
++ Tu Inteligencia, Sabiduría y Carisma pasan a ser 12, mientras que tu defensa pasará a ser 20. 
++ Activas automáticamente los beneficios de *Fortaleza del pensamiento*, además de recibir ventaja en todos tus tiros que involucren estadísticas mentales y de aumentar el daño de todos tus hechizos arcanos por un dado. 
++ Los hechizos que hayas recibido por la ascendencia no costarán reserva para ser lanzados, pese a que aún deberá pagarse reserva para poder empoderarlos.
++ Cada ronda podrás entrar en posición defensiva como acción bonus. 
++ Recibes seis contadores de escudo que puedes emplear para reducir el daño de ataques. Estos contadores no pueden reponerse ni se acumulan con otras habilidades. 
++ Así mismo obtendrás la capacidad de hacer uso de 6 hechizos adicionales de rango IV o menos. 
