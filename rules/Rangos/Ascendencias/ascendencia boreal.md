@@ -125,3 +125,18 @@ Incrementa tu estadística de DES y su limitador por 1.
 
 ### Forma elemental
 
+*Innata, Mejora*
+
+**Coste:** 3 acciones y 5 chi/vigor
+
+**Duración:** 6 rondas
+
+Te transformas en una enorme criatura compuesta por hielo y ventiscas gélidas, trayendo una glaciación estigia a las regiones en las que manifiestes tu autentica forma. De esta forma al activar Forma elemental recibirás 40 vida temporal, además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta perder la vitalidad temporal. En el caso de perder los beneficios de Forma elemental por quedarse sin vitalidad temporal no podrá volver a activarse hasta que hayan pasado seis rondas desde el momento en el que esta habilidad fue activada. El resto de beneficios de Forma elemental son los siguientes.
+
++ Tu Fuerza, Constitución y Sabiduría pasarán a ser 12, mientras que tu defensa pasará a ser 20.
++ Activas automáticamente los beneficios de *Manto nevado*, *Armadura de hielo* y *Poder del invierno*. 
++ Tus ataques físicos infligirán 1d10+ Rango daño frío al impactar, además de que tus hechizos de hielo provocarán un dado de daño adicional. 
++ Los hechizos obtenidos por la ascendencia no costarán reserva para ser lanzados, pese a que aún se requerirá reserva para empoderarlos. 
++ Tu entorno contará como si estuviese afectado por una tormenta de nieve. 
++ Una vez por ronda puedes entrar en posición defensiva como acción bonus. 
+
