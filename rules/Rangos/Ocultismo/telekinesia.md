@@ -146,13 +146,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración o el arma s
 
 **Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simultáneamente. 
 
-### Refuerzo telequinético
 
-*Telekinesia, Mejora*
-
-**Coste:** 2 acciones y 2 chi
-
-**Almacenar objetos** (2 AP y 2 chi, Telekinesia, Concentración, Defensivo): Levantas una cantidad de objetos igual a tu rango. Puedes gastar un objeto como acción bonus usable una vez al turno para detener un ataque que haya impactado o hacer un ataque de *manipulación telequinética.* Esta habilidad permanecerá activa mientras mantengas el campo y para recuperar un objeto debes emplear 1 AP.
 
 ## Rango IV
 
