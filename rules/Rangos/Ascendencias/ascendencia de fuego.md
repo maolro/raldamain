@@ -133,6 +133,8 @@ Incrementa tu estadística de CON y su limitador por 1.
 
 ### Forma elemental
 
+*Innata, Mejora* 
+
 **Coste:** 3 acciones y 5 chi o vigor
 
 **Duración:** Seis rondas

@@ -131,16 +131,19 @@ Aumenta tu estadística de CON y su limitador por 1.
 
 ### Forma elemental
 
-Forma tocha
+*Innata, Mejora*
 
-**Forma elemental** (3 AP y 5 chi): Adoptas la forma de un poderoso elemental de agua, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+**Coste:** 3 acciones y 5 reserva
 
-- Recibes inmunidad al daño no-mágico, veneno, efectos mentales y cualquier tiro de FUE cuya fuente sea física (Magia gravitatoria, magia de agua y telekinesia son excepciones),
-- Tu resistencia mágica y tu resistencia al fuego pasan a ser 14. Tus estadísticas de DES, FUE y CON pasan a ser 13. Recibes también nivel de talento 5 en heroísmo.
-- Te regeneras 4 Vitalidad al principio de tu turno y cada vez que pases por una superficie de agua puedes emplear la habilidad *controlar el agua* sin la necesidad de emplear acciones o chi además que obtendrás velocidad de vuelo 1.
-- Puedes emplear el hechizo *torrente* empleando 1 AP con bonificador de ataque +15 y provocando 1d10 + 8 daño contundente al impactar. Empleando una acción adicional puedes mejorar el ataque para realizar un hechizo entre *prisión de agua*, *taladro de agua* o *escaldar*. También eres capaz de emplear el hechizo *vórtice* gastando 3 AP con recarga 5-6. Ninguno de estos hechizos requerirá un gasto de chi
-- Recibes parada de agua con bonificador +15 y puedes usar *muro de agua* una vez por ronda reacción para detener un ataque (esto se acumula con el hechizo base)
-- Empleando 1 AP puedes congelar partes de tu cuerpo para recibir resistencia 20 al daño físico hasta final de turno a costa de perder tu inmunidad al daño no-mágico y recibir vulnerabilidad al fuego. Deshacer esta habilidad también cuesta 1 AP.
+**Duración:** 6 rondas
+
+Haciendo de las mareas una extensión de tu cuerpo convocas los desastres marinos para que formen el contorno de tu cuerpo y te permitan despertar tu linaje. De esta manera al activar forma elemental recibirás 40 vitalidad temporal, cesando esta habilidad en el momento en el que se agote. En el caso de perder la habilidad por acabarse toda la vitalidad temporal entonces no podrá volver a activarse hasta transcurridas 6 rondas desde el momento en el que se usó inicialmente. Adicionalmente mientras forma elemental esté activa también tendrás los siguientes beneficios. 
+
+- Tu fuerza, destreza y constitución pasan a ser 13, aumentando también defensa a 14. 
+- Puedes entrar en posición defensiva como acción bonus una vez por ronda, además de que contarás con 6 contadores de escudo que podrás usar para defenderte. 
+- Tus ataques pueden ser afectados por golpe hidráulico sin la necesidad de gastar reserva, pese que aún habrá que incurrir en el coste del hechizo en el caso de tenerlo. Así mismo tus hechizos elementales recibirán un dado de daño adicional.
+- Cuentas como constantemente rodeado por un muro de agua, teniendo también los beneficios de: columna de agua, flagelo de las corrientes y forma fluida. 
+- Los hechizos recibidos por la ascendencia no costarán reserva para ser lanzados, pese que aún será necesario emplearla para poder empoderarlos. 
 
 # Rangos míticos
 
