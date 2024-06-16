@@ -43,7 +43,7 @@ Has desarrollado un sentido especial que te permite detectar las vibraciones a t
 
 *Tierra, Mejora*
 
-Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Naturaleza, Arena o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
+Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Natur o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
 
 ## Rango III 
 
@@ -69,9 +69,7 @@ Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia fí
 
 **Duración:** Concentración
 
-**Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadura de piedra* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
-
-**Conexión elemental**: Si te encuentras en contacto con la tierra te regeneras 2 Vitalidad al principio de tu turno. Si realizas un descanso corto tocando tierra firme recuperas también todos tus PV.
+Levantas la tierra como si de una ola del mismísimo océano se tratase, arrasando con todo lo que se te ponga en tu camino con la fuerza de una estampida. Al crearse la ola esta permitirá a quien la surque moverse dos pasos por ronda como acción bonus, destruyendo todos los efectos ambientales que la ola atraviese. Así mismo cada enemigo en tu camino deberá defenderse contra tu modificador de ascendencia o sufrirá 1d8+sabiduría daño contundente y será empujado un paso. 
 
 ## Rango IV 
 
@@ -83,15 +81,13 @@ Incrementa tu estadística de FUE y su limitador por 1.
 
 **Coste:** 2 acciones y 2 chi
 
-### Georradar predictivo
+Adoptas la dureza de la roca, combinando tu cuerpo con ella para fortalecer tus ataques mas allá de los límites de los guerreros. De esta forma tus ataques físicos infligirán 1d8+rango daño contundente adicional y aumentarán su alcance por un paso. Además, si se emplea *Puños de tierra* en conjunto con esta habilidad tus ataques empujarán un paso al impactar, eliminando un contador de escudo y contando como un efecto de área. 
+
+**Inquebrantable como la roca**
 
 *Innata, Pasiva*
 
-
-
-**Ola de tierra** (2 AP y 1 chi): Manipulas la tierra para formar una gran ola bajo tus pies con la cual puedes moverte 2 pasos como acción bonus usable una vez por turno. La ola ignorará el terreno difícil y barrerá con todos los eectos en el suelo como *crecimiento acelerado*. Si hay criaturas en el camino de la ola puedes hacer un ataque de *artes marciales* o *lanzamiento* (si lo tienes) que empujará un paso al impactar. La ola acabará al principio de tu siguiente turno salvo que pagues 1 chi.
-
-**Ataques infundidos:** Tus ataques de *artes marciales* y armas contundentes cuentan como si estuvieran afectados por *material superior*. (1 chi) Un arma contundente consigue los efectos de *material superior*.
+Mientras estés en contacto con la tierra contarás con sus bendiciones para mantenerte en pie, nutriéndote de energía para sanar tu cuerpo a velocidades vertiginosas. De esta manera, mientras te mantengas en contacto con la tierra, podrás regenerar Rango+1 vitalidad al inicio de tu turno, o en su defecto reducir el nivel de una herida permanente por un paso. Así mismo la primera vez que caigas a 0 PV o por debajo retornarás una vez mas para seguir luchando, volviendo nuevamente a 1 PV.
 
 ## Rango V
 
@@ -99,21 +95,33 @@ Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un va
 
 ### Elemento del equilibrio
 
-**Elemento del equilibrio:** Obtienes resistencia contra venenos, daño fuego, frío y ácido igual a tu rango + 1. Incrementa también tus PV máximos por un valor igual a tu rango – 2.
+*Innata, Pasiva*
 
-**Georradar predictivo:** El alcance de tu georradar aumenta a lejano y tienes los beneficios de *visión futura* al luchar contra otras criaturas que estén en contacto con la tierra y puedas sentir con tu georradar.
+Te vuelves un recordatorio de la resistencia de la roca, resistiendo contra todo lo que los elementos te echen sin retroceder ni un paso. De esta manera recibirás resistencia a efectos de las categorías Arcano, Divino, Aflicción, Fuego, Frío, Sónico y Ácido.
+
+### Georradar predictivo
+
+*Innata, Pasiva*
+
+La tierra son tus dominios, y nada que esté en contacto con ella podrá escapar de tu control, dando la impresión a tus enemigos de que eres capaz de prever todos sus movimientos. De esta manera obtendrás ventaja en todos tus tiros de ataque, defensa y salvación siempre que te mantengas en contacto con ella. Así mismo, una vez por ronda, podrás repetir un tiro y quedarte con el resultado mas conveniente. 
 
 ## Rango VI
 
 Incrementa tu SAB por 1.
 
-**Campeón de los espíritus**: Duplicas tu esperanza de vida y recibes resistencia 4 contra venenos, enfermedades, maldiciones y efectos mentales. Los espíritus de tierra te obedecen.
+**Forma elemental** 
 
-**Forma elemental** (3 Acciones y 5 chi, Tierra, Concentración): Adoptas la forma de un poderoso elemental de tierra, aumentando temporalmente tu fuerza y recibiendo sus habilidades. Mientras esta habilidad permanezca activa recibirás 45 PV temporales y la habilidad cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+*Innata, Mejora*
 
-- Recibes inmunidad al veneno, efectos mentales, necrótico y efectos de toque. Tampoco puedes ser afectado por heridas permanentes si te encuentras en esta forma.
-- Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.
-- Aumenta tu regeneración por 2 y la habilidad *georradar* aumenta su alcance a grande. Cada vez que te muevas provocas los efectos de *ola de tierra*, eliminando así todo el terreno difícil y obstáculos en tu camino además que empujas a cada criatura en tu camino (+19 dificultad)
-- Puedes hacer ataques físicos cuerpo a cuerpo con tu forma elemental que tendrán bonificador +18 al tiro e infligirán 1d10 + 13 daño contundente al impactar. Puedes emplear una acción adicional para añadirle los efectos de *ataque poderoso* de la rama de armas contundentes como si tuvieras rango V o los de *abrazo de la tierra*. 
-- Eres capaz de emplear las habilidades *derrumbamiento*, *pilares de la tierra* o *tierra viva* sin la necesidad de gastar chi cada una con bonificador +18 para impactar y +13 al daño. Puedes también usar *muro de piedra* una vez por ronda para defenderte de un ataque sin la necesidad de gastar chi.
-- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico o un ataque de área con radio superior vuelve a reduce tu tiro por un punto adicional para deternerlo.
+**Coste:** 3 acciones y 5 reserva
+
+**Duración:** 6 rondas
+
+Haciendo de los pilares que sostienen el mundo una extensión de tu cuerpo dotas a tu cuerpo de una enorme y dura coraza, recibiendo la imperturbabilidad de las mas gigantescas montañas. De esta manera al activar forma elemental recibirás 40 vitalidad temporal, cesando esta habilidad en el momento en el que se agote. En el caso de perder la habilidad por acabarse toda la vitalidad temporal entonces no podrá volver a activarse hasta transcurridas 6 rondas desde el momento en el que se usó inicialmente. Adicionalmente mientras forma elemental esté activa también tendrás los siguientes beneficios. 
+
+- Tus estadísticas de Fuerza y Constitución pasan a ser 13, mientras que tu destreza pasa a ser 0. Así mismo tu defensa pasa a ser 20.
+- Recibes 6 contadores de escudo que podrás emplear para reducir el daño recibido por ataques, así como la posibilidad de entrar en posición defensiva una vez por ronda como acción bonus. Así mismo recibirás inmunidad a efectos de toque. 
+- Recibes ventaja en todos tus tiros de tierra, y sus hechizos aumentan su daño en un dado.
+- Activas automáticamente los efectos de Ola de tierra y Mole viviente. 
+- Recibes todas las técnicas de combate relativas a un arma de tu elección. 
+- Podrás emplear los hechizos que hayas recibido por la ascendencia sin la necesidad de emplear reserva, pese a que aún requerirán de reserva para ser empoderado. 
