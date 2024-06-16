@@ -43,7 +43,7 @@ Has desarrollado un sentido especial que te permite detectar las vibraciones a t
 
 *Tierra, Mejora*
 
-Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Natur o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
+Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Naturaleza, Arena o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
 
 ## Rango III 
 
@@ -68,8 +68,6 @@ Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia fí
 **Coste:** 2 acciones y 2 chi o vigor
 
 **Duración:** Concentración
-
-
 
 **Armadura de piedra** (2 AP y 1 chi): Cubres tu cuerpo con sólidas rocas, recibiendo PV temporales igual a tu rango + 2 y aumentando tu armadura natural por un valor igual a tu rango – 1. (1 chi) Restaura todos los PV temporales al máximo si estos son superiores a 0. *Armadura de piedra* permanecerá durante rango + 1 rondas o hasta que pierdas todos los PV temporales.
 

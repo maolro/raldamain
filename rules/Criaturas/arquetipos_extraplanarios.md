@@ -10,6 +10,15 @@ La criatura ha renacido como un espectro para atormentar el mundo de los vivos. 
 - Puede detectar la posición de seres vivos a distancia media y sentirá las influencias extraplanarias a distancia lejana de la misma manera que Sentido Divino.
 - Esta criatura cuenta como un no-muerto para los propósitos de otros efectos y puede ser Exorcizado. No es capaz de sanarse de ninguna manera, incluyendo a través de efectos que curen a no-muertos.
 
+## Semi-espectral (+2, requiere 3 mejoras)
+
+La criatura está entre el mundo de los vivos y el de los muertos, pudiendo así volverse tanto físico como incorpóreo. Este arquetipo otorga las siguientes mejoras:
+
+- Aumenta sus estadísticas de CAR y DES por 1. Cuando se transforme en un ser corpóreo su estadística de CON pasará a ser igua
+- Una vez por ronda puede pasar de físico a incorpóreo o viceversa. Dicho cambio durará hasta el su siguiente turno y mientras lo esté adoptará las resistencias, inmunidades y vulnerabilidades de la forma escogida. La forma que adoptará debe ser una que reciba por un arquetipo ya existente y puede cambiar de estado como reacción para evitar ataques enemigos.
+- Recibe los mismos movimientos y sentidos en forma corpórea de los que obtendría en forma incorpórea. Además, cabe recalcar que en forma corpórea no puede ser exorcizado.
+- Sus ataques físicos pueden herir a seres incorpóreos y si mata a uno puede absorber su esencia como reacción de la misma forma que el hechizo Robar alma. Esto solo se aplicará si el afectado y esta criatura tienen el mismo arquetipo incorpóreo.
+
 ## Akhásico (+2)
 
 Ascendenica Akhásica

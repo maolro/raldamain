@@ -37,7 +37,7 @@ Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemi
 
 *Serpiente, Marcial, Mejora*
 
-**Coste:** 1 acción
+**Coste:** 1 vigor
 
 Apuntas a uno de los puntos de presión de tu objetivo para provocarle graves heridas. Tu siguiente ataque marcial aumentará su daño base por 1d6 y provocará una *herida permanente leve* al impactar en la parte del cuerpo que escojas. Si el ataque ya es capaz de provocar una *herida permanente* esta aumentará su nivel por un paso. 
 
