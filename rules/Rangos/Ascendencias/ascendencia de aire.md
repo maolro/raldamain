@@ -131,4 +131,15 @@ Incrementa tu SAB por 1.
 
 *Innata, Mejora*
 
-Forma tocha elemental de aire.
+**Coste:** 3 acciones y 5 reserva
+
+**Duración:** 6 rondas
+
+Creando un cuerpo de vastas tormentas conviertes hasta la mas leve de tus exhalaciones en un huracán, trayendo a quienes se enfrenten a ti un desastre viviente capaz de acabar con una civilización. De esta manera recibirás 40 vitalidad temporal, y en caso de acabarse la forma elemental se desactivará. En el caso de perder la habilidad por agotarse la habilidad temporal no podrá volver a activarse hasta que hayan transcurrido 6 rondas desde el momento en el que esta inicio. Adicionalmente, mientras la habilidad permanezca activa recibirás los siguientes beneficios:
+
++ Tus estadísticas de destreza, carisma y constitución pasan a ser 12.
++ Tus hechizos de aire y tormenta recibirán un dado adicional de daño.
++ Estarás constantemente rodeado por un muro de vientos o una barrera de rayos.
++ Activas automáticamente los efectos de vientos protectores y danza de los vientos, además de que podrás usar infusión tormentosa en todos tus ataques sin tener que pagar su coste, aunque todavía tendrás que pagar la reserva del hechizo que quieras sumar, en caso de tener un coste. 
++ Puedes entrar en posición defensiva una vez por ronda como acción bonus una vez por ronda. 
++ Los hechizos recibidos por la ascendencia pasar a ser gratuitos, aunque aún requerirán reserva para ser empoderados.
