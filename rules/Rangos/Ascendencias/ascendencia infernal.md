@@ -126,7 +126,7 @@ Incrementa tu CON por 1.
 Empleando la energía durmiente en ti finalmente despiertas tu linaje, convirtiéndote en uno de los demonios mas altos capaces de dominar a todos con su poder. Al activar Señor de la sima recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Señor de la sima por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Señor de la sima te otorgará los siguientes beneficios:
 
 - Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
-- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo.
+- Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de toque.
 - Todos tus ataques físicos provocarán los efectos de Arma profana al impactar.
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
