@@ -130,9 +130,9 @@ Las únicas habilidades que podrán detenerlo son aquellas que otorguen cubierta
 
 **Coste:** 2 vigor
 
-Ejecutas un disparo impecable y preciso capaz de impactar en los puntos mas vulnerables de tu enemigo. De esta manera tu siguiente ataque infligirá +2d6 daño, además de ignorar la defensa por armaduras que tenga tu objetivo y eliminar uno de sus contadores de escudo. 
+Ejecutas un disparo impecable y preciso capaz de impactar en los puntos mas vulnerables de tu enemigo. De esta manera tu siguiente ataque infligirá 2d6 daño puntos de daño adicional además que ignora la defensa por armaduras que tenga tu objetivo. Si este tiene *contadores de escudo* activos eliminará uno de estos. 
 
-**Empoderar (1 vigor):** El próximo disparo mejorado con esta habilidad se acumulará además con los efectos de *Ojo del francotirador*.
+**Empoderar** (1 vigor): El próximo disparo mejorado con esta habilidad se acumulará además con los efectos de *Ojo del francotirador*.
 
 ## Rango V
 
@@ -142,7 +142,7 @@ Ejecutas un disparo impecable y preciso capaz de impactar en los puntos mas vuln
 
 **Coste:** 3 vigor
 
-Eres capaz de realizar los disparos mas mortales y precisos, habiendo pocos que puedan rivalizar con tu dominio de tu arma y acabando con quien sea tu objetico con un solo movimiento fulminante. Tu siguiente ataque infligirá +3d6 daño, provocándole además una herida permanente grave. En el caso de que este daño reduzca los PV del objetivo a 0 morirá instantáneamente.
+Eres capaz de realizar acabar con los enemigos más poderosos con un único disparo. Tu siguiente ataque infligirá 3d6 puntos de daño adicional y una *herida permanente grave.* En el caso de que este daño reduzca los PV del objetivo a 0 morirá instantáneamente.
 
 ### Puntería experta
 

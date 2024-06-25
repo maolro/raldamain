@@ -95,7 +95,7 @@ A su vez que infundes terror a tus enemigos tus aliados se llenan de coraje para
 
 *Divina, Pasiva*
 
-El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte una vez por ronda puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera.
+El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte explícitamente puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera ni emplear esta habi.
 
 ## Rango IV
 
