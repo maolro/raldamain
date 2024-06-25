@@ -13,7 +13,7 @@ title: Reglas de Ejércitos
 - **Cohesión:** 2
 - **Movimiento:** 3
 - **Habilidades especiales:** Todoterreno
-- **Posibles mejoras:** Asesino (+1), Incendiario (+1), Élite (+2), Sanador (+2)
+- **Posibles mejoras:** Asesino (+1), Incendiario (+1), Élite (+2), Sanador (+2), Invocador (+3), Terraformador (+2)
 
 ## Infantería a distancia
 
@@ -176,6 +176,10 @@ No puede perder moral pero tampoco puede recibir modificadores de moral ni ser a
 ## Sanador
 
 En lugar de atacar puede emplear su turno para curar a un aliado adyacente, haciendo así que recupere 1 cohesión
+
+## Terraformador
+
+Puede emplear su ataque a distancia para cambiar el terreno en un espacio a esa misma distancia para que sea terreno difícil o deje de serlo. Si el espacio ya es terreno difícil puede crear fortificaciones o trampas en él. 
 
 ## Terror
 
