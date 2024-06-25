@@ -180,36 +180,98 @@ Animas una masa de lodo repugnante para crear un guardián elemental que luchar�
 
 ### Vapores abrasivos
 
+*Ácido, Ambienta, Duradero*
+
 **Coste:** 2 acciones y 2 chi
 
-Área y gaseosa, todos los afectados tiran CON o sufren un veneno.
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Creas una enorme nube ácida con la que rodearte o cubrir un área, afligiendo con sus nocivos efectos a todo desgraciado que tenga la mala suerte de encontrarse en su interior. De esta manera todos aquellos en el área afectada deberán tirar constitución contra tu modificador o pasarán a estar enfermados, sufriendo también los efectos de un veneno de constitución que les afectará cada ronda. Así mismo todos los que estén dentro de la nube pasarán a estar cegados, y recibirán ocultamiento frente a ataques de individuos que no tengan los medios adecuados para ver dentro de la niebla ácida. En turnos posteriores todos los que comiencen su ronda en el espacio afectado o entren en él deberán repetir el tiro o sufrir sus efectos.  
 
 ### Torrente cáustico
 
+*Ácido, Ataque, Área*
+
 **Coste:** 1 acción y 2 chi
 
-Línea, 2d8 + CAR ácido y destruye todas las barreras y objetos metálicos. Reduce contadores de escudo.
+**Alcance:** Línea media
+
+**Duración:** Instantáneo
+
+Creas una poderosa corriente ácida con la que corroer todo lo que se encuentre en tu camino, provocando daños severos a los desafortunados a su paso y devorando tantos objetos u obstáculos como te encuentres. De esta manera los afectados sufrirán 2d10+Carisma daño ácido, rompiendo su armadura y perdiendo además un contador de escudo en caso de tenerlo. Además, por su naturaleza, este ataque ignorará barreras u objetos metálicos que se encuentren en su camino, destruyéndolos en el proceso.
 
 ### Armadura ácida
 
-Recibes *contadores de escudo* iguales a tu rango y cada vez que gastes un contador para defenderte de un ataque puedes provocarle un efecto de toque corrosivo a tu enemigo. Se recarga en terrenos ácidos.
+*Ácido, Mejora, Duradero*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Propio
+
+**Duración:** Concentración
+
+Rodeas tu cuerpo de corrientes de ácido y nubes de vapores tóxicos, amenazando con acabar con tanto como se atreva a tener contacto contigo. Al activarse recibirás 6 contadores de escudo que podrás emplear para reducir el daño de ataques entrantes, además de que cada vez que un enemigo te afecte con un ataque que requiera contacto sufrirá en reacción los efectos de Toque corrosivo. Así mismo, por su naturaleza fluida, en entornos con mucho ácido podrás ir regenerando tu armadura, permitiéndote recuperar un contador de escudo de la armadura una vez por turno mientras la habilidad permanezca activa. 
 
 ## Rango V
 
 ### Lluvia ácida
 
-Empodera toda la magia de lodo y otorga Desventaja a todos los tiros hechos con objetos metálicos y de madera.
+*Ácido, Mejora, Ambiental*
+
+**Coste:** 3 acciones y 3 chi
+
+**Alcance:** Esfera grande
+
+**Duración:** Una hora
+
+Convocas una corrosiva lluvia que ensalce las terribles cualidades de tu magia mientras debilita la de tus oponentes. De esta manera al comenzar a caer la lluvia ácida recibirás ventaja en todos tus tiros de magia de ácido, mientras que los usuarios de magia de naturaleza y magia de metal recibirán desventaja en sus tiros de las respectivas magias. Así mismo, todos aquellos que se encuentren dentro del área recibirán ocultamiento por las fuertes lluvias. 
 
 ### Calcificación
 
-Área, 2d10 + CAR daño ácido y los afectados deben tirar FUE o quedan agarrados. Cada ronda sufren 1d10 + CAR daño ácido.
+*Ácido, Ataque, Área*
+
+**Coste:** 2 acciones y 3 chi
+
+**Alcance:** Radio medio
+
+**Duración:** Instantáneo
+
+Creas una marea de nubes tóxicas y corrientes causticas en el área, amenazando gravemente la integridad de todo lo que ahí esté presente. Todos los que se encuentren en la zona afectada deberán defenderse o sufrirán 2d10+Carisma daño ácido, además de que deberán tirar heroísmo o Atletismo o la rápida cristalización los encerrará en una prisión ácida. Aquellos que fallen y queden atrapados podrán repetir su tiro para intentar escapar cada ronda, sufriendo 1d10+Carisma daño ácido en caso de fallar. 
 
 ### Corroer hasta los huesos
 
-Tira CON o sufre 3DD+STAT daño Ácido, quemadura grave y destruye todos los objetos metálicos que lleve encima. Si reduce a 0 PV mata instantáneamente
+*Ácido, Ataque* 
+
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Instantáneo
+
+Infundes tu toque de un corrosivo ácido capaz de acabar con toda existencia con la que entre en contacto, convirtiendo tu mero contacto en una dolorosa sentencia de muerte. El objetivo que reciba tu toque deberá defenderse empleando su constitución, o sufrirá 3d10+Carisma daño ácido, además de una quemadura grave. Así mismo la esencia ácida que recorrerá todo su cuerpo destruirá automáticamente todos los objetos metálicos que lleve consigo. En el caso de que el afectado vea sus PV reducidos a 0, su cuerpo de deshará en un charco de ácido y otros restos, matándolo instantáneamente. 
 
 ## Rango VI
 
 ### Señor del Pantano
 
-Recibe 40 Vitalidad temporal, 12 FUE,CAR,CON, +1 dado daño en Ácido, rodeado por Muro de Lodo, hechizos Rango II o menos son gratuitos, Armadura Ácida, siempre Pos. Def, ataques físicos infligen 1DD+RANGO daño Ácido, Inmune a Ácido, Aflicciones y Mental
+*Ácido, Mejora, Duradera*
+
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Propio
+
+**Duración:** Seis rondas
+
+Te transformas en una existencia compuesta de las mas letales sustancias, corroyendo con tu presencia todo espacio por el que cruzas y trayendo nada mas que muerte a quienes se crucen contigo, impidiendo incluso que hasta la vegetación y animales vuelvan a su hábitat si no es de las formas mas retorcidas. De esta forma al activar Forma elemental recibirás 40 vida temporal, además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta perder la vitalidad temporal. En el caso de perder los beneficios de Forma elemental por quedarse sin vitalidad temporal no podrá volver a activarse hasta que hayan pasado seis rondas desde el momento en el que esta habilidad fue activada. El resto de beneficios de Forma elemental son los siguientes.
+
++ Tu Fuerza, Constitución y Sabiduría pasarán a ser 12 y pasas a estar constantemente rodeado por un Muro de Lodo.
+
++ Recibes un dado de daño adicional en todos tus hechizos de magia ácida, además de que los hechizos de esta rama de rango II o menos pasarán a no costarte chi, pese a que aún habrá que pagar para poder empoderarlos. Así mismo tus ataques físicos infligirán 1d10+rango daño ácido adicional. 
+
++ Cuentas con los beneficios de Armadura ácida, además de que siempre contarás como si estuvieras en posición defensiva. 
+
++ Mientras permanezcas en esta forma recibirás inmunidad al daño ácido, así como a aflicciones y efectos mentales. 
+
+  
