@@ -16,13 +16,15 @@ title: Magia de Invocación
 
 *Invocación, Pasiva*
 
-Tiene un Familiar de nivel 2 que le acompaña en todo momento. Si se muere quedas *fatigado* y no puede volver a invocarlo hasta que pase un día. Cada vez que subas 3 niveles aumenta su nivel base por 2.
+Desarrollas un vínculo sobrenatural con una criatura mágica llamada familiar, la cual te acompañará fielmente en todo momento. Esta criatura será de nivel 2, y podrá ser construida empleando el sistema de arquetipos. En el caso de que tu familiar acompañante muera, pasarás a estar fatigado hasta que realices un descanso, y no podrás volver a convocarlo hasta que transcurra un día. 
+
+Por cada 3 niveles que subas tu familiar también se fortalecerá, aumentando su nivel por 2. 
 
 ### Sentidos compartidos
 
 *Invocación, Pasiva*
 
-Cuando uno de los dos entre en posición defensiva ambos lo hacen y compartes los sentidos de tu familiar. Ninguno de los dos puede ser sorprendido si ambos no lo están.
+Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, permitiendo que reaccionéis al peligro rápidamente como si fueseis uno. De esta forma, en el caso de que uno de los dos entre en posición defensiva, el otro también podrá en ella como acción bonus. Así mismo ambos podréis compartir vuestros sentidos, impidiendo así también que uno de los pueda ser sorprendido mientras el otro pueda ver la fuente. 
 
 ## Rango II
 
@@ -30,7 +32,7 @@ Cuando uno de los dos entre en posición defensiva ambos lo hacen y compartes lo
 
 *Invocación, Pasiva*
 
-Puedes apoyar a tu Familiar sin importar la distancia o la habilidad específica mientras que si tu Invocación gasta acciones en apoyarte puedes repetir el tiro y quedarte con el mejor resultado. 
+A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás apoyar a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad o la habilidad específica que emplees. Así mismo, si tu familiar emplea una acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
 
 **Empoderar** (1 chi o vigor): Apoyas como acción bonus
 
@@ -38,7 +40,7 @@ Puedes apoyar a tu Familiar sin importar la distancia o la habilidad específica
 
 *Invocación, Pasiva*
 
-Si compartes habilidades con tu Familiar podrá emplear tus modificadores en el caso que sean más altos. Puedes también lanzar hechizos o emplear técnicas de combate que conozca tu invocación pagando chi o vigor (usarás tu modificador de Magia de Invocación y el familiar tiene que estar consciente).
+Al igual que vuestros instintos, vuestro chi interno a comenzado a unirse mas profundamente, permitiéndote emplear algunas de las habilidades de tu familiar siempre que este se encuentre presente para orientarse. De esta forma, en caso de compartir habilidades con tu familiar, este podrá emplear tu bonificador en el caso de que este sea mas alto. Así mismo tú podrás emplear sus hechizos o técnicas de combate conocidas pagando el adecuado costo de chi o vigor. Para hechizos o técnicas empleadas de esta manera usarás tu modificador de Magia de invocación, y requerirá de que tu familiar esté consciente. 
 
 ## Rango III
 
@@ -46,19 +48,21 @@ Si compartes habilidades con tu Familiar podrá emplear tus modificadores en el 
 
 *Innata, Pasiva*
 
-Puedes formar un vínculo vital con tu Familiar con el cual os podéis transferir hasta la mitad del daño recibido. 
+Vuestros destinos han comenzado a entrelazarse, permitiéndoos compartir dicha y enfermedad por igual. De esta forma podrás mantener un vínculo vital con tu familiar, el cual permitirá que como reacción a sufrir daño alguno de los dos podáis transferir hasta la mitad de este a la otra parte.
 
 ### Invocador experto
 
 *Innata, Pasiva*
 
-Obtienes un familiar adicional del mismo nivel o aumentas el nivel de tu familiar existente por 2. Puedes tomar esta misma decisión a Rango V.
+Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu familias has descubierto un nuevo nivel de maestría para empoderarlos de forma que antes no eran posibles. De esta manera obtendrás el conocimiento para convocar a un familiar adicional del mismo nivel al que ya te acompañaba, o en su defecto podrás realizar un ritual para aumentar el nivel de tu familiar actual por dos. Esta decisión volverá a repetirse cuando llegues a rango V.
 
 ## Rango IV
 
 ### Resistencias combinadas
 
-Compartes las Resistencias que tenga tu Familiar y el Familiar emplea las tuyas.
+*Innata, Pasiva*
+
+Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Debido a eso ahora vuestra naturaleza ha comenzado a mezclarse, no siendo dos individuos separados sino dos partes de un todo. Por ello todas las resistencias que tenga tu familiar te serán compartidas contigo, así como tus resistencias, que se compartirán con tu familiar. 
 
 **Empoderar** (1 chi o vigor): Empleas el modificador de tu Familiar para defenderte de un efecto hostil o la Invocación emplea el tuyo.
 
@@ -66,7 +70,9 @@ Compartes las Resistencias que tenga tu Familiar y el Familiar emplea las tuyas.
 
 **Coste:** 1 Acción y 2 Chi o Vigor
 
-Tira contra el nivel + 2 de un Familiar o criatura Invocada hostil. Si tienes éxito su amo pierde control de ella durante una ronda, haciendo que esté confundida. Si afectas a una invocación sin amo puedes controlarla una ronda si falla el tiro. (con dos éxitos la controlas durante un día y debes repetir cada día hasta que ganes su lealtad). Máximo 6 familiares en total.
+**Alcance:** Medio
+
+Empleando las cadenas con las que mantienes la esencia de tu familiar con una forma definida y atada al mundo puedes intervenir en la conexión de otros usuarios de criaturas con la misma naturaleza. De esta manera podrás tirar contra el control de un familiar o criatura invocada hostil, que deberá defenderse empleando su nivel+2. En caso de tener éxito el amo de la criatura perderá el control de ella durante una ronda, dándole como resultado el efecto de estado confundido. En caso de afectar a una invocación sin amo podrás controlarla durante una ronda en caso de que esta falle el tiro, controlándola durante un día en el caso de que tengas éxito en este tiro dos veces. En caso de desearlo podrás seguir repitiendo este tiro contra la invocación controlada cada día, la cual te será leal cuando te ganes su confianza, permitiéndote que ya no tengas que tirar mas. Puedes tener un máximo de 6 familiares de esta manera. 
 
 ## Rango V
 
@@ -74,10 +80,19 @@ Tira contra el nivel + 2 de un Familiar o criatura Invocada hostil. Si tienes é
 
 **Coste:** 1 acción y 3 chi o vigor
 
-Un Familiar recibe 20 Vitalidad temporal, Ventaja en todos sus tiros, +6 DEF y cuatro contadores de escudo. Dura seis rondas y si pierde la Vitalidad temporal tienes que tirar Invocación cada ronda o pierdes el control, haciendo que quede confundida.
+**Alcance:** Medio
+
+**Duración:** 6 rondas.
+
+Compartes una parte de la misma esencia que te da vida con tu familiar, empoderando su chi interno y haciendo que el vínculo que os une se vuelva mas fuerte que nunca. De esta manera un familiar que controles recibirá 20 vialidad temporal, además de ventaja en todos sus tiros. Así mismo aumentará su defensa por 6 y recibirá 4 contadores de escudo. En caso de perder la vitalidad temporal sin embargo deberás tirar invocación o tu familiar perderá el control, quedando confundido por la cantidad de energía que ya no es capaz de manejar. 
 
 ### Unidos hasta la muerte
 
 **Coste:** 1 acción y 3 chi o vigor
 
-Un Familiar que tengas resucita a 1 PV sin heridas permanentes o efectos de estado negativos. En el caso que mueras un Familiar puede sacrificarse por ti para que resucites de la misma manera.
+**Alcance:** Medio
+
+**Duración:** Instantáneo
+
+Finalmente tu familiar y tú habéis alcanzado la cúspide de la unión entre vosotros, permitiendo que sirváis como una vasija de energía vital para el otro con la que superar un momento de crisis. De esta manera si tu familiar muere este podrá resucitar a 1 PV sin heridas permanentes o efectos de estado. Así mismo, en el caso de que tu fallezcas, tu familiar podrá sacrificarse por tí, liberando toda su energía acumulada para que resucites de la misma manera. 
+
