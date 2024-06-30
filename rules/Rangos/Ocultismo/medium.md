@@ -95,7 +95,7 @@ Aumenta el daño de base de Exorcizar a 1d8.
 
 Separas tu alma de tu cuerpo para convertirte en un ser semejante a un espectro. Para emplear este hechizo necesitas estar meditando y tras emplearlo te vuelves incorpóreo, dejando atrás tu cuepro material en un estado inconsciente. Este hechizo permanecerá activo hasta que pase una hora o tu cuerpo material sea herido.
 
-Mientras permanezcas en forma espectral recibes Inmunidad a todo el daño no-mágico y puedes pasar a través de objetos sólidos. Carecerás también de estadísticas de FUE y CON, impidiendo así que utilices cualquier habilidad relacionada con estas. Además, si eres impactado exitosamente por el hechizo Exorcizar tu alma volverá inmediatamente a tu cuerpo material (puedes defenderte contra él usando tu modificador de Magia de ).
+Mientras permanezcas en forma espectral recibes Inmunidad a todo el daño no-mágico y puedes pasar a través de objetos sólidos. Carecerás también de estadísticas de FUE y CON, impidiendo así que utilices cualquier habilidad relacionada con estas. Además, si eres impactado exitosamente por el hechizo Exorcizar tu alma volverá inmediatamente a tu cuerpo material (puedes defenderte contra él usando tu modificador de Magia de almas).
 
 ### Canalización superior
 
@@ -121,15 +121,33 @@ Tras lanzar este hechizo puedes continuar este ritual para exiliar definivamente
 
 ### Aullido de almas en pena
 
+*Médium, Ataque, Área*
+
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Radio medio
+
+**Duración:** Concentración
+
+Creas un remolino etéreo que permite fugarse a las almas del mas allá para liberar su rencor contra los vivos, mas aún contra quienes les causaron dolor en vida. De esta forma todos los enemigos que se encuentren en el área deberán tirar Voluntad o Concentración, o sufrirán daño a la cordura igual a tu rango y aumentarán su nivel de miedo por un paso. Este efecto se repetirá cada ronda, forzando a volver a tirar a quienes se encuentren en su interior.  
+
 ### Alma Resiliente
+
+*Médium, Pasiva*
+
+Tu alma se ha fortalecido mas allá que cualquier otra, fortaleciendo las cadenas que la anclan a tu cuerpo para permitir que siga siendo un faro para los muertos del plano terrenal. De esta manera siempre estarás protegido contra efectos de muerte instantánea y serás capaz de seguir luchando a menos de 0 PV sin sufrir penalizadores. 
 
 ### Vincular Almas
 
-**Reino de los muertos:** Tu fuerte conexión con el más allá ha llamado la atención de entidades superiores de dicha dimensión con las que puedes comunicarte y hacer pactos. La personalidad, intenciones y métodos de comunicación de dichos seres quedan a elección del máster según la campaña, pero el trato más común que ofrecen es la oportunidad de tener control sobre un demiplano intermedio conocido como un dominio espectral donde descansan las almas de los espectros que invocas con mayor frecuencia.  Viajar al domino requiere realizar un ritual y este tendrá un aspecto decidido por el máster según la naturaleza de los espectros y la entidad que te lo ha otorgado. No hay límite de tiempo que puedes pasar en el dominio y puedes traer a otras personas a él siempre y cuando estas lo decidan voluntariamente o no puedan oponer resistencia.
+*Médium, Mejora*
 
-**Robar alma** (1 chi): Una vez por turno atrapas el alma de una criatura que haya muerto esta ronda. No puedes atrapar más de 4 almas de esta manera y las almas atrapadas pueden ser invocadas o canalizadas como si fueran un espectro además que puedes usar *hablar con muertos* ilimitadamente con ellas.
+**Coste:** 3 acciones y 2 chi
 
-**Espectro guardián**: No necesitas mantener la concentración al invocar un espectro y recibes resistencia a efectos mentales igual a tu rango al canalizar. Además, eres inmune a efectos de muerte instantánea y una vez al día puedes resucitar a 1 PV la primera vez que mueras.
+**Alcance:** Adyacente
+
+**Duración:** Concentración
+
+Tras tanto tiempo acompañado por las almas de los difuntos has alcanzado un nuevo grado de sincronía con ellos, obteniendo conocimientos con los que aquellos dispuestos podrán prestarte su fuerza para que no compartas su destino. De esta manera podrás crear un vínculo con hasta dos almas o aliados, pudiendo transferir el daño libremente entre los vinculados. Para que el vínculo siga haciendo efecto los afectados deberán mantenerse a distancia media de ti. 
 
 ## Rango V
 
@@ -137,19 +155,41 @@ Aumenta el daño de exorcizar a 1d10
 
 ### Posesión
 
+*Médium*
+
+**Coste:** 1 acción y 3 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Concentración
+
+Empleando la fuerza de tu alma sobrepones tu voluntad a la del alma nativa de un cuerpo, usurpándole el control para tu propio interés.  De esta forma, mientras te encuentres en forma astral o seas incorpóreo, podrás forzar a tu objetivo a tirar Voluntad o Concentración o podrás tomar el control de sus acciones. El afectado por la posesión podrá tratar de liberarse cada ronda repitiendo el tiro, aunque la posesión llegará a su final automáticamente si se te llegase a exorcizar. 
+
 ### Reino de los Muertos
+
+*Médium, Espacial, Pasiva*
+
+Posees una fracción del abstracto plano de los muertos, pudiendo darle forma a voluntad para que las almas que mas sueles invocar descansen en paz. Este espacio se comportará de la misma manera que un demiplano, permitiéndote entrar o salir de él empleando 2 acciones. 
 
 ### Señor Espectral
 
-**Posesión** (3 AP y 1 chi): Si estás en *forma astral* puedes intentar poseer a otra criatura, haciendo un tiro de médium contra su SAB. En caso de éxito la criatura cae bajo tu control, permitiéndote usar sus acciones como si fueran tuyas. La criatura poseída pude repetir el tiro cada ronda y si no logra liberarse en 4 rondas no podrá repetir el tiro hasta el día siguiente.
+*Médium, Pasiva* 
 
-**Señor espectral:** Los espectros no son naturalmente hostiles hacia ti y tus ataques físicos pueden herir a criaturas incorpóreas. Recibes un rango adicional al usar *canalización* y eres capaz de usar magia contra criaturas físicas al entrar en *forma astral*. 
+Tu alma se ha fortalecido tanto que ha comenzado a rebosar y recubrir tu cuerpo, permitiéndote canalizar mas libremente tus habilidades así como aumentar tanto tu ataque como la defensa de tu mente. De esta manera podrás atacar a criaturas incorpóreas con ataques físicos, al encontrarse tus ataques imbuidos constantemente con tu energía. Así mismo los espectros podrán reconocer tus habilidades a simple vista, haciéndolos normalmente obedientes hacia ti al reconocerte como uno de sus protectores. Así mismo al canalizar podrás conseguir dos hechizos hechizos o técnicas adicionales de rango III, así como también inmunidad a efectos mentales.  
 
 ## Rango VI
 
 ### Intersticio de Vida y Muerte
 
+*Médium, Ambiental*
 
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Esfera grande
+
+**Duración:** Siete rondas
+
+Superpones tu reino de los muertos con el plano material, convirtiendo la tierra que te rodea en un reflejo del mismísimo mundo de los muertos. De esta forma toda la tierra afectada se convertirá en terreno consagrado, y convocar a tus espectros no te costará chi, además de que podrás llamar a uno de ellos como acción bonus una vez por ronda. Así mismo toda persona que muera en el terreno afectado durante la duración del efecto aparecerá en tu reino de los muertos. Podrás viajar a tu reino de los muertos empleando una acción, y mientras el efecto perdure Aullido de almas en pena permanecerá activo.
 
 # Niveles míticos
 
