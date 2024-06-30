@@ -43,7 +43,7 @@ Has desarrollado un sentido especial que te permite detectar las vibraciones a t
 
 *Tierra, Mejora*
 
-Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Natur o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
+Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Naturaleza o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
 
 ## Rango III 
 
@@ -69,7 +69,7 @@ Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia fí
 
 **Duración:** Concentración
 
-Levantas la tierra como si de una ola del mismísimo océano se tratase, arrasando con todo lo que se te ponga en tu camino con la fuerza de una estampida. Al crearse la ola esta permitirá a quien la surque moverse dos pasos por ronda como acción bonus, destruyendo todos los efectos ambientales que la ola atraviese. Así mismo cada enemigo en tu camino deberá defenderse contra tu modificador de ascendencia o sufrirá 1d8+sabiduría daño contundente y será empujado un paso. 
+Levantas la tierra como si de una ola del mismísimo océano se tratase, arrasando con todo lo que se te ponga en tu camino con la fuerza de una estampida. Al crearse la ola esta permitirá a quien la surque moverse dos pasos por ronda como acción bonus, destruyendo todos los efectos ambientales que la ola atraviese. Así mismo cada enemigo en tu camino deberá defenderse contra tu modificador de Ascendencia o sufrirá 1d8+SAB daño Contundente y será empujado un paso. 
 
 ## Rango IV 
 
@@ -87,7 +87,7 @@ Adoptas la dureza de la roca, combinando tu cuerpo con ella para fortalecer tus 
 
 *Innata, Pasiva*
 
-Mientras estés en contacto con la tierra contarás con sus bendiciones para mantenerte en pie, nutriéndote de energía para sanar tu cuerpo a velocidades vertiginosas. De esta manera, mientras te mantengas en contacto con la tierra, podrás regenerar Rango+1 vitalidad al inicio de tu turno, o en su defecto reducir el nivel de una herida permanente por un paso. Así mismo la primera vez que caigas a 0 PV o por debajo retornarás una vez mas para seguir luchando, volviendo nuevamente a 1 PV.
+Mientras estés en contacto con la tierra contarás con sus bendiciones para mantenerte en pie, nutriéndote de energía para sanar tu cuerpo a velocidades vertiginosas. De esta manera, mientras te mantengas en contacto con la tierra, podrás regenerar Rango + 1 vitalidad al inicio de tu turno, o en su defecto reducir el nivel de una herida permanente por un paso. Así mismo la primera vez que caigas a 0 PV o por debajo retornarás una vez mas para seguir luchando, volviendo nuevamente a 1 PV.
 
 ## Rango V
 

@@ -23,7 +23,7 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 
 La criatura ha sido escogida por las fuerzas del abismo para sembrar el caos y la destrucción. Este arquetipo otorga las siguientes mejoras:
 
-- Aumenta una estadística física por 1 junto a su CAR.
+- Aumenta sus tres estadísticas físicas por 1 junto a su CAR.
 - Incrementa su DEF y sus PV por 2
 - Obtiene Ventaja en todos sus tiros de ataque y defensa de la misma manera que la habilidad Guerrero de la fe. Provocará también 1d6 + 1 daño Ácido, Fuego, Necrótico, Frío o Eléctrico adicional cada vez que impacte con un ataque de arma.
 - Recibe de manera permanente una Mutación abisal adicional o una mejora fisiológica otorgada por Inyección mutagénica. Puede cambiar cualquiera de estas si lo desea empleando una acción. El modificador para estas habilidades será igual a la CON de esta criatura + 2.
