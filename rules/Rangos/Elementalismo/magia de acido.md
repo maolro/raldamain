@@ -140,7 +140,7 @@ Si impactas a una criatura voladora esta caerá inmediatamente al suelo, quedand
 
 **Duración:** Concentración
 
-Formas varios tentáculos de lodo ácido a tu alrededor para retener a tus enemigos. Haz un ataque contra todas las criaturas a distancia corta de ti que provoca 1d8 + CAR daño Ácido al impactar. Además, los afectados deberán tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Ácido o quedarán *agarrados* por los tentáculos de ácido. Estos podrán repetir el tiro al principio de su turno para intentar liberarse del a
+Formas varios tentáculos de lodo ácido a tu alrededor para retener a tus enemigos. Haz un ataque contra todas las criaturas a distancia corta de ti que provoca 1d8 + CAR daño Ácido al impactar. Además, los afectados deberán tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Ácido o quedarán *agarrados* por los tentáculos de ácido. Estos podrán repetir el tiro al principio de su turno para intentar liberarse del agarre.
 
 Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. Todas las criaturas que empiecen su turno a distancia cercana de ti o entren por primera vez en un espacio a esa distancia deberán defenderse de nuevo contra este hechizo. Aquellas que estén ya agarradas sufrirán 1d8 + CAR daño Ácido y uno de los objetos que lleven encima sufrirá el efecto de estado *roto*. 
 
@@ -188,7 +188,7 @@ Animas una masa de lodo repugnante para crear un guardián elemental que luchar�
 
 **Duración:** Concentración
 
-Creas una enorme nube ácida con la que rodearte o cubrir un área, afligiendo con sus nocivos efectos a todo desgraciado que tenga la mala suerte de encontrarse en su interior. De esta manera todos aquellos en el área afectada deberán tirar constitución contra tu modificador o pasarán a estar enfermados, sufriendo también los efectos de un veneno de constitución que les afectará cada ronda. Así mismo todos los que estén dentro de la nube pasarán a estar cegados, y recibirán ocultamiento frente a ataques de individuos que no tengan los medios adecuados para ver dentro de la niebla ácida. En turnos posteriores todos los que comiencen su ronda en el espacio afectado o entren en él deberán repetir el tiro o sufrir sus efectos.  
+Creas una enorme nube ácida con la que rodearte o cubrir un área, afligiendo con sus nocivos efectos a todo desgraciado que tenga la mala suerte de encontrarse en su interior. De esta manera todos aquellos en el área afectada deberán hacer un tiro de CON frente a tu modificador o pasarán a estar *enfermados*, sufriendo también los efectos de un veneno de CON que les afectará cada ronda. Además, todos los que estén dentro de la nube pasarán a estar cegados y recibirán *ocultamiento* frente a ataques de individuos que no tengan los medios adecuados para ver dentro de la niebla ácida. En turnos posteriores todos los que comiencen su ronda en el espacio afectado o entren en él deberán repetir el tiro o sufrir sus efectos.  
 
 ### Torrente cáustico
 
@@ -200,7 +200,7 @@ Creas una enorme nube ácida con la que rodearte o cubrir un área, afligiendo c
 
 **Duración:** Instantáneo
 
-Creas una poderosa corriente ácida con la que corroer todo lo que se encuentre en tu camino, provocando daños severos a los desafortunados a su paso y devorando tantos objetos u obstáculos como te encuentres. De esta manera los afectados sufrirán 2d10+Carisma daño ácido, rompiendo su armadura y perdiendo además un contador de escudo en caso de tenerlo. Además, por su naturaleza, este ataque ignorará barreras u objetos metálicos que se encuentren en su camino, destruyéndolos en el proceso.
+Creas una poderosa corriente ácida con la que corroer todo lo que se encuentre en tu camino, provocando daños severos a los desafortunados a su paso y devorando tantos objetos u obstáculos como te encuentres. De esta manera los afectados sufrirán 2d10+CAR daño ácido, rompiendo su armadura y perdiendo además un *contador de escudo* en caso de tenerlo. Además, por su naturaleza, este ataque ignorará barreras u objetos metálicos que se encuentren en su camino, destruyéndolos en el proceso.
 
 ### Armadura ácida
 
@@ -212,7 +212,7 @@ Creas una poderosa corriente ácida con la que corroer todo lo que se encuentre 
 
 **Duración:** Concentración
 
-Rodeas tu cuerpo de corrientes de ácido y nubes de vapores tóxicos, amenazando con acabar con tanto como se atreva a tener contacto contigo. Al activarse recibirás 6 contadores de escudo que podrás emplear para reducir el daño de ataques entrantes, además de que cada vez que un enemigo te afecte con un ataque que requiera contacto sufrirá en reacción los efectos de Toque corrosivo. Así mismo, por su naturaleza fluida, en entornos con mucho ácido podrás ir regenerando tu armadura, permitiéndote recuperar un contador de escudo de la armadura una vez por turno mientras la habilidad permanezca activa. 
+Rodeas tu cuerpo de corrientes de ácido y nubes de vapores tóxicos, amenazando con acabar con tanto como se atreva a tener contacto contigo. Al activarse recibirás una cantidad de *contadores de escudo* igual a tu Rango que podrás emplear para reducir el daño de ataques entrantes, además de que cada vez que un enemigo te afecte con un ataque que requiera contacto sufrirá en reacción los efectos de Toque corrosivo. Adicionalmente, tu armadura podrá regenerarse en entornos con mucho ácido, permitiéndote recuperar un *contador de escudo* de la armadura una vez por ronda siempre que este efecto permanezca activo
 
 ## Rango V
 
@@ -226,7 +226,7 @@ Rodeas tu cuerpo de corrientes de ácido y nubes de vapores tóxicos, amenazando
 
 **Duración:** Una hora
 
-Convocas una corrosiva lluvia que ensalce las terribles cualidades de tu magia mientras debilita la de tus oponentes. De esta manera al comenzar a caer la lluvia ácida recibirás ventaja en todos tus tiros de magia de ácido, mientras que los usuarios de magia de naturaleza y magia de metal recibirán desventaja en sus tiros de las respectivas magias. Así mismo, todos aquellos que se encuentren dentro del área recibirán ocultamiento por las fuertes lluvias. 
+Convocas una corrosiva lluvia que ensalce las terribles cualidades de tu magia mientras debilita la de tus oponentes. De esta manera al comenzar a caer la lluvia ácida recibirás ventaja en todos tus tiros de magia de ácido, mientras que los usuarios de magia de Naturaleza y magia de Metal recibirán Desventaja en sus tiros de las respectivas magias. Así mismo, todos aquellos que se encuentren dentro del área recibirán ocultamiento por las fuertes lluvias. 
 
 ### Calcificación
 
@@ -238,7 +238,7 @@ Convocas una corrosiva lluvia que ensalce las terribles cualidades de tu magia m
 
 **Duración:** Instantáneo
 
-Creas una marea de nubes tóxicas y corrientes causticas en el área, amenazando gravemente la integridad de todo lo que ahí esté presente. Todos los que se encuentren en la zona afectada deberán defenderse o sufrirán 2d10+Carisma daño ácido, además de que deberán tirar heroísmo o Atletismo o la rápida cristalización los encerrará en una prisión ácida. Aquellos que fallen y queden atrapados podrán repetir su tiro para intentar escapar cada ronda, sufriendo 1d10+Carisma daño ácido en caso de fallar. 
+Creas una marea de nubes tóxicas y corrientes causticas en el área, amenazando gravemente la integridad de todo lo que ahí esté presente. Todos los que se encuentren en la zona afectada deberán defenderse o sufrirán 2d10+CAR daño ácido, además de que deberán tirar heroísmo o Atletismo o la rápida cristalización los encerrará en una prisión ácida. Aquellos que fallen y queden atrapados podrán repetir su tiro para intentar escapar cada ronda, sufriendo 1d10+CAR daño ácido en caso de fallar. 
 
 ### Corroer hasta los huesos
 
@@ -250,7 +250,7 @@ Creas una marea de nubes tóxicas y corrientes causticas en el área, amenazando
 
 **Duración:** Instantáneo
 
-Infundes tu toque de un corrosivo ácido capaz de acabar con toda existencia con la que entre en contacto, convirtiendo tu mero contacto en una dolorosa sentencia de muerte. El objetivo que reciba tu toque deberá defenderse empleando su constitución, o sufrirá 3d10+Carisma daño ácido, además de una quemadura grave. Así mismo la esencia ácida que recorrerá todo su cuerpo destruirá automáticamente todos los objetos metálicos que lleve consigo. En el caso de que el afectado vea sus PV reducidos a 0, su cuerpo de deshará en un charco de ácido y otros restos, matándolo instantáneamente. 
+Infundes tu toque de un corrosivo ácido capaz de acabar con toda existencia con la que entre en contacto, convirtiendo tu mero contacto en una dolorosa sentencia de muerte. El objetivo que reciba tu toque deberá defenderse empleando su constitución, o sufrirá 3d10+CAR daño Ácido, además de una *quemadura grave*. Así mismo la esencia ácida que recorrerá todo su cuerpo destruirá automáticamente todos los objetos metálicos que lleve consigo. En el caso de que el afectado vea sus PV reducidos a 0, su cuerpo de deshará en un charco de ácido y otros restos, matándolo instantáneamente. 
 
 ## Rango VI
 
