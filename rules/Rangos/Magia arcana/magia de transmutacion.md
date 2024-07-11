@@ -118,46 +118,120 @@ Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heri
 
 ### Defensa adaptable
 
-Creas una coraza, espinas o resistencias elementales específicas
+*Transmutación, Mejora, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Endureciendo tu piel, haciendo crecer un exoesqueleto oseo o cambiando de formas extremas tu morfología te adaptar a casi cualquier situación que pueda presentársete para abrirte paso a través de ella. De esta manera puedes provocar una mutación espontánea que mejore un aspecto defensivo propio. Puedes crear tus propias propuestas siempre que cuentes con el permiso del master, pero algunos ejemplos serían: coraza, espinas o una resistencia elemental específica.
 
 ### Asimilar rasgos
 
-Obtienes la capacidad de volar, ser anfibio u otras mejoras animales
+*Transmutación, Mejora, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Fusionando tu genoma con el de otras especies obtienes capacidades sobrehumanas para mejorar tus capacidades. Puedes crear tus propias propuestas dependiendo de la criatura que trates de asimilar siempre que cuentes con el permiso del master, pero algunos ejemplos serían hacerte crecer alas o volverte anfibio.
 
 ### Crear quimera
 
-Forma un monstruo mezclando diferentes animales que te sirve
+*Transmutación, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Mutando a un animal o humano incapacitado puedes crear a una aberración mutada que te sirva fielmente hasta que termine de fallecer por su morfología deficiente. Al crearla la criatura tendrá nivel 6, aumentando 2 niveles por cada rango adicional que tomes de transmutación. No podrás mantener a mas de 4 quimeras bajo tu control. 
 
 ## Rango IV
 
 ### Moldear la carne
 
-Transformas forzosamente a un enemigo que tocas (tira CON)
+*Transmutación, Aflicción*
+
+**Coste:** 1 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Instantáneo
+
+Provocas rápidas mutaciones espontáneas en tu objetivo, deformándolo horriblemente. De esta manera el afectado deberá defenderse empleando constitución o sufrirá 1d8+Inteligencia daño fuerza, el estado de efecto nauseas y una característica morfológica de tu elección. Así mismo si este ataque reduce a 0 PV a tu objetivo este se convertirá en una quimera, pasando a estar bajo tu control. Sin embargo esta habilidad solamente podrá emplearse contra objetivos orgánicos.
 
 ### Esencia de la magia
 
-Te permite emplear determinados hechizos relacionados con esencia de criaturas que te inyectes
+*Transmutación, Mejora, Duradero*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Inyectándote sueros destilados de criaturas especiales eres capaz de replicar algunas de las capacidades que las hacen únicas, haciendo tuya una fracción de su poder. De esta manera dependiendo la criatura recibirás hasta tres hechizos de rango II relacionados con la criatura en cuestión. Algunos ejemplos de los ámbitos de los que podrían ser estas criaturas son Abisal, Infernal, Celestial, Elemental o Espíritu.
 
 ### Cadenas de la carne
 
-Emergen varios tentáculos de carne que agarran y hacen daño a tus enemigos
+*Transmutación, Ataque, Área, Duradero*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Una hora
+
+Llenas una esfera de tamaño medio con bizarras extremidades de carne deformes que solo buscarán alimentarse desenfrenadamente hasta decaer. Aquellos que se encuentren en el área deberán defenderse o sufrirán 1d8+Inteligencia daño fuerza, una herida permanente leve y quedarán agarrados. Mientras el efecto continúe activo todos los que comiencen su turno en el área o entren en ella sufrirán el mismo efecto. Este efecto sin embargo solamente afectará a criaturas corpóreas y solo podrá emerger desde un cadáver orgánico o una quimera aliada. 
 
 ## Rango V
 
 ### Explotar cuerpo
 
-Objetivo tira CON o su cuerpo explota por dentro. Debe dejar una marca para que sea posible
+*Transmutación, Aflicción*
+
+**Coste:** 1 acciones y 3 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Instantáneo
+
+Un objetivo al que puedas tocar deberá defenderse empleando su Constitución o recibirá una marca de transmutación. Esta marca podrá activarse desde el momento en el que se coloque hasta como máximo una ronda mas tarde, y al hacerlo provocará 3d10+Inteligencia daño fuerza y una herida permanente grave a su objetivo. En el caso de que este ataque reduzca a 0 PV a su objetivo este morirá instantáneamente. 
 
 ### Clon perfecto
 
-Creas un clon de otra criatura que te obedece y con estadísticas peores
+*Transmutación, Pasiva*
+
+Con duro trabajo y los compuestos adecuados puedes estabilizar a una de tus quimeras, perfeccionándola y dándole una identidad única para que te sirva mas eficientemente. De esta manera el nivel de la quimera pasará a ser igual al tuyo menos dos, aunque todavía quedarás limitado al máximo de 4 clones bajo tu control.  
 
 ### Transcender la carne
 
-Inmunidad a aflicciones y heridas permanentes. Regeneración muy rápida
+*Transmutación, Pasiva*
+
+Modificas tu cuerpo para llevarlo un escalón mas alto que el resto de la humanidad, volviéndolo mas resistente y perfecto. De esta manera recibirás inmunidad a Aflicciones y heridas permanentes que no sean graves. Así mismo cada ronda te regenerarás vitalidad igual a tu rango+2 y reducirás el nivel de una herida permanente o aflicción que te aqueje por un paso. 
 
 ## Rango VI
 
 ### Transformación monstruosa
 
-Te transformas en un monstruo poderoso
+*Transmutación, Mejora, Duradera*
+
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Propio
+
+**Duración:** Seis rondas
+
+Mutas una parte de tu ser para transformarla en una horripilante vasija capaz de adaptarse a cualquier eventualidad, mutando desenfrenadamente hasta que ninguna amenaza quede con vida. De esta forma al activar Transformación monstruosa recibirás 40 vida temporal, además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta perder la vitalidad temporal. En el caso de perder los beneficios de Transformación monstruosa por quedarse sin vitalidad temporal no podrá volver a activarse hasta que hayan pasado seis rondas desde el momento en el que esta habilidad fue activada. El resto de beneficios de Transformación monstruosa son los siguientes.
+
++ Tres de tus estadísticas pasarán a ser 12, mientras que tu defensa pasará a ser 14.
++ Activas automáticamente los efectos de Asimilar rasgos, Defensa adaptativa y Esencia de la magia, cuyos hechizos no tendrán costo de chi para ser lanzados, pese a que aún deberás pagar para poder empoderarlos. 
++ Recibes un arma de la misma manera que con Arma ósea, y los efectos de tres inyecciones mutagénicas. 
++ Obtienes 6 contadores de escudo y podrás entrar en posición defensiva como acción bonus una vez por ronda. 
++ En cualquier momento de la ronda como acción bonus puedes cambiar cualquiera de tus características adquiridas empleando 1 chi. 
