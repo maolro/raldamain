@@ -177,35 +177,105 @@ Llamas a un espíritu guardián hecho de plantas y madera para que te asista en 
 
 ## Rango IV
 
-**Florecimiento mortal** (3 AP y 2 chi): Llena un espacio de radio medio (1d8 + 3 objetivos) con flores que desprenden un polen tóxico. Todas las criaturas deben tirar CON frente a tu SAB o sufren un veneno (CON) a paso 1. Cada ronda estas repiten el tiro o avanzan de paso con el veneno. El efecto dura rango + 2 rondas o hasta que pierdas la concentración y si estás en *crecimiento acelerado* cada ronda puedes crear una flor nueva que provoca el efecto a las criaturas en un radio pequeño (1d4 + 2). 
+**Florecimiento mortal**
 
-**Espinas espontáneas** (2 AP y 2 chi): Haz un ataque en un área de radio medio (1d8 + 3 objetivos) que hace 2d8 + SAB daño. Todo el espacio afectado se llena de plantas de la misma manera que *animar plantas* pero infligen 2d8 + SAB daño, no agarran y si impactan a un objetivo debe dejar de moverse. 
+*Naturaleza, Área, Ambiental, Duradera, Concentración*
 
-**Prisión de madera** (2 AP y 2 chi): Haz un ataque que al impactar *agarra* al objetivo y elimina todos los efectos mágicos que tenga. Mientras esté agarrado no podrá usar magia y solo puede intentar escapar una vez por ronda.
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Acelerando el crecimiento de viciosas flores en una zona que designes, eres capaz de cubrir un área con su polen letal y sus zarcillos venenosos, envenenando a tantos como se encuentren en el área hasta la muerte. Todos los que se encuentren dentro de un radio medio del punto de aparición del florecimiento mortal deberán defenderse usando su constitución o sufrirán los efectos de un veneno de constitución. Aquellos que entren en el área o los que comiencen su turno en ella deberán repetir el tiro cada ronda, siendo que aquellos envenenados aumentarán el nivel de veneno en uno en caso de fallar (el veneno seguirá afligiéndolos aunque salgan de la zona afectada). Además, aquellos envenenados que se encuentren en la zona afectada recibirán además desventaja en todos sus tiros.
+
+En caso de emplear esta habilidad en un terreno que ya estuviese afectado por Crecimiento acelerado, entonces usarla costará una acción menos. 
+
+**Armadura de Zarzas**
+
+*Naturaleza, Mejora ,Concentración, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Propio
+
+**Duración:** Concentración
+
+Empleando crecimientos vegetales eres capaz de crear una gruesa y espinosa con la que defenderte de tus enemigos. De esta forma, al crearla, recibirás contadores de escudo iguales a tu rango, además de que podrás hacer un ataque de Espina de madera o Zarcillo enredador como acción bonus una vez por ronda. En el caso de que comiences tu turno en un lugar con muchas plantas recuperarás un contador de escudo. 
+
+**Prisión de madera** 
+
+*Naturaleza, Mejora*
+
+**Coste:** 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Aprovechando las propiedades de las plantas creas una prisión capaz de drenar todo chi de su interior, atrapando para ti a cual sea que sea tu objetivo. Al emplear esta habilidad un objetivo enredado deberá defenderse empleando heroísmo o destrozar o quedará agarrado. En el caso de quedar agarrado, estará atrapado en una prisión que contará con PV iguales a rangox3, y los que se encuentren en ella no podrán magia arcana u objetos mágicos. Así mismo cada ronda podrá volver a repetir el tiro para tratar de liberarse, perdiendo 1 chi de su reserva en caso de fallar. 
 
 ## Rango V
 
-**Furia de la naturaleza** (3 AP y 3 chi): Haz un ataque contra todas las criaturas en un cilindro de radio largo (1d12 + 6 objetivos) que al impactar inflige 2d10 + SAB daño y *agarra*. El terreno pasa a estar afectado por *crecimiento acelerado* que también reduce el movimiento de criaturas voladoras y este ataque hace +1d10 daño si el terreno ya está afectado por *espinas espontáneas*, *animar plantas* o *gran árbol drenador*
+**Furia de la naturaleza** 
 
-**Gran árbol drenador** (3 AP y 3 chi): Formas un gran árbol que al ser invocado hace un ataque contra todas las criaturas en un radio medio (1d8 + 4 objetivos) infligiendo 2d10 + SAB daño físico y 1d6 daño necrótico y tú te regeneras 1 Vitalidad por cada criatura impactada. El árbol tiene rango x 5 PV, rango x 2 DEF y vulnerabilidad al daño fuego y cortante, y este permanecerá en el campo de batalla hasta ser destruido. Cada ronda que permanezca puedes hacer un ataque de *zarcillo enredador, espina de madera* o *enmarañar* como acción bonus que infligirá +1d6 daño necrótico y te regenerará 1 Vitalidad por impacto.
+*Naturaleza, Área, Ataque*
 
-**Naturalizar** (2 AP y 3 chi): Un objetivo *agarrado* o *enredado* tira CON frente a tu SAB o está maldecido. Cada ronda debe repetir el tiro y si fracasa aumentará la maldición por un paso y si fracasa la reduce:
+**Coste:** 2 acciones y 3 chi
 
-- Paso 1: Desventaja en todos los tiros de DES y vulnerabilidad al daño fuego  
+**Alcance:** Lejano
+
+**Duración:** Instantáneo
+
+Provocando un crecimiento espontáneo de la vegetación de la zona puedes hacer que temporalmente se mueva de acuerdo a tu voluntad, atacando a tantos como se encuentren en su radio de alcance. Todos aquellos que se encuentren en una columna de tamaño medio deberán defenderse o sufrirán 3d10+Sabiduría daño cortante y quedarán enredados. Así mismo los afectados deberán tirar heroísmo o destrozar o quedarán agarrados inmediatamente. El área afectada quedará bajo los efectos de crecimiento acelerado, y en caso de que el hechizo se lance en un terreno afectado por animar plantas, este le dará a la Furia de la naturaleza un dado adicional de daño.
+
+**Gran árbol drenador** 
+
+*Naturaleza, Invocación, Mejora*
+
+**Coste:** 3 acciones y 3 chi
+
+**Alcance:** Propio
+
+**Duración:** Una hora
+
+Convocas un gigantesco árbol con el que tomar fuerza vital del suelo mismo para mantenerte en pie, permitiéndote sostenerte con el poder de la naturaleza para seguir luchando. Al convocarlo se creará un árbol al que le podrás transferir el daño que sufras y que te otorgará ventaja en tus tiros de naturaleza. Este árbol tendrá 6xrango PV y rango+3 defensa, además de que será vulnerable al daño fuego. 
+
+En el caso de que este hechizo se lance sobre un elemental de naturaleza, este recibirá 40 vitalidad temporal, aprovechando el crecimiento para volverse mas resistente. 
+
+**Naturalizar** 
+
+*Naturaleza, Maldición*
+
+**Coste:** 1 acciones y 3 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Hasta que termine
+
+Usas la naturaliza para infligir a tu enemigo una terrible maldición, transformándolo lentamente en madera hasta que no quede nada de él. El objetivo deberá defenderse con constitución o sufrirá la primera etapa, teniendo que repetir el tiro cada ronda para evitar que esta avance. Esta maldición solamente podrá curarse con efectos sanadores de igual magnitud o superior.
+
+- Paso 1: Queda ralentizado y recibe vulnerabilidad al daño fuego  
 - Paso 2: Desventaja en todos sus tiros físicos y -1 AP
 - Paso 3: No puede tomar acciones ni reacciones
 - Paso 4: Se transforma en una estatua de madera. Ya no puede volver a tirar.
 
 ## Rango VI
 
-**Guardián de la tierra** (3 AP y 5 chi): Te rodeas de una gran cantidad de materia vegetal para adoptar la forma de una criatura colosal, incrementando enormemente tu fuerza física. Mientras esta habilidad permanezca activa recibirás 40 PV temporales y esta cesará cuando se te acaben los PV temporales o pasen seis rondas. Obtendrás también los siguientes beneficios:
+**Guardián de la tierra** 
 
-- Eres inmune a todos los efectos de toque y a aquellos que provoquen daño de antienergía.
-- Tu resistencia física pasa a ser 20 y tu resistencias arcana y a energía pasan a ser 14. Tus estadísticas de FUE y CON pasan a ser 13 y tu DES pasa a ser 0. Recibes también nivel de talento 5 en heroísmo.
-- Al estar hecho de plantas el elemental provocará el efecto de *crecimiento acelerado* en un radio corto centrado en él. No obstante el daño cortante y fuego atravesará su resistencia al ser más débil frente a ellos. Si el invocador lo escoge puede anular estas características.
-- Aumenta dos de tus movimientos por 1 y tienes visión a ciegas en un radio medio. 
-- Puedes hacer ataques a través del coloso, los cuales simularán un ataque de un arma a rango V. El arma escogida tirará un dado de daño adicional. Puedes también usar las habilidades *planta devoradora de chi*, *prisión de madera*, *espina parasítica* y *enmarañar* sin la necesidad de gastar chi.
-- Te encuentras siempre en *posición defensiva* y recibes un tiro de parada con bonificador +17. Esta parada es física y puede detener ataques a distancia y ataques de área con radio corto o inferior. Seis veces por combate puedes reducir tu tiro de parada por 1 para detener automáticamente un ataque que recibas. Si intentas evitar un golpe crítico o un ataque de área con radio superior vuelve a reduce tu tiro por un punto adicional para deternerlo.
+*Innata, Mejora*
+
+**Coste:** 3 acciones y 5 chi 
+
+**Duración:** Seis rondas
+
+Aceptas el abrazo de la naturaleza para convertirte en su heraldo y defensor, permitiéndote usar su dominio como una extensión de tu cuerpo para deshacerte de las amenazas. Al activar la habilidad recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Guardián de la tierra te otorgará los siguientes beneficios:
+
+- Tu fuerza y constitución pasarán a ser 13, mientras que tu destreza pasará a ser 0. Así mismo tu defensa pasará a ser 20, pudiendo entrar en posición defensiva una vez por ronda como acción gratuita y activando automáticamente Armadura de Zarzas.
+- Recibes resistencia a arcano, fuego, frío y ácido, además de ventaja en tus tiros de naturaleza. 
+- Obtienes un dado de daño adicional en tus ataques de naturaleza y físicos, además de obtener todas las técnicas de un arma de tu elección. 
+- Podrás emplear tus hechizos de naturaleza de hasta rango II de forma gratuita, aunque aún requerirán reserva para poder ser empoderados. 
 
 # Elemental de planta
 
