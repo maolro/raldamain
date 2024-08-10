@@ -24,7 +24,7 @@ Por cada 3 niveles que subas tu familiar también se fortalecerá, aumentando su
 
 *Invocación, Pasiva*
 
-Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, permitiendo que reaccionéis al peligro rápidamente como si fueseis uno. De esta forma, en el caso de que uno de los dos entre en posición defensiva, el otro también podrá en ella como acción bonus. Así mismo ambos podréis compartir vuestros sentidos, impidiendo así también que uno de los pueda ser sorprendido mientras el otro pueda ver la fuente. 
+Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, permitiendo que reaccionéis al peligro rápidamente como si fueseis uno. De esta forma, en el caso de que uno de los dos entre en posición defensiva, el otro también podrá entrar en ella como acción bonus. Así mismo ambos podréis compartir vuestros sentidos, impidiendo así también que uno de los pueda ser sorprendido mientras el otro pueda ver la fuente. 
 
 ## Rango II
 
@@ -32,7 +32,7 @@ Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, p
 
 *Invocación, Pasiva*
 
-A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás apoyar a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad o la habilidad específica que emplees. Así mismo, si tu familiar emplea una acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
+A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás apoyar a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad específica que emplees. Así mismo, si tu familiar emplea una acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
 
 **Empoderar** (1 chi o vigor): Apoyas como acción bonus
 
@@ -40,7 +40,7 @@ A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra cap
 
 *Invocación, Pasiva*
 
-Al igual que vuestros instintos, vuestro chi interno a comenzado a unirse mas profundamente, permitiéndote emplear algunas de las habilidades de tu familiar siempre que este se encuentre presente para orientarse. De esta forma, en caso de compartir habilidades con tu familiar, este podrá emplear tu bonificador en el caso de que este sea mas alto. Así mismo tú podrás emplear sus hechizos o técnicas de combate conocidas pagando el adecuado costo de chi o vigor. Para hechizos o técnicas empleadas de esta manera usarás tu modificador de Magia de invocación, y requerirá de que tu familiar esté consciente. 
+Al igual que vuestros instintos, vuestro chi interno a comenzado a unirse mas profundamente, permitiéndote emplear algunas de las habilidades de tu familiar siempre que este se encuentre presente para orientarte. De esta forma, en caso de compartir habilidades con tu familiar, este podrá emplear tu bonificador en el caso de que este sea mas alto. Así mismo tú podrás emplear sus hechizos o técnicas de combate conocidas pagando el adecuado costo de chi o vigor. Para hechizos o técnicas empleadas de esta manera usarás tu modificador de Magia de invocación, y requerirá de que tu familiar esté consciente. 
 
 ## Rango III
 
@@ -54,7 +54,7 @@ Vuestros destinos han comenzado a entrelazarse, permitiéndoos compartir dicha y
 
 *Innata, Pasiva*
 
-Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu familias has descubierto un nuevo nivel de maestría para empoderarlos de forma que antes no eran posibles. De esta manera obtendrás el conocimiento para convocar a un familiar adicional del mismo nivel al que ya te acompañaba, o en su defecto podrás realizar un ritual para aumentar el nivel de tu familiar actual por dos. Esta decisión volverá a repetirse cuando llegues a rango V.
+Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu familiar has descubierto un nuevo nivel de maestría para empoderarlos de forma que antes no eran posibles. De esta manera obtendrás el conocimiento para convocar a un familiar adicional del mismo nivel al que ya te acompañaba, o en su defecto podrás realizar un ritual para aumentar el nivel de tu familiar actual por dos. Esta decisión volverá a repetirse cuando llegues a rango V.
 
 ## Rango IV
 
