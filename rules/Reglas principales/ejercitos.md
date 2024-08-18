@@ -6,23 +6,21 @@ title: Reglas de Ejércitos
 
 # Tipos básicos de tropa
 
-## Infantería ligera
+## Infantería Ligera
 
 - **Coste base:** 4
 - **Tiro base:** 1d6 Combate, 1d6 A Distancia (alcance 2)
 - **Cohesión:** 2
 - **Movimiento:** 3
 - **Habilidades especiales:** Todoterreno
-- **Posibles mejoras:** Asesino (+1), Incendiario (+1), Élite (+2), Sanador (+2), Invocador (+3), Terraformador (+2)
 
-## Infantería a distancia
+## Infantería a Distancia
 
 - **Coste base:** 7
 - **Tiro base:** 1d6 Combate, 2d6 A Distancia (alcance 4)
 - **Cohesión:** 3
 - **Movimiento:** 3
 - **Habilidades especiales:** Penetrante
-- **Posibles mejoras:** Escudos (+1), Estacas (+1), Mediocre (-2), Élite (+2)
 
 ## Infantería media
 
@@ -30,7 +28,6 @@ title: Reglas de Ejércitos
 - **Tiro base:** 2d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Posibles mejoras:** Arma Pesada (+1), Escudos (+1), Estacas (+1), Impetuoso (+1), Lanza (+1), Apoyo disparo (+1), Armadura (+2), Unidad mixta (+2), Artillería integrada (+3), Mediocre (-2), Élite (+2), Sanador (+2)
 
 ## Infantería pesada
 
@@ -39,7 +36,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 4
 - **Movimiento:** 2
 - **Habilidades especiales:** Armadura
-- **Posibles mejoras:** Escudos (+1), Impetuoso (+1), Arma Pesada (+1), Lanzas (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Mediocre (-2), Élite (+2)
 
 ## Artillería
 
@@ -48,7 +44,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 2
 - **Movimiento:** 1
 - **Habilidades especiales:** Penetrante, Artillería
-- **Posibles mejoras:** Mediocre (-2), Élite (+2)
 
 ## Caballería ligera
 
@@ -57,7 +52,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 2
 - **Movimiento:** 5
 - **Habilidades especiales:** Caballería
-- **Posibles mejoras:** Unidad mixta (+1), Jinete de bestia (+1), Terror (+1), Élite (+2)
 
 ## Caballería media
 
@@ -66,7 +60,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 3
 - **Movimiento:** 4
 - **Habilidades especiales:** Caballería
-- **Posibles mejoras:** Jinete de bestia (+1), Impetuoso (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Terror (+1), Élite (+2), Mediocre (-2), Armadura (+2)
 
 ## Caballería pesada
 
@@ -75,7 +68,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 3
 - **Movimiento:** 3
 - **Habilidades especiales:** Caballería, Armadura
-- **Posibles mejoras:** Jinete de bestia (+1), Impetuoso (+1), Apoyo disparo (+1), Unidad mixta (+2), Artillería integrada (+3), Terror (+1), Élite (+2), Mediocre (-2)
 
 ## Bestia de batalla
 
@@ -84,7 +76,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 3
 - **Movimiento:** 3
 - **Habilidades especiales:** Armadura, Terror
-- **Posibles mejoras:** Artillería integrada (+3), Mediocre (-3), Élite (+3)
 
 ## Milicia
 
@@ -92,7 +83,6 @@ title: Reglas de Ejércitos
 - **Tiro base:** 1d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Posibles mejoras:** Impetuoso (+1), Sacrificable (-1), Sanador (+2)
 
 ## Carreta de guerra
 
@@ -101,7 +91,6 @@ title: Reglas de Ejércitos
 - **Cohesión:** 3
 - **Movimiento:** 3
 - **Habilidades especiales:** Caballería, Armadura
-- **Posibles mejoras:** Impetuoso (+1), Artillería integrada (+2)
 
 # Habilidades
 

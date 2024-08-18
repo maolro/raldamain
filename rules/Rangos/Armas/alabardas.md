@@ -36,7 +36,7 @@ Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcan
 
 Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una distancia respecto a tus enemigos donde puedas mantener el control. Cada vez que impactes un ataque con tu arma puedes *desenganchar* como acción bonus. Además, si te encuentras en *posición defensiva* puedes tirar Esquiva a la vez de Parada al protegerte de un ataque cuerpo a cuerpo y quedarte con el mejor resultado para tu tiro defensivo.
 
-### Preparación contra cargas
+### Preparación contra Cargas
 
 *Alabardas, Duradera, Defensiva*
 
@@ -50,7 +50,7 @@ Preparación contra cargas permanecerá activo hasta que pierdas la concentraci�
 
 ## Rango II
 
-### Ataque lateral
+### Ataque Lateral
 
 *Alabarda, Mejora*
 
@@ -60,7 +60,7 @@ Realizas un ágil barrido con tu arma para atacar a todos tus enemigos cercanos.
 
 Si un enemigo elige emplear Parada para detener tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del que hayan obtenido. En el caso que gaste *contadores de escudo* para detenerlo podrá proteger a cualquier número de criaturas que amenaces con este ataque. Solo puedes emplear esta técnica si tu arma es capaz de provocar daño Cortante.
 
-### Lanzazo penetrante
+### Lanzazo Penetrante
 
 *Alabarda, Mejora*
 
@@ -70,7 +70,7 @@ Clavas tu arma en el cuerpo de tu enemigo para infligirle graves heridas y limit
 
 La lanza permanecerá clavada en tu objetivo hasta que otra criatura la separe de su cuerpo empleando una acción, impidiendo así que puedas atacar con ella mientras se encuentre así. Un enemigo con un arma clavada de esta manera quedará *ralentizado* y cuando se libere de esta recibirá el efecto de estado *sangrado*. Esta habilidad solo puede usarse si tu arma es capaz de provocar daño Perforante.
 
-### Golpe aturdidor
+### Golpe Aturdidor
 
 *Alabarda, Mejora*
 
@@ -78,7 +78,7 @@ La lanza permanecerá clavada en tu objetivo hasta que otra criatura la separe d
 
 Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador de Alabardas o quedará *aturdido* durante una ronda. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Contundente.
 
-### Reposicionar enemigo
+### Reposicionar Enemigo
 
 *Alabarda, Mejora*
 
@@ -88,7 +88,7 @@ Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras 
 
 Mueves tu alabarda de una manera serpenteante para descolocar a un enemigo que intente esquivarte y dejarlo en una mala posición. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador de Alabardas o se mueve un paso en la dirección que elijas y saldrá inmediatamente de *posición defensiva*.  
 
-### Golpe trasero
+### Golpe rasero
 
 *Alabarda, Ataque, Físico*
 

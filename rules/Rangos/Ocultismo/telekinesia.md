@@ -146,7 +146,19 @@ Este hechizo permanecerá activo hasta que pierdas la concentración o el arma s
 
 **Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simultáneamente. 
 
+### Levitación Psíquica
 
+*Telekinesia, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Toque
+
+**Duración:** Concentración
+
+Despiertas el poder de tu mente para adquirir la capacidad de levantarte a ti mismo usando tus poderes telequinéticos. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 1 y Ventaja en todos tus tiros de Esquiva. Esta terminará cuando pierdas la concentración y si la usas en aliados acabará cuando ellos pierdan la concentración.
+
+**Empoderar** (1 chi): Vuelas un paso en cualquier dirección y reduces a la mitad el daño de un ataque que te haya impactado después de aplicar defensa.
 
 ## Rango IV
 

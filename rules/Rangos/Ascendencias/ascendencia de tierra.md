@@ -81,17 +81,15 @@ Incrementa tu estadística de FUE y su limitador por 1.
 
 **Coste:** 2 acciones y 2 chi
 
-Adoptas la dureza de la roca, combinando tu cuerpo con ella para fortalecer tus ataques mas allá de los límites de los guerreros. De esta forma tus ataques físicos infligirán 1d8+rango daño contundente adicional y aumentarán su alcance por un paso. Además, si se emplea *Puños de tierra* en conjunto con esta habilidad tus ataques empujarán un paso al impactar, eliminando un contador de escudo y contando como un efecto de área. 
+Adoptas la dureza de la roca, combinando tu cuerpo con ella para fortalecer tus ataques mas allá de los límites de los guerreros. De esta forma tus ataques físicos infligirán 1d8 + Pango daño contundente adicional y aumentarán su alcance por un paso. Además, si se emplea *Puños de tierra* en conjunto con esta habilidad tus ataques empujarán un paso al impactar, eliminando un contador de escudo y contando como un efecto de área. 
 
-**Inquebrantable como la roca**
+**Inquebrantable como la Roca**
 
 *Innata, Pasiva*
 
 Mientras estés en contacto con la tierra contarás con sus bendiciones para mantenerte en pie, nutriéndote de energía para sanar tu cuerpo a velocidades vertiginosas. De esta manera, mientras te mantengas en contacto con la tierra, podrás regenerar Rango + 1 vitalidad al inicio de tu turno, o en su defecto reducir el nivel de una herida permanente por un paso. Así mismo la primera vez que caigas a 0 PV o por debajo retornarás una vez mas para seguir luchando, volviendo nuevamente a 1 PV.
 
 ## Rango V
-
-Aumenta tu resistencia al daño físico por 1 y tu resistencia mágica por un valor igual a tu rango - 1.
 
 ### Elemento del equilibrio
 

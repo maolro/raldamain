@@ -48,7 +48,7 @@ Aprendes dos hechizos de rango I pertenecientes a una magia relacionada con tu d
 
 *Divina, Maldición*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Medio
 
@@ -58,8 +58,8 @@ Empleas el poder de tu dios para bendecir o castigar a una criatura a distancia 
 
 - Tu objetivo se cura de un efecto de estado negativo que tenga activo.
 - Intentas eliminar una Maldición o efecto Arcano Duradero que tenga activo tu objetivo. Deberás superar el modificador mágico del lanzador de dicho efecto con un tiro de Magia divina.
-- Tu objetivo debe tener éxito en un tiro de CON frente a tu Magia Divina o sufrirá un efecto de estado negativo entre *cegado*, *confundido*, *ralentizado*, *quemado*, *sangrado*, *enfermado* o *fatigado*. El afectado podrá tirar de nuevo cada ronda para intentar liberarse de la maldición.
-- Tu objetivo debe tener éxito en un tiro de CON frente a tu Magia Divina o reduces una de sus Resistencias por un paso durante el resto del combate. Solo podrás escoger Resistencias a magias relacionadas con tu dios.
+- Tu objetivo debe tener éxito en un tiro de Salud frente a tu Magia Divina o sufrirá un efecto de estado negativo entre *cegado*, *confundido*, *ralentizado*, *quemado*, *sangrado*, *enfermado* o *fatigado*. El afectado podrá tirar de nuevo cada ronda para intentar liberarse de la maldición.
+- Tu objetivo debe tener éxito en un tiro de Salud frente a tu Magia Divina o reduces una de sus Resistencias por un paso durante el resto del combate. Solo podrás escoger Resistencias a magias relacionadas con tu dios.
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
 

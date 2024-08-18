@@ -25,7 +25,7 @@ Guerrero divino tiene las siguientes reglas fundamentales que se aplican a cualq
 
 **Duración:** Una ronda
 
-Empoderas tus ataques con el poder de tu divinidad para castigar a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque físico provocarás daño adicional igual a tu Rango + 2. El tipo de dicho daño dependerá de tu dios y debe ser de tipo Fuego, Frío, Ácido, Eléctrico, Sónico, Necrótico o Radiante.
+Empoderas tus ataques con el poder de tu divinidad para castigar a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque físico provocarás daño adicional igual a tu Rango. El tipo de dicho daño dependerá de tu dios y debe ser de tipo Fuego, Frío, Ácido, Eléctrico, Sónico, Necrótico o Radiante.
 
 Esta habilidad te permite de manera alternativa infundir un ataque con un hechizo que conozcas para que afecte al siguiente enemigo que impactes. Dicho hechizo se lanzará como acción bonus y si se trata de un ataque sumará su daño y efectos al ataque infundido. Debes seguir pagando el coste de chi del nuevo hechizo escogido.
 
@@ -49,7 +49,7 @@ Tu dios te ha bendecido con la capacidad de emplear una pequeña porción de sus
 
 *Divina, Pasiva*
 
-Eres capaz de canalizar el poder de tu dios a través de tu cuerpo para empoderar tus habilidades de combate. Tras activar esta habilidad recibirás Ventaja en todos tus tiros de ataque y defensa con armas además de Resistencia al Miedo y Efectos mentales. El bonificador de esta habilidad se aplicará también a todos tus tiros de ataque y defensa con hechizos pertenecientes a categorías relacionadas con tu dios. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
+Eres capaz de canalizar el poder de tu dios a través de tu cuerpo para empoderar tus habilidades de combate. Tras activar esta habilidad recibirás Ventaja en todos tus tiros de ataque y defensa con armas además de Resistencia al Miedo y efectos Mentales. El bonificador de esta habilidad se aplicará también a todos tus tiros de ataque y defensa con hechizos pertenecientes a categorías relacionadas con tu dios. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
 
 Aunque esta habilidad no tenga coste de activación, canalizar el poder de un dios a través de tu cuerpo mortal puede ocasionarte daños internos si lo usas excesivamente. Por ello cuando esta habilidad termine perderás una cantidad de chi o vigor igual a la cantidad de rondas que has pasado con ella activa. Si esta reducción bajara cualquiera de las dos reservas a un valor negativo quedarás *exhausto* y no podrás volver a activarla hasta que realices un descanso largo. En el caso que cayeras a un valor igual o inferior a tu CON negativa caerás *inconsciente* al abandonar dicho estado.
 

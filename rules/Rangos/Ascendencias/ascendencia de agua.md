@@ -39,7 +39,7 @@ Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipu
 
 Infundes uno de tus ataques con el poder del agua para incrementar notablemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Agua, Hielo o Sangre que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de Magia de agua en lugar del que emplearías normalmente en tu tiro de ataque.
 
-Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
+Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
 ### Ecolocación
 

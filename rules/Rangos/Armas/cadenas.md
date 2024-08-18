@@ -52,7 +52,9 @@ Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consig
 
 **Duración:** Concentración
 
-Giras tu cadena con gran velocidad alrededor de ti para impedir que tus enemigos avancen hacia ti. Al activar esta habilidad entrarás en un estado de Danza de cadenas que te otorgará siempre los beneficios de *posición defensiva*. Además, mientras permanezcas en dicho estado la primera vez que un enemigo entre en un espacio a distancia corta de ti puedes hacerle un ataque con tu arma como reacción que le empujará un paso hacia atrás al impactar además de hacerle daño. Danza de cadenas permanecerá activa hasta que pierdas la concentración o seas incapaz de atacar con tu cadena.
+Giras tu cadena con gran velocidad alrededor de ti para impedir que tus enemigos avancen hacia ti. Al activar esta habilidad entrarás en un estado de Danza de cadenas que te otorgará siempre los beneficios de *posición defensiva*. 
+
+Además, mientras permanezcas en dicho estado la primera vez que un enemigo entre en un espacio a distancia corta de ti puedes hacerle un ataque con tu arma como reacción que le empujará un paso hacia atrás al impactar además de hacerle daño. Danza de cadenas permanecerá activa hasta que pierdas la concentración o seas incapaz de atacar con tu cadena.
 
 ## Rango II
 
@@ -134,13 +136,23 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-### Danza de destrucción
+### Danza de Destrucción
 
 **Coste:** 1 acción y 2 vigor
 
 Su siguiente ataque afecta a cada enemigo a distancia cercana e inflige +2d6 daño. Si mantiene la concentración puede repetir este ataque una vez cada ronda sin gastar vigor. Debe estar en Danza de Cadenas.
 
-### 
+### Cadena Reactiva
+
+**Coste:** 2 vigor
+
+Hace un ataque con Cadenas en respuesta a ser atacado y Enreda en caso de éxito, impidiendo que le pueda atacar.
+
+### Agarre Antiaéreo
+
+**Coste:** 2 vigor
+
+Ataca a un enemigo volador quien se defiende con Desventaja. Si le impacta queda *agarrado* y le estampa contra el suelo, infligiéndole +2d6 daño.
 
 ## Rango V
 
@@ -150,6 +162,16 @@ Su siguiente ataque afecta a cada enemigo a distancia cercana e inflige +2d6 da�
 
 Un enemigo agarrado tira CON o sufre el daño del arma con +3d6 daño, herida leve y se empieza a ahogar. Si reduce a 0 PV lo mata instantáneamente partiéndole el cuello.
 
+### Control múltiple
 
+Puede agarrar hasta dos enemigos diferentes con sus cadenas y no sufrirá ninguna penalización al movimiento por ello.
+
+### Arma humana
+
+**Coste:** 3 vigor
+
+Usa a un enemigo agarrado como un arma para atacar a todos los enemigos en un radio corto o una línea media. Este ataque inflige +2d6 daño a todos los he
 
 ## Rango VI
+
+### Maestría con Cadenas

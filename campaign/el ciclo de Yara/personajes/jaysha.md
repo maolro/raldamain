@@ -16,7 +16,7 @@ Hija del mejor artífice de Klonum, Jaysha ha crecido en un mundo de maravillas 
 
 ## Rasgos
 
-Jaysha es una persona extrovertida y visionaria con gran curiosidad por nuevas experiencias. Ella ve a las nuevas tecnologías como una manera de mejorar el mundo y siempre piensa en nuevas maneras de ayudar. Jaysha siente una pasión por nuevas experiencias, el cual le ha impulsado a aprovechar la vida al máximo, viajando a tierras lejanas y pasando por varias relaciones amorosas. Su vida hedonista ha provocado que corran una multitud de cotilleos y rumores sobre ella, cada uno más escandaloso que el anterior. Pero la verdadera motivación de  Jaysha es conseguir que la felicidad vuelva a su hogar, la cual desvaneció después de la trágica muerte de su madre. 
+Jaysha es una persona extrovertida y visionaria con gran curiosidad por nuevas experiencias. Ella ve a las nuevas tecnologías como una manera de mejorar el mundo y siempre piensa en nuevas maneras de ayudar. Jaysha siente una pasión por nuevas experiencias, el cual le ha impulsado a aprovechar la vida al máximo, viajando a tierras lejanas y pasando por varias relaciones amorosas. Su vida hedonista ha provocado que corran una multitud de cotilleos y rumores sobre ella, cada uno más escandaloso que el anterior. Pero la verdadera motivación de Jaysha es conseguir que la felicidad vuelva a su hogar, la cual desvaneció después de la trágica muerte de su madre. 
 
 ## Historia
 

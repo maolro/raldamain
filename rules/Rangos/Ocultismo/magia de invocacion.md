@@ -32,7 +32,7 @@ Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, p
 
 *Invocación, Pasiva*
 
-A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás apoyar a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad o la habilidad específica que emplees. Así mismo, si tu familiar emplea una acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
+A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás *apoyar* a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad o la habilidad específica que emplees. Así mismo, si tu familiar emplea una Acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
 
 **Empoderar** (1 chi o vigor): Apoyas como acción bonus
 
@@ -62,7 +62,7 @@ Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu
 
 *Innata, Pasiva*
 
-Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Debido a eso ahora vuestra naturaleza ha comenzado a mezclarse, no siendo dos individuos separados sino dos partes de un todo. Por ello todas las resistencias que tenga tu familiar te serán compartidas contigo, así como tus resistencias, que se compartirán con tu familiar. 
+Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Debido a eso ahora vuestra naturaleza ha comenzado a mezclarse, no siendo dos individuos separados sino dos partes de un todo. Por ello todas las Resistencias que tenga tu familiar te serán compartidas contigo, así como tus resistencias, que se compartirán con tu familiar. 
 
 **Empoderar** (1 chi o vigor): Empleas el modificador de tu Familiar para defenderte de un efecto hostil o la Invocación emplea el tuyo.
 
@@ -72,7 +72,9 @@ Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas p
 
 **Alcance:** Medio
 
-Empleando las cadenas con las que mantienes la esencia de tu familiar con una forma definida y atada al mundo puedes intervenir en la conexión de otros usuarios de criaturas con la misma naturaleza. De esta manera podrás tirar contra el control de un familiar o criatura invocada hostil, que deberá defenderse empleando su nivel+2. En caso de tener éxito el amo de la criatura perderá el control de ella durante una ronda, dándole como resultado el efecto de estado confundido. En caso de afectar a una invocación sin amo podrás controlarla durante una ronda en caso de que esta falle el tiro, controlándola durante un día en el caso de que tengas éxito en este tiro dos veces. En caso de desearlo podrás seguir repitiendo este tiro contra la invocación controlada cada día, la cual te será leal cuando te ganes su confianza, permitiéndote que ya no tengas que tirar mas. Puedes tener un máximo de 6 familiares de esta manera. 
+Empleando las cadenas con las que mantienes la esencia de tu familiar con una forma definida y atada al mundo puedes intervenir en la conexión de otros usuarios de criaturas con la misma naturaleza. De esta manera podrás tirar contra el control de un familiar o criatura invocada hostil, que deberá defenderse empleando su nivel + 2. En caso de tener éxito el amo de la criatura perderá el control de ella durante una ronda, dándole como resultado el efecto de estado confundido. 
+
+Si afectas a una invocación sin amo podrás controlarla durante una ronda en caso de que esta falle el tiro, controlándola durante un día en el caso de que tengas éxito en este tiro dos veces. En caso de desearlo podrás seguir repitiendo este tiro contra la invocación controlada cada día, la cual te será leal cuando te ganes su confianza, permitiéndote que ya no tengas que tirar mas. Puedes tener un máximo de 6 familiares de esta manera. 
 
 ## Rango V
 
@@ -84,9 +86,9 @@ Empleando las cadenas con las que mantienes la esencia de tu familiar con una fo
 
 **Duración:** 6 rondas.
 
-Compartes una parte de la misma esencia que te da vida con tu familiar, empoderando su chi interno y haciendo que el vínculo que os une se vuelva mas fuerte que nunca. De esta manera un familiar que controles recibirá 20 vialidad temporal, además de ventaja en todos sus tiros. Así mismo aumentará su defensa por 6 y recibirá 4 contadores de escudo. En caso de perder la vitalidad temporal sin embargo deberás tirar invocación o tu familiar perderá el control, quedando confundido por la cantidad de energía que ya no es capaz de manejar. 
+Compartes una parte de la misma esencia que te da vida con tu familiar, empoderando su chi interno y haciendo que el vínculo que os une se vuelva mas fuerte que nunca. De esta manera un familiar que controles recibirá 20 vialidad temporal, además de Ventaja en todos sus tiros. Así mismo aumentará su defensa por 6 y recibirá 4 contadores de escudo. En caso de perder la Vitalidad temporal sin embargo deberás tirar invocación o tu familiar perderá el control, quedando confundido por la cantidad de energía que ya no es capaz de manejar. 
 
-### Unidos hasta la muerte
+### Unidos hasta la Muerte
 
 **Coste:** 1 acción y 3 chi o vigor
 

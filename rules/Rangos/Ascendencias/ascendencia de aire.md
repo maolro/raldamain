@@ -37,6 +37,10 @@ Incrementa tu estadística de DES y su limitador por 1.
 
 *Innata, Mejora*
 
+**Coste:** 1 vigor o chi
+
+**Duración:** Una ronda
+
 Cargas un ataque con tu poder elemental para lanzar a tus enemigos por los aires o impactarles con el poder de una tormenta. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo podrás lanzar un hechizo de Aire o Tormenta que conozcas como acción bonus contra ese mismo objetivo. 
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.

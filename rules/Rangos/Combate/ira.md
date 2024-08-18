@@ -91,9 +91,9 @@ Ni la magia ni los escudos son capaces de detener tus impactos. En respuesta a q
 
 **Duración:** Cinco rondas
 
-Rompes tus límites físicos para alcanzar niveles sobrehumanos de fuerza durante un breve periodo de tiempo. Hasta que termine esta habilidad recibirás 20 Vitalidad temporal y tus estadísticas de FUE, DES y CON pasarán a ser 12. Aumenta también tu DEF por 5 y una vez por ronda podrás reducir el coste de vigor de una técnica de arma por 1 (mínimo 0).
+Rompes tus límites físicos para alcanzar niveles sobrehumanos de fuerza durante un breve periodo de tiempo. Mientras esta habilidad permanezca activa recibirás 20 Vitalidad temporal y tus estadísticas de FUE, DES y CON pasarán a ser 12. Aumenta también tu DEF por 5 y una vez por ronda podrás reducir el coste de vigor de una técnica de arma por 1 (mínimo 0).
 
-Esta habilidad solo podrá activarse estando en Ira y los bonificadores de esta se apilarán con aquellos que recibas en dicho estado. Perderás los beneficios de Superar los límites si llegas a perder todos tus PV temporales o una habilidad te fuerza a salir de Ira.
+Esta habilidad solo podrá activarse estando en Ira y los bonificadores de esta se acumularán con aquellos que recibas en dicho estado. Perderás los beneficios de Superar los Límites si llegas a perder toda la Vitalidad temporal o una habilidad te fuerza a salir de Ira.
 
 ### Furia invulnerable
 

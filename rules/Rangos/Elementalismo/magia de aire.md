@@ -92,7 +92,7 @@ Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un
 
 *Aire, Ataque, Cuerpo a cuerpo, Duradera*
 
-**Coste**: 1 y 1 chi
+**Coste**: 1 acción y 1 chi
 
 **Alcance**: Cuerpo a cuerpo
 

@@ -16,7 +16,7 @@ Estilo de Escudos tiene las siguientes reglas fundamentales que se aplican a cua
 
 ## Rango I
 
-### Golpe de escudo
+### Golpe de Escudo
 
 *Escudo, Ataque, Físico, Cuerpo a cuerpo*
 
@@ -30,7 +30,7 @@ Estilo de Escudos tiene las siguientes reglas fundamentales que se aplican a cua
 
 Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Escudo.
 
-### Estilo defensor
+### Estilo Defensor
 
 *Pasiva, Innata*
 
@@ -38,17 +38,17 @@ Tu estilo se centra en asegurarte que ningún de tus aliados acabe herido, ponie
 
 Tu escudo también te proporcionará cierta cantidad de *contadores de escudo* iniciales que puedes emplear para reducir el daño de ataques que recibas. La cantidad exacta de contadores dependerá del escudo escogido y este recibirá el efecto de estado *roto* cuando gastes su último contador. Dichos contadores se recuperarán tras reparar tu escudo, un proceso que tardará como mínimo una cantidad de tiempo igual a un descanso largo.
 
-### Carga con escudo
+### Carga con Escudo
 
 *Escudo, Mejora*
 
 **Coste:** 1 vigor
 
-Cargas junto a tu escudo para arrollar a todo enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. Si tienes otras habilidades relacionadas por cargas podrás activarlas también al hacer una Carga con escudo sin la necesidad de gastar acciones.
+Cargas junto a tu escudo para derribar a un enemigo en tu camino. Tras moverte un paso en línea recta puedes emplear esta habilidad como acción bonus para hacer un ataque con tu Escudo como acción bonus contra un enemigo adyacente. Dicho ataque aumentará su daño base por 1d6 y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. Si tienes otras habilidades relacionadas por cargas podrás activarlas también al hacer una Carga con escudo sin la necesidad de gastar acciones.
 
 ## Rango II
 
-### Defensa absoluta
+### Defensa Absoluta
 
 *Escudo, Defensiva, Duradera*
 
@@ -60,7 +60,7 @@ Entras en un estado de defensa absoluta donde te centras única y exclusivamente
 
 Mantener la Defensa absoluta requiere que te muevas de manera lenta y cuidadosa, recibiendo así Desventaja en todos tus relacionados con tu estadística de Destreza y en tiros de ataques además que no puedes moverte más de un paso por ronda. Si te encuentras en Defensa absoluta no podrás entrar en Ira ni emplear los efectos de habilidades relacionados con ella, abandonando así dicho estado de inmediato en el caso que lo hicieras.
 
-### Detener ataque
+### Detener Ataque
 
 *Escudo, Reacción*
 
@@ -68,7 +68,7 @@ Mantener la Defensa absoluta requiere que te muevas de manera lenta y cuidadosa,
 
 Eres capaz de emplear tu escudo con tal soltura que puedes detener ataques enemigos sin preocuparte que este se rompa. Al activar esta habilidad puedes recuperar inmediatamente una cantidad de *contadores de escudo* igual a la mitad de tu Rango (redondeando hacia abajo) empleados para detener un ataque enemigo. Esta habilidad solo puede activarse si te encuentras en *posición defensiva*.
 
-### Reposición forzosa
+### Reposición Forzosa
 
 *Escudo, Reacción*
 
@@ -78,35 +78,65 @@ Empleas tu escudo para manipular los movimientos de un enemigo para que acabe en
 
 ## Rango III
 
-### Mente custodiada
+### Mente Custodiada
 
-Inmunidad al miedo y efectos mentales si te encuentras en forma defensiva
+*Escudos, Pasiva*
 
-### Carga poderosa
+Tu mente se encuentra tan protegida como tu cuerpo. Recibes Resistencia a efectos Mentales y Miedo además que puedes gastar *contadores de escudo* para mejorar tu tiro defensivo frente a un efecto de esas categorías, recibiendo así un modificador +10 por cada contador empleado de esta manera. 
 
-Daño mejorado y aturde al impactar
+### Carga Poderosa
 
-### Combinar técnicas
+*Escudos, Ataque, Maniobra, Aturdimiento*
 
-**Carga poderosa:** Al realizar una carga el daño de *golpe de escudo* aumentará en 1d6 y al impactar el objetivo tendrá que tirar constitución frente a tu fuerza o pasará a estar aturdido durante una ronda. Podrás además atacar a cada objetivo en tu camino con el escudo al moverte. 
+**Coste:** 1 acción y 2 vigor
 
-**Barrera móvil:** Al entrar en posición defensiva todos los aliados que se encuentren detrás de ti recibirán también sus efectos sin la necesidad de gastar acciones.
+**Duración:** Instantáneo
+
+Cargas salvajemente con escudo en mano, arrollando a cada enemigo que ose interponerse en tu camino. Al activar esta técnica te mueves dos pasos en cualquier dirección y haces un ataque con tu Escudo a cada enemigo que se encuentre en tu camino. Dicho ataque aumenta su daño base por 1d6 y cada enemigo que impacte deberá hacer un tiro de Salud frente a tu modificador de Escudos o quedará *aturdido* durante una ronda y cae *tropezado*. Cabe recalcar que cargar de esta manera no te hará salir de Forma Defensiva.
+
+### Combinar Técnicas
+
+*Escudos, Reacción*
+
+**Coste:** 2 vigor
+
+**Duración:** Instantáneo
+
+Compenetras tus ataques con arma y escudo a la perfección para golpear a tu enemigo en cada apertura que tenga. En respuesta a impactar a un enemigo con tu Escudo puedes hacerle un ataque con tu arma principal como reacción. Dicho ataque puede ser mejorado con otras técnicas de combate salvo esta misma y no puedes emplear Combinar Técnicas en ataques que no te hayan costado una acción.
 
 ## Rango IV
 
-### Mantener posición
+### Mantener Posición
 
-Resistencia a maniobras y puede hacer ataques contra enemigos que entren en su área amenazada
+*Escudos, Pasiva*
 
+Cuando obtienes control de una posición no hay nadie capaz de moverte. Obtienes Resistencia a Maniobras y efectos de Aturdimiento además que puedes gastar un *contador de escudo* para recibir un modificador +10 contra esos efectos. 
 
+Si te encuentras en Forma Defensiva puedes atacar a cada enemigo que entre en una posición adyacente a ti como reacción. Un impacto exitoso hará que tu objetivo no pueda seguir avanzando, haciendo así que malgaste las acciones empleadas en moverse.
+
+### Protector Incansable
+
+*Escudos, Duradera*
+
+**Coste:** 1 acción y 2 vigor
+
+**Duración:** Concentración o hasta que termine.
+
+Centras todo tu esfuerzo en proteger a un aliado, recibiendo golpes por él que matarían a cualquiera. Mientras este efecto permanezca activo cada vez que un ataque enemigo impacte a un aliado adyacente podrás recibir la mitad del daño de ese ataque. Puedes también gastar *contadores de escudo* que tengas para reducir el daño que reciba tu aliado. Este efecto permanecerá activo hasta que pierdas la concentración o te separes de tu aliado.
 
 ## Rango V
 
+### Escudo Viviente
 
+*Escudo, Mejora, Duradera*
 
-**Maestría con escudo:** Al entrar en *forma defensiva* tu fuerza y constitución aumentarán por 4 en lugar de por 2. Mientras permanezcas en *forma defensiva* también podrás repetir un tiro defensivo por ronda sumándole una ventaja
+**Coste:** 3 vigor
 
-**Detener hechizos:** Puedes bloquear ataques de área con tu escudo y no sufrirás daño obligatorio si los bloqueas de forma exitosa. Si te encuentras en forma defensiva los aliados adyacentes también se beneficiaran de esta habilidad.
+**Duración:** Cinco rondas
+
+Rompes tus límites físicos para resistir una cantidad inimaginable de golpes, transformándote en un escudo viviente. Mientras este efecto permanezca activo tus estadísticas de FUE y CON pasarán a ser 12 y recibirás 20 Vitalidad Temporal. Todo el daño que sufras en este estado quedará reducido a la mitad sin importar su naturaleza, lo cual se acumula con otras habilidades de efecto similar como Resiliencia o Resistencias que poseas.
+
+Esta habilidad solo podrá activarse estando en Forma Defensiva y los bonificadores de esta se acumularán con aquellos que recibas en dicho estado. Perderás los beneficios de Escudo Viviente si llegas a perder toda la Vitalidad temporal o una habilidad te fuerza a salir de Forma Defensiva.
 
 ## Rango VI
 

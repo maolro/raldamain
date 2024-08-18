@@ -45,7 +45,9 @@ Si escoges un ataque este impactará de manera automática, sumando su daño bas
 
 ### Visión térmica
 
-Puedes percibir el calor de las criaturas a distancia media.
+*Innata, Pasiva*
+
+Desarrollas un sentido especial que te permite percibir el calor a tu alrededor. Este sentido te permite detectar todos los seres vivos a distancia media de ti que emitan calor de alguna manera. Visión Térmica puede activarse o desactivarse como acción bonus y te permite detectar criaturas ocultas o invisibles. 
 
 ## Rango III 
 

@@ -105,8 +105,6 @@ Un sello durará seis rondas o hasta que sea eliminado y un personaje no podrá 
 
 ## Rango III
 
-Tus hechizos Protectores de Rango I reducen su coste en acciones por 1 (mínimo 1).
-
 ### Retener persona
 
 *Protectora, Arcana, Agarre*

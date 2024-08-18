@@ -149,7 +149,7 @@ Mientras la criatura permanezca *agarrada* fallará todos sus tiros contra otras
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Levitación
+### Burlar la Gravedad
 
 *Gravedad, Duradero*
 
@@ -157,7 +157,7 @@ Mientras la criatura permanezca *agarrada* fallará todos sus tiros contra otras
 
 **Duración:** Concentración
 
-Burlas a la gravedad misma para obtener la capacidad de volar. Al activar este hechizo obtendrás velocidad de vuelo 1 además de Resistencia a ataques a distancia. Este efecto durará hasta que pierdas la concentración o pase una hora.
+Burlas a la gravedad misma para obtener la capacidad de volar. Al activar este hechizo obtendrás velocidad de vuelo 1 además de Ventaja en todos tus tiros de Esquiva. Este efecto durará hasta que pierdas la concentración o pase una hora.
 
 **Empoderar** (1 chi): Vuelas un paso en cualquier dirección y reduces a la mitad el daño de un ataque que te haya impactado después de aplicar defensa.
 

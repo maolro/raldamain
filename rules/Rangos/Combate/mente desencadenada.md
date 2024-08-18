@@ -58,7 +58,7 @@ Has desarrollado la capacidad de mantener la concentración en situaciones de gr
 
 *Mente desencadenada, Innata, Pasiva*
 
-Eres capaz de despertar tu poder mágico interior a costa de expoliar tu mente. Mientras te encuentres en Mente desencadenada puedes reducir tu cordura por 2 para recuperar 1 chi de tu reserva. Esta habilidad solo puede emplearse un máximo de tres veces por ronda.
+Eres capaz de despertar tu poder mágico interior a costa de expoliar tu mente. Mientras te encuentres en Mente desencadenada puedes reducir tu cordura por 2 para recuperar 1 chi de tu reserva. Esta habilidad solo puede emplearse un máximo de tres veces por ronda y la cordura perdida de esta manera no puede sanarse hasta que pase por lo menos un día.
 
 ## Rango IV
 
