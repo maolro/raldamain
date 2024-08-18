@@ -114,72 +114,128 @@ Una criatura maldita tampoco es capaz de recuperar cordura de ninguna manera y c
 
 ## Rango III
 
+Los sueños que construyas ahora podrán tener hasta un máximo de dos capas. 
+
 ### Invocación onírica
 
-Invocas una criatura onírica que te obedece. Si la invocas en su plano puede tener nivel superior a costa que puede no obedecerte.
+*Onírica, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Una hora
+
+Abriendo una grieta entre el plano terrenal y el mundo onírico permites que una criatura de una de las cuatro capas cruce a nuestra dimensión bajo tu control. De esta forma invocarás a una criatura de nivel 6 o menor, que podrá ser construida con arquetipos. Esta aumentará su nivel máximo por 2 por cada rango adicional que consigas en esta rama. A través de este método no podrás tener mas de cuatro invocaciones simultáneamente. 
+
+En caso de invocar a la criatura dentro del plano onírico esta podrá superar el límite de nivel, sin embargo seguirá su propia naturaleza, pudiendo así desobedecerte. 
 
 ### Duelo psíquico
 
-Retas a un enemigo a un duelo psíquico, entrando tanto tú como él en el plano onírico. Mientras dure el duelo ambos estáis inconscientes y solo acabará si uno de los participantes es herido en la vida real, logra escapar en su turno (superándote en un tiro) o muere. Aquel que muera tendrá su cordura reducida a 0 y puedes escoger despertarlo o mantenerlo inconsciente durante un día.
+*Onírica, Mental*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Hasta que termine.
+
+Empleando tu dominio del plano onírico puedes infundir el sueño en un objetivo de tu interés, arrastrando su mente con la tuya a un plano del mundo onírico. Al hacerlo tu objetivo podrá defenderse contra tu modificador empleando su Voluntad o Concentración, y en caso de que tengas éxito ambos iréis a un dominio onírico donde podréis entablar un combate. En este duelo podréis usar vuestras habilidades y tendréis una copia de todos los objetos que poseíais en el plano terrenal. El duelo terminará cuando uno de los dos participantes muera, cayendo automáticamente a 0 cordura y quedando inconsciente durante un día, uno de los dos consiga escapar del duelo o sea herido en el mundo real. 
+
+Como se ha explicado, solo la mente viajará al plano onírico para realizar el duelo, por lo que los cuerpos de ambas partes quedarán vulnerables en un estado inconsciente hasta que el duelo termine. 
 
 ### Avatar onírico
 
-Al entrar en el plano onírico y puedes cambiar tus estadísticas a otras que escojas del mismo nivel. Debes conservar por obligación tus rangos de Magia Onírica.
+*Pasiva, Mejora*
 
-Los sueños que creas pueden tener hasta 2 capas.
+Al entrar en el plano onírico eres capaz de emplear las energías que lo conforman para cambiar por completo tus características y habilidades, atado a los límites de tu imaginación y la cantidad de energía onírica que seas capaz de reunir a tu alrededor. De esta manera, al entrar en el plano onírico, podrás cambiar tus estadísticas de cualquier manera mientras mantengas el límite de nivel. 
 
-<u>Duelo psíquico</u> (2 acciones): Usando dos acciones puedes instigar un duelo psíquico con una criatura de tu elección, atrapando tanto su mente como la tuya en un demiplano perteneciente a la dimensión de los sueños. Si tu objetivo no desea luchar puede tirar SAB contra tu de magia onírica para resistir este efecto. El demiplano que creas puede tener el aspecto que tú desees, pudiendo asemejarse hasta al mundo real. Los partícipes en un duelo psíquico que estén conscientes de su situación podrán usar el poder de su mente para atacar o defenderse, empleando su magia mental (su estadística de INT o CAR) para dichos tiros. Estas manifestaciones mentales pueden tener la forma que el creador desee, pero harán siempre 1d8 + INT/CAR daño base y tendrán efectos adicionales al reducir los PV según el tipo de daño que sean (quemar si es daño fuego, ralentizar si es daño frío...). La resistencia mental reducirá todo el daño que sufra una persona dentro de un duelo psíquico.
-
-Los duelos psíquicos concluirán cuando un partícipe sea reducido a 0 PV o ambos acuerden un final. El perdedor de un duelo psíquico se despertará con el efecto de estado *[Fatigado](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#fatigada)* y su cordura se reducirá a 0 hasta que tome un descanso largo.
-
-<u>Inducción mental</u> (pasiva): Conoces cómo entrar en los sueños de una persona de tu elección, invadiendo su mente y descubriendo los secretos de su subconsciente. Para utilizar inducción mental debes realizar antes de dormirte un ritual de 10 minutos de duración utilizando como componente un objeto que pertenezca a tu objetivo. Para tener éxito en el ritual debes tener éxito en un tiro de magia onírica contra una dificultad decidida por el máster según la distancia y la familiaridad de tu objetivo. Si tu objetivo se encuentra a menos de 60 pies de ti y está durmiendo tendrás éxito automático en el ritual.
-
-Al entrar en los sueños de un objetivo aparecerás dentro del sueño que esté teniendo tu objetivo, el cual se basará en los recuerdos y preocupaciones de este. Ahí puedes interactuar con tu objetivo quién recordará determinados detalles de la conversación contigo al despertarse. Los sueños de una persona también son una puerta hacia su subconsciente y puedes aprovecharte de ello para entrar en la mente de tu objetivo de forma más profunda. El aspecto de capas más profundas quedan decididas por el máster y en ellas podrás utilizar efectos mentales contra tu objetivo sin que este pueda resistirse, pero estarán repletas de guardianes de nivel igual a la SAB de tu objetivo x 2. Si mueres en una capa particularmente profunda puedes sufrir daño a la cordura o hasta una *[locura permanente](https://raldamain.com/rules/Reglas%20adicionales/locura.html)* cuando te despiertes.
+Así mismo tendrás la restricción de que aún deberás conservar tus rangos en magia onírica, independientemente del resto de modificaciones que realices a tus estadísticas. 
 
 ## Rango IV
 
 ### Moldear el sueño
 
-Mientras mantengas la concentración puedes alterar el terreno del sueño al que desees y crear cualquier cantidad de efectos ambientales. Este hechizo también puede usarse en zonas influenciadas por el plano onírico.
+*Onírica, Área, Ambiental, Concentración*
+
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño:** Esfera grande
+
+**Duración:** Concentración
+
+Tu capacidad para crear y mantener la energía del plano onírico ha llegado al punto de permitirte no solo cambiarte a ti mismo a lo que haga contacto directo contigo sino que ahora también eres capaz de modificar porciones enteras del terreno. Al encontrarte en el plano onírico, o en un lugar con suficiente influencia del plano onírico, podrás crear modificar el terreno y las estructuras que desees a placer. Una vez creado un paisaje, y mientras mantengas la concentración en el efecto, podrás emplear 2 acciones en cualquier momento para modificarlo nuevamente. 
 
 ### Sueño compartido
 
-Tienes un demiplano onírico que controlas y puedes transportar a otras criaturas aliadas ahí
+*Onírica, Pasiva* 
+
+Empleando tu control y dominio creciente sobre el plano onírico has descubierto una manera de tomar posesión de una fracción de él y hacerlo tuyo, creando un demiplano bajo tu control. Mientras mantengas este demiplano podrás viajar a él siempre que desees, y podrás permitir que tus aliados viajen a él mientras estén durmiendo independientemente de la distancia. 
 
 ### Títere de pesadilla
 
-Tomas control de una criatura que esté durmiendo, convirtiéndola en un títere. Si usas esta habilidad desde el interior de su mente puedes llegar a controlar sus acciones.
+*Onírica, Mental, Maldición*
 
-<u>Pesadilla</u> (pasiva): Al invadir los sueños de una persona podrás emplear tu magia para darle horripilantes pesadillas, impidiendo que pueda descansar adecuadamente y provocándole daño a su cordura. Con esta habilidad puedes hacer un *[duelo psíquico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-iii)* contra una persona que estés afectando con *[inducción mental](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-iii)*. Los guardianes de la mente de tu objetivo participarán también en dicho duelo para expulsarte de la mente que estás invadiendo. Si tienes éxito en el duelo reducirás la cordura de tu objetivo a 0 y podrás controlar su cuerpo durmiente como si fuese un títere. Pesadilla cuenta como un efecto mental para los propósitos de resistencia y puede ser eliminada con *[Eliminar magia](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20protectora.html#rango-ii)* o *[Exorcizar](https://raldamain.com/rules/Rangos/Ocultismo/medium.html)*.
+**Coste:** 1 acciones y 2 chi
 
-<u>Sueño compartido</u> (pasiva): El poder de tu mente te permite formar un demiplano onírico el cual puedes compartir con otras criaturas soñadoras. Para formar un sueño compartido debes realizar un ritual de meditación conjunta junto con cualquier número de personas, quiénes al dormir unirán sus mentes formando el demiplano. Tú decides la forma y aspecto de dicho demiplano, además de las propiedades mágicas de este y los permisos que concedes a quiénes entren en él. Podrás añadir a cualquier criatura que se encuentre en el mundo de los sueños sin la necesidad que esta realice el mismo ritual que tú, pudiendo así formar un sueño compartido con personas localizadas a grandes distancias. 
+**Alcance:** Medio
 
-Un personaje con rangos en magia onírica puede usar sus poderes para tomar control de un sueño compartido enfrentándose a su propietario a través de un *[duelo psíquico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-iii)*. Esto sólo podrá usarse si el mago onírico tiene privilegios de parte del creador para utilizar magia o ha invadido la mente de uno de los invitados utilizando *[inducción mental](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-iii)*.
+**Duración:** Concentración
+
+A medida que aprendes mas sobre las criaturas oníricas también vas obteniendo conocimientos del subconsciente conectado del resto de humanos con el plano onírico, poco a poco obteniendo una idea de como utilizarlo a tu beneficio. De esta manera, al emplear la habilidad en un objetivo que se encuentre dormido, podrás impulsar sus acciones mientras la persona se mantiene sonámbula. Además, en caso de que te encuentren en ese momento dentro de sus sueños, al afectar al objetivo con la habilidad podrás controlar directamente las acciones de su cuerpo como si fuese tuyo. 
 
 ## Rango V 
 
+Los sueños que crees ahora podrán tener hasta un máximo de tres capas. 
+
 ### Portal onírico
 
-Creas un portal al plano onírico que te permite emplear tus habilidades en un radio grande como si fuera un sueño.
+*Onírica, Espacial, Concentración*
+
+**Coste:** 3 acciones y 3 chi
+
+**Tamaño:** Radio grande
+
+**Duración:** seis rondas
+
+Abriendo una enorme herida en la frontera entre nuestro plano y el onírico permites que durante unos momentos ambos coexistan como uno, permitiendo manifestar sueños y pesadillas en nuestro mundo a placer. Al hacerlo aparecerá un portal que conectará con el plano onírico, consagrando el terreno afectado para las criaturas del plano onírico. Así mismo, mientras la grieta permanezca abierta podrás emplear todas tus habilidades como si te encontrases en el plano onírico.
 
 ### Microcosmo
 
-Tus sueños son indistinguibles de la realidad y puedes atrapar a otras criaturas en demiplanos oníricos. Si una persona muere en la vida real su mente quedará atrapada en el microcosmo.
+*Onírica, Mental*
+
+**Coste:** 2 acciones y 3 chi
+
+**Alcance:** Medio
+
+**Duración:** Hasta que sea eliminada
+
+Fundiendo realidad y sueños dentro de tu dominio eres capaz de engañar a los sentidos de incluso los mas ávidos observadores, creando una prisión que no requerirá de rejas para mantener a tus víctimas atrapadas por la eternidad. Para emplear la habilidad deberás usarla contra un objetivo cuya mente ya se encuentre en el plano onírico, y esta deberá defenderse empleando Concentración o Voluntad contra tu modificador para evitar ser atrapada. En caso de tener éxito la persona quedará atrapada en un dominio indistinguible de la realidad, solo pudiendo repetir el tiro para liberarse en caso de morir dentro del microcosmos. 
+
+En caso de que aquel que sea atrapado en el microcosmos sea asesinado en la vida real, entonces su mente quedará atrapada en el plano onírico definitivamente. 
 
 ### Manifestar pesadilla
 
-Invocas la peor pesadilla de un enemigo como un poderoso monstruo que además le da una fobia. Si es invocado en el plano onírico se vuelve mucho más fuerte.
+*Onírica, Invocación*
 
-Los sueños que creas pueden tener hasta 3 capas.
+**Coste:** 3 acciones y 3 chi
 
-<u>Viaje onírico</u> (tres acciones): Tu dominio de los sueños te permite acceder el mundo onírico estando despierto, abriendo puertas a mundos de belleza fantástica o horrores impensables. Formar un portal onírico te cuesta tres acciones y perdurará mientras mantengas la concentración. El portal se manifestará en un punto aleatorio de dicho mundo decidido por el máster. Viaje onírico puede usarse para acceder a un demiplano compartido o escapar de él siempre y cuando tengas permiso de su creador. Un portal onírico que permanezca abierto más de 5 turnos infundirá la tierra dónde se encuentra de energía onírica, permitiendo que toda criatura que duerma en dicha zona pueda acceder al mundo onírico y provocando apariciones de criaturas nativas de dicho mundo.
+**Alcance:** Medio
 
-<u>Microcosmo</u> (pasiva): Los sueños que formas son indistinguibles de la realidad, atrapando hasta a los más astutos observadores en mundos fantásticos de tu propia creación. Las criaturas que entren en tus demiplanos oníricos fracasarán automáticamente en tiros de percepción para distinguir si se encuentran en un sueño. Al reducir la cordura de un objetivo a 0 utilizando *[inducción mental](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-iii)* puedes atrapar su mente en un gran demiplano conocido como microcosmo, el cual perdurará sin la necesidad de mantener la concentración en él.
+**Duración:** Una hora 
 
-Una criatura atrapada en un microcosmo no será consciente que se encuentra en un sueño y su cuerpo caerá en un coma profundo. Sólo podrá escapar del microcosmo si muere, aunque deberá morir una vez por cada capa que tenga dicha dimensión. Las habilidades *[Viaje onírico](https://raldamain.com/rules/Rangos/Ocultismo/magia%20onirica.html#rango-v)* y *[Umbral](https://raldamain.com/rules/Rangos/Magia%20arcana/magia%20espacial.html#rango-v)*, junto con determinados rituales, pueden utilizarse para acceder o escapar de un microcosmo, aunque para ello el creador de dicha dimensión debe permitirlo.
+Reuniendo la energía onírica en un punto convocas a una criatura capaz de encarnar las peores pesadillas de la persona objetivo, que tendrá como único objetivo atormentarla hasta que su existencia o la de su víctima llegue a su final. Al invocar a la criatura, esta tendrá el mismo nivel que una manifestada con Invocación onírica, y para poder atacarla, el objetivo de la habilidad deberá tirar Concentración o Voluntad contra tu modificador. La criatura por su parte solo atacará al objetivo de la habilidad, y en caso de haber sido invocada en el plano onírico esta además será invulnerable al daño.
 
 ## Rango VI
 
 ### Última vigilia
 
-Haces un duelo psíquico contra todos tus enemigos donde recibirás los beneficios de una forma tocha. Los afectados no pueden defenderse.
+*Onírica, Mejora, Duradera*
+
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Radio medio
+
+**Duración:** Hasta que sea eliminada
+
+Habiendo alcanzado la cima de tus estudios te has vuelto en uno de los señores del plano onírico, pudiendo manejarlo a tu antojo y usarlo en toda su extensión contra tus enemigos. Al hacerlo todos tus enemigos que se encuentren en el alcance del hechizo deberán defenderse de un Duelo psíquico o serán arrastrados al plano onírico. Mientras el duelo se esté llevando a cabo obtendrás los beneficios de una habilidad de mejora de rango VI de otra rama, como podría ser forma elemental, forma abisal, avatar divino, etc.	

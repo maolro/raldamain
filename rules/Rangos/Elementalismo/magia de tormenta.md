@@ -171,25 +171,101 @@ A rangos superiores puedes invocar elementales de poder aún mayor, aumentando e
 
 ## Rango IV
 
-**Relámpago en cadena** (2 AP y 2 chi): Haz un ataque de *relámpago* que al impactar saltará hacia un objetivo adicional a distancia corta de este, haciendo así un ataque adicional. El relámpago puede seguir saltando hacia nuevos objetivos hasta que no haya ninguno más o tu ataque falle. (1 chi) Crea un *relámpago en cadena* adicional.
+**Relámpago en cadena**
 
-**Furia de la tormenta** (2 AP y 2 chi): Eres capaz de sobrecargar los conductos de chi conectados con tu cuerpo hasta llevarlos al límite, provocando que desaten una enorme explosión de rayos y truenos. El área de la explosión será igual a un radio corto y todos en la zona deberán defenderse de un ataque que infligirá 1d8+CAR daño eléctrico (1d10 a rango V) y 1d10+rango daño trueno al impactar. El ataque partirá de tu propio cuerpo salvo que te encuentres en una tormenta, donde puedes hacer que parta desde cualquier punto a distancia media. (1 chi) Aumenta el área de efecto a un radio medio.
+*Tormenta, Invocación*
 
-**Jinete del relámpago** (2 chi): Te mueves a la velocidad del rayo durante un breve periodo de tiempo, incrementando tu velocidad de vuelo por 1 y recibiendo ventaja en todos tus tiros de esquiva durante una ronda. Además, al realizar una carga te mueves con tal velocidad que tus ataques cuerpo a cuerpo no pueden ser esquivados por adversarios que no tengan la habilidad *sexto sentido*.
+**Coste**: 2 chi
+
+**Alcance**: Propio
+
+**Duración**: Instantáneo
+
+Cargando un rayo con una cantidad adicional de energía y ejerciendo control sobre él eres capaz de desatar todo su poder destructivo, conduciéndolo contra tus objetivos hasta reducirlos a polvo. Un hechizo mejorado con esta habilidad recibirá un dado de daño adicional, y al impactar contra su enemigo podrá saltar contra otro como acción bonus. El rayo continuará saltando entre objetivos hasta que ya no queden objetivos nuevos a los que impactar o falle contra uno de ellos. 
+
+**Furia de la tormenta** 
+
+*Tormenta, Ataque, Área*
+
+**Coste**: 2 acciones y 2 chi
+
+**Tamaño**: Radio corto
+
+**Duración**: Instantáneo
+
+Sobrecargando los canales de chi en tu entorno cercano y atrapando la energía en ellos eres capaz de hacerlos explotar de forma salvaje, liberando una explosión contra todos los que se encuentren en la zona. De esta manera todos los que se encuentren en la zona deberán defenderse o sufrirán 1d8+Carisma daño eléctrico y 1d10+Rango daño sónico, además de quedar ralentizados una ronda. En el caso de emplear esta habilidad durante una tormenta, podrá hacerse que emerja desde cualquier punto a distancia media de ti. 
+
+**Rayo viviente**
+
+*Tormenta, Mejora, Concentración*
+
+**Coste**: 2 acciones y 2 chi
+
+**Alcance**: Propio
+
+**Duración**: Concentración
+
+Cargando tu propio cuerpo con electricidad eres capaz de acelerar sus reacciones al mínimo, además de emplear la energía elemental infundida para alzar el vuelo, volviéndote mas rápido de lo que tus enemigos puedan manejar. Al activar la habilidad recibirás una acción adicional, además de velocidad de vuelo 2. Así mismo, cuando te defiendas con un tiro de esquiva podrás realizar también un tiro defensivo de tormenta, quedándote con el mejor resultado. En caso de ser impactado, una vez por ronda, podrás reducir el daño del ataque entrante a la mitad. 
 
 ## Rango V 
 
-**Cambiar el clima** (3 AP y 3 chi): Llamas una gran tormenta al campo de batalla, provocando lluvia, rayos y truenos durante el resto del combate. Mientras la tormenta permanezca activa reduces el campo de visión de todas las criaturas a una distancia media y además que todas tus habilidades de magia de tormenta recibirán ventaja (no se acumula con *esferas del relámpago*). Además, el campo de batalla quedará afectado por la habilidad *controlar los vientos* y otorgará los mismos beneficios que esta. Esta habilidad también puede usarse para calmar una tormenta ya existente, eliminando los beneficios que esta otorga.
+**Cambiar el clima** 
 
-**Descenso relampagueante** (2 AP y 3 chi): Un devastador relámpago desciende de los cielos para castigar a tus enemigos. Esta habilidad solo puede usarse en un entorno afectado por una tormenta y con esta puedes atacar a todas las criaturas que se encuentren en radio medio a distancia lejana de ti. Un *descenso relampagueante* no puede ser esquivado y infligirá 2d10 + CAR daño eléctrico e 1d10 + rango daño trueno, *aturdiendo* en el caso que reduzca PV. La ronda siguiente al descenso puedes hacer un segundo ataque de este tipo empleando 2 AP sin la necesidad de pagar chi, infligiendo la misma cantidad de daño y efectos al impactar. (1 chi) Puedes hacer un tercer ataque de este tipo en la tercera ronda sin la necesidad de gastar chi.
+*Tormenta, Área, Ambiental*
 
-**Voltio cruel** (1 AP y 3 chi): Haz un ataque contra una criatura adyacente que no puede ser esquivado el cual inflige 3d10 + CAR daño eléctrico y el objetivo deberá tener éxito en un tiro de CON frente a tu CAR o quedará *aturdido* durante una ronda. Si este ataque logra reducir PV provocará heridas permanentes y si una herida permanente llega a impactar al pecho esta aumentará su efectividad por un paso.
+**Coste**: 3 acciones y 3 chi
+
+**Tamaño**: Esfera grande
+
+**Duración**: Seis rondas
+
+Convocando nubes en tu región y cargándolas con grandes cantidades de electricidad eres capaz de llamar a tu voluntad enormes tormentas eléctricas de las que beneficiarte para emplear tus habilidades. Al cambiar el clima se activarán automáticamente los efectos de las habilidades de Furia de los cielos y Controlar los vientos, además de que todos los que se encuentren en el campo de batalla contarán con ocultamiento. 
+
+**Descenso relampagueante** 
+
+*Tormenta, Ataque*
+
+**Coste**: 2 acciones y 3 chi
+
+**Alcance**: Medio
+
+**Duración**: Instantáneo
+
+Concentrando una gran cantidad de energía eléctrica en el cielo eres capaz de hacer que la misma tormenta haga descender su furia sobre tus enemigos, amenazando con reducirlos a cenizas. De esta forma todos los que se encuentren dentro del alcance de una columna mediana deberán defenderse contra tu ataque o sufrirán 2d10+Carisma daño eléctrico y 1d10+Carisma daño sónico, forzando a aquellos que impacte también a tirar constitución contra tu modificador o quedar aturdidos durante una ronda. Para los propósitos de defenderse de la habilidad esta no podrá eludirse usando esquiva, y los objetivos voladores tendrán desventaja contra el ataque. 
+
+Esta habilidad solamente podrá usarse mientras te encuentres en una tormenta. 
+
+**Voltio cruel** 
+
+*Tormenta, Ataque*
+
+**Coste**: 1 acciones y 3 chi
+
+**Alcance**: Adyacente
+
+**Duración**: Instantáneo
+
+Cargas tu propio cuerpo con grandes cantidades de energía, preparándote para embestir a un objetivo a alta velocidad y descargar en él toda la electricidad acumulada en un solo movimiento mortal. Al hacerlo te moverás dos pasos y atacarás instantáneamente, infligiendo 3d10+Carisma daño eléctrico y una herida permanente leve al impactar, además de forzándole a tirar constitución contra tu modificador o quedará aturdido durante una ronda. Este ataque no podrá ser esquivado, y en caso de reducir los PV de su objetivo a 0 este morirá instantáneamente.   
 
 ## Rango VI
 
 El daño eléctrico que provocas atravesará las resistencias elementales que tengan tus objetivos. 
 
-**Tormenta de venganza** (3 AP y 5 chi): Invocas una tormenta enormemente destructiva emulando la furia de los dioses. Esta habilidad afectará el campo de batalla con *cambiar el clima* y mientras pasen las rondas aumentará su fuerza. A partir de la segunda ronda puedes hacer un ataque de *relámpago* u *onda trueno* cada ronda como acción bonus sin coste de chi y a partir de la cuarta puedes hacer que el ataque sea de *furia de la tormenta* o *relámpago en cadena*. No necesitarás concentrarte en ninguno de estos efectos y la *tormenta de venganza* se desvanecerá al cabo de 7 rondas. Estos ataques bonus se acumulan con aquellos que otorga la habilidad *llamar a la tormenta*.
+**Tormenta de venganza** 
+
+*Tormenta, Área, Ambiental, Duradera*
+
+**Coste**: 3 acciones y 5 chi
+
+**Tamaño**: Esfera grande
+
+**Duración**: Siete rondas
+
+Convocas en los cielos una cruenta tormenta eléctrica cargada con una gran destructiva, haciendo caer con ella la muerte sobre los enemigos que se atrevan a desafiarte. Al convocarla el área se verá afectada inmediatamente por Furia de los cielos, y una vez por ronda podrás lanzar un hechizo gratuito como acción bonus, dependiendo de la cantidad de rondas que lleve activa la tormenta:
+
++ En la ronda dos en adelante: Relámpago u Onda trueno.
++ En la ronda 4 en adelante: Relámpago en cadena o Furia de la tormenta.
++ En la ronda 6 en adelante: Descenso relampagueante.
 
 # Elemental de tormenta
 

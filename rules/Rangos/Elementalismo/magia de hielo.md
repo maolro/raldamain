@@ -173,25 +173,37 @@ En rangos superiores puedes invocar elementales de poder aún mayor, aumentando 
 
 *Hielo, Ataque, Área, Frío*
 
-Inflige 2DD+STAT daño Frío y tiran CON o aumentan su nivel de hipotermia por un paso. Enemigos en el agua quedan congelados
+**Coste:** 2 acciones y 2 chi
+
+**Tamaño**: Cono mediano
+
+**Duración:** Instantáneo
+
+Convocas una pequeña ventisca de hielo y la enfocas sobre tus enemigos para dejar que el frío gélido y el duro hielo los mermen por ti. Al hacerlo todos los que se encuentren en el área deberán defenderse o sufrirán 2d10+sabiduría daño frío y deberán defenderse con constitución aumentarán su nivel de hipotermia por un paso (la cual actuará como un veneno de destreza). Aquellos enemigos que se encuentren en el área cuando suceda este hechizo quedarán congelados. 
 
 ### Armadura de hielo
 
 *Hielo, Defensiva, Duradera*
 
-Recibe RANGO contadores de escudo y Resistencia a efectos de Fuego, Agua y Naturaleza. Recupera uno cada ronda si está en entornos fríos
+**Coste:** 2 acciones y 2 chi
+
+**Alcance**: Propio 
+
+**Duración:** Concentración
+
+Creas una fría coraza con la que defenderte de ataques entrantes, dejando que el frío se haga cargo de la furia de los elemento y el filo de las armas de tus enemigos. Al activar la habilidad recibirás contadores de escudo igual a tu rango, además de resistencia a efectos de fuego, agua y naturaleza. Mientras te encuentres en un entorno frío también recuperarás un contador de escudo cada ronda. 
 
 ### Ola de Frío
 
 *Hielo, Aflicción, Área*
 
-Esfera media, Todos tiran CON o sufren 2DD+STAT daño Frío área, hipotermia rango 1 y el área afectada es terreno difícil. Enemigos en el agua quedan congelados
+**Coste:** 2 acciones y 2 chi
 
-**Ventisca** (2 AP y 2 chi): Ataca a todas las criaturas en un cono medio, infligiendo 2d8 + CAR daño frío al impactar y provocando hipotermia si reduces PV, la cual funciona igual que un veneno de DES con gravedad igual a tu tiro de magia de hielo. Si una criatura con hipotermia empieza su turno en un entorno afectado por frío extremo esta avanzará de etapa.
+**Alcance**: Medio
 
-**Prisión de hielo** (2 AP y 2 chi): Un objetivo *agarrado* hace un tiro de FUE frente a tu magia de hielo o entra en animación suspendida. Puedes emplear esta habilidad para rodearte de una armadura de hielo que te otorga rango + 2 PV y +4 DEF.
+**Duración:** Concentración
 
-**Cuchillos gélidos** (2 AP y 2 chi): Ataca a todas las criaturas en un radio medio, infligiendo daño igual al de una *espina de hielo* con un dado de daño adicional y +1d6 daño frío. El área afectada pasa a ser terreno difícil y si te encuentras en un entorno afectado por frío extremo puedes hacer un ataque de *espina gélida* como acción bonus usable una vez por turno mientras mantengas la concentración en este efecto o pasen rango + 1 rondas.
+Temporalmente creas un pequeño domo donde el mas crudo invierno pueda hacerse presente por unos instantes, trayendo en ese breve momento toda su frialdad contra tus enemigos. Al emplear la habilidad creas una esfera mediana donde todos los que se encuentren en ella deberán defenderse, siendo que a los que impactes sufrirán 2d10+sabiduría daño frío, además de hipotermia de grado uno. Así mismo el área afectada se transformará en terreno difícil, y aquellos enemigos que se encontrasen en el agua quedarán congelados. 
 
 ## Rango V
 
@@ -199,25 +211,37 @@ Esfera media, Todos tiran CON o sufren 2DD+STAT daño Frío área, hipotermia ra
 
 *Hielo, Ambiental*
 
-Reduce la tempertaura a frío extremo, Ventaja en tiros de Magia de Hielo y genera neblina que ciega y da ocultamiento. Todos sin fuentes de calor tiran CON cada ronda o sufren hipotermia 1
+**Coste:** 3 acciones y 3 chi
+
+**Tamaño**: Radio grande
+
+**Duración:** Seis rondas
+
+Convoca el gélido invierno al campo de batalla para servirte del frío, tanto para empoderar tus ataques como para mermar notablemente a los enemigos incautos. Al convocar al invierno la temperatura pasará a ser frío extremo, otorgándote por ello ventaja en tus tiros de hielo, y se generará una neblina que cegará y dará ocultamiento a quienes se encuentren en el área. Así mismo todos los que se encuentren en el área sin una fuente de calor deberán tirar constitución cada ronda o aumentarán su nivel de hipotermia por un paso. 
 
 ### Alud
 
 *Hielo, Ataque, Área, Física, Frío, Agarre*
 
-Inflige 2DD+STAT daño Contundente y 1DD+STAT daño Frío área y todos tiran Heroísmo o Destrozar o quedan agarrados y sufren hipotermia grado 1. Destruye estructuras frágiles y genera terreno difícil
+**Coste:** 2 acciones y 3 chi
+
+**Tamaño**: cono grande
+
+**Duración:** Instantáneo
+
+Convocas rápidamente una enorme cantidad de nieve y hielo para dejarla caer sobre tus enemigos a plomo, aplastándolos con todo su peso mientras los congelas. Al convocar al alud todos los que se encuentren en el área deberán defenderse o sufrirán 2d10+sabiduría daño contundente y 1d10+sabiduría daño frío. Además, aquellos que sean impactados deberán defenderse con heroísmo o destrozar o quedarán agarrados y aumentarán su nivel de hipertermia por un paso. Como consecuencia de la caída de toda la nieve todas las estructuras frágiles en el área se derrumbarán y el terreno afectado pasará a ser terreno difícil.
 
 ### Congelar la sangre
 
 *Hielo, Aflicción, Frío*
 
-Tira CON o sufre 3DD+STAT daño Frío y hipotermia a nivel 2. Requiere entorno frío
+**Coste:** 1 acciones y 3 chi
 
-**Llamada del invierno** (3 AP y 3 chi): Invocas una tormenta de nieve que afectará todo el campo de batalla con *neblina polar* y permanecerá activa durante el resto del combate. Además, toda la temperatura del área bajará a frío extremo y todos tus ataques de magia de hielo provocarán hipotermia al impactar. Esta habilidad no puede ser usada en entornos donde el clima no lo permita.
+**Alcance**: Medio
 
-**Alud** (3 AP y 3 chi): Haz un ataque contra todas las criaturas en cono grande que al impactar inflige 2d10 + CAR daño contundente, 1d6 daño frío y *agarra*, enterrando a los afectados bajo una capa de nieve que tiene la misma resistencia que un *muro de hielo*. El área afectada pasa a estar afectado por terreno difícil y destruyes todas las estructuras frágiles en ella. Además, todas las criaturas *agarradas* por esta habilidad sufrirán los efectos de *hipotermia* al principio de su turno y no podrán respirar. Si te encuentras en un terreno con gran cantidad de hielo o afectado por una tormenta de nieve este ataque inflige +1d10 daño.
+**Duración:** Instantáneo
 
-**Congelar la sangre** (2 AP y 3 chi): Un objetivo que se encuentre en un entorno afectado por frío extremo debe tener éxito en un tiro de CON frente a tu magia de hielo o sufre 2d10 + CAR daño frío y los efectos de *hipotermia* a grado 2. La criatura deberá tirar cada ronda para evitar *hipotermia* y solo podrá liberarse de este efecto si sufre daño fuego. (1 chi) Afecta a un objetivo adicional
+Empleando el frío del entorno lo canalizas a través de los canales de chi para congelar bruscamente a una persona desde sus adentros. El objetivo de esta habilidad deberá defenderse empleando su constitución o sufrirá 3d10+sabiduría daño frío además de dos niveles de hipotermia. Sin embargo para poder emplear esta habilidad será necesario un entorno frío.
 
 ## Rango VI
 
@@ -225,7 +249,11 @@ Tira CON o sufre 3DD+STAT daño Frío y hipotermia a nivel 2. Requiere entorno f
 
 *Hielo, Ambiental*
 
-**Medianoche polar** (3 AP Y 5 chi): Llenas el campo de batalla con frío extremo, congelando toda el agua en él y apagando todas las fuentes de calor. Si ya te encuentras en frío extremo haz un ataque de *congelación rápida* contra todas las criaturas en el área de efecto las cuales deberán defenderse con su estadística de CON. Este efecto permanecerá activo hasta que pierdas la concentración (si *llamada del invierno* está activa esto no te hace falta) y mientras lo esté puedes hacer un ataque de *congelación rápida*, *tormenta de nieve* o *neblina polar* como acción bonus una vez por turno contra cualquier objetivo en el campo de batalla. Además, todas las habilidades de magia elemental de fuego y agua tendrán desventaja y aquellas de rango III o menos no podrán funcionar (no se aplica a personajes con la habilidad *campeón de los espíritus*)
+**Coste:** 2 acciones y 2 chi
+
+**Alcance**: Medi
+
+**Duración:** Concentración
 
 # Invocación
 
