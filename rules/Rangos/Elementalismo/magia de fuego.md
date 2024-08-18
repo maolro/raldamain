@@ -31,7 +31,7 @@ Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. 
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional que alca con este hechizo
 
-### Asalto abrasador
+### Asalto Abrasador
 
 *Fuego, Cuerpo a cuerpo, Ataque*
 
@@ -49,7 +49,7 @@ Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma 
 
 **Empoderar** (1 chi): Aumenta el alcance de este ataque a cercano
 
-### Aliento de fuego
+### Aliento de Fuego
 
 *Fuego, Ataque, Área*
 

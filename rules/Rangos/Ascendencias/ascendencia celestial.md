@@ -115,7 +115,7 @@ La energía vital en tu interior sana tu cuerpo a velocidades prodigiosas. Al pr
 
 *Innata, Pasiva*
 
-Tu alma ha alcanzado el escalafón más alto de la iluminación, ascendiendo a un nivel semejante a un celestial. Recibes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a Aflicciones, Necrótico, Radiante y Miedo. Eres también capaz de comunicarte con criaturas celestiales de todo tipo y estas te tratarán como un igual. 
+Tu alma ha alcanzado el escalafón más alto de la iluminación, ascendiendo a un nivel semejante a un celestial. Recibes Resistencia a efectos Arcanos y Divinos además de Resistencia Superior a Aflicciones, Necrótico, Radiante y Miedo. Eres también capaz de comunicarte con criaturas celestiales de todo tipo y estas te tratarán como un igual. 
 
 ## Rango VI
 

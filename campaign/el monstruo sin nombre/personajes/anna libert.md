@@ -9,7 +9,7 @@ rangos: Magia Onírica, Magia Psíquica, Plantilla Aberrante, Artes Marciales
 image: anna libert.jpg
 ---
 
-Una chica sencilla y amable, Anya recuerda haber vivido toda su vida en el apacible poblado de Thrushmoor. Esta vida de calma sería rota catastróficamente con la llegada de un hombre misterioso quién trae tragedia y horror a su vida. Desde entonces Anna intenta buscar la verdad sobre su pasado, pero los descubrimientos que hace poco a poco despiertan el monstruo que habita dentro de ella.
+Una chica sencilla y amable, Anya recuerda haber vivido toda su vida en el apacible poblado de Bergemur. Esta vida de calma sería rota catastróficamente con la llegada de un hombre misterioso quién trae tragedia y horror a su vida. Desde entonces Anna intenta buscar la verdad sobre su pasado, pero los descubrimientos que hace poco a poco despiertan el monstruo que habita dentro de ella.
 
 ## Especialidades
 
@@ -17,7 +17,7 @@ Anya es capaz de fácilmente ganarse el aprecio de quiénes la rodean. No entien
 
 ## Rasgos
 
-Anya es una persona decidida que se mantendrá firme en las decisiones que tome a pesar de las horribles circunstancias que se encuentra. Cuando la vida que conoció cae en pedazos, Anya cree que sólo ella puede traer el fin al monstruo en que su hermano Johan se ha convertido. Su miedo a Julian hace que ella intente no involucrar a las personas que tiene cerca e intenta alejarse de ellas para mantenerlas a salvo de él, pero esto hace que ella quede vulnerable en muchas situaciones y forzada a tomar decisiones difíciles. Anya sólo desea vivir una vida tranquila, pero sabe que nunca lo podrá hacer mientras Julian siga vivo.
+Anya es una persona decidida que se mantendrá firme en las decisiones que tome a pesar de las horribles circunstancias que se encuentra. Cuando la vida que conoció cae en pedazos, Anya cree que sólo ella puede traer el fin al monstruo en que su hermano Julian se ha convertido. Su miedo a Julian hace que ella intente no involucrar a las personas que tiene cerca e intenta alejarse de ellas para mantenerlas a salvo de él, pero esto hace que ella quede vulnerable en muchas situaciones y forzada a tomar decisiones difíciles. Anya sólo desea vivir una vida tranquila, pero sabe que nunca lo podrá hacer mientras Julian siga vivo.
 
 ## Historia
 

@@ -15,7 +15,7 @@ Ascendencia Boreal tiene las siguientes reglas fundamentales que se aplican a cu
 
 ## Rango I
 
-### Adaptación al frío
+### Adaptación al Frío
 
 *Innata, Pasiva*
 
@@ -25,7 +25,7 @@ Tu vínculo con las tierras árcticas te hace sobrehumanamente resistente al fr�
 
 *Innata, Pasiva*
 
-El frío y el hielo obedecen tu llamada, pudiendo así invocar su poder para congelar a tus enemigos. Eres capaz de lanzar los hechizos *rayo gélido*, *espina de hielo* y *bajar temperaturas* empleando vigor en lugar de chi. Puedes también convertir una porción pequeña de agua en hielo con solo tocarla o moldear una porción de hielo de ese mismo tamaño para que adopte la forma que desees.
+El frío y el hielo obedecen tu llamada, pudiendo así invocar su poder para congelar a tus enemigos. Eres capaz de lanzar los hechizos Rayo Gélido, Espina de Hielo y Bajar Temperaturas empleando vigor en lugar de chi. Puedes también convertir una porción pequeña de agua en hielo con solo tocarla o moldear una porción de hielo de ese mismo tamaño para que adopte la forma que desees.
 
 En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu SAB y tu Rango en Ascendencia Boreal. Este sobrecoste desaparecerá si obtienes por lo menos un rango en Magia de Hielo.
 
@@ -33,7 +33,7 @@ En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pa
 
 Incrementa tu estadística de CON y su limitador por 1.
 
-### Canalizar el frío
+### Canalizar el Frío
 
 *Innata, Mejora*
 
@@ -43,7 +43,7 @@ Infundes uno de tus ataques con el poder del hielo para congelar a los enemigos 
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
-### Caminante del hielo
+### Caminante del Hielo
 
 *Innata, Pasiva*
 

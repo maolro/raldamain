@@ -33,7 +33,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 *Pasiva, Ligera*
 
-Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemigos para herirles con mayor gravedad. Cada vez que realices un ataque combinado con dos o más aliados o impactes a un enemigo incapaz de defenderse aumentarás el nivel de todas las *heridas permanentes* infligidas por un paso.
+Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemigos para herirles con mayor gravedad. Cada vez que realices un ataque combinado con dos o más aliados o impactes a un enemigo incapaz de defenderse aumentarás el nivel de todas las *heridas permanentes* infligidas por un paso. Puedes también tirar tanto Esquiva como Parada para defenderte de un ataque enemigo y quedarte con el resultado que más que convenga siempre que sea posible emplear ambas técnicas.
 
 ### Golpe penetrante
 
@@ -55,13 +55,13 @@ Clavas tu arma en el cuerpo de tu enemigo para infligirle graves heridas y limit
 
 Tu arma permanecerá clavada hasta que otra criatura la separe de su cuerpo empleando una acción, impidiendo así que puedas atacar con ella mientras se encuentre así. Un enemigo con un arma clavada de esta manera quedará *enfermado* y cuando se libere de esta recibirá el efecto de estado *sangrado*. 
 
-### Asalto engañoso
+### Asalto Engañoso
 
 *Ligera, Mejora*
 
 **Coste:** 1 vigor
 
-Atacas con tal velocidad que tus golpes son impredecibles y casi imposibles de detener. En respuesta a fallar un ataque con tu arma puedes repetirlo con Ventaja contra ese mismo enemigo. Si el afectado detuvo tu ataque original empleando *contadores de escudo* u otros métodos de éxito automático estos no se aplicarán contra tu segundo ataque. No podrás emplear esta técnica más de una vez por ataque.
+Atacas con tal velocidad que tus golpes son impredecibles y casi imposibles de detener. En respuesta a fallar un ataque con tu arma puedes repetirlo con Ventaja contra ese mismo enemigo. Si el afectado detuvo tu ataque original empleando *contadores de escudo* u otros métodos de éxito automático estos no se aplicarán contra tu segundo ataque. Si afectas exitosamente a un enemigo con esta técnica no podrás volver a emplearla contra él hasta el inicio de tu siguiente turno.
 
 ### Lluvia de cuchillos
 
@@ -73,17 +73,9 @@ Aprovechas tu gran velocidad para atacar a múltiples enemigos en un instante. T
 
 ## Rango III
 
-### Cuchillada
-
-*Ligera, Mejora*
-
-**Coste:** 1 Acción y 2 vigor
-
-Acuchillas a tu objetivo con dos rápidos ataques para provocarle una herida más profunda. Al emplear esta técnica hace dos ataques empleando su arma contra el mismo objetivo. Si ambos impactan el segundo ataque incrementa su daño base por 2d6 y aumenta el nivel de las *heridas permanentes* infligidas por un paso. El segundo ataque que realices con esta habilidad no puede ser mejorado con más técnicas.
-
 ### Asalto impredecible
 
-*Ligera, Mejora*
+*Ligera, Reacción*
 
 **Coste:** 2 vigor
 
@@ -91,11 +83,19 @@ Tus ataques son tan rápidos e impredecibles que tus enemigos no son capaces de 
 
 ### Combinar técnicas
 
-*Ligera, Mejora*
+*Ligera, Reacción*
 
 **Coste**: 2 vigor
 
 Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un coste en acciones.
+
+### Cuchillada
+
+*Ligera, Mejora*
+
+**Coste:** 1 Acción y 2 vigor
+
+Acuchillas a tu objetivo con dos rápidos ataques para provocarle una herida más profunda. Al emplear esta técnica hace dos ataques empleando su arma contra el mismo objetivo. Si ambos impactan el segundo ataque incrementa su daño base por 2d6 y aumenta el nivel de las *heridas permanentes* infligidas por un paso. El segundo ataque que realices con esta habilidad no puede ser mejorado con más técnicas.
 
 ## Rango IV
 

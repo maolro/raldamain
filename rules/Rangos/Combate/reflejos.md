@@ -53,7 +53,7 @@ Si empleas esta habilidad al recibir daño de un ataque de área no sufrirás da
 
 ## Rango III
 
-### Giro defensivo
+### Giro Defensivo
 
 *Innata, Pasiva*
 
@@ -61,7 +61,7 @@ Conoces como esquivar adecuadamente los ataques enemigos para reducir las herida
 
 **Empoderar** (1 vigor): Entras en *posición defensiva* como acción bonus.
 
-### Gran acróbata
+### Gran Acróbata
 
 *Innata, Pasiva*
 

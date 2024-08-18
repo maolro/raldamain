@@ -46,6 +46,7 @@ En este apartado se especificarán todos los talentos diferentes que se pueden e
 | Percepción            | SAB                  | Encontrar enemigos ocultos, buscar pistas, identificar ilusiones y disfraces |
 | Persuasión            | CAR                  | Convencer a los demás para que te hagan favores, calmar a individuos emocionalmente inestables, provocar a un enemigo |
 | Primeros auxilios     | SAB                  | Aplicar primeros auxilios, identificar medicinas y venenos por instinto, conocer los tratamientos médicos adecuados |
+| Salud                 | CON                  | Resistir enfermedades y aflicciones de todo tipo, Hacer ejercicio durante una gran cantidad de tiempo |
 | Sigilo                | DES                  | Ocultarte de enemigos perceptivos, moverte sin hacer ruido, acechar a un objetivo |
 | Supervivencia         | SAB                  | Encontrar comida y agua en entornos salvajes, orientarte en la naturaleza, identificar peligros naturales |
 | Trastear              | INT                  | Reparar objetos rotos, fabricar objetos sencillos, aprender las propiedades de aparatos complejos |

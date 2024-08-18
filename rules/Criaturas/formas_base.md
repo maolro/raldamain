@@ -1,35 +1,36 @@
-# Formas base físicas
+# Formas base
 
-## Ágil
+## Animal
 
-1 FUE, 4 DES, 2 CON
+La criatura es un ser semejante a un animal salvaje, careciendo así de raciocinio y operando únicamente en base al instinto. Esta forma otorga las siguientes estadísticas básicas:
 
-## Poderoso
+- Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 4 y a un mínimo de -1. Esto funciona de la misma manera que si se tratase de un personaje jugador pero su estadística de Inteligencia no podrá ser superior a 0.
+- Puede recibir heridas permanentes con normalidad y contará con una estadística de cordura. Si se trata de una invocación recibirá las órdenes de su amo sin cuestionarlas siempre y cuando no atenten contra su instinto de autopreservación.
+- Un animal necesita comer, respirar y dormir. No tiene la inteligencia suficiente para emplear armas o usar técnicas de artes marciales. Tampoco podrá aprender magia que no sea innata.
 
-3 FUE, 1 DES, 3 CON
+## Constructo
 
-## Equilibrado
+La criatura se ha creado de manera artificial para servir un propósito específico. Esta forma otorga las siguientes estadísticas básicas.
 
-2 FUE, 2 DES, 3 CON
+- Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 4 y a un mínimo de -1. Esto funciona de la misma manera que si se tratase de un personaje jugador pero sus estadísticas de Inteligencia y Carisma no podrán ser superiores a -1 salvo algunas contadas excepciones.
+- Carece de órganos internos y la capacidad de razonar. Esto le hace Inmune a *heridas permanentes*, Aflicciones, efectos Mentales, Necróticos y Miedo. 
+- No puede ser sanado salvo por habilidades pertenecientes a Fabricación o que reparen su estructura interna. Morirá inmediatamente si cae a 0 PV y no podrá ser resucitado.
+- Al tratarse de un ser artificial no necesita comer, dormir y respirar. No obstante, según su naturaleza puede necesitar una fuente de energía específica para funcionar.
 
-## Fuerza
+## Extraplanario
 
-Carece de FUE. 2 DES y 2 CON
+La criatura se trata de un ser sobrenatural que proviene de un plano diferente al material. Esta forma otorga las siguientes estadísticas básicas:
 
-# Formas base mentales
-
-## Bestia
-
--1 INT, 2 SAB, 1 CAR. 
+- Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 4 y a un mínimo de 0. 
+- Es un ser inmortal que no necesita comer, dormir o respirar, sustentándose únicamente con la energía mágica que hay a su alrededor. Si muere su alma volverá a su plano natal hasta que logre recomponer su cuerpo, un proceso que tarda normalmente un día. 
+- Recibirá los beneficios de toda tierra consagrada relacionada con seres sobrenaturales de su mismo origen o afinidad y será vulnerable a toda arma diseñada para matar a criaturas extraplanarias.
+- Un extraplanario ligado obedecerá las órdenes de su invocador sin cuestionarlas, careciendo de voluntad propia. Si el invocador pierde el control del extraplanario y este no es amistoso puede volverse inmediatamente hostil, atacando despiadadamente a su antiguo amo.
 
 ## Humanoide
 
-1 INT, 1 SAB, 1 CAR. +1 en una estadística mental
+La criatura pertenece a una especie de apariencia e inteligencia similar a la especie humana. Esta forma otorga las siguientes estadísticas básicas:
 
-## Sobrehumano
-
-2 INT, 2 SAB, 2 CAR. +1 en una estadística mental
-
-## Fuerza
-
-Carece de INT y SAB. 3 CAR:
+- Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 3 y a un mínimo de 0. Esto funciona de la misma manera que si se tratase de un personaje jugador.
+- Recibe los beneficios de una raza jugable de tu elección. En el caso que no pertenezca a ninguna existente consulta al DJ para recibir mejoras apropiadas.
+- Al tratarse de un ser humanoide puede recibir heridas permanentes con normalidad y contará con una estadística de cordura. Si se trata de una invocación puede resistirse a las órdenes de su maestro si atentan contra su vida o la de un ser querido.
+- Un ser humanoide necesita comer, respirar y dormir. Contará normalmente con brazos con los que puede coger objetos o armas. 

@@ -51,7 +51,7 @@ Desarrollas los mismos sentidos que un demonio para ver en la oscuridad más pro
 
 Aprendes dos hechizos de Rango II o menos relacionados con tu patrón infernal y puedes emplear vigor en lugar de chi para lanzarlos.
 
-### Alas demoniacas
+### Alas demoníacas
 
 *Innata, Pasiva*
 

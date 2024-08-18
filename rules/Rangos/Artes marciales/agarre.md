@@ -121,11 +121,15 @@ Golpeas a un enemigo con un cabezazo para aturdirlo temporalmente y hacerlo más
 
 **Coste:** 2 vigor
 
+Se mueve dos pasos y arrastra al enemigo po
+
 ### Agarre reactivo
 
 *Agarre, Reacción*
 
 **Coste:** 2 vigor
+
+Agarra a un enemigo que le esté atacando
 
 ## Rango V
 
@@ -134,6 +138,8 @@ Golpeas a un enemigo con un cabezazo para aturdirlo temporalmente y hacerlo más
 *Agarre, Físico*
 
 **Coste:** 3 vigor
+
+Hace un agarre del que su enemigo no puede tirar para liberarse después de fallar la primera vez.
 
 ### Impactos sin fin
 
@@ -144,6 +150,8 @@ Golpeas a un enemigo con un cabezazo para aturdirlo temporalmente y hacerlo más
 ### Agarre doble
 
 *Agarre, Pasiva*
+
+Puede agarrar a dos enemigos diferentes y no sufrirá penalizaciones al movimiento.
 
 ## Rango VI
 

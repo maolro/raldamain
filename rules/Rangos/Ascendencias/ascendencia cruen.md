@@ -20,7 +20,7 @@ Aumenta tu CON por 1.
 
 *Innata, Pasiva*
 
-Tu alma ha quedado corrompida y tu cuerpo retorcido, obteniendo cualidades mas cercanas a los muertos que a los vivos. De esta manera recibirás inmunidad al daño necrótico a costa de recibir vulnerabilidad al daño radiante, quedando además enfermado en el caso de quedar expuesto a la luz del sol. Obtienes también la habilidad de hacer ataques naturales empleando tanto garras como mordisco. Así mismo obtendrás resistencia al daño físico provocado por medios no-mágicos, a costa de quelas armas consideradas sacras te afectarán como si fueras vulnerable a ellas. 
+Tu alma ha quedado corrompida y tu cuerpo retorcido, obteniendo cualidades mas cercanas a los muertos que a los vivos. De esta manera recibirás inmunidad al daño Necrótico a costa de recibir vulnerabilidad al daño Radiante, quedando además *enfermado* en el caso de quedar expuesto a la luz del sol. Obtienes también la habilidad de hacer ataques naturales empleando tanto garras como mordisco. También obtendrás Resistencia al daño Físico provocado por medios no-mágicos, a costa que las armas sacras te afectarán como si fueras Vulnerable a ellas. 
 
 A costa de conseguir todos estos beneficios sin embargo tu hambre ya nunca volverá a ser la misma, impidiéndote volver a los hábitos mundanos que una vez consideraste la norma. De esta manera ya solo podrás alimentarte de carne, solo quedando completamente saciado en el caso de consumir carne humana. 
 

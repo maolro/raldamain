@@ -56,7 +56,7 @@ Mutas tu cuerpo con energías abisales para obtener nuevas habilidades. Dicha mu
 
 *Innata, Pasiva*
 
-El poder antinatural de tu interior te otorga nuevos sentidos y poderes mágicos. Puedes sentir la posición y naturaleza de todos los efectos mágicos a distancia media de ti además que recibes *visión a ciegas* en un radio medio. Aprendes también dos hechizos de Rango I vinculados a una entidad abisal y puedes lanzarlos usando vigor en lugar de chi. Dichos hechizos deben ser aprobados por el DJ.
+El poder antinatural de tu interior te otorga nuevos sentidos y poderes mágicos. Puedes sentir la posición y naturaleza de todos los efectos mágicos a distancia media de ti además que recibes *vista a ciegas* en un radio medio. Aprendes también dos hechizos de Rango I vinculados a una entidad abisal y puedes lanzarlos usando vigor en lugar de chi. Dichos hechizos deben ser aprobados por el DJ.
 
 ## Rango III
 
@@ -133,80 +133,3 @@ Abrazas el poder del abismo para convertirte en un avatar viviente del caos. Al 
 - Una mutación adicional se vuelve permanente en ti además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus. Dicha mutación puede ser una que diseñes si la aprueba el DJ.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia abisal no te costarán chi o vigor la primera vez que los lances en una ronda. No obstante, debes seguir pagando para empoderar.
-
-# Invocación abisal
-
-## Base
-
-**Estadísticas base:** 5,4,3,2,1,0
-
-**PV:** 6 + CON
-
-**Vitalidad:** 8 + CON
-
-**Defensa**: 6 (armadura natural)
-
-**Resistencias:** daño físico 4, magia 4, un elemento de tu elección 4
-
-**Inmunidades:** veneno, enfermedades, efectos mentales, terreno difícil
-
-**Vulnerabilidades**: Armas de plata celestial, radiante
-
-**Movimiento:** Base 1, cualquier movimiento +1
-
-**Acciones:** 4
-
-**Rangos:** Tiene rango II en un arma de tu elección y rango I en otra
-
-**Habilidades:**
-
-- *Ataques infundidos*: Todos sus ataques físicos están afectados por una mejora de arma que tú escojas.
-- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
-- *Magia innata*: Puede usar una habilidad mágica de rango I tres veces por combate sin gastar chi usando SAB.
-
-## Mejora 1
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-
-Recibe un rango adicional en dos armas diferentes
-
-Aumenta todas sus resistencias por 2
-
-Se regenera 2 Vitalidad al principio de su turno
-
-Aprende un nuevo hechizo de rango II que puede usar tres veces por combate.
-
-Obtiene esta nueva habilidad:
-
-- *Presencia enloquecedora (Miedo, mental):* Cada criatura que le pueda percibir deberá tener éxito en un tiro de CAR contra su CON + mejora + 1 o son espantadas durante una ronda. Si se encuentran a distancia corta reducirán su cordura por 2.
-
-## Mejora 2
-
-Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 7)
-
-Recibe un rango adicional en un arma
-
-Aumenta su cantidad de acciones por 1
-
-Obtiene +1 en cualquier tipo de movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
-
-Aprende un nuevo hechizo de rango III que puede usar dos veces por combate.
-
-Obtiene esta nueva habilidad
-
-- *Ataques infundidos superiores:* Todos sus ataques están afectados por una mejora nueva de tu elección. Si ambas son la misma el daño adicional se acumula. 
-- *Fusión abisal:* El invocador puede fusionarse con esta criatura, recibiendo sus estadísticas físicas y una reserva de PV temporales igual a la suma de los PV y Vitalidad de esta criatura. No obstante, ambos compartirán acciones y al usar esta habilidad el invocador perderá 2 cordura por ronda.
-
-## Mejora 3
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-
-Recibe un rango adicional en dos armas diferentes
-
-Aumenta todas sus resistencias por 2
-
-Aprende un nuevo hechizo de rango IV que puede usar una vez por combate.
-
-Obtiene esta nueva habilidad
-
-- *Furia abisal:* La primera vez que esta criatura o su invocador caiga a 0 PV revivirá a 1 PV y recuperará 5 + CON Vitalidad. Obtendrá además los bonificadores de Ira a rango I.

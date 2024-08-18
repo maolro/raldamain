@@ -1,14 +1,5 @@
 # Arquetipos abisales
 
-## Origen abisal (+2)
-
-La criatura está horriblemente mutada y retorcida por la energía del abismo. Este arquetipo otorga las siguientes mejoras:
-
-- Aumenta dos estadísticas de su elección por 1.
-- Recibe Inmunidad a efectos Mentales, Miedo, Ilusiones, Aflicciones y Necróticos además de Resistencia a efectos Arcanos y Divinos. Incrementa también su DEF por 2.
-- Obtiene visión a ciegas en un radio medio y puede sentir la posición y naturaleza de todos los objetos mágicos a esa distancia.
-- Tiene activa una Mutación abisal de manera permanente. Obtiene también Ventaja en todos sus tiros relacionados con una estadística de la misma manera que Furia abisal.
-
 ## Magia caótica (+2)
 
 La criatura es capaz de canalizar la magia caótica del abismo y emplearla para alterar la realidad misma. Este arquetipo otorga las siguientes habilidades:
@@ -17,16 +8,7 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 - Obtiene un bonificador +2 en todos sus tiros relacionados con Magia Arcana u Ocultismo. Puede emplear cualquier estadística mental  de su elección para dichos tiros.
 - Incrementa su cantidad de acciones por 1 hasta un máximo de 4.
 - Puede emplear tres hechizos de Rango I pertenecientes a Magia de Evocación, Transmutación o Gravedad sin la necesidad de pagar chi o vigor. Recibirá también la capacidad de usar la Parada mágica asociada a cada rama de magia que obtenga.
-- Obtiene Resistencia a efectos Arcanos y una vez por ronda puede usar el hechizo Salto espacial para evitar un ataque enemigo. 
-
-## Guerrero abisal (+2)
-
-La criatura ha sido escogida por las fuerzas del abismo para sembrar el caos y la destrucción. Este arquetipo otorga las siguientes mejoras:
-
-- Aumenta sus tres estadísticas físicas por 1 junto a su CAR.
-- Incrementa su DEF y sus PV por 2
-- Obtiene Ventaja en todos sus tiros de ataque y defensa de la misma manera que la habilidad Guerrero de la fe. Provocará también 1d6 + 1 daño Ácido, Fuego, Necrótico, Frío o Eléctrico adicional cada vez que impacte con un ataque de arma.
-- Recibe de manera permanente una Mutación abisal adicional o una mejora fisiológica otorgada por Inyección mutagénica. Puede cambiar cualquiera de estas si lo desea empleando una acción. El modificador para estas habilidades será igual a la CON de esta criatura + 2.
+- Obtiene Resistencia a efectos Arcanos y una vez por ronda puede usar el hechizo Salto espacial para evitar un ataque enemigo. .
 
 ## Psíquico (+2)
 

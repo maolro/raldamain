@@ -19,7 +19,7 @@ Ascendencia Insectoide tiene las siguientes reglas fundamentales que se aplican 
 
 *Innata, Pasiva*
 
-Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades además de sus capacidad de metamorfosis.  Obtienes vista a ciegas a una distancia media además de velocidad de escalada 1 junto a la capacidad de escalar superficies lisas y horizontales. Eres también capaz de emplear el hechizo Inyección mutagénica pagando vigor en lugar de chi para obtener las características de un insecto específico. 
+Tu cuerpo adopta las características de un insecto determinado, otorgándote algunas de sus habilidades además de sus capacidad de metamorfosis.  Obtienes *vista a ciegas* a una distancia media además de velocidad de escalada 1 junto a la capacidad de escalar superficies lisas y horizontales. Eres también capaz de emplear el hechizo Inyección mutagénica pagando vigor en lugar de chi para obtener las características de un insecto específico. 
 
 ### Mente insectoide
 

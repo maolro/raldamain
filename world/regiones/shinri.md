@@ -8,7 +8,13 @@ Diversas como la naturaleza misma, las tierras Shinri son una región única en 
 
 ## Orígenes (siglos XXXI-XXXII)
 
+
+
+-Tierra ancestral de los elfos. Fuertes vínculos con los espíritus. Llegan los Humanos Xiangdi liderados por el príncipe Shin. Los humanos conquistan las tierras élficas y los expulsan hacia el norte para controlar sus recursos. 
+
 ## La guerra espiritual y auge del Encarnado (siglo XXXIII)
+
+
 
 ## El primer estado Shinri (siglos XXXIII-XXXIX)
 

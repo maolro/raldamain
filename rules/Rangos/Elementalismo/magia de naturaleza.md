@@ -31,7 +31,7 @@ Formas un látigo hecho de materia vegetal para retener a un enemigo que esté a
 
 Si has enredado a un objetivo con este hechizo puedes intentar retenerlo aún más, forzándolo a tener éxito en una tirada de Destrozar o Heroísmo contra tu magia de Madera o quedara *agarrado*. Cada intento de agarre te cuesta tantas acciones como las que emplearía al lanzar este hechizo y tu enemigo podrá intentar escaparse de la misma manera.
 
-**Potenciar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
+**Empoderar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
 
 ### Espina de Madera
 

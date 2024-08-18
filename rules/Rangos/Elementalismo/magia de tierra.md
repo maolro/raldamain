@@ -17,7 +17,7 @@ Tienes la capacidad de manipular la propia tierra bajo tus pies, permitiéndote 
 
 Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incrementa tu reserva de chi por un valor igual a tu rango + 2.
 
-### Lanzamiento de roca 
+### Pedrada
 
 *Tierra, Ataque, A Distancia, Físico* 
 
@@ -33,7 +33,7 @@ Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alc
 
 **Empoderar** (1 chi): Haz un ataque adicional contra un objetivo diferente que puedas alcanzar. 
 
-### Crear obstáculo 
+### Crear Obstáculo 
 
 *Tierra, Físico, Ambiental* 
 
@@ -43,7 +43,7 @@ Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alc
 
 **Duración**: Instantáneo 
 
-Manipulas la tierra en el campo de batalla para crear un terreno favorable para ti. Forma una barrera o trinchera de tamaño pequeño en cualquier punto en tu alcance que permanecerá en el campo de batalla hasta que sea destruida. Estos obstáculos otorgarán los efectos de *cubierta* a todas las criaturas adyacentes a ellos y solo pueden ser destruidos por ataques de área de magnitud igual o superior.
+Manipulas la tierra en el campo de batalla para crear terreno favorable para ti. Forma una barrera o trinchera de tamaño pequeño en cualquier punto en tu alcance que permanecerá en el campo de batalla hasta que sea destruida. Estos obstáculos otorgarán los efectos de *cubierta* a todas las criaturas adyacentes a ellos y solo pueden ser destruidos por ataques de área de magnitud igual o superior.
 
 **Empoderar** (1 chi): Crea un obstáculo pequeño adicional en el campo de batalla como acción bonus o aumenta el tamaño de un obstáculo existente a mediano. 
 

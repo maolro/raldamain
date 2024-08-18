@@ -182,7 +182,7 @@ Cuando pase la cantidad de rondas escogida podrás emplear la habilidad retardad
 
 ## Rango V
 
-Tus hechizos Temporales convierten sus dados de daño a d10 y los de Rango I reducen su coste en acciones por 1 (mínimo 1).
+Tus hechizos Temporales convierten sus dados de daño a d10.
 
 ### Parar el tiempo
 
@@ -208,7 +208,7 @@ Todas las criaturas en una esfera grande deben tener éxito en un tiro de CON fr
 
 Obtienes la capacidad de percibir el futuro inmediato para anticiparte a todas las acciones enemigas. Este hechizo te otorgará Ventaja en todos tus tiros de ataque, defensa y habilidad durante las siguientes seis rondas además de Inmunidad a ataques sorpresa. Mientras que este hechizo te permite predecir acciones futuras sus ventajas no se aplicarán a tiros contra efectos de las categorías Aflicción, Mental, Miedo, Maldición o Agarre.
 
-Visión futura mejorará también tus capacidades de predecir y defenderte de acciones futuras. Recuperarás también una carga de Premonición al principio de tu turno sin la necesidad de gastar chi además puedes lanzar el hechizo Predecir movimiento empleando cargas de Premonición en lugar de chi.
+Visión futura mejorará también tus capacidades de predecir y defenderte de acciones futuras. Recuperarás también una carga de Premonición al principio de tu turno sin la necesidad de gastar chi además puedes lanzar el hechizo Predecir Movimiento empleando cargas de Premonición en lugar de chi.
 
 **Empoderar** (1 chi): Otorga este hechizo a un aliado que puedas tocar durante el resto del combate.
 

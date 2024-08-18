@@ -97,7 +97,7 @@ La energía vital del mundo de los espíritus sana tus heridas y te permite recu
 
 ## Rango V 
 
-### Aura primigenia
+### Aura Primigenia
 
 *Innata, Pasiva*
 
@@ -143,64 +143,4 @@ Liberas todo el poder espiritual en tu interior para transformarte en una podero
 - Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas.
 - Obtienes velocidad de vuelo 1 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
-- Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
-
-# Criatura espiritual
-
-## Base
-
-**Estadísticas base:** 5,4,3,2,1,0
-
-**PV:** 6 + CON
-
-**Vitalidad:** 8 + CON
-
-**Defensa**: 6 (armadura natural)
-
-**Resistencias:** daño físico 4, magia 4, un elemento de tu elección 4
-
-**Inmunidades:** veneno, enfermedades, efectos mentales, terreno difícil
-
-**Vulnerabilidades**: Armas de hierro frío
-
-**Movimiento:** Base 1, cualquier movimiento +1
-
-**Acciones:** 4
-
-**Rangos:** Tiene rango II en un arma de tu elección y rango I en otra
-
-**Habilidades:**
-
-- *Ataques infundidos*: Todos sus ataques físicos están afectados por una mejora de arma que tú escojas.
-- *Proteger invocador:* Si esta criatura entra en posición defensiva su invocador entrará también en ella sin la necesidad de gastar acciones
-- *Magia innata*: Tiene una reserva de 3 chi que puede emplear para usar un hechizo de rango I de su elección. Empleará su estadística de SAB modificada por el nivel de mejora + 1.
-
-## Mejora 1
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-- Recibe un rango adicional en dos armas diferentes
-- Aumenta todas sus resistencias por 2
-- Se regenera 2 Vitalidad al principio de su turno
-- Aprende un nuevo hechizo de rango II y aumenta su reserva de chi por 2.
-- Obtiene esta nueva habilidad:
-  - *Defensor:* Si está adyacente a otra criatura puede usar parada como reacción para defender cualquier ataque hecho hacia él y recibir el daño que este inflija
-
-## Mejora 2
-
-- Aumenta su Vitalidad por 2, sus PV por 3, su defensa por 2 y dos estadísticas por 1 (máximo 7)
-- Recibe un rango adicional en un arma
-- Aumenta su cantidad de acciones por 1
-- Obtiene +1 en cualquier tipo de movimiento, un sentido nuevo y resistencia 6 contra un tipo de daño de energía de tu elección
-- Aprende un nuevo hechizo de rango III y aumenta su reserva de chi por 2.
-- Obtiene esta nueva habilidad
-  - *Ataques infundidos superiores:* Todos sus ataques están afectados por una mejora nueva de tu elección. Si ambas son la misma el daño adicional se acumula. 
-  - *Mente vinculada*: Esta criatura y su invocador pueden comunicarse telepáticamente y ambos son inmunes a ataques sorpresa y flanqueo mientras los dos estén conscientes
-
-## Mejora 3
-
-- Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-- Recibe un rango adicional en dos armas diferentes
-- Aumenta todas sus resistencias por 2
-- Aprende un nuevo hechizo de rango IV y aumenta su reserva de chi por 2.
-- Obtiene esta nueva habilidad
-  - *Furia espiritual:* La primera vez que esta criatura o su invocador caiga a 0 PV revivirá a 1 PV y recuperará 5 + CON Vitalidad. Obtendrá además los bonificadores de Ira a rango I.
+- Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar

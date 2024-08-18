@@ -189,7 +189,7 @@ Tu alma se ha fortalecido tanto que ha comenzado a rebosar y recubrir tu cuerpo,
 
 **Duración:** Siete rondas
 
-Superpones tu reino de los muertos con el plano material, convirtiendo la tierra que te rodea en un reflejo del mismísimo mundo de los muertos. De esta forma toda la tierra afectada se convertirá en terreno consagrado, y convocar a tus espectros no te costará chi, además de que podrás llamar a uno de ellos como acción bonus una vez por ronda. Así mismo toda persona que muera en el terreno afectado durante la duración del efecto aparecerá en tu reino de los muertos. Podrás viajar a tu reino de los muertos empleando una acción, y mientras el efecto perdure Aullido de almas en pena permanecerá activo.
+Superpones tu reino de los muertos con el plano material, convirtiendo la tierra que te rodea en un reflejo del mismísimo mundo de los muertos. De esta forma toda la tierra afectada se convertirá en *terreno consagrado* donde convocar a tus espectros no te costará chi. Además, podrás llamar a uno de ellos como acción bonus una vez por ronda. Así mismo toda persona que muera en el terreno afectado durante la duración del efecto aparecerá en tu reino de los muertos. Podrás viajar a tu reino de los muertos empleando una acción, y mientras el efecto perdure Aullido de almas en pena permanecerá activo.
 
 # Niveles míticos
 
