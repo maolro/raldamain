@@ -8,6 +8,16 @@ La criatura está infundida por energía elemental de fuego que le permite canal
 
 ## Cuerpo Ígneo (+2)
 
+La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
+
+- Se vuelve Incorpórea, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Fuego a costa de recibir Vulnerabilidad a efectos de Hielo y Agua.
+- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Fuego.
+- Recibe velocidad de vuelo 1 y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista y todo espacio por el que pase saltará en llamas.
+- No puede recibir Sanación pero se regenerará 4 Vitalidad al principio de su turno si se encuentra en un entorno con en llamas.
+- Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. Si ya tiene una *quemadura* activa el nivel de esta aumentará por un paso hasta que sea *grave*.
+
+## Esencia de fuego (+2)
+
 ## Esencia de Fuego I (+2)
 
 - **Aumentos Estadísticos:** Incrementa su DES, CON y CAR por 1 junto a sus limitadores. 
