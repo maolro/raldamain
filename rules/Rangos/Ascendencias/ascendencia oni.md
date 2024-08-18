@@ -59,15 +59,15 @@ Aprende dos hechizos adicionales de Rango II o menos relacionados con su foco el
 
 ### Levitación
 
-Recibe velocidad  de vuelo 2 y Ventaja en tiros de Esquiva si entra en Furia del Oni
+*Innata, Pasiva*
 
-### Transformación Gig
+Al entrar en Furia de oni eres capaz de emplear las energías elementales que canalizas para alzar el vuelo, mejorando enormemente tu movilidad. De esta forma recibirás velocidad de vuelo 2, además de ventaja en todos tus tiros de esquiva. 
 
-Cuando entra en  Furia de Oni su tamaño crece por un paso, obteniendo Ventaja en tiros de FUE  y CON a costa de Desventaja en tiros de DES. Sus ataques físicos aumentan  dados daño por un paso
+### Transformación Gigantesca
 
-**Rayo ocular** (1 chi): Como acción bonus usable una vez por turno puedes disparar un rayo de energía elemental desde tu tercer ojo. Esto es una acción bonus empleable una vez por ronda y el tiro es igual a tu CAR + tu rango de ascendencia. El rayo ocular inflige 1d6 + CAR daño de tu elemento elegido al impactar. Si tienes rangos en magia elemental puedes aplicar sus habilidades en tu rayo ocular como si se tratase de un ataque elemental y emplearás tu tiro de magia elemental si este es superior.
+*Innata, Pasiva*
 
-**Niebla de pesadillas** (2 acciones y 1 chi): Llenas un área de radio corto con una tenebrosa neblina que provoca temor a tus enemigos. Todas las criaturas en el área de efecto tener éxito en un tiro de SAB contra tu rango de ascendencia + CAR y aumentarán el nivel de miedo en el caso que fracasen. Toda criatura que permanezca en el área de efecto de la niebla deberá repetir este tiro al principio de su turno o el nivel de miedo volverá a aumentar. Esta niebla dura un número de turnos igual a tu rango de ascendencia + 1 o hasta que pierdas la concentración.
+Eres capaz de canalizar la energía en tu cuerpo para deformarlo, reformándolo en una nueva apariencia mas grande y resistente. Al entrar en Furia de oni aumentarás tu tamaño por un paso, obteniendo ventaja en tus tiros relacionados con la fuerza y la constitución a costa de recibir desventaja en tus tiros relacionados con la destreza. Así mismo tu físico mejorado aumentará el poder destructivo de tus armas, aumentando los dados de daño de tus ataques físicos por un paso. 
 
 ## Rango IV
 
@@ -75,17 +75,21 @@ Incrementa tu FUE por 1.
 
 ### Regeneración del Oni
 
-Se regenera RANGO  Vitalidad al princpio de su turno y reduce el nivel de una herida o aflicción  por un paso. Esto funciona incluso con heridas críticas
+*Innata, Pasiva* 
+
+A medida que tu cuerpo se fortalece y tu espíritu se alinea mejor con él tu factor curativo también aumenta, permitiéndote sanar hasta las mas mortales heridas sin detenerte. De esta manera sanarás cada ronda vitalidad igual a tu rango, además de que podrás reducir el nivel de una herida permanente o aflicción que te aqueje por un paso. Este efecto regenerativo se aplicará incluso para heridas críticas. 
 
 ### Presencia Terrorífica
 
-**Coste:** 1 acción y 2 chi o vigor
+*Innata, Área, Miedo, Vista*
 
-Todos a su  alrededor tiran Voluntad o Intimidar o aumentan nivel e miedo por un paso.  Repite cada ronda contra todo enemigo que lo vea
+**Coste:** 1 acciones y 2 chi o vigor
 
-**Vuelo**: Al entrar en *furia del oni* recibes la capacidad de volar, aumentando tu velocidad de vuelo por 1. Mientras estés volando recibes ventaja en todos tus tiros hechos con armas cuerpo a cuerpo y de esquiva hechos contra criaturas incapaces de volar. Si sufres una herida permanente o eres [aturdido](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#aturdida) mientras vuelas empezarás a caer inmediatamente.
+**Tamaño:** Radio medio
 
-**Forma gaseosa** (2 acciones y 2 chi): Recibes la capacidad de transformar tu cuerpo en un estado gaseoso, volviéndote incorpóreo e inmune a daño físico a costa que no podrás hacer ataques físicos o elementales. Puedes permanecer como máximo un número rondas seguidas igual a tu rango de ascendencia + 1 en forma gaseosa, tras las cuales volverás a tu forma corpórea. Forma gaseosa puede utilizarse como reacción si te encuentras en *posición defensiva* para evitar por completo el daño de un ataque.
+**Duración:** Concentración
+
+Extendiendo un aura similar a una pesadilla viviente eres capaz de amenazar la voluntad de quienes te rodean, sometiéndolos a tu voluntad únicamente con tu fuerza. De este modo todos aquellos que se encuentren en el área deberán defenderse contra tu modificador empleando Voluntad o Intimidar o aumentarán su nivel de miedo por un paso. Este efecto volverá contra aquellos que entren en el área afectada o que comiencen su turno en ella, siempre que sean capaces de verte. 
 
 ## Rango V
 
@@ -93,15 +97,21 @@ Aprende dos hechizos adicionales de Rango III o menos relacionados con su foco e
 
 ### Alma de Oni
 
-Resistencia a efectos Arcanos, Divinos, Mentales, Aflicciones y Miedo.
+*Innata, Pasiva*
+
+Tu alma a alcanzado el escalón mas alto entre los oni, convirtiéndote en uno de los señores de tu especie. De esta manera recibirás resistencia a efectos arcanos, divinos, mentales, aflicciones y miedo, además de que obtendrás inmunidad contra el elemento que tomaste como tu foco. Así mismo todas las criaturas con ascendencia oni, y de menor fuerza, te obedecerán incondicionalmente, y en el caso de que mueras podrás reencarnarte en otro cuerpo. 
 
 ### Forma espectral
 
-Se transforma en un ser incorpóreo que puede poseer cuerpos de hobgoblin
+*Innata, Mejora*
 
-**Regeneración**: Tu cuerpo se sana a velocidades prodigiosas, permitiéndote que te recuperes del daño y hasta las heridas permanentes. Al principio de tu turno te sanas 2 vitalidad de manera automática, y si te encuentras al máximo de vitalidad te sanas 2 PV. Al hacer un descanso corto reduce la gravedad de todas tus heridas permanentes por un paso, mientras que si realizas un descanso largo te recuperarás de todas tus heridas salvo las graves. Después de una semana eres capaz de recuperar órganos y partes del cuerpo perdidas. (1 chi, 1/ronda) Recuperas Vitalidad igual a tu rango.
+**Coste:** 1 acciones y 2 chi o vigor
 
-**Furia superior**: Al entrar en *furia del oni* obtendrás ventaja en todos los tiros relacionados con hasta tres estadísticas diferentes de tu elección. Puedes además aumentar tu tamaño por un paso, incrementando tu fuerza y constitución por 2 pero reduciendo tu DES por 1. Tu regeneración en tamaño grande se reduce por 1 y las criaturas de tamaño inferior al tuyo reciben ventaja en tiros de esquiva para evitar tus ataques.
+**Alcance:** Propio
+
+**Duración:** Concentración
+
+Eres capaz de desanclar tu alma maldita de tu cuerpo para moverte libre de ataduras, libre de tomar el control de cualquier hobgoblin para usarlo a tu voluntad. De esta manera, al activar esta habilidad, te volverás incorpóreo, recibiendo así inmunidad a efectos físicos, mentales y aflicciones, además de que podrás pasar por hasta las ranuras mas pequeñas. Así mismo podrás forzar una vez por ronda a un hobgoblin a defenderse contra tu control, teniendo este que tirar voluntad o constitución contra tu modificador para evitar caer bajo tu control. 
 
 ## Rango VI
 
@@ -109,9 +119,21 @@ Incrementa tu CON por 1.
 
 ### Despertar el demonio
 
-Recibe 40  Vitalidad temporal, 12 FUE, CAR y CON, 20 DEF, Inmunidad a Mental, Miedo,  Aflicciones, +1 dado daño físico, está siempre en Furia Oni, 6 contadores de  escudo, hechizos Ascendencia son gratis, pos def, transforma hobgoblins en  Oni
+*Innata, Mejora* 
 
-**Despertar el demonio** (3 acciones y 3 chi): Liberas el oni interior de todos los Hobgoblin a una distancia lejana de ti. Todos los que tengan nivel inferior al tuyo - 2 reciben la ascendencia oni a rango I y entran inmediatamente en *furia del oni*. Un Hobgoblin de cualquier nivel puede aceptar voluntariamente que lo transformes en oni, superando así la restricción de nivel. En el caso que afectes a un Hobgoblin de mayor nivel tendrá la oportunidad de realizar un tiro de SAB contra tu estadística de carisma + rango, recibiendo desventaja si está a menos de 6 PV. También recibes la capacidad de alterar tu aspecto temporalmente, tomando la forma de un humanoide de tu elección empleando tres acciones.
+**Coste:** 3 acciones y 5 chi o vigor
 
-**Alma de oni**: Has abrazado el poder de tu oni interior para transformarte en un espíritu inmortal. Recibes resistencia 4 contra efectos mentales, [veneno](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#venenos), [enfermedades](https://raldamain.com/rules/Reglas%20adicionales/venenos_enfermedades.html#enfermedades) y efectos de moral, y las criaturas con ascendencia oni te obedecen instintivamente. En el caso que te mueras tu espíritu puede poseer otro cuerpo de Hobgoblin o el de un recién nacido, otorgándole un rango de ascendencia oni. Si ya tiene la ascendencia oni, recibe la ascendencia a rango VI y uno de tus rangos anteriores (con el entrenamiento adecuado este podrá recibir todos tus rangos anteriores, el cual durará como mínimo una semana por rango). 
+**Alcance:** Propio
+
+**Duración:** 6 rondas
+
+Superponer tu alma oni sobre tu cuerpo, fortaleciéndolo enormemente mientras adoptas una fuerza sobrehumana y un aspecto de pesadillas, dándote la capacidad de someter a quienes se atrevan a desafiarte a tu voluntad. De esta manera recibirás 40 vitalidad temporal, cesando esta habilidad en el momento en el que se agote. En el caso de perder la habilidad por acabarse toda la vitalidad temporal entonces no podrá volver a activarse hasta transcurridas 6 rondas desde el momento en el que se usó inicialmente. Adicionalmente mientras la habilidad esté activa también tendrás los siguientes beneficios. 
+
++ Tu fuerza, constitución y carisma pasarán a ser 12, mientras que tu defensa pasará a ser 20. Además también recibirás 6 contadores de escudo.
++ Permanecerás constantemente en Furia del oni y obtendrás la capacidad de entrar en posición defensiva una vez por ronda como acción bonus. 
++ Obtienes inmunidad a efectos mentales, aflicciones y miedo.
++ Recibes un dado de daño adicional en todos tus ataques físicos, además de que todos los hechizos obtenidos por tu ascendencia no requerirán de reserva para ser lanzados, aunque aún requerirán reserva para poder empoderarse. 
++ Podrás forzar a los hobgoblin cercanos a defenderse empleando voluntad o constitución contra tu modificador o serán habitados por almas oni. 
+
+
 

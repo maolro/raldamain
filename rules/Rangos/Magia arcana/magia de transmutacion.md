@@ -15,7 +15,7 @@ Magia de Transmutación se adhiere a un conjunto de reglas fundamentales que sus
 
 ### Reparar la carne
 
-*Transmutación, ArToque, Sanación*
+*Transmutación, Toque, Sanación*
 
 **Coste**: 1 Acción
 
@@ -29,7 +29,7 @@ Reparas los tejidos corporales de un aliado para sanarle las heridas que haya su
 
 ### Transmutación forzada
 
-*Transmutación, Arcana, Toque, Aflicción, Necrótico*
+*Nigromancia, Toque, Aflicción, Necrótico*
 
 **Coste:** 1 acción
 
@@ -39,13 +39,13 @@ Reparas los tejidos corporales de un aliado para sanarle las heridas que haya su
 
 **Duración:** Instantáneo
 
-Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas internas. Una criatura adyacente a ti deberá tener éxito en un tiro de Salud frente a tu Magia de Transmutación o sufre una *herida permanente leve* en la parte del cuerpo que toques. Dicha herida solo puede sanarse por medios mágicos o científicos de rango alto y puedes afectar con esta habilidad incluso a criaturas orgánicas inmunes a *heridas permanentes*.
+Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas internas. Una criatura adyacente a ti deberá tener éxito en un tiro de CON frente a tu Magia de Transmutación o sufre una *herida permanente leve* en la parte del cuerpo que toques. Dicha herida solo puede sanarse por medios mágicos o científicos de rango alto y puedes afectar con esta habilidad incluso a criaturas orgánicas inmunes a *heridas permanentes*.
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio, o afecta a un objetivo adicional que alcances.
 
 ### Inyección mutagénica
 
-*Transmutación, Arcana, Toque, Duradera*
+*Transmutación, Toque, Duradera*
 
 **Coste:** 2 acciones y 1 chi
 
@@ -60,7 +60,6 @@ Alteras la fisiología de una criatura que toques para mejorar sus capacidades b
 - **Armadura natural:** Tu cuerpo aumenta notablemente su resistencia al daño, aumentando así tu DEF y tus PV por un valor igual a tu Rango de Transmutación + 1.
 - **Inyectar veneno:** Eres capaz de inyectar un veneno a los enemigos que logres herir. Dicho veneno será del tipo que escojas y tendrá gravedad igual a tu modificador de Transmutación.
 - **Movimiento especial:** Alteras tu cuerpo para mejorar tu movilidad en un ámbito específico, aumentando así tu velocidad de escalada o natación por un paso.
-- **Telaraña:** Puede escupir una telaraña que *enredará* al impactar a todos los enemigos en un cono pequeño. Esto costará dos acciones para utilizar y empleará su modificador de Magia de Transmutación para el tiro de ataque. 
 
 **Empoderar** (1 chi): Cambia la mejora que tenga activa una criatura que puedas tocar por otra de tu elección.
 
@@ -68,7 +67,7 @@ Alteras la fisiología de una criatura que toques para mejorar sus capacidades b
 
 ### Arma ósea
 
-*Transmutación, Arcana, Duradero, Físico, Cuerpo a Cuerpo*
+*Transmutación, Duradero, Físico, Cuerpo a Cuerpo*
 
 **Coste**: 2 acciones y 1 chi
 
@@ -84,7 +83,7 @@ El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán
 
 ### Alterar tamaño
 
-*Transmutación, Arcana, Mejora, Duradero*
+*Transmutación, Mejora, Duradero*
 
 **Coste:** 2 acciones y 1 chi
 
@@ -92,7 +91,7 @@ El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán
 
 **Duración:** Un combate
 
-Alteras el tamaño de una criatura que toques para hacerla más grande o más pequeña. El objetivo puede resistirse si tiene éxito en un tiro de Salud frente a tu Magia de Transmutación, pero si fracasa su tamaño crecerá o se reducirá por un paso.
+Alteras el tamaño de una criatura que toques para hacerla más grande o más pequeña. El objetivo puede resistirse si tiene éxito en un tiro de CON frente a tu Magia de Transmutación, pero si fracasa su tamaño crecerá o se reducirá por un paso.
 
 Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de cuantos objetivos puedes afectar simultáneamente, pero todo efecto activo desaparecerá cuando se acabe el tiempo. Un afectado involuntario puede repetir este tiro al principio de cada turno para intentar liberarse. Al activar este hechizo escoge una de estas dos opciones para afectar a tu objetivo.
 
@@ -103,7 +102,7 @@ Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de
 
 ### Consumir esencia
 
-*Transmutación, Arcana, Aflicción, Sanación*
+*Transmutación, Aflicción, Sanación*
 
 **Coste:** 1 acción y 1 chi
 
@@ -111,72 +110,15 @@ Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de
 
 **Duración:** Instantáneo
 
-Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heridas. Un objetivo que puedas tocar debe tener éxito en un tiro de Salud frente a tu modificador de Transmutación o 1d6 + INT daño Físico obligatorio además de quedar Enfermado durante el resto del combate. Tras atacar recuperarás también Vitalidad igual a tu Rango + 2.
+Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heridas. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Transmutación o 1d6 + INT daño Físico obligatorio además de quedar Enfermado durante el resto del combate. Tras atacar recuperarás también Vitalidad igual a tu Rango + 2.
 
 **Empoderar** (1 chi): Reduce el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a tu objetivo.
 
 ## Rango III
 
-### Defensa Adaptable
+### Defensa adaptable
 
-*Transmutación, Duradera, Toque*
-
-**Coste:** 2 acciones y 2 chi
-
-**Alcance:** Adyacente
-
-**Duración:** Cuatro rondas
-
-Transmutas el cuerpo de un objetivo para reforzar sus capacidades defensivas. Este hechizo permanecerá activo durante cuatro rondas y mientras lo esté tu objetivo recibirá una mejora defensiva de tu elección. Puedes escoger la naturaleza exacta de la mejora otorgada siempre y cuando cuente con la aprobación del DJ. A continuación se presentan algunos ejemplos de mejoras que puedes otorgar.
-
-- **Coraza:** Al objetivo le crece una coraza como si fuera una tortuga. Esta mejora otorga una cantidad de *contadores de escudo* igual a tu Rango en el momento que se reciba.
-- **Espinas:** Al objetivo le crecen espinas por todo su cuerpo que herirán a todo aquel que intente tocarle. Sus ataques físicos infligirán un dado de daño adicional y todo enemigo que lo impacte con un ataque natural sufrirá *sangrado*. Si agarra o es agarrado por un enemigo le infligirá daño cada ronda igual a sus ataques naturales.
-- **Resistencia elemental:** Alteras la piel del objetivo para que se vuelva resistente a determinados efectos elementales. Esta mejora otorga Resistencia a un elemento de tu elección entre Ácido, Eléctrico, Frío, Fuego o Sónico. 
-
-**Empoderar** (1 chi): Cambia la defensa escogida a otra de tu elección. Solo puedes afectarte a ti mismo de esta manera. 
-
-### Inyecciones superiores
-
-*Transmutación, Pasiva*
-
-Eres capaz de crear inyecciones mutagénicas más potentes capaces de alterar el cuerpo de tu objetivo de maneras más extremas. Al igual que el atributo base la naturaleza de dichas mejoras depende de ti y debe contar con la aprobación del DJ. A continuación se presentan algunos ejemplos de mejoras que pueden otorgarse.
-
-- **Vuelo:** Te crecen alas en la espalda que te otorgan velocidad de vuelo 1 y Ventaja en todos tus tiros de Esquiva. Esta mejora no tiene efecto si ya puedes volar.
-- **Anfibio:** Te crecen branquias y aletas que te permiten respirar bajo el agua sin dificultades además de otorgarte velocidad de natación 1. 
-- **Piel Venenosa:** Tu piel se vuelve tóxica de la misma manera que algunas ranas. Toda criatura que te toque sufrirá los efectos de un veneno de tu elección cuyo tiro de gravedad será igual a tu modificador de Transmutación. 
-- **Aliento:** Eres capaz de escupir un aliento mágico como si fueras un dragón. El aliento empleará tu modificador de Transmutación para el tiro de ataque e infligirá 1d8 + CON daño Ácido, Eléctrico, Frío o Fuego al impactar. Emplearlo costará dos acciones y afectará un cono pequeño o una línea mediana. Si afectas a una criatura grande con esta inyección recibirá un dado adicional de daño y el área afectada aumentará por un paso.
-
-### Crear quimera
-
-*Transmutación, Mejora*
-
-**Coste:** 3 acciones y 2 chi
-
-**Duración:** Permanente
-
-Mutas forzosamente un animal que puedas tocar para convertirlo en una quimera que te sirva. El animal puede hacer un tiro de Salud frente a tu Magia de Transmutación para resistir este efecto, pero  si fracasa lo transformarás en una quimera monstruosa con nivel igual o inferior a tu Rango x 2. No puedes comandar a más de cuatro quimeras a la vez y estas carecerán de toda inteligencia o raciocinio.
-
-**Empoderar** (1 chi): Una quimera que estés tocando cambia sus arquetipos a otros de tu elección siempre y cuando sean posibles.
-
-## Rango IV
-
-### Moldear la carne
-
-*Transmutación, Arcana, Toque, Aflicción*
-
-**Coste:** 1 acción y 2 chi
-
-**Alcance:** Adyacente
-
-**Duración:** Hasta que termine
-
-Retuerces y alteras el cuerpo de un enemigo para transformarlo en una criatura inofensiva u horripilante. El afectado deberá tener éxito en un tiro de Salud frente a tu Magia de Transmutación o sufrirá 1d8 + INT daño Fuerza, *náuseas* durante una ronda y una mejora equivalente a Inyección Mutagénica. Esta habilidad solo podrá afectar a seres orgánicos.
-
-Si este ataque logra reducir al afectado a 0 PV se transformará en una criatura pequeña de tu elección con nivel inferior al suyo en lugar de morir, resucitando a 1 PV de esta manera. Algunas opciones populares son ranas, cucarachas o arañas. 
-
-### Esencia de la magia
-
-*Transmutación, Arcana, Duradera*
+*Transmutación, Mejora, Duradera*
 
 **Coste:** 2 acciones y 2 chi
 
@@ -184,55 +126,112 @@ Si este ataque logra reducir al afectado a 0 PV se transformará en una criatura
 
 **Duración:** Una hora
 
-Inyectas la esencia de una criatura extraplanaria en un objetivo para darle una poción de sus poders mágicos. Un objetivo adyacente aprenderá de inmediato cuatro hechizos de Rango II o menos relacionados con una criatura extraplanaria de tu elección. La criatura podrá lanzar esos hechizos durante una hora y empleará tu modificador de Magia de Transmutación para todos los tiros. Los hechizos exactos deben ser permitidos por el DJ y se presentan algunos ejemplos a continuación:
+Endureciendo tu piel, haciendo crecer un exoesqueleto oseo o cambiando de formas extremas tu morfología te adaptar a casi cualquier situación que pueda presentársete para abrirte paso a través de ella. De esta manera puedes provocar una mutación espontánea que mejore un aspecto defensivo propio. Puedes crear tus propias propuestas siempre que cuentes con el permiso del master, pero algunos ejemplos serían: coraza, espinas o una resistencia elemental específica.
 
-- **Abisal:** Pozo de Gravedad, Asalto Psíquico, Bola Sombra, Desplazamiento
-- **Celestial:** Toque Sanador, Arma Luminosa, Aliento de Fuego, Barrera Luminosa
-- **Espíritu:** Salto Espacial, Drenar Magia, Espina de Madera, Invisibilidad
-- **Infernal:** Sugestión, Disfraz Ilusorio, Bola de Fuego, Muro de Llamas
+### Asimilar rasgos
 
-**Empoderar** (1 chi): Cambia los hechizos a otros de tu elección con Rango igual o inferior.
+*Transmutación, Mejora, Duradera*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Fusionando tu genoma con el de otras especies obtienes capacidades sobrehumanas para mejorar tus capacidades. Puedes crear tus propias propuestas dependiendo de la criatura que trates de asimilar siempre que cuentes con el permiso del master, pero algunos ejemplos serían hacerte crecer alas o volverte anfibio.
+
+### Crear quimera
+
+*Transmutación, Invocación*
+
+**Coste:** 3 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Mutando a un animal o humano incapacitado puedes crear a una aberración mutada que te sirva fielmente hasta que termine de fallecer por su morfología deficiente. Al crearla la criatura tendrá nivel 6, aumentando 2 niveles por cada rango adicional que tomes de transmutación. No podrás mantener a mas de 4 quimeras bajo tu control. 
+
+## Rango IV
+
+### Moldear la carne
+
+*Transmutación, Aflicción*
+
+**Coste:** 1 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Instantáneo
+
+Provocas rápidas mutaciones espontáneas en tu objetivo, deformándolo horriblemente. De esta manera el afectado deberá defenderse empleando constitución o sufrirá 1d8+Inteligencia daño fuerza, el estado de efecto nauseas y una característica morfológica de tu elección. Así mismo si este ataque reduce a 0 PV a tu objetivo este se convertirá en una quimera, pasando a estar bajo tu control. Sin embargo esta habilidad solamente podrá emplearse contra objetivos orgánicos.
+
+### Esencia de la magia
+
+*Transmutación, Mejora, Duradero*
+
+**Coste:** 2 acciones y 2 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Una hora
+
+Inyectándote sueros destilados de criaturas especiales eres capaz de replicar algunas de las capacidades que las hacen únicas, haciendo tuya una fracción de su poder. De esta manera dependiendo la criatura recibirás hasta tres hechizos de rango II relacionados con la criatura en cuestión. Algunos ejemplos de los ámbitos de los que podrían ser estas criaturas son Abisal, Infernal, Celestial, Elemental o Espíritu.
 
 ### Cadenas de la carne
 
-*Transmutación, Ataque, Arcana, Agarre, Duradera*
+*Transmutación, Ataque, Área, Duradero*
 
 **Coste:** 2 acciones y 2 chi
 
 **Alcance:** Medio
 
-**Tamaño:** Radio corto
+**Duración:** Una hora
 
-**Duración:** Concentración
-
-Extiendes una masa de horripilantes tentáculos de carne a partir del cuerpo de otra criatura a distancia media de ti para absorber la esencia vital de todo aquel que agarren. Haz un ataque de Magia de Transmutación contra todas las criaturas a distancia corta del lugar dónde emerjan los tentáculos que inflige 1d8 + INT daño Necrótico, una *herida leve* y *enreda* al impactar. Los tentáculos solo podrán emerger de tu cuerpo o el de una quimera aliada. 
-
-Este efecto permanecerá activo hasta que pierdas la concentración o los tentáculos sean destruidos. Cada ronda los objetivos *enredados* o *agarrados* por este efecto deberán tener éxito en un tiro de Heroísmo o Juego de Manos frente a tu Magia de Transmutación o pasarán a estar *agarrados* y sufrirán 1d8 + INT daño Necrótico además de una *herida leve*. Los tentáculos también atacarán a toda criatura que entre por primera vez en su área afectada o empiece su turno ahí.
-
-**Empoderar** (1 chi): Una criatura agarrada sufre el efecto de Consumir Esencia (debe tirar Salud para defenderse).
+Llenas una esfera de tamaño medio con bizarras extremidades de carne deformes que solo buscarán alimentarse desenfrenadamente hasta decaer. Aquellos que se encuentren en el área deberán defenderse o sufrirán 1d8+Inteligencia daño fuerza, una herida permanente leve y quedarán agarrados. Mientras el efecto continúe activo todos los que comiencen su turno en el área o entren en ella sufrirán el mismo efecto. Este efecto sin embargo solamente afectará a criaturas corpóreas y solo podrá emerger desde un cadáver orgánico o una quimera aliada. 
 
 ## Rango V
 
 ### Explotar cuerpo
 
-*Transmutación, Arcana, Aflicción*
+*Transmutación, Aflicción*
 
-Objetivo tira CON o su cuerpo explota por dentro. Debe dejar una marca para que sea posible
+**Coste:** 1 acciones y 3 chi
+
+**Alcance:** Adyacente
+
+**Duración:** Instantáneo
+
+Un objetivo al que puedas tocar deberá defenderse empleando su Constitución o recibirá una marca de transmutación. Esta marca podrá activarse desde el momento en el que se coloque hasta como máximo una ronda mas tarde, y al hacerlo provocará 3d10+Inteligencia daño fuerza y una herida permanente grave a su objetivo. En el caso de que este ataque reduzca a 0 PV a su objetivo este morirá instantáneamente. 
 
 ### Clon perfecto
 
-*Transmutación, Duradera*
+*Transmutación, Pasiva*
 
-Creas un clon de otra criatura que te obedece y con estadísticas peores
+Con duro trabajo y los compuestos adecuados puedes estabilizar a una de tus quimeras, perfeccionándola y dándole una identidad única para que te sirva mas eficientemente. De esta manera el nivel de la quimera pasará a ser igual al tuyo menos dos, aunque todavía quedarás limitado al máximo de 4 clones bajo tu control.  
 
 ### Transcender la carne
 
 *Transmutación, Pasiva*
 
-Inmunidad a aflicciones y heridas permanentes. Regeneración muy rápida
+Modificas tu cuerpo para llevarlo un escalón mas alto que el resto de la humanidad, volviéndolo mas resistente y perfecto. De esta manera recibirás inmunidad a Aflicciones y heridas permanentes que no sean graves. Así mismo cada ronda te regenerarás vitalidad igual a tu rango+2 y reducirás el nivel de una herida permanente o aflicción que te aqueje por un paso. 
 
 ## Rango VI
 
 ### Transformación monstruosa
 
-Te transformas en un monstruo poderoso
+*Transmutación, Mejora, Duradera*
+
+**Coste:** 3 acciones y 5 chi
+
+**Alcance:** Propio
+
+**Duración:** Seis rondas
+
+Mutas una parte de tu ser para transformarla en una horripilante vasija capaz de adaptarse a cualquier eventualidad, mutando desenfrenadamente hasta que ninguna amenaza quede con vida. De esta forma al activar Transformación monstruosa recibirás 40 vida temporal, además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta perder la vitalidad temporal. En el caso de perder los beneficios de Transformación monstruosa por quedarse sin vitalidad temporal no podrá volver a activarse hasta que hayan pasado seis rondas desde el momento en el que esta habilidad fue activada. El resto de beneficios de Transformación monstruosa son los siguientes.
+
++ Tres de tus estadísticas pasarán a ser 12, mientras que tu defensa pasará a ser 14.
++ Activas automáticamente los efectos de Asimilar rasgos, Defensa adaptativa y Esencia de la magia, cuyos hechizos no tendrán costo de chi para ser lanzados, pese a que aún deberás pagar para poder empoderarlos. 
++ Recibes un arma de la misma manera que con Arma ósea, y los efectos de tres inyecciones mutagénicas. 
++ Obtienes 6 contadores de escudo y podrás entrar en posición defensiva como acción bonus una vez por ronda. 
++ En cualquier momento de la ronda como acción bonus puedes cambiar cualquiera de tus características adquiridas empleando 1 chi. 

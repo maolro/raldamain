@@ -75,11 +75,27 @@ Eres capaz de emplear los hechizos Consumir esencia y Arma ósea pagando vigor e
 
 ### Fortalecer prole
 
-Transforma un insecto aliado en un monstruo que obedece tus órdenes
+*Innata, Invocación*
+
+**Coste:** 3 acciones y 2 chi o vigor
+
+**Alcance:** Medio
+
+**Duración:** Una hora
+
+Emitiendo las señales químicas adecuadas y secretando ciertas sustancias eres capaz de promover el crecimiento de uno de los insectos que te acompañan, aumentando exponencialmente su fuerza para que te sirva hasta la muerte. De este modo crearán una criatura insecticida de nivel 6, que aumentará su nivel en 2 por cada rango adicional que consigas en la ascendencia. No podrás tener mas de 4 siervos de esta manera. 
 
 ### Feromonas esclavizantes
 
-Desprende una nube de feromonas que te permite comunicarte telepáticamente con otras criaturas y mermar progresivamente la cordura de tus enemigos hasta convertirlos en esclavos tuyos.
+*Innata, Área, Aflicción* 
+
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Tamaño:** Radio Medio
+
+**Duración:** Concentración
+
+Desprendiendo una gran cantidad de feromonas eres capaz de crear una densa nube invisible a tu alrededor, permitiéndote comunicarte mejor con tu prole y someter a aquellos ajenos a tu colmena. De esta manera podrás comunicarte telepáticamente con los insectos que se encuentren en el área, y los enemigos en la zona deberán defenderse contra tu modificador empleando constitución o perderán cordura igual a tu rango+1. En el caso de que la cordura de un enemigo llegue a 0 por este efecto, este se convertirá en un esclavo de tu voluntad. 
 
 ## Rango IV
 
@@ -87,11 +103,27 @@ Incrementa tu CAR por 1.
 
 ### Forma de plaga
 
-Te transformas en una nube de insectos
+*Innata, Mejora* 
+
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Alcance:** Propio
+
+**Duración:** Concentración
+
+Descompones tu cuerpo en miles de pequeños que puedes controlar empleando su inteligencia colectiva bajo tu control, empleando el enjambre resultante como una extensión de tu cuerpo. Al hacerlo contarás como una plaga, recibiendo inmunidad a efectos físicos, mentales, aflicciones y miedo, además de que podrás pasar a través de incluso las ranuras mas pequeñas. Mientras te encuentres en esta forma aún podrás realizar ataques físicos, sin embargo recibirás vulnerabilidad a efectos de área mientras dure el efecto. 
 
 ### Exoesqueleto
 
-Obtienes más defensa, resistencia a heridas y contadores de escudo
+*Innata, Mejora* 
+
+**Coste:** 2 acciones y 2 chi o vigor
+
+**Alcance:** Propio
+
+**Duración:** 6 rondas
+
+Cubres tu cuerpo de un resistente recubrimiento quitinoso, fortaleciendo enormemente tu durabilidad frente ataques externos. De esta manera aumentarás tu defensa base en una cantidad igual a tu rango, además de recibir inmunidad a heridas permanentes leves y medias. Así mismo obtendrás contadores de escudo en una cantidad igual a tu rango, pudiendo emplearlos para reducir el daño de ataques entrantes. 
 
 ## Rango V
 
@@ -99,11 +131,21 @@ Eres capaz de emplear los hechizos Asimilar rasgos y Defensa adaptable pagando v
 
 ### Mente colectiva
 
-Puedes percibir el mundo a través de cualquier insecto y usarlos para lanzar tus hechizos. Inmunidad a efectos Mentales, Miedo y otros efectos.
+*Innata, Pasiva* 
+
+La mente colmena que te unía con tu enjambre por fin se ha desarrollado completamente, afianzando tu control sobre tu prole y retorciendo tu mente de maneras inimaginables ante esta nueva perspectiva del mundo. De este modo podrás percibir el mundo a través de cualquier insecto que puedas controlar, así como también podrás lanzar tus propios hechizos a través de ellos. Así mismo la compleja telaraña que ahora representa tu mente te otorgará una defensa completa contra ataques externos que apunten a ella, recibiendo de este modo inmunidad a efectos mentales y a miedo. 
 
 ### Orden de exterminio
 
-Fortaleces a tus invocaciones y obtienes la capacidad de darles órdenes y ataques combinados
+*Innata, Área, Mejora* 
+
+**Coste:** 1 acciones y 3 chi o vigor
+
+**Tamaño:** Radio grande
+
+**Duración:** Concentración
+
+Liberando una feromona específica eres capaz de enfocar a tu prole para el combate, enfureciéndola y controlándola para que acabe de forma implacable con tu enemigo. De esta manera tanto tú como tu prole recibiréis un dado de ventaja en tiros tanto de ataque como de defensa. Así mismo cada ronda podrás afectar a tu prole con Línea defensiva, Furia de batalla, Movimiento estratégico o Asalto coordinado de forma gratuita como acción bonus. 
 
 ## Rango VI
 
@@ -111,4 +153,16 @@ Incrementa tu INT por 1.
 
 ### Reina de la colmena
 
-Te transformas en una monstruosidad insectoide con fuerza superior y la capacidad de crear numerosos esbirros.
+*Innata, Mejora* 
+
+**Coste:** 3 acciones y 5 chi o vigor
+
+**Alcance:** Propio
+
+**Duración:** 6 rondas
+
+Despiertas tu instinto como gobernante de tu colmena al sentirte en peligro, acelerando las reacciones en tu cuerpo y fortaleciéndote mas allá de lo que cualquier humano normal podría para reafirmar tu dominio. De esta manera recibirás 40 vitalidad temporal, cesando esta habilidad en el momento en el que se agote. En el caso de perder la habilidad por acabarse toda la vitalidad temporal entonces no podrá volver a activarse hasta transcurridas 6 rondas desde el momento en el que se usó inicialmente. Adicionalmente mientras la habilidad esté activa también tendrás los siguientes beneficios. 
+
++ Tu fuerza, constitución y carisma pasarán a ser 12, mientras que tu defensa pasará a ser 20. Además también recibirás 6 contadores de escudo.
++ Recibes un dado de daño adicional en todos tus ataques físicos, además de que todos los hechizos obtenidos por tu ascendencia no requerirán de reserva para ser lanzados, aunque aún requerirán reserva para poder empoderarse. 
++ Todos tus ataques estarán mejorados con Ovoposición gratuitamente, además de que estarás rodeado por Feromonas esclavizantes sin la necesidad de mantener la concentración y podrás usar Fortalecer prole de forma gratuita una vez por ronda. 

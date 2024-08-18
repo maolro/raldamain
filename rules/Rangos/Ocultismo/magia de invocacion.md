@@ -24,7 +24,7 @@ Por cada 3 niveles que subas tu familiar también se fortalecerá, aumentando su
 
 *Invocación, Pasiva*
 
-Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, permitiendo que reaccionéis al peligro rápidamente como si fueseis uno. De esta forma, en el caso de que uno de los dos entre en posición defensiva, el otro también podrá en ella como acción bonus. Así mismo ambos podréis compartir vuestros sentidos, impidiendo así también que uno de los pueda ser sorprendido mientras el otro pueda ver la fuente. 
+Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, permitiendo que reaccionéis al peligro rápidamente como si fueseis uno. De esta forma, en el caso de que uno de los dos entre en posición defensiva, el otro también podrá entrar en ella como acción bonus. Así mismo ambos podréis compartir vuestros sentidos, impidiendo así también que uno de los pueda ser sorprendido mientras el otro pueda ver la fuente. 
 
 ## Rango II
 
@@ -32,7 +32,7 @@ Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, p
 
 *Invocación, Pasiva*
 
-A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás *apoyar* a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad o la habilidad específica que emplees. Así mismo, si tu familiar emplea una Acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
+A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra capacidad de compenetraros y luchar unidos en batalla. De esta manera podrás apoyar a tu familiar sin importar la distancia a la que se encuentre de ti o la habilidad específica que emplees. Así mismo, si tu familiar emplea una acción para apoyarte podrás repetir el tiro en cuestión, quedándote con el mejor resultado. 
 
 **Empoderar** (1 chi o vigor): Apoyas como acción bonus
 
@@ -40,7 +40,7 @@ A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra cap
 
 *Invocación, Pasiva*
 
-Al igual que vuestros instintos, vuestro chi interno a comenzado a unirse mas profundamente, permitiéndote emplear algunas de las habilidades de tu familiar siempre que este se encuentre presente para orientarse. De esta forma, en caso de compartir habilidades con tu familiar, este podrá emplear tu bonificador en el caso de que este sea mas alto. Así mismo tú podrás emplear sus hechizos o técnicas de combate conocidas pagando el adecuado costo de chi o vigor. Para hechizos o técnicas empleadas de esta manera usarás tu modificador de Magia de invocación, y requerirá de que tu familiar esté consciente. 
+Al igual que vuestros instintos, vuestro chi interno a comenzado a unirse mas profundamente, permitiéndote emplear algunas de las habilidades de tu familiar siempre que este se encuentre presente para orientarte. De esta forma, en caso de compartir habilidades con tu familiar, este podrá emplear tu bonificador en el caso de que este sea mas alto. Así mismo tú podrás emplear sus hechizos o técnicas de combate conocidas pagando el adecuado costo de chi o vigor. Para hechizos o técnicas empleadas de esta manera usarás tu modificador de Magia de invocación, y requerirá de que tu familiar esté consciente. 
 
 ## Rango III
 
@@ -54,7 +54,7 @@ Vuestros destinos han comenzado a entrelazarse, permitiéndoos compartir dicha y
 
 *Innata, Pasiva*
 
-Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu familias has descubierto un nuevo nivel de maestría para empoderarlos de forma que antes no eran posibles. De esta manera obtendrás el conocimiento para convocar a un familiar adicional del mismo nivel al que ya te acompañaba, o en su defecto podrás realizar un ritual para aumentar el nivel de tu familiar actual por dos. Esta decisión volverá a repetirse cuando llegues a rango V.
+Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu familiar has descubierto un nuevo nivel de maestría para empoderarlos de forma que antes no eran posibles. De esta manera obtendrás el conocimiento para convocar a un familiar adicional del mismo nivel al que ya te acompañaba, o en su defecto podrás realizar un ritual para aumentar el nivel de tu familiar actual por dos. Esta decisión volverá a repetirse cuando llegues a rango V.
 
 ## Rango IV
 
@@ -62,7 +62,7 @@ Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu
 
 *Innata, Pasiva*
 
-Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Debido a eso ahora vuestra naturaleza ha comenzado a mezclarse, no siendo dos individuos separados sino dos partes de un todo. Por ello todas las Resistencias que tenga tu familiar te serán compartidas contigo, así como tus resistencias, que se compartirán con tu familiar. 
+Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Debido a eso ahora vuestra naturaleza ha comenzado a mezclarse, no siendo dos individuos separados sino dos partes de un todo. Por ello todas las resistencias que tenga tu familiar te serán compartidas contigo, así como tus resistencias, que se compartirán con tu familiar. 
 
 **Empoderar** (1 chi o vigor): Empleas el modificador de tu Familiar para defenderte de un efecto hostil o la Invocación emplea el tuyo.
 
@@ -72,9 +72,7 @@ Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas p
 
 **Alcance:** Medio
 
-Empleando las cadenas con las que mantienes la esencia de tu familiar con una forma definida y atada al mundo puedes intervenir en la conexión de otros usuarios de criaturas con la misma naturaleza. De esta manera podrás tirar contra el control de un familiar o criatura invocada hostil, que deberá defenderse empleando su nivel + 2. En caso de tener éxito el amo de la criatura perderá el control de ella durante una ronda, dándole como resultado el efecto de estado confundido. 
-
-Si afectas a una invocación sin amo podrás controlarla durante una ronda en caso de que esta falle el tiro, controlándola durante un día en el caso de que tengas éxito en este tiro dos veces. En caso de desearlo podrás seguir repitiendo este tiro contra la invocación controlada cada día, la cual te será leal cuando te ganes su confianza, permitiéndote que ya no tengas que tirar mas. Puedes tener un máximo de 6 familiares de esta manera. 
+Empleando las cadenas con las que mantienes la esencia de tu familiar con una forma definida y atada al mundo puedes intervenir en la conexión de otros usuarios de criaturas con la misma naturaleza. De esta manera podrás tirar contra el control de un familiar o criatura invocada hostil, que deberá defenderse empleando su nivel+2. En caso de tener éxito el amo de la criatura perderá el control de ella durante una ronda, dándole como resultado el efecto de estado confundido. En caso de afectar a una invocación sin amo podrás controlarla durante una ronda en caso de que esta falle el tiro, controlándola durante un día en el caso de que tengas éxito en este tiro dos veces. En caso de desearlo podrás seguir repitiendo este tiro contra la invocación controlada cada día, la cual te será leal cuando te ganes su confianza, permitiéndote que ya no tengas que tirar mas. Puedes tener un máximo de 6 familiares de esta manera. 
 
 ## Rango V
 
@@ -86,9 +84,9 @@ Si afectas a una invocación sin amo podrás controlarla durante una ronda en ca
 
 **Duración:** 6 rondas.
 
-Compartes una parte de la misma esencia que te da vida con tu familiar, empoderando su chi interno y haciendo que el vínculo que os une se vuelva mas fuerte que nunca. De esta manera un familiar que controles recibirá 20 vialidad temporal, además de Ventaja en todos sus tiros. Así mismo aumentará su defensa por 6 y recibirá 4 contadores de escudo. En caso de perder la Vitalidad temporal sin embargo deberás tirar invocación o tu familiar perderá el control, quedando confundido por la cantidad de energía que ya no es capaz de manejar. 
+Compartes una parte de la misma esencia que te da vida con tu familiar, empoderando su chi interno y haciendo que el vínculo que os une se vuelva mas fuerte que nunca. De esta manera un familiar que controles recibirá 20 vialidad temporal, además de ventaja en todos sus tiros. Así mismo aumentará su defensa por 6 y recibirá 4 contadores de escudo. En caso de perder la vitalidad temporal sin embargo deberás tirar invocación o tu familiar perderá el control, quedando confundido por la cantidad de energía que ya no es capaz de manejar. 
 
-### Unidos hasta la Muerte
+### Unidos hasta la muerte
 
 **Coste:** 1 acción y 3 chi o vigor
 
