@@ -9,7 +9,7 @@ La criatura tiene esencia mágica relacionado con fuerzas elementales de natural
 ## Cuerpo de Plantas (+2)
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y SAB por 1 junto a sus limitadores. Aumenta también sus PV y DEF por 4.
-- **Planta Viviente:** Recibe Inmunidad a *heridas permanentes* y efectos Mentales, Sónicos, Aturdimiento, Miedo y Aflicciones a costa de Vulnerabilidad a efectos de Fuego y Necróticos. 
+- **Planta Viviente:** Recibe Inmunidad a *heridas permanentes* y efectos Mentales, Sónicos, Aturdimiento, Miedo y Aflicciones a costa de Vulnerabilidad a efectos de Fuego y Necróticos. Obtiene también Resistencia al daño Contundente y Perforante.  
 - **Uno con la Naturaleza:** Recibe Inmunidad a *terreno difícil* ocasionado por plantas y tiene *vista a ciegas* con alcance medio, la cual funciona de la misma manera que Georradar. Además, si se encuentra en un lugar con mucha vegetación puede *ocultarse* como acción bonus una vez por ronda.
 - **Naturaleza Empoderada:** Puede lanzar sus hechizos de Naturaleza empleando su estadística de CON en lugar de su SAB además que recibirá Ventaja en todos sus tiros de ataque y defensa con estos. Se regenera también 4 Vitalidad al inicio de su turno si se encuentra en contacto con la naturaleza.
 

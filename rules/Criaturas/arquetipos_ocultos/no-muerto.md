@@ -10,11 +10,11 @@ La criatura ha reanimado desde el más allá como un no-muerto que busca aliment
 
 La criatura ha renacido como un espectro para atormentar el mundo de los vivos. Este arquetipo otorga las siguientes mejoras:
 
-- Se vuelve Incorpórea, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Necróticos. El daño elemental de cualquier tipo tampoco le afectará salvo que tenga características Arcanas o Divinas. 
-- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que a diferencia de otros seres incorpóreos es capaz de emplear armas y magia libremente.
-- Recibe velocidad de vuelo 1 y puede pasar a través de objetos sólidos. No puede ser detectada por ningún sentido salvo la vista y Sentido divino.
-- Puede detectar la posición de seres vivos a distancia media y sentirá las influencias extraplanarias a distancia lejana de la misma manera que Sentido Divino.
-- Esta criatura cuenta como un no-muerto para los propósitos de otros efectos y puede ser Exorcizado. No es capaz d
+- **Estadísticas: **Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que no podrá emplear habilidades o ataques que no sean Sombríos o de Nigromancia.
+- **Incorpóreo: **Obtiene Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones. Recibe también velocidad de vuelo 1 y puede pasar a través de objetos sólidos.
+- **Sentidos Sobrenaturales:** Es capaz de sentir la posición de todos los seres vivos y presencias mágicas a distancia media.
+- **Cuerpo Espectral:** Es Inmune al daño Fuego, Frío, Ácido, Eléctrico y Sónico salvo que tenga características Arcanas o Divinas. Esta criatura puede ser Exorcizada o sellada con habilidades de Médium.
+- **Posesión:** Esta criatura puede poseer los cuerpos de seres vivos para emplear sus habilidades a través de ellos o manipularlos para sus siniestros fines. Esto funciona de la misma manera que el hechizo Posesión pero es gratuito y solo podrá emplearse una vez por ronda. El Espectro empleará como modificador su talento de Voluntad. Si un afectado logra liberarse o tiene éxito en el tiro no podrá volver a ser poseído durante el re
 
 ## Esqueleto (+2)
 

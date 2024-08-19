@@ -17,7 +17,7 @@ Ascendencia de Agua tiene las siguientes reglas fundamentales que se aplican a c
 
 Aumenta tu estadística de DES por 1.
 
-### Nacido de las profundidades
+### Nacido de las Profundidades
 
 *Innata, Pasiva*
 

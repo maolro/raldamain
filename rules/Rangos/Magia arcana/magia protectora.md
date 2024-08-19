@@ -37,7 +37,7 @@ Debes encontrarte en *posición defensiva* para contrarrestar hechizos ajenos y 
 
 **Empoderar** (X chi): Tienes éxito automático en tu tiro para contrarrestar un hechizo cuyo lanzador haya pagado X chi o menos para él. Si intentas contrarrestar hechizos de esta manera el lanzador puede pagar chi adicional para evitarlo, forzándote a aumentar la cantidad que pagues si deseas tener éxito.
 
-### Disrupción mágica
+### Disrupción Mágica
 
 *Protectora, Arcana, Toque*
 
@@ -55,7 +55,7 @@ Eres capaz de provocar graves disrupciones en objetos mágicos para impedir su f
 
 ## Rango II
 
-### Eliminar magia
+### Eliminar Magia
 
 *Protectora, Arcana*
 
@@ -71,7 +71,7 @@ Provocas una disrupción mágica en un enemigo para anular los hechizos arcanos 
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo o cancelas un hechizo adicional que tenga activo tu objetivo al tener éxito en el tiro.
 
-### Círculo de sellado
+### Círculo de Sellado
 
 *Protectora, Arcana, Duradera*
 
@@ -87,7 +87,7 @@ Mientras que la barrera de círculo mágico podrá aguantar a criaturas extrapla
 
 **Empoderar** (1 chi): Trazas el círculo mágico en otra criatura aliada para que se mueva junto a ella.
 
-### Sello protector
+### Sello Protector
 
 *Protectora, Arcana, Duradera, Toque*
 
@@ -105,7 +105,7 @@ Un sello durará seis rondas o hasta que sea eliminado y un personaje no podrá 
 
 ## Rango III
 
-### Retener persona
+### Retener Persona
 
 *Protectora, Arcana, Agarre*
 

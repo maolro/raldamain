@@ -18,7 +18,7 @@ Magia de Evocación se adhiere a un conjunto de reglas fundamentales que sustent
 
 ## Rango I
 
-### Rayo arcano
+### Rayo Arcano
 
 *Evocación, Arcano, Ataque, A distancia*
 
@@ -34,7 +34,7 @@ Concentras energía mágica en la forma de un rayo para atacar a tus enemigos. H
 
 **Empoderar** (1 chi): Ataca a un objetivo adicional con este hechizo.
 
-### Especialidad arcana
+### Especialidad Arcana
 
 *Evocación, Pasiva*
 
@@ -48,7 +48,7 @@ Tu profundo conocimiento de los procesos que hay detrás de lo que otros denomin
 
 A rangos superiores podrás obtener afinidad con nuevos elementos y aprender hechizos pertenecientes a ellos. No obstante, seguirás sin poder conocer hechizos pertenecientes a tu elemento opuesto salvo que dediques una gran cantidad de tiempo al estudio y entrenes bajo un maestro afín con él. Todo este proceso quedará a decisión del máster.
 
-### Descarga de energía
+### Descarga de Energía
 
 *Evocación, Arcano, Ataque, Área*
 

@@ -6,23 +6,14 @@ La criatura está infundida de energía positiva, permitiéndole moldearla para 
 
 # Mejoras
 
-## Cuerpo Luminoso I (+2)
+## Cuerpo Luminoso (+2)
 
 La criatura está hecha de pura energía luminosa, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
 
-- Se vuelve Incorpórea, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Radiantes. El daño Necrótico le afectará con normalidad y fallará automáticamente todos sus tiros de CON para defenderse contra él.
-- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Radiante.
-- Recibe velocidad de vuelo 1 y puede pasar a través de objetos sólidos. No puede ser detectada por ningún sentido salvo la vista y Sentido divino.
-- Puede detectar la posición de seres vivos a distancia media y sentirá las influencias extraplanarias a distancia lejana de la misma manera que Sentido Divino.
-
-## Cuerpo Luminoso II (+2, 3 mejoras)
-
-La criatura se transforma en una emanación viviente del Fuego Celestial. Obtener este arquetipo requiere que la criatura tenga ya Cuerpo Luminoso y otorgará las siguientes mejoras adicionales:
-
-- Aumenta su velocidad de vuelo por 1 y puede entrar en *posición defensiva* una vez por ronda como acción bonus.
-- Recibe Visión verdadera a distancia media, lo cual le otorga Inmunidad a efectos Ilusorios. 
-- Obtiene Ventaja en todos sus tiros relacionados con Magia de Vida. Esto no se acumula con el bonificador otorgado por habilidades de Magia Divina o Guerrero Divino.
-- Puede emplear su modificador en Magia de Vida para tiros de Esquiva además que una vez por ronda puede evitar automáticamente un ataque enemigo y moverse un paso. Esto funciona de la misma manera que el hechizo Luz Viviente.
+- **Estadísticas: **Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que no podrá emplear habilidades o ataques que no sean de Vida.
+- **Incorpóreo: **Obtiene Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones. Recibe también velocidad de vuelo 1 y puede pasar a través de ranuras pequeñas. 
+- **Energía Viviente:** Recibe Inmunidad a efectos Radiantes a costa de Vulnerabilidad a efectos Necróticos. Si es afectado por un hechizo de Vida se sanará Vitalidad igual al Rango de este + 2.
+- **Velocidad de la Luz:** Puede emplear su modificador de Magia de Vida para todos sus tiros de Parada además que una vez por ronda puede evitar automáticamente un ataque enemigo y moverse un paso.
 
 ## Esencia de Vida I (+2)
 
