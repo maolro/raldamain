@@ -11,7 +11,7 @@ title: Magia de arena
 
 ## Rango I
 
-### Torrente de arena
+### Torrente de Arena
 
 *Arena, Ataque, Maniobra, Físico* 
 
@@ -29,7 +29,7 @@ Este hechizo también puede utilizarse para empujar objetos de un tamaño simila
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional que alcances con este hechizo
 
-### Transmutar la tierra
+### Transmutar la Tierra
 
 *Arena, Ambiental*
 
@@ -47,7 +47,7 @@ La arena permanecerá activa hasta que sea eliminada por otros efectos ambiental
 
 **Empoderar** (1 chi): Convierte una porción adicional de tierra del mismo tamaño en arena.
 
-### Polvo cegador
+### Polvo Cegador
 
 *Arena, Gaseoso, Duradero*
 

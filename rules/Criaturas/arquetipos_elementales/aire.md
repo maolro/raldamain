@@ -10,12 +10,10 @@ La criatura tiene esencia mágica relacionado con fuerzas elementales de aire.
 
 La criatura está compuesta de aire viviente, careciendo así de un cuerpo físico. Este arquetipo otorga las siguientes mejoras.
 
-- Se vuelve Incorpórea, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones, Fuego, Frío, Necrótico y Eléctrico costa de recibir Vulnerabilidad a efectos de Aire y Sónicos.
-- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que solo podrá hacer ataques de las categorías Aire o Tormenta.
-- Recibe velocidad de vuelo 2, Ventaja en tiros de Esquiva y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista.
-- Puede emplear tanto Parada de Aire como Esquiva para defenderse de ataques y quedarse con el mejor resultado además que recibe una acción adicional.
-- No puede recibir Sanación pero se regenerará 4 Vitalidad al principio de su turno si se encuentra en un entorno con fuertes vientos.
-- Es capaz de fusionarse con efectos Duraderos de Aire existentes, permitiendo que pueda usarlos sin la necesidad de mantener la concentración siempre y cuando se muevan de la misma manera que esta criatura.
+- **Estadísticas: **Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que no podrá emplear habilidades o ataques que no sean de Aire o Tormenta.
+- **Incorpóreo: **Obtiene Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones. Recibe también velocidad de vuelo 1 y puede pasar a través de ranuras pequeñas. 
+- **Aire Viviente:** Recibe Inmunidad a efectos Eléctricos a costa de Vulnerabilidad a efectos de Aire y Sónicos. Si es afectado por un hechizo de Agua se sanará Vitalidad igual al Rango de este + 2.
+- **Fusión de Viento:** Es capaz de fusionarse con efectos Duraderos de Aire o Tormenta existentes, pudiendo así emplearlos sin la necesidad de mantener la concentración. Si está fusionado debe moverse de la misma manera que el hechizo y formará parte de su cuerpo.
 
 ## Esencia de Aire I (+2)
 

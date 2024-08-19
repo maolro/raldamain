@@ -12,7 +12,7 @@ title: Magia de Ácido
 
 ## Rango I
 
-### Escupitajo ácido
+### Escupitajo Ácido
 
 *Ácido, Ataque, A distancia*
 
@@ -28,7 +28,7 @@ Formas una esfera de ácido corrosivo en la palma de tu mano y la lanzas hacia u
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional que alcances con este hechizo
 
-### Toque corrosivo
+### Toque Corrosivo
 
 *Ácido, Ataque, Toque*
 
@@ -46,7 +46,7 @@ Si logras impactar tu objetivo se recubrirá de ácido corrosivo, forzándole a 
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo a cercano o una criatura que esté sufriendo daño persistente debe volver a tirar para evitar el daño. Solo puedes empoderar así una vez por ronda.
 
-### Aliento tóxico
+### Aliento Tóxico
 
 *Ácido, Ataque, Área*
 

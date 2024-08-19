@@ -14,7 +14,7 @@ Ascendencia Primigenia tiene las siguientes reglas fundamentales que se aplican 
 
 ## Rango I
 
-### Aspecto primigenio
+### Aspecto Primigenio
 
 *Innata, Pasiva*
 

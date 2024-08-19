@@ -10,12 +10,20 @@ La criatura tiene esencia mágica relacionado con fuerzas elementales de ácido.
 
 La criatura está compuesta de ácido corrosivo, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
 
-- Su cuerpo se transforma en líquido, obteniendo así Inmunidad a efectos Físicos, Mentales, Aflicciones y Ácido a costa de recibir Vulnerabilidad a efectos de Hielo y Agua.
-- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que sus ataques solo podrán provocar daño Ácido.
-- Recibe velocidad de natación 1 y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista y corroerá todo objeto por el que pase que no esté hecho de *material superior*, provocando el efecto de estado *roto*.
-- Toda criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. En el caso que lleve armadura o impacte a esta criatura con un arma dicho objeto recibirá el efecto de estado *roto*.
+- **Estadísticas: **Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que no podrá emplear habilidades o ataques que no sean de Ácido.
+- **Cuerpo Líquido: **Obtiene Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones. Recibe también velocidad de natación 1 y puede pasar a través de ranuras pequeñas. 
+- **Ácido Viviente:** Recibe Inmunidad a efectos de Ácido a costa de Vulnerabilidad a efectos de Agua y Hielo. Si es afectado por un hechizo de Ácido se sanará Vitalidad igual al Rango de este + 2.
+- **Toque Ácido:** Cada objeto que toque se corroerá, otorgándole el efecto de estado *roto*. Cada vez que una criatura que le impacte con un ataque físico o empiece su turno en una posición adyacente sufrirá automáticamente una *quemadura leve*. Si ya tiene una *quemadura* activa el nivel de esta aumentará por un paso hasta que sea *grave*.
 
 ## Esencia de Ácido I (+2)
+
+- **Aumentos Estadísticos:** Incrementa su DES, CON y CAR por 1 junto a sus limitadores. Incrementa también sus PV, Vitalidad y DEF p
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Ácido por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
+- **Habilidades Pasivas:** Obtiene la habilidad pasiva Aspecto Primigenio.
+- **Hechizos:** Aprende los hechizos Escupitajo Ácido, Toque Corrosivo y Aliento Tóxico. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Parada de Ácido:** Puede usar su tiro de Magia de Ácido para defenderse de ataques cuerpo a cuerpo y a distancia.
+- **Hijo del Pantano:** Obtiene velocidad de natación 1 además de Resistencia a efectos Necróticos, Ácido y Aflicciones. 
+- **Infusión Ácida:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Ácido que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda.
 
 ## Esencia de Ácido II (+2, 3 mejoras)
 

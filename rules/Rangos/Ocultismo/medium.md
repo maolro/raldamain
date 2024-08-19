@@ -175,7 +175,9 @@ Posees una fracción del abstracto plano de los muertos, pudiendo darle forma a 
 
 *Médium, Pasiva* 
 
-Tu alma se ha fortalecido tanto que ha comenzado a rebosar y recubrir tu cuerpo, permitiéndote canalizar mas libremente tus habilidades así como aumentar tanto tu ataque como la defensa de tu mente. De esta manera podrás atacar a criaturas incorpóreas con ataques físicos, al encontrarse tus ataques imbuidos constantemente con tu energía. Así mismo los espectros podrán reconocer tus habilidades a simple vista, haciéndolos normalmente obedientes hacia ti al reconocerte como uno de sus protectores. Así mismo al canalizar podrás conseguir dos hechizos hechizos o técnicas adicionales de rango III, así como también inmunidad a efectos mentales.  
+Tu alma se ha fortalecido tanto que ha comenzado a rebosar y recubrir tu cuerpo, permitiéndote canalizar mas libremente tus habilidades así como aumentar tanto tu ataque como la defensa de tu mente. De esta manera podrás atacar a criaturas incorpóreas con ataques físicos, al encontrarse tus ataques imbuidos constantemente con tu energía. 
+
+Los espectros podrán reconocer tus habilidades a simple vista, haciéndolos normalmente obedientes hacia ti al reconocerte como uno de sus protectores. Así mismo al canalizar podrás conseguir dos hechizos hechizos o técnicas adicionales de rango III, así como también Inmunidad a efectos Mentales.  
 
 ## Rango VI
 

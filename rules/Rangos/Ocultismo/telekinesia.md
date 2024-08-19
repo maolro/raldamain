@@ -14,7 +14,7 @@ Tu mente tiene un poder superior que el de la mayoría de personas que te rodean
 
 ## Rango I
 
-### Manipulación telequinética
+### Manipulación Telequinética
 
 *Telequinesia, Ataque, A distancia, Físico*
 
@@ -32,7 +32,7 @@ Un objeto que esté levitando puede usarse para hacer ataques contra enemigos a 
 
 **Empoderar** (1 chi): Puedes manipular un objeto adicional a distancia cercana de ti y usarlo para hacer otro ataque contra un objetivo distinto.
 
-### Lanzamiento humano
+### Lanzamiento Humano
 
 *Telekinesia, Maniobra*
 
@@ -48,7 +48,7 @@ Lanzas a un enemigo por los aires empleando tus poderes telequinéticos. Un obje
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo
 
-### Furia telequinética
+### Furia Telequinética
 
 *Telequinesia, Ataque, Físico, Área*
 
@@ -66,7 +66,7 @@ Canalizas tus sentimientos de ira para lanzar telequinéticamente una gran canti
 
 ## Rango II
 
-### Barrera de fuerza
+### Barrera de Fuerza
 
 *Telekinesia, Defensiva, Duradera*
 

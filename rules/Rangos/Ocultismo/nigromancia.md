@@ -13,7 +13,7 @@ En el momento en el que tu conocimiento sobre la muerte alcanza sus ultimas etap
 
 ## Rango I
 
-### Toque necrótico
+### Toque Necrótico
 
 *Nigromancia, Toque, Aflicción, Necrótico*
 
@@ -29,7 +29,7 @@ Tu toque drena la energía vital misma de un enemigo. Una criatura adyacente a t
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio.
 
-### Descarga de energía negativa
+### Descarga de Energía Negativa
 
 *Nigromancia, Ataque, A distancia, Necrótico*
 
@@ -45,7 +45,7 @@ Concentras la antienergía en la forma de un rayo y lo disparas a un enemigo. Ha
 
 **Empoderar** (1 chi): Afecta a una criatura adicional a distancia media de ti.
 
-### Bendición de la muerte
+### Bendición de la Muerte
 
 *Nigromancia, Pasiva*
 
@@ -222,7 +222,7 @@ Corrompes el alma de un enemigo con un toque para transformarlo en un no-muerto.
 
 **Empoderar** (1 chi): Afectas a una criatura adicional con este hechizo.
 
-### Alma corrompida
+### Alma Corrompida
 
 *Nigromancia, Pasiva*
 
@@ -230,7 +230,7 @@ La energía necrótica ha corrompido por completo tu alma, transformándote en u
 
 El poder necrótico te hace aún más difícil de matar, permitiéndote seguir luchando aunque caigas a menos de 0 PV recibiendo únicamente el efecto de estado *ralentizado*. Solo morirás completamente si eres decapitado o cuando el valor absoluto de tus PV negativos sea inferior a tu estadística de CAR. 
 
-### Nube de aniquilación
+### Nube de Aniquilación
 
 *Nigromancia, Necrótica, Gaseosa, Duradera*
 

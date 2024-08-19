@@ -10,11 +10,10 @@ La criatura tiene esencia mágica relacionado con fuerzas elementales de agua.
 
 La criatura está compuesta de aguas fluidas, careciendo así de cuerpo físico. Este arquetipo otorga las siguientes mejoras:
 
-- Su cuerpo se transforma en líquido, obteniendo así Inmunidad a efectos Físicos, Mentales y Aflicciones a costa de recibir Vulnerabilidad a efectos de Frío y Fuego.
-- Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad. No podrá emplear habilidades o ataques que no sean de Agua o Ácido.
-- Recibe velocidad de natación 1 y puede pasar a través de las ranuras más pequeñas. No puede ser detectada por ningún sentido salvo la vista y tiene Ecolocación a una distancia media. También es capaz de caminar encima del agua sin dificultades.
-- No puede recibir Sanación pero se regenerará 4 Vitalidad al principio de su turno si se encuentra en contacto con el agua.
-- Es capaz de fusionarse con efectos Duraderos de Agua o Ácido existentes, permitiendo que pueda usarlos sin la necesidad de mantener la concentración siempre y cuando se muevan de la misma manera que esta criatura.
+- **Estadísticas: **Carece de FUE, CON y Defensa. Empleará su estadística de CAR para calcular sus PV y Vitalidad además que no podrá emplear habilidades o ataques que no sean de Agua.
+- **Cuerpo Líquido: **Obtiene Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones. Recibe también velocidad de natación 1 y puede pasar a través de ranuras pequeñas. 
+- **Agua Viviente:** Recibe Inmunidad a efectos de Agua a costa de Vulnerabilidad a efectos de Frío y Fuego. Si es afectado por un hechizo de Agua se sanará Vitalidad igual al Rango de este + 2.
+- **Fusión Acuosa:** Es capaz de fusionarse con efectos Duraderos de Agua o Ácido existentes, pudiendo así emplearlos sin la necesidad de mantener la concentración. Si está fusionado debe moverse de la misma manera que el hechizo y formará parte de su cuerpo.
 
 ## Esencia de Agua I (+2)
 
