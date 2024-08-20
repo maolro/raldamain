@@ -1,5 +1,5 @@
 ---
-title: Guerrero Abisal
+title: Guerrero Espiritual
 ---
 
 # Mejoras
