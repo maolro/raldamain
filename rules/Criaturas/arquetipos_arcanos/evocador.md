@@ -13,7 +13,7 @@ La criatura es capaz de canalizar el poder del chi para atacar a sus enemigos co
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Especialidad Arcana.
 - **Hechizos:** Aprende los hechizos Rayo Arcano y Descarga de Energía. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada Arcana:** Puede usar su tiro de Magia de Evocación para defenderse de ataques cuerpo a cuerpo y a distancia.
-- **Mente Desencadenada:** Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales a costa de recibir Vulnerabilidad a efectos Mentales.
+- **Mente Desencadenada:** Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales a costa de Vulnerabilidad a efectos Mentales.
 
 ## Evocador II (+2, 3 mejoras)
 
