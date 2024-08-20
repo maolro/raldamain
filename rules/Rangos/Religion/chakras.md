@@ -20,13 +20,13 @@ No obstante, cada ronda que mantengas abiertos dichos canales empezarás a sufri
 
 Tener chakras abiertos aumenta enormemente tu resistencia física para compensar el daño que recibes. Si tienes al menos un chakra abierto recibirás 5 PV temporales por cada Rango que tengas y además que tu Defensa aumentará por un valor igual a tu Rango + 1.
 
-### Chakra terrenal
+### Chakra Terrenal
 
 *Chakra 1, Pasiva*
 
 El chakra terrenal te conecta con la tierra y te une con su energía vital, encontrándose en la planta de tus pies. Al activar este chakra recibes *vista a ciegas* en un radio medio, permitiéndote detectar a todas las criaturas a tu alrededor que estén en contacto con la tierra. Para abrir este chakra debes tener los pies descalzos y una firme convicción.
 
-### Chakra raíz
+### Chakra Raíz
 
 *Chakra 1, Pasiva*
 
@@ -34,13 +34,13 @@ El chakra raíz es uno de los principales puntos de energía de tu vuerpo, encon
 
 ## Rango II
 
-### Puños de fuerza
+### Puños de Fuerza
 
 *Innata, Pasiva*
 
 La energía vital infunde tu fuerza física y la potencia de tus ataques naturales. Si tienes dos o más chakras abiertos tus ataques físicos contarán como si fueran mágicos y provocarán 1d6 daño adicional al impactar.
 
-### Chakra sacral
+### Chakra Sacral
 
 *Chakra 1, Pasiva*
 

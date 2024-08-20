@@ -25,6 +25,7 @@ La criatura se trata de un ser sobrenatural que proviene de un plano diferente a
 - Es un ser inmortal que no necesita comer, dormir o respirar, sustentándose únicamente con la energía mágica que hay a su alrededor. Si muere su alma volverá a su plano natal hasta que logre recomponer su cuerpo, un proceso que tarda normalmente un día. 
 - Recibirá los beneficios de toda tierra consagrada relacionada con seres sobrenaturales de su mismo origen o afinidad y será vulnerable a toda arma diseñada para matar a criaturas extraplanarias.
 - Un extraplanario ligado obedecerá las órdenes de su invocador sin cuestionarlas, careciendo de voluntad propia. Si el invocador pierde el control del extraplanario y este no es amistoso puede volverse inmediatamente hostil, atacando despiadadamente a su antiguo amo.
+- Su mente y cuerpo son tan diferentes del de una criatura mortal que recibe Inmunidad a todos los efectos Mentales, Miedo y Aflicciones que no sean de origen extraplanario.
 
 ## Humanoide
 

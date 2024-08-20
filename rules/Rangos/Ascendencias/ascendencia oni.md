@@ -15,8 +15,6 @@ Ascendencia Oni tiene las siguientes reglas fundamentales que se aplican a cualq
 
 ## Rango I
 
-Recibes resistencia 2 a daño físico y aumenta tu reserva de chi por rango + 2.
-
 ### Furia del oni
 
 *Innata, Mejora*
@@ -99,7 +97,7 @@ Aprende dos hechizos adicionales de Rango III o menos relacionados con su foco e
 
 *Innata, Pasiva*
 
-Tu alma a alcanzado el escalón mas alto entre los oni, convirtiéndote en uno de los señores de tu especie. De esta manera recibirás resistencia a efectos arcanos, divinos, mentales, aflicciones y miedo, además de que obtendrás inmunidad contra el elemento que tomaste como tu foco. Así mismo todas las criaturas con ascendencia oni, y de menor fuerza, te obedecerán incondicionalmente, y en el caso de que mueras podrás reencarnarte en otro cuerpo. 
+Tu alma a alcanzado el escalón mas alto entre los oni, convirtiéndote en uno de los señores de tu especie. De esta manera recibirás resistencia a efectos Arcanos, Divinos, Mentales, Aflicciones y Miedo, además de  Inmunidad contra el elemento que tomaste como tu foco. Así mismo todas las criaturas con ascendencia oni, y de menor fuerza, te obedecerán incondicionalmente, y en el caso de que mueras podrás reencarnarte en otro cuerpo. 
 
 ### Forma espectral
 

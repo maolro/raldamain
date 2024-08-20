@@ -6,13 +6,12 @@ title: Akhásico
 
 ## Akhásico I (+2)
 
-- **Aumentos Estadísticos:** Incrementa sus estadísticas de FUE, CON y SAB por 1 junto a sus limitadores. Aumenta también sus PV y DEF por 2.
-- **Mejoras de Rango:** Mejora su Rango y modificador en Ascendencia Fúngica por 2. Si ya tiene esta habilidad aumento será por 1. 
-- **Habilidades Pasivas:** Obtiene la habilidad pasiva Metabolismo Fúngico.
-- **Hongo viviente: **Recibe Inmunidad a *heridas permanentes*, efectos Mentales, Miedo, Aflicciones y Necróticos. Tiene también visión a ciegas en una distancia media.
-- **Carroñero:** Puede emplear la habilidad Carroñero una vez por ronda de manera gratuita para sanarse.
-- **Esporas Infecciosas:** Al impactar a un enemigo puede afectarle con la habilidad Esporas Infecciosas.
-- **Explosión Fúngica:** Cuando la criatura muera llenará una esfera pequeña centrada en su cadáver con esporas infecciosas, provocando el mismo efecto que la habilidad Nube Tóxica. Dicha nube se disipará cuando una ronda.
+- **Aumentos Estadísticos:** Incrementa sus estadísticas de INT, SAB y CAR por 1 junto a sus limitadores. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Ascendencia Akhásica por 2. Si ya tiene esta habilidad aumento será por 1. 
+- **Habilidades Pasivas:** Obtiene la habilidad pasiva Sentido Mágico.
+- **Hechizos:** Aprende tres hechizos Arcanos o Mentales de Rango I. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Meditación Iluminada:** Está siempre bajo los efectos de Meditación Iluminada, recibiendo así Ventaja en todos sus tiros relacionados con la INT.
+- **Vínculo Akhásico:** Es Inmune a ataques sorpresa y puede repetir todos los unos y doses naturales que obtenga. Es también Inmune a efectos que le obliguen a repetir tiros. Si ya tiene la habilidad Premonición podrá repetir todos los tiros cuyo resultado natural sea menor que cinco.
 
 ## Akhásico II (+2, 3 mejoras)
 
