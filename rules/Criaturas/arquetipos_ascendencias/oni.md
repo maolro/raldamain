@@ -6,13 +6,11 @@ title: Oni
 
 ## Oni I (+2)
 
-- **Aumentos Estadísticos:** Incrementa sus estadísticas de FUE, CON y SAB por 1 junto a sus limitadores. Aumenta también sus PV y DEF por 2.
-- **Mejoras de Rango:** Mejora su Rango y modificador en Ascendencia Fúngica por 2. Si ya tiene esta habilidad aumento será por 1. 
-- **Habilidades Pasivas:** Obtiene la habilidad pasiva Metabolismo Fúngico.
-- **Hongo viviente: **Recibe Inmunidad a *heridas permanentes*, efectos Mentales, Miedo, Aflicciones y Necróticos. Tiene también visión a ciegas en una distancia media.
-- **Carroñero:** Puede emplear la habilidad Carroñero una vez por ronda de manera gratuita para sanarse.
-- **Esporas Infecciosas:** Al impactar a un enemigo puede afectarle con la habilidad Esporas Infecciosas.
-- **Explosión Fúngica:** Cuando la criatura muera llenará una esfera pequeña centrada en su cadáver con esporas infecciosas, provocando el mismo efecto que la habilidad Nube Tóxica. Dicha nube se disipará cuando una ronda.
+- **Aumentos Estadísticos:** Incrementa sus estadísticas de FUE, CON y CAR por 1 junto a sus limitadores. Incrementa también sus PV y Vitalidad por 4. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Ascendencia Oni por 2. Si ya tiene esta habilidad aumento será por 1. 
+- **Habilidades Pasivas:** Obtiene la habilidad pasiva Aguantar Heridas.
+- **Foco Elemental: **Recibe Resistencia a un elemento de su elección entre Fuego, Agua, Hielo, Tormenta, Necrótico o Ácido. Aprende dos hechizos de Rango I pertenecientes a esa categoría.
+- **Furia del Oni:** Cuenta como si estuviera siempre bajo los efectos de Furia del Oni, recibiendo así Ventaja en todos sus tiros relacionados con la FUE y la CAR además de DEF adicional igual a su Rango de Ascendencia + 1. 
 
 ## Oni II (+2, 3 mejoras)
 

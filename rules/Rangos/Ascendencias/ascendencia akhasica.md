@@ -35,7 +35,7 @@ Este nivel superior de conocimiento te permite también descubrir los secretos d
 
 Incrementa tu estadística de INT y su limitador por 1.
 
-### Meditación ilumindada
+### Meditación iluminada
 
 *Innata, Duradera*
 
