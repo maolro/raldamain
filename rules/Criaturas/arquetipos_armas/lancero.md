@@ -20,7 +20,7 @@ La criatura se ha especializado en combatir con un lanzas, alabardas y armas sim
 - **Mejoras de Rango:** Mejora su Rango y modificador en Alabardas, Fortitud y Reflejos por 1.
 - **Habilidades Pasivas:** Recibe Velocidad Superior, Ajustar Alcance y Esquiva Asombrosa como habilidades pasivas. Si ya tiene Esquiva Asombrosa puede sustituirla por Sexto Sentido.
 - **Técnicas de Combate:** Aprende las técnicas de combate Reposicionar Enemigo, Golpe Aturdidor, Ataque Lateral y Lanzazo Saltarín. Cada una de estas solo puede usarse gratuitamente una vez por ronda salvo que use un arma de dos manos.
-- **Reacciones:** Puede emplear las reacciones Golpe Trasero y Evasión una vez por ronda sin la necesidad de pagar vigor. Si ya tiene Evasión puede emplear dicha habilidad u
+- **Reacciones:** Puede emplear las reacciones Golpe Trasero y Evasión una vez por ronda sin la necesidad de pagar vigor. Si ya tiene Evasión puede emplear dicha habilidad una vez adicional por ronda.
 
 ## Lancero III (+2, requiere 5 mejoras)
 
