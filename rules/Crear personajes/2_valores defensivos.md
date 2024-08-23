@@ -6,7 +6,7 @@ El siguiente paso para crear un personaje es determinar los puntos de vida (PV),
 
 ## **Puntos de vida (PV)** 
 
-Los PV miden la salud del personaje y su capacidad de aguantar daño letal. Equivalen a 3 + CON a nivel 1, y vuelven a aumentar por 1 cada vez que subas 3 niveles (es decir, a nivel 4, 7, 10, 13...). Cada vez que un personaje pierda PV a causa de daño letal sufrirá una herida leve, la cual será media si ya tiene dos heridas permanentes leves y grave si tiene dos heridas permanentes medias.
+Los Puntos de Vida (PV) miden la salud del personaje y su capacidad de aguantar daño letal. Equivalen a 3 + CON a nivel 1, y vuelven a aumentar por 1 cada vez que subas 3 niveles (es decir, a nivel 4, 7, 10, 13...). Cada vez que un personaje pierda PV a causa de daño letal sufrirá una herida leve, la cual será media si ya tiene dos heridas permanentes leves y grave si tiene dos heridas permanentes medias.
 
  Si los PV son reducidos a 0 el personaje caerá inconsciente y sufrirá automáticamente una herida permanente grave, quedando moribundo. Un personaje moribundo perderá 1 PV al principio de su siguiente turno hasta que reciba sanación, y muere si sus PV negativos llegan a ser iguales a su CON negativa (por ejemplo, un personaje con 2 CON morirá si llega a tener -2 PV). 
 
@@ -18,7 +18,7 @@ La Vitalidad mide la capacidad de aguante físico de un personaje. La Vitalidad 
 
 ## **Defensa** 
 
-La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu resistencia al daño físico. La cantidad de resistencia que otorga una armadura puede encontrarse en el apartado de [aptitud con armaduras](https://raldamain.com/rules/Rangos/Combate/armaduras.html). Esta es distinta de las Resistencias, las cuales reducen el daño que recibas de un tipo específico de ataque. Por ejemplo, la Resistencia al fuego reduce todo el daño fuego que recibas por un valor determinado.
+La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la armadura que lleves y de tu resistencia al daño físico. La cantidad de resistencia que otorga una armadura puede encontrarse en el apartado de Equipamiento. Esta es distinta de las Resistencias, las cuales reducen el daño que recibas de un tipo específico de ataque. Por ejemplo, la Resistencia al fuego reduce todo el daño fuego que recibas por un valor determinado.
 
 ## **Cordura** 
 

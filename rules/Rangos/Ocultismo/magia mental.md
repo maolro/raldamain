@@ -32,7 +32,7 @@ Atacas la mente de un enemigo para romper sus facultades mentales y su capacidad
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional a distancia media con este hechizo.
 
-### Leer pensamientos
+### Leer Pensamientos
 
 *Mental, Duradera*
 
@@ -48,7 +48,7 @@ Además, mientras este hechizo esté activo puedes emplear una acción para pene
 
 **Empoderar** (1 chi): Puedes detectar los pensamientos profundos de una criatura como reacción para preveer su siguiente acción, la cual te contará el máster con sinceridad. Esto te otorgará Ventaja en tu tiro defensivo o de habilidad donde sea lógico que se aplicase.
 
-### Escudo mental
+### Escudo Mental
 
 *Mental, Duradera*
 
