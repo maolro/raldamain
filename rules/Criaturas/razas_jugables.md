@@ -1,5 +1,5 @@
 ---
-title: Razas Humanoides
+title: Razas Jugables
 ---
 
 # Beneficios Raciales
@@ -12,6 +12,8 @@ title: Razas Humanoides
 ## Elfo
 
 ## Chothgar
+
+## Gato de Ulthar
 
 ## Hobgoblin
 

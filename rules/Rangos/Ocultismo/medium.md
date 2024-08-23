@@ -15,7 +15,7 @@ Magia de Almas tiene las siguientes reglas fundamentales que se aplican a cualqu
 
 ## Rango I 
 
-### Canalizar ánima
+### Canalizar Ánima
 
 *Alma, Pasiva*
 
@@ -39,7 +39,7 @@ Empleas tu control sobre las almas para enviar a espectros hostiles de vuelta al
 
 **Empoderar** (1 chi): Afecta a un espectro adicional a distancia media con este hechizo.
 
-### Sentido de muerte
+### Sentido de Muerte
 
 *Alma, Pasiva*
 
@@ -47,7 +47,7 @@ Tus conocimientos del más allá te han dotado un sexto sentido capaz de notar l
 
 ## Rango II
 
-### Invocar espectro
+### Invocar Espectro
 
 *Alma, Invocación*
 
@@ -59,7 +59,7 @@ No puedes canalizar al mismo espectro mientras lo invocas y no podrás tener inv
 
 **Empoderar** (1 chi): Puedes canalizar a un espectro invocado durante una ronda, pudiendo así obtener los beneficios de Canalizar ánima con normalidad
 
-### Hablar con los muertos
+### Hablar con los Muertos
 
 *Alma, Ritual*
 
@@ -67,7 +67,7 @@ Llamas a un alma fallecida para que te responda determinadas preguntas y te reve
 
 Dependiendo de la antigüedad del alma y su relación contigo el DJ puede fijar una dificultad que deberás superar con tu tiro de Médium para completar exitosamente este ritual. Después de realizar este ritual no puedes volver a invocar a la misma alma hasta que pase por lo menos un día y esta puede no manifestarse si así lo desea.
 
-### Robar alma
+### Robar Alma
 
 *Alma, Reacción*
 
@@ -77,7 +77,7 @@ Dependiendo de la antigüedad del alma y su relación contigo el DJ puede fijar 
 
 Capturas el alma de otra criatura en un momento que se encuentre cerca de la muerte para enviarla al más allá. Como reacción empleable cuando un enemigo caiga a 0 PV puedes forzarle a tener éxito en un tiro de CON frente a tu Magia de Almas o separas su alma de su cuerpo, matándolo instantáneamente.
 
-Después de capturar un alma puedes mantenerla cautiva durante un periodo de como máximo de un día. momento en el cual migrará al más allá y quedará fuera de tu control. Eres capaz de emplear los hechizos Hablar con los Muertos, Invocar espectro y Canalizar Ánima en el alma robada sin que tenga la oportunidad de resistirse, obteniendo efectos apropiados tal como decida el DJ. El alma también se liberará si pierdes la concentración durante un combate.
+Después de capturar un alma puedes mantenerla cautiva durante un periodo de como máximo de un día. momento en el cual migrará al más allá y quedará fuera de tu control. Eres capaz de emplear los hechizos Hablar con los Muertos, Invocar Espectro y Canalizar Ánima en el alma robada sin que tenga la oportunidad de resistirse, obteniendo efectos apropiados tal como decida el DJ. El alma también se liberará si pierdes la concentración durante un combate.
 
 **Empoderar** (1 chi): Absorbe un alma adicional de otra criatura a 0 PV. No puedes tener cautivas más de cuatro almas simultáneamente.
 
@@ -85,7 +85,7 @@ Después de capturar un alma puedes mantenerla cautiva durante un periodo de com
 
 Aumenta el daño de base de Exorcizar a 1d8.
 
-### Viaje astral
+### Viaje Astral
 
 *Médium, Duradera*
 
@@ -97,7 +97,7 @@ Separas tu alma de tu cuerpo para convertirte en un ser semejante a un espectro.
 
 Mientras permanezcas en forma espectral recibes Inmunidad a todo el daño no-mágico y puedes pasar a través de objetos sólidos. Carecerás también de estadísticas de FUE y CON, impidiendo así que utilices cualquier habilidad relacionada con estas. Además, si eres impactado exitosamente por el hechizo Exorcizar tu alma volverá inmediatamente a tu cuerpo material (puedes defenderte contra él usando tu modificador de Magia de almas).
 
-### Canalización superior
+### Canalización Superior
 
 *Médium, Pasiva*
 
