@@ -83,7 +83,7 @@ No podrás añadir mejoras a este ataque que afecten a un objetivo específico. 
 
 ## Rango III 
 
-### Espadas trabadas
+### Espadas Trabadas
 
 *Duelo, Maniobra, Duradero*
 
@@ -95,7 +95,7 @@ Trabas diestramente el arma de un enemigo para impidir que pueda usarla, obtenie
 
 Un enemigo con la espada trabada podrá repetir el tiro al principio de su turno y en caso de un éxito podrá escapar. Si vuelve a fracasar su tiro puedes desarmarlo inmediatamente como reacción, haciendo que su arma caiga al suelo en una posición cercana. Este efecto también acabará si pierdes la concentración, te separas de tu objetivo o usas tu arma para cualquier otro propósito que no involucre a tu objetivo trabado.
 
-### Ataque saltarín
+### Ataque Saltarín
 
 *Duelo, Mejora*
 
@@ -105,7 +105,7 @@ Haces un rápido salto para atacar a enemigos lejanos y mejorar la potencia de t
 
 Al hacer un ataque de esta manera obtendrás Ventaja defendiéndote de ataques almacenados y de oportunidad, como son aquellos otorgados por Preparación contra Cargas. Además, si atacas a una criatura voladora esta recibirá Desventaja en su tiro defensivo. 
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Duelo, Mejora*
 
@@ -125,7 +125,7 @@ Aprovechas las apreturas que genera un enemigo al atacarte para hacer un rápido
 
 Si logras impactar con este ataque interrumpirás la acción enemiga, provocando así que nunca llegue a acabarla y pierda todas las acciones invertidas en ella. No obstante, tu objetivo no perderá el chi o vigor que haya invertido en la acción interrumpida dado que nunca llegó a finalizarse.
 
-### Danza del espadachín
+### Danza del Espadachín
 
 *Duelo, Duradera*
 
@@ -139,7 +139,7 @@ Esta habilidad durará hasta que pierdas la concentración o seas desarmado. Est
 
 **Empoderar** (1 vigor): Reduces el daño de un ataque que no hayas logrado detener exitosamente con tu Parada a la mitad. Esta reducción se aplicará antes de la DEF y solo puedes activarla una vez por ataque.
 
-### Estocada poderosa
+### Estocada Poderosa
 
 *Duelo, Mejora*
 

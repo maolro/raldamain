@@ -52,7 +52,7 @@ title: Age of Humanity
 | 2171 | Many Imperial forts and trading posts are built by the empire as they expand into the lands of Pradjati. Alithei finds the legendary sword Dramako Kinara. |
 | 2171 | First contact between the Jaddites and the First empire, introducing them to the Feynist faith. |
 | 2171 | The expeditionary army builds a fortress to guard the Abyssal rift. It will later become the Citadel. |
-| 2172 | Emperor x dies and the high priest proclaims himself as the new emperor, usurping the throne. A civil war breaks out between supporters of Alithei and the high priest. |
+| 2172 | Emperor Eireneus dies and the high priest proclaims himself as the new emperor, usurping the throne. A civil war breaks out between supporters of Alithei and the high priest. |
 | 2176 | Alithei wins the war and crowns himself as the new emperor. He starts a cult of personality centered around himself. |
 | 2195 | The emperor begins to hate Feyn as he grows old, seeing him as unworthy to be god of Humanity. Persecution increases against the Feynist church. |
 | 2207 | Alithei takes the Infinite cube from the capital city, sinking it into the ground. He then declares war on Feyn, leading his Chothgar army into Feyn's divine realm. |
