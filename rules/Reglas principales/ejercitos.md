@@ -2,9 +2,21 @@
 title: Reglas de Ejércitos
 ---
 
+Un encuentro que se realice a escala de ejércitos tendrá ciertas similitudes y diferencias respecto a un combate normal. Dado que combatirán grandes cantidades de soldados en cada bando será necesario un cierto nivel de abstracción para que sea manejable por el DJ y transmita adecuadamente la sensación de combatir en una gran batalla. Aunque es posible ignorar todo lo que ocurre alrededor de los jugadores y centrarte únicamente en ellos, con estas normas se busca conseguir que los jugadores puedan participar en batallas como oficiales e incluso dirigirlas. 
 
+# Las unidades
 
-# Tipos básicos de tropa
+Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los numerosos combatientes en conjuntos conocidos como **unidades**. Cada unidad se compone de un tipo de tropas que tengan la misma especialidad como puede ser caballería, infantería o arqueros. Las estadísticas de dichas unidades tienen un formato diferente para gestionarlas en batallas a gran escala.
+
+## Nombre de la Unidad
+
+- **Coste base:** El coste base indica el valor de la unidad para que sea posible calcular el coste total del ejército. Cada ejército contará con un presupuesto específico, el cual normalmente será de 100, 200 o 300 puntos. El coste total **no** podrá exceder el presupuesto del ejército.
+- **Tiro base:** En este apartado se especifica la cantidad de dados que tirará el ejército cuando se enfrente con otro. Todo esto se detallará en el apartado de combate.
+- **Cohesión:** 
+- **Movimiento:** 
+- **Habilidades Especiales:**
+
+# Tipos básicos de unidad
 
 ## Infantería Ligera
 
@@ -160,7 +172,7 @@ Sus ataques ignoran la reducción al daño otorgada por armaduras.
 
 ## Sacrificable (-1)
 
-No puede perder moral pero tampoco puede recibir modificadores de moral ni ser apoyado.
+No puede perder moral pero tampoco puede recibir modificadores de moral ni realizar tácticas 
 
 ## Sacro (+1)
 
@@ -168,7 +180,7 @@ No puede ser desmoralizada y gana +1 cohesión si lucha en terreno consagrado
 
 ## Sanador (+2)
 
-En lugar de atacar puede emplear su turno para curar a un aliado adyacente, haciendo así que recupere 1 cohesión
+En lugar de atacar puede emplear su turno para curar a un aliado adyacente, haciendo así que recupere 1 cohesión. Si lo hace recibirá un dado menos a la hora de defenderse de ataques enemigos hasta el inicio de su siguiente turno.
 
 ## Terraformador (+2)
 

@@ -16,15 +16,15 @@ Ascendencia cruen tiene las siguientes reglas fundamentales que se aplican a cua
 
 Aumenta tu CON por 1.
 
-### Esencia de no-muerto
+### Esencia Vampírica
 
 *Innata, Pasiva*
 
-Tu alma ha quedado corrompida y tu cuerpo retorcido, obteniendo cualidades mas cercanas a los muertos que a los vivos. De esta manera recibirás inmunidad al daño Necrótico a costa de recibir vulnerabilidad al daño Radiante, quedando además *enfermado* en el caso de quedar expuesto a la luz del sol. Obtienes también la habilidad de hacer ataques naturales empleando tanto garras como mordisco. También obtendrás Resistencia al daño Físico provocado por medios no-mágicos, a costa que las armas sacras te afectarán como si fueras Vulnerable a ellas. 
+Tu alma ha quedado corrompida y tu cuerpo retorcido, obteniendo cualidades mas cercanas a los muertos que a los vivos. De esta manera recibirás Inmunidad al daño Necrótico a costa de recibir vulnerabilidad al daño Radiante, quedando además *enfermado* en el caso de quedar expuesto a la luz del sol. Obtienes también la habilidad de hacer ataques naturales empleando tanto garras como mordisco. También obtendrás Resistencia al daño Físico provocado por medios no-mágicos, a costa que las armas sacras te afectarán como si fueras Vulnerable a ellas. 
 
 A costa de conseguir todos estos beneficios sin embargo tu hambre ya nunca volverá a ser la misma, impidiéndote volver a los hábitos mundanos que una vez consideraste la norma. De esta manera ya solo podrás alimentarte de carne, solo quedando completamente saciado en el caso de consumir carne humana. 
 
-### Linaje sanguíneo
+### Linaje Sanguíneo
 
 *Innata, Pasiva*
 
@@ -39,7 +39,7 @@ En respuesta a la creciente corrupción de tu ser, tu sangre ha despertado un le
 
 ## Rango II
 
-### Devorar cadáver
+### Devorar Cadáver
 
 *Innata, Sanación*
 
@@ -61,7 +61,7 @@ Los humanos no son buenos desasiéndose de lo que les estorba y les sobra, mucha
 
 La creciente maldición en tu cuerpo ha comenzado a manifestarse en el exterior de mas maneras que la meramente física, permitiéndole obtener sustento de tu entorno con tal de sostener tu cuerpo durante mas tiempo. De esta manera cada vez que sufras daño necrótico en su lugar te sanarás vitalidad, además de que obtendrás regeneración igual a tu rango+1 al encontrarte en lugares imbuidos de fuerte energía negativa. Sin embargo te volverás aún mas vulnerable al daño radiante, provocando así que este daño no pueda sanarse y que en el caso de ser herido por él tu regeneración se anule durante una ronda. 
 
-### Cruen longevo
+### Cruen Longevo
 
 *Innata, Pasiva*
 

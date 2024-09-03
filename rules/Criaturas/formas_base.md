@@ -35,3 +35,11 @@ La criatura pertenece a una especie de apariencia e inteligencia similar a la es
 - Recibe los beneficios de una raza jugable de tu elección. En el caso que no pertenezca a ninguna existente consulta al DJ para recibir mejoras apropiadas.
 - Al tratarse de un ser humanoide puede recibir heridas permanentes con normalidad y contará con una estadística de cordura. Si se trata de una invocación puede resistirse a las órdenes de su maestro si atentan contra su vida o la de un ser querido.
 - Un ser humanoide necesita comer, respirar y dormir. Contará normalmente con brazos con los que puede coger objetos o armas. 
+
+## No-Muerto
+
+La criatura era antes un ser vivo que ha sido reanimado por fuerzas oscuras. Esta forma otorga las siguientes estadísticas básicas:
+
+- Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 3 y a un mínimo de -1. Esto funciona de la misma manera que si se tratase de un personaje jugador.
+- Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido.
+- Un no-muerto se alimenta únicamente de la esencia vital de otras criaturas. No necesita respirar ni dormir. 

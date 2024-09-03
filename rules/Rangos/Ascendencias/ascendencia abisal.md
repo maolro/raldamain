@@ -15,13 +15,13 @@ Ascendencia Abisal tiene las siguientes reglas fundamentales que se aplican a cu
 
 ## Rango I
 
-### Tocado por la locura
+### Tocado por la Locura
 
 *Innata, Pasiva*
 
 El poder del abismo refuerza tus capacidades mentales y físicas a costa de tu cordura. Obtienes Resistencia a efectos Mentales y Necróticos además que las criaturas abisales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos. Esta habilidad te otorgará también una *locura permanente* que conservarás siempre que tengas Rangos en Ascendencia Abisal.
 
-### Furia abisal
+### Furia Abisal
 
 *Innata, Mejora*
 
@@ -47,7 +47,7 @@ Mutas tu cuerpo con energías abisales para obtener nuevas habilidades. Dicha mu
 
 - **Resistencia adaptiva:** Obtienes Resistencia contra un tipo de daño entre Fuego, Frío, Ácido, Eléctrico o Sónico.
 - **Anfibio:** Eres capaz de respirar bajo el agua y obtienes velocidad de natación 1.
-- **Arma natural:** Te crece una masa de carne y huesos que simula un arma de tu elección cuyo daño base sea 1d6 o inferior. Aprendes todas las técnicas de Rango I pertenecientes a la categoría de esa misma arma. A Rango IV el daño base máximo que puedes tener aumenta a 1d8 y a Rango VI aumenta a 1d10.
+- **Arma Natural:** Te crece una masa de carne y huesos que simula un arma de tu elección cuyo daño base sea 1d6 o inferior. Aprendes todas las técnicas de Rango I pertenecientes a la categoría de esa misma arma. A Rango IV el daño base máximo que puedes tener aumenta a 1d8 y a Rango VI aumenta a 1d10.
 - **Vuelo:** Te crecen temporalmente unas alas que te otorgan velocidad de vuelo 1.
 - **Toxina:** La siguiente vez que impactes puedes infectar a tu objetivo con un veneno cuya gravedad es igual a la suma de tu CON y tu Rango de Ascendencia abisal. El veneno tendrá tasa de efecto de una ronda y afectará a cualquier estadística de tu elección.
 - **Infusión mágica:** Infundes tus ataques con un hechizo para provocar sus efectos la siguiente vez que impactes esta ronda. Debes seguir pagando el coste del hechizo escogido.

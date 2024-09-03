@@ -14,7 +14,7 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 ## Rango I
 
-### Crear ilusión
+### Crear Ilusión
 
 *Ilusoria, Arcana, Visual, Duradera*
 
@@ -32,7 +32,7 @@ Una ilusión parecerá completamente real hasta que una criatura interactúe con
 
 **Empoderar** (1 chi): Creas una ilusión adicional en otro espacio a distancia media de ti o aumentas el tamaño de una ilusión para que ocupe una esfera mediana.
 
-### Disfraz ilusorio
+### Disfraz Ilusorio
 
 *Ilusoria, Arcana, Visual, Duradera*
 
@@ -46,7 +46,7 @@ Las ilusiones que conforman tu disfraz te permiten ocultar tu posición real, pu
 
 **Empoderar** (1 chi): Lanzas este hechizo sobre otra criatura a distancia media que puedas ver, el cual permanecerá activo hasta que pierdas la concentración.
 
-### Imagen fantasmal
+### Imagen Fantasmal
 
 *Ilusoria, Arcana, Mental, Mejora, Duradera*
 

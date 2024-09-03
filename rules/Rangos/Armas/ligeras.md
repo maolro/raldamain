@@ -137,7 +137,7 @@ Saltas repentinamente para atacar a un enemigo lejano antes que tenga la oportun
 
 Apuntas a los órganos vitales de un enemigo para darle un golpe de gracia. Haz un ataque con tu arma que inflige 3d6 daño adicional al impactar junto a una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad además que este ignorará la Defensa otorgada por armaduras que tenga.
 
-### Puñaladas en secuencia
+### Puñaladas en Secuencia
 
 *Ligera, Mejora*
 
@@ -145,7 +145,7 @@ Apuntas a los órganos vitales de un enemigo para darle un golpe de gracia. Haz 
 
 Atacas repetidamente al mismo enemigo para desgastar sus defensas e impactarle con mayor facilidad. Tras atacar a un enemigo puedes hacer dos ataques adicionales contra él como acción bonus. El afectado deberá emplear el mismo resultado de su anterior tiro defensivo para protegerse de tus ataques adicionales y estos pueden mejorarse con otras técnicas que conozcas salvo aquellas que te proporcionen ataques adicionales. 
 
-### Movilidad de batalla
+### Movilidad de Batalla
 
 *Ligera, Mejora*
 
@@ -155,7 +155,7 @@ Te desplazas ágilmente para atacar a múltiples enemigos en el campo de batalla
 
 ## Rango VI
 
-### Maestría de armas ligeras
+### Maestría de Armas Ligeras
 
 *Ligera, Pasiva*
 

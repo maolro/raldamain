@@ -18,6 +18,13 @@ La criatura ha desarrollado siniestros poderes relacionados con la nigromancia, 
 
 ## Nigromante II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su CON, INT y CAR por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Nigromancia por 1. 
+- **Habilidades Pasivas:** Recibe Aspecto de No-Muerto como habilidad pasiva.
+- **Hechizos:** Aprende los hechizos Vínculo Parasítico, Maldición Vampírica y Tormenta de Energía Negativa. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Salto Sombrío:** Una vez por ronda puede emplear la habilidad Salto Sombrío para evadir automáticamente un ataque enemigo. Si ya posee dicha habilidad podrá emplearla una vez adicional
+- **Aura de Muerte:** Le rodea un Aura de Muerte que le otorga Ventaja en todos los tiros relacionados con Nigromancia e impide la Sanación a distancia media. Si esta habilidad es desactivada cuesta dos acciones reactivarla.
+
 ## Nigromante III (+2, 5 mejoras)
 
 ## Nigromante IV (+2, 7 mejoras)

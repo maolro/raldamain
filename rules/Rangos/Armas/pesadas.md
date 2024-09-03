@@ -78,8 +78,6 @@ Extiendes tu alcance para obligar a un enemigo que esquiva a reposicionarse, dej
 
 ## Rango III
 
-Usar la acción de Ataque con arma con un arma pesada te cuesta una acción menos.
-
 ### Golpe demoledor
 
 *Pesado, Mejora, Físico*
@@ -169,8 +167,6 @@ Concentras toda tu energía en un único ataque capaz de matar incluso a los ene
 Golpeas con extrema velocidad y luego utilizas la inercia para golpear de nuevo con aún más potencia. Una vez que realizas un ataque puedes realizar un segundo golpe como acción adicional contra el mismo objetivo que inflige 2d6 puntos de daño adicionales y puede ser mejorado con otras habilidades. Tu objetivo debe emplear el mismo resultado de su tirada defensiva contra tu ataque anterior.
 
 ## Rango VI
-
-Todas tus técnicas con armas pesadas de Rango IV cuestan una acción menos de usar (mínimo 1).
 
 ### Maestría de armas pesadas
 
