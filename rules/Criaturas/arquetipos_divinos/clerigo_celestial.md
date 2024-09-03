@@ -15,6 +15,14 @@ title: Clérigo Celestial
 
 ## Clérigo Celestial II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su SAB y CAR por 1 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Celestial por 1.
+- **Habilidades Pasivas:** Obtiene las habilidades pasivas Alas Angelicales
+- **Hechizos:** Aprende tres hechizos de Rango II relacionados con su patrón celestial. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Protección Divina:** Se encuentra siempre en *posición defensiva* y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina.
+- **Poder de los Cielos:** Recibe Ventaja en todos sus tiros relacionados con Magia de Vida o ataques con armas. Le rodea un aura de luz que le otorga Resistencia a ataques A Distancia y efectos Sombríos. El aura se disipará si pierde la concentración y reactivarla cuesta dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+
 ## Clérigo Celestial III (+2, 5 mejoras)
 
 ## Clérigo Celestial IV (+2, 7 mejoras)

@@ -179,6 +179,8 @@ Eres capaz de aprovechar las mas mínimas brechas para sobrepasar a tus rivales,
 
 ### Maestro espadachín
 
+*Duelo, Pasiva*
+
 Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. 
 
 Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 

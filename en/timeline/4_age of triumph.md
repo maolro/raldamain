@@ -35,7 +35,7 @@ title: Age of Triumph
 |      | The Ustilian empire conquers the Temash lands, gaining control of the chi mines in the south. |
 | 3942 | Variager is succeeded by his son Lysandros, who continues his father's policies of expansion and fights against Arshalan and Shiraj for hegemony. |
 |      | Lysandros grants more power to the Ustilian parliament and makes concessions to the nobility, paving the road for a Constitutional monarchy. |
-| 3960 | The Chothgar besiege the Arshalani capital of Sershalan. Mhayid Akham dies in battle and the crown passes to his son Olketar. |
+|      |                                                              |
 | 3974 | Emperor Stepanos III ascends to the Ustilian throne. He is a weak ruler who delegates most of his power to the Parliament and the Knights. |
 |      | Princess Theodora of Ustilus forms the Pact, a secret organization dedicated to protecting knowledge and encouraging research in science and arcane arts. |
 | 4000 | On the day of Feyn's prophesized return the god mysteriously vanishes, throwing Ustilus into a period of chaos. This event ends the age of Triumph for the Ustilian people. |

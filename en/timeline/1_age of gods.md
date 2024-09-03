@@ -16,8 +16,6 @@ title: Age of Gods
 |      | Rabius and Alexander are born in Krosos. They are both children of Tanios and a mortal. |
 |      | Rabius participates in the Isatan games and loses in the final due to foul play. After losing control due to his rage he is punished by Tanios with a curse of rage and exiled from Krosos. |
 
-
-
 # Godswar
 
 | Year | Event                                                        |

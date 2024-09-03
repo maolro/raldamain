@@ -22,7 +22,7 @@ Vislumbras el futuro por unos instantes para predecir un suceso específico. Una
 
 **Empoderar** (1 chi): Recuperas un uso de esta habilidad.
 
-### Alteración temporal
+### Alteración Temporal
 
 *Temporal, Arcana, Toque*
 
@@ -38,7 +38,7 @@ Esta habilidad puede usarse también para revertir las heridas recientes de un a
 
 **Empoderar** (1 chi): Afecta con esta habilidad a todos los objetos y criaturas en una esfera pequeña o reduce por un paso el nivel de una *herida permanente* o Aflicción que tenga tu objetivo.
 
-### Robar el tiempo
+### Robar el Tiempo
 
 *Temporal, Arcana, Aflicción, Toque, Fuerza*
 

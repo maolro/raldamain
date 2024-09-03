@@ -13,7 +13,7 @@ La criatura está dotada de alas y puede volar a grandes velocidades, volviéndo
 - **Aumentos Estadísticos:** Incrementa sus estadísticas de FUE y DES por 2 junto a sus limitadores. Recibe también una acción adicional.
 - **Vuelo Superior:** Obtiene velocidad de vuelo 2 y Ventaja en todos sus tiros de Esquiva. Si se encuentra en el aire recibe Ventaja en todos sus tiros de ataque contra criaturas incapaces de volar. 
 - **Aspecto de Ave:** Tiene visión nocturna y olfato a distancia media. Puede comunicarse con otras aves y no le afecta el terreno difícil en el aire.
-- **Esquiva Aérea:** Si está volando puede emplear una acción que tenga guardada para evadir un ataque enemigo, moviéndose así un paso en cualquier dirección y reduciendo el daño de dicho ataque a la mitad. Esta reducción se acumula con Evasión.
+- **Esquiva Aérea:** Si está volando puede emplear una acción que tenga guardada para evadir un ataque enemigo, moviéndose así un paso en cualquier dirección y reduciendo el daño de dicho ataque a la mitad. Esta reducción se acumula con Evasión y no puede usarse si lleva armadura media o superior.
 
 ## Gigante (+2)
 
@@ -55,3 +55,11 @@ La criatura no es un único ser sino una nube de pequeñas criaturas con una men
 - **Forma de Plaga**: Ocupa un espacio del tamaño de una esfera pequeña y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista. Su forma de plaga le permite pasar hasta por las ranuras más pequeñas. 
 - **Ataques Colectivos:** Al tratarse de una nube de criaturas no puede emplear armas o maniobras. Sus ataques físicos solo podrán afectar a criaturas que se encuentren en una posición que ocupe y estas solo podrán defenderse con Parada mágica o tirando CON frente a su modificador. Dichos ataques contarán como si fueran de Área y provocan la mitad de daño en caso de éxito.
 - **Fusión con Plagas:** Esta criatura puede fusionarse con otras plagas adyacentes para formar una única criatura mucho mayor empleando una acción. Una plaga fusionada combinará sus valores de Vitalidad y PV en uno solo además de aumentar su tamaño por un paso hasta un máximo de una esfera grande. Todos sus ataques físicos incrementarán su modificador por 2 y recibirán un dado de daño adicional. Esto incrementará también el nivel efectivo de la plaga combinada por 2 para los propósitos de controlar invocaciones.
+
+## Tropa (+4, no disponible para invocaciones)
+
+La criatura representa una unidad compuesta por múltiples criaturas capaces de luchar de manera coordinada. Este arquetipo otorga las siguientes mejoras:
+
+- **Mejoras Estadísticas:** La criatura no recibe ninguna alteración a sus estadísticas básicas. No obstante, multiplicará sus PV y Vitalidad base por 4. 
+- **Múltiple:** Obtiene Inmunidad a todos los efectos dirigidos a un único objetivo sin importar su fuerza. No obstante, obtendrá Vulnerabilidad a ataques de Área y al daño provocado por estos.
+- **Ataques Colectivos:** Todos los tiros de ataque o efectos lanzados por esta criatura recibirán un modificador +6 al tiro además de infligir +6 daño base al impactar. Dichos ataques contarán como si fueran de Área, infligiendo así la mitad de daño en caso que no impacten exitosamente. 

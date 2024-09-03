@@ -31,7 +31,7 @@ Tu cuerpo emitirá luz de manera natural, iluminando todo el espacio a distancia
 
 Aumenta tu estadística de CAR y su limitador por 1.
 
-### Arma angelical
+### Arma Angelical
 
 *Innata, Mejora*
 
@@ -43,7 +43,7 @@ Eres capaz de emplear la energía celestial en tu interior para empoderar tus at
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.
 
-### Cuerpo puro
+### Cuerpo Puro
 
 *Innata, Pasiva*
 
@@ -55,7 +55,7 @@ La energía celestial en tu interior te hace especialmente difícil de matar. Re
 
 Aprendes los hechizos Barrera luminosa y Arma solar, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Ángel protector
+### Ángel Protector
 
 *Innata, Invocación*
 
@@ -67,7 +67,7 @@ Invocas a una criatura celestial para que te asista en el campo de batalla, prot
 
 **Empoderar** (1 chi o vigor): Una criatura invocada recupera la mitad de su Vitalidad.
 
-### Poder de los cielos
+### Poder de los Cielos
 
 *Innata, Pasiva*
 
@@ -75,7 +75,7 @@ Invocas a una criatura celestial para que te asista en el campo de batalla, prot
 
 **Duración:** Concentración
 
-Liberas la energía luminosa de tu interior en la forma de un aura de luz intensa. Mientras esta habilidad permanezca activa estarás rodeado de un aura luminosa que te otorga Ventaja en todos tus tiros relacioneados con hechizos de magia de Vida o armas. El aura durará hasta que pierdas la concentración o sea disipada por un efecto de magnitud similar.
+Liberas la energía luminosa de tu interior en la forma de un aura de luz intensa. Mientras esta habilidad permanezca activa estarás rodeado de un aura luminosa que te otorga Ventaja en todos tus tiros relacionados con hechizos de magia de Vida o armas de cualquier tipo que se encuentren infundidas por la habilidad Poder . El aura durará hasta que pierdas la concentración o sea disipada por un efecto de magnitud similar.
 
 La intensa luz generada por el aura protegerá a los que permanezcan en ella de determinados ataques, otorgando así Desventaja a todos los ataques a Distancia hechos contra criaturas dentro de ella. Además, las criaturas en el aura recibirán Resistencia a efectos Sombríos de todo tipo. Los bonificadores otorgados por esta habilidad no se acumulan con aquellos de Telaraña de vida.
 
@@ -85,13 +85,13 @@ La intensa luz generada por el aura protegerá a los que permanezcan en ella de 
 
 Aumenta tu estadística de CON y su limitador por 1.
 
-### Alas angelicales
+### Alas Angelicales
 
 *Innata, Pasiva*	
 
 Eres capaz de manifestar alas hechas de luz a tu espalda con las que podrás surcar los cielos. Las alas te otorgarán velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Puedes hacer que las alas aparezcan o desaparezcan como acción bonus y estas se desvanecerán durante una ronda al perder la concentración.
 
-### Visión verdadera
+### Visión Verdadera
 
 *Innata, Pasiva*
 
@@ -111,7 +111,7 @@ La energía vital en tu interior sana tu cuerpo a velocidades prodigiosas. Al pr
 
 **Empoderar** (1 chi o vigor): Reduce el nivel de una *herida permanente* o Aflicción adicional que te afecte por un paso.
 
-### Alma ascendida
+### Alma Ascendida
 
 *Innata, Pasiva*
 
@@ -121,7 +121,7 @@ Tu alma ha alcanzado el escalafón más alto de la iluminación, ascendiendo a u
 
 Aumenta tu estadística de SAB y su limitador por 1.
 
-### Ángel vengador
+### Ángel Vengador
 
 *Innata, Mejora*
 

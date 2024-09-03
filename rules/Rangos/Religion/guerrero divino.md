@@ -45,7 +45,7 @@ Tu dios te ha bendecido con la capacidad de emplear una pequeña porción de sus
 
 ## Rango II
 
-### Guerrero de la fe
+### Guerrero de la Fe
 
 *Divina, Pasiva*
 
@@ -53,13 +53,13 @@ Eres capaz de canalizar el poder de tu dios a través de tu cuerpo para empodera
 
 Aunque esta habilidad no tenga coste de activación, canalizar el poder de un dios a través de tu cuerpo mortal puede ocasionarte daños internos si lo usas excesivamente. Por ello cuando esta habilidad termine perderás una cantidad de chi o vigor igual a la cantidad de rondas que has pasado con ella activa. Si esta reducción bajara cualquiera de las dos reservas a un valor negativo quedarás *exhausto* y no podrás volver a activarla hasta que realices un descanso largo. En el caso que cayeras a un valor igual o inferior a tu CON negativa caerás *inconsciente* al abandonar dicho estado.
 
-### Plegaria de batalla
+### Plegaria de Batalla
 
 *Divina, Ritual*
 
 Antes de un combate le rezas a tu dios para que conceda buena fortuna a tu bando. Durante un descanso corto puedes realizar una plegaria de batalla junto a tus aliados para que el poder de tu dios fluya por vuestras venas. Toda persona que participe en la plegaria sin importar su fe obtendrá tres usos de la habilidad Milagro menor que le durarán hasta que los gaste o pase un día. Los usos adicionales de Milagro menor no se acumulan con aquellos que ya tengan los participantes.
 
-### Impacto desacralizador
+### Impacto Desacralizador
 
 *Divina, Mejora*
 
@@ -75,7 +75,7 @@ Deshaces el poder mágico de un enemigo sobrecargándolo con tu poder divino. Al
 
 Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu dios, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Presencia divina
+### Presencia Divina
 
 *Divina, Duradera, Moral, Miedo, Visual*
 
@@ -85,13 +85,13 @@ Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu dios,
 
 **Duración:** Concentración
 
-Tomas un aspecto casi divino para llenar de valentía a tus aliados y aterrorizar a tus enemigos. Mientras esta habilidad permanezca activa todo enemigo que empiece su turno a distancia media de ti y pueda verte deberá tener éxito en un tiro de Voluntad o Intimidar frente a tu Guerrero divino o aumentará su nivel de miedo por un paso. Aquellos enemigos que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierdas la concentración.
+Tomas un aspecto casi divino para llenar de valentía a tus aliados y aterrorizar a tus enemigos. Mientras esta habilidad permanezca activa todo enemigo que empiece su turno a distancia media de ti y pueda verte deberá tener éxito en un tiro de Voluntad o Intimidar frente a tu Guerrero Divino o aumentará su nivel de miedo por un paso. Aquellos enemigos que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierdas la concentración.
 
 A su vez que infundes terror a tus enemigos tus aliados se llenan de coraje para seguir luchando, otorgando así Resistencia a efectos de Miedo y Mentales a todos tus aliados a distancia media. Estos bonificadores se acumulan con otras habilidades de Presencia activas en el campo de batalla.
 
 **Empoderar** (1 chi o vigor): Un aliado a distancia media recibe Vitalidad temporal iguales a tu Rango + 2 o cancela los efectos de una habilidad de Moral enemiga.
 
-### Aura protectora
+### Aura Protectora
 
 *Divina, Pasiva*
 

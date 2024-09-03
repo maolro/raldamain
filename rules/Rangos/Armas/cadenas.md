@@ -138,7 +138,11 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ### Danza de Destrucción
 
+*Cadenas, Ataque, Físico, Duradero*
+
 **Coste:** 1 acción y 2 vigor
+
+**Duración:** Concentración
 
 Su siguiente ataque afecta a cada enemigo a distancia cercana e inflige +2d6 daño. Si mantiene la concentración puede repetir este ataque una vez cada ronda sin gastar vigor. Debe estar en Danza de Cadenas.
 
@@ -170,7 +174,7 @@ Puede agarrar hasta dos enemigos diferentes con sus cadenas y no sufrirá ningun
 
 **Coste:** 3 vigor
 
-Usa a un enemigo agarrado como un arma para atacar a todos los enemigos en un radio corto o una línea media. Este ataque inflige +2d6 daño a todos los he
+Usa a un enemigo agarrado como un arma para atacar a todos los enemigos en un radio corto o una línea media. Este ataque inflige +2d6 daño a todos los afectados.
 
 ## Rango VI
 

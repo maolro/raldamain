@@ -12,7 +12,7 @@ image: magia_sombria.jpg
 
 ## Rango I
 
-### Toque drenador
+### Toque Drenador
 
 *Sombrío, Toque, Aflicción, Frío*
 
@@ -28,7 +28,7 @@ Infundes tu toque de energía sombría para drenar la energía vital de un enemi
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio.
 
-### Tajo umbrío
+### Tajo Umbrío
 
 *Sombrío, Ataque, A distancia, Frío*
 
@@ -44,7 +44,7 @@ Formas un corte entre el plano material y el plano sombrío que consumirá la en
 
 **Empoderar** (1 chi): Afecta a una criatura adicional a distancia media de ti.
 
-### Crear oscuridad
+### Crear Oscuridad
 
 *Sombrío, Gaseoso, Duradero*
 
@@ -64,7 +64,7 @@ Todas las criaturas en la nube de oscuridad serán incapaces de ver su entorno, 
 
 ## Rango II
 
-### Bola sombra
+### Bola Sombra
 
 *Sombría, Ataque, Área, Frío*
 
@@ -86,7 +86,7 @@ Este ataque puede potenciarse aún más si cargas la bola sombría con energía 
 
 **Empoderar** (1 chi): Al emplear este hechizo lanzas una bola sombría adicional en una dirección diferente para atacar a otros objetivos. Estará tan cargada como tu bola sombría original.
 
-### Capullo sombrío
+### Capullo Sombrío
 
 *Sombría, Defensiva, Duradera*
 
@@ -100,7 +100,7 @@ Las sombras creadas por el capullo recibirán todo el daño que sufras además q
 
 **Empoderar** (1 chi): El capullo sombrío recupera toda su Vitalidad temporal. No puedes empoderar de esta manera si te encuentras en un lugar iluminado.
 
-### Oscuridad devoradora
+### Oscuridad Devoradora
 
 *Sombría, Agarre, Duradera*
 
@@ -122,7 +122,7 @@ El afectado podrá repetir el tiro al principio de su turno para intentar escapa
 
 Todos tus hechizos Sombríos sustituyen sus dados de daño por d8.
 
-### Tentáculos de oscuridad
+### Tentáculos de Oscuridad
 
 *Sombrío, Frío, Ataque, Agarre, Duradero*
 
@@ -161,7 +161,7 @@ Una criatura afectada por la maldición de Shade no podrá recuperar cordura ni 
 
 **Empoderar** (1 chi): Haz un ataque de Toque Sombrío contra una criatura maldita que se encuentre a distancia media de ti como acción bonus. Solo puedes empoderar así una vez por ronda.
 
-### Terror nocturno
+### Terror Nocturno
 
 *Sombrío, Duradero, Miedo, Visual*
 

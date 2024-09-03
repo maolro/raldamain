@@ -16,6 +16,12 @@ La criatura cuenta con garras, colmillos o cuernos con los que puede atacar a su
 
 ## Bestia II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 2 junto a sus limitadores. Aumenta también su DEF por 2, su Vitalidad por 3 y sus PV por 2.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Estilo Salvaje e Ira por 1. 
+- **Habilidades Pasivas:** Recibe Resistencia Salvaje como habilidad pasiva.
+- **Técnicas de Combate:** Aprende las técnicas de combate Mordisco Salvaje, Persecución y Abr. Cada una de estas solo puede usarse una vez por ronda de manera gratuita.
+- **Rasgo Animal:** Recibe un rasgo perteneciente a un animal de su elección. Dicho rasgo debe ser equivalente a una Inyección Mutagénica. 
+
 ## Bestia III (+2, 5 mejoras)
 
 ## Bestia IV (+2, 7 mejoras)

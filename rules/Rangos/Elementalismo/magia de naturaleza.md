@@ -15,7 +15,7 @@ Tu sincronía con la vida que te rodea te ha permitido obtener control sobre aqu
 
 ## Rango I
 
-### Zarcillo enredador
+### Zarcillo Enredador
 
 *Naturaleza, Ataque, Físico, Agarre, Duradero*
 

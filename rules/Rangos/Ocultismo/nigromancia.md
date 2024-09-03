@@ -55,7 +55,7 @@ En el caso que ya seas un no-muerto y recibas esta habilidad la energía profana
 
 ## Rango II
 
-### Vínculo parasítico
+### Vínculo Parasítico
 
 *Nigromancia, Toque, Maldición*
 
@@ -71,7 +71,7 @@ Mientras dicho vínculo permanezca activo una vez por ronda puedes transferir ha
 
 **Empoderar** (1 chi): Transfieres una *herida permanente* o efecto de estado negativo a la criatura con la que compartas en vínculo.
 
-### Animar no-muerto
+### Animar No-muerto
 
 *Nigromancia, Invocación*
 
@@ -87,17 +87,17 @@ Mientras que los no-muertos son individualmente débiles siguen siendo muy útil
 
 **Empoderar** (1 chi): Anima dos no-muertos adicionales con este hechizo.
 
-### Maldición vampírica
+### Maldición Vampírica
 
 *Nigromancia, Toque, Maldición*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Toque
 
 **Duración:** Hasta que sea eliminada
 
-Colocas una marca maldita en un enemigo que te permite emplear su esencia vital Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Nigromancia o le provocas una maldición vampírica. Mientras la maldición permanezca activa cada vez que hieras al afectado con un efecto Necrótico podrás recuperar Vitalidad igual a la mitad del daño provocado. Dicha maldición permanecerá activa hasta que pase un día o sea eliminada.
+Colocas una marca maldita en un enemigo que te permite emplear su esencia vital. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Nigromancia o le provocas una maldición vampírica. Mientras la maldición permanezca activa cada vez que hieras al afectado con un efecto Necrótico podrás recuperar Vitalidad igual a la mitad del daño provocado. Dicha maldición permanecerá activa hasta que pase un día o sea eliminada.
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo o reduces el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a un objetivo con un efecto Necrótico.
 
@@ -105,7 +105,7 @@ Colocas una marca maldita en un enemigo que te permite emplear su esencia vital 
 
 Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d8.
 
-### Aspecto de no-muerto
+### Aspecto de No-muerto
 
 *Nigromancia, Pasiva*
 
@@ -117,7 +117,7 @@ Tu cuerpo se ha expuesto a tanta energía negativa que has empezado a adoptar lo
 - **Esqueleto:** Te crecen varias espinas óseas duras como el acero. Aumenta tu DEF por 2 además que todas tus armas naturales incrementarán sus dados de daño por un paso y contarán como si fueran *material superior*.
 - **Zombi:** Tu cuerpo se vuelve especialmente resistente a las heridas. Aumenta tu DEF por 2 además que todas las *heridas permanentes* que sufras te afectarán como si fueran de un nivel inferior.
 
-### Tormenta de energía negativa
+### Tormenta de Energía Negativa
 
 *Nigromancia, Ataque, Área, Necrótico*
 
@@ -135,7 +135,7 @@ El daño provocado por este ataque reducirá también la Vitalidad y PV máximos
 
 **Empoderar** (1 chi): Aumenta el área afectada por este hechizo a un radio medio
 
-### Aura de muerte
+### Aura de Muerte
 
 *Nigromancia, Ambiental, Duradera*
 

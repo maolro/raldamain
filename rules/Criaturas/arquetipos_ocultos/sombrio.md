@@ -26,6 +26,12 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 
 ## Sombrío II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia Sombría por 1.
+- **Hechizos:** Aprende los hechizos Bola Sombra, Capullo Sombrío y Oscuridad Devoradora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Salto Sombrío:** Una vez por ronda puede emplear la habilidad Salto Sombrío para evadir automáticamente un ataque enemigo. Si ya posee dicha habilidad podrá emplearla una vez adicional
+- **Absorber Oscuridad:** Recibe Inmunidad a efectos Necróticos y de Frío a costa de Vulnerabilidad a efectos Radiantes. El daño Necrótico le sana en lugar de herirle pero no podrá recibir Sanación. Si se encuentra en un entorno a oscuras se sanará Vitalidad igual a su Rango de Ascendencia Sombría.
+
 ## Sombrío III (+2, 5 mejoras)
 
 ## Sombrío IV (+2, 7 mejoras)

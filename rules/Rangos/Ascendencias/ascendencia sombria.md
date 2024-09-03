@@ -31,7 +31,7 @@ Te mueves con el sigilo de una sombra viviente. Eres capaz de ver en la oscurida
 
 Incrementa tu estadística de DES y su limitador por 1.
 
-### Infusión sombría
+### Infusión Sombría
 
 *Innata, Mejora*
 
@@ -43,7 +43,7 @@ Refuerzas tus ataques con energía necrótica para herir la esencia vital de tus
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
-### Salto sombrío
+### Salto Sombrío
 
 *Innata, Espacial*
 
@@ -57,7 +57,7 @@ Creas una pequeña brecha al plano sombrío para viajar rápidamente de un lugar
 
 Aprendes los hechizos Capullo sombrío y Bola sombra
 
-### Absorber oscuridad
+### Absorber Oscuridad
 
 *Innata, Mejora*
 
@@ -67,7 +67,7 @@ Obtienes la capacidad de cambiar temporalmente las características de tu cuerpo
 
 No obstante, transformar tu cuerpo para que se asemeje a un no-muerto es un arma de doble filo al obtener también sus debilidades. Por ello obtendrás también Vulnerabilidad a efectos Radiantes y no podrás sanarte por efectos que no sean Necróticos. Activar o desactivar esta habilidad cuesta una acción bonus.
 
-### Invocación sombría
+### Invocación Sombría
 
 *Sombría, Invocación*
 
@@ -85,7 +85,7 @@ Llamas a una siniestra criatura proveniente del Plano Sombrío para que te asist
 
 Incrementa tu estadística de CAR y su limitador por 1.
 
-### Arma de tinieblas
+### Arma de Tinieblas
 
 *Sombría, Duradera*
 
@@ -97,7 +97,7 @@ Invocas un arma hecha de pura oscuridad para atacar a tus enemigos. El arma se m
 
 El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán una acción (dos acciones si el arma requiere las dos manos para ser empleada) y puedes usar tu modificador de Magia Sombría para tu tiro de ataque con ella. Al estar hecha de sombras esta no puede ser detenida con tiros de Parada hechos con armas no-mágicas. Además, puedes aplicar cualquier técnica de combate que ya tengas a los ataques realizados con esta arma.
 
-### Forma sombría
+### Forma Sombría
 
 *Sombría, Mejora*
 
@@ -111,13 +111,13 @@ Eres capaz de transformar tu cuerpo en pura oscuridad, pudiendo así convertirte
 
 Aprendes los hechizos Tentáculos de oscuridad y Maldición de Shade
 
-### Sombra viviente
+### Sombra Viviente
 
 *Innata, Pasiva*
 
 El siniestro poder en tu interior se ha desatado por completo, transformándote en un ser más propio del Plano Sombrío que el material. Obtienes Resistencia a efectos Arcanos, Mentales, Maldiciones, Aflicciones y Miedo además que las criaturas sombrías de menor nivel te obedecerán sin cuestionarlo. Obtener esta habilidad te otorgará una *locura permanente* escogida por le DJ.
 
-### Dominio de pesadilla
+### Dominio de Pesadilla
 
 *Innata, Sombría, Ambiental, Espacial*
 
