@@ -15,7 +15,7 @@ Rastrear tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ## Rango I
 
-### Analizar enemigo
+### Analizar Enemigo
 
 *Innata, Duradera*
 
@@ -23,7 +23,7 @@ Rastrear tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 Observas con atención los movimientos y la forma de combatir de un enemigo para adaptarte a él y predecir sus acciones futuras. Esta habilidad te otorgará Ventaja en todos tus tiros de ataque y defensa durante el resto del combate contra un enemigo que hayas estado observando durante por lo menos una ronda. Los beneficios de Analizar enemigo permanecerán activos hasta que utilices esta habilidad en un objetivo diferente o tu objetivo cambie radicalmente su forma de luchar.
 
-### Sanador instintivo
+### Sanador Instintivo
 
 *Innata, Toque, Sanación*
 
@@ -47,7 +47,7 @@ Has desarrollado la capacidad de aplicar primeros auxilios en situaciones de vid
 
 Te mueves con tal sigilo que eres casi imposible de localizar por tus enemigos. Al emplear esta habilidad te ocultas de tal manera que no puedes ser percibido, recibiendo así los beneficios de ser *invisible*. Para emplear esta habilidad debes encontrarte fuera del campo de visión de tus enemigos y permanecerá activa hasta que realices un ataque o salgas de tu escondite. 
 
-### Maestro del terreno
+### Maestro del Terreno
 
 *Innata, Pasiva*
 
@@ -63,7 +63,7 @@ Puedes obtener afinidad con nuevos terrenos si pasas una cantidad adecuada de ti
 
 ## Rango III
 
-### Lo he visto antes
+### Lo he visto Antes
 
 *Innata, Pasiva, Visual*
 

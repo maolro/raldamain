@@ -22,7 +22,7 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 - **Habilidades Pasivas:** Recibe Sigilo Sombrío y Nacido de las Tinieblas como habilidades pasivas.
 - **Hechizos:** Aprende los hechizos Crear Oscuridad, Tajo Umbrío y Toque Drenador. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada Sombría:** Puede usar su tiro de Magia Sombría para defenderse de ataques cuerpo a cuerpo y a distancia.
-- **Infusión Sombría:** Sus ataques físicos infligen una cantidad adicional de daño Necrótico igual a 1d6 + su Rango en Magia Sombría.
+- **Infusión Sombría:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo Sombrío que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Necrótica.
 
 ## Sombrío II (+2, 3 mejoras)
 

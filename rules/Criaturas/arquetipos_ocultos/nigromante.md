@@ -14,7 +14,7 @@ La criatura ha desarrollado siniestros poderes relacionados con la nigromancia, 
 - **Hechizos:** Aprende los hechizos Toque Necrótico y Descarga de Energía Negativa. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada Necrótica:** Puede usar su tiro de Nigromancia para defenderse de ataques cuerpo a cuerpo y a distancia.
 - **Animar No-Muerto:** Cada vez que mate a otra criatura con un efecto Necrótico esta reanimará la ronda siguiente como un zombi o esqueleto bajo su control.
-- **Infusión Necrótica:** Al impactar con un ataque natural puede provocar los efectos de un hechizo de Nigromancia que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda.
+- **Infusión Necrótica:** Al impactar con un ataque natural puede provocar los efectos de un hechizo de Nigromancia que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Sombría.
 
 ## Nigromante II (+2, 3 mejoras)
 

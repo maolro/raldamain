@@ -65,7 +65,7 @@ Alteras la fisiología de una criatura que toques para mejorar sus capacidades b
 
 ## Rango II
 
-### Arma ósea
+### Arma Ósea
 
 *Transmutación, Duradero, Físico, Cuerpo a Cuerpo*
 
@@ -81,7 +81,7 @@ El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán
 
 **Empoderar** (1 chi): Cambias el tipo del arma ósea a otra que escojas o la lanzas para atacar a un enemigo a distancia media de ti. Si escoges lanzar el arma te volverá a crecer sin dificultades.
 
-### Alterar tamaño
+### Alterar Tamaño
 
 *Transmutación, Mejora, Duradero*
 
@@ -100,7 +100,7 @@ Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a distancia media, o afecta a un objetivo adicional con él.
 
-### Consumir esencia
+### Consumir Esencia
 
 *Transmutación, Aflicción, Sanación*
 
@@ -140,7 +140,7 @@ Endureciendo tu piel, haciendo crecer un exoesqueleto oseo o cambiando de formas
 
 Fusionando tu genoma con el de otras especies obtienes capacidades sobrehumanas para mejorar tus capacidades. Puedes crear tus propias propuestas dependiendo de la criatura que trates de asimilar siempre que cuentes con el permiso del master, pero algunos ejemplos serían hacerte crecer alas o volverte anfibio.
 
-### Crear quimera
+### Crear Quimera
 
 *Transmutación, Invocación*
 
@@ -154,7 +154,7 @@ Mutando a un animal o humano incapacitado puedes crear a una aberración mutada 
 
 ## Rango IV
 
-### Moldear la carne
+### Moldear la Carne
 
 *Transmutación, Aflicción*
 
@@ -166,7 +166,7 @@ Mutando a un animal o humano incapacitado puedes crear a una aberración mutada 
 
 Provocas rápidas mutaciones espontáneas en tu objetivo, deformándolo horriblemente. De esta manera el afectado deberá defenderse empleando constitución o sufrirá 1d8+Inteligencia daño fuerza, el estado de efecto nauseas y una característica morfológica de tu elección. Así mismo si este ataque reduce a 0 PV a tu objetivo este se convertirá en una quimera, pasando a estar bajo tu control. Sin embargo esta habilidad solamente podrá emplearse contra objetivos orgánicos.
 
-### Esencia de la magia
+### Esencia de la Magia
 
 *Transmutación, Mejora, Duradero*
 

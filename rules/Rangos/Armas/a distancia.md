@@ -16,7 +16,7 @@ Estilo a distancia tiene las siguientes reglas fundamentales que se aplican a cu
 
 ## Rango I 
 
-### Ataque con arma
+### Ataque con Arma
 
 *A distancia, Físico, Ataque*
 
@@ -30,7 +30,7 @@ Estilo a distancia tiene las siguientes reglas fundamentales que se aplican a cu
 
 Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de DES. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de armas a distancia.
 
-### Apuntar ataque
+### Apuntar Ataque
 
 *A distancia, Mejora*
 
@@ -38,7 +38,7 @@ Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcan
 
 Te preparas antes de disparar para mejorar notablemente tu precisión. Al emplear una acción para apuntar sumarás tu nivel de talento en Percepción al siguiente tiro de ataque que realices con un arma a distancia. No podrás emplear esta habilidad si estás *cegado* o tienes *heridas permanentes* en la cabeza. 
 
-### Disparo certero
+### Disparo Certero
 
 *A distancia, Mejora*
 
@@ -48,7 +48,7 @@ Apuntas tu siguiente disparo hacia una parte específica del cuerpo de tu objeti
 
 ## Rango II
 
-### Disparo triple
+### Disparo Triple
 
 *A distancia, Mejora*
 
@@ -56,7 +56,7 @@ Apuntas tu siguiente disparo hacia una parte específica del cuerpo de tu objeti
 
 Disparas tres proyectiles en un abrir y cerrar de ojos para acabar con múltiples enemigos. Tu siguiente ataque a distancia afectará a tres enemigos diferentes a una distancia igual a su alcance. Estos ataques pueden ser mejorados con otras técnicas de combate si lo deseas. No puedes emplear esta técnica si tu arma requiere recarga salvo que tenga la capacidad de disparar múltiples proyectiles.
 
-### Recarga rápida
+### Recarga Rápida
 
 *A distancia, Mejora*
 
@@ -64,7 +64,7 @@ Disparas tres proyectiles en un abrir y cerrar de ojos para acabar con múltiple
 
 Tu soltura con tu arma te permite recargarla a velocidades sobrehumanas. Al emplear esta habilidad recargas tu arma como acción bonus, pudiendo así volver a usarla inmediatamente. Solo puedes emplear esta habilidad en armas con la propiedad *recarga*.
 
-### Disparo engañoso
+### Disparo Engañoso
 
 *A distancia, Mejora, Visual*
 
@@ -72,7 +72,7 @@ Tu soltura con tu arma te permite recargarla a velocidades sobrehumanas. Al empl
 
 Fallas intencionalmente un disparo para que tu enemigo abandone sus defensas y acabe en una posición más vulnerable. Al fallar un ataque a distancia contra un enemigo puedes forzarle a realizar un tiro de Percepción o Averiguar Intenciones contra tu modificador de Estilo a distancia. Si falla este tiro el disparo le fintará, provocando que reciba Desventaja en su siguiente tiro defensivo contra ti. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
 
-### Desarme ágil
+### Desarme Ágil
 
 *A distancia, Maniobra*
 
@@ -82,7 +82,7 @@ Disparas con gran velocidad y precisión para desarmar a un enemigo antes que pu
 
 ## Rango III 
 
-### Ojo del francotirador
+### Ojo del Francotirador
 
 *A distancia, Mejora*
 
@@ -90,7 +90,7 @@ Disparas con gran velocidad y precisión para desarmar a un enemigo antes que pu
 
 Disparas con la precisión de un francotirador para eliminar a enemigos cada vez más distantes. Tu siguiente ataque a distancia aumentará su alcance por un paso, su daño por 2d6 y provocará una *herida permanente leve* a tu objetivo en la parte del cuerpo que escojas. Además, si logras impactar exitosamente podrás esconderte como acción bonus si te encuentras en un lugar que tenga *cubierta* u *ocultamiento*. Este ataque puede mejorarse con otras técnicas si lo deseas siempre y cuando sea posible.
 
-### Cubierta de disparos
+### Cubierta de Disparos
 
 *A distancia, Pasiva*
 

@@ -34,13 +34,13 @@ Debido a la naturaleza innata de esta habilidad puede manifestarse sola cuando t
 
 Aumenta tu estadística de SAB y su limitador por 1.
 
-### Fuerza salvaje
+### Fuerza Salvaje
 
 **Coste:** 1 vigor o chi
 
 Imbuyes tu siguiente ataque físico con un hechizo que conozcas, permitiéndote provocar sus efectos al siguiente enemigo que impactes esta ronda como acción bonus. Si el hechizo imbuido es un ataque sumará su daño base al daño de tu ataque mientras que si escoges un hechizo que requiera un tiro de habilidad el afectado podrá realizarlo para intentar evitar sus efectos. Deberás seguir pagando el coste en chi o vigor del hechizo imbuido
 
-### Comunión con la naturaleza
+### Comunión con la Naturaleza
 
 *Innata, Pasiva*
 
@@ -50,7 +50,7 @@ Obtienes también un vínculo con un Espíritu mayor de tu elección, el cual te
 
 ## Rango III 
 
-### Transformación animal
+### Transformación Animal
 
 *Innata, Transmutación, Duradera*
 
@@ -65,7 +65,7 @@ Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu e
 - **Lobo:** Tu FUE y DES pasan a ser 7 si eran más bajas. Aumenta tu velocidad por 1 y recibes Ventaja en todos tus tiros de Sigilo y Percepción. Tu DEF base pasa a ser 4 y el daño base de tus ataques naturales pasa a ser 1d8 daño Perforante.
 - **León:** Tu FUE, DES y CON pasan a ser 6 si eran más bajas. Aumenta tu velocidad de salto y escalada por 1 además que recibes Ventaja en todos tus tiros de Acrobacias y Atletismo. Tu DEF base pasa a ser 6 y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
 
-### Llamar  a los espíritus
+### Llamar  a los Espíritus
 
 *Divina, Invocación*
 
@@ -83,13 +83,13 @@ Abres una pequeña brecha entre ambos planos para llamar a una criatura espiritu
 
 Aumenta tu estadística de FUE y su limitador por 1. Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu espíritu, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Vínculo primigenio
+### Vínculo Primigenio
 
 *Innata, Pasiva*
 
 Tu vínculo con el plano espiritual se ahonda hasta el punto de volverte semejante a una criatura espiritual. Recibes Resistencia a todos los efectos de las categorías Fuego, Frío, Eléctrico, Sónico y Radiante además que eres Inmune a sus efectos críticos. Eres también capaz comunicarte con animales y espíritus, quienes te tratarán como un igual y serán amistosos hacia ti.
 
-### Sanación espiritual
+### Sanación Espiritual
 
 *Innata, Pasiva*
 
