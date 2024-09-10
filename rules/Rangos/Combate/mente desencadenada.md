@@ -16,7 +16,7 @@ Mente desencadenada tiene las siguientes reglas fundamentales que se aplican a c
 
 ## Rango I
 
-### Mente desencadenada
+### Mente Desencadenada
 
 *Mente desencadenada, Mental, Pasiva*
 
@@ -24,7 +24,7 @@ Liberas a tu mente de las ataduras materiales para alcanzar gran poder a costa d
 
 Mientras que combatir en dicho estado potencia enormemente tus facultades mentales un uso excesivo de él puede acabar provocándote heridas mentales. No podrás pasar más de seis rondas seguidas en Mente desencadenada y en el momento que abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Mente desencadenada. 
 
-### Agilidad mental
+### Agilidad Mental
 
 *Innata, Pasiva*
 
@@ -32,13 +32,13 @@ Tu capacidad de despertar el verdadero potencial de tu mente ha mejorado notable
 
 ## Rango II
 
-### Poder del dolor
+### Poder del Dolor
 
 *Mente desencadenada, Innata, Pasiva*
 
-Eres capaz de suprimir el dolor únicamente con el poder de tu mente. Mientras te encuentres en Mente desencadenada ignorarás los efectos provocados por *heridas permanentes* leves y medias además de obtener Resistencia a Aflicciones y Aturdimiento. Aunque puedas suprimir los efectos de las heridas estas permanecerán en tu cuerpo y actuarán con normalidad cuando abandones el estado de Mente desencadenada.
+Eres capaz de suprimir el dolor únicamente con el poder de tu mente. Mientras te encuentres en Mente Desencadenada ignorarás los efectos provocados por *heridas permanentes* leves y medias además de obtener Resistencia a Aflicciones y Aturdimiento. Aunque puedas suprimir los efectos de las heridas estas permanecerán en tu cuerpo y actuarán con normalidad cuando abandones el estado de Mente desencadenada.
 
-### Conocimiento arcano
+### Conocimiento Arcano
 
 *Mente desencadenada, Innata, Pasiva*
 
@@ -48,13 +48,13 @@ Emplearás tu bonificador de Mente desencadenada para lanzar dichos hechizos, su
 
 ## Rango III
 
-### Concentración superior
+### Concentración Superior
 
 *Mente desencadenada, Innata, Pasiva*
 
 Has desarrollado la capacidad de mantener la concentración en situaciones de gran peligro, confiando en tu fuerza mental para seguir adelante y suprimiendo toda distracción. No perderás la concentración si recibes *heridas permanentes* o efectos de estado negativos si aún eres capaz de mantenerte consciente. No obstante, aún perderás la concentración si recibes *heridas permanentes graves* o quedas completamente incapacitado.
 
-### Poder de la locura
+### Poder de la Locura
 
 *Mente desencadenada, Innata, Pasiva*
 
@@ -62,7 +62,7 @@ Eres capaz de despertar tu poder mágico interior a costa de expoliar tu mente. 
 
 ## Rango IV
 
-### Sentido arcano
+### Sentido Arcano
 
 *Mente desencadenada, Innata, Pasiva*
 
@@ -70,7 +70,7 @@ Entrar en Mente desencadenada da la capacidad de percibir los canales de chi a t
 
 **Empoderar** (1 chi o 2 cordura): Alteras forzosamente un canal de chi que puedas percibir para suprimir durante una ronda las propiedades de un objeto mágico o un hechizo que esté actualmente activo. Solo podrás afectar a hechizos y objetos de rango menor al tuyo.
 
-### Psique retorcido
+### Psique Retorcido
 
 *Mente desencadenada, Innata, Pasiva*
 

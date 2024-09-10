@@ -16,7 +16,7 @@ Estilo de Duelo tiene las siguientes reglas fundamentales que se aplican a cualq
 
 ## Rango I
 
-### Ataque de arma
+### Ataque de Arma
 
 *Duelo, Físico, Cuerpo a cuerpo*
 
@@ -30,13 +30,13 @@ Estilo de Duelo tiene las siguientes reglas fundamentales que se aplican a cualq
 
 Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Duelo.
 
-### Destreza defensiva
+### Destreza Defensiva
 
 *Duelo, Pasiva*
 
 Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo usando Parada puedes hacer también un tiro de Esquiva y quedarte con el resultado que más te convenga. Esto te permite también usar habilidades pertenecientes a Reflejos para en tus tiros de Parada.
 
-### Truco de espada
+### Truco de Espada
 
 *Duelo, Mejora, Maniobra*
 
@@ -51,7 +51,7 @@ Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al acti
 
 ## Rango II
 
-### Finta engañosa
+### Finta Engañosa
 
 *Duelo, Visual*
 
@@ -59,7 +59,7 @@ Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al acti
 
 Haces un ataque falso para engañar a un enemigo para que acabe en una posición más vulnerable. En respuesta a fallar uno de tus ataques puedes forzar a tu objetivo a tener éxito en un tiro de Percepción o Averiguar intenciones o saldrá inmediatamente de *posición defensiva*. Además, en caso de éxito recuperarás las acciones que hayas gastado en tu ataque original además del vigor usado para mejoras. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
 
-### Golpe de mango
+### Golpe de Mango
 
 *Duelo, Ataque, Físico*
 
@@ -71,7 +71,7 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y romper sus defensas. Haz un ataque de arma contra un enemigo adyacente que infligirá 1d4 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda.
 
-### Ataque torbellino
+### Ataque Torbellino
 
 *Duelo, Mejora*
 

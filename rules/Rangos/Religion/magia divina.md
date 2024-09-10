@@ -109,7 +109,7 @@ La fuerza divina que te protege puede usarse también para maldecir a los enemig
 
 Aprendes dos hechizos de rango III pertenecientes a una magia relacionada con tu divinidad. Dichos hechizos tendrán la categoría Divina además de aquellas que ya posean. Además, todos tus hechizos Divinos sustituyen sus dados de daño por d8 y aquellos de Rango I cuestan una acción menos para emplear (mínimo 1).
 
-### Castigo divino
+### Castigo Divino
 
 *Divina, Maldición*
 
@@ -130,7 +130,7 @@ La naturaleza exacta de una maldición dependerá enormemente de la naturaleza d
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional con este hechizo.
 
-### Llamar a los dioses
+### Llamar a los Dioses
 
 *Divina, Ambiental*
 
@@ -138,7 +138,7 @@ La naturaleza exacta de una maldición dependerá enormemente de la naturaleza d
 
 **Duración:** Seis rondas
 
-Invocas el poder de tu dios para que ejerza su influencia en el campo de batalla, otorgando grandes beneficios a sus creyentes y alterando el terreno. Este hechizo funciona al principio de la misma manera que *tierra consagrada*, pero tras la segunda ronda provocará un efecto Ambiental relacionado con tu dios que no supere el rango III Algunos ejemplos son Controlar los Vientos, Animar plantas, Aura de vida o Aura de Muerte. El hechizo empleado afectará a todo el campo de batalla y no necesitará tu concentración para mantenerse.
+Invocas el poder de tu dios para que ejerza su influencia en el campo de batalla, otorgando grandes beneficios a sus creyentes y alterando el terreno. Este hechizo funciona al principio de la misma manera que *tierra consagrada*, pero tras la segunda ronda provocará un efecto Ambiental relacionado con tu dios que no supere el rango III. Algunos ejemplos son Controlar los Vientos, Animar plantas, Aura de vida o Aura de Muerte. El hechizo empleado afectará a todo el campo de batalla y no necesitará tu concentración para mantenerse.
 
 **Empoderar** (1 chi): Cambia el efecto ambiental a otro relacionado con tu dios sin la necesidad de pagar acciones o chi.
 

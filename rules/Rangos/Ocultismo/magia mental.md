@@ -92,7 +92,7 @@ Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes da
 
 **Empoderar** (1 chi): Eliminas un hechizo Mental adicional si tienes éxito en el tiro.
 
-### Alterar emociones
+### Alterar Emociones
 
 *Mental*
 
@@ -120,7 +120,7 @@ Los efectos exactos que otorga este hechizo dependen de la emoción que busques 
 
 Tus hechizos Mentales de Rango I reducen su coste en acciones por 1 (mínimo 1).
 
-### Sobrecarga mental
+### Sobrecarga Mental
 
 *Mental, Cordura*
 

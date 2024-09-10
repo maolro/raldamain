@@ -12,9 +12,9 @@ Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los
 
 - **Coste base:** El coste base indica el valor de la unidad para que sea posible calcular el coste total del ejército. Cada ejército contará con un presupuesto específico, el cual normalmente será de 100, 200 o 300 puntos. El coste total **no** podrá exceder el presupuesto del ejército.
 - **Tiro base:** En este apartado se especifica la cantidad de dados que tirará el ejército cuando se enfrente con otro. Todo esto se detallará en el apartado de combate.
-- **Cohesión:** 
-- **Movimiento:** 
-- **Habilidades Especiales:**
+- **Cohesión:** La cohesión representa cuánto daño es capaz de recibir la unidad antes de quedar eliminada. 
+- **Movimiento:** El movimiento indica la cantidad de casillas que puede moverse la unidad cuando reciba órdenes. 
+- **Habilidades Especiales:** En este apartado se indica todas las habilidades especiales con las que cuente la unidad.
 
 # Tipos básicos de unidad
 
@@ -152,7 +152,7 @@ Mover a esta unidad no cuesta acciones y es Inmune a efectos de Moral. No obstan
 
 ## Incendiario (+1)
 
-Recibe un ataque A Distancia especial con alcance 1 que reduce cohesión como si fuera un ataque cuerpo a cuerpo.
+Recibe un ataque A Distancia especial con alcance 1 que reduce cohesión como si fuera un ataque cuerpo a cuerpo. Si no tiene ataques a distancia tirará la misma cantidad de dados que su tiro de combate - 1.
 
 ## Jinete de bestia (+1)
 

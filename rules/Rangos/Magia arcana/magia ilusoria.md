@@ -64,7 +64,7 @@ Una ilusión fantasmal solo podrá ser percibida por el objetivo afectado y esta
 
 ## Rango II
 
-### Engaño ilusorio
+### Engaño Ilusorio
 
 *Ilusoria, Arcana, Visual, Mejora*
 
@@ -90,7 +90,7 @@ Si un objetivo tiene un sentido capaz de percibirte o eres parcialmente visible 
 
 **Empoderar** (1 chi): No te volverás visible la siguiente vez que ataques o seas impactado.
 
-### Terreno alucinatorio
+### Terreno Alucinatorio
 
 *Ilusoria, Arcana, Visual, Ambiental, Duradera*
 
@@ -110,7 +110,7 @@ Esta alteración del terreno afectará también a determinadas habilidades ambie
 
 Todos tus hechizos Ilusorios de Rango I reducen su coste en acciones por 1 (mínimo 1).  Además, las ilusiones que creas aumentan su tamaño a una esfera mediana además que serán sonoras.
 
-### Dobles ilusorios
+### Dobles Ilusorios
 
 *Ilusoria, Arcana, Visual, Defensiva, Duradera*
 
@@ -128,7 +128,7 @@ Eres capaz de emplear los dobles para frustrar ataques enemigos. Como reacción 
 
 **Empoderar** (1 acción): Creas una cantidad de dobles ilusorios iguales a la mitad de tu rango (redondeando hacia abajo). No podrás superar el máximo de dobles ilusorioes empoderando de esta manera.
 
-### Terror ilusorio
+### Terror Ilusorio
 
 *Ilusoria, Arcana, Visual, Duradera, Miedo*
 
@@ -148,7 +148,7 @@ Cada criatura que pueda ver la ilusión al principio de su turno deberá repetir
 
 **Empoderar** (1 chi): Una criatura que intente atacar a tu ilusión debe tener éxito en un tiro de Voluntad o Concentración o quedará sobrecogida por el miedo, haciendo que no se atreva a atacarla. 
 
-### Copiar hechizo
+### Copiar Hechizo
 
 *Ilusoria, Arcana, Visual, Mejora*
 
@@ -164,7 +164,7 @@ Si conviertes tu hechizo en fantasmal tu objetivo creerá que sus efectos son re
 
 Todos tus hechizos Ilusorios de Rango II reducen su coste en acciones por 1 (mínimo 1).
 
-### Velo de engaños
+### Velo de Engaños
 
 *Ilusoria, Arcana, Visual, Duradera*
 
@@ -180,7 +180,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración o sea disip
 
 **Empoderar** (1 chi): Cambias tu apariencia por la de otra criatura para burlar un ataque enemigo, provocando así que una criatura afectada por este hechizo que intente atacarte acabe impactando a un objetivo diferente.
 
-### Espejismo arcano
+### Espejismo Arcano
 
 *Ilusoria, Arcana, Ambiental*
 
@@ -192,7 +192,7 @@ Las ilusiones creadas de esta manera se comportarán como el efecto real de terr
 
 **Empoderar** (1 chi): Cambias la posición de todos los obstáculos y efectos ambientales creados con este hechizo tal como desees. Si te encuentras en *posición defensiva* los cambios creados harán que una criatura que te esté atacando falle automáticamente si no ha desmentido tus ilusiones
 
-### Asalto ilusorio
+### Asalto Ilusorio
 
 *Ilusoria, Arcana, Pasiva*
 

@@ -52,7 +52,7 @@ Mutas tu cuerpo con energías abisales para obtener nuevas habilidades. Dicha mu
 - **Toxina:** La siguiente vez que impactes puedes infectar a tu objetivo con un veneno cuya gravedad es igual a la suma de tu CON y tu Rango de Ascendencia abisal. El veneno tendrá tasa de efecto de una ronda y afectará a cualquier estadística de tu elección.
 - **Infusión mágica:** Infundes tus ataques con un hechizo para provocar sus efectos la siguiente vez que impactes esta ronda. Debes seguir pagando el coste del hechizo escogido.
 
-### Poder antinatural
+### Poder Antinatural
 
 *Innata, Pasiva*
 
@@ -60,13 +60,13 @@ El poder antinatural de tu interior te otorga nuevos sentidos y poderes mágicos
 
 ## Rango III
 
-### Abrazar la locura
+### Abrazar la Locura
 
 *Innata, Pasiva*
 
 Eres capaz de usar el poder del abismo para reponer tus fuerzas a costa de destruir tu ya fragmentada mente. Mientras te encuentres en Furia abisal puedes reducir tu cordura por 2 para recuperar 1 chi o vigor de tu reserva. Esta habilidad solo puede emplearse un máximo de tres veces por ronda.
 
-### Invocación abisal
+### Invocación Abisal
 
 *Innata, Invocación*
 
@@ -82,7 +82,7 @@ Invocas a una criatura abisal para que te asista en el campo de batalla y acabe 
 
 Incrementa tu estadística de CON y su limitador por 1. Aprendes también dos hechizos de Rango II vinculados a una entidad abisal y puedes lanzarlos usando vigor en lugar de chi. Dichos hechizos deben ser aprobados por el DJ.
 
-### Rasgo monstruoso superior
+### Rasgo Monstruoso Superior
 
 *Innata, Pasiva*
 
@@ -90,7 +90,7 @@ Tu cuerpo se transforma para asemejarse cada vez más a una criatura abisal. Una
 
 **Empoderar** (2 vigor): Sustituye el rasgo monstruoso que tengas por otro de tu elección durante este combate. No podrás tener más de un rasgo activo a la vez.
 
-### Paso abisal
+### Paso Abisal
 
 *Innata, Espacial*
 
@@ -104,7 +104,7 @@ Esta habilidad puede usarse también para viajar a otras dimensiones o incluso d
 
 ## Rango V
 
-### Aura del caos
+### Aura del Caos
 
 *Innata, Pasiva*
 
@@ -112,7 +112,7 @@ El poder del abismo que habita en tu interior provoca disrupciones en el funcion
 
 **Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera.
 
-### Corrupción absoluta
+### Corrupción Absoluta
 
 *Innata, Pasiva*
 

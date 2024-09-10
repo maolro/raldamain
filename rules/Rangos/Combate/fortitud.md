@@ -17,13 +17,13 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ## Rango I
 
-### Armadura natural
+### Armadura Natural
 
 *Innata, Pasiva*
 
 Tu cuerpo es capaz de resistir heridas que en otras circunstancias serían mortales. Aumenta tu cantidad máxima de PV y tu DEF por un valor igual a tu Rango de Fortitud + 1. El bonificador a la defensa sí se acumula con aquel otorgado por armaduras.
 
-### Segundo aliento
+### Segundo Aliento
 
 *Innata, Sanación*
 
@@ -35,7 +35,7 @@ Aunque estés al borde de la muerte eres capaz de volver a levantarte para segui
 
 ## Rango II
 
-### Duro de pelar
+### Duro de Pelar
 
 *Innata, Pasiva*
 
@@ -51,13 +51,13 @@ Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce e
 
 ## Rango III
 
-### Hasta la muerte
+### Hasta la Muerte
 
 *Innata, Pasiva*
 
 Tu gran resistencia al dolor te permite seguir luchando hasta la muerte. Todas las *heridas permanentes* que recibas reducirán su gravedad por un paso además que podrás seguir luchando a 0 o menos PV. En dicho estado deberás seguir haciendo tiros de muerte al final de tu turno y morirás si fracasas dicho tiro o caes a puntos de vida negativos iguales a tu estadística de CON.
 
-### Constitución férrea
+### Constitución Férrea
 
 *Innata, Pasiva*
 
@@ -65,7 +65,7 @@ Tu fuerte constitución te permite resistir los efectos de las aflicciones que s
 
 ## Rango IV
 
-### Muro viviente
+### Muro Viviente
 
 *Innata, Defensiva, Duradera*
 
@@ -79,7 +79,7 @@ Preparas tu cuerpo para el combate, haciendo así que tu piel sea dura como el a
 
 **Empoderar** (1 vigor): Si este efecto permanece activo recuperas *contadores de escudo* iguales a tu Rango dividido entre dos redondeando hacia abajo.
 
-### Aguantar los elementos
+### Aguantar los Elementos
 
 *Innata, Pasiva*
 
