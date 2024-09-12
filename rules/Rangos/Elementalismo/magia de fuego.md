@@ -67,7 +67,7 @@ Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz u
 
 ## Rango II
 
-### Muro de llamas
+### Muro de Llamas
 
 *Fuego, Defensivo, Duradero*
 
@@ -93,7 +93,7 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 *Fuego, Ataque, Área*
 
-**Coste:** 2 o más acciones y 1 chi
+**Coste:** 1 o más acciones y 1 chi
 
 **Alcance:** Medio
 

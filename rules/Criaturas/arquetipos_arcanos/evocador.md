@@ -17,6 +17,14 @@ La criatura es capaz de canalizar el poder del chi para atacar a sus enemigos co
 
 ## Evocador II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores. Aumenta también su DEF por 2. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Evocación y Mente Desencadenada por 1. 
+- **Habilidades Pasivas:** Obtiene la habilidad pasiva Poder del Dolor.
+- **Hechizos:** Aprende tres hechizos relacionados con su Especialidad Arcana de Rango II o menos. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Acelerar:** Recibe una acción adicional como si estuviera siempre bajo los efectos de Acelerar.
+- **Muro de Energía:** Una vez por ronda puede emplear el hechizo Muro de Energía de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
+- **Infundir Arma:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Evocación que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino.
+
 ## Evocador III (+2, 5 mejoras)
 
 ## Evocador IV (+2, 7 mejoras)

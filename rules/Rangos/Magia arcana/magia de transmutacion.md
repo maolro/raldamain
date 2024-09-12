@@ -116,7 +116,7 @@ Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heri
 
 ## Rango III
 
-### Defensa adaptable
+### Defensa Adaptable
 
 *Transmutación, Mejora, Duradera*
 
@@ -124,21 +124,27 @@ Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heri
 
 **Alcance:** Adyacente
 
-**Duración:** Una hora
+**Duración:** Cuatro rondas
 
-Endureciendo tu piel, haciendo crecer un exoesqueleto oseo o cambiando de formas extremas tu morfología te adaptar a casi cualquier situación que pueda presentársete para abrirte paso a través de ella. De esta manera puedes provocar una mutación espontánea que mejore un aspecto defensivo propio. Puedes crear tus propias propuestas siempre que cuentes con el permiso del master, pero algunos ejemplos serían: coraza, espinas o una resistencia elemental específica.
+Transmutas el cuerpo de un objetivo para reforzar sus capacidades defensivas. Este hechizo permanecerá activo durante cuatro rondas y mientras lo esté tu objetivo recibirá una mejora defensiva de tu elección. Puedes escoger la naturaleza exacta de la mejora otorgada siempre y cuando cuente con la aprobación del DJ. A continuación se presentan algunos ejemplos de mejoras que puedes otorgar.
 
-### Asimilar rasgos
+- **Coraza:** Al objetivo le crece una coraza como si fuera una tortuga. Esta mejora otorga una cantidad de *contadores de escudo* igual a tu Rango en el momento que se reciba.
+- **Espinas:** Al objetivo le crecen espinas por todo su cuerpo que herirán a todo aquel que intente tocarle. Sus ataques físicos infligirán un dado de daño adicional y todo enemigo que lo impacte con un ataque natural sufrirá *sangrado*. Si agarra o es agarrado por un enemigo le infligirá daño cada ronda igual a sus ataques naturales.
+- **Resistencia Elemental:** Alteras la piel del objetivo para que se vuelva resistente a determinados efectos elementales. Esta mejora otorga Resistencia a un elemento de tu elección entre Ácido, Eléctrico, Frío, Fuego o Sónico. 
 
-*Transmutación, Mejora, Duradera*
+### Inyecciones Superiores	
 
-**Coste:** 2 acciones y 2 chi
+*Transmutación, Pasiva*
 
-**Alcance:** Adyacente
+Eres capaz de crear inyecciones mutagénicas más potentes capaces de alterar el cuerpo de tu objetivo de maneras más extremas. Al igual que el atributo base la naturaleza de dichas mejoras depende de ti y debe contar con la aprobación del DJ. A continuación se presentan algunos ejemplos de mejoras que pueden otorgarse.
 
-**Duración:** Una hora
+- **Vuelo:** Te crecen alas en la espalda que te otorgan velocidad de vuelo 1 y Ventaja en todos tus tiros de Esquiva. Esta mejora no tiene efecto si ya puedes volar.
 
-Fusionando tu genoma con el de otras especies obtienes capacidades sobrehumanas para mejorar tus capacidades. Puedes crear tus propias propuestas dependiendo de la criatura que trates de asimilar siempre que cuentes con el permiso del master, pero algunos ejemplos serían hacerte crecer alas o volverte anfibio.
+- **Anfibio:** Te crecen branquias y aletas que te permiten respirar bajo el agua sin dificultades además de otorgarte velocidad de natación 1. 
+
+- **Piel Venenosa:** Tu piel se vuelve tóxica de la misma manera que algunas ranas. Toda criatura que te toque sufrirá los efectos de un veneno de tu elección cuyo tiro de gravedad será igual a tu modificador de Transmutación.
+
+- **Aliento:** Eres capaz de escupir un aliento mágico como si fueras un dragón. El aliento empleará tu modificador de Transmutación para el tiro de ataque e infligirá 1d8 + CON daño Ácido, Eléctrico, Frío o Fuego al impactar. Emplearlo costará dos acciones y afectará un cono pequeño o una línea mediana. Si afectas a una criatura grande con esta inyección recibirá un dado adicional de daño y el área afectada aumentará por un paso.
 
 ### Crear Quimera
 
@@ -150,13 +156,13 @@ Fusionando tu genoma con el de otras especies obtienes capacidades sobrehumanas 
 
 **Duración:** Una hora
 
-Mutando a un animal o humano incapacitado puedes crear a una aberración mutada que te sirva fielmente hasta que termine de fallecer por su morfología deficiente. Al crearla la criatura tendrá nivel 6, aumentando 2 niveles por cada rango adicional que tomes de transmutación. No podrás mantener a mas de 4 quimeras bajo tu control. 
+Mutas forzosamente un animal que puedas tocar para convertirlo en una quimera que te sirva. El animal puede hacer un tiro de Salud frente a tu Magia de Transmutación para resistir este efecto, pero  si fracasa lo transformarás en una quimera monstruosa con nivel igual o inferior a tu Rango x 2. No puedes comandar a más de cuatro quimeras a la vez y estas carecerán de toda inteligencia o raciocinio.
 
 ## Rango IV
 
 ### Moldear la Carne
 
-*Transmutación, Aflicción*
+*Transmutación, Arcana, Aflicción*
 
 **Coste:** 1 acciones y 2 chi
 
@@ -164,11 +170,11 @@ Mutando a un animal o humano incapacitado puedes crear a una aberración mutada 
 
 **Duración:** Instantáneo
 
-Provocas rápidas mutaciones espontáneas en tu objetivo, deformándolo horriblemente. De esta manera el afectado deberá defenderse empleando constitución o sufrirá 1d8+Inteligencia daño fuerza, el estado de efecto nauseas y una característica morfológica de tu elección. Así mismo si este ataque reduce a 0 PV a tu objetivo este se convertirá en una quimera, pasando a estar bajo tu control. Sin embargo esta habilidad solamente podrá emplearse contra objetivos orgánicos.
+Retuerces y alteras el cuerpo de un enemigo para transformarlo en una criatura inofensiva u horripilante. El afectado deberá tener éxito en un tiro de Salud frente a tu Magia de Transmutación o sufrirá 1d8 + INT daño Fuerza, *náuseas* durante una ronda y una mejora equivalente a Inyección Mutagénica. Esta habilidad solo podrá afectar a seres orgánicos y si matas al afectado lo transformarás en una Quimera bajo tu control de la misma manera que Crear Quimera.
 
 ### Esencia de la Magia
 
-*Transmutación, Mejora, Duradero*
+*Transmutación, Arcana, Mejora, Duradera*
 
 **Coste:** 2 acciones y 2 chi
 
@@ -176,9 +182,17 @@ Provocas rápidas mutaciones espontáneas en tu objetivo, deformándolo horrible
 
 **Duración:** Una hora
 
-Inyectándote sueros destilados de criaturas especiales eres capaz de replicar algunas de las capacidades que las hacen únicas, haciendo tuya una fracción de su poder. De esta manera dependiendo la criatura recibirás hasta tres hechizos de rango II relacionados con la criatura en cuestión. Algunos ejemplos de los ámbitos de los que podrían ser estas criaturas son Abisal, Infernal, Celestial, Elemental o Espíritu.
+Inyectas la esencia de una criatura extraplanaria en un objetivo para darle una poción de sus poders mágicos. Un objetivo adyacente aprenderá de inmediato cuatro hechizos de Rango II o menos relacionados con una criatura extraplanaria de tu elección. La criatura podrá lanzar esos hechizos durante una hora y empleará tu modificador de Magia de Transmutación para todos los tiros. Los hechizos exactos deben ser permitidos por el DJ y se presentan algunos ejemplos a continuación.
 
-### Cadenas de la carne
+- **Abisal:** Pozo de Gravedad, Asalto Psíquico, Bola Sombra, Desplazamiento
+
+- **Celestial:** Toque Sanador, Arma Luminosa, Aliento de Fuego, Barrera Luminosa
+
+- **Espíritu:** Salto Espacial, Drenar Magia, Espina de Madera, Invisibilidad
+
+- **Infernal:** Sugestión, Disfraz Ilusorio, Bola de Fuego, Muro de Llamas
+
+### Cadenas de la Carne
 
 *Transmutación, Ataque, Área, Duradero*
 
@@ -186,9 +200,11 @@ Inyectándote sueros destilados de criaturas especiales eres capaz de replicar a
 
 **Alcance:** Medio
 
-**Duración:** Una hora
+**Tamaño:** Radio corto
 
-Llenas una esfera de tamaño medio con bizarras extremidades de carne deformes que solo buscarán alimentarse desenfrenadamente hasta decaer. Aquellos que se encuentren en el área deberán defenderse o sufrirán 1d8+Inteligencia daño fuerza, una herida permanente leve y quedarán agarrados. Mientras el efecto continúe activo todos los que comiencen su turno en el área o entren en ella sufrirán el mismo efecto. Este efecto sin embargo solamente afectará a criaturas corpóreas y solo podrá emerger desde un cadáver orgánico o una quimera aliada. 
+**Duración:** Concentración
+
+Extiendes una masa de horripilantes tentáculos de carne a partir del cuerpo de otra criatura a distancia media de ti para absorber la esencia vital de todo aquel que agarren. Haz un ataque de Magia de Transmutación contra todas las criaturas a distancia corta del lugar dónde emerjan los tentáculos que inflige 1d8 + INT daño Necrótico, una *herida leve* y *enreda* al impactar. Los tentáculos solo podrán emerger de tu cuerpo o el de una quimera aliada. 
 
 ## Rango V
 
@@ -202,15 +218,15 @@ Llenas una esfera de tamaño medio con bizarras extremidades de carne deformes q
 
 **Duración:** Instantáneo
 
-Un objetivo al que puedas tocar deberá defenderse empleando su Constitución o recibirá una marca de transmutación. Esta marca podrá activarse desde el momento en el que se coloque hasta como máximo una ronda mas tarde, y al hacerlo provocará 3d10+Inteligencia daño fuerza y una herida permanente grave a su objetivo. En el caso de que este ataque reduzca a 0 PV a su objetivo este morirá instantáneamente. 
+Un objetivo al que puedas tocar deberá defenderse haciendo un tiro de Salud o recibirá una marca de Transmutación. Esta marca podrá activarse desde el momento en el que se coloque hasta como máximo una ronda mas tarde, y al hacerlo provocará 3d10 + INT daño Fuerza y una *herida permanente* grave a su objetivo. En el caso de que este ataque reduzca a 0 PV a su objetivo morirá instantáneamente. 
 
-### Clon perfecto
+### Clon Perfecto
 
 *Transmutación, Pasiva*
 
 Con duro trabajo y los compuestos adecuados puedes estabilizar a una de tus quimeras, perfeccionándola y dándole una identidad única para que te sirva mas eficientemente. De esta manera el nivel de la quimera pasará a ser igual al tuyo menos dos, aunque todavía quedarás limitado al máximo de 4 clones bajo tu control.  
 
-### Transcender la carne
+### Transcender la Carne
 
 *Transmutación, Pasiva*
 
