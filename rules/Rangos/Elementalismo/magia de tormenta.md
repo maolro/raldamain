@@ -65,7 +65,7 @@ Emites una fuerte onda sónica que romperá todos los objetos frágiles a una di
 
 ## Rango II
 
-### Barrera de rayos
+### Barrera de Rayos
 
 *Tormenta, Defensivo, Duradero, Eléctrico*
 
@@ -91,7 +91,7 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 *Tormenta, Ataque, Eléctrico*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Tamaño:** Línea grande
 
@@ -105,11 +105,11 @@ Este ataque puede potenciarse aún más si cargas el relámpago con más energí
 
 **Empoderar** (1 chi): Al emplear este hechizo lanzas un relámpago adicional en una dirección diferente para atacar a otros objetivos. Estará tan cargado como tu relámpago original.
 
-### Bomba sónica
+### Bomba Sónica
 
 *Tormenta, Ataque, Área, Sónico*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acciy 1 chi
 
 **Alcance:** Mediano
 

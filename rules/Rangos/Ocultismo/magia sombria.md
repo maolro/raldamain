@@ -68,7 +68,7 @@ Todas las criaturas en la nube de oscuridad serán incapaces de ver su entorno, 
 
 *Sombría, Ataque, Área, Frío*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 o más acciones y 1 chi
 
 **Alcance:** Medio
 
@@ -104,7 +104,7 @@ Las sombras creadas por el capullo recibirán todo el daño que sufras además q
 
 *Sombría, Agarre, Duradera*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Medio
 

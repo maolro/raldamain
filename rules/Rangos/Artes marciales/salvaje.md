@@ -35,7 +35,7 @@ Si eres un humano podrás infligir 1d4 daño base Cortante, Perforante o Contund
 
 Tu estilo de combate se asemeja a los movimientos de un animal salvaje, sobrepasando barreras que un humano normal sería incapaz de atravesar. Recibes inmunidad a *terreno difícil* en el suelo además de velocidad 1 de Escalada, Natación y Salto. Obtendrás también Ventaja en todos tus tiros de talento con Atletismo. 
 
-### Golpe sucio
+### Asalto Animal
 
 *Salvaje, Marcial, Cuerpo a cuerpo, Físico, Maniobra*
 
@@ -43,11 +43,16 @@ Tu estilo de combate se asemeja a los movimientos de un animal salvaje, sobrepas
 
 **Efecto crítico:** Provocas también una *herida permanente leve* a tu objetivo.
 
-Atacas a tu enemigo en su punto más débil sin importarte el honor o el juego limpio. Al impactar a un objetivo adyacente este deberá tener éxito en un tiro de CON frente a tu modificador de Estilo Salvaje o quedará *enfermado*, *cegado* o *ralentizado* una ronda.
+Empleas tus garras, colmillos o fuerza física para atacar a un enemigo de una manera semejante a un animal salvaje. Al impactar a un enemigo con un ataque natural puedes emplear esta habilidad para provocarle un efecto adicional según la forma en que le ataques. Algunos ejemplos se presentan a continuación. 
+
+- **Garras:** Hundes tus garras en el objetivo para provocarle heridas de mayor gravedad. Al impactar incrementas el daño base por 1d6 y provocas el efecto *sangrado*. 
+- **Mordisco:** Muerdes salvajemente a tu objetivo para incrementar tu daño y mantenerlo agarrado. Al impactar incrementas el daño base por 1d6 e infliges una *herida permanente leve*. Puedes retener a tu objetivo con la mandíbula, lo cual hará que ambos quedéis *enredados*. Escapar de este efecto requerirá un tiro exitoso de Heroísmo o Juego de Manos además que solo funcionará contra enemigos de tamaño igual o inferior.
+- **Golpe:** Golpeas a tu objetivo con gran fuerza para lanzarlo por los aires. Tu ataque infligirá 1d6 daño adicional y al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu modificador de Estilo Salvaje o será empujado un paso y caerá *tropezado*.
+- **Tentáculo:** Empleas un tentáculo para retener el cuerpo de tu objetivo. Al impactar el afectado deberá tener éxito en un tiro de Heroísmo o Juego de Manos contra tu modificador de Estilo Salvaje o quedará *enredado*. El afectado podrá repetir el tiro cada ronda para intentar liberarse. 
 
 ## Rango II
 
-### Mordisco salvaje
+### Mordisco Salvaje
 
 *Salvaje, Marcial, Cuerpo a cuerpo, Físico*
 

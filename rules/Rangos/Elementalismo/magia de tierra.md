@@ -83,11 +83,11 @@ Esta habilidad se puede utilizar de manera defensiva para protegerte a ti mismo 
 
 **Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos.
 
-### Tierra viva
+### Tierra Viva
 
 *Tierra, Ataque, Área, Físico*
 
-**Costo:** 2 acciones y 1 chi
+**Costo:** 1 acción y 1 chi
 
 **Alcance:** Medio
 
