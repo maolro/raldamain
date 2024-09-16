@@ -18,7 +18,7 @@ La criatura posee la extraña capacidad de canalizar el poder de las almas o som
 ## Ligador de Almas II (+2)
 
 - **Aumentos Estadísticos:** Incrementa su CON e INT por 1 junto a sus limitadores
-- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Almas por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Almas por 1.
 - **Habilidades Pasivas:** Recibe Alma Resiliente como habilidad pasiva.
 - **Hechizos:** Aprende el hechizo Armonizar, el cual puede emplear gratuitamente una vez por ronda.
 - **Canalización Superior:** Aprende dos hechizos de Rango II y recibe Ventaja en todos los tiros relacionados con una estadística diferente. Esto funciona de la misma manera que Canalizar Ánima.
