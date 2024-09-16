@@ -10,10 +10,9 @@ No obstante, las armaduras más pesadas dificultan los movimientos diestros y la
 
 Una armadura puede ser antigua o moderna, lo cual determinará su resistencia contra armas de fuego. Una armadura antigua no proporciona ninguna protección contra armas de fuego mientras que una moderna podrá detener sus impactos. No obstante, las armaduras modernas pueden no estar disponibles en determinadas campañas a elección del DJ si no son adecuadas para la época. Los tipos más comunes de armadura se encuentran en la siguiente tabla:
 
-| Nombre   | Ejemplo (antigua)                     | Ejemplo (moderna)   | Bonificador de defensa | Penalizador |
-| -------- | ------------------------------------- | ------------------- | ---------------------- | ----------- |
-| Ligera   | Cuero, acolchada, pieles              | Chaleco antibalas   | 2                      | 0           |
-| Media    | Cuero tachonado, camisón de malla     | Fibra de carbono    | 4                      | -2          |
-| Pesada   | Coraza, placas y malla, cota de malla | Armadura de asalto  | 6                      | -4          |
-| Completa | Placas, laminada                      | Armadura mecanizada | 8                      | -8          |
-
+| Nombre   | Ejemplo (antigua)                     | Ejemplo (moderna)   | Bonificador de defensa | Penalizador | Precio |
+| -------- | ------------------------------------- | ------------------- | ---------------------- | ----------- | ------ |
+| Ligera   | Cuero, acolchada, pieles              | Chaleco antibalas   | 2                      | 0           | 0      |
+| Media    | Cuero tachonado, camisón de malla     | Fibra de carbono    | 4                      | -2          | 0      |
+| Pesada   | Coraza, placas y malla, cota de malla | Armadura de asalto  | 6                      | -4          | 1      |
+| Completa | Placas, laminada                      | Armadura mecanizada | 8                      | -8          | 2      |
