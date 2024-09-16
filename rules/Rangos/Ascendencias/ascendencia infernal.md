@@ -31,7 +31,7 @@ Haces un pacto con las fuerzas del infierno para abrir tu mente a nuevos secreto
 
 Aumenta tu estadística de CAR y su limitador por 1.
 
-### Arma profana
+### Arma Profana
 
 *Innata, Mejora, Maldición*
 

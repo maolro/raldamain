@@ -6,7 +6,7 @@ Esta es una lista de mejoras mágicas y tecnológicas que se pueden añadir a un
 
 # Lista de mejoras
 
-| **Nombre**          | **Rareza** |      |      |      |
+| **Nombre**          | **Precio** |      |      |      |
 | ------------------- | ---------- | ---- | ---- | ---- |
 | Botas propulsoras   | +1         |      |      |      |
 | Cargador automático |            |      |      |      |
@@ -80,22 +80,4 @@ Tu armadura está infundida con magia temporal que la restaura continuamente a u
 
 ### Antimágica
 
-El campo de fuerza generado por tu armadura te vuelve inmune a la magia, protegiéndote de una multitud de hechizos. Esta mejora formara un Campo Antimágico que te vuelve inmune a todos los hechizos de Magia Arcana y las mejoras mágicas de armas. No obstante, el campo no anulará las demás mejoras mágicas que posea tu armadura y este puede ser deshabilitado si se elimina el campo de fuerza de esta. 
-
-<u>Armadura mecanizada</u> (Crédito 6): Tu armadura se convierte en un poderoso meca de tamaño superior a tu cuerpo. Una armadura mecanizada incrementa la DEF de tu armadura por 2 y te protege del daño de proyectiles como si fuese de un material superior. Además, aumentarás tus PV base por 4 y tu estadística de FUE pasará a ser 8, sustituyendo a la estadística anterior que tuvieses. No obstante, tu estadística de DES quedará reducida a 1 y perderás los efectos de todos tus atributos de la rama de Reflejos mientras estés en la armadura mecanizada. Esta armadura cuenta como un constructo para los propósitos de Sabotaje y Magia protectora. 
-
-<u>Circuito de prisa</u> (Crédito 3): 
-
-<u>Gélida</u> (Crédito 2): 
-
-<u>Ignífuga</u> (Crédito 2): 
-
-<u>Ilusoria</u> (Crédito 2): 
-
-<u>Imagen múltiple</u> (Crédito 2): El proyector ilusorio de la armadura es capaz de crear múltiples imágenes tuyas para frustrar a los atacantes. La armadura podrá crear un máximo de 3 imágenes por combate y mientras estas estén activas obtendrás los beneficios de flanqueo mientras que los atacantes no podrán hacerle ataques precisos ni detectar su posición exacta. Además, como reacción puedes sacrificar una de las imágenes para detener un ataque, anulando así todos los resultados de la tirada. Imagen múltiple no funciona contra personajes con vista a ciegas o visión verdadera y esta mejora sólo podrá tomarse si posees y a la mejora Ilusoria.
-
-<u>Invisible</u> (Crédito 2): A través de glifos ilusorios tu armadura es capaz de volverse invisible durante un periodo limitado de tiempo. Activar la invisibilidad te cuesta una acción bonus y este efecto durará como máximo 10 rondas seguidas al día. No obstante, si te encuentras en una situación de combate o movimiento contínuo la invisibilidad de tu armadura se debilitará progresivamente, causando que cada ataque o hechizo que realices reduzca el máximo de rondas por 1. Si entras en contacto con arena u otro material polvoriento podrás ser detectado con facilidad, causando que solo recibas ocultamiento por tu armadura. Para obtener esta mejora debes poseer ya la mejora Ilusoria.
-
-<u>Material superior</u> (Crédito 2): Tu armadura está hecha de un material de calidad superior, aumentando su resistencia contra ataques. Una armadura así no ver su defensa reducida por ataques hechos con armas de menor dureza y aumenta tu defensa por 2. Los efectos de material superior se perderán si la armadura reduce su defensa por 3 o más.
-
-<u>Reflectora de magia</u> (Crédito 2): El campo de fuerza generado por tu armadura es capaz de rebotar hechizos incapaces de superar tu resistencia mágica. Si eres impactado por un hechizo y es incapaz de destruir tu campo de fuerza este será rebotado hacia todos los objetivos cercanos a ti, causando que estos deban defenderse contra el tiro de ataque del lanzador del hechizo o sufrirán los efectos de este. Además, esta mejora evita que sufras daño obligatorio hecho por ataques mágicos de área siempre y cuando el campo de fuerza siga activo.
+El campo de fuerza generado por tu armadura te vuelve inmune a la magia, protegiéndote de una multitud de hechizos. Esta mejora formara un Campo Antimágico que te vuelve inmune a todos los hechizos de Magia Arcana y las mejoras mágicas de armas. No obstante, el campo no anulará las demás mejoras mágicas que posea tu armadura y este puede ser deshabilitado si se elimina el campo de fuerza de esta.

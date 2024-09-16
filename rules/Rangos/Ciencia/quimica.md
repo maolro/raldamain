@@ -16,7 +16,7 @@ A lo largo de tus años de estudio has aprendido la influencia que tanto compone
 
 Recibes cuatro ranuras de objeto de Rango I
 
-### Poción de sanación
+### Poción de Sanación
 
 *Objeto, Químico, Consumible, Sanación*
 
