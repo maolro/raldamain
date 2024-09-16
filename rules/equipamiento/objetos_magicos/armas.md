@@ -4,22 +4,6 @@ title: Armas Mágicas
 
 # Armas Mágicas
 
-| Nombre                   | Precio   |
-| ------------------------ | -------- |
-| Arma Antimágica          | Base + 3 |
-| Arma Celestial           | Base + 3 |
-| Arma Danzante            | Base + 2 |
-| Arma de Adamantita       | Base + 2 |
-| Arma de Leng             | Base + 2 |
-| Arma Devoradora de Almas | Base + 3 |
-| Arma Estigia             | Base + 3 |
-| Arma Gélida              | Base + 1 |
-| Arma Ígnea               | Base + 1 |
-| Arma Ósea                | Base + 1 |
-| Espada de Luz            | 4        |
-| Vara de Fuego            | 5        |
-| Vara del Archimago       | 5        |
-
 ## Arma Antimágica (cualquier arma, precio base + 3)
 
 **Ranura:** Manos

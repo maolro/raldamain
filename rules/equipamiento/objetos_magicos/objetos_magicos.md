@@ -4,23 +4,6 @@ title: Objetos de Chi
 
 # Objetos Mágicos
 
-| Nombre                    | Ranura            | Precio |
-| ------------------------- | ----------------- | ------ |
-| Anillo de Invocación      | Brazos            | 4      |
-| Batería de Chi            | Bolsa             | 2      |
-| Bolsa Infinita            | Cintura o Espalda | 1      |
-| Capa Protectora           | Espalda           | 2      |
-| Capa de Invisibilidad     | Espalda           | 2      |
-| Gafas de Visión Mejorada  | Ojos              | 1      |
-| Guanteletes de Protección | Guantes           | 2      |
-| Libro Sagrado             | Manos             | 4      |
-| Ojo Observador            | Bolsa             | 2      |
-| Propulsor                 | Espalda           | 2      |
-| Respirador                | Cabeza            | 1      |
-| Sello Antinatural         | Cuello            | 3      |
-| Talismán de la Vida       | Cuello            | 3      |
-| Tomo Maldito              | Manos             | 4      |
-
 ## Anillo de Invocación (precio 4)
 
 **Ranura:** Brazos
@@ -48,6 +31,8 @@ title: Objetos de Chi
 **Propiedades:**
 
 - Tiene un espacio extraplanario en su interior que permite guardar una cantidad ilimitada de objetos en ella. Debido al tamaño de su ranura solo podrán caber objetos pequeños en ella. Sacar objetos de una bolsa infinita costará siempre una acción.
+
+## Bomba de Disrupción (precio 2, 3 u)
 
 ## Capa de Invisibilidad (precio 2)
 
@@ -92,6 +77,8 @@ title: Objetos de Chi
 
 - El portador aprende tres hechizos de Rango II o menos relacionados con una entidad Celestial vinculada al libro. Estos contarán como si tuvieran Rango III para determinar sus modificadores y fuerza.
 - Una vez por ronda el portador puede lanzar un hechizo relacionado con una entidad Celestial vinculada al libro como acción bonus. Deberá seguir pagando su coste en chi.
+
+## Propulsor (precio 2)
 
 ## Respirador (precio 1)
 
