@@ -2,20 +2,20 @@
 title: Rareza
 ---
 
-Cada objeto viene además con un valor conocido como **rareza** que oscila del 0 al 6, siendo 0 el valor de aquellos objetos muy comunes y fáciles de fabricar y el 6 indicando artefactos u objetos mágicos muy poderosos. Este valor es meramente informativo para el máster a la hora de permitir qué objetos puedan encontrar los jugadores para evitar desbalances en el juego. Este valor también se usa a la hora de crear enemigos para determinar qué combinación de objetos podrían tener. La rareza viene especificada en la información sobre el objeto.
+Cada objeto viene además con un **precio** que oscila del 0 al 6, siendo 0 el valor de aquellos objetos muy comunes y fáciles de fabricar y el 6 indicando artefactos u objetos mágicos muy poderosos. Este valor es meramente informativo para el máster a la hora de permitir qué objetos puedan encontrar los jugadores para evitar desbalances en el juego. Este valor también se usa a la hora de crear enemigos para determinar qué combinación de objetos podrían tener. La rareza viene especificada en la información sobre el objeto.
 
 # Asignación de objetos
 
-Como fórmula básica un personaje no debería tener objetos cuya rareza supere su nivel / 3 - 2 salvo que circunstancias especiales lo permitan. En esta tabla se presenta número de objetos recomendados que debería tener un personaje de cada intervalo de niveles.
+Cada jugador contará con un presupuesto básico que indicará la cantidad de objetos que puede permitirese a su nivel de riqueza actual. El presupuesto combinado de todos los objetos que posee no debería superar el presupuesto máximo que tenga. Como fórmula básica un personaje no debería tener objetos con precio superior al rango máximo que puede obtener + 1. El presupuesto recomendado para cada franja de niveles se indica en la siguiente tabla:
 
-| Franja de niveles | Rareza 1 | Rareza 2 | Rareza 3 | Rareza 4 | Rareza 5 | Rareza 6 |
-| ----------------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| 1-3               | 0-3      | 0        | 0        | 0        | 0        | 0        |
-| 4-6               | 3-4      | 0-3      | 0        | 0        | 0        | 0        |
-| 7-9               | 0-2      | 3-4      | 0-3      | 0        | 0        | 0        |
-| 10-12             | 0        | 0-2      | 3-4      | 0-3      | 0        | 0        |
-| 13-15             | 0        | 0        | 0-2      | 3-4      | 0-3      | 0        |
-| 16+               | 0        | 0        | 0        | 0-2      | 3-4      | 0-3      |
+| Franja de niveles | Presupuesto Recomendado |
+| ----------------- | ----------------------- |
+| 1 a 3             | 0 a 4                   |
+| 4 a 6             | 2 a 4                   |
+| 7 a 9             | 4 a 8                   |
+| 10 a 12           | 6 a 10                  |
+| 13 a 15           | 8 a 12                  |
+| 16 a 20           | 10 a 14                 |
 
 # Tablas de tesoros
 
@@ -25,21 +25,6 @@ Para mostrar un indicio de los objetos que pueden encontrarse a cada nivel y ofr
 
 ## Niveles 1 a 3
 
-| Resultado | Objeto                                                       |
-| --------- | ------------------------------------------------------------ |
-| 1         | 3 productos químicos de precio 1                             |
-| 2         | armadura de material superior                                |
-| 3         | arma de material superior                                    |
-| 4         | 2 productos químicos de precio 2                             |
-| 5         | Piedras de enviar                                            |
-| 6         | Bolsa extradimensional                                       |
-| 7         | Equipamiento estándar de rareza 1                            |
-| 8         |                                                              |
-| 9         |                                                              |
-| 10        | Suficiente dinero para aumentar el nivel de riqueza por 1 si era 4 o inferior. |
-
-
-
 ## Niveles 4 a 6
 
 ## Niveles 7 a 9
@@ -48,4 +33,4 @@ Para mostrar un indicio de los objetos que pueden encontrarse a cada nivel y ofr
 
 ## Niveles 13 a 15
 
-## Niveles 16 o más
+## Niveles 16 a 20
