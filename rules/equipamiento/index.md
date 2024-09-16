@@ -8,11 +8,22 @@ Todo héroe digno de su nombre debe contar con el adecuado equipamiento, el cual
 
 A la hora de crear un personaje el jugador deberá escoger con qué objetos empezará su aventura, añadiéndolos a su hoja de personaje. Los objetos escogidos dependerán tanto del nivel del personaje como la riqueza que tenga además del consentimiento del máster según el tipo de campaña que se esté jugando. Aparte de los objetos iniciales las tres maneras principales de obtener objetos son encontrándolos durante una aventura, fabricarlos con aquellos rangos que lo permitan o comprarlos donde estén en venta. 
 
-# Riqueza
+# Precios
 
-Como puede observarse en la mayoría de estos casos debe emplearse una manera de indicar el dinero que posea un personaje, lo cual se conoce como el valor de **riqueza**. La riqueza se trata de una representación abstracta del dinero que tenga un personaje y determinará cuáles objetos es capaz de comprar y cuáles no. Este valor va indicado del 0 al 10 donde 0 indica la pobreza más absoluta mientras 10 representa la riqueza de la realeza. Cada objeto viene marcado con un valor de **precio** que oscila entre los mismos valores, que representa el precio de mercado que típicamente tiene un objeto de ese tipo. 
+Cada objeto viene con un **precio** que oscila del 0 al 6, siendo 0 el valor de aquellos objetos muy comunes y fáciles de fabricar y el 6 indicando artefactos u objetos mágicos muy poderosos. Este valor es meramente informativo para el máster a la hora de permitir qué objetos puedan encontrar los jugadores para evitar desbalances en el juego. Este valor también se usa a la hora de crear enemigos para determinar qué combinación de objetos podrían tener. La rareza viene especificada en la información sobre el objeto.
 
-Durante una etapa de descanso un personaje podrá comprar una cantidad total de objetos cuya suma sea igual a su nivel de riqueza siempre y cuando estos queden disponibles en el mercado. 
+# Asignación de objetos
+
+Cada jugador contará con un presupuesto básico que indicará la cantidad de objetos que puede permitirese a su nivel de riqueza actual. El presupuesto combinado de todos los objetos que posee no debería superar el presupuesto máximo que tenga. Como fórmula básica un personaje no debería tener objetos con precio superior al rango máximo que puede obtener + 1. El presupuesto recomendado para cada franja de niveles se indica en la siguiente tabla:
+
+| Franja de niveles | Presupuesto Recomendado |
+| ----------------- | ----------------------- |
+| 1 a 3             | 0 a 4                   |
+| 4 a 6             | 2 a 4                   |
+| 7 a 9             | 4 a 8                   |
+| 10 a 12           | 6 a 10                  |
+| 13 a 15           | 8 a 12                  |
+| 16 a 20           | 10 a 14                 |
 
 # Llevar y usar objetos
 
