@@ -17,6 +17,14 @@ La criatura es capaz de absorber y repeler la magia arcana.
 
 ## Antimágico II (+2, requiere 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su INT y CON por 1 junto a sus limitadores. Aumenta también su DEF base por 2.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Protectora por 1. 
+- **Hechizos:** Aprende los hechizos Retener Persona y Ancla Dimensional. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Ataque Disruptor:** 
+- **Sello Extraplanario:** 
+- **Absorber Chi:** 
+- **Glifo Mágico:** La criatura tiene un glifo activo adicional que tiene sellado un hechizo que conozca de Rango III o menos. En cualquier momento del combate puede activar dicho glifo para lanzar el hechizo como acción bonus.
+
 ## Antimágico III (+2, requiere 5 mejoras)
 
 ## Antimágico IV (+2, requiere 7 mejoras)
