@@ -22,7 +22,7 @@ La criatura posee la extraña capacidad de canalizar el poder de las almas o som
 - **Habilidades Pasivas:** Recibe Alma Resiliente como habilidad pasiva.
 - **Hechizos:** Aprende el hechizo Armonizar, el cual puede emplear gratuitamente una vez por ronda.
 - **Canalización Superior:** Aprende dos hechizos de Rango II y recibe Ventaja en todos los tiros relacionados con una estadística diferente. Esto funciona de la misma manera que Canalizar Ánima.
-- **Forma Espectral:** Puede transformarse en un espectro incorpóreo empleando una acción, recibiendo todas las ventajas e inconvenientes de dicho estado. Si se encuentra en *posición defensiva* puede entrar en estado incorpóreo una vez por ronda como reacción pa
+- **Forma Espectral:** Puede transformarse en un espectro incorpóreo empleando una acción, recibiendo todas las ventajas e inconvenientes de dicho estado. Si se encuentra en *posición defensiva* puede entrar en estado incorpóreo una vez por ronda como reacción para evitar un ataque enemigo.
 
 ## Ligador de Almas III (+2)
 
