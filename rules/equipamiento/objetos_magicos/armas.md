@@ -1,5 +1,5 @@
 ---
-title: Armas Má
+title: Armas Mágicas
 ---
 
 # Armas Mágicas
@@ -17,8 +17,8 @@ title: Armas Má
 | Arma Ígnea               | Base + 1 |
 | Arma Ósea                | Base + 1 |
 | Espada de Luz            | 4        |
-| Vara de Fuego            | 4        |
-| Vara del Archimago       | 6        |
+| Vara de Fuego            | 5        |
+| Vara del Archimago       | 5        |
 
 ## Arma Antimágica (cualquier arma, precio base + 3)
 

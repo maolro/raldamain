@@ -8,57 +8,57 @@ Las armas son el medio más básico que tiene una persona para acabar con sus en
 
 ## Armas básicas
 
-| **Nombre**          | **Categoría** | Daño base                 | **Manos** | **Rasgos especiales** |
-| ------------------- | ------------- | ------------------------- | --------- | --------------------- |
-| Garrote             | Pesada        | 1d6 Contundente           | Una       | Sutileza              |
-| Daga                | Ligera        | 1d4 Perforante            | Una       | Sutileza, Lanzamiento |
-| Espada corta        | Ligera        | 1d6 Cortante o Perforante | Una       | Sutileza              |
-| Espada larga        | Duelo         | 1d8 Cortante o Perforante | Una o dos | Versátil              |
-| Mandoble            | Pesada        | 2d6 Cortante              | Dos       |                       |
-| Hacha de batalla    | Pesada        | 1d10 Cortante             | Una o dos | Versátil, Voluminosa  |
-| Hacha doble         | Pesada        | 2d8 Cortante              | Dos       | Voluminosa            |
-| Martillo de guerra  | Pesada        | 1d10 Contundente          | Una o dos | Versátil, Voluminosa  |
-| Gran maza           | Pesada        | 2d8 Contundente           | Dos       | Voluminosa            |
-| Lanza               | Alabarda      | 1d8 Perforante            | Una o dos | Versátil, Lanzamiento |
-| Hacha de mano       | Pesada        | 1d6 Cortante              | Una       | Versátil, Lanzamiento |
-| Guja                | Alabarda      | 1d10 Cortante             | Dos       |                       |
-| Bastón              | Alabarda      | 1d6 Contundente           | Una o dos | Versátil              |
-| Arco                | A distancia   | 1d10 Perforante           | Dos       | Tensado (2)           |
-| Ballesta            | A distancia   | 2d6 Perforante            | Dos       | Recarga (1)           |
-| Ballesta de mano    | A distancia   | 1d10 Perforante           | Una       | Recarga (1)           |
-| Ballesta repetidora | A distancia   | 1d10 Perforante           | Dos       | Recarga (4)           |
-| Honda               | A distancia   | 1d6 Contundente           | Una       |                       |
-| Látigo              | Cadena        | 1d6 Contundente           | Una       |                       |
-| Cadena aserrada     | Cadena        | 1d8 Cortante              | Dos       |                       |
-| Gancho encadenado   | Cadena        | 1d8 Perforante            | Dos       |                       |
-| Martillo encadenado | Cadena        | 1d8 Contundente           | Dos       |                       |
-| Espada ropera       | Duelo         | 1d8 Perforante            | Una       | Sutil                 |
+| **Nombre**          | **Categoría** | Daño base                 | **Manos** | **Rasgos especiales** | Precio |
+| ------------------- | ------------- | ------------------------- | --------- | --------------------- | ------ |
+| Garrote             | Pesada        | 1d6 Contundente           | Una       | Sutileza              | 0      |
+| Daga                | Ligera        | 1d4 Perforante            | Una       | Sutileza, Lanzamiento | 0      |
+| Espada corta        | Ligera        | 1d6 Cortante o Perforante | Una       | Sutileza              | 0      |
+| Espada larga        | Duelo         | 1d8 Cortante o Perforante | Una o dos | Versátil              | 1      |
+| Mandoble            | Pesada        | 2d6 Cortante              | Dos       |                       | 1      |
+| Hacha de batalla    | Pesada        | 1d10 Cortante             | Una o dos | Versátil, Voluminosa  | 0      |
+| Hacha doble         | Pesada        | 2d8 Cortante              | Dos       | Voluminosa            | 1      |
+| Martillo de guerra  | Pesada        | 1d10 Contundente          | Una o dos | Versátil, Voluminosa  | 1      |
+| Gran maza           | Pesada        | 2d8 Contundente           | Dos       | Voluminosa            | 1      |
+| Lanza               | Alabarda      | 1d8 Perforante            | Una o dos | Versátil, Lanzamiento | 0      |
+| Hacha de mano       | Pesada        | 1d6 Cortante              | Una       | Versátil, Lanzamiento | 0      |
+| Guja                | Alabarda      | 1d10 Cortante             | Dos       |                       | 1      |
+| Bastón              | Alabarda      | 1d6 Contundente           | Una o dos | Versátil              | 0      |
+| Arco                | A distancia   | 1d10 Perforante           | Dos       | Tensado (2)           | 0      |
+| Ballesta            | A distancia   | 2d6 Perforante            | Dos       | Recarga (1)           | 1      |
+| Ballesta de mano    | A distancia   | 1d10 Perforante           | Una       | Recarga (1)           | 1      |
+| Ballesta repetidora | A distancia   | 1d10 Perforante           | Dos       | Recarga (4)           | 1      |
+| Honda               | A distancia   | 1d6 Contundente           | Una       |                       | 0      |
+| Látigo              | Cadena        | 1d6 Contundente           | Una       |                       | 0      |
+| Cadena aserrada     | Cadena        | 1d8 Cortante              | Dos       |                       | 1      |
+| Gancho encadenado   | Cadena        | 1d8 Perforante            | Dos       |                       | 1      |
+| Martillo encadenado | Cadena        | 1d8 Contundente           | Dos       |                       | 1      |
+| Espada ropera       | Duelo         | 1d8 Perforante            | Una       | Sutil                 | 1      |
 
 
 
 ## Armas de pólvora antiguas
 
-| **Nombre**    | **Categoría** | **Daño base**     | Manos | Alcance | **Rasgos especiales**              |
-| ------------- | ------------- | ----------------- | ----- | ------- | ---------------------------------- |
-| Pistola       | A distancia   | 2d6 Perforante    | Una   | Medio   | Recarga (1),  Inestable            |
-| Mosquete      | A distancia   | 2d8 Perforante    | Dos   | Lejano  | Recarga (1),  Inestable            |
-| Cañón de mano | A distancia   | 2d10  Contundente | Dos   | Lejano  | Recarga (1),  Inestable, Explosiva |
-|               |               |                   |       |         |                                    |
-|               |               |                   |       |         |                                    |
+| **Nombre**    | **Categoría** | **Daño base**     | Manos | Alcance | **Rasgos especiales**              | Precio |
+| ------------- | ------------- | ----------------- | ----- | ------- | ---------------------------------- | ------ |
+| Pistola       | A distancia   | 2d6 Perforante    | Una   | Medio   | Recarga (1),  Inestable            | 2      |
+| Mosquete      | A distancia   | 2d8 Perforante    | Dos   | Lejano  | Recarga (1),  Inestable            | 2      |
+| Cañón de mano | A distancia   | 2d10  Contundente | Dos   | Lejano  | Recarga (1),  Inestable, Explosiva | 2      |
+|               |               |                   |       |         |                                    |        |
+|               |               |                   |       |         |                                    |        |
 
 ## Armas modernas
 
-| **Nombre**   | **Categoría** | **Daño base**   | Manos | Alcance         | **Rasgos especiales**                               |
-| ------------ | ------------- | --------------- | ----- | --------------- | --------------------------------------------------- |
-| Revolver     | A distancia   | 2d6 Perforante  | Una   | Medio           | Recarga (6)                                         |
-| Rifle        | A distancia   | 2d8 Perforante  | Dos   | Lejano          | Recarga (5)                                         |
-| Escopeta     | A distancia   | 2d8 Perforante  | Dos   | Corto           | Explosiva                                           |
-| Metralleta   | A distancia   | 2d6 Perforante  | Dos   | Lejano          | Automática                                          |
-| Lanzallamas  | A distancia   | 1d8 Fuego       | Dos   | Corto           | Explosiva, Recarga (4), Infusión mágica (Llamarada) |
-| Motosierra   | Pesada        | 2d10 Cortante   | Dos   | Cuerpo a cuerpo | Batería                                             |
-| Táser        | Ligera        | 1d6 Eléctrico   | Una   | Cuerpo a cuerpo | Batería, Infusión mágica (Toque chispeante)         |
-| Lanzacohetes | A distancia   | 3d8 Contundente | Dos   | Lejano          | Explosiva                                           |
-|              |               |                 |       |                 |                                                     |
+| **Nombre**   | **Categoría** | **Daño base**   | Manos | Alcance         | **Rasgos especiales**                               | Precio |
+| ------------ | ------------- | --------------- | ----- | --------------- | --------------------------------------------------- | ------ |
+| Revolver     | A distancia   | 2d6 Perforante  | Una   | Medio           | Recarga (6)                                         | 2      |
+| Rifle        | A distancia   | 2d8 Perforante  | Dos   | Lejano          | Recarga (5)                                         | 2      |
+| Escopeta     | A distancia   | 2d8 Perforante  | Dos   | Corto           | Explosiva                                           | 2      |
+| Metralleta   | A distancia   | 2d6 Perforante  | Dos   | Lejano          | Automática                                          | 3      |
+| Lanzallamas  | A distancia   | 1d8 Fuego       | Dos   | Corto           | Explosiva, Recarga (4), Infusión mágica (Llamarada) | 2      |
+| Motosierra   | Pesada        | 2d10 Cortante   | Dos   | Cuerpo a cuerpo | Batería                                             | 2      |
+| Táser        | Ligera        | 1d6 Eléctrico   | Una   | Cuerpo a cuerpo | Batería, Infusión mágica (Toque chispeante)         | 1      |
+| Lanzacohetes | A distancia   | 3d8 Contundente | Dos   | Lejano          | Explosiva                                           | 3      |
+|              |               |                 |       |                 |                                                     |        |
 
 
 

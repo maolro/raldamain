@@ -10,7 +10,7 @@ title: Armaduras Mágicas
 | Armadura Antimágica    | base + 2 | base + 4 |
 | Armadura Celestial     | base + 2 | base + 4 |
 | Armadura de Adamantita | base + 2 | base + 6 |
-| Armadura de Prisa      | 3        | 4        |
+| Armadura de Prisa      | base + 2 | base +2  |
 | Armadura Demoníaca     | base + 2 | base + 4 |
 | Armadura Dracónica     | base + 2 | base + 4 |
 | Armadura Gélida        | base + 1 | base + 2 |
@@ -65,7 +65,7 @@ title: Armaduras Mágicas
 - La armadura es casi indestructible, haciendo así que solo pueda ser dañada o destruida por artefactos o magia de gran poder.
 - Cuenta como si tuviera *material superior III* para determinar los efectos que puedan dañarla.
 
-## Armadura de Prisa (cualquier armadura, +1 precio)
+## Armadura de Prisa (cualquier armadura, +2 precio)
 
 **Ranura:** Armadura
 
@@ -120,7 +120,7 @@ title: Armaduras Mágicas
 - El portador obtiene Resiestencia a efectos Necróticos y los no-muertos no le detectan como un enemigo. Todos los efectos que detecten seres vivos no funcionarán con el portador, el cual contará como si fuera un no-muerto.
 - Cuenta como si tuviera *material superior I* para determinar los efectos que puedan romperla.
 
-## Túnica del Archimago (precio 4)
+## Túnica del Archimago (precio 5)
 
 **Ranura:** Armadura
 
