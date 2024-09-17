@@ -27,4 +27,8 @@ La criatura es capaz de canalizar el poder del chi para atacar a sus enemigos co
 
 ## Evocador III (+2, 5 mejoras)
 
+3 hechizos Rango III, Meteroros de Chi, Combinar Hechizos, Irradiación de Chi, Rayo Desintegrador, Concentración Superior, Sentido Arcano, Psique Retor
+
 ## Evocador IV (+2, 7 mejoras)
+
+3 hechizos Rango IV, Aniquilación Mágica, Cañón de Chi, Maestro Elemental, División Mental, Mente sobre Cuerpo

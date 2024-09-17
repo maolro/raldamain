@@ -108,7 +108,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-### Golpe ascendente
+### Golpe Ascendente
 
 *Pesado, Ataque, Cuerpo a cuerpo, Físico*
 
@@ -116,7 +116,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador antes que pueda reaccionar. Antes de atacar saltas verticalmente un paso en cualquier dirección y el siguiente ataque que realices inflige un ataque con tu arma que infligirá 2d6 daño adicional. Si atacas a un enemigo volador tendrá Desventaja defendiéndose y en el caso que impactas caerá inmediatamente al suelo y quedará *tropezado*, recibiendo el adecuado daño de caída.
 
-### Impacto meteoro
+### Impacto Meteoro
 
 *Pesado, Ataque, Cuerpo a cuerpo, Área, Físico*
 
@@ -126,7 +126,7 @@ Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador ant
 
 Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige +2d6 puntos de daño adicionales y los *tropieza* al impactar. 
 
-### Guardia fluida
+### Guardia Fluida
 
 *Pesado, Defensivo*
 
@@ -138,7 +138,7 @@ Tu maestría con un arma pesada te permite utilizarla como escudo para protegert
 
 ## Rango V
 
-### Golpe por golpe
+### Golpe por Golpe
 
 *Pesado, Cuerpo a cuerpo, Ataque, Físico*
 
@@ -146,7 +146,7 @@ Tu maestría con un arma pesada te permite utilizarla como escudo para protegert
 
 Estás dispuesto a arriesgar tu propia vida para herir a tu enemigo. Esta habilidad sólo puede activarse cuando estás defendiéndote de un ataque y una vez lo hagas el ataque enemigo te impactará automáticamente. Antes de recibir daño esta habilidad te permite realizar un Ataque con arma inmediato contra tu enemigo que no podrá detener y que puede mejorarse con otras técnicas. Tras realizar este ataque tanto tú como el enemigo recibiréis la cantidad adecuada de daño y los efectos correspondientes.
 
-### Impacto mortal
+### Impacto Mortal
 
 *Pesado, Ataque, Cuerpo a cuerpo, Físico*
 
@@ -158,7 +158,7 @@ Estás dispuesto a arriesgar tu propia vida para herir a tu enemigo. Esta habili
 
 Concentras toda tu energía en un único ataque capaz de matar incluso a los enemigos más poderosos. Haz un ataque con tu arma que provoca 3d6 daño adicional al impactar junto a una *herida permanente grave*. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
 
-### Vuelo de golondrina
+### Vuelo de Golondrina
 
 *Pesado, Mejora, Cuerpo a cuerpo, Físico*
 

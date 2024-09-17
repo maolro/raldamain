@@ -15,13 +15,13 @@ Ascendencia Sombría tiene las siguientes reglas fundamentales que se aplican a 
 
 ## Rango I
 
-### Nacido de las tinieblas
+### Nacido de las Tinieblas
 
 *Innata, Pasiva*
 
 El siniestro poder en tu interior te da la capacidad de manipular las mismas sombras. Recibes Resistencia al daño Frío y Necrótico además de la capacidad de lanzar los hechizos *crear oscuridad*, *tajo sombrío* y *toque drenador* empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia Sombría.
 
-### Sigilo sombrío
+### Sigilo Sombrío
 
 *Innata, Pasiva*
 

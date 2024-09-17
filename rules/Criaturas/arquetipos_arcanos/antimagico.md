@@ -20,11 +20,14 @@ La criatura es capaz de absorber y repeler la magia arcana.
 - **Aumentos Estadísticos:** Incrementa su INT y CON por 1 junto a sus limitadores. Aumenta también su DEF base por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Protectora por 1. 
 - **Hechizos:** Aprende los hechizos Retener Persona y Ancla Dimensional. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
-- **Ataque Disruptor:** 
-- **Sello Extraplanario:** 
-- **Absorber Chi:** 
+- **Ataque Disruptor:** Al impactar con un ataque físico puede afectar a su objetivo con el hechizo Eliminar Magia como acción bonus. Si el afectado fracasa perderá también un chi de su reserva. Emplear el hechizo de esta manera no gastará su uso disponible cada rond
+- **Sello Extraplanario:** Todos las invocaciones y criaturas extraplanarias tienen Desventaja atacándole. Estas tampoco afectarle con habilidades que le tengan como objetivo explícito salvo que tengan éxito en un tiro de Salud contra su modificador de Magia Protectora.
 - **Glifo Mágico:** La criatura tiene un glifo activo adicional que tiene sellado un hechizo que conozca de Rango III o menos. En cualquier momento del combate puede activar dicho glifo para lanzar el hechizo como acción bonus.
 
 ## Antimágico III (+2, requiere 5 mejoras)
 
+Campo Antimágico, Glifo Mágico (Rango IV), Exilio, Esfera de Fuerza, Sello Dimensional, Sentido Arcano
+
 ## Antimágico IV (+2, requiere 7 mejoras)
+
+Disyunción, Glifo Mágico (Rango V), Invertir Chi, Sello Extraplanario, Ligación Planar, División Mental

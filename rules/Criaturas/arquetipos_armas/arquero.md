@@ -26,7 +26,7 @@ La criatura se ha especializado en combatir con armas a distancia, mejorando sus
 
 - **Aumentos Estadísticos:** Incrementa su DES, CON y SAB por 1 además de sus limitadores
 - **Mejoras de Rango:** Mejora su Rango y modificador en Armas A Distancia y Reflejos por 1. 
-- **Habilidades Pasivas:** Recibe Cubierta de Disparos, Gran Acróbata y Sexto Sentido como habilidades Pasivas. 
+- **Habilidades Pasivas:** Recibe Cubierta de Disparos, Gran Acróbata y Sexto Sentido como habilidades Pasivas. Si ya tiene Gran Acróbata y Sexto Sentido recibirá en su lugar Vista de Lince e Inescrutable respectivamente.
 - **Técnicas de Combate:** Aprende las técnicas de combate Disparo Penetrante e Interceptar Ataque Cada una de estas solo puede usarse una vez por ronda de manera gratuita.
 - **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
 

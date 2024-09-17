@@ -77,7 +77,7 @@ Cuando inicias la cacería te enfocas únicamente acabar con tu presa, suprimien
 
 ## Rango IV
 
-### Vista de lince
+### Vista de Lince
 
 *Innata, Pasiva*
 
@@ -85,7 +85,7 @@ Has desarrollado enormemente tu vista hasta el punto que puedes identificar con 
 
 **Empoderar** (1 vigor): Tienes éxito automático en un tiro para identificar una ilusión o defenderte de un hechizo Ilusorio.
 
-### Cambio repentino
+### Cambio Repentino
 
 *Innata, Reacción*
 
@@ -95,7 +95,7 @@ Ajustas tu forma de atacar en el último segundo para que tu presa no sea capaz 
 
 ## Rango V 
 
-### Enemigo juramentado
+### Enemigo Juramentado
 
 *Innata, Pasiva*
 
@@ -107,7 +107,7 @@ Haces un juramento para acabar con un enemigo específico que durará hasta su m
 
 Mientras que no hay límite del número de enemigos juramentados que puedas tener solo recibirás los beneficios de esta habilidad contra uno de ellos en cada combate. Los bonificadores de esta habilidad no se acumulan con aquellos de Analizar enemigo.
 
-### Coto de caza
+### Coto de Caza
 
 *Innata, Mental, Duradera*
 

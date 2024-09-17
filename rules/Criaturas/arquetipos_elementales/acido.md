@@ -27,7 +27,13 @@ La criatura está compuesta de ácido corrosivo, careciendo así de cuerpo físi
 
 ## Esencia de Ácido II (+2, 3 mejoras)
 
+Muro de Lodo, Erupción Ácida, Foso de Cadáveres, Llamar al Pantano, Aguas Sanadoras, Forma Fluida
+
 ## Esencia de Ácido III (+2, 5 mejoras)
 
+Tentáculos Fangosos, Armadura Ácida, Torrente Cáustico, Vapores Abrasivos, Columna de Agua, Flagelo de las Corrientes
+
 ## Esencia de Ácido IV (+2, 7 mejoras)
+
+Lluvia Ácida, Calcificación, Corroer hasta los Huesos, Señor del Pantano, Elemento del Cambio, Forma Acuosa
 

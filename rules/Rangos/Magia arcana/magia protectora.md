@@ -125,7 +125,7 @@ Una criatura *agarrada* por este hechizo no podrá lanzar hechizos ni habilidade
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Glifo mágico
+### Glifo Mágico
 
 *Protectora, Arcana, Duradera, Mejora*
 
@@ -137,7 +137,7 @@ Inscribes un glifo mágico en una superficie que puedas tocar que tendrá ligado
 
 Los efectos de un glifo variarán levemente según el glifo escogido. El alcance del hechizo se limitará a todo aquello que pueda tocar el glifo mientras que su duración será igual al hechizo escogido. Si ligas uno que requiera concentración solo permanecerá activo durante una ronda desde la activación del glifo.
 
-### Absorber chi
+### Absorber Chi
 
 *Protectora, Pasiva*
 
@@ -145,9 +145,7 @@ En respuesta a que anules un hechizo u objeto mágico con *eliminar magia*, *dis
 
 ## Rango IV
 
-Tus hechizos Protectores de Rango II reducen su coste en acciones por 1 (mínimo 1).
-
-### Campo antimágico
+### Campo Antimágico
 
 *Protectora, Arcana, Duradera*
 
@@ -177,7 +175,7 @@ Envías a una criatura extraplanaria a distancia media de ti de vuelta a su plan
 
 **Empoderar** (1 chi): Afecta a una criatura extraplanaria adicional con este hechizo.
 
-### Esfera de fuerza
+### Esfera de Fuerza
 
 *Protectora, Arcana, Duradera*
 
@@ -213,7 +211,7 @@ Deshaces todas las conexiones de chi que rodean a un enemigo para anular toda la
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Ligación planar
+### Ligación Planar
 
 *Protectora, Arcana, Duradera*
 
@@ -227,7 +225,7 @@ Empleas la magia para tomar control de una criatura extraplanaria a distancia me
 
 **Empoderar** (1 chi): Afecta a una criatura adicional con este hechizo.
 
-### Invertir chi
+### Invertir Chi
 
 *Protectora, Arcana, Toque*
 
@@ -247,7 +245,7 @@ Inviertes el chi de un enemigo para provocarle una explosión interna de energí
 
 Tus hechizos Protectores de Rango IV reducen su coste en acciones por 1 (mínimo 1).
 
-### Sello extraplanario
+### Sello Extraplanario
 
 *Protectora, Arcana, Duradera*
 

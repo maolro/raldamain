@@ -29,9 +29,11 @@ La criatura se ha especializado en combatir con armas pesadas y destructivas, ce
 - **Aumentos Estadísticos**: Incrementa su FUE y CON por 1 además de sus limitadores. Aumenta también sus PV, Vitalidad y Defensa por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Armas Pesadas, Ira y Fortitud por 1.
 - **Habilidades Pasivas:** Recibe Ira Temeraria y Hasta la Muerte como habilidades pasivas. 
-- **Técnicas de Combate:** Aprende las técnicas de combate Carga Salvaje y Golpe Demoledor. Cada una de estas solo puede usarse una vez por ronda salvo que use un arma de dos manos.
+- **Técnicas de Combate:** Aprende las técnicas de combate Carga Salvaje, Impacto Meteoro y Golpe Demoledor. Cada una de estas solo puede usarse una vez por ronda salvo que use un arma de dos manos.
 - **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
 - **Guardia Fluida:** Empieza el combate con una cantidad de *contadores de escudo* igual a su Rango de Armas Pesadas. Dichos contadores pueden reponerse gastando dos acciones.
 
 ## Luchador IV (+2, requiere 7 mejoras)
+
+Furia Imparable, Muro Viviente, Una Última Resistencia/Superar los Límites, Sanación Rápida, Golpe Ascendente, Golpe por Golpe, Impacto Mortal, Vuelo de Golondrina, +3 
 

@@ -33,7 +33,7 @@ Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Duran
 
 ## Rango II
 
-### Demostración terrorífica
+### Demostración Terrorífica
 
 *Ira, Miedo, Visual, Innata*
 
@@ -45,7 +45,7 @@ Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Duran
 
 Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Esta habilidad solo puede activarse en Ira y al emplearla todos tus enemigos a radio medio deben tener éxito en un tiro de salvación de Voluntad o Intimidar contra tu talento de Intimidar o aumentarán su nivel de *miedo* por un paso. Esta habilidad solo puede usarse una vez por ronda.
 
-### Resistencia salvaje
+### Resistencia Salvaje
 
 *Ira, Pasiva, Innata*
 
@@ -53,13 +53,13 @@ Cuando combates ni sientes las heridas que sufres, luchando hasta el final sin i
 
 ## Rango III
 
-### Ira temeraria
+### Ira Temeraria
 
 *Ira, Pasiva, Innata*
 
 Al entrar en ira tu mente se centra únicamente en luchar, ignorando toda distracción e intento de hacerte ceder. Mientras te encuentras en Ira recibes inmunidad a efectos de Miedo o Mentales además que suprimirás todos los efectos de este tipo que tengas ya activos al entrar en Ira. 
 
-### Hasta el límite
+### Hasta el Límite
 
 *Pasiva, Innata*
 
@@ -67,13 +67,13 @@ Empujas a tu cuerpo hasta el límite para seguir luchando sin importar las conse
 
 ## Rango IV
 
-### Golpe de adrenalina
+### Golpe de Adrenalina
 
 *Ira, Innata, Pasiva*
 
 Tus instintos de batalla y tu velocidad mejoran notablemente cuando entras en Ira, permitiéndote así suplir tu debilidad defensiva. Mientras te encuentres en Ira recibirás una acción adicional en tu turno y podrás entrar en *posición defensiva* como acción bonus una vez por ronda. Tus instintos te permiten también protegerte de ataques sorpresa con Desventaja, evitando así que te impacten automáticamente.
 
-### Furia imparable
+### Furia Imparable
 
 *Ira, Innata, Reacción*
 
@@ -83,7 +83,7 @@ Ni la magia ni los escudos son capaces de detener tus impactos. En respuesta a q
 
 ## Rango V
 
-### Superar los límites
+### Superar los Límites
 
 *Ira, Innata, Mejora, Duradera*
 

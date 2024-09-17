@@ -60,7 +60,7 @@ Eres capaz de manipular instintivamente la sangre de un enemigo para defenderte 
 
 Mientras permanezcas en este estado cada vez que un enemigo a una distancia media realice un ataque contra ti deberá tener éxito en un tiro de CON frente a tu Magia de Sangre o su ataque fallará automáticamente. Debido a la intensa concentración que esta requiere esta forma defensiva si tu enemigo supera la tirada no podrás pararlo ni esquivarlo con otras habilidades. Esta capacidad se puede utilizar para detener ataques realizados contra otras criaturas, las cuales aún pueden realizar sus propias tiradas defensivas si no logras detener el ataque.
 
-**Empoderar** (1 chi): Un enemigo a una distancia media falla automáticamente su ataque.
+**Empoderar** (1 chi): Un enemigo a una distancia media falla automáticamente su ataque. 
 
 ## Rango II
 
@@ -84,7 +84,7 @@ Una vez que hayas lanzado este hechizo en una muestra de sangre podrás identifi
 
 *Sangre, Curación, Aflicción, Necrótico*
 
-**Coste**: 2 acciones y 1 chi
+**Coste**: 1 acción y 1 chi
 
 **Alcance**: Corto
 
@@ -156,7 +156,7 @@ Cada vez que una criatura con hemorragia interna empiece su turno deberá supera
 
 Todos tus hechizos de Sangre de Rango II cuestan una acción menos para emplear (mínimo 1).
 
-### Drenaje múltiple
+### Drenaje Múltiple
 
 *Sangre, Aflicción, Área, Sanación, Necrótico*
 
@@ -170,7 +170,7 @@ Drenas cantidades masivas de sangre de las criaturas a tu alrededor, debilitánd
 
 **Empoderar** (1 chi): Aumenta el radio de este hechizo a medio.
 
-### Lazos de sangre
+### Lazos de Sangre
 
 *Sangre, Duradero, Toque, Aflicción*
 
@@ -206,13 +206,13 @@ Una criatura *agarrada* por este hechizo no podrá tomar acciones o reacciones, 
 
 Todos tus hechizos de Sangre sustituyen sus dados de daño por d10.
 
-### Autocontrol sanguíneo
+### Autocontrol Sanguíneo
 
 *Sangre, Pasiva*
 
 Has alcanzado un nivel de autocontrol sobre tu propia sangre que te otorga la capacidad de sanar rápidamente tus heridas y recuperarte de aflicciones. Obtienes Resistencia a todas las Aflicciones y efectos de Sangre. Además, al inicio de tu turno reduces el nivel de una *herida permanente* que te afecte en un paso o te recuperas de un efecto de estado negativo que afecte a tu cuerpo, como *sangrado*, *enfermado*, *aturdido*, *fatigado* o *náuseas*.
 
-### Explosión sanguínea
+### Explosión Sanguínea
 
 *Sangre, Aflicción, Necrótico*
 

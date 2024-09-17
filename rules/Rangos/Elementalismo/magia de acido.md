@@ -64,7 +64,7 @@ Escupes un chorro de ácido corrosivo contra todos los enemigos cercanos. Haz un
 
 ## Rango II
 
-### Muro de lodo
+### Muro de Lodo
 
 *Ácido, Defensivo, Duradero*
 
@@ -86,7 +86,7 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos.
 
-### Foso de cadáveres
+### Foso de Cadáveres
 
 *Ácido, Duradero, Agarre*
 
@@ -104,7 +104,7 @@ Aunque el afectado logre escapar el foso permanecerá en el campo de batalla has
 
 **Empoderar** (1 chi): Un objetivo atrapado en el foso debe tener éxito en el tiro para escapar o sufrirá de nuevo sus efectos.
 
-### Erupción ácida
+### Erupción Ácida
 
 *Ácido, Ataque, Área*
 
@@ -126,7 +126,7 @@ Si impactas a una criatura voladora esta caerá inmediatamente al suelo, quedand
 
 ## Rango III
 
-### Tentáculos fangosos
+### Tentáculos Fangosos
 
 *Ácido, Ataque, Agarre, Duradero*
 
@@ -146,7 +146,7 @@ Este efecto permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 **Empoderar** (1 chi): Un ataque hecho contra ti impactará a una de las criaturas agarradas. Para empoderar de esta manera debes encontrarte en *posición defensiva*
 
-### Llamar al pantano
+### Llamar al Pantano
 
 *Ácido, Ambiental, Duradero*
 
@@ -162,7 +162,7 @@ Estos efectos permanecerán activos durante seis rondas o hasta que este hechizo
 
 **Empoderar** (1 chi): El siguiente hechizo de Ácido que lances reducirá su coste de acciones por 1. Esto solo puede usarse una vez por hechizo.
 
-### Invocar elemental de lodo
+### Invocar Elemental de Lodo
 
 *Ácido, Invocación*
 
@@ -178,7 +178,7 @@ Animas una masa de lodo repugnante para crear un guardián elemental que luchar�
 
 ## Rango IV
 
-### Vapores abrasivos
+### Vapores Abrasivos
 
 *Ácido, Ambienta, Duradero*
 
@@ -190,7 +190,7 @@ Animas una masa de lodo repugnante para crear un guardián elemental que luchar�
 
 Creas una enorme nube ácida con la que rodearte o cubrir un área, afligiendo con sus nocivos efectos a todo desgraciado que tenga la mala suerte de encontrarse en su interior. De esta manera todos aquellos en el área afectada deberán hacer un tiro de CON frente a tu modificador o pasarán a estar *enfermados*, sufriendo también los efectos de un veneno de CON que les afectará cada ronda. Además, todos los que estén dentro de la nube pasarán a estar cegados y recibirán *ocultamiento* frente a ataques de individuos que no tengan los medios adecuados para ver dentro de la niebla ácida. En turnos posteriores todos los que comiencen su ronda en el espacio afectado o entren en él deberán repetir el tiro o sufrir sus efectos.  
 
-### Torrente cáustico
+### Torrente Cáustico
 
 *Ácido, Ataque, Área*
 
@@ -202,7 +202,7 @@ Creas una enorme nube ácida con la que rodearte o cubrir un área, afligiendo c
 
 Creas una poderosa corriente ácida con la que corroer todo lo que se encuentre en tu camino, provocando daños severos a los desafortunados a su paso y devorando tantos objetos u obstáculos como te encuentres. De esta manera los afectados sufrirán 2d10+CAR daño ácido, rompiendo su armadura y perdiendo además un *contador de escudo* en caso de tenerlo. Además, por su naturaleza, este ataque ignorará barreras u objetos metálicos que se encuentren en su camino, destruyéndolos en el proceso.
 
-### Armadura ácida
+### Armadura Ácida
 
 *Ácido, Mejora, Duradero*
 
@@ -216,7 +216,7 @@ Rodeas tu cuerpo de corrientes de ácido y nubes de vapores tóxicos, amenazando
 
 ## Rango V
 
-### Lluvia ácida
+### Lluvia Ácida
 
 *Ácido, Mejora, Ambiental*
 
@@ -240,7 +240,7 @@ Convocas una corrosiva lluvia que ensalce las terribles cualidades de tu magia m
 
 Creas una marea de nubes tóxicas y corrientes causticas en el área, amenazando gravemente la integridad de todo lo que ahí esté presente. Todos los que se encuentren en la zona afectada deberán defenderse o sufrirán 2d10+CAR daño ácido, además de que deberán tirar heroísmo o Atletismo o la rápida cristalización los encerrará en una prisión ácida. Aquellos que fallen y queden atrapados podrán repetir su tiro para intentar escapar cada ronda, sufriendo 1d10+CAR daño ácido en caso de fallar. 
 
-### Corroer hasta los huesos
+### Corroer hasta los Huesos
 
 *Ácido, Ataque* 
 

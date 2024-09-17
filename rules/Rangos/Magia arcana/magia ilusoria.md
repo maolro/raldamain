@@ -204,7 +204,7 @@ Eres capaz de emplear las ilusiones alrededor de tu cuerpo para reforzar tus ata
 
 Todos tus hechizos Ilusorios de Rango III reducen su coste en acciones por 1 (mínimo 1).
 
-### Monstruo ilusorio
+### Monstruo Ilusorio
 
 *Ilusoria, Arcana, Duradera*
 
@@ -224,13 +224,13 @@ Un monstruo ilusorio será especialmente peligroso si lo transformas en fantasma
 
 **Empoderar** (1 chi): Crea un monstruo adicional con este hechizo. No podrás tener más de cuatro monstruos ilusorios activos a la vez.
 
-### Muerte fantasmal
+### Muerte Fantasmal
 
 *Ilusoria, Arcana, Pasiva*
 
 Tus ilusiones son capaces de provocar la misma muerte. Cada vez que una criatura sea herida por ilusiones fantasmales sufrirá dolor como si fueran reales, reduciendo así su Vitalidad y PV por una cantidad adecuada dependiendo de la ilusión (esto queda a discreción del DJ). Si redujeras los PV de una criatura a 0 con una ilusión fantasmal esta morirá de un palo cardíaco y todo el daño provocado atravesará las Resistencias que tengan tus objetivos.
 
-### Capa de ilusiones
+### Capa de Ilusiones
 
 *Ilusoria, Arcana, Duradera*
 
@@ -246,9 +246,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y no podrá
 
 ## Rango VI
 
-Todos tus hechizos Ilusorios de Rango IV reducen su coste en acciones por 1 (mínimo 1).
-
-### Mundo de los espejos
+### Mundo de los Espejos
 
 *Ilusoria, Arcana, Duradera, Ambiental*
 

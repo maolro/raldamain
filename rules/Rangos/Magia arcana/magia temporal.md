@@ -100,7 +100,7 @@ Realizas un pequeño salto temporal para que el último ataque que hayas recibid
 
 ## Rango III  
 
-Tus hechizos Temporales convierten sus dados de daño a d8 y los de Rango I reducen su coste en acciones por 1 (mínimo 1).
+Tus hechizos Temporales convierten sus dados de daño a d8.
 
 ### Visión
 
@@ -108,7 +108,7 @@ Tus hechizos Temporales convierten sus dados de daño a d8 y los de Rango I redu
 
 A través de un complejo ritual meditativo vislumbras tu línea temporal durante unos instan, recibiendo así visiones del pasado, presente o futuro. Cada uso de este ritual te otorgará una visión relacionada con un objeto, lugar o persona de tu elección que esté junto a ti mientras realices el ritual. La naturaleza de las visiones que recibas quedará escogida por el máster y un uso excesivo de este ritual puede desencadenar en la locura.
 
-### Predecir movimiento
+### Predecir Movimiento
 
 *Temporal, Reacción, Arcana*
 
@@ -120,7 +120,7 @@ Vislumbras el futuro por unos instantes para predecir un suceso y prepararte con
 
 **Empoderar** (1 chi): Puedes volver a usar este hechizo esta ronda. 
 
-### Dobles temporales
+### Dobles Temporales
 
 *Temporal, Sostenida, Arcana, Defensiva*
 
@@ -138,7 +138,7 @@ De manera alternativa puedes sacrificar un doble para anular un ataque que reali
 
 ## Rango IV  
 
-### Revertir el tiempo
+### Revertir el Tiempo
 
 *Temporal, Arcana, Sostenida*
 
@@ -168,7 +168,7 @@ Congelas el tiempo alrededor de un enemigo para dejarlo en estasis temporal. Un 
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Ataque retardado
+### Ataque Retardado
 
 *Temporal, Arcana, Mejora*
 
@@ -184,7 +184,7 @@ Cuando pase la cantidad de rondas escogida podrás emplear la habilidad retardad
 
 Tus hechizos Temporales convierten sus dados de daño a d10.
 
-### Parar el tiempo
+### Parar el Tiempo
 
 *Temporal, Arcana, Área, Parálisis*
 
@@ -198,7 +198,7 @@ Todas las criaturas en una esfera grande deben tener éxito en un tiro de CON fr
 
 **Empoderar** (1 chi): Vuelves a emplear este hechizo sin la necesidad de pagar acciones o chi al final de tu turno para extender sus efectos una ronda adicional. Las criaturas afectadas repetirán el tiro y se liberarán de él en caso de éxito.
 
-### Visión futura
+### Visión Futura
 
 *Temporal, Mejora, Arcana*
 
@@ -212,7 +212,7 @@ Visión futura mejorará también tus capacidades de predecir y defenderte de ac
 
 **Empoderar** (1 chi): Otorga este hechizo a un aliado que puedas tocar durante el resto del combate.
 
-### Brecha temporal
+### Brecha Temporal
 
 *Temporal, Ambiental, Arcana*
 

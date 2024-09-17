@@ -86,7 +86,7 @@ Un enemigo *enredado* de esta manera podrá repetir el tiro cada ronda para esca
 
 ## Rango III
 
-### Salto salvaje
+### Salto Salvaje
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico, Agarre*
 
@@ -94,7 +94,7 @@ Un enemigo *enredado* de esta manera podrá repetir el tiro cada ronda para esca
 
 Te abalanzas sobre un enemigo con impulso suficiente para tirarlo al suelo. Salta un paso en cualquier dirección y haz un Ataque natural contra un enemigo adyacente que inflige 1d6 daño adicional. Además, al impactar este ataque tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo salvaje o quedará *tropezado*. Tu objetivo deberá realizar el mismo tiro si se defiende con Parada aunque tenga éxito.
 
-### Zarpazo desmembrador
+### Zarpazo Desmembrador
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico*
 
@@ -104,7 +104,7 @@ Te abalanzas sobre un enemigo con impulso suficiente para tirarlo al suelo. Salt
 
 Haz un Ataque natural que infligirá 2d6 daño adicional y *sangrado* al impactar. Provocarás también una *herida permanente leve* si logras hacer daño con este ataque y en el caso que tu enemigo lleve armadura ligera la gravedad de esta aumentará por un paso.
 
-### Combinar técnica
+### Combinar Técnicas
 
 *Salvaje, Reacción*
 
@@ -114,7 +114,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-### Destrozar defensas
+### Destrozar Defensas
 
 *Salvaje, Marcial, Mejora*
 
@@ -134,7 +134,7 @@ Al impactar a un objetivo adyacente este deberá tener éxito en un tiro de Hero
 
 A diferencia de Abrazo de oso puedes moverte con libertad aunque tengas a un enemigo *agarrado*, el cual estará forzado a moverse junto a ti. Agarrar a un enemigo continuará otorgándote Desventaja en tiros defensivos pero cada ataque fallido contra ti impactará al objetivo que tengas agarrado.
 
-### Carga imparable
+### Carga Imparable
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico*
 
@@ -146,7 +146,7 @@ Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruz
 
 ## Rango V
 
-### Frenesí saltarín
+### Frenesí Saltarín
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico*
 
@@ -154,7 +154,7 @@ Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruz
 
 Recorres el campo de batalla con enorme agilidad, saltando sobre tus enemigos y atacándoles antes que puedan reaccionar. Salta un paso en cualquier dirección y haz un Ataque natural contra un objetivo adyacente que inflige 1d6 daño adicional. Si impactas este ataque puedes volver a saltar un paso en cualquier dirección y atacar a un nuevo enemigo, continuando así hasta que falles un ataque o no te queden más nuevos enemigos para atacar. Si mejoras un ataque hecho de esta manera con otra técnica esta terminará de inmediato.
 
-### Secuencia de zarpazos
+### Secuencia de Zarpazos
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico*
 
@@ -162,7 +162,7 @@ Recorres el campo de batalla con enorme agilidad, saltando sobre tus enemigos y 
 
 Haz dos Ataques naturales contra un mismo objetivo que infligen 1d6 daño adicional al impactar. Este solo podrá tirar defensivamente una vez y empleará dicho resultado para protegerse de ambos ataques. Si impactas con los dos ataques podrás hacerle un tercer ataque como acción bonus contra el cual tu objetivo no podrá defenderse. Dicho ataque puede mejorarse con otras técnicas que conozcas. 
 
-### Tajo cercenador
+### Tajo Cercenador
 
 **Coste:** 1 acción y 3 vigor
 
