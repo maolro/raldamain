@@ -80,7 +80,7 @@ Si empleas este hechizo en un combate puedes condicionar a tu objetivo para que 
 
 **Empoderar** (1 chi): Vuelves a emplear este hechizo en el mismo objetivo como acción bonus sin la necesidad de pagar chi. Solo puedes empoderar de esta manera una vez por hechizo.
 
-### Sanación mental
+### Sanación Mental
 
 *Mental, Toque*
 
@@ -168,7 +168,7 @@ Tu maestría mental te permite hablar con otras criaturas usando únicamente el 
 
 Todos tus hechizos Mentales de Rango II reducen su coste en acciones por 1 (mínimo 1).
 
-### Sugestión en masa
+### Sugestión en Masa
 
 *Mental, Área, Duradera*
 
@@ -184,7 +184,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y toda cria
 
 **Empoderar** (1 chi): Una criatura que ya esté afectada por Sugestión deberá repetir el tiro inmediatamente contra este hechizo y si fracasa seguirá una de tus órdenes sin rechistar, afectándole de la misma manera que Geas. 
 
-### Modificar recuerdos
+### Modificar Recuerdos
 
 *Mental, Duradera*
 
@@ -202,7 +202,7 @@ Una modificación de los recuerdos es especialmente peligrosa para enemigos al b
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechiz
 
-### Aura emocional
+### Aura Emocional
 
 *Mental, Duradera*
 
@@ -236,7 +236,7 @@ Una criatura controlada de esta manera debe obedecer tus órdenes sin cuestionar
 
 **Empoderar** (1 chi): Afectas a una criatura adicional con este hechizo
 
-### Mente en blanco
+### Mente en Blanco
 
 *Mental, Mejora, Toque*
 
@@ -250,7 +250,7 @@ Creas una poderosa barrera psíquica que protegerá a un objetivo de toda intrus
 
 **Empoderar** (1 chi): Cuando una criatura ajena intente afectarte con un hechizo Mental puedes devolvérselo como reacción sin la necesidad de gastar chi o acciones. Emplearás tu bonificador de Magia Mental en todos los tiros relacionados con ese hechizo.
 
-### Destrozar mente
+### Destrozar Mente
 
 *Mental, Cordura*
 

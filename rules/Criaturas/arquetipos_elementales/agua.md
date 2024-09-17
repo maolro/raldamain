@@ -26,7 +26,18 @@ La criatura está compuesta de aguas fluidas, careciendo así de cuerpo físico.
 
 ## Esencia de Agua II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su DES, CON y SAB por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia de Agua por 1.
+- **Habilidades Pasivas:** Obtiene las habilidad pasiva Aguas Sanadoras.
+- **Hechizos:** Aprende el hechizo Ola Chocante, el cual puede emplear una vez por ronda de manera gratuita.
+- **Forma Fluida:** Recibe Ventaja en todos sus tiros relacionados con Magia de Agua y reduce todo el daño que reciba por un valor igual a su Rango de Magia de Agua - 1. Todo el espacio a su alrededor cuenta como *terreno difícil* como si tuviera activa la habilidad con el mismo nombre. Estos modificadores no se acumulan con aquellos otorgados por Controlar el Agua o Lluvias Torrenciales.
+- **Muro de Agua:** Una vez por ronda puede emplear el hechizo Muro de Agua de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
+- **Tentáculos de Agua:** Al entrar en combate recibe una cantidad de *contadores de escudo* igual a su Rango de Magia de Agua - 1. Mientras le queden *contadores de escudo* podrá hacer un ataque de Torrente una vez por ronda como acción bonus.
+
 ## Esencia de Agua III (+2, 5 mejoras)
+
+Prisión Acuosa, Vórtice, Taladro Hidráulico, Columna de Agua, Flagelo de las Corrientes, Escaldar, Elemento 
 
 ## Esencia de Agua IV (+2, 7 mejoras)
 
+Tsunami, Lluvias Torrenciales, Furia del Océano, Forma Elemental, Forma Acuosa, Vapor Hirviente

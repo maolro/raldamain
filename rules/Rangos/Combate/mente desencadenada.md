@@ -78,13 +78,13 @@ Tu mente se ha retorcido de maneras impensables debido a tu constante uso de sus
 
 ## Rango V
 
-### División mental
+### División Mental
 
 *Mente desencadenada, Innata, Pasiva*
 
 Has aprendido la asombrosa capacidad de dividir tu mente para realizar varias tareas a la vez y actuar con una celeridad mental imposible para un ser humano ordinario. Mientras te encuentres en Mente desencadenada recibirás un turno adicional a -10 iniciativa con tres acciones. Podrás emplear dichas acciones para cualquiera de tus habilidades pero estas no podrán ser incrementadas por ningún hechizo.
 
-### Mente sobre cuerpo
+### Mente sobre Cuerpo
 
 *Mente desencadenada, Innata, Pasiva*
 

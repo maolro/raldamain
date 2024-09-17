@@ -31,7 +31,7 @@ Como hijo de los mares las aguas se someten a tu voluntad, permitiéndote manipu
 
 ##  Rango II
 
-### Golpe hidráulico
+### Golpe Hidráulico
 
 *Innata, Mejora*
 
@@ -51,7 +51,7 @@ Has desarrollado un nuevo sentido similar al de los animales marinos que te perm
 
 Eres capaz de emplear los hechizos Muro de agua y Ola chocante empleando vigor en lugar de chi.
 
-### Forma fluida
+### Forma Fluida
 
 *Innata, Agua, Duradera*
 
@@ -65,7 +65,7 @@ Las aguas también dificultarán el paso a todo enemigo que se intente acercar a
 
 **Empoderar** (1 chi o vigor): Tienes éxito automático en un tiro de Parada contra un ataque A distancia o lanza el hechizo Torrente como acción bonus contra todos los enemigos a distancia cercana de ti.
 
-### Aguas sanadoras
+### Aguas Sanadoras
 
 *Innata, Pasiva*
 
@@ -75,7 +75,7 @@ Tu profunda conexión con el agua hace que esta sane tus heridas. Al principio d
 
 ## Rango IV 
 
-### Columna de agua
+### Columna de Agua
 
 *Innata, Duradera*
 
@@ -87,7 +87,7 @@ El agua a tus pies surge hasta formar un columna de aguas rugientes que te permi
 
 La columna de agua creará un vórtice de agua a tus pies que dificultará que tus enemigos puedan acercarse a ti. Cada vez que te muevas toda criatura en tu camino debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Ascendencia de Agua o sufren 1d8 + SAB daño Contundente y son empujados un paso hacia atrás. Lo mismo ocurrirá si una criatura incapaz de volar entra en un espacio a distancia cercana de ti.
 
-### Flagelo de las corrientes
+### Flagelo de las Corrientes
 
 *Innata, Mejora*
 
@@ -105,13 +105,13 @@ Adicionalmente, cada vez que impactes a un enemigo con un ataque infundido este 
 
 Eres capaz de emplear los hechizos Prisión acuosa y Controlar el agua empleando vigor en lugar de chi.
 
-### Elemento del cambio
+### Elemento del Cambio
 
 *Innata, Pasiva*
 
 Tu conexión elemental ha hecho que tu cuerpo sea adaptable y versátil como el agua misma. Obtienes Resistencia a efectos de Fuego, Frío, Ácido, Miedo, Mentales y Aflicciones. Puedes también respirar bajo el agua durante una cantidad ilimitada de tiempo y eres capaz de comunicarte con criaturas marinas y elementales de agua de todo tipo, quienes te tratarán como un igual.
 
-### Forma acuosa
+### Forma Acuosa
 
 *Innata, Duradera*
 
@@ -129,7 +129,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y solo pued
 
 Aumenta tu estadística de CON y su limitador por 1.
 
-### Forma elemental
+### Forma Elemental
 
 *Innata, Mejora*
 

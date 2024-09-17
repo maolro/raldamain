@@ -35,7 +35,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemigos para herirles con mayor gravedad. Cada vez que realices un ataque combinado con dos o más aliados o impactes a un enemigo incapaz de defenderse aumentarás el nivel de todas las *heridas permanentes* infligidas por un paso. Puedes también tirar tanto Esquiva como Parada para defenderte de un ataque enemigo y quedarte con el resultado que más que convenga siempre que sea posible emplear ambas técnicas.
 
-### Golpe penetrante
+### Golpe Penetrante
 
 *Ligera, Mejora*
 
@@ -45,7 +45,7 @@ Apuntas tu ataque para que penetre los puntos débiles de las defensas enemigas.
 
 ## Rango II
 
-### Puñalada poderosa
+### Puñalada Poderosa
 
 *Ligera, Mejora*
 
@@ -63,7 +63,7 @@ Tu arma permanecerá clavada hasta que otra criatura la separe de su cuerpo empl
 
 Atacas con tal velocidad que tus golpes son impredecibles y casi imposibles de detener. En respuesta a fallar un ataque con tu arma puedes repetirlo con Ventaja contra ese mismo enemigo. Si el afectado detuvo tu ataque original empleando *contadores de escudo* u otros métodos de éxito automático estos no se aplicarán contra tu segundo ataque. Si afectas exitosamente a un enemigo con esta técnica no podrás volver a emplearla contra él hasta el inicio de tu siguiente turno.
 
-### Lluvia de cuchillos
+### Lluvia de Cuchillos
 
 *Ligera, Mejora*
 
@@ -73,7 +73,7 @@ Aprovechas tu gran velocidad para atacar a múltiples enemigos en un instante. T
 
 ## Rango III
 
-### Asalto impredecible
+### Asalto Impredecible
 
 *Ligera, Reacción*
 
@@ -81,7 +81,7 @@ Aprovechas tu gran velocidad para atacar a múltiples enemigos en un instante. T
 
 Tus ataques son tan rápidos e impredecibles que tus enemigos no son capaces de detenerlos a tiempo. En respuesta a que un enemigo detenga tu ataque empleando *contadores de escudo* hechizos defensivos o técnicas de combate para reducir el daño puedes emplear esta técnica para atravesarlos de inmediato, ignorando sus efectos y provocando daño con normalidad. Esta habilidad no funcionará con hechizos y habilidades de Rango superior al tuyo.
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Ligera, Reacción*
 
@@ -107,7 +107,7 @@ Acuchillas a tu objetivo con dos rápidos ataques para provocarle una herida má
 
 Haces un rápido ataque para interrumpir a un enemigo antes que pueda atacarte. Como reacción a que un enemigo utilice una acción de cualquier tipo puedes atacarle con tu arma, forzándole a defenderse de inmediato. Si falla su tiro defensivo no solo le infligirás daño sino que también interrumpirás la acción que intentó utilizar, haciéndole perder todos los recursos empleados en ella. Solo puedes emplear esta técnica una vez por acción enemiga y no puedes usarla si eres incapaz de atacar a tu objetivo.
 
-### Puñalada quirúrgica
+### Puñalada Quirúrgica
 
 *Ligera, Mejora*
 
@@ -115,7 +115,7 @@ Haces un rápido ataque para interrumpir a un enemigo antes que pueda atacarte. 
 
 Haces un ataque preciso y mortal contra una parte específica del cuerpo de tu enemigo con el fin de deshabilitarla. Tu siguiente ataque infligirá 3d6 daño adicional al impactar además que provocará una *herida permanente media* en una parte específica del cuerpo de tu objetivo. Si un ataque mejorado de esta manera logra provocar un efecto crítico puedes infligir la *herida permanente* que este provocaría en la misma parte del cuerpo.
 
-### Salto mortal
+### Salto Mortal
 
 *Ligera, Mejora*
 

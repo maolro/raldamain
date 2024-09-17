@@ -87,7 +87,7 @@ Ni el frío, el calor o las tormentas son capaces de hacerte caer. Recibes Resis
 
 ## Rango V
 
-### Sanación rápida
+### Sanación Rápida
 
 *Innata, Pasiva, Sanación*
 
@@ -95,7 +95,7 @@ Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al prin
 
 **Empoderar** (1 vigor): Reduce el nivel de una herida permanente que te afecte actualmente por un paso. Esto no funcionará contra *heridas permanentes críticas*.
 
-### Una última resistencia
+### Una última Resistencia
 
 *Innata, Sanación*
 

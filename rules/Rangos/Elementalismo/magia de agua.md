@@ -85,7 +85,7 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos. Esta habilidad solo se puede usar si tienes suficiente agua para rellenar el muro.
 
-### Ola chocante
+### Ola Chocante
 
 *Agua, Ataque, Área, Físico, Duradero*
 
@@ -291,7 +291,7 @@ Aquellos que permanezcan demasiado tiempo dentro de la nube mientras se calienta
 
 ## Rango VI
 
-### Furia del océano
+### Furia del Océano
 
 *Agua, Ambiental*
 

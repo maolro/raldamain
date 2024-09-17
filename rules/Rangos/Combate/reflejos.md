@@ -71,13 +71,13 @@ Tienes la agilidad y equilibrio de un gran acróbata, recibiendo así Inmunidad 
 
 ## Rango IV
 
-### Sexto sentido
+### Sexto Sentido
 
 *Innata, Pasiva*
 
 Tu intuición se ha desarrollado hasta límites sobrehumanos, permitiéndote notar la presencia de enemigos ocultos y esquivar balas. Recibes *vista a ciegas* de radio medio y podrás emplear Esquiva sin penalizadores para evitar ataques extremadamente rápidos sin importar su distancia. Obtendrás también Resistencia a Ilusiones y efectos Visuales.
 
-### Punto ciego
+### Punto Ciego
 
 *Innata, Reacción*
 
@@ -87,7 +87,7 @@ Te mueves con tal agilidad que no puedes ser apuntado adecuadamente. Al activar 
 
 ## Rango V
 
-### Libertad de movimiento
+### Libertad de Movimiento
 
 *Innata, Pasiva*
 
@@ -95,7 +95,7 @@ Eres capaz de contorsionar tu cuerpo de maneras imposibles para eludir cualquier
 
 **Empoderar** (1 vigor): Te liberas inmediatamente de un efecto que te esté *agarrando*. 
 
-### Reflejos supremos
+### Reflejos Supremos
 
 *Innata, Pasiva*
 

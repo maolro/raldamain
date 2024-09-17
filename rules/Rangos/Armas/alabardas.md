@@ -114,7 +114,7 @@ Con movimientos agiles y precisos eres capaz de atacar a tu objetivo y retirarte
 
 **Coste:** 2 vigor
 
-Aumentando tu concentración y colocándote de la forma adecuada puedes dificultar a todo aquel que se te acerque el salir impune con los movimientos mas mínimos, moviéndolos al son de tu propia música. De esta manera al activarse recibirás ventaja en todos tus tiros de ataque y defensa relacionados con *Alabardas*. 
+Aumentando tu concentración y colocándote de la forma adecuada puedes dificultar a todo aquel que se te acerque el salir impune con los movimientos mas mínimos, moviéndolos al son de tu propia música. De esta manera al activarse recibirás ventaja en todos tus tiros de ataque y defensa relacionados con Alabardas. 
 
 Así mismo siempre contarás como si estuvieras en *Preparación contra cargas*, además de que podrás defenderte de ataques a distancia con tu arma siempre que estos vayan a la velocidad adecuada. 
 

@@ -15,6 +15,14 @@ La criatura es capaz de emplear la magia arcana para manipular el flujo del tiem
 
 ## Cronomago II (+2, requiere 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su INT y SAB por 1 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Temporal por 1.
+- **Habilidades Pasivas:** Recibe Concentración Superior como habilidad pasiva.
+- **Premonición Superior:** Puede repetir todos los tiros inferiores a un 5 que obtenga y quedarse con el resultado más conveniente.
+- **Dobles Temporales:** Al entrar en combate se rodea de una cantidad de Dobles Temporales igual a su Rango en Magia Temporal. Al ser impactado por un ataque que le tenga explícitamente como objetivo una vez por ronda puede hacer que impacte a un doble, eliminándolo de inmediato. Puede también sacrificar los dobles para anular ataques que realice. 
+- **Desplazamiento:** Una vez por ronda puede emplear el hechizo Desplazamiento como reacción para evitar un ataque enemigo. Esto no le costará chi o vigor.
+- **Cronomago Experto:** Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia Temporal. Este modificador no se acumula con el otorgado por Mente Desencade
+
 ## Cronomago III (+2, requiere 5 mejoras)
 
 ## Cronomago IV (+2, requiere 7 mejoras)

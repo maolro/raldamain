@@ -68,7 +68,7 @@ Liberas la energía mágica de tu interior en forma de una poderosa descarga. Ha
 
 Aprendes dos hechizos de Rango I pertenecientes a una magia asociada a tu Especialidad Arcana. 
 
-### Muro de energía
+### Muro de Energía
 
 *Evocación, Arcano, Defensivo, Duradero*
 
@@ -88,7 +88,7 @@ Este hechizo puede ser empleado defensivamente para protegerte a ti o a un aliad
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos. Solo puedes empoderar si a tu muro le queda por lo menos 1 PV.
 
-### Infundir arma
+### Infundir Arma
 
 *Evocación, Arcano, Mejora, Toque, Duradero*
 
@@ -108,7 +108,7 @@ Además, el arma permitirá al lanzador infundir sus ataques con el hechizo con 
 
 Tus hechizos de Evocación convierten sus dados de daño a d8 y los de Rango I reducen su coste en acciones por 1 (mínimo 1). Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu Especialidad Arcana. 
 
-### Meteoros de chi
+### Meteoros de Chi
 
 *Evocación, Arcano, Duradero, Defensivo*
 
@@ -120,7 +120,7 @@ Te rodeas de varios meteoros hechos de pura energía de chi para defenderte de a
 
 **Empoderar** (1 chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo. Para empoderar este hechizo debe quedarte por lo menos un contador.
 
-### Combinar hechizos
+### Combinar Hechizos
 
 *Pasiva, Evocación, Arcano, Mejora*
 
@@ -134,7 +134,7 @@ Si escoges fusionar dos ataques o un ataque con otro hechizo puedes hacer un ún
 
 Tus hechizos de Rango II reducen su coste en acciones por 1 (mínimo 1) y  aprendes dos hechizos de Rango III pertenecientes a una magia asociada a tu Especialidad Arcana. 
 
-### Rayo desintegrador
+### Rayo Desintegrador
 
 *Evocación, Arcano, Ataque, A distancia*
 
@@ -150,7 +150,7 @@ Disparas un rayo de energía enormenente empoderado capaz de desintegrar el cuer
 
 **Empoderar** (1 chi): Ataca a un objetivo adicional con este hechizo.
 
-### Irradiación de chi
+### Irradiación de Chi
 
 *Evocación, Arcano, Ambiental*
 
@@ -170,7 +170,7 @@ Un campo irradiado con chi hará que la magia arcana y los objetos mejorados con
 
 Tus hechizos de Evocación convierten sus dados de daño a d10 y los de Rango III reducen su coste en acciones por 1 (mínimo 1). Aprendes dos hechizos de Rango IV pertenecientes a una magia asociada a tu Especialidad Arcana. 
 
-### Cañón de chi
+### Cañón de Chi
 
 **Coste:** 2 acciones y 3 chi
 
@@ -188,7 +188,7 @@ Este ataque no puede ser detenido por barreras mágicas y todos los afectados pe
 
 **Empoderar** (1 chi): Aumenta el radio de efecto a grande o haz otro ataque con este hechizo apuntando a un lugar diferente.
 
-### Maestro elemental
+### Maestro Elemental
 
 *Evocación, Pasivo*
 
@@ -198,7 +198,7 @@ Has alcanzado un nivel de maestría que te permite moldear la magia de todo tipo
 
 Tus hechizos de Rango IV reducen su coste en acciones por 1 (mínimo 1) y  aprendes dos hechizos de Rango V pertenecientes a cualquier magia elemental.
 
-### Aniquilación mágica
+### Aniquilación Mágica
 
 *Evocación, Arcano, Ataque, Área*
 

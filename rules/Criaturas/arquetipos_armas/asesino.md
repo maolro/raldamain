@@ -26,4 +26,8 @@ La criatura ha mejorado sus habilidades en el arte del asesinato y el combate co
 
 ## Asesino III (+2, requiere 5 mejoras)
 
+Asalto Impredecible, Combinar Técnicas, Cuchillada, Contrataque, Puñalada Quirúrgica, Giro Defensivo/Sexto Sentido, Gran Acróbata/Lo he Visto Antes, Inescrutable
+
 ## Asesino IV (+2, requiere 7 mejoras)
+
+Reflejos Supremos, Libertad de Movimiento, Punto Ciego, Salto Mortal, Asesinato, Puñaladas en Secuencia, Movilidad de Batalla, +3 Técnicas combate, Vista de Lince/Enemigo Juramentado
