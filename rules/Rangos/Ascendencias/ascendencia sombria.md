@@ -139,7 +139,7 @@ La nociva influencia del plano sombrío perjudicará la salud de aquellos que no
 
 Incrementa tu estadística de CON y su limitador por 1.
 
-### Tirano sombrío
+### Tirano Sombrío
 
 *Innata, Mejora*
 

@@ -28,10 +28,20 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia Sombría por 1.
-- **Hechizos:** Aprende los hechizos Bola Sombra, Capullo Sombrío y Oscuridad Devoradora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Hechizos:** Aprende los hechizos Bola Sombra, Capullo Sombrío, Terror Nocturno y Oscuridad Devoradora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Salto Sombrío:** Una vez por ronda puede emplear la habilidad Salto Sombrío para evadir automáticamente un ataque enemigo. Si ya posee dicha habilidad podrá emplearla una vez adicional
 - **Absorber Oscuridad:** Recibe Inmunidad a efectos Necróticos y de Frío a costa de Vulnerabilidad a efectos Radiantes. El daño Necrótico le sana en lugar de herirle pero no podrá recibir Sanación. Si se encuentra en un entorno a oscuras se sanará Vitalidad igual a su Rango de Ascendencia Sombría.
 
 ## Sombrío III (+2, 5 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia Sombría por 1.
+- **Habilidades Pasivas:** Recibe Sombra Viviente como habilidad pasiva.
+- **Hechizos:** Aprende los hechizos Tentáculos de Oscuridad, Titiritero Sombrío y Oscuridad Enloquecedora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Maldición de Shade:** Al impactar a un enemigo con un ataque que provoque daño Necrótico o Frío puede afectarle con la Maldicición de Shade. Si el afectado tiene éxito en el tiro contra la maldición no puede volver a afectarle hasta que pase una ronda.
+- **Arma de Tinieblas:**  
+- **Forma Sombría:** 
+
 ## Sombrío IV (+2, 7 mejoras)
+
+Dominio de Pesadilla, Tirano Sombrío, Furia de Shade, Ejecución Sombría, Laberinto de Pesadillas, Eclipse de Sacrificio

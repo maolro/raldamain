@@ -181,7 +181,7 @@ Mientras este hechizo permanezca activo toda criatura que empiece su turno en el
 
 ## Rango IV
 
-### Titiritero sombrío
+### Titiritero Sombrío
 
 *Sombrío, Duradero, Agarre*
 
@@ -197,7 +197,7 @@ La criatura agarrada puede repetir el tiro al principio de su turno para intenta
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional con este hechizo
 
-### Clones sombríos
+### Clones Sombríos
 
 *Sombría, Invocación, Duradera*
 
@@ -211,7 +211,7 @@ Los clones además son Inmunes a efectos Mentales, Miedo, Aflicciones, Necrótic
 
 **Empoderar** (1 chi): Crea un clon sombrío adicional hasta un máximo igual a tu Rango.
 
-### Oscuridad enloquecedora
+### Oscuridad Enloquecedora
 
 *Sombría, Mental, Visual, Duradera*
 
@@ -249,7 +249,7 @@ Invocas el poder del plano sombrío para que consuma la esencia vital de tus ene
 
 **Empoderar** (1 chi): El siguiente hechizo Sombrío que lances tras la Furia de Shade te cuesta una acción bonus. 
 
-### Ejecución sombría
+### Ejecución Sombría
 
 *Sombra, Aflicción, Necrótico*
 
@@ -267,7 +267,7 @@ Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa 
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 
-### Laberinto de pesadillas
+### Laberinto de Pesadillas
 
 *Sombría, Espacial, Duradero*
 
@@ -287,7 +287,7 @@ Aunque las criaturas atrapadas en el demiplano se encuentren en otra dimensión 
 
 ## Rango VI
 
-### Eclipse de sacrificio
+### Eclipse de Sacrificio
 
 *Sombrío, Ataque, Área, Frío*
 
