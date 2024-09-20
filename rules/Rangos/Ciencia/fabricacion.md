@@ -90,7 +90,7 @@ Si aplicas esta mejora a un arma puedes usarla en tiros de Parada para defendert
 
 Si aplicas esta mejora en un armadura hará que esta otorgue q su portador Resistencia a efectos Arcanos. Esta también otorgará PV temporales a su portador igual a tu Rango + 2 además de la capacidad de emplear tu modificador de Fabricación en sus tiros para defenderse de efectos Arcanos.
 
-### Batería de chi
+### Batería de Chi
 
 *Objeto, Proyecto, Arcano*
 

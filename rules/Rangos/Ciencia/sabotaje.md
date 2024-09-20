@@ -53,7 +53,7 @@ Para traspasar las defensas de un sistema necesitas las herramientas adecuadas p
 
 ## Rango II
 
-### Instalar contramedida
+### Instalar Contramedida
 
 *Sabotaje, Tecnología*
 
@@ -64,7 +64,7 @@ Gracias a tu conocimiento sobre el sabotaje sabes cómo detener sus infiltracion
 - **Cierre**: En el caso que un usuario intente entrar repetidamente en el sistema de forma no autorizada este se cerrará a cualquier intento de entrada, suspendiendo parte de sus funciones para evitar la infiltración. El cierre durará un número de tiempo escogido por ti (normalmente de 10 minutos a una hora) y mientras dure el sistema no puede ser afectado por Traspasar a costa de hacerlo completamente inaccesible.
 - **Borrar datos:** El sistema operativo borrará automáticamente determinados datos confidenciales si es traspasado o alguien intenta entrar de forma no autorizada un número determinado de veces. Estos datos pueden ser recuperados por ti si empleas 8 horas de trabajo reparando el sistema.
 
-### Alterar órdenes
+### Alterar Órdenes
 
 *Sabotaje, Tecnología*
 
