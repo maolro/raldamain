@@ -13,12 +13,12 @@ La criatura es capaz de canalizar el poder del chi para atacar a sus enemigos co
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Especialidad Arcana.
 - **Hechizos:** Aprende los hechizos Rayo Arcano y Descarga de Energía. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada Arcana:** Puede usar su tiro de Magia de Evocación para defenderse de ataques cuerpo a cuerpo y a distancia.
-- **Mente Desencadenada:** Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales a costa de Vulnerabilidad a efectos Mentales.
+- **Mente Desencadenada:** Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales y 1d6 daño adicional en todos sus habilidades Arcanas a costa de Vulnerabilidad a efectos Mentales.
 
 ## Evocador II (+2, 3 mejoras)
 
 - **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores. Aumenta también su DEF por 2. 
-- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Evocación y Mente Desencadenada por 1. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Evocación y Mente Desencadenada por 1. Puede emplear su modificador de Magia de Evocación para todos sus tiros relacionados con armas.
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Poder del Dolor.
 - **Hechizos:** Aprende tres hechizos relacionados con su Especialidad Arcana de Rango II o menos. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Acelerar:** Recibe una acción adicional como si estuviera siempre bajo los efectos de Acelerar.
@@ -27,8 +27,18 @@ La criatura es capaz de canalizar el poder del chi para atacar a sus enemigos co
 
 ## Evocador III (+2, 5 mejoras)
 
-3 hechizos Rango III, Meteroros de Chi, Combinar Hechizos, Irradiación de Chi, Rayo Desintegrador, Concentración Superior, Sentido Arcano, Psique Retor
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores. Aumenta también su DEF por 2. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Evocación y Mente Desencadenada por 1. 
+- **Habilidades Pasivas:** Obtiene la habilidades pasivas Concentración Superior, Sentido Arcano y Psique Retorcido.
+- **Hechizos:** Aprende el hechizo Rayo Desintegrador además de tres hechizos relacionados con su Especialidad Arcana de Rango III o menos. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Meteroros de Chi:** Al entrar en combate activa el hechizo Meteoros de Chi, recibiendo así una cantidad de *contadores de escudo* igual a su Rango en Magia de Evocación además de la capacidad de hacer un ataque de Rayo Arcano una vez por ronda como acción bonus.
+- **Combinar Hechizos:** Una vez por ronda puede combinar dos hechizos de su elección para que se activen como si fueran uno solo. Esto funciona de la misma manera que Combinar Hechizos.
+- **Maestría del Chi:** Recibe Ventaja en todos sus tiros relacionados con Magia Arcana y el daño con hechizos Arcanos aumenta por 1d6. Esto cuenta como si estuviera siempre bajo los efectos de Irradiación Arcana.
 
 ## Evocador IV (+2, 7 mejoras)
 
-3 hechizos Rango IV, Aniquilación Mágica, Cañón de Chi, Maestro Elemental, División Mental, Mente sobre Cuerpo
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores. Aumenta también su DEF por 2. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Evocación y Mente Desencadenada por 1. 
+- **Habilidades Pasivas:** Obtiene las habilidades pasivas Mente sobre Cuerpo y División Mental.
+- **Hechizos:** Aprende el hechizo Cañón de Chi, tres hechizos relacionados con su Especialidad Arcana de Rango V o menos y tres hechizos pertenecientes a cualquier rama Arcana o Elemental de Rango IV o menos. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Aniquilación Mágica:** Una vez por combate puede emplear el hechizo Aniquilación Arcana de manera gratuita. Este puede combinarse con otros hechizos si gasta su uso de Combinar Hechizos.

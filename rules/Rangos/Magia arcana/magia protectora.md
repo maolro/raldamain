@@ -119,9 +119,7 @@ Un sello durará seis rondas o hasta que sea eliminado y un personaje no podrá 
 
 **Duración:** Concentración
 
-Formas cuerdas de chi alrededor de un enemigo para retenerlo y anular sus capacidades mágicas. Un objetivo a distancia media deberá tener éxito en un tiro de Heroísmo o Acrobacias frente a tu Magia Protectora o quedará *agarrado* por cuerdas de chi.
-
-Una criatura *agarrada* por este hechizo no podrá lanzar hechizos ni habilidades Arcanas. La criatura podrá repetir el tiro cada ronda para intentar liberarse y este hechizo cesará si pierdes la concentración. Cabe recalcar que este hechizo no puede evitarse con habilidades Defensivas Arcanas con la excepción de aquellas pertenecientes a Magia Protectora.
+Formas cuerdas de chi alrededor de un enemigo para retenerlo y anular sus capacidades mágicas. Un objetivo a distancia media deberá tener éxito en un tiro de Heroísmo o Acrobacias frente a tu Magia Protectora o quedará *agarrado* por cuerdas de chi. Una criatura *agarrada* por este hechizo no podrá lanzar hechizos ni habilidades Arcanas. La criatura podrá repetir el tiro cada ronda para intentar liberarse y este hechizo cesará si pierdes la concentración. Cabe recalcar que este hechizo no puede evitarse con habilidades Defensivas Arcanas con la excepción de aquellas pertenecientes a Magia Protectora.
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo.
 

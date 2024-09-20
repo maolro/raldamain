@@ -32,8 +32,6 @@ title: Objetos de Chi
 
 - Tiene un espacio extraplanario en su interior que permite guardar una cantidad ilimitada de objetos en ella. Debido al tamaño de su ranura solo podrán caber objetos pequeños en ella. Sacar objetos de una bolsa infinita costará siempre una acción.
 
-## Bomba de Disrupción (precio 2, 3 u)
-
 ## Capa de Invisibilidad (precio 2)
 
 **Ranura:** Espalda
@@ -50,6 +48,14 @@ title: Objetos de Chi
 
 - Su portador recibe Resistencia a efectos Arcanos de todo tipo.
 - Una vez por combate el portador podrá tener éxito automático en un tiro para defenderse de un efecto Arcano. Tras activar esta propiedad se anularán las propiedades de la capa durante el resto del combate.
+
+## Collar de Resurección (precio 3)
+
+**Ranura:** Cuello
+
+**Propiedades:**
+
+- Una vez al día el portador puede anular instantáneamente todo el daño de un ataque que reciba, evitando así todos sus efectos.
 
 ## Gafas de Visión Mejorada (precio 1)
 
@@ -78,7 +84,21 @@ title: Objetos de Chi
 - El portador aprende tres hechizos de Rango II o menos relacionados con una entidad Celestial vinculada al libro. Estos contarán como si tuvieran Rango III para determinar sus modificadores y fuerza.
 - Una vez por ronda el portador puede lanzar un hechizo relacionado con una entidad Celestial vinculada al libro como acción bonus. Deberá seguir pagando su coste en chi.
 
+## Piedra de Anclaje (precio 1)
+
+**Ranura:** Bolsa
+
+**Propiedades:**
+
+- El portador puede anclar un hechizo Duradero que conozca a esta piedra. Esto le permite matener el hechizo activo durante seis rondas sin la necesidad de mantener la concentración. Solo se puede anclar un hechizo a cada piedra y se anulará automáticamente si es destruida.
+
 ## Propulsor (precio 2)
+
+**Ranura:** Espalda
+
+**Propiedades:**
+
+- Su portador obtiene velocidad de vuelo 2 y Ventaja en todos sus tiros de Esquiva. Esto no se acumula con otras habilidades que otorguen vuelo y el portador no puede volar durante más de una hora seguida con este objeto.
 
 ## Respirador (precio 1)
 
@@ -115,3 +135,11 @@ title: Objetos de Chi
 
 - El portador aprende tres hechizos de Rango II o menos relacionados con una entidad Abisal vinculada al tomo. Estos contarán como si tuvieran Rango III para determinar sus modificadores y fuerza.
 - Una vez por ronda el portador puede lanzar un hechizo relacionado con una entidad Abisal vinculada al tomo como acción bonus. Deberá seguir pagando su coste en chi.
+
+## Velo de Sombras (precio 1)
+
+**Ranura:** Cabeza
+
+**Propiedades:**
+
+- El portador puede disfrazarse empleando ilusiones sombrías, alterando así su apariencia y voz. Esto costará una acción y funciona de la misma manera que el hechizo Disfraz Ilusorio con la diferencia que las ilusiones creadas serán tangibles. No obstante, podrán seguir siendo desmentidas de la misma manera.

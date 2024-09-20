@@ -95,11 +95,11 @@ A su vez que infundes terror a tus enemigos tus aliados se llenan de coraje para
 
 *Divina, Pasiva*
 
-El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte explícitamente puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera ni emplear esta habi.
+El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte explícitamente puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera ni emplear esta habilidad.
 
 ## Rango IV
 
-### Hueste divina
+### Hueste Divina
 
 *Divina, Mejora, Duradera*
 
@@ -113,7 +113,7 @@ Eres capaz de fortalecer a tus aliados con energía divina para mejorar notablem
 
 **Empoderar** (1 vigor o chi): Un aliado bajo los efectos de esta habilidad recupera Vitalidad igual a tu Rango + 2. No puedes sanar a la misma persona más de una vez por ronda.
 
-### Aliento de vida
+### Aliento de Vida
 
 *Divina, Resurrección* 
 
@@ -127,7 +127,7 @@ Empleas tu poder divino para devolver el alma de un aliado muerto a su cuerpo, b
 
 **Empoderar** (1 vigor o chi): Puedes afectarte a ti mismo con esta habilidad como acción bonus en respuesta a caer a menos de 1 PV.
 
-### Golpe exiliante
+### Golpe Exiliante
 
 *Divina, Mejora*
 
@@ -141,7 +141,7 @@ Cargas un ataque con suficiente energía divina para exiliar a criaturas ajenas 
 
 Aprendes dos hechizos de Rango III pertenecientes a una magia asociada a tu dios, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Azote ejecutor
+### Azote Ejecutor
 
 *Divina, Mejora*
 
@@ -155,7 +155,7 @@ Empoderas un ataque con tal fuerza para que tu enemigo acabe conociendo en perso
 
 **Empoderar** (1 vigor o chi): Extiendes este efecto una ronda adicional, permitiéndote volver a realizarlo la siguiente vez que impactes a un enemigo sin la necesidad de pagar su coste. 
 
-### Explosión divina
+### Explosión Divina
 
 *Divina, Ataque, Área*
 
@@ -173,7 +173,7 @@ Liberas la energía divina en tu interior en la forma de una devastadora explosi
 
 ## Rango VI
 
-### Avatar divino
+### Avatar Divino
 
 *Divina, Duradera, Mejora*
 

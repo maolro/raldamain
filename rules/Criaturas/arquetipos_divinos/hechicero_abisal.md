@@ -30,10 +30,17 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 
 - **Aumentos Estadísticos:** Incrementa su INT y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 1. 
-- **Habilidades Pasivas:** Obtiene las habilidad pasiva Corrupción Absoluta. 
+- **Habilidades Pasivas:** Obtiene la habilidad pasiva Corrupción Absoluta. 
 - **Hechizos:** Aprende el hechizo Castigo Divino y otros tres hechizos de Rango III relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
 - **Paso Abisal:** Una vez por ronda puede emplear la habilidad Paso Abisal sin la necesidad de pagar chi o vigor. 
 - **Llamar a los Dioses:** Al iniciar el combate puede activar un efecto Ambiental a su alrededor de Rango III o menos relacionado con su patrón abisal. Algunos ejemplos son Controlar los Vientos, Animar plantas, Aura de vida o Aura de Muerte. No necesitará mantener la concentración para que permanezca activo y puede ser contrarrestado de igual ma
 - **Aura del Caos:** Recibe Resistencia a efectos Arcanos y Divinos además que los glifos a distancia cercana tienen una probabilidad del 50% de fallar. Una vez por ronda puede contrarrestar un efecto Arcano de Rango II o menos.
 
 ## Hechicero Abisal IV (+2, 7 mejoras)
+
+- **Aumentos Estadísticos:** Incrementa todas sus estadísticas mentales por 2 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 1.
+- **Intervención Divina:** Tres veces por combate puede tener éxito automático en un tiro defensivo o de habilidad. Podrá también repetir todos los 1 y 2 naturales que obtenga.
+- **Hechizos:** Aprende el hechizo Palabra Divina y otros tres hechizos de Rango IV relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Transformación Abisal:** En cualquier momento del combate puede entrar en una segunda fase más fuerte. Esto le hará entrar en un estado semejante a Transformación Abisal, recibiendo así todas sus ventajas. Dado que no tendrá reserva de chi o vigor dicho estado le permitirá emplear de manera gratuita todos sus hechizos y técnicas de combate de Rango III o inferior una vez adicional por ronda. Solo podrá activar esta habilidad una vez por combate.
+- **Ira de Dios:** Una vez por combate puede lanzar el hechizo Ira de Dios de manera gratuita. Puede emplearla de manera alternativa como reacción para contrarrestar otra habilidad de Rango VI de su elección que no sea mítica. 

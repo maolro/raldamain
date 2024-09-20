@@ -196,7 +196,7 @@ Has alcanzado un nivel de maestría que te permite moldear la magia de todo tipo
 
 ## Rango VI
 
-Tus hechizos de Rango IV reducen su coste en acciones por 1 (mínimo 1) y  aprendes dos hechizos de Rango V pertenecientes a cualquier magia elemental.
+Aprendes dos hechizos de Rango V pertenecientes a cualquier magia elemental.
 
 ### Aniquilación Mágica
 

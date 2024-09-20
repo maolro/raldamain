@@ -33,7 +33,7 @@ En el caso que no conozcas ningún hechizo perteneciente a ambas categorías apr
 
 Incrementa tu estadística de DES y su limitador por 1.
 
-### Infusión tormentosa
+### Infusión Tormentosa
 
 *Innata, Mejora*
 

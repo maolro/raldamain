@@ -1,3 +1,7 @@
+---
+title: Formas Base
+---
+
 # Formas base
 
 ## Animal

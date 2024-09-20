@@ -72,6 +72,19 @@ title: Armas Mágicas
 - Al reducir a un objetivo a 0 PV el arma absorberá inmediatamente su alma, matándolo instantáneamente e impidendo que pueda resucitar. Las almas selladas pueden ser canalizadas con habilidades de Magia de Almas.
 - Cuenta como si tuviera *material superior II* para determinar los efectos que puedan romperla.
 
+## Arma Eléctrica (cualquier arma, precio base + 2)
+
+**Ranura:** Manos
+
+**Daño base:** Aumenta el daño base por un paso
+
+**Propiedades:**
+
+- Inflige 1d6 + 2 daño Eléctrico adicional al impactar. Este daño no se acumula con aquel otorgado por Infusión Tormentosa y Azote Divino.
+- Cada vez que el arma provoque una *herida permanente* provocará que el afectado quede *aturdido* durante una ronda. Este podrá evitarlo teniendo éxito en un tiro de Salud contra el modificador de arma del portador.
+- El portador puede emplear su modificador de Magia de Tormenta para todos los ataques hechos con el arma si es más alto. Esto le permite también modificar el daño base con su estadística de Carisma.
+- Cuenta como si tuviera *material superior I* para determinar los efectos que puedan romperla.
+
 ## Arma Estigia (cualquier arma, precio base + 3)
 
 **Ranura:** Manos
@@ -129,6 +142,7 @@ title: Armas Mágicas
 
 **Propiedades:**
 
+- Es un Arma de Duelo, empleando así el adecuado modificador en tiros con ella. Atacar con ella cuesta una acción.
 - Su daño base es Radiante, haciendo así que cualquier técnica de arma que lo aumente hará que provoque daño Radiante adicional. No obstante, un arma así no puede empoderarse con otros efectos mágicos que no provoquen daño del mismo tipo.
 - Cada vez que impacte a un enemigo le provocará de manera automática una *herida permanente leve*. 
 
