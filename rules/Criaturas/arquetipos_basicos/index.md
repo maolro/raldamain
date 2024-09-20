@@ -37,7 +37,7 @@ La criatura se ha especializado en combatir sobre una montura o la parte inferio
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores. Recibe también una acción adicional.
 - **Movimiento Superior:** Su velocidad de paso, natación o escalada pasa a ser 2 según la montura que tenga. Aumenta su bonificador en tiros de Esquiva por +2 y puede emplear la habilidad Evasión una vez por ronda si se encuentra en terreno despejado. Esto no se acumula con otros usos de Evasión recibidos y los beneficios de esta habilidad se perderán si muere la montura o sufre una *herida permanente* en la pierna.
-- **Carga de Caballería:** Incrementa todas sus estadísticas por 1 junto a sus limitadores. Recibe también una acción adicional. Cada vez que impacte a un objetivo tras moverse un paso en línea recta aumentará su daño base por 1d6 además que puede *desenganchar* como acción bonus. El afectado deberá también tener éxito en un tiro de Heroísmo o Acrobacias frente a su modificador de arma o será empujado un paso y quedará *tropezado*. Si el afectado emplea Parada para defenderse deberá seguir tirando. 
+- **Carga de Caballería:** Cada vez que impacte a un objetivo tras moverse un paso en línea recta aumentará su daño base por 1d6 además que puede *desenganchar* como acción bonus. El afectado deberá también tener éxito en un tiro de Heroísmo o Acrobacias frente a su modificador de arma o será empujado un paso y quedará *tropezado*. Si el afectado emplea Parada para defenderse deberá seguir tirando. 
 
 ## Legendario (+2, no disponible para invocaciones)
 

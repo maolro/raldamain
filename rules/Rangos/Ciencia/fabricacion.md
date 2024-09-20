@@ -16,7 +16,7 @@ Tu mente ávida te ha permitido aprender como funcionan los entresijos de los me
 
 Recibes cuatro ranuras de objeto de Rango I
 
-### Reparación rápida
+### Reparación Rápida
 
 *Fabricación, Toque*
 
@@ -28,7 +28,7 @@ Empleas tus conocimientos técnicos para arreglar rápidamente un objeto dañado
 
 Esta habilidad también puede emplearse para reparar los daños que haya sufrido un constructo, pudiendo así sanarle Vitalidad igual a tu Rango + 2. Si el constructo afectado tiene activa una *herida permanente* o efecto de estado negativo puedes eliminarla si tienes éxito en un tiro de Fabricación contra una dificultad escogida por el DJ según la naturaleza del efecto. Cada uso de esta habilidad solo te permite eliminar un único efecto.
 
-### Piedra de enviar
+### Piedra de Enviar
 
 *Objeto, Espacial*
 
@@ -36,7 +36,7 @@ Una piedra de enviar es un pequeño dispositivo semejante a una gema azulada uni
 
 Si una de las dos piedras es destruida la otra dejará de funcionar, y para reactivarla es necesario colocar un glifo igual en otra piedra de tu elección. Puedes unir una tercera piedra a la conexión gastando una ranura de proyecto adicional en ella llegando hasta un máximo de 4. 
 
-### Imbuir hechizo
+### Imbuir Hechizo
 
 *Objeto, Proyecto*
 
@@ -44,7 +44,7 @@ Empleas tu conocimiento de la magia para imbuir objetos con su poder. Al finaliz
 
 Después que el hechizo sea lanzado tres veces el objeto quedará desactivando, requiriendo que lo repares para que sea empleable de nuevo. Puedes colaborar con otros individuos para crear objetos imbuidos con hechizos que ellos conozcan a costa de consumir una ranura de proyecto adicional. Cabe recalcar que el DJ puede vetar determinadas combinaciones de hechizos y objetos si lo considera inválido.
 
-### Fabricar aleación
+### Fabricar Aleación
 
 *Objeto, Proyecto*
 
@@ -64,7 +64,7 @@ Este dispositivo te permite filtrar el aire y proporciona oxígeno para que pued
 
 Recibes dos ranuras de objeto de Rango II y una ranura adicional de Rango I
 
-### Infusión elemental
+### Infusión Elemental
 
 *Objeto, Proyecto, Mejora*
 
@@ -72,7 +72,7 @@ Infundes un arma o armadura con energía poderes relacionados con un elemento m�
 
 Los efectos exactos de una infusión dependen del objeto escogido. Si la aplicas en un arma esta infligirá 1d6 + Rango daño adicional del mismo tipo que el elemento escogido y obtendrá un efecto crítico igual a un hechizo de Rango I con el mismo tipo. Si la aplicas a una armadura otorgará Resistencia a ese elemento además de Inmunidad a los efectos críticos provocados por hechizos de esa categoría.
 
-### Prótesis mecánica
+### Prótesis Mecánica
 
 *Objeto, Proyecto, Mejora*
 
