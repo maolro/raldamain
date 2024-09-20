@@ -58,12 +58,12 @@ Obtienes también un vínculo con un Espíritu mayor de tu elección, el cual te
 
 **Duración:** Hasta una hora
 
-Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidiendo que pueda ser usado. A continuación se presentan algunos ejemplos de formas animales y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
+Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidiendo que pueda ser usado. Cada forma animal te otorgará dos mejoras de tu elección pertenecientes a la siguiente lista:
 
-- **Águila:** Tu DES pasa a ser 9 si era más baja mientras que tu FUE pasa a ser 1. Recibes velocidad de vuelo 2 y Ventaja en todos tus tiros de Esquiva. Tu tamaño pasará a ser pequeño y el daño base de tus ataques naturales pasa a ser 1d4 daño Cortante.
-- **Oso:** Tu FUE y CON pasan a ser 8 si eran más bajas mientras que tu DES pasa a ser 1. Tu DEF base pasa a ser 8 además que recibes Resistencia a Aflicciones. Tu tamaño pasará a ser grande y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
-- **Lobo:** Tu FUE y DES pasan a ser 7 si eran más bajas. Aumenta tu velocidad por 1 y recibes Ventaja en todos tus tiros de Sigilo y Percepción. Tu DEF base pasa a ser 4 y el daño base de tus ataques naturales pasa a ser 1d8 daño Perforante.
-- **León:** Tu FUE, DES y CON pasan a ser 6 si eran más bajas. Aumenta tu velocidad de salto y escalada por 1 además que recibes Ventaja en todos tus tiros de Acrobacias y Atletismo. Tu DEF base pasa a ser 6 y el daño base de tus ataques naturales pasa a ser 1d8 daño Cortante o Perforante.
+- **Alas de Águila:** Obtienes velocidad de vuelo 2 y Ventaja en todos tus tiros de esquiva.
+- **Armadura Natural:** Tu DEF base pasa a ser 6 si antes era más baja. 
+- **Garras:** Aumenta el daño de tus ataques naturales por un paso y pasarán a infligir daño Cortante o Perforante. 
+- **Resistencia de Oso:** Aumenta tu DEF base por 2 y recibes Resistencia a Aflicciones. 
 
 ### Llamar  a los Espíritus
 

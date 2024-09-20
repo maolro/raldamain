@@ -71,6 +71,17 @@ title: Armaduras Mágicas
 - El portador obtiene Resiestencia a efectos de Fuego y Frío además de efectos Mentales y de Miedo provocados por entidades de origen infernal.
 - Cuenta como si tuviera *material superior II* para determinar los efectos que puedan romperla.
 
+## Armadura Desfasante (ligera, media o pesada, +2 precio)
+
+**Ranura:** Armadura
+
+**Defensa:** Es igual a la DEF de la armadura base + 2.
+
+**Propiedades:**
+
+- El portador puede desfasar su cuerpo una vez por ronda para evitar automáticamente un ataque enemigo que reciba. Esto funciona de la misma manera que el hechizo Desplazamiento.
+- El portador es Inmune al *terreno difícil* y a efectos que impidan que pueda pasar por ellos con normalidad como Muros de Aire y Agua o Campos de Repulsión. Esto no funcionará con barreras compl
+
 ## Armadura Gélida (media, pesada o completa, +1 precio)
 
 **Ranura:** Armadura
@@ -105,6 +116,19 @@ title: Armaduras Mágicas
 - Cuenta como si tuviera *material superior I* para determinar los efectos que puedan romperla.
 
 ## Hábito del Sumo Sacerdote (precio 5)
+
+**Ranura:** Armadura
+
+**Defensa:** Otorga 10 Defensa al portador.
+
+**Reservas:** Aumenta la reserva de chi del portador en 3.
+
+**Propiedades:**
+
+- El portador recibe Ventaja en todos sus tiros relacionados con Magia Divina y se encuentra siempre en *posición defensiva*. Este modificador no se acumula con otros objetos mágicos de efecto similar o con Irradiación de Chi.
+- El portador puede lanzar de manera gratuita todos los hechizos de Rango II o inferior que conozca relacionados con su divinidad. No podrá lanzar el mismo hechizo más de una vez por ronda de esta manera ni empoderarlos gratuitamente.
+- La armadura le otorga al portador un escudo de energía divina que otorga 30 Vitalidad temporal y le permite usar su modificador de Magia Divina para defenderse de todo tipo de efectos. El portador puede pagar 1 chi como reacción para provocar los efectos de Manifestación Divina a un enemigo que le haya impactado exitosamente (si no conoce dicho hechizo tendrá modificador +12). 
+- El portador recibe Resistencia contra efectos Arcanos y Divinos de todo tipo. Una vez por ronda puede pagar cualquier cantidad de chi como reacción para tener éxito automático en un tiro para defenderse de un efecto mágico con el mismo coste. 
 
 ## Túnica del Archimago (precio 5)
 

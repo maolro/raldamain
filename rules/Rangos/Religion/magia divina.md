@@ -63,7 +63,7 @@ Empleas el poder de tu dios para bendecir o castigar a una criatura a distancia 
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
 
-### Consagrar la tierra
+### Consagrar la Tierra
 
 *Divina, Ambiental*
 
@@ -91,7 +91,7 @@ Aprendes dos hechizos de rango II pertenecientes a una magia relacionada con tu 
 
 A través de un ritual de meditación, sacrificio y oración profunda recibes visiones divinas sobre eventos pasados, presentes o futuros. La naturaleza de estas visiones quedará escogida por el máster y pueden ser tan crípticas como desee. Dichas visiones serán más claras si buscas información específica y tienes un objeto o te encuentras en un lugar relacionado aquello que busques. Este ritual solo puede usarse una vez al día y un uso excesivo puede desembocar en la locura.
 
-### Protección divina
+### Protección Divina
 
 *Divina, Sostenida, Defensiva*
 
@@ -146,7 +146,7 @@ Invocas el poder de tu dios para que ejerza su influencia en el campo de batalla
 
 Aprendes dos hechizos de rango IV pertenecientes a una magia relacionada con tu divinidad. Dichos hechizos tendrán la categoría Divina además de aquellas que ya posean.
 
-### Palabra divina
+### Palabra Divina
 
 *Divina, Área, Auditiva, Sónica*
 
@@ -168,7 +168,7 @@ Pronuncias palabras en el lenguaje prohibido de los dioses capaces de ensordecer
 
 **Duración:** Seis rondas
 
-Dejas que el poder de tu dios te posea temporalmente para obtener grandes mejoras a tus habilidades físicas y mágicas. Al lanzar este hechizo recibirás 30 Vitalidad temporal y mientras permanezca activo obtienes Resistencia a efectos Arcanos y Divinos además que tres estadísticas de tu elección pasarán a ser 12. Este hechizo te otorgará también los beneficios de Protector divino sin la necesidad de mantener la concentración.
+Dejas que el poder de tu dios te posea temporalmente para obtener grandes mejoras a tus habilidades físicas y mágicas. Al lanzar este hechizo recibirás 30 Vitalidad temporal y mientras permanezca activo obtienes Resistencia a efectos Arcanos y Divinos además que tres estadísticas de tu elección pasarán a ser 12. Este hechizo te otorgará también los beneficios de Protector Divino sin la necesidad de mantener la concentración.
 
 Los bonificadores de Exaltado durarán hasta que pasen seis rondas o se te acabe la Vitalidad temporal. Cuando este hechizo acabe no podrás volver a lanzarlo hasta que acabe el combate.
 
@@ -178,7 +178,7 @@ Los bonificadores de Exaltado durarán hasta que pasen seis rondas o se te acabe
 
 Aprendes dos hechizos de rango V pertenecientes a una magia relacionada con tu divinidad. Dichos hechizos tendrán la categoría Divina además de aquellas que ya posean. Además, todos tus hechizos Divinos sustituyen sus dados de daño por d8 y aquellos de Rango III cuestan una acción menos para emplear (mínimo 1).
 
-### Ira de dios
+### Ira de Dios
 
 *Divina, Ataque, Área*
 

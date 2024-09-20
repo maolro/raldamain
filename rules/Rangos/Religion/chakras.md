@@ -6,7 +6,7 @@ title: Chakras
 
 ## Rango I
 
-### Activación de chakras 
+### Activación de Chakras 
 
 *Innata, Pasiva*
 
@@ -44,7 +44,7 @@ La energía vital infunde tu fuerza física y la potencia de tus ataques natural
 
 *Chakra 1, Pasiva*
 
-El chakra sacral se encuentra en tu abdomen inferior y se centra en los aspectos de la pasión, la creatividad y tus relaciones con los demás. Al activar este chakra eres capaz de ver los caminos de chi que conectan a todos los seres vivos, otorgándote inmunidad a ataques sorpresa además de la capacidad de identificar toda la magia empleada a una distancia media de ti. Activar este chakra requiere que estes combatiendo en un lugar o junto a una persona con quien sientas un poderoso vínculo emocional. 
+El chakra sacral se encuentra en tu abdomen inferior y se centra en los aspectos de la pasión, la creatividad y tus relaciones con los demás. Al activar este chakra eres capaz de ver los caminos de chi que conectan a todos los seres vivos, otorgándote Inmunidad a ataques sorpresa además de la capacidad de identificar toda la magia empleada a una distancia media de ti. Activar este chakra requiere que estes combatiendo en un lugar o junto a una persona con quien sientas un poderoso vínculo emocional. 
 
 ### **Chakra solar** 
 

@@ -23,7 +23,5 @@ title: Razas Jugables
 
 ## Profundo
 
-## Trasgo
-
 ## Urlok
 

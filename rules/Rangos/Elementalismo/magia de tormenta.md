@@ -15,7 +15,7 @@ Tu control avanzado sobre el aire te ha permitido desviarte de su forma más bá
 
 ## Rango I 
 
-### Toque chispeante
+### Toque Chispeante
 
 *Tormenta, Ataque, Eléctrico, Toque*
 
@@ -31,7 +31,7 @@ Infundes tu mano con electricidad para provocarle una descarga a un enemigo que 
 
 **Empoderar** (1 chi): Aumenta tu alcance a cercano.
 
-### Arco eléctrico
+### Arco Eléctrico
 
 *Tormenta, Ataque, Eléctrico, A distancia*
 
@@ -47,7 +47,7 @@ Formas un arco eléctrico desde tu mano que saltará hacia un enemigo. Haz un at
 
 **Empoderar** (1 chi): Ataca a un objetivo adicional a distancia media con este hechizo.
 
-### Onda trueno
+### Onda Trueno
 
 *Tormenta, Área, Sónico*
 

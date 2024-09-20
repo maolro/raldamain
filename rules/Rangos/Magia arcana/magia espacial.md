@@ -127,7 +127,7 @@ Un ataque infundido con una brecha espacial atravesará hasta la realidad misma,
 
 **Empoderar** (1 chi): Este hechizo afectará un ataque adicional que realices esta ronda, permitiéndote recibir sus efectos de nuevo sin la necesidad de pagar chi.
 
-### Portal múltiple
+### Portal Múltiple
 
 *Espacial, Arcano, Mejora*
 
@@ -159,7 +159,7 @@ Las invocaciones permanecerán en el campo de batalla durante una hora o hasta q
 
 ## Rango IV
 
-### Agujero de gusano
+### Agujero de Gusano
 
 *Espacial, Arcano, Duradero*
 
@@ -177,7 +177,7 @@ Si tienes éxito en el tiro la criatura aparecerá en el lugar deseado mientras 
 
 **Empoderar** (1 chi): Al fracasar un tiro para transportar a otra criatura puedes repetirlo y quedarte con el mejor resultado.
 
-### Cambio de posición
+### Cambio de Posición
 
 *Espacial, Arcana, Defensiva*
 
@@ -195,7 +195,7 @@ Si te encuentras en *posición defensiva* puedes emplear este hechizo para inter
 
 **Empoderar** (1 chi): Intercambias la posición de dos criaturas ajenas a distancia media de ti, las cuales pueden tirar CON para resistir este hechizo si lo desean.
 
-### Cierre dimensional
+### Cierre Dimensional
 
 *Espacial, Arcano, Concentración*
 
@@ -213,7 +213,7 @@ Los efectos de un cierre también perjudicarán tu magia Espacial, provocándote
 
 ## Rango V 
 
-### Crear demiplano
+### Crear Demiplano
 
 *Espacial, Pasiva*
 
@@ -221,7 +221,7 @@ Controlas una dimensión de bolsillo conocida como demiplano que se encuentra en
 
 Además, mientras te encuentres en tu demiplano puedes emplear cualquier habilidad perteneciente a Magia Elemental u Ocultismo para alterar el terreno, pagando la adecuada cantidad de chi y acciones. Algunos ejemplos son *controlar el agua, crear oscuridad, pirotecnia, pilares de tierra, revertir la gravedad* y *cambiar el clima*. Toda alteración o hechizo que lances dentro del demiplano debe estar permitido por el DJ.
 
-### Puerta interdimensional
+### Puerta Interdimensional
 
 *Espacial, Arcano, Concentración*
 
@@ -239,7 +239,7 @@ Mantener abierto este portal permitirá también que otras criaturas e influenci
 - **Ronda 3**: Una criatura nativa al plano escogido entra por el portal. Si eres capaz de Invocar criaturas nativas al plano escogido puedes escoger que una de tus invocaciones pase por el portal. En caso contrario la criatura quedará escogida por el DJ.
 - **Ronda 7**: El portal se desestabiliza, provocando un efecto similar a un efecto de Área de Rango V o menos relacionado con el plano que conectes. El efecto en cuestión queda decidido por el DJ y cuando esto ocurra el portal se cerrará de inmediato.
 
-### Desfase espacial
+### Desfase Espacial
 
 *Espacial, Arcano, Duradero*
 
@@ -253,7 +253,7 @@ Eres capaz de transportar porciones de tu cuerpo a tu demiplano para evitar ataq
 
 ## Rango VI
 
-### Extensión de dominio
+### Extensión de Dominio
 
 *Espacial, Arcano, Ambiental*
 

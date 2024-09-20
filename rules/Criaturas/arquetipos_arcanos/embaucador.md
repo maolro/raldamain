@@ -19,7 +19,7 @@ La criatura es capaz de emplear trucos ilusorios y mentales para engañar y conf
 - **Aumentos Estadísticos:** Incrementa su INT y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Ilusoria y Magia Mental por 1.
 - **Hechizos:** Aprende los hechizos Engaño Ilusorio, Terror Ilusorio, Geas e Invisibilidad. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
-- **Terreno Alucinatorio:** Sus ilusiones aumentan su alcance por un paso y recibe Ventaja en todos sus tiros relacionados con ellas. Estos modificadores no se acumulan con Terreno Alucinatorio.
+- **Maestro de Alucinaciones:** Sus ilusiones aumentan su alcance por un paso y recibe Ventaja en todos sus tiros relacionados con ellas. Estos modificadores no se acumulan con Terreno Alucinatorio.
 - **Poder Fantasmal:** Puede convertir un hechizo adicional cada ronda en Fantasmal sin la necesidad de pagar chi o vigor.
 
 ## Embaucador III (+2, requiere 5 mejoras)
