@@ -23,5 +23,8 @@ title: Razas Jugables
 
 ## Profundo
 
+- **Branquias:** Puede respirar bajo el agua sin dificultades a costa que no podrá pasar más de una hora seguida en la superfície o se ahogará. 
+- **Nacido del Mar:** Tiene velocidad de natación 2 y puede comunicarse con criaturas marinas, las cuales le considerarán un aliado. 
+
 ## Urlok
 

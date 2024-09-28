@@ -23,11 +23,13 @@ La criatura ha renacido como un espectro para atormentar el mundo de los vivos. 
 - **No-Muerto:** Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido y tampoco le afectarán las *heridas permanentes* que no sean provocadas por daño Contundente.
 - **Cuerpo Óseo:** Aumenta el daño de sus ataques naturales por un paso y recibe Resistencia a efectos de las categorías Eléctrico, Frío y Fuego. 
 
-## Gul (+2)
-
 ## Momia (+2)
 
-## Vampiro (+2)
+- **Aumentos Estadísticos:** Incrementa sus estadísticas de FUE y CON por 2 junto a sus limitadores a costa que reduce su DES por 1. Aumenta también sus PV por 2 y su DEF por 4.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Estilo Salvaje y Fortitud por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
+- **No-Muerto:** Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes y de Fuego. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido y recibe Inmunidad a *heridas permanentes*.
+- **Cadáver Viviente:** El daño de todos sus ataques naturales aumenta por un paso pero recibe Desventaja en todos sus tiros de Esquiva. 
+- **Maldición de la Momia:** Cada vez que hiera a un enemigo con un ataque natural este deberá hacer un tiro de Salud frente a un tiro de dificultad igual a su modificador de Fortitud, Nigromancia o Magia Divina o sufrirá la Maldición de la Momia. Mientras esta maldición esté activa el afectado no podrá sanarse además que deberá repetir el tiro cada ronda o sufrirá los efectos de un veneno de CON. Si logra reducirlo a gravedad 0 permanecerá en su cuerpo y al cabo de un día deberá repetir el tiro para evitar sus efectos. Solo puede curarse con habilidades mágicas de Rango II o superior. 
 
 ## Zombi (+2)
 

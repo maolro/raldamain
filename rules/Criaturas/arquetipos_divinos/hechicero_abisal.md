@@ -8,17 +8,17 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 
 ## Hechicero Abisal I (+2)
 
-- **Aumentos Estadísticos:** Incrementa su INT y CAR por 1 junto a sus limitadores.
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Tocado por la Locura.
-- **Hechizos:** Aprende el hechizo Manifestación Divina y otros tres hechizos de Rango I relacionados con su patrón espiritual. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Hechizos:** Aprende el hechizo Manifestación Divina y otros tres hechizos de Rango I relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Magia Divina o Ascendencia Abisal.
 - **Mutación:** Tiene activa una mutación abisal de su elección con fuerza equivalente a la que podría conseguir con la habilidad Mutación.
 - **Poder Antinatural:** Puede sentir la posición y naturaleza de todos los efectos mágicos a distancia media además que recibe *visita a ciegas* en un radio medio.
-- **Guerrero de la Fe:** Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón abisal. Esto funciona de la misma manera que Guerrero de la Fe.
+- **Guerrero de la Fe:** Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón abisal además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que Guerrero de la Fe.
 
 ## Hechicero Abisal II (+2, 3 mejoras)
 
-- **Aumentos Estadísticos:** Incrementa su INT y CAR por 1 junto a sus limitadores.
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 1. 
 - **Habilidades Pasivas:** Obtiene las habilidad pasiva Rasgo Monstruoso Superior. 
 - **Hechizos:** Aprende tres hechizos de Rango II relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi.
@@ -28,7 +28,7 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 
 ## Hechicero Abisal III (+2, 5 mejoras)
 
-- **Aumentos Estadísticos:** Incrementa su INT y CAR por 1 junto a sus limitadores.
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 1. 
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Corrupción Absoluta. 
 - **Hechizos:** Aprende el hechizo Castigo Divino y otros tres hechizos de Rango III relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 

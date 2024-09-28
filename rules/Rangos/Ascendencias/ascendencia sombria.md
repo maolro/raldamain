@@ -10,6 +10,7 @@ Tu existencia ha estado ligada a la oscuridad desde tu nacimiento, encontrándot
 Ascendencia Sombría tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia Sombría mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia Primigenia será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
 
 # Rangos
 

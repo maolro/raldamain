@@ -10,6 +10,7 @@ Sientes una gran afinidad por los espíritus de las aguas de todo el mundo, conv
 Ascendencia de Agua tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia de Agua mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia de Agua será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad.
 
 # Rangos
 

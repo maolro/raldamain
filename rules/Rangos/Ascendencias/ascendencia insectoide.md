@@ -10,6 +10,7 @@ Los insectos han estado presentes en tu vida desde tu nacimiento o tal vez hicie
 Ascendencia Insectoide tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia Insectoide mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia Insectoide será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad.
 
 # Rangos
 

@@ -41,4 +41,4 @@ title: Productos Químicos
 - El consumidor deberá tener éxito en un tiro de Salud contra una dificultad +5 o caerá *inconsciente* de inmediato. Permanecerá en dicho estado hasta que pase una hora o sufra daño de cualquier tipo. 
 - Si el afectado logra evitar el efecto del veneno este permanecerá en su cuerpo durante un día, haciendo así que todos los tiros de dificultad contra venenos del mismo tipo aumenten por 2 (esto se acumula con múltiples dosis).
 
-## Valentía Embotellada (precio 1, 3 unidades)
+## Valentía Embotellada (precio 1, 3 unidades)	

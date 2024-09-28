@@ -10,6 +10,7 @@ Tu mente está conectada con la inteligencia colectiva del universo, transformá
 Ascendencia Akhásica tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia Akhásica mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia Akhásserá igual a la suma de tu estadística de Inteligencia y tu rango en esta habilidad.
 
 # Rangos
 
