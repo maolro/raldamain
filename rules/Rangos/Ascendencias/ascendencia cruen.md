@@ -9,6 +9,7 @@ Ascendencia cruen tiene las siguientes reglas fundamentales que se aplican a cua
 
 - **Poder innato:** Tu rango en Ascendencia cruen mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
 - **Jerarquía familiar:** Obedece instintivamente a los miembros de la misma familia de nivel superior y aquellos de la misma familia de nivel inferior le obedecen instintivamente.
+- **Estadística principal**: Tu modificador en Ascendencia Cruen será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
 
 # Rangos
 

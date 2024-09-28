@@ -10,18 +10,19 @@ De las profundidades de la tierra sale una voz que clama tu nombre y que hace pa
 Ascendencia Infernal tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia Infernal mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia Infernal será igual a la suma de tu estadística de Inteligencia o Carisma y tu rango en esta habilidad.
 
 # Rangos
 
 ## Rango I
 
-### Resistencias infernales
+### Resistencias Infernales
 
 *Innata, Pasiva*
 
 El poder del infierno muta tu cuerpo para otorgarte las resistencias naturales de un demonio. Recibes Resistencia a efectos Mentales, Aflicciones, Fuego y Frío además que las criaturas infernales serán generalmente amistosas hacia ti, reconociéndote como uno de los suyos.
 
-### Pacto del diablo
+### Pacto del Diablo
 
 *Innata, Pasiva*
 
@@ -41,7 +42,7 @@ Aumenta tu estadística de CAR y su limitador por 1.
 
 Infundes tu arma con el poder del infierno para provocar letales heridas. La siguiente vez en esta ronda que impactes con un ataque de cualquier tipo provocarás una herida infernal a tu objetivo, reduciendo su Vitalidad y PV máximos por una cantidad igual al daño provocado e infligiendo una *herida permanente leve*. Al tratarse de una Maldición una herida profana puede ser eliminada por hechizos de Vida con la adecuada magnitud.
 
-### Visión infernal
+### Visión Infernal
 
 *Innata, Pasiva*
 
@@ -51,13 +52,13 @@ Desarrollas los mismos sentidos que un demonio para ver en la oscuridad más pro
 
 Aprendes dos hechizos de Rango II o menos relacionados con tu patrón infernal y puedes emplear vigor en lugar de chi para lanzarlos.
 
-### Alas demoníacas
+### Alas Demoníacas
 
 *Innata, Pasiva*
 
 Manifiestas alas demoníacas semejantes a las de un murciélago para obtener la capacidad de volar. Las alas te otorgarán velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Puedes hacer que las alas aparezcan o desaparezcan como acción bonus y estas se desvanecerán durante una ronda al perder la concentración.
 
-### Siervos del contrato
+### Siervos del Contrato
 
 *Innata, Invocación*
 
@@ -73,7 +74,7 @@ Tu contrato con un señor infernal te permite llamar a sus esbirros para que te 
 
 Aumenta tu estadística de INT y su limitador por 1.
 
-### Presencia majestuosa
+### Presencia Majestuosa
 
 *Innata, Miedo, Duradera*
 
@@ -83,7 +84,7 @@ Aumenta tu estadística de INT y su limitador por 1.
 
 Infundes cada una de tus palabras de esencia demoniaca, sumiendo lentamente a tus oyentes en tu discurso y atrapándolos con tus palabras. De esta manera reforzarás todos tus tiros relacionados con tu estadística de carisma, recibiendo ventaja en ellos, además de que al emplear hechizos mentales estos serán indetectables para tus objetivos. Así mismo aquellos que te escuchen estas palabras quedarán embelesados si es que no se han preparado adecuadamente con antelación, dejando sus mentes vulnerables, pudiendo así ignorar sus resistencias mentales si es que no son directamente hostiles a ti.
 
-### Cadenas del contrato
+### Cadenas del Contrato
 
 *Innata, Mejora*
 
@@ -95,13 +96,13 @@ Ejerces tu control sobre las almas de aquellos que se hayan atrevido a hacer un 
 
 Aprendes dos hechizos de Rango III o menos relacionados con tu patrón infernal y puedes emplear vigor en lugar de chi para lanzarlos.
 
-### Corrupción demoníaca
+### Corrupción Demoníaca
 
 *Innata, Pasiva*
 
 A través de un siniestro ritual corrompes tu alma para adoptar las características de un demonio. Obtienes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a efectos Mentales, Aflicciones, Fuego, Hielo y Miedo. Eres también capaz de comunicarte con criaturas infernales de todo tipo y las de menor nivel te obedecerán sin rechistar. 
 
-**Puertas del infierno:**
+**Puertas del Infierno:**
 
 *Innata, Divina, Ambiental, Espacial*
 

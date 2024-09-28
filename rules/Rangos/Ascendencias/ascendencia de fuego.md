@@ -10,6 +10,7 @@ Guardas relación con los espíritus más caóticos y destructivos de los fuegos
 Ascendencia de Fuego tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia de Fuego mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia de Fuego será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.
 
 # Rangos
 

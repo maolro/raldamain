@@ -14,7 +14,7 @@ Estilo de Armas pesadas tiene las siguientes reglas fundamentales que se aplican
 
 ## Rango I
 
-### Ataque con arma
+### Ataque con Arma
 
 *Pesado, Cuerpo a cuerpo, Físico, Ataque*
 

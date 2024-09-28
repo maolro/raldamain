@@ -10,6 +10,7 @@ Los cielos reclaman tu ser y tu cuerpo se estremece en respuesta ante la llamada
 Ascendencia celestial tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Poder innato:** Tu rango en Ascendencia celestial mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
+- **Estadística principal**: Tu modificador en Ascendencia Celestial será igual a la suma de tu estadística de Sabiduría o Carisma y tu rango en esta habilidad.
 
 # Rangos
 
