@@ -17,7 +17,7 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ## Rango I
 
-### Ira de combate
+### Ira de Combate
 
 *Ira, Innata, Pasiva*
 
@@ -25,7 +25,7 @@ Entras en un estado de furia desquiciada donde únicamente deseas acabar con tod
 
 Combatir en un estado de ira te da grandes ventajas luchando pero a su vez inconvenientes. Mientras te encuentres en ira no podrás concentrarte en ningún efecto ni entrar en *posición defensiva* salvo por otras habilidades relacionadas con Ira. No podrás pasar más de seis rondas seguidas en dicho estado y cuando este acabe reducirás tu Vigor por un valor igual a la cantidad de rondas pasadas. Si tu reserva fuera reducida a un valor negativo quedarás *exhausto* hasta que tomes un descanso, y si esta fuera igual o inferior a tu CON negativa entonces caerás *inconsciente*.
 
-### Frenesí de batalla
+### Frenesí de Batalla
 
 *Innata, Pasiva*
 
@@ -95,7 +95,7 @@ Rompes tus límites físicos para alcanzar niveles sobrehumanos de fuerza durant
 
 Esta habilidad solo podrá activarse estando en Ira y los bonificadores de esta se acumularán con aquellos que recibas en dicho estado. Perderás los beneficios de Superar los Límites si llegas a perder toda la Vitalidad temporal o una habilidad te fuerza a salir de Ira.
 
-### Furia invulnerable
+### Furia Invulnerable
 
 *Ira, Innata, Pasiva*
 

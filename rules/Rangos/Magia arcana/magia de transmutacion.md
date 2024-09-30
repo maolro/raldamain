@@ -13,7 +13,7 @@ Magia de Transmutación se adhiere a un conjunto de reglas fundamentales que sus
 
 ## Rango I
 
-### Reparar la carne
+### Reparar la Carne
 
 *Transmutación, Toque, Sanación*
 
@@ -27,7 +27,7 @@ Reparas los tejidos corporales de un aliado para sanarle las heridas que haya su
 
 **Empoderar** (1 chi): Reduce el nivel de una *herida permanente* que afecte a tu objetivo por un paso.
 
-### Transmutación forzada
+### Transmutación Forzada
 
 *Nigromancia, Toque, Aflicción, Necrótico*
 
@@ -43,7 +43,7 @@ Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas inte
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a medio, o afecta a un objetivo adicional que alcances.
 
-### Inyección mutagénica
+### Inyección Mutagénica
 
 *Transmutación, Toque, Duradera*
 

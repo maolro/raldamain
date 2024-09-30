@@ -26,9 +26,9 @@ Te has decantado por la forma mas compleja en la que se puede encontrar el agua 
 
 **Duración**: Instantáneo
 
-Drenas la sangre de un objetivo al que puedas tocar para debilitarlo gravemente. Tu objetivo debe superar una tirada de CON frente a tu Magia de Sangre o sufrirá 1d6 + Rango daño Necrótico y *sangrado*. Los objetivos que superen su tirada solo sufrirán la mitad del daño y no obtendrán el efecto *sangrado*.
+Drenas la sangre de un objetivo al que puedas tocar para debilitarlo gravemente. Tu objetivo debe superar un tiro de Salud frente a tu Magia de Sangre o sufrirá 1d6 + Rango daño Necrótico y *sangrado*. Los objetivos que superen su tirada solo sufrirán la mitad del daño y no obtendrán el efecto *sangrado*.
 
-**Empoderar **(1 chi): Aumenta el alcance de este hechizo a corto.
+**Empoderar **(1 chi): Aumenta el alcance de este hechizo a cercano.
 
 ### Espasmos Convulsivos
 
@@ -42,11 +42,9 @@ Drenas la sangre de un objetivo al que puedas tocar para debilitarlo gravemente.
 
 **Duración**: Instantáneo
 
-Manipulas la sangre de un enemigo para que su cuerpo sufra espasmos violentos. Un objetivo dentro del alcance debe superar una tirada de CON contra tu Magia de Sangre, o quedará afectado por náuseas hasta el final de su próximo turno, mientras es asediado por espasmos convulsivos.
+Manipulas la sangre de un enemigo para que su cuerpo sufra espasmos violentos. Un objetivo que puedas alcanzar debe superar un tiro de Salud frente a tu Magia de Sangre o quedará afectado por *náuseas* hasta el final de su próximo turno. Si tu objetivo ya está afectado por esta magia puedes elegir entre *tropezarlo*, moverlo un paso en cualquier dirección o hacer que suelte un objeto de tu elección.
 
-Si tu objetivo ya está afectado por esta magia, puedes elegir entre derribarlo, moverlo un paso en cualquier dirección o hacer que suelte un objeto de tu elección.
-
-**Empoderar (1 chi)**: Apunta a una criatura adicional con este hechizo.
+**Empoderar** (1 chi): Afectas a una criatura adicional con este hechizo.
 
 **Defensa Sanguínea**
 

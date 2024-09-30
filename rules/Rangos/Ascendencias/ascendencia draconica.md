@@ -35,7 +35,7 @@ No puedes estar en Furia del dragón más de seis rondas por combate y cuando es
 
 Aprendes dos hechizos de Rango I relacionados con ese elemento
 
-### Aliento del dragón
+### Aliento del Dragón
 
 *Innata, Ataque, Área, Fuego/Frío/Ácido/Eléctrico*
 
@@ -51,7 +51,7 @@ Has desarrollado la capacidad de tener un aliento semejante a un dragón element
 
 **Empoderar** (1 chi o vigor): Aumenta el tamaño de este ataque por un paso además de aumentar su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque. Si tiene tamaño grande la primera vez que empodere es gratuito mientras que si tiene tamaño gigante empoderar hasta dos veces es gratuito.
 
-### Sentidos dracónicos
+### Sentidos Dracónicos
 
 *Innata, Pasiva*
 
@@ -61,13 +61,13 @@ Tus sentidos se agudizan emulando los de un dragón. Tienes un sentido de olfato
 
 Aumenta tu estadística de CON por 1. Tu habilidad *aliento dracónico* convierte sus dados de daño a d8.
 
-### Alas del dragón
+### Alas del Dragón
 
 *Innata, Mejora*
 
 Tu cuerpo es capaz de metamorfosearse temporalmente para que te crezcan alas. Al entrar en *furia del dragón* te crecen unas alas escamosas semejantes a las de un dragón, otorgándote así velocidad de vuelo 1. Las alas también te otorgarán Ventaja en todos tus tiros de Esquiva y a tus tiros de ataque contra criaturas incapaces de volar. 
 
-### Resiliencia dracónica
+### Resiliencia Dracónica
 
 *Innata, Mejora*
 
@@ -79,7 +79,7 @@ Tu cuerpo está cubierto de una sólida armadura escamosa que aumenta notablemen
 
 Aprendes dos hechizos de Rango II relacionados con ese elemento
 
-### Poder elemental
+### Poder Elemental
 
 *Innata, Mejora*
 
@@ -90,11 +90,11 @@ Al entrar en *furia del dragón* tu cuerpo se infundirá con tu elemento princip
 - **Ácido:** Se forma una nube corrosiva en un radio medio que otorga el efecto de estado *roto* a todos los objetos no-mágicos en ella.
 - **Eléctrico:** Desprendes un aura de electricidad estática que *ralentizará* a todas las criaturas que lleven encima objetos metálicos a distancia media.
 
-### Presencia aterradora
+### Presencia Aterradora
 
 *Innata, Pasiva, Miedo, Visual*
 
-Emulas la terrorífica presencia de un dragón para aterrorizar a tus enemigos. Mientras te encuentres en *furia del dragón* todas las criaturas a distancia media que puedan verte deberán tener éxito en un tiro de Voluntad o Intimidar frente a tu modificador de Intimidar o aumentarán su nivel de *miedo* por un paso. 
+Emulas la terrorífica presencia de un dragón para aterrorizar a tus enemigos. Mientras te encuentres en *furia del dragón* todas las criaturas a distancia media que puedan verte deberán tener éxito en un tiro de Voluntad o Intimidar frente a tu modificador de Ascendencia Dracónica o aumentarán su nivel de *miedo* por un paso. 
 
 Cada ronda que permanezcas en dicho estado todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de *miedo* si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate. 
 
@@ -104,7 +104,7 @@ Cada ronda que permanezcas en dicho estado todas las criaturas afectadas deberá
 
 Aumenta tu estadística de CAR por 1. Tu habilidad *aliento dracónico* convierte sus dados de daño a d10.
 
-### Escamas impenetrables
+### Escamas Impenetrables
 
 *Innata, Pasiva*
 
@@ -112,7 +112,7 @@ Tus escamas se vuelven aún más sólidas, haciéndose capaces de detener ataque
 
 **Empoderar** (1 vigor o chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo.
 
-### Magia dracónica
+### Magia Dracónica
 
 *Innata, Pasiva*
 
@@ -122,7 +122,7 @@ Tu ascendencia dracónica potencia tus habilidades mágicas y la hace más destr
 
 Aprendes dos hechizos de Rango III relacionados con ese elemento
 
-### Forma del dragón
+### Forma del Dragón
 
 *Innata, Mejora, Duradera*
 
@@ -136,5 +136,5 @@ Has alcanzado la cima del poder de tu ascendencia, recibiendo la capacidad de tr
 - Aumentas tu tamaño a enorme y tu velocidad de vuelo por 1
 - Recibes seis usos de la habilidad *escamas impenetrables* sin la necesidad de gastar chi además que tu DEF pasa a ser 14.
 - Eres inmune a heridas permanentes y efectos de estado provocados por armas que no estén hechas para matar dragones. 
-- Recibes las acciones *garra* (1 Acción, +19, 1d10 + 14 cortante), *mordisco* (1 acción, +19, 2d6 + 14 perforante y *agarra*) y *cola* (1 acción, +19, 1d10 + 14 contundente, empuja y tropieza DC +19). Aprendes también todas las técnicas de Rango II o menos de Estilo salvaje y puedes usarlas sin la necesidad de pagar vig
+- Recibes las acciones *garra* (1 Acción, +19, 1d10 + 14 cortante), *mordisco* (1 acción, +19, 2d6 + 14 perforante y *agarra*) y *cola* (1 acción, +19, 1d10 + 14 contundente, empuja y tropieza DC +19). Aprendes también todas las técnicas de Rango II o menos de Estilo salvaje y puedes usarlas sin la necesidad de pagar vigor.
 - Tu aliento pasa a hacer 3d10 + CON daño del tipo escogido a costa de requerir una ronda de recarga. Este además tratará todas las resistencias que tengan tus objetivos como si fueran de un nivel inferior.
