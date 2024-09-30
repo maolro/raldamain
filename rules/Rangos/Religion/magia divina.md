@@ -58,7 +58,7 @@ Empleas el poder de tu dios para bendecir o castigar a una criatura a distancia 
 
 - Tu objetivo se cura de un efecto de estado negativo que tenga activo.
 - Intentas eliminar una Maldición o efecto Arcano Duradero que tenga activo tu objetivo. Deberás superar el modificador mágico del lanzador de dicho efecto con un tiro de Magia divina.
-- Tu objetivo debe tener éxito en un tiro de Salud, Concen frente a tu Magia Divina o sufrirá un efecto de estado negativo entre *cegado*, *confundido*, *ralentizado*, *quemado*, *sangrado*, *enfermado* o *fatigado*. El afectado podrá tirar de nuevo cada ronda para intentar liberarse de la maldición.
+- Tu objetivo debe tener éxito en un tiro de Salud o Voluntad frente a tu Magia Divina o sufrirá un efecto de estado negativo entre *cegado*, *confundido*, *ralentizado*, *quemado*, *sangrado*, *enfermado* o *fatigado*. El afectado podrá tirar de nuevo cada ronda para intentar liberarse de la maldición.
 - Tu objetivo debe tener éxito en un tiro de Salud frente a tu Magia Divina o reduces una de sus Resistencias por un paso durante el resto del combate. Solo podrás escoger Resistencias a magias relacionadas con tu dios.
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.

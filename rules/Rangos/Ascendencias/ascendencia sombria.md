@@ -64,7 +64,7 @@ Aprendes los hechizos Capullo sombrío y Bola sombra
 
 **Coste:** 2 chi o vigor
 
-Obtienes la capacidad de cambiar temporalmente las características de tu cuerpo para que este se asemeje al de un no-muerto. Mientras esta habilidad permanezca activa recibes Inmunidad a los efectos de las categorías Necrótico y Frío además que el daño Necrótico te sana Vitalidad en lugar de herirte. Además, si empiezas tu turno en un lugar afectado por un hechizo Sombrío te sanarás Vitalidad igual a tu Rango. 
+Obtienes la capacidad de cambiar temporalmente las características de tu cuerpo para que este se asemeje al de un no-muerto. Mientras esta habilidad permanezca activa recibes Inmunidad a los efectos de las categorías Necrótico y Frío además que el daño Necrótico te sana Vitalidad en lugar de herirte. Recibirás también Ventaja en todos los tiros relacionados con Magia Sombría. Además, si empiezas tu turno en un lugar afectado por un hechizo Sombrío te sanarás Vitalidad igual a tu Rango. 
 
 No obstante, transformar tu cuerpo para que se asemeje a un no-muerto es un arma de doble filo al obtener también sus debilidades. Por ello obtendrás también Vulnerabilidad a efectos Radiantes y no podrás sanarte por efectos que no sean Necróticos. Activar o desactivar esta habilidad cuesta una acción bonus.
 
