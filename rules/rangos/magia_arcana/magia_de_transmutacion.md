@@ -29,7 +29,7 @@ Reparas los tejidos corporales de un aliado para sanarle las heridas que haya su
 
 ### Transmutación Forzada
 
-*Nigromancia, Toque, Aflicción, Necrótico*
+*Transmutación, Toque, Aflicción, Necrótico*
 
 **Coste:** 1 acción
 

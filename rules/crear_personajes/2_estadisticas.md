@@ -50,7 +50,5 @@ La Sabiduría (SAB) mide la intuición y la perspicacia del personaje. Esta esta
 
 El Carisma (CAR) mide la elocuencia y voluntad del personaje Esta estadística es clave para la magia elemental y los rangos relacionados con la interacción social. Los tiros de carisma son aquellos relacionados con convencer o engañar a otras personas empleando tu labia. También se añadirá a los tiros defensivos para resistir el miedo.
 
-```html
-<div style="page-break-after: always"></div>
-```
+<div style="page-break-after: always; break-after: page;"></div>
 

@@ -1,5 +1,4 @@
 ---
 title: Religión
-layout: summary
 ---
 

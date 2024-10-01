@@ -17,7 +17,7 @@ La criatura está compuesta de ácido corrosivo, careciendo así de cuerpo físi
 
 ## Esencia de Ácido I (+2)
 
-- **Aumentos Estadísticos:** Incrementa su DES, CON y CAR por 1 junto a sus limitadores. Incrementa también sus PV, Vitalidad y DEF p
+- **Aumentos Estadísticos:** Incrementa su DES, CON y CAR por 1 junto a sus limitadores. Incrementa también sus PV, Vitalidad y DEF por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Ácido por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Aspecto Primigenio.
 - **Hechizos:** Aprende los hechizos Escupitajo Ácido, Toque Corrosivo y Aliento Tóxico. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.

@@ -168,3 +168,5 @@ Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de té
 
 Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
 
+<div style="page-break-after: always; break-after: page;"></div>
+
