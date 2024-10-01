@@ -1,7 +1,8 @@
 ---
-title: Ascendencia Abisal	
-category: Ascendencias
+title: Ascendencia Abisal
 ---
+
+<style>body {text-align: justify}</style>
 
 La llamada de la sangre de entidades olvidadas hace eones te reclama desde la parte mas oscura y siniestra de la existencia, tentándote con la oportunidad de cumplir tus más oscuros deseos. Transformando tu cuerpo y empujando tu mente hacia los límites de la razón, cada vez te sientes más atraído por esas voces en tu cabeza, esas voces que te prometen conocimiento, que te prometen poder, que te prometen la única y autentica verdad. 
 
