@@ -2,6 +2,8 @@
 title: Guerrero Espiritual
 ---
 
+<style>body {text-align: justify}</style>
+
 # Mejoras
 
 ## Guerrero Espiritual I (+2)
