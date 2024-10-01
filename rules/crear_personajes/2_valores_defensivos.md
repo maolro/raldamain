@@ -2,6 +2,8 @@
 title: Valores defensivos
 ---
 
+<style>body {text-align: justify}</style>
+
 El siguiente paso para crear un personaje es determinar los puntos de vida (PV), la Vitalidad y la defensa (DEF). Estos tres valores son imprescindibles para un combate y miden la capacidad de aguante que tiene el personaje. La cordura es una cuarta estadística que representa la resistencia mental de un personaje frente a efectos mentales, pero su uso será menos común y solo entrará en juego debido a determinadas habilidades que afecten a la mente.
 
 ## **Puntos de vida (PV)** 
@@ -23,3 +25,7 @@ La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la 
 ## **Cordura** 
 
 La Cordura representa la resiliencia mental de un personaje frente a hechizos psíquicos y horrores antinaturales. Esta equivale a 2 + nivel + INT y cada vez que esta sea reducida a 0 el personaje recibirá una [locura](https://raldamain.com/rules/Reglas%20adicionales/locura.html). A diferencia de otras estadísticas la cordura se sana de manera más lenta, recuperando solo un punto de cordura con cada descanso largo realizado (+1 por cada tres niveles por encima de 1). Como regla general la cordura se restaurará por completo al cabo de una semana.
+
+```html
+<div style="page-break-after: always"></div>
+```

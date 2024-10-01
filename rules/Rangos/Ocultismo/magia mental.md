@@ -64,7 +64,7 @@ Aumentas tus defensas mentales frente a intrusiones enemigas. Mientras este hech
 
 ### Sugestión
 
-*Mental, Arcana*
+*Mental, Duradero*
 
 **Coste:** 1 acción y 1 chi
 
@@ -94,7 +94,7 @@ Eres capaz de emplear tus conocimientos de magia mental para restaurar mentes da
 
 ### Alterar Emociones
 
-*Mental*
+*Mental, Duradero*
 
 **Coste:** 1 acción y 1 chi
 

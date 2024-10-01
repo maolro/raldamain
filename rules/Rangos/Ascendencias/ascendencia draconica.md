@@ -15,7 +15,7 @@ Ascendencia Dracónica tiene las siguientes reglas fundamentales que se aplican 
 
 Aumenta tu estadística de FUE por 1.
 
-### Aspecto dracónico
+### Aspecto Dracónico
 
 *Innata, Pasiva*
 
@@ -23,7 +23,7 @@ La herencia dracónica en tu interior se empieza a manifestar, otorgándote algu
 
 Recibirás Resistencia a todos los efectos de la misma categoría que tu elemento principal además de ser inmune a sus efectos críticos. Podrás también emplear tu Parada física para defenderte de ataques pertenecientes a cualquier categoría contra la cual tengas Resistencia. Si conoces hechizos relacionados con él puedes lanzarlos empleando vigor en lugar de chi.
 
-### Furia del dragón
+### Furia del Dragón
 
 *Innata, Mejora*
 

@@ -55,11 +55,11 @@ Transmutas forzosamente el cuerpo de un enemigo para hacerle graves heridas inte
 
 Alteras la fisiología de una criatura que toques para mejorar sus capacidades básicas. La mejora otorgada permanecerá activa durante una hora y una misma criatura no puede tener más de tres mejoras activas a la vez. Puedes escoger la naturaleza exacta de la mejora otorgada siempre y cuando cuente con la aprobación del DJ. A continuación se presentan algunos ejemplos de mejoras que puedes otorgar.
 
-- **Visión nocturna:** Desarrollas sentidos especiales para ver en la oscuridad o en entornos de baja visibilidad sin dificultades.
-- **Armas naturales:** Te crecen garras, colmillos o espinas que puedes emplear para atacar a tus enemigos, aumentando el daño de tus ataques Marciales por un paso y pudiendo infligir daño del tipo que escojas.
-- **Armadura natural:** Tu cuerpo aumenta notablemente su resistencia al daño, aumentando así tu DEF y tus PV por un valor igual a tu Rango de Transmutación + 1.
-- **Inyectar veneno:** Eres capaz de inyectar un veneno a los enemigos que logres herir. Dicho veneno será del tipo que escojas y tendrá gravedad igual a tu modificador de Transmutación.
-- **Movimiento especial:** Alteras tu cuerpo para mejorar tu movilidad en un ámbito específico, aumentando así tu velocidad de escalada o natación por un paso.
+- **Visión Nocturna:** Desarrollas sentidos especiales para ver en la oscuridad o en entornos de baja visibilidad sin dificultades.
+- **Armas Naturales:** Te crecen garras, colmillos o espinas que puedes emplear para atacar a tus enemigos, aumentando el daño de tus ataques Marciales por un paso y pudiendo infligir daño del tipo que escojas.
+- **Armadura Natural:** Tu cuerpo aumenta notablemente su resistencia al daño, aumentando así tu DEF y tus PV por un valor igual a tu Rango de Transmutación + 1.
+- **Inyectar Veneno:** Eres capaz de inyectar un veneno a los enemigos que logres herir. Dicho veneno será del tipo que escojas y tendrá gravedad igual a tu modificador de Transmutación.
+- **Movimiento Especial:** Alteras tu cuerpo para mejorar tu movilidad en un ámbito específico, aumentando así tu velocidad de escalada o natación por un paso.
 
 **Empoderar** (1 chi): Cambia la mejora que tenga activa una criatura que puedas tocar por otra de tu elección.
 

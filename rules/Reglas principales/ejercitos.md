@@ -21,7 +21,7 @@ Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los
 ## Infantería Ligera
 
 - **Coste base:** 4
-- **Tiro base:** 1d6 Combate, 1d6 A Distancia (alcance 2)
+- **Tiro base:** 1d6 Combate, 2d6 A Distancia (alcance 2)
 - **Cohesión:** 2
 - **Movimiento:** 3
 - **Habilidades especiales:** Todoterreno
@@ -128,7 +128,7 @@ Tiene un ataque A Distancia con alcance 4 y tiro de combate igual al suyo base. 
 
 ## Asesino (+1)
 
-Puede oculta en cualquier terreno una vez por ronda si el terreno lo permite y recibe +1d6 al tiro al atacar en la primera ronda.
+Puede ocultarse una vez por ronda si el terreno lo permite y recibe +1d6 en sus tiros de combate en la primera ronda que ataque.
 
 ## Caballería (+2)
 
@@ -188,7 +188,7 @@ Puede emplear su ataque a distancia para cambiar el terreno en un espacio a esa 
 
 ## Terror (+1)
 
-Cada vez que una unidad enemiga se enfrente a él su comandante debe hacer un tiro de moral o queda Desmoralizada una ronda.
+Cada vez que una unidad enemiga se enfrente a él su comandante debe hacer un tiro de moral contra su tiro de o queda Desmoralizada una ronda.
 
 ## Todoterreno (+1)
 

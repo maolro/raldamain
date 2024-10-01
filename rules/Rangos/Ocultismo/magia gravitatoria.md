@@ -91,7 +91,7 @@ Manipulas la fuerza gravitatoria que afecta a una criatura u objeto, haciendo as
 - **Reducir peso:** Reduces la fuerza gravitatoria que afecta a tu objetivo, disminuyendo su peso a la mitad y aumentando su movilidad. Mientras dure este hechizo recibirá velocidad de Salto 1 y Ventaja en todos sus tiros de Esquiva, Acrobacias y Sigilo a costa de obtener Vulnerabilidad a Maniobras. Los objetos afectados reducirán su peso de la misma manera, contando como si fueran de un tamaño inferior y llegando a flotar si son particularmente pequeños
 - **Aumentar peso:** Aumentas la fuerza gravitatoria que afecta a tu objetivo, duplicando su peso y haciendo que se mueva más lento. Mientras dure este hechizo recibirá Resistencia a Maniobras a costa que cada movimiento le costará una acción adicional. Los objetos afectados aumentarán su peso de la misma manera, contando como si fueran de un tamaño superior. Si afectas un objeto o criatura particularmente pequeña que esté volando esta caerá al suelo de inmediato.
 
-### Ancla gravitatoria
+### Ancla Gravitatoria
 
 *Gravedad, Maniobra, Duradero, Físico*
 
@@ -109,7 +109,7 @@ Si mantienes la concentración en este hechizo puedes prolongar sus efectos hast
 
 **Empoderar** (1 chi): Afecta a una criatura adicional con este hechizo en el momento que lo lances. Si ya está activo puedes forzar a un enemigo afectado por el hechizo a repetir el tiro y *tropezarlo* una ronda en caso que lo falle además de infligirle 1d6 + INT daño contundente.
 
-### Campo de repulsión
+### Campo de Repulsión
 
 *Gravedad, Defensivo, Duradero, Maniobra*
 
