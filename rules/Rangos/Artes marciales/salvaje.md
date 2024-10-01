@@ -120,7 +120,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 **Coste:** 2 vigor
 
-Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. Al impactar a un objetivo aumenta el daño de tu ataque por 1d6 y perderá un *contador de escudo* en el caso que los tenga. Tu objetivo también deberá hacer un tiro de Salud frente a tu modificador de Estilo salvaje o perderá inmediatamente un efecto o hechizo Duradero que actualmente tenga activo.
+Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. Al impactar a un objetivo aumenta el daño de tu ataque por 1d6 y perderá un *contador de escudo* en el caso que los tenga. Tu objetivo también deberá hacer un tiro de Salud frente a tu modificador de Estilo salvaje o perderá inmediatamente un efecto o hechizo Duradero que actualmente tenga activo. En el caso que lleve una armadura esta pasará a estar *rota*.
 
 ### Mataleón
 

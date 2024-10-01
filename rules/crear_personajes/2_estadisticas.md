@@ -2,7 +2,7 @@
 title: Las seis estadísticas
 ---
 
-
+<style>body {text-align: justify}</style>
 
 Para empezar el proceso de creación de un personaje el primer paso consiste en calcular las estadísticas, seis valores que indican los atributos más básicos de tu personaje y se usarán para todos los rangos y talentos. Estas representan su potencial interno y dependiendo de la manera que se asignen definirán aspectos fundamentales sobre el físico y la personalidad de un personaje.
 
@@ -50,5 +50,7 @@ La Sabiduría (SAB) mide la intuición y la perspicacia del personaje. Esta esta
 
 El Carisma (CAR) mide la elocuencia y voluntad del personaje Esta estadística es clave para la magia elemental y los rangos relacionados con la interacción social. Los tiros de carisma son aquellos relacionados con convencer o engañar a otras personas empleando tu labia. También se añadirá a los tiros defensivos para resistir el miedo.
 
-
+```html
+<div style="page-break-after: always"></div>
+```
 

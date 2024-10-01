@@ -65,7 +65,7 @@ Golpeas el suelo con gran fuerza para generar un terratemblor. Todas las criatur
 
 ## Rango II
 
-### Muro de piedra
+### Muro de Piedra
 
 *Tierra, Defensivo*
 
@@ -99,7 +99,7 @@ Esta habilidad se puede utilizar de manera defensiva para protegerte a ti mismo 
 
 La tierra en un punto dentro del alcance entra en erupción furiosamente, atacando a todas las criaturas en un cilindro mediano centrado en él. Este ataque inflige 2d6 + SAB de daño contundente al impactar y transforma la tierra en un radio pequeño centrado en el punto en terreno difícil.
 
-Este ataque es especialmente efectivo contra criaturas voladoras, ya que puede derribarlas. Si dañas a una criatura voladora con este ataque, deben intentar una tirada de CON contra tu magia de tierra. En caso de fracaso, caerán inmediatamente del cielo, sufriendo el daño de caída adecuado y quedando en el suelo *aturdida*.
+Este ataque es especialmente efectivo contra criaturas voladoras ya que puede derribarlas. Si dañas a una criatura voladora con este ataque debe tener éxito un tiro de Salud contra tu Magia de Tierra o caerá Inmediatamente del cielo, sufriendo el daño de caída adecuado y quedando en el suelo *aturdida*.
 
 **Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cilindro grande.
 

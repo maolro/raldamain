@@ -109,7 +109,7 @@ Este ataque puede potenciarse aún más si cargas la bola de fuego antes de lanz
 
 **Empoderar** (1 chi): Al emplear este hechizo lanzas una bola de fuego adicional en una dirección diferente para atacar a otros objetivos. Estará tan cargada como tu bola de fuego original.
 
-### Látigo flamígero
+### Látigo Flamígero
 
 *Fuego, Ataque, Duradero*
 
