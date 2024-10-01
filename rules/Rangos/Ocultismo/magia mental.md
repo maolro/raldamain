@@ -1,11 +1,6 @@
 ---
 title: Magia Mental
-image: magia_mental.jpg
 ---
-
-```html
-<img align="right" width="100" height="100" src="magia_mental.jpg">
-```
 
 Tu has decidido caminar por una senda algo diferente al de el resto de escuelas prefiriendo centrarte mas en que se encuentra dentro de nuestro cuerpo y el como funciona en lugar de mirar hacia que nos rodea. Mediante ligeras modificaciones en el chi interno de las personas has conseguido encontrar las partes exactas que se relacionan con la mente del individuo, tanto de su comportamiento como de su memoria y no solo has sido capaz de localizarla sino que también has encontrado una forma de alterarla. 
 
