@@ -34,7 +34,7 @@ Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcan
 
 *Duelo, Pasiva*
 
-Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo usando Parada puedes hacer también un tiro de Esquiva y quedarte con el resultado que más te convenga. Esto te permite también usar habilidades pertenecientes a Reflejos para en tus tiros de Parada.
+Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo usando Parada puedes tirar con una segunda reacción defensiva de tu elección y quedarte con el resultado que más te convenga. La reacción defensiva debe ser capaz de detener el ataque en cuestión y podrás emplear reacciones defensivas relacionadas con ella. Algunos ejemplos son Esquiva, Parada con Escudo o Parada con otras habilidades mágicas.
 
 ### Truco de Espada
 

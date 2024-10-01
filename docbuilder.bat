@@ -4,7 +4,7 @@
 set output_file=combined_document.docx
 
 :: Initialize a temporary file list
-set file_list=temp_file_list.txt
+set file_list=""
 
 :: Define the root directory to search (change this to your specific path)
 set "rootDirectory=C:\Users\matia\Documents\GitHub\raldamain\rules"

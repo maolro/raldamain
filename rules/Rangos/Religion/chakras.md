@@ -131,3 +131,6 @@ El chakra de la armonía es uno de los chakras externos, que representa el balan
 *Chakra 10, Pasiva*
 
 El mas poderoso de los doce chakras, uno que actua como un factor unificador entre el resto y que representa el poder del mismísimo Fuego Celestial. Al emplear este chakra una gran cantidad de energía comenzará a inundar tu cuerpo, al costo de deteriorarlo rápidamente. Mientras este chakra permanezca activo recibirás un bonificador de +10 a tiros de ataque, defensa y daño, además de que una vez por ronda podrás ignorar una barrera mítica para efectuar uno de tus golpes, al costo de que la siguiente ronda sufrirás una herida permanente leve que no podrá sanarse. Para poder despertar este chakra deberás estar dispuesto a aceptar tu propia muerte y nunca echarte atrás, incluso en situaciones que podrían parecer imposibles.  
+
+<div style="page-break-after: always; break-after: page;"></div>
+

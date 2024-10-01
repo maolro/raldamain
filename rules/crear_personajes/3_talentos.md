@@ -54,6 +54,5 @@ En este apartado se especificarán todos los talentos diferentes que se pueden e
 | Trastear              | INT                  | Reparar objetos rotos, fabricar objetos sencillos, aprender las propiedades de aparatos complejos |
 | Voluntad              | CAR                  | Mantenerte firme ante situaciones espantosas, inspirar a tus aliados, motivarte para seguir adelante |
 
-```html
-<div style="page-break-after: always"></div>
-```
+<div style="page-break-after: always; break-after: page;"></div>
+

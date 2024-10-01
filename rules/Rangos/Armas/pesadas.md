@@ -44,7 +44,7 @@ Pones el peso de tu cuerpo sobre el arma para desequilibrar a un enemigo. Al imp
 
 ## Rango II
 
-### Gran barrido
+### Gran Barrido
 
 *Pesado, Mejora, Físico, Área*
 
@@ -52,7 +52,7 @@ Pones el peso de tu cuerpo sobre el arma para desequilibrar a un enemigo. Al imp
 
 Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te rodean. Tu siguiente ataque con arma afectará a todas las criaturas en un radio corto e infligirá 1d6 puntos de daño adicional al impactar. Si un enemigo elige emplear Parada para detener tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del que hayan obtenido.
 
-### Golpe aturdidor
+### Golpe Aturdidor
 
 *Pesado, Mejora, Físico, Aturdidor*
 
@@ -60,7 +60,7 @@ Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te ro
 
 Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador en Armas pesadas o quedará *aturdido* durante una ronda. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Contundente.
 
-### Tajo feroz
+### Tajo Feroz
 
 *Pesado, Mejora, Físico*
 
@@ -68,17 +68,17 @@ Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras 
 
 Hundes tu espada en la carne de un enemigo para infligirle graves heridas. Tras herir a un enemigo con tu arma este sufrirá una *herida permanente leve* y el efecto *sangrado*. Si tu enemigo lleva armadura ligera recibirá en su lugar una *herida permanente media*. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Cortante.
 
-### Reposición forzosa
+### Reposición Forzosa
 
 *Pesado, Mejora, Físico*
 
 **Coste**: 1 vigor
 
-Extiendes tu alcance para obligar a un enemigo que esquiva a reposicionarse, dejándolo temporalmente vulnerable a ataques adicionales. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador en Armas pesadas o se mueve un paso en la dirección que escojas y saldrá inmediatamente de *posición defensiva*.  
+Extiendes tu alcance para obligar a un enemigo que esquiva a reposicionarse, dejándolo temporalmente vulnerable a ataques adicionales. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador en Armas Pesadas o se mueve un paso en la dirección que escojas y saldrá inmediatamente de *posición defensiva*.  
 
 ## Rango III
 
-### Golpe demoledor
+### Golpe Demoledor
 
 *Pesado, Mejora, Físico*
 

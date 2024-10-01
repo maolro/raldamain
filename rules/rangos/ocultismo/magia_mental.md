@@ -2,6 +2,8 @@
 title: Magia Mental
 ---
 
+<style>body {text-align: justify}</style>
+
 <img src="C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\Ocultismo\magia_mental.jpg" alt="magia_mental" style="zoom:30%;" align="right"/>Tu has decidido caminar por una senda algo diferente al de el resto de escuelas prefiriendo centrarte mas en que se encuentra dentro de nuestro cuerpo y el como funciona en lugar de mirar hacia que nos rodea. Mediante ligeras modificaciones en el chi interno de las personas has conseguido encontrar las partes exactas que se relacionan con la mente del individuo, tanto de su comportamiento como de su memoria y no solo has sido capaz de localizarla sino que también has encontrado una forma de alterarla. 
 
  A medida que encuentras mas sujetos en los que poder practicar sin que otras personas se enteren de ello tus conocimientos se van volviendo mas extensos, como sobrecargar la mente o como detectar los pensamientos mas simples de la mente humana ya no te parece tan sorprendente y has decidido ir a por mas, encontrando las formulas exactas que te permitan llevar a los humanos que te rodean a seguir tu voluntad sin que ellos siquiera sean conscientes de que están siendo manipulados o incluso haciéndoles creer que es su propio voluntad lo que están siguiendo, sin embargo siempre hay que tener una pequeña carta bajo la manga por si algo sale mal y resulta que todos los humanos tienen un punto débil fácil de encontrar para ti en lo mas recóndito de tu mente que si se daña probablemente no les permitirá volver a ser los mismos.
@@ -286,3 +288,5 @@ Todos tus hechizos Mentales de Rango IV reducen su coste en acciones por 1 (mín
 Enfocas todo el poder de tu mente en una ráfaga psíquica que demolerá las capacidades de pensar y actuar de todos tus enemigos. Todos los objetivos a distancia media de ti deberán tener éxito en un tiro de Concentración o Averiguar intenciones o reducirán su cordura por 1d10 + INT y quedarán afectados por otro hechizo Mental que conozcas de Rango III o menos, forzándoles a tirar de nuevo contra él (no necesitarás pagar chi o acciones para ese hechizo). 
 
 Ráfaga mental permanecerá activa mientras mantengas la concentración y podrás repetir sus efectos al principio de tu turno. Si logras reducir la cordura de un objetivo a 0 con este hechizo puedes provocarle un derrame cerebral que lo matará instantáneamente. Además, mientras este hechizo permanezca activo todas las criaturas sin Resistencia a efectos Mentales serán incapaces de concentrarse debido al constante ruido mental que les provocas.
+
+<div style="page-break-after: always; break-after: page;"></div>

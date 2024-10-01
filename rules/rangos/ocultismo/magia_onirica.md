@@ -239,3 +239,5 @@ Reuniendo la energía onírica en un punto convocas a una criatura capaz de enca
 **Duración:** Hasta que sea eliminada
 
 Habiendo alcanzado la cima de tus estudios te has vuelto en uno de los señores del plano onírico, pudiendo manejarlo a tu antojo y usarlo en toda su extensión contra tus enemigos. Al hacerlo todos tus enemigos que se encuentren en el alcance del hechizo deberán defenderse de un Duelo psíquico o serán arrastrados al plano onírico. Mientras el duelo se esté llevando a cabo obtendrás los beneficios de una habilidad de mejora de rango VI de otra rama, como podría ser forma elemental, forma abisal, avatar divino, etc.	
+
+<div style="page-break-after: always; break-after: page;"></div>
