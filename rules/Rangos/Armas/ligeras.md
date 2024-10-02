@@ -33,7 +33,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 *Pasiva, Ligera*
 
-Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemigos para herirles con mayor gravedad. Cada vez que realices un ataque combinado con dos o más aliados o impactes a un enemigo incapaz de defenderse aumentarás el nivel de todas las *heridas permanentes* infligidas por un paso. Puedes también tirar tanto Esquiva como Parada para defenderte de un ataque enemigo y quedarte con el resultado que más que convenga siempre que sea posible emplear ambas técnicas.
+Tu estilo de combate se centra en aprovechar cada apertura que dejan tus enemigos para infligirles un mayor daño. Cada vez que realices un ataque junto con dos o más aliados, o impactes a un enemigo incapaz de defenderse, aumentarás el nivel de todas las *heridas permanentes* infligidas en un paso. Además, puedes usar tanto Esquiva como Parada para defenderte de un ataque enemigo y quedarte con el resultado más favorable, siempre que sea posible emplear ambas técnicas.
 
 ### Golpe Penetrante
 
@@ -41,7 +41,7 @@ Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemi
 
 **Coste:** 1 vigor
 
-Apuntas tu ataque para que penetre los puntos débiles de las defensas enemigas. Al impactar con un ataque hecho con un arma Ligera puedes ignorar el bonificador de DEF proveniente de armaduras que tenga tu enemigo, haciéndole daño de manera directa. La defensa otorgada por fuentes diferentes se seguirá aplicando a criterio del DJ.
+Apuntas tu ataque hacia los puntos débiles de tu enemigo para atravesar sus defensas. Al impactar con un ataque hecho con un arma Ligera puedes ignorar la Defensa proporcionada por la armadura que lleve tu objetivo, infligiendo el daño de manera directa. La defensa otorgada por otras fuentes se aplicará a discreción del DJ.
 
 ## Rango II
 
