@@ -1,0 +1,162 @@
+C:\Users\matia\Documents\GitHub\raldamain\rules\crear_personajes\1_hoja_personaje.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\crear_personajes\2_estadisticas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\crear_personajes\2_valores_defensivos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\crear_personajes\3_talentos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\crear_personajes\4_razas y culturas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\crear_personajes\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\formas_base.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\razas_jugables.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\antimagico.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\cronomago.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\embaucador.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\evocador.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\transmutador.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_arcanos\viajero_planar.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\acorazado.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\arquero.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\artista_marcial.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\asesino.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\bestia.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\encadenado.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\espadachin.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\lancero.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_armas\luchador.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ascendencias\akhasico.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ascendencias\colmena.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ascendencias\dragon.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ascendencias\fungico.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ascendencias\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ascendencias\oni.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_basicos\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\clerigo_celestial.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\guerrero_abisal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\guerrero_celestial.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\guerrero_espiritual.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\guerrero_infernal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\hechicero_abisal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\hechicero_espiritual.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\iluminado.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_divinos\mago_infernal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\acido.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\agua.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\aire.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\arena.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\fuego.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\hielo.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\metal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\naturaleza.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\sangre.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\tierra.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_elementales\tormenta.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\almas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\nigromante.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\no-muerto.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\psiquico.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\sombrio.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Criaturas\arquetipos_ocultos\vida.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\armaduras.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\armas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\escudos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\reglas de objetos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\objetos_magicos\armaduras.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\objetos_magicos\armas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\objetos_magicos\artefactos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\objetos_magicos\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\objetos_magicos\objetos_magicos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\equipamiento\objetos_magicos\quimicos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\tipificacion.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\alabardas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\a_distancia.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\cadenas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\duelo.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\escudo.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\ligeras.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\armas\pesadas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\artes_marciales\agarre.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\artes_marciales\boxeo.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\artes_marciales\dragon.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\artes_marciales\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\artes_marciales\salvaje.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\artes_marciales\serpiente.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia abisal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia akhasica.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia boreal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia cruen.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia de agua.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia de aire.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia de fuego.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia de tierra.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia draconica.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia fungica.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia infernal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia_celestial.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia_insectoide.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia_oni.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia_primigenia.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\ascendencia_sombria.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ascendencias\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ciencia\bombas.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ciencia\fabricacion.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ciencia\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ciencia\quimica.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ciencia\sabotaje.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\fortitud.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\ira.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\mente desencadenada.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\presencia.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\rastrear.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\combate\reflejos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de acido.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de agua.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de aire.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de arena.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de fuego.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de hielo.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de metal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de naturaleza.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de sangre.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de tierra.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\elementalismo\magia de tormenta.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\magia_de_evocacion.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\magia_de_transmutacion.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\magia_espacial.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\magia_ilusoria.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\magia_protectora.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\magia_arcana\magia_temporal.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\magia de invocacion.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\magia de vida.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\magia gravitatoria.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\magia_mental.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\magia_onirica.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\magia_sombria.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\medium.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\nigromancia.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\ocultismo\telekinesia.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\religion\chakras.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\religion\divinidades.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\religion\guerrero_divino.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\religion\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\rangos\religion\magia_divina.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\Efectos de estado.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\ejercitos.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\factores adicionales.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\Heridas permanentes.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\index.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\locura.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\palabras_clave.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\tipos de dano.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\turno.md 
+C:\Users\matia\Documents\GitHub\raldamain\rules\Reglas principales\venenos_enfermedades.md 
