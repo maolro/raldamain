@@ -11,6 +11,7 @@ Ascendencia Infernal tiene las siguientes reglas fundamentales que se aplican a 
 
 - **Poder innato:** Tu rango en Ascendencia Infernal mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
 - **Estadística principal**: Tu modificador en Ascendencia Infernal será igual a la suma de tu estadística de Inteligencia o Carisma y tu rango en esta habilidad.
+- **Hechizos Innatos:** Todos los hechizos que aprendas por este Rango recibirán el rasgo Innato además que puedes emplear tu modificador de Ascendencia Infernal para lanzarlos si así lo deseas. Estos también emplearán tu Rango de Ascendencia Infernal además de tu estadística de Inteligencia o Carisma para calcular el daño y la fuerza de sus efectos.
 
 # Rangos
 
@@ -82,7 +83,7 @@ Aumenta tu estadística de INT y su limitador por 1.
 
 **Duración:** Concentración
 
-Infundes cada una de tus palabras de esencia demoniaca, sumiendo lentamente a tus oyentes en tu discurso y atrapándolos con tus palabras. De esta manera reforzarás todos tus tiros relacionados con tu estadística de carisma, recibiendo ventaja en ellos, además de que al emplear hechizos mentales estos serán indetectables para tus objetivos. Así mismo aquellos que te escuchen estas palabras quedarán embelesados si es que no se han preparado adecuadamente con antelación, dejando sus mentes vulnerables, pudiendo así ignorar sus resistencias mentales si es que no son directamente hostiles a ti.
+Infundes cada una de tus palabras de esencia demoníaca, sumiendo lentamente a tus oyentes en tu discurso y atrapándolos con tus palabras. De esta manera reforzarás todos tus tiros relacionados con tu estadística de Carisma, recibiendo Ventaja en ellos, además de que al emplear hechizos Mentales estos serán indetectables para tus objetivos. Adicionalmente, todos tus hechizos Mentales podrán ignorar las Resistencias Mentales de aquellos objetivos que no sean directamente hostiles a ti.
 
 ### Cadenas del Contrato
 
@@ -110,13 +111,13 @@ A través de un siniestro ritual corrompes tu alma para adoptar las característ
 
 **Duración:** 6 rondas
 
-Abres una porción de las mismísimas puertas del infierno en el campo de batalla, permitiendo que sus energías impías crucen para servir a tus propósitos. De esta manera todo el terreno en un radio grande pasará a ser tierra consagrada para los infernales. Así mismo tus enemigos no podrán sanarse mientras las puertas permanezcan abiertas, además de que cada ronda deberán emplear voluntad contra tu modificador o aumentarán su nivel de miedo por un paso. Finalmente los demonios también aprovecharán para cruzar la brecha, permitiéndote emplear siervos del contrato una vez por ronda como acción bonus, pudiendo tener como máximo hasta diez de ellos. 
+Abres una porción de las mismísimas puertas del infierno en el campo de batalla, permitiendo que sus energías impías crucen para servir a tus propósitos. Todo el terreno en un radio grande pasará a ser [Tierra Consagrada](../religion/magia_divina.md#consagrar-la-tierra) para los infernales. Así mismo tus enemigos no podrán sanarse mientras las puertas permanezcan abiertas además de que cada ronda deberán hacer un tiro de Voluntad contra tu modificador de Ascendencia Infernal o aumentarán su nivel de *miedo* por un paso. Finalmente, los demonios también aprovecharán para cruzar la brecha, permitiéndote emplear Siervos del Contrato una vez por ronda como acción bonus, pudiendo tener como máximo hasta diez de ellos. 
 
 ## Rango VI
 
 Incrementa tu CON por 1.
 
-### Señor de la sima
+### Señor de la Sima
 
 *Innata, Mejora*
 
@@ -124,7 +125,7 @@ Incrementa tu CON por 1.
 
 **Duración:** Seis rondas
 
-Empleando la energía durmiente en ti finalmente despiertas tu linaje, convirtiéndote en uno de los demonios mas altos capaces de dominar a todos con su poder. Al activar Señor de la sima recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Señor de la sima por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Señor de la sima te otorgará los siguientes beneficios:
+Empleando la energía durmiente en ti finalmente despiertas tu linaje, convirtiéndote en uno de los demonios mas altos capaces de dominar a todos con su poder. Al activar Señor de la Sima recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Señor de la sima por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Señor de la sima te otorgará los siguientes beneficios:
 
 - Tu FUE, CON y CAR pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de toque.
@@ -132,4 +133,4 @@ Empleando la energía durmiente en ti finalmente despiertas tu linaje, convirti�
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia infernal no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar. 
-- Activas automáticamente los efectos de presencia majestuosa.
+- Activas automáticamente los efectos de Presencia Majestuosa.

@@ -9,7 +9,7 @@ La criatura se ha especializado en combatir con cadenas, empleándolas con gran 
 ## Encadenado I (+2)
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores
-- **Mejoras de Rango:** Mejora su Rango y modificador en Armas Ligeras, Rastrear y Reflejos por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Cadenas y Reflejos por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Recibe Velocidad Superior como habilidad pasiva.
 - **Parada con Armas:** Puede usar su tiro de Cadenas para defenderse de ataques cuerpo a cuerpo.
 - **Danza de Cadenas:** Se encuentra siempre bajo los efectos de Danza de Cadenas, recibiendo así sus beneficios. Si pierde la concentración puede reactivar esa habilidad pagando una acción.

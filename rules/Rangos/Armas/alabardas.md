@@ -16,7 +16,7 @@ Estilo de Alabardas tiene las siguientes reglas fundamentales que se aplican a c
 
 ## Rango I 
 
-### Ataque con arma
+### Ataque con Arma
 
 *Alabardas, Ataque, Físico, Cuerpo a cuerpo*
 
@@ -30,11 +30,11 @@ Estilo de Alabardas tiene las siguientes reglas fundamentales que se aplican a c
 
 Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Alabardas.
 
-### Ajustar alcance
+### Ajustar Alcance
 
 *Alabardas, Pasiva*
 
-Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una distancia respecto a tus enemigos donde puedas mantener el control. Cada vez que impactes un ataque con tu arma puedes *desenganchar* como acción bonus. Además, si te encuentras en *posición defensiva* puedes tirar Esquiva a la vez de Parada al protegerte de un ataque cuerpo a cuerpo y quedarte con el mejor resultado para tu tiro defensivo.
+Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una distancia adecuada donde puedas mantener el control. Cada vez que impactes un ataque con tu arma puedes *desenganchar* como acción bonus. Además, si te encuentras en *posición defensiva* puedes tirar tanto Esquiva como Parada al protegerte de un ataque cuerpo a cuerpo y quedarte con el mejor resultado para tu tiro defensivo. Solo podrás emplear ambas habilidades en situaciones donde puedas defenderte de un ataque empleando las dos.
 
 ### Preparación contra Cargas
 
@@ -44,9 +44,9 @@ Eres capaz de ajustar la longitud de tu arma para mantenerte siempre a una dista
 
 **Duración:** Una ronda o concentración
 
-Entras en un estado de preparación para atacar a todos los enemigos que intenten acercarse a ti, impidiendo así que continúen avanzando. Mientras permanezcas en dicho estado cada vez que una criatura enemiga intente entrar en una posición adyacente a ti puedes hacerle un ataque de Alabarda como reacción que aumenta su daño base por 1d6. Si impactas con este ataque impedirás que tu objetivo siga avanzando, malgastando las acciones que haya usado para moverse.
+Entras en un estado de preparación para atacar a todos los enemigos que intenten acercarse a ti, impidiendo así que continúen su avance. Mientras permanezcas en dicho estado cada vez que una criatura enemiga intente entrar en una posición adyacente a ti puedes hacerle un ataque de Alabarda como reacción que aumenta su daño base por 1d6. 
 
-Preparación contra cargas permanecerá activo hasta que pierdas la concentración o empiece tu siguiente turno. Esta habilidad no te costará acciones para activar si te encuentras en *posición defensiva*.
+Si impactas con este ataque impedirás que tu objetivo siga avanzando, malgastando las acciones que haya usado para moverse. Preparación contra cargas permanecerá activo hasta que pierdas la concentración o empiece tu siguiente turno. Esta habilidad no te costará acciones para activar si te encuentras en *posición defensiva*.
 
 ## Rango II
 
@@ -56,7 +56,7 @@ Preparación contra cargas permanecerá activo hasta que pierdas la concentraci�
 
 **Coste:** 1 vigor
 
-Realizas un ágil barrido con tu arma para atacar a todos tus enemigos cercanos.. Haz un ataque contra todas las criaturas a distancia cercana de ti que al impactar inflige +1d6 daño y forzará a los afectados a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerán *tropezados*. 
+Realizas un ágil barrido con tu arma para atacar a todos tus enemigos cercanos. Haz un ataque contra todas las criaturas a distancia cercana de ti que al impactar inflige 1d6 daño adicional y forzará a los afectados a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerán *tropezados*. 
 
 Si un enemigo elige emplear Parada para detener tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del que hayan obtenido. En el caso que gaste *contadores de escudo* para detenerlo podrá proteger a cualquier número de criaturas que amenaces con este ataque. Solo puedes emplear esta técnica si tu arma es capaz de provocar daño Cortante.
 
@@ -72,7 +72,7 @@ La lanza permanecerá clavada en tu objetivo hasta que otra criatura la separe d
 
 ### Golpe Aturdidor
 
-*Alabarda, Mejora*
+*Alabarda, Mejora, Aturdimiento*
 
 **Coste**: 1 vigor
 
@@ -80,7 +80,7 @@ Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras 
 
 ### Reposicionar Enemigo
 
-*Alabarda, Mejora*
+*Alabarda, Mejora, Maniobra*
 
 **Coste**: 1 vigor
 
