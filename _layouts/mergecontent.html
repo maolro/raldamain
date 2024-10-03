@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@media print {
+    h1 {
+      page-break-before: always;
+    }
+  }
+</style>
+</head>
+<body>
+{% assign indexpages = site.pages | where_exp: "p", "p.menuorder != nil" | where_exp: "p", "p.lang == page.lang" | sort: "menuorder" %}
+{% for indexpage in indexpages  %}
+    <h1>{{ indexpage.title }}</h1>
+
+    {{ indexpage.content | Markdownify }}
+
+    {% assign mypages = site.pages | where_exp: "p", "p.dir contains indexpage.dir" | where_exp: "p", "p.url != indexpage.url" | where_exp: "p", "p.lang == page.lang" %}
+
+    {% assign categories = mypages | map: "category" | uniq | sort %}
+
+    {% for cat in categories %}
+        <h2>{{ cat }}</h2>
+            {% assign insidecat = mypages | where: "category", cat %}
+            {% for item in insidecat %}
+            <h2>{{item.title}}</h2>
+            <div>{{item.content | markdownify}}</div>
+            {% endfor %}
+    {% endfor %}
+
+{% endfor %}
+</body> 
+</html>
