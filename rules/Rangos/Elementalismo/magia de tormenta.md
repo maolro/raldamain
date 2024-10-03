@@ -171,7 +171,7 @@ A rangos superiores puedes invocar elementales de poder aún mayor, aumentando e
 
 ## Rango IV
 
-**Relámpago en cadena**
+**Relámpago en Cadena**
 
 *Tormenta, Invocación*
 
@@ -193,7 +193,7 @@ Cargando un rayo con una cantidad adicional de energía y ejerciendo control sob
 
 **Duración**: Instantáneo
 
-Sobrecargando los canales de chi en tu entorno cercano y atrapando la energía en ellos eres capaz de hacerlos explotar de forma salvaje, liberando una explosión contra todos los que se encuentren en la zona. De esta manera todos los que se encuentren en la zona deberán defenderse o sufrirán 1d8+Carisma daño eléctrico y 1d10+Rango daño sónico, además de quedar ralentizados una ronda. En el caso de emplear esta habilidad durante una tormenta, podrá hacerse que emerja desde cualquier punto a distancia media de ti. 
+Sobrecargas los canales de chi a tu alrededor para provocar una devastadora explosión de rayos y truenos. Haz un ataque contra todos los enemigos a distancia cercana que inflige 1d8 + CAR daño eléctrico y 1d10 + Rango daño Sónico, además de *ralentizarlos* durante una ronda. Si empleas esta habilidad durante una tormenta puedes provocar la explosión en cualquier punto a distancia media de ti. 
 
 **Rayo viviente**
 

@@ -63,7 +63,7 @@ Tras ser creada puedes seguir atacando con la cuerda empleando una acción. Pued
 
 ## Rango II
 
-### Nube de cuchillas
+### Nube de Cuchillas
 
 *Metal, Ataque, Área, Físico, Duradero*
 
@@ -83,7 +83,7 @@ Mientras la nube permanezca activa puedes emplear una acción para moverla un pa
 
 **Empoderar** (1 chi): La nube aumenta su daño por 1d6 esta ronda. Para aumentarlo de esta manera debes tener una cantidad adecuada de cuchillas metálicas y no puedes empoderarla más de dos veces por ronda.
 
-### Repulsión magnética
+### Repulsión Magnética
 
 *Metal, Duradero, Defensivo*
 
@@ -101,7 +101,7 @@ Este hechizo puede ser empleado de manera alternativa para crear el campo magné
 
 **Empoderar** (1 chi): 1/Ronda. Un ataque hecho con un arma metálica contra una criatura dentro del campo magnético fallará automáticamente. Puedes detener ataques de área con radio corto de esta manera y puedes pagar 1 chi adicional para aumentar el radio por un paso.
 
-### Fortalecer metal
+### Fortalecer Metal
 
 *Metal, Ambiental*
 
@@ -133,7 +133,7 @@ Sustituye todos los dados de daño que tengas en habilidades de magia de metal p
 
 Maleando el metal a tu voluntad puedes imbuirlo para que obtenga una semblanza de vida, creando un constructo para servirte. Al hacerlo convocarás a una criatura de nivel 6, la cual aumentará su nivel máximo por 2 por cada rango adicional que obtengas en esta rama. La máxima cantidad de invocaciones que puedes tener por esta habilidad es 4.
 
-### Arma teledirigida
+### Arma Teledirigida
 
 *Metal, Duradera, Concentración*
 

@@ -38,13 +38,13 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 **Efecto crítico:** El objetivo cae *tropezado* o es empujado un paso en cualquier dirección.
 
-Empleas tu cadena para retener a tus enemigos en lugar de herirlos. Haz un ataque con tu cadena que *enredará* a tu objetivo al impactar. Este podrá intentar liberarse en su turno si tiene éxito en un tiro de Heroísmo o Destrozar frente a tu modificador de arma. Mientras estés enredando a un enemigo no podrás emplear tu cadena para atacar a otros objetivos o usarla activar atributos donde sea neceario que tu cadena esté libre, como Danza de cadenas.
+Empleas tu cadena para retener a tus enemigos en lugar de herirlos. Haz un ataque con tu cadena que *enredará* a tu objetivo al impactar. Este podrá intentar liberarse en su turno si tiene éxito en un tiro de Heroísmo o Destrozar contra tu modificador de arma. Mientras estés enredando a un enemigo no podrás emplear tu cadena para atacar a otros objetivos o usarla activar atributos donde sea neceario que tu cadena esté libre, como Danza de cadenas.
 
 Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consiga liberarse de este efecto. Si has enredado a un objetivo con tu cadena puedes intentar retenerlo aún más, forzándolo a tener éxito en un tiro de Destrozar o Heroísmo contra tu modificador de arma o quedará *agarrado*. Cada intento de agarre te cuesta tantas acciones como las que emplearías en este ataque y tu enemigo podrá intentar escaparse de la misma manera.
 
 **Empoderar** (1 vigor): Un objetivo *enredado* cae *tropezado* o es empujado un paso en cualquier dirección. Puede evitar este efecto si tiene éxito en un tiro de Acrobacias o Heroísmo.
 
-### Danza de cadenas
+### Danza de Cadenas
 
 *Cadena, Defensiva, Duradera*
 
@@ -52,39 +52,39 @@ Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consig
 
 **Duración:** Concentración
 
-Giras tu cadena con gran velocidad alrededor de ti para impedir que tus enemigos avancen hacia ti. Al activar esta habilidad entrarás en un estado de Danza de cadenas que te otorgará siempre los beneficios de *posición defensiva*. 
+Giras la cadena a tu alrededor para mejorar tus defensas e impedir que tus enemigos puedan acercarse. Al activar esta habilidad entrarás en un estado defensivo conocido como Danza de Cadenas que te otorgará siempre los beneficios de *posición defensiva*. Permanecerás en dicho estado hasta que pierdas la concentración o seas incapaz de atacar con tu cadena.
 
-Además, mientras permanezcas en dicho estado la primera vez que un enemigo entre en un espacio a distancia corta de ti puedes hacerle un ataque con tu arma como reacción que le empujará un paso hacia atrás al impactar además de hacerle daño. Danza de cadenas permanecerá activa hasta que pierdas la concentración o seas incapaz de atacar con tu cadena.
+La cadena te permite detener el avance de tus enemigos. En respuesta a que un enemigo entre en un espacio a distancia corta de ti puedes hacer un ataque con tu arma como reacción, el cual puede empoderarse con otras técnicas. Si logras impactar con dicho ataque lo empujarás hacia atrás un paso, impidiendo así que pueda acercarse a ti. Solo puedes atacar al mismo enemigo empleando esta habilidad una vez por ronda. 
 
 ## Rango II
 
-### Ataque serpenteante
+### Ataque Serpenteante
 
 *Cadena, Mejora, Maniobra*
 
 **Coste:** 1 vigor
 
-Haces un ataque rápido hacia las piernas de un enemigo con el que buscas tropezarlo y generar una apertura para volver a atacar. Al impactar con un ataque de Cadenas tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o cae *tropezado*. Si logras tropezar a tu objetivo puedes hacerle un ataque de oportunidad con tu arma que no puede ser mejorado.
+Haces un ataque rápido hacia las piernas de un enemigo para tropezarlo, obteniendo así una vital apertura en el combate. Al impactar con un ataque de Cadenas tu objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. Si logras tropezar a tu objetivo puedes hacerle un ataque de oportunidad con tu arma que no puede ser mejorado. Puedes emplear esta habilidad incluso contra enemigos que hayan detenido exitosamente tu ataque con una habilidad defensiva relacionada con un arma o artes marciales. 
 
-### Cadena giratoria
+### Cadena Giratoria
 
 *Cadena, Mejora*
 
 **Coste:** 1 vigor
 
-Giras tu cadena a gran velocidad para lanzar hacia atrás a todos tus enemigos. Tu siguiente ataque con una cadena atacará a todos tus enemigos a distancia corta y los empujará un paso hacia atrás al impactar. Si un enemigo elige emplear Parada para detener tu tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del suyo. Este ataque no puede ser mejorado con otros atributos y aumentará su daño por 1d6 si te encuentras en Danza de cadenas.
+Giras tu cadena a gran velocidad para atacar a todos los enemigos que te rodean. Tu siguiente ataque con una cadena afectará a todos tus enemigos a distancia corta y los empujará un paso hacia atrás al impactar. Si un enemigo elige emplear Parada o Escudo para detener tu tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del suyo. Este ataque no puede ser mejorado con otros atributos y aumentará su daño por 1d6 si te encuentras en Danza de cadenas.
 
-### Gancho perforante
+### Gancho Perforante
 
 *Cadena, Mejora, Agarre*
 
 **Coste:** 1 vigor
 
-Clavas tu cadena de la misma manera que un gancho para retener a tu enemigo y causarle gran dolor. Al impactar con tu Cadena aumentas su daño por 1d6, provocas una *herida permanente leve* y lo dejas *enredado*. Mientras siga *enredado* no podrá ser sanado de su herida.
+Clavas tu cadena de la misma manera que un gancho para retener a tu enemigo y causarle gran dolor. Al impactar con tu un ataque de Cadena aumentas su daño por 1d6 además de *enredar* a tu objetivo y provocarle una *herida permanente leve*. Mientras siga *enredado* no podrá ser sanado de su herida. 
 
 Escapar de esta habilidad funciona de igual manera que el ataque Enredar y tu cadena quedará inutilizada de la misma manera. Además, cuando tu enemigo logre escapar este sufrirá los efectos de *sangrado*. Este atributo solo puede emplearse si tu arma es capaz de infligir daño Perforante.
 
-### Cargar ataque
+### Cargar Ataque
 
 *Cadena, Mejora*
 
@@ -94,13 +94,13 @@ Giras tu cadena a gran velocidad para aumentar su potencia y luego la empleas pa
 
 Puedes gastar hasta dos acciones adicionales empoderar tu ataque contra ese mismo objetivo. Cada acción gastada aumentará el daño por 1d6 y provocará un efecto adicional. Si gastas una acción tu objetivo deberá tener éxito en un tiro de CON frente a tu modificador de cadenas o quedará *ralentizado* mientras que si gastas dos acciones tu objetivo quedará *aturdido* si falla ese mismo tiro. Estas acciones pueden emplearse en turnos separados si mantienes la concentración en tu ataque, perdiéndolas todas si eres interrumpido mientras cargas.
 
-### Espinas desgarrantes
+### Espinas Desgarrantes
 
 *Cadenas, Reacción*
 
 **Coste**: 1 vigor
 
-Empleas las espinas que hay a lo largo de tu cadena para herir a tu enemigo cuando lo enredas. Cada vez que un enemigo fracase un tiro para escapar de ti cuando lo *enredes* o *agarres* puedes emplear esta habilidad como reacción para infligirle daño Cortante igual al daño que provocarías normalmente con tu arma. Si este lleva armadura ligera sufrirá una *herida permanente leve* y *sangrado*. Este atributo solo puede usarse si tu arma es capaz de infligir daño Cortante.
+Empleas las espinas que hay a lo largo de tu cadena para herir a tu enemigo cuando lo enredas. Cada vez que un enemigo fracase un tiro para escapar de ti cuando lo *enredes* o *agarres* puedes emplear esta habilidad como reacción para infligirle daño Cortante igual al daño que provocarías normalmente con tu arma. Si este lleva armadura ligera o inferior sufrirá una *herida permanente leve* y *sangrado*. Este atributo solo puede usarse si tu arma es capaz de infligir daño Cortante.
 
 ## Rango III   
 

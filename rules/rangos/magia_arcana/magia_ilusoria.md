@@ -196,7 +196,7 @@ Las ilusiones creadas de esta manera se comportarán como el efecto real de terr
 
 *Ilusoria, Arcana, Pasiva*
 
-Eres capaz de emplear las ilusiones alrededor de tu cuerpo para reforzar tus ataques y capacidades defensivas. Al combatir con un efecto Ilusorio activo a distancia corta de ti recibirás Ventaja en todos tus tiros de Ataque además que podrás repetir un tiro de ataque, salvación o defensa una vez por ronda y quedarte con el resultado que más te convenga. Las ilusiones también te permitirán emplear tu estadística de INT para el daño de tus armas, sustituyendo así la estadística que emplearías normalmente.
+Eres capaz de emplear las ilusiones alrededor de tu cuerpo para reforzar tus ataques y capacidades defensivas. Al combatir con un efecto Ilusorio activo a distancia corta de ti recibirás Ventaja en todos tus tiros de Ataque además que podrás repetir un tiro de ataque, salvación o defensa una vez por ronda y quedarte con el resultado que más te convenga. Las ilusiones también te permitirán emplear tu modificador de Magia Ilusoria para todos tus tiros de ataque además de estadística de INT para el daño de tus armas o hechizos, sustituyendo así la estadística que emplearías normalmente.
 
 **Empoderar** (1 chi): Repite un tiro adicional esta ronda y te quedas con el resultado que más te convenga. No podrás repetir el mismo tiro más de una vez.
 

@@ -25,7 +25,7 @@ Guerrero divino tiene las siguientes reglas fundamentales que se aplican a cualq
 
 **Duración:** Una ronda
 
-Empoderas tus ataques con el poder de tu divinidad para castigar a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque físico provocarás daño adicional igual a tu Rango. El tipo de dicho daño dependerá de tu dios y debe ser de tipo Fuego, Frío, Ácido, Eléctrico, Sónico, Necrótico o Radiante. 
+Empoderas tus ataques con el poder de tu divinidad para castigar a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque físico provocarás daño adicional igual a tu Rango. El tipo de dicho daño dependerá de tu dios y debe ser de tipo Fuego, Frío, Ácido, Eléctrico, Sónico, Necrótico o Radiante. Un arma empoderada de esta manera contará como un arma mágica para determinar si se aplican Resistencias o Inmunidades.
 
 Esta habilidad te permite de manera alternativa infundir un ataque con un hechizo que conozcas para que afecte al siguiente enemigo que impactes. Dicho hechizo se lanzará como acción bonus y si se trata de un ataque sumará su daño y efectos al ataque infundido. Debes seguir pagando el coste de chi del nuevo hechizo escogido.
 
