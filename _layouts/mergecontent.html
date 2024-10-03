@@ -2,19 +2,62 @@
 <head>
 <meta charset="utf-8">
 <style>
-@media print {
-    h1 {
-      page-break-before: always;
+
+ol {
+    list-style-type: decimal;
     }
+
+
+
+
+@media print {
+
+  .toc-page::after {
+    content: leader('.') target-counter(attr(href), page);
+  }    
+
+  h1 {
+    page-break-before: always;
   }
+
+  @page {
+    @bottom-center {
+        content: "Page " counter(page);
+    }
+  }  
+}
 </style>
 </head>
 <body>
+
+<h1>Index</h1>
 {% assign indexpages = site.pages | where_exp: "p", "p.menuorder != nil" | where_exp: "p", "p.lang == page.lang" | sort: "menuorder" %}
+<ol>
+{% for indexpage in indexpages  %}
+    <li>{{ indexpage.title }}
+
+    {% assign mypages = site.pages | where_exp: "p", "p.dir contains indexpage.dir" | where_exp: "p", "p.url != indexpage.url" | where_exp: "p", "p.lang == page.lang" %}
+
+    {% assign categories = mypages | map: "category" | uniq | sort %}
+
+    <ol>
+    {% for cat in categories %}
+        {% if cat != empty %}<li>{{ cat }}<ol>{% endif %}
+            {% assign insidecat = mypages | where: "category", cat %}
+            {% for item in insidecat %}
+            <li><a class="toc-page" href="#{{item.url | slugify}}">{{item.title}}</a></li>
+            {% endfor %}
+        {% if cat != empty%}</ol>{% endif %}</li>
+    {% endfor %}
+    </ol>
+    </li>
+{% endfor %}    
+</ol>
+
 {% for indexpage in indexpages  %}
     <h1>{{ indexpage.title }}</h1>
 
-    {{ indexpage.content | Markdownify }}
+    {{ indexpage.content | markdownify }}
 
     {% assign mypages = site.pages | where_exp: "p", "p.dir contains indexpage.dir" | where_exp: "p", "p.url != indexpage.url" | where_exp: "p", "p.lang == page.lang" %}
 
@@ -24,7 +67,7 @@
         <h2>{{ cat }}</h2>
             {% assign insidecat = mypages | where: "category", cat %}
             {% for item in insidecat %}
-            <h2>{{item.title}}</h2>
+            <h2 id="{{item.url | slugify}}">{{item.title}}</h2>
             <div>{{item.content | markdownify}}</div>
             {% endfor %}
     {% endfor %}
