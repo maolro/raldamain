@@ -84,7 +84,7 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 **Empoderar** (1 chi): La barrera recupera todos sus puntos de vida perdidos. 
 
-### Sanación etérea
+### Sanación Etérea
 
 *Telequinesia, Sanación, Toque*
 
@@ -98,7 +98,7 @@ Empleas la telekinesia para reponer tejidos rotos y coagular rápidamente tus he
 
 **Empoderar** (1 chi): Empleas este hechizo en ti mismo como acción bonus
 
-### Arrastre telequinético
+### Arrastre Telequinético
 
 *Telequinesia, Maniobra*
 
@@ -116,7 +116,7 @@ Arrastras a una criatura con el poder de la telequinesia, descolocando sus defen
 
 ## Rango III
 
-### Agarre telequinético
+### Agarre Telequinético
 
 *Telekinesia, Maniobra, Duradera*
 
@@ -132,7 +132,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración o dejes de 
 
 **Empoderar** (1 chi): Afecta a una criatura u objeto adicional con este hechizo
 
-### Arma danzante
+### Arma Danzante
 
 *Telekinesia, Mejora, Duradera*
 
@@ -142,7 +142,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración o dejes de 
 
 Un arma levitará en el aire y actuará como una extensión de tu cuerpo, atacando a tus enemigos y defendiéndote de ataques. Mientras este hechizo permanezca activo el arma que controles podrá volar un paso en cualquier dirección y atacar a un enemigo adyacente a ella como acción bonus. El tiro de ataque será igual a tu bonificador de Telekinesia y tendrá el daño base del arma escogida modificado por tu estadística de INT. 
 
-Este hechizo permanecerá activo hasta que pierdas la concentración o el arma sea destruida. Si conoces técnicas de combate puedes aplicarlas en el arma danzante pagando chi en lugar de vigor y empleando tu bonificador de Telekineisia en lugar del que usarías normalmente. El arma también te protegerá de ataques enemigos que pueda detener, pudiendo así repetir todos los tiros de Parada que realices contra ataques Físicos que pueda bloquear el arma y quedarte con el mejor resultado.
+Este hechizo permanecerá activo hasta que pierdas la concentración o el arma sea destruida. Si conoces técnicas de combate puedes aplicarlas en el arma danzante pagando chi en lugar de vigor y empleando tu bonificador de Telequinesia en lugar del que usarías normalmente. El arma también te protegerá de ataques enemigos que pueda detener, pudiendo así repetir todos los tiros de Parada que realices contra ataques Físicos que pueda bloquear el arma y quedarte con el mejor resultado.
 
 **Empoderar** (1 chi): Un arma adicional se vuelve danzante, pudiendo así hacer un ataque bonus adicional con ella cada ronda contra un objetivo diferente. Los beneficios defensivos por tener múltiples armas danzantes no se acumularán y no podrás tener más de dos armas danzantes simultáneamente. 
 
