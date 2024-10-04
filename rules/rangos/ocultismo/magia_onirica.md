@@ -14,7 +14,7 @@ Tienes un gran conocimiento de como funciona la mente humana en sus etapas de su
 
 ## Rango I
 
-### Soñador lúcido
+### Soñador Lúcido
 
 *Onírica, Pasiva*
 
@@ -22,7 +22,7 @@ Tu conocimiento del mundo de los sueños te permite cruzar la barrera que separa
 
 Podrás interactuar con otras criaturas que se encuentren en dicho mundo y hacer las mismas acciones que podrías realizar en el mundo real. En el caso de que mueras en el Plano Onírico te despertarás al momento sin sufrir ningún daño físico, pero no recibirás los beneficios de un descanso largo y acabarás *fatigado*. Cabe recalcar que los efectos mentales y las pérdidas de cordura que recibas en el mundo onírico se conservarán en el mundo real.
 
-### Alteración onírica
+### Alteración Onírica
 
 *Onírica, Duradera*
 
@@ -40,7 +40,7 @@ Si empleas este hechizo en objetos mágicos puede no funcionar o requerir que su
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional a distancia media con este hechizo
 
-### Manto de sueños
+### Manto de Sueños
 
 *Onírica, Mental, Área, Duradera*
 
@@ -62,7 +62,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y cada rond
 
 ## Rango II
 
-### Inducción onírica
+### Inducción Onírica
 
 *Onírica, Duradera*
 
@@ -96,7 +96,7 @@ Colocas un velo protector en la mente de una criatura que le protegerá de intru
 
 **Empoderar** (1 chi): Infundes el velo de una capa adicional de protección, permitiendo a la criatura afectada a tener éxito automático en un tiro para defenderse de un efecto Onírico. Dicha capa se desvanecerá después de ser usada y solo podrás colocar un máximo de tres capas por velo.
 
-### Pesadillas malditas
+### Pesadillas Malditas
 
 *Onírica, Mental, Maldición*
 
@@ -130,7 +130,7 @@ Abriendo una grieta entre el plano terrenal y el mundo onírico permites que una
 
 En caso de invocar a la criatura dentro del plano onírico esta podrá superar el límite de nivel, sin embargo seguirá su propia naturaleza, pudiendo así desobedecerte. 
 
-### Duelo psíquico
+### Duelo Psíquico
 
 *Onírica, Mental*
 
@@ -154,7 +154,7 @@ Así mismo tendrás la restricción de que aún deberás conservar tus rangos en
 
 ## Rango IV
 
-### Moldear el sueño
+### Moldear el Sueño
 
 *Onírica, Área, Ambiental, Concentración*
 
