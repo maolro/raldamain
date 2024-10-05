@@ -1,8 +1,6 @@
 ---
-title: A
+title: Acorazado
 ---
-
-
 
 La criatura está dotada de una poderosa coraza capaz de detener ataques enemigos con mayor facilidad y proteger a sus aliados.
 
