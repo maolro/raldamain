@@ -16,7 +16,7 @@ La criatura es capaz de mutar su cuerpo de nuevas maneras para adaptarse a todo 
 - **Mejoras de Rango:** Mejora su Rango y modificador en Mente Desencadenada por 1.
 - **Hechizos:** Aprende el hechizo Consumir Esencia. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Mutaciones:**  Tiene una mutación adicional en su cuerpo semejantes a aquellas que proporcionaría el hechizo Inyecciones Superiores. Esta mutación puede cambiarse en un combate pagando una acción.
-- **Transmutador Experto:** Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia de Transmutación. Este modificador no se acumula con el otorgado por Mente Desencade
+- **Transmutador Experto:** Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia de Transmutación. Este modificador no se acumula con el otorgado por Mente Desencadenada.
 - **Poder del Dolor:** Es Inmune a los efectos de *heridas permanentes* leves y medias además que recibe Resistencia a Aflicciones y Aturdimiento.
 - **Defensa Adaptable:** Tiene activa una mejora perteneciente a la habilidad Defensa Adaptable. Dicha mejora puede cambiarse a otra de poder equivalente pagando dos acciones.
 

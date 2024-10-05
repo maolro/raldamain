@@ -108,7 +108,7 @@ Aunque el afectado logre escapar el foso permanecerá en el campo de batalla has
 
 *Ácido, Ataque, Área*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 acción y 1 chi
 
 **Alcance:** Medio
 
