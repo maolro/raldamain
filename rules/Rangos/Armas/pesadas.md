@@ -1,5 +1,5 @@
 ---
-title: Armas pesadas
+title: Armas Pesadas
 category: Armas
 ---
 
