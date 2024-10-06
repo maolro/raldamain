@@ -1,6 +1,6 @@
 ---
-
 title: Ascendencia Cruen
+category: Ascendencias
 ---
 
 # Reglas principales

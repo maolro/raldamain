@@ -1,5 +1,5 @@
 ---
-title: Ascendencia oni
+title: Ascendencia Oni
 category: Ascendencias
 ---
 

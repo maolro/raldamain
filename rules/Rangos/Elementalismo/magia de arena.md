@@ -1,5 +1,6 @@
 ---
 title: Magia de arena
+category: Elementalismo
 ---
 
 # Reglas fundamentales

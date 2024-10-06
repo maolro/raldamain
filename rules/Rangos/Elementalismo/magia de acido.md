@@ -1,5 +1,6 @@
 ---
 title: Magia de Ácido
+category: Elementalismo
 ---
 
 # Reglas fundamentales

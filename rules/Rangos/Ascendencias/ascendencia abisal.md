@@ -1,5 +1,6 @@
 ---
 title: Ascendencia Abisal
+category: Ascendencias
 ---
 
 <style>body {text-align: justify}</style>
