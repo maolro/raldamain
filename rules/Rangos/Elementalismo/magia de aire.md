@@ -1,6 +1,7 @@
 ---
 title: Magia de Aire
 image: magia_aire.jpg
+category: Elementalismo
 ---
 Tienes un control absoluto sobre el elemento que se encuentra en casi todas las partes del planeta, el aire, pudiendo manipularlo a tu antojo para servirte de sus cualidades. Cuanto más profundices en el control de este elemento, mayor será la cantidad de aire que podrás manejar pudiendo crear desde leves brisas de aire hasta feroces huracanes. Al alcanzar la cúspide de tu poder serás capaz de manipular el propio clima para crear devastadores desastres naturales.
 

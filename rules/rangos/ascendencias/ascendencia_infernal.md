@@ -1,5 +1,5 @@
 ---
-title: Ascendencia infernal
+title: Ascendencia Infernal
 category: Ascendencias
 ---
 

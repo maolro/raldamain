@@ -1,5 +1,5 @@
 ---
-title: Ascendencia celestial
+title: Ascendencia Celestial
 category: Ascendencias
 ---
 

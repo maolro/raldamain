@@ -1,5 +1,6 @@
 ---
 title: Ascendencia Primigenia
+category: Ascendencias
 ---
 
 Tienes una fuerte conexión con la naturaleza así como con los orígenes de la vida en el planeta, comprendiendo que todos los seres vivos existen en un equilibrio fundamental para preservar la vida misma. A medida que tu conexión crece, tu comunión con la naturaleza va volviéndose más profunda hasta convertirte en un guardián de la vida misma, permitiéndote comandar a plantas, animales e incluso espíritus para proteger la naturaleza de aquellos que busquen profanarla. 

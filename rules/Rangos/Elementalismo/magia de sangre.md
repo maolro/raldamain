@@ -1,6 +1,7 @@
 ---
 title: Magia de sangre
 image: magia_sangre.jpg
+category: Elementalismo
 ---
 
 Te has decantado por la forma mas compleja en la que se puede encontrar el agua y  que se encuentra presente dentro de todos los seres vivos, la sangre.  A medida que tu control sobre ella se va haciendo mas fuerte serás capaz de manipularla con mayor intensidad pudiendo incluso hacer que se mueva siguiendo tu voluntad dentro del cuerpo de tu objetivo, pudiendo provocar devastadores ataques a sus órganos o estructura o incluso manipularla para arrebatarle el control sobre su cuerpo.

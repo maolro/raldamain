@@ -1,5 +1,5 @@
 ---
-title: Ascendencia fúngica
+title: Ascendencia Fúngica
 category: Ascendencias
 ---
 

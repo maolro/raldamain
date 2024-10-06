@@ -1,5 +1,5 @@
 ---
-title: Ascendencia insectoide
+title: Ascendencia Insectoide
 category: Ascendencias
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Magia de tormenta
 image: magia_tormenta.jpg
+category: Elementalismo
 ---
 
 Tu control avanzado sobre el aire te ha permitido desviarte de su forma más básica hacia la parte más destructiva que puede representar, permitiéndote así valerte de poderosas descargas o truenos ensordecedores para abrumar a tu enemigo con una fuerza devastadora. A medida que tu control se vaya haciendo más fuerte serás más capaz de almacenar en tu propio cuerpo grandes cantidades de esta energía de forma que luego puedas desatarla en una gran oleada. en última instancia serás capaz incluso de vengarte de aquellos enemigos que se atrevan a atacarte haciendo caer sobre ellos la ira directa del cielo o tormentas devastadoras que arrasen con todo a tu alrededor
