@@ -54,9 +54,9 @@ Si empleas este hechizo en objetos mágicos puede no funcionar o requerir que su
 
 **Duración:** Concentración
 
-Tu cuerpo se encuentra infundido de Magia Onírica debido a tus constantes viajes al Plano Onírico y puedes emplear dicho poder para enviar ahí a tus enemigos. Al activar este hechizo todas las criaturas que se encuentren a distancia media de un punto que alcances deben tener éxito en un tiro de Concentración o Voluntad contra tu Magia Onírica o empiezan a caer dormidas, quedando *fatigadas* hasta que se liberen de este hechizo o sufran daño.
+Tu cuerpo se encuentra infundido de Magia Onírica debido a tus constantes viajes al Plano Onírico y puedes emplear dicho poder para enviar ahí a tus enemigos. Al activar este hechizo todas las criaturas que se encuentren a distancia media de un punto que alcances deben tener éxito en un tiro de Concentración o Voluntad contra tu Magia Onírica o empiezan a caer dormidas, quedando *fatigadas* hasta que se liberen de este hechizo o sufran daño. 
 
-Este hechizo permanecerá activo hasta que pierdas la concentración y cada ronda que lo esté las criaturas afectadas deben repetir el tiro o quedarán aún más adormecidas. Si fallan de nuevo quedarán *exhaustas* mientras que si ya están *exhaustas* caerán *inconscientes*. Al lanzar este hechizo contra criaturas que no se encuentren en combate estas recibirán Desventaja en todos sus tiros para defenderse de esta habilidad. 
+Este hechizo permanecerá activo hasta que pierdas la concentración y cada ronda que lo esté las criaturas afectadas deben repetir el tiro o quedarán aún más adormecidas. Si fallan de nuevo quedarán *exhaustas* mientras que si ya están *exhaustas* caerán *inconscientes*. Una criatura que tenga dos éxitos seguidos contra este efecto se volverá inmune a él durante el resto del combate. Al lanzar este hechizo contra criaturas que no se encuentren en combate estas recibirán Desventaja en todos sus tiros para defenderse de esta habilidad. 
 
 **Empoderar** (1 chi): Una criatura que ya se encuentra afectada por este hechizo caerá *inconsciente* si falla su tiro esta ronda.
 
@@ -116,7 +116,7 @@ Una criatura maldita tampoco es capaz de recuperar cordura de ninguna manera y c
 
 Los sueños que construyas ahora podrán tener hasta un máximo de dos capas. 
 
-### Invocación onírica
+### Invocación Onírica
 
 *Onírica, Invocación*
 
