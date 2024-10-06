@@ -4,7 +4,7 @@
 [combate]: {% link rules/Rangos/Combate/index.md %}
 [Conocimiento]: {% link rules/Rangos/Ciencia/conocimiento.md %}
 [fabricación]: {% link rules/Rangos/Ciencia/fabricacion.md %}
-[Fortitud]: {% link rules/Rangos/Combate/fortitud.md %}
+[Fortitud]: {% link rules/rangos/combate/fortitud.md %}
 [Guerrero divino]: {% link rules/Rangos/Religion/index.md %}
 [Ira]: {% link rules/Rangos/Combate/ira.md %}
 [Reflejos]: {% link rules/Rangos/combate/reflejos.md %}

@@ -75,7 +75,7 @@ Alteras la fisiología de una criatura que toques para mejorar sus capacidades b
 
 **Duración**: Una hora
 
-Transmutas el cuerpo de una criatura que toques para formar sólidas armas hechas de tus propios huesos. Al lanzar este hechizo a tu objetivo le crece un arma ósea que tomará r la forma de cualquier arma cuerpo a cuerpo que elijas. teniendo la misma cantidad de daño base con la diferencia que se modificará con tu estadística de INT en lugar de tu FUE o DES.
+Transmutas el cuerpo de una criatura que toques para formar sólidas armas hechas de tus propios huesos. Al lanzar este hechizo a tu objetivo le crece un arma ósea que tomará la forma de cualquier arma cuerpo a cuerpo que elijas. teniendo la misma cantidad de daño base con la diferencia que se modificará con tu estadística de INT en lugar de tu FUE o DES.
 
 El arma se puede usar para atacar a enemigos adyacentes. Estos ataques costarán una acción (dos acciones si el arma requiere las dos manos para ser empleada) y puedes usar tu modificador de Magia de Transmutación para tu tiro de ataque con ella. Además, puedes aplicar cualquier técnica de combate que ya tengas a los ataques realizados con esta arma.
 
@@ -170,7 +170,7 @@ Mutas forzosamente un animal que puedas tocar para convertirlo en una quimera qu
 
 **Duración:** Instantáneo
 
-Retuerces y alteras el cuerpo de un enemigo para transformarlo en una criatura inofensiva u horripilante. El afectado deberá tener éxito en un tiro de Salud frente a tu Magia de Transmutación o sufrirá 1d8 + INT daño Fuerza, *náuseas* durante una ronda y una mejora equivalente a Inyección Mutagénica. Esta habilidad solo podrá afectar a seres orgánicos y si matas al afectado lo transformarás en una Quimera bajo tu control de la misma manera que Crear Quimera.
+Retuerces y alteras el cuerpo de un enemigo para transformarlo en una criatura inofensiva u horripilante. El afectado deberá tener éxito en un tiro de Salud frente a tu Magia de Transmutación o sufrirá 2d8 + INT daño Fuerza, *náuseas* durante una ronda y una mejora equivalente a Inyección Mutagénica. Esta habilidad solo podrá afectar a seres orgánicos y si matas al afectado lo transformarás en una Quimera bajo tu control de la misma manera que Crear Quimera.
 
 ### Esencia de la Magia
 
