@@ -7,7 +7,7 @@
 [Fortitud]: {% link rules/Rangos/Combate/fortitud.md %}
 [Guerrero divino]: {% link rules/Rangos/Religion/index.md %}
 [Ira]: {% link rules/Rangos/Combate/ira.md %}
-[Reflejos]: {% link rules/Rangos/Combate/reflejos.md %}
+[Reflejos]: {% link rules/Rangos/combate/reflejos.md %}
 [religión]: {% link rules/Rangos/Religion/index.md %}
 [herida permanente leve]: {% link rules/Reglas principales/Heridas permanentes.md %}
 [armadura]: {% link rules/Rangos/Combate/armaduras.md %}
