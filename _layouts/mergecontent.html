@@ -69,7 +69,7 @@ ol {
             {% assign insidecat = mypages | where: "category", cat %}
             {% for item in insidecat %}
             <h2 id="{{item.url | slugify}}">{{item.title}}</h2>
-            <div>{{item.content | markdownify}}</div>
+            <div>{{item.content |  markdownify | sluggify_local_links}}</div>
             {% endfor %}
     {% endfor %}
 
