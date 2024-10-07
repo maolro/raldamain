@@ -16,7 +16,7 @@ ol {
     content: leader('.') target-counter(attr(href), page);
   }    
 
-  h1 {
+  .newpage {
     page-break-before: always;
   }
 
@@ -30,7 +30,8 @@ ol {
 </head>
 <body>
 
-<h1>Index</h1>
+<h1>{% if page.lang == 'es' %}Índice{%else%}Index{%endif%}</h1>
+
 {% assign indexpages = site.pages | where_exp: "p", "p.menuorder != nil" | where_exp: "p", "p.lang == page.lang" | sort: "menuorder" %}
 <ol>
 {% for indexpage in indexpages  %}
@@ -45,7 +46,7 @@ ol {
         {% if cat != empty %}<li>{{ cat }}<ol>{% endif %}
             {% assign insidecat = mypages | where: "category", cat %}
             {% for item in insidecat %}
-            <li><a class="toc-page" href="#{{item.url | slugify}}">{{item.title}}</a></li>
+            <li><a class="toc-page" href="#{{item.url | slugify}}">{{item.title | default: item.url }}</a></li>
             {% endfor %}
         {% if cat != empty%}</ol>{% endif %}</li>
     {% endfor %}
@@ -55,7 +56,7 @@ ol {
 </ol>
 
 {% for indexpage in indexpages  %}
-    <h1>{{ indexpage.title }}</h1>
+    <h1 class="newpage">{{ indexpage.title }}</h1>
 
     {{ indexpage.content | markdownify }}
 

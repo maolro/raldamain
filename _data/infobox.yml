@@ -30,4 +30,6 @@ fields:
  - name: moneda
    text: Moneda
  - name: niveles
-   text: Niveles   
+   text: Niveles  
+ - name: category
+   text: Categoría 

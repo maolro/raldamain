@@ -1,5 +1,5 @@
 ---
-5title: Magia sombría
+title: Magia sombría
 image: magia_sombria.jpg
 ---
 
