@@ -47,7 +47,7 @@ defaults:
       layout: campaign
 
 # Build settings
-safe: true # always trues on github-pages, disables _plugins/
+safe: false # use custom plugins
 markdown: kramdown
 kramdown:
   input: GFM
@@ -58,15 +58,6 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-coffeescript
-  - jekyll-default-layout
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-optional-front-matter
-  - jekyll-paginate
-  - jekyll-readme-index
-  - jekyll-titles-from-headings
   - jekyll-relative-links
   - jekyll-include-cache
   
