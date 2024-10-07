@@ -1,5 +1,6 @@
 ---
 title: Magia de Invocación
+category: Ocultismo
 ---
 
 # Reglas fundamentales
