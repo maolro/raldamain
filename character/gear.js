@@ -17,6 +17,5 @@ var listofgear = {
        "Lanza": {damage:"1d10",type:"Alabardas",hands:2,reach:10,dmgtype:"perforante"},
 	   "Ballesta": {damage:"2d6",type:"A distancia",hands:2,reach:90,dmgtype:"perforante"},
 	   "Golpe": {damage:"1",type:"Artes marciales",hands:1,reach:5,dmgtype:"contundente"},
-
    }
 }

@@ -1,0 +1,23 @@
+{
+    "antimagico-i":{
+        "value-boosts":{
+            "int": 1,
+            "con": 1,
+            "def": 2
+        },
+        "skills":["magia-protectora"],
+        "attributes":["disrupcion-magica", "eliminar-magia"],
+        "racial-abilities":["sello-protector", "glifo-magico(II)", "contrahechizo"]
+    },
+    "antimagico-ii":{
+        "value-boosts":{
+            "int": 1,
+            "con": 1,
+            "def": 2
+        },
+        "requisite":"antimagico-i",
+        "skills":["magia-protectora"],
+        "attributes":["retener-persona", "ancla-dimensional"],
+        "racial-abilities":["ataque-disruptor", "glifo-magico(III)", "sello-extraplanario"]
+    }
+}
