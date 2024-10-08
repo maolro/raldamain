@@ -3,6 +3,12 @@
     "level": 1,
     "race": "",
     "religion": "",
+    "hp": 3,
+    "vitality": 3,
+    "sanity": 3,
+    "def": 0,
+    "chi": 0,
+    "stamina": 0,
     "stats":{
         "str": 0,
         "dex": 0,
@@ -11,14 +17,17 @@
         "wis": 0,
         "cha": 0
     },
+    "talent-pool": 4,
+    "stat-pool": 11,
+    "rank-pool": 2,
     "talents":[
         {"id": "", "level": 0}
     ],
-    "ranks":[
-        {"id": "", "level": 0}
+    "skills":[
+        {"id": "", "rank": 0, "free-ranks": 0}
     ],
     "archetypes":[""],
-    "spells":[""],
+    "attributes":[""],
     "equipment":{
         "armor": "",
         "main-hand": "",

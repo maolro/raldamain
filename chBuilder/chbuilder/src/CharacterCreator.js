@@ -6,6 +6,7 @@ import EquipmentTab from './Tabs/EquipmentTab';
 import SpellsTab from './Tabs/SpellsTab';
 import { saveCharacterToFile, loadCharacterFromFile } from './utils/fileHandlers';
 import './CharacterCreator.css';
+import './CharacterCreator.css';
 
 function CharacterCreator() {
   const [character, setCharacter] = useState({
@@ -19,7 +20,7 @@ function CharacterCreator() {
     background: '',
   });
   return (
-    <div>
+    <div >
         <div className="tab">
             {/* Tab Components */}
             <button class="tablinks" onclick="openCity(event, 'London')">London</button>
