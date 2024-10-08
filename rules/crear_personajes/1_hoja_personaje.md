@@ -6,7 +6,7 @@ Una hoja de personaje muestra por completo las capacidades, habilidades y conoci
 
 ## Hoja de personaje
 
-# <img src="hoja de personaje.jpg" style="zoom:150%;"/>
+![hoja de personage](hoja de personaje.jpg)
 
 ## Conceptos importantes
 
