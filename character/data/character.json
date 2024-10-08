@@ -1,0 +1,35 @@
+{
+    "name": "",
+    "level": 1,
+    "race": "",
+    "religion": "",
+    "stats":{
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "itl": 0,
+        "wis": 0,
+        "cha": 0
+    },
+    "talents":[
+        {"id": "", "level": 0}
+    ],
+    "ranks":[
+        {"id": "", "level": 0}
+    ],
+    "archetypes":[""],
+    "spells":[""],
+    "equipment":{
+        "armor": "",
+        "main-hand": "",
+        "secondary-hand": "",
+        "head": "",
+        "hands": "",
+        "arms": "",
+        "neck": "",
+        "eyes": "",
+        "feet": "",
+        "waist": "",
+        "bag":[]
+    }
+}

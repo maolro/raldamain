@@ -22,4 +22,4 @@ La criatura es capaz de mutar su cuerpo de nuevas maneras para adaptarse a todo 
 
 ## Transmutador III (+2, requiere 5 mejoras)
 
-## TransmuIV (+2, requiere 7 mejoras)
+## Transmutador IV (+2, requiere 7 mejoras)
