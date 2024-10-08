@@ -2,8 +2,6 @@
 title: Talentos
 ---
 
-<style>body {text-align: justify}</style>
-
 Mientras que las estadísticas muestran las capacidades básicas de un personaje, los **talentos** representan aquellas habilidades que ha obtenido un personaje debido al entrenamiento y la experiencia. Estos no están vinculados a los rangos y actúan de manera independiente a ellos, marcando la soltura que tiene un personaje en cada talento a través de un valor conocido como el **nivel de talento**, que oscila entre 0 y 5. Cada talento está también vinculado a una estadística específica, la cual se muesta entre paréntesis al lado del nombre del talento. En este capítulo se mostrará toda la información relevante a los talentos, particularmente sobre todos los tipos de talento que hay, lo que abarcan y las habilidades que estos otorgan.
 
 # Información básica

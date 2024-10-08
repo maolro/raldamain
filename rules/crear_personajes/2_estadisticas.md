@@ -2,8 +2,6 @@
 title: Las seis estadísticas
 ---
 
-<style>body {text-align: justify}</style>
-
 Para empezar el proceso de creación de un personaje el primer paso consiste en calcular las estadísticas, seis valores que indican los atributos más básicos de tu personaje y se usarán para todos los rangos y talentos. Estas representan su potencial interno y dependiendo de la manera que se asignen definirán aspectos fundamentales sobre el físico y la personalidad de un personaje.
 
 # Distribución
