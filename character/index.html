@@ -60,11 +60,11 @@
                             <div class="row">
                                 <div v-for="(value, name) in attributes" class="col">
                                     {{ name }}
-                                    <v-minusplusfield v-bind:value="value" :min="-5" :max="Math.min(value + attributes_points_available, level == 1 ? 3 : (level < 12 ? 6 : 9))"
+                                    <v-minusplusfield v-bind:value="value" :min="-1" :max="Math.min(value + attributes_points_available, level == 1 ? 3 : (level < 12 ? 6 : 9))"
                                         v-on:input="attributes[name] = $event"></v-minusplusfield>
                                 </div>
                             </div> 
-                            total: {{attributes_points_max}} puntos de estadistica: {{attributes_points_available}}
+                            <b>Total</b>: {{attributes_points_max}} puntos de estadistica: {{attributes_points_available}}
                         </div>
                     </div>
                     <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">

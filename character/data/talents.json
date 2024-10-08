@@ -1,0 +1,21 @@
+{
+    "acrobatics":{"name": "Acrobacias", "stat": "dex"},
+    "performance":{"name": "Actuación", "stat": "cha"},
+    "arcana":{"name": "Arcanismo", "stat": "itl"},
+    "athletics":{"name": "Atletismo", "stat": "str"},
+    "insight":{"name": "Averiguar Intenciones", "stat": "wis"},
+    "focus":{"name": "Concentración", "stat": "itl"},
+    "wreck":{"name": "Destrozar", "stat": "str"},
+    "deception":{"name": "Engaño", "stat": "cha"},
+    "heroics":{"name": "Acrobacias", "stat": "str"},
+    "intimidate":{"name": "Acrobacias", "stat": "str/cha"},
+    "sleight-of-hand":{"name": "Acrobacias", "stat": "dex"},
+    "perception":{"name": "Percepción", "stat": "wis"},
+    "persuasion":{"name": "Persuasión", "stat": "cha"},
+    "first-aid":{"name": "Primeros Auxilios", "stat": "wis"},
+    "health":{"name": "Salud", "stat": "con"},
+    "stealth":{"name": "Sigilo", "stat": "dex"},
+    "survival":{"name": "Supervivencia", "stat": "wis"},
+    "tinker":{"name": "Trastear", "stat": "itl"},
+    "willpower":{"name": "Voluntad", "stat": "cha"}
+}
