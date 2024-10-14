@@ -1,0 +1,700 @@
+{
+    "alabardas": {
+        "name": "Alabardas",
+        "stat": "str/dex",
+        "reserve": "stamina",
+        "attributes": [
+            {
+                "rank": 1,
+                "id": "ajustar-alcance"
+            },
+            {
+                "rank": 1,
+                "id": "parada-con-alabarda"
+            },
+            {
+                "rank": 1,
+                "id": "preparacion-contra-cargas"
+            },
+            {
+                "rank": 2,
+                "id": "ataque-lateral"
+            },
+            {
+                "rank": 2,
+                "id": "golpe-aturdidor-(alabardas)"
+            },
+            {
+                "rank": 2,
+                "id": "golpe-trasero"
+            },
+            {
+                "rank": 2,
+                "id": "lanzazo-penetrante"
+            },
+            {
+                "rank": 2,
+                "id": "reposicionar-enemigo-(alabardas)"
+            },
+            {
+                "rank": 3,
+                "id": "combinar-tecnicas-(alabardas)"
+            },
+            {
+                "rank": 3,
+                "id": "danza-del-alabarda"
+            },
+            {
+                "rank": 3,
+                "id": "lanzazo-saltarin"
+            },
+            {
+                "rank": 4,
+                "id": "atravesar-defensas"
+            },
+            {
+                "rank": 4,
+                "id": "estocada-serpenteante"
+            },
+            {
+                "rank": 4,
+                "id": "lanzazo-aereo"
+            },
+            {
+                "rank": 5,
+                "id": "abanico-de-acero"
+            },
+            {
+                "rank": 5,
+                "id": "extension-de-tu-cuerpo"
+            },
+            {
+                "rank": 5,
+                "id": "lanzazo-devastador"
+            },
+            {
+                "rank": 5,
+                "id": "lanzazos-en-cadena"
+            },
+            {
+                "rank": 5,
+                "id": "tornado-de-madera"
+            }
+        ]
+    },
+    "armas-a-distancia": {
+        "name": "Armas A Distancia",
+        "stat": "dex",
+        "reserve": "stamina",
+        "attributes": [
+            {
+                "rank": 1,
+                "id": "ajustar-alcance"
+            },
+            {
+                "rank": 1,
+                "id": "parada-con-alabarda"
+            },
+            {
+                "rank": 1,
+                "id": "preparacion-contra-cargas"
+            },
+            {
+                "rank": 2,
+                "id": "ataque-lateral"
+            },
+            {
+                "rank": 2,
+                "id": "golpe-aturdidor-(alabardas)"
+            },
+            {
+                "rank": 2,
+                "id": "golpe-trasero"
+            },
+            {
+                "rank": 2,
+                "id": "lanzazo-penetrante"
+            },
+            {
+                "rank": 2,
+                "id": "reposicionar-enemigo-(alabardas)"
+            },
+            {
+                "rank": 3,
+                "id": "combinar-tecnicas-(alabardas)"
+            },
+            {
+                "rank": 3,
+                "id": "danza-del-alabarda"
+            },
+            {
+                "rank": 3,
+                "id": "lanzazo-saltarin"
+            },
+            {
+                "rank": 4,
+                "id": "atravesar-defensas"
+            },
+            {
+                "rank": 4,
+                "id": "estocada-serpenteante"
+            },
+            {
+                "rank": 4,
+                "id": "lanzazo-aereo"
+            },
+            {
+                "rank": 5,
+                "id": "abanico-de-acero"
+            },
+            {
+                "rank": 5,
+                "id": "extension-de-tu-cuerpo"
+            },
+            {
+                "rank": 5,
+                "id": "lanzazo-devastador"
+            },
+            {
+                "rank": 5,
+                "id": "lanzazos-en-cadena"
+            },
+            {
+                "rank": 5,
+                "id": "tornado-de-madera"
+            },
+            {
+                "rank": 1,
+                "id": "apuntar-ataque"
+            },
+            {
+                "rank": 1,
+                "id": "disparo-certero"
+            },
+            {
+                "rank": 2,
+                "id": "desarme-agil"
+            },
+            {
+                "rank": 2,
+                "id": "disparo-engañoso"
+            },
+            {
+                "rank": 2,
+                "id": "disparo-triple"
+            },
+            {
+                "rank": 2,
+                "id": "recarga-rapida"
+            },
+            {
+                "rank": 3,
+                "id": "combinar-tecnicas-(a-distancia)"
+            },
+            {
+                "rank": 3,
+                "id": "cubierta-de-disparos"
+            },
+            {
+                "rank": 3,
+                "id": "ojo-del-francotirador"
+            },
+            {
+                "rank": 3,
+                "id": "parada-(a-distancia)"
+            },
+            {
+                "rank": 4,
+                "id": "disparo-impredecible"
+            },
+            {
+                "rank": 4,
+                "id": "disparo-penetrante"
+            },
+            {
+                "rank": 4,
+                "id": "interceptar-ataque"
+            },
+            {
+                "rank": 5,
+                "id": "disparo-ejecutor"
+            },
+            {
+                "rank": 5,
+                "id": "lluvia-de-plomo"
+            },
+            {
+                "rank": 5,
+                "id": "punteria-experta"
+            }
+        ]
+    },
+    "armas-de-duelo": {
+        "name": "Armas de Duelo",
+        "stat": "str/dex",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "armas-ligeras": {
+        "name": "Armas Ligeras",
+        "stat": "str/dex",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "armas-pesadas": {
+        "name": "Armas Pesadas",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "ascendencia-abisal": {
+        "name": "Ascendencia Abisal",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-akhasica": {
+        "name": "Ascendencia Akhásica",
+        "stat": "itl",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-boreal": {
+        "name": "Ascendencia Boreal",
+        "stat": "wis",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-celestial": {
+        "name": "Ascendencia Celestial",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": [
+            {
+                "rank": 1,
+                "id": "luz-celestial"
+            },
+            {
+                "rank": 1,
+                "id": "nacido-del-cielo"
+            },
+            {
+                "rank": 1,
+                "id": "halo-cegador"
+            },
+            {
+                "rank": 1,
+                "id": "rayo-luminoso"
+            },
+            {
+                "rank": 1,
+                "id": "toque-sanador"
+            },
+            {
+                "rank": 2,
+                "id": "arma-angelical"
+            },
+            {
+                "rank": 2,
+                "id": "cuerpo-puro"
+            },
+            {
+                "rank": 3,
+                "id": "angel-protector"
+            },
+            {
+                "rank": 3,
+                "id": "poder-de-los-cielos"
+            },
+            {
+                "rank": 3,
+                "id": "barrera-luminosa"
+            },
+            {
+                "rank": 3,
+                "id": "arma-solar"
+            },
+            {
+                "rank": 4,
+                "id": "alas-angelicales"
+            },
+            {
+                "rank": 4,
+                "id": "vision-verdadera"
+            },
+            {
+                "rank": 5,
+                "id": "alma-ascendida"
+            },
+            {
+                "rank": 5,
+                "id": "luz-viviente"
+            },
+            {
+                "rank": 5,
+                "id": "sanacion-superior"
+            },
+            {
+                "rank": 5,
+                "id": "regeneracion-celestial"
+            },
+            {
+                "rank": 6,
+                "id": "angel-vengador"
+            }
+        ],
+        "stat-boosts":[
+            {"rank": 2, "stat": "cha", "boost": 1},
+            {"rank": 4, "stat": "con", "boost": 1},
+            {"rank": 6, "stat": "wis", "boost": 1}
+        ]
+    },
+    "ascendencia-cruen": {
+        "name": "Ascendencia Cruen",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-de-agua": {
+        "name": "Ascendencia de Agua",
+        "stat": "wis",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-de-aire": {
+        "name": "Ascendencia de Aire",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-de-fuego": {
+        "name": "Ascendencia de Fuego",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-de-tierra": {
+        "name": "Ascendencia de Tierra",
+        "stat": "wis",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-draconica": {
+        "name": "Ascendencia Dracónica",
+        "stat": "con",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-fúngica": {
+        "name": "Ascendencia Fúngica",
+        "stat": "wis",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-infernal": {
+        "name": "Ascendencia Infernal",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-insectoide": {
+        "name": "Ascendencia Insectoide",
+        "stat": "wis",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-oni": {
+        "name": "Ascendencia Oni",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-primigenia": {
+        "name": "Ascendencia Primigenia",
+        "stat": "wis",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ascendencia-sombria": {
+        "name": "Ascendencia Sombría",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "bombas": {
+        "name": "Bombas",
+        "stat": "itl",
+        "reserve": "",
+        "attributes": ""
+    },
+    "cadenas": {
+        "name": "Cadenas",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "chakras": {
+        "name": "Chakras",
+        "stat": "con",
+        "reserve": "",
+        "attributes": ""
+    },
+    "escudo": {
+        "name": "Escudo",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "estilo-agarre": {
+        "name": "Estilo Agarre",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "estilo-boxeo": {
+        "name": "Estilo Boxeo",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "estilo-dragon": {
+        "name": "Estilo Dragón",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "estilo-salvaje": {
+        "name": "Estilo Salvaje",
+        "stat": "str",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "estilo-serpiente": {
+        "name": "Estilo Serpiente",
+        "stat": "dex",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "fabricacion": {
+        "name": "Fabricación",
+        "stat": "itl",
+        "reserve": "",
+        "attributes": ""
+    },
+    "fortitud": {
+        "name": "Fortitud",
+        "stat": "con",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "guerrero-divino": {
+        "name": "Guerrero Divino",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "ira": {
+        "name": "Ira",
+        "stat": "con",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "magia-de-acido": {
+        "name": "Magia de Ácido",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-agua": {
+        "name": "Magia de Agua",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-aire": {
+        "name": "Magia de Aire",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-almas": {
+        "name": "Magia de Almas",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-arena": {
+        "name": "Magia de Arena",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-evocacion": {
+        "name": "Magia de Evocación",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-fuego": {
+        "name": "Magia de Fuego",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-hielo": {
+        "name": "Magia de Hielo",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-invocacion": {
+        "name": "Magia de Invocación",
+        "stat": "cha",
+        "reserve": "stamina/chi",
+        "attributes": ""
+    },
+    "magia-de-metal": {
+        "name": "Magia de Metal",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-naturaleza": {
+        "name": "Magia de Naturaleza",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-sangre": {
+        "name": "Magia de Sangre",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-tierra": {
+        "name": "Magia de Tierra",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-tormenta": {
+        "name": "Magia de Tormenta",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-transmutacion": {
+        "name": "Magia de Transmutación",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-de-vida": {
+        "name": "Magia de Vida",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-divina": {
+        "name": "Magia Divina",
+        "stat": "wis",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-espacial": {
+        "name": "Magia Espacial",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-gravitatoria": {
+        "name": "Magia Gravitatoria",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-ilusoria": {
+        "name": "Magia Ilusoria",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-mental": {
+        "name": "Magia Mental",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-onirica": {
+        "name": "Magia Onírica",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-protectora": {
+        "name": "Magia Protectora",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-sombria": {
+        "name": "Magia Sombría",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "magia-temporal": {
+        "name": "Magia Temporal",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "mente-desencadenada": {
+        "name": "Mente Desencadenada",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "nigromancia": {
+        "name": "Nigromancia",
+        "stat": "cha",
+        "reserve": "chi",
+        "attributes": ""
+    },
+    "presencia": {
+        "name": "Presencia",
+        "stat": "cha",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "quimica": {
+        "name": "Química",
+        "stat": "itl",
+        "reserve": "",
+        "attributes": ""
+    },
+    "rastrear": {
+        "name": "Rastrear",
+        "stat": "wis",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "reflejos": {
+        "name": "Reflejos",
+        "stat": "dex",
+        "reserve": "stamina",
+        "attributes": ""
+    },
+    "sabotaje": {
+        "name": "Sabotaje",
+        "stat": "itl",
+        "reserve": "",
+        "attributes": ""
+    },
+    "telekinesia": {
+        "name": "Telekinesia",
+        "stat": "itl",
+        "reserve": "chi",
+        "attributes": ""
+    }
+}

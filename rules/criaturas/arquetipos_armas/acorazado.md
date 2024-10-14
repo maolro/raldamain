@@ -13,7 +13,7 @@ La criatura está dotada de una poderosa coraza capaz de detener ataques enemigo
 - **Carga con Escudo:** Cada vez que se mueva un paso puede hacer un ataque con su Escudo de la misma manera que Carga con Escudo. Si no lleva un Escudo puede hacer un ataque natural en su lugar.
 - **Resiliencia:** Puede emplear la reacción Resiliencia una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Resiliencia que reciba por arquetipos diferentes.
 - **Parada con Escudo:** Puede usar su tiro de Escudos para defenderse de ataques cuerpo a cuerpo, a distancia y de área. No necesita llevar un escudo para defenderse de esta manera si es de tamaño Grande o superior además.
-- **Estilo Defensivo:** Al empezar el combate cuenta con tres *contadores de escudo* que puede usar para reducir el daño de ataques que reciba. Puede también defender a aliados adyacentes usando Parada con Escudo y cuenta siempre como si estuviera en Defensa Absoluta para determinar las habilidades que se activa
+- **Estilo Defensivo:** Al empezar el combate cuenta con tres *contadores de escudo* que puede usar para reducir el daño de ataques que reciba. Puede también defender a aliados adyacentes usando Parada con Escudo y cuenta siempre como si estuviera en Defensa Absoluta para determinar las habilidades que se activan.
 
 ## Acorazado II
 

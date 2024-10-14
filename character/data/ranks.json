@@ -1,700 +1,605 @@
 {
-    "alabardas": {
-        "name": "Alabardas",
-        "stat": "str/dex",
-        "reserve": "stamina",
-        "attributes": [
-            {
-                "rank": 1,
-                "id": "ajustar-alcance"
-            },
-            {
-                "rank": 1,
-                "id": "parada-con-alabarda"
-            },
-            {
-                "rank": 1,
-                "id": "preparacion-contra-cargas"
-            },
-            {
-                "rank": 2,
-                "id": "ataque-lateral"
-            },
-            {
-                "rank": 2,
-                "id": "golpe-aturdidor-(alabardas)"
-            },
-            {
-                "rank": 2,
-                "id": "golpe-trasero"
-            },
-            {
-                "rank": 2,
-                "id": "lanzazo-penetrante"
-            },
-            {
-                "rank": 2,
-                "id": "reposicionar-enemigo-(alabardas)"
-            },
-            {
-                "rank": 3,
-                "id": "combinar-tecnicas-(alabardas)"
-            },
-            {
-                "rank": 3,
-                "id": "danza-del-alabarda"
-            },
-            {
-                "rank": 3,
-                "id": "lanzazo-saltarin"
-            },
-            {
-                "rank": 4,
-                "id": "atravesar-defensas"
-            },
-            {
-                "rank": 4,
-                "id": "estocada-serpenteante"
-            },
-            {
-                "rank": 4,
-                "id": "lanzazo-aereo"
-            },
-            {
-                "rank": 5,
-                "id": "abanico-de-acero"
-            },
-            {
-                "rank": 5,
-                "id": "extension-de-tu-cuerpo"
-            },
-            {
-                "rank": 5,
-                "id": "lanzazo-devastador"
-            },
-            {
-                "rank": 5,
-                "id": "lanzazos-en-cadena"
-            },
-            {
-                "rank": 5,
-                "id": "tornado-de-madera"
-            }
-        ]
-    },
-    "armas-a-distancia": {
-        "name": "Armas A Distancia",
-        "stat": "dex",
-        "reserve": "stamina",
-        "attributes": [
-            {
-                "rank": 1,
-                "id": "ajustar-alcance"
-            },
-            {
-                "rank": 1,
-                "id": "parada-con-alabarda"
-            },
-            {
-                "rank": 1,
-                "id": "preparacion-contra-cargas"
-            },
-            {
-                "rank": 2,
-                "id": "ataque-lateral"
-            },
-            {
-                "rank": 2,
-                "id": "golpe-aturdidor-(alabardas)"
-            },
-            {
-                "rank": 2,
-                "id": "golpe-trasero"
-            },
-            {
-                "rank": 2,
-                "id": "lanzazo-penetrante"
-            },
-            {
-                "rank": 2,
-                "id": "reposicionar-enemigo-(alabardas)"
-            },
-            {
-                "rank": 3,
-                "id": "combinar-tecnicas-(alabardas)"
-            },
-            {
-                "rank": 3,
-                "id": "danza-del-alabarda"
-            },
-            {
-                "rank": 3,
-                "id": "lanzazo-saltarin"
-            },
-            {
-                "rank": 4,
-                "id": "atravesar-defensas"
-            },
-            {
-                "rank": 4,
-                "id": "estocada-serpenteante"
-            },
-            {
-                "rank": 4,
-                "id": "lanzazo-aereo"
-            },
-            {
-                "rank": 5,
-                "id": "abanico-de-acero"
-            },
-            {
-                "rank": 5,
-                "id": "extension-de-tu-cuerpo"
-            },
-            {
-                "rank": 5,
-                "id": "lanzazo-devastador"
-            },
-            {
-                "rank": 5,
-                "id": "lanzazos-en-cadena"
-            },
-            {
-                "rank": 5,
-                "id": "tornado-de-madera"
-            },
-            {
-                "rank": 1,
-                "id": "apuntar-ataque"
-            },
-            {
-                "rank": 1,
-                "id": "disparo-certero"
-            },
-            {
-                "rank": 2,
-                "id": "desarme-agil"
-            },
-            {
-                "rank": 2,
-                "id": "disparo-engañoso"
-            },
-            {
-                "rank": 2,
-                "id": "disparo-triple"
-            },
-            {
-                "rank": 2,
-                "id": "recarga-rapida"
-            },
-            {
-                "rank": 3,
-                "id": "combinar-tecnicas-(a-distancia)"
-            },
-            {
-                "rank": 3,
-                "id": "cubierta-de-disparos"
-            },
-            {
-                "rank": 3,
-                "id": "ojo-del-francotirador"
-            },
-            {
-                "rank": 3,
-                "id": "parada-(a-distancia)"
-            },
-            {
-                "rank": 4,
-                "id": "disparo-impredecible"
-            },
-            {
-                "rank": 4,
-                "id": "disparo-penetrante"
-            },
-            {
-                "rank": 4,
-                "id": "interceptar-ataque"
-            },
-            {
-                "rank": 5,
-                "id": "disparo-ejecutor"
-            },
-            {
-                "rank": 5,
-                "id": "lluvia-de-plomo"
-            },
-            {
-                "rank": 5,
-                "id": "punteria-experta"
-            }
-        ]
-    },
-    "armas-de-duelo": {
-        "name": "Armas de Duelo",
-        "stat": "str/dex",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "armas-ligeras": {
-        "name": "Armas Ligeras",
-        "stat": "str/dex",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "armas-pesadas": {
-        "name": "Armas Pesadas",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "ascendencia-abisal": {
-        "name": "Ascendencia Abisal",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-akhasica": {
-        "name": "Ascendencia Akhásica",
-        "stat": "itl",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-boreal": {
-        "name": "Ascendencia Boreal",
-        "stat": "wis",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-celestial": {
-        "name": "Ascendencia Celestial",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": [
-            {
-                "rank": 1,
-                "id": "luz-celestial"
-            },
-            {
-                "rank": 1,
-                "id": "nacido-del-cielo"
-            },
-            {
-                "rank": 1,
-                "id": "halo-cegador"
-            },
-            {
-                "rank": 1,
-                "id": "rayo-luminoso"
-            },
-            {
-                "rank": 1,
-                "id": "toque-sanador"
-            },
-            {
-                "rank": 2,
-                "id": "arma-angelical"
-            },
-            {
-                "rank": 2,
-                "id": "cuerpo-puro"
-            },
-            {
-                "rank": 3,
-                "id": "angel-protector"
-            },
-            {
-                "rank": 3,
-                "id": "poder-de-los-cielos"
-            },
-            {
-                "rank": 3,
-                "id": "barrera-luminosa"
-            },
-            {
-                "rank": 3,
-                "id": "arma-solar"
-            },
-            {
-                "rank": 4,
-                "id": "alas-angelicales"
-            },
-            {
-                "rank": 4,
-                "id": "vision-verdadera"
-            },
-            {
-                "rank": 5,
-                "id": "alma-ascendida"
-            },
-            {
-                "rank": 5,
-                "id": "luz-viviente"
-            },
-            {
-                "rank": 5,
-                "id": "sanacion-superior"
-            },
-            {
-                "rank": 5,
-                "id": "regeneracion-celestial"
-            },
-            {
-                "rank": 6,
-                "id": "angel-vengador"
-            }
-        ],
-        "stat-boosts":[
-            {"rank": 2, "stat": "cha", "boost": 1},
-            {"rank": 4, "stat": "con", "boost": 1},
-            {"rank": 6, "stat": "wis", "boost": 1}
-        ]
-    },
-    "ascendencia-cruen": {
-        "name": "Ascendencia Cruen",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-de-agua": {
-        "name": "Ascendencia de Agua",
-        "stat": "wis",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-de-aire": {
-        "name": "Ascendencia de Aire",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-de-fuego": {
-        "name": "Ascendencia de Fuego",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-de-tierra": {
-        "name": "Ascendencia de Tierra",
-        "stat": "wis",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-draconica": {
-        "name": "Ascendencia Dracónica",
-        "stat": "con",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-fúngica": {
-        "name": "Ascendencia Fúngica",
-        "stat": "wis",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-infernal": {
-        "name": "Ascendencia Infernal",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-insectoide": {
-        "name": "Ascendencia Insectoide",
-        "stat": "wis",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-oni": {
-        "name": "Ascendencia Oni",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-primigenia": {
-        "name": "Ascendencia Primigenia",
-        "stat": "wis",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ascendencia-sombria": {
-        "name": "Ascendencia Sombría",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "bombas": {
-        "name": "Bombas",
-        "stat": "itl",
-        "reserve": "",
-        "attributes": ""
-    },
-    "cadenas": {
-        "name": "Cadenas",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "chakras": {
-        "name": "Chakras",
-        "stat": "con",
-        "reserve": "",
-        "attributes": ""
-    },
-    "escudo": {
-        "name": "Escudo",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "estilo-agarre": {
-        "name": "Estilo Agarre",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "estilo-boxeo": {
-        "name": "Estilo Boxeo",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "estilo-dragon": {
-        "name": "Estilo Dragón",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "estilo-salvaje": {
-        "name": "Estilo Salvaje",
-        "stat": "str",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "estilo-serpiente": {
-        "name": "Estilo Serpiente",
-        "stat": "dex",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "fabricacion": {
-        "name": "Fabricación",
-        "stat": "itl",
-        "reserve": "",
-        "attributes": ""
-    },
-    "fortitud": {
-        "name": "Fortitud",
-        "stat": "con",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "guerrero-divino": {
-        "name": "Guerrero Divino",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "ira": {
-        "name": "Ira",
-        "stat": "con",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "magia-de-acido": {
-        "name": "Magia de Ácido",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-agua": {
-        "name": "Magia de Agua",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-aire": {
-        "name": "Magia de Aire",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-almas": {
-        "name": "Magia de Almas",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-arena": {
-        "name": "Magia de Arena",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-evocacion": {
-        "name": "Magia de Evocación",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-fuego": {
-        "name": "Magia de Fuego",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-hielo": {
-        "name": "Magia de Hielo",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-invocacion": {
-        "name": "Magia de Invocación",
-        "stat": "cha",
-        "reserve": "stamina/chi",
-        "attributes": ""
-    },
-    "magia-de-metal": {
-        "name": "Magia de Metal",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-naturaleza": {
-        "name": "Magia de Naturaleza",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-sangre": {
-        "name": "Magia de Sangre",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-tierra": {
-        "name": "Magia de Tierra",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-tormenta": {
-        "name": "Magia de Tormenta",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-transmutacion": {
-        "name": "Magia de Transmutación",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-de-vida": {
-        "name": "Magia de Vida",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-divina": {
-        "name": "Magia Divina",
-        "stat": "wis",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-espacial": {
-        "name": "Magia Espacial",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-gravitatoria": {
-        "name": "Magia Gravitatoria",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-ilusoria": {
-        "name": "Magia Ilusoria",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-mental": {
-        "name": "Magia Mental",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-onirica": {
-        "name": "Magia Onírica",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-protectora": {
-        "name": "Magia Protectora",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-sombria": {
-        "name": "Magia Sombría",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "magia-temporal": {
-        "name": "Magia Temporal",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "mente-desencadenada": {
-        "name": "Mente Desencadenada",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "nigromancia": {
-        "name": "Nigromancia",
-        "stat": "cha",
-        "reserve": "chi",
-        "attributes": ""
-    },
-    "presencia": {
-        "name": "Presencia",
-        "stat": "cha",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "quimica": {
-        "name": "Química",
-        "stat": "itl",
-        "reserve": "",
-        "attributes": ""
-    },
-    "rastrear": {
-        "name": "Rastrear",
-        "stat": "wis",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "reflejos": {
-        "name": "Reflejos",
-        "stat": "dex",
-        "reserve": "stamina",
-        "attributes": ""
-    },
-    "sabotaje": {
-        "name": "Sabotaje",
-        "stat": "itl",
-        "reserve": "",
-        "attributes": ""
-    },
-    "telekinesia": {
-        "name": "Telekinesia",
-        "stat": "itl",
-        "reserve": "chi",
-        "attributes": ""
-    }
+  "alabardas": {
+    "name": "Alabardas",
+    "stat": "str/dex",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "abanico-de-acero,ajustar-alcance,ataque-lateral,atravesar-defensas,combinar-tecnicas-(alabardas),danza-del-alabarda,estocada-serpenteante,extension-de-tu-cuerpo,golpe-aturdidor-(alabardas),golpe-trasero,lanzazo-aereo,lanzazo-devastador,lanzazo-penetrante,lanzazo-saltarin,lanzazos-en-cadena,parada-con-alabarda,preparacion-contra-cargas,reposicionar-enemigo-(alabardas),tornado-de-madera"
+  },
+  "armas-a-distancia": {
+    "name": "Armas A Distancia",
+    "stat": "dex",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "apuntar-ataque,combinar-tecnicas-(a-distancia),cubierta-de-disparos,desarme-agil,disparo-certero,disparo-ejecutor,disparo-engañoso,disparo-impredecible,disparo-penetrante,disparo-triple,interceptar-ataque,lluvia-de-plomo,ojo-del-francotirador,parada-(a-distancia),punteria-experta,recarga-rapida"
+  },
+  "armas-de-duelo": {
+    "name": "Armas de Duelo",
+    "stat": "str/dex",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "ataque-saltarin,ataque-torbellino,combinar-tecnicas-(duelo),contrataque-(duelo),cortes-en-cadena,danza-del-espadachin,destreza-defensiva,espadas-trabadas,estocada-poderosa,finta-engañosa,golpe-de-gracia,golpe-de-mango,maestro-espadachin,parada-de-duelo,secuencia-de-ataques,truco-de-espada"
+  },
+  "armas-ligeras": {
+    "name": "Armas Ligeras",
+    "stat": "str/dex",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "asalto-engañoso,asalto-impredecible,asesinato,combate-furtivo-(ligeras),combinar-tecnicas-(ligeras),contrataque-(ligeras),cuchillada,golpe-penetrante-(ligeras),lluvia-de-cuchillos,movilidad-de-combate,parada-con-arma-ligera,puñalada-poderosa,puñalada-quirurgica,puñaladas-en-secuencia,salto-mortal"
+  },
+  "armas-pesadas": {
+    "name": "Armas Pesadas",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "carga-salvaje,combinar-tecnicas-(pesadas),estilo-salvaje,golpe-ascendente,golpe-aturdidor-(pesadas),golpe-demoledor,golpe-desestabilizador,golpe-por-golpe,gran-barrido,guardia-fluida,impacto-meteoro,impacto-mortal,parada-con-arma-pesada,reposicion-forzosa-(pesadas),tajo-feroz,vuelo-de-golondrina"
+  },
+  "ascendencia-abisal": {
+    "name": "Ascendencia Abisal",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "abrazar-la-locura,aura-del-caos,corrupcion-absoluta,furia-abisal,invocacion-abisal,mutacion,paso-abisal,paso-abisal-defensivo,poder-antinatural,rasgo-monstruoso-superior,tocado-por-la-locura,transformacion-abisal"
+  },
+  "ascendencia-akhasica": {
+    "name": "Ascendencia Akhásica",
+    "stat": "itl",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "abrir-el-tercer-ojo,arbitro-del-destino,forma-astral,fortaleza-del-pensamiento,hipercognicion,meditacion-iluminada,mente-iluminada,palacio-de-la-mente,psicomagia,sentido-magico,vinculo-akhasico"
+  },
+  "ascendencia-boreal": {
+    "name": "Ascendencia Boreal",
+    "stat": "wis",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "adaptacion-al-frio,caminante-del-hielo,caminante-del-viento,canalizar-el-frio,corazon-de-hielo,crioquinesia,forma-elemental-de-hielo,forma-gaseosa,forma-gaseosa-defensiva,guardian-del-artico,manto-nevado,poder-del-invierno"
+  },
+  "ascendencia-celestial": {
+    "name": "Ascendencia Celestial",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alas-angelicales,alma-ascendida,angel-protector,angel-vengador,arma-angelical,cuerpo-puro,luz-celestial,nacido-del-cielo,poder-de-los-cielos,regeneracion-celestial,vision-verdadera"
+  },
+  "ascendencia-cruen": {
+    "name": "Ascendencia Cruen",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "devorar-cadaver,esencia-de-no-muerto,linaje-sanguineo,peso-de-cadaver"
+  },
+  "ascendencia-de-agua": {
+    "name": "Ascendencia de Agua",
+    "stat": "wis",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aguas-sanadoras,columna-de-agua,ecolocacion,elemento-del-cambio,flagelo-de-las-corrientes,forma-acuosa,forma-acuosa-defensiva,forma-elemental,forma-fluida,golpe-hidraulico,hidrokinesia,nacido-de-las-profundidades"
+  },
+  "ascendencia-de-aire": {
+    "name": "Ascendencia de Aire",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aerokinesia,agilidad-del-viento,elemento-de-libertad,forma-elemental-de-aire,golpes-de-vacio,infusion-tormentosa,jinete-de-la-tormenta,nacido-de-las-tormentas,uno-con-la-tormenta,viajero-de-los-cielos,vientos-protectores"
+  },
+  "ascendencia-de-fuego": {
+    "name": "Ascendencia de Fuego",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "asalto-flamigero,aura-abrasadora,elemento-del-poder,forma-elemental-de-fuego,fuego-interior,furia-del-fuego,llama-viviente,piroquinesia,propulsion,renacer-del-fenix,vision-termica"
+  },
+  "ascendencia-de-tierra": {
+    "name": "Ascendencia de Tierra",
+    "stat": "wis",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "armadura-de-piedra,elemento-del-equilibrio,forma-elemental-de-tierra,geokinesia,georradar,georradar-predictivo,inquebrantable-como-la-roca,mole-viviente,ola-de-tierra,puños-de-tierra,vinculo-con-la-tierra"
+  },
+  "ascendencia-draconica": {
+    "name": "Ascendencia Dracónica",
+    "stat": "con",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alas-del-dragon,aliento-del-dragon,aspecto-draconico,escamas-impenetrables,forma-del-dragon,furia-del-dragon,magia-draconica,poder-elemental,presencia-aterradora,resiliencia-draconica,sentidos-draconicos"
+  },
+  "ascendencia-fungica": {
+    "name": "Ascendencia Fúngica",
+    "stat": "wis",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "animar-hongos,aura-toxica,carroñero,comunion-fungica,esporas-infecciosas,forma-miconica,manipular-hontos,metabolismo-fungico,nube-toxica,regeneracion-maldita,señor-de-los-hongos"
+  },
+  "ascendencia-infernal": {
+    "name": "Ascendencia Infernal",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alas-demoniacas,arma-profana,cadenas-del-contrato,corrupcion-demoniaca,pacto-del-diablo,presencia-majestuosa,puertas-del-infierno,resistencias-infernales,señor-de-la-sima,siervos-del-contrato,vision-infernal"
+  },
+  "ascendencia-insectoide": {
+    "name": "Ascendencia Insectoide",
+    "stat": "wis",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aspecto-entotropico,exoesqueleto,feromonas-esclavizantes,forma-de-plaga,forma-de-plaga-defensiva,fortalecer-prole,invocar-marabunta,mente-colmena,mente-insectoide,orden-de-exterminio,ovoposicion,reina-de-la-colmena"
+  },
+  "ascendencia-oni": {
+    "name": "Ascendencia Oni",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aguantar-heridas,aguantar-heridas-defensiva,alma-de-oni,despertar-el-demonio,foco-elemental,forma-espectral,forma-espectral-defensiva,furia-del-oni,levitacion,presencia-terrorifica,regeneracion-del-oni,tercer-ojo,transformacion-gigantesca"
+  },
+  "ascendencia-primigenia": {
+    "name": "Ascendencia Primigenia",
+    "stat": "wis",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aspecto-primigenio,aura-primigenia,comunion-con-la-naturaleza,despertar-la-bestia,forma-de-la-bestia,fuerza-salvaje,llamar-a-los-espiritus,portal-espiritual,sanacion-espiritual,transformacion-animal,vinculo-primigenio"
+  },
+  "ascendencia-sombria": {
+    "name": "Ascendencia Sombría",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "absorber-oscuridad,arma-de-tinieblas,dominio-de-pesadilla,forma-sombria,forma-sombria-defensiva,infusion-sombria,invocacion-sombria,nacido-de-las-tinieblas,salto-sombrio,salto-sombrio-defensivo,sigilo-sombrio,sombra-viviente,tirano-sombrio"
+  },
+  "bombas": {
+    "name": "Bombas",
+    "stat": "itl",
+    "reserve": "",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "bomba-cegadora,bomba-de-chi,bomba-de-fuego,bomba-de-gas-venenoso,bomba-de-humo,bomba-pegadiza,combinar-bomba,explosion-defensiva,retrasar-explosion"
+  },
+  "cadenas": {
+    "name": "Cadenas",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "ahorcar,ataque-serpenteante,cadena-giratoria,cargar-ataque,combinar-tecnicas-(cadenas),danza-de-cadenas,danza-de-destruccion,desviar-ataques,enredar,escudo-humano,espinas-desgarrantes,gancho-perforante"
+  },
+  "chakras": {
+    "name": "Chakras",
+    "stat": "con",
+    "reserve": "",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "activacion-de-chakras,aura-de-perfeccion,aura-de-poder,chakra-de-armonia,chakra-de-la-corona,chakra-de-la-garganta,chakra-del-alma,chakra-del-corazon,chakra-del-espacio,chakra-del-tercer-ojo,chakra-raiz,chakra-sacral,chakra-solar,chakra-terrenal,chakra-universal,fuerza-vital,maestria-del-camino-marcial,puños-de-fuerza,secretos-de-levitacion"
+  },
+  "escudo": {
+    "name": "Escudo",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "carga-con-escudo,carga-poderosa,defensa-absoluta,detener-ataque,estilo-defensor,mente-custodiada,parada-con-escudo,reposicion-forzosa-(escudo)"
+  },
+  "estilo-agarre": {
+    "name": "Estilo Agarre",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "agarre-letal,lanzar-al-suelo,romper-agarres"
+  },
+  "estilo-boxeo": {
+    "name": "Estilo Boxeo",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "ataque-poderoso,combinar-tecnicas-(boxeo),descarga-de-puñetazos,duelo-ininterrumpido,giro-del-boxeador,golpe-de-gacela,golpe-de-gacela-defensivo,golpe-debilitador,golpes-penetrantes,guardia-defensiva,parada-de-boxeo,puñetazo-falso,puñetazo-veloz,puño-aturdidor,puño-certero,secuencia-de-golpes"
+  },
+  "estilo-dragon": {
+    "name": "Estilo Dragón",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "arte-de-la-lucha,asalto-multiple,ascension-del-dragon,combinar-tecnicas-(dragon),control-del-chi-interior,control-del-chi-interior-defensivo,danza-del-dragon,golpe-oculto,movimientos-sutiles,patada-decapitadora,patada-desequilibrante,patada-salto-alta,patada-torbellino,reposicionar-enemigo-(dragon),romper-ladrillos"
+  },
+  "estilo-salvaje": {
+    "name": "Estilo Salvaje",
+    "stat": "str",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "abrazo-de-oso,agilidad-animal,carga-imparable,combinar-tecnicas-(salvaje),destrozar-defensas,golpe-sucio,mataleon,mordisco-salvaje,parada-salvaje,persecucion,salto-salvaje,zarpazo-desmembrador"
+  },
+  "estilo-serpiente": {
+    "name": "Estilo Serpiente",
+    "stat": "dex",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "combate-furtivo-(serpiente),golpe-a-la-nuca,golpe-desorientante,impacto-paralizante,mordisco-de-la-serpiente,parada-marcial"
+  },
+  "fabricacion": {
+    "name": "Fabricación",
+    "stat": "itl",
+    "reserve": "",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "antimagica,bateria-de-chi,crear-constructo,fabricar-aleacion,imbuir-hechizo,infusion-elemental,piedra-de-enviar,propulsor,protesis-mecanica,repacacion-rapida,respirador,vision-mejorada"
+  },
+  "fortitud": {
+    "name": "Fortitud",
+    "stat": "con",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 5,
+    "attributes": "aguantar-los-elementos,armadura-natural,constitucion-ferrea,duro-de-pelar,hasta-la-muerte,muro-viviente,resiliencia,sanacion-rapida,segundo-aliento,una-ultima-resistencia"
+  },
+  "guerrero-divino": {
+    "name": "Guerrero Divino",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aliento-de-la-vida,aura-protectora,avatar-divino,azote-divino,azote-ejecutor,canalizar-divinidad,explosion-divina,golpe-exiliante,guerrero-de-la-fe,hueste-divina,impacto-desacralizador,plegaria-de-batalla,presencia-divina,sentido-divino"
+  },
+  "ira": {
+    "name": "Ira",
+    "stat": "con",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 5,
+    "attributes": "demostracion-terrorifica,frenesi-de-batalla,furia-imparable,golpe-de-adrenalina,hasta-el-limite,ira-de-combate,ira-temeraria,resistencia-salvaje,superar-los-limites"
+  },
+  "magia-de-acido": {
+    "name": "Magia de Ácido",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aliento-toxico,armadura-acida,calcificacion,corroer-hasta-los-huesos,erupcion-acida,escupitajo-acido,foso-de-cadaveres,invocar-elemental-de-lodo,llamar-al-pantano,lluvia-acida,muro-de-lodo,muro-de-lodo-defensivo,señor-del-pantano,tentaculos-fangosos,toque-corrosivo,torrente-caustico,vapores-abrasivos"
+  },
+  "magia-de-agua": {
+    "name": "Magia de Agua",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aguas-de-la-vida,controlar-el-agua,escaldar,furia-del-oceano,invocar-elemental-de-agua,lluvias-torrenciales,medianoche-polar,muro-de-agua,muro-de-agua-defensivo,niebla-envolvente,ola-chocante,parada-de-agua,prision-acuosa,taladro-hidraulico,tentaculos-de-agua,torrente,tsunami,vapor-hirviente,vortice"
+  },
+  "magia-de-aire": {
+    "name": "Magia de Aire",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "agarre-del-aire,controlar-vientos,corrientes-cambiantes,danza-de-los-vientos,esfera-de-vacio,esfera-de-viento,huracan,invocar-elemental-de-aire,muro-de-los-vientos,muro-de-los-vientos-defensivo,parada-de-aire,tajo-de-los-vientos,tornado,vendaval,viento-arrastrante,viento-cortante,viento-furibundo,vientos-de-la-devastacion"
+  },
+  "magia-de-almas": {
+    "name": "Magia de Almas",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alma-resiliente,armonizar,aullido-de-almas-en-pena,canalizacion-superior,canalizar-anima,exorcismo,hablar-con-los-muertos,intersticio-de-vida-y-muerte,invocar-espectro,posesion,reino-de-los-muertos,robar-alma,señor-espectral,sentido-de-muerte,viaje-astral,vincular-almas"
+  },
+  "magia-de-arena": {
+    "name": "Magia de Arena",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": ""
+  },
+  "magia-de-evocacion": {
+    "name": "Magia de Evocación",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aniquilacion-magica,cañon-de-chi,combinar-hechizos,descarga-de-energia,especialidad-arcana,infundir-arma,irradiacion-de-chi,maestro-elemental,meteoros-de-chi,muro-de-energia,muro-de-energia-defensivo,rayo-arcano,rayo-desintegrador"
+  },
+  "magia-de-fuego": {
+    "name": "Magia de Fuego",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "aliento-de-fuego,asalto-abrasador,bola-de-fuego,danza-de-las-llamas,erupcion-abrasadora,infierno-abrasador,inmolacion,invocar-elemental-de-fuego,latigo-flamigero,llamarada,lluvia-de-brasas,maestro-de-las-llamas,muro-de-llamas,muro-de-llamas-defensivo,nube-incendiaria,parada-de-fuego,rayo-de-plasma,torbellino-de-fuego"
+  },
+  "magia-de-hielo": {
+    "name": "Magia de Hielo",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alud,armadura-de-hielo,bajar-temperaturas,congelacion-rapida,congelar-la-sangre,espina-de-hielo,hielo-resbalante,invocar-elemental-de-hielo,llamada-del-invierno,muro-de-hielo,muro-de-hielo-defensivo,neblina-polar,ola-de-frio,parada-de-hielo,parada-de-hielo,rayo-gelido,tormenta-de-nieve,ventisca"
+  },
+  "magia-de-invocacion": {
+    "name": "Magia de Invocación",
+    "stat": "cha",
+    "reserve": "stamina/chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "combate-en-equipo,compenetracion-perfecta,doblegar-invocacion,invocador-experto,invocar-familiar,megaevolucion,resistencias-combinadas,sentidos-compartidos,unidos-hasta-la-muerte,vida-compartida"
+  },
+  "magia-de-metal": {
+    "name": "Magia de Metal",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "arma-teledirigida,coraza-de-acero,diseccion-interna,espina-metalica,ferrokinesia,fortalecer-metal,golem-de-hierro,golpe-metalico,hilos-de-acero,manipular-metal,nube-de-cuchillas,polvo-metalico,pulso-magnetico,repulsion-magnetica,titan-de-hierro,torbellino-de-filos"
+  },
+  "magia-de-naturaleza": {
+    "name": "Magia de Naturaleza",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "animar-plantas,armadura-de-zarzas,crecimiento-acelerado,drenar-magia,enmarañar,espina-de-madera,espina-parasitica,florecimiento-mortal,furia-de-la-naturaleza,gran-arbol-drenador,guardian-de-la-tierra,invocar-elemental-de-naturaleza,muro-de-zarzas,muro-de-zarzas-defensivo,naturalizar,parada-de-naturaleza,prision-de-madera,zarcillo-enredador"
+  },
+  "magia-de-sangre": {
+    "name": "Magia de Sangre",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "arma-sanguinea,autocontrol-sanguineo,baile-de-titeres-sanguineos,biografia-sanguinea,defensa-sanguinea,dolor-agonizante,drenaje-multiple,drenar-sangre,espasmos-convulsivos,explosion-sanguinea,lazos-de-sangre,sanacion-sanguinea,sentido-de-sangre,telequinesia-sanguinea,toque-vampirico,velo-de-sangre"
+  },
+  "magia-de-tierra": {
+    "name": "Magia de Tierra",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "crear-obstaculo,lanzamiento-de-roca,moldear-la-tierra,muro-de-piedra,muro-de-piedra-defensivo,terratemblor,tierra-viva"
+  },
+  "magia-de-tormenta": {
+    "name": "Magia de Tormenta",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "arco-electrico,barrera-de-rayos,barrera-de-rayos-defensiva,bomba-sonica,cambiar-el-clima,descenso-relampagueante,esferas-del-relampago,furia-de-la-tormenta,furia-de-los-cielos,invocar-elemental-de-rayo,onda-trueno,rayo-viviente,relampago,relampago-en-cadena,toque-chispeante,tormenta-de-venganza,voltio-cruel"
+  },
+  "magia-de-transmutacion": {
+    "name": "Magia de Transmutación",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alterar-tamaño,arma-osea,cadenas-de-la-carne,clon-perfecto,consumir-esencia,crear-quimera,defensa-adaptiva,esencia-de-la-magia,explotar-cuerpo,inyeccion-mutagenica,inyeccion-superior,moldear-la-carne,reparar-la-carne,transformacion-monstruosa,transmutacion-forzada,trascender-la-carne"
+  },
+  "magia-de-vida": {
+    "name": "Magia de Vida",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "arma-solar,barrera-luminosa,barrera-luminosa-defensiva,castigo-celestial,espadas-de-justicia,explosion-solar,fuente-de-toda-la-vida,halo-cegador,luz-viviente,milagro-de-sanacion,parada-luminosa,rayo-luminoso,sanacion-superior,sello-de-regeneracion,telaraña-de-vida,toque-sanador,transferencia-vital,vinculo-vital"
+  },
+  "magia-divina": {
+    "name": "Magia Divina",
+    "stat": "wis",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "adivinacion,castigo-divino,consagrar-la-tierra,enviado-de-los-dioses,exaltado,ira-de-dios,llamar-a-los-dioses,manifestacion-divina,milagro-menor,oracion,palabra-divina,proteccion-divina"
+  },
+  "magia-espacial": {
+    "name": "Magia Espacial",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "agujero-de-gusano,ancla-dimensional,bolsillo-interdimensional,brecha-espacial,cambio-de-posicion,cambio-de-posicion-defensivo,cierre-dimensional,crear-demiplano,desfase-espacial,distorsion-espacial,extension-de-dominio,invocar-extraplanario,portal-menor,portal-multiple,puerta-dimensional,puerta-interdimensional,salto-espacial,salto-espacial-defensivo"
+  },
+  "magia-gravitatoria": {
+    "name": "Magia Gravitatoria",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "agarre-gravitatorio,agujero-negro,alterar-peso,ancla-gravitatoria,arrastre-gravitatorio,bomba-de-gravedad,burlar-la-gravedad,burlar-la-gravedad-defensivo,campo-de-repulsion,campo-de-repulsion-defensivo,compresion-gravitatoria,dilatacion-temporal,distorsion-gravitatoria,empuje-todopoderoso,invertir-la-gravedad,pozo-de-gravedad,pulso-gravitatorio,vortice-gravitatorio"
+  },
+  "magia-ilusoria": {
+    "name": "Magia Ilusoria",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "asalto-ilusorio,copiar-hechizo,crear-ilusion,disfraz-ilusorio,dobles-ilusorios,engaño-ilusorio,espejismo-arcano,imagen-fantasmal,invisibilidad,mundo-de-los-espejos,terreno-alucinatorio,terror-ilusorio,velo-de-engaños"
+  },
+  "magia-mental": {
+    "name": "Magia Mental",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alterar-emociones,asalto-psiquico,aura-emocional,destrozar-mente,esclavizar,escudo-mental,geas,leer-pensamientos,mente-en-blanco,modificar-recuerdos,rafaga-mental,sanacion-mental,sobrecarga-mental,sugestion,sugestion-en-masa,telepatia"
+  },
+  "magia-onirica": {
+    "name": "Magia Onírica",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alteracion-onirica,atrapasueños,avatar-onirico,duelo-psiquico,induccion-onirica,invocacion-onirica,manifestar-pesadilla,manto-de-sueños,microcosmo,moldear-los-sueños,pesadillas-malditas,portal-onirico,soñador-lucido,sueño-compartido,titere-de-pesadilla,ultima-vigilia"
+  },
+  "magia-protectora": {
+    "name": "Magia Protectora",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "absorber-chi,armadura-del-mago,campo-antimagico,circulo-de-sellado,contrahechizo,disrupcion-magica,disyuncion,eliminar-magia,esfera-de-fuerza,exilio,glifo-magico,invertir-chi,ligacion-planar,retener-persona,sello-extraplanario,sello-protector"
+  },
+  "magia-sombria": {
+    "name": "Magia Sombría",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "bola-sombra,capullo-sombrio,clones-sombrios,crear-oscuridad,eclipse-de-sacrificio,ejecucion-sombria,furia-de-shade,laberinto-de-pesadillas,maldicion-de-shade,oscuridad-devoradora,oscuridad-enloquecedora,parada-sombria,tajo-umbrio,tentaculos-de-oscuridad,terror-nocturno,titiritero-sombrio,toque-drenador"
+  },
+  "magia-temporal": {
+    "name": "Magia Temporal",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "acelerar,alteracion-temporal,ataque-retardado,brecha-temporal,desplazamiento,dobles-temporales,estasis,parar-el-tiempo,predecir-movimiento,premonicion,ralentizar,retroceso-en-masa,revertir-el-tiempo,robar-el-tiempo,vision,vision-futura"
+  },
+  "mente-desencadenada": {
+    "name": "Mente Desencadenada",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "concentracion-superior,conocimiento-arcano,division-mental,mente-desencadenada,mente-sobre-cuerpo,poder-de-la-locura,poder-del-dolor,psique-retorcido,sentido-arcano"
+  },
+  "nigromancia": {
+    "name": "Nigromancia",
+    "stat": "cha",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "alma-corrompida,animar-no-muerto,apocalipsis-de-la-no-muerte,aspecto-de-no-muerto,aura-de-muerte,bendicion-de-la-muerte,cadenas-de-la-muerte,crear-no-muerto-superior,descarga-de-energia-negativa,enervacion,maldicion-vampirica,nube-de-aniquilacion,toque-de-la-muerte,toque-necrotico,tormenta-de-energia-negativa,vinculo-parasitico"
+  },
+  "presencia": {
+    "name": "Presencia",
+    "stat": "cha",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 5,
+    "attributes": "asalto-coordinado,defensa-tactica,furia-de-batalla,incitar-el-panico,indomito,inspirar-heroismo,inspirar-leyenda,inspirar-temor,lider-nato,linea-defensiva,movimiento-estrategico,nervios-de-acero,revigorar,voluntad-poderosa,voz-del-comandante"
+  },
+  "quimica": {
+    "name": "Química",
+    "stat": "itl",
+    "reserve": "",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "cognatogeno,frasco-de-acido,mutageno,pocion-de-resistencia,pocion-de-sanacion,resistencia-a-drogas,suero-de-la-verdad,valentia-embotellada,veneno,veneno-alucinogeno"
+  },
+  "rastrear": {
+    "name": "Rastrear",
+    "stat": "wis",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 5,
+    "attributes": "acechar,analizar-enemigo,cambio-repentino,coto-de-caza,enemigo-juramentado,inescrutable,lo-he-visto-antes,maestro-del-terreno,sanador-instintivo,vista-de-lince"
+  },
+  "reflejos": {
+    "name": "Reflejos",
+    "stat": "dex",
+    "reserve": "stamina",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 5,
+    "attributes": "esquiva,esquiva-asombrosa,evasion,giro-defensivo,gran-acrobata,instinto-de-supervivencia,libertad-de-movimiento,punto-ciego,reflejos-supremos,sexto-sentido,velocidad-superior"
+  },
+  "sabotaje": {
+    "name": "Sabotaje",
+    "stat": "itl",
+    "reserve": "",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": ""
+  },
+  "telekinesia": {
+    "name": "Telekinesia",
+    "stat": "itl",
+    "reserve": "chi",
+    "rank": 0,
+    "freeranks": 0,
+    "max": 6,
+    "attributes": "agarre-telequinetico,arma-danzante,arrastre-telequinetico,barrera-de-fuerza,barrera-de-fuerza-defensiva,furia-telequinetica,lanzamiento-humano,manipulacion-telequinetica,sanacion-eterea"
+  }
 }
