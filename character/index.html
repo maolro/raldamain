@@ -1,371 +1,187 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/v-minusplusfield.js" type="text/javascript"></script>
-    <link href="css/v-minusplusfield.css" rel="stylesheet" />
-    <script src = "ranks.js" type="text/javascript" charset="utf-8"></script>
-	<script src = "gear.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/v-rank-selecter.js" type="text/javascript"></script>
+    <script src="js/v-select-search.js" type="text/javascript"></script>
+    <script src="gear.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/utils.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>    <link href="css/v-minusplusfield.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Designer</title>
+    <style>
+        .nav-scroll {
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex-wrap: nowrap;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-lg" id="app">
+        <div class="row justify-content-center my-2">
+            <h1>Creador de Personajes</h1>
+        </div>
         <div class="row">
+            <!-- Character Builder -->
             <div class="col-6">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="stats-tab" data-toggle="tab" href="#stats" role="tab"
-                            aria-controls="stats" aria-selected="true">Estadísticas</a>
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs nav-scroll" id="mainTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="stats-tab" data-toggle="tab" aria-controls="stats"
+                            aria-selected="true" href="#stats">Estadísticas</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="talent-tab" data-toggle="tab" href="#talent" role="tab"
-                            aria-controls="talent" aria-selected="false">Talentos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" id="talents-tab" data-toggle="tab" aria-controls="talents"
+                            aria-selected="false" href="#talents">Talentos</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="skill-tab" data-toggle="tab" href="#skill" role="tab" aria-controls="skill"
-                            aria-selected="false">Rangos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ranks-tab" data-toggle="tab" aria-controls="ranks" aria-selected="false"
+                            href="#ranks">Rangos</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="gear-tab" data-toggle="tab" href="#gear" role="tab" aria-controls="gear"
-                            aria-selected="false">Equipamiento</a>
+                    <li class="nav-item">
+                        <a class="nav-link" id="spells-tab" data-toggle="tab" aria-controls="spells"
+                            aria-selected="false" href="#spells">Hechizos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="gear-tab" data-toggle="tab" aria-controls="gear" aria-selected="false"
+                            href="#gear">Equipamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="archetypes-tab" data-toggle="tab" aria-controls="archetypes"
+                            aria-selected="false" href="#archetypes">Arquetipos</a>
                     </li>
                 </ul>
-                <!-- Tab panes -->
-                <!-- border for tab, but remove the top one since that is already done by the navbar -->
-                <div class="tab-content border border-top-0 p-1">
-                    <div id="stats" role="tabpanel" aria-labelledby="stats-tab" class="tab-pane active">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" v-model="charactername" placeholder="Nombre"
-                                aria-label="Name" aria-describedby="basic-addon1">
-                        <div>   
-                        <b>Nivel:</b> <v-minusplusfield v-bind:value="level" :min="1" :max="20"
-                            v-on:input="level = $event"></v-minusplusfield>
-                        <div class="row">
-                            <div v-for="(value, name) in attributes" class="col">
-                                {{ name }}
-                                <v-minusplusfield v-bind:value="value" :min="-1" :max="Math.min(value + attributes_points_available, level == 1 ? 3 : (level < 12 ? 6 : 9))"
-                                    v-on:input="attributes[name] = $event"></v-minusplusfield>
+                <!-- Tab Content -->
+                <div class="tab-content border border-top-0 p-2" id="mainTabContent">
+                    <div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                        <div class="row md-2">
+                            <div class="col-6">
+                                <input type="text" v-model="charactername" placeholder="Nombre" style="width: 100%;">
                             </div>
-                        </div> 
-                        <b>Total</b>: {{attributes_points_max}} puntos de estadistica: {{attributes_points_available}}
-                    </div>
-                    <div id="talent" role="tabpanel" aria-labelledby="talent-tab" class="tab-pane fade">
-                        <div class="row" v-for="(value, name) in talents">
-                            <div class="col">
-                                {{ name }}
-                            </div>
-                            <div class="col">
-                                <v-minusplusfield v-bind:value="value.points" :min="0" :max="Math.min(value.points + talent_points_available,level == 1 ? 2 : 5)"
-                                    v-on:input="talents[name].points = $event"></v-minusplusfield>
+                            <div class="col-6">
+                                <b class="justify-content-center mr-2">Nivel: </b>
+                                <input class="justify-content-center mr-2" id="numberBox" type="number" v-model="level"
+                                    min="1" max="20">
                             </div>
                         </div>
-                        total: {{talent_points_max}} puntos de talento: {{talent_points_available}}
-                    </div>
-                    <div id="skill" role="tabpanel" aria-labelledby="skill-tab" class="tab-pane fade">
-                        <div class="row" v-for="(value, name) in skills">
-                            <div class="col">
-                                {{ name }}
+                        <div class="row my-2 justify-content-center">
+                            <b class="mr-1">Puntos a distribuir:</b>{{ statpoints }}
+                        </div>
+                        <div v-for="(value, name) in stats" class="row my-2">
+                            <div class="col-6 justify-content-center">
+                                <b>{{ value.name }}</b>
                             </div>
-                            <div class="col">
-                                <v-minusplusfield v-bind:value="value.points" :min="0" :max="Math.min(value.points + skill_points_available,value.max, level>1 ? Math.floor(level/2) : 1)"
-                                    v-on:input="skills[name].points = $event"></v-minusplusfield>
+                            <div class="col-6 justify-content-center">
+                                <v-minusplusfield v-bind:value="value.value" :min="-1" :max="statlimit"
+                                    :enableval="statpoints" v-on:input="value.value = $event"></v-minusplusfield>
                             </div>
                         </div>
-                        total: {{skill_points_max}} rangos disponibles: {{skill_points_available}}
                     </div>
-                    <div id="gear" role="tabpanel" aria-labelledby="gear-tab" class="tab-pane fade">
-                        <h3>Equipamiento</h3>
-						<div>Armaduras</div>
-						<select v-model="selectedarmor">
-							<template v-for="(value, name) in gear.armor">
-								<option> {{name}}</option>
-							</template>
-						</select>
-						<div>Mano principal</div>
-						<select v-model="mainhandweapon">
-							<template v-for="(value, name) in gear.weapons">
-								<option> {{name}}</option>
-							</template>
-						</select>
-						<div>Mano secundaria</div>
-						<select v-model="offhandweapon" v-if="gear.weapons[mainhandweapon].hands==1">
-							<template v-for="(value, name) in gear.weapons">
-								<option v-if="gear.weapons[name].hands==1">{{name}}</option>
-							</template>
-						</select>
+                    <div class="tab-pane fade" id="talents" role="tabpanel" aria-labelledby="talents-tab">
+                        <div class="row my-2 justify-content-center">
+                            <b class="mr-1">Puntos a distribuir:</b>{{ talpoints }}
+                        </div>
+                        <div style="max-height: 400px; overflow-y: auto; overflow-x: hidden;">
+                            <div v-for="(value, name) in talents" class="row my-2">
+                                <div class="col-6 justify-content-center">
+                                    <b>{{ value.name }}</b>
+                                </div>
+                                <div class="col-6 justify-content-center">
+                                    <v-minusplusfield v-bind:value="value.level" :min="0" :max="talentlimit"
+                                        :enableval="talpoints" v-on:input="value.level = $event"></v-minusplusfield>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ranks" role="tabpanel" aria-labelledby="ranks-tab">
+                        <div class="row my-2 justify-content-center">
+                            <b class="mr-1">Puntos a distribuir:</b>{{ rkpoints }}
+                        </div>
+                        <div v-for="(value, index) in myranks" :key="index">
+                            <v-rank-selecter v-bind:ranks="ranks" :index="index" :limit="rankLimit" :enableval="rkpoints"
+                            @update-rank-level="handleRankLevelUpdate" @remove-rank="removeRank"></v-rank-selecter>
+                        </div>
+                        <div class="row my-2 justify-content-center">
+                            <button class="btn btn-secondary rounded-border px-3 py-1" @click="addRank">+</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
+                        <h2>Hechizos</h2>
+                    </div>
+                    <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
+                        <h2>Equipamiento</h2>
+                    </div>
+                    <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
+                        <h2>Arquetipos</h2>
                     </div>
                 </div>
             </div>
-
-            <div class="col-6">
-                <h2>Character sheet</h2>
-                <div>
-                    <div class="row">
-                        <div class="col">{{ charactername }}</div>
-                        <div class="col">Nivel: {{level}}</div>
-
+            <!-- Character Viewer -->
+            <div class="col-6 border" style="max-height: 500px; overflow-y: auto; overflow-x: hidden;">
+                <div class="text-justify">
+                    <div class="row p-1 justify-content-center border-down">
+                        <h2>{{ charactername }} (Nivel {{ level }})</h2>
                     </div>
-                    <div class="row">
-                        <div class="col">PV:&nbsp;{{computedstats.hp}}</div>
-                        <div class="col">Vitalidad:&nbsp;{{computedstats.vitality}}</div>
-                        <div class="col">Cordura:&nbsp;{{computedstats.sanity}}</div>
-                        <div class="col">DEF:&nbsp; {{computedstats.def}}</div>
+                    <hr>
+                    </hr>
+                    <div class="row p-1">
+                        <div class="col"><b>PV:</b> {{ hp }}</div>
+                        <div class="col"><b>VT:</b> {{ vt }}</div>
+                        <div class="col"><b>Crd:</b> {{ san }}</div>
+                        <div class="col"><b>DEF:</b> {{ def }}</div>
+                        <div class="col"><b>Vigor:</b> {{ reserves.stamina }}</div>
+                        <div class="col"><b>Chi:</b> {{ reserves.chi }}</div>
                     </div>
-                    <div v-for="(value, name) in computedstats.basestats" class="row">
-                        <div class="col">{{ name }}</div>
-                        <div class="col">{{ value }}</div>
+                    <div class="row p-1">
+                        <div v-for="(value, name) in stats" class="col">
+                            <b>{{ value.name }}:</b>
+                            {{ value.value }}
+                        </div>
                     </div>
-					<div class="row">
-                        <div class="col">Acciones: </div>
-                        <div class="col">{{computedstats.actions}}</div>
-                    </div>
-					<div class="row">
-                        <div class="col">Resistencias:</div>
-                        <span v-for="(value, name) in computedstats.resistances">
-						<template v-if="value>0">
-							 {{ name }}: {{ value }}, 
-						</template>
-						</span>
-                    </div>
-				</div>
-				<div>
-					<h6>Talentos:</h6>
-					<ul>
-					<template v-for="(value, name) in talents">
-						<li v-if="value.points>0">{{name}} +{{value.points + attributes[value.attribute]}} </li>
-					</template>
-					</ul>
-				</div>
-				<div>
-				<h6>Habilidades: </h6>
-				<template v-for="(value, name) in allskills">
-					<div>
-					{{name}}
-					</div>
-					<ul>
-					<li v-for="(skilltype, skillname) in value">
-						<strong>{{skillname}}</strong> <small>{{skilltype}}</small>
-					</li>
-					</ul>
-				</template>
-				</div>
+                    <hr>
+                    </hr>
+                    <b>Talentos: </b>{{ talstring }}<br>
+                    <b>Rangos: </b> {{ rkString }}<br>
+                    <b>Arquetipos: </b><br>
+                    <hr>
+                    </hr>
+                    <b>Resistencias: </b><br>
+                    <b>Sentidos: </b><br>
+                    <b>Movimiento: </b><br>
+                    <b>Acciones: </b><br>
+                    <hr></hr>
+                    <div v-html="atbCatString('passive')"></div>
+                    <hr></hr>
+                    <div v-html="atbCatString('actions')"></div>
+                    <hr></hr>
+                    <div v-html="atbCatString('reactions')"></div>
+                    <hr></hr>
+                </div>
             </div>
         </div>
+        <div class="row justify-content-end mt-3">
+            <button @click="downloadCharacterInfo">Descargar</button>
+        </div>
+        <script src="main.js"></script>
+        <script src="js/utils.js"></script>
     </div>
-    <script>
-
-        var skillstate = {};
-        for(r in listofskills)
-        {
-            var maxlevel = 0;
-            for(a in listofskills[r].skills)
-            {
-                maxlevel = Math.max(maxlevel, listofskills[r].skills[a].level);
-            }
-            skillstate[r] = { points:0, max:maxlevel };
-        }
-
-        var app = new Vue({
-            el: '#app',
-            data: {
-                charactername: "",
-                level: 1,
-                attributes: {
-                    str: 1,
-                    dex: 1,
-                    con: 1,
-                    int: 1,
-                    wis: 1,
-                    cha: 1
-                },
-                skills: skillstate,
-                talents: {
-                    athletics: { attribute: "str", points: 0 },
-                    heroics: { attribute: "str", points: 0 },
-                    wreck: { attribute: "str", points: 0 },
-                    acrobatics: { attribute: "dex", points: 0 },
-                    stealth: { attribute: "dex", points: 0 },
-                    "sleight of hand": { attribute: "dex", points: 0 },
-                    memory: { attribute: "int", points: 0 },
-                    arcana: { attribute: "int", points: 0 },
-                    perception: { attribute: "wis", points: 0 },
-                    insight: { attribute: "wis", points: 0 },
-                    survival: { attribute: "wis", points: 0 },
-                    "first aid": { attribute: "wis", points: 0 },
-                    performance: { attribute: "cha", points: 0 },
-                    deception: { attribute: "cha", points: 0 },
-					willpower: { attribute: "cha", points: 0 },
-                },
-				gear: listofgear,
-				selectedarmor: "Ligera",
-				mainhandweapon: "Golpe",
-				offhandweapon: "Golpe",
-
-            },
-            computed: {
-			    computedstats: function()
-				{
-				    var context = 
-					{
-						armorpenalty: this.gear.armor[this.selectedarmor].penalty,
-						basestats:
-						{
-							str: this.attributes.str,
-							dex: this.attributes.dex,
-							con: this.attributes.con,
-							int: this.attributes.int,
-							wis: this.attributes.wis,
-							cha: this.attributes.cha,
-						},
-						actions: 3, 
-						resistances:
-						{
-							frio: 0,
-							magia: 0,
-							fuego: 0,
-							electrico: 0,
-							trueno: 0,
-							acido: 0,
-							radiante: 0,
-							necrotico: 0,
-							veneno: 0,
-							miedo: 0,
-							aturdimiento: 0,
-							"efectos mentales": 0,
-						},
-						temp:
-						{
-							hpbonus: 0,
-							defbonus: 0,
-						}
-					};
-					
-					for(var s in this.skills)
-					{
-						var points = this.skills[s].points;
-						if (points > 0)
-						{
-						
-						    if (listofskills[s].bonus != undefined)
-							{
-								listofskills[s].bonus(context, points);
-						    }
-							for(var r in listofskills[s].skills)
-							{
-								var item = listofskills[s].skills[r];
-							
-								if (item.level <= points)
-								{
-									if (item.bonus != undefined)
-									{
-										item.bonus(context, points);
-									}
-								}
-							}
-						}
-				    }
-					context.def = this.gear.armor[this.selectedarmor].def + context.temp.defbonus;
-					context.basestats.dex += Math.min(0,context.armorpenalty);
-					context.hp = 3 + Math.floor((this.level - 1) / 3) + context.basestats.con + context.temp.hpbonus;
-					context.vitality = 2 + this.level + context.basestats.con;
-					context.sanity = 2 + this.level + context.basestats.wis;
-					context.mainWeapon = this.gear.weapons[this.mainhandweapon];
-					delete context.temp;
-					return context;
-				},
-			
-                attributes_points_max: function () {
-                    return Math.floor(4 + this.level / 2);
-                },
-                attributes_points_available: function () {
-                    var t = this.attributes_points_max + 6;
-                    for (var a in this.attributes) {
-                        t -= this.attributes[a];
-                    }
-                    return t;
-                },
-                talent_points_max: function () {
-                    return this.level + 3;
-                },
-                talent_points_available: function () {
-                    var t = this.talent_points_max;
-                    for (var a in this.talents) {
-                        t -= this.talents[a].points;
-                    }
-                    return t;
-                },       
-                skill_points_max: function () {
-                    return this.level + 1;
-                },
-                skill_points_available: function () {
-                    var t = this.skill_points_max;
-                    for (var a in this.skills) {
-                        t -= this.skills[a].points;
-                    }	
-                    return t;
-                },          
-				
-				/* calculates the list of all skills that have points */
-				allskills: function() {
-					var retval = {};
-					
-					var context = this.computedstats;
-					
-					for(var s in this.skills)
-					{
-						var points = this.skills[s].points;
-						if (points > 0)
-						{
-							for(var r in listofskills[s].skills)
-							{
-								var item = listofskills[s].skills[r];
-							
-								if (item.level <= points)
-								{
-									if (retval[item.type] == undefined)
-									{
-									    retval[item.type] = {};
-									}
-								
-									var description;
-									if (typeof item.description === 'function')
-									{
-										description = item.description(context, points);
-									}
-									else
-									{
-										description = item.description;
-									}
-									if(item.cost != undefined){		
-										description += " ("+item.cost+" accion" + (item.cost > 1 ? "es" : "") + ")";
-									}
-
-									
-									retval[item.type][item.name] = description;
-								}
-							}
-						}
-					}
-					
-					return retval;
-				}
-            },
-            methods:{
-
-            }
-        })
-    </script>
 </body>
 
 </html>

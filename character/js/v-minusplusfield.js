@@ -9,7 +9,7 @@ Vue.component('v-minusplusfield', {
         <input type="number" v-model="newValue" disabled />
     </div>
     
-    <div class="mpbtn plus" v-on:click="mpplus()">
+    <div class="mpbtn plus" v-on:click="mpplus()" :class="{ disabled: enableval <= 0 }">
         +
     </div>
 </div>
@@ -26,8 +26,11 @@ Vue.component('v-minusplusfield', {
         max: {
             default: undefined,
             type: Number
+        },
+        enableval:{
+            default: 1,
+            type: Number
         }
-
     },
     data: function () {
         return {

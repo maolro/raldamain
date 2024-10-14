@@ -91,11 +91,13 @@ Manipulas la fuerza gravitatoria que afecta a una criatura u objeto, haciendo as
 - **Reducir peso:** Reduces la fuerza gravitatoria que afecta a tu objetivo, disminuyendo su peso a la mitad y aumentando su movilidad. Mientras dure este hechizo recibirá velocidad de Salto 1 y Ventaja en todos sus tiros de Esquiva, Acrobacias y Sigilo a costa de obtener Vulnerabilidad a Maniobras. Los objetos afectados reducirán su peso de la misma manera, contando como si fueran de un tamaño inferior y llegando a flotar si son particularmente pequeños
 - **Aumentar peso:** Aumentas la fuerza gravitatoria que afecta a tu objetivo, duplicando su peso y haciendo que se mueva más lento. Mientras dure este hechizo recibirá Resistencia a Maniobras a costa que cada movimiento le costará una acción adicional. Los objetos afectados aumentarán su peso de la misma manera, contando como si fueran de un tamaño superior. Si afectas un objeto o criatura particularmente pequeña que esté volando esta caerá al suelo de inmediato.
 
+**Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
+
 ### Ancla Gravitatoria
 
 *Gravedad, Maniobra, Duradero, Físico*
 
-**Coste:** 2 acciones y 1 chi
+**Coste:** 1 Acción y 1 chi
 
 **Alcance:** Medio
 
@@ -107,7 +109,7 @@ Ejerces una poderosa fuerza gravitatoria en un enemigo para anclarlo al suelo. U
 
 Si mantienes la concentración en este hechizo puedes prolongar sus efectos hasta que la pierdas. Una criatura afectada por Ancla gravitatoria será incapaz de volar y sufrirá los penalizadores de estar *enredada*. Una vez por ronda podrá repetir el tiro y en caso de éxito se liberará de este hechizo.
 
-**Empoderar** (1 chi): Afecta a una criatura adicional con este hechizo en el momento que lo lances. Si ya está activo puedes forzar a un enemigo afectado por el hechizo a repetir el tiro y *tropezarlo* una ronda en caso que lo falle además de infligirle 1d6 + INT daño contundente.
+**Empoderar** (1 chi): Afectas a una criatura adicional a distancia media con este hechizo en el momento que lo lances. Si ya está activo puedes forzar a un enemigo afectado por el hechizo a repetir el tiro y *tropezarlo* una ronda en caso que lo falle además de infligirle 1d6 + INT daño contundente.
 
 ### Campo de Repulsión
 
@@ -175,7 +177,7 @@ Burlas a la gravedad misma para obtener la capacidad de volar. Al activar este h
 
 **Duración:** Instantáneo
 
-Comprimes varios objetos para formar un proyectil minúsculo y lo lanzas una distancia media, aumentando enormemente su capacidad destructiva. Haz un ataque contra todas las criaturas que se encuentren en un radio corto al punto de impacto que provocará 2d8 + INT daño Contundente y empujará un paso. Este ataque atravesará toda barrera en su camino y eliminará todo efecto de Gravedad en la zona de impacto.
+Comprimes varios objetos para formar un proyectil minúsculo y lo lanzas una distancia media, aumentando enormemente su capacidad destructiva. Haz un ataque contra todas las criaturas que se encuentren en un radio corto al punto de impacto que provocará 2d8 + INT daño Contundente que ignora Defensa y empujará un paso. Este ataque atravesará toda barrera en su camino y eliminará todo efecto de Gravedad en la zona de impacto.
 
 **Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi.
 
@@ -286,6 +288,8 @@ Formas una devastadora onda de repulsión que arrasa con todas las estructuras e
 Todos tus hechizos de Gravedad de Rango IV cuestan una acción menos para emplear (mínimo 1).
 
 ### Agujero negro
+
+*Gravedad, Duradero, Ambiental, Maniobra*
 
 **Coste:** 3 acciones y 5 chi
 
