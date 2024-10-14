@@ -127,7 +127,7 @@ Inviertes la fuerza de gravedad en un punto a distancia media para formar un cam
 
 Este hechizo puede ser empleado de manera alternativa para crear el campo de repulsión en torno a ti para defenderte de ataques. Crearlo de esta manera te costará una acción bonus si estás en *posición defensiva* y se moverá contigo, otorgándote sus beneficios para protegerte de ataques. 
 
-**Empoderar** (1 chi): 1/Ronda. Un ataque a distancia hecho contra una criatura dentro del campo de repulsión fallará automáticamente. 
+**Empoderar** (1 chi): 1/Ronda. Un ataque Físico hecho contra una criatura dentro del campo de repulsión fallará automáticamente. 
 
 ## Rango III
 

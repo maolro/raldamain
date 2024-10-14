@@ -15,15 +15,27 @@ new Vue({
         wis: {name: "SAB", value: 0},
         cha: {name: "CAR", value: 0}
     },
-    chi: 0,
-    vigor: 0,
-    def: 0,
     talents: {},
     ranks: {},
     myranks: [],
     archetypes: {},
+    myarch: [],
     attributes: {},
-    //...characterData         // Spread the characterData object into Vue's data
+    eqList: {},
+    equipment: {
+        armor: {},
+        mainHand: {},
+        secondHand: {},
+        head: {},
+        gloves: {},
+        leftArm: {},
+        rightArm: {},
+        neck: {},
+        eyes: {},
+        feet: {},
+        waist: {},
+        bag: []
+    }
   },
   methods: {
     getData: function(obj, source) {
@@ -53,7 +65,7 @@ new Vue({
     },
     getMainStat: function(statstring){
         stv = statstring.split("/");
-        if(this.stats[stv[0]].value < this.stats[stv[1]].value){
+        if(this.finalStats[stv[0]].value < this.finalStats[stv[1]].value){
             return stv[1];
         }
         return stv[0];
@@ -92,7 +104,7 @@ new Vue({
         return res;
     },
     replaceTag: function processString(str, skill, rk) {
-        stat = this.stats[this.ranks[skill].stat].value;
+        stat = this.finalStats[this.ranks[skill].stat].value;
         const getDD = (rk) => {
             if(rk < 3) return "d6 ";
             else if(rk < 5) return "d8 ";
@@ -141,7 +153,7 @@ new Vue({
 # ${this.charactername} (Nivel ${this.level})\n
 ****\n
 **PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:**\t**Vigor:**\t**Chi:**\n
-**FUE:** ${this.stats.str.value}\t**DES:** ${this.stats.dex.value}\t**CON:** ${this.stats.con.value}\t**INT:** ${this.stats.itl.value}\t**SAB:** ${this.stats.wis.value}\t**CAR:** ${this.stats.cha.value}\n
+**FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
 **Talentos:** ${this.talstring}
 **Rangos:** ${this.rkString}
@@ -173,6 +185,9 @@ ${toMd(this.atbCatString("reactions"))}
         // Clean up by removing the link
         document.body.removeChild(link);
       },
+      addItem(slot, id){
+
+      }
     },
   computed: {
     statpoints: function(){
@@ -200,13 +215,13 @@ ${toMd(this.atbCatString("reactions"))}
         else return 5;
     },
     hp: function(){
-        return Math.floor(3 + (this.level-1)/3 + this.stats.con.value);
+        return Math.floor(3 + (this.level-1)/3 + this.finalStats.con.value);
     },
     vt: function(){
-        return (2 + this.level/1 + this.stats.con.value);
+        return (2 + this.level/1 + this.finalStats.con.value);
     },
     san: function(){
-        return (2 + this.level/1 + this.stats.itl.value);
+        return (2 + this.level/1 + this.finalStats.itl.value);
     },
     talstring: function(){
         res = [];
@@ -273,12 +288,50 @@ ${toMd(this.atbCatString("reactions"))}
             }
         }
         return {chi: chiRes, stamina: staminaRes};
+    },
+    finalStats: function(){
+        statsRes = {
+            str: {name: "FUE", value: this.stats.str.value},
+            dex: {name: "DES", value: this.stats.dex.value},
+            con: {name: "CON", value: this.stats.con.value},
+            itl: {name: "INT", value: this.stats.itl.value},
+            wis: {name: "SAB", value: this.stats.wis.value},
+            cha: {name: "CAR", value: this.stats.cha.value}
+        };
+        if(this.equipment.armor.penalty != null && -statsRes.str.value > this.equipment.armor.penalty)
+            statsRes.dex.value += this.equipment.armor.penalty;
+        for(let i in this.myranks){
+            rk = this.myranks[i];
+            for(let j in rk.stats){
+                bst = rk.stats[j];
+                if(bst.rank <= rk.rank){
+                    statsRes[bst.stat].value += bst.boost;
+                }
+            }
+        }
+        for(let i in this.myarch){
+            ar = this.myarch[i];
+            for(let j in ar.stats){
+                bst = ar.stats[j];
+                if(bst.level <= ar.level){
+                    statsRes[bst.stat].value += bst.boost;
+                }
+            }
+        }
+        return statsRes;
+    },
+    def: function(){
+        res = 0;
+        if(this.equipment.armor.def != null)
+            res += this.equipment.armor.def;
+        return res;
     }
   },
   created() {
     this.getData("talents", './data/talents.json');
     this.getData("ranks", './data/ranks.json'); 
     this.getData("attributes", './data/attributes.json'); 
+    this.getData("eqList", './data/equipment.json')
   },
   mounted(){
 

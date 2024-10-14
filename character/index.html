@@ -126,7 +126,33 @@
                         <h2>Hechizos</h2>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
-                        <h2>Equipamiento</h2>
+                        <div class="row justify-content-center my-2">
+                            <h2>Equipamiento</h2>
+                        </div>
+                        <div class="row my-2 justify-content-center">
+                            <div class="col-6">
+                                <b>Armadura</b>
+                            </div>
+                            <div class="col-6">
+                                <select v-model="equipment.armor">
+                                    <option v-for="(value, key) in eqList.armor" :value="value">
+                                        {{ value.name }}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+						<div class="row my-2 justify-content-center">
+                            <div class="col-6">
+                                <b>Mano Principal</b>
+                            </div>
+                            <div class="col-6">
+                                <select v-model="equipment.mainHand">
+                                    <template v-for="(value, name) in eqList.weapons">
+                                        <option> {{value.name}}</option>
+                                    </template>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
                         <h2>Arquetipos</h2>
@@ -150,7 +176,7 @@
                         <div class="col"><b>Chi:</b> {{ reserves.chi }}</div>
                     </div>
                     <div class="row p-1">
-                        <div v-for="(value, name) in stats" class="col">
+                        <div v-for="(value, name) in finalStats" class="col">
                             <b>{{ value.name }}:</b>
                             {{ value.value }}
                         </div>
@@ -179,6 +205,7 @@
         <div class="row justify-content-end mt-3">
             <button @click="downloadCharacterInfo">Descargar</button>
         </div>
+        <script src="js/utils.js"></script>
     </div>
     <script src="main.js"></script>
 </body>
