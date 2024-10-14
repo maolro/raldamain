@@ -1,0 +1,11 @@
+{
+    "armor": {
+        "light": {"name": "Ligera","def":2, "penalty":0},
+        "medium": {"name": "Media", "def":4, "penalty":-2},
+        "heavy": {"name": "Pesada", "def":6, "penalty":-4},
+        "full": {"name": "Completa", "def":8, "penalty":-6}
+    },
+    "weapons":{
+        
+    }
+}

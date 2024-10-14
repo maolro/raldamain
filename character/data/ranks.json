@@ -51,6 +51,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "stats": [
+      {"stat": "str", "rank": 2, "boost": 1}, 
+      {"stat": "con", "rank": 4, "boost": 1}, 
+      {"stat": "dex", "rank": 6, "boost": 1}
+    ],
     "attributes": "abrazar-la-locura,aura-del-caos,corrupcion-absoluta,furia-abisal,invocacion-abisal,mutacion,paso-abisal,paso-abisal-defensivo,poder-antinatural,rasgo-monstruoso-superior,tocado-por-la-locura,transformacion-abisal"
   },
   "ascendencia-akhasica": {
@@ -60,6 +65,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "stats": [
+      {"stat": "itl", "rank": 2, "boost": 1}, 
+      {"stat": "wis", "rank": 4, "boost": 1}, 
+      {"stat": "cha", "rank": 6, "boost": 1}
+    ],
     "attributes": "abrir-el-tercer-ojo,arbitro-del-destino,forma-astral,fortaleza-del-pensamiento,hipercognicion,meditacion-iluminada,mente-iluminada,palacio-de-la-mente,psicomagia,sentido-magico,vinculo-akhasico"
   },
   "ascendencia-boreal": {
@@ -78,6 +88,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "stats": [
+      {"stat": "cha", "rank": 2, "boost": 1}, 
+      {"stat": "con", "rank": 4, "boost": 1}, 
+      {"stat": "wis", "rank": 6, "boost": 1}
+    ],
     "attributes": "alas-angelicales,alma-ascendida,angel-protector,angel-vengador,arma-angelical,cuerpo-puro,luz-celestial,nacido-del-cielo,poder-de-los-cielos,regeneracion-celestial,vision-verdadera"
   },
   "ascendencia-cruen": {
@@ -177,6 +192,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "stats": [
+      {"stat": "wis", "rank": 2, "boost": 1}, 
+      {"stat": "str", "rank": 4, "boost": 1}, 
+      {"stat": "con", "rank": 6, "boost": 1}
+    ],
     "attributes": "aspecto-primigenio,aura-primigenia,comunion-con-la-naturaleza,despertar-la-bestia,forma-de-la-bestia,fuerza-salvaje,llamar-a-los-espiritus,portal-espiritual,sanacion-espiritual,transformacion-animal,vinculo-primigenio"
   },
   "ascendencia-sombria": {
@@ -186,6 +206,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "stats": [
+      {"stat": "dex", "rank": 2, "boost": 1}, 
+      {"stat": "cha", "rank": 4, "boost": 1}, 
+      {"stat": "con", "rank": 6, "boost": 1}
+    ],
     "attributes": "absorber-oscuridad,arma-de-tinieblas,dominio-de-pesadilla,forma-sombria,forma-sombria-defensiva,infusion-sombria,invocacion-sombria,nacido-de-las-tinieblas,salto-sombrio,salto-sombrio-defensivo,sigilo-sombrio,sombra-viviente,tirano-sombrio"
   },
   "bombas": {
@@ -285,6 +310,7 @@
     "rank": 0,
     "freeranks": 0,
     "max": 5,
+    "def": "RANGO+1",
     "attributes": "aguantar-los-elementos,armadura-natural,constitucion-ferrea,duro-de-pelar,hasta-la-muerte,muro-viviente,resiliencia,sanacion-rapida,segundo-aliento,una-ultima-resistencia"
   },
   "guerrero-divino": {
