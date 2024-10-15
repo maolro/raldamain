@@ -32,14 +32,12 @@ Vue.component('v-select-search', {
       default: ''
     }
   },
-  data() {
-    return {
-      options: [], // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
-      searchQuery: '', // This will hold the search query from the input field
-      filteredOptions: [], // Filtered options based on the search query
-      selectedOption: '', // The value of the selected option
-      dropdownVisible: false // Controls visibility of the dropdown
-    };
+  data: {
+    options: [], // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
+    searchQuery: '', // This will hold the search query from the input field
+    filteredOptions: [], // Filtered options based on the search query
+    selectedOption: '', // The value of the selected option
+    dropdownVisible: false // Controls visibility of the dropdown
   },
   mounted() {
     this.options = Object.keys(this.optionsobj).map(key => ({
