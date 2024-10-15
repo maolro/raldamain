@@ -28,7 +28,7 @@ Vue.component('v-rank-selecter', {
             type: Boolean
         }
     },
-    data() {
+    data: function() {
         return {
             rkey: "",
             rankLevel: 0,

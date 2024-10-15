@@ -32,7 +32,7 @@ Vue.component('v-select-search', {
       default: ''
     }
   },
-  data() {
+  data: function() {
     return {
       options: [], // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
       searchQuery: '', // This will hold the search query from the input field
