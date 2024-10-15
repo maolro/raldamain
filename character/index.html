@@ -15,7 +15,7 @@
     <script src="js/v-rank-selecter.js" type="text/javascript"></script>
     <script src="js/v-select-search.js" type="text/javascript"></script>
     <script src="gear.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/utils.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/utils.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -134,11 +134,9 @@
                                 <b>Armadura</b>
                             </div>
                             <div class="col-6">
-                                <select v-model="equipment.armor">
-                                    <option v-for="(value, key) in eqList.armor" :value="value">
-                                        {{ value.name }}
-                                    </option>
-                                </select>
+                                <v-select-search v-bind:options="eqOptions('armor')" 
+                                v-on:selected-key="addItem('armor', 'armor', $event)">
+                                </v-select-search>
                             </div>
                         </div>
 						<div class="row my-2 justify-content-center">
@@ -146,11 +144,9 @@
                                 <b>Mano Principal</b>
                             </div>
                             <div class="col-6">
-                                <select v-model="equipment.mainHand">
-                                    <template v-for="(value, name) in eqList.weapons">
-                                        <option> {{value.name}}</option>
-                                    </template>
-                                </select>
+                                <v-select-search v-bind:options="eqOptions('weapons')" 
+                                v-on:selected-key="addItem('mainHand', 'weapons', $event)">
+                                </v-select-search>
                             </div>
                         </div>
                     </div>
@@ -205,7 +201,6 @@
         <div class="row justify-content-end mt-3">
             <button @click="downloadCharacterInfo">Descargar</button>
         </div>
-        <script src="js/utils.js"></script>
     </div>
     <script src="main.js"></script>
 </body>

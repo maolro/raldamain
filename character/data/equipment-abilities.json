@@ -1,0 +1,73 @@
+{
+    "arco": {
+        "name": "Arco",
+        "skill":"armas-a-distancia", 
+        "type": "Accion", 
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, A Distancia", 
+        "description": "Distancia lejana, +MOD para impactar, 1d10 +STAT daño Perforante."
+    },
+    "daga": {
+        "name": "Daga",
+        "skill":"armas-ligeras", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Ligera, A Distancia", 
+        "description": "Adyacente o Distancia media, +MOD para impactar, 1d6+STAT daño Perforante."
+    },
+    "espada-larga": {
+        "name": "Espada Larga",
+        "skill":"armas-de-duelo", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Duelo", 
+        "description": "Adyacente, +MOD para impactar, 1d8 +STAT daño Cortante."
+    },
+    "gran-hacha": {
+        "name": "Gran Hacha",
+        "skill":"armas-pesadas", 
+        "type": "Accion", 
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Pesada", 
+        "description": "Adyacente, +MOD para impactar, 2d8 +STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
+    },
+    "cadena": {
+        "name": "Cadena",
+        "skill":"cadenas", 
+        "type": "Accion", 
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Cadena", 
+        "description": "Distancia cercana, +MOD para impactar, 2d8 +STAT daño Contundente."
+    },
+    "escudo": {
+        "name": "Escudo",
+        "skill":"escudo", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Escudo", 
+        "description": "Adyacente, +MOD para impactar, 1d6 +STAT daño Contundente."
+    },    
+    "garra": {
+        "name": "Garra",
+        "skill":"estilo-salvaje", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Marcial, Salvaje", 
+        "description": "Adyacente, +MOD para impactar, 1d6 +STAT daño Cortante."
+    },
+    "lanza": {
+        "name": "Lanza",
+        "skill":"alabardas", 
+        "type": "Accion", 
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Alabarda", 
+        "description": "Distancia cercana, +MOD para impactar, 1d10 +STAT daño Perforante."
+    },
+    "parada-con-escudo": {
+        "name": "Parada con Escudo",
+        "skill":"escudo", 
+        "type": "Reación", 
+        "tags": "Físico, Defensivo, Escudo", 
+        "description": "+MOD para defenderse. Funciona contra ataques cuerpo a cuerpo y a distancia"
+    }
+}

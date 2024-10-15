@@ -2,13 +2,9 @@ Vue.component('v-rank-selecter', {
     template: `
         <div class="rank-selecter border">
             <div class="row m-1 justify-content-around">
-                <select v-model="rkey" @change="setRank()">
-                    <option v-for="(value, key) in ranks" :value="key"">
-                        {{ value.name }}
-                    </option>
-                </select>
+                <v-select-search v-bind:options="options" v-on:selected-key="setRank($event)"></v-select-search>
                 <b> Rango: </b>
-                <v-minusplusfield v-bind:value="ranklevel" :min="0" :max="max"
+                <v-minusplusfield v-bind:value="rankLevel" :min="0" :max="max"
                 :enableval="statpoints" v-on:input="setRankLevel($event)"></v-minusplusfield>
                 <button class="btn btn-light" @click="removeRank">-</button>
             </div>
@@ -36,12 +32,22 @@ Vue.component('v-rank-selecter', {
         return {
             rkey: "",
             rankLevel: 0,
-            max: 0
+            max: 0,
+            statpoints: this.enableval
         };
     },
+    computed: {
+        options() {
+            return Object.keys(this.ranks).map(key => ({
+              key: key,
+              name: this.ranks[key].name
+            }));
+        }
+    },
     methods: {
-        setRank: function(){
-            this.max = Math.min(this.ranks[this.rkey].max, this.limit);
+        setRank: function(key) {
+            this.rkey = key;
+            this.max = Math.min(this.ranks[key].max, this.limit);
             this.$emit('update-rank-level', { key: this.rkey, level: this.rankLevel, index: this.index });
         },
         setRankLevel: function(newLevel){
@@ -60,6 +66,11 @@ Vue.component('v-rank-selecter', {
                     this.rankLevel = 0;
                 }
                 this.max = this.limit;
+            }
+        },
+        enableval: {
+            handler: function (newVal) {
+                this.statpoints = newVal;
             }
         }
     }
