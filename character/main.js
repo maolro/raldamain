@@ -202,7 +202,7 @@ ${toMd(this.atbCatString("reactions"))}
                 }));
             }
             return res;
-        }
+        },
     },
     computed: {
         statpoints: function () {
