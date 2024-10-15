@@ -21,20 +21,13 @@ new Vue({
         archetypes: {},
         myarch: [],
         attributes: {},
-        eqList: {},
+        eqList: {
+            armor: {},
+            weapons: {}
+        },
         equipment: {
             armor: {},
-            mainHand: {},
-            secondHand: {},
-            head: {},
-            gloves: {},
-            leftArm: {},
-            rightArm: {},
-            neck: {},
-            eyes: {},
-            feet: {},
-            waist: {},
-            bag: []
+            mainHand: {}
         },
         eqAtb: {}
     },
@@ -332,7 +325,7 @@ ${toMd(this.atbCatString("reactions"))}
                 wis: { name: "SAB", value: this.stats.wis.value },
                 cha: { name: "CAR", value: this.stats.cha.value }
             };
-            if (this.equipment.armor.penalty != null && -statsRes.str.value > this.equipment.armor.penalty)
+            if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
                 statsRes.dex.value += this.equipment.armor.penalty;
             for (let i in this.myranks) {
                 rk = this.myranks[i];

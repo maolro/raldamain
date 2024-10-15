@@ -134,7 +134,7 @@
                                 <b>Armadura</b>
                             </div>
                             <div class="col-6">
-                                <v-select-search v-bind:options="eqOptions('armor')" 
+                                <v-select-search v-bind:optionsobj="eqList.armor" 
                                 v-on:selected-key="addItem('armor', 'armor', $event)">
                                 </v-select-search>
                             </div>
@@ -144,7 +144,7 @@
                                 <b>Mano Principal</b>
                             </div>
                             <div class="col-6">
-                                <v-select-search v-bind:options="eqOptions('weapons')" 
+                                <v-select-search v-bind:optionsobj="eqList.weapons" 
                                 v-on:selected-key="addItem('mainHand', 'weapons', $event)">
                                 </v-select-search>
                             </div>

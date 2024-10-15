@@ -23,8 +23,8 @@ Vue.component('v-select-search', {
         </div>
     `,
   props: {
-    options: {
-      type: Array, // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
+    optionsobj: {
+      type: Object, 
       required: true
     },
     placeholder: {
@@ -34,6 +34,7 @@ Vue.component('v-select-search', {
   },
   data() {
     return {
+      options: [], // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
       searchQuery: '', // This will hold the search query from the input field
       filteredOptions: [], // Filtered options based on the search query
       selectedOption: '', // The value of the selected option
@@ -41,6 +42,10 @@ Vue.component('v-select-search', {
     };
   },
   mounted() {
+    this.options = Object.keys(this.optionsobj).map(key => ({
+      key: key,
+      name: this.optionsobj[key].name
+    }));
     // Set initial filtered options to the full list
     this.filteredOptions = this.options;
   },
@@ -66,9 +71,13 @@ Vue.component('v-select-search', {
   },
   watch: {
     // Watch for changes in the options prop and reset the filtered list accordingly
-    options(newOptions) {
-      this.filteredOptions = newOptions;
-    }
+    optionsobj(newOptions) {
+      this.options = Object.keys(newOptions).map(key => ({
+        key: key,
+        name: newOptions[key].name
+      }));
+      this.filteredOptions = this.options ;
+    },
   },
   style:
     `.dropdown-menu {
