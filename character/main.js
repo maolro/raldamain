@@ -194,10 +194,14 @@ ${toMd(this.atbCatString("reactions"))}
             this.equipment[slot] = this.eqList[cat][id];
         },
         eqOptions(slot) {
-            return Object.keys(this.eqList[slot]).map(key => ({
-                key: key,
-                name: this.eqList[slot][key].name
-            }));
+            res = [];
+            if(slot in this.eqList){
+                res = Object.keys(this.eqList[slot]).map(key => ({
+                    key: key,
+                    name: this.eqList[slot][key].name
+                }));
+            }
+            return res;
         }
     },
     computed: {
