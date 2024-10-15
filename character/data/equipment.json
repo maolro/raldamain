@@ -1,11 +1,18 @@
 {
     "armor": {
-        "light": {"name": "Ligera","def":2, "penalty":0},
-        "medium": {"name": "Media", "def":4, "penalty":-2},
-        "heavy": {"name": "Pesada", "def":6, "penalty":-4},
-        "full": {"name": "Completa", "def":8, "penalty":-6}
+        "light": {"name": "Ligera","def":2, "penalty":0, "eqab": ""},
+        "medium": {"name": "Media", "def":4, "penalty":-2, "eqab": ""},
+        "heavy": {"name": "Pesada", "def":6, "penalty":-4, "eqab": ""},
+        "full": {"name": "Completa", "def":8, "penalty":-6, "eqab": ""}
     },
     "weapons":{
-        
+        "arco": {"name": "Arco", "eqab": "arco"},
+        "cadena": {"name": "Cadena", "eqab": "cadena"},
+        "daga": {"name": "Daga", "eqab": "daga"},
+        "escudo": {"name": "Escudo", "eqab": "escudo, parada-escudo"},
+        "espada-larga": {"name": "Espada Larga", "eqab": "espada-larga"},
+        "garra": {"name": "Garra", "eqab": "garra"},
+        "gran-hacha": {"name": "Gran Hacha", "eqab": "gran-hacha"},
+        "lanza": {"name": "Lanza", "eqab": "lanza"}
     }
 }
