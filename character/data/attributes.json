@@ -710,9 +710,8 @@
       "name": "Armadura Natural",
       "skill": "fortitud",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "def": "RANGO+1",
+      "hp": "RANGO+1",
       "description": "Aumenta sus PV y Armadura natural (ya incluido)"
     },
     "armonizar": {
@@ -1852,13 +1851,11 @@
     },
     "combate-furtivo-(ligeras)": {
       "rank": 1,
-      "name": "Combate Furtivo (Ligeras)",
+      "name": "Combate Furtivo",
       "skill": "armas-ligeras",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Al hacer un ataque combinado o si impacta a un enemigo incapaz de defenderse aumenta el nivel de las heridas provocadas por un paso"
+      "tags": "Mejora, Ligera",
+      "description": "Al hacer un ataque combinado o al impactar a un enemigo incapaz de defenderse aumenta por un paso el nivel de todas las <i>heridas permanentes</i> provocadas."
     },
     "combate-furtivo-(serpiente)": {
       "rank": 1,
@@ -1952,12 +1949,11 @@
     },
     "combinar-tecnicas-(ligeras)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Ligeras)",
+      "name": "Combinar Técnicas",
       "skill": "armas-ligeras",
       "type": "Reaccion",
       "cost": "2 Vigor",
-      "reach": "",
-      "duration": "",
+      "tags": "Ataque, Ligeras",
       "description": "Tras impactar con un ataque hace un ataque adicional con un arma Ligera como acción bonus. No puede usar esta habilidad en ataques que no cuesten acciones"
     },
     "combinar-tecnicas-(pesadas)": {
@@ -2111,7 +2107,7 @@
     },
     "contrataque-(ligeras)": {
       "rank": 4,
-      "name": "Contrataque (Ligeras)",
+      "name": "Contrataque",
       "skill": "armas-ligeras",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -3290,14 +3286,12 @@
       "description": "Al impactar a un enemigo con un ataque físico tira CON o es infectado con esporas, las cuales actúan como un veneno de CON o SAB. Repite el tiro cada ronda"
     },
     "esquiva": {
-      "rank": "INI",
+      "rank": 0,
       "name": "Esquiva",
       "skill": "reflejos",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para esquivar un ataque enemigo de cualquier tipo"
+      "tags": "Defensiva, Reflejos",
+      "description": "+MOD para defenderse. Funciona contra ataques de todo tipo."
     },
     "esquiva-asombrosa": {
       "rank": 2,
@@ -4231,13 +4225,14 @@
     },
     "golpe-penetrante-(ligeras)": {
       "rank": 1,
-      "name": "Golpe Penetrante (Ligeras)",
+      "name": "Golpe Penetrante",
       "skill": "armas-ligeras",
       "type": "Accion",
       "cost": "1 Vigor",
       "reach": "Propio",
       "duration": "Una ronda",
-      "description": "Al impactar con su siguiente ataque ignora la DEF por armaduras que tenga el objetivo"
+      "tags": "Mejora, Ligeras",
+      "description": "Al impactar con su siguiente ataque ignora la Defensa otorgada por armaduras que tenga el objetivo."
     },
     "golpe-por-golpe": {
       "rank": 5,
@@ -4674,10 +4669,9 @@
       "name": "Instinto de Supervivencia",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "RANGO+2/Combate, Repite un tiro de DES y se queda con el mejor resultado"
+      "uses": "RANGO+2/ronda",
+      "tags": "Reflejos",
+      "description": "Repite un tiro de DES y se queda con el resultado que más le convenga."
     },
     "interceptar-ataque": {
       "rank": 4,
@@ -6154,10 +6148,8 @@
       "name": "Parada con Arma Ligera",
       "skill": "armas-ligeras",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para detener un ataque cuerpo a cuerpo"
+      "tags": "Ligeras, Defensivo",
+      "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-con-arma-pesada": {
       "rank": 1,
@@ -6167,17 +6159,7 @@
       "cost": "",
       "reach": "",
       "duration": "",
-      "description": "Tira para detener un ataque cuerpo a cuerpo"
-    },
-    "parada-con-escudo": {
-      "rank": 1,
-      "name": "Parada con Escudo",
-      "skill": "escudo",
-      "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para defenderse de un ataque cuerpo a cuerpo o a distancia"
+      "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-de-agua": {
       "rank": 1,
@@ -6982,10 +6964,8 @@
       "name": "Reflejos Supremos",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tiene un segundo turno a -10 iniciativa con 3 acciones"
+      "tags": "Innata, Reflejos",
+      "description": "Tiene un segundo turno a -10 iniciativa con 3 acciones."
     },
     "regeneracion-celestial": {
       "rank": 5,
@@ -7143,9 +7123,9 @@
       "skill": "fortitud",
       "type": "Reaccion",
       "cost": "1 Vigor",
-      "reach": "",
-      "duration": "",
-      "description": "1/Ronda, Reduce el daño recibido a la mitad después de aplicar DEF y Resistencias"
+      "uses": "1/Ronda",
+      "tags": "Fortitud, Innata",
+      "description": "Reduce el daño recibido por un ataque enemigo a la mitad después de aplicar DEF y Resistencias"
     },
     "resiliencia-draconica": {
       "rank": 3,
@@ -7392,10 +7372,8 @@
       "name": "Sanación Rápida",
       "skill": "fortitud",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Se regenera RANGO+2 Vitalidad al principio de su turno o reduce la gravedad de una herida permanente por un paso"
+      "tags": "Fortitud, Innata",
+      "description": "Se regenera RANGO+2 Vitalidad al principio de su turno o reduce la gravedad de una <i>herida permanente</i> por un paso"
     },
     "sanacion-sanguinea": {
       "rank": 3,
@@ -7455,7 +7433,7 @@
       "cost": "",
       "reach": "",
       "duration": "",
-      "description": "Cada ataque consecutivo en la ronda contra el mismo objetivo aumenta su tiro de ataque y daño base por 1"
+      "description": "Cada ataque consecutivo en la ronda contra el mismo objetivo aumenta su tiro de ataque y daño base por 1."
     },
     "segundo-aliento": {
       "rank": 1,
@@ -7463,9 +7441,8 @@
       "skill": "fortitud",
       "type": "Accion",
       "cost": "1 Vigor",
-      "reach": "Propio",
-      "duration": "Instantáneo",
-      "description": "1/Ronda, Recupera RANGO+2 Vitalidad"
+      "uses": "1/Ronda",
+      "description": "Recupera RANGO+2 Vitalidad. (1 vigor): Trata una <i>herida permanente</i> que tenga activa como si fuera de un nivel menor para eliminar sus penalizadores."
     },
     "sello-de-regeneracion": {
       "rank": 5,
@@ -7612,9 +7589,8 @@
       "name": "Sexto Sentido",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "sentidos": "vista-a-ciegas",
+      "resiste": "Ilusorio, Visual",
       "description": "Vista a ciegas a distancia media y puede usar Esquiva para evitar ataques extremadamente rápidos. Resistencia a Ilusiones y efectos Visuales"
     },
     "siervos-del-contrato": {
@@ -8193,9 +8169,8 @@
       "skill": "fortitud",
       "type": "Reaccion",
       "cost": "3 Vigor",
-      "reach": "",
-      "duration": "",
-      "description": "La primera vez que caiga a menos de 0 PV recupera toda su Vitalidad y la mitad de sus PV"
+      "uses": "1/Combate",
+      "description": "Recupera toda su Vitalidad y la mitad de sus PV. Solo puede emplear esta habilidad si cae a 0 o menos PV."
     },
     "unidos-hasta-la-muerte": {
       "rank": 5,
@@ -8272,9 +8247,7 @@
       "name": "Velocidad Superior",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "actions": 1,
       "description": "Aumenta su cantidad de acciones por 1 (ya incluido) y +RANGO a todos sus tiros de iniciativa"
     },
     "vendaval": {

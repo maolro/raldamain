@@ -14,12 +14,14 @@
     <script src="js/v-minusplusfield.js" type="text/javascript"></script>
     <script src="js/v-rank-selecter.js" type="text/javascript"></script>
     <script src="js/v-select-search.js" type="text/javascript"></script>
-    <script src="gear.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/utils.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/v-rankpage.js" type="text/javascript"></script>
+    <script src="js/v-talpage.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>    <link href="css/v-minusplusfield.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <link href="css/v-minusplusfield.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Designer</title>
@@ -95,35 +97,15 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="talents" role="tabpanel" aria-labelledby="talents-tab">
-                        <div class="row my-2 justify-content-center">
-                            <b class="mr-1">Puntos a distribuir:</b>{{ talpoints }}
-                        </div>
-                        <div style="max-height: 400px; overflow-y: auto; overflow-x: hidden;">
-                            <div v-for="(value, name) in talents" class="row my-2">
-                                <div class="col-6 justify-content-center">
-                                    <b>{{ value.name }}</b>
-                                </div>
-                                <div class="col-6 justify-content-center">
-                                    <v-minusplusfield v-bind:value="value.level" :min="0" :max="talentlimit"
-                                        :enableval="talpoints" v-on:input="value.level = $event"></v-minusplusfield>
-                                </div>
-                            </div>
-                        </div>
+                        <v-talpage v-bind:level="level"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="ranks" role="tabpanel" aria-labelledby="ranks-tab">
-                        <div class="row my-2 justify-content-center">
-                            <b class="mr-1">Puntos a distribuir:</b>{{ rkpoints }}
-                        </div>
-                        <div v-for="(value, index) in myranks" :key="index">
-                            <v-rank-selecter v-bind:ranks="ranks" :index="index" :limit="rankLimit" :enableval="rkpoints"
-                            @update-rank-level="handleRankLevelUpdate" @remove-rank="removeRank"></v-rank-selecter>
-                        </div>
-                        <div class="row my-2 justify-content-center">
-                            <button class="btn btn-secondary rounded-border px-3 py-1" @click="addRank">+</button>
-                        </div>
+                        <v-rankpage v-bind:ranks="ranks" :rkPoints="rkpoints" :rankLimit="ranklimit"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
-                        <h2>Hechizos</h2>
+                        <div class="row justify-content-center my-2">
+                            <h2>Hechizos</h2>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
                         <div class="row justify-content-center my-2">
@@ -134,24 +116,34 @@
                                 <b>Armadura</b>
                             </div>
                             <div class="col-6">
-                                <v-select-search v-bind:optionsobj="eqList.armor" 
-                                v-on:selected-key="addItem('armor', 'armor', $event)">
+                                <v-select-search v-bind:optionsobj="eqList.armor"
+                                    v-on:selected-key="addItem('armor', 'armor', $event)">
                                 </v-select-search>
                             </div>
                         </div>
-						<div class="row my-2 justify-content-center">
+                        <div class="row my-2 justify-content-center">
                             <div class="col-6">
                                 <b>Mano Principal</b>
                             </div>
                             <div class="col-6">
-                                <v-select-search v-bind:optionsobj="eqList.weapons" 
-                                v-on:selected-key="addItem('mainHand', 'weapons', $event)">
+                                <v-select-search v-bind:optionsobj="eqList.weapons"
+                                    v-on:selected-key="addItem('mainHand', 'weapons', $event)">
                                 </v-select-search>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
-                        <h2>Arquetipos</h2>
+                        <div class="row justify-content-center">
+                            <h2>Arquetipos</h2>
+                        </div>
+                        <div class="row my-1 justify-content-around align-center">
+                            <b> Raza: </b>
+                            <v-select-search v-bind:optionsobj="ranks"
+                                v-on:selected-key="setRank($event)"></v-select-search>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-secondary rounded-border px-3 py-1" @click="addRank">+</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,22 +171,23 @@
                     </div>
                     <hr>
                     </hr>
-                    <b>Talentos: </b>{{ talstring }}<br>
-                    <b>Rangos: </b> {{ rkString }}<br>
-                    <b>Arquetipos: </b><br>
+                    <div v-if="talstring"><b>Talentos: </b> {{ talstring }}<br></div>
+                    <div v-if="rkString"><b>Rangos: </b> {{ rkString }}<br></div>
+                    <div v-if="arcString"><b>Arquetipos: </b> {{ arcString }}<br></div>
                     <hr>
                     </hr>
-                    <b>Resistencias: </b><br>
-                    <b>Sentidos: </b><br>
-                    <b>Movimiento: </b><br>
-                    <b>Acciones: </b><br>
-                    <hr></hr>
+                    <b>Acciones: </b>{{ actions }}<br>
+                    <hr>
+                    </hr>
                     <div v-html="atbCatString('passive')"></div>
-                    <hr></hr>
+                    <hr>
+                    </hr>
                     <div v-html="atbCatString('actions')"></div>
-                    <hr></hr>
+                    <hr>
+                    </hr>
                     <div v-html="atbCatString('reactions')"></div>
-                    <hr></hr>
+                    <hr>
+                    </hr>
                 </div>
             </div>
         </div>

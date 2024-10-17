@@ -1,0 +1,22 @@
+{
+    "aven":{
+        "name": "Aven",
+        "stats":{
+            "dex": 1,
+            "int": 1,
+            "str": -1,
+            "con": -1
+        },
+        "abilities": "alas-de-ave"
+    },
+    "kitsune":{
+        "name": "Kitsune",
+        "stats":{
+            "dex": 1,
+            "wis": 1,
+            "str": -1,
+            "con": -1
+        },
+        "abilities": "cambiaformas"
+    }
+}

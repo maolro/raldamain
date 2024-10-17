@@ -1,22 +1,7 @@
 {
-    "sello-protector":{
-        "resistencia": ["Arcano"],
-        "tipo":"reaccion",
-        "rasgos":["Arcano", "Innato", "Protector"],
-        "usos":"1/Ronda",
-        "descripcion":"Tiene éxito automático en un tiro defensivo contra un efecto Arcano."
-    },
-    "glifo-magico(X)":{
-        "tipo":"pasiva",
-        "rasgos":["Arcano", "Innato", "Protector"],
-        "usos":"1/Combate",
-        "descripcion":"La criatura tiene un glifo activo que tiene sellado un hechizo que conozca de Rango X o menos. En cualquier momento del combate puede activar dicho glifo para lanzar el hechizo como acción bonus. Esto eliminará inmediatamente el glifo."
-    },
-    "contrahechizo":{
-        "resistencia": ["Arcano"],
-        "tipo":"reaccion",
-        "rasgos":["Arcano", "Innato", "Protector"],
-        "usos":"1/Ronda",
-        "descripcion":"Contrarresta un hechizo Arcano de su elección de Rango RANGO o inferior. El lanzador puede evitarlo pagando el doble de chi por el hechizo. Requiere posición defensiva."
+    "alas-de-ave":{
+        "name": "Alas de Ave",
+        "type": "Pasiva",
+        "description": "Recibe Velocidad de Vuelo 1 y Ventaja en todos sus tiros de"
     }
 }
