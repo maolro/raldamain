@@ -29,7 +29,7 @@ new Vue({
             armor: {},
             mainHand: {}
         },
-        eqAtb: {}
+        eqAtb: {},
     },
     methods: {
         getData: function (obj, source) {
@@ -50,7 +50,7 @@ new Vue({
         },
         getMod: function (talid) {
             mainstat = this.getMainStat(this.talents[talid].stat);
-            return this.talents[talid].level + this.stats[mainstat].value;
+            return this.talents[talid].level + this.finalStats[mainstat].value;
         },
         getMainStat: function (statstring) {
             res = statstring;
@@ -92,7 +92,7 @@ new Vue({
         getRank: function (id) {
             res = 0;
             for (let i in this.myranks) {
-                if (this.ranks[id].name == this.myranks[i].name) {
+                if (id == this.myranks[i].id) {
                     res = this.myranks[i].rank;
                     break;
                 }
@@ -100,7 +100,6 @@ new Vue({
             return res;
         },
         replaceTag: function processString(str, skill) {
-            console.log(skill);
             rk = this.getRank(skill);
             stat = this.finalStats[this.getMainStat(this.ranks[skill].stat)].value;
             const getDD = (rk) => {
@@ -108,7 +107,7 @@ new Vue({
                 else if (rk < 5) return "d8 ";
                 else return "d10 ";
             }
-            let result = str.replace(/RANGO/g, " " + rk)
+            let result = str.replace(/RANGO/g, "" + rk)
                 .replace(/STAT/g, " " + stat)
                 .replace(/DD/g, getDD(rk))
                 .replace(/MOD/g, (rk + stat));
@@ -137,6 +136,8 @@ new Vue({
             return obArray.map(obj => {
                 let formattedString = `<b>${obj.name}</b>`;
                 if (obj.cost || obj.uses || obj.tags) {
+                    if(obj.uses != null)
+                       obj.uses = this.replaceTag(obj.uses, obj.skill);
                     arr = [obj.cost, obj.uses, obj.tags];
                     formattedString += ` (${arr.filter(Boolean).join("; ")})`;
                 }
@@ -196,6 +197,22 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return res;
         },
+        sumAllKeys(key, arr){
+            res = 0;
+            for(let i in arr){
+                val = arr[i];
+                if(key in val && 'skill' in val){
+                    kr = val[key];
+                    if(typeof kr === 'number')
+                        res += kr;
+                    else if(typeof kr === 'string' && kr)
+                        res += Number.parseInt(this.replaceTag(kr, val.skill));
+                    else
+                        break;
+                }
+            }
+            return res;
+        }
     },
     computed: {
         statpoints: function () {
@@ -208,38 +225,27 @@ ${toMd(this.atbCatString("reactions"))}
         statlimit: function () {
             return Math.floor(3 + this.level / 3);
         },
-        talpoints: function () {
-            talSum = 0;
-            for (let key in this.talents) {
-                talSum += this.talents[key].level;
-            }
-            return (2 + 2 * parseInt(this.level) - talSum);
-        },
-        talentlimit: function () {
-            level = this.level
-            if (level < 5) return 2;
-            else if (level < 8) return 3;
-            else if (level < 11) return 4;
-            else return 5;
-        },
         hp: function () {
-            return Math.floor(3 + (this.level - 1) / 3 + this.finalStats.con.value);
+            return Math.floor(3 + (this.level - 1) / 3 + this.finalStats.con.value 
+            + this.sumAllKeys('hp', this.myatb.passive));
         },
         vt: function () {
-            return (2 + this.level / 1 + this.finalStats.con.value);
+            return (2 + this.level / 1 + this.finalStats.con.value + this.sumAllKeys('vt', this.myatb.passive));
         },
         san: function () {
             return (2 + this.level / 1 + this.finalStats.itl.value);
         },
         talstring: function () {
-            res = [];
+            ts = [];
             for (let key in this.talents) {
-                if (this.talents[key].level > 0)
-                    res.push(this.talents[key].name + " + " + this.getMod(key));
+                if (this.talents[key].level > 0){
+                    ts.push((this.talents[key].name + " + " + this.getMod(key)));
+                    console.log(res.toString());
+                }
             }
-            return res.join(", ");
+            return ts.join(", ");
         },
-        rankLimit: function () {
+        ranklimit: function () {
             return Math.floor(1 + (this.level - 1) / 3);
         },
         rkpoints: function () {
@@ -259,22 +265,25 @@ ${toMd(this.atbCatString("reactions"))}
         },
         myatb: function () {
             res = { passive: [], actions: [], reactions: [] };
+            abSwitch = (ability) => {
+                switch (ability.type) {
+                    case "Pasiva": res.passive.push(ability);
+                        break;
+                    case "Accion": res.actions.push(ability);
+                        break;
+                    case "Reaccion": res.reactions.push(ability);
+                        break;
+                }
+            };
             for (let key in this.equipment) {
                 slot = this.equipment[key];
                 atlist = [];
                 if('eqab' in slot)
                     atlist = slot.eqab.split(",");
                 for (let i in atlist) {
-                    if(atlist[i] in this.eqAtb){
-                        ability = this.eqAtb[atlist[i]];
-                        switch (ability.type) {
-                            case "Pasiva": res.passive.push(ability);
-                                break;
-                            case "Accion": res.actions.push(ability);
-                                break;
-                            case "Reaccion": res.reactions.push(ability);
-                                break;
-                        }
+                    eid = atlist[i].trim();
+                    if(eid in this.eqAtb){
+                        abSwitch(this.eqAtb[eid]);
                     }
                 }
             }
@@ -282,17 +291,11 @@ ${toMd(this.atbCatString("reactions"))}
                 if (this.myranks[key].rank != 0) {
                     atlist = (this.myranks[key].attributes).split(",");
                     for (let i in atlist) {
-                        atb = this.attributes[atlist[i]];
-                        if (atb.rank <= this.myranks[key].rank) {
+                        eid = atlist[i].trim();
+                        if (eid in this.attributes && this.attributes[eid].rank <= this.myranks[key].rank) {
+                            atb = this.attributes[eid];
                             atb.rank = this.myranks[key].rank;
-                            switch (atb.type) {
-                                case "Pasiva": res.passive.push(atb);
-                                    break;
-                                case "Accion": res.actions.push(atb);
-                                    break;
-                                case "Reaccion": res.reactions.push(atb);
-                                    break;
-                            }
+                            abSwitch(atb);
                         }
                     }
                 }
@@ -327,20 +330,12 @@ ${toMd(this.atbCatString("reactions"))}
             };
             if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
                 statsRes.dex.value += this.equipment.armor.penalty;
-            for (let i in this.myranks) {
-                rk = this.myranks[i];
+            fullArr = this.myranks.concat(this.myarch);
+            for (let i in fullArr) {
+                rk = fullArr[i];
                 for (let j in rk.stats) {
                     bst = rk.stats[j];
                     if (bst.rank <= rk.rank) {
-                        statsRes[bst.stat].value += bst.boost;
-                    }
-                }
-            }
-            for (let i in this.myarch) {
-                ar = this.myarch[i];
-                for (let j in ar.stats) {
-                    bst = ar.stats[j];
-                    if (bst.level <= ar.level) {
                         statsRes[bst.stat].value += bst.boost;
                     }
                 }
@@ -351,7 +346,13 @@ ${toMd(this.atbCatString("reactions"))}
             res = 0;
             if (this.equipment.armor.def != null)
                 res += this.equipment.armor.def;
-            return res;
+            return res + this.sumAllKeys('def', this.myatb.passive);
+        },
+        arcString: function(){
+            return "";
+        },
+        actions: function() {
+            return 3 + this.sumAllKeys('actions', this.myatb.passive);
         },
     },
     created() {

@@ -9,7 +9,7 @@
         "arco": {"name": "Arco", "eqab": "arco"},
         "cadena": {"name": "Cadena", "eqab": "cadena"},
         "daga": {"name": "Daga", "eqab": "daga"},
-        "escudo": {"name": "Escudo", "eqab": "escudo, parada-escudo"},
+        "escudo": {"name": "Escudo", "eqab": "escudo,parada-con-escudo"},
         "espada-larga": {"name": "Espada Larga", "eqab": "espada-larga"},
         "garra": {"name": "Garra", "eqab": "garra"},
         "gran-hacha": {"name": "Gran Hacha", "eqab": "gran-hacha"},

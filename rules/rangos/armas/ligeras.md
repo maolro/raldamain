@@ -31,7 +31,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 ### Combate furtivo
 
-*Pasiva, Ligera*
+*Mejora, Ligera*
 
 Tu estilo de combate se centra en aprovechar cada apertura que dejan tus enemigos para infligirles un mayor daño. Cada vez que realices un ataque junto con dos o más aliados, o impactes a un enemigo incapaz de defenderse, aumentarás el nivel de todas las *heridas permanentes* infligidas en un paso. Además, puedes usar tanto Esquiva como Parada para defenderte de un ataque enemigo y quedarte con el resultado más favorable, siempre que sea posible emplear ambas técnicas.
 

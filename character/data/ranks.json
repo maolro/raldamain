@@ -52,9 +52,14 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {"stat": "str", "rank": 2, "boost": 1}, 
-      {"stat": "con", "rank": 4, "boost": 1}, 
+      {"stat": "str", "rank": 2, "boost": 1},
+      {"stat": "con", "rank": 4, "boost": 1},
       {"stat": "dex", "rank": 6, "boost": 1}
+    ],
+    "spells": [
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "divine-patron"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "divine-patron"}
     ],
     "attributes": "abrazar-la-locura,aura-del-caos,corrupcion-absoluta,furia-abisal,invocacion-abisal,mutacion,paso-abisal,paso-abisal-defensivo,poder-antinatural,rasgo-monstruoso-superior,tocado-por-la-locura,transformacion-abisal"
   },
@@ -66,9 +71,21 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {"stat": "itl", "rank": 2, "boost": 1}, 
-      {"stat": "wis", "rank": 4, "boost": 1}, 
-      {"stat": "cha", "rank": 6, "boost": 1}
+      {
+        "stat": "itl",
+        "rank": 2,
+        "boost": 1
+      },
+      {
+        "stat": "wis",
+        "rank": 4,
+        "boost": 1
+      },
+      {
+        "stat": "cha",
+        "rank": 6,
+        "boost": 1
+      }
     ],
     "attributes": "abrir-el-tercer-ojo,arbitro-del-destino,forma-astral,fortaleza-del-pensamiento,hipercognicion,meditacion-iluminada,mente-iluminada,palacio-de-la-mente,psicomagia,sentido-magico,vinculo-akhasico"
   },
@@ -89,9 +106,21 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {"stat": "cha", "rank": 2, "boost": 1}, 
-      {"stat": "con", "rank": 4, "boost": 1}, 
-      {"stat": "wis", "rank": 6, "boost": 1}
+      {
+        "stat": "cha",
+        "rank": 2,
+        "boost": 1
+      },
+      {
+        "stat": "con",
+        "rank": 4,
+        "boost": 1
+      },
+      {
+        "stat": "wis",
+        "rank": 6,
+        "boost": 1
+      }
     ],
     "attributes": "alas-angelicales,alma-ascendida,angel-protector,angel-vengador,arma-angelical,cuerpo-puro,luz-celestial,nacido-del-cielo,poder-de-los-cielos,regeneracion-celestial,vision-verdadera"
   },
@@ -193,9 +222,21 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {"stat": "wis", "rank": 2, "boost": 1}, 
-      {"stat": "str", "rank": 4, "boost": 1}, 
-      {"stat": "con", "rank": 6, "boost": 1}
+      {
+        "stat": "wis",
+        "rank": 2,
+        "boost": 1
+      },
+      {
+        "stat": "str",
+        "rank": 4,
+        "boost": 1
+      },
+      {
+        "stat": "con",
+        "rank": 6,
+        "boost": 1
+      }
     ],
     "attributes": "aspecto-primigenio,aura-primigenia,comunion-con-la-naturaleza,despertar-la-bestia,forma-de-la-bestia,fuerza-salvaje,llamar-a-los-espiritus,portal-espiritual,sanacion-espiritual,transformacion-animal,vinculo-primigenio"
   },
@@ -207,9 +248,21 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {"stat": "dex", "rank": 2, "boost": 1}, 
-      {"stat": "cha", "rank": 4, "boost": 1}, 
-      {"stat": "con", "rank": 6, "boost": 1}
+      {
+        "stat": "dex",
+        "rank": 2,
+        "boost": 1
+      },
+      {
+        "stat": "cha",
+        "rank": 4,
+        "boost": 1
+      },
+      {
+        "stat": "con",
+        "rank": 6,
+        "boost": 1
+      }
     ],
     "attributes": "absorber-oscuridad,arma-de-tinieblas,dominio-de-pesadilla,forma-sombria,forma-sombria-defensiva,infusion-sombria,invocacion-sombria,nacido-de-las-tinieblas,salto-sombrio,salto-sombrio-defensivo,sigilo-sombrio,sombra-viviente,tirano-sombrio"
   },
@@ -320,6 +373,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "spells": [
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "divine-patron"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "divine-patron"}
+    ],
     "attributes": "aliento-de-la-vida,aura-protectora,avatar-divino,azote-divino,azote-ejecutor,canalizar-divinidad,explosion-divina,golpe-exiliante,guerrero-de-la-fe,hueste-divina,impacto-desacralizador,plegaria-de-batalla,presencia-divina,sentido-divino"
   },
   "ira": {
@@ -482,6 +540,13 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "spells": [
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron"},
+      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "divine-patron"},
+      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "divine-patron"},
+      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "divine-patron"},
+      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "divine-patron"}
+    ],
     "attributes": "adivinacion,castigo-divino,consagrar-la-tierra,enviado-de-los-dioses,exaltado,ira-de-dios,llamar-a-los-dioses,manifestacion-divina,milagro-menor,oracion,palabra-divina,proteccion-divina"
   },
   "magia-espacial": {
