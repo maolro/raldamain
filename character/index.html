@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="talents" role="tabpanel" aria-labelledby="talents-tab">
-                        <v-talpage v-bind:level="level"></v-rankpage>
+                        <v-talpage v-bind:level="level" :talents="talents"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="ranks" role="tabpanel" aria-labelledby="ranks-tab">
                         <v-rankpage v-bind:ranks="ranks" :rkPoints="rkpoints" :rankLimit="ranklimit"></v-rankpage>

@@ -14,7 +14,7 @@ Vue.component('v-select-search', {
           
           <!-- Dropdown options, filtered based on user input -->
           <ul v-if="dropdownVisible" class="dropdown-menu show w-100 mt-0" 
-          style="position: absolute; max-height: 400px; overflow-y: auto;">
+            style="position: absolute; max-height: 400px; overflow-y: auto;">
             <li v-for="(option, index) in filteredOptions" :key="index" class="dropdown-item" @mousedown="selectOption(option)">
               {{ option.name }}
             </li>
