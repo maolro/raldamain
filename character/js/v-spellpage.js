@@ -1,87 +1,122 @@
-Vue.component('v-select-search', {
-  template: `
-       <div class="position-relative">
-          <!-- Input field that also serves as the dropdown trigger -->
-          <input
-            type="text"
-            class="form-control"
-            v-model="searchQuery"
-            @input="filterOptions"
-            @focus="dropdownVisible = true"
-            @blur="hideDropdown"
-            :placeholder="placeholder"
-          />
-          
-          <!-- Dropdown options, filtered based on user input -->
-          <ul v-if="dropdownVisible" class="dropdown-menu show w-100 mt-0" 
-          style="position: absolute; max-height: 400px; overflow-y: auto;">
-            <li v-for="(option, index) in filteredOptions" :key="index" class="dropdown-item" @mousedown="selectOption(option)">
-              {{ option.name }}
-            </li>
-            <!-- If no options match the search -->
-            <li v-if="filteredOptions.length === 0" class="dropdown-item text-muted"></li>
-          </ul>
-        </div>
+Vue.component('v-spellpage', {
+    template: `
+<div class="spell-page">
+    <!-- Hechizos Header -->
+    <h2>Hechizos</h2>
+
+    <!-- Divine Patron Selection -->
+    <div v-if="showDivinePatron" class="form-group">
+        <label for="divine-patron">Patrón Divino</label>
+        <v-select-search v-bind:optionsobj="divine-patrons" v-on:selected-key="setRank($event)"></v-select-search>
+    </div>
+
+    <!-- Arcane Specialization Selection -->
+    <div v-if="showArcaneSpecialization" class="form-group">
+      <label for="arcane-specialization">Especialización Arcana</label>
+      <select v-model="selectedArcaneSpecialization" class="form-control" id="arcane-specialization">
+        <option v-for="specialization in arcaneSpecializations" :key="specialization.key" :value="specialization.key">{{ specialization.name }}</option>
+      </select>
+    </div>
+
+    <!-- Dynamic Spell Level Sections -->
+    <div v-for="(levelSection, index) in spellSections" :key="index" class="spell-section">
+      <h3>{{ getSectionTitle(levelSection) }}</h3>
+
+      <!-- Button to Add Spell Selector -->
+      <button @click="addSpellSelector(index)" class="btn btn-primary mb-2">[+] Añadir Hechizo</button>
+
+      <!-- Render Spell Selectors -->
+      <div v-for="(spell, spellIndex) in levelSection.spells" :key="spellIndex" class="spell-selector mb-2">
+        <v-spell-selector :available-spells="filteredSpells(levelSection.cat)" v-model="spell.selectedSpell"></v-spell-selector>
+      </div>
+    </div>
+  </div>
     `,
-  props: {
-    optionsobj: {
-      type: Object, 
-      required: true
+    props: {
+        myranks: {
+            type: Object,
+            required: true
+        },
+        spellLevels: {
+            type: Object,
+        },
+        divinePatrons: {
+            type: Object,
+        }, // List of divine patrons
+        arcaneSpecializations: {
+            type: Object,
+        }, // List of arcane specializations
+        spells: {
+            type: Array,
+        } // List of all available spells
     },
-    placeholder: {
-      type: String,
-      default: ''
-    }
-  },
-  data: function() {
-    return {
-      options: [], // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
-      searchQuery: '', // This will hold the search query from the input field
-      filteredOptions: [], // Filtered options based on the search query
-      selectedOption: '', // The value of the selected option
-      dropdownVisible: false // Controls visibility of the dropdown
-    };
-  },
-  mounted() {
-    this.options = Object.keys(this.optionsobj).map(key => ({
-      key: key,
-      name: this.optionsobj[key].name
-    }));
-    // Set initial filtered options to the full list
-    this.filteredOptions = this.options;
-  },
-  methods: {
-    filterOptions() {
-      const query = this.searchQuery.toLowerCase();
-      this.filteredOptions = this.options.filter(option =>
-        option.name.toLowerCase().includes(query)
-      );
+    data: function () {
+        return {
+            selectedDivinePatron: '',
+            selectedArcaneSpecialization: '',
+            spellSections: [] // This will store sections based on spell levels
+        };
     },
-    selectOption(option) {
-      console.log("key: "+option.key);
-      this.searchQuery = option.name; // Set input text to selected option's name
-      this.$emit('selected-key', option.key); // Emit the selected option's key
-      this.dropdownVisible = false; // Hide the dropdown after selection
+    mounted() {
+        this.options = Object.keys(this.optionsobj).map(key => ({
+            key: key,
+            name: this.optionsobj[key].name
+        }));
+        // Set initial filtered options to the full list
+        this.filteredOptions = this.options;
     },
-    // Hides the dropdown (delayed to allow the click to register)
-    hideDropdown() {
-      setTimeout(() => {
-        this.dropdownVisible = false;
-      }, 200);
+    methods: {
+        // Generate spell sections based on the spellLevels and rank data
+        generateSpellSections() {
+            this.spellSections = [];
+            this.spellLevels.forEach(level => {
+                const matchingRank = this.myranks.find(r => r.rank >= level.rank && r.id.includes(level.cat));
+                if (matchingRank) {
+                    this.spellSections.push({
+                        level: level.level,
+                        slots: level.slots,
+                        usedSlots: 0,
+                        cat: level.cat,
+                        spells: [] // Holds the selected spells for this section
+                    });
+                }
+            });
+        },
+        // Add a new spell selector for a specific section
+        addSpellSelector(index) {
+            if (this.spellSections[index].spells.length < this.spellSections[index].slots) {
+                this.spellSections[index].spells.push({ selectedSpell: null });
+                this.spellSections[index].usedSlots += 1;
+            }
+        },
+        // Return the title for each section including used/available slots
+        getSectionTitle(section) {
+            return `Nivel ${section.level} (${section.usedSlots}/${section.slots})`;
+        },
+        // Filter spells based on the category for the spell selector dropdown
+        filteredSpells(cat) {
+            return this.spells.filter(spell => spell.cat === cat);
+        },
     },
-  },
-  watch: {
-    // Watch for changes in the options prop and reset the filtered list accordingly
-    optionsobj(newOptions) {
-      this.options = Object.keys(newOptions).map(key => ({
-        key: key,
-        name: newOptions[key].name
-      }));
-      this.filteredOptions = this.options;
+    watch: {
+        // Watch for changes in myranks and spellLevels to dynamically create spell sections
+        myranks: {
+            handler() {
+                this.generateSpellSections();
+            },
+            deep: true,
+            immediate: true
+        },
+        spellLevels: {
+            handler() {
+                this.generateSpellSections();
+            },
+            deep: true,
+            immediate: true
+        },
     },
-  },
-  style:
-    `.dropdown-menu {
+    style:
+        `.dropdown-menu {
         max-height: 200px;
         overflow-y: auto;
         padding: 0;
