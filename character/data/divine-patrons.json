@@ -1,0 +1,62 @@
+{
+    "ayanuu":{
+        "name": "Ayanuu",
+        "type": "abyssal",
+         "domains": ["magia-gravitatoria", "magia-mental", "magia-espacial", "magia-onirica", "magia-temporal"]
+    },
+    "ekdavor":{
+        "name": "Ekdavor",
+        "type": "abyssal",
+        "domains": ["magia-de-fuego", "magia-mental", "magia-espacial", "magia-de-tormenta"]
+    },
+    "gulmaht":{
+        "name": "Gulmaht",
+        "type": "abyssal",
+         "domains": ["magia-de-tierra", "magia-de-fuego", "magia-gravitatoria", "magia-de-transmutacion"]
+    },
+    "ithanatron":{
+        "name": "Ithanatron",
+        "type": "celestial",
+        "domains": ["magia-de-vida", "magia-protectora", "magia-de-metal", "magia-de-fuego"]
+    },
+    "meisodh":{
+        "name": "Meisodh",
+        "type": "other",
+        "domains": ["telekinesia", "magia-temporal", "magia-de-fuego", "magia-de-transmutacion"]
+    },
+    "seiryuu":{
+        "name": "Seiryuu",
+        "type": "spirit",
+        "domains": ["magia-de-hielo", "magia-de-aire", "magia-de-almas"]
+    },
+    "sek-tebos":{
+        "name": "Sek-Tebos",
+        "type": "infernal",
+        "domains": ["magia-de-fuego", "magia-mental", "magia-protectora", "magia-temporal", "magia-espacial"]
+    },
+    "shade":{
+        "name": "Shade",
+        "type": "abyssal",
+        "domains": ["magia-sombria", "nigromancia", "magia-ilusoria", "magia-mental", "magia-de-acido"]
+    },
+    "suzakushin":{
+        "name": "Suzakushin",
+        "type": "spirit",
+        "domains": ["magia-de-fuego", "magia-de-vida", "magia-protectora"]
+    },
+    "tamashi-kuso":{
+        "name": "Tamashi-Kuso",
+        "type": "spirit",
+        "domains": ["magia-de-almas", "magia-temporal", "telekinesia"]
+    },
+    "yanma-sama":{
+        "name": "Yanma-Sama",
+        "type": "spirit",
+        "domains": ["magia-de-vida", "magia-protectora", "magia-espacial"]
+    },
+    "yohadamuin":{
+        "name": "Yohadamuin",
+        "type": "celestial",
+        "domains": ["magia-de-vida", "magia-temporal", "magia-gravitatoria", "magia-mental"]
+    }
+}

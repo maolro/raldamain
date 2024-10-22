@@ -104,9 +104,6 @@
       "name": "Adivinación",
       "skill": "magia-divina",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
       "description": "Puede hacer rituales para recibir visiones de su dios sobre eventos pasados, presentes o futuros"
     },
     "aerokinesia": {
@@ -1057,11 +1054,12 @@
       "rank": 3,
       "name": "Aura Protectora",
       "skill": "guerrero-divino",
-      "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia a efectos Arcanos y Divinos. 1/ronda convierte tiro fracasado contra un hechizo en éxito pagando chi o vigor igual al coste del hechizo enemigo"
+      "type": "Reaccion",
+      "cost": "X Vigor o Chi",
+      "uses": "1/Ronda",
+      "tags": "Divina, Defensiva",
+      "resistances": ["arcane", "divine"],
+      "description": "Resistencia a efectos Arcanos y Divinos. Tiene éxito automático en un tiro defensivo contra un hechizo de coste X o menos."
     },
     "aura-toxica": {
       "rank": 5,
@@ -1111,7 +1109,7 @@
       "cost": "1 Vigor",
       "reach": "Propio",
       "duration": "Una ronda",
-      "description": "El siguiente ataque que impacte provoca 1d6+RANGO daño adicional según su divinidad"
+      "description": "El siguiente ataque que impacte provoca 1DD+ RANGO daño adicional según su divinidad"
     },
     "azote-ejecutor": {
       "rank": 5,
@@ -1248,10 +1246,8 @@
       "name": "Bola Sombra",
       "skill": "magia-sombria",
       "type": "Accion",
-      "cost": "2 Acciones y 1 Chi",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Esfera pequeña, 1DD+STAT daño Frío que reduce PV y Vitalidad máxima. Si gasta una acción para cargar aumenta el daño y área por 1d6 (máx 2)"
+      "cost": "1 Acción y 1 Chi",
+      "description": "Distancia media, Esfera pequeña, +MOD para atacar, 1DD+STAT daño Frío que reduce PV y Vitalidad máxima. Si gasta una acción para cargar aumenta el daño y área por 1d6 (máx 2)"
     },
     "bolsillo-interdimensional": {
       "rank": 1,
@@ -1655,9 +1651,8 @@
       "skill": "magia-divina",
       "type": "Accion",
       "cost": "1 Acción y 2 Chi",
-      "reach": "Medio",
-      "duration": "Hasta que termine",
-      "description": "Tira para defenderse de una maldición divina muy poderosa. Algunos ejemplos son Marca de Ley, Bestia Interior, Llamas de Venganza o Dolor Eterno"
+      "tags": "Divino, Maldición",
+      "description": "Distancia media, el afectado tira contra +MOD para defenderse de una maldición divina muy poderosa. Algunos ejemplos son Marca de Ley, Bestia Interior, Llamas de Venganza o Dolor Eterno."
     },
     "chakra-de-armonia": {
       "rank": 6,
@@ -2061,9 +2056,8 @@
       "skill": "magia-divina",
       "type": "Accion",
       "cost": "3 Acciones y 1 Chi",
-      "reach": "Radio grande",
-      "duration": "Un combate",
-      "description": "Bendice la tierra para dar Ventaja a sus aliados en todos sus tiros de ataque, defensa y habilidad además que no pueden invocarse extraplanarios enemigos"
+      "tags": "Divina, Ambiental",
+      "description": "Bendice la tierra a en un radio grande para dar Ventaja a sus aliados en todos sus tiros de ataque, defensa y habilidad además que no pueden invocarse extraplanarios enemigos."
     },
     "constitucion-ferrea": {
       "rank": 3,
@@ -3030,10 +3024,8 @@
       "name": "Enviado de los Dioses",
       "skill": "magia-divina",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Habla un idioma adicional vinculado a su divinidad y detecta criaturas extraplanarias y magia a distancia media"
+      "description": "Habla un idioma adicional vinculado a su divinidad y detecta criaturas extraplanarias y magia a distancia media",
+      "sentidos": "Sentido Divino medio"
     },
     "erupcion-abrasadora": {
       "rank": 3,
@@ -3050,10 +3042,9 @@
       "name": "Erupción Ácida",
       "skill": "magia-de-acido",
       "type": "Accion",
-      "cost": "2 Acciones y 1 Chi",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Columna media, inflige 1DD+STAT daño Ácido área. Si impacta a una criatura voladora cae al suelo y no puede volver a volar durante un turno. Requiere terreno lleno de lodo o agua"
+      "cost": "1 Acción y 1 Chi",
+      "tags": "Ataque, Ácido, Área",
+      "description": "Distancia media, Columna media, +MOD para atacar, inflige 1DD+STAT daño Ácido (la mitad en caso de fallo). Si impacta a una criatura voladora cae al suelo y no puede volver a volar durante un turno. Requiere terreno lleno de lodo o agua."
     },
     "escaldar": {
       "rank": 4,
@@ -3111,9 +3102,8 @@
       "skill": "magia-de-acido",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Ácido y rompe la armadura metálica del objetivo. Si usa un objeto para detener este ataque lo rompe también"
+      "tags": "Ataque, Ácido, A Distancia",
+      "description": "Distancia media, +MOD para atacar, Inflige 1DD+RANGO daño Frío que reduce también Vitalidad y PV máximos, contando como Aflicción nivel 1"
     },
     "esencia-de-la-magia": {
       "rank": 4,
@@ -3359,9 +3349,8 @@
       "skill": "reflejos",
       "type": "Reaccion",
       "cost": "1 Vigor",
-      "reach": "",
-      "duration": "",
-      "description": "1/Ronda, Tras un tiro fallido de Esquiva reduce el daño del ataque enemigo a la mitad, desengancha y se mueve un paso"
+      "uses": "1/Ronda",
+      "description": "Tras un tiro fallido de Esquiva reduce el daño del ataque enemigo a la mitad, desengancha y se mueve un paso. Requiere que sea capaz de Esquivar ese ataque."
     },
     "exaltado": {
       "rank": 5,
@@ -3369,9 +3358,7 @@
       "skill": "magia-divina",
       "type": "Accion",
       "cost": "2 Acciones y 3 Chi",
-      "reach": "Propio",
-      "duration": "Seis rondas",
-      "description": "Recibe 30 Vitalidad temporal, Protección Divina, Resistencia a efectos Arcanos y Divinos y 12 en tres estadísticas"
+      "description": "Recibe 30 Vitalidad temporal, Protección Divina, Resistencia a efectos Arcanos y Divinos y 12 en tres estadísticas. Termina al cabo de seis rondas."
     },
     "exilio": {
       "rank": 4,
@@ -3778,10 +3765,9 @@
       "name": "Foso de Cadáveres",
       "skill": "magia-de-acido",
       "type": "Accion",
-      "cost": "2 Acciones y 1 Chi",
-      "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Tira Esquiva o sufre 1DD+STAT daño Ácido y queda enredado. Tira Heroísmo o Atletismo cada ronda para intentar escapar y si falla queda agarrado y sufre 1DD+STAT daño Ácido (la mitad de daño si se libera)"
+      "cost": "1 Acción y 1 Chi",
+      "tags": "Ataque, Ácido, Agarre",
+      "description": "Distancia Media, el objetivo tira Esquiva contra +MOD o sufre 1DD+STAT daño Ácido y queda enredado. Tira Heroísmo o Atletismo contra +MOD cada ronda para intentar escapar y si falla queda agarrado y sufre 1DD+STAT daño Ácido (la mitad de daño si se libera)"
     },
     "frasco-de-acido": {
       "rank": 1,
@@ -5149,9 +5135,8 @@
       "skill": "magia-divina",
       "type": "Accion",
       "cost": "3 Acciones y 2 Chi",
-      "reach": "Radio grande",
-      "duration": "Seis rondas",
-      "description": "Llena el área con Tierra Consagrada y en turno 2 provoca un efecto ambiental de Rango III o menos relacionado con su dios (como Aura de Vida, Aura de Muerte, Controlar los Vientos o Animar Plantas)"
+      "tags": "Divina, Ambiental",
+      "description": "Llena un radio grande con Tierra Consagrada y en turno 2 provoca un efecto ambiental de Rango III o menos relacionado con su dios (como Aura de Vida, Aura de Muerte, Controlar los Vientos o Animar Plantas)"
     },
     "llamar-a-los-espiritus": {
       "rank": 3,
@@ -5169,9 +5154,7 @@
       "skill": "magia-de-acido",
       "type": "Accion",
       "cost": "3 Acciones y 2 Chi",
-      "reach": "Radio Grande",
-      "duration": "Seis rondas",
-      "description": "La tierra se convierte en terreno difícil y mata instantáneamente las plantas. Otorga Ventaja a tiros de Magia de Ácido y el agua se convierte en un veneno de CON"
+      "description": "La tierra en un radio grande se convierte en <i>terreno difícil</i> y mata instantáneamente las plantas. Otorga Ventaja a tiros de Magia de Ácido y el agua se convierte en un veneno de CON. Dura seis rondas."
     },
     "llamarada": {
       "rank": 1,
@@ -5329,9 +5312,8 @@
       "skill": "magia-sombria",
       "type": "Accion",
       "cost": "2 Chi",
-      "reach": "Propio",
-      "duration": "Hasta que termine",
-      "description": "Al herir a enemigos con un efecto Sombrío tiran CON o sufren la maldición de Shade. La maldición impide la sanación y cada vez que pase un día o les afecte de nuevo un efecto Sombrío tiran CON de nuevo o aumenta su paso por 1"
+      "tags": "Sombría, Maldición",
+      "description": "Al herir a enemigos con un efecto Sombrío estos deben tener éxito en un tiro de Salud contra +MOD o sufrirán la maldición de Shade. La maldición impide la sanación y cada vez que pase un día o les afecte de nuevo un efecto Sombrío tiran CON de nuevo o la maldición aumentará su efecto por un paso."
     },
     "maldicion-vampirica": {
       "rank": 2,
@@ -5349,9 +5331,8 @@
       "skill": "magia-divina",
       "type": "Accion",
       "cost": "2 Acciones y 1 Chi",
-      "reach": "Medio",
-      "duration": "Hasta que termine",
-      "description": "Bendice o maldice a un objetivo usando un efecto relacionado con su dios"
+      "tags": "Divino, Maldición",
+      "description": "Distancia media, Bendice o maldice a su objetivo usando un efecto relacionado con su dios. Las maldiciones tienen modificador +MOD y el afectado puede defenderse tirando Salud, Concentración o Voluntad."
     },
     "manifestar-pesadilla": {
       "rank": 5,
@@ -5567,11 +5548,10 @@
       "rank": 1,
       "name": "Milagro Menor",
       "skill": "magia-divina",
-      "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "RANGO+2 veces al día, una criatura de su elección repite un tiro y se queda con el resultado que más te convenga"
+      "type": "Reaccion",
+      "uses": "RANGO+2/día",
+      "tags": "Divina",
+      "description": "Una criatura de su elección repite un tiro y se queda con el resultado que más te convenga. Puede contrarrestarse gastando otro uso de esta misma habilidad u otra que permita repetir tiros."
     },
     "modificar-recuerdos": {
       "rank": 4,
@@ -5769,9 +5749,7 @@
       "skill": "magia-de-acido",
       "type": "Accion",
       "cost": "1 Acción y 1 Chi",
-      "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Crea un muro (línea media o esfera pequeña) con RANGOx3 PV. El muro es Inmune a armas no-mágicas y proporciona cubierta. Toda criatura que lo intente cruzar sufre 1DD+STAT daño Ácido y rompe objetos"
+      "description": "Distancia media, Crea un muro (línea media o esfera pequeña) con RANGOx3 PV. El muro es Inmune a armas no-mágicas y proporciona cubierta. Toda criatura que lo intente cruzar debe tirar Salud contra +MOD o sufre 1DD+STAT daño Ácido que rompe objetos. Dura hasta que pierda la concentración"
     },
     "muro-de-lodo-defensivo": {
       "rank": 2,
@@ -5779,9 +5757,9 @@
       "skill": "magia-de-acido",
       "type": "Reaccion",
       "cost": "1 Chi",
-      "reach": "",
-      "duration": "",
-      "description": "1/Ronda, reduce el daño de un ataque a distancia por RANGOx3 o una criatura que haga un ataque cuerpo a cuerpo sufre 1DD+STAT daño Ácido y rompe los objetos que lleve. Requiere posición defensiva"
+      "uses": "1/Ronda",
+      "tags": "Ácido, Defensivo",
+      "description": "Reduce el daño de un ataque a distancia por RANGOx3 o una criatura que haga un ataque cuerpo a cuerpo sufre 1DD+STAT daño Ácido y rompe los objetos que lleve. Requiere posición defensiva"
     },
     "muro-de-los-vientos": {
       "rank": 2,
@@ -6048,10 +6026,7 @@
       "name": "Oración",
       "skill": "magia-divina",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Hace un ritual de 10 min que le permite hacer cuatro preguntas a su dios. La cantidad de preguntas se reduce por cada vez sucesiva."
+      "description": "Puede hacer un ritual de 10 min que le permite hacer cuatro preguntas a su dios. Cada vez sucesiva que realice esta habilidad se reduce la cantidad de preguntas disponibles por 1."
     },
     "orden-de-exterminio": {
       "rank": 5,
@@ -6068,10 +6043,9 @@
       "name": "Oscuridad Devoradora",
       "skill": "magia-sombria",
       "type": "Accion",
-      "cost": "2 Acciones y 1 Chi",
-      "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Tira Heroísmo o Destrozar o sufre 1DD+STAT daño Frío y queda enredado. Tira cada ronda y si falla sufre de nuevo 1DD+STAT daño Frío. Solo puede afectar a enemigos que estén a oscuras"
+      "cost": "1 Acción y 1 Chi",
+      "tags": "Sombría, Agarre, Duradera",
+      "description": "Distancia Media, el afectado hace un tiro de Heroísmo o Destrozar contra +MOD o sufre 1DD+STAT daño Frío y queda <i>enredado</i>. Tira cada ronda y si falla sufre de nuevo 1DD+STAT daño Frío. Solo puede afectar a enemigos que estén a oscuras."
     },
     "oscuridad-enloquecedora": {
       "rank": 4,
@@ -6079,9 +6053,8 @@
       "skill": "magia-sombria",
       "type": "Accion",
       "cost": "2 Acciones y 2 Chi",
-      "reach": "Esfera mediana",
-      "duration": "Concentración",
-      "description": "Todos tiran Voluntad o Concentración o quedan confundidos y pierden efectos de Moral. Requiere entorno a oscuras y todos repiten el tiro cada ronda. Enemigos con Maldición de Shade se asemejan a monstruos incluso para aliados libres del efecto"
+      "tags": "Sombría, Visual, Mental, Duradera",
+      "description": "Esfera Mediana, Todos los objetivos tiran Voluntad o Concentración contra +MOD o quedan <i>confundidos</i> y pierden efectos de Moral. Requiere entorno a oscuras y todos repiten el tiro cada ronda. Enemigos con Maldición de Shade se asemejan a monstruos incluso para aliados libres del efecto. Dura hasta que pierda la concentración."
     },
     "ovoposicion": {
       "rank": 2,
@@ -6111,7 +6084,7 @@
       "cost": "2 Acciones y 3 Chi",
       "reach": "Esfera mediana",
       "duration": "Instantáneo",
-      "description": "Tiran CON o 2DD+STAT daño Sónico y ensordece una ronda. Mata instantáneamente las invocaciones de dioses enemigos"
+      "description": "Esfera Mediana, todos los objetivos tiran Salud contra +MOD. Los que fracasen sufre 2DD+STAT daño Sónico y quedan <i>ensordecidos</i> durante una ronda (las que tienen éxito sufren la mitad de daño). Mata instantáneamente a todas las invocaciones de dioses enemigos con nivel menor al suyo."
     },
     "palacio-de-la-mente": {
       "rank": 5,
@@ -6266,10 +6239,7 @@
       "name": "Parada Sombría",
       "skill": "magia-sombria",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para defenderse de ataques físicos o mágicos"
+      "description": "+MOD para defenderse. Funciona contra ataques físicos y mágicos."
     },
     "parar-el-tiempo": {
       "rank": 5,
@@ -6666,9 +6636,8 @@
       "skill": "magia-divina",
       "type": "Accion",
       "cost": "2 Acciones y 2 Chi",
-      "reach": "Propio",
-      "duration": "Concentración",
-      "description": "Está siempre en posición defensiva, puede usar modificador Magia Divina para defenderse como parada y al ser impactado puede lanzar un hechizo Divino como acción bonus (no puede afectar al mismo más de 1/Ronda)"
+      "tags": "Divina, Duradera, Defensiva",
+      "description": "MIentras esta habilidad permanezca activa se encontrará siempre en <i>posición defensiva</i> y puede usar su modificador Magia Divina para defenderse como parada. Al ser impactado puede lanzar un hechizo Divino como acción bonus (no puede afectar al mismo más de 1/Ronda). Dura hasta que pierda la concentración."
     },
     "protesis-mecanica": {
       "rank": 2,
@@ -7719,9 +7688,8 @@
       "skill": "magia-sombria",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Frío que reduce también Vitalidad y PV máximos, contando como aflicción nivel 1"
+      "tags": "Sombrío, Ataque, Frío, A Distancia",
+      "description": "+MOD para atacar, Distancia Media, Inflige 1DD+RANGO daño Frío que reduce también Vitalidad y PV máximos, contando como Aflicción nivel 1"
     },
     "taladro-hidraulico": {
       "rank": 4,
@@ -7779,9 +7747,7 @@
       "skill": "magia-sombria",
       "type": "Accion",
       "cost": "2 Acciones y 2 Chi",
-      "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Radio corto, Inflige 1DD+STAT daño Frío área y los afectados tiran Heroísmo o Atletismo o quedan agarrados. Todos los que empiecen su turno en el área afectada o entren ahí sufren de nuevo el ataque"
+      "description": "Distancia Media, Radio Corto, +MOD para atacar, Inflige 1DD+STAT daño Frío área y los afectados tiran Heroísmo o Atletismo contra +MOD o quedan <i>agarrados</i>. Todos los que empiecen su turno en el área afectada o entren ahí sufren de nuevo el ataque. Dura hasta que pierda la concentración."
     },
     "tentaculos-fangosos": {
       "rank": 3,
@@ -7841,7 +7807,7 @@
       "cost": "2 Acciones y 2 Chi",
       "reach": "Medio",
       "duration": "Concentración",
-      "description": "Esfera media, otorga Ventaja a tiros de Magia Sombría y los enemigos tiran Voluntad o Percepción o aumenta su nivel de miedo por un paso y se desorientan. Crea nube de oscuridad que ciega y da ocultamiento"
+      "description": "Esfera media, otorga Ventaja a tiros de Magia Sombría y los enemigos tiran Voluntad o Percepción contra +MOD o aumenta su nivel de miedo por un paso y se desorientan. Crea nube de oscuridad que <i>ciega</i> y da <i>ocultamiento</i>. Dura hasta que pierda la concentración."
     },
     "tierra-viva": {
       "rank": 2,
@@ -7891,7 +7857,7 @@
       "cost": "1 Acción y 2 Chi",
       "reach": "Medio",
       "duration": "Concentración",
-      "description": "Tira Heroísmo o Destrozar o agarra y puedes tomar acciones por él gastando esa misma cantidad de acciones. Repite el tiro cada ronda para intentar escapar"
+      "description": "Distancia media, el afectado tira Heroísmo o Destrozar contra +MOD o queda <i>agarrado</i> y puedes tomar acciones por él gastando esa misma cantidad de acciones. Repite el tiro cada ronda para intentar escapar."
     },
     "tocado-por-la-locura": {
       "rank": 1,
@@ -7939,9 +7905,7 @@
       "skill": "magia-sombria",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
-      "description": "Tiro CON o sufre 1DD+RANGO daño Frío. Este daño reduce también Vitalidad y PV máximos, contando como aflicción nivel 1"
+      "description": "Adyacente, El afectado tira Salud contra +MOD o sufre 1DD+RANGO daño Frío. Este daño reduce también Vitalidad y PV máximos, contando como aflicción nivel 1"
     },
     "toque-necrotico": {
       "rank": 1,

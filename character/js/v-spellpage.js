@@ -1,26 +1,25 @@
 Vue.component('v-spellpage', {
     template: `
 <div class="spell-page">
-    <!-- Hechizos Header -->
-    <h2>Hechizos</h2>
-
+    <div class="row my-2 justify-content-center">
+        <h2>Hechizos</h2>
+    </div>
     <!-- Divine Patron Selection -->
-    <div v-if="showDivinePatron" class="form-group">
-        <label for="divine-patron">Patrón Divino</label>
-        <v-select-search v-bind:optionsobj="divine-patrons" v-on:selected-key="setRank($event)"></v-select-search>
+    <div v-if="showDivinePatron" class="row my-2 justify-content-around"">
+        <b> Patrón Divino: </b>
+        <v-select-search v-bind:optionsobj="divinePatrons" v-on:selected-key="setDivinePatron($event)"></v-select-search>
     </div>
 
     <!-- Arcane Specialization Selection -->
     <div v-if="showArcaneSpecialization" class="form-group">
-      <label for="arcane-specialization">Especialización Arcana</label>
-      <select v-model="selectedArcaneSpecialization" class="form-control" id="arcane-specialization">
-        <option v-for="specialization in arcaneSpecializations" :key="specialization.key" :value="specialization.key">{{ specialization.name }}</option>
-      </select>
+        <b> Especialización Arcana: </b>
+        <v-select-search v-bind:optionsobj="arcaneSpecializations" v-on:selected-key="setArcaneSpecialization($event)"></v-select-search>
     </div>
 
     <!-- Dynamic Spell Level Sections -->
     <div v-for="(levelSection, index) in spellSections" :key="index" class="spell-section">
-      <h3>{{ getSectionTitle(levelSection) }}</h3>
+      <h3>{{ getSectionTitle(levelSection) }
+      }</h3>
 
       <!-- Button to Add Spell Selector -->
       <button @click="addSpellSelector(index)" class="btn btn-primary mb-2">[+] Añadir Hechizo</button>
@@ -34,39 +33,55 @@ Vue.component('v-spellpage', {
     `,
     props: {
         myranks: {
-            type: Object,
+            type: Array,
             required: true
         },
         spellLevels: {
             type: Object,
         },
-        divinePatrons: {
-            type: Object,
-        }, // List of divine patrons
-        arcaneSpecializations: {
-            type: Object,
-        }, // List of arcane specializations
         spells: {
             type: Array,
         } // List of all available spells
     },
     data: function () {
         return {
-            selectedDivinePatron: '',
-            selectedArcaneSpecialization: '',
-            spellSections: [] // This will store sections based on spell levels
+            selectedDivinePatron: {},
+            selectedArcaneSpecialization: {},
+            divinePatrons: {},
+            arcaneSpecializations: {},
+            spellSections: [], // This will store sections based on spell levels
+            typefilter: ''
         };
     },
+    computed: {
+        showDivinePatron: function(){
+            rankMatch = ["magia-divina", "guerrero-divino", "ascendencia-abisal", "ascendencia-primigenia", "ascendencia-infernal"];
+            return this.myranks.some(obj => rankMatch.includes(obj.id));
+        },
+        showArcaneSpecialization: function(){
+            return this.myranks.some(obj => obj.id === "magia-de-evocacion");
+        },
+        getSpellLevels: function(){
+            "[{name: string, isDivine: boolean, isArcane: boolean, spells: [{rank: 1, slots: 2}, {rank: 1, slots: 2}]}]"
+        }
+    },
     mounted() {
-        this.options = Object.keys(this.optionsobj).map(key => ({
+        /*this.options = Object.keys(this.optionsobj).map(key => ({
             key: key,
             name: this.optionsobj[key].name
         }));
-        // Set initial filtered options to the full list
-        this.filteredOptions = this.options;
+        this.filteredOptions = this.options;*/
+        this.getData("divinePatrons", '../data/divine-patrons.json');
+        this.getData("arcaneSpecializations", '../data/arcane-specs.json');
     },
     methods: {
-        // Generate spell sections based on the spellLevels and rank data
+        setDivinePatron(obj){
+            this.selectedDivinePatron = {id: obj.key, ...this.divinePatrons[obj.key]};
+        },
+        setArcaneSpec(obj){
+            this.selectedArcaneSpecialization = {id: obj.key, ...this.arcaneSpecializations[obj.key]};
+        },
+        /* Generate spell sections based on the spellLevels and rank data
         generateSpellSections() {
             this.spellSections = [];
             this.spellLevels.forEach(level => {
@@ -96,23 +111,28 @@ Vue.component('v-spellpage', {
         // Filter spells based on the category for the spell selector dropdown
         filteredSpells(cat) {
             return this.spells.filter(spell => spell.cat === cat);
+        },*/
+        getData: function (obj, source) {
+            fetch(source)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json(); 
+                })
+                .then(data => {
+                    this[obj] = data;   
+                })
+                .catch(error => {
+                    console.error("Error fetching the JSON: ", error);
+                });
         },
     },
     watch: {
-        // Watch for changes in myranks and spellLevels to dynamically create spell sections
         myranks: {
-            handler() {
-                this.generateSpellSections();
-            },
-            deep: true,
-            immediate: true
-        },
-        spellLevels: {
-            handler() {
-                this.generateSpellSections();
-            },
-            deep: true,
-            immediate: true
+            handler: function (newVal) {
+                this.myranks = newVal;
+            }
         },
     },
     style:
