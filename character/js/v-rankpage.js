@@ -27,7 +27,7 @@ Vue.component('v-rankpage', {
         }
     },
     computed: {
-        myranks() {
+        myranks: function() {
             return this.$root.myranks;
         }
     },
@@ -56,6 +56,11 @@ Vue.component('v-rankpage', {
             handler: function (newVal) {
                 this.ranklimit = newVal;
             }
-        }
+        },
+        ranks: {
+            handler: function (newVal) {
+                this.ranks = newVal;
+            }
+        },
     },
 });

@@ -18,7 +18,7 @@ La magia Gravitatoria se adhiere a un conjunto de reglas fundamentales que rigen
 
 ## Rango I
 
-### Pulso gravitatorio
+### Pulso Gravitatorio
 
 *Gravedad, Maniobra, Físico*
 
@@ -36,7 +36,7 @@ Este hechizo puede también empujar objetos de tamaño mediano un paso en cualqu
 
 **Empoderar** (1 chi): Afecta a todos los enemigos a distancia cercana con este hechizo.
 
-### Arrastre gravitatorio
+### Arrastre Gravitatorio
 
 *Gravedad, Maniobra, Físico*
 
@@ -54,7 +54,7 @@ Este hechizo puede también arrastrar objetos de tamaño mediano un paso hacia t
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional a distancia media con este hechizo.
 
-### Pozo de gravedad
+### Pozo de Gravedad
 
 *Gravedad, Sostenido, Maniobra, Físico*
 
@@ -76,7 +76,7 @@ De manera alternativa puedes hacer que el pozo esté centrado en un objeto o cri
 
 ## Rango II
 
-### Alterar peso
+### Alterar Peso
 
 *Gravedad, Duradero, Físico*
 

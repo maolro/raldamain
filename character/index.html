@@ -16,6 +16,7 @@
     <script src="js/v-select-search.js" type="text/javascript"></script>
     <script src="js/v-rankpage.js" type="text/javascript"></script>
     <script src="js/v-talpage.js" type="text/javascript"></script>
+    <script src="js/v-spellpage.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -103,9 +104,7 @@
                         <v-rankpage v-bind:ranks="ranks" :rkPoints="rkpoints" :rankLimit="ranklimit"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
-                        <div class="row justify-content-center my-2">
-                            <h2>Hechizos</h2>
-                        </div>
+                        <v-spellpage v-bind:myranks="myranks"></v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
                         <div class="row justify-content-center my-2">
@@ -135,14 +134,6 @@
                     <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
                         <div class="row justify-content-center">
                             <h2>Arquetipos</h2>
-                        </div>
-                        <div class="row my-1 justify-content-around align-center">
-                            <b> Raza: </b>
-                            <v-select-search v-bind:optionsobj="ranks"
-                                v-on:selected-key="setRank($event)"></v-select-search>
-                        </div>
-                        <div class="row justify-content-center">
-                            <button class="btn btn-secondary rounded-border px-3 py-1" @click="addRank">+</button>
                         </div>
                     </div>
                 </div>

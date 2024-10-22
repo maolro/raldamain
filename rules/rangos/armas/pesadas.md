@@ -34,7 +34,7 @@ Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual a
 
 Te lanzas de lleno al ataque, golpeando con mayor velocidad a costa de quedar en una mala posición defensiva. Al principio de tu turno puedes obtener una acción adicional esta ronda a costa que no podrás entrar en *posición defensiva*. Esta habilidad también anulará los beneficios de cualquier atributo que te permita entrar en *posición defensiva* como acción adicional u obtener sus beneficios de forma pasiva.
 
-### Golpe desestabilizador
+### Golpe Desestabilizador
 
 *Pesado, Mejora, Maniobra, Físico*
 

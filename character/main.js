@@ -45,7 +45,7 @@ new Vue({
                     this[obj] = data;   // Assign the parsed data to the 'talents' property
                 })
                 .catch(error => {
-                    console.error("Error fetching the talents JSON: ", error);
+                    console.error("Error fetching the JSON: ", error);
                 });
         },
         getMod: function (talid) {
@@ -64,19 +64,6 @@ new Vue({
                 }
             }
             return res;
-        },
-        setRank: function (key, level, index) {
-            this.$set(this.myranks, index, { ...this.ranks[key] });
-            this.myranks[index].rank = level;
-        },
-        addRank: function () {
-            this.myranks.push({ rank: 0 });
-        },
-        removeRank: function () {
-            this.myranks.pop();
-        },
-        handleRankLevelUpdate({ key, level, index }) {
-            this.setRank(key, level, index);
         },
         romanNum: function (num) {
             switch (num) {
@@ -151,11 +138,12 @@ new Vue({
             return `
 # ${this.charactername} (Nivel ${this.level})\n
 ****\n
-**PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:**\t**Vigor:**\t**Chi:**\n
+**PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Vigor:** ${this.reserves.stamina}\t**Chi:** ${this.reserves.chi}\n
 **FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
 **Talentos:** ${this.talstring}
 **Rangos:** ${this.rkString}
+**Acciones:** ${this.actions}
 ****\n
 ${toMd(this.atbCatString("passive"))}
 ****\n
@@ -185,7 +173,10 @@ ${toMd(this.atbCatString("reactions"))}
             document.body.removeChild(link);
         },
         addItem(slot, cat, id) {
-            this.equipment[slot] = this.eqList[cat][id];
+            if(id in this.eqList[cat])
+                this.equipment[slot] = this.eqList[cat][id];
+            else
+                this.equipment[slot] = {};
         },
         eqOptions(slot) {
             res = [];

@@ -46,5 +46,10 @@ Vue.component('v-talpage', {
                 this.level = newVal;
             }
         },
+        talents: {
+            handler: function (newVal) {
+                this.talents = newVal;
+            }
+        },
     }
 });

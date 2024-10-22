@@ -1,0 +1,27 @@
+{
+    "anti-energy":{
+        "name": "Antienergía",
+        "elements": ["frio", "necrotico"],
+        "magics": ["magia-de-hielo", "magia-de-sangre"]
+    },
+    "electromagnetism":{
+        "name": "Electromagnetismo",
+        "elements": ["electrico", "metal"],
+        "magics": ["magia-de-tormenta", "magia-de-metal"]
+    },
+    "energy":{
+        "name": "Energía",
+        "elements": ["fuego", "electrico", "radiante"],
+        "magics": ["magia-de-fuego", "magia-de-tormenta"]
+    },
+    "flow":{
+        "name": "Flujo",
+        "elements": ["aire", "agua"],
+        "magics": ["magia-de-aire", "magia-de-agua"]
+    },
+    "matter":{
+        "name": "Materia",
+        "elements": ["naturaleza", "tierra"],
+        "magics": ["magia-de-naturaleza", "magia-de-tierra"]
+    }
+}
