@@ -31,6 +31,8 @@ new Vue({
         },
         eqAtb: {},
         myspells: {},
+        divinepatrons: {},
+        arcanespecs: {}
     },
     methods: {
         getData: function (obj, source) {
@@ -360,6 +362,8 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("attributes", './data/attributes.json');
         this.getData("eqList", './data/equipment.json');
         this.getData("eqAtb", './data/equipment-abilities.json');
+        this.getData("divinepatrons", './data/divine-patrons.json');
+        this.getData("arcanespecs", './data/arcane-specs.json');
     },
     mounted() {
 

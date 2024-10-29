@@ -81,7 +81,7 @@
                             <div class="col-6">
                                 <b class="justify-content-center mr-2">Nivel: </b>
                                 <input class="justify-content-center mr-2" id="numberBox" type="number" v-model="level"
-                                    min="1" max="20">
+                                    min=1 max=20>
                             </div>
                         </div>
                         <div class="row my-2 justify-content-center">
@@ -104,7 +104,9 @@
                         <v-rankpage v-bind:ranks="ranks" :rkPoints="rkpoints" :rankLimit="ranklimit"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
-                        <v-spellpage v-bind:myranks="myranks" :attributes="attributes"></v-spellpage>
+                        <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
+                        :arcspecs="arcanespecs" v-on:new-spell="myspells = $event">
+                        </v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
                         <div class="row justify-content-center my-2">
