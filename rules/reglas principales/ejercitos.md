@@ -60,7 +60,7 @@ Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los
 ## Caballería ligera
 
 - **Coste base:** 6
-- **Tiro base:** 1d6 Combate
+- **Tiro base:** 1d6 Combate, 1d6 A Distancia (alcance 2)
 - **Cohesión:** 2
 - **Movimiento:** 5
 - **Habilidades especiales:** Caballería
