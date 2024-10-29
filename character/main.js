@@ -30,6 +30,7 @@ new Vue({
             mainHand: {}
         },
         eqAtb: {},
+        myspells: {},
     },
     methods: {
         getData: function (obj, source) {
@@ -277,6 +278,13 @@ ${toMd(this.atbCatString("reactions"))}
                         abSwitch(this.eqAtb[eid]);
                     }
                 }
+            }
+            for (let key in this.myspells) {
+                atb = this.myspells[key];
+                if(key in this.myranks && "rank" in atb){
+                    atb.rank = this.myranks[key].rank;
+                }
+                abSwitch(atb);
             }
             for (let key in this.myranks) {
                 if (this.myranks[key].rank != 0) {

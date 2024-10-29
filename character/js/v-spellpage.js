@@ -1,33 +1,30 @@
 Vue.component('v-spellpage', {
     template: `
-<div class="spell-page">
+<div class="spell-page" style="max-height: 400px; overflow-y: auto; overflow-x: hidden;">
     <div class="row my-2 justify-content-center">
         <h2>Hechizos</h2>
     </div>
     <!-- Divine Patron Selection -->
     <div v-if="showDivinePatron" class="row my-2 justify-content-around"">
         <b> Patrón Divino: </b>
-        <v-select-search v-bind:optionsobj="divinePatrons" v-on:selected-key="setDivinePatron($event)"></v-select-search>
+        <v-select-search v-bind:optionsobj="formatSearch(divinePatrons)" 
+        v-on:selected-key="setDivinePatron($event)"></v-select-search>
     </div>
 
     <!-- Arcane Specialization Selection -->
     <div v-if="showArcaneSpecialization" class="form-group">
         <b> Especialización Arcana: </b>
-        <v-select-search v-bind:optionsobj="arcaneSpecializations" v-on:selected-key="setArcaneSpecialization($event)"></v-select-search>
+        <v-select-search v-bind:optionsobj="formatSearch(arcaneSpecializations)" 
+        v-on:selected-key="setArcaneSpecialization($event)"></v-select-search>
     </div>
 
     <!-- Dynamic Spell Level Sections -->
-    <div v-for="(levelSection, index) in spellSections" :key="index" class="spell-section">
-      <h3>{{ getSectionTitle(levelSection) }
-      }</h3>
-
-      <!-- Button to Add Spell Selector -->
-      <button @click="addSpellSelector(index)" class="btn btn-primary mb-2">[+] Añadir Hechizo</button>
-
-      <!-- Render Spell Selectors -->
-      <div v-for="(spell, spellIndex) in levelSection.spells" :key="spellIndex" class="spell-selector mb-2">
-        <v-spell-selector :available-spells="filteredSpells(levelSection.cat)" v-model="spell.selectedSpell"></v-spell-selector>
-      </div>
+    <div v-for="(value, key, rowIndex) in spellSections" v-if="value.slots > 0" class="mb-4">
+        <h3>{{ key }} ({{ value.slots }} ranuras)</h3>
+        <div v-for="(n, colIndex) in value.options" :key="key" class="mb-2">
+            <v-select-search v-bind:optionsobj="value.atb[colIndex]" 
+            v-on:selected-key="addSpell($event, rowIndex, colIndex, n)"></v-select-search>
+        </div> 
     </div>
   </div>
     `,
@@ -36,104 +33,128 @@ Vue.component('v-spellpage', {
             type: Array,
             required: true
         },
-        spellLevels: {
-            type: Object,
-        },
-        spells: {
-            type: Array,
-        } // List of all available spells
+        attributes: {
+            type: Object
+        }
     },
     data: function () {
         return {
-            selectedDivinePatron: {},
+            selectedDivinePatron:{id: "shade", name: "Shade", type: "abyssal",
+                domains: ["magia-sombria", "nigromancia", 
+                "magia-ilusoria", "magia-mental", "magia-de-acido"]
+            },
             selectedArcaneSpecialization: {},
             divinePatrons: {},
             arcaneSpecializations: {},
-            spellSections: [], // This will store sections based on spell levels
-            typefilter: ''
+            divineRanks: ["magia-divina", "guerrero-divino", "ascendencia-abisal", 
+                "ascendencia-primigenia", "ascendencia-infernal"],
         };
     },
     computed: {
+        myspells: function() {
+            return this.$root.myspells;
+        },
         showDivinePatron: function(){
-            rankMatch = ["magia-divina", "guerrero-divino", "ascendencia-abisal", "ascendencia-primigenia", "ascendencia-infernal"];
-            return this.myranks.some(obj => rankMatch.includes(obj.id));
+            return this.myranks.some(obj => this.divineRanks.includes(obj.id));
         },
         showArcaneSpecialization: function(){
             return this.myranks.some(obj => obj.id === "magia-de-evocacion");
         },
-        getSpellLevels: function(){
-            "[{name: string, isDivine: boolean, isArcane: boolean, spells: [{rank: 1, slots: 2}, {rank: 1, slots: 2}]}]"
-        }
+        spellSections: function(){
+            spellsect = {
+                "Rango I": {slots: 0, options: [], atb: [{}]},
+                "Rango II": {slots: 2, options: ["magia-gravitatoria", "magia-divina"],
+                    atb: [this.getSpellOptions("magia-gravitatoria", 2, this.attributes),
+                        this.getSpellOptions("magia-divina", 2, this.attributes)]},
+                "Rango III": {slots: 0, options: [], atb: [{}]},
+                "Rango IV": {slots: 0, options: [], atb: [{}]},
+                "Rango V": {slots: 0, options: [], atb: [{}]}
+            }
+            this.myranks.forEach(rank => {
+                if (rank.spells) {
+                    rank.spells.forEach(spell => {
+                    if (spell.rank < rank.rank) {
+                        switch(spell.rank){
+                            case 1: key = "Rango I";
+                                break;
+                            case 2: key = "Rango II";
+                                break;
+                            case 3: key = "Rango III";
+                                break;
+                            case 4: key = "Rango IV";
+                                break;
+                            case 5: key = "Rango V";
+                                break;
+                        }
+                        spellsect[key].slots += 1;
+                        options[key].push(spell.cat);
+                        atb.push(this.getSpellOptions(spell.cat, spell.rank));
+                    }
+                  });
+                }
+            });
+            return spellsect;
+        },
     },
     mounted() {
-        /*this.options = Object.keys(this.optionsobj).map(key => ({
-            key: key,
-            name: this.optionsobj[key].name
-        }));
-        this.filteredOptions = this.options;*/
-        this.getData("divinePatrons", '../data/divine-patrons.json');
-        this.getData("arcaneSpecializations", '../data/arcane-specs.json');
+        this.$root.getData("divinePatrons", '../data/divine-patrons.json');
+        this.$root.getData("arcaneSpecializations", '../data/arcane-specs.json');
+        console.log("added all json files");
     },
     methods: {
+        formatSearch: function(obj){
+            res = [];
+            for(let i in Object.keys(obj)){
+                res.push({id: i, name: obj[i].name});
+            }
+            return res;
+        },
         setDivinePatron(obj){
             this.selectedDivinePatron = {id: obj.key, ...this.divinePatrons[obj.key]};
         },
         setArcaneSpec(obj){
             this.selectedArcaneSpecialization = {id: obj.key, ...this.arcaneSpecializations[obj.key]};
         },
-        /* Generate spell sections based on the spellLevels and rank data
-        generateSpellSections() {
-            this.spellSections = [];
-            this.spellLevels.forEach(level => {
-                const matchingRank = this.myranks.find(r => r.rank >= level.rank && r.id.includes(level.cat));
-                if (matchingRank) {
-                    this.spellSections.push({
-                        level: level.level,
-                        slots: level.slots,
-                        usedSlots: 0,
-                        cat: level.cat,
-                        spells: [] // Holds the selected spells for this section
-                    });
-                }
-            });
-        },
-        // Add a new spell selector for a specific section
-        addSpellSelector(index) {
-            if (this.spellSections[index].spells.length < this.spellSections[index].slots) {
-                this.spellSections[index].spells.push({ selectedSpell: null });
-                this.spellSections[index].usedSlots += 1;
+        getSpellOptions(cat, level, atbList){
+            console.log(level);
+            res = {};
+            avRanks = [];
+            if(this.divineRanks.includes(cat) && "domains" in this.selectedDivinePatron){
+                avRanks = this.selectedDivinePatron.domains;
             }
+            else if(cat == "magia-de-evocacion" && "magics" in this.selectedArcaneSpecialization){
+                avRanks = this.selectedArcaneSpecialization.id.magics;
+            }
+            else{
+                avRanks.push(cat);
+            }
+            for(let i of Object.keys(atbList)){
+                atb = atbList[i];
+                if (avRanks.includes(atb.skill) && atb.rank == level) {
+                    res[i] = atb;
+                }
+            }
+            return res;
         },
-        // Return the title for each section including used/available slots
-        getSectionTitle(section) {
-            return `Nivel ${section.level} (${section.usedSlots}/${section.slots})`;
-        },
-        // Filter spells based on the category for the spell selector dropdown
-        filteredSpells(cat) {
-            return this.spells.filter(spell => spell.cat === cat);
-        },*/
-        getData: function (obj, source) {
-            fetch(source)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    return response.json(); 
-                })
-                .then(data => {
-                    this[obj] = data;   
-                })
-                .catch(error => {
-                    console.error("Error fetching the JSON: ", error);
-                });
+        addSpell(spell, x, y, cat){
+            key = "spell"+x+y;
+            atb = this.attributes[spell];
+            atb.skill = cat;
+            this.$set(this.myspells, key, atb);
         },
     },
     watch: {
         myranks: {
             handler: function (newVal) {
                 this.myranks = newVal;
+                this.myspells = {};
             }
         },
+        attributes: {
+            handler: function (newVal) {
+                this.attributes = newVal;
+            }
+        }
     },
     style:
         `.dropdown-menu {
