@@ -136,7 +136,10 @@ new Vue({
                     arr = [obj.cost, obj.uses, obj.tags];
                     formattedString += ` (${arr.filter(Boolean).join("; ")})`;
                 }
-                formattedString += ": " + this.replaceTag(obj.description, obj.skill);
+                if(obj.skill)
+                    formattedString += ": " + this.replaceTag(obj.description, obj.skill);
+                else
+                    formattedString += ": " + obj.description;
                 return formattedString;
             }).join("<br></br>");
         },
@@ -214,7 +217,7 @@ ${toMd(this.atbCatString("reactions"))}
         },
         setRace(id){
             if(id in this.races){
-                race = races[id];
+                this.race = this.races[id];
             }
         }
     },
@@ -292,13 +295,17 @@ ${toMd(this.atbCatString("reactions"))}
                     }
                 }
             }
-            //Add spells and racial abilities
-            const otherAtb = this.myspells;
-            if("abilities" in race){
-                otherAtb = otherAtb.concat(this.race.abilities);
+            //Add racial abilities
+            if("abilities" in this.race){
+                for (let i in this.race.abilities) {
+                    atb = this.race.abilities[i];
+                    if("type" in atb)
+                        abSwitch(atb);
+                }
             }
-            for (let i in otherAtb) {
-                atb = otherAtb[i];
+            //Add spells
+            for (let i in this.myspells) {
+                atb = this.myspells[i];
                 if("type" in atb)
                     abSwitch(atb);
             }
@@ -346,10 +353,13 @@ ${toMd(this.atbCatString("reactions"))}
             };
             if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
                 statsRes.dex.value += this.equipment.armor.penalty;
-            fullArr = this.myranks.concat(this.myarch);
-            if("stats" in this.race){
-
+            if(this.race.stats){
+                for (let j in this.race.stats) {
+                    bst = this.race.stats[j];
+                    statsRes[bst.stat].value += bst.boost;
+                }
             }
+            fullArr = this.myranks.concat(this.myarch);
             for (let i in fullArr) {
                 rk = fullArr[i];
                 for (let j in rk.stats) {
@@ -382,6 +392,7 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("eqAtb", './data/equipment-abilities.json');
         this.getData("divinepatrons", './data/divine-patrons.json');
         this.getData("arcanespecs", './data/arcane-specs.json');
+        this.getData("races", './data/races.json');
     },
     mounted() {
 
