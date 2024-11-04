@@ -32,6 +32,9 @@
             }
         ]
     },
+    "humano":{
+        "name": "Humano"
+    },
     "leonin":{
         "name": "Leonino",
         "stats": [
