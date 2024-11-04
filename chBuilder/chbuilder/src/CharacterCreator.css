@@ -1,0 +1,48 @@
+/* Global box containre*/
+.container{
+    background-color: #282c34;
+    color: white;
+    font-family: Sans-Serif;
+  }
+
+/* Style the tab */
+.tab {
+  margin-top: 50px;
+  float: left;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: #282c34;
+  padding: 22px 16px;
+  width: 100%;
+  color: #ccc;
+  border: 1px solid #ffffff;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #ffffff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  color: #ffffff;
+  border-right: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+}
