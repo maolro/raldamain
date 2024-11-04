@@ -79,12 +79,12 @@
                                 <input type="text" v-model="charactername" placeholder="Nombre" style="width: 100%;">
                             </div>
                             <div class="col-6">
-                                <b class="justify-content-center mr-2">Nivel: </b>
+                                <b class="justify-content-around mr-2">Nivel: </b>
                                 <v-minusplusfield v-bind:value="level" :min="1" :max="20"
                                     v-on:input="level = $event"></v-minusplusfield>
                             </div>
                         </div>
-                        <div class="row my-2 justify-content-center">
+                        <div class="row my-2 mx-2 justify-content-around">
                             <b class="mr-1">Raza:</b>
                             <v-select-search v-bind:optionsobj="races" 
                             v-on:selected-key="setRace($event)"></v-select-search>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
                         <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
-                        :arcspecs="arcanespecs" @update-myspells="updateMySpells"> 
+                        :arcspecs="arcanespecs":race="race" :level="level" @update-myspells="updateMySpells"> 
                         </v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">

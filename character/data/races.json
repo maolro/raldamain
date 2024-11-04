@@ -3,11 +3,17 @@
         "name": "Aven",
         "stats": [
             {"stat": "dex", "boost": 1},
-            {"stat": "int", "boost": 1},
+            {"stat": "itl", "boost": 1},
             {"stat": "con", "boost": -1},
             {"stat": "str", "boost": -1}
         ],
-        "abilities": "alas-de-ave"
+        "abilities": [
+            {
+                "name": "Alas de Ave",
+                "type": "Pasiva",
+                "description": "Recibe Velocidad de Vuelo 1 y Ventaja en todos sus tiros de Esquiva"
+            }
+        ]
     },
     "kitsune":{
         "name": "Kitsune",
@@ -17,6 +23,24 @@
             {"stat": "con", "boost": -1},
             {"stat": "str", "boost": -1}
         ],
-        "abilities": "cambiaformas"
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 4, "spell-lvl": 1, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 6, "spell-lvl": 2, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 8, "spell-lvl": 2, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 10, "spell-lvl": 3, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 12, "spell-lvl": 3, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 14, "spell-lvl": 4, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 16, "spell-lvl": 4, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 18, "spell-lvl": 5, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"}
+        ],
+        "abilities": [
+            {
+                "name": "Cambiaformas",
+                "type": "Accion",
+                "cost": "1 Acción",
+                "description": "Se transforma para adoptar la forma de otro ser humanoide de su elección o de un zorro. Mantendrá todo su equipamiento y habilidades sin importar su forma pero en forma de zorro no podrá emplear armas ni armaduras. Puede permanecer en otra forma durante un máximo de ocho horas."
+            }
+        ]
     }
 }

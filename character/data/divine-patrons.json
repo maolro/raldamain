@@ -19,6 +19,11 @@
         "type": "celestial",
         "domains": ["magia-de-vida", "magia-protectora", "magia-de-metal", "magia-de-fuego"]
     },
+    "kajokobi":{
+        "name": "Kajokobi",
+        "type": "spirit",
+        "domains": ["magia-ilusoria", "magia-mental", "magia-espacial"]
+    },
     "meisodh":{
         "name": "Meisodh",
         "type": "other",

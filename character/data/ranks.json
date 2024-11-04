@@ -434,6 +434,13 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "spells": [
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "magia-de-evocacion"},
+      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "magia-de-evocacion"},
+      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "magia-de-evocacion"},
+      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "magia-de-evocacion"},
+      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "magia-de-evocacion"}
+    ],
     "attributes": "aniquilacion-magica,cañon-de-chi,combinar-hechizos,descarga-de-energia,especialidad-arcana,infundir-arma,irradiacion-de-chi,maestro-elemental,meteoros-de-chi,muro-de-energia,muro-de-energia-defensivo,rayo-arcano,rayo-desintegrador"
   },
   "magia-de-fuego": {
