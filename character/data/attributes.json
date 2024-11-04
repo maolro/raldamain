@@ -826,9 +826,7 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Tira Averiguar Intenciones o Concentración o reduce su cordura por RANGO+1 y pierde la concentración"
+      "description": "Distancia media, Un objetivo tira Averiguar Intenciones o Concentración contra +MOD o reduce su cordura por RANGO+1 y pierde la concentración. (1 chi) Afecta a un objetivo adicional a distancia media con este hechizo"
     },
     "ascension-del-dragon": {
       "rank": 5,
