@@ -356,7 +356,6 @@
     "rank": 0,
     "freeranks": 0,
     "max": 5,
-    "def": "RANGO+1",
     "attributes": "aguantar-los-elementos,armadura-natural,constitucion-ferrea,duro-de-pelar,hasta-la-muerte,muro-viviente,resiliencia,sanacion-rapida,segundo-aliento,una-ultima-resistencia"
   },
   "guerrero-divino": {

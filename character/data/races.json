@@ -15,6 +15,38 @@
             }
         ]
     },
+    "chothgar":{
+        "name": "Chothgar",
+        "stats": [
+            {"stat": "str", "boost": 1},
+            {"stat": "con", "boost": 1},
+            {"stat": "wis", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Resistencia de Chothgar",
+                "type": "Pasiva",
+                "hp": 2,
+                "def": 2,
+                "description": "Aumenta sus PV máximos y su DEF base por 2 (ambos ya incluidos)."
+            }
+        ]
+    },
+    "leonin":{
+        "name": "Leonino",
+        "stats": [
+            {"stat": "str", "boost": 1},
+            {"stat": "dex", "boost": 1},
+            {"stat": "itl", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Fuerza de León",
+                "type": "Pasiva",
+                "description": "Recibe Velocidad de Escalada 1. El daño de sus ataques naturales aumetna por un paso y puede provocar daño Cortante y Perforante con ellos."
+            }
+        ]
+    },
     "kitsune":{
         "name": "Kitsune",
         "stats": [

@@ -203,11 +203,11 @@ ${toMd(this.atbCatString("reactions"))}
             res = 0;
             for(let i in arr){
                 val = arr[i];
-                if(key in val && 'skill' in val){
+                if(key in val){
                     kr = val[key];
                     if(typeof kr === 'number')
                         res += kr;
-                    else if(typeof kr === 'string' && kr)
+                    else if(typeof kr === 'string' && val.skill)
                         res += Number.parseInt(this.replaceTag(kr, val.skill));
                     else
                         break;
