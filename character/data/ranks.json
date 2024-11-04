@@ -57,9 +57,9 @@
       {"stat": "dex", "rank": 6, "boost": 1}
     ],
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron"},
-      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "divine-patron"},
-      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "divine-patron"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "ascendencia-abisal"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "ascendencia-abisal"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "ascendencia-abisal"}
     ],
     "attributes": "abrazar-la-locura,aura-del-caos,corrupcion-absoluta,furia-abisal,invocacion-abisal,mutacion,paso-abisal,paso-abisal-defensivo,poder-antinatural,rasgo-monstruoso-superior,tocado-por-la-locura,transformacion-abisal"
   },
@@ -222,21 +222,14 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {
-        "stat": "wis",
-        "rank": 2,
-        "boost": 1
-      },
-      {
-        "stat": "str",
-        "rank": 4,
-        "boost": 1
-      },
-      {
-        "stat": "con",
-        "rank": 6,
-        "boost": 1
-      }
+      {"stat": "wis", "rank": 2, "boost": 1},
+      {"stat": "str", "rank": 4, "boost": 1},
+      {"stat": "con", "rank": 6, "boost": 1}
+    ],
+    "spells": [
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "ascendencia-primigenia"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "ascendencia-primigenia"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "ascendencia-primigenia"}
     ],
     "attributes": "aspecto-primigenio,aura-primigenia,comunion-con-la-naturaleza,despertar-la-bestia,forma-de-la-bestia,fuerza-salvaje,llamar-a-los-espiritus,portal-espiritual,sanacion-espiritual,transformacion-animal,vinculo-primigenio"
   },
@@ -541,11 +534,11 @@
     "freeranks": 0,
     "max": 6,
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron"},
-      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "divine-patron"},
-      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "divine-patron"},
-      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "divine-patron"},
-      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "divine-patron"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "magia-divina"},
+      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "magia-divina"},
+      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "magia-divina"},
+      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "magia-divina"},
+      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "magia-divina"}
     ],
     "attributes": "adivinacion,castigo-divino,consagrar-la-tierra,enviado-de-los-dioses,exaltado,ira-de-dios,llamar-a-los-dioses,manifestacion-divina,milagro-menor,oracion,palabra-divina,proteccion-divina"
   },

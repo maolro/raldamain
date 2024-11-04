@@ -11,7 +11,7 @@ La criatura cuenta con garras, colmillos o cuernos con los que puede atacar a su
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 2 junto a sus limitadores. Aumenta también su DEF por 2, su Vitalidad por 3 y sus PV por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Estilo Salvaje e Ira por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Recibe Velocidad Superior, Frenesí de Batalla, Aspecto Primigenio y Agilidad Animal como habilidades pasivas. 
-- **Furia constante:** Cuenta como si estuviera siempre en Ira para determinar si tiene activas algunas habilidades de esa rama. Esto no le otorgará ninguna de las desventajas de Ira.
+- **Furia constante:** Cuenta como si estuviera siempre en Ira para determinar si tiene activas algunas habilidades de esa rama. Esto no le otorgará ninguna de las ventajas ni desventajas de Ira.
 - **Parada Salvaje:** Puede usar su tiro de Estilo Salvaje para defenderse de ataques cuerpo a cuerpo.
 
 ## Bestia II (+2, 3 mejoras)
