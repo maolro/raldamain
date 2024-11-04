@@ -118,7 +118,7 @@ Vue.component('v-spellpage', {
         },
         getSpellOptions(cat, level, atbList, divpatron, arcanespec) {
             console.log(level);
-            res = {};
+            options = {};
             avRanks = [];
             if (this.divineRanks.includes(cat) && "domains" in divpatron) {
                 console.log("adding divine available ranks");
@@ -129,21 +129,22 @@ Vue.component('v-spellpage', {
                 avRanks = arcanespec.magics;
             }
             else {
-                avRanks.push(cat);
+                avRanks = cat;
             }
             for (let i of Object.keys(atbList)) {
                 atb = atbList[i];
                 if (avRanks.includes(atb.skill) && atb.rank == level) {
-                    res[i] = atb;
+                    this.$set(options, i, atb);
                 }
             }
-            return res;
+            return options;
         },
         addSpell(spell, x, y, cat) {
             const key = `spell${x}${y}`;
-            const atb = this.attributes[spell];
+            atb = {...this.attributes[spell]};
             atb.skill = cat;
             this.$set(this.myspells, key, atb);
+            console.log("added spell" + spell)
             this.$emit('update-myspells', this.myspells);
         },
     },
