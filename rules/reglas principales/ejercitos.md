@@ -28,11 +28,10 @@ Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los
 
 ## Infantería a Distancia
 
-- **Coste base:** 7
+- **Coste base:** 6
 - **Tiro base:** 1d6 Combate, 2d6 A Distancia (alcance 4)
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Habilidades especiales:** Penetrante
 
 ## Infantería media
 
@@ -110,6 +109,14 @@ Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los
 
 Puede hacer ataques A Distancia con alcance 2 y dados iguales a sus dados de combate - 1. Al igual que una unidad a distancia reducirá 1 cohesión con cada impacto e ignora armaduras.
 
+## Anfibio (+1)
+
+Puede luchar igual de bien en tierra que en agua e ignora penalizaciones por combatir en el agua. 
+
+## Arcabucero (+1)
+
+Sus ataques a distancia ignoran la armadura del objetivo pero no pueden apoyar a aliados que estén en la línea de fuego. 
+
 ## Arma pesada (+1)
 
 Aumenta su tiro de combate por 1d6 al luchar contra infantería ligera, lanzas o a distancia.
@@ -134,6 +141,10 @@ Puede ocultarse una vez por ronda si el terreno lo permite y recibe +1d6 en sus 
 
 Aumenta su tiro de combate por 1d6 al hacer una carga. Este modificador no se aplica a enemigos con Lanzas.
 
+## Cazador (+1)
+
+Tiene un dado de combate adicional si lucha contra un tipo específico de criaturas monstruosas o extraplanarias. 
+
 ## Élite (+2)
 
 Aumenta su tiro base de combate y a distancia (si lo tiene) por 1d6
@@ -154,13 +165,13 @@ Mover a esta unidad no cuesta acciones y es Inmune a efectos de Moral. No obstan
 
 Recibe un ataque A Distancia especial con alcance 1 que reduce cohesión como si fuera un ataque cuerpo a cuerpo. Si no tiene ataques a distancia tirará la misma cantidad de dados que su tiro de combate - 1.
 
-## Jinete de bestia (+1)
-
-Obtiene una habilidad especial según el monstruo que monte. Algunas posibilidades son la capacidad de volar, excavar, escalar empleando su movimiento. 
-
 ## Lanzas (+1)
 
 Aumenta su tiro de combate por 1d6 al luchar contra caballería, infantería ligera o a distancia.
+
+## Movimiento Especial (+1)
+
+Obtiene una habilidad de movimiento especial. Algunas posibilidades son la capacidad de volar, excavar, escalar empleando su movimiento. 
 
 ## Mediocre (-2)
 

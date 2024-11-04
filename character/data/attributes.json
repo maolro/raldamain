@@ -1267,7 +1267,7 @@
       "cost": "1 Acción (Ranura I)",
       "reach": "Medio",
       "duration": "Instantáneo",
-      "description": "Radio corto, cegados una ronda y disipa todos los efectos de oscuridad"
+      "description": "+MOD para atacar, Distancia media, Radio corto, cegados una ronda y disipa todos los efectos de oscuridad"
     },
     "bomba-de-chi": {
       "rank": 3,
@@ -1275,9 +1275,7 @@
       "skill": "bombas",
       "type": "Accion",
       "cost": "1 Acción (Ranura III)",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Activa un hechizo Arcano o Elemental con duración Instantánea al explotar siempre y cuando tenga sentido (elección del DJ)"
+      "description": "+MOD para atacar, Distancia media, Activa un hechizo Arcano o Elemental con duración Instantánea al explotar siempre y cuando tenga sentido (elección del DJ)"
     },
     "bomba-de-fuego": {
       "rank": 1,
@@ -1285,9 +1283,7 @@
       "skill": "bombas",
       "type": "Accion",
       "cost": "1 Acción (Ranura I)",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Radio corto, inflige 1DD+STAT daño Fuego y destruye barreras y estructuras frágiles"
+      "description": "+MOD para atacar, Distancia media, Inflige 1DD+STAT daño Fuego en un radio corto y destruye barreras y estructuras frágiles"
     },
     "bomba-de-gas-venenoso": {
       "rank": 3,
@@ -1314,9 +1310,7 @@
       "skill": "bombas",
       "type": "Accion",
       "cost": "1 Acción (Ranura I)",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Radio corto, llena el espacio de humo que ciega y otorga ocultamiento. Se disipa al final de tu siguiente turno"
+      "description": "Distancia media, llena un radio medio con humo que ciega y otorga ocultamiento. Se disipa al final de tu siguiente turno"
     },
     "bomba-pegadiza": {
       "rank": 2,

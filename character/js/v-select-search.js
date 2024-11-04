@@ -49,6 +49,7 @@ Vue.component('v-select-search', {
     }));
     // Set initial filtered options to the full list
     this.filteredOptions = this.options;
+    this.$parent.$on("reset-selects", this.resetSelect);
   },
   methods: {
     filterOptions() {
@@ -68,6 +69,9 @@ Vue.component('v-select-search', {
       setTimeout(() => {
         this.dropdownVisible = false;
       }, 200);
+    },
+    resetSelect() {
+      this.selectedOption = '';
     },
   },
   watch: {

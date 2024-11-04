@@ -80,9 +80,14 @@
                             </div>
                             <div class="col-6">
                                 <b class="justify-content-center mr-2">Nivel: </b>
-                                <input class="justify-content-center mr-2" id="numberBox" type="number" v-model="level"
-                                    min=1 max=20>
+                                <v-minusplusfield v-bind:value="level" :min="1" :max="20"
+                                    v-on:input="level = $event"></v-minusplusfield>
                             </div>
+                        </div>
+                        <div class="row my-2 justify-content-center">
+                            <b class="mr-1">Raza:</b>
+                            <v-select-search v-bind:optionsobj="races" 
+                            v-on:selected-key="setRace($event)"></v-select-search>
                         </div>
                         <div class="row my-2 justify-content-center">
                             <b class="mr-1">Puntos a distribuir:</b>{{ statpoints }}
@@ -105,7 +110,7 @@
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
                         <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
-                        :arcspecs="arcanespecs" v-on:new-spell="myspells = $event">
+                        :arcspecs="arcanespecs" @update-myspells="updateMySpells"> 
                         </v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">

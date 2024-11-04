@@ -30,11 +30,16 @@ new Vue({
             mainHand: {}
         },
         eqAtb: {},
-        myspells: {},
+        myspells: [],
         divinepatrons: {},
-        arcanespecs: {}
+        arcanespecs: {},
+        races: {},
+        race: {},
     },
     methods: {
+        updateMySpells(updatedMySpells) {
+            this.myspells = updatedMySpells;
+        },
         getData: function (obj, source) {
             // Fetch the JSON file from the public directory
             fetch(source)
@@ -206,6 +211,11 @@ ${toMd(this.atbCatString("reactions"))}
                 }
             }
             return res;
+        },
+        setRace(id){
+            if(id in this.races){
+                race = races[id];
+            }
         }
     },
     computed: {
@@ -269,6 +279,7 @@ ${toMd(this.atbCatString("reactions"))}
                         break;
                 }
             };
+            //Add equipment abilities
             for (let key in this.equipment) {
                 slot = this.equipment[key];
                 atlist = [];
@@ -281,13 +292,17 @@ ${toMd(this.atbCatString("reactions"))}
                     }
                 }
             }
-            for (let key in this.myspells) {
-                atb = this.myspells[key];
-                if(key in this.myranks && "rank" in atb){
-                    atb.rank = this.myranks[key].rank;
-                }
-                abSwitch(atb);
+            //Add spells and racial abilities
+            const otherAtb = this.myspells;
+            if("abilities" in race){
+                otherAtb = otherAtb.concat(this.race.abilities);
             }
+            for (let i in otherAtb) {
+                atb = otherAtb[i];
+                if("type" in atb)
+                    abSwitch(atb);
+            }
+            //Add rank abilities
             for (let key in this.myranks) {
                 if (this.myranks[key].rank != 0) {
                     atlist = (this.myranks[key].attributes).split(",");
@@ -332,6 +347,9 @@ ${toMd(this.atbCatString("reactions"))}
             if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
                 statsRes.dex.value += this.equipment.armor.penalty;
             fullArr = this.myranks.concat(this.myarch);
+            if("stats" in this.race){
+
+            }
             for (let i in fullArr) {
                 rk = fullArr[i];
                 for (let j in rk.stats) {
