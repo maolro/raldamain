@@ -17,6 +17,8 @@
     <script src="js/v-rankpage.js" type="text/javascript"></script>
     <script src="js/v-talpage.js" type="text/javascript"></script>
     <script src="js/v-spellpage.js" type="text/javascript"></script>
+    <script src="js/v-statpage.js" type="text/javascript"></script>
+    <script src="js/v-archpage.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -74,39 +76,15 @@
                 <!-- Tab Content -->
                 <div class="tab-content border border-top-0 p-2" id="mainTabContent">
                     <div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-                        <div class="row md-2">
-                            <div class="col-6">
-                                <input type="text" v-model="charactername" placeholder="Nombre" style="width: 100%;">
-                            </div>
-                            <div class="col-6">
-                                <b class="justify-content-around mr-2">Nivel: </b>
-                                <v-minusplusfield v-bind:value="level" :min="1" :max="20"
-                                    v-on:input="level = $event"></v-minusplusfield>
-                            </div>
-                        </div>
-                        <div class="row my-2 mx-2 justify-content-around">
-                            <b class="mr-1">Raza:</b>
-                            <v-select-search v-bind:optionsobj="races" 
-                            v-on:selected-key="setRace($event)"></v-select-search>
-                        </div>
-                        <div class="row my-2 justify-content-center">
-                            <b class="mr-1">Puntos a distribuir:</b>{{ statpoints }}
-                        </div>
-                        <div v-for="(value, name) in stats" class="row my-2">
-                            <div class="col-6 justify-content-center">
-                                <b>{{ value.name }}</b>
-                            </div>
-                            <div class="col-6 justify-content-center">
-                                <v-minusplusfield v-bind:value="value.value" :min="-1" :max="statlimit"
-                                    :enableval="statpoints" v-on:input="value.value = $event"></v-minusplusfield>
-                            </div>
-                        </div>
+                        <v-statpage v-bind:level="level" :stats="stats" :races="races"
+                        :charactername="charactername" @set-race="race = $event"
+                        @set-level="level = $event" @set-name="charactername = $event"></v-statpage>
                     </div>
                     <div class="tab-pane fade" id="talents" role="tabpanel" aria-labelledby="talents-tab">
-                        <v-talpage v-bind:level="level" :talents="talents"></v-rankpage>
+                        <v-talpage v-bind:level="level" :talents="talents"></v-talpage>
                     </div>
                     <div class="tab-pane fade" id="ranks" role="tabpanel" aria-labelledby="ranks-tab">
-                        <v-rankpage v-bind:ranks="ranks" :rkPoints="rkpoints" :rankLimit="ranklimit"></v-rankpage>
+                        <v-rankpage v-bind:ranks="ranks" :level="level" :rkpoints="rkpoints"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
                         <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
@@ -139,9 +117,8 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
-                        <div class="row justify-content-center">
-                            <h2>Arquetipos</h2>
-                        </div>
+                        <v-archpage v-bind:archetypes="archetypes" :level="level" :rkpoints="rkpoints">
+                        </v-archpage>
                     </div>
                 </div>
             </div>

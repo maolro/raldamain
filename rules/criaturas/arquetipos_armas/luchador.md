@@ -11,7 +11,7 @@ La criatura se ha especializado en combatir con armas pesadas y destructivas, ce
 - **Aumentos Estadísticos:** Incrementa su FUE y CON por 1 además de sus limitadores. Aumenta también sus PV, Vitalidad y Defensa por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en [Armas Pesadas](../../rangos/armas/pesadas.md), [Ira](../../rangos/combate/ira.md) y [Fortitud](../../rangos/combate/fortitud.md) por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Estilo Salvaje:** Recibe una acción adicional a costa que entrar en *posición defensiva* le cuesta otra acción.
-- **Ira de Batalla:** Está siempre afectado por [Ira](../../rangos/combate/ira.md#ira-de-combate), recibiendo así Ventaja en todos sus tiros relacionados con estadísticas físicas pero no podrá mantener la concentración en efectos. 
+- **Ira de Batalla:** Está siempre afectado por [Ira](../../rangos/combate/ira.md#ira-de-combate), recibiendo así Ventaja en todos sus tiros relacionados con estadísticas físicas pero no podrá mantener la concentración en efectos. Incrementa también el daño base de todos sus ataques físicos por 1d6.
 - **Parada con Armas:** Puede usar su tiro de Armas Pesadas para defenderse de ataques cuerpo a cuerpo.
 - **Golpe Desestabilizador:** Al impactar a un enemigo con un ataque de Arma Pesada puede provocarle los efectos de [Golpe Desestabilizador](../../rangos/armas/pesadas.md#golpe-desestabilizador).  
 

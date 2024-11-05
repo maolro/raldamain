@@ -38,7 +38,7 @@ Vue.component('v-select-search', {
       options: [], // Array of objects with key and name: [{ key: "k1", name: "n1" }, ...]
       searchQuery: '', // This will hold the search query from the input field
       filteredOptions: [], // Filtered options based on the search query
-      selectedOption: '', // The value of the selected option
+      selectedOption: {}, // The value of the selected option
       dropdownVisible: false // Controls visibility of the dropdown
     };
   },
@@ -47,6 +47,9 @@ Vue.component('v-select-search', {
       key: key,
       name: this.optionsobj[key].name
     }));
+    if(this.placeholder){
+      this.selectOption({key: this.placeholder.toLowerCase(), name: this.placeholder});
+    }
     // Set initial filtered options to the full list
     this.filteredOptions = this.options;
     this.$parent.$on("reset-selects", this.resetSelect);
