@@ -1,6 +1,7 @@
 Vue.component('v-rankpage', {
     template: `
 <div>
+
     <div class="row my-2 justify-content-center">
         <b class="mr-1">Puntos a distribuir:</b>{{ rkpoints }}
     </div>
@@ -22,14 +23,18 @@ Vue.component('v-rankpage', {
         rkpoints: {
             type: Number
         },
-        ranklimit: {
-            type: Number
+        level: {
+            type: Number,
+            default: 1
         }
     },
     computed: {
         myranks: function() {
             return this.$root.myranks;
-        }
+        },
+        ranklimit() {
+            return Math.floor(1 + (this.level - 1) / 3);
+        },
     },
     methods: {
         setRank: function (key, level, index) {
@@ -52,9 +57,9 @@ Vue.component('v-rankpage', {
                 this.rkpoints = newVal;
             }
         },
-        ranklimit: {
+        level: {
             handler: function (newVal) {
-                this.ranklimit = newVal;
+                this.level = newVal;
             }
         },
         ranks: {

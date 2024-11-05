@@ -67,7 +67,7 @@ new Vue({
                 if (this.finalStats[stv[0]].value < this.finalStats[stv[1]].value) {
                     res = stv[1];
                 }
-                else{
+                else {
                     res = stv[0]
                 }
             }
@@ -131,12 +131,12 @@ new Vue({
             return obArray.map(obj => {
                 let formattedString = `<b>${obj.name}</b>`;
                 if (obj.cost || obj.uses || obj.tags) {
-                    if(obj.uses != null)
-                       obj.uses = this.replaceTag(obj.uses, obj.skill);
+                    if (obj.uses != null)
+                        obj.uses = this.replaceTag(obj.uses, obj.skill);
                     arr = [obj.cost, obj.uses, obj.tags];
                     formattedString += ` (${arr.filter(Boolean).join("; ")})`;
                 }
-                if(obj.skill)
+                if (obj.skill)
                     formattedString += ": " + this.replaceTag(obj.description, obj.skill);
                 else
                     formattedString += ": " + obj.description;
@@ -184,14 +184,14 @@ ${toMd(this.atbCatString("reactions"))}
             document.body.removeChild(link);
         },
         addItem(slot, cat, id) {
-            if(id in this.eqList[cat])
+            if (id in this.eqList[cat])
                 this.equipment[slot] = this.eqList[cat][id];
             else
                 this.equipment[slot] = {};
         },
         eqOptions(slot) {
             res = [];
-            if(slot in this.eqList){
+            if (slot in this.eqList) {
                 res = Object.keys(this.eqList[slot]).map(key => ({
                     key: key,
                     name: this.eqList[slot][key].name
@@ -199,15 +199,15 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return res;
         },
-        sumAllKeys(key, arr){
+        sumAllKeys(key, arr) {
             res = 0;
-            for(let i in arr){
+            for (let i in arr) {
                 val = arr[i];
-                if(key in val){
+                if (key in val) {
                     kr = val[key];
-                    if(typeof kr === 'number')
+                    if (typeof kr === 'number')
                         res += kr;
-                    else if(typeof kr === 'string' && val.skill)
+                    else if (typeof kr === 'string' && val.skill)
                         res += Number.parseInt(this.replaceTag(kr, val.skill));
                     else
                         break;
@@ -215,26 +215,16 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return res;
         },
-        setRace(id){
-            if(id in this.races){
+        setRace(id) {
+            if (id in this.races) {
                 this.race = this.races[id];
             }
         }
     },
     computed: {
-        statpoints: function () {
-            statSum = 0;
-            for (let key in this.stats) {
-                statSum += this.stats[key].value;
-            }
-            return 10 + parseInt(this.level) - statSum;
-        },
-        statlimit: function () {
-            return Math.floor(3 + this.level / 3);
-        },
         hp: function () {
-            return Math.floor(3 + (this.level - 1) / 3 + this.finalStats.con.value 
-            + this.sumAllKeys('hp', this.myatb.passive));
+            return Math.floor(3 + (this.level - 1) / 3 + this.finalStats.con.value
+                + this.sumAllKeys('hp', this.myatb.passive));
         },
         vt: function () {
             return (2 + this.level / 1 + this.finalStats.con.value + this.sumAllKeys('vt', this.myatb.passive));
@@ -245,20 +235,20 @@ ${toMd(this.atbCatString("reactions"))}
         talstring: function () {
             ts = [];
             for (let key in this.talents) {
-                if (this.talents[key].level > 0){
+                if (this.talents[key].level > 0) {
                     ts.push((this.talents[key].name + " + " + this.getMod(key)));
                     console.log(res.toString());
                 }
             }
             return ts.join(", ");
         },
-        ranklimit: function () {
-            return Math.floor(1 + (this.level - 1) / 3);
-        },
         rkpoints: function () {
             rkSum = 0;
             for (let key in this.myranks) {
                 rkSum += this.myranks[key].rank;
+            }
+            for (let key in this.myarch) {
+                rkSum += this.myarch[key].rank * 2;
             }
             return (1 + parseInt(this.level) - rkSum);
         },
@@ -286,27 +276,27 @@ ${toMd(this.atbCatString("reactions"))}
             for (let key in this.equipment) {
                 slot = this.equipment[key];
                 atlist = [];
-                if('eqab' in slot)
+                if ('eqab' in slot)
                     atlist = slot.eqab.split(",");
                 for (let i in atlist) {
                     eid = atlist[i].trim();
-                    if(eid in this.eqAtb){
+                    if (eid in this.eqAtb) {
                         abSwitch(this.eqAtb[eid]);
                     }
                 }
             }
             //Add racial abilities
-            if("abilities" in this.race){
+            if ("abilities" in this.race) {
                 for (let i in this.race.abilities) {
                     atb = this.race.abilities[i];
-                    if("type" in atb)
+                    if ("type" in atb)
                         abSwitch(atb);
                 }
             }
             //Add spells
             for (let i in this.myspells) {
                 atb = this.myspells[i];
-                if("type" in atb)
+                if ("type" in atb)
                     abSwitch(atb);
             }
             //Add rank abilities
@@ -320,6 +310,35 @@ ${toMd(this.atbCatString("reactions"))}
                             atb.rank = this.myranks[key].rank;
                             abSwitch(atb);
                         }
+                    }
+                }
+            }
+            //Add archetype abilities
+            for (let key in this.myarch) {
+                let arc = this.myarch[key];
+                let i = arc.rank;
+                if ("enchancements" in arc) {
+                    while (i > 0) {
+                        enh = arc.enhancements[ arc.rank - i];
+                        if (enh.attributes) {
+                            atlist = (enh.attributes).split(",");
+                            for (let j in atlist) {
+                                eid = atlist[j].trim();
+                                if (eid in this.attributes) {
+                                    atb = this.attributes[eid];
+                                    atb.rank = (arc.rank + 1);
+                                    atb.cost = "";
+                                    atb.uses = "1/Ronda"
+                                    abSwitch(atb);
+                                }
+                            }
+                        }
+                        if (enh.abilities) {
+                            for (let ab in enh.abilities) {
+                                abSwitch(ab);
+                            }
+                        }
+                        i--;
                     }
                 }
             }
@@ -353,7 +372,7 @@ ${toMd(this.atbCatString("reactions"))}
             };
             if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
                 statsRes.dex.value += this.equipment.armor.penalty;
-            if(this.race.stats){
+            if (this.race.stats) {
                 for (let j in this.race.stats) {
                     bst = this.race.stats[j];
                     statsRes[bst.stat].value += bst.boost;
@@ -377,10 +396,10 @@ ${toMd(this.atbCatString("reactions"))}
                 res += this.equipment.armor.def;
             return res + this.sumAllKeys('def', this.myatb.passive);
         },
-        arcString: function(){
+        arcString: function () {
             return "";
         },
-        actions: function() {
+        actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
         },
     },
@@ -393,6 +412,7 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("divinepatrons", './data/divine-patrons.json');
         this.getData("arcanespecs", './data/arcane-specs.json');
         this.getData("races", './data/races.json');
+        this.getData("archetypes", './data/archetypes.json');
     },
     mounted() {
 

@@ -1,12 +1,182 @@
 {
-    "asesino":{
+    "asesino": {
         "name": "Asesino",
-        "stat": "cha",
+        "stat": "dex",
+        "modranks": [
+            "armas-ligeras",
+            "reflejos",
+            "rastrear"
+        ],
         "rank": 0,
         "max": 4,
         "stats": [
-            {"stat": "dex", "rank": 1, "boost": 1},
-            {"stat": "con", "rank": 1, "boost": 1}
+            {
+                "stat": "dex",
+                "rank": 1,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 1,
+                "boost": 1
+            },
+            {
+                "stat": "dex",
+                "rank": 2,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 2,
+                "boost": 1
+            },
+            {
+                "stat": "dex",
+                "rank": 3,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 3,
+                "boost": 1
+            },
+            {
+                "stat": "dex",
+                "rank": 4,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 4,
+                "boost": 1
+            }
+        ],
+        "enchancements": [
+            {
+                "attributes": [
+                    "parada-con-arma-ligera",
+                    "evasion",
+                    "velocidad-superior",
+                    "combate-furtivo",
+                    "esquiva-asombrosa"
+                ],
+                "abilities": [
+                    {
+                        "name": "Golpes Penetrantes",
+                        "type": "Pasiva",
+                        "description": "Sus ataques con Armas Ligeras ignorarán la Defensa otorgada por Armaduras que tenga el objetivo. Esto funciona como si estuvieran afectados con la habilidad Golpe Penetrante."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "luchador": {
+        "name": "Luchador",
+        "stat": "cha",
+        "modranks": [
+            "armas-pesadas",
+            "reflejos",
+            "rastrear"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {
+                "stat": "str",
+                "rank": 1,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 1,
+                "boost": 1
+            },
+            {
+                "stat": "str",
+                "rank": 2,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 2,
+                "boost": 1
+            },
+            {
+                "stat": "str",
+                "rank": 3,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 3,
+                "boost": 1
+            },
+            {
+                "stat": "str",
+                "rank": 4,
+                "boost": 1
+            },
+            {
+                "stat": "con",
+                "rank": 4,
+                "boost": 1
+            }
+        ],
+        "enchancements": [
+            {
+                "attributes": ["golpe-desestabilizador", "parada-con-arma-pesada", "estilo-salvaje"],
+                "abilities": [
+                    {
+                        "name": "Fortitud Superior",
+                        "type": "Pasiva",
+                        "def": "RANGOx2",
+                        "hp": "RANGOx2",
+                        "vt": "RANGOx2",
+                        "description": "Aumenta su Vitalidad, PV y Defensa por RANGOx2 (ya incluido)."
+                    },
+                    {
+                        "name": "Ira de Combate",
+                        "type": "Pasiva",
+                        "description": "Está siempre afectado por la habilidad Ira, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas físicas y aumentando su daño base con ataques Físicos por 1d6. No podrá mantener la concentración en efectos."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
         ]
     }
 }

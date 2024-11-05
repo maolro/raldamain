@@ -1,14 +1,21 @@
-Vue.component('v-talpage', {
+Vue.component('v-statpage', {
     template: `
     <div>
         <div class="row md-2">
             <div class="col-6">
-                <input type="text" v-model="charactername" placeholder="Nombre" style="width: 100%;">
+                <input type="text" v-model="charactername" placeholder="Nombre" @input="setName" 
+                style="width: 100%;">
             </div>
-            <div class="col-6">
-                <b class="justify-content-center mr-2">Nivel: </b>
-                    <input class="justify-content-center mr-2" id="numberBox" type="number" v-model="level" min=1 max=20>
+                <div class="col-6">
+                    <b class="justify-content-around mr-2">Nivel: </b>
+                        <v-minusplusfield v-bind:value="level" :min="1" :max="20"
+                            v-on:input="setLevel"></v-minusplusfield>
                 </div>
+        </div>
+        <div class="row my-2 mx-2 justify-content-around">
+            <b class="mr-1">Raza:</b>
+                <v-select-search v-bind:optionsobj="races" :placeholder="placeholder"
+                    v-on:selected-key="setRace($event)"></v-select-search>
             </div>
             <div class="row my-2 justify-content-center">
                 <b class="mr-1">Puntos a distribuir:</b>{{ statpoints }}
@@ -20,42 +27,57 @@ Vue.component('v-talpage', {
                 <div class="col-6 justify-content-center">
                     <v-minusplusfield v-bind:value="value.value" :min="-1" :max="statlimit"
                         :enableval="statpoints" v-on:input="value.value = $event"></v-minusplusfield>
-                    </div>
                 </div>
-        </div>`,
+        </div>
+     </div>`,
     props: {
         level: {
-            type: Number
+            type: Number,
         },
-        talents: {
+        charactername: {
+            type: String
+        },
+        races: {
+            type: Object
+        },
+        stats:{
             type: Object
         }
     },
+    data: function () {
+        return {
+            placeholder: 'Humano'
+        };
+    },
     computed: {
-        talpoints: function () {
-            talSum = 0;
-            for (let key in this.talents) {
-                talSum += this.talents[key].level;
+        statpoints: function () {
+            statSum = 0;
+            for (let key in this.stats) {
+                statSum += this.stats[key].value;
             }
-            return (2 + 2 * parseInt(this.level) - talSum);
+            return 10 + parseInt(this.level) - statSum;
         },
-        talentlimit: function () {
-            level = this.level
-            if (level < 5) return 2;
-            else if (level < 8) return 3;
-            else if (level < 11) return 4;
-            else return 5;
+        statlimit: function () {
+            return Math.floor(3 + this.level / 3);
         },
     },
-    watch: {
-        level: {
-            handler: function (newVal) {
-                this.level = newVal;
+    methods: {
+        setRace(id){
+            if(id in this.races){
+                this.$emit('set-race', this.races[id]);
             }
         },
-        talents: {
+        setLevel(value){
+            this.$emit('set-level', value);
+        },
+        setName(event){
+            this.$emit('set-name', event.target.value);
+        }
+    },
+    watch: {
+        races: {
             handler: function (newVal) {
-                this.talents = newVal;
+                this.races = newVal;
             }
         },
     }

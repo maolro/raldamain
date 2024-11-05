@@ -3,7 +3,7 @@ Vue.component('v-rank-selecter', {
         <div class="rank-selecter border">
             <div class="row m-1 justify-content-around">
                 <v-select-search v-bind:optionsobj="ranks" v-on:selected-key="setRank($event)"></v-select-search>
-                <b> Rango: </b>
+                <b> {{ lvltext }}: </b>
                 <v-minusplusfield v-bind:value="rankLevel" :min="0" :max="max"
                 :enableval="statpoints" v-on:input="setRankLevel($event)"></v-minusplusfield>
                 <button class="btn btn-light" @click="removeRank">-</button>
@@ -26,6 +26,10 @@ Vue.component('v-rank-selecter', {
         },
         canClose:{
             type: Boolean
+        },
+        lvltext:{
+            type: String,
+            default: "Rango"
         }
     },
     data: function() {
