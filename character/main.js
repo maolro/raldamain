@@ -317,13 +317,14 @@ ${toMd(this.atbCatString("reactions"))}
             for (let key in this.myarch) {
                 let arc = this.myarch[key];
                 let i = arc.rank;
-                if ("enchancements" in arc) {
+                if ("enchancements" in arc ) {
+                    let enArr = arc["enchancements"];
                     while (i > 0) {
-                        enh = arc.enhancements[ arc.rank - i];
+                        let pos = arc.rank - i;
+                        let enh = enArr[pos];
                         if (enh.attributes) {
-                            atlist = (enh.attributes).split(",");
-                            for (let j in atlist) {
-                                eid = atlist[j].trim();
+                            for (let j in enh.attributes) {
+                                eid = enh.attributes[j].trim();
                                 if (eid in this.attributes) {
                                     atb = this.attributes[eid];
                                     atb.rank = (arc.rank + 1);
