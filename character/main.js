@@ -85,17 +85,23 @@ new Vue({
             }
         },
         getRank: function (id) {
-            res = 0;
+            let res1 = 0;
+            let res2 = 0;
             for (let i in this.myranks) {
                 if (id == this.myranks[i].id) {
-                    res = this.myranks[i].rank;
+                    res1 = this.myranks[i].rank;
                     break;
                 }
             }
-            return res;
+            for (let i in this.myarch) {
+                let arc = this.myarch[i];
+                if ("modranks" in arc && arc.modranks.includes(id) && "rank" in arc && arc.rank > res1) {
+                    res1 = (this.myarch[i].rank + 1);
+                }
+            }
+            return Math.max(res1, res2);
         },
-        replaceTag: function processString(str, skill) {
-            rk = this.getRank(skill);
+        replaceTag: function processString(str, rk, skill) {
             stat = this.finalStats[this.getMainStat(this.ranks[skill].stat)].value;
             const getDD = (rk) => {
                 if (rk < 3) return "d6 ";
@@ -132,12 +138,12 @@ new Vue({
                 let formattedString = `<b>${obj.name}</b>`;
                 if (obj.cost || obj.uses || obj.tags) {
                     if (obj.uses != null)
-                        obj.uses = this.replaceTag(obj.uses, obj.skill);
+                        obj.uses = this.replaceTag(obj.uses, obj.rank, obj.skill);
                     arr = [obj.cost, obj.uses, obj.tags];
                     formattedString += ` (${arr.filter(Boolean).join("; ")})`;
                 }
                 if (obj.skill)
-                    formattedString += ": " + this.replaceTag(obj.description, obj.skill);
+                    formattedString += ": " + this.replaceTag(obj.description, obj.rank, obj.skill);
                 else
                     formattedString += ": " + obj.description;
                 return formattedString;
@@ -207,8 +213,8 @@ ${toMd(this.atbCatString("reactions"))}
                     kr = val[key];
                     if (typeof kr === 'number')
                         res += kr;
-                    else if (typeof kr === 'string' && val.skill)
-                        res += Number.parseInt(this.replaceTag(kr, val.skill));
+                    else if (typeof kr === 'string' && val.skill && val.rank)
+                        res += Number.parseInt(this.replaceTag(kr, val.rank, val.skill));
                     else
                         break;
                 }
@@ -219,7 +225,20 @@ ${toMd(this.atbCatString("reactions"))}
             if (id in this.races) {
                 this.race = this.races[id];
             }
-        }
+        },
+        updateCostAndUses(attributeObject) {
+            if (attributeObject.hasOwnProperty("cost") && attributeObject.cost !== "") {
+                let cost = attributeObject.cost;
+                let uses = "";
+                if (cost.includes("Chi") || cost.includes("Vigor")) {
+                    cost = cost.replace(/(\d+\s*(Chi|Vigor)\s*)/g, '').trim();
+                    uses = "1/Ronda";
+                }
+                attributeObject.cost = cost;
+                attributeObject.uses = uses;
+            }
+            return attributeObject;
+        },
     },
     computed: {
         hp: function () {
@@ -261,7 +280,7 @@ ${toMd(this.atbCatString("reactions"))}
             return res.join(", ");
         },
         myatb: function () {
-            res = { passive: [], actions: [], reactions: [] };
+            let res = { passive: [], actions: [], reactions: [] };
             abSwitch = (ability) => {
                 switch (ability.type) {
                     case "Pasiva": res.passive.push(ability);
@@ -274,39 +293,42 @@ ${toMd(this.atbCatString("reactions"))}
             };
             //Add equipment abilities
             for (let key in this.equipment) {
-                slot = this.equipment[key];
-                atlist = [];
+                let slot = this.equipment[key];
+                let atlist = [];
                 if ('eqab' in slot)
                     atlist = slot.eqab.split(",");
                 for (let i in atlist) {
-                    eid = atlist[i].trim();
+                    let eid = atlist[i].trim();
                     if (eid in this.eqAtb) {
-                        abSwitch(this.eqAtb[eid]);
+                        let atb = this.eqAtb[eid];
+                        if(atb.skill)
+                            atb["rank"] = this.getRank(atb.skill);
+                        abSwitch(atb);
                     }
                 }
             }
             //Add racial abilities
             if ("abilities" in this.race) {
                 for (let i in this.race.abilities) {
-                    atb = this.race.abilities[i];
+                    let atb = this.race.abilities[i];
                     if ("type" in atb)
                         abSwitch(atb);
                 }
             }
             //Add spells
             for (let i in this.myspells) {
-                atb = this.myspells[i];
+                let atb = this.myspells[i];
                 if ("type" in atb)
                     abSwitch(atb);
             }
             //Add rank abilities
             for (let key in this.myranks) {
                 if (this.myranks[key].rank != 0) {
-                    atlist = (this.myranks[key].attributes).split(",");
+                    let atlist = (this.myranks[key].attributes).split(",");
                     for (let i in atlist) {
-                        eid = atlist[i].trim();
+                        let eid = atlist[i].trim();
                         if (eid in this.attributes && this.attributes[eid].rank <= this.myranks[key].rank) {
-                            atb = this.attributes[eid];
+                            let atb = this.attributes[eid];
                             atb.rank = this.myranks[key].rank;
                             abSwitch(atb);
                         }
@@ -324,19 +346,17 @@ ${toMd(this.atbCatString("reactions"))}
                         let enh = enArr[pos];
                         if (enh.attributes) {
                             for (let j in enh.attributes) {
-                                eid = enh.attributes[j].trim();
+                                let eid = enh.attributes[j].trim();
                                 if (eid in this.attributes) {
-                                    atb = this.attributes[eid];
+                                    let atb = this.attributes[eid];
                                     atb.rank = (arc.rank + 1);
-                                    atb.cost = "";
-                                    atb.uses = "1/Ronda"
-                                    abSwitch(atb);
+                                    abSwitch(this.updateCostAndUses(atb));
                                 }
                             }
                         }
                         if (enh.abilities) {
                             for (let ab in enh.abilities) {
-                                abSwitch(ab);
+                                abSwitch(enh.abilities[ab]);
                             }
                         }
                         i--;

@@ -58,7 +58,8 @@
                     "evasion",
                     "velocidad-superior",
                     "combate-furtivo",
-                    "esquiva-asombrosa"
+                    "esquiva-asombrosa",
+                    "esquiva"
                 ],
                 "abilities": [
                     {
@@ -69,9 +70,13 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["analizar-enemigo", "finta-engañosa", "lluvia-de-cuchillos", "puñalada-poderosa"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Acechar",
+                        "type": "Pasiva",
+                        "description": "Cuando gaste una acción para ocultarse recibirá los beneficios de Acechar, volviéndose así efectivamente <i>invisible</i>."
+                    }
                 ]
             },
             {
