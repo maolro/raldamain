@@ -32,6 +32,18 @@
             }
         ]
     },
+    "extraplanar":{
+        "name": "Extraplanario",
+        "abilities": [
+            {
+                "name": "Naturaleza Extraplanaria",
+                "type": "Pasiva",
+                "immunities": ["Mentales","Aflicciones","Miedo"],
+                "vulnerabilities": ["Armas anti-extraplanarios"],
+                "description": "Es un ser inmortal que no necesita comer, dormir o respirar, sustentándose únicamente con la energía mágica que hay a su alrededor. Si muere su alma volverá a su plano natal hasta que logre recomponer su cuerpo, un proceso que tarda normalmente un día. Recibe Inmunidad a todos los efectos Mentales, Miedo y Aflicciones que no sean de origen extraplanario a costa de Vulnerabilidad a armas diseñadas para matar a extraplanarios de su tipo."
+            }
+        ]
+    },
     "humano":{
         "name": "Humano"
     },
