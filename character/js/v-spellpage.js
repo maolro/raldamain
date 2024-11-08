@@ -23,7 +23,7 @@ Vue.component('v-spellpage', {
         <h3>{{ key }} ({{ value.slots }} ranuras)</h3>
         <div v-for="(n, colIndex) in value.skill" class="mb-2">
             <v-select-search v-bind:optionsobj="value.atb[colIndex]" 
-            v-on:selected-key="addSpell($event, rowIndex, colIndex, n)"></v-select-search>
+            v-on:selected-key="addSpell($event, rowIndex, colIndex, n, key)"></v-select-search>
         </div> 
     </div>
   </div>
@@ -31,7 +31,9 @@ Vue.component('v-spellpage', {
     props: {
         myranks: {
             type: Array,
-            required: true
+        },
+        myarch: {
+            type: Array,
         },
         attributes: {
             type: Object
@@ -60,33 +62,51 @@ Vue.component('v-spellpage', {
     },
     computed: {
         showDivinePatron: function () {
+            for(let i in this.myarch)
+            {
+                let arc = this.myarch[i];
+                if("modranks" in arc && arc.modranks.some(modrank => this.divineRanks.includes(modrank)))
+                    return true;                        
+            }        
             return this.myranks.some(obj => this.divineRanks.includes(obj.id));
         },
         showArcaneSpecialization: function () {
-            return this.myranks.some(obj => obj.id === "magia-de-evocacion");
+            for(let i in this.myarch)
+            {
+                let arc = this.myarch[i];
+                if("modranks" in arc && arc.modranks.includes("magia-de-evocacion"))
+                    return true;                        
+            }   
+            return this.myranks.some(obj => obj.id === "magia-de-evocacion")
         },
         spellSections: function () {
             spellsect = {
-                "Rango I": { slots: 0, skill: [], atb: [] },
-                "Rango II": { slots: 0, skill: [], atb: [] },
-                "Rango III": { slots: 0, skill: [], atb: [] },
-                "Rango IV": { slots: 0, skill: [], atb: [] },
-                "Rango V": { slots: 0, skill: [], atb: [] }
+                "Rango I": { slots: 0, skill: [], atb: [], isFree: []},
+                "Rango II": { slots: 0, skill: [], atb: [], isFree: []},
+                "Rango III": { slots: 0, skill: [], atb: [], isFree: []},
+                "Rango IV": { slots: 0, skill: [], atb: [], isFree: []},
+                "Rango V": { slots: 0, skill: [], atb: [], isFree: []}
             }
             if(this.race.spells){
-                this.spellSwitcher(spellsect, this.level, this.race.spells)
+                this.spellSwitcher(spellsect, this.level, this.race.spells, false)
             }
+            this.myarch.forEach(arc => {
+                if (arc.spells) {
+                    console.log("archetype has spells");
+                    this.spellSwitcher(spellsect, arc.rank, arc.spells, true)
+                }
+            });
             this.myranks.forEach(rank => {
                 if (rank.spells) {
                     console.log("rank has spells");
-                    this.spellSwitcher(spellsect, rank.rank, rank.spells)
+                    this.spellSwitcher(spellsect, rank.rank, rank.spells, false)
                 }
             });
             return spellsect;
         },
     },
     methods: {
-        spellSwitcher(switchObj, rval, src){
+        spellSwitcher(switchObj, rval, src, isFree){
             src.forEach(spell => {
                 if (spell.rank <= rval) {
                     switch (spell["spell-lvl"]) {
@@ -103,9 +123,10 @@ Vue.component('v-spellpage', {
                     }
                     for (let i = 0; i < spell.slots; i++) {
                         switchObj[key].slots += 1;
-                        switchObj[key].skill.push(spell.mod);
+                        switchObj[key].skill.push(spell.cat);
                         switchObj[key].atb.push(this.getSpellOptions(spell.cat, spell["spell-lvl"], this.attributes,
                             this.selectedDivinePatron, this.selectedArcaneSpecialization));
+                        switchObj[key].isFree.push(isFree);
                     }
                 }
             })
@@ -139,10 +160,16 @@ Vue.component('v-spellpage', {
             }
             return options;
         },
-        addSpell(spell, x, y, cat) {
+        addSpell(spell, x, y, cat, spkey) {
             const key = `spell${x}${y}`;
             atb = {...this.attributes[spell]};
             atb.skill = cat;
+            if(atb.skill == "magia-divina")
+                atb.tags += ", Divina";
+            if(atb.skill == "magia-de-evocacion")
+                atb.tags += ", Arcana";
+            if(this.spellSections[spkey].isFree[y])
+                atb = this.$root.updateCostAndUses(atb);
             this.$set(this.myspells, key, atb);
             console.log("added spell" + spell)
             this.$emit('update-myspells', this.myspells);
@@ -158,6 +185,13 @@ Vue.component('v-spellpage', {
         myranks: {
             handler: function (newVal) {
                 this.myranks = newVal;
+                this.myspells = {};
+                this.$emit("reset-selects");
+            }
+        },
+        myarch: {
+            handler: function (newVal) {
+                this.myarch = newVal;
                 this.myspells = {};
                 this.$emit("reset-selects");
             }

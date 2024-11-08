@@ -13,7 +13,7 @@ Los elfos descienden de humanos que vivieron en tierras altamente influenciadas 
 
 Sin embargo, la estabilidad del Imperio Élfico se vio comprometida por constantes conflictos con reinos humanos que aspiraban a expandir sus fronteras y recursos. Esta presión alcanzó su punto crítico con las invasiones de los **Oni**, una raza brutal de guerreros demoníacos cuyo avance devastador debilitó enormemente las fuerzas élficas. Aunque los elfos lograron expulsar a los Oni, su imperio colapsó poco después, dejando a su gente fragmentada y sin una autoridad central. 
 
-Desde entonces, los elfos se han dividido en **comunas aislacionistas**. Algunas de estas comunas se han sometido a la protección de naciones humanas, otras se han declarado independientes, mientras que las más fuertes se han unido en el **reino de Thiamashte**, que se proclama el heredero del Imperio Élfico. Además, varias comunas han formado la **Confederación de Neronvain**, una alianza para resistir invasiones humanas y preservar su independencia.
+Desde entonces, los elfos se han dividido en comunas aislacionistas. Algunas de estas comunas se han sometido a la protección de naciones humanas, otras se han declarado independientes, mientras que las más fuertes se han unido en el **reino de Thiamashte**, que se proclama el heredero del Imperio Élfico. Además, varias comunas han formado la **Confederación de Neronvain**, una alianza para resistir invasiones humanas y preservar su independencia.
 
 # Características
 

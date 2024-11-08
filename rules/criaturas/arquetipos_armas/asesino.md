@@ -19,7 +19,6 @@ La criatura ha mejorado sus habilidades en el arte del asesinato y el combate co
 
 - **Aumentos Estadísticos:** Incrementa su DES y CON por 1 además de sus limitadores
 - **Mejoras de Rango:** Mejora su Rango y modificador en Armas Ligeras, Rastrear y Reflejos por 1. 
-- **Parada con Armas:** Puede usar su tiro de Armas Ligeras para defenderse de ataques cuerpo a cuerpo.
 - **Analizar Enemigo:** Cada ronda recibe los beneficios de Analizar Enemigo contra un objetivo de su elección, obteniendo así Ventaja en todos sus tiros de ataque y defensa contra él además de los beneficios adicionales otorgados por otras habilidades de Rastrear que dependan de ella. Dicho objetivo no podrá cambiarse hasta su siguiente turno.
 - **Técnicas de Combate:** Aprende las técnicas de combate Finta Engañosa, Lluvia de Cuchillos, y Puñalada Poderosa. Cada una de estas solo puede usarse una vez por ronda de manera gratuita.
 - **Acechar:** Cuando gaste una acción para ocultarse recibirá los beneficios de Acechar, volviéndose así efectivamente *invisible*.

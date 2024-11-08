@@ -31,15 +31,15 @@ Esta habilidad te permite de manera alternativa infundir un ataque con un hechiz
 
 **Empoderar** (1 vigor o chi): Extiendes este efecto una ronda adicional, permitiéndote volver a realizarlo la siguiente vez que impactes a un enemigo sin la necesidad de pagar su coste. 
 
-### Sentido divino
+### Sentido Divino
 
-*Divina, Pasivo*
+*Divina, Pasiva*
 
 Tu conexión divina te abre los ojos a fuerzas más allá de tu plano. Eres capaz de sentir la posición de todos los no-muertos, criaturas extraplanarias y presencias mágicas o divinas a una distancia media de ti. Esta habilidad también te permite identificar la fuerza aproximada de aquellos seres o fuerzas que detectes además de su tipo.
 
-### Canalizar divinidad
+### Canalizar Divinidad
 
-*Divina, Pasivo*
+*Divina, Pasiva*
 
 Tu dios te ha bendecido con la capacidad de emplear una pequeña porción de sus poderes mágicos. Al obtener esta habilidad aprendes dos hechizos de Rango I pertenecientes a una rama mágica que esté vinculada a tu dios. Emplearás tu bonificador de Guerrero Divino para lanzar dichos hechizos además que puedes pagarlos empleando vigor en lugar de chi. Los hechizos escogidos emplearán tu estadística de CAR y tu Rango en Guerrero divino a la hora de calcular la potencia de sus efectos.
 

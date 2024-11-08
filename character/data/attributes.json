@@ -300,9 +300,9 @@
       "skill": "magia-de-fuego",
       "type": "Accion",
       "cost": "2 Acciones y 1 Chi",
-      "reach": "Cono pequeño",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+STAT daño Fuego y hace que objetos inflamables salten en llamas"
+      "tags": "Fuego, Ataque, Área",
+      "description": "+MOD para atacar, Cono pequeño, Inflige 1DD + STAT daño Fuego al impactar (la mitad si los objetivos se defienden exitosamente). Todos los objetos inflamables en el área afectada saltan en llamas y elimina todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.",
+      "empoderar": "(1 chi) Aumenta el tamaño de este efecto por un paso y su daño por 1d6. Solo se puede empoderar el mismo ataque dos veces como máximo."
     },
     "aliento-de-la-vida": {
       "rank": 4,
@@ -2346,10 +2346,11 @@
       "name": "Cuerpo Puro",
       "skill": "ascendencia-celestial",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Recibe Resistencia a Aflicciones y efectos Necróticos"
+      "tags": "Innata",
+      "resistances": ["Aflicciones", "Necróticos"],
+      "def": "RANGO+1",
+      "description": "Recibe Resistencia a Aflicciones y efectos Necróticos además que su DEF aumenta por RANGO+1 (todo ya incluido).",
+      "empower":  "(1 vigor o chi) Repite un tiro de muerte y se queda con el resultado que más le convenga."
     },
     "danza-de-cadenas": {
       "rank": 1,
@@ -5322,7 +5323,7 @@
       "name": "Manifestación Divina",
       "skill": "magia-divina",
       "type": "Accion",
-      "cost": "2 Acciones y 1 Chi",
+      "cost": "1 Acción y 1 Chi",
       "tags": "Divino, Maldición",
       "description": "Distancia media, Bendice o maldice a su objetivo usando un efecto relacionado con su dios. Las maldiciones tienen modificador +MOD y el afectado puede defenderse tirando Salud, Concentración o Voluntad."
     },
@@ -5878,10 +5879,9 @@
       "name": "Nacido del Cielo",
       "skill": "ascendencia-celestial",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia a efectos Radiantes y las criaturas Celestiales son generalmente amistosas"
+      "resistances": ["Radiantes"],
+      "tags": "Innata",
+      "description": "Recibe Resistencia a efectos Radiantes (ya incluido) además que las criaturas celestiales serán generalmente amistosas hacia este personaje y lo reconocen como uno de los suyos."
     },
     "naturalizar": {
       "rank": 5,
@@ -6201,10 +6201,8 @@
       "name": "Parada Luminosa",
       "skill": "magia-de-vida",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Usa Magia de Vida para defenderse de ataques físicos y mágicos"
+      "tags": "Vida, Defensiva",
+      "description": "+MOD para defenderse. Funciona contra ataques físicos y mágicos."
     },
     "parada-marcial": {
       "rank": 1,
@@ -6888,7 +6886,7 @@
       "cost": "1 Acción",
       "reach": "Medio",
       "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Frío y apaga las fuentes de calor además de congelar el agua"
+      "description": "Inflige 1DD + RANGO daño Frío y apaga las fuentes de calor además de congelar el agua"
     },
     "rayo-luminoso": {
       "rank": 1,
@@ -6896,9 +6894,9 @@
       "skill": "magia-de-vida",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Radiante. No puede ser Esquivado a distancia corta"
+      "tags": "Vida, Ataque, A Distancia, Radiante",
+      "description": "Distancia media, +MOD para impactar, Inflige 1DD + RANGO daño Radiante. Este ataque no puede ser Esquivado a distancia corta.",
+      "empower": "(1 chi): Ataca a un objetivo adicional a distancia media."
     },
     "rayo-viviente": {
       "rank": 4,
@@ -7510,9 +7508,7 @@
       "name": "Sentido Divino",
       "skill": "guerrero-divino",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Divina",
       "description": "Detecta la posición de no-muertos, extraplanarias y presencias mágicas a distancia media"
     },
     "sentido-magico": {
@@ -7915,9 +7911,9 @@
       "skill": "magia-de-vida",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
-      "description": "Sana RANGO+2 Vitalidad"
+      "tags": "Vida, Sanación, Toque",
+      "description": "Adyacente, el objetivo se sana RANGO+2 Vitalidad o repite un tiro contra una Aflicción tirando +MOD en lugar de su modificador, reduciendo su efecto por un paso si tiene éxito.",
+      "empower":"(1 chi): El objetivo se recupera de una <i>herida permanente leve</i> o de una Aflicción en paso 1 de efecto."
     },
     "toque-vampirico": {
       "rank": 2,
