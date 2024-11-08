@@ -3273,7 +3273,7 @@
       "name": "Esquiva",
       "skill": "reflejos",
       "type": "Reaccion",
-      "tags": "Defensiva, Reflejos",
+      "tags": "Innata, Defensiva, Reflejos",
       "description": "+MOD para defenderse. Funciona contra ataques de todo tipo."
     },
     "esquiva-asombrosa": {
@@ -3281,10 +3281,8 @@
       "name": "Esquiva Asombrosa",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Puedes usar Esquiva para defenderte de ataques sorpresa y ataques imposibles de esquivar"
+      "tags": "Innata",
+      "description": "Puede usar Esquiva para defenderse de ataques sorpresa y ataques imposibles de esquivar."
     },
     "estasis": {
       "rank": 4,
@@ -3343,6 +3341,7 @@
       "type": "Reaccion",
       "cost": "1 Vigor",
       "uses": "1/Ronda",
+      "tags": "Innata, Defensiva",
       "description": "Tras un tiro fallido de Esquiva reduce el daño del ataque enemigo a la mitad, desengancha y se mueve un paso. Requiere que sea capaz de Esquivar ese ataque."
     },
     "exaltado": {
@@ -3997,10 +3996,9 @@
       "name": "Giro Defensivo",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Reduce el daño recibido por RANGO+1 si se encuentra en posición defensiva"
+      "tags": "Innata",
+      "description": "Reduce el daño recibido por RANGO+1 si se encuentra en <i>posición defensiva</i>.",
+      "empower": "(1 vigor): Entra en <i>posición defensiva</i> como acción bonus."
     },
     "giro-del-boxeador": {
       "rank": 4,
@@ -4268,10 +4266,9 @@
       "name": "Gran Acróbata",
       "skill": "reflejos",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Inmunidad a terreno difícil, Resistencia a daño de caídas, velocidad de Escalada 1 y no puede ser tropezado por efectos críticos"
+      "tags": "Innata",
+      "immunities": ["Terreno Difícil"],
+      "description": "Inmunidad a terreno difícil, Resistencia a daño de caídas, velocidad de Escalada 1 y no puede ser tropezado por efectos críticos."
     },
     "gran-arbol-drenador": {
       "rank": 5,
@@ -4648,9 +4645,10 @@
       "name": "Instinto de Supervivencia",
       "skill": "reflejos",
       "type": "Pasiva",
-      "uses": "RANGO+2/ronda",
+      "uses": "RANGO+2/combate",
       "tags": "Reflejos",
-      "description": "Repite un tiro de DES y se queda con el resultado que más le convenga."
+      "description": "Repite un tiro de DES y se queda con el resultado que más le convenga.",
+      "empower": "(1 vigor) Recupera un uso de esta habilidad."
     },
     "interceptar-ataque": {
       "rank": 4,
@@ -6125,6 +6123,14 @@
       "reach": "",
       "duration": "",
       "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
+    },
+    "parada-cronomagica": {
+      "rank": 1,
+      "name": "Parada Cronomágica",
+      "skill": "magia-temporal",
+      "type": "Reaccion",
+      "tags": "Arcana, Temporal, Defensiva",
+      "description": "+MOD para defenderse. Solo funciona contra efectos que le tengan explícitamente como objetivo."
     },
     "parada-de-agua": {
       "rank": 1,

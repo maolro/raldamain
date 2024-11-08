@@ -133,7 +133,7 @@ new Vue({
             return result;
         },
         atbCatString: function (cat) {
-            obArray = this.myatb[cat];
+            let obArray = this.myatb[cat];
             return obArray.map(obj => {
                 let formattedString = `<b>${obj.name}</b>`;
                 if (obj.cost || obj.uses || obj.tags) {
@@ -435,8 +435,10 @@ ${toMd(this.atbCatString("reactions"))}
                             }
                         }
                         if (enh.abilities) {
-                            for (let ab in enh.abilities) {
-                                abSwitch(enh.abilities[ab]);
+                            for (let j in enh.abilities) {
+                                let ab = enh.abilities[j];
+                                ab["rank"] = (arc.rank + 1);
+                                abSwitch(ab);
                             }
                         }
                         i--;
