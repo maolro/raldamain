@@ -48,7 +48,7 @@ Aumentas la velocidad de tus ataques para penetrar las defensas enemigas a costa
 
 Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma cantidad de ataques extra contra el mismo objetivo quien usará el mismo resultado defensivo para protegerse de todos ellos (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Cada ataque adicional que realices aumentará su tiro de ataque y daño por 1 contra ese mismo objetivo llegando a un bonificador máximo de 3.
 
-**Empoderar** (1 chi): Aumenta el alcance de este ataque a cercano
+**Empoderar** (1 chi): Aumenta el alcance de todos los ataques hechos con este hechizo a cercano durante una ronda.
 
 ### Aliento de Fuego
 

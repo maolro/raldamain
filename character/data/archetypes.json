@@ -256,12 +256,14 @@
                         "name": "Cronomago Experto",
                         "type": "Pasiva",
                         "tags": "Arcana, Temproral",
+                        "skill": "magia-temporal",
                         "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia Temporal. Este modificador no se acumula con el otorgado por Mente Desencadenada."
                     },
                     {
                         "name": "Premonición Superior",
                         "type": "Pasiva",
                         "tags": "Arcana, Temproral",
+                        "skill": "magia-temporal",
                         "description": "Puede repetir todos los tiros inferiores a un 5 que obtenga y quedarse con el resultado más conveniente."
                     }
                 ]
@@ -277,6 +279,95 @@
                 "abilities": [
                     {}
                 ]
+            }
+        ]
+    },
+    "esencia-de-fuego": {
+        "name": "Esencia de Fuego",
+        "stat": "cha",
+        "modranks": ["magia-de-fuego", "ascendencia-de-fuego"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["fuego-interior","vision-termica","llamarada","asalto-abrasador","aliento-de-fuego","parada-de-fuego"],
+                "abilities": [
+                    {
+                        "name": "Furia del Fuego",
+                        "type": "Accion",
+                        "tags": "Fuego",
+                        "uses": "1/Ataque",
+                        "skill": "ascendencia-de-fuego",
+                        "description": "Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Fuego que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda."
+                    }
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            }
+        ]
+    },
+    "esencia-de-vida": {
+        "name": "Esencia de Vida",
+        "stat": "wis/cha",
+        "modranks": ["magia-de-vida", "ascendencia-celestial"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["nacido-del-cielo","rayo-luminoso","toque-sanador","parada-luminosa"],
+                "abilities": [
+                    {
+                        "name": "Aura Luminosa",
+                        "type": "Pasiva",
+                        "tags": "Vida, Visual",
+                        "resistances": ["A Distancia","Sombríos"],
+                        "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
+                    }
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
             }
         ]
     },

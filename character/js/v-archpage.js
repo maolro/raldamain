@@ -5,7 +5,7 @@ Vue.component('v-archpage', {
         <b class="mr-1">Puntos a distribuir:</b>{{ rkpoints }}
     </div>
     <div v-for="(value, index) in myarch" :key="index">
-        <v-rank-selecter v-bind:ranks="archetypes" :index="index" :limit="arclimit" :enableval="rkpoints"
+        <v-rank-selecter v-bind:ranks="archetypes" :index="index" :limit="arclimit" :enableval="(rkpoints-1)"
         @update-rank-level="handleArchLevelUpdate" @remove-rank="removeArch"></v-rank-selecter>
     </div>
     <div class="row my-2 justify-content-center">

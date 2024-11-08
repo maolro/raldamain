@@ -21,7 +21,7 @@ La criatura está hecha de pura energía luminosa, careciendo así de cuerpo fí
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Vida y Ascendencia Celestial por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Nacido del Cielo.
 - **Hechizos:** Aprende los hechizos Rayo Luminoso y Toque Sanador.
-- **Aura Luminosa:** Le rodea un aura luminosa que provoca los efectos de Halo Celador a toda criatura que entre en un espacio a distancia corta o entre ahí. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador.
+- **Aura Luminosa:** Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud contra su modificador de Magia de Vida o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador.
 
 ## Esencia de Vida II (+2, 3 mejoras)
 
