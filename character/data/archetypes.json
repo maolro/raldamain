@@ -1,4 +1,73 @@
 {
+    "antimagico": {
+        "name": "Antimágico",
+        "stat": "itl",
+        "modranks": ["magia-protectora"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["disrupcion-magica", "eliminar-magia", "contrahechizo"],
+                "abilities": [
+                    {
+                        "name": "Sello Protector",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "resistances": ["Arcanos"],
+                        "description": "Tiene Resistencia a efectos Arcanos y una vez por combate puede tener éxito automático en un tiro defensivo contra un efecto Arcano."
+                    },
+                    {
+                        "name": "Glifo Mágico",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "skill": "magia-protectora",
+                        "description": "Tiene RANGO glifos activos que tienen sellados hechizos de su elección de Rango RANGO+1 o menos qye conozca. En cualquier momento del combate puede activar un glifo para lanzar el hechizo que tenga sellado como acción bonus. Esto eliminará inmediatamente el glifo escogido. Los glifos se restaurarán al cabo de un día."
+                    }
+                ]
+            },
+            {
+                "attributes": ["retener-persona", "ancla-dimensional"],
+                "abilities": [
+                    {
+                        "name": "Sello Extraplanario",
+                        "type": "Pasiva",
+                        "actions": 1,
+                        "tags": "Arcana, Protectora",
+                        "description": "Todos las invocaciones y criaturas extraplanarias tienen Desventaja atacándole. Estas tampoco afectarle con habilidades que le tengan como objetivo explícito salvo que tengan éxito en un tiro de Salud contra +MOD."
+                    },
+                    {
+                        "name": "Ataque Disruptor",
+                        "type": "Accion",
+                        "uses": "1/Ataque",
+                        "tags": "Arcana, Protectora",
+                        "description": "Al impactar con un ataque físico puede afectar a su objetivo con el hechizo Eliminar Magia como acción bonus. Si el afectado fracasa perderá también un chi de su reserva. Emplear el hechizo de esta manera no gastará su uso disponible cada ronda."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "asesino": {
         "name": "Asesino",
         "stat": "dex",
@@ -145,6 +214,201 @@
             }
         ]
     },
+    "cronomago": {
+        "name": "Cronomago",
+        "stat": "itl",
+        "modranks": ["magia-temporal"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["alteracion-temporal", "robar-el-tiempo", "acelerar", "ralentizar", "parada-cronomagica"],
+                "abilities": [
+                    {
+                        "name": "Premonición",
+                        "type": "Pasiva",
+                        "tags": "Arcana, Temporal",
+                        "description": "Puede defenderse de ataques sorpresa con normalidad además que repetirá todos los unos y doses naturales que obtenga. Recibe también Inmunidad a efectos que le obliguen a repetir tiros."
+                    }
+                ]
+            },
+            {
+                "attributes": ["concentracion-superior", "desplazamiento"],
+                "abilities": [
+                    {
+                        "name": "Dobles Temporales",
+                        "type": "Pasiva",
+                        "tags": "Arcana, Temporal",
+                        "skill": "magia-temporal",
+                        "description": "Al entrar en combate se rodea de RANGO Dobles Temporales. Al ser impactado por un ataque que le tenga explícitamente como objetivo una vez por ronda puede hacer que impacte a un doble, eliminándolo de inmediato. Puede también sacrificar los dobles para anular ataques que realice."
+                    },
+                    {
+                        "name": "Cronomago Experto",
+                        "type": "Pasiva",
+                        "tags": "Arcana, Temproral",
+                        "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia Temporal. Este modificador no se acumula con el otorgado por Mente Desencadenada."
+                    },
+                    {
+                        "name": "Premonición Superior",
+                        "type": "Pasiva",
+                        "tags": "Arcana, Temproral",
+                        "description": "Puede repetir todos los tiros inferiores a un 5 que obtenga y quedarse con el resultado más conveniente."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "evocador": {
+        "name": "Evocador",
+        "stat": "itl",
+        "modranks": ["magia-de-evocacion", "mente-desencadenada"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "magia-de-evocacion"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-de-evocacion"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-de-evocacion"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-de-evocacion"},
+            {"rank": 4, "spell-lvl": 5, "slots": 2, "cat": "magia-de-evocacion"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["especialidad-arcana", "rayo-arcano", "descarga-de-energia", "parada-de-evocacion"],
+                "abilities": [
+                    {
+                        "name": "Mente Desencadenada",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "vulnerabilities": ["Mentales"],
+                        "description": "Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales y 1d6 daño adicional en todos sus habilidades Arcanas a costa de Vulnerabilidad a efectos Mentales."
+                    }
+                ]
+            },
+            {
+                "attributes": ["poder-del-dolor", "presencia-divina", "muro-de-energia"],
+                "abilities": [
+                    {
+                        "name": "Acelerar",
+                        "type": "Pasiva",
+                        "tags": "Arcana, Temporal",
+                        "description": "Recibe una acción adicional como si estuviera siempre bajo los efectos del hechizo Acelerar."
+                    },
+                    {
+                        "name": "Infundir Arma",
+                        "type": "Accion",
+                        "uses": "1/Ataque",
+                        "tags": "Arcana, Mejora",
+                        "description": "Al impactar con un ataque Físico puede provocar los efectos de un hechizo de Evocación que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino."
+                    }
+                ]
+            },
+            {
+                "attributes": ["rayo-desintegrador", "sentido-arcano", "psique-retorcido", "concentracion-superior", "combinar-hechizos"],
+                "abilities": [
+                    {
+                        "name": "Maestría del Chi",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia Arcana y el daño con hechizos Arcanos aumenta por 1d6. Esto cuenta como si estuviera siempre bajo los efectos de Irradiación Arcana."
+                    },
+                    {
+                        "name": "Meteroros de Chi",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "description": "Al entrar en combate activa el hechizo Meteoros de Chi, recibiendo así RANGO <i>contadores de escudo</i> además de la capacidad de hacer un ataque de Rayo Arcano una vez por ronda como acción bonus. Este efecto permanecerá activo hasta que pierda la concentración y puede restaurarse empleando dos acciones."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "legendario": {
+        "name": "Legendario",
+        "stat": "cha",
+        "modranks": [
+            "armas-pesadas",
+            "reflejos",
+            "rastrear"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Acciones Legendarias",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "actions": 3,
+                        "description": "Tiene un turno adicional con tres acciones a -10 iniciativa. Esto funciona de la misma manera que Reflejos Supremos y se acumula con dicha habilidad."
+                    },
+                    {
+                        "name": "Resistencias Legendarias",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "uses": "3/Combate",
+                        "description": "Tiene éxito automático en un tiro defensivo de cualquier tipo. Esto incluye tiros de salvación y funciona de la misma manera que la habilidad Indómito."
+                    },
+                    {
+                        "name": "Líder Nato",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad de la misma manera que Inspirar Heroísmo. Todos sus aliados a distancia media obtendrán los mismos beneficios como si estuvieran afectados por esa misma habilidad."
+                    }
+                ]
+            }
+        ]
+    },
     "luchador": {
         "name": "Luchador",
         "stat": "str",
@@ -185,6 +449,56 @@
                         "name": "Ira de Combate",
                         "type": "Pasiva",
                         "description": "Está siempre afectado por la habilidad Ira, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas físicas y aumentando su daño base con ataques Físicos por 1d6. No podrá mantener la concentración en efectos."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "viajero-planar": {
+        "name": "Viajero Planar",
+        "stat": "itl",
+        "modranks": [
+            "magia-espacial"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["velocidad-superior","esquiva-asombrosa","salto-espacial","portal-menor","puerta-dimensional","bolsillo-interdimensional"],
+                "abilities": [
+                    {
+                        "name": "Esquiva Espacial",
+                        "type": "Reaccion",
+                        "tags": "Arcana, Espacial, Defensiva",
+                        "description": "+MOD para defenderse, funciona contra ataques enemigos de todo tipo. Si también tiene Esquiva puede tirar ambos métodos defensivos contra un único ataque y quedarse con el resultado que más le convenga."
                     }
                 ]
             },
