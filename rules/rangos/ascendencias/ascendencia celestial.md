@@ -48,7 +48,7 @@ Si escoges un ataque este impactará de manera automática, sumando su daño bas
 
 *Innata, Pasiva*
 
-La energía celestial en tu interior te hace especialmente difícil de matar. Recibes Resistencia a Aflicciones y efectos Necróticos además que tu DEF aumentará por un valor igual a tu Rango + 1. 
+La energía celestial en tu interior te hace especialmente difícil de matar. Recibes Resistencia a Aflicciones y efectos Necróticos además que tu DEF aumentará por un valor igual a tu Rango + 1. Este incremento a la defensa cuenta como armadura natural y se acumula con la armadura que ya poseas. 
 
 **Empoderar** (1 vigor o chi): Repites un tiro de muerte y te quedas con el resultado que más te convenga.
 

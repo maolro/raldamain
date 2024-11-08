@@ -10,46 +10,14 @@
         "rank": 0,
         "max": 4,
         "stats": [
-            {
-                "stat": "dex",
-                "rank": 1,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 1,
-                "boost": 1
-            },
-            {
-                "stat": "dex",
-                "rank": 2,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 2,
-                "boost": 1
-            },
-            {
-                "stat": "dex",
-                "rank": 3,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 3,
-                "boost": 1
-            },
-            {
-                "stat": "dex",
-                "rank": 4,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 4,
-                "boost": 1
-            }
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
         ],
         "enchancements": [
             {
@@ -70,12 +38,96 @@
                 ]
             },
             {
-                "attributes": ["analizar-enemigo", "finta-engañosa", "lluvia-de-cuchillos", "puñalada-poderosa"],
+                "attributes": [
+                    "analizar-enemigo",
+                    "finta-engañosa",
+                    "lluvia-de-cuchillos",
+                    "puñalada-poderosa"
+                ],
                 "abilities": [
                     {
                         "name": "Acechar",
                         "type": "Pasiva",
                         "description": "Cuando gaste una acción para ocultarse recibirá los beneficios de Acechar, volviéndose así efectivamente <i>invisible</i>."
+                    }
+                ]
+            },
+            {
+                "attributes": [
+                    "combinar-tecnicas-(ligeras)",
+                    "asalto-impredecible",
+                    "cuchillada",
+                    "contrataque",
+                    "puñalada-quirurgica",
+                    "giro-defensivo",
+                    "gran-acrobata",
+                    "inescrutable"
+                ]
+            },
+            {
+                "attributes": [
+                    "reflejos-supremos",
+                    "libertad-de-movimiento",
+                    "punto-ciego",
+                    "salto-mortal",
+                    "asesinato",
+                    "puñaladas-en-secuencia",
+                    "movilidad-de-batalla",
+                    "vista-de-lince"
+                ]
+            }
+        ]
+    },
+    "clerigo-celestial": {
+        "name": "Clérigo Celestial",
+        "stat": "wis/cha",
+        "modranks": [
+            "magia-divina",
+            "ascendencia-celestial"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["nacido-del-cielo", "cuerpo-puro", "sentido-divino", "manifestacion-divina"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alas-angelicales", "presencia-divina"],
+                "abilities": [
+                    {
+                        "name": "Protección Divina",
+                        "type": "Pasiva",
+                        "description": "Se encuentra siempre en <i>posición defensiva</i> y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina."
+                    },
+                    {
+                        "name": "Poder de los Cielos",
+                        "type": "Pasiva",
+                        "resistances": ["Ataques A Distancia", "Sombríos"],
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Vida o ataques con armas. Le rodea un aura de luz que le otorga Resistencia a ataques A Distancia y efectos Sombríos. El aura se disipará si pierde la concentración y reactivarla cuesta dos acciones."
                     }
                 ]
             },
@@ -95,7 +147,7 @@
     },
     "luchador": {
         "name": "Luchador",
-        "stat": "cha",
+        "stat": "str",
         "modranks": [
             "armas-pesadas",
             "reflejos",
@@ -104,50 +156,22 @@
         "rank": 0,
         "max": 4,
         "stats": [
-            {
-                "stat": "str",
-                "rank": 1,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 1,
-                "boost": 1
-            },
-            {
-                "stat": "str",
-                "rank": 2,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 2,
-                "boost": 1
-            },
-            {
-                "stat": "str",
-                "rank": 3,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 3,
-                "boost": 1
-            },
-            {
-                "stat": "str",
-                "rank": 4,
-                "boost": 1
-            },
-            {
-                "stat": "con",
-                "rank": 4,
-                "boost": 1
-            }
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
         ],
         "enchancements": [
             {
-                "attributes": ["golpe-desestabilizador", "parada-con-arma-pesada", "estilo-salvaje"],
+                "attributes": [
+                    "golpe-desestabilizador",
+                    "parada-con-arma-pesada",
+                    "estilo-salvaje"
+                ],
                 "abilities": [
                     {
                         "name": "Fortitud Superior",

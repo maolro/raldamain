@@ -88,7 +88,8 @@
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
                         <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
-                        :arcspecs="arcanespecs":race="race" :level="level" @update-myspells="updateMySpells"> 
+                        :arcspecs="arcanespecs":race="race" :level="level" :myarch="myarch" 
+                        @update-myspells="updateMySpells"> 
                         </v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
@@ -151,6 +152,10 @@
                     <div v-if="arcString"><b>Arquetipos: </b> {{ arcString }}<br></div>
                     <hr>
                     </hr>
+                    <div v-if="resistances.resistances"><b>Resistencias: </b> {{ resistances.resistances }}<br></div>
+                    <div v-if="resistances.supresist"><b>Resistencias Superiores: </b> {{ resistances.supresist }}<br></div>
+                    <div v-if="resistances.immunities"><b>Inmunidades: </b> {{ resistances.immunities }}<br></div>
+                    <div v-if="resistances.vulnerabilities"><b>Vulnerabilidades: </b> {{ resistances.vulnerabilities }}<br></div>
                     <b>Acciones: </b>{{ actions }}<br>
                     <hr>
                     </hr>

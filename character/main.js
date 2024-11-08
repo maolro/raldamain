@@ -102,14 +102,14 @@ new Vue({
             return Math.max(res1, res2);
         },
         replaceTag: function processString(str, rk, skill) {
-            stat = this.finalStats[this.getMainStat(this.ranks[skill].stat)].value;
+            let stat = this.finalStats[this.getMainStat(this.ranks[skill].stat)].value;
             const getDD = (rk) => {
                 if (rk < 3) return "d6 ";
                 else if (rk < 5) return "d8 ";
                 else return "d10 ";
             }
-            let result = str.replace(/RANGO/g, "" + rk)
-                .replace(/STAT/g, " " + stat)
+            let result = str.replace(/RANGO/g, rk)
+                .replace(/STAT/g, stat)
                 .replace(/DD/g, getDD(rk))
                 .replace(/MOD/g, (rk + stat));
             const operationPattern = /(\d+)([\+\-\x\/])(\d+)/g;
@@ -146,11 +146,31 @@ new Vue({
                     formattedString += ": " + this.replaceTag(obj.description, obj.rank, obj.skill);
                 else
                     formattedString += ": " + obj.description;
+                if (obj.empower && (this.reserves.chi > 0 || this.reserves.stamina > 0))
+                    formattedString += " " + obj.empower;
                 return formattedString;
             }).join("<br></br>");
         },
         formatCharacterInfo() {
-            toMd = (text) => { return text.replace(new RegExp("<br></br>", 'g'), "\n\n") };
+            let toMd = (text) => { return text.replace(new RegExp("<br></br>", 'g'), "\n\n") };
+            let midSect = () => {
+                let ms = [];
+                if(this.talstring) 
+                    ms.push(`**Talentos:** ${this.talstring}"`);
+                if(this.rkString) 
+                    ms.push(`**Rangos:** ${this.rkString}"`);
+                if(this.arcString) 
+                    ms.push(`**Arquetipos:** ${this.arcString}"`);
+                if(this.resistances.resistances) 
+                    ms.push(`**Resistencias:** ${this.resistances.resistances}"`);
+                if(this.resistances.resistances) 
+                    ms.push(`**Resistencias Superiores:** ${this.resistances.supresist}"`);
+                if(this.resistances.resistances) 
+                    ms.push(`**Inmunidades:** ${this.resistances.immunities}"`);
+                if(this.resistances.resistances) 
+                    ms.push(`**Vulnerabilidades:** ${this.resistances.vulnerabilities}"`);
+                return ms.join('\n');
+            }
             // Construct the formatted text
             return `
 # ${this.charactername} (Nivel ${this.level})\n
@@ -158,9 +178,7 @@ new Vue({
 **PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Vigor:** ${this.reserves.stamina}\t**Chi:** ${this.reserves.chi}\n
 **FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
-**Talentos:** ${this.talstring}
-**Rangos:** ${this.rkString}
-**Acciones:** ${this.actions}
+${midSect()}
 ****\n
 ${toMd(this.atbCatString("passive"))}
 ****\n
@@ -231,7 +249,7 @@ ${toMd(this.atbCatString("reactions"))}
                 let cost = attributeObject.cost;
                 let uses = "";
                 if (cost.includes("Chi") || cost.includes("Vigor")) {
-                    cost = cost.replace(/(\d+\s*(Chi|Vigor)\s*)/g, '').trim();
+                    cost = cost.replace(/(\s*(y|o)?\s*\d+\s*(Chi|Vigor))/g, '').trim();
                     uses = "1/Ronda";
                 }
                 attributeObject.cost = cost;
@@ -271,17 +289,79 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return (1 + parseInt(this.level) - rkSum);
         },
+        arcString: function () {
+            let res = [];
+            for (let key in this.myarch) {
+                if (this.myarch[key].rank != 0)
+                    res.push(this.myarch[key].name + " " + this.romanNum(this.myarch[key].rank));
+            }
+            return res.join(", ");
+        },
         rkString: function () {
-            res = [];
+            let res = [];
             for (let key in this.myranks) {
                 if (this.myranks[key].rank != 0)
                     res.push(this.myranks[key].name + " " + this.romanNum(this.myranks[key].rank));
             }
             return res.join(", ");
         },
+        resistances: function(){
+            let rsobj = {vulnerabilities: [], resistances: [], supresist: [], immunities: []};
+            let toNextCat = (rsid, arr, place, next) => {
+                if(arr.includes(rsid)){
+                    arr.splice(arr.indexOf(rsid), 1);
+                    next.push(rsid);
+                }
+                else{
+                    place.push(rsid);
+                }
+            };
+            for(let i in this.myatb["passive"]){
+                let ab = this.myatb.passive[i];
+                if("resistances" in ab){
+                    for(let j in ab.resistances){
+                        let rs = ab.resistances[j];
+                        toNextCat(rs, rsobj.resistances, rsobj.resistances, rsobj.supresist);
+                        toNextCat(rs, rsobj.vulnerabilities, [], []);
+                        toNextCat(rs, rsobj.supresist, [], rsobj.immunities);
+                    }
+                }
+                if("vulnerabilities" in ab){
+                    for(let j in ab.vulnerabilities){
+                        let rs = ab.resistances[j];
+                        toNextCat(rs, rsobj.vulnerabilities, rsobj.vulnerabilities, rsobj.vulnerabilities);
+                        toNextCat(rs, rsobj.resistances, [], []);
+                        toNextCat(rs, rsobj.supresist, [], rsobj.resistances);
+                        toNextCat(rs, rsobj.immunities, [], rsobj.supresist);
+                    }
+                }
+                if("immunities" in ab){
+                    for(let j in ab.vulnerabilities){
+                        let rs = ab.resistances[j];
+                        toNextCat(rs, rsobj.immunities, rsobj.immunities, rsobj.immunities);
+                        toNextCat(rs, rsobj.resistances, [], rsobj.immunities);
+                        toNextCat(rs, rsobj.supresist, [], rsobj.immunities);
+                        toNextCat(rs, rsobj.vulnerabilities, [], rsobj.supresist);
+                    }
+                }
+                if("supresist" in ab){
+                    for(let j in ab.vulnerabilities){
+                        let rs = ab.resistances[j];
+                        toNextCat(rs, rsobj.supresist, rsobj.supresist, rsobj.immunities);
+                        toNextCat(rs, rsobj.resistances, [], rsobj.immunities);
+                        toNextCat(rs, rsobj.immunities, [], rsobj.immunities);
+                        toNextCat(rs, rsobj.vulnerabilities, [], rsobj.resistances);
+                    }
+                }
+            }
+            return {vulnerabilities: rsobj.vulnerabilities.join(", "), 
+                    resistances: rsobj.resistances.join(", "), 
+                    supresist: rsobj.supresist.join(", "), 
+                    immunities: rsobj.immunities.join(", ")};
+        },
         myatb: function () {
             let res = { passive: [], actions: [], reactions: [] };
-            abSwitch = (ability) => {
+            let abSwitch = (ability) => {
                 switch (ability.type) {
                     case "Pasiva": res.passive.push(ability);
                         break;
@@ -350,7 +430,7 @@ ${toMd(this.atbCatString("reactions"))}
                                 if (eid in this.attributes) {
                                     let atb = this.attributes[eid];
                                     atb.rank = (arc.rank + 1);
-                                    abSwitch(this.updateCostAndUses(atb));
+                                    abSwitch(this.updateCostAndUses({...atb}));
                                 }
                             }
                         }
@@ -416,9 +496,6 @@ ${toMd(this.atbCatString("reactions"))}
             if (this.equipment.armor.def != null)
                 res += this.equipment.armor.def;
             return res + this.sumAllKeys('def', this.myatb.passive);
-        },
-        arcString: function () {
-            return "";
         },
         actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
