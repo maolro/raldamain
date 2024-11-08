@@ -3776,9 +3776,6 @@
       "name": "Frenesí de Batalla",
       "skill": "ira",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
       "description": "Puede obtener Ventaja en todos sus ataques de arma o marciales esta ronda a costa de obtener Desventaja en todos sus tiros defensivos"
     },
     "fuego-interior": {

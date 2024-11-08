@@ -355,6 +355,7 @@
                         "name": "Aura Luminosa",
                         "type": "Pasiva",
                         "tags": "Vida, Visual",
+                        "skill": "magia-de-vida",
                         "resistances": ["A Distancia","Sombríos"],
                         "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
                     }
@@ -406,6 +407,7 @@
                         "name": "Mente Desencadenada",
                         "type": "Pasiva",
                         "tags": "Innata",
+                        "skill": "mente-desencadenada",
                         "vulnerabilities": ["Mentales"],
                         "description": "Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales y 1d6 daño adicional en todos sus habilidades Arcanas a costa de Vulnerabilidad a efectos Mentales."
                     }
