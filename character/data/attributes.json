@@ -758,7 +758,8 @@
       "cost": "1 Acción",
       "reach": "Adyacente",
       "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Fuego y hace que objetos inflamables salten en llamas. +1 Acción para hacer un segundo ataque con +1 modificador y daño contra el mismo objetivo quien usará el mismo tiro"
+      "description": "+MOD para atacar, Adyacente, Inflige 1DD+RANGO daño Fuego y hace que objetos inflamables salten en llamas. Puede emplear una acción para hacer un segundo ataque con +1 modificador y daño contra el mismo objetivo, quien mantendrá su resultado defensivo contra él.",
+      "empoderar": "(1 chi) Aumenta el alcance de todos los ataques hechos con este hechizo a cercano durante una ronda."
     },
     "asalto-coordinado": {
       "rank": 4,
@@ -1185,9 +1186,8 @@
       "skill": "magia-de-vida",
       "type": "Accion",
       "cost": "1 Acción y 1 Vigor",
-      "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Muro medio que proporciona Inmunidad a ataques A Distancia y aquellos que lo crucen tiran CON o sufren 1d6+RANGO Radiante y ceguera"
+      "tags": "Vida, Duradera, Radiante",
+      "description": "Crea un muro de luz que ocupa una línea media o esfera pequeña que proporciona Inmunidad a ataques A Distancia. Aquellos que intenten cruzarlo deben tener éxito en un tiro de Salud contra +MOD o sufren 1DD+RANGO Radiante y quedan <i>cegados</i> durante una ronda. El muro durará hasta que pierda la concentración o sea disipado."
     },
     "barrera-luminosa-defensiva": {
       "rank": 2,
@@ -1195,9 +1195,9 @@
       "skill": "magia-de-vida",
       "type": "Reaccion",
       "cost": "1 Vigor",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "1/Ronda, Un enemigo en el camino del muro tira CON o falla automáticamente su ataque. Requiere posición defensiva"
+      "tags": "Vida, Duradera, Radiante",
+      "uses": "1/Ronda",
+      "description": "Un atacante debe tener éxito en un tiro de Salud contra +MOD o su ataque falla automáticamente. Requiere <i>posición defensiva</i>."
     },
     "bateria-de-chi": {
       "rank": 2,
@@ -3786,10 +3786,10 @@
       "name": "Fuego Interior",
       "skill": "ascendencia-de-fuego",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia al Fuego, Inmunidad a quemaduras leves y calor extremo, los elementales de fuego no serán naturalmente hostiles"
+      "tags": "Innata",
+      "resisistances": ["Fuego"],
+      "immunitites": ["Quemaduras Leves", "Calor Extremo"],
+      "description": "Obtiene Resistencia al Fuego además de Inmunidad a <i>quemaduras leves</i> y a efectos ocasionados por calor extremo. Adicionalmente, los elementales de fuego no serán naturalmente hostiles hacia él."
     },
     "fuente-de-toda-la-vida": {
       "rank": 6,
@@ -4356,9 +4356,8 @@
       "skill": "magia-de-vida",
       "type": "Accion",
       "cost": "2 Acciones y 1 Chi",
-      "reach": "Radio corto",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+STAT daño Radiante y ciega durante una ronda. Disipa todos los hechizos Sombríos en el área afectada"
+      "description": "Radio corto, todas las criaturas en el área afectada deben tener éxito en un tiro de Salud contra +MOD o sufren 1DD+STAT daño Radiante y quedan <i>cegadas</i> durante una ronda. Disipa también los hechizos Sombríos en el área afectada.",
+      "empower": "(1 chi) Este efecto continúa hasta su siguiente turno, otorgando Resistencia a ataques A Distancia y forzando a todas las criaturas que entren en un espacio a distancia cercana deben volver a defenderse de este hechizo."
     },
     "hasta-el-limite": {
       "rank": 3,
@@ -5155,7 +5154,8 @@
       "cost": "1 Acción",
       "reach": "Medio",
       "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Fuego y hace que objetos inflamables salten en llamas"
+      "description": "+MOD para atacar, Distancia media, Inflige 1DD+RANGO daño Fuego. Si impacta a un objeto incendiario salta en llamas.",
+      "empower": "(1 chi): Ataca a un objetivo adicional a distancia media."
     },
     "lluvia-acida": {
       "rank": 5,
@@ -6177,10 +6177,8 @@
       "name": "Parada de Fuego",
       "skill": "magia-de-fuego",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para defenderse de ataques físicos o mágicos"
+      "tags": "Fuego, Defensiva",
+      "description": "+MOD para defenderse. Funciona contra ataques físicos y mágicos."
     },
     "parada-de-hielo": {
       "rank": 1,
@@ -8433,10 +8431,8 @@
       "name": "Visión Térmica",
       "skill": "ascendencia-de-fuego",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Percibe el calor de otras criaturas a distancia media"
+      "tags": "Innata",
+      "description": "Puede detectar todos los seres vivos a distancia media que emitan calor de alguna manera. Visión Térmica puede activarse o desactivarse como acción bonus y funciona contra criaturas ocultas o invisibles. "
     },
     "vision-verdadera": {
       "rank": 4,

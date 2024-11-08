@@ -307,50 +307,85 @@ ${toMd(this.atbCatString("reactions"))}
         },
         resistances: function(){
             let rsobj = {vulnerabilities: [], resistances: [], supresist: [], immunities: []};
-            let toNextCat = (rsid, arr, place, next) => {
-                if(arr.includes(rsid)){
-                    arr.splice(arr.indexOf(rsid), 1);
-                    next.push(rsid);
-                }
-                else{
-                    place.push(rsid);
-                }
-            };
+
             for(let i in this.myatb["passive"]){
                 let ab = this.myatb.passive[i];
                 if("resistances" in ab){
                     for(let j in ab.resistances){
                         let rs = ab.resistances[j];
-                        toNextCat(rs, rsobj.resistances, rsobj.resistances, rsobj.supresist);
-                        toNextCat(rs, rsobj.vulnerabilities, [], []);
-                        toNextCat(rs, rsobj.supresist, [], rsobj.immunities);
+                        if(rsobj.resistances.includes(rs)){
+                            rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
+                            rsobj.supresist.push(rs);
+                        }
+                        else if(rsobj.supresist.includes(rs)){
+                            rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
+                            rsobj.immunities.push(rs);
+                        }
+                        else if(rsobj.vulnerabilities.includes(rs)){
+                            rsobj.vulnerabilities.splice(supresist.indexOf(rs), 1);
+                        }
+                        else if(!rsobj.immunities.includes(rs)){
+                            rsobj.resistances.push(rs);
+                        }
                     }
                 }
                 if("vulnerabilities" in ab){
                     for(let j in ab.vulnerabilities){
-                        let rs = ab.resistances[j];
-                        toNextCat(rs, rsobj.vulnerabilities, rsobj.vulnerabilities, rsobj.vulnerabilities);
-                        toNextCat(rs, rsobj.resistances, [], []);
-                        toNextCat(rs, rsobj.supresist, [], rsobj.resistances);
-                        toNextCat(rs, rsobj.immunities, [], rsobj.supresist);
+                        let rs = ab.vulnerabilities[j];
+                        if(rsobj.immunities.includes(rs)){
+                            rsobj.immunities.splice(rsobj.immunities.indexOf(rs), 1);
+                            rsobj.supresist.push(rs);
+                        }
+                        else if(rsobj.supresist.includes(rs)){
+                            rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
+                            rsobj.resistances.push(rs);
+                        }
+                        else if(rsobj.resistances.includes(rs)){
+                            rsobj.resistances.splice(resistances.indexOf(rs), 1);
+                        }
+                        else if(!rsobj.vulnerabilities.includes(rs)){
+                            rsobj.vulnerabilities.push(rs);
+                        }
                     }
                 }
                 if("immunities" in ab){
-                    for(let j in ab.vulnerabilities){
-                        let rs = ab.resistances[j];
-                        toNextCat(rs, rsobj.immunities, rsobj.immunities, rsobj.immunities);
-                        toNextCat(rs, rsobj.resistances, [], rsobj.immunities);
-                        toNextCat(rs, rsobj.supresist, [], rsobj.immunities);
-                        toNextCat(rs, rsobj.vulnerabilities, [], rsobj.supresist);
+                    for(let j in ab.immunities){
+                        let rs = ab.immunities[j];
+                        if(rsobj.resistances.includes(rs)){
+                            rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
+                            rsobj.immunities.push(rs);
+                        }
+                        else if(rsobj.supresist.includes(rs)){
+                            rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
+                            rsobj.immunities.push(rs);
+                        }
+                        else if(rsobj.vulnerabilities.includes(rs)){
+                            rsobj.vulnerabilities.splice(rsobj.vulnerabilities.indexOf(rs), 1);
+                            rsobj.supresist.push(rs);
+                        }
+                        else if(!rsobj.immunities.includes(rs)){
+                            rsobj.immunities.push(rs);
+                        }
                     }
                 }
                 if("supresist" in ab){
                     for(let j in ab.vulnerabilities){
                         let rs = ab.resistances[j];
-                        toNextCat(rs, rsobj.supresist, rsobj.supresist, rsobj.immunities);
-                        toNextCat(rs, rsobj.resistances, [], rsobj.immunities);
-                        toNextCat(rs, rsobj.immunities, [], rsobj.immunities);
-                        toNextCat(rs, rsobj.vulnerabilities, [], rsobj.resistances);
+                        if(rsobj.resistances.includes(rs)){
+                            rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
+                            rsobj.immunities.push(rs);
+                        }
+                        else if(rsobj.supresist.includes(rs)){
+                            rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
+                            rsobj.immunities.push(rs);
+                        }
+                        else if(rsobj.vulnerabilities.includes(rs)){
+                            rsobj.vulnerabilities.splice(rsobj.vulnerabilities.indexOf(rs), 1);
+                            rsobj.resistances.push(rs);
+                        }
+                        else if(!rsobj.immunities.includes(rs)){
+                            rsobj.supresist.push(rs);
+                        }
                     }
                 }
             }
@@ -363,11 +398,17 @@ ${toMd(this.atbCatString("reactions"))}
             let res = { passive: [], actions: [], reactions: [] };
             let abSwitch = (ability) => {
                 switch (ability.type) {
-                    case "Pasiva": res.passive.push(ability);
+                    case "Pasiva": 
+                        if(!res.passive.includes(ability))
+                            res.passive.push(ability);
                         break;
-                    case "Accion": res.actions.push(ability);
+                    case "Accion": 
+                        if(!res.actions.includes(ability))
+                            res.actions.push(ability);
                         break;
-                    case "Reaccion": res.reactions.push(ability);
+                    case "Reaccion": 
+                        if(!res.reactions.includes(ability))
+                            res.reactions.push(ability);
                         break;
                 }
             };

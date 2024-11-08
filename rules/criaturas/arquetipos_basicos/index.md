@@ -42,7 +42,7 @@ La criatura se ha especializado en combatir sobre una montura o la parte inferio
 ## Legendario (+2, no disponible para invocaciones)
 
 - **Aumentos Estadísticos:** Incrementa todas sus estadísticas por 1 junto a sus limitadores.
-- **Acciones Legendarias:** Tiene un turno adicional con tres acciones a -10 iniciativa. Esto funciona de la misma manera que Reflejos Supremos y se acumula con esa habilidad.
+- **Acciones Legendarias:** Tiene un turno adicional con tres acciones a -10 iniciativa. Esto funciona de la misma manera que Reflejos Supremos y se acumula con dicha habilidad.
 - **Resistencias Legendarias:** Obtiene tres usos gratuitos de la habilidad Indómito que puede gastar para tener éxito automático en tiros defensivos de cualquier tipo.
 - **Líder nato:** Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad de la misma manera que Inspirar Heroísmo. Todos sus aliados a distancia media obtendrán los mismos beneficios como si estuvieran afectados por esa misma habilidad.
 

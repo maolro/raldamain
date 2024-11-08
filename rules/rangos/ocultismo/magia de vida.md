@@ -96,7 +96,7 @@ Un Vínculo Vital durará hasta que tu aliado vinculado elija cancelarlo o pierd
 
 Creas una barrera de luz deslumbrante para protegerte a ti mismo y a otros de los daños. La barrera surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana. La barrera es completamente intangible y no puede ser destruida por medios convencionales, pero será disipada por efectos de Sombra o Gaseosos con la suficiente potencia. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. 
 
-La barrera proporcionará Inmunidad a todos los ataques a distancia que no sean de área para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de CON frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. 
+La barrera proporcionará Inmunidad a todos los ataques a distancia que no sean de área para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de Salud frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. 
 
 Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de CON frente a tu magia de Vida o la luz hará que falle automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
 
