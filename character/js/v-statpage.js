@@ -6,11 +6,10 @@ Vue.component('v-statpage', {
                 <input type="text" v-model="charactername" placeholder="Nombre" @input="setName" 
                 style="width: 100%;">
             </div>
-                <div class="col-6">
-                    <b class="justify-content-around mr-2">Nivel: </b>
-                        <v-minusplusfield v-bind:value="level" :min="1" :max="20"
-                            v-on:input="setLevel"></v-minusplusfield>
-                </div>
+            <div class="col-6">
+                <b class="justify-content-around mr-2">Nivel: </b>
+                <v-minusplusfield v-bind:value="level" :min="1" :max="20" v-on:input="setLevel"></v-minusplusfield>
+            </div>
         </div>
         <div class="row my-2 mx-2 justify-content-around">
             <b class="mr-1">Raza:</b>
@@ -42,7 +41,10 @@ Vue.component('v-statpage', {
         },
         stats:{
             type: Object
-        }
+        },
+        arclevels: {
+            type: Number
+        },
     },
     data: function () {
         return {
@@ -55,10 +57,10 @@ Vue.component('v-statpage', {
             for (let key in this.stats) {
                 statSum += this.stats[key].value;
             }
-            return 10 + parseInt(this.level) - statSum;
+            return 10 + parseInt(this.level) - statSum - this.arclevels*2;
         },
         statlimit: function () {
-            return Math.floor(3 + this.level / 3);
+            return Math.max(Math.floor((3 + this.level - this.arclevels*2) / 3), 3);
         },
     },
     methods: {
@@ -78,6 +80,11 @@ Vue.component('v-statpage', {
         races: {
             handler: function (newVal) {
                 this.races = newVal;
+            }
+        },
+        arclevels: {
+            handler: function (newVal) {
+                this.arclevels = newVal;
             }
         },
     }

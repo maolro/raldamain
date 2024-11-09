@@ -76,7 +76,7 @@
                 <!-- Tab Content -->
                 <div class="tab-content border border-top-0 p-2" id="mainTabContent">
                     <div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-                        <v-statpage v-bind:level="level" :stats="stats" :races="races"
+                        <v-statpage v-bind:level="level" :stats="stats" :races="races" :arclevels="arclevels"
                         :charactername="charactername" @set-race="race = $event"
                         @set-level="level = $event" @set-name="charactername = $event"></v-statpage>
                     </div>

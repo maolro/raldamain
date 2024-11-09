@@ -24,6 +24,7 @@
                         "type": "Pasiva",
                         "tags": "Arcana",
                         "resistances": ["Arcanos"],
+                        "skill": "magia-protectora",
                         "description": "Tiene Resistencia a efectos Arcanos y una vez por combate puede tener éxito automático en un tiro defensivo contra un efecto Arcano."
                     },
                     {
@@ -32,6 +33,14 @@
                         "tags": "Arcana",
                         "skill": "magia-protectora",
                         "description": "Tiene RANGO glifos activos que tienen sellados hechizos de su elección de Rango RANGO+1 o menos qye conozca. En cualquier momento del combate puede activar un glifo para lanzar el hechizo que tenga sellado como acción bonus. Esto eliminará inmediatamente el glifo escogido. Los glifos se restaurarán al cabo de un día."
+                    },
+                    {
+                        "name": "Armadura de Fuerza",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "skill": "magia-protectora",
+                        "def": "RANGOx2",
+                        "description": "Está rodeado de una armadura mágica que aumenta su Defensa por RANGOx2 (ya incluido)."
                     }
                 ]
             },
@@ -43,6 +52,7 @@
                         "type": "Pasiva",
                         "actions": 1,
                         "tags": "Arcana, Protectora",
+                        "skill": "magia-protectora",
                         "description": "Todos las invocaciones y criaturas extraplanarias tienen Desventaja atacándole. Estas tampoco afectarle con habilidades que le tengan como objetivo explícito salvo que tengan éxito en un tiro de Salud contra +MOD."
                     },
                     {
@@ -50,6 +60,7 @@
                         "type": "Accion",
                         "uses": "1/Ataque",
                         "tags": "Arcana, Protectora",
+                        "skill": "magia-protectora",
                         "description": "Al impactar con un ataque físico puede afectar a su objetivo con el hechizo Eliminar Magia como acción bonus. Si el afectado fracasa perderá también un chi de su reserva. Emplear el hechizo de esta manera no gastará su uso disponible cada ronda."
                     }
                 ]
@@ -410,6 +421,14 @@
                         "skill": "mente-desencadenada",
                         "vulnerabilities": ["Mentales"],
                         "description": "Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales y 1d6 daño adicional en todos sus habilidades Arcanas a costa de Vulnerabilidad a efectos Mentales."
+                    },
+                    {
+                        "name": "Armadura del Mago",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "skill": "magia-de-evocacion",
+                        "def": "RANGOx2",
+                        "description": "Está rodeado de una armadura mágica que aumenta su Defensa por RANGOx2 (ya incluido)."
                     }
                 ]
             },
@@ -420,6 +439,7 @@
                         "name": "Acelerar",
                         "type": "Pasiva",
                         "tags": "Arcana, Temporal",
+                        "skill": "mente-desencadenada",
                         "description": "Recibe una acción adicional como si estuviera siempre bajo los efectos del hechizo Acelerar."
                     },
                     {
@@ -427,6 +447,7 @@
                         "type": "Accion",
                         "uses": "1/Ataque",
                         "tags": "Arcana, Mejora",
+                        "skill": "magia-de-evocacion",
                         "description": "Al impactar con un ataque Físico puede provocar los efectos de un hechizo de Evocación que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino."
                     }
                 ]
@@ -438,12 +459,14 @@
                         "name": "Maestría del Chi",
                         "type": "Pasiva",
                         "tags": "Arcana",
+                        "skill": "magia-de-evocacion",
                         "description": "Recibe Ventaja en todos sus tiros relacionados con Magia Arcana y el daño con hechizos Arcanos aumenta por 1d6. Esto cuenta como si estuviera siempre bajo los efectos de Irradiación Arcana."
                     },
                     {
                         "name": "Meteroros de Chi",
                         "type": "Pasiva",
                         "tags": "Arcana",
+                        "skill": "magia-de-evocacion",
                         "description": "Al entrar en combate activa el hechizo Meteoros de Chi, recibiendo así RANGO <i>contadores de escudo</i> además de la capacidad de hacer un ataque de Rayo Arcano una vez por ronda como acción bonus. Este efecto permanecerá activo hasta que pierda la concentración y puede restaurarse empleando dos acciones."
                     }
                 ]

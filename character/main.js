@@ -543,6 +543,9 @@ ${toMd(this.atbCatString("reactions"))}
         actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
         },
+        arclevels: function(){
+            return this.sumAllKeys('rank', this.myarch);
+        }
     },
     created() {
         this.getData("talents", './data/talents.json');
