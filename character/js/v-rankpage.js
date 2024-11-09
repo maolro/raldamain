@@ -1,12 +1,16 @@
 Vue.component('v-rankpage', {
     template: `
 <div>
-
+    <div class="row my-2 justify-content-around">
+        <b class="mr-1">Rangos gratuitos:</b>
+        <v-minusplusfield v-bind:value="freeranks" :min="0" :max="6"
+        v-on:input="freeranks = $event"></v-minusplusfield>
+    </div>
     <div class="row my-2 justify-content-center">
-        <b class="mr-1">Puntos a distribuir:</b>{{ rkpoints }}
+        <b class="mr-1">Rangos a distribuir:</b>{{ rktotal }}
     </div>
     <div v-for="(value, index) in myranks" :key="index">
-        <v-rank-selecter v-bind:ranks="ranks" :index="index" :limit="ranklimit" :enableval="rkpoints"
+        <v-rank-selecter v-bind:ranks="ranks" :index="index" :limit="ranklimit" :enableval="rktotal"
         @update-rank-level="handleRankLevelUpdate" @remove-rank="removeRank"></v-rank-selecter>
     </div>
     <div class="row my-2 justify-content-center">
@@ -28,6 +32,11 @@ Vue.component('v-rankpage', {
             default: 1
         }
     },
+    data: function() {
+        return {
+            freeranks: 0,
+        };
+    },
     computed: {
         myranks: function() {
             return this.$root.myranks;
@@ -35,6 +44,9 @@ Vue.component('v-rankpage', {
         ranklimit() {
             return Math.floor(1 + (this.level - 1) / 3);
         },
+        rktotal(){
+            return (this.rkpoints + this.freeranks);
+        }
     },
     methods: {
         setRank: function (key, level, index) {
