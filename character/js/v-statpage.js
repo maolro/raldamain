@@ -60,7 +60,7 @@ Vue.component('v-statpage', {
             return 10 + parseInt(this.level) - statSum - this.arclevels*2;
         },
         statlimit: function () {
-            return Math.max(Math.floor((3 + this.level - this.arclevels*2) / 3), 3);
+            return Math.max(Math.floor(3 + (this.level - this.arclevels*2) / 3), 3);
         },
     },
     methods: {
