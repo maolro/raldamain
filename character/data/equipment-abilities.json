@@ -7,6 +7,13 @@
         "tags": "Físico, Ataque, A Distancia", 
         "description": "Distancia lejana, +MOD para impactar, 1d10 +STAT daño Perforante."
     },
+    "bateria-de-chi":{
+        "name": "Batería de Chi",
+        "type": "Pasiva", 
+        "tags": "Objeto, Arcano", 
+        "chi": 3,
+        "description": "Tiene una batería de chi que aumenta su reserva máxima de chi por 3. (ya incluida)"
+    },
     "daga": {
         "name": "Daga",
         "skill":"armas-ligeras", 

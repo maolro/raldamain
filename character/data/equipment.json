@@ -14,5 +14,8 @@
         "garra": {"name": "Garra", "eqab": "garra"},
         "gran-hacha": {"name": "Gran Hacha", "eqab": "gran-hacha"},
         "lanza": {"name": "Lanza", "eqab": "lanza"}
+    },
+    "bag":{
+        "bateria-chi": {"name": "Batería de Chi", "eqab": "bateria-de-chi"}
     }
 }

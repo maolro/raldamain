@@ -19,6 +19,7 @@
     <script src="js/v-spellpage.js" type="text/javascript"></script>
     <script src="js/v-statpage.js" type="text/javascript"></script>
     <script src="js/v-archpage.js" type="text/javascript"></script>
+    <script src="js/v-equipage.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -93,29 +94,8 @@
                         </v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
-                        <div class="row justify-content-center my-2">
-                            <h2>Equipamiento</h2>
-                        </div>
-                        <div class="row my-2 justify-content-center">
-                            <div class="col-6">
-                                <b>Armadura</b>
-                            </div>
-                            <div class="col-6">
-                                <v-select-search v-bind:optionsobj="eqList.armor"
-                                    v-on:selected-key="addItem('armor', 'armor', $event)">
-                                </v-select-search>
-                            </div>
-                        </div>
-                        <div class="row my-2 justify-content-center">
-                            <div class="col-6">
-                                <b>Mano Principal</b>
-                            </div>
-                            <div class="col-6">
-                                <v-select-search v-bind:optionsobj="eqList.weapons"
-                                    v-on:selected-key="addItem('mainHand', 'weapons', $event)">
-                                </v-select-search>
-                            </div>
-                        </div>
+                        <v-equipage v-bind:equipment="equipment" :eqlist="eqList" :bagslots="equipment['bag']">
+                        </v-equipage>
                     </div>
                     <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
                         <v-archpage v-bind:archetypes="archetypes" :level="level" :rkpoints="rkpoints">
