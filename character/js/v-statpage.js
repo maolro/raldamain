@@ -27,7 +27,7 @@ Vue.component('v-statpage', {
                     <v-minusplusfield v-bind:value="value.value" :min="-1" :max="statlimit"
                         :enableval="statpoints" v-on:input="value.value = $event"></v-minusplusfield>
                 </div>
-        </div>
+            </div>
      </div>`,
     props: {
         level: {

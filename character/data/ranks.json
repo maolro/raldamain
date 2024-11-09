@@ -360,7 +360,7 @@
   },
   "guerrero-divino": {
     "name": "Guerrero Divino",
-    "stat": "cha",
+    "stat": "cha/wis",
     "reserve": "stamina/chi",
     "rank": 0,
     "freeranks": 0,

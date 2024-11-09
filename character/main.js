@@ -23,11 +23,13 @@ new Vue({
         attributes: {},
         eqList: {
             armor: {},
-            weapons: {}
+            weapons: {},
+            bag: []
         },
         equipment: {
             armor: {},
-            mainHand: {}
+            mainHand: {},
+            bag: []
         },
         eqAtb: {},
         myspells: [],
@@ -206,22 +208,6 @@ ${toMd(this.atbCatString("reactions"))}
 
             // Clean up by removing the link
             document.body.removeChild(link);
-        },
-        addItem(slot, cat, id) {
-            if (id in this.eqList[cat])
-                this.equipment[slot] = this.eqList[cat][id];
-            else
-                this.equipment[slot] = {};
-        },
-        eqOptions(slot) {
-            res = [];
-            if (slot in this.eqList) {
-                res = Object.keys(this.eqList[slot]).map(key => ({
-                    key: key,
-                    name: this.eqList[slot][key].name
-                }));
-            }
-            return res;
         },
         sumAllKeys(key, arr) {
             res = 0;
@@ -415,16 +401,24 @@ ${toMd(this.atbCatString("reactions"))}
             //Add equipment abilities
             for (let key in this.equipment) {
                 let slot = this.equipment[key];
-                let atlist = [];
-                if ('eqab' in slot)
-                    atlist = slot.eqab.split(",");
-                for (let i in atlist) {
-                    let eid = atlist[i].trim();
-                    if (eid in this.eqAtb) {
-                        let atb = this.eqAtb[eid];
-                        if(atb.skill)
-                            atb["rank"] = this.getRank(atb.skill);
-                        abSwitch(atb);
+                if(slot != 'bag' && 'eqab' in slot){
+                    let atlist = slot.eqab.split(",");
+                    for (let i in atlist) {
+                        let eid = atlist[i].trim();
+                        if (eid in this.eqAtb) {
+                            let atb = this.eqAtb[eid];
+                            if(atb.skill)
+                                atb["rank"] = this.getRank(atb.skill);
+                            abSwitch(atb);
+                        }
+                    }
+                }
+                else if(slot == 'bag'){
+                    for (let i in slot) {
+                        let eid = slot[i];
+                        if ('eqab' in eid && eid.eqab in this.eqAtb) {
+                            abSwitch(atb);
+                        }
                     }
                 }
             }
@@ -489,8 +483,8 @@ ${toMd(this.atbCatString("reactions"))}
             return res;
         },
         reserves: function () {
-            chiRes = 0;
-            staminaRes = 0;
+            let chiRes = 0;
+            let staminaRes = 0;
             for (let i in this.myranks) {
                 rk = this.myranks[i];
                 switch (rk.reserve) {
@@ -503,6 +497,7 @@ ${toMd(this.atbCatString("reactions"))}
                         break;
                 }
             }
+            chiRes += this.sumAllKeys('chi', this.myatb.passive);
             return { chi: chiRes, stamina: staminaRes };
         },
         finalStats: function () {

@@ -8368,9 +8368,8 @@
       "name": "Vínculo Primigenio",
       "skill": "ascendencia-primigenia",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Innata",
+      "resistances": ["Fuego","Frío","Eléctrico","Sónico","Radiante"],
       "description": "Resistenica al Fuego, Frío, Eléctrico, Sónico y Radiante. Puede comunicarse con animales y espíritus, quienes serán amistosos hacia él"
     },
     "vinculo-vital": {

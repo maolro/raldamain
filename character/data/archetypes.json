@@ -79,6 +79,91 @@
             }
         ]
     },
+    "arquero": {
+        "name": "Arquero",
+        "stat": "dex",
+        "modranks": [
+            "armas-a-distancia",
+            "reflejos"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": [
+                    "evasion",
+                    "velocidad-superior",
+                    "esquiva-asombrosa",
+                    "esquiva"
+                ],
+                "abilities": [
+                    {
+                        "name": "Disparo Certero",
+                        "type": "Accion",
+                        "cost": "1 Acción",
+                        "skill": "armas-a-distancia",
+                        "tags": ["A Distancia","Mejora"],
+                        "description": "Suma su nivel de talento de Percepción a su siguiente tiro de ataque con un arma a distancia y mejora su daño base con este por 1d6. Al impactar provocará también una <i>herida permanente leve</i> al objetivo."
+                    }
+                ]
+            },
+            {
+                "attributes": [
+                    "disparo-engañoso",
+                    "disparo-triple",
+                    "recarga-rapida",
+                    "desarme-agil",
+                    "giro-defensivo"
+                ],
+                "abilities": [
+                    {
+                        "name": "Ojo del Francotirador",
+                        "type": "Accion",
+                        "cost": "1 Acción",
+                        "skill": "armas-a-distancia",
+                        "tags": ["A Distancia","Mejora"],
+                        "description": "Suma su nivel de talento de Percepción a su siguiente tiro de ataque con un arma a distancia y mejora su daño base con este por 2d6. Al impactar provocará también una <i>herida permanente leve</i> al objetivo además que puede <i>ocultarse</i> como acción bonus si se encuentra en un lugar con cubierta."
+                    }
+                ]
+            },
+            {
+                "attributes": [
+                    "combinar-tecnicas-(a-distancia)",
+                    "gran-acrobata",
+                    "sexto-sentido",
+                    "cubierta-de-disparos",
+                    "interceptar-ataque",
+                    "disparo-penetrante"
+                ]
+            },
+            {
+                "attributes": [
+                    "reflejos-supremos",
+                    "libertad-de-movimiento",
+                    "punto-ciego",
+                    "salto-mortal",
+                    "asesinato",
+                    "puñaladas-en-secuencia",
+                    "movilidad-de-batalla",
+                    "vista-de-lince"
+                ]
+            }
+        ]
+    },
     "asesino": {
         "name": "Asesino",
         "stat": "dex",
@@ -479,6 +564,106 @@
             }
         ]
     },
+    "guerrero-espiritual": {
+        "name": "Guerrero Espiritual",
+        "stat": "wis",
+        "modranks": [
+            "guerrero-divino",
+            "ascendencia-primigenia"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino"},
+            {"rank": 2, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino"},
+            {"rank": 3, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino"},
+            {"rank": 4, "spell-lvl": 4, "slots": 2, "cat": "guerrero-divino"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["comunion-con-la-naturaleza", "sentido-divino"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "def": "RANGOx2",
+                        "hp": "RANGOx2",
+                        "skill": "guerrero-divino",
+                        "resistances": ["Miedo", "Mentales"],
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Azote Divino",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón espiritual. Esto funciona de la misma manera que el hechizo Azote Divino. En lugar de infligir daño puede provocar los efectos de un hechizo que conozca al impactar de la misma manera que Fuerza Salvaje."
+                    }
+                ]
+            },
+            {
+                "attributes": ["vinculo-primigenio"],
+                "abilities": [
+                    {
+                        "name": "Aura Protectora",
+                        "type": "Reaccion",
+                        "resistances": ["Arcanos", "Divinos"],
+                        "tags": "Divina, Defensiva",
+                        "uses": "1/Ronda",
+                        "skill": "guerrero-divino",
+                        "description": "Tiene éxito automático en un tiro defensivo contra un efecto Divino o Arcano de Rango RANGO o menos."
+                    },
+                    {
+                        "name": "Presencia Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina, Miedo, Duradera",
+                        "skill": "guerrero-divino",
+                        "description": "Todas las criaturas a distancia media que puedan verle deben tener éxito en un tiro de Voluntad contra +MOD o aumentan su nivel de miedo por un paso. Aquellos  que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierda la concentración y reponerlo cuesta dos acciones."
+                    },
+                    {
+                        "name": "Golpe Desacralizador",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico puede eliminar un efecto Arcano o Divino que tenga activo el objetivo si tiene éxito en un tiro con modificador +MOD contra la habilidad mágica del objetivo. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino"
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "legendario": {
         "name": "Legendario",
         "stat": "cha",
@@ -505,6 +690,7 @@
                         "name": "Acciones Legendarias",
                         "type": "Pasiva",
                         "tags": "Innata",
+                        "skill": "presencia",
                         "actions": 3,
                         "description": "Tiene un turno adicional con tres acciones a -10 iniciativa. Esto funciona de la misma manera que Reflejos Supremos y se acumula con dicha habilidad."
                     },
@@ -513,12 +699,14 @@
                         "type": "Pasiva",
                         "tags": "Innata",
                         "uses": "3/Combate",
+                        "skill": "presencia",
                         "description": "Tiene éxito automático en un tiro defensivo de cualquier tipo. Esto incluye tiros de salvación y funciona de la misma manera que la habilidad Indómito."
                     },
                     {
                         "name": "Líder Nato",
                         "type": "Pasiva",
                         "tags": "Innata",
+                        "skill": "presencia",
                         "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad de la misma manera que Inspirar Heroísmo. Todos sus aliados a distancia media obtendrán los mismos beneficios como si estuvieran afectados por esa misma habilidad."
                     }
                 ]
