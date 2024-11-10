@@ -160,23 +160,23 @@ new Vue({
                 if(this.talstring) 
                     ms.push(`**Talentos:** ${this.talstring}"`);
                 if(this.rkString) 
-                    ms.push(`**Rangos:** ${this.rkString}"`);
+                    ms.push(`**Rangos:** ${this.rkString}`);
                 if(this.arcString) 
-                    ms.push(`**Arquetipos:** ${this.arcString}"`);
+                    ms.push(`**Arquetipos:** ${this.arcString}`);
                 if(this.resistances.resistances) 
-                    ms.push(`**Resistencias:** ${this.resistances.resistances}"`);
-                if(this.resistances.resistances) 
-                    ms.push(`**Resistencias Superiores:** ${this.resistances.supresist}"`);
-                if(this.resistances.resistances) 
-                    ms.push(`**Inmunidades:** ${this.resistances.immunities}"`);
-                if(this.resistances.resistances) 
-                    ms.push(`**Vulnerabilidades:** ${this.resistances.vulnerabilities}"`);
+                    ms.push(`**Resistencias:** ${this.resistances.resistances}`);
+                if(this.resistances.supresist) 
+                    ms.push(`**Resistencias Superiores:** ${this.resistances.supresist}`);
+                if(this.resistances.immunities) 
+                    ms.push(`**Inmunidades:** ${this.resistances.immunities}`);
+                if(this.resistances.vulnerabilities) 
+                    ms.push(`**Vulnerabilidades:** ${this.resistances.vulnerabilities}`);
                 return ms.join('\n');
             }
             // Construct the formatted text
             return `
 # ${this.charactername} (Nivel ${this.level})\n
-****\n
+****\n  
 **PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Vigor:** ${this.reserves.stamina}\t**Chi:** ${this.reserves.chi}\n
 **FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
