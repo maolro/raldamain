@@ -18,6 +18,8 @@ La criatura se ha especializado en combatir con cadenas, empleándolas con gran 
 
 ## Encadenado II (+2, requiere 3 mejoras)
 
+
+
 ## Encadenado III (+2, requiere 5 mejoras)
 
 ## Encadenado IV (+2, requiere 7 mejoras)

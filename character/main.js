@@ -24,11 +24,13 @@ new Vue({
         eqList: {
             armor: {},
             weapons: {},
+            head: {},
             bag: []
         },
         equipment: {
             armor: {},
             mainHand: {},
+            head: {},
             bag: []
         },
         eqAtb: {},
@@ -60,13 +62,16 @@ new Vue({
         },
         getMod: function (talid) {
             mainstat = this.getMainStat(this.talents[talid].stat);
+            if(this.finalStats[mainstat].value == "-")
+                return "-";
             return this.talents[talid].level + this.finalStats[mainstat].value;
         },
         getMainStat: function (statstring) {
             res = statstring;
             if (statstring.includes("/")) {
                 stv = statstring.split("/");
-                if (this.finalStats[stv[0]].value < this.finalStats[stv[1]].value) {
+                if (this.finalStats[stv[0]].value < this.finalStats[stv[1]].value 
+                    || this.finalStats[stv[0]].value == "-") {
                     res = stv[1];
                 }
                 else {
@@ -90,7 +95,7 @@ new Vue({
             let res1 = 0;
             let res2 = 0;
             for (let i in this.myranks) {
-                if (id == this.myranks[i].id) {
+                if (id == this.myranks[i].id && this.myranks[i].rank > res1) {
                     res1 = this.myranks[i].rank;
                     break;
                 }
@@ -113,8 +118,12 @@ new Vue({
             let result = str.replace(/RANGO/g, rk)
                 .replace(/STAT/g, stat)
                 .replace(/DD/g, getDD(rk))
-                .replace(/MOD/g, (rk + stat));
+            if(stat != "-")
+                result = result.replace(/MOD/g, (rk + stat));
+            else
+                result = result.replace(/MOD/g, "NaN");
             const operationPattern = /(\d+)([\+\-\x\/])(\d+)/g;
+            const complexPattern = /\((\d+)([\+\-\x\/])(\d+)\)x(\d+)/g;
             const calculateOperation = (match, leftOperand, operator, rightOperand) => {
                 leftOperand = parseInt(leftOperand);
                 rightOperand = parseInt(rightOperand);
@@ -131,6 +140,10 @@ new Vue({
                         return match; // Return the original match if the operator is unknown
                 }
             };
+            result = result.replace(complexPattern, (match, left, operator, right, multiplier) => {
+                const innerResult = calculateOperation(match, left, operator, right);
+                return innerResult * parseInt(multiplier);
+            });
             result = result.replace(operationPattern, calculateOperation);
             return result;
         },
@@ -246,13 +259,24 @@ ${toMd(this.atbCatString("reactions"))}
     },
     computed: {
         hp: function () {
-            return Math.floor(3 + (this.level - 1) / 3 + this.finalStats.con.value
-                + this.sumAllKeys('hp', this.myatb.passive));
+            let hpstat;
+            if(this.finalStats.con.value != "-")
+                hpstat = this.finalStats.con.value;
+            else
+                hpstat = this.finalStats.cha.value;
+            return Math.floor(3 + (this.level - 1) / 3 + hpstat + this.sumAllKeys('hp', this.myatb.passive));
         },
         vt: function () {
-            return (2 + this.level / 1 + this.finalStats.con.value + this.sumAllKeys('vt', this.myatb.passive));
+            let vtstat;
+            if(this.finalStats.con.value != "-")
+                vtstat = this.finalStats.con.value;
+            else
+                vtstat = this.finalStats.cha.value;
+            return (2 + this.level / 1 + vtstat + this.sumAllKeys('vt', this.myatb.passive));
         },
         san: function () {
+            if(this.finalStats.itl.value != "-")
+                return "-";
             return (2 + this.level / 1 + this.finalStats.itl.value);
         },
         talstring: function () {
@@ -401,7 +425,7 @@ ${toMd(this.atbCatString("reactions"))}
             //Add equipment abilities
             for (let key in this.equipment) {
                 let slot = this.equipment[key];
-                if(slot != 'bag' && 'eqab' in slot){
+                if(key != 'bag' && 'eqab' in slot){
                     let atlist = slot.eqab.split(",");
                     for (let i in atlist) {
                         let eid = atlist[i].trim();
@@ -413,11 +437,11 @@ ${toMd(this.atbCatString("reactions"))}
                         }
                     }
                 }
-                else if(slot == 'bag'){
+                else if(key == 'bag'){
                     for (let i in slot) {
                         let eid = slot[i];
                         if ('eqab' in eid && eid.eqab in this.eqAtb) {
-                            abSwitch(atb);
+                            abSwitch(this.eqAtb[eid.eqab]);
                         }
                     }
                 }
@@ -444,7 +468,7 @@ ${toMd(this.atbCatString("reactions"))}
                         let eid = atlist[i].trim();
                         if (eid in this.attributes && this.attributes[eid].rank <= this.myranks[key].rank) {
                             let atb = this.attributes[eid];
-                            atb.rank = this.myranks[key].rank;
+                            atb.rank = this.getRank(atb.skill);
                             abSwitch(atb);
                         }
                     }
@@ -514,7 +538,10 @@ ${toMd(this.atbCatString("reactions"))}
             if (this.race.stats) {
                 for (let j in this.race.stats) {
                     bst = this.race.stats[j];
-                    statsRes[bst.stat].value += bst.boost;
+                    if(bst.boost != null && statsRes[bst.stat].value != "-")
+                        statsRes[bst.stat].value += bst.boost;
+                    else
+                        statsRes[bst.stat].value = "-";
                 }
             }
             fullArr = this.myranks.concat(this.myarch);
@@ -522,9 +549,10 @@ ${toMd(this.atbCatString("reactions"))}
                 rk = fullArr[i];
                 for (let j in rk.stats) {
                     bst = rk.stats[j];
-                    if (bst.rank <= rk.rank) {
+                    if (bst.boost != null && statsRes[bst.stat].value != "-" && bst.rank <= rk.rank)
                         statsRes[bst.stat].value += bst.boost;
-                    }
+                    else if(bst.boost == null)
+                        statsRes[bst.stat].value = "-";
                 }
             }
             return statsRes;

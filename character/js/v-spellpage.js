@@ -123,7 +123,7 @@ Vue.component('v-spellpage', {
                     }
                     for (let i = 0; i < spell.slots; i++) {
                         switchObj[key].slots += 1;
-                        switchObj[key].skill.push(spell.cat);
+                        switchObj[key].skill.push(spell.mod);
                         switchObj[key].atb.push(this.getSpellOptions(spell.cat, spell["spell-lvl"], this.attributes,
                             this.selectedDivinePatron, this.selectedArcaneSpecialization));
                         switchObj[key].isFree.push(isFree);

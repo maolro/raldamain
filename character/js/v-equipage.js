@@ -26,6 +26,16 @@ Vue.component('v-equipage', {
     </div>
     <div class="row my-2 justify-content-center">
         <div class="col-6">
+            <b>Cabeza</b>
+        </div>
+        <div class="col-6">
+            <v-select-search v-bind:optionsobj="eqlist.head"
+                v-on:selected-key="addItem('head', 'head', $event)">
+            </v-select-search>
+        </div>
+    </div>
+    <div class="row my-2 justify-content-center">
+        <div class="col-6">
             <b>Bolsa</b>
         </div>
         <div class="col-6">
@@ -82,9 +92,9 @@ Vue.component('v-equipage', {
         },
         addBagItem(id, index){
             if(id in this.eqlist['bag'])
-                this.bagslots[index] = this.eqlist['bag'][id];
+                this.$set(this.bagslots, index, {...this.eqlist['bag'][id]});
             else
-                this.bagslots[index] = {};
+                this.$set(this.bagslots, index, {});
         }
     },
     watch: {

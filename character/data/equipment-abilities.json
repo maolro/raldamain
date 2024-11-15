@@ -5,7 +5,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, A Distancia", 
-        "description": "Distancia lejana, +MOD para impactar, 1d10 +STAT daño Perforante."
+        "description": "Distancia lejana, +MOD para impactar, 1d10 + STAT daño Perforante."
     },
     "bateria-de-chi":{
         "name": "Batería de Chi",
@@ -14,13 +14,21 @@
         "chi": 3,
         "description": "Tiene una batería de chi que aumenta su reserva máxima de chi por 3. (ya incluida)"
     },
+    "cadena": {
+        "name": "Cadena",
+        "skill":"cadenas", 
+        "type": "Accion", 
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Cadena", 
+        "description": "Distancia cercana, +MOD para impactar, 1d10 + STAT daño Contundente."
+    },
     "daga": {
         "name": "Daga",
         "skill":"armas-ligeras", 
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Ligera, A Distancia", 
-        "description": "Adyacente o Distancia media, +MOD para impactar, 1d6+STAT daño Perforante."
+        "description": "Adyacente o Distancia media, +MOD para impactar, 1d6 + STAT daño Perforante."
     },
     "espada-larga": {
         "name": "Espada Larga",
@@ -28,7 +36,15 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Duelo", 
-        "description": "Adyacente, +MOD para impactar, 1d8 +STAT daño Cortante."
+        "description": "Adyacente, +MOD para impactar, 1d8 + STAT daño Cortante."
+    },
+    "golpe-serpiente": {
+        "name": "Golpe Serpiente",
+        "skill":"estilo-serpiente", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Marcial, Serpiente", 
+        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Contundente, Perforante o Cortante."
     },
     "gran-hacha": {
         "name": "Gran Hacha",
@@ -36,15 +52,15 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 2d8 +STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
+        "description": "Adyacente, +MOD para impactar, 2d8 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
     },
-    "cadena": {
-        "name": "Cadena",
-        "skill":"cadenas", 
+    "jabalina":{
+        "name": "Jabalina",
+        "skill":"alabardas", 
         "type": "Accion", 
-        "cost": "2 Acciones",
-        "tags": "Físico, Ataque, Cadena", 
-        "description": "Distancia cercana, +MOD para impactar, 2d8 +STAT daño Contundente."
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Alabarda, A Distancia", 
+        "description": "Distancia cercana, +MOD para impactar, 1d8 + STAT daño Perforante. Puede lanzarse para aumentar su alcance a distancia media."
     },
     "escudo": {
         "name": "Escudo",
@@ -52,7 +68,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Escudo", 
-        "description": "Adyacente, +MOD para impactar, 1d6 +STAT daño Contundente."
+        "description": "Adyacente, +MOD para impactar, 1d6 + STAT daño Contundente."
     },    
     "garra": {
         "name": "Garra",
@@ -60,7 +76,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Marcial, Salvaje", 
-        "description": "Adyacente, +MOD para impactar, 1d6 +STAT daño Cortante."
+        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Cortante."
     },
     "lanza": {
         "name": "Lanza",
@@ -68,7 +84,23 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Alabarda", 
-        "description": "Distancia cercana, +MOD para impactar, 1d10 +STAT daño Perforante."
+        "description": "Distancia cercana, +MOD para impactar, 1d10 + STAT daño Perforante."
+    },
+    "latigo": {
+        "name": "Látigo",
+        "skill":"cadenas", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Cadena", 
+        "description": "Distancia cercana, +MOD para impactar, 1d6 + STAT daño Contundente."
+    },
+    "mordisco": {
+        "name": "Mordisco",
+        "skill":"estilo-salvaje", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Marcial, Salvaje", 
+        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Contundente."
     },
     "parada-con-escudo": {
         "name": "Parada con Escudo",

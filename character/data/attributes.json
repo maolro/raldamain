@@ -14,10 +14,17 @@
       "name": "Abrazar la Locura",
       "skill": "ascendencia-abisal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Innata, Mental",
       "description": "3/ronda, reduce su cordura por 2 para recuperar 1 chi o vigor"
+    },
+    "abrazo-de-la-serpiente": {
+      "rank": 3,
+      "name": "Abrazo de la Serpiente",
+      "skill": "estilo-serpiente",
+      "type": "Accion",
+      "cost": "2 Vigor",
+      "tags": "Marcial, Serpiente, Mejora, Aflicción, Duradera",
+      "description": "La siguiente vez que impacte a un enemigo esta ronda deberá tener éxito en un tiro de Salud contra +MOD o quedará <i>agarrado</i> hasta que escape. No se aplican resistencias a Maniobras ni Agarres no podrá afectar a enemigos que lleven armadura completa. Cada ronda el afectado repite el tiro para intentar escapar y al estar agarrando esta criatura quedará <i>enredada</i>. Este efecto durará hasta que el afectado se libere o este personaje pierda la concentración."
     },
     "abrazo-de-oso": {
       "rank": 2,
@@ -1876,7 +1883,7 @@
     },
     "combinar-tecnicas-(a-distancia)": {
       "rank": 3,
-      "name": "Combinar Técnicas (A Distancia)",
+      "name": "Combinar Técnicas",
       "skill": "armas-a-distancia",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -1886,7 +1893,7 @@
     },
     "combinar-tecnicas-(alabardas)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Alabardas)",
+      "name": "Combinar Técnicas",
       "skill": "alabardas",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -1896,7 +1903,7 @@
     },
     "combinar-tecnicas-(boxeo)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Boxeo)",
+      "name": "Combinar Técnicas",
       "skill": "estilo-boxeo",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -1906,7 +1913,7 @@
     },
     "combinar-tecnicas-(cadenas)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Cadenas)",
+      "name": "Combinar Técnicas",
       "skill": "cadenas",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -1916,7 +1923,7 @@
     },
     "combinar-tecnicas-(dragon)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Dragón)",
+      "name": "Combinar Técnicas",
       "skill": "estilo-dragon",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -1926,7 +1933,7 @@
     },
     "combinar-tecnicas-(duelo)": {
       "rank": 2,
-      "name": "Combinar Técnicas (Duelo)",
+      "name": "Combinar Técnicas",
       "skill": "armas-de-duelo",
       "type": "Reaccion",
       "cost": "2 Vigor",
@@ -1945,23 +1952,30 @@
     },
     "combinar-tecnicas-(pesadas)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Pesadas)",
+      "name": "Combinar Técnicas",
       "skill": "armas-pesadas",
       "type": "Reaccion",
       "cost": "2 Vigor",
-      "reach": "",
-      "duration": "",
       "description": "Tras impactar con un ataque hace un ataque adicional con un arma Pesada como acción bonus. No puede usar esta habilidad en ataques que no cuesten acciones"
     },
     "combinar-tecnicas-(salvaje)": {
       "rank": 3,
-      "name": "Combinar Técnicas (Salvaje)",
+      "name": "Combinar Técnicas",
       "skill": "estilo-salvaje",
       "type": "Reaccion",
       "cost": "2 Vigor",
       "reach": "",
       "duration": "",
       "description": "Tras impactar con un ataque hace un ataque adicional de Estilo Salvaje como acción bonus. No puede usar esta habilidad en ataques que no cuesten acciones"
+    },
+    "combinar-tecnicas-(serpiente)": {
+      "rank": 3,
+      "name": "Combinar Técnicas",
+      "skill": "estilo-serpiente",
+      "type": "Reaccion",
+      "cost": "2 Vigor",
+      "tags": "Marcial, Serpiente, Reacción",
+      "description": "Tras realizar un ataque Marcial puedes emplear esta habilidad para hacer un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede emplearse en ataques que no supongan un gasto de acciones."
     },
     "compenetracion-perfecta": {
       "rank": 2,
@@ -1987,10 +2001,8 @@
       "name": "Comunión con la Naturaleza",
       "skill": "ascendencia-primigenia",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Detecta presencias espirituales y mágicas a distancia lejana además de RANGO hechizos adicionales vinculados a su patrón espiritual"
+      "tags": "Innata",
+      "description": "Detecta presencias espirituales y mágicas a una distancia lejana además de su naturaleza y fuerza aproximada. Puede también comunicarse con criaturas espirituales e identificar sus poderes."
     },
     "comunion-fungica": {
       "rank": 4,
@@ -3269,7 +3281,7 @@
       "description": "Al impactar a un enemigo con un ataque físico tira CON o es infectado con esporas, las cuales actúan como un veneno de CON o SAB. Repite el tiro cada ronda"
     },
     "esquiva": {
-      "rank": 0,
+      "rank": 1,
       "name": "Esquiva",
       "skill": "reflejos",
       "type": "Reaccion",
@@ -4176,6 +4188,15 @@
       "reach": "Propio",
       "duration": "Una ronda",
       "description": "La siguente vez que impacte con un ataque físico puede provocar los efectos de un hechizo de Agua, Hielo o Sangre al objetivo"
+    },
+    "golpe-irreductible": {
+      "rank": 3,
+      "name": "Golpe Irreductible",
+      "skill": "estilo-serpiente",
+      "type": "Accion",
+      "cost": "2 Vigor",
+      "tags": "Marcial, Serpiente, Mejora",
+      "description": "La siguiente vez que impacte con un ataque Marcial esta ronda incrementa su daño base por 2d6 e ignorará toda la Defensa que tenga su objetivo cuyo origen no provenga por su armadura, infligiendo así daño de manera directa. Se pueden aplicar otras mejoras a un ataque empoderado por esta habilidad y cabe recalcar que los efectos de reducción de daño tampoco se aplicarán."
     },
     "golpe-metalico": {
       "rank": 1,
@@ -6205,15 +6226,13 @@
       "tags": "Vida, Defensiva",
       "description": "+MOD para defenderse. Funciona contra ataques físicos y mágicos."
     },
-    "parada-marcial": {
+    "parada-marcial-(serpiente)": {
       "rank": 1,
       "name": "Parada Marcial",
       "skill": "estilo-serpiente",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para detener un ataque cuerpo a cuerpo"
+      "tags": "Marcial, Serpiente, Defensiva",
+      "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-salvaje": {
       "rank": 1,
@@ -6387,10 +6406,8 @@
       "name": "Poder Antinatural",
       "skill": "ascendencia-abisal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Vista a ciegas a distancia media y aprende hechizos vinculados a su entidad abisal"
+      "tags": "Innata",
+      "description": "Detecta la posición y naturaleza de todos los efectos mágicos a distancia media además que tiene </i>vista a ciegas</i> en un radio medio."
     },
     "poder-de-la-locura": {
       "rank": 3,
@@ -6844,10 +6861,8 @@
       "name": "Rasgo Monstruoso Superior",
       "skill": "ascendencia-abisal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Una mutación de su elección se hace permanente en su cuerpo (lo permite el DJ)"
+      "tags": "Innata",
+      "description": "Una Mutación se volverá permanente en su cuerpo, pudiendo activar sus efectos cada ronda sin la necesidad de pagar vigor o chi. La Mutación escogida debe estar permitida por el DJ."
     },
     "rayo-arcano": {
       "rank": 1,

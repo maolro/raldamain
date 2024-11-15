@@ -86,6 +86,8 @@ Un enemigo *enredado* de esta manera podrá repetir el tiro cada ronda para esca
 
 ## Rango III
 
+El daño base de tus ataques Marciales pasa a ser 1d8.
+
 ### Salto Salvaje
 
 *Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico, Agarre*
@@ -145,6 +147,8 @@ A diferencia de Abrazo de oso puedes moverte con libertad aunque tengas a un ene
 Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruzarse en tu camino. Avanza dos pasos en cualquier dirección que elijas y haz un Ataque natural contra cada enemigo en tu camino que al impactar inflige 1d6 puntos de daño adicionales y empujará un paso.
 
 ## Rango V
+
+El daño base de tus ataques Marciales pasa a ser 1d10.
 
 ### Frenesí Saltarín
 

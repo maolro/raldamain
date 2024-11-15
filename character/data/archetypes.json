@@ -243,6 +243,78 @@
             }
         ]
     },
+    "bestia": {
+        "name": "Bestia",
+        "stat": "str/dex",
+        "modranks": [
+            "estilo-salvaje",
+            "ira"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "dex", "rank": 1, "boost": 2},
+            {"stat": "con", "rank": 1, "boost": 2},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["velocidad-superior","frenesi-de-batalla","aspecto-primigenio","agilidad-animal","esquiva"],
+                "abilities": [
+                    {
+                        "name": "Furia Constante",
+                        "type": "Pasiva",
+                        "skill": "ira",
+                        "tags": "Innata",
+                        "description": "Cuenta como si estuviera siempre bajo los efectos Ira para determinar si tiene activas algunas habilidades de esa rama. Esto no le otorgará ninguna de las ventajas ni desventajas de Ira."
+                    },
+                    {
+                        "name": "Armadura Natural",
+                        "type": "Pasiva",
+                        "hp": "(RANGO-1)x2",
+                        "def": "(RANGO-1)x2",
+                        "vitalidad": "(RANGO-1)x3",
+                        "skill": "ira",
+                        "description": "Aumenta sus PV y Defensa por (RANGO-1)x2 además de su Vitalidad por (RANGO-1)x3 (ya incluido)."
+                    }
+                    
+                ]
+            },
+            {
+                "attributes": ["resistencia-salvaje","mordisco-salvaje","persecucion","abrazo-de-oso"],
+                "abilities": [
+                    {
+                        "name": "Rasgo Animal",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "estilo-salvaje",
+                        "description": "Tiene activa un rasgo animal de su elección semejante a uno otorgado por Inyección Mutagénica Superior o Defensa Adaptable. Algunas opciones son Vuelo, Anfibio, Piel Venenosa, Resistencia Elemental, Coraza, Espinas o Aumentar Tamaño."
+                    }
+                ]
+            },
+            {
+                "attributes": ["salto-salvaje","combinar-tecnicas-(salvaje)","zarpazo-desmembrador","mataleon","destrozar-defensas","ira-temeraria","golpe-de-adrenalina"],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "clerigo-celestial": {
         "name": "Clérigo Celestial",
         "stat": "wis/cha",
@@ -378,6 +450,196 @@
             }
         ]
     },
+    "cuerpo-de-plantas": {
+        "name": "Cuerpo de Plantas",
+        "stat": "cha",
+        "modranks": [
+            "magia-de-naturaleza"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Planta Viviente",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-naturaleza",
+                        "hp": 4,
+                        "def": 4,
+                        "immunities": ["Heridas permanentes","Mentales","Sónicos","Aturdimiento","Miedo","Aflicciones"],
+                        "resistances": ["Contundente","Perforante"],
+                        "vulnerabilities": ["Fuego","Necróticos"],
+                        "description": "Recibe Inmunidad a <i>heridas permanentes</i> y efectos Mentales, Sónicos, Aturdimiento, Miedo y Aflicciones a costa de Vulnerabilidad a efectos de Fuego y Necróticos. Obtiene también Resistencia al daño Contundente y Perforante además que aumenta sus PV y DEF por 4 (ya incluido)."
+                    },
+                    {
+                        "name": "Uno con la Naturaleza",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-naturaleza",
+                        "description": "Recibe Inmunidad a *terreno difícil* ocasionado por plantas y tiene <i>vista a ciegas</i> con alcance medio, la cual funciona de la misma manera que Georradar. Además, si se encuentra en un lugar con mucha vegetación puede *ocultarse* como acción bonus una vez por ronda."
+                    },
+                    {
+                        "name": "Naturaleza Empoderada",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-naturaleza",
+                        "description": "Puede lanzar sus hechizos de Naturaleza empleando su estadística de CON en lugar de su SAB además que recibirá Ventaja en todos sus tiros de ataque y defensa con estos. Se regenera también 4 Vitalidad al inicio de su turno si se encuentra en contacto con la naturaleza."
+                    }
+                ]
+            }
+        ]
+    },
+    "embaucador": {
+        "name": "Embaucador",
+        "stat": "str/dex",
+        "modranks": [
+            "magia-ilusoria",
+            "magia-mental"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["asalto-psiquico","crear-ilusion","ilusion-fantasmal","alterar-emociones","sugestion"],
+                "abilities": [
+                    {
+                        "name": "Defensa Ilusoria",
+                        "type": "Reaccion",
+                        "skill": "magia-ilusoria",
+                        "tags": "Ilusoria, Visual, Defensiva",
+                        "description": "+MOD para defenderse, funciona contra ataques enemigos que le tengan explícitamente como objetivo. No funciona contra enemigos que sean capaces de ver a través de sus ilusiones o son Inmunes a efectos Visuales. "
+                    },
+                    {
+                        "name": "Cambiar Apariencia",
+                        "type": "Accion",
+                        "cost": "1 Acción",
+                        "skill": "magia-ilusoria",
+                        "tags": "Ilusoria, Visual, Duradera",
+                        "description": "Cambia su aspecto al de otra criatura del mismo tamaño y proporciones. Este efecto permanecerá activo hasta que pierda la concentración y funciona de la misma manera que Disfraz Ilusorio."
+                    }
+                ]
+            },
+            {
+                "attributes": ["engaño-ilusorio","terror-ilusorio","geas","invisibilidad"],
+                "abilities": [
+                    {
+                        "name": "Maestro de Alucinaciones",
+                        "type": "Pasiva",
+                        "skill": "magia-ilusoria",
+                        "tags": "Ilusoria",
+                        "description": "Sus ilusiones aumentan su alcance por un paso y recibe Ventaja en todos sus tiros relacionados con ellas. Estos modificadores no se acumulan con Terreno Alucinatorio."
+                    },
+                    {
+                        "name": "Poder Fantasmal",
+                        "type": "Pasiva",
+                        "skill": "magia-ilusoria",
+                        "tags": "Ilusoria",
+                        "description": "Puede transformar un hechizo Ilusorio de su elección en Fantasmal una vez adicional por ronda sin la necesidad de pagar chi o vigor."
+                    }
+                ]
+            },
+            {
+                "attributes": ["asalto-ilusorio","velo-de-engaños","copiar-hechizo"],
+                "abilities": [
+                    {
+                        "name": "Dobles Ilusorios",
+                        "type": "Pasiva",
+                        "skill": "magia-ilusoria",
+                        "tags": "Ilusoria",
+                        "description": "Al entrar en combate crea RANGO Dobles Ilusorios a su alrededor. Al ser impactado por un ataque que le tenga explícitamente como objetivo una vez por ronda puede hacer que impacte a un doble, eliminándolo de inmediato."
+                    },
+                    {
+                        "name": "Aura Mental",
+                        "type": "Pasiva",
+                        "skill": "magia-ilusoria",
+                        "tags": "Mental",
+                        "description": "Toda criatura que empiece su turno en una posición a distancia media o entre ahí debe tener éxito en un tiro de Concentración o Voluntad contra +MOD o sufre los efectos de Sugestión o Alterar Emociones. Este efecto permancerá activo hasta que pierda la concentración y reactivarlo cuesta dos Acciones."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "encadenado": {
+        "name": "Encadenado",
+        "stat": "str/dex",
+        "modranks": [
+            "cadenas",
+            "reflejos"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["velocidad-superior","enredar","gancho-perforante","ataque-serpenteante","cargar-ataque","parada-con-cadena","espinas-desgarrantes"],
+                "abilities": [
+                    {
+                        "name": "Danza de Cadenas",
+                        "type": "Pasiva",
+                        "skill": "cadenas",
+                        "tags": "Cadenas, Duradera",
+                        "description": "Al entrar en combate activa automáticamente el efecto Danza de Cadenas, permaneciendo así siempre en <i>posición defensiva</i> y pudiendo hacer un ataque de Cadena como reacción a que un enemigo entre en una posición que pueda alcanzar con su arma. Solo puede atacar al mismo enemigo una vez por ronda de esta manera. Este efecto permanecerá activo hasta que pierda la concentración."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "esencia-de-fuego": {
         "name": "Esencia de Fuego",
         "stat": "cha",
@@ -414,6 +676,67 @@
             },
             {
                 "attributes": []
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            }
+        ]
+    },
+    "esencia-de-naturaleza": {
+        "name": "Esencia de Naturaleza",
+        "stat": "wis/con",
+        "modranks": ["magia-de-naturaleza", "ascendencia-primigenia"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["zarcillo-enredador","espina-de-madera","enmarañar","parada-de-naturaleza","comunion-con-la-naturaleza"],
+                "abilities": [
+                    {
+                        "name": "Fuerza Salvaje",
+                        "type": "Accion",
+                        "tags": "Naturaleza",
+                        "uses": "1/Ataque",
+                        "skill": "ascendencia-primigenia",
+                        "description": "Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Naturaleza que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda."
+                    }
+                ]
+            },
+            {
+                "attributes": ["muro-de-zarzas-defensivo","espina-parasitica","drenar-magia"],
+                "abilities": [
+                    {
+                        "name": "Poder de la Naturaleza",
+                        "type": "Pasiva",
+                        "tags": "Naturaleza",
+                        "skill": "magia-de-naturaleza",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Naturaleza además sus habilidades de Naturaleza aumentan su alcance por un paso y reciben un dado de daño adicional. (no incluido)"
+                    },
+                    {
+                        "name": "Plantas Animadas",
+                        "type": "Pasiva",
+                        "tags": "Naturaleza, Agarre, Físico",
+                        "skill": "magia-de-naturaleza", 
+                        "description": "Al entrar en combate lanzará automáticamente el hechizo Animar Plantas, infundiendo así la naturaleza a su alrededor con una semblanza de vida. En cualquier momento de la ronda puede atacar a un enemigo a distancia media con sus plantas animadas como acción bonus (+MOD para impactar, 1DD + STAT daño Cortante al impactar y <i>enreda</i>. Si afecta a un enemigo <i>enredado</i> deberá tirar Heroísmo o Destrozar contra +MOD o quedará <i>agarrado</i> hasta que escape (puede repetir cada ronda). Este efecto terminará si pierde la concentración o es destruido y restaurarlo cuesta dos acciones."
+                    }
+                ]
             },
             {
                 "attributes": []
@@ -564,6 +887,185 @@
             }
         ]
     },
+    "fungico": {
+        "name": "Fúngico",
+        "stat": "con/wis",
+        "modranks": ["ascendencia-fungica"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "dex", "rank": 1, "boost": -1},
+            {"stat": "wis", "rank": 1, "boost": 2}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["metabolismo-fungico"],
+                "abilities": [
+                    {
+                        "name": "Hongo Viviente",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-fungica",
+                        "immunities": ["Heridas permanentes","Mentales","Miedo","Aflicciones","Necróticos"],
+                        "hp": "(RANGO-1)x2",
+                        "def": "(RANGO-1)x2",
+                        "description": "Recibe Inmunidad a <i>heridas permanentes<7i> además de efectos Mentales, Miedo, Aflicciones y Necróticos. Tiene también visión a ciegas en una distancia media e incrementa sus PV y DEF base por (RANGO-1)x2 (ya incluido)."
+                    },
+                    {
+                        "name": "Esporas Infecciosas",
+                        "type": "Pasiva",
+                        "tags": "Innata, Aflicción",
+                        "skill": "ascendencia-fungica",
+                        "description": "Al impactar con un ataque físico puede infectar al objetivo con esporas tóxicas. Dichas esporas tienen gravedad +MOD y provocarán efectos equivalentes a la habilidad Esporas Infecciosas. Adicionalmente, cuando la criatura muera llenará una esfera pequeña centrada en su cadáver con esas mismas esporas, provocando el mismo efecto que la habilidad Nube Tóxica. Dicha nube se disipará cuando una ronda."
+                    },
+                    {
+                        "name": "Carroñero",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-fungica",
+                        "description": "Al inicio de su turno se sana RANGO+2 Vitalidad si se encuentra en una posición cercana a un cadáver o materia fúngica. No podrá sanarse si está en luz brillante o ha sufrido daño Radiante la ronda pasada."
+                    }
+                ]
+            }
+        ]
+    },
+    "gigante": {
+        "name": "Gigante",
+        "stat": "str/con",
+        "modranks": [],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "dex", "rank": 1, "boost": -1},
+            {"stat": "con", "rank": 1, "boost": 2}
+        ],
+        "enchancements": [
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "fortitud",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "hp": 4,
+                        "vt": 4,
+                        "def": 2,
+                        "description": "El alcance de sus armas aumenta por un paso y recibe un dado de daño adicional con estas debido al tamaño superior que tienen. Tiene también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior a costa de tener Desventaja en todos sus tiros de Esquiva."
+                    }
+                ]
+            }
+        ]
+    },
+    "guerrero-abisal": {
+        "name": "Guerrero Abisal",
+        "stat": "cha",
+        "modranks": [
+            "guerrero-divino",
+            "ascendencia-abisal"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino"},
+            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino"},
+            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["poder-antinatural"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "def": "(RANGO-1)x2",
+                        "hp": "(RANGO-1)x2",
+                        "skill": "guerrero-divino",
+                        "resistances": ["Miedo", "Mentales"],
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Azote Divino",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón abisal. Esto funciona de la misma manera que el hechizo Azote Divino."
+                    },
+                    {
+                        "name": "Mutación",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-abisal",
+                        "description": "Tiene activa una mutación abisal de su elección. Algunas opciones son Resistencia Adaptiva, Anfibio, Arma Natural, Vuelo, Toxina o Infusión Mágica. La mutación escogida puede cambiarse pagando una acción."
+                    }
+                ]
+            },
+            {
+                "attributes": ["rasgo-monstruoso-superior"],
+                "abilities": [
+                    {
+                        "name": "Aura Protectora",
+                        "type": "Reaccion",
+                        "resistances": ["Arcanos", "Divinos"],
+                        "tags": "Divina, Defensiva",
+                        "uses": "1/Ronda",
+                        "skill": "guerrero-divino",
+                        "description": "Tiene éxito automático en un tiro defensivo contra un efecto Divino o Arcano de Rango RANGO o menos."
+                    },
+                    {
+                        "name": "Presencia Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina, Miedo, Duradera",
+                        "skill": "guerrero-divino",
+                        "description": "Todas las criaturas a distancia media que puedan verle deben tener éxito en un tiro de Voluntad contra +MOD o aumentan su nivel de miedo por un paso. Aquellos  que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierda la concentración y reponerlo cuesta dos acciones."
+                    },
+                    {
+                        "name": "Golpe Desacralizador",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico puede eliminar un efecto Arcano o Divino que tenga activo el objetivo si tiene éxito en un tiro con modificador +MOD contra la habilidad mágica del objetivo. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino"
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "guerrero-espiritual": {
         "name": "Guerrero Espiritual",
         "stat": "wis",
@@ -605,8 +1107,8 @@
                         "name": "Guerrero de la Fe",
                         "type": "Pasiva",
                         "tags": "Divina",
-                        "def": "RANGOx2",
-                        "hp": "RANGOx2",
+                        "def": "(RANGO-1)x2",
+                        "hp": "(RANGO-1)x2",
                         "skill": "guerrero-divino",
                         "resistances": ["Miedo", "Mentales"],
                         "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
@@ -648,6 +1150,180 @@
                         "uses": "1/Ataque",
                         "description": "Al imapactar con un ataque físico puede eliminar un efecto Arcano o Divino que tenga activo el objetivo si tiene éxito en un tiro con modificador +MOD contra la habilidad mágica del objetivo. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino"
                     }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "hechicero-abisal": {
+        "name": "Hechicero Abisal",
+        "stat": "itl/cha",
+        "modranks": [
+            "magia-divina",
+            "ascendencia-abisal"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["poder-antinatural","manifestacion-divina"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Mutación",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-abisal",
+                        "description": "Tiene activa una mutación abisal de su elección. Algunas opciones son Resistencia Adaptiva, Anfibio, Arma Natural, Vuelo, Toxina o Infusión Mágica. La mutación escogida puede cambiarse pagando una acción."
+                    }
+                ]
+            },
+            {
+                "attributes": ["rasgo-monstruoso-superior","presencia-divina"],
+                "abilities": [
+                    {
+                        "name": "Protección Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Se encuentra siempre en <i>posición defensiva</i> y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina."
+                    },
+                    {
+                        "name": "Poder del Dolor",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "resistances": ["Aflicciones", "Aturdimiento"],
+                        "immunities": ["Heridas permanentes leves y medias"],
+                        "description": "Es Inmune a los efectos de <i>heridas permanentes leves</i> y <i>medias</i> además que recibe Resistencia a Aflicciones y Aturdimiento. (todo ya incluido)"
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "incorporeo": {
+        "name": "Incorpóreo",
+        "stat": "cha",
+        "modranks": [
+            "magia-de-almas"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": null},
+            {"stat": "con", "rank": 1, "boost": null}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["posesion"],
+                "abilities": [
+                    {
+                        "name": "Incorpóreo",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "immunities": ["Físicos","Mentales","Miedo","Aflicciones","Fuego","Frío","Ácido","Eléctrico","Sónico"],
+                        "description": "Carece de cuerpo físico, obteniendo así Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones además del daño Fuego, Frío, Ácido, Eléctrico y Sónico salvo que tenga características Arcanas o Divinas. Recibe también velocidad de vuelo 1 y puede pasar a través de objetos sólidos. Esta criatura puede ser Exorcizada o sellada con habilidades de Médium."
+                    },
+                    {
+                        "name": "Sentidos Sobrenaturales",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "description": "Es capaz de sentir la posición de todos los seres vivos y presencias mágicas a distancia media."
+                    }
+                ]
+            }
+        ]
+    },
+    "lancero": {
+        "name": "Lancero",
+        "stat": "str/dex",
+        "modranks": [
+            "alabardas",
+            "reflejos",
+            "fortitud"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["velocidad-superior","ajustar-alcance","esquiva-asombrosa","preparacion-contra-cargas","lanzazo-penetrante","parada-con-alabarda","esquiva"],
+                "abilities": [
+                    {
+                        "name": "Armadura Natural",
+                        "type": "Pasiva",
+                        "hp": "(RANGO-1)x2",
+                        "def": "(RANGO-1)x2",
+                        "skill": "fortitud",
+                        "description": "Aumenta sus PV y Defensa por (RANGO-1)x2 (ya incluido)."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
                 ]
             },
             {

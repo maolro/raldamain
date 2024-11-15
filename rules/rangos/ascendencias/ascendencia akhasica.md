@@ -16,7 +16,7 @@ Ascendencia Akhásica tiene las siguientes reglas fundamentales que se aplican a
 
 ## Rango I
 
-### Vínculo akhásico
+### Vínculo Akhásico
 
 *Innata, Pasiva*
 
@@ -36,7 +36,7 @@ Este nivel superior de conocimiento te permite también descubrir los secretos d
 
 Incrementa tu estadística de INT y su limitador por 1.
 
-### Meditación iluminada
+### Meditación Iluminada
 
 *Innata, Duradera*
 
@@ -46,7 +46,7 @@ Incrementa tu estadística de INT y su limitador por 1.
 
 Utilizando la meditación puedes abrir tu mente al conocimiento akhásico, alcanzando así un estado mental superior. Mientras permanezcas en dicho estado recibirás Ventaja en todos tus tiros relacionados con la estadística de INT además de la capacidad de defenderte de ataques sorpresa. Los beneficios de Meditación Iluminada durarán hasta que pierdas la concentración o pases por una situación intensa emocional.
 
-### Sentido mágico
+### Sentido Mágico
 
 *Innata, Pasiva*
 
@@ -56,7 +56,7 @@ Tienes un sexto sentido para la magia, el cual te permite detectar las impresion
 
 Aprendes dos hechizos Arcanos o Mentales adicionales de Rango II o menos, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Forma astral
+### Forma Astral
 
 *Innata, Duradera*
 

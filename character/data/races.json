@@ -1,4 +1,18 @@
 {
+    "animal":{
+        "name": "Animal",
+        "stats": [
+            {"stat": "itl", "boost": -2}
+        ],
+        "abilities": [
+            {
+                "name": "Aspecto Animal",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "description": "Tiene uno o varios sentidos y formas de movimiento especiales según el animal del que se trate. Algunas opciones para sentidos son visión nocturna, olfato o georradar mientras que algunas acciones para movimiento son natación, escalada, excavar o vuelo."
+            }
+        ]
+    },
     "aven":{
         "name": "Aven",
         "stats": [
@@ -11,6 +25,7 @@
             {
                 "name": "Alas de Ave",
                 "type": "Pasiva",
+                "tags": "Innata",
                 "description": "Recibe Velocidad de Vuelo 1 y Ventaja en todos sus tiros de Esquiva"
             }
         ]
@@ -26,6 +41,7 @@
             {
                 "name": "Resistencia de Chothgar",
                 "type": "Pasiva",
+                "tags": "Innata",
                 "hp": 2,
                 "def": 2,
                 "description": "Aumenta sus PV máximos y su DEF base por 2 (ambos ya incluidos)."
@@ -58,7 +74,8 @@
             {
                 "name": "Fuerza de León",
                 "type": "Pasiva",
-                "description": "Recibe Velocidad de Escalada 1. El daño de sus ataques naturales aumetna por un paso y puede provocar daño Cortante y Perforante con ellos."
+                "tags": "Innata",
+                "description": "Recibe Velocidad de Escalada 1. El daño de sus ataques naturales aumenta por un paso y puede provocar daño Cortante y Perforante con ellos."
             }
         ]
     },
@@ -86,7 +103,24 @@
                 "name": "Cambiaformas",
                 "type": "Accion",
                 "cost": "1 Acción",
+                "tags": "Innata",
                 "description": "Se transforma para adoptar la forma de otro ser humanoide de su elección o de un zorro. Mantendrá todo su equipamiento y habilidades sin importar su forma pero en forma de zorro no podrá emplear armas ni armaduras. Puede permanecer en otra forma durante un máximo de ocho horas."
+            }
+        ]
+    },
+    "trasgo":{
+        "name": "Trasgo",
+        "stats": [
+            {"stat": "str", "boost": -1},
+            {"stat": "dex", "boost": 2},
+            {"stat": "con", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Tamaño Inferior",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "description": "Tiene Ventaja en todos sus tiros de Esquiva, Sigilo y Acrovacias además que puede ocupar el espacio de otras criaturas, provocando así que tengan Desventaja defendiéndose contra sus ataques. No obstante, debido a su tamaño inferior todo el daño de sus armas y ataques físicos se reduce por un paso y no puede llevar armas de dos manos."
             }
         ]
     }

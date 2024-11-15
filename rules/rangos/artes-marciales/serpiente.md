@@ -13,7 +13,7 @@ Estilo Serpiente tiene las siguientes reglas fundamentales que se aplican a cual
 
 ## Rango I
 
-### Golpe marcial
+### Golpe Marcial
 
 *Marcial, Salvaje, Cuerpo a cuerpo, Físico, Ataque*
 
@@ -25,15 +25,15 @@ Estilo Serpiente tiene las siguientes reglas fundamentales que se aplican a cual
 
 **Duración**: Instantáneo
 
-Haces un preciso golpe contra un enemigo para herirlo en el punto adecuado de su cuerpo. El daño base de este ataque y su tipo dependerán de tu fisiología y quedará modificado por tu estadística de DES, siendo Contundente en el caso que seas un humano o una raza similar. En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos.
+Haces un preciso golpe contra un enemigo para herirlo en el punto adecuado de su cuerpo. El daño base de este ataque y su tipo dependerán de tu fisiología y quedará modificado por tu estadística de DES, siendo Contundente en el caso que seas un humano o una raza similar. En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos. 
 
-### Combate furtivo
+### Combate Furtivo
 
 *Serpiente, Marcial, Pasiva*
 
 Tu estilo de combate se basa en aprovechar cada apertura que presentan tus enemigos para herirles con mayor gravedad. Cada vez que realices un ataque combinado con dos o más aliados o impactes a un enemigo incapaz de defenderse aumentarás el nivel de todas las *heridas permanentes* infligidas por un paso.
 
-### Mordisco de la serpiente
+### Mordisco de la Serpiente
 
 *Serpiente, Marcial, Mejora*
 
@@ -43,7 +43,7 @@ Apuntas a uno de los puntos de presión de tu objetivo para provocarle graves he
 
 ## Rango II
 
-### Impacto paralizante
+### Impacto Paralizante
 
 *Serpiente, Marcial, Mejora, Físico, Aturdidor*
 
@@ -53,7 +53,7 @@ Apuntas a los puntos de presión de un enemigo para deshabilitar temporalmente d
 
 Si escoges una pierna caerá *tropezado* y será incapaz de levantarse mientras que si escoges un brazo quedará desarmado y no podrá emplearlo para realizar ningún movimiento. Al principio de su turno un objetivo afectado por esta habilidad puede repetir el tiro y en caso de éxito se recuperará. 
 
-### Golpe a la nuca
+### Golpe a la Nuca
 
 *Serpiente, Marcial, Mejora, Maniobra*
 
@@ -61,7 +61,7 @@ Si escoges una pierna caerá *tropezado* y será incapaz de levantarse mientras 
 
 Golpeas la nuca de un enemigo para que caiga inconsciente de inmediato. Tu siguiente ataque aumentará su daño base por 1d6 y si logras herir a un enemigo puedes forzarle a tener éxito en un tiro de CON frente a tu Estilo Serpiente o caerá *incosciente* de inmediato. El afectado se despertará inmediatamente si sufre daño de cualquier tipo y no puedes emplear esta técnica más de una vez por ronda contra el mismo objetivo.
 
-### Golpe desorientante
+### Golpe Desorientante
 
 *Serpiente, Marcial, Mejora*
 
@@ -71,9 +71,21 @@ Engañas a tu objetivo con un ataque falso para que baje la guardia y quede en u
 
 ## Rango III
 
-### Abrazo de la serpiente
+El daño base de tus ataques Marciales pasa a ser 1d8.
 
-*Marcial, Serpiente, Aflicción*
+### Golpe Irreductible
+
+*Marcial, Serpente, Mejora*
+
+**Coste:** 2 Vigor
+
+**Duración:** Instantáneo
+
+Concentras toda tu fuerza en tu mano para atravesar incluso las resistencias más solidas de tu oponente. La siguiente vez que impactes con un ataque Marcial esta ronda incrementas su daño base por 2d6 e ignorarás toda la Defensa que tenga tu objetivo cuyo origen no provenga por su armadura, infligiendo así daño de manera directa. Se pueden aplicar otras mejoras a un ataque empoderado por esta habilidad y cabe recalcar que que los efectos de reducción de daño tampoco se aplicarán.
+
+### Abrazo de la Serpiente
+
+*Marcial, Serpiente, Mejora, Aflicción, Duradera*
 
 **Coste:** 2 vigor
 
@@ -83,7 +95,7 @@ Agarras a un enemigo de tal manera que deshabilitas sus puntos de presión, evit
 
 Una criatura agarrada de esta manera puede repetir el tiro al principio de su turno para intentar escapar, liberándose en caso de éxito. Al estar agarrando a un enemigo quedarás *enredado* y no podrás atacar a otros enemigos. Esta habilidad permanecerá activa hasta que tu objetivo escape o pierdas la concentración.
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Marcial, Mejora*
 
@@ -93,21 +105,9 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-### Velo de la serpiente
-
-*Innata, Marcial, Serpiente, Duradera*
-
-**Coste:** 2 acciones y 2 vigor
-
-**Duración:** C
-
-Está siempre en posición defensiva y puede hacer contrataques
-
-### Danza de mil mordiscos
-
-Haz varios ataques contra un mismo objetivo que deshabilitan partes de su cuerpo al impactar.
-
 ## Rango V
+
+El daño base de tus ataques Marciales pasa a ser 1d10.
 
 ### Beso de la cobra
 

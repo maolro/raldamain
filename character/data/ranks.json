@@ -57,9 +57,9 @@
       {"stat": "dex", "rank": 6, "boost": 1}
     ],
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "ascendencia-abisal"},
-      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "ascendencia-abisal"},
-      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "ascendencia-abisal"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "ascendencia-abisal", "mod": "ascendencia-abisal"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "ascendencia-abisal", "mod": "ascendencia-abisal"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "ascendencia-abisal", "mod": "ascendencia-abisal"}
     ],
     "attributes": "abrazar-la-locura,aura-del-caos,corrupcion-absoluta,furia-abisal,invocacion-abisal,mutacion,paso-abisal,paso-abisal-defensivo,poder-antinatural,rasgo-monstruoso-superior,tocado-por-la-locura,transformacion-abisal"
   },
@@ -71,21 +71,14 @@
     "freeranks": 0,
     "max": 6,
     "stats": [
-      {
-        "stat": "itl",
-        "rank": 2,
-        "boost": 1
-      },
-      {
-        "stat": "wis",
-        "rank": 4,
-        "boost": 1
-      },
-      {
-        "stat": "cha",
-        "rank": 6,
-        "boost": 1
-      }
+      {"stat": "itl", "rank": 2, "boost": 1},
+      {"stat": "wis", "rank": 4, "boost": 1},
+      {"stat": "cha", "rank": 6, "boost": 1}
+    ],
+    "spells": [
+      {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-ilusoria","magia-de-transmutacion","magia-protectora","magia-mental"], "mod": "ascendencia-akhasica"},
+      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-ilusoria","magia-de-transmutacion","magia-protectora","magia-mental"], "mod": "ascendencia-akhasica"},
+      {"rank": 5, "spell-lvl": 3, "slots": 2, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-ilusoria","magia-de-transmutacion","magia-protectora","magia-mental"], "mod": "ascendencia-akhasica"}
     ],
     "attributes": "abrir-el-tercer-ojo,arbitro-del-destino,forma-astral,fortaleza-del-pensamiento,hipercognicion,meditacion-iluminada,mente-iluminada,palacio-de-la-mente,psicomagia,sentido-magico,vinculo-akhasico"
   },
@@ -227,9 +220,9 @@
       {"stat": "con", "rank": 6, "boost": 1}
     ],
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "ascendencia-primigenia"},
-      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "ascendencia-primigenia"},
-      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "ascendencia-primigenia"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "ascendencia-primigenia", "mod": "ascendencia-primigenia"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "ascendencia-primigenia", "mod": "ascendencia-primigenia"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "ascendencia-primigenia", "mod": "ascendencia-primigenia"}
     ],
     "attributes": "aspecto-primigenio,aura-primigenia,comunion-con-la-naturaleza,despertar-la-bestia,forma-de-la-bestia,fuerza-salvaje,llamar-a-los-espiritus,portal-espiritual,sanacion-espiritual,transformacion-animal,vinculo-primigenio"
   },
@@ -338,7 +331,7 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
-    "attributes": "combate-furtivo-(serpiente),golpe-a-la-nuca,golpe-desorientante,impacto-paralizante,mordisco-de-la-serpiente,parada-marcial"
+    "attributes": "combate-furtivo-(serpiente),golpe-a-la-nuca,golpe-desorientante,impacto-paralizante,mordisco-de-la-serpiente,parada-marcial-(serpiente),combinar-tecnicas-(serpiente),golpe-penetrante-(serpiente),abrazo-de-la-serpiente"
   },
   "fabricacion": {
     "name": "Fabricación",
@@ -366,9 +359,9 @@
     "freeranks": 0,
     "max": 6,
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron"},
-      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "divine-patron"},
-      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "divine-patron"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "divine-patron", "mod": "guerrero-divino"},
+      {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": "divine-patron", "mod": "guerrero-divino"},
+      {"rank": 6, "spell-lvl": 3, "slots": 2, "cat": "divine-patron", "mod": "guerrero-divino"}
     ],
     "attributes": "aliento-de-la-vida,aura-protectora,avatar-divino,azote-divino,azote-ejecutor,canalizar-divinidad,explosion-divina,golpe-exiliante,guerrero-de-la-fe,hueste-divina,impacto-desacralizador,plegaria-de-batalla,presencia-divina,sentido-divino"
   },
@@ -434,11 +427,11 @@
     "freeranks": 0,
     "max": 6,
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "magia-de-evocacion"},
-      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "magia-de-evocacion"},
-      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "magia-de-evocacion"},
-      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "magia-de-evocacion"},
-      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "magia-de-evocacion"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"}
     ],
     "attributes": "aniquilacion-magica,cañon-de-chi,combinar-hechizos,descarga-de-energia,especialidad-arcana,infundir-arma,irradiacion-de-chi,maestro-elemental,meteoros-de-chi,muro-de-energia,muro-de-energia-defensivo,rayo-arcano,rayo-desintegrador"
   },
@@ -540,11 +533,11 @@
     "freeranks": 0,
     "max": 6,
     "spells": [
-      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "magia-divina"},
-      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "magia-divina"},
-      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "magia-divina"},
-      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "magia-divina"},
-      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "magia-divina"}
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "magia-divina", "mod": "magia-divina"},
+      {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "magia-divina", "mod": "magia-divina"},
+      {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "magia-divina", "mod": "magia-divina"},
+      {"rank": 5, "spell-lvl": 4, "slots": 2, "cat": "magia-divina", "mod": "magia-divina"},
+      {"rank": 6, "spell-lvl": 5, "slots": 2, "cat": "magia-divina", "mod": "magia-divina"}
     ],
     "attributes": "adivinacion,castigo-divino,consagrar-la-tierra,enviado-de-los-dioses,exaltado,ira-de-dios,llamar-a-los-dioses,manifestacion-divina,milagro-menor,oracion,palabra-divina,proteccion-divina"
   },
@@ -627,6 +620,11 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "spells": [
+      {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-protectora","magia-mental"], "mod": "mente-desencadenada"},
+      {"rank": 3, "spell-lvl": 1, "slots": 1, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-protectora","magia-mental"], "mod": "mente-desencadenada"},
+      {"rank": 4, "spell-lvl": 2, "slots": 1, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-protectora","magia-mental"], "mod": "mente-desencadenada"}
+    ],
     "attributes": "concentracion-superior,conocimiento-arcano,division-mental,mente-desencadenada,mente-sobre-cuerpo,poder-de-la-locura,poder-del-dolor,psique-retorcido,sentido-arcano"
   },
   "nigromancia": {
