@@ -16,7 +16,7 @@ Como un arma con la oportunidad de crear daños devastadores a sus objetivos, la
 
 Recibes cuatro ranuras de objeto de Rango I
 
-### Bomba de fuego
+### Bomba de Fuego
 
 *Objeto, Bomba, A distancia, Área, Fuego*
 
@@ -32,7 +32,7 @@ Recibes cuatro ranuras de objeto de Rango I
 
 El más básico entre los explosivos, una bomba de fuego está compuesta de pólvora negra encendida por una mecha. Puedes lanzar la bomba de fuego a cualquier posición a distancia media de ti, atacando a toda criatura que se encuentre a distancia cercana del punto afectado empleando tu modificador de Bombas. La bomba infligirá 1d6 + INT daño Fuego al impactar (la mitad en caso de éxito) y destruirá todas las barreras y estructuras frágiles en el área afectada.
 
-### Bomba de humo
+### Bomba de Humo
 
 *Objeto, Bomba, A distancia, Área, Gaseosa, Aflicción*
 
@@ -48,7 +48,7 @@ Una bomba de humo tiene en su interior una reacción química capaz de liberar g
 
 El humo permanecerá activo hasta el final de tu siguiente turno o hasta que sea disipado. El humo cuenta también con propiedades tóxicas, forzando a toda criatura que empiece su turno en él o entre en el área afectada a tener éxito en un tiro de CON frente a tu modificador de Bombas o quedará *enfermada* durante una ronda.
 
-### Bomba cegadora
+### Bomba Cegadora
 
 *Objeto, Bomba, A distancia, Área, Visual*
 
@@ -66,7 +66,7 @@ Una variante menos destructiva de la bomba de fuego, una bomba cegadora emplea l
 
 Recibes dos ranuras de objeto de Rango II y dos de Rango I
 
-### Bomba pegadiza
+### Bomba Pegadiza
 
 *Objeto, Bomba, A distancia, Área, Agarre*
 
@@ -82,7 +82,7 @@ Llena de un líquido pegadizo y difícil de quitar, una bomba pegadiza dificulta
 
 Toda criatura que se encuentre ahí en el momento que lances la bomba deberá tener éxito en un tiro de Heroísmo o Acrobacias frente a tu modificador de Bombas o quedará *enredada* en esa posición. Los afectados pueden repetir el tiro al principio de su turno para intentar liberarse y aquellos que entren en el área afectada deberán hacer el tiro de nuevo o quedarán *enredados* de inmediato.
 
-### Combinar bomba
+### Combinar Bomba
 
 *Bomba, Pasiva*
 
@@ -90,7 +90,7 @@ Puedes combinar varias bombas que tengas fabricadas para crear un explosivo aún
 
 Mientras que combinar tiene sus ventajas cabe recalcar que aumentará también el volumen de la bomba misma hasta el punto de hacerla complicada de activar. Cada unidad de diferencia aumentará el coste en acciones de esta por 1 hasta un máximo de 3. Si dicho coste fuera superior a 3 la bomba no podrá ser lanzada, impidiendo así que pueda ser usada en ataques.
 
-### Retrasar explosión
+### Retrasar Explosión
 
 *Bombas, Pasiva*
 

@@ -24,6 +24,17 @@ La criatura tiene esencia mágica relacionado con fuerzas elementales de natural
 
 ## Esencia de Naturaleza II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su FUE, CON y SAB por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Naturaleza y Ascendencia Primigenia por 1. 
+- **Hechizos:** Aprende los hechizos Drenar Magia y Espina Parasítica. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda. Aumenta los dados de daño de todos sus hechizos de Naturaleza a 1d8. 
+- **Crecimiento Acelerado:** Las plantas que crea están infundidas de energía vital, aumentando así su fuerza y tamaño. Recibe Ventaja en todos sus tiros relacionados con Magia de Naturaleza además sus habilidades de Naturaleza aumentan su alcance por un paso y reciben un dado de daño adicional. 
+- **Plantas Animadas:** Al entrar en combate lanzará automáticamente el hechizo Animar Plantas, infundiendo así la naturaleza a su alrededor con una semblanza de vida. En cualquier momento de la ronda puede atacar a un enemigo a distancia media con sus plantas animadas como acción bonus, infligiendo así 1d8 + SAB o CON daño Cortante al impactar y *enredando* a un objetivo. Si afecta a un enemigo *enredado* deberá tirar Heroísmo o Destrozar contra su modificador de Magia de Naturaleza o quedará *agarrado* hasta que escape (puede repetir cada ronda). Este efecto terminará si pierde la concentración o es destruido y restaurarlo cuesta dos acciones.
+- **Muro de Zarzas:** Una vez por ronda puede emplear el hechizo Muro de Zarzas de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
+
 ## Esencia de Naturaleza III (+2, 5 mejoras)
 
+Florecimiento Mortal, Armadura de Zarzas, Prisión de Madera, Sanación Espiritual, Aura Primigenia, Vínculo Primigenio
+
 ## Esencia de Naturaleza IV (+2, 7 mejoras)
+
+Guardián de la Naturaleza, Furia de la Naturaleza, Naturalizar, Gran Árbol Drenador

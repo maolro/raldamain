@@ -13,11 +13,15 @@ La criatura ha desarrollado poderes psíquicos y telequinéticos al despertar el
 - **Hechizos:** Aprende los hechizos Asalto Mental, Manipulación Telequinética, Lanzamiento Humano y Furia Telequinética. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Escudo Mental:** No puede ser detectado pasivamente con Leer Pensamientos y puede usar su tiro de Magia Mental para defenderse de efectos Mentales ajenos. 
 - **Leer Pensamientos:** Tiene siempre activo el hechizo Leer Pensamientos, permitiéndole detectar todas las criaturas pensantes a distancia media y leer sus pensamientos superficiales.
-- **Parada Telequinética:** Puede usar su tiro de Teleq defenderse de ataques cuerpo a cuerpo y a distancia.
+- **Parada Telequinética:** Puede usar su tiro de Telekinesia para defenderse de ataques cuerpo a cuerpo y a distancia.
 
 ## Psíquico II (+2, 3 mejoras)
 
+Barrera de Fuerza, Sanación Etérea, Telepatía, Agarre Telequinético, Mente Desencadenada, Sobrecarga Mental, Sanación Mental, Levitación Psíquica
+
 ## Psíquico III (+2, 5 mejoras)
+
+Arma Danzante, Modificar Recuerdos, Mente en Blanco
 
 ## Psíquico IV (+2, 7 mejoras)
 

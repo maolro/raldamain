@@ -95,8 +95,8 @@ Alteras el tamaño de una criatura que toques para hacerla más grande o más pe
 
 Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de cuantos objetivos puedes afectar simultáneamente, pero todo efecto activo desaparecerá cuando se acabe el tiempo. Un afectado involuntario puede repetir este tiro al principio de cada turno para intentar liberarse. Al activar este hechizo escoge una de estas dos opciones para afectar a tu objetivo.
 
-- **Reducir tamaño:** Reduces el tamaño de tu objetivo, disminuyendo su peso y altura y aumentando su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de DES a costa de obtener Desventaja en todos sus tiros relacionados con la FUE y la CON. El daño de sus ataques naturales se reducirá también por un paso debido a su tamaño menor.
-- **Aumentar peso:** Aumentas el tamaño de tu objetivo, incrementando su peso y altura a costa de reducir su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de FUE y CON a costa de obtener Desventaja en todos sus tiros relacionados con la DES. El daño de sus ataques naturales se reducirá también por un paso debido a su tamaño menor.
+- **Reducir tamaño:** Reduces el tamaño de tu objetivo, disminuyendo su peso y altura y aumentando su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de DES a costa de obtener Desventaja en todos sus tiros relacionados con la FUE y la CON. El daño de sus ataques naturales se reducirá también por un paso debido a su tamaño inferior.
+- **Aumentar tamaño:** Aumentas el tamaño de tu objetivo, incrementando su peso y altura a costa de reducir su movilidad. Mientras dure este hechizo recibirá Ventaja en todos sus tiros relacionados con la estadística de FUE y CON a costa de obtener Desventaja en todos sus tiros relacionados con la DES. El daño de sus ataques naturales aumentará por un paso debido a su tamaño superior.
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo por un paso, llegando como máximo a distancia media, o afecta a un objetivo adicional con él.
 
@@ -145,6 +145,8 @@ Eres capaz de crear inyecciones mutagénicas más potentes capaces de alterar el
 - **Piel Venenosa:** Tu piel se vuelve tóxica de la misma manera que algunas ranas. Toda criatura que te toque sufrirá los efectos de un veneno de tu elección cuyo tiro de gravedad será igual a tu modificador de Transmutación.
 
 - **Aliento:** Eres capaz de escupir un aliento mágico como si fueras un dragón. El aliento empleará tu modificador de Transmutación para el tiro de ataque e infligirá 1d8 + CON daño Ácido, Eléctrico, Frío o Fuego al impactar. Emplearlo costará dos acciones y afectará un cono pequeño o una línea mediana. Si afectas a una criatura grande con esta inyección recibirá un dado adicional de daño y el área afectada aumentará por un paso.
+
+- **Gigante:**
 
 ### Crear Quimera
 

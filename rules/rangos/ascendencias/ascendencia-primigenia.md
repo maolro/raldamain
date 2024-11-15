@@ -107,7 +107,7 @@ La energía espiritual que emite tu cuerpo es capaz de causar disrupciones en la
 
 **Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera además que no puedes contrarrestar hechizos de rango superior a
 
-### Portal espiritual
+### Portal Espiritual
 
 *Innata, Divina, Ambiental, Espacial*
 
@@ -129,7 +129,7 @@ Debido a las diferencias temporales toda persona que se encuentre en el plano es
 
 Aumenta tu estadística de CON y su limitador por 1. Aprendes dos hechizos de Rango III pertenecientes a una magia asociada a tu espíritu, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Despertar la bestia
+### Despertar la Bestia
 
 *Innata, Pasiva*
 

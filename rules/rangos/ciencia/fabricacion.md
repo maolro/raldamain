@@ -102,21 +102,23 @@ Debido al volumen de una batería no es posible llevar más de dos baterías enc
 
 *Objeto, Proyecto*
 
-Fabricas unas gafas equipadas con sensores infrarrojos capaces de percibir el calor a distancia media. Activar los sensores infrarrojos te cuesta una acción y con ellos puedes detectar la posición exacta de todas las criaturas que desprendan calor en el área de los sensores, evitando así que tus enemigos obtengan ventajas por invisibilidad o ataques sorpresa. 
-
-Puedes crear variantes de este objeto que te otorguen visión a oscuras a distancia lejana o vista a ciegas en un radio corto. Solo puedes tener un tipo de visión especial activa a la vez. 
+Fabricas unas gafas equipadas con sensores infrarrojos capaces de percibir el calor a distancia media. Activar los sensores infrarrojos te cuesta una acción y con ellos puedes detectar la posición exacta de todas las criaturas que desprendan calor en el área de los sensores, evitando así que tus enemigos obtengan ventajas por invisibilidad o ataques sorpresa. Puedes crear variantes de este objeto que te otorguen visión a oscuras a distancia lejana o vista a ciegas en un radio corto. Solo puedes tener un tipo de visión especial activa a la vez. 
 
 ## Rango III
 
 Recibes dos ranuras de objeto de Rango III y una ranura adicional de Rango II y I
 
-### Crear constructo
+### Crear Constructo
 
-Tienes un compañero constructo que te obedece
+*Proyecto, Objeto*
+
+Empleas tus conocimientos avanzados en mecánica y magia para construir un constructo que te servirá con absoluta lealtad. Este constructo tendrá nivel igual a tu Rango de Fabricación x 2 y sus estadísticas se montarán de la misma manera que una criatura invocada pero con la diferencia que será un Constructo en lugar de un Extraplanario. Cada constructo que tengas a tus órdenes consumirá una ranura de objeto de Rango III. 
 
 ### Propulsor
 
-Creas un propulsor que otorga velocidad de vuelo 1
+*Objeto, Proyecto, Mejora*
+
+Creas un dispositivo que se puede integrar en una armadura o usar como un accesorio independiente, proporcionando velocidad de vuelo 1 además de Ventaja en todos los tiros de Esquiva. Esta ventaja no se acumula con otras habilidades que otorguen la habilidad de volar. El propulsor consume una cantidad moderada de energía, requiriendo mantenimiento tras una hora de uso continuo. Activar o desactivar el propulsor costará una acción.
 
 ### Guante telequinético
 
@@ -129,10 +131,6 @@ Puede volver invisible al portador o camuflarlo completamente con el entorno
 ### Barrera mental
 
 Permite usar tu modificador de Fabricación para defenderte de efectos Mentales u Oníricos e impide que puedas ser detectado.
-
-<u>Invento revolucionario</u> (proyecto): Tu constante trabajo en el campo de la invención ha dado su fruto en un novedoso invento capaz de revolucionar la tecnología del momento. La naturaleza del invento queda escogida por ti con el previo consentimiento del máster, adecuándose a la situación tecnológica del momento. El invento también puede ser una evolución sobre otro artefacto existente, modificando sus capacidades de una nueva manera. 
-
-<u>Maestro de la mecánica</u> (proyecto y pasiva): Has descubierto el secreto de cómo utilizar el chi como fuente de energía para la mecánica, empleándolo para mejorar tu cuerpo o construir autómatas. Con esta habilidad puedes mejorar tu cuerpo y mente, pudiendo recibir un número de mejoras con coste total de 3 [PT](https://raldamain.com/rules/Reglas%20adicionales/crear%20criaturas.html#puntos-de-transformaci%C3%B3n), o crear un constructo de nivel máximo igual al tuyo. Debes dedicar un día de trabajo por cada PT que tenga aquello que busques fabricar y necesitas una adecuada cantidad de recursos, costando así 1 crédito por cada PT. En el caso que intentes elaborar un constructo costará una cantidad de días de trabajo y crédito igual a su nivel total.
 
 ## Rango IV
 

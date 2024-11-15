@@ -80,7 +80,9 @@ Golpeas a un enemigo de tal manera para que se mueva a una mala posición y qued
 
 ## Rango III
 
-### Romper ladrillos
+El daño base de tus ataques Marciales pasa a ser 1d8.
+
+### Romper Ladrillos
 
 *Marcial, Dragón, Mejora* 
 
@@ -128,11 +130,13 @@ Eres capaz de controlar la fuerza que recorre tu cuerpo para reconducirla con en
 
 Gracias a tu riguroso entrenamiento y disciplina has logrado someter las necesidades de tu cuerpo, pudiendo reforzar tu resistencia únicamente con tu fuerza de voluntad. Gracias a ello podrás aguantar el doble de tiempo que antes el hambre, el sueño e incluso la asfixia. Incluso, gracias a tu fuerte temple, recibirás resistencia a efectos Mentales, Ilusiones, Aflicciones y Miedo. 
 
-**Empoderar (1 vigor):** una vez por ronda puedes liberarte de un efecto mental, aflicción, efecto de miedo o una herida permanente media o leve que te aqueje. 
+**Empoderar** (1 vigor): Una vez por ronda puedes liberarte de un efecto Mental, Aflicción, Miedo o una *herida permanente media* o *leve* que te aqueje. 
 
 ## Rango V
 
-### Patada decapitadora
+El daño base de tus ataques Marciales pasa a ser 1d10.
+
+### Patada Decapitadora
 
 *Marcial, Dragón, Mejora*
 

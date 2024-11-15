@@ -70,7 +70,7 @@ Una masa de enredaderas emerge del suelo en un punto a distancia media y llena u
 
 ## Rango II
 
-### Muro de zarzas
+### Muro de Zarzas
 
 *Naturaleza, Defensivo, Físico, Duradero*
 
@@ -90,7 +90,7 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 **Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. Esta habilidad solo se puede utilizar si el campo de batalla tiene una cantidad adecuada de plantas.
 
-### Crecimiento acelerado
+### Crecimiento Acelerado
 
 *Naturaleza, Ambiental, Duradero*
 
@@ -100,11 +100,11 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 **Duración:** Una hora
 
-Infundes las plantas en el campo de batalla con energía vital para acelerar su crecimiento. Todas las plantas en un radio grande se volverán más grandes y densas, transformando el campo de batalla en *terreno difícil*. Este efecto durará una hora y mientras permanezca activo todos los hechizos de magia de Naturaleza lanzados en el área afectada reciben Ventaja y aumentan su alcance por un paso. Este efecto solo puede ser destruido por hechizos de Área o Ambientales de magnitud similar o superior.
+Infundes las plantas en el campo de batalla con energía vital para acelerar su crecimiento. Todas las plantas en un radio grande se volverán más grandes y densas, transformando el campo de batalla en *terreno difícil*. Este efecto durará una hora y mientras permanezca activo recibes Ventaja en todos tus tiros relacionados con Magia de Naturaleza. Dichos hechizos aumentarán también su alcance por un paso y recibirán un dado de daño adicional. Este efecto solo puede ser destruido por hechizos de Área o Ambientales de magnitud similar o superior.
 
 **Empoderar** (1 chi): El siguiente hechizo de Naturaleza que lances reduce su coste de acciones en 1 (mínimo 0). Solo puedes empoderar de esta manera una vez por hechizo.
 
-### Drenar magia
+### Drenar Magia
 
 *Madera, Mejora*
 
@@ -124,7 +124,7 @@ Este hechizo no puede usarse en el mismo objetivo más de una vez por ronda. Ade
 
 Todos tus hechizos de Naturaleza sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).	
 
-### Animar plantas
+### Animar Plantas
 
 *Naturaleza, Ataque, Área, Físico, Agarre, Duradero*
 
@@ -146,7 +146,7 @@ Este efecto permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 **Empoderar** (1 chi): Las plantas aumentan su alcance durante una ronda, transformando el área afectada en un cilindro mediano.
 
-### Espina parasítica
+### Espina Parasítica
 
 *Naturaleza, Mejora, Toque*
 
@@ -158,11 +158,11 @@ Este efecto permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 Al herir a un enemigo con un hechizo de magia de Naturaleza puedes lanzar este hechizo como una acción bonus para clavarle una espina de madera y hacerla crecer rápidamente, provocándole los efectos de *sangrado*. La espina permanecerá dentro del cuerpo de tu objetivo hasta que sea arrancada con un tiro exitoso de Primeros auxilios contra tu magia de Naturaleza. Este hechizo cuenta como un efecto de Toque para los propósitos de Inmunidades.
 
-Cada vez que un personaje empiece su turno con una espina parasítica en él debe tener éxito en un tiro de CON frente a tu magia de Naturaleza o sufrirá 1d8 daño Perforante que ignora defensa y resistencias junto con una *herida permanente leve* (a mitad de daño si tiene éxito). Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de CON contra la espina.
+Cada vez que un personaje empiece su turno con una espina parasítica en él debe tener éxito en un tiro de Salud frente a tu magia de Naturaleza o sufrirá 1d8 daño Perforante que ignora defensa y resistencias junto con una *herida permanente leve* (a mitad de daño si tiene éxito). Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de CON contra la espina.
 
 **Empoderar** (1 chi): Un objetivo adicional impactado por el mismo ataque de Naturaleza también se le clavará una espina, sufriendo los mismos efectos.
 
-### Invocar elemental de naturaleza
+### Invocar Elemental de Naturaleza
 
 *Naturaleza, Invocación*
 
@@ -178,7 +178,7 @@ Llamas a un espíritu guardián hecho de plantas y madera para que te asista en 
 
 ## Rango IV
 
-**Florecimiento mortal**
+**Florecimiento Mortal**
 
 *Naturaleza, Área, Ambiental, Duradera, Concentración*
 
@@ -204,7 +204,7 @@ En caso de emplear esta habilidad en un terreno que ya estuviese afectado por Cr
 
 Empleando crecimientos vegetales eres capaz de crear una gruesa y espinosa con la que defenderte de tus enemigos. De esta forma, al crearla, recibirás contadores de escudo iguales a tu rango, además de que podrás hacer un ataque de Espina de madera o Zarcillo enredador como acción bonus una vez por ronda. En el caso de que comiences tu turno en un lugar con muchas plantas recuperarás un contador de escudo. 
 
-**Prisión de madera** 
+**Prisión de Madera** 
 
 *Naturaleza, Mejora*
 
@@ -218,7 +218,7 @@ Aprovechando las propiedades de las plantas creas una prisión capaz de drenar t
 
 ## Rango V
 
-**Furia de la naturaleza** 
+**Furia de la Naturaleza** 
 
 *Naturaleza, Área, Ataque*
 
@@ -230,7 +230,7 @@ Aprovechando las propiedades de las plantas creas una prisión capaz de drenar t
 
 Provocando un crecimiento espontáneo de la vegetación de la zona puedes hacer que temporalmente se mueva de acuerdo a tu voluntad, atacando a tantos como se encuentren en su radio de alcance. Todos aquellos que se encuentren en una columna de tamaño medio deberán defenderse o sufrirán 3d10+Sabiduría daño cortante y quedarán enredados. Así mismo los afectados deberán tirar heroísmo o destrozar o quedarán agarrados inmediatamente. El área afectada quedará bajo los efectos de crecimiento acelerado, y en caso de que el hechizo se lance en un terreno afectado por animar plantas, este le dará a la Furia de la naturaleza un dado adicional de daño.
 
-**Gran árbol drenador** 
+**Gran Árbol Drenador** 
 
 *Naturaleza, Invocación, Mejora*
 
