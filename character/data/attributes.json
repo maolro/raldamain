@@ -182,6 +182,15 @@
       "duration": "Una ronda",
       "description": "1/Ronda, Obtiene una acción adicional que puede usar para interrumpir o reduce el daño de un ataque a la mitad tras aplicar defensa"
     },
+    "agilidad-mental": {
+      "rank": 1,
+      "name": "Agilidad Mental",
+      "skill": "mente-desencadenada",
+      "type": "Pasiva",
+      "tags": "Innata",
+      "talpoints": "RANGO+2",
+      "description": "Recibe RANGO+2 niveles de talento adicionales (ya incluidos)."
+    },
     "aguantar-heridas": {
       "rank": 2,
       "name": "Aguantar Heridas",
@@ -2049,10 +2058,8 @@
       "name": "Conocimiento Arcano",
       "skill": "mente-desencadenada",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Puede usar su modificador de Mente Desencadenada para tiros de Magia Arcana"
+      "tags": "Mente Desencadenada, Innata",
+      "description": "Al entrar en Mente Desencadenada puede lanzar nuevos hechizos para los cuales usará su modificador de Mente Desencadenada para todos sus tiros de Magia Arcana."
     },
     "consagrar-la-tierra": {
       "rank": 2,
@@ -2570,9 +2577,9 @@
       "skill": "magia-temporal",
       "type": "Reaccion",
       "cost": "1 Chi",
-      "reach": "",
-      "duration": "",
-      "description": "Cancela el daño y los efectos del último ataque que haya sufrido"
+      "uses": "1/Ronda",
+      "tags": "Arcana, Temporal, Defensiva",
+      "description": "Cancela el daño y los efectos del último ataque que haya recibido, tratándolo como si nunca le impactase. No puede anular ataques recibidos en la ronda pasada."
     },
     "destreza-defensiva": {
       "rank": 1,
@@ -3296,6 +3303,14 @@
       "tags": "Innata",
       "description": "Puede usar Esquiva para defenderse de ataques sorpresa y ataques imposibles de esquivar."
     },
+    "esquiva-espacial": {
+      "rank": 1,
+      "name": "Esquiva Espacial",
+      "skill": "magia-espacial",
+      "type": "Reaccion",
+      "tags": "Arcana, Espacial, Defensiva",
+      "description": "+MOD para defenderse. Funciona contra ataques de todo tipo. Si tiene también Esquiva como reacción defensiva puede tirar ambas y quedarse con el resultado que más le convenga."
+    },
     "estasis": {
       "rank": 4,
       "name": "Estasis",
@@ -3560,9 +3575,8 @@
       "skill": "ascendencia-akhasica",
       "type": "Accion",
       "cost": "3 Acciones y 2 Chi",
-      "reach": "Propio",
-      "duration": "Concentración",
-      "description": "Su cuerpo cae inconsciente y se convierte en un ser incorpóreo Inmune a efectos que no sean Arcanos o Divinos. Solo puede realizar acciones mentales en ese estado"
+      "tags": "Innata, Duradera",
+      "description": "Libera su mente de las ataduras de su cuerpo, convirtiéndose en una criatura incorpórea de pensamiento puro que recibe Inmunidad a todos los efectos que no sean Arcanos o Divinos además de velocidad de vuelo 1. Cuando active este hechizo su cuerpo físico caerá inconsciente y no podrá alejarse más de cien metros de él. La forma astral se desvanecerá si su cuerpo físico es dañado o si es afectada con Eliminar Magia u otros hechizos similares. Además, solo podrá realizar acciones que requieran esfuerzo únicamente mental y no podrá interactuar con objetos físicos. A rango V puede utilizar esta habilidad para viajar al vacío entre dimensiones, pudiendo así entrar como criatura astral en otros planos o dominios conecntados con la región del plano material donde se encuentre."
     },
     "forma-de-la-bestia": {
       "rank": 1,
@@ -4432,10 +4446,9 @@
       "name": "Hipercognición",
       "skill": "ascendencia-akhasica",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Puede conocer toda la información sobre cualquier ámbito de estudio sin la necesidad de tirar Memoria y puede emplear vigor en lugar de chi para la Magia Arcana"
+      "tags": "Innata",
+      "resistances": ["Mentales"],
+      "description": "Puede conocer toda la información sobre cualquier ámbito de estudio sin la necesidad de tirar Memoria y puede emplear vigor en lugar de chi para la Magia Arcana. Obtiene también Resistencia a efectos Mentales (ya incluido)."
     },
     "hueste-divina": {
       "rank": 4,
@@ -5429,9 +5442,8 @@
       "skill": "ascendencia-akhasica",
       "type": "Accion",
       "cost": "3 Acciones y 1 Chi",
-      "reach": "Propio",
-      "duration": "Concentración",
-      "description": "Entra en un estado que le da Ventaja en todos sus tiros relacionados con la INT e Inmunidad a ataques sorpresa"
+      "tags": "Innata, Duradera",
+      "description": "Entra en un estado de conocimiento superior en el que recibe Ventaja en todos sus tiros relacionados con la estadística de INT e Inmunidad a ataques sorpresa. Los beneficios de Meditación Iluminada permanecerán activos hasta que pierda la concentración o pase por una intensa situación emocional."
     },
     "megaevolucion": {
       "rank": 5,
@@ -5468,10 +5480,8 @@
       "name": "Mente Desencadenada",
       "skill": "mente-desencadenada",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Entra en un estado que le da Ventaja en sus tiros mentales y +1d6 daño a hechizos. Cuando acabe pierde cordura igual a la diferencia entre rondas pasadas y chi"
+      "tags": "Mente Desencadenada, Mental",
+      "description": "Durante una cantidad de rondas de su elección recibe Ventaja en todos tus tiros de ataque, defensa y talento relacionados con sus estadísticas mentales además que aumentará todo el daño que dependa de una estadística mental por 1d6. No podrá pasar más de seis rondas seguidas en Mente desencadenada y en el momento que abandone dicho estado sufrirá daño a la cordura igual a la diferencia entre su reserva de chi actual y la cantidad de rondas que pasadas en él."
     },
     "mente-en-blanco": {
       "rank": 5,
@@ -5508,9 +5518,7 @@
       "name": "Mente sobre Cuerpo",
       "skill": "mente-desencadenada",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Mente Desencadenada, Innata",
       "description": "Puede seguir luchando a 0 o menos PV si está en Mente Desencadenada además que ignora los efectos de heridas permanentes no críticas. Cuando acabe pierde cordura igual a PV negativos"
     },
     "metabolismo-fungico": {
@@ -6434,10 +6442,9 @@
       "name": "Poder del Dolor",
       "skill": "mente-desencadenada",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Ignora los efectos de heridas medias y leves si está en Mente Desencadenada. Resistencia a Aflicciones y Aturdimiento"
+      "tags": "Mente Desencadenada, Mental, Pasiva",
+      "resistances": ["Aflicciones","Aturdimiento","Heridas permanentes leves y medias"],
+      "description": "Ignora los efectos de <i>heridas permanentes medias</i> y <i>leves</i> si está en Mente Desencadenada. Obtiene también Resistencia a Aflicciones y Aturdimiento."
     },
     "poder-del-invierno": {
       "rank": 4,
@@ -6662,19 +6669,16 @@
       "name": "Psicomagia",
       "skill": "ascendencia-akhasica",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "No necesita gesticular o hablar para lanzar hechizos. 3/Ronda reduce su cordura por 2 para recuperar 1 Chi"
+      "tags": "Innata",
+      "uses": "3/Ronda",
+      "description": "No necesita gesticular o hablar para lanzar hechizos, requiriendo únicamente que mantenga sus facultades mentales. Además, puede reducir su Cordura por 2 para recuperar 1 chi o vigor de sus reservas (máximo tres veces por ronda)."
     },
     "psique-retorcido": {
       "rank": 4,
       "name": "Psique Retorcido",
       "skill": "mente-desencadenada",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Mente Desencadenada",
       "description": "Inmunidad a efectos Mentales y Miedo si está en Mente Desencadenada además que rebota hechizos mentales que le intenten afectar"
     },
     "puerta-dimensional": {
@@ -7253,14 +7257,13 @@
       "description": "Su siguiente ataque inflige +2d6 daño y rompe la armadura del objetivo. Si usa armas como Parada la rompe también y elimina un contador de escudo"
     },
     "salto-espacial": {
-      "rank": 2,
+      "rank": 1,
       "name": "Salto Espacial",
       "skill": "magia-espacial",
       "type": "Accion",
       "cost": "1 Acción y 1 Chi",
-      "reach": "Propio",
-      "duration": "Instantáneo",
-      "description": "Se teletransporta un paso en cualquier dirección"
+      "tags": "Arcana, Espacial",
+      "description": "Se teletransporta un paso en cualquier dirección. Solo puede aparecer en espacios que pueda percibir y con espacio suficiente. Moverse de esta manera no provoca ataques de oportunidad."
     },
     "salto-espacial-defensivo": {
       "rank": 1,
@@ -7268,9 +7271,10 @@
       "skill": "magia-espacial",
       "type": "Reaccion",
       "cost": "1 Chi",
-      "reach": "",
-      "duration": "",
-      "description": "1/Ronda, se teletransporta un paso y evita automáticamente un ataque enemigo. Requiere posición defensiva"
+      "tags": "Arcana, Espacial, Defensiva",
+      "uses": "1/Ronda",
+      "description": "Se teletransporta un paso y evita automáticamente un ataque enemigo. Requiere <i>posición defensiva</i> y no funciona contra ataques de área que abarcan un área superior a la distancia que pueda teletransportarse.",
+      "empower": "(1 chi) Aumenta por un paso la distancia a la que puede teletransportarse. No puede empoderar el mismo hechizo más de dos veces."
     },
     "salto-mortal": {
       "rank": 4,
@@ -7494,10 +7498,8 @@
       "name": "Sentido Arcano",
       "skill": "mente-desencadenada",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Identifica de inmediato objetos y hechizos arcanos además de vista a ciegas con alcance medio"
+      "tags": "Innata",
+      "description": "Eres capaz de detecatar la posición y fuerza aproximada de todas las criaturas y auras mágicas a distancia media. Además, al interactuar con un objeto mágico o un lugar que haya sido afectado por magia magia puede aprender más información sobre la fuerza, antigüedad o naturaleza de esta."
     },
     "sentido-de-muerte": {
       "rank": 1,
@@ -8353,10 +8355,10 @@
       "name": "Vínculo Akhásico",
       "skill": "ascendencia-akhasica",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "RANGO+2/día, repite un tiro de cualquier tipo y se queda con el resultado que más le convenga"
+      "tags": "Innata",
+      "uses": "RANGO+2/día",
+      "description": "Repite un tiro de ataque, defensa, salvación o habilidad y quedarte con el resultado que más te convenga. Esta habilidad solo puede usarse una vez por tiro y puede contrarrestarse si la criatura enfrentada emplea una habilidad que le permita repetir tiros.",
+      "empower":"(1 chi) Recupera un uso de esta habilidad."
     },
     "vinculo-con-la-tierra": {
       "rank": 1,

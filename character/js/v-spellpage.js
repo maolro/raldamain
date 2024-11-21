@@ -162,7 +162,7 @@ Vue.component('v-spellpage', {
         },
         addSpell(spell, x, y, cat, spkey) {
             const key = `spell${x}${y}`;
-            atb = {...this.attributes[spell]};
+            let atb = {...this.attributes[spell]};
             atb.skill = cat;
             if(atb.skill == "magia-divina")
                 atb.tags += ", Divina";

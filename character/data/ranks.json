@@ -625,7 +625,7 @@
       {"rank": 3, "spell-lvl": 1, "slots": 1, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-protectora","magia-mental"], "mod": "mente-desencadenada"},
       {"rank": 4, "spell-lvl": 2, "slots": 1, "cat": ["magia-de-evocacion","magia-espacial","magia-temporal","magia-protectora","magia-mental"], "mod": "mente-desencadenada"}
     ],
-    "attributes": "concentracion-superior,conocimiento-arcano,division-mental,mente-desencadenada,mente-sobre-cuerpo,poder-de-la-locura,poder-del-dolor,psique-retorcido,sentido-arcano"
+    "attributes": "concentracion-superior,conocimiento-arcano,division-mental,mente-desencadenada,mente-sobre-cuerpo,poder-de-la-locura,poder-del-dolor,psique-retorcido,sentido-arcano,agilidad-mental"
   },
   "nigromancia": {
     "name": "Nigromancia",

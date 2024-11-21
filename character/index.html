@@ -82,7 +82,7 @@
                         @set-level="level = $event" @set-name="charactername = $event"></v-statpage>
                     </div>
                     <div class="tab-pane fade" id="talents" role="tabpanel" aria-labelledby="talents-tab">
-                        <v-talpage v-bind:level="level" :talents="talents"></v-talpage>
+                        <v-talpage v-bind:level="level" :talents="talents" :psatb="myatb.passive"></v-talpage>
                     </div>
                     <div class="tab-pane fade" id="ranks" role="tabpanel" aria-labelledby="ranks-tab">
                         <v-rankpage v-bind:ranks="ranks" :level="level" :rkpoints="rkpoints"></v-rankpage>

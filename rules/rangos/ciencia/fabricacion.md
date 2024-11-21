@@ -62,7 +62,7 @@ Este dispositivo te permite filtrar el aire y proporciona oxígeno para que pued
 
 ## Rango II
 
-Recibes dos ranuras de objeto de Rango II y una ranura adicional de Rango I
+Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II y Rango I.
 
 ### Infusión Elemental
 

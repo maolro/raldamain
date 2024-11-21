@@ -791,6 +791,41 @@
             }
         ]
     },
+    "espectro": {
+        "name": "Espectro",
+        "stat": "cha",
+        "modranks": [
+            "magia-de-almas"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": null},
+            {"stat": "con", "rank": 1, "boost": null}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["posesion"],
+                "abilities": [
+                    {
+                        "name": "Incorpóreo",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "immunities": ["Físicos","Mentales","Miedo","Aflicciones","Fuego","Frío","Ácido","Eléctrico","Sónico"],
+                        "description": "Carece de cuerpo físico, obteniendo así Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones además del daño Fuego, Frío, Ácido, Eléctrico y Sónico salvo que tenga características Arcanas o Divinas. Recibe también velocidad de vuelo 1 y puede pasar a través de objetos sólidos. Esta criatura puede ser Exorcizada o sellada con habilidades de Médium."
+                    },
+                    {
+                        "name": "Sentidos Sobrenaturales",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "description": "Es capaz de sentir la posición de todos los seres vivos y presencias mágicas a distancia media."
+                    }
+                ]
+            }
+        ]
+    },
     "evocador": {
         "name": "Evocador",
         "stat": "itl",
@@ -1243,41 +1278,6 @@
                 "attributes": [],
                 "abilities": [
                     {}
-                ]
-            }
-        ]
-    },
-    "incorporeo": {
-        "name": "Incorpóreo",
-        "stat": "cha",
-        "modranks": [
-            "magia-de-almas"
-        ],
-        "rank": 0,
-        "max": 1,
-        "stats": [
-            {"stat": "str", "rank": 1, "boost": null},
-            {"stat": "con", "rank": 1, "boost": null}
-        ],
-        "enchancements": [
-            {
-                "attributes": ["posesion"],
-                "abilities": [
-                    {
-                        "name": "Incorpóreo",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "magia-de-almas",
-                        "immunities": ["Físicos","Mentales","Miedo","Aflicciones","Fuego","Frío","Ácido","Eléctrico","Sónico"],
-                        "description": "Carece de cuerpo físico, obteniendo así Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones además del daño Fuego, Frío, Ácido, Eléctrico y Sónico salvo que tenga características Arcanas o Divinas. Recibe también velocidad de vuelo 1 y puede pasar a través de objetos sólidos. Esta criatura puede ser Exorcizada o sellada con habilidades de Médium."
-                    },
-                    {
-                        "name": "Sentidos Sobrenaturales",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "magia-de-almas",
-                        "description": "Es capaz de sentir la posición de todos los seres vivos y presencias mágicas a distancia media."
-                    }
                 ]
             }
         ]

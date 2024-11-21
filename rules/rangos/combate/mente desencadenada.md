@@ -20,7 +20,7 @@ Mente desencadenada tiene las siguientes reglas fundamentales que se aplican a c
 
 *Mente desencadenada, Mental, Pasiva*
 
-Liberas a tu mente de las ataduras materiales para alcanzar gran poder a costa de tu cordura. Cuando actives esta habilidad durante una cantidad de rondas de tu elección recibirás Ventaja en todos tus tiros de ataque, talento y salvación relacionados con tus estadísticas mentales. Entrar en dicho estado también aumentará todo el daño que dependa de una estadística mental por 1d6. 
+Liberas a tu mente de las ataduras materiales para alcanzar gran poder a costa de tu cordura. Cuando actives esta habilidad durante una cantidad de rondas de tu elección recibirás Ventaja en todos tus tiros de ataque, defensa y talento relacionados con tus estadísticas mentales. Entrar en dicho estado también aumentará todo el daño que dependa de una estadística mental por 1d6. 
 
 Mientras que combatir en dicho estado potencia enormemente tus facultades mentales un uso excesivo de él puede acabar provocándote heridas mentales. No podrás pasar más de seis rondas seguidas en Mente desencadenada y en el momento que abandones dicho estado sufrirás daño a la cordura igual a la diferencia entre tu reserva de chi actual y la cantidad de rondas que hayas pasado en Mente desencadenada. 
 
@@ -34,7 +34,7 @@ Tu capacidad de despertar el verdadero potencial de tu mente ha mejorado notable
 
 ### Poder del Dolor
 
-*Mente desencadenada, Innata, Pasiva*
+*Mente desencadenada, Mental, Pasiva*
 
 Eres capaz de suprimir el dolor únicamente con el poder de tu mente. Mientras te encuentres en Mente Desencadenada ignorarás los efectos provocados por *heridas permanentes* leves y medias además de obtener Resistencia a Aflicciones y Aturdimiento. Aunque puedas suprimir los efectos de las heridas estas permanecerán en tu cuerpo y actuarán con normalidad cuando abandones el estado de Mente desencadenada.
 

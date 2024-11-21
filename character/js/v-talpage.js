@@ -22,6 +22,9 @@ Vue.component('v-talpage', {
         },
         talents: {
             type: Object
+        },
+        psatb:{
+            type: Array
         }
     },
     computed: {
@@ -30,7 +33,7 @@ Vue.component('v-talpage', {
             for (let key in this.talents) {
                 talSum += this.talents[key].level;
             }
-            return (2 + 2 * parseInt(this.level) - talSum);
+            return (2 + 2 * parseInt(this.level) - talSum + this.$root.sumAllKeys('talpoints', this.psatb));
         },
         talentlimit: function () {
             level = this.level
