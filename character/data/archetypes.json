@@ -1068,7 +1068,7 @@
                         "tags": "Divina, Defensiva",
                         "uses": "1/Ronda",
                         "skill": "guerrero-divino",
-                        "description": "Tiene éxito automático en un tiro defensivo contra un efecto Divino o Arcano de Rango RANGO o menos."
+                        "description": "Tiene éxito automático en un tiro defensivo contra un efecto Divino o Arcano de Rango RANGO o menos. Si el lanzador ha pagado un chi adicional al lanzar el hechizo esto no funcionará (2 chi si era de Rango II o inferior)."
                     },
                     {
                         "name": "Presencia Divina",
@@ -1088,9 +1088,23 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["paso-abisal","paso-abisal-defensivo","aura-del-caos"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Golpe Exiliante",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico a una Invocación puede hacer un tiro con modificador +MOD contra su nivel + 2 y en caso de éxito la exiliará de inmediato. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino."
+                    },
+                    {
+                        "name": "Hueste Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "skill": "guerrero-divino",
+                        "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón abisal. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
+                    }
                 ]
             },
             {
@@ -1433,15 +1447,25 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["frenesi-de-batalla","resiliencia","reposicion-forzosa","golpe-aturdidor","gran-barrido"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Demostración Terrorífica",
+                        "type": "Pasiva",
+                        "skill": "ira",
+                        "description": "Mientras se encuentre en Ira toda criatura a distancia media que pueda verle deberá tener éxito en un tiro de Voluntad o Intimidar contra +MOD o aumentará su nivel de <i>miedo</i> por un paso. Aquellas criaturas que tengan éxito no tendrán que volver a tirar y las que fracasen deberán repetir el tiro cada ronda."
+                    }
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["ira-temeraria","hasta-la-muerte","carga-salvaje","impacto-meteoro","golpe-demoledor","combinar-tecnicas-(pesadas)"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Guardia Fluida",
+                        "type": "Pasiva",
+                        "skill": "armas-pesadas",
+                        "description": "Al entrar en combate recibe RANGO <i>contadores de escudo</i>. Dichos contadores podrán detener ataques de la misma manera que la habilidad Guardia Fluida y reponerlos cuesta dos acciones."
+                    }
                 ]
             },
             {
