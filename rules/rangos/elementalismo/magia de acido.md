@@ -43,7 +43,7 @@ Formas una esfera de ácido corrosivo en la palma de tu mano y la lanzas hacia u
 
 Aumentas las propiedades corrosivas del ácido para que destruya todo con lo que haga contacto. Haz un ataque empleando Magia de Ácido contra una criatura que puedas tocar que infligirá 1d6 + Rango daño Ácido al impactar. Si el objetivo tiene armadura metálica o emplea un objeto para detener este ataque sufrirá el efecto de estado *roto*.
 
-Si logras impactar tu objetivo se recubrirá de ácido corrosivo, forzándole a realizar un tiro de CON al principio de su turno o sufrirá la misma cantidad de daño ácido y un objeto adicional que lleve encima recibirá el efecto de estado *roto*. El ácido puede eliminarse con un tiro exitoso de Primeros Auxilios contra una dificultad igual a tu modificador de Magia de Ácido.
+Si logras impactar tu objetivo se recubrirá de ácido corrosivo, forzándole a realizar un tiro de Salud al principio de su turno o sufrirá la misma cantidad de daño ácido y un objeto adicional que lleve encima recibirá el efecto de estado *roto*. El ácido puede eliminarse con un tiro exitoso de Primeros Auxilios contra una dificultad igual a tu modificador de Magia de Ácido.
 
 **Empoderar** (1 chi): Aumenta el alcance de este hechizo a cercano o una criatura que esté sufriendo daño persistente debe volver a tirar para evitar el daño. Solo puedes empoderar así una vez por ronda.
 

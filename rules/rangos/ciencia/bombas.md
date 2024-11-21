@@ -46,7 +46,7 @@ El más básico entre los explosivos, una bomba de fuego está compuesta de pól
 
 Una bomba de humo tiene en su interior una reacción química capaz de liberar grandes cantidades de humo al accionarse. Puedes lanzar la bomba de humo a cualquier posición a distancia media de ti y esta creará una nube de humo que ocupará el un radio corto. El humo *cegará* a todas las criaturas que se encuentren en él además de proporcionarles *ocultamiento* contra ataques enemigos. 
 
-El humo permanecerá activo hasta el final de tu siguiente turno o hasta que sea disipado. El humo cuenta también con propiedades tóxicas, forzando a toda criatura que empiece su turno en él o entre en el área afectada a tener éxito en un tiro de CON frente a tu modificador de Bombas o quedará *enfermada* durante una ronda.
+El humo permanecerá activo hasta el final de tu siguiente turno o hasta que sea disipado. El humo cuenta también con propiedades tóxicas, forzando a toda criatura que empiece su turno en él o entre en el área afectada a tener éxito en un tiro de Salud frente a tu modificador de Bombas o quedará *enfermada* durante una ronda.
 
 ### Bomba Cegadora
 
@@ -99,6 +99,8 @@ Al fabricar una bomba puedes añadir componentes especiales para retrasar el mom
 Si una persona encuentra la bomba antes que explote esta puede ser desarmada, impidiendo su explosión. Para desarmar una bomba se necesita tener éxito en un tiro de Juego de Manos contra tu modificador de Bombas. Si fracasa más de tres veces en el tiro u obtiene un fracaso crítico la bomba explotará al instante sin que el afectado pueda defenderse.
 
 ## Rango III
+
+Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II y Rango I.
 
 ### Bomba de gas venenoso
 

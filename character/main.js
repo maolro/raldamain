@@ -275,7 +275,7 @@ ${toMd(this.atbCatString("reactions"))}
             return (2 + this.level / 1 + vtstat + this.sumAllKeys('vt', this.myatb.passive));
         },
         san: function () {
-            if(this.finalStats.itl.value != "-")
+            if(this.finalStats.itl.value == "-")
                 return "-";
             return (2 + this.level / 1 + this.finalStats.itl.value);
         },

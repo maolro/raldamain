@@ -16,7 +16,7 @@ Tienes un fuerte control sobre el agua, sin embargo en vez de usarla en su estad
 
 ## Rango I
 
-### Espina de hielo
+### Espina de Hielo
 
 *Hielo, Ataque, A distancia, Físico*
 
@@ -32,7 +32,7 @@ El daño base y acciones requeridas para atacar con esa arma son iguales a las n
 
 **Empoderar** (1 chi): Ataca a un objetivo adicional con este hechizo o elimina el efecto de estado *roto* de un arma de hielo que tengas. Puedes también empoderar para crear un arma de hielo como acción bonus.
 
-### Rayo gélido
+### Rayo Gélido
 
 *Hielo, Ataque, A distancia, Frío*
 
@@ -48,7 +48,7 @@ Formas un gélido viento capaz de congelar a tus enemigos. Haz un ataque de Magi
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional con este hechizo
 
-### Bajar temperaturas
+### Bajar Temperaturas
 
 *Hielo, Ambiental, Frío*
 

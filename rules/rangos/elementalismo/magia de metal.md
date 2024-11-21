@@ -28,7 +28,7 @@ Tras un estudio sobre el control de la tierra has conseguido aprender ha detecta
 
 Empleas tu control del magnetismo para manipular tanto la posición como la estructura de objetos metálicos. Escoge un objeto metálico pequeño a distancia cercana de ti y muévelo hasta un paso en cualquier dirección o altera su estructura tal como desees. Si el objeto se encuentra en manos de otra persona esta podrá evitar tu efecto teniendo éxito en un tiro de Heroísmo frente a tu Magia de Metal. En el caso que fracases recibirás Desventaja en todos tus tiros futuros para afectar al mismo objetivo durante el resto de la ronda.
 
-Alternativamente, si escoges afectar la estructura de un objeto metálico deberás tener éxito un tiro de magia de Metal contra una dificultad asignada por el máster según la composición del objeto. En caso que lo consigas puedes otorgarle el efecto de estado *roto* o repararlo para quitarle dicho estado. Aunque puedes alterar armas mágicas con esta habilidad recibirás y no podrás afectar a artefactos o armas de calibre especialmente bueno. 
+Alternativamente, si escoges afectar la estructura de un objeto metálico deberás tener éxito un tiro de magia de Metal contra una dificultad asignada por el máster según la composición del objeto. En caso que lo consigas puedes otorgarle el efecto de estado *roto* o repararlo para quitarle dicho estado. Aunque puedes alterar armas mágicas con esta habilidad el tiro de dificultad será más alto y no podrás afectar a artefactos o armas de calibre especialmente bueno. 
 
 **Empoderar** (1 chi): Afecta a un objeto adicional con esta habilidad o repite tu tiro.
 

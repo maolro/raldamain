@@ -29,7 +29,7 @@ Realizas un pequeño salto espacial con el cual te teletransportas un paso en cu
 
 Si te encuentras en *posición defensiva* puedes teletransportarte para evitar ataques, permitiéndote emplear este hechizo una vez por ronda como reacción para evitar un ataque. Esta habilidad no funcionará para defenderte de ataques de área con tamaño superior a la distancia que te teletransportes.
 
-**Empoderar** (1 chi): Aumenta la distancia que te teletransportas por un paso adicional.
+**Empoderar** (1 chi): Aumenta por un paso la distancia a la que puede teletransportarse. No puede empoderar el mismo hechizo más de dos veces.
 
 ### Portal menor
 
