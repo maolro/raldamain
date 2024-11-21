@@ -110,6 +110,17 @@ title: Armas Mágicas
 - El portador puede emplear su modificador de Magia de Hielo para todos los ataques hechos con el arma si es más alto. Esto le permite también modificar el daño base con su estadística de Sabidur.
 - Cuenta como si tuviera *material superior I* para determinar los efectos que puedan romperla.
 
+## Arma Gigante (cualquier arma, precio base + 1)
+
+**Ranura:** Manos
+
+**Daño base:** Recibe un dado de daño adicional
+
+**Propiedades:**
+
+- El arma es de un tamaño especialmente superior al normal, evitando así que pueda ser empleada por criaturas que no tengan tamaño grande o superior. Esta mejora puede añadirse múltiples veces, aumentando el tamaño mínimo para portarla por un paso y otorgarle un dado de daño adicional.
+- Cuenta como si tuviera *material superior I* para determinar los efectos que puedan romperla.
+
 ## Arma Ígnea (cualquier arma, precio base + 2)
 
 **Ranura:** Manos
@@ -145,6 +156,18 @@ title: Armas Mágicas
 - Es un Arma de Duelo, empleando así el adecuado modificador en tiros con ella. Atacar con ella cuesta una acción.
 - Su daño base es Radiante, haciendo así que cualquier técnica de arma que lo aumente hará que provoque daño Radiante adicional. No obstante, un arma así no puede empoderarse con otros efectos mágicos que no provoquen daño del mismo tipo.
 - Cada vez que impacte a un enemigo le provocará de manera automática una *herida permanente leve*. 
+
+## Filo Espacial (cualquier arma cortante, precio base + 3)
+
+**Ranura:** Manos
+
+**Daño base:** Aumenta el daño base por dos pasos
+
+**Propiedades:**
+
+- El filo de la espada es capaz de cortar a través del tejido espacio-temporal. Los ataques hechos con el arma atravesará la Defensa y Resistencias que tenga el objetivo además que ignorarán muros y *contadores de escudo*. También podrá impactar con normalidad a enemigos que intenten volverse incorpóreos o viajar a otras dimensiones para evitar el ataque.
+- El usuario puede emplear la espada para hacer un corte para entrar en su demiplano o volver al plano material si se encuentra en otra dimensión. La puerta creada durará unos segundos y funciona igual que Puerta Dimensional. 
+- Cuenta como si tuviera *material superior II* para determinar los efectos que puedan romperla.
 
 ## Vara de Fuego (precio 5)
 

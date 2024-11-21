@@ -31,7 +31,7 @@ La criatura se ha especializado en combatir con armas pesadas y destructivas, ce
 - **Habilidades Pasivas:** Recibe Ira Temeraria y Hasta la Muerte como habilidades pasivas. 
 - **Técnicas de Combate:** Aprende las técnicas de combate Carga Salvaje, Impacto Meteoro y Golpe Demoledor. Cada una de estas solo puede usarse una vez por ronda salvo que use un arma de dos manos.
 - **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
-- **Guardia Fluida:** Empieza el combate con una cantidad de *contadores de escudo* igual a su Rango de Armas Pesadas. Dichos contadores pueden reponerse gastando dos acciones.
+- **Guardia Fluida:** Al entrar en combate recibe una cantidad de *contadores de escudo* igual a su Rango de Armas Pesadas. Dichos contadores podrán detener ataques de la misma manera que la habilidad Guardia Fluida y reponerlos cuesta dos acciones.
 
 ## Luchador IV (+2, requiere 7 mejoras)
 

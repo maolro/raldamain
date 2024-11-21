@@ -20,14 +20,22 @@ La criatura ha sido escogida por las fuerzas del abismo para sembrar el caos y l
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y CAR por 1 junto a sus limitadores. Aumenta también su DEF y PV por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Guerrero Divino y Ascendencia Abisal por 1.
-- **Habilidades Pasivas:** Obtiene la habilidad pasiva Aura Protectora.
 - **Hechizos:** Aprende dos hechizos de Rango I relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Abisal.
 - **Mutación:** Tiene activa una mutación abisal adicional de su elección con fuerza equivalente a la que podría conseguir con la habilidad Mutación.
+- **Aura Protectora:** Recibe Resistencia a efectos Arcanos y Divinos. Una vez por ronda puede tener éxito automático en un tiro defensivo contra un hechizo Arcano o Divino de coste 1 o inferior.
 - **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Desacralizador a un objetivo que impacte con su arma.
 - **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Guerrero Abisal III (+2, 5 mejoras)
 
-Aura del Caos, Corrupción Absoluta
+- **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y CAR por 1 junto a sus limitadores. Aumenta también su DEF y PV por 2.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Guerrero Divino y Ascendencia Abisal por 1.
+- **Habilidades Pasivas:** Obtiene Corrupción Absoluta como habilidad Pasiva.
+- **Hechizos:** Aprende dos hechizos de Rango II relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Abisal.
+- **Golpe Exiliante:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Exiliante a un objetivo que impacte con su arma.
+- **Aliento de Vida:** La primera vez que muera resucitará inmediatamente a 1 PV. Si se trata de una invocación una vez por combate podrá hacer lo mismo con su invocador.
+- **Hueste Divina:** Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa. Estos modificadores funcionan igual que Hueste Divina y no se acumulan con Guerrero de la Fe ni con Tierra Consagrada.
+- **Paso Abisal:** Una vez por ronda puede emplear la habilidad Paso Abisal sin la necesidad de pagar chi o vigor. Puede consumir ese uso para emplearla de manera defensiva para esquivar automáticamente un ataque enemigo.  
+- **Aura del Caos:** Está siempre rodeado de un Aura del Caos, recibiendo así Resistencia a todos los efectos Arcanos y Divinos además que los objetos mágicos y glifos activados a distancia corta de ti tendrán una probabilidad del 50% de fallar. Puede anular hechizos de coste 2 o menos empleando Aura Protectora.
 
 ## Guerrero Abisal IV (+2)

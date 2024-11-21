@@ -1040,10 +1040,16 @@
       "name": "Aura del Caos",
       "skill": "ascendencia-abisal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia a efectos Arcanos y Divinos, los glifos y objetos tienen 50% probabilidad de fallar. (X Chi o vigor) Anula un hechizo con coste igual al del lanzador."
+      "resistances": ["Arcanos", "Divinos"],
+      "description": " Resistencia a todos los efectos Arcanos y Divinos. Además, todos los objetos mágicos y glifos activados a distancia corta de ti tendrán una probabilidad del 50% de fallar."
+    },
+    "aura-del-caos-defensiva": {
+      "rank": 5,
+      "name": "Aura del Caos",
+      "skill": "ascendencia-abisal",
+      "type": "Reaccion",
+      "cost": "X Chi o Vigor",
+      "description": "Tiene éxito automático en un tiro de salvación contra un efecto Arcano o Divino o contrarresta de inmediato uno que se lance a distancia corta. El hechizo escogido debe tener coste X o menos."
     },
     "aura-emocional": {
       "rank": 4,
@@ -2215,10 +2221,9 @@
       "name": "Corrupción Absoluta",
       "skill": "ascendencia-abisal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia a Aflicciones y Maldiciones, Inmunidad a Miedo, Ilusiones y a perder cordura"
+      "resistances": ["Aflicciones", "Maldiciones"],
+      "immunities": ["Miedo","Ilusiones","perder cordura"],
+      "description": "Obtiene Resistencia a Aflicciones y Maldiciones además que los abisales de menor nivel le obedecerán sin cuestionarlo. También recibe Inmunidad a efectos de Miedo, Ilusiones y hechizos ajenos que reduzcan su cordura. Obtener esta habilidad le otorgará otra <i>locura permanente</i> escogida por le DJ."
     },
     "corrupcion-demoniaca": {
       "rank": 5,
