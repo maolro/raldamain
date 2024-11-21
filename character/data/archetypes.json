@@ -1088,7 +1088,7 @@
                 ]
             },
             {
-                "attributes": ["paso-abisal","paso-abisal-defensivo","aura-del-caos"],
+                "attributes": ["paso-abisal","paso-abisal-defensivo","aura-del-caos","corrupcion-absoluta"],
                 "abilities": [
                     {
                         "name": "Golpe Exiliante",
