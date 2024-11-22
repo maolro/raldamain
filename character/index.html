@@ -14,7 +14,7 @@
         <a class="navbar-brand" href="#">Raldamain</a>
         <div class="d-flex">
           <button class="btn btn-outline-light" @click="handleLogin">
-            <i v-if="!username" class="bi bi-person"></i> {{ username || "Login" }}
+            <i class="bi bi-person"></i> {{ username ? username : 'Login' }}
           </button>
         </div>
       </div>
@@ -24,27 +24,30 @@
     <div class="container  text-center mt-5">
       <h1 class="mb-4">CREADOR DE PERSONAJES RALDAMAIN</h1>
       <div class="h-100 mt-5">
-        <button class="btn btn-secondary btn-lg my-2" @click="goToCreateCharacter">Crear Personaje</button>
+        <button class="btn btn-secondary btn-lg my-2 w-25" @click="goToCreateCharacter">Crear Personaje</button>
         <br>
-        <button class="btn btn-secondary btn-lg my-2" @click="goToSavedCharacters">Mis Personajes</button>
+        <button class="btn btn-secondary btn-lg my-2 w-25" @click="goToSavedCharacters">Mis Personajes</button>
+        <br>
+        <div v-if="username">
+          <button class="btn btn-secondary btn-lg my-2 w-25" @click="logout">Salir</button>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
     const app = Vue.createApp({
-      data() {
-        return {
-          username: null, // Replace with dynamic logic for logged-in user
-        };
+      computed:{
+        username(){
+          return localStorage.getItem("currentUser");
+        }
       },
       methods: {
         handleLogin() {
           if (this.username) {
             alert(`Logged in as ${this.username}`);
           } else {
-            // Simulate login process
-            this.username = "JohnDoe"; // Replace with actual login logic
+            window.location.href = "login.html";
           }
         },
         goToCreateCharacter() {
@@ -54,6 +57,11 @@
           alert("Pronto se añadirá esta funcionalidad!");
           // Implement navigation logic for saved characters here
         },
+        logout() {
+          localStorage.removeItem('currentUser'); // Remove the logged-in user
+          this.currentUser = null; // Clear the currentUser in Vue data
+            alert("Has salido exitosamente!");        
+          }
       },
     });
 
