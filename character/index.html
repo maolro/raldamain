@@ -1,161 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js/v-minusplusfield.js" type="text/javascript"></script>
-    <script src="js/v-rank-selecter.js" type="text/javascript"></script>
-    <script src="js/v-select-search.js" type="text/javascript"></script>
-    <script src="js/v-rankpage.js" type="text/javascript"></script>
-    <script src="js/v-talpage.js" type="text/javascript"></script>
-    <script src="js/v-spellpage.js" type="text/javascript"></script>
-    <script src="js/v-statpage.js" type="text/javascript"></script>
-    <script src="js/v-archpage.js" type="text/javascript"></script>
-    <script src="js/v-equipage.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    <link href="css/v-minusplusfield.css" rel="stylesheet" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Designer</title>
-    <style>
-        .nav-scroll {
-            white-space: nowrap;
-            overflow-x: auto;
-            overflow-y: hidden;
-            flex-wrap: nowrap;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
 </head>
-
 <body>
-    <div class="container-lg" id="app">
-        <div class="row justify-content-center my-2">
-            <h1>Creador de Personajes</h1>
+  <div id="app">
+    <!-- Top Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Raldamain</a>
+        <div class="d-flex">
+          <button class="btn btn-outline-light" @click="handleLogin">
+            <i v-if="!username" class="bi bi-person"></i> {{ username || "Login" }}
+          </button>
         </div>
-        <div class="row">
-            <!-- Character Builder -->
-            <div class="col-6">
-                <!-- Navigation Tabs -->
-                <ul class="nav nav-tabs nav-scroll" id="mainTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="stats-tab" data-toggle="tab" aria-controls="stats"
-                            aria-selected="true" href="#stats">Estadísticas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="talents-tab" data-toggle="tab" aria-controls="talents"
-                            aria-selected="false" href="#talents">Talentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="ranks-tab" data-toggle="tab" aria-controls="ranks" aria-selected="false"
-                            href="#ranks">Rangos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="spells-tab" data-toggle="tab" aria-controls="spells"
-                            aria-selected="false" href="#spells">Hechizos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="gear-tab" data-toggle="tab" aria-controls="gear" aria-selected="false"
-                            href="#gear">Equipamiento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="archetypes-tab" data-toggle="tab" aria-controls="archetypes"
-                            aria-selected="false" href="#archetypes">Arquetipos</a>
-                    </li>
-                </ul>
-                <!-- Tab Content -->
-                <div class="tab-content border border-top-0 p-2" id="mainTabContent">
-                    <div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-                        <v-statpage v-bind:level="level" :stats="stats" :races="races" :arclevels="arclevels"
-                        :charactername="charactername" @set-race="race = $event"
-                        @set-level="level = $event" @set-name="charactername = $event"></v-statpage>
-                    </div>
-                    <div class="tab-pane fade" id="talents" role="tabpanel" aria-labelledby="talents-tab">
-                        <v-talpage v-bind:level="level" :talents="talents" :psatb="myatb.passive"></v-talpage>
-                    </div>
-                    <div class="tab-pane fade" id="ranks" role="tabpanel" aria-labelledby="ranks-tab">
-                        <v-rankpage v-bind:ranks="ranks" :level="level" :rkpoints="rkpoints"></v-rankpage>
-                    </div>
-                    <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
-                        <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
-                        :arcspecs="arcanespecs":race="race" :level="level" :myarch="myarch" 
-                        @update-myspells="updateMySpells"> 
-                        </v-spellpage>
-                    </div>
-                    <div class="tab-pane fade" id="gear" role="tabpanel" aria-labelledby="gear-tab">
-                        <v-equipage v-bind:equipment="equipment" :eqlist="eqList" :bagslots="equipment['bag']">
-                        </v-equipage>
-                    </div>
-                    <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes">
-                        <v-archpage v-bind:archetypes="archetypes" :level="level" :rkpoints="rkpoints">
-                        </v-archpage>
-                    </div>
-                </div>
-            </div>
-            <!-- Character Viewer -->
-            <div class="col-6 border" style="max-height: 500px; overflow-y: auto; overflow-x: hidden;">
-                <div class="text-justify">
-                    <div class="row p-1 justify-content-center border-down">
-                        <h2>{{ charactername }} (Nivel {{ level }})</h2>
-                    </div>
-                    <hr>
-                    </hr>
-                    <div class="row p-1">
-                        <div class="col"><b>PV:</b> {{ hp }}</div>
-                        <div class="col"><b>VT:</b> {{ vt }}</div>
-                        <div class="col"><b>Crd:</b> {{ san }}</div>
-                        <div class="col"><b>DEF:</b> {{ def }}</div>
-                        <div class="col"><b>Vigor:</b> {{ reserves.stamina }}</div>
-                        <div class="col"><b>Chi:</b> {{ reserves.chi }}</div>
-                    </div>
-                    <div class="row p-1">
-                        <div v-for="(value, name) in finalStats" class="col">
-                            <b>{{ value.name }}:</b>
-                            {{ value.value }}
-                        </div>
-                    </div>
-                    <hr>
-                    </hr>
-                    <div v-if="talstring"><b>Talentos: </b> {{ talstring }}<br></div>
-                    <div v-if="rkString"><b>Rangos: </b> {{ rkString }}<br></div>
-                    <div v-if="arcString"><b>Arquetipos: </b> {{ arcString }}<br></div>
-                    <hr>
-                    </hr>
-                    <div v-if="resistances.resistances"><b>Resistencias: </b> {{ resistances.resistances }}<br></div>
-                    <div v-if="resistances.supresist"><b>Resistencias Superiores: </b> {{ resistances.supresist }}<br></div>
-                    <div v-if="resistances.immunities"><b>Inmunidades: </b> {{ resistances.immunities }}<br></div>
-                    <div v-if="resistances.vulnerabilities"><b>Vulnerabilidades: </b> {{ resistances.vulnerabilities }}<br></div>
-                    <b>Acciones: </b>{{ actions }}<br>
-                    <hr>
-                    </hr>
-                    <div v-html="atbCatString('passive')"></div>
-                    <hr>
-                    </hr>
-                    <div v-html="atbCatString('actions')"></div>
-                    <hr>
-                    </hr>
-                    <div v-html="atbCatString('reactions')"></div>
-                    <hr>
-                    </hr>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-end mt-3">
-            <button @click="downloadCharacterInfo">Descargar</button>
-        </div>
-    </div>
-    <script src="main.js"></script>
-</body>
+      </div>
+    </nav>
 
+    <!-- Main Content -->
+    <div class="container  text-center mt-5">
+      <h1 class="mb-4">CREADOR DE PERSONAJES RALDAMAIN</h1>
+      <div class="h-100 mt-5">
+        <button class="btn btn-secondary btn-lg my-2" @click="goToCreateCharacter">Crear Personaje</button>
+        <br>
+        <button class="btn btn-secondary btn-lg my-2" @click="goToSavedCharacters">Mis Personajes</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          username: null, // Replace with dynamic logic for logged-in user
+        };
+      },
+      methods: {
+        handleLogin() {
+          if (this.username) {
+            alert(`Logged in as ${this.username}`);
+          } else {
+            // Simulate login process
+            this.username = "JohnDoe"; // Replace with actual login logic
+          }
+        },
+        goToCreateCharacter() {
+          window.location.href = "chbuilder.html"; // Opens the character builder page
+        },
+        goToSavedCharacters() {
+          alert("Pronto se añadirá esta funcionalidad!");
+          // Implement navigation logic for saved characters here
+        },
+      },
+    });
+
+    app.mount("#app");
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
 </html>
