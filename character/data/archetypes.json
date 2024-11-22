@@ -1434,10 +1434,11 @@
                     {
                         "name": "Fortitud Superior",
                         "type": "Pasiva",
-                        "def": "RANGOx2",
-                        "hp": "RANGOx2",
-                        "vt": "RANGOx2",
-                        "description": "Aumenta su Vitalidad, PV y Defensa por RANGOx2 (ya incluido)."
+                        "def": "(RANGO-1)x2",
+                        "hp": "(RANGO-1)x2",
+                        "vt": "(RANGO-1)x2",
+                        "skill": "fortitud",
+                        "description": "Aumenta su Vitalidad, PV y Defensa por (RANGO-1)x2 (ya incluido)."
                     },
                     {
                         "name": "Ira de Combate",
