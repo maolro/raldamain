@@ -256,6 +256,42 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return attributeObject;
         },
+        saveCharacter() {
+            const character = {
+                name: this.charactername,
+                level: this.level,
+                race: this.race,
+                stats: this.stats,
+                talents: this.talents,
+                ranks: this.myranks,
+                spells: this.myspells,
+                equipment: this.equipment,
+                archetypes: this.myarch,
+            };
+            let user = localStorage.getItem("currentUser");
+            if(user){
+                let userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || [];
+                userCharacters.push(character);
+                localStorage.setItem("userCharacters", JSON.stringify(userCharacters));
+                alert('Personaje guardado exitosamente!');
+                window.location.href = "index.html";
+            }
+            else{
+                localStorage.setItem("tempCharacter", character);
+                window.location.href = "login.html"; //redirect to login
+            }
+        },
+        loadCharacter(character){
+            this.charactername = character["name"];
+            this.level = character["level"];
+            this.race = character["race"];
+            this.stats = character["stats"];
+            this.talents = character["talents"];
+            this.myranks = character["ranks"];
+            this.myspells = character["spells"];
+            this.equipment = character["equipment"];
+            this.myarch = character["archetypes"];
+        },
     },
     computed: {
         hp: function () {
@@ -582,6 +618,8 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("archetypes", './data/archetypes.json');
     },
     mounted() {
-
+        if(localStorage.getItem("currentCharacter")){
+            this.loadCharacter(localStorage.getItem("currentCharacter"));
+        }
     }
 });

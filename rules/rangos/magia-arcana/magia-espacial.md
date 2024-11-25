@@ -113,7 +113,7 @@ Esto no afectará a objetivos con habilidades que les permitan mantener la conce
 
 Todos tus hechizos de Rango I reducen su coste en acciones por 1 (mínimo 1)
 
-### Brecha espacial
+### Brecha Espacial
 
 *Espacial, Arcano, Mejora*
 
