@@ -107,8 +107,12 @@
                     this.accounts.push(account);
                     localStorage.setItem('accounts', JSON.stringify(this.accounts));
                     localStorage.setItem('currentUser', this.username);
-                    alert("Te has registrado exitosametne!");
-
+                    //Add temporary character (if any)
+                    let character = localStorage.getItem("tempCharacter");
+                    if(character){
+                        saveCharacter(character);
+                    }
+                    alert("Te has registrado exitosamente!");
                     // Redirect to main menu
                     window.location.href = "index.html"; 
                 },
@@ -117,14 +121,29 @@
                 loginUser() {
                     const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
                     const user = accounts.find(acc => acc.username === this.username && acc.password === this.password);
-
                     if (user) {
-                        alert("Te has dado de alta exitosamente!");
                         // Save logged-in user in localStorage
                         localStorage.setItem('currentUser', this.username);
+                        //Add temporary character (if any)
+                        let character = localStorage.getItem("tempCharacter");
+                        if(character){
+                            saveCharacter(character);
+                        }
+                        alert("Te has dado de alta exitosamente!");
                         window.location.href = "index.html"; // Redirect to main menu
                     } else {
                         alert("Usuario o contraseña incorrecta!");
+                    }
+                },
+                saveCharacter(character){
+                    let userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || {};
+                    if(userCharacters[this.username]){
+                        userCharacters[this.username].push(character);
+                        localStorage.setItem("userCharacters", JSON.stringify(userCharacters));
+                        alert("Personaje guardado exitosamente!");
+                    }
+                    else{
+                        userCharacters[this.username] = [character];
                     }
                 },
 

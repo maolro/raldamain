@@ -124,6 +124,20 @@ Si te encuentras en Forma Defensiva puedes atacar a cada enemigo que entre en un
 
 Centras todo tu esfuerzo en proteger a un aliado, recibiendo golpes por él que matarían a cualquiera. Mientras este efecto permanezca activo cada vez que un ataque enemigo impacte a un aliado adyacente podrás recibir la mitad del daño de ese ataque. Puedes también gastar *contadores de escudo* que tengas para reducir el daño que reciba tu aliado. Este efecto permanecerá activo hasta que pierdas la concentración o te separes de tu aliado.
 
+### Escudo Rompearmas
+
+*Escudos, Reacción*
+
+**Coste:** 2 Vigor
+
+**Duración:** Instantánea
+
+Eres capaz de bloquear ataques enemigos con tal fuerza que rompes sus mismas armas. En respuesta a defenderte exitosamente de un ataque enemigo o reducir su daño a 0 mediante *contadores de escudo* puedes provocarle el efecto de estado *roto* a su arma. Esto solo funcionará contra armas de dureza igual o inferior y si llevas un escudo mágico puedes romper directamente el arma enemiga. 
+
+Esta habilidad se puede emplear también para romper armas enemigas cuando realices un ataque con tu Escudo. En respuesta a que un enemigo intente detener tu ataque con Parada de Armas puedes provocar que su arma quede *rota* sin importar que impactes o no. Si la utilizas contra enemigos que te ataquen o intenten defenderse mediante ataques naturales puedes forzarles a tener éxito en un tiro de Salud contra tu modificador de Escudos o sufrirán una *herida permanente leve* en la parte del cuerpo que emplearon para atacarte. 
+
+**Empoderar** (1 vigor): Emplea esta habilidad una vez adicional por ronda sin la necesidad de pagar vigor. Debes encontrarte en *posición defensiva* para empoderar de esta manera.
+
 ## Rango V
 
 ### Escudo Viviente

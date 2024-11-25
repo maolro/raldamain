@@ -1,4 +1,65 @@
 {
+    "acorazado": {
+        "name": "Acorazado",
+        "stat": "str",
+        "modranks": [
+            "escudos",
+            "fortitud"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "con", "rank": 1, "boost": 2},
+            {"stat": "dex", "rank": 1, "boost": -1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["carga-con-escudo","resiliencia","parada-con-escudo"],
+                "abilities": [
+                    {
+                        "name": "Resistencia de Acorazado",
+                        "type": "Pasiva",
+                        "def": "(RANGO-1)x2",
+                        "hp": "(RANGO-1)x2",
+                        "vt": "(RANGO-1)x2",
+                        "skill": "fortitud",
+                        "description": "Aumenta su Vitalidad, PV y Defensa por (RANGO-1)x2 (ya incluido)."
+                    },
+                    {
+                        "name": "Estilo Defensivo",
+                        "type": "Pasiva",
+                        "skill": "escudo",
+                        "description": "Al empezar el combate cuenta con 2+(RANGO-1)x2 <i>contadores de escudo</i> que puede usar para reducir el daño de ataques que reciba. Puede también defender a aliados adyacentes usando Parada con Escudo y cuenta siempre como si estuviera en Defensa Absoluta para determinar las habilidades que se activan."
+                    }
+                ]
+            },
+            {
+                "attributes": ["duro-de-pelar","mente-custodiada","reposicion-forzosa","detener-ataque"],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "antimagico": {
         "name": "Antimágico",
         "stat": "itl",
@@ -1335,7 +1396,7 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["duro-de-pelar","gran-acrobata","duro-de-pelar","reposicionar-enemigo","ataque-lateral","golpe-trasero","golpe-aturdidor","gran-barrido","evasion"],
                 "abilities": [
                     {}
                 ]
