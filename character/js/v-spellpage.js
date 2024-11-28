@@ -22,7 +22,7 @@ Vue.component('v-spellpage', {
     <div v-for="(value, key, rowIndex) in spellSections" v-if="value.slots > 0" class="mb-4">
         <h3>{{ key }} ({{ value.slots }} ranuras)</h3>
         <div v-for="(n, colIndex) in value.skill" class="mb-2">
-            <v-select-search v-bind:optionsobj="value.atb[colIndex]" 
+            <v-select-search v-bind:optionsobj="value.atb[colIndex]"
             v-on:selected-key="addSpell($event, rowIndex, colIndex, n, key)"></v-select-search>
         </div> 
     </div>
@@ -50,6 +50,10 @@ Vue.component('v-spellpage', {
         level: {
             type: Number,
         },
+        basespells:{
+            type: Object,
+            default: {}
+        }
     },
     data: function () {
         return {
@@ -57,7 +61,7 @@ Vue.component('v-spellpage', {
             selectedArcaneSpecialization: {},
             divineRanks: ["magia-divina", "guerrero-divino", "ascendencia-abisal",
                 "ascendencia-primigenia", "ascendencia-infernal"],
-            myspells: {}
+            myspells: { ...this.basespells }
         };
     },
     computed: {

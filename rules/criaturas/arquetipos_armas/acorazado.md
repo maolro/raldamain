@@ -27,8 +27,9 @@ La criatura está dotada de una poderosa coraza capaz de detener ataques enemigo
 
 - **Aumentos Estadísticos:** Incrementa su FUE y CON por 1. Aumenta también sus PV, Vitalidad y Defensa por 2 además que recibe dos *contadores de escudo* adicionales al entrar en combate.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Escudos y Fortitud por 1. 
-- **Habilidades Pasivas:** Recibe Aguantar los Elementos, Hasta la Muerte y Mantener Posición como habilidades pasivas.
+- **Habilidades Pasivas:** Recibe Aguantar los Elementos, Hasta la Muerte, Escudo Rompearmas y Mantener Posición como habilidades pasivas.
 - **Técnicas de Combate:** Aprende la técnica de combate Carga Furiosa. Esta solo puede usarse una vez por ronda de manera gratuita.
+- **Protector Incansable:** Cada vez que un enemigo impacte a un aliado adyacente puede recibir la mitad del daño de dicho ataque, reduciendo así el daño que sufriría. Solo puede emplear esta habilidad si se encuentra en *posición defensiva*. 
 - **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
 
 ## Acorazado IV

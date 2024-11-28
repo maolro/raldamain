@@ -52,11 +52,12 @@
           }
         },
         goToCreateCharacter() {
+          localStorage.removeItem('currentCharacter')
           window.location.href = "chbuilder.html"; // Opens the character builder page
         },
         goToSavedCharacters() {
-          alert("Pronto se añadirá esta funcionalidad!");
           // Implement navigation logic for saved characters here
+          window.location.href = "mycharacters.html";
         },
         logout() {
           localStorage.removeItem('currentUser'); // Remove the logged-in user

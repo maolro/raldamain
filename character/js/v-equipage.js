@@ -9,7 +9,8 @@ Vue.component('v-equipage', {
             <b>Armadura</b>
         </div>
     <div class="col-6">
-        <v-select-search v-bind:optionsobj="eqlist.armor"
+        <v-select-search v-bind:optionsobj="eqlist.armor" 
+            :placeholder="getPlaceholder(equipment.armor)"
             v-on:selected-key="addItem('armor', 'armor', $event)">
         </v-select-search>
     </div>
@@ -19,7 +20,8 @@ Vue.component('v-equipage', {
             <b>Mano Principal</b>
         </div>
         <div class="col-6">
-            <v-select-search v-bind:optionsobj="eqlist.weapons"
+            <v-select-search v-bind:optionsobj="eqlist.weapons" 
+            :placeholder="getPlaceholder(equipment.mainHand)"
                 v-on:selected-key="addItem('mainHand', 'weapons', $event)">
             </v-select-search>
         </div>
@@ -29,7 +31,8 @@ Vue.component('v-equipage', {
             <b>Cabeza</b>
         </div>
         <div class="col-6">
-            <v-select-search v-bind:optionsobj="eqlist.head"
+            <v-select-search v-bind:optionsobj="eqlist.head" 
+                :placeholder="getPlaceholder(equipment.head)"
                 v-on:selected-key="addItem('head', 'head', $event)">
             </v-select-search>
         </div>
@@ -44,7 +47,7 @@ Vue.component('v-equipage', {
         </div>
     </div>
     <div v-for="(value, index) in bagslots" class="mb-2">
-        <v-select-search v-bind:optionsobj="eqlist.bag"
+        <v-select-search v-bind:optionsobj="eqlist.bag" :placeholder="equipment.bag[index]"
             v-on:selected-key="addBagItem($event, index)">
         </v-select-search>
     </div>
@@ -95,6 +98,12 @@ Vue.component('v-equipage', {
                 this.$set(this.bagslots, index, {...this.eqlist['bag'][id]});
             else
                 this.$set(this.bagslots, index, {});
+        },
+        getPlaceholder(equipmentPart) {
+            if (equipmentPart && equipmentPart.name) {
+                return equipmentPart.name;
+            }
+            return "";
         }
     },
     watch: {

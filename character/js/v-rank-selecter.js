@@ -2,7 +2,9 @@ Vue.component('v-rank-selecter', {
     template: `
         <div class="rank-selecter border">
             <div class="row m-1 justify-content-around">
-                <v-select-search v-bind:optionsobj="ranks" v-on:selected-key="setRank($event)"></v-select-search>
+                <v-select-search v-bind:optionsobj="ranks" v-on:selected-key="setRank($event)"
+                :placeholder="rkey">
+                </v-select-search>
                 <b> {{ lvltext }}: </b>
                 <v-minusplusfield v-bind:value="rankLevel" :min="0" :max="max"
                 :enableval="statpoints" v-on:input="setRankLevel($event)"></v-minusplusfield>
@@ -30,12 +32,20 @@ Vue.component('v-rank-selecter', {
         lvltext:{
             type: String,
             default: "Rango"
+        },
+        placeholder:{
+            type: String,
+            default: ""
+        },
+        baselevel:{
+            type: Number,
+            default: 0
         }
     },
     data: function() {
         return {
-            rkey: "",
-            rankLevel: 0,
+            rkey: this.placeholder,
+            rankLevel: this.baselevel,
             max: 0,
             statpoints: this.enableval
         };

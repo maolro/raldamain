@@ -283,7 +283,7 @@
                     "combinar-tecnicas-(ligeras)",
                     "asalto-impredecible",
                     "cuchillada",
-                    "contrataque",
+                    "contrataque-(ligeras)",
                     "puñalada-quirurgica",
                     "giro-defensivo",
                     "gran-acrobata",
@@ -396,10 +396,10 @@
             {"stat": "cha", "rank": 4, "boost": 1}
         ],
         "spells": [
-            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina"},
-            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina"},
-            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina"},
-            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina"}
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"}
         ],
         "enchancements": [
             {
@@ -554,6 +554,96 @@
                         "tags": "Innata",
                         "skill": "magia-de-naturaleza",
                         "description": "Puede lanzar sus hechizos de Naturaleza empleando su estadística de CON en lugar de su SAB además que recibirá Ventaja en todos sus tiros de ataque y defensa con estos. Se regenera también 4 Vitalidad al inicio de su turno si se encuentra en contacto con la naturaleza."
+                    }
+                ]
+            }
+        ]
+    },
+    "dragon": {
+        "name": "Dragón",
+        "stat": "con/cha",
+        "modranks": [
+            "ascendencia-draconica"
+        ],
+        "rank": 0,
+        "max": 3,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "con", "rank": 1, "boost": 2},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 2},
+            {"stat": "con", "rank": 2, "boost": 2},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 2},
+            {"stat": "con", "rank": 3, "boost": 2},
+            {"stat": "cha", "rank": 3, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["aspecto-draconico","sentidos-draconicos","aliento-del-dragon"],
+                "abilities": [
+                    {
+                        "name": "Resistencia del Dragón",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "def": "RANGOx2",
+                        "hp": "RANGOx2",
+                        "skill": "ascendencia-draconica",
+                        "description": "Aumenta sus PV y Defensa por (RANGO-1)x4 (ya incluido)."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alas-del-dragon","resiliencia-draconica"],
+                "abilities": [
+                    {
+                        "name": "Poder Elemental",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Provoca 1DD + RANGO daño adicional relacionado con el elemento de su elección con todos sus ataques físicos. Tiene también activa un aura relacionada con la habilidad Poder Elemental (Calor Extremo, Frío Extremo, Nube Corrosiva o Electricidad Estática)."
+                    },
+                    {
+                        "name": "Presencia Aterradora",
+                        "type": "Pasiva",
+                        "tags": "Innata, Miedo, Duradera",
+                        "skill": "ascendencia-draconica",
+                        "description": "Todas las criaturas a distancia media que puedan verle deberán tener éxito en un tiro de Voluntad o Intimidar frente a su modificador de Ascendencia Dracónica o aumentarán su nivel de <i>miedo</i> por un paso. Cada ronda todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de <i>miedo</i> si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate."
+                    },
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                    },
+                    {
+                        "name": "Magia Dracónica",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Todos sus hechizos del mismo elemento que el suyo reciben un dado de daño adicional y puede emplear su modificador de Ascendencia Dracónica para lanzarlos. También podrá emplear su estadística de CON o su Rango de Ascendencia Dracónica para determinar la fuerza de estos."
+                    },
+                    {
+                        "name": "Escamas Impenetrables",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Su cuerpo está rodeado de escamas impenetrables que le otorgan RANGO <i>contadores de escudo</i>. Recuperará estos contadores al cabo de un día."
                     }
                 ]
             }
@@ -852,6 +942,75 @@
             }
         ]
     },
+    "espadachin": {
+        "name": "Espadachín",
+        "stat": "str/dex",
+        "modranks": [
+            "armas-de-duelo",
+            "reflejos",
+            "rastrear"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["velocidad-superior","destreza-defensiva","parada-con-arma-de-duelo","truco-de-espada","evasion","analizar-enemigo","esquiva"]
+            },
+            {
+                "attributes": ["esquiva-asombrosa","finta-engañosa","espadas-trabadas","ataque-torbellino","golpe-de-mango"],
+                "abilities": [
+                    {
+                        "name": "Instintos Superiores",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "reflejos",
+                        "description": "Puede repetir todos sus tiros defensivos y quedarse con el resultado que más le convenga. Esto no funcionará contra habilidades que no conozca."
+                    }
+                ]
+            },
+            {
+                "attributes": ["inescrutable","giro-defensivo","punto-ciego","estocada-poderosa","combinar-tecnicas-(duelo)","contrataque-(duelo)"],
+                "abilities": [
+                    {
+                        "name": "Cambio Repentino",
+                        "type": "Reaccion",
+                        "tags": "Innata",
+                        "skill": "rastrear",
+                        "uses": "1/Ronda",
+                        "description": "Sustituye un ataque por otro diferente que tenga el mismo coste en acciones. Esto forzará al enemigo a volver a defenderse y malgastará sus habilidades defensivas empleadas. El cambio debe realizarse tras hacer el tiro pero antes de provocar daño, funcionando así de la misma manera que la habilidad Cambio Repentino."
+                    },
+                    {
+                        "name": "Danza del Espadachín",
+                        "type": "Pasiva",
+                        "tags": "Innata, Duelo",
+                        "skill": "armas-de-duelo",
+                        "description": "Al entrar en combate recibe Ventaja en todos sus tiros relacionados con Armas de Duelo y puede entrar en <i>posición defensiva</i> una vez por ronda como acción bonus. Puede también emplear su arma de Duelo para detener ataques A Distancia que no sean excesivamente rápidos. Esta habilidad permanecerá activa hasta que pierda la concentración y recuperarla cuesta dos acciones."
+
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "espectro": {
         "name": "Espectro",
         "stat": "cha",
@@ -908,11 +1067,11 @@
             {"stat": "cha", "rank": 4, "boost": 1}
         ],
         "spells": [
-            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "magia-de-evocacion"},
-            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-de-evocacion"},
-            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-de-evocacion"},
-            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-de-evocacion"},
-            {"rank": 4, "spell-lvl": 5, "slots": 2, "cat": "magia-de-evocacion"}
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"},
+            {"rank": 4, "spell-lvl": 5, "slots": 2, "cat": "magia-de-evocacion", "mod": "magia-de-evocacion"}
         ],
         "enchancements": [
             {
@@ -1084,9 +1243,9 @@
             {"stat": "cha", "rank": 4, "boost": 1}
         ],
         "spells": [
-            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino"},
-            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino"},
-            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino"}
+            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"}
         ],
         "enchancements": [
             {
@@ -1204,10 +1363,10 @@
             {"stat": "wis", "rank": 4, "boost": 1}
         ],
         "spells": [
-            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino"},
-            {"rank": 2, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino"},
-            {"rank": 3, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino"},
-            {"rank": 4, "spell-lvl": 4, "slots": 2, "cat": "guerrero-divino"}
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 2, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 3, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 4, "spell-lvl": 4, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"}
         ],
         "enchancements": [
             {
@@ -1300,10 +1459,10 @@
             {"stat": "cha", "rank": 4, "boost": 1}
         ],
         "spells": [
-            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina"},
-            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina"},
-            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina"},
-            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina"}
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"}
         ],
         "enchancements": [
             {

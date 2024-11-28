@@ -326,9 +326,9 @@
       "skill": "guerrero-divino",
       "type": "Accion",
       "cost": "1 Acción y 2 Chi o Vigor",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
-      "description": "Resucita a un aliado que haya muerto hace una ronda a 1 PV. Conserva heridas permanentes y no puede resucitar a aquellos con el cuerpo excesivamente dañado"
+      "tags": "Divina, Toque, Sanación",
+      "description": "Una criatura muerta que puedas tocar resucita instantáneamente a 1 PV. Esta habilidad solo funcionará en objetivos que hayan muerto hace como máximo una ronda y conservarán todas las heridas permanentes que tengan en su cuerpo.",
+      "empower": "(1 vigor o chi): Te afectas a ti mismo con esta habilidad como reacción en respuesta a caer a menos de 1 PV."
     },
     "aliento-del-dragon": {
       "rank": 2,
@@ -336,9 +336,8 @@
       "skill": "ascendencia-draconica",
       "type": "Accion",
       "cost": "2 Acciones y 1 Chi o Vigor",
-      "reach": "Cono pequeño/Línea mediana",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+STAT daño Frío, Fuego, Eléctrico o Ácido área. +1 dado daño y +1 paso área por cada nivel de tamaño por encima de mediano que tenga"
+      "tags": "Innata, Ataque, Área",
+      "description": "+MOD para atacar, Cono pequeño o línea mediana, Inflige 1DD+STAT daño Frío, Fuego, Eléctrico o Ácido área. +1 dado daño y +1 paso área por cada nivel de tamaño por encima de mediano que tenga"
     },
     "aliento-toxico": {
       "rank": 1,
@@ -6122,9 +6121,7 @@
       "name": "Parada (A distancia)",
       "skill": "armas-a-distancia",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "duration": "A Distancia, Defensiva",
       "description": "Tira para defenderse de un ataque a distancia"
     },
     "parada-con-alabarda": {
@@ -6132,17 +6129,23 @@
       "name": "Parada con Alabarda",
       "skill": "alabardas",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Alabarda, Defensiva",
       "description": "Tira para detener un ataque cuerpo a cuerpo"
+    },
+    "parada-con-arma-de-duelo": {
+      "rank": 1,
+      "name": "Parada con Arma de Duelo",
+      "skill": "armas-de-duelo",
+      "type": "Reaccion",
+      "tags": "Duelo, Defensiva",
+      "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-con-arma-ligera": {
       "rank": 1,
       "name": "Parada con Arma Ligera",
       "skill": "armas-ligeras",
       "type": "Reaccion",
-      "tags": "Ligeras, Defensivo",
+      "tags": "Ligeras, Defensiva",
       "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-con-arma-pesada": {
@@ -7116,10 +7119,11 @@
       "name": "Resiliencia Dracónica",
       "skill": "ascendencia-draconica",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia a efectos Arcanos e Inmunidad a heridas leves y medias (no funciona contra armas mata-dragones)"
+      "hp": "RANGO+1",
+      "resistances": ["Arcanos"],
+      "inmunidades": ["Heridas permanentes leves y medias"],
+      "tags": "Innata",
+      "description": "Resistencia a efectos Arcanos e Inmunidad a <i>heridas permanentes leves</i> y medias</i>"
     },
     "resistencia-a-drogas": {
       "rank": 2,
