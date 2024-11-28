@@ -309,7 +309,7 @@ ${toMd(this.atbCatString("reactions"))}
             this.myspells = character["spells"];
             this.equipment = character["equipment"];
             this.myarch = character["archetypes"];
-        },
+        }
     },
     computed: {
         hp: function () {
