@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Characters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .character-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .character {
+            border: 1px solid #7c7777;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .character-name {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mis Personajes</h1>
+    <div id="app" class="character-container">
+        <!-- Character list will be dynamically generated here -->
+    </div>
+    <script>
+        // Vue.js instance
+        new Vue({
+            el: "#app",
+            data: {
+                characters: [], // List of characters for the logged-in user
+                deletePopupVisible: false, // Whether the delete confirmation popup is visible
+                characterToDeleteIndex: null // The index of the character to delete
+            },
+            created() {
+                this.loadCharacters();
+            },
+            methods: {
+                loadCharacters() {
+                    // Get the logged-in user
+                    const loggedInUser = localStorage.getItem("currentUser");
+                    if (!loggedInUser) {
+                        alert("No estás conectado.");
+                        window.location.href = "login.html";
+                        return;
+                    }
+
+                    // Get all user characters from localStorage
+                    const userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || {};
+                    this.characters = userCharacters[loggedInUser] || [];
+                },
+                openCharacter(character) {
+                    // Save the selected character in localStorage
+                    localStorage.setItem("currentCharacter", JSON.stringify(character));
+                    // Redirect to the character designer page
+                    window.location.href = "chbuilder.html";
+                },
+                confirmDelete(index) {
+                    this.deletePopupVisible = true;
+                    this.characterToDeleteIndex = index;
+                },
+                deleteCharacter() {
+                    if (this.characterToDeleteIndex !== null) {
+                        const loggedInUser = localStorage.getItem("currentUser");
+                        if (loggedInUser) {
+                            const userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || {};
+                            const characters = userCharacters[loggedInUser] || [];
+
+                            // Remove character from the list
+                            characters.splice(this.characterToDeleteIndex, 1);
+
+                            // Update localStorage
+                            userCharacters[loggedInUser] = characters;
+                            localStorage.setItem("userCharacters", JSON.stringify(userCharacters));
+
+                            // Update the UI
+                            this.characters = characters;
+                            alert("Personaje eliminado con éxito.");
+                        }
+                    }
+                    this.cancelDelete();
+                },
+                cancelDelete() {
+                    this.deletePopupVisible = false;
+                    this.characterToDeleteIndex = null;
+                }
+            },
+            template: `
+        <div>
+          <div v-for="(character, index) in characters" class="character">
+            <button type="button" class="btn btn-danger" @click="confirmDelete(index)">-</button>
+            <div class="character-name">
+              {{ character.name }} (Nivel {{ character.level }})
+            </div>
+            <button type="button" class="btn btn-secondary" @click="openCharacter(character)">ABRIR</button>
+          </div>
+          <div v-if="characters.length === 0" class="text-center p-3 text-muted">
+            No hay personajes guardados.
+          </div>
+          <!-- Delete Confirmation Popup -->
+            <div v-if="deletePopupVisible" class="popup-overlay">
+                <div class="popup">
+                    <p>¿Estás seguro de que deseas eliminar este personaje?</p>
+                    <button @click="deleteCharacter" class="confirm-btn">SÍ</button>
+                    <button @click="cancelDelete" class="cancel-btn">NO</button>
+                </div>
+            </div>
+        </div>
+      `
+        });
+    </script>
+</body>
+
+</html>

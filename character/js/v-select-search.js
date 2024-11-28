@@ -47,8 +47,9 @@ Vue.component('v-select-search', {
       key: key,
       name: this.optionsobj[key].name
     }));
-    if(this.placeholder){
-      this.selectOption({key: this.placeholder.toLowerCase(), name: this.placeholder});
+    if(this.placeholder && this.placeholder in this.optionsobj 
+      && "name" in this.optionsobj[this.placeholder]){
+      this.selectOption({key: this.placeholder, name: this.optionsobj[this.placeholder].name});
     }
     // Set initial filtered options to the full list
     this.filteredOptions = this.options;
@@ -62,7 +63,6 @@ Vue.component('v-select-search', {
       );
     },
     selectOption(option) {
-      console.log("key: "+option.key);
       this.searchQuery = option.name; // Set input text to selected option's name
       this.$emit('selected-key', option.key); // Emit the selected option's key
       this.dropdownVisible = false; // Hide the dropdown after selection
@@ -85,6 +85,10 @@ Vue.component('v-select-search', {
         name: newOptions[key].name
       }));
       this.filteredOptions = this.options;
+      if(this.placeholder && this.placeholder in newOptions 
+        && "name" in newOptions[this.placeholder]){
+        this.selectOption({key: this.placeholder, name: newOptions[this.placeholder].name});
+      }
     },
   },
   style:

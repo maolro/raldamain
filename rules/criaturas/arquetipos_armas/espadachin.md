@@ -20,10 +20,21 @@ La criatura se ha especializado en combatir con una espada o arma de Duelo simil
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores
 - **Mejoras de Rango:** Mejora su Rango y modificador en Armas de Duelo, Rastrear y Reflejos por 1.
-- **Habilidades Pasivas:** Recibe Esquiva Asombrosa como habilidad Pasiva. Si ya la tiene puede sustituirla por Punto Ciego.
+- **Habilidades Pasivas:** Recibe Esquiva Asombrosa y Gran Acróbata como habilidades Pasivas. Si ya tiene Esquiva Asombrosa puede sustituirla por Sexto Sentido.
 - **Técnicas de Combate:** Aprende las técnicas de combate Finta Engañosa, Espadas Trabadas, Ataque Torbellino y Golpe de Mango. Cada una de estas solo puede usarse una vez por ronda de manera gratuita.
 - **Instintos Superiores:** Puede repetir todos sus tiros defensivos y quedarse con el resultado que más le convenga. Esto no funcionará contra habilidades que no conozca.
 
 ## Espadachín III (+2, 5 mejoras)
 
+Combinar Técnicas, Ataque Saltarín, Contrataque, Danza del Espadachín, Estocada Poderosa, Giro Defensivo, Punto Ciego, Inescrutable, Cambio Repentino
+
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Armas de Duelo, Rastrear y Reflejos por 1.
+- **Habilidades Pasivas:** Recibe Inescrutable, Giro Defensivo y Punto Ciego como habilidades Pasivas.
+- **Técnicas de Combate:** Aprende las técnicas de combate Estocada Poderosa, Contrataque y Ataque Saltarín. Cada una de estas solo puede usarse una vez por ronda de manera gratuita.
+- **Danza del Espadachín:** Al entrar en combate recibe Ventaja en todos sus tiros relacionados con Armas de Duelo y puede entrar en <i>posición defensiva</i> una vez por ronda como acción bonus. Puede también emplear su arma de Duelo para detener ataques A Distancia que no sean excesivamente rápidos. Esta habilidad permanecerá activa hasta que pierda la concentración y recuperarla cuesta dos acciones.
+- **Cambio Repentino:** Una vez por ronda puede sustituir un ataque que realice por otro diferente que tenga el mismo coste en acciones. Esto forzará al enemigo a volver a defenderse y malgastará sus habilidades defensivas empleadas. El cambio debe realizarse tras hacer el tiro pero antes de provocar daño, funcionando así de la misma manera que la habilidad Cambio Repentino.
+- **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor tras hacer un ataque con un Arma de Duelo. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
+
 ## Espadachín IV (+2, 7 mejoras)
+

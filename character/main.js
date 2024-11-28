@@ -16,6 +16,7 @@ new Vue({
             cha: { name: "CAR", value: 0 }
         },
         talents: {},
+        mytalents: {},
         ranks: {},
         myranks: [],
         archetypes: {},
@@ -34,7 +35,7 @@ new Vue({
             bag: []
         },
         eqAtb: {},
-        myspells: [],
+        myspells: {},
         divinepatrons: {},
         arcanespecs: {},
         races: {},
@@ -54,23 +55,25 @@ new Vue({
                     return response.json(); // Parse it as a JSON object
                 })
                 .then(data => {
-                    this[obj] = data;   // Assign the parsed data to the 'talents' property
+                    this[obj] = data;   // Assign the parsed data to the property
                 })
                 .catch(error => {
                     console.error("Error fetching the JSON: ", error);
                 });
         },
         getMod: function (talid) {
+            if(!(talid in this.mytalents))
+                return 0;
             mainstat = this.getMainStat(this.talents[talid].stat);
-            if(this.finalStats[mainstat].value == "-")
+            if (this.finalStats[mainstat].value == "-")
                 return "-";
-            return this.talents[talid].level + this.finalStats[mainstat].value;
+            return this.mytalents[talid].level + this.finalStats[mainstat].value;
         },
         getMainStat: function (statstring) {
             res = statstring;
             if (statstring.includes("/")) {
                 stv = statstring.split("/");
-                if (this.finalStats[stv[0]].value < this.finalStats[stv[1]].value 
+                if (this.finalStats[stv[0]].value < this.finalStats[stv[1]].value
                     || this.finalStats[stv[0]].value == "-") {
                     res = stv[1];
                 }
@@ -118,7 +121,7 @@ new Vue({
             let result = str.replace(/RANGO/g, rk)
                 .replace(/STAT/g, stat)
                 .replace(/DD/g, getDD(rk))
-            if(stat != "-")
+            if (stat != "-")
                 result = result.replace(/MOD/g, (rk + stat));
             else
                 result = result.replace(/MOD/g, "NaN");
@@ -170,19 +173,19 @@ new Vue({
             let toMd = (text) => { return text.replace(new RegExp("<br></br>", 'g'), "\n\n") };
             let midSect = () => {
                 let ms = [];
-                if(this.talstring) 
+                if (this.talstring)
                     ms.push(`**Talentos:** ${this.talstring}"`);
-                if(this.rkString) 
+                if (this.rkString)
                     ms.push(`**Rangos:** ${this.rkString}`);
-                if(this.arcString) 
+                if (this.arcString)
                     ms.push(`**Arquetipos:** ${this.arcString}`);
-                if(this.resistances.resistances) 
+                if (this.resistances.resistances)
                     ms.push(`**Resistencias:** ${this.resistances.resistances}`);
-                if(this.resistances.supresist) 
+                if (this.resistances.supresist)
                     ms.push(`**Resistencias Superiores:** ${this.resistances.supresist}`);
-                if(this.resistances.immunities) 
+                if (this.resistances.immunities)
                     ms.push(`**Inmunidades:** ${this.resistances.immunities}`);
-                if(this.resistances.vulnerabilities) 
+                if (this.resistances.vulnerabilities)
                     ms.push(`**Vulnerabilidades:** ${this.resistances.vulnerabilities}`);
                 return ms.join('\n');
             }
@@ -248,7 +251,7 @@ ${toMd(this.atbCatString("reactions"))}
                 let cost = attributeObject.cost;
                 let uses = "";
                 if (cost.includes("Chi") || cost.includes("Vigor")) {
-                    cost = cost.replace(/(\s*(y|o)?\s*\d+\s*(Chi|Vigor))/g, '').trim();
+                    cost = cost.replace(/(\s*(y|o)?\s*\d+\s*(Chi|Vigor)\s*(o\s*(Chi|Vigor))?)/g, '').trim();
                     uses = "1/Ronda";
                 }
                 attributeObject.cost = cost;
@@ -262,31 +265,46 @@ ${toMd(this.atbCatString("reactions"))}
                 level: this.level,
                 race: this.race,
                 stats: this.stats,
-                talents: this.talents,
+                talents: this.mytalents,
                 ranks: this.myranks,
                 spells: this.myspells,
                 equipment: this.equipment,
                 archetypes: this.myarch,
             };
             let user = localStorage.getItem("currentUser");
-            if(user){
-                let userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || [];
-                userCharacters.push(character);
+            if (user) {
+                let userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || {};
+                if (!(user in userCharacters))
+                    userCharacters[user] = [];
+                // Check if there is a current character already saved
+                const currentCharacterName = character.name;
+                const existingCharacterIndex = userCharacters[user].findIndex(char => char.name === currentCharacterName);
+
+                if (existingCharacterIndex !== -1) {
+                    // Replace the existing character's data with the new one
+                    userCharacters[user][existingCharacterIndex] = character;
+                    alert('Personaje actualizado exitosamente!');
+                } else {
+                    // Add new character to the array
+                    userCharacters[user].push(character);
+                    alert('Personaje guardado exitosamente!');
+                }
+
+                // Save the updated characters list back to localStorage
                 localStorage.setItem("userCharacters", JSON.stringify(userCharacters));
-                alert('Personaje guardado exitosamente!');
                 window.location.href = "index.html";
             }
-            else{
+            else {
                 localStorage.setItem("tempCharacter", character);
                 window.location.href = "login.html"; //redirect to login
             }
         },
-        loadCharacter(character){
+        loadCharacter(character) {
             this.charactername = character["name"];
             this.level = character["level"];
             this.race = character["race"];
             this.stats = character["stats"];
-            this.talents = character["talents"];
+            this.mytalents = character["talents"];
             this.myranks = character["ranks"];
             this.myspells = character["spells"];
             this.equipment = character["equipment"];
@@ -296,7 +314,7 @@ ${toMd(this.atbCatString("reactions"))}
     computed: {
         hp: function () {
             let hpstat;
-            if(this.finalStats.con.value != "-")
+            if (this.finalStats.con.value != "-")
                 hpstat = this.finalStats.con.value;
             else
                 hpstat = this.finalStats.cha.value;
@@ -304,22 +322,22 @@ ${toMd(this.atbCatString("reactions"))}
         },
         vt: function () {
             let vtstat;
-            if(this.finalStats.con.value != "-")
+            if (this.finalStats.con.value != "-")
                 vtstat = this.finalStats.con.value;
             else
                 vtstat = this.finalStats.cha.value;
             return (2 + this.level / 1 + vtstat + this.sumAllKeys('vt', this.myatb.passive));
         },
         san: function () {
-            if(this.finalStats.itl.value == "-")
+            if (this.finalStats.itl.value == "-")
                 return "-";
             return (2 + this.level / 1 + this.finalStats.itl.value);
         },
         talstring: function () {
             ts = [];
-            for (let key in this.talents) {
-                if (this.talents[key].level > 0) {
-                    ts.push((this.talents[key].name + " + " + this.getMod(key)));
+            for (let key in this.mytalents) {
+                if (this.mytalents[key].level > 0) {
+                    ts.push((this.mytalents[key].name + " + " + this.getMod(key)));
                     console.log(res.toString());
                 }
             }
@@ -351,109 +369,111 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return res.join(", ");
         },
-        resistances: function(){
-            let rsobj = {vulnerabilities: [], resistances: [], supresist: [], immunities: []};
+        resistances: function () {
+            let rsobj = { vulnerabilities: [], resistances: [], supresist: [], immunities: [] };
 
-            for(let i in this.myatb["passive"]){
+            for (let i in this.myatb["passive"]) {
                 let ab = this.myatb.passive[i];
-                if("resistances" in ab){
-                    for(let j in ab.resistances){
+                if ("resistances" in ab) {
+                    for (let j in ab.resistances) {
                         let rs = ab.resistances[j];
-                        if(rsobj.resistances.includes(rs)){
+                        if (rsobj.resistances.includes(rs)) {
                             rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
                             rsobj.supresist.push(rs);
                         }
-                        else if(rsobj.supresist.includes(rs)){
+                        else if (rsobj.supresist.includes(rs)) {
                             rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
                             rsobj.immunities.push(rs);
                         }
-                        else if(rsobj.vulnerabilities.includes(rs)){
+                        else if (rsobj.vulnerabilities.includes(rs)) {
                             rsobj.vulnerabilities.splice(supresist.indexOf(rs), 1);
                         }
-                        else if(!rsobj.immunities.includes(rs)){
+                        else if (!rsobj.immunities.includes(rs)) {
                             rsobj.resistances.push(rs);
                         }
                     }
                 }
-                if("vulnerabilities" in ab){
-                    for(let j in ab.vulnerabilities){
+                if ("vulnerabilities" in ab) {
+                    for (let j in ab.vulnerabilities) {
                         let rs = ab.vulnerabilities[j];
-                        if(rsobj.immunities.includes(rs)){
+                        if (rsobj.immunities.includes(rs)) {
                             rsobj.immunities.splice(rsobj.immunities.indexOf(rs), 1);
                             rsobj.supresist.push(rs);
                         }
-                        else if(rsobj.supresist.includes(rs)){
+                        else if (rsobj.supresist.includes(rs)) {
                             rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
                             rsobj.resistances.push(rs);
                         }
-                        else if(rsobj.resistances.includes(rs)){
+                        else if (rsobj.resistances.includes(rs)) {
                             rsobj.resistances.splice(resistances.indexOf(rs), 1);
                         }
-                        else if(!rsobj.vulnerabilities.includes(rs)){
+                        else if (!rsobj.vulnerabilities.includes(rs)) {
                             rsobj.vulnerabilities.push(rs);
                         }
                     }
                 }
-                if("immunities" in ab){
-                    for(let j in ab.immunities){
+                if ("immunities" in ab) {
+                    for (let j in ab.immunities) {
                         let rs = ab.immunities[j];
-                        if(rsobj.resistances.includes(rs)){
+                        if (rsobj.resistances.includes(rs)) {
                             rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
                             rsobj.immunities.push(rs);
                         }
-                        else if(rsobj.supresist.includes(rs)){
+                        else if (rsobj.supresist.includes(rs)) {
                             rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
                             rsobj.immunities.push(rs);
                         }
-                        else if(rsobj.vulnerabilities.includes(rs)){
+                        else if (rsobj.vulnerabilities.includes(rs)) {
                             rsobj.vulnerabilities.splice(rsobj.vulnerabilities.indexOf(rs), 1);
                             rsobj.supresist.push(rs);
                         }
-                        else if(!rsobj.immunities.includes(rs)){
+                        else if (!rsobj.immunities.includes(rs)) {
                             rsobj.immunities.push(rs);
                         }
                     }
                 }
-                if("supresist" in ab){
-                    for(let j in ab.vulnerabilities){
+                if ("supresist" in ab) {
+                    for (let j in ab.vulnerabilities) {
                         let rs = ab.resistances[j];
-                        if(rsobj.resistances.includes(rs)){
+                        if (rsobj.resistances.includes(rs)) {
                             rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
                             rsobj.immunities.push(rs);
                         }
-                        else if(rsobj.supresist.includes(rs)){
+                        else if (rsobj.supresist.includes(rs)) {
                             rsobj.supresist.splice(rsobj.supresist.indexOf(rs), 1);
                             rsobj.immunities.push(rs);
                         }
-                        else if(rsobj.vulnerabilities.includes(rs)){
+                        else if (rsobj.vulnerabilities.includes(rs)) {
                             rsobj.vulnerabilities.splice(rsobj.vulnerabilities.indexOf(rs), 1);
                             rsobj.resistances.push(rs);
                         }
-                        else if(!rsobj.immunities.includes(rs)){
+                        else if (!rsobj.immunities.includes(rs)) {
                             rsobj.supresist.push(rs);
                         }
                     }
                 }
             }
-            return {vulnerabilities: rsobj.vulnerabilities.join(", "), 
-                    resistances: rsobj.resistances.join(", "), 
-                    supresist: rsobj.supresist.join(", "), 
-                    immunities: rsobj.immunities.join(", ")};
+            return {
+                vulnerabilities: rsobj.vulnerabilities.join(", "),
+                resistances: rsobj.resistances.join(", "),
+                supresist: rsobj.supresist.join(", "),
+                immunities: rsobj.immunities.join(", ")
+            };
         },
         myatb: function () {
             let res = { passive: [], actions: [], reactions: [] };
             let abSwitch = (ability) => {
                 switch (ability.type) {
-                    case "Pasiva": 
-                        if(!res.passive.includes(ability))
+                    case "Pasiva":
+                        if (!res.passive.includes(ability))
                             res.passive.push(ability);
                         break;
-                    case "Accion": 
-                        if(!res.actions.includes(ability))
+                    case "Accion":
+                        if (!res.actions.includes(ability))
                             res.actions.push(ability);
                         break;
-                    case "Reaccion": 
-                        if(!res.reactions.includes(ability))
+                    case "Reaccion":
+                        if (!res.reactions.includes(ability))
                             res.reactions.push(ability);
                         break;
                 }
@@ -461,19 +481,19 @@ ${toMd(this.atbCatString("reactions"))}
             //Add equipment abilities
             for (let key in this.equipment) {
                 let slot = this.equipment[key];
-                if(key != 'bag' && 'eqab' in slot){
+                if (key != 'bag' && 'eqab' in slot) {
                     let atlist = slot.eqab.split(",");
                     for (let i in atlist) {
                         let eid = atlist[i].trim();
                         if (eid in this.eqAtb) {
                             let atb = this.eqAtb[eid];
-                            if(atb.skill)
+                            if (atb.skill)
                                 atb["rank"] = this.getRank(atb.skill);
                             abSwitch(atb);
                         }
                     }
                 }
-                else if(key == 'bag'){
+                else if (key == 'bag') {
                     for (let i in slot) {
                         let eid = slot[i];
                         if ('eqab' in eid && eid.eqab in this.eqAtb) {
@@ -514,7 +534,7 @@ ${toMd(this.atbCatString("reactions"))}
             for (let key in this.myarch) {
                 let arc = this.myarch[key];
                 let i = arc.rank;
-                if ("enchancements" in arc ) {
+                if ("enchancements" in arc) {
                     let enArr = arc["enchancements"];
                     while (i > 0) {
                         let pos = arc.rank - i;
@@ -525,7 +545,7 @@ ${toMd(this.atbCatString("reactions"))}
                                 if (eid in this.attributes) {
                                     let atb = this.attributes[eid];
                                     atb.rank = (arc.rank + 1);
-                                    abSwitch(this.updateCostAndUses({...atb}));
+                                    abSwitch(this.updateCostAndUses({ ...atb }));
                                 }
                             }
                         }
@@ -574,7 +594,7 @@ ${toMd(this.atbCatString("reactions"))}
             if (this.race.stats) {
                 for (let j in this.race.stats) {
                     bst = this.race.stats[j];
-                    if(bst.boost != null && statsRes[bst.stat].value != "-")
+                    if (bst.boost != null && statsRes[bst.stat].value != "-")
                         statsRes[bst.stat].value += bst.boost;
                     else
                         statsRes[bst.stat].value = "-";
@@ -587,7 +607,7 @@ ${toMd(this.atbCatString("reactions"))}
                     bst = rk.stats[j];
                     if (bst.boost != null && statsRes[bst.stat].value != "-" && bst.rank <= rk.rank)
                         statsRes[bst.stat].value += bst.boost;
-                    else if(bst.boost == null)
+                    else if (bst.boost == null)
                         statsRes[bst.stat].value = "-";
                 }
             }
@@ -602,7 +622,7 @@ ${toMd(this.atbCatString("reactions"))}
         actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
         },
-        arclevels: function(){
+        arclevels: function () {
             return this.sumAllKeys('rank', this.myarch);
         }
     },
@@ -616,10 +636,9 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("arcanespecs", './data/arcane-specs.json');
         this.getData("races", './data/races.json');
         this.getData("archetypes", './data/archetypes.json');
-    },
-    mounted() {
-        if(localStorage.getItem("currentCharacter")){
-            this.loadCharacter(localStorage.getItem("currentCharacter"));
-        }
+        if (localStorage.getItem("currentCharacter")) 
+            this.loadCharacter(JSON.parse(localStorage.getItem("currentCharacter")));
+        else
+            this.getData("mytalents", './data/talents.json');
     }
 });

@@ -89,7 +89,7 @@
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
                         <v-spellpage v-bind:myranks="myranks" :attributes="attributes" :divpatrons="divinepatrons"
-                        :arcspecs="arcanespecs":race="race" :level="level" :myarch="myarch" 
+                        :arcspecs="arcanespecs" :race="race" :level="level" :myarch="myarch" :basespells="myspells"
                         @update-myspells="updateMySpells"> 
                         </v-spellpage>
                     </div>
@@ -152,7 +152,8 @@
             </div>
         </div>
         <div class="row justify-content-end mt-3">
-            <button @click="downloadCharacterInfo">Descargar</button>
+            <button class="mr-3" @click="downloadCharacterInfo">Descargar</button>
+            <button @click="saveCharacter">Guardar</button>
         </div>
     </div>
     <script src="main.js"></script>
