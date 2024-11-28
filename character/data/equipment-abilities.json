@@ -38,6 +38,30 @@
         "tags": "Físico, Ataque, Duelo", 
         "description": "Adyacente, +MOD para impactar, 1d8 + STAT daño Cortante."
     },
+    "escudo": {
+        "name": "Escudo",
+        "skill":"escudo", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Escudo", 
+        "description": "Adyacente, +MOD para impactar, 1d6 + STAT daño Contundente."
+    },    
+    "garra": {
+        "name": "Garra",
+        "skill":"estilo-salvaje", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Marcial, Salvaje", 
+        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Cortante."
+    },
+    "garrote": {
+        "name": "Garrote",
+        "skill":"armas-pesadas", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Pesada", 
+        "description": "Adyacente, +MOD para impactar, 1d6 + STAT daño Contundente."
+    },
     "golpe-serpiente": {
         "name": "Golpe Serpiente",
         "skill":"estilo-serpiente", 
@@ -61,22 +85,6 @@
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Alabarda, A Distancia", 
         "description": "Distancia cercana, +MOD para impactar, 1d8 + STAT daño Perforante. Puede lanzarse para aumentar su alcance a distancia media."
-    },
-    "escudo": {
-        "name": "Escudo",
-        "skill":"escudo", 
-        "type": "Accion", 
-        "cost": "1 Acción",
-        "tags": "Físico, Ataque, Escudo", 
-        "description": "Adyacente, +MOD para impactar, 1d6 + STAT daño Contundente."
-    },    
-    "garra": {
-        "name": "Garra",
-        "skill":"estilo-salvaje", 
-        "type": "Accion", 
-        "cost": "1 Acción",
-        "tags": "Físico, Ataque, Marcial, Salvaje", 
-        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Cortante."
     },
     "lanza": {
         "name": "Lanza",
@@ -108,5 +116,13 @@
         "type": "Reaccion", 
         "tags": "Físico, Defensivo, Escudo", 
         "description": "+MOD para defenderse. Funciona contra ataques cuerpo a cuerpo y a distancia"
+    },
+    "pistola-de-mano": {
+        "name": "Pistola de Mano",
+        "skill":"armas-a-distancia", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, A Distancia", 
+        "description": "Distancia media, +MOD para impactar, 2d6 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d6 daño obligatorio al portador."
     }
 }
