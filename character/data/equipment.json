@@ -15,9 +15,12 @@
         "garrote": {"name": "Garrote", "eqab": "garrote"},
         "golpe-serpiente": {"name": "Golpe Serpiente", "eqab": "golpe-serpiente"},
         "gran-hacha": {"name": "Gran Hacha", "eqab": "gran-hacha"},
+        "gran-maza": {"name": "Gran Maza", "eqab": "gran-maza"},
+        "hacha-de-batalla": {"name": "Hacha de Batalla", "eqab": "hacha-de-batalla"},
         "jabalina": {"name": "Jabalina", "eqab": "jabalina"},
         "lanza": {"name": "Lanza", "eqab": "lanza"},
         "latigo": {"name": "Látigo", "eqab": "latigo"},
+        "martillo-de-guerra": {"name": "Martillo de Guerra", "eqab": "martillo-de-guerra"},
         "pistola-de-mano": {"name": "Pistola de Mano", "eqab": "pistola-de-mano"}
     },
     "head":{
