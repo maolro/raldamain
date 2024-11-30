@@ -123,7 +123,9 @@ Eres capaz de fortalecer a tus aliados con energía divina para mejorar notablem
 
 **Duración:** Instantáneo
 
-Empleas tu poder divino para devolver el alma de un aliado muerto a su cuerpo, burlando a la muerte misma. Un aliado que haya muerto hace una ronda resucitará a 1 PV y recuperará la consciencia. Dicho aliado conservará todas las heridas permanentes que tenía en vida salvo las críticas, que pasarán a ser graves (en el caso que no tuviera resucitará con una herida grave activa). Esta habilidad no funcionará si el cuerpo está gravemente dañado o le falta una parte vital, como puede ser la cabeza.
+Empleas tu poder divino para devolver el alma de un aliado muerto a su cuerpo, burlando a la muerte misma. Una criatura muerta que puedas tocar resucita inmediatamente a 1 PV y recupera la consciencia. Dicho aliado conservará todas las heridas permanentes que tenía en vida salvo las críticas, que pasarán a ser graves (en el caso que no tuviera resucitará con una herida grave activa).
+
+Solo puedes afectar de esta manera a criaturas que hayan muerto hace no más de una ronda y no funcionará si el cuerpo de tu objetivo está gravemente dañado o le falta una parte vital, como puede ser la cabeza o el corazón.
 
 **Empoderar** (1 vigor o chi): Puedes afectarte a ti mismo con esta habilidad como acción bonus en respuesta a caer a menos de 1 PV.
 

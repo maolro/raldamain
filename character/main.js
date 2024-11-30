@@ -31,6 +31,7 @@ new Vue({
         equipment: {
             armor: {},
             mainHand: {},
+            secondHand: {},
             head: {},
             bag: []
         },

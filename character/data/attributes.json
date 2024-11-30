@@ -216,9 +216,8 @@
       "name": "Aguantar los Elementos",
       "skill": "fortitud",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Fortitud, Innata",
+      "resistances": ["Fuego","Frío","Ácido","Eléctrico"],
       "description": "Resistencia a Fuego, Frío, Ácido y Eléctrico"
     },
     "aguas-de-la-vida": {
@@ -415,9 +414,9 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "1 Acción y 1 Chi",
-      "reach": "Medio",
+      "tags": "Mental, Duradera",
       "duration": "Hasta que termine",
-      "description": "Tira Averiguar Intenciones o Concentración o refuerza una emoción específica entre Cansancio, Ira, Miedo, Calma o Valentía"
+      "description": "Distancia media, el objetivo debe tener éxito en un tiro de Averiguar Intenciones o Concentración contra +MOD o refuerza una emoción específica entre Cansancio, Ira, Miedo, Calma o Valentía"
     },
     "alterar-peso": {
       "rank": 2,
@@ -724,6 +723,7 @@
       "type": "Pasiva",
       "def": "RANGO+1",
       "hp": "RANGO+1",
+      "tags": "Fortitud, Innata",
       "description": "Aumenta sus PV y Armadura natural (ya incluido)"
     },
     "armonizar": {
@@ -771,8 +771,7 @@
       "skill": "magia-de-fuego",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
+      "tags": "Fuego, Ataque",
       "description": "+MOD para atacar, Adyacente, Inflige 1DD+RANGO daño Fuego y hace que objetos inflamables salten en llamas. Puede emplear una acción para hacer un segundo ataque con +1 modificador y daño contra el mismo objetivo, quien mantendrá su resultado defensivo contra él.",
       "empoderar": "(1 chi) Aumenta el alcance de todos los ataques hechos con este hechizo a cercano durante una ronda."
     },
@@ -842,7 +841,9 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "1 Acción",
-      "description": "Distancia media, Un objetivo tira Averiguar Intenciones o Concentración contra +MOD o reduce su cordura por RANGO+1 y pierde la concentración. (1 chi) Afecta a un objetivo adicional a distancia media con este hechizo"
+      "tags": "Mental, Cordura",
+      "description": "Distancia media, Un objetivo tira Averiguar Intenciones o Concentración contra +MOD o reduce su cordura por RANGO+1 y pierde la concentración.",
+      "empower": "(1 chi) Afecta a un objetivo adicional a distancia media con este hechizo"
     },
     "ascension-del-dragon": {
       "rank": 5,
@@ -899,9 +900,7 @@
       "name": "Aspecto Primigenio",
       "skill": "ascendencia-primigenia",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Innata",
       "description": "Tiene visión nocturna y olfato a distancia media. Inmunidad a terreno difícil y los animales salvajes no serán naturalmente hostiles"
     },
     "ataque-lateral": {
@@ -1056,9 +1055,8 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "2 Acciones y 2 Chi",
-      "reach": "Esfera mediana",
-      "duration": "Concentración",
-      "description": "Todos tiran Averiguar Intenciones o Concentración o una emoción está empoderada de la misma manera que Alterar emociones. Repiten cada ronda"
+      "tags": "Mental, Duradera",
+      "description": "Todas las criaturas en una esfera media deben tener éxito en un tiro de Averiguar Intenciones o Concentración contra +MOD o una de sus emociones queda empoderada de la misma manera que Alterar emociones. Los afectados repiten el tiro cada ronda y este efecto permanecerá activo hasta que pierda la concentración."
     },
     "aura-primigenia": {
       "rank": 5,
@@ -1274,8 +1272,7 @@
       "skill": "magia-espacial",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
+      "tags": "Arcana, Espacial",
       "description": "Mete o saca un objeto pequeño de un demiplano"
     },
     "bomba-cegadora": {
@@ -1594,9 +1591,8 @@
       "skill": "escudo",
       "type": "Accion",
       "cost": "1 Vigor",
-      "reach": "Propio",
-      "duration": "Instantáneo",
-      "description": "Antes de atacar se mueve un paso y su ataque inflige +1d6 daño y el afectado tira Heroísmo o Acrobacias o cae tropezado"
+      "tags": "Escudo, Mejora",
+      "description": "Antes de atacar se mueve un paso como acción bonus y aumenta el daño de su ataque por 1d6. Si impacta el afectado tira Heroísmo o Acrobacias contra +MOD o cae <i>tropezado</i>."
     },
     "carga-imparable": {
       "rank": 4,
@@ -1604,8 +1600,7 @@
       "skill": "estilo-salvaje",
       "type": "Accion",
       "cost": "2 Vigor",
-      "reach": "Propio",
-      "duration": "Instantáneo",
+      "tags": "Marcial, Salvaje, Mejora",
       "description": "Antes de atacar se mueve dos pasos y ataca a cada enemigo en su camino infligiendo +1d6 daño y empujando"
     },
     "carga-poderosa": {
@@ -2082,7 +2077,9 @@
       "type": "Pasiva",
       "cost": "",
       "reach": "",
-      "duration": "",
+      "tags": "Fortitud, Innata",
+      "resistances": ["Aflicciones","Necróticos"],
+      "immunities": ["enfermado","náuseas"],
       "description": "Resistencia a Aflicciones, efectos Necróticos y no puede sufrir el efecto enfermado o náuseas"
     },
     "consumir-esencia": {
@@ -2281,8 +2278,8 @@
       "type": "Accion",
       "cost": "2 Acciones",
       "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Crea una ilusión de un objeto, criatura o fenómeno visual que ocupa una esfera pequeña. Se desmiente tirando Percepción o Averiguar Intenciones (1/Ronda)"
+      "tags": "Ilusoria, Duradera, Visual, Arcana",
+      "description": "Distancia media, crea una ilusión de un objeto, criatura o fenómeno visual que ocupa una esfera pequeña. Una vez por ronda una criatura puede intentar desmentirla si tiene éxito en un tiro de Percepción o Averiguar Intenciones contra +MOD."
     },
     "crear-no-muerto-superior": {
       "rank": 4,
@@ -2611,9 +2608,8 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "1 Acción y 3 Chi",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Tira Averiguar Intenciones o Concnetración o pierde 1DD+STAT cordura y queda aturdido una ronda. Puede afectar a enemigos con Mente en Blanco y si reduce a 0 el afectado reduce su inteligencia a la de un animal"
+      "tags": "Mental, Cordura",
+      "description": "Distancia media, El objetivo debe tener éxito en un tiro de Averiguar Intenciones o Concentración contra +MOD o pierde 1DD+STAT cordura y queda <i>aturdido</i> una ronda. Puede afectar a enemigos con Mente en Blanco y si reduce a 0 el afectado reduce su inteligencia a la de un animal."
     },
     "desviar-ataques": {
       "rank": 3,
@@ -2890,9 +2886,8 @@
       "name": "Duro de Pelar",
       "skill": "fortitud",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Fortitud, Innata",
+      "resistances": ["Sónico","Aturdimiento","Maniobras"],
       "description": "Resistencia a efectos Sónicos, Aturdimiento y Maniobras"
     },
     "eclipse-de-sacrificio": {
@@ -3108,9 +3103,8 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "2 Acciones",
-      "reach": "Propio",
-      "duration": "Concentración",
-      "description": "Puede tirar Magia Mental para defenderte de otros efectos mentales y +RANGO cordura. No puede ser detectado con Leer pensamientos"
+      "tags": "Mental, Duradera",
+      "description": "Puede tirar Magia Mental para defenderte de otros efectos mentales y +RANGO cordura. No puede ser detectado con Leer pensamientos."
     },
     "escupitajo-acido": {
       "rank": 1,
@@ -3335,14 +3329,12 @@
       "duration": "",
       "description": "Puede defender a alidados adyacentes y llevarse su daño. Tiene contadores de escudo iniciales según el escudo que tenga (2 Ligero, 3 Medio, 4 Torre)"
     },
-    "estilo-salvaje": {
+    "estilo-descuidado": {
       "rank": 1,
-      "name": "Estilo Salvaje",
+      "name": "Estilo Descuidado",
       "skill": "armas-pesadas",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Pesada",
       "description": "Puede obtener una acción adicional esta ronda a costa de ser incapaz de entrar en posición defensiva"
     },
     "estocada-poderosa": {
@@ -3924,8 +3916,7 @@
       "skill": "ascendencia-de-fuego",
       "type": "Accion",
       "cost": "1 Chi o Vigor",
-      "reach": "Propio",
-      "duration": "Una ronda",
+      "tags": "Fuego, Mejora",
       "description": "La siguiente vez que impacte con un ataque físico provoca los efectos de un hechizo de Fuego al afectado como acción bonus. Debe seguir pagando su coste en reservas"
     },
     "furia-del-oceano": {
@@ -4173,9 +4164,8 @@
       "skill": "armas-pesadas",
       "type": "Accion",
       "cost": "1 Vigor",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
-      "description": "Al impactar con un ataque el objetivo tira Heroísmo o Acrobacias o es empujado un paso y cae tropezado"
+      "tags": "Pesada, Mejora",
+      "description": "Al impactar con su siguiente ataque el objetivo tira Heroísmo o Acrobacias contra +MOD o es empujado un paso en cualquier dirección y cae <i>tropezado</i>. Si el enemigo se defiende exitosamente con una habilidad defensiva Física debe seguir tirando contra este efecto."
     },
     "golpe-desorientante": {
       "rank": 2,
@@ -4400,9 +4390,7 @@
       "name": "Hasta el Límite",
       "skill": "ira",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Fortitud, Innata",
       "description": "3/Ronda, reduce Vitalidad máxima por 2 o PV máximos por 1 para recuperar 1 Vigor"
     },
     "hasta-la-muerte": {
@@ -4410,9 +4398,7 @@
       "name": "Hasta la Muerte",
       "skill": "fortitud",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Fortitud, Innata",
       "description": "Reduce la gravedad de todas las heridas que le afecten por un paso y puede seguir luchando a menos de 0 PV pero deberá hacer tiros de muerte cada ronda"
     },
     "hidrokinesia": {
@@ -4550,9 +4536,8 @@
       "skill": "presencia",
       "type": "Reaccion",
       "cost": "2 Vigor",
-      "reach": "",
-      "duration": "",
-      "description": "Tiene éxito automático en un tiro defensivo o de salvación"
+      "tags": "Moral, Innata",
+      "description": "Tras fracasar un tiro para defenderse de una habilidad o hechizo puede transformarlo en un éxito, evitando así los efectos que le daría un fracaso. No funciona contra ataques o efectos míticos."
     },
     "induccion-onirica": {
       "rank": 2,
@@ -5070,9 +5055,8 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "2 Acciones y 1 Chi",
-      "reach": "Propio",
-      "duration": "Concentración",
-      "description": "Lee los pensamientos superficiales de todas las criaturas en una esfera grande. Puede emplear 1 Acción para penetrar en los pensamientos profundos de una criatura (tira Averiguar Intenciones o Concentración)"
+      "tags": "Mental, Duradera",
+      "description": "Lee los pensamientos superficiales de todas las criaturas en una esfera grande. Puede emplear 1 Acción para penetrar en los pensamientos profundos de una criatura, la cual debe tener éxito en un tiro de Averiguar Intenciones o Concentración contra +MOD para evitarlo."
     },
     "levitacion": {
       "rank": 3,
@@ -5099,9 +5083,7 @@
       "name": "Líder Nato",
       "skill": "presencia",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Moral, Innata",
       "description": "Cada vez que utilices Voz del Comandante otorgas un dado de Ventaja a tres aliados quienes pueden usar ese dado en cualquier momento de la ronda (no puede acumularse más de un dado)"
     },
     "ligacion-planar": {
@@ -5187,8 +5169,7 @@
       "skill": "magia-de-fuego",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Medio",
-      "duration": "Instantáneo",
+      "tags": "Fuego, Ataque",
       "description": "+MOD para atacar, Distancia media, Inflige 1DD+RANGO daño Fuego. Si impacta a un objeto incendiario salta en llamas.",
       "empower": "(1 chi): Ataca a un objetivo adicional a distancia media."
     },
@@ -6500,9 +6481,8 @@
       "skill": "magia-espacial",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Adyacente",
-      "duration": "Concentración",
-      "description": "Crea un portal pequeño que une dos puntos a distancia media"
+      "tags": "Arcana, Espacial, Duradera",
+      "description": "Crea un portal pequeño en una posición adyacente que une dos puntos a distancia media entre sí. El portal permanecerá activo hasta que piedas la concentración o escojas disiparlo."
     },
     "portal-multiple": {
       "rank": 3,
@@ -6849,7 +6829,7 @@
       "description": "Puede usar Esquiva para defenderse de ataques que le apunten explícitamente"
     },
     "rafaga-mental": {
-      "rank": "",
+      "rank": 6,
       "name": "Ráfaga Mental",
       "skill": "magia-mental",
       "type": "Accion",
@@ -7121,7 +7101,7 @@
       "type": "Pasiva",
       "hp": "RANGO+1",
       "resistances": ["Arcanos"],
-      "inmunidades": ["Heridas permanentes leves y medias"],
+      "immunities": ["Heridas permanentes leves y medias"],
       "tags": "Innata",
       "description": "Resistencia a efectos Arcanos e Inmunidad a <i>heridas permanentes leves</i> y medias</i>"
     },
@@ -7160,9 +7140,8 @@
       "name": "Resistencias Infernales",
       "skill": "ascendencia-infernal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "resistances": ["Mentales","Aflicciones","Fuego","Frío"],
+      "tags": "Innata",
       "description": "Resistencia a efectos Mentales, Aflicciones, Fuego y Frío. Las criaturas infernales serán generalmente amistosas"
     },
     "respirador": {
@@ -7430,6 +7409,7 @@
       "type": "Accion",
       "cost": "1 Vigor",
       "uses": "1/Ronda",
+      "tags": "Fortitud, Innata",
       "description": "Recupera RANGO+2 Vitalidad. (1 vigor): Trata una <i>herida permanente</i> que tenga activa como si fuera de un nivel menor para eliminar sus penalizadores."
     },
     "sello-de-regeneracion": {
@@ -7653,9 +7633,8 @@
       "skill": "magia-mental",
       "type": "Accion",
       "cost": "1 Acción y 1 Chi",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Tira Averiguar Intenciones o Concentración o le condiciona para que actúe de una manera específica esta ronda siempre y cuando sea lógica"
+      "tags": "Mental, Duradera",
+      "description": "Distancia media, el objetivo debe tener éxito en un tiro Averiguar Intenciones o Concentración contra +MOD o queda condicionado para que actúe de una manera específica esta ronda siempre y cuando sea lógica. También puede usarse para que el objetivo siga una conducta específica o altere su comportamiento."
     },
     "sugestion-en-masa": {
       "rank": 4,
@@ -8149,6 +8128,7 @@
       "type": "Reaccion",
       "cost": "3 Vigor",
       "uses": "1/Combate",
+      "tags": "Fortitud, Innata",
       "description": "Recupera toda su Vitalidad y la mitad de sus PV. Solo puede emplear esta habilidad si cae a 0 o menos PV."
     },
     "unidos-hasta-la-muerte": {
@@ -8433,9 +8413,7 @@
       "name": "Visión Infernal",
       "skill": "ascendencia-infernal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Innata",
       "description": "Puede ver en la oscuridad mágica y no-mágica sin dificultades y detecta los seres inteligentes a distancia media. Si tiene hechizos Mentales trata resistencias a efectos Mentales como si fueran de un paso inferior"
     },
     "vision-mejorada": {
@@ -8491,10 +8469,9 @@
       "name": "Voluntad Poderosa",
       "skill": "presencia",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia a efectos Mentales y Miedo además que puede usar Presencia para defenderse de esos efectos"
+      "tags": "Innata",
+      "resistances": ["Mentales","Miedo"],
+      "description": "Resistencia a efectos Mentales y Miedo además que puede emplear su modificador de Presencia (+MOD) para defenderse de esos efectos."
     },
     "vortice": {
       "rank": 4,
