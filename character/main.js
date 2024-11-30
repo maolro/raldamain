@@ -590,8 +590,6 @@ ${toMd(this.atbCatString("reactions"))}
                 wis: { name: "SAB", value: this.stats.wis.value },
                 cha: { name: "CAR", value: this.stats.cha.value }
             };
-            if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
-                statsRes.dex.value += this.equipment.armor.penalty;
             if (this.race.stats) {
                 for (let j in this.race.stats) {
                     bst = this.race.stats[j];
@@ -612,6 +610,8 @@ ${toMd(this.atbCatString("reactions"))}
                         statsRes[bst.stat].value = "-";
                 }
             }
+            if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
+                statsRes.dex.value += this.equipment.armor.penalty;
             return statsRes;
         },
         def: function () {
