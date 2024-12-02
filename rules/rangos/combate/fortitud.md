@@ -19,13 +19,13 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ### Armadura Natural
 
-*Innata, Pasiva*
+*Fortitud, Innata, Pasiva*
 
 Tu cuerpo es capaz de resistir heridas que en otras circunstancias serían mortales. Aumenta tu cantidad máxima de PV y tu DEF por un valor igual a tu Rango de Fortitud + 1. El bonificador a la defensa sí se acumula con aquel otorgado por armaduras.
 
 ### Segundo Aliento
 
-*Innata, Sanación*
+*Fortitud, Innata, Sanación*
 
 **Coste:** 1 vigor
 

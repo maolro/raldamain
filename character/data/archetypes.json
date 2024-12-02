@@ -251,7 +251,7 @@
                     "parada-con-arma-ligera",
                     "evasion",
                     "velocidad-superior",
-                    "combate-furtivo",
+                    "combate-furtivo-(ligeras)",
                     "esquiva-asombrosa",
                     "esquiva"
                 ],
@@ -507,6 +507,115 @@
                 "attributes": [],
                 "abilities": [
                     {}
+                ]
+            }
+        ]
+    },
+    "cruen": {
+        "name": "Cruen",
+        "stat": "con/cha",
+        "modranks": [
+            "ascendencia-cruen"
+        ],
+        "rank": 0,
+        "max": 3,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["esencia-vampirica","peso-de-cadaver","linaje-sanguineo"],
+                "abilities": [
+                    {
+                        "name": "Regeneración Maldita",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "def": "RANGOx2",
+                        "hp": "RANGOx2",
+                        "skill": "ascendencia-cruen",
+                        "description": "Al inicio de su turno se regenera RANGO+1 Vitalidad si se encuentra en un lugar infundido con energía negativa o consagrado a entidades oscuras. Esta regeneración se suprimirá durante una ronda si sufre daño Radiante."
+                    },
+                    {
+                        "name": "Devorar Cadáver",
+                        "type": "Accion",
+                        "tags": "Innata, Sanación",
+                        "skill": "ascendencia-cruen",
+                        "description": "Devora un cadáver adyacente para sanarse RANGO+1 Vitalidad y le permite reducir el nivel de una <i>herida permanente</i> que le afecte por un paso."
+                    },
+                    {
+                        "name": "Chupasangre",
+                        "type": "Accion",
+                        "tags": "Ataque, Marcial, Salvaje",
+                        "uses": "1/Ronda",
+                        "cost": "1 Acción",
+                        "skill": "estilo-salvaje",
+                        "description": "+MOD para atacar, adyacente, el objetivo sufre 16+DEX daño Perfornate y 1DD+RANGO daño Necrótico que reduce PV y Vitalidad máxima además de provocar <i>sangrado</i>."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alas-del-dragon","resiliencia-draconica"],
+                "abilities": [
+                    {
+                        "name": "Poder Elemental",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Provoca 1DD + RANGO daño adicional relacionado con el elemento de su elección con todos sus ataques físicos. Tiene también activa un aura relacionada con la habilidad Poder Elemental (Calor Extremo, Frío Extremo, Nube Corrosiva o Electricidad Estática)."
+                    },
+                    {
+                        "name": "Presencia Aterradora",
+                        "type": "Pasiva",
+                        "tags": "Innata, Miedo, Duradera",
+                        "skill": "ascendencia-draconica",
+                        "description": "Todas las criaturas a distancia media que puedan verle deberán tener éxito en un tiro de Voluntad o Intimidar frente a su modificador de Ascendencia Dracónica o aumentarán su nivel de <i>miedo</i> por un paso. Cada ronda todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de <i>miedo</i> si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate."
+                    },
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                    },
+                    {
+                        "name": "Magia Dracónica",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Todos sus hechizos del mismo elemento que el suyo reciben un dado de daño adicional y puede emplear su modificador de Ascendencia Dracónica para lanzarlos. También podrá emplear su estadística de CON o su Rango de Ascendencia Dracónica para determinar la fuerza de estos."
+                    },
+                    {
+                        "name": "Escamas Impenetrables",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Su cuerpo está rodeado de escamas impenetrables que le otorgan RANGO <i>contadores de escudo</i>. Recuperará estos contadores al cabo de un día."
+                    }
                 ]
             }
         ]
@@ -1435,6 +1544,126 @@
             }
         ]
     },
+    "guerrero-infernal": {
+        "name": "Guerrero Infernal",
+        "stat": "cha",
+        "modranks": [
+            "guerrero-divino",
+            "ascendencia-infernal"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["resistencias-infernales","vision-infernal"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "def": "(RANGO-1)x2",
+                        "hp": "(RANGO-1)x2",
+                        "skill": "guerrero-divino",
+                        "resistances": ["Miedo", "Mentales"],
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Azote Divino",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón abisal. Esto funciona de la misma manera que el hechizo Azote Divino."
+                    },
+                    {
+                        "name": "Arma Profana",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-infernal",
+                        "description": "Cada vez que hiera a un enemigo con un ataque puede provocarle una Herida Infernal, reduciendo así sus PV y Vitalidad máximos por un valor igual al daño provocado además de una <i>herida permanente leve</i>. Se elimina como si fuera una Maldición de Rango II."
+                    }
+                ]
+            },
+            {
+                "attributes": ["rasgo-monstruoso-superior"],
+                "abilities": [
+                    {
+                        "name": "Aura Protectora",
+                        "type": "Reaccion",
+                        "resistances": ["Arcanos", "Divinos"],
+                        "tags": "Divina, Defensiva",
+                        "uses": "1/Ronda",
+                        "skill": "guerrero-divino",
+                        "description": "Tiene éxito automático en un tiro defensivo contra un efecto Divino o Arcano de Rango RANGO o menos. Si el lanzador ha pagado un chi adicional al lanzar el hechizo esto no funcionará (2 chi si era de Rango II o inferior)."
+                    },
+                    {
+                        "name": "Presencia Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina, Miedo, Duradera",
+                        "skill": "guerrero-divino",
+                        "description": "Todas las criaturas a distancia media que puedan verle deben tener éxito en un tiro de Voluntad contra +MOD o aumentan su nivel de miedo por un paso. Aquellos  que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierda la concentración y reponerlo cuesta dos acciones."
+                    },
+                    {
+                        "name": "Golpe Desacralizador",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico puede eliminar un efecto Arcano o Divino que tenga activo el objetivo si tiene éxito en un tiro con modificador +MOD contra la habilidad mágica del objetivo. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino"
+                    }
+                ]
+            },
+            {
+                "attributes": ["paso-abisal","paso-abisal-defensivo","aura-del-caos","corrupcion-absoluta"],
+                "abilities": [
+                    {
+                        "name": "Golpe Exiliante",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico a una Invocación puede hacer un tiro con modificador +MOD contra su nivel + 2 y en caso de éxito la exiliará de inmediato. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino."
+                    },
+                    {
+                        "name": "Hueste Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "skill": "guerrero-divino",
+                        "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón abisal. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "hechicero-abisal": {
         "name": "Hechicero Abisal",
         "stat": "itl/cha",
@@ -1499,6 +1728,86 @@
                         "resistances": ["Aflicciones", "Aturdimiento"],
                         "immunities": ["Heridas permanentes leves y medias"],
                         "description": "Es Inmune a los efectos de <i>heridas permanentes leves</i> y <i>medias</i> además que recibe Resistencia a Aflicciones y Aturdimiento. (todo ya incluido)"
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "hechicero-espiritual": {
+        "name": "Hechicero Espiritual",
+        "stat": "wis/cha",
+        "modranks": [
+            "magia-divina",
+            "ascendencia-primigenia"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["aspecto-primigenio","manifestacion-divina"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón espiritual además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Comunión con la Naturaleza",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-primigenia",
+                        "description": "Desarrolla un sexto sentido que le permite detectar presencias espirituales y mágicas a distancia lejana de las cuales puede identificar su naturaleza y fuerza aproximada. También es capaz de comunicarse con criaturas espirituales."
+                    }
+                ]
+            },
+            {
+                "attributes": ["vinculo-primigenio","presencia-divina"],
+                "abilities": [
+                    {
+                        "name": "Protección Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Se encuentra siempre en <i>posición defensiva</i> y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina."
+                    },
+                    {
+                        "name": "Forma Animal",
+                        "type": "Accion",
+                        "cost": "1 Acción",
+                        "tags": "Innata, Duradera",
+                        "description": "Se transforma en un animal de su elección de nivel igual o inferiro al suyo. Su equipamiento se fusionará con su forma animal y podrá permanecer en dicho estado tanto tiempo como desee. No puede permanecer en esta forma durante más de una hora y cambiar de forma no cambiará sus PV y Vitalidad actuales."
                     }
                 ]
             },
@@ -1648,7 +1957,7 @@
                 "attributes": [
                     "golpe-desestabilizador",
                     "parada-con-arma-pesada",
-                    "estilo-salvaje"
+                    "estilo-descuidado"
                 ],
                 "abilities": [
                     {

@@ -10,7 +10,7 @@ title: Productos Químicos
 
 **Propiedades:**
 
-- El portador puede emplear una acción para lanzarla contra un objetivo a distancia media. Empleará su modificador de Armas A Distancia o Bombas para el tiro y esta infligirá 2d6 daño Fuego a todos los objetivos a distancia cercana (la mitad de daño si tienen éxito en el tiro). Esta destruirá todas las barreras y estructuras frágiles que se encuentren en el área.
+- El portador puede emplear una acción para lanzarla contra un objetivo a distancia media. Empleará su modificador de Armas A Distancia o Bombas para el tiro y esta infligirá 2d6 daño Fuego a todos los objetivos a distancia cercana (la mitad de daño si tienen éxito en el tiro). Esta destruirá todas las barreras y estructuras frágiles que se encuentren en el área. Su modificador quedará afectado por la estadística de DES o INT del usuario si tiene Rangos en Bombas.
 
 ## Cognatógeno (precio 2, 3 unidades)
 
