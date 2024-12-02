@@ -133,7 +133,7 @@ Movimiento estratégico durará hasta que pierdas la concentración o escojas ac
 
 ### Indómito
 
-*Moral, Reacción*
+*Moral, Innata*
 
 **Coste:** 2 vigor
 

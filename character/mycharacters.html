@@ -55,6 +55,12 @@
             align-items: center;
         }
 
+        .nav-scroll {
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex-wrap: nowrap;
+        }
         .popup {
             background: white;
             padding: 20px;
@@ -133,7 +139,7 @@
                 }
             },
             template: `
-        <div>
+        <div style="nav-scroll">
           <div v-for="(character, index) in characters" class="character">
             <button type="button" class="btn btn-danger" @click="confirmDelete(index)">-</button>
             <div class="character-name">

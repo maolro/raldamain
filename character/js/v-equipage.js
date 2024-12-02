@@ -28,6 +28,17 @@ Vue.component('v-equipage', {
     </div>
     <div class="row my-2 justify-content-center">
         <div class="col-6">
+            <b>Mano Secundaria</b>
+        </div>
+        <div class="col-6">
+            <v-select-search v-bind:optionsobj="eqlist.weapons" 
+            :placeholder="getPlaceholder(equipment.secondHand)"
+                v-on:selected-key="addItem('secondHand', 'weapons', $event)">
+            </v-select-search>
+        </div>
+    </div>
+    <div class="row my-2 justify-content-center">
+        <div class="col-6">
             <b>Cabeza</b>
         </div>
         <div class="col-6">

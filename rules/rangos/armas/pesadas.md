@@ -28,7 +28,7 @@ Estilo de Armas pesadas tiene las siguientes reglas fundamentales que se aplican
 
 Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de FUE. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Pesada.
 
-### Estilo salvaje
+### Estilo Descuidado
 
 *Pesado, Pasiva*
 
