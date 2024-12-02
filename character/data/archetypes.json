@@ -511,6 +511,115 @@
             }
         ]
     },
+    "cruen": {
+        "name": "Cruen",
+        "stat": "con/cha",
+        "modranks": [
+            "ascendencia-cruen"
+        ],
+        "rank": 0,
+        "max": 3,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["esencia-vampirica","peso-de-cadaver","linaje-sanguineo"],
+                "abilities": [
+                    {
+                        "name": "Regeneración Maldita",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "def": "RANGOx2",
+                        "hp": "RANGOx2",
+                        "skill": "ascendencia-cruen",
+                        "description": "Al inicio de su turno se regenera RANGO+1 Vitalidad si se encuentra en un lugar infundido con energía negativa o consagrado a entidades oscuras. Esta regeneración se suprimirá durante una ronda si sufre daño Radiante."
+                    },
+                    {
+                        "name": "Devorar Cadáver",
+                        "type": "Accion",
+                        "tags": "Innata, Sanación",
+                        "skill": "ascendencia-cruen",
+                        "description": "Devora un cadáver adyacente para sanarse RANGO+1 Vitalidad y le permite reducir el nivel de una <i>herida permanente</i> que le afecte por un paso."
+                    },
+                    {
+                        "name": "Chupasangre",
+                        "type": "Accion",
+                        "tags": "Ataque, Marcial, Salvaje",
+                        "uses": "1/Ronda",
+                        "cost": "1 Acción",
+                        "skill": "estilo-salvaje",
+                        "description": "+MOD para atacar, adyacente, el objetivo sufre 16+DEX daño Perfornate y 1DD+RANGO daño Necrótico que reduce PV y Vitalidad máxima además de provocar <i>sangrado</i>."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alas-del-dragon","resiliencia-draconica"],
+                "abilities": [
+                    {
+                        "name": "Poder Elemental",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Provoca 1DD + RANGO daño adicional relacionado con el elemento de su elección con todos sus ataques físicos. Tiene también activa un aura relacionada con la habilidad Poder Elemental (Calor Extremo, Frío Extremo, Nube Corrosiva o Electricidad Estática)."
+                    },
+                    {
+                        "name": "Presencia Aterradora",
+                        "type": "Pasiva",
+                        "tags": "Innata, Miedo, Duradera",
+                        "skill": "ascendencia-draconica",
+                        "description": "Todas las criaturas a distancia media que puedan verle deberán tener éxito en un tiro de Voluntad o Intimidar frente a su modificador de Ascendencia Dracónica o aumentarán su nivel de <i>miedo</i> por un paso. Cada ronda todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de <i>miedo</i> si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate."
+                    },
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Tamaño Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
+                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                    },
+                    {
+                        "name": "Magia Dracónica",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Todos sus hechizos del mismo elemento que el suyo reciben un dado de daño adicional y puede emplear su modificador de Ascendencia Dracónica para lanzarlos. También podrá emplear su estadística de CON o su Rango de Ascendencia Dracónica para determinar la fuerza de estos."
+                    },
+                    {
+                        "name": "Escamas Impenetrables",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-draconica",
+                        "description": "Su cuerpo está rodeado de escamas impenetrables que le otorgan RANGO <i>contadores de escudo</i>. Recuperará estos contadores al cabo de un día."
+                    }
+                ]
+            }
+        ]
+    },
     "cuerpo-de-plantas": {
         "name": "Cuerpo de Plantas",
         "stat": "cha",
