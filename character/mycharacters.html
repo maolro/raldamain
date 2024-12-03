@@ -103,7 +103,6 @@
                     const characters =  userCharacters[loggedInUser] || [];
                      // Sort tags alphabetically for each character
                     characters.sort((a, b) => a.name.localeCompare(b.name));
-
                     // Update the component's characters property
                     this.characters = characters;
                 },
