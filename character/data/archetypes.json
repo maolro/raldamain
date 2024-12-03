@@ -466,7 +466,7 @@
         ],
         "enchancements": [
             {
-                "attributes": ["velocidad-superior","frenesi-de-batalla","aspecto-primigenio","agilidad-animal","esquiva"],
+                "attributes": ["velocidad-superior","frenesi-de-batalla","aspecto-primigenio","agilidad-animal","esquiva","parada-salvaje"],
                 "abilities": [
                     {
                         "name": "Furia Constante",
@@ -1292,6 +1292,45 @@
             }
         ]
     },
+    "esqueleto": {
+        "name": "Esqueleto",
+        "stat": "cha",
+        "modranks": [
+            "fortitud", "estilo-salvaje"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "dex", "rank": 1, "boost": 2}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["parada-salvaje"],
+                "abilities": [
+                    {
+                        "name": "No-Muerto",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "immunities": ["Mentales","Miedo","Aflicciones","Necróticos"],
+                        "vulnerabilities": ["Radiantes"],
+                        "description": "Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido y tampoco le afectarán las *heridas permanentes* que no sean provocadas por daño Contundente."
+                    },
+                    {
+                        "name": "Cuerpo Óseo",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "hp": 2,
+                        "def": 4,
+                        "skill": "fortitud",
+                        "resistances": ["Eléctrico","Frío","Fuego"],
+                        "description": "Aumenta el daño de sus ataques naturales por un paso y recibe Resistencia a efectos de las categorías Eléctrico, Frío y Fuego."
+                    }
+                ]
+            }
+        ]
+    },
     "evocador": {
         "name": "Evocador",
         "stat": "itl",
@@ -1777,7 +1816,7 @@
                         "tags": "Divina, Mejora",
                         "skill": "guerrero-divino",
                         "uses": "1/Ataque",
-                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón abisal. Esto funciona de la misma manera que el hechizo Azote Divino."
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón infernal. Esto funciona de la misma manera que el hechizo Azote Divino."
                     },
                     {
                         "name": "Arma Profana",
@@ -2253,7 +2292,7 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["corrupcion-demoniaca"],
                 "abilities": [
                     {}
                 ]
@@ -2312,6 +2351,87 @@
                         "skill": "ascendencia-insectoide",
                         "description": "Se fusiona con otra plaga adyacente para combinar sus valores de Vitalidad y PV en uno solo además de aumentar su tamaño por un paso hasta un máximo de una esfera grande. Todos sus ataques físicos incrementarán su modificador por 2 y recibirán un dado de daño adicional. Esto incrementará también el nivel efectivo de la plaga combinada por 2 para los propósitos de controlar invocaciones."
                     }
+                ]
+            }
+        ]
+    },
+    "psiquico": {
+        "name": "Psíquico",
+        "stat": "int/cha",
+        "modranks": [
+            "telequinesia",
+            "magia-mental",
+            "mente-desencadenada"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["asalto-psiquico","arrastre-telequinetico","manipulacion-telequinetica","lanzamiento-humano","furia-telequinetica","parada-telequinetica"],
+                "abilities": [
+                    {
+                        "name": "Escudo Mental",
+                        "type": "Pasiva",
+                        "skill": "magia-mental",
+                        "tags": "Mental",
+                        "description": "No puede ser detectado pasivamente con Leer Pensamientos y puede usar su tiro de Magia Mental para defenderse de efectos Mentales ajenos."
+                    },
+                    {
+                        "name": "Leer Pensamientos",
+                        "type": "Pasiva",
+                        "skill": "magia-mental",
+                        "tags": "Mental",
+                        "description": "Tiene siempre activo el hechizo Leer Pensamientos, permitiéndole detectar todas las criaturas pensantes a distancia media y leer sus pensamientos superficiales. Defenderse de este efecto requiere un tiro exitoso de Concentración o Voluntad contra +MOD"
+                    },
+                    {
+                        "name": "Mente Desencadenada",
+                        "type": "Pasiva",
+                        "skill": "mente-desencadenada",
+                        "tags": "Innata",
+                        "description": "Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales."
+                    }
+                ]
+            },
+            {
+                "attributes": ["barrera-de-fuerza-defensiva","agarre-telequinetico","sobrecarga-mental","sanacion-eterea","sanacion-mental","concentracion-superior"],
+                "abilities": [
+                    {
+                        "name": "Levitación Psíquica",
+                        "type": "Pasiva",
+                        "skill": "telequinesia",
+                        "tags": "Telequinesia, Duradera",
+                        "description": "Obtiene velocidad de vuelo 1 y Ventaja en todos sus tiros de Esquiva. Esto funciona de la misma manera que Levitación Psíquica y al igual que esta perderá los efectos si pierde la concentración. Puede reactivar esta habilidad empleando dos acciones."
+                    },
+                    {
+                        "name": "Telepatía",
+                        "type": "Pasiva",
+                        "skill": "telequinesia",
+                        "tags": "Mental",
+                        "description": "Puede transformar un hechizo Ilusorio de su elección en Fantasmal una vez adicional por ronda sin la necesidad de pagar chi o vigor."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
                 ]
             }
         ]

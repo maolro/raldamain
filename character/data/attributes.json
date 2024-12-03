@@ -305,7 +305,7 @@
       "skill": "ascendencia-infernal",
       "type": "Pasiva",
       "tags": "Innata",
-      "description": "Velocidad de vuelo 2 y Ventaja en tiros de Esquiva. Puede hacer que aparezcan o desaparezcan como acción bonus y desaparecen una ronda si pierde la concentración."
+      "description": "Velocidad de vuelo 2 y Ventaja en tiros de Esquiva. Puede hacer que aparezcan o desaparezcan como acción bonus y desaparecen una ronda si pierde la concentración. Se pueden escoger otras mejoras de fuerza similar si lo permite el DJ, las cuales serían similares a aquellas otorgadas por Rasgo Monstruoso."
     },
     "aliento-de-fuego": {
       "rank": 1,
@@ -1173,9 +1173,9 @@
       "skill": "telekinesia",
       "type": "Reaccion",
       "cost": "1 Chi",
-      "reach": "",
-      "duration": "",
-      "description": "1/Ronda, reduce el daño de un ataque a distancia por RANGOx3 o una criatura que haga un ataque cuerpo a cuerpo debe tirar Heroísmo o Atletismo o falla automáticamente"
+      "tags": "Telequinesia, Defensiva",
+      "uses": "1/Ronda",
+      "description": "Reduce el daño de un ataque a distancia por RANGOx3 o una criatura que haga un ataque cuerpo a cuerpo debe tener éxito en un tiro de Heroísmo o Atletismo contra +MOD o falla automáticamente su ataque."
     },
     "barrera-de-rayos": {
       "rank": 2,
@@ -3802,7 +3802,7 @@
       "skill": "ascendencia-de-fuego",
       "type": "Pasiva",
       "tags": "Innata",
-      "resisistances": ["Fuego"],
+      "resistances": ["Fuego"],
       "immunitites": ["Quemaduras Leves", "Calor Extremo"],
       "description": "Obtiene Resistencia al Fuego además de Inmunidad a <i>quemaduras leves</i> y a efectos ocasionados por calor extremo. Adicionalmente, los elementales de fuego no serán naturalmente hostiles hacia él."
     },
@@ -3953,7 +3953,7 @@
       "cost": "2 Acciones y 1 Chi",
       "reach": "Cono/esfera pequeña",
       "duration": "Instantáneo",
-      "description": "Inflige 2DD+STAT daño Cortante, Contundente o Perforante área. La zona afectada se convierte en terreno difícil"
+      "description": "Cono o esfera pequeña, +MOD para atacar, Inflige 2DD+STAT daño Cortante, Contundente o Perforante área. La zona afectada se convertirá en <i>terreno difícil</i>"
     },
     "gancho-perforante": {
       "rank": 2,
@@ -4963,7 +4963,8 @@
       "cost": "1 Acción",
       "reach": "Medio",
       "duration": "Instantáneo",
-      "description": "Tira Heroísmo o Acrobacias o empuja un paso y tropieza. Si choca contra un objeto sufre 1DD+STAT daño Contundente"
+      "tags": "Telequinesia, Maniobra",
+      "description": "Distancia media, un objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra +MOD o es empujado un paso y cae <i>tropezado</i>. Si choca contra un objeto sufrirá 1DD+STAT daño Contundente."
     },
     "lanzar-al-suelo": {
       "rank": 1,
@@ -5355,7 +5356,8 @@
       "cost": "1 Acción",
       "reach": "Medio",
       "duration": "Instantáneo",
-      "description": "Mueve un objeto en cualquier dirección o ataca con él, infligiendo 1DD+STAT daño Contundente, Perforante o Cortante"
+      "tags": "Telequinesia, Ataque, A Distancia, Físico",
+      "description": "Mueve un objeto en cualquier dirección o ataca a un objetivo a distancia media con él. Este ataque tiene modificador +MOD e inflige 1DD+STAT daño Contundente, Perforante o Cortante según el objeto empleado."
     },
     "manipular-hontos": {
       "rank": 1,
@@ -5619,7 +5621,7 @@
       "cost": "1 Vigor",
       "reach": "Adyacente",
       "duration": "Instantáneo",
-      "description": "1/Ronda, hace un ataque que inflige 1d4+STAT daño Perforante, saca de posición defensiva e inflige una herida leve"
+      "description": "1/Ronda, hace un ataque que inflige 1DD + STAT daño Perforante, saca de posición defensiva e inflige una herida leve"
     },
     "movilidad-de-combate": {
       "rank": 5,
@@ -6099,7 +6101,7 @@
       "skill": "armas-a-distancia",
       "type": "Reaccion",
       "duration": "A Distancia, Defensiva",
-      "description": "Tira para defenderse de un ataque a distancia"
+      "description": "+MOD para defenderse. Solo funciona contra ataques a distancia."
     },
     "parada-con-alabarda": {
       "rank": 1,
@@ -6107,7 +6109,7 @@
       "skill": "alabardas",
       "type": "Reaccion",
       "tags": "Alabarda, Defensiva",
-      "description": "Tira para detener un ataque cuerpo a cuerpo"
+      "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-con-arma-de-duelo": {
       "rank": 1,
@@ -6232,10 +6234,8 @@
       "name": "Parada Salvaje",
       "skill": "estilo-salvaje",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Tira para defenderse de ataques cuerpo a cuerpo"
+      "tags": "Marcial, Salvaje, Defensiva",
+      "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
     },
     "parada-sombria": {
       "rank": 1,
@@ -6506,9 +6506,7 @@
       "skill": "magia-de-almas",
       "type": "Accion",
       "cost": "1 Acción y 3 Chi",
-      "reach": "Adyacente",
-      "duration": "Concentración",
-      "description": "Tira Voluntad o Concentración o cae poseído por ti, permitiéndote controlar sus acciones como desees. Debes estar en Forma Astral o ser incorpóreo. El afectado repite el tiro cada ronda y te marchas si eres Exorcizado"
+      "description": "Un objetivo adyacente debe tener éxito en un tiro de Voluntad o Concentración contra +MOD o acaba poseído, permitiendo a este personaje controlar sus acciones como desee. Debe estar en Forma Astral o ser incorpóreo. El afectado repite el tiro cada ronda y se termina si este personaje es Exorcizado o pierde la concentración."
     },
     "pozo-de-gravedad": {
       "rank": 1,
@@ -8193,13 +8191,15 @@
       "cost": "2 Acciones y 3 Chi",
       "reach": "Radio medio",
       "duration": "Concentración",
-      "description": "Tiran CON o 2DD+STAT daño Necrótico y sangrado. Te rodeas de un velo con 2 x impacto PV (máx 32) que recupera 2 PV cada vez que impacte con un efecto de Sangre. Puede transferir tanto daño como desee al velo"
+      "tags": "Sangre, Aflicción, Área, Necrótica, Duradera",
+      "description": "Radio medio, Todos los objetivos deben tener éxito en un tiro de Salud contra +MOD o sufren 2DD+STAT daño Necrótico y <i>sangrado</i>. Te rodeas de un velo con 2 x impacto PV (máx 32) que recupera 2 PV cada vez que impacte con un efecto de Sangre. Puede transferir tanto daño como desee al velo. Este efecto permanecerá activo hasta que pierda la concentración."
     },
     "velocidad-superior": {
       "rank": 1,
       "name": "Velocidad Superior",
       "skill": "reflejos",
       "type": "Pasiva",
+      "tags": "Innata",
       "actions": 1,
       "description": "Aumenta su cantidad de acciones por 1 (ya incluido) y +RANGO a todos sus tiros de iniciativa"
     },

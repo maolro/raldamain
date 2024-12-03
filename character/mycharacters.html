@@ -100,7 +100,12 @@
 
                     // Get all user characters from localStorage
                     const userCharacters = JSON.parse(localStorage.getItem("userCharacters")) || {};
-                    this.characters = userCharacters[loggedInUser] || [];
+                    const characters =  userCharacters[loggedInUser] || [];
+                     // Sort tags alphabetically for each character
+                    characters.sort((a, b) => a.name.localeCompare(b.name));
+
+                    // Update the component's characters property
+                    this.characters = characters;
                 },
                 openCharacter(character) {
                     // Save the selected character in localStorage
@@ -139,7 +144,7 @@
                 }
             },
             template: `
-        <div style="nav-scroll">
+        <div class="nav-scroll">
           <div v-for="(character, index) in characters" class="character">
             <button type="button" class="btn btn-danger" @click="confirmDelete(index)">-</button>
             <div class="character-name">

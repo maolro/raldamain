@@ -11,6 +11,7 @@
         "daga": {"name": "Daga", "eqab": "daga"},
         "escudo": {"name": "Escudo", "eqab": "escudo,parada-con-escudo"},
         "espada-larga": {"name": "Espada Larga", "eqab": "espada-larga"},
+        "espada-ropera": {"name": "Espada Ropera", "eqab": "espada-ropera"},
         "garra": {"name": "Garra", "eqab": "garra"},
         "garrote": {"name": "Garrote", "eqab": "garrote"},
         "golpe-serpiente": {"name": "Golpe Serpiente", "eqab": "golpe-serpiente"},
