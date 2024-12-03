@@ -12,7 +12,7 @@ La criatura ha mejorado sus habilidades en el arte del asesinato y el combate co
 - **Mejoras de Rango:** Mejora su Rango y modificador en Armas Ligeras, Rastrear y Reflejos por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Parada con Armas:** Puede usar su tiro de Armas Ligeras para defenderse de ataques cuerpo a cuerpo.
 - **Golpe Penetrante:** Sus ataques con Armas Ligeras ignorarán la Defensa otorgada por Armaduras que tenga el objetivo. Esto funciona como si estuvieran afectados con la habilidad Golpe Penetrante. Si tiene también el arquetipo Arquero podrá aplicar las mejoras de Golpe Penetrante a sus ataques A Distancia.
-- **Habilidades Pasivas:** Recibe Velocidad Superior, Combate Furtivo y Esquiva Asombrosa como habilidades pasivas. Si ya tiene Esquiva Asombrosa puede sustituirla por Sexto Sentido.
+- **Habilidades Pasivas:** Recibe Velocidad Superior, Combate Furtivo y Esquiva Asombrosa como habilidades pasivas. Si ya tiene Esquiva Asombrosa puede sustituirla por Analizar Enemigo.
 - **Evasión:** Puede emplear la reacción Evasión una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Evasión que reciba por arquetipos diferentes.
 
 ## Asesino II (+2, requiere 3 mejoras)

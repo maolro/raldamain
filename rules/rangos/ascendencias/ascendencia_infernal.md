@@ -57,7 +57,7 @@ Aprendes dos hechizos de Rango II o menos relacionados con tu patrón infernal y
 
 *Innata, Pasiva*
 
-Manifiestas alas demoníacas semejantes a las de un murciélago para obtener la capacidad de volar. Las alas te otorgarán velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Puedes hacer que las alas aparezcan o desaparezcan como acción bonus y estas se desvanecerán durante una ronda al perder la concentración.
+Manifiestas alas demoníacas semejantes a las de un murciélago para obtener la capacidad de volar. Las alas te otorgarán velocidad de vuelo 2 además de Ventaja en todos tus tiros de Esquiva. Puedes hacer que las alas aparezcan o desaparezcan como acción bonus y estas se desvanecerán durante una ronda al perder la concentración. Es posible escoger otras mejoras distintas a las alas siempre y cuando sean permitidas por el DJ, las cuales deberían ser similares a aquellas otorgadas por la habilidad Mutación.
 
 ### Siervos del Contrato
 

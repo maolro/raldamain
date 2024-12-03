@@ -38,6 +38,14 @@
         "tags": "Físico, Ataque, Duelo", 
         "description": "Adyacente, +MOD para impactar, 1d8 + STAT daño Cortante."
     },
+    "espada-ropera": {
+        "name": "Espada Ropera",
+        "skill":"armas-de-duelo", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Duelo", 
+        "description": "Adyacente, +MOD para impactar, 1d8 + STAT daño Perforante."
+    },
     "escudo": {
         "name": "Escudo",
         "skill":"escudo", 

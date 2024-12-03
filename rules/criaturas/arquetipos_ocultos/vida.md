@@ -25,6 +25,16 @@ La criatura está hecha de pura energía luminosa, careciendo así de cuerpo fí
 
 ## Esencia de Vida II (+2, 3 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su CON, SAB y CAR por 1 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia de Vida y Ascendencia Celestial por 1.
+- **Hechizos:** Aprende el hechizo Sanación Superior, el cual puede emplear una vez por ronda sin la necesidad de pagar chi o vigor.
+- **Arma Solar:** Al entrar en combate activa automáticamente el hechizo Arma Solar, recibiendo así la capacidad de atacar con su arma a enemigos a distancia corta pagando una acción. Este efecto durará hasta que pierda la concentración y reactivarlo cuesta una acción.
+- **Telaraña de Vida:** Recibe Ventaja en todos sus tiros relacionados con Magia de Vida y puede detectar la posición de todos los seres vivos a distancia media. Sus hechizos de Sanación aumentan la Vitalidad sanada por 2 y recibirán alcance cercano. Estos modificadores no se acumulan con la habilidad Telaraña de Vida.
+- **Vínculo Vital:** Al entrar en el campo de batalla establece un vínculo vital con otra criatura de su elección, pudiendo así recibir la mitad de todo el daño que sufra. Esto funciona de la misma manera que el hechizo con el mismo nombre y al igual que este solo podrá activarse si ambas criaturas se encuentran a distancia media una de otra.
+- **Barrera Luminosa:** Una vez por ronda puede emplear el hechizo Barrera Luminosa de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
+
 ## Esencia de Vida III (+2, 5 mejoras)
+
+Espadas de Justicia, Transferencia Vital, Castigo Celestial, Luz Viviente
 
 ## Esencia de Vida IV (+2, 7 mejoras)

@@ -60,6 +60,75 @@
             }
         ]
     },
+    "akhasico": {
+        "name": "Akhásico",
+        "stat": "itl",
+        "modranks": [
+            "ascendencia-akhasica"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["sentido-magico"],
+                "abilities": [
+                    {
+                        "name": "Meditación Iluminada",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-akhasica",
+                        "description": "Obtiene Ventaja en todos sus tiros relacionados con la estadística de Inteligencia y puede defenderse de ataques sorpresa con normalidad. Estos efectos no se acumulan con Meditación Iluminada."
+                    },
+                    {
+                        "name": "Vínculo Akhásico",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-akhasica",
+                        "immunities": ["Ataques sorpresa"],
+                        "description": "Es Inmune a ataques sorpresa y puede repetir todos los unos y doses naturales que obtenga. Es también Inmune a efectos que le obliguen a repetir tiros. Si ya tiene la habilidad Premonición podrá repetir todos los tiros cuyo resultado natural sea menor que cinco."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "antimagico": {
         "name": "Antimágico",
         "stat": "itl",
@@ -225,6 +294,74 @@
             }
         ]
     },
+    "artista-marcial": {
+        "name": "Artista Marcial",
+        "stat": "str/dex",
+        "modranks": [
+            "estilo-dragon",
+            "reflejos"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["velocidad-superior","movimientos-sutiles","esquiva-asombrosa","secuencia-de-ataques","evasion","parada-marcial","arte-de-la-lucha"]
+            },
+            {
+                "attributes": ["esquiva-asombrosa","finta-engañosa","espadas-trabadas","ataque-torbellino","golpe-de-mango"],
+                "abilities": [
+                    {
+                        "name": "Instintos Superiores",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "reflejos",
+                        "description": "Puede repetir todos sus tiros defensivos y quedarse con el resultado que más le convenga. Esto no funcionará contra habilidades que no conozca."
+                    }
+                ]
+            },
+            {
+                "attributes": ["inescrutable","giro-defensivo","punto-ciego","estocada-poderosa","combinar-tecnicas-(duelo)","contrataque-(duelo)"],
+                "abilities": [
+                    {
+                        "name": "Cambio Repentino",
+                        "type": "Reaccion",
+                        "tags": "Innata",
+                        "skill": "rastrear",
+                        "uses": "1/Ronda",
+                        "description": "Sustituye un ataque por otro diferente que tenga el mismo coste en acciones. Esto forzará al enemigo a volver a defenderse y malgastará sus habilidades defensivas empleadas. El cambio debe realizarse tras hacer el tiro pero antes de provocar daño, funcionando así de la misma manera que la habilidad Cambio Repentino."
+                    },
+                    {
+                        "name": "Danza del Espadachín",
+                        "type": "Pasiva",
+                        "tags": "Innata, Duelo",
+                        "skill": "armas-de-duelo",
+                        "description": "Al entrar en combate recibe Ventaja en todos sus tiros relacionados con Armas de Duelo y puede entrar en <i>posición defensiva</i> una vez por ronda como acción bonus. Puede también emplear su arma de Duelo para detener ataques A Distancia que no sean excesivamente rápidos. Esta habilidad permanecerá activa hasta que pierda la concentración y recuperarla cuesta dos acciones."
+
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "asesino": {
         "name": "Asesino",
         "stat": "dex",
@@ -329,7 +466,7 @@
         ],
         "enchancements": [
             {
-                "attributes": ["velocidad-superior","frenesi-de-batalla","aspecto-primigenio","agilidad-animal","esquiva"],
+                "attributes": ["velocidad-superior","frenesi-de-batalla","aspecto-primigenio","agilidad-animal","esquiva","parada-salvaje"],
                 "abilities": [
                     {
                         "name": "Furia Constante",
@@ -560,34 +697,7 @@
                         "uses": "1/Ronda",
                         "cost": "1 Acción",
                         "skill": "estilo-salvaje",
-                        "description": "+MOD para atacar, adyacente, el objetivo sufre 16+DEX daño Perfornate y 1DD+RANGO daño Necrótico que reduce PV y Vitalidad máxima además de provocar <i>sangrado</i>."
-                    }
-                ]
-            },
-            {
-                "attributes": ["alas-del-dragon","resiliencia-draconica"],
-                "abilities": [
-                    {
-                        "name": "Poder Elemental",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "ascendencia-draconica",
-                        "description": "Provoca 1DD + RANGO daño adicional relacionado con el elemento de su elección con todos sus ataques físicos. Tiene también activa un aura relacionada con la habilidad Poder Elemental (Calor Extremo, Frío Extremo, Nube Corrosiva o Electricidad Estática)."
-                    },
-                    {
-                        "name": "Presencia Aterradora",
-                        "type": "Pasiva",
-                        "tags": "Innata, Miedo, Duradera",
-                        "skill": "ascendencia-draconica",
-                        "description": "Todas las criaturas a distancia media que puedan verle deberán tener éxito en un tiro de Voluntad o Intimidar frente a su modificador de Ascendencia Dracónica o aumentarán su nivel de <i>miedo</i> por un paso. Cada ronda todas las criaturas afectadas deberán repetir el tiro, aumentando de nuevo su nivel de <i>miedo</i> si fracasan y reduciéndolo por un paso si tienen éxito. Si una criatura llega a recuperarse del miedo o tiene éxito en el primer tiro se volverá inmune a esta habilidad durante el resto del combate."
-                    },
-                    {
-                        "name": "Tamaño Superior",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "ascendencia-draconica",
-                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
-                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
+                        "description": "+MOD para atacar, adyacente, el objetivo sufre 1d6 + DEX daño Perfornate y 1DD + RANGO daño Necrótico que reduce PV y Vitalidad máxima además de provocar <i>sangrado</i>."
                     }
                 ]
             },
@@ -595,26 +705,14 @@
                 "attributes": [],
                 "abilities": [
                     {
-                        "name": "Tamaño Superior",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "ascendencia-draconica",
-                        "resistances": ["Maniobras","Aturdimiento","Agarres"],
-                        "description": "Aumenta su tamaño por un paso, recibiendo así un dado de daño adicional en todos sus ataques físicos e incrementando su alcance por un paso. Recibe también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior."
-                    },
+                        
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
                     {
-                        "name": "Magia Dracónica",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "ascendencia-draconica",
-                        "description": "Todos sus hechizos del mismo elemento que el suyo reciben un dado de daño adicional y puede emplear su modificador de Ascendencia Dracónica para lanzarlos. También podrá emplear su estadística de CON o su Rango de Ascendencia Dracónica para determinar la fuerza de estos."
-                    },
-                    {
-                        "name": "Escamas Impenetrables",
-                        "type": "Pasiva",
-                        "tags": "Innata",
-                        "skill": "ascendencia-draconica",
-                        "description": "Su cuerpo está rodeado de escamas impenetrables que le otorgan RANGO <i>contadores de escudo</i>. Recuperará estos contadores al cabo de un día."
                     }
                 ]
             }
@@ -922,7 +1020,7 @@
         ],
         "enchancements": [
             {
-                "attributes": ["fuego-interior","vision-termica","llamarada","asalto-abrasador","aliento-de-fuego","parada-de-fuego"],
+                "attributes": ["fuego-interior","vision-termica","llamarada","asalto-abrasador","aliento-de-fuego","parada-de-fuego","muro-de-llamas"],
                 "abilities": [
                     {
                         "name": "Furia del Fuego",
@@ -1155,6 +1253,45 @@
             }
         ]
     },
+    "esqueleto": {
+        "name": "Esqueleto",
+        "stat": "cha",
+        "modranks": [
+            "fortitud", "estilo-salvaje"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 2},
+            {"stat": "dex", "rank": 1, "boost": 2}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["parada-salvaje"],
+                "abilities": [
+                    {
+                        "name": "No-Muerto",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "immunities": ["Mentales","Miedo","Aflicciones","Necróticos"],
+                        "vulnerabilities": ["Radiantes"],
+                        "description": "Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido y tampoco le afectarán las *heridas permanentes* que no sean provocadas por daño Contundente."
+                    },
+                    {
+                        "name": "Cuerpo Óseo",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "hp": 2,
+                        "def": 4,
+                        "skill": "fortitud",
+                        "resistances": ["Eléctrico","Frío","Fuego"],
+                        "description": "Aumenta el daño de sus ataques naturales por un paso y recibe Resistencia a efectos de las categorías Eléctrico, Frío y Fuego."
+                    }
+                ]
+            }
+        ]
+    },
     "evocador": {
         "name": "Evocador",
         "stat": "itl",
@@ -1319,6 +1456,50 @@
                         "vt": 4,
                         "def": 2,
                         "description": "El alcance de sus armas aumenta por un paso y recibe un dado de daño adicional con estas debido al tamaño superior que tienen. Tiene también Resistencia a Maniobras, Aturdimiento y Agarres provocados por criaturas de tamaño inferior a costa de tener Desventaja en todos sus tiros de Esquiva."
+                    }
+                ]
+            }
+        ]
+    },
+    "guardian": {
+        "name": "Guardián",
+        "stat": "con",
+        "modranks": [],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Defensa Colectiva",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-invocacion",
+                        "actions": 1,
+                        "description": "Cuando esta criatura entre en <i>posición defensiva<(i> su invocador también lo hará de manera automática. Lo mismo ocurre en sentido inverso. Ninguno de los dos puede ser sorprendido salvo que ambos lo estén."
+                    },
+                    {
+                        "name": "Compartir Habilidades",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-invocacion",
+                        "description": "Si el invocador tiene Rangos compartidos con esta criatura puede emplear su modificador para todos sus tiros si este es más alto. Esto funcionará tanto para rangos físicos como mágicos."
+                    },
+                    {
+                        "name": "Asalto Coordinado",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-invocacion",
+                        "description": "Todas las habilidades de Presencia que use el invocador en esta criatura le costarán una acción bonus. Deberá seguir pagando el coste pertinente en vigor."
                     }
                 ]
             }
@@ -1596,7 +1777,7 @@
                         "tags": "Divina, Mejora",
                         "skill": "guerrero-divino",
                         "uses": "1/Ataque",
-                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón abisal. Esto funciona de la misma manera que el hechizo Azote Divino."
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón infernal. Esto funciona de la misma manera que el hechizo Azote Divino."
                     },
                     {
                         "name": "Arma Profana",
@@ -1995,6 +2176,216 @@
                         "type": "Pasiva",
                         "skill": "armas-pesadas",
                         "description": "Al entrar en combate recibe RANGO <i>contadores de escudo</i>. Dichos contadores podrán detener ataques de la misma manera que la habilidad Guardia Fluida y reponerlos cuesta dos acciones."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "mago-infernal": {
+        "name": "Mago Infernal",
+        "stat": "itl/cha",
+        "modranks": [
+            "magia-divina",
+            "ascendencia-infernal"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"},
+            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": "magia-divina", "mod": "magia-divina"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["resistencias-infernales","vision-infernal","manifestacion-divina"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Arma Profana",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-infernal",
+                        "description": "Cada vez que hiera a un enemigo con un ataque de cualquier tipo puede provocarle una Herida Infernal, reduciendo así sus PV y Vitalidad máximos por un valor igual al daño provocado además de una <i>herida permanente leve</i>. Se elimina como si fuera una Maldición de Rango II."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alas-demoniacas","presencia-divina"],
+                "abilities": [
+                    {
+                        "name": "Protección Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Se encuentra siempre en <i>posición defensiva</i> y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina."
+                    },
+                    {
+                        "name": "Presencia Majestuosa",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con su estadística de Carisma y sus hechizos Mentales pueden ignorar las Resistencias que tengan sus objetivos. Esta habilidad funciona de la misma manera que Presencia Majestuosa y no se acumula con ella."
+                    }
+                ]
+            },
+            {
+                "attributes": ["corrupcion-demoniaca"],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "plaga": {
+        "name": "Plaga",
+        "stat": "cha/wis",
+        "modranks": [
+            "ascendencia-insectoide"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": null},
+            {"stat": "con", "rank": 1, "boost": null}
+        ],
+        "enchancements": [
+            {
+                "abilities": [
+                    {
+                        "name": "Múltiple",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-insectoide",
+                        "immunities": ["Efectos de un único objetivo"],
+                        "vulnerabilities": ["Área"],
+                        "description": "Obtiene Inmunidad a todos los efectos dirigidos a un único objetivo sin importar su fuerza. No obstante, obtendrá Vulnerabilidad a ataques de Área y al daño provocado por estos."
+                    },
+                    {
+                        "name": "Forma de Plaga",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-insectoide",
+                        "description": "Ocupa un espacio del tamaño de una esfera pequeña y puede pasar a través de las ranuras pequeñas. No puede ser detectada por ningún sentido salvo la vista. Su forma de plaga le permite pasar hasta por las ranuras más pequeñas."
+                    },
+                    {
+                        "name": "Ataques Colectivos",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-insectoide",
+                        "description": "Al tratarse de una nube de criaturas no puede emplear armas o maniobras. Sus ataques físicos solo podrán afectar a criaturas que se encuentren en una posición que ocupe y estas solo podrán defenderse con Parada mágica o tirando CON frente a su modificador. Dichos ataques contarán como si fueran de Área y provocan la mitad de daño en caso de éxito."
+                    },
+                    {
+                        "name": "Fusión con Plagas",
+                        "type": "Accion",
+                        "tags": "Innata",
+                        "cost": "1 Acción",
+                        "skill": "ascendencia-insectoide",
+                        "description": "Se fusiona con otra plaga adyacente para combinar sus valores de Vitalidad y PV en uno solo además de aumentar su tamaño por un paso hasta un máximo de una esfera grande. Todos sus ataques físicos incrementarán su modificador por 2 y recibirán un dado de daño adicional. Esto incrementará también el nivel efectivo de la plaga combinada por 2 para los propósitos de controlar invocaciones."
+                    }
+                ]
+            }
+        ]
+    },
+    "psiquico": {
+        "name": "Psíquico",
+        "stat": "int/cha",
+        "modranks": [
+            "telequinesia",
+            "magia-mental",
+            "mente-desencadenada"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["asalto-psiquico","arrastre-telequinetico","manipulacion-telequinetica","lanzamiento-humano","furia-telequinetica","parada-telequinetica"],
+                "abilities": [
+                    {
+                        "name": "Escudo Mental",
+                        "type": "Pasiva",
+                        "skill": "magia-mental",
+                        "tags": "Mental",
+                        "description": "No puede ser detectado pasivamente con Leer Pensamientos y puede usar su tiro de Magia Mental para defenderse de efectos Mentales ajenos."
+                    },
+                    {
+                        "name": "Leer Pensamientos",
+                        "type": "Pasiva",
+                        "skill": "magia-mental",
+                        "tags": "Mental",
+                        "description": "Tiene siempre activo el hechizo Leer Pensamientos, permitiéndole detectar todas las criaturas pensantes a distancia media y leer sus pensamientos superficiales. Defenderse de este efecto requiere un tiro exitoso de Concentración o Voluntad contra +MOD"
+                    },
+                    {
+                        "name": "Mente Desencadenada",
+                        "type": "Pasiva",
+                        "skill": "mente-desencadenada",
+                        "tags": "Innata",
+                        "description": "Está siempre bajo los efectos de Mente Desencadenada, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas mentales."
+                    }
+                ]
+            },
+            {
+                "attributes": ["barrera-de-fuerza-defensiva","agarre-telequinetico","sobrecarga-mental","sanacion-eterea","sanacion-mental","concentracion-superior"],
+                "abilities": [
+                    {
+                        "name": "Levitación Psíquica",
+                        "type": "Pasiva",
+                        "skill": "telequinesia",
+                        "tags": "Telequinesia, Duradera",
+                        "description": "Obtiene velocidad de vuelo 1 y Ventaja en todos sus tiros de Esquiva. Esto funciona de la misma manera que Levitación Psíquica y al igual que esta perderá los efectos si pierde la concentración. Puede reactivar esta habilidad empleando dos acciones."
+                    },
+                    {
+                        "name": "Telepatía",
+                        "type": "Pasiva",
+                        "skill": "telequinesia",
+                        "tags": "Mental",
+                        "description": "Puede transformar un hechizo Ilusorio de su elección en Fantasmal una vez adicional por ronda sin la necesidad de pagar chi o vigor."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {
                     }
                 ]
             },

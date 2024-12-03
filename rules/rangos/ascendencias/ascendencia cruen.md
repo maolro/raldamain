@@ -44,9 +44,9 @@ En respuesta a la creciente corrupción de tu ser, tu sangre ha despertado un le
 
 *Innata, Sanación*
 
-A medida que la corrupción avanza el hambre de sus cuerpos clama por mas alimentos, e incluso en el fragor de la batalla presionará la mente con tal de conseguir tan solo un momento de respiro de su constante inanición. Sin embargo esta enorme gula no permanece como un sinsentido, e incluso en los momentos mas desesperados se le puede encontrar un uso. De esta manera al devorar un cadáver empleando una acción podrás sanarte Rango+1 vitalidad, además de reducir el nivel de una herida permanente por un paso. En el caso de tomarte tu tiempo para devorar el cadáver por completo durante un descanso corto en su lugar te recuperarás por completo de sus heridas. 
+A medida que la corrupción avanza el hambre de sus cuerpos clama por mas alimentos, e incluso en el fragor de la batalla presionará la mente con tal de conseguir tan solo un momento de respiro de su constante inanición. Sin embargo esta enorme gula no permanece como un sinsentido, e incluso en los momentos mas desesperados se le puede encontrar un uso. De esta manera al devorar un cadáver empleando una acción podrás sanarte Rango + 1 vitalidad, además de reducir el nivel de una herida permanente por un paso. En el caso de tomarte tu tiempo para devorar el cadáver por completo durante un descanso corto en su lugar te recuperarás por completo de sus heridas. 
 
-Pese a eso no solo los humanos píos son una opción, y si la tentación y la curiosidad te pueden también podrías intentar consumir el cadáver de un congénere, si estás dispuesto a pagar el precio por sucumbir a tu hambre, claro. De esta manera al hacerlo reducirás tu cordura por un valor igual a su nivel de ascendencia+1, pero obtendrás la capacidad de emplear sus habilidades de rango igual al tuyo+1 durante un día. 
+Pese a eso no solo los humanos píos son una opción, y si la tentación y la curiosidad te pueden también podrías intentar consumir el cadáver de un congénere, si estás dispuesto a pagar el precio por sucumbir a tu hambre, claro. De esta manera al hacerlo reducirás tu cordura por un valor igual a su nivel de ascendencia + 1, pero obtendrás la capacidad de emplear sus habilidades de rango igual al tuyo + 1 durante un día. 
 
 ### Peso de cadáver
 
@@ -60,7 +60,7 @@ Los humanos no son buenos deshaciéndose de lo que les estorba y les sobra, much
 
 *Innata, Pasiva*
 
-La creciente maldición en tu cuerpo ha comenzado a manifestarse en el exterior de mas maneras que la meramente física, permitiéndole obtener sustento de tu entorno con tal de sostener tu cuerpo durante mas tiempo. De esta manera cada vez que sufras daño necrótico en su lugar te sanarás vitalidad, además de que obtendrás regeneración igual a tu rango+1 al encontrarte en lugares imbuidos de fuerte energía negativa. Sin embargo te volverás aún mas vulnerable al daño radiante, provocando así que este daño no pueda sanarse y que en el caso de ser herido por él tu regeneración se anule durante una ronda. 
+La creciente maldición en tu cuerpo ha comenzado a manifestarse en el exterior de mas maneras que la meramente física, permitiéndole obtener sustento de tu entorno con tal de sostener tu cuerpo durante mas tiempo. De esta manera cada vez que sufras daño necrótico en su lugar te sanarás vitalidad, además de que obtendrás regeneración igual a tu rango + 1 al encontrarte en lugares imbuidos de fuerte energía negativa. Sin embargo te volverás aún mas vulnerable al daño radiante, provocando así que este daño no pueda sanarse y que en el caso de ser herido por él tu regeneración se anule durante una ronda. 
 
 ### Cruen Longevo
 

@@ -80,7 +80,7 @@ Un Vínculo Vital durará hasta que tu aliado vinculado elija cancelarlo o pierd
 
 **Empoderar** (1 chi): Lanzas Toque Sanador en tu aliado vinculado como acción bonus. Solo puedes empoderar de esta manera una vez por ronda.
 
-### Barrera luminosa
+### Barrera Luminosa
 
 *Vida, Defensiva, Duradera, Radiante* 
 
@@ -124,7 +124,7 @@ Una vez creada el arma solar permanecerá a tu lado, lo que te permite emplear u
 
 Todos tus hechizos de Vida sustituyen sus dados de daño por d8.
 
-### Luz viviente
+### Luz Viviente
 
 *Vida, Defensiva, Duradera*
 
@@ -136,7 +136,7 @@ Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehum
 
 **Empoderar** (1 chi): Tienes éxito automático en una tirada de defensa para defenderte de un efecto que te tenga explícitamente como objetivo y te mueves un paso en cualquier dirección. Puedes empoderar de esta manera cualquier cantidad de veces por turno.
 
-### Sanación superior
+### Sanación Superior
 
 *Vida, Curación, Toque*
 
@@ -150,7 +150,7 @@ Infundes un poderoso flujo de energía vital en tu toque para sanar las heridas 
 
 **Empodera** (1 chi): Puedes lanzar este hechizo como una acción bonus en ti mismo.
 
-### Telaraña de vida
+### Telaraña de Vida
 
 *Vida, Curación, Ambiental*
 

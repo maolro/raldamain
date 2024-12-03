@@ -32,7 +32,7 @@ Tienes la voluntad suficiente para que el fuego se doblegue a ti. Eres capaz de 
 
 Incrementa tu estadística de DES y su limitador por 1.
 
-### Furia del fuego
+### Furia del Fuego
 
 *Innata, Mejora*
 
@@ -44,7 +44,7 @@ Refuerzas tus ataques con el poder del fuego para que hagan arder a tus enemigos
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. En el caso que infundas un ataque  con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque de esta manera.
 
-### Visión térmica
+### Visión Térmica
 
 *Innata, Pasiva*
 
@@ -54,7 +54,7 @@ Desarrollas un sentido especial que te permite percibir el calor a tu alrededor.
 
 Eres capaz de emplear los hechizos Muro de llamas y Bola de fuego empleando vigor en lugar de chi.
 
-### Aura abrasadora
+### Aura Abrasadora
 
 *Innata, Fuego, Duradera*
 
@@ -84,7 +84,7 @@ Empleas el fuego para propulsarte por los cielos a gran velocidad. Mientras esta
 
 Incrementa tu estadística de CAR y su limitador por 1.
 
-### Renacer del fénix
+### Renacer del Fénix
 
 *Innata, Pasiva*
 
@@ -92,7 +92,7 @@ Eres capaz de emplear el poder del fuego para sanar tus heridas, renaciendo desd
 
 **Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad si te encuentras en *posición defensiva*
 
-### Asalto flamígero
+### Asalto Flamígero
 
 *Innata, Fuego, Mejora*
 
@@ -110,13 +110,13 @@ Dicho daño se acumula con el otorgado por Ataques Infundidos y contará como un
 
 Eres capaz de emplear los hechizos Erupción abrasadora y Maestro de las Llamas empleando vigor en lugar de chi.
 
-### Elemento del poder
+### Elemento del Poder
 
 *Innata, Pasiva*
 
 Empleas tu chi interior como fuente de energía para tus habilidades mágicas, sacrificando tu cuerpo con el fin de conseguir la victoria. Hasta tres veces por ronda puedes recuperar un punto de chi o vigor si escoges sufrir una *herida permanente leve* al inicio de tu siguiente turno. Las *heridas permanentes* recibidas de esta manera no pueden ser sanadas salvo por tu habilidad Renacer del Fénix.
 
-### Llama viviente
+### Llama Viviente
 
 *Innata, Mejora, Duradera*
 
@@ -134,7 +134,7 @@ Este hechizo permanecerá activo hasta que pierdas la concentración y solo pued
 
 Incrementa tu estadística de CON y su limitador por 1.
 
-### Forma elemental
+### Forma Elemental
 
 *Innata, Mejora* 
 

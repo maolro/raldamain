@@ -86,7 +86,7 @@ La razón te permite ver más allá del mundo sensible, percibiendo el mundo com
 
 Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede reducirsi intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres puede ser inconcebible para mentes humanas.
 
-### Fortaleza del pensamiento
+### Fortaleza del Pensamiento
 
 *Innata, Duradera, Defensiva, Mental*
 
@@ -102,13 +102,13 @@ Dado que la resistencia de esta barrera depende de tu fuerza mental puedes empuj
 
 Aprendes dos hechizos Arcanos o Mentales adicionales de Rango III o menos, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Palacio de la mente
+### Palacio de la Mente
 
 *Innata, Pasiva, Mental*
 
 Eres capaz de entrar en un demiplano sustentado únicamente por el poder de tu mente al meditar. Dicho demiplano tendrá el aspecto que desees y es impenetrable por intrusiones psíquicas. Cada minuto que pases en tu palacio mental contará como un segundo en el mundo real, lo cual te permite entrar en esa dimensión para realizar acciones mentales de larga duración en un instante. Abandonarás el palacio mental en el momento que dejes de meditar o sufras un efecto Mental.
 
-### Mente iluminada
+### Mente Iluminada
 
 *Innata, Pasiva*
 
@@ -118,7 +118,7 @@ Tu mente ha alcanzado el peldaño más alto del conocimiento. Recibes Inmunidad 
 
 Incrementa tu estadística de CAR y su limitador por 1.
 
-### Árbitro del destino
+### Árbitro del Destino
 
 *Innata, Mejora*
 
@@ -126,7 +126,7 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 **Duración:** 6 rondas
 
-Adoptar la forma de un avatar del destino, un enviado de la mismísimas memoria Akhashika, con tal de reestablecer el orden de las cosas en el mundo. De esta forma recibirás 40 vitalidad temporal, además de grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin vitalidad no podrá volver a activarse hasta que hayan pasado 6 rondas desde el momento en el que la habilidad se activó en primer lugar. Los demás beneficios de Árbitro del destino serían los siguientes:
+Adoptar la forma de un avatar del destino, un enviado de la mismísimas memoria Akhásica, con tal de reestablecer el orden de las cosas en el mundo. De esta forma recibirás 40 vitalidad temporal, además de grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin vitalidad no podrá volver a activarse hasta que hayan pasado 6 rondas desde el momento en el que la habilidad se activó en primer lugar. Los demás beneficios de Árbitro del destino serían los siguientes:
 
 + Tu Inteligencia, Sabiduría y Carisma pasan a ser 12, mientras que tu defensa pasará a ser 20. 
 + Activas automáticamente los beneficios de *Fortaleza del pensamiento*, además de recibir ventaja en todos tus tiros que involucren estadísticas mentales y de aumentar el daño de todos tus hechizos arcanos por un dado. 
