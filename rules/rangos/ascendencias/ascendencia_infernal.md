@@ -103,7 +103,7 @@ Aprendes dos hechizos de Rango III o menos relacionados con tu patrón infernal 
 
 A través de un siniestro ritual corrompes tu alma para adoptar las características de un demonio. Obtienes Resistencia a efectos Arcanos y Divinos además de Resistencia superior a efectos Mentales, Aflicciones, Fuego, Hielo y Miedo. Eres también capaz de comunicarte con criaturas infernales de todo tipo y las de menor nivel te obedecerán sin rechistar. 
 
-**Puertas del Infierno:**
+### Puertas del Infierno
 
 *Innata, Divina, Ambiental, Espacial*
 

@@ -42,4 +42,4 @@ Este arquetipo representa a un enemigo veterano y altamente experimentado en el 
 
 ## Embaucador IV (+2, requiere 7 mejoras)
 
-Espejismo Arcano, Monstruo Ilusorio, Muerte Fantasmal, Capa de Ilusiones, Mundo de Espejos, Esclavizar, Mente en
+Espejismo Arcano, Monstruo Ilusorio, Muerte Fantasmal, Capa de Ilusiones, Mundo de Espejos, Esclavizar, Mente en Blanco
