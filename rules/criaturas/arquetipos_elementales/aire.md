@@ -23,6 +23,7 @@ La criatura está compuesta de aire viviente, careciendo así de un cuerpo físi
 - **Hechizos:** Aprende los hechizos Vendaval, Tajo de los Vientos y Viento Furibundo. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada de Aire:** Puede usar su tiro de Magia de Aire para defenderse de ataques cuerpo a cuerpo y a distancia.
 - **Infusión Tormentosa:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Aire que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda.
+- **Muro de Vientos:** Una vez por ronda puede emplear el hechizo Muro de Vientos de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
 
 ## Esencia de Aire II (+2, 3 mejoras)
 

@@ -30,3 +30,4 @@ title: Mago Infernal
 Castigo Divino, Llamar a los Dioses, 3 hechizos Rango III, Cadenas del Contrato, Corrupción Demoníaca
 
 ## Mago Infernal IV (+2, 7 mejoras)
+
