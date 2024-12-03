@@ -175,7 +175,7 @@ new Vue({
             let midSect = () => {
                 let ms = [];
                 if (this.talstring)
-                    ms.push(`**Talentos:** ${this.talstring}"`);
+                    ms.push(`**Talentos:** ${this.talstring}`);
                 if (this.rkString)
                     ms.push(`**Rangos:** ${this.rkString}`);
                 if (this.arcString)
@@ -198,6 +198,7 @@ new Vue({
 **FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
 ${midSect()}
+**Acciones:** ${this.actions}
 ****\n
 ${toMd(this.atbCatString("passive"))}
 ****\n
