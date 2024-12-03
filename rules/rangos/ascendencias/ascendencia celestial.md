@@ -76,7 +76,7 @@ Invocas a una criatura celestial para que te asista en el campo de batalla, prot
 
 **Duración:** Concentración
 
-Liberas la energía luminosa de tu interior en la forma de un aura de luz intensa. Mientras esta habilidad permanezca activa estarás rodeado de un aura luminosa que te otorga Ventaja en todos tus tiros relacionados con hechizos de magia de Vida o armas de cualquier tipo que se encuentren infundidas por la habilidad Poder . El aura durará hasta que pierdas la concentración o sea disipada por un efecto de magnitud similar.
+Liberas la energía luminosa de tu interior en la forma de un aura de luz intensa. Mientras esta habilidad permanezca activa estarás rodeado de un aura luminosa que te otorga Ventaja en todos tus tiros relacionados con hechizos de magia de Vida o armas de cualquier tipo que se encuentren infundidas por la habilidad Arma Angelical. El aura durará hasta que pierdas la concentración o sea disipada por un efecto de magnitud similar.
 
 La intensa luz generada por el aura protegerá a los que permanezcan en ella de determinados ataques, otorgando así Desventaja a todos los ataques a Distancia hechos contra criaturas dentro de ella. Además, las criaturas en el aura recibirán Resistencia a efectos Sombríos de todo tipo. Los bonificadores otorgados por esta habilidad no se acumulan con aquellos de Telaraña de vida.
 

@@ -132,7 +132,7 @@ Mientras mantengas concentración en el látigo puedes emplearlo también para a
 
 Tus hechizos de Fuego convierten sus dados de daño a d8 y los de Rango I reducen su coste en acciones por 1 (mínimo 1). 
 
-### Erupción abrasadora
+### Erupción Abrasadora
 
 *Fuego, Ataque, Área*
 
@@ -148,7 +148,7 @@ Canalizas tu fuego interior para formar una devastadora explosión ígnea alrede
 
 **Empoderar** (1 chi): Empleas este hechizo como reacción al ser impactado por un ataque enemigo.
 
-### Maestro de las llamas
+### Maestro de las Llamas
 
 *Fuego, Ambiental*
 
@@ -166,7 +166,7 @@ Si escoges fortalecer las llamas provocarás ahí el mismo efecto que Muro de Ll
 
 **Empoderar** (1 chi): Reduce el coste del siguiente hechizo de magia de fuego que lances por una acción (mínimo 0). No puedes empoderar el mismo hechizo más de una vez.
 
-### Invocar elemental de fuego
+### Invocar Elemental de Fuego
 
 *Fuego, Invocación*
 
@@ -198,7 +198,7 @@ Mientras este hechizo permanezca activo puedes emplear el fuego que te rodea par
 
 **Empoderar** (1 chi): Recuperas un *contador de escudo* adicional en tu turno.
 
-### Torbellino de fuego
+### Torbellino de Fuego
 
 *Fuego, Ataque, Área, Duradero*
 
@@ -240,7 +240,7 @@ Haz un ataque de Magia de Fuego contra todas las criaturas a distancia corta de 
 
 Tus hechizos de Fuego convierten sus dados de daño a d10 y los de Rango III reducen su coste en acciones por 1 (mínimo 1). 
 
-### Lluvia de brasas
+### Lluvia de Brasas
 
 *Fuego, Ataque, Área*
 
@@ -260,7 +260,7 @@ En lugar de atacar de inmediato puedes retrasar tu ataque, manteniendo cualquier
 
 **Empoderar** (1 chi): Creas una bola de fuego adicional con este hechizo. No puedes crear más de tres bolas de fuego de esta manera.
 
-### Nube incendiaria
+### Nube Incendiaria
 
 *Fuego, Gaseosa, Duradera, Aflicción*
 
@@ -304,7 +304,7 @@ Eres capaz de generar plasma de manera sostenida empleando tu fuerza interior. S
 
 Tus hechizos de Fuego de Rango IV reducen su coste en acciones por 1 (mínimo 1) además que todos ellos tratarán la resistencia al Fuego que tenga tu objetivo como si fuera un paso inferior.
 
-### Infierno abrasador
+### Infierno Abrasador
 
 *Fuego, Ambiental*
 

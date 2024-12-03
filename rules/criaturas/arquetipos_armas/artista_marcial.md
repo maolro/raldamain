@@ -8,11 +8,12 @@ La criatura se ha especializado en combatir empleando las artes marciales, entre
 
 ## Artista Marcial I (+2)
 
-- **Aumentos Estadísticos:** Incrementa su DES, CON y SAB por 1 junto a sus limitadores.
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en un estilo de Artes Marciales y Reflejos por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Recibe Secuencia de Ataques, Movimientos Sutiles, Velocidad Superior y Esquiva Asombrosa como habilidades pasivas. Si ya tiene Esquiva Asombrosa puede sustituirla por Sexto Sentido.
 - **Arte de la Lucha:** Al impactar a un enemigo con un ataque de artes marciales puede provocarle un efecto de la habilidad Arte de la Lucha. No podrá emplear el mismo efecto más de una vez por ronda.
 - **Parada Marcial:** Puede usar su tiro con una rama de Artes Marciales de su elección para defenderse de ataques cuerpo a cuerpo.
+- **Evasión:** Puede emplear la reacción Evasión una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Evasión que reciba por arquetipos diferentes.
 
 ## Artista Marcial II (+2, 3 mejoras)
 

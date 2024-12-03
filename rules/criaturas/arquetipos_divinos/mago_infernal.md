@@ -27,6 +27,12 @@ title: Mago Infernal
 
 ## Mago Infernal III (+2, 5 mejoras)
 
-Castigo Divino, Llamar a los Dioses, 3 hechizos Rango III, Cadenas del Contrato, Corrupción Demoníaca
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 1. 
+- **Habilidades Pasivas:** Obtiene la habilidad pasiva Corrupción Demoníaca. 
+- **Hechizos:** Aprende el hechizo Castigo Divino y otros tres hechizos de Rango III relacionados con su patrón infernal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Cadenas del Contrato:** Al entrar en combate establece un vínculo vital con dos aliados de su elección. Cada vez que sufra daño puede transferir cualquier cantidad de daño recibido a un aliado vinculado siempre y cuando se encuentre a distancia media. Funciona de la misma manera que la habilidad Cadenas del Contrato.
+- **Llamar a los Dioses:** Al iniciar el combate puede activar un efecto Ambiental a su alrededor de Rango III o menos relacionado con su patrón infernal. Algunos ejemplos son Controlar los Vientos, Animar plantas, Aura de vida o Aura de Muerte. No necesitará mantener la concentración para que permanezca activo y puede ser contrarrestado de igual manera.
 
 ## Mago Infernal IV (+2, 7 mejoras)
+
