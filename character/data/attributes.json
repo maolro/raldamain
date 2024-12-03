@@ -304,9 +304,7 @@
       "name": "Alas Demoníacas",
       "skill": "ascendencia-infernal",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Innata",
       "description": "Velocidad de vuelo 2 y Ventaja en tiros de Esquiva. Puede hacer que aparezcan o desaparezcan como acción bonus y desaparecen una ronda si pierde la concentración."
     },
     "aliento-de-fuego": {
@@ -772,7 +770,7 @@
       "type": "Accion",
       "cost": "1 Acción",
       "tags": "Fuego, Ataque",
-      "description": "+MOD para atacar, Adyacente, Inflige 1DD+RANGO daño Fuego y hace que objetos inflamables salten en llamas. Puede emplear una acción para hacer un segundo ataque con +1 modificador y daño contra el mismo objetivo, quien mantendrá su resultado defensivo contra él.",
+      "description": "+MOD para atacar, Adyacente, Inflige 1DD+ RANGO daño Fuego y hace que objetos inflamables salten en llamas. Puede emplear una acción para hacer un segundo ataque con +1 modificador y daño contra el mismo objetivo, quien mantendrá su resultado defensivo contra él.",
       "empoderar": "(1 chi) Aumenta el alcance de todos los ataques hechos con este hechizo a cercano durante una ronda."
     },
     "asalto-coordinado": {
@@ -2966,9 +2964,7 @@
       "skill": "magia-protectora",
       "type": "Accion",
       "cost": "1 Acción y 1 Chi",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Tira magia Arcana o pierde de inmediato un hechizo Arcano que tenga activo"
+      "description": "Distancia media, el objetivo tira magia Arcana contra +MOD o pierde de inmediato un hechizo Arcano Duradero que tenga activo. Si no es el lanzador deberá tirar contra el modificador base que tenga ese mismo."
     },
     "empuje-todopoderoso": {
       "rank": 5,
@@ -5170,7 +5166,7 @@
       "type": "Accion",
       "cost": "1 Acción",
       "tags": "Fuego, Ataque",
-      "description": "+MOD para atacar, Distancia media, Inflige 1DD+RANGO daño Fuego. Si impacta a un objeto incendiario salta en llamas.",
+      "description": "+MOD para atacar, Distancia media, Inflige 1DD+ RANGO daño Fuego. Si impacta a un objeto incendiario salta en llamas.",
       "empower": "(1 chi): Ataca a un objetivo adicional a distancia media."
     },
     "lluvia-acida": {
@@ -6569,9 +6565,7 @@
       "skill": "guerrero-divino",
       "type": "Accion",
       "cost": "2 Acciones y 2 Chi o Vigor",
-      "reach": "Radio Medio",
-      "duration": "Concentración",
-      "description": "Tiro Voluntad o aumenta su nivel de miedo por un paso, repite cada ronda si tienen por lo menos un nivel de miedo. Los aliados reciben Resistencia al Miedo y efectos Mentales"
+      "description": "Todas las criaturas a distancia media deben tener éxito en un tiro de Voluntad contra +MOD o aumentan su nivel de miedo por un paso. Estas deberán repetir el tiro cada ronda si tienen por lo menos un nivel de miedo. Los aliados reciben Resistencia al Miedo y efectos Mentales. Este efecto permanece activo hasta que pierda la concentración."
     },
     "presencia-majestuosa": {
       "rank": 4,

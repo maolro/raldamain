@@ -79,6 +79,19 @@
             }
         ]
     },
+    "no-muerto":{
+        "name": "No-Muerto",
+        "abilities": [
+            {
+                "name": "No-Muerto",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "immunities": ["Aflicciones","Mentales","Miedo","Necróticos"],
+                "vulnerabilities": ["Radiantes"],
+                "description": "Es un muerto viviente que no necesita comer, dormir o respirar. Tiene Inmunidad a Aflicciones, efectos Mentales, Necróticos y de Miedo a costa de Vulnerabilidad a efectos Radiantes."
+            }
+        ]
+    },
     "kitsune":{
         "name": "Kitsune",
         "stats": [
