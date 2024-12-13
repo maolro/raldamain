@@ -40,13 +40,13 @@ Incrementa tu CON por 1.
 
 Has desarrollado un sentido especial que te permite detectar las vibraciones a tu alrededor. Recibes vista a ciegas en un radio medio, permitiéndote detectar la posición de todas las criaturas que estén en contacto con la tierra. Dada tu capacidad de predecir vibraciones obtienes también Ventaja en todos tus tiros de Averiguar intenciones hechos contra criaturas en contacto con la tierra además que no puedes ser sorprendido.
 
-### Puños de tierra
+### Puños de Tierra
 
 *Tierra, Mejora*
 
 **Coste:** 1 chi o vigor
 
-**Duración:** Una r
+**Duración:** Una ronda
 
 Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su potencia. La siguiente vez que impactes con un ataque físico esta ronda puedes emplear un hechizo de Tierra, Naturaleza o Metal que conozcas como acción bonus contra ese mismo objetivo. Los ataques infundidos de esta manera pueden usar tu bonificador de la magia asociada en lugar del que emplearías normalmente en tu tiro de ataque.
 
@@ -54,7 +54,7 @@ Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su poten
 
 Eres capaz de emplear los hechizos Muro de piedra y Tierra viva empleando vigor en lugar de chi.
 
-### Armadura de piedra
+### Armadura de Piedra
 
 *Innata, Duradera*
 
@@ -66,7 +66,7 @@ Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia fí
 
 **Empoderar** (1 chi o vigor): Recuperas toda tu Vitalidad temporal. Solo puedes empoderar así si te queda por lo menos un punto de Vitalidad o te encuentras en *posición defensiva*. 
 
-### Ola de tierra
+### Ola de Tierra
 
 *Innata, Duradera*
 
@@ -80,7 +80,7 @@ Levantas la tierra como si de una ola del mismísimo océano se tratase, arrasan
 
 Incrementa tu estadística de FUE y su limitador por 1.
 
-### Mole viviente
+### Mole Viviente
 
 *Innata, Mejora, Duradera*
 
@@ -96,13 +96,13 @@ Mientras estés en contacto con la tierra contarás con sus bendiciones para man
 
 ## Rango V
 
-### Elemento del equilibrio
+### Elemento del Equilibrio
 
 *Innata, Pasiva*
 
 Te vuelves un recordatorio de la resistencia de la roca, resistiendo contra todo lo que los elementos te echen sin retroceder ni un paso. De esta manera recibirás resistencia a efectos de las categorías Arcano, Divino, Aflicción, Fuego, Frío, Sónico y Ácido.
 
-### Georradar predictivo
+### Georradar Predictivo
 
 *Innata, Pasiva*
 
@@ -112,7 +112,7 @@ La tierra son tus dominios, y nada que esté en contacto con ella podrá escapar
 
 Incrementa tu SAB por 1.
 
-**Forma elemental** 
+**Forma Elemental** 
 
 *Innata, Mejora*
 

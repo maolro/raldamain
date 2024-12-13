@@ -13,7 +13,7 @@ Estilo del Dragón tiene las siguientes reglas fundamentales que se aplican a cu
 
 ## Rango I
 
-### Golpe marcial
+### Golpe Marcial
 
 *Marcial, Dragón, Cuerpo a cuerpo, Físico, Ataque*
 
@@ -29,7 +29,7 @@ Atacas a un enemigo adyacente con un poderoso puñetazo o patada. Si eres un hum
 
 En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos.
 
-### Movimientos sutiles
+### Movimientos Sutiles
 
 *Dragón, Pasiva*
 
@@ -37,7 +37,7 @@ Mueves tu cuerpo cada vez que detienes un ataque enemigo para volverte más dif�
 
 En el caso que ya poseas esta habilidad por Alabardas o Duelo puedes hacer también un tiro de Parada con esa arma y quedarte con el resultado que más te convenga. Al igual que con Reflejos esto te permite emplear habilidades defensivas pertenecientes a dichos Rangos al defenderte con Parada Marcial.
 
-### Arte de la lucha
+### Arte de la Lucha
 
 *Dragón, Marcial, Mejora*
 
@@ -52,7 +52,7 @@ Tu constante práctica de formas marciales te otorga la capacidad de emplear var
 
 ## Rango II
 
-### Patada desequilibrante
+### Patada Desequilibrante
 
 *Marcial, Dragón, Mejora*
 
@@ -60,7 +60,7 @@ Tu constante práctica de formas marciales te otorga la capacidad de emplear var
 
 Haces una ágil patada para desequilibrar a un enemigo y dejarlo vulnerable para tu siguiente ataque. Al impactar a un enemigo puedes forzarle a hacer un tiro de CON frente a tu Estilo Dragón o quedará *enfermado* durante el resto de la ronda y puedes hacerle un ataque de Golpe como acción bonus. No puedes emplear esta técnica contra el mismo objetivo más de una vez por ronda.
 
-### Asalto múltiple
+### Asalto Múltiple
 
 *Marcial, Dragón, Mejora*
 
@@ -68,7 +68,7 @@ Haces una ágil patada para desequilibrar a un enemigo y dejarlo vulnerable para
 
 Atacas con extraordinaria velocidad a todos los enemigos que te rodean antes que puedan reaccionar. Puedes atacar a cada criatura adyacente a ti con tu siguiente ataque Marcial sin provocar ataques de oportunidad o reacciones. A diferencia de otras habilidades similares cada objetivo atacado debe tirar por separado para defenderse y puedes mejorar los ataques que haces con otras técnicas de combate pagando la adecuada cantidad de vigor.
 
-### Reposicionar enemigo
+### Reposicionar Enemigo
 
 *Marcial, Dragón, Mejora*
 
@@ -90,7 +90,7 @@ El daño base de tus ataques Marciales pasa a ser 1d8.
 
 Apretando el puño y propinando un fuerte impacto eres capaz de romper tanto la postura de tu oponente como su endeble armadura. De esta manera el siguiente ataque que haga infligirá 2d6 daño adicional al impactar, además de que romperá la armadura del objetivo. En el caso de que este emplee parada con un arma para defenderse entonces también la romperá, eliminándole también un contador de escudo en el caso de que los tenga. 
 
-### Patada salto alta
+### Patada salto Alta
 
 *Marcial, Dragón, Mejora*
 
@@ -98,7 +98,7 @@ Apretando el puño y propinando un fuerte impacto eres capaz de romper tanto la 
 
 Preparas rápidamente tu postura para saltar a gran altura y derribar a cualquier objetivo que se encuentre en el aire con un potente ataque. De esta manera en tu próximo ataque podrás saltar dos pasos en vertical, además de que en caso de impactar provocará 2d6 daño adicional. En el caso de que el enemigo sea un objetivo volador, este tendrá desventaja defendiéndose, y al impactarle caerá directamente al suelo, quedando tropezado y sufriendo el respectivo daño de caída (normalmente será 2d6 daño de caída). 
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Marcial, Dragón, Mejora*
 
@@ -114,7 +114,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 **Coste:** 2 acciones y 2 vigor
 
-Posicionándote del modo correcto y preparando tu cuerpo al máximo eres capaz de prepararte para responder a cualquier ataque que te arrojen, superando a tus enemigos con una precisión y resistencia mejoradas. De esta manera al entrar en este estado obtendrás ventaja en todos tus tiros de Artes marciales, además de que estos aumentarán su alcance a cercano. Además, conseguirás contadores de escudo iguales a tu rango. 
+Posicionándote del modo correcto y preparando tu cuerpo al máximo eres capaz de prepararte para responder a cualquier ataque que te arrojen, superando a tus enemigos con una precisión y resistencia mejoradas. De esta manera al entrar en este estado obtendrás Ventaja en todos tus tiros de Artes marciales, además de que estos aumentarán su alcance a cercano. Además, conseguirás contadores de escudo iguales a tu rango. 
 
 ### Golpe Oculto
 

@@ -124,7 +124,25 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
+    "stats": [
+      {
+        "stat": "con",
+        "rank": 2,
+        "boost": 1
+      },
+      {
+        "stat": "cha",
+        "rank": 4,
+        "boost": 1
+      },
+      {
+        "stat": "dex",
+        "rank": 6,
+        "boost": 1
+      }
+    ],
     "attributes": "devorar-cadaver,esencia-de-no-muerto,linaje-sanguineo,peso-de-cadaver"
+    
   },
   "ascendencia-de-agua": {
     "name": "Ascendencia de Agua",
@@ -634,7 +652,7 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
-    "attributes": "alma-corrompida,animar-no-muerto,apocalipsis-de-la-no-muerte,aspecto-de-no-muerto,aura-de-muerte,bendicion-de-la-muerte,cadenas-de-la-muerte,crear-no-muerto-superior,descarga-de-energia-negativa,enervacion,maldicion-vampirica,nube-de-aniquilacion,toque-de-la-muerte,toque-necrotico,tormenta-de-energia-negativa,vinculo-parasitico"
+    "attributes": "alma-corrompida,animar-no-muerto,apocalipsis-de-la-no-muerte,aspecto-de-no-muerto,aura-de-muerte,bendicion-de-la-muerte,cadenas-de-la-muerte,crear-no-muerto-superior,descarga-de-energia-negativa,enervacion,maldicion-vampirica,nube-de-aniquilacion,parada-necrotica,toque-de-la-muerte,toque-necrotico,tormenta-de-energia-negativa,vinculo-parasitico"
   },
   "presencia": {
     "name": "Presencia",

@@ -21,6 +21,7 @@
         "jabalina": {"name": "Jabalina", "eqab": "jabalina"},
         "lanza": {"name": "Lanza", "eqab": "lanza"},
         "latigo": {"name": "Látigo", "eqab": "latigo"},
+        "mandoble": {"name": "Mandoble", "eqab": "mandoble"},
         "martillo-de-guerra": {"name": "Martillo de Guerra", "eqab": "martillo-de-guerra"},
         "pistola-de-mano": {"name": "Pistola de Mano", "eqab": "pistola-de-mano"}
     },

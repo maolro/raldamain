@@ -29,7 +29,7 @@ Atacas a un enemigo adyacente empleando las armas que tu cuerpo te ha proporcion
 
 Si eres un humano podrás infligir 1d4 daño base Cortante, Perforante o Contundente. En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos.
 
-### Agilidad animal
+### Agilidad Animal
 
 *Salvaje, Pasiva*
 

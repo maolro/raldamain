@@ -16,7 +16,7 @@ Tras un estudio sobre el control de la tierra has conseguido aprender ha detecta
 
 ## Rango I
 
-### Manipular metal
+### Manipular Metal
 
 *Metal, Maniobra*
 
@@ -32,7 +32,7 @@ Alternativamente, si escoges afectar la estructura de un objeto metálico deber�
 
 **Empoderar** (1 chi): Afecta a un objeto adicional con esta habilidad o repite tu tiro.
 
-### Golpe metálico
+### Golpe Metálico
 
 *Metal, Ataque, A distancia, Físico*
 
@@ -42,11 +42,11 @@ Alternativamente, si escoges afectar la estructura de un objeto metálico deber�
 
 **Duración:** Instantáneo
 
-Usas el magnetismo para lanzar un proyectil metálico a gran velocidad contra tus enemigos. Haz un ataque contra un objetivo a distancia media que inflige 1d6 + CAR daño físico al impactar que puede ser tanto Perforante, Contundente o Cortante dependiendo del proyectil empleado. En el caso que emplees un arma metálica como proyectil el daño base de este ataque será igual al suyo con la única diferencia que será modificado por tu estadística de CAR.
+Usas el magnetismo para lanzar un proyectil metálico a gran velocidad contra tus enemigos. Haz un ataque contra un objetivo a distancia media que inflige 1d6 + CAR daño físico al impactar que puede ser tanto Perforante, Contundente o Cortante dependiendo del proyectil empleado. En el caso que emplees un arma metálica como proyectil el daño base de este ataque será igual al suyo con la única diferencia que será modificado por tu estadística de CAR. Este ataque se puede mejorar con técnicas de combate que conozcas que sean compatibles con él.
 
 **Empoderar** (1 chi): Ataca a un objetivo adicional con este hechizo o repite un tiro de ataque hecho con un arma a distancia que dispare proyectiles metálicos. Puedes también empoderar para que un proyectil lanzado vuelva a tu mano como acción bonus si se encuentra a distancia media de ti.
 
-### Hilos de acero
+### Hilos de Acero
 
 *Metal, Ataque, Agarre, Duradero*
 
@@ -100,7 +100,7 @@ Usas tu control del magnetismo para formar una fuerza capaz de repeler todos los
 
 Este hechizo puede ser empleado de manera alternativa para crear el campo magnético en torno a ti para defenderte de ataques. Crearlo de esta manera te costará una acción bonus si estás en *posición defensiva* y se moverá contigo, otorgándote sus beneficios para protegerte de ataques. 
 
-**Empoderar** (1 chi): 1/Ronda. Un ataque hecho con un arma metálica contra una criatura dentro del campo magnético fallará automáticamente. Puedes detener ataques de área con radio corto de esta manera y puedes pagar 1 chi adicional para aumentar el radio por un paso.
+**Empoderar** (1 chi): Un ataque hecho con un arma metálica contra una criatura dentro del campo magnético fallará automáticamente. Puedes detener ataques de área con radio corto de esta manera y puedes pagar 1 chi adicional para aumentar el radio por un paso. Solo puedes empoderar así una vez por ronda.
 
 ### Fortalecer Metal
 
@@ -167,7 +167,7 @@ En caso de usar este hechizo sobre una criatura, esta deberá defenderse emplean
 
 ## Rango IV
 
-### Espina metálica
+### Espina Metálica
 
 *Metal, Ataque, Mejora*
 
@@ -191,7 +191,7 @@ Disponiendo el metal de una manera adecuada puedes preparar uno de tus golpes pa
 
 Creando una coraza metaliza alrededor y manteniendo trozos metálicos en suspensión a tu alrededor eres capaz de aumentar notablemente tu defensa, dificultando a tus enemigos hacer mella en ti. Al activar la habilidad recibirás contadores de escudo iguales a tu rango, y tu defensa base pasará a ser igual a tu rangox2. Así mismo podrás emplear tu modificador de metal para defenderte de ataques tanto de área como de toque. 
 
-### Torbellino de filos
+### Torbellino de Filos
 
 *Metal, Ataque, Área, Duradero, Concentración*
 
@@ -207,7 +207,7 @@ Levitando múltiples fragmentos de metal y haciéndolos girar a grandes velocida
 
 Sustituye todos los dados de daño que tengas en habilidades de magia de metal por d10.
 
-### Disección interna
+### Disección Interna
 
 *Metal, Ataque*
 
@@ -219,7 +219,7 @@ Sustituye todos los dados de daño que tengas en habilidades de magia de metal p
 
 Manejando una espina metálica que hayas dejado previamente clavada en un objetivo puedes realizar múltiples cortes en su interior, provocándole graves daños sin que apenas pueda defenderse. Un objetivo con una espina clavada deberá defenderse empleando constitución o sufrirá 3d10+carisma daño perforante que ignorará defensas y una herida permanente grave.
 
-### Polvo  metálico
+### Polvo  Metálico
 
 *Metal, Área, Concentración*
 
@@ -233,7 +233,7 @@ Reduciendo el polvo a partículas y manejando la nube resultante eres capaz de c
 
 De igual manera la nube puede usarse para simular los efectos de un hechizo de rango III o menos sin la necesidad de pagar chi. 
 
-### Pulso magnético
+### Pulso Magnético
 
 *Metal, Ambiental*
 
@@ -247,7 +247,7 @@ Emitiendo un poderoso impulso destruyes todos los objetos metálicos de tu objet
 
 ## Rango VI
 
-### Titán de hierro
+### Titán de Hierro
 
 *Innata, Mejora*
 

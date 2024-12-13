@@ -27,23 +27,23 @@ Estilo de Boxeo tiene las siguientes reglas fundamentales que se aplican a cualq
 
 Golpeas a un enemigo con un poderoso puñetazo. El daño base de este ataque y su tipo dependerán de tu fisiología y quedará modificado por tu estadística de FUE, siendo Contundente en el caso que seas un humano o una raza similar. En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos.
 
-### Secuencia  de ataques
+### Secuencia  de Ataques
 
 *Boxeo, Pasiva*
 
 La fuerza de tus ataques mejora con cada golpe consecutivo que haces contra un mismo enemigo. Cada vez que hagas un ataque Marcial contra el mismo objetivo en una misma ronda aumentarás tu tiro de ataque y tu daño base por 1 contra él. Todos los bonificadores obtenidos por esta habilidad se perderán si tu enemigo se aleja de ti o te hace un contrataque.
 
-### Ataque poderoso
+### Ataque Poderoso
 
 *Boxeo, Marcial, Mejora, Maniobra, Físico*
 
 **Coste**: 1 vigor
 
-Golpeas a un enemigo con tal fuerza que le haces perder el equilibrio. Tu siguiente ataque Marcial forzará al afectado a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo de Boxeo o será empujado un paso hacia atrás y quedará *tropezado*. Esta técnica también puede utilizarse si un enemigo detiene tu ataque con cualquier tiro de Parada relacionada con un rango Marcial o Mágico, obligándole a realizar el mismo tiro.
+Golpeas a un enemigo con tal fuerza que le haces perder el equilibrio. Tu siguiente ataque Marcial incrementará su daño base por 1d6 y forzará al afectado a tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo de Boxeo o será empujado un paso hacia atrás y quedará *tropezado*. Esta técnica también puede utilizarse si un enemigo detiene tu ataque con cualquier tiro de Parada relacionada con un rango Marcial o Mágico, obligándole a realizar el mismo tiro.
 
 ## Rango II
 
-### Guardia defensiva
+### Guardia Defensiva
 
 *Boxeo, Marcial, Defensiva, Duradera*
 
@@ -53,7 +53,7 @@ Pegas tus puños al cuerpo y te colocas en guardia para resistir todo ataque dir
 
 **Empoderar** (1 vigor): Recuperas la mitad de tus *contadores de escudo*
 
-### Puño aturdidor
+### Puño Aturdidor
 
 *Boxeo, Marcial, Mejora, Aturdimiento, Físico*
 
@@ -61,7 +61,7 @@ Pegas tus puños al cuerpo y te colocas en guardia para resistir todo ataque dir
 
 Golpeas a tu objetivo con gran potencia para dejarlo fuera de combate. Al impactar con tu siguiente ataque Marcial tu objetivo deberá superar un tiro de CON contra tu modificador en Estilo Boxeo o quedará *aturdido* durante una ronda. Si tu objetivo falla su tiro aumenta el bonificador de Secuencia de ataques como si realizaras un ataque adicional. No podrás aturdir de esta manera a enemigos que lleven armadura pesada o completa. 
 
-### Puñetazo falso
+### Puñetazo Falso
 
 *Boxeo, Marcial, Mejora*
 
@@ -71,15 +71,15 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 ## Rango III
 
-### Golpe de gacela
+### Golpe de Gacela
 
 *Marcial, Mejora*
 
 **Coste**: 1 acción y 2 vigor
 
-Has entrenado mucho tus piernas para dar saltos repentinos a gran velocidad. Al emplear esta técnica te mueves un paso como acción bonus y haces un ataque Marcial contra un enemigo adyacente a ti en esa nueva posición que tendrá Ventaja e infligirá 1d6 daño adicional al impactar. Si te encuentras en *posición defensiva* una vez por ronda puedes emplear esta técnica como reacción, aprovechando así el mejor momento para atacar.
+Has entrenado mucho tus piernas para dar saltos repentinos a gran velocidad. Al emplear esta técnica te mueves un paso como acción bonus y haces un ataque Marcial contra un enemigo adyacente a ti en esa nueva posición que tendrá Ventaja e infligirá 2d6 daño adicional al impactar. Si te encuentras en *posición defensiva* una vez por ronda puedes emplear esta técnica como reacción, aprovechando así el mejor momento para atacar.
 
-### Puñetazo veloz
+### Puñetazo Veloz
 
 *Marcial, Mejora*
 
@@ -97,7 +97,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-### Giro del boxeador
+### Giro del Boxeador
 
 *Boxeo, Marcial, Defensiva, Duradera*
 
@@ -109,7 +109,7 @@ Eres capaz de girar tu cuerpo constantemente para volverte más difícil de impa
 
 **Empoderar** (1 vigor): En respuesta a defenderte exitosamente de un ataque enemigo puedes hacer un ataque Marcial contra él como reacción. Dicho ataque no puede mejorarse con otras habilidades.
 
-### Golpe debilitador
+### Golpe Debilitador
 
 *Boxeo, Marcial, Mejora*
 
