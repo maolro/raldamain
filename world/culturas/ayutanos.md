@@ -5,7 +5,7 @@ regiones-predilectas: Arshalán, Chothgar Mori, Geismaria, Mazarín
 religiones-predilectas: Mekhatimismo, Fe Espiritual
 ---
 
-Los **Ayutanos** son una cultura marítima del norte de Raldamain, caracterizada por su historia de resistencia, habilidad en la navegación y pragmatismo. Descendientes de tribus del norte que se establecieron tras el colapso del Primer Imperio, los Ayutanos han cultivado una identidad única, con raíces en la veneración de los Espíritus y una profunda conexión con el mar. Hoy en día se encuentran bajo el dominio del Imperio de Arshalán, lo cual ha provocado que muchos Ayutanos se hayan dividido entre adoptar la fe en la **Hueste Celestial** o mantenerse fieles a sus tradiciones.
+Los Ayutanos son una cultura marítima del norte de Raldamain, caracterizada por su historia de resistencia, habilidad en la navegación y pragmatismo. Descendientes de tribus del norte que se establecieron tras el colapso del Primer Imperio, los Ayutanos han cultivado una identidad única, con raíces en la veneración de los Espíritus y una profunda conexión con el mar. Hoy en día se encuentran bajo el dominio del Imperio de Arshalán, lo cual ha provocado que muchos Ayutanos se hayan dividido entre adoptar la fe en la Hueste Celestial o mantenerse fieles a sus tradiciones.
 
 # Historia
 

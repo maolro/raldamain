@@ -15,8 +15,6 @@ Ascendencia cruen tiene las siguientes reglas fundamentales que se aplican a cua
 
 ## Rango I
 
-Aumenta tu CON por 1.
-
 ### Esencia Vampírica
 
 *Innata, Pasiva*
@@ -39,6 +37,8 @@ En respuesta a la creciente corrupción de tu ser, tu sangre ha despertado un le
 - **Szalony:** Excéntricos, extraños, tal vez incluso locos pero con una mayor visión que el resto del mundo que los rodea los miembros de este linaje se mantienen pendiendo de un hilo de una telaraña que abarca a todas las mentes humanas y que no están seguros de poder comprender del todo. De esta manera los miembros de este linaje aprenderán los hechizos de Detectar pensamiento y Asalto psíquico, para los que podrá emplear ambas reservas. Además recibirán inmunidad a la perdida de cordura por fuentes externas a costo de recibir una locura permanente. 
 
 ## Rango II
+
+Incrementa tu estadística de CON y su limitador por 1.
 
 ### Devorar Cadáver
 
@@ -76,6 +76,8 @@ De alguna manera te las has ingeniado lo suficientemente bien como para ser cons
 - **Szalony:** Tu conexión con la telaraña se incremente, permitiéndote estar un paso mas cerca de conectar con esa especie de entidad superior, dotándote así de mayores conocimientos capaces de dañar las mentes de aquellos que traten de dañarte. De esta forma recibirás usos de premonición iguales a tu rango+1, los cuales podrán acumularse con la habilidad del mismo nombre, además de que al impactar con un ataque físico podrás pagar 1 de reserva para provocar un hechizo mental a tu objetivo, aunque deberás seguir pagando los costes de susodicho hechizo en el caso de que lo tengan. Además obtendrás la capacidad de emplear los hechizos Sobrecarga mental y Telepatía. 
 
 ## Rango IV
+
+Incrementa tu estadística de CAR y su limitador por 1.
 
 ### Patriarca de familia
 
@@ -117,6 +119,8 @@ Tras tanto tiempo finalmente has alcanzado la cúspide de tu linaje, alimentánd
 - **Szalony:** Tu mente a logrado ascender hasta el último peldaño, conectándote finalmente con una parte mas profunda de la telaraña que te permita dividir tu mente en fragmentos, usándolos tanto para asegurar la poca integridad mental que te quede como para derruir las fronteras mentales de tus enemigos. De esta manera no podrás perder la concentración por ningún medio que no sea daño radiante, además de que obtendrás la capacidad de emplear los hechizos Destrozar mente y Mente en blanco. Sin embargo la profundidad de tu viaje en la telaraña te afligirá con una segunda locura permanente. 
 
 ## Rango VI
+
+Incrementa tu estadística de DES y su limitador por 1.
 
 ### Abominación antinatural
 

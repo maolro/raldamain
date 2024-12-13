@@ -110,6 +110,14 @@
         "tags": "Físico, Ataque, Alabarda, A Distancia", 
         "description": "Distancia cercana, +MOD para impactar, 1d8 + STAT daño Perforante. Puede lanzarse para aumentar su alcance a distancia media."
     },
+    "mandoble": {
+        "name": "Mandoble",
+        "skill":"armas-pesadas", 
+        "type": "Accion", 
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Pesada", 
+        "description": "Adyacente, +MOD para impactar, 2d6 + STAT daño Cortante."
+    },
     "martillo-de-guerra": {
         "name": "Martillo de Guerra",
         "skill":"armas-pesadas", 

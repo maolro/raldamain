@@ -30,7 +30,7 @@ Tienes gran conocimiento de los diferentes venenos, sabiendo como identificar y 
 
 Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres dosis de este. Dichas dosis pueden aplicarse a un arma empleando una acción para provocar los efectos del veneno al impactar. Un único ataque no puede tener más de un veneno aplicado a la vez y cada dosis adicional del mismo veneno que afecte al mismo objetivo aumentará su gravedad por 2. 
 
-### Valentía embotellada
+### Valentía Embotellada
 
 *Objeto, Químico, Consumible*
 
@@ -38,7 +38,7 @@ Fabricas una droga que inhibe la aversión al riesgo del afectado, incitándolo 
 
 Los efectos inhibidores del riesgo provocan también que el afectado jamás abandone voluntariamente un combate y siga luchando sin importarle su estado actual. Cada uso de Valentía embotellada consumirá una ranura de objeto que tengas.
 
-### Frasco de ácido
+### Frasco de Ácido
 
 *Objeto, Químico, Consumible, Ácido*
 
@@ -50,7 +50,7 @@ El ácido también puede usarse para atacar a otras criaturas, lo cual funcionar
 
 Recibes dos ranuras de objeto de Rango II y una ranura adicional de Rango I
 
-### Poción de resistencia
+### Poción de Resistencia
 
 *Objeto, Químico, Consumible*
 
@@ -72,7 +72,7 @@ Fabricas un suero que abre tu mente a nuevas posibilidades, dándote unos instan
 
 Los bonificadores de un Cognatógeno no se acumulan con aquellos otorgados por la habilidad Mente Desencadenada y un abuso excesivo de estos puede conducir a la locura o a una adicción. Cada uso de Cognatógeno consumirá una ranura de objeto que tengas.
 
-### Veneno alucinógeno
+### Veneno Alucinógeno
 
 *Objeto, Química, Consumible, Aflicción*
 
@@ -80,7 +80,7 @@ Fabricas un veneno capaz de provocar alucinaciones a quienes lo consuman para qu
 
 La confusión permanecerá hasta que el veneno sea eliminado por completo, forzando al afectado a repetir el tiro cada ronda hasta que tenga éxito dos veces o consuma un antídoto para dicho veneno.
 
-### Suero de la verdad
+### Suero de la Verdad
 
 *Objeto, Química, Consumible, Aflicción*
 
@@ -88,7 +88,7 @@ Esta infame droga inhibirá la capacidad de mentir del afectado, forzándole a c
 
 Este efecto permanecerá activo hasta que la droga sea eliminada por completo, forzando al afectado a repetir el tiro cada ronda hasta que tenga éxito dos veces o consuma un antídoto para dicha droga.
 
-### Resistencia a drogas
+### Resistencia a Drogas
 
 *Innata, Pasiva*
 

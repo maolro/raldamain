@@ -30,12 +30,14 @@
                         "hp": "(RANGO-1)x2",
                         "vt": "(RANGO-1)x2",
                         "skill": "fortitud",
+                        "tags": "Innata",
                         "description": "Aumenta su Vitalidad, PV y Defensa por (RANGO-1)x2 (ya incluido)."
                     },
                     {
                         "name": "Estilo Defensivo",
                         "type": "Pasiva",
                         "skill": "escudo",
+                        "tags": "Escudo",
                         "description": "Al empezar el combate cuenta con 2+(RANGO-1)x2 <i>contadores de escudo</i> que puede usar para reducir el daño de ataques que reciba. Puede también defender a aliados adyacentes usando Parada con Escudo y cuenta siempre como si estuviera en Defensa Absoluta para determinar las habilidades que se activan."
                     }
                 ]
@@ -766,6 +768,50 @@
             }
         ]
     },
+    "cuerpo-de-ventisca": {
+        "name": "Cuerpo de Ventisca",
+        "stat": "cha",
+        "modranks": [
+            "ascendencia-de-aire"
+        ],
+        "rank": 0,
+        "max": 1,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": null},
+            {"stat": "con", "rank": 1, "boost": null}
+        ],
+        "enchancements": [
+            {
+                "attributes": [],
+                "abilities": [
+                    {
+                        "name": "Incorpóreo",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-de-aire",
+                        "immunities": ["Físicos","Mentales","Miedo","Aflicciones","Fuego","Frío","Ácido","Eléctrico","Sónico"],
+                        "description": "Carece de cuerpo físico, obteniendo así Inmunidad a efectos Físicos, Mentales, Miedo y Aflicciones además del daño Fuego, Frío, Ácido, Eléctrico y Sónico salvo que tenga características Arcanas o Divinas. Recibe también velocidad de vuelo 1 y puede pasar por ranuras muy pequeñas."
+                    },
+                    {
+                        "name": "Aire Viviente",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-de-aire",
+                        "immunities": ["Eléctrico"],
+                        "vulnerabilities": ["Aire"],
+                        "description": "Recibe Inmunidad a efectos Eléctricos a costa de Vulnerabilidad a efectos de Aire y Sónicos. Si es afectado por un hechizo de Aire se sanará Vitalidad igual al Rango de este + 2."
+                    },
+                    {
+                        "name": "Fusión de Viento",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-de-aire",
+                        "description": "Es capaz de fusionarse con efectos Duraderos de Aire o Tormenta existentes, pudiendo así emplearlos sin la necesidad de mantener la concentración. Si está fusionado debe moverse de la misma manera que el hechizo y formará parte de su cuerpo."
+                    }
+                ]
+            }
+        ]
+    },
     "dragon": {
         "name": "Dragón",
         "stat": "con/cha",
@@ -1043,6 +1089,54 @@
             }
         ]
     },
+    "esencia-de-metal": {
+        "name": "Esencia de Metal",
+        "stat": "cha/con",
+        "modranks": ["magia-de-metal"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["manipular-metal","golpe-metalico","hilos-de-acero","parada-de-metal", "resiliencia", "velocidad-superior"],
+                "abilities": [
+                    {
+                        "name": "Infusión Metálica",
+                        "type": "Accion",
+                        "tags": "Metal, Mejora",
+                        "uses": "1/Ataque",
+                        "skill": "magia-de-metal",
+                        "description": "Al impactar con un arma metálica puede provocar los efectos de un hechizo de Metal que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            }
+        ]
+    },
     "esencia-de-naturaleza": {
         "name": "Esencia de Naturaleza",
         "stat": "wis/con",
@@ -1135,6 +1229,50 @@
                         "skill": "magia-de-vida",
                         "resistances": ["A Distancia","Sombríos"],
                         "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
+                    }
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            }
+        ]
+    },
+    "esencia-sombria": {
+        "name": "Esencia Sombría",
+        "stat": "cha",
+        "modranks": ["magia-sombria","ascendencia-sombria"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["sigilo-sombrio","nacido-de-las-tinieblas","crear-oscuridad","tajo-umbrio","toque-drenador","parada-sombria"],
+                "abilities": [
+                    {
+                        "name": "Infusión Sombría",
+                        "type": "Accion",
+                        "uses": "1/Ataque",
+                        "tags": "Sombría, Mejora",
+                        "description": " Al impactar con un ataque natural puede provocar los efectos de un hechizo de Magia Sombría que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Necrótica."
                     }
                 ]
             },
@@ -2045,7 +2183,7 @@
                 ]
             },
             {
-                "attributes": ["duro-de-pelar","gran-acrobata","duro-de-pelar","reposicionar-enemigo","ataque-lateral","golpe-trasero","golpe-aturdidor","gran-barrido","evasion"],
+                "attributes": ["duro-de-pelar","gran-acrobata","reposicionar-enemigo","ataque-lateral","golpe-trasero","golpe-aturdidor-(alabardas)","gran-barrido","evasion"],
                 "abilities": [
                     {}
                 ]
@@ -2148,22 +2286,25 @@
                         "hp": "(RANGO-1)x2",
                         "vt": "(RANGO-1)x2",
                         "skill": "fortitud",
+                        "tags": "Innata",
                         "description": "Aumenta su Vitalidad, PV y Defensa por (RANGO-1)x2 (ya incluido)."
                     },
                     {
                         "name": "Ira de Combate",
                         "type": "Pasiva",
+                        "tags": "Innata",
                         "description": "Está siempre afectado por la habilidad Ira, recibiendo así Ventaja en todos sus tiros relacionados con estadísticas físicas y aumentando su daño base con ataques Físicos por 1d6. No podrá mantener la concentración en efectos."
                     }
                 ]
             },
             {
-                "attributes": ["frenesi-de-batalla","resiliencia","reposicion-forzosa","golpe-aturdidor","gran-barrido"],
+                "attributes": ["frenesi-de-batalla","resiliencia","reposicion-forzosa","golpe-aturdidor-(pesadas)","gran-barrido","tajo-feroz"],
                 "abilities": [
                     {
                         "name": "Demostración Terrorífica",
                         "type": "Pasiva",
                         "skill": "ira",
+                        "tags": "Innata, Miedo, Duradera",
                         "description": "Mientras se encuentre en Ira toda criatura a distancia media que pueda verle deberá tener éxito en un tiro de Voluntad o Intimidar contra +MOD o aumentará su nivel de <i>miedo</i> por un paso. Aquellas criaturas que tengan éxito no tendrán que volver a tirar y las que fracasen deberán repetir el tiro cada ronda."
                     }
                 ]
@@ -2175,6 +2316,7 @@
                         "name": "Guardia Fluida",
                         "type": "Pasiva",
                         "skill": "armas-pesadas",
+                        "tags": "Pesada",
                         "description": "Al entrar en combate recibe RANGO <i>contadores de escudo</i>. Dichos contadores podrán detener ataques de la misma manera que la habilidad Guardia Fluida y reponerlos cuesta dos acciones."
                     }
                 ]
@@ -2263,6 +2405,61 @@
                 "abilities": [
                     {}
                 ]
+            }
+        ]
+    },
+    "nigromante": {
+        "name": "Nigromante",
+        "stat": "cha",
+        "modranks": ["nigromancia"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["bendicion-de-la-muerte","toque-necrotico","descarga-de-energia-negativa","parada-necrotica"],
+                "abilities": [
+                    {
+                        "name": "Cosechador de Almas",
+                        "type": "Pasiva",
+                        "tags": "Nigromancia",
+                        "skill": "nigromancia",
+                        "description": "Cada vez que mate a otra criatura con un efecto Necrótico esta reanimará la ronda siguiente como un zombi o esqueleto bajo su control."
+                    },
+                    {
+                        "name": "Infusión Necrótica",
+                        "type": "Accion",
+                        "uses": "1/Ataque",
+                        "tags": "Nigromancia, Mejora",
+                        "skill": "nigromancia",
+                        "description": " Al impactar con un ataque natural puede provocar los efectos de un hechizo de Nigromancia que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Sombría."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
             }
         ]
     },
@@ -2386,6 +2583,125 @@
                 "attributes": [],
                 "abilities": [
                     {
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "siervo-de-la-colmena": {
+        "name": "Siervo de la Colmena",
+        "stat": "con/wis",
+        "modranks": ["ascendencia-insectoide","estilo-salvaje"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["mente-insectoide","duro-de-pelar","parada-salvaje"],
+                "abilities": [
+                    {
+                        "name": "Aspecto Entotrópico",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-insectoide",
+                        "hp": "(RANGO-1)x2",
+                        "def": "(RANGO-1)x2",
+                        "description": "Recibe dos mejoras parecidas a las que se recibirían con Inyección Mutagénica (cabe recalcar que empleará el modificador +MOD para todos los tiros). Obtiene también <i>vista a ciegas</i> a distancia media y velocidad de escalada 1 junto a la capacidad de escalar por superficies lisas u horizontales."
+                    },
+                    {
+                        "name": "Mente Colmena",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-insectoide",
+                        "immunities": ["Mentales","Miedo"],
+                        "description": "Si combate junto a miembros de su colmena ninguno de ellos puede ser sorprendido salvo que todos lo estén además que si uno se libera de un efecto Ilusorio todos los demás se liberarán automáticamente. Obtiene también Inmunidad a efectos Mentales y Miedo lanzados por criaturas sin Ascendencia Insectoide o esta mejora."
+                    }
+                ]
+            }
+        ]
+    },
+    "transmutador": {
+        "name": "Transmutador",
+        "stat": "itl",
+        "modranks": [
+            "magia-de-transmutacion"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["reparar-la-carne","alterar-tamaño","transmutacion-forzada","resiliencia"],
+                "abilities": [
+                    {
+                        "name": "Armas Óseas",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "hp": "(RANGO-1)x2",
+                        "def": "(RANGO-1)x2",
+                        "skill": "magia-de-transmutacion",
+                        "description": "Puede emular cualquier arma usando su cuerpo si paga una acción para transmutarlo adecuadamente. Podrá emplear su modificador de Magia de Transmutación para los tiros de ataque y defensa con esa arma. Además, puede modificar el daño de esta con su estadística de INT en lugar de la que emplearía normalmente. Esto funciona igual que el hechizo Arma Ósea."
+                    },
+                    {
+                        "name": "Mutaciones",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "skill": "magia-de-transmutacion",
+                        "description": "Tiene dos mutaciones activas en su cuerpo semejantes a aquellas que proporcionaría el hechizo Inyección Mutagénica."
+                    },
+                    {
+                        "name": "Cambiar Mutaciones",
+                        "type": "Accion",
+                        "tags": "Arcana",
+                        "cost": "1 Acción",
+                        "skill": "magia-de-transmutacion",
+                        "description": "Cambia una mutación que tenga activa por otra de su elección. La nueva mutación escogida debe tener una fuerza equivalente a la que se acabó de reemplazar."
+                    }
+                ]
+            },
+            {
+                "attributes": ["consumir-esencia","poder-del-dolor"],
+                "abilities": [
+                    {
+                        "name": "Mutación Superior",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "skill": "magia-de-transmutacion",
+                        "description": "Tiene una mutación adicional en su cuerpo semejantes a aquellas que proporcionaría el hechizo Inyecciones Superiores. Esta mutación puede cambiarse empleando la habilidad Cambiar Mutaciones."
+                    },
+                    {
+                        "name": "Transmutador Experto",
+                        "type": "Pasiva",
+                        "tags": "Arcana",
+                        "skill": "magia-de-transmutacion",
+                        "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia de Transmutación. Este modificador no se acumula con el otorgado por Mente Desencadenada."
                     }
                 ]
             },

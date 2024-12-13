@@ -17,7 +17,7 @@ Reflejos tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ## Rango I
 
-### Velocidad superior
+### Velocidad Superior
 
 *Innata, Pasiva*
 
@@ -25,7 +25,7 @@ Tu cuerpo se mueve a una velocidad superior a la media, mejorando notablemente t
 
 **Empoderar** (1 vigor): Emplea una habilidad con coste de acciones antes que toque tu turno. Deberás pagar el adecuado coste en acciones para dicha habilidad.
 
-### Instinto de supervivencia
+### Instinto de Supervivencia
 
 *Innata, Reacción*
 
@@ -35,7 +35,7 @@ Eres capaz de reaccionar en el último segundo a situaciones peligrosas para sal
 
 ## Rango II
 
-### Esquiva asombrosa
+### Esquiva Asombrosa
 
 *Innata, Pasiva*
 

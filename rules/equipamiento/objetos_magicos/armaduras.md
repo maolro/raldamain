@@ -71,6 +71,17 @@ title: Armaduras Mágicas
 - El portador obtiene Resiestencia a efectos de Fuego y Frío además de efectos Mentales y de Miedo provocados por entidades de origen infernal.
 - Cuenta como si tuviera *material superior II* para determinar los efectos que puedan romperla.
 
+## Armadura Dracónica (media, pesada o completa, +2 precio)
+
+**Ranura:** Armadura
+
+**Defensa:** Es igual a la DEF de la armadura base + 4.
+
+**Propiedades:**
+
+- La armadura está hecha de escamas de dragón casi impenetrables. Esta reducirá el nivel de todas las *heridas permanentes* que reciba su portador además de otorgarle Resistencia a efectos Arcanos. El portador también recibirá Resistencia a un elemento según el tipo de escamas empleadas para su construcción, el cual puede ser Ácido, Eléctrico, Frío o Fuego.
+- Cuenta como si tuviera *material superior III* para determinar los efectos que puedan dañarla. No obstante, las armas asesinas de dragones podrán romperla con normalidad como si no tuviera dureza.
+
 ## Armadura Desfasante (ligera, media o pesada, +2 precio)
 
 **Ranura:** Armadura
@@ -80,7 +91,7 @@ title: Armaduras Mágicas
 **Propiedades:**
 
 - El portador puede desfasar su cuerpo una vez por ronda para evitar automáticamente un ataque enemigo que reciba. Esto funciona de la misma manera que el hechizo Desplazamiento.
-- El portador es Inmune al *terreno difícil* y a efectos que impidan que pueda pasar por ellos con normalidad como Muros de Aire y Agua o Campos de Repulsión. Esto no funcionará con barreras compl
+- El portador es Inmune al *terreno difícil* y a efectos que impidan que pueda pasar por ellos con normalidad como Muros de Aire y Agua o Campos de Repulsión. Esto no funcionará con barreras completas como muros de piedra o fuerza.
 
 ## Armadura Gélida (media, pesada o completa, +1 precio)
 

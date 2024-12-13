@@ -3794,6 +3794,7 @@
       "name": "Frenesí de Batalla",
       "skill": "ira",
       "type": "Pasiva",
+      "tags": "Innata",
       "description": "Puede obtener Ventaja en todos sus ataques de arma o marciales esta ronda a costa de obtener Desventaja en todos sus tiros defensivos"
     },
     "fuego-interior": {
@@ -6150,9 +6151,7 @@
       "name": "Parada de Agua",
       "skill": "magia-de-agua",
       "type": "Reaccion",
-      "cost": "",
-      "reach": "",
-      "duration": "",
+      "tags": "Agua, Defensiva",
       "description": "Tira para defenderse de un ataque cuerpo a cuerpo o a distancia"
     },
     "parada-de-aire": {
@@ -6228,6 +6227,14 @@
       "type": "Reaccion",
       "tags": "Marcial, Serpiente, Defensiva",
       "description": "+MOD para defenderse. Solo funciona contra ataques cuerpo a cuerpo."
+    },
+    "parada-necrotica": {
+      "rank": 1,
+      "name": "Parada Necrótica",
+      "skill": "nigromancia",
+      "type": "Reaccion",
+      "tags": "Necrótica, Defensiva",
+      "description": "Tira para defenderse de un ataque cuerpo a cuerpo o a distancia"
     },
     "parada-salvaje": {
       "rank": 1,
