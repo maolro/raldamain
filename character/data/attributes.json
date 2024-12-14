@@ -4133,7 +4133,7 @@
       "cost": "1 Vigor",
       "reach": "Adyacente",
       "duration": "Instantáneo",
-      "description": "1/Enemigo cada ronda, hace un ataque que inflige 1d4+STAT Contundente y saca de posición defensiva"
+      "description": "1/Enemigo cada ronda, hace un ataque que inflige 1DD + STAT Contundente y saca de posición defensiva"
     },
     "golpe-debilitador": {
       "rank": 4,
