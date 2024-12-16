@@ -819,8 +819,7 @@
       "skill": "armas-ligeras",
       "type": "Reaccion",
       "cost": "2 Vigor",
-      "reach": "",
-      "duration": "",
+      "tags": "Ligeras",
       "description": "En respuesta a que un enemigo detenga un ataque con contadores de escudo o habilidades defensivas de rango menor las atraviesa de inmediato"
     },
     "asalto-multiple": {

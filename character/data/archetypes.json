@@ -699,7 +699,7 @@
                         "uses": "1/Ronda",
                         "cost": "1 Acción",
                         "skill": "estilo-salvaje",
-                        "description": "+MOD para atacar, adyacente, el objetivo sufre 1d6 + DEX daño Perfornate y 1DD + RANGO daño Necrótico que reduce PV y Vitalidad máxima además de provocar <i>sangrado</i>."
+                        "description": "+MOD para atacar, adyacente, el objetivo sufre 1d6 + STAT daño Perfornate y 1DD + RANGO daño Necrótico que reduce PV y Vitalidad máxima además de provocar <i>sangrado</i>."
                     }
                 ]
             },
@@ -1272,15 +1272,44 @@
                         "type": "Accion",
                         "uses": "1/Ataque",
                         "tags": "Sombría, Mejora",
+                        "skill": "magia-sombria",
                         "description": " Al impactar con un ataque natural puede provocar los efectos de un hechizo de Magia Sombría que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Necrótica."
                     }
                 ]
             },
             {
-                "attributes": []
+                "attributes": ["oscuridad-devoradora","capullo-sombrio","bola-sombra","terror-nocturno","salto-sombrio"],
+                "abilities": [
+                    {
+                        "name": "Absorber Oscuridad",
+                        "type": "Pasiva",
+                        "tags": "Sombría",
+                        "skill": "magia-sombria",
+                        "immunities": ["Necróticos","Frío"],
+                        "vulnerabilities": ["Radiantes"],
+                        "description": "Recibe Inmunidad a efectos Necróticos y de Frío a costa de Vulnerabilidad a efectos Radiantes. El daño Necrótico le sana en lugar de herirle pero no podrá recibir Sanación. Si se encuentra en un entorno a oscuras se sanará RANGO Vitalidad."
+                    }
+                ]
             },
             {
-                "attributes": []
+                "attributes": ["tentaculos-de-oscuridad","titiritero-sombrio","oscuridad-enloquecedora", "forma-sombria","sombra-viviente"],
+                "abilities": [
+                    {
+                        "name": "Maldición de Shade",
+                        "type": "Pasiva",
+                        "tags": "Sombría",
+                        "skill": "magia-sombria",
+                        "description": "Al impactar a un enemigo con un ataque que provoque daño Necrótico o Frío puede afectarle con la Maldicición de Shade. Si el afectado tiene éxito en el tiro contra la maldición no puede volver a afectarle hasta que pase una ronda."
+                    },
+                    {
+                        "name": "Arma de Tinieblas",
+                        "type": "Accion",
+                        "tags": "Sombría, Ataque",
+                        "cost": "1 o 2 Acciones",
+                        "skill": "magia-sombria",
+                        "description": "+MOD para atacar, adyacente, inflige 1d8 + STAT daño Necrótico o Frío. Este ataque no puede ser detenido mediante tiros de Parada con armas no-mágicas y puede modificarse con técnicas de arma."
+                    }
+                ]
             },
             {
                 "attributes": []
@@ -1752,6 +1781,131 @@
                         "tags": "Divina",
                         "skill": "guerrero-divino",
                         "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón abisal. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
+                    },
+                    {
+                        "name": "Aliento de Vida",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "La primera vez que muera resucitará inmediatamente a 1 PV. Si se trata de una invocación una vez por combate podrá hacer lo mismo con su invocador."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
+    "guerrero-celestial": {
+        "name": "Guerrero Celestial",
+        "stat": "cha",
+        "modranks": [
+            "guerrero-divino",
+            "ascendencia-celestial"
+        ],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "str", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "str", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "str", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "str", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"},
+            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": "guerrero-divino", "mod": "guerrero-divino"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["nacido-del-cielo","cuerpo-puro","sentido-divino"],
+                "abilities": [
+                    {
+                        "name": "Guerrero de la Fe",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "def": "(RANGO-1)x2",
+                        "hp": "(RANGO-1)x2",
+                        "skill": "guerrero-divino",
+                        "resistances": ["Miedo", "Mentales"],
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                    },
+                    {
+                        "name": "Azote Divino",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón abisal. Esto funciona de la misma manera que el hechizo Azote Divino."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alas-angelicales"],
+                "abilities": [
+                    {
+                        "name": "Aura Protectora",
+                        "type": "Reaccion",
+                        "resistances": ["Arcanos", "Divinos"],
+                        "tags": "Divina, Defensiva",
+                        "uses": "1/Ronda",
+                        "skill": "guerrero-divino",
+                        "description": "Tiene éxito automático en un tiro defensivo contra un efecto Divino o Arcano de Rango RANGO o menos. Si el lanzador ha pagado un chi adicional al lanzar el hechizo esto no funcionará (2 chi si era de Rango II o inferior)."
+                    },
+                    {
+                        "name": "Presencia Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina, Miedo, Duradera",
+                        "skill": "guerrero-divino",
+                        "description": "Todas las criaturas a distancia media que puedan verle deben tener éxito en un tiro de Voluntad contra +MOD o aumentan su nivel de miedo por un paso. Aquellos  que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierda la concentración y reponerlo cuesta dos acciones."
+                    },
+                    {
+                        "name": "Golpe Desacralizador",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico puede eliminar un efecto Arcano o Divino que tenga activo el objetivo si tiene éxito en un tiro con modificador +MOD contra la habilidad mágica del objetivo. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino"
+                    }
+                ]
+            },
+            {
+                "attributes": ["vision-verdadera","alma-ascendida","regeneracion-celestial"],
+                "abilities": [
+                    {
+                        "name": "Golpe Exiliante",
+                        "type": "Accion",
+                        "tags": "Divina, Mejora",
+                        "skill": "guerrero-divino",
+                        "uses": "1/Ataque",
+                        "description": "Al imapactar con un ataque físico a una Invocación puede hacer un tiro con modificador +MOD contra su nivel + 2 y en caso de éxito la exiliará de inmediato. Este efecto funciona igual que Golpe Desacralizador y no puede activarse en ataques empoderados por Azote Divino."
+                    },
+                    {
+                        "name": "Hueste Divina",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "skill": "guerrero-divino",
+                        "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón abisal. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
+                    },
+                    {
+                        "name": "Aliento de Vida",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "La primera vez que muera resucitará inmediatamente a 1 PV. Si se trata de una invocación una vez por combate podrá hacer lo mismo con su invocador."
                     }
                 ]
             },
@@ -1907,7 +2061,7 @@
                         "hp": "(RANGO-1)x2",
                         "skill": "guerrero-divino",
                         "resistances": ["Miedo", "Mentales"],
-                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón infernal además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
                     },
                     {
                         "name": "Azote Divino",
@@ -1927,7 +2081,7 @@
                 ]
             },
             {
-                "attributes": ["rasgo-monstruoso-superior"],
+                "attributes": ["alas-demoniacas"],
                 "abilities": [
                     {
                         "name": "Aura Protectora",
@@ -1956,7 +2110,7 @@
                 ]
             },
             {
-                "attributes": ["paso-abisal","paso-abisal-defensivo","aura-del-caos","corrupcion-absoluta"],
+                "attributes": ["corrupcion-demoniaca"],
                 "abilities": [
                     {
                         "name": "Golpe Exiliante",
@@ -1972,13 +2126,40 @@
                         "tags": "Divina",
                         "skill": "guerrero-divino",
                         "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón abisal. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
+                    },
+                    {
+                        "name": "Cadenas del Contrato",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "Al entrar en combate establece un vínculo vital con dos aliados de su elección. Cada vez que sufra daño puede transferir cualquier cantidad de daño recibido a un aliado vinculado siempre y cuando se encuentre a distancia media. Funciona de la misma manera que la habilidad Cadenas del Contrato."
+                    },
+                    {
+                        "name": "Aliento de Vida",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "La primera vez que muera resucitará inmediatamente a 1 PV. Si se trata de una invocación una vez por combate podrá hacer lo mismo con su invocador."
                     }
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["azote-ejecutor","explosion-divina"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Avatar Divino",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "skill": "guerrero-divino",
+                        "resistances": ["Fuego","Frío","Radiante","Necrótico","Ácido","Eléctrico","Sónico"],
+                        "immunities": ["Aflicciones","Mentales","Miedo","Toque"],
+                        "description": "Recibe Resistencia a efectos de Fuego, Frío, Radiante, Necrótico, Ácido, Eléctrico y Sónico además de Inmunidad a Aflicciones y efectos Mentales, Miedo y de Toque. Empleará también su modificador de Guerrero Divino para todos sus tiros relacionados con armas. Además, al entrar en combate recibirá automáticamente seis <i>contadores de escudo</i> que puede emplear para detener ataques de todo tipo y se encontrará siempre en <I>posición defensiva</i>."
+                    },
+                    {
+                        "name": "Señor de la Sima",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "ascendencia-infernal",
+                        "description": "Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatemente 40 Vitalidad temporal y  seis <i>contadores de escudo</i>. Obtendrá también Ventaja en todos sus tiros y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor."
+                    }
                 ]
             }
         ]
@@ -2020,7 +2201,7 @@
                         "name": "Guerrero de la Fe",
                         "type": "Pasiva",
                         "tags": "Divina",
-                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón abisal además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
                     },
                     {
                         "name": "Mutación",
@@ -2189,9 +2370,14 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["constitucion-ferrea","giro-defensivo","sexto-sentido","lanzazo-saltarin","atravesar-defensas","lanzazo-aereo","combinar-tecnicas-(alabardas)","resiliencia"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Danza del Alabarda",
+                        "type": "Pasiva",
+                        "skill": "alabardas",
+                        "description": "Recibe Ventaja en todos los tiros relacionados con Alabardas y contará siempre como si estuviera en el estado Preparación contra Cargas. Esto funciona igual que Danza del Alabarda."
+                    }
                 ]
             },
             {
@@ -2271,6 +2457,11 @@
             {"stat": "str", "rank": 4, "boost": 1},
             {"stat": "con", "rank": 4, "boost": 1}
         ],
+        "spells": [
+            {"rank": 4, "spell-lvl": 4, "slots": 1, "cat": ["estilo-salvaje","estilo-boxeo","armas-de-duelo","armas-ligeras","alabardas","cadenas","estilo-agarre","escudo"], "mod": "armas-pesadas"},
+            {"rank": 4, "spell-lvl": 3, "slots": 1, "cat": ["estilo-salvaje","estilo-boxeo","armas-de-duelo","armas-ligeras","alabardas","cadenas","estilo-agarre","escudo"], "mod": "armas-pesadas"},
+            {"rank": 4, "spell-lvl": 2, "slots": 2, "cat": ["estilo-salvaje","estilo-boxeo","armas-de-duelo","armas-ligeras","alabardas","cadenas","estilo-agarre","escudo"], "mod": "armas-pesadas"}
+        ],
         "enchancements": [
             {
                 "attributes": [
@@ -2319,12 +2510,32 @@
                         "tags": "Pesada",
                         "description": "Al entrar en combate recibe RANGO <i>contadores de escudo</i>. Dichos contadores podrán detener ataques de la misma manera que la habilidad Guardia Fluida y reponerlos cuesta dos acciones."
                     }
-                ]
+                ]  
             },
             {
-                "attributes": [],
+                "attributes": ["golpe-ascendente","golpe-por-golpe","impacto-mortal","furia-imparable","vuelo-de-golondrina"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Maestro de Armas",
+                        "type": "Pasiva",
+                        "skill": "armas-pesadas",
+                        "tags": "Innata",
+                        "description": "Puede emplear su modificador de Luchador para todos los tiros relacionados con cualquier arma o estilo de artes marciales que utilice la estadística de Fuerza además que aprende cuatro técnicas de combate adicionales de su elección con Rango IV o menos. Podrá emplear dichas técnicas una vez por ronda sin la necesidad de gastar vigor."
+                    },
+                    {
+                        "name": "Muro Viviente",
+                        "type": "Pasiva",
+                        "skill": "fortitud",
+                        "tags": "Innata",
+                        "description": "Al entrar en combate recibirá RANGO <i>contadores de escudo</i>. Estos se acumulan con otras habilidades que otorguen contadores."
+                    },
+                    {
+                        "name": "Una Última Resistencia",
+                        "type": "Pasiva",
+                        "skill": "fortitud",
+                        "tags": "Innata",
+                        "description": "La primera vez en un combate que caiga a 0 PV recuperará toda la Vitalidad y la mitad de sus PV. No obstante, todas las heridas permanentes y efectos de estado negativos que tenga permanecerán activos."
+                    }
                 ]
             }
         ]
@@ -2366,7 +2577,7 @@
                         "name": "Guerrero de la Fe",
                         "type": "Pasiva",
                         "tags": "Divina",
-                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón infernal además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
                     },
                     {
                         "name": "Arma Profana",
@@ -2395,9 +2606,20 @@
                 ]
             },
             {
-                "attributes": ["corrupcion-demoniaca"],
+                "attributes": ["corrupcion-demoniaca","castigo-divino"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Cadenas del Contrato",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "Al entrar en combate establece un vínculo vital con dos aliados de su elección. Cada vez que sufra daño puede transferir cualquier cantidad de daño recibido a un aliado vinculado siempre y cuando se encuentre a distancia media. Funciona de la misma manera que la habilidad Cadenas del Contrato."
+                    },
+                    {
+                        "name": "Llamar a los Dioses",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "description": "Al iniciar el combate puede activar un efecto Ambiental a su alrededor de Rango III o menos relacionado con su patrón infernal. Algunos ejemplos son Controlar los Vientos, Animar plantas, Aura de vida o Aura de Muerte. No necesitará mantener la concentración para que permanezca activo y puede ser contrarrestado de igual manera."
+                    }
                 ]
             },
             {

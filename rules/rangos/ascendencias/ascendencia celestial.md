@@ -104,7 +104,7 @@ Visión verdadera también revelará el verdadero aspecto de las criaturas en es
 
 Aprendes los hechizos Sanación superior y Luz viviente, los cuales puedes lanzar empleando vigor en lugar de chi.
 
-### Regeneración celestial
+### Regeneración Celestial
 
 *Innata, Pasiva*
 

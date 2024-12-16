@@ -33,8 +33,16 @@ Los Clérigos Celestiales de nivel II han profundizado su conexión con su patr�
 
 ## Clérigo Celestial III (+2, 5 mejoras)
 
-Un Clérigo Celestial de nivel III es un portador del poder divino en su máxima expresión. Estos enemigos son capaces de invocar milagros y castigos celestiales que transforman el campo de batalla. Su presencia inspira a sus aliados y quiebra la voluntad de sus enemigos, convirtiéndose en un pilar de la fe celestial sobre la tierra. 
+Un Clérigo Celestial de nivel III es un portador del poder divino en su máxima expresión. Estos enemigos son capaces de invocar milagros y castigos celestiales que transforman el campo de batalla. 
+
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Celestial por 1. 
+- **Habilidades Pasivas:** Obtiene las habilidades pasivas Visión Verdadera, Alma Ascendida y Regeneración Celestial.
+- **Hechizos:** Aprende el hechizo Castigo Divino y otros tres hechizos de Rango III relacionados con su patrón infernal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Llamar a los Dioses:** Al iniciar el combate puede activar un efecto Ambiental a su alrededor de Rango III o menos relacionado con su patrón infernal. Algunos ejemplos son Controlar los Vientos, Animar plantas, Aura de vida o Aura de Muerte. No necesitará mantener la concentración para que permanezca activo y puede ser contrarrestado de igual manera.
 
 ## Clérigo Celestial IV (+2, 7 mejoras)
 
 Un Clérigo Celestial de nivel IV es un avatar de los cielos en la tierra. Dotado con poderes que trascienden la comprensión mortal, se convierte en una fuerza imparable de luz y justicia. Solo los más fuertes campeones del mal se atreven a desafiarlo y su mera presencia significa una bendición inigualable en el mundo.
+
+Ángel Vengador

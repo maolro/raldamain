@@ -39,8 +39,8 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 - **Habilidades Pasivas:** Recibe Sombra Viviente como habilidad pasiva.
 - **Hechizos:** Aprende los hechizos Tentáculos de Oscuridad, Titiritero Sombrío y Oscuridad Enloquecedora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Maldición de Shade:** Al impactar a un enemigo con un ataque que provoque daño Necrótico o Frío puede afectarle con la Maldicición de Shade. Si el afectado tiene éxito en el tiro contra la maldición no puede volver a afectarle hasta que pase una ronda.
-- **Arma de Tinieblas:**  
-- **Forma Sombría:** 
+- **Arma de Tinieblas:** Al entrar en combate puede manifestar un arma hecha de pura oscuridad. Dicha arma infligirá 1d8 daño Necrótico o Frío modificado por su estadística de CAR y empleará su modificador de Ascendencia Sombría para atacar con ella, lo cual costará una acción. De igual manera que el hechizo Arma de Tinieblas este ataque no podrá ser detenido por tiros de parada no-mágicos y puede mejorarse con otras técnicas de combate.
+- **Forma Sombría:** Una vez por ronda puede emplear la habilidad Forma Sombría de manera gratuita, pudiendo así volverse Incorpórea o evitar automáticamente un ataque enemigo.
 
 ## Sombrío IV (+2, 7 mejoras)
 

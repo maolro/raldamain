@@ -35,5 +35,11 @@ La criatura se ha especializado en combatir con armas pesadas y destructivas, ce
 
 ## Luchador IV (+2, requiere 7 mejoras)
 
-Furia Imparable, Muro Viviente, Una Última Resistencia/Superar los Límites, Sanación Rápida, Golpe Ascendente, Golpe por Golpe, Impacto Mortal, Vuelo de Golondrina, +3 
+- **Aumentos Estadísticos**: Incrementa su FUE y CON por 1 además de sus limitadores. Aumenta también sus PV, Vitalidad y Defensa por 2.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Armas Pesadas, Ira y Fortitud por 1.
+- **Habilidades Pasivas:** Recibe Sanación Rápida y Furia Invulnerable como habilidades pasivas. 
+- **Técnicas de Combate:** Aprende las técnicas de combate Golpe Ascendente, Golpe por Golpe, Impacto Mortal, Furia Imparable y Vuelo de Golondrina. Cada una de estas solo puede usarse una vez por ronda sin la necesidad de pagar vigor.
+- **Maestro de Armas:** Puede emplear su modificador de Luchador para todos los tiros relacionados con cualquier arma o estilo de artes marciales que utilice la estadística de Fuerza además que aprende cuatro técnicas de combate adicionales de su elección con Rango IV o menos. Podrá emplear dichas técnicas una vez por ronda sin la necesidad de gastar vigor.
+- **Muro VIviente:** Al entrar en combate recibirá una cantidad de *contadores de escudo* igual a su Rango en Fortitud. Estos se acumulan con otras habilidades que otorguen contadores.
+- **Una Última Resistencia:** La primera vez en un combate que caiga a 0 PV recuperará toda la Vitalidad y la mitad de sus PV. No obstante, todas las heridas permanentes y efectos de estado negativos que tenga permanecerán activos.
 

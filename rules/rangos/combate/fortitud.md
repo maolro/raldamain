@@ -95,7 +95,7 @@ Tu cuerpo es capaz de recuperarse de heridas a velocidades sobrehumanas. Al prin
 
 **Empoderar** (1 vigor): Reduce el nivel de una herida permanente que te afecte actualmente por un paso. Esto no funcionará contra *heridas permanentes críticas*.
 
-### Una última Resistencia
+### Una Última Resistencia
 
 *Innata, Sanación*
 

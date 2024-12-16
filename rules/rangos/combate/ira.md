@@ -71,7 +71,7 @@ Empujas a tu cuerpo hasta el límite para seguir luchando sin importar las conse
 
 *Ira, Innata, Pasiva*
 
-Tus instintos de batalla y tu velocidad mejoran notablemente cuando entras en Ira, permitiéndote así suplir tu debilidad defensiva. Mientras te encuentres en Ira recibirás una acción adicional en tu turno y podrás entrar en *posición defensiva* como acción bonus una vez por ronda. Tus instintos te permiten también protegerte de ataques sorpresa con Desventaja, evitando así que te impacten automáticamente.
+Tus instintos de batalla y tu velocidad mejoran notablemente cuando entras en Ira, permitiéndote así suplir tu debilidad defensiva. Mientras te encuentres en Ira recibirás una acción adicional en tu turno y podrás entrar en *posición defensiva* como acción bonus una vez por ronda aunque Ira lo impida. Tus instintos te permiten también protegerte de ataques sorpresa con Desventaja, evitando así que te impacten automáticamente.
 
 ### Furia Imparable
 

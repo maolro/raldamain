@@ -8,7 +8,7 @@ Vue.component('v-statpage', {
             </div>
             <div class="col-6">
                 <b class="justify-content-around mr-2">Nivel: </b>
-                <v-minusplusfield v-bind:value="level" :min="1" :max="20" v-on:input="setLevel"></v-minusplusfield>
+                <v-minusplusfield v-bind:value="level" :min="1" :max="30" v-on:input="setLevel"></v-minusplusfield>
             </div>
         </div>
         <div class="row my-2 mx-2 justify-content-around">

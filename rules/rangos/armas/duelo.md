@@ -69,7 +69,7 @@ Haces un ataque falso para engañar a un enemigo para que acabe en una posición
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
 
-Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y romper sus defensas. Haz un ataque de arma contra un enemigo adyacente que infligirá 1d4 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda.
+Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y romper sus defensas. Haz un ataque de arma contra un enemigo adyacente que infligirá 1d6 + FUE o DES daño Contundente al impactar además de sacarlo inmediatamente de *posición defensiva*. No puedes atacar al mismo objetivo con esta habilidad más de una vez por ronda. El daño de este ataque pasará a ser 1d8 a Rango III y 1d10 a Rango V.
 
 ### Ataque Torbellino
 
