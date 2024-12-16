@@ -196,7 +196,7 @@ Cargando un rayo con una cantidad adicional de energía y ejerciendo control sob
 
 Sobrecargas los canales de chi a tu alrededor para provocar una devastadora explosión de rayos y truenos. Haz un ataque contra todos los enemigos a distancia cercana que inflige 1d8 + CAR daño eléctrico y 1d10 + Rango daño Sónico, además de *ralentizarlos* durante una ronda. Si empleas esta habilidad durante una tormenta puedes provocar la explosión en cualquier punto a distancia media de ti. 
 
-**Rayo viviente**
+**Rayo Viviente**
 
 *Tormenta, Mejora, Concentración*
 
@@ -210,7 +210,7 @@ Cargando tu propio cuerpo con electricidad eres capaz de acelerar sus reacciones
 
 ## Rango V 
 
-**Cambiar el clima** 
+**Cambiar el Clima** 
 
 *Tormenta, Área, Ambiental*
 
@@ -222,19 +222,25 @@ Cargando tu propio cuerpo con electricidad eres capaz de acelerar sus reacciones
 
 Convocando nubes en tu región y cargándolas con grandes cantidades de electricidad eres capaz de llamar a tu voluntad enormes tormentas eléctricas de las que beneficiarte para emplear tus habilidades. Al cambiar el clima se activarán automáticamente los efectos de las habilidades de Furia de los cielos y Controlar los vientos, además de que todos los que se encuentren en el campo de batalla contarán con ocultamiento. 
 
-**Descenso relampagueante** 
+**Descenso Relampagueante** 
 
-*Tormenta, Ataque*
+*Tormenta, Ataque, Área*
 
 **Coste**: 2 acciones y 3 chi
 
 **Alcance**: Medio
 
+**Tamaño:** Columna mediana
+
 **Duración**: Instantáneo
 
-Concentrando una gran cantidad de energía eléctrica en el cielo eres capaz de hacer que la misma tormenta haga descender su furia sobre tus enemigos, amenazando con reducirlos a cenizas. De esta forma todos los que se encuentren dentro del alcance de una columna mediana deberán defenderse contra tu ataque o sufrirán 2d10+Carisma daño eléctrico y 1d10+Carisma daño sónico, forzando a aquellos que impacte también a tirar constitución contra tu modificador o quedar aturdidos durante una ronda. Para los propósitos de defenderse de la habilidad esta no podrá eludirse usando esquiva, y los objetivos voladores tendrán desventaja contra el ataque. 
+**Efecto Crítico:** Los afectados fallan automáticamente su tiro para evitar ser aturdidos.
 
-Esta habilidad solamente podrá usarse mientras te encuentres en una tormenta. 
+Concentras una gran cantidad de energía eléctrica en el cielo para que la tormenta misma descargue toda su furia sobre tus enemigos. Todas los que se encuentren en una columna mediana centrada en un punto a distancia media de ti deberán defenderse de un ataque de Magia de Tormenta o sufrirán 2d10 + CAR daño Eléctrico y 1d10 + CAR daño Sónico. 
+
+Los afectados también deberán hacer un tiro de Salud contra tu modificador de Magia de Tormenta o quedarán *aturdidos* durante una ronda. Esta habilidad no podrá evitarse con Esquiva y los objetivos voladores tendrán Desventaja defendiéndose contra este ataque. Esta habilidad solo puede emplearse si te encuentras en un entorno afectado por una tormenta.
+
+**Empoderar** (1 chi): Vuelve a lanzar este hechizo como acción bonus contra un grupo diferente de enemigos a distancia media de ti. 
 
 **Voltio cruel** 
 

@@ -148,7 +148,7 @@ Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehum
 
 Infundes un poderoso flujo de energía vital en tu toque para sanar las heridas más graves. Un objetivo que puedas tocar se curará Vitalidad y Puntos de Vida iguales a tu Rango + 2. Una vez que lanzas este hechizo, puedes elegir entre reducir el nivel de una *herida permanente* que tenga tu objetivo por dos pasos o curarlos de cualquier Aflicción, Maldición o efecto de estado negativo.
 
-**Empodera** (1 chi): Puedes lanzar este hechizo como una acción bonus en ti mismo.
+**Empodera** (1 chi): Puedes lanzar este hechizo como una acción bonus en ti mismo o afectas a un objetivo adicional con él..
 
 ### Telaraña de Vida
 

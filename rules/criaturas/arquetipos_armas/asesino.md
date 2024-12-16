@@ -25,8 +25,13 @@ La criatura ha mejorado sus habilidades en el arte del asesinato y el combate co
 
 ## Asesino III (+2, requiere 5 mejoras)
 
-Asalto Impredecible, Combinar Técnicas, Cuchillada, Contrataque, Puñalada Quirúrgica, Giro Defensivo/Sexto Sentido, Gran Acróbata/Lo he Visto Antes, Inescrutable
+- **Aumentos Estadísticos:** Incrementa su DES y CON por 1 además de sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Armas Ligeras, Rastrear y Reflejos por 1. 
+- **Habilidades Pasivas:** Recibe Giro Defensivo, Gran Acróbata e Inescrutable como habilidades Pasivas. Si ya tiene la habilidad Giro Defensivo puede sustituirla por Sexto Sentido mientras que si tiene Gran Acróbata puede sustituirla por Lo he Visto Antes.
+- **Técnicas de Combate:** Aprende las técnicas de combate Cuchillada, Salto Mortal, Asalto Impredecible y Puñalada Quirúrgica. Cada una de estas solo puede usarse una vez por ronda de manera gratuita.
+- **Contrataque:** Una vez por ronda puede emplear la reacción Contrataque para interceptar ataque enemigo sin la necesidad de pagar vigor. Esto funciona igual que la técnica de combate con el mismo nombre.
+- **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
 
 ## Asesino IV (+2, requiere 7 mejoras)
 
-Reflejos Supremos, Libertad de Movimiento, Punto Ciego, Salto Mortal, Asesinato, Puñaladas en Secuencia, Movilidad de Batalla, +3 Técnicas combate, Vista de Lince/Enemigo Juramentado
+Reflejos Supremos, Libertad de Movimiento, Punto Ciego, Asesinato, Puñaladas en Secuencia, Movilidad de Batalla, +3 Técnicas combate, Vista de Lince/Enemigo Juramentado

@@ -124,7 +124,7 @@ Saltas hacia arriba y extiendes tu alcance para golpear a un enemigo volador ant
 
 **Tamaño**: Radio corto
 
-Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige +2d6 puntos de daño adicionales y los *tropieza* al impactar. 
+Desciendes por el suelo con impulso aumentado para infligir daño masivo a tus enemigos y romper sus defensas. Saltas horizontalmente un paso en cualquier dirección y realizas un ataque de arma contra todos los objetivos en un radio corto que inflige 2d6 puntos de daño adicionales y los *tropieza* al impactar. 
 
 ### Guardia Fluida
 

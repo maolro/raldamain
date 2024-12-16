@@ -39,3 +39,4 @@ La criatura ha sido escogida por las fuerzas del abismo para sembrar el caos y l
 - **Aura del Caos:** Está siempre rodeado de un Aura del Caos, recibiendo así Resistencia a todos los efectos Arcanos y Divinos además que los objetos mágicos y glifos activados a distancia corta de ti tendrán una probabilidad del 50% de fallar. Puede anular hechizos de coste 2 o menos empleando Aura Protectora.
 
 ## Guerrero Abisal IV (+2)
+
