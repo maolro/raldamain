@@ -1,12 +1,12 @@
 ---
-
+title: Niveles Míticos
 ---
 
-[INTRO]
+El sistema establece que el nivel 20 es el más alto, pero seguro que muchos se han preguntado si existe algo más allá. Ahora por fin, se dará respuesta a esa pregunta. Cada vez que un personaje suba un nivel por encima del 20 recibirá en su lugar un nivel mítico, una representación clara que se encuentra por encima de la fuerza de los mortales. Los niveles míticos permitirán a un personaje subir hasta nivel 30, el limitante máximo establecido por el mundo de Raldamain ya que por encima de esta fuerza solo se encuentran los mismos Dioses. 
 
 # Un nivel mítico
 
-Cuando alcances un nivel mítico (nivel por encima de 20), recibirás las siguientes mejoras:
+Cuando un personaje alcanza un nivel mítico su poder trasciende los límites mortales, obteniendo acceso a habilidades y capacidades que desafían las leyes de la realidad. Estas mejoras no solo potencian al personaje, sino que lo preparan para enfrentarse a amenazas de naturaleza divina o cósmica. Al alcanzar un nivel mítico, recibes las siguientes mejoras:
 
 - **Estadísticas:** Aumenta dos estadísticas de tu elección por 1, llegando como máximo a 12. 
 - **Talentos:** Obtienes cuatro nuevos niveles de talento, los cuales te permiten subir tus talentos hasta llegar a 10. Cada nuevo nivel asignado debe ser en un talento diferente.
@@ -15,6 +15,8 @@ Cuando alcances un nivel mítico (nivel por encima de 20), recibirás las siguie
 - **Habilidades Míticas:** Según el nivel mítico que reciba podrá obtener una habilidad mítica tal como se especifica en la siguiente lista. 
 
 ## Habilidades Míticas
+
+Las habilidades míticas representan poderes de naturaleza legendaria que superan las capacidades ordinarias de los mortales. A continuación, se detalla cada habilidad que puedes obtener al alcanzar niveles míticos. El DJ puede ajustar o personalizar estas habilidades como vea necesario para adaptarlas al mundo y la campaña.
 
 1. **Resistencias Legendarias:** Obtiene tres usos gratuitos de la habilidad Indómito que puedes gastar para tener éxito automático en tiros defensivos de cualquier tipo.
 2. **Nuevas Habilidades:** Aprendes tres hechizos o habilidades nuevos de Rango II o menos pertenecientes a cualquier rango de tu elección. Emplearás como modificador y Rango para estas cualquier otro Rango de tu elección con el que compartan estadística principal. Puedes también conceder hechizos que conozcas a aliados tuyos como si fueras un dios (para ello necesitarán tener un rango compatible y ser del nivel adecuado).
@@ -25,7 +27,7 @@ Cuando alcances un nivel mítico (nivel por encima de 20), recibirás las siguie
 7. **Expansión de Dominio:** Cuentas con un dominio mítico propio en un plano diferente de la existencia. Puede viajar a él, cambiar su terreno y expandirlo sobre el campo de batalla como si tuviera Magia Espacial a Rango VI. Si ya posee un dominio podrá tomar control de una región entera de otro plano de la existencia, atándose a él. Esto le permitirá resucitar en su plano cada vez que muera como si fuera un Extraplanario. 
 8. **Maestro Supremo:** Aprende dos hechizos o habilidades nuevas de cada Rango (I, II, III, IV, V y VI). Estos pueden pertenecer a cualquier habilidad y emplearás como modificador y Rango para estas cualquier otro Rango de tu elección con el que compartan estadística principal.
 9. **Fase Mítica:** La primera vez que seas derrotado puedes resucitar instantáneamente al máximo de Vitalidad y PV además de sanarte de todos los efectos de estado y *heridas permanentes* que tengas activas. Esto no te curará de efectos Míticos.
-10. **Semidiós:** Estás a un paso de la divinidad. Recibes Inmortalidad y puedes luchar incluso contra Dioses, tratando todas sus habilidades como si fueran solo Míticas. Todos y cada una de tus habilidades existentes pasarán a se Míticas, recibiendo las adecuadas mejoras de un atributo mítico.
+10. **Semidiós:** Estás a un paso de la divinidad. Recibes Inmortalidad y puedes luchar incluso contra Dioses, tratando todas sus habilidades como si fueran solo Míticas. Todos y cada una de tus habilidades existentes pasarán a ser Míticas, recibiendo las adecuadas mejoras de un atributo mítico.
 
 # Niveles Míticos
 
@@ -36,7 +38,7 @@ Para transformar un atributo en Mítico se seguirá el siguiente procedimiento:
 - **Duración:** Si el efecto depende de concentración ya no la necesitará para mantenerse activa, pasando a permanecer sobre el campo de batalla durante una hora o hasta que sea eliminado. Además, si se lanza en un lugar afectado por otro hechizo no-Mítico lo eliminará de inmediato sin la necesidad de tirar.
 - **Efecto Crítico:** El atributo contará siempre como un golpe crítico a la hora de determinar si activará su efecto crítico. En el caso que provoque un golpe crítico entonces aplicará dicho efecto dos veces o provocará un efecto de estado similar permitido por el DJ. 
 - **Daño:** Si el atributo provoca daño de cualquier tipo se duplicarán todos sus dados de daño. Por ejemplo, si en estado normal provoca 2d6 + CAR daño Fuego su versión mítica provocará 4d6 + CAR daño Fuego Mítico.
-- **Habilidades dependientes del Rango:** Si la potencia de un hechizo depende del Rango que tengas una mejora mítica hará que cuente como si tuvieras el doble de rango en esa habilidad. 
+- **Habilidades dependientes del Rango:** Si la potencia de un hechizo depende del Rango que tengas una mejora mítica su efecto contará como si tuvieras 
 - **Sanación:** Si el atributo otorga regeneración o sanación de algún tipo pasará a sanar el doble de Vitalidad o PV. 
 - **Ventajas:** Si una habilidad de cualquier tipo le otorga Ventaja en tiros de un tipo determinado podrá transformar esos dados a d8 en lugar de d6. 
 - **Resistencias:** Todas las Resistencias que reciba contra efectos No-Míticos aumentarán por un paso. 
