@@ -38,7 +38,7 @@ Para transformar un atributo en Mítico se seguirá el siguiente procedimiento:
 - **Duración:** Si el efecto depende de concentración ya no la necesitará para mantenerse activa, pasando a permanecer sobre el campo de batalla durante una hora o hasta que sea eliminado. Además, si se lanza en un lugar afectado por otro hechizo no-Mítico lo eliminará de inmediato sin la necesidad de tirar.
 - **Efecto Crítico:** El atributo contará siempre como un golpe crítico a la hora de determinar si activará su efecto crítico. En el caso que provoque un golpe crítico entonces aplicará dicho efecto dos veces o provocará un efecto de estado similar permitido por el DJ. 
 - **Daño:** Si el atributo provoca daño de cualquier tipo se duplicarán todos sus dados de daño. Por ejemplo, si en estado normal provoca 2d6 + CAR daño Fuego su versión mítica provocará 4d6 + CAR daño Fuego Mítico.
-- **Habilidades dependientes del Rango:** Si la potencia de un hechizo depende del Rango que tengas una mejora mítica su efecto contará como si tuvieras 
+- **Habilidades dependientes del Rango:** Si la potencia de una habilidad depende del Rango que tengas suma a este mismo tu nivel mítico total dividido entre 2 para determinar su fuerza resultante (redondeando hacia arriba). Por ejemplo, si tienes nivel 24 y empleas una habilidad en la que tengas Rango VI contará como si tu Rango fuera 8. 
 - **Sanación:** Si el atributo otorga regeneración o sanación de algún tipo pasará a sanar el doble de Vitalidad o PV. 
 - **Ventajas:** Si una habilidad de cualquier tipo le otorga Ventaja en tiros de un tipo determinado podrá transformar esos dados a d8 en lugar de d6. 
 - **Resistencias:** Todas las Resistencias que reciba contra efectos No-Míticos aumentarán por un paso. 
@@ -59,7 +59,7 @@ Para transformar un atributo en Mítico se seguirá el siguiente procedimiento:
 
 **Duración:** Instantáneo
 
-Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. Haz un ataque de Magia de fuego contra dos enemigos a distancia lejana que infligirá 2d6 + 2 x Rango daño Fuego Mítico al impactar y una *quemadura leve*. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
+Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. Haz un ataque de Magia de fuego contra dos enemigos a distancia lejana que infligirá 2d6 + Rango daño Fuego Mítico al impactar y una *quemadura leve*. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
 
 **Empoderar** (1 chi): Afecta a dos objetivos adicionales que pueda alcanzar con este hechizo
 
@@ -75,7 +75,7 @@ Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. 
 
 **Duración:** Una hora
 
-Moldeas la energía mágica en forma de un muro para detener ataques enemigos. El muro emergerá de cualquier espacio que alcances y tendrá la forma de una línea mediana o una esfera pequeña. Como barrera tiene PV iguales a tu Rango x 6 y es inmune al daño físico no-mágico (ataques físicos de grandes dimensiones como cañonazos sí que funcionarán). El muro permanecerá en el campo de batalla hasta que pierdas la concentración o sea eliminado.
+Moldeas la energía mágica en forma de un muro para detener ataques enemigos. El muro emergerá de cualquier espacio que alcances y tendrá la forma de una línea mediana o una esfera pequeña. Como barrera tiene PV iguales a tu Rango x 3 y es inmune al daño físico no-mágico (ataques físicos de grandes dimensiones como cañonazos sí que funcionarán). El muro permanecerá en el campo de batalla hasta que pierdas la concentración o sea eliminado.
 
 Mientras el muro permanezca activo impedirá el paso a cualquier ataque a distancia o de área tanto físico como mágico. Al estar hecho de energía el muro es incapaz de detener ataques cuerpo a cuerpo pero toda criatura que intente cruzarlo sufrirá 2d6 + INT daño Arcano Mítico. Este daño puede ser reducido con *contadores de escudo* y reacciones similares.
 
