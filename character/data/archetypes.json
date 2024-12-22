@@ -1850,7 +1850,7 @@
                         "tags": "Divina, Mejora",
                         "skill": "guerrero-divino",
                         "uses": "1/Ataque",
-                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón abisal. Esto funciona de la misma manera que el hechizo Azote Divino."
+                        "description": "Su siguiente ataque físico provocará 1DD + RANGO daño adicional de un tipo relacionado con su patrón celestial. Esto funciona de la misma manera que el hechizo Azote Divino."
                     }
                 ]
             },
@@ -1899,7 +1899,7 @@
                         "type": "Pasiva",
                         "tags": "Divina",
                         "skill": "guerrero-divino",
-                        "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón abisal. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
+                        "description": "Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa con hechizos y armas relacionados con su patrón celestial. Estos modificadores no se acumulan con Tierra Consagrada o Guerrero Divino."
                     },
                     {
                         "name": "Aliento de Vida",
