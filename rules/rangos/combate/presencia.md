@@ -15,7 +15,7 @@ Presencia tiene las siguientes reglas fundamentales que se aplican a cualquiera 
 
 ## Rango I
 
-### Voz del comandante
+### Voz del Comandante
 
 *Moral, Mejora, Auditiva, Innata*
 
@@ -25,13 +25,13 @@ A través de palabras inspiradores u órdenes imperiosas refuerzas la motivació
 
 **Empoderar** (1 vigor): Recuperas un uso de esta habilidad o un aliado que afectes podrá emplear tu modificador de Presencia para defenderse de un efecto Mental o de Miedo.
 
-### Voluntad poderosa
+### Voluntad Poderosa
 
 *Innata, Pasiva*
 
 Como líder jamás mostrarás debilidad ante tus compañeros aunque te enfrentes a situaciones imposibles. Recibes Resistencia a efectos de Miedo y Mentales además que tu nivel de miedo no puede ser aumentado con efectos críticos. Puedes emplear tu bonificador de Presencia en todos tus tiros para defenderte de efectos de dichas categorías.
 
-### Inspirar temor
+### Inspirar Temor
 
 *Moral, Miedo, Innata, Visual/Auditiva, Duradera*
 

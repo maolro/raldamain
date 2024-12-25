@@ -34,5 +34,13 @@ La criatura se ha especializado en combatir con un lanzas, alabardas y armas sim
 
 ## Lancero IV (+2, requiere 7 mejoras)
 
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores. Incrementa también sus PV y Defensa por 2.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Alabardas, Fortitud y Reflejos por 1.
+- **Habilidades Pasivas:** Recibe Constitución Férrea, Giro Defensivo y Sexto Sentido como habilidades pasivas. Si ya tiene Giro Defensivo o Sexto Sentido puede sustituirlas por Constitución Férrea y Libertad de Movimiento respectivamente.
+- **Técnicas de Combate:** Aprende las técnicas de combate Lanzazo Saltarín, Atravesar Defensas y Lanzazo Aéreo. Cada una de estas solo puede usarse gratuitamente una vez por ronda salvo que use un arma de dos manos.
+- **Danza del Alabarda:** Recibe Ventaja en todos los tiros relacionados con Alabardas y contará siempre como si estuviera en el estado Preparación contra Cargas. Esto funciona igual que Danza del Alabarda.
+- **Resiliencia:** Puede emplear la reacción Resiliencia una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Resiliencia que reciba por arquetipos diferentes.
+- **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
+
 Lanzazo Devastador, Abanico de Acero, Tornado de Madera, Estocada Serpenteante, Extensión de tu Cuerpo, Lanzazos en Cadena, +3 Técnicas, Muro Viviente, Reflejos Supremos
 
