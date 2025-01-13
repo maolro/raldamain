@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<div class="container text-justify">
+
+{% include breadcrumbs.html page=page %}
+
+{{ content | split: '<h' | first | markdownify }}
+
+<h2>{% if page.lang == 'es' %}Índice{%else%}Index{%endif%}</h2>
+    
+{% include toc.html html=content %}
+
+<h{{ content | split: '<h' | shift | join:'<h' }}
+
+</div>
