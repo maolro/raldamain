@@ -184,7 +184,7 @@ Animas una masa de furiosas llamas para crear un guerrero elemental que luchará
 
 Tus hechizos de Fuego de Rango II reducen su coste en acciones por 1 (mínimo 1). 
 
-### Danza de las llamas
+### Danza de las Llamas
 
 *Fuego, Duradera, Defensiva*
 

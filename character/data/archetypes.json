@@ -1075,6 +1075,13 @@
                         "uses": "1/Ataque",
                         "skill": "ascendencia-de-fuego",
                         "description": "Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Fuego que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda."
+                    },
+                    {
+                        "name": "Elementalismo Empoderado",
+                        "type": "Pasiva",
+                        "tags": "Fuego",
+                        "skill": "ascendencia-de-fuego",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con estadísticas mentales y aumenta el daño base de todos sus hechizos elementales por 1d6. Estos modificadores no se acumulan con Mente Desencadenada."
                     }
                 ]
             },
