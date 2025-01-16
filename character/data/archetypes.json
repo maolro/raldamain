@@ -1798,9 +1798,22 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["azote-ejecutor","explosion-divina"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Avatar Divino",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "resistances": ["Fuego","Frío","Radiante","Necrótico","Ácido","Eléctrico","Sónico"],
+                        "immunities": ["Aflicciones", "Mentales" ,"Miedo", "Toque"],
+                        "description": "Recibe Resistencia a efectos de Fuego, Frío, Radiante, Necrótico, Ácido, Eléctrico y Sónico además de Inmunidad a Aflicciones y efectos Mentales, Miedo y de Toque. Empleará también su modificador de Guerrero Divino para todos sus tiros relacionados con armas. Además, al entrar en combate recibirá automáticamente seis <i>contadores de escudo</i> que puede emplear para detener ataques de todo tipo y se encontrará siempre en <i>posición defensiva</i>."
+                    },
+                    {
+                        "name": "Avatar Divino",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatamente 40 Vitalidad temporal y  seis <i>contadores de escudo</i>. Obtendrá también Ventaja en todos sus tiros y los efectos de una Mutación abisal adicional de su elección. Podrá emplear una vez adicional por ronda de manera gratuita sus hechizos de Rango III o inferior obtenidos mediante este arquetipo y sus técnicas de combate de Rango III o inferior."
+                    }
                 ]
             }
         ]
