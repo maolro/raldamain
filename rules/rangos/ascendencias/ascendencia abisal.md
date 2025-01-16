@@ -131,7 +131,7 @@ Abrazas el poder del abismo para convertirte en un avatar viviente del caos. Al 
 
 - Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
-- Aumentas el daño base de tus ataques naturales a 1d10 y podrás manifestar cualquier arma de tu elección a partir de tu cuerpo. Emplearás tu modificador de Ascendencia Abisal para 
+- Aumentas el daño base de tus ataques naturales a 1d10 y podrás manifestar cualquier arma de tu elección a partir de tu cuerpo. Emplearás tu modificador de Ascendencia Abisal para tiros con ellas.
 - Aprendes todas las técnicas hasta rango V relacionadas con un arma o estilo marcial de tu elección. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas la primera vez que las uses en una ronda.
 - Una mutación adicional se vuelve permanente en ti además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus. Dicha mutación puede ser una que diseñes si la aprueba el DJ.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
