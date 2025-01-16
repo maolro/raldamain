@@ -1,0 +1,33 @@
+fields:
+ - name: nacionalidad
+   text: Nacionalidad
+ - name: alineamiento
+   text: Alineamiento
+ - name: fecha-de-nacimiento
+   text: Fecha de nacimiento
+ - name: fecha-de-muerte 
+   text: Fecha de muerte
+ - name: rangos 
+   text: Rangos
+ - name: fecha
+   text: Fecha
+ - name: lugar
+   text: Lugar
+ - name: participantes
+   text: Participantes
+ - name: resultado
+   text: Resultado
+ - name: fundacion
+   text: Fundación
+ - name: disolucion
+   text: Disolución
+ - name: capital
+   text: Capital
+ - name: gobierno
+   text: Gobierno
+ - name: idioma
+   text: Idioma
+ - name: moneda
+   text: Moneda
+ - name: niveles
+   text: Niveles   
