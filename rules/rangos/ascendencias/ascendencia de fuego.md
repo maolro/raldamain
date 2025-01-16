@@ -16,7 +16,7 @@ Ascendencia de Fuego tiene las siguientes reglas fundamentales que se aplican a 
 
 ## Rango I 
 
-### Fuego interior
+### Fuego Interior
 
 *Innata, Pasiva*
 
@@ -90,7 +90,7 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 Eres capaz de emplear el poder del fuego para sanar tus heridas, renaciendo desde las cenizas como si fueras un fénix. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 1 si te encuentras en un entorno en llamas o afectado por calor extremo. Adicionalmente, la primera vez que mueras en un entorno en llamas puedes revivir a 1 PV.
 
-**Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad si te encuentras en *posición defensiva*
+**Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad si te encuentras en *posición defensiva*.
 
 ### Asalto Flamígero
 
@@ -100,7 +100,7 @@ Eres capaz de emplear el poder del fuego para sanar tus heridas, renaciendo desd
 
 **Duración:** Concentración
 
-Liberas tu fuego interior para cubrir tu cuerpo de llamas, mejorando notablemente la fuerza de tus ataques físicos. Mientras este hechizo permanezca activo tus ataques Físicos aumentan su alcance a cercano e infligen 1d6 + Rango daño Fuego y una *quemadura leve* al impactar. 
+Liberas tu fuego interior para cubrir tu cuerpo de llamas, mejorando notablemente la fuerza de tus ataques físicos. Mientras este hechizo permanezca activo tus ataques Físicos aumentan su alcance a cercano e infligen 1d8 + Rango daño Fuego y una *quemadura leve* al impactar. 
 
 Dicho daño se acumula con el otorgado por Ataques Infundidos y contará como un ataque de Área, provocando así la mitad de daño al fallar. Esta habilidad permanecerá activa hasta que pierdas la concentración o seas impactado por un ataque de Agua o Hielo del tamaño adecuado.
 
@@ -114,7 +114,7 @@ Eres capaz de emplear los hechizos Erupción abrasadora y Maestro de las Llamas 
 
 *Innata, Pasiva*
 
-Empleas tu chi interior como fuente de energía para tus habilidades mágicas, sacrificando tu cuerpo con el fin de conseguir la victoria. Hasta tres veces por ronda puedes recuperar un punto de chi o vigor si escoges sufrir una *herida permanente leve* al inicio de tu siguiente turno. Las *heridas permanentes* recibidas de esta manera no pueden ser sanadas salvo por tu habilidad Renacer del Fénix.
+Empleas tu chi interior como fuente de energía para tus habilidades mágicas, sacrificando tu cuerpo con el fin de conseguir la victoria. Hasta tres veces por ronda puedes reducir tu Vitalidad máxima por 2 o tus PV máximos por 1 para recuperar un punto de Chi o Vigor. Estas reducciones durarán hasta que realice un descanso largo y los usos de esta habilidad se acumulan con Hasta el Límite.
 
 ### Llama Viviente
 
@@ -128,7 +128,7 @@ Conviertes tu cuerpo en una llama viviente para transformarte en uno con el fueg
 
 Tu forma de fuego te permite también absorber el fuego que te rodea para potenciar tus habilidades. Esto te permite emplear las habilidades Aura abrasadora, Propulsión y Asalto flamígero como acción bonus si estás rodeado por fuego. Además, toda criatura que empiece su turno en una posición adyacente ti o que te impacte con un ataque físico deberá tener éxito en un tiro de CON frente a tu modificador de Ascendencia de Fuego o sufre 1d6 + CAR daño Fuego.
 
-Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con en llamas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos
+Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con en llamas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos.
 
 ## Rango VI 
 
