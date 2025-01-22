@@ -11,7 +11,9 @@ image: ajek.jpg
 
 "Mira, amigo mío. Muchos intentán convencerte que representan algo más grande que ellos mismos, algo por lo que vale la pena dar tu vida. Si te crees sus patrañas no harás más que causarte dolor y sufrimiento. Como alguien que siempre ha estado a tu lado te recomiendo honestamente que deberías pensar más en tu propia felicidad que en cumplir los deseos de los demás."
 
-Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 4010. Caracterizado por su actitud tolerante y honesta, Ajek careció del fervor de muchos de sus compañeros en la orden y siempre fue más cercano a los espíritus que a Feyn. Aunque su forma de pensar despertó algunos conflictos, Ajek gozó de gran popularidad por sus numerosas victorias en el campo de batalla y fuerte lealtad. Era especialmente cercano a Fileon y fue un constante apoyo para él en sus momentos más difíciles, convirtiéndose en su persona de mayor confianza y participando junto a él en numerosas campañas.  No obstante, fue incapaz de darse cuenta de las oscuras ambiciones de su mejor amigo ni la manipulación que ejerció Basileos sobre él hasta que Fileon se realizó un golpe de estado en 4010 y se proclamó como nuevo emperador de Ustilus. Al principio intentó razonar con su amigo, pero tras verlo atacar a Ileria delante de sus ojos perdió el control y se batió en un duelo contra él para intentar acabar con su tiranía. No se sabe cuál fue el destino final de Ajek tras el duelo, pero se especula que sobrevivió y permanece oculto en un lugar aislado de Ustilus bajo una nueva identidad.
+Ajek fue un respetado caballero de Ustilus y miembro del Cónclave entre 4002 y 4010. Caracterizado por su actitud tolerante y honesta, Ajek careció del fervor de muchos de sus compañeros en la orden y siempre fue más cercano a los espíritus que a Feyn. Aunque su forma de pensar despertó algunos conflictos, Ajek gozó de gran popularidad por sus numerosas victorias en el campo de batalla y fuerte lealtad. Era especialmente cercano a Fileon y fue un constante apoyo para él en sus momentos más difíciles, convirtiéndose en su persona de mayor confianza y participando junto a él en numerosas campañas.  
+
+No obstante, fue incapaz de darse cuenta de las oscuras ambiciones de su mejor amigo ni la manipulación que ejerció Basileos sobre él hasta que Fileon se realizó un golpe de estado en 4010 y se proclamó como nuevo emperador de Ustilus. Al principio intentó razonar con su amigo, pero tras verlo atacar a Ileria delante de sus ojos perdió el control y se batió en un duelo contra él para intentar acabar con su tiranía. No se sabe cuál fue el destino final de Ajek tras el duelo, pero se especula que sobrevivió y permanece oculto en un lugar aislado de Ustilus bajo una nueva identidad.
 
 # Biografía
 
@@ -31,11 +33,7 @@ El año 4000 significó una profunda pérdida para Ajek ya que no solo perdió a
 
 ## La invasión mazarina y lucha contra el Pacto (4001-4002)
 
--
 
--
-
--
 
 ## Golpe de estado y guerras hobgoblin (4002-4005)
 
@@ -69,7 +67,7 @@ El año 4000 significó una profunda pérdida para Ajek ya que no solo perdió a
 
 ## Fileon
 
-"Viejo amigo, solo puedo decirte que he fracasado. Hemos pasado juntos tanto tiempo y vivido tantas aventuras que el camino que escogiste al final me llena de tristeza e incomprensión. Cada día me atormenta pensar que si hubiera sido un mejor amigo, si te hubiera ayudado cuando estabas en tus puntos más bajos y no hubiera sido ciego a la oscuridad que habitaba en tu corazón quizás te pudiera haber salvado. Pero lo hecho, hecho está. Con gran dolor en mi corazón debo acabar contigo para liberar al mundo de tu tiranía y darte por fin un descanso de este cruel mundo."
+"Viejo amigo, solo puedo decirte que he fracasado. Hemos pasado juntos tanto tiempo juntos y vivido tantas aventuras que el camino que escogiste al final me llena de tristeza e incomprensión. Cada día me atormenta pensar que si hubiera sido un mejor amigo, si te hubiera ayudado cuando estabas en tus puntos más bajos y no hubiera sido ciego a la oscuridad que habitaba en tu corazón quizás te pudiera haber salvado. Pero lo hecho, hecho está. Con gran dolor en mi corazón debo acabar contigo para liberar al mundo de tu tiranía y darte por fin un descanso de este cruel mundo."
 
 ## Ileria
 
@@ -85,7 +83,7 @@ El año 4000 significó una profunda pérdida para Ajek ya que no solo perdió a
 
 ## Yabu
 
-"Nunca me imaginaría que acabaríamos luchando juntos, pero aquí estamos. Cuando le conocí y nos enfrentamos era un oni que solo deseaba ser el más fuerte, pero parece que la vejez le ha hecho madurar y ver el mundo desde una mejor perspectiva. Eso sí, por muy fuerte que se crea siempre le recordaré que necesitó la ayuda de su amigo oni para que no le derrotara."
+"Nunca me imaginaría que acabaríamos luchando codo a codo, pero aquí estamos. Cuando le conocí solo era un oni que solo deseaba ser el más fuerte, pero parece que la vejez le ha hecho madurar y ver el mundo desde una mejor perspectiva. Eso sí, por muy fuerte que se crea siempre le recordaré que necesitó la ayuda de su amigo oni para que no le derrotase."
 
 # Estadísticas
 

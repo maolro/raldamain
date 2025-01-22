@@ -11,7 +11,9 @@ image: laicon.jpg
 
 "Siempre me sorprende la devoción de un fanático dispuesto a vivir una mentira en lugar de aceptar la realidad. Yo te hago esta pregunta: ¿Cómo sabes qué quiere tu dios de ti? Tú me dirás que te habla, que tienes sus sagradas escrituras para guiarte. Pero cómo eres capaz de comprender los deseos de una entidad mucho más grande de ti, una entidad para la cual eres irrelevante. No lo sabes, y continúas sirviéndola ciegamente y malgastando tu vida para una causa sin sentido. Yo ya he abierto los ojos y me he liberado de la tiranía de los dioses, y ahora espero guiar a toda la humanidad para que pueda romper esta cadena que tanto la ata y que por una vez en la historia viva para satisfacer sus propios deseos y no los de un ser superior."
 
-Laicon de Dairov fue un revolucionario ustilés y líder del Pacto hasta el año 4003. Antaño un caballero de Ustilus y elegido de Feyn, la muerte de su dios quebró su fe por completo y le motivó a abandonar la orden. Después de su abandono empezó a escribir varios libros heréticos donde afirmaba que Feyn no era más que un gran embaucador y toda la humanidad estaba siguiendo una mentira. Estos escritos le convertirían en un fugitivo y tuvo que mantenerse oculto durante un largo tiempo para evitar las autoridades ustilesas. Laicon volvió a aparecer como líder de la organización secreta revolucionaria conocida como el Pacto e intentó fomentar una revolución en la ciudad sureña de Rizad, pero fue capturado por las fuerzas ustilesas y condenado a muerte. Antes de su ejecución fue visitado por el culto a Sek-Tebos quienes le dieron la oportunidad de vivir a cambio de servirles, un trato que no tuvo más opción que aceptar. El culto acabaría usándolo para llevar a los miembros del Pacto a una trampa para así asesinarlos, acabando con él cuando dejó de ser útil para ellos. No obstante, antes de morir le contó a Madeleine todos los secretos del Pacto además de información sobre la secta para que ella continuara su lucha.
+Laicon de Dairov fue un revolucionario ustilés y líder del Pacto entre 4000 y 4003. Antaño un caballero de Ustilus y elegido de Feyn, la muerte de su dios quebró su fe por completo y le motivó a abandonar la orden. Después de su abandono empezó a escribir varios libros heréticos donde afirmaba que Feyn no era más que un gran embaucador y toda la humanidad estaba siguiendo una mentira. Estos escritos le convertirían en un fugitivo y tuvo que mantenerse oculto durante un largo tiempo para evitar las autoridades ustilesas. 
+
+Tras pasar varios años desaparecido, Laicon volvería a aparecer en el año 4003 como líder de la organización secreta revolucionaria conocida como el Pacto e intentó fomentar una revolución en la ciudad sureña de Rizad, pero fue capturado por las fuerzas ustilesas y condenado a muerte. Antes de su ejecución fue visitado por el culto a Sek-Tebos quienes le dieron la oportunidad de vivir a cambio de servirles, un trato que no tuvo más opción que aceptar. El culto acabaría usándolo para llevar a los miembros del Pacto a una trampa para así asesinarlos, acabando con él cuando dejó de ser útil para ellos. No obstante, antes de morir le contó a Madeleine todos los secretos del Pacto además de información sobre la secta para que ella continuara su lucha.
 
 # Biografía
 
@@ -55,10 +57,6 @@ Es en esencia una persona perceptiva que se vale de la labia principalmente para
 
 "Mi discípulo ha cambiado tanto desde que le conocí. Lucha con ferocidad por su orden y compañeros, moviéndole no la religión sino lo que él ve que es correcto. Aunque esto le haga un temible enemigo imposible de corromper, me enorgullece que haya aprendido tanto de mí"
 
-## Basileos
-
-""
-
 ## Madeleine
 
 "Madeleine es todo un misterio. Como yo, está sola en este mundo, buscando aferrarse al servicio de otra persona para que su vida tenga sentido. Todos nuestros encuentros han sido un entretenido desafío, y su convicción e inteligencia me recuerdan tanto a mí. Lamentablemente, este mundo no es lo suficiente grande para nosotros dos y no puedo conseguir mis objetivos mientras ella siga viva. Qué pena"
@@ -67,11 +65,7 @@ Es en esencia una persona perceptiva que se vale de la labia principalmente para
 
 "Este joven soldado es mucho más de lo que aparenta. Su palabrería de un nuevo dios y las convicciones con las que lo defiende pueden indicar su relación con una organización superior. Personas como él son los perfectos peones: siguen a sus superiores con devoción y no se dan cuenta de lo irrelevantes que son sus vidas."
 
-## Theodora
-
-""
-
-## Tirion
+## Thirion
 
 "Un necio con más poder del que se merece. Lucha sin pensar en las consecuencias de sus actos y malgasta sus talentos en la causa equivocada. Explotaré sus habilidades al máximo y cuando termine con él habrá que eliminarlo. Viendo los resultados, pienso que quizás mis compañeros del Pacto han cometido un error creando guerreros como él."
 

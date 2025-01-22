@@ -49,8 +49,6 @@ Basileos aprovechó la oportunidad que le brindó la muerte de Feyn para llevar 
 
 ## Contra el Pacto y los Justos (4001-4010)
 
-
-
 Para lograrlo, ordenó a su secta colaborar en secreto con Madeleine, una jugadora clave en su estrategia. Juntos, pusieron en marcha una operación encubierta para capturar al líder del Pacto, Laicon. Esta audaz maniobra se llevó a cabo con el objetivo de debilitar y subyugar a la organización, y allanar el camino para su toma de control.
 
 Basileos luego se presentaría ante Laicon en el momento en que este se encontraba en prisión y enfrentaba la perspectiva de su ejecución. En ese crítico encuentro, le ofreció a Laicon una propuesta intrigante: la oportunidad de fingir su propia muerte y evitar la ejecución a cambio de ponerse a su servicio. Laicon, a regañadientes pero quizás sin otra alternativa viable, aceptó esta proposición, lo que aseguró la lealtad forzada del líder del Pacto a Basileos.

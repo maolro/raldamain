@@ -9,7 +9,7 @@ rangos: Ascendencia de fuego, cadenas, fortitud, ira, reflejos, combate doble
 image: thirion.jpg
 ---
 
-"Dices que este mundo está roto y solo tú puedes salvarlo, pero en ese camino de solucionar el mundo vas a cavar miles de tumbas, esas tumbas podrían ser de mis seres queridos, así que por favor retírate de tu objetivo, no quiero tener que matar a nadie mas."
+"Dices que este mundo está roto y solo tú puedes salvarlo, pero en ese camino de solucionar el mundo vas a cavar miles de tumbas. Tumbas podrían ser de mis seres queridos. Por favor, retírate ya. No quiero tener que matar a nadie más."
 
 "Thirion" nacio en Temash siendo abandonado por sus padres a la corta edad de 3 años, despues de eso estuvo en un orfanato durante algunos años, asta que un dia (por culpa de su extraña fuerza) mato en un accidente a una de las niñas del orfanato, luego de eso huyo a las calles en donde estuvo sobreviviendo como pudo. Un dia Pandeshar lo acogio en su casa para usarlo en su experimento sobre la ligación elemental, al principio el empezo a vivir con el y Zanshila pero Pandeshar termino por encerrarlo y empezar su experimento con el.
 
