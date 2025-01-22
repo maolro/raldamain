@@ -45,13 +45,15 @@ Al igual que vuestros instintos, vuestro chi interno a comenzado a unirse mas pr
 
 ## Rango III
 
-### Vida compartida
+### Vida Compartida
 
 *Innata, Pasiva*
 
-Vuestros destinos han comenzado a entrelazarse, permitiéndoos compartir dicha y enfermedad por igual. De esta forma podrás mantener un vínculo vital con tu familiar, el cual permitirá que como reacción a sufrir daño alguno de los dos podáis transferir hasta la mitad de este a la otra parte.
+Vuestros destinos han comenzado a entrelazarse, permitiéndoos compartir dicha y enfermedad por igual. De esta forma podrás mantener un vínculo vital con tu familiar, el cual permitirá que como reacción a sufrir daño alguno de los dos podáis transferir hasta la mitad de este a la otra parte. Solo podrás tener un vínculo activo a la vez.
 
-### Invocador experto
+**Empoderar** (1 chi): Estableces un vínculo con un familiar adicional que tengas. Esto te permitirá distribuir el daño entre ambos de la misma manera que la habilidad Transferencia Vital.	
+
+### Invocador Experto
 
 *Innata, Pasiva*
 
@@ -59,11 +61,11 @@ Habiendo alcanzado un nuevo nivel de simbiosis con la energía que conforma a tu
 
 ## Rango IV
 
-### Resistencias combinadas
+### Resistencias Combinadas
 
 *Innata, Pasiva*
 
-Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Debido a eso ahora vuestra naturaleza ha comenzado a mezclarse, no siendo dos individuos separados sino dos partes de un todo. Por ello todas las resistencias que tenga tu familiar te serán compartidas contigo, así como tus resistencias, que se compartirán con tu familiar. 
+Tú y tu familiar habéis comenzado a influenciaros mutuamente en un nivel mas profundo que afecta vuestros cuerpos después de tanto tiempo de compartir vuestro chi interno. Todas las Resistencias que tenga tu familiar te serán compartidas contigo, así como tus Resistencias se compartirán con tu familiar. Las Resistencias recibidas no se acumularán y deberán ser factibles para cada criatura. Si tienes más de un familiar activo deberás escoger la criatura específica con la que te vinculas además que las resistencias temporales no se compartirán.
 
 **Empoderar** (1 chi o vigor): Empleas el modificador de tu Familiar para defenderte de un efecto hostil o la Invocación emplea el tuyo.
 
@@ -87,7 +89,7 @@ Empleando las cadenas con las que mantienes la esencia de tu familiar con una fo
 
 Compartes una parte de la misma esencia que te da vida con tu familiar, empoderando su chi interno y haciendo que el vínculo que os une se vuelva mas fuerte que nunca. De esta manera un familiar que controles recibirá 20 vialidad temporal, además de ventaja en todos sus tiros. Así mismo aumentará su defensa por 6 y recibirá 4 contadores de escudo. En caso de perder la vitalidad temporal sin embargo deberás tirar invocación o tu familiar perderá el control, quedando confundido por la cantidad de energía que ya no es capaz de manejar. 
 
-### Unidos hasta la muerte
+### Unidos hasta la Muerte
 
 **Coste:** 1 acción y 3 chi o vigor
 
