@@ -31,11 +31,11 @@ En esta campaña se produjeron por primera vez los roces entre las autoridades u
 
 Abshalom volvió a entrar en acción un año después tras el descubrimiento de una conspiración secreta en contra de Ustilus dirigida por una organización llamada el Pacto cuyo líder parecía ser su antiguo compañero Laicon. Esta revelación tuvo gran impacto en Abshalom, quien estuvo dispuesto a colaborar con Ia líder reformista Ileria para acabar con el Pacto y saldar sus cuentas pendientes. La búsqueda le llevó hasta la ciudad de Rizad, dónde se reunió con miembros de su clan para aumentar la vigilancia en esta ciudad. Gracias a las acciones de la Hermandad del Cuervo y la inteligencia secreta ustilesa Abshalom pudo dar con Laicon e intentó una arriesgada operación para capturarlo. Esta tuvo una inesperada complicación cuando algunos agentes ustileses fueron capturados por Laicon e inculpados de asesinar a los líderes tribales Temash, inflamando las tensiones étnicas en la ciudad y forzando a Abshalom a entrar forzosamente en el barrio Temash para rescatar a los prisioneros. 
 
-Esta decisión provocaría una violenta protesta de los Temash y aunque logró su objetivo de capturar a Laicon la protesta creció en intensidad hasta convertirse en una violenta rebelión contra las mismas autoridades ustilesas. En contra de los deseos de Ileria él sofocó las revueltas con durísima represión y cuando esta empezó a debilitarse dio el golpe final ejecutando a Laicon y exponiendo su cadáver en la plaza principal. Con estas duras medidas logró disipar al Pacto en Rizad, pero los verdaderos problemas ded Ustius solo habían comenzado.
+Esta decisión provocaría una violenta protesta de los Temash y aunque logró su objetivo de capturar a Laicon la protesta creció en intensidad hasta convertirse en una violenta rebelión contra las mismas autoridades ustilesas. En contra de los deseos de Ileria él sofocó las revueltas con durísima represión y cuando esta empezó a debilitarse dio el golpe final ejecutando a Laicon y exponiendo su cadáver en la plaza principal. Con estas duras medidas logró disipar al Pacto en Rizad, pero los verdaderos problemas de Ustilus solo habían comenzado.
 
 ## El golpe de estado y gobierno militar (4002-4005)
 
-La revuelta en Rizad fue una chispa de un incendio de revolución que se extendió por todo el Imperio de Ustilus, reactivando antiguas venganzas e inspirando a numerosos pueblos sometidos a alzarse contra el poderío imperial. La divisón política frente a este hecho y la incompetencia de numerosos goberantes fortaleció el desdén de Abshalom hacia la clase gobernante, quien empezó a pensar que la única manera de salvar la obra de Feyn era tomando control directo. Conspirando con otros caballeros y autoridades militares él inició los preparativos para ejecutar un golpe de estado. Tras consultar con el sumo sacerdote de Feyn y recibir el visto bueno, Abshalom y sus caballeros irrumpieron en las cortes en el día del voto decisivo, declarando el estado de guerra y suspendiendo las Cortes hasta que vuelva la paz a Ustilus.
+La revuelta en Rizad fue la chispa de un incendio de revolución que se extendió por todo el Imperio de Ustilus, reactivando antiguas venganzas e inspirando a numerosos pueblos sometidos a alzarse contra el poderío imperial. La división política frente a este hecho y la incompetencia de numerosos gobernantes fortaleció el desdén de Abshalom hacia la clase gobernante, quien empezó a pensar que la única manera de salvar la obra de Feyn era tomando control directo. Conspirando con otros caballeros y autoridades militares él inició los preparativos para ejecutar un golpe de estado. Tras consultar con el sumo sacerdote de Feyn y recibir el visto bueno, Abshalom y sus caballeros irrumpieron en las cortes en el día del voto decisivo, declarando el estado de guerra y suspendiendo las Cortes hasta que vuelva la paz a Ustilus.
 
 El gobierno militar de Abshalom destacó por su fuerte conservadurismo y oposición absoluta a cualquier reforma. Los caballeros se convirtieron en la mayor autoridad militar y suplantaron a muchos de los antiguos oficiales, decisión que conentó a la tropa a costa de enfadar a los mandos militares. Durante su mandato la herejía y la blasfemia se persiguieron con firmeza, colocando en esta categoría a cualquier declaración sobre la muerte de Feyn o reforma religiosa. Aquellos opuestos a su régimen tanto nobles como plebeyos fueron frecuentemente condenados a varios años de trabajos forzosos en las minas de chi en Tamashkhan, lugares infames por su crueldad y pésimas condiciones de trabajo. No obstante, su gobierno tuvo gran popularidad entre el pueblo llano debido a su persecución implacable de la corrupción política y su lucha contra muchos de los abusos de la alta nobleza. 
 
@@ -43,7 +43,7 @@ El primer gran desafío del gobierno de Abshalom fue la llamada Guerra de la Leg
 
 Después de dos años de guerra infructuosa la popularidad de Abshalom empezó a decaer, impulsándolo a buscar una solución rápida para el conflicto aunque eso significarse una alianza con sus antiguos enemigos. Por ello volvió a colaborar con Ileria para que esta lograse un tratado de paz con la Legión, pero cuando esto fracasó cambió su estrategia y escogió aliarse con los insurgentes de Yabu, un grupo rebelde oni opuesto a la Legión. Los insurgentes de Yabu fueron clave para lograr la victoria, pero para ello tuvo que hacer numerosas concesiones a dicho grupo respecto a la soberanía de Thalos, entre ellas el autogobierno y libertad religiosa para la región, que resultaron inaceptables para muchos altos cargos del ejército y políticos imperialistas.
 
-La autoridad de Abshalom quedó aún más socavada después que saliese a luz que la Hermandad del Cuervo, una unidad de élite militar fuertemente asociada con él, estuviese infiltrada por una secta herética. Con oposición a su régimen cada vez más creciente y la renaudación de nuevos conflictos en Tamashkhan, Abshalom decidió jugárselo todo a la última carta y emprendió una gran campaña en el sur liderada personalmente por él con el fin de traer la paz a Ustilus o morir en el intento.
+La autoridad de Abshalom quedó aún más socavada después que saliese a luz que la Hermandad del Cuervo, una unidad de élite militar fuertemente asociada con él, estuviese infiltrada por una secta herética. Con oposición a su régimen cada vez más creciente y la reanudación de nuevos conflictos en Tamashkhan, Abshalom decidió jugárselo todo a la última carta y emprendió una gran campaña en el sur liderada personalmente por él con el fin de traer la paz a Ustilus o morir en el intento.
 
 ## La campaña del sur (4005)
 
@@ -61,21 +61,21 @@ Cuando los Temash atacaron el campamento Abshalom escogió mantenerse atrás jun
 
 Abshalom puede descrito como un baluarte de la tradición en un mundo rápidamente cambiante. Es muy fiel a sus principios y a la ley de Feyn, creyendo que los problemas actuales del Imperio se deben a su falta de fe. Cuando habla, dice exactamente lo que piensa y espera ser obedecido al momento, ganándole pocos amigos entre las élites políticas y militares de Ustilus. No obstante, tiene gran capacidad de liderazgo y aunque sea muy duro con aquellos que comanda luchará junto a ellos hasta el final.
 
-Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su orden, luchando con su espada como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños y resistir heridas por encima de la media. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor y luchará hasta el final para lo que él cree que es justo. La muerte de Feyn le ha hecho perder gran parte de sus habilidades divinas, pero continúa siendo un guerrero destacable y una fuente de inspiración para sus aliados. 
+Respecto a sus especialidades Abshalom es uno de los mejores espadachines de su orden, luchando con su espada como si fuese una extensión de su cuerpo. Tiene además gran fuerza física y fortitud, capaz de hasta romper armaduras con sus puños y resistir heridas por encima de la media. Su inquebrantable voluntad hace que nunca se rinda ante un peligro mayor y luchará hasta el final para lo que él cree que es justo. La muerte de Feyn le ha hecho perder gran parte de sus habilidades divinas, pero continúa siendo un guerrero destacable y una fuente de inspiración para sus aliados. 
 
 # Relaciones
 
 ## Ajek
 
-"En un principio tuve mis dudas sobre este caballero salvaje, pero tras la muerte de Feyn no ha mostrado más que lealtad mientras otros nos han abandonado. No apruebo de muchos de sus ideales y nunca ha sido un verdadero devoto, pero sé que cuando llegue la hora de la verdad puedo contar con él."
+"En un principio tuve mis dudas sobre este caballero salvaje, pero tras la muerte de Feyn no ha mostrado más que lealtad mientras otros nos han abandonado. No apruebo de muchos de sus ideales y nunca ha sido un verdadero devoto, pero sé que cuando llegue la hora de la verdad puedo confiar em él."
 
 ## Chandrial
 
-"A primera vista parece un santo, un líder justo que merece ser seguido. Solo con la palabra es capaz de hacer que hasta los más devotos a Feyn abandonen su fe y caigan rendidos a sus pies, tratándolo como un nuevo dios. Por este motivo es uno de los enemigos más peligrosos con los que me he encontrado y si no es detenido pronto significará un grave problema para toda Ustilus.
+"A primera vista parece un santo, un líder justo que merece ser seguido. Solo con las palabras es capaz de hacer que hasta los más devotos a Feyn abandonen su fe y caigan rendidos a sus pies, tratándolo como un nuevo dios. Por este motivo es uno de los enemigos más peligrosos con los que me he encontrado y si no es detenido pronto significará un grave problema para toda Ustilus."
 
 ## Eliyet
 
-"Mi fiel discípula. Hay pocas personas dispuestas a mantener la fe tras en una situación tan desesperante y me alegra ver que la nueva generación de caballeros tiene a personas tan capaces como ella entre sus filas. Su sentido de justicia es tan implacable como el mío y sé que puede ser capaz de grandes cosas."
+"Mi fiel discípula. Hay pocas personas dispuestas a mantener la fe tras en una situación tan aciaga y me alegra ver que la nueva generación de caballeros tiene a personas tan capaces como ella entre sus filas. Su sentido de justicia es tan implacable como el mío y sé que puede ser capaz de grandes cosas."
 
 ## Fileon
 
@@ -83,7 +83,7 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 ## Ileria
 
-"Cuando habla sus palabras están llenas de pasión y firmeza, pero con políticos como ella nunca puedes saber cuánto es real y cuánto es un acto. Dice que lo hace todo por en el pueblo sin ni siquiera consultarlo, y que actúa por el beneficio del Imperio mientras ataca las tradiciones que lo han construido. Debemos ser los caballeros, y no políticos hipócritas como ella, quiénes salvemos a Ustilus en este momento de mayor crisis" 
+"Cuando habla sus palabras están llenas de pasión y firmeza, pero con políticos como ella nunca puedes saber cuánto es real y cuánto es una actuación. Dice que lo hace todo por en el pueblo sin ni siquiera consultarlo, y que actúa por el beneficio del Imperio mientras ataca las tradiciones que lo han construido. Debemos ser los caballeros, y no políticos hipócritas como ella, quiénes salvemos a Ustilus en este momento de mayor crisis" 
 
 ## Laicon
 
@@ -91,7 +91,7 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 ## Lucanor
 
-"Políticos repugnantes como él son los responsables de la corrupción y falta de fe en Ustilus. Se cubre con la bandera del patriotismo y la fe pero no cree en nada más que sus propios intereses. Esta gente estaría dispuesta a traicionar hasta a Feyn mismo si eso les proporcionará más poder y riquezas."
+"Políticos repugnantes como él son los responsables de la corrupción y falta de fe en Ustilus. Se cubre con la bandera del patriotismo y la fe pero no cree en nada más que sus propios intereses. Esta gente estaría dispuesta a traicionar hasta a Feyn mismo si eso les proporcionara más poder y riquezas."
 
 ## Madeleine
 
@@ -103,7 +103,7 @@ Respecto a sus especialidades Abslhamon es uno de los mejores espadachines de su
 
 ## Yabu
 
-"Sólo la desesperación me ha llevado a aliarme con este individuo. No me despierta ninguna confianza ni él ni los espíritus que venera se ha opuesto repetidas veces a mi autoridad, pero debo reconocer que es muy efectivo en el campo de batalla y vale más la pena tenerlo como aliado que como enemigo. Eso sí, no debería andarse con tanto aire de superioridad considerando la posición en la que está."
+"Sólo la desesperación me ha llevado a una alianza con este cuestionable individuo. No me despierta ninguna confianza ni él ni los espíritus que venera. Se ha opuesto repetidas veces a mi autoridad, pero debo reconocer que es muy efectivo en el campo de batalla y vale más la pena tenerlo como aliado que como enemigo. Eso sí, no debería andarse con tanto aire de superioridad considerando la posición en la que está."
 
 # Estadísticas
 

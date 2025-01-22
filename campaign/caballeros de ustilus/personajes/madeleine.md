@@ -93,7 +93,7 @@ Madeleine se alistó al ejercito cuando era joven tras perder a su familia, sien
 
 ## Stannish
 
-""
+"Cuando lo hicimos aquella vez a quién de las dos mirabas, ¿a mi o a Ileria?"
 
 ## Theodora
 
