@@ -51,7 +51,7 @@ Mientras continúes inspirando terror todo enemigo a distancia media de ti que p
 
 ## Rango II  
 
-### Línea defensiva
+### Línea Defensiva
 
 *Moral, Innata, Duradera, Visual/Auditiva*
 
@@ -67,7 +67,7 @@ Los afectados por esta habilidad podrán también defenderse de ataques sorpresa
 
 **Empoderar** (1 vigor): Un aliado afectado por esta habilidad podrá repetir un tiro defensivo y quedarse con el mejor resultado.
 
-### Furia de batalla
+### Furia de Batalla
 
 *Moral, Innata, Duradera, Visual/Auditiva*
 
@@ -109,13 +109,13 @@ Eres capaz de inspirar a los heridos a seguir combatiendo y superar sus límites
 
 **Duración:** Seis rondas
 
-Eres capaz de sacar el héroe interior de aquellos que te acompañan e inspirarles a realizar grandes hazañas. Al activar esta habilidad todos los aliados a distancia media que puedan oírte y escucharte quedarán inspirados, otorgándoles así PV temporales iguales a tu Rango + 2 además de Ventaja en todos sus tiros de ataque, defensa y habilidad. Los bonificadores de Inspirar heroísmo no se acumulan con aquellos que otorgues con Voz del comandante y se perderán cuando al afectado se le acaben sus PV temporales o pasen seis rondas.
+Eres capaz de sacar el héroe interior de aquellos que te acompañan e inspirarles a realizar grandes hazañas. Al activar esta habilidad todos los aliados a distancia media que puedan oírte y escucharte quedarán inspirados, otorgándoles así PV temporales iguales a tu Rango + 2 además de Ventaja en todos sus tiros de ataque, defensa y habilidad. Los bonificadores de Inspirar heroísmo no se acumulan con aquellos que otorgues con Voz del Comandante y se perderán cuando al afectado se le acaben sus PV temporales o pasen seis rondas.
 
 En lugar de inspirar puedes emplear esta habilidad  para empujarte a realizar grandes hazañas, afectándote únicamente a ti mismo y recibiendo los mismos bonificadores. Al igual que tus aliados perderás los bonificadores de esta habilidad cuando se acaben tus PV temporales.
 
 **Empoderar** (1 vigor): Los afectados por esta habilidad recibirán el doble de PV temporales.
 
-### Movimiento estratégico
+### Movimiento Estratégico
 
 *Moral, Duradero, Mejora, Auditivo/Visual*
 
@@ -143,7 +143,7 @@ Tu voluntad poderosa te da fuerza para superar situaciones imposibles. Tras frac
 
 ## Rango IV
 
-### Asalto coordinado
+### Asalto Coordinado
 
 *Moral, Innata, Reacción, Visual/Auditiva*
 
@@ -155,7 +155,7 @@ Tu voluntad poderosa te da fuerza para superar situaciones imposibles. Tras frac
 
 Diriges a dos de tus aliados para que compenetren sus acciones a la perfección. En respuesta a que un aliado realice una acción das una señal visual o auditiva a otro personaje a distancia media de ti para que coordine sus acciones con él. Esto permitirá al segundo personaje a emplear cualquiera de sus habilidades como acción bonus justo después de su aliado. Queda claro que deberá seguir pagando los costes de vigor o chi que tenga la habilidad utilizada en caso que los tenga.
 
-### Defensa táctica
+### Defensa Táctica
 
 *Moral, Innata, Duradera, Mejora, Auditivo/Visual*
 
@@ -171,7 +171,7 @@ Esta habilidad te otorgará también una cantidad de *contadores de escudo* igua
 
 **Empoderar** (1 vigor): Restauras la mitad de los *contadores de escudo* totales otorgados por esta habilidad redondeando hacia abajo.
 
-### Incitar el pánico
+### Incitar el Pánico
 
 *Moral, Miedo, Innata, Visual/Auditiva*
 
