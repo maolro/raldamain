@@ -1281,7 +1281,7 @@
                 "attributes": ["pulso-gravitatorio","arrastre-gravitatorio","pozo-gravitatorio"],
                 "abilities": [
                     {
-                        "name": "Peso Gravitatorio",
+                        "name": "Campo de Repulsión",
                         "type": "Pasiva",
                         "tags": "Gravedad",
                         "skill": "magia-gravitatori",
