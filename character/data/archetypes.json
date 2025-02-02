@@ -1025,9 +1025,15 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["esquiva-asombrosa","gran-acrobata","cadena-giratoria","escudo-humano","evasion"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Especialista con Cadenas",
+                        "type": "Pasiva",
+                        "skill": "cadenas",
+                        "tags": "Innata",
+                        "description": "Obtiene Ventaja en todos sus tiros relacionados con Cadenas y aumenta su daño base con ellas por 1d6."
+                    }
                 ]
             },
             {
@@ -1234,6 +1240,51 @@
                         "type": "Pasiva",
                         "tags": "Vida, Visual",
                         "skill": "magia-de-vida",
+                        "resistances": ["A Distancia","Sombríos"],
+                        "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
+                    }
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            }
+        ]
+    },
+    "esencia-del-vacio": {
+        "name": "Esencia del Vacío",
+        "stat": "itl/cha",
+        "modranks": ["magia-gravitatoria","magia-espacial","mente-desencadenada"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "itl", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["pulso-gravitatorio","arrastre-gravitatorio","pozo-gravitatorio"],
+                "abilities": [
+                    {
+                        "name": "Peso Gravitatorio",
+                        "type": "Pasiva",
+                        "tags": "Gravedad",
+                        "skill": "magia-gravitatori",
                         "resistances": ["A Distancia","Sombríos"],
                         "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
                     }
@@ -1516,7 +1567,7 @@
                 ]
             },
             {
-                "attributes": ["poder-del-dolor", "presencia-divina", "muro-de-energia"],
+                "attributes": ["poder-del-dolor", "muro-de-energia"],
                 "abilities": [
                     {
                         "name": "Acelerar",

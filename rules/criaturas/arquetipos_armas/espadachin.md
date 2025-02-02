@@ -14,7 +14,7 @@ La criatura se ha especializado en combatir con una espada o arma de Duelo simil
 - **Parada con Armas:** Puede usar su tiro de Armas de Duelo para defenderse de ataques cuerpo a cuerpo.
 - **Analizar Enemigo:** Cada ronda recibe los beneficios de [Analizar Enemigo](../../rangos/combate/rastrear.md#analizar-enemigo) contra un objetivo de su elección, el cual no podrá cambiarse hasta su siguiente turno.
 - **Truco de Espada:** Al impactar a un enemigo con un ataque con un arma de Duelo puede provocarle un efecto de la habilidad Truco de Espada. No podrá emplear el mismo efecto más de una vez por ronda.
-- **Evasión:** Puede emplear la reacción Evasión una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Evasión que reciba por arquetipos diferentes.
+- **Evasión:** Puede emplear la reacción Evasión una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Evasión que reciba por arquetipos diferentes. 
 
 ## Espadachín II (+2, 3 mejoras)
 

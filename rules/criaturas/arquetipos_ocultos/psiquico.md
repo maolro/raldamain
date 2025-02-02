@@ -26,8 +26,6 @@ La criatura ha desarrollado poderes psíquicos y telequinéticos al despertar el
 - **Telepatía:** Puede comunicarse mentalmente con todas las criaturas que detecte mediante Leer Pensamientos y puede afectarlas con hechizos mentales sin la necesidad de percibirlas.
 - **Barrera de Fuerza:** Una vez por ronda puede emplear el hechizo Barrera de Fuerza de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
 
-Sanación Etérea, Telepatía, Agarre Telequinético, Mente Desencadenada, Sobrecarga Mental, Sanación Mental, Levitación Psíquica
-
 ## Psíquico III (+2, 5 mejoras)
 
 Arma Danzante, Modificar Recuerdos, Mente en Blanco

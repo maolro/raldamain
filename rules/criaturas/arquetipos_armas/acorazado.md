@@ -6,7 +6,7 @@ La criatura está dotada de una poderosa coraza capaz de detener ataques enemigo
 
 # Mejoras
 
-## Acorazado I
+## Acorazado I (+2)
 
 - **Aumentos Estadísticos:** Incrementa su FUE y CON por 2 junto a sus limitadores pero reduce su DES por 1. Aumenta también sus PV, Vitalidad y Defensa por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Escudos y [Fortitud] por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
@@ -15,7 +15,7 @@ La criatura está dotada de una poderosa coraza capaz de detener ataques enemigo
 - **Parada con Escudo:** Puede usar su tiro de Escudos para defenderse de ataques cuerpo a cuerpo, a distancia y de área. No necesita llevar un escudo para defenderse de esta manera si es de tamaño Grande o superior además.
 - **Estilo Defensivo:** Al empezar el combate cuenta con tres *contadores de escudo* que puede usar para reducir el daño de ataques que reciba. Puede también defender a aliados adyacentes usando Parada con Escudo y cuenta siempre como si estuviera en Defensa Absoluta para determinar las habilidades que se activan.
 
-## Acorazado II
+## Acorazado II (+2, requiere 3 mejoras)
 
 - **Aumentos Estadísticos:** Incrementa su FUE y CON por 1. Aumenta también sus PV, Vitalidad y Defensa por 2 además que recibe dos *contadores de escudo* adicionales al entrar en combate.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Escudos y Fortitud por 1. 
@@ -23,7 +23,7 @@ La criatura está dotada de una poderosa coraza capaz de detener ataques enemigo
 - **Técnicas de Combate:** Aprende la técnica de combate Reposición Forzosa. Esta solo puede usarse una vez por ronda de manera gratuita.
 - **Detener Ataque:** Una vez por ronda puede recuperar un *contador de escudo* que haya gastado para detener un ataque. Esto funciona igual que la habilidad Detener Ataque.
 
-## Acorazado III
+## Acorazado III (+2, requiere 5 mejoras)
 
 - **Aumentos Estadísticos:** Incrementa su FUE y CON por 1. Aumenta también sus PV, Vitalidad y Defensa por 2 además que recibe dos *contadores de escudo* adicionales al entrar en combate.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Escudos y Fortitud por 1. 

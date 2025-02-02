@@ -150,6 +150,14 @@
         "tags": "Físico, Ataque, Marcial, Salvaje", 
         "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Perforante."
     },
+    "mosqueton": {
+        "name": "Mosquetón",
+        "skill":"armas-a-distancia", 
+        "type": "Accion", 
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, A Distancia", 
+        "description": "Distancia lejana, +MOD para impactar, 2d8 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador."
+    },
     "parada-con-escudo": {
         "name": "Parada con Escudo",
         "skill":"escudo", 
