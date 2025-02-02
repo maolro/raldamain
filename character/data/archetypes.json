@@ -1284,7 +1284,7 @@
                         "name": "Campo de Repulsión",
                         "type": "Pasiva",
                         "tags": "Gravedad",
-                        "skill": "magia-gravitatori",
+                        "skill": "magia-gravitatoria",
                         "resistances": ["A Distancia","Sombríos"],
                         "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
                     }
