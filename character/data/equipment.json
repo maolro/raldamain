@@ -23,6 +23,7 @@
         "latigo": {"name": "Látigo", "eqab": "latigo"},
         "mandoble": {"name": "Mandoble", "eqab": "mandoble"},
         "martillo-de-guerra": {"name": "Martillo de Guerra", "eqab": "martillo-de-guerra"},
+        "mosqueton": {"name": "Mosquetón", "eqab": "mosqueton"},
         "pistola-de-mano": {"name": "Pistola de Mano", "eqab": "pistola-de-mano"}
     },
     "head":{

@@ -1,6 +1,6 @@
 ---
 title: Magia de almas
-image: medium.
+image: medium.jpg
 ---
 
 Estas un paso mas cerca de la muerte que la gente corriente, pudiendo escuchar las voces de las personas que dejaron nuestro mundo ya hace tiempo. A medida que tu conexión con estas fuerzas se va haciendo mas fuerte te iras volviendo capaz de convocarlas para que te presten parte de las fuerzas de las que estos se sirvieron en vida, convocar a los espectros para hacerles preguntas o incluso desligar parcialmente tu alma de tu cuerpo para realizar viajes entre el plano de los vivos y el de los muertos. En tus últimas etapas en las que tu conexión haya alcanzado su punto mas alto te volverás capaz de desterrar un gran número de estos espectros sirviéndote de rituales, atrapar las almas de algunos de las personas que mueran para usarlas para tus propios propósitos e incluso imbuir tu cuerpo con parte de su esencia para obtener algunas de las habilidades de las que estos se sirven atando tu alma al propio mundo a menos que lo desees.

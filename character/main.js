@@ -388,7 +388,7 @@ ${toMd(this.atbCatString("reactions"))}
                             rsobj.immunities.push(rs);
                         }
                         else if (rsobj.vulnerabilities.includes(rs)) {
-                            rsobj.vulnerabilities.splice(supresist.indexOf(rs), 1);
+                            rsobj.vulnerabilities.splice(rsobj.supresist.indexOf(rs), 1);
                         }
                         else if (!rsobj.immunities.includes(rs)) {
                             rsobj.resistances.push(rs);
@@ -407,7 +407,7 @@ ${toMd(this.atbCatString("reactions"))}
                             rsobj.resistances.push(rs);
                         }
                         else if (rsobj.resistances.includes(rs)) {
-                            rsobj.resistances.splice(resistances.indexOf(rs), 1);
+                            rsobj.resistances.splice(rsobj.resistances.indexOf(rs), 1);
                         }
                         else if (!rsobj.vulnerabilities.includes(rs)) {
                             rsobj.vulnerabilities.push(rs);
