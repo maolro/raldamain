@@ -1259,7 +1259,7 @@
     "esencia-del-vacio": {
         "name": "Esencia del Vacío",
         "stat": "itl/cha",
-        "modranks": ["magia-gravitatoria","magia-espacial","mente-desencadenada"],
+        "modranks": ["magia-gravitatoria","mente-desencadenada"],
         "rank": 0,
         "max": 4,
         "stats": [
@@ -1285,16 +1285,64 @@
                         "type": "Pasiva",
                         "tags": "Gravedad",
                         "skill": "magia-gravitatoria",
-                        "resistances": ["A Distancia","Sombríos"],
-                        "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
+                        "resistances": ["A Distancia"],
+                        "description": "Toda criatura que intente moverse a una posición a distancia cercana deberá tener éxito en un tiro de Acrobacias o Heroísmo contra +MOD o será empujada un paso hacia atrás"
+                    },
+                    {
+                        "name": "Mente Desencadenada",
+                        "type": "Pasiva",
+                        "skill": "magia-gravitatoria",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con estadísticas mentales y aumenta el daño base de todos sus hechizos gravitatorios por 1d6. Estos modificadores no se acumulan con Mente Desencadenada."
+                    },
+                    {
+                        "name": "Repeler Ataque",
+                        "type": "Reaccion",
+                        "tags": "Gravedad",
+                        "skill": "magia-gravitatoria",
+                        "uses": "1/Ronda",
+                        "description": "Tiene éxito automático en un tiro defensivo contra un ataque Físico de cualquier tipo."
                     }
                 ]
             },
             {
-                "attributes": []
+                "attributes": ["alterar-peso","ancla-gravitatoria","bomba-de-gravedad","evasion"],
+                "abilities": [
+                    {
+                        "name": "Burlar la Gravedad",
+                        "type": "Pasiva",
+                        "tags": "Gravedad",
+                        "skill": "magia-gravitatoria",
+                        "description": "Recibe velocidad de vuelo 1 y Ventaja en todos sus tiros de Esquiva."
+                    }
+                ]
             },
             {
-                "attributes": []
+                "attributes": ["concentracion-superior","poder-del-dolor"],
+                "abilities": [
+                    {
+                        "name": "Vórtice Gravitatorio",
+                        "type": "Pasiva",
+                        "tags": "Gravedad",
+                        "skill": "magia-gravitatoria",
+                        "resistances": ["A Distancia"],
+                        "description": "Al entrar en combate recibe RANGO contadores de escudo y Resistencia a ataques a distancia (ya incluido). Cada criatura que entre en una posición a distancia cercana sufrirá de inmediato un ataque bonus de Pulso o Arrastre Gravitatorio."
+                    },
+                    {
+                        "name": "Distorsión Gravitatoria",
+                        "type": "Pasiva",
+                        "tags": "Gravedad",
+                        "skill": "magia-gravitatoria",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Gravedad y los hechizos de ese rango aumentan su alcance por un paso. Esta habilidad le permite anular todos los efectos Gravitatorios hostiles que intenten alterar su peso o el de sus aliados."
+                    },
+                    {
+                        "name": "Dilatación Temporal",
+                        "type": "Reaccion",
+                        "tags": "Gravedad",
+                        "skill": "magia-gravitatoria",
+                        "uses": "1/Ataque",
+                        "description": "Un enemigo que le intente hacer un ataque cuerpo a cuerpo debe tener éxito en un tiro de Heroísmo o Atletismo contra +MOD o sufre el efecto de estado Náuseas y no podrá moverse más. Podrá repetir el tiro cada ronda para intentar escapar."
+                    }
+                ]
             },
             {
                 "attributes": []

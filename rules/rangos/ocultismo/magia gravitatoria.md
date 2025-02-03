@@ -133,7 +133,7 @@ Este hechizo puede ser empleado de manera alternativa para crear el campo de rep
 
 Todos tus hechizos de Gravedad sustituyen sus dados de daño por d8 y aquellos de Rango I cuestan una acción menos para emplear (mínimo 1).
 
-### Agarre gravitatorio
+### Agarre Gravitatorio
 
 *Gravedad, Agarre, Duradero*
 
@@ -163,7 +163,7 @@ Burlas a la gravedad misma para obtener la capacidad de volar. Al activar este h
 
 **Empoderar** (1 chi): Vuelas un paso en cualquier dirección y reduces a la mitad el daño de un ataque que te haya impactado después de aplicar defensa.
 
-### Bomba de gravedad
+### Bomba de Gravedad
 
 *Gravedad, Ataque, Área, Físico*
 
@@ -183,9 +183,7 @@ Comprimes varios objetos para formar un proyectil minúsculo y lo lanzas una dis
 
 ## Rango IV
 
-Todos tus hechizos de Gravedad de Rango II cuestan una acción menos para emplear (mínimo 1).
-
-### Vórtice gravitatorio
+### Vórtice Gravitatorio
 
 *Gravedad, Defensivo, Duradero*
 
@@ -201,7 +199,7 @@ La fuerza del vórtice afectará también a los enemigos que se acerquen a ti, p
 
 **Empoderar** (1 chi): Recuperas la mitad de tus *contadores de escudo* perdidos o extiendes el radio de efecto del vórtice a mediano.
 
-### Distorsión gravitatoria
+### Distorsión Gravitatoria
 
 *Gravedad, Ambiental*
 
@@ -217,7 +215,7 @@ Este hechizo alterará también la gravedad de maneras inesperadas, permitiendo 
 
 **Empoderar** (1 chi): El siguiente hechizo de Gravedad que utilices reducirá su coste en acciones por 1 hasta un mínimo de 0. Solo puedes empoderar de esta manera una vez por hechizo.
 
-### Dilatación temporal
+### Dilatación Temporal
 
 *Gravedad, Duradero, Maniobra*
 
@@ -241,7 +239,7 @@ Este hechizo también frenará todos los ataques que pasen por ella, otorgando D
 
 Todos tus hechizos de Gravedad sustituyen sus dados de daño por d10 y aquellos de Rango III cuestan una acción menos para emplear (mínimo 1).
 
-### Invertir la gravedad
+### Invertir la Gravedad
 
 **Coste:** 3 acciones y 3 chi
 

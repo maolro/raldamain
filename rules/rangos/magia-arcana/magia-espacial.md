@@ -17,7 +17,7 @@ Magia Espacial se adhiere a un conjunto de reglas fundamentales que sustentan su
 
 ## Rango I
 
-### Salto espacial
+### Salto Espacial
 
 *Espacial, Arcana, Defensiva*
 
@@ -31,7 +31,7 @@ Si te encuentras en *posición defensiva* puedes teletransportarte para evitar a
 
 **Empoderar** (1 chi): Aumenta por un paso la distancia a la que puede teletransportarse. No puede empoderar el mismo hechizo más de dos veces.
 
-### Portal menor
+### Portal Menor
 
 *Espacial, Arcana, Duradera*
 
@@ -45,7 +45,7 @@ Mientras el portal permanezca activo puedes afectar a objetos o criaturas que se
 
 **Empoderar** (1 chi): Creas un portal menor adicional como acción bonus que permanecerá activo solo una ronda.
 
-### Bolsillo interdimensional
+### Bolsillo Interdimensional
 
 *Espacial, Arcana*
 
@@ -59,7 +59,7 @@ Eres capaz de abrir un agujero en el espacio que conecta con un punto específic
 
 ## Rango II
 
-### Puerta dimensional
+### Puerta Dimensional
 
 *Espacial, Arcano, Duradero*
 
@@ -77,7 +77,7 @@ Aquellos magos espaciales que tengan demiplanos o dominios propios pueden emplea
 
 **Empoderar** (1 chi): Creas una Puerta dimensional como reacción para evitar un ataque enemigo o provocar que un objetivo pase por ella. Solo puedes crear una Puerta dimensional así si te encuentras en *posición defensiva* y un objetivo que intente pasar por la puerta puede evitarlo teniendo éxito en un tiro de Esquiva contra tu Magia Espacial.
 
-### Ancla dimensional
+### Ancla Dimensional
 
 *Espacial, Arcano, Duradero, Toque*
 
@@ -91,7 +91,7 @@ Inscribes un sello mágico en un objetivo que repele la magia espacial, impidien
 
 **Empoderar** (1 chi): Anulas el Ancla dimensional durante una ronda, haciendo así que su portador pueda ser afectado por hechizos Espaciales con normalidad.
 
-### Distorsión espacial
+### Distorsión Espacial
 
 *Espacial, Arcano*
 
@@ -143,7 +143,7 @@ Eres también capaz de aprovechar los portales para redirigir ataques fallidos h
 
 **Empoderar** (1 chi): Redirige un ataque adicional esta ronda. No puedes empoderar de esta manera para redirigir el mismo ataque de nuevo.
 
-### Invocar extraplanario
+### Invocar Extraplanario
 
 *Espacial, Arcano, Invocación*
 
