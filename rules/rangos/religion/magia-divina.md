@@ -44,7 +44,7 @@ No obstante, tu dios puede hablarte de forma críptica o no contestar determinad
 
 Aprendes dos hechizos de rango I pertenecientes a una magia relacionada con tu divinidad. Dichos hechizos tendrán la categoría Divina además de aquellas que ya posean.
 
-### Manifestación divina
+### Manifestación Divina
 
 *Divina, Maldición*
 

@@ -22,6 +22,7 @@ La criatura está hecha de pura energía luminosa, careciendo así de cuerpo fí
 - **Habilidades Pasivas:** Obtiene la habilidad pasiva Nacido del Cielo.
 - **Hechizos:** Aprende los hechizos Rayo Luminoso y Toque Sanador.
 - **Aura Luminosa:** Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud contra su modificador de Magia de Vida o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador.
+- **Vínculo Vital:** Al entrar en el campo de batalla establece un vínculo vital con otra criatura de su elección, pudiendo así recibir la mitad de todo el daño que sufra. Esto funciona de la misma manera que el hechizo con el mismo nombre y al igual que este solo podrá activarse si ambas criaturas se encuentran a distancia media una de otra.
 
 ## Esencia de Vida II (+2, 3 mejoras)
 
@@ -30,7 +31,6 @@ La criatura está hecha de pura energía luminosa, careciendo así de cuerpo fí
 - **Hechizos:** Aprende el hechizo Sanación Superior, el cual puede emplear una vez por ronda sin la necesidad de pagar chi o vigor.
 - **Arma Solar:** Al entrar en combate activa automáticamente el hechizo Arma Solar, recibiendo así la capacidad de atacar con su arma a enemigos a distancia corta pagando una acción. Este efecto durará hasta que pierda la concentración y reactivarlo cuesta una acción.
 - **Telaraña de Vida:** Recibe Ventaja en todos sus tiros relacionados con Magia de Vida y puede detectar la posición de todos los seres vivos a distancia media. Sus hechizos de Sanación aumentan la Vitalidad sanada por 2 y recibirán alcance cercano. Estos modificadores no se acumulan con la habilidad Telaraña de Vida.
-- **Vínculo Vital:** Al entrar en el campo de batalla establece un vínculo vital con otra criatura de su elección, pudiendo así recibir la mitad de todo el daño que sufra. Esto funciona de la misma manera que el hechizo con el mismo nombre y al igual que este solo podrá activarse si ambas criaturas se encuentran a distancia media una de otra.
 - **Barrera Luminosa:** Una vez por ronda puede emplear el hechizo Barrera Luminosa de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
 
 ## Esencia de Vida III (+2, 5 mejoras)

@@ -26,7 +26,7 @@ El fuego de tu interior te hace sobrehumanamente resistente al calor y las llama
 
 *Innata, Pasiva*
 
-Tienes la voluntad suficiente para que el fuego se doblegue a ti. Eres capaz de lanzar hechizos Llamarada, Asalto abrasador y Aliento de fuego empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia de Fuego. Este sobrecoste desaparecerá si obtienes por lo menos un rango en Magia de Fuego.
+Tienes la voluntad suficiente para que el fuego se doblegue a ti. Eres capaz de lanzar hechizos Llamarada, Asalto Abrasador y Aliento de fuego empleando vigor en lugar de chi. En el caso que no conozcas estos hechizos los aprenderás y podrás lanzarlos pagando 1 vigor o chi adicional, empleando como bonificador la suma de tu CAR y tu Rango en Ascendencia de Fuego. Este sobrecoste desaparecerá si obtienes por lo menos un rango en Magia de Fuego.
 
 ## Rango II
 

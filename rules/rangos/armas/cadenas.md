@@ -16,7 +16,7 @@ Estilo de Cadenas tiene las siguientes reglas fundamentales que se aplican a cua
 
 ## Rango I
 
-### Ataque con arma
+### Ataque con Arma
 
 *Cadena, Ataque, Físico*
 

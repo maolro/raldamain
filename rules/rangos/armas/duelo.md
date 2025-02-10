@@ -16,20 +16,6 @@ Estilo de Duelo tiene las siguientes reglas fundamentales que se aplican a cualq
 
 ## Rango I
 
-### Ataque de Arma
-
-*Duelo, Físico, Cuerpo a cuerpo*
-
-**Coste**: 2 acciones
-
-**Alcance**: Cuerpo a cuerpo
-
-**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
-
-**Duración**: Instantáneo
-
-Ataca con tu arma a un enemigo que se encuentre a una distancia que puedas alcanzar. Este ataque provocará daño igual al daño base de tu arma modificado por tu estadística de FUE. Esta habilidad te permite atacar con cualquier arma perteneciente a la categoría de Duelo.
-
 ### Destreza Defensiva
 
 *Duelo, Pasiva*
@@ -44,10 +30,10 @@ Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques c
 
 Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al activar esta habilidad puedes hacer una maniobra de combate como acción bonus, mejorando el ataque que acabas de hacer. Solo puedes activar una maniobra por ataque y puedes crear técnicas propias si lo permite el DJ. Estos son algunos ejemplos de maniobras que puedes realizar.
 
-- **Paso rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
-- **Al suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. 
-- **Cambio repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
-- **Estocada fuerte:** Aumentas el daño base de tu ataque por 1d6 y provocas *sangrado* al impactar si tu objetivo lleva armadura ligera
+- **Paso Rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
+- **Al Suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. 
+- **Cambio Repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
+- **Estocada Fuerte:** Aumentas el daño base de tu ataque por 1d6 y provocas *sangrado* al impactar si tu objetivo lleva armadura ligera
 
 ## Rango II
 
