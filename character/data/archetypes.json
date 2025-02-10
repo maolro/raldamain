@@ -49,9 +49,15 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["aguantar-los-elementos","hasta-la-muerte","escudo-rompearmas","mantener-posicion","carga-furiosa","combinar-tecnicas-(escudo)"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Protector Incansable",
+                        "type": "Pasiva",
+                        "skill": "escudo",
+                        "tags": "Escudo",
+                        "description": "Cada vez que un enemigo impacte a un aliado adyacente puede recibir la mitad del daño de dicho ataque, reduciendo así el daño que sufriría. Solo puede emplear esta habilidad si se encuentra en <i>posición defensiva</i>."
+                    }
                 ]
             },
             {
@@ -1072,7 +1078,7 @@
         ],
         "enchancements": [
             {
-                "attributes": ["fuego-interior","vision-termica","llamarada","asalto-abrasador","aliento-de-fuego","parada-de-fuego","muro-de-llamas"],
+                "attributes": ["fuego-interior","vision-termica","llamarada","asalto-abrasador","aliento-de-fuego","parada-de-fuego","muro-de-llamas-defensivo"],
                 "abilities": [
                     {
                         "name": "Furia del Fuego",
@@ -1092,7 +1098,24 @@
                 ]
             },
             {
-                "attributes": []
+                "attributes": ["bola-de-fuego","erupcion-abrasadora","poder-del-dolor","evasion"],
+                "abilities": [
+                    {
+                        "name": "Furia del Fuego",
+                        "type": "Pasiva",
+                        "tags": "Fuego, Duradera",
+                        "skill": "magia-de-fuego",
+                        "description": "- Al entrar en combate activa automáticamente el hechizo Látigo Flamígero, recibiendo así la capacidad de atacar con el látigo a enemigos a distancia corta pagando una acción. Si se encuentra en *posición defensiva* una vez por ronda puede atacar con el látigo a un enemigo que entre a distancia corta. Este efecto durará hasta que pierda la concentración y reactivarlo cuesta una acción."
+                    },
+                    {
+                        "name": "Propulsión",
+                        "type": "Pasiva",
+                        "tags": "Fuego, Duradera",
+                        "skill": "ascendencia-de-fuego",
+                        "description": "Recibe velocidad de Vuelo 2 y Ventaja en todos sus tiros de Esquiva como si tuviera activa la habilidad Propulsión. No obstante, no podrá terminar su turno en el aire y reactivar esta habilidad le cuesta dos acciones si pierde la concentración."
+                    }
+                ]
+
             },
             {
                 "attributes": []
@@ -1242,11 +1265,35 @@
                         "skill": "magia-de-vida",
                         "resistances": ["A Distancia","Sombríos"],
                         "description": "Le rodea un aura luminosa que obliga a cada criatura que entre en un espacio a distancia cercana a tirar Salud frente a +MOD o queda <i>cegada</i> durante una ronda. Recibe también Resistencia a ataques A Distancia y a efectos Sombríos. Puede activar o desactivar el aura pagando una acción y terminará de la misma manera que Halo Cegador."
+                    },
+                    {
+                        "name": "Vínculo Vital",
+                        "type": "Pasiva",
+                        "tags": "Vida, Ambiental",
+                        "skill": "magia-de-vida",
+                        "description": "Al entrar en el campo de batalla establece un vínculo vital con otra criatura de su elección, pudiendo así recibir la mitad de todo el daño que sufra. Esto funciona de la misma manera que el hechizo con el mismo nombre y al igual que este solo podrá activarse si ambas criaturas se encuentran a distancia media una de otra."
                     }
                 ]
             },
             {
-                "attributes": []
+                "attributes": ["sanacion-superior","barrera-luminosa-defensiva"],
+                "abilities": [
+                    {
+                        "name": "Arma Solar",
+                        "type": "Accion",
+                        "tags": "Vida, Ataque, Radiante",
+                        "coste": "1 Acción",
+                        "skill": "magia-de-vida",
+                        "description": "+MOD para atacar, distancia media, el objetivo sufre 1d6 + STAT daño Radiante. Perderá la capacidad de hacer este ataque si pierde la concentración."
+                    },
+                    {
+                        "name": "Telaraña de Vida",
+                        "type": "Pasiva",
+                        "tags": "Vida, Ambiental",
+                        "skill": "magia-de-vida",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Vida y puede detectar la posición de todos los seres vivos a distancia media. Sus hechizos de Sanación aumentan la Vitalidad sanada por 2 y recibirán alcance cercano. Estos modificadores no se acumulan con la habilidad Telaraña de Vida."
+                    }
+                ]
             },
             {
                 "attributes": []
