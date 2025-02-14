@@ -139,7 +139,7 @@ Un ataque infundido con una brecha espacial atravesará hasta la realidad misma,
 
 Formas una red de portales pequeños que te permite atacar de maneras inesperadas y redirigir ataques fallidos. La red de portales llenará un espacio del tamaño de una esfera mediana y mientras permanezca activa todo ataque o hechizo que lances en ella incrementará su alcance a mediano e ignorará barreras y cubierta en su camino. Este hechizo permanecerá activo hasta que pierdas la concentración o sea eliminado.
 
-Eres también capaz de aprovechar los portales para redirigir ataques fallidos hechos por cualquier criatura en la zona afectada. Una vez por ronda como reacción a que un ataque de cualquier tipo falle a su objetivo original puedes redirigirlo hacia la misma criatura o una diferente forzando a su lanzador a tirar de nuevo para impactar. Dado que es el mismo ataque no significará un gasto de chi o acciones. 
+Eres también capaz de aprovechar los portales para redirigir ataques fallidos hechos por cualquier criatura en la zona afectada. Una vez por ronda como reacción a que un ataque de cualquier tipo falle a su objetivo original puedes redirigirlo hacia la misma criatura o una diferente forzando a su lanzador a tirar de nuevo para impactar y a quedarse con el peor resultado. Dado que es el mismo ataque no significará un gasto de chi o acciones. 
 
 **Empoderar** (1 chi): Redirige un ataque adicional esta ronda. No puedes empoderar de esta manera para redirigir el mismo ataque de nuevo.
 
