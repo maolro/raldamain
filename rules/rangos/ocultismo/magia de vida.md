@@ -202,7 +202,7 @@ Mientras este hechizo esté activo cada vez que uno de los participantes sufra d
 
 *Vida, Ataque, Área, Radiante*
 
-**Coste**: 2 acciones y 2 chi
+**Coste**: 1 acción y 2 chi
 
 **Tamaño**: Línea Mediana
 
@@ -234,11 +234,11 @@ Desatas toda la energía vital que hay en tu interior en forma de una explosión
 
 **Empoderar** (1 chi): Aumenta el radio de este hechizo en un paso y puedes elegir qué criaturas serán curadas y cuáles recibirán daño.
 
-### Milagro de sanación
+### Milagro de Sanación
 
 *Vida, Sanación, Toque*
 
-**Coste**: 1 accióny 3 chi
+**Coste**: 1 acción y 3 chi
 
 **Alcance**: Toque
 
@@ -286,51 +286,3 @@ Invocas una cantidad inmensa de energía vital en el campo de batalla para sanar
 - La energía vital sanará rápidamente a los heridos, haciendo así que al principio de tu turno todos los seres vivos se sanarán Rango + 2 Vitalidad. Puedes escoger que esta sanación no afecte a los personajes que escojas.
 - Una vez por ronda en respuesta a la muerte de una criatura aliada puedes resucitarla a 1 PV. No podrás revivir de esta manera a un objetivo si ha perdido sus órganos vitales o su cuerpo ha quedado dañado en exceso.
 - No se podrán crear no-muertos ni invocar criaturas extraplanarias malignas en el área afectada. Aquellas que ya estén ahí deberán tener éxito en un tiro de CON frente a tu Magia de Vida al principio de su turno o sufrirán 1d10 + CAR daño Radiante.
-
-# Rangos míticos
-
-Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 en todos los tiros y +1 chi. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
-
-## Rango I
-
-**Descarga luminosa:** Tira un dado de daño adicional del mismo tipo que el dado base al impactar. Si el ataque impacta a una criatura sin resistencias al daño radiante quedará *cegada* durante una ronda (cegará permanentemente si reduce PV).
-
-**Toque sanador:** Puedes sanar PV con toque sanador y al usarlo reducirás el nivel de una herida permanente, veneno o enfermedad por un paso. (1 chi) Reduce dicho efecto por dos pasos.
-
-**Halo cegador:** Hacer un ataque de *halo cegador* te cuesta una acción bonus usable una vez por turno y su efecto siempre te rodeará sin que te haga falta mantener la concentración en él.
-
-## Rango II
-
-**Conexión vital:** En respuesta a que un aliado con *conexión vital* sufra daño puedes hacerle un *toque sanador* una vez por ronda como acción bonus antes de dividir el daño.
-
-**Barrera luminosa:** Crear una barrera luminosa te cuesta una acción bonus y permanecerá hasta que sea disipada. No necesitas estar en *posición defensiva* para usar la barrera luminosa para protegerte.
-
-**Látigo solar:** Formas dos látigos solares al usar esta habilidad y su daño aumenta de la misma manera que *descarga luminosa*.
-
-## Rango III
-
-**Lanza luminosa:** Creas dos lanzas luminosas al usar esta habilidad y puedes dirigir ambas como acción bonus.
-
-**Sanación superior:** Al usar *sanación superior* usas tu CAR en lugar del rango para modificar la cantidad de PV y Vitalidad que sanes además que eliminarás dos efectos al usarla. (1 chi) Elimina un efecto de estado provocado por una criatura mítica.
-
-**Telaraña de vida:** Activar este efecto te cuesta una acción bonus y permanecerá en el campo como si fuera una habilidad pasiva. Sanas también +2 Vitalidad con esta habilidad.
-
-## Rango IV
-
-**Castigo del cielo:** Aumenta el radio a grande y no puede ser esquivado por criaturas no-míticas.
-
-**Espadas de justicia:** Invocar las espadas cuesta una acción bonus y pueden usarse dos espadas al turno para detener un impacto o realizar un ataque
-
-**Transferencia vital:** Una vez por ronda cuando una criatura afectada por *transferencia vital* sufra daño puedes usar *toque sanador* en ella como acción bonus (esto afectará también a todas las criaturas con la conexión)
-
-## Rango V
-
-**Explosión solar:** Aumenta el radio a grande y podrás afectar a tus aliados con *sanación superior* en lugar de *toque sanador*. Además, todas las criaturas no-míticas en el área de efecto que sean vulnerables al daño radiante morirán instantáneamente.
-
-**Milagro de restauración:** El milagro puede resucitar a alguien que haya muerto hace menos de un día y al usar resta habilidad en una criatura viva sanará todos sus PV, Vitalidad y se recuperará de todos los efectos de estado, heridas permanentes, venenos y enfermedades no-míticas que tenga.
-
-**Sello de regeneración:** El sello sanará +2 Vitalidad y PV por ronda y reducirá todas las heridas permanentes que tenga el personaje por un paso cada ronda. Puedes activar dicho sello en ti como acción bonus y este permanecerá durante el resto del combate.
-
-## Rango VI
-
-**Fuente de toda la vida:** Activar esta habilidad matará instantáneamente a todos los no-muertos y criaturas extraplanarias no-míticas además que el efecto de sanación regenerará lo mismo que *sello de regeneración*. Además, tu dado de ventaja se transformará en 1d8 y aumentarás el daño por 1d10.
