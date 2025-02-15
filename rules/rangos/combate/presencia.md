@@ -99,7 +99,7 @@ Eres capaz de inspirar a los heridos a seguir combatiendo y superar sus límites
 
 ## Rango III	
 
-### Inspirar heroísmo
+### Inspirar Heroísmo
 
 *Moral, Innata, Mejora, Duradera, Visual, Auditiva*
 
@@ -189,7 +189,7 @@ Tu gran presencia es capaz de incitar el pánico entre tus enemigos, haciendo qu
 
 ## Rango V
 
-### Inspirar leyenda
+### Inspirar Leyenda
 
 *Moral, Duradera, Innata, Visual, Auditiva*
 
@@ -205,7 +205,7 @@ Los beneficios de esta habilidad no se acumulan con Inspirar heroísmo y se acab
 
 **Empoderar** (1 vigor): Un aliado recupera la mitad de su Vitalidad temporal si aún le queda.
 
-### Líder nato
+### Líder Nato
 
 *Moral, Pasiva, Innata*
 

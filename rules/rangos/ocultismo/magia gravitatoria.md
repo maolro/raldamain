@@ -233,7 +233,7 @@ Dilatas el tiempo empleando tu control gravitatorio en una esfera pequeña que s
 
 Este hechizo también frenará todos los ataques que pasen por ella, otorgando Desventaja en todos los tiros de ataque contra criaturas dentro de la esfera. De igual manera que Pozo gravitatorio, este hechizo puede centrarse en una criatura para que se mueva siguiendo sus pasos. Una criatura hostil rodeada por este hechizo podrá liberarse si tiene éxito dos veces en su tiro contra el hechizo.
 
-**Empoderar** (1 chi): La esfera impedirá todos los ataques hechos contra ti esta ronda a costa que no podrás atacar ni emplear ningún hechizo que afecte un lugar fuera de la esfera. Aquellos ataques retenidos por la esfera te atacaran con normalidad la ronda siguiente.
+**Empoderar** (1 chi): La esfera bloquea de manera automática un ataque enemigo dirigido contra ti. Si intentas detener un ataque de área deberás gastar un chi adicional por cada nivel de tamaño que tenga. 
 
 ## Rango V
 
