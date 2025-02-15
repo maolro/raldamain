@@ -18,19 +18,11 @@ La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Es
 ## Esencia de Fuego I (+2)
 
 - **Aumentos Estadísticos:** Incrementa su DES, CON y CAR por 1 junto a sus limitadores. 
-
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia de Fuego por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
-
 - **Habilidades Pasivas:** Obtiene la habilidades pasivas Fuego Interior y Visión Térmica.
-
 - **Hechizos:** Aprende los hechizos Llamarada, Asalto Abrasador y Aliento de Fuego. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
-
 - **Parada de Fuego:** Puede usar su tiro de Magia de Fuego para defenderse de ataques cuerpo a cuerpo y a distancia.
-
 - **Furia del Fuego:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Fuego que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esto hará que sus ataques Físicos tengan la categoría Fuego para determinar las Ventajas que se apliquen.
-
-- **Muro de Llamas:** Una vez por ronda puede emplear el hechizo Muro de Llamas de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
-
 - **Elementalismo Empoderado:** Recibe Ventaja en todos sus tiros relacionados con estadísticas mentales y aumenta el daño base de todos sus hechizos elementales por 1d6. Estos modificadores no se acumulan con Mente Desencadenada
 
 ## Esencia de Fuego II (+2, 3 mejoras)
@@ -41,6 +33,7 @@ La criatura está hecha de fuego viviente, careciendo así de cuerpo físico. Es
 - **Hechizos:** Aprende los hechizos Bola de Fuego y Erupción Abrasadora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Látigo Flamígero:** Al entrar en combate activa automáticamente el hechizo Látigo Flamígero, recibiendo así la capacidad de atacar con el látigo a enemigos a distancia corta pagando una acción. Si se encuentra en *posición defensiva* una vez por ronda puede atacar con el látigo a un enemigo que entre a distancia corta. Este efecto durará hasta que pierda la concentración y reactivarlo cuesta una acción.
 - **Propulsión:** Recibe velocidad de Vuelo 2 y Ventaja en todos sus tiros de Esquiva como si tuviera activa la habilidad Propulsión. No obstante, no podrá terminar su turno en el aire y reactivar esta habilidad le cuesta dos acciones si pierde la concentración.
+- **Muro de Llamas:** Una vez por ronda puede emplear el hechizo Muro de Llamas de manera gratuita para defenderse de un ataque enemigo. Debe encontrarse en *posición defensiva* para que esto sea posible.
 
 ## Esencia de Fuego III (+2, 5 mejoras)
 
