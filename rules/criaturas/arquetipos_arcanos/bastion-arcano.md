@@ -31,7 +31,7 @@ La criatura es capaz de absorber y repeler la magia arcana.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Protectora, Espacial y Temporal por 1. 
 - **Hechizos:** Aprende el hechizo [Exilio](../../rangos/magia_arcana/magia_protectora.md#exilio) además de dos hechizos Arcanos de su elección de Rango IV o menos. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Esfera de Fuerza:** Su armadura mágica le da una resistencia superior. Al empezar el combate recibe Vitalidad temporal igual a su Rango x 6 y aumenta su Defensa por Rango + 4. Esto funciona de la misma manera que el hechizo Esfera de Fuerza, lo cual también le da Inmunidad a efectos Gaseosos y de Toque. Este efecto se disipará cuando pierda toda su Vitalidad temporal.
-- **Campo Antimágico:** Tiene activo un campo antimágico a su alrededor de manera pasiva, el cual le da Inmunidad a todos los hechizos Arcanos y deshabilitará todos los objetos mágicos a distancia cercana. Este campo puede ser eliminado durante una ronda mediante un tiro exitoso de Eliminar Magia contra su modificador de Magia Protectora. 
+- **Campo Antimágico:** Tiene activo un Campo Antimágico a su alrededor de manera pasiva, el cual le da Inmunidad a todos los hechizos Arcanos y deshabilitará todos los objetos mágicos a distancia cercana. Este campo puede ser eliminado durante una ronda mediante un tiro exitoso de Eliminar Magia contra su modificador de Magia Protectora. 
 - **Glifo Mágico:** La criatura tiene un glifo activo adicional que tiene sellado un hechizo Arcano de Rango IV o menos. En cualquier momento del combate puede activar dicho glifo para lanzar el hechizo como acción bonus.
 
 ## Bastión Arcano IV (+2, requiere 7 mejoras)

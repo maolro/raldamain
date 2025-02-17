@@ -2612,6 +2612,74 @@
             }
         ]
     },
+    "ligador-de-almas": {
+        "name": "Akhásico",
+        "stat": "itl/cha",
+        "modranks": [
+            "magia-de-almas"
+        ],
+        "rank": 0,
+        "max": 3,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": "magia-divina", "mod": "magia-de-almas"},
+            {"rank": 2, "spell-lvl": 2, "slots": 2, "cat": "magia-divina", "mod": "magia-de-almas"},
+            {"rank": 3, "spell-lvl": 3, "slots": 2, "cat": "magia-divina", "mod": "magia-de-almas"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["sentido-magico","exorcismo","robar-almas"],
+                "abilities": [
+                    {
+                        "name": "Canalizar Ánima",
+                        "type": "Pasiva",
+                        "tags": "Innata, Almas",
+                        "skill": "magia-de-almas",
+                        "description": "Recibe Ventaja en todos los tiros relacionados con una estadística de su elección además que aprende dos hechizos de Rango I. Estos modificadores no se acumulan con Canalizar Ánima y se desactivarán durante una ronda si sufre el hechizo Exorcismo."
+                    },
+                    {
+                        "name": "Golpe Espectral",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-almas",
+                        "description": "Sus ataques físicos pueden herir a criaturas incorpóreas con normalidad, atravesando así todas sus Inmunidades."
+                    }
+                ]
+            },
+            {
+                "attributes": ["alma-resiliente","armonizar"],
+                "abilities": [
+                    {
+                        "name": "Canalización Superior",
+                        "type": "Pasiva",
+                        "tags": "Innata, Almas",
+                        "skill": "magia-de-almas",
+                        "description": "Aprende dos hechizos de Rango II y recibe Ventaja en todos los tiros relacionados con una estadística diferente. Esto funciona de la misma manera que Canalizar Ánima."
+                    },
+                    {
+                        "name": "Forma Espectral",
+                        "type": "Pasiva",
+                        "tags": "Innata, Almas",
+                        "skill": "magia-de-almas",
+                        "description": "Puede transformarse en un espectro incorpóreo empleando una acción, recibiendo todas las ventajas e inconvenientes de dicho estado. Si se encuentra en <i>posición defensiva</i> puede entrar en estado incorpóreo una vez por ronda como reacción para evitar un ataque enemigo."
+                    }
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "luchador": {
         "name": "Luchador",
         "stat": "str",
