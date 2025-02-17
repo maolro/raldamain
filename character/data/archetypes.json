@@ -85,16 +85,12 @@
             {"stat": "cha", "rank": 2, "boost": 1},
             {"stat": "itl", "rank": 3, "boost": 1},
             {"stat": "wis", "rank": 3, "boost": 1},
-            {"stat": "cha", "rank": 3, "boost": 1},
-            {"stat": "itl", "rank": 4, "boost": 1},
-            {"stat": "wis", "rank": 4, "boost": 1},
-            {"stat": "cha", "rank": 4, "boost": 1}
+            {"stat": "cha", "rank": 3, "boost": 1}
         ],
         "spells": [
             {"rank": 1, "spell-lvl": 1, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
             {"rank": 2, "spell-lvl": 2, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
-            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
-            {"rank": 4, "spell-lvl": 4, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"}
+            {"rank": 3, "spell-lvl": 3, "slots": 3, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"}
         ],
         "enchancements": [
             {
@@ -118,29 +114,51 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["psique-retorcido","abrir-el-tercer-ojo"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Psicomagia",
+                        "type": "Pasiva",
+                        "tags": "Mental",
+                        "skill": "ascendencia-akhasica",
+                        "description": "Puede emplear sus hechizos Arcanos o Mentales una vez adicional por ronda sin la necesidad de gastar chi. Esto no se aplicará a reacciones con usos limitados."
+                    },
+                    {
+                        "name": "Forma Astral",
+                        "type": "Pasiva",
+                        "tags": "Mental",
+                        "skill": "ascendencia-akhasica",
+                        "description": "La criatura es capaz de entrar en Forma Astral a través de la meditación de igual manera al hechizo del mismo nombre. El ritual de meditación debe realizarse antes del combate y una criatura invocada con esta propiedad se encontrará siempre en Forma Astral sin importar el límite de distancia."
+                    }
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["mente-iluminada","mente-sobre-cuerpo"],
                 "abilities": [
-                    {}
-                ]
-            },
-            {
-                "attributes": [],
-                "abilities": [
-                    {}
+                    {
+                        "name": "Fortaleza del Pensamiento",
+                        "type": "Pasiva",
+                        "tags": "Innata, Mental",
+                        "skill": "ascendencia-akhasica",
+                        "resistances": ["Arcanos"],
+                        "description": "Al inicio del combate recibe RANGO <i>contadores de escudoz</i> y Resistencia a efectos Arcanos. Esto funciona de la misma manera que el hechizo Fortaleza del Pensamiento y no se acumula con ella."
+                    },
+                    {
+                        "name": "Árbitro del Destino",
+                        "type": "Pasiva",
+                        "tags": "Innata, Mental",
+                        "skill": "ascendencia-akhasica",
+                        "resistances": ["Arcanos"],
+                        "description": "Una vez por combate puede entrar en una segunda fase más fuerte. Esta habilidad solo podrá emplearse si la criatura tiene el arquetipo Evocador, Bastión Arcano o Psíquico a Rango IV. Al entrar en segunda fase recibirá 40 Vitalidad temporal, seis <i>contadores de escudo</i> y Ventaja en todos sus tiros relacionados con estadísticas Mentales y aprende seis hechizos nuevos de Rango IV o menos."
+                    }
                 ]
             }
         ]
     },
-    "antimagico": {
-        "name": "Antimágico",
+    "bastion-arcano": {
+        "name": "Bastión Arcano",
         "stat": "itl",
-        "modranks": ["magia-protectora"],
+        "modranks": ["magia-protectora","magia-espacial","magia-temporal"],
         "rank": 0,
         "max": 4,
         "stats": [
@@ -152,6 +170,12 @@
             {"stat": "con", "rank": 3, "boost": 1},
             {"stat": "itl", "rank": 4, "boost": 1},
             {"stat": "con", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": ["magia-espacial","magia-temporal","magia-protectora"], "mod": "magia-protectora"},
+            {"rank": 2, "spell-lvl": 2, "slots": 2, "cat": ["magia-espacial","magia-temporal","magia-protectora"], "mod": "magia-protectora"},
+            {"rank": 3, "spell-lvl": 3, "slots": 2, "cat": ["magia-espacial","magia-temporal","magia-protectora"], "mod": "magia-protectora"},
+            {"rank": 4, "spell-lvl": 4, "slots": 2, "cat": ["magia-espacial","magia-temporal","magia-protectora"], "mod": "magia-protectora"}
         ],
         "enchancements": [
             {
@@ -179,11 +203,19 @@
                         "skill": "magia-protectora",
                         "def": "RANGOx2",
                         "description": "Está rodeado de una armadura mágica que aumenta su Defensa por RANGOx2 (ya incluido)."
+                    },
+                    {
+                        "name": "Premonición",
+                        "type": "Pasiva",
+                        "tags": "Arcana, Temporal",
+                        "skill": "magia-temporal",
+                        "immunities": ["Repetir tiros"],
+                        "description": "Puede defenderse de ataques sorpresa con normalidad además que repetirá todos los unos y doses naturales que obtenga. Recibe también Inmunidad a efectos que le obliguen a repetir tiros."
                     }
                 ]
             },
             {
-                "attributes": ["retener-persona", "ancla-dimensional"],
+                "attributes": ["retener-persona"],
                 "abilities": [
                     {
                         "name": "Sello Extraplanario",
@@ -199,20 +231,45 @@
                         "uses": "1/Ataque",
                         "tags": "Arcana, Protectora",
                         "skill": "magia-protectora",
-                        "description": "Al impactar con un ataque físico puede afectar a su objetivo con el hechizo Eliminar Magia como acción bonus. Si el afectado fracasa perderá también un chi de su reserva. Emplear el hechizo de esta manera no gastará su uso disponible cada ronda."
+                        "description": "Al impactar con un ataque Arcano o Físico puede afectar a su objetivo con el hechizo Eliminar Magia como acción bonus. Si el afectado fracasa perderá también un chi de su reserva. Emplear el hechizo de esta manera no gastará su uso disponible cada ronda."
                     }
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["exilio"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Esfera de Fuerza",
+                        "type": "Pasiva",
+                        "actions": 1,
+                        "tags": "Arcana, Protectora",
+                        "skill": "magia-protectora",
+                        "vt": "RANGOx6",
+                        "def": "RANGO+4",
+                        "description": "Su armadura mágica le da una resistencia superior. Al empezar el combate recibe RANGOx6 Vitalidad temporal y aumenta su Defensa por RANGO+4. Esto funciona de la misma manera que el hechizo Esfera de Fuerza, lo cual también le da Inmunidad a efectos Gaseosos y de Toque. Este efecto se disipará cuando pierda toda su Vitalidad temporal."
+                    },
+                    {
+                        "name": "Campo Antimágico",
+                        "type": "Pasiva",
+                        "actions": 1,
+                        "tags": "Arcana, Protectora",
+                        "skill": "magia-protectora",
+                        "immunities": ["Arcanos"],
+                        "description": "Tiene activo un Campo Antimágico a su alrededor de manera pasiva, el cual le da Inmunidad a todos los hechizos Arcanos y deshabilitará todos los objetos mágicos a distancia cercana. Este campo puede ser eliminado durante una ronda mediante un tiro exitoso de Eliminar Magia contra +MOD."
+                    }
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["disyuncion","invertir-chi","ligacion-planar"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Expansión de Dominio",
+                        "type": "Pasiva",
+                        "actions": 1,
+                        "tags": "Arcana, Espacial",
+                        "skill": "magia-protectora",
+                        "description": "La criatura es capaz de expandir su dominio sobre el campo de batalla (+MOD). Si logra expandirlo exitosamente recibirá Ventaja en todos sus tiros y podrá lanzar cualquier hechizo Ambiental de su elección sin la necesidad de pagar chi. Un campo de batalla con dominio expandido impedirá que se lancen otros hechizos Ambientales salvo que se tenga éxito en un tiro de habilidad contra su Magia Espacial."
+                    }
                 ]
             }
         ]
@@ -571,74 +628,6 @@
                         "type": "Pasiva",
                         "resistances": ["Ataques A Distancia", "Sombríos"],
                         "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Vida o ataques con armas. Le rodea un aura de luz que le otorga Resistencia a ataques A Distancia y efectos Sombríos. El aura se disipará si pierde la concentración y reactivarla cuesta dos acciones."
-                    }
-                ]
-            },
-            {
-                "attributes": [],
-                "abilities": [
-                    {}
-                ]
-            },
-            {
-                "attributes": [],
-                "abilities": [
-                    {}
-                ]
-            }
-        ]
-    },
-    "cronomago": {
-        "name": "Cronomago",
-        "stat": "itl",
-        "modranks": ["magia-temporal"],
-        "rank": 0,
-        "max": 4,
-        "stats": [
-            {"stat": "itl", "rank": 1, "boost": 1},
-            {"stat": "wis", "rank": 1, "boost": 1},
-            {"stat": "itl", "rank": 2, "boost": 1},
-            {"stat": "wis", "rank": 2, "boost": 1},
-            {"stat": "itl", "rank": 3, "boost": 1},
-            {"stat": "wis", "rank": 3, "boost": 1},
-            {"stat": "itl", "rank": 4, "boost": 1},
-            {"stat": "wis", "rank": 4, "boost": 1}
-        ],
-        "enchancements": [
-            {
-                "attributes": ["alteracion-temporal", "robar-el-tiempo", "acelerar", "ralentizar", "parada-cronomagica"],
-                "abilities": [
-                    {
-                        "name": "Premonición",
-                        "type": "Pasiva",
-                        "tags": "Arcana, Temporal",
-                        "description": "Puede defenderse de ataques sorpresa con normalidad además que repetirá todos los unos y doses naturales que obtenga. Recibe también Inmunidad a efectos que le obliguen a repetir tiros."
-                    }
-                ]
-            },
-            {
-                "attributes": ["concentracion-superior", "desplazamiento"],
-                "abilities": [
-                    {
-                        "name": "Dobles Temporales",
-                        "type": "Pasiva",
-                        "tags": "Arcana, Temporal",
-                        "skill": "magia-temporal",
-                        "description": "Al entrar en combate se rodea de RANGO Dobles Temporales. Al ser impactado por un ataque que le tenga explícitamente como objetivo una vez por ronda puede hacer que impacte a un doble, eliminándolo de inmediato. Puede también sacrificar los dobles para anular ataques que realice."
-                    },
-                    {
-                        "name": "Cronomago Experto",
-                        "type": "Pasiva",
-                        "tags": "Arcana, Temproral",
-                        "skill": "magia-temporal",
-                        "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia Temporal. Este modificador no se acumula con el otorgado por Mente Desencadenada."
-                    },
-                    {
-                        "name": "Premonición Superior",
-                        "type": "Pasiva",
-                        "tags": "Arcana, Temproral",
-                        "skill": "magia-temporal",
-                        "description": "Puede repetir todos los tiros inferiores a un 5 que obtenga y quedarse con el resultado más conveniente."
                     }
                 ]
             },
@@ -1256,7 +1245,7 @@
         ],
         "enchancements": [
             {
-                "attributes": ["nacido-del-cielo","rayo-luminoso","toque-sanador","parada-luminosa"],
+                "attributes": ["voluntad-poderosa","rayo-luminoso","toque-sanador","parada-luminosa","revigorar"],
                 "abilities": [
                     {
                         "name": "Aura Luminosa",
@@ -1292,6 +1281,13 @@
                         "tags": "Vida, Ambiental",
                         "skill": "magia-de-vida",
                         "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Vida y puede detectar la posición de todos los seres vivos a distancia media. Sus hechizos de Sanación aumentan la Vitalidad sanada por 2 y recibirán alcance cercano. Estos modificadores no se acumulan con la habilidad Telaraña de Vida."
+                    },
+                    {
+                        "name": "Línea Defensiva",
+                        "type": "Pasiva",
+                        "tags": "Moral",
+                        "skill": "magia-de-vida",
+                        "description": "Tanto esta criatura como sus aliados vinculados podrán entrar en *posición defensiva* una vez por ronda como acción bonus. También podrán repetir todos los 1 y 2 naturales que obtengan en tiros defensivos."
                     }
                 ]
             },
@@ -2076,9 +2072,22 @@
                 ]
             },
             {
-                "attributes": [],
+                "attributes": ["explosion-divina","azote-ejecutor"],
                 "abilities": [
-                    {}
+                    {
+                        "name": "Avatar Divino",
+                        "type": "Pasiva",
+                        "tags": "Divina",
+                        "resistances": ["Fuego","Frío","Radiante","Necrótico","Ácido","Eléctrico","Sónico"],
+                        "immunities": ["Mentales","Miedo","Aflicciones","Toque"],
+                        "description": "Recibe Resistencia a efectos de Fuego, Frío, Radiante, Necrótico, Ácido, Eléctrico y Sónico además de Inmunidad a Aflicciones y efectos Mentales, Miedo y de Toque. Empleará también su modificador de Guerrero Divino para todos sus tiros relacionados con armas. Además, al entrar en combate recibirá automáticamente seis <i>contadores de escudo</i> que puede emplear para detener ataques de todo tipo y se encontrará siempre en <i>posición defensiva</i>."
+                    },
+                    {
+                        "name": "Ángel Vengador",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "description": "Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatemente 40 Vitalidad temporal y  seis <i>contadores de escudo</i>. Obtendrá también Ventaja en todos sus tiros y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor."
+                    }
                 ]
             }
         ]
@@ -3091,56 +3100,6 @@
                         "skill": "magia-de-transmutacion",
                         "description": "Recibe Ventaja en todos sus tiros de ataque, defensa y habilidad relacionados con Magia de Transmutación. Este modificador no se acumula con el otorgado por Mente Desencadenada."
                     }
-                ]
-            },
-            {
-                "attributes": [],
-                "abilities": [
-                    {}
-                ]
-            }
-        ]
-    },
-    "viajero-planar": {
-        "name": "Viajero Planar",
-        "stat": "itl",
-        "modranks": [
-            "magia-espacial"
-        ],
-        "rank": 0,
-        "max": 4,
-        "stats": [
-            {"stat": "itl", "rank": 1, "boost": 1},
-            {"stat": "dex", "rank": 1, "boost": 1},
-            {"stat": "itl", "rank": 2, "boost": 1},
-            {"stat": "dex", "rank": 2, "boost": 1},
-            {"stat": "itl", "rank": 3, "boost": 1},
-            {"stat": "dex", "rank": 3, "boost": 1},
-            {"stat": "itl", "rank": 4, "boost": 1},
-            {"stat": "dex", "rank": 4, "boost": 1}
-        ],
-        "enchancements": [
-            {
-                "attributes": ["velocidad-superior","esquiva-asombrosa","salto-espacial","portal-menor","puerta-dimensional","bolsillo-interdimensional"],
-                "abilities": [
-                    {
-                        "name": "Esquiva Espacial",
-                        "type": "Reaccion",
-                        "tags": "Arcana, Espacial, Defensiva",
-                        "description": "+MOD para defenderse, funciona contra ataques enemigos de todo tipo. Si también tiene Esquiva puede tirar ambos métodos defensivos contra un único ataque y quedarse con el resultado que más le convenga."
-                    }
-                ]
-            },
-            {
-                "attributes": [],
-                "abilities": [
-                    {}
-                ]
-            },
-            {
-                "attributes": [],
-                "abilities": [
-                    {}
                 ]
             },
             {

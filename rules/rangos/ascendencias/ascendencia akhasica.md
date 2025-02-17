@@ -66,7 +66,7 @@ Aprendes dos hechizos Arcanos o Mentales adicionales de Rango II o menos, los cu
 
 A través de un ritual de meditación puedes liberar a tu mente de las ataduras del cuerpo, convirtiéndote en una criatura de pensamiento puro. Cuando actives este hechizo tu cuerpo físico caerá inconsciente y manifestarás un cuerpo incorpóreo, el cual adoptará el aspecto que desees y no podrá alejarse más de cien metros de tu cuerpo. La forma astral se desvanecerá si tu cuerpo físico es dañado o si es afectada con *eliminar magia* u otros hechizos similares.
 
-En esta forma eres completamente incorpóreo, recibiendo así Inmunidad a todos los efectos que no sean Arcanos o Divinos además que recibirás velocidad de vuelo 1. No obstante, solo podrás realizar acciones que requieran esfuerzo únicamente mental y no podrás interactuar con objetos físicos. A rango V puedes utilizar esta habilidad para viajar al vacío entre dimensiones, pudiendo así entrar como criatura astral en otros planos o dominios conecntados con la región del plano material donde te encuentres.
+En esta forma eres completamente incorpóreo, recibiendo así Inmunidad a todos los efectos que no sean Arcanos o Divinos además que recibirás velocidad de vuelo 1. No obstante, solo podrás realizar acciones que requieran esfuerzo únicamente mental y no podrás interactuar con objetos físicos. A rango V puedes utilizar esta habilidad para viajar al vacío entre dimensiones, pudiendo así entrar como criatura astral en otros planos o dominios conectados con la región del plano material donde te encuentres.
 
 ### Psicomagia
 
@@ -112,7 +112,7 @@ Eres capaz de entrar en un demiplano sustentado únicamente por el poder de tu m
 
 *Innata, Pasiva*
 
-Tu mente ha alcanzado el peldaño más alto del conocimiento. Recibes Inmunidad a efectos Mentales y eres capaz de hablar y entender todas las lenguas mortales. Tienes también conocimiento de todas las magias Arcanas, permitiéndote emplear tu bonificador más alto para todos tus tiros de magia. Las entidades relacionadas con la memoria akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
+Tu mente ha alcanzado el peldaño más alto del conocimiento. Recibes Inmunidad a efectos Mentales y eres capaz de hablar y entender todas las lenguas mortales. Tienes también conocimiento de todas las magias Arcanas, permitiéndote emplear tu bonificador más alto para todos tus tiros de magia. Las entidades relacionadas con la Memoria Akhásica te consideran como aliada y evitarán meterse en tu camino salvo que actúes directamente contra el destino.
 
 ## Rango VI
 
@@ -126,11 +126,10 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 **Duración:** 6 rondas
 
-Adoptar la forma de un avatar del destino, un enviado de la mismísimas memoria Akhásica, con tal de reestablecer el orden de las cosas en el mundo. De esta forma recibirás 40 vitalidad temporal, además de grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin vitalidad no podrá volver a activarse hasta que hayan pasado 6 rondas desde el momento en el que la habilidad se activó en primer lugar. Los demás beneficios de Árbitro del destino serían los siguientes:
+Adoptar la forma de un avatar del destino con tal de reestablecer el orden universal. De esta forma recibirás 40 vitalidad temporal junto a de grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin Vitalidad no podrás volver a activarlos hasta que hayan pasado 6 rondas. Los demás beneficios de Árbitro del destino se especifican a continuación:
 
 + Tu Inteligencia, Sabiduría y Carisma pasan a ser 12, mientras que tu defensa pasará a ser 20. 
-+ Activas automáticamente los beneficios de *Fortaleza del pensamiento*, además de recibir ventaja en todos tus tiros que involucren estadísticas mentales y de aumentar el daño de todos tus hechizos arcanos por un dado. 
-+ Los hechizos que hayas recibido por la ascendencia no costarán reserva para ser lanzados, pese a que aún deberá pagarse reserva para poder empoderarlos.
-+ Cada ronda podrás entrar en posición defensiva como acción bonus. 
-+ Recibes seis contadores de escudo que puedes emplear para reducir el daño de ataques. Estos contadores no pueden reponerse ni se acumulan con otras habilidades. 
-+ Así mismo obtendrás la capacidad de hacer uso de 6 hechizos adicionales de rango IV o menos. 
++ Activas automáticamente los beneficios de Fortaleza del Pensamiento además que recibes Ventaja en todos tus tiros que involucren estadísticas mentales y aumentas el daño de todos tus hechizos Arcanos por 1d6. Estos beneficios no se acumulan con Meditación Iluminada. 
++ Los hechizos que hayas recibido esta Ascendencia no costarán reserva para ser lanzados. No obstante, debes seguir pagando para empoderarlos.
++ Cada ronda podrás entrar en *posición defensiva* como acción bonus. 
++ Aprendes seis hechizos Arcanos o Mentales nuevos de rango IV o menos, los cuales pueden lanzarse pagando chi o vigor. 
