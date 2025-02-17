@@ -9,6 +9,11 @@
         "type": "abyssal",
         "domains": ["magia-de-fuego", "magia-mental", "magia-espacial", "magia-de-tormenta"]
     },
+    "douma":{
+        "name": "Douma",
+        "type": "celestial",
+        "domains": ["magia-de-vida","magia-sombria","nigromancia"]
+    },
     "gulmaht":{
         "name": "Gulmaht",
         "type": "abyssal",

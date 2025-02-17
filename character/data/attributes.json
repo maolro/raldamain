@@ -401,10 +401,8 @@
       "name": "Alteración Temporal",
       "skill": "magia-temporal",
       "type": "Accion",
-      "cost": "2 Acciones",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
-      "description": "Repara un objeto roto o cura RANGO+2 Vitalidad"
+      "cost": "1 Acción",
+      "description": "Toque, Repara un objeto roto o cura RANGO + 2 Vitalidad. Solo puede sanar heridas recibidas en la ronda anterior."
     },
     "alterar-emociones": {
       "rank": 2,
@@ -7218,9 +7216,7 @@
       "skill": "magia-temporal",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Adyacente",
-      "duration": "Instantáneo",
-      "description": "Tiro CON o sufre 1DD+RANGO daño Fuerza. Si afecta un objeto no-mágico se rompe"
+      "description": "Toque, el objetivo debe tener éxito en un tiro de Salud contra +MOD o sufre 1DD + RANGO daño Fuerza. Si afecta un objeto no-mágico recibirá el efecto de estado <i>roto</i>."
     },
     "romper-agarres": {
       "rank": 1,

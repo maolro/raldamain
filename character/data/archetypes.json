@@ -141,7 +141,7 @@
                         "tags": "Innata, Mental",
                         "skill": "ascendencia-akhasica",
                         "resistances": ["Arcanos"],
-                        "description": "Al inicio del combate recibe RANGO <i>contadores de escudoz</i> y Resistencia a efectos Arcanos. Esto funciona de la misma manera que el hechizo Fortaleza del Pensamiento y no se acumula con ella."
+                        "description": "Al inicio del combate recibe RANGO <i>contadores de escudo</i> y Resistencia a efectos Arcanos. Esto funciona de la misma manera que el hechizo Fortaleza del Pensamiento y no se acumula con ella."
                     },
                     {
                         "name": "Árbitro del Destino",
@@ -220,7 +220,6 @@
                     {
                         "name": "Sello Extraplanario",
                         "type": "Pasiva",
-                        "actions": 1,
                         "tags": "Arcana, Protectora",
                         "skill": "magia-protectora",
                         "description": "Todos las invocaciones y criaturas extraplanarias tienen Desventaja atacándole. Estas tampoco afectarle con habilidades que le tengan como objetivo explícito salvo que tengan éxito en un tiro de Salud contra +MOD."
@@ -241,7 +240,6 @@
                     {
                         "name": "Esfera de Fuerza",
                         "type": "Pasiva",
-                        "actions": 1,
                         "tags": "Arcana, Protectora",
                         "skill": "magia-protectora",
                         "vt": "RANGOx6",
@@ -251,7 +249,6 @@
                     {
                         "name": "Campo Antimágico",
                         "type": "Pasiva",
-                        "actions": 1,
                         "tags": "Arcana, Protectora",
                         "skill": "magia-protectora",
                         "immunities": ["Arcanos"],
@@ -265,7 +262,6 @@
                     {
                         "name": "Expansión de Dominio",
                         "type": "Pasiva",
-                        "actions": 1,
                         "tags": "Arcana, Espacial",
                         "skill": "magia-protectora",
                         "description": "La criatura es capaz de expandir su dominio sobre el campo de batalla (+MOD). Si logra expandirlo exitosamente recibirá Ventaja en todos sus tiros y podrá lanzar cualquier hechizo Ambiental de su elección sin la necesidad de pagar chi. Un campo de batalla con dominio expandido impedirá que se lancen otros hechizos Ambientales salvo que se tenga éxito en un tiro de habilidad contra su Magia Espacial."
@@ -1800,7 +1796,6 @@
                         "type": "Pasiva",
                         "tags": "Innata",
                         "skill": "magia-de-invocacion",
-                        "actions": 1,
                         "description": "Cuando esta criatura entre en <i>posición defensiva<(i> su invocador también lo hará de manera automática. Lo mismo ocurre en sentido inverso. Ninguno de los dos puede ser sorprendido salvo que ambos lo estén."
                     },
                     {
@@ -2613,7 +2608,7 @@
         ]
     },
     "ligador-de-almas": {
-        "name": "Akhásico",
+        "name": "Ligador de Almas",
         "stat": "itl/cha",
         "modranks": [
             "magia-de-almas"
