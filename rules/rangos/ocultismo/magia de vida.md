@@ -46,7 +46,7 @@ Atacas a tu enemigo con un rayo de luz cegadora. Realiza un ataque con Magia de 
 
 **Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo distinto a distancia media.
 
-### Halo cegador
+### Halo Cegador
 
 *Vida, Visual, Área, Radiante*
 
