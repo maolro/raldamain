@@ -2503,9 +2503,7 @@
       "skill": "magia-de-evocacion",
       "type": "Accion",
       "cost": "2 Acciones y 1 Chi",
-      "reach": "Cono pequeño",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+STAT daño Arcano (la mitad en caso de fallo)"
+      "description": "Cono pequeño, +MOD para impactar, Inflige 1DD + STAT daño Arcano. Si falla infligirá la mitad de daño."
     },
     "descarga-de-energia-negativa": {
       "rank": 1,
@@ -3154,9 +3152,8 @@
       "skill": "magia-de-aire",
       "type": "Accion",
       "cost": "1 Acción y 1 Chi",
-      "reach": "Adyacente",
-      "duration": "Concentración",
-      "description": "Inflige 2DD+STAT daño Cortante y tira Heroísmo o Acrobacias o empuja un paso y tropieza"
+      "tags": "Aire, Ataque, Maniobra",
+      "description": "Un objetivo adyacente, +MOD para impactar, Inflige 2DD+STAT daño Cortante. El objetivo debe tener éxito en un tiro de Heroísmo o Acrobacias contra +MOD o es empuja un paso y queda <i>tropezado</i>."
     },
     "esferas-del-relampago": {
       "rank": 3,
@@ -3374,9 +3371,8 @@
       "skill": "magia-protectora",
       "type": "Accion",
       "cost": "2 Acciones y 2 Chi",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Tira contra el nivel + 3 de una criatura extraplanaria y en caso de éxito la exilias a su plano natal"
+      "tags": "Arcana, Protectora",
+      "description": "Distancia media, Tira +MOD contra el nivel + 3 de una criatura extraplanaria y en caso de éxito la exilia a su plano natal."
     },
     "exoesqueleto": {
       "rank": 4,
@@ -6858,9 +6854,7 @@
       "skill": "magia-de-evocacion",
       "type": "Accion",
       "cost": "1 Acción",
-      "reach": "Medio",
-      "duration": "Instantáneo",
-      "description": "Inflige 1DD+RANGO daño Arcano. No puede ser Esquivado a distancia corta"
+      "description": "Distancia media, +MOD para impactar, Inflige 1DD + RANGO daño Arcano. No puede ser Esquivado a distancia corta."
     },
     "rayo-de-plasma": {
       "rank": 5,
@@ -7156,9 +7150,8 @@
       "skill": "magia-protectora",
       "type": "Accion",
       "cost": "1 Acción y 2 Chi",
-      "reach": "Medio",
-      "duration": "Concentración",
-      "description": "Tiro Heroísmo o Acrobacias o agarrado y no puede usar habilidades Arcanas. Puede repetir cada ronda para intentar escapar"
+      "tags": "Arcana, Protectora, Agarre",
+      "description": "Distancia media, el objetivo tira Heroísmo o Acrobacias contra +MOD o queda <i>agarrado</i>. Mientras quede agarrado de esta manera no puede emplear habilidades Arcanas. Cada ronda puede repetir el tiro para intentar escapar."
     },
     "retrasar-explosion": {
       "rank": 2,

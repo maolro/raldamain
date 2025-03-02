@@ -183,3 +183,5 @@ Usa a un enemigo agarrado como un arma para atacar a todos los enemigos en un ra
 ## Rango VI
 
 ### Maestría con Cadenas
+
+Esta habilidad también te permite alcanzar la maestría en tu propio estilo, pudiendo así emplear tus propias habilidades sin cansarte. Todas tus habilidades de Cadenas con Rango III o menos pueden emplearse una vez por ronda sin la necesidad de gastar vigor. Esto no se aplicará a las técnicas nuevas que conozcas ni a aquellas que tengan una restricción de usos por ronda. 
