@@ -72,7 +72,7 @@ Si logras provocarle daño saldrá inmediatamente de *posición defensiva* y rec
 
 No dejas escapar a tus enemigos cuando intenten enfrentarse a ti. En respuesta a que un enemigo *desenganche* o se aleje de ti por cualquier medio puedes moverte un paso hacia él y hacerle un Ataque natural como reacción contra el cual tu objetivo recibirá Desventaja defendiéndose. No puedes emplear esta habilidad más de una vez por ronda contra el mismo objetivo.
 
-### Abrazo de oso
+### Abrazo de Oso
 
 *Salvaje, Marcial, Agarre, Cuerpo a cuerpo, Físico*
 
@@ -179,3 +179,5 @@ Sabes donde apuntar para matar a un enemigo con un único golpe. Haz un ataque c
 *Salvaje, Pasiva*
 
 Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques Estas técnicas pueden intercambiarse durante un descanso largo a través del entrenamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.
+
+Esta habilidad también te permite alcanzar la maestría en tu propio estilo, pudiendo así emplear tus propias habilidades sin cansarte. Todas tus habilidades de Estilo Salvaje de Rango III o menos pueden emplearse una vez por ronda sin la necesidad de gastar vigor. Esto no se aplicará a las técnicas nuevas que conozcas ni a aquellas que tengan una restricción de usos por ronda. 

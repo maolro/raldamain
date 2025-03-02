@@ -114,7 +114,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 **Coste:** 2 acciones y 2 vigor
 
-Posicionándote del modo correcto y preparando tu cuerpo al máximo eres capaz de prepararte para responder a cualquier ataque que te arrojen, superando a tus enemigos con una precisión y resistencia mejoradas. De esta manera al entrar en este estado obtendrás Ventaja en todos tus tiros de Artes marciales, además de que estos aumentarán su alcance a cercano. Además, conseguirás contadores de escudo iguales a tu rango. 
+Posicionándote del modo correcto y preparando tu cuerpo al máximo eres capaz de prepararte para responder a cualquier ataque que te arrojen, superando a tus enemigos con una precisión y resistencia mejoradas. De esta manera al entrar en este estado obtendrás Ventaja en todos tus tiros de Artes marciales, además de que estos aumentarán su alcance a cercano. Además, conseguirás *contadores de escudo* iguales a tu rango. 
 
 ### Golpe Oculto
 
@@ -122,7 +122,7 @@ Posicionándote del modo correcto y preparando tu cuerpo al máximo eres capaz d
 
 **Coste:** 2 vigor
 
-Eres capaz de controlar la fuerza que recorre tu cuerpo para reconducirla con enorme precisión y velocidad, desafiando las expectativas de tu enemigo de un simple ataque fácil de evitar. De esta manera en respuesta a que un enemigo evite uno de tus ataques puedes hacer un segundo, el cual contará con ventaja y las mismas propiedades que el anterior. Esta habilidad podrá emplearse incluso si tu golpe fue completamente evadido por habilidades que den éxito automático, y en el caso de que tu objetivo se haya alejado un paso en su anterior defensa tú también podrás moverte la misma distancia como reacción.
+Eres capaz de controlar la fuerza que recorre tu cuerpo para reconducirla con enorme precisión y velocidad. En respuesta a que un enemigo evite uno de tus ataques puedes hacerle un segundo ataque como acción bonus que contará con Ventaja y las mismas propiedades que el anterior. Esta habilidad podrá emplearse incluso si tu golpe fue completamente evadido por habilidades que den éxito automático. En el caso de que tu objetivo se haya alejado un paso en su anterior defensa tú también podrás moverte la misma distancia como reacción.
 
 ### Control del Chi Interior
 
@@ -146,7 +146,7 @@ Propinando una feroz patada eres capaz de dejar fuera de combate a cualquiera qu
 
 En el caso de que tu objetivo caiga a 0 PV por este ataque podrás escoger matarlo instantáneamente. 
 
-### Patada torbellino
+### Patada Torbellino
 
 *Marcial, Dragón, Mejora*
 

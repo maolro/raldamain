@@ -110,7 +110,7 @@ Este ataque puede potenciarse aún más si cargas el relámpago con más energí
 
 *Tormenta, Ataque, Área, Sónico*
 
-**Coste:** 1 acciy 1 chi
+**Coste:** 1 acción 1 chi
 
 **Alcance:** Mediano
 

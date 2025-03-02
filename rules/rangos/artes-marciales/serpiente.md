@@ -75,7 +75,7 @@ El daño base de tus ataques Marciales pasa a ser 1d8.
 
 ### Golpe Irreductible
 
-*Marcial, Serpente, Mejora*
+*Marcial, Serpiente, Mejora*
 
 **Coste:** 2 Vigor
 
@@ -105,16 +105,66 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
+### Mordedura Fantasma
+
+*Serpiente, Marcial, Mejora*
+
+**Coste:** 2 vigor
+
+Al hacer un ataque desde el sigilo podrás ignorar toda Inmunidad que tenga tu objetivo a ataques sorpresa, aplicando así la Ventaja que tendrías con normalidad. Si logras impactar tu objetivo será incapaz de emplear reacciones defensivas que le permitan evitar o reducir el daño. No obstante, los *contadores de escudo* que tenga activos sí podrán aplicarse con normalidad si representan habilidades que protejan su cuerpo entero. 
+
+### Golpe Evasivo
+
+*Serpiente, Marcial, Mejora*
+
+**Coste:** 2 vigor
+
+Tras impactar con tu siguiente ataque puedes *desenganchar* como reacción y moverte un paso en cualquier dirección. Si esto te llevaría a una posición con *cubierta* u *ocultamiento* puedes también esconderte como acción bonus. Esta habilidad puede aplicarse siempre que tengas éxito en el tiro de ataque, incluyendo aquellos casos donde tu objetivo utilice reacciones defensivas. 
+
+### Golpe Deshabilitante
+
+*Marcial, Mejora, Aflicción*
+
+**Coste:** 2 vigor
+
+Conoces los puntos de presión exactos que deshabilitan las habilidades de tus enemigos. Al impactar con tu siguiente ataque aumentas en daño base por 2d6 y tu objetivo perderá la capacidad de emplear habilidades relacionadas con un Rango de tu elección. Esta habilidad cuenta como una *herida permanente grave* y no una Aflicción para determinar las Inmunidades que se aplicarían a ella.
+
+Este efecto permanecerá activo hasta que sea eliminado. Para liberarse de este efecto el objetivo deberá tener éxito en un tiro Salud al inicio de su turno contra tu modificador de Estilo Serpiente. También puede curarse con habilidades sanadoras de Rango III o superiores.
+
 ## Rango V
 
 El daño base de tus ataques Marciales pasa a ser 1d10.
 
-### Beso de la cobra
+### Beso de la Cobra
 
-Ataque con daño elevado que puede matar al impactar
+*Serpiente, Marcial, Mejora, Aflicción*
+
+**Coste:** 3 vigor
+
+Haces un ataque letal capaz de destruir los órganos internos de tu objetivo. Cuando este ataque impacte tu objetivo no sufrirá ningún daño adicional pero quedará marcado con el Beso de la Cobra. En cualquier momento de la ronda puedes activar este efecto para forzarle a tener éxito en un tiro de Salud contra tu modificador de Estilo Serpiente o sufrirá 3d10 + DES daño Físico que ignora cualquier Defensa o Resistencia además de una *herida permanente grave*. En el caso que tenga éxito sufrirá la mitad de daño pero mantendrá la *herida permanente*.
+
+### Asesinato Múltiple
+
+*Serpiente, Marcial, Mejora*
+
+**Coste:** 3 vigor
+
+Te desplazas rápidamente por el campo de batalla para asesinar a todos tus enemigos antes que puedan reaccionar. Al impactar con tu siguiente ataque aumentas su daño base por 3d6 y puedes inmediatamente moverte un paso para atacar a un objetivo diferente adyacente a ti. Si vuelves a impactar le infligirás 1d6 menos daño y podrás repetir el efecto hasta que el daño adicional se reduzca a 0 o falles tu tiro de ataque. Puedes gastar 1 vigor para evitar la reducción de daño además que la aplicación de una habilidad defensiva no contará como un fallo.
+
+### Mordiscos en Secuencia
+
+*Serpiente, Marcial, Mejora*
+
+**Coste:** 3 vigor
+
+Haces una serie de rápidos ataques contra el mismo objetivo para deshabilitar todas sus partes vitales. Tras atacar a un enemigo puedes hacer dos ataques adicionales contra él como acción bonus. El afectado deberá emplear el mismo resultado de su anterior tiro defensivo para protegerse de tus ataques adicionales y estos pueden mejorarse con otras técnicas que conozcas salvo aquellas que te proporcionen ataques adicionales. 
 
 ## Rango VI
 
-### Maestría de artes marciales
+### Maestría de Artes Marciales
 
-Aprende tres técnicas de armas u otros estilos de artes marciales.
+*Salvaje, Pasiva*
+
+Has alcanzado la cima de la maestría de tu estilo, abriéndote las puertas a todo tipo de técnicas de artes marciales. Aprendes cuatro nuevas técnicas de rango IV o inferior pertenecientes a cualquier estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques. Estas técnicas pueden intercambiarse durante un descanso largo a través del entrenamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.
+
+Esta habilidad también te permite alcanzar la maestría en tu propio estilo, pudiendo así emplear tus propias habilidades sin cansarte. Todas tus habilidades de Estilo Serpiente de Rango III o menos pueden emplearse una vez por ronda sin la necesidad de gastar vigor. Esto no se aplicará a las técnicas nuevas que conozcas ni a aquellas que tengan una restricción de usos por ronda. 

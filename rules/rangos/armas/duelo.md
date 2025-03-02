@@ -137,7 +137,7 @@ Este ataque ignorará la DEF otorgada por armaduras que no sean completas y har�
 
 ## Rango V 
 
-### Golpe de gracia
+### Golpe de Gracia
 
 *Duelo, Mejora* 
 
@@ -145,7 +145,7 @@ Este ataque ignorará la DEF otorgada por armaduras que no sean completas y har�
 
 Con un rápido y preciso movimiento rematas a tu oponente, empleando los mínimos movimientos para lograr el máximo resultado. De esta manera tu próximo ataque infligirá 3d6 daño adicional, además de una herida permanente grave. Además, este ataque ignorará la defensa otorgada por armaduras, y si llega a reducir a tu objetivo a 0 PV, lo matará instantáneamente. 
 
-### Cortes en cadena
+### Cortes en Cadena
 
 *Duelo, Mejora*
 
@@ -163,10 +163,10 @@ Eres capaz de aprovechar las mas mínimas brechas para sobrepasar a tus rivales,
 
 ## Rango VI
 
-### Maestro espadachín
+### Maestro Espadachín
 
 *Duelo, Pasiva*
 
-Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. 
+Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del DJ. Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
 
-Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
+Esta habilidad también te permite alcanzar la maestría en tu propio estilo, pudiendo así emplear tus propias habilidades sin cansarte. Todas tus habilidades de Duelo con Rango III o menos pueden emplearse una vez por ronda sin la necesidad de gastar vigor. Esto no se aplicará a las técnicas nuevas que conozcas ni a aquellas que tengan una restricción de usos por ronda. 

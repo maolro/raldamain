@@ -164,9 +164,9 @@ Sin embargo, en caso de que el arma se trate de una con la característica *reca
 
 ### Maestría con armas a distancia
 
-Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. 
+Has llegado a la cúspide del dominio de tu arma, contando con un arsenal de técnicas tanto comunes como excéntricas para sorprender a tus enemigos. De esta manera podrás adquirir hasta tres técnicas de cualquier rama de *Armas* de rango IV o menos, siempre que estas sean lógicas y cuenten con la aprobación del master. Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
 
-Estas técnicas también podrán cambiarse con el debido entrenamiento y dedicación, permitiendo modificar tu selección en un descanso largo. 
+Esta habilidad también te permite alcanzar la maestría en tu propio estilo, pudiendo así emplear tus propias habilidades sin cansarte. Todas tus habilidades de A Distancia con Rango III o menos pueden emplearse una vez por ronda sin la necesidad de gastar vigor. Esto no se aplicará a las técnicas nuevas que conozcas ni a aquellas que tengan una restricción de usos por ronda. 
 
 <div style="page-break-after: always; break-after: page;"></div>
 

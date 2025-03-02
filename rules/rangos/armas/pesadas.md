@@ -173,3 +173,5 @@ Golpeas con extrema velocidad y luego utilizas la inercia para golpear de nuevo 
 *Pesado, Pasivo*
 
 Has alcanzado la cima de la maestría con armas pesadas, lo que te permite utilizar tu arma de formas nuevas e impredecibles. Aprendes tres nuevas técnicas de rango IV o inferior pertenecientes a cualquier arma o estilo de arte marcial de tu elección que puedes utilizar para potenciar tus ataques con armas pesadas. Estas técnicas pueden intercambiarse durante un descanso largo a través del entranamiento y antes de seleccionarlas debes consultar a tu DJ para asegurarte de que tienen sentido.
+
+Esta habilidad también te permite alcanzar la maestría en tu propio estilo, pudiendo así emplear tus propias habilidades sin cansarte. Todas tus habilidades de Armas Pesadas con Rango III o menos pueden emplearse una vez por ronda sin la necesidad de gastar vigor. Esto no se aplicará a las técnicas nuevas que conozcas ni a aquellas que tengan una restricción de usos por ronda. 
