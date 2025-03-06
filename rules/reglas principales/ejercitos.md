@@ -16,6 +16,14 @@ Para gestionar adecuadamente un combate a escala de ejércitos se agruparán los
 - **Movimiento:** El movimiento indica la cantidad de casillas que puede moverse la unidad cuando reciba órdenes. 
 - **Habilidades Especiales:** En este apartado se indica todas las habilidades especiales con las que cuente la unidad.
 
+## Categorías de unidad
+
+Se establecen las siguientes directrices para determinar los números máximos y mínimos de cada tropa en base a su categoría dentro del ejército. Estas serían las categorías principales: 
+
+- **Base**: Forman el grueso del ejército. Su número oscilará de 4 a 16 y su coste debe ser inferior a 10. Una tropa mágica o de élite no puede contar como base. Un ejército debe tener como mínimo una tropa que le sirva de base y en esta categoría entra la infantería o caballería media.
+- **Especialistas**: Son tropas avanzadas que cumplen funciones específicas en el ejército que son difícilmente replicables,. Su número oscilará de 0 a 4 y pueden tener cualquier coste. En esta categoría entran magos, sanadores, artillería, asesinos y similares.
+- **Tropas de élite**: Son tropas que forman el corazón del ejército y son imprescindibles para su buen funcionamiento. Su número oscilará de 2 a 6 y deben tener costes superiores a 8. En esta categoría entra la infantería y caballería pesada además de las bestias de batalla.
+
 # Tipos básicos de unidad
 
 ## Infantería Ligera
