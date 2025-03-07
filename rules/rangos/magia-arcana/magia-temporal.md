@@ -106,7 +106,7 @@ Tus hechizos Temporales convierten sus dados de daño a d8.
 
 *Temporal, Arcana, Ritual*
 
-A través de un complejo ritual meditativo vislumbras tu línea temporal durante unos instan, recibiendo así visiones del pasado, presente o futuro. Cada uso de este ritual te otorgará una visión relacionada con un objeto, lugar o persona de tu elección que esté junto a ti mientras realices el ritual. La naturaleza de las visiones que recibas quedará escogida por el máster y un uso excesivo de este ritual puede desencadenar en la locura.
+A través de un complejo ritual meditativo vislumbras tu línea temporal durante unos instantes, recibiendo así visiones del pasado, presente o futuro. Cada uso de este ritual te otorgará una visión relacionada con un objeto, lugar o persona de tu elección que esté junto a ti mientras realices el ritual. La naturaleza de las visiones que recibas quedará escogida por el máster y un uso excesivo de este ritual puede desencadenar en la locura.
 
 ### Predecir Movimiento
 
@@ -130,7 +130,7 @@ Vislumbras el futuro por unos instantes para predecir un suceso y prepararte con
 
 Provocas una anomalía temporal a tu alrededor que formará varias copias intangibles de ti que representan tus movimientos pasados y futuros. Al lanzar este hechizo creas una cantidad de dobles temporales a tu alrededor igual a tu Rango que seguirán tu movimientos, permaneciendo a tu alrededor hasta que pierdas la concentración o seas impactado por un ataque de área. 
 
-Puedes emplear a tus los dobles para burlar ataques contra ti o usarlos para engañar a tus enemigos. Una vez por ronda como reacción puedes hacer que un ataque hecho contra ti impacte a uno de tus dobles, destruyéndolo de inmediato. Dicho ataque no puede ser de área ni funcionará contra criaturas con vista a ciegas. 
+Puedes emplear a tus dobles para burlar ataques hechos contra ti o usarlos para engañar a tus enemigos. Una vez por ronda como reacción puedes hacer que un ataque hecho contra ti impacte a uno de tus dobles, destruyéndolo de inmediato. Dicho ataque no puede ser de área ni funcionará contra criaturas con vista a ciegas. 
 
 De manera alternativa puedes sacrificar un doble para anular un ataque que realices, tratándolo como si nunca hubieras tomado esa acción y recuperando todas las reservas gastadas en él. Tu objetivo no recuperará reservas ni usos de habilidades gastadas para defenderse de dicho ataque aunque sea anulado. No obstante, debido a que los dobles representan acciones pasadas o futuras solo podrás anular ataques que sean iguales al que hayas realizado justo antes o vayas a utilizar justo después.
 
@@ -222,7 +222,7 @@ Visión futura mejorará también tus capacidades de predecir y defenderte de ac
 
 **Duración:** Concentración
 
-Provocas una brecha temporal en el campo de batalla donde podrás manipular el flujo del tiempo a tu antojo. La brecha ocupará un espacio igual a una esfera grande y transformará todo el lugar en un dominio cuyo tiempo fluye de manera distinta al plano material. Por ello, mientras dure este hechizo puedes escoger la relación entre el tiempo fuera de la burbuja y el tiempo dentro de ella, haciendo así que los todos los sucesos dentro de la brecha duren tan poco como un minuto o tanto como un día entero a ojos de los individuos fuera de ella. Debido al enorme esfuerzo que supone una brecha durará hasta que pierdas la concentración o pase una hora.
+Provocas una brecha temporal en el campo de batalla donde podrás manipular el flujo del tiempo a tu antojo. La brecha ocupará un espacio igual a una esfera grande y transformará todo el lugar en un dominio cuyo tiempo fluye de manera distinta al plano material. Por ello, mientras dure este hechizo puedes escoger la relación entre el tiempo fuera de la burbuja y el tiempo dentro de ella, haciendo así que todos los sucesos dentro de la brecha duren tan poco como un minuto o tanto como un día entero a ojos de los individuos fuera de ella. Debido al enorme esfuerzo que supone una brecha durará hasta que pierdas la concentración o pase una hora.
 
 La brecha temporal te permitirá alterar el tiempo de maneras nuevas e inesperadas. Al principio de una ronda puedes escoger el orden de Iniciativa que tendrán todos los personajes en ella, colocándote como más te convenga. Esto también te permite emplear tus acciones en cualquier momento de la ronda teniendo siempre prioridad. Además, todos tus hechizos temporales reducirán su coste en acciones por 1 y aquellos que la vean reducida a 0 podrán ser lanzados como acción bonus una vez por ronda.
 
