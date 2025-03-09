@@ -98,7 +98,7 @@ Una batería de chi es un dispositivo capaz de almacenar energía mágica para u
 
 Debido al volumen de una batería no es posible llevar más de dos baterías encima. Estas también se caracterizan por ser muy inestables, explotando con facilidad si son impactadas por un ataque de cualquier tipo. Una batería que explote provocará una explosión de chi que provoca 3d6 daño Arcano y con dificultad igual a tu Modificador de Fabricación para evitarla .
 
-### Visión mejorada
+### Visión Mejorada
 
 *Objeto, Proyecto*
 

@@ -14,7 +14,7 @@ A lo largo de tus años de estudio has aprendido la influencia que tanto compone
 
 ## Rango I
 
-Recibes cuatro ranuras de objeto de Rango I
+Recibes cuatro ranuras de objeto de Rango I. Cada ranura le da acceso a tres pociones de su elección.
 
 ### Poción de Sanación
 
