@@ -14,7 +14,7 @@ Como un arma con la oportunidad de crear daños devastadores a sus objetivos, la
 
 ## Rango I
 
-Recibes cuatro ranuras de objeto de Rango I
+Recibes cuatro ranuras de objeto de Rango I. Cada ranura permite el uso de tres bombas. 
 
 ### Bomba de Fuego
 
@@ -102,15 +102,15 @@ Si una persona encuentra la bomba antes que explote esta puede ser desarmada, im
 
 Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II y Rango I.
 
-### Bomba de gas venenoso
+### Bomba de Gas Venenoso
 
 Crea gas venenoso al explotar.
 
-### Bomba de chi
+### Bomba de Chi
 
 Activa un hechizo Arcano o Elemental al explotar
 
-### Explosión defensiva
+### Explosión Defensiva
 
 Puedes emplear bombas para detener ataques enemigos, pudiendo usarlas como reacción si te encuentras en *posición defensiva* para hacer un contrataque con Ventaja.
 
