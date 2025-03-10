@@ -1,47 +1,49 @@
+# Las unidades
+
+## Nombre de la Unidad
+
+- **Coste base:** El coste base indica el valor de la unidad para que sea posible calcular el coste total del ejército. Este coste se contabiliza como parte del presupuesto para una batalla
+- **Tiro base:** En este apartado se especifica la cantidad de dados que tirará el barco cuando se enfrente con otro. Funciona igual que el combate entre ejércitos pero los barcos solo podrán atacarse entre sí. 
+- **Cohesión:** La cohesión representa cuánto daño es capaz de recibir la unidad antes de quedar eliminada. 
+- **Movimiento:** El movimiento indica la cantidad de casillas que puede moverse la unidad cuando reciba órdenes. 
+- **Capacidad:** La capacidad representa la cantidad de unidades que caben dentro del barco.
+- **Habilidades Especiales:** En este apartado se indica todas las habilidades especiales con las que cuente la unidad.
+
 # Tipos básicos de barco
 
-## Bergantín
+## Buque de Guerra
 
-- **Coste base:** 4
-- **Tiro base:** 2d6 A Distancia (alcance 4)
-- **Cohesión:** 3
-- **Movimiento:** 5
-- **Capacidad:** 2 unidades
+- **Coste base:** 12
+- **Cohesión:** 8
+- **Velocidad:** 3
+- **Alcance:** 8
+- **Tiro:** 3d6
+- **Capacidad:** 2
 
-## Infantería a Distancia
+## Barco de Escolta
 
-- **Coste base:** 6
-- **Tiro base:** 1d6 Combate, 2d6 A Distancia (alcance 4)
-- **Cohesión:** 3
-- **Movimiento:** 3
-
-## Infantería media
-
-- **Coste base:** 6
-- **Tiro base:** 2d6 Combate
-- **Cohesión:** 3
-- **Movimiento:** 3
-
-## Galeón
-
-- **Coste base:** 8
-- **Tiro base:** 3d6 Combate
+- **Coste base:** 10
 - **Cohesión:** 6
-- **Movimiento:** 2
-- **Habilidades especiales:** Armadura
+- **Velocidad:** 5
+- **Alcance:** 6
+- **Tiro:** 2d6
+- **Capacidad:** 1
 
-## Fragata
-
-- **Coste base:** 8
-- **Tiro base:** 3d6 a distancia (alcance 6)
-- **Cohesión:** 4
-- **Movimiento:** 4
-- **Capacidad:** 3 unidades (compañía) o (batallón)
-
-## Navío de Línea
+## Barco de Transporte
 
 - **Coste base:** 8
-- **Tiro base:** 3d6 Combate
 - **Cohesión:** 6
-- **Movimiento:** 2
-- **Habilidades especiales:** Armadura
+- **Velocidad:** 3
+- **Alcance:** 6
+- **Tiro:** 1d6
+- **Capacidad:** 3
+
+## Galera
+
+- **Coste base:** 10
+- **Cohesión:** 6
+- **Velocidad:** 4
+- **Alcance:** 6
+- **Tiro:** 2d6
+- **Capacidad:** 2
+- **Habilidades Especiales:** Embestida

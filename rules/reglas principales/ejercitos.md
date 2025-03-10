@@ -64,7 +64,7 @@ Se establecen las siguientes directrices para determinar los números máximos y
 - **Movimiento:** 1
 - **Habilidades especiales:** Penetrante, Artillería
 
-## Caballería ligera
+## Caballería Ligera
 
 - **Coste base:** 6
 - **Tiro base:** 1d6 Combate, 1d6 A Distancia (alcance 2)
@@ -72,7 +72,7 @@ Se establecen las siguientes directrices para determinar los números máximos y
 - **Movimiento:** 5
 - **Habilidades especiales:** Caballería
 
-## Caballería media
+## Caballería Media
 
 - **Coste base:** 8
 - **Tiro base:** 2d6 Combate
@@ -80,7 +80,7 @@ Se establecen las siguientes directrices para determinar los números máximos y
 - **Movimiento:** 4
 - **Habilidades especiales:** Caballería
 
-## Caballería pesada
+## Caballería Pesada
 
 - **Coste base:** 12
 - **Tiro base:** 3d6 Combate
@@ -88,13 +88,13 @@ Se establecen las siguientes directrices para determinar los números máximos y
 - **Movimiento:** 3
 - **Habilidades especiales:** Caballería, Armadura
 
-## Bestia de batalla
+## Bestia de Batalla
 
 - **Coste base:** 13
 - **Tiro base:** 3d6 Combate
 - **Cohesión:** 3
 - **Movimiento:** 3
-- **Habilidades especiales:** Armadura, Terror
+- **Habilidades especiales:** Armadura, Terror, Escudos, Arma Pesada
 
 ## Milicia
 
@@ -113,7 +113,7 @@ Se establecen las siguientes directrices para determinar los números máximos y
 
 # Habilidades
 
-## Apoyo disparo (+1)
+## Apoyo Disparo (+1)
 
 Puede hacer ataques A Distancia con alcance 2 y dados iguales a sus dados de combate - 1. Al igual que una unidad a distancia reducirá 1 cohesión con cada impacto e ignora armaduras.
 
@@ -125,7 +125,7 @@ Puede luchar igual de bien en tierra que en agua e ignora penalizaciones por com
 
 Sus ataques a distancia ignoran la armadura del objetivo pero no pueden apoyar a aliados que estén en la línea de fuego. 
 
-## Arma pesada (+1)
+## Arma Pesada (+1)
 
 Aumenta su tiro de combate por 1d6 al luchar contra infantería ligera, lanzas o a distancia.
 
