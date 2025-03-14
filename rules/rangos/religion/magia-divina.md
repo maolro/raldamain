@@ -20,7 +20,7 @@ Como ferviente creyente de tu fe, tus oraciones se han visto recompensadas por a
 
 *Divina, Pasiva*
 
-Tu deidad te permite dar pequeñas maldiciones y bendiciones. Como acción bonus empleable una cantidad de veces al día igual a tu Rango + 2 una criatura a distancia media repite un tiro de ataque, habilidad o defensa y quedarse con el mejor o peor resultado. Si afectas a una criatura hostil con esta habilidad puede gastar otras habilidades que le permitan repetir tiros como Premonición, Instinto de supervivencia o esta misma para contrarrestar sus efectos.
+Tu deidad te permite dar pequeñas maldiciones y bendiciones. Como acción bonus empleable una cantidad de veces al día igual a tu Rango + 2 una criatura a distancia media repite un tiro de ataque, habilidad o defensa, haciendo que se quede con el mejor o peor resultado según tu conveniencia. Si afectas a una criatura hostil con esta habilidad puede gastar otras habilidades que le permitan repetir tiros como Premonición, Instinto de supervivencia o esta misma para contrarrestar sus efectos.
 
 **Empoderar** (1 chi): Recuperas un uso de esta habilidad
 
