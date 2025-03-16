@@ -126,10 +126,10 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 **Duración:** 6 rondas
 
-Adoptar la forma de un avatar del destino con tal de reestablecer el orden universal. De esta forma recibirás 40 vitalidad temporal junto a de grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin Vitalidad no podrás volver a activarlos hasta que hayan pasado 6 rondas. Los demás beneficios de Árbitro del destino se especifican a continuación:
+Adoptar la forma de un avatar del destino con tal de reestablecer el orden universal. De esta forma recibirás 40 vitalidad temporal junto con grandes mejoras a tu capacidad cognitiva. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Árbitro del destino por quedarte sin Vitalidad no podrás volver a activarlos hasta que hayan pasado 6 rondas. Los demás beneficios de Árbitro del destino se especifican a continuación:
 
 + Tu Inteligencia, Sabiduría y Carisma pasan a ser 12, mientras que tu defensa pasará a ser 20. 
 + Activas automáticamente los beneficios de Fortaleza del Pensamiento además que recibes Ventaja en todos tus tiros que involucren estadísticas mentales y aumentas el daño de todos tus hechizos Arcanos por 1d6. Estos beneficios no se acumulan con Meditación Iluminada. 
-+ Los hechizos que hayas recibido esta Ascendencia no costarán reserva para ser lanzados. No obstante, debes seguir pagando para empoderarlos.
++ Los hechizos que hayas recibido por esta Ascendencia no costarán reserva para ser lanzados. No obstante, debes seguir pagando para empoderarlos.
 + Cada ronda podrás entrar en *posición defensiva* como acción bonus. 
 + Aprendes seis hechizos Arcanos o Mentales nuevos de rango IV o menos, los cuales pueden lanzarse pagando chi o vigor. 
