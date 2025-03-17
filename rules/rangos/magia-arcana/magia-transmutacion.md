@@ -110,7 +110,7 @@ Este efecto permanecerá activo hasta que escojas terminarlo y no hay límite de
 
 **Duración:** Instantáneo
 
-Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heridas. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Transmutación o 1d6 + INT daño Físico obligatorio además de quedar Enfermado durante el resto del combate. Tras atacar recuperarás también Vitalidad igual a tu Rango + 2.
+Absorbes la esencia vital de un enemigo para destruir su cuerpo y sanar tus heridas. Un objetivo que puedas tocar debe tener éxito en un tiro de CON frente a tu modificador de Transmutación o sufrirá 1d6 + INT daño Físico obligatorio además de quedar Enfermado durante el resto del combate. Tras atacar recuperarás también Vitalidad igual a tu Rango + 2.
 
 **Empoderar** (1 chi): Reduce el nivel de una *herida permanente* o Aflicción que tengas activa por un paso al herir a tu objetivo.
 

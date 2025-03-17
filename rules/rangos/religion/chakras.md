@@ -12,13 +12,13 @@ title: Chakras
 
 Los chakras son canales por los que fluye la energía vital del universo y permean todos los seres vivos en él. Al entrar en armonía con los chakras recibes la capacidad de aumentar enormemente tu energía vital y sobrecargar algunos de estos canales para recibir temporalmente habilidades sobrenaturales. 
 
-No obstante, cada ronda que mantengas abiertos dichos canales empezarás a sufrir graves heridas internas que no podrán curarse hasta que realices descanso largo. Al principio de tu turno sufrirás daño obligatorio igual al valor indicado en cada habilidad de Chakras que tengas activa. No hay límite del número de chakras que puedas abrir pero el daño que estas provocan se acumula.
+No obstante, cada ronda que mantengas abiertos dichos canales empezarás a sufrir graves heridas internas que no podrán curarse hasta que realices descanso largo. Al principio de tu turno sufrirás daño obligatorio igual al valor indicado en cada habilidad de Chakras que tengas activa. No hay límite en el número de chakras que puedes abrir, pero el daño que estos provocan se acumulará.
 
 ### Fuerza vital 
 
 *Innata, Pasiva*
 
-Tener chakras abiertos aumenta enormemente tu resistencia física para compensar el daño que recibes. Si tienes al menos un chakra abierto recibirás 5 PV temporales por cada Rango que tengas y además que tu Defensa aumentará por un valor igual a tu Rango + 1.
+Tener chakras abiertos aumenta enormemente tu resistencia física para compensar el daño que recibes. Si tienes al menos un chakra abierto recibirás 5 PV temporales por cada Rango que tengas, además de que tu Defensa aumentará por un valor igual a tu Rango + 1.
 
 ### Chakra Terrenal
 
@@ -30,7 +30,7 @@ El chakra terrenal te conecta con la tierra y te une con su energía vital, enco
 
 *Chakra 1, Pasiva*
 
-El chakra raíz es uno de los principales puntos de energía de tu vuerpo, encontrándose en la base de tu columna vertebral. Este chakra te une con la tierra para que puedas estar seguro y centrado. Al activar este chakra recibirás Ventaja en todos tus tiros relacionados dos estadísticas de tu elección, las cuales puedes cambiar al principio de tu turno. Para abrir este chakra no debes llevar armas ni armaduras.
+El chakra raíz es uno de los principales puntos de energía de tu cuerpo, encontrándose en la base de tu columna vertebral. Este chakra te une con la tierra para que puedas estar seguro y centrado. Al activar este chakra recibirás Ventaja en todos tus tiros relacionados dos estadísticas de tu elección, las cuales puedes cambiar al principio de tu turno. Para abrir este chakra no debes llevar armas ni armaduras.
 
 ## Rango II
 
@@ -90,7 +90,7 @@ El chakra del tercer ojo representa la intuición, el conocimiento y las habilid
 
 *Chakra 2, Pasiva*
 
-El chakra d ela corona se encuentra en la cumbre de la cabeza, y representa la conexión del individuo con planos superiores y dimensiones mas allá de la comprensión. De esta manera, al emplear este chakra, podrás canalizar una parte de esta energía proveniente de otros planos para imbuir tu cuerpo y mente, afilandolos en el proceso, recibiendo +2 en dos estadísticas de elección así como inmunidad a venenos, enfermedades y aflicciones en general. Activar este chakra requiere sin embargo de un largo periodo de estudio, así como de abandonar tus ataduras y deseos materiales.  
+El chakra de la corona se encuentra en la cumbre de la cabeza, y representa la conexión del individuo con planos superiores y dimensiones mas allá de la comprensión. De esta manera, al emplear este chakra, podrás canalizar una parte de esta energía proveniente de otros planos para imbuir tu cuerpo y mente, afilandolos en el proceso, recibiendo +2 en dos estadísticas de elección así como inmunidad a venenos, enfermedades y aflicciones en general. Activar este chakra requiere sin embargo de un largo periodo de estudio, así como de abandonar tus ataduras y deseos materiales.  
 
 ## Rango V
 
@@ -98,13 +98,13 @@ El chakra d ela corona se encuentra en la cumbre de la cabeza, y representa la c
 
 *Innata, Pasiva*
 
-El poder los chakras inunda tu cuerpo y se vierte en cada una de tus acciones y pensamientos, dandote una claridad y perfección capaces de desafiar incluso a los mas avidos guerreros. Al activar ocho chakras tus acciones se vuelven inescrutable para quienes et ven y tus golpes mas certeros, aumentando de esta forma el daño de tus ataques físicos por un paso además de recibir la capacidad de fintar incluso a enemigos que se defiendan con esquiva asombrosa o premonición.  
+El poder los chakras inunda tu cuerpo y se vierte en cada una de tus acciones y pensamientos, dandote una claridad y perfección capaces de desafiar incluso a los mas avidos guerreros. Al activar ocho chakras tus acciones se vuelven inescrutable para quienes te ven, y tus golpes mas certeros, aumentando de esta forma el daño de tus ataques físicos por un paso además de recibir la capacidad de fintar incluso a enemigos que se defiendan con esquiva asombrosa o premonición.  
 
 **Chakra del alma** 
 
 *Chakra 2, Pasiva*
 
-El chakra del alma es el primero de los chakras externos al cuerpo físico, que permite al individuo trascender las fronteras del plano mortal para ver mas allá. De esta forma tu perspectiva del flujo del tiempo se volverá mas avanzada a medida que que el chakra se abra, otorgándote un segundo turno con 3 AP e iniciativa -10. Así mismo la posibilidad de interrumpir tus acciones se volverá mínima, si es que no inexistente, haciendo así que tus secuencias de ataques no puedan ser interrumpidas. 
+El chakra del alma es el primero de los chakras externos al cuerpo físico, que permite al individuo trascender las fronteras del plano mortal para ver mas allá. De esta forma tu perspectiva del flujo del tiempo se volverá mas avanzada a medida que el chakra se abra, otorgándote un segundo turno con 3 AP e iniciativa -10. Así mismo la posibilidad de interrumpir tus acciones se volverá mínima, si es que no inexistente, haciendo así que tus secuencias de ataques no puedan ser interrumpidas. 
 
 **Chakra del espacio** 
 
@@ -124,7 +124,7 @@ Has alcanzado la cúspide de la meditación, y los chakras junto con sus enigmas
 
 *Chakra 2, Pasiva*
 
-El chakra de la armonía es uno de los chakras externos, que representa el balance en el mundo entre las diferentes energías que lo componen. De esta manera, al activar este chakra tu energía se alineará de la misma manera, haciendo que tres de tus estadísticas, ya sena las físicas o las mentales, se igualen a la mas alta de dicha categoría. Para cambiar la elección entre un tipo de estadísticas y otro en medio de un combate deberás sufrir 2 daño obligatorio como pago por alterar el orden. Para poder despertar este chakra deberás convertirte en un maestro iluminado de tu orden, abandonando todo deseo y atadura material.
+El chakra de la armonía es uno de los chakras externos, que representa el balance en el mundo entre las diferentes energías que lo componen. De esta manera, al activar este chakra tu energía se alineará de la misma manera, haciendo que tres de tus estadísticas, ya sean las físicas o las mentales, se igualen a la mas alta de dicha categoría. Para cambiar la elección entre un tipo de estadísticas y otro en medio de un combate deberás sufrir 2 daño obligatorio como pago por alterar el orden. Para poder despertar este chakra deberás convertirte en un maestro iluminado de tu orden, abandonando todo deseo y atadura material.
 
 **Chakra universal** 
 
