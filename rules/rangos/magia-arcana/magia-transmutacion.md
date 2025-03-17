@@ -184,7 +184,7 @@ Retuerces y alteras el cuerpo de un enemigo para transformarlo en una criatura i
 
 **Duración:** Una hora
 
-Inyectas la esencia de una criatura extraplanaria en un objetivo para darle una poción de sus poders mágicos. Un objetivo adyacente aprenderá de inmediato cuatro hechizos de Rango II o menos relacionados con una criatura extraplanaria de tu elección. La criatura podrá lanzar esos hechizos durante una hora y empleará tu modificador de Magia de Transmutación para todos los tiros. Los hechizos exactos deben ser permitidos por el DJ y se presentan algunos ejemplos a continuación.
+Inyectas la esencia de una criatura extraplanaria en un objetivo para darle una poción de sus poderes mágicos. Un objetivo adyacente aprenderá de inmediato cuatro hechizos de Rango II o menos relacionados con una criatura extraplanaria de tu elección. La criatura podrá lanzar esos hechizos durante una hora y empleará tu modificador de Magia de Transmutación para todos los tiros. Los hechizos exactos deben ser permitidos por el DJ y se presentan algunos ejemplos a continuación.
 
 - **Abisal:** Pozo de Gravedad, Asalto Psíquico, Bola Sombra, Desplazamiento
 
