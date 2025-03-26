@@ -121,7 +121,7 @@ Este ataque ignorará la DEF otorgada por armaduras no-míticas y hará falta ga
 
 Concentras una gran cantidad de energía eléctrica en el cielo para que la tormenta misma descargue toda su furia sobre tus enemigos. Escoge dos posiciones a distancia lejana de ti. Todas los que se encuentren en una columna mediana centrada en alguna de dichas posiciones deberán defenderse de un ataque de Magia de Tormenta o sufrirán 4d10 + CAR daño Eléctrico y 2d10 + CAR daño Sónico, ambos Míticos. 
 
-Aquellos afectados que no sean Míticos quedarán también *aturdidos* durante una ronda mientras que los Míticos podrán evitar este efecto teniendo éxito en un tiro de Salud contra tu modificador de Magia. Esta habilidad no podrá evitarse con Esquiva y los objetivos voladores no-míticos fallarán automáticamente sus tiros defensivos (los míticos tendrán Desventaja defendiéndose contra este ataque). Esta habilidad solo puede emplearse si te encuentras en un entorno afectado por una tormenta.
+Aquellos afectados que no sean Míticos quedarán también *aturdidos* durante una ronda mientras que los Míticos podrán evitar este efecto teniendo éxito en un tiro de Salud contra tu modificador de Magia de Tormenta. Esta habilidad no podrá evitarse con Esquiva y los objetivos voladores no-míticos fallarán automáticamente sus tiros defensivos (los míticos tendrán Desventaja defendiéndose contra este ataque). Esta habilidad solo puede emplearse si te encuentras en un entorno afectado por una tormenta.
 
 **Empoderar** (1 chi): Vuelve a lanzar este hechizo como acción bonus contra un grupo diferente de enemigos a distancia lejana de ti. 
 

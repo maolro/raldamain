@@ -46,7 +46,7 @@ Si has enredado a un objetivo con este hechizo puedes intentar retenerlo aún m�
 
 **Duración:** Instantánea
 
-Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enemigo que se encuentre a distancia media de ti. Haz un ataque de magia de Naturaleza que inflige 1d6 + SAB daño Perforante al impactar. Este ataque es especialmente efectivo contra objetivos con armaduras ligeras, infligiéndoles *sangrado* al impactar. Si tienes técnicas de armas puedes aplicarlas a tus ataques hechos con este hechizo siempre que esa posible.
+Afilas un trozo de madera en forma de una estaca y lo usas para atacar a un enemigo que se encuentre a distancia media de ti. Haz un ataque de magia de Naturaleza que inflige 1d6 + SAB daño Perforante al impactar. Este ataque ignorará la Defensa que tenga tu objetivo si este se encuentra *enredado* o *agarrado* por un efecto de Magia de Naturaleza además que infligirá *sangrado* si lleva Armadura Ligera. Si tienes técnicas de armas puedes aplicarlas a tus ataques hechos con este hechizo siempre que esa posible.
 
 **Empoderar** (1 chi): Haz un ataque adicional contra un objetivo distinto a distancia media.
 
@@ -140,7 +140,7 @@ Todos tus hechizos de Naturaleza sustituyen sus dados de daño por d8 y aquellos
 
 Infundes a una masa de plantas con una semblanza de vida para que ataquen a tus enemigos. Este hechizo afectará a todas las plantas en un radio medio centrado en cualquier punto dentro del alcance y una vez activado las plantas atacarán a todas las criaturas que puedan tocar. 
 
-Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que inflige 1d8 + SAB daño Cortante y *enreda* al impactar. Además, los objetivos que hayas impactado deben tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarrados*.
+Haz un ataque de magia de Naturaleza contra todas las criaturas en el área afectada que inflige 1d8 + SAB daño Cortante y *enreda* al impactar. Además, los objetivos que hayas impactado deben tener éxito en un tiro de Heroísmo o Destrozar contra tu magia de Naturaleza o quedarán *agarrados*. Este ataque ignorará la Defensa que tenga tu objetivo si se encuentra *enredado* o *agarrado* por un efecto de Magia de Naturaleza de igual manera que Espina de Madera.
 
 Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración o sea eliminado por otro hechizo de una magnitud similar. Las criaturas que empiecen su turno en el área afectada o entren en ella en cualquier momento de la ronda deberán defenderse nuevamente de este hechizo, sufriendo los mismos efectos en caso de fracasar.
 
@@ -158,7 +158,7 @@ Este efecto permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 Al herir a un enemigo con un hechizo de magia de Naturaleza puedes lanzar este hechizo como una acción bonus para clavarle una espina de madera y hacerla crecer rápidamente, provocándole los efectos de *sangrado*. La espina permanecerá dentro del cuerpo de tu objetivo hasta que sea arrancada con un tiro exitoso de Primeros auxilios contra tu magia de Naturaleza. Este hechizo cuenta como un efecto de Toque para los propósitos de Inmunidades.
 
-Cada vez que un personaje empiece su turno con una espina parasítica en él debe tener éxito en un tiro de Salud frente a tu magia de Naturaleza o sufrirá 1d8 daño Perforante que ignora defensa y resistencias junto con una *herida permanente leve* (a mitad de daño si tiene éxito). Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de CON contra la espina.
+Cada vez que un personaje empiece su turno con una Espina Parasítica en él debe tener éxito en un tiro de Salud frente a tu magia de Naturaleza o sufrirá 1d8 daño Perforante que ignora la Defensa junto a una *herida permanente leve* (a mitad de daño si tiene éxito). Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo contra tu modificador de Magia de Naturaleza. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de Salud contra este efecto.
 
 **Empoderar** (1 chi): Un objetivo adicional impactado por el mismo ataque de Naturaleza también se le clavará una espina, sufriendo los mismos efectos.
 
@@ -178,7 +178,7 @@ Llamas a un espíritu guardián hecho de plantas y madera para que te asista en 
 
 ## Rango IV
 
-**Florecimiento Mortal**
+### Florecimiento Mortal
 
 *Naturaleza, Área, Ambiental, Duradera, Concentración*
 
@@ -188,11 +188,13 @@ Llamas a un espíritu guardián hecho de plantas y madera para que te asista en 
 
 **Duración:** Concentración
 
-Acelerando el crecimiento de viciosas flores en una zona que designes, eres capaz de cubrir un área con su polen letal y sus zarcillos venenosos, envenenando a tantos como se encuentren en el área hasta la muerte. Todos los que se encuentren dentro de un radio medio del punto de aparición del florecimiento mortal deberán defenderse usando su constitución o sufrirán los efectos de un veneno de constitución. Aquellos que entren en el área o los que comiencen su turno en ella deberán repetir el tiro cada ronda, siendo que aquellos envenenados aumentarán el nivel de veneno en uno en caso de fallar (el veneno seguirá afligiéndolos aunque salgan de la zona afectada). Además, aquellos envenenados que se encuentren en la zona afectada recibirán además desventaja en todos sus tiros.
+Invocas un campo de flores tóxicas que crece rápidamente, creando una densa nube de polen venenoso que se esparce por el campo de batalla. La nube ocupa una esfera de tamaño medio y todas las criaturas dentro de su área deben tener éxito en un tiro Salud contra tu modificador de Magia de Naturaleza o sufren un veneno que les deja *enfermadas* y les provoca 1d8 + Rango daño Veneno al final de su turno hasta que se recuperen del efecto.
 
-En caso de emplear esta habilidad en un terreno que ya estuviese afectado por Crecimiento acelerado, entonces usarla costará una acción menos. 
+La nube de polen permanecerá en el campo de batalla hasta que pierdas la concentración o sea disipada. Las criaturas dentro de la nube quedan *cegadas* debido a la visibilidad reducida y reciben *ocultamiento*. Además, deberán tener éxito en un nuevo tiro de Salud contra el veneno al inicio de su turno o si entran en el área de la nube, quedando afectadas por el veneno en el caso que fracasen. Si una criatura ya está envenenada sufrirá 1d8 + Rango daño Veneno adicional y el efecto *náuseas* durante una ronda.
 
-**Armadura de Zarzas**
+**Empoderar** (1 chi): Creas una pequeña nube de polen venenoso en un espacio a media distancia de ti. Esta nube causa los mismos efectos pero solo ocupa una esfera pequeña y se disipa al cabo de una ronda.
+
+### Armadura de Zarzas
 
 *Naturaleza, Mejora ,Concentración, Duradera*
 
@@ -202,9 +204,13 @@ En caso de emplear esta habilidad en un terreno que ya estuviese afectado por Cr
 
 **Duración:** Concentración
 
-Empleando crecimientos vegetales eres capaz de crear una gruesa y espinosa con la que defenderte de tus enemigos. De esta forma, al crearla, recibirás contadores de escudo iguales a tu rango, además de que podrás hacer un ataque de Espina de madera o Zarcillo enredador como acción bonus una vez por ronda. En el caso de que comiences tu turno en un lugar con muchas plantas recuperarás un contador de escudo. 
+Formas una gruesa y espinosa coraza de madera y espinas para protegerte de ataques enemigos. Este efecto te otorga una cantidad de *contadores de escudo* a tu rango además que una vez por ronda podrás hacer un ataque de Espina de madera o Zarcillo enredador como acción bonus. 
 
-**Prisión de Madera** 
+Las plantas de la coraza se regeneran solas si están en contacto de la naturaleza, permitiéndote así recuperar un *contador de escudo* al inicio de tu turno si te encuentras en un terreno con alta vegetación.
+
+**Empoderar** (1 chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo.
+
+### Prisión de Madera 
 
 *Naturaleza, Mejora*
 
@@ -214,11 +220,15 @@ Empleando crecimientos vegetales eres capaz de crear una gruesa y espinosa con l
 
 **Duración:** Concentración
 
-Aprovechando las propiedades de las plantas creas una prisión capaz de drenar todo chi de su interior, atrapando para ti a cual sea que sea tu objetivo. Al emplear esta habilidad un objetivo enredado deberá defenderse empleando heroísmo o destrozar o quedará agarrado. En el caso de quedar agarrado, estará atrapado en una prisión que contará con PV iguales a rangox3, y los que se encuentren en ella no podrán magia arcana u objetos mágicos. Así mismo cada ronda podrá volver a repetir el tiro para tratar de liberarse, perdiendo 1 chi de su reserva en caso de fallar. 
+Creas una prisión de plantas capaz de drenar todo chi del objetivo que captures. Un objetivo *enredado* a distancia media debe tener éxito en un tiro de Heroísmo o Destrozar o quedará *agarrado* hasta que se libere. Mientras permanezca atrapado será incapaz de emplear Magia Arcana o usar Objetos mágicos además que perderá 1 chi de su reserva al final de la ronda. 
+
+Al principio de su turno podrá repetir el tiro y en caso de éxito se liberará de este efecto. Una prisión de madera tiene los mismos PV, Defensa, Resistencias e Inmunidades que un Muro de Zarzas para determinar la dificultad a la hora de destruirla.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional a distancia media con este hechizo.
 
 ## Rango V
 
-**Furia de la Naturaleza** 
+### Furia de la Naturaleza 
 
 *Naturaleza, Área, Ataque*
 
@@ -228,9 +238,13 @@ Aprovechando las propiedades de las plantas creas una prisión capaz de drenar t
 
 **Duración:** Instantáneo
 
-Provocando un crecimiento espontáneo de la vegetación de la zona puedes hacer que temporalmente se mueva de acuerdo a tu voluntad, atacando a tantos como se encuentren en su radio de alcance. Todos aquellos que se encuentren en una columna de tamaño medio deberán defenderse o sufrirán 3d10+Sabiduría daño cortante y quedarán enredados. Así mismo los afectados deberán tirar heroísmo o destrozar o quedarán agarrados inmediatamente. El área afectada quedará bajo los efectos de crecimiento acelerado, y en caso de que el hechizo se lance en un terreno afectado por animar plantas, este le dará a la Furia de la naturaleza un dado adicional de daño.
+Provocas un crecimiento espontáneo de la vegetación cercana para que ataque a todos tus enemigos a tu alrededor. Este efecto ocupará una columna de tamaño medio y te permitirá atacar a todas las criaturas en él, infligiendo así 3d10 + SAB daño Cortante al impactar además de *enredar* a tus objetivos. Aquellos que impactes deberán tener éxito en un tiro de Heroísmo contra tu Magia de Naturaleza o quedarán *agarrados* hasta que se liberen.
 
-**Gran Árbol Drenador** 
+Tras lanzar este hechizo todo el campo de batalla quedará afectado por Crecimiento Acelerado si no lo estaba ya. En el caso que lo lances en un campo de batalla afectado por Animar Plantas este ataque ignorará la Defensa que tengan tus objetivos. 
+
+**Empoderar** (1 chi): Puedes volver a lanzar este hechizo la ronda siguiente sin la necesidad de pagar chi o vigor.
+
+### Gran Árbol Drenador 
 
 *Naturaleza, Invocación, Mejora*
 
@@ -240,30 +254,31 @@ Provocando un crecimiento espontáneo de la vegetación de la zona puedes hacer 
 
 **Duración:** Una hora
 
-Convocas un gigantesco árbol con el que tomar fuerza vital del suelo mismo para mantenerte en pie, permitiéndote sostenerte con el poder de la naturaleza para seguir luchando. Al convocarlo se creará un árbol al que le podrás transferir el daño que sufras y que te otorgará ventaja en tus tiros de naturaleza. Este árbol tendrá 6xrango PV y rango+3 defensa, además de que será vulnerable al daño fuego. 
+Convocas un gigantesco árbol y formas un vínculo vital con él para resistir enormes cantidades de daño. El árbol invocado aparecerá en una posición adyacente a ti y ocupará una columna gigante. Respecto a sus resistencias tendrá PV igual a tu Rango x 6, Defensa igual a tu Rango + 3 y Vulnerabilidad al daño Fuego.
 
-En el caso de que este hechizo se lance sobre un elemental de naturaleza, este recibirá 40 vitalidad temporal, aprovechando el crecimiento para volverse mas resistente. 
+El árbol permanecerá sobre el campo de batalla durante una hora o hasta que sea destruido. Cada vez que sufras daño de cualquier tipo puedes transferir hasta la mitad de este al árbol, reduciendo así sus PV por la cantidad adecuada. Cabe recalcar que podrás transferir efectos de estado o heridas permanentes de esta manera. 
 
-**Naturalizar** 
+**Empoderar** (1 chi): El árbol se sana PV iguales a tu Rango + 2.
 
-*Naturaleza, Maldición*
+### Naturalizar 
+
+*Naturaleza, Toque, Maldición*
 
 **Coste:** 1 acciones y 3 chi
 
-**Alcance:** Adyacente
+**Alcance:** Distancia Media
 
 **Duración:** Hasta que termine
 
-Usas la naturaliza para infligir a tu enemigo una terrible maldición, transformándolo lentamente en madera hasta que no quede nada de él. El objetivo deberá defenderse con constitución o sufrirá la primera etapa, teniendo que repetir el tiro cada ronda para evitar que esta avance. Esta maldición solamente podrá curarse con efectos sanadores de igual magnitud o superior.
+Usas la naturaliza para infligir a tu enemigo una terrible maldición, capaz de transformarlo en una estatua de madera. Un objetivo que puedas tocar o se encuentre *enredado* o *agarrado* por tus plantas tener éxito en un tiro de Salud contra tu Magia de Naturaleza o su cuerpo empezará a transformarse en madera, quedando así *paralizado* hasta que se libere además de recibir Vulnerabilidad al daño Fuego.
 
-- Paso 1: Queda ralentizado y recibe vulnerabilidad al daño fuego  
-- Paso 2: Desventaja en todos sus tiros físicos y -1 AP
-- Paso 3: No puede tomar acciones ni reacciones
-- Paso 4: Se transforma en una estatua de madera. Ya no puede volver a tirar.
+Al principio de su ronda el afectado podrá repetir el tiro para intentar liberarse del efecto. No obstante, si acaba fracasando dos rondas seguidas entonces se transformará de manera permanente en una estatua de madera y no podrá volver a tirar. Este efecto solo podrá revertirse mediante este mismo hechizo o con habilidades sanadoras de Rango similar o superior.
+
+**Empoderar** (1 chi): Afecta a un objetivo adicional que puedas alcanzar con esta maldición.
 
 ## Rango VI
 
-**Guardián de la tierra** 
+### Guardián de la Tierra 
 
 *Innata, Mejora*
 
@@ -271,101 +286,9 @@ Usas la naturaliza para infligir a tu enemigo una terrible maldición, transform
 
 **Duración:** Seis rondas
 
-Aceptas el abrazo de la naturaleza para convertirte en su heraldo y defensor, permitiéndote usar su dominio como una extensión de tu cuerpo para deshacerte de las amenazas. Al activar la habilidad recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Guardián de la tierra te otorgará los siguientes beneficios:
+Aceptas el abrazo de la naturaleza para convertirte en su heraldo y defensor. Al activar la habilidad recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Guardián de la tierra te otorgará los siguientes beneficios:
 
-- Tu fuerza y constitución pasarán a ser 13, mientras que tu destreza pasará a ser 0. Así mismo tu defensa pasará a ser 20, pudiendo entrar en posición defensiva una vez por ronda como acción gratuita y activando automáticamente Armadura de Zarzas.
-- Recibes resistencia a arcano, fuego, frío y ácido, además de ventaja en tus tiros de naturaleza. 
-- Obtienes un dado de daño adicional en tus ataques de naturaleza y físicos, además de obtener todas las técnicas de un arma de tu elección. 
-- Podrás emplear tus hechizos de naturaleza de hasta rango II de forma gratuita, aunque aún requerirán reserva para poder ser empoderados. 
-
-# Elemental de planta
-
-## Base
-
-**Estadísticas**: Físicas 5,4,3
-
-**PV:** 6 + CON
-
-**Vitalidad:** 8 + CON
-
-**Defensa**: 6 (armadura natural)
-
-**Resistencias:** armas físicas 7, magia 7
-
-**Inmunidades:** terreno difícil, veneno, efectos mentales
-
-**Vulnerabilidades**: fuego, cortante
-
-**Movimiento:** paso 1, excavar 1
-
-**Acciones:** 4
-
-**Habilidades:**
-
-- *Vista a ciegas*: Puede sentir la presencia de seres vivos que estén en contacto con la tierra en un radio cercano
-- *Ataque elemental*: El elemental recibe las acciones de ataque *zarcillo enredador, enmarañar* (recarga 5-6) y *espina de madera* empleando como estadística principal la FUE o DES y sumando +1 a su tiro de ataque
-
-## Mejora 1
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 6)
-
-Aumenta todas sus resistencias por 2 y recibe +1 en todos sus tiros de ataque
-
-Se regenera 2 Vitalidad al principio de su turno
-
-Recibe las acciones *muro de zarzas* (1/ronda), *planta drenadora de chi*
-
-Al ser invocado afecta el terreno con *crecimiento acelerado*
-
-## Mejora 2
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 7)
-
-Reduce el coste de hacer ataques con *zarcillo enredador, espina de madera* y *enmarañar* por 1
-
-Recibe +1 en todos sus tiros de ataque
-
-Al ser invocado está rodeado del efecto de *animar plantas*
-
-Puede gastar +1 AP en un ataque de *espina de madera* para afectarla con *espina parasítica*
-
-## Mejora 3
-
-Aumenta su Vitalidad por 2, sus PV por 1 y dos estadísticas por 1 (máximo 8)
-
-Aumenta todas sus resistencias por 2 y recibe +1 en sus tiros de ataque
-
-Recibe *florecimiento mortal* (1/día), *espinas espontáneas* (1/día) y *prisión de madera* como acción de ataque
-
-# Rangos míticos
-
-Un rango mítico mejorará los atributos otorgados por cualquier rango de tu elección además de otorgar +1 en todos los tiros y +1 chi. Además, todos las habilidades que dependan del rango incrementarán dicho valor por 1 como si poseyeras un rango adicional.
-
-## Rango I
-
-**Zarcillo enredador:** 
-
-**Alterar madera:** 
-
-
-
-## Rango II
-
-
-
-## Rango III
-
-
-
-## Rango IV
-
-
-
-## Rango V
-
-
-
-## Rango VI
-
-
-
+- Tu Fuerza y Constitución pasarán a ser 13 mientras que tu Destreza pasará a ser 0. Así mismo tu defensa pasará a ser 20 y puedes entrar en posición defensiva una vez por ronda como acción bonus. También se activará de manera automática el hechizo Armadura de Zarzas.
+- Recibes Resistencia a efectos Arcanos y de Fuego, Frío y Ácido. Recibes también Ventaja en todos tus tiros relacionados con Magia de Naturaleza como si estuvieras afectado por Crecimiento Acelerado.
+- Todos tus ataques de Naturaleza y Físicos reciben un daño de daño adicional además que puedes emplear todas las técnicas de Rango III o menos relacionados con un arma de tu elección.
+- Todos tus hechizos de Magia de Naturaleza con Rango III o menos no te costarán chi o vigor para ser lanzados. Debes seguir pagando su coste en acciones y aquellos que cuestan una acción bonus solo pueden ser empleados gratuitamente una vez por ronda. No obstante, si deseas empoderar un hechizo debes seguir pagando la cantidad adecuada de chi o vigor.
