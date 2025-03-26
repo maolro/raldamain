@@ -57,7 +57,7 @@ En el caso que ya seas un no-muerto y recibas esta habilidad la energía profana
 
 ### Vínculo Parasítico
 
-*Nigromancia, Toque, Maldición, Durad*
+*Nigromancia, Toque, Maldición, Duradera*
 
 **Coste:** 3 acciones y 1 chi
 

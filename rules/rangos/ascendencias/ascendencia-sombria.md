@@ -132,7 +132,7 @@ Desligas una porción del plano material a tu alrededor para fusionarla con el P
 
 El terreno desligado te permitirá también viajar entre ambos planos y aprovechar las diferencias de distancia y tiempo que hay entre ambos. Por ello puedes emplear una acción para pasar de un plano a otro o transportar ahí a un aliado que puedas tocar, desapareciendo de tu plano original y permaneciendo en el nuevo plano hasta que escojas volver. Cuando acabe este hechizo toda criatura que se encuentre en el Plano sombrío debido a este hechizo volverá al plano material.
 
-La nociva influencia del plano sombrío perjudicará la salud de aquellos que no estén adaptados a ella. Toda criatura sin resistencia Necrótica que empiece su turno en él  sufrirá los efectos de un veneno de SAB con tasa de efecto de una ronda y gravedad igual a tu modificador de Ascendencia sombría. Además, todos los tiros relacionados con entidades Divinas ajenas al plano sombrío recibirán Desventaja debido a que su influencia queda debilitada en este plano.
+La nociva influencia del plano sombrío perjudicará la salud de aquellos que no estén adaptados a ella. Toda criatura sin resistencia Necrótica que empiece su turno en él sufrirá los efectos de un veneno de SAB con tasa de efecto de una ronda y gravedad igual a tu modificador de Ascendencia sombría. Además, todos los tiros relacionados con entidades Divinas ajenas al plano sombrío recibirán Desventaja debido a que su influencia queda debilitada en este plano.
 
 **Empoderar** (1 chi o vigor): Cambias de plano como reacción para evitar un ataque enemigo. Esto cuenta como un efecto Espacial.
 

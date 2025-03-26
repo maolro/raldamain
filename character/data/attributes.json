@@ -34,7 +34,8 @@
       "cost": "1 Vigor",
       "reach": "Propio",
       "duration": "Instantáneo",
-      "description": "Ai impactar con su siguiente ataque tira Heroísmo o Juego de Manos o Enreda. Repite cada ronda y si falla sufre daño ataque natural"
+      "tags": "Marcial, Salvaje, Mejora, Agarre",
+      "description": "Al impactar con su siguiente ataque el objetivo debe tener éxito en un tiro de Heroísmo o Juego de Manos contra +MOD o queda <i>enredado</i>. Repite cada ronda y si falla sufrirá 1DD + MOD daño Físico de la categoría adecuada."
     },
     "abrir-el-tercer-ojo": {
       "rank": 4,
@@ -64,7 +65,7 @@
       "cost": "2 Chi o Vigor",
       "reach": "Propio",
       "duration": "Hasta que termine",
-      "description": "Ventaja en Magia Sombría, el daño Necrótico le sana Vitalidad y se sana RANGO Vitalidad cada ronda si está en un entorno afectado por hechizos Sombríos. Vulnerabilidad a Radiante y no puede sanarse por otras habilidades."
+      "description": "Obtiene Ventaja en todos sus tiros relacionados con Magia Sombría y el daño Necrótico le sana Vitalidad en lugar de herirle. Además, se sana RANGO Vitalidad cada ronda si está en un entorno afectado por hechizos Sombríos. No obstante, recibe Vulnerabilidad a efectos Radiantes y no puede sanarse por otras habilidades."
     },
     "acechar": {
       "rank": 2,
@@ -2304,7 +2305,7 @@
       "cost": "2 Acciones y 1 Chi",
       "reach": "Medio",
       "duration": "Concentración",
-      "description": "Crea nube de oscuridad que llena una esfera pequeña que ciega a todas las criaturas en ella además de darles ocultamiento. Apaga todas las fuentes de luz"
+      "description": "Crea una nube de oscuridad que llena una esfera pequeña que <i>ciega</i> a todas las criaturas en ella además de darles ocultamiento. Este efecto apagará también todas las fuentes de luz en el área y disipará efectos de Vida con Rango menor al suyo si supera al lanzador en un tiro de magia usando el modificador +MOD."
     },
     "crear-quimera": {
       "rank": 3,
@@ -5038,7 +5039,7 @@
       "cost": "3 Acciones y 2 Chi",
       "reach": "Adyacente",
       "duration": "Concentración",
-      "description": "Tira CON o forma un vínculo con el cual puede pasarle la mitad del daño que sufra además que puede afectarle con hechizos de toque sin importar la distancia. Repite el tiro cada ronda y requiere distancia media. Puede también transferir chi"
+      "description": "Adyacente, el objetivo debe tener éxito en un tiro de Salud contra +MOD o forma un vínculo con el cual puede pasarle la mitad del daño que sufra además que puede afectarle con hechizos de toque sin importar la distancia. Repite el tiro cada ronda y requiere distancia media. Puede también transferir chi"
     },
     "leer-pensamientos": {
       "rank": 1,
@@ -5321,7 +5322,8 @@
       "cost": "1 Acción y 1 Chi",
       "reach": "Adyacente",
       "duration": "Hasta que termine",
-      "description": "Tira CON o está maldito. Mientras permanezca maldito cada vez que le provoques daño Necrótico te sanas Vitalidad igual a la mitad del daño provocado"
+      "tags": "Nigromancia, Toque, Maldición",
+      "description": "Adyacente, el objetivo debe tener éxito en un tiro de Salud contra +MOD o queda maldito. Mientras permanezca maldito cada vez que le provoque daño Necrótico se sana Vitalidad igual a la mitad del daño infligido. Este efecto dura hasta que sea eliminado."
     },
     "manifestacion-divina": {
       "rank": 2,
@@ -5860,10 +5862,8 @@
       "name": "Nacido de las Tinieblas",
       "skill": "ascendencia-sombria",
       "type": "Pasiva",
-      "cost": "",
-      "reach": "",
-      "duration": "",
-      "description": "Resistencia al Frío y Necrótico. Puede lanzar hechizos Sombríos empleando vigor en lugar de chi"
+      "tags": "Innata",
+      "description": "Tiene Resistencia a efectos de Frío y Necróticos (ya incluido). También puede lanzar hechizos Sombríos empleando vigor en lugar de chi."
     },
     "nacido-de-las-tormentas": {
       "rank": 1,
@@ -6400,7 +6400,7 @@
       "skill": "ascendencia-abisal",
       "type": "Pasiva",
       "tags": "Innata",
-      "description": "Detecta la posición y naturaleza de todos los efectos mágicos a distancia media además que tiene </i>vista a ciegas</i> en un radio medio."
+      "description": "Detecta la posición y naturaleza de todos los efectos mágicos a distancia media además que tiene <i>vista a ciegas</i> en un radio medio."
     },
     "poder-de-la-locura": {
       "rank": 3,
@@ -8356,7 +8356,8 @@
       "cost": "3 Acciones y 1 Chi",
       "reach": "Adyacente",
       "duration": "Concentración",
-      "description": "Tira CON o forma un vínculo con el cual puede pasarle la mitad del daño que sufra además que puede afectarle con hechizos de toque sin importar la distancia. Repite el tiro cada ronda"
+      "tags": "Nigromancia, Toque, Maldición, Duradera",
+      "description": "Adyacente, el objetivo debe tener éxito en un tiro de Salud contra +MOD o forma un vínculo con el cual puede pasarle la mitad del daño que sufra además que puede afectarle con hechizos de toque sin importar la distancia. Repite el tiro cada ronda y dura hasta que pierda la concentración."
     },
     "vinculo-primigenio": {
       "rank": 4,

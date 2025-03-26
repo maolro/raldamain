@@ -1390,7 +1390,7 @@
     },
     "esencia-sombria": {
         "name": "Esencia Sombría",
-        "stat": "cha",
+        "stat": "cha/con",
         "modranks": ["magia-sombria","ascendencia-sombria"],
         "rank": 0,
         "max": 4,
@@ -1457,7 +1457,23 @@
                 ]
             },
             {
-                "attributes": []
+                "attributes": ["furia-de-shade","ejecucion-sombria","laberinto-de-pesadillas"],
+                "abilities": [
+                    {
+                        "name": "Dominio de Pesadilla",
+                        "type": "Pasiva",
+                        "tags": "Sombría, Ambiental",
+                        "skill": "magia-sombria",
+                        "description": "Su mera presencia convertirá el campo de batalla en un nexo entre el Plano Sombrío y el material, haciendo así que cuente siempre como si estuviera a oscuras. Esto le otorgará los efectos de Tierra Consagrada y le permitirá afectar cada ronda a todas las criaturas en el campo de batalla con la Maldición de Shade, las cuales podrán defenderse con un tiro exitoso de Salud. Puede también pasar de un plano a otro empleando una acción de igual manera que la habilidad Dominio de Pesadilla."
+                    },
+                    {
+                        "name": "Tirano Sombrio",
+                        "type": "Pasiva",
+                        "tags": "Sombría, Duradera",
+                        "skill": "magia-sombria",
+                        "description": "Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatamente 40 Vitalidad temporal y seis <i>contadores de escudo</i>. Obtendrá también Ventaja en todos sus tiros, velocidad de vuelo 2 y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor. Si ya se encuentra en Tierra Consagrada o en entra en segunda fase podrá transformar este hechizo en Eclipse de Sacrificio."
+                    }
+                ]
             }
         ]
     },
@@ -1860,7 +1876,7 @@
                         "hp": "(RANGO-1)x2",
                         "skill": "guerrero-divino",
                         "resistances": ["Miedo", "Mentales"],
-                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que el atributo Guerrero de la Fe."
+                        "description": "Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales (ya incluido). Esto funciona de la misma manera que el atributo Guerrero de la Fe."
                     },
                     {
                         "name": "Azote Divino",

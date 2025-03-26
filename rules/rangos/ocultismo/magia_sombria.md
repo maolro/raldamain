@@ -261,7 +261,7 @@ Invocas el poder del plano sombrío para que consuma la esencia vital de tus ene
 
 **Duración:** Instantáneo
 
-Empleas el poder de las sombras para consumir por completo la esencia de una criatura maldita, provocándole una muerte instantánea. Un objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de CON frente a tu Magia Sombría o sufre 3d10 + CAR daño Frío que reducirá también su cantidad máxima de Vitalidad y PV. 
+Empleas el poder de las sombras para consumir por completo la esencia de una criatura maldita, provocándole una muerte instantánea. Un objetivo afectado por la Maldición de Shade que se encuentre a distancia lejana de ti debe tener éxito en un tiro de Salud frente a tu Magia Sombría o sufre 3d10 + CAR daño Frío que reducirá también su cantidad máxima de Vitalidad y PV. 
 
 Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa todas las criaturas a distancia cercana de él deberán defenderse también de este mismo hechizo con la diferencia que el daño infligido será 1d10 + CAR.
 
@@ -277,7 +277,7 @@ Si tiene éxito en su tiro defensivo sufrirá la mitad de daño pero si fracasa 
 
 **Duración:** Concentración
 
-Atrapas a un enemigo en un horripilante demiplano perteneciente al plano sombrío  donde perderá progresivamente su cordura. Un enemigo a distancia media de ti deberá tener éxito en un tiro de CON frente a tu tiro de Magia Sombría o será exiliado a un demiplano sombrío. Dicho demiplano adoptará la forma que desees y los enemigos atrapados en él permanecerán ahí hasta que escapen o pierdas la concentración.
+Atrapas a un enemigo en un horripilante demiplano perteneciente al plano sombrío  donde perderá progresivamente su cordura. Un enemigo a distancia media de ti deberá tener éxito en un tiro de Salud frente a tu tiro de Magia Sombría o será exiliado a un demiplano sombrío. Dicho demiplano adoptará la forma que desees y los enemigos atrapados en él permanecerán ahí hasta que escapen o pierdas la concentración.
 
 Una criatura atrapada en el demiplano puede emplear una acción para buscar la salida, lo cual requiere tener éxito en un tiro de Voluntad frente a tu Magia Sombría. Si esta tiene éxito en tres tiros así encontrará la salida y escapará, pero si permanece atrapada ahí al final de su turno reducirá su cordura por 2 y sufrirá los efectos de la Maldición de Shade. Una criatura también puede escapar empleando hechizos de Magia Espacial o similares que le permitan viajar entre dimensiones.
 
@@ -299,7 +299,7 @@ Aunque las criaturas atrapadas en el demiplano se encuentren en otra dimensión 
 
 **Duración:** Siete rondas
 
-Invocas el poder del plano sombrío para crear una profunda oscuridad que tapa el sol, llenando todo el campo de batalla de oscuridad y pesadillas. Al emplear este hechizo crearás una esfera de tamaño grande en la que no entrará el sol, haciendo que el campo de batalla cuente como si fuera de noche. Este hechizo permanecerá activo durante siete rondas y mientras lo esté recibirás Ventaja en todos tus tiros relacionados con Magia Sombría además que el campo de batalla entero contará como si estuviera a oscuras. Además, toda criatura que empiece su turno ahí deberá tener éxito en un tiro de CON frente a tu Magia Sombría o aumentará el nivel de la maldición de Shade que le afecte por un paso.
+Invocas el poder del plano sombrío para crear una profunda oscuridad que tapa el sol, llenando todo el campo de batalla de oscuridad y pesadillas. Al emplear este hechizo crearás una esfera de tamaño grande en la que no entrará el sol, haciendo que el campo de batalla cuente como si fuera de noche. Este hechizo permanecerá activo durante siete rondas y mientras lo esté recibirás Ventaja en todos tus tiros relacionados con Magia Sombría además que el campo de batalla entero contará como si estuviera a oscuras. Además, toda criatura que empiece su turno ahí deberá tener éxito en un tiro de Salud frente a tu Magia Sombría o aumentará el nivel de la maldición de Shade que le afecte por un paso.
 
 Mientras el eclipse continúe activo las fuerzas de oscuridad empezarán a emerger en el plano material, transformando el campo de batalla en un lugar cada vez más terrorífico. Cuando pase la cantidad indicada de rondas podrás emplear el efecto indicado en todo el campo de batalla sin la necesidad de gastar chi o vigor.
 

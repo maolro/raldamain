@@ -30,7 +30,7 @@ Añade tu rango a todos tus ataques hechos con magia elemental de tierra e incre
 
 **Duración**: Instantáneo 
 
-Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alcanzar. Haz un ataque de Magia de Tierra contra un objetivo a distancia media que inflige 1d6 + SAB daño Contundente al impactar. Este ataque ignora resistencias a ataques a distancia debido a su gran volumen. 
+Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alcanzar. Haz un ataque de Magia de Tierra contra un objetivo a distancia media que inflige 2d6 + SAB daño Contundente al impactar. Este ataque ignora resistencias a ataques a distancia debido a su gran volumen. 
 
 **Empoderar** (1 chi): Haz un ataque adicional contra un objetivo diferente que puedas alcanzar. 
 
@@ -60,7 +60,7 @@ Manipulas la tierra en el campo de batalla para crear terreno favorable para ti.
 
 **Efecto crítico:** Los afectados sufren una *herida permanente leve* en la pierna y son empujados un paso 
 
-Golpeas el suelo con gran fuerza para generar un terratemblor. Todas las criaturas a distancia corta de ti que estén tocando el suelo deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Tierra o sufrirán 1d6 + SAB daño Contundente y caerán *tropezados*. El área afectada se convertirá en *terreno difícil* y todas las estructuras pequeñas en ella se desmoronarán. 
+Golpeas el suelo con gran fuerza para generar un terratemblor. Todas las criaturas a distancia corta de ti que estén tocando el suelo deben tener éxito en un tiro de Heroísmo o Acrobacias contra tu Magia de Tierra o sufrirán 2d6 + SAB daño Contundente y caerán *tropezados*. El área afectada se convertirá en *terreno difícil* y todas las estructuras pequeñas en ella se desmoronarán. 
 
 **Empoderar** (1 chi): Aumenta el radio de este hechizo a mediano.
 
@@ -98,7 +98,7 @@ Esta habilidad se puede utilizar de manera defensiva para protegerte a ti mismo 
 
 **Efecto crítico:** Los objetivos afectados sufren una herida permanente leve y caen al suelo. Si son criaturas voladoras, caerán inmediatamente hacia el suelo.
 
-La tierra en un punto dentro del alcance entra en erupción furiosamente, atacando a todas las criaturas en un cilindro mediano centrado en él. Este ataque inflige 2d6 + SAB de daño contundente al impactar y transforma la tierra en un radio pequeño centrado en el punto en terreno difícil.
+La tierra en un punto dentro del alcance entra en erupción furiosamente, atacando a todas las criaturas en un cilindro mediano centrado en él. Este ataque inflige 3d6 + SAB de daño contundente al impactar y transforma la tierra en un radio pequeño centrado en el punto en terreno difícil.
 
 Este ataque es especialmente efectivo contra criaturas voladoras ya que puede derribarlas. Si dañas a una criatura voladora con este ataque debe tener éxito un tiro de Salud contra tu Magia de Tierra o caerá Inmediatamente del cielo, sufriendo el daño de caída adecuado y quedando en el suelo *aturdida*.
 

@@ -17,9 +17,9 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 
 ## Sombrío I (+2)
 
-- **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia Sombría por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
-- **Habilidades Pasivas:** Recibe Sigilo Sombrío y Nacido de las Tinieblas como habilidades pasivas.
+- **Habilidades Pasivas:** Recibe Sigilo Sombrío y Nacido de las Tinieblas como habilidades pasivas. Puede también emplear su estadística de CON para todos los tiros de Magia Sombría si así lo desea. 
 - **Hechizos:** Aprende los hechizos Crear Oscuridad, Tajo Umbrío y Toque Drenador. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada Sombría:** Puede usar su tiro de Magia Sombría para defenderse de ataques cuerpo a cuerpo y a distancia.
 - **Infusión Sombría:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo Sombrío que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Necrótica.
@@ -44,4 +44,8 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 
 ## Sombrío IV (+2, 7 mejoras)
 
-Dominio de Pesadilla, Tirano Sombrío, Furia de Shade, Ejecución Sombría, Laberinto de Pesadillas, Eclipse de Sacrificio
+- **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia Sombría por 1.
+- **Hechizos:** Aprende los hechizos Furia de Shade, Ejecución Sombría y Laberinto de Pesadillas. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
+- **Dominio de Pesadilla:** Su mera presencia convertirá el campo de batalla en un nexo entre el Plano Sombrío y el material, haciendo así que cuente siempre como si estuviera a oscuras. Esto le otorgará los efectos de Tierra Consagrada y le permitirá afectar cada ronda a todas las criaturas en el campo de batalla con la Maldición de Shade, las cuales podrán defenderse con un tiro exitoso de Salud. Puede también pasar de un plano a otro empleando una acción de igual manera que la habilidad Dominio de Pesadilla. Si ya se encuentra en Tierra Consagrada o en entra en segunda fase podrá transformar este hechizo en Eclipse de Sacrificio.
+- **Tirano Sombrío:** Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatamente 40 Vitalidad temporal y seis *contadores de escudo*. Obtendrá también Ventaja en todos sus tiros, velocidad de vuelo 2 y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor. 

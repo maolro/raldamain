@@ -91,7 +91,9 @@ Has desarrollado enormemente tu vista hasta el punto que puedes identificar con 
 
 **Coste:** 2 vigor
 
-Ajustas tu forma de atacar en el último segundo para que tu presa no sea capaz de predecirte. Como reacción después de realizar un tiro de ataque puedes cambiarlo inmediatamente a un ataque diferente con coste igual o inferior en acciones, vigor y chi. Después del cambio tu enemigo debe volver a defenderse y toda habilidad empleada para detener tu anterior ataque quedará malgastada. Cabe recalcar que el cambio debe realizarse tras hacer el tiro pero antes de provocar daño.
+Ajustas tu forma de atacar en el último segundo para que tu presa no sea capaz de predecirte. Como reacción después de realizar un tiro de ataque puedes cambiarlo inmediatamente a un ataque diferente con coste igual o inferior en acciones, vigor y chi. 
+
+Después del cambio tu enemigo debe volver a defenderse y toda habilidad empleada para detener tu anterior ataque quedará malgastada. Cabe recalcar que el cambio debe realizarse tras hacer el tiro pero antes de provocar daño además que puedes conservar tu tiro anterior si así lo deseas.
 
 ## Rango V 
 
