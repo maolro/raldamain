@@ -199,7 +199,7 @@ Tu gran presencia es capaz de incitar el pánico entre tus enemigos, haciendo qu
 
 **Duración:** Concentración
 
-A través de inspiradores palabras o una épica gesta inspiras a tus aliados a combatir como héroes de leyenda. Todos tus aliados que puedan verte y escucharte recibirán 20 Vitalidad temporal y la capacidad de emplear la habilidad Indómito. Mientras esta habilidad permanezca activa obtendrán también Ventaja en todos sus tiros de ataque, defensa y talento además que tratarán los penalizadores de todas las heridas permanentes que reciban como si fueran de un paso inferior. 
+A través de inspiradoras palabras o una épica gesta impulsas a tus aliados a combatir como héroes de leyenda. Todos tus aliados que puedan verte y escucharte recibirán 20 Vitalidad temporal y la capacidad de emplear la habilidad Indómito. Mientras esta habilidad permanezca activa obtendrán también Ventaja en todos sus tiros de ataque, defensa y talento además que tratarán los penalizadores de todas las heridas permanentes que reciban como si fueran de un paso inferior. 
 
 Los beneficios de esta habilidad no se acumulan con Inspirar heroísmo y se acabarán cuando pierdas la concentración o escojas terminarlos. A diferencia de Inspirar heroísmo tú también obtendrás los beneficios de esta habilidad mientras permanezca activa. 
 
