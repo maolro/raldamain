@@ -28,7 +28,7 @@ Eres capaz de fabricar medicinas milagrosas capaces de curar a los heridos en un
 
 Tienes gran conocimiento de los diferentes venenos, sabiendo como identificar y prepararlos. Los venenos que fabriques afectarán a una estadística de tu elección y tendrán una gravedad igual a tu modificador de Química. Todos los venenos fabricados de esta manera tendrán tasa de infección de una ronda, haciendo así que el afectado tenga que tirar al principio de su turno para intentar evitar sus efectos.
 
-Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres dosis de este. Dichas dosis pueden aplicarse a un arma empleando una acción para provocar los efectos del veneno al impactar. Un único ataque no puede tener más de un veneno aplicado a la vez y cada dosis adicional del mismo veneno que afecte al mismo objetivo aumentará su gravedad por 2. 
+Cada ranura de objeto que utilices para un Veneno te permitirá fabricar tres dosis de este. Dichas dosis pueden aplicarse a un arma empleando una acción para provocar los efectos del veneno al impactar. Un único ataque no puede tener más de un veneno aplicado a la vez y cada dosis adicional del mismo veneno que afecte al mismo objetivo aumentará su gravedad por 2 en lugar de acumularlos. 
 
 ### Valentía Embotellada
 
