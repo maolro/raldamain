@@ -1,3 +1,7 @@
+---
+title: Transmutador
+---
+
 La criatura es capaz de mutar su cuerpo de nuevas maneras para adaptarse a todo tipo de situación o hacerle lo mismo a sus enemigos.
 
 # Mejoras

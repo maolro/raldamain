@@ -1,3 +1,7 @@
+---
+title: Artífice
+---
+
 # Mejoras
 
 ## Artífice I (+2)
