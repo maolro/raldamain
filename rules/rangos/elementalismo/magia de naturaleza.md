@@ -158,7 +158,9 @@ Este efecto permanecerá en el campo de batalla hasta que pierdas la concentraci
 
 Al herir a un enemigo con un hechizo de magia de Naturaleza puedes lanzar este hechizo como una acción bonus para clavarle una espina de madera y hacerla crecer rápidamente, provocándole los efectos de *sangrado*. La espina permanecerá dentro del cuerpo de tu objetivo hasta que sea arrancada con un tiro exitoso de Primeros auxilios contra tu magia de Naturaleza. Este hechizo cuenta como un efecto de Toque para los propósitos de Inmunidades.
 
-Cada vez que un personaje empiece su turno con una Espina Parasítica en él debe tener éxito en un tiro de Salud frente a tu magia de Naturaleza o sufrirá 1d8 daño Perforante que ignora la Defensa junto a una *herida permanente leve* (a mitad de daño si tiene éxito). Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo contra tu modificador de Magia de Naturaleza. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de Salud contra este efecto.
+Cada vez que un personaje empiece su turno con una Espina Parasítica en él debe tener éxito en un tiro de Salud frente a tu magia de Naturaleza o sufrirá 1d8 + Rango daño Perforante que ignora la Defensa junto a una *herida permanente leve* (a mitad de daño si tiene éxito). En el caso que ya tenga activo este efecto recibirás un modificador +2 en el tiro y un dado de daño adicional por cada espina adicional que tenga clavada.
+
+Si el objetivo intenta arrancar la espina forzosamente debe tener éxito en un tiro de Heroísmo contra tu modificador de Magia de Naturaleza. No obstante, cualquier intento sin importar su resultado infligirá los mismos resultados que un tiro fallido de Salud contra este efecto.
 
 **Empoderar** (1 chi): Un objetivo adicional impactado por el mismo ataque de Naturaleza también se le clavará una espina, sufriendo los mismos efectos.
 
@@ -180,7 +182,7 @@ Llamas a un espíritu guardián hecho de plantas y madera para que te asista en 
 
 ### Florecimiento Mortal
 
-*Naturaleza, Área, Ambiental, Duradera, Concentración*
+*Naturaleza, Duradera, Aflicción, Gaseosa*
 
 **Coste:** 2 acciones y 2 chi
 
@@ -188,9 +190,13 @@ Llamas a un espíritu guardián hecho de plantas y madera para que te asista en 
 
 **Duración:** Concentración
 
-Invocas un campo de flores tóxicas que crece rápidamente, creando una densa nube de polen venenoso que se esparce por el campo de batalla. La nube ocupa una esfera de tamaño medio y todas las criaturas dentro de su área deben tener éxito en un tiro Salud contra tu modificador de Magia de Naturaleza o sufren un veneno que les deja *enfermadas* y les provoca 1d8 + Rango daño Veneno al final de su turno hasta que se recuperen del efecto.
+Invocas un campo de flores tóxicas que crece rápidamente, creando una densa nube de polen venenoso que se esparce por el campo de batalla. La nube ocupa una esfera de tamaño medio y todas las criaturas dentro de su área deben tener éxito en un tiro Salud contra tu modificador de Magia de Naturaleza o quedarán envenenadas. Los efectos exactos del veneno pueden escogerse entre las siguientes alternativas:
 
-La nube de polen permanecerá en el campo de batalla hasta que pierdas la concentración o sea disipada. Las criaturas dentro de la nube quedan *cegadas* debido a la visibilidad reducida y reciben *ocultamiento*. Además, deberán tener éxito en un nuevo tiro de Salud contra el veneno al inicio de su turno o si entran en el área de la nube, quedando afectadas por el veneno en el caso que fracasen. Si una criatura ya está envenenada sufrirá 1d8 + Rango daño Veneno adicional y el efecto *náuseas* durante una ronda.
+- **Adormideras:** El afectado queda *fatigado*. (Segunda Etapa) El afectado cae *inconsciente* durante una hora o hasta que sufra daño.
+- **Toxinas:** El afectado queda *enfermado* y sufre 1d8 + Rango daño Veneno cada ronda. (Segunda Etapa) El afectado sufre *náuseas* y 1d8 daño Veneno adicional por ronda.
+- **Alucinógenas:** El afectado queda *confundido*. (Segunda Etapa) El afectado queda *aturdido* y reduce su cordura por 2 cada ronda.
+
+La nube de polen permanecerá en el campo de batalla hasta que pierdas la concentración o sea disipada. Las criaturas dentro de la nube quedan *cegadas* debido a la visibilidad reducida y reciben *ocultamiento*. Además, deberán tener éxito en un nuevo tiro de Salud contra el veneno al inicio de su turno o si entran en el área de la nube, quedando afectadas de nuevo el veneno en el caso que fracasen, sufriendo su efecto de su segunda etapa. 
 
 **Empoderar** (1 chi): Creas una pequeña nube de polen venenoso en un espacio a media distancia de ti. Esta nube causa los mismos efectos pero solo ocupa una esfera pequeña y se disipa al cabo de una ronda.
 
