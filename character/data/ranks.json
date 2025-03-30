@@ -358,7 +358,7 @@
     "rank": 0,
     "freeranks": 0,
     "max": 6,
-    "attributes": "antimagica,bateria-de-chi,crear-constructo,fabricar-aleacion,imbuir-hechizo,infusion-elemental,piedra-de-enviar,propulsor,protesis-mecanica,repacacion-rapida,respirador,vision-mejorada"
+    "attributes": "antimagica,barrera-mental,bateria-de-chi,crear-constructo,espada-laser,extremidades-adicionales,fabricar-aleacion,guante-telequinetico,imbuir-hechizo,implante-telepatico,infusion-elemental,inteligencia-artificial,ligacion-elemental,piedra-de-enviar,procesador-integrado,propulsor,protesis-mecanica,repacacion-rapida,respirador,sistema-de-apuntado-automatico,sistema-de-camuflaje,vision-mejorada"
   },
   "fortitud": {
     "name": "Fortitud",
