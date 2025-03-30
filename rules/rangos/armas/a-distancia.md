@@ -136,7 +136,7 @@ Ejecutas un disparo impecable y preciso capaz de impactar en los puntos mas vuln
 
 ## Rango V
 
-### Disparo ejecutor
+### Disparo Ejecutor
 
 *A distancia, Mejora*
 
@@ -144,7 +144,7 @@ Ejecutas un disparo impecable y preciso capaz de impactar en los puntos mas vuln
 
 Eres capaz de realizar acabar con los enemigos más poderosos con un único disparo. Tu siguiente ataque infligirá 3d6 puntos de daño adicional y una *herida permanente grave.* En el caso de que este daño reduzca los PV del objetivo a 0 morirá instantáneamente.
 
-### Puntería experta
+### Puntería Experta
 
 *A distancia, Pasiva*
 
