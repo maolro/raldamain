@@ -82,7 +82,7 @@ Incrementa tu estadística de SAB y su limitador por 1.
 
 *Innata, Pasiva*
 
-La razón te permite ver más allá del mundo sensible, percibiendo el mundo como realmente es. Obtienes así Inmunidad a efectos Ilusorios, pudiendo así percibir a criaturas invisibles y ver a través de ilusiones. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
+La razón te permite ver más allá del mundo sensible y percibir la realidad que se oculta tras sus engaños. Obtienes así Inmunidad a efectos Ilusorios, pudiendo así percibir a criaturas invisibles y ver a través de ilusiones. Esta habilidad te otorgará también Ventaja en todos tus tiros de Averiguar intenciones y Resistencia a efectos Mentales.
 
 Visión verdadera también revelará el verdadero aspecto de las criaturas en ese área, penetrando todo tipo de disfraz mágico o metamorfosis. No obstante, esta habilidad puede reducirsi intentas percibir el verdadero aspecto de seres divinos o míticos, ya que la forma verdadera de algunos de estos seres puede ser inconcebible para mentes humanas.
 

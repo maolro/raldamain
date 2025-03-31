@@ -104,6 +104,20 @@ Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II y Rango I.
 
 ### Bomba de Gas Venenoso
 
+*Objeto, Bomba, A distancia, Área, Gaseoso*
+
+**Coste:** 1 acción
+
+**Alcance:** Medio
+
+**Tamaño:** Radio corto
+
+**Duración:** Instantáneo
+
+Esta bomba contiene un gas venenoso en su interior capaz de confundir, adormecer o incluso matar a tus enemigos. Puedes lanzar esta bomba a cualquier posición a distancia media de ti y esta creará una nube de humo que ocupará el un radio corto. El gas *cegará* a todas las criaturas que se encuentren en él además de proporcionarles *ocultamiento* contra ataques enemigos. 
+
+El gas permanecerá activo hasta el final de tu siguiente turno o hasta que sea disipado. Toda criatura que empiece su turno ahí o entre en la zona afectada deberá 
+
 Crea gas venenoso al explotar.
 
 ### Bomba de Chi
