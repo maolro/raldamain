@@ -32,6 +32,8 @@ Esta habilidad también puede emplearse para reparar los daños que haya sufrido
 
 *Objeto, Espacial*
 
+**Ranura:** Bolsa
+
 Una piedra de enviar es un pequeño dispositivo semejante a una gema azulada unida con otra piedra de igual tamaño y apariencia por medio de un glifo de magia espacial. Ambas piedras están unidas por magia espacial para que estas actúen como si se encontrasen en el mismo punto del espacio, permitiendo que todos los sonidos cercanos a esta sean escuchados en la otra sin importar los límites de la distancia mientras se encuentre activa.
 
 Si una de las dos piedras es destruida la otra dejará de funcionar, y para reactivarla es necesario colocar un glifo igual en otra piedra de tu elección. Puedes unir una tercera piedra a la conexión gastando una ranura de proyecto adicional en ella llegando hasta un máximo de 4. 
@@ -58,6 +60,8 @@ A rangos superiores puedes fabricar aleaciones aún más potentes. Si empleas es
 
 *Objeto, Proyecto*
 
+**Ranura:** Cabeza
+
 Este dispositivo te permite filtrar el aire y proporciona oxígeno para que puedas sobrevivir hasta en los entornos más hostiles. El respirador te otorga Inmunidad a efectos Gaseosos y te permite mantener la respiración hasta un máximo de 30 minutos. Este objeto es bastante frágil y se romperá si sufres un ataque apuntado a la cabeza.
 
 ## Rango II
@@ -75,6 +79,8 @@ Los efectos exactos de una infusión dependen del objeto escogido. Si la aplicas
 ### Prótesis Mecánica
 
 *Objeto, Proyecto, Mejora*
+
+**Ranura:** Manos o Piernas
 
 Fabricas una prótesis mecánica de un brazo o una pierna capaz de funcionar igual que uno de carne y hueso. Un personaje puede usar una prótesis mecánica para sustituir un miembro perdido, funcionando de la misma manera que este. Al tratarse de un miembro mecánico puedes integrarle armas o mejoras específicas que conozcas como ranuras ocultas o propulsores. 
 
@@ -94,6 +100,8 @@ Si aplicas esta mejora en un armadura hará que esta otorgue q su portador Resis
 
 *Objeto, Proyecto, Arcano*
 
+**Ranura:** Bolsa
+
 Una batería de chi es un dispositivo capaz de almacenar energía mágica para uso futuro. Una batería conectada otro dispositivo de chi este duplicará su duración antes de necesitar una recarga. Esta también puede ser empleada por un mago arcano para lanzar sus hechizos, permitiéndole incrementar su reserva por 3 por cada batería que lleve.
 
 Debido al volumen de una batería no es posible llevar más de dos baterías encima. Estas también se caracterizan por ser muy inestables, explotando con facilidad si son impactadas por un ataque de cualquier tipo. Una batería que explote provocará una explosión de chi que provoca 3d6 daño Arcano y con dificultad igual a tu Modificador de Fabricación para evitarla .
@@ -102,11 +110,13 @@ Debido al volumen de una batería no es posible llevar más de dos baterías enc
 
 *Objeto, Proyecto*
 
+**Ranura:** Ojos
+
 Fabricas unas gafas equipadas con sensores infrarrojos capaces de percibir el calor a distancia media. Activar los sensores infrarrojos te cuesta una acción y con ellos puedes detectar la posición exacta de todas las criaturas que desprendan calor en el área de los sensores, evitando así que tus enemigos obtengan ventajas por invisibilidad o ataques sorpresa. Puedes crear variantes de este objeto que te otorguen visión a oscuras a distancia lejana o vista a ciegas en un radio corto. Solo puedes tener un tipo de visión especial activa a la vez. 
 
 ## Rango III
 
-Recibes dos ranuras de objeto de Rango III y una ranura adicional de Rango II y I
+Recibes dos ranuras de objeto de Rango III y una ranura adicional de Rango II y I.
 
 ### Crear Constructo
 
@@ -118,19 +128,35 @@ Empleas tus conocimientos avanzados en mecánica y magia para construir un const
 
 *Objeto, Proyecto, Mejora*
 
+**Ranura:** Espalda
+
 Creas un dispositivo que se puede integrar en una armadura o usar como un accesorio independiente, proporcionando velocidad de vuelo 1 además de Ventaja en todos los tiros de Esquiva. Esta ventaja no se acumula con otras habilidades que otorguen la habilidad de volar. El propulsor consume una cantidad moderada de energía, requiriendo mantenimiento tras una hora de uso continuo. Activar o desactivar el propulsor costará una acción.
 
-### Guante telequinético
+### Guante Telequinético
 
-Permite al portador manipular objetos metálicos distantes y emplearlos como armas o escudos
+*Objeto, Proyecto, Mejora*
 
-### Sistema de camuflaje
+**Ranura:** Manos
 
-Puede volver invisible al portador o camuflarlo completamente con el entorno
+Fabricas un guante especial que te permite emplear el poder del magnetismo para manipular objetos metálicos. Mientras lleves este objeto podrás levantar y mover objetos metálicos a distancia media como si tuvieras la habilidad Manipular Metal. También recibes la capacidad de defenderte de ataques físicos y a distancia hechos con armas metálicas usando tu modificador de Fabricación.
 
-### Barrera mental
+Este objeto también te otorga la capacidad de controlar los movimientos de un arma metálica como si la llevases en tu mano. Esto aumentará el alcance de dicha arma a medio y te permite hacer un ataque adicional con ella cada ronda como acción bonus, funcionando igual que el hechizo Arma Teledirigida. Solo podrás tener un arma controlada de esta manera.
 
-Permite usar tu modificador de Fabricación para defenderte de efectos Mentales u Oníricos e impide que puedas ser detectado.
+### Sistema de Camuflaje
+
+*Objeto, Proyecto, Mejora*
+
+**Ranura:** Armadura
+
+Diseñas un tejido sintético infundido con Magia Ilusoria que te permite camuflarte con tu entorno para volverte invisible. Esta mejora se puede añadir a una armadura Ligera o Media que lleves y mientras permanezca activa una vez por ronda puedes volverte *invisible* como acción bonus, lo cual funciona igual que el hechizo Invisibilidad.
+
+La invisibilidad otorgada mediante esta habilidad durará hasta que realices un ataque, lo cual hará que pase a ser *ocultamiento*. Si empleas una acción para ocultarte o te mueves en cualquier dirección entonces volverás a ser invisible. 
+
+### Barrera Mental
+
+*Objeto, Proyecto, Mejora*
+
+Preparas un casco especial capaz de proteger tu mente frente a intrusiones enemigas. Mientras lleves este objeto recibirás Inmunidad a efectos Mentales y Oníricos ni podrás ser detectado por efectos que lean tu mente como Telepatía o Detectar Pensamientos. Esta inmunidad durará hasta que este objeto sea *roto* y no funcionará contra efectos míticos. 
 
 ## Rango IV
 

@@ -3166,6 +3166,14 @@
       "duration": "Concentración",
       "description": "Recibe RANGO contadores de escudo y mientras estén activos puede hacer un ataque de Arco Eléctrico 1/Ronda como acción bonus"
     },
+    "espada-laser":{
+      "rank": 4,
+      "name": "Espada Láser",
+      "skill": "fabricacion",
+      "type": "Accion",
+      "tags": "Objeto (Ranura IV)",
+      "description": "+MOD para atacar, Adyacente, Inflige 1DD + STAT daño Radiante. Puede emplear técnicas de combate sobre esta arma."
+    },
     "espadas-de-justicia": {
       "rank": 4,
       "name": "Espadas de Justicia",
@@ -4510,6 +4518,14 @@
       "reach": "Propio",
       "duration": "Instantáneo",
       "description": "Al impactar a un enemigo este debe tirar CON o incapacitas una parte de su cuerpo hasta que se recupere (repite cada ronda)"
+    },
+    "implante-predictivo":{
+      "rank": 5,
+      "name": "Implante Predictivo",
+      "skill": "fabricacion",
+      "type": "Pasiva",
+      "tags": "Objeto (Ranura V)",
+      "description": "No puede ser sorprendido y recibe Ventaja en todos sus tiros de ataque, defensa y habilidad."
     },
     "incitar-el-panico": {
       "rank": 4,
@@ -6605,6 +6621,14 @@
       "duration": "Concentración",
       "description": "Un objetivo enredado tira Heroísmo o Destrozar o queda agarrado. La prisión de madera tiene RANGOx3 PV y aquellos atrapados en ella no pueden emplear Magia Arcana o usar objetos mágicos. Tira cada ronda para escapar y si falla pierde 1 Chi"
     },
+    "procesador-integrado":{
+      "rank": 5,
+      "name": "Procesador Integrado",
+      "skill": "fabricacion",
+      "type": "Pasiva",
+      "tags": "Objeto (Ranura V)",
+      "description": "Puede imbuir objetos con cualquier hechizo Arcano o Elemental, incluyendo aquellos que no conozca. Una vez por ronda puede reducir su cordura por 4 para recibir una ronda adicional con tres acciones a -10 iniciativa."
+    },
     "propulsion": {
       "rank": 3,
       "name": "Propulsión",
@@ -7563,6 +7587,14 @@
       "reach": "",
       "duration": "",
       "description": "Puede ver en la oscuridad sin dificultades y no hace ruido al moverse, recibiendo Ventaja en tiros de Sigilo. 1/ronda puede ocultarse como acción bonus en un lugar a oscuras"
+    },
+    "sistema-de-apuntado-automatico":{
+      "rank": 4,
+      "name": "Sistema de Apuntado Automático",
+      "skill": "fabricacion",
+      "type": "Pasiva",
+      "tags": "Objeto (Ranura IV)",
+      "description": "Sus ataques a distancia ignoran cubierta y ocultamiento además que una vez por ronda puede sumar su modificador de Percepción a un tiro de ataque con armas A Distancai (todo uso adicional cuesta una acción). Esto no se acumula con la habilidad Apuntar."
     },
     "sobrecarga-mental": {
       "rank": 3,
