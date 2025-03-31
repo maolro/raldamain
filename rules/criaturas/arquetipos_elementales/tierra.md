@@ -1,9 +1,9 @@
 ---
-title: Esencia de Tormenta
+title: Esencia de Tierra
 
 ---
 
-La criatura tiene esencia mágica relacionado con fuerzas elementales de tormenta.
+La criatura tiene esencia mágica relacionado con fuerzas elementales de tierra.
 
 # Mejoras
 
