@@ -9,7 +9,7 @@ rangos: Montar, Alabardas, Guerrero divino, Reflejos
 image: rostam.jpg
 ---
 
-"Por Tamashkhan han pasado centenares de grandes imperios, todos ellos creyendo podrán someternos y perdurarán para siempre. Solo tenéis que ver sus ruinas en el desierto para daros cuenta que todo inevitablemente caerá y quedará consumido por las arenas. ¿Creéis de verdad que sois diferentes? Pronto formaréis parte de la historia, y yo me aseguaré de enterraros."
+"Por Tamashkhan han pasado centenares de grandes imperios, todos ellos creyendo que podrán someternos para siempre. Solo tenéis que ver sus ruinas en el desierto para daros cuenta que todo inevitablemente caerá y quedará consumido por las arenas. ¿Creéis de verdad que sois diferentes? Pronto formaréis parte de la historia, y yo me aseguraré de enterraros."
 
 Rostam fue un revolucionario Temash y gobernador de Tamashkhan entre 4006 y 4010. Nacido en una prestigiosa tribu temash, él abandonó su cómoda vida para luchar por la libertad de su pueblo. Durante años libró una guerra de guerrillas contra Ustilus desde los más profundos desiertos, pero tras la muerte de Feyn y el debilitamiento de la autoridad imperial esa semilla de rebelión terminría por germinar en una guerra por la independencia. Rostam unió las diferentes tribus temash bajo su lidreazgo  y colaboró junto al Pacto con el fin de lograr la independencia temash, logrando así grandes victorias contra Ustilus. 
 
