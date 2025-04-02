@@ -52,7 +52,7 @@ Infundes uno de tus ataques con tierra y rocas para mejorar enormemente su poten
 
 ## Rango III 
 
-Eres capaz de emplear los hechizos Muro de piedra y Tierra viva empleando vigor en lugar de chi.
+Eres capaz de emplear los hechizos Muro de Piedra y Tierra Viva empleando vigor en lugar de chi.
 
 ### Armadura de Piedra
 
@@ -62,7 +62,7 @@ Eres capaz de emplear los hechizos Muro de piedra y Tierra viva empleando vigor 
 
 **Duración:** Concentración
 
-Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia física. Mientras esta habilidad permanezca activa aumenta tu DEF por un valor igual a tu Rango + 1 y recibes Inmunidad a *heridas permanentes* y *sangrado*. Recibirás también Vitalidad temporal igual a tu Rango x 2
+Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia física. Mientras esta habilidad permanezca activa aumenta tu DEF por un valor igual a tu Rango + 1 y recibes Inmunidad a *heridas permanentes* y *sangrado*. Esta habilidad también te otorga Vitalidad temporal igual a tu Rango x 2 y durará hasta que se acabe o pierdas la concentración.
 
 **Empoderar** (1 chi o vigor): Recuperas toda tu Vitalidad temporal. Solo puedes empoderar así si te queda por lo menos un punto de Vitalidad o te encuentras en *posición defensiva*. 
 
@@ -74,7 +74,11 @@ Cubres tu cuerpo con sólidas rocas para mejorar notablemente tu resistencia fí
 
 **Duración:** Concentración
 
-Levantas la tierra como si de una ola del mismísimo océano se tratase, arrasando con todo lo que se te ponga en tu camino con la fuerza de una estampida. Al crearse la ola esta permitirá a quien la surque moverse dos pasos por ronda como acción bonus, destruyendo todos los efectos ambientales que la ola atraviese. Así mismo cada enemigo en tu camino deberá defenderse contra tu modificador de Ascendencia o sufrirá 1d8+SAB daño Contundente y será empujado un paso. 
+Levantas la tierra como si de una ola para arrasar con todo lo que se te ponga en tu camino. Mientras este hechizo permanezca activo aumentas tu velocidad de paso por 1 y recibirás Inmunidad a *terreno difícil*. Si pasas por un efecto Ambiental puedes eliminarlo si tienes éxito en un tiro de Ascendencia de Tierra contra el modificador del lanzador enemigo.
+
+La ola también arrollará a todo enemigo que se encuentre en tu camino, forzándole así a tener éxito en un tiro de Acrobacias o Atletismo contra tu modificador de Ascendencia de Tierra. Aquellos que fracasen sufrirán 2d8 + SAB daño Contundente además que serán empujados un paso y quedarán *tropezados*. Este efecto permanecerá activo hasta que pierdas la concentración o dejes de estar en contacto con la tierra.
+
+**Empoderar** (1 chi o vigor): Te mueves un paso como reacción al recibir un ataque enemigo, reduciendo así su daño a la mitad.
 
 ## Rango IV 
 

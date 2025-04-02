@@ -154,7 +154,7 @@ La invisibilidad otorgada mediante esta habilidad durará hasta que realices un 
 
 ### Barrera Mental
 
-*Objeto, Proyecto, Mejora*
+*Objeto, Proyecto, Pasiva*
 
 Preparas un casco especial capaz de proteger tu mente frente a intrusiones enemigas. Mientras lleves este objeto recibirás Inmunidad a efectos Mentales y Oníricos ni podrás ser detectado por efectos que lean tu mente como Telepatía o Detectar Pensamientos. Esta inmunidad durará hasta que este objeto sea *roto* y no funcionará contra efectos míticos. 
 
@@ -168,7 +168,11 @@ Ligas un elemental o espíritu a una persona o constructo para otorgarle sus pod
 
 Un arma sustituirá su daño base por daño radiante.
 
-### Sistema de apuntado automático
+### Sistema de Apuntado Automático
+
+*Objeto, Proyecto, Pasiva*
+
+Fabricas un visor especial que te permite detectar y apuntar automáticamente a tus enemigos para impactarles con mayor precisión. Mientras lleves este objeto ignorarás el *ocultamiento* y la *cubierta* que tengan tus objetivos además que una vez por ronda puedes sumar tu nivel de talento de Percepción a un ataque A Distancia que realices. Esto funciona de la misma técnica de 
 
 Ignoras ocultamiento y cubierta al apuntar además que Apuntar cuesta una acción bonus.
 
