@@ -104,7 +104,7 @@ Este ataque es especialmente efectivo contra criaturas voladoras ya que puede de
 
 **Empoderar** (1 chi): Aumenta el tamaño de este ataque a un cilindro grande.
 
-### Moldear la tierra
+### Moldear la Tierra
 
 *Tierra, Ambiental*
 
@@ -128,7 +128,7 @@ Todos tus hechizos de Tierra sustituyen sus dados de daño por d8 y aquellos de 
 
 ### Forma de la montaña
 
-### Invocar elemental de tierra
+### Invocar Elemental de Tierra
 
 **Abrazo de la tierra** (1 AP y 2 chi): La tierra se levanta desde bajo los pies de un objetivo a distancia media para intentar retenerlo, permitiéndote así hacer un ataque de *pedrada* que al impactar *agarrará* al objetivo. Solo es posible escapar de este agarre usando la FUE y las piedras que lo agarren son tan sólidas como un *muro de piedra* con la mitad de PV. (1 chi) Afecta a un objetivo adicional.
 
