@@ -44,7 +44,7 @@ Si una de las dos piedras es destruida la otra dejará de funcionar, y para reac
 
 Empleas tu conocimiento de la magia para imbuir objetos con su poder. Al finalizar este proyecto creas un objeto imbuido con un hechizo que conozcas con Rango igual al de la ranura de proyecto empleada. El usuario del objeto puede lanzar el objeto sin la necesidad de gastar chi, empleando tu modificador de Fabricación y tu Rango en esta habilidad para los propósitos de sus efectos. 
 
-Después que el hechizo sea lanzado tres veces el objeto quedará desactivando, requiriendo que lo repares para que sea empleable de nuevo. Puedes colaborar con otros individuos para crear objetos imbuidos con hechizos que ellos conozcan a costa de consumir una ranura de proyecto adicional. Cabe recalcar que el DJ puede vetar determinadas combinaciones de hechizos y objetos si lo considera inválido.
+Después que el hechizo sea lanzado tres veces el objeto quedará desactivando, requiriendo que lo repares para que sea empleable de nuevo. Puedes colaborar con otros individuos para crear objetos imbuidos con hechizos que ellos conozcan a costa de consumir una ranura de proyecto adicional. Cabe recalcar que el DJ puede vetar determinadas combinaciones de hechizos y objetos si lo considera inválido. Si un objeto tiene ligado un hechizo de Rango V o VI solo podrá activarse una vez por combate.
 
 ### Fabricar Aleación
 
@@ -160,6 +160,8 @@ Preparas un casco especial capaz de proteger tu mente frente a intrusiones enemi
 
 ## Rango IV
 
+Recibes dos ranuras de objeto de Rango IV y una ranura adicional de Rango III
+
 ### Ligación Elemental
 
 *Objeto, Proyecto, Pasiva*
@@ -195,6 +197,8 @@ Recibes también la capacidad de lanzar hechizos sin la necesidad de gesticular 
 Enganchas varias extremidades adicionales a tu cuerpo que te permiten mejorar tus capacidades naturales. Las extremidades cuentan como un constructo de nivel igual a tu Rango de Fabricación x 2 que se encontrará siempre enganchado a tu cuerpo, lo cual le permitirá recibir cualquier cantidad de daño que tú sufras y emplear tu modificador de Fabricación para todos sus tiros. 
 
 ## Rango V 
+
+Recibes dos ranuras de objeto de Rango V y una ranura adicional de Rango IV
 
 ### Inteligencia Artificial
 
@@ -239,6 +243,8 @@ Construyes un milagroso objeto capaz de absorber el chi a tu alrededor para empo
 La enorme cantidad de energía mágica que alberga este objeto le da incluso más potencial destructivo que una batería. Si este objeto queda destruido provocará una explosión mágica semejante a un Cañón de Chi en toda la región que te rodea, el cual empleará tu modificador de Fabricación y estadística de INT para determinar el daño.
 
 ## Rango VI
+
+Recibes una ranura de objeto de Rango VI y una ranura adicional de Rango V
 
 ### Invento Revolucionario
 
