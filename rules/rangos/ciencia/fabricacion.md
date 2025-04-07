@@ -84,7 +84,7 @@ Los efectos exactos de una infusión dependen del objeto escogido. Si la aplicas
 
 Fabricas una prótesis mecánica de un brazo o una pierna capaz de funcionar igual que uno de carne y hueso. Un personaje puede usar una prótesis mecánica para sustituir un miembro perdido, funcionando de la misma manera que este. Al tratarse de un miembro mecánico puedes integrarle armas o mejoras específicas que conozcas como ranuras ocultas o propulsores. 
 
-Un usuario de un arma integrada no podrá ser desarmado de ella salvo que el brazo sea destruido y puede emplear tu modificador de Fabricación en sus tiros de ataque si así lo desea. Si tiene Rangos en el arma escogida podrá aplicar sus habilidades en el arma integrada sin ningún problema.
+Un usuario de un arma integrada no podrá ser desarmado de ella salvo que el brazo sea destruido y puede emplear tu modificador de Fabricación en sus tiros de ataque y defensa si así lo desea. Si tiene Rangos en el arma escogida podrá aplicar sus habilidades en el arma integrada sin ningún problema.
 
 ### Antimágica
 
@@ -160,54 +160,88 @@ Preparas un casco especial capaz de proteger tu mente frente a intrusiones enemi
 
 ## Rango IV
 
-### Ligación elemental
+### Ligación Elemental
 
-Ligas un elemental o espíritu a una persona o constructo para otorgarle sus poderes mágicos.
+*Objeto, Proyecto, Pasiva*
 
-### Espada láser
+Ligas energía elemental a una persona o constructo para otorgarle la capacidad de manipular las fuerzas de la naturaleza. Un objetivo con una ligación activa recibirá todas las habilidades y mejoras relacionadas con un arquetipo elemental de tu elección. Dicho arquetipo se encontrará a nivel 1 y las habilidades pasivas que otorgue no se acumularán con otras habilidades contradictorias o con el mismo nombre.
 
-Un arma sustituirá su daño base por daño radiante.
+A rangos superiores puedes ligar cantidades incluso mayores de energía elemental a un objetivo, mejorando así su fuerza. Puedes emplear una ranura de Rango V para otorgar los efectos de un arquetipo de nivel 2 o una ranura de Rango VI para otorgar los efectos de un arquetipo de nivel 3. Es necesario que el objetivo tenga la versión de nivel menor para que pueda recibir un arquetipo superior.
+
+### Espada Láser
+
+*Objeto, Proyecto*
+
+Mejoras una de tus armas para que su filo pase a estar hecho de pura energía. Una espada láser sustituirá su daño base por daño Radiante, Necrótico o Arcano, permitiéndole sobrepasar todo tipo de armadura que tenga su objetivo. Se podrán seguir empleando técnicas de arma con normalidad y el daño adicional será del mismo tipo que el nuevo tipo de daño escogido para el arma.
 
 ### Sistema de Apuntado Automático
 
 *Objeto, Proyecto, Pasiva*
 
-Fabricas un visor especial que te permite detectar y apuntar automáticamente a tus enemigos para impactarles con mayor precisión. Mientras lleves este objeto ignorarás el *ocultamiento* y la *cubierta* que tengan tus objetivos además que una vez por ronda puedes sumar tu nivel de talento de Percepción a un ataque A Distancia que realices. Esto funciona de la misma técnica de 
+Fabricas un visor especial que te permite detectar y apuntar automáticamente a tus enemigos para impactarles con mayor precisión. Mientras lleves este objeto ignorarás el *ocultamiento* y la *cubierta* que tengan tus objetivos además que una vez por ronda puedes sumar tu nivel de talento de Percepción a un ataque A Distancia que realices. Cada vez adicional que apuntes deberás emplear una acción de igual manera que la habilidad del mismo nombre.
 
-Ignoras ocultamiento y cubierta al apuntar además que Apuntar cuesta una acción bonus.
+### Implante Telepático
 
-### Implante telepático
+*Objeto, Proyecto, Pasivo*
 
-Permite la comunicación telepática con otras criaturas a distancia media
+Insertas un implante especial en tu mente que refuerza tus habilidades psíquicas y telepáticas. Mientras lleves este implante puedes comunicarte telepáticamente con otras criaturas a distancia media y detectarás automáticamente su posición. 
 
-### Extremidades adicionales
+Recibes también la capacidad de lanzar hechizos sin la necesidad de gesticular de igual manera que Psicomagia además que puedes lanzar tus habilidades de Magia Mental o Telequinesia empleando tu modificador de Fabricación. El implante te permite aprender los hechizos Asalto Psíquico y Sugestión, los cuales puedes empelar una vez por ronda sin la necesidad de gastar chi. 
 
-Te enganchas varias extremidades adicionales que te otorgan una acción adicional y la capacidad de llevar más objetos si son brazos o Inmunidad a *terreno difícil* y Resistencia a maniobras si son piernas. Puedes llevar armas adicionales en los brazos que te enganches. Máximo 2.
+### Extremidades Adicionales
+
+*Objeto, Proyecto, Pasivo*
+
+Enganchas varias extremidades adicionales a tu cuerpo que te permiten mejorar tus capacidades naturales. Las extremidades cuentan como un constructo de nivel igual a tu Rango de Fabricación x 2 que se encontrará siempre enganchado a tu cuerpo, lo cual le permitirá recibir cualquier cantidad de daño que tú sufras y emplear tu modificador de Fabricación para todos sus tiros. 
 
 ## Rango V 
 
-### Inteligencia artificial
+### Inteligencia Artificial
 
-Un constructo que creas se hace inteligente, permitiéndole recibir nuevas habilidades.
+*Objeto, Proyecto, Pasivo*
 
-### Implante predictivo
+Creas un constructo con la capacidad de pensar y razonar como si fuera un ser vivo. Dicho constructo aumentará su nivel efectivo por 4 y podrá aprender arquetipos que requieran habilidades mentales o incluso relacionados con magia. No obstante, debido a su mayor inteligencia solo podrás controlarlo efectivamente si tiene nivel menor o igual al tuyo además que puede incluso rebelarse contra ti si lo considera conveniente.
 
-No puedes ser sorprendido y recibes Ventaja en todos tus tiros. No se acumula con Visión futura.
+### Implante Predictivo
 
-### Transferir consciencia
+*Objeto, Proyecto, Pasivo*
 
-Guardas tu consciencia en un nuevo cuerpo robótico.
+Colocas un implante especial en tus ojos que te permite visualizar todos los futuros posibles para estar siempre preparado ante cualquier amenaza. Mientras lleves este implante no puedes ser sorprendido además de Ventaja en todos tus tiros de ataque y defensa. Los modificadores de esta habilidad no se acumulan con Visión Futura. 
 
-### Procesador integrado
+Este objeto también te otorga la capacidad de pensar y moverte a velocidades sobrehumanas a costa de destruir tu cordura. Una vez por ronda puedes reducir tu cordura por 2 para recibir un turno adicional con tres acciones. Dicho turno se acumula con las habilidades Mente Desencadenada y Reflejos Supremos.
 
-Permite guardar vastas cantidades de información y emplear rangos de Mente Desencadenada que conozcas sin volverte loco. Puedes sacrificar cordura para pensar tan rápido que congelas el tiempo a tu alrededor, obteniendo una nueva ronda con 3 Acciones.
+### Transferir Consciencia
 
-### Transformador de chi
+*Objeto, Proyecto*
 
-Absorbe el chi a tu alrededor hasta llenar una reserva de 6 chi (2 chi/ronda). El chi de esta reserva puede usarse para lanzar tus hechizos.
+Eres capaz de transferir tu conciencia a un cuerpo robótico para combinar tu mente brillante con la fuerza de una máquina. Transferir tu mente de un cuerpo a otro cuesta tres acciones y al hacerlo tu cuerpo original caerá inconsciente hasta que vuelvas a él. El cuerpo objetivo debe tratarse de un constructo propio de nivel igual o menor al tuyo. 
+
+Mientras tengas tu mente trasferida tus estadísticas básicas pasarán a ser las de tu nuevo cuerpo robótico y podrás emplear todas las habilidades físicas y técnicas de combate que conozca. No obstante, sus estadísticas mentales pasarán a ser las tuyas y empleará tu modificador de Fabricación para todos sus tiros. Podrás emplear todo hechizo Arcano o habilidad únicamente mental que conozcas en el nuevo cuerpo como si fuera el tuyo. 
+
+Una transferencia mental cuenta también con sus riesgos. Un constructo con mente inteligente en su interior pierde la Inmunidad a efectos mentales y si es destruido entonces tú morirás definitivamente. Si deseas volver a tu cuerpo original deberás emplear tres acciones o reducir tu cordura por 6. 
+
+### Procesador Integrado
+
+*Objeto, Proyecto, Pasivo*
+
+Añades un procesador adicional a tu mente para ser capaz de guardar enormes cantidades de información y pensar a velocidades sobrehumanas. Recibes una segunda hoja de personaje del mismo nivel al tuyo a la que puedes cambiar, obteniendo así nuevas habilidades e incluso otra personalidad. 
+
+Cambiar de personalidad puede hacerse una vez al día y permanecerás así hasta que realices un descanso largo. No obstante, puedes reducir tu cordura por 4 para cambiar instantáneamente de personalidad, recibiendo así los beneficios de la nueva hoja de personaje. 
+
+La nueva hoja de personaje cuenta con ciertas restricciones para que resulte coherente. Dado que se trata únicamente de una transferencia mental conservarás tus habilidades físicas y implantes en ambas formas. Tampoco podrás recibir Rangos relacionados con Ascendencias o religiones diferentes en ambas formas. Ante la duda el DJ podrá decidir si se aprobará o no.
+
+### Transformador de Chi
+
+*Objeto, Proyecto, Pasivo*
+
+Construyes un milagroso objeto capaz de absorber el chi a tu alrededor para empoderar tu propia reserva. Este objeto aumentará tu reserva de chi por 6 y te permite recuperar 2 chi cada ronda. Puedes también emplear una acción para transferir cualquier cantidad de chi desde este objeto a otras baterías o transformadores de chi que puedas tocar. 
+
+La enorme cantidad de energía mágica que alberga este objeto le da incluso más potencial destructivo que una batería. Si este objeto queda destruido provocará una explosión mágica semejante a un Cañón de Chi en toda la región que te rodea, el cual empleará tu modificador de Fabricación y estadística de INT para determinar el daño.
 
 ## Rango VI
 
-### Invento revolucionario
+### Invento Revolucionario
 
-Descubres un nuevo invento creado por ti y con permiso del DJ.
+*Objeto, Proyecto, Pasivo*
+
+Diseñas un nuevo invento que revoluciona el mundo a tu alrededor. El nivel de poder de este invento será semejante a un objeto de precio 5 y debe contar con permiso del DJ además de ser coherente con el mundo que te rodea. Un invento revolucionario ocupará siempre la única ranura de objeto VI que posees.
