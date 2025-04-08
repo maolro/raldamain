@@ -94,7 +94,7 @@ Fabricas un objeto capaz de repeler la magia misma usando materiales especiales 
 
 Si aplicas esta mejora a un arma puedes usarla en tiros de Parada para defenderte de efectos Arcanos además que puedes emplear el hechizo Eliminar magia sin la necesidad de gastar chi cada vez que impactes a un enemigo con hechizos Arcanos activos. Dicho hechizo empleará tu modificador de Fabricación y contará con Rango igual al que tengas en esta habilidad. 
 
-Si aplicas esta mejora en un armadura hará que esta otorgue q su portador Resistencia a efectos Arcanos. Esta también otorgará PV temporales a su portador igual a tu Rango + 2 además de la capacidad de emplear tu modificador de Fabricación en sus tiros para defenderse de efectos Arcanos.
+Si aplicas esta mejora en un armadura hará que esta otorgue a su portador Resistencia a efectos Arcanos. Esta también otorgará PV temporales a su portador igual a tu Rango + 2 además de la capacidad de emplear tu modificador de Fabricación en sus tiros para defenderse de efectos Arcanos.
 
 ### Batería de Chi
 
