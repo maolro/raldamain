@@ -38,7 +38,7 @@ Levantas una roca sólida del suelo y la lanzas contra un enemigo que puedas alc
 
 *Tierra, Físico, Ambiental* 
 
-**Coste**: 1 acción
+**Coste**: 1 Acción
 
 **Alcance**: Medio 
 
@@ -124,7 +124,19 @@ La conexión con la tierra moldeada también reforzará tus habilidades mágicas
 
 Todos tus hechizos de Tierra sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
 
-### Abrazo de la tierra
+### Abrazo de la Tierra
+
+*Tierra, Ataque, Físico, Agarre*
+
+**Coste:** 1 Acción y 2 chi
+
+**Alcance:** Medio
+
+**Duración:** Concentración
+
+Empleas el poder de la tierra para agarrar a un enemigo con sólidas rocas. Haz un ataque contra un enemigo a distancia media que lo *agarra* al impactar. El afectado podrá hacer un tiro de Heroísmo o Destrozar al principio de su turno contra tu modificador de magia de Tierra para intentar escaparse. 
+
+El agarre durará hasta que pierdas la concentración o las rocas que mantienen agarrado al afectado queden rotas, las cuales tendrán la misma resistencia que un Muro de Tierra. 
 
 ### Forma de la montaña
 
