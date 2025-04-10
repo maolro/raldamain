@@ -116,9 +116,11 @@ Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II y Rango I.
 
 Esta bomba contiene un gas venenoso en su interior capaz de confundir, adormecer o incluso matar a tus enemigos. Puedes lanzar esta bomba a cualquier posición a distancia media de ti y esta creará una nube de humo que ocupará el un radio corto. El gas *cegará* a todas las criaturas que se encuentren en él además de proporcionarles *ocultamiento* contra ataques enemigos. 
 
-El gas permanecerá activo hasta el final de tu siguiente turno o hasta que sea disipado. Toda criatura que empiece su turno ahí o entre en la zona afectada deberá 
+El gas permanecerá activo hasta el final de tu siguiente turno o hasta que sea disipado. Toda criatura que empiece su turno ahí o entre en la zona afectada deberá tener éxito en un tiro de Salud contra tu modificador de bombas o quedará afectado por el veneno del gas. 
 
-Crea gas venenoso al explotar.
+Aquellos que se encuentren envenenados deberán repetir el tiro cada ronda o sufrirán determinados efectos según la naturaleza del veneno. Algunos ejemplos de venenos posibles se presentan a continuación:
+
+
 
 ### Bomba de Chi
 
