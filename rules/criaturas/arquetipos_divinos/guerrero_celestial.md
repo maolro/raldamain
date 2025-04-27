@@ -31,11 +31,11 @@ title: Guerrero Celestial
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y CAR por 1 junto a sus limitadores. Aumenta también su DEF y PV por 2.
 
-- **Mejoras de Rango:** Mejora su Rango y modificador en Guerrero Divino y Ascendencia Abisal por 1.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Guerrero Divino y Ascendencia Celestial por 1.
 
 - **Habilidades Pasivas:** Obtiene Visión Verdadera, Alma Ascendida y Regeneración Celestial como habilidades Pasivas.
 
-- **Hechizos:** Aprende dos hechizos de Rango II relacionados con su patrón celestial. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Celestial.
+- **Hechizos:** Aprende dos hechizos de Rango III relacionados con su patrón celestial. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Celestial.
 
 - **Golpe Exiliante:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Exiliante a un objetivo que impacte con su arma.
 

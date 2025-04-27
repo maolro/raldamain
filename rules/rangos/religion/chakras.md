@@ -2,6 +2,8 @@
 title: Chakras
 ---
 
+[INTRO]
+
 # Rangos
 
 ## Rango I

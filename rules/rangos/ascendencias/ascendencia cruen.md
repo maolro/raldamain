@@ -3,6 +3,8 @@ title: Ascendencia Cruen
 category: Ascendencias
 ---
 
+[INTRO]
+
 # Reglas principales
 
 Ascendencia cruen tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:

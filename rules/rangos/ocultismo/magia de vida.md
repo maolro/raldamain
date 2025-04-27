@@ -3,6 +3,8 @@ title: Magia de Vida
 image: magia_vida.jpg
 ---
 
+Conoces los secretos de la energía vital pura que permea el universo y eres capaz de emplearla para realizar todo tipo de milagros. Al iniciar esta senda eres capaz de infundir tus manos con dicha energía para sanar a los demás, curando sus heridas y expugnando los venenos y enfermedades que les aquejen. Esta energía también puede usarse como un arma para castigar a los impíos en la forma de abrasadores rayos de luz pura. Mientras tu conexión con la energía vital se vuelve más profunda tus habilidades también incrementan su fuerza, recibiendo así la capacidad de desafiar hasta la muerte misma o formar devastadoras explosiones de energía pura que purgan a los malvados a la vez que sanan a los justos.
+
 # Reglas fundamentales
 
 La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus hechizos y habilidades:

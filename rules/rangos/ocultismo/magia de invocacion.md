@@ -3,6 +3,8 @@ title: Magia de Invocación
 category: Ocultismo
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 - **Fuerza y magia:** Tu rango en Magia de Invocación mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.

@@ -2,6 +2,8 @@
 title: Estilo salvaje
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 Estilo salvaje tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:

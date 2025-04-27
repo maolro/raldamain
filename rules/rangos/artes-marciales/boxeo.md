@@ -2,6 +2,8 @@
 title: Estilo de Boxeo
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 Estilo de Boxeo tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
