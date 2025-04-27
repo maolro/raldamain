@@ -262,4 +262,3 @@ Usando ingentes cantidades de frío hierro eres capaz de rodearte de una coraza 
 - Obtienes todas las técnicas de arma de una rama específica y puedes emplear los hechizos de hasta rango II de metal sin necesidad de gastar chi, aunque aún deberás emplearlo para poder empoderarlos. 
 - Obtienes ventaja en tus tiros de metal y tus tanto tus ataques de metal como ataques físicos obtienen un dado de daño extra. 
 
-# 

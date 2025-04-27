@@ -3,6 +3,8 @@ title: Magia de arena
 category: Elementalismo
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 - **Reserva de Chi**: Tu rango de magia de Arena mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 

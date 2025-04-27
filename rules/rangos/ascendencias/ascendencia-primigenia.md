@@ -103,7 +103,7 @@ La energía vital del mundo de los espíritus sana tus heridas y te permite recu
 
 *Innata, Pasiva*
 
-La energía espiritual que emite tu cuerpo es capaz de causar disrupciones en la magia, otorgándote así Resistencia a todos los efectos Arcanos y Divinos. Además, todos los objetos mágicos y glifos activados a distancia corta de ti tendrán una probabilidad del 50% de fallar. 
+La energía espiritual que emite tu cuerpo es capaz de causar disrupciones en la magia, otorgándote así Resistencia a todos los efectos Arcanos y Divinos. El aura afecta negativamente a los glifos y objetos mágicos a tu alrededor, haciendo así que tengan probabilidad del 50% de fallar cada vez que sean usados. 
 
 **Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera además que no puedes contrarrestar hechizos de rango superior a
 

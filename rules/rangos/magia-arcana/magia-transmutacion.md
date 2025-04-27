@@ -2,6 +2,8 @@
 title: Magia de Transmutación
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 Magia de Transmutación se adhiere a un conjunto de reglas fundamentales que sustentan sus hechizos y habilidades: 

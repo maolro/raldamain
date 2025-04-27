@@ -134,3 +134,4 @@ Empleando la energía durmiente en ti finalmente despiertas tu linaje, convirti�
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia infernal no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar. 
 - Activas automáticamente los efectos de Presencia Majestuosa.
+

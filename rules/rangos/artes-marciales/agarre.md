@@ -2,6 +2,8 @@
 title: Estilo de Agarre
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 Estilo de Agarre tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:

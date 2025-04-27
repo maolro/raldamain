@@ -139,3 +139,4 @@ Adoptas la forma de un ángel vengador para castigar a todos los pecadores en tu
 - Obtienes velocidad de vuelo 2 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia celestial no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar.
+

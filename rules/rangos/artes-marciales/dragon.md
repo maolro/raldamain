@@ -2,6 +2,8 @@
 title: Estilo del Dragón
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 Estilo del Dragón tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:

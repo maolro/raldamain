@@ -46,6 +46,12 @@ En aquellas situaciones donde todos los combatientes pueden percibirse unos a ot
 
 El terreno difícil representa todos aquellos terrenos que dificultan el movimiento. Cada vez que un personaje pase por terreno difícil deberá emplear una acción adicional para desplazarse por él o tener éxito en un tiro de *acrobacias* o *atletismo* contra una dificultad escogida por el máster para atravesarlo. Si un personaje realiza una carga o es empujado por una zona afectada por terreno difícil deberá tener éxito en un tiro de Acrobacias o quedará tropezado. Criaturas en terreno difícil tendrán desventaja en todos sus tiros para esquivar ataques.
 
+## Contadores de escudo
+
+Un *contador de escudo* representa la capacidad que tiene una criatura de bloquear completamente un ataque enemigo, reduciendo enormemente su daño como si pusiera un escudo en el medio. Una criatura con *contadores de escudo* puede un contador que tenga como reacción a ser impactada por un ataque para reducir el daño de este por 10. 
+
+No hay límite del máximo de contadores que pueden gastarse por ataque siempre y cuando no excedan la cantidad todal además que si el daño es reducido a 0 el ataque contará como si ha fallado. Si múltiples habilidades otorgan *contadores de escudo* estos se acumulan salvo que se diga lo contrario.
+
 ## Caídas
 
 Las caídas representan el daño que sufrirá un personaje por impactar un objeto a excesivas velocidades. Este daño sólo es reducido por resistencias a daño físico, ignorando tanto armaduras artificiales y naturales. La armadura ligera aún se aplicará mientras que otros tipos de armadura incrementarán el daño por 2 según cada categoría de peso por la cual superen la armadura ligera (por ejemplo, la armadura pesada incrementará el daño de caída por 4). El daño y las heridas permanentes que recibirá un personaje dependerá de la cantidad de pies que caerá un personaje tal como se especifica en la siguiente tabla.

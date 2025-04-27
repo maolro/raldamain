@@ -2,6 +2,8 @@
 title: Ascendencia Dracónica
 ---
 
+[INTRO]
+
 # Reglas fundamentales
 
 Ascendencia Dracónica tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
@@ -138,3 +140,4 @@ Has alcanzado la cima del poder de tu ascendencia, recibiendo la capacidad de tr
 - Eres inmune a heridas permanentes y efectos de estado provocados por armas que no estén hechas para matar dragones. 
 - Recibes las acciones *garra* (1 Acción, +19, 1d10 + 14 cortante), *mordisco* (1 acción, +19, 2d6 + 14 perforante y *agarra*) y *cola* (1 acción, +19, 1d10 + 14 contundente, empuja y tropieza DC +19). Aprendes también todas las técnicas de Rango II o menos de Estilo salvaje y puedes usarlas sin la necesidad de pagar vigor.
 - Tu aliento pasa a hacer 3d10 + CON daño del tipo escogido a costa de requerir una ronda de recarga. Este además tratará todas las resistencias que tengan tus objetivos como si fueran de un nivel inferior.
+
