@@ -144,7 +144,7 @@ Empleando tu dominio del plano onírico puedes infundir el sueño en un objetivo
 
 Como se ha explicado, solo la mente viajará al plano onírico para realizar el duelo, por lo que los cuerpos de ambas partes quedarán vulnerables en un estado inconsciente hasta que el duelo termine. 
 
-### Avatar onírico
+### Avatar Onírico
 
 *Pasiva, Mejora*
 

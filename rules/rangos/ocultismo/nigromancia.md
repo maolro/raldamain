@@ -153,7 +153,7 @@ La energía negativa perjudicará también la capacidad de tus enemigos para cur
 
 ## Rango IV
 
-### Crear no-muerto superior
+### Crear no-muerto Superior
 
 *Nigromancia, Invocación*
 
@@ -167,7 +167,7 @@ Empleas el poder de la nigromancia para levantar un cadáver como un no-muerto m
 
 **Empoderar** (1 chi): Anima un cadáver adicional como un no-muerto superior
 
-### Cadenas de la muerte
+### Cadenas de la Muerte
 
 *Nigromancia, Duradera*
 
@@ -206,7 +206,7 @@ Una criatura afectada por una maldición de enervación será incapaz de sanarse
 
 Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d10. 
 
-### Toque de la muerte
+### Toque de la Muerte
 
 *Nigromancia, Necrótico, Toque*
 
@@ -252,7 +252,7 @@ Aquellos que permanezcan dentro de la nube empezarán a corromperse por la energ
 
 ## Rango VI
 
-### Apocalipsis de la no-muerte
+### Apocalipsis de la No-muerte
 
 *Nigromancia, Ambiental, Ataque, Área, Duradera, Necrótica*
 
@@ -268,7 +268,7 @@ Liberas una cantidad inmensa de energía negativa que aniquilará completamente 
 
 Tras este ataque el campo de batalla quedará sobrecargado de energía negativa, empoderando tu magia y a los no-muertos que controles. Esta sobrecarga permanecerá activa durante siete rondas y otorgará los siguientes efectos. Solo podrá ser eliminada por hechizos y habilidades de similar magnitud.
 
-- Todos los hechizos de Nigromancia quedarán empoderados, otorgando Ventaja a todos los tiros relacionados con esta magia empleados en el área afectada. Esto no se acumula con Aura de muerte.
+- Todos los hechizos de Nigromancia quedarán empoderados, otorgando Ventaja a todos los tiros relacionados con esta magia empleados en el área afectada. Esto no se acumula con Aura de Muerte.
 - La energía negativa sanará rápidamente a los no-muertos, haciendo así que al principio de tu turno todos los no-muertos se sanen Rango + 2 Vitalidad además que estarán bajo los efectos de Guerrero de la Fe. Esto no se acumula con la sanación otorgada por Alma corrompida. 
 - Cada vez que una criatura en el campo de batalla caiga a menos de 0 PV revivirá inmediatamente como un no-muerto menor. Los hechizos de Sanación no funcionarán y todo intento de revivir a una criatura que haya muerto no funcionarán.
 - Los seres vivos que se encuentren en el área afectada deberán tener éxito en un tiro de CON frente a tu Nigromancia al principio de su turno o sufrirán 1d10 + CAR daño Necrótico. Este daño reducirá también la Vitalidad y PV de los afectados de la misma manera que Toque necrótico.

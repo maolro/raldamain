@@ -22,6 +22,7 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 - **Habilidades Pasivas:** Recibe Sigilo Sombrío y Nacido de las Tinieblas como habilidades pasivas. Puede también emplear su estadística de CON para todos los tiros de Magia Sombría si así lo desea. 
 - **Hechizos:** Aprende los hechizos Crear Oscuridad, Tajo Umbrío y Toque Drenador. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
 - **Parada Sombría:** Puede usar su tiro de Magia Sombría para defenderse de ataques cuerpo a cuerpo y a distancia.
+- **Salto Sombrío:** Una vez por ronda puede emplear la habilidad Salto Sombrío para evadir automáticamente un ataque enemigo. Si ya posee dicha habilidad podrá emplearla una vez adicional
 - **Infusión Sombría:** Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo Sombrío que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda. Esta habilidad no se acumula con otras que hagan efectos similares como Azote Divino o Infusión Necrótica.
 
 ## Sombrío II (+2, 3 mejoras)
@@ -29,7 +30,7 @@ La criatura es una sombra viviente hecha de energía negativa. Este arquetipo ot
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CAR por 1 junto a sus limitadores
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia y Ascendencia Sombría por 1.
 - **Hechizos:** Aprende los hechizos Bola Sombra, Capullo Sombrío, Terror Nocturno y Oscuridad Devoradora. Aquellos que valgan chi solo pueden emplearse gratuitamente una vez por ronda.
-- **Salto Sombrío:** Una vez por ronda puede emplear la habilidad Salto Sombrío para evadir automáticamente un ataque enemigo. Si ya posee dicha habilidad podrá emplearla una vez adicional
+- **Poder de las Sombras:** Recibirá Ventaja en todos sus tiros de ataque, defensa y Magia Sombría si se encuentra en un entorno a oscuras. Estas mejoras no se acumulan con aquellas otorgadas por Terror Nocturno.
 - **Absorber Oscuridad:** Recibe Inmunidad a efectos Necróticos y de Frío a costa de Vulnerabilidad a efectos Radiantes. El daño Necrótico le sana en lugar de herirle pero no podrá recibir Sanación. Si se encuentra en un entorno a oscuras se sanará Vitalidad igual a su Rango de Ascendencia Sombría.
 
 ## Sombrío III (+2, 5 mejoras)

@@ -66,7 +66,7 @@ La fuerza de este hechizo variará según el entorno en el que lo lances. Si lan
 
 ## Rango II
 
-### Muro de hielo
+### Muro de Hielo
 
 *Hielo, Defensiva, Duradera*
 
@@ -86,7 +86,7 @@ Esta habilidad se puede utilizar defensivamente para protegerte a ti o a un alia
 
 **Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. Esta habilidad solo se puede utilizar si el campo de batalla tiene una cantidad adecuada de plantas.
 
-### Neblina polar
+### Neblina Polar
 
 *Hielo, Gaseosa, Duradera*
 
@@ -102,7 +102,7 @@ Mientras permanezcas en la niebla tu magia mejorará notablemente, recibiendo as
 
 **Empoderar** (1 chi): El siguiente hechizo de Hielo que lances reducirá su coste de acciones por 1. Esto solo puede usarse una vez por hechizo.
 
-### Hielo resbalante
+### Hielo Resbalante
 
 *Hielo, Ambiental*
 
@@ -126,7 +126,7 @@ El hielo se mantendrá en el campo de batalla hasta que se derrita, lo cual ocur
 
 Todos tus hechizos de Hielo sustituyen sus dados de daño por d8 y aquellos de Rango I que conozcas cuestan una acción menos para emplear (mínimo 1).
 
-### Tormenta de nieve
+### Tormenta de Nieve
 
 *Hielo, Ataque, Área, Físico, Frío*
 
@@ -142,7 +142,7 @@ Manipulas el clima para formar una tormenta de granizo y fríos vientos para aca
 
 **Empoderar** (1 chi): La próxima vez que lances este hechizo no te costará chi. Debes seguir pagando su coste en acciones.
 
-### Congelación rápida
+### Congelación Rápida
 
 *Hielo, Mejora, Agarre, Frío*
 
@@ -154,11 +154,11 @@ Manipulas el clima para formar una tormenta de granizo y fríos vientos para aca
 
 Aumentas la intensidad de tu magia para congelar a tus enemigos en el acto. Al impactar a un enemigo con un ataque que inflija daño Frío puedes forzarle a tener éxito en un tiro de Heroísmo o Destrozar frente a tu Magia de Hielo o su cuerpo quedará parcialmente congelado, recibiendo el efecto de estado *enredado*. No necesitas concentrarte para congelar a enemigos de esta manera.
 
-Un enemigo congelado de esta manera podrá repetir el tiro al principio de su turno para intentar liberarse. Si se encuentra en un entorno frío el hielo empezará a provocarle los efectos de hipotermia, forzándole a realizar un tiro de CON al principio de su turno o sufrirá los efectos de un veneno de DES con gravedad igual a tu Magia de Hielo. La hipotermia es una Aflicción con el rasgo Frío y solo podrá curarse si el afectado permanece una ronda en un lugar con la cantidad adecuada de calor, lo cual lo reducirá su nivel por un paso.
+Un enemigo congelado de esta manera podrá repetir el tiro al principio de su turno para intentar liberarse. Si se encuentra en un entorno frío el hielo empezará a provocarle los efectos de hipotermia, forzándole a realizar un tiro de Salud al principio de su turno o sufrirá los efectos de un veneno de DES con gravedad igual a tu Magia de Hielo. La hipotermia es una Aflicción con el rasgo Frío y solo podrá curarse si el afectado permanece una ronda en un lugar con la cantidad adecuada de calor, lo cual lo reducirá su nivel por un paso.
 
 **Empoderar** (1 chi): Afecta a un enemigo adicional con este hechizo.
 
-### Invocar elemental de hielo
+### Invocar Elemental de Hielo
 
 *Hielo, Invocación*
 
