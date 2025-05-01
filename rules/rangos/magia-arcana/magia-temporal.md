@@ -82,7 +82,7 @@ Aceleras temporalmente a un personaje para que se mueva a velocidades sobrehuman
 
 **Duración:** Concentración
 
-Ralentizas enormemente el tiempo en una esfera pequeña para que tus enemigos se muevan a paso de tortuga. La esfera aparecerá en un punto a distancia media y todos los objetivos en ella deberán tener éxito en un tiro de CON frente a tu Magia Temporal o quedarán *ralentizados* durante una ronda. 
+Ralentizas enormemente el tiempo en una esfera pequeña para que tus enemigos se muevan a paso de tortuga. La esfera aparecerá en un punto a distancia media y todos los objetivos en ella deberán tener éxito en un tiro de Salud frente a tu Magia Temporal o quedarán *ralentizados* durante una ronda. 
 
 La zona afectada permanecerá en el campo de batalla hasta que pierdas la concentración y toda criatura que entre en ella o acabe su turno ahí deberá repetir el tiro contra este hechizo o será afectada de nuevo. Además, una vez por ronda puedes mover la esfera hasta un paso en cualquier dirección como acción bonus.
 
