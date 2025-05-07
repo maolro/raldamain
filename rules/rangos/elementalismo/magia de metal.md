@@ -189,7 +189,7 @@ Disponiendo el metal de una manera adecuada puedes preparar uno de tus golpes pa
 
 **Duración:** Concentración
 
-Creando una coraza metaliza alrededor y manteniendo trozos metálicos en suspensión a tu alrededor eres capaz de aumentar notablemente tu defensa, dificultando a tus enemigos hacer mella en ti. Al activar la habilidad recibirás contadores de escudo iguales a tu rango, y tu defensa base pasará a ser igual a tu rangox2. Así mismo podrás emplear tu modificador de metal para defenderte de ataques tanto de área como de toque. 
+Creando una coraza metaliza alrededor y manteniendo trozos metálicos en suspensión a tu alrededor eres capaz de aumentar notablemente tu defensa, dificultando a tus enemigos hacer mella en ti. Al activar la habilidad recibirás contadores de escudo iguales a tu rango, y tu defensa base pasará a ser igual a tu Rango x 2. Así mismo, podrás emplear tu modificador de metal para defenderte de ataques tanto de área como de toque. 
 
 ### Torbellino de Filos
 

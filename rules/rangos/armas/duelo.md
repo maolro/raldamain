@@ -153,7 +153,7 @@ Con un rápido y preciso movimiento rematas a tu oponente, empleando los mínimo
 
 Con rápidos y gráciles movimientos eres capaz de asestar una lluvia de veloces cortes y estocadas, abriéndote paso a través de todos tus enemigos. De esta manera tras impactar con tu siguiente golpe podrás desenganchar y moverte un paso, atacando a un enemigo que se encuentre en tu alcance en esa posición. Podrás seguir golpeando enemigos de este modo hasta que alguno de tus ataques falle o ya no queden enemigos nuevos a los que golpear. 
 
-### Secuencia de ataques
+### Secuencia de Ataques
 
 *Duelo, Reacción*
 
