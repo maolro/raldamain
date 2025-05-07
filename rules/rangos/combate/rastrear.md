@@ -105,7 +105,7 @@ Después del cambio tu enemigo debe volver a defenderse y toda habilidad emplead
 
 **Duración:** Permanente
 
-Haces un juramento para acabar con un enemigo específico que durará hasta su muerte. Dicho juramento debe hacerse contra un enemigo que conozcas, quien se convertirá en tu enemigo juramentado hasta que muera. Cada vez que te encuentres con tu enemigo juramentado en el campo de batalla obtendrás Ventaja en todos tus tiros de ataque y defensa contra él además que todos tus ataques que le impacten aumentarán su daño base por 1d6 e infligirán su efecto crítico.
+Haces un juramento para acabar con un enemigo específico que durará hasta su muerte. Dicho juramento debe hacerse contra un enemigo que conozcas, quien se convertirá en tu enemigo juramentado hasta que muera. Cada vez que te encuentres con tu enemigo juramentado en el campo de batalla obtendrás Ventaja en todos tus tiros de ataque, defensa y habilidad contra él además que todos tus ataques que le impacten aumentarán su daño base por 1d6 e infligirán su efecto crítico.
 
 Mientras que no hay límite del número de enemigos juramentados que puedas tener solo recibirás los beneficios de esta habilidad contra uno de ellos en cada combate. Los bonificadores de esta habilidad no se acumulan con aquellos de Analizar enemigo.
 

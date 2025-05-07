@@ -142,7 +142,7 @@ La tormenta también te permitirá lanzar tus hechizos Eléctricos desde el ciel
 
 **Empoderar** (1 chi): El siguiente hechizo de Tormenta que lances reduce su coste en acciones por 1 (mínimo 0). Solo puedes empoderar así una vez por hechizo.
 
-### Esferas del relámpago
+### Esferas del Relámpago
 
 *Tormenta, Defensivo, Duradero*
 
@@ -154,7 +154,7 @@ Moldeas la energía eléctrica para formar varias esferas de relámpago que te p
 
 **Empoderar** (1 chi): Recuperas la mitad de tus *contadores de escudo* redondeando hacia abajo. Para empoderar este hechizo debe quedarte por lo menos un contador.
 
-### Invocar elemental de rayo
+### Invocar elemental de Rayo
 
 *Tormenta, Invocación*
 

@@ -62,6 +62,22 @@ El humo permanecerá activo hasta el final de tu siguiente turno o hasta que sea
 
 Una variante menos destructiva de la bomba de fuego, una bomba cegadora emplea la pólvora para provocar un fogonazo capaz de cegar a quienes impacte. Al atacar con una bomba cegadora podrás lanzarla hasta una distancia media, atacando a toda criatura que se encuentre a distancia cercana del punto afectado empleando tu modificador de Bombas. Aquellos que fracasen el tiro quedarán *cegados* durante una ronda además que la luz disipará toda la oscuridad mágica en el área afectada, llenándola de luz brillante.
 
+### Bomba de Metralla
+
+*Objeto, Bomba, A distancia, Área, Físico*
+
+**Coste:** 1 acción
+
+**Alcance:** Medio
+
+**Tamaño:** Radio corto
+
+**Efecto crítico:** Todos los afectados sufren una *herida leve*
+
+**Duración:** Instantáneo
+
+Fabricas una bomba llena de clavos u objetos punzantes para provocar graves heridas físicas a aquellos que impacte. Puedes lanzar la bomba de metralla a cualquier posición a distancia media de ti, atacando a toda criatura que se encuentre a distancia cercana del punto afectado empleando tu modificador de Bombas. La bomba infligirá 1d6 + INT daño Físico al impactar (la mitad en caso de éxito) que ignorará la Defensa que tenga el objetivo.
+
 ## Rango II
 
 Recibes dos ranuras de objeto de Rango II y dos de Rango I
@@ -88,19 +104,21 @@ Toda criatura que se encuentre ahí en el momento que lances la bomba deberá te
 
 Puedes combinar varias bombas que tengas fabricadas para crear un explosivo aún más destructivo. Para combinar una bomba de esta manera debes gastar una ranura de rango superior al suyo. Al hacerlo la bomba escogida obtendrá un dado de daño adicional y su área de efecto por un paso (llegando hasta un radio grande) por cada unidad de diferencia que haya entre su rango original y el rango de la ranura escogida. 
 
-Mientras que combinar tiene sus ventajas cabe recalcar que aumentará también el volumen de la bomba misma hasta el punto de hacerla complicada de activar. Cada unidad de diferencia aumentará el coste en acciones de esta por 1 hasta un máximo de 3. Si dicho coste fuera superior a 3 la bomba no podrá ser lanzada, impidiendo así que pueda ser usada en ataques.
+Mientras que combinar tiene sus ventajas, cabe recalcar que aumentará también el volumen de la bomba misma hasta el punto de hacerla complicada de activar. Cada unidad de diferencia aumentará el coste en acciones de esta por 1 hasta un máximo de 3. Si dicho coste fuera superior a 3 la bomba no podrá ser lanzada, impidiendo así que pueda ser usada en ataques.
 
 ### Retrasar Explosión
 
 *Bombas, Pasiva*
 
-Al fabricar una bomba puedes añadir componentes especiales para retrasar el momento exacto de la explosión. El tiempo de retraso puede ser como mínimo una ronda y como máximo una hora, provocando los mismos efectos que un ataque cuando esta finalmente explote sin la necesidad de gastar acciones. Lanzar una bomba retardada sigue costando acciones aunque realmente no explote.
+Al fabricar una bomba puedes añadir componentes especiales para retrasar el momento exacto de la explosión. El tiempo de retraso puede ser como mínimo una ronda y como máximo una hora, provocando los mismos efectos que un ataque cuando esta finalmente explote sin la necesidad de gastar acciones. 
+
+Una detonación tardía provocará que todos los objetivos a distancia cercana o adyacente a la bomba reciban Desventaja en sus tiros defensivos. No obstante, lanzar una bomba retardada sigue costando acciones aunque realmente no explote.
 
 Si una persona encuentra la bomba antes que explote esta puede ser desarmada, impidiendo su explosión. Para desarmar una bomba se necesita tener éxito en un tiro de Juego de Manos contra tu modificador de Bombas. Si fracasa más de tres veces en el tiro u obtiene un fracaso crítico la bomba explotará al instante sin que el afectado pueda defenderse.
 
 ## Rango III
 
-Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II y Rango I.
+Recibe dos Ranuras de Rango III y dos ranuras adicionales de Rango II. Además, todos tus dados de daño relacionados con bombas pasan a ser d8.
 
 ### Bomba de Gas Venenoso
 
@@ -140,25 +158,47 @@ Es posible infundir estas bombas con hechizos de niveles superiores con mayor ti
 
 *Bombas, Defensiva*
 
-Eres capaz de emplear ágilmente tus bombas para detener ataques enemigos. 
+Eres capaz de emplear ágilmente tus bombas para detener ataques enemigos. Una vez por ronda como reacción puedes gastar una bomba que tengas para defenderte de un ataque enemigo, pudiendo así recibir éxito automático en un tiro defensivo contra un ataque a distancia o de área. Si empleas esta habilidad contra ataques cuerpo a cuerpo sufrirás por obligación los efectos de la bomba empleada. Debes encontrarte en *posición defensiva* para emplear esta habilidad.
 
 ## Rango IV
 
-### Detonación a distancia
+### Detonación a Distancia
 
-Puedes crear un mando detonador de hasta tres bombas.
+*Objeto, Bombas*
 
-### Bomba teledirigida
+Eres capaz de fabricar un mando detonador capaz de detonar múltiples bombas a la vez. El mando te permite controlar hasta tres bombas diferentes y mediante él puedes hacer que exploten en un momento específico del combate como acción bonus. 
 
-La bomba seguirá a un objetivo específico, ignorando cubierta y atacando repetidamente a un enemigo hasta que explote o sea detenida.
+La detonación consumirá las bombas empleadas y activarán sus efectos como si las lanzases. De igual manera que Retrasar Explosión, los afectados recibirán Desventaja en sus tiros defensivos si se encuentran a distancia cercana o adyacente de la bomba. Si hay un mismo enemigo en el radio de efecto de múltiples bombas sufrirá entonces varios ataques a la vez. Cabe recalcar que mando detonador ocupará una ranura de objeto de Rango IV.
 
-### Bomba carnicera
+### Bomba Teledirigida
 
-Provoca grandes cantidades de daño físico y heridas permanentes.
+*Objeto, Bomba, Mejora*
+
+Añades un dispositivo de chi a tres bombas que tengas para que se vuelvan capaces de volar directamente hacia tus objetivos como si tuvieran vida propia. Este dispositivo ocupará una ranura de objeto de Rango IV y te permite mejorar hasta tres bombas de tu elección.
+
+Cuando lances una bomba teledirigida podrás ignorar los efectos defensivos otorgados por *cubierta* u *ocultamiento* que tenga tu objetivo. Además, si tu objetivo evita el ataque usando Esquiva o una habilidad evasiva como Salto Espacial puedes volver a atacarle como reacción. Este proceso continuará hasta que la bomba explote o sea detenida mediante un efecto capaz de destruirla, como puede ser un muro o un ataque hecho como reacción.
+
+### Bomba Carnicera
+
+*Objeto, Bomba, A distancia, Área*
+
+**Coste:** 1 acción
+
+**Alcance:** Medio
+
+**Tamaño:** Radio corto
+
+**Duración:** Instantáneo
+
+Avanzas a pasos agigantados en tecnología de explosivos, creando así una destructiva bomba capaz de mutilar gravemente a los afectados. Puedes lanzar la bomba carnicera a cualquier posición a distancia media de ti, atacando a toda criatura que se encuentre a distancia cercana del punto afectado empleando tu modificador de Bombas. 
+
+La bomba infligirá 2d8 + INT daño Físico que ignora defensa al impactar y provocará una *herida permanente media* además de *sangrado* a todos los afectados. Aquellos que la eviten exitosamente sufrirán la mitad de daño y una *herida permanente leve*. 
 
 ## Rango V
 
-### Bomba de entropía
+Todos tus dados de daño relacionados con bombas pasan a ser d10.
+
+### Bomba de Entropía
 
 La bomba explota y luego implosiona, haciendo mucho daño
 

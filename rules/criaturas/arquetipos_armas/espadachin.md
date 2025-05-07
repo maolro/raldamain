@@ -26,8 +26,6 @@ La criatura se ha especializado en combatir con una espada o arma de Duelo simil
 
 ## Espadachín III (+2, 5 mejoras)
 
-Combinar Técnicas, Ataque Saltarín, Contrataque, Danza del Espadachín, Estocada Poderosa, Giro Defensivo, Punto Ciego, Inescrutable, Cambio Repentino
-
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores
 - **Mejoras de Rango:** Mejora su Rango y modificador en Armas de Duelo, Rastrear y Reflejos por 1.
 - **Habilidades Pasivas:** Recibe Inescrutable, Giro Defensivo y Punto Ciego como habilidades Pasivas.
@@ -37,4 +35,11 @@ Combinar Técnicas, Ataque Saltarín, Contrataque, Danza del Espadachín, Estoca
 - **Combinar Técnicas:** Puede emplear la reacción Combinar Técnicas una vez por ronda sin la necesidad de gastar vigor tras hacer un ataque con un Arma de Duelo. Esto se acumula con otros usos de Combinar Técnicas que reciba por arquetipos diferentes.
 
 ## Espadachín IV (+2, 7 mejoras)
+
+- **Aumentos Estadísticos**: Incrementa su FUE, DES y CON por 1 además de sus limitadores. 
+- **Mejoras de Rango:** Mejora su Rango y modificador en Armas de Duelo, Reflejos y Rastrear por 1.
+- **Habilidades Pasivas:** Recibe Libertad de Movimiento y Reflejos Supremos como habilidades pasivas. 
+- **Técnicas de Combate:** Aprende las técnicas de combate Golpe de Gracia, Cortes en Cadena y Secuencia de Ataques. Cada una de estas solo puede usarse una vez por ronda sin la necesidad de pagar vigor.
+- **Maestro de Armas:** Puede emplear su modificador de Armas de Duelo para todos los tiros relacionados con cualquier arma o estilo de artes marciales que utilice la estadística de Fuerza o Destreza además que aprende cuatro técnicas de combate adicionales de su elección con Rango IV o menos. Podrá emplear dichas técnicas una vez por ronda sin la necesidad de gastar vigor.
+- **Enemigo Juramentado:** Al entrar en combate podrá escoger a un objetivo específico como Enemigo Juramentado. Eso le otorgará Ventaja en todos sus tiros de ataque, defensa y habilidad contra él, un aumento del daño de 1d6 y provocará que todos sus ataques inflijan efecto crítico. Esta habilidad funciona de igual que la habilidad de rastrear con el mismo nombre.
 
