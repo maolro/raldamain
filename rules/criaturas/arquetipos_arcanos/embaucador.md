@@ -24,7 +24,7 @@ Un enemigo con el arquetipo Embaucador I está dotado de un talento innato para 
 
 ## Embaucador II (+2, requiere 3 mejoras)
 
-Los Embaucadores que alcanzan este nivel han perfeccionado sus habilidades de manipulación mental y la creación de ilusiones más elaboradas. Estos enemigos son mucho más peligrosos en combate al ser capaces de dominar mentalmente a sus adversarios y de crear engaños ilusorios que parecen totalmente reales. Un enemigo con el arquetipo Embaucador II es ideal para encuentros de rango medio donde su capacidad para manipular y desorientar a los jugadores representa un desafío considerable.
+Los Embaucadores que alcanzan este nivel han perfeccionado sus habilidades de manipulación mental y la creación de ilusiones más elaboradas. Estos enemigos son mucho más peligrosos en combate al ser capaces de dominar mentalmente a sus adversarios y de crear engaños ilusorios que parecen totalmente reales. Un enemigo con el arquetipo Embaucador II es ideal para encuentros de rango medio donde su capacidad para manipular y desorientar a los jugadores.
 
 - **Aumentos Estadísticos:** Incrementa su INT y CAR por 1 junto a sus limitadores.
 

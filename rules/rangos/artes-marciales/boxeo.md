@@ -89,7 +89,7 @@ Has entrenado mucho tus piernas para dar saltos repentinos a gran velocidad. Al 
 
 Todo plan cae a pedazos con un golpe a la cara. En respuesta a que un enemigo adyacente te ataque puedes emplear esta habilidad como reacción para hacer un ágil contrataque antes que pueda reaccionar. Si impactas con dicho contrataque tu enemigo no solo sufrirá el daño sino que también fallará automáticamente el ataque que haya intentado utilizar, perdiendo todas las acciones y reservas gastadas. Un ataque de golpe veloz no puede ser mejorado con otras técnicas.
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Marcial, Mejora*
 

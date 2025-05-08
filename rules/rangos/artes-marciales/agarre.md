@@ -29,7 +29,7 @@ Tu estilo de combate se basa en agarrar a tus enemigos para luego golpearles rep
 
 El afectado podrá hacer un tiro de Juego de Manos o Heroísmo al principio de su turno para intentar liberarse. Debido a que empleas tus manos para agarrar a tu objetivo quedarás tú también *enredado* de la misma manera además que no podrás coger otros objetos o realizar ataques que no estén relacionados con esta rama. Si lo deseas puedes aflojar tu agarre para liberar una de tus manos a costa que recibirás Desventaja en tu tiro para mantener *enredado* a tu objetivo.
 
-### Romper agarres
+### Romper Agarres
 
 *Marcial, Pasiva*
 
@@ -37,7 +37,7 @@ Tu experiencia combatiendo en un estilo basado en agarres te da una gran facilid
 
 **Empoderar** (1 vigor): Haz un tiro inmediato para liberarte de un efecto de Agarre
 
-### Lanzar al suelo
+### Lanzar al Suelo
 
 *Marcial, Maniobra, Físico*
 
@@ -53,7 +53,7 @@ Si el afectado permanece *enredado* o *agarrado* debe tener éxito en un tiro de
 
 ## Rango II
 
-### Agarre letal
+### Agarre Letal
 
 *Agarre, Físico*
 
@@ -67,7 +67,7 @@ Agarras a un enemigo de tal manera que todo intento para escapar le herirá cada
 
 Un enemigo *agarrado* de esta manera puede repetir el tiro al principio de su turno y liberarse en caso de éxito, pero si fracasa sufrirá 1d4 + FUE daño Contundente que puede ser mejorado con otras habilidades. Este daño provocará el mismo efecto crítico que esta técnica.
 
-### Romper huesos
+### Romper Huesos
 
 *Agarre, Maniobra, Física*
 
@@ -79,7 +79,7 @@ Un enemigo *agarrado* de esta manera puede repetir el tiro al principio de su tu
 
 Haces fuerza en una de las extremidades de un enemigo agarrado con el fin de rompérselas. Un objetivo adyacente *enredado* o *agarrado* por ti debe tener éxito en un tiro de Heroísmo o Juego de manos contra tu modificador de Estilo de Agarre o sufrirá 1d4 + FUE daño Contundente además de una *herida permanente leve* en el brazo o la pierna del afectado. El daño de esta habilidad ignorará la DEF otorgada por armaduras.
 
-### Golpe de cabeza
+### Golpe de Cabeza
 
 *Ataque, Físico*
 
@@ -93,7 +93,7 @@ Golpeas a un enemigo con un cabezazo para aturdirlo temporalmente y hacerlo más
 
 ## Rango III
 
-### Escudo humano
+### Escudo Humano
 
 *Agarre, Pasiva*
 
@@ -103,7 +103,7 @@ Golpeas a un enemigo con un cabezazo para aturdirlo temporalmente y hacerlo más
 
 **Coste:** 2 vigor
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Agarre, Mejora*
 
