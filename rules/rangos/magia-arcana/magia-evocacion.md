@@ -210,6 +210,6 @@ Aprendes dos hechizos de Rango V pertenecientes a cualquier magia elemental.
 
 **Duración:** Instantáneo
 
-Liberas toda la energía mágica en tu interior para aniquilar todo a tu paso. Haz un ataque contra todas las criaturas en un radio grande que inflige 3d10 + INT daño Arcano además de una *herida permanente media*. Este ataque destruirá todas las barreras y defensas a su paso, haciendo así que no pueda ser detenido por *contadores de escudo* ni muros. 
+Liberas toda la energía mágica en tu interior para aniquilar todo a tu paso. Haz un ataque contra todas las criaturas en un radio grande que inflige 4d10 + INT daño Arcano además de una *herida permanente media*. Este ataque destruirá todas las barreras y defensas a su paso, haciendo así que no pueda ser detenido por *contadores de escudo* ni muros. 
 
 Todos los objetivos que impacte perderán todos sus *contadores de escudo* además que todos sus objetos no-mágicos quedarán destruidos. Si llevan objetos mágicos estos recibirán el efecto de estado *roto* hasta que sean reparados. El área afectada por una Aniquilación mágica se llenará de grandes cantidades de energía, provocando así los efectos de Irradiación de chi.

@@ -92,7 +92,7 @@ El daño base de tus ataques Marciales pasa a ser 1d8.
 
 Apretando el puño y propinando un fuerte impacto eres capaz de romper tanto la postura de tu oponente como su endeble armadura. De esta manera el siguiente ataque que haga infligirá 2d6 daño adicional al impactar, además de que romperá la armadura del objetivo. En el caso de que este emplee parada con un arma para defenderse entonces también la romperá, eliminándole también un contador de escudo en el caso de que los tenga. 
 
-### Patada salto Alta
+### Patada Salto Alta
 
 *Marcial, Dragón, Mejora*
 
