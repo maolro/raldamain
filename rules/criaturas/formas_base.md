@@ -33,9 +33,8 @@ La criatura se trata de un ser sobrenatural que proviene de un plano diferente a
 
 ## Humanoide
 
-La criatura pertenece a una especie de apariencia e inteligencia similar a la especie humana. Esta forma otorga las siguientes estadísticas básicas:
+La criatura pertenece a una especie de apariencia e inteligencia similar a la especie humana. Esta forma otorga los siguientes atributo:
 
-- Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 3 y a un mínimo de 0. Esto funciona de la misma manera que si se tratase de un personaje jugador.
 - Recibe los beneficios de una raza jugable de tu elección. En el caso que no pertenezca a ninguna existente consulta al DJ para recibir mejoras apropiadas.
 - Al tratarse de un ser humanoide puede recibir heridas permanentes con normalidad y contará con una estadística de cordura. Si se trata de una invocación puede resistirse a las órdenes de su maestro si atentan contra su vida o la de un ser querido.
 - Un ser humanoide necesita comer, respirar y dormir. Contará normalmente con brazos con los que puede coger objetos o armas. 
@@ -47,3 +46,23 @@ La criatura era antes un ser vivo que ha sido reanimado por fuerzas oscuras. Est
 - Puede distribuir 11 puntos entre sus seis estadísticas, llegando a un máximo de 3 y a un mínimo de -1. Esto funciona de la misma manera que si se tratase de un personaje jugador.
 - Recibe Inmunidad a efectos Mentales, Miedo, Aflicciones y Necróticos a costa que obtiene Vulnerabilidad a efectos Radiantes. Si sufre daño Necrótico se sanará Vitalidad igual a la mitad del daño recibido.
 - Un no-muerto se alimenta únicamente de la esencia vital de otras criaturas. No necesita respirar ni dormir. 
+
+# Tiros de Salvación 
+
+En circunstancias normales, un jugador contaría con niveles de talento para determinar los resultados de sus tiros de habilidad además de su capacidad de defenderse de ciertas habilidades que los afecten. Para simplificar ese dato para criaturas se ha optado por la siguiente norma opcional, conocida como **tiros de salvación**. 
+
+Mediante esta norma la criatura podrá escoger un modificador específico en todos los tiros de habilidad relacionados con una o varias estadísticas de su elección. Estos tiros podrán usarse para defenderse de habilidades que requieren un tiro de Talento especifico, sustituyendo así el modificador normal. El modificador exacto depende del nivel y se calcula en base a la siguiente tabla:
+
+| Nivel | Tiros de Salvación                        |
+| ----- | ----------------------------------------- |
+| 2     | +2 en dos estadísticas                    |
+| 4     | +2 en tres estadísticas                   |
+| 6     | +3 en tres estadísticas                   |
+| 8     | +4 en tres estadísticas                   |
+| 10    | +4 en cuatro estadísticas                 |
+| 12    | +5 en cuatro estadísticas                 |
+| 14    | +5 en cuatro estadísticas, +2 en el resto |
+| 16    | +5 en cuatro estadísticas, +3 en el resto |
+| 18    | +5 en cuatro estadísticas, +4 en el resto |
+| 20    | +5 en todas sus estadísticas              |
+

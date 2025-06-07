@@ -155,6 +155,53 @@
             }
         ]
     },
+    "artifice": {
+        "name": "Artífice",
+        "stat": "itl/con",
+        "modranks": [
+            "fabricacion",
+            "bombas",
+            "quimica"
+        ],
+        "rank": 0,
+        "max": 3,
+        "stats": [
+            {"stat": "itl", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "itl", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "itl", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 1, "spell-lvl": 1, "slots": 2, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
+            {"rank": 2, "spell-lvl": 2, "slots": 2, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"},
+            {"rank": 3, "spell-lvl": 3, "slots": 2, "cat": ["magia-mental","magia-espacial","magia-temporal","magia-protectora","magia-de-evocacion","magia-de-transmutacion","magia-ilusoria"], "mod": "ascendencia-akhasica"}
+        ],
+        "enchancements": [
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            },
+            {
+                "attributes": [],
+                "abilities": [
+                    {}
+                ]
+            }
+        ]
+    },
     "bastion-arcano": {
         "name": "Bastión Arcano",
         "stat": "itl",
@@ -1038,6 +1085,108 @@
                 "abilities": [
                     {}
                 ]
+            }
+        ]
+    },
+    "esencia-de-arena": {
+        "name": "Esencia de Arena",
+        "stat": "cha",
+        "modranks": ["magia-de-arena"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": ["magia-de-fuego","magia-de-tierra","magia-de-aire"], "mod": "magia-de-arena"},
+            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": ["magia-de-fuego","magia-de-tierra","magia-de-aire"], "mod": "magia-de-arena"},
+            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": ["magia-de-fuego","magia-de-tierra","magia-de-aire"], "mod":
+            "magia-de-arena"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["torrente-de-arena","transmutar-la-tierra","polvo-cegador","parada-de-arena","evasion"],
+                "abilities": [
+                    {
+                        "name": "Infusión Arenosa",
+                        "type": "Accion",
+                        "tags": "Arena, Mejora",
+                        "uses": "1/Ataque",
+                        "skill": "ascendencia-de-fuego",
+                        "description": "Aumenta el daño de un ataque natural o de armas por RANGO-1d6."
+                    },
+                    {
+                        "name": "Hijo del Desierto",
+                        "type": "Pasiva",
+                        "tags": "Arena, Innata",
+                        "skill": "magia-de-arena",
+                        "resistances": ["Fuego","Frío","Necrótico"],
+                        "immunities": ["Terreno Difícil"],
+                        "description": "Es Inmune al *terreno difícil* provocado por efectos de Tierra y obtiene Resistencia a efectos de Fuego, Frío y Necróticos."
+                    },
+                    {
+                        "name": "Elementalismo Empoderado",
+                        "type": "Pasiva",
+                        "tags": "Arena, Innata",
+                        "skill": "ascendencia-de-fuego",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con estadísticas mentales y aumenta el daño base de todos sus hechizos elementales por 1d6. Estos modificadores no se acumulan con Mente Desencadenada."
+                    }
+                ]
+            },
+            {
+                "attributes": ["arenas-devoradoras","muro-de-arenisca","trampa-arena","poder-del-dolor"],
+                "abilities": [
+                    {
+                        "name": "Viajero de los Cielos",
+                        "type": "Pasiva",
+                        "tags": "Innata, Duradera",
+                        "skill": "magia-de-arena",
+                        "description": "Obtiene velocidad de vuelo 2 y Ventaja en sus tiros de Esquiva. Puede también emplear su modificador de Magia de Arena o Aire para sus tiros de Esquiva."
+                    },
+                    {
+                        "name": "Vientos Protectores",
+                        "type": "Pasiva",
+                        "tags": "Innata, Duradera",
+                        "skill": "magia-de-arena",
+                        "resistances": ["A Distancia"],
+                        "immunities": ["Gaseosos"],
+                        "description": "Las arenas le rodean para protegerle, otorgándole así Resistencia a ataques A Distancia además de Inmunidad a efectos Gaseosos. Esta habilidad quedará desactivada una ronda si pierde la concentración."
+                    }
+                ]
+
+            },
+            {
+                "attributes": ["arenas-protectoras","remolino-de-arena","tumba-arena","elemento-de-libertad"],
+                "abilities": [
+                    {
+                        "name": "Vínculo Elemental",
+                        "type": "Pasiva",
+                        "tags": "Innata",
+                        "skill": "magia-de-arena",
+                        "description": "Al principio de su turno recupera RANGO+2 Vitalidad si se encuentra en un entorno afectado por una tormenta de arena o vientos poderosos."
+                    },
+                    {
+                        "name": "Danza de las Arenas",
+                        "type": "Pasiva",
+                        "tags": "Arena, Duradera",
+                        "skill": "magia-de-arena",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Arena además que una vez por ronda puede entrar en <i>posición defensiva</i> como acción bonus. Estos efectos desaparecerán durante una ronda si pierde la concentración."
+                    }
+                ]
+            },
+            {
+                "attributes": []
             }
         ]
     },

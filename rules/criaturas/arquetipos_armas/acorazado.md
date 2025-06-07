@@ -20,6 +20,7 @@ La criatura está dotada de una poderosa coraza capaz de detener ataques enemigo
 - **Aumentos Estadísticos:** Incrementa su FUE y CON por 1. Aumenta también sus PV, Vitalidad y Defensa por 2 además que recibe dos *contadores de escudo* adicionales al entrar en combate.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Escudos y Fortitud por 1. 
 - **Habilidades Pasivas:** Recibe Duro de Pelar y Mente Custodiada como habilidades pasivas.
+- **Defensa Absoluta:** Recibe Ventaja en todos sus tiros relacionados con sus estadísticas de Fuerza y Constitución a costa de Desventaja en sus tiros de Destreza. Además, una vez por ronda puede entrar en *posición defensiva* como acción bonus. Estos modificadores no se acumulan con Ira y funcionan de la misma manera que Defensa Absoluta.
 - **Técnicas de Combate:** Aprende la técnica de combate Reposición Forzosa. Esta solo puede usarse una vez por ronda de manera gratuita.
 - **Detener Ataque:** Una vez por ronda puede recuperar un *contador de escudo* que haya gastado para detener un ataque. Esto funciona igual que la habilidad Detener Ataque.
 

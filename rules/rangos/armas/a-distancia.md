@@ -96,7 +96,7 @@ Disparas con la precisión de un francotirador para eliminar a enemigos cada vez
 
 Con agiles movimientos puedes disparar eficazmente mientras realizas maniobras evasivas contra aquellos que traten de acercársete, colocando distancia y plomo entre tú y tus atacantes. De esta manera al hacer tiros de esquiva para defenderte de ataques enemigos podrás también hacer un tiro con armas A distancia, quedándote con el resultado mas conveniente. 
 
-### Combinar técnicas
+### Combinar Técnicas
 
 *Reacción*
 
@@ -106,15 +106,15 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 ## Rango IV
 
-### Interceptar ataque
+### Interceptar Ataque
 
 *A distancia, Reacción*
 
 **Coste:** 2 vigor
 
-Con rápidos reflejos y una impresionante habilidad con el gatillo eres capaz de actuar antes que nadie, incluso cuando parece que tienen la ventaja. De esta manera, una vez por acción enemiga, podrás hacer un ataque en respuesta a que un enemigo tome cualquier acción. En caso de que el ataque sea exitoso el enemigo verá su acción interrumpida, perdiendo también las acciones y reserva que hubiese empleado para ella. 
+Con rápidos reflejos y una impresionante habilidad con el gatillo eres capaz de actuar antes que nadie, incluso cuando parece que tienen la ventaja. De esta manera, una vez por ronda podrás hacer un ataque en respuesta a que un enemigo tome cualquier acción. En caso de que el ataque sea exitoso el enemigo verá su acción interrumpida, perdiendo también las acciones y reserva que hubiese empleado para ella. 
 
-### Disparo impredecible
+### Disparo Impredecible
 
 *A distancia, Mejora*
 
@@ -124,7 +124,7 @@ Disparas de una manera impredecible y aprovechas el rebote de tu ataque para imp
 
 Las únicas habilidades que podrán detenerlo son aquellas que otorguen cubierta completa a un objetivo o le den Inmunidad a ataques de la misma categoría que el tuyo. Cabe recalcar que los *contadores de escudo* seguirán funcionando de manera normal si los otorga una habilidad que dé protección completa a un objetivo.
 
-### Disparo penetrante
+### Disparo Penetrante
 
 *A distancia, Mejora*
 

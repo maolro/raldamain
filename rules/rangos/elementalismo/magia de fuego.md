@@ -28,7 +28,7 @@ Tienes el don de controlar las llamas a voluntad sirviéndote de los movimientos
 
 **Duración:** Instantáneo
 
-Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. Haz un ataque de Magia de fuego contra un enemigo a distancia media que infligirá 1d6 + Rango daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
+Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. Haz un ataque de Magia de Fuego contra un enemigo a distancia media que infligirá 1d6 + CAR daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional que pueda alcanzar con este hechizo
 
@@ -44,9 +44,9 @@ Lanzas una llamarada desde la palma de tu mano para hacer arder a tus enemigos. 
 
 **Duración:** Instantáneo
 
-Aumentas la velocidad de tus ataques para penetrar las defensas enemigas a costa de reducir su alcance. Haz un ataque de magia de Fuego contra un objetivo adyacente que inflige 1d6 + Rango daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
+Aumentas la velocidad de tus ataques para penetrar las defensas enemigas a costa de reducir su alcance. Haz un ataque de magia de Fuego contra un objetivo adyacente que inflige 1d6 + CAR daño Fuego al impactar. Si tu objetivo lleva objetos inflamables estos saltarán en llamas, aumentando así el nivel de la quemadura que le inflijas por un paso.
 
-Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma cantidad de ataques extra contra el mismo objetivo quien usará el mismo resultado defensivo para protegerse de todos ellos (por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra). Cada ataque adicional que realices aumentará su tiro de ataque y daño por 1 contra ese mismo objetivo llegando a un bonificador máximo de 3.
+Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma cantidad de ataques extra contra el mismo objetivo, quien usará el mismo resultado defensivo para protegerse de todos ellos: Por ejemplo, gastar dos acciones adicionales te permitirá realizar dos ataques extra. Cada ataque adicional que realices aumentará su tiro de ataque y daño por 1 contra ese mismo objetivo llegando a un bonificador máximo de 3.
 
 **Empoderar** (1 chi): Aumenta el alcance de todos los ataques hechos con este hechizo a cercano durante una ronda.
 
@@ -62,7 +62,7 @@ Puedes gastar cualquier cantidad de acciones adicionales para realizar la misma 
 
 **Duración:** Instantáneo
 
-Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 1d6 + CAR daño Fuego al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
+Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz un ataque contra todas las criaturas en un cono pequeño que inflige 2d6 + CAR daño Fuego al impactar. Este ataque prenderá todos los objetos inflamables en el área afectada y eliminará todos los efectos de Hielo, Naturaleza o Agua de la misma magnitud.
 
 **Empoderar** (1 chi): Aumenta el tamaño de este ataque a un paso y su daño por 1d6. Solo puedes empoderar de esta manera dos veces por ataque.
 
@@ -82,11 +82,11 @@ Liberas tu fuego interior en la forma de un aliento de llamas abrasadoras. Haz u
 
 **Duración**: Concentración 
 
-Formas un muro de llamas que quemarán a todo aquel que intente cruzarlas. El muro surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana.  Como barrera tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
+Formas un muro de ardientes llamas capaces de quemar a todo aquel que intente cruzarlas. El muro surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana. Como barrera tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas. No obstante, el daño de ataques físicos en área, como impactos de artillería, aún funcionarán. El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
 
-El muro proporcionará *cubierta parcial* a todas las criaturas al otro lado y las protegerá de todos los ataques hechos con materiales inflamables, como por ejemplo flechas o efectos de magia de Naturaleza. Cualquier criatura hostil que intente cruzarlo deberá hacer un tiro de Esquiva contra tu magia de Fuego o sufrirá 1d6 + CAR daño Fuego y una *quemadura leve* (sufrirá la mitad de daño en caso de éxito). Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán a tu muro de Fuego y luego afectarán a sus objetivos escogidos siempre y cuando esto sea posible.
+El muro proporcionará *cubierta parcial* a todas las criaturas al otro lado y las protegerá de todos los ataques hechos con materiales inflamables, como por ejemplo flechas o efectos de magia de Naturaleza. Cualquier criatura hostil que intente cruzarlo sufrirá 1d6 + CAR daño Fuego y una *quemadura leve*. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán a tu muro de Fuego y luego afectarán a sus objetivos escogidos siempre y cuando esto sea posible.
 
-Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente deberá tener éxito en el tiro de Esquiva o sufrirá el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo no reducirás el daño pero tu oponente debe escoger entre abandonar su ataque o sufrir el daño del muro. Para hacerlo debes estar en *posición defensiva* y solo puedes crear un muro de esta manera una vez por ronda.
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos.
 
@@ -104,7 +104,7 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 **Duración:** Instantánea
 
-Disparas una bola explosiva de llamas hacia un punto a distancia media. Haz un ataque de magia de Fuego contra todas las criaturas en un radio corto centrado en dicho punto, infligiendo 1d6 + CAR daño Fuego y una *quemadura leve* al impactar. Este ataque también prenderá fuego a todos los materiales inflamables en el área.
+Disparas una bola explosiva de llamas hacia un punto a distancia media. Haz un ataque de magia de Fuego contra todas las criaturas en un radio corto centrado en dicho punto, infligiendo 2d6 + CAR daño Fuego y una *quemadura leve* al impactar. Aquellos que tengan éxito defendiéndose sufrirán en su lugar la mitad de daño. Este ataque también prenderá fuego a todos los materiales inflamables en el área.
 
 Este ataque puede potenciarse aún más si cargas la bola de fuego antes de lanzarla. En lugar de atacar puedes cargar tu bola de fuego si mantienes la concentración en ella. Puedes gastar cualquier cantidad de acciones en tu turno para cargar la bola de fuego, aumentando su daño en 1d6 y el tamaño de su radio en un paso por cada 2 acciones que gastes. No puedes gastar más de cuatro acciones para cargar tu bola de fuego y esta se desvanecerá inmediatamente si pierdes la concentración.
 

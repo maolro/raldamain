@@ -1,5 +1,5 @@
 ---
-title: Arquetipos Básicos
+  title: Arquetipos Básicos
 ---
 
 Todos estos arquetipos son no están relacionados con ningún rango, siendo así básicos.

@@ -100,7 +100,7 @@ Creas una barrera de luz deslumbrante para protegerte a ti mismo y a otros de lo
 
 La barrera proporcionará Inmunidad a todos los ataques a distancia que no sean de área para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de Salud frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. 
 
-Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de CON frente a tu magia de Vida o la luz hará que falle automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
+Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de Salud frente a tu magia de Vida o la luz hará que falle automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
 
 **Empoderar** (1 chi): Las criaturas a una distancia corta de la barrera deben tener éxito en una tirada de CON como si intentaran cruzarla. Solo puedes empoderar de esta manera una vez por ronda.
 
@@ -134,9 +134,11 @@ Todos tus hechizos de Vida sustituyen sus dados de daño por d8.
 
 **Duración**: Concentración
 
-Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehumanas, desplazándote como si estuvieras hecho de luz. Una vez que activas este hechizo, aumentas todas tus velocidades de movimiento por 1 y puedes entrar en *posición defensiva* una vez por turno como una acción bonus. Obtienes también la capacidad de usar tu modificador de magia de Vida en todos tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración o entres en un área afectada por un hechizo de Sombra.
+Infundes tu propio cuerpo con energía vital para moverte a velocidades sobrehumanas, desplazándote como si estuvieras hecho de luz. Una vez que activas este hechizo, aumentas todas tus velocidades de movimiento por 1 y puedes entrar en *posición defensiva* una vez por ronda como una acción bonus.
 
-**Empoderar** (1 chi): Tienes éxito automático en una tirada de defensa para defenderte de un efecto que te tenga explícitamente como objetivo y te mueves un paso en cualquier dirección. Puedes empoderar de esta manera cualquier cantidad de veces por turno.
+La velocidad sobrehumana te otorga también Ventaja en todos tus tiros de Esquiva y la capacidad de usar tu modificador de magia de Vida para dichos tiros. Este hechizo permanecerá activo hasta que pierdas la concentración o entres en un área afectada por un hechizo de Sombra.
+
+**Empoderar** (1 chi): Te mueves tan rápido como la luz, pudiendo así reducir el daño de un ataque enemigo que te haya impactado a la mitad, *desenganchar* y moverte un paso en cualquier dirección. Esta habilidad funciona de la misma manera que Evasión salvo que no tiene límite de usos por ronda.
 
 ### Sanación Superior
 

@@ -24,7 +24,7 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 - **Hechizos:** Aprende tres hechizos de Rango II relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi.
 - **Poder del Dolor:** Es Inmune a los efectos de *heridas permanentes* leves y medias además que recibe Resistencia a Aflicciones y Aturdimiento.
 - **Protección Divina:** Se encuentra siempre en *posición defensiva* y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Hechicero Abisal III (+2, 5 mejoras)
 
@@ -38,7 +38,7 @@ La criatura es capaz de canalizar la magia caótica del abismo y emplearla para 
 
 ## Hechicero Abisal IV (+2, 7 mejoras)
 
-- **Aumentos Estadísticos:** Incrementa todas sus estadísticas mentales por 2 junto a sus limitadores.
+- **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Abisal por 1.
 - **Intervención Divina:** Tres veces por combate puede tener éxito automático en un tiro defensivo o de habilidad. Podrá también repetir todos los 1 y 2 naturales que obtenga.
 - **Hechizos:** Aprende el hechizo Palabra Divina y otros tres hechizos de Rango IV relacionados con su patrón abisal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 

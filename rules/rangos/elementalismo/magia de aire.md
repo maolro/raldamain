@@ -89,7 +89,7 @@ Esta habilidad puede utilizarse defensivamente para protegerte a ti mismo o a un
 
 **Empoderar** (1 chi): El muro recupera todos sus puntos de vida perdidos. 
 
-### Esfera de viento
+### Esfera de Viento
 
 *Aire, Ataque, Cuerpo a cuerpo, Duradera*
 
@@ -105,7 +105,7 @@ Concentras el poder del viento en la palma de tu mano y lo moldeas su forma en u
 
 **Empoderar** (1 chi): La esfera de viento permanece en tu mano hasta el final de tu siguiente turno, permitiéndote lanzar este hechizo tantas veces como desees sin tener que gastar chi. Debes gastar aun así el número apropiado de acciones y la esfera se desvanecerá si pierdes la concentración.
 
-### Viento arrastrante
+### Viento Arrastrante
 
 *Aire, Maniobra, Físico*
 

@@ -105,7 +105,7 @@ Sea por medios tecnológicos o mágicos el arma es capaz de emular las caracter�
 
 ### Recarga X
 
-Un arma con esta característica debe ser recargada después de X disparos. Esto fuerza a su portador a emplear dos acciones para recargar durante su turno si desea volver a usar el arma tras realizar esa cantidad de disparos. 
+Un arma con esta característica debe ser recargada después de X disparos. Esto fuerza a su portador a emplear una acción para recargar durante su turno si desea volver a usar el arma tras realizar esa cantidad de disparos. 
 
 ### Sutil
 

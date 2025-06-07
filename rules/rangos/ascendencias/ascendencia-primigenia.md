@@ -38,9 +38,13 @@ Aumenta tu estadística de SAB y su limitador por 1.
 
 ### Fuerza Salvaje
 
+*Mejora, Innato*
+
 **Coste:** 1 vigor o chi
 
-Imbuyes tu siguiente ataque físico con un hechizo que conozcas, permitiéndote provocar sus efectos al siguiente enemigo que impactes esta ronda como acción bonus. Si el hechizo imbuido es un ataque sumará su daño base al daño de tu ataque mientras que si escoges un hechizo que requiera un tiro de habilidad el afectado podrá realizarlo para intentar evitar sus efectos. Deberás seguir pagando el coste en chi o vigor del hechizo imbuido
+Imbuyes tu siguiente ataque físico con el poder de la naturaleza, incrementando notablemente su poder. La siguiente vez que impactes con un ataque físico esta ronda podrás tirar un dado de daño adicional. Este daño se acumula con otras mejoras que apliques y hará que tu ataque cuente como mágico para los propósitos de resistencias e inmunidades.
+
+**Empoderar** (1 vigor o chi): Tiras otro dado de daño adicional al impactar. No puedes empoderar un mismo ataque más de dos veces.
 
 ### Comunión con la Naturaleza
 
@@ -63,9 +67,10 @@ Obtienes también un vínculo con un Espíritu mayor de tu elección, el cual te
 Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu espíritu, obteniendo todas sus características fisiológicas. Dicha transformación durará como máximo una hora y puedes abandonarla como acción bonus. No podrás portar armas ni llevar armaduras en forma animal y todo tu equipamiento se fusionará contigo en ella, impidiendo que pueda ser usado. Cada forma animal te otorgará dos mejoras de tu elección pertenecientes a la siguiente lista:
 
 - **Alas de Águila:** Obtienes velocidad de vuelo 2 y Ventaja en todos tus tiros de esquiva.
-- **Armadura Natural:** Tu DEF base pasa a ser 6 si antes era más baja. 
-- **Garras:** Aumenta el daño de tus ataques naturales por un paso y pasarán a infligir daño Cortante o Perforante. 
-- **Resistencia de Oso:** Aumenta tu DEF base por 2 y recibes Resistencia a Aflicciones. 
+- **Gigante:** Tu tamaño aumenta exponencialmente, aumentando tu capacidad destructiva y aguante a costa de mermar tu agilidad. El alcance de tus armas aumenta por un paso,y reciben un dado de daño adicional. Así mismo, obtienes resistencia a Agarres, Maniobras y Aturdimiento provocados por criaturas de tamaño inferior, a costa de recibir Desventaja en todos tus tiros de Esquiva.  
+- **Resistencia Elemental:** Recibes Resistencia a un elemento de tu elección entre Ácido, Eléctrico, Frío, Fuego o Sónico. 
+- **Coraza Natural:** Tu armadura natural se vuelve incluso más sólida, otorgándote una coraza casi invulnerable. Esta mejora otorga una cantidad de *contadores de escudo* igual a tu Rango en el momento que se reciba.
+- **Espinas:** Te crecen espinas por todo su cuerpo que herirán a todo aquel que intente tocarte. Tus ataques físicos infligirán un dado de daño adicional y todo enemigo que te impacte con un ataque natural sufrirá *sangrado*. Si agarras o eres agarrado por un enemigo podrás infligirle daño obligatorio ronda igual a tu daño base con ataques naturales.
 
 ### Llamar  a los Espíritus
 
@@ -77,7 +82,7 @@ Al emplear esta habilidad adoptas la forma de un animal salvaje vinculado a tu e
 
 **Duración:** Una hora
 
-Abres una pequeña brecha entre ambos planos para llamar a una criatura espiritual para que te asista en el campo de batalla. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el máster. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
+Abres una pequeña brecha entre ambos planos para llamar a una criatura espiritual para que te asista en el campo de batalla. El nivel de dicha criatura no podrá superar tu Rango x 2 y las estadísticas empleadas deben ser permitidas por el DJ. La criatura invocada permanecerá en el campo de batalla hasta que pase una hora o muera y no podrás tener invocadas a más de cuatro criaturas simultáneamente.
 
 **Empoderar** (1 chi o vigor): La criatura invocada recupera la mitad de su Vitalidad.
 
@@ -105,7 +110,7 @@ La energía vital del mundo de los espíritus sana tus heridas y te permite recu
 
 La energía espiritual que emite tu cuerpo es capaz de causar disrupciones en la magia, otorgándote así Resistencia a todos los efectos Arcanos y Divinos. El aura afecta negativamente a los glifos y objetos mágicos a tu alrededor, haciendo así que tengan probabilidad del 50% de fallar cada vez que sean usados. 
 
-**Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera además que no puedes contrarrestar hechizos de rango superior a
+**Empoderar** (X chi o vigor): Tienes éxito automático en un tiro de salvación contra un efecto Arcano o contrarrestas de inmediato uno que se lance a distancia corta de ti. Debes pagar una cantidad de chi o vigor igual al pagado por el lanzador para contrarrestar un hechizo de esta manera además que no puedes contrarrestar hechizos míticos o de rango VI.
 
 ### Portal Espiritual
 
@@ -141,8 +146,8 @@ Liberas todo el poder espiritual en tu interior para transformarte en una podero
 
 - Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Inmunidad a efectos Mentales, Aflicciones, Miedo y de Toque. Tu tamaño también aumenta por un paso, evitando que puedas ser *agarrado* por criaturas más pequeñas que tú e incrementando el alcance de tus ataques físicos también por un paso.
-- Aumentas el daño base de tus ataques naturales a 1d10 además que estos contarán como si fueran de material superior III para los propósitos de calcular su dureza.
-- Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas.
+- Aumentas el daño base de tus ataques naturales a 1d10 además que estos contarán como si fueran de *material superior III* para los propósitos de calcular su dureza.
+- Aprendes todas las técnicas hasta rango V de Estilo Salvaje de artes marciales. Si ya las conoces aquellas de rango III o menos no te costarán vigor para ser empleadas la primera vez que las utilices en una ronda.
 - Obtienes velocidad de vuelo 1 además que eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.
 - Todos tus hechizos obtenidos por Ascendencia primigenia no te costarán chi o vigor para ser lanzados. No obstante, debes seguir pagando para empoderar
