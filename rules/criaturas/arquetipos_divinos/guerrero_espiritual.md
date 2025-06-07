@@ -24,7 +24,7 @@ title: Guerrero Espiritual
 - **Hechizos:** Aprende dos hechizos de Rango II relacionados con su patrón espiritual. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
 - **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Desacralizador a un objetivo que impacte con su arma.
 - **Forma Animal:** Puede transformarse en un animal de su elección empleando una acción. Esto le otorgará dos mejoras semejantes a aquellas otorgadas por la habilidad Forma Animal.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior.. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Guerrero Espiritual III (+2, 5 mejoras)
 

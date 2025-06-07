@@ -96,7 +96,9 @@ La zona afectada permanecerá en el campo de batalla hasta que pierdas la concen
 
 **Duración:** Instantánea
 
-Realizas un pequeño salto temporal para que el último ataque que hayas recibido nunca te impactase. Como reacción empleable en cualquier momento de la ronda cancelas el daño y los efectos del último ataque que hayas recibido, tratándolo como si nunca te impactase. Solo puedes usar este hechizo una vez por ronda y no podrás anular ataques que te hayan impactado la ronda anterior.
+Manipulas el flujo del tiempo para desplazar tu cuerpo unos instantes hacia el futuro o desincronizas brevemente tu posición del presente para evadir un ataque enemigo. En respuesta a ser impactado por un ataque enemigo puedes emplear esta habilidad para reducir el daño del ataque enemigo a 0.
+
+Esta habilidad puede emplearse sin importar tu método defensivo y te permitirá evitar todos los efectos de estado ocasionados al ser impactado por un ataque enemigo. No obstante, esta habilidad no funcionará contra efectos que no provoquen daño directo como Maldiciones, efectos Mentales o Miedo. 
 
 ## Rango III  
 

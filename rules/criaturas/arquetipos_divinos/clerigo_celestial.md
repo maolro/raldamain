@@ -29,7 +29,7 @@ Los Clérigos Celestiales de nivel II han profundizado su conexión con su patr�
 - **Hechizos:** Aprende tres hechizos de Rango II relacionados con su patrón celestial. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
 - **Protección Divina:** Se encuentra siempre en *posición defensiva* y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina.
 - **Poder de los Cielos:** Recibe Ventaja en todos sus tiros relacionados con Magia de Vida o ataques con armas. Le rodea un aura de luz que le otorga Resistencia a ataques A Distancia y efectos Sombríos. El aura se disipará si pierde la concentración y reactivarla cuesta dos acciones.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Clérigo Celestial III (+2, 5 mejoras)
 
@@ -45,4 +45,9 @@ Un Clérigo Celestial de nivel III es un portador del poder divino en su máxima
 
 Un Clérigo Celestial de nivel IV es un avatar de los cielos en la tierra. Dotado con poderes que trascienden la comprensión mortal, se convierte en una fuerza imparable de luz y justicia. Solo los más fuertes campeones del mal se atreven a desafiarlo y su mera presencia significa una bendición inigualable en el mundo.
 
-Ángel Vengador
+- **Aumentos Estadísticos:** Incrementa todas sus estadísticas mentales por 2 junto a sus limitadores.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Celestial por 1.
+- **Intervención Divina:** Tres veces por combate puede tener éxito automático en un tiro defensivo o de habilidad. Podrá también repetir todos los 1 y 2 naturales que obtenga.
+- **Hechizos:** Aprende el hechizo Palabra Divina y otros tres hechizos de Rango IV relacionados con su patrón celestial. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
+- **Ángel Vengador:** Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatamente 40 Vitalidad temporal y seis *contadores de escudo*. Obtendrá también Ventaja en todos sus tiros, sanará el doble de Vitalidad con hechizos de Sanación y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor. 
+- **Ira de Dios:** Una vez por combate puede lanzar el hechizo Ira de Dios de manera gratuita. Puede emplearla de manera alternativa como reacción para contrarrestar otra habilidad de Rango VI de su elección que no sea mítica. 

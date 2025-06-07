@@ -79,9 +79,7 @@ Tus instintos de batalla y tu velocidad mejoran notablemente cuando entras en Ir
 
 **Coste:** 2 vigor
 
-Ni la magia ni los escudos son capaces de detener tus impactos. En respuesta a que un enemigo detenga un ataque que haya impactado con un hechizo o habilidad reducir el daño o evadir automáticamente el ataque puedes emplear esta habilidad para cancelarlo automáticamente salvo que pague dos chi o vigor adicional. 
-
-En el caso que tu objetivo usase *contadores de escudo* para este propósito cada contador gastado reducirá el daño por 5 en lugar de por 10 además que perderá un *contador de escudo* que tenga. 
+Ni la magia ni los escudos son capaces de detener tus impactos. En respuesta a que un enemigo detenga un ataque que haya impactado con un hechizo o habilidad reducir el daño o evadir automáticamente el ataque puedes emplear esta habilidad para cancelarlo automáticamente salvo que pague dos chi o vigor adicional. En el caso que tu objetivo usase *contadores de escudo* para este propósito, cada contador gastado reducirá el daño por 5 en lugar de por 10 además que perderá un *contador de escudo* que tenga. 
 
 ## Rango V
 

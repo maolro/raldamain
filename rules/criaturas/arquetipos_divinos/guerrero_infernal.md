@@ -28,7 +28,7 @@ Los Guerreros Infernales que alcanzan este nivel se convierten en avatares de de
 - **Habilidades Pasivas:** Obtiene la habilidades pasivas Alas Demoníacas y Aura Protectora. Puede sustituir las alas demoníacas por otras mejoras fisiológicas similares si así lo desea.
 - **Hechizos:** Aprende dos hechizos de Rango I relacionados con su patrón infernal. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi y puede infundirlos en sus ataques físicos en lugar de provocar el daño de Azote Divino. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Infernal.
 - **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Desacralizador a un objetivo que impacte con su arma.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Guerrero Infernal III (+2, 5 mejoras)
 

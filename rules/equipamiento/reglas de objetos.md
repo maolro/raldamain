@@ -24,29 +24,22 @@ Sea por metales muy refinados o un proceso de fabricación particularmente preci
 
 Una armadura hecha de material superior aumenta la defensa otorgada por 2. En contraparte, un arma hecha de material superior aumentará el daño provocado por un paso. Todos los objetos de material superior aumentarán su **precio** por 1 comparado con el objeto base. Si se trata de un arma a distancia serán las municiones las que estarán hechas de material superior, aumentando el precio por 1 para cada paquete de 20 municiones.
 
-### Armas asesinas
+# Pasos del Daño
 
-Algunos materiales superiores como el hierro frío o la plata celestial son super efectivos contra determinadas criaturas, un indicio útil para tener en cuenta a la hora de comprar armas hechas de estos materiales. Como regla general si un arma de este tipo impacta a una criatura que tenga vulnerabilidad se aumentaría el nivel de todas las heridas permanentes infligidas por un paso y se tiraría un dado de daño adicional (este dado adicional puede tirarlo el máster en secreto). Algunos ejemplos de materiales efectivos se presentan a continuación:
+En numerosas reglas se especifica el hecho de aumentar o reducir el daño de un arma o ataque físico por un paso, lo cual significa una variación de sus dados de daño. 
 
-| Material         | Origen                                | Efectivo contra                                 |
-| ---------------- | ------------------------------------- | ----------------------------------------------- |
-| Acero necrario   | Plano sombrío                         | Celestiales, Espíritus benignos                 |
-| Adamantina       | Meteoritos                            | Constructos, Criaturas hechas de piedra o metal |
-| Bronce estigio   | Bronce bendito por Sek-Tebos          | Abisales, Celestiales                           |
-| Esquirla de icor | Icor abisal cristalizado              | Celestiales, Infernales                         |
-| Hierro frío      | Profundidades de la tierra            | Espíritus, Espectros                            |
-| Plata celestial  | Plata bendita por la Hueste Celestial | Abisales, Infernales, Criaturas sombrías        |
-| Zachriw          | Huesos de vampiros                    | Vampiros                                        |
+| **Paso** | **Dados de Daño** |
+| -------- | ----------------- |
+| 0        | 1d4               |
+| 1        | 1d6               |
+| 2        | 1d8               |
+| 3        | 1d10              |
+| 4        | 2d6               |
+| 5        | 2d8               |
+| 6        | 2d10              |
+| 7        | 3d8               |
+| 8        | 3d10              |
 
+ 
 
-
-# Objetos rotos 
-
-Cada vez que un objeto sea impactado por un efecto de un calibre suficiente para superar su resistencia le infligirá un efecto de estado conocido como **roto**, marcando que ya no puede realizar su función con normalidad. Los efectos exactos dependen mucho del tipo de objeto que sea dañado y se especificarán a continuación para los objetos más comunes. Los efectos exactos que tenga este efecto de estado en otros objetos quedará a decisión del máster:
-
-- **Armaduras:** Una armadura rota reducirá su valor defensivo por 2, llevando como mínimo a 0. Puede recibir este efecto de estado múltiples veces pero cada vez que lo haga volverá a reducir su valor defensivo. Si tiene propiedades mágicas perderá una de ellas si ha sido dañada por lo menos dos veces.
-- **Armas:** El arma reducirá la efectividad de su material por un paso, contando como si fuera de un nivel inferior. Si el arma llega a contar como si fuera de baja calidad y vuelve a sufrir este efecto de estado se romperá. Si tiene propiedades mágicas perderá una de ellas si ha sido dañada por lo menos dos veces.
-- **Objeto mágico:** Un objeto mágico roto empezará a funcionar erráticamente, causando así que cada vez que se use una de sus propiedades mágicas esta tiene una probabilidad de 25% de fallar. Si vuelve a sufrir este efecto de estado aumentará su probabilidad de fallo por 25%, quedando inutilizable cuando esta llegue a 100%. 
-
-Como último indicio un objeto solo puede ser dañado por aquellos efectos especificados por el material del que sea construido, como por ejemplo los objetos de madera pueden romperse por daño fuego mientras que los metálicos típicamente no. 
-
+ 

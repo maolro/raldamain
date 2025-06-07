@@ -105,7 +105,7 @@ Acuchillas a tu objetivo con dos rápidos ataques para provocarle una herida má
 
 **Coste:** 2 vigor
 
-Haces un rápido ataque para interrumpir a un enemigo antes que pueda atacarte. Como reacción a que un enemigo utilice una acción de cualquier tipo puedes atacarle con tu arma, forzándole a defenderse de inmediato. Si falla su tiro defensivo no solo le infligirás daño sino que también interrumpirás la acción que intentó utilizar, haciéndole perder todos los recursos empleados en ella. Solo puedes emplear esta técnica una vez por acción enemiga y no puedes usarla si eres incapaz de atacar a tu objetivo.
+Haces un rápido ataque para interrumpir a un enemigo antes que pueda atacarte. Como reacción a que un enemigo utilice una acción de cualquier tipo puedes atacarle con tu arma, forzándole a defenderse de inmediato. Si falla su tiro defensivo no solo le infligirás daño sino que también interrumpirás la acción que intentó utilizar, haciéndole perder todos los recursos empleados en ella. Solo puedes emplear esta técnica una vez por ronda y no puedes usarla si eres incapaz de atacar a tu objetivo.
 
 ### Puñalada Quirúrgica
 

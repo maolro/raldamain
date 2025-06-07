@@ -76,9 +76,9 @@ El aura te otorgará también Resistencia a efectos de Agua, Frío y Naturaleza.
 
 **Duración:** Concentración
 
-Empleas el fuego para propulsarte por los cielos a gran velocidad. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 siempre y Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración y no puedes acabar tu turno en el aire al usarla.
+Empleas el fuego para propulsarte por los cielos a gran velocidad. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración y no puedes acabar tu turno en el aire al usarla.
 
-**Empoderar** (1 chi o vigor): Te impulsas a gran velocidad para evitar un ataque, teniendo así éxito automático en un tiro de Esquiva y volando un paso en cualquier dirección.
+**Empoderar** (1 chi o vigor): Te impulsas a gran velocidad para evitar un ataque, pudiendo así reducir el daño de un ataque enemigo que te haya impactado a la mitad. Solo puedes empoderar así una vez por ronda y funciona de la misma manera que la habilidad Evasión.
 
 ## Rango IV
 
@@ -90,7 +90,7 @@ Incrementa tu estadística de CAR y su limitador por 1.
 
 Eres capaz de emplear el poder del fuego para sanar tus heridas, renaciendo desde las cenizas como si fueras un fénix. Al principio de tu turno recuperas Vitalidad igual a tu Rango + 1 si te encuentras en un entorno en llamas o afectado por calor extremo. Adicionalmente, la primera vez que mueras en un entorno en llamas puedes revivir a 1 PV.
 
-**Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad si te encuentras en *posición defensiva*.
+**Empoderar** (1 vigor o chi): Absorbes un hechizo de Fuego que te acaba de impactar, ignorando todo el daño que te provocaría y reduciendo el nivel de una *herida permanente* que te afecta por un paso. Solo puedes emplear esta habilidad una vez por ronda.
 
 ### Asalto Flamígero
 

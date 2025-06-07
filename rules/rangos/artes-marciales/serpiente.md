@@ -44,7 +44,7 @@ Apuntas a uno de los puntos de presión de tu objetivo para provocarle graves he
 
 *Serpiente, Marcial, Mejora, Físico, Aturdidor*
 
-***\*Coste\****: 1 vigor
+**Coste**: 1 vigor
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*. Si lleva armadura ligera esta pasará a ser media.
 
@@ -52,227 +52,31 @@ Apuntas a los puntos de presión de un enemigo para deshabilitar temporalmente d
 
 Si escoges una pierna caerá *tropezado* y será incapaz de levantarse mientras que si escoges un brazo quedará desarmado y no podrá emplearlo para realizar ningún movimiento. Al principio de su turno un objetivo afectado por esta habilidad puede repetir el tiro y en caso de éxito se recuperará. 
 
-**###** **Golpe a la Nuca**
+### Golpe a la Nuca
 
-Line69added
+*Serpiente, Marcial, Mejora, Maniobra*
 
- \+ 
+**Coste:** 1 vigor
 
-**###** **Persecución**
+Golpeas la nuca de un enemigo para que caiga inconsciente de inmediato. Tu siguiente ataque aumentará su daño base por 1d6 y si logras herir a un enemigo puedes forzarle a tener éxito en un tiro de Salud frente a tu Estilo Serpiente o caerá *inconsciente* de inmediato. El afectado se despertará inmediatamente si sufre daño de cualquier tipo y no puedes emplear esta técnica más de una vez por ronda contra el mismo objetivo.
 
-Line57Line70
+### Golpe Desorientante
 
-   
+*Serpiente, Marcial, Mejora*
 
-Line58deleted
+**Coste:** 1 vigor
 
- \- 
+Engañas a tu objetivo con un ataque falso para que baje la guardia y quede en una posición vulnerable. Al fallar un ataque marcial contra un enemigo puedes forzarle a realizar un tiro de Percepción o Averiguar Intenciones contra tu modificador de Estilo Serpiente. Si falla este tiro quedará fintado, obteniendo Desventaja en su siguiente tiro defensivo contra ti. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
 
-**S**erpiente, Marcial, Mejora, Maniobra****
-
-Line71added
-
- \+ 
-
-**S**alvaje, Marcial, Reacción****
-
-Line59Line72
-
-   
-
-Line60Line73
-
-   
-
-***\*Coste:\**** 1 vigor
-
-Line61Line74
-
-   
-
-Line62deleted
-
- \- 
-
-Golpeas la nuca de un enemigo para que caiga inconsciente de inmediato. Tu siguiente ataque aumentará su daño base por 1d6 y si logras herir a un enemigo puedes forzarle a tener éxito en un tiro de CON frente a tu Estilo Serpiente o caerá **incosciente** de inmediato. El afectado se despertará inmediatamente si sufre daño de cualquier tipo y no puedes emplear esta técnica más de una vez por ronda contra el mismo objetivo.
-
-Line75added
-
- \+ 
-
-No dejas escapar a tus enemigos cuando intenten enfrentarse a ti. En respuesta a que un enemigo **desenganche** o se aleje de ti por cualquier medio puedes moverte un paso hacia él y hacerle un Ataque natural como reacción contra el cual tu objetivo recibirá Desventaja defendiéndose. No puedes emplear esta habilidad más de una vez por ronda contra el mismo objetivo.
-
-Line63Line76
-
-   
-
-Line64deleted
-
- \- 
-
-**###** **Golpe Desorientante**
-
-Line77added
-
- \+ 
-
-**###** **Abrazo de Oso**
-
-Line65Line78
-
-   
-
-Line66deleted
-
- \- 
-
-**S**erpiente, Marcial, Mejora****
-
-Line79added
-
- \+ 
-
-**S**alvaje, Marcial, Agarre, Cuerpo a cuerpo, Físico****
-
-Line67Line80
-
-   
-
-Line68Line81
-
-   
-
-***\*Coste:\**** 1 vigor
-
-Line69Line82
-
-   
-
-Line70deleted
-
- \- 
-
-Engañas a tu objetivo con un ataque falso para que baje la guardia y quede en una posición vulnerable. Al fallar un ataque marcial contra un enemigo puedes forzarle a realizar un tiro de Percepción o Averiguar Intenciones contra tu modificador de Estilo Serpiente. Si falla este tiro quedará fintado, obteniendo Desventaja en su siguiente tiro defensivo contra ti. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando **contadores de escudo** o muros.
-
-Line83added
-
- \+ 
-
-***\*Efecto crítico:\**** Tu objetivo sufre una **herida permanente leve**
-
-Line71Line84
-
-   
-
-Line72deleted
-
- \- 
-
-**## Rango III**
-
-Line85added
-
- \+ 
-
-Agarras a un enemigo con gran fuerza para que cada intento de escapar le provoque cada vez más dolor. Al impactar un enemigo este deberá tener éxito en un tiro de Heroísmo o Juego de manos contra tu modificador de Estilo salvaje o quedará **enredado** por ti hasta que escape. Para agarrar de esta manera tu también quedarás **enredado** hasta que tu enemigo se libere o escojas dejarlo ir.
-
-Line73Line86
-
-   
-
-Line74deleted
-
- \- 
+## Rango III
 
 El daño base de tus ataques Marciales pasa a ser 1d8.
 
-Line87added
+### Golpe Irreductible
 
- \+ 
-
-Un enemigo **enredado** de esta manera podrá repetir el tiro cada ronda para escapar, pero cada vez que fracase sufrirá daño igual al de un Ataque natural cuyo tipo dependerá de tu fisiología (normalmente será Contundente). 
-
-Line75Line88
-
-   
-
-Line76deleted
-
- \- 
-
-**##****# Golpe Irreductible**
-
-Line89added
-
- \+ 
-
-**##** **Rango III**
-
-Line77Line90
-
-   
-
-Line78deleted
-
- \- 
-
-**Marcial, Serpiente, Mejora**
-
-Line91added
-
- \+ 
-
-El daño base de tus ataques Marciales pasa a ser 1d8.
-
-Line79Line92
-
-   
-
-Line80deleted
-
- \- 
-
-***\*Coste:\**** 2 Vigor
-
-Line93added
-
- \+ 
-
-**### Salto Salvaje**
-
-Line81Line94
-
-   
-
-Line82deleted
-
- \- 
-
-********Duración:\**** Instantáneo
-
-Line95added
-
- \+ 
-
-****Salvaje, Marcial, Ataque, Cuerpo a cuerpo, Físico, Agarre**
-
-Line83Line96
-
-   
-
-Line84deleted
-
- \- 
+*Marcial, Serpiente, Mejora*
 
 Concentras toda tu fuerza en tu mano para atravesar incluso las resistencias más solidas de tu oponente. La siguiente vez que impactes con un ataque Marcial esta ronda incrementas su daño base por 2d6 e ignorarás toda la Defensa que tenga tu objetivo cuyo origen no provenga por su armadura, infligiendo así daño de manera directa. Se pueden aplicar otras mejoras a un ataque empoderado por esta habilidad y cabe recalcar que que los efectos de reducción de daño tampoco se aplicarán.
-
-Line97added
-
- \+ 
-
-***\*Coste:\**** 1 acción y 2 vigor
-
-
 
 ### Abrazo de la Serpiente
 

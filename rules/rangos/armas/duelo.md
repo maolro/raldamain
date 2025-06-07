@@ -43,7 +43,7 @@ Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al acti
 
 **Coste:** 1 vigor
 
-Haces un ataque falso para engañar a un enemigo para que acabe en una posición más vulnerable. En respuesta a fallar uno de tus ataques puedes forzar a tu objetivo a tener éxito en un tiro de Percepción o Averiguar intenciones o saldrá inmediatamente de *posición defensiva*. Además, en caso de éxito recuperarás las acciones que hayas gastado en tu ataque original además del vigor usado para mejoras. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
+Haces un ataque falso para engañar a un enemigo para que acabe en una posición más vulnerable. En respuesta a fallar uno de tus ataques puedes forzar a tu objetivo a tener éxito en un tiro de Percepción o Averiguar Intenciones o saldrá inmediatamente de *posición defensiva*. Puedes activar esta habilidad incluso si tu objetivo detiene un ataque empleando *contadores de escudo* o muros.
 
 ### Golpe de Mango
 
@@ -63,9 +63,7 @@ Atacas ágilmente con el mango de tu espada para descolocar a un enemigo y rompe
 
 **Coste:** 1 vigor
 
-Giras velozmente tu arma para acabar con todos los enemigos que te rodean, atacándoles como si fueras un torbellino de acero. Tu siguiente ataque de arma afectará a todos los objetivos adyacentes a ti además que aumentará su daño base por 1d6. 
-
-No podrás añadir mejoras a este ataque que afecten a un objetivo específico. Además, si un enemigo elige emplear Parada para detener tu tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del suyo. Lo mismo ocurrirá si gasta *contadores de escudo* o coloca una barrera en medio.
+Giras velozmente tu arma para acabar con todos los enemigos que te rodean, atacándoles como si fueras un torbellino de acero. Tu siguiente ataque de arma afectará a todos los objetivos adyacentes a ti además que aumentará su daño base por 1d6. No podrás añadir mejoras a este ataque que afecten a un objetivo específico. 
 
 ## Rango III 
 
@@ -109,7 +107,7 @@ Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez má
 
 Aprovechas las apreturas que genera un enemigo al atacarte para hacer un rápido golpe con tu espada capaz de interrumpir sus acciones. En respuesta a que un enemigo adyacente realice una acción de cualquier tipo puedes hacerle un ataque empleando tu arma como reacción. 
 
-Si logras impactar con este ataque interrumpirás la acción enemiga, provocando así que nunca llegue a acabarla y pierda todas las acciones invertidas en ella. No obstante, tu objetivo no perderá el chi o vigor que haya invertido en la acción interrumpida dado que nunca llegó a finalizarse.
+Si logras impactar con este ataque interrumpirás la acción enemiga, provocando así que nunca llegue a acabarla y pierda todas las acciones invertidas en ella. No obstante, tu objetivo no perderá el chi o vigor que haya invertido en la acción interrumpida dado que nunca llegó a finalizarse. Esta reacción solo puede emplearse una vez por ronda y debes encontrarte en *posición defensiva* para emplearla.
 
 ### Danza del Espadachín
 
@@ -159,7 +157,7 @@ Con rápidos y gráciles movimientos eres capaz de asestar una lluvia de veloces
 
 **Coste:** 3 vigor
 
-Eres capaz de aprovechar las mas mínimas brechas para sobrepasar a tus rivales, llevándolos al límite antes de dar el golpe final. De esta manera en respuesta a impactar con un ataque puedes hacer dos ataques adicionales contra él, de los que tendrá que defenderse empleando el mismo tiro defensivo. Cada uno de estos ataques adicionales recibirá un bonificador +1 al tiro de ataque y de daño por cada ataque consecutivo que el objetivo reciba. 
+Eres capaz de aprovechar las mas mínimas brechas para sobrepasar a tus rivales, llevándolos al límite antes de dar el golpe final. De esta manera en respuesta a impactar con un ataque puedes hacer dos ataques adicionales contra él, de los que tendrá que defenderse empleando el mismo tiro defensivo. Cada uno de estos ataques adicionales recibirá un bonificador + 1 al tiro de ataque y de daño por cada ataque consecutivo que el objetivo reciba. 
 
 ## Rango VI
 

@@ -46,7 +46,7 @@ Cargas un ataque con tu poder elemental para lanzar a tus enemigos por los aires
 
 Si escoges un ataque este impactará de manera automática, sumando su daño base al del ataque empleado. No obstante, si infundes un ataque con un hechizo que requiera tiro de habilidad el afectado podrá tirar para evitar sus efectos. No puedes infundir más de un hechizo por ataque.
 
-### Agilidad del viento
+### Agilidad del Viento
 
 *Innata, Pasiva*
 
@@ -58,7 +58,7 @@ Eres capaz de moverte con la velocidad de un vendaval. Obtienes una acción adic
 
 Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Aire o Tormenta usando vigor en lugar de chi. Si no conoces ninguno aprendes dos hechizos de Rango II pertenecientes a esas magias.
 
-### Vientos protectores
+### Vientos Protectores
 
 *Innata, Mejora*
 
@@ -66,13 +66,13 @@ Puedes emplear todos tus hechizos de Rango II pertenecientes a magia de Aire o T
 
 **Duración:** Concentración
 
-Manipulas las corrientes de agua a tu alrededor para crear una barrera de vientos poderosos. Mientras esta habilidad permanezca activa recibes Ventaja en todos tus tiros relacionados con Magia de Aire o Tormenta y recibes Resistencia a ataques A distancia y efectos Gaseosos. Este hechizo permanecerá activo hasta que pierdas la concentración o los vientos sean disipados por otro efecto.
+Manipulas las corrientes de aire a tu alrededor para crear una barrera de vientos poderosos. Mientras esta habilidad permanezca activa recibes Ventaja en todos tus tiros relacionados con Magia de Aire o Tormenta y recibes Resistencia a ataques A distancia y efectos Gaseosos. Este hechizo permanecerá activo hasta que pierdas la concentración o los vientos sean disipados por otro efecto.
 
 Los vientos también dificultarán el paso a todo enemigo que se intente acercar a ti, convirtiendo el espacio a distancia cercana en *terreno difícil* y otorgándote la capacidad de emplear tu modificador de Ascendencia de Aire para defenderte de todo tipo de ataques enemigos. Las ventajas otorgadas por esta habilidad no se acumulan con aquellas otorgadas por Controlar los Vientos o Furia de los cielos.
 
 **Empoderar** (1 chi o vigor): Los vientos se hacen particularmente poderosos esta ronda, impidiendo el paso a efectos Gaseosos y convirtiendo todo el espacio a distancia corta de ti en *terreno difícil*.
 
-### Viajero de los cielos
+### Viajero de los Cielos
 
 *Innata, Mejora*
 
@@ -80,7 +80,7 @@ Los vientos también dificultarán el paso a todo enemigo que se intente acercar
 
 **Duración:** Concentración
 
-Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 siempre y Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede lanzarse si te encuentras en un entorno con vientos adecuadamente fuertes.
+Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva además que puedes emplear tu modificador de Ascendencia de Aire para dichos tiros	. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede lanzarse si te encuentras en un entorno con vientos adecuadamente fuertes.
 
 **Empoderar** (1 chi o vigor): Te impulsas a la velocidad del viento para evitar un ataque, teniendo así éxito automático en un tiro de Esquiva y volando un paso en cualquier dirección.
 
@@ -88,7 +88,7 @@ Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder d
 
 Incrementa tu estadística de CAR y su limitador por 1. 
 
-### Jinete de la tormenta
+### Jinete de la Tormenta
 
 *Innata, Pasiva*
 
@@ -96,7 +96,7 @@ Eres capaz de absorber el poder de la tormenta para sanar tus heridas y empodera
 
 **Empoderar** (1 chi o vigor): Absorbes un hechizo de Aire o Tormenta que te acaba de impactar, ignorando todo el daño que te provocaría. Tras absorber un hechizo puedes lanzarlo tú como acción bonus contra tus enemigos añadiéndolo un dado adicional de daño.
 
-### Golpes de vacío
+### Golpes de Vacío
 
 *Innata, Mejora*
 
@@ -108,7 +108,7 @@ Tus ataques mágicos se vuelven extremadamente rápidos e imposibles de detener.
 
 Eres capaz de emplear dos hechizos de Aire o Tormenta de Rango III que no sean de Invocación.
 
-### Elemento de la libertad
+### Elemento de la Libertad
 
 *Innata, Pasiva*
 
@@ -116,7 +116,7 @@ Al igual que el aire mismo no puedes ser atado o encadenado por tus enemigos. Ob
 
 **Empoderar** (1 chi o vigor): Tienes éxito automático en un tiro para defenderte de un efecto de Agarre o una Maniobra.
 
-### Uno con la tormenta
+### Uno con la Tormenta
 
 *Innata, Mejora*
 
@@ -124,7 +124,7 @@ Al igual que el aire mismo no puedes ser atado o encadenado por tus enemigos. Ob
 
 **Duración:** Concentración
 
-Fusionas tu cuerpo con una poderosa tormenta para transformarte en un ser hecho únicamente. Mientras esta habilidad permanezca activa te transformas en un ser incorpóreo, recibiendo así Inmunidad a efectos Físicos, Aflicciones, Mentales, Miedo a costa de recibir Vulnerabilidad a efectos de Aire lanzados por criaturas enemigas. 
+Fusionas tu cuerpo con una poderosa tormenta para transformarte en un ser hecho únicamente de aire. Mientras esta habilidad permanezca activa te transformas en un ser incorpóreo, recibiendo así Inmunidad a efectos Físicos, Aflicciones, Mentales, Miedo a costa de recibir Vulnerabilidad a efectos de Aire lanzados por criaturas enemigas. 
 
 Además, en dicho estado solo podrás emplear habilidades elementales pertenecientes a Magia de Aire o Tormenta además que podrás moverte por las ranuras más pequeñas. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede ser usado si te encuentras en entornos con en llamas. Si te encuentras en *posición defensiva* este hechizo puede usarse como reacción para evitar ataques enemigos
 

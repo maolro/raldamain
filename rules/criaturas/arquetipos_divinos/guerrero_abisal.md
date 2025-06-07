@@ -24,7 +24,7 @@ La criatura ha sido escogida por las fuerzas del abismo para sembrar el caos y l
 - **Mutación:** Tiene activa una mutación abisal adicional de su elección con fuerza equivalente a la que podría conseguir con la habilidad Mutación.
 - **Aura Protectora:** Recibe Resistencia a efectos Arcanos y Divinos. Una vez por ronda puede tener éxito automático en un tiro defensivo contra un hechizo Arcano o Divino de coste 1 o inferior.
 - **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Desacralizador a un objetivo que impacte con su arma.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Guerrero Abisal III (+2, 5 mejoras)
 

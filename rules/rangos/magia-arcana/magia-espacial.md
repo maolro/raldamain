@@ -11,7 +11,7 @@ Magia Espacial se adhiere a un conjunto de reglas fundamentales que sustentan su
 
 - **Reserva de Chi**: Tu rango de magia Espacial mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
 - **Estadística principal:** Para viajar entre dimensiones y alterar el espacio mismo necesitas una poderosa capacidad mental para calcular las distancias.  Por esta razón, tu modificador de magia Espacial será igual a la suma de tu estadística de Inteligencia y tu rango de magia Espacial. 
-- **Parada espacial:** Eres capaz de usar magia Espacial para evadir ataques de todo tipo, lo que te permite usar tu modificador de magia Espacial para tiros de Esquiva. Este modificador también se puede usar para tiros de salvación que requieran un tiro de DES, sustituyendo el talento que usarías normalmente.
+- **Parada espacial:** Eres capaz de usar magia Espacial para evadir ataques de todo tipo, lo que te permite usar tu modificador de magia Espacial para tiros de Esquiva. Este modificador también se puede usar para tiros de salvación que requieran un tiro de Destreza, sustituyendo el talento que usarías normalmente.
 
 # Rangos
 
@@ -27,7 +27,9 @@ Magia Espacial se adhiere a un conjunto de reglas fundamentales que sustentan su
 
 Realizas un pequeño salto espacial con el cual te teletransportas un paso en cualquier dirección. Teletransportarte de esta manera no provocará ataques de oportunidad y solo puedes aparecer en espacios que puedas percibir y con espacio suficiente para ti. 
 
-Si te encuentras en *posición defensiva* puedes teletransportarte para evitar ataques, permitiéndote emplear este hechizo una vez por ronda como reacción para evitar un ataque. Esta habilidad no funcionará para defenderte de ataques de área con tamaño superior a la distancia que te teletransportes.
+Si te encuentras en *posición defensiva* puedes teletransportarte para evitar ataques, permitiéndote emplear este hechizo una vez por ronda como reacción para reducir el daño de un ataque recibido a la mitad además de *desenganchar* y moverte un paso en cualquier dirección. Solo podrás emplear esta reacción si te defiendes usando Esquiva o Magia Espacial.
+
+Emplear este hechizo de manera defensiva te permitirá evitar habilidades que te tengan explícitamente como objetivo además que el ataque recibido contará como un fallo para determinar si se aplican los efectos de estado. Si tienes Rango III de Magia Espacial podrás evitar el ataque enemigo por completo siempre y cuando tenga área de efecto de tamaño cercano o menor.
 
 **Empoderar** (1 chi): Aumenta por un paso la distancia a la que puede teletransportarse. No puede empoderar el mismo hechizo más de dos veces.
 
@@ -103,7 +105,7 @@ Inscribes un sello mágico en un objetivo que repele la magia espacial, impidien
 
 **Duración:** Instantáneo
 
-Distorsionas el espacio alrededor de un enemigo para teletransportarlo forzosamente a otra posición. Un objetivo a distancia media debe tener éxito en un tiro de CON frente a tu Magia Espacial o será teletransportado un paso en cualquier dirección. Este cambio de posición repentino hará que tu objetivo pierda inmediatamente la concentración e interrumpirás toda acción que intente realizar. 
+Distorsionas el espacio alrededor de un enemigo para teletransportarlo forzosamente a otra posición. Un objetivo a distancia media debe tener éxito en un tiro de Salud frente a tu Magia Espacial o será teletransportado un paso en cualquier dirección. Este cambio de posición repentino hará que tu objetivo pierda inmediatamente la concentración e interrumpirás toda acción que intente realizar. 
 
 Esto no afectará a objetivos con habilidades que les permitan mantener la concentración ante situaciones difíciles como Concentración superior. Tampoco podrás teletransportar al afectado dentro de una superficie sólida pero sí podrás moverlo a lugares que no puedas percibir claramente.
 
@@ -189,11 +191,11 @@ Si tienes éxito en el tiro la criatura aparecerá en el lugar deseado mientras 
 
 **Duración:** Instantánea
 
-Empleas tu control de magia espacial para intercambiar tu posición con la de otra criatura a distancia media de ti. Al afectar a una criatura hostil con este hechizo podrá resistirlo si tiene éxito en un tiro de CON frente a tu Magia Espacial, pero si fracasa ambos os teletransportaréis intercambiando vuestras posiciones. 
+Empleas tu control de magia espacial para intercambiar tu posición con la de otra criatura a distancia media de ti. Al afectar a una criatura hostil con este hechizo podrá resistirlo si tiene éxito en un tiro de Salud frente a tu Magia Espacial, pero si fracasa ambos os teletransportaréis intercambiando vuestras posiciones. El afectado también saldrá inmediatamente de *posición defensiva* y el siguiente ataque que reciba contará como un Ataque Sorpresa. 
 
-Si te encuentras en *posición defensiva* puedes emplear este hechizo para intercambiar tu posición con un enemigo para evitar un ataque. Al emplear Cambio de posición de esta manera podrás evitar un ataque que te consiga impactar, provocando que este cambie su objetivo al nuevo objetivo con el que hayas cambiado tu posición. El afectado podrá defenderse del ataque que acabe de recibir si se encuentra en *posición defensiva*, pero en caso contrario recibirá el daño y los efectos del nuevo ataque.
+Si te encuentras en *posición defensiva* puedes emplear este hechizo para intercambiar tu posición con un enemigo para evitar un ataque. Al emplear Cambio de posición de esta manera podrás evitar un ataque que te consiga impactar, provocando que este cambie su objetivo al nuevo objetivo con el que hayas cambiado tu posición. El afectado podrá defenderse del ataque que acabe de recibir pero recibirá las penalizaciones indicadas al sufrir una teletransportación forzosa.
 
-**Empoderar** (1 chi): Intercambias la posición de dos criaturas ajenas a distancia media de ti, las cuales pueden tirar CON para resistir este hechizo si lo desean.
+**Empoderar** (1 chi): Intercambias la posición de dos criaturas ajenas a distancia media de ti, las cuales pueden tirar Salud para resistir este hechizo si lo desean.
 
 ### Cierre Dimensional
 
