@@ -24,7 +24,7 @@ title: Guerrero Espiritual
 - **Hechizos:** Aprende dos hechizos de Rango II relacionados con su patrón espiritual. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
 - **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de Golpe Desacralizador a un objetivo que impacte con su arma.
 - **Forma Animal:** Puede transformarse en un animal de su elección empleando una acción. Esto le otorgará dos mejoras semejantes a aquellas otorgadas por la habilidad Forma Animal.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior.. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad Presencia Divina con la diferencia que no afectará a enemigos del mismo nivel o superior. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Guerrero Espiritual III (+2, 5 mejoras)
 
@@ -43,3 +43,10 @@ title: Guerrero Espiritual
 - **Hueste Divina:** Todos sus aliados a distancia media reciben Ventaja en todos sus tiros de ataque y defensa. Estos modificadores funcionan igual que Hueste Divina y no se acumulan con Guerrero de la Fe ni con Tierra Consagrada.
 
 ## Guerrero Espiritual IV (+2, 7 mejoras)
+
+- **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y CAR por 1 junto a sus limitadores. Aumenta también su DEF y PV por 2.
+- **Mejoras de Rango:** Mejora su Rango y modificador en Guerrero Divino y Ascendencia Infernal por 1.
+- **Hechizos:** Aprende dos hechizos de Rango IV relacionados con su patrón espiritual además de las habilidad Explosión Divina. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Primigenia.
+- **Azote Ejecutor:** Una vez por ronda puede empoderar uno de sus ataques físicos con la habilidad Azote Ejecutor, provocando así sus efectos a su objetivo. Esto funciona igual que la habilidad de Guerrero Divino con el mismo nombre y se acumulará con los efectos de Azote Divino y similares. 
+- **Avatar Divino:** Recibe Resistencia a efectos de Fuego, Frío, Radiante, Necrótico, Ácido, Eléctrico y Sónico además de Inmunidad a Aflicciones y efectos Mentales, Miedo y de Toque. Empleará también su modificador de Guerrero Divino para todos sus tiros relacionados con armas. Además, al entrar en combate recibirá automáticamente seis *contadores de escudo* que puede emplear para detener ataques de todo tipo y se encontrará siempre en *posición defensiva*. 
+- **Despertar la Bestia:** Una vez por combate podrá entrar en una segunda fase más fuerte, recibiendo así fuerza descomunal para derrotar a sus enemigos. Solo podrá entrar en segunda fase cuando pierda toda su Vitalidad y al hacerlo recibirá inmediatamente 40 Vitalidad temporal y seis *contadores de escudo*. Obtendrá también Ventaja en todos sus tiros, sus ataques naturales contarán como *material superior III* y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor. 
