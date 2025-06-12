@@ -76,6 +76,8 @@ El daño base de tus ataques Marciales pasa a ser 1d8.
 
 *Marcial, Serpiente, Mejora*
 
+**Coste:** 2 vigor
+
 Concentras toda tu fuerza en tu mano para atravesar incluso las resistencias más solidas de tu oponente. La siguiente vez que impactes con un ataque Marcial esta ronda incrementas su daño base por 2d6 e ignorarás toda la Defensa que tenga tu objetivo cuyo origen no provenga por su armadura, infligiendo así daño de manera directa. Se pueden aplicar otras mejoras a un ataque empoderado por esta habilidad y cabe recalcar que que los efectos de reducción de daño tampoco se aplicarán.
 
 ### Abrazo de la Serpiente
@@ -107,6 +109,8 @@ Al hacer un ataque desde el sigilo podrás ignorar toda Inmunidad que tenga tu o
 ### Golpe Evasivo
 
 *Serpiente, Marcial, Mejora*
+
+**Coste:** 2 vigor
 
 Tras impactar con tu siguiente ataque puedes **desenganchar** como reacción y moverte un paso en cualquier dirección. Si esto te llevaría a una posición con **cubierta** u **ocultamiento** puedes también esconderte como acción bonus. Esta habilidad puede aplicarse siempre que tengas éxito en el tiro de ataque, incluyendo aquellos casos donde tu objetivo utilice reacciones defensivas. 
 

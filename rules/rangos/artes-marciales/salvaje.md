@@ -62,7 +62,7 @@ Empleas tus garras, colmillos o fuerza física para atacar a un enemigo de una m
 
 **Efecto crítico:** Tu objetivo sufre una *herida permanente leve*. Si lleva armadura ligera esta pasará a ser *media*.
 
-Muerdes a tu objetivo como si fueras una bestia salvaje, desconcentrándole repentinamente y dejándolo en una mala posición. Haz un ataque bonus contra un enemigo adyacente que inflige 1d4 + FUE o DES daño Perforante al impactar. 
+Muerdes a tu objetivo como si fueras una bestia salvaje, desconcentrándole repentinamente y dejándolo en una mala posición. Haz un ataque bonus contra un enemigo adyacente que inflige 1d6+ FUE o DES daño Perforante al impactar. 
 
 Si logras provocarle daño saldrá inmediatamente de *posición defensiva* y recibirá una *herida permanente leve* si lleva armadura ligera. El daño base de este ataque mejorará de la misma manera que un Ataque natural y si vuelves a utilizar esta técnica en la misma ronda deberás pagar una acción. 
 

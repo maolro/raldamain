@@ -162,7 +162,7 @@ Despiertas el poder de tu mente para adquirir la capacidad de levantarte a ti mi
 
 ## Rango IV
 
-### Animar objeto
+### Animar Objeto
 
 *Telekinesia, Invocación*
 
