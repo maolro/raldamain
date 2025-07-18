@@ -19,7 +19,6 @@ La criatura está elegida por un espíritu de la naturaleza o tiene esencia espi
 
 - **Aumentos Estadísticos:** Incrementa su INT, SAB y CAR por 1 junto a sus limitadores.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Magia Divina y Ascendencia Primigenia por 1.
-- **Habilidades Pasivas:** Obtiene las habilidad pasiva Vínculo Primigenio.
 - **Hechizos:** Aprende tres hechizos de Rango II relacionados con su patrón espiritual. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. 
 - **Protección Divina:** Se encuentra siempre en *posición defensiva* y puede tirar Magia Divina para defenderse de ataques y hechizos enemigos. Una vez por ronda puede afectar a un enemigo que le haya herido con el hechizo Manifestación Divina.
 - **Forma Animal:** Puede transformarse en un animal de su elección empleando una acción. Esto le otorgará dos mejoras semejantes a aquellas otorgadas por la habilidad Forma Animal.

@@ -148,7 +148,7 @@ Eres capaz de crear inyecciones mutagénicas más potentes capaces de alterar el
 
 - **Aliento:** Eres capaz de escupir un aliento mágico como si fueras un dragón. El aliento empleará tu modificador de Transmutación para el tiro de ataque e infligirá 1d8 + CON daño Ácido, Eléctrico, Frío o Fuego al impactar. Emplearlo costará dos acciones y afectará un cono pequeño o una línea mediana. Si afectas a una criatura grande con esta inyección recibirá un dado adicional de daño y el área afectada aumentará por un paso.
 
-- **Gigante:** Tu tamaño aumenta exponencialmente, aumentando tu capacidad destructiva y aguante a costa de mermar tu agilidad. El alcance de tus armas aumenta por un paso, y reciben un dado de daño adicional. Así mismo obtienes resistencia a *Agarres*, *Maniobras* y *Aturdimiento* provocados por criaturas de tamaño inferior, a costa de recibir desventaja en todos tus tiros de esquiva.  
+- **Gigante:** Tu tamaño aumenta exponencialmente, aumentando tu capacidad destructiva y aguante a costa de mermar tu agilidad. El alcance de tus armas aumenta por un paso y reciben un dado de daño adicional. Así mismo obtienes resistencia a Agarres, Maniobras y Aturdimiento provocados por criaturas de tamaño inferior, a costa de recibir desventaja en todos tus tiros de esquiva.  
 
 ### Crear Quimera
 

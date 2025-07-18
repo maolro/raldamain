@@ -27,7 +27,7 @@ Observas con atención los movimientos y la forma de combatir de un enemigo para
 
 *Innata, Toque, Sanación*
 
-**Coste:** 2 acciones y 1 vigor
+**Coste:** 1 acción y 1 vigor
 
 **Alcance:** Cuerpo a cuerpo
 

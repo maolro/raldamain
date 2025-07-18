@@ -18,7 +18,7 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 *Ilusoria, Arcana, Visual, Duradera*
 
-**Coste:** 2 acciones
+**Coste:** 1 acción
 
 **Alcance:** Medio
 

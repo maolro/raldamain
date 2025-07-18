@@ -49,7 +49,7 @@ title: Objetos de Chi
 - Su portador recibe Resistencia a efectos Arcanos de todo tipo.
 - Una vez por combate el portador podrá tener éxito automático en un tiro para defenderse de un efecto Arcano. Tras activar esta propiedad se anularán las propiedades de la capa durante el resto del combate.
 
-## Collar de Resurección (precio 3)
+## Collar de Resurrección (precio 3)
 
 **Ranura:** Cuello
 

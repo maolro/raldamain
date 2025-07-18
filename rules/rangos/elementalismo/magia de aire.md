@@ -69,7 +69,7 @@ Aumentas la fuerza de los vientos en línea recta para lanzar por los aires todo
 
 ## Rango II
 
-### Muro de los vientos
+### Muro de los Vientos
 
 *Aire, Defensiva, Duradera*
 
@@ -141,7 +141,7 @@ Formas poderosos vientos alrededor de un objetivo de tu elección para inmoviliz
 
 **Aumentar** (1 chi): Afectas a una criatura adicional a distancia media con este hechizo
 
-### Controlar vientos
+### Controlar Vientos
 
 *Aire, Ambiental, Duradero*
 
@@ -155,9 +155,9 @@ Entras en un estado de armonía con las corrientes de aire que te rodean, recibi
 
 Mientras este hechizo esté activo todos los hechizos de Aire quedan empoderados, otorgándote Ventaja en todos los tiros de magia de Aire realizadas dentro del área afectada. Además, siempre que una criatura realice un ataque A distancia Físico puedes conceder Desventaja al atacante o al defensor manipulando las corrientes de aire. También puedes elegir qué efectos Gaseosos permanecerán activos y qué forma adoptarán.
 
-**Empoderar** (1 chi): El siguiente hechizo de Tormenta que lances reduce su coste en acciones por 1 (mínimo 0). Solo puedes empoderar así una vez por hechizo.
+**Empoderar** (1 chi): El siguiente hechizo de Aire que lances reduce su coste en acciones por 1 (mínimo 0). Solo puedes empoderar así una vez por hechizo.
 
-### Invocar elemental de aire
+### Invocar Elemental de Aire
 
 *Aire, Invocación*
 
@@ -197,7 +197,7 @@ El tornado permanecerá en el campo de batalla hasta que pierdas la concentraci�
 
 **Empoderar** (1 chi): Crea un tornado adicional en un punto diferente dentro del alcance o amplía el tamaño de un tornado activo a un cilindro mediano. No puedes tener más de tres tornados activos a la vez.
 
-### Danza de los vientos
+### Danza de los Vientos
 
 *Aire, Defensivo, Duradero*
 
@@ -211,7 +211,7 @@ Los vientos formarán un aura protectora en torno a ti que te otorga una cantida
 
 **Empoderar** (1 chi): Recuperas uno de tus *contadores de escudo* perdidos. Si te encuentras en una zona afectada por fuertes vientos puedes reponer un *contador de escudo* adicional al empoderar.
 
-### Viento cortante
+### Viento Cortante
 
 *Aire, Ataque, Área, Físico*
 
