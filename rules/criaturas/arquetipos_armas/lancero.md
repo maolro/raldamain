@@ -11,9 +11,9 @@ La criatura se ha especializado en combatir con un lanzas, alabardas y armas sim
 - **Aumentos Estadísticos:** Incrementa su FUE, DES y CON por 1 junto a sus limitadores. Incrementa también sus PV y Defensa por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Alabardas, Fortitud y Reflejos por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
 - **Habilidades Pasivas:** Recibe Velocidad Superior, Ajustar Alcance y Esquiva Asombrosa como habilidades pasivas. Si ya tiene Esquiva Asombrosa puede sustituirla por Giro Defensivo.
+- **Ira de Batalla:** Está siempre afectado por [Ira](../../rangos/combate/ira.md#ira-de-combate), recibiendo así Ventaja en todos sus tiros relacionados con estadísticas físicas. Incrementa también el daño base de todos sus ataques físicos por 1d6.
 - **Preparación contra Cargas:** Al entrar en *posición defensiva* recibe automáticamente los beneficios de Preparación contra Cargas hasta el inicio de su siguiente turno. Este efecto terminará temprano si pierde la concentración o sale de *posición defensiva*. 
 - **Lanzazo Penetrante:** Al impactar a un enemigo puede clavarle su arma de la misma manera que la habilidad Lanzazo Penetrante sin la necesidad de gastar vigor.
-- **Resiliencia:** Puede emplear la reacción Resiliencia una vez por ronda sin la necesidad de gastar vigor. Esto se acumula con otros usos de Resiliencia que reciba por arquetipos diferentes.
 
 ## Lancero II (+2, requiere 3 mejoras)
 

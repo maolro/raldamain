@@ -562,15 +562,15 @@
             {"stat": "str", "rank": 1, "boost": 2},
             {"stat": "dex", "rank": 1, "boost": 2},
             {"stat": "con", "rank": 1, "boost": 2},
-            {"stat": "str", "rank": 2, "boost": 1},
-            {"stat": "dex", "rank": 2, "boost": 1},
-            {"stat": "con", "rank": 2, "boost": 1},
-            {"stat": "str", "rank": 3, "boost": 1},
-            {"stat": "dex", "rank": 3, "boost": 1},
-            {"stat": "con", "rank": 3, "boost": 1},
-            {"stat": "str", "rank": 4, "boost": 1},
-            {"stat": "dex", "rank": 4, "boost": 1},
-            {"stat": "con", "rank": 4, "boost": 1}
+            {"stat": "str", "rank": 2, "boost": 2},
+            {"stat": "dex", "rank": 2, "boost": 2},
+            {"stat": "con", "rank": 2, "boost": 2},
+            {"stat": "str", "rank": 3, "boost": 2},
+            {"stat": "dex", "rank": 3, "boost": 2},
+            {"stat": "con", "rank": 3, "boost": 2},
+            {"stat": "str", "rank": 4, "boost": 2},
+            {"stat": "dex", "rank": 4, "boost": 2},
+            {"stat": "con", "rank": 4, "boost": 2}
         ],
         "enchancements": [
             {

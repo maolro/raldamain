@@ -52,7 +52,7 @@ Este arquetipo representa a un enemigo veterano y altamente experimentado en el 
 
 - **Dobles Ilusorios:** Al entrar en combate se rodea de una cantidad de Dobles Ilusorios igual a su Rango en Magia Ilusoria. Al ser impactado por un ataque que le tenga explícitamente como objetivo una vez por ronda puede hacer que impacte a un doble, eliminándolo de inmediato.
 
-- **Aura Mental:** Toda criatura que empiece su turno en una posición a distancia media o entre ahí debe tener éxito en un tiro de Concentración o Voluntad contra +MOD o sufre los efectos de Sugestión o Alterar Emociones. Este efecto permancerá activo hasta que pierda la concentración y reactivarlo cuesta dos Acciones.
+- **Aura Mental:** Toda criatura que empiece su turno en una posición a distancia media o entre ahí debe tener éxito en un tiro de Concentración o Voluntad contra su modificador o sufre los efectos de Sugestión o Alterar Emociones. Este efecto permancerá activo hasta que pierda la concentración y reactivarlo cuesta dos Acciones.
 
 ## Embaucador IV (+2, requiere 7 mejoras)
 

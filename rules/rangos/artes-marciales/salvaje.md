@@ -172,7 +172,7 @@ Haz dos Ataques naturales contra un mismo objetivo que infligen 1d6 daño adicio
 
 **Coste:** 1 acción y 3 vigor
 
-Sabes donde apuntar para matar a un enemigo con un único golpe. Haz un ataque contra un objetivo adyacente que inflige 3d6 daño adicional al impactar además de una *herida permanente media* y *sangrado*. La herida permanente infligda pasará a ser *grave* si tu objetivo lleva armadura ligera. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad. 
+Sabes donde apuntar para matar a un enemigo con un único golpe. Haz un ataque contra un objetivo adyacente que inflige 3d6 daño adicional al impactar además de una *herida permanente media* y *sangrado*. La herida permanente infligida pasará a ser grave si tu objetivo lleva armadura ligera. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad.
 
 ## Rango VI
 

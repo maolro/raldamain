@@ -56,19 +56,19 @@ El chakra solar se encuentra en el centro de tu cuerpo y almacena la energía ta
 
 ## Rango III
 
-**Aura de poder**
+**Aura de Poder**
 
 *Innata, Pasiva*
 
 Al activar suficientes Chakras te vuelves capaz de distorsionar una parte de la energía que compone el tejido de la existencia que te rodea, dificultándo a aquellos que la emplean el enfrentarse a ti con normalidad. De esta manera, al activarse esta habilidad, obtendrás resistencia a efectos tanto arcanos como divinos. Así mismo los glifos a una adecuada distancia de ti tendrán un 50% de probabilidades de fallar. 
 
-**Chakra del corazón**
+**Chakra del Corazón**
 
 *Chakra 1, Pasiva*
 
 El chakra del corazón representa la unión entre la energía que te rodea y el cuerpo físico, actuando así como un reflejo de las emociones del individuo. De esta manera, al activar este chakra, te volverás capaz de percibir estos colores que tomarán la forma de auras alrededor de la gente, además de que fortalecerás tu propia aura en el proceso, volviendote inmune tanto a efectos de miedo como mentales. Para poder activar este chakra deberás encontrarte en calma y libre de emociones extremas o efectos mentales. 
 
-**Chakra de la garganta** 
+**Chakra de la Garganta** 
 
 *Chakra 1, Pasiva*
 
@@ -76,19 +76,19 @@ El chakra de la garganta permite canalizar las verdades ocultas y despertar la c
 
 ## Rango IV
 
-**Secretos de levitación:**
+**Secretos de Levitación**
 
 *Innata, Pasiva*
 
 Las ataduras del cuerpo físico a la tierra son algo efimero para quienes saben abrir los candados que las mantienen, tarea que aunque requiere de un gran entrenamiento y disciplina no es imposible de ganar con la suficiente afinidad. Una vez abiertos 6 chakras simultáneamente podrás desafiar el poder de la mismísima gravedad, recibiendo así velocidad de vuelo uno, y por tanto ventaja en tus tiros de esquiva. 
 
-**Chakra del tercer ojo**
+**Chakra del Tercer Ojo**
 
 *Chakra 2, Pasiva*
 
 El chakra del tercer ojo representa la intuición, el conocimiento y las habilidades psíquicas durmientes en los humanos, siendo la puerta para despertar el verdadero potencial de la mente. De esta manera, al abrirse este chakra, te volverás capaz de ver a través de ilusiones y otros engaños. También recibirás la capacidad de anticipar brevemente los sucesos del mundo a tu alrededor, recibiendo los efectos de visión futura, que incluyen inmunidad a ataques sorpresa así como ventaja en la mayoría de tus tiros. Para poder abrir este chakra requerirás de haber meditado durante por lo menos una hora, así como de tener 5 o mas en el puntaje de tus estadísticas de inteligencia y sabiduría. 
 
-**Chakra de la corona**
+**Chakra de la Corona**
 
 *Chakra 2, Pasiva*
 
@@ -96,19 +96,19 @@ El chakra de la corona se encuentra en la cumbre de la cabeza, y representa la c
 
 ## Rango V
 
-**Maestría del camino marcial:** 
+**Maestría del Camino Marcial** 
 
 *Innata, Pasiva*
 
-El poder los chakras inunda tu cuerpo y se vierte en cada una de tus acciones y pensamientos, dandote una claridad y perfección capaces de desafiar incluso a los mas avidos guerreros. Al activar ocho chakras tus acciones se vuelven inescrutable para quienes te ven, y tus golpes mas certeros, aumentando de esta forma el daño de tus ataques físicos por un paso además de recibir la capacidad de fintar incluso a enemigos que se defiendan con esquiva asombrosa o premonición.  
+El poder los chakras inunda tu cuerpo y se vierte en cada una de tus acciones y pensamientos, dandote una claridad y perfección capaces de desafiar incluso a los mas avidos guerreros. Al activar ocho chakras tus acciones se vuelven inescrutables para quienes te ven, y tus golpes mas certeros, aumentando de esta forma el daño de tus ataques físicos por un paso además de recibir la capacidad de fintar incluso a enemigos que se defiendan con esquiva asombrosa o premonición.  
 
-**Chakra del alma** 
+**Chakra del Alma** 
 
 *Chakra 2, Pasiva*
 
 El chakra del alma es el primero de los chakras externos al cuerpo físico, que permite al individuo trascender las fronteras del plano mortal para ver mas allá. De esta forma tu perspectiva del flujo del tiempo se volverá mas avanzada a medida que el chakra se abra, otorgándote un segundo turno con 3 AP e iniciativa -10. Así mismo la posibilidad de interrumpir tus acciones se volverá mínima, si es que no inexistente, haciendo así que tus secuencias de ataques no puedan ser interrumpidas. 
 
-**Chakra del espacio** 
+**Chakra del Espacio** 
 
 *Chakra 2, Pasiva*
 
@@ -116,19 +116,19 @@ El chakra del espacio conecta la mente con las energías cósmicas que crearon y
 
 ## Rango VI
 
-**Aura de perfección:**
+**Aura de Perfección**
 
 *Innata, Pasiva*
 
 Has alcanzado la cúspide de la meditación, y los chakras junto con sus enigmas ya no son un misterio para ti, sino una parte mas de tu ser. De esta forma al abrir 10 de tus chakras simultáneamente podrás nutrirlos con tu propio ser, entregándoles partes de ti mismo a cambio de obtener la semblanza de un dios intocable. Al activarlos siempre permanecerás en posición defensiva, y al defenderte de un efecto podrás sacrificar 4 de tu vitalidad o vida maximos para tener éxito automático en él. 
 
-**Chakra de la armonía**
+**Chakra de la Armonía**
 
 *Chakra 2, Pasiva*
 
 El chakra de la armonía es uno de los chakras externos, que representa el balance en el mundo entre las diferentes energías que lo componen. De esta manera, al activar este chakra tu energía se alineará de la misma manera, haciendo que tres de tus estadísticas, ya sean las físicas o las mentales, se igualen a la mas alta de dicha categoría. Para cambiar la elección entre un tipo de estadísticas y otro en medio de un combate deberás sufrir 2 daño obligatorio como pago por alterar el orden. Para poder despertar este chakra deberás convertirte en un maestro iluminado de tu orden, abandonando todo deseo y atadura material.
 
-**Chakra universal** 
+**Chakra Universal** 
 
 *Chakra 10, Pasiva*
 

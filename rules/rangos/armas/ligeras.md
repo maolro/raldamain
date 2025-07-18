@@ -29,7 +29,7 @@ Estilo de Armas Ligeras tiene las siguientes reglas fundamentales que se aplican
 
 Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de DES. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Ligera.
 
-### Combate furtivo
+### Combate Furtivo
 
 *Mejora, Ligera*
 

@@ -80,7 +80,7 @@ Los vientos también dificultarán el paso a todo enemigo que se intente acercar
 
 **Duración:** Concentración
 
-Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva además que puedes emplear tu modificador de Ascendencia de Aire para dichos tiros	. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede lanzarse si te encuentras en un entorno con vientos adecuadamente fuertes.
+Eres capaz de surcar los cielos como un ave impulsado únicamente por el poder de los vientos. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva además que puedes emplear tu modificador de Ascendencia de Aire para dichos tiros. Este hechizo permanecerá activo hasta que pierdas la concentración y solo puede lanzarse si te encuentras en un entorno con vientos adecuadamente fuertes.
 
 **Empoderar** (1 chi o vigor): Te impulsas a la velocidad del viento para evitar un ataque, teniendo así éxito automático en un tiro de Esquiva y volando un paso en cualquier dirección.
 

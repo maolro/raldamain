@@ -3799,6 +3799,15 @@
       "tags": "Innata",
       "description": "Puede obtener Ventaja en todos sus ataques de arma o marciales esta ronda a costa de obtener Desventaja en todos sus tiros defensivos"
     },
+    "frenesi-saltarin": {
+      "rank": 5,
+      "name": "Frenesí Saltarín",
+      "skill": "estilo-salvaje",
+      "type": "Accion",
+      "cost": "1 Acción y 3 Vigor",
+      "tags": "Salvaje, Mejora",
+      "description": "Salta un paso en cualquier dirección y hace un ataque contra un objetivo adyacente que inflige 1d6 daño adicional. Si impacta este ataque puede volver a saltar un paso en cualquier dirección y atacar a un nuevo enemigo, continuando así hasta que falle un ataque o no le queden más nuevos enemigos para atacar."
+    },
     "fuego-interior": {
       "rank": 1,
       "name": "Fuego Interior",
@@ -7413,6 +7422,15 @@
       "duration": "",
       "description": "Cada ataque consecutivo en la ronda contra el mismo objetivo aumenta su tiro de ataque y daño base por 1."
     },
+    "secuencia-de-zarpazos": {
+      "rank": 5,
+      "name": "Secuencia de Zarpazos",
+      "skill": "estilo-salvaje",
+      "type": "Accion",
+      "cost": "1 Acción y 3 Vigor",
+      "tags": "Salvaje, Mejora",
+      "description": "Hace dos Ataques naturales contra un mismo objetivo que infligen 1d6 daño adicional al impactar. Este solo podrá tirar defensivamente una vez y empleará dicho resultado para protegerse de ambos ataques. Si impactas con los dos ataques podrás hacerle un tercer ataque como acción bonus contra el cual tu objetivo no podrá defenderse."
+    },
     "segundo-aliento": {
       "rank": 1,
       "name": "Segundo Aliento",
@@ -7674,6 +7692,15 @@
       "reach": "Propio",
       "duration": "Cinco rondas",
       "description": "Obtiene +20 Vitalidad, +5 DEF, su FUE, DES y CON pasan a ser 12 y 1/Ronda reduce el coste de una técnica de arma por 1 vigor (mín 0). Solo puede activarse en Ira"
+    },
+    "tajo-cercenador": {
+      "rank": 5,
+      "name": "Tajo Cercenador",
+      "skill": "estilo-salvaje",
+      "type": "Accion",
+      "cost": "1 Acción y 3 Vigor",
+      "tags": "Salvaje, Mejora",
+      "description": "Hace un ataque que inflige 3d6 daño adicional, una <i>herida permanente media</i> y <i>sangrado</i>. La herida permanente infligida pasará a ser grave si tu objetivo lleva armadura ligera. Este ataque nunca puede utilizarse como reacción o ataque de oportunidad."
     },
     "tajo-de-los-vientos": {
       "rank": 1,
