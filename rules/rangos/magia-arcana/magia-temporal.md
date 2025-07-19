@@ -234,7 +234,7 @@ La brecha temporal te permitirá alterar el tiempo de maneras nuevas e inesperad
 
 Tus hechizos Temporales de Rango IV reducen su coste en acciones por 1 (mínimo 1).
 
-### Retroceso en masa
+### Retroceso en Masa
 
 *Temporal, Arcana, Ambiental*
 

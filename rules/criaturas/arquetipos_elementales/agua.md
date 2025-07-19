@@ -36,7 +36,7 @@ La criatura está compuesta de aguas fluidas, careciendo así de cuerpo físico.
 
 ## Esencia de Agua III (+2, 5 mejoras)
 
-Prisión Acuosa, Vórtice, Taladro Hidráulico, Columna de Agua, Flagelo de las Corrientes, Escaldar, Elemento, Forma Acuosa,
+Vórtice, Taladro Hidráulico, Columna de Agua, Flagelo de las Corrientes, Escaldar, Elemento del Cambio, Forma Acuosa,
 
 ## Esencia de Agua IV (+2, 7 mejoras)
 

@@ -1088,6 +1088,108 @@
             }
         ]
     },
+    "esencia-de-agua": {
+        "name": "Esencia de Agua",
+        "stat": "wis",
+        "modranks": ["magia-de-agua", "ascendencia-de-agua"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "wis", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "wis", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "wis", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "wis", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1}
+        ],
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 2, "cat": ["magia-de-hielo","magia-de-sangre", "magia-de-tormenta"], "mod": "magia-de-agua"},
+            {"rank": 3, "spell-lvl": 2, "slots": 2, "cat": ["magia-de-hielo","magia-de-sangre", "magia-de-tormenta"], "mod": "magia-de-agua"},
+            {"rank": 4, "spell-lvl": 3, "slots": 2, "cat": ["magia-de-hielo","magia-de-sangre", "magia-de-tormenta"], "mod":
+            "magia-de-agua"}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["torrente","aguas-de-la-vida","niebla-envolvente","nacido-de-las-profundidades","ecolocacion","parada-de-agua"],
+                "abilities": [
+                    {
+                        "name": "Golpe Hidráulico",
+                        "type": "Accion",
+                        "tags": "Agua, Mejora",
+                        "uses": "1/Ataque",
+                        "skill": "ascendencia-de-agua",
+                        "description": "Aumenta el daño de un ataque natural o de armas por RANGO-1d6."
+                    },
+                    {
+                        "name": "Elementalismo Empoderado",
+                        "type": "Pasiva",
+                        "tags": "Arena, Innata",
+                        "skill": "ascendencia-de-fuego",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con estadísticas mentales y aumenta el daño base de todos sus hechizos elementales por 1d6. Estos modificadores no se acumulan con Mente Desencadenada."
+                    }
+                ]
+            },
+            {
+                "attributes": ["ola-chocante","muro-de-agua-defensivo","prision-acuosa","poder-del-dolor","aguas-sanadoras"],
+                "abilities": [
+                    {
+                        "name": "Forma Fluida",
+                        "type": "Pasiva",
+                        "tags": "Agua, Duradera",
+                        "skill": "magia-de-agua",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Agua y reduce todo el daño que reciba por un valor igual a su RANGO-1. Todo el espacio a su alrededor cuenta como <i>terreno difícil</i> como si tuviera activa la habilidad con el mismo nombre. Estos modificadores no se acumulan con aquellos otorgados por Controlar el Agua o Lluvias Torrenciales."
+                    },
+                    {
+                        "name": "Tentáculos de Agua",
+                        "type": "Pasiva",
+                        "tags": "Agua, Duradera",
+                        "skill": "magia-de-agua",
+                        "resistances": ["A Distancia"],
+                        "immunities": ["Gaseosos"],
+                        "description": "Al entrar en combate recibe RANGO <i>contadores de escudo</i>. Mientras le queden contadores podrá hacer un ataque de Torrente una vez por ronda como acción bonus."
+                    }
+                ]
+
+            },
+            {
+                "attributes": ["vortice","taladro-hidraulico","escaldar","elemento-del-cambio","psique-retorcido"],
+                "abilities": [
+                    {
+                        "name": "Columna de agua",
+                        "type": "Pasiva",
+                        "tags": "Agua, Duradera",
+                        "skill": "magia-de-agua",
+                        "description": "Tiene velocidad de vuelo 2 si se encuentra encima del agua además de Ventaja en sus tiros de Esquiva. Cada vez que se mueva toda criatura en su camino debe tirar Heroísmo o Acrobacias contra +MOD o sufren 1DD+STAT daño Contundente y son empujados un paso hacia atrás."
+                    },
+                    {
+                        "name": "Flagelo de las Corrientes",
+                        "type": "Pasiva",
+                        "tags": "Agua, Duradera",
+                        "skill": "magia-de-agua",
+                        "description": "Sus ataques físicos aumentan su alcance a medio, provocan RANGO-1d6 daño adicional y eliminan <i>contador de escudo</i> al impactar."
+                    }
+                ]
+            },
+            {
+                "attributes": ["tsunami","lluvias-torrenciales","furia-del-oceano","vapor-hirviente","forma-acuosa"],
+                "abilities":[
+                    {
+                        "name": "Forma Elemental",
+                        "type": "Pasiva",
+                        "tags": "Agua, Duradera",
+                        "skill": "magia-de-agua",
+                        "description": "La primera vez que pierda toda su Vitalidad entrará inmediatamente en una Forma Elemental más fuerte. Recibe de inmediato 40 Vitalidad temporal, 6 <i>contadores de escudo</i>.Obtendrá también Ventaja en todos sus tiros y podrá emplear una vez adicional por ronda todos sus hechizos de Rango III o inferior obtenidos mediante este arquetipo sin pagar chi ni vigor."
+                    }
+                ]
+            }
+        ]
+    },
     "esencia-de-arena": {
         "name": "Esencia de Arena",
         "stat": "cha",
@@ -1357,6 +1459,60 @@
                         "tags": "Naturaleza, Agarre, Físico",
                         "skill": "magia-de-naturaleza", 
                         "description": "Al entrar en combate lanzará automáticamente el hechizo Animar Plantas, infundiendo así la naturaleza a su alrededor con una semblanza de vida. En cualquier momento de la ronda puede atacar a un enemigo a distancia media con sus plantas animadas como acción bonus (+MOD para impactar, 1DD + STAT daño Cortante al impactar y <i>enreda</i>. Si afecta a un enemigo <i>enredado</i> deberá tirar Heroísmo o Destrozar contra +MOD o quedará <i>agarrado</i> hasta que escape (puede repetir cada ronda). Este efecto terminará si pierde la concentración o es destruido y restaurarlo cuesta dos acciones."
+                    }
+                ]
+            },
+            {
+                "attributes": []
+            },
+            {
+                "attributes": []
+            }
+        ]
+    },
+    "esencia-de-sangre": {
+        "name": "Esencia de Sangre",
+        "stat": "cha",
+        "modranks": ["magia-de-sangre"],
+        "rank": 0,
+        "max": 4,
+        "stats": [
+            {"stat": "dex", "rank": 1, "boost": 1},
+            {"stat": "con", "rank": 1, "boost": 1},
+            {"stat": "cha", "rank": 1, "boost": 1},
+            {"stat": "dex", "rank": 2, "boost": 1},
+            {"stat": "con", "rank": 2, "boost": 1},
+            {"stat": "cha", "rank": 2, "boost": 1},
+            {"stat": "dex", "rank": 3, "boost": 1},
+            {"stat": "con", "rank": 3, "boost": 1},
+            {"stat": "cha", "rank": 3, "boost": 1},
+            {"stat": "dex", "rank": 4, "boost": 1},
+            {"stat": "con", "rank": 4, "boost": 1},
+            {"stat": "cha", "rank": 4, "boost": 1}
+        ],
+        "enchancements": [
+            {
+                "attributes": ["sentido-de-sangre","drenar-sangre","espasmos-compulsivos","defensa-sanguinea","mente-desencadenada"],
+                "abilities": [
+                    {
+                        "name": "Infusión Sanguínea",
+                        "type": "Mejora",
+                        "tags": "Sangre",
+                        "uses": "1/Ataque",
+                        "skill": "magia-de-sangre",
+                        "description": "Al impactar con un ataque natural o de arma puede provocar los efectos de un hechizo de Sangre que conozca de manera gratuita. Si emplea un hechizo con coste de chi gastará el uso gratuito que tenga esa ronda."
+                    }
+                ]
+            },
+            {
+                "attributes": ["poder-del-dolor","constitucion-ferrea","arma-sanguinea","sanacion-sanguinea","toque-vampirico","dolor-agonizante"],
+                "abilities": [
+                    {
+                        "name": "Maestría Sanguínea",
+                        "type": "Pasiva",
+                        "tags": "Sangre",
+                        "skill": "magia-de-naturaleza",
+                        "description": "Recibe Ventaja en todos sus tiros relacionados con Magia de Sangre y su alcance con dichas habilidades aumenta a medio si afecta a enemigos con *sangrado*."
                     }
                 ]
             },

@@ -108,7 +108,7 @@ Dicho daño se acumula con el otorgado por Ataques Infundidos y contará como un
 
 ## Rango V
 
-Eres capaz de emplear los hechizos Erupción abrasadora y Maestro de las Llamas empleando vigor en lugar de chi.
+Eres capaz de emplear los hechizos Erupción Abrasadora y Maestro de las Llamas empleando vigor en lugar de chi.
 
 ### Elemento del Poder
 
