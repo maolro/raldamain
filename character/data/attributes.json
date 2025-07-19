@@ -6692,6 +6692,7 @@
       "skill": "mente-desencadenada",
       "type": "Pasiva",
       "tags": "Mente Desencadenada",
+      "immunities": ["Mentales","Miedo"],
       "description": "Inmunidad a efectos Mentales y Miedo si está en Mente Desencadenada además que rebota hechizos mentales que le intenten afectar"
     },
     "puerta-dimensional": {
