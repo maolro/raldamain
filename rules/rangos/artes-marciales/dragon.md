@@ -6,133 +6,198 @@ title: Estilo del Dragón
 
 # Reglas fundamentales
 
-Estilo del Dragón tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+**Reserva de vigor:** Tu rango en Estilo del Dragón mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
 
-- **Reserva de vigor:** Tu rango en Estilo del Dragón mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Estadística principal**: Tu modificador en Estilo del Dragón será igual a la suma de tu estadística de Fuerza o Destreza y tu rango en esta habilidad.
+**Estadística principal**: Tu modificador en Estilo del Dragón será igual a la suma de tu estadística de **Fuerza** o **Destreza** y tu rango en esta habilidad.
 
 # Rangos
 
 ## Rango I
 
-### Golpe Marcial
-
-*Marcial, Dragón, Cuerpo a cuerpo, Físico, Ataque*
-
-**Coste**: Una acción
-
-**Alcance**: Cuerpo a cuerpo
-
-**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*
-
-**Duración**: Instantáneo
-
-Atacas a un enemigo adyacente con un poderoso puñetazo o patada. Si eres un humano podrás infligir 1d4 daño base Contundente con un ataque así, el cual mejorará en rangos futuros. 
-
-En el caso que combatas con armas de la categoría Marcial podrás sustituir tu daño base por el suyo. Lo mismo ocurrirá si mejoras tu fisiología por medios mágicos o biológicos.
+El daño de tus ataques Marciales aumenta por un paso.
 
 ### Movimientos Sutiles
 
-*Dragón, Pasiva*
+*Marcial, Pasiva*
+
+****
 
 Mueves tu cuerpo cada vez que detienes un ataque enemigo para volverte más difícil de impactar. Al defenderte de un ataque enemigo usando Parada puedes hacer también un tiro de Esquiva y quedarte con el resultado que más te convenga. Esto te permite también usar habilidades pertenecientes a Reflejos para en tus tiros de Parada. 
 
 En el caso que ya poseas esta habilidad por Alabardas o Duelo puedes hacer también un tiro de Parada con esa arma y quedarte con el resultado que más te convenga. Al igual que con Reflejos esto te permite emplear habilidades defensivas pertenecientes a dichos Rangos al defenderte con Parada Marcial.
 
-### Arte de la Lucha
+### Golpes en Cadena
 
-*Dragón, Marcial, Mejora*
+*Marcial, Mejora*
 
-**Coste:** 1 vigor
+****
 
-Tu constante práctica de formas marciales te otorga la capacidad de emplear varias técnicas novedosas. Al activar esta habilidad puedes hacer una maniobra de combate como acción bonus, mejorando el ataque que acabas de hacer. Solo puedes activar una maniobra por ataque y puedes crear técnicas propias si lo permite el DJ. Estos son algunos ejemplos de maniobras que puedes realizar.
+**Activación:** Antes de hacer un ataque
+**Coste:** X Acciones
 
-- **Paso rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
-- **Al suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Estilo Dragón o caerá *tropezado*. 
-- **Cambio repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
-- **Desarme:** Tu objetivo debe tener éxito en un tiro de arma contra tu modificador de Estilo Dragón o el objeto que lleve en una mano caerá de inmediato al suelo.
+****
 
-## Rango II
+Haces una secuencia de rápidos ataques para atravesar las defensas de tu enemigo. Haz X ataques Marciales contra un objetivo que alcances, los cuales aumentarán su tiro de ataque y daño en 1 por cada golpe consecutivo. Ese enemigo solo podrá tirar una vez para defenderse y empleará ese resultado contra todos tus ataques. 
+
+Una secuencia de ataques puede romperse si tu enemigo logra separarse de ti o te contrataca exitosamente en algún punto de la secuencia, lo cual malgastará el resto de acciones empleadas. Puedes también emplear técnicas de arma en cualquier ataque de la secuencia, las cuales funcionarán con normalidad.
 
 ### Patada Desequilibrante
 
-*Marcial, Dragón, Mejora*
+*Marcial, Mejora*
 
+****
+
+**Activación:** Después de impactar con un ataque o si un objetivo se defiende extiosamente con Parada
 **Coste:** 1 vigor
 
-Haces una ágil patada para desequilibrar a un enemigo y dejarlo vulnerable para tu siguiente ataque. Al impactar a un enemigo puedes forzarle a hacer un tiro de CON frente a tu Estilo Dragón o quedará *enfermado* durante el resto de la ronda y puedes hacerle un ataque de Golpe como acción bonus. No puedes emplear esta técnica contra el mismo objetivo más de una vez por ronda.
+****
 
-### Asalto Múltiple
+Al impactar con un ataque puedes forzar a tu objetivo a tener éxito en un tiro de Fuerza o será empujado 4 casillas en cualquier dirección y caerá *tropezado*. Si esto llega a empujarle contra una pared u objeto sólido sufrirá también 1d6 daño Físico. 
 
-*Marcial, Dragón, Mejora*
+Esta habilidad también puede activarse si tu objetivo se defiende exitosamente con Parada. Además, a Rango III empujarás 8 casillas y provocarás 2d6 daño Físico si choca con un objeto mientras que a Rango V empujarás 12 casillas y provocarás 3d6 daño Físico. 
 
+## Rango II
+
+### Desarme Rápido
+
+*Marcial, Mejora*
+
+****
+
+**Activación:** Después de impactar con un ataque
 **Coste:** 1 vigor
 
-Atacas con extraordinaria velocidad a todos los enemigos que te rodean antes que puedan reaccionar. Puedes atacar a cada criatura adyacente a ti con tu siguiente ataque Marcial sin provocar ataques de oportunidad o reacciones. A diferencia de otras habilidades similares cada objetivo atacado debe tirar por separado para defenderse y puedes mejorar los ataques que haces con otras técnicas de combate pagando la adecuada cantidad de vigor.
+****
 
-### Reposicionar Enemigo
+Golpeas la mano de un enemigo para que el arma que lleve caiga al suelo. Al impactar a un enemigo puedes forzarle a tener éxito en un tiro de Fuerza o será desarmado de un arma u objeto que lleve en una mano. Esta habilidad no funcionará contra enemigos que lleven un arma de dos manos. 
 
-*Marcial, Dragón, Mejora*
+### Patada Giratoria
 
-*Pesado, Mejora, Físico*
+*Marcial, Mejora*
 
-**Coste**: 1 vigor
+****
 
-Golpeas a un enemigo de tal manera para que se mueva a una mala posición y quede vulnerable frente a tus ataques futuros. Un enemigo que acaba de esquivar uno de tus ataques Marciales debe tener éxito en un tiro de Acrobacias contra tu modificador de Estilo Dragón o se mueve un paso en la dirección que elijas y saldrá inmediatamente de *posición defensiva*.  
+**Activación:** Antes de hacer un ataque
+**Coste:** 1 vigor
 
-## Rango III
+****
 
-El daño base de tus ataques Marciales pasa a ser 1d8.
+Giras tu cuerpo con velocidad para que siguiente ataque afecte a todos los enemigos que puedas alcanzar. Si aplicas alguna mejora a dicho ataque como Golpe Aturdidor o Patada Desequilibrante esta afectará a todos los objetivos que hayas impactado. 
 
 ### Romper Ladrillos
 
 *Marcial, Dragón, Mejora* 
 
+****
+
+**Activación:** Después de impactar con un ataque
+**Coste:** 1 vigor
+
+****
+
+Apretando el puño y propinando un fuerte impacto eres capaz de romper tanto la postura de tu oponente como su endeble armadura. Al impactar con un ataque puedes provocar que la armadura de tu objetivo quede *rota* además de eliminar un *contador de escudo* que tenga. Si tu objetivo se ha defendido usando Parada puedes romper su arma en lugar de su armadura. 
+
+**Empoderar** (1 vigor): Elimina un *contador de escudo* adicional que tenga tu objetivo. 
+
+### Persecución
+
+*Marcial, Reacción*
+
+****
+
+**Activación:** Un enemigo se aleja de ti
+**Coste:** 1 vigor
+
+****
+
+No dejas que un enemigo tenga ni la oportunidad de escapar. En respuesta a que un enemigo se aleje de ti por cualquier medio puedes emplear esta reacción para hacer una acción de Movimiento hacia él y hacerle un ataque de oportunidad. Tu objetivo recibirá Desventaja defendiéndose de tu ataque y este puede mejorarse con otras técnicsa. 
+
+## Rango III
+
+El daño de tus ataques Marciales aumenta por un paso.
+
+### Combinar Técnicas
+
+*Marcial, Mejora*
+
+****
+
+**Activación:** Después de hacer un ataque
 **Coste:** 2 vigor
 
-Apretando el puño y propinando un fuerte impacto eres capaz de romper tanto la postura de tu oponente como su endeble armadura. De esta manera el siguiente ataque que haga infligirá 2d6 daño adicional al impactar, además de que romperá la armadura del objetivo. En el caso de que este emplee parada con un arma para defenderse entonces también la romperá, eliminándole también un contador de escudo en el caso de que los tenga. 
+****
+
+Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque Marcial puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un coste en acciones.
+
+### Golpe Aturdidor
+
+*Marcial, Mejora*
+
+****
+
+**Activación:** Después de impactar con un ataque
+**Coste:** 2 vigor
+
+****
+
+Concentras tu fuerza para un único impacto. Al impactar con un ataque tu objetivo debe tener éxito en un tiro de Constitución o quedará *aturdido* durante una ronda. 
 
 ### Patada Salto Alta
 
 *Marcial, Dragón, Mejora*
 
+****
+
+**Activación:** Antes de hacer un ataque
 **Coste:** 2 vigor
 
-Preparas rápidamente tu postura para saltar a gran altura y derribar a cualquier objetivo que se encuentre en el aire con un potente ataque. De esta manera en tu próximo ataque podrás saltar dos pasos en vertical, además de que en caso de impactar provocará 2d6 daño adicional. En el caso de que el enemigo sea un objetivo volador, este tendrá desventaja defendiéndose, y al impactarle caerá directamente al suelo, quedando tropezado y sufriendo el respectivo daño de caída (normalmente será 2d6 daño de caída). 
+****
 
-### Combinar Técnicas
+Preparas rápidamente tu postura para saltar a gran altura y derribar a cualquier objetivo que se encuentre en el aire con un potente ataque. Antes de atacar puedes saltar hasta 8 casillas en cualquier dirección sin provocar ataques de oportunidad. 
 
-*Marcial, Dragón, Mejora*
-
-**Coste:** 2 vigor
-
-Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque del estilo del dragón puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un coste en acciones.
+Además, si atacas a un enemigo volador este recibirá Desventaja defendiéndose de tu ataque y al ser impactado caerá inmediatamente al suelo, quedando así *tropezando* y sufriendo el adecuado daño de caída (normalmente 2d6 Físico). Esta mejora te permite también centrar toda una secuencia de ataques en un objetivo volador.
 
 ## Rango IV
 
 ### Danza del Dragón
 
-*Marcial, Dragón, Duradera, Defensiva*
+*Marcial, Duradera*
+
+****
 
 **Coste:** 2 acciones y 2 vigor
+**Duración:** Concentración
 
-Posicionándote del modo correcto y preparando tu cuerpo al máximo eres capaz de prepararte para responder a cualquier ataque que te arrojen, superando a tus enemigos con una precisión y resistencia mejoradas. De esta manera al entrar en este estado obtendrás Ventaja en todos tus tiros de Artes marciales, además de que estos aumentarán su alcance a cercano. Además, conseguirás *contadores de escudo* iguales a tu rango. 
+****
+
+Entras en una forma marcial especial que mejora enormemente tu fuerza e instintos de combate. Dicho estado permanecerá activo hasta que pierdas la concentración y mientras lo esté recibirás los siguientes beneficios:
+
+- **Ventaja** en todos tus tiros de ataque, defensa y habilidad relacionados con Artes Marciales.
+- Aumenta tu velocidad de paso y salto por 4.
+- Eres capaz de emplear la habilidad Resiliencia una vez adicional por ronda, la cual te permite reducir el daño de un ataque enemigo a la mitad. 
 
 ### Golpe Oculto
 
-*Marcial, Dragón, Reacción*
+*Marcial, Reacción*
 
+****
+
+**Activación:** Después de fallar un ataque
 **Coste:** 2 vigor
 
-Eres capaz de controlar la fuerza que recorre tu cuerpo para reconducirla con enorme precisión y velocidad. En respuesta a que un enemigo evite uno de tus ataques puedes hacerle un segundo ataque como acción bonus que contará con Ventaja y las mismas propiedades que el anterior. Esta habilidad podrá emplearse incluso si tu golpe fue completamente evadido por habilidades que den éxito automático. En el caso de que tu objetivo se haya alejado un paso en su anterior defensa tú también podrás moverte la misma distancia como reacción.
+****
+
+Eres capaz de controlar la fuerza que recorre tu cuerpo para reconducirla con enorme precisión y velocidad. En respuesta a que un enemigo evite uno de tus ataques puedes hacerle un segundo ataque como acción bonus que contará con Ventaja y las mismas propiedades que el anterior. 
+
+Esta habilidad podrá emplearse incluso si tu golpe fue completamente evadido por habilidades que den éxito automático. En el caso de que tu objetivo se haya alejado un paso en su anterior defensa tú también podrás moverte la misma distancia como reacción.
 
 ### Control del Chi Interior
 
-*Marcial, Dragón Pasiva*
+*Marcial, Pasiva*
 
-Gracias a tu riguroso entrenamiento y disciplina has logrado someter las necesidades de tu cuerpo, pudiendo reforzar tu resistencia únicamente con tu fuerza de voluntad. Gracias a ello podrás aguantar el doble de tiempo que antes el hambre, el sueño e incluso la asfixia. Incluso, gracias a tu fuerte temple, recibirás resistencia a efectos Mentales, Ilusiones, Aflicciones y Miedo. 
+Gracias a tu riguroso entrenamiento y disciplina has logrado someter las necesidades de tu cuerpo. Gracias a ello podrás aguantar el doble de tiempo que antes el hambre, el sueño e incluso la asfixia además que recibes Resistencia a efectos Mentales, Ilusiones, Aflicciones y Miedo. Esta habilidad te otorga también la siguiente reacción.
 
-**Empoderar** (1 vigor): Una vez por ronda puedes liberarte de un efecto Mental, Aflicción, Miedo o una *herida permanente media* o *leve* que te aqueje. 
+**Control del Chi** (1 vigor): Te liberas de un efecto Mental, Aflicción, Miedo o una *herida permanente media* o *leve* que te afecte. 
 
 ## Rango V
 

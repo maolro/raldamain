@@ -51,7 +51,7 @@ Concentras el poder de los vientos en un espacio pequeño para crear una intensa
 
 **Empoderar** (1 chi): Haz un ataque contra un objetivo adicional en tu alcance
 
-### Viento furibundo 
+### Viento Furibundo 
 
 *Aire, Ataque, Área, Físico*
 

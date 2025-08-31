@@ -10,8 +10,7 @@ Posees habilidades extraordinarias en cuanto a tu velocidad de reacción, lo que
 Reflejos tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
 - **Reserva de vigor:** Tu rango en Reflejos mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Gran agilidad:** Obtener este rango mejorará tus capacidades para evadir ataques de todo tipo. Suma tu Rango de Reflejos a todos tus tiros defensivos de Esquiva.
-- **Absolutamente innato:** Las habilidades otorgadas por este rango representan tu agilidad y velocidad de reacción en un combate nacidas tanto por tus capacidades físicas como por tu entrenamiento. Por tanto no pueden ser contrarrestadas ni suprimidas por ningún efecto.
+- **Reflejos mejorados:** Obtener este rango mejorará tus capacidades para evadir ataques de todo tipo. De esta manera puedes sumar tu Rango de Reflejos a todos tus tiros defensivos de Esquiva además de tus tiros de salvación de Destreza.
 
 # Rangos
 
@@ -21,17 +20,34 @@ Reflejos tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 *Innata, Pasiva*
 
-Tu cuerpo se mueve a una velocidad superior a la media, mejorando notablemente tu agilidad a la hora de atacar. Aumenta tu cantidad de acciones por 1 y sumarás tu bonificador de Reflejos a todos tus tiros de iniciativa que realices.
-
-**Empoderar** (1 vigor): Emplea una habilidad con coste de acciones antes que toque tu turno. Deberás pagar el adecuado coste en acciones para dicha habilidad.
+Eres capaz de moverte con notable agilidad. Aumentas tu cantidad de acciones por 1 y puedes sumar tu Rango de Reflejos a todos tus tiros de iniciativa. 
 
 ### Instinto de Supervivencia
 
 *Innata, Reacción*
 
-Eres capaz de reaccionar en el último segundo a situaciones peligrosas para salvarte milagrosamente de estas. Una cantidad de veces por combate igual a tu Rango + 2 puedes repetir un tiro de ataque, defensa o salvación basado en tu estadística de DES y quedarte con el mejor resultado. Recuperarás todos los usos de esta habilidad al realizar un descanso corto.
+****
 
-**Empoderar** (1 vigor): Recuperas uno de los usos de esta habilidad
+**Activación:** Después de hacer un tiro de ataque, defensa o salvación.
+
+****
+
+Repite el tiro y escoge el resultado que más te convenga. Esta habilidad solo puede usarse una cantidad veces en un combate igual a tu **Rango + 2** y recuperas todos sus usos al realizar un descanso corto.
+
+**Empoderar** (1 vigor): Recuperas un uso de esta habilidad
+
+### Aprovechar Apertura
+
+*Innata, Reacción*
+
+****
+
+**Coste:** 1 vigor
+**Activación:** Antes o después del turno de otra criatura
+
+****
+
+Aprovechas el más mínimo segundo de duda en tus enemigos para actuar. Emplea una habilidad con coste máximo de una acción fuera de tu turno. Esto reducirá tu cantidad total de acciones disponibles en la ronda. 
 
 ## Rango II
 
@@ -39,17 +55,28 @@ Eres capaz de reaccionar en el último segundo a situaciones peligrosas para sal
 
 *Innata, Pasiva*
 
-Tus instintos te permiten reaccionar al peligro instantes antes que te afecte. Puedes emplear Esquiva para defenderte de ataques sorpresa o efectos imposibles de esquivar siempre y cuando te encuentres a una adecuada distancia. Seguirás teniendo Desventaja para defenderte de ataques de dicha categoría y no funcionará si estás *agarrado*, *paralizado* o *inconsciente*.
+****
+
+Tus instintos te permiten reaccionar al peligro instantes antes que te afecte. Puedes emplear Esquiva para defenderte de ataques sorpresa o efectos que te tengan como objetivo explícito. 
+
+Esta habilidad no funcionará si eres incapaz de moverte con normalidad, como ocurre si estuvieras *enredado*, *agarrado*, *confundido*, *agarrado* o *inconsciente*.
 
 ### Evasión
 
 *Innata, Defensiva*
 
+****
+
 **Coste:** 1 vigor
+**Activación:** Fallas un tiro defensivo de Esquiva
 
-Evades un ataque en el último momento para amortiguar el daño que te provocaría. Al fallar un tiro de Esquiva para defenderte de un ataque puedes reducir el daño provocado a la mitad después de aplicar Defensa además de *desenganchar* y moverte un paso como acción bonus. 
+****
 
-Si empleas esta habilidad contra un ataque que te provoque un efecto de estado podrás evitarlo como si no te hubiera impactado. No obstante, Evasión no funcionará si no eres capaz de defenderte de un ataque y solo podrá emplearse una vez por ronda. 
+Evades un ataque en el último momento para amortiguar el daño que te provocaría. Al fallar un tiro de Esquiva para defenderte de un ataque puedes reducir el daño provocado **a la mitad** después de aplicar Defensa además de *desenganchar* y tomar una acción bonus de movimiento. 
+
+Si empleas esta habilidad contra un ataque que te provoque un efecto de estado podrás evitarlo como si no te hubiera impactado. No obstante, Evasión solo podrá emplearse **una vez por ronda**. 
+
+**Empoderar** (1 vigor): Te mueves una vez adicional al emplear esta habilidad. 
 
 ## Rango III
 
@@ -57,17 +84,17 @@ Si empleas esta habilidad contra un ataque que te provoque un efecto de estado p
 
 *Innata, Pasiva*
 
-Conoces como esquivar adecuadamente los ataques enemigos para reducir las heridas que estos te causarían. Si te encuentras en *posición defensiva* reducirás todo el daño recibido por un valor igual a tu Rango + 1 antes de aplicar tu DEF. Perderás los efectos de esta habilidad si eres incapaz de Esquivar o defenderte.
+****
 
-**Empoderar** (1 vigor): Entras en *posición defensiva* como acción bonus.
+Conoces como esquivar adecuadamente los ataques enemigos para reducir las heridas que estos te causarían. Al fallar un tiro de Esquiva puedes reducir todo el daño recibido por un valor igual a tu Rango + 1 antes de aplicar tu Defensa. 
 
 ### Gran Acróbata
 
 *Innata, Pasiva*
 
-Tienes la agilidad y equilibrio de un gran acróbata, recibiendo así Inmunidad a *terreno difícil* en el suelo y a ser *tropezado* por efectos críticos. Obtienes también velocidad de Escalada 1 y Resistencia a daño de Caídas.
+****
 
-**Empoderar** (1 vigor): Te levantas inmediatamente tras caer *tropezado*
+Tienes la agilidad y equilibrio de un gran acróbata, recibiendo así Inmunidad a *terreno difícil* en el suelo y a ser *tropezado* por efectos críticos. Obtienes también velocidad de Escalada 1 y Resistencia a daño Físico provocado por caídas.
 
 ## Rango IV
 

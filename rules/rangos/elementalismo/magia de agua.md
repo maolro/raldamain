@@ -8,81 +8,124 @@ Esta magia te permite tener un control absoluto sobre el agua cuando esta se enc
 
 # Reglas fundamentales
 
-- **Reserva de Chi**: Tu rango de magia de Agua mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal**: Tu modificador de magia de Agua será igual a la suma de tu estadística de Sabiduría y tu rango en esta habilidad.
-- **Parada mágica:** Eres capaz de emplear esta magia para defenderte de ataques de todo tipo, lo que te permite usar tu modificador de magia de Agua para tiros de parada. Este modificador también se puede usar para tiros de salvación para protegerte de habilidades pertenecientes a las categorías Agua, Fuego, Tierra, Aire o Ácido sustituyendo el talento que usarías normalmente.
+**Reserva de Chi**: Tu rango de Magia de Agua mejorará tu reserva de chi, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+
+**Estadística principal**: Tu modificador de Magia de Agua será igual a la suma de tu estadística de **Sabiduría** o **Constitución** y tu rango en esta habilidad.
 
 # Rangos	
 
 ## Rango I 
 
-### Torrente 
+### Torrente de Agua
 
-*Agua, Ataque, a Distancia, Físico* 
+*Agua, Ataque, A Distancia, Físico* 
+
+****
 
 **Coste**: 1 acción
-
-**Alcance**: Medio 
-
+**Alcance**: 8
 **Efecto crítico:** Tu objetivo será empujado un paso y cae *tropezado*
 
-**Duración**: Instantáneo 
+****
 
-Atacas a un enemigo con un chorro de agua a presión para derribarlo. Haz un ataque con magia de Agua contra un objetivo a distancia media que inflige 1d6 + SAB daño Contundente al impactar. Si tu objetivo está adyacente puedes *desenganchar* como acción bonus tras impactar exitosamente. 
+Atacas a un enemigo con un chorro de agua a presión para derribarlo. Haz un ataque con magia de Agua contra un objetivo a distancia media que inflige 1d6 + SAB daño Físico al impactar. Este debe tener éxito en un tiro de Fuerza o será empujado un paso hacia atrás y quedará *tropezado*.  
+
+Este hechizo también puede utilizarse para empujar objetos de un tamaño similar, requiriendo sólo que superes una dificultad escogida por el DJ si son particularmente grandes o pesados. También apagará todo el fuego que haya en el espacio afectado. 
 
 **Empoderar** (1 chi): Afecta a un objetivo adicional que alcances con este hechizo
 
 ### Aguas de la Vida 
 
-*Agua, Toque, Curación* 
+*Agua, Toque, Sanación* 
 
-**Coste**: 2 acciones 
+****
 
-**Alcance**: Toque
+**Coste**: 1 Acción
+**Alcance**: 1
 
-**Duración**: Instantáneo 
+***
 
-Utilizas el poder del agua para curar a otros, restaurando así su salud y chi interior. Un aliado que puedas tocar recuperará Vitalidad igual a tu Rango + 2. Si empleas este hechizo contra un no-muerto este debe tener éxito en un tiro de CON frente a tu modificador de Magia de Agua o sufre 1d6 + SAB daño Radiante. 
+Utilizas el poder del agua para curar a otros, restaurando así su salud y chi interior. Un aliado que puedas tocar recuperará Vitalidad igual a tu **Rango + 2**. Si empleas este hechizo contra un no-muerto este debe tener éxito en un tiro de Constitución o sufrirá 1d6 + SAB daño Radiante. 
 
-**Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción que esté en la primera etapa.
+**Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción si tienes éxito en un tiro de Magia de Agua contra su gravedad.
 
 ### Niebla Envolvente 
 
 *Agua, Gaseosa, Visual, Duradera* 
 
+****
+
 **Coste**: 2 acciones y 1 chi 
-
-**Alcance**: Medio 
-
-**Tamaño**: Esfera pequeña o mediana
-
+**Alcance**: 8
+**Tamaño**: Esfera 4
 **Duración**: Concentración 
+
+****
 
 Evaporas una cantidad sustancial de agua y la moldeas para crear una densa neblina. La neblina emergerá desde un punto a distancia media con una cantidad adecuada de agua, extendiéndose alrededor de las esquinas hasta llenar una esfera pequeña. Si te encuentras en un área con una cantidad especialmente alta de agua el tamaño de la niebla aumentará hasta ocupar una esfera mediana. 
 
 Todas las criaturas dentro de la neblina tendrán dificultades para ver su entorno, quedando *cegados* mientras permanezcan en su interior. También obtendrán *ocultamiento* contra todos los ataques que provengan desde fuera de la niebla debido a la dificultad para determinar su posición exacta. La niebla se dispersará cuando pierdas la concentración o si es afectada por un viento lo suficientemente fuerte.
 
-**Empoderar** (1 chi): Extiende el área de efecto de la neblina a una esfera mediana durante una ronda o muévela un paso en cualquier dirección.
+**Empoderar** (1 chi): Duplica el radio de la esfera por 2 hasta un máximo de 16. 
+
+### Nacido de las Profundidades
+
+*Innata, Pasiva*
+
+Las influencias marinas se manifiestan en tu cuerpo, convirtiéndote en un híbrido de tierra y mar. Eres capaz de aguantar la respiración bajo el agua hasta un máximo de diez minutos y los animales marinos no serán naturalmente hostiles hacia ti. 
+
+Recibes también Resistencia al Frío y a efectos de Agua además de aumentar tu velocidad de natación por 4. Si escoges este Rango y perteneces a una raza que pueda respirar bajo el agua podrás respirar el aire de la superficie durante un máximo de una hora.
+
+### Parada Elemental
+
+*Agua, Reacción*
+
+****
+
+**Activación:** Eres el objetivo de un ataque enemigo.
+
+****
+
+En respuesta a recibir un ataque enemigo puedes emplear tu modificador de Magia de Agua para tu tiro defensivo. Esta parada funcionará contra ataques mágicos y de área siempre y cuando no sean de Tormenta o Hielo. 
 
 ## Rango II
+
+### Armas Infundidas
+
+*Agua, Pasiva*
+
+****
+
+Tus ataques físicos con se encuentran imbuidos con tu poder elemental, haciendo así que cuenten como mágicos para los propósitos de Resistencias e Inmunidades. Además, puedes emplear tu modificador de Magia de Agua para los tiros de ataque y tu estadística principal para los tiros de daño. 
+
+Esta habilidad también te permite usar técnicas de arma en tus ataques elementales siempre y cuando sean compatibles además que **puedes empelar chi en lugar de vigor** para usarlas. 
+
+### Guerrero de los Mares
+
+*Innata, Pasiva*
+
+Te has especializado a combatir debajo del agua. No sufres penalizador alguno en tus ataques A Distancia por combatir bajo el agua además de Ventaja en todos tus tiros de ataque y defensa al combatir debajo del mar. Recibes también *vista a ciegas* a distancia 16 si te encuentras en entornos llenos de agua además de Inmunidad a ataques sorpresa en ellos.
 
 ### Muro de Agua
 
 *Agua, Defensivo, Duradero*
 
+****
+
 **Coste**: 1 acción y 1 chi
-
 **Alcance**: Medio
-
-**Tamaño**: Esfera pequeña o línea mediana
-
+**Tamaño**: Esfera 4 o línea 8
 **Duración**: Concentración
 
-Formas un muro de aguas rugientes para protegerte a ti y a tus aliados de ataques enemigos. El muro surgirá desde cualquier punto a distancia media, tomando la forma de una esfera pequeña o una línea mediana. Como barrera tiene PV iguales a tu Rango x 3 y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
+****
 
-El muro proporcionará *cubierta completa* a todas las criaturas al otro lado y las protegerá de efectos Gaseosos (esto incluye criaturas Incorpóreas). Cualquier criatura hostil que intente cruzarlo deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de agua y luego afectarán hacia sus objetivos escogidos.
+Formas un muro de aguas rugientes para protegerte a ti y a tus aliados de ataques enemigos. El muro surgirá desde cualquier punto a distancia media, tomando la forma de una esfera pequeña o una línea mediana. 
 
-Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo tu oponente deberá tener éxito en una tiro para cruzar el muro o su golpe fallará. No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse una vez por ronda.
+Como barrera tiene PV iguales a tu **Rango x 3** y es Inmune al daño de armas no mágicas (el daño de ataques físicos en área, como impactos de artillería, aún funcionarán). El muro permanecerá en el campo de batalla hasta que se le acaben los PV o pierdas la concentración.
+
+El muro proporcionará *cubierta completa* a todas las criaturas al otro lado y las protegerá de efectos Gaseosos (esto incluye a criaturas Incorpóreas). Cualquier criatura hostil que intente cruzarlo deberá tener éxito en un tiro de Fuerza o o será empujada un paso hacia atrás. Además, todos los ataques contra criaturas al otro lado de la barrera primero dañarán tu muro de agua y luego afectarán hacia sus objetivos escogidos.
+
+Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado de un ataque, reduciendo el daño que recibirías como si el muro estuviera en su camino. Si intentas bloquear un ataque cuerpo a cuerpo tu oponente deberá tener éxito en un tiro para cruzar el muro o su golpe fallará. No obstante, si tu objetivo tiene éxito en su tiro para cruzar el muro este no reducirá su daño. Para crear un muro de esta manera debes estar en *posición defensiva* y solo puede emplearse **una vez por ronda**.
 
 **Empoderar** (1 chi): El muro recupera todos sus PV perdidos. Esta habilidad solo se puede usar si tienes suficiente agua para rellenar el muro.
 
@@ -90,141 +133,112 @@ Esta habilidad se puede usar defensivamente para protegerte a ti o a un aliado d
 
 *Agua, Ataque, Área, Físico, Duradero*
 
+****
+
 **Coste**: 2 acciones y 1 chi
-
-**Alcance**: Corto
-
-**Tamaño**: Línea mediana
-
-**Efecto crítico**: Los objetivos fallarán automáticamente su tirada de Heroísmo o Atletismo contra esta habilidad.
-
+**Alcance**: 4
+**Tamaño**: Línea 8
+**Efecto crítico**: Los objetivos fallarán automáticamente su tirada de Fuerza contra esta habilidad.
 **Duración**: Concentración
 
-Moldeas el agua en forma de una poderosa ola para derribar a tus enemigos. Al lanzar este hechizo creas una ola que ataca a todos los objetivos en una línea de tamaño mediano, infligiendo 1d6 + SAB de daño contundente al impactar. Además, los objetivos que sean impactados por la ola deberán tener éxito en una tirada de Heroísmo o Atletismo contra tu magia de Agua o serán empujados un paso hacia atrás y caerán *tropezados*.
+****
+
+Moldeas el agua en forma de una poderosa ola para derribar a tus enemigos. Al lanzar este hechizo creas una ola que ataca a todos los objetivos en una línea de tamaño mediano, infligiendo 2d6 + STAT daño Físico al impactar. Además, los objetivos que sean impactados por la ola deberán tener éxito en un tiro de Fuerza o serán empujados un paso hacia atrás y caerán *tropezados*.
 
 Si mantienes la concentración en la ola esta se moverá un paso en línea recta cada ronda, atacando de nuevo a todos los objetivos en su camino. La ola se disipará si choca contra una superficie sólida grande o pierdes la concentración. Este efecto también puede ser destruido de la misma manera que un muro de agua, teniendo así la misma cantidad de PV e Inmunidades.
 
 **Empoderar** (1 chi): Cuando lanzas este hechizo creas una segunda ola que se moverá en una dirección diferente, atacando a todos los objetivos en su camino.
 
-### Tentáculos de Agua
-
-*Agua, Defensivo, Duradero*
-
-**Coste**: 2 acciones y 1 chi
-
-**Duración**: Concentración
-
-A través de movimientos elegantes moldeas el agua para formar un fluido tentáculo que te protegerá del daño. Mientras el tentáculo permanezca activo una vez por ronda puedes realizar un ataque de Torrente como acción bonus contra un objetivo adyacente. El tentáculo también te otorgará una cantidad de *contadores de escudo* igual a tu Rango - 1 que podrás emplear para detener ataques enemigos. Este hechizo permanecerá activo hasta que pierdas la concentración o gastes tu último contador de escudo.
-
-**Empoderar** (1 chi): Creas un tentáculo adicional que aumentará tus *contadores de escudo* totales en 1 y te permite atacar a un objetivo adicional cuando uses la acción bonus de esta habilidad. No puedes tener más de cuatro tentáculos simultáneos con este hechizo.
-
 ## Rango III
 
 Todos tus hechizos de Agua sustituyen sus dados de daño por d8.
 
-### Prisión Acuosa
+### Tentáculos de Agua
 
-*Agua, Mejora, Agarre, Duradera*
+*Agua, Duradera*
 
-**Coste**: 2 chi
+****
 
-**Alcance**: Medio
+**Coste:** 2 Acciones y 2 chi
+**Duración:** Concentración
 
-**Efecto crítico**: Tu objetivo comienza inmediatamente a ahogarse, quedando así *fatigado* y avanzando su nivel de ahogamiento por un paso.
+****
 
-**Duración**: Concentración
+Manipulas las aguas a tu alrededor para crear una cubierta que te protegerá de ataques enemigos. Al activar esta habilidad recibes una cantidad de *contadores de escudo* igual a tu **Rango** además que el espacio a distancia 4 de ti se convierte en *terreno difícil*. Esta habilidad permanecerá activa hasta que pierdas la concnetración o se te acaben todos tus contadores de escudo. 
 
-Al impactar a un enemigo con un ataque de agua puedes lanzar este hechizo como acción bonus para atraparlo en una esfera de aguas enfurecidas. Tu objetivo debe tener éxito en un tiro de Heroísmo o Atletismo contra tu magia de Agua para evitar este efecto, pero si falla quedará *agarrado* hasta que escape o pierdas la concentración. Al estar rodeados de agua aquellos atrapados por este hechizo empezarán también a *ahogarse*, avanzando su nivel de ahogamiento cada ronda hasta que escapen.
-
-**Empoderar** (1 chi): La Prisión Acuosa afectará a un objetivo adicional si fue impactado por el mismo hechizo que afectó a tu objetivo principal, como puede ser un ataque de Torrente empoderado o uno de Ola chocante
+**Empoderar** (1 chi o vigor): Recuperas la mitad de tus contadores de escudo. Solo puedes empoderar así si te encuentras en un entorno lleno de agua.
 
 ### Controlar el Agua
 
-*Agua, Ambiental, Duradera*
+*Agua, Ambiental*
+
+****
 
 **Coste**: 2 acciones y 2 chi
+**Tamaño**: Radio 16
+**Duración**: Seis rondas
 
-**Tamaño**: Radio grande
+****
 
-**Duración**: Concentración
+Manipulas las aguas que te rodean para que inunden el campo de batalla, empoderando así tus hechizos de agua. Este hechizo solo puede lanzarse si hay una cantidad adecuada de agua a tu alrededor y permanecerá activo hasta que expire su duración o un hechizo Ambiental de una magnitud similar lo anule. El área afectada proporcionará los siguientes efectos:
 
-Manipulas las aguas que te rodean para que inunden el campo de batalla, empoderando así tus hechizos de agua. Este hechizo solo puede lanzarse si hay una cantidad adecuada de agua a tu alrededor y al emplearlo todo el espacio en un radio grande centrado en ti se convierte en terreno difícil. Este efecto permanecerá activo hasta que pierdas la concentración u otro hechizo Ambiental de una magnitud similar lo anule.
+- Recibes **Ventaja** en todos tus tiros relacionados con Magia de Agua y contarás siempre con el agua suficiente para lanzarlos.
+- Todo el área se convierte en *terreno difícil* debido a las fuertes corrientes e inundaciones. 
+- Todas las aguas se volverán difíciles de cruzar, forzando a cada criatura que intente nadar a través de ellas a tener éxito en un tiro de Fuerza o será arrastrada 4 casillas en cualquier dirección y empezará a *ahogarse*. 
 
-Mientras Controlar el Agua permanezca activo todos tus hechizos de Agua se potencian, otorgando Ventaja en todos los tiros de Magia de Agua realizados en el área afectada. Este efecto también creará corrientes fuertes en todas las superficies de agua que otorgarán desventaja en las tiradas de Atletismo para nadar a través de ellas. Aquellos que no superen una tirada de Atletismo para nadar a través de una corriente serán empujados un paso en cualquier dirección y empezarán a *ahogarse*.
+### Aguas Sanadoras
 
-**Empoderar** (1 chi): El siguiente hechizo de Agua que lances reducirá su coste de acciones por 1. Esto solo puede usarse una vez por hechizo.
+*Innata, Pasiva*
 
-### Invocar Elemental de Agua
+Tu profunda conexión con el agua hace que esta sane tus heridas. Al principio de tu turno recuperas Vitalidad igual a tu **Rango** si te encuentras en contacto con el agua además que puedes sanarte de una *herida permanente leve* o *quemadura* que tengas activa. Si te encuentras en dicho entorno recibes también la siguiente reacción.
 
-*Agua, Invocación*
-
-**Coste**: 3 acciones y 2 chi
-
-**Alcance**: Medio
-
-**Duración**: Una hora
-
-Concedes una semblanza de vida a una masa de aguas enfurecidas para que puedan protegerte y atacar a tus enemigos. Este hechizo invocará un Elemental de Agua de nivel 6 que luchará a tu lado hasta que sea destruido. A niveles más altos puedes invocar elementales de mayor poder, aumentando el nivel del elemental invocado en 2 por cada Rango que tengas en magia de Agua por encima del III. 
-
-**Empoderar** (1 chi): Un elemental bajo tu control se cura Vitalidad igual a la mitad de su valor total.
+**Recuperación Superior** (1 chi): Reduces el nivel de una *herida* que te afecte por un paso o te recuperas de un efecto de estado negativo.
 
 ## Rango IV
 
+### Columna de Agua
+
+*Innata, Duradera*
+
+El agua a tus pies surge hasta formar un columna de aguas rugientes que te permite volar una cantidad limitada. Recibes velocidad de vuelo 8 y Ventaja en todos tus tiros de Esquiva si te encuentras encima de una superficie de agua. Esta habilidad no se acumula con otras que también te permitan volar.  
+
 ### Vórtice
 
-*Agua, Ataque, Área, Restricción, Duradera*
+*Agua, Ambiental, Agarre, Duradera*
+
+****
 
 **Coste**: 2 acciones y 2 chi
-
-**Alcance**: Medio
-
-**Tamaño**: Pequeño radio
-
+**Alcance**: 8
+**Tamaño**: Radio 4
 **Efecto crítico**: Los objetivos afectados fallarán automáticamente sus tiradas para evitar ser *agarrados*
-
 **Duración**: Concentración
 
-Formas un vórtice de corrientes poderosas para atrapar a tus enemigos. Haz un ataque de Magia de Agua contra todas las criaturas en el área afectada por este hechizo que inflige 1d8 + SAB daño Contundente al impactar. Aquellos que sean impactados deben tener éxito en una tirada de Heroísmo o Atletismo contra tu magia de Agua o quedarán atrapados por el vórtice y empezarán a *ahogarse*. Aunque tengan éxito los impactados serán empujados un paso y caerán *tropezados*.
+****
 
-El vórtice permanecerá en el campo de batalla hasta que pierdas la concentración. Las criaturas que comiencen su turno dentro del Vórtice o entren en su área de efecto en cualquier momento de la ronda deberán defenderse nuevamente de este hechizo y sufrirán los mismos efectos al fracasar. Las criaturas atrapadas dentro del vórtice recibirán 1d8 + SAB daño Contundente al inicio de su turno y serán arrastradas hacia el interior del Vórtice, lo que las obliga a realizar tiradas de Atletismo si desean escapar del *agarre*.
+Formas un vórtice de corrientes poderosas para atrapar a tus enemigos, el cual emergerá de un punto dentro o fuera del agua que puedas alcanzar. Al crearlo haz un ataque contra todas las criaturas en el área afectada que inflige 2d8 + STAT daño Físico al impactar. 
 
-**Empoderar** (1 chi): Aumenta el tamaño del vórtice a un radio mediano.
+Aquellos que sean impactados deben tener éxito en un tiro de Fuerza a o quedarán *agarrados* por el vórtice y empezarán a *ahogarse* (si tienen éxito serán empujados un paso y caerán *tropezados*). Las criaturas que se encuentren en el agua no podrán defenderse de este hechizo salvo con un tiro de Fuerza. 
 
-### Escaldar
+El vórtice permanecerá en el campo de batalla hasta que pierdas la concentración. Las criaturas que empiecen su turno dentro del Vórtice o entren en su área de efecto deberán defenderse nuevamente de este hechizo y sufrirán los mismos efectos al fracasar. Para escapar del agarre hace falta nadar a una posición fuera del área afectada, lo cual requiere tener éxito en un tiro de Fuerza cada vez que se gaste una acción para moverse. 
 
-*Agua, Mejora*
-
-**Coste**: 1 acción y 2 chi
-
-**Tamaño**: Radio pequeño
-
-**Efecto crítico**: Los objetivos sufren una quemadura de segundo grado.
-
-**Duración**: Una ronda
-
-Sobrecalientas las aguas en un radio pequeño a tu alrededor para hacerlas hervir. Durante esta ronda todas las criaturas que se encuentren en una superficie de agua o que entren en ella sufrirán 1d6 + Rango daño de Fuego y una *quemadura leve*. Este daño y sus efectos tratarán la resistencia al Fuego que tenga el afectado como si fuera de un nivel inferior.
-
-Si utilizas agua hirviente para tus ataques de Magia de Agua estos infligirán 1d6 + Rango de daño adicional de Fuego y una *quemadura leve* al impactar. También obtendrán el efecto crítico de este hechizo además de cualquier efecto crítico que ya posean.
-
-Lanzar múltiples veces este hechizo en la misma ronda no aumentará su daño ni proporcionará efectos adicionales. Tampoco tendrá ningún efecto si se emplea en lugar con frío extremo, limitándose solo a calentar las aguas en el área afectada.
-
-**Empoderar** (1 chi): Aumenta el radio de este hechizo a mediano.
+**Empoderar** (1 chi): Multiplica por 2 el radio del vórtice hasta un máximo de 15. 
 
 ### Taladro Hidráulico
 
 *Agua, Ataque, Área*
 
+****
+
 **Coste**: 1 acción y 2 chi
-
-**Tamaño**: Línea mediana
-
+**Tamaño**: Línea 16
 **Efecto crítico**: Los objetivos afectados sufren una *herida permanente media* y caen *tropezados*. También perderán un *contador de escudo* adicional si lo tuvieran.
 
-**Duración**: Instantáneo
+****
 
-Atacas a todas las criaturas en una línea mediana con un chorro de agua a alta presión capaz de perforar barreras e incluso armaduras. Haz un ataque de Magia de Agua contra todas las criaturas en una línea mediana que inflige 2d8 + SAB daño Contundente y una *herida permanente leve* al impactar.
+Disparas un chorro de agua a alta presión capaz de perforar barreras e incluso armaduras. Haz un ataque de contra todas las criaturas en el área afectada que inflige 3d8 + SAB daño Físico y una *herida permanente leve* al impactar además de empujar 4 casillas en cualquier dirección.
 
-Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además, la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tienen alguno. Además, el daño de este ataque ignora los valores de defensa que tengan estructuras sólidas y criaturas elementales.
+Este ataque no puede ser detenido por muros elementales de cualquier tipo. Además, la armadura que lleven tus objetivos quedará *rota* y perderán un *contador de escudo* si tuvieran alguno. 
 
 **Empoderar** (1 chi): Cuando lances este hechizo haz un segundo ataque que afecta a todos los objetivos en una dirección diferente.
 

@@ -7,11 +7,9 @@ La ira es un sentimiento que fluye a través de todas las personas, sin embargo 
 
 # Reglas fundamentales
 
-Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+**Reserva de vigor:** Tu rango en Ira mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
 
-- **Reserva de vigor:** Tu rango en Ira mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Voluntad para luchar:** Para activar habilidades de Ira debes estar en un combate y tener una motivación de seguir combatiendo. Dado que el poder de la ira depende plenamente de tu voluntad para combatir perderás las habilidades de este rango si perdieras la motivación de seguir luchando.
-- **Completamente innato:** Las habilidades otorgadas por este rango representan tu capacidad de empujar a tu cuerpo al límite para ganar un combate. Por tanto no pueden ser contrarrestadas ni suprimidas por ningún efecto.
+**Estadística principal**: Tu modificador de Ira será igual a la suma de tu estadística de **Fuerza** o **Constitución** y tu rango en esta habilidad.
 
 # Rangos
 
@@ -19,17 +17,35 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ### Ira de Combate
 
-*Ira, Innata, Pasiva*
+*Ira, Innata, Mejora*
 
-Entras en un estado de furia desquiciada donde únicamente deseas acabar con todo enemigo a tu paso. Cuando actives esta habilidad durante una cantidad de rondas de tu elección recibirás Ventaja en todos tus tiros de ataque, talento y salvación relacionados con tus estadísticas físicas. Aumentarás también todo el daño provocado por armas o artes marciales por 1d6 siempre que el daño base esté modificado por una estadística física.
+****
 
-Combatir en un estado de ira te da grandes ventajas luchando pero a su vez inconvenientes. Mientras te encuentres en ira no podrás concentrarte en ningún efecto ni entrar en *posición defensiva* salvo por otras habilidades relacionadas con Ira. No podrás pasar más de seis rondas seguidas en dicho estado y cuando este acabe reducirás tu Vigor por un valor igual a la cantidad de rondas pasadas. Si tu reserva fuera reducida a un valor negativo quedarás *exhausto* hasta que tomes un descanso, y si esta fuera igual o inferior a tu CON negativa entonces caerás *inconsciente*.
+**Coste:** 1 Acción
+**Duración:** Hasta 6 rondas
+
+****
+
+Entras en una temible furia de batalla. Dicho estado permanecerá activo durante un máximo de seis rondas y mientras lo esté recibirás los siguientes efectos tanto positivos como negativos:
+
+- Recibes **Ventaja** en todos tus tiros de ataque, defensa y habilidad relacionados con estadísticas físicas.
+- Añade **1d6** a todos los tiros de daño hechos con armas o artes marciales. 
+- No puedes concentrarte en habilidades que no estén relacionadas con armas o artes marciales. 
+
+Cuando termine este estado reducirás tu **vigor** por un valor igual a la cantidad de rondas que hayas pasado en él. Si esto reduciría tu vigor a un valor inferior a 0 quedarás *fatigado* durante el resto del combate y serás incapaz de entrar de nuevo en ira hasta que tomes un descanso corto. 
 
 ### Frenesí de Batalla
 
-*Innata, Pasiva*
+*Ira, Innata, Mejora*
 
-Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Durante esta ronda recibirás Ventaja en todos tus ataques de arma o artes marciales a costa que obtendrás Desventaja en todos tus tiros defensivos. Esta habilidad puede usarse tanto dentro como fuera de Ira.
+****
+
+**Coste:** Acción bonus
+**Duración:** Una ronda
+
+****
+
+Sacrificas tus capacidades defensivas para centrarte únicamente en atacar. Hasta el inicio de tu siguiente turno recibes **Ventaja** en todos tus tiros de ataque a costa de **Desventaja** en todos tus tiros defensivos. Cabe recalcar que estos efectos no se aplican a tiros de habilidad o de salvación.  
 
 ## Rango II
 
@@ -37,19 +53,28 @@ Concentras toda tu energía en atacar sacrificando tu capacidad defensiva. Duran
 
 *Ira, Miedo, Visual, Innata*
 
+****
+
 **Coste:** 1 vigor
+**Tamaño:** Radio 8
+**Duración:** Concentración
+**Efecto crítico:** Los afectados pasan a estar *asustados*
 
-**Tamaño:** Radio medio
+****
 
-**Efecto crítico:** Los afectados aumentan su nivel de *miedo* por un paso adicional.
+Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Todos los enemigos de menor nivel que puedan verte deben tener éxito en un tiro de Carisma o quedarán *espantados* hasta que pierdas la concentración. 
 
-Muestras tu inmensa fuerza física para hundir la moral de tus enemigos. Esta habilidad solo puede activarse en Ira y al emplearla todos tus enemigos a radio medio deben tener éxito en un tiro de salvación de Voluntad o Intimidar contra tu talento de Intimidar o aumentarán su nivel de *miedo* por un paso. Esta habilidad solo puede usarse una vez por ronda.
+Los afectados pueden repetir el tiro al inicio de su turno y en caso de éxito se liberarán de todos los efectos de miedo que tengan. Esta habilidad solo puede emplearse si te encuentras en Ira. 
 
 ### Resistencia Salvaje
 
 *Ira, Pasiva, Innata*
 
-Cuando combates ni sientes las heridas que sufres, luchando hasta el final sin importar el daño que recibas. Mientras te encuentres en Ira reduce todo el daño recibido por un valor igual a tu Rango. También ignorarás los efectos que te provoquen todas las *heridas permanentes* que no sean graves y recibirás Resistencia a todas las Aflicciones. Dichos efectos actuarán con normalidad cuando abandones la Ira y aunque suprimas las desventajas que otorguen permanecerán en tu cuerpo.
+****
+
+Cuando combates ni sientes las heridas que sufres. Mientras te encuentres en Ira recibes Resistencia igual a tu **Rango** a todo el daño e ignorarás los efectos de estado negativos que te provoquen las Aflicciones y las *heridas permanentes* que no sean graves. 
+
+Cabe recalcar que todos estos efectos actuarán con normalidad cuando salgas de Ira y permanecerán activos para los propósitos de otras habilidades.
 
 ## Rango III
 
@@ -57,13 +82,19 @@ Cuando combates ni sientes las heridas que sufres, luchando hasta el final sin i
 
 *Ira, Pasiva, Innata*
 
-Al entrar en ira tu mente se centra únicamente en luchar, ignorando toda distracción e intento de hacerte ceder. Mientras te encuentras en Ira recibes inmunidad a efectos de Miedo o Mentales además que suprimirás todos los efectos de este tipo que tengas ya activos al entrar en Ira. 
+****
+
+Al entrar en Ira tu mente se centra únicamente en luchar, suprimiendo así todos los efectos de Miedo y Mentales que tengas activos. Además, mientras permanezcas en Ira recibes Inmunidad a efectos de Miedo y Mentales de Rango menor o igual al tuyo.
 
 ### Hasta el Límite
 
 *Pasiva, Innata*
 
-Empujas a tu cuerpo hasta el límite para seguir luchando sin importar las consecuencias. Hasta tres veces por ronda puedes reducir tu Vitalidad máxima por 2 o tus PV máximos por 1 para recuperar un punto de Vigor. Estas reducciones durarán hasta que realices un descanso largo después del cual tu Vitalidad y PV volverán a sus valores anteriores.
+****
+
+Empujas a tu cuerpo hasta el límite para seguir luchando sin importar las consecuencias. Hasta tres veces por ronda puedes reducir tu Vitalidad o PV máximos en 2 para recuperar un punto de Vigor.
+
+Esta reducción durará hasta que realices un descanso largo. después del cual tu Vitalidad y PV volverán a sus valores anteriores. 
 
 ## Rango IV
 

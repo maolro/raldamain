@@ -8,40 +8,31 @@ Te has especializado en un estilo de combate más rápido y preciso, apuntando a
 
 Estilo de Armas Ligeras tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Reserva de vigor:** Tu rango en Estilo de Armas Ligeras mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Estadística principal**: Tu modificador en Estilo de Armas Ligeras será igual a la suma de tu estadística de Destreza y tu rango en esta habilidad.
+- **Reserva de vigor:** Tu rango en Estilo de Armas Ligeras mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo de Armas Ligeras será igual a la suma de tu estadística de **Destreza** y tu rango en esta habilidad.
 
 # Rangos
 
 ## Rango I
 
-### Ataque con arma
-
-*Ligera, Ataque, Cuerpo a cuerpo, Físico*
-
-**Coste:** Una acción
-
-**Alcance:** Cuerpo a cuerpo
-
-**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*.
-
-**Duración**: Instantáneo
-
-Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de DES. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Ligera.
-
 ### Combate Furtivo
 
-*Mejora, Ligera*
+*Ligera, Pasiva*
 
-Tu estilo de combate se centra en aprovechar cada apertura que dejan tus enemigos para infligirles un mayor daño. Cada vez que realices un ataque junto con dos o más aliados, o impactes a un enemigo incapaz de defenderse, aumentarás el nivel de todas las *heridas permanentes* infligidas en un paso. Además, puedes usar tanto Esquiva como Parada para defenderte de un ataque enemigo y quedarte con el resultado más favorable, siempre que sea posible emplear ambas técnicas.
+Aprovechas cada apertura que dejan tus enemigos para infligirles un mayor daño. Tiras **un dado de daño adicional** al impactar si tu objetivo tenía Desventaja en su tiro defensivo o tu ataque ha sido *apoyado* por dos o más personajes. A Rango III tirarás **dos dados** de daño adicionales y a Rango V tirarás **tres dados** de daño adicionales. 
 
 ### Golpe Penetrante
 
 *Ligera, Mejora*
 
+****
+
+**Activación:** Antes de hacer un ataque
 **Coste:** 1 vigor
 
-Apuntas tu ataque hacia los puntos débiles de tu enemigo para atravesar sus defensas. Al impactar con un ataque hecho con un arma Ligera puedes ignorar la Defensa proporcionada por la armadura que lleve tu objetivo, infligiendo el daño de manera directa. La defensa otorgada por otras fuentes se aplicará a discreción del DJ.
+****
+
+Atacas los puntos débiles de tu enemigo para atravesar sus defensas. El daño de tu siguiente ataque ignorará la Defensa que tenga tu objetivo. Esta habilidad no funcionará contra enemigos que lleven armadura completa. 
 
 ## Rango II
 

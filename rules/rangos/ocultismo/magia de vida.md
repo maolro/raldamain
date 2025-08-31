@@ -18,7 +18,7 @@ La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus 
 
 ## Rango I
 
-### Toque sanador
+### Toque Sanador
 
 *Vida, Sanación, Toque*
 
@@ -28,13 +28,13 @@ La magia de Vida se adhiere a un conjunto de reglas fundamentales que rigen sus 
 
 **Duración**: Instantánea
 
-Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado al que puedas tocar se sana Vitalidad igual a tu Rango + 2. Si tu objetivo se encuentra afectado por una Aflicción en lugar de curarle puedes emplear tu tiro de Magia de Vida contra su gravedad para reducir su nivel por un paso.
+Infundes tu toque con energía vital para curar heridas y aflicciones. Un objetivo que puedas tocar se sana Vitalidad igual a tu **Rango + 2**. Si tu objetivo se encuentra afectado por una Aflicción, en lugar de curarle puedes emplear tu tiro de Magia de Vida contra su gravedad para eliminarla. 
 
 **Empoderar** (1 chi): Tu objetivo se recupera de una *herida permanente leve* o le curas de una Aflicción en fase 1.
 
-### Rayo de luz
+### Rayo de Luz
 
-*Vida, Ataque, A Distancia, Radiante*
+*Vida, Ataque, Rápido, Radiante*
 
 **Coste**: 1 acción
 
@@ -44,9 +44,9 @@ Infundes tu toque con energía vital para curar heridas y aflicciones. Un aliado
 
 **Duración**: Instantánea
 
-Atacas a tu enemigo con un rayo de luz cegadora. Realiza un ataque con Magia de Vida contra un objetivo a distancia media que inflige 1d6 + Rango daño Radiante al impactar. Este ataque no puede ser Esquivado por objetivos a distancia corta de ti.
+Atacas a tu enemigo con un rayo de luz cegadora. Haz un ataque con Magia de Vida que inflige 1d6 + Rango daño Radiante al impactar. Este ataque no puede ser Esquivado por objetivos a distancia corta de ti.
 
-**Empoderar** (1 chi): Realiza un ataque adicional contra un objetivo distinto a distancia media.
+**Empoderar** (1 chi): Ataca a un objetivo adicional que puedas alcanzar. 
 
 ### Halo Cegador
 
@@ -60,7 +60,7 @@ Atacas a tu enemigo con un rayo de luz cegadora. Realiza un ataque con Magia de 
 
 **Duración**: Instantánea
 
-Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas las criaturas hostiles a distancia cercana deben tener éxito en un tiro de CON frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. Este hechizo también disipará todos los hechizos Sombríos en su radio de efecto.
+Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas las criaturas hostiles deben tener éxito en un tiro de Salud frente a tu magia de Vida o sufrirán 1d6 + STAT daño Radiante y quedarán *cegadas* durante una ronda. Este hechizo también disipará todos los hechizos Sombríos en su radio de efecto.
 
 **Empoderar** (1 chi): Tu cuerpo continúa brillando con una luz cegadora hasta el comienzo de tu siguiente turno, concediendo Desventaja a todos los ataques a distancia realizados contra ti y forzando a todas las criaturas que empiecen su turno a una distancia corta de ti o se muevan a dicha posición a defenderse de nuevo contra este hechizo.
 
@@ -70,11 +70,13 @@ Emites una explosión de intensa luz que ciega a todos los que te rodean. Todas 
 
 *Vida, Sanación, Toque, Duradero* 
 
+****
+
 **Coste**: 3 acciones y 1 chi 
-
 **Alcance**: Toque 
-
 **Duración**: Concentración 
+
+****
 
 Estableces un vínculo mágico con una criatura dispuesta a la que tocas, lo que permite que ambos compartan su fuerza vital. Mientras este hechizo permanezca activo puedes absorber hasta la mitad del daño que reciba tu aliado vinculado como reacción, disminuyendo tu propia Vitalidad por un valor igual al daño que absorbas. También puedes afectar a tu aliado vinculado con hechizos de Sanación como si te encontraras en una posición adyacente a él.
 
@@ -96,9 +98,9 @@ Un Vínculo Vital durará hasta que tu aliado vinculado elija cancelarlo o pierd
 
 **Duración**: Concentración 
 
-Creas una barrera de luz deslumbrante para protegerte a ti mismo y a otros de los daños. La barrera surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana. La barrera es completamente intangible y no puede ser destruida por medios convencionales, pero será disipada por efectos de Sombra o Gaseosos con la suficiente potencia. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. 
+Creas una barrera de luz deslumbrante para protegerte a ti mismo y a otros de ataques enemigos. La barrera surgirá desde cualquier punto que alcances, tomando la forma de una pequeña esfera o una línea mediana. La barrera es completamente intangible y no puede ser destruida por medios convencionales, pero será disipada por efectos de Sombra o Gaseosos con la suficiente potencia. Este efecto permanecerá en el campo de batalla hasta que pierdas la concentración. 
 
-La barrera proporcionará Inmunidad a todos los ataques a distancia que no sean de área para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de Salud frente a tu magia de Vida o sufrirán 1d6 + Rango daño Radiante y quedarán *cegadas* durante una ronda. 
+La barrera proporcionará Inmunidad a todos los ataques a distancia que no sean de área para todas las criaturas detrás de ella, ya que la luz hace imposible apuntar. Las criaturas que intenten cruzarla deben tener éxito en una tirada de Salud frente a tu magia de Vida o sufrirán 1d6 + STAT daño Radiante y quedarán *cegadas* durante una ronda (la mitad de daño y ningún efecto en caso de éxito). 
 
 Esta habilidad se puede usar defensivamente para protegerte a ti mismo o a un aliado de un ataque, obligando al atacante a tener éxito en una tirada de Salud frente a tu magia de Vida o la luz hará que falle automáticamente su ataque. Para hacerlo, debes estar en *posición defensiva* y solo puedes crear una barrera de esta manera una vez por ronda. 
 

@@ -7,8 +7,9 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 # Reglas fundamentales
 
-- **Reserva de Chi**: Tu rango de magia Ilusoria mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal**: Tu modificador de magia Ilusoria será igual a la suma de tu estadística de Inteligencia y tu rango en esta habilidad.
+**Reserva de Chi**: Tu rango de magia Ilusoria mejorará tu reserva de chi, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+
+**Estadística principal**: Tu modificador de magia Ilusoria será igual a la suma de tu estadística de **Inteligencia **o **Carisma** y tu rango en esta habilidad.
 
 # Rangos
 
@@ -18,49 +19,84 @@ Los sentidos siempre se han relacionado con el cerebro, pero algo que se ha omit
 
 *Ilusoria, Arcana, Visual, Duradera*
 
-**Coste:** 1 acción
+****
 
-**Alcance:** Medio
-
-**Tamaño:** Esfera pequeña
-
+**Coste:** 1 Acción
+**Alcance:** 8
+**Tamaño:** Esfera de radio 1
 **Duración:** Concentración
 
-Creas una imagen incorpórea conocida como una ilusión que imitará un objeto, criatura o fenómeno visual. Una ilusión no debe ocupar un espacio de tamaño superior a una esfera pequeña y no podrá emitir sonidos. Esta permanecerá activa hasta que pierdas la concentración o escojas acabarla. Esta también será destruida si es afectada por un hechizo Arcano.
+****
 
-Una ilusión parecerá completamente real hasta que una criatura interactúe con ella ya que carece de sustancia física. Puede también ser identificada como tal con un tiro exitoso de Percepción contra una dificultad igual a tu tiro de Magia Ilusoria. Cada criatura solo puede tirar para identificar ilusiones una vez por ronda como acción bonus salvo que ocurra un suceso que le haga sospechar que la imagen puede ser una ilusión.
+Creas una ilusión que imitará un objeto o fenómeno visual. La imagen escogida no debe superar el área afectada del hechizo y parecerá completamente real para todos los que la vean, por lo cual es capaz de proporcionar *cubierta* u *ocultamiento*. Esta durará hasta que pierdas la concentración o sea impactada por un ataque mágico. 
 
-**Empoderar** (1 chi): Creas una ilusión adicional en otro espacio a distancia media de ti o aumentas el tamaño de una ilusión para que ocupe una esfera mediana.
+Si un personaje interactúa con la ilusión sentirá su verdadera naturaleza ya que esta carece de sustancia física. Además, un personaje puede desmentir una ilusión si emplea una acción y tiene éxito en un tiro de salvación de Sabiduría.
+
+**Empoderar** (1 chi): Creas una ilusión adicional en otro espacio a distancia media de ti o aumentas el tamaño de una ilusión para que ocupe una esfera de radio 2.
 
 ### Disfraz Ilusorio
 
 *Ilusoria, Arcana, Visual, Duradera*
 
+****
+
 **Coste:** 2 acciones
+**Duración:** Una hora o Concentración
 
-**Duración:** Concentración
+****
 
-Te rodeas de ilusiones para cambiar tu apariencia, tomando el aspecto que tú desees y enmascarando tu posición real. Mientras este hechizo permanezca activo podrás disfrazarte de una criatura conocida, imitándola de tal manera que solo puedes ser identificado con un tiro de Percepción o Averiguar intenciones contra tu Magia Ilusoria. Este disfraz permanecerá activo hasta que pierdas la concentración o sea disipado.
-
-Las ilusiones que conforman tu disfraz te permiten ocultar tu posición real, pudiendo así emplear tu tiro de Magia Ilusoria para defenderte de ataques y efectos que te tengan explícitamente como objetivo. Solo podrás defenderte de esta manera contra criaturas que no hayan identificado tu disfraz ilusorio como tal.
+Te rodeas de ilusiones para cambiar tu apariencia por completo. Este disfraz te permite cambiar tu voz, olor y ropa mediante ilusiones. No obstante, solo podrás disfrazarte de criaturas conocidas de un tamaño similar y este hechizo terminará cuando pierdas la concentración o pase la duración. 
 
 **Empoderar** (1 chi): Lanzas este hechizo sobre otra criatura a distancia media que puedas ver, el cual permanecerá activo hasta que pierdas la concentración.
 
 ### Imagen Fantasmal
 
-*Ilusoria, Arcana, Mental, Mejora, Duradera*
+*Ilusoria, Arcana, Mejora, Duradera*
+
+****
 
 **Coste:** 1 chi
+**Activación:** Antes de lanzar un hechizo Ilusorio
+**Alcance:** 8
+**Duración:** Concentración o hasta que se libere
 
+****
+
+Proyectas un hechizo Ilusorio en la mente de tu objetivo para que su mente lo trate como si fuera real. Esto hará que la ilusión solo pueda ser percibida por tu objetivo y cuente como un efecto Mental para los propósitos de Inmunidades y Resistencias. 
+
+Una ilusión fantasmal funcionará exactamente como aquel objeto, criatura o fenómeno que esté imitando, haciendo así que la mente del afectado la trate como si tuviera sustancia. Por ejemplo, si creas una pared ilusoria y la proyectas en la mente de un objetivo este sentirá que es una barrera sólida y no podrá pasar por ella. 
+
+Para liberarse de este hechizo el afectado puede emplear una acción para intentar un tiro de salvación de Sabiduría. Si lo consigue desmentirá de inmediato todas las ilusiones y no podrás volver a afectarle con este hechizo durante el resto del combate. 
+
+**Empoderar** (1 chi): Afectas a un objetivo adicional con este hechizo.
+
+### Sobrecarga Visual
+
+*Ilusoria, Arcana, Visual*
+
+****
+
+**Coste:** 1 Acción y 1 chi
 **Alcance:** Medio
+**Efecto Crítico:** El objetivo queda *aturdido* durante una ronda
 
-**Duración:** Concentración
+****
 
-Proyectas tus ilusiones en la mente de un enemigo para que esté convencido que son reales. El siguiente hechizo Ilusorio que lances alterará la mente de un objetivo a distancia media, forzándole a tener éxito en un tiro de Concentración o Averiguar intenciones contra tu Magia Ilusoria o dicha ilusión se volverá fantasmal. Este hechizo permanecerá activo hasta que pierdas la concentración o tu objetivo se libere de él.
+Usas tus ilusiones para distraer y confundir a tus enemigos. Un objetivo que alcances debe tener éxito en un tiro de salvación de Sabiduría o quedará *confundido* durante una ronda. Esta habilidad no afectará a enemigos que tengan vista a ciegas o no dependan de los ojos para percibir su entorno. 
 
-Una ilusión fantasmal solo podrá ser percibida por el objetivo afectado y estará convencido que es real. Si intenta interactuar con ella se sentirá completamente real y no podrá tirar Percepción para desmentirla, pero al hacerlo podrá repetir el tiro de Concentración o Averiguar intenciones para intentar liberarse de este efecto. Este efecto se desmentirá si otra persona convence al afectado que el objeto es una ilusión o esta actúa de una manera inverosímil.
+**Empoderar** (1 chi): Este hechizo aumentará su tamaño a una esfera de radio 1. Si ya has empoderado la esfera multiplicará su radio por 2 hasta un máximo de 8. 
 
-**Empoderar** (1 chi o vigo): Afectas a un objetivo adicional a distancia media con este hechizo.
+### Defensa Ilusoria
+
+*Ilusoria, Reacción, Defensiva*
+
+****
+
+**Activación:** Eres el objetivo de un ataque enemigo 
+
+****
+
+Ocultas tu posición exacta mediante ilusiones para defenderte de ataques enemigos. Puedes emplear tu modificador de Magia Ilusoria para tiros defensivos y de salvación contra cualqueir efecto que te tenga como objetivo explícito. Esto no funcionará contra enemigos que sean Inmunes a Ilusiones o cuenten con un sentido que no requiera la vista. 
 
 ## Rango II
 

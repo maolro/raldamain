@@ -5,106 +5,125 @@ category: Armas
 
 # Reglas fundamentales
 
-Estilo de Armas pesadas tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+Estilo de Armas Pesadas tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Reserva de vigor:** Tu rango en Estilo de Armas pesadas mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Estadística principal**: Tu modificador en Estilo de Armas pesadas será igual a la suma de tu estadística de Fuerza y tu rango en esta habilidad.
+- **Reserva de vigor:** Tu rango en Estilo de Armas Pesadas mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+- **Estadística principal**: Tu modificador en Estilo de Armas Pesadas será igual a la suma de tu estadística de **Fuerza** y tu rango en esta habilidad.
 
 # Rangos
 
 ## Rango I
 
-### Ataque con Arma
+### Ataque Poderoso
 
-*Pesado, Cuerpo a cuerpo, Físico, Ataque*
+*Pesada, Mejora*
+****
 
-**Coste**: 2 acciones
+**Activación:** Antes de hacer un ataque
 
-**Alcance**: Cuerpo a cuerpo
+****
 
-**Efecto crítico:** Tu objetivo sufre una *herida permanente leve*.
-
-**Duración**: Instantáneo
-
-Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de FUE. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Pesada.
-
-### Estilo Descuidado
-
-*Pesado, Pasiva*
-
-Te lanzas de lleno al ataque, golpeando con mayor velocidad a costa de quedar en una mala posición defensiva. Al principio de tu turno puedes obtener una acción adicional esta ronda a costa que no podrás entrar en *posición defensiva*. Esta habilidad también anulará los beneficios de cualquier atributo que te permita entrar en *posición defensiva* como acción adicional u obtener sus beneficios de forma pasiva.
+Tiras **un dado de daño adicional** con tu arma a costa de recibir Desventaja en tu tiro de ataque. A Rango V podrás tirar **dos dados** de daño adicionales al usar esta habilidad. 
 
 ### Golpe Desestabilizador
 
-*Pesado, Mejora, Maniobra, Físico*
+*Pesada, Mejora, Maniobra, Físico*
+
+****
 
 **Coste**: 1 vigor
+**Activación:** Al impactar con un ataque
+**Efecto crítico:** Tira el doble de dados de daño Físico
 
-Pones el peso de tu cuerpo sobre el arma para desequilibrar a un enemigo. Al impactara un enemigo con tu arma este debe tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de Armas pesadas o será empujado un paso hacia atrás y quedará *tropezado*. Esta técnica también puede utilizarse si un enemigo detiene tu ataque con Parada, obligándole a realizar el mismo tiro.
+****
+
+Al impactar con un ataque puedes forzar a tu objetivo a tener éxito en un tiro de Fuerza o será empujado 4 casillas en cualquier dirección y caerá *tropezado*. Si esto llega a empujarle contra una pared u objeto sólido sufrirá también 1d6 daño Físico. 
+
+Esta habilidad también puede activarse si tu objetivo se defiende exitosamente con Parada. Además, a Rango III empujarás 8 casillas y provocarás 2d6 daño Físico si choca con un objeto mientras que a Rango V empujarás 12 casillas y provocarás 3d6 daño Físico. 
 
 ## Rango II
 
 ### Gran Barrido
 
-*Pesado, Mejora, Físico, Área*
-
-**Coste**: 1 vigor
-
-Haces un poderoso barrido con tu arma para atacar a todos los enemigos que te rodean. Tu siguiente ataque con arma afectará a todas las criaturas en un radio corto e infligirá 1d6 puntos de daño adicional al impactar. Si un enemigo elige emplear Parada para detener tu ataque todos los objetivos afectados pueden emplear su resultado en el tiro defensivo en lugar del que hayan obtenido.
-
-### Golpe Aturdidor
-
-*Pesado, Mejora, Físico, Aturdidor*
-
-**Coste**: 1 vigor
-
-Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Tras herir a un enemigo con tu arma este deberá superar un tiro de CON contra tu modificador en Armas pesadas o quedará *aturdido* durante una ronda. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Contundente.
-
-### Tajo Feroz
-
 *Pesado, Mejora, Físico*
 
+****
+
+**Activación:** Antes de hacer un ataque.
 **Coste**: 1 vigor
 
-Hundes tu espada en la carne de un enemigo para infligirle graves heridas. Tras herir a un enemigo con tu arma este sufrirá una *herida permanente leve* y el efecto *sangrado*. Si tu enemigo lleva armadura ligera recibirá en su lugar una *herida permanente media*. Solo puedes emplear esta técnica si tu arma es capaz de infligir daño Cortante.
+****
 
-### Reposición Forzosa
-
-*Pesado, Mejora, Físico*
-
-**Coste**: 1 vigor
-
-Extiendes tu alcance para obligar a un enemigo que esquiva a reposicionarse, dejándolo temporalmente vulnerable a ataques adicionales. Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Acrobacias contra tu modificador en Armas Pesadas o se mueve un paso en la dirección que escojas y saldrá inmediatamente de *posición defensiva*.  
-
-## Rango III
+Con un poderoso barrido atacas a todos los enemigos que te rodean, haciendo así que siguiente ataque con arma afecte a todas las criaturas que puedas alcanzar. Si aplicas mejoras a este ataque como Golpe Desestabilizador o Golpe Aturdidor estas se aplicarán a cada objetivo que impactes.
 
 ### Golpe Demoledor
 
 *Pesado, Mejora, Físico*
 
-**Coste**: 2 vigor
+****
 
-Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. Tras impactar a un objetivo aumenta tu daño base por 1d6 y este perderá un *contador de escudo* además que su armadura quedará *rota*. Si ha detenido tu ataque con Parada su arma quedará *rota* si está hecha de un material inferior a la tuya.
+**Activación:** Al impactar con un ataque o si un enemigo detiene uno de tus ataques con Parada.
+**Coste**: 1 vigor
 
-### Carga salvaje
+****
 
-*Pesado, cuerpo a cuerpo, físico*
+Golpeas con tal fuerza que atraviesas las defensas de tu enemigo. La armadura de un objetivo que impactes quedará *rota* y perderá un *contador de escudo*. Si ha detenido tu ataque con Parada su arma quedará *rota* si está hecha de un material inferior a la tuya.
 
-**Coste**: 2 acciones y 2 vigor
+### Reposición Forzosa
 
-**Alcance**: Cuerpo a cuerpo
+*Pesado, Mejora, Físico*
 
-**Tamaño**: Línea media
+****
 
-Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruzarse en tu camino. Avanza un paso en cualquier dirección que elijas y realiza un ataque con tu arma contra cada enemigo que en tu camino que inflige 1d6 puntos de daño adicionales y empuja un paso al impactar. 
+**Activación:** Tu objetivo esquiva exitosamente uno de tus ataques.
+**Coste**: 1 vigor
+
+****
+
+Un enemigo que acaba de esquivar uno de tus ataques de arma debe tener éxito en un tiro de Destreza o se mueve 4 casillas en la dirección que escojas y quedará *descolocado* hasta el inicio de su turno. 
+
+## Rango III
 
 ### Combinar técnicas
 
 *Pesado, Mejora*
 
+****
+
+**Activación:** Después de hacer un ataque.
 **Coste**: 2 vigor
 
+****
+
 Aprovechas cualquier oportunidad que tengas para atacar a tu enemigo una vez más. Tras realizar un ataque con tu arma puedes emplear esta habilidad para realizar un segundo ataque como acción bonus contra el mismo objetivo. El nuevo ataque puede mejorarse con otros atributos salvo este mismo y esta habilidad no puede usarse en ataques que no supongan un coste en acciones.
+
+### Golpe Aturdidor
+
+*Pesado, Mejora, Físico, Aturdimiento*
+
+****
+
+**Activación:** Impactas con un ataque.
+**Coste**: 2 vigor
+
+****
+
+Golpeas con a tu objetivo con gran potencia para dejarlo fuera de combate. Un enemigo que hayas impactado debe tener éxito en un tiro de Constitución o quedará *aturdido* hasta el final de su siguiente turno. 
+
+### Carga salvaje
+
+*Pesado, Mejora*
+
+****
+
+**Activación:** Antes de hacer un ataque.
+**Coste**: 2 vigor
+
+****
+
+Cargas con salvaje abandono, atacando a todos los enemigos que se atreven a cruzarse en tu camino. Antes de hacer un ataque puedes **moverte un paso** como acción bonus y afectar con dicho ataque a cada criatura que se encuentre en una línea de amplitud igual al alcance de tu ataque y longitud igual a la distancia recorrida. 
+
+Además, cada objetivo que impactes será **empujado 4 casillas** en cualquier dirección. Si aplicas mejoras a este ataque como Golpe Desestabilizador o Golpe Aturdidor, estas se aplicarán a cada objetivo que impactes. A Rango V podrás moverte dos pasos con esta habilidad. 
 
 ## Rango IV
 

@@ -97,9 +97,11 @@ Tu cuerpo se transforma para asemejarse cada vez más a una criatura abisal. Una
 
 *Innata, Espacial*
 
+****
+
 **Coste:** 1 acción y 2 chi o vigor
 
-**Duración:** Instantánea
+****
 
 Rompes la barrera del espacio-tiempo para entrar en el vacío infinito entre planos. Al activar esta habilidad viajas instantáneamente a esa dimensión, abandonando el plano material. Mientras te encuentres en el vacío podrás emerger desde cualquier punto en el campo de batalla, terminando de inmediato este hechizo. Este hechizo también puede usarse como reacción para evitar instantánemente un ataque si te encuentras en *posición defensiva*.
 

@@ -3,15 +3,15 @@ title: Guerrero divino
 category: Religión
 ---
 
-Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. Este don otorgado por los dioses crecerá alimentándose de tu fe y ambición siempre que estos coincidan con los deseos de tus dioses dándote fuertes habilidades que te convertirán en un santo viviente de tu religión o en el castigador que acabará con los herejes de tu religión. A medida que tu fe vaya creciendo, la energía divina de tu patrón comenzará a hacerse mas presente en ti imbuyéndote con su fuerza, permitiéndote resistir cualquier ataque lanzado hacia tí, volviéndote mas fuerte durante tus cruzadas e incluso trayéndote de vuelta de entre los muertos para que puedas volver a luchar en su nombre.
+Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. 
 
 # Reglas fundamentales
 
 Guerrero divino tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
 
-- **Fuerza y magia:** Tu rango en Guerrero divino mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Esto se acumula con otras habilidades que aumenten ambas reservas.
-- **Estadística principal**: Para canalizar el poder de un dios necesitas una devoción inquebrantable y la voluntad para luchar hasta la muerte por tu fe.  Por esta razón, tu modificador de Guerrero Divino será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad. 
-- **Conocimiento de los dioses:** Esta habilidad canalizar una pequeña porción de los poderes de tu dios para emplearlos en el campo de batalla. Cada dios tiene de tres a cinco magias relacionadas, las cuales podrás aprender a rangos superiores de Guerrero divino. 
+**Fuerza y magia:** Tu rango en Guerrero divino mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu **Rango**. Esto se acumula con otras habilidades que aumenten ambas reservas.
+
+**Estadística principal**: Tu modificador de Guerrero Divino será igual a la suma de tu estadística de **Sabiduría** o **Carisma** y tu rango en esta habilidad.
 
 # Rangos
 
@@ -21,55 +21,88 @@ Guerrero divino tiene las siguientes reglas fundamentales que se aplican a cualq
 
 *Divina, Mejora*
 
-**Coste:** 1 vigor o chi
+****
 
+**Coste:** 1 vigor o chi
 **Duración:** Una ronda
 
-Empoderas tus ataques con el poder de tu divinidad para castigar a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque físico provocarás daño adicional igual a tu Rango. El tipo de dicho daño dependerá de tu dios y debe ser de tipo Fuego, Frío, Ácido, Eléctrico, Sónico, Necrótico o Radiante. Un arma empoderada de esta manera contará como un arma mágica para determinar si se aplican Resistencias o Inmunidades.
+****
 
-Esta habilidad te permite de manera alternativa infundir un ataque con un hechizo que conozcas para que afecte al siguiente enemigo que impactes. Dicho hechizo se lanzará como acción bonus y si se trata de un ataque sumará su daño y efectos al ataque infundido. Debes seguir pagando el coste de chi del nuevo hechizo escogido.
+Empoderas tus ataques con el poder de tu divinidad para castigar a tus enemigos. La siguiente vez en esta ronda que impactes con un ataque físico provocarás **1d6** daño adicional. Este daño aumentará a 2d6 a Rango III y a 3d6 a Rango V. 
 
-**Empoderar** (1 vigor o chi): Extiendes este efecto una ronda adicional, permitiéndote volver a realizarlo la siguiente vez que impactes a un enemigo sin la necesidad de pagar su coste. 
+El tipo de dicho daño dependerá de tu dios y debe ser de tipo Fuego, Frío, Ácido, Eléctrico, Sónico, Necrótico o Radiante. Un arma empoderada de esta manera contará como un arma mágica para determinar si se aplican Resistencias o Inmunidades.
 
 ### Sentido Divino
 
 *Divina, Pasiva*
 
-Tu conexión divina te abre los ojos a fuerzas más allá de tu plano. Eres capaz de sentir la posición de todos los no-muertos, criaturas extraplanarias y presencias mágicas o divinas a una distancia media de ti. Esta habilidad también te permite identificar la fuerza aproximada de aquellos seres o fuerzas que detectes además de su tipo.
+****
 
-### Canalizar Divinidad
+Tu conexión divina te abre los ojos a fuerzas más allá de tu plano. Eres capaz de sentir la posición de todos los no-muertos, criaturas extraplanarias y presencias mágicas o divinas a distancia 8 de ti. Esta habilidad también te permite identificar la fuerza aproximada de aquellos seres o fuerzas que detectes además de su tipo.
 
-*Divina, Pasiva*
+### Milagro Menor
 
-Tu dios te ha bendecido con la capacidad de emplear una pequeña porción de sus poderes mágicos. Al obtener esta habilidad aprendes dos hechizos de Rango I pertenecientes a una rama mágica que esté vinculada a tu dios. Emplearás tu bonificador de Guerrero Divino para lanzar dichos hechizos además que puedes pagarlos empleando vigor en lugar de chi. Los hechizos escogidos emplearán tu estadística de CAR y tu Rango en Guerrero divino a la hora de calcular la potencia de sus efectos.
+*Divina, Reacción*
+
+****
+
+**Alcance:** 8
+**Activación:** Después que un personaje haga un tiro.
+
+****
+
+Invocas el poder de tu dios para obtener buena suerte en los momentos más críticos. Una cantidad de veces por combate igual a tu **Rango + 2** puedes hacer que un personaje que alcances repita un tiro y se quede con el resultado que más te convenga. 
+
+**Empoderar** (1 vigor o chi): Recuperas un uso de esta habilidad. 
 
 ## Rango II
 
 ### Guerrero de la Fe
 
+*Divina, Mejora*
+
+****
+
+**Coste:** Acción bonus
+**Duración:** Hasta seis rondas
+
+****
+
+Eres capaz de canalizar el poder de tu dios a través de tu cuerpo para empoderar tus habilidades de combate. Dicho estado permanecerá activo durante un máximo de seis rondas y mientras lo esté recibirás los siguientes efectos:
+
+- **Ventaja** en todos tus tiros de ataque y defensa además de sus tiros relacionados con hechizos Divinos.
+- Resistencia al Miedo y efectos Mentales.
+- Puedes emplear tu modificador de Guerrero Divino para defenderte de ataques de cualquier tipo. 
+
+Cuando termine este estado reducirás tu **vigor** por un valor igual a la cantidad de rondas que hayas pasado en él. Si esto reduciría tu vigor a un valor inferior a 0 quedarás *fatigado* durante el resto del combate y serás incapaz de entrar de nuevo en Guerrero de la Fe hasta que tomes un descanso corto. 
+
+### Canalizar Divinidad
+
 *Divina, Pasiva*
 
-Eres capaz de canalizar el poder de tu dios a través de tu cuerpo para empoderar tus habilidades de combate. Tras activar esta habilidad recibirás Ventaja en todos tus tiros de ataque y defensa con armas además de Resistencia al Miedo y efectos Mentales. El bonificador de esta habilidad se aplicará también a todos tus tiros de ataque y defensa con hechizos pertenecientes a categorías relacionadas con tu dios. Esta habilidad permanecerá activa hasta que pasen seis rondas o escojas terminarla.
+****
 
-Aunque esta habilidad no tenga coste de activación, canalizar el poder de un dios a través de tu cuerpo mortal puede ocasionarte daños internos si lo usas excesivamente. Por ello cuando esta habilidad termine perderás una cantidad de chi o vigor igual a la cantidad de rondas que has pasado con ella activa. Si esta reducción bajara cualquiera de las dos reservas a un valor negativo quedarás *exhausto* y no podrás volver a activarla hasta que realices un descanso largo. En el caso que cayeras a un valor igual o inferior a tu CON negativa caerás *inconsciente* al abandonar dicho estado.
+Tu dios te ha bendecido con la capacidad de lanzar determinados hechizos relacionados con él. Escoge tres ramas de Magia Arcana, Elemental u Ocultismo que estén directamente relacionadas con tu dios o doctrina religiosa. Estas deben ser permitidas por el DJ y la elección solo podrá cambiarse si alteras tu enfoque religioso.
 
-### Plegaria de Batalla
-
-*Divina, Ritual*
-
-Antes de un combate le rezas a tu dios para que conceda buena fortuna a tu bando. Durante un descanso corto puedes realizar una plegaria de batalla junto a tus aliados para que el poder de tu dios fluya por vuestras venas. Toda persona que participe en la plegaria sin importar su fe obtendrá tres usos de la habilidad Milagro menor que le durarán hasta que los gaste o pase un día. Los usos adicionales de Milagro menor no se acumulan con aquellos que ya tengan los participantes.
+A este nivel aprendes dos hechizos de Rango I pertenecientes a las categorías escogidas. Emplearás tu bonificador de Guerrero Divino para lanzar dichos hechizos, sustituyendo los rangos y estadísticas que usarías normalmente para ellos por tu Rango en esta habilidad y tu estadística principal.
 
 ### Impacto Desacralizador
 
 *Divina, Mejora*
 
-**Coste:** 1 chi o vigor
+****
 
+**Coste:** 1 chi o vigor
+**Activación:** Impactas con un ataque de cualquier tipo.
 **Efecto crítico:** Elimina todos los hechizos Arcanos y Divinos que tu objetivo tenga actualmente activos.
 
-Deshaces el poder mágico de un enemigo sobrecargándolo con tu poder divino. Al impactar a un enemigo puedes emplear esta habilidad para intentar eliminar un efecto Arcano o Divino que tenga actualmente activo. Para eliminar un efecto debes superar el tiro de magia que tenga su lanzador empleando tu modificador de Guerrero Divino. Esta habilidad también puede usarse para anular temporalmente habilidades pasivas que tenga tu objetivo, las cuales dejarán de funcionar durante una ronda si tienes éxito en tu tiro.
+****
 
-**Empoderar** (1 chi o vigor): Puedes intentar eliminar un hechizo adicional que tenga activo tu objetivo al impactar. También puedes empoderar este hechizo para que una habilidad pasiva que hayas logrado anular permanezca inactiva durante una ronda adicional.
+Deshaces el poder mágico de un enemigo sobrecargándolo con tu poder divino. Al impactar a un enemigo puedes disipar un hechizo Arcano o Divino que tenga activo si tienes éxito en un tiro enfrentado contra el lanzador. 
+
+Esta habilidad también puede enfrentarse para contrarrestar un efecto Arcano o Divino que utilice como reacción, el cual puede disiparse de la misma manera que Contrahechizo.
+
+**Empoderar** (1 chi o vigor): Tienes éxito automático en el tiro enfrentado para disipar hechizos que cuesten menos de 2 chi. Si vuelves a empoderar podrás disipar hechizos con coste inferior a la cantidad de chi gastada en esta habilidad.
 
 ## Rango III
 
@@ -79,23 +112,33 @@ Aprendes dos hechizos de Rango II pertenecientes a una magia asociada a tu dios,
 
 *Divina, Duradera, Moral, Miedo, Visual*
 
+****
+
 **Coste:** 2 acciones y 2 chi o vigor
-
-**Tamaño:** Radio medio
-
 **Duración:** Concentración
 
-Tomas un aspecto casi divino para llenar de valentía a tus aliados y aterrorizar a tus enemigos. Mientras esta habilidad permanezca activa todo enemigo que empiece su turno a distancia media de ti y pueda verte deberá tener éxito en un tiro de Voluntad o Intimidar frente a tu Guerrero Divino o aumentará su nivel de miedo por un paso. Aquellos enemigos que tengan éxito en su primer tiro o logren reducir su nivel de miedo a cero no necesitarán repetir el tiro cada ronda. Este efecto durará hasta que pierdas la concentración.
+****
 
-A su vez que infundes terror a tus enemigos tus aliados se llenan de coraje para seguir luchando, otorgando así Resistencia a efectos de Miedo y Mentales a todos tus aliados a distancia media. Estos bonificadores se acumulan con otras habilidades de Presencia activas en el campo de batalla.
+Tomas un aspecto casi divino para llenar de valentía a tus aliados y aterrorizar a tus enemigos. Esta habilidad permanecerá activa hasta que pierdas la concentración y te proporcionará los siguientes beneficios:
 
-**Empoderar** (1 chi o vigor): Un aliado a distancia media recibe Vitalidad temporal iguales a tu Rango + 2 o cancela los efectos de una habilidad de Moral enemiga.
+- Todos los enemigos de menor nivel que puedan verte deben tener éxito en un tiro de Carisma o quedarán *espantados*. Pueden repetir el tiro al inicio de su turno para intentar liberarse del efecto.
+- Todos los aliados que puedan verte reciben Resistencia a efectos de Miedo y Mentales. Esto se acumula con otras habilidades de Presencia.
+- Eres capaz de emplear la habilidad Revigorar como acción bonus pagando **1 chi o vigor**. 
 
 ### Aura Protectora
 
-*Divina, Pasiva*
+*Divina, Reacción*
 
-El poder de tu dios te protege de influencias mágicas ajenas, otorgándote así Resistencia a efectos Arcanos y Divinos. Además, en respuesta a fallar un tiro contra un hechizo Arcano o Divino que te afecte explícitamente puedes convertirlo en un éxito pagando una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes cancelar. No puedes cancelar hechizos míticos de esta manera.
+****
+
+**Coste:** X chi o vigor
+**Activación:** Al fallar un tiro contra un efecto Arcano o Divino.
+
+****
+
+El poder de tu dios te protege de influencias mágicas ajenas. Puedes converitr un tiro fallido contra un hechizo Arcano o Divino en un éxito si pagas una cantidad de chi o vigor igual a lo que haya pagado el lanzador del hechizo que intentes anular. 
+
+Solo puedes afectar a hechizos que te tengan como objetivo explícito y no puedes cancelar hechizos míticos de esta manera.
 
 ## Rango IV
 
@@ -185,7 +228,7 @@ Liberas la energía divina en tu interior en la forma de una devastadora explosi
 
 Invocas el poder de tu dios para que te transforme en un invencible avatar divino, representando su enorme fuerza en el plano de los mortales. Al transformarte en un Avatar divino recibirás 40 Vitalidad temporal además de enormes mejoras físicas. Este efecto permanecerá activo durante seis rondas o hasta que pierdas la Vitalidad temporal. Al perder los beneficios de Avatar divino por quedarte sin Vitalidad no podrás volver a activarlos hasta que pasen seis rondas desde el momento de empleaste esta habilidad. Avatar divino te otorgará los siguientes beneficios:
 
-- Tus tres estadísticas físicas pasan a ser 12 mientras que tu DEF pasa a ser 20.
+- Tus tres estadísticas físicas y tu estadística de Carisma pasan a ser 12 mientras que tu DEF pasa a ser 20.
 - Recibes Resistencia a daño Fuego, Frío, Radiante, Necrótico, Ácido, Eléctrico y Sónico además de Inmunidad a Aflicciones y efectos de Toque.
 - Obtienes velocidad de vuelo 1 y eres capaz de entrar en *posición defensiva* una vez por ronda como acción bonus.
 - Recibes seis *contadores de escudo* que puedes emplear para reducir el daño de ataques. Estos contadores no se pueden reponer ni se acumulan con otras habilidades.

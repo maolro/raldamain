@@ -19,35 +19,59 @@ Presencia tiene las siguientes reglas fundamentales que se aplican a cualquiera 
 
 *Moral, Mejora, Auditiva, Innata*
 
+****
+
+**Activación:** Antes que un aliado haga un tiro de ataque, defensa o habilidad
 **Alcance:** Medio
 
-A través de palabras inspiradores u órdenes imperiosas refuerzas la motivación de un aliado para un momento crítico. Esta habilidad puede emplearse una cantidad de veces igual a tu Rango + 2 y al usarla un aliado en a distancia media recibirá Ventaja en su siguiente tiro de ataque, defensa o habilidad. Recuperarás todos los usos empleados de esta habilidad al realizar un descanso corto.
+****
 
-**Empoderar** (1 vigor): Recuperas un uso de esta habilidad o un aliado que afectes podrá emplear tu modificador de Presencia para defenderse de un efecto Mental o de Miedo.
+A través de palabras inspiradores u órdenes imperiosas refuerzas la motivación de un aliado para un momento crítico, otorgándole así Ventaja en un tiro de ataque, defensa o habilidad. 
+
+Esta habilidad solo puede usarse una cantidad veces en un combate igual a tu **Rango + 2** y recuperas todos sus usos al realizar un descanso corto.
+
+**Empoderar** (1 vigor): Recuperas un uso de esta habilidad.
 
 ### Voluntad Poderosa
 
 *Innata, Pasiva*
 
-Como líder jamás mostrarás debilidad ante tus compañeros aunque te enfrentes a situaciones imposibles. Recibes Resistencia a efectos de Miedo y Mentales además que tu nivel de miedo no puede ser aumentado con efectos críticos. Puedes emplear tu bonificador de Presencia en todos tus tiros para defenderte de efectos de dichas categorías.
+Como líder jamás mostrarás debilidad ante tus compañeros aunque te enfrentes a situaciones imposibles. Recibes Resistencia a efectos de Miedo y Mentales además que puedes emplear tu modificador de Presencia para defenderte de efectos de dichas categorías.
 
-### Inspirar Temor
+### Provocación
 
-*Moral, Miedo, Innata, Visual/Auditiva, Duradera*
+*Presencia, Moral, Innata, Visual/Auditiva*
 
-**Coste:** 1 acción y 1 vigor
+****
 
+**Coste:** 1 vigor
+**Activación:** Cualquier momento de la ronda
+**Alcance:** Medio
+**Duración:** Una ronda
+**Efecto Crítico:** El afectado deberá seguir atacándote aunque sea impactado por un ataque. 
+
+****
+
+Un objetivo debe tener éxito en un tiro de salvación de Carisma o caerá por tus provocaciones durante una ronda. Esto causará que solo pueda atacarte a ti y reciba Desventaja defendiéndose de ataques hechos por otros personajes. 
+
+Este efecto cesará de inmediato si el afectado es impactado por un ataque. Además, si tu objetivo tiene éxito en el tiro de salvación no podrás volver a afectarle con esta habilidad hasta el inicio de tu siguiente turno.
+
+**Empoderar** (1 vigor): Esta habilidad afectará a todos los objetivos en un radio pequeño. Si vuelves a empoderar el área de efecto volverá a aumentar por un paso hasta llegar a un radio lejano. 
+
+### Desmoralizar
+
+*Presencia, Moral, Innata, Visual/Auditiva*
+
+****
+
+**Coste:** 1 Acción y 1 vigor
 **Tamaño:** Radio medio
+**Duración:** Una ronda
+**Efecto Crítico:** Los afectados quedarán *asustados* durante una ronda. 
 
-**Efecto crítico:** Los afectados aumentarán su nivel de *miedo* por un paso adicional.
+****
 
-**Duración:** Concentración
-
-Tu fama o infamia hace que tus enemigos pierdan la voluntad de luchar con solo verte. Todos los enemigos que puedan verte u oírte a una distancia media deberán tener éxito en un tiro de Voluntad o Intimidar frente a tu bonificador de Presencia o aumentarán su nivel de *miedo* por un paso. Este efecto durará hasta que pierdas la concentración o escojas acabarlo.
-
-Mientras continúes inspirando terror todo enemigo a distancia media de ti que pueda verte u oírte deberá repetir el tiro y si fracasa aumentará su nivel de miedo por un paso adicional. En el caso que tenga éxito podrá reducir su nivel de miedo por un paso, liberándose de este efecto durante el resto del combate si fuera reducido a cero. 
-
-**Empoderar** (1 vigor): En esta ronda cada enemigo que fracase su tiro contra este efecto aumentará su nivel de miedo por un paso adicional.
+Todas las criaturas que puedan verte o escucharte deberán tener éxito en un tiro de salvación de Carisma o quedarán *espantadas* durante una ronda. Solo podrás afectar con esta habilidad a objetivos de menor nivel al tuyo. 
 
 ## Rango II  
 
@@ -211,7 +235,7 @@ Los beneficios de esta habilidad no se acumulan con Inspirar heroísmo y se acab
 
 Has alcanzado un gran renombre como líder, ganándote así el respeto con facilidad de todos los que te escuchen y dirigiéndolos a realizar estrategias cada vez más complejas. Cada vez que utilices la habilidad Voz del comandante otorgarás un dado de Ventaja a hasta tres aliados diferentes quienes podrán utilizarlo en cualquier momento de la ronda. Una aliado no podrá acumular más de un dado de Ventaja de esta manera.
 
-### Nervios de acero
+### Nervios de Acero
 
 *Moral, Pasiva, Innata*
 

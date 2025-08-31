@@ -68,7 +68,7 @@ Este hechizo puede también arrastrar objetos de tamaño mediano un paso hacia t
 
 **Duración:** Concentración
 
-Aumentas enormemente la gravedad en cualquier punto a distancia media de ti para formar un pozo de gravedad. Mientras el pozo permanezca activo toda criatura a distancia cercana de él deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia Gravitatoria si desea alejarse del pozo. Además, todas las criaturas en el área afectada por el pozo recibirán Vulnerabilidad a ataques a distancia y tendrán Desventaja atacando a enemigos fuera del pozo debido a la presión gravitatoria. 
+Aumentas enormemente la gravedad en cualquier punto a distancia media de ti para formar un pozo de gravedad. Mientras el pozo permanezca activo toda criatura a distancia cercana de él deberá tener éxito en un tiro de Heroísmo o Atletismo contra tu Magia Gravitatoria si desea alejarse del pozo. Además, todas las criaturas en el área afectada por el pozo recibirán Vulnerabilidad a ataques A Distancia y tendrán Desventaja atacando a enemigos fuera del pozo debido a la presión gravitatoria. 
 
 De manera alternativa puedes hacer que el pozo esté centrado en un objeto o criatura, fijando así su posición a la del objetivo afectado. Si escoges una criatura viva esta puede tirar una vez cada ronda para intentar liberarse de este efecto, eliminándolo si tiene éxito en un tiro de Heroísmo o Destrozar contra tu Magia gravitatoria. En ambos casos pozo permanecerá activo hasta que pierdas la concentración o sea eliminado.
 
@@ -269,7 +269,7 @@ Ejerces una presión gravitatoria enormemente fuerte en un objetivo para aplasta
 
 **Empoderar** (1 chi): Al lanzar este hechizo afectas a un objetivo adicional.
 
-### Empuje todopoderoso
+### Empuje Todopoderoso
 
 **Coste:** 2 acciones y 3 chi 
 

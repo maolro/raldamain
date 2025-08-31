@@ -7,10 +7,9 @@ category: Armas
 
 # Reglas fundamentales
 
-Estilo de Duelo tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+**Reserva de vigor:** Tu rango en Estilo de Duelo mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
 
-- **Reserva de vigor:** Tu rango en Estilo de Duelo mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Estadística principal**: Tu modificador en Estilo de Duelo será igual a la suma de tu estadística de Fuerza o Destreza y tu rango en esta habilidad.
+**Estadística principal**: Tu modificador en Estilo de Duelo será igual a la suma de tu estadística de **Fuerza** o **Destreza** y tu rango en esta habilidad.
 
 # Rangos
 
@@ -18,22 +17,45 @@ Estilo de Duelo tiene las siguientes reglas fundamentales que se aplican a cualq
 
 ### Destreza Defensiva
 
-*Duelo, Pasiva*
+*Duelo, Reacción*
 
-Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo usando Parada puedes tirar con una segunda reacción defensiva de tu elección y quedarte con el resultado que más te convenga. La reacción defensiva debe ser capaz de detener el ataque en cuestión y podrás emplear reacciones defensivas relacionadas con ella. Algunos ejemplos son Esquiva, Parada con Escudo o Parada con otras habilidades mágicas.
+****
 
-### Truco de Espada
+**Activación:** Te defiendes de un ataque enemigo usando Parada.
 
-*Duelo, Mejora, Maniobra*
+****
+
+Combinas tus técnicas defensivas con tus ágiles reflejos para evitar ataques con mayor facilidad. Al defenderte de un ataque enemigo puedes tirar una segunda reacción defensiva de tu elección y quedarte con el resultado que más te convenga. 
+
+La reacción defensiva escogida debe ser capaz de detener el ataque en cuestión y podrás emplear habilidades defensivas relacionadas con ella. Algunos ejemplos son Esquiva, Parada con Escudo o Parada con otras habilidades mágicas. También es posible emplear Parada de nuevo si tienes un arma en tu mano secundaria.
+
+### Ataque Doble
+
+*Duelo, Mejora*
+
+****
 
 **Coste:** 1 vigor
+**Activación:** Después de hacer un ataque con el arma en tu mano principal.
 
-Empleas tu maestría con la espada para realizar todo tipo de maniobras. Al activar esta habilidad puedes hacer una maniobra de combate como acción bonus, mejorando el ataque que acabas de hacer. Solo puedes activar una maniobra por ataque y puedes crear técnicas propias si lo permite el DJ. Estos son algunos ejemplos de maniobras que puedes realizar.
+****
 
-- **Paso Rápido:** *Desenganchas* inmediatamente como acción bonus y te mueves un paso en cualquier dirección. 
-- **Al Suelo:** Al impactar con tu ataque tu objetivo deberá tener éxito en un tiro de Heroísmo o Acrobacias contra tu modificador de arma o caerá *tropezado*. 
-- **Cambio Repentino:** Si fallas tu ataque puedes hacer un ataque bonus contra un objetivo diferente adyacente a ti, manteniendo todas las mejoras que hayas otorgado a tu ataque original. 
-- **Estocada Fuerte:** Aumentas el daño base de tu ataque por 1d6 y provocas *sangrado* al impactar si tu objetivo lleva armadura ligera
+Haz un ataque con el arma en tu mano secundaria como acción bonus. Dicho ataque tendrá Desventaja y solo puedes emplear esta habilidad una vez por ronda. A Rango III perderás la Desventaja recibida por esta habilidad.
+
+Si tienes más de dos brazos o algún otro miembro capaz de portar un arma eres capaz de emplear esta habilidad tantas veces por ronda como armas puedas llevar. No obstante, cada uso adicional te otorgará un dado de Desventaja en tu tiro. A Rango V podrás hacer un segundo ataque por ronda con esta habilidad sin la necesidad de tener Desventaja. 
+
+### Estocada Fuerte
+
+*Duelo, Mejora*
+
+****
+
+**Coste:** 1 Acción o 1 vigor
+**Activación:** Antes de hacer un ataque con un arma.
+
+****
+
+Concentras tus fuerzas en una única estocada. Tu siguiente ataque de arma recibirá un dado de daño adicional y provocará una *herida leve* al impactar. 
 
 ## Rango II
 

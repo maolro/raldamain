@@ -7,9 +7,9 @@ Te has entrenado para ser experto en todo lo relacionado con un terreno determin
 
 # Reglas fundamentales
 
-Rastrear tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
+**Reserva de vigor:** Tu rango en Rastrear mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
 
-- **Reserva de vigor:** Tu rango en Rastrear mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
+**Estadística principal**: Tu modificador de Rastrear será igual a la suma de tu estadística de **Sabiduría** y tu rango en esta habilidad.
 
 # Rangos
 
@@ -17,23 +17,33 @@ Rastrear tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 ### Analizar Enemigo
 
-*Innata, Duradera*
+*Rastrear, Innata, Mejora*
+
+****
 
 **Coste:** 1 vigor
+**Duración:** Un día
+**Requisitos:** Has estado observando a tu objetivo durante por lo menos una ronda
 
-Observas con atención los movimientos y la forma de combatir de un enemigo para adaptarte a él y predecir sus acciones futuras. Esta habilidad te otorgará Ventaja en todos tus tiros de ataque y defensa durante el resto del combate contra un enemigo que hayas estado observando durante por lo menos una ronda. Los beneficios de Analizar enemigo permanecerán activos hasta que utilices esta habilidad en un objetivo diferente o tu objetivo cambie radicalmente su forma de luchar.
+****
+
+Analizas el estilo de combate de un enemigo para predecir sus movimientos, recibiendo así **Ventaja** en todos tus tiros de ataque y defensa contra él. Esta Ventaja se aplica también a tus tiros de Percepción y Rastrear para buscarlo. 
+
+Solo puedes tener analizado un único enemigo a la vez y cambiar requiere que vuelvas a usar esta habilidad. Los efectos de esta habilidad se perderán cuando tu objetivo se muera o pase un día entero. 
 
 ### Sanador Instintivo
 
-*Innata, Toque, Sanación*
+*Rastrear, Innata, Toque, Sanación*
+
+****
 
 **Coste:** 1 acción y 1 vigor
-
-**Alcance:** Cuerpo a cuerpo
-
+**Alcance:** Toque
 **Duración:** Instantáneo
 
-Has desarrollado la capacidad de aplicar primeros auxilios en situaciones de vida o muerte hasta el punto que puedes sanar graves heridas por instinto. Una criatura que puedas tocar recupera Vitalidad igual a tu Rango + 2 y reduce la gravedad de una *herida permanente* o Aflicción que le esté afectando por un paso. Para emplear esta habilidad necesitas tener materiales adecuados para curar, como pueden ser vendas o desinfectantes.
+****
+
+Has desarrollado enormemente la capacidad de aplicar primeros auxilios en situaciones de vida o muerte. Un objetivo que puedas tocar recupera Vitalidad igual a tu **Rango + 2** y reduce la gravedad de una *herida permanente* o Aflicción que tenga por un paso. Para emplear esta habilidad necesitas tener materiales adecuados para curar, como pueden ser vendas o desinfectantes.
 
 ## Rango II
 

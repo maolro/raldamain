@@ -172,14 +172,10 @@ Tus hechizos de Evocación convierten sus dados de daño a d10 y los de Rango II
 
 ### Cañón de Chi
 
-**Coste:** 2 acciones y 3 chi
-
+**Coste:** 1 Acción y 3 chi
 **Alcance:** Medio
-
 **Tamaño:** Radio medio
-
 **Efecto crítico:** Los objetivos afectados sufren una *herida permanente media*
-
 **Duración:** Instantáneo
 
 Haces un poderoso ataque de energía mágica que provoca una explosión de chi a una distancia media. Haz un ataque contra todas las criaturas en un radio medio centrado en un punto que alcances que infligirá 2d10 + INT daño Arcano además de una *herida permanente leve*. 

@@ -16,33 +16,33 @@ Estilo de Cadenas tiene las siguientes reglas fundamentales que se aplican a cua
 
 ## Rango I
 
-### Ataque con Arma
-
-*Cadena, Ataque, Físico*
-
-**Coste:** 2 acciones
-
-**Alcance:** Corto
-
-**Efecto crítico:** El objetivo sufre una *herida permanente leve*
-
-Haz un ataque con tu arma contra un objetivo adyacente que inflige daño igual al daño base de tu arma modificado por tu estadística de FUE. Puedes usar este atributo para realizar ataques con cualquier arma de la categoría Cadena.
-
 ### Enredar
 
-*Cadena, Ataque, Maniobra*
+*Cadena, Mejora*
 
-**Coste:** 1 acción
+****
 
-**Alcance:** Corto
-
+**Activación:** Al impactar con un ataque de arma.
+**Duración: **Concentración o hasta que termine
 **Efecto crítico:** El objetivo cae *tropezado* o es empujado un paso en cualquier dirección.
 
-Empleas tu cadena para retener a tus enemigos en lugar de herirlos. Haz un ataque con tu cadena que *enredará* a tu objetivo al impactar. Este podrá intentar liberarse en su turno si tiene éxito en un tiro de Heroísmo o Destrozar contra tu modificador de arma. Mientras estés enredando a un enemigo no podrás emplear tu cadena para atacar a otros objetivos o usarla activar atributos donde sea neceario que tu cadena esté libre, como Danza de cadenas.
+****
 
-Tu objetivo permanecerá *enredado* hasta que pierdas la concentración o consiga liberarse de este efecto. Si has enredado a un objetivo con tu cadena puedes intentar retenerlo aún más, forzándolo a tener éxito en un tiro de Destrozar o Heroísmo contra tu modificador de arma o quedará *agarrado*. Cada intento de agarre te cuesta tantas acciones como las que emplearías en este ataque y tu enemigo podrá intentar escaparse de la misma manera.
+Empleas tu cadena para retener a tus enemigos en lugar de herirlos. Al impactar con tu arma tu objetivo deberá tener éxito en un tiro de salvación de Fuerza o quedará *enredado*. Un ataque mejorado de esta manera no provocará daño ni heridas además que solo puedes tener un único enemigo enredado con tu arma. 
 
-**Empoderar** (1 vigor): Un objetivo *enredado* cae *tropezado* o es empujado un paso en cualquier dirección. Puede evitar este efecto si tiene éxito en un tiro de Acrobacias o Heroísmo.
+### Arrastre con Cadena
+
+*Cadena, Mejora*
+
+****
+
+**Coste:** 1 vigor
+**Activación:** Al impactar con un ataque de arma.
+**Efecto Crítico:** Duplica el daño de caída
+
+****
+
+Tu objetivo debe tener éxito en un tiro de salvación de Fuerza o será empujado un paso en cualquier dirección y quedará *tropezado*. Si esto le haría chocar con un objeto sólido sufrirá 1d6 + FUE daño de caída (2d6 a Rango II y 3d6 a Rango III). Puedes afectar a objetivos *enredados* o *agarrados* con esta habilidad pero no podrás alejarles más de un paso de ti. 
 
 ### Danza de Cadenas
 

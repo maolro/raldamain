@@ -8,7 +8,7 @@ title: Magia de Transmutación
 
 Magia de Transmutación se adhiere a un conjunto de reglas fundamentales que sustentan sus hechizos y habilidades: 
 
-- **Reserva de Chi**: Tu rango de magia de Tranmejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+- **Reserva de Chi**: Tu rango de magia de Transmutación mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
 - **Estadística principal:** Tu modificador de magia de Transmutación será igual a la suma de tu estadística de Inteligencia y tu rango en esta habilidad.
 
 # Rangos

@@ -7,30 +7,36 @@ Como ferviente creyente de tu fe, tus oraciones se han visto recompensadas por a
 
 # Reglas fundamentales
 
-- **Reserva de Chi**: Tu rango de magia Divina mejorará tu reserva de chi, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
-- **Estadística principal**: Tu modificador de Magia Divina se calculará como la suma de tu estadística de Sabiduría y tu rango en la Magia Divina.
-- **Conocimiento de los dioses:** La Magia Divina te abre las puertas a secretos mágicos conocidos por tu dios y te permite canalizar una pequeña porción de sus poderes. Cada dios tiene de tres a cinco magias relacionadas, las cuales podrás aprender a rangos superiores de esta habilidad. 
-- **Protección divina:** Puedes emplear tu modificador de Magia Divina para tiros de habilidad para defenderte de efectos Divinos o aquellos pertenecientes a categorías relacionadas con tu dios, sustituyendo el talento que usarías normalmente.
+**Reserva de Chi**: Tu rango de Magia Divina mejorará tu reserva de chi, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva. 
+
+**Estadística principal**: Tu modificador de Magia Divina se calculará como la suma de tu estadística de Inteligencia, Sabudría o Carisma y tu rango en la Magia Divina.
 
 # Rangos
 
 ## Rango I
 
-### Milagro menor
+### Milagro Menor
+
+*Divina, Reacción*
+
+****
+
+**Alcance:** 8
+**Activación:** Después que un personaje haga un tiro.
+
+****
+
+Invocas el poder de tu dios para obtener buena suerte en los momentos más críticos. Una cantidad de veces por combate igual a tu **Rango + 2** puedes hacer que un personaje que alcances repita un tiro y se quede con el resultado que más te convenga. 
+
+**Empoderar** (1 vigor o chi): Recuperas un uso de esta habilidad.
+
+### Enviado de los Dioses
 
 *Divina, Pasiva*
 
-Tu deidad te permite dar pequeñas maldiciones y bendiciones. Como acción bonus empleable una cantidad de veces al día igual a tu Rango + 2 una criatura a distancia media repite un tiro de ataque, habilidad o defensa, haciendo que se quede con el mejor o peor resultado según tu conveniencia. Si afectas a una criatura hostil con esta habilidad puede gastar otras habilidades que le permitan repetir tiros como Premonición, Instinto de supervivencia o esta misma para contrarrestar sus efectos.
+Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. 
 
-**Empoderar** (1 chi): Recuperas un uso de esta habilidad
-
-### Enviado de los dioses
-
-*Divina, Pasiva*
-
-Tienes gran conocimiento de tu doctrina religiosa y los secretos de tu fe. Conoces cómo hablar un idioma adicional relacionado con tu divinidad y las criaturas relacionadas con esta te tratarán como si fueses una de ellas. Esta habilidad te otorga también la capacidad de detectar la posición, categoría y fuerza aproximada de todas las criaturas extraplanarias y efectos mágicos tanto Arcanos como Divinos a una distancia media.
-
-**Empoderar** (1 chi): Tu dios te otorga una pequeña ayuda no relacionada con el combate, la cual quedará escogida por el máster.
+Esta habilidad te otorga también la capacidad de detectar la posición, categoría y fuerza aproximada de todas las criaturas extraplanarias y efectos mágicos tanto Arcanos como Divinos a distancia 8 de ti.
 
 ### Oración
 
@@ -40,26 +46,80 @@ Empleando diez minutos de oración y contemplación puedes comunicarte directame
 
 No obstante, tu dios puede hablarte de forma críptica o no contestar determinadas preguntas. Cada vez sucesiva del mismo día que utilices oración reduce el número de preguntas que puedas hacerle a tu dios por 1 y un uso excesivo de este ritual puede perjudicar la relación que tengas con tu dios.
 
+### Escudo de la Fe
+
+*Divina, Reacción*
+
+****
+
+En respuesta a recibir un ataque enemigo puedes emplear tu modificador de Magia Divina para tu tiro defensivo. También puedes emplear tu modificador de Magia Divina para cualquier tiro de salvación en el que defiendas de un efecto Divino. 
+
 ## Rango II
 
-Aprendes dos hechizos de rango I pertenecientes a una magia relacionada con tu divinidad. Dichos hechizos tendrán la categoría Divina además de aquellas que ya posean.
+Aprendes dos hechizos de Rango I pertenecientes a una magia relacionada con tu divinidad. Dichos hechizos tendrán la categoría Divina además de aquellas que ya posean.
+
+### Manifestación Divina
+
+*Divina, Mejora*
+
+****
+
+**Coste:** 1 Acción y 1 chi
+**Alcance:** 8
+**Duración:** Instantáneo o seis rondas
+
+****
+
+Maldices un enemigo con el poder de tu dios. 
+
+| Rama   | estadística | Efecto                                   |
+| ------ | ----------- | ---------------------------------------- |
+|        |             |                                          |
+| Ácido  | CON         | 2d6 daño Ácido cada ronda                |
+| Aire   | CON         | Pierde la capacidad de volar             |
+| Fuego  | CON         | 3d6 daño Fuego cada ronda                |
+| Hielo  | CON         | 2d6 daño Frío cada ronda y *ralentizado* |
+| Mental | INT         | Reduce  y *confundido*                   |
+|        |             |                                          |
+|        |             |                                          |
+|        |             |                                          |
+|        |             |                                          |
+|        |             |                                          |
+
+
+
+### Maldición Menor
+
+*Divina, Maldición*
+
+****
+
+**Coste:** 1 Acción y 1 chi
+**Alcance:** 8
+**Duración:** Instantáneo o seis rondas
+
+****
+
+
 
 ### Manifestación Divina
 
 *Divina, Maldición*
 
+****
+
 **Coste:** 1 acción y 1 chi
-
 **Alcance:** Medio
-
 **Duración:** Instantáneo o hasta que sea eliminado
+
+****
 
 Empleas el poder de tu dios para bendecir o castigar a una criatura a distancia media. Este hechizo durará hasta que sea eliminado o termine su efecto y su naturaleza exacta dependerá de tu dios. A continuación se presentan algunos ejemplos de los efectos de este hechizo y eres libre de modificarlos como desees siempre y cuando cuentes con permiso del DJ.
 
 - Tu objetivo se cura de un efecto de estado negativo que tenga activo.
 - Intentas eliminar una Maldición o efecto Arcano Duradero que tenga activo tu objetivo. Deberás superar el modificador mágico del lanzador de dicho efecto con un tiro de Magia divina.
 - Tu objetivo debe tener éxito en un tiro de Salud o Voluntad frente a tu Magia Divina o sufrirá un efecto de estado negativo entre *cegado*, *confundido*, *ralentizado*, *quemado*, *sangrado*, *enfermado* o *fatigado*. El afectado podrá tirar de nuevo cada ronda para intentar liberarse de la maldición.
-- Tu objetivo debe tener éxito en un tiro de Salud frente a tu Magia Divina o reduces una de sus Resistencias por un paso durante el resto del combate. Solo podrás escoger Resistencias a magias relacionadas con tu dios.
+- Tu objetivo debe tener éxito en un tiro de Salud o reduces una de sus Resistencias por un paso durante el resto del combate. Solo podrás escoger Resistencias a magias relacionadas con tu dios.
 
 **Empoderar** (1 chi): Afectas a un objetivo adicional a distancia media con este hechizo.
 
@@ -67,19 +127,20 @@ Empleas el poder de tu dios para bendecir o castigar a una criatura a distancia 
 
 *Divina, Ambiental*
 
-**Coste:** 3 acciones y 1 chi
+****
 
-**Tamaño:** Radio grande
+**Coste:** 2 acciones y 1 chi
+**Tamaño:** Esfera 16
+**Duración:** Una hora
 
-**Duración:** Diez minutos
+****
 
-Invocas el poder de tu dios en una región, fortaleciendo sus creyentes y perjudicando a los infieles. Este hechizo consagrará toda la tierra en un radio grande durante los siguientes diez minutos y no requerirá tu concentración para mantenerse. Todo adorador de tu fe que se encuentre sobre tierra consagrada recibirá Ventaja en todos sus tiros de ataque, defensa y habilidad. Este bonificador no se acumula con aquel otorgado por Guerrero de la fe, pero permitirá emplear dicha habilidad sin la necesidad de pagar Vitalidad o chi cuando esta acabe.
+Invocas el poder de tu dios en una región, fortaleciendo sus creyentes y perjudicando a los infieles. Este hechizo consagrará toda la tierra en un radio grande y permanecerá activo hasta que expire su duración o sea disipado. Un terreno consagrado proporcionará los siguientes efectos:
 
-La tierra consagrada impedirá también los poderes de dioses enemigos. No podrán invocarse criaturas extraplanarias pertenecientes a religiones enemigas ni se podrán crear no-muertos salvo que tu dios lo permita. Si lanzas este hechizo en una zona consagrada por otro dios deberás superar al lanzador de dicho efecto en un tiro enfrentado de Magia Divina. 
+- Los adoradores de tu fe reciben **Ventaja** en sus tiros de ataque, defensa y habilidad. Este bonificador no se acumula con aquel otorgado por Guerrero de la fe, pero permitirá emplear dicha habilidad sin la necesidad de pagar Vitalidad o chi cuando esta acabe.
+- No podrán invocarse criaturas extraplanarias pertenecientes a religiones enemigas ni se podrán crear no-muertos salvo que tu dios lo permita. 
 
-Puedes hacer que un entorno sea Tierra consagrada de manera permanente realizando un ritual de una hora de duración. Según la naturaleza de tu dios puede requerir un sacrifico o una gran ofrenda para invocar tal cantidad de poder en el plano material.
-
-**Empoderar** (1 chi): Reduce el coste en acciones por 1 de un hechizo Divino hasta un mínimo de 1.
+Al tratarse de un efecto ambiental los efectos de este hechizo pueden contrarrestarse lanzando otro hechizo de Tierra Consagrada y superando un tiro enfrentado con su lanzador, lo cual se resolverá como un choque de Dominios. Un éxito disipará sus efectos durante una ronda mientras que dos éxitos lo eliminará por completo, sustituyéndolo por la Tierra Consagrada del lanzador enemigo. 
 
 ## Rango III
 

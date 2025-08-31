@@ -7,11 +7,7 @@ La resistencia de tu cuerpo es superior a la media, siendo por ello mas difícil
 
 # Reglas fundamentales
 
-Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera que escoja este rango:
-
-- **Reserva de vigor:** Tu rango en Fortitud mejorará tu reserva de vigor, incrementándola por un valor igual a tu Rango + 2. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
-- **Constitución superior:** Obtener este rango mejorará tus capacidades de resistir efectos que atenten contra tu Constitución. Recibes un bonificador igual a tu Rango + 1 en todos tus tiros defensivos de CON.
-- **Absolutamente innato:** Las habilidades otorgadas por este rango representan tu resistencia física superior nacida de duro entrenamiento y tu experiencia combatiendo. Por tanto no pueden ser contrarrestadas ni suprimidas por ningún efecto.
+**Reserva de vigor:** Tu rango en Fortitud mejorará tu reserva de vigor, incrementándola por un valor igual a tu **Rango + 2**. Esto se acumula con otras habilidades que te otorguen esta misma reserva.
 
 # Rangos
 
@@ -21,17 +17,24 @@ Fortitud tiene las siguientes reglas fundamentales que se aplican a cualquiera q
 
 *Fortitud, Innata, Pasiva*
 
-Tu cuerpo es capaz de resistir heridas que en otras circunstancias serían mortales. Aumenta tu cantidad máxima de PV y tu DEF por un valor igual a tu Rango de Fortitud + 1. El bonificador a la defensa sí se acumula con aquel otorgado por armaduras.
+****
+
+Tu cuerpo es capaz de resistir heridas que en otras circunstancias serían mortales. Aumenta tu cantidad máxima de PV y Defensa por un valor igual a tu **Rango de Fortitud + 1**. Este bonificador sí se acumula con aquel otorgado por armaduras.
 
 ### Segundo Aliento
 
 *Fortitud, Innata, Sanación*
 
-**Coste:** 1 vigor
+****
 
-Aunque estés al borde de la muerte eres capaz de volver a levantarte para seguir luchando. Al activar esta habilidad recuperas Vitalidad igual a tu Rango + 2 como acción bonus. No puedes sanarte de esta manera más de una vez por ronda.
+**Coste:** 1 Reacción y 1 vigor
+**Activación:** Cualquier momento de la ronda
 
-**Empoderar** (1 vigor): Trata una herida permanente que te afecte actualmente como si fuera de un nivel menor para eliminar sus penalizadores. La herida volverá a su nivel anterior al final del combate. 
+****
+
+Aunque estés al borde de la muerte eres capaz de volver a levantarte para seguir luchando. Al activar esta habilidad recuperas Vitalidad igual a tu **Rango + 2** como acción bonus. 
+
+**Empoderar** (1 vigor): Trata una herida permanente que te afecte como si fuera de un nivel menor para eliminar sus penalizadores. La herida volverá a su nivel anterior al final del combate. 
 
 ## Rango II
 
@@ -45,9 +48,14 @@ Eres capaz de aguantar golpes que aturdirían a una persona normal. Recibes así
 
 *Innata, Defensiva*
 
-**Coste:** 1 vigor
+****
 
-Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce el daño que recibas de un ataque a la mitad después de aplicar DEF y Resistencias. Resiliencia solo puede usarse una vez por ronda y se redondeará siempre hacia abajo.
+**Coste:** 1 Reacción y 1 vigor
+**Activación:** Eres impactado por un ataque enemigo
+
+****
+
+Haces fuerza con tu cuerpo para resistir mejor un golpe. Como reacción reduce el daño que recibas de un ataque a la mitad después de aplicar DEF y Resistencias. El daño final se redondeará siempre hacia abajo y esta habilidad no te liberará de efectos de estado o heridas permanentes.
 
 ## Rango III
 

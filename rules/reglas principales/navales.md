@@ -148,7 +148,7 @@ Las condiciones del campo de batalla pueden significar la victoria o la derrota 
 - **Tiro Dirección:** 3d6
 - **Tiro de Combate:** 3d6, alcance 2  
 - **Tiro de Abordaje:** 2d6
-- **Tamaño:** 2
+- **Tamaño:** 3
 - **Cohesión:** 4
 - **Movimiento:** 2
 - **Habilidades Especiales:** Velas, Coraza
@@ -159,7 +159,7 @@ Las condiciones del campo de batalla pueden significar la victoria o la derrota 
 - **Tiro Dirección:** 3d6
 - **Tiro de Combate:** 3d6, alcance 2  
 - **Tiro de Abordaje:** 2d6
-- **Tamaño:** 2
+- **Tamaño:** 3
 - **Cohesión:** 4
 - **Movimiento:** 3
 - **Habilidades Especiales:** Velas, Línea de Cañones, Coraza

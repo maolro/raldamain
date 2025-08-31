@@ -102,7 +102,7 @@ Desprendiendo una gran cantidad de feromonas eres capaz de crear una densa nube 
 
 Incrementa tu CAR por 1.
 
-### Forma de plaga
+### Forma de Plaga
 
 *Innata, Mejora* 
 
@@ -136,7 +136,7 @@ Eres capaz de emplear los hechizos Asimilar rasgos y Defensa adaptable pagando v
 
 La mente colmena que te unía con tu enjambre por fin se ha desarrollado completamente, afianzando tu control sobre tu prole y retorciendo tu mente de maneras inimaginables ante esta nueva perspectiva del mundo. De este modo podrás percibir el mundo a través de cualquier insecto que puedas controlar, así como también podrás lanzar tus propios hechizos a través de ellos. Así mismo la compleja telaraña que ahora representa tu mente te otorgará una defensa completa contra ataques externos que apunten a ella, recibiendo de este modo inmunidad a efectos mentales y a miedo. 
 
-### Orden de exterminio
+### Orden de Exterminio
 
 *Innata, Área, Mejora* 
 

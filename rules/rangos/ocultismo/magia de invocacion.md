@@ -15,7 +15,7 @@ category: Ocultismo
 
 ## Rango I
 
-### Invocar familiar
+### Invocar Familiar
 
 *Invocación, Pasiva*
 
@@ -23,7 +23,7 @@ Desarrollas un vínculo sobrenatural con una criatura mágica llamada familiar, 
 
 Por cada 3 niveles que subas tu familiar también se fortalecerá, aumentando su nivel por 2. 
 
-### Sentidos compartidos
+### Sentidos Compartidos
 
 *Invocación, Pasiva*
 
@@ -31,7 +31,7 @@ Ambos compartís una parte de vuestros instintos y subconsciente mas profundo, p
 
 ## Rango II
 
-### Combate en equipo
+### Combate en Equipo
 
 *Invocación, Pasiva*
 
@@ -39,7 +39,7 @@ A medida que vuestros lazos comienzan a estrecharse también lo hace vuestra cap
 
 **Empoderar** (1 chi o vigor): Apoyas como acción bonus
 
-### Compenetración perfecta
+### Compenetración Perfecta
 
 *Invocación, Pasiva*
 
