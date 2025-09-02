@@ -8,7 +8,7 @@ Esta es una lista de los efectos de estado más comunes que pueden afectar a una
 
 ## Agarrada
 
-Una criatura agarrada tiene el cuerpo retenido por completo por otra criatura u objeto, quedando inmovilizada e incapaz de seguir luchando hasta que escape. Dicha criatura no podrá emplear acciones que requieran un movimiento (gesticular, moverse, atacar con un arma) y es incapaz de defenderse. Todos los ataques hechos contra ella contarán como un golpe crítico y no podrá concentrarse en habilidades.
+Una criatura agarrada tiene el cuerpo retenido por completo por otra criatura u objeto, quedando inmovilizada e incapaz de seguir luchando hasta que escape. Dicha criatura no podrá emplear acciones que requieran un movimiento (gesticular, moverse, atacar con un arma) y es incapaz de defenderse. Todos los ataques hechos contra ella impactarán automáticamente y no podrá concentrarse en habilidades.
 
 Para liberarse de un agarre la criatura afectada deberá emplear una acción para hacer un tiro de heroísmo, juego de manos o destrozar contra aquello que le agarre y en caso de éxito se conseguirá escapar. También puede liberarse si lo que la agarra es destruido por otra criatura o efecto (esto también cuesta una acción).
 
