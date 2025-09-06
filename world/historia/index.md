@@ -1,20 +1,11 @@
 ---
-title: El mundo de Raldamain
+title: Historia
 layout: summary
-menuorder: 6
 ---
 
-**Raldamain** es una tierra definida por ciclos de auge y caída, donde grandes imperios han nacido, florecido y colapsado, dejando tras de sí poco más que ruinas, mitos y legados disputados. Considerada como el corazón espiritual y político del mundo conocido, Raldamain ha atraído durante milenios migraciones y conquistas procedentes de continentes distantes. Es también venerada como la cuna espiritual del **Feynisimo** y el **Mekhatimismo**, dos de las religiones más importantes en la historia de la humanidad.
 
-![](C:\Users\matia\Documents\GitHub\raldamain\world\world4000.jpg)
 
-*FIG 1: Mapa de Raldamain en el año 4000 D. F*
-
-La era presente se caracteriza por una profunda incertidumbre. La enigmática desaparición de Feyn ha sumido en la confusión al **Imperio de Ustilus**, hasta entonces potencia hegemónica del continente. Mientras las estructuras tradicionales de poder se debilitan, una multiud de nuevos cultos e ideologías han empezado a proliferar, trayendo consigo visiones de renovación o de caos. A su vez, la naciente revolución industrial trae grandes transformaciones a las sociedades de Raldamain, introduciendo inventos y corrientes filosóficas que desafían creencias y modos de vida ancestrales. Para muchos, el mundo conocido se tambalea entre una era dorada de progreso sin precedentes y una amenaza existencial.
-
-# Historia
-
-La historia de Raldamain empieza según la mayoría de naciones en el año del descenso del dios Feyn al continente, trayendo consigo civilización y progreso a la humanidad. La época anterior a este suceso está rodeada de misterio y lo poco que se conoce de sus primeros habitantes es el hecho que vivían en comunidades tribales que practicaban la idolatría. Aunque la mayoría de la población de entonces era humana, esta convivía en relativa paz con elfos, Urlok, Leoninos y otros pueblos hoy desaparecidos.
+Los primeros habitantes conocidos de Raldamain fueron comunidades tribales que veneraban ídolos y a los señores del Mundo Espiritual. Aunque la mayoría de la población de entonces era humana, esta convivía en relativa paz con elfos, Urlok, Leoninos y otros pueblos hoy desaparecidos.
 
 La primera gran transformación llegó con el descenso de **Feyn**, dios de la humanidad, al continente de Raldamain con el fin de enseñar y guiar a la humanidad. Este acontecimiento traería consigo la fundación de la religión Feynista y el inicio del calendario principal del continente. Los sucesores de Feyn acabarían estableciendo el **Imperio Nataneo**, una gran civilización célebre por sus ciudades voladoras y su inmenso conocimiento mágico.
 
@@ -29,11 +20,3 @@ Más terrible fue la llegada de los **Rakashitas**, un pueblo adoradores inferna
 En medio del caos el **General Akrodios** lideró una rebelión exitosa contra los Rakashitas y fundó en 3496 el **Imperio de Ustilus**, dando inicio una nueva era. Con el tiempo los ustileses lograrían destruir  los restos del dominio rakashita y expandieron su poder por todo Raldamain, creando el mayor estado desde el Imperio Nataneo. Su auge los acabaría enfrentando con Mazarín, quien disputaba su puesto como reino elegido de Feyn, y con el **Imperio de Arshalán**, una formidable potencia dedicada a la fe Mekhatimista que emergía en las antiguas tierras nataneas.
 
 Tras varios siglos de expansión y conflicto, Ustilus acabaría alcanzando la hegemonía continental, llegando a su máximo esplendor en el siglo XL. Profecías atribuidas a Akrodios anunciaban el retorno de Feyn en el año 4000, lo cual daría inicio a una nueva edad dorada que no había sido vista en el mundo desde tiempos de los nataneos. Sin embargo, aquel año acabaría marcado por la repentina desaparición de Feyn, un acontecimiento que sembraría dudas sobre los cimientos del feynisimo y daría paso a la actual era de incertidumbre.
-
-# Geografía
-
-# Economía
-
-# Dioses y Religión
-
-# Magia y Tecnología
