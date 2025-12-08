@@ -29,7 +29,7 @@ Tu cuerpo se mueve a una velocidad superior a la media, mejorando notablemente t
 
 *Innata, Reacción*
 
-Eres capaz de reaccionar en el último segundo a situaciones peligrosas para salvarte milagrosamente de estas. Una cantidad de veces por combate igual a tu Rango + 2 puedes repetir un tiro de ataque, defensa o salvación basado en tu estadística de DES y quedarte con el mejor resultado. Recuperarás todos los usos de esta habilidad al realizar un descanso corto.
+Eres capaz de reaccionar en el último segundo a situaciones peligrosas para salvarte milagrosamente. Una cantidad de veces por combate igual a tu **Rango + 2** puedes repetir un tiro de ataque, defensa o salvación basado en tu estadística de DES y quedarte con el mejor resultado. Recuperarás todos los usos de esta habilidad al realizar un descanso corto.
 
 **Empoderar** (1 vigor): Recuperas uno de los usos de esta habilidad
 

@@ -1,4 +1,0 @@
----
-title: Dioses y Religión
----
-

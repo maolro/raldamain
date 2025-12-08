@@ -1,5 +1,5 @@
 ---
-title: Estilo Serpiente
+  title: Estilo Serpiente
 ---
 
 # Reglas fundamentales
