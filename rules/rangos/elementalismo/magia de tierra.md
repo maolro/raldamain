@@ -1,5 +1,5 @@
 ---
-title: Magia de Tierra
+  title: Magia de Tierra
 image: magia_tierra.jpg
 category: Elementalismo
 ---
