@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "world/religiones/Feynismo.md",
+                "file": "world/religiones/Mekhatimismo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Feynismo"
+              "title": "Mekhatimismo"
             }
           }
         ]
@@ -140,10 +140,13 @@
   },
   "active": "b4937b45ddba5370",
   "lastOpenFiles": [
+    "world/personajes/Chandrial.md",
+    "world/religiones/Iglesia del Heredero.md",
+    "world/religiones/Feynismo.md",
+    "world/religiones/Camino de Yathan'ra.md",
     "world/index.md",
     "world/world4000.jpg",
     "world/religiones/Mekhatimismo.md",
-    "world/religiones/Feynismo.md",
     "world/religiones",
     "world/regiones/ustilus.md",
     "world/culturas/tangarinos.md",
