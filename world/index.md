@@ -3,7 +3,7 @@ title: El mundo de Raldamain
 layout: summary
 menuorder: 6
 ---
-**Raldamain** es una tierra definida por ciclos de auge y caída, donde grandes imperios han nacido, florecido y colapsado, dejando tras de sí poco más que ruinas, mitos y legados disputados. Considerada como el corazón espiritual y político del mundo conocido, Raldamain ha atraído durante milenios migraciones y conquistas procedentes de continentes distantes. Es también venerada como la cuna espiritual del **[[Feynismo]]** y el **[[Mekhatimismo]]**, dos de las religiones más importantes en la historia de la humanidad.
+Raldamain es una tierra definida por ciclos de auge y caída, donde grandes imperios han nacido, florecido y colapsado, dejando tras de sí poco más que ruinas, mitos y legados disputados. Considerada como el corazón espiritual y político del mundo conocido, Raldamain ha atraído durante milenios migraciones y conquistas procedentes de continentes distantes. Es también venerada como la cuna espiritual del [[Feynismo]] y el [[Mekhatimismo]], dos de las religiones más importantes en la historia de la humanidad.
 
 ![](C:\Users\matia\Documents\GitHub\raldamain\world\world4000.jpg)
 
