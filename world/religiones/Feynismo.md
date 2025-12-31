@@ -1,3 +1,7 @@
+---
+title: Feynismo
+---
+
 El Feynismo es una doctrina religiosa monoteísta centrada en la adoración de [Feyn](../divinidades/feyn.md), venerado como el Dios de la Humanidad y el arquitecto del destino de la raza humana. Históricamente, ha sido la institución espiritual y política más influyente del continente de [Raldamain](../continentes/Raldamain.md), sirviendo como religión de estado del antiguo [Imperio Nataneo](../naciones/Imperio%20Nataneo.md), el [Reino de Mazarín](../naciones/reino-de-mazarin.md), y más recientemente, del [Imperio de Ustilus](../naciones/Imperio%20de%20Ustilus.md).
 
 Durante milenios, el Feynismo dictó la moral, la ley y la estructura social de las naciones humanas. Sin embargo, tras la desaparición de Feyn en el año de su retorno profetizado, la fe ha entrado en una profunda crisis que arrastraría al continente entero a la [Era de la Incertidumbre](../linea-temporal/Era%20de%20la%20Incertidumbre.md). La pérdida de los poderes clericales y el silencio divino han provocado cismas, persecuciones y una decadencia acelerada en los territorios que antaño conformaban el corazón del Feynismo.
