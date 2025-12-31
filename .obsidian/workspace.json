@@ -11,10 +11,14 @@
             "id": "b4937b45ddba5370",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "world/religiones/cultos-abisales.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cultos-abisales"
             }
           }
         ]
@@ -136,20 +140,21 @@
   },
   "active": "b4937b45ddba5370",
   "lastOpenFiles": [
-    "world/religiones/Feynismo.md",
-    "world/naciones/republica-de-kratoi.md",
+    "world/religiones/feynismo.md",
+    "world/religiones/camino-de-yathanra.md",
+    "world/religiones/cultos-abisales.md",
+    "world/religiones/fe-espiritual.md",
+    "world/religiones/iglesia-del-heredero.md",
     "world/religiones/mekhatimismo.md",
-    "world/religiones/Iglesia del Heredero.md",
-    "world/religiones/Fe Espiritual.md",
-    "world/religiones/Cultos Abisales.md",
+    "world/naciones/imperio-de-arshalan.md",
+    "world/index.md",
+    "world/world4000.jpg",
+    "world/naciones/republica-de-kratoi.md",
     "world/regiones/tierras-elficas.md",
     "world/regiones/thiamashte.md",
     "world/dimensiones/plano-onirico.md",
     "world/naciones/utopia.md",
-    "world/index.md",
-    "world/world4000.jpg",
     "world/divinidades/sek-tebos.md",
-    "world/religiones/Camino de Yathan'ra.md",
     "world/eventos/Guerra de los Dioses.md",
     "world/eventos/desaparicion-de-feyn.md",
     "world/regiones/yermos-eternos.md",
@@ -158,7 +163,6 @@
     "Untitled 2.base",
     "world/regiones/shiraj.md",
     "world/naciones/reino-de-mazarin.md",
-    "world/naciones/imperio-de-arshalan.md",
     "world/regiones/ustilus.md",
     "world/personajes/Chandrial.md",
     "world/religiones",
@@ -166,7 +170,6 @@
     "world/culturas/aven.md",
     "world/culturas/aven.jpg",
     "Untitled 1.base",
-    "rules/crear_personajes/3_talentos.md",
     "Untitled.base",
     "rules/rangos/armas/a_distancia.jpg"
   ]

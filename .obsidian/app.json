@@ -3,5 +3,5 @@
   "livePreview": true,
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": false
 }
