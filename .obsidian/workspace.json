@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "world/index.md",
+                "file": "world/dimensiones/plano-onirico.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "plano-onirico"
             }
           }
         ]
@@ -140,14 +140,27 @@
   },
   "active": "b4937b45ddba5370",
   "lastOpenFiles": [
-    "world/regiones/ustilus.md",
+    "world/eventos/Guerra de los Dioses.md",
+    "world/eventos/desaparicion-de-feyn.md",
     "world/index.md",
+    "world/religiones/mekhatimismo.md",
+    "world/regiones/yermos-eternos.md",
+    "world/regiones/Yermos Eternos.md",
+    "world/regiones/Tierras Shinri.md",
+    "Untitled 2.base",
+    "world/regiones/shiraj.md",
+    "world/naciones/utopia.md",
+    "world/religiones/Fe Espiritual.md",
+    "world/religiones/Camino de Yathan'ra.md",
+    "world/religiones/Cultos Abisales.md",
+    "world/naciones/republica-de-kratoi.md",
+    "world/naciones/reino-de-mazarin.md",
+    "world/naciones/imperio-de-arshalan.md",
+    "world/regiones/ustilus.md",
     "world/world4000.jpg",
-    "world/religiones/Mekhatimismo.md",
     "world/personajes/Chandrial.md",
     "world/religiones/Iglesia del Heredero.md",
     "world/religiones/Feynismo.md",
-    "world/religiones/Camino de Yathan'ra.md",
     "world/religiones",
     "world/culturas/tangarinos.md",
     "world/culturas/aven.md",
