@@ -1,3 +1,7 @@
+---
+title: Cultos Abisales
+---
+
 Bajo la denominación de Cultos Abisales se agrupa una heterogénea y peligrosa colección de sectas, organizaciones secretas y religiones proscritas dedicadas a la adoración de las entidades [Abisales](../criaturas/extraplanarias/abisales/Abisales.md). Estos seres son existencias primigenias e incomprensibles para la mente mortal que anhelan la disolución de la realidad y el fin de la existencia misma. A diferencia de las religiones organizadas, estos cultos son células pequeñas, descentralizadas y caóticas que operan en la clandestinidad, practicando formas de magia prohibida que corrompen tanto la carne como el espíritu.
 
 Por muy prohibida o autodestructiva que sea esta fe, siempre hay personas desesperadas dispuestas a hacer un pacto con un Abisal con el fin de obtener un poder inmenso, conocimientos prohibidos o la promesa de supervivencia ante el inevitable apocalipsis, pero el precio es siempre la cordura y la humanidad del adepto. Históricamente, la actividad de estos grupos ha sido perseguida implacablemente por todas las autoridades religiosas y civiles de Raldamain, pues sus rituales a menudo desembocan en catástrofes locales o en la invocación de monstruosidades que requieren la intervención de ejércitos enteros o grandes héroes para ser detenidas.

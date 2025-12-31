@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "world/religiones/cultos-abisales.md",
+                "file": "world/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cultos-abisales"
+              "title": "index"
             }
           }
         ]
@@ -140,14 +140,16 @@
   },
   "active": "b4937b45ddba5370",
   "lastOpenFiles": [
-    "world/religiones/feynismo.md",
+    "world/religiones/mekhatimismo.md",
+    "world/religiones/iglesia-del-heredero.md",
     "world/religiones/camino-de-yathanra.md",
     "world/religiones/cultos-abisales.md",
     "world/religiones/fe-espiritual.md",
-    "world/religiones/iglesia-del-heredero.md",
-    "world/religiones/mekhatimismo.md",
-    "world/naciones/imperio-de-arshalan.md",
+    "world/religiones/feynismo.md",
+    "world/divinidades/feyn.md",
     "world/index.md",
+    "world/regiones/yermos-eternos.md",
+    "world/naciones/imperio-de-arshalan.md",
     "world/world4000.jpg",
     "world/naciones/republica-de-kratoi.md",
     "world/regiones/tierras-elficas.md",
@@ -157,7 +159,6 @@
     "world/divinidades/sek-tebos.md",
     "world/eventos/Guerra de los Dioses.md",
     "world/eventos/desaparicion-de-feyn.md",
-    "world/regiones/yermos-eternos.md",
     "world/regiones/Yermos Eternos.md",
     "world/regiones/Tierras Shinri.md",
     "Untitled 2.base",

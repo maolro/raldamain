@@ -1,3 +1,7 @@
+---
+title: Iglesia del Heredero
+---
+
 (2 párrafos)
 - 
 # Historia
