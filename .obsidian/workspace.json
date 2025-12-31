@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "7efb0b1243f2dc56",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d4867b580a3abab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4937b45ddba5370",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d6e1ea8e62c30b47",
+    "type": "split",
+    "children": [
+      {
+        "id": "df8706ec88f8e45f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b178b6ab9c6184c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ec729b47c105a7c3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "03158674425305ec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bf6f5deaeca93985",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e026afab6c68333",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2476ab62c38cb173",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "world/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "56ca86c1ab979b48",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b4937b45ddba5370",
+  "lastOpenFiles": [
+    "world/religiones/Mekhatimismo.md",
+    "world/index.md",
+    "world/religiones/Feynismo.md",
+    "world/religiones",
+    "world/world4000.jpg",
+    "world/regiones/ustilus.md",
+    "world/culturas/tangarinos.md",
+    "world/culturas/aven.md",
+    "world/culturas/aven.jpg",
+    "Untitled 1.base",
+    "rules/crear_personajes/3_talentos.md",
+    "rules/crear_personajes/4_razas y culturas.md",
+    "Untitled.base",
+    "rules/rangos/armas/cadenas.md",
+    "rules/rangos/armas/alabardas.md",
+    "rules/rangos/armas/a-distancia.md",
+    "rules/rangos/armas/a_distancia.jpg"
+  ]
+}
