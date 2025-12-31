@@ -36,7 +36,7 @@ Los teólogos mekhatimistas ven al [[Feynismo]] con una mezcla de respeto histó
 ## Cultos Abisales
 No existe misericordia ni diálogo posible con los [[Cultos Abisales]]. Para la Hueste Celestial, el Abismo y sus habitantes representan la antítesis de la existencia. Mientras el Mekhatimismo busca la elevación y la preservación de la conciencia, los abisales no desean más que la destrucción y la entropía total. Por ello, la erradicación de estos cultos es un mandato divino y cualquier creyente tiene el deber sagrado de destruir la influencia abisal allí donde la encuentre. 
 
-## [[Fe Espiritual]] y tradiciones paganes
+## [[Fe Espiritual]] y tradiciones paganas
 La postura oficial hacia las creencias espirituales y paganas es de desaprobación moderada. Se las considera formas primitivas de idolatría, propias de pueblos que aún no han alcanzado la madurez intelectual para comprender la complejidad del cosmos. Sin embargo, el imperio suele tolerar estas prácticas en sus territorios fronterizos siempre y cuando sus adoradores reconozcan que los espíritus son entidades menores y no dioses verdaderos, y que no intenten poner a estas entidades por encima de la autoridad de los Celestiales.
 
 ## Iglesia del Heredero
