@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "religiones/Fe Espiritual.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fe Espiritual"
+              "title": "index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "religiones/Fe Espiritual.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Fe Espiritual"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "religiones/Fe Espiritual.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Fe Espiritual"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "religiones/Fe Espiritual.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fe Espiritual"
+              "title": "Outline of index"
             }
           }
         ]
@@ -185,14 +185,16 @@
   },
   "active": "22eac0b48d6c6c5e",
   "lastOpenFiles": [
+    "religiones/Feynismo.md",
+    "index.md",
+    "world4000.jpg",
+    "religiones/Fe Espiritual.md",
     "facciones/Reforjados.md",
     "Untitled",
-    "religiones/Fe Espiritual.md",
     "naciones/Iskaria.md",
     "religiones/Camino de Yathan'ra.md",
     "regiones/Tierras Shinri.md",
     "eventos/Guerra de los Dioses.md",
-    "religiones/Feynismo.md",
     "divinidades/Primeros Dioses.md",
     "regiones/Tierras Élficas.md",
     "dimensiones/Mundo Espiritual.md",
@@ -210,7 +212,6 @@
     "regiones/Brecha Abisal.md",
     "personajes/Encarnado.md",
     "criaturas/extraplanarias/espiritus/Oni.md",
-    "divinidades/shade.md",
     "dimensiones",
     "personajes/historicos",
     "objetos",
@@ -219,7 +220,6 @@
     "criaturas/extraplanarias/infernales",
     "criaturas/extraplanarias/celestiales",
     "criaturas/extraplanarias/abisales",
-    "criaturas/extraplanarias",
-    "world4000.jpg"
+    "criaturas/extraplanarias"
   ]
 }
