@@ -4,7 +4,7 @@ Raldamain es una tierra definida por ciclos de auge y caída, donde grandes impe
 
 *FIG 1: Mapa de Raldamain en el año 4000 D. F*
 
-La era presente se caracteriza por una profunda incertidumbre. La enigmática desaparición de [Feyn](../divinidades/feyn.md) ha sumido en la confusión al Imperio de [Ustilus](world/regiones/ustilus), hasta entonces potencia hegemónica del continente. Mientras las estructuras tradicionales de poder se debilitan, una multiud de nuevos cultos e ideologías han empezado a proliferar, trayendo consigo visiones de renovación o de caos. A su vez, la naciente revolución industrial trae grandes transformaciones a las sociedades de Raldamain, introduciendo inventos y corrientes filosóficas que desafían creencias y modos de vida ancestrales. Para muchos, el mundo conocido se tambalea entre una era dorada de progreso sin precedentes y una amenaza existencial.
+La era presente se caracteriza por una profunda incertidumbre. La enigmática desaparición de [Feyn](../divinidades/feyn.md) ha sumido en la confusión al Imperio de [Ustilus](../lugares/ustilus.md), hasta entonces potencia hegemónica del continente. Mientras las estructuras tradicionales de poder se debilitan, una multiud de nuevos cultos e ideologías han empezado a proliferar, trayendo consigo visiones de renovación o de caos. A su vez, la naciente revolución industrial trae grandes transformaciones a las sociedades de Raldamain, introduciendo inventos y corrientes filosóficas que desafían creencias y modos de vida ancestrales. Para muchos, el mundo conocido se tambalea entre una era dorada de progreso sin precedentes y una amenaza existencial.
 
 # Historia
 
