@@ -1,7 +1,6 @@
 ---
 title: Fe Espiritual
 ---
-
 La llamada Fe Espiritual agrupa un vasto y heterogéneo grupo de creencias animistas, tradiciones paganas y ritos ancestrales caracterizados por la adoración de los señores del [Mundo Espiritual](../lugares/dimensiones/Mundo%20Espiritual.md), entidades que encarnan y gobiernan los aspectos del mundo natural. Los historiadores de las religiones coinciden en que se trata del sistema de creencias más antiguo del continente que ha logrado perdurar hasta el presente, sobreviviendo a milenios de cambios políticos y tecnológicso. Aunque en los últimos milenios ha sufrido un constante declive territorial ante el avance de las agresivas religiones monoteístas, la Fe Espiritual mantiene su vigencia y en las [Tierras Élficas](../lugares/regiones/tierras-elficas.md), en [Shinri](../lugares/regiones/Tierras%20Shinri.md) y en las comunidades rurales de [Kratoi](../naciones/republica-de-kratoi.md) y [Mazarín](../naciones/reino-de-mazarin.md) donde las viejas costumbres se resisten a morir.
 
 A diferencia de los dogmas revelados, esta fe no posee un libro sagrado único ni una jerarquía centralizada. Se basa en una comprensión orgánica del universo donde cada río, montaña, bosque y tormenta posee una consciencia propia y una voluntad que debe ser respetada. Para sus practicantes, lo divino no es algo lejano que habita en los cielos, sino una fuerza que respira en la tierra que pisan, creando así un vínculo sagrado entre la comunidad, el territorio y los espíritus que lo habitan.
