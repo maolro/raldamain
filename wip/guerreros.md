@@ -57,7 +57,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
+**[Ira](../rules/Rangos/Ascendencias/ascendencia de agua.md#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
 
 ------
 
@@ -81,7 +81,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 **Talentos:** Intimidación +5, Heroísmo +5, Percepción +4, Destrozar +5
 
-**Rangos:** [Contundentes](https://raldamain.com/rules/Rangos/Armas/contundentes.html) I, [Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii) I, [Fortitud](https://raldamain.com/rules/Rangos/Combate/fortitud.html) I
+**Rangos:** [Contundentes](../rules/Rangos/Armas/contundentes.md) I, [Ira](../rules/Rangos/Ascendencias/ascendencia de agua.md#rango-iii) I, [Fortitud](../rules/Rangos/Combate/fortitud.md) I
 
 **Resiste:** Efectos mentales +1, miedo +1
 
@@ -91,9 +91,9 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
+**[Ira](../rules/Rangos/Ascendencias/ascendencia de agua.md#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
 
-**[Ataque poderoso](https://raldamain.com/rules/Rangos/Armas/contundentes.html#rango-i):** Reduce el tiro de ataque por -2 para incrementar el daño base por 2 y empujar 5 pies al impactar.
+**[Ataque poderoso](../rules/Rangos/Armas/contundentes.md#rango-i):** Reduce el tiro de ataque por -2 para incrementar el daño base por 2 y empujar 5 pies al impactar.
 
 ------
 
@@ -163,7 +163,7 @@ En esta página puede encontrarse una gran variedad de estadísticas de personaj
 
 ------
 
-**[Ira](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20de%20agua.html#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
+**[Ira](../rules/Rangos/Ascendencias/ascendencia de agua.md#rango-iii):** Incrementa su FUE y CON por 1 (ya incluidos) además del movimiento por 10 pies. Puede defenderse de ataques sorpresa mientras esté en ira.
 
 **Ataque poderoso:** Añade -2 al tiro de ataque para incrementar el daño base por 2 y causar sangrado
 

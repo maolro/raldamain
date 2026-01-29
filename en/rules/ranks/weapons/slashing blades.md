@@ -5,7 +5,7 @@ category: Weapons
 
 ## Rank I
 
-Add your Slashing blade rank to attack and defense rolls with weapons of this category. All [permanent injuries](https://raldamain.com/en/rules/main%20rules/Heridas%20permanentes.html) inflicted with a slashing blade will cause [bleeding](https://raldamain.com/en/rules/main%20rules/Efectos%20de%20estado.html#bleeding).
+Add your Slashing blade rank to attack and defense rolls with weapons of this category. All [permanent injuries](../../main rules/Heridas permanentes.md) inflicted with a slashing blade will cause [bleeding](../../main rules/Efectos de estado.md#bleeding).
 
 <u>Power Attack</u>: You are able to trade accuracy for greater attack strength on your attacks. This ability allows you to declare an attack as a Power Attack, which will grant you a -2 penalty on attack rolls in exchange for inflicting +2 base damage and bleed. At rank IV you can increase the penalty by -2 to inflict 2 additional points of damage.
 

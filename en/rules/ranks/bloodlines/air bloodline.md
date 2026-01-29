@@ -5,7 +5,7 @@ category: Bloodlines
 
 ## Rank I
 
-You gain resistance 2 to physical damage and unlock ranks in [elemental air magic](https://raldamain.com/en/rules/ranks/Bloodlines/air%20bloodline.html)
+You gain resistance 2 to physical damage and unlock ranks in [elemental air magic](air bloodline.md)
 
 <u>Stormborn:</u> You gain resistance to electric and thunder damage equal to your rank. You suffer no penalties to your movement from powerful winds and you can hold your breath for an additional round.
 
@@ -46,7 +46,7 @@ Increases your CHA by 1. You can replace the attack bonus you have in a specific
 
 Increase your resistance to physical damage by 1 and your magic resistance by 3.
 
-<u>Element of freedom:</u> You gain resistance to grapples and entanglement equal to your rank. Your speed will not be reduced by difficult terrain and you can move underwater without difficulty. If you have [Freedom of Movement](https://raldamain.com/en/rules/ranks/Combat/reflexes.html#rank-v) you receive immunity to all grapples and entanglement unless you are incapacitated.
+<u>Element of freedom:</u> You gain resistance to grapples and entanglement equal to your rank. Your speed will not be reduced by difficult terrain and you can move underwater without difficulty. If you have [Freedom of Movement](../combat/reflexes.md#rank-v) you receive immunity to all grapples and entanglement unless you are incapacitated.
 
 <u>Sudden speed:</u> A number of times per day equal to your rank - 2 you can propel yourself with air to move at high speeds. When you use this ability all your speeds increase by 15 feet for one round and you will not provoke attacks of opportunity for moving out of an engament. In addition you will gain advantage in all defensive dodge rolls.
 
@@ -54,6 +54,6 @@ Increase your resistance to physical damage by 1 and your magic resistance by 3.
 
 Increase your WIS by 1.
 
-<u>Elemental form:</u> As a full-round action you surround yourself with a powerful wind which gives you the appearance of a titanic air elemental. While in elemental form you are constantly surrounded by a Wall of wind and the strength of all winds in a 20-foot area centered on will increase by 2 to a maximum of 5. In addition, whenever you hit a target with a physical attack you will push it 1d6 x 5 feet. If you do not have [Awaken the storm](https://raldamain.com/en/rules/ranks/Elemental%20magic/air%20magic.html#rank-iii) you will gain a bonus to all attack and defense rolls equal to the wind strength in a 10-foot area. Elemental form will last a number of rounds equal to your rank + 1 or until you lose concentration on it.
+<u>Elemental form:</u> As a full-round action you surround yourself with a powerful wind which gives you the appearance of a titanic air elemental. While in elemental form you are constantly surrounded by a Wall of wind and the strength of all winds in a 20-foot area centered on will increase by 2 to a maximum of 5. In addition, whenever you hit a target with a physical attack you will push it 1d6 x 5 feet. If you do not have [Awaken the storm](../elemental magic/air magic.md#rank-iii) you will gain a bonus to all attack and defense rolls equal to the wind strength in a 10-foot area. Elemental form will last a number of rounds equal to your rank + 1 or until you lose concentration on it.
 
 <u>Chosen of the spirits:</u> You have become a champion blessed by the spirits themselves. Their blessings grant you resistance 4 to mind-effects, poisons and diseases, and you body ages ten times slower. Spirits will never be naturally hostile against you and they will treat you with great respect.

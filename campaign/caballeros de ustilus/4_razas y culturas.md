@@ -156,7 +156,7 @@ Los hobgoblin cuentan con las siguientes características raciales:
 - Reciben un rango relacionado con armas o combate
 - Resistencia +2 al miedo y efectos mentales
 
-Aquellos hobgoblin que sirven a la Legión son capaces de colaborar entre ellos para convertirse en una fuerza invencible en el campo de batalla. Los hobgoblin no perderán los bonificadores de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) si su líder sufre una herida permanente y podrán recibir los bonificadores de una táctica propia de [dirigir combatientes](https://raldamain.com/rules/Rangos/Social/presencia.html) si forman parte de un grupo de 5 o más hobgoblin (cada grupo puede tener activa una táctica diferente). En contraparte, aquellos hobgoblin poseídos por espíritus oni recibirán un rango adicional en [ascendencia oni.](https://raldamain.com/rules/Rangos/Ascendencias/ascendencia%20oni.html) 
+Aquellos hobgoblin que sirven a la Legión son capaces de colaborar entre ellos para convertirse en una fuerza invencible en el campo de batalla. Los hobgoblin no perderán los bonificadores de [presencia](../../rules/rangos/combate/presencia.md) si su líder sufre una herida permanente y podrán recibir los bonificadores de una táctica propia de [dirigir combatientes](../../rules/rangos/combate/presencia.md) si forman parte de un grupo de 5 o más hobgoblin (cada grupo puede tener activa una táctica diferente). En contraparte, aquellos hobgoblin poseídos por espíritus oni recibirán un rango adicional en [ascendencia oni.](../../rules/rangos/ascendencias/ascendencia_oni.md) 
 
 ### Kitsune
 
@@ -180,7 +180,7 @@ Los leoninos cuentan con las siguientes características raciales:
 - +1 FUE, +1 SAB
 - Recibe un rango relacionado con religión, armas o combate
 - Aumentan su velocidad de escalada por 15 pies, su velocidad de salto por 10 pies y olfato a una distancia máxima de 60 pies.
-- Pueden emplear sus afiladas garras y colmillos para realizar [ataques naturales](https://raldamain.com/rules/Rangos/Armas/ataques%20naturales.html#armas), recibiendo así las características fisiológicas garras y mordisco.
+- Pueden emplear sus afiladas garras y colmillos para realizar [ataques naturales](../../rules/rangos/armas/ataques naturales.md#armas), recibiendo así las características fisiológicas garras y mordisco.
 
 ### Semielfos
 

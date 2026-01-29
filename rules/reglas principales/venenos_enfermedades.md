@@ -51,8 +51,8 @@ Cada veneno afectará a una estadística diferente según su naturaleza y si una
 ### Veneno de CON
 
 1. **Debilitada:** La criatura reduce su CON por 1 y sufrirá 1 daño no-letal cada vez que realice un tiro de Veneno.
-2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar [enfermada](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#enfermada). Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
-3. **Exhausta:** La criatura reduce su CON por 1 y pasa a estar [exhausta](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#exhausta). Sufre 3 daño letal cada vez que realice un tiro de veneno.
+2. **Enfermada:** La criatura reduce su CON por 1 y pasa a estar [enfermada](efectos de estado.md#enfermada). Sufre 2 daño no-letal cada vez que realice un tiro de Veneno.
+3. **Exhausta:** La criatura reduce su CON por 1 y pasa a estar [exhausta](efectos de estado.md#exhausta). Sufre 3 daño letal cada vez que realice un tiro de veneno.
 4. **Inconsciente**: La criatura cae inmediatamente inconsciente y no puede ser despertada
 5. **Muerte:** La criatura muere envenenada.
 
@@ -60,7 +60,7 @@ Cada veneno afectará a una estadística diferente según su naturaleza y si una
 
 1. **Sobrecargada:** La criatura reduce su INT por 1.
 2. **Daño cerebral:** La criatura reduce su INT por 1. No puede usar talentos relacionados con inteligencia y pierde un rango relacionado con dicha estadística.
-3. **Animalística:** La criatura reduce su INT por 1. No podrá lanzar hechizos ni usar atributos de [conocimiento](https://raldamain.com/rules/Rangos/Ciencia/conocimiento.html). 
+3. **Animalística:** La criatura reduce su INT por 1. No podrá lanzar hechizos ni usar atributos de [conocimiento](../rangos/ciencia/conocimiento.md). 
 4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad.
 5. **Muerte:** La criatura muere envenenada.
 
@@ -68,7 +68,7 @@ Cada veneno afectará a una estadística diferente según su naturaleza y si una
 
 1. **Abstraída:** La criatura reduce su SAB por 1. 
 2. **Desconcentrada:** La criatura reduce su SAB por 1. Pierde la capacidad de mantener la concentración y no puede usar talentos relacionados con la sabiduría.
-3. **Confusa:** La criatura reduce su SAB por 1 y pasa a estar [confundida](https://raldamain.com/rules/Reglas%20principales/Efectos%20de%20estado.html#confundida).
+3. **Confusa:** La criatura reduce su SAB por 1 y pasa a estar [confundida](efectos de estado.md#confundida).
 4. **Coma**: La criatura está inconsciente, perdida en sus sueños. No puede ser despertada hasta que se recupere un paso de su enfermedad.
 5. **Muerte:** La criatura muere envenenada.
 
@@ -76,7 +76,7 @@ Cada veneno afectará a una estadística diferente según su naturaleza y si una
 
 1. **Relajada:** La criatura reduce su CAR por 1.
 2. **Dócil:** La criatura reduce su CAR por 1. No puede usar talentos relacionados con el carisma y pierde un rango de un atributo relacionado con dicha estadística.
-3. **Drogada:** La criatura reduce su CAR por 1 y pierde toda fuerza de voluntad. No puede tirar defensa contra habilidades de [presencia](https://raldamain.com/rules/Rangos/Social/presencia.html) e [influenciar](https://raldamain.com/rules/Rangos/Social/influenciar.html) y obedece órdenes que recibe sin rechistar.
+3. **Drogada:** La criatura reduce su CAR por 1 y pierde toda fuerza de voluntad. No puede tirar defensa contra habilidades de [presencia](../rangos/combate/presencia.md) e [influenciar](../rangos/social/influenciar.md) y obedece órdenes que recibe sin rechistar.
 4. **Catatónica**: La criatura no puede realizar acciones ni reacciones.
 5. **Muerte:** La criatura muere envenenada.
 

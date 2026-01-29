@@ -111,7 +111,7 @@ A través de un siniestro ritual corrompes tu alma para adoptar las característ
 
 **Duración:** 6 rondas
 
-Abres una porción de las mismísimas puertas del infierno en el campo de batalla, permitiendo que sus energías impías crucen para servir a tus propósitos. Todo el terreno en un radio grande pasará a ser [Tierra Consagrada](../religion/magia_divina.md#consagrar-la-tierra) para los infernales. Así mismo tus enemigos no podrán sanarse mientras las puertas permanezcan abiertas además de que cada ronda deberán hacer un tiro de Voluntad contra tu modificador de Ascendencia Infernal o aumentarán su nivel de *miedo* por un paso. Finalmente, los demonios también aprovecharán para cruzar la brecha, permitiéndote emplear Siervos del Contrato una vez por ronda como acción bonus, pudiendo tener como máximo hasta diez de ellos. 
+Abres una porción de las mismísimas puertas del infierno en el campo de batalla, permitiendo que sus energías impías crucen para servir a tus propósitos. Todo el terreno en un radio grande pasará a ser [Tierra Consagrada](../religion/magia-divina.md#consagrar-la-tierra) para los infernales. Así mismo tus enemigos no podrán sanarse mientras las puertas permanezcan abiertas además de que cada ronda deberán hacer un tiro de Voluntad contra tu modificador de Ascendencia Infernal o aumentarán su nivel de *miedo* por un paso. Finalmente, los demonios también aprovecharán para cruzar la brecha, permitiéndote emplear Siervos del Contrato una vez por ronda como acción bonus, pudiendo tener como máximo hasta diez de ellos. 
 
 ## Rango VI
 

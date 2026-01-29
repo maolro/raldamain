@@ -6,21 +6,21 @@ title: Age of Humanity
 
 | Year | Event                                                        |
 | ---- | ------------------------------------------------------------ |
-| 1    | [Feyn](https://raldamain.com/en/creatures/superior%20beings/feyn.html) begins travelling the world to spread his message. He gains many followers and disciples. |
-| 48   | [Strakian](https://raldamain.com/en/locations/continents/strakia.html) colonists found the city of [Melkhart](https://raldamain.com/en/locations/artificial/settlements/cities/melkhart.html) |
+| 1    | [Feyn](../creatures/superior beings/feyn.md) begins travelling the world to spread his message. He gains many followers and disciples. |
+| 48   | [Strakian](../locations/continents/strakia.md) colonists found the city of [Melkhart](../locations/artificial/settlements/cities/melkhart.md) |
 | 89   | Feyn settles down and together with his followers he creates the first Feynist city. |
-| 92   | Feyn has three children with the mortal woman [Serah](https://raldamain.com/en/characters/age%20of%20humanity/serah.html). They are [Arathar](https://raldamain.com/en/characters/age%20of%20humanity/arathar.html), [Elnatan](https://raldamain.com/en/characters/age%20of%20humanity/elnatan.html) and [Misreya](https://raldamain.com/en/characters/age%20of%20humanity/misreya.html). |
+| 92   | Feyn has three children with the mortal woman [Serah](../characters/age of humanity/serah.md). They are [Arathar](../characters/age of humanity/arathar.md), [Elnatan](../characters/age of humanity/elnatan.md) and [Misreya](../characters/age of humanity/misreya.md). |
 | 141  | Serah tragically dies, filling Feyn with grief. Due to the underworld remaining unclaimed her soul is lost forever. |
-| 141  | Feyn leaves his children to take responsibility as god of the world. He chooses Arathar as his successor and Misreya as his first High Priestess. He grants Elnatan the [Infinite cube](https://raldamain.com/en/objects/items/famous%20items/infinite%20cube.html), a great artifact from [Syd's](https://raldamain.com/en/characters/age%20of%20gods/syd.html) time. |
-|      | Elnatan travels to the [elven](https://raldamain.com/en/creatures/sentient/human-like/elves/) lands and begins a long friendship with them. Together they begin to plan a flying city. |
-|      | The Feynist kingdom fights against northern barbarians that worship the [abyssal](https://raldamain.com/en/creatures/superior%20beings/abyssals/) demigod [Tomororon](https://raldamain.com/en/creatures/superior%20beings/abyssals/tomororon.html). |
+| 141  | Feyn leaves his children to take responsibility as god of the world. He chooses Arathar as his successor and Misreya as his first High Priestess. He grants Elnatan the [Infinite cube](../objects/items/famous items/infinite cube.md), a great artifact from [Syd's](../characters/age of gods/syd.md) time. |
+|      | Elnatan travels to the [elven](../creatures/sentient/human-like/elves.md) lands and begins a long friendship with them. Together they begin to plan a flying city. |
+|      | The Feynist kingdom fights against northern barbarians that worship the [abyssal](../creatures/superior beings/abyssals.md) demigod [Tomororon](../creatures/superior beings/abyssals/tomororon.md). |
 |      | Tomororon and Arathar fight in single combat. Arathar dies gloriously in battle but forces his foe back into the Abyssal realm, inflicting grievous wounds that he will remember forever. |
 |      | Elnatan disappears mysteriously after experimenting with the Infinite cube. While his project for a flying city remains unfinished his descendants will continue his work. |
-|      | Arathar's eldest son [Tarek](https://raldamain.com/en/characters/age%20of%20humanity/tarek.html) ascends to the throne after his father's death. |
+|      | Arathar's eldest son [Tarek](../characters/age of humanity/tarek.md) ascends to the throne after his father's death. |
 |      | Misreya dies of old age. Tensions between the kingdom's three great families begin to grow. |
 |      | Feyn's grandchildren fight a destructive civil war as the three families fight over control over the kingdom. |
-|      | Feyn's great-grandson [Talmandas](https://raldamain.com/en/characters/age%20of%20humanity/talmandas.html) leads a popular revolt to overthrow the monarchy. He is blessed by Feyn to succeed. |
-| 432  | Talmandas founds the [Feynist Republic](https://raldamain.com/en/ideas/nations/feynis), the first of its kind in history. |
+|      | Feyn's great-grandson [Talmandas](../characters/age of humanity/talmandas.md) leads a popular revolt to overthrow the monarchy. He is blessed by Feyn to succeed. |
+| 432  | Talmandas founds the [Feynist Republic](../ideas/nations/feynis.md), the first of its kind in history. |
 |      | The Feynist Republic begins a period of expansion and economic growth |
 |      | The Flying city is finished and takes to the skies powered by the Infinite cube. |
 |      | A great war breaks out between the Feynist Republic and the Melkhartian theocracy. |

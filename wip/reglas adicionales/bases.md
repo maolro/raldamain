@@ -75,7 +75,7 @@ Las bases representan los principales centros de operaciones que posee una organ
 
 <u>Sala de interrogatorios:</u> Una sala de interrogatorios es una siniestra habitación empleada para interrogar a cautivos, contando con máquinas de tortura y sueros especializados para facilitar dicha labor. El uso repetido de esta habitación minará la voluntad de tu cautivo, reduciendo su CAR por 1 y provocándole una herida leve cada sesión de interrogación por la que pase. 
 
-<u>Torre de vigilancia:</u> Una torre de vigilancia es una elevada estructura perfecta para vigilar los alrededores. Una criatura que ataque desde una torre de vigilancia contará con [cubierta](https://raldamain.com/rules/Reglas%20principales/reglas%20de%20combate.html#cubierta) (cubierta superior si la torre está fortificada). Esta estructura puede integrarse en una muralla o emplearse como puesto de guardias a ningún coste. 
+<u>Torre de vigilancia:</u> Una torre de vigilancia es una elevada estructura perfecta para vigilar los alrededores. Una criatura que ataque desde una torre de vigilancia contará con [cubierta](../../rules/Reglas principales/reglas de combate.md#cubierta) (cubierta superior si la torre está fortificada). Esta estructura puede integrarse en una muralla o emplearse como puesto de guardias a ningún coste. 
 
 ### 3 PC
 

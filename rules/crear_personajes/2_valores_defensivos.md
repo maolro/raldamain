@@ -22,4 +22,4 @@ La Defensa es un valor que reduce el daño que sufras. La Defensa depende de la 
 
 ## **Cordura** 
 
-La Cordura representa la resiliencia mental de un personaje frente a hechizos psíquicos y horrores antinaturales. Esta equivale a 2 + nivel + INT y cada vez que esta sea reducida a 0 el personaje recibirá una [locura](https://raldamain.com/rules/Reglas%20adicionales/locura.html). A diferencia de otras estadísticas la cordura se sana de manera más lenta, recuperando solo un punto de cordura con cada descanso largo realizado (+1 por cada tres niveles por encima de 1). Como regla general la cordura se restaurará por completo al cabo de una semana.
+La Cordura representa la resiliencia mental de un personaje frente a hechizos psíquicos y horrores antinaturales. Esta equivale a 2 + nivel + INT y cada vez que esta sea reducida a 0 el personaje recibirá una [locura](../reglas principales/locura.md). A diferencia de otras estadísticas la cordura se sana de manera más lenta, recuperando solo un punto de cordura con cada descanso largo realizado (+1 por cada tres niveles por encima de 1). Como regla general la cordura se restaurará por completo al cabo de una semana.

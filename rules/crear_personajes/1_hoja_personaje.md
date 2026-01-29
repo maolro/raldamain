@@ -26,7 +26,7 @@ Una hoja de personaje muestra por completo las capacidades, habilidades y conoci
 
 **[Talentos](3_talentos.md):** Los talentos indican la aptitud del personaje en numerosas habilidades desvinculadas de los rangos que tienen utilidad en todo tipo de situaciones tanto en el campo de batalla como en la vida diaria. 
 
-**[Rangos](..\Rangos\index.md):** Los rangos, como ya se ha explicado, son la base del sistema Raldamain y forman una parte fundamental de la identidad del personaje. Estos representan las habilidades más destacables del personaje, cubriendo ámbitos como la aptitud con armas o la magia. 
+**[Rangos](../rangos/index.md):** Los rangos, como ya se ha explicado, son la base del sistema Raldamain y forman una parte fundamental de la identidad del personaje. Estos representan las habilidades más destacables del personaje, cubriendo ámbitos como la aptitud con armas o la magia. 
 
 **Equipamiento:** El equipamiento indica las pertenencias y objetos que posee el personaje tanto mágicas como mundanas. El equipamiento inicial va determinado por la riqueza del personaje y los objetos disponibles quedarán indicados en el capítulo 4.
 

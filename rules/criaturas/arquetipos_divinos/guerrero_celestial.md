@@ -12,20 +12,20 @@ title: Guerrero Celestial
 ## Guerrero Celestial I (+2)
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y CAR por 1 junto a sus limitadores. Aumenta también su DEF y PV por 2.
-- **Mejoras de Rango:** Mejora su Rango y modificador en [Guerrero Divino](../../rangos/religion/guerrero_divino.md) y [Ascendencia Celestial](../../rangos/ascendencias/ascendencia_celestial.md) por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
-- **Habilidades Pasivas:** Obtiene las habilidades pasivas [Nacido del Cielo](../../rangos/ascendencias/ascendencia_celestial.md#nacido-del-cielo) y [Cuerpo Puro](../../rangos/ascendencias/ascendencia_celestial.md#cuerpo-puro).
-- **Azote Divino:** Puede usar su modificador de Guerrero Divino para todos sus tiros de ataque con armas y estos provocarán 1d6 daño adicional de un tipo relacionado con su patrón celestial. Esto funciona de la misma manera que el hechizo [Azote Divino](../../rangos/religion/guerrero_divino.md#azote-divino).
+- **Mejoras de Rango:** Mejora su Rango y modificador en [Guerrero Divino](../../rangos/religion/guerrero-divino.md) y [Ascendencia Celestial](../../rangos/ascendencias/ascendencia celestial.md) por 2. Si ya tiene una de estas habilidades el aumento en ella será por 1. 
+- **Habilidades Pasivas:** Obtiene las habilidades pasivas [Nacido del Cielo](../../rangos/ascendencias/ascendencia celestial.md#nacido-del-cielo) y [Cuerpo Puro](../../rangos/ascendencias/ascendencia celestial.md#cuerpo-puro).
+- **Azote Divino:** Puede usar su modificador de Guerrero Divino para todos sus tiros de ataque con armas y estos provocarán 1d6 daño adicional de un tipo relacionado con su patrón celestial. Esto funciona de la misma manera que el hechizo [Azote Divino](../../rangos/religion/guerrero-divino.md#azote-divino).
 - **Sentido Divino:** Puede sentir la posición y naturaleza de todos los efectos divinos y mágicos a distancia media.
-- **Guerrero de la Fe:** Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que [Guerrero de la Fe](../../rangos/religion/guerrero_divino.md#guerrero-de-la-fe).
+- **Guerrero de la Fe:** Obtiene Ventaja en todos sus tiros de ataque y defensa con armas o hechizos vinculados a su patrón celestial además de Resistencia al Miedo y efectos Mentales. Esto funciona de la misma manera que [Guerrero de la Fe](../../rangos/religion/guerrero-divino.md#guerrero-de-la-fe).
 
 ## Guerrero Celestial II (+2, 3 mejoras)
 
 - **Aumentos Estadísticos:** Incrementa su FUE, DES, CON y CAR por 1 junto a sus limitadores. Aumenta también su DEF y PV por 2.
 - **Mejoras de Rango:** Mejora su Rango y modificador en Guerrero Divino y Ascendencia Celestial por 1. 
-- **Habilidades Pasivas:** Obtiene las habilidades pasivas [Alas Angelicales](../../rangos/ascendencias/ascendencia_celestial.md#alas-angelicales) y [Aura Protectora](../../rangos/religion/guerrero_divino#aura-protectora).
+- **Habilidades Pasivas:** Obtiene las habilidades pasivas [Alas Angelicales](../../rangos/ascendencias/ascendencia celestial.md#alas-angelicales) y [Aura Protectora](../../rangos/religion/guerrero_divino#aura-protectora).
 - **Hechizos:** Aprende dos hechizos de Rango I relacionados con su patrón celestial. Podrá lanzar gratuitamente una vez por ronda los hechizos que tengan costes de chi. Todos sus hechizos emplearán su modificador y rango en Guerrero Divino o Ascendencia Celestial.
-- **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de [Impacto Desacralizador](../../rangos/religion/guerrero_divino.md#impacto-desacralizador) a un objetivo que impacte con su arma.
-- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad [Presencia Divina](../../rangos/religion/guerrero_divino.md#presencia-divina) con la diferencia que no afectará a enemigos del mismo nivel o superior.. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
+- **Golpe Desacralizador:** En lugar de infligir daño adicional puede provocar los efectos de [Impacto Desacralizador](../../rangos/religion/guerrero-divino.md#impacto-desacralizador) a un objetivo que impacte con su arma.
+- **Presencia Divina:** Al entrar en combate activará de manera automática la habilidad [Presencia Divina](../../rangos/religion/guerrero-divino.md#presencia-divina) con la diferencia que no afectará a enemigos del mismo nivel o superior.. Si la llega a perder no podrá recuperarla hasta que gaste dos acciones.
 
 ## Guerrero Celestial III (+2, 5 mejoras)
 

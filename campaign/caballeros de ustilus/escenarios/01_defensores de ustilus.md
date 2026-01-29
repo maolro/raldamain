@@ -32,7 +32,7 @@ Si la fogata del fuerte ha sido apagada, entonces el encuentro **La inspección 
 
 ### La inspección de Pantor
 
-En la mañana del segundo día el capitán [Pantor](www.raldamain.com/characters/caballeros_de_ustilus/pantor.html) llegará a inspeccionar el fuerte. Los mazarinos intentarán que se vaya afirmando que el fuerte está en perfecta condición, y si llega a descubrir la verdad estos intentarán que no salga con vida del valle. Pantor es un poderoso aliado para los jugadores y puede aconsejarles de qué decisión tomar. No obstante Pantor, como cualquier personaje aliado importante de esta campaña, no debe ser una solución para todos los problemas ni un deus ex machina. Es recomendable que tenga sus propias estadísticas basándose en los rangos que tiene (no debería superar el nivel 7).
+En la mañana del segundo día el capitán [Pantor](../personajes/pantor.md) llegará a inspeccionar el fuerte. Los mazarinos intentarán que se vaya afirmando que el fuerte está en perfecta condición, y si llega a descubrir la verdad estos intentarán que no salga con vida del valle. Pantor es un poderoso aliado para los jugadores y puede aconsejarles de qué decisión tomar. No obstante Pantor, como cualquier personaje aliado importante de esta campaña, no debe ser una solución para todos los problemas ni un deus ex machina. Es recomendable que tenga sus propias estadísticas basándose en los rangos que tiene (no debería superar el nivel 7).
 
 ### Carga de los húsares
 

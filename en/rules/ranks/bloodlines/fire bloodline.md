@@ -5,7 +5,7 @@ category: Bloodlines
 
 ## Rank I 
 
-You gain resistance 2 to physical damage and unlock ranks in [elemental fire magic](https://raldamain.com/en/rules/ranks/Elemental%20magic/fire%20magic.html)
+You gain resistance 2 to physical damage and unlock ranks in [elemental fire magic](../elemental magic/fire magic.md)
 
 <u>Heat Adaptation:</u> You are immune to extreme heat and high temperatures. You have fire resistance equal to your Fire bloodline rank.
 
@@ -18,7 +18,7 @@ You gain resistance 2 to physical damage and unlock ranks in [elemental fire mag
 
 Increases your DEX by 1.
 
-<u>Fire's fury:</u> As a bonus action you can suffer 2 non-lethal damage to infuse your weapons with elemental fire for one round. Fire infused weapons will deal +2 fire damage and inflict [mild burns](https://raldamain.com/en/rules/main%20rules/status%20effects.html#burned) whenever they deal hit point damage (medium burns on a critical hit). 
+<u>Fire's fury:</u> As a bonus action you can suffer 2 non-lethal damage to infuse your weapons with elemental fire for one round. Fire infused weapons will deal +2 fire damage and inflict [mild burns](../../main rules/status effects.md#burned) whenever they deal hit point damage (medium burns on a critical hit). 
 
 <u>Fiery impulse:</u> Fire propels you to move faster, granting you an additional move action per turn. Your jump also speeds increase, letting you jump an additional 10 feet horizontally and 5 feet vertically. 
 
@@ -52,6 +52,6 @@ Increase your resistance to physical damage by 1 and your magic resistance by 3.
 
 Increase your DEX by 1.
 
-<u>Elemental form:</u> As a full turn action, you surround yourself with pure elemental fire. While in elemental form you are constantly surrounded by a Wall of fire and the damage from scorching aura will increase by 1. In this state you can use fire jet as a move action without suffering non-lethal damage. In addition, all attacks you make will deal fire instead of physical damage and use your CHA stat for attack and damage modifiers. Elemental form will last a number of rounds equal to your rank + 1 or until you lose concentration on it. This ability will also be lost if you are submerged in water or are affected by a [tsunami](https://raldamain.com/en/rules/ranks/Elemental%20magic/water%20magic.html#rank-v) or [hurricane](https://raldamain.com/en/rules/ranks/Elemental%20magic/air%20magic.html#rank-v).
+<u>Elemental form:</u> As a full turn action, you surround yourself with pure elemental fire. While in elemental form you are constantly surrounded by a Wall of fire and the damage from scorching aura will increase by 1. In this state you can use fire jet as a move action without suffering non-lethal damage. In addition, all attacks you make will deal fire instead of physical damage and use your CHA stat for attack and damage modifiers. Elemental form will last a number of rounds equal to your rank + 1 or until you lose concentration on it. This ability will also be lost if you are submerged in water or are affected by a [tsunami](../elemental magic/water magic.md#rank-v) or [hurricane](../elemental magic/air magic.md#rank-v).
 
 <u>Chosen of the spirits:</u> You have become a champion blessed by the spirits themselves. Their blessings grant you resistance 4 to mind-effects, poisons and diseases, and you body ages ten times slower. Spirits will never be naturally hostile against you and they will treat you with great respect.

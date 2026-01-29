@@ -7,15 +7,15 @@ Los humanos o aquellas especies con un intelecto similar siempre han demostrado 
 
 ## Rango I 
 
-Incrementa tu NC máximo de [agentes](https://raldamain.com/rules/Reglas%20adicionales/agentes.html) de nivel 0 por 3.
+Incrementa tu NC máximo de [agentes](../../rules/Reglas adicionales/agentes.md) de nivel 0 por 3.
 
-<u>Astucia de negocios</u> (pasiva): Tus talentos de comerciante te permiten gozar de un mejor nivel de vida. Eres propietario de una casa de clase media (construida con 3 [PC](https://raldamain.com/rules/Reglas%20adicionales/bases.html)) y recibes tres contactos de la misma clase social que tú. Tu negocio genera suficiente dinero para que puedas mantenerte y tener a tu disposición cualquier objeto legal de bajo coste, aumentando tu nivel de riqueza por un paso. Cada vez que asciendes un rango puedes volver a aumentar tu nivel de riqueza por 1, llegando como máximo a 8. Los contactos puedes elegirlos tú con consentimiento del máster.
+<u>Astucia de negocios</u> (pasiva): Tus talentos de comerciante te permiten gozar de un mejor nivel de vida. Eres propietario de una casa de clase media (construida con 3 [PC](../../rules/Reglas adicionales/bases.md)) y recibes tres contactos de la misma clase social que tú. Tu negocio genera suficiente dinero para que puedas mantenerte y tener a tu disposición cualquier objeto legal de bajo coste, aumentando tu nivel de riqueza por un paso. Cada vez que asciendes un rango puedes volver a aumentar tu nivel de riqueza por 1, llegando como máximo a 8. Los contactos puedes elegirlos tú con consentimiento del máster.
 
-<u>Estatus alto</u> (pasiva): Usando tu dinero puedes recibir favores con más facilidad de aquellos con menor clase. No sufres penalizadores al usar [influenciar](https://raldamain.com/rules/Rangos/Social/influenciar.html) con personas de estamentos superiores y un numero de veces al día igual a tu Rango + 1 puedes tener éxito automático en un tiro de influencia para pedir favores a alguien de clase inferior.
+<u>Estatus alto</u> (pasiva): Usando tu dinero puedes recibir favores con más facilidad de aquellos con menor clase. No sufres penalizadores al usar [influenciar](../../rules/Rangos/Social/influenciar.md) con personas de estamentos superiores y un numero de veces al día igual a tu Rango + 1 puedes tener éxito automático en un tiro de influencia para pedir favores a alguien de clase inferior.
 
 ## Rango II 
 
-Incrementa tu NC máximo de [agentes](https://raldamain.com/rules/Reglas%20adicionales/agentes.html) de nivel 0 por 3.
+Incrementa tu NC máximo de [agentes](../../rules/Reglas adicionales/agentes.md) de nivel 0 por 3.
 
 <u>Comercio secreto</u> (pasiva): Usando tus contactos puedes llegar con facilidad a encontrar objetos raros y hasta mágicos. Empleando un día de búsqueda y realizando un tiro de comercio contra una dificultad escogida por el máster según la rareza del objeto puedes encontrar aquello que buscas a un coste descontado de 1 crédito (no es posible encontrar objetos con valor superior a tu rango de comercio + 2). Debido a la rareza de este tipo de objetos si fracasas es posible que atraigas atención indeseada si aquello ques peligroso o ilegal.
 
@@ -23,9 +23,9 @@ Incrementa tu NC máximo de [agentes](https://raldamain.com/rules/Reglas%20adici
 
 ## Rango III 
 
-Incrementa tu NC máximo de [agentes](https://raldamain.com/rules/Reglas%20adicionales/agentes.html) de nivel 0 por 3.
+Incrementa tu NC máximo de [agentes](../../rules/Reglas adicionales/agentes.md) de nivel 0 por 3.
 
 <u>Alijo secreto</u> (pasiva): Obtienes un lugar secreto donde puedes ocultar tus pertenencias más valiosas. El alijo está protegido contra magia y mientras estés ahí no eres detectable por ello. Puedes conseguir un objeto de tu alijo empleando un descanso corto en una ciudad.
 
-<u>Comprar la magia</u> (pasiva): Todo puede ser encontrado pagando lo suficiente, hasta la magia. Puedes infundir objetos con hechizos que no conozcas o usar un ritual aunque no sepas magia si tienes éxito en una búsqueda como si se tratase de la habilidad comercio secreto. Aumenta los [PC](https://raldamain.com/rules/Reglas%20adicionales/bases.html) de una de tus propiedades por 3.
+<u>Comprar la magia</u> (pasiva): Todo puede ser encontrado pagando lo suficiente, hasta la magia. Puedes infundir objetos con hechizos que no conozcas o usar un ritual aunque no sepas magia si tienes éxito en una búsqueda como si se tratase de la habilidad comercio secreto. Aumenta los [PC](../../rules/Reglas adicionales/bases.md) de una de tus propiedades por 3.
 

@@ -5,7 +5,7 @@ category: Bloodlines
 
 ## Rank I
 
-You gain resistance 2 to physical damage and you unlock ranks in [water elemental magic](https://raldamain.com/en/rules/ranks/Elemental%20magic/water%20magic.html)
+You gain resistance 2 to physical damage and you unlock ranks in [water elemental magic](../../../../rules/ranks/elemental magic/water magic.md)
 
 <u>Water adaptation</u>: You receive resistance to cold damage equal to your water bloodline rank. You will also suffer no ill effects from extreme cold and marine animals will not naturally hostile towards you.
 
@@ -22,13 +22,13 @@ Increase your CON by 1.
 
 <u>Water breathing</u>: Your lungs are better adapted to breathing underwater. You are able to hold your breath for a number of minutes equal to your rank and you cannot be drowned by elemental water magic
 
-<u>Hydraulic push:</u> As a bonus action you can suffer 2 non-lethal damage to infuse your attacks with your element. An infused attack will deal +1 base damage and you will gain advantage in combat maneuvers. If you have ranks in [Ice Magic](https://raldamain.com/en/rules/ranks/Elemental%20magic/ice%20magic.html) you can make your natural attacks deal +2 cold damage and stagger your targets whenever you inflict a permanent injury.
+<u>Hydraulic push:</u> As a bonus action you can suffer 2 non-lethal damage to infuse your attacks with your element. An infused attack will deal +1 base damage and you will gain advantage in combat maneuvers. If you have ranks in [Ice Magic](../../../../rules/ranks/elemental magic/ice magic.md) you can make your natural attacks deal +2 cold damage and stagger your targets whenever you inflict a permanent injury.
 
 ## Rank III 
 
 Increase your resistance to physical damage by 1.
 
-<u>Fluid form:</u> As a standard action you can surround yourself with a barrier of fluid waters, protecting yourself from physical and magical attacks. While this barrier remains active all damage you suffer will be reduced by 2 and a 10-foot area centered on you becomes [difficult terrain](https://raldamain.com/en/rules/main%20rules/combat%20rules.html#difficult-terrain). You can suffer 2 non-lethal damage to increase the strength of the currents, increasing the damage reduction by 2 for one round and granting you advantage in defensive rolls. To use this ability you must be in contact with 5 or more cubic feet of water and it cannot remain active for more than one minute at a time.
+<u>Fluid form:</u> As a standard action you can surround yourself with a barrier of fluid waters, protecting yourself from physical and magical attacks. While this barrier remains active all damage you suffer will be reduced by 2 and a 10-foot area centered on you becomes [difficult terrain](../../../../rules/main rules/combat rules.md#difficult-terrain). You can suffer 2 non-lethal damage to increase the strength of the currents, increasing the damage reduction by 2 for one round and granting you advantage in defensive rolls. To use this ability you must be in contact with 5 or more cubic feet of water and it cannot remain active for more than one minute at a time.
 
 <u>Elemental connection:</u> Water is a source of life for your body. When you start your turn in contact with water or submerged in it you regain 1 Vitality. You will not be able to heal your HP in this way, but by taking a short rest in an area with a high presence of your element (rivers, lakes, seas or rain) you recover all your HP as if you were taking a long rest. If you take a long rest in this area reduce the level of all permanent injuries affecting you by 1 step. In addition, if you use water in a First Aid check you will not consume a use of this ability and will heal 1 additional HP. At rank V every round you remain in contact with water you will heal 1 HP or 2 Vitality.
 
@@ -44,7 +44,7 @@ Increase your CHA by 1. You can replace the attack bonus you have in a specific 
 
 Increase your resistance to physical damage by 1 and your magic resistance by 3.
 
-<u>Element of change:</u> Your defenses are capable of adapting themselves to your current situation. You gain resistance to fire damage equal to your rank and at the beginning of your turn you can choose gain resistance equal to your rank against a status effect of your choice (some possibilities are [bleeding](https://raldamain.com/en/rules/main%20rules/status%20effects.html#bleeding), [burned](https://raldamain.com/en/rules/main%20rules/status%20effects.html#burned), [confused](https://raldamain.com/en/rules/main%20rules/status%20effects.html#confused), [sickened](https://raldamain.com/en/rules/main%20rules/status%20effects.html#sickened), [staggered](https://raldamain.com/en/rules/main%20rules/status%20effects.html#staggered) or [frightened](https://raldamain.com/en/rules/main%20rules/status%20effects.html#frightened)).
+<u>Element of change:</u> Your defenses are capable of adapting themselves to your current situation. You gain resistance to fire damage equal to your rank and at the beginning of your turn you can choose gain resistance equal to your rank against a status effect of your choice (some possibilities are [bleeding](../../../../rules/main rules/status effects.md#bleeding), [burned](../../../../rules/main rules/status effects.md#burned), [confused](../../../../rules/main rules/status effects.md#confused), [sickened](../../../../rules/main rules/status effects.md#sickened), [staggered](../../../../rules/main rules/status effects.md#staggered) or [frightened](../../../../rules/main rules/status effects.md#frightened)).
 
 <u>Echolocation:</u> You gain blind sight in a 30-foot range. You are also able to predict the movements of creatures that are on the same water surface as you, preventing you from being surprised by them and granting you the ability to repeat an attack or defense roll once per round.
 
@@ -52,6 +52,6 @@ Increase your resistance to physical damage by 1 and your magic resistance by 3.
 
 Increases your DEX by 1.
 
-<u>Elemental Form:</u> As a full-round action you can surround yourself with a large mass of roaring waters. While you are in elemental form you are constantly surrounded by a wall of water and using water column now costs a move action (this effect now lasts until you lose concentration). Additionally, the defense bonus granted by Fluid form increases by 2 and all water within 30 feet  is under the effect of [Raging Currents](https://raldamain.com/en/rules/ranks/Elemental%20magic/water%20magic.html#rank-iii). In addition, all physical attacks you make will push your target 1d6 x 5 feet on hit. Elemental form will last a number of rounds equal to your rank + 1 or until you lose concentration on it. This ability will also be lost if you are hit with a Rain of embers.
+<u>Elemental Form:</u> As a full-round action you can surround yourself with a large mass of roaring waters. While you are in elemental form you are constantly surrounded by a wall of water and using water column now costs a move action (this effect now lasts until you lose concentration). Additionally, the defense bonus granted by Fluid form increases by 2 and all water within 30 feet  is under the effect of [Raging Currents](../../../../rules/ranks/elemental magic/water magic.md#rank-iii). In addition, all physical attacks you make will push your target 1d6 x 5 feet on hit. Elemental form will last a number of rounds equal to your rank + 1 or until you lose concentration on it. This ability will also be lost if you are hit with a Rain of embers.
 
 <u>Chosen of the spirits:</u> You have become a champion blessed by the spirits themselves. Their blessings grant you resistance 4 to mind-effects, poisons and diseases, and you body ages ten times slower. Spirits will never be naturally hostile against you and they will treat you with great respect.

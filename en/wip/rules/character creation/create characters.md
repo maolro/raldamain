@@ -25,7 +25,7 @@ The next step to create a character is to determine the Hit Points (HP), Vitalit
 
 - **Vitality**: Vitality measures a character's physical endurance capacity. Vitality is equal to 2 + CON + the character's level. All damage taken by character will go to vitality first instead of HP, including non-lethal damage. If a character's Vitality reaches 0  all future damage taken will become lethal.
 
-- **Defense**: Defense is a value that reduces the damage you suffer. Defense depends on the armor you wear and your natural endurance, known as natural armor (humans start with 0 natural armor). The amount of defense a certain suit of armor grants can be found [here](https://raldamain.com/en/rules/ranks/Combat/armor.html).
+- **Defense**: Defense is a value that reduces the damage you suffer. Defense depends on the armor you wear and your natural endurance, known as natural armor (humans start with 0 natural armor). The amount of defense a certain suit of armor grants can be found [here](../../../rules/ranks/combat/armor.md).
 
   Similar to defense are resistances, which are mostly supernatural abilities which grant you the ability to ignore some damage of a specific type. Resistances can protect you against either physical damage, energy damage or arcane magic, and the add up with each other.
 
@@ -33,8 +33,8 @@ HP and Vitality are reduced or increased if you suffer any change to your consti
 
 ## Talents
 
-Talents represent your proficiency in various abilities unrelated to skill ranks. Your proficiency with a talent is marked by the  talent level, which ranges from 0 to 5. At level 1 a character have has four levels to distribute among all talents, reaching a maximum talent level of 2. Every time a character gains a level they will gain an additional talent level to distribute. A complete list of talents can be found [here](https://raldamain.com/en/rules/Character%20creation/talents.html).
+Talents represent your proficiency in various abilities unrelated to skill ranks. Your proficiency with a talent is marked by the  talent level, which ranges from 0 to 5. At level 1 a character have has four levels to distribute among all talents, reaching a maximum talent level of 2. Every time a character gains a level they will gain an additional talent level to distribute. A complete list of talents can be found [here](../../../rules/character creation/talents.md).
 
 ## Skills
 
-Skills form the basis of the Raldamain system and define the nature of a character. Each skill has a specific number of ranks, which represent the level of mastery a character has in it. You get 2 ranks of your choice at level 1, and at each subsequent level you gain an additional rank in a specific skill. You cannot reach a skill rank higher than your level divided by 2, rounded down (i.e. at level 5 you cannot have an ability ranked III). With the consent of the GM a player can slightly modify the attributes that a skill rank grants to better suit the character they seek to build. A compilation of skills can be found [here](https://raldamain.com/en/rules/ranks/).
+Skills form the basis of the Raldamain system and define the nature of a character. Each skill has a specific number of ranks, which represent the level of mastery a character has in it. You get 2 ranks of your choice at level 1, and at each subsequent level you gain an additional rank in a specific skill. You cannot reach a skill rank higher than your level divided by 2, rounded down (i.e. at level 5 you cannot have an ability ranked III). With the consent of the GM a player can slightly modify the attributes that a skill rank grants to better suit the character they seek to build. A compilation of skills can be found [here](../../../rules/ranks.md).

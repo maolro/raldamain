@@ -47,7 +47,7 @@ Cuando el atacante y el defensor realizan un tiro de ataque existe la posibilida
 
 ## Tácticas de combate
 
-El comandante de una unidad podrá ordenarla a seguir una de las siguientes tácticas de combate. Estas funcionan igual que la habilidad de Presencia Dirigir combatientes y darán determinadas ventajas a un ejército al entrar en combate. Un ejército sólo puede tener activa una táctica a la vez y estas deben ser declaradas cuando el ejército realiza un tiro de ataque o defensa. Cambiar de táctica requiere una acción de movimiento para el ejército. Una lista completa de las tácticas puede encontrarse [aquí](https://raldamain.com/rules/Reglas%20adicionales/tacticas%20de%20combate.html).
+El comandante de una unidad podrá ordenarla a seguir una de las siguientes tácticas de combate. Estas funcionan igual que la habilidad de Presencia Dirigir combatientes y darán determinadas ventajas a un ejército al entrar en combate. Un ejército sólo puede tener activa una táctica a la vez y estas deben ser declaradas cuando el ejército realiza un tiro de ataque o defensa. Cambiar de táctica requiere una acción de movimiento para el ejército. Una lista completa de las tácticas puede encontrarse [aquí](../rules/Reglas adicionales/tacticas de combate.md).
 
 ## Situaciones de la batalla
 

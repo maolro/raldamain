@@ -7,7 +7,7 @@ category: Combat
 
 <u>Armor training</u>: Reduces the armor penalty by 2 If you manage to reduce the armor penalty to 0, you can move and use reflexes skills as if you were not wearing armor. Every time you get a rank in armor proficiency reduce the penalty by 1 again
 
-<u>Reinforced defense</u>: Increase your defense by 2 if you are wearing armor. The defense is increased again by 1 each time you get a rank in suitability with armor. This increase in defense also reduces the damage from non-magical attacks against which your armor is not applied, such as [Deadly aim](https://raldamain.com/en/rules/ranks/Weapons/firearms.html#rank-i).
+<u>Reinforced defense</u>: Increase your defense by 2 if you are wearing armor. The defense is increased again by 1 each time you get a rank in suitability with armor. This increase in defense also reduces the damage from non-magical attacks against which your armor is not applied, such as [Deadly aim](../weapons/firearms.md#rank-i).
 
 ## Rank II
 
@@ -19,7 +19,7 @@ category: Combat
 
 <u>Magic defense</u>: Your armor acts as an extension of your body and is infused with your magical power. The armor increases your Magic Resistance by 3 if you have a Bloodline or ranks in a magic. If you don't have any of those ranks then you must spend a month getting special materials to make magic armor, which gives you magic resistance equal to your armor rank.
 
-<u>Steel Champion</u>: Armor protects you from even deadly attacks. Once a turn, reduce the level of a [permanent injury](https://raldamain.com/en/rules/main%20rules/permanent%20injuries.html) you suffer by one step. You can also affect instant death attacks such as [master hunter](https://raldamain.com/en/rules/ranks/Combat/track.html#rank-v), making them only cause you a serious permanent injury.
+<u>Steel Champion</u>: Armor protects you from even deadly attacks. Once a turn, reduce the level of a [permanent injury](../../main rules/permanent injuries.md) you suffer by one step. You can also affect instant death attacks such as [master hunter](track.md#rank-v), making them only cause you a serious permanent injury.
 
 # Types of armor
 
