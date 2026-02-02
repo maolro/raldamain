@@ -1,0 +1,122 @@
+{
+  "id": "ascendencia_akhasica",
+  "title": "Ascendencia Akhásica",
+  "category": "Ascendencias",
+  "image": "ascendencia_akhasica.jpg",
+  "stats": ["Inteligencia", "Vigor", "Chi"],
+  "description": "Conectas tu mente con la inteligencia colectiva del universo. Obtienes conocimiento absoluto, poderes psíquicos y la capacidad de alterar el destino.",
+  "fundamentals": [
+    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Vínculo Akhásico",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Puedes repetir un tiro (Ataque, Defensa, Salvación) y quedarte el mejor resultado. Usos diarios: Rango + 2.",
+          "empower": "Recuperas un uso gastado de esta habilidad."
+        },
+        {
+          "name": "Hipercognición",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a efectos Mentales. Aprendes idiomas en 1 mes. Aprendes 2 hechizos (Mentales o Arcanos) de Rango I que usan INT y Vigor."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "passive": "Incrementa tu estadística de INT y su limitador máximo en +1.",
+      "abilities": [
+        {
+          "name": "Meditación Iluminada",
+          "tags": ["Innata", "Duradera"],
+          "cost": "3 acciones, 1 chi",
+          "duration": "Concentración",
+          "desc": "Estado de trance: Ventaja en tiros de INT e inmunidad a ataques sorpresa."
+        },
+        {
+          "name": "Sentido Mágico",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Medio",
+          "desc": "Detectas posición y fuerza de criaturas/auras mágicas. Identificas propiedades de objetos o lugares mágicos al interactuar."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "passive": "Aprendes 2 hechizos (Mentales o Arcanos) adicionales de Rango II o menos (usan Vigor).",
+      "abilities": [
+        {
+          "name": "Forma Astral",
+          "tags": ["Innata", "Duradera"],
+          "cost": "3 acciones, 2 chi",
+          "duration": "Concentración",
+          "range": "100m",
+          "desc": "Proyectas cuerpo incorpóreo (Vuelo 1, Inmunidad a Físico/Elemental). Cuerpo físico queda inconsciente. A Rango V permite viajar a otros planos."
+        },
+        {
+          "name": "Psicomagia",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Lanzas hechizos sin componentes verbales/somáticos. Puedes reducir Cordura en 2 para recuperar 1 Chi/Vigor (Max 3 veces/ronda)."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "passive": "Incrementa tu estadística de SAB y su limitador en +1.",
+      "abilities": [
+        {
+          "name": "Abrir el Tercer Ojo",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Inmunidad a Ilusiones. Ves invisibilidad y formas verdaderas. Ventaja en Averiguar Intenciones."
+        },
+        {
+          "name": "Fortaleza del Pensamiento",
+          "tags": ["Innata", "Defensiva"],
+          "cost": "2 acciones, 2 chi/vigor",
+          "duration": "Indefinida",
+          "desc": "Ganas Escudos = Rango. Resistencia a efectos Mentales y Arcanos. Dura hasta perder concentración o escudos.",
+          "empower": "Recuperas la mitad de tus contadores de escudo actuales."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "passive": "Aprendes 2 hechizos (Mentales o Arcanos) adicionales de Rango III o menos (usan Vigor).",
+      "abilities": [
+        {
+          "name": "Palacio de la Mente",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Creas un demiplano mental impenetrable. 1 minuto dentro = 1 segundo real. Permite realizar acciones mentales largas instantáneamente."
+        },
+        {
+          "name": "Mente Iluminada",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Inmunidad a efectos Mentales. Omniglotismo. Usas tu mejor bonificador para cualquier tiro de magia."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "passive": "Incrementa tu estadística de CAR y su limitador en +1.",
+      "abilities": [
+        {
+          "name": "Árbitro del Destino",
+          "tags": ["Innata", "Transformación"],
+          "cost": "3 acciones, 5 chi",
+          "duration": "6 Rondas",
+          "desc": "Avatar del destino (+40 Vitalidad Temporal). Stats Mentales suben a 12, DEF a 20. Activa 'Fortaleza del Pensamiento'. Ventaja Mental, +1d6 daño Arcano. Hechizos de Ascendencia gratis (0 coste). Aprendes 6 hechizos nuevos (Rango IV o menos)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+.rank-hero {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.rank-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--accent-gold);
+    text-shadow: 0 0 15px rgba(255, 242, 0, 0.2);
+    text-align: center;
+}
+
+.rank-meta {
+    margin-top: 1rem;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meta-badge {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--accent-gold);
+    padding: 5px 15px;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Rank Section Headers */
+.rank-level-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 3rem 0 1.5rem 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.rank-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: #333;
+    -webkit-text-stroke: 1px var(--accent-gold);
+}
+
+.rank-title {
+    color: var(--text-main);
+    font-size: 2rem;
+    font-family: var(--font-heading);
+}
+
+.rank-passive {
+    color: var(--accent-gold);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    border-left: 2px solid #555;
+    padding-left: 1rem;
+}
+
+/* Ability Cards Specifics */
+.ability-card {
+    background-color: var(--secondary-black);
+    border: 1px solid #333;
+    border-left: 4px solid var(--accent-gold);
+    padding: 1.5rem;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.ability-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-color: #555;
+    border-left-color: var(--accent-gold);
+}
+
+.ability-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.ability-title {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.4rem;
+}
+
+.ability-tags {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    display: block;
+    margin-top: 4px;
+}
+
+.ability-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.stat-pill {
+    background: #111;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    border: 1px solid #444;
+    color: var(--text-muted);
+}
+
+.stat-pill span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.ability-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ddd;
+    flex-grow: 1;
+}
+
+.empower-box {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 242, 0, 0.05);
+    border: 1px dashed #555;
+    border-radius: 4px;
+}
+
+.empower-label {
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-family: var(--font-heading);
+    margin-right: 5px;
+}
+
+/* Status Effect Links */
+.status-effect-link {
+    color: #ff9966;
+    text-decoration: none;
+    border-bottom: 1px dotted #ff9966;
+    transition: all 0.2s ease;
+}
+
+.status-effect-link:hover {
+    color: var(--accent-gold);
+    border-bottom-color: var(--accent-gold);
+    background: rgba(255, 153, 102, 0.1);
+}
+
+.status-effect-link i,
+.status-effect-link em {
+    font-style: italic;
+}

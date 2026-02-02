@@ -1,0 +1,107 @@
+{
+  "id": "rastrear",
+  "title": "Rastrear",
+  "category": "Combate",
+  "image": "rastrear.jpg",
+  "stats": ["Sabiduría", "Vigor"],
+  "description": "Eres un experto en el terreno y la caza. Analizas a tus enemigos, te mueves sin ser visto y usas el entorno a tu favor para emboscar o sanar.",
+  "fundamentals": [
+    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Conocimiento del Terreno:</strong> Habilidades potenciadas en entornos familiares."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Analizar Enemigo",
+          "tags": ["Innata", "Duradera"],
+          "cost": "1 vigor",
+          "duration": "Indefinido",
+          "desc": "Tras observar 1 ronda: Ganas Ventaja en ataque y defensa contra ese enemigo específico. Se pierde al cambiar de objetivo."
+        },
+        {
+          "name": "Sanador Instintivo",
+          "tags": ["Innata", "Sanación", "Toque"],
+          "cost": "1 acción, 1 vigor",
+          "desc": "Cura (Rango + 2) de Vitalidad y reduce gravedad de una herida/aflicción un paso. Requiere materiales."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Acechar",
+          "tags": ["Innata", "Duradera"],
+          "cost": "1 vigor",
+          "desc": "Invisibilidad mientras no seas visto. Termina al atacar o salir del escondite."
+        },
+        {
+          "name": "Maestro del Terreno",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Elige entorno (Bosque, Ciudad, etc.). Ganas Ventaja en Sigilo/Percepción allí y beneficios pasivos (ej. Vista ciega en subterráneo, Inmunidad climática, etc.)."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Lo he visto Antes",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Al defenderte de un ataque/habilidad ya usado contra ti anteriormente por el mismo enemigo, puedes repetir el tiro defensivo."
+        },
+        {
+          "name": "Inescrutable",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a Mental y Miedo. Inmunidad a lectura de mente o predicción de movimientos."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Vista de Lince",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Medio",
+          "desc": "Resistencia a Ilusiones. Reacción para identificar ilusiones.",
+          "empower": "Éxito automático para identificar o resistir una ilusión."
+        },
+        {
+          "name": "Cambio Repentino",
+          "tags": ["Innata", "Reacción"],
+          "cost": "2 vigor",
+          "desc": "Cambias tu ataque por otro (coste igual/menor) después de tirar pero antes del daño. El enemigo pierde su defensa previa."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Enemigo Juramentado",
+          "tags": ["Innata", "Pasiva"],
+          "cost": "3 vigor",
+          "duration": "Permanente (hasta muerte)",
+          "desc": "Marcas un enemigo. Ganas Ventaja total contra él, +1d6 daño y aplicas efecto crítico en cada impacto."
+        },
+        {
+          "name": "Coto de Caza",
+          "tags": ["Innata", "Mental", "Duradera"],
+          "cost": "1 acción, 3 vigor",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "En terreno predilecto: 1 vez/ronda obligas al enemigo a realizar una acción. Se resiste con Averiguar vs Sigilo.",
+          "empower": "Usar una vez adicional por ronda."
+        }
+      ]
+    }
+  ]
+}

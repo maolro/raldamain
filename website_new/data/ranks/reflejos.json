@@ -1,0 +1,103 @@
+{
+  "id": "reflejos",
+  "title": "Reflejos",
+  "category": "Combate",
+  "image": "reflejos.jpg",
+  "stats": ["Destreza", "Vigor"],
+  "description": "Posees una velocidad de reacción sobrenatural. Esquivas ataques invisibles, reaccionas antes que nadie y te mueves con una agilidad imposible de rastrear.",
+  "fundamentals": [
+    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Gran Agilidad:</strong> Sumas tu Rango a todos los tiros de Esquiva.",
+    "<strong>Absolutamente innato:</strong> Habilidades físicas naturales que no pueden ser suprimidas ni contrarrestadas."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Velocidad Superior",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Aumenta tus acciones por turno en +1. Sumas tu Rango a la Iniciativa.",
+          "empower": "Realizar una acción fuera de turno (pagando su coste)."
+        },
+        {
+          "name": "Instinto de Supervivencia",
+          "tags": ["Innata", "Reacción"],
+          "desc": "Repite un tiro de DES (Ataque, Defensa, Salvación) y quédate el mejor. Usos: Rango + 2 por combate.",
+          "empower": "Recuperas un uso de esta habilidad."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Esquiva Asombrosa",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Puedes usar Esquiva contra ataques sorpresa o imposibles (con Desventaja)."
+        },
+        {
+          "name": "Evasión",
+          "tags": ["Innata", "Defensiva"],
+          "cost": "1 vigor",
+          "desc": "Al fallar una Esquiva: Reduces el daño a la mitad, evitas efectos de estado y desenganchas (acción bonus)."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Giro Defensivo",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Estando en Posición Defensiva: Reduces todo daño recibido en (Rango + 1) antes de la DEF.",
+          "empower": "Entras en Posición Defensiva como acción bonus."
+        },
+        {
+          "name": "Gran Acróbata",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Inmunidad a Terreno Difícil y Tropezado. Velocidad Escalada 1. Resistencia a Caídas.",
+          "empower": "Te levantas inmediatamente del estado Tropezado."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Sexto Sentido",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Medio",
+          "desc": "Vista ciega media. Esquiva sin penalizador vs ataques rápidos/balas. Resistencia a Ilusiones y Visuales."
+        },
+        {
+          "name": "Punto Ciego",
+          "tags": ["Innata", "Reacción"],
+          "cost": "2 vigor",
+          "desc": "Puedes usar Esquiva para defenderte de Tiros de Salvación que te apunten explícitamente (ej. hechizos mentales)."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Libertad de Movimiento",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a Agarres (y Ventaja para escapar). Desenganchar como acción bonus.",
+          "empower": "Te liberas inmediatamente de un Agarre."
+        },
+        {
+          "name": "Reflejos Supremos",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Obtienes un turno adicional completo (3 acciones) con -10 a la iniciativa."
+        }
+      ]
+    }
+  ]
+}

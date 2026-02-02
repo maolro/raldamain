@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criatura | Raldamain</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/creature_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/creature_loader.js"></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="creature-hero" id="hero-section">
+        <div class="creature-hero-overlay">
+            <h1 id="creature-name">Cargando...</h1>
+            <div class="creature-meta" id="creature-meta">
+                <!-- Level, Type, Size, Alignment badges -->
+            </div>
+        </div>
+    </header>
+
+    <section class="container creature-container">
+
+        <!-- Main Statblock -->
+        <div class="statblock" id="statblock">
+            <!-- Header -->
+            <div class="statblock-header">
+                <h2 id="statblock-name"></h2>
+                <p id="statblock-subtitle"></p>
+            </div>
+
+            <!-- Combat Stats -->
+            <div class="statblock-combat" id="statblock-combat">
+                <!-- HP, Defense, Speed, Initiative -->
+            </div>
+
+            <!-- Separator -->
+            <div class="statblock-separator"></div>
+
+            <!-- Ability Scores -->
+            <div class="statblock-abilities" id="statblock-abilities">
+                <!-- FUE, DES, CON, INT, SAB, CAR -->
+            </div>
+
+            <!-- Separator -->
+            <div class="statblock-separator"></div>
+
+            <!-- Defenses, Senses, Languages -->
+            <div class="statblock-properties" id="statblock-properties">
+                <!-- Resistances, Immunities, Vulnerabilities, Senses, Languages -->
+            </div>
+
+            <!-- Separator (conditional) -->
+            <div class="statblock-separator" id="traits-separator"></div>
+
+            <!-- Traits -->
+            <div class="statblock-traits" id="statblock-traits">
+                <!-- Special abilities -->
+            </div>
+
+            <!-- Actions Section -->
+            <div class="statblock-section">
+                <h3 class="statblock-section-title">Acciones</h3>
+                <div class="statblock-section-content" id="statblock-actions">
+                    <!-- Attack actions -->
+                </div>
+            </div>
+
+            <!-- Reactions Section (if any) -->
+            <div class="statblock-section" id="reactions-section" style="display: none;">
+                <h3 class="statblock-section-title">Reacciones</h3>
+                <div class="statblock-section-content" id="statblock-reactions"></div>
+            </div>
+
+            <!-- Legendary Actions Section (if any) -->
+            <div class="statblock-section" id="legendary-section" style="display: none;">
+                <h3 class="statblock-section-title">Acciones Legendarias</h3>
+                <p class="legendary-intro" id="legendary-intro"></p>
+                <div class="statblock-section-content" id="statblock-legendary"></div>
+            </div>
+        </div>
+
+        <!-- Lore Section -->
+        <div class="creature-lore" id="creature-lore">
+            <h2 class="section-title">Trasfondo</h2>
+            <p id="lore-text"></p>
+        </div>
+
+        <!-- Loot Section -->
+        <div class="creature-loot" id="creature-loot">
+            <h2 class="section-title">Botín y Recompensas</h2>
+            <div class="loot-xp">
+                <span class="loot-label">Experiencia:</span>
+                <span id="loot-xp-value"></span> XP
+            </div>
+            <table class="loot-table">
+                <thead>
+                    <tr>
+                        <th>Objeto</th>
+                        <th>Probabilidad</th>
+                    </tr>
+                </thead>
+                <tbody id="loot-items">
+                    <!-- Loot rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tags -->
+        <div class="creature-tags" id="creature-tags">
+            <!-- Tag pills -->
+        </div>
+
+        <!-- Back to Bestiary Link -->
+        <div class="back-link">
+            <a href="/criaturas.html">&larr; Volver al Bestiario</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raldamain Studios</p>
+    </footer>
+
+</body>
+</html>

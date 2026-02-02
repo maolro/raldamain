@@ -1,0 +1,103 @@
+{
+  "id": "ira",
+  "title": "Ira",
+  "category": "Combate",
+  "image": "ira.jpg",
+  "stats": ["Fuerza", "Constitución", "Vigor"],
+  "description": "Canalizas tu furia para superar los límites físicos. Entras en un trance de combate que incrementa tu fuerza y resistencia a costa de tu defensa y racionalidad.",
+  "fundamentals": [
+    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Voluntad para luchar:</strong> Requiere estar en combate y tener motivación. Si pierdes la voluntad, pierdes los beneficios.",
+    "<strong>Completamente innato:</strong> Habilidades físicas naturales que no pueden ser suprimidas ni contrarrestadas."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Ira de Combate",
+          "tags": ["Ira", "Innata", "Pasiva"],
+          "duration": "Max 6 rondas",
+          "desc": "Estado de furia. Ventaja en ataques y salvaciones físicas. +1d6 daño. No puedes concentrarte ni usar Posición Defensiva. Al terminar: pierdes Vigor igual a rondas usadas (riesgo de inconsciencia)."
+        },
+        {
+          "name": "Frenesí de Batalla",
+          "tags": ["Innata", "Pasiva"],
+          "duration": "1 Ronda",
+          "desc": "Ventaja en todos los ataques de arma/artes marciales a cambio de Desventaja en tiros defensivos."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Demostración Terrorífica",
+          "tags": ["Ira", "Miedo"],
+          "cost": "1 vigor",
+          "area": "Radio medio",
+          "crit": "Aumenta nivel de Miedo un paso extra.",
+          "desc": "Enemigos deben superar salvación de Voluntad/Intimidar o aumentan su nivel de Miedo un paso."
+        },
+        {
+          "name": "Resistencia Salvaje",
+          "tags": ["Ira", "Pasiva"],
+          "desc": "Reduce todo daño recibido en una cantidad igual a tu Rango. Ignora efectos de heridas permanentes (no graves) y Resistencia a Aflicciones mientras dure la Ira."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Ira Temeraria",
+          "tags": ["Ira", "Pasiva"],
+          "desc": "Inmunidad a Miedo y efectos Mentales. Suprime efectos activos de este tipo al entrar en Ira."
+        },
+        {
+          "name": "Hasta el Límite",
+          "tags": ["Pasiva", "Innata"],
+          "desc": "Puedes reducir tu Vitalidad Máxima (-2) o PV Máximos (-1) para recuperar 1 punto de Vigor. Max 3 veces/ronda. Se recupera con descanso largo."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Golpe de Adrenalina",
+          "tags": ["Ira", "Pasiva"],
+          "desc": "Obtienes 1 acción adicional por turno. Puedes entrar en Posición Defensiva como acción bonus (excepción a regla de Ira). Evita ataques sorpresa automáticos."
+        },
+        {
+          "name": "Furia Imparable",
+          "tags": ["Ira", "Reacción"],
+          "cost": "2 vigor",
+          "desc": "Si un enemigo detiene o reduce tu ataque (magia, escudos, esquiva), cancelas su defensa y aplicas daño normal, salvo que paguen 2 recursos extra o sacrifiquen escudos."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Superar los Límites",
+          "tags": ["Ira", "Mejora"],
+          "cost": "3 vigor",
+          "duration": "5 Rondas",
+          "desc": "Ganas 20 Vitalidad Temporal. FUE, DES, CON suben a 12. DEF +5. Reduces coste de vigor de una técnica (-1) por ronda. Termina si pierdes la Vitalidad Temporal."
+        },
+        {
+          "name": "Furia Invulnerable",
+          "tags": ["Ira", "Pasiva"],
+          "desc": "Luchas a <0 PV sin penalizadores ni tiros de muerte. Ignora heridas no críticas. Si al terminar la Ira tienes PV < -CON, mueres instantáneamente."
+        }
+      ]
+    }
+  ]
+}

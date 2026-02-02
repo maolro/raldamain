@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo de Raldamain</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/world_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="hero world-hero">
+        <div class="hero-content">
+            <h1>El Mundo de Raldamain</h1>
+            <p>Una tierra definida por ciclos de auge y caída, donde grandes imperios han nacido, florecido y colapsado.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- World Introduction -->
+        <section class="world-intro">
+            <div class="intro-content">
+                <p>
+                    Raldamain es considerada el corazón espiritual y político del mundo conocido, atrayendo durante milenios migraciones y conquistas procedentes de continentes distantes. Es también venerada como la cuna espiritual del <strong>Feynismo</strong> y el <strong>Mekhatimismo</strong>, dos de las religiones más importantes en la historia de la humanidad.
+                </p>
+                <p>
+                    La era presente se caracteriza por una profunda incertidumbre. La enigmática desaparición de <strong>Feyn</strong> ha sumido en la confusión al Imperio de Ustilus, hasta entonces potencia hegemónica del continente. Mientras las estructuras tradicionales de poder se debilitan, una multitud de nuevos cultos e ideologías han empezado a proliferar.
+                </p>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="world-search-section">
+            <div class="search-container">
+                <input type="text" id="world-search" placeholder="Buscar en el mundo..." class="world-search-input">
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </section>
+
+        <!-- Category Grid -->
+        <section class="categories-section">
+            <h2>Explora el Mundo</h2>
+            <div class="category-grid" id="category-grid">
+                <p style="color: #888;">Cargando categorías...</p>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section class="featured-section">
+            <h2>Artículos Destacados</h2>
+            <div class="featured-grid">
+                <a href="/mundo/articulo/feyn" class="featured-card">
+                    <div class="featured-image" style="background-image: url('/assets/images/world/feyn.jpg');"></div>
+                    <div class="featured-content">
+                        <span class="featured-category">Divinidad</span>
+                        <h3>Feyn</h3>
+                        <p>El dios de la humanidad cuya misteriosa desaparición ha sumido al mundo en la incertidumbre.</p>
+                    </div>
+                </a>
+                <a href="/mundo/articulo/imperio-de-ustilus" class="featured-card">
+                    <div class="featured-image" style="background-image: url('/assets/images/world/ustilus.jpg');"></div>
+                    <div class="featured-content">
+                        <span class="featured-category">Nación</span>
+                        <h3>Imperio de Ustilus</h3>
+                        <p>La potencia hegemónica del continente, ahora tambaleante tras la desaparición de su dios.</p>
+                    </div>
+                </a>
+                <a href="/mundo/articulo/caballeros-de-ustilus" class="featured-card">
+                    <div class="featured-image" style="background-image: url('/assets/images/world/caballeros.jpg');"></div>
+                    <div class="featured-content">
+                        <span class="featured-category">Facción</span>
+                        <h3>Caballeros de Ustilus</h3>
+                        <p>La orden militar más prestigiosa del imperio, guardianes de la fe feynista.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Raldamain Studios</p>
+    </footer>
+
+    <script>
+        let worldIndex = null;
+        let allArticles = [];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadWorldIndex();
+            setupSearch();
+        });
+
+        function loadWorldIndex() {
+            fetch('/data/world_index.json')
+                .then(response => response.json())
+                .then(data => {
+                    worldIndex = data;
+                    buildArticleIndex(data);
+                    renderCategoryGrid(data.categories);
+                })
+                .catch(error => {
+                    console.error('Error loading world index:', error);
+                    document.getElementById('category-grid').innerHTML =
+                        '<p style="color: #ff6b6b;">Error al cargar el índice del mundo.</p>';
+                });
+        }
+
+        function buildArticleIndex(data) {
+            // Flatten all articles for search
+            data.categories.forEach(cat => {
+                if (cat.articles) {
+                    cat.articles.forEach(article => {
+                        allArticles.push({
+                            ...article,
+                            category: cat.name,
+                            categoryId: cat.id
+                        });
+                    });
+                }
+                if (cat.subcategories) {
+                    cat.subcategories.forEach(subcat => {
+                        subcat.articles.forEach(article => {
+                            allArticles.push({
+                                ...article,
+                                category: cat.name,
+                                subcategory: subcat.name,
+                                categoryId: cat.id
+                            });
+                        });
+                    });
+                }
+            });
+        }
+
+        function renderCategoryGrid(categories) {
+            const grid = document.getElementById('category-grid');
+            grid.innerHTML = categories.map(cat => {
+                const articleCount = countArticles(cat);
+                return `
+                    <a href="/mundo/categoria/${cat.id}" class="category-card" style="--cat-color: ${cat.color};">
+                        <div class="category-icon">${getIcon(cat.icon)}</div>
+                        <h3>${cat.name}</h3>
+                        <p>${cat.description}</p>
+                        <span class="article-count">${articleCount} artículos</span>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function countArticles(category) {
+            let count = 0;
+            if (category.articles) count += category.articles.length;
+            if (category.subcategories) {
+                category.subcategories.forEach(sub => {
+                    count += sub.articles.length;
+                });
+            }
+            return count;
+        }
+
+        function getIcon(iconName) {
+            const icons = {
+                'crown': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3H5v2h14v-2z"/></svg>',
+                'users': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>',
+                'map': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>',
+                'sun': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/></svg>',
+                'book': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>',
+                'shield': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>',
+                'user': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+                'scroll': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>',
+                'ghost': '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12v10l3-3 3 3 3-3 3 3 3-3 3 3V12c0-5.52-4.48-10-10-10zm-2 13c-.83 0-1.5-.67-1.5-1.5S9.17 12 10 12s1.5.67 1.5 1.5S10.83 15 10 15zm4 0c-.83 0-1.5-.67-1.5-1.5S13.17 12 14 12s1.5.67 1.5 1.5S14.83 15 14 15z"/></svg>'
+            };
+            return icons[iconName] || icons['book'];
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('world-search');
+            const searchResults = document.getElementById('search-results');
+
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+
+                if (query.length < 2) {
+                    searchResults.innerHTML = '';
+                    searchResults.style.display = 'none';
+                    return;
+                }
+
+                const matches = allArticles.filter(article =>
+                    article.name.toLowerCase().includes(query) ||
+                    article.category.toLowerCase().includes(query)
+                ).slice(0, 8);
+
+                if (matches.length > 0) {
+                    searchResults.innerHTML = matches.map(article => `
+                        <a href="/mundo/articulo/${article.id}" class="search-result-item">
+                            <span class="result-name">${article.name}</span>
+                            <span class="result-category">${article.category}</span>
+                        </a>
+                    `).join('');
+                    searchResults.style.display = 'block';
+                } else {
+                    searchResults.innerHTML = '<div class="no-results">No se encontraron resultados</div>';
+                    searchResults.style.display = 'block';
+                }
+            });
+
+            // Close search results when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.world-search-section')) {
+                    searchResults.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

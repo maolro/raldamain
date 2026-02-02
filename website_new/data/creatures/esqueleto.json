@@ -1,0 +1,85 @@
+{
+  "id": "esqueleto",
+  "name": "Esqueleto",
+  "level": 1,
+  "type": "No-muerto",
+  "size": "Mediano",
+  "image": "creatures/esqueleto.jpg",
+
+  "stats": {
+    "FUE": 2,
+    "DES": 3,
+    "CON": 2,
+    "INT": 0,
+    "SAB": 1,
+    "CAR": 0
+  },
+
+  "combat": {
+    "pv": 8,
+    "vitalidad": 10,
+    "defense": 12,
+    "speed": "9m",
+    "acciones": 2,
+    "reacciones": 1
+  },
+
+  "defenses": {
+    "resistances": ["Perforante", "Cortante"],
+    "immunities": ["Veneno", "Necrótico", "Efectos mentales"],
+    "vulnerabilities": ["Contundente", "Radiante"]
+  },
+
+  "senses": ["Visión en la oscuridad 18m"],
+  "languages": ["Entiende los idiomas que conocía en vida pero no habla"],
+
+  "traits": [
+    {
+      "name": "Resistencia de los No-Muertos",
+      "desc": "No necesita respirar, comer, beber ni dormir. Inmune a ser aturdido o agarrado por efectos que requieran carne viva."
+    }
+  ],
+
+  "actions": [
+    {
+      "name": "Espada Oxidada",
+      "cost": "1 Acción",
+      "tags": ["Cuerpo a cuerpo", "Marcial"],
+      "bonus": "+5",
+      "reach": "Adyacente",
+      "damage": "1d6+2 Cortante"
+    },
+    {
+      "name": "Arco Corto",
+      "cost": "1 Acción",
+      "tags": ["A distancia", "Marcial"],
+      "bonus": "+5",
+      "range": "Medio",
+      "damage": "1d6+2 Perforante"
+    }
+  ],
+
+  "reactions": [
+    {
+      "name": "Parada",
+      "tags": ["Marcial", "Defensiva"],
+      "bonus": "+4",
+      "desc": "Funciona contra Cuerpo a Cuerpo y A Distancia."
+    }
+  ],
+
+  "legendaryActions": null,
+
+  "lore": "Los esqueletos son el resultado más común de la nigromancia. Privados de toda voluntad, obedecen ciegamente las órdenes de su creador. Aunque frágiles individualmente, en grupos numerosos representan una amenaza seria para cualquier aventurero desprevenido.",
+
+  "loot": {
+    "xp": 50,
+    "items": [
+      { "name": "Espada oxidada", "chance": "100%" },
+      { "name": "Huesos pulverizados (componente mágico)", "chance": "25%" },
+      { "name": "Monedas antiguas (1d6)", "chance": "15%" }
+    ]
+  },
+
+  "tags": ["Soldado", "Nigromancia", "Básico", "Grupo"]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "magia_fuego",
+  "title": "Magia de Fuego",
+  "category": "Elementalismo",
+  "image": "magia_fuego.jpg",
+  "stats": ["Carisma", "Elementalismo", "Innato"],
+  "description": "Controlas las llamas para causar destrucción, alterar el campo de batalla y protegerte.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Parada mágica:</strong> Usas Magia de Fuego para defensa. Protege contra Fuego, Frío, Radiante, Agua y Naturaleza."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Llamarada",
+          "tags": ["Fuego", "Ataque", "A distancia"],
+          "cost": "1 acción",
+          "range": "Medio",
+          "crit": "Objetivo sufre quemadura leve.",
+          "desc": "Inflige 1d6 + CAR daño Fuego y prende objetos inflamables.",
+          "empower": "Afecta a un objetivo adicional al alcance."
+        },
+        {
+          "name": "Asalto Abrasador",
+          "tags": ["Fuego", "Cuerpo a cuerpo", "Ataque"],
+          "cost": "1+ acciones",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo sufre quemadura leve.",
+          "desc": "Inflige 1d6 + CAR daño Fuego. Puedes emplear una acción adicional para hacer otro ataque contra el mismo objetivo, quien debe emplear el mismo resultado defensivo.",
+          "empower": "Aumenta el alcance a cercano durante una ronda."
+        },
+        {
+          "name": "Aliento de Fuego",
+          "tags": ["Fuego", "Ataque", "Área"],
+          "cost": "2 acciones, 1 chi",
+          "area": "Cono pequeño",
+          "crit": "Afectados sufren quemadura leve.",
+          "desc": "Inflige 2d6 + CAR daño Fuego a todos los objetivos en el área afectada. Prende objetos y elimina efectos de Hielo, Agua o Naturaleza.",
+          "empower": "Aumenta tamaño un paso y recibe un dado de daño adicional (Max 2 veces)."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Muro de Llamas",
+          "tags": ["Fuego", "Defensivo", "Duradero"],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña / Línea media",
+          "duration": "Concentración",
+          "crit": "Afectados sufren quemadura media.",
+          "desc": "Crea un muro con PV iguales a tu Rango x 3. El muro proporciona cubierta parcial e inflige 1d6 + CAR daño Fuego a las criaturas que intenten cruzarlo. \nSi se emplea como Reacción defensiva puede reducir el daño de un ataque que recibas por un valor igual a sus PV.",
+          "empower": "Restaura todos los PV del muro."
+        },
+        {
+          "name": "Bola de Fuego",
+          "tags": ["Fuego", "Ataque", "Área"],
+          "cost": "1+ acciones, 1 chi",
+          "range": "Medio",
+          "area": "Radio pequeño",
+          "crit": "Afectados sufren quemadura media.",
+          "desc": "Explosión (2d6 + CAR daño Fuego). Cargar con acciones extra aumenta daño (+1d6) y tamaño (+1 paso) por cada 2 acciones.",
+          "empower": "Lanza una bola adicional (misma carga) a otro objetivo."
+        },
+        {
+          "name": "Látigo Flamígero",
+          "tags": ["Fuego", "Ataque", "Duradero"],
+          "cost": "1 acción, 1 chi",
+          "range": "Cercano",
+          "duration": "Concentración",
+          "crit": "Objetivo sufre quemadura leve.",
+          "desc": "Invoca arma (1d6 + CAR daño Fuego). Estando en defensiva, permite atacar como reacción a enemigos que entren en tu alcance.",
+          "empower": "Ataque extra a otro objetivo a distancia corta."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "passive": "Daño base sube a d8. Hechizos Rango I cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Erupción Abrasadora",
+          "tags": ["Fuego", "Ataque", "Área"],
+          "cost": "2 acciones, 2 chi",
+          "area": "Esfera mediana",
+          "crit": "Afectados sufren quemadura media.",
+          "desc": "Explosión centrada en ti (2d8 + CAR daño Fuego). No puede ser parada por enemigos adyacentes.",
+          "empower": "Usar como reacción al ser golpeado."
+        },
+        {
+          "name": "Maestro de las Llamas",
+          "tags": ["Fuego", "Ambiental"],
+          "cost": "3 acciones, 2 chi",
+          "area": "Radio medio",
+          "duration": "Concentración",
+          "desc": "Ganas Ventaja en Magia de Fuego. Acción bonus: Apagar fuego o fortalecerlo (creando efecto de daño de Muro de Llamas).",
+          "empower": "Siguiente hechizo de fuego cuesta -1 acción."
+        },
+        {
+          "name": "Invocar Elemental",
+          "tags": ["Fuego", "Invocación"],
+          "cost": "3 acciones, 2 chi",
+          "range": "Medio",
+          "duration": "1 hora",
+          "desc": "Invoca Elemental de Fuego Nvl 6. Nivel aumenta +2 por cada Rango tuyo superior a III.",
+          "empower": "Elemental se cura 50% de su Vitalidad."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "passive": "Hechizos Rango II cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Danza de las Llamas",
+          "tags": ["Fuego", "Duradera", "Defensiva"],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Ganas Escudos = Rango. Acción bonus: lanzar 'Llamarada'. Recuperas 1 escudo al inicio de turno si estás en fuego.",
+          "empower": "Recuperas 1 escudo extra."
+        },
+        {
+          "name": "Torbellino de Fuego",
+          "tags": ["Fuego", "Ataque", "Área"],
+          "cost": "3 acciones, 2 chi",
+          "range": "Medio",
+          "area": "Cilindro pequeño",
+          "duration": "Concentración",
+          "crit": "Afectados sufren quemadura media.",
+          "desc": "Torbellino móvil (1d8 + CAR daño Fuego). Deja rastro de Muro de Llamas. Mover como acción.",
+          "empower": "Crea torbellino extra o +1d8 daño."
+        },
+        {
+          "name": "Inmolación",
+          "tags": ["Fuego", "Área"],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "area": "Esfera corta",
+          "crit": "Afectados sufren quemadura grave.",
+          "desc": "Explosión concentrada (3d8 + CAR daño Fuego). Si objetivo ya arde, solo puede defenderse con CON.",
+          "empower": "Afecta objetivo adicional o +1 paso de tamaño."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "passive": "Daño base sube a d10. Hechizos Rango III cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Lluvia de Brasas",
+          "tags": ["Fuego", "Ataque", "Área"],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "area": "4 Esferas pequeñas",
+          "crit": "Afectados sufren quemadura grave.",
+          "desc": "4 explosiones simultáneas (3d10 + CAR daño Fuego c/u). Puedes dejar bolas suspendidas para lanzarlas luego.",
+          "empower": "+1 bola de fuego (Max 3 extra)."
+        },
+        {
+          "name": "Nube Incendiaria",
+          "tags": ["Fuego", "Gaseosa", "Aflicción"],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "crit": "Aumenta veneno un paso.",
+          "desc": "Nube tóxica (Ocultamiento). Daño (1d10 + CAR) + Veneno de CON al entrar o empezar turno dentro.",
+          "empower": "Tamaño mediano o daño 2d10."
+        },
+        {
+          "name": "Rayo de Plasma",
+          "tags": ["Fuego", "Ataque", "A distancia"],
+          "cost": "1 acción, 3 chi",
+          "range": "Lejano",
+          "duration": "Concentración",
+          "crit": "Herida permanente grave.",
+          "desc": "Rayo perforante (3d10 + CAR Radiante). Ignora muros, armadura y escudos. Recarga gratis si mantienes concentración.",
+          "empower": "Objetivo adicional o redirigir (Reacción)."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "passive": "Hechizos Rango IV cuestan -1 acción. Ignoras 1 paso de Resistencia al Fuego.",
+      "abilities": [
+        {
+          "name": "Infierno Abrasador",
+          "tags": ["Fuego", "Ambiental"],
+          "cost": "3 acciones, 5 chi",
+          "area": "Radio grande",
+          "duration": "7 rondas",
+          "desc": "Calor extremo (Disipa Frío). Hechizos Rango I y II gratis (0 Chi). A partir de 4ª ronda: Detonar todo para lanzar Inmolación masiva gratis (+1d daño)."
+        }
+      ]
+    }
+  ]
+}

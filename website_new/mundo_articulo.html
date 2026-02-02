@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo | Raldamain</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/world_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="hero article-hero" id="hero-section">
+        <div class="hero-content">
+            <nav class="breadcrumb">
+                <a href="/mundo">El Mundo</a> &rsaquo;
+                <a href="#" id="breadcrumb-category-link"><span id="breadcrumb-category">Categoría</span></a> &rsaquo;
+                <span id="breadcrumb-article">Artículo</span>
+            </nav>
+            <h1 id="article-title">Cargando...</h1>
+        </div>
+    </header>
+
+    <main class="container article-container">
+        <div class="article-layout">
+            <!-- Main Content -->
+            <article class="article-content" id="article-content">
+                <div class="loading-spinner">Cargando contenido...</div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="article-sidebar" id="article-sidebar">
+                <!-- Infobox (populated by JS if metadata exists) -->
+                <div class="infobox-container" id="article-infobox" style="display: none;"></div>
+
+                <!-- Table of Contents -->
+                <div class="sidebar-section">
+                    <h4>En esta página</h4>
+                    <nav class="toc" id="table-of-contents"></nav>
+                </div>
+
+                <!-- Related Articles -->
+                <div class="sidebar-section" id="related-section" style="display: none;">
+                    <h4>Artículos Relacionados</h4>
+                    <div id="related-articles"></div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Raldamain Studios</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/assets/js/world_loader.js"></script>
+</body>
+</html>

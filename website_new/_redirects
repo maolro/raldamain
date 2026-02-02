@@ -1,0 +1,15 @@
+# Cloudflare Pages redirects
+# Format: /from /to [status]
+
+# Rangos
+/rangos /rangos.html 200
+/rango/* /rango.html 200
+
+# Criaturas
+/criaturas /criaturas.html 200
+/criatura/* /criatura.html 200
+
+# Mundo
+/mundo /mundo.html 200
+/mundo/categoria/* /mundo_categoria.html 200
+/mundo/articulo/* /mundo_articulo.html 200

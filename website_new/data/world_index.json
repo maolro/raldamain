@@ -1,0 +1,240 @@
+{
+  "title": "El Mundo de Raldamain",
+  "description": "Explora el vasto mundo de Raldamain, una tierra definida por ciclos de auge y caída, donde grandes imperios han nacido, florecido y colapsado.",
+  "categories": [
+    {
+      "id": "naciones",
+      "name": "Naciones",
+      "icon": "crown",
+      "description": "Los reinos, imperios y estados que dominan el continente",
+      "color": "#c9a227",
+      "articles": [
+        { "id": "imperio-de-ustilus", "name": "Imperio de Ustilus", "file": "naciones/imperio-de-ustilus.md" },
+        { "id": "reino-de-mazarin", "name": "Reino de Mazarín", "file": "naciones/reino-de-mazarin.md" },
+        { "id": "imperio-de-arshalan", "name": "Imperio de Arshalán", "file": "naciones/imperio-de-arshalan.md" },
+        { "id": "imperio-nataneo", "name": "Imperio Nataneo", "file": "naciones/Imperio Nataneo.md" },
+        { "id": "republica-de-kratoi", "name": "República de Kratoi", "file": "naciones/republica-de-kratoi.md" },
+        { "id": "iskaria", "name": "Iskaria", "file": "naciones/Iskaria.md" },
+        { "id": "hakrapeu", "name": "Hakrapeu", "file": "naciones/Hakrapeu.md" },
+        { "id": "arkedania", "name": "Arkedania", "file": "naciones/Arkedania.md" },
+        { "id": "nekthys", "name": "Nekthys", "file": "naciones/Nekthys.md" },
+        { "id": "la-ciudadela", "name": "La Ciudadela", "file": "naciones/La Ciudadela.md" },
+        { "id": "utopia", "name": "Utopía", "file": "naciones/utopia.md" }
+      ]
+    },
+    {
+      "id": "culturas",
+      "name": "Culturas",
+      "icon": "users",
+      "description": "Los pueblos y etnias que habitan Raldamain",
+      "color": "#5a8f5a",
+      "articles": [
+        { "id": "elfos", "name": "Elfos", "file": "culturas/elfos.md" },
+        { "id": "shinri", "name": "Shinri", "file": "culturas/shinri.md" },
+        { "id": "ustileses", "name": "Ustileses", "file": "culturas/ustileses.md" },
+        { "id": "mazarinos", "name": "Mazarinos", "file": "culturas/mazarinos.md" },
+        { "id": "dairovios", "name": "Dairovios", "file": "culturas/dairovios.md" },
+        { "id": "kratenses", "name": "Kratenses", "file": "culturas/kratenses.md" },
+        { "id": "iskarianos", "name": "Iskarianos", "file": "culturas/iskarianos.md" },
+        { "id": "shirajianos", "name": "Shirajianos", "file": "culturas/shirajianos.md" },
+        { "id": "hakrapenses", "name": "Hakrapenses", "file": "culturas/hakrapenses.md" },
+        { "id": "leoninos", "name": "Leoninos", "file": "culturas/leoninos.md" },
+        { "id": "urlok", "name": "Urlok", "file": "culturas/urlok.md" },
+        { "id": "hobgoblin", "name": "Hobgoblin", "file": "culturas/hobgoblin.md" },
+        { "id": "aven", "name": "Aven", "file": "culturas/aven.md" },
+        { "id": "jaddi", "name": "Jaddi", "file": "culturas/jaddi.md" },
+        { "id": "temash", "name": "Temash", "file": "culturas/temash.md" },
+        { "id": "tangarinos", "name": "Tangarinos", "file": "culturas/tangarinos.md" },
+        { "id": "ayutanos", "name": "Ayutanos", "file": "culturas/ayutanos.md" },
+        { "id": "letemitas", "name": "Letemitas", "file": "culturas/letemitas.md" },
+        { "id": "geismarianos", "name": "Geismarianos", "file": "culturas/geismarianos.md" },
+        { "id": "fulagasi", "name": "Fulagasi", "file": "culturas/fulagasi.md" },
+        { "id": "chothgar", "name": "Chothgar", "file": "culturas/chothgar.md" },
+        { "id": "tapeties", "name": "Tapeties", "file": "culturas/tapeties.md" },
+        { "id": "shetyen", "name": "Shetyen", "file": "culturas/Shetyen.md" },
+        { "id": "strakios", "name": "Strakios", "file": "culturas/Strakios.md" }
+      ]
+    },
+    {
+      "id": "lugares",
+      "name": "Lugares",
+      "icon": "map",
+      "description": "Regiones, ciudades y sitios de interés del continente",
+      "color": "#6a8caf",
+      "subcategories": [
+        {
+          "id": "regiones",
+          "name": "Regiones",
+          "articles": [
+            { "id": "tierras-elficas", "name": "Tierras Élficas", "file": "lugares/regiones/tierras-elficas.md" },
+            { "id": "shinri", "name": "Tierras Shinri", "file": "lugares/regiones/shinri.md" },
+            { "id": "kratoi", "name": "Kratoi", "file": "lugares/regiones/kratoi.md" },
+            { "id": "dairov", "name": "Dairov", "file": "lugares/regiones/dairov.md" },
+            { "id": "shiraj", "name": "Shiraj", "file": "lugares/regiones/shiraj.md" },
+            { "id": "alshinum", "name": "Alshinum", "file": "lugares/regiones/alshinum.md" },
+            { "id": "beldarc", "name": "Beldarc", "file": "lugares/regiones/beldarc.md" },
+            { "id": "thalos", "name": "Thalos", "file": "lugares/regiones/thalos.md" },
+            { "id": "neronvain", "name": "Neronvain", "file": "lugares/regiones/neronvain.md" },
+            { "id": "tamashkhan", "name": "Tamashkhan", "file": "lugares/regiones/tamashkhan.md" },
+            { "id": "kajmasar", "name": "Kajmasar", "file": "lugares/regiones/Kajmasar.md" },
+            { "id": "kimon", "name": "Kimon", "file": "lugares/regiones/Kimon.md" },
+            { "id": "chothgar-mori", "name": "Chothgar Mori", "file": "lugares/regiones/Chothgar Mori.md" },
+            { "id": "brecha-abisal", "name": "Brecha Abisal", "file": "lugares/regiones/Brecha Abisal.md" },
+            { "id": "yermos-eternos", "name": "Yermos Eternos", "file": "lugares/regiones/yermos-eternos.md" },
+            { "id": "reinos-libres", "name": "Reinos Libres", "file": "lugares/regiones/Reinos Libres.md" }
+          ]
+        },
+        {
+          "id": "ciudades",
+          "name": "Ciudades",
+          "articles": [
+            { "id": "trono-de-feyn", "name": "Trono de Feyn", "file": "lugares/ciudades/trono-de-feyn.md" },
+            { "id": "kasheba", "name": "Kasheba", "file": "lugares/ciudades/Kasheba.md" },
+            { "id": "klonum", "name": "Klonum", "file": "lugares/ciudades/klonum.md" },
+            { "id": "rizad", "name": "Rizad", "file": "lugares/ciudades/rizad.md" },
+            { "id": "homay", "name": "Homay", "file": "lugares/ciudades/homay.md" }
+          ]
+        },
+        {
+          "id": "dimensiones",
+          "name": "Otros Planos",
+          "articles": [
+            { "id": "mundo-espiritual", "name": "Mundo Espiritual", "file": "lugares/dimensiones/Mundo Espiritual.md" },
+            { "id": "plano-onirico", "name": "Plano Onírico", "file": "lugares/dimensiones/plano-onirico.md" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "divinidades",
+      "name": "Divinidades",
+      "icon": "sun",
+      "description": "Los dioses y entidades divinas que influyen en el mundo",
+      "color": "#9b59b6",
+      "articles": [
+        { "id": "feyn", "name": "Feyn", "file": "divinidades/feyn.md" },
+        { "id": "primeros-dioses", "name": "Primeros Dioses", "file": "divinidades/Primeros Dioses.md" },
+        { "id": "ithanatron", "name": "Ithanatron", "file": "divinidades/Ithanatron.md" },
+        { "id": "la-tormenta", "name": "La Tormenta", "file": "divinidades/La Tormenta.md" },
+        { "id": "shade", "name": "Shade", "file": "divinidades/shade.md" },
+        { "id": "lydesna", "name": "Lydesna", "file": "divinidades/lydesna.md" },
+        { "id": "tauravat", "name": "Tauravat", "file": "divinidades/tauravat.md" },
+        { "id": "ekdavor", "name": "Ekdavor", "file": "divinidades/ekdavor.md" },
+        { "id": "gulmaht", "name": "Gulmaht", "file": "divinidades/gulmaht.md" },
+        { "id": "halai-aem", "name": "Halai-Aem", "file": "divinidades/halai-aem.md" },
+        { "id": "zornovog", "name": "Zornovog", "file": "divinidades/zornovog.md" },
+        { "id": "sek-tebos", "name": "Sek-Tebos", "file": "divinidades/sek-tebos.md" },
+        { "id": "seiryuu", "name": "Seiryuu", "file": "divinidades/seiryuu.md" },
+        { "id": "suzakushin", "name": "Suzakushin", "file": "divinidades/suzakushin.md" },
+        { "id": "chiso-shitari", "name": "Chiso-Shitari", "file": "divinidades/chiso-shitari.md" },
+        { "id": "tamashi-kuso", "name": "Tamashi-Kuso", "file": "divinidades/tamashi-kuso.md" },
+        { "id": "tomii-koyatu", "name": "Tomii-Koyatu", "file": "divinidades/tomii-koyatu.md" },
+        { "id": "trio-torre", "name": "Trío de la Torre", "file": "divinidades/trio-torre.md" }
+      ]
+    },
+    {
+      "id": "religiones",
+      "name": "Religiones",
+      "icon": "book",
+      "description": "Las creencias y sistemas de fe del continente",
+      "color": "#e67e22",
+      "articles": [
+        { "id": "feynismo", "name": "Feynismo", "file": "religiones/feynismo.md" },
+        { "id": "mekhatimismo", "name": "Mekhatimismo", "file": "religiones/mekhatimismo.md" },
+        { "id": "fe-espiritual", "name": "Fe Espiritual", "file": "religiones/fe-espiritual.md" },
+        { "id": "iglesia-del-heredero", "name": "Iglesia del Heredero", "file": "religiones/iglesia-del-heredero.md" },
+        { "id": "camino-de-yathanra", "name": "Camino de Yathanra", "file": "religiones/camino-de-yathanra.md" },
+        { "id": "culto-de-sek-tebos", "name": "Culto de Sek-Tebos", "file": "religiones/culto-de-sek-tebos.md" },
+        { "id": "cultos-abisales", "name": "Cultos Abisales", "file": "religiones/cultos-abisales.md" }
+      ]
+    },
+    {
+      "id": "facciones",
+      "name": "Facciones",
+      "icon": "shield",
+      "description": "Organizaciones, órdenes y grupos de poder",
+      "color": "#c0392b",
+      "articles": [
+        { "id": "caballeros-de-ustilus", "name": "Caballeros de Ustilus", "file": "facciones/caballeros-de-ustilus.md" },
+        { "id": "escudos-rojos", "name": "Escudos Rojos", "file": "facciones/Escudos Rojos.md" },
+        { "id": "reforjados", "name": "Los Reforjados", "file": "facciones/Reforjados.md" },
+        { "id": "los-justos", "name": "Los Justos", "file": "facciones/los-justos.md" },
+        { "id": "hermandad-del-cuervo", "name": "Hermandad del Cuervo", "file": "facciones/hermandad-del-cuervo.md" },
+        { "id": "zorros-negros", "name": "Zorros Negros", "file": "facciones/zorros-negros.md" },
+        { "id": "seishingumi", "name": "Seishingumi", "file": "facciones/seishingumi.md" },
+        { "id": "clan-shikurai", "name": "Clan Shikurai", "file": "facciones/clan-shikurai.md" },
+        { "id": "legion-hobgoblin", "name": "Legión Hobgoblin", "file": "facciones/legion-hobgoblin.md" },
+        { "id": "liga-mercenarios", "name": "Liga de Mercenarios", "file": "facciones/liga-mercenarios.md" },
+        { "id": "el-pacto", "name": "El Pacto", "file": "facciones/pacto.md" }
+      ]
+    },
+    {
+      "id": "personajes",
+      "name": "Personajes",
+      "icon": "user",
+      "description": "Figuras importantes de la historia y el presente",
+      "color": "#1abc9c",
+      "subcategories": [
+        {
+          "id": "historicos",
+          "name": "Figuras Históricas",
+          "articles": [
+            { "id": "acrodio", "name": "Acrodio", "file": "personajes/historicos/Acrodio.md" },
+            { "id": "encarnado", "name": "El Encarnado", "file": "personajes/historicos/Encarnado.md" },
+            { "id": "tenebrio", "name": "Tenebrio", "file": "personajes/historicos/Tenebrio.md" },
+            { "id": "mekhatim", "name": "Mekhatim", "file": "personajes/historicos/Mekhatim.md" },
+            { "id": "meisodh", "name": "Meisodh el Viajero", "file": "personajes/historicos/Meisodh el Viajero.md" },
+            { "id": "canrim", "name": "Canrim", "file": "personajes/historicos/Canrim.md" }
+          ]
+        },
+        {
+          "id": "caballeros",
+          "name": "Caballeros de Ustilus",
+          "articles": [
+            { "id": "regulus", "name": "Regulus", "file": "personajes/caballeros-de-ustilus/Regulus.md" },
+            { "id": "theodora", "name": "Theodora", "file": "personajes/caballeros-de-ustilus/Theodora.md" },
+            { "id": "lucanor", "name": "Lucanor", "file": "personajes/caballeros-de-ustilus/Lucanor.md" },
+            { "id": "rostam", "name": "Rostam", "file": "personajes/caballeros-de-ustilus/Rostam.md" },
+            { "id": "chandrial", "name": "Chandrial", "file": "personajes/caballeros-de-ustilus/Chandrial.md" },
+            { "id": "ileria", "name": "Ileria", "file": "personajes/caballeros-de-ustilus/Ileria.md" },
+            { "id": "madeleine", "name": "Madeleine", "file": "personajes/caballeros-de-ustilus/Madeleine.md" },
+            { "id": "petrikov", "name": "Petrikov", "file": "personajes/caballeros-de-ustilus/Petrikov.md" },
+            { "id": "yabu", "name": "Yabu", "file": "personajes/caballeros-de-ustilus/Yabu.md" },
+            { "id": "abshalom", "name": "Abshalom", "file": "personajes/caballeros-de-ustilus/Abshalom.md" },
+            { "id": "ajek", "name": "Ajek", "file": "personajes/caballeros-de-ustilus/Ajek.md" },
+            { "id": "basileos", "name": "Basileos", "file": "personajes/caballeros-de-ustilus/Basileos.md" },
+            { "id": "eliyet", "name": "Eliyet", "file": "personajes/caballeros-de-ustilus/Eliyet.md" },
+            { "id": "fileon", "name": "Fileon", "file": "personajes/caballeros-de-ustilus/Fileon.md" },
+            { "id": "laicon", "name": "Laicon", "file": "personajes/caballeros-de-ustilus/Laicon.md" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historia",
+      "name": "Historia",
+      "icon": "scroll",
+      "description": "Los grandes eventos y eras que han forjado Raldamain",
+      "color": "#8e6d47",
+      "articles": [
+        { "id": "era-humanidad", "name": "Era de la Humanidad", "file": "linea-temporal/era-humanidad.md" },
+        { "id": "era-incertidumbre", "name": "Era de la Incertidumbre", "file": "linea-temporal/Era de la Incertidumbre.md" },
+        { "id": "guerra-de-los-dioses", "name": "Guerra de los Dioses", "file": "eventos/Guerra de los Dioses.md" },
+        { "id": "desaparicion-de-feyn", "name": "Desaparición de Feyn", "file": "eventos/desaparicion-de-feyn.md" }
+      ]
+    },
+    {
+      "id": "criaturas",
+      "name": "Criaturas",
+      "icon": "ghost",
+      "description": "Seres extraplanarios y entidades sobrenaturales",
+      "color": "#7f8c8d",
+      "articles": [
+        { "id": "abisales", "name": "Abisales", "file": "criaturas/extraplanarias/abisales/Abisales.md" },
+        { "id": "infernales", "name": "Infernales", "file": "criaturas/extraplanarias/infernales/Infernales.md" },
+        { "id": "celestiales", "name": "Hueste Celestial", "file": "criaturas/extraplanarias/celestiales/Hueste Celestial.md" },
+        { "id": "oni", "name": "Oni", "file": "criaturas/extraplanarias/espiritus/Oni.md" }
+      ]
+    }
+  ]
+}

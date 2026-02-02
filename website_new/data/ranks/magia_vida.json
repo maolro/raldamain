@@ -1,0 +1,208 @@
+{
+  "id": "magia_gravitatoria",
+  "title": "Magia Gravitatoria",
+  "category": "Ocultismo",
+  "image": "magia_gravitatoria.jpg",
+  "stats": ["Inteligencia", "Chi"],
+  "description": "Controlas las fuerzas fundamentales para manipular la gravedad. Atraes, repeles y aplastas a tus enemigos o alteras la densidad de los objetos.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango.",
+    "<strong>Parada Gravitatoria:</strong> Usas Magia Gravitatoria para defenderte de Aire, Tierra, Agua, Gravedad y Telekinesia."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Pulso Gravitatorio",
+          "tags": ["Gravedad", "Maniobra", "Físico"],
+          "cost": "1 acción",
+          "range": "Cercano",
+          "crit": "Objetivo sufre herida leve.",
+          "desc": "Empujón gravitatorio. Mueve 1 paso y derriba (Tropezado). Si choca, 1d6 + INT daño. Puede disipar efectos ambientales.",
+          "empower": "Afecta a todos los enemigos a distancia cercana."
+        },
+        {
+          "name": "Arrastre Gravitatorio",
+          "tags": ["Gravedad", "Maniobra", "Físico"],
+          "cost": "1 acción",
+          "range": "Medio",
+          "crit": "Objetivo sufre herida leve.",
+          "desc": "Atrae al objetivo 1 paso hacia ti. Rompe Posición Defensiva. Si choca, 1d6 + INT daño.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Pozo de Gravedad",
+          "tags": ["Gravedad", "Sostenido", "Maniobra"],
+          "cost": "2 acciones, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "crit": "Afectados quedan Tropezados.",
+          "desc": "Zona de alta gravedad. Difícil salir (Tiro Heroísmo/Atletismo). Vulnerabilidad a distancia y Desventaja al atacar hacia fuera.",
+          "empower": "Aumenta tamaño a esfera mediana."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Alterar Peso",
+          "tags": ["Gravedad", "Duradero", "Físico"],
+          "cost": "2 acciones, 1 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Dos modos: 'Reducir' (Salto 1, Ventaja Esquiva/Sigilo, Vulnerable Maniobras) o 'Aumentar' (Resistencia Maniobras, coste movimiento +1, cae si vuela).",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Ancla Gravitatoria",
+          "tags": ["Gravedad", "Maniobra", "Duradero"],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "crit": "Herida leve.",
+          "desc": "Derriba al objetivo (Tropezado) e impide movimiento (Enredado) o vuelo. Salvación por ronda para liberarse.",
+          "empower": "Afecta a objetivo adicional o fuerza daño/caída de nuevo."
+        },
+        {
+          "name": "Campo de Repulsión",
+          "tags": ["Gravedad", "Defensivo", "Duradero"],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "desc": "Zona que expulsa a quien entre. Desventaja en ataques hacia dentro. Puede usarse como escudo personal (Acción bonus).",
+          "empower": "Bloquea automáticamente un ataque físico."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "passive": "Daño base sube a d8. Hechizos Rango I cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Agarre Gravitatorio",
+          "tags": ["Gravedad", "Agarre", "Duradero"],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "crit": "Empuja 1 paso como acción bonus.",
+          "desc": "Inmoviliza al objetivo (Agarrado). Falla tiros contra maniobras de gravedad automáticamente.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Burlar la Gravedad",
+          "tags": ["Gravedad", "Duradero"],
+          "cost": "2 chi",
+          "duration": "Concentración",
+          "desc": "Vuelo 1 y Ventaja en Esquiva.",
+          "empower": "Vuelas 1 paso y reduces daño recibido a la mitad."
+        },
+        {
+          "name": "Bomba de Gravedad",
+          "tags": ["Gravedad", "Ataque", "Área"],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "area": "Radio corto",
+          "duration": "Instantáneo",
+          "crit": "Herida leve a todos.",
+          "desc": "Explosión (2d8 + INT). Ignora Defensa y empuja 1 paso. Atraviesa barreras y elimina efectos de gravedad.",
+          "empower": "Siguiente uso es gratis."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Vórtice Gravitatorio",
+          "tags": ["Gravedad", "Defensivo", "Duradero"],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio pequeño",
+          "duration": "Concentración",
+          "desc": "Escudos = Rango. Resistencia a distancia. Reacción: Atrae o empuja a enemigos que se acerquen.",
+          "empower": "Recuperar escudos o aumentar radio."
+        },
+        {
+          "name": "Distorsión Gravitatoria",
+          "tags": ["Gravedad", "Ambiental"],
+          "cost": "3 acciones, 2 chi",
+          "area": "Esfera grande",
+          "duration": "6 Rondas",
+          "desc": "Ventaja en Magia Gravitatoria y Alcance +1 paso. Altera el peso de objetos/criaturas en el área.",
+          "empower": "Siguiente hechizo cuesta -1 acción."
+        },
+        {
+          "name": "Dilatación Temporal",
+          "tags": ["Gravedad", "Duradero", "Maniobra"],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "crit": "Parálisis inmediata.",
+          "desc": "Zona de tiempo lento. Causa Náuseas y Parálisis si fallan 2 veces. Frena ataques (Desventaja).",
+          "empower": "Bloquea ataque automático."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "passive": "Daño base sube a d10. Hechizos Rango III cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Invertir la Gravedad",
+          "tags": ["Gravedad", "Área"],
+          "cost": "3 acciones, 3 chi",
+          "area": "Esfera grande",
+          "duration": "Concentración",
+          "crit": "Empuje extra y herida leve al chocar.",
+          "desc": "Caída lateral forzosa (2 pasos, 1d10 + INT daño). Desvía proyectiles (50% fallo/cambio objetivo).",
+          "empower": "Cambiar dirección de gravedad."
+        },
+        {
+          "name": "Compresión Gravitatoria",
+          "tags": ["Gravedad", "Ataque"],
+          "cost": "1 acción, 3 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "crit": "Herida media.",
+          "desc": "Aplasta objetivo (3d10 + INT, herida leve y Agarrado). Daño recurrente (2d10) cada ronda.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Empuje Todopoderoso",
+          "tags": ["Gravedad", "Ataque", "Área"],
+          "cost": "2 acciones, 3 chi",
+          "range": "Lejano",
+          "desc": "Onda de choque masiva (3d10 + INT). Destruye estructuras, crea terreno difícil y entierra enemigos.",
+          "empower": "Reutilizar gratis la siguiente ronda."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "passive": "Hechizos Rango IV cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Agujero Negro",
+          "tags": ["Gravedad", "Duradero", "Ambiental"],
+          "cost": "3 acciones, 5 chi",
+          "range": "Lejano",
+          "area": "Esfera pequeña",
+          "duration": "5 Rondas",
+          "desc": "Atracción ineludible. Daño al entrar (3d10 + INT). Fin del hechizo: Implosión (Muerte instantánea si falla salvación, o 3d10 daño si supera).",
+          "empower": "Mover agujero negro y causar daño."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "estilo_duelista",
+  "title": "Estilo Duelista",
+  "category": "Marcial",
+  "image": "estilo_duelista.jpg",
+  "stats": ["Fuerza", "Destreza", "Vigor"],
+  "description": "Maestría en el combate uno contra uno. Usas la precisión, las paradas y las maniobras para desarmar, engañar y superar a tu oponente.",
+  "fundamentals": [
+    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Fuerza o Destreza + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Destreza Defensiva",
+          "tags": ["Duelo", "Pasiva"],
+          "desc": "Al usar Parada, puedes tirar una segunda reacción defensiva (ej: Esquiva) y quedarte con el mejor resultado."
+        },
+        {
+          "name": "Truco de Espada",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "1 vigor",
+          "desc": "Realizas una maniobra como acción bonus (Paso Rápido, Derribo, Cambio de objetivo o Daño extra)."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Finta Engañosa",
+          "tags": ["Duelo", "Visual"],
+          "cost": "1 vigor",
+          "desc": "Si fallas un ataque, fuerzas al enemigo a tirar Averiguar Intenciones o pierde su Posición Defensiva."
+        },
+        {
+          "name": "Golpe de Mango",
+          "tags": ["Duelo", "Ataque"],
+          "cost": "1 vigor",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo sufre herida permanente leve.",
+          "desc": "Ataque contundente (1d6 + MOD). Saca al enemigo de Posición Defensiva. Daño escala a 1d8 (Rango III) y 1d10 (Rango V)."
+        },
+        {
+          "name": "Ataque Torbellino",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "1 vigor",
+          "desc": "Atacas a todos los enemigos adyacentes con +1d6 daño."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Espadas Trabadas",
+          "tags": ["Duelo", "Maniobra"],
+          "cost": "2 vigor",
+          "duration": "Concentración",
+          "desc": "Al chocar defensas (Parada), fuerzas tiro opuesto. Si ganas, su arma queda trabada (inutilizada). Si falla de nuevo para escapar, puedes desarmarlo."
+        },
+        {
+          "name": "Ataque Saltarín",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "2 vigor",
+          "desc": "Saltas un paso antes de atacar (+2d6 daño). Ventaja defensiva contra ataques preparados. Desventaja para enemigos voladores."
+        },
+        {
+          "name": "Combinar Técnicas",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "2 vigor",
+          "desc": "Realizas un segundo ataque como acción bonus contra el mismo objetivo tras atacar."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Contrataque",
+          "tags": ["Duelo", "Reacción"],
+          "cost": "2 vigor",
+          "desc": "Interrumpes una acción enemiga con un ataque de reacción. Si impactas, la acción se pierde. Requiere Posición Defensiva."
+        },
+        {
+          "name": "Danza del Espadachín",
+          "tags": ["Duelo", "Duradera"],
+          "cost": "2 acciones, 2 vigor",
+          "duration": "Concentración",
+          "desc": "Ventaja en ataques. Posición Defensiva como acción bonus. Permite parar proyectiles físicos.",
+          "empower": "Reduce el daño de un ataque no detenido a la mitad."
+        },
+        {
+          "name": "Estocada Poderosa",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "2 vigor",
+          "desc": "Ataque con +2d6 daño y herida permanente leve. Ignora armaduras (salvo completas). Requiere un escudo extra para pararse."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Golpe de Gracia",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "3 vigor",
+          "desc": "Ataque letal (+3d6 daño, herida grave). Ignora armadura. Mata instantáneamente si reduce al objetivo a 0 PV."
+        },
+        {
+          "name": "Cortes en Cadena",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "3 vigor",
+          "desc": "Tras impactar, puedes moverte y atacar a otro enemigo. Continúa hasta fallar o quedarte sin objetivos."
+        },
+        {
+          "name": "Secuencia de Ataques",
+          "tags": ["Duelo", "Reacción"],
+          "cost": "3 vigor",
+          "desc": "Al impactar, realizas 2 ataques extra (mismo tiro defensivo). Cada impacto consecutivo otorga +1 al ataque y daño."
+        }
+      ]
+    }
+  ]
+}

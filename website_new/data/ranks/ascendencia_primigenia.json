@@ -1,0 +1,126 @@
+{
+  "id": "ascendencia_primigenia",
+  "title": "Ascendencia Primigenia",
+  "category": "Ascendencias",
+  "image": "ascendencia_primigenia.jpg",
+  "stats": ["Sabiduría", "Vigor", "Chi"],
+  "description": "Te conviertes en un guardián de la vida, conectando con la naturaleza y los espíritus. Comandas bestias, plantas y fuerzas primigenias para proteger el equilibrio.",
+  "fundamentals": [
+    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
+    "<strong>Estadística principal:</strong> Sabiduría + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Aspecto Primigenio",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Sentidos animales (visión nocturna, olfato). Inmunidad a terreno difícil natural. Animales salvajes no son hostiles."
+        },
+        {
+          "name": "Forma de la bestia",
+          "tags": ["Innata", "Mejora"],
+          "duration": "6 Rondas",
+          "desc": "Forma híbrida. Ventaja en tiros físicos. DEF aumenta en (Rango + 1). Al terminar, daño a Cordura (Chi actual - Rondas). Riesgo de perder control si Cordura cae a 0."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "passive": "Incrementa tu estadística de SAB y su limitador máximo en +1.",
+      "abilities": [
+        {
+          "name": "Fuerza Salvaje",
+          "tags": ["Innata", "Mejora"],
+          "cost": "1 chi/vigor",
+          "desc": "El siguiente ataque físico gana +1 dado de daño y cuenta como mágico.",
+          "empower": "Añade otro dado de daño adicional (Max 2 veces)."
+        },
+        {
+          "name": "Comunión con la Naturaleza",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Lejano",
+          "desc": "Detectas espíritus y magia. Aprendes 2 hechizos Divinos de Rango I vinculados a un Espíritu Mayor (usan Vigor)."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Transformación Animal",
+          "tags": ["Innata", "Transmutación"],
+          "cost": "2 acciones, 2 chi/vigor",
+          "duration": "1 Hora",
+          "desc": "Te transformas en animal (sin equipo). Eliges 2 mejoras: Vuelo, Gigante (Tamaño/Alcance+, Daño+), Resistencia Elemental, Coraza (Escudos=Rango) o Espinas (Daño+ y Sangrado al contacto).",
+          "empower": "N/A"
+        },
+        {
+          "name": "Llamar a los Espíritus",
+          "tags": ["Divina", "Invocación"],
+          "cost": "3 acciones, 2 chi/vigor",
+          "range": "Medio",
+          "duration": "1 Hora",
+          "desc": "Invocas espíritu de Nivel <= (Rango x 2). Max 4 criaturas simultáneas.",
+          "empower": "La criatura invocada recupera el 50% de su Vitalidad."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "passive": "Incrementa tu estadística de FUE y su limitador en +1. Aprendes 2 hechizos de Rango II (usan Vigor).",
+      "abilities": [
+        {
+          "name": "Vínculo Primigenio",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a Fuego, Frío, Eléctrico, Sónico y Radiante (e Inmunidad a sus críticos). Comunicación con animales y espíritus."
+        },
+        {
+          "name": "Sanación Espiritual",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Al inicio de turno: Recuperas (Rango) Vitalidad y reduces 1 herida permanente un paso. Se anula 1 ronda por daño de Hierro Frío."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Aura Primigenia",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a Arcano y Divino. Objetos mágicos/glifos cercanos tienen 50% fallo.",
+          "empower": "Éxito automático vs Arcano o Contrarrestar (pagando coste)."
+        },
+        {
+          "name": "Portal Espiritual",
+          "tags": ["Innata", "Espacial"],
+          "cost": "3 acciones, 3 chi/vigor",
+          "area": "Radio Grande",
+          "duration": "6 Rondas",
+          "desc": "Fusiona planos (Tierra Consagrada). Permite viajar al plano espiritual (acción). En plano espiritual tienes +3 acciones extra (dilatación temporal).",
+          "empower": "Cambio de plano como Reacción para esquivar."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "passive": "Incrementa tu estadística de CON y su limitador en +1. Aprendes 2 hechizos de Rango III (usan Vigor).",
+      "abilities": [
+        {
+          "name": "Despertar la Bestia",
+          "tags": ["Innata", "Transformación"],
+          "cost": "3 acciones, 5 chi/vigor",
+          "duration": "6 Rondas",
+          "desc": "Avatar espiritual (+40 Vitalidad Temporal). Físicas a 12, DEF 20. Inmunidad Mental/Miedo/Aflicción/Toque. Tamaño +1. Ataques naturales 1d10 (Material III). Vuelo 1. Conoces Estilo Salvaje (Rango III gratis). 6 Escudos. Hechizos gratis."
+        }
+      ]
+    }
+  ]
+}

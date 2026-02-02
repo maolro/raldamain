@@ -1,0 +1,714 @@
+/* =============================================
+   CREATURE/BESTIARY STYLES
+   D&D Beyond / Pathfinder SRD inspired design
+   ============================================= */
+
+/* --- BESTIARY HERO --- */
+.bestiary-hero {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../images/world_map.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- CREATURE HERO SECTION --- */
+.creature-hero {
+    height: 45vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../images/creatures/default.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 3px solid var(--accent-gold);
+    padding-bottom: 2rem;
+}
+
+.creature-hero-overlay {
+    text-align: center;
+}
+
+.creature-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--accent-gold);
+    text-shadow: 0 0 20px rgba(255, 242, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.creature-meta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creature-meta-badge {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--accent-gold);
+    padding: 6px 16px;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.creature-meta-badge.level {
+    background: linear-gradient(135deg, #8b0000, #4a0000);
+    border-color: #ff4444;
+}
+
+/* --- CREATURE CONTAINER --- */
+.creature-container {
+    max-width: 900px;
+}
+
+/* --- STATBLOCK CONTAINER --- */
+.statblock {
+    background: linear-gradient(135deg, #1a1510 0%, #0f0d0a 100%);
+    border: 2px solid #8b4513;
+    border-radius: 0;
+    padding: 0;
+    margin: 2rem auto;
+    box-shadow:
+        0 0 0 1px #5c3317,
+        0 0 0 4px var(--secondary-black),
+        0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Decorative top/bottom bars (D&D style) */
+.statblock::before,
+.statblock::after {
+    content: '';
+    display: block;
+    height: 6px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #8b4513 10%,
+            var(--accent-gold) 50%,
+            #8b4513 90%,
+            transparent 100%);
+}
+
+.statblock-header {
+    background: linear-gradient(135deg, #2a1a0a, #1a0f05);
+    padding: 1.5rem 2rem 1rem;
+    border-bottom: 2px solid #8b4513;
+}
+
+.statblock-header h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 2rem;
+    margin: 0 0 0.3rem 0;
+    text-align: center;
+}
+
+.statblock-header p {
+    color: #888;
+    font-style: italic;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Tapered separators (like D&D Beyond) */
+.statblock-separator {
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #8b4513 15%,
+            var(--accent-gold) 50%,
+            #8b4513 85%,
+            transparent 100%);
+    margin: 0.5rem 1.5rem;
+}
+
+/* --- COMBAT STATS ROW --- */
+.statblock-combat {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.combat-stat {
+    color: var(--text-muted);
+}
+
+.combat-stat-label {
+    color: #c9a227;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.combat-stat-value {
+    color: var(--text-main);
+}
+
+/* --- ABILITY SCORES (6 stats grid) --- */
+.statblock-abilities {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.ability-block {
+    padding: 0.5rem;
+}
+
+.ability-label {
+    font-family: var(--font-heading);
+    color: #c9a227;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.ability-score {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    font-weight: bold;
+}
+
+.ability-modifier {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* --- PROPERTIES (Defenses, Senses, Languages) --- */
+.statblock-properties {
+    padding: 0.75rem 2rem;
+}
+
+.property-line {
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.property-label {
+    color: #c9a227;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.property-value {
+    color: var(--text-main);
+}
+
+/* Defense pills */
+.defense-pills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.defense-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+.defense-pill.resistance {
+    border-color: #4a8;
+    color: #6fc98a;
+}
+
+.defense-pill.immunity {
+    border-color: #48a;
+    color: #6ab3e7;
+}
+
+.defense-pill.vulnerability {
+    border-color: #a44;
+    color: #e76a6a;
+}
+
+/* --- TRAITS & ACTIONS --- */
+.statblock-traits {
+    padding: 0.75rem 2rem;
+}
+
+.statblock-section {
+    border-top: 2px solid #8b4513;
+}
+
+.statblock-section-title {
+    font-family: var(--font-heading);
+    color: #c9a227;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 1rem 2rem 0.5rem;
+    border-bottom: 1px solid #5c3317;
+}
+
+.statblock-section-content {
+    padding: 0.75rem 2rem 1rem;
+}
+
+.trait-block,
+.action-block {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.trait-block:last-child,
+.action-block:last-child {
+    margin-bottom: 0;
+}
+
+.trait-name,
+.action-name {
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+.action-type {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.trait-desc,
+.action-desc {
+    color: #ccc;
+}
+
+/* Recharge indicator */
+.recharge {
+    color: #a48;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Attack bonus styling */
+.attack-bonus {
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
+/* Damage styling */
+.damage {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* --- LEGENDARY ACTIONS --- */
+.legendary-intro {
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 0;
+    padding: 0.5rem 2rem 0.5rem;
+    font-size: 0.95rem;
+}
+
+.legendary-action {
+    margin-bottom: 0.75rem;
+}
+
+.legendary-cost {
+    color: #a48;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* --- LORE SECTION --- */
+.creature-lore {
+    background: #151515;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--accent-gold);
+}
+
+.creature-lore .section-title {
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.creature-lore p {
+    color: #ccc;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0;
+}
+
+/* --- LOOT TABLE --- */
+.creature-loot {
+    background: #151515;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.creature-loot .section-title {
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.loot-xp {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 242, 0, 0.05);
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.loot-xp .loot-label {
+    color: var(--text-muted);
+    margin-right: 0.5rem;
+}
+
+.loot-xp #loot-xp-value {
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.loot-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.loot-table th {
+    background: #252525;
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.loot-table td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+    color: var(--text-muted);
+}
+
+.loot-table tr:hover td {
+    background: #2a2a2a;
+    color: var(--text-main);
+}
+
+/* --- CREATURE TAGS --- */
+.creature-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.creature-tag {
+    background: var(--secondary-black);
+    border: 1px solid #444;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: all 0.3s;
+}
+
+.creature-tag:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+/* --- BACK LINK --- */
+.back-link {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.back-link a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.back-link a:hover {
+    color: var(--accent-gold);
+}
+
+/* --- CREATURE CARD (for gallery) --- */
+.creature-card {
+    position: relative;
+}
+
+.creature-card .card-image {
+    position: relative;
+    height: 180px;
+}
+
+.creature-level-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.creature-type-label {
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* --- GUIDE SECTION (Collapsible) --- */
+.guide-section {
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.guide-toggle {
+    width: 100%;
+    background: var(--secondary-black);
+    border: none;
+    padding: 1rem 1.5rem;
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+    text-align: left;
+}
+
+.guide-toggle:hover {
+    background: #2a2a2a;
+}
+
+.guide-toggle-icon {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.guide-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    background: #151515;
+    padding: 0 2rem;
+}
+
+.guide-content.expanded {
+    max-height: 3000px;
+    padding: 2rem;
+}
+
+/* Guide content markdown styling */
+.guide-content h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.guide-content h2:first-child {
+    margin-top: 0;
+}
+
+.guide-content h3 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.guide-content p {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.guide-content ul,
+.guide-content ol {
+    color: var(--text-muted);
+    padding-left: 25px;
+    margin-bottom: 1rem;
+}
+
+.guide-content li {
+    margin-bottom: 0.5rem;
+}
+
+.guide-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: var(--secondary-black);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.guide-content th {
+    background: #252525;
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.guide-content td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+    color: var(--text-muted);
+}
+
+.guide-content blockquote {
+    background: rgba(255, 242, 0, 0.05);
+    border-left: 4px solid var(--accent-gold);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.guide-content blockquote p {
+    margin: 0;
+    color: #ccc;
+}
+
+.guide-content strong {
+    color: var(--text-main);
+}
+
+/* --- SEARCH BAR --- */
+.search-filter-container {
+    margin-bottom: 1.5rem;
+}
+
+.creature-search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    background: var(--secondary-black);
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.creature-search-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.creature-search-input::placeholder {
+    color: var(--text-muted);
+}
+
+/* --- STATUS EFFECT LINKS (imported from rank_style) --- */
+.status-effect-link {
+    color: #ff9966;
+    text-decoration: none;
+    border-bottom: 1px dotted #ff9966;
+    transition: all 0.2s ease;
+}
+
+.status-effect-link:hover {
+    color: var(--accent-gold);
+    border-bottom-color: var(--accent-gold);
+    background: rgba(255, 153, 102, 0.1);
+}
+
+.status-effect-link i,
+.status-effect-link em {
+    font-style: italic;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .statblock {
+        margin: 1rem;
+    }
+
+    .statblock-abilities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .statblock-combat {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .creature-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .creature-meta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statblock-header,
+    .statblock-combat,
+    .statblock-abilities,
+    .statblock-properties,
+    .statblock-traits,
+    .statblock-section-content,
+    .legendary-intro {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .statblock-section-title {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .statblock-separator {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .statblock-abilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .creature-hero h1 {
+        font-size: 2rem;
+    }
+
+    .statblock-header h2 {
+        font-size: 1.5rem;
+    }
+}

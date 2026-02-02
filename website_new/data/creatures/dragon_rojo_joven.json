@@ -1,0 +1,128 @@
+{
+  "id": "dragon_rojo_joven",
+  "name": "Dragón Rojo Joven",
+  "level": 12,
+  "type": "Dragón",
+  "size": "Enorme",
+  "image": "creatures/dragon_rojo_joven.jpg",
+
+  "stats": {
+    "FUE": 8,
+    "DES": 3,
+    "CON": 7,
+    "INT": 4,
+    "SAB": 3,
+    "CAR": 6
+  },
+
+  "combat": {
+    "pv": 80,
+    "vitalidad": 100,
+    "defense": 18,
+    "speed": "12m, Vuelo 24m, Trepar 12m",
+    "acciones": 4,
+    "reacciones": 2
+  },
+
+  "defenses": {
+    "resistances": [],
+    "immunities": ["Fuego"],
+    "vulnerabilities": []
+  },
+
+  "skills": ["Percepción +8", "Sigilo +4"],
+  "senses": ["Vista ciega 9m", "Visión en la oscuridad 36m", "Percepción pasiva 18"],
+  "languages": ["Común", "Dracónico"],
+
+  "traits": [
+    {
+      "name": "Presencia Aterradora",
+      "desc": "Cualquier criatura hostil que comience su turno a 6m del dragón debe superar una tirada de SAB CD 16 o quedar paralizada por el miedo durante 1 ronda. Una criatura que supere la tirada es inmune a este efecto durante 24 horas."
+    }
+  ],
+
+  "actions": [
+    {
+      "name": "Multiataque",
+      "cost": "4 Acciones",
+      "tags": ["Especial"],
+      "desc": "El dragón realiza tres ataques: uno con su Mordisco y dos con sus Garras."
+    },
+    {
+      "name": "Mordisco",
+      "cost": "1 Acción",
+      "tags": ["Cuerpo a cuerpo", "Físico"],
+      "bonus": "+12",
+      "reach": "Cercano",
+      "damage": "2d10+8 Perforante + 1d6 Fuego"
+    },
+    {
+      "name": "Garras",
+      "cost": "1 Acción",
+      "tags": ["Cuerpo a cuerpo", "Físico"],
+      "bonus": "+12",
+      "reach": "Adyacente",
+      "damage": "2d6+8 Cortante"
+    },
+    {
+      "name": "Aliento de Fuego",
+      "cost": "3 Acciones",
+      "tags": ["Fuego", "Área", "Recarga 5-6"],
+      "area": "Cono de 18m",
+      "damage": "16d6 Fuego",
+      "save": "DES CD 17 (mitad en éxito)",
+      "desc": "El dragón exhala fuego en un cono devastador. Las criaturas que fallen por 5 o más sufren quemadura grave."
+    }
+  ],
+
+  "reactions": [
+    {
+      "name": "Coletazo Reactivo",
+      "cost": "1 Reacción",
+      "tags": ["Cuerpo a cuerpo", "Físico"],
+      "bonus": "+12",
+      "desc": "Cuando una criatura lo golpea con un ataque cuerpo a cuerpo, realiza un ataque con su cola (2d8+8 contundente)."
+    },
+    {
+      "name": "Escamas Endurecidas",
+      "tags": ["Defensiva"],
+      "desc": "Reduce el daño recibido de un ataque en 1d10."
+    }
+  ],
+
+  "legendaryActions": {
+    "points": 3,
+    "actions": [
+      {
+        "name": "Detectar",
+        "cost": 1,
+        "desc": "El dragón realiza una tirada de Percepción."
+      },
+      {
+        "name": "Ataque con Cola",
+        "cost": 1,
+        "desc": "El dragón realiza un ataque con su cola (+12 para impactar, alcance 4.5m, 2d8+8 contundente)."
+      },
+      {
+        "name": "Ataque de Alas",
+        "cost": 2,
+        "desc": "El dragón bate sus alas. Cada criatura en un radio de 3m debe superar DES CD 18 o recibir 2d6+8 contundente y quedar derribado. El dragón puede volar hasta la mitad de su velocidad de vuelo."
+      }
+    ]
+  },
+
+  "lore": "Los dragones rojos jóvenes son criaturas de inmensa arrogancia y codicia. Aunque aún no han alcanzado su tamaño completo, ya son capaces de arrasar aldeas enteras con su aliento de fuego. Acumulan tesoros en guaridas volcánicas y exigen tributo de las comunidades cercanas.",
+
+  "loot": {
+    "xp": 3900,
+    "items": [
+      { "name": "Escamas de Dragón Rojo (2d6)", "chance": "100%" },
+      { "name": "Sangre de Dragón (5 dosis)", "chance": "100%" },
+      { "name": "Colmillo de Dragón", "chance": "75%" },
+      { "name": "Tesoro del Dragón (4d6 x 100 monedas de oro)", "chance": "100%" },
+      { "name": "Objeto mágico aleatorio (raro)", "chance": "25%" }
+    ]
+  },
+
+  "tags": ["Jefe", "Dragón", "Fuego", "Legendario", "Solo"]
+}

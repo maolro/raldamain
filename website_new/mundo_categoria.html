@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría | Raldamain</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/world_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="hero category-hero" id="hero-section">
+        <div class="hero-content">
+            <nav class="breadcrumb">
+                <a href="/mundo">El Mundo</a> &rsaquo; <span id="breadcrumb-category">Categoría</span>
+            </nav>
+            <h1 id="category-name">Cargando...</h1>
+            <p id="category-description"></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Search within category -->
+        <section class="category-controls">
+            <input type="text" id="category-search" placeholder="Buscar en esta categoría..." class="category-search-input">
+        </section>
+
+        <!-- Subcategories (if any) -->
+        <section id="subcategories-section" class="subcategories-section" style="display: none;">
+            <div id="subcategories-tabs" class="subcategories-tabs"></div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="articles-section">
+            <div class="articles-grid" id="articles-grid">
+                <p style="color: #888;">Cargando artículos...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Raldamain Studios</p>
+    </footer>
+
+    <script>
+        let categoryData = null;
+        let allCategoryArticles = [];
+        let currentSubcategory = 'all';
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const path = window.location.pathname;
+            const segments = path.split('/').filter(part => part.length > 0);
+            const categoryId = segments[segments.length - 1];
+
+            console.log("Category ID:", categoryId);
+
+            loadCategory(categoryId);
+            setupSearch();
+        });
+
+        function loadCategory(categoryId) {
+            fetch('/data/world_index.json')
+                .then(response => response.json())
+                .then(data => {
+                    const category = data.categories.find(c => c.id === categoryId);
+                    if (!category) {
+                        throw new Error('Category not found');
+                    }
+                    categoryData = category;
+                    renderCategory(category);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('category-name').innerText = 'Categoría no encontrada';
+                    document.getElementById('articles-grid').innerHTML = `
+                        <div style="text-align: center; padding: 2rem;">
+                            <p style="color: #ff6b6b;">No se pudo cargar esta categoría.</p>
+                            <a href="/mundo" style="color: var(--accent-gold);">Volver al Mundo</a>
+                        </div>
+                    `;
+                });
+        }
+
+        function renderCategory(category) {
+            // Update page title and hero
+            document.title = `${category.name} | El Mundo de Raldamain`;
+            document.getElementById('category-name').innerText = category.name;
+            document.getElementById('category-description').innerText = category.description;
+            document.getElementById('breadcrumb-category').innerText = category.name;
+
+            // Set hero color
+            const hero = document.getElementById('hero-section');
+            hero.style.setProperty('--category-color', category.color);
+
+            // Build article list
+            allCategoryArticles = [];
+
+            if (category.articles) {
+                category.articles.forEach(article => {
+                    allCategoryArticles.push({ ...article, subcategory: null });
+                });
+            }
+
+            if (category.subcategories) {
+                // Show subcategory tabs
+                const subcatSection = document.getElementById('subcategories-section');
+                subcatSection.style.display = 'block';
+
+                const tabsContainer = document.getElementById('subcategories-tabs');
+                let tabsHTML = `<button class="subcat-tab active" onclick="filterSubcategory('all', this)">Todos</button>`;
+
+                category.subcategories.forEach(subcat => {
+                    tabsHTML += `<button class="subcat-tab" onclick="filterSubcategory('${subcat.id}', this)">${subcat.name}</button>`;
+
+                    subcat.articles.forEach(article => {
+                        allCategoryArticles.push({ ...article, subcategory: subcat.id, subcategoryName: subcat.name });
+                    });
+                });
+
+                tabsContainer.innerHTML = tabsHTML;
+            }
+
+            renderArticles(allCategoryArticles, category.color);
+        }
+
+        function renderArticles(articles, color) {
+            const grid = document.getElementById('articles-grid');
+
+            if (articles.length === 0) {
+                grid.innerHTML = '<p style="color: #888; text-align: center; grid-column: 1/-1;">No se encontraron artículos.</p>';
+                return;
+            }
+
+            grid.innerHTML = articles.map(article => `
+                <a href="/mundo/articulo/${article.id}" class="article-card" style="--article-color: ${color};">
+                    <h3>${article.name}</h3>
+                    ${article.subcategoryName ? `<span class="article-subcategory">${article.subcategoryName}</span>` : ''}
+                </a>
+            `).join('');
+        }
+
+        function filterSubcategory(subcatId, btnElement) {
+            // Update active tab
+            document.querySelectorAll('.subcat-tab').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            currentSubcategory = subcatId;
+            applyFilters();
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('category-search');
+            searchInput.addEventListener('input', () => applyFilters());
+        }
+
+        function applyFilters() {
+            let filtered = [...allCategoryArticles];
+
+            // Filter by subcategory
+            if (currentSubcategory !== 'all') {
+                filtered = filtered.filter(a => a.subcategory === currentSubcategory);
+            }
+
+            // Filter by search
+            const query = document.getElementById('category-search').value.toLowerCase().trim();
+            if (query) {
+                filtered = filtered.filter(a => a.name.toLowerCase().includes(query));
+            }
+
+            renderArticles(filtered, categoryData.color);
+        }
+    </script>
+</body>
+</html>

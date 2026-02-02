@@ -1,0 +1,123 @@
+{
+  "id": "ascendencia_celestial",
+  "title": "Ascendencia Celestial",
+  "category": "Ascendencias",
+  "image": "ascendencia_celestial.jpg",
+  "stats": ["Sabiduría", "Carisma", "Vigor", "Chi"],
+  "description": "Canalizas el poder de los seres superiores para convertirte en luz y guía. Obtienes poderes de sanación, vuelo y la capacidad de invocar fuerzas celestiales para erradicar el mal.",
+  "fundamentals": [
+    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
+    "<strong>Estadística principal:</strong> Sabiduría o Carisma + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Nacido del cielo",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a efectos Radiantes. Las criaturas celestiales te reconocen como aliado."
+        },
+        {
+          "name": "Luz celestial",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Medio",
+          "desc": "Iluminas el área a distancia media. Puedes lanzar 'Halo cegador', 'Rayo luminoso' y 'Toque sanador' gastando Vigor (o con sobrecoste si no los conoces)."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "passive": "Incrementa tu estadística de CAR y su limitador máximo en +1.",
+      "abilities": [
+        {
+          "name": "Arma Angelical",
+          "tags": ["Innata", "Mejora"],
+          "cost": "1 chi/vigor",
+          "duration": "1 Ronda",
+          "desc": "Al impactar con un ataque, puedes lanzar un hechizo de Vida como acción bonus contra el mismo objetivo (impacto automático si es ofensivo)."
+        },
+        {
+          "name": "Cuerpo Puro",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a Aflicciones y Necrótico. Aumenta DEF en (Rango + 1).",
+          "empower": "Repites un tiro de muerte y te quedas el mejor resultado."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "passive": "Aprendes los hechizos 'Barrera luminosa' y 'Arma solar' (usan Vigor).",
+      "abilities": [
+        {
+          "name": "Ángel Protector",
+          "tags": ["Innata", "Invocación"],
+          "cost": "3 acciones, 2 chi",
+          "duration": "1 Hora",
+          "desc": "Invocas un celestial de Nivel <= (Rango x 2). Max 4 criaturas simultáneas.",
+          "empower": "La criatura invocada recupera el 50% de su Vitalidad."
+        },
+        {
+          "name": "Poder de los Cielos",
+          "tags": ["Innata", "Pasiva"],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Aura de luz. Ventaja en Magia de Vida/Arma Angelical. Enemigos sufren Desventaja en ataques a distancia contra el aura. Aliados ganan Resistencia Sombría.",
+          "empower": "Reduce el coste de un hechizo de Vida en 1 acción."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "passive": "Incrementa tu estadística de CON y su limitador en +1.",
+      "abilities": [
+        {
+          "name": "Alas Angelicales",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Manifiestas alas (Vuelo 2). Ventaja en tiros de Esquiva. Acción bonus para activar/desactivar."
+        },
+        {
+          "name": "Visión Verdadera",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Inmunidad a Ilusiones. Ves invisibilidad y formas verdaderas. Ventaja en Averiguar Intenciones. Resistencia Mental."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "passive": "Aprendes los hechizos 'Sanación superior' y 'Luz viviente' (usan Vigor).",
+      "abilities": [
+        {
+          "name": "Regeneración Celestial",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Al inicio de turno recuperas (Rango + 2) Vitalidad y reduces 1 herida/aflicción un paso. Se anula 1 ronda por daño de material anti-celestial.",
+          "empower": "Reduces el nivel de una herida/aflicción adicional."
+        },
+        {
+          "name": "Alma Ascendida",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Resistencia a Arcano y Divino. Resistencia Superior a Aflicción, Necrótico, Radiante y Miedo. Comunicación universal con celestiales."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "passive": "Incrementa tu estadística de SAB y su limitador en +1.",
+      "abilities": [
+        {
+          "name": "Ángel Vengador",
+          "tags": ["Innata", "Transformación"],
+          "cost": "3 acciones, 5 chi",
+          "duration": "6 Rondas",
+          "desc": "Avatar vengador (+40 Vitalidad Temporal). FUE/CON/CAR 12, DEF 20. Inmunidad Mental/Miedo/Aflicción/Toque. Tamaño +1. Ataques físicos +1d10 Radiante. Hechizos Vida curan doble y +1d daño. Vuelo 2. Efecto 'Poder de los Cielos' activo. Hechizos gratis."
+        }
+      ]
+    }
+  ]
+}

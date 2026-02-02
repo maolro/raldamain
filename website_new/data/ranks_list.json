@@ -1,0 +1,226 @@
+[
+  {
+    "id": "estilo_coloso",
+    "name": "Estilo Coloso",
+    "category": "Marcial",
+    "image": "estilo_coloso.jpg",
+    "description": "Uso de armas pesadas centrado en causar gran daño y poder destructivo masivo."
+  },
+  {
+    "id": "estilo_duelista",
+    "name": "Estilo Duelista",
+    "category": "Marcial",
+    "image": "estilo_duelista.jpg",
+    "description": "Maestría en armas de duelo, centrado en la precisión, paradas y maniobras elegantes."
+  },
+  {
+    "id": "estilo_asesino",
+    "name": "Estilo Asesino",
+    "category": "Marcial",
+    "image": "estilo_asesino.jpg",
+    "description": "Uso de armas ligeras, centrado en el engaño, el sigilo y el asesinato rápido."
+  },
+  {
+    "id": "ira",
+    "name": "Ira",
+    "category": "Combate",
+    "image": "ira.jpg",
+    "description": "Canaliza tu furia para superar los límites físicos, mejorar el combate y resistir el dolor."
+  },
+  {
+    "id": "reflejos",
+    "name": "Reflejos",
+    "category": "Combate",
+    "image": "reflejos.jpg",
+    "description": "Agudiza tus instintos para esquivar ataques y moverte con velocidad sobrenatural."
+  },
+  {
+    "id": "fortitud",
+    "name": "Fortitud",
+    "category": "Combate",
+    "image": "fortitud.jpg",
+    "description": "Endurece tu cuerpo para obtener armadura natural y capacidad de sanación rápida."
+  },
+  {
+    "id": "mente_desencadenada",
+    "name": "Mente Desencadenada",
+    "category": "Combate",
+    "image": "mente_desencadenada.jpg",
+    "description": "Desencadena tu poder mágico y fuerza física al precio de tu propia cordura."
+  },
+  {
+    "id": "rastrear",
+    "name": "Rastrear",
+    "category": "Combate",
+    "image": "rastrear.jpg",
+    "description": "Analiza enemigos, sigue rastros y utiliza tu inteligencia para ganar ventaja en combate."
+  },
+  {
+    "id": "presencia",
+    "name": "Presencia",
+    "category": "Combate",
+    "image": "presencia.jpg",
+    "description": "Inspira a tus aliados con tácticas coordinadas o infunde miedo terrorífico en tus enemigos."
+  },
+  {
+    "id": "ascendencia_abisal",
+    "name": "Ascendencia Abisal",
+    "category": "Ascendencia",
+    "image": "ascendencia_abisal.jpg",
+    "description": "Poderes mutantes y aberrantes derivados de las criaturas caóticas del abismo."
+  },
+  {
+    "id": "ascendencia_akhasica",
+    "name": "Ascendencia Akhásica",
+    "category": "Ascendencia",
+    "image": "ascendencia_akhasica.jpg",
+    "description": "Despierta poderes psíquicos y accede al conocimiento de la Memoria Akhásica."
+  },
+  {
+    "id": "ascendencia_celestial",
+    "name": "Ascendencia Celestial",
+    "category": "Ascendencia",
+    "image": "ascendencia_celestial.jpg",
+    "description": "Expolia tu cuerpo físico para desbloquear tu espíritu y buscar la ascensión divina."
+  },
+  {
+    "id": "ascendencia_infernal",
+    "name": "Ascendencia Infernal",
+    "category": "Ascendencia",
+    "image": "ascendencia_infernal.jpg",
+    "description": "Pacto con entidades infernales para dominar a otros y usar magia prohibida a costa de tu alma."
+  },
+  {
+    "id": "ascendencia_primigenia",
+    "name": "Ascendencia Primigenia",
+    "category": "Ascendencia",
+    "image": "ascendencia_primigenia.jpg",
+    "description": "Bendiciones de la naturaleza y transformación en bestia, arriesgando tu humanidad."
+  },
+  {
+    "id": "magia_fuego",
+    "name": "Magia de Fuego",
+    "category": "Elementalismo",
+    "image": "magia_fuego.jpg",
+    "description": "Controla las llamas, incinera a tus enemigos y crea barreras de fuego."
+  },
+  {
+    "id": "magia_hielo",
+    "name": "Magia de Hielo",
+    "category": "Elementalismo",
+    "image": "magia_hielo.jpg",
+    "description": "Congela a tus oponentes, crea estructuras de hielo y reduce la temperatura."
+  },
+  {
+    "id": "magia_agua",
+    "name": "Magia de Agua",
+    "category": "Elementalismo",
+    "image": "magia_agua.jpg",
+    "description": "Manipula las corrientes, sana heridas y adáptate como el agua."
+  },
+  {
+    "id": "magia_tierra",
+    "name": "Magia de Tierra",
+    "category": "Elementalismo",
+    "image": "magia_tierra.jpg",
+    "description": "Mueve la tierra, crea defensas impenetrables y golpea con la fuerza de la montaña."
+  },
+  {
+    "id": "magia_tormenta",
+    "name": "Magia de Tormenta",
+    "category": "Elementalismo",
+    "image": "magia_tormenta.jpg",
+    "description": "Canaliza el poder del rayo y el trueno para devastar el campo de batalla."
+  },
+  {
+    "id": "magia_aire",
+    "name": "Magia de Aire",
+    "category": "Elementalismo",
+    "image": "magia_aire.jpg",
+    "description": "Controla el viento para volar, ganar velocidad y empujar a tus enemigos."
+  },
+  {
+    "id": "magia_temporal",
+    "name": "Magia Temporal",
+    "category": "Arcano",
+    "image": "magia_temporal.jpg",
+    "description": "Vislumbra el futuro y manipula el flujo del tiempo para acelerar o ralentizar objetivos."
+  },
+  {
+    "id": "magia_espacial",
+    "name": "Magia Espacial",
+    "category": "Arcano",
+    "image": "magia_espacial.jpg",
+    "description": "Domina el espacio con teletransporte, portales y creación de dominios extraplanarios."
+  },
+  {
+    "id": "magia_protectora",
+    "name": "Magia Protectora",
+    "category": "Arcano",
+    "image": "magia_protectora.jpg",
+    "description": "Crea glifos de sellado y barreras capaces de anular otras magias."
+  },
+  {
+    "id": "magia_evocacion",
+    "name": "Magia de Evocación",
+    "category": "Arcano",
+    "image": "magia_evocacion.jpg",
+    "description": "Canalización de energía pura y transformación elemental para una ofensiva total."
+  },
+  {
+    "id": "magia_vida",
+    "name": "Magia de Vida",
+    "category": "Ocultismo",
+    "image": "magia_vida.jpg",
+    "description": "Manipulación de la luz y el poder radiante para sanar o purificar."
+  },
+  {
+    "id": "magia_sombria",
+    "name": "Magia Sombría",
+    "category": "Ocultismo",
+    "image": "magia_sombria.jpg",
+    "description": "Control de la oscuridad, creación de clones sombríos y transformación en sombra."
+  },
+  {
+    "id": "nigromancia",
+    "name": "Nigromancia",
+    "category": "Ocultismo",
+    "image": "nigromancia.jpg",
+    "description": "Levanta a los no-muertos, drena la fuerza vital y utiliza energía negativa."
+  },
+  {
+    "id": "magia_mental",
+    "name": "Magia Mental",
+    "category": "Ocultismo",
+    "image": "magia_mental.jpg",
+    "description": "Lee pensamientos, controla voluntades ajenas y causa daño psíquico."
+  },
+  {
+    "id": "magia_ilusoria",
+    "name": "Magia Ilusoria",
+    "category": "Ocultismo",
+    "image": "magia_ilusoria.jpg",
+    "description": "Crea proyecciones falsas, invisibilidad y engaños visuales complejos."
+  },
+  {
+    "id": "magia_gravitatoria",
+    "name": "Magia Gravitatoria",
+    "category": "Ocultismo",
+    "image": "magia_gravitatoria.jpg",
+    "description": "Altera la gravedad para levantar objetos, cambiar pesos y crear campos de repulsión."
+  },
+  {
+    "id": "magia_divina",
+    "name": "Magia Divina",
+    "category": "Divino",
+    "image": "magia_divina.jpg",
+    "description": "Canaliza el poder de un dios para otorgar bendiciones, maldiciones y consagrar la tierra."
+  },
+  {
+    "id": "guerrero_divino",
+    "name": "Guerrero Divino",
+    "category": "Divino",
+    "image": "guerrero_divino.jpg",
+    "description": "Infunde armas con poder divino para acabar con los enemigos de tu fe."
+  }
+]

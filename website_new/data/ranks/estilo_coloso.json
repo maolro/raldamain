@@ -1,0 +1,147 @@
+{
+  "id": "estilo_coloso",
+  "title": "Estilo Coloso",
+  "category": "Marcial",
+  "image": "estilo_coloso.jpg",
+  "stats": ["Fuerza", "Vigor"],
+  "description": "Dominas el arte de las armas a dos manos. Sacrificas velocidad y defensa a cambio de golpes devastadores capaces de romper armaduras y aturdir enemigos.",
+  "fundamentals": [
+    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Fuerza + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Ataque con Arma",
+          "tags": ["Pesado", "Ataque", "Cuerpo a cuerpo"],
+          "cost": "2 acciones",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo sufre herida permanente leve.",
+          "desc": "Ataque físico pesado usando tu modificador de FUE."
+        },
+        {
+          "name": "Estilo Descuidado",
+          "tags": ["Pesado", "Pasiva"],
+          "desc": "Obtienes 1 acción adicional al inicio de tu turno, pero no puedes entrar en Posición Defensiva."
+        },
+        {
+          "name": "Golpe Desestabilizador",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "1 vigor",
+          "desc": "Al impactar o ser detenido, objetivo tira Heroísmo/Acrobacias o es empujado y queda 'Tropezado'."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Gran Barrido",
+          "tags": ["Pesado", "Mejora", "Área"],
+          "cost": "1 vigor",
+          "area": "Radio Corto",
+          "desc": "Atacas a todas las criaturas en radio corto con +1d6 daño. Si uno para, todos usan ese resultado defensivo."
+        },
+        {
+          "name": "Golpe Aturdidor",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "1 vigor",
+          "desc": "Requiere daño Contundente. Objetivo tira CON o queda Aturdido 1 ronda."
+        },
+        {
+          "name": "Tajo Feroz",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "1 vigor",
+          "desc": "Requiere daño Cortante. Causa herida permanente leve y Sangrado. (Si lleva armadura ligera, la herida es media)."
+        },
+        {
+          "name": "Reposición Forzosa",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "1 vigor",
+          "desc": "Si el enemigo esquiva, tira Acrobacias o es movido 1 paso y pierde Posición Defensiva."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Golpe Demoledor",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "2 vigor",
+          "desc": "Impacto con +1d6 daño. Rompe 1 escudo y el estado de la armadura. Si te paran, rompes el arma enemiga (si es material inferior)."
+        },
+        {
+          "name": "Carga Salvaje",
+          "tags": ["Pesado", "Ataque"],
+          "cost": "2 acciones, 2 vigor",
+          "range": "Línea media",
+          "desc": "Avanzas atacando a todos en tu camino (+1d6 daño y empujón)."
+        },
+        {
+          "name": "Combinar Técnicas",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "2 vigor",
+          "desc": "Realizas un segundo ataque como acción bonus contra el mismo objetivo tras atacar."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Golpe Ascendente",
+          "tags": ["Pesado", "Ataque"],
+          "cost": "2 vigor",
+          "desc": "Saltas verticalmente y atacas (+2d6 daño). Voladores tienen Desventaja y caen tropezados al suelo."
+        },
+        {
+          "name": "Impacto Meteoro",
+          "tags": ["Pesado", "Ataque", "Área"],
+          "cost": "2 acciones, 2 vigor",
+          "area": "Radio corto",
+          "desc": "Saltas y golpeas el suelo. Ataque en área (+2d6 daño) que tropieza a los afectados."
+        },
+        {
+          "name": "Guardia Fluida",
+          "tags": ["Pesado", "Defensivo"],
+          "cost": "2 acciones, 2 vigor",
+          "duration": "Concentración",
+          "desc": "Ganas Escudos = Rango. Solo protegen contra ataques cuerpo a cuerpo o proyectiles grandes."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Golpe por Golpe",
+          "tags": ["Pesado", "Ataque"],
+          "cost": "3 vigor",
+          "desc": "Al defenderte, aceptas recibir el golpe automáticamente a cambio de realizar un ataque imparable contra el enemigo primero."
+        },
+        {
+          "name": "Impacto Mortal",
+          "tags": ["Pesado", "Ataque"],
+          "cost": "1 acción, 3 vigor",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo recibe herida permanente crítica.",
+          "desc": "Ataque devastador (+3d6 daño, herida permanente grave). No usable como reacción."
+        },
+        {
+          "name": "Vuelo de Golondrina",
+          "tags": ["Pesado", "Mejora"],
+          "cost": "3 vigor",
+          "desc": "Segundo ataque como acción bonus (+2d6 daño) contra el mismo objetivo. El enemigo debe usar su resultado defensivo anterior."
+        }
+      ]
+    }
+  ]
+}

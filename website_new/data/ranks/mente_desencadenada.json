@@ -1,0 +1,98 @@
+{
+  "id": "mente_desencadenada",
+  "title": "Mente Desencadenada",
+  "category": "Combate",
+  "image": "mente_desencadenada.jpg",
+  "stats": ["Inteligencia", "Chi"],
+  "description": "Conectas tu mente con un plano superior para alcanzar un estado cognitivo absoluto. Obtienes poderes psíquicos y resistencia mental a costa de tu propia cordura.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Poder de la mente:</strong> Usas (INT + Rango) para las habilidades de esta rama."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Mente Desencadenada",
+          "tags": ["Mente desencadenada", "Mental", "Pasiva"],
+          "duration": "Max 6 rondas",
+          "desc": "Estado de trance. Ventaja en ataques/defensa/talentos Mentales. +1d6 daño mental. Al terminar: Daño a Cordura igual a (Chi actual - Rondas usadas).",
+          "empower": "N/A"
+        },
+        {
+          "name": "Agilidad Mental",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Recibes (Rango + 2) niveles de talento adicionales para mejorar tus habilidades."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Poder del Dolor",
+          "tags": ["Mente desencadenada", "Mental", "Pasiva"],
+          "desc": "En estado Mente Desencadenada: Ignoras efectos de heridas permanentes (leves/medias) y ganas Resistencia a Aflicciones y Aturdimiento."
+        },
+        {
+          "name": "Conocimiento Arcano",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "desc": "En estado Mente Desencadenada: Puedes lanzar 2 hechizos de Rango I (Arcano u Ocultismo) usando INT + Rango. Aprendes 1 nuevo hechizo por cada rango subido."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Concentración Superior",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "desc": "No pierdes la concentración al recibir daño o efectos negativos (salvo heridas graves o incapacitación)."
+        },
+        {
+          "name": "Poder de la Locura",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "desc": "En estado Mente Desencadenada: Puedes reducir 2 puntos de Cordura para recuperar 1 Chi (Max 3 veces/ronda)."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Sentido Arcano",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "range": "Medio",
+          "desc": "Identificas propiedades de hechizos/objetos. Vista ciega media.",
+          "empower": "Suprimes las propiedades de un objeto mágico o hechizo activo (Coste: 1 chi o 2 cordura)."
+        },
+        {
+          "name": "Psique Retorcido",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "desc": "Inmunidad a Miedo y efectos Mentales. Reacción: Si recibes un ataque mental, lo reflejas al atacante forzándole a defenderse de su propio efecto."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "División Mental",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "desc": "En estado Mente Desencadenada: Recibes un turno completo adicional con 3 acciones (a -10 iniciativa)."
+        },
+        {
+          "name": "Mente sobre Cuerpo",
+          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "desc": "Luchas a 0 o menos PV sin penalizadores (ignoras heridas no críticas). Al terminar: Mueres si PV < -CON y pierdes Cordura igual al daño recibido."
+        }
+      ]
+    }
+  ]
+}

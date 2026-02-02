@@ -1,0 +1,29 @@
+[
+  {
+    "id": "esqueleto",
+    "name": "Esqueleto",
+    "type": "No-muerto",
+    "level": 1,
+    "size": "Mediano",
+    "image": "creatures/esqueleto.jpg",
+    "description": "Restos animados de un guerrero caído, impulsados por energía necrótica. Obedecen ciegamente a su creador."
+  },
+  {
+    "id": "elemental_fuego",
+    "name": "Elemental de Fuego",
+    "type": "Elemental",
+    "level": 6,
+    "size": "Grande",
+    "image": "creatures/elemental_fuego.jpg",
+    "description": "Un ser de llamas vivas, invocado desde el plano elemental del fuego. Extremadamente destructivo."
+  },
+  {
+    "id": "dragon_rojo_joven",
+    "name": "Dragón Rojo Joven",
+    "type": "Dragón",
+    "level": 12,
+    "size": "Enorme",
+    "image": "creatures/dragon_rojo_joven.jpg",
+    "description": "Un temible depredador capaz de arrasar ciudades enteras con su aliento de fuego. Arrogante y codicioso."
+  }
+]

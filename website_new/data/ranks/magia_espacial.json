@@ -1,0 +1,184 @@
+{
+  "id": "magia_espacial",
+  "title": "Magia Espacial",
+  "category": "Arcana",
+  "image": "magia_espacial.jpg",
+  "stats": ["Inteligencia", "Chi"],
+  "description": "Manipulas los conductos de chi para alterar la distancia y el espacio. Te especializas en teletransporte, creación de portales y el control del campo de batalla.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango.",
+    "<strong>Parada Espacial:</strong> Usas Magia Espacial para tiros de Esquiva y salvaciones de Destreza."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Salto Espacial",
+          "tags": ["Espacial", "Arcana", "Defensiva"],
+          "cost": "1 acción, 1 chi",
+          "duration": "Instantáneo",
+          "desc": "Teletransporte de 1 paso. Reacción (Posición Defensiva): Reduce daño a la mitad y te mueves 1 paso. A Rango III evita el ataque totalmente.",
+          "empower": "Aumenta la distancia de teletransporte un paso (Max 2 veces)."
+        },
+        {
+          "name": "Portal Menor",
+          "tags": ["Espacial", "Arcana", "Duradera"],
+          "cost": "1 acción",
+          "range": "Medio (Visión)",
+          "duration": "Concentración",
+          "desc": "Portal pequeño (mano) que conecta adyacente con distancia media. Permite atacar o interactuar a través de él.",
+          "empower": "Creas un portal menor adicional como acción bonus (1 ronda)."
+        },
+        {
+          "name": "Bolsillo Interdimensional",
+          "tags": ["Espacial", "Arcana"],
+          "cost": "1 acción",
+          "desc": "Guardas o sacas un objeto pequeño en una dimensión de bolsillo.",
+          "empower": "Usar como acción bonus."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": [
+        {
+          "name": "Puerta Dimensional",
+          "tags": ["Espacial", "Arcano", "Duradero"],
+          "cost": "2 acciones, 1 chi",
+          "range": "Cercano",
+          "duration": "Concentración",
+          "desc": "Portal tamaño humano conectando con punto lejano visible. Cruzar forzosamente requiere empujón o fallo de salvación.",
+          "empower": "Crear como reacción para evitar ataque o forzar paso (requiere Posición Defensiva)."
+        },
+        {
+          "name": "Ancla Dimensional",
+          "tags": ["Espacial", "Arcano", "Toque"],
+          "cost": "1 acción, 1 chi",
+          "range": "Toque",
+          "duration": "1 hora",
+          "desc": "Impide al objetivo teletransportarse o usar portales. Salvación de CON.",
+          "empower": "Suprime el ancla durante una ronda."
+        },
+        {
+          "name": "Distorsión Espacial",
+          "tags": ["Espacial", "Arcano"],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "crit": "Objetivo cae Tropezado.",
+          "desc": "Teletransporta enemigo 1 paso. Interrumpe acciones y concentración (Salvación Salud).",
+          "empower": "Afecta a un objetivo adicional."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "passive": "Hechizos de Rango I cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Brecha Espacial",
+          "tags": ["Espacial", "Arcano", "Mejora"],
+          "cost": "2 chi",
+          "desc": "Siguiente ataque ignora barreras, muros, DEF y Escudos. Golpea a etéreos/teletransportadores.",
+          "empower": "Afecta a un ataque adicional esta ronda."
+        },
+        {
+          "name": "Portal Múltiple",
+          "tags": ["Espacial", "Arcano", "Mejora"],
+          "cost": "1 acción, 2 chi",
+          "area": "Esfera mediana",
+          "duration": "Concentración",
+          "desc": "Red de portales: Aumenta alcance a medio e ignora cobertura. Reacción: Redirige ataques fallidos a otro objetivo.",
+          "empower": "Redirige un ataque adicional esta ronda."
+        },
+        {
+          "name": "Invocar Extraplanario",
+          "tags": ["Espacial", "Arcano", "Invocación"],
+          "cost": "3 acciones, 2 chi",
+          "duration": "1 hora",
+          "desc": "Invoca criatura Nivel <= 6 (o +2 por cada rango sobre III). No garantiza obediencia.",
+          "empower": "Invoca una criatura adicional."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": [
+        {
+          "name": "Agujero de Gusano",
+          "tags": ["Espacial", "Arcano", "Duradero"],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Portal a cualquier lugar conocido del mundo. Riesgo de error si el lugar no es familiar.",
+          "empower": "Repetir tiro de transporte fallido."
+        },
+        {
+          "name": "Cambio de Posición",
+          "tags": ["Espacial", "Arcana", "Defensiva"],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "crit": "Objetivo pierde Posición Defensiva.",
+          "desc": "Intercambias posición con objetivo (Salvación Salud si hostil). Reacción (Defensiva): Cambias con enemigo para que él reciba el ataque.",
+          "empower": "Intercambias a dos criaturas ajenas entre sí."
+        },
+        {
+          "name": "Cierre Dimensional",
+          "tags": ["Espacial", "Arcano"],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio grande",
+          "duration": "Concentración",
+          "desc": "Bloquea magia espacial y teletransporte en el área. Te causa desventaja a ti también.",
+          "empower": "Permites un hechizo espacial aliado o ignoras penalizador 1 ronda."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Crear Demiplano",
+          "tags": ["Espacial", "Pasiva"],
+          "desc": "Controlas una dimensión de bolsillo (1km²). Puedes alterar su terreno/clima con magia elemental u ocultismo."
+        },
+        {
+          "name": "Puerta Interdimensional",
+          "tags": ["Espacial", "Arcano"],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Portal a otro plano. Efectos crecientes por ronda: Consagrar tierra (R2), Invocar nativo (R3), Explosión de área (R7).",
+          "empower": "N/A"
+        },
+        {
+          "name": "Desfase Espacial",
+          "tags": ["Espacial", "Arcano", "Duradero"],
+          "cost": "1 acción, 3 chi",
+          "duration": "Concentración",
+          "desc": "Te vuelves intangible e inmune al plano material. No puedes afectar al plano material.",
+          "empower": "Te materializas parcialmente 1 ronda para atacar (eres vulnerable)."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "abilities": [
+        {
+          "name": "Extensión de Dominio",
+          "tags": ["Espacial", "Arcano", "Ambiental"],
+          "cost": "3 acciones, 5 chi",
+          "area": "Esfera grande",
+          "duration": "Concentración",
+          "desc": "Superpones tu Demiplano. Ventaja Espacial. Hechizos Rango I-II gratis. Usas efectos ambientales del demiplano. Enemigos pueden disputar el control."
+        }
+      ]
+    }
+  ]
+}

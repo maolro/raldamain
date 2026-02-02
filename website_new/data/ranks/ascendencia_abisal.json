@@ -1,0 +1,122 @@
+{
+  "id": "ascendencia_abisal",
+  "title": "Ascendencia Abisal",
+  "category": "Ascendencias",
+  "image": "ascendencia_abisal.jpg",
+  "stats": ["Carisma", "Vigor", "Chi"],
+  "description": "Canalizas el poder de entidades olvidadas para transformar tu cuerpo y mente. Obtienes gran poder físico y mágico a cambio de tu propia cordura y humanidad.",
+  "fundamentals": [
+    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Naturaleza Caótica:</strong> Tus poderes provienen del abismo, lo que puede provocar locura o pérdida de control si se abusa de ellos."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": [
+        {
+          "name": "Tocado por la Locura",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Obtienes Resistencia a efectos Mentales y Necróticos. Las criaturas abisales te reconocen como aliado. Adquieres una locura permanente."
+        },
+        {
+          "name": "Furia Abisal",
+          "tags": ["Innata", "Mejora"],
+          "duration": "6 Rondas",
+          "desc": "Estado de trance. Ganas Ventaja en 2 estadísticas a elección y aumentas DEF en (Rango + 1). Al terminar, sufres daño a la cordura igual a (Chi actual - Rondas usadas). Si la cordura llega a 0, pierdes el control del personaje."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "passive": "Incrementa tu estadística de FUE y su limitador máximo en +1.",
+      "abilities": [
+        {
+          "name": "Mutación",
+          "tags": ["Innata", "Mejora"],
+          "cost": "1 chi o vigor",
+          "duration": "1 Ronda",
+          "desc": "Modificas tu cuerpo para ganar un beneficio: Resistencia elemental, Anfibio, Vuelo, Arma Natural (Daño 1d6, mejora con Rango), Toxina o Infusión mágica en ataques."
+        },
+        {
+          "name": "Poder Antinatural",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Medio",
+          "desc": "Obtienes vista a ciegas y detectas magia en radio medio. Aprendes 2 hechizos abisales de Rango I que puedes lanzar gastando Vigor."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": [
+        {
+          "name": "Abrazar la Locura",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Estando en Furia Abisal, puedes reducir tu Cordura en 2 para recuperar 1 punto de Chi o Vigor (Max 3 veces/ronda)."
+        },
+        {
+          "name": "Invocación Abisal",
+          "tags": ["Innata", "Invocación"],
+          "cost": "3 acciones, 2 chi",
+          "duration": "1 Hora",
+          "desc": "Invocas una criatura abisal de Nivel <= (Rango x 2). Max 4 criaturas simultáneas.",
+          "empower": "La criatura invocada recupera el 50% de su Vitalidad."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "passive": "Incrementa tu estadística de CON y su limitador en +1. Aprendes 2 hechizos abisales de Rango II.",
+      "abilities": [
+        {
+          "name": "Rasgo Monstruoso Superior",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Una Mutación se vuelve permanente y gratuita.",
+          "empower": "Cambias tu mutación permanente por otra diferente durante el combate (Coste: 2 vigor)."
+        },
+        {
+          "name": "Paso Abisal",
+          "tags": ["Innata", "Espacial"],
+          "cost": "1 acción, 2 chi/vigor",
+          "duration": "Instantánea",
+          "desc": "Te teletransportas a través del vacío. Puedes emergir en cualquier punto del campo o viajar a otros planos. Usable como Reacción para evitar un ataque (requiere Posición Defensiva)."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": [
+        {
+          "name": "Aura del Caos",
+          "tags": ["Innata", "Pasiva"],
+          "range": "Corto",
+          "desc": "Resistencia a efectos Arcanos y Divinos. Objetos mágicos y glifos cercanos tienen 50% de fallo.",
+          "empower": "Éxito automático en salvación mágica o contrarrestar hechizo (pagando su coste)."
+        },
+        {
+          "name": "Corrupción Absoluta",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Inmunidad a Miedo, Ilusiones y daño a Cordura. Resistencia a Aflicciones y Maldiciones. Abisales menores te obedecen. Adquieres otra locura permanente."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Ascendido",
+      "passive": "Incrementa tu estadística de DES y su limitador en +1. Aprendes 2 hechizos abisales de Rango III.",
+      "abilities": [
+        {
+          "name": "Transformación Abisal",
+          "tags": ["Innata", "Transformación"],
+          "duration": "6 Rondas",
+          "desc": "Te conviertes en avatar del caos (+40 Vitalidad Temporal). Stats físicas suben a 12, DEF a 20. Inmunidad a Mental/Miedo/Aflicción. Tamaño +1. Armas naturales 1d10. Conoces todas las técnicas marciales (Rango III gratis). Hechizos gratis 1ª vez/ronda."
+        }
+      ]
+    }
+  ]
+}
