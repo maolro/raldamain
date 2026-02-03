@@ -5,8 +5,8 @@
 
 # CRITICAL: Serve static assets as-is (no redirects)
 # These must be FIRST to prevent other rules from catching them
-/data/* 200
-/assets/* 200
+/data/* /data/:splat 200
+/assets/* /assets/:splat 200
 
 # Detail pages (REWRITE - URL stays visible)
 # Browser shows: /rango/magia_fuego
