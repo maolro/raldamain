@@ -17,4 +17,4 @@
 
 # Mundo sub-pages (REWRITE)
 /mundo/categoria/* /templates/view-mundo-categoria 200
-/mundo/articulo/* /templates/view-mundo-articuloml 200
+/mundo/articulo/* /templates/view-mundo-articulo 200
