@@ -41,6 +41,11 @@
           "crit": "Afectados sufren quemadura leve.",
           "desc": "Inflige 2d6 + CAR daño Fuego a todos los objetivos en el área afectada. Prende objetos y elimina efectos de Hielo, Agua o Naturaleza.",
           "empower": "Aumenta tamaño un paso y recibe un dado de daño adicional (Max 2 veces)."
+        },
+        {
+          "name": "Fuego Interno",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Obtienes Resistencia al daño Fuego y Frío además de Imnunidad al calor y frío extremo."
         }
       ]
     },
@@ -66,8 +71,8 @@
           "range": "Medio",
           "area": "Radio pequeño",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Explosión (2d6 + CAR daño Fuego). Cargar con acciones extra aumenta daño (+1d6) y tamaño (+1 paso) por cada 2 acciones.",
-          "empower": "Lanza una bola adicional (misma carga) a otro objetivo."
+          "desc": "Provoca 2d6 + CAR daño Fuego al impactar. Se puede cargar con acciones extra aumentar daño por 1d6) y tamaño por un paso. No puede cargarse más de 2 veces.",
+          "empower": "Lanza una bola adicional con la misma carga a otro objetivo."
         },
         {
           "name": "Látigo Flamígero",
