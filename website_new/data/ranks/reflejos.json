@@ -3,10 +3,10 @@
   "title": "Reflejos",
   "category": "Combate",
   "image": "reflejos.jpg",
-  "stats": ["Destreza", "Vigor"],
+  "stats": ["Destreza", "Chi"],
   "description": "Posees una velocidad de reacción sobrenatural. Esquivas ataques invisibles, reaccionas antes que nadie y te mueves con una agilidad imposible de rastrear.",
   "fundamentals": [
-    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
     "<strong>Gran Agilidad:</strong> Sumas tu Rango a todos los tiros de Esquiva.",
     "<strong>Absolutamente innato:</strong> Habilidades físicas naturales que no pueden ser suprimidas ni contrarrestadas."
   ],
@@ -41,7 +41,7 @@
         {
           "name": "Evasión",
           "tags": ["Innata", "Defensiva"],
-          "cost": "1 vigor",
+          "cost": "1 chi",
           "desc": "Al fallar una Esquiva: Reduces el daño a la mitad, evitas efectos de estado y desenganchas (acción bonus)."
         }
       ]
@@ -77,7 +77,7 @@
         {
           "name": "Punto Ciego",
           "tags": ["Innata", "Reacción"],
-          "cost": "2 vigor",
+          "cost": "2 chi",
           "desc": "Puedes usar Esquiva para defenderte de Tiros de Salvación que te apunten explícitamente (ej. hechizos mentales)."
         }
       ]
