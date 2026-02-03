@@ -2,13 +2,6 @@
 # Format: /from /to [status]
 # Status 200 = rewrite (invisible), 301/302 = redirect (visible)
 
-# Main pages (clean URLs without .html)
-/reglas /reglas.html 200
-/rangos /rangos.html 200
-/criaturas /criaturas.html 200
-/equipos /equipos.html 200
-/mundo /mundo.html 200
-
 # Detail pages (dynamic)
 /rango/* /_rango.html 200
 /criatura/* /_criatura.html 200

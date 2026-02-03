@@ -17,7 +17,7 @@ function loadNavbar() {
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="/reglas.html">Reglas Principales</a></li>
+            <li><a href="/reglas">Reglas Principales</a></li>
             <li><a href="/rangos">Rangos</a></li>
             <li><a href="/criaturas">Criaturas</a></li>
             <li><a href="/equipos">Equipamiento</a></li>
