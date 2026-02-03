@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos | Raldamain</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./assets/js/components.js"></script>
+
+    <style>
+        /* Specific Styles for Filter Buttons */
+        .filter-container {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid var(--accent-gold);
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 4px;
+            background-color: var(--secondary-black);
+            color: var(--text-main);
+        }
+
+        .filter-btn:hover {
+            border-color: #fff;
+        }
+
+        .filter-btn.active {
+            background-color: var(--accent-gold);
+            color: var(--primary-black);
+        }
+
+        .rarity-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        .rarity-común { background-color: #808080; color: #fff; }
+        .rarity-poco-común { background-color: #1eff00; color: #000; }
+        .rarity-rara { background-color: #0070dd; color: #fff; }
+        .rarity-muy-rara { background-color: #a335ee; color: #fff; }
+        .rarity-legendaria { background-color: #ff8000; color: #fff; }
+
+        .search-sort-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .search-box, .sort-box {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .search-box input, .sort-box select {
+            width: 100%;
+            padding: 10px;
+            background: var(--secondary-black);
+            border: 1px solid var(--accent-gold);
+            color: var(--text-main);
+            border-radius: 4px;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/images/world_map.jpg'); background-size: cover; background-position: center;
+    border-bottom: 2px solid var(--accent-gold);">
+        <div class="hero-content">
+            <h1>Equipamiento</h1>
+            <p><b>Descubre armas, armaduras y objetos mágicos para equipar a tu personaje.</b></p>
+        </div>
+    </header>
+
+    <section class="container">
+
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterEquipment('all', this)">Todos</button>
+            <button class="filter-btn" onclick="filterEquipment('Arma', this)">Armas</button>
+            <button class="filter-btn" onclick="filterEquipment('Armadura', this)">Armaduras</button>
+            <button class="filter-btn" onclick="filterEquipment('Arma Mágica', this)">Armas Mágicas</button>
+            <button class="filter-btn" onclick="filterEquipment('Armadura Mágica', this)">Armaduras Mágicas</button>
+            <button class="filter-btn" onclick="filterEquipment('Objeto Mágico', this)">Objetos Mágicos</button>
+        </div>
+
+        <div class="search-sort-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar equipo..." onkeyup="applyFilters()">
+            </div>
+            <div class="sort-box">
+                <select id="sort-select" onchange="applyFilters()">
+                    <option value="name-asc">Nombre (A-Z)</option>
+                    <option value="name-desc">Nombre (Z-A)</option>
+                    <option value="rarity-asc">Rareza (Ascendente)</option>
+                    <option value="rarity-desc">Rareza (Descendente)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="card-grid" id="equipment-grid">
+            <p style="color:white;">Cargando equipos...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raldamain Studios.</p>
+    </footer>
+
+    <script>
+        let allEquipmentData = [];
+        let currentFilter = 'all';
+
+        const rarityOrder = {
+            'Común': 1,
+            'Poco Común': 2,
+            'Rara': 3,
+            'Muy Rara': 4,
+            'Legendaria': 5
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('./data/equipment_list.json')
+                .then(response => response.json())
+                .then(equipment => {
+                    allEquipmentData = equipment.sort((a, b) => a.name.localeCompare(b.name));
+                    renderGrid(allEquipmentData);
+                })
+                .catch(error => console.error('Error loading equipment:', error));
+        });
+
+        function renderGrid(equipmentToDisplay) {
+            const grid = document.getElementById('equipment-grid');
+            grid.innerHTML = '';
+
+            if(equipmentToDisplay.length === 0) {
+                grid.innerHTML = '<p style="color: #888; font-style: italic;">No se encontraron resultados.</p>';
+                return;
+            }
+
+            equipmentToDisplay.forEach(item => {
+                const rarityClass = 'rarity-' + item.rarity.toLowerCase().replace(/ /g, '-');
+                const cardHTML = `
+                    <article class="card">
+                        <div class="card-image" style="background-image: url('/assets/images/equipment/${item.image}'); background-size: cover; height: 150px;"></div>
+                        <div class="card-content">
+                            <span style="color: #888; font-size: 0.8rem; text-transform: uppercase;">${item.subtype}</span>
+                            <h3>${item.name}</h3>
+                            <span class="rarity-badge ${rarityClass}">${item.rarity}</span>
+                            <p>${item.description}</p>
+                            <p style="color: var(--accent-gold); font-weight: bold; margin-top: 10px;">Precio: ${item.price}</p>
+
+                            <a href="/equipo/${item.id}" class="read-more">Ver Detalles &rarr;</a>
+                        </div>
+                    </article>
+                `;
+                grid.innerHTML += cardHTML;
+            });
+        }
+
+        function filterEquipment(type, btnElement) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+            currentFilter = type;
+            applyFilters();
+        }
+
+        function applyFilters() {
+            let filtered = allEquipmentData;
+
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(item => item.type === currentFilter);
+            }
+
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            if (searchTerm) {
+                filtered = filtered.filter(item =>
+                    item.name.toLowerCase().includes(searchTerm) ||
+                    item.description.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            const sortValue = document.getElementById('sort-select').value;
+            filtered = sortEquipment(filtered, sortValue);
+
+            renderGrid(filtered);
+        }
+
+        function sortEquipment(equipment, sortType) {
+            const sorted = [...equipment];
+
+            switch(sortType) {
+                case 'name-asc':
+                    return sorted.sort((a, b) => a.name.localeCompare(b.name));
+                case 'name-desc':
+                    return sorted.sort((a, b) => b.name.localeCompare(a.name));
+                case 'rarity-asc':
+                    return sorted.sort((a, b) => rarityOrder[a.rarity] - rarityOrder[b.rarity]);
+                case 'rarity-desc':
+                    return sorted.sort((a, b) => rarityOrder[b.rarity] - rarityOrder[a.rarity]);
+                default:
+                    return sorted;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -31,6 +31,10 @@ module.exports = {
       else if (req.url.startsWith('/mundo/articulo/') && !req.url.includes('.')) {
         req.url = '/mundo_articulo.html';
       }
+      // 8. Handle "/criatura/esqueleto" -> serve "criatura.html"
+      else if (req.url.startsWith('/equipo/') && !req.url.includes('.')) {
+        req.url = '/equipo.html';
+      }
       next();
     }
   ]

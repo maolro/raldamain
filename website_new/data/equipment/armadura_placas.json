@@ -1,0 +1,13 @@
+{
+  "id": "armadura_placas",
+  "name": "Armadura de Placas",
+  "type": "Armadura",
+  "subtype": "Armadura Pesada",
+  "rarity": "Común",
+  "image": "armadura_placas.jpg",
+  "description": "La armadura más pesada y protectora disponible, compuesta por placas de acero forjadas con precisión que cubren todo el cuerpo. Diseñada para los guerreros más fuertes, convierte al portador en una fortaleza andante prácticamente impenetrable.",
+  "defense": "8",
+  "price": "2 CR",
+  "requirements": "Mínimo 6 en Fuerza para usarla sin penalizaciones.",
+  "penalties": "Si no tienes al menos 6 en Fuerza, sufres -6 a todas las tiradas de Destreza y Desventaja en tus tiros de Magia."
+}

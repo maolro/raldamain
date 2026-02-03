@@ -1,0 +1,36 @@
+{
+  "id": "armadura_dragon",
+  "name": "Armadura de Escamas de Dragón",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Media",
+  "rarity": "Muy Rara",
+  "image": "armadura_dragon.jpg",
+  "description": "Una armadura excepcional forjada con las escamas de un dragón rojo antiguo. Las escamas brillan con un resplandor carmesí y emiten un calor constante pero no incómodo.",
+  "defense": "14 + modificador de Destreza (máx 2)",
+  "weight": "20 kg",
+  "price": "8,000 po",
+  "defenseBonus": "+1",
+  "properties": [
+    "Escamas de Dragón: Forjada con escamas auténticas de dragón rojo",
+    "Resistencia al Fuego: El portador obtiene resistencia al daño por fuego",
+    "Inmunidad al miedo dragónico: Inmune al efecto de Presencia Aterradora de dragones",
+    "Aura de Calor: Criaturas hostiles que te toquen sufren 1d4 de daño por fuego",
+    "Adaptable: La armadura se ajusta automáticamente al tamaño del portador"
+  ],
+  "abilities": [
+    {
+      "name": "Aliento Dragónico",
+      "cost": "1 Chi",
+      "uses": "1/día",
+      "description": "Puedes exhalar fuego en un cono de 9 metros. Cada criatura en esa área debe hacer una tirada de salvación de Destreza CD 16, sufriendo 6d6 de daño por fuego si falla, o la mitad si tiene éxito."
+    },
+    {
+      "name": "Escamas Endurecidas",
+      "cost": "Reacción",
+      "uses": "3/día",
+      "description": "Cuando sufres un golpe crítico, puedes usar tu reacción para convertirlo en un golpe normal. Las escamas de dragón absorben el impacto adicional."
+    }
+  ],
+  "requirements": "Sintonización. Mínimo 15 de Fuerza. Competencia con armaduras medias.",
+  "lore": "Esta armadura fue creada por el legendario artesano dracónico Thalmor Escamaforte después de que derrotara al dragón rojo Infernus en combate singular. En lugar de tomar su tesoro, Thalmor pidió permiso para usar algunas de sus escamas, y el dragón, impresionado por la valentía del artesano, accedió. Las escamas fueron otorgadas voluntariamente, lo que se dice que les confiere mayor poder que las tomadas de un dragón muerto. Solo tres armaduras de este tipo existen en todo Raldamain, y esta es la única que ha sobrevivido intacta a través de los siglos."
+}

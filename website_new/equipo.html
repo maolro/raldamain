@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Raldamain</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/equipment_loader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .equipment-hero {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            border-bottom: 3px solid var(--accent-gold);
+        }
+
+        .equipment-hero h1 {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .equipment-meta {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .meta-badge {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--accent-gold);
+            padding: 6px 16px;
+            color: var(--text-main);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        .rarity-badge {
+            padding: 8px 15px;
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .rarity-común { background-color: #808080; color: #fff; }
+        .rarity-poco-común { background-color: #1eff00; color: #000; }
+        .rarity-rara { background-color: #0070dd; color: #fff; }
+        .rarity-muy-rara { background-color: #a335ee; color: #fff; }
+        .rarity-legendaria { background-color: #ff8000; color: #fff; }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 0.5rem;
+        }
+
+        .stat-block {
+            background: #151515;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--accent-gold);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-weight: bold;
+            color: var(--accent-gold);
+        }
+
+        .stat-value {
+            color: var(--text-main);
+        }
+
+        .property-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .property-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .property-list li:before {
+            content: "⚔";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+        }
+
+        .ability-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border: 2px solid var(--accent-gold);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ability-title {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ability-desc {
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .lore-section {
+            background: #0f0f0f;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-gold);
+            font-style: italic;
+            color: #ccc;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="equipment-hero" id="hero-section">
+        <div>
+            <h1 id="equipment-title">Cargando...</h1>
+            <div class="equipment-meta" id="equipment-meta"></div>
+        </div>
+    </header>
+
+    <section class="container">
+
+        <div class="stat-block">
+            <h2 class="section-title">Estadísticas</h2>
+            <div id="stats-container"></div>
+        </div>
+
+        <div id="properties-container"></div>
+
+        <div id="abilities-container"></div>
+
+        <div id="requirements-container"></div>
+
+        <div style="background: #151515; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h2 class="section-title">Descripción</h2>
+            <p id="equipment-description" style="color: #ccc; line-height: 1.8;"></p>
+        </div>
+
+        <div id="lore-container"></div>
+
+    </section>
+
+</body>
+</html>

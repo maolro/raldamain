@@ -1,0 +1,11 @@
+{
+  "id": "armadura_cuero",
+  "name": "Armadura de Cuero",
+  "type": "Armadura",
+  "subtype": "Armadura Ligera",
+  "rarity": "Común",
+  "image": "armadura_cuero.jpg",
+  "description": "Protección básica hecha de cuero endurecido mediante un proceso de hervido. Ofrece un buen equilibrio entre protección y movilidad, ideal para exploradores y aventureros que necesitan mantenerse ágiles.",
+  "defense": "2",
+  "price": "0 CR"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "espada_larga",
+  "name": "Espada Larga",
+  "type": "Arma",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "espada_larga.jpg",
+  "description": "Una espada versátil de hoja recta que puede ser empuñada con una o dos manos. Favorita entre caballeros y guerreros experimentados por su equilibrio perfecto entre alcance y maniobrabilidad.",
+  "damage": "1d8 cortante (una mano) / 1d10 cortante (dos manos)",
+  "damageType": "Cortante",
+  "weight": "3 kg",
+  "price": "50 po",
+  "properties": [
+    "Versátil: Puede usarse con una o dos manos",
+    "Equilibrada: No sufre penalizaciones por combate prolongado",
+    "Rango de amenaza: 1.5 metros"
+  ],
+  "requirements": "Competencia con armas marciales",
+  "lore": "La espada larga ha sido el arma predilecta de los guerreros de Raldamain durante siglos. Su diseño simple pero efectivo ha resistido la prueba del tiempo, y muchos héroes legendarios han portado espadas largas en sus aventuras. Se dice que el primer rey de Valdoria unificó el reino empuñando una espada larga forjada por los enanos de las Montañas Plateadas."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "anillo_proteccion",
+  "name": "Anillo de Protección",
+  "type": "Objeto Mágico",
+  "subtype": "Anillo",
+  "rarity": "Rara",
+  "image": "anillo_proteccion.jpg",
+  "description": "Un anillo de plata finamente labrado con runas de protección grabadas en su superficie. Emite un tenue campo de fuerza invisible que desvía ataques y efectos mágicos dañinos.",
+  "weight": "0.01 kg",
+  "price": "2,000 po",
+  "defenseBonus": "+1",
+  "properties": [
+    "Escudo Arcano: +1 a la Defensa",
+    "Salvaciones Mejoradas: +1 a todas las tiradas de salvación",
+    "Discreto: No es visible que estás protegido mágicamente",
+    "Permanente: El efecto es constante mientras lleves el anillo"
+  ],
+  "abilities": [
+    {
+      "name": "Protección Constante",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Obtienes +1 de bonus a tu Defensa y a todas tus tiradas de salvación mientras lleves este anillo."
+    }
+  ],
+  "requirements": "Sintonización",
+  "lore": "Los Anillos de Protección son creados por magos especializados en magia protectora, y cada uno requiere semanas de trabajo meticuloso para encantar adecuadamente. Las runas deben ser grabadas con precisión perfecta, o el anillo puede fallar catastróficamente. Se dice que el Archimago Celestino creó los primeros Anillos de Protección como regalos para sus alumnos más prometedores, y que muchos de esos anillos originales todavía circulan por Raldamain, pasando de maestro a aprendiz a través de las generaciones."
+}

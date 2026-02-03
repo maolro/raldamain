@@ -1,0 +1,13 @@
+{
+  "id": "cota_mallas",
+  "name": "Cota de Mallas",
+  "type": "Armadura",
+  "subtype": "Armadura Media",
+  "rarity": "Común",
+  "image": "cota_mallas.jpg",
+  "description": "Una armadura fabricada con anillos de acero entrelazados que forman una malla protectora flexible. Ofrece una protección sólida contra cortes y golpes, aunque su peso considerable puede limitar la agilidad de quienes no están entrenados para llevarla.",
+  "defense": "6",
+  "price": "1 CR",
+  "requirements": "Mínimo 4 en Fuerza para usarla sin penalizaciones.",
+  "penalties": "Si no tienes al menos 4 en Fuerza, sufres -4 a todas las tiradas de Destreza y Desventaja en tiros relacionados de Magia."
+}

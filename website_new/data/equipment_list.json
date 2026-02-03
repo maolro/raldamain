@@ -1,0 +1,202 @@
+[
+  {
+    "id": "espada_larga",
+    "name": "Espada Larga",
+    "type": "Arma",
+    "subtype": "Arma Marcial Cuerpo a Cuerpo",
+    "rarity": "Común",
+    "image": "espada_larga.jpg",
+    "description": "Una espada versátil de hoja recta, ideal para combatientes expertos.",
+    "price": "1 CR"
+  },
+  {
+    "id": "arco_largo",
+    "name": "Arco Largo",
+    "type": "Arma",
+    "subtype": "Arma Marcial a Distancia",
+    "rarity": "Común",
+    "image": "arco_largo.jpg",
+    "description": "Un arco alto y poderoso que requiere gran fuerza para tensarlo.",
+    "price": "1 CR"
+  },
+  {
+    "id": "daga",
+    "name": "Daga",
+    "type": "Arma",
+    "subtype": "Arma Simple Cuerpo a Cuerpo",
+    "rarity": "Común",
+    "image": "daga.jpg",
+    "description": "Una hoja corta y afilada, perfecta para sigilo y ataques rápidos.",
+    "price": "0 CR"
+  },
+  {
+    "id": "martillo_guerra",
+    "name": "Martillo de Guerra",
+    "type": "Arma",
+    "subtype": "Arma Marcial Cuerpo a Cuerpo",
+    "rarity": "Común",
+    "image": "martillo_guerra.jpg",
+    "description": "Un martillo pesado diseñado para demoler armaduras y estructuras.",
+    "price": "1 CR"
+  },
+  {
+    "id": "armadura_cuero",
+    "name": "Armadura de Cuero",
+    "type": "Armadura",
+    "subtype": "Armadura Ligera",
+    "rarity": "Común",
+    "image": "armadura_cuero.jpg",
+    "description": "Protección básica hecha de cuero endurecido, ideal para exploradores.",
+    "price": "0 CR"
+  },
+  {
+    "id": "cota_mallas",
+    "name": "Cota de Mallas",
+    "type": "Armadura",
+    "subtype": "Armadura Media",
+    "rarity": "Común",
+    "image": "cota_mallas.jpg",
+    "description": "Anillos metálicos entrelazados que ofrecen protección sólida.",
+    "price": "1 CR"
+  },
+  {
+    "id": "armadura_placas",
+    "name": "Armadura de Placas",
+    "type": "Armadura",
+    "subtype": "Armadura Pesada",
+    "rarity": "Común",
+    "image": "armadura_placas.jpg",
+    "description": "La mejor protección disponible, placas de acero completas.",
+    "price": "2 CR"
+  },
+  {
+    "id": "escudo",
+    "name": "Escudo",
+    "type": "Armadura",
+    "subtype": "Escudo",
+    "rarity": "Común",
+    "image": "escudo.jpg",
+    "description": "Un escudo de madera reforzado con metal para desviar ataques.",
+    "price": "0 CR"
+  },
+  {
+    "id": "espada_llamas",
+    "name": "Espada de Llamas",
+    "type": "Arma Mágica",
+    "subtype": "Arma Marcial Cuerpo a Cuerpo",
+    "rarity": "Rara",
+    "image": "espada_llamas.jpg",
+    "description": "Una espada envuelta en llamas eternas que nunca se apagan.",
+    "price": "3 CR"
+  },
+  {
+    "id": "arco_cazador",
+    "name": "Arco del Cazador Certero",
+    "type": "Arma Mágica",
+    "subtype": "Arma Marcial a Distancia",
+    "rarity": "Poco Común",
+    "image": "arco_cazador.jpg",
+    "description": "Este arco nunca falla su objetivo cuando se usa contra bestias.",
+    "price": "850 po"
+  },
+  {
+    "id": "daga_sombras",
+    "name": "Daga de las Sombras",
+    "type": "Arma Mágica",
+    "subtype": "Arma Simple Cuerpo a Cuerpo",
+    "rarity": "Rara",
+    "image": "daga_sombras.jpg",
+    "description": "Una daga que se vuelve invisible en la oscuridad.",
+    "price": "2 CR"
+  },
+  {
+    "id": "armadura_dragon",
+    "name": "Armadura de Escamas de Dragón",
+    "type": "Armadura Mágica",
+    "subtype": "Armadura Media",
+    "rarity": "Muy Rara",
+    "image": "armadura_dragon.jpg",
+    "description": "Forjada con escamas de dragón, otorga resistencia al fuego.",
+    "price": "4 CR"
+  },
+  {
+    "id": "armadura_mithril",
+    "name": "Armadura de Mithril",
+    "type": "Armadura Mágica",
+    "subtype": "Armadura Media",
+    "rarity": "Poco Común",
+    "image": "armadura_mithril.jpg",
+    "description": "Ligera como una pluma pero fuerte como el acero.",
+    "price": "3 CR"
+  },
+  {
+    "id": "capa_invisibilidad",
+    "name": "Capa de Invisibilidad",
+    "type": "Objeto Mágico",
+    "subtype": "Maravilloso",
+    "rarity": "Legendaria",
+    "image": "capa_invisibilidad.jpg",
+    "description": "Una capa que te vuelve completamente invisible mientras la uses.",
+    "price": "50,000 po"
+  },
+  {
+    "id": "anillo_proteccion",
+    "name": "Anillo de Protección",
+    "type": "Objeto Mágico",
+    "subtype": "Anillo",
+    "rarity": "Rara",
+    "image": "anillo_proteccion.jpg",
+    "description": "Un anillo que forma un escudo mágico alrededor del portador.",
+    "price": "2,000 po"
+  },
+  {
+    "id": "pocion_curacion",
+    "name": "Poción de Curación",
+    "type": "Objeto Mágico",
+    "subtype": "Poción",
+    "rarity": "Común",
+    "image": "pocion_curacion.jpg",
+    "description": "Un líquido rojo que restaura la salud al beberlo.",
+    "price": "1 CR"
+  },
+  {
+    "id": "baculo_poder",
+    "name": "Báculo del Poder",
+    "type": "Objeto Mágico",
+    "subtype": "Báculo",
+    "rarity": "Muy Rara",
+    "image": "baculo_poder.jpg",
+    "description": "Un báculo que amplifica el poder mágico de su portador.",
+    "price": "12,000 po"
+  },
+  {
+    "id": "botas_velocidad",
+    "name": "Botas de la Velocidad",
+    "type": "Objeto Mágico",
+    "subtype": "Maravilloso",
+    "rarity": "Rara",
+    "image": "botas_velocidad.jpg",
+    "description": "Estas botas permiten al usuario moverse a velocidades increíbles.",
+    "price": "4,000 po"
+  },
+  {
+    "id": "vara_resurrecion",
+    "name": "Vara de Resurrección",
+    "type": "Objeto Mágico",
+    "subtype": "Vara",
+    "rarity": "Legendaria",
+    "image": "vara_resurrecion.jpg",
+    "description": "Una poderosa vara capaz de devolver la vida a los muertos.",
+    "price": "75,000 po"
+  },
+  {
+    "id": "amuleto_salud",
+    "name": "Amuleto de Salud",
+    "type": "Objeto Mágico",
+    "subtype": "Maravilloso",
+    "rarity": "Rara",
+    "image": "amuleto_salud.jpg",
+    "description": "Un amuleto que mejora la constitución de quien lo porta.",
+    "price": "3,200 po"
+  }
+]

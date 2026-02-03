@@ -1,0 +1,39 @@
+{
+  "id": "capa_invisibilidad",
+  "name": "Capa de Invisibilidad",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "capa_invisibilidad.jpg",
+  "description": "Una capa etérea tejida con hilos de sombra pura y esencia de invisibilidad. Su tejido parece cambiar entre la existencia y la no-existencia, como si estuviera a medio camino entre dos planos.",
+  "weight": "0.5 kg",
+  "price": "50,000 po",
+  "properties": [
+    "Invisibilidad Verdadera: Te vuelve completamente invisible, incluso ante detección mágica",
+    "Silencio Fantasmal: Tus movimientos no producen sonido mientras estés invisible",
+    "Sin Rastro: No dejas huellas ni olor mientras usas la capa",
+    "Etérea: La capa no puede ser dañada por medios normales"
+  ],
+  "abilities": [
+    {
+      "name": "Velo de Sombras",
+      "cost": "1 acción",
+      "uses": "Ilimitado",
+      "description": "Puedes ponerte la capucha de la capa para volverte invisible. Permaneces invisible hasta que ataques, lances un hechizo, o te quites la capucha. La invisibilidad no se rompe por movimiento o acciones que no sean agresivas."
+    },
+    {
+      "name": "Caminar entre Sombras",
+      "cost": "1 acción, 2 Chi",
+      "uses": "3/día",
+      "description": "Mientras estés invisible, puedes teletransportarte hasta 18 metros a cualquier ubicación que puedas ver o que esté en sombras. Esta teletransportación es silenciosa y no requiere línea de efecto clara."
+    },
+    {
+      "name": "Extensión de Sombras",
+      "cost": "1 acción, 3 Chi",
+      "uses": "1/día",
+      "description": "Puedes extender la invisibilidad a hasta 4 criaturas que te toquen. Todas deben permanecer a 3 metros de ti para mantener la invisibilidad. Dura hasta 10 minutos o hasta que cualquiera de los afectados ataque."
+    }
+  ],
+  "requirements": "Sintonización por un usuario de magia o un pícaro de nivel 10 o superior.",
+  "lore": "Las Capas de Invisibilidad son artefactos extremadamente raros que se dice fueron tejidas por los Señores de las Sombras en los primeros días de Raldamain. Solo se conoce la existencia de cinco capas auténticas, y cada una tiene una historia sangrienta de traiciones y asesinatos. Esta capa en particular perteneció a Whisper, el asesino más famoso de la historia, quien nunca fue capturado. Desapareció misteriosamente hace un siglo, y la capa fue encontrada años después en las ruinas de la Torre Negra. Algunos rumoran que Whisper finalmente se perdió entre las sombras, convirtiéndose en una de ellas para siempre."
+}

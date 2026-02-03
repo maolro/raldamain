@@ -1,0 +1,16 @@
+{
+  "id": "daga",
+  "name": "Daga",
+  "type": "Arma",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "daga.jpg",
+  "description": "Una hoja corta y afilada con un mango envuelto en cuero. Perfecta para ataques rápidos, combate sigiloso, y como herramienta de utilidad general.",
+  "damage": "1d6 + FUE/DES",
+  "damageType": "Perforante",
+  "price": "0 CR",
+  "range": "Cuerpo a cuerpo o arrojadiza (distancia media)",
+  "properties": [
+    "<b>Versátil</b>: Puedes emplear tu estadística de Fuerza o Destreza para tiros de ataque con ella"
+  ]
+}

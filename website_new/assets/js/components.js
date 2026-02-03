@@ -20,6 +20,7 @@ function loadNavbar() {
             <li><a href="/reglas.html">Reglas Principales</a></li>
             <li><a href="/rangos.html">Rangos</a></li>
             <li><a href="/criaturas.html">Criaturas</a></li>
+            <li><a href="/equipos.html">Equipamiento</a></li>
             <li><a href="/mundo">El Mundo</a></li>
             <li><a href="#" class="btn-builder">Creador de Personajes</a></li>
         </ul>

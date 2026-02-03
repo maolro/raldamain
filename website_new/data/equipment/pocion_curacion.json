@@ -1,0 +1,33 @@
+{
+  "id": "pocion_curacion",
+  "name": "Poción de Curación",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Común",
+  "image": "pocion_curacion.jpg",
+  "description": "Un líquido carmesí brillante contenido en un pequeño frasco de cristal. Emite un suave resplandor cálido y huele a hierbas curativas frescas.",
+  "weight": "0.2 kg",
+  "price": "50 po",
+  "properties": [
+    "Consumible: Se destruye al usarse",
+    "Acción Bonus: Puede beberse como acción bonus",
+    "Estable: No se deteriora con el tiempo",
+    "Fácil de Transportar: Pequeña y ligera"
+  ],
+  "abilities": [
+    {
+      "name": "Curación Instantánea",
+      "cost": "1 acción bonus",
+      "uses": "Una vez",
+      "description": "Al beber esta poción, recuperas 2d4+2 puntos de vitalidad inmediatamente. Los efectos son instantáneos y la poción se consume completamente."
+    },
+    {
+      "name": "Administrar a Otro",
+      "cost": "1 acción completa",
+      "uses": "Una vez",
+      "description": "Puedes usar una acción completa para dar de beber la poción a una criatura adyacente. Esa criatura recupera 2d4+2 puntos de vitalidad. Esto puede usarse incluso en criaturas inconscientes."
+    }
+  ],
+  "requirements": "Ninguno",
+  "lore": "Las pociones de curación son uno de los objetos mágicos más comunes y útiles en todo Raldamain. Creadas originalmente por los druidas de la Arboleda Esmeralda, la receta ahora es conocida por alquimistas y herboristas en todo el reino. Se fabrican infusionando esencia de vida en una mezcla de hierbas curativas raras, incluyendo raíz de sangre, hojas de sauce plateado y pétalos de rosa de fuego. Cada alquimista tiene su propia receta secreta, pero todas las pociones de curación comparten el mismo color rojo característico y sus propiedades restauradoras. Son tan comunes que incluso los aventureros novatos suelen llevar al menos una en su mochila."
+}
