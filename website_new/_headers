@@ -1,0 +1,10 @@
+# Headers para asegurar que los archivos JSON se sirvan correctamente
+/data/*
+  Content-Type: application/json
+  X-Content-Type-Options: nosniff
+
+# Headers de seguridad generales
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

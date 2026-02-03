@@ -2,11 +2,18 @@
 # Format: /from /to [status]
 # Status 200 = rewrite (invisible), 301/302 = redirect (visible)
 
+# CRITICAL: Serve data files as-is (no redirects)
+# This must be FIRST to prevent other rules from catching /data/*
+/data/* /data/:splat 200
+
+# Assets should also serve as-is
+/assets/* /assets/:splat 200
+
 # Detail pages (dynamic)
-/rango/* /_rango.html 200
-/criatura/* /_criatura.html 200
-/equipo/* /_equipo.html 200
+/rango/:id /_rango.html 200
+/criatura/:id /_criatura.html 200
+/equipo/:id /_equipo.html 200
 
 # Mundo sub-pages
-/mundo/categoria/* /_mundo_categoria.html 200
-/mundo/articulo/* /_mundo_articulo.html 200
+/mundo/categoria/:id /_mundo_categoria.html 200
+/mundo/articulo/:id /_mundo_articulo.html 200
