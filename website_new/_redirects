@@ -10,11 +10,11 @@
 
 # Detail pages (REWRITE - URL stays visible)
 # Browser shows: /rango/magia_fuego
-# Server serves: /_rango.html
-/rango/* /_rango 200
-/criatura/* /_criatura 200
-/equipo/* /_equipo 200
+# Server serves: /templates/view-rango.html
+/rango/* /templates/view-rango.html 200
+/criatura/* /templates/view-criatura.html 200
+/equipo/* /templates/view-equipo.html 200
 
 # Mundo sub-pages (REWRITE)
-/mundo/categoria/* /_mundo_categoria 200
-/mundo/articulo/* /_mundo_articulo 200
+/mundo/categoria/* /templates/view-mundo-categoria.html 200
+/mundo/articulo/* /templates/view-mundo-articulo.html 200
