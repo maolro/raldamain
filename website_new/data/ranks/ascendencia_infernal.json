@@ -1,0 +1,170 @@
+{
+  "id": "ascendencia_infernal",
+  "title": "Ascendencia Infernal",
+  "category": "Ascendencia",
+  "image": "ascendencia_infernal.jpg",
+  "stats": [
+    "Inteligencia",
+    "Carisma",
+    "Vigor",
+    "Chi"
+  ],
+  "description": "Una voz del más allá clama tu nombre, prometiéndote poder y alterando tu cuerpo para asemejarlo al de los demonios. Rechazas tu humanidad para apostar con los regentes del infierno, obteniendo resistencias, poderes mágicos, carisma sobrenatural y la capacidad de invocar huestes infernales o transformarte en un Señor de la Sima.",
+  "fundamentals": [
+    "<strong>Poder innato:</strong> Tu rango mejora las reservas de vigor y chi en +Rango. Se acumula con otras habilidades.",
+    "<strong>Estadística principal:</strong> Inteligencia o Carisma + Rango.",
+    "<strong>Hechizos Innatos:</strong> Los hechizos aprendidos son Innatos y pueden usar tu modificador de Ascendencia Infernal y estadística (INT/CAR) para daño y efectos."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Resistencias Infernales",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "El poder del infierno muta tu cuerpo. Recibes Resistencia a efectos Mentales, Aflicciones, Fuego y Frío. Criaturas infernales son amistosas."
+        },
+        {
+          "name": "Pacto del Diablo",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Pacto con fuerzas infernales. Aprendes dos hechizos de Rango I (Arcana, Elemental u Ocultismo) relacionados con tu patrón. Usan vigor en lugar de chi y bonificador CAR + Rango."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "passive": "Aumenta tu estadística de CAR y su limitador por 1.",
+      "abilities": [
+        {
+          "name": "Arma Profana",
+          "tags": [
+            "Innata",
+            "Mejora",
+            "Maldición"
+          ],
+          "cost": "1 vigor o chi",
+          "duration": "Una ronda",
+          "desc": "Siguiente impacto causa herida infernal: reduce Vitalidad y PV máximos igual al daño y aplica herida permanente leve. Curable solo con Magia de Vida potente.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Visión Infernal",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Ves en oscuridad mágica/no-mágica y detectas seres inteligentes a distancia media. Hechizos Mentales tratan resistencias enemigas como un paso inferior."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Aprendes dos hechizos de Rango II o menos relacionados con tu patrón (puedes usar vigor).",
+      "abilities": [
+        {
+          "name": "Alas Demoníacas",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Manifiestas alas (murciélago). Vuelo 2 y Ventaja en Esquiva. Acción bonus para aparecer/desaparecer. Se desvanecen 1 ronda si pierdes concentración.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Siervos del Contrato",
+          "tags": [
+            "Innata",
+            "Invocación"
+          ],
+          "cost": "3 acciones, 2 chi o vigor",
+          "duration": "Una hora",
+          "desc": "Invoca criatura Infernal (Nivel <= Rango x 2). Máximo 4 invocaciones simultáneas.",
+          "empower": "Criatura invocada recupera mitad de Vitalidad."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "passive": "Aumenta tu estadística de INT y su limitador por 1.",
+      "abilities": [
+        {
+          "name": "Presencia Majestuosa",
+          "tags": [
+            "Innata",
+            "Miedo",
+            "Duradera"
+          ],
+          "cost": "1 acción, 2 chi o vigor",
+          "duration": "Concentración",
+          "desc": "Ventaja en tiros de Carisma. Hechizos Mentales son indetectables e ignoran resistencias de no-hostiles.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Cadenas del Contrato",
+          "tags": [
+            "Innata",
+            "Mejora"
+          ],
+          "cost": "3 acciones, 2 chi o vigor",
+          "desc": "Vínculo vital voluntario con hasta 2 criaturas. Permite transferir cualquier cantidad de daño recibido entre los vinculados."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Aprendes dos hechizos de Rango III o menos relacionados con tu patrón (puedes usar vigor).",
+      "abilities": [
+        {
+          "name": "Corrupción Demoníaca",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Resistencia a Arcano/Divino. Resistencia Superior a Mental, Aflicción, Fuego, Hielo y Miedo. Comunicación con infernales (menores obedecen).",
+          "empower": "N/A"
+        },
+        {
+          "name": "Puertas del Infierno",
+          "tags": [
+            "Innata",
+            "Divina",
+            "Ambiental",
+            "Espacial"
+          ],
+          "cost": "3 acciones, 3 chi o vigor",
+          "area": "Radio grande",
+          "duration": "6 rondas",
+          "desc": "Abre portal infernal. Tierra Consagrada Infernal. Impide sanación enemiga. Enemigos tiran Voluntad cada ronda o aumentan Miedo. Permite usar Siervos del Contrato como acción bonus (máx 10 invocaciones)."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "Incrementa tu CON por 1.",
+      "abilities": [
+        {
+          "name": "Señor de la Sima",
+          "tags": [
+            "Innata",
+            "Mejora"
+          ],
+          "cost": "3 acciones, 5 chi o vigor",
+          "duration": "Seis rondas",
+          "desc": "Transformación demoníaca suprema. +40 Vitalidad temporal. FUE/CON/CAR = 12, DEF = 20. Inmunidad Mental, Aflicción, Miedo, Toque. Ataques aplican Arma Profana. Vuelo 2. Posición Defensiva (bonus). 6 contadores escudo. Hechizos de rango gratis. Presencia Majestuosa activa."
+        }
+      ]
+    }
+  ]
+}

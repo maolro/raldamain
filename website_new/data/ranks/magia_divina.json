@@ -1,0 +1,193 @@
+{
+  "id": "magia_divina",
+  "title": "Magia Divina",
+  "category": "Religión",
+  "image": "magia_divina.jpg",
+  "stats": [
+    "Sabiduría",
+    "Chi"
+  ],
+  "description": "Canalizas el poder de tu dios a través de oraciones y devoción. Bendices aliados, consagras la tierra, castigas a infieles y realizas milagros. A medida que avanzas, tu dios te otorga acceso a magias específicas relacionadas con su dominio.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Sabiduría + Rango.",
+    "<strong>Conocimiento de los dioses:</strong> Acceso a 3-5 magias relacionadas con tu dios a rangos superiores.",
+    "<strong>Protección divina:</strong> Usas Magia Divina para defenderte de efectos Divinos o relacionados con tu dios."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Milagro menor",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Acción bonus (usos: Rango + 2/día): Una criatura a distancia media repite un tiro y se queda con el mejor/peor resultado (según tu elección).",
+          "empower": "Recuperas un uso de esta habilidad."
+        },
+        {
+          "name": "Enviado de los dioses",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Conoces idioma de tu dios. Criaturas relacionadas son amistosas. Detectas extraplanarios y magia (Arcana/Divina) a distancia media.",
+          "empower": "Tu dios te otorga una pequeña ayuda no relacionada con el combate."
+        },
+        {
+          "name": "Oración",
+          "tags": [
+            "Divina",
+            "Ritual"
+          ],
+          "desc": "10 minutos de rezo. Haces hasta 4 preguntas a tu dios (respuestas sinceras pero pueden ser crípticas). Usos sucesivos reducen preguntas."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "passive": "Aprendes dos hechizos de Rango I de una magia relacionada con tu dios (ganan categoría Divina).",
+      "abilities": [
+        {
+          "name": "Manifestación Divina",
+          "tags": [
+            "Divina",
+            "Maldición"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "duration": "Instantáneo o hasta eliminado",
+          "desc": "Efecto variable según dios: Curar estado, Eliminar maldición/magia (tiro enfrentado), Causar estado negativo (Ceguera, Sangrado, etc.) o Reducir Resistencia.",
+          "empower": "Afectas a un objetivo adicional."
+        },
+        {
+          "name": "Consagrar la Tierra",
+          "tags": [
+            "Divina",
+            "Ambiental"
+          ],
+          "cost": "3 acciones, 1 chi",
+          "area": "Radio grande",
+          "duration": "10 minutos",
+          "desc": "Creyentes ganan Ventaja en todo. Impide invocaciones enemigas. Guerrero de la Fe gratis. Ritual de 1 hora para hacerlo permanente.",
+          "empower": "Reduce el coste de un hechizo Divino en -1 acción."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Aprendes dos hechizos de Rango II de una magia relacionada con tu dios.",
+      "abilities": [
+        {
+          "name": "Adivinación",
+          "tags": [
+            "Divina",
+            "Ritual"
+          ],
+          "desc": "Recibes visiones del pasado, presente o futuro (1 vez al día). Más claras si tienes objeto/lugar relacionado."
+        },
+        {
+          "name": "Protección Divina",
+          "tags": [
+            "Divina",
+            "Sostenida",
+            "Defensiva"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Siempre en Posición Defensiva. Defensa usando Magia Divina. Reacción al ser impactado: Lanzar hechizo Divino como acción bonus contra atacante.",
+          "empower": "Reduces daño de un ataque recibido en (Rango x 2) antes de aplicar defensa."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "passive": "Aprendes dos hechizos de Rango III de tu dios. Daño Divino pasa a d8. Hechizos Rango I cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Castigo Divino",
+          "tags": [
+            "Divina",
+            "Maldición"
+          ],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "duration": "Hasta que sea eliminada",
+          "desc": "Maldición potente según dios (ej: Marca de ley, Bestia interior, Llamas eternas, Dolor). Difícil de eliminar (3 fallos = permanente).",
+          "empower": "Afectas a un objetivo adicional."
+        },
+        {
+          "name": "Llamar a los Dioses",
+          "tags": [
+            "Divina",
+            "Ambiental"
+          ],
+          "cost": "3 acciones, 2 chi",
+          "duration": "Seis rondas",
+          "desc": "Como Tierra Consagrada. Tras ronda 2, activa efecto ambiental de tu dios (Rango <= III). No requiere concentración.",
+          "empower": "Cambias el efecto ambiental sin coste."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Aprendes dos hechizos de Rango IV de tu dios.",
+      "abilities": [
+        {
+          "name": "Palabra Divina",
+          "tags": [
+            "Divina",
+            "Área",
+            "Auditiva",
+            "Sónica"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "area": "Esfera mediana",
+          "crit": "Afectados aturdidos 1 ronda.",
+          "desc": "Enemigos de fe opuesta sufren 2d10 + SAB Sónico y Sordera (CON vs Divina). Mata invocaciones enemigas instantáneamente.",
+          "empower": "Aumenta área a esfera grande."
+        },
+        {
+          "name": "Exaltado",
+          "tags": [
+            "Divina",
+            "Mejora",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "duration": "Seis rondas",
+          "desc": "+30 Vitalidad temporal. Resistencia Arcano/Divino. 3 stats a 12. Beneficios de Protección Divina sin concentración.",
+          "empower": "Éxito automático en tiro o resucitar a 1 PV (1 vez/ronda)."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "Aprendes dos hechizos de Rango V de tu dios. Daño Divino pasa a d10. Hechizos Rango III cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Ira de Dios",
+          "tags": [
+            "Divina",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "area": "Esfera grande",
+          "crit": "Fallo automático en defensa contra Manifestación Divina.",
+          "duration": "Instantáneo",
+          "desc": "4d10 + SAB Divino. Aplica maldición de Manifestación Divina. Destruye estructuras, barreras y tierra consagrada enemiga. Mata invocaciones menores.",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

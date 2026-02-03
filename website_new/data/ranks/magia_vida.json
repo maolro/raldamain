@@ -1,14 +1,18 @@
 {
-  "id": "magia_gravitatoria",
-  "title": "Magia Gravitatoria",
-  "category": "Ocultismo",
-  "image": "magia_gravitatoria.jpg",
-  "stats": ["Inteligencia", "Chi"],
-  "description": "Controlas las fuerzas fundamentales para manipular la gravedad. Atraes, repeles y aplastas a tus enemigos o alteras la densidad de los objetos.",
+  "id": "magia_vida",
+  "title": "Magia de Vida",
+  "category": "Divina",
+  "image": "magia_vida.jpg",
+  "stats": [
+    "Sabiduría",
+    "Chi"
+  ],
+  "description": "Conoces los secretos de la energía vital pura que permea el universo. Sanas heridas, purgas venenos y usas la luz como arma para castigar a los impíos o crear explosiones de energía pura.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
-    "<strong>Estadística principal:</strong> Inteligencia + Rango.",
-    "<strong>Parada Gravitatoria:</strong> Usas Magia Gravitatoria para defenderte de Aire, Tierra, Agua, Gravedad y Telekinesia."
+    "<strong>Estadística principal:</strong> Sabiduría + Rango.",
+    "<strong>Fuerza vital:</strong> La potencia depende del entorno (Ventaja/Desventaja según flujo de energía).",
+    "<strong>Defensa vital:</strong> Usas Magia de Vida para tiros defensivos y salvaciones contra Vida, Sombría, Muerte y Fuego."
   ],
   "levels": [
     {
@@ -16,33 +20,47 @@
       "title": "Iniciado",
       "abilities": [
         {
-          "name": "Pulso Gravitatorio",
-          "tags": ["Gravedad", "Maniobra", "Físico"],
+          "name": "Toque Sanador",
+          "tags": [
+            "Vida",
+            "Sanación",
+            "Toque"
+          ],
           "cost": "1 acción",
-          "range": "Cercano",
-          "crit": "Objetivo sufre herida leve.",
-          "desc": "Empujón gravitatorio. Mueve 1 paso y derriba (Tropezado). Si choca, 1d6 + INT daño. Puede disipar efectos ambientales.",
-          "empower": "Afecta a todos los enemigos a distancia cercana."
+          "range": "Toque",
+          "duration": "Instantánea",
+          "desc": "Sana a un aliado Vitalidad igual a Rango + 2. Alternativamente, reduce el nivel de una Aflicción por un paso.",
+          "empower": "Cura una herida permanente leve o una Aflicción en fase 1."
         },
         {
-          "name": "Arrastre Gravitatorio",
-          "tags": ["Gravedad", "Maniobra", "Físico"],
+          "name": "Rayo de Luz",
+          "tags": [
+            "Vida",
+            "Ataque",
+            "A Distancia",
+            "Radiante"
+          ],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "Objetivo sufre herida leve.",
-          "desc": "Atrae al objetivo 1 paso hacia ti. Rompe Posición Defensiva. Si choca, 1d6 + INT daño.",
-          "empower": "Afecta a un objetivo adicional."
+          "crit": "El objetivo queda cegado durante una ronda.",
+          "duration": "Instantánea",
+          "desc": "Ataque de luz que inflige 1d6 + Rango daño Radiante. No puede ser esquivado a distancia corta.",
+          "empower": "Realiza un ataque adicional contra un objetivo distinto."
         },
         {
-          "name": "Pozo de Gravedad",
-          "tags": ["Gravedad", "Sostenido", "Maniobra"],
+          "name": "Halo Cegador",
+          "tags": [
+            "Vida",
+            "Visual",
+            "Área",
+            "Radiante"
+          ],
           "cost": "2 acciones, 1 chi",
-          "range": "Medio",
-          "area": "Esfera pequeña",
-          "duration": "Concentración",
-          "crit": "Afectados quedan Tropezados.",
-          "desc": "Zona de alta gravedad. Difícil salir (Tiro Heroísmo/Atletismo). Vulnerabilidad a distancia y Desventaja al atacar hacia fuera.",
-          "empower": "Aumenta tamaño a esfera mediana."
+          "area": "Radio corto",
+          "crit": "Objetivos cegados hasta recibir sanación.",
+          "duration": "Instantánea",
+          "desc": "Explosión de luz. Enemigos tiran CON o sufren 1d6 + Rango daño Radiante y quedan cegados 1 ronda. Disipa hechizos Sombríos.",
+          "empower": "El brillo persiste 1 ronda: Desventaja a ataques contra ti y ciega a quien se acerque."
         }
       ]
     },
@@ -51,69 +69,94 @@
       "title": "Adepto",
       "abilities": [
         {
-          "name": "Alterar Peso",
-          "tags": ["Gravedad", "Duradero", "Físico"],
+          "name": "Vínculo Vital",
+          "tags": [
+            "Vida",
+            "Sanación",
+            "Toque",
+            "Duradero"
+          ],
+          "cost": "3 acciones, 1 chi",
+          "range": "Toque",
+          "duration": "Concentración",
+          "desc": "Enlace con aliado. Puedes absorber la mitad de su daño (como reacción) o lanzarle hechizos de sanación a distancia.",
+          "empower": "Lanzas Toque Sanador al aliado vinculado como acción bonus."
+        },
+        {
+          "name": "Barrera Luminosa",
+          "tags": [
+            "Vida",
+            "Defensiva",
+            "Duradera",
+            "Radiante"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña o línea media",
+          "crit": "Cegado hasta ser curado.",
+          "duration": "Concentración",
+          "desc": "Muro de luz. Inmune a ataques a distancia. Cruzar causa 1d6 + Rango daño y Ceguera. Uso defensivo como reacción.",
+          "empower": "Afecta a criaturas cercanas a la barrera como si intentaran cruzarla."
+        },
+        {
+          "name": "Arma Solar",
+          "tags": [
+            "Vida",
+            "Ataque",
+            "Radiante",
+            "Duradera"
+          ],
           "cost": "2 acciones, 1 chi",
-          "range": "Medio",
+          "area": "Línea mediana",
+          "crit": "Cegado durante una ronda.",
           "duration": "Concentración",
-          "desc": "Dos modos: 'Reducir' (Salto 1, Ventaja Esquiva/Sigilo, Vulnerable Maniobras) o 'Aumentar' (Resistencia Maniobras, coste movimiento +1, cae si vuela).",
-          "empower": "Afecta a un objetivo adicional."
-        },
-        {
-          "name": "Ancla Gravitatoria",
-          "tags": ["Gravedad", "Maniobra", "Duradero"],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "duration": "Concentración",
-          "crit": "Herida leve.",
-          "desc": "Derriba al objetivo (Tropezado) e impide movimiento (Enredado) o vuelo. Salvación por ronda para liberarse.",
-          "empower": "Afecta a objetivo adicional o fuerza daño/caída de nuevo."
-        },
-        {
-          "name": "Campo de Repulsión",
-          "tags": ["Gravedad", "Defensivo", "Duradero"],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "area": "Esfera pequeña",
-          "duration": "Concentración",
-          "desc": "Zona que expulsa a quien entre. Desventaja en ataques hacia dentro. Puede usarse como escudo personal (Acción bonus).",
-          "empower": "Bloquea automáticamente un ataque físico."
+          "desc": "Ataque inicial en línea (1d6 + CAR). Luego permite atacar como acción (1d6 + CAR a distancia media).",
+          "empower": "Ataque adicional contra objetivo diferente."
         }
       ]
     },
     {
       "rank": "III",
       "title": "Profesional",
-      "passive": "Daño base sube a d8. Hechizos Rango I cuestan -1 acción.",
+      "passive": "Todos los dados de daño de Vida pasan a ser d8.",
       "abilities": [
         {
-          "name": "Agarre Gravitatorio",
-          "tags": ["Gravedad", "Agarre", "Duradero"],
-          "cost": "1 acción, 2 chi",
-          "range": "Medio",
+          "name": "Luz Viviente",
+          "tags": [
+            "Vida",
+            "Defensiva",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "crit": "Empuja 1 paso como acción bonus.",
-          "desc": "Inmoviliza al objetivo (Agarrado). Falla tiros contra maniobras de gravedad automáticamente.",
-          "empower": "Afecta a un objetivo adicional."
+          "desc": "Velocidad +1. Posición Defensiva como acción bonus. Ventaja en Esquiva usando magia de Vida.",
+          "empower": "Evasión: Reduces daño a la mitad, desenganchas y te mueves 1 paso."
         },
         {
-          "name": "Burlar la Gravedad",
-          "tags": ["Gravedad", "Duradero"],
-          "cost": "2 chi",
-          "duration": "Concentración",
-          "desc": "Vuelo 1 y Ventaja en Esquiva.",
-          "empower": "Vuelas 1 paso y reduces daño recibido a la mitad."
-        },
-        {
-          "name": "Bomba de Gravedad",
-          "tags": ["Gravedad", "Ataque", "Área"],
+          "name": "Sanación Superior",
+          "tags": [
+            "Vida",
+            "Curación",
+            "Toque"
+          ],
           "cost": "1 acción, 2 chi",
-          "range": "Medio",
-          "area": "Radio corto",
+          "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
-          "crit": "Herida leve a todos.",
-          "desc": "Explosión (2d8 + INT). Ignora Defensa y empuja 1 paso. Atraviesa barreras y elimina efectos de gravedad.",
-          "empower": "Siguiente uso es gratis."
+          "desc": "Cura Vitalidad y PV iguales a Rango + 2. Reduce herida permanente 2 pasos o cura Aflicción/Maldición total.",
+          "empower": "Lanzar como acción bonus en ti mismo o afectar a objetivo extra."
+        },
+        {
+          "name": "Telaraña de Vida",
+          "tags": [
+            "Vida",
+            "Curación",
+            "Ambiental"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio medio",
+          "duration": "Concentración",
+          "desc": "Ventaja en tiros de Vida. Detectar vivos (vista ciega). Hechizos de sanación curan +2 y tienen alcance corto.",
+          "empower": "Lanzas un hechizo de Sanación como acción bonus."
         }
       ]
     },
@@ -122,85 +165,119 @@
       "title": "Experto",
       "abilities": [
         {
-          "name": "Vórtice Gravitatorio",
-          "tags": ["Gravedad", "Defensivo", "Duradero"],
+          "name": "Espadas de Justicia",
+          "tags": [
+            "Vida",
+            "Defensiva",
+            "Duradera"
+          ],
           "cost": "2 acciones, 2 chi",
-          "area": "Radio pequeño",
           "duration": "Concentración",
-          "desc": "Escudos = Rango. Resistencia a distancia. Reacción: Atrae o empuja a enemigos que se acerquen.",
-          "empower": "Recuperar escudos o aumentar radio."
+          "desc": "Ganas contadores de escudo = Rango. Permite lanzar Rayo Luminoso o Toque Sanador como acción bonus (Alcance Medio).",
+          "empower": "Repones un contador de escudo perdido."
         },
         {
-          "name": "Distorsión Gravitatoria",
-          "tags": ["Gravedad", "Ambiental"],
+          "name": "Transferencia Vital",
+          "tags": [
+            "Vida",
+            "Curación",
+            "Toque",
+            "Duradera"
+          ],
           "cost": "3 acciones, 2 chi",
-          "area": "Esfera grande",
-          "duration": "6 Rondas",
-          "desc": "Ventaja en Magia Gravitatoria y Alcance +1 paso. Altera el peso de objetos/criaturas en el área.",
-          "empower": "Siguiente hechizo cuesta -1 acción."
+          "range": "Toque",
+          "duration": "Una hora",
+          "desc": "Vincula a 2 aliados contigo. Comparten daño recibido (ignora resistencias) y sanación recibida a voluntad.",
+          "empower": "Siguiente sanación afecta a todos los vinculados."
         },
         {
-          "name": "Dilatación Temporal",
-          "tags": ["Gravedad", "Duradero", "Maniobra"],
+          "name": "Castigo Celestial",
+          "tags": [
+            "Vida",
+            "Ataque",
+            "Área",
+            "Radiante"
+          ],
           "cost": "1 acción, 2 chi",
-          "range": "Medio",
-          "area": "Esfera pequeña",
-          "duration": "Concentración",
-          "crit": "Parálisis inmediata.",
-          "desc": "Zona de tiempo lento. Causa Náuseas y Parálisis si fallan 2 veces. Frena ataques (Desventaja).",
-          "empower": "Bloquea ataque automático."
+          "area": "Línea Mediana",
+          "crit": "Quemadura media y cegado 1 ronda.",
+          "duration": "Instantáneo",
+          "desc": "Rayo devastador. 2d8 + CAR daño Radiante + quemadura leve. No se puede esquivar a distancia corta.",
+          "empower": "Segundo ataque en dirección diferente."
         }
       ]
     },
     {
       "rank": "V",
       "title": "Maestro",
-      "passive": "Daño base sube a d10. Hechizos Rango III cuestan -1 acción.",
+      "passive": "Todos los dados de daño de Vida pasan a ser d10.",
       "abilities": [
         {
-          "name": "Invertir la Gravedad",
-          "tags": ["Gravedad", "Área"],
-          "cost": "3 acciones, 3 chi",
-          "area": "Esfera grande",
-          "duration": "Concentración",
-          "crit": "Empuje extra y herida leve al chocar.",
-          "desc": "Caída lateral forzosa (2 pasos, 1d10 + INT daño). Desvía proyectiles (50% fallo/cambio objetivo).",
-          "empower": "Cambiar dirección de gravedad."
-        },
-        {
-          "name": "Compresión Gravitatoria",
-          "tags": ["Gravedad", "Ataque"],
-          "cost": "1 acción, 3 chi",
-          "range": "Medio",
-          "duration": "Concentración",
-          "crit": "Herida media.",
-          "desc": "Aplasta objetivo (3d10 + INT, herida leve y Agarrado). Daño recurrente (2d10) cada ronda.",
-          "empower": "Afecta a un objetivo adicional."
-        },
-        {
-          "name": "Empuje Todopoderoso",
-          "tags": ["Gravedad", "Ataque", "Área"],
+          "name": "Explosión Solar",
+          "tags": [
+            "Vida",
+            "Ataque",
+            "Área",
+            "Sanación",
+            "Visual"
+          ],
           "cost": "2 acciones, 3 chi",
-          "range": "Lejano",
-          "desc": "Onda de choque masiva (3d10 + INT). Destruye estructuras, crea terreno difícil y entierra enemigos.",
-          "empower": "Reutilizar gratis la siguiente ronda."
+          "area": "Esfera mediana",
+          "crit": "Quemadura media y cegado 1 ronda.",
+          "duration": "Instantáneo",
+          "desc": "Explosión 2d10 + CAR Radiante y quemadura media. A aliados vinculados los sana (2+Rango Vit) y reduce heridas.",
+          "empower": "Aumenta radio un paso y selección de objetivos (daño/cura)."
+        },
+        {
+          "name": "Milagro de Sanación",
+          "tags": [
+            "Vida",
+            "Sanación",
+            "Toque"
+          ],
+          "cost": "1 acción, 3 chi",
+          "range": "Toque",
+          "duration": "Instantáneo",
+          "desc": "Restaura toda la Vitalidad y (Rango + 2) PV. Elimina todas las heridas/aflicciones. Resucita (muerte < 1 hora).",
+          "empower": "Lanzar sobre ti mismo como acción bonus."
+        },
+        {
+          "name": "Sello de Regeneración",
+          "tags": [
+            "Vida",
+            "Curación",
+            "Toque",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Toque",
+          "duration": "Seis rondas",
+          "desc": "Regeneración masiva: Recupera (Rango + 2) Vitalidad al inicio del turno y reduce herida/aflicción un paso.",
+          "empower": "Objetivo regenera el doble esta ronda."
         }
       ]
     },
     {
       "rank": "VI",
       "title": "Ascendido",
-      "passive": "Hechizos Rango IV cuestan -1 acción.",
+      "passive": "Hechizos de Vida de Rango IV cuestan -1 acción.",
       "abilities": [
         {
-          "name": "Agujero Negro",
-          "tags": ["Gravedad", "Duradero", "Ambiental"],
+          "name": "Fuente de toda la vida",
+          "tags": [
+            "Vida",
+            "Ambiental",
+            "Ataque",
+            "Área",
+            "Sostenida",
+            "Radiante"
+          ],
           "cost": "3 acciones, 5 chi",
-          "range": "Lejano",
-          "area": "Esfera pequeña",
-          "duration": "5 Rondas",
-          "desc": "Atracción ineludible. Daño al entrar (3d10 + INT). Fin del hechizo: Implosión (Muerte instantánea si falla salvación, o 3d10 daño si supera).",
-          "empower": "Mover agujero negro y causar daño."
+          "area": "Radio grande",
+          "crit": "Cegado durante una ronda.",
+          "duration": "Siete rondas",
+          "desc": "Ataque inicial 3d10 + CAR. Sobrecarga zonal: Ventaja en Vida, sanación pasiva (Rango + 2) a vivos, resurrección inmediata (1 PV) al morir, daña a no-muertos/malignos.",
+          "empower": "N/A"
         }
       ]
     }

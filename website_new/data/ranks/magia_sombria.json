@@ -1,0 +1,281 @@
+{
+  "id": "magia_sombria",
+  "title": "Magia Sombría",
+  "category": "Ocultismo",
+  "image": "magia_sombria.jpg",
+  "stats": [
+    "Carisma",
+    "Chi"
+  ],
+  "description": "Manipulas la energía del plano sombrío para drenar la vitalidad, crear zonas de oscuridad absoluta y materializar pesadillas. Tus poderes se centran en el control del campo de batalla, el engaño mediante clones y la corrupción de la mente y el cuerpo de tus enemigos mediante el frío y maldiciones.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Toque Drenador",
+          "tags": [
+            "Sombrío",
+            "Toque",
+            "Aflicción",
+            "Frío"
+          ],
+          "cost": "1 acción",
+          "range": "Cuerpo a cuerpo",
+          "crit": "El afectado quedará fatigado durante una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Drena energía vital (CON vs Sombría). Inflige 1d6 + Rango daño Frío. Reduce Vitalidad y PV máximos (Aflicción nivel 1).",
+          "empower": "Aumenta el alcance a medio."
+        },
+        {
+          "name": "Tajo Umbrío",
+          "tags": [
+            "Sombrío",
+            "Ataque",
+            "A Distancia",
+            "Frío"
+          ],
+          "cost": "1 acción",
+          "range": "Medio",
+          "crit": "El afectado quedará fatigado durante una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Corte a distancia que inflige 1d6 + Rango daño Frío. Reduce Vitalidad y PV máximos (Aflicción nivel 1).",
+          "empower": "Afecta a una criatura adicional a distancia media."
+        },
+        {
+          "name": "Crear Oscuridad",
+          "tags": [
+            "Sombrío",
+            "Gaseoso",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "desc": "Nube que apaga luces y disipa Vida (Rango menor). Ciega a quienes están dentro y otorga ocultamiento.",
+          "empower": "Extiende el área a esfera mediana o mueve la nube un paso."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Bola Sombra",
+          "tags": [
+            "Sombría",
+            "Ataque",
+            "Área",
+            "Frío"
+          ],
+          "cost": "1 o más acciones, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "crit": "El afectado quedará fatigado durante una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Explosión de 1d6 + CAR Frío (reduce Vit/PV). Carga: +1d6 daño y +1 paso radio por cada 2 acciones gastadas (max 4 acciones, requiere oscuridad).",
+          "empower": "Lanza una bola sombría adicional a otro objetivo."
+        },
+        {
+          "name": "Capullo Sombrío",
+          "tags": [
+            "Sombría",
+            "Defensiva",
+            "Duradera"
+          ],
+          "cost": "1 acción, 1 chi",
+          "duration": "Concentración",
+          "desc": "Otorga Vitalidad temporal (Rango x 3), Inmunidad a Toque y Ocultamiento. Enemigos adyacentes sufren daño Frío (1d6 + Rango) y reducción vital.",
+          "empower": "Recupera toda la Vitalidad temporal (solo en oscuridad)."
+        },
+        {
+          "name": "Oscuridad Devoradora",
+          "tags": [
+            "Sombría",
+            "Agarre",
+            "Duradera"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "crit": "El afectado quedará fatigado durante una ronda.",
+          "duration": "Concentración",
+          "desc": "Solidifica oscuridad para atrapar (Heroísmo/Destrozar vs Sombría). Causa 1d6 + Rango Frío y estado Enredado. Daño recurrente al fallar escape.",
+          "empower": "Afecta a un objetivo adicional."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Todos tus hechizos Sombríos sustituyen sus dados de daño por d8.",
+      "abilities": [
+        {
+          "name": "Tentáculos de Oscuridad",
+          "tags": [
+            "Sombrío",
+            "Frío",
+            "Ataque",
+            "Agarre",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "area": "Radio corto",
+          "crit": "Todos los afectados son agarrados automáticamente.",
+          "duration": "Concentración",
+          "desc": "Ataque de área (1d8 + CAR Frío). Agarra objetivos (Heroísmo/Atletismo). Agarrados sufren daño necrótico recurrente.",
+          "empower": "Redirige un ataque recibido hacia una criatura agarrada (requiere Posición Defensiva)."
+        },
+        {
+          "name": "Maldición de Shade",
+          "tags": [
+            "Sombrío",
+            "Mejora",
+            "Maldición"
+          ],
+          "cost": "2 chi",
+          "duration": "Hasta que sea eliminada",
+          "desc": "Maldice al impactar con ataque Sombrío. Impide curación/cordura. Empeora con daño/tiempo (1: Sin moral, 2: Exhausto, 3: Catatónico, 4: Muerte/Criatura Sombría).",
+          "empower": "Ataque de Toque Sombrío como acción bonus contra maldito."
+        },
+        {
+          "name": "Terror Nocturno",
+          "tags": [
+            "Sombrío",
+            "Duradero",
+            "Miedo",
+            "Visual"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "area": "Esfera media",
+          "duration": "Concentración",
+          "desc": "Nube de pesadillas. Ventaja en Sombría dentro. Enemigos: Voluntad/Percepción o Miedo +1 y atrapados. Ceguera/Ocultamiento.",
+          "empower": "Siguiente hechizo Sombrío cuesta -1 acción."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "abilities": [
+        {
+          "name": "Titiritero Sombrío",
+          "tags": [
+            "Sombrío",
+            "Duradero",
+            "Agarre"
+          ],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Controla movimientos de enemigo en oscuridad (Heroísmo/Destrozar). Agarrado. Puedes gastar acciones para forzarle a actuar.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Clones Sombríos",
+          "tags": [
+            "Sombría",
+            "Invocación",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Crea clones (cantidad = Rango) con mitad de nivel y 1 PV. Inmunes a Mente/Miedo/Toque. Puedes redirigir ataques hacia ellos si estás oculto.",
+          "empower": "Crea un clon sombrío adicional."
+        },
+        {
+          "name": "Oscuridad Enloquecedora",
+          "tags": [
+            "Sombría",
+            "Mental",
+            "Visual",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Esfera media",
+          "duration": "Concentración",
+          "desc": "Confunde a enemigos (Voluntad/Concentración). Maldición de Shade hace que parezcan monstruos. Requiere oscuridad.",
+          "empower": "Cambias apariencia para redirigir un ataque enemigo a otro objetivo."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Todos tus hechizos Sombríos sustituyen sus dados de daño por d10.",
+      "abilities": [
+        {
+          "name": "Furia de Shade",
+          "tags": [
+            "Sombrío",
+            "Ataque",
+            "Área",
+            "Necrótico"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "area": "Cono grande",
+          "crit": "Los afectados fallarán su tiro contra la Maldición de Shade.",
+          "duration": "Instantáneo",
+          "desc": "Cono de 3d10 + CAR Frío. Aplica Maldición de Shade. Crea Tierra Consagrada Sombría y apaga luces. Requiere oscuridad.",
+          "empower": "Siguiente hechizo Sombrío cuesta una acción bonus."
+        },
+        {
+          "name": "Ejecución Sombría",
+          "tags": [
+            "Sombría",
+            "Aflicción",
+            "Necrótico"
+          ],
+          "cost": "1 acción, 3 chi",
+          "range": "Lejano",
+          "crit": "Aumenta nivel Maldición de Shade. Si mata, crea Criatura Sombría.",
+          "duration": "Instantáneo",
+          "desc": "Daña objetivo con Maldición de Shade (3d10 + CAR Frío). Si falla defensa, explota dañando a cercanos (1d10).",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Laberinto de Pesadillas",
+          "tags": [
+            "Sombría",
+            "Espacial",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Exilia enemigo a demiplano (Salud vs Sombría). Pierde cordura y gana Maldición de Shade cada turno. Escapar requiere 3 éxitos de Voluntad.",
+          "empower": "Afecta a un enemigo adicional."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "abilities": [
+        {
+          "name": "Eclipse de Sacrificio",
+          "tags": [
+            "Sombrío",
+            "Ataque",
+            "Área",
+            "Frío"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "range": "Medio",
+          "area": "Radio grande",
+          "duration": "Siete rondas",
+          "desc": "Oscuridad total. Ventaja en Sombría. Enemigos sufren Maldición de Shade progresiva. Efectos por ronda: Invocar criaturas (R2), Moldear terreno (R4), Furia de Shade potenciada (R7).",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "id": "magia_tormenta",
+  "title": "Magia de Tormenta",
+  "category": "Elementalismo",
+  "image": "magia_tormenta.jpg",
+  "stats": [
+    "Carisma",
+    "Chi"
+  ],
+  "description": "Controlas la faceta más destructiva del aire, empleando poderosas descargas eléctricas y truenos ensordecedores. Almacenas energía en tu cuerpo para desatarla, invocas relámpagos desde el cielo y creas tormentas devastadoras que arrasan el campo de batalla.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Parada mágica:</strong> Usas Magia de Tormenta para tiros de parada y salvaciones contra Tormenta, Fuego, Radiante, Tierra o Naturaleza."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Toque Chispeante",
+          "tags": [
+            "Tormenta",
+            "Ataque",
+            "Eléctrico",
+            "Toque"
+          ],
+          "cost": "1 acción",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo aturdido una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Descarga eléctrica (1d6 + Rango Eléctrico) y ralentiza. Ventaja contra metal; armaduras completas no pueden defenderse.",
+          "empower": "Aumenta el alcance a cercano."
+        },
+        {
+          "name": "Arco Eléctrico",
+          "tags": [
+            "Tormenta",
+            "Ataque",
+            "Eléctrico",
+            "A distancia"
+          ],
+          "cost": "1 acción",
+          "range": "Medio",
+          "crit": "Objetivo ralentizado una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Rayo saltarín (1d6 + Rango Eléctrico). Ventaja si el objetivo lleva metal/conductores.",
+          "empower": "Ataca a un objetivo adicional."
+        },
+        {
+          "name": "Onda Trueno",
+          "tags": [
+            "Tormenta",
+            "Área",
+            "Sónico"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "area": "Radio corto",
+          "crit": "Afectados ensordecidos una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Estallido sónico (1d6 + CAR). Rompe objetos frágiles. CON vs Tormenta para mitad de daño.",
+          "empower": "Aumenta el tamaño de la onda un paso."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Barrera de Rayos",
+          "tags": [
+            "Tormenta",
+            "Defensivo",
+            "Duradero",
+            "Eléctrico"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña o línea media",
+          "duration": "Concentración",
+          "desc": "Barrera (PV = Rango x 3). Inmune físico no-mágico. Cubierta parcial. Cruzar causa 1d6 + CAR Eléctrico y ralentiza (CON mitad). Uso defensivo como reacción.",
+          "empower": "La barrera recupera todos sus PV."
+        },
+        {
+          "name": "Relámpago",
+          "tags": [
+            "Tormenta",
+            "Ataque",
+            "Eléctrico"
+          ],
+          "cost": "1 acción, 1 chi",
+          "area": "Línea grande",
+          "crit": "Afectados aturdidos una ronda.",
+          "duration": "Instantáneo",
+          "desc": "1d6 + CAR Eléctrico y ralentiza. Desventaja a defensa si llevan metal. Puede cargarse gastando acciones (+1d6/acción extra).",
+          "empower": "Lanzas un relámpago adicional en otra dirección."
+        },
+        {
+          "name": "Bomba Sónica",
+          "tags": [
+            "Tormenta",
+            "Ataque",
+            "Área",
+            "Sónico"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Mediano",
+          "area": "Esfera pequeña",
+          "crit": "Afectados aturdidos una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Explosión a distancia (1d6 + CAR Trueno + Sordera). Destruye objetos frágiles. No detenible por muros.",
+          "empower": "Lanza bomba adicional o la hace imparable (CON para evitar)."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "abilities": [
+        {
+          "name": "Furia de los cielos",
+          "tags": [
+            "Tormenta",
+            "Ambiental",
+            "Duradero"
+          ],
+          "cost": "3 acciones, 2 chi",
+          "area": "Esfera grande",
+          "duration": "Cuatro rondas",
+          "desc": "Crea tormenta. Ventaja en Tormenta. Permite lanzar hechizos eléctricos desde el cielo (alcance lejano, no esquivable, derriba vuelo).",
+          "empower": "Siguiente hechizo de Tormenta cuesta -1 acción."
+        },
+        {
+          "name": "Esferas del Relámpago",
+          "tags": [
+            "Tormenta",
+            "Defensivo",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Otorga contadores de escudo (igual a Rango). Acción bonus: Ataque de Arco Eléctrico.",
+          "empower": "Recuperas la mitad de tus contadores de escudo."
+        },
+        {
+          "name": "Invocar elemental de Rayo",
+          "tags": [
+            "Tormenta",
+            "Invocación"
+          ],
+          "cost": "3 acciones, 2 chi",
+          "range": "Medio",
+          "duration": "Una hora",
+          "desc": "Invoca Elemental de Rayo Nivel 6 (+2 por Rango > III).",
+          "empower": "Elemental recupera mitad de Vitalidad."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "abilities": [
+        {
+          "name": "Relámpago en Cadena",
+          "tags": [
+            "Tormenta",
+            "Mejora"
+          ],
+          "cost": "2 chi",
+          "range": "Propio",
+          "duration": "Instantáneo",
+          "desc": "Mejora un hechizo: +1 dado de daño. Al impactar, salta a otro objetivo (acción bonus) repetidamente hasta fallar o no haber objetivos.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Furia de la tormenta",
+          "tags": [
+            "Tormenta",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio corto",
+          "duration": "Instantáneo",
+          "desc": "Explosión centrada en ti (o a distancia media si hay tormenta). 1d8 + CAR Eléctrico + 1d10 + Rango Sónico + Ralentizar.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Rayo Viviente",
+          "tags": [
+            "Tormenta",
+            "Mejora",
+            "Concentración"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Propio",
+          "duration": "Concentración",
+          "desc": "Otorga acción adicional y Vuelo 2. Doble tiro defensivo (Esquiva + Tormenta). Reduce daño recibido a la mitad 1/ronda.",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "abilities": [
+        {
+          "name": "Cambiar el Clima",
+          "tags": [
+            "Tormenta",
+            "Área",
+            "Ambiental"
+          ],
+          "cost": "3 acciones, 3 chi",
+          "area": "Esfera grande",
+          "duration": "Seis rondas",
+          "desc": "Convoca tormenta masiva. Activa Furia de los cielos y Controlar vientos. Ocultamiento global.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Descenso Relampagueante",
+          "tags": [
+            "Tormenta",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "area": "Columna mediana",
+          "crit": "Fallo automático para evitar aturdimiento.",
+          "duration": "Instantáneo",
+          "desc": "Rayo celestial (requiere tormenta). 2d10 + CAR Eléctrico + 1d10 + CAR Sónico. Salud vs Aturdido. No esquivable, desventaja a vuelo.",
+          "empower": "Relanzar como acción bonus contra otro grupo."
+        },
+        {
+          "name": "Voltio cruel",
+          "tags": [
+            "Tormenta",
+            "Ataque"
+          ],
+          "cost": "1 acción, 3 chi",
+          "range": "Adyacente",
+          "duration": "Instantáneo",
+          "desc": "Carga y embestida (mueves 2 pasos + ataque). 3d10 + CAR Eléctrico + Herida leve + Aturdido (CON). Muerte instantánea a 0 PV. No esquivable.",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "El daño eléctrico atraviesa resistencias elementales.",
+      "abilities": [
+        {
+          "name": "Tormenta de venganza",
+          "tags": [
+            "Tormenta",
+            "Área",
+            "Ambiental",
+            "Duradera"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "area": "Esfera grande",
+          "duration": "Siete rondas",
+          "desc": "Tormenta definitiva (activa Furia de los cielos). Lanza hechizo gratis como acción bonus según ronda: R2 (Relámpago/Onda trueno), R4 (Relámpago cadena/Furia tormenta), R6 (Descenso relampagueante).",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

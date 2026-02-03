@@ -1,0 +1,259 @@
+{
+  "id": "magia_temporal",
+  "title": "Magia Temporal",
+  "category": "Arcana",
+  "image": "magia_temporal.jpg",
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
+  "description": "Manipulas el flujo del tiempo haciendo pequeñas modificaciones en lo escrito por el universo. Tienes premoniciones, reviertes daños, aceleras o ralentizas a las criaturas y, en tus niveles más altos, puedes detener el tiempo o retroceder eventos enteros en el campo de batalla.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Premonición",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Pasiva"
+          ],
+          "desc": "Repetir un tiro (ataque, defensa, salvación, habilidad) y elegir el mejor. Usos diarios: Rango + 2.",
+          "empower": "Recuperas un uso de esta habilidad."
+        },
+        {
+          "name": "Alteración Temporal",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Toque"
+          ],
+          "cost": "2 acciones",
+          "range": "Cuerpo a cuerpo",
+          "duration": "Instantáneo",
+          "desc": "Repara objeto (quita estado Roto) o sana a aliado (Rango + 2 Vitalidad) revertiendo daño reciente (ronda pasada).",
+          "empower": "Afecta área pequeña o reduce herida permanente/aflicción un paso."
+        },
+        {
+          "name": "Robar el Tiempo",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Aflicción",
+            "Toque",
+            "Fuerza"
+          ],
+          "cost": "1 acción",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo fatigado una ronda.",
+          "desc": "Envejece al objetivo (CON vs Temporal). Daño 1d6 + Rango Fuerza (traspasa defensa). Rompe objetos no mágicos o reduce duración hechizos (-2 rondas).",
+          "empower": "Aumenta alcance a medio o afecta objetivo adicional."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Acelerar",
+          "tags": [
+            "Temporal",
+            "Arcano",
+            "Mejora",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Otorga acción adicional y Ventaja en tiros de DES.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Ralentizar",
+          "tags": [
+            "Temporal",
+            "Arcano",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "range": "Medio",
+          "area": "Radio pequeño",
+          "duration": "Concentración",
+          "desc": "Zona de tiempo lento. Enemigos tiran Salud vs Temporal o quedan Ralentizados. Puedes mover la zona como acción bonus.",
+          "empower": "Ralentizas tiempo alrededor de ti (Desventaja ataques enemigos 1 ronda)."
+        },
+        {
+          "name": "Desplazamiento",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Defensiva",
+            "Reacción"
+          ],
+          "cost": "1 chi",
+          "duration": "Instantánea",
+          "desc": "Evitas un impacto reduciendo el daño a 0 y evitando efectos de estado directos (no funciona contra Mental/Miedo/Maldición).",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Tus hechizos Temporales convierten sus dados de daño a d8.",
+      "abilities": [
+        {
+          "name": "Visión",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Ritual"
+          ],
+          "desc": "Recibes una visión del pasado, presente o futuro relacionada con un objeto/lugar/persona presente durante el ritual."
+        },
+        {
+          "name": "Predecir Movimiento",
+          "tags": [
+            "Temporal",
+            "Reacción",
+            "Arcana"
+          ],
+          "cost": "2 chi",
+          "duration": "Instantánea",
+          "desc": "Éxito automático en un tiro defensivo o de habilidad como reacción (salvo Aflicción/Mental/Miedo/Maldición/Agarre).",
+          "empower": "Puedes volver a usar este hechizo esta ronda."
+        },
+        {
+          "name": "Dobles Temporales",
+          "tags": [
+            "Temporal",
+            "Sostenida",
+            "Arcana",
+            "Defensiva"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Crea copias (cantidad = Rango). Reacción: Sacrificar doble para recibir impacto o anular tu propia acción reciente (recuperando costes).",
+          "empower": "Restaura la mitad de tus dobles temporales."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "abilities": [
+        {
+          "name": "Revertir el Tiempo",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Sostenida"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Cuatro rondas",
+          "desc": "Guarda estado actual (Vit, PV, estados, posición). Puedes volver a ese estado como acción bonus (o automático al morir). No restaura chi ni duraciones.",
+          "empower": "Lanza el hechizo sobre otro personaje (CON vs Temporal si es hostil)."
+        },
+        {
+          "name": "Estasis",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Parálisis"
+          ],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "crit": "Objetivo no puede intentar liberarse la primera ronda.",
+          "duration": "Concentración",
+          "desc": "Congela objetivo (CON vs Temporal). Paralizado hasta recibir daño o perder concentración. 3 fallos = congelado 1 día.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Ataque Retardado",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Mejora"
+          ],
+          "cost": "2 chi",
+          "duration": "Instantáneo",
+          "desc": "Lanza un ataque/hechizo para que impacte en el futuro (mínimo 1 ronda). Al impactar: Acción bonus, Efecto Crítico y Ataque Sorpresa.",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Tus hechizos Temporales convierten sus dados de daño a d10.",
+      "abilities": [
+        {
+          "name": "Parar el Tiempo",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Área",
+            "Parálisis"
+          ],
+          "cost": "3 acciones, 3 chi",
+          "area": "Esfera grande",
+          "duration": "Una ronda",
+          "desc": "Paraliza a todos (CON vs Temporal) y te da un turno extra inmediato. Termina si atacas a un afectado.",
+          "empower": "Extiende el efecto una ronda adicional al final de tu turno (sin coste)."
+        },
+        {
+          "name": "Visión Futura",
+          "tags": [
+            "Temporal",
+            "Mejora",
+            "Arcana"
+          ],
+          "cost": "3 chi",
+          "duration": "Seis rondas",
+          "desc": "Ventaja en todos los tiros (ataque, defensa, habilidad) e Inmunidad a Sorpresa. Recuperas 1 Premonición/turno y puedes usarlas para Predecir Movimiento.",
+          "empower": "Otorga el hechizo a un aliado."
+        },
+        {
+          "name": "Brecha Temporal",
+          "tags": [
+            "Temporal",
+            "Ambiental",
+            "Arcana"
+          ],
+          "cost": "3 acciones, 3 chi",
+          "area": "Esfera grande",
+          "duration": "Concentración",
+          "desc": "Controlas el tiempo en la zona (duración relativa). Eliges orden de iniciativa. Hechizos temporales cuestan -1 acción (0 = acción bonus).",
+          "empower": "Lanza hechizo temporal de 1 acción como acción bonus."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "Hechizos Temporales Rango IV reducen coste -1 acción.",
+      "abilities": [
+        {
+          "name": "Retroceso en Masa",
+          "tags": [
+            "Temporal",
+            "Arcana",
+            "Ambiental"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "area": "Esfera grande",
+          "duration": "Cinco rondas",
+          "desc": "Guarda estado del campo de batalla. Puedes activarlo para revertir todo al estado guardado (stats, posiciones, estados). Elimina efectos duraderos posteriores.",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

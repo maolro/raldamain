@@ -1,0 +1,221 @@
+{
+  "id": "magia_evocacion",
+  "title": "Magia de Evocación",
+  "category": "Arcana",
+  "image": "magia_evocacion.jpg",
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
+  "description": "Te especializas en la forma más destructiva del chi, provocando explosiones elementales y ráfagas de energía pura. Tu agilidad mental te permite lanzar numerosos hechizos y mantener la concentración bajo presión.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango.",
+    "<strong>Equilibrio elemental:</strong> Tus hechizos elementales se ven afectados por el entorno igual que su rama base.",
+    "<strong>Parada mágica:</strong> Usas Magia de Evocación para tiros de parada y salvaciones contra Fuego, Frío, Radiante, Madera, Tierra o Agua."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Rayo Arcano",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Ataque",
+            "A distancia"
+          ],
+          "cost": "1 acción",
+          "range": "Medio",
+          "crit": "Objetivo sufre herida permanente leve.",
+          "duration": "Instantáneo",
+          "desc": "Rayo de energía (1d6 + Rango Arcano). No esquivable a distancia corta.",
+          "empower": "Ataca a un objetivo adicional."
+        },
+        {
+          "name": "Especialidad Arcana",
+          "tags": [
+            "Evocación",
+            "Pasiva"
+          ],
+          "desc": "Eliges una especialidad (Flujo, Energía, Antienergía, Materia, Electromagnetismo). Otorga resistencias elementales específicas y acceso a aprender hechizos de esas ramas a mayor rango."
+        },
+        {
+          "name": "Descarga de Energía",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "area": "Cono pequeño",
+          "crit": "Afectados sufren herida permanente leve.",
+          "duration": "Instantáneo",
+          "desc": "Cono de energía (1d6 + INT Arcano). Mitad de daño si evitan el ataque.",
+          "empower": "Aumenta tamaño a cono mediano."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "passive": "Aprendes dos hechizos de Rango I de tu Especialidad Arcana.",
+      "abilities": [
+        {
+          "name": "Muro de Energía",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Defensivo",
+            "Duradero"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "area": "Línea mediana o esfera pequeña",
+          "duration": "Concentración",
+          "desc": "Barrera con PV (Rango x 3). Inmune físico no-mágico. Bloquea ataques a distancia/área. Cruzar causa 1d6 + INT daño. Uso defensivo como reacción.",
+          "empower": "Recupera todos los PV del muro (si > 0)."
+        },
+        {
+          "name": "Infundir Arma",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Mejora",
+            "Toque",
+            "Duradero"
+          ],
+          "cost": "3 acciones, 1 chi",
+          "range": "Cuerpo a cuerpo",
+          "duration": "Una hora",
+          "desc": "Arma cuenta como Arcana y da +1 Chi. Permite infundir ataques con hechizos pagando su coste +1 chi (acción bonus).",
+          "empower": "Aumenta la reserva del portador por 1 chi adicional."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Tus hechizos de Evocación convierten daño a d8. Rango I cuesta -1 acción. Aprendes dos hechizos de Rango II de tu Especialidad.",
+      "abilities": [
+        {
+          "name": "Meteoros de Chi",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Duradero",
+            "Defensivo"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Otorga contadores de escudo = Rango. Permite lanzar Rayo Arcano como acción bonus 1/ronda.",
+          "empower": "Recuperas la mitad de tus contadores de escudo (si te queda uno)."
+        },
+        {
+          "name": "Combinar Hechizos",
+          "tags": [
+            "Pasiva",
+            "Evocación",
+            "Arcano",
+            "Mejora"
+          ],
+          "cost": "2 chi",
+          "desc": "Fusiona dos hechizos. Lanza el segundo como acción bonus tras el primero (pagando costes). Si son ataques, se suman daños y efectos en un solo impacto.",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "passive": "Hechizos Rango II cuestan -1 acción. Aprendes dos hechizos de Rango III de tu Especialidad.",
+      "abilities": [
+        {
+          "name": "Rayo Desintegrador",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Ataque",
+            "A distancia"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "crit": "Objetivo sufre herida permanente media.",
+          "duration": "Instantáneo",
+          "desc": "2d8 + INT Arcano + herida leve. Destruye 1 contador de escudo y rompe armadura. Si reduce a 0 PV, desintegra (muerte instantánea).",
+          "empower": "Ataca a un objetivo adicional."
+        },
+        {
+          "name": "Irradiación de Chi",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Ambiental"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio grande",
+          "duration": "Seis rondas",
+          "desc": "Ventaja en Arcana y +1d6 daño Arcano. Magia/Objetos arcanos ajenos fallan 25% (o pagan +1 chi).",
+          "empower": "Probabilidad de fallo aumenta a 50% esta ronda."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Tus hechizos de Evocación convierten daño a d10. Rango III cuesta -1 acción. Aprendes dos hechizos de Rango IV de tu Especialidad.",
+      "abilities": [
+        {
+          "name": "Cañón de Chi",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "area": "Radio medio",
+          "crit": "Afectados sufren herida permanente media.",
+          "duration": "Instantáneo",
+          "desc": "Explosión (2d10 + INT Arcano + herida leve). Ignora barreras mágicas, quita 1 contador escudo y rompe objetos (no artefactos).",
+          "empower": "Aumenta radio a grande o haz otro ataque en lugar diferente."
+        },
+        {
+          "name": "Maestro Elemental",
+          "tags": [
+            "Evocación",
+            "Pasivo"
+          ],
+          "desc": "Aprendes 2 Especialidades arcanas extra. Puedes cambiar hechizos conocidos por otros de diferente rama elemental tras descanso largo.",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "Aprendes dos hechizos de Rango V de cualquier magia elemental.",
+      "abilities": [
+        {
+          "name": "Aniquilación Mágica",
+          "tags": [
+            "Evocación",
+            "Arcano",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "area": "Radio grande",
+          "crit": "Muerte instantánea (sin Resistencia Arcana) o herida grave.",
+          "duration": "Instantáneo",
+          "desc": "4d10 + INT Arcano + herida media. Destruye barreras/escudos/objetos no mágicos. Rompe objetos mágicos. Deja Irradiación de Chi.",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

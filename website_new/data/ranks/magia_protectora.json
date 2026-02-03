@@ -1,0 +1,259 @@
+{
+  "id": "magia_protectora",
+  "title": "Magia Protectora",
+  "category": "Arcana",
+  "image": "magia_protectora.jpg",
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
+  "description": "Te especializas en la defensa mágica, desviando o cerrando los conductos de chi para impedir el uso de magia hostil. Creas campos de fuerza, disipas hechizos, anulas objetos mágicos y proteges contra criaturas extraplanarias.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango.",
+    "<strong>Parada mágica:</strong> Usas Magia Protectora para tiros de parada y salvaciones contra habilidades Arcanas."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Armadura del Mago",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "2 acciones",
+          "duration": "Concentración",
+          "desc": "Campo de fuerza personal. DEF base = Rango + 2. Resistencia a efectos Arcanos. No se acumula con armaduras.",
+          "empower": "Otorga los beneficios a un aliado al tacto."
+        },
+        {
+          "name": "Contrahechizo",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Reacción"
+          ],
+          "desc": "Cancela hechizo arcano enemigo (Rango <= Tuyo + 1). Requiere Posición Defensiva y tiro enfrentado. No funciona contra míticos.",
+          "empower": "Éxito automático contra hechizos de coste X chi o menos (lanzador puede pagar extra para evitarlo)."
+        },
+        {
+          "name": "Disrupción Mágica",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Toque"
+          ],
+          "cost": "1 Acción",
+          "range": "Toque",
+          "crit": "Repones 1 chi.",
+          "duration": "Instantáneo",
+          "desc": "Suprime propiedades de objetos mágicos durante el combate (tiro vs dificultad). No afecta artefactos.",
+          "empower": "Aumenta el alcance a medio."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Eliminar Magia",
+          "tags": [
+            "Protectora",
+            "Arcana"
+          ],
+          "cost": "1 Acción, 1 chi",
+          "range": "Medio",
+          "crit": "Elimina todos los efectos Arcanos activos del objetivo.",
+          "duration": "Instantáneo",
+          "desc": "Anula un hechizo Arcano duradero activo en el objetivo (tiro enfrentado de Magia Arcana).",
+          "empower": "Afecta a un objetivo adicional o cancela un hechizo extra."
+        },
+        {
+          "name": "Círculo de Sellado",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "3 acciones, 1 chi",
+          "range": "Cuerpo a cuerpo",
+          "duration": "Hasta que sea eliminado",
+          "desc": "Barrera contra extraplanarios. No pueden cruzarla ni atacarte directamente (Desventaja en ataques). Pueden romperla con acción (Dificultad Nivel + 3).",
+          "empower": "Trazas el círculo en un aliado para que se mueva con él."
+        },
+        {
+          "name": "Sello Protector",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera",
+            "Toque"
+          ],
+          "cost": "3 acciones, 1 chi",
+          "range": "Cuerpo a cuerpo",
+          "duration": "Seis rondas o hasta eliminado",
+          "desc": "Otorga Resistencia Arcana y defensa usando Magia Protectora. Puedes sacrificar el sello para convertir un fallo defensivo arcano en éxito.",
+          "empower": "Objetivo repite tiro defensivo arcano y elige mejor resultado."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Hechizos Protectores Rango I reducen coste -1 acción.",
+      "abilities": [
+        {
+          "name": "Retener Persona",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Agarre"
+          ],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "crit": "Afecta con Eliminar Magia gratis.",
+          "duration": "Concentración",
+          "desc": "Agarra objetivo con cuerdas de chi (Heroísmo/Acrobacias vs Protectora). Agarrado no puede usar magia Arcana.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Glifo Mágico",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera",
+            "Mejora"
+          ],
+          "cost": "3 acciones, 2 chi",
+          "duration": "Un día o hasta activación",
+          "desc": "Inscribe hechizo conocido (Rango <= Protectora) en superficie. Se activa como acción bonus. Requiere pagar coste del hechizo ligado.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Absorber Chi",
+          "tags": [
+            "Protectora",
+            "Pasiva"
+          ],
+          "desc": "Recuperas 1 chi al anular magia (Eliminar, Disrupción, Contrahechizo). Drenas 1 chi al afectar enemigo con Magia Protectora (y ganas 1 chi)."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "passive": "Hechizos Protectores Rango II reducen coste -1 acción.",
+      "abilities": [
+        {
+          "name": "Campo Antimágico",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "desc": "Anula magia Arcana dentro. Impide lanzamiento y activación de objetos. Desventaja propia en Arcana y no permite hechizos duraderos/externos.",
+          "empower": "Creas el campo alrededor de otra criatura (puede Esquivar)."
+        },
+        {
+          "name": "Exilio",
+          "tags": [
+            "Protectora",
+            "Arcana"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "duration": "Instantáneo",
+          "desc": "Devuelve extraplanario a su plano (Dificultad Nivel + 3). No afecta a míticos ni nativos.",
+          "empower": "Afecta a una criatura extraplanaria adicional."
+        },
+        {
+          "name": "Esfera de Fuerza",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "desc": "Barrera impenetrable (PV = Rango x 6, DEF = Rango + 4). Inmune a Toque, Gaseoso y daño no-mágico. Puede atrapar enemigos (Esquiva).",
+          "empower": "Recupera todos los PV de la esfera (si > 0)."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Hechizos Protectores Rango III reducen coste -1 acción.",
+      "abilities": [
+        {
+          "name": "Disyunción",
+          "tags": [
+            "Protectora",
+            "Arcana"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "duration": "Instantáneo",
+          "desc": "Elimina todos los hechizos Arcanos duraderos y anula objetos mágicos del objetivo (combate). Solo evitable con Magia Protectora.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Ligación Planar",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "3 acciones, 3 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Controla criatura extraplanaria (Dificultad Nivel + 3). Máximo 4 ligadas. Se pierden al perder concentración.",
+          "empower": "Afecta a una criatura adicional."
+        },
+        {
+          "name": "Invertir Chi",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Toque"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Cuerpo a cuerpo",
+          "crit": "Objetivo aturdido 1 ronda.",
+          "duration": "Instantáneo",
+          "desc": "Sobrecarga mágica (CON vs Protectora). Aumenta reserva chi objetivo +3 e inflige daño igual a su reserva total. Objetivo puede gastar chi para reducir daño.",
+          "empower": "Aumenta alcance a medio."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "Hechizos Protectores Rango IV reducen coste -1 acción.",
+      "abilities": [
+        {
+          "name": "Sello Extraplanario",
+          "tags": [
+            "Protectora",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "duration": "Hasta que termine",
+          "desc": "Absorbes criatura ligada (Dificultad Nivel + 3). Ganas sus habilidades, ataques, resistencias y stats (+1 stat/limitador por cada 4 niveles). Si se libera: Disyunción + Invertir Chi.",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

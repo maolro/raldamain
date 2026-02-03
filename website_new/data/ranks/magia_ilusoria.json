@@ -1,0 +1,269 @@
+{
+  "id": "magia_ilusoria",
+  "title": "Magia Ilusoria",
+  "category": "Ocultismo",
+  "image": "magia_ilusoria.jpg",
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
+  "description": "Engañas los sentidos y manipulas la realidad percibida mediante la energía del entorno. Creas imágenes, sonidos y sensaciones falsas para confundir, disfrazarte, volverte invisible o crear monstruos y terrenos ilusorios que pueden llegar a matar.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Crear Ilusión",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Duradera"
+          ],
+          "cost": "1 acción",
+          "range": "Medio",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "desc": "Crea imagen incorpórea (objeto/criatura) sin sonido. Desmentible al interactuar o con Percepción vs Magia Ilusoria (acción bonus).",
+          "empower": "Crea una ilusión adicional o aumenta tamaño a esfera mediana."
+        },
+        {
+          "name": "Disfraz Ilusorio",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Duradera"
+          ],
+          "cost": "2 acciones",
+          "duration": "Concentración",
+          "desc": "Cambia apariencia. Detectable con Percepción/Averiguar intenciones. Permite usar Magia Ilusoria para defenderte de ataques dirigidos (si no te han descubierto).",
+          "empower": "Lanzas el hechizo sobre otra criatura a distancia media."
+        },
+        {
+          "name": "Imagen Fantasmal",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Mental",
+            "Mejora",
+            "Duradera"
+          ],
+          "cost": "1 chi",
+          "range": "Medio",
+          "duration": "Concentración",
+          "desc": "Proyecta ilusión en la mente del enemigo (Concentración/Averiguar vs Ilusoria). Para el afectado es real al tacto y no puede desmentirla con Percepción.",
+          "empower": "Afectas a un objetivo adicional."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Engaño Ilusorio",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Mejora"
+          ],
+          "cost": "1 chi",
+          "desc": "Al fallar un ataque, el objetivo tira Percepción/Averiguar. Si falla, pierde Posición Defensiva y malgasta defensas usadas. Si está afectado por Ilusión Fantasmal, falla automáticamente.",
+          "empower": "Tu ataque fallido era una ilusión: recuperas acciones y chi gastados."
+        },
+        {
+          "name": "Invisibilidad",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Duradera"
+          ],
+          "cost": "1 acción, 1 chi",
+          "duration": "Concentración",
+          "desc": "Invisible. Ataques sorpresa y Sigilo con Magia Ilusoria. Si te detectan, solo ganas Ventaja. Se rompe al atacar o lanzar hechizos.",
+          "empower": "No te vuelves visible tras el siguiente ataque o impacto recibido."
+        },
+        {
+          "name": "Terreno Alucinatorio",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Ambiental",
+            "Duradera"
+          ],
+          "cost": "3 acciones, 1 chi",
+          "area": "Radio grande",
+          "duration": "Concentración",
+          "desc": "Cambia apariencia del terreno. Aumenta alcance ilusorio +1 paso y otorga Ventaja en Ilusoria. Anula ventajas de terreno reales.",
+          "empower": "Siguiente hechizo Ilusorio cuesta -1 acción."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Hechizos Ilusorios Rango I cuestan -1 acción. Ilusiones aumentan a esfera mediana y tienen sonido.",
+      "abilities": [
+        {
+          "name": "Dobles Ilusorios",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Defensiva",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Cercano",
+          "duration": "Concentración",
+          "desc": "Crea copias (cantidad = Rango). Se mueven y actúan (sin interacción física). Reacción: Sacrificar doble para recibir impacto o anular tu ataque fallido.",
+          "empower": "Creas (Rango / 2) dobles adicionales (sin superar máximo)."
+        },
+        {
+          "name": "Terror Ilusorio",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Duradera",
+            "Miedo"
+          ],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "area": "Radio medio",
+          "crit": "Los afectados aumentan su nivel de miedo por un paso adicional.",
+          "duration": "Concentración",
+          "desc": "Pesadilla visible. Quien la vea tira Voluntad/Concentración o aumenta Miedo cada turno. Se puede desmentir o destruir con ataque de área.",
+          "empower": "Atacantes deben superar Voluntad/Concentración o no se atreven a atacar la ilusión."
+        },
+        {
+          "name": "Copiar Hechizo",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Mejora"
+          ],
+          "cost": "2 chi",
+          "duration": "Instantáneo",
+          "desc": "Simula cualquier hechizo de tu Rango sin coste de chi (solo acciones). Sin efecto real. Si es fantasmal, causa daño/efectos psicológicos (0 PV = Inconsciente).",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "passive": "Hechizos Ilusorios Rango II cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Velo de Engaños",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Visual",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Esfera mediana",
+          "duration": "Concentración",
+          "desc": "Confunde apariencia de enemigos (Percepción/Averiguar). Causa estado Confundido y pérdida de Moral. Presencia ayuda a liberar.",
+          "empower": "Cambias apariencia para redirigir un ataque enemigo a otro objetivo."
+        },
+        {
+          "name": "Espejismo Arcano",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Ambiental"
+          ],
+          "cost": "2 chi",
+          "desc": "Requiere Terreno Alucinatorio. Crea barreras, ocultamiento y terreno difícil ilusorios. Si es fantasmal, imita hechizos Ambientales (Rango <= III).",
+          "empower": "Mueves obstáculos a voluntad. En posición defensiva, haces fallar ataque enemigo automáticamente."
+        },
+        {
+          "name": "Asalto Ilusorio",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Pasiva"
+          ],
+          "desc": "Con ilusión activa cerca: Ventaja en Ataque. Repetir 1 tiro/ronda. Usas Magia Ilusoria para ataque e INT para daño de armas.",
+          "empower": "Repites un tiro adicional esta ronda."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Hechizos Ilusorios Rango III cuestan -1 acción.",
+      "abilities": [
+        {
+          "name": "Monstruo Ilusorio",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "3 acciones, 3 chi",
+          "range": "Medio",
+          "area": "Esfera media",
+          "duration": "Concentración",
+          "desc": "Crea monstruo (Nivel 12). Actúa real. Sus ataques son Fantasmales y hechizos son Copias. Se defiende con Magia Ilusoria.",
+          "empower": "Crea un monstruo adicional (Máx 4)."
+        },
+        {
+          "name": "Muerte Fantasmal",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Pasiva"
+          ],
+          "desc": "Ilusiones fantasmales causan daño real (ignora resistencias). Si reducen a 0 PV, causan muerte por paro cardíaco.",
+          "empower": "N/A"
+        },
+        {
+          "name": "Capa de Ilusiones",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Duradera"
+          ],
+          "cost": "1 acción, 3 chi",
+          "duration": "Concentración",
+          "desc": "Disfraz ilusorio mejorado (indesmentible). Ventaja ataques. Lanza Ilusorio Rango <= II gratis 1/ronda. Defensa total con Magia Ilusoria.",
+          "empower": "Éxito automático en tiro defensivo (una vez por enemigo hasta que te desmientan)."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "abilities": [
+        {
+          "name": "Mundo de los Espejos",
+          "tags": [
+            "Ilusoria",
+            "Arcana",
+            "Duradera",
+            "Ambiental"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "area": "Esfera grande",
+          "duration": "Concentración",
+          "desc": "Espejismo Arcano fantasmal total. Enemigos deben superar Percepción/Averiguar o tratarán toda ilusión como real (sin poder desmentir). Ventaja en Ilusoria y reconfiguración de terreno 1/ronda.",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

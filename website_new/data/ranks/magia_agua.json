@@ -1,0 +1,284 @@
+{
+  "id": "magia_agua",
+  "title": "Magia de Agua",
+  "category": "Elementalismo",
+  "image": "magia_agua.jpg",
+  "stats": [
+    "Sabiduría",
+    "Chi"
+  ],
+  "description": "Tienes un control absoluto sobre el agua en estado fluido. Puedes usarla para sanar, protegerte con muros y tentáculos, o desatar su furia en forma de torrentes, olas colosales y tsunamis capaces de devastar el campo de batalla.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Estadística principal:</strong> Sabiduría + Rango.",
+    "<strong>Parada mágica:</strong> Usas Magia de Agua para tiros de parada y salvaciones contra Agua, Fuego, Tierra, Aire o Ácido."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Torrente",
+          "tags": [
+            "Agua",
+            "Ataque",
+            "a Distancia",
+            "Físico"
+          ],
+          "cost": "1 acción",
+          "range": "Medio",
+          "crit": "Objetivo empujado 1 paso y tropezado.",
+          "duration": "Instantáneo",
+          "desc": "Chorro a presión (1d6 + SAB Contundente). Permite desenganchar como acción bonus si objetivo está adyacente.",
+          "empower": "Afecta a un objetivo adicional."
+        },
+        {
+          "name": "Aguas de la Vida",
+          "tags": [
+            "Agua",
+            "Toque",
+            "Curación"
+          ],
+          "cost": "2 acciones",
+          "range": "Toque",
+          "duration": "Instantáneo",
+          "desc": "Cura aliado (Rango + 2 Vitalidad). Daña a no-muertos (1d6 + SAB Radiante, CON vs Agua).",
+          "empower": "Cura herida permanente leve o Aflicción etapa 1."
+        },
+        {
+          "name": "Niebla Envolvente",
+          "tags": [
+            "Agua",
+            "Gaseosa",
+            "Visual",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña o mediana",
+          "duration": "Concentración",
+          "desc": "Neblina que ciega y otorga ocultamiento. Tamaño aumenta con mucha agua disponible.",
+          "empower": "Aumenta tamaño o mueve la niebla un paso."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Muro de Agua",
+          "tags": [
+            "Agua",
+            "Defensivo",
+            "Duradero"
+          ],
+          "cost": "1 acción, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña o línea mediana",
+          "duration": "Concentración",
+          "desc": "Barrera (PV = Rango x 3). Inmune físico no-mágico. Cubierta completa. Protege de Gaseosos. Daña al cruzar (Heroísmo/Atletismo). Uso defensivo como reacción.",
+          "empower": "Recupera todos los PV del muro (requiere agua)."
+        },
+        {
+          "name": "Ola Chocante",
+          "tags": [
+            "Agua",
+            "Ataque",
+            "Área",
+            "Físico",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "range": "Corto",
+          "area": "Línea mediana",
+          "crit": "Fallo automático en tirada de resistencia.",
+          "duration": "Concentración",
+          "desc": "Ola que empuja y derriba (1d6 + SAB Contundente, Heroísmo/Atletismo). Se mueve 1 paso/ronda si concentras.",
+          "empower": "Creas una segunda ola en dirección diferente."
+        },
+        {
+          "name": "Tentáculos de Agua",
+          "tags": [
+            "Agua",
+            "Defensivo",
+            "Duradero"
+          ],
+          "cost": "2 acciones, 1 chi",
+          "duration": "Concentración",
+          "desc": "Otorga (Rango - 1) contadores de escudo. Permite ataque Torrente como acción bonus 1/ronda a adyacente.",
+          "empower": "Crea tentáculo adicional (+1 escudo, +1 ataque bonus)."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Todos tus hechizos de Agua sustituyen sus dados de daño por d8.",
+      "abilities": [
+        {
+          "name": "Prisión Acuosa",
+          "tags": [
+            "Agua",
+            "Mejora",
+            "Agarre",
+            "Duradera"
+          ],
+          "cost": "2 chi",
+          "range": "Medio",
+          "crit": "Objetivo fatigado y se ahoga +1 paso.",
+          "duration": "Concentración",
+          "desc": "Acción bonus tras impactar con agua. Atrapa enemigo (Heroísmo/Atletismo). Agarrado y se ahoga.",
+          "empower": "Afecta a un objetivo adicional impactado."
+        },
+        {
+          "name": "Controlar el Agua",
+          "tags": [
+            "Agua",
+            "Ambiental",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio grande",
+          "duration": "Concentración",
+          "desc": "Inunda área (terreno difícil). Ventaja en Magia de Agua. Corrientes dificultan nadar (Atletismo) y pueden ahogar.",
+          "empower": "Siguiente hechizo de Agua cuesta -1 acción."
+        },
+        {
+          "name": "Invocar Elemental de Agua",
+          "tags": [
+            "Agua",
+            "Invocación"
+          ],
+          "cost": "3 acciones, 2 chi",
+          "range": "Medio",
+          "duration": "Una hora",
+          "desc": "Invoca Elemental de Agua Nivel 6 (o +2 por Rango > III).",
+          "empower": "Elemental recupera mitad de Vitalidad."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "abilities": [
+        {
+          "name": "Vórtice",
+          "tags": [
+            "Agua",
+            "Ataque",
+            "Área",
+            "Restricción",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "area": "Pequeño radio",
+          "crit": "Fallo automático para evitar agarre.",
+          "duration": "Concentración",
+          "desc": "Remolino que atrapa y ahoga (1d8 + SAB Contundente). Arrastra al centro y daña cada turno.",
+          "empower": "Aumenta radio a mediano."
+        },
+        {
+          "name": "Escaldar",
+          "tags": [
+            "Agua",
+            "Mejora"
+          ],
+          "cost": "1 acción, 2 chi",
+          "area": "Radio pequeño",
+          "crit": "Quemadura de segundo grado.",
+          "duration": "Una ronda",
+          "desc": "Hierve el agua. Daño Fuego (1d6 + Rango) y quemadura leve al tocar agua. Añade daño Fuego a ataques de Agua. Penetra resistencia Fuego.",
+          "empower": "Aumenta radio a mediano."
+        },
+        {
+          "name": "Taladro Hidráulico",
+          "tags": [
+            "Agua",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "1 acción, 2 chi",
+          "area": "Línea mediana",
+          "crit": "Herida media, tropezado y pierde 1 escudo extra.",
+          "duration": "Instantáneo",
+          "desc": "Chorro a alta presión (2d8 + SAB Contundente + herida leve). Perfora muros, rompe armadura, quita escudo, ignora defensa estructuras/elementales.",
+          "empower": "Segundo ataque en dirección diferente."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Todos tus hechizos de Agua sustituyen sus dados de daño por d10.",
+      "abilities": [
+        {
+          "name": "Tsunami",
+          "tags": [
+            "Agua",
+            "Ataque",
+            "Área",
+            "Agarre",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "area": "Línea grande",
+          "crit": "Fallo automático para evitar agarre.",
+          "duration": "Concentración",
+          "desc": "Ola colosal (2d10 + SAB Contundente). Agarra y ahoga. Se mueve cada ronda. Al chocar o terminar: 3d10 daño y tropezado.",
+          "empower": "Aumenta daño +1d10 esta ronda."
+        },
+        {
+          "name": "Lluvias Torrenciales",
+          "tags": [
+            "Agua",
+            "Ambiental"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Personal",
+          "area": "Campo de batalla",
+          "duration": "Una hora",
+          "desc": "Lluvia intensa. Ventaja en Magia de Agua. Ocultamiento global. Suministro constante de agua.",
+          "empower": "Siguiente hechizo de Agua cuesta -1 acción."
+        },
+        {
+          "name": "Vapor Hirviente",
+          "tags": [
+            "Agua",
+            "Gaseoso",
+            "Área",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "range": "Medio",
+          "area": "Esfera mediana",
+          "crit": "Quemadura media.",
+          "duration": "Concentración",
+          "desc": "Nube de vapor (Ocultamiento). Daño Fuego (1d10 + SAB) y quemadura leve al entrar. Penetra resistencia Fuego.",
+          "empower": "Aumenta tamaño o daño (2d10)."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "abilities": [
+        {
+          "name": "Furia del Océano",
+          "tags": [
+            "Agua",
+            "Ambiental"
+          ],
+          "cost": "3 acciones, 5 chi",
+          "area": "Radio grande",
+          "duration": "Siete rondas",
+          "desc": "Tormenta masiva. Efectos Lluvias Torrenciales. Rondas 2/4/6 permiten lanzar Ola Aplastante/Vórtice/Tsunami gratis como acción bonus.",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}
