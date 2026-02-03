@@ -2,14 +2,14 @@
 # Format: /from /to [status]
 
 # Rangos
-/rango/* /rango.html 200
+/rango/* /_rango.html 200
 
 # Criaturas
-/criatura/* /criatura.html 200
+/criatura/* /_criatura.html 200
 
 # Mundo
-/mundo/categoria/* /mundo_categoria.html 200
-/mundo/articulo/* /mundo_articulo.html 200
+/mundo/categoria/* /_mundo_categoria.html 200
+/mundo/articulo/* /_mundo_articulo.html 200
 
 # Equipo
-/equipo/* /equipo.html 200
+/equipo/* /_equipo.html 200
