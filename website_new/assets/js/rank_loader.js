@@ -71,7 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderRankPage(data) {
-    // A. Fill Hero Section
+    // A. Update Meta Tags for Social Media Previews
+    if (typeof updateMetaTags === 'function') {
+        updateMetaTags({
+            title: `${data.title} | Raldamain Rangos`,
+            description: data.description || `Explora el rango ${data.title} con todas sus habilidades y estadísticas.`,
+            image: `${window.location.origin}/assets/images/ranks/${data.image}`,
+            url: window.location.href,
+            type: 'article'
+        });
+    }
+
+    // B. Fill Hero Section
     document.getElementById("rank-title").innerText = data.title;
     
     // Set Background Image dynamically

@@ -25,7 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderEquipmentPage(data) {
-    // A. Fill Hero Section
+    // A. Update Meta Tags for Social Media Previews
+    if (typeof updateMetaTags === 'function') {
+        updateMetaTags({
+            title: `${data.name} | Raldamain Equipos`,
+            description: data.description || `${data.type} - ${data.subtype}`,
+            image: data.image ? `${window.location.origin}/assets/images/equipment/${data.image}` : `${window.location.origin}/assets/images/raldamain_logo.png`,
+            url: window.location.href,
+            type: 'article'
+        });
+    }
+
+    // B. Fill Hero Section
     document.getElementById("equipment-title").innerText = data.name;
 
     // Set Background Image dynamically

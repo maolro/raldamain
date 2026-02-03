@@ -71,8 +71,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderCreaturePage(data) {
-    // A. Set page title
-    document.title = `${data.name} | Raldamain Bestiario`;
+    // A. Update Meta Tags for Social Media Previews
+    if (typeof updateMetaTags === 'function') {
+        updateMetaTags({
+            title: `${data.name} | Raldamain Bestiario`,
+            description: `${data.type} de nivel ${data.level}. ${data.lore ? data.lore.substring(0, 150) + '...' : ''}`,
+            image: data.image ? `${window.location.origin}/assets/images/${data.image}` : `${window.location.origin}/assets/images/raldamain_logo.png`,
+            url: window.location.href,
+            type: 'article'
+        });
+    } else {
+        // Fallback: just set page title
+        document.title = `${data.name} | Raldamain Bestiario`;
+    }
 
     // B. Hero Section
     document.getElementById("creature-name").innerText = data.name;
