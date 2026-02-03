@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // The ID is the last part of the URL
     const fileId = segments[segments.length - 1];
 
+    // Debug logging - check browser console (F12)
+    console.log("URL Path:", path);
+    console.log("Segments:", segments);
+    console.log("Rank ID:", fileId);
+    console.log("Fetching:", `/data/ranks/${fileId}.json`);
+
     // Fetch the JSON file
     fetch(`/data/ranks/${fileId}.json`) // Note the / at the start
         .then(response => {
