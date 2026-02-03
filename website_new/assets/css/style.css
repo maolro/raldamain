@@ -182,3 +182,193 @@ body {
 .nav-links a.active {
     color: var(--accent-gold);
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--accent-gold);
+    transition: all 0.3s;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+    /* Navbar Mobile */
+    .navbar {
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-logo {
+        height: 40px;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 3;
+    }
+
+    .search-container {
+        order: 2;
+        flex: 1;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .search-container input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        order: 4;
+        margin-top: 1rem;
+        background: var(--secondary-black);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .btn-builder {
+        border: none;
+        border-bottom: 1px solid var(--accent-gold);
+        border-radius: 0;
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        height: 50vh;
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Container Mobile */
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    /* Card Grid Mobile */
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.75rem;
+    }
+
+    .nav-logo {
+        height: 35px;
+    }
+
+    .search-container {
+        max-width: 150px;
+    }
+
+    .search-container input {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .search-container button {
+        padding: 6px 8px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .card-grid {
+        gap: 1rem;
+    }
+
+    .card-content {
+        padding: 0.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    /* Filter Buttons Mobile */
+    .filter-container {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Large Screens - Improve readability */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}

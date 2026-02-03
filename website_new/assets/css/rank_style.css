@@ -170,3 +170,92 @@
 .status-effect-link em {
     font-style: italic;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE - RANKS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .rank-hero {
+        height: 35vh;
+        padding: 1rem;
+    }
+
+    .rank-hero h1 {
+        font-size: 2rem;
+    }
+
+    .rank-meta {
+        gap: 10px;
+    }
+
+    .meta-badge {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+
+    .rank-level-header {
+        gap: 10px;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .rank-number {
+        font-size: 2rem;
+    }
+
+    .rank-title {
+        font-size: 1.5rem;
+    }
+
+    .ability-card {
+        padding: 1rem;
+    }
+
+    .ability-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .ability-title {
+        font-size: 1.2rem;
+    }
+
+    .ability-stats {
+        gap: 8px;
+    }
+
+    .stat-pill {
+        font-size: 0.75rem;
+    }
+
+    .ability-desc {
+        font-size: 0.9rem;
+    }
+
+    .empower-box {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rank-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .rank-number {
+        font-size: 1.5rem;
+    }
+
+    .rank-title {
+        font-size: 1.2rem;
+    }
+
+    .ability-card {
+        padding: 0.75rem;
+    }
+
+    .ability-title {
+        font-size: 1.1rem;
+    }
+}
