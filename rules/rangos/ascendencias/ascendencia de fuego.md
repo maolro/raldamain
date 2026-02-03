@@ -76,7 +76,7 @@ El aura te otorgará también Resistencia a efectos de Agua, Frío y Naturaleza.
 
 **Duración:** Concentración
 
-Empleas el fuego para propulsarte por los cielos a gran velocidad. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración y no puedes acabar tu turno en el aire al usarla.
+	Empleas el fuego para propulsarte por los cielos a gran velocidad. Mientras esta habilidad permanezca activa obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. Este hechizo permanecerá activo hasta que pierdas la concentración y no puedes acabar tu turno en el aire al usarla.
 
 **Empoderar** (1 chi o vigor): Te impulsas a gran velocidad para evitar un ataque, pudiendo así reducir el daño de un ataque enemigo que te haya impactado a la mitad. Solo puedes empoderar así una vez por ronda y funciona de la misma manera que la habilidad Evasión.
 

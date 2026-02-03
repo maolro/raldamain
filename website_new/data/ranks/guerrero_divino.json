@@ -1,0 +1,209 @@
+{
+  "id": "guerrero_divino",
+  "title": "Guerrero Divino",
+  "category": "Religión",
+  "image": "guerrero_divino.jpg",
+  "stats": [
+    "Carisma",
+    "Vigor",
+    "Chi"
+  ],
+  "description": "Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. Este don otorgado por los dioses crecerá alimentándose de tu fe y ambición siempre que estos coincidan con los deseos de tus dioses dándote fuertes habilidades que te convertirán en un santo viviente.",
+  "fundamentals": [
+    "<strong>Fuerza y magia:</strong> Tu rango en Guerrero divino mejorará tus reservas de vigor y chi, incrementando ambas por un valor igual a tu Rango. Se acumula con otras habilidades.",
+    "<strong>Estadística principal:</strong> Tu modificador de Guerrero Divino será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.",
+    "<strong>Conocimiento de los dioses:</strong> Canalizas una pequeña porción de los poderes de tu dios. Cada dios tiene magias relacionadas que podrás aprender a rangos superiores."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Azote Divino",
+          "tags": [
+            "Divina",
+            "Mejora"
+          ],
+          "cost": "1 vigor o chi",
+          "duration": "Una ronda",
+          "desc": "Empoderas tus ataques con el poder de tu divinidad. La siguiente vez que impactes con un ataque físico provocarás 1d6 daño adicional  (tipo según dios). Aumenta a 2d6 a Rango III y a 3d6 a Rango VI. Alternativamente, infundes un ataque con un hechizo que conozcas (acción bonus).",
+          "empower": "Extiendes este efecto una ronda adicional, permitiéndote volver a realizarlo la siguiente vez que impactes sin coste."
+        },
+        {
+          "name": "Sentido Divino",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Sientes la posición de no-muertos, criaturas extraplanarias y presencias mágicas o divinas a distancia media. Identificas fuerza aproximada y tipo."
+        },
+        {
+          "name": "Canalizar Divinidad",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Aprendes dos hechizos de Rango I de una rama vinculada a tu dios. Usas bonificador de Guerrero Divino y CAR para lanzarlos, y puedes pagar con vigor."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "abilities": [
+        {
+          "name": "Guerrero de la Fe",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Ganas Ventaja en ataque y defensa con armas y hechizos de tu dios, y Resistencia a Miedo/Mentales. Dura 6 rondas. Al terminar, pierdes chi/vigor igual a las rondas activas (riesgo de exhausto/inconsciente).",
+          "empower": "N/A"
+        },
+        {
+          "name": "Plegaria de Batalla",
+          "tags": [
+            "Divina",
+            "Ritual"
+          ],
+          "desc": "Durante un descanso corto, rezas con aliados. Los participantes obtienen 3 usos de Milagro menor hasta gastarlos o pasar un día."
+        },
+        {
+          "name": "Impacto Desacralizador",
+          "tags": [
+            "Divina",
+            "Mejora"
+          ],
+          "cost": "1 chi o vigor",
+          "crit": "Elimina todos los hechizos Arcanos y Divinos activos del objetivo.",
+          "desc": "Al impactar, puedes eliminar un efecto Arcano o Divino activo (tiro enfrentado). También puede anular habilidades pasivas por una ronda.",
+          "empower": "Eliminas un hechizo adicional o la anulación pasiva dura una ronda más."
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Aprendes dos hechizos de Rango II de tu dios (puedes usar vigor).",
+      "abilities": [
+        {
+          "name": "Presencia Divina",
+          "tags": [
+            "Divina",
+            "Duradera",
+            "Moral",
+            "Miedo",
+            "Visual"
+          ],
+          "cost": "2 acciones, 2 chi o vigor",
+          "area": "Radio medio",
+          "duration": "Concentración",
+          "desc": "Enemigos a distancia media deben tirar Voluntad/Intimidar o ganar Miedo. Aliados ganan Resistencia a Miedo y Mentales.",
+          "empower": "Aliado recibe Vitalidad (Rango + 2) o cancela efecto de Moral enemiga."
+        },
+        {
+          "name": "Aura Protectora",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Resistencia a efectos Arcanos y Divinos. Puedes pagar chi/vigor para convertir un fallo contra hechizos en éxito (igual al coste del lanzador)."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "abilities": [
+        {
+          "name": "Hueste Divina",
+          "tags": [
+            "Divina",
+            "Mejora",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Radio medio",
+          "duration": "Concentración",
+          "desc": "Aliados reciben Ventaja en ataque y defensa con armas y hechizos relacionados con tu dios.",
+          "empower": "Aliado recupera Vitalidad igual a tu Rango + 2 (una vez por persona/ronda)."
+        },
+        {
+          "name": "Aliento de Vida",
+          "tags": [
+            "Divina",
+            "Resurrección"
+          ],
+          "cost": "1 acción, 2 chi o vigor",
+          "range": "Toque",
+          "duration": "Instantáneo",
+          "desc": "Resucita a criatura muerta hace máx 1 ronda a 1 PV y consciencia. Mantiene heridas (Críticas pasan a Graves).",
+          "empower": "Usar como acción bonus en ti mismo al caer a < 1 PV."
+        },
+        {
+          "name": "Golpe Exiliante",
+          "tags": [
+            "Divina",
+            "Mejora"
+          ],
+          "cost": "2 vigor o chi",
+          "duration": "Una ronda",
+          "desc": "Al impactar criatura extraplanaria, intenta enviarla a su plano (Dificultad Nivel + 3). No afecta a míticas.",
+          "empower": "N/A"
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Aprendes dos hechizos de Rango III de tu dios (puedes usar vigor).",
+      "abilities": [
+        {
+          "name": "Azote Ejecutor",
+          "tags": [
+            "Divina",
+            "Mejora"
+          ],
+          "cost": "3 vigor o chi",
+          "crit": "Tu objetivo quedará aturdido durante una ronda.",
+          "duration": "Una ronda",
+          "desc": "Siguiente impacto inflige 2d10 + CAR daño extra. Si reduce a 0 PV, mata instantáneamente (sin resurrección).",
+          "empower": "Extiendes el efecto una ronda adicional."
+        },
+        {
+          "name": "Explosión Divina",
+          "tags": [
+            "Divina",
+            "Ataque",
+            "Área"
+          ],
+          "cost": "2 acciones, 3 vigor o chi",
+          "area": "Radio medio",
+          "crit": "Los afectados quedarán aturdidos durante una ronda.",
+          "duration": "Instantáneo",
+          "desc": "Ataque de área: 3d10 + CAR daño. Éxito mitad daño. Adyacentes fallan automáticamente.",
+          "empower": "Lanzas como acción bonus tras atacar con arma."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "abilities": [
+        {
+          "name": "Avatar Divino",
+          "tags": [
+            "Divina",
+            "Duradera",
+            "Mejora"
+          ],
+          "cost": "3 acciones, 5 vigor o chi",
+          "duration": "Seis rondas",
+          "desc": "+40 Vitalidad temporal. Stats físicas a 12, DEF 20. Resistencias múltiples e Inmunidad Aflicciones/Toque. Vuelo 1. 6 contadores de escudo. Hechizos gratis (coste acción).",
+          "empower": "N/A"
+        }
+      ]
+    }
+  ]
+}

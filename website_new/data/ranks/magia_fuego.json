@@ -18,20 +18,11 @@
         {
           "name": "Llamarada",
           "tags": ["Fuego", "Ataque", "A distancia"],
-          "cost": "1 acción",
+          "cost": "1+ acciones",
           "range": "Medio",
           "crit": "Objetivo sufre quemadura leve.",
-          "desc": "Inflige 1d6 + CAR daño Fuego y prende objetos inflamables.",
+          "desc": "Inflige 1d6 + CAR daño Fuego y prende objetos inflamables. <br></br>Puedes emplear una acción adicional para hacer otro ataque contra el mismo objetivo, quien debe emplear el mismo resultado defensivo.",
           "empower": "Afecta a un objetivo adicional al alcance."
-        },
-        {
-          "name": "Asalto Abrasador",
-          "tags": ["Fuego", "Cuerpo a cuerpo", "Ataque"],
-          "cost": "1+ acciones",
-          "range": "Cuerpo a cuerpo",
-          "crit": "Objetivo sufre quemadura leve.",
-          "desc": "Inflige 1d6 + CAR daño Fuego. Puedes emplear una acción adicional para hacer otro ataque contra el mismo objetivo, quien debe emplear el mismo resultado defensivo.",
-          "empower": "Aumenta el alcance a cercano durante una ronda."
         },
         {
           "name": "Aliento de Fuego",
@@ -45,13 +36,14 @@
         {
           "name": "Fuego Interno",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Obtienes Resistencia al daño Fuego y Frío además de Imnunidad al calor y frío extremo."
+          "desc": "Obtienes Resistencia al daño Fuego y Frío además de Imnunidad al calor y frío extremo. Tienes también visión térmica a distancia media."
         }
       ]
     },
     {
       "rank": "II",
       "title": "Adepto",
+      "passive": "Aumenta estadística de Destreza por 1",
       "abilities": [
         {
           "name": "Muro de Llamas",
@@ -61,7 +53,7 @@
           "area": "Esfera pequeña / Línea media",
           "duration": "Concentración",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Crea un muro con PV iguales a tu Rango x 3. El muro proporciona cubierta parcial e inflige 1d6 + CAR daño Fuego a las criaturas que intenten cruzarlo. \nSi se emplea como Reacción defensiva puede reducir el daño de un ataque que recibas por un valor igual a sus PV.",
+          "desc": "Crea un muro con PV iguales a tu Rango x 3. El muro proporciona cubierta parcial e inflige 1d6 + CAR daño Fuego a las criaturas que intenten cruzarlo. <br></br>Si se emplea como Reacción defensiva puede reducir el daño de un ataque que recibas por un valor igual a sus PV.",
           "empower": "Restaura todos los PV del muro."
         },
         {
@@ -75,21 +67,15 @@
           "empower": "Lanza una bola adicional con la misma carga a otro objetivo."
         },
         {
-          "name": "Látigo Flamígero",
-          "tags": ["Fuego", "Ataque", "Duradero"],
-          "cost": "1 acción, 1 chi",
-          "range": "Cercano",
-          "duration": "Concentración",
-          "crit": "Objetivo sufre quemadura leve.",
-          "desc": "Invoca arma (1d6 + CAR daño Fuego). Estando en defensiva, permite atacar como reacción a enemigos que entren en tu alcance.",
-          "empower": "Ataque extra a otro objetivo a distancia corta."
+          "name": "Infusión de Fuego",
+          "tags": ["Fuego", "Pasiva"],
+          "desc": "Tus armas provocan 1d6 daño Fuego adicional al impactar y cuentan como mágicas. También puedes emplear tu modificador de Magia de Fuego para todos tus tiros relacionados con armas.<br></br>El daño Fuego aumenta a 2d6 a Rango IV y a 3d6 a Rango VI"
         }
       ]
     },
     {
       "rank": "III",
       "title": "Profesional",
-      "passive": "Daño base sube a d8. Hechizos Rango I cuestan -1 acción.",
       "abilities": [
         {
           "name": "Erupción Abrasadora",
@@ -97,69 +83,60 @@
           "cost": "2 acciones, 2 chi",
           "area": "Esfera mediana",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Explosión centrada en ti (2d8 + CAR daño Fuego). No puede ser parada por enemigos adyacentes.",
+          "desc": "Explosión centrada en ti que provoca 3d8 + CAR daño Fuego al impactar. Si objetivo ya arde, solo puede defenderse con un tiro de salvación de VOL.",
           "empower": "Usar como reacción al ser golpeado."
         },
         {
-          "name": "Maestro de las Llamas",
-          "tags": ["Fuego", "Ambiental"],
-          "cost": "3 acciones, 2 chi",
-          "area": "Radio medio",
+          "name": "Propulsión",
+          "tags": ["Fuego", "Duradera"],
+          "cost": "1 acción, 2 chi",
           "duration": "Concentración",
-          "desc": "Ganas Ventaja en Magia de Fuego. Acción bonus: Apagar fuego o fortalecerlo (creando efecto de daño de Muro de Llamas).",
-          "empower": "Siguiente hechizo de fuego cuesta -1 acción."
+          "desc": "Obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. No puedes acabar tu turno en el aire.",
+          "empower": "Te mueves un paso y reduces el daño de un ataque enemigo a la mitad. Cuesta 1 Reacción."
         },
         {
-          "name": "Invocar Elemental",
-          "tags": ["Fuego", "Invocación"],
-          "cost": "3 acciones, 2 chi",
-          "range": "Medio",
-          "duration": "1 hora",
-          "desc": "Invoca Elemental de Fuego Nvl 6. Nivel aumenta +2 por cada Rango tuyo superior a III.",
-          "empower": "Elemental se cura 50% de su Vitalidad."
+          "name": "Elemento del Poder",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Reduce Vitalidad o PV máximos por 2 para reducir el coste de un hechizo por 1 chi (mínimo 1)."
         }
       ]
     },
     {
       "rank": "IV",
       "title": "Experto",
-      "passive": "Hechizos Rango II cuestan -1 acción.",
+      "passive": "Aumenta estadística de Carisma por 1",
       "abilities": [
         {
-          "name": "Danza de las Llamas",
-          "tags": ["Fuego", "Duradera", "Defensiva"],
-          "cost": "2 acciones, 2 chi",
-          "duration": "Concentración",
-          "desc": "Ganas Escudos = Rango. Acción bonus: lanzar 'Llamarada'. Recuperas 1 escudo al inicio de turno si estás en fuego.",
-          "empower": "Recuperas 1 escudo extra."
+          "name": "Renacer del Fénix",
+          "tags": ["Fuego", "Reacción"],
+          "cost": "1 reacción, 1 chi",
+          "desc": "Recupera Vitalidad igual a tu Rango x 2 y reduce el nivel de una herida permanente por un paso. Requiere estar en un lugar en llamas o sufrir un ataque que provoque daño fuego (el cual sería anulado de inmediato)."
         },
         {
           "name": "Torbellino de Fuego",
           "tags": ["Fuego", "Ataque", "Área"],
-          "cost": "3 acciones, 2 chi",
+          "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "area": "Cilindro pequeño",
           "duration": "Concentración",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Torbellino móvil (1d8 + CAR daño Fuego). Deja rastro de Muro de Llamas. Mover como acción.",
-          "empower": "Crea torbellino extra o +1d8 daño."
+          "desc": "Torbellino móvil que provoca 2d8 + CAR daño Fuego. Deja rastro de Muro de Llamas y puede moverse como acción.",
+          "empower": "Crea torbellino extra o aumenta el daño de un torbellino por 1d8 y su alcance por un paso durante una ronda."
         },
         {
-          "name": "Inmolación",
-          "tags": ["Fuego", "Área"],
+          "name": "Maestro de las Llamas",
+          "tags": ["Fuego", "Duradera"],
           "cost": "2 acciones, 2 chi",
-          "range": "Medio",
-          "area": "Esfera corta",
-          "crit": "Afectados sufren quemadura grave.",
-          "desc": "Explosión concentrada (3d8 + CAR daño Fuego). Si objetivo ya arde, solo puede defenderse con CON.",
-          "empower": "Afecta objetivo adicional o +1 paso de tamaño."
+          "duration": "Concentración",
+          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego y el espacio a distancia media a ti cuenta como calor extremo. Recibes también una cantidad de contadores de escudo igual a tu Rango.",
+          "empower": "Siguiente hechizo de fuego cuesta -1 acción."
         }
       ]
     },
     {
       "rank": "V",
       "title": "Maestro",
-      "passive": "Daño base sube a d10. Hechizos Rango III cuestan -1 acción.",
+      "passive": "Los dados de daño base aumentan a d10.",
       "abilities": [
         {
           "name": "Lluvia de Brasas",
@@ -168,44 +145,51 @@
           "range": "Medio",
           "area": "4 Esferas pequeñas",
           "crit": "Afectados sufren quemadura grave.",
-          "desc": "4 explosiones simultáneas (3d10 + CAR daño Fuego c/u). Puedes dejar bolas suspendidas para lanzarlas luego.",
+          "desc": "4 explosiones simultáneas que provocan 4d10 + CAR daño Fuego. Puedes dejar bolas suspendidas para lanzarlas luego.",
           "empower": "+1 bola de fuego (Max 3 extra)."
         },
         {
-          "name": "Nube Incendiaria",
-          "tags": ["Fuego", "Gaseosa", "Aflicción"],
-          "cost": "2 acciones, 3 chi",
-          "range": "Medio",
-          "area": "Esfera pequeña",
-          "duration": "Concentración",
-          "crit": "Aumenta veneno un paso.",
-          "desc": "Nube tóxica (Ocultamiento). Daño (1d10 + CAR) + Veneno de CON al entrar o empezar turno dentro.",
-          "empower": "Tamaño mediano o daño 2d10."
-        },
-        {
           "name": "Rayo de Plasma",
-          "tags": ["Fuego", "Ataque", "A distancia"],
+          "tags": ["Fuego", "Ataque", "Área"],
           "cost": "1 acción, 3 chi",
           "range": "Lejano",
-          "duration": "Concentración",
+          "area": "Línea grande",
           "crit": "Herida permanente grave.",
-          "desc": "Rayo perforante (3d10 + CAR Radiante). Ignora muros, armadura y escudos. Recarga gratis si mantienes concentración.",
-          "empower": "Objetivo adicional o redirigir (Reacción)."
+          "desc": "Rayo que provoca 4d10 + CAR daño Radiante. Ignora muros, armadura y escudos.",
+          "empower": "Afecta a un objetivo adicional al alcance o vuelve a emplear este hechizo sin pagar chi."
+        },
+        {
+          "name": "Llama Viviente",
+          "tags": ["Fuego", "Duradera"],
+          "cost": "1 acción, 2 chi",
+          "duration": "Concentración",
+          "desc": "Te transformas en fuego para recibir Inmunidad a efectos Físicos no-mágicos, Agarres, Mentales, Fuego y Aflicciones a costa de perder toda tu Defensa y recibir Vulnerabilidad efectos a Agua y Hielo.<br></br>Esta habilidad emplearse como reacción para evitar automáticamente un efecto."
         }
       ]
     },
     {
       "rank": "VI",
       "title": "Ascendido",
-      "passive": "Hechizos Rango IV cuestan -1 acción. Ignoras 1 paso de Resistencia al Fuego.",
+      "passive": "Aumenta estadística de Constitución por 1.",
       "abilities": [
         {
           "name": "Infierno Abrasador",
           "tags": ["Fuego", "Ambiental"],
-          "cost": "3 acciones, 5 chi",
+          "cost": "2 acciones, 5 chi",
           "area": "Radio grande",
-          "duration": "7 rondas",
-          "desc": "Calor extremo (Disipa Frío). Hechizos Rango I y II gratis (0 Chi). A partir de 4ª ronda: Detonar todo para lanzar Inmolación masiva gratis (+1d daño)."
+          "duration": "6 rondas",
+          "desc": "Calor extremo que disipa todos los efectos de Frío. Hechizos Rango I y II gratis (0 Chi). A partir de 4ª ronda: Detonar todo para lanzar Inmolación masiva gratis con +1 dado de daño."
+        },
+        {
+          "name": "Forma Elemental",
+          "tags": [
+            "Fuego",
+            "Duradera"
+          ],
+          "cost": "1 acción, 5 vigor o chi",
+          "duration": "Seis rondas",
+          "desc": "+40 Vitalidad temporal. Stats físicas y CAR a 12, +1 dado de daño en hechizos. Inmunidad Aflicciones/Toque. Vuelo 1. 6 contadores de escudo. Estás rodeado siempre por Muro de Fuego y tienes activo Aura Abrasadora, Propulsión y Asalto Flamígero.",
+          "empower": "N/A"
         }
       ]
     }
