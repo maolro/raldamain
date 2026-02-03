@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const segments = path.split('/').filter(part => part.length > 0);
     const fileId = segments[segments.length - 1];
 
+    // Debug logging - check browser console (F12)
+    console.log("Equipment Loader Debug:");
+    console.log("  URL Path:", path);
+    console.log("  Segments:", segments);
+    console.log("  File ID:", fileId);
+    console.log("  Fetching:", `/data/equipment/${fileId}.json`);
+
     // Fetch the JSON file
     fetch(`/data/equipment/${fileId}.json`)
         .then(response => {

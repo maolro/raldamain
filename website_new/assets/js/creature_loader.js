@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("statblock").innerHTML = `
                 <div style="padding: 2rem; text-align: center;">
                     <p style="color: #ff6b6b;">No se pudo cargar la información de esta criatura.</p>
-                    <a href="/criaturas.html" style="color: var(--accent-gold);">Volver al Bestiario</a>
+                    <a href="/criaturas" style="color: var(--accent-gold);">Volver al Bestiario</a>
                 </div>
             `;
         });
