@@ -1,15 +1,19 @@
 # Cloudflare Pages redirects
 # Format: /from /to [status]
+# Status 200 = rewrite (invisible), 301/302 = redirect (visible)
 
-# Rangos
+# Main pages (clean URLs without .html)
+/reglas /reglas.html 200
+/rangos /rangos.html 200
+/criaturas /criaturas.html 200
+/equipos /equipos.html 200
+/mundo /mundo.html 200
+
+# Detail pages (dynamic)
 /rango/* /_rango.html 200
-
-# Criaturas
 /criatura/* /_criatura.html 200
+/equipo/* /_equipo.html 200
 
-# Mundo
+# Mundo sub-pages
 /mundo/categoria/* /_mundo_categoria.html 200
 /mundo/articulo/* /_mundo_articulo.html 200
-
-# Equipo
-/equipo/* /_equipo.html 200

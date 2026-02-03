@@ -18,15 +18,15 @@ function loadNavbar() {
         </div>
         <ul class="nav-links">
             <li><a href="/reglas.html">Reglas Principales</a></li>
-            <li><a href="/rangos.html">Rangos</a></li>
-            <li><a href="/criaturas.html">Criaturas</a></li>
-            <li><a href="/equipos.html">Equipamiento</a></li>
+            <li><a href="/rangos">Rangos</a></li>
+            <li><a href="/criaturas">Criaturas</a></li>
+            <li><a href="/equipos">Equipamiento</a></li>
             <li><a href="/mundo">El Mundo</a></li>
             <li><a href="#" class="btn-builder">Creador de Personajes</a></li>
         </ul>
         <div class="search-container">
-            <input type="text" placeholder="Buscar información aquí...">
-            <button>🔍</button>
+            <input type="text" id="search-input" placeholder="Buscar información aquí...">
+            <button type="button" id="search-button">🔍</button>
         </div>
         <div class="hamburger">
             <span></span>
@@ -41,9 +41,12 @@ function loadNavbar() {
 
     // 4. Highlight the "Active" page automatically
     highlightActiveLink();
-    
+
     // 5. Initialize Mobile Menu (since the HTML didn't exist before this script ran)
     initMobileMenu();
+
+    // 6. Initialize Search (prevent default button behavior)
+    initSearch();
 }
 
 function highlightActiveLink() {
@@ -60,10 +63,37 @@ function highlightActiveLink() {
 function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if(hamburger) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+        });
+    }
+}
+
+function initSearch() {
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.getElementById('search-input');
+
+    if(searchButton) {
+        searchButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent any default behavior
+            const query = searchInput.value.trim();
+
+            if(query) {
+                // TODO: Implement search functionality
+                console.log('Búsqueda:', query);
+                // For now, just log it. Later you can redirect to a search page:
+                // window.location.href = `/buscar?q=${encodeURIComponent(query)}`;
+            }
+        });
+
+        // Also handle Enter key in search input
+        searchInput.addEventListener('keypress', (e) => {
+            if(e.key === 'Enter') {
+                e.preventDefault();
+                searchButton.click();
+            }
         });
     }
 }
