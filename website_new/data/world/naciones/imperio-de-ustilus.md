@@ -40,6 +40,8 @@ Aunque Variago era conocido por su forma de gobernar absolutista y despiadada, s
 
 Todos estos problemas se olvidaron en los años cercanos al retorno profetizado de Feyn, creyendo ingenuamente que la llegada de su dios convertiría a Ustilus en el paraíso terrenal. Pero todos estos sueños fueron en vano. La desaparición repentina y sin explicaciones de Feyn arrojaría a Ustilus a una época de incertidumbre donde todos los problemas que el imperio intentó reprimir e ignorar resurgirían para traer su destrucción.
 
+## La Era de la Incerdidumbre (4000-)
+
 # Gobierno
 
 El Imperio de Ustilus a primera vista se asemeja a una monarquía absoluta liderada por un emperador con derecho divino para gobernar. Aunque así operaba en sus inicios, la llegada al trono de emperadores débiles acabaría reforzando la influencia de las Cortes hasta el punto que presionaron al emperador para que firmara el Estatuto Lisandrino, una carta otorgada que redujo notablemente el poder del monarca y reforzaría el poder de la nobleza imperial. 

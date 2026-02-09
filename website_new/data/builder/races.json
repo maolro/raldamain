@@ -1,0 +1,140 @@
+{
+    "animal":{
+        "name": "Animal",
+        "stats": [
+            {"stat": "itl", "boost": -2}
+        ],
+        "abilities": [
+            {
+                "name": "Aspecto Animal",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "description": "Tiene uno o varios sentidos y formas de movimiento especiales según el animal del que se trate. Algunas opciones para sentidos son visión nocturna, olfato o georradar mientras que algunas acciones para movimiento son natación, escalada, excavar o vuelo."
+            }
+        ]
+    },
+    "aven":{
+        "name": "Aven",
+        "stats": [
+            {"stat": "dex", "boost": 1},
+            {"stat": "itl", "boost": 1},
+            {"stat": "con", "boost": -1},
+            {"stat": "str", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Alas de Ave",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "description": "Recibe Velocidad de Vuelo 1 y Ventaja en todos sus tiros de Esquiva"
+            }
+        ]
+    },
+    "chothgar":{
+        "name": "Chothgar",
+        "stats": [
+            {"stat": "str", "boost": 1},
+            {"stat": "con", "boost": 1},
+            {"stat": "wis", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Resistencia de Chothgar",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "hp": 2,
+                "def": 2,
+                "description": "Aumenta sus PV máximos y su DEF base por 2 (ambos ya incluidos)."
+            }
+        ]
+    },
+    "extraplanar":{
+        "name": "Extraplanario",
+        "abilities": [
+            {
+                "name": "Naturaleza Extraplanaria",
+                "type": "Pasiva",
+                "immunities": ["Mentales","Aflicciones","Miedo"],
+                "vulnerabilities": ["Armas anti-extraplanarios"],
+                "description": "Es un ser inmortal que no necesita comer, dormir o respirar, sustentándose únicamente con la energía mágica que hay a su alrededor. Si muere su alma volverá a su plano natal hasta que logre recomponer su cuerpo, un proceso que tarda normalmente un día. Recibe Inmunidad a todos los efectos Mentales, Miedo y Aflicciones que no sean de origen extraplanario a costa de Vulnerabilidad a armas diseñadas para matar a extraplanarios de su tipo."
+            }
+        ]
+    },
+    "humano":{
+        "name": "Humano"
+    },
+    "leonin":{
+        "name": "Leonino",
+        "stats": [
+            {"stat": "str", "boost": 1},
+            {"stat": "dex", "boost": 1},
+            {"stat": "itl", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Fuerza de León",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "description": "Recibe Velocidad de Escalada 1. El daño de sus ataques naturales aumenta por un paso y puede provocar daño Cortante y Perforante con ellos."
+            }
+        ]
+    },
+    "no-muerto":{
+        "name": "No-Muerto",
+        "abilities": [
+            {
+                "name": "No-Muerto",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "immunities": ["Aflicciones","Mentales","Miedo","Necróticos"],
+                "vulnerabilities": ["Radiantes"],
+                "description": "Es un muerto viviente que no necesita comer, dormir o respirar. Tiene Inmunidad a Aflicciones, efectos Mentales, Necróticos y de Miedo a costa de Vulnerabilidad a efectos Radiantes."
+            }
+        ]
+    },
+    "kitsune":{
+        "name": "Kitsune",
+        "stats": [
+            {"stat": "dex", "boost": 1},
+            {"stat": "wis", "boost": 1},
+            {"stat": "con", "boost": -1},
+            {"stat": "str", "boost": -1}
+        ],
+        "spells": [
+            {"rank": 2, "spell-lvl": 1, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 4, "spell-lvl": 1, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 6, "spell-lvl": 2, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 8, "spell-lvl": 2, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 10, "spell-lvl": 3, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 12, "spell-lvl": 3, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 14, "spell-lvl": 4, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 16, "spell-lvl": 4, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"},
+            {"rank": 18, "spell-lvl": 5, "slots": 1, "cat": ["magia-ilusoria","magia-mental","magia-espacial"], "mod": "ascendencia-primigenia"}
+        ],
+        "abilities": [
+            {
+                "name": "Cambiaformas",
+                "type": "Accion",
+                "cost": "1 Acción",
+                "tags": "Innata",
+                "description": "Se transforma para adoptar la forma de otro ser humanoide de su elección o de un zorro. Mantendrá todo su equipamiento y habilidades sin importar su forma pero en forma de zorro no podrá emplear armas ni armaduras. Puede permanecer en otra forma durante un máximo de ocho horas."
+            }
+        ]
+    },
+    "trasgo":{
+        "name": "Trasgo",
+        "stats": [
+            {"stat": "str", "boost": -1},
+            {"stat": "dex", "boost": 2},
+            {"stat": "con", "boost": -1}
+        ],
+        "abilities": [
+            {
+                "name": "Tamaño Inferior",
+                "type": "Pasiva",
+                "tags": "Innata",
+                "description": "Tiene Ventaja en todos sus tiros de Esquiva, Sigilo y Acrovacias además que puede ocupar el espacio de otras criaturas, provocando así que tengan Desventaja defendiéndose contra sus ataques. No obstante, debido a su tamaño inferior todo el daño de sus armas y ataques físicos se reduce por un paso y no puede llevar armas de dos manos."
+            }
+        ]
+    }
+}

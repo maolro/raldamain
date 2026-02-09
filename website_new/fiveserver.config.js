@@ -43,6 +43,10 @@ module.exports = {
       else if (req.url === '/equipos') {
         req.url = '/equipos.html';
       }
+      // 10. Handle "/creador" -> serve "creador.html"
+      else if (req.url === '/creador') {
+        req.url = '/creador.html';
+      }
       next();
     }
   ]

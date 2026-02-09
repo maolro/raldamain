@@ -180,20 +180,19 @@ function buildInfobox(metadata, articleInfo) {
         'dominios': 'Dominios',
         'simbolo': 'Símbolo',
         'sede': 'Sede',
-        'miembros': 'Miembros'
+        'miembros': 'Miembros',
+        'regiones-predilectas': 'Regiones Predilectas',
+        'religiones-predilectas': 'Religiones Predilectas'
     };
 
-    let hasInfoboxContent = false;
+    let hasInfoboxContent = true;
     let infoboxHTML = '<div class="infobox">';
 
     // Add title
     infoboxHTML += `<div class="infobox-title">${articleInfo.name}</div>`;
 
     // Add image if present
-    if (metadata.image) {
-        infoboxHTML += `<div class="infobox-image"><img src="/assets/images/world/${metadata.image}" alt="${articleInfo.name}"></div>`;
-        hasInfoboxContent = true;
-    }
+    infoboxHTML += `<div class="infobox-image"><img src="/assets/images/world/${articleInfo.category}/${articleInfo.name}.jpg" alt="${articleInfo.name}"></div>`;
 
     // Add category badge
     infoboxHTML += `<div class="infobox-category" style="background-color: ${articleInfo.categoryColor || '#666'};">${articleInfo.category}</div>`;

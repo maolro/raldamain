@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linea-temporal/era-humanidad.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "era-humanidad"
+              "title": "index"
             }
           }
         ]
@@ -185,6 +185,8 @@
   },
   "active": "4f02b1ba298c79a7",
   "lastOpenFiles": [
+    "linea-temporal/era-humanidad.md",
+    "linea-temporal/Era de la Incertidumbre.md",
     "regiones/arshalan.md",
     "objetos/Taurenet.md",
     "objetos",
@@ -213,8 +215,6 @@
     "personajes/historicos/Mekhatim.md",
     "personajes/historicos/Meisodh el Viajero.md",
     "personajes/historicos/Encarnado.md",
-    "personajes/historicos/Canrim.md",
-    "personajes/historicos/Acrodio.md",
     "personajes/historicos",
     "personajes/caballeros-de-ustilus",
     "personajes",

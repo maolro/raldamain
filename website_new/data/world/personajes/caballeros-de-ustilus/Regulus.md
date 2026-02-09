@@ -1,0 +1,1 @@
+"Si me preguntáis porqué mi fe no se ha quebrado después de que dos de mis Maestros me hayan abandone, la respuesta es simple. Creer en un Dios me aporta la visión, la determinación y la fuerza para proteger a aquellos que no puedo permitirme perder. Me da el poder para mantener segura a mi nueva familia."

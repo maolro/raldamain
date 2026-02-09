@@ -1,11 +1,9 @@
 ---
 title: Hakrapeu
 ---
-
 Intro
 
 # Historia
-
 
 
 # Gobierno

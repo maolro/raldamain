@@ -5,44 +5,300 @@ regiones-predilectas: Arshalán
 religiones-predilectas: Mekhatimismo
 ---
 
-Fuertes, valientes y orgullosos, así es como la mayoría definiría a los leoninos, que conforman las castas mas altas de la sociedad Arshalani. Luchan desde que tienen consciencia con sus hermanos y con su entorno con tal de tener la oportunidad de alzarse sobre la cima, no como un propósito autoimpuesto, sino como un deber que clama su sangre, como una necesidad sin la que no podrían vivir, y para ello los dioses los dotaron en cuerpo y mente, dándoles robustos físicos y templada disciplina para acabar con todo lo que se interponga en su camino. Para los leoninos, no hay opción de desviarse, y quienes no tratan de alcanzar lo mas alto o se apartan del camino serán rápidamente eliminados. 
+*"Somos los hijos de Canrim, elegidos de la profeta, garras de la Hueste sobre la tierra. Que tiemblen nuestros enemigos, porque no conocemos el miedo, y que desesperen, porque no conocemos la derrota. Solo conocemos la victoria o la muerte gloriosa, y ambas nos llevan a los Celestiales."* — Juramento de iniciación de los cadetes leoninos
+
+Fuertes, valientes y orgullosos, los **Leoninos** son una raza de humanoides felinos que conforman la casta dominante del [Imperio de Arshalán](../naciones/imperio-de-arshalan.md). Descendientes de tribus montañesas que fueron convertidas por la profeta Mekhatim hace cuatro siglos, los leoninos han gobernado el imperio más grande de Kimon desde su fundación, imponiendo su disciplina marcial, su código de honor y su fervor religioso sobre millones de súbditos de múltiples razas y culturas.
+
+Para los leoninos, la vida es una competición constante por alcanzar la cima. Desde que nacen, se les enseña que la debilidad es pecado, la cobardía es muerte, y que solo los más fuertes merecen liderar. Este instinto feroz, canalizado a través de la fe Mekhatimista, ha producido una casta guerrera sin igual: generales que han derrotado ejércitos tres veces más numerosos, administradores que han mantenido unido un imperio multicultural durante siglos, y místicos cuya devoción a la Hueste Celestial roza lo fanático.
+
+Sin embargo, ese mismo orgullo que los eleva también amenaza con destruirlos. Las luchas fratricidas por el trono, las rivalidades entre casas nobiliarias, y la resistencia a cualquier forma de cambio han convertido a los leoninos en prisioneros de sus propias tradiciones, incapaces de adaptarse a un mundo que evoluciona mientras ellos permanecen anclados en glorias pasadas.
 
 # Historia
 
-Los orígenes de los leoninos se remontan a mucho tiempo atrás, a cuando todavía eran un grupo de tribus diferentes que se resguardaban en las montañas con tal de sobrevivir a los diferentes imperios en crecimiento a su alrededor. Por aquel entonces sus objetivos y prioridades eran mucho mas básicas que en la actualidad, organizándose en grupos en los que la única preocupación que ocupaba sus mentes era ser el mas fuerte con tal de liderar la manada. Debido a ese salvajismo es que fueron por mucho temidos por los humanos de la zona, quienes evitaban a toda costa pasar por sus territorios para evitar toda clase de contacto. 
+## Los Tiempos Salvajes (Antes del Siglo XXXVII)
 
-Esos tiempos de salvajismo terminarían sin embargo con la llegada de la exiliada Mekhatim, quien convertiría al por aquel entonces caudillo Canrin a la naciente religión de la hueste celestial, haciendo que este se decidiese a, junto a ella, unificar las tribus leoninas en una única fuerza que unida por la fe conquistaría a los humanos de las tierras llanas sin detenerse hasta haber llegado al mar.
+Antes de la llegada de Mekhatim, los leoninos no eran una nación ni una civilización: eran un puñado de tribus dispersas por las **Montañas de Kajmasar**, luchando constantemente entre sí y con el mundo exterior. Las crónicas de los reinos humanos vecinos los describen como "bestias con forma de hombre", salvajes peligrosos que descendían de las montañas para saquear aldeas y devorar ganado (y ocasionalmente, personas).
 
-Una vez unificadas las tierras y tras la muerte de la profeta Canrin, quien la había acompañado durante todo ese tiempo, se convertiría en el primer mayhid de Arshalan, y junto a su tribu dirigirían la nación hasta nuestros días, pasando el deber de generación en generación.
+La sociedad leonina pre-Mekhatimista era brutalmente simple:
+- Cada tribu era liderada por el macho más fuerte
+- El poder se obtenía y mantenía mediante combate directo
+- No existía escritura, agricultura ni comercio organizado
+- La religión consistía en veneración de espíritus de la montaña y ancestros
+- Las tribus competían por territorio de caza y recursos escasos
 
-# Características
+Los leoninos de esta era eran temidos y despreciados por igual. Los reinos humanos los consideraban poco más que animales inteligentes, y las pocas interacciones eran generalmente violentas. Las tribus leoninas, a su vez, veían a los humanos como presas débiles o competidores molestos.
 
-Al provenir de tribus guerreras sus instintos todavía les claman por batallas y por la necesidad de dejar claro desde el principio su posición, ya sea ante otros de su misma especie o de otras. Debido a eso es que la historia de Arshalan está llena de momentos en los que los leoninos se enfrentan entre si para dejar clara su jerarquía, habiendo llegado incluso a influir a la hora de la sucesión después de la muerte de cada monarca, en la que todos los príncipes herederos deberán luchar hasta la muerte por la corona o perder su estatus y honor a ojos de las clases altas, lo cual podría ser un destino peor que la muerte para ellos. Tanto es así que incluso los hay entre ellos que, en momentos de estrés, sufren de una regresión a sus instintos mas puros, volviéndose mas salvajes y animalísticos del mismo modo que una vez lo fueron antes de adoptar su fe, como un recordatorio de que sus días pasados como guerreros todavía siguen muy presentes. 
+## La Conversión: El Encuentro con Mekhatim (3646-3652)
 
-Por ello un deporte bastante común entre los leoninos jóvenes que les sirve a modo de entrenamiento para cuando maduren es uno en el que se baten en un duelo empleando únicamente su fuerza bruta junto con aquello con lo que fueron bendecidos al nacer, como la agilidad, garras, instintos, etc. Pese a la simplicidad que pueda aparentar el evento este suele cumplir adecuadamente con su función, impulsando la competitividad de los mas jóvenes mientras que mejora sus capacidades físicas al batirse con sus iguales. Ya con el paso de los años y el desarrollo de la personalidad de los leoninos es que estos duelos suelen crecer en complejidad, permitiéndose el uso de diferentes armas o bendiciones divinas, no siendo nada raro que incluso algunos adultos lo empleen a la hora de mostrarse fuertes ante el pueblo frente a un rival. 
+Todo cambió cuando la profeta **Mekhatim**, exiliada de Arkedania por predicar herejía contra el Feynismo, buscó refugio en las Montañas de Kajmasar. Según la tradición sagrada, la profeta se encontró con **Canrim**, caudillo de la tribu más poderosa, quien la capturó con intención de devorarla.
 
-# Apariencia
+Lo que ocurrió en ese encuentro transformó la historia. Mekhatim no mostró miedo. Miró a Canrim directamente a los ojos —un desafío que ningún leonino había tolerado de un humano— y le habló de la **Hueste Celestial**, de la posibilidad de ascensión del alma, de un destino mayor que la simple supervivencia. Intrigado, Canrim la dejó vivir y la escuchó durante días.
 
-La apariencia de los leoninos es la de un humanoide con rasgos felinos, como las orejas, el hocico, la cola, las garras, etc. El color de su pelaje por lo general suele ser marrón, variando este de tonalidades entre el castaño claro a una tonalidad casi negra dependiendo del individuo. Sin embargo algunos individuos de la raza, normalmente pertenecientes a la casa real aunque no limitados a ella, suelen presentar tonalidades mas claras, poseyendo un pelaje completamente blanco así como ojos de colores mas claros que los del resto de miembros de su especie.  
+El momento decisivo llegó cuando el Alto Celestial **Ithanatron** se manifestó ante ambos, entregándole a Mekhatim el **Taurenet**, el libro sagrado. Canrim experimentó algo que ningún leonino había sentido: la certeza absoluta de un propósito divino. Se convirtió en el primer leonino Mekhatimista y juró unificar a su raza bajo la nueva fe.
 
-Sus vestimentas por lo general suelen ser prendas ligeras y sencillas, que faciliten la movilidad y la practicidad en su día a día. Pese a que no suelen estar limitados a ellos, los colores que mas suelen emplear para vestirse suelen ser el blanco y el marrón, combinándolos de formas simples para dar resultados agradables a la vista que aún sigan encajando con ellos.
+La conversión no fue pacífica. Canrim tuvo que derrotar, matar o someter a los caudillos de todas las demás tribus. Las guerras de unificación duraron seis años, pero al final, todas las tribus leoninas se habían unido bajo la bandera de la Hueste Celestial. Por primera vez en su historia, los leoninos tenían una identidad común más allá del clan.
 
-# Relaciones
+## La Era de las Conquistas (3658-3800)
 
-Desde que fueron escogidos por la profeta los leoninos siempre se han percibido a si mismos como quienes están en la cima, viéndose como los dirigentes y jueces que deben guiar a la humanidad en su camino a la ascensión. Debido a eso suelen mantener una actitud orgullosa con quienes se relacionan, siendo tolerantes solo dentro de ciertos esquemas y manteniendo por lo general una mente estrecha en lo que se refiere a las tradiciones de sus vecinos, tolerándolos por lo normal solamente si confían en poder controlar que no se salgan de control. 
+Tras la muerte y ascensión de Mekhatim, Canrim se convirtió en el primer **Mhayid** (Sombra de la Hueste Sobre la Tierra), combinando autoridad religiosa y secular. Bajo su liderazgo, los leoninos descendieron de las montañas no como saqueadores sino como conquistadores con propósito divino.
+
+Las conquistas fueron asombrosamente exitosas:
+- Los reinos humanos que habían despreciado a los leoninos cayeron uno tras otro
+- Tribus tangarinas fueron derrotadas e incorporadas al creciente imperio
+- La antigua capital Feynista de Arkedania fue sitiada y conquistada
+- El Patriarca Feynista huyó, y la sede del Patriarcado fue convertida en mezquita
+
+Los leoninos, que una generación antes vivían en cuevas, ahora gobernaban un imperio. Canrim estableció los principios que definirían a su raza durante siglos:
+- Los leoninos serían la casta dominante, pero gobernarían sobre un imperio multiétnico
+- La sucesión seguiría el método tradicional: competición entre herederos
+- La fe Mekhatimista sería obligatoria para gobernar, pero tolerada en otras formas para los súbditos
+- El honor, la disciplina y la devoción serían las virtudes supremas
+
+## La Casta Gobernante (3800-Presente)
+
+Durante cuatro siglos, los leoninos han mantenido su posición como élite del imperio. La Casa de Canrim, descendientes directos del primer Mhayid, ha proporcionado todos los emperadores. Las familias nobiliarias leoninas ocupan los puestos más importantes del ejército, el gobierno y la jerarquía religiosa.
+
+Sin embargo, esta posición privilegiada tiene costos. Cada sucesión implica guerra civil entre herederos. Las rivalidades entre casas nobiliarias son constantes y ocasionalmente sangrientas. El orgullo leonino impide aceptar consejos de razas "inferiores", incluso cuando esos consejos serían sabios.
+
+La crisis actual —la derrota catastrófica en Ustilus, el Mhayid débil, el imperio fragmentándose— ha expuesto las debilidades del sistema leonino. Algunos leoninos jóvenes cuestionan si las tradiciones de sus ancestros siguen siendo viables. Otros responden que abandonar las tradiciones sería traicionar todo lo que los hace leoninos. Esta división podría determinar si los leoninos seguirán gobernando Arshalán o si serán derrocados por quienes han oprimido durante siglos.
+
+# Apariencia Física
+
+Los leoninos son humanoides de rasgos inequívocamente felinos, fusionando la forma bípeda humana con características de grandes felinos:
+
+**Cabeza y rostro**: Cráneo con estructura felina, hocico pronunciado con nariz ancha y húmeda, mandíbulas poderosas con colmillos capaces de desgarrar carne. Orejas triangulares móviles situadas en la parte superior del cráneo, capaces de rotar para detectar sonidos. Ojos grandes con pupilas que se contraen en rendijas bajo luz brillante, típicamente de colores ámbar, dorado o verde.
+
+**Cuerpo**: Constitución poderosa y musculosa, más robusta que la humana promedio. Altura entre 180-210 cm para machos, 170-195 cm para hembras. Cubiertos de pelaje corto que varía en color desde marrón claro hasta casi negro. Algunos individuos, especialmente en la Casa Real, presentan pelaje blanco o dorado, considerado señal de bendición celestial.
+
+**Extremidades**: Manos humanoides con cinco dedos terminados en garras retráctiles capaces de desgarrar armadura ligera. Pies plantígrados (caminan sobre toda la planta) pero con estructura ósea felina que permite sprints explosivos. Cola de aproximadamente un metro, utilizada para equilibrio y como indicador de estado emocional.
+
+**Melena**: Los machos adultos desarrollan melenas alrededor del cuello y hombros, símbolo de madurez y status. El tamaño y calidad de la melena es factor importante en atractivo y respeto social. Los machos de la Casa Real son famosos por melenas particularmente impresionantes, lo que ha generado especulación sobre cría selectiva.
+
+**Dimorfismo sexual**: Marcado pero no extremo. Los machos son generalmente más grandes con melenas prominentes; las hembras son más esbeltas y ágiles pero igualmente capaces en combate.
+
+## Vestimenta
+
+La moda leonina refleja su cultura guerrera y su fe Mekhatimista:
+
+**Vestimenta cotidiana**:
+- **Khilat**: Túnica larga hasta las rodillas, abierta por delante, con mangas amplias que no restringen movimiento. Colores sobrios (blanco, crema, marrón claro) para el pueblo; telas más finas y colores más vivos para la nobleza.
+- **Shalvar**: Pantalones amplios recogidos en los tobillos, prácticos para movimiento rápido.
+- **Cinturón ancho**: Frecuentemente decorado, donde se porta cimitarra ceremonial incluso en tiempos de paz.
+- **Turbante o tocado**: Los machos frecuentemente cubren parte de la melena con turbantes de tela fina; las hembras usan velos decorativos.
+
+**Vestimenta de guerra**:
+- Armadura de escamas o lamellar que permite flexibilidad para combate cuerpo a cuerpo
+- Cascos diseñados para acomodar orejas y melena
+- Capas con insignias de casa nobiliaria
+- Garras reforzadas con fundas de metal para combate
+
+**Colores significativos**:
+- **Blanco**: Pureza, devoción religiosa, la Casa Real
+- **Dorado**: Victoria, favor celestial, alto rango militar
+- **Verde**: Prosperidad, fe Mekhatimista
+- **Rojo**: Sangre, sacrificio, duelo honorable
+- **Negro**: Luto, vergüenza, deshonor
+
+**Adornos**: Los leoninos desprecian la joyería excesiva como signo de debilidad, pero portan amuletos religiosos, brazaletes de victoria (marcando batallas ganadas), y ocasionalmente anillos de sello familiar.
+
+# Temperamento y Valores
+
+## Orgullo y Honor
+
+El orgullo es la característica definitoria de la psicología leonina, tan fundamental como respirar:
+
+**Orgullo racial**: Los leoninos genuinamente creen que son superiores a todas las demás razas. Fueron elegidos por la profeta, gobierna el imperio más poderoso de Kimon, y han derrotado a todos los enemigos que han enfrentado. Esta creencia no es arrogancia vacía; está respaldada (en su mente) por siglos de éxito.
+
+**Orgullo de casa**: Cada leonino pertenece a una casa nobiliaria (o aspira a fundar una). El honor de la casa es más importante que la vida individual. Insultar a la casa de un leonino es ofensa que solo se lava con sangre.
+
+**Orgullo personal**: Cada leonino debe mantener su reputación mediante acciones. Cobardía, incompetencia o debilidad traen vergüenza no solo al individuo sino a toda su línea de sangre.
+
+El código de honor leonino incluye:
+- Nunca rehusar un desafío directo
+- Nunca mostrar miedo ante un inferior
+- Nunca traicionar la palabra empeñada a un igual
+- Nunca perdonar un insulto sin respuesta
+- Nunca aceptar limosna ni caridad
+
+## Competitividad Instintiva
+
+Los leoninos son compulsivamente competitivos, una herencia de sus días tribales canalizada pero no eliminada por la civilización:
+
+**Jerarquía constante**: En cualquier grupo de leoninos, hay una jerarquía implícita basada en fuerza, logros y linaje. Esta jerarquía se establece mediante confrontaciones sutiles (miradas, posturas, pequeñas pruebas de voluntad) o, si es necesario, combate directo.
+
+**El Kravah**: El "duelo de honor" tradicional leonino. Cuando dos leoninos tienen disputa que no puede resolverse verbalmente, pueden invocar Kravah: combate ritualizado que puede ser hasta primer sangre, hasta rendición, o hasta la muerte, dependiendo de la gravedad del asunto. El Kravah es legalmente reconocido y sus resultados son vinculantes.
+
+**Deportes de sangre**: Los leoninos jóvenes practican luchas ritualizadas desde la infancia. Estos combates, usando solo garras y colmillos, establecen jerarquía social y preparan para la edad adulta. Heridas serias son comunes; muertes ocasionales se consideran "accidentes lamentables pero naturales".
+
+## Disciplina y Devoción
+
+La conversión al Mekhatimismo canalizó los instintos violentos leoninos hacia propósitos estructurados:
+
+**Disciplina militar**: El ejército leonino es famoso por su disciplina férrea. Donde otras razas necesitan oficiales gritando órdenes, los leoninos mantienen formaciones perfectas por puro instinto de manada y orgullo personal. Romper formación sin orden es vergüenza imperdonable.
+
+**Devoción religiosa**: Los leoninos practican el Mekhatimismo con intensidad que puede parecer fanática. Las cinco oraciones diarias se cumplen escrupulosamente. El ayuno del Ramadán se observa sin excepción. La peregrinación a Sershalán es obligación que todo leonino aspira cumplir.
+
+**Autocontrol**: Paradójicamente para una raza tan apasionada, los leoninos valoran enormemente el autocontrol. Mostrar emoción excesiva (ira descontrolada, llanto, risa histérica) es signo de debilidad. Un leonino debe ser como acero: capaz de furia terrible cuando es apropiado, pero perfectamente controlado en todo momento.
+
+## La Regresión
+
+Un aspecto oscuro de la psicología leonina es la **Regresión**: en momentos de estrés extremo, algunos leoninos experimentan una reversión a sus instintos salvajes pre-Mekhatimistas. Durante una Regresión, el leonino pierde racionalidad, convirtiéndose en poco más que una bestia feroz capaz de matar indiscriminadamente.
+
+La Regresión es profundamente vergonzosa. Un leonino que experimenta una Regresión pública puede perder todo status social. Las familias ocultan miembros propensos a Regresión. Algunos leoninos que han experimentado Regresiones severas se suicidan antes que vivir con la vergüenza.
+
+Los teólogos Mekhatimistas debaten si la Regresión es:
+- Castigo celestial por pecado oculto
+- Prueba divina que debe superarse
+- Vestigio del pasado que la fe eventualmente eliminará
+- Posesión temporal por espíritus malignos
+
+# Espiritualidad y Religión
+
+## Mekhatimismo Leonino
+
+Los leoninos practican una forma particularmente intensa del [Mekhatimismo](../religiones/mekhatimismo.md), marcada por su historia como primeros conversos:
+
+**Devoción especial a la profeta**: Los leoninos se consideran el "pueblo elegido" de Mekhatim. Fue a ellos a quien la profeta vino en su exilio; fue Canrim quien la protegió; fueron guerreros leoninos quienes expandieron la fe. Esta creencia genera orgullo pero también responsabilidad: los leoninos sienten que deben ser ejemplo de fe perfecta.
+
+**Culto a Canrim**: Aunque técnicamente no es adoración (que estaría reservada a los Celestiales), Canrim es venerado casi como santo. Su tumba en Sershalán es lugar de peregrinación. Sus supuestos dichos se citan como autoridad. La Casa Real deriva legitimidad de descender de él.
+
+**Ithanatron**: El Alto Celestial que entregó el Taurenet es particularmente venerado por leoninos. Se le considera patrono de los guerreros y se le invoca antes de batallas. Muchos leoninos llevan amuletos con su símbolo (una espada de luz).
+
+**Prácticas diarias**:
+- Cinco oraciones diarias orientadas hacia Sershalán
+- Ablución ritual antes de cada oración
+- Recitación del Taurenet (muchos leoninos memorizan el libro completo)
+- Ayuno durante el mes sagrado de Ramakhan
+
+**Guerras santas**: Los leoninos consideran la guerra contra infieles (especialmente Feynistas y Chothgar) como deber religioso. Morir en guerra santa garantiza ascensión directa a la Hueste Celestial. Esta creencia ha producido ejércitos de fanáticos dispuestos a cargar contra posiciones imposibles.
+
+## Supersticiones y Creencias Populares
+
+Debajo del Mekhatimismo oficial persisten creencias de la era pre-conversión:
+
+- **Espíritus de montaña**: Muchos leoninos rurales todavía dejan ofrendas en picos montañosos, "por si acaso"
+- **Ancestros**: Se cree que los espíritus de ancestros observan y juzgan a sus descendientes
+- **Presagios**: Los leoninos son profundamente supersticiosos sobre señales: un cuervo volando a la izquierda antes de batalla es mal augurio; una luna roja predice sangre
+- **La Melena**: Se cree que cortar la melena de un leonino dormido roba su fuerza; durante la guerra, los enemigos a veces mutilaban cadáveres leoninos de esta forma como insulto supremo
+
+Los sacerdotes Mekhatimistas condenan oficialmente estas supersticiones pero en la práctica las toleran mientras no contradigan doctrina fundamental.
+
+# Vida Social y Costumbres
+
+## Estructura Social
+
+La sociedad leonina es rigidamente jerárquica:
+
+**La Casa Real** (Casa de Canrim): Descendientes directos del primer Mhayid. Todos los emperadores provienen de esta casa. Miembros de la Casa Real son reconocibles por pelaje dorado o blanco. Tienen privilegios legales especiales y son técnicamente iguales solo al Mhayid.
+
+**Casas Mayores** (~12): Familias nobiliarias cuyos ancestros fueron compañeros de Canrim durante las conquistas. Controlan provincias enteras, comandos militares, o posiciones religiosas de alto rango. Los matrimonios entre Casas Mayores son eventos diplomáticos de importancia imperial.
+
+**Casas Menores** (~200): Nobleza menor que sirve a las Casas Mayores. Ocupan posiciones de oficiales militares, jueces locales, administradores provinciales.
+
+**Leoninos comunes**: Guerreros, artesanos, comerciantes. Aunque técnicamente son "comunes", incluso el leonino más humilde se considera superior a cualquier humano noble.
+
+**Semi-leoninos**: Producto de uniones entre leoninos y humanos (poco frecuentes pero no imposibles). Son vistos con desprecio por leoninos puros pero tolerados si demuestran valor excepcional.
+
+## La Familia
+
+La estructura familiar leonina es patriarcal pero con matices:
+
+**El Pater**: Jefe de familia, generalmente el macho más anciano y capaz. Tiene autoridad absoluta sobre decisiones familiares: matrimonios, profesiones, residencia.
+
+**La Mater**: La hembra principal (no necesariamente la más anciana, sino la más respetada). Gestiona el hogar, supervisa educación de cachorros, y tiene voz considerable en decisiones aunque no autoridad formal.
+
+**Matrimonio**: Arreglado entre familias para crear alianzas. El amor romántico es considerado agradable pero irrelevante. Una leonina se casa con quien su familia decida. Un leonino puede tener hasta cuatro esposas (permitido por Mekhatimismo) pero solo los más ricos pueden mantener múltiples hogares adecuadamente.
+
+**Cachorros**: Los leoninos nacen en camadas de 1-3, tras gestación de siete meses. Son criados comunitariamente por las hembras de la familia extendida. La educación formal comienza a los 5 años; el entrenamiento militar a los 8. Un leonino es considerado adulto a los 14 cuando completa su primer Kravah ritual.
+
+## Comida y Banquetes
+
+Los leoninos son carnívoros obligados; su sistema digestivo no puede procesar plantas eficientemente:
+
+**Dieta básica**:
+- Carne (cordero, cabra, res, caballo) es el alimento principal
+- Pescado para comunidades costeras
+- Lácteos (leche, yogur, queso) complementan la dieta
+- Vegetales se consumen en pequeñas cantidades, principalmente como condimento
+- Pan y arroz se toleran pero no son preferidos
+
+**Preparación**: La carne se prepara asada, guisada o, tradicionalmente, cruda (considerado más "auténtico"). Los leoninos de alta cuna ocasionalmente consumen carne cruda en privado como conexión con sus ancestros.
+
+**Banquetes**: Eventos sociales importantes donde se exhibe riqueza y generosidad. Un anfitrión que no provee carne abundante es avergonzado. Los invitados comen con las manos (cubiertos son considerados afeminados). Después de comer, se limpia las manos ritualmente y se recita oración de agradecimiento.
+
+**Bebidas**: El alcohol está prohibido por el Mekhatimismo, pero se consumen grandes cantidades de café (introducido por comerciantes tangarinos), té con especias, y leche fermentada.
+
+## Duelos y Resolución de Conflictos
+
+El **Kravah** (duelo) es central en la cultura leonina:
+
+**Tipos de Kravah**:
+- **Kravah de Honor**: Por insultos o disputas personales. Generalmente hasta primer sangre.
+- **Kravah de Propiedad**: Por disputas sobre tierras, herencias, contratos. Hasta rendición.
+- **Kravah Mortal**: Por ofensas imperdonables (traición, adulterio, asesinato de familiar). Hasta la muerte.
+
+**Reglas**:
+- Solo leoninos adultos pueden participar
+- Ambas partes deben declarar públicamente la causa
+- Testigos deben estar presentes
+- Se permite cualquier arma acordada (desde garras desnudas hasta cimitarras)
+- El perdedor (o su familia) debe aceptar el resultado sin resentimiento
+- Rechazar un desafío legítimo es deshonra permanente
+
+**Sustitutos**: Un leonino puede nombrar un campeón para luchar en su lugar si está incapacitado (edad, enfermedad). Los guerreros profesionales que sirven como campeones son respetados pero no admirados.
+
+# Relaciones con Otros Pueblos
+
+## Humanos del Imperio
+
+Los leoninos gobiernan sobre millones de humanos ([letemitas](letemitas.md), [tangarinos](tangarinos.md), ayutanos) con una mezcla de paternalismo y desdén:
+
+**Perspectiva leonina**: Los humanos son súbditos útiles, capaces de trabajo que los leoninos consideran bajo su dignidad (agricultura, comercio, artesanía menor). Son tolerados y hasta protegidos mientras acepten su lugar subordinado. Los humanos excepcionales pueden ganar respeto individual, pero nunca igualdad.
+
+**Tensiones**: Los humanos del imperio resienten cada vez más la dominación leonina. La derrota de 4010 demostró que los leoninos no son invencibles. Movimientos de autonomía local, especialmente entre letemitas y tangarinos, preocupan a la élite leonina.
 
 ## Aven
 
-Los aven son gente complicada que pasa el día en sus libros, estudiando encerrados en su isla ajenos a lo que pasa en el resto del mundo. Aunque ellos estén tan confiados sobre que nunca les pasará nada en el momento de la verdad dependen de imperios como el arshalani para poder defenderse y evitar que invasores como los chothgar los expulsen por su hogar, y aunque no les guste es algo que deberán aceptar. Debido a eso cuando establecieron su pacto hubo poca discusión sobre cuales serían los términos, los arshalanies dejarían en paz a los aven para que sigan con sus estudios y los protegerían de los invasores a cambio de que los aven les proporcionasen sus armas superiores. Si bien resultó ser un pacto bastante simple también terminó por ser uno de los mas beneficiosos para ambos países.  
+Los [Aven](aven.md) son vistos con condescendencia ilustrada:
+
+**Perspectiva leonina**: Estudiosos inteligentes pero físicamente débiles, incapaces de defenderse sin protección leonina. Su conocimiento mágico es valioso (las armas Aven han ganado batallas), pero su ateísmo práctico es perturbador. Son aliados útiles mientras suministren artefactos y no cuestionen supremacía Arshalaní.
+
+**Acuerdo**: Arshalán protege a los Aven de invasores a cambio de tecnología mágica. Los leoninos consideran esto un trato justo; los Aven lo consideran extorsión sofisticada.
 
 ## Hakrapenses
 
-Las tradiciones y la religión de los hakrapenses es simplemente inaceptable, roza o mejor dicho cruza la línea de lo impío de todas las maneras posibles y los habitantes del pantano no se arrepienten lo mas mínimo de ello. Sin embargo una conquista en ese territorio sería algo complicado, mas teniendo en cuenta la necesidad de mantener el territorio, y convertir a su pueblo es simplemente una misión imposible. Lo mas beneficioso para ambos es mantenerlos tranquilos con nuestra fuerza y mantener relaciones lo mas cordiales posibles mientras no traten de esparcir religión mas allá de su población.  
+Los [Hakrapenses](hakrapenses.md) son vistos con horror religioso:
+
+**Perspectiva leonina**: Practicantes de magia prohibida, adoradores de entidades abisales, practicantes de sacrificio humano. Todo lo que los Hakrapenses representan es anatema para el Mekhatimismo. Si Arshalán no estuviera ocupado en otros frentes, ya los habrían conquistado y convertido por la fuerza.
+
+**Realidad pragmática**: La conquista del pantano sería costosa y difícil. Hakrapeu es técnicamente vasallo que paga tributo y no causa problemas. Los leoninos lo toleran mientras no exporten su herejía, pero la situación es un insulto constante a su sensibilidad religiosa.
 
 ## Chothgar
 
-Las relaciones entre los arshalanies y los chothgar son simplemente insostenibles, enfrentándose siempre que tienen la mas mínima oportunidad y el otro parece débil. No es que sus religiones sean diferentes, sino que son directamente rivales, e incluso algunos chothgar insinúan que su dios podría haber derrotado a mekhatim. Si bien la hueste perdona los leoninos no son perfectos, por lo que se conforman con el deber de acabar con los chothgar para enviarlos a la hueste y que esta los perdone en su lugar.  
+Los [Chothgar](chothgar.md) son el **Enemigo Eterno**:
+
+**Perspectiva leonina**: Salvajes adoradores de un dios demoníaco que fue derrotado por la profeta misma. Su existencia es insulto a la Hueste Celestial. Cada Chothgar muerto es ofrenda a los Celestiales.
+
+**Guerras**: Arshalán ha luchado contra los Chothgar en guerras regulares durante cuatro siglos. Ningún tratado de paz dura. Los leoninos no quieren paz; quieren exterminio o conversión forzada.
 
 ## Tapetíes
 
-Los tapeties son gente demasiado complicada que emplea demasiado las palabras para cualquier cosa que se proponen, confiando en otros las tareas que deberían realizar ellos. Sin embargo la supervivencia de Tash-tapet no es de incumbencia de Arshalan, y mientras se mantengan neutrales y comercien con los arshalanies no debería haber ninguna razón para llevarse mal.
+Los [Tapetíes](tapeties.md) son vistos con desprecio apenas disimulado:
+
+**Perspectiva leonina**: Mercaderes sin honor que venderían a su propia madre si el precio fuera correcto. Su religión sincrética es sospechosa. Su neutralidad es cobardía disfrazada. Sin embargo, Thas-Tapet es demasiado útil comercialmente para antagonizar.
+
+**Relación comercial**: Arshalán comercia extensivamente con Thas-Tapet, comprando armas, bienes de lujo y servicios bancarios. Los leoninos desprecian esta dependencia pero no pueden prescindir de ella.
+
+## Ustileses
+
+Los [Ustileses](ustileses.md) son el gran rival:
+
+**Perspectiva leonina**: Feynistas arrogantes que creen que su falso dios les da derecho a gobernar el mundo. Enemigos formidables que han derrotado a Arshalán en batalla (algo que los leoninos apenas pueden admitir). Dignos oponentes pero destinados a caer cuando la Hueste lo decida.
+
+**La Herida de 4010**: La derrota catastrófica de la invasión ha humillado profundamente a los leoninos. Muchos sueñan con venganza; otros cuestionan si la guerra era la voluntad de la Hueste después de todo.
+
+# Los Leoninos como Pueblo
+
+Los leoninos son un pueblo de contradicciones: orgullosos hasta la arrogancia pero profundamente devotos, violentos por naturaleza pero capaces de disciplina férrea, conservadores hasta la parálisis pero habiendo construido uno de los imperios más duraderos del continente. Su mayor fortaleza —la certeza absoluta en su superioridad y destino— es también su mayor debilidad, cegándolos a sus propios fallos y a un mundo que cambia sin pedirles permiso.
+
+El futuro de los leoninos está en duda. Si no pueden adaptarse, pueden ser derrocados por los mismos pueblos que han gobernado durante siglos. Si se adaptan demasiado, temen perder lo que los hace leoninos. Esta tensión irresuelta define a la casta gobernante de Arshalán mientras el imperio cruje bajo el peso de crisis que ya no pueden ignorarse.

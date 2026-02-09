@@ -25,7 +25,7 @@
             "Divina",
             "Mejora"
           ],
-          "cost": "1 vigor o chi",
+          "cost": "1 chi",
           "duration": "Una ronda",
           "desc": "Empoderas tus ataques con el poder de tu divinidad. La siguiente vez que impactes con un ataque físico provocarás 1d6 daño adicional  (tipo según dios). Aumenta a 2d6 a Rango III y a 3d6 a Rango VI. Alternativamente, infundes un ataque con un hechizo que conozcas (acción bonus).",
           "empower": "Extiendes este efecto una ronda adicional, permitiéndote volver a realizarlo la siguiente vez que impactes sin coste."

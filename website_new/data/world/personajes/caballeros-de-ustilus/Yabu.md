@@ -1,0 +1,1 @@
+"Parece que eres algo más fuerte de lo normal. Me he enfrentado a tanta gente débil que se siente refrescante volver a tener un buen desafío. Si luchas a tu máximo potencial quizás puedes llegar a igualarme pero no te hagas ilusiones. Yo he ganado todas las batallas en las que he participado y estoy seguro que añadiré una victoria más a mi larga lista."	

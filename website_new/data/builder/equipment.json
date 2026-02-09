@@ -1,0 +1,36 @@
+{
+    "armor": {
+        "light": {"name": "Ligera","def":2, "penalty":0, "eqab": ""},
+        "medium": {"name": "Media", "def":4, "penalty":-2, "eqab": ""},
+        "heavy": {"name": "Pesada", "def":6, "penalty":-4, "eqab": ""},
+        "full": {"name": "Completa", "def":8, "penalty":-6, "eqab": ""}
+    },
+    "weapons":{
+        "arco": {"name": "Arco", "eqab": "arco"},
+        "cadena": {"name": "Cadena", "eqab": "cadena"},
+        "daga": {"name": "Daga", "eqab": "daga"},
+        "escudo": {"name": "Escudo", "eqab": "escudo,parada-con-escudo"},
+        "espada-larga": {"name": "Espada Larga", "eqab": "espada-larga"},
+        "espada-ropera": {"name": "Espada Ropera", "eqab": "espada-ropera"},
+        "garra": {"name": "Garra", "eqab": "garra"},
+        "garrote": {"name": "Garrote", "eqab": "garrote"},
+        "golpe-serpiente": {"name": "Golpe Serpiente", "eqab": "golpe-serpiente"},
+        "gran-hacha": {"name": "Gran Hacha", "eqab": "gran-hacha"},
+        "gran-maza": {"name": "Gran Maza", "eqab": "gran-maza"},
+        "hacha-de-batalla": {"name": "Hacha de Batalla", "eqab": "hacha-de-batalla"},
+        "jabalina": {"name": "Jabalina", "eqab": "jabalina"},
+        "lanza": {"name": "Lanza", "eqab": "lanza"},
+        "latigo": {"name": "Látigo", "eqab": "latigo"},
+        "mandoble": {"name": "Mandoble", "eqab": "mandoble"},
+        "martillo-de-guerra": {"name": "Martillo de Guerra", "eqab": "martillo-de-guerra"},
+        "mosqueton": {"name": "Mosquetón", "eqab": "mosqueton"},
+        "pistola-de-mano": {"name": "Pistola de Mano", "eqab": "pistola-de-mano"}
+    },
+    "head":{
+        "": {"name": " ", "eqab": ""},
+        "mordisco": {"name": "Mordisco", "eqab": "mordisco"}
+    },
+    "bag":{
+        "bateria-chi": {"name": "Batería de Chi", "eqab": "bateria-de-chi"}
+    }
+}

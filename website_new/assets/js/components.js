@@ -22,7 +22,7 @@ function loadNavbar() {
             <li><a href="/criaturas">Criaturas</a></li>
             <li><a href="/equipos">Equipamiento</a></li>
             <li><a href="/mundo">El Mundo</a></li>
-            <li><a href="#" class="btn-builder">Creador de Personajes</a></li>
+            <li><a href="/creador" class="btn-builder">Creador de Personajes</a></li>
         </ul>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Buscar información aquí...">

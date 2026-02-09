@@ -1,0 +1,217 @@
+/* ============================================
+   BOOTSTRAP DARK THEME OVERRIDES
+   Scoped to #app to avoid bleeding into navbar/footer
+   Must load AFTER Bootstrap CSS
+   ============================================ */
+
+/* Body override (Bootstrap sets white background) */
+#app {
+    background-color: var(--primary-black);
+    color: var(--text-main);
+}
+
+/* Form controls */
+#app .form-control {
+    background-color: #1a1a1a;
+    color: var(--text-main);
+    border-color: #555;
+}
+
+#app .form-control:focus {
+    background-color: #222;
+    color: var(--text-main);
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 0.2rem rgba(255, 242, 0, 0.15);
+}
+
+#app .form-control::placeholder {
+    color: var(--text-muted);
+}
+
+/* Dropdowns */
+#app .dropdown-menu {
+    background-color: #1a1a1a;
+    border-color: #555;
+}
+
+#app .dropdown-item {
+    color: var(--text-main);
+}
+
+#app .dropdown-item:hover,
+#app .dropdown-item:focus {
+    background-color: rgba(255, 242, 0, 0.1);
+    color: var(--accent-gold);
+}
+
+#app .dropdown-item.active,
+#app .dropdown-item:active {
+    background-color: var(--accent-gold);
+    color: var(--primary-black);
+}
+
+/* Nav tabs (used in original builder, kept as fallback) */
+#app .nav-tabs {
+    border-bottom-color: var(--accent-gold);
+}
+
+#app .nav-tabs .nav-link {
+    color: var(--text-muted);
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+
+#app .nav-tabs .nav-link:hover {
+    color: var(--text-main);
+    border-color: #444 #444 var(--accent-gold);
+}
+
+#app .nav-tabs .nav-link.active {
+    background-color: var(--secondary-black);
+    color: var(--accent-gold);
+    border-color: var(--accent-gold) var(--accent-gold) var(--secondary-black);
+}
+
+/* Tab content */
+#app .tab-content {
+    background-color: transparent;
+}
+
+#app .tab-content.border {
+    border-color: #444 !important;
+}
+
+/* Buttons */
+#app button,
+#app .btn {
+    background-color: #222;
+    border: 1px solid #555;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#app button:hover,
+#app .btn:hover {
+    background-color: #333;
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+#app .btn-secondary {
+    background-color: #222;
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+#app .btn-secondary:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-black);
+}
+
+#app .btn-primary {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--primary-black);
+}
+
+#app .btn-primary:hover {
+    background-color: #e6da00;
+    border-color: #e6da00;
+}
+
+#app .btn-danger {
+    background-color: #5a1a1a;
+    border-color: #8b2020;
+    color: #ff6b6b;
+}
+
+#app .btn-danger:hover {
+    background-color: #8b2020;
+    color: #fff;
+}
+
+/* Borders */
+#app .border {
+    border-color: #444 !important;
+}
+
+#app .border-top-0 {
+    border-top: 0 !important;
+}
+
+/* Tables */
+#app .table {
+    color: var(--text-main);
+}
+
+#app .table-bordered {
+    border-color: #444;
+}
+
+#app .table-bordered td,
+#app .table-bordered th {
+    border-color: #444;
+}
+
+/* Cards */
+#app .card {
+    background-color: var(--secondary-black);
+    border-color: #444;
+}
+
+#app .card-header {
+    background-color: #222;
+    border-bottom-color: #444;
+    color: var(--text-main);
+}
+
+/* List group */
+#app .list-group-item {
+    background-color: var(--secondary-black);
+    border-color: #444;
+    color: var(--text-main);
+}
+
+#app .list-group-item:hover {
+    background-color: #2a2a2a;
+}
+
+/* Text overrides */
+#app .text-dark {
+    color: var(--text-main) !important;
+}
+
+#app .text-muted {
+    color: var(--text-muted) !important;
+}
+
+#app h1, #app h2, #app h3, #app h4, #app h5, #app h6 {
+    color: var(--text-main);
+}
+
+/* Scrollbar styling for the builder panels */
+.builder-form::-webkit-scrollbar,
+.builder-preview::-webkit-scrollbar,
+.builder-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.builder-form::-webkit-scrollbar-track,
+.builder-preview::-webkit-scrollbar-track,
+.builder-sidebar::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.builder-form::-webkit-scrollbar-thumb,
+.builder-preview::-webkit-scrollbar-thumb,
+.builder-sidebar::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.builder-form::-webkit-scrollbar-thumb:hover,
+.builder-preview::-webkit-scrollbar-thumb:hover,
+.builder-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-gold);
+}
