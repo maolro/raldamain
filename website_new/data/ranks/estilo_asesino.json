@@ -15,23 +15,16 @@
       "title": "Iniciado",
       "abilities": [
         {
-          "name": "Ataque con arma",
-          "tags": ["Ligera", "Ataque", "Cuerpo a cuerpo"],
+          "name": "Apuntar Ataque",
+          "tags": ["Asesino", "Mejora"],
           "cost": "1 acción",
-          "range": "Cuerpo a cuerpo",
-          "crit": "Objetivo sufre herida permanente leve.",
-          "desc": "Ataque físico usando tu modificador de DES con cualquier arma Ligera."
+          "desc": "Tiras +2 en tu siguiente tiro de ataque. Esta mejora aumenta a +4 a Rango III y a +6 a Rango V."
         },
         {
-          "name": "Combate Furtivo",
-          "tags": ["Mejora", "Ligera"],
-          "desc": "Aumenta en un paso el nivel de heridas permanentes si atacas junto a aliados o a enemigos indefensos. Puedes usar el mejor resultado entre Esquiva y Parada."
-        },
-        {
-          "name": "Golpe Penetrante",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "1 vigor",
-          "desc": "Ignoras la Defensa proporcionada por la armadura del objetivo."
+          "name": "Ataque Furtivo",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Su siguiente ataque provocará un dado de daño adicional al impactar y una herida leve. Esta habilidad debe declararse antes de atacar."
         }
       ]
     },
@@ -40,23 +33,28 @@
       "title": "Adepto",
       "abilities": [
         {
-          "name": "Puñalada Poderosa",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "1 vigor",
-          "desc": "Aumenta daño en +1d6 y causa herida permanente leve. El arma queda clavada (inutilizada) causando 'Enfermado' y 'Sangrado' al retirarse.",
-          "empower": "N/A"
+          "name": "Presionar Defensas",
+          "tags": ["Asesino", "Mejora", "Visual"],
+          "cost": "1 chi",
+          "desc": "Antes de atacar el objetivo debe tener éxito en un tiro de Mente o recibirá Desventaja en su tiro defensivo. Este efecto puede anularse gastando una Premonición y no funciona contra enemigos con Visión Futura."
         },
         {
-          "name": "Asalto Engañoso",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "1 vigor",
-          "desc": "Si fallas un ataque, puedes repetirlo con Ventaja. El segundo ataque ignora contadores de escudo o defensas automáticas."
+          "name": "Clavar Arma",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Al impactar a un objetivo tu arma se queda clavada en él, provocándole 1d6 daño adicional y enfermándolo durante una ronda. Esta mejora solo funciona con armas perforantes."
         },
         {
-          "name": "Lluvia de Cuchillos",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "1 vigor",
-          "desc": "Tu ataque afecta a 3 enemigos diferentes dentro de tu alcance."
+          "name": "Secuencia de Puñaladas",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Haces dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Esta mejroa solo puede aplicarse a armas de una mano."
+        },
+        {
+          "name": "Ataque Triple",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Su siguiente ataque podrá afectar a tres objetivos que pueda alcanzar. Si se añaden efectos adicionales se aplicarán a todos los ataques."
         }
       ]
     },
@@ -65,22 +63,21 @@
       "title": "Profesional",
       "abilities": [
         {
-          "name": "Asalto Impredecible",
-          "tags": ["Ligera", "Reacción"],
-          "cost": "2 vigor",
-          "desc": "Atraviesas defensas automáticas (escudos, hechizos) usadas para detener tu ataque, infligiendo daño normal. (Solo vs Rango igual o menor)."
+          "name": "Golpe Penetrante",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "2 chi",
+          "desc": "Tu siguiente ataque ignora la defensa otorgada por armaduras del objetivo y cuenta como mágico para los propósitos de Resistencias e Inmunidades."
         },
         {
-          "name": "Combinar Técnicas",
-          "tags": ["Ligera", "Reacción"],
-          "cost": "2 vigor",
-          "desc": "Realizas un segundo ataque como acción bonus contra el mismo objetivo tras atacar."
+          "name": "Paso del Asesino",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Antes de atacar puedes moverte como acción bonus que no provoca aperturas y tu objetivo tendrá Desventaja en su tiro defensivo como si se tratase de un ataque sorpresa."
         },
         {
           "name": "Cuchillada",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "1 Acción, 2 vigor",
-          "desc": "Dos ataques al mismo objetivo. Si ambos impactan, el segundo gana +2d6 daño y aumenta heridas permanentes un paso."
+          "tags": ["Asesino", "Pasiva"],
+          "desc": "Puedes tirar Parada a la vez de Esquiva en todos tus tiros defensivos y quedarte con el resultado que más te convenga. Además, puedes hacer un movimiento como acción bonus al atacar o defenderse, el cual sí provocará aperturas."
         }
       ]
     },
@@ -89,22 +86,23 @@
       "title": "Experto",
       "abilities": [
         {
-          "name": "Contrataque",
-          "tags": ["Ligera", "Ataque", "Reacción"],
-          "cost": "2 vigor",
-          "desc": "Atacas como reacción a una acción enemiga. Si impactas, interrumpes su acción y pierde los recursos gastados."
+          "name": "Maestría de Arma",
+          "tags": ["Asesino", "Duradera"],
+          "cost": "2 acciones y 2 chi",
+          "duration": "Seis rondas",
+          "desc": "Entras en un estado donde recibes Ventaja en todos tus tiros relacionados con estilo Asesino además que tus ataques reciben un dado de daño adicional y provocan una herida leve al impactar."
         },
         {
-          "name": "Puñalada Quirúrgica",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "2 vigor",
-          "desc": "Siguiente ataque +3d6 daño y causa herida permanente media en una parte específica. Críticos aplican la herida ahí mismo."
+          "name": "Impacto Deshabilitante",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "2 chi",
+          "desc": "Al impactar con un ataque tu objetivo debe tener éxito en un tiro de Voluntad o una parte de su cuerpo queda debilitada como si sufriese una herida permanente crítica ahí. Al igual que una herida permanente, esta habilidad desaparecerá cuando el afectado reciba sanación. La parte del cuerpo afectada será aleatoria salvo que esta habilidad se declare antes de atacar."
         },
         {
-          "name": "Salto Mortal",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "2 vigor",
-          "desc": "Saltas un paso antes de atacar (+1d6 daño). Desventaja defensiva si el enemigo no está enfrentado. Permite desenganchar y moverte tras atacar."
+          "name": "Furia Asesina",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "2 chi",
+          "desc": "Haces tres ataques contra el mismo objetivo, el cual solo tirará una vez para defenderse y aumentas su tiro de ataque y daño por 1 según cada impacto consecutivo. Todos ellos contarán como ataque furtivo, recibiendo así un dado de daño adicional y provocando una herida leve al impactar (esto no se acumula con dicha habilidad)."
         }
       ]
     },
@@ -113,24 +111,21 @@
       "title": "Maestro",
       "abilities": [
         {
-          "name": "Asesinato",
-          "tags": ["Ligera", "Ataque"],
-          "cost": "1 acción, 3 vigor",
-          "range": "Cuerpo a cuerpo",
-          "crit": "Objetivo recibe herida permanente crítica.",
-          "desc": "Ataque letal (+3d6 daño, herida permanente grave). Ignora armadura. No usable como reacción."
+          "name": "Impacto Mortal",
+          "tags": ["Asesino", "Mejora"],
+          "cost": "3 chi",
+          "desc": "Al impactar a un objetivo debe tener éxito en un tiro de Voluntad o sufre 4d6 daño irreducible (la mitad en caso de éxito) y una herida crítica. Este efecto puede activarse con retraso."
         },
         {
-          "name": "Puñaladas en Secuencia",
-          "tags": ["Ligera", "Mejora"],
+          "name": "Masacre",
+          "tags": ["Asesino", "Mejora"],
           "cost": "3 vigor",
-          "desc": "Dos ataques adicionales como acción bonus tras atacar. El objetivo usa el mismo resultado defensivo anterior."
+          "desc": "Tu siguiente ataque afectará a todos los enemigos en un radio medio y al impactar provocará 2d6 daño adicional y una herida leve. Una vez terminas el ataque, puedes aparecer en cualquier posición dentro el área afectada sin generar aperturas."
         },
         {
-          "name": "Movilidad de Batalla",
-          "tags": ["Ligera", "Mejora"],
-          "cost": "3 vigor",
-          "desc": "Saltas y atacas (+1d6 daño). Si impactas, puedes saltar y atacar a otro enemigo. Continúa hasta fallar o quedarte sin objetivos."
+          "name": "Proyección de Chi",
+          "tags": ["Asesino", "Pasiva"],
+          "desc": "El daño de tu arma ahora cuenta como mágico para los propósitos de resistencias e inmunidades y tu alcance con ella aumenta a medio. Además, puedes emplear tu arma para detener ataques mágicos o de área."
         }
       ]
     }

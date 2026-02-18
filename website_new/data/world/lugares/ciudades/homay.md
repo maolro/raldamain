@@ -4,47 +4,37 @@ nation: Alianza Shinri
 population: ~600,000
 ---
 
-**Homay**, la Ciudad de los Mil Santuarios, es la capital política y espiritual de la [Alianza Shinri](../../naciones/alianza-shinri.md) y probablemente la ciudad más hermosa de todo Raldamain. Reconstruida tras su destrucción durante la Era de los Señores de la Guerra, Homay fue diseñada siguiendo principios ancestrales de geomancia espiritual para maximizar la armonía entre el mundo material y el plano de los espíritus. Cada calle, cada edificio, cada árbol fue colocado con intención sagrada, creando una metrópolis donde lo humano y lo divino se entrelazan perfectamente.
+**Homay**, la Ciudad de los Mil Santuarios, es la capital política y espiritual de la [Alianza Shinri](../../naciones/alianza-shinri.md) y probablemente la ciudad más hermosa de todo Raldamain. Construida por el Encarnado mismo, Homay fue diseñada siguiendo principios ancestrales de geomancia para maximizar la armonía entre los mundos material y espiritual. Cada calle, cada edificio, cada árbol fue colocado con intención sagrada, creando una metrópolis donde lo humano y lo divino se entrelazan perfectamente.
 
-Para los Shinri, Homay no es simplemente una ciudad; es el corazón espiritual de la nación, el lugar donde el velo entre mundos es más fino, donde los kami caminan visiblemente al amanecer y atardecer, y donde el Encarnado reside en reclusión sagrada dentro de su palacio prohibido. Es un contraste deliberado con [Klonum](./klonum.md), la ciudad industrial: donde Klonum representa el futuro incierto de Shinri, Homay encarna su alma eterna.
-
-Visitar Homay es experimentar Shinri como debería ser: ordenada, hermosa, en perfecta armonía. Es también ver lo que se está perdiendo en la carrera hacia la modernización.
+Para los Shinri, Homay es considerada como el corazón espiritual del pueblo [Shinri](../../culturas/shinri.md) y una viva representación de sus tradiciones, un hecho que contrasta casi deliberadamente con su futuro incierto representado por [Klonum](./klonum.md). Por ello, muchos consideran que muestra Shinri como debería ser y refleja todo lo que se está perdiendo en la carrera hacia la modernización.
 
 # Historia
 
-## Fundación Mítica (3246)
+## Fundación (3246)
 
-Homay fue fundada por el primer Encarnado en el año 3246, inmediatamente después del Pacto de los Tres Mundos que puso fin a la Guerra de los Espíritus. Según la leyenda sagrada, el Encarnado tuvo una visión de Amatsukami que le mostró el lugar exacto donde debía construirse la capital: un valle rodeado de siete montañas sagradas, atravesado por ríos cristalinos, donde la concentración de energía espiritual era tan intensa que el aire mismo brillaba.
+Homay fue fundada por el primer Encarnado en el año 3246, inmediatamente después del Pacto de los Dos Mundos que puso fin a la Guerra de los Espíritus. Según la leyenda sagrada, el Encarnado tuvo una visión del espíritu árbol Hakibu-Isogi que le mostró el lugar exacto donde debía construirse la capital: un valle rodeado de siete colinas donde la concentración de energía espiritual era tan intensa que el aire mismo brillaba.
 
-La construcción de la ciudad fue un proyecto de décadas que involucró no solo arquitectos y artesanos humanos, sino también la colaboración directa de espíritus. Se dice que los kami de los árboles guiaron dónde plantar cada cerezo, que los dragones de río bendijeron los canales, y que el fénix Suzakushin marcó el sitio del Palacio Imperial con una pluma dorada que aún se conserva (supuestamente) en el altar más sagrado.
+La construcción de la ciudad fue un proyecto de décadas que involucró arquitectos y artesanos humanos además de la colaboración directa de espíritus. Se dice que los espíritus de los árboles guiaron dónde plantar cada cerezo, que los dragones de río bendijeron los canales, y que el fénix Suzakushin marcó el sitio del Palacio Imperial con una pluma dorada que aún se conserva en el altar más sagrado (por lo menos, según afirma el clan Hibotoru).
 
-Durante seis siglos, Homay floreció como centro cultural, político y espiritual de Shinri. Era pequeña comparada con capitales de otros imperios (nunca superó 300,000 habitantes), pero su influencia cultural era inmensa. Los mejores artistas, teólogos, guerreros y artesanos venían a Homay para perfeccionar sus artes. Las decisiones tomadas aquí determinaban el destino de la nación.
+Durante seis siglos, Homay floreció como centro cultural, político y espiritual de Shinri. Era pequeña comparada con capitales de otros imperios, pero su influencia cultural era inmensa. Los mejores artistas, teólogos, guerreros y artesanos venían a Homay para perfeccionar sus artes además que numerosos peregrinos viajaban a ella en busca de bendiciones espirituales. Además, esta ciudad era considerada el lugar más sagrado de la nación al tratarse de la residencia del mismísimo Emperador, quien para los Shinri era venerado como si fuera un gran espíritu.
 
 ## Destrucción y Tragedia (3919-3927)
 
-La Era de los Señores de la Guerra llevó caos a todo Shinri, pero Homay sufrió especialmente. Cuando el último emperador legítimo murió sin heredero en 3919, tres clanes poderosos (Hibotoru, Mizukage, Yamagorō) presentaron pretendientes rivales. Las negociaciones en Homay fracasaron espectacularmente, desencadenando guerra civil.
+La Era de los Señores de la Guerra llevó caos a todo Shinri, pero Homay sufrió especialmente. Cuando el último emperador legítimo murió sin heredero en 3919, tres clanes poderosos (Hibotoru, Tamaekachi, Yamagoro) presentaron pretendientes rivales. Las negociaciones en Homay fracasaron espectacularmente, desencadenando guerra civil.
 
-El **Asedio de Homay** (3924-3927) fue uno de los eventos más trágicos en la historia Shinri. La ciudad sagrada fue rodeada por ejércitos de los clanes Mizukage y Yamagorō, mientras que dentro residía la familia imperial bajo protección del clan Hibotoru. Durante tres años, decenas de miles murieron. Hambruna devastó la población civil. Santuarios fueron profanados. Lo peor fue el incendio final.
+El **Asedio de Homay** (3924-3927) fue uno de los eventos más trágicos en la historia Shinri. La ciudad sagrada fue rodeada por ejércitos de los clanes Tamaekachi y Yamagoro, mientras que dentro residía la familia imperial bajo protección del clan Hibotoru. Durante tres años, ambos mundos que convivían en la ciudad fueron unidos en el más terrible sufrimiento. La hambruna mató a decenas de miles de civiles mientras que los ataques invasores llevaron a la profanación y saqueo de numerosos santuarios. No obstante, lo pero de este conflicto aún estaría por llegar.
 
-En 3927, durante un ataque desesperado, fuego accidental (o sabotaje, nunca se determinó) se propagó descontroladamente. La ciudad, construida principalmente de madera y papel, ardió durante siete días y siete noches. Las llamas eran tan intensas que el cielo se volvió rojo. El Palacio Imperial colapsó, matando a toda la familia real. Los espíritus, horrorizados por la profanación, abandonaron la ciudad en masa.
+En 3927, durante un ataque desesperado, fuego accidental (o sabotaje, nunca se determinó) se propagó descontroladamente. La ciudad, construida principalmente de madera y papel, ardió durante siete días y siete noches, con llamas eran tan intensas que el cielo se volvió rojo. El Palacio Imperial colapsó, matando a toda la familia real y los espíritus, horrorizados por la profanación, abandonaron la ciudad en masa. Cuando el fuego finalmente se apagó, Homay era cenizas. De una ciudad de 200,000, solo 30,000 sobrevivieron. Y, lo pero de todo, la victoria de los atacantes sería en vano. Poco después entraron en guerra y ninguno de sus candidatos deseados vivirían el tiempo suficiente para establecerse. Toda autoridad central había quebrado por completo y ahora Shinri se había encaminado a la Era de los Señores de Guerra.
 
-Cuando el fuego finalmente se apagó, Homay era cenizas. De una ciudad de 200,000, solo 30,000 sobrevivieron. Los kami que una vez caminaron abiertamente por sus calles habían desaparecido. Homay se convirtió en ciudad fantasma, considerada maldita.
+## Era de conflicto y renacimiento (3927-)
 
-## Renacimiento (4027-4032)
+Durante un siglo, Homay vivió como una sombra de su antiguo ser, pasando de clan en clan mientras Shinri se dividía cada vez más. Numerosos señores de guerra ambiciosos la intentaron tomar y controlar, creyendo que así podrían obtener la legitimidad para convertirse en Shogunes de toda Shinri, pero todos durarían poco. No obstante, aún en todo el caos que consumía Shinri, la ciudad logró volver a levantarse y no volvería a sufrir ningún gran asedio. Sus habitantes lo atribuyen a las bendiciones de los espíritus mientras que historiadores más serios afirman que se debe a la influencia secreta de los [Seishingumi](../../facciones/seishingumi.md), quienes entonces eran lo más cercanos a una autoridad central.
 
-Durante un siglo, Homay permaneció en ruinas, un recordatorio doloroso de la locura fratricida. Peregrinos ocasionales visitaban para llorar, pero nadie vivía allí permanentemente. Los kami no regresaban.
-
-Todo cambió con el retorno del Encarnado en 4027. Una de sus primeras acciones tras unificar Shinri fue declarar que Homay sería reconstruida. No como ciudad ordinaria, sino como obra maestra espiritual que superaría incluso la belleza original.
-
-La reconstrucción (4028-4032) fue proyecto nacional que consumió recursos masivos. Los mejores arquitectos estudiaron textos antiguos sobre geomancia. Artesanos de todo Shinri vinieron a contribuir. Monjes realizaron rituales de purificación durante meses antes de que se colocara la primera piedra.
-
-El Encarnado mismo participó, caminando cada calle planeada, bendiciendo cada sitio de construcción, y supuestamente negociando con kami para que regresaran. Cuando Homay fue finalmente inaugurada en 4032, los espíritus efectivamente habían vuelto. El fenómeno fue presenciado por miles: luces espirituales danzando sobre los edificios recién construidos, kami manifestándose visiblemente en los santuarios.
-
-La nueva Homay era más pequeña que la original (diseñada para 500,000 máximo vs los millones de Klonum), pero incomparablemente más hermosa. Y a diferencia de la antigua capital, esta tenía una política estricta: **cero industrialización**. Homay sería preservada como santuario viviente de la tradición Shinri.
+El destino de Homay cambiaría de nuevo con el retorno del Encarnado, quien una vez logró sentarse sobre el trono y acabar con el poder de los Seishingumi, declaró el inicio de una nueva era de paz y unificación donde Homay sería capital de la recién declarada [Alianza Shinri](../../naciones/alianza-shinri.md). Aunque la ciudad quedaría ensombrecida por la enorme población y riqueda de Klonum, seguiría manteniendo sus tradiciones y belleza que tanto la caracterizaban. Si no fuera poco, mientras Shinri se industrializaba, el Custodio Espiritual Vashir consiguió que el Encarnado decretase por ley que no se construiría ni una fábrica en Homay. Gracias a esta política, Homay evitaría los problemas de sobrepoblación, higiene y delincuencia que azotarían a otras grandes ciudades de Klonum a costa de rechazar cualquier clase de cambio. Para algunos, esto la hace estática y anticuada. Pero, para la mayoría de sus orgullosos habitantes, por qué hace falta cambiar algo que ya es percto. 
 
 # Geografía y Estructura Urbana
 
-Homay se asienta en el **Valle de los Siete Picos**, rodeada de montañas sagradas cuyas cumbres están constantemente envueltas en niebla mística. La ciudad está atravesada por tres ríos cristalinos que se originan en manantiales montañosos bendecidos por dragones acuáticos.
+Homay se asienta en el **Valle de las Siete Colinas**, rodeada de montañas sagradas cuyas cumbres están constantemente envueltas en niebla mística. La ciudad está atravesada por tres ríos cristalinos que se originan en manantiales montañosos bendecidos por dragones acuáticos.
 
 La ciudad está organizada en círculos concéntricos, siguiendo principios de **mandala** espiritual:
 

@@ -3,11 +3,12 @@
   "title": "Ascendencia Celestial",
   "category": "Ascendencias",
   "image": "ascendencia_celestial.jpg",
-  "stats": ["Sabiduría", "Carisma", "Vigor", "Chi"],
+  "stats": ["Sabiduría", "Carisma", "Innata"],
   "description": "Canalizas el poder de los seres superiores para convertirte en luz y guía. Obtienes poderes de sanación, vuelo y la capacidad de invocar fuerzas celestiales para erradicar el mal.",
   "fundamentals": [
-    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
-    "<strong>Estadística principal:</strong> Sabiduría o Carisma + Rango."
+    "<strong>Poder innato:</strong> Incrementa tu reserva de Chi por un valor igual a tu Rango x 2.",
+    "<strong>Modificador:</strong> Sabiduría o Carisma + Rango.",
+    "<strong>Precio de Ascensión:</strong> Muchas habilidades en este rango reducirán tu Vitalidad máxima. Esto significa que tu valor de Vitalidad máximo bajará por dicha cantidad pero NO te hará daño ni repercutirá en tu Vitalidad actual. Todas las reducciones se recuperarán tras un descanso largo y no pueden eliminarse con otros efectos."
   ],
   "levels": [
     {
@@ -20,10 +21,11 @@
           "desc": "Resistencia a efectos Radiantes. Las criaturas celestiales te reconocen como aliado."
         },
         {
-          "name": "Luz celestial",
-          "tags": ["Innata", "Pasiva"],
-          "range": "Medio",
-          "desc": "Iluminas el área a distancia media. Puedes lanzar 'Halo cegador', 'Rayo luminoso' y 'Toque sanador' gastando Vigor (o con sobrecoste si no los conoces)."
+          "name": "Canalización Celestial",
+          "tags": ["Innata", "Mejora"],
+          "cost": "1 acción",
+          "duration": "Hasta 6 Rondas",
+          "desc": "Ventaja en tiros de Ataque, Defensa, Habilidad y Salvación. Este efecto dura hasta 6 rondas y cuando acabe reduces tu Vitalidad máxima por 2 por cada ronda (si esto te reduciría a menos de 0 Vitalidad caerías inconsciente)."
         }
       ]
     },
@@ -33,16 +35,21 @@
       "passive": "Incrementa tu estadística de CAR y su limitador máximo en +1.",
       "abilities": [
         {
-          "name": "Arma Angelical",
+          "name": "Golpe Trascendente",
           "tags": ["Innata", "Mejora"],
-          "cost": "1 chi/vigor",
+          "cost": "1 chi",
           "duration": "1 Ronda",
-          "desc": "Al impactar con un ataque, puedes lanzar un hechizo de Vida como acción bonus contra el mismo objetivo (impacto automático si es ofensivo)."
+          "desc": "Durante esta ronda tus ataques físicos cuentan como mágicos. Además, al impactar con un ataque puedes reducir tu vigor por 2 para aumentar tu daño por un valor igual a tu Rango + 1 (máximo una vez por ataque)."
+        },
+        {
+          "name": "Sentido Vital",
+          "tags": ["Innata", "Pasiva"],
+          "desc": "Tienes vista a ciegas a distancia media y eres capaz de identificar la magia lanzada a esa misma distancia."
         },
         {
           "name": "Cuerpo Puro",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a Aflicciones y Necrótico. Aumenta DEF en (Rango + 1).",
+          "desc": "Al activar Canalización Celestial recibes PV temporales iguales a tu Rango x 5 y aumentas tu Defensa por un valor igual a tu Rango + 1.",
           "empower": "Repites un tiro de muerte y te quedas el mejor resultado."
         }
       ]
@@ -50,23 +57,20 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "passive": "Aprendes los hechizos 'Barrera luminosa' y 'Arma solar' (usan Vigor).",
       "abilities": [
         {
           "name": "Ángel Protector",
           "tags": ["Innata", "Invocación"],
           "cost": "3 acciones, 2 chi",
           "duration": "1 Hora",
-          "desc": "Invocas un celestial de Nivel <= (Rango x 2). Max 4 criaturas simultáneas.",
+          "desc": "Invocas un celestial de Nivel igual a tu Rango x 2. Max 4 criaturas simultáneas.",
           "empower": "La criatura invocada recupera el 50% de su Vitalidad."
         },
         {
-          "name": "Poder de los Cielos",
-          "tags": ["Innata", "Pasiva"],
-          "cost": "2 acciones, 2 chi",
-          "duration": "Concentración",
-          "desc": "Aura de luz. Ventaja en Magia de Vida/Arma Angelical. Enemigos sufren Desventaja en ataques a distancia contra el aura. Aliados ganan Resistencia Sombría.",
-          "empower": "Reduce el coste de un hechizo de Vida en 1 acción."
+          "name": "Alma Indomable",
+          "tags": ["Innata", "Defensiva"],
+          "cost": "1 chi",
+          "desc": "Tienes éxito automático en un tiro de salvación contra un efecto de cualquier tipo a costa de tu Vitalidad máxima por 2. No funciona contra habilidades míticas."
         }
       ]
     },
@@ -78,12 +82,12 @@
         {
           "name": "Alas Angelicales",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Manifiestas alas (Vuelo 2). Ventaja en tiros de Esquiva. Acción bonus para activar/desactivar."
+          "desc": "Recibes velocidad de vuelo 2 mientras estás empleando Canalización Celetial. Esto te otorga también Ventaja en tiros de Esquiva."
         },
         {
           "name": "Visión Verdadera",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Inmunidad a Ilusiones. Ves invisibilidad y formas verdaderas. Ventaja en Averiguar Intenciones. Resistencia Mental."
+          "desc": "Recibes Inmunidad a Ilusiones, lo cual te permite percibir a seres invisibles además de las formas verdaderas de seres cambiaformas. Esta habilidad también te otorga Resistencia a efectos Mentales y Ventaja en tiros de Averiguar Intenciones."
         }
       ]
     },

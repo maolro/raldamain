@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/reglas principales/ejercitos.md",
+                "file": "rules/rangos/religion/chakras.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ejercitos"
+              "title": "chakras"
             }
           }
         ],
@@ -211,6 +211,9 @@
   },
   "active": "68ce5dd5d07096dd",
   "lastOpenFiles": [
+    "website_new/data/world/lugares/dimensiones/plano-sombrio.md",
+    "rules/reglas principales/ejercitos.md",
+    "website_new/data/world/lugares/ciudades/rimas.md",
     "website_new/creador.html",
     "website_new/assets/css/builder_overrides.css",
     "website_new/assets/css/builder_style.css",
@@ -221,7 +224,6 @@
     "website_new/assets/js/builder/v-spellpage.js",
     "website_new/assets/js/builder/v-talpage.js",
     "website_new/assets/js/builder/v-rankpage.js",
-    "website_new/assets/js/builder/v-select-search.js",
     "website_new/data/world/facciones/clan-dokosha.md",
     "website_new/data/world/facciones/clan-khodole.md",
     "website_new/data/world/facciones/clan-daeyal.md",
@@ -247,8 +249,6 @@
     "campaign/caballeros de ustilus/personajes/iakub lazarevic.md",
     "campaign/caballeros de ustilus/personajes/fileon.md",
     "campaign/caballeros de ustilus/personajes/eliyet.md",
-    "campaign/caballeros de ustilus/personajes/chandrial.md",
-    "campaign/caballeros de ustilus/personajes/basileos.md",
     "campaign/caballeros de ustilus/personajes/basileos.jpg",
     "campaign/caballeros de ustilus/personajes/abshalom.jpg",
     "website_new/data/world/world4000.jpg",

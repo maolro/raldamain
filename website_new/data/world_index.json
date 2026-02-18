@@ -92,7 +92,8 @@
             { "id": "kasheba", "name": "Kasheba", "file": "lugares/ciudades/Kasheba.md" },
             { "id": "klonum", "name": "Klonum", "file": "lugares/ciudades/klonum.md" },
             { "id": "rizad", "name": "Rizad", "file": "lugares/ciudades/rizad.md" },
-            { "id": "homay", "name": "Homay", "file": "lugares/ciudades/homay.md" }
+            { "id": "homay", "name": "Homay", "file": "lugares/ciudades/homay.md" },
+            { "id": "rimas", "name": "Rimas", "file": "lugares/ciudades/rimas.md" }
           ]
         },
         {

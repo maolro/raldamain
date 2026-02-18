@@ -3,11 +3,11 @@
   "title": "Ascendencia Abisal",
   "category": "Ascendencias",
   "image": "ascendencia_abisal.jpg",
-  "stats": ["Carisma", "Vigor", "Chi"],
+  "stats": ["Carisma", "Constitución", "Innata"],
   "description": "Canalizas el poder de entidades olvidadas para transformar tu cuerpo y mente. Obtienes gran poder físico y mágico a cambio de tu propia cordura y humanidad.",
   "fundamentals": [
-    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Poder innato:</strong> Incrementa tu reserva de Chi por un valor igual a tu Rango x 2.",
+    "<strong>Modificador:</strong> Carisma o Constitución + Rango.",
     "<strong>Naturaleza Caótica:</strong> Tus poderes provienen del abismo, lo que puede provocar locura o pérdida de control si se abusa de ellos."
   ],
   "levels": [
@@ -24,7 +24,7 @@
           "name": "Furia Abisal",
           "tags": ["Innata", "Mejora"],
           "duration": "6 Rondas",
-          "desc": "Estado de trance. Ganas Ventaja en 2 estadísticas a elección y aumentas DEF en (Rango + 1). Al terminar, sufres daño a la cordura igual a (Chi actual - Rondas usadas). Si la cordura llega a 0, pierdes el control del personaje."
+          "desc": "Entras en un estado que te da Ventaja en tiros de ataque, defensa y magia. Al terminar, sufres daño a la cordura igual a la cantidad de rondas pasadas. Si la cordura llega a 0, pierdes el control del personaje."
         }
       ]
     },
