@@ -3,3 +3,7 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+
+### Windows reserved device names ###
+nul
+website_new/nul
