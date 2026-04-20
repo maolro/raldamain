@@ -190,7 +190,6 @@
     {
       "rank": "VI",
       "title": "Ascendido",
-      "passive": "Hechizos Rango IV cuestan -1 acción.",
       "abilities": [
         {
           "name": "Agujero Negro",
