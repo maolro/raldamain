@@ -1,0 +1,62 @@
+{
+  "id": "pegasus",
+  "name": "Pegasus",
+  "level": 6,
+  "type": "celestial",
+  "size": "Large",
+  "hp": 20,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+2d6",
+    "WILL": "+7+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 11,
+    "magical": 9,
+    "general": 7
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Hooves",
+      "cost": "1 action",
+      "damage": "4d6 bludgeoning + radiant",
+      "effect": null
+    },
+    {
+      "name": "Charging Dive",
+      "cost": "2 actions",
+      "damage": "5d6 bludgeoning + radiant",
+      "effect": "The Pegasus dives from the air, covering up to 18m. Target must pass PHYS save or be knocked prone and stunned until end of their next turn."
+    },
+    {
+      "name": "Protective Whinny",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One rider or adjacent ally gains +2 to all defenses until start of the Pegasus's next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Aerial Dodge",
+      "cost": "1 reaction",
+      "effect": "When targeted by a ranged attack while flying, +4 to all defenses against that attack."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Flying Mount",
+      "desc": "Can carry one Medium rider. Both rider and Pegasus share the same turn. The rider cannot be knocked off while the Pegasus is conscious."
+    },
+    {
+      "name": "Divine Bond",
+      "desc": "The Pegasus bonds with one pure-hearted rider. While bonded, rider and Pegasus can communicate telepathically within 1km."
+    }
+  ],
+  "lore": "Pegasi are divine winged horses that bond with only the purest of heart. They serve as mounts to celestial knights and chosen heroes, carrying them into battle against the forces of evil with grace and terrible speed."
+}

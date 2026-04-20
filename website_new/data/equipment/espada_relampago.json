@@ -1,0 +1,24 @@
+{
+  "id": "espada_relampago",
+  "name": "Espada del Relámpago",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Poco Común",
+  "image": "espada_relampago.jpg",
+  "description": "Una espada larga cuya hoja crepita con arcos de electricidad. El aire a su alrededor huele a ozono.",
+  "damage": "1d8 + FUE + 1d6 eléctrico",
+  "damageType": "Cortante + Eléctrico",
+  "price": "4 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Conductora:</b> El daño eléctrico adicional ignora resistencia a cortante"
+  ],
+  "abilities": [
+    {
+      "name": "Descarga",
+      "cost": "1 acción + 1 Chi",
+      "uses": "3/día",
+      "description": "Tu siguiente ataque libera una descarga que salta a un enemigo adicional dentro de 3m, infligiendo 1d6 eléctrico."
+    }
+  ]
+}

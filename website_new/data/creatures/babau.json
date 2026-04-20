@@ -1,0 +1,62 @@
+{
+  "id": "babau",
+  "name": "Babau",
+  "level": 6,
+  "type": "demon",
+  "size": "Medium",
+  "hp": 18,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 11,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Acid-Coated Claws",
+      "cost": "1 action",
+      "damage": "4d6 slashing + acid",
+      "effect": "The acid eats through armor. Target's physical defense is reduced by 1 until repaired (stacks)."
+    },
+    {
+      "name": "Weakening Gaze",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One target within 6m must pass WILL save or have -1d6 to attack and damage rolls for 1 round."
+    },
+    {
+      "name": "Sneak Attack",
+      "cost": "1 action",
+      "damage": "5d6 slashing",
+      "effect": "Can only be used against a target that is flanked, surprised, or has not yet acted in combat. Deals bonus damage."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Acidic Skin",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the attacker takes 2d6 acid damage as the Babau's corrosive skin burns them."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Corrosive Body",
+      "desc": "Non-magical weapons that hit the Babau take acid damage and may corrode. After 3 hits, a non-magical weapon is destroyed."
+    },
+    {
+      "name": "Darkness",
+      "desc": "Can cast Darkness once per encounter, creating a 6m radius of magical darkness."
+    }
+  ],
+  "lore": "Babau are the assassins of the Abyss, tall and gaunt demons with dark, rubbery skin that oozes corrosive acid. They are cunning hunters that stalk their prey methodically, using darkness and ambush tactics to eliminate targets."
+}

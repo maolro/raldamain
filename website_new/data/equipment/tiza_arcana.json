@@ -1,0 +1,21 @@
+{
+  "id": "tiza_arcana",
+  "name": "Tiza Arcana",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Común",
+  "image": "tiza_arcana.jpg",
+  "description": "Una barra de tiza imbuida con polvo de cristal de Chi. Los círculos dibujados con ella brillan tenuemente.",
+  "price": "1/4 CR",
+  "properties": [
+    "<b>Consumible:</b> 10 usos"
+  ],
+  "abilities": [
+    {
+      "name": "Círculo de Protección",
+      "cost": "1 minuto",
+      "uses": "10 usos",
+      "description": "Dibuja un círculo de 3m que otorga +1 a salvaciones contra efectos mágicos a quienes estén dentro."
+    }
+  ]
+}

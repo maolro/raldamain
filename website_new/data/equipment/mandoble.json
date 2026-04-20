@@ -1,0 +1,17 @@
+{
+  "id": "mandoble",
+  "name": "Mandoble",
+  "type": "Arma",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "mandoble.jpg",
+  "description": "Una espada enorme de hoja ancha que requiere ambas manos. Capaz de partir armaduras y escudos con facilidad.",
+  "damage": "2d6 + FUE",
+  "damageType": "Cortante",
+  "price": "2 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Pesada</b>: Desventaja en tiradas de Parada"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "hacha_mano",
+  "name": "Hacha de Mano",
+  "type": "Arma",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "hacha_mano.jpg",
+  "description": "Un hacha pequeña con mango de madera, tan útil para cortar leña como para el combate. Puede arrojarse con precisión.",
+  "damage": "1d6 + FUE",
+  "damageType": "Cortante",
+  "price": "0 CR",
+  "range": "Cuerpo a cuerpo o arrojadiza (distancia media)",
+  "properties": [
+    "<b>Arrojadiza</b>: Puede lanzarse a distancia media"
+  ]
+}

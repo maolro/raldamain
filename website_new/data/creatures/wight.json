@@ -1,0 +1,67 @@
+{
+  "id": "wight",
+  "name": "Wight",
+  "level": 6,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 20,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Longsword",
+      "cost": "1 action",
+      "damage": "4d6 slashing",
+      "effect": null
+    },
+    {
+      "name": "Life Drain",
+      "cost": "1 action",
+      "damage": "3d6 necrotic",
+      "effect": "Target must pass WILL save or have their maximum HP reduced by the damage dealt until a long rest. A humanoid killed by this rises as a zombie under the Wight's command."
+    },
+    {
+      "name": "Longbow",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": "Ranged attack at long range."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shield Block",
+      "cost": "1 reaction",
+      "effect": "Blocks 1d6+3 damage from a physical attack using its shield."
+    },
+    {
+      "name": "Command Undead",
+      "cost": "1 reaction",
+      "effect": "When the Wight takes damage, it commands one zombie or skeleton within 9m to move up to half its speed and make an attack."
+    }
+  ],
+  "resistances": ["necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "In sunlight, the Wight has -1d6 to attack rolls and saves."
+    },
+    {
+      "name": "Undead Commander",
+      "desc": "The Wight can maintain command over up to 4 zombies or skeletons. These undead act on the Wight's turn."
+    }
+  ],
+  "lore": "Wights are the reanimated corpses of powerful warriors, retaining their martial skill and tactical cunning in undeath. They lead small hordes of lesser undead, building armies from the corpses of their victims."
+}

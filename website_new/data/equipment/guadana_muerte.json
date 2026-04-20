@@ -1,0 +1,34 @@
+{
+  "id": "guadana_muerte",
+  "name": "Guadaña de la Muerte",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Legendaria",
+  "image": "guadana_muerte.jpg",
+  "description": "Una guadaña forjada con hueso de una criatura olvidada y metal del Plano Sombrío. Las almas de los caídos giran en torno a su hoja como mariposas espectrales.",
+  "damage": "2d6 + FUE + 2d8 necrótico",
+  "damageType": "Cortante + Necrótico",
+  "price": "80 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>: Por un usuario de Nigromancia",
+    "<b>Artefacto</b>",
+    "<b>Cosechadora:</b> Cuando reduces a un enemigo a 0 PV, recuperas 2d10 de Vitalidad"
+  ],
+  "abilities": [
+    {
+      "name": "Segar Almas",
+      "cost": "2 acciones + 3 Chi",
+      "uses": "3/día",
+      "description": "En un arco de 6m, todos los enemigos reciben 4d10 necrótico. Por cada enemigo golpeado, ganas 5 de Vitalidad temporal."
+    },
+    {
+      "name": "Invocar Espectro",
+      "cost": "2 acciones + 4 Chi",
+      "uses": "1/día",
+      "description": "El alma del último enemigo muerto por la guadaña se levanta como un Espectro bajo tu control durante 1 hora."
+    }
+  ],
+  "lore": "Se rumorea que fue forjada en la Brecha Abisal y que la Madre del Abismo misma bendijo su filo."
+}

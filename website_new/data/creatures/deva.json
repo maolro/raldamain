@@ -1,0 +1,71 @@
+{
+  "id": "deva",
+  "name": "Deva",
+  "level": 10,
+  "type": "celestial",
+  "size": "Medium",
+  "hp": 35,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+1d6",
+    "WILL": "+11+2d6",
+    "MIND": "+11+2d6"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 15,
+    "general": 12
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Radiant Mace",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning + 3d8 radiant",
+      "effect": null
+    },
+    {
+      "name": "Healing Touch",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "The Deva touches a creature. The target heals 5d8+5 HP and is cured of all curses, diseases, poisons, blindness, and deafness. Usable 3 times per day."
+    },
+    {
+      "name": "Divine Word",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One fiend or undead within 18m must pass WILL save or take 4d8 radiant damage and be banished to their home plane for 24 hours."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Divine Ward",
+      "cost": "1 reaction",
+      "effect": "When an ally within 9m takes damage, the Deva can reduce that damage by 3d8."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+2d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["charm", "frightened"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Can polymorph into any humanoid or beast. Stats remain the same in any form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to all saves against spells and magical effects."
+    },
+    {
+      "name": "Angelic Aura",
+      "desc": "Allies within 9m have +1d6 to saves against being charmed or frightened."
+    }
+  ],
+  "lore": "Devas are the messengers and warriors of the divine, angelic beings of great beauty and power. They descend to the mortal world to guide heroes, smite evil, and heal the wounded. They can assume any humanoid form to walk among mortals undetected."
+}

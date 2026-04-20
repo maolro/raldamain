@@ -1,0 +1,68 @@
+{
+  "id": "chimera",
+  "name": "Chimera",
+  "level": 8,
+  "type": "monster",
+  "size": "Large",
+  "hp": 28,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+2d6",
+    "WILL": "+5",
+    "MIND": "+9"
+  },
+  "defenses": {
+    "physical": 13,
+    "magical": 9,
+    "general": 7
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Lion Bite",
+      "cost": "1 action",
+      "damage": "4d8 piercing",
+      "effect": null
+    },
+    {
+      "name": "Goat Horns",
+      "cost": "1 action",
+      "damage": "3d8 bludgeoning",
+      "effect": "Target must pass PHYS save or be knocked prone."
+    },
+    {
+      "name": "Dragon Head Breath",
+      "cost": "2 actions",
+      "damage": "5d8 fire",
+      "effect": "A 5m cone of fire. All targets must pass PHYS save for half damage. Recharges on a roll of 5-6 at start of turn."
+    },
+    {
+      "name": "Claw",
+      "cost": "1 action",
+      "damage": "3d8 slashing",
+      "effect": null
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Triple Awareness",
+      "cost": "1 reaction",
+      "effect": "The Chimera cannot be surprised and has +2d6 to saves against being flanked or ambushed. When attacked from behind, the goat head retaliates for 2d8 bludgeoning."
+    }
+  ],
+  "resistances": ["fire"],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Three Heads",
+      "desc": "The Chimera has advantage on perception checks and saves against being blinded, deafened, or stunned."
+    },
+    {
+      "name": "Flyby",
+      "desc": "Can fly using its dragon wings. Does not provoke reactions when flying out of reach."
+    }
+  ],
+  "lore": "Chimeras are grotesque three-headed monstrosities combining a lion, goat, and dragon. They are savage, destructive, and territorial, swooping from mountain lairs to ravage livestock and settlements. Their dragon head's breath weapon makes them particularly dangerous."
+}

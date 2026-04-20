@@ -1,0 +1,62 @@
+{
+  "id": "assassin_vine",
+  "name": "Assassin Vine",
+  "level": 6,
+  "type": "plant",
+  "size": "Large",
+  "hp": 18,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 11,
+    "magical": 7,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Constrict",
+      "cost": "1 action",
+      "damage": "4d6 bludgeoning",
+      "effect": "Target is grappled and restrained. Restrained targets take 2d6 bludgeoning at the start of each turn."
+    },
+    {
+      "name": "Entangle",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "All creatures in a 6m radius must pass PHYS save or be restrained by vines. Restrained targets can attempt a PHYS save at end of each turn to break free."
+    },
+    {
+      "name": "Vine Whip",
+      "cost": "1 action",
+      "damage": "3d6 bludgeoning",
+      "effect": "Reach attack up to 6m."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Grasping Ambush",
+      "cost": "1 reaction",
+      "effect": "When a creature enters melee range, the vine lashes out. Target must pass PHYS save or be grappled."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While motionless, the Assassin Vine is indistinguishable from a normal vine or creeper."
+    },
+    {
+      "name": "Blindsight",
+      "desc": "Can sense creatures through vibrations within 9m. Cannot be blinded."
+    }
+  ],
+  "lore": "Assassin Vines are predatory plants that disguise themselves among normal vegetation. They wait motionless until prey wanders within reach, then strike with lightning speed, constricting victims while drawing nutrients from their bodies."
+}

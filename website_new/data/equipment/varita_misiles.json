@@ -1,0 +1,21 @@
+{
+  "id": "varita_misiles",
+  "name": "Varita de Proyectiles Arcanos",
+  "type": "Objeto Mágico",
+  "subtype": "Varita",
+  "rarity": "Rara",
+  "image": "varita_misiles.jpg",
+  "description": "Una varita de cristal translúcido con vetas de energía arcana visible en su interior. Dispara dardos de fuerza infalibles.",
+  "price": "6 CR",
+  "properties": [
+    "<b>Sintonización</b>: Por un usuario de magia"
+  ],
+  "abilities": [
+    {
+      "name": "Proyectiles Arcanos",
+      "cost": "1 acción",
+      "uses": "7 cargas/día",
+      "description": "Gasta 1-3 cargas. Por cada carga, un dardo de fuerza impacta automáticamente a un objetivo visible dentro de 18m, infligiendo 1d6+1 arcano. Se recargan 1d4+3 cargas al amanecer."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "mandoble_tormenta",
+  "name": "Mandoble de la Tormenta",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "mandoble_tormenta.jpg",
+  "description": "Un mandoble cuya hoja está forjada con metal celeste que canaliza tormentas. Rayos serpentean por su filo durante el combate.",
+  "damage": "2d6 + FUE + 1d8 eléctrico",
+  "damageType": "Cortante + Eléctrico",
+  "price": "12 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Llamar al Rayo",
+      "cost": "2 acciones + 3 Chi",
+      "uses": "1/día",
+      "description": "Invocas un rayo del cielo sobre un punto a 18m. Todos en un radio de 3m deben superar PHYS o recibir 4d10 eléctrico (mitad en éxito)."
+    }
+  ]
+}

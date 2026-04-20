@@ -1,0 +1,68 @@
+{
+  "id": "vrock",
+  "name": "Vrock",
+  "level": 10,
+  "type": "demon",
+  "size": "Large",
+  "hp": 35,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 11,
+    "general": 10
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": "+11+1d6",
+  "actions": [
+    {
+      "name": "Talons",
+      "cost": "1 action",
+      "damage": "5d8 slashing",
+      "effect": null
+    },
+    {
+      "name": "Beak",
+      "cost": "1 action",
+      "damage": "4d8 piercing",
+      "effect": null
+    },
+    {
+      "name": "Stunning Screech",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "All creatures within 6m must pass PHYS save or be stunned until end of their next turn. Usable once per encounter."
+    },
+    {
+      "name": "Spores",
+      "cost": "1 action",
+      "damage": "3d8 poison",
+      "effect": "A 5m radius cloud of toxic spores. Targets must pass PHYS save or take damage and be poisoned. While poisoned, they take 1d8 poison at the start of each turn for 1 minute."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Wing Buffet",
+      "cost": "1 reaction",
+      "effect": "When a creature enters melee range, the Vrock beats its wings. Target must pass PHYS save or be pushed 3m and knocked prone."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of an enemy's reach."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    }
+  ],
+  "lore": "Vrocks are vulture-headed demons that revel in carnage and destruction. They attack in shrieking dives, releasing clouds of toxic spores and ear-splitting screeches. In groups, they perform a horrific dance that unleashes devastating energy."
+}

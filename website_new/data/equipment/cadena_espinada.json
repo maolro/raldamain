@@ -1,0 +1,18 @@
+{
+  "id": "cadena_espinada",
+  "name": "Cadena Espinada",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Poco Común",
+  "image": "cadena_espinada.jpg",
+  "description": "Una cadena de acero negro cubierta de púas afiladas. Usada por gladiadores y carceleros como instrumento de sometimiento.",
+  "damage": "1d10 + FUE",
+  "damageType": "Contundente + Perforante",
+  "price": "3 CR",
+  "range": "Alcance cercano",
+  "properties": [
+    "<b>Alcance:</b> Ataca a distancia cercana",
+    "<b>Atrapar:</b> Al golpear, puedes intentar agarrar al objetivo (PHYS del objetivo para escapar)",
+    "<b>Dos manos</b>: Requiere ambas manos"
+  ]
+}

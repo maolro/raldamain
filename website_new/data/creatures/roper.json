@@ -1,0 +1,71 @@
+{
+  "id": "roper",
+  "name": "Roper",
+  "level": 10,
+  "type": "monster",
+  "size": "Large",
+  "hp": 38,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 17,
+    "magical": 11,
+    "general": 10
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "5d8 piercing + acid",
+      "effect": null
+    },
+    {
+      "name": "Tendril",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Ranged attack at 15m range. Target is grappled and pulled 5m toward the Roper. The Roper can have up to 4 creatures grappled simultaneously."
+    },
+    {
+      "name": "Reel",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All grappled creatures are pulled up to 8m toward the Roper."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Tendril Snare",
+      "cost": "1 reaction",
+      "effect": "When a creature moves within 15m, the Roper can lash out with a tendril. Target must pass PHYS save or be grappled."
+    },
+    {
+      "name": "Stone Camouflage",
+      "cost": "1 reaction",
+      "effect": "When a creature enters the Roper's cave, the Roper is indistinguishable from a stalagmite. Creatures must pass MIND check to notice it's alive before it attacks."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While motionless, the Roper is indistinguishable from a cave formation."
+    },
+    {
+      "name": "Grasping Tendrils",
+      "desc": "Each tendril can be severed (10 HP, physical defense 17). Severed tendrils regrow after 1 minute."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "Can climb any surface, including ceilings."
+    }
+  ],
+  "lore": "Ropers are patient, cunning predators that disguise themselves as cave formations. When prey wanders close, their tendrils lash out to grapple and reel victims into their gnashing maw. They can wait motionless for weeks until the perfect meal arrives."
+}

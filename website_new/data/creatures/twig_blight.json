@@ -1,0 +1,56 @@
+{
+  "id": "twig_blight",
+  "name": "Twig Blight",
+  "level": 4,
+  "type": "plant",
+  "size": "Small",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "3d6 slashing",
+      "effect": null
+    },
+    {
+      "name": "Grasping Roots",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Roots erupt around a target within 3m. Target must pass PHYS save or be restrained until end of their next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Snap Apart",
+      "cost": "1 reaction",
+      "effect": "When reduced to 0 HP, the Twig Blight shatters into sharp splinters. All creatures within 1.5m take 1d6 piercing."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While motionless, the Twig Blight is indistinguishable from a dead bush or twig bundle."
+    },
+    {
+      "name": "Swarm Tactics",
+      "desc": "When 3 or more Twig Blights are adjacent to the same target, they all gain +1d6 to attack rolls."
+    }
+  ],
+  "lore": "Twig Blights are small, animated plants spawned from evil trees or dark nature magic. They lurk in forests disguised as dead brush, ambushing travelers in overwhelming numbers. Individually weak, their strength lies in swarming."
+}

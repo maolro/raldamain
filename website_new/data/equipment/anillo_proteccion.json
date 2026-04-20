@@ -23,6 +23,5 @@
       "description": "Obtienes +1 de bonus a tu Defensa y a todas tus tiradas de salvación mientras lleves este anillo."
     }
   ],
-  "requirements": "Sintonización",
-  "lore": "Los Anillos de Protección son creados por magos especializados en magia protectora, y cada uno requiere semanas de trabajo meticuloso para encantar adecuadamente. Las runas deben ser grabadas con precisión perfecta, o el anillo puede fallar catastróficamente. Se dice que el Archimago Celestino creó los primeros Anillos de Protección como regalos para sus alumnos más prometedores, y que muchos de esos anillos originales todavía circulan por Raldamain, pasando de maestro a aprendiz a través de las generaciones."
+  "requirements": "Sintonización"
 }

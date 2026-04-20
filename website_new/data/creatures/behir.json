@@ -1,0 +1,68 @@
+{
+  "id": "behir",
+  "name": "Behir",
+  "level": 12,
+  "type": "monster",
+  "size": "Huge",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+3d6",
+    "WILL": "+11",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 17,
+    "magical": 12,
+    "general": 11
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "6d8 piercing",
+      "effect": "Target is grappled."
+    },
+    {
+      "name": "Constrict",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning + slashing",
+      "effect": "Can only target grappled creatures. Target is restrained and takes 3d8 bludgeoning at the start of each of the Behir's turns."
+    },
+    {
+      "name": "Lightning Breath",
+      "cost": "2 actions",
+      "damage": "6d8 lightning",
+      "effect": "A 6m wide, 30m long line of lightning. All creatures must pass PHYS save for half. Recharges on 5-6 at start of turn."
+    },
+    {
+      "name": "Swallow",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Swallows a Medium or smaller creature it has grappled. Swallowed creatures are blinded, restrained, and take 4d8 acid damage at the start of each of the Behir's turns. If the Behir takes 15 damage from inside, it regurgitates."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Coil Defense",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the Behir coils defensively. +4 to all defenses until start of its next turn."
+    }
+  ],
+  "resistances": [],
+  "immunities": ["lightning"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "Can climb any surface, including ceilings, without checks."
+    },
+    {
+      "name": "Draconic Rival",
+      "desc": "Behirs hate dragons. They gain +1d6 to attack and damage rolls against dragons."
+    }
+  ],
+  "lore": "Behirs are massive, serpentine creatures with twelve legs and a devastating lightning breath. They are ancient rivals of dragons, claiming the same mountain lairs and hunting grounds. A Behir can swallow a person whole and crush them with its coils."
+}

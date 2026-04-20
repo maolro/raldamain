@@ -1,0 +1,15 @@
+{
+  "id": "cota_elfos",
+  "name": "Cota de los Elfos",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Ligera",
+  "rarity": "Poco Común",
+  "image": "cota_elfos.jpg",
+  "description": "Una malla finísima tejida por artesanos elfos con hilos de mithrilo. Tan ligera como la seda pero resistente como el acero.",
+  "defense": "4",
+  "price": "4 CR",
+  "properties": [
+    "<b>Élfica:</b> No impone penalizaciones a DES ni a tiradas de magia",
+    "<b>Sigilosa:</b> No impone desventaja en sigilo"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "storm_elemental",
+  "name": "Storm Elemental",
+  "level": 12,
+  "type": "elemental",
+  "size": "Huge",
+  "hp": 38,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 13,
+    "general": 11
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Thunder Slam",
+      "cost": "1 action",
+      "damage": "5d8 thunder + lightning",
+      "effect": "Target must pass PHYS save or be pushed 6m and deafened for 1 round."
+    },
+    {
+      "name": "Lightning Bolt",
+      "cost": "1 action",
+      "damage": "4d8 lightning",
+      "effect": "Ranged magical attack. Hits all creatures in a 30m line. PHYS save for half."
+    },
+    {
+      "name": "Tempest",
+      "cost": "2 actions",
+      "damage": "4d8 bludgeoning + lightning",
+      "effect": "Creates a storm in a 12m radius. All creatures must pass PHYS save or take full damage, be knocked prone, and have their movement halved next turn. On success, take half damage only."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Storm Surge",
+      "cost": "1 reaction",
+      "effect": "When hit by a ranged attack, the elemental redirects the projectile with wind. The attack is reflected back at the attacker using the elemental's attack roll."
+    },
+    {
+      "name": "Thunder Rebuke",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the attacker is struck by a thunderclap and must pass PHYS save or be pushed 6m and stunned until end of their next turn."
+    }
+  ],
+  "resistances": ["bludgeoning", "slashing", "piercing"],
+  "immunities": ["lightning", "thunder", "poison"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Stormborn",
+      "desc": "Can fly. Immune to being knocked prone. The elemental is surrounded by constant winds; ranged attacks against it have -1d6."
+    },
+    {
+      "name": "Lightning Rod",
+      "desc": "Lightning damage dealt to the Storm Elemental instead heals it for the same amount."
+    }
+  ],
+  "lore": "Storm Elementals are cataclysmic beings formed when air, water, and lightning fuse into a single entity. They are living thunderstorms, bringing devastation wherever they roam. The crash of their thunder can be heard for miles."
+}

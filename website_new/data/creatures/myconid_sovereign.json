@@ -1,0 +1,68 @@
+{
+  "id": "myconid_sovereign",
+  "name": "Myconid Sovereign",
+  "level": 6,
+  "type": "plant",
+  "size": "Large",
+  "hp": 18,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7+1d6",
+    "MIND": "+7+1d6"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 10,
+    "general": 7
+  },
+  "attackRoll": "+7",
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Fist",
+      "cost": "1 action",
+      "damage": "3d6 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Pacifying Spores",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One creature within 6m must pass WILL save or be incapacitated (unable to act) for 1 round."
+    },
+    {
+      "name": "Hallucination Spores",
+      "cost": "2 actions",
+      "damage": "3d6 psychic",
+      "effect": "All creatures in a 5m radius must pass MIND save. On failure, they are confused for 1 round (attack random target on their turn) and take psychic damage."
+    },
+    {
+      "name": "Rapport Spores",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Non-hostile creatures within 9m can communicate telepathically through the spores for 1 hour. Allies linked by rapport spores gain +1d6 to saves against fear."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Animating Spores",
+      "cost": "1 reaction",
+      "effect": "When a creature dies within 6m, the Sovereign can reanimate its corpse as a spore servant (zombie with 10 HP that acts on the Sovereign's turn). Can have up to 3 spore servants."
+    }
+  ],
+  "resistances": ["poison"],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Sun Sickness",
+      "desc": "In direct sunlight, the Myconid has -1d6 to all rolls and loses 2 HP per round."
+    },
+    {
+      "name": "Fungal Colony",
+      "desc": "While in its colony, the Sovereign is surrounded by 1d6 Myconid adults. They share its turn and each can release Rapport Spores."
+    }
+  ],
+  "lore": "Myconid Sovereigns are the leaders of peaceful fungal colonies deep underground. They communicate through rapport spores and prefer pacifism, but defend their colonies fiercely with hallucinogenic and pacifying spore clouds. They can reanimate the dead as spore servants."
+}

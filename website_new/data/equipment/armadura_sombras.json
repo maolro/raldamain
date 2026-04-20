@@ -1,0 +1,22 @@
+{
+  "id": "armadura_sombras",
+  "name": "Armadura de las Sombras",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Ligera",
+  "rarity": "Rara",
+  "image": "armadura_sombras.jpg",
+  "description": "Cuero teñido con esencia del Plano Sombrío. Las sombras se adhieren al portador, dificultando que sea visto o alcanzado.",
+  "defense": "3",
+  "price": "8 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Paso Sombrío",
+      "cost": "1 acción + 1 Chi",
+      "uses": "2/día",
+      "description": "Te fundes con las sombras y te teleportas hasta 9m a otra zona en penumbra u oscuridad que puedas ver."
+    }
+  ]
+}

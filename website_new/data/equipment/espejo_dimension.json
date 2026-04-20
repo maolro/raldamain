@@ -1,0 +1,24 @@
+{
+  "id": "espejo_dimension",
+  "name": "Espejo Dimensional",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Muy Rara",
+  "image": "espejo_dimension.jpg",
+  "description": "Un espejo ovalado de marco plateado que no refleja la realidad sino otros lugares y tiempos. Su superficie ondula como agua.",
+  "price": "30 CR",
+  "abilities": [
+    {
+      "name": "Portal Espejo",
+      "cost": "1 minuto + 3 Chi",
+      "uses": "1/día",
+      "description": "Convierte el espejo en un portal a cualquier lugar que hayas visitado. El portal permanece abierto 1 minuto y permite el paso en ambas direcciones."
+    },
+    {
+      "name": "Espiar",
+      "cost": "1 acción + 1 Chi",
+      "uses": "3/día",
+      "description": "El espejo muestra cualquier lugar que conozcas en un radio de 10 km durante 10 minutos."
+    }
+  ]
+}

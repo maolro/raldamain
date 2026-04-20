@@ -1,0 +1,34 @@
+{
+  "id": "mascara_mil_rostros",
+  "name": "Máscara de los Mil Rostros",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "mascara_mil_rostros.jpg",
+  "description": "Una máscara blanca sin rasgos que se adapta al rostro de quien la porte. Cuando se activa, el portador puede asumir cualquier identidad.",
+  "price": "60 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Cambio de Rostro",
+      "cost": "1 acción",
+      "uses": "Ilimitado",
+      "description": "Asumes la apariencia exacta de cualquier humanoide que hayas visto, incluyendo voz, olor y mannerismos. La transformación es física, no ilusoria. Dura hasta que la desactives."
+    },
+    {
+      "name": "Robar Recuerdos",
+      "cost": "1 acción + 3 Chi",
+      "uses": "1/día",
+      "description": "Al tocar a un humanoide incapacitado o dispuesto, copias sus últimas 24 horas de recuerdos, incluyendo conocimientos, contraseñas y planes."
+    },
+    {
+      "name": "Invisibilidad",
+      "cost": "1 acción + 1 Chi",
+      "uses": "3/día",
+      "description": "Te vuelves completamente invisible durante 10 minutos o hasta que ataques."
+    }
+  ]
+}

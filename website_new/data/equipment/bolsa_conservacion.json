@@ -1,0 +1,18 @@
+{
+  "id": "bolsa_conservacion",
+  "name": "Bolsa de Conservación",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "bolsa_conservacion.jpg",
+  "description": "Una bolsa de cuero aparentemente normal pero cuyo interior es mucho más grande de lo que debería. El espacio interior está en estasis.",
+  "price": "3 CR",
+  "abilities": [
+    {
+      "name": "Espacio Extradimensional",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "El interior puede contener hasta 250 kg en un espacio de 1m cúbico. Los objetos dentro no se deterioran ni pesan para el portador."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "yuki_onna",
+  "name": "Yuki-onna",
+  "level": 8,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 22,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+9",
+    "WILL": "+9+2d6",
+    "MIND": "+9+1d6"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 13,
+    "general": 8
+  },
+  "attackRoll": null,
+  "magicRoll": "+9+2d6",
+  "actions": [
+    {
+      "name": "Frozen Touch",
+      "cost": "1 action",
+      "damage": "3d8 cold",
+      "effect": "Target must pass PHYS save or have their movement halved until end of their next turn."
+    },
+    {
+      "name": "Blizzard Breath",
+      "cost": "2 actions",
+      "damage": "4d8 cold",
+      "effect": "Cone of freezing wind. All targets in a 9m cone must pass PHYS save. On failure, they take full damage and are frozen in place (restrained) for 1 round."
+    },
+    {
+      "name": "Life Drain Kiss",
+      "cost": "2 actions",
+      "damage": "5d8 necrotic",
+      "effect": "Can only target a charmed, restrained, or willing creature. The Yuki-onna heals for half the damage dealt."
+    },
+    {
+      "name": "Entrancing Beauty",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One target within medium range must pass WILL save or be charmed for 1 round, moving toward the Yuki-onna on their turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Snow Veil",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the Yuki-onna dissolves into a flurry of snow, gaining +5 to all defenses against that attack. She reforms at the start of her next turn."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["cold"],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Ice Walk",
+      "desc": "The Yuki-onna glides over snow and ice effortlessly. She leaves no tracks and can walk on frozen water regardless of its thickness."
+    },
+    {
+      "name": "Snowstorm Aura",
+      "desc": "The area within 9m of the Yuki-onna is lightly obscured by swirling snow. Non-cold-immune creatures starting their turn in the aura take 1d6 cold damage."
+    }
+  ],
+  "lore": "Yuki-onna are hauntingly beautiful spirits of winter storms. They appear during blizzards, luring travelers with their ethereal beauty before draining their life force with a frozen kiss. Some tales speak of Yuki-onna who fell in love with mortals, sparing them from the cold."
+}

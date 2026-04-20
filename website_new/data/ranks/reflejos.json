@@ -6,9 +6,13 @@
   "stats": ["Destreza", "Chi"],
   "description": "Posees una velocidad de reacción sobrenatural. Esquivas ataques invisibles, reaccionas antes que nadie y te mueves con una agilidad imposible de rastrear.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Gran Agilidad:</strong> Sumas tu Rango a todos los tiros de Esquiva.",
     "<strong>Absolutamente innato:</strong> Habilidades físicas naturales que no pueden ser suprimidas ni contrarrestadas."
+  ],
+  "rules_refs": [
+    "Aperturas (ver manual_core.md § El Combate)",
+    "Reacciones (ver manual_core.md § El Combate)"
   ],
   "levels": [
     {
@@ -18,13 +22,13 @@
         {
           "name": "Velocidad Superior",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Aumenta tus acciones por turno en +1. Sumas tu Rango a la Iniciativa.",
-          "empower": "Realizar una acción fuera de turno (pagando su coste)."
+          "desc": "Obtienes +1 acción por turno. Sumas tu Rango a la Iniciativa.",
+          "empower": "Realizas una acción fuera de turno (pagando su coste)."
         },
         {
           "name": "Instinto de Supervivencia",
           "tags": ["Innata", "Reacción"],
-          "desc": "Repite un tiro de DES (Ataque, Defensa, Salvación) y quédate el mejor. Usos: Rango + 2 por combate.",
+          "desc": "Repites un tiro de DES (ataque, defensa o tiro de salvación) y te quedas con el mejor resultado. Usos por combate: Rango + 2.",
           "empower": "Recuperas un uso de esta habilidad."
         }
       ]
@@ -36,13 +40,13 @@
         {
           "name": "Esquiva Asombrosa",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Puedes usar Esquiva contra ataques sorpresa o imposibles (con Desventaja)."
+          "desc": "Puedes usar Esquiva contra ataques sorpresa o imposibles de esquivar. En ese caso, el tiro de Esquiva se realiza con Desventaja."
         },
         {
           "name": "Evasión",
           "tags": ["Innata", "Defensiva"],
           "cost": "1 chi",
-          "desc": "Al fallar una Esquiva: Reduces el daño a la mitad, evitas efectos de estado y desenganchas (acción bonus)."
+          "desc": "Al fallar una Esquiva, reduces el daño a la mitad, evitas los efectos de estado asociados y puedes desenganchar como acción bonus."
         }
       ]
     },
@@ -53,13 +57,13 @@
         {
           "name": "Giro Defensivo",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Estando en Posición Defensiva: Reduces todo daño recibido en (Rango + 1) antes de la DEF.",
-          "empower": "Entras en Posición Defensiva como acción bonus."
+          "desc": "Reduces todo el daño recibido en (Rango + 1) antes de aplicar la DEF. Solo se aplica si te queda al menos 1 Reacción disponible.",
+          "empower": "Recuperas 1 Reacción gastada."
         },
         {
           "name": "Gran Acróbata",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Inmunidad a Terreno Difícil y Tropezado. Velocidad Escalada 1. Resistencia a Caídas.",
+          "desc": "Obtienes Inmunidad a Terreno Difícil y al estado Tropezado. Obtienes Velocidad de Escalada 1 y Resistencia a daño de Caídas.",
           "empower": "Te levantas inmediatamente del estado Tropezado."
         }
       ]
@@ -72,13 +76,13 @@
           "name": "Sexto Sentido",
           "tags": ["Innata", "Pasiva"],
           "range": "Medio",
-          "desc": "Vista ciega media. Esquiva sin penalizador vs ataques rápidos/balas. Resistencia a Ilusiones y Visuales."
+          "desc": "Obtienes vista ciega a alcance medio. Puedes esquivar ataques rápidos y balas sin penalizador. Obtienes Resistencia a Ilusiones y efectos Visuales."
         },
         {
           "name": "Punto Ciego",
           "tags": ["Innata", "Reacción"],
           "cost": "2 chi",
-          "desc": "Puedes usar Esquiva para defenderte de Tiros de Salvación que te apunten explícitamente (ej. hechizos mentales)."
+          "desc": "Puedes usar Esquiva para defenderte de tiros de salvación que te apunten directamente (por ejemplo, hechizos mentales dirigidos). [AVISO AUTOR: No queda claro si reemplaza el tiro de salvación o si es un tiro adicional.]"
         }
       ]
     },
@@ -89,13 +93,13 @@
         {
           "name": "Libertad de Movimiento",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a Agarres (y Ventaja para escapar). Desenganchar como acción bonus.",
+          "desc": "Obtienes Resistencia a Agarres y Ventaja en tiros para escapar de ellos. Puedes desenganchar como acción bonus.",
           "empower": "Te liberas inmediatamente de un Agarre."
         },
         {
           "name": "Reflejos Supremos",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Obtienes un turno adicional completo (3 acciones) con -10 a la iniciativa."
+          "desc": "Obtienes un turno adicional completo con 3 acciones, a -10 de Iniciativa."
         }
       ]
     }

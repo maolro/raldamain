@@ -18,14 +18,14 @@
         {
           "name": "Nacido del cielo",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a efectos Radiantes. Las criaturas celestiales te reconocen como aliado."
+          "desc": "Obtienes Resistencia a efectos Radiantes. Las criaturas celestiales te reconocen como aliado."
         },
         {
           "name": "Canalización Celestial",
           "tags": ["Innata", "Mejora"],
           "cost": "1 acción",
           "duration": "Hasta 6 Rondas",
-          "desc": "Ventaja en tiros de Ataque, Defensa, Habilidad y Salvación. Este efecto dura hasta 6 rondas y cuando acabe reduces tu Vitalidad máxima por 2 por cada ronda (si esto te reduciría a menos de 0 Vitalidad caerías inconsciente)."
+          "desc": "Obtienes Ventaja en tiros de ataque, defensa, habilidad y salvación. El efecto dura hasta 6 rondas. Al terminar, tu Vitalidad máxima se reduce en 2 por cada ronda activa. Si esta reducción te llevaría a menos de 0 Vitalidad, caes inconsciente."
         }
       ]
     },
@@ -39,18 +39,18 @@
           "tags": ["Innata", "Mejora"],
           "cost": "1 chi",
           "duration": "1 Ronda",
-          "desc": "Durante esta ronda tus ataques físicos cuentan como mágicos. Además, al impactar con un ataque puedes reducir tu vigor por 2 para aumentar tu daño por un valor igual a tu Rango + 1 (máximo una vez por ataque)."
+          "desc": "Durante esta ronda, tus ataques físicos cuentan como mágicos. Además, al impactar puedes reducir tu chi en 2 para aumentar el daño en un valor igual a tu Rango + 1 (máximo una vez por ataque)."
         },
         {
           "name": "Sentido Vital",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Tienes vista a ciegas a distancia media y eres capaz de identificar la magia lanzada a esa misma distancia."
+          "desc": "Obtienes vista ciega a distancia media y puedes identificar la magia lanzada a esa misma distancia."
         },
         {
           "name": "Cuerpo Puro",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Al activar Canalización Celestial recibes PV temporales iguales a tu Rango x 5 y aumentas tu Defensa por un valor igual a tu Rango + 1.",
-          "empower": "Repites un tiro de muerte y te quedas el mejor resultado."
+          "desc": "Al activar Canalización Celestial, obtienes PV temporales iguales a Rango x 5 y tu Defensa aumenta en un valor igual a Rango + 1.",
+          "empower": "Repites un tiro de muerte y te quedas con el mejor resultado."
         }
       ]
     },
@@ -63,14 +63,14 @@
           "tags": ["Innata", "Invocación"],
           "cost": "3 acciones, 2 chi",
           "duration": "1 Hora",
-          "desc": "Invocas un celestial de Nivel igual a tu Rango x 2. Max 4 criaturas simultáneas.",
+          "desc": "Invocas un celestial con un Nivel máximo igual a Rango x 2. Puedes tener hasta 4 criaturas invocadas simultáneamente.",
           "empower": "La criatura invocada recupera el 50% de su Vitalidad."
         },
         {
           "name": "Alma Indomable",
           "tags": ["Innata", "Defensiva"],
           "cost": "1 chi",
-          "desc": "Tienes éxito automático en un tiro de salvación contra un efecto de cualquier tipo a costa de tu Vitalidad máxima por 2. No funciona contra habilidades míticas."
+          "desc": "Como reacción, obtienes éxito automático en un tiro de salvación contra un efecto de cualquier tipo. Tu Vitalidad máxima se reduce en 2. No funciona contra habilidades míticas."
         }
       ]
     },
@@ -82,30 +82,30 @@
         {
           "name": "Alas Angelicales",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Recibes velocidad de vuelo 2 mientras estás empleando Canalización Celetial. Esto te otorga también Ventaja en tiros de Esquiva."
+          "desc": "Mientras Canalización Celestial esté activa, obtienes velocidad de vuelo 2 y Ventaja en tiros de Esquiva."
         },
         {
           "name": "Visión Verdadera",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Recibes Inmunidad a Ilusiones, lo cual te permite percibir a seres invisibles además de las formas verdaderas de seres cambiaformas. Esta habilidad también te otorga Resistencia a efectos Mentales y Ventaja en tiros de Averiguar Intenciones."
+          "desc": "Obtienes Inmunidad a Ilusiones, lo que te permite percibir a seres invisibles y las formas verdaderas de seres cambiaformas. También obtienes Resistencia a efectos Mentales y Ventaja en tiros de Averiguar Intenciones."
         }
       ]
     },
     {
       "rank": "V",
       "title": "Maestro",
-      "passive": "Aprendes los hechizos 'Sanación superior' y 'Luz viviente' (usan Vigor).",
+      "passive": "Aprendes los hechizos 'Sanación superior' y 'Luz viviente' (usan Chi).",
       "abilities": [
         {
           "name": "Regeneración Celestial",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Al inicio de turno recuperas (Rango + 2) Vitalidad y reduces 1 herida/aflicción un paso. Se anula 1 ronda por daño de material anti-celestial.",
-          "empower": "Reduces el nivel de una herida/aflicción adicional."
+          "desc": "Al inicio de tu turno, recuperas Rango + 2 Vitalidad y reduces una herida permanente o aflicción un paso. Este efecto se anula durante 1 ronda si recibes daño de material anti-celestial.",
+          "empower": "Reduces el nivel de una herida o aflicción adicional."
         },
         {
           "name": "Alma Ascendida",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a Arcano y Divino. Resistencia Superior a Aflicción, Necrótico, Radiante y Miedo. Comunicación universal con celestiales."
+          "desc": "Obtienes Resistencia a efectos Arcanos y Divinos. Obtienes Resistencia Superior a Aflicciones, daño Necrótico, Radiante y efectos de Miedo. Puedes comunicarte con cualquier celestial."
         }
       ]
     },
@@ -119,7 +119,7 @@
           "tags": ["Innata", "Transformación"],
           "cost": "3 acciones, 5 chi",
           "duration": "6 Rondas",
-          "desc": "Avatar vengador (+40 Vitalidad Temporal). FUE/CON/CAR 12, DEF 20. Inmunidad Mental/Miedo/Aflicción/Toque. Tamaño +1. Ataques físicos +1d10 Radiante. Hechizos Vida curan doble y +1d daño. Vuelo 2. Efecto 'Poder de los Cielos' activo. Hechizos gratis."
+          "desc": "Te transformas en un avatar celestial vengador. Obtienes +40 Vitalidad temporal, FUE/CON/CAR suben a 12 y DEF sube a 20. Obtienes Inmunidad a efectos Mentales, de Miedo, Aflicciones y de Toque. Tu tamaño aumenta en +1 y tus ataques físicos infligen +1d10 daño Radiante adicional. Los hechizos de Vida curan el doble y causan +1d daño. Obtienes Vuelo 2, el efecto 'Poder de los Cielos' se activa y los hechizos no cuestan chi."
         }
       ]
     }

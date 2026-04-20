@@ -6,7 +6,7 @@
   "stats": ["Inteligencia", "Chi"],
   "description": "Manipulas los conductos de chi para alterar la distancia y el espacio. Te especializas en teletransporte, creación de portales y el control del campo de batalla.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango.",
     "<strong>Parada Espacial:</strong> Usas Magia Espacial para tiros de Esquiva y salvaciones de Destreza."
   ],
@@ -20,8 +20,8 @@
           "tags": ["Espacial", "Arcana", "Defensiva"],
           "cost": "1 acción, 1 chi",
           "duration": "Instantáneo",
-          "desc": "Teletransporte de 1 paso. Reacción (Posición Defensiva): Reduce daño a la mitad y te mueves 1 paso. A Rango III evita el ataque totalmente.",
-          "empower": "Aumenta la distancia de teletransporte un paso (Max 2 veces)."
+          "desc": "Te teletransportas 1 paso. Como reacción (1 Reacción): reduces el daño recibido a la mitad y te teletransportas 1 paso. A Rango III, la reacción evita el ataque por completo.",
+          "empower": "Aumenta la distancia de teletransporte en 1 paso (máximo 2 veces)."
         },
         {
           "name": "Portal Menor",
@@ -29,15 +29,15 @@
           "cost": "1 acción",
           "range": "Medio (Visión)",
           "duration": "Concentración",
-          "desc": "Portal pequeño (mano) que conecta adyacente con distancia media. Permite atacar o interactuar a través de él.",
-          "empower": "Creas un portal menor adicional como acción bonus (1 ronda)."
+          "desc": "Creas un portal pequeño (tamaño de una mano) que conecta un punto adyacente con otro a distancia media. Puedes atacar o interactuar a través del portal.",
+          "empower": "Creas un portal menor adicional como acción bonus (dura 1 ronda)."
         },
         {
           "name": "Bolsillo Interdimensional",
           "tags": ["Espacial", "Arcana"],
           "cost": "1 acción",
-          "desc": "Guardas o sacas un objeto pequeño en una dimensión de bolsillo.",
-          "empower": "Usar como acción bonus."
+          "desc": "Guardas o extraes un objeto pequeño en una dimensión de bolsillo personal.",
+          "empower": "Puedes usar esta habilidad como acción bonus."
         }
       ]
     },
@@ -51,8 +51,8 @@
           "cost": "2 acciones, 1 chi",
           "range": "Cercano",
           "duration": "Concentración",
-          "desc": "Portal tamaño humano conectando con punto lejano visible. Cruzar forzosamente requiere empujón o fallo de salvación.",
-          "empower": "Crear como reacción para evitar ataque o forzar paso (requiere Posición Defensiva)."
+          "desc": "Creas un portal de tamaño humano que conecta con un punto lejano visible. Forzar a una criatura a cruzarlo requiere un empujón exitoso o que el objetivo falle un tiro de salvación de Salud.",
+          "empower": "Puedes crear el portal como reacción (1 Reacción) para esquivar un ataque o forzar a un enemigo a cruzar."
         },
         {
           "name": "Ancla Dimensional",
@@ -60,8 +60,8 @@
           "cost": "1 acción, 1 chi",
           "range": "Toque",
           "duration": "1 hora",
-          "desc": "Impide al objetivo teletransportarse o usar portales. Salvación de CON.",
-          "empower": "Suprime el ancla durante una ronda."
+          "desc": "El objetivo debe superar un tiro de salvación de CON o queda incapacitado de teletransportarse o usar portales durante la duración.",
+          "empower": "Suprimes el ancla sobre ti mismo durante una ronda."
         },
         {
           "name": "Distorsión Espacial",
@@ -69,7 +69,7 @@
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "crit": "Objetivo cae Tropezado.",
-          "desc": "Teletransporta enemigo 1 paso. Interrumpe acciones y concentración (Salvación Salud).",
+          "desc": "Teletransportas a un enemigo 1 paso en cualquier dirección. El objetivo debe superar un tiro de salvación de Salud o pierde su acción actual e interrumpe su concentración.",
           "empower": "Afecta a un objetivo adicional."
         }
       ]
@@ -83,7 +83,7 @@
           "name": "Brecha Espacial",
           "tags": ["Espacial", "Arcano", "Mejora"],
           "cost": "2 chi",
-          "desc": "Siguiente ataque ignora barreras, muros, DEF y Escudos. Golpea a etéreos/teletransportadores.",
+          "desc": "Tu siguiente ataque ignora barreras, muros, DEF y contadores de escudo. También impacta a criaturas etéreas o en proceso de teletransporte.",
           "empower": "Afecta a un ataque adicional esta ronda."
         },
         {
@@ -92,16 +92,16 @@
           "cost": "1 acción, 2 chi",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "desc": "Red de portales: Aumenta alcance a medio e ignora cobertura. Reacción: Redirige ataques fallidos a otro objetivo.",
-          "empower": "Redirige un ataque adicional esta ronda."
+          "desc": "Creas una red de portales en el área. Tu alcance aumenta a medio e ignoras cobertura. Como reacción, puedes redirigir un ataque fallido hacia otro objetivo dentro del área.",
+          "empower": "Rediriges un ataque adicional esta ronda."
         },
         {
           "name": "Invocar Extraplanario",
           "tags": ["Espacial", "Arcano", "Invocación"],
           "cost": "3 acciones, 2 chi",
           "duration": "1 hora",
-          "desc": "Invoca criatura Nivel <= 6 (o +2 por cada rango sobre III). No garantiza obediencia.",
-          "empower": "Invoca una criatura adicional."
+          "desc": "Invocas una criatura de Nivel 6 o inferior (+2 niveles por cada rango superior a III). La criatura no está obligada a obedecerte.",
+          "empower": "Invocas una criatura adicional."
         }
       ]
     },
@@ -115,17 +115,17 @@
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "Portal a cualquier lugar conocido del mundo. Riesgo de error si el lugar no es familiar.",
-          "empower": "Repetir tiro de transporte fallido."
+          "desc": "Abres un portal a cualquier lugar conocido del mundo. Si el destino no te es familiar, existe riesgo de error en el transporte.",
+          "empower": "Repites un tiro de transporte fallido."
         },
         {
           "name": "Cambio de Posición",
           "tags": ["Espacial", "Arcana", "Defensiva"],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
-          "crit": "Objetivo pierde Posición Defensiva.",
-          "desc": "Intercambias posición con objetivo (Salvación Salud si hostil). Reacción (Defensiva): Cambias con enemigo para que él reciba el ataque.",
-          "empower": "Intercambias a dos criaturas ajenas entre sí."
+          "crit": "El objetivo pierde su siguiente Reacción.",
+          "desc": "Intercambias tu posición con la de un objetivo a distancia media. Si el objetivo es hostil, debe superar un tiro de salvación de Salud o el intercambio se produce. Como reacción defensiva, puedes intercambiar posición con un enemigo para que reciba un ataque dirigido a ti.",
+          "empower": "Intercambias las posiciones de dos criaturas ajenas entre sí."
         },
         {
           "name": "Cierre Dimensional",
@@ -133,8 +133,8 @@
           "cost": "2 acciones, 2 chi",
           "area": "Radio grande",
           "duration": "Concentración",
-          "desc": "Bloquea magia espacial y teletransporte en el área. Te causa desventaja a ti también.",
-          "empower": "Permites un hechizo espacial aliado o ignoras penalizador 1 ronda."
+          "desc": "Bloqueas toda magia espacial y teletransporte en el área. Tú también sufres Desventaja en tiros de Magia Espacial mientras el efecto esté activo.",
+          "empower": "Permites un hechizo espacial aliado o ignoras tu penalizador durante 1 ronda."
         }
       ]
     },
@@ -145,7 +145,7 @@
         {
           "name": "Crear Demiplano",
           "tags": ["Espacial", "Pasiva"],
-          "desc": "Controlas una dimensión de bolsillo (1km²). Puedes alterar su terreno/clima con magia elemental u ocultismo."
+          "desc": "Controlas una dimensión de bolsillo de 1 km². Puedes alterar su terreno y clima usando magia elemental u ocultismo."
         },
         {
           "name": "Puerta Interdimensional",
@@ -153,7 +153,7 @@
           "cost": "2 acciones, 3 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "Portal a otro plano. Efectos crecientes por ronda: Consagrar tierra (R2), Invocar nativo (R3), Explosión de área (R7).",
+          "desc": "Abres un portal a otro plano de existencia. El portal genera efectos crecientes por ronda: consagrar la tierra (ronda 2), invocar un nativo del plano (ronda 3) y explosión de área (ronda 7).",
           "empower": "N/A"
         },
         {
@@ -161,8 +161,8 @@
           "tags": ["Espacial", "Arcano", "Duradero"],
           "cost": "1 acción, 3 chi",
           "duration": "Concentración",
-          "desc": "Te vuelves intangible e inmune al plano material. No puedes afectar al plano material.",
-          "empower": "Te materializas parcialmente 1 ronda para atacar (eres vulnerable)."
+          "desc": "Te vuelves intangible e inmune a todo efecto del plano material. Mientras dure, no puedes afectar al plano material de ninguna forma.",
+          "empower": "Te materializas parcialmente durante 1 ronda para atacar (eres vulnerable mientras tanto)."
         }
       ]
     },
@@ -176,7 +176,7 @@
           "cost": "3 acciones, 5 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
-          "desc": "Superpones tu Demiplano. Ventaja Espacial. Hechizos Rango I-II gratis. Usas efectos ambientales del demiplano. Enemigos pueden disputar el control."
+          "desc": "Superpones tu demiplano sobre el campo de batalla. Obtienes Ventaja en Magia Espacial y los hechizos de Rango I-II no cuestan chi. Aplicas los efectos ambientales de tu demiplano. Los enemigos pueden disputar el control del área."
         }
       ]
     }

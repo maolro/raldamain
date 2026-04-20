@@ -1,0 +1,16 @@
+{
+  "id": "jabalina",
+  "name": "Jabalina",
+  "type": "Arma",
+  "subtype": "Arma Simple a Distancia",
+  "rarity": "Común",
+  "image": "jabalina.jpg",
+  "description": "Un dardo largo y equilibrado diseñado para ser arrojado. Usado por cazadores y legiones desde tiempos inmemoriales.",
+  "damage": "1d8 + FUE",
+  "damageType": "Perforante",
+  "price": "0 CR",
+  "range": "Distancia cercana o media",
+  "properties": [
+    "<b>Arrojadiza</b>: Diseñada para lanzarse"
+  ]
+}

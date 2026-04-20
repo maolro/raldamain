@@ -16,7 +16,7 @@ Los primeros reyes expandieron el reino mediante conquistas militares y matrimon
 
 ## La Era de las Guerras Santas (siglos XXX-XXXIII)
 
-Durante los siglos XXX a XXXIII, Mazarín se estableció como el defensor de la fe Feynista contra los paganos y herejes. Los **Caballeros de Svaikal**, una orden militar fundada por el Patriarca Grigor I, se convirtieron en la espada de Feyn en todo el continente. Mazarín lideró coaliciones contra los Temash en el sur, defendiendo la [Ciudadela](../naciones/la-ciudadela.md) en sangrientas cruzadas que trajeron gloria pero también enormes costes en dinero y vidas.
+Durante los siglos XXX a XXXIII, Mazarín se estableció como el defensor de la fe Feynista contra los paganos y herejes. Los **Caballeros de Svaikal**, una orden militar fundada por el Rey Grigor I, se convirtieron en la espada de Feyn en todo el continente. Mazarín lideró coaliciones contra los Temash en el sur, defendiendo la [Ciudadela](../naciones/la-ciudadela.md) en sangrientas cruzadas que trajeron gloria pero también enormes costes en dinero y vidas.
 
 Fue también en esta época cuando Mazarín influyó enormemente en los emergentes Reinos Libres y en el naciente [Reino de Ustilus](./imperio-de-ustilus), que entonces era un estado pequeño en las llanuras occidentales. Los reyes Mazarinos vieron a Ustilus como un aliado natural contra enemigos comunes. Esta alianza, sin embargo, acabaría generando recelo de parte de los Ustileses debido a la mala conducta de parte de los caballeros y soldados Mazarinos que pasaban por el reino, quienes hicieron numerosos saqueos e incluso incendiaron la capital ustilesa.
 
@@ -39,11 +39,6 @@ Kratoi había estado durante siglos en la órbita de influencia Mazarina, pero l
 Durante su reinado, [el Pacto](../facciones/pacto.md), una organización secreta ilustrada y anticlerical, ganó enorme influencia en la corte Mazarina. Los agentes del Pacto se infiltraron en el gobierno, controlando ministros clave y dirigiendo la política exterior desde las sombras. Utilizaron a Mazarín como un estado títere para frenar el expansionismo ustilés, empujando al anciano rey a otra guerra desastrosa contra Ustilus que acabó en ruina económica.
 
 Gerashim IX murió en 4002, dos años antes de la desaparición de Feyn. La avanzada edad de Gerashim hizo que su hijo Latshezar IV, ya un hombre mayor, durase poco en el trono. A él le sucedería su nieto Kaleyan III, un monarca melancólico y depresivo que dedicó su tiempo a escribir poesía en lugar de gobernar, delegando casi todas sus funciones gubernamentales a ministros influenciados por el Pacto. 
-
-
-## El golpe de Alden II y la sucesión de Netyalko VII (4022-)
-
-
 
 # Gobierno
 
@@ -122,19 +117,15 @@ Mazarín mantiene relaciones cordiales con los Reinos Libres, quienes los ven co
 
 **Svaikal**, la capital del reino y sede del Patriarcado Feynista del norte, es una ciudad de contradicciones. Sus doradas cúpulas de cebolla y sus majestuosas catedrales blancas brillan bajo el sol invernal, evocando la gloria de siglos pasados. Sus amplias avenidas están flanqueadas por palacios neoclásicos que imitan la arquitectura del Primer Imperio. Pero bajo esta fachada de grandeza se esconde la decadencia: edificios que se desmoronan, calles sin pavimentar, barrios de chabolas donde el pueblo llano vive en condiciones infrahumanas.
 
-## Malekay
-
-**Malekay** es uno de los lugares más extraños y sagrados de todo Raldamain. Este pequeño pueblo de apenas 3,000 habitantes se encuentra en una región remota donde, según las leyendas antiguas, el **Velo** entre el mundo material y el plano espiritual es extremadamente fino. Fenómenos sobrenaturales son comunes: espíritus ancestrales que caminan visiblemente por las calles, luces fantasmales que danzan sobre el río, y ocasionales manifestaciones de entidades del más allá.
-
 ## Velotsk
 
-**Velotsk**, la segunda ciudad más grande del reino con 300,000 habitantes, es el principal puerto de Mazarín en el Mar del Norte. A diferencia de Svaikal, que está atrapada en el pasado, Velotsk mira tímidamente hacia el futuro. Es el centro de la incipiente industrialización del reino, con fábricas textiles y astilleros (casi todos de propiedad extranjera o del Pacto).
+**Velotsk**, la segunda ciudad más grande del reino con 300,000 habitantes, es el principal puerto de Mazarín en el Mar del Norte. A diferencia de Svaikal, que está atrapada en el pasado, Velotsk mira tímidamente hacia el futuro. Es el centro de la incipiente industrialización del reino, con fábricas textiles y astilleros, aunque casi todos de propiedad extranjera o del Pacto.
 
-La ciudad tiene un ambiente más cosmopolita que la capital. Mercaderes de Ustilus, Thas-Tapet e incluso elfos operan aquí. Hay barrios enteros de trabajadores industriales que viven en condiciones miserables pero que al menos han escapado de la servidumbre rural. Es también un hervidero de activismo político: células del Pacto operan abiertamente disfrazadas como "círculos de lectura", y hay murmuraciones de movimientos revolucionarios entre los trabajadores.
+La ciudad tiene un ambiente más cosmopolita que la capital. Mercaderes de Ustilus, Thas-Tapet e incluso elfos operan aquí. Hay barrios enteros de trabajadores industriales que viven en condiciones miserables pero que al menos han escapado de la servidumbre rural. Es también un hervidero de activismo político ya que células del Pacto operan abiertamente disfrazadas como "círculos de lectura", y hay murmuraciones de movimientos revolucionarios entre los trabajadores.
 
 ## Novotsar
 
-**Novotsar** fue fundada como una "nueva capital" por el Zarin Alexei II hace 200 años en un intento de modernizar el reino. La idea era construir una ciudad planificada con calles rectilíneas, arquitectura moderna y servicios adecuados. El proyecto consumió el tesoro real durante décadas y el resultado es... extraño.
+**Novotsar** fue fundada como una "nueva capital" por el Rey Dragomir II hace 200 años en un intento de modernizar el reino. La idea era construir una ciudad planificada con calles rectilíneas, arquitectura moderna y servicios adecuados. El proyecto consumió el tesoro real durante décadas y el resultado es... extraño.
 
 Novotsar es una ciudad fantasma de palacios vacíos y avenidas desiertas. Los nobles se negaron a abandonar Svaikal, así que los edificios monumentales se construyeron pero nunca se habitaron. Hoy tiene solo 50,000 residentes, principalmente burócratas de nivel medio forzados a vivir allí y sus familias resentidas. Es un monumento a la vanidad real y al fracaso de la modernización Mazarina. Aún así, algunos visionarios ven potencial en Novotsar y el Pacto la está considerando como posible base de operaciones.
 
@@ -148,4 +139,4 @@ La Estepa Blanca es también el hogar de criaturas mágicas peligrosas: manadas 
 
 Ubicado en las montañas orientales, este antiguo monasterio Feynista es uno de los pocos lugares donde la fe se mantiene pura y sin corrupción. Los monjes aquí han preservado textos antiguos, practican ascetismo genuino, y se dedican a la oración contemplativa. Tras la desaparición de Feyn, muchos han caído en desesperación y algunos han muerto en ayunos suicidas esperando una señal divina que nunca llega.
 
-El Abad Serafín, líder del monasterio, es uno de los pocos líderes religiosos respetados en Mazarín. Ha condenado públicamente la corrupción del Patriarcado y aboga por un retorno a los valores originales del Feynismo. Esto lo ha hecho enemigo del Patriarca Mikhail III pero le ha ganado el amor del pueblo llano.
+El Abad Pentelei, líder del monasterio, es uno de los pocos líderes religiosos respetados en Mazarín. Ha condenado públicamente la corrupción del Patriarcado y aboga por un retorno a los valores originales del Feynismo. Esto lo ha hecho enemigo del Patriarca Mikhail III pero le ha ganado el amor del pueblo llano.

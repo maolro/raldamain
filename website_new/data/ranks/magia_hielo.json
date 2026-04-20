@@ -9,7 +9,7 @@
   ],
   "description": "Controlas el agua en su estado sólido de forma agresiva. Creas armas de hielo, congelas a tus enemigos, invocas ventiscas y manipulas la temperatura ambiental para llevar el frío extremo al campo de batalla.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",
     "<strong>Parada mágica:</strong> Usas Magia de Hielo para tiros de parada y salvaciones contra Fuego, Agua, Frío, Naturaleza y Ácido."
   ],
@@ -29,8 +29,8 @@
           "cost": "1 acción",
           "range": "Medio",
           "duration": "Instantáneo",
-          "desc": "Proyectil perforante (1d6 + SAB). Alternativa: Crear arma de hielo (daño base arma + SAB, se rompe al golpear sólido o con fuego).",
-          "empower": "Ataca objetivo extra o repara/crea arma de hielo (acción bonus)."
+          "desc": "Inflige 1d6 + SAB daño Perforante con un proyectil de hielo. Alternativa: crea un arma de hielo (daño base del arma + SAB, se rompe al golpear una superficie sólida o con fuego).",
+          "empower": "Ataca a un objetivo extra o repara/crea un arma de hielo como acción bonus."
         },
         {
           "name": "Rayo Gélido",
@@ -44,7 +44,7 @@
           "range": "Medio",
           "crit": "Objetivo ralentizado una ronda.",
           "duration": "Instantáneo",
-          "desc": "Viento gélido (1d6 + Rango Frío). Apaga fuegos y congela agua cercana.",
+          "desc": "Inflige 1d6 + Rango daño Frío con un viento gélido. Apaga fuegos y congela agua cercana.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -57,7 +57,7 @@
           "cost": "2 acciones, 1 chi",
           "area": "Esfera media",
           "duration": "Concentración",
-          "desc": "Enfría el área. Entorno normal pasa a Frío; Frío pasa a Frío Extremo (CON vs Hielo o Fatigado). Contrarresta Calor Extremo.",
+          "desc": "Enfría el área. Un entorno normal pasa a Frío; un entorno Frío pasa a Frío Extremo (tiro de salvación de CON contra Hielo o queda fatigado). Contrarresta el Calor Extremo.",
           "empower": "Reduce la temperatura un paso adicional durante esta ronda."
         }
       ]
@@ -75,9 +75,9 @@
           ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
-          "area": "Esfera pequeña o Línea mediana",
+          "area": "Esfera pequeña o línea mediana",
           "duration": "Instantánea",
-          "desc": "Barrera sólida (PV = Rango x 3, DEF = Rango + 2). Inmune Frío, Vulnerable Contundente/Fuego. Cubierta completa. Uso defensivo (incluye cuerpo a cuerpo).",
+          "desc": "Crea una barrera sólida con PV iguales a tu Rango x 3 y DEF igual a tu Rango + 2. Inmune a daño Frío, Vulnerable a daño Contundente y Fuego. Otorga cubierta completa. Puede usarse como reacción defensiva, incluso contra ataques cuerpo a cuerpo.",
           "empower": "Recupera todos los puntos de vida perdidos."
         },
         {
@@ -90,8 +90,8 @@
           "cost": "2 acciones, 1 chi",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "desc": "Niebla fría. Ceguera y Ocultamiento. Ventaja en Magia de Hielo dentro. Con Bajar Temperaturas: Desventaja a Fuego/Agua/Naturaleza ajenos.",
-          "empower": "Siguiente hechizo de Hielo cuesta -1 acción."
+          "desc": "Crea una niebla fría que ciega y otorga ocultamiento. Obtienes Ventaja en tiros de Magia de Hielo dentro del área. Si combinas con Bajar Temperaturas, los hechizos de Fuego, Agua y Naturaleza ajenos tienen Desventaja.",
+          "empower": "El siguiente hechizo de Hielo cuesta -1 acción."
         },
         {
           "name": "Hielo Resbalante",
@@ -104,8 +104,8 @@
           "area": "Radio medio",
           "crit": "Herida permanente leve en la pierna.",
           "duration": "Hasta que sea destruido",
-          "desc": "Suelo resbaladizo. Acrobacias/Heroísmo o Tropezado y empujado 1 paso. Repetir al entrar/salir. Se derrite con fuego.",
-          "empower": "Crear efecto al moverte (acción bonus) en tu posición anterior."
+          "desc": "Crea un suelo resbaladizo. Las criaturas deben superar un tiro de Acrobacias/Heroísmo o quedan tropezadas y empujadas 1 paso. Repiten el tiro al entrar o salir del área. Se derrite con fuego.",
+          "empower": "Crea el efecto en tu posición anterior al moverte como acción bonus."
         }
       ]
     },
@@ -127,8 +127,8 @@
           "area": "Cono mediano",
           "crit": "Afectados paralizados una ronda.",
           "duration": "Instantáneo",
-          "desc": "Granizo y viento (1d8+SAB Cortante + 1d8+SAB Frío). Crea terreno difícil. Alcance mediano en entorno frío.",
-          "empower": "Siguiente uso sin coste de chi."
+          "desc": "Inflige 1d8 + SAB daño Cortante y 1d8 + SAB daño Frío con granizo y viento. Crea terreno difícil. En un entorno frío, el alcance aumenta a mediano.",
+          "empower": "El siguiente uso no tiene coste de chi."
         },
         {
           "name": "Congelación Rápida",
@@ -141,7 +141,7 @@
           "cost": "2 chi",
           "crit": "Paralizado hasta liberarse.",
           "duration": "Hasta que el afectado escape",
-          "desc": "Al impactar con Frío: Heroísmo/Destrozar o Enredado. En frío extremo causa Hipotermia (veneno DES) cada turno (Salud).",
+          "desc": "Al impactar con un hechizo de Frío, el objetivo debe superar un tiro de Heroísmo/Destrozar o queda enredado. En frío extremo, sufre Hipotermia (veneno de DES) cada turno (tiro de salvación de Heroísmo para resistir).",
           "empower": "Afecta a un enemigo adicional."
         },
         {
@@ -152,8 +152,8 @@
           ],
           "cost": "3 acciones, 2 chi",
           "duration": "Hasta destruido",
-          "desc": "Invoca Elemental de Hielo Nivel 6 (+2 por cada Rango > III).",
-          "empower": "Elemental recupera mitad de Vitalidad."
+          "desc": "Invoca un Elemental de Hielo de Nivel 6 (+2 Niveles por cada Rango superior a III).",
+          "empower": "El elemental recupera la mitad de su Vitalidad."
         }
       ]
     },
@@ -172,11 +172,11 @@
           "cost": "2 acciones, 2 chi",
           "area": "Cono mediano",
           "duration": "Instantáneo",
-          "desc": "2d10 + SAB Frío. Aumenta nivel de hipotermia (CON). Congela enemigos en el área.",
+          "desc": "Inflige 2d10 + SAB daño Frío. Aumenta el nivel de hipotermia de los afectados (tiro de salvación de CON para resistir). Congela a los enemigos en el área.",
           "empower": "N/A"
         },
         {
-          "name": "Armadura de hielo",
+          "name": "Armadura de Hielo",
           "tags": [
             "Hielo",
             "Defensiva",
@@ -185,7 +185,7 @@
           "cost": "2 acciones, 2 chi",
           "range": "Propio",
           "duration": "Concentración",
-          "desc": "Otorga contadores de escudo (igual a Rango). Resistencia a Fuego, Agua, Naturaleza. Recupera 1 escudo/ronda en entorno frío.",
+          "desc": "Obtienes contadores de escudo iguales a tu Rango y Resistencia a daño Fuego, Agua y Naturaleza. Recuperas 1 contador de escudo por ronda en un entorno frío.",
           "empower": "N/A"
         },
         {
@@ -199,7 +199,7 @@
           "range": "Medio",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "desc": "Domo de invierno. 2d10 + SAB Frío e Hipotermia grado 1. Terreno difícil. Congela agua y enemigos sumergidos.",
+          "desc": "Crea un domo de invierno que inflige 2d10 + SAB daño Frío e Hipotermia grado 1 a los afectados. Crea terreno difícil. Congela el agua y a los enemigos sumergidos en ella.",
           "empower": "N/A"
         }
       ]
@@ -209,7 +209,7 @@
       "title": "Rango V",
       "abilities": [
         {
-          "name": "Llamada del invierno",
+          "name": "Llamada del Invierno",
           "tags": [
             "Hielo",
             "Ambiental"
@@ -217,7 +217,7 @@
           "cost": "3 acciones, 3 chi",
           "area": "Radio grande",
           "duration": "Seis rondas",
-          "desc": "Genera Frío Extremo (Ventaja en Hielo) y Neblina (Ceguera/Ocultamiento). Enemigos sin calor aumentan Hipotermia cada ronda (CON).",
+          "desc": "Genera Frío Extremo en el área. Obtienes Ventaja en tiros de Magia de Hielo y crea neblina que causa ceguera y ocultamiento. Los enemigos sin protección contra el frío aumentan su nivel de Hipotermia cada ronda (tiro de salvación de CON para resistir).",
           "empower": "N/A"
         },
         {
@@ -226,27 +226,27 @@
             "Hielo",
             "Ataque",
             "Área",
-            "Física",
+            "Físico",
             "Frío",
             "Agarre"
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Cono grande",
           "duration": "Instantáneo",
-          "desc": "Avalancha. 2d10+SAB Contundente + 1d10+SAB Frío. Heroísmo/Destrozar o Agarrado + Hipotermia. Derrumba estructuras y crea terreno difícil.",
+          "desc": "Desata una avalancha que inflige 2d10 + SAB daño Contundente y 1d10 + SAB daño Frío. El objetivo debe superar un tiro de Heroísmo/Destrozar o queda agarrado y sufre Hipotermia. Derrumba estructuras y crea terreno difícil.",
           "empower": "N/A"
         },
         {
-          "name": "Congelar la sangre",
+          "name": "Congelar la Sangre",
           "tags": [
             "Hielo",
             "Aflicción",
             "Frío"
           ],
-          "cost": "1 acciones, 3 chi",
+          "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Instantáneo",
-          "desc": "Congela desde dentro (requiere entorno frío). CON vs Hielo o 3d10+SAB Frío + 2 niveles Hipotermia.",
+          "desc": "Congela al objetivo desde dentro (requiere entorno frío). El objetivo debe superar un tiro de salvación de CON contra Hielo o sufre 3d10 + SAB daño Frío y 2 niveles de Hipotermia.",
           "empower": "N/A"
         }
       ]
@@ -256,7 +256,7 @@
       "title": "Rango VI",
       "abilities": [
         {
-          "name": "Medianoche polar",
+          "name": "Medianoche Polar",
           "tags": [
             "Hielo",
             "Ambiental"
@@ -264,7 +264,7 @@
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "Sumes el área en una oscuridad y frío absolutos, potenciando al máximo tus capacidades de hielo y congelando todo a tu paso.",
+          "desc": "Sumes el área en oscuridad y frío absolutos, potenciando al máximo tus capacidades de hielo y congelando todo a tu paso. [AVISO AUTOR: Esta descripción es muy vaga para un hechizo de Rango VI. Faltan mecánicas concretas: area de efecto, daño, efectos especificos, interaccion con otros hechizos de hielo.]",
           "empower": "N/A"
         }
       ]

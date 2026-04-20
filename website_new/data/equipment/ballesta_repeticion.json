@@ -1,0 +1,17 @@
+{
+  "id": "ballesta_repeticion",
+  "name": "Ballesta de Repetición",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial a Distancia",
+  "rarity": "Poco Común",
+  "image": "ballesta_repeticion.jpg",
+  "description": "Una ballesta mecánica con un cargador de cinco virotes y mecanismo de recarga automática. Ingeniería iskariana de vanguardia.",
+  "damage": "1d10 + DES",
+  "damageType": "Perforante",
+  "price": "5 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Cargador:</b> Contiene 5 virotes. No necesita acción de recarga hasta agotar el cargador",
+    "<b>Dos manos</b>: Requiere ambas manos"
+  ]
+}

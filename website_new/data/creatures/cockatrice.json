@@ -1,0 +1,52 @@
+{
+  "id": "cockatrice",
+  "name": "Cockatrice",
+  "level": 4,
+  "type": "monster",
+  "size": "Small",
+  "hp": 12,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 9,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Petrifying Bite",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": "Target must pass PHYS save or begin turning to stone: restrained for 1 round. If still restrained at end of their next turn, they must pass another PHYS save or be petrified."
+    },
+    {
+      "name": "Wing Flap",
+      "cost": "1 action",
+      "damage": "2d6 bludgeoning",
+      "effect": "The Cockatrice hops back 3m after attacking."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Panicked Flutter",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack, the Cockatrice flutters away up to 3m without provoking."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Petrification",
+      "desc": "A creature petrified by the Cockatrice can be restored by greater restoration or similar magic."
+    }
+  ],
+  "lore": "Cockatrices are bizarre creatures resembling a rooster with a reptilian tail. Despite their small size and cowardly nature, their bite carries a petrifying venom that can turn creatures to stone, making them far more dangerous than they appear."
+}

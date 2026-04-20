@@ -1,0 +1,22 @@
+{
+  "id": "coraza_espejada",
+  "name": "Coraza Espejada",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Media",
+  "rarity": "Rara",
+  "image": "coraza_espejada.jpg",
+  "description": "Una coraza de acero pulido como un espejo perfecto. Los ataques mágicos se reflejan en su superficie bruñida.",
+  "defense": "6",
+  "price": "10 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Reflejo Arcano",
+      "cost": "1 reacción + 1 Chi",
+      "uses": "2/día",
+      "description": "Cuando eres objetivo de un ataque mágico a distancia, puedes reflejarlo hacia el atacante usando su propia tirada de ataque."
+    }
+  ]
+}

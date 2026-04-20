@@ -9,7 +9,7 @@
   ],
   "description": "Canalizas el poder de tu dios a través de oraciones y devoción. Bendices aliados, consagras la tierra, castigas a infieles y realizas milagros. A medida que avanzas, tu dios te otorga acceso a magias específicas relacionadas con su dominio.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",
     "<strong>Conocimiento de los dioses:</strong> Acceso a 3-5 magias relacionadas con tu dios a rangos superiores.",
     "<strong>Protección divina:</strong> Usas Magia Divina para defenderte de efectos Divinos o relacionados con tu dios."
@@ -25,8 +25,8 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Acción bonus (usos: Rango + 2/día): Una criatura a distancia media repite un tiro y se queda con el mejor/peor resultado (según tu elección).",
-          "empower": "Recuperas un uso de esta habilidad."
+          "desc": "Como acción bonus, puedes hacer que una criatura a distancia media repita un tiro y se quede con el mejor o peor resultado (a tu elección). Usos diarios: Rango + 2.",
+          "empower": "Recuperas un uso gastado de esta habilidad."
         },
         {
           "name": "Enviado de los dioses",
@@ -34,7 +34,7 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Conoces idioma de tu dios. Criaturas relacionadas son amistosas. Detectas extraplanarios y magia (Arcana/Divina) a distancia media.",
+          "desc": "Conoces el idioma de tu dios y las criaturas relacionadas con tu divinidad son amistosas hacia ti. Detectas criaturas extraplanarias y magia (Arcana o Divina) a distancia media.",
           "empower": "Tu dios te otorga una pequeña ayuda no relacionada con el combate."
         },
         {
@@ -43,7 +43,7 @@
             "Divina",
             "Ritual"
           ],
-          "desc": "10 minutos de rezo. Haces hasta 4 preguntas a tu dios (respuestas sinceras pero pueden ser crípticas). Usos sucesivos reducen preguntas."
+          "desc": "Tras 10 minutos de rezo, puedes hacer hasta 4 preguntas a tu dios. Las respuestas son sinceras pero pueden ser crípticas. Los usos sucesivos en el mismo día reducen el número de preguntas disponibles."
         }
       ]
     },
@@ -61,7 +61,7 @@
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "duration": "Instantáneo o hasta eliminado",
-          "desc": "Efecto variable según dios: Curar estado, Eliminar maldición/magia (tiro enfrentado), Causar estado negativo (Ceguera, Sangrado, etc.) o Reducir Resistencia.",
+          "desc": "Canalizas el poder de tu dios para producir un efecto variable según tu divinidad: curar un estado negativo, eliminar una maldición o efecto mágico (tiro enfrentado), causar un estado negativo (Ceguera, Sangrado, etc.) o reducir una Resistencia del objetivo.",
           "empower": "Afectas a un objetivo adicional."
         },
         {
@@ -73,7 +73,7 @@
           "cost": "3 acciones, 1 chi",
           "area": "Radio grande",
           "duration": "10 minutos",
-          "desc": "Creyentes ganan Ventaja en todo. Impide invocaciones enemigas. Guerrero de la Fe gratis. Ritual de 1 hora para hacerlo permanente.",
+          "desc": "Consagras el área en nombre de tu dios. Los creyentes dentro obtienen Ventaja en todos sus tiros. Las invocaciones enemigas son impedidas y se activa Guerrero de la Fe de forma gratuita. Puedes realizar un ritual de 1 hora para hacer la consagración permanente.",
           "empower": "Reduce el coste de un hechizo Divino en -1 acción."
         }
       ]
@@ -89,7 +89,7 @@
             "Divina",
             "Ritual"
           ],
-          "desc": "Recibes visiones del pasado, presente o futuro (1 vez al día). Más claras si tienes objeto/lugar relacionado."
+          "desc": "Una vez al día, recibes visiones del pasado, presente o futuro. Las visiones son más claras y detalladas si posees un objeto o te encuentras en un lugar relacionado con la consulta."
         },
         {
           "name": "Protección Divina",
@@ -100,8 +100,8 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Siempre en Posición Defensiva. Defensa usando Magia Divina. Reacción al ser impactado: Lanzar hechizo Divino como acción bonus contra atacante.",
-          "empower": "Reduces daño de un ataque recibido en (Rango x 2) antes de aplicar defensa."
+          "desc": "Canalizas protección divina para defenderte. Obtienes 1 Reacción defensiva adicional por ronda usando Magia Divina. Como reacción al ser impactado, puedes lanzar un hechizo Divino como acción bonus contra el atacante.",
+          "empower": "Reduces el daño de un ataque recibido en Rango x 2 antes de aplicar defensas."
         }
       ]
     },
@@ -119,7 +119,7 @@
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "duration": "Hasta que sea eliminada",
-          "desc": "Maldición potente según dios (ej: Marca de ley, Bestia interior, Llamas eternas, Dolor). Difícil de eliminar (3 fallos = permanente).",
+          "desc": "Maldices al objetivo con un castigo específico de tu dios (ejemplos: Marca de Ley, Bestia Interior, Llamas Eternas o Dolor). La maldición es difícil de eliminar: si el objetivo falla 3 intentos de liberarse, se vuelve permanente.",
           "empower": "Afectas a un objetivo adicional."
         },
         {
@@ -130,8 +130,8 @@
           ],
           "cost": "3 acciones, 2 chi",
           "duration": "Seis rondas",
-          "desc": "Como Tierra Consagrada. Tras ronda 2, activa efecto ambiental de tu dios (Rango <= III). No requiere concentración.",
-          "empower": "Cambias el efecto ambiental sin coste."
+          "desc": "Funciona como Tierra Consagrada. Tras la ronda 2, activa un efecto ambiental propio de tu dios (Rango III o inferior). No requiere concentración.",
+          "empower": "Cambias el efecto ambiental activo sin coste adicional."
         }
       ]
     },
@@ -150,9 +150,9 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera mediana",
-          "crit": "Afectados aturdidos 1 ronda.",
-          "desc": "Enemigos de fe opuesta sufren 2d10 + SAB Sónico y Sordera (CON vs Divina). Mata invocaciones enemigas instantáneamente.",
-          "empower": "Aumenta área a esfera grande."
+          "crit": "Los afectados quedan aturdidos 1 ronda.",
+          "desc": "Pronuncias una palabra de poder divino. Los enemigos de fe opuesta deben superar un tiro de salvación de CON o sufren 2d10 + SAB daño Sónico y quedan sordos. Mata invocaciones enemigas instantáneamente.",
+          "empower": "Aumenta el área a esfera grande."
         },
         {
           "name": "Exaltado",
@@ -163,8 +163,8 @@
           ],
           "cost": "2 acciones, 3 chi",
           "duration": "Seis rondas",
-          "desc": "+30 Vitalidad temporal. Resistencia Arcano/Divino. 3 stats a 12. Beneficios de Protección Divina sin concentración.",
-          "empower": "Éxito automático en tiro o resucitar a 1 PV (1 vez/ronda)."
+          "desc": "Te inviste con poder divino. Obtienes +30 Vitalidad temporal, Resistencia a efectos Arcanos y Divinos y 3 estadísticas a tu elección suben a 12. Además, recibes los beneficios de Protección Divina sin requerir concentración.",
+          "empower": "Una vez por ronda: éxito automático en un tiro o resucitas a 1 PV al caer."
         }
       ]
     },
@@ -182,9 +182,9 @@
           ],
           "cost": "3 acciones, 5 chi",
           "area": "Esfera grande",
-          "crit": "Fallo automático en defensa contra Manifestación Divina.",
+          "crit": "Los afectados fallan automáticamente su defensa contra Manifestación Divina.",
           "duration": "Instantáneo",
-          "desc": "4d10 + SAB Divino. Aplica maldición de Manifestación Divina. Destruye estructuras, barreras y tierra consagrada enemiga. Mata invocaciones menores.",
+          "desc": "Desatas la furia de tu dios. Inflige 4d10 + SAB daño Divino y aplica la maldición de Manifestación Divina a todos los afectados. Destruye estructuras, barreras mágicas y tierra consagrada enemiga. Mata invocaciones menores instantáneamente.",
           "empower": "N/A"
         }
       ]

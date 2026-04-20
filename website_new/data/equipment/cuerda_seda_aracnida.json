@@ -1,0 +1,14 @@
+{
+  "id": "cuerda_seda_aracnida",
+  "name": "Cuerda de Seda Arácnida",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Común",
+  "image": "cuerda_seda_aracnida.jpg",
+  "description": "Una cuerda de 15 metros tejida con seda de araña gigante. Extremadamente resistente y ligera.",
+  "price": "1/2 CR",
+  "properties": [
+    "<b>Irrompible:</b> No puede ser cortada por medios no mágicos",
+    "<b>Ligera:</b> Pesa la mitad que una cuerda normal"
+  ]
+}

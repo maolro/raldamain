@@ -1,17 +1,17 @@
 {
   "id": "ascendencia_infernal",
   "title": "Ascendencia Infernal",
-  "category": "Ascendencia",
+  "category": "Ascendencias",
   "image": "ascendencia_infernal.jpg",
   "stats": [
     "Inteligencia",
     "Carisma",
-    "Vigor",
+    "Chi",
     "Chi"
   ],
   "description": "Una voz del más allá clama tu nombre, prometiéndote poder y alterando tu cuerpo para asemejarlo al de los demonios. Rechazas tu humanidad para apostar con los regentes del infierno, obteniendo resistencias, poderes mágicos, carisma sobrenatural y la capacidad de invocar huestes infernales o transformarte en un Señor de la Sima.",
   "fundamentals": [
-    "<strong>Poder innato:</strong> Tu rango mejora las reservas de vigor y chi en +Rango. Se acumula con otras habilidades.",
+    "<strong>Poder innato:</strong> Tu rango mejora las reservas de chi en Rango x 2. Se acumula con otras habilidades.",
     "<strong>Estadística principal:</strong> Inteligencia o Carisma + Rango.",
     "<strong>Hechizos Innatos:</strong> Los hechizos aprendidos son Innatos y pueden usar tu modificador de Ascendencia Infernal y estadística (INT/CAR) para daño y efectos."
   ],
@@ -26,7 +26,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "El poder del infierno muta tu cuerpo. Recibes Resistencia a efectos Mentales, Aflicciones, Fuego y Frío. Criaturas infernales son amistosas."
+          "desc": "El poder infernal muta tu cuerpo. Obtienes Resistencia a efectos Mentales, Aflicciones, daño de Fuego y de Frío. Las criaturas infernales son amistosas hacia ti."
         },
         {
           "name": "Pacto del Diablo",
@@ -34,7 +34,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Pacto con fuerzas infernales. Aprendes dos hechizos de Rango I (Arcana, Elemental u Ocultismo) relacionados con tu patrón. Usan vigor en lugar de chi y bonificador CAR + Rango."
+          "desc": "Estableces un pacto con fuerzas infernales. Aprendes dos hechizos de Rango I (Arcana, Elemental u Ocultismo) relacionados con tu patrón. Usan chi y tu bonificador de CAR + Rango. [AVISO AUTOR: La descripción original dice 'Usan chi en lugar de chi', lo cual es redundante. Verificar si debería decir 'usan chi en lugar de otra reserva'.]"
         }
       ]
     },
@@ -50,9 +50,9 @@
             "Mejora",
             "Maldición"
           ],
-          "cost": "1 vigor o chi",
+          "cost": "1 chi",
           "duration": "Una ronda",
-          "desc": "Siguiente impacto causa herida infernal: reduce Vitalidad y PV máximos igual al daño y aplica herida permanente leve. Curable solo con Magia de Vida potente.",
+          "desc": "Tu siguiente impacto causa una herida infernal: reduce la Vitalidad y PV máximos del objetivo en una cantidad igual al daño infligido y aplica una herida permanente leve. Solo puede curarse con Magia de Vida potente.",
           "empower": "N/A"
         },
         {
@@ -61,14 +61,14 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Ves en oscuridad mágica/no-mágica y detectas seres inteligentes a distancia media. Hechizos Mentales tratan resistencias enemigas como un paso inferior."
+          "desc": "Puedes ver con normalidad en oscuridad mágica y no mágica. Detectas seres inteligentes a distancia media. Tus hechizos Mentales tratan las resistencias enemigas como un paso inferior."
         }
       ]
     },
     {
       "rank": "III",
       "title": "Rango III",
-      "passive": "Aprendes dos hechizos de Rango II o menos relacionados con tu patrón (puedes usar vigor).",
+      "passive": "Aprendes dos hechizos de Rango II o menos relacionados con tu patrón (puedes usar chi).",
       "abilities": [
         {
           "name": "Alas Demoníacas",
@@ -76,7 +76,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Manifiestas alas (murciélago). Vuelo 2 y Ventaja en Esquiva. Acción bonus para aparecer/desaparecer. Se desvanecen 1 ronda si pierdes concentración.",
+          "desc": "Manifiestas alas de murciélago. Obtienes Vuelo 2 y Ventaja en tiros de Esquiva. Como acción bonus, puedes hacer aparecer o desaparecer las alas. Si pierdes la concentración, las alas se desvanecen durante 1 ronda.",
           "empower": "N/A"
         },
         {
@@ -85,10 +85,10 @@
             "Innata",
             "Invocación"
           ],
-          "cost": "3 acciones, 2 chi o vigor",
+          "cost": "3 acciones, 2 chi",
           "duration": "Una hora",
-          "desc": "Invoca criatura Infernal (Nivel <= Rango x 2). Máximo 4 invocaciones simultáneas.",
-          "empower": "Criatura invocada recupera mitad de Vitalidad."
+          "desc": "Invocas una criatura infernal con un Nivel máximo igual a Rango x 2. Puedes tener hasta 4 invocaciones simultáneas.",
+          "empower": "La criatura invocada recupera la mitad de su Vitalidad."
         }
       ]
     },
@@ -104,9 +104,9 @@
             "Miedo",
             "Duradera"
           ],
-          "cost": "1 acción, 2 chi o vigor",
+          "cost": "1 acción, 2 chi",
           "duration": "Concentración",
-          "desc": "Ventaja en tiros de Carisma. Hechizos Mentales son indetectables e ignoran resistencias de no-hostiles.",
+          "desc": "Obtienes Ventaja en todos los tiros de Carisma. Tus hechizos Mentales son indetectables e ignoran las resistencias de criaturas que no sean hostiles hacia ti.",
           "empower": "N/A"
         },
         {
@@ -115,15 +115,15 @@
             "Innata",
             "Mejora"
           ],
-          "cost": "3 acciones, 2 chi o vigor",
-          "desc": "Vínculo vital voluntario con hasta 2 criaturas. Permite transferir cualquier cantidad de daño recibido entre los vinculados."
+          "cost": "3 acciones, 2 chi",
+          "desc": "Estableces un vínculo vital voluntario con hasta 2 criaturas. Cualquier cantidad de daño recibido por un vinculado puede transferirse a otro vinculado."
         }
       ]
     },
     {
       "rank": "V",
       "title": "Rango V",
-      "passive": "Aprendes dos hechizos de Rango III o menos relacionados con tu patrón (puedes usar vigor).",
+      "passive": "Aprendes dos hechizos de Rango III o menos relacionados con tu patrón (puedes usar chi).",
       "abilities": [
         {
           "name": "Corrupción Demoníaca",
@@ -131,7 +131,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Resistencia a Arcano/Divino. Resistencia Superior a Mental, Aflicción, Fuego, Hielo y Miedo. Comunicación con infernales (menores obedecen).",
+          "desc": "Obtienes Resistencia a efectos Arcanos y Divinos. Obtienes Resistencia Superior a efectos Mentales, Aflicciones, daño de Fuego, Hielo y efectos de Miedo. Puedes comunicarte con criaturas infernales (las menores te obedecen).",
           "empower": "N/A"
         },
         {
@@ -142,10 +142,10 @@
             "Ambiental",
             "Espacial"
           ],
-          "cost": "3 acciones, 3 chi o vigor",
+          "cost": "3 acciones, 3 chi",
           "area": "Radio grande",
           "duration": "6 rondas",
-          "desc": "Abre portal infernal. Tierra Consagrada Infernal. Impide sanación enemiga. Enemigos tiran Voluntad cada ronda o aumentan Miedo. Permite usar Siervos del Contrato como acción bonus (máx 10 invocaciones)."
+          "desc": "Abres un portal al infierno que crea Tierra Consagrada Infernal en el área. Impide la sanación enemiga dentro del área. Los enemigos deben superar un tiro de salvación de Voluntad cada ronda o aumentan su nivel de Miedo. Puedes usar Siervos del Contrato como acción bonus (máximo 10 invocaciones simultáneas)."
         }
       ]
     },
@@ -160,9 +160,9 @@
             "Innata",
             "Mejora"
           ],
-          "cost": "3 acciones, 5 chi o vigor",
+          "cost": "3 acciones, 5 chi",
           "duration": "Seis rondas",
-          "desc": "Transformación demoníaca suprema. +40 Vitalidad temporal. FUE/CON/CAR = 12, DEF = 20. Inmunidad Mental, Aflicción, Miedo, Toque. Ataques aplican Arma Profana. Vuelo 2. Posición Defensiva (bonus). 6 contadores escudo. Hechizos de rango gratis. Presencia Majestuosa activa."
+          "desc": "Te transformas en un Señor de la Sima. Obtienes +40 Vitalidad temporal, FUE/CON/CAR suben a 12 y DEF sube a 20. Obtienes Inmunidad a efectos Mentales, Aflicciones, de Miedo y de Toque. Tus ataques aplican el efecto de Arma Profana. Obtienes Vuelo 2, 6 contadores de escudo, los hechizos de Ascendencia no cuestan chi y Presencia Majestuosa se activa automáticamente."
         }
       ]
     }

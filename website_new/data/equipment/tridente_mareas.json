@@ -1,0 +1,25 @@
+{
+  "id": "tridente_mareas",
+  "name": "Tridente de las Mareas",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "tridente_mareas.jpg",
+  "description": "Un tridente forjado en coral petrificado y acero marino. Gotea agua salada constantemente y huele a océano profundo.",
+  "damage": "1d10 + FUE + 1d8 frío",
+  "damageType": "Perforante + Frío",
+  "price": "10 CR",
+  "range": "Alcance cercano o arrojadiza (distancia media)",
+  "properties": [
+    "<b>Alcance:</b> Ataca a distancia cercana",
+    "<b>Arrojadiza:</b> Regresa mágicamente a tu mano al final del turno"
+  ],
+  "abilities": [
+    {
+      "name": "Ola Aplastante",
+      "cost": "2 acciones + 2 Chi",
+      "uses": "1/día",
+      "description": "Invocas una ola de agua que barre un cono de 9m. Todos deben superar PHYS o recibir 3d8 frío y ser empujados 6m."
+    }
+  ]
+}

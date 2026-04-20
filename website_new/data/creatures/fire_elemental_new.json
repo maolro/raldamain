@@ -1,0 +1,66 @@
+{
+  "id": "fire_elemental_new",
+  "name": "Fire Elemental",
+  "level": 6,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 18,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Burning Touch",
+      "cost": "1 action",
+      "damage": "4d6 fire",
+      "effect": "Flammable objects touched ignite. On a critical hit, the target catches fire (1d6 fire per round until extinguished)."
+    },
+    {
+      "name": "Fire Sweep",
+      "cost": "2 actions",
+      "damage": "3d6 fire",
+      "effect": "The elemental surges forward in a 9m line. All creatures in the line must pass PHYS save or take damage and catch fire."
+    },
+    {
+      "name": "Ignite",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All flammable objects in a 3m radius burst into flames. Creatures in the area take 2d6 fire damage."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Flare Up",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack from within reach, the attacker takes 2d6 fire damage as the elemental's body flares."
+    }
+  ],
+  "resistances": [],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["cold", "water"],
+  "traits": [
+    {
+      "name": "Fire Form",
+      "desc": "Can move through spaces as narrow as 2cm. A creature that touches or hits the elemental in melee takes 1d6 fire damage."
+    },
+    {
+      "name": "Illumination",
+      "desc": "Sheds bright light in a 9m radius and dim light for an additional 9m."
+    },
+    {
+      "name": "Water Susceptibility",
+      "desc": "For every 5 liters of water splashed on it, the elemental takes 1d6 cold damage."
+    }
+  ],
+  "lore": "Fire Elementals are living columns of flame drawn from the Elemental Plane of Fire. They consume everything flammable in their path with mindless hunger, leaving nothing but ash and cinder."
+}

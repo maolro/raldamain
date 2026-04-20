@@ -49,7 +49,10 @@ new Vue({
         loadRanksFromWebsite: function () {
             const statNameMap = {
                 'Fuerza': 'str', 'Destreza': 'dex', 'Constitución': 'con',
-                'Inteligencia': 'itl', 'Sabiduría': 'wis', 'Carisma': 'cha'
+                'Inteligencia': 'itl', 'Sabiduría': 'wis', 'Carisma': 'cha',
+                'FUE': 'str', 'DES': 'dex', 'CON': 'con',
+                'INT': 'itl', 'SAB': 'wis', 'CAR': 'cha',
+                'Constitucion': 'con', 'Sabiduria': 'wis'
             };
             const romanToNum = { 'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6 };
             const toKebab = (name) => {
@@ -63,23 +66,7 @@ new Vue({
                 if (tags.includes('Reacción')) return 'Reaccion';
                 return 'Accion';
             };
-            const getReserve = (fundamentals, statsArr) => {
-                let haschi = false, hasstamina = false;
-                for (let f of (fundamentals || [])) {
-                    if (f.includes('Chi')) haschi = true;
-                    if (f.includes('Vigor')) hasstamina = true;
-                }
-                if (!haschi && !hasstamina) {
-                    for (let s of (statsArr || [])) {
-                        if (s === 'Chi') haschi = true;
-                        if (s === 'Vigor') hasstamina = true;
-                    }
-                }
-                if (haschi && hasstamina) return 'stamina/chi';
-                if (haschi) return 'chi';
-                if (hasstamina) return 'stamina';
-                return 'chi';
-            };
+            const getReserve = () => 'chi';
             const getMainStat = (statsArr) => {
                 if (!statsArr || statsArr.length === 0) return 'cha';
                 for (let s of statsArr) {
@@ -93,19 +80,19 @@ new Vue({
             };
             const parseStatBoosts = (levels) => {
                 let boosts = [];
-                const boostPattern = /(?:Aumenta|Incrementa).*?estad[ií]stica\s+de\s+(\w+).*?(?:en|por)\s+\+?(\d+)/i;
-                const fuePattern = /estad[ií]stica\s+de\s+FUE/i;
+                const boostPattern = /(?:Aumenta|Incrementa).*?estad[ií]stica\s+de\s+([\w\u00C0-\u024F]+).*?(?:en|por)\s+\+?(\d+)/i;
+                const shortBoostPattern = /(?:Aumenta|Incrementa)\s+(?:tu\s+)?(?:estad[ií]stica\s+de\s+)?([\w\u00C0-\u024F]+).*?(?:en|por)\s+\+?(\d+)/i;
                 for (let level of levels) {
                     if (level.passive) {
                         let text = level.passive;
                         let rankNum = romanToNum[level.rank] || 1;
-                        let match = text.match(boostPattern);
+                        let match = text.match(boostPattern) || text.match(shortBoostPattern);
                         if (match) {
                             let statName = match[1];
-                            let mapped = statNameMap[statName] || statName.toLowerCase().substring(0, 3);
-                            boosts.push({ stat: mapped, rank: rankNum, boost: parseInt(match[2]) || 1 });
-                        } else if (fuePattern.test(text)) {
-                            boosts.push({ stat: 'str', rank: rankNum, boost: 1 });
+                            let mapped = statNameMap[statName];
+                            if (mapped) {
+                                boosts.push({ stat: mapped, rank: rankNum, boost: parseInt(match[2]) || 1 });
+                            }
                         }
                     }
                 }
@@ -154,14 +141,42 @@ new Vue({
                                 let statBoosts = parseStatBoosts(rankData.levels || []);
                                 let rankEntry = {
                                     name: rankData.title,
+                                    category: entry.category,
                                     stat: getMainStat(statsArr),
-                                    reserve: getReserve(rankData.fundamentals, statsArr),
+                                    reserve: getReserve(),
                                     rank: 0,
                                     freeranks: 0,
                                     max: rankData.levels ? rankData.levels.length : 6,
                                     attributes: attributeIds.join(',')
                                 };
                                 if (statBoosts) rankEntry.stats = statBoosts;
+
+                                // Spell grants for ascendencia ranks
+                                const ascSpells = {
+                                    'ascendencia_abisal': [
+                                        {rank: 2, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_abisal"},
+                                        {rank: 4, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_abisal"},
+                                        {rank: 6, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_abisal"}
+                                    ],
+                                    'ascendencia_infernal': [
+                                        {rank: 1, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_infernal"},
+                                        {rank: 3, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_infernal"},
+                                        {rank: 5, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_infernal"}
+                                    ],
+                                    'ascendencia_akhasica': [
+                                        {rank: 1, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_akhasica"},
+                                        {rank: 3, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_akhasica"},
+                                        {rank: 5, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_akhasica"}
+                                    ],
+                                    'ascendencia_primigenia': [
+                                        {rank: 2, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_primigenia"},
+                                        {rank: 4, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_primigenia"},
+                                        {rank: 6, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_primigenia"}
+                                    ]
+                                };
+                                if (rankId in ascSpells) {
+                                    rankEntry.spells = ascSpells[rankId];
+                                }
 
                                 return { id: rankId, entry: rankEntry };
                             })
@@ -289,14 +304,7 @@ new Vue({
         },
         atbCatString: function (cat) {
             let obArray = this.myatb[cat];
-            const getEmpowerCost = (skill) => {
-                if (skill && skill in this.ranks) {
-                    let reserve = this.ranks[skill].reserve;
-                    if (reserve === 'stamina') return '1 vigor';
-                    if (reserve === 'stamina/chi') return '1 chi o vigor';
-                }
-                return '1 chi';
-            };
+            const getEmpowerCost = () => '1 chi';
             return obArray.map(obj => {
                 let formattedString = `<b>${obj.name}</b>`;
                 // Build parenthetical: (tags; cost)
@@ -363,7 +371,7 @@ new Vue({
             return `
 # ${this.charactername} (Nivel ${this.level})\n
 ****\n  
-**PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Vigor:** ${this.reserves.stamina}\t**Chi:** ${this.reserves.chi}\n
+**PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Chi:** ${this.reserves.chi}\n
 **FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
 ${midSect()}
@@ -422,8 +430,8 @@ ${toMd(this.atbCatString("reactions"))}
             if (attributeObject.hasOwnProperty("cost") && attributeObject.cost !== "") {
                 let cost = attributeObject.cost;
                 let uses = "";
-                if (cost.includes("Chi") || cost.includes("Vigor")) {
-                    cost = cost.replace(/(\s*(y|o)?\s*\d+\s*(Chi|Vigor)\s*(o\s*(Chi|Vigor))?)/g, '').trim();
+                if (cost.includes("Chi")) {
+                    cost = cost.replace(/(\s*(y|o)?\s*\d+\s*Chi)/g, '').trim();
                     uses = "1/Ronda";
                 }
                 attributeObject.cost = cost;
@@ -638,7 +646,7 @@ ${toMd(this.atbCatString("reactions"))}
                     for (let i in atlist) {
                         let eid = atlist[i].trim();
                         if (eid in this.eqAtb) {
-                            let atb = this.eqAtb[eid];
+                            let atb = { ...this.eqAtb[eid] };
                             if (atb.skill)
                                 atb["rank"] = this.getRank(atb.skill);
                             abSwitch(atb);
@@ -675,7 +683,7 @@ ${toMd(this.atbCatString("reactions"))}
                     for (let i in atlist) {
                         let eid = atlist[i].trim();
                         if (eid in this.attributes && this.attributes[eid].rank <= this.myranks[key].rank) {
-                            let atb = this.attributes[eid];
+                            let atb = { ...this.attributes[eid] };
                             atb.rank = this.getRank(atb.skill);
                             abSwitch(atb);
                         }
@@ -695,9 +703,9 @@ ${toMd(this.atbCatString("reactions"))}
                             for (let j in enh.attributes) {
                                 let eid = enh.attributes[j].trim();
                                 if (eid in this.attributes) {
-                                    let atb = this.attributes[eid];
+                                    let atb = { ...this.attributes[eid] };
                                     atb.rank = (arc.rank + 1);
-                                    abSwitch(this.updateCostAndUses({ ...atb }));
+                                    abSwitch(this.updateCostAndUses(atb));
                                 }
                             }
                         }
@@ -716,21 +724,12 @@ ${toMd(this.atbCatString("reactions"))}
         },
         reserves: function () {
             let chiRes = 0;
-            let staminaRes = 0;
             for (let i in this.myranks) {
                 rk = this.myranks[i];
-                switch (rk.reserve) {
-                    case "chi": chiRes += rk.rank + 2;
-                        break;
-                    case "stamina/chi": chiRes += rk.rank;
-                        staminaRes += rk.rank;
-                        break;
-                    case "stamina": staminaRes += rk.rank + 2;
-                        break;
-                }
+                chiRes += rk.rank * 2;
             }
             chiRes += this.sumAllKeys('chi', this.myatb.passive);
-            return { chi: chiRes, stamina: staminaRes };
+            return { chi: chiRes };
         },
         finalStats: function () {
             statsRes = {
@@ -744,6 +743,7 @@ ${toMd(this.atbCatString("reactions"))}
             if (this.race.stats) {
                 for (let j in this.race.stats) {
                     bst = this.race.stats[j];
+                    if (!(bst.stat in statsRes)) continue;
                     if (bst.boost != null && statsRes[bst.stat].value != "-")
                         statsRes[bst.stat].value += bst.boost;
                     else
@@ -755,6 +755,7 @@ ${toMd(this.atbCatString("reactions"))}
                 rk = fullArr[i];
                 for (let j in rk.stats) {
                     bst = rk.stats[j];
+                    if (!(bst.stat in statsRes)) continue;
                     if (bst.boost != null && statsRes[bst.stat].value != "-" && bst.rank <= rk.rank)
                         statsRes[bst.stat].value += bst.boost;
                     else if (bst.boost == null)
@@ -785,6 +786,8 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("eqList", '/data/builder/equipment.json');
         this.getData("eqAtb", '/data/builder/equipment-abilities.json');
         this.getData("races", '/data/builder/races.json');
+        this.getData("divinepatrons", '/data/builder/divine-patrons.json');
+        this.getData("arcanespecs", '/data/builder/arcane-specs.json');
         if (localStorage.getItem("currentCharacter"))
             this.loadCharacter(JSON.parse(localStorage.getItem("currentCharacter")));
         else

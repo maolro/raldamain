@@ -1,0 +1,29 @@
+{
+  "id": "manto_archimago",
+  "name": "Manto del Archimago",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Ligera",
+  "rarity": "Muy Rara",
+  "image": "manto_archimago.jpg",
+  "description": "Una túnica de seda arcana que fluye con corrientes de energía visible. El tejido está entrelazado con hilos de pura magia cristalizada.",
+  "defense": "3",
+  "price": "35 CR",
+  "properties": [
+    "<b>Sintonización</b>: Por un usuario de magia",
+    "<b>Defensa Arcana:</b> Tu defensa mágica aumenta en +2 además de la DEF base"
+  ],
+  "abilities": [
+    {
+      "name": "Reserva Expandida",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu reserva máxima de Chi aumenta en +3."
+    },
+    {
+      "name": "Escudo Mágico",
+      "cost": "1 reacción",
+      "uses": "3/día",
+      "description": "Cuando fallas una salvación contra un efecto mágico, puedes repetir la tirada con Ventaja."
+    }
+  ]
+}

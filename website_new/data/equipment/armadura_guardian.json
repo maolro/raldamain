@@ -1,0 +1,29 @@
+{
+  "id": "armadura_guardian",
+  "name": "Armadura del Guardián",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Pesada",
+  "rarity": "Rara",
+  "image": "armadura_guardian.jpg",
+  "description": "Armadura de placas con runas protectoras grabadas en cada pieza. Emite un aura dorada tenue que se intensifica cuando aliados cercanos están en peligro.",
+  "defense": "9",
+  "price": "12 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Aura Protectora",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Los aliados dentro de 3m reciben +1 a todas sus defensas."
+    },
+    {
+      "name": "Sacrificio del Guardián",
+      "cost": "1 reacción",
+      "uses": "3/día",
+      "description": "Cuando un aliado adyacente recibiría daño, puedes recibir ese daño en su lugar."
+    }
+  ],
+  "penalties": "-6 a tiradas de DES. Velocidad -3m."
+}

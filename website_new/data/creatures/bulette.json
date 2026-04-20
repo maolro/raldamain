@@ -1,0 +1,62 @@
+{
+  "id": "bulette",
+  "name": "Bulette",
+  "level": 8,
+  "type": "monster",
+  "size": "Huge",
+  "hp": 30,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+3d6",
+    "WILL": "+5",
+    "MIND": "+5"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 8,
+    "general": 8
+  },
+  "attackRoll": "+9+3d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "5d8 piercing",
+      "effect": "Target must pass PHYS save or be grappled in the Bulette's jaws."
+    },
+    {
+      "name": "Deadly Leap",
+      "cost": "2 actions",
+      "damage": "4d8 bludgeoning",
+      "effect": "The Bulette leaps up to 12m. All creatures in a 3m radius of the landing point must pass PHYS save or take full damage and be knocked prone. On success, creatures take half damage and are pushed out of the area."
+    },
+    {
+      "name": "Burrow Strike",
+      "cost": "2 actions",
+      "damage": "5d8 piercing",
+      "effect": "The Bulette burrows underground and erupts beneath a target. The target has -1d6 to defenses against this attack. On hit, the target is knocked prone."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Armored Shell",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack, the Bulette tucks its armored head-plate forward. Reduces physical damage by 2d8."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Tremorsense",
+      "desc": "Can detect creatures touching the ground within 18m by vibrations."
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "Can jump up to 12m horizontally and 6m vertically without a running start."
+    }
+  ],
+  "lore": "Bulettes are massive, armored predators known as 'land sharks.' They burrow through earth and rock with terrifying speed, erupting beneath unsuspecting prey. Their armored hide is nearly impervious, and their leaping attacks can crush a horse."
+}

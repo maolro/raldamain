@@ -1,0 +1,68 @@
+{
+  "id": "corpse_flower",
+  "name": "Corpse Flower",
+  "level": 10,
+  "type": "plant",
+  "size": "Large",
+  "hp": 35,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+7",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 11,
+    "general": 9
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Tentacle",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning + poison",
+      "effect": "Target must pass PHYS save or be pulled 3m toward the Corpse Flower."
+    },
+    {
+      "name": "Harvest Corpse",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Corpse Flower absorbs a corpse within 3m. It heals 10 HP and can later use Spawn Zombie."
+    },
+    {
+      "name": "Spawn Zombie",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Expels a corpse as a zombie (10 HP, attacks on the Flower's turn). Can have up to 4 zombies active. Requires a previously harvested corpse."
+    },
+    {
+      "name": "Stench Burst",
+      "cost": "2 actions",
+      "damage": "4d8 poison",
+      "effect": "All creatures within 6m must pass PHYS save or take damage and be poisoned for 1 round (can't take reactions and have -1d6 to attacks)."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Digest",
+      "cost": "1 reaction",
+      "effect": "When a zombie the Corpse Flower controls is destroyed, it can reabsorb the remains, healing 5 HP."
+    }
+  ],
+  "resistances": ["poison"],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Stench Aura",
+      "desc": "Creatures starting their turn within 3m must pass PHYS save or be poisoned until start of their next turn."
+    },
+    {
+      "name": "Corpse Storage",
+      "desc": "The Corpse Flower can carry up to 4 corpses inside its body, using them as fuel for healing and zombie creation."
+    }
+  ],
+  "lore": "Corpse Flowers are enormous, carnivorous plants that feed on the dead. They grow in battlefields, graveyards, and plague sites, absorbing corpses into their bulbous body and animating them as zombies to gather more 'food.' Their stench is overwhelming."
+}

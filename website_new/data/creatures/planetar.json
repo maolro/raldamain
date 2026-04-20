@@ -1,0 +1,75 @@
+{
+  "id": "planetar",
+  "name": "Planetar",
+  "level": 14,
+  "type": "celestial",
+  "size": "Large",
+  "hp": 50,
+  "shields": 5,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+13+3d6",
+    "MIND": "+13+3d6"
+  },
+  "defenses": {
+    "physical": 19,
+    "magical": 18,
+    "general": 15
+  },
+  "attackRoll": "+13+4d6",
+  "magicRoll": "+13+3d6",
+  "actions": [
+    {
+      "name": "Divine Greatsword",
+      "cost": "1 action",
+      "damage": "5d10 slashing + 4d10 radiant",
+      "effect": null
+    },
+    {
+      "name": "Healing Touch",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "The Planetar touches a creature. The target heals 6d10+10 HP and is cured of all conditions, curses, diseases, and poisons. Usable 4 times per day."
+    },
+    {
+      "name": "Divine Judgment",
+      "cost": "2 actions",
+      "damage": "5d10 radiant",
+      "effect": "All enemies within 12m. WILL save for half. Fiends and undead that fail are also banished to their home plane for 24 hours."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Angelic Shield",
+      "cost": "1 reaction",
+      "effect": "When an ally within 12m is hit by an attack, the Planetar can teleport adjacent and take the hit instead, reducing the damage by 4d10."
+    },
+    {
+      "name": "Legendary Resistance",
+      "cost": "1 reaction",
+      "effect": "When the Planetar fails a save, it can choose to succeed instead. Usable 3 times per encounter."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["charm", "frightened", "poison", "necrotic"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Divine Aura",
+      "desc": "All allies within 12m gain +2 to all defenses and saves. Undead and fiends within the aura have -2 to all defenses and saves."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Can cast Dispel Magic, Remove Curse, Raise Dead, and Greater Restoration at will."
+    },
+    {
+      "name": "Angelic Weapons",
+      "desc": "The Planetar's weapon attacks are magical and deal an additional 4d10 radiant damage (included in the stat block)."
+    },
+    {
+      "name": "Truesight",
+      "desc": "Can see through all illusions, shapechanging, and invisibility within 36m."
+    }
+  ],
+  "lore": "Planetars are among the mightiest angels, divine warriors who serve the gods directly. They are sent to the mortal world only in times of great crisis, wielding greatswords that blaze with holy fire. Their mere presence can turn the tide of a war against darkness."
+}

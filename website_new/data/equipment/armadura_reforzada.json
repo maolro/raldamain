@@ -1,0 +1,11 @@
+{
+  "id": "armadura_reforzada",
+  "name": "Armadura de Cuero Reforzado",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Ligera",
+  "rarity": "Poco Común",
+  "image": "armadura_reforzada.jpg",
+  "description": "Cuero endurecido con placas de acero incrustadas en puntos vitales. Ofrecida a exploradores veteranos del imperio.",
+  "defense": "3",
+  "price": "3 CR"
+}

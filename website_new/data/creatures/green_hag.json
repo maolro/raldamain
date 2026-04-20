@@ -1,0 +1,77 @@
+{
+  "id": "green_hag",
+  "name": "Green Hag",
+  "level": 10,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 32,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11",
+    "WILL": "+11+2d6",
+    "MIND": "+11+2d6"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 15,
+    "general": 10
+  },
+  "attackRoll": "+11+1d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "4d8 slashing",
+      "effect": "The target is cursed with sapping weakness: -1d6 to attack rolls for 1 round."
+    },
+    {
+      "name": "Hex",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Curses one target within medium range. WILL save or suffer -3 to all defenses for 1 minute. Can only hex one target at a time."
+    },
+    {
+      "name": "Illusory Appearance",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Hag disguises herself and her surroundings within 9m to look like anything she chooses. MIND save to see through it on close inspection."
+    },
+    {
+      "name": "Vile Miasma",
+      "cost": "2 actions",
+      "damage": "4d8 poison",
+      "effect": "A 6m radius cloud of foul vapors. All creatures in the area must pass PHYS save or be poisoned (disadvantage on attacks and saves) for 2 rounds."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Horrific Visage",
+      "cost": "1 reaction",
+      "effect": "When a creature moves within melee range, the Hag reveals her true hideous face. Target must pass WILL save or be frightened for 1 round and unable to approach the Hag."
+    },
+    {
+      "name": "Witch's Resilience",
+      "cost": "1 reaction",
+      "effect": "The Hag reduces magical damage from one attack by 2d6."
+    }
+  ],
+  "resistances": [],
+  "immunities": ["poison"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Mimicry",
+      "desc": "The Hag can perfectly imitate any voice or sound she has heard. A MIND check is required to detect the ruse."
+    },
+    {
+      "name": "Coven",
+      "desc": "When three hags form a coven, they share a pool of enhanced magic. Each hag in a coven gains +2 to all saves and +1d6 to magic damage."
+    },
+    {
+      "name": "Amphibious",
+      "desc": "Can breathe air and water."
+    }
+  ],
+  "lore": "Green Hags are malicious fey crones who dwell in dark swamps and twisted forests. They delight in corrupting the virtuous and twisting bargains to ruin their victims. In covens of three, their power multiplies to terrifying levels."
+}

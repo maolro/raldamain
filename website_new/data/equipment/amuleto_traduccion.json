@@ -1,0 +1,21 @@
+{
+  "id": "amuleto_traduccion",
+  "name": "Amuleto del Políglota",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "amuleto_traduccion.jpg",
+  "description": "Un medallón con docenas de diminutas runas en idiomas olvidados. Vibra suavemente cuando se habla cerca de él.",
+  "price": "3 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Comprensión Universal",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Comprendes cualquier idioma hablado que escuches. No otorga la capacidad de hablar o leer dicho idioma."
+    }
+  ]
+}

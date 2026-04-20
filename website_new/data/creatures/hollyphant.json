@@ -1,0 +1,66 @@
+{
+  "id": "hollyphant",
+  "name": "Hollyphant",
+  "level": 10,
+  "type": "celestial",
+  "size": "Small",
+  "hp": 30,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11",
+    "WILL": "+11+2d6",
+    "MIND": "+11+2d6"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 15,
+    "general": 11
+  },
+  "attackRoll": null,
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Trumpet Blast",
+      "cost": "2 actions",
+      "damage": "5d8 radiant + thunder",
+      "effect": "All enemies in a 9m cone must pass PHYS save or take full damage and be deafened and pushed 6m. On success, half damage only. Fiends and undead take an additional 2d8."
+    },
+    {
+      "name": "Radiant Bolt",
+      "cost": "1 action",
+      "damage": "4d8 radiant",
+      "effect": "Ranged magical attack. The bolt illuminates the target, making them unable to benefit from invisibility for 1 round."
+    },
+    {
+      "name": "Aura of Invulnerability",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All allies within 6m gain resistance to all damage types until start of the Hollyphant's next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Banishing Light",
+      "cost": "1 reaction",
+      "effect": "When a fiend or undead attacks an ally within 9m, the Hollyphant can blast it with radiant light. The attacker takes 3d8 radiant damage and must pass WILL save or be stunned until end of its next turn."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["poison", "charm"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Tiny but Mighty",
+      "desc": "Despite being Small, the Hollyphant is a surprisingly powerful celestial. Enemies that underestimate it have -1d6 to saves against its abilities on the first round."
+    },
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of reach."
+    },
+    {
+      "name": "Telepathy",
+      "desc": "Can communicate telepathically within 36m."
+    }
+  ],
+  "lore": "Hollyphants are tiny, golden-skinned celestial elephants that serve as companions and advisors to powerful celestials. Despite their adorable appearance, their trumpet blast can shatter walls and banish fiends. They are among the most underestimated beings in the celestial hierarchy."
+}

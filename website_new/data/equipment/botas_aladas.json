@@ -1,0 +1,21 @@
+{
+  "id": "botas_aladas",
+  "name": "Botas Aladas",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Rara",
+  "image": "botas_aladas.jpg",
+  "description": "Botas de cuero blanco con alas de pluma cosidas a los tobillos. Cuando se activan, las alas se materializan y permiten volar.",
+  "price": "10 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Vuelo",
+      "cost": "1 acción",
+      "uses": "3/día",
+      "description": "Ganas velocidad de vuelo igual a tu velocidad de movimiento durante 10 minutos. Al finalizar, desciendes suavemente."
+    }
+  ]
+}

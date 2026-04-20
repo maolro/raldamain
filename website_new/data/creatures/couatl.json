@@ -1,0 +1,75 @@
+{
+  "id": "couatl",
+  "name": "Couatl",
+  "level": 8,
+  "type": "celestial",
+  "size": "Medium",
+  "hp": 24,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+9",
+    "WILL": "+9+2d6",
+    "MIND": "+9+2d6"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 13,
+    "general": 9
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": "+9+2d6",
+  "actions": [
+    {
+      "name": "Radiant Bite",
+      "cost": "1 action",
+      "damage": "3d8 piercing + 2d8 radiant",
+      "effect": "Target must pass PHYS save or be magically put to sleep for 1 minute. Taking damage wakes them."
+    },
+    {
+      "name": "Constrict",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning",
+      "effect": "Target is grappled and restrained."
+    },
+    {
+      "name": "Divine Shield",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One creature within 9m is surrounded by a divine barrier. The target has +4 to all defenses and resistance to all damage until start of the Couatl's next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Truth Sight",
+      "cost": "1 reaction",
+      "effect": "When a creature within 9m attempts a deception or illusion, the Couatl automatically detects it and can alert allies telepathically."
+    },
+    {
+      "name": "Radiant Shield",
+      "cost": "1 reaction",
+      "effect": "When targeted by a necrotic or evil-aligned attack, the Couatl reduces the damage by 3d8."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["psychic"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Can polymorph into any humanoid or beast of its level or lower. Stats remain the same."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+2d6 to saves against spells and magical effects."
+    },
+    {
+      "name": "Truth Sense",
+      "desc": "The Couatl knows if it hears a lie. Cannot be deceived by illusions or shapechangers."
+    },
+    {
+      "name": "Telepathy",
+      "desc": "Can communicate telepathically within 36m."
+    }
+  ],
+  "lore": "Couatls are feathered serpents of divine origin, sent by the gods to guard sacred sites and guide mortals toward righteousness. They are masters of disguise, often walking among mortals in humanoid form to subtly steer events toward good."
+}

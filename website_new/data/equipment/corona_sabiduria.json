@@ -1,0 +1,27 @@
+{
+  "id": "corona_sabiduria",
+  "name": "Corona de Sabiduría",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Rara",
+  "image": "corona_sabiduria.jpg",
+  "description": "Una diadema de plata con un zafiro central que brilla con luz interior. Los pensamientos del portador se aclaran al ponérsela.",
+  "price": "10 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Mente Clara",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu SAB se incrementa en +1 (hasta el máximo de tu nivel). Eres inmune a los efectos de Miedo 1 y 2."
+    },
+    {
+      "name": "Perspicacia",
+      "cost": "1 acción + 1 Chi",
+      "uses": "2/día",
+      "description": "Puedes lanzar Detectar Magia sin coste de Chi ni acción de concentración."
+    }
+  ]
+}

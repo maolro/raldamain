@@ -1,0 +1,36 @@
+{
+  "id": "reliquia_mekhatim",
+  "name": "Reliquia de Mekhatim",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "reliquia_mekhatim.jpg",
+  "description": "Un fragmento del primer Taurenet escrito por la mano de Mekhatim. La vitela está imbuida con energía celestial y las letras brillan con luz dorada.",
+  "price": "100 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Sagrada:</b> Solo puede ser usada por alguien que siga el camino de Mekhatimismo o tenga alineación buena"
+  ],
+  "abilities": [
+    {
+      "name": "Detectar Corrupción",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Puedes detectar la influencia del Culto de Sek-Tebos y otros cultos corruptos. Percibes Pactos del Servicio y manipulación demoníaca en un radio de 30m."
+    },
+    {
+      "name": "Purificación",
+      "cost": "2 acciones + 3 Chi",
+      "uses": "1/día",
+      "description": "Purificas un Pacto del Servicio, liberando el alma atrapada. El objetivo debe estar dispuesto o incapacitado."
+    },
+    {
+      "name": "Palabra Celestial",
+      "cost": "3 acciones + 5 Chi",
+      "uses": "1/semana",
+      "description": "Invocas la protección de la Hueste Celestial. Un ángel de nivel 12 desciende y te asiste durante 1 hora."
+    }
+  ],
+  "lore": "De los fragmentos originales del Taurenet, se cree que solo quedan tres. Uno está en Beisyan, otro perdido, y el tercero... nadie sabe."
+}

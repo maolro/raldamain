@@ -1,0 +1,30 @@
+{
+  "id": "armadura_celestial",
+  "name": "Armadura Celestial",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Media",
+  "rarity": "Muy Rara",
+  "image": "armadura_celestial.jpg",
+  "description": "Armadura de escamas blancas y doradas que emite un aura de paz. Forjada con metal de origen celestial, protege tanto el cuerpo como el alma.",
+  "defense": "8",
+  "price": "35 CR",
+  "properties": [
+    "<b>Sintonización</b>: Requiere alineación no malvada",
+    "<b>Sagrada:</b> Resistencia a daño necrótico"
+  ],
+  "abilities": [
+    {
+      "name": "Aura Celestial",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Eres inmune a efectos de Miedo y enfermedades. Aliados en 3m ganan +1d6 a salvaciones de WILL."
+    },
+    {
+      "name": "Alas de Luz",
+      "cost": "1 acción + 2 Chi",
+      "uses": "1/día",
+      "description": "Alas luminosas brotan de la armadura. Ganas velocidad de vuelo igual a tu velocidad durante 1 hora."
+    }
+  ],
+  "penalties": "-2 a tiradas de DES."
+}

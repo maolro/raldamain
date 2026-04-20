@@ -1,0 +1,27 @@
+{
+  "id": "cuerno_guerra",
+  "name": "Cuerno de Guerra de los Valientes",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "cuerno_guerra.jpg",
+  "description": "Un cuerno de guerra tallado en colmillo de dragón antiguo con bandas de oro. Su sonido puede escucharse a kilómetros y despierta el valor en los corazones aliados.",
+  "price": "50 CR",
+  "properties": [
+    "<b>Artefacto</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Llamada a las Armas",
+      "cost": "1 acción",
+      "uses": "1/día",
+      "description": "Al soplar el cuerno, 3d6 guerreros espectrales aparecen y luchan a tu lado durante 1 hora. Son guerreros de nivel 6 con equipo estándar."
+    },
+    {
+      "name": "Grito de Victoria",
+      "cost": "1 acción",
+      "uses": "3/día",
+      "description": "Todos los aliados que escuchen el cuerno (18m) recuperan 2d10 de Vitalidad y quedan inmunes a Miedo durante 1 minuto."
+    }
+  ]
+}

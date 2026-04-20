@@ -1,0 +1,21 @@
+{
+  "id": "pocion_curacion_mayor",
+  "name": "Poción de Curación Mayor",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Poco Común",
+  "image": "pocion_curacion_mayor.jpg",
+  "description": "Un líquido carmesí intenso con destellos dorados. Más concentrada que la poción básica, su efecto es notablemente más potente.",
+  "price": "1 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Curación Mayor",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Recuperas 10 puntos de Vitalidad y reduces una herida permanente por un paso."
+    }
+  ]
+}

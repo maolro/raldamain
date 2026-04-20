@@ -1,0 +1,21 @@
+{
+  "id": "pocion_fuerza_gigante",
+  "name": "Poción de Fuerza de Gigante",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Poco Común",
+  "image": "pocion_fuerza_gigante.jpg",
+  "description": "Un líquido marrón turbio con sedimentos que brillan como oro. Sabe a tierra y hierro, pero otorga una fuerza descomunal.",
+  "price": "1 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Fuerza de Gigante",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Durante 1 minuto, tu FUE se considera 6 (sin efecto si ya es 6+) y tu daño cuerpo a cuerpo gana +1d6."
+    }
+  ]
+}

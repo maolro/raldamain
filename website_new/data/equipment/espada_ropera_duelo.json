@@ -1,0 +1,25 @@
+{
+  "id": "espada_ropera_duelo",
+  "name": "Espada del Duelo Perfecto",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "espada_ropera_duelo.jpg",
+  "description": "Una espada ropera de manufactura exquisita con guarda en forma de espiral. Responde a los movimientos del portador como una extensión de su cuerpo.",
+  "damage": "1d8 + DES",
+  "damageType": "Perforante",
+  "price": "8 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Precisión:</b> Usa DES para ataque y daño",
+    "<b>Riposte:</b> Cuando un enemigo falla un ataque cuerpo a cuerpo contra ti, puedes hacer un ataque de oportunidad como reacción"
+  ],
+  "abilities": [
+    {
+      "name": "Estocada Perfecta",
+      "cost": "1 acción + 1 Vigor",
+      "uses": "3/día",
+      "description": "Tu siguiente ataque tiene Ventaja y si impacta, inflige daño crítico automáticamente (dados de daño duplicados)."
+    }
+  ]
+}

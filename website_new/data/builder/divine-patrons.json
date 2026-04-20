@@ -2,71 +2,71 @@
     "ayanuu":{
         "name": "Ayanuu",
         "type": "abyssal",
-         "domains": ["magia-gravitatoria", "magia-mental", "magia-espacial", "magia-onirica", "magia-temporal"]
+         "domains": ["magia_gravitatoria", "magia_mental", "magia_espacial", "magia_onirica", "magia_temporal"]
     },
     "ekdavor":{
         "name": "Ekdavor",
         "type": "abyssal",
-        "domains": ["magia-de-fuego", "magia-mental", "magia-espacial", "magia-de-tormenta"]
+        "domains": ["magia_fuego", "magia_mental", "magia_espacial", "magia_tormenta"]
     },
     "douma":{
         "name": "Douma",
         "type": "celestial",
-        "domains": ["magia-de-vida","magia-sombria","nigromancia"]
+        "domains": ["magia_vida","magia_sombria","nigromancia"]
     },
     "gulmaht":{
         "name": "Gulmaht",
         "type": "abyssal",
-         "domains": ["magia-de-tierra", "magia-de-fuego", "magia-gravitatoria", "magia-de-transmutacion"]
+         "domains": ["magia_tierra", "magia_fuego", "magia_gravitatoria", "magia_transmutacion"]
     },
     "ithanatron":{
         "name": "Ithanatron",
         "type": "celestial",
-        "domains": ["magia-de-vida", "magia-protectora", "magia-de-metal", "magia-de-fuego"]
+        "domains": ["magia_vida", "magia_protectora", "magia_metal", "magia_fuego"]
     },
     "kajokobi":{
         "name": "Kajokobi",
         "type": "spirit",
-        "domains": ["magia-ilusoria", "magia-mental", "magia-espacial"]
+        "domains": ["magia_ilusoria", "magia_mental", "magia_espacial"]
     },
     "meisodh":{
         "name": "Meisodh",
         "type": "other",
-        "domains": ["telekinesia", "magia-temporal", "magia-de-fuego", "magia-de-transmutacion"]
+        "domains": ["telekinesia", "magia_temporal", "magia_fuego", "magia_transmutacion"]
     },
     "seiryuu":{
         "name": "Seiryuu",
         "type": "spirit",
-        "domains": ["magia-de-hielo", "magia-de-aire", "magia-de-almas"]
+        "domains": ["magia_hielo", "magia_aire", "magia_almas"]
     },
     "sek-tebos":{
         "name": "Sek-Tebos",
         "type": "infernal",
-        "domains": ["magia-de-fuego", "magia-mental", "magia-protectora", "magia-temporal", "magia-espacial"]
+        "domains": ["magia_fuego", "magia_mental", "magia_protectora", "magia_temporal", "magia_espacial"]
     },
     "shade":{
         "name": "Shade",
         "type": "abyssal",
-        "domains": ["magia-sombria", "nigromancia", "magia-ilusoria", "magia-mental", "magia-de-acido"]
+        "domains": ["magia_sombria", "nigromancia", "magia_ilusoria", "magia_mental", "magia_acido"]
     },
     "suzakushin":{
         "name": "Suzakushin",
         "type": "spirit",
-        "domains": ["magia-de-fuego", "magia-de-vida", "magia-protectora"]
+        "domains": ["magia_fuego", "magia_vida", "magia_protectora"]
     },
     "tamashi-kuso":{
         "name": "Tamashi-Kuso",
         "type": "spirit",
-        "domains": ["magia-de-almas", "magia-temporal", "telekinesia"]
+        "domains": ["magia_almas", "magia_temporal", "telekinesia"]
     },
     "yanma-sama":{
         "name": "Yanma-Sama",
         "type": "spirit",
-        "domains": ["magia-de-vida", "magia-protectora", "magia-espacial"]
+        "domains": ["magia_vida", "magia_protectora", "magia_espacial"]
     },
     "yohadamuin":{
         "name": "Yohadamuin",
         "type": "celestial",
-        "domains": ["magia-de-vida", "magia-temporal", "magia-gravitatoria", "magia-mental"]
+        "domains": ["magia_vida", "magia_temporal", "magia_gravitatoria", "magia_mental"]
     }
 }

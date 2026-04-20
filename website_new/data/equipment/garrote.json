@@ -1,0 +1,13 @@
+{
+  "id": "garrote",
+  "name": "Garrote",
+  "type": "Arma",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "garrote.jpg",
+  "description": "Un palo grueso y tosco, a veces reforzado con clavos o hierro. El arma más primitiva pero sorprendentemente efectiva.",
+  "damage": "1d6 + FUE",
+  "damageType": "Contundente",
+  "price": "0 CR",
+  "range": "Cuerpo a cuerpo"
+}

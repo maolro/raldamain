@@ -1,0 +1,17 @@
+{
+  "id": "gran_hacha",
+  "name": "Gran Hacha",
+  "type": "Arma",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "gran_hacha.jpg",
+  "description": "Un hacha de guerra con una hoja inmensa montada en un asta larga. Favorita de berserkers y ejecutores.",
+  "damage": "2d8 + FUE",
+  "damageType": "Cortante",
+  "price": "2 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Pesada</b>: Desventaja en tiradas de Parada"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "barlgura",
+  "name": "Barlgura",
+  "level": 8,
+  "type": "demon",
+  "size": "Large",
+  "hp": 28,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+2d6",
+    "WILL": "+5",
+    "MIND": "+5"
+  },
+  "defenses": {
+    "physical": 13,
+    "magical": 9,
+    "general": 7
+  },
+  "attackRoll": "+9+3d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Fist",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Leaping Slam",
+      "cost": "2 actions",
+      "damage": "5d8 bludgeoning",
+      "effect": "The Barlgura leaps up to 12m and slams down. All creatures within 3m of the landing point must pass PHYS save or take damage and be knocked prone."
+    },
+    {
+      "name": "Rend",
+      "cost": "1 action",
+      "damage": "4d8 slashing",
+      "effect": "If the Barlgura hit the same target with Fist this turn, Rend deals an additional 2d8 damage as it tears flesh."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Primal Rage",
+      "cost": "1 reaction",
+      "effect": "When the Barlgura takes damage that reduces it below half HP, it enters a frenzy. It gains +1d6 to all attack rolls and +2 damage per die for the rest of the encounter, but -3 to all defenses."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Reckless",
+      "desc": "At the start of its turn, the Barlgura can gain +1d6 to all attack rolls until the start of its next turn, but attacks against it also gain +1d6."
+    },
+    {
+      "name": "Climbing",
+      "desc": "Can climb at full speed without checks. Has advantage on grapple attempts."
+    }
+  ],
+  "lore": "Barlguras are massive, ape-like demons of the Abyss. They fight with savage fury, leaping incredible distances to crash down upon their prey. Though not intelligent, their raw physical power makes them terrifying front-line fighters in demonic armies."
+}

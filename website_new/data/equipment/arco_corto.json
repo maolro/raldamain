@@ -1,0 +1,17 @@
+{
+  "id": "arco_corto",
+  "name": "Arco Corto",
+  "type": "Arma",
+  "subtype": "Arma Simple a Distancia",
+  "rarity": "Común",
+  "image": "arco_corto.jpg",
+  "description": "Un arco compacto de madera flexible, ideal para emboscadas y combate montado. Menor alcance que el arco largo pero más manejable.",
+  "damage": "1d8 + DES",
+  "damageType": "Perforante",
+  "price": "0 CR",
+  "range": "Distancia media",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Munición</b>: Requiere flechas"
+  ]
+}

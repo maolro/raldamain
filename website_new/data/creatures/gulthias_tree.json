@@ -1,0 +1,77 @@
+{
+  "id": "gulthias_tree",
+  "name": "Gulthias Tree",
+  "level": 14,
+  "type": "plant",
+  "size": "Huge",
+  "hp": 50,
+  "shields": 5,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+1d6"
+  },
+  "defenses": {
+    "physical": 18,
+    "magical": 15,
+    "general": 13
+  },
+  "attackRoll": "+13+3d6",
+  "magicRoll": "+13+2d6",
+  "actions": [
+    {
+      "name": "Vampiric Roots",
+      "cost": "1 action",
+      "damage": "5d10 necrotic",
+      "effect": "Roots erupt beneath a target within 18m. The Gulthias Tree heals for half the damage dealt."
+    },
+    {
+      "name": "Blight Storm",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Spawns 1d4 Twig Blights, 1d4 Needle Blights, or 1d4 Vine Blights at locations within 18m. The blights act immediately after the tree."
+    },
+    {
+      "name": "Corruption Wave",
+      "cost": "2 actions",
+      "damage": "4d10 necrotic + poison",
+      "effect": "All creatures within 12m must pass WILL save. On failure, they take full damage and are cursed: regeneration and healing effects are halved for 1 minute."
+    },
+    {
+      "name": "Grasping Vines",
+      "cost": "1 action",
+      "damage": "3d10 bludgeoning",
+      "effect": "Up to 3 creatures within 9m must pass PHYS save or be grappled and pulled to the tree's base."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Blight Shield",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the Gulthias Tree commands a blight within 3m to intercept the attack, taking the damage instead."
+    },
+    {
+      "name": "Dark Regeneration",
+      "cost": "1 reaction",
+      "effect": "At end of any turn, the tree heals 10 HP. Does not function if it took fire or radiant damage that turn."
+    }
+  ],
+  "resistances": ["necrotic", "bludgeoning", "piercing", "slashing"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["fire", "radiant"],
+  "traits": [
+    {
+      "name": "Corruption Aura",
+      "desc": "All non-plant creatures within 18m have -1d6 to saves against the tree's effects. Plants within this radius become blights over time."
+    },
+    {
+      "name": "Immobile",
+      "desc": "The Gulthias Tree cannot move. However, its roots extend 18m in all directions."
+    },
+    {
+      "name": "Vampiric Origin",
+      "desc": "The Gulthias Tree grew from a stake driven through a vampire's heart. It retains vampiric traits: blood drain, aversion to radiant damage, and the ability to corrupt living things."
+    }
+  ],
+  "lore": "The Gulthias Tree is a cursed, vampiric tree that grew from a stake driven through a vampire's heart. It spreads corruption across the land, spawning armies of blights and draining the life force from everything around it. Only fire and radiant energy can truly end its dark reign."
+}

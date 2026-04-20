@@ -1,0 +1,27 @@
+{
+  "id": "guantelete_poder",
+  "name": "Guantelete de Poder",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Rara",
+  "image": "guantelete_poder.jpg",
+  "description": "Un guantelete de acero negro con cristales de Chi incrustados en los nudillos. Al cerrarlo, los cristales brillan con energía contenida.",
+  "price": "10 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Puño de Poder",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tus ataques desarmados infligen 1d8 + FUE contundente (en vez de 1d6)."
+    },
+    {
+      "name": "Golpe Arcano",
+      "cost": "1 acción + 2 Chi",
+      "uses": "3/día",
+      "description": "Tu puño se carga de energía arcana. Tu siguiente ataque desarmado inflige 3d8 arcano adicional."
+    }
+  ]
+}

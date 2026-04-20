@@ -1,0 +1,30 @@
+{
+  "id": "libro_sombras",
+  "name": "Libro Vil de la Oscuridad",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "libro_sombras.jpg",
+  "description": "Un tomo encuadernado en piel de demonio con páginas de pergamino negro escritas con sangre luminiscente. Contiene secretos prohibidos de nigromancia y magia abisal.",
+  "price": "60 CR",
+  "properties": [
+    "<b>Sintonización</b>: Por un usuario de Nigromancia o Magia Sombría",
+    "<b>Artefacto</b>",
+    "<b>Maldito:</b> Leerlo reduce tu Cordura en 1 por cada hora de estudio"
+  ],
+  "abilities": [
+    {
+      "name": "Conocimiento Prohibido",
+      "cost": "8 horas",
+      "uses": "1/semana",
+      "description": "Al estudiar el libro durante un descanso largo, puedes aprender temporalmente una habilidad de Nigromancia o Magia Sombría de hasta Rango V durante 1 semana."
+    },
+    {
+      "name": "Invocar Horror",
+      "cost": "2 acciones + 2 Chi + 2 Cordura",
+      "uses": "1/día",
+      "description": "Invocas una criatura abisal o no-muerta de nivel 10 o inferior que obedece tus órdenes durante 1 hora."
+    }
+  ],
+  "lore": "Se dice que fue escrito por un nigromante de Hakrapeu que canalizaba la voz de la Madre del Abismo. Varias copias existen, cada una ligeramente diferente."
+}

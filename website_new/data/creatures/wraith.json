@@ -1,0 +1,71 @@
+{
+  "id": "wraith",
+  "name": "Wraith",
+  "level": 8,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 25,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+9",
+    "WILL": "+9+2d6",
+    "MIND": "+9+1d6"
+  },
+  "defenses": {
+    "physical": 13,
+    "magical": 11,
+    "general": 8
+  },
+  "attackRoll": null,
+  "magicRoll": "+9+2d6",
+  "actions": [
+    {
+      "name": "Life Drain",
+      "cost": "1 action",
+      "damage": "4d8 necrotic",
+      "effect": "Target must pass WILL save or have their maximum HP reduced by the damage dealt. A humanoid killed by this rises as a Specter under the Wraith's command at the start of the Wraith's next turn."
+    },
+    {
+      "name": "Shadow Strike",
+      "cost": "1 action",
+      "damage": "3d8 necrotic",
+      "effect": "Can target any creature the Wraith can see within 18m by attacking through their shadow."
+    },
+    {
+      "name": "Create Specter",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Targets one humanoid corpse within 3m. The corpse rises as a Specter under the Wraith's control. The Wraith can control up to 3 Specters."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Incorporeal Escape",
+      "cost": "1 reaction",
+      "effect": "When hit by a non-magical or non-radiant attack, the Wraith becomes fully incorporeal, reducing damage to 0. Cannot be used against radiant or force damage."
+    },
+    {
+      "name": "Darkness Shroud",
+      "cost": "1 reaction",
+      "effect": "When an ally Specter within 9m is targeted, the Wraith extends its darkness to give the Specter +3 to defenses."
+    }
+  ],
+  "resistances": ["cold", "necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "desc": "Can move through creatures and objects. Takes 2d8 force damage if ending its turn in an object."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "In sunlight, the Wraith has -2d6 to attack rolls and saves, and its defenses are reduced by 3."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "In dim light or darkness, the Wraith can Hide as a free action."
+    }
+  ],
+  "lore": "Wraiths are among the most dreaded incorporeal undead, formed when a truly evil soul refuses to pass on. They command lesser spirits and build shadow armies, haunting ancient tombs and cursed battlefields."
+}

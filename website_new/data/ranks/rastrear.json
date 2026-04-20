@@ -3,10 +3,10 @@
   "title": "Rastrear",
   "category": "Combate",
   "image": "rastrear.jpg",
-  "stats": ["Sabiduría", "Vigor"],
+  "stats": ["Sabiduría", "Chi"],
   "description": "Eres un experto en el terreno y la caza. Analizas a tus enemigos, te mueves sin ser visto y usas el entorno a tu favor para emboscar o sanar.",
   "fundamentals": [
-    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Conocimiento del Terreno:</strong> Habilidades potenciadas en entornos familiares."
   ],
   "levels": [
@@ -17,15 +17,15 @@
         {
           "name": "Analizar Enemigo",
           "tags": ["Innata", "Duradera"],
-          "cost": "1 vigor",
+          "cost": "1 chi",
           "duration": "Indefinido",
-          "desc": "Tras observar 1 ronda: Ganas Ventaja en ataque y defensa contra ese enemigo específico. Se pierde al cambiar de objetivo."
+          "desc": "Tras observar a un enemigo durante 1 ronda, obtienes Ventaja en tiros de ataque y defensa contra él. El efecto se pierde al cambiar de objetivo."
         },
         {
           "name": "Sanador Instintivo",
           "tags": ["Innata", "Sanación", "Toque"],
-          "cost": "1 acción, 1 vigor",
-          "desc": "Cura (Rango + 2) de Vitalidad y reduce gravedad de una herida/aflicción un paso. Requiere materiales."
+          "cost": "1 acción, 1 chi",
+          "desc": "Curas Rango + 2 Vitalidad y reduces la gravedad de una herida permanente o aflicción un paso. Requiere materiales de sanación."
         }
       ]
     },
@@ -36,13 +36,13 @@
         {
           "name": "Acechar",
           "tags": ["Innata", "Duradera"],
-          "cost": "1 vigor",
-          "desc": "Invisibilidad mientras no seas visto. Termina al atacar o salir del escondite."
+          "cost": "1 chi",
+          "desc": "Te vuelves invisible mientras no seas detectado. El efecto termina al atacar o salir de tu escondite."
         },
         {
           "name": "Maestro del Terreno",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Elige entorno (Bosque, Ciudad, etc.). Ganas Ventaja en Sigilo/Percepción allí y beneficios pasivos (ej. Vista ciega en subterráneo, Inmunidad climática, etc.)."
+          "desc": "Eliges un entorno predilecto (Bosque, Ciudad, Subterráneo, etc.). Obtienes Ventaja en tiros de Sigilo y Percepción en ese entorno, además de beneficios pasivos (ejemplos: vista ciega en subterráneo, inmunidad climática, etc.)."
         }
       ]
     },
@@ -53,12 +53,12 @@
         {
           "name": "Lo he visto Antes",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Al defenderte de un ataque/habilidad ya usado contra ti anteriormente por el mismo enemigo, puedes repetir el tiro defensivo."
+          "desc": "Cuando te defiendes de un ataque o habilidad que el mismo enemigo ya haya usado contra ti anteriormente, puedes repetir el tiro defensivo y quedarte con el mejor resultado."
         },
         {
           "name": "Inescrutable",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a Mental y Miedo. Inmunidad a lectura de mente o predicción de movimientos."
+          "desc": "Obtienes Resistencia a efectos Mentales y de Miedo. Eres inmune a lectura de mente y predicción de movimientos."
         }
       ]
     },
@@ -70,14 +70,14 @@
           "name": "Vista de Lince",
           "tags": ["Innata", "Pasiva"],
           "range": "Medio",
-          "desc": "Resistencia a Ilusiones. Reacción para identificar ilusiones.",
+          "desc": "Obtienes Resistencia a Ilusiones. Como reacción, puedes intentar identificar una ilusión.",
           "empower": "Éxito automático para identificar o resistir una ilusión."
         },
         {
           "name": "Cambio Repentino",
           "tags": ["Innata", "Reacción"],
-          "cost": "2 vigor",
-          "desc": "Cambias tu ataque por otro (coste igual/menor) después de tirar pero antes del daño. El enemigo pierde su defensa previa."
+          "cost": "2 chi",
+          "desc": "Como reacción, después de tirar un ataque pero antes de aplicar daño, puedes cambiar tu ataque por otro de coste igual o menor. El enemigo pierde su defensa previa contra el nuevo ataque."
         }
       ]
     },
@@ -88,18 +88,18 @@
         {
           "name": "Enemigo Juramentado",
           "tags": ["Innata", "Pasiva"],
-          "cost": "3 vigor",
+          "cost": "3 chi",
           "duration": "Permanente (hasta muerte)",
-          "desc": "Marcas un enemigo. Ganas Ventaja total contra él, +1d6 daño y aplicas efecto crítico en cada impacto."
+          "desc": "Marcas a un enemigo como tu objetivo juramentado. Obtienes Ventaja total en todos los tiros contra él, +1d6 daño adicional y aplicas el efecto crítico de tu ataque en cada impacto."
         },
         {
           "name": "Coto de Caza",
           "tags": ["Innata", "Mental", "Duradera"],
-          "cost": "1 acción, 3 vigor",
+          "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "En terreno predilecto: 1 vez/ronda obligas al enemigo a realizar una acción. Se resiste con Averiguar vs Sigilo.",
-          "empower": "Usar una vez adicional por ronda."
+          "desc": "Mientras estés en tu terreno predilecto, una vez por ronda puedes obligar a un enemigo a realizar una acción de tu elección. El objetivo puede resistirse con un tiro de Averiguar contra tu Sigilo.",
+          "empower": "Puedes usarlo una vez adicional por ronda."
         }
       ]
     }

@@ -1,0 +1,71 @@
+{
+  "id": "crystal_elemental",
+  "name": "Crystal Elemental",
+  "level": 14,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 45,
+  "shields": 5,
+  "saves": {
+    "PHYS": "+13+2d6",
+    "WILL": "+13+1d6",
+    "MIND": "+13+2d6"
+  },
+  "defenses": {
+    "physical": 20,
+    "magical": 16,
+    "general": 13
+  },
+  "attackRoll": "+13+3d6",
+  "magicRoll": "+13+2d6",
+  "actions": [
+    {
+      "name": "Prismatic Slam",
+      "cost": "1 action",
+      "damage": "5d10 bludgeoning + radiant",
+      "effect": "The target is dazed by prismatic light, suffering -1d6 to their next attack roll."
+    },
+    {
+      "name": "Prismatic Spray",
+      "cost": "2 actions",
+      "damage": "4d10 radiant",
+      "effect": "The elemental refracts light through its body in a 12m cone. All targets must pass MIND save. On failure: roll 1d4 - 1: blinded, 2: slowed, 3: confused (attacks random target), 4: petrified for 1 round."
+    },
+    {
+      "name": "Crystal Shard Volley",
+      "cost": "1 action",
+      "damage": "4d10 piercing",
+      "effect": "Launches crystal shards at up to 3 targets within medium range."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Reflect Magic",
+      "cost": "1 reaction",
+      "effect": "When targeted by a magical attack, the elemental can reflect it back at the caster. Uses the original attack roll against the caster's magical defense."
+    },
+    {
+      "name": "Crystalline Shield",
+      "cost": "1 reaction",
+      "effect": "Raises a wall of crystal, blocking one attack entirely. The wall shatters, dealing 2d10 piercing to all creatures within 3m."
+    }
+  ],
+  "resistances": ["slashing", "piercing", "bludgeoning", "radiant"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["thunder"],
+  "traits": [
+    {
+      "name": "Reflective Body",
+      "desc": "Magical attacks that miss the Crystal Elemental are reflected toward a random creature within 6m, using the original attack roll."
+    },
+    {
+      "name": "Prismatic Aura",
+      "desc": "Sheds brilliant prismatic light in a 9m radius. Creatures that start their turn in the aura must pass MIND save or be blinded until end of their turn."
+    },
+    {
+      "name": "Shatter Resistant",
+      "desc": "When the Crystal Elemental takes thunder damage, it must make a PHYS save or lose 1 shield as crystals crack."
+    }
+  ],
+  "lore": "Crystal Elementals are rare and magnificent beings formed from pure elemental earth infused with radiant energy. Their bodies are living prisms that refract light into devastating beams. Ancient civilizations once worshipped them as divine emissaries."
+}

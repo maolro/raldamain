@@ -1,0 +1,21 @@
+{
+  "id": "collar_bolas_fuego",
+  "name": "Collar de Bolas de Fuego",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Rara",
+  "image": "collar_bolas_fuego.jpg",
+  "description": "Un collar de cuentas rojas y naranjas, cada una caliente al tacto. Contienen fuego comprimido que puede liberarse con devastadores resultados.",
+  "price": "8 CR",
+  "properties": [
+    "<b>Consumible parcial:</b> Tiene 7 cuentas. Cada uso consume una cuenta"
+  ],
+  "abilities": [
+    {
+      "name": "Bola de Fuego",
+      "cost": "1 acción",
+      "uses": "7 cuentas",
+      "description": "Arroja una cuenta a un punto dentro de 18m. Explota en un radio de 6m. Todos en el área deben superar PHYS o recibir 3d10 fuego (mitad en éxito). Puedes lanzar varias cuentas a la vez, sumando 1d10 por cuenta adicional."
+    }
+  ]
+}

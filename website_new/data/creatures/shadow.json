@@ -1,0 +1,60 @@
+{
+  "id": "shadow",
+  "name": "Shadow",
+  "level": 4,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 7,
+    "general": 6
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Strength Drain",
+      "cost": "1 action",
+      "damage": "3d6 necrotic",
+      "effect": "Target's physical attack rolls have -1 for the rest of the encounter (stacks). A creature reduced to 0 by this effect dies and spawns a new Shadow in 1d4 hours."
+    },
+    {
+      "name": "Shadow Lurk",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Shadow hides in dim light or darkness, becoming invisible until it attacks or is exposed to bright light."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shadow Slip",
+      "cost": "1 reaction",
+      "effect": "When hit by a non-radiant attack, the Shadow can reduce the damage by half by letting the blow pass through its shadowy form."
+    }
+  ],
+  "resistances": ["cold", "necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "desc": "Can move through creatures and objects. Takes 2d6 force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "In dim light or darkness, the Shadow is virtually invisible and has +2d6 to stealth."
+    },
+    {
+      "name": "Sunlight Weakness",
+      "desc": "In sunlight, the Shadow has -1d6 to attack rolls and all defenses are reduced by 2."
+    }
+  ],
+  "lore": "Shadows are undead creatures born from the darkness left behind when a soul is torn from its body. They lurk in unlit corners and dark passages, draining the strength from the living to spawn more of their kind."
+}

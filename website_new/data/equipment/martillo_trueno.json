@@ -1,0 +1,21 @@
+{
+  "id": "martillo_trueno",
+  "name": "Martillo del Trueno Menor",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Poco Común",
+  "image": "martillo_trueno.jpg",
+  "description": "Un martillo de guerra con runas grabadas que resuenan con cada impacto. El sonido del golpe aturde a los cercanos.",
+  "damage": "1d10 + FUE + 1d6 sónico",
+  "damageType": "Contundente + Sónico",
+  "price": "4 CR",
+  "range": "Cuerpo a cuerpo",
+  "abilities": [
+    {
+      "name": "Onda de Choque",
+      "cost": "1 acción + 1 Vigor",
+      "uses": "3/día",
+      "description": "Al golpear, todos los enemigos en 3m deben superar PHYS o ser empujados 3m."
+    }
+  ]
+}

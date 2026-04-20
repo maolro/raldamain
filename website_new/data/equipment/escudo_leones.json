@@ -1,0 +1,22 @@
+{
+  "id": "escudo_leones",
+  "name": "Escudo de los Leones",
+  "type": "Armadura Mágica",
+  "subtype": "Escudo",
+  "rarity": "Rara",
+  "image": "escudo_leones.jpg",
+  "description": "Un escudo redondo de oro y acero con un león rugiente grabado. Símbolo de los comandantes leoninos de Arshalán.",
+  "defense": "2",
+  "price": "8 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Rugido del León",
+      "cost": "1 acción + 1 Vigor",
+      "uses": "2/día",
+      "description": "El león del escudo ruge. Todos los enemigos en 6m deben superar WILL o quedar con Miedo 1 durante 1 minuto. Aliados en 6m ganan +1d6 a su siguiente tirada de ataque."
+    }
+  ]
+}

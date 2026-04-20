@@ -8,8 +8,6 @@
   "description": "Una espada legendaria forjada en las profundidades de un volcán activo. Su hoja está permanentemente envuelta en llamas eternas que nunca se apagan y no consumen la hoja.",
   "damage": "1d8 cortante + 1d6 fuego (una mano) / 1d10 cortante + 1d6 fuego (dos manos)",
   "damageType": "Cortante y Fuego",
-  "weight": "3 kg",
-  "price": "2,500 po",
   "attackBonus": "+1",
   "properties": [
     "Versátil: Puede usarse con una o dos manos",
@@ -32,6 +30,5 @@
       "description": "Los ataques críticos con esta arma causan quemaduras graves adicionales. La criatura afectada sufre 1d6 de daño por fuego al inicio de cada uno de sus turnos hasta que use una acción para apagar las llamas."
     }
   ],
-  "requirements": "Sintonización. Competencia con armas marciales. Mínimo 13 de Carisma.",
-  "lore": "Esta espada fue forjada por el maestro herrero Ignis el Infernal hace tres siglos. Se dice que usó el corazón de un fénix como fuente de poder para las llamas eternas. La espada ha pasado por las manos de numerosos héroes, y cada uno ha dejado su marca en su legado. El último portador conocido fue la paladina Seraphina, quien la usó para sellar una grieta al Plano del Fuego que amenazaba con consumir la ciudad de Emberfall."
+  "requirements": "Sintonización. Competencia con armas marciales. Mínimo 13 de Carisma."
 }

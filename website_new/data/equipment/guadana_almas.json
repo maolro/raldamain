@@ -1,0 +1,18 @@
+{
+  "id": "guadana_almas",
+  "name": "Guadaña de las Almas",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "guadana_almas.jpg",
+  "description": "Una guadaña de hoja negra que emite un aura de frío mortal. Las almas de los caídos son visibles como niebla alrededor de la hoja.",
+  "damage": "2d6 + FUE + 1d8 necrótico",
+  "damageType": "Cortante + Necrótico",
+  "price": "12 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Vampírica:</b> Recuperas Vitalidad igual a la mitad del daño necrótico infligido",
+    "<b>Sintonización</b>: Requiere sintonización por un usuario de Nigromancia o Magia Sombría"
+  ]
+}

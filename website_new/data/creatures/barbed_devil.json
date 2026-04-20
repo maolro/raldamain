@@ -1,0 +1,67 @@
+{
+  "id": "barbed_devil",
+  "name": "Barbed Devil",
+  "level": 8,
+  "type": "devil",
+  "size": "Medium",
+  "hp": 26,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+2d6",
+    "WILL": "+9+1d6",
+    "MIND": "+9"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 10,
+    "general": 8
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": "+9+1d6",
+  "actions": [
+    {
+      "name": "Claw",
+      "cost": "1 action",
+      "damage": "4d8 piercing",
+      "effect": "Target must pass PHYS save or be grappled as the barbs hook into flesh."
+    },
+    {
+      "name": "Tail Barb",
+      "cost": "1 action",
+      "damage": "3d8 piercing",
+      "effect": null
+    },
+    {
+      "name": "Hurl Flame",
+      "cost": "1 action",
+      "damage": "3d8 fire",
+      "effect": "Ranged magical attack at long range. Flammable objects ignite."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Barbed Hide",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack from within reach or grappled, the attacker takes 2d8 piercing damage from the devil's barbs."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+2d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Barbed Body",
+      "desc": "Any creature that grapples or is grappled by the Barbed Devil takes 1d8 piercing damage at the start of each turn."
+    },
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    }
+  ],
+  "lore": "Barbed Devils are covered head to toe in sharp, iron-hard barbs that make them walking torture devices. They serve as guards and jailers in the Nine Hells, delighting in the agony they inflict on anything that comes too close."
+}

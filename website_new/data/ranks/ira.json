@@ -3,12 +3,16 @@
   "title": "Ira",
   "category": "Combate",
   "image": "ira.jpg",
-  "stats": ["Fuerza", "Constitución", "Vigor"],
+  "stats": ["Fuerza", "Constitución", "Chi"],
   "description": "Canalizas tu furia para superar los límites físicos. Entras en un trance de combate que incrementa tu fuerza y resistencia a costa de tu defensa y racionalidad.",
   "fundamentals": [
-    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Voluntad para luchar:</strong> Requiere estar en combate y tener motivación. Si pierdes la voluntad, pierdes los beneficios.",
     "<strong>Completamente innato:</strong> Habilidades físicas naturales que no pueden ser suprimidas ni contrarrestadas."
+  ],
+  "rules_refs": [
+    "Concentración (ver manual_core.md § El Combate)",
+    "Empoderar (ver manual_core.md § El Combate)"
   ],
   "levels": [
     {
@@ -19,13 +23,13 @@
           "name": "Ira de Combate",
           "tags": ["Ira", "Innata", "Pasiva"],
           "duration": "Max 6 rondas",
-          "desc": "Estado de furia. Ventaja en ataques y salvaciones físicas. +1d6 daño. No puedes concentrarte ni usar Posición Defensiva. Al terminar: pierdes Vigor igual a rondas usadas (riesgo de inconsciencia)."
+          "desc": "Entras en un estado de furia. Obtienes Ventaja en tiros de ataque y tiros de salvación físicos, y +1d6 al daño. No puedes concentrarte mientras dure. Al terminar, pierdes Chi igual a las rondas usadas (con riesgo de inconsciencia)."
         },
         {
           "name": "Frenesí de Batalla",
           "tags": ["Innata", "Pasiva"],
           "duration": "1 Ronda",
-          "desc": "Ventaja en todos los ataques de arma/artes marciales a cambio de Desventaja en tiros defensivos."
+          "desc": "Obtienes Ventaja en todos los tiros de ataque con arma y artes marciales, pero sufres Desventaja en tiros defensivos."
         }
       ]
     },
@@ -36,15 +40,15 @@
         {
           "name": "Demostración Terrorífica",
           "tags": ["Ira", "Miedo"],
-          "cost": "1 vigor",
+          "cost": "1 chi",
           "area": "Radio medio",
           "crit": "Aumenta nivel de Miedo un paso extra.",
-          "desc": "Enemigos deben superar salvación de Voluntad/Intimidar o aumentan su nivel de Miedo un paso."
+          "desc": "Los enemigos en el área deben superar un tiro de salvación de Voluntad (o enfrentado de Intimidar) o aumentan su nivel de Miedo en un paso."
         },
         {
           "name": "Resistencia Salvaje",
           "tags": ["Ira", "Pasiva"],
-          "desc": "Reduce todo daño recibido en una cantidad igual a tu Rango. Ignora efectos de heridas permanentes (no graves) y Resistencia a Aflicciones mientras dure la Ira."
+          "desc": "Mientras dure la Ira, reduces todo el daño recibido en una cantidad igual a tu Rango. Ignoras los efectos de heridas permanentes leves y medias, y obtienes Resistencia a Aflicciones."
         }
       ]
     },
@@ -55,12 +59,12 @@
         {
           "name": "Ira Temeraria",
           "tags": ["Ira", "Pasiva"],
-          "desc": "Inmunidad a Miedo y efectos Mentales. Suprime efectos activos de este tipo al entrar en Ira."
+          "desc": "Mientras dure la Ira, obtienes Inmunidad a Miedo y efectos Mentales. Al entrar en Ira, suprimes cualquier efecto activo de estos tipos."
         },
         {
           "name": "Hasta el Límite",
           "tags": ["Pasiva", "Innata"],
-          "desc": "Puedes reducir tu Vitalidad Máxima (-2) o PV Máximos (-1) para recuperar 1 punto de Vigor. Max 3 veces/ronda. Se recupera con descanso largo."
+          "desc": "Puedes reducir tu Vitalidad máxima en 2 o tus PV máximos en 1 para recuperar 1 punto de Chi. Usos por ronda: 3. La reducción se recupera con un descanso largo."
         }
       ]
     },
@@ -71,13 +75,13 @@
         {
           "name": "Golpe de Adrenalina",
           "tags": ["Ira", "Pasiva"],
-          "desc": "Obtienes 1 acción adicional por turno. Puedes entrar en Posición Defensiva como acción bonus (excepción a regla de Ira). Evita ataques sorpresa automáticos."
+          "desc": "Mientras dure la Ira, obtienes 1 acción adicional por turno y 1 Reacción adicional por ronda. Además, no puedes ser sorprendido."
         },
         {
           "name": "Furia Imparable",
           "tags": ["Ira", "Reacción"],
-          "cost": "2 vigor",
-          "desc": "Si un enemigo detiene o reduce tu ataque (magia, escudos, esquiva), cancelas su defensa y aplicas daño normal, salvo que paguen 2 recursos extra o sacrifiquen escudos."
+          "cost": "2 chi",
+          "desc": "Cuando un enemigo detiene o reduce tu ataque (mediante magia, escudos o esquiva), cancelas su defensa y aplicas el daño normalmente. El defensor puede evitarlo pagando 2 recursos adicionales o sacrificando escudos. [AVISO AUTOR: No está claro qué cuenta como 'recursos extra' ni cuántos escudos hay que sacrificar.]"
         }
       ]
     },
@@ -88,14 +92,14 @@
         {
           "name": "Superar los Límites",
           "tags": ["Ira", "Mejora"],
-          "cost": "3 vigor",
+          "cost": "3 chi",
           "duration": "5 Rondas",
-          "desc": "Ganas 20 Vitalidad Temporal. FUE, DES, CON suben a 12. DEF +5. Reduces coste de vigor de una técnica (-1) por ronda. Termina si pierdes la Vitalidad Temporal."
+          "desc": "Obtienes 20 de Vitalidad Temporal. Tus puntuaciones de FUE, DES y CON aumentan a 12. Tu DEF aumenta en +5. Cada ronda, reduces el coste de chi de una técnica en 1. El efecto termina si pierdes toda la Vitalidad Temporal."
         },
         {
           "name": "Furia Invulnerable",
           "tags": ["Ira", "Pasiva"],
-          "desc": "Luchas a <0 PV sin penalizadores ni tiros de muerte. Ignora heridas no críticas. Si al terminar la Ira tienes PV < -CON, mueres instantáneamente."
+          "desc": "Mientras dure la Ira, puedes luchar a 0 PV o menos sin penalizadores ni tiros de muerte. Ignoras heridas permanentes no críticas. Al terminar la Ira, si tus PV son inferiores a -CON, mueres instantáneamente."
         }
       ]
     }

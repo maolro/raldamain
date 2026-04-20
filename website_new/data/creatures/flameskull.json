@@ -1,0 +1,66 @@
+{
+  "id": "flameskull",
+  "name": "Flameskull",
+  "level": 6,
+  "type": "undead",
+  "size": "Tiny",
+  "hp": 14,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7",
+    "MIND": "+7+1d6"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 10,
+    "general": 7
+  },
+  "attackRoll": null,
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Fire Ray",
+      "cost": "1 action",
+      "damage": "3d6 fire",
+      "effect": "Ranged magical attack."
+    },
+    {
+      "name": "Fireball",
+      "cost": "2 actions",
+      "damage": "4d6 fire",
+      "effect": "A 6m radius explosion at a point within medium range. All creatures must pass PHYS save for half damage. Usable twice per encounter."
+    },
+    {
+      "name": "Magic Missile",
+      "cost": "1 action",
+      "damage": "3d6 force",
+      "effect": "Three missiles of magical force strike targets of the Flameskull's choice. This attack automatically hits (no roll needed)."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shield",
+      "cost": "1 reaction",
+      "effect": "Creates a magical barrier. +5 to all defenses against one attack."
+    }
+  ],
+  "resistances": [],
+  "immunities": ["fire", "poison", "psychic"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Illumination",
+      "desc": "Sheds dim light in a 5m radius."
+    },
+    {
+      "name": "Rejuvenation",
+      "desc": "If destroyed, the Flameskull reforms in 1 hour with full HP unless holy water is sprinkled on its remains or a dispel magic spell is cast on them."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    }
+  ],
+  "lore": "Flameskulls are the disembodied, burning skulls of dead wizards, animated by dark magic to serve as guardians. They retain some of their arcane knowledge and attack intruders with devastating fire magic."
+}

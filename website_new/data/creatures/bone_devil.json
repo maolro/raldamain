@@ -1,0 +1,67 @@
+{
+  "id": "bone_devil",
+  "name": "Bone Devil",
+  "level": 12,
+  "type": "devil",
+  "size": "Large",
+  "hp": 38,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+2d6",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 13,
+    "general": 11
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+1d6",
+  "actions": [
+    {
+      "name": "Claw",
+      "cost": "1 action",
+      "damage": "5d8 slashing",
+      "effect": null
+    },
+    {
+      "name": "Scorpion Sting",
+      "cost": "1 action",
+      "damage": "4d8 piercing + 3d8 poison",
+      "effect": "Target must pass PHYS save or be poisoned for 1 minute. While poisoned, the target also takes 2d8 poison at the start of each turn."
+    },
+    {
+      "name": "Wall of Ice",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Creates a wall of ice up to 18m long and 3m high. Creatures in the wall's path must pass PHYS save or take 4d8 cold damage and be pushed to one side. The wall has 20 HP and provides full cover."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Frightful Presence",
+      "cost": "1 reaction",
+      "effect": "When a creature enters melee range, it must pass WILL save or be frightened for 1 round."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+2d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    },
+    {
+      "name": "Infernal Commander",
+      "desc": "Can command up to 6 lesser devils (Lemures, Imps, Spined Devils, Bearded Devils). These act on the Bone Devil's initiative."
+    }
+  ],
+  "lore": "Bone Devils are skeletal, scorpion-tailed fiends that serve as the overseers and commanders of Hell's middle ranks. They enforce infernal law with cold efficiency, punishing failure among lesser devils with swift and terrible retribution."
+}

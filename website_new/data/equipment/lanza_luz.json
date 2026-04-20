@@ -1,0 +1,16 @@
+{
+  "id": "lanza_luz",
+  "name": "Lanza de Luz",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Poco Común",
+  "image": "lanza_luz.jpg",
+  "description": "Una lanza de plata pulida cuya punta emite un resplandor dorado. Especialmente efectiva contra no-muertos y demonios.",
+  "damage": "1d10 + FUE + 1d6 radiante",
+  "damageType": "Perforante + Radiante",
+  "price": "4 CR",
+  "range": "Alcance cercano",
+  "properties": [
+    "<b>Sagrada:</b> Inflige daño radiante adicional. Contra no-muertos y demonios, el dado de daño radiante es 1d10"
+  ]
+}

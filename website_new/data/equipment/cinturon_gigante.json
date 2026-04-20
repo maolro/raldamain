@@ -1,0 +1,21 @@
+{
+  "id": "cinturon_gigante",
+  "name": "Cinturón del Gigante de Piedra",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Rara",
+  "image": "cinturon_gigante.jpg",
+  "description": "Un cinturón ancho de cuero con hebilla de granito tallada en forma de puño. Al ceñirlo, tus músculos crecen y la tierra responde a tus pisadas.",
+  "price": "10 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Fuerza de Gigante",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu FUE se considera 5 (sin efecto si ya es 5+). Puedes levantar y lanzar rocas como un ataque a distancia (2d8 contundente, distancia media)."
+    }
+  ]
+}

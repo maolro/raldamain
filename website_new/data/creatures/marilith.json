@@ -1,0 +1,71 @@
+{
+  "id": "marilith",
+  "name": "Marilith",
+  "level": 14,
+  "type": "demon",
+  "size": "Large",
+  "hp": 50,
+  "shields": 4,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+1d6"
+  },
+  "defenses": {
+    "physical": 20,
+    "magical": 15,
+    "general": 13
+  },
+  "attackRoll": "+13+4d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Six-Sword Flurry",
+      "cost": "2 actions",
+      "damage": "6d10 slashing",
+      "effect": "The Marilith attacks with all six swords in a whirlwind. Can target up to 3 different creatures within reach, dividing the damage dice as desired."
+    },
+    {
+      "name": "Longsword Strike",
+      "cost": "1 action",
+      "damage": "5d10 slashing",
+      "effect": null
+    },
+    {
+      "name": "Tail Constrict",
+      "cost": "1 action",
+      "damage": "4d10 bludgeoning",
+      "effect": "Target is grappled and restrained by the Marilith's serpentine tail. Restrained creatures take 2d10 bludgeoning at the start of each of the Marilith's turns."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Reactive Parry",
+      "cost": "1 reaction",
+      "effect": "The Marilith uses one of its six swords to parry. +6 to physical defense against one melee attack."
+    },
+    {
+      "name": "Reactive Strike",
+      "cost": "1 reaction",
+      "effect": "When a creature within reach attacks an ally, the Marilith makes a Longsword Strike against the attacker."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "+2d6 to saves against spells and magical effects."
+    },
+    {
+      "name": "Tactical Genius",
+      "desc": "All demon allies within 18m gain +1d6 to attack rolls. The Marilith can telepathically coordinate its allies."
+    },
+    {
+      "name": "Six Arms",
+      "desc": "The Marilith wields six longswords simultaneously. It cannot be disarmed while it has at least one sword remaining."
+    }
+  ],
+  "lore": "Mariliths are the supreme generals of demonic armies: six-armed serpent-women of unmatched martial skill. They combine superhuman swordsmanship with tactical brilliance, coordinating vast demonic hordes with deadly efficiency. Even demon lords treat them with respect."
+}

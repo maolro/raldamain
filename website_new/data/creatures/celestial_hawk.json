@@ -1,0 +1,66 @@
+{
+  "id": "celestial_hawk",
+  "name": "Celestial Hawk",
+  "level": 4,
+  "type": "celestial",
+  "size": "Small",
+  "hp": 12,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Radiant Talons",
+      "cost": "1 action",
+      "damage": "3d6 slashing + radiant",
+      "effect": "Undead and fiends take an additional 1d6 radiant."
+    },
+    {
+      "name": "Diving Strike",
+      "cost": "2 actions",
+      "damage": "4d6 slashing + radiant",
+      "effect": "The hawk dives from height, striking with tremendous force. Target must pass PHYS save or be knocked prone."
+    },
+    {
+      "name": "Sacred Cry",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All allies within 9m gain +1d6 to saves against fear and charm effects for 1 round."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Evasive Flight",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the hawk swoops to dodge. +4 to all defenses against one attack."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": [],
+  "vulnerabilities": ["necrotic"],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of reach."
+    },
+    {
+      "name": "Keen Sight",
+      "desc": "Can see invisible creatures and has +2d6 to perception checks."
+    },
+    {
+      "name": "Bonded Guardian",
+      "desc": "If bonded to a creature, the hawk can telepathically share what it sees up to 1km away."
+    }
+  ],
+  "lore": "Celestial Hawks are divine birds of prey sent by the gods to serve as scouts, messengers, and guardians. Their radiant talons burn creatures of evil, and their keen eyesight can pierce through illusions and invisibility."
+}

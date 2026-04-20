@@ -1,0 +1,252 @@
+/* ===== SIMULATOR PAGE ===== */
+.sim-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+.sim-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--accent-gold);
+    margin-bottom: 0.3rem;
+}
+
+.sim-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* ===== FIGHTER PANELS ===== */
+.fighters-panel {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.fighter-card {
+    flex: 1;
+    background: var(--secondary-black);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.fighter-card h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.vs-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #666;
+    min-width: 60px;
+}
+
+/* ===== FILE UPLOAD ===== */
+.file-upload {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px dashed #555;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: border-color 0.3s, color 0.3s;
+    margin-bottom: 0.8rem;
+}
+
+.file-upload:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.upload-icon {
+    font-size: 1.2rem;
+}
+
+/* ===== CHARACTER SUMMARY ===== */
+.char-summary {
+    text-align: left;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    min-height: 80px;
+    padding: 0.6rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+.char-summary strong {
+    color: var(--text-main);
+}
+
+.char-summary .char-name {
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+.char-summary .stat-line {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: #8ab4f8;
+}
+
+/* ===== CONTROLS ===== */
+.sim-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-simulate {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 12px 40px;
+    background: var(--accent-gold);
+    color: #0a0a0a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn-simulate:hover {
+    background: #e6da00;
+    transform: translateY(-1px);
+}
+
+.btn-simulate:active {
+    transform: translateY(0);
+}
+
+.btn-simulate:disabled {
+    background: #555;
+    color: #999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-clear {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid #444;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.btn-clear:hover {
+    border-color: #888;
+    color: var(--text-main);
+}
+
+/* ===== COMBAT CONSOLE ===== */
+.console-wrapper {
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.console-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #1a1a2e;
+    border-bottom: 1px solid #333;
+}
+
+.console-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.console-dot.red { background: #ff5f56; }
+.console-dot.yellow { background: #ffbd2e; }
+.console-dot.green { background: #27c93f; }
+
+.console-title {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    color: #888;
+    font-family: var(--font-body);
+}
+
+.combat-console {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Courier New', 'Consolas', monospace;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    padding: 1rem 1.2rem;
+    height: 550px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #444 #0d1117;
+}
+
+.combat-console::-webkit-scrollbar {
+    width: 8px;
+}
+
+.combat-console::-webkit-scrollbar-track {
+    background: #0d1117;
+}
+
+.combat-console::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+    .fighters-panel {
+        flex-direction: column;
+    }
+
+    .vs-divider {
+        font-size: 1.5rem;
+        min-width: auto;
+        padding: 0.3rem 0;
+    }
+
+    .sim-title {
+        font-size: 1.6rem;
+    }
+
+    .combat-console {
+        height: 400px;
+        font-size: 0.75rem;
+    }
+
+    .btn-simulate {
+        padding: 10px 24px;
+        font-size: 1rem;
+    }
+}

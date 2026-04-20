@@ -1,0 +1,33 @@
+{
+  "id": "lanza_destino",
+  "name": "Lanza del Destino",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Legendaria",
+  "image": "lanza_destino.jpg",
+  "description": "Una lanza de oro blanco que parece vibrar con el pulso del universo. Quien la empuña siente el peso del destino sobre sus hombros.",
+  "damage": "1d10 + FUE + 2d6 divino",
+  "damageType": "Perforante + Divino",
+  "price": "100 CR",
+  "range": "Alcance cercano o arrojadiza (cualquier distancia visible)",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Certera:</b> +3 a todas las tiradas de ataque con esta arma",
+    "<b>Destino Ineludible:</b> Cuando arrojada, la lanza persigue a su objetivo y no puede ser esquivada (solo bloqueada o parada)"
+  ],
+  "abilities": [
+    {
+      "name": "Golpe del Destino",
+      "cost": "2 acciones + 4 Chi",
+      "uses": "1/día",
+      "description": "La lanza brilla con luz divina. El siguiente ataque ignora todas las resistencias, inmunidades y defensas del objetivo. Inflige daño normal + 4d10 divino."
+    },
+    {
+      "name": "Retorno",
+      "cost": "Acción libre",
+      "uses": "Ilimitado",
+      "description": "La lanza regresa volando a tu mano al final de tu turno, sin importar la distancia."
+    }
+  ]
+}

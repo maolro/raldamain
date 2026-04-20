@@ -1,0 +1,77 @@
+{
+  "id": "lich",
+  "name": "Lich",
+  "level": 14,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 45,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+13+1d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+3d6"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 18,
+    "general": 14
+  },
+  "attackRoll": null,
+  "magicRoll": "+13+3d6",
+  "actions": [
+    {
+      "name": "Paralyzing Touch",
+      "cost": "1 action",
+      "damage": "4d10 cold",
+      "effect": "Target must pass WILL save or be paralyzed for 1 minute. Target can repeat the save at end of each turn."
+    },
+    {
+      "name": "Power Word Kill",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "One creature within 18m with 20 HP or fewer is instantly killed. No save. Usable once per encounter."
+    },
+    {
+      "name": "Disintegrate",
+      "cost": "2 actions",
+      "damage": "5d10 force",
+      "effect": "Ranged magical attack. If this reduces the target to 0 HP, they are disintegrated into dust. PHYS save for half damage."
+    },
+    {
+      "name": "Finger of Death",
+      "cost": "1 action",
+      "damage": "4d10 necrotic",
+      "effect": "Ranged magical attack at long range. A humanoid killed by this rises as a zombie permanently under the Lich's control."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Counterspell",
+      "cost": "1 reaction",
+      "effect": "When a creature within 18m casts a spell, the Lich can attempt to counter it. Roll magic vs magic: if the Lich wins, the spell fails."
+    },
+    {
+      "name": "Shield",
+      "cost": "1 reaction",
+      "effect": "+5 to all defenses against one attack, and immunity to magic missile until start of its next turn."
+    }
+  ],
+  "resistances": ["cold", "necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Phylactery",
+      "desc": "If the Lich is destroyed, it reforms near its phylactery in 1d10 days with full HP. The phylactery must be destroyed to permanently kill the Lich."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+2d6 to saves against spells and magical effects."
+    },
+    {
+      "name": "Arcane Mastery",
+      "desc": "The Lich's spells cannot be resisted by creatures with fewer than 3 shields. Such creatures automatically fail saves against its magic."
+    }
+  ],
+  "lore": "Liches are the most feared of all undead: archmages who achieved immortality by binding their soul to a phylactery through forbidden rituals. They spend centuries accumulating knowledge and power, often ruling from hidden sanctums with armies of undead servants."
+}

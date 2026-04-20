@@ -1,0 +1,67 @@
+{
+  "id": "nalfeshnee",
+  "name": "Nalfeshnee",
+  "level": 14,
+  "type": "demon",
+  "size": "Large",
+  "hp": 48,
+  "shields": 4,
+  "saves": {
+    "PHYS": "+13+2d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+2d6"
+  },
+  "defenses": {
+    "physical": 18,
+    "magical": 16,
+    "general": 13
+  },
+  "attackRoll": "+13+3d6",
+  "magicRoll": "+13+2d6",
+  "actions": [
+    {
+      "name": "Claw",
+      "cost": "1 action",
+      "damage": "5d10 slashing",
+      "effect": null
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "5d10 piercing",
+      "effect": null
+    },
+    {
+      "name": "Horror Nimbus",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Multicolored, eldritch light erupts from the Nalfeshnee. All creatures within 5m must pass WILL save or be frightened and stunned for 1 round. On a success, creatures are only frightened for 1 round. Usable once per encounter."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Teleport",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack, the Nalfeshnee teleports up to 36m to any location it can see. The triggering attack misses."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+2d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "Can fly despite its bulk. Does not provoke reactions when flying out of reach."
+    },
+    {
+      "name": "Abyssal Judge",
+      "desc": "The Nalfeshnee can sense the deepest sins and regrets of any creature within 18m. It uses this knowledge to demoralize foes."
+    }
+  ],
+  "lore": "Nalfeshnees are obese, boar-headed demons that serve as judges of the Abyss. Despite their grotesque appearance, they possess terrifying intelligence and magical power. Their horror nimbus has driven entire armies mad."
+}

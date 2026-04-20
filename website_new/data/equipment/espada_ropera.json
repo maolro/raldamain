@@ -1,0 +1,16 @@
+{
+  "id": "espada_ropera",
+  "name": "Espada Ropera",
+  "type": "Arma",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "espada_ropera.jpg",
+  "description": "Una hoja larga y delgada diseñada para estocadas precisas. El arma predilecta de duelistas y espadachines refinados.",
+  "damage": "1d8 + DES",
+  "damageType": "Perforante",
+  "price": "1 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Precisión</b>: Usa DES para tiros de ataque y daño"
+  ]
+}

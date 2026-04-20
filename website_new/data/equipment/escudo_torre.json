@@ -1,0 +1,15 @@
+{
+  "id": "escudo_torre",
+  "name": "Escudo de Torre",
+  "type": "Armadura",
+  "subtype": "Escudo",
+  "rarity": "Común",
+  "image": "escudo_torre.jpg",
+  "description": "Un escudo rectangular de madera reforzada con hierro que cubre casi todo el cuerpo. Usado por formaciones militares.",
+  "defense": "3",
+  "price": "1 CR",
+  "properties": [
+    "<b>Cobertura</b>: Puedes usar 1 acción para atrincherarte, ganando +2 DEF adicional hasta tu siguiente turno"
+  ],
+  "penalties": "No puedes usar armas a dos manos mientras lo portas."
+}

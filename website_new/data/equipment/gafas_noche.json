@@ -1,0 +1,18 @@
+{
+  "id": "gafas_noche",
+  "name": "Gafas de Visión Nocturna",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "gafas_noche.jpg",
+  "description": "Lentes de cristal ahumado montadas en un marco de cobre con grabados rúnicos. El mundo se ilumina en tonos verdes al usarlas.",
+  "price": "3 CR",
+  "abilities": [
+    {
+      "name": "Visión en la Oscuridad",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Puedes ver en oscuridad total hasta 18m como si fuera luz tenue."
+    }
+  ]
+}

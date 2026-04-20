@@ -1,0 +1,73 @@
+{
+  "id": "tengu",
+  "name": "Tengu",
+  "level": 8,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 28,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+2d6",
+    "WILL": "+9",
+    "MIND": "+9+1d6"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 10,
+    "general": 8
+  },
+  "attackRoll": "+9+3d6",
+  "magicRoll": "+9+1d6",
+  "actions": [
+    {
+      "name": "Katana Strike",
+      "cost": "1 action",
+      "damage": "4d8 slashing",
+      "effect": null
+    },
+    {
+      "name": "Wind Slash",
+      "cost": "1 action",
+      "damage": "3d8 slashing",
+      "effect": "Ranged attack. A blade of compressed wind. Ignores physical cover."
+    },
+    {
+      "name": "Whirlwind Assault",
+      "cost": "2 actions",
+      "damage": "3d8 slashing",
+      "effect": "The Tengu dashes through all enemies in a line up to 12m, striking each one. Targets must pass PHYS save or be pushed 3m to the side."
+    },
+    {
+      "name": "Gust Barrier",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Creates a barrier of swirling wind around itself. Ranged attacks against the Tengu have -1d6 until the start of its next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parry",
+      "cost": "1 reaction",
+      "effect": "Adds +4 to physical defense against one melee attack."
+    },
+    {
+      "name": "Counter Slash",
+      "cost": "1 reaction",
+      "effect": "When an adjacent enemy misses the Tengu with a melee attack, the Tengu makes a Katana Strike against them."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Master Swordsman",
+      "desc": "The Tengu scores critical hits on rolls that exceed the target's defense by 5 or more, instead of the usual threshold."
+    },
+    {
+      "name": "Wind Step",
+      "desc": "The Tengu can fly short distances. It can move up to 6m through the air as part of any movement, but must end on solid ground."
+    }
+  ],
+  "lore": "Tengu are proud warrior spirits of Japanese legend, taking the form of humanoid crows. They are master swordsmen and wind wielders, dwelling on remote mountain peaks where they train relentlessly. Some serve as mentors to worthy warriors, while others punish the arrogant."
+}

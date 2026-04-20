@@ -1,0 +1,62 @@
+{
+  "id": "celestial_stag",
+  "name": "Celestial Stag",
+  "level": 6,
+  "type": "celestial",
+  "size": "Large",
+  "hp": 18,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7+1d6",
+    "MIND": "+7+1d6"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 10,
+    "general": 7
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Antler Charge",
+      "cost": "2 actions",
+      "damage": "4d6 bludgeoning + radiant",
+      "effect": "The stag charges up to 12m and gores a target. Target must pass PHYS save or be knocked prone."
+    },
+    {
+      "name": "Purifying Presence",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All allies within 6m are cured of one poison, disease, or curse effect. Additionally, they heal 2d6 HP."
+    },
+    {
+      "name": "Radiant Hooves",
+      "cost": "1 action",
+      "damage": "3d6 bludgeoning + radiant",
+      "effect": null
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Guardian's Sacrifice",
+      "cost": "1 reaction",
+      "effect": "When an ally within 6m takes damage, the Celestial Stag can take half the damage instead."
+    }
+  ],
+  "resistances": ["radiant", "poison"],
+  "immunities": [],
+  "vulnerabilities": ["necrotic"],
+  "traits": [
+    {
+      "name": "Aura of Purity",
+      "desc": "All allies within 6m have +1d6 to saves against poison and disease."
+    },
+    {
+      "name": "Forest Guardian",
+      "desc": "Plants in a 30m radius around the stag grow faster and healthier. Corrupted or blighted land is slowly purified by its presence."
+    }
+  ],
+  "lore": "Celestial Stags are divine guardians of sacred forests and natural places. Their mere presence purifies corruption and disease. They appear to those in dire need, guiding lost travelers to safety and healing the wounded."
+}

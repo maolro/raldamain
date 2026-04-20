@@ -1,0 +1,19 @@
+{
+  "id": "hacha_berserker",
+  "name": "Hacha del Berserker Eterno",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Muy Rara",
+  "image": "hacha_berserker.jpg",
+  "description": "Un gran hacha de hierro oscuro manchada de sangre que nunca se seca. El portador siente una ira creciente que amenaza con consumirlo.",
+  "damage": "2d8 + FUE",
+  "damageType": "Cortante",
+  "price": "20 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>",
+    "<b>Maldita:</b> Una vez sintonizado, no puedes desintonizar voluntariamente. Debes usar un ritual de purificación",
+    "<b>Sed de Sangre:</b> +1d6 de daño extra por cada enemigo que hayas matado en este combate (máx +3d6)"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "ghoul",
+  "name": "Ghoul",
+  "level": 4,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 14,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "3d6 slashing",
+      "effect": "Target must pass PHYS save or be paralyzed for 1 round. Elves are immune to this paralysis."
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "4d6 piercing",
+      "effect": "Can only target paralyzed, restrained, or prone creatures. The Ghoul heals for half the damage dealt."
+    },
+    {
+      "name": "Pounce",
+      "cost": "2 actions",
+      "damage": "3d6 slashing",
+      "effect": "The Ghoul leaps up to 6m and attacks. Target must pass PHYS save or be knocked prone. If the target falls prone, the Ghoul can immediately make a Bite attack as part of this action."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Feral Dodge",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the Ghoul drops to all fours and scrambles. +3 to physical defense against that attack."
+    }
+  ],
+  "resistances": ["necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The Ghoul has +1d6 to attack rolls against a creature if at least one of the Ghoul's allies is within melee range of the target."
+    },
+    {
+      "name": "Corpse Eater",
+      "desc": "The Ghoul can consume a corpse as a 2-action activity to heal 5 HP."
+    }
+  ],
+  "lore": "Ghouls are ravenous undead driven by an insatiable hunger for humanoid flesh. They hunt in packs through graveyards, battlefields, and underground tunnels, using their paralyzing touch to disable prey before feasting."
+}

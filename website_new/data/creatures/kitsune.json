@@ -1,0 +1,68 @@
+{
+  "id": "kitsune",
+  "name": "Kitsune",
+  "level": 6,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 18,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7+1d6",
+    "MIND": "+7+1d6"
+  },
+  "defenses": {
+    "physical": 9,
+    "magical": 10,
+    "general": 7
+  },
+  "attackRoll": "+7",
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Foxfire",
+      "cost": "1 action",
+      "damage": "3d6 fire",
+      "effect": "Spectral blue flames strike the target. On a critical hit, the target is blinded for 1 round."
+    },
+    {
+      "name": "Bewitching Gaze",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "One humanoid target must pass WILL save or be charmed for 1 minute. The charmed target sees the Kitsune as a trusted ally. Taking damage ends the effect."
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": null
+    },
+    {
+      "name": "Illusory Double",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Creates an illusory copy of itself or another creature within close range. The illusion lasts until touched or until the Kitsune dismisses it."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Fox's Cunning",
+      "cost": "1 reaction",
+      "effect": "When targeted by a melee attack, the Kitsune can swap places with its illusory double if one exists, causing the attack to miss."
+    }
+  ],
+  "resistances": ["fire"],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Can assume the form of a fox, a specific humanoid, or its true form (humanoid with fox features) as a free action."
+    },
+    {
+      "name": "Fox Magic",
+      "desc": "The Kitsune's illusions are supernaturally convincing. Creatures have -1d6 on checks to see through them."
+    }
+  ],
+  "lore": "Kitsune are cunning fox spirits from ancient folklore. They grow more tails as they age and gain power, with the eldest having nine tails. They are tricksters by nature but can form deep bonds with mortals they find worthy."
+}

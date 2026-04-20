@@ -1,0 +1,68 @@
+{
+  "id": "unicorn",
+  "name": "Unicorn",
+  "level": 8,
+  "type": "celestial",
+  "size": "Large",
+  "hp": 25,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+1d6",
+    "WILL": "+9+2d6",
+    "MIND": "+9+2d6"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 13,
+    "general": 9
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": "+9+2d6",
+  "actions": [
+    {
+      "name": "Horn Gore",
+      "cost": "1 action",
+      "damage": "4d8 piercing + radiant",
+      "effect": null
+    },
+    {
+      "name": "Healing Touch",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "The Unicorn touches a creature with its horn. The target heals 4d8+4 HP and is cured of all poisons, diseases, and curses. Usable 3 times per day."
+    },
+    {
+      "name": "Teleport",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Unicorn teleports up to 36m to any location it can see, along with its rider if it has one."
+    },
+    {
+      "name": "Shimmering Shield",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Creates a 6m radius dome of radiant energy. Allies inside gain +3 to all defenses and are immune to charm and fear. Lasts 1 round."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+2d6 to a save against a spell or magical effect. Can also be used for an ally within 6m."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["poison", "charm"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The Unicorn and allies within 6m have +1d6 to saves against magic."
+    },
+    {
+      "name": "Sacred Guardian",
+      "desc": "The Unicorn is bound to a sacred grove. While in its grove, it can sense any creature within 1km and can teleport to any point in the grove as a free action."
+    }
+  ],
+  "lore": "Unicorns are celestial guardians of enchanted forests, embodiments of grace and purity. Their horns possess miraculous healing power, and their presence wards off evil. They bond only with those of the purest heart."
+}

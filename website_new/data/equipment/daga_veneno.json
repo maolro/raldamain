@@ -1,0 +1,16 @@
+{
+  "id": "daga_veneno",
+  "name": "Daga Envenenada de Kresh",
+  "type": "Arma Mágica",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Poco Común",
+  "image": "daga_veneno.jpg",
+  "description": "Una daga delgada con una hoja acanalada que secretea un veneno verdoso. Forjada en los talleres clandestinos de Kresh.",
+  "damage": "1d6 + DES + 1d6 veneno",
+  "damageType": "Perforante + Veneno",
+  "price": "3 CR",
+  "range": "Cuerpo a cuerpo o arrojadiza (distancia media)",
+  "properties": [
+    "<b>Tóxica:</b> El veneno se regenera mágicamente. El objetivo debe superar PHYS o quedar envenenado 1 turno"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "manticore",
+  "name": "Manticore",
+  "level": 6,
+  "type": "monster",
+  "size": "Large",
+  "hp": 20,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+2",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 11,
+    "magical": 7,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "4d6 piercing",
+      "effect": null
+    },
+    {
+      "name": "Claw",
+      "cost": "1 action",
+      "damage": "3d6 slashing",
+      "effect": null
+    },
+    {
+      "name": "Tail Spikes",
+      "cost": "1 action",
+      "damage": "4d6 piercing",
+      "effect": "Ranged attack at long range. The Manticore flings 1d4 tail spikes. Can use Tail Spikes up to 4 times per encounter before running out."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Aerial Evasion",
+      "cost": "1 reaction",
+      "effect": "When targeted by a ranged attack while flying, +3 to all defenses against that attack."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of reach."
+    },
+    {
+      "name": "Tail Spike Regrowth",
+      "desc": "The Manticore regrows spent tail spikes at the rate of 1 per day."
+    }
+  ],
+  "lore": "Manticores are savage predators with the body of a lion, wings of a dragon, and a tail bristling with deadly spikes. They are cruel and cunning, preferring to pepper prey with tail spikes from the air before swooping in for the kill."
+}

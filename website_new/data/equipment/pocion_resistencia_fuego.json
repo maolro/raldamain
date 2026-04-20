@@ -1,0 +1,21 @@
+{
+  "id": "pocion_resistencia_fuego",
+  "name": "Poción de Resistencia al Fuego",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Rara",
+  "image": "pocion_resistencia_fuego.jpg",
+  "description": "Un líquido azul gélido con copos de nieve suspendidos en su interior. Al beberla, un frío reconfortante recorre todo el cuerpo.",
+  "price": "2 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Resistencia al Fuego",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Durante 1 hora, ganas resistencia al daño de fuego (recibes la mitad de daño)."
+    }
+  ]
+}

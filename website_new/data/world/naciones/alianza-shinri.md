@@ -2,11 +2,9 @@
 title: Alianza Shinri
 ---
 
-La **Alianza Shinri** es una nación insular en transformación radical, atrapada entre su pasado espiritual milenario y un futuro industrial incierto. Esta tierra de montañas sagradas, bosques ancestrales y espíritus vivientes fue durante siglos un bastión de tradición y armonía con el [Mundo Espiritual](../lugares/dimensiones/mundo-espiritual.md), gobernada por clanes aristocráticos bajo la autoridad divina del Emperador-Encarnado. Sin embargo, la amenaza del imperialismo extranjero, especialmente del expansionista [Imperio de Ustilus](./imperio-de-ustilus.md), forzó a Shinri a abandonar su aislamiento centenario y embarcarse en una modernización frenética que está desgarrando el tejido mismo de su sociedad.
+La **Alianza Shinri** es una nación aislacionista en transformación radical, atrapada entre su pasado espiritual milenario y un futuro industrial incierto. Esta tierra de montañas sagradas, bosques ancestrales y espíritus vivientes fue durante siglos un bastión de tradición y armonía con el [Mundo Espiritual](../lugares/dimensiones/mundo-espiritual.md), gobernada por clanes aristocráticos bajo la autoridad divina del Emperador-Encarnado. Sin embargo, la amenaza del imperialismo extranjero, especialmente del expansionista [Imperio de Ustilus](./imperio-de-ustilus.md), forzó a Shinri a abandonar su aislamiento centenario y embarcarse en una modernización frenética que está desgarrando el tejido mismo de su sociedad.
 
-En apenas dos décadas, Shinri ha pasado de ser una sociedad feudal donde samuráis gobernaban sobre campesinos y los espíritus caminaban libremente, a una potencia industrial emergente con fábricas humeantes, ferrocarriles de vapor y un ejército moderno equipado con rifles y artillería. Este cambio vertiginoso, orquestado por el misterioso **Encarnado** tras su profetizado retorno y ascensión al trono, ha traído prosperidad económica y poder militar, pero también contaminación espiritual, desigualdad brutal y una crisis de identidad nacional.
-
-Hoy, Shinri se encuentra en una encrucijada existencial: ¿puede modernizarse sin perder su alma? ¿Pueden los espíritus ancestrales coexistir con máquinas de chi? ¿El precio de la supervivencia es el abandono de todo lo que hace a Shinri único? Estas preguntas atormentan a una nación dividida entre tradicionalistas que ven la modernización como traición y progresistas que la ven como salvación.
+En apenas dos décadas, Shinri ha pasado de ser una sociedad feudal donde elementalistas gobernaban sobre campesinos y los espíritus caminaban libremente, a una potencia industrial emergente con fábricas humeantes, ferrocarriles de vapor y un ejército moderno equipado con rifles y artillería. Este cambio vertiginoso, orquestado por el  **Encarnado** tras su profetizado retorno y ascensión al trono, ha traído prosperidad económica y poder militar, pero también contaminación espiritual, desigualdad rampante y una crisis de identidad nacional.
 
 # Historia
 
@@ -56,13 +54,9 @@ Shinri también se volvió profundamente aislacionista, cerrando sus puertos a e
 
 ## La Era de los Señores de la Guerra (3919-4027)
 
-La paz colapsó en 3919 tras una crisis sucesoria compleja. Cuando el Emperador Tennō XLII murió sin heredero directo, las Grandes Casas presentaron pretendientes rivales, cada uno afirmando tener la legitimidad espiritual para gobernar. Las negociaciones fracasaron. Lo que comenzó como escaramuzas escaló a guerra civil total.
+La paz colapsó en 3919 tras una crisis sucesoria compleja. Cuando el Emperador murió sin heredero directo, las Grandes Casas presentaron pretendientes rivales, cada uno afirmando tener la legitimidad espiritual para gobernar. Las negociaciones fracasaron. Lo que comenzó como escaramuzas escaló a guerra civil total. Durante el conflicto, Homay fue destruida en 3927 durante un asedio que duró tres años. El fuego que consumió la ciudad sagrada también mató a la familia imperial completa, borrando la línea de sangre del Encarnado. Sin emperador, Shinri se fragmentó en decenas de territorios controlados por señores de la guerra que luchaban constantemente por supremacía.
 
-Durante el conflicto, Homay fue destruida en 3927 durante un asedio que duró tres años. El fuego que consumió la ciudad sagrada también mató a la familia imperial completa, borrando la línea de sangre del Encarnado. Sin emperador, Shinri se fragmentó en decenas de territorios controlados por **daimyō** (señores de la guerra) que luchaban constantemente por supremacía.
-
-Esta **Era de los Señores de la Guerra**  duró un siglo completo. Fue un periodo de caos pero también de florecimiento cultural peculiar. La guerra constante perfeccionó las artes marciales, los códigos de honor samurái se volvieron más elaborados, y los clanes shinobi prosperaron como espías y asesinos. Irónicamente, los espíritus permanecieron mayormente neutrales, viendo esto como asunto humano.
-
-El siglo de guerra solo terminó con el retorno del Encarnado.
+Esta **Era de los Señores de la Guerra**  duró un siglo completo. Fue un periodo de caos pero también de florecimiento cultural peculiar. La guerra constante perfeccionó las artes marciales, los códigos de honor  se volvieron más elaborados, y los clanes shinobi prosperaron como espías y asesinos. Los espíritus fueron entonces empleados por la organización secreta de los Seishin-Gumi para manipular el conflicto, haciendo así que ambos mundos permanecieran atados a los mismos amos.
 
 ## El Retorno del Encarnado y la Restauración (4027-Presente)
 

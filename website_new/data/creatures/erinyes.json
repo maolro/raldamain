@@ -1,0 +1,71 @@
+{
+  "id": "erinyes",
+  "name": "Erinyes",
+  "level": 12,
+  "type": "devil",
+  "size": "Medium",
+  "hp": 36,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+3d6",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 17,
+    "magical": 14,
+    "general": 11
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Hellfire Longbow",
+      "cost": "1 action",
+      "damage": "5d8 piercing + 2d8 fire",
+      "effect": "Ranged attack at long range. The arrow burns with hellfire that cannot be extinguished by non-magical means."
+    },
+    {
+      "name": "Longsword",
+      "cost": "1 action",
+      "damage": "5d8 slashing",
+      "effect": null
+    },
+    {
+      "name": "Rope of Entanglement",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Ranged attack against one creature within 9m. Target is restrained. PHYS save at end of each turn to escape. While restrained, the target cannot teleport or turn invisible."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parry",
+      "cost": "1 reaction",
+      "effect": "+5 to physical defense against one melee attack."
+    },
+    {
+      "name": "Fallen Angel's Wrath",
+      "cost": "1 reaction",
+      "effect": "When an ally within 9m is reduced to 0 HP, the Erinyes can immediately fly up to half its speed and make a Longsword attack."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Fallen Angel",
+      "desc": "The Erinyes is a fallen angel. It retains its wings and celestial grace, making it immune to being frightened."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+2d6 to saves against spells and magical effects."
+    },
+    {
+      "name": "Flyby",
+      "desc": "Can fly at high speed. Does not provoke reactions when flying out of reach."
+    }
+  ],
+  "lore": "Erinyes are fallen angels who serve the archdevils as elite warriors and hunters of souls. Stunningly beautiful and terrifyingly skilled, they soar over battlefields raining hellfire arrows and binding the mightiest foes with their enchanted ropes."
+}

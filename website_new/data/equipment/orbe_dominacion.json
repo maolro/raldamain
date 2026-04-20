@@ -1,0 +1,30 @@
+{
+  "id": "orbe_dominacion",
+  "name": "Orbe de Dominación",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "orbe_dominacion.jpg",
+  "description": "Una esfera de obsidiana del tamaño de un puño envuelta en llamas frías. Susurra promesas de poder a quien la toca. Se dice que fue creada por Sek-Tebos.",
+  "price": "80 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Maldito:</b> Mientras estés sintonizado, tu alineación se vuelve gradualmente más oscura. Desintonizar requiere un ritual de purificación de nivel 5+"
+  ],
+  "abilities": [
+    {
+      "name": "Dominar Voluntad",
+      "cost": "2 acciones + 4 Chi",
+      "uses": "3/día",
+      "description": "Un objetivo dentro de 18m debe superar WILL (CD 22) o quedar bajo tu control durante 1 hora. Si el objetivo sufre daño, puede repetir la salvación. Criaturas con INT 7+ tienen Ventaja en la salvación."
+    },
+    {
+      "name": "Aura de Terror",
+      "cost": "1 acción + 2 Chi",
+      "uses": "Ilimitado",
+      "description": "Todos los enemigos en 9m deben superar WILL (CD 20) o quedar con Miedo 3 durante 1 minuto."
+    }
+  ],
+  "lore": "Los eruditos creen que este orbe es uno de los instrumentos que Sek-Tebos usó para corromper civilizaciones enteras. Poseerlo es peligroso, pero su poder es innegable."
+}

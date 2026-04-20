@@ -1,0 +1,71 @@
+{
+  "id": "revenant",
+  "name": "Revenant",
+  "level": 10,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 35,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+2d6",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 11,
+    "general": 10
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Vengeful Fist",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning",
+      "effect": "Against its sworn target, this attack deals an additional 2d8 necrotic damage."
+    },
+    {
+      "name": "Glare of Vengeance",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Revenant's sworn target must pass WILL save or be paralyzed for 1 round as they relive their crime."
+    },
+    {
+      "name": "Relentless Pursuit",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Revenant senses the exact location of its sworn target, regardless of distance or plane. It teleports up to 18m toward them."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Undying Fury",
+      "cost": "1 reaction",
+      "effect": "When reduced to 0 HP, the Revenant does not die. At the start of its next turn, it regenerates 10 HP. Only destroying the body completely (fire, acid, disintegration) prevents this."
+    },
+    {
+      "name": "Vengeful Strike",
+      "cost": "1 reaction",
+      "effect": "When its sworn target attacks an ally, the Revenant can immediately move up to half its speed and make a Vengeful Fist attack against the target."
+    }
+  ],
+  "resistances": ["necrotic", "cold"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Sworn Vengeance",
+      "desc": "The Revenant exists to destroy one specific creature that wronged it in life. It always knows the target's location. If the target dies, the Revenant crumbles to dust."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Regains 5 HP at the start of each turn. If the Revenant takes fire or radiant damage, this trait doesn't function at the start of its next turn."
+    },
+    {
+      "name": "Turn Immunity",
+      "desc": "The Revenant is immune to effects that turn undead."
+    }
+  ],
+  "lore": "Revenants are undead driven by an singular, burning need for revenge. They are nearly impossible to destroy permanently, reforming again and again until their vengeance is fulfilled. Some are tragic figures wronged in life; others are monsters who cling to grudges beyond death."
+}

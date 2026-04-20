@@ -1,0 +1,11 @@
+{
+  "id": "armadura_acolchada",
+  "name": "Armadura Acolchada",
+  "type": "Armadura",
+  "subtype": "Armadura Ligera",
+  "rarity": "Común",
+  "image": "armadura_acolchada.jpg",
+  "description": "Capas de tela gruesa acolchada y cosida. Ofrece protección mínima pero no restringe el movimiento en absoluto.",
+  "defense": "1",
+  "price": "0 CR"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "cota_anillas",
+  "name": "Cota de Anillas",
+  "type": "Armadura",
+  "subtype": "Armadura Media",
+  "rarity": "Común",
+  "image": "cota_anillas.jpg",
+  "description": "Anillas de metal entrelazadas sobre una base de cuero. Buen compromiso entre protección y movilidad para guerreros versátiles.",
+  "defense": "5",
+  "price": "1 CR",
+  "penalties": "-4 a tiradas de DES. Desventaja en tiradas de magia si FUE < 4."
+}

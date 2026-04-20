@@ -1,0 +1,18 @@
+{
+  "id": "piedra_comunicacion",
+  "name": "Piedras de Comunicación",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "piedra_comunicacion.jpg",
+  "description": "Un par de piedras lisas de cuarzo rosa conectadas mágicamente. Al hablar cerca de una, la otra reproduce las palabras.",
+  "price": "3 CR",
+  "abilities": [
+    {
+      "name": "Comunicación",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Permite hablar con quien posea la piedra emparejada a una distancia máxima de 1 km. Funciona a través de barreras físicas."
+    }
+  ]
+}

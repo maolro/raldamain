@@ -1,0 +1,21 @@
+{
+  "id": "baculo_elementos",
+  "name": "Báculo de los Elementos",
+  "type": "Objeto Mágico",
+  "subtype": "Báculo",
+  "rarity": "Rara",
+  "image": "baculo_elementos.jpg",
+  "description": "Un báculo de madera petrificada con cuatro gemas: rubí, zafiro, topacio y esmeralda. Cada una contiene la esencia de un elemento.",
+  "price": "12 CR",
+  "properties": [
+    "<b>Sintonización</b>: Por un usuario de magia elemental"
+  ],
+  "abilities": [
+    {
+      "name": "Canalizar Elemento",
+      "cost": "1 acción + Chi variable",
+      "uses": "10 cargas/día",
+      "description": "Gasta cargas para lanzar: Muro de Fuego (4 cargas), Cono de Frío (4 cargas), Rayo (3 cargas), Temblor (2 cargas). Cada hechizo inflige 3d10 del tipo correspondiente. Se recargan 1d6+4 al amanecer."
+    }
+  ]
+}

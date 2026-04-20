@@ -1,0 +1,18 @@
+{
+  "id": "alfombra_voladora",
+  "name": "Alfombra Voladora",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Muy Rara",
+  "image": "alfombra_voladora.jpg",
+  "description": "Una alfombra de seda con patrones geométricos que se mueven. Al sentarse y pronunciar la palabra de mando, se eleva silenciosamente.",
+  "price": "4 CR",
+  "abilities": [
+    {
+      "name": "Vuelo",
+      "cost": "1 acción (palabra de mando)",
+      "uses": "Ilimitado",
+      "description": "La alfombra vuela a velocidad de 18m/turno y puede cargar hasta 3 personas o 300 kg. Obedece comandos verbales del propietario."
+    }
+  ]
+}

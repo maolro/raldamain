@@ -1,0 +1,77 @@
+{
+  "id": "phoenix_elemental",
+  "name": "Phoenix Elemental",
+  "level": 14,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 48,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+13+2d6",
+    "WILL": "+13+3d6",
+    "MIND": "+13+1d6"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 18,
+    "general": 13
+  },
+  "attackRoll": "+13+3d6",
+  "magicRoll": "+13+3d6",
+  "actions": [
+    {
+      "name": "Blazing Talons",
+      "cost": "1 action",
+      "damage": "5d10 fire + radiant",
+      "effect": null
+    },
+    {
+      "name": "Immolation",
+      "cost": "2 actions",
+      "damage": "5d10 fire",
+      "effect": "One target is wreathed in sacred fire. WILL save. On failure, the target burns for 3d10 fire at the start of each turn for 1 minute. On success, half initial damage and no ongoing fire."
+    },
+    {
+      "name": "Healing Flames",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "The Phoenix bathes an ally in purifying fire. The ally heals 4d10 HP and is cured of all poisons, diseases, and curses."
+    },
+    {
+      "name": "Solar Flare",
+      "cost": "1 action",
+      "damage": "4d10 radiant",
+      "effect": "All enemies within 9m. WILL save for half. Undead and fiends take an additional 2d10."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Rebirth",
+      "cost": "1 reaction",
+      "effect": "When reduced to 0 HP for the first time in an encounter, the Phoenix explodes in a burst of fire (all creatures within 6m take 4d10 fire, PHYS save for half) and reforms with 20 HP at the start of its next turn."
+    },
+    {
+      "name": "Wing Gust",
+      "cost": "1 reaction",
+      "effect": "When a creature moves within melee range, the Phoenix beats its wings. The creature must pass PHYS save or be pushed 6m and take 2d10 fire damage."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["fire", "poison", "necrotic"],
+  "vulnerabilities": ["cold"],
+  "traits": [
+    {
+      "name": "Fiery Aura",
+      "desc": "All creatures within 6m take 2d6 fire damage at the start of their turn. The Phoenix sheds bright light in a 18m radius."
+    },
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of an enemy's reach."
+    },
+    {
+      "name": "Sacred Flame",
+      "desc": "The Phoenix's fire is holy. It deals radiant damage to undead and fiends instead of fire damage, bypassing fire immunity."
+    }
+  ],
+  "lore": "Phoenix Elementals are the rarest and most majestic of elemental beings, born from the convergence of fire and divine energy. They embody the eternal cycle of destruction and rebirth, burning away corruption and renewing the world in their wake."
+}

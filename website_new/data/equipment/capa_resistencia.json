@@ -1,0 +1,21 @@
+{
+  "id": "capa_resistencia",
+  "name": "Capa de Resistencia",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "capa_resistencia.jpg",
+  "description": "Una capa gruesa de lana carmesí con bordados protectores en hilo de plata. Emana un calor reconfortante.",
+  "price": "4 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Resistencia Elemental",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Elige un tipo de daño elemental (fuego, frío, eléctrico o sónico) al sintonizar. Ganas resistencia a ese tipo de daño."
+    }
+  ]
+}

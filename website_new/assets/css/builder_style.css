@@ -376,6 +376,7 @@
     .builder-tabs {
         flex-direction: column;
         align-items: stretch;
+        position: static;
     }
 
     .builder-tabs .step-nav {

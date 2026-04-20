@@ -1,0 +1,73 @@
+{
+  "id": "glabrezu",
+  "name": "Glabrezu",
+  "level": 12,
+  "type": "demon",
+  "size": "Huge",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+2d6",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 14,
+    "general": 12
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Pincer",
+      "cost": "1 action",
+      "damage": "6d8 bludgeoning",
+      "effect": "Target is grappled. Grappled Medium or smaller creatures are restrained."
+    },
+    {
+      "name": "Fist",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Power Word Stun",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "One creature with 25 HP or fewer is stunned for 1d4 rounds. No save. Usable once per encounter."
+    },
+    {
+      "name": "Darkness",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Creates a 9m radius sphere of magical darkness at a point within 18m. Lasts 1 minute."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Pincer Crush",
+      "cost": "1 reaction",
+      "effect": "When a grappled creature attempts to escape, the Glabrezu crushes them for 4d8 bludgeoning damage."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+2d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Can cast Confusion (2 actions, 9m radius, WILL save) once per encounter and Dispel Magic (1 action) at will."
+    },
+    {
+      "name": "Treacherous",
+      "desc": "The Glabrezu is a master deceiver. It can telepathically communicate within 36m and offer mortals wishes in exchange for their souls."
+    }
+  ],
+  "lore": "Glabrezus are cunning, four-armed demons that combine immense physical power with magical ability. Unlike most demons, they prefer seduction over slaughter, tempting mortals with wishes that inevitably lead to corruption and damnation."
+}

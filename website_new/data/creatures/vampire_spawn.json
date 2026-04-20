@@ -1,0 +1,71 @@
+{
+  "id": "vampire_spawn",
+  "name": "Vampire Spawn",
+  "level": 10,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 35,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+1d6",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 12,
+    "general": 10
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": "+11+1d6",
+  "actions": [
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "4d8 slashing",
+      "effect": "Target is grappled on a hit."
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "5d8 piercing + necrotic",
+      "effect": "Can only target grappled, restrained, or charmed creatures. The Vampire Spawn heals for half the damage dealt. Target's max HP is reduced by the necrotic portion."
+    },
+    {
+      "name": "Charm",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "One humanoid within 9m must pass WILL save or be charmed for 24 hours. The charmed target regards the Vampire Spawn as a trusted ally. The target can repeat the save when it takes damage."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Predatory Dodge",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the Vampire Spawn moves up to half its speed without provoking reactions. If this moves it out of range, the attack misses."
+    },
+    {
+      "name": "Spider Climb Escape",
+      "cost": "1 reaction",
+      "effect": "When an enemy moves adjacent, the Vampire Spawn can climb up to 9m on any surface (walls, ceilings) without provoking."
+    }
+  ],
+  "resistances": ["necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Regeneration",
+      "desc": "Regains 5 HP at the start of each turn if it has at least 1 HP and isn't in sunlight or running water. If it takes radiant damage or damage from holy water, this trait doesn't function next turn."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "Can climb any surface, including ceilings, without needing checks."
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "desc": "Cannot enter a residence without invitation. Takes 5 damage at the start of its turn in sunlight or running water. Cannot cross running water. Paralyzed if a stake is driven through its heart while incapacitated."
+    }
+  ],
+  "lore": "Vampire Spawn are mortals turned by a true vampire's bite, bound to serve their creator's will. They retain their cunning but are enslaved to their master's commands. If freed from this bond, some seek to become true vampires themselves."
+}

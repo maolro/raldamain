@@ -1,0 +1,29 @@
+{
+  "name": "Kaelen el Duelista",
+  "level": 8,
+  "stats": {
+    "str": 3,
+    "dex": 5,
+    "con": 4,
+    "int": 2,
+    "wis": 2,
+    "cha": 1
+  },
+  "ranks": [
+    { "id": "estilo_duelista", "rank": 3 },
+    { "id": "reflejos", "rank": 3 },
+    { "id": "fortitud", "rank": 2 }
+  ],
+  "weapon": {
+    "name": "Espada ropera",
+    "damage": "1d8",
+    "stat": "dex",
+    "damageType": "Cortante",
+    "rankId": "estilo_duelista",
+    "range": "melee"
+  },
+  "armor": {
+    "name": "Armadura de cuero reforzado",
+    "def": 3
+  }
+}

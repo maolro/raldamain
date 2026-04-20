@@ -1,0 +1,67 @@
+{
+  "id": "dryad",
+  "name": "Dryad",
+  "level": 6,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 16,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7+1d6",
+    "MIND": "+7+1d6"
+  },
+  "defenses": {
+    "physical": 9,
+    "magical": 10,
+    "general": 6
+  },
+  "attackRoll": "+7",
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Entangling Vines",
+      "cost": "1 action",
+      "damage": "2d6 bludgeoning",
+      "effect": "Vines erupt around a target. Target must pass PHYS save or be restrained until the end of their next turn."
+    },
+    {
+      "name": "Thorn Spray",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": "Ranged attack. The target bleeds for 1d6 at the start of their next turn."
+    },
+    {
+      "name": "Fey Charm",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "One humanoid or beast must pass WILL save or be charmed for 1 hour. The charmed target regards the Dryad as a trusted friend. Taking damage allows a new save."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Barkskin",
+      "cost": "1 reaction",
+      "effect": "When hit by a physical attack, the Dryad's skin hardens to bark, reducing damage taken by 1d6+3."
+    },
+    {
+      "name": "Tree Stride",
+      "cost": "1 reaction",
+      "effect": "When an enemy enters melee range, the Dryad can teleport to any tree within 18m."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Tree Bound",
+      "desc": "The Dryad is mystically bound to a great tree. If the tree is destroyed, the Dryad dies within 24 hours. While within 30m of the tree, it has +2 to all defenses."
+    },
+    {
+      "name": "Speak with Plants",
+      "desc": "The Dryad can communicate with plants and command non-magical plants to move slowly."
+    }
+  ],
+  "lore": "Dryads are shy fey spirits bonded to ancient trees. They guard their sacred groves with charm and nature magic, preferring to turn intruders into allies rather than fight directly. Those who harm their forest earn a bitter and relentless enemy."
+}

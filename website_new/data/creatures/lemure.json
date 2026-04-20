@@ -1,0 +1,56 @@
+{
+  "id": "lemure",
+  "name": "Lemure",
+  "level": 4,
+  "type": "devil",
+  "size": "Medium",
+  "hp": 14,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 9,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Fist",
+      "cost": "1 action",
+      "damage": "3d6 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Dogpile",
+      "cost": "1 action",
+      "damage": "2d6 bludgeoning",
+      "effect": "If at least 2 other Lemures are adjacent to the target, the target is grappled."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Regenerate",
+      "cost": "1 reaction",
+      "effect": "At the end of any turn, the Lemure regains 3 HP. Does not function if it took radiant or fire damage that turn."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Hellish Rejuvenation",
+      "desc": "A destroyed Lemure reforms in the Nine Hells after 1d10 days unless killed by radiant damage or a blessed weapon."
+    },
+    {
+      "name": "Mindless",
+      "desc": "Immune to charm and fear effects. Cannot be reasoned with."
+    }
+  ],
+  "lore": "Lemures are the lowest form of devil, shapeless blobs of molten flesh that were once mortal souls condemned to the Nine Hells. They are mindless, expendable, and endlessly reforming, used as fodder by greater devils."
+}

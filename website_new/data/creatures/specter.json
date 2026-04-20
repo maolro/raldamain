@@ -1,0 +1,56 @@
+{
+  "id": "specter",
+  "name": "Specter",
+  "level": 6,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 15,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 8,
+    "general": 7
+  },
+  "attackRoll": null,
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Life Drain",
+      "cost": "1 action",
+      "damage": "3d6 necrotic",
+      "effect": "Target's maximum HP is reduced by the damage dealt until a long rest. If max HP reaches 0, the target dies and rises as a Specter in 1 minute."
+    },
+    {
+      "name": "Terrifying Moan",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All creatures within 6m must pass WILL save or be frightened for 1 round."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Phase Shift",
+      "cost": "1 reaction",
+      "effect": "When targeted by a non-magical physical attack, the attack passes through the Specter harmlessly."
+    }
+  ],
+  "resistances": ["cold", "necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "desc": "Can move through creatures and objects. Takes 2d6 force damage if ending its turn in an object."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "In sunlight, the Specter has -1d6 to attack rolls and saves."
+    }
+  ],
+  "lore": "Specters are wrathful spirits of mortals who died in anguish. Unlike ghosts, they retain no memory of their former lives, only an overwhelming hatred of the living and a desperate hunger for their life force."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "armadura_eterna",
+  "name": "Armadura Eterna",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Pesada",
+  "rarity": "Muy Rara",
+  "image": "armadura_eterna.jpg",
+  "description": "Armadura de placas forjada con acero de meteorito que se repara sola. Las abolladuras y grietas se cierran lentamente como si el metal estuviera vivo.",
+  "defense": "10",
+  "price": "30 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Indestructible:</b> No puede ser dañada ni destruida por medios normales o mágicos"
+  ],
+  "abilities": [
+    {
+      "name": "Regeneración Metálica",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Al inicio de cada descanso corto, la armadura se repara cualquier daño cosmético. Si la armadura fuese de algún modo dañada mágicamente, se restaura en 24 horas."
+    }
+  ],
+  "penalties": "-6 a tiradas de DES. Velocidad -3m."
+}

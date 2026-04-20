@@ -1,0 +1,27 @@
+{
+  "id": "martillo_titanes",
+  "name": "Martillo de los Titanes",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Muy Rara",
+  "image": "martillo_titanes.jpg",
+  "description": "Un martillo colosal forjado por gigantes ancestrales. Su cabeza está hecha de meteorito y pesa más de lo que cualquier mortal debería poder levantar.",
+  "damage": "2d8 + FUE + 1d10 contundente",
+  "damageType": "Contundente",
+  "price": "30 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>: Requiere FUE 5+",
+    "<b>Pesada</b>: Desventaja en tiradas de Parada",
+    "<b>Aplastante:</b> Inflige daño doble a objetos y estructuras"
+  ],
+  "abilities": [
+    {
+      "name": "Golpe Titánico",
+      "cost": "2 acciones + 3 Vigor",
+      "uses": "1/día",
+      "description": "Golpeas con toda la fuerza titánica. Inflige 6d10 contundente y el objetivo debe superar PHYS (CD 20) o quedar Aturdido 1 turno."
+    }
+  ]
+}

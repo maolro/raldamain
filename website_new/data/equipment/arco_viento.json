@@ -1,0 +1,17 @@
+{
+  "id": "arco_viento",
+  "name": "Arco del Viento",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial a Distancia",
+  "rarity": "Poco Común",
+  "image": "arco_viento.jpg",
+  "description": "Un arco élfico tallado en madera de fresno blanco. Las flechas disparadas por él viajan envueltas en corrientes de aire.",
+  "damage": "1d10 + DES",
+  "damageType": "Perforante",
+  "price": "3 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Viento Favorable:</b> Las flechas no se ven afectadas por viento ni clima",
+    "<b>Dos manos</b>: Requiere ambas manos"
+  ]
+}

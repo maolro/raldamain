@@ -1,0 +1,33 @@
+{
+  "id": "martillo_mundo",
+  "name": "Martillo del Mundo",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Legendaria",
+  "image": "martillo_mundo.jpg",
+  "description": "Un martillo primordial cuya cabeza está tallada de un fragmento del primer monte del mundo. Cada golpe tiene la fuerza de un terremoto.",
+  "damage": "2d8 + FUE + 2d8 contundente",
+  "damageType": "Contundente",
+  "price": "100 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>: Requiere FUE 6+",
+    "<b>Artefacto</b>",
+    "<b>Inamovible:</b> Nadie sin la fuerza requerida puede siquiera levantarlo"
+  ],
+  "abilities": [
+    {
+      "name": "Cataclismo",
+      "cost": "3 acciones + 5 Vigor",
+      "uses": "1/día",
+      "description": "Golpeas el suelo con toda la fuerza del mundo. Todos los enemigos en 18m deben superar PHYS (CD 22) o recibir 10d10 contundente y quedar Tropezados y Aturdidos 1 turno. Estructuras y objetos en el área son destruidos."
+    },
+    {
+      "name": "Lanzamiento del Titán",
+      "cost": "2 acciones + 3 Vigor",
+      "uses": "3/día",
+      "description": "Arrojas el martillo a un objetivo a distancia lejana. Inflige 6d10 contundente y el martillo regresa a tu mano."
+    }
+  ]
+}

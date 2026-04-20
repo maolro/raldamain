@@ -1,0 +1,71 @@
+{
+  "id": "death_knight",
+  "name": "Death Knight",
+  "level": 14,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 48,
+  "shields": 4,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+1d6"
+  },
+  "defenses": {
+    "physical": 20,
+    "magical": 16,
+    "general": 14
+  },
+  "attackRoll": "+13+4d6",
+  "magicRoll": "+13+2d6",
+  "actions": [
+    {
+      "name": "Hellfire Blade",
+      "cost": "1 action",
+      "damage": "5d10 slashing + 3d10 necrotic",
+      "effect": "The blade burns with green hellfire."
+    },
+    {
+      "name": "Hellfire Orb",
+      "cost": "2 actions",
+      "damage": "5d10 fire + necrotic",
+      "effect": "A 6m radius explosion at a point within long range. All creatures must pass PHYS save for half. This fire cannot be extinguished by non-magical means."
+    },
+    {
+      "name": "Command Undead",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Up to 4 undead creatures within 18m must obey the Death Knight's commands for 24 hours. Intelligent undead can resist with a WILL save."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parry",
+      "cost": "1 reaction",
+      "effect": "Adds +6 to physical defense against one melee attack."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "When targeted by a spell, the Death Knight can add +2d6 to its save. If the save succeeds, the spell is reflected back at the caster."
+    }
+  ],
+  "resistances": ["necrotic"],
+  "immunities": ["poison", "psychic", "frightened"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Marshal Undead",
+      "desc": "All undead within 18m of the Death Knight gain +2 to attack rolls and +1d6 to damage."
+    },
+    {
+      "name": "Undying",
+      "desc": "If the Death Knight fails a save that would reduce it to 0 HP, it can choose to succeed instead. Usable once per encounter."
+    },
+    {
+      "name": "Dread Aura",
+      "desc": "Non-undead creatures within 9m have -1d6 to saves against fear effects."
+    }
+  ],
+  "lore": "Death Knights are fallen paladins who broke their sacred oaths in life and were cursed to serve in undeath. They retain all their martial prowess and perverted divine magic, commanding undead legions with the same discipline they once led armies of the living."
+}

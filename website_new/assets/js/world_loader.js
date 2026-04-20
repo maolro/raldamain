@@ -92,6 +92,11 @@ function parseFrontmatter(markdown) {
     return { metadata, content };
 }
 
+// Strip spoiler sections: content between <!-- SPOILER --> and <!-- /SPOILER --> markers
+function stripSpoilers(markdown) {
+    return markdown.replace(/<!--\s*SPOILER\s*-->[\s\S]*?<!--\s*\/SPOILER\s*-->/g, '');
+}
+
 // Load and render an article
 async function loadArticle(articleId) {
     const articleInfo = articleLookup[articleId];
@@ -124,8 +129,11 @@ async function loadArticle(articleId) {
         // Build infobox from metadata
         buildInfobox(metadata, articleInfo);
 
+        // Strip spoiler sections (visible in source, hidden on site)
+        let processedContent = stripSpoilers(content);
+
         // Process Obsidian links before rendering
-        let processedContent = processObsidianLinks(content);
+        processedContent = processObsidianLinks(processedContent);
 
         // Render markdown
         const html = marked.parse(processedContent);

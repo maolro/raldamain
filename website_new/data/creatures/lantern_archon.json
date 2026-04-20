@@ -1,0 +1,62 @@
+{
+  "id": "lantern_archon",
+  "name": "Lantern Archon",
+  "level": 4,
+  "type": "celestial",
+  "size": "Small",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+2",
+    "WILL": "+7+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 8,
+    "magical": 10,
+    "general": 7
+  },
+  "attackRoll": null,
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Radiant Bolt",
+      "cost": "1 action",
+      "damage": "2d6 radiant",
+      "effect": "Undead and fiends take an additional 1d6 radiant."
+    },
+    {
+      "name": "Guiding Light",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One ally within 9m gains +1d6 to their next attack roll or save."
+    },
+    {
+      "name": "Healing Glow",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "All allies within 3m heal 1d6+2 HP."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shield of Light",
+      "cost": "1 reaction",
+      "effect": "When an ally within 6m is targeted by an attack, the Lantern Archon interposes itself, granting the ally +3 to defenses against that attack."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": [],
+  "vulnerabilities": ["necrotic"],
+  "traits": [
+    {
+      "name": "Aura of Light",
+      "desc": "Sheds bright light in a 6m radius. Undead and fiends in this light have -1d6 to attack rolls."
+    },
+    {
+      "name": "Incorporeal",
+      "desc": "Can move through objects and creatures. Immune to being grappled or restrained."
+    }
+  ],
+  "lore": "Lantern Archons are the smallest and most numerous of celestials, appearing as floating orbs of golden light. They serve as guides, messengers, and protectors of the innocent. Though individually fragile, their radiant presence weakens creatures of darkness."
+}

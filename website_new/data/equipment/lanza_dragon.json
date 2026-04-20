@@ -1,0 +1,18 @@
+{
+  "id": "lanza_dragon",
+  "name": "Lanza Matadragones",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Muy Rara",
+  "image": "lanza_dragon.jpg",
+  "description": "Una lanza de mithrilo con punta de adamantina y runas antidraco grabadas a lo largo del asta. Vibra en presencia de sangre dracónica.",
+  "damage": "1d10 + FUE + 2d6 contra dragones",
+  "damageType": "Perforante",
+  "price": "25 CR",
+  "range": "Alcance cercano",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Cazadora de Dragones:</b> Inflige 2d6 adicionales contra dragones y criaturas con sangre dracónica",
+    "<b>Resistencia Dracónica:</b> Mientras la portas, ganas resistencia al tipo de daño de aliento del último dragón que golpeaste"
+  ]
+}

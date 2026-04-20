@@ -1,0 +1,77 @@
+{
+  "id": "jorogumo",
+  "name": "Jorogumo",
+  "level": 12,
+  "type": "spirit_fey",
+  "size": "Large",
+  "hp": 38,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+2d6",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 13,
+    "general": 11
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Venomous Bite",
+      "cost": "1 action",
+      "damage": "5d8 piercing + 2d8 poison",
+      "effect": "Target must pass PHYS save or be poisoned for 1 minute. Poisoned targets take 2d8 poison damage at the start of each turn."
+    },
+    {
+      "name": "Web Snare",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Ranged attack. Target must pass PHYS save or be restrained by sticky webs. Restrained creatures can attempt a PHYS save at the end of each turn to escape."
+    },
+    {
+      "name": "Silken Embrace",
+      "cost": "2 actions",
+      "damage": "6d8 bludgeoning",
+      "effect": "Can only target restrained creatures. The Jorogumo wraps the target in silk. The target is completely immobilized and begins suffocating unless freed by an ally."
+    },
+    {
+      "name": "Seductive Illusion",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Takes the form of a beautiful woman. One humanoid must pass WILL save or be charmed for 1 hour, following the Jorogumo willingly."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Web Tripline",
+      "cost": "1 reaction",
+      "effect": "When a creature moves within 6m, hidden webs trigger. Target must pass PHYS save or fall prone."
+    },
+    {
+      "name": "Skitter Away",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the Jorogumo can climb up to 9m on any surface without provoking reactions."
+    }
+  ],
+  "resistances": ["poison"],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "Can climb any surface, including upside down on ceilings, without needing to make checks."
+    },
+    {
+      "name": "Web Sense",
+      "desc": "While touching a web, the Jorogumo knows the exact location of any creature in contact with the same web."
+    },
+    {
+      "name": "Shapechanger",
+      "desc": "Can shift between its true spider form (Large) and a humanoid disguise (Medium) as a free action."
+    }
+  ],
+  "lore": "Jorogumo are ancient spider spirits that take the form of beautiful women to lure prey into their webs. They build elaborate lairs in abandoned buildings and caves, decorating them with silk and the bones of their victims. Patient and methodical, they prefer traps to direct confrontation."
+}

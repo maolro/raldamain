@@ -1,0 +1,17 @@
+{
+  "id": "gran_maza",
+  "name": "Gran Maza",
+  "type": "Arma",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "gran_maza.jpg",
+  "description": "Un mazo de guerra con cabeza de hierro fundido. Cada golpe resuena como un trueno y puede destrozar huesos y piedra.",
+  "damage": "2d8 + FUE",
+  "damageType": "Contundente",
+  "price": "2 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Pesada</b>: Desventaja en tiradas de Parada"
+  ]
+}

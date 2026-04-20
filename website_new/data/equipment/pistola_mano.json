@@ -1,0 +1,17 @@
+{
+  "id": "pistola_mano",
+  "name": "Pistola de Mano",
+  "type": "Arma",
+  "subtype": "Arma de Fuego",
+  "rarity": "Común",
+  "image": "pistola_mano.jpg",
+  "description": "Un arma de fuego compacta con mecanismo de chispa. Devastadora a corta distancia pero lenta de recargar y propensa a fallos.",
+  "damage": "2d6 + DES",
+  "damageType": "Perforante",
+  "price": "2 CR",
+  "range": "Distancia media",
+  "properties": [
+    "<b>Recarga</b>: Cuesta 2 acciones recargar",
+    "<b>Explosiva</b>: En un 1 natural, el arma se encasquilla y no puede usarse hasta repararla"
+  ]
+}

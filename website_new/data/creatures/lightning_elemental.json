@@ -1,0 +1,67 @@
+{
+  "id": "lightning_elemental",
+  "name": "Lightning Elemental",
+  "level": 10,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 32,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 11,
+    "general": 10
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Lightning Strike",
+      "cost": "1 action",
+      "damage": "5d8 lightning",
+      "effect": "Target must pass PHYS save or be stunned until end of their next turn."
+    },
+    {
+      "name": "Chain Lightning",
+      "cost": "2 actions",
+      "damage": "4d8 lightning",
+      "effect": "Hits primary target, then arcs to up to 3 additional targets within 6m of each other. Each must pass PHYS save for half damage."
+    },
+    {
+      "name": "Thunderclap",
+      "cost": "1 action",
+      "damage": "3d8 thunder",
+      "effect": "All creatures within 3m must pass PHYS save or be deafened and pushed 3m."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Discharge",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack with a metal weapon, the attacker takes 3d8 lightning damage."
+    },
+    {
+      "name": "Flash Step",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the elemental teleports up to 9m in a flash of lightning. The attack misses."
+    }
+  ],
+  "resistances": ["bludgeoning", "slashing", "piercing"],
+  "immunities": ["lightning", "poison"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Lightning Form",
+      "desc": "Can move through spaces as narrow as 2cm. Moves at double speed. Metal armor provides no defense bonus against this creature."
+    },
+    {
+      "name": "Charged",
+      "desc": "Creatures within 3m that are wearing metal armor take 1d8 lightning damage at the start of their turn."
+    }
+  ],
+  "lore": "Lightning Elementals are living storms compressed into a vaguely humanoid form. They crackle with barely contained energy, striking with the speed and fury of a thunderbolt. Their presence is heralded by the smell of ozone and static electricity."
+}

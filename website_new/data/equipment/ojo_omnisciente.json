@@ -1,0 +1,27 @@
+{
+  "id": "ojo_omnisciente",
+  "name": "Ojo Omnisciente",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Muy Rara",
+  "image": "ojo_omnisciente.jpg",
+  "description": "Una esfera de cristal del tamaño de una manzana con un iris dorado en su centro. Al sostenerla, puedes percibir más allá de los sentidos normales.",
+  "price": "30 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Visión Verdadera",
+      "cost": "1 acción + 2 Chi",
+      "uses": "3/día",
+      "description": "Durante 10 minutos, ves la forma verdadera de todo en 36m: invisibilidad, ilusiones, cambiaformas y puertas ocultas."
+    },
+    {
+      "name": "Escudriñar",
+      "cost": "10 minutos + 3 Chi",
+      "uses": "1/día",
+      "description": "Observas a una criatura o lugar que conozcas, sin importar la distancia, durante 10 minutos. El objetivo puede sentir la observación con WILL (CD 18)."
+    }
+  ]
+}

@@ -5,9 +5,9 @@ Vue.component('v-spellpage', {
         <h2>Hechizos</h2>
     </div>
     <!-- Divine Patron Selection -->
-    <div v-if="showDivinePatron" class="row my-2 justify-content-around"">
+    <div v-if="showDivinePatron" class="row my-2 justify-content-around">
         <b> Patrón Divino: </b>
-        <v-select-search v-bind:optionsobj="divpatrons" 
+        <v-select-search v-bind:optionsobj="divpatrons"
         v-on:selected-key="setDivinePatron($event)"></v-select-search>
     </div>
 
@@ -18,13 +18,22 @@ Vue.component('v-spellpage', {
         v-on:selected-key="setArcaneSpec($event)"></v-select-search>
     </div>
 
+    <!-- Patron Domains Selection -->
+    <div v-if="showPatronDomains" class="mb-3">
+        <b>Dominios del Patrón (elige 3):</b>
+        <div v-for="idx in 3" :key="'dom'+idx" class="my-1">
+            <v-select-search v-bind:optionsobj="domainOptions"
+            v-on:selected-key="setPatronDomain($event, idx - 1)"></v-select-search>
+        </div>
+    </div>
+
     <!-- Dynamic Spell Level Sections -->
     <div v-for="(value, key, rowIndex) in spellSections" v-if="value.slots > 0" class="mb-4">
         <h3>{{ key }} ({{ value.slots }} ranuras)</h3>
         <div v-for="(n, colIndex) in value.skill" class="mb-2">
             <v-select-search v-bind:optionsobj="value.atb[colIndex]"
             v-on:selected-key="addSpell($event, rowIndex, colIndex, n, key)"></v-select-search>
-        </div> 
+        </div>
     </div>
   </div>
     `,
@@ -44,6 +53,9 @@ Vue.component('v-spellpage', {
         arcspecs: {
             type: Object
         },
+        ranks: {
+            type: Object
+        },
         race: {
             type: Object
         },
@@ -59,8 +71,10 @@ Vue.component('v-spellpage', {
         return {
             selectedDivinePatron: {},
             selectedArcaneSpecialization: {},
-            divineRanks: ["magia-divina", "guerrero-divino", "ascendencia-abisal",
-                "ascendencia-primigenia", "ascendencia-infernal"],
+            selectedPatronDomains: [],
+            divineRanks: ["magia_divina", "guerrero_divino"],
+            ascendenciaRanks: ["ascendencia_abisal", "ascendencia_infernal",
+                "ascendencia_akhasica", "ascendencia_primigenia"],
             myspells: { ...this.basespells }
         };
     },
@@ -70,18 +84,37 @@ Vue.component('v-spellpage', {
             {
                 let arc = this.myarch[i];
                 if("modranks" in arc && arc.modranks.some(modrank => this.divineRanks.includes(modrank)))
-                    return true;                        
-            }        
+                    return true;
+            }
             return this.myranks.some(obj => this.divineRanks.includes(obj.id));
         },
         showArcaneSpecialization: function () {
             for(let i in this.myarch)
             {
                 let arc = this.myarch[i];
-                if("modranks" in arc && arc.modranks.includes("magia-de-evocacion"))
-                    return true;                        
-            }   
-            return this.myranks.some(obj => obj.id === "magia-de-evocacion")
+                if("modranks" in arc && arc.modranks.includes("magia_evocacion"))
+                    return true;
+            }
+            return this.myranks.some(obj => obj.id === "magia_evocacion")
+        },
+        showPatronDomains: function () {
+            for(let i in this.myarch)
+            {
+                let arc = this.myarch[i];
+                if("modranks" in arc && arc.modranks.some(modrank => this.ascendenciaRanks.includes(modrank)))
+                    return true;
+            }
+            return this.myranks.some(obj => this.ascendenciaRanks.includes(obj.id));
+        },
+        domainOptions: function () {
+            let options = {};
+            const magicCategories = ["Elementalismo", "Arcano", "Ocultismo", "Divino"];
+            for (let key in this.ranks) {
+                if (this.ranks[key].category && magicCategories.includes(this.ranks[key].category)) {
+                    options[key] = { name: this.ranks[key].name };
+                }
+            }
+            return options;
         },
         spellSections: function () {
             spellsect = {
@@ -96,13 +129,11 @@ Vue.component('v-spellpage', {
             }
             this.myarch.forEach(arc => {
                 if (arc.spells) {
-                    console.log("archetype has spells");
                     this.spellSwitcher(spellsect, arc.rank, arc.spells, true)
                 }
             });
             this.myranks.forEach(rank => {
                 if (rank.spells) {
-                    console.log("rank has spells");
                     this.spellSwitcher(spellsect, rank.rank, rank.spells, false)
                 }
             });
@@ -141,16 +172,19 @@ Vue.component('v-spellpage', {
         setArcaneSpec(obj) {
             this.selectedArcaneSpecialization = { id: obj, ...this.arcspecs[obj] };
         },
+        setPatronDomain(key, index) {
+            this.$set(this.selectedPatronDomains, index, key);
+        },
         getSpellOptions(cat, level, atbList, divpatron, arcanespec) {
-            console.log(level);
             options = {};
             avRanks = [];
-            if (this.divineRanks.includes(cat) && "domains" in divpatron) {
-                console.log("adding divine available ranks");
+            if (cat === 'patron-domains') {
+                avRanks = this.selectedPatronDomains.filter(d => d);
+            }
+            else if (this.divineRanks.includes(cat) && "domains" in divpatron) {
                 avRanks = divpatron.domains;
             }
-            else if (cat === 'magia-de-evocacion' && "magics" in arcanespec) {
-                console.log("adding arcane available ranks");
+            else if (cat === 'magia_evocacion' && "magics" in arcanespec) {
                 avRanks = arcanespec.magics;
             }
             else {
@@ -158,7 +192,10 @@ Vue.component('v-spellpage', {
             }
             for (let i of Object.keys(atbList)) {
                 atb = atbList[i];
-                if (avRanks.includes(atb.skill) && atb.rank == level) {
+                let skillMatch = avRanks.includes(atb.skill);
+                let rankMatch = atb.rank == level;
+                let notPassive = cat === 'patron-domains' ? atb.type !== 'Pasiva' : true;
+                if (skillMatch && rankMatch && notPassive) {
                     this.$set(options, i, atb);
                 }
             }
@@ -168,14 +205,13 @@ Vue.component('v-spellpage', {
             const key = `spell${x}${y}`;
             let atb = {...this.attributes[spell]};
             atb.skill = cat;
-            if(atb.skill == "magia-divina")
+            if(atb.skill == "magia_divina")
                 atb.tags += ", Divina";
-            if(atb.skill == "magia-de-evocacion")
+            if(atb.skill == "magia_evocacion")
                 atb.tags += ", Arcana";
             if(this.spellSections[spkey].isFree[y])
                 atb = this.$root.updateCostAndUses(atb);
             this.$set(this.myspells, key, atb);
-            console.log("added spell" + spell)
             this.$emit('update-myspells', this.myspells);
         },
     },

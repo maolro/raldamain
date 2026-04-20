@@ -1,0 +1,77 @@
+{
+  "id": "ki_rin",
+  "name": "Ki-rin",
+  "level": 12,
+  "type": "celestial",
+  "size": "Huge",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+1d6",
+    "WILL": "+11+3d6",
+    "MIND": "+11+3d6"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 17,
+    "general": 13
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": "+11+3d6",
+  "actions": [
+    {
+      "name": "Horn Gore",
+      "cost": "1 action",
+      "damage": "5d8 piercing + radiant",
+      "effect": null
+    },
+    {
+      "name": "Call Lightning",
+      "cost": "2 actions",
+      "damage": "5d8 lightning + radiant",
+      "effect": "A bolt of divine lightning strikes a point within 36m. All creatures in a 3m radius must pass PHYS save for half. Can be repeated each turn for 1 minute as a 1-action cost."
+    },
+    {
+      "name": "Celestial Restoration",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "All allies within 12m heal 4d8 HP and are cured of one condition. Usable twice per encounter."
+    },
+    {
+      "name": "Create Weather",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Ki-rin controls the weather within 5km. Can create storms, clear skies, fog, or other weather conditions."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Aegis of the Divine",
+      "cost": "1 reaction",
+      "effect": "When an ally within 18m would be reduced to 0 HP, the Ki-rin can prevent the damage entirely. The ally instead has 1 HP. Usable once per encounter."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+3d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["radiant"],
+  "immunities": ["poison", "charm", "frightened"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Legendary Resistance",
+      "desc": "If the Ki-rin fails a save, it can choose to succeed instead. Usable twice per encounter."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Can cast Dispel Magic, Remove Curse, and Greater Restoration at will."
+    },
+    {
+      "name": "Sacred Presence",
+      "desc": "Undead and fiends cannot willingly approach within 9m of the Ki-rin unless they pass a WILL save."
+    }
+  ],
+  "lore": "Ki-rin are magnificent dragon-horses of celestial origin, regarded as omens of good fortune and divine favor. They control the weather and command powerful divine magic. Ancient temples are often built where a Ki-rin was sighted, and their appearance heralds great events."
+}

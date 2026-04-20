@@ -1,0 +1,58 @@
+{
+  "id": "needle_blight",
+  "name": "Needle Blight",
+  "level": 4,
+  "type": "plant",
+  "size": "Medium",
+  "hp": 12,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "3d6 slashing",
+      "effect": null
+    },
+    {
+      "name": "Needles",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": "Ranged attack at medium range. Fires a volley of sharp pine needles."
+    },
+    {
+      "name": "Needle Storm",
+      "cost": "2 actions",
+      "damage": "3d6 piercing",
+      "effect": "All creatures in a 6m cone are peppered with needles. PHYS save for half damage."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Needle Shield",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the attacker takes 1d6 piercing from the Needle Blight's sharp body."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While motionless, the Needle Blight is indistinguishable from a dead conifer."
+    }
+  ],
+  "lore": "Needle Blights are ambulatory pine trees animated by dark magic. They serve as the ranged fighters of blight groups, showering victims with volleys of razor-sharp needles while their Vine and Twig cousins close to melee range."
+}

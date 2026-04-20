@@ -1,0 +1,62 @@
+{
+  "id": "water_elemental",
+  "name": "Water Elemental",
+  "level": 6,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 20,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Slam",
+      "cost": "1 action",
+      "damage": "4d6 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Whelm",
+      "cost": "2 actions",
+      "damage": "4d6 bludgeoning",
+      "effect": "The elemental engulfs a creature of Medium size or smaller. Target must pass PHYS save or be grappled and restrained inside the elemental. While engulfed, the target takes 2d6 bludgeoning at the start of each turn and cannot breathe."
+    },
+    {
+      "name": "Tidal Wave",
+      "cost": "2 actions",
+      "damage": "3d6 bludgeoning",
+      "effect": "A wave crashes over a 6m wide, 3m long area. All targets must pass PHYS save or be knocked prone and pushed 3m."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Fluid Form",
+      "cost": "1 reaction",
+      "effect": "When hit by a physical attack, the elemental's body parts around the weapon. Reduces physical damage taken by 1d6+2."
+    }
+  ],
+  "resistances": ["fire"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["cold", "lightning"],
+  "traits": [
+    {
+      "name": "Water Form",
+      "desc": "Can enter a hostile creature's space and stop there. Can squeeze through any opening that water can pass through."
+    },
+    {
+      "name": "Freeze",
+      "desc": "If the elemental takes cold damage, it partially freezes and its speed is reduced by half until end of its next turn."
+    }
+  ],
+  "lore": "Water Elementals are living masses of churning water given form and purpose. They crash over their foes like waves, engulfing and drowning anything that stands in their way."
+}

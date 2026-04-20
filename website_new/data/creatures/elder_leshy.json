@@ -1,0 +1,81 @@
+{
+  "id": "elder_leshy",
+  "name": "Elder Leshy",
+  "level": 14,
+  "type": "plant",
+  "size": "Large",
+  "hp": 45,
+  "shields": 4,
+  "saves": {
+    "PHYS": "+13+2d6",
+    "WILL": "+13+3d6",
+    "MIND": "+13+3d6"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 18,
+    "general": 14
+  },
+  "attackRoll": "+13+2d6",
+  "magicRoll": "+13+3d6",
+  "actions": [
+    {
+      "name": "Nature's Wrath",
+      "cost": "1 action",
+      "damage": "4d10 bludgeoning + nature",
+      "effect": "Vines, roots, and branches erupt to strike a target within 18m."
+    },
+    {
+      "name": "Command Forest",
+      "cost": "2 actions",
+      "damage": "4d10 bludgeoning",
+      "effect": "All trees within 30m animate and attack. All enemies in the area must pass PHYS save or take damage and be restrained by branches."
+    },
+    {
+      "name": "Wild Surge",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "The Elder Leshy channels primal nature magic. Choose one: summon 2d4 animal allies (wolves, bears, or eagles), heal all plant allies within 18m for 5d10 HP, or transform the terrain in a 30m radius into dense forest."
+    },
+    {
+      "name": "Wither",
+      "cost": "1 action",
+      "damage": "4d10 necrotic",
+      "effect": "Ranged magical attack. The target ages rapidly. WILL save or have -2 to all physical stats for 1 minute."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Nature's Shield",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, trees and vegetation interpose. Reduces damage by 4d10."
+    },
+    {
+      "name": "Legendary Resistance",
+      "cost": "1 reaction",
+      "effect": "When the Elder Leshy fails a save, it can choose to succeed instead. Usable twice per encounter."
+    }
+  ],
+  "resistances": ["cold", "bludgeoning", "piercing", "slashing"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Lord of the Forest",
+      "desc": "All plants and animals within 1km obey the Elder Leshy's commands. It is always aware of every creature in its domain."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Regains 10 HP at the start of each turn while in a natural environment. Fire damage prevents this for 1 round."
+    },
+    {
+      "name": "Shapechanger",
+      "desc": "Can assume the form of any plant, animal, or humanoid. Stats remain the same."
+    },
+    {
+      "name": "Nature's Memory",
+      "desc": "The Elder Leshy has perfect knowledge of everything that has happened in its forest for the past thousand years."
+    }
+  ],
+  "lore": "Elder Leshies are ancient spirit-plants that have existed since the dawn of the world. They are the supreme rulers of primeval forests, commanding all living things within their domain. They rarely reveal themselves, preferring to act through the forest itself, but when roused to anger, entire forests rise to destroy the intruder."
+}

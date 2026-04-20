@@ -1,0 +1,62 @@
+{
+  "id": "owlbear",
+  "name": "Owlbear",
+  "level": 6,
+  "type": "monster",
+  "size": "Large",
+  "hp": 20,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+2d6",
+    "WILL": "+2",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 11,
+    "magical": 7,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Beak",
+      "cost": "1 action",
+      "damage": "4d6 piercing",
+      "effect": null
+    },
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "4d6 slashing",
+      "effect": "On a critical hit, the target bleeds for 1d6 at the start of each turn until healed."
+    },
+    {
+      "name": "Ferocious Charge",
+      "cost": "2 actions",
+      "damage": "5d6 bludgeoning + slashing",
+      "effect": "The Owlbear charges up to 12m and attacks. Target must pass PHYS save or be knocked prone and grappled."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Savage Retaliation",
+      "cost": "1 reaction",
+      "effect": "When reduced below half HP, the Owlbear can immediately make a Claws attack against an adjacent enemy."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Keen Senses",
+      "desc": "+2d6 to perception checks. Cannot be surprised."
+    },
+    {
+      "name": "Aggressive",
+      "desc": "As a free action, the Owlbear can move up to its speed toward a hostile creature it can see."
+    }
+  ],
+  "lore": "Owlbears are ferocious predators with the body of a bear and the head of an owl. They are fiercely territorial, attacking anything that enters their domain with relentless aggression. Some believe they were created by a mad wizard's experiment."
+}

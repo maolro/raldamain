@@ -1,0 +1,13 @@
+{
+  "id": "maza",
+  "name": "Maza",
+  "type": "Arma",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "maza.jpg",
+  "description": "Una cabeza de metal pesada montada sobre un mango corto de madera reforzada. Ideal contra enemigos acorazados.",
+  "damage": "1d6 + FUE",
+  "damageType": "Contundente",
+  "price": "0 CR",
+  "range": "Cuerpo a cuerpo"
+}

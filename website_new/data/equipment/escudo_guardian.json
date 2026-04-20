@@ -1,0 +1,19 @@
+{
+  "id": "escudo_guardian",
+  "name": "Escudo Guardián",
+  "type": "Armadura Mágica",
+  "subtype": "Escudo",
+  "rarity": "Poco Común",
+  "image": "escudo_guardian.jpg",
+  "description": "Un escudo de acero con un ojo grabado en su centro que brilla tenuemente. Reacciona ante amenazas antes de que el portador las perciba.",
+  "defense": "2",
+  "price": "4 CR",
+  "abilities": [
+    {
+      "name": "Proteger Aliado",
+      "cost": "1 reacción",
+      "uses": "Ilimitado",
+      "description": "Cuando un aliado adyacente recibe un ataque, puedes interponer el escudo, otorgándole tu DEF de escudo para esa tirada."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "chain_devil",
+  "name": "Chain Devil",
+  "level": 10,
+  "type": "devil",
+  "size": "Medium",
+  "hp": 35,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+1d6",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 12,
+    "general": 10
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Animate Chains",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning + piercing",
+      "effect": "Up to 2 chains within 18m animate and attack different targets. Each target must pass PHYS save or be grappled and restrained by the chain."
+    },
+    {
+      "name": "Chain Lash",
+      "cost": "1 action",
+      "damage": "4d8 slashing",
+      "effect": "Reach attack up to 6m."
+    },
+    {
+      "name": "Unnerving Mask",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Chain Devil's face shifts to resemble a loved one of the target. Target must pass WILL save or be frightened and stunned for 1 round."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Chain Shield",
+      "cost": "1 reaction",
+      "effect": "Wraps chains around itself defensively. +4 to all defenses against one attack."
+    },
+    {
+      "name": "Chain Snare",
+      "cost": "1 reaction",
+      "effect": "When a creature within 6m tries to move away, a chain lashes out. Target must pass PHYS save or be unable to move."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    },
+    {
+      "name": "Chain Master",
+      "desc": "Any chains within 18m of the Chain Devil are treated as its weapons. It can control up to 4 chains simultaneously."
+    }
+  ],
+  "lore": "Chain Devils are the torturers and jailers of the Nine Hells. They are draped in animate chains that they control telekinetically, and their faces shift to show the visages of those their victims love, weaponizing grief and terror."
+}

@@ -28,9 +28,9 @@
           ],
           "cost": "1 acción",
           "range": "Cuerpo a cuerpo",
-          "crit": "El objetivo quedará fatigado hasta que se recupere.",
+          "crit": "El objetivo queda fatigado hasta que se recupere.",
           "duration": "Instantáneo",
-          "desc": "Drenas energía vital (CON vs Nigromancia). Daño 1d6 + Rango Necrótico. Reduce Vitalidad y PV máximos (Aflicción nivel 1).",
+          "desc": "Realizas un ataque de toque. El objetivo debe superar un tiro de salvación de CON o sufre 1d6 + Rango daño Necrótico. Además, reduce su Vitalidad y PV máximos (Aflicción nivel 1).",
           "empower": "Aumenta el alcance a medio."
         },
         {
@@ -43,9 +43,9 @@
           ],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "El afectado quedará fatigado hasta que se recupere.",
+          "crit": "El afectado queda fatigado hasta que se recupere.",
           "duration": "Instantáneo",
-          "desc": "Rayo de antienergía. Ataque a distancia (1d6 + Rango Necrótico). Reduce Vitalidad y PV máximos (Aflicción nivel 1).",
+          "desc": "Lanzas un rayo de energía negativa a distancia. Inflige 1d6 + Rango daño Necrótico y reduce la Vitalidad y PV máximos del objetivo (Aflicción nivel 1).",
           "empower": "Afecta a una criatura adicional a distancia media."
         },
         {
@@ -54,7 +54,7 @@
             "Nigromancia",
             "Pasiva"
           ],
-          "desc": "Resistencia a Aflicciones y efectos Necróticos. Vulnerabilidad a Radiante. No-muertos no son hostiles. Si ya eres no-muerto: pierdes vulnerabilidad y ganas Resistencia Arcano/Divino."
+          "desc": "Obtienes Resistencia a Aflicciones y efectos Necróticos, pero adquieres Vulnerabilidad a daño Radiante. Los no-muertos no son hostiles hacia ti. Si ya eres un no-muerto, pierdes la Vulnerabilidad a Radiante y en su lugar obtienes Resistencia a efectos Arcanos y Divinos."
         }
       ]
     },
@@ -73,8 +73,8 @@
           "cost": "3 acciones, 1 chi",
           "range": "Cuerpo a cuerpo",
           "duration": "Concentración",
-          "desc": "Ligas tu vida a otra criatura (CON vs Nigromancia). Transfieres la mitad de tu daño recibido a ella. Puedes lanzar hechizos de Toque a través del vínculo.",
-          "empower": "Transfieres una herida permanente o efecto negativo a la criatura vinculada."
+          "desc": "Ligas tu vida a otra criatura (tiro de salvación de CON contra tu Nigromancia). Transfieres la mitad del daño que recibes a la criatura vinculada. Además, puedes lanzar hechizos de Toque a través del vínculo.",
+          "empower": "Transfieres una herida permanente o efecto negativo propio a la criatura vinculada."
         },
         {
           "name": "Animar No-muerto",
@@ -85,8 +85,8 @@
           "cost": "3 acciones, 1 chi",
           "range": "Medio",
           "duration": "Permanente",
-          "desc": "Levantas un Zombi o Esqueleto. Máximo (Rango x 3) controlados. Puedes lanzar hechizos de Toque desde su posición o sacrificarlos para evitar daño.",
-          "empower": "Anima dos no-muertos adicionales."
+          "desc": "Levantas un cadáver como Zombi o Esqueleto bajo tu control. Puedes controlar un máximo de Rango x 3 no-muertos simultáneamente. Puedes lanzar hechizos de Toque desde la posición de un no-muerto controlado o sacrificarlo para evitar daño que recibirías.",
+          "empower": "Animas dos no-muertos adicionales."
         },
         {
           "name": "Maldición Vampírica",
@@ -98,8 +98,8 @@
           "cost": "1 acción, 1 chi",
           "range": "Toque",
           "duration": "Hasta que sea eliminada",
-          "desc": "Marca al enemigo (CON vs Nigromancia). Recuperas Vitalidad igual a la mitad del daño Necrótico que le inflijas.",
-          "empower": "Afecta a un objetivo adicional o reduce nivel de herida/aflicción propia al herir."
+          "desc": "Marcas a un enemigo con una maldición vampírica (tiro de salvación de CON contra tu Nigromancia). Mientras la maldición persista, recuperas Vitalidad igual a la mitad del daño Necrótico que le inflijas.",
+          "empower": "Afecta a un objetivo adicional o reduce el nivel de una herida o aflicción propia cada vez que lo hieres."
         }
       ]
     },
@@ -114,7 +114,7 @@
             "Nigromancia",
             "Pasiva"
           ],
-          "desc": "Adoptas rasgos de no-muerto (ej: veneno de Gul, toque de Momia, sugestión de Vampiro, defensa de Esqueleto/Zombi)."
+          "desc": "Adoptas rasgos de un tipo de no-muerto a tu elección. Ejemplos: veneno de Gul, toque de Momia, sugestión de Vampiro o defensas de Esqueleto o Zombi."
         },
         {
           "name": "Tormenta de Energía Negativa",
@@ -128,7 +128,7 @@
           "area": "Radio corto",
           "crit": "Los afectados quedan fatigados hasta que se recuperen.",
           "duration": "Instantáneo",
-          "desc": "Explosión de 2d8 + CAR Necrótico (mitad si salva). Reduce Vit/PV máximos. Cura a no-muertos (Rango + 2).",
+          "desc": "Liberas una explosión de energía negativa que inflige 2d8 + CAR daño Necrótico (mitad en caso de éxito en el tiro de salvación). Reduce la Vitalidad y PV máximos de los afectados. Los no-muertos aliados en el área se curan Rango + 2 Vitalidad en lugar de recibir daño.",
           "empower": "Aumenta el área a radio medio."
         },
         {
@@ -141,8 +141,8 @@
           "cost": "2 acciones, 2 chi",
           "area": "Radio medio",
           "duration": "Concentración",
-          "desc": "Ventaja en Nigromancia en el área. Impide sanación enemiga. Cuenta como Tierra consagrada para no-muertos.",
-          "empower": "Siguiente hechizo de Nigromancia cuesta -1 acción."
+          "desc": "Generas un aura de energía negativa. Obtienes Ventaja en tiros de Nigromancia dentro del área. Los enemigos no pueden recibir sanación mientras permanezcan en ella. Cuenta como Tierra Consagrada para no-muertos.",
+          "empower": "Tu siguiente hechizo de Nigromancia cuesta -1 acción."
         }
       ]
     },
@@ -159,8 +159,8 @@
           "cost": "3 acciones, 2 chi",
           "range": "Medio",
           "duration": "Permanente",
-          "desc": "Crea un no-muerto inteligente y poderoso (Nivel <= Rango x 2). Máximo 1 por Rango controlado.",
-          "empower": "Anima un cadáver adicional como no-muerto superior."
+          "desc": "Creas un no-muerto inteligente y poderoso con un Nivel máximo igual a Rango x 2. Puedes controlar un máximo de 1 no-muerto superior por Rango.",
+          "empower": "Animas un cadáver adicional como no-muerto superior."
         },
         {
           "name": "Cadenas de la Muerte",
@@ -171,8 +171,8 @@
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "Vínculo con hasta 4 no-muertos propios. Distribuyes el daño que recibas entre ellos.",
-          "empower": "Vincula un no-muerto adicional."
+          "desc": "Estableces un vínculo con hasta 4 no-muertos bajo tu control. Puedes distribuir el daño que recibas entre los no-muertos vinculados.",
+          "empower": "Vinculas un no-muerto adicional."
         },
         {
           "name": "Enervación",
@@ -182,9 +182,9 @@
             "Mejora"
           ],
           "cost": "2 chi",
-          "crit": "Aumenta el nivel del efecto por un paso.",
+          "crit": "Aumenta el nivel del efecto un paso.",
           "duration": "Hasta que sea eliminada",
-          "desc": "Maldice al impactar con daño Necrótico. Impide sanación y la sanación hiere. Empeora cada día/daño (Fatiga -> Exhausto -> Control Mental -> Muerte/Zombi).",
+          "desc": "Al impactar con daño Necrótico, puedes maldecir al objetivo con Enervación. La maldición impide toda sanación y convierte los intentos de curación en daño. El efecto empeora con el paso de los días o al recibir daño adicional: Fatiga, Exhausto, Control Mental y finalmente Muerte (el cadáver se levanta como Zombi).",
           "empower": "N/A"
         }
       ]
@@ -204,7 +204,7 @@
           "cost": "1 acción, 3 chi",
           "range": "Toque",
           "duration": "Instantáneo",
-          "desc": "Corrompe alma (CON vs Nigromancia). 3d10 + CAR Necrótico + Enervación. Si mata (0 PV), transforma en no-muerto instantáneo.",
+          "desc": "Corrompes el alma del objetivo (tiro de salvación de CON contra tu Nigromancia). Inflige 3d10 + CAR daño Necrótico y aplica Enervación. Si reduces al objetivo a 0 PV, se transforma instantáneamente en un no-muerto bajo tu control.",
           "empower": "Afectas a una criatura adicional."
         },
         {
@@ -213,24 +213,24 @@
             "Nigromancia",
             "Pasiva"
           ],
-          "desc": "Inmunidad Necrótico. El daño Necrótico te cura. Difícil de matar (sigue luchando en negativo hasta PV neg > CAR).",
+          "desc": "Obtienes Inmunidad a daño Necrótico. El daño Necrótico que recibirías te cura en su lugar. Cuando caes a 0 PV o menos, sigues luchando hasta que tus PV negativos superen tu CAR.",
           "empower": "N/A"
         },
         {
           "name": "Nube de Aniquilación",
           "tags": [
             "Nigromancia",
-            "Necrótica",
+            "Necrótico",
             "Gaseosa",
             "Duradera"
           ],
           "cost": "2 acciones, 3 chi",
           "range": "Medio",
           "area": "Esfera mediana",
-          "crit": "Los afectados aumentan nivel de Enervación un paso.",
+          "crit": "Los afectados aumentan el nivel de Enervación un paso.",
           "duration": "Concentración",
-          "desc": "Nube que otorga ocultamiento. Al entrar/empezar turno: 1d10 + CAR Necrótico + Enervación. Muerte en la nube crea no-muertos.",
-          "empower": "Aumenta tamaño o daño (2d10 + CAR)."
+          "desc": "Creas una nube de energía negativa que otorga ocultamiento. Cada criatura que entre o empiece su turno dentro sufre 1d10 + CAR daño Necrótico y Enervación. Las criaturas que mueran dentro de la nube se levantan como no-muertos bajo tu control.",
+          "empower": "Aumenta el tamaño de la nube un paso o el daño a 2d10 + CAR."
         }
       ]
     },
@@ -246,13 +246,13 @@
             "Ataque",
             "Área",
             "Duradera",
-            "Necrótica"
+            "Necrótico"
           ],
           "cost": "3 acciones, 5 chi",
           "area": "Radio grande",
           "crit": "Los afectados sufren maldición de Enervación.",
           "duration": "Siete rondas",
-          "desc": "Ataque inicial 3d10 + CAR (mata -> zombi). Sobrecarga: Ventaja Nigromancia, No-muertos regeneran y ganan buffs, muertos reviven como zombis al instante, vivos sufren 1d10 + CAR daño/turno.",
+          "desc": "Desatas un apocalipsis necrótico. El ataque inicial inflige 3d10 + CAR daño Necrótico (las criaturas reducidas a 0 PV se levantan como Zombis). Durante la sobrecarga: obtienes Ventaja en tiros de Nigromancia, los no-muertos aliados regeneran y obtienen mejoras, las criaturas que mueran reviven como Zombis al instante y los vivos sufren 1d10 + CAR daño Necrótico al inicio de cada turno.",
           "empower": "N/A"
         }
       ]

@@ -1,0 +1,21 @@
+{
+  "id": "pocion_velocidad",
+  "name": "Poción de Velocidad",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Poco Común",
+  "image": "pocion_velocidad.jpg",
+  "description": "Un líquido plateado que se mueve dentro del frasco como mercurio vivo. Al beberla, el mundo parece ralentizarse.",
+  "price": "1 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Celeridad",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Durante 1 minuto, tu velocidad se duplica y ganas 1 acción adicional por turno (solo para movimiento o ataques con arma)."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "basilisk",
+  "name": "Basilisk",
+  "level": 6,
+  "type": "monster",
+  "size": "Medium",
+  "hp": 18,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+2",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 7,
+    "general": 6
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "4d6 piercing + poison",
+      "effect": null
+    },
+    {
+      "name": "Petrifying Gaze",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One creature within 9m that can see the Basilisk must pass PHYS save or begin turning to stone (restrained). At end of their next turn, they must pass another PHYS save or be petrified permanently."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Reflexive Gaze",
+      "cost": "1 reaction",
+      "effect": "When a creature enters melee range while looking at the Basilisk, it must immediately pass PHYS save or be restrained (beginning petrification)."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Petrifying Gaze Aura",
+      "desc": "Any creature starting its turn within 9m of the Basilisk and able to see its eyes must pass PHYS save or be restrained. Creatures can avert their eyes to avoid the save but attack with -1d6."
+    },
+    {
+      "name": "Mirror Vulnerability",
+      "desc": "If the Basilisk sees its own reflection within 9m, it must make its own PHYS save or be petrified."
+    }
+  ],
+  "lore": "Basilisks are eight-legged reptiles whose gaze can turn living creatures to stone. Their lairs are often surrounded by eerily lifelike statues - the petrified remains of their previous victims. Clever adventurers carry mirrors to turn the beast's power against it."
+}

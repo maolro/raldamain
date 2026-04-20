@@ -1,0 +1,21 @@
+{
+  "id": "pocion_vigor",
+  "name": "Poción de Vigor",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Común",
+  "image": "pocion_vigor.jpg",
+  "description": "Un líquido ámbar burbujeante que sabe a miel y especias. Restaura la energía del cuerpo casi al instante.",
+  "price": "1/3 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Restaurar Vigor",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Recuperas 3 puntos de Vigor o Chi inmediatamente."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "mummy",
+  "name": "Mummy",
+  "level": 8,
+  "type": "undead",
+  "size": "Medium",
+  "hp": 28,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+1d6",
+    "WILL": "+9+1d6",
+    "MIND": "+5"
+  },
+  "defenses": {
+    "physical": 13,
+    "magical": 9,
+    "general": 8
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": "+9+1d6",
+  "actions": [
+    {
+      "name": "Rotting Fist",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning + necrotic",
+      "effect": "Target must pass WILL save or be afflicted with Mummy Rot: cursed, cannot regain HP, and max HP decreases by 2d8 every 24 hours. Requires Remove Curse to end."
+    },
+    {
+      "name": "Dreadful Glare",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One target within 18m must pass WILL save or be frightened for 1 round. If the save fails by 5 or more, the target is paralyzed instead."
+    },
+    {
+      "name": "Bandage Grasp",
+      "cost": "1 action",
+      "damage": "3d8 bludgeoning",
+      "effect": "Ranged attack. Mummy wrappings extend to grapple a target within 6m. Target is restrained until escape."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Undying Will",
+      "cost": "1 reaction",
+      "effect": "When the Mummy would be reduced to 0 HP, it can instead drop to 1 HP. Usable once per encounter."
+    },
+    {
+      "name": "Cursed Retaliation",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the attacker must pass WILL save or have -1d6 to their next attack roll as the mummy's curse weakens them."
+    }
+  ],
+  "resistances": ["necrotic", "bludgeoning", "slashing", "piercing"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Rejuvenation",
+      "desc": "If the Mummy's heart (hidden in its sarcophagus) is intact, a destroyed Mummy reforms in 24 hours with full HP."
+    },
+    {
+      "name": "Fire Vulnerability",
+      "desc": "The Mummy's dry wrappings catch fire easily. Fire damage ignores its physical defense entirely."
+    }
+  ],
+  "lore": "Mummies are the preserved corpses of ancient rulers and priests, bound to guard their tombs for eternity by powerful rituals. Their curse can wither the living, and their glare can freeze the bravest warriors with supernatural dread."
+}

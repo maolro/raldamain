@@ -1,0 +1,28 @@
+{
+  "id": "escudo_absorcion",
+  "name": "Escudo de Absorción",
+  "type": "Armadura Mágica",
+  "subtype": "Escudo",
+  "rarity": "Muy Rara",
+  "image": "escudo_absorcion.jpg",
+  "description": "Un escudo de cristal negro translúcido que absorbe la energía de los ataques. Cada impacto lo hace brillar más intensamente.",
+  "defense": "2",
+  "price": "25 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Absorber Energía",
+      "cost": "1 reacción",
+      "uses": "Ilimitado",
+      "description": "Cuando recibes daño mágico, puedes usar tu reacción para absorber hasta 2d10 de ese daño. La energía se almacena."
+    },
+    {
+      "name": "Liberar Energía",
+      "cost": "1 acción",
+      "uses": "Ilimitado",
+      "description": "Liberas toda la energía almacenada como un rayo en línea de 9m. Inflige daño igual al total absorbido (máximo 30). Resetea el almacenamiento."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "ice_devil",
+  "name": "Ice Devil",
+  "level": 14,
+  "type": "devil",
+  "size": "Large",
+  "hp": 48,
+  "shields": 4,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+2d6"
+  },
+  "defenses": {
+    "physical": 19,
+    "magical": 16,
+    "general": 14
+  },
+  "attackRoll": "+13+3d6",
+  "magicRoll": "+13+2d6",
+  "actions": [
+    {
+      "name": "Ice Spear",
+      "cost": "1 action",
+      "damage": "5d10 piercing + cold",
+      "effect": "Target must pass PHYS save or have their movement reduced to 0 until end of their next turn as ice encases their limbs."
+    },
+    {
+      "name": "Tail",
+      "cost": "1 action",
+      "damage": "4d10 bludgeoning + cold",
+      "effect": "Target must pass PHYS save or be knocked prone."
+    },
+    {
+      "name": "Wall of Ice",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Creates a 30m long, 3m high, 30cm thick wall of ice. Creatures in the wall's path take 5d10 cold damage (PHYS save for half). The wall has 30 HP per section and provides total cover."
+    },
+    {
+      "name": "Freezing Aura",
+      "cost": "1 action",
+      "damage": "3d10 cold",
+      "effect": "All creatures within 6m. PHYS save for half. The ground in the area becomes difficult terrain (ice)."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Ice Shield",
+      "cost": "1 reaction",
+      "effect": "Creates a shield of ice, reducing damage from one attack by 3d10."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+3d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": [],
+  "immunities": ["fire", "cold", "poison"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    },
+    {
+      "name": "Tactical Commander",
+      "desc": "All devil allies within 18m gain +2 to all defenses. The Ice Devil can telepathically coordinate allies within 36m."
+    },
+    {
+      "name": "Frozen Aura",
+      "desc": "The temperature drops drastically within 9m of the Ice Devil. Non-cold-resistant creatures in this area have -1d6 to PHYS saves."
+    }
+  ],
+  "lore": "Ice Devils are the generals of Hell's armies, commanding legions with cold, calculating precision. They dwell in the frozen wastes of Stygia, surrounded by endless glaciers. Their tactical brilliance is matched only by their ruthless cruelty."
+}

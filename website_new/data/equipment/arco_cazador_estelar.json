@@ -1,0 +1,26 @@
+{
+  "id": "arco_cazador_estelar",
+  "name": "Arco del Cazador Estelar",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial a Distancia",
+  "rarity": "Muy Rara",
+  "image": "arco_cazador_estelar.jpg",
+  "description": "Un arco tallado en madera de un árbol celestial, con la cuerda hecha de luz solidificada. Las flechas brillan como estrellas fugaces.",
+  "damage": "1d10 + DES + 2d6 radiante",
+  "damageType": "Perforante + Radiante",
+  "price": "25 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>",
+    "<b>Infalible:</b> Puedes ver e impactar criaturas invisibles o en cobertura parcial sin penalización"
+  ],
+  "abilities": [
+    {
+      "name": "Lluvia de Estrellas",
+      "cost": "2 acciones + 3 Chi",
+      "uses": "1/día",
+      "description": "Disparas una ráfaga de flechas luminosas. Hasta 6 objetivos dentro de 18m reciben 2d10 radiante cada uno (no requiere tirada de ataque)."
+    }
+  ]
+}

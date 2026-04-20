@@ -1,0 +1,56 @@
+{
+  "id": "magmin",
+  "name": "Magmin",
+  "level": 4,
+  "type": "elemental",
+  "size": "Small",
+  "hp": 14,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Fire Touch",
+      "cost": "1 action",
+      "damage": "3d6 fire",
+      "effect": "Flammable objects touched ignite."
+    },
+    {
+      "name": "Ember Spit",
+      "cost": "1 action",
+      "damage": "2d6 fire",
+      "effect": "Ranged attack. Target catches fire, taking 1d6 fire at the start of each turn until they spend 1 action to extinguish."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Death Burst",
+      "cost": "1 reaction",
+      "effect": "When the Magmin is reduced to 0 HP, it explodes. All creatures within 3m take 3d6 fire damage (PHYS save for half). Flammable objects in the area ignite."
+    }
+  ],
+  "resistances": [],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["cold"],
+  "traits": [
+    {
+      "name": "Ignited Illumination",
+      "desc": "The Magmin sheds bright light in a 3m radius and dim light for an additional 3m."
+    },
+    {
+      "name": "Heated Body",
+      "desc": "Any creature that touches the Magmin or hits it with a melee attack from within reach takes 1d6 fire damage."
+    }
+  ],
+  "lore": "Magmins are small, impish fire elementals composed of hardened magma with a molten core. They are gleefully destructive, setting everything they can reach ablaze. When they die, they go out with a bang."
+}

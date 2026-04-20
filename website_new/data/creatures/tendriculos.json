@@ -1,0 +1,68 @@
+{
+  "id": "tendriculos",
+  "name": "Tendriculos",
+  "level": 10,
+  "type": "plant",
+  "size": "Huge",
+  "hp": 38,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 10,
+    "general": 9
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "5d8 piercing + acid",
+      "effect": "Target must pass PHYS save or be grappled in the Tendriculos's maw."
+    },
+    {
+      "name": "Swallow",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Swallows a grappled Medium or smaller creature. Swallowed creatures take 4d8 acid damage at the start of each turn and are blinded/restrained. If the Tendriculos takes 15 damage from inside, it regurgitates."
+    },
+    {
+      "name": "Vine Slam",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning",
+      "effect": "Reach attack at 6m. Target must pass PHYS save or be knocked prone."
+    },
+    {
+      "name": "Vine Drag",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Two vine tendrils lash out at targets within 9m. Each must pass PHYS save or be pulled to adjacent range and grappled."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Regeneration",
+      "cost": "1 reaction",
+      "effect": "At the end of any turn, the Tendriculos regains 5 HP if it has at least 1 HP. Fire or acid damage prevents this for 1 round."
+    }
+  ],
+  "resistances": ["bludgeoning", "piercing"],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Regeneration",
+      "desc": "The Tendriculos regains 5 HP at the start of each turn. This regeneration stops for 1 round after taking fire damage."
+    },
+    {
+      "name": "Acid Digestion",
+      "desc": "Creatures swallowed by the Tendriculos are digested. If a creature dies inside, it is completely dissolved and cannot be resurrected without powerful magic."
+    }
+  ],
+  "lore": "Tendriculoses are massive, carnivorous plants with gaping maws ringed by acidic teeth. They lurk in dense jungles and overgrown ruins, dragging prey into their gullet with vine tentacles. Their regenerative abilities make them nearly impossible to kill without fire."
+}

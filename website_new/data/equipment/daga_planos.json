@@ -1,0 +1,31 @@
+{
+  "id": "daga_planos",
+  "name": "Daga de los Planos",
+  "type": "Arma Mágica",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Muy Rara",
+  "image": "daga_planos.jpg",
+  "description": "Una daga cuya hoja parece estar en varios lugares a la vez. Al moverse, deja estelas que muestran otros planos de existencia.",
+  "damage": "1d6 + DES + 1d8 arcano",
+  "damageType": "Perforante + Arcano",
+  "price": "20 CR",
+  "range": "Cuerpo a cuerpo o arrojadiza (distancia media)",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Interplanar:</b> Los ataques con esta daga afectan a criaturas etéreas e incorpóreas normalmente"
+  ],
+  "abilities": [
+    {
+      "name": "Corte Dimensional",
+      "cost": "1 acción + 2 Chi",
+      "uses": "2/día",
+      "description": "Cortas el tejido entre planos. Te teleportas hasta 9m y haces un ataque al aparecer con Ventaja. Si impacta, inflige 3d8 arcano adicional."
+    },
+    {
+      "name": "Destierro",
+      "cost": "2 acciones + 3 Chi",
+      "uses": "1/día",
+      "description": "Apuñalas a un objetivo que debe superar WILL (CD 18) o ser desterrado a un semiplano vacío durante 1 minuto. Al volver, aparece en el mismo lugar."
+    }
+  ]
+}

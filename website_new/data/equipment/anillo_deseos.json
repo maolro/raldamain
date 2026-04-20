@@ -1,0 +1,28 @@
+{
+  "id": "anillo_deseos",
+  "name": "Anillo de los Deseos",
+  "type": "Objeto Mágico",
+  "subtype": "Anillo",
+  "rarity": "Legendaria",
+  "image": "anillo_deseos.jpg",
+  "description": "Un anillo de oro puro sin adornos que brilla con todos los colores del espectro. En su interior está inscrita una única palabra en el idioma de la creación.",
+  "price": "200 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Deseo",
+      "cost": "1 acción",
+      "uses": "1d4 cargas (no recargables)",
+      "description": "Puedes formular un deseo. El DJ interpreta el deseo de la forma más razonable posible, aunque según el anillo dichos deseos pueden retorcerse de maneras inesperadas. Usos típicos: replicar cualquier hechizo, restaurar a un muerto, alterar la realidad de forma limitada."
+    },
+    {
+      "name": "Deseo Menor",
+      "cost": "1 acción",
+      "uses": "3/día",
+      "description": "Puedes replicar el efecto de cualquier habilidad mágica de Rango III o inferior sin coste de Chi."
+    }
+  ]
+}

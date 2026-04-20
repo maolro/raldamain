@@ -1,0 +1,29 @@
+{
+  "name": "Ignis el Piromante",
+  "level": 8,
+  "stats": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": 3,
+    "wis": 2,
+    "cha": 5
+  },
+  "ranks": [
+    { "id": "magia_fuego", "rank": 3 },
+    { "id": "magia_protectora", "rank": 3 },
+    { "id": "reflejos", "rank": 2 }
+  ],
+  "weapon": {
+    "name": "Baculo arcano",
+    "damage": "1d6",
+    "stat": "int",
+    "damageType": "Contundente",
+    "rankId": "magia_fuego",
+    "range": "melee"
+  },
+  "armor": {
+    "name": "Tunica arcana",
+    "def": 1
+  }
+}

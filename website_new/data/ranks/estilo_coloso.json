@@ -3,11 +3,16 @@
   "title": "Estilo Coloso",
   "category": "Marcial",
   "image": "estilo_coloso.jpg",
-  "stats": ["Fuerza", "Vigor"],
+  "stats": ["Fuerza", "Chi"],
   "description": "Dominas el arte de las armas a dos manos. Sacrificas velocidad y defensa a cambio de golpes devastadores capaces de romper armaduras y aturdir enemigos.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Fuerza + Rango."
+  ],
+  "rules_refs": [
+    "Contadores de Escudo (ver manual_core.md § Valores Defensivos)",
+    "Aperturas (ver manual_core.md § El Combate)",
+    "Empoderar (ver manual_core.md § El Combate)"
   ],
   "levels": [
     {
@@ -17,14 +22,14 @@
         {
           "name": "Ataque Poderoso",
           "tags": ["Pesado", "Mejora"],
-          "cost": "1 Acción",
-          "desc": "Tira un dado de daño adicional con tu siguiente ataque. Esta habilidad debe declararse antes de atacar."
+          "cost": "1 acción",
+          "desc": "Tu siguiente ataque provoca un dado de daño adicional. Debes declarar esta habilidad antes de atacar."
         },
         {
           "name": "Golpe Desestabilizador",
           "tags": ["Pesado", "Mejora"],
           "cost": "1 chi",
-          "desc": "Al impactar el afectado hace tiro de salvación Físico o es empujado un paso y cae tropezado. Funciona también con enemigos que detengan exitosamente con Parada."
+          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Físico o es empujado un paso y cae tropezado. También funciona contra enemigos que detengan el ataque con Parada."
         }
       ]
     },
@@ -35,28 +40,28 @@
         {
           "name": "Gran Barrido",
           "tags": ["Pesado", "Mejora", "Área"],
-          "cost": "1 vigor",
+          "cost": "1 chi",
           "area": "Radio Corto",
-          "desc": "Atacas a todos los enemigos en radio corto con +1d6 daño. Al impactar empujas un paso hacia atrás a los afectados."
+          "desc": "Tu siguiente ataque afecta a todos los enemigos en radio corto y provoca +1d6 daño. Al impactar, empujas a los afectados un paso hacia atrás."
         },
         {
           "name": "Guardia Fluida",
           "tags": ["Pesado", "Mejora"],
-          "cost": "2 acciones y 1 chi",
+          "cost": "2 acciones, 1 chi",
           "duration": "Una ronda",
-          "desc": "Terminas inmediatamente tu turno para tener la oportunidad de atacar como reacción a cada criatura que entre en un espacio que alcances. Si impactas a un objetivo que entre ahí lo empujas un paso hacia atrás. Perderás esta habilidad al inicio de tu siguiente turno o si pierde la concentración o te mueves."
+          "desc": "Terminas inmediatamente tu turno. Hasta el inicio de tu siguiente turno, puedes atacar como reacción a cada criatura que entre en tu alcance. Al impactar, empujas al objetivo un paso hacia atrás. Pierdes este efecto si pierdes la concentración o te mueves."
         },
         {
           "name": "Lanzamiento",
           "tags": ["Pesado", "Mejora"],
-          "cost": "1 Acción y 1 chi",
-          "desc": "Lanzas un arma u objeto a un objeivo a distancia media, el cual provoca +1d6 daño adicional (si es objeto su daño base es 3d6). Si impactas a un enemigo volador debe hacer un tiro de salvación de Voluntad o caerá inmediatamente al suelo."
+          "cost": "1 acción, 1 chi",
+          "desc": "Lanzas un arma u objeto a un objetivo a distancia media, provocando +1d6 daño adicional (si es un objeto, su daño base es 3d6). Al impactar a un enemigo volador, este debe superar un tiro de salvación de Voluntad o cae inmediatamente al suelo."
         },
         {
           "name": "Reposición Forzosa",
           "tags": ["Pesado", "Reacción"],
           "cost": "1 chi",
-          "desc": "Si el enemigo esquiva exitosamente debe tener éxito en un tiro de salvación Físico o es movido un paso y recibe Desventaja en su siguiente tiro defensivo."
+          "desc": "Cuando un enemigo esquiva exitosamente tu ataque, debe superar un tiro de salvación de Físico o es movido un paso y sufre Desventaja en su siguiente tiro defensivo."
         }
       ]
     },
@@ -68,20 +73,20 @@
           "name": "Golpe Demoledor",
           "tags": ["Pesado", "Mejora"],
           "cost": "1 chi",
-          "desc": "Al impactar con tu ataque eliminas un contador de escudo del objetivo y rompes su armadura. Si detiene tu ataque con Parada puedes emplear esta habilidad para romper su arma. No funciona contra objetos con dureza superior a la de tu arma."
+          "desc": "Al impactar, eliminas un contador de escudo del objetivo y rompes su armadura. Si el objetivo detiene tu ataque con Parada, puedes emplear esta habilidad para romper su arma. No funciona contra objetos con dureza superior a la de tu arma."
         },
         {
           "name": "Carga Salvaje",
           "tags": ["Pesado", "Mejora"],
           "cost": "2 chi",
           "range": "Línea media",
-          "desc": "Te mueves como acción bonus y ataca a cada enemigo en tu camino. Dichos ataques provocarán +1d6 daño y al impactar empujarán y dejarán tropezados a tus objetivos."
+          "desc": "Te mueves como acción bonus y atacas a cada enemigo en tu camino. Estos ataques provocan +1d6 daño y al impactar empujan y dejan tropezados a los objetivos."
         },
         {
           "name": "Golpe Aturdidor",
           "tags": ["Pesado", "Mejora"],
           "cost": "2 chi",
-          "desc": "Al impactar a un objetivo este debe tener éxito en un tiro de salvación de Voluntad o queda aturdido durante una ronda. Esta habilidad se declara al impactar."
+          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o queda aturdido durante una ronda. Se declara al impactar."
         }
       ]
     },
@@ -93,26 +98,26 @@
           "name": "Golpe Ascendente",
           "tags": ["Pesado", "Mejora"],
           "cost": "2 chi",
-          "desc": "Saltas verticalmente y haces un ataque que provoca +2d6 daño. Si atacas a un enemigo volador este tendrá Desventaja y al impactar caerá tropezado al suelo."
+          "desc": "Saltas verticalmente y realizas un ataque que provoca +2d6 daño. Contra un enemigo volador, este sufre Desventaja en su tiro defensivo y al impactar cae tropezado al suelo."
         },
         {
           "name": "Golpe por Golpe",
           "tags": ["Pesado", "Reacción"],
-          "cost": "1 reacción y 2 chi",
-          "desc": "Te dejas impactar por un ataque enemigo para impactar automáticamente al enemigo que te haya  atacado. Ambos ataques se resolverían a la vez y debes declarar esta habilidad en lugar de hacer parada."
+          "cost": "1 reacción, 2 chi",
+          "desc": "Te dejas impactar por un ataque enemigo para impactar automáticamente al atacante. Ambos ataques se resuelven a la vez. Debes declarar esta habilidad en lugar de realizar Parada."
         },
         {
           "name": "Maestría de Estilo",
           "tags": ["Pesado", "Duradera"],
-          "cost": "2 acciones y 2 chi",
+          "cost": "2 acciones, 2 chi",
           "duration": "Seis rondas",
-          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Coloso además de una cantidad de contadores de escudo igual a tu Rango. Termina cuando pierdas la concentración."
+          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Coloso y una cantidad de contadores de escudo igual a tu Rango. Termina si pierdes la concentración."
         },
         {
           "name": "Secuencia de Golpes",
           "tags": ["Pesado", "Mejora"],
           "cost": "1 chi",
-          "desc": "Haces dos ataques contra el mismo objetivo, quien solo tirará una vez para defenderse. Cada impacto empujará un paso al objetivo y puedes perseguirlo como acción bonus. Esta habilidad debe declararse antes de hacer el primer ataque."
+          "desc": "Realizas dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Al impactar, empujas al objetivo un paso y puedes perseguirlo como acción bonus. Debes declarar esta habilidad antes de atacar."
         }
       ]
     },
@@ -124,20 +129,20 @@
           "name": "Impacto Meteoro",
           "tags": ["Pesado", "Mejora"],
           "cost": "3 chi",
-          "desc": "Saltas dos pasos y haces un ataque que provoca 2d6 daño adicional a cada criatura en un radio medio. Este ataque destruye estructuras frágiles y muros, tropieza a los impactados y provoca destrucción semejante a un terremoto."
+          "desc": "Saltas dos pasos y realizas un ataque que provoca 2d6 daño adicional a cada criatura en un radio medio. Al impactar, los objetivos caen tropezados. Este ataque destruye estructuras frágiles y muros."
         },
         {
           "name": "Impacto Mortal",
           "tags": ["Pesado", "Mejora"],
-          "cost": "1 acción y 3 chi",
+          "cost": "1 acción, 3 chi",
           "range": "Cuerpo a cuerpo",
           "crit": "Objetivo recibe herida permanente crítica.",
-          "desc": "Tiras 3d6 daño adicioanl al impactar con tu siguiente ataque, provocas una herida grave y elimina todos los contadores de escudo o muros que tenga el objetivo además de romper completamente su arma o armadura. Debes declarar esta habilidad antes de atacar y no funciona contra armas o armaduras de dureza superior."
+          "desc": "Tu siguiente ataque provoca 3d6 daño adicional al impactar, inflige una herida grave y elimina todos los contadores de escudo o muros del objetivo, además de romper completamente su arma o armadura. Debes declarar esta habilidad antes de atacar. No funciona contra armas o armaduras de dureza superior a la de tu arma."
         },
         {
           "name": "Proyección de Chi",
           "tags": ["Pesado", "Pasiva"],
-          "desc": "El daño de tu arma ahora cuenta como mágico para los propósitos de resistencias e inmunidades y tu alcance con ella aumenta a medio. Además, puedes emplear tu arma para detener ataques mágicos o de área."
+          "desc": "El daño de tu arma cuenta como mágico para los propósitos de resistencias e inmunidades y tu alcance con ella aumenta a medio. Además, puedes emplear tu arma para detener ataques mágicos o de área."
         }
       ]
     }

@@ -1,0 +1,15 @@
+{
+  "id": "cota_adamantina",
+  "name": "Cota de Adamantina",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Media",
+  "rarity": "Rara",
+  "image": "cota_adamantina.jpg",
+  "description": "Malla forjada con adamantina, el metal más duro conocido. Los golpes que deberían ser devastadores apenas arañan su superficie.",
+  "defense": "7",
+  "price": "12 CR",
+  "properties": [
+    "<b>Inquebrantable:</b> Los ataques críticos contra ti se convierten en impactos normales",
+    "<b>Indestructible:</b> Esta armadura no puede ser dañada por medios no mágicos"
+  ]
+}

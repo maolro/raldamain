@@ -1,0 +1,15 @@
+{
+  "id": "peto_gladiador",
+  "name": "Peto del Gladiador",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Media",
+  "rarity": "Poco Común",
+  "image": "peto_gladiador.jpg",
+  "description": "Un pectoral de bronce pulido con hombreras decorativas. Diseñado para la arena: máxima protección frontal sin restringir movimiento ofensivo.",
+  "defense": "5",
+  "price": "3 CR",
+  "properties": [
+    "<b>Exhibicionista:</b> +1 a tiradas de Presencia e Intimidación mientras lo vistes"
+  ],
+  "penalties": "-2 a tiradas de DES (en vez de -4)."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "amuleto_inmortalidad",
+  "name": "Filacteria de Vida Eterna",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "amuleto_inmortalidad.jpg",
+  "description": "Un amuleto de jade negro con un corazón humano grabado que late tenuemente. Mientras lo portes, la muerte no puede reclamarte... al menos no permanentemente.",
+  "price": "100 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Inmortalidad Condicional",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "No envejeces. Si mueres, tu cuerpo se reconstruye en 1d4 días en el lugar donde caíste (a menos que tu cuerpo sea completamente desintegrado o el amuleto sea destruido)."
+    },
+    {
+      "name": "Vitalidad Eterna",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu máximo de PV aumenta en 5. Eres inmune a enfermedades, venenos y efectos de envejecimiento."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "arco_estrellas",
+  "name": "Arco de las Estrellas",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial a Distancia",
+  "rarity": "Legendaria",
+  "image": "arco_estrellas.jpg",
+  "description": "Un arco forjado con fragmentos de estrellas caídas. Su cuerda es un rayo de luz lunar y las flechas que dispara son constelaciones comprimidas.",
+  "damage": "1d10 + DES + 3d6 radiante",
+  "damageType": "Perforante + Radiante",
+  "price": "80 CR",
+  "range": "Distancia lejana (sin límite máximo de noche)",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Nocturno:</b> De noche, el alcance del arco es ilimitado (si puedes ver el objetivo)"
+  ],
+  "abilities": [
+    {
+      "name": "Constelación Cazadora",
+      "cost": "2 acciones + 4 Chi",
+      "uses": "1/día",
+      "description": "Tres flechas de luz estelar persiguen a un objetivo, impactando automáticamente por 3d10+3d6 radiante cada una. El objetivo no puede ser invisible ni estar en cobertura."
+    },
+    {
+      "name": "Lluvia Meteórica",
+      "cost": "3 acciones + 5 Chi",
+      "uses": "1/semana",
+      "description": "Invocas una lluvia de meteoritos en un área de 18m de radio a 36m de distancia. Todos en el área reciben 8d10 fuego + radiante. PHYS (CD 22) para mitad."
+    }
+  ]
+}

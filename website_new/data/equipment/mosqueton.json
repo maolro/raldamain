@@ -1,0 +1,18 @@
+{
+  "id": "mosqueton",
+  "name": "Mosquetón",
+  "type": "Arma",
+  "subtype": "Arma de Fuego",
+  "rarity": "Común",
+  "image": "mosqueton.jpg",
+  "description": "Un arma de fuego larga con cañón estriado. Su poder de penetración supera a cualquier arco, pero es ruidosa y lenta.",
+  "damage": "2d8 + DES",
+  "damageType": "Perforante",
+  "price": "3 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Recarga</b>: Cuesta 2 acciones recargar",
+    "<b>Explosiva</b>: En un 1 natural, el arma se encasquilla"
+  ]
+}

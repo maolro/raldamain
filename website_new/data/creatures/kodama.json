@@ -1,0 +1,62 @@
+{
+  "id": "kodama",
+  "name": "Kodama",
+  "level": 4,
+  "type": "spirit_fey",
+  "size": "Small",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+2",
+    "WILL": "+7",
+    "MIND": "+7+1d6"
+  },
+  "defenses": {
+    "physical": 8,
+    "magical": 10,
+    "general": 6
+  },
+  "attackRoll": null,
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Nature's Touch",
+      "cost": "1 action",
+      "damage": "2d6 radiant",
+      "effect": "Heals an ally within close range for the same amount rolled"
+    },
+    {
+      "name": "Spirit Ward",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Grants one ally +3 to all defenses until the start of Kodama's next turn"
+    },
+    {
+      "name": "Root Snare",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Roots erupt in a small area. Targets must pass PHYS save or be immobilized for 1 round"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Fade to Wood",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the Kodama merges into a nearby tree and becomes untargetable until the start of its next turn. Can only be used near trees."
+    }
+  ],
+  "resistances": ["nature"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Tree Bond",
+      "desc": "The Kodama is bound to a specific tree or grove. While within 30m of its bonded tree, it regenerates 2 HP at the start of each turn."
+    },
+    {
+      "name": "Invisible in Nature",
+      "desc": "While in a forest or natural environment, the Kodama is invisible when motionless."
+    }
+  ],
+  "lore": "Kodama are tiny spirits that inhabit ancient trees in sacred forests. Gentle and shy, they rarely show themselves to mortals, but when their forests are threatened they rally together to defend their home with surprising ferocity."
+}

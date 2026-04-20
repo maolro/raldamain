@@ -1,0 +1,17 @@
+{
+  "id": "latigo",
+  "name": "Látigo",
+  "type": "Arma",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "latigo.jpg",
+  "description": "Una tira de cuero trenzado de tres metros de largo. Puede atrapar extremidades y desarmar oponentes.",
+  "damage": "1d6 + DES",
+  "damageType": "Contundente",
+  "price": "0 CR",
+  "range": "Alcance cercano",
+  "properties": [
+    "<b>Alcance</b>: Ataca a distancia cercana",
+    "<b>Desarme</b>: Puedes intentar desarmar en vez de hacer daño"
+  ]
+}

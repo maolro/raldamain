@@ -1,0 +1,18 @@
+{
+  "id": "linterna_reveladora",
+  "name": "Linterna Reveladora",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "linterna_reveladora.jpg",
+  "description": "Una linterna de bronce con cristales prismáticos que proyecta luz en un cono. Bajo su brillo, lo oculto se revela.",
+  "price": "3 CR",
+  "abilities": [
+    {
+      "name": "Luz Reveladora",
+      "cost": "1 acción",
+      "uses": "Ilimitado",
+      "description": "La luz revela criaturas y objetos invisibles, ilusiones y pasajes ocultos en un cono de 9m."
+    }
+  ]
+}

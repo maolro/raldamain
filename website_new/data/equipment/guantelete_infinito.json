@@ -1,0 +1,29 @@
+{
+  "id": "guantelete_infinito",
+  "name": "Guantelete del Infinito",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Legendaria",
+  "image": "guantelete_infinito.jpg",
+  "description": "Un guantelete de oro con seis engarces para gemas cósmicas. Incluso vacío, otorga poder sobre la realidad. Completo, su portador sería como un dios.",
+  "price": "200 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Incompleto:</b> El guantelete tiene 6 engarces. Cada gema cósmica (artefactos separados) añade un poder. Sin gemas, solo otorga el poder base"
+  ],
+  "abilities": [
+    {
+      "name": "Poder Base",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu FUE se considera 7 mientras portes el guantelete. Tus ataques desarmados con esa mano infligen 2d10+FUE contundente."
+    },
+    {
+      "name": "Chasquido (6 gemas)",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Si las seis gemas cósmicas están engarzadas, puedes alterar la realidad a escala masiva. El esfuerzo destruye el guantelete y te reduce a 1 PV permanente durante 1 año."
+    }
+  ]
+}

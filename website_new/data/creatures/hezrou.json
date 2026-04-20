@@ -1,0 +1,71 @@
+{
+  "id": "hezrou",
+  "name": "Hezrou",
+  "level": 10,
+  "type": "demon",
+  "size": "Large",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 11,
+    "general": 10
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "5d8 piercing",
+      "effect": "Target is grappled on hit."
+    },
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "4d8 slashing",
+      "effect": null
+    },
+    {
+      "name": "Stench Pulse",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All creatures within 3m must pass PHYS save or be poisoned for 1 round (disadvantage on attacks and saves). Already-poisoned creatures are instead nauseated and lose 1 action on their next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Thick Hide",
+      "cost": "1 reaction",
+      "effect": "Reduces physical damage from one attack by 2d6."
+    },
+    {
+      "name": "Crushing Grip",
+      "cost": "1 reaction",
+      "effect": "When a grappled creature tries to escape, the Hezrou crushes them for 3d8 bludgeoning damage."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Stench Aura",
+      "desc": "Any creature starting its turn within 3m of the Hezrou must pass PHYS save or be poisoned until start of their next turn. Creatures that succeed are immune to this aura for 24 hours."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    },
+    {
+      "name": "Amphibious",
+      "desc": "Can breathe air and water."
+    }
+  ],
+  "lore": "Hezrous are hulking toad-demons that serve as the brute enforcers of the Abyss. Their stench is so overpowering that even other demons find them revolting. They rely on raw strength and durability rather than cunning, crushing foes in their massive jaws."
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Combate | Raldamain</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="css/simulator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="sim-container">
+        <h1 class="sim-title">Simulador de Combate</h1>
+        <p class="sim-subtitle">Enfrenta dos builds de personaje y observa el resultado turno a turno.</p>
+
+        <div class="fighters-panel">
+            <div class="fighter-card">
+                <h2>Personaje 1</h2>
+                <label class="file-upload" for="file1">
+                    <span class="upload-icon">&#x2694;</span>
+                    <span>Cargar JSON</span>
+                    <input type="file" id="file1" accept=".json" hidden>
+                </label>
+                <div id="summary1" class="char-summary">Sin personaje cargado</div>
+            </div>
+
+            <div class="vs-divider">VS</div>
+
+            <div class="fighter-card">
+                <h2>Personaje 2</h2>
+                <label class="file-upload" for="file2">
+                    <span class="upload-icon">&#x2694;</span>
+                    <span>Cargar JSON</span>
+                    <input type="file" id="file2" accept=".json" hidden>
+                </label>
+                <div id="summary2" class="char-summary">Sin personaje cargado</div>
+            </div>
+        </div>
+
+        <div class="sim-controls">
+            <button id="btn-simulate" class="btn-simulate">SIMULAR COMBATE</button>
+            <button id="btn-clear" class="btn-clear">LIMPIAR</button>
+        </div>
+
+        <div class="console-wrapper">
+            <div class="console-header">
+                <span class="console-dot red"></span>
+                <span class="console-dot yellow"></span>
+                <span class="console-dot green"></span>
+                <span class="console-title">Registro de Combate</span>
+            </div>
+            <pre id="combat-log" class="combat-console">Carga dos personajes y pulsa SIMULAR para comenzar.
+
+Puedes encontrar personajes de ejemplo en la carpeta /combat-simulator/characters/</pre>
+        </div>
+    </main>
+
+    <script src="js/simulator.js"></script>
+</body>
+</html>

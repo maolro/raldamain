@@ -1,0 +1,65 @@
+{
+  "id": "hydra",
+  "name": "Hydra",
+  "level": 10,
+  "type": "monster",
+  "size": "Huge",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+7",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 15,
+    "magical": 10,
+    "general": 9
+  },
+  "attackRoll": "+11+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite (per head)",
+      "cost": "1 action",
+      "damage": "4d8 piercing",
+      "effect": "The Hydra starts with 5 heads and can make one Bite per head per turn (spending 1 action each, up to 3 per turn)."
+    },
+    {
+      "name": "Thrash",
+      "cost": "2 actions",
+      "damage": "5d8 bludgeoning",
+      "effect": "The Hydra swings its heads and body in a wide arc. All creatures within 3m must pass PHYS save or take damage and be knocked prone."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Reactive Bite",
+      "cost": "1 reaction",
+      "effect": "When a creature enters melee range, one of the Hydra's heads snaps at it for 4d8 piercing."
+    },
+    {
+      "name": "Head Regrowth",
+      "cost": "1 reaction",
+      "effect": "When a head is severed (critical hit from slashing), two new heads grow at the start of the Hydra's next turn (up to 10 heads max). Fire damage applied to the stump prevents regrowth."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Multiple Heads",
+      "desc": "Starts with 5 heads. Cannot be surprised. Has +1d6 to perception per head. For each head beyond 5, the Hydra gains +5 max HP."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Regains 5 HP at the start of its turn if it has at least 1 HP. If the Hydra took fire damage last turn, this trait doesn't function."
+    },
+    {
+      "name": "Wakeful",
+      "desc": "While sleeping, at least one head remains awake."
+    }
+  ],
+  "lore": "Hydras are legendary multi-headed serpents that haunt swamps and coastal caves. Their most terrifying ability is regeneration: for every head severed, two more grow in its place. Only fire can prevent this monstrous renewal."
+}

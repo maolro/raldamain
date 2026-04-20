@@ -1,0 +1,20 @@
+{
+  "id": "brazales_proteccion",
+  "name": "Brazales de Protección",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "brazales_proteccion.jpg",
+  "description": "Un medallón de cristal azul con un símbolo de escudo grabado. Brilla intensamente cuando su portador está en peligro.",
+  "price": "3 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Barrera Arcana",
+      "cost": "Pasiva",
+      "description": "Este objeto otorga tres <i>contadores de escudo</i> al portador, los cuales pueden ser utilizados para reducir daño físico y mágico. Estos se recargan al cabo de un día."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "shadow_demon",
+  "name": "Shadow Demon",
+  "level": 6,
+  "type": "demon",
+  "size": "Medium",
+  "hp": 16,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 9,
+    "general": 7
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Shadow Claws",
+      "cost": "1 action",
+      "damage": "4d6 psychic",
+      "effect": "This damage bypasses physical resistance and armor."
+    },
+    {
+      "name": "Shadow Pounce",
+      "cost": "2 actions",
+      "damage": "5d6 psychic",
+      "effect": "The demon leaps from one shadow to another within 12m and attacks. If the target didn't see the demon before the attack, the target has -1d6 to defense."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Meld with Shadow",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack while in dim light or darkness, the demon merges with shadows. The attack has -2d6 to hit."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning", "necrotic"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Incorporeal in Darkness",
+      "desc": "While in dim light or darkness, the Shadow Demon is incorporeal and can move through objects and creatures."
+    },
+    {
+      "name": "Light Sensitivity",
+      "desc": "In bright light, the Shadow Demon has -1d6 to attack rolls and loses its incorporeal ability."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "In dim light or darkness, the Shadow Demon is invisible."
+    }
+  ],
+  "lore": "Shadow Demons are demons stripped of their physical form, existing as malevolent shadows. They lurk in dark places, possessing the weak-willed and attacking from the darkness. Bright light is their bane, forcing them into a vulnerable corporeal state."
+}

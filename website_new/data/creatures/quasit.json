@@ -1,0 +1,62 @@
+{
+  "id": "quasit",
+  "name": "Quasit",
+  "level": 4,
+  "type": "demon",
+  "size": "Tiny",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": "+7",
+  "actions": [
+    {
+      "name": "Poison Claws",
+      "cost": "1 action",
+      "damage": "2d6 slashing + 1d6 poison",
+      "effect": "Target must pass PHYS save or be poisoned for 1 minute (disadvantage on attacks and ability checks)."
+    },
+    {
+      "name": "Scare",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One creature within 6m must pass WILL save or be frightened for 1 round."
+    },
+    {
+      "name": "Invisibility",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Quasit turns invisible until it attacks, casts, or loses concentration."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shapeshift Escape",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack, the Quasit transforms into a bat, centipede, or toad and flies/scurries up to 6m away. +3 to defenses against the triggering attack."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Can polymorph into a bat, centipede, or toad, or back to its true form. Stats remain the same."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    }
+  ],
+  "lore": "Quasits are tiny demons that serve as familiars, spies, and tempters for mortal warlocks. Despite their diminutive size, they are cunning and malicious, delighting in corrupting mortals through whispered suggestions and subtle manipulation."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "hacha_escarcha",
+  "name": "Hacha de Escarcha",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Poco Común",
+  "image": "hacha_escarcha.jpg",
+  "description": "Un hacha de batalla con la hoja permanentemente cubierta de escarcha azulada. El frío que emana entumece las manos.",
+  "damage": "1d10 + FUE + 1d6 frío",
+  "damageType": "Cortante + Frío",
+  "price": "4 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Gélida:</b> Los objetivos golpeados tienen -1m de velocidad hasta el fin de su siguiente turno"
+  ]
+}

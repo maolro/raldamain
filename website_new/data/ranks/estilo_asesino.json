@@ -3,10 +3,10 @@
   "title": "Estilo Asesino",
   "category": "Marcial",
   "image": "estilo_asesino.jpg",
-  "stats": ["Destreza", "Vigor"],
+  "stats": ["Destreza", "Marcial"],
   "description": "Estilo de combate rápido y preciso. Aprovechas la movilidad y los puntos débiles del enemigo para eliminarlo antes de que pueda contraatacar.",
   "fundamentals": [
-    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Destreza + Rango."
   ],
   "levels": [
@@ -18,13 +18,13 @@
           "name": "Apuntar Ataque",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 acción",
-          "desc": "Tiras +2 en tu siguiente tiro de ataque. Esta mejora aumenta a +4 a Rango III y a +6 a Rango V."
+          "desc": "Obtienes +2 en tu siguiente tiro de ataque. Este bonus aumenta a +4 a Rango III y a +6 a Rango V."
         },
         {
           "name": "Ataque Furtivo",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 chi",
-          "desc": "Su siguiente ataque provocará un dado de daño adicional al impactar y una herida leve. Esta habilidad debe declararse antes de atacar."
+          "desc": "Tu siguiente ataque provoca un dado de daño adicional y una herida leve al impactar. Debes declarar esta habilidad antes de atacar."
         }
       ]
     },
@@ -36,25 +36,25 @@
           "name": "Presionar Defensas",
           "tags": ["Asesino", "Mejora", "Visual"],
           "cost": "1 chi",
-          "desc": "Antes de atacar el objetivo debe tener éxito en un tiro de Mente o recibirá Desventaja en su tiro defensivo. Este efecto puede anularse gastando una Premonición y no funciona contra enemigos con Visión Futura."
+          "desc": "Antes de atacar, el objetivo debe superar un tiro de salvación de Mente o sufre Desventaja en su tiro defensivo. El objetivo puede anular este efecto gastando una Premonición. No funciona contra enemigos con Visión Futura."
         },
         {
           "name": "Clavar Arma",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 chi",
-          "desc": "Al impactar a un objetivo tu arma se queda clavada en él, provocándole 1d6 daño adicional y enfermándolo durante una ronda. Esta mejora solo funciona con armas perforantes."
+          "desc": "Al impactar, tu arma se queda clavada en el objetivo, provocándole 1d6 daño adicional y enfermándolo durante una ronda. Solo funciona con armas perforantes."
         },
         {
           "name": "Secuencia de Puñaladas",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 chi",
-          "desc": "Haces dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Esta mejroa solo puede aplicarse a armas de una mano."
+          "desc": "Realizas dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Solo puede aplicarse a armas de una mano."
         },
         {
           "name": "Ataque Triple",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 chi",
-          "desc": "Su siguiente ataque podrá afectar a tres objetivos que pueda alcanzar. Si se añaden efectos adicionales se aplicarán a todos los ataques."
+          "desc": "Tu siguiente ataque puede afectar a hasta tres objetivos que puedas alcanzar. Los efectos adicionales que añadas se aplican a todos los ataques."
         }
       ]
     },
@@ -66,18 +66,18 @@
           "name": "Golpe Penetrante",
           "tags": ["Asesino", "Mejora"],
           "cost": "2 chi",
-          "desc": "Tu siguiente ataque ignora la defensa otorgada por armaduras del objetivo y cuenta como mágico para los propósitos de Resistencias e Inmunidades."
+          "desc": "Tu siguiente ataque ignora la defensa otorgada por la armadura del objetivo y cuenta como mágico para los propósitos de resistencias e inmunidades."
         },
         {
           "name": "Paso del Asesino",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 chi",
-          "desc": "Antes de atacar puedes moverte como acción bonus que no provoca aperturas y tu objetivo tendrá Desventaja en su tiro defensivo como si se tratase de un ataque sorpresa."
+          "desc": "Antes de atacar, te mueves como acción bonus sin provocar aperturas. El objetivo sufre Desventaja en su tiro defensivo como si se tratase de un ataque sorpresa. Este efecto se puede anular gantando una Premonición y no funciona contra enemigos con Visión Futura."
         },
         {
           "name": "Cuchillada",
           "tags": ["Asesino", "Pasiva"],
-          "desc": "Puedes tirar Parada a la vez de Esquiva en todos tus tiros defensivos y quedarte con el resultado que más te convenga. Además, puedes hacer un movimiento como acción bonus al atacar o defenderse, el cual sí provocará aperturas."
+          "desc": "Puedes tirar Parada además de Esquiva en todos tus tiros defensivos y quedarte con el mejor resultado. Además, puedes realizar un movimiento como acción bonus al atacar o defenderte, el cual sí provoca aperturas."
         }
       ]
     },
@@ -88,21 +88,21 @@
         {
           "name": "Maestría de Arma",
           "tags": ["Asesino", "Duradera"],
-          "cost": "2 acciones y 2 chi",
+          "cost": "2 acciones, 2 chi",
           "duration": "Seis rondas",
-          "desc": "Entras en un estado donde recibes Ventaja en todos tus tiros relacionados con estilo Asesino además que tus ataques reciben un dado de daño adicional y provocan una herida leve al impactar."
+          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Asesino. Además, tus ataques provocan un dado de daño adicional y una herida leve al impactar."
         },
         {
           "name": "Impacto Deshabilitante",
           "tags": ["Asesino", "Mejora"],
           "cost": "2 chi",
-          "desc": "Al impactar con un ataque tu objetivo debe tener éxito en un tiro de Voluntad o una parte de su cuerpo queda debilitada como si sufriese una herida permanente crítica ahí. Al igual que una herida permanente, esta habilidad desaparecerá cuando el afectado reciba sanación. La parte del cuerpo afectada será aleatoria salvo que esta habilidad se declare antes de atacar."
+          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o una parte de su cuerpo queda debilitada como si sufriese una herida permanente crítica. Este efecto desaparece cuando el afectado reciba sanación. La parte del cuerpo afectada es aleatoria salvo que declares esta habilidad antes de atacar."
         },
         {
           "name": "Furia Asesina",
           "tags": ["Asesino", "Mejora"],
           "cost": "2 chi",
-          "desc": "Haces tres ataques contra el mismo objetivo, el cual solo tirará una vez para defenderse y aumentas su tiro de ataque y daño por 1 según cada impacto consecutivo. Todos ellos contarán como ataque furtivo, recibiendo así un dado de daño adicional y provocando una herida leve al impactar (esto no se acumula con dicha habilidad)."
+          "desc": "Realizas tres ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Tu tiro de ataque y daño aumenta en +1 por cada impacto consecutivo. Todos los ataques cuentan como Ataque Furtivo, provocando un dado de daño adicional y una herida leve al impactar (no se acumula con dicha habilidad)."
         }
       ]
     },
@@ -114,18 +114,18 @@
           "name": "Impacto Mortal",
           "tags": ["Asesino", "Mejora"],
           "cost": "3 chi",
-          "desc": "Al impactar a un objetivo debe tener éxito en un tiro de Voluntad o sufre 4d6 daño irreducible (la mitad en caso de éxito) y una herida crítica. Este efecto puede activarse con retraso."
+          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o sufre 4d6 daño irreducible y una herida crítica. En caso de éxito, sufre la mitad de daño. Este efecto puede activarse con retraso."
         },
         {
           "name": "Masacre",
           "tags": ["Asesino", "Mejora"],
-          "cost": "3 vigor",
-          "desc": "Tu siguiente ataque afectará a todos los enemigos en un radio medio y al impactar provocará 2d6 daño adicional y una herida leve. Una vez terminas el ataque, puedes aparecer en cualquier posición dentro el área afectada sin generar aperturas."
+          "cost": "3 chi",
+          "desc": "Tu siguiente ataque afecta a todos los enemigos en un radio medio y provoca 2d6 daño adicional y una herida leve al impactar. Al terminar el ataque, puedes aparecer en cualquier posición dentro del área afectada sin provocar aperturas."
         },
         {
           "name": "Proyección de Chi",
           "tags": ["Asesino", "Pasiva"],
-          "desc": "El daño de tu arma ahora cuenta como mágico para los propósitos de resistencias e inmunidades y tu alcance con ella aumenta a medio. Además, puedes emplear tu arma para detener ataques mágicos o de área."
+          "desc": "El daño de tu arma cuenta como mágico para los propósitos de resistencias e inmunidades y tu alcance con ella aumenta a medio. Además, puedes emplear tu arma para detener ataques mágicos o de área."
         }
       ]
     }

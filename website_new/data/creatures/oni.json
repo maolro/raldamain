@@ -1,0 +1,67 @@
+{
+  "id": "oni",
+  "name": "Oni",
+  "level": 10,
+  "type": "spirit_fey",
+  "size": "Large",
+  "hp": 38,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+1d6",
+    "MIND": "+11"
+  },
+  "defenses": {
+    "physical": 16,
+    "magical": 11,
+    "general": 10
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+1d6",
+  "actions": [
+    {
+      "name": "Iron Kanabo",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning",
+      "effect": "Target must pass PHYS save or be knocked prone and stunned until end of their next turn."
+    },
+    {
+      "name": "Cone of Cold",
+      "cost": "2 actions",
+      "damage": "4d8 cold",
+      "effect": "A blast of freezing energy in a 12m cone. PHYS save for half."
+    },
+    {
+      "name": "Darkness",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Creates an area of magical darkness in a 6m radius that lasts 1 minute. Even darkvision cannot see through it."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Regeneration",
+      "cost": "1 reaction",
+      "effect": "At the end of any turn where the Oni took damage, it regenerates 5 HP. This does not function if the Oni took fire or radiant damage that turn."
+    },
+    {
+      "name": "Vengeful Strike",
+      "cost": "1 reaction",
+      "effect": "When a creature within reach hits the Oni, it can make an Iron Kanabo attack against the attacker."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": [],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Can assume the form of any Small or Medium humanoid, or revert to its true form. Its statistics remain the same regardless of form."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The Oni can turn invisible at will (ends when it attacks or casts). Can fly at normal speed."
+    }
+  ],
+  "lore": "Oni are fearsome ogre-demons of Japanese mythology, known for their brutal strength and cunning intellect. They disguise themselves as humans to infiltrate communities, indulging in cruel deceptions before revealing their true monstrous form to wreak havoc."
+}

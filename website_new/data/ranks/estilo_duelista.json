@@ -3,10 +3,10 @@
   "title": "Estilo Duelista",
   "category": "Marcial",
   "image": "estilo_duelista.jpg",
-  "stats": ["Fuerza", "Destreza", "Vigor"],
+  "stats": ["Fuerza", "Destreza", "Chi"],
   "description": "Maestría en el combate uno contra uno. Usas la precisión, las paradas y las maniobras para desarmar, engañar y superar a tu oponente.",
   "fundamentals": [
-    "<strong>Reserva de Vigor:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Fuerza o Destreza + Rango."
   ],
   "levels": [
@@ -17,13 +17,13 @@
         {
           "name": "Destreza Defensiva",
           "tags": ["Duelo", "Pasiva"],
-          "desc": "Al usar Parada, puedes tirar una segunda reacción defensiva (ej: Esquiva) y quedarte con el mejor resultado."
+          "desc": "Al usar Parada, puedes tirar una segunda reacción defensiva (por ejemplo, Esquiva) y quedarte con el mejor resultado."
         },
         {
           "name": "Truco de Espada",
           "tags": ["Duelo", "Mejora"],
-          "cost": "1 vigor",
-          "desc": "Realizas una maniobra como acción bonus (Paso Rápido, Derribo, Cambio de objetivo o Daño extra)."
+          "cost": "1 chi",
+          "desc": "Realizas una maniobra como acción bonus: Paso Rápido, Derribo, Cambio de objetivo o Daño extra."
         }
       ]
     },
@@ -34,22 +34,22 @@
         {
           "name": "Finta Engañosa",
           "tags": ["Duelo", "Visual"],
-          "cost": "1 vigor",
-          "desc": "Si fallas un ataque, fuerzas al enemigo a tirar Averiguar Intenciones o pierde su Posición Defensiva."
+          "cost": "1 chi",
+          "desc": "Si fallas un ataque, el objetivo debe superar un tiro de Averiguar Intenciones o pierde su siguiente reacción."
         },
         {
           "name": "Golpe de Mango",
           "tags": ["Duelo", "Ataque"],
-          "cost": "1 vigor",
+          "cost": "1 chi",
           "range": "Cuerpo a cuerpo",
           "crit": "Objetivo sufre herida permanente leve.",
-          "desc": "Ataque contundente (1d6 + MOD). Saca al enemigo de Posición Defensiva. Daño escala a 1d8 (Rango III) y 1d10 (Rango V)."
+          "desc": "Realizas un ataque contundente (1d6 + MOD). Al impactar, el objetivo pierde su siguiente reacción. El daño escala a 1d8 a Rango III y 1d10 a Rango V."
         },
         {
           "name": "Ataque Torbellino",
           "tags": ["Duelo", "Mejora"],
-          "cost": "1 vigor",
-          "desc": "Atacas a todos los enemigos adyacentes con +1d6 daño."
+          "cost": "1 chi",
+          "desc": "Tu siguiente ataque afecta a todos los enemigos adyacentes y provoca +1d6 daño."
         }
       ]
     },
@@ -60,21 +60,21 @@
         {
           "name": "Espadas Trabadas",
           "tags": ["Duelo", "Maniobra"],
-          "cost": "2 vigor",
+          "cost": "2 chi",
           "duration": "Concentración",
-          "desc": "Al chocar defensas (Parada), fuerzas tiro opuesto. Si ganas, su arma queda trabada (inutilizada). Si falla de nuevo para escapar, puedes desarmarlo."
+          "desc": "Al detener un ataque con Parada, fuerzas un tiro opuesto. Si ganas, el arma del objetivo queda trabada e inutilizada. Si el objetivo falla de nuevo para escapar, puedes desarmarlo."
         },
         {
           "name": "Ataque Saltarín",
           "tags": ["Duelo", "Mejora"],
-          "cost": "2 vigor",
-          "desc": "Saltas un paso antes de atacar (+2d6 daño). Ventaja defensiva contra ataques preparados. Desventaja para enemigos voladores."
+          "cost": "2 chi",
+          "desc": "Saltas un paso antes de atacar y provocas +2d6 daño al impactar. Obtienes Ventaja defensiva contra ataques preparados. Los enemigos voladores sufren Desventaja en su tiro defensivo."
         },
         {
           "name": "Combinar Técnicas",
           "tags": ["Duelo", "Mejora"],
-          "cost": "2 vigor",
-          "desc": "Realizas un segundo ataque como acción bonus contra el mismo objetivo tras atacar."
+          "cost": "2 chi",
+          "desc": "Tras atacar, realizas un segundo ataque como acción bonus contra el mismo objetivo."
         }
       ]
     },
@@ -85,22 +85,22 @@
         {
           "name": "Contrataque",
           "tags": ["Duelo", "Reacción"],
-          "cost": "2 vigor",
-          "desc": "Interrumpes una acción enemiga con un ataque de reacción. Si impactas, la acción se pierde. Requiere Posición Defensiva."
+          "cost": "1 reacción, 2 chi",
+          "desc": "Interrumpes una acción enemiga con un ataque de reacción. Al impactar, la acción del enemigo se pierde."
         },
         {
           "name": "Danza del Espadachín",
           "tags": ["Duelo", "Duradera"],
-          "cost": "2 acciones, 2 vigor",
+          "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Ventaja en ataques. Posición Defensiva como acción bonus. Permite parar proyectiles físicos.",
+          "desc": "Obtienes Ventaja en tiros de ataque. Puedes usar una reacción defensiva adicional por ronda. Además, puedes parar proyectiles físicos.",
           "empower": "Reduce el daño de un ataque no detenido a la mitad."
         },
         {
           "name": "Estocada Poderosa",
           "tags": ["Duelo", "Mejora"],
-          "cost": "2 vigor",
-          "desc": "Ataque con +2d6 daño y herida permanente leve. Ignora armaduras (salvo completas). Requiere un escudo extra para pararse."
+          "cost": "2 chi",
+          "desc": "Tu siguiente ataque provoca +2d6 daño y una herida permanente leve al impactar. Este ataque ignora armaduras (salvo armaduras completas). Requiere un contador de escudo adicional para ser detenido con Parada."
         }
       ]
     },
@@ -111,20 +111,20 @@
         {
           "name": "Golpe de Gracia",
           "tags": ["Duelo", "Mejora"],
-          "cost": "3 vigor",
-          "desc": "Ataque letal (+3d6 daño, herida grave). Ignora armadura. Mata instantáneamente si reduce al objetivo a 0 PV."
+          "cost": "3 chi",
+          "desc": "Tu siguiente ataque provoca +3d6 daño y una herida grave al impactar. Este ataque ignora armaduras. Si reduce al objetivo a 0 PV, lo mata instantáneamente."
         },
         {
           "name": "Cortes en Cadena",
           "tags": ["Duelo", "Mejora"],
-          "cost": "3 vigor",
-          "desc": "Tras impactar, puedes moverte y atacar a otro enemigo. Continúa hasta fallar o quedarte sin objetivos."
+          "cost": "3 chi",
+          "desc": "Al impactar, puedes moverte y atacar a otro enemigo adyacente. Este efecto continúa hasta que falles un ataque o no queden objetivos."
         },
         {
           "name": "Secuencia de Ataques",
           "tags": ["Duelo", "Reacción"],
-          "cost": "3 vigor",
-          "desc": "Al impactar, realizas 2 ataques extra (mismo tiro defensivo). Cada impacto consecutivo otorga +1 al ataque y daño."
+          "cost": "3 chi",
+          "desc": "Al impactar, realizas 2 ataques adicionales contra el mismo objetivo, quien usa el mismo tiro defensivo. Cada impacto consecutivo otorga +1 al tiro de ataque y daño."
         }
       ]
     }

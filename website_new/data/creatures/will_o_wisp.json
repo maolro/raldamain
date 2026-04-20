@@ -1,0 +1,66 @@
+{
+  "id": "will_o_wisp",
+  "name": "Will-o'-Wisp",
+  "level": 6,
+  "type": "spirit_fey",
+  "size": "Tiny",
+  "hp": 12,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 8,
+    "general": 7
+  },
+  "attackRoll": null,
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Shock",
+      "cost": "1 action",
+      "damage": "3d6 lightning",
+      "effect": null
+    },
+    {
+      "name": "Consume Life",
+      "cost": "2 actions",
+      "damage": "4d6 necrotic",
+      "effect": "Can only target creatures at 0 HP or dying. The Will-o'-Wisp heals for the damage dealt."
+    },
+    {
+      "name": "Lure",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "One target within medium range must pass MIND save or be compelled to move toward the Will-o'-Wisp on their next turn."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Flicker Out",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack, the Will-o'-Wisp turns invisible and teleports up to 6m. It reappears at the start of its next turn."
+    }
+  ],
+  "resistances": ["lightning", "cold", "fire"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Incorporeal",
+      "desc": "The Will-o'-Wisp can move through creatures and objects. It takes 2d6 force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Ephemeral",
+      "desc": "Cannot be grappled, restrained, or knocked prone."
+    },
+    {
+      "name": "Variable Illumination",
+      "desc": "Sheds bright light in a 3m radius and dim light for an additional 3m. Can extinguish its light as a free action."
+    }
+  ],
+  "lore": "Will-o'-Wisps are malevolent spirits that haunt swamps, bogs, and dark forests. They lure travelers off safe paths with their ghostly light, feeding on the fear and life force of those who become lost and perish."
+}

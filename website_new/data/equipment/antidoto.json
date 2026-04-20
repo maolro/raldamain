@@ -1,0 +1,21 @@
+{
+  "id": "antidoto",
+  "name": "Antídoto Universal",
+  "type": "Objeto Mágico",
+  "subtype": "Poción",
+  "rarity": "Común",
+  "image": "antidoto.jpg",
+  "description": "Un frasco de líquido verde esmeralda con un sabor intensamente amargo. Neutraliza la mayoría de venenos conocidos.",
+  "price": "1/3 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Neutralizar Veneno",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Elimina un efecto de veneno que te afecte actualmente."
+    }
+  ]
+}

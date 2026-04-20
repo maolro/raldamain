@@ -1,0 +1,21 @@
+{
+  "id": "anillo_hechizos",
+  "name": "Anillo de Almacenamiento",
+  "type": "Objeto Mágico",
+  "subtype": "Anillo",
+  "rarity": "Rara",
+  "image": "anillo_hechizos.jpg",
+  "description": "Un anillo de platino con una gema que cambia de color. En su interior se pueden almacenar ecos de poder mágico.",
+  "price": "8 CR",
+  "properties": [
+    "<b>Sintonización</b>: Por un usuario de magia"
+  ],
+  "abilities": [
+    {
+      "name": "Almacenar Hechizo",
+      "cost": "1 acción",
+      "uses": "Ilimitado",
+      "description": "Puedes almacenar hasta 3 puntos de Chi en el anillo. Posteriormente puedes usar ese Chi almacenado como si fuera propio."
+    }
+  ]
+}

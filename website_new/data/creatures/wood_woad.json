@@ -1,0 +1,71 @@
+{
+  "id": "wood_woad",
+  "name": "Wood Woad",
+  "level": 8,
+  "type": "plant",
+  "size": "Medium",
+  "hp": 26,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+2d6",
+    "WILL": "+9",
+    "MIND": "+9+1d6"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 10,
+    "general": 8
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Club",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Shield Bash",
+      "cost": "1 action",
+      "damage": "3d8 bludgeoning",
+      "effect": "Target must pass PHYS save or be knocked prone and have -1d6 to their next attack."
+    },
+    {
+      "name": "Tree Stride",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Wood Woad steps into one tree and emerges from another within 18m. Can then make a Club attack as part of this action."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Wooden Shield",
+      "cost": "1 reaction",
+      "effect": "Raises its bark shield, adding +4 to physical defense against one attack."
+    },
+    {
+      "name": "Nature's Vengeance",
+      "cost": "1 reaction",
+      "effect": "When an ally plant creature within 6m is damaged, the Wood Woad can immediately move half its speed and make a Club attack against the attacker."
+    }
+  ],
+  "resistances": ["bludgeoning", "piercing"],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Regeneration",
+      "desc": "Regains 5 HP at start of each turn while in contact with the ground in a natural area. Does not function if the Wood Woad took fire damage last turn."
+    },
+    {
+      "name": "Plant Camouflage",
+      "desc": "In forested or heavily vegetated areas, the Wood Woad is nearly invisible (+2d6 to stealth)."
+    },
+    {
+      "name": "Nature Bound",
+      "desc": "The Wood Woad is bound to a specific forest. If it leaves, it loses its Regeneration trait."
+    }
+  ],
+  "lore": "Wood Woads are fey-touched plant warriors created when a mortal pledges their life to protect a forest. They are reborn as living wood, eternally guarding their sacred grove. They are skilled fighters who use the trees themselves to ambush intruders."
+}

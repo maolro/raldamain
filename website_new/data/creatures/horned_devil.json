@@ -1,0 +1,77 @@
+{
+  "id": "horned_devil",
+  "name": "Horned Devil",
+  "level": 14,
+  "type": "devil",
+  "size": "Large",
+  "hp": 50,
+  "shields": 5,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+13+2d6",
+    "MIND": "+13+1d6"
+  },
+  "defenses": {
+    "physical": 20,
+    "magical": 15,
+    "general": 13
+  },
+  "attackRoll": "+13+4d6",
+  "magicRoll": "+13+2d6",
+  "actions": [
+    {
+      "name": "Infernal Fork",
+      "cost": "1 action",
+      "damage": "5d10 piercing + fire",
+      "effect": null
+    },
+    {
+      "name": "Tail Whip",
+      "cost": "1 action",
+      "damage": "4d10 bludgeoning",
+      "effect": "Target must pass PHYS save or be pushed 6m and have an Infernal Wound (loses 2d10 HP at start of each turn until healed by magic)."
+    },
+    {
+      "name": "Hurl Flame",
+      "cost": "1 action",
+      "damage": "4d10 fire",
+      "effect": "Ranged attack at long range. Creates a 3m radius fire zone that burns for 1 minute (2d10 fire to creatures entering or starting turn in it)."
+    },
+    {
+      "name": "Infernal Charge",
+      "cost": "2 actions",
+      "damage": "6d10 piercing + fire",
+      "effect": "The devil charges up to 12m and impales the target on its fork. Target must pass PHYS save or be impaled (restrained, takes 3d10 piercing at start of each turn)."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Infernal Resilience",
+      "cost": "1 reaction",
+      "effect": "Reduces damage from one attack by 3d10."
+    },
+    {
+      "name": "Magic Resistance",
+      "cost": "1 reaction",
+      "effect": "+3d6 to a save against a spell or magical effect."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    },
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of reach."
+    },
+    {
+      "name": "Infernal Wounds",
+      "desc": "Wounds inflicted by the Horned Devil bleed profusely and cannot be healed by non-magical means."
+    }
+  ],
+  "lore": "Horned Devils are the shock troops and elite enforcers of the Nine Hells. Towering brutes with massive wings and burning forks, they are unleashed when overwhelming force is required. They fight with a terrifying combination of aerial mobility and brute strength."
+}

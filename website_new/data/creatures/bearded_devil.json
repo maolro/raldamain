@@ -1,0 +1,61 @@
+{
+  "id": "bearded_devil",
+  "name": "Bearded Devil",
+  "level": 6,
+  "type": "devil",
+  "size": "Medium",
+  "hp": 20,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+7+2d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Glaive",
+      "cost": "1 action",
+      "damage": "4d6 slashing",
+      "effect": "Target suffers an Infernal Wound: loses 1d6 HP at the start of each turn until healed by magic or a medicine check."
+    },
+    {
+      "name": "Beard Lash",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": "Target must pass PHYS save or be poisoned for 1 round, unable to regain HP."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Steadfast",
+      "cost": "1 reaction",
+      "effect": "When an effect would push the Bearded Devil or knock it prone, it can ignore the effect."
+    },
+    {
+      "name": "Glaive Brace",
+      "cost": "1 reaction",
+      "effect": "When a creature enters reach, the Bearded Devil makes a Glaive attack against it."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    }
+  ],
+  "lore": "Bearded Devils are the disciplined infantry of Hell's legions. Their glaives inflict wounds that bleed endlessly, and their writhing, venomous beards can poison those who get too close. They fight with unflinching, mechanical precision."
+}

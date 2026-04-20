@@ -1,0 +1,18 @@
+{
+  "id": "gran_hacha_carnicero",
+  "name": "Gran Hacha del Carnicero",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "gran_hacha_carnicero.jpg",
+  "description": "Un hacha brutal con una hoja dentada y manchas de óxido que nunca se limpian. Cada golpe desgarra la carne de forma terrible.",
+  "damage": "2d8 + FUE",
+  "damageType": "Cortante",
+  "price": "8 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Pesada</b>: Desventaja en tiradas de Parada",
+    "<b>Brutal:</b> Cuando haces daño crítico, tira los dados de daño tres veces en vez de dos"
+  ]
+}

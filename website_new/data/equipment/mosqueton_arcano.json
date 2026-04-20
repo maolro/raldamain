@@ -1,0 +1,19 @@
+{
+  "id": "mosqueton_arcano",
+  "name": "Mosquetón Arcano",
+  "type": "Arma Mágica",
+  "subtype": "Arma de Fuego",
+  "rarity": "Rara",
+  "image": "mosqueton_arcano.jpg",
+  "description": "Un mosquetón iskariano modificado con cristales de Chi integrados en el cañón. Dispara proyectiles envueltos en energía arcana.",
+  "damage": "2d8 + DES + 1d8 arcano",
+  "damageType": "Perforante + Arcano",
+  "price": "25 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>",
+    "<b>Recarga Arcana:</b> Se recarga mágicamente, no requiere acción de recarga convencional",
+    "<b>Sin Fallos:</b> Inmune al efecto de encasquillamiento en 1 natural"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cristal_chi",
+  "name": "Cristal de Chi Primordial",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Muy Rara",
+  "image": "cristal_chi.jpg",
+  "description": "Un cristal de Chi del tamaño de un puño que late con energía primordial. Su brillo ilumina la habitación con luz arcana.",
+  "price": "30 CR",
+  "properties": [
+    "<b>Sintonización</b>: Por un usuario de magia"
+  ],
+  "abilities": [
+    {
+      "name": "Reserva Primordial",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu reserva máxima de Chi aumenta en +5."
+    },
+    {
+      "name": "Sobrecarga",
+      "cost": "Acción libre",
+      "uses": "1/día",
+      "description": "Cuando lanzas un hechizo o habilidad que cuesta Chi, puedes duplicar su efecto (dados de daño, duración o área) sin coste adicional de Chi."
+    }
+  ]
+}

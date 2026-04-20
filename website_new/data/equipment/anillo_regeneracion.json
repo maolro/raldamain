@@ -1,0 +1,21 @@
+{
+  "id": "anillo_regeneracion",
+  "name": "Anillo de Regeneración",
+  "type": "Objeto Mágico",
+  "subtype": "Anillo",
+  "rarity": "Muy Rara",
+  "image": "anillo_regeneracion.jpg",
+  "description": "Un anillo de jade con vetas doradas que pulsan como un latido. La carne del portador se cierra y regenera con velocidad antinatural.",
+  "price": "25 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Regeneración",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Recuperas 1 punto de Vitalidad al inicio de cada uno de tus turnos si tienes al menos 1 PV. Además, miembros amputados se regeneran en 1d4 días."
+    }
+  ]
+}

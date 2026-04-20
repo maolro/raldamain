@@ -1,0 +1,62 @@
+{
+  "id": "ice_elemental",
+  "name": "Ice Elemental",
+  "level": 8,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 28,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+1d6",
+    "WILL": "+9",
+    "MIND": "+5"
+  },
+  "defenses": {
+    "physical": 13,
+    "magical": 9,
+    "general": 7
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Ice Fist",
+      "cost": "1 action",
+      "damage": "4d8 cold + bludgeoning",
+      "effect": "Target must pass PHYS save or have their movement halved for 1 round."
+    },
+    {
+      "name": "Frost Breath",
+      "cost": "2 actions",
+      "damage": "4d8 cold",
+      "effect": "6m cone. All targets must pass PHYS save or be encased in ice (restrained) for 1 round. PHYS save at end of turn to break free."
+    },
+    {
+      "name": "Ice Spike",
+      "cost": "1 action",
+      "damage": "3d8 piercing + cold",
+      "effect": "Ranged attack. A javelin of ice launches at a target."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Flash Freeze",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the attacker's weapon or limb freezes to the elemental. Attacker must pass PHYS save or lose their weapon (it's frozen in place) or take 2d8 cold damage."
+    }
+  ],
+  "resistances": ["piercing", "slashing"],
+  "immunities": ["cold", "poison"],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Freezing Aura",
+      "desc": "Water freezes within 6m of the elemental. The ground in this radius is difficult terrain for non-cold-immune creatures."
+    },
+    {
+      "name": "Ice Walk",
+      "desc": "Can move across icy surfaces without needing to make checks. Difficult terrain from ice does not affect it."
+    }
+  ],
+  "lore": "Ice Elementals form where the planes of water and air converge in biting cold. They are living glaciers, slow but inexorable, freezing everything they touch solid."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "espada_feyn",
+  "name": "Espada de Feyn",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Legendaria",
+  "image": "espada_feyn.jpg",
+  "description": "La legendaria espada que Feyn portó cuando descendió al mundo. Su hoja es de luz solidificada y su empuñadura muestra el símbolo del primer imperio. Nadie la ha visto desde la Desaparición.",
+  "damage": "2d6 + FUE + 2d8 radiante",
+  "damageType": "Cortante + Radiante",
+  "price": "100 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>: Solo puede ser empuñada por alguien de corazón puro (a criterio del DJ)",
+    "<b>Artefacto</b>: No puede ser destruida por medios convencionales"
+  ],
+  "abilities": [
+    {
+      "name": "Juicio de Feyn",
+      "cost": "2 acciones + 3 Chi",
+      "uses": "1/día",
+      "description": "La espada emite un estallido de luz divina. Todos los enemigos en 12m deben superar WILL (CD 22) o recibir 6d10 radiante y quedar Cegados 1 turno. No-muertos y demonios reciben el doble."
+    },
+    {
+      "name": "Aura del Primer Rey",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Mientras empuñas la espada, eres inmune a Miedo, encantamiento y posesión. Aliados en 9m ganan +1d6 a todas sus salvaciones."
+    },
+    {
+      "name": "Luz Eterna",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "La espada emite luz brillante en 9m y luz tenue en 18m. Esta luz no puede ser apagada por ningún medio mágico."
+    }
+  ],
+  "lore": "Se dice que Feyn dejó su espada oculta para quien la mereciera cuando el mundo la necesitase de nuevo. Los Caballeros de Ustilus la han buscado durante una década."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "banshee",
+  "name": "Banshee",
+  "level": 12,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 35,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+11",
+    "WILL": "+11+3d6",
+    "MIND": "+11+2d6"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 15,
+    "general": 13
+  },
+  "attackRoll": null,
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Wail",
+      "cost": "2 actions",
+      "damage": "6d8 psychic",
+      "effect": "All creatures within 9m must pass WILL save. On failure, they take full damage. Creatures that fail by 5 or more drop to 0 HP instead. Usable once per encounter."
+    },
+    {
+      "name": "Corrupting Touch",
+      "cost": "1 action",
+      "damage": "5d8 necrotic",
+      "effect": "Melee magical attack. The target's maximum HP is reduced by the damage dealt until they finish a long rest."
+    },
+    {
+      "name": "Horrifying Visage",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "All creatures within 18m that can see the Banshee must pass WILL save or be frightened for 1 minute. Frightened creatures are paralyzed while they can see the Banshee."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Incorporeal Passage",
+      "cost": "1 reaction",
+      "effect": "When hit by a physical attack, the Banshee shifts partially out of phase, reducing physical damage taken by half."
+    },
+    {
+      "name": "Mournful Cry",
+      "cost": "1 reaction",
+      "effect": "When an ally within 9m is reduced to 0 HP, the Banshee lets out a cry. All enemies within 9m take 2d8 psychic damage."
+    }
+  ],
+  "resistances": ["cold", "necrotic"],
+  "immunities": ["poison", "psychic"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Incorporeal",
+      "desc": "Can move through creatures and objects as difficult terrain. Takes 2d8 force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Detect Life",
+      "desc": "Can sense all living creatures within 1.5km, knowing their exact location."
+    },
+    {
+      "name": "Undying Grief",
+      "desc": "When the Banshee is reduced to 0 HP, it reforms after 24 hours unless its remains are blessed with radiant magic or its unfinished business is resolved."
+    }
+  ],
+  "lore": "Banshees are the tormented spirits of elven women who were cursed in life by their own vanity or cruelty. Their wail is a harbinger of death, echoing across the night as a warning that none who hear it will soon forget. They haunt the ruins of places that held meaning in their mortal lives."
+}

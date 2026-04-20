@@ -1,0 +1,62 @@
+{
+  "id": "pixie",
+  "name": "Pixie",
+  "level": 4,
+  "type": "spirit_fey",
+  "size": "Tiny",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 8,
+    "magical": 9,
+    "general": 6
+  },
+  "attackRoll": null,
+  "magicRoll": "+7+1d6",
+  "actions": [
+    {
+      "name": "Pixie Dust",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Sprinkles enchanted dust on a target. Target must pass WILL save or fall asleep for 1d4 rounds. Any damage wakes the target."
+    },
+    {
+      "name": "Illusory Swarm",
+      "cost": "2 actions",
+      "damage": "3d6 psychic",
+      "effect": "Creates illusory duplicates that swarm the target, causing confusion. Target has disadvantage on their next attack."
+    },
+    {
+      "name": "Shrink",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "Shrinks one target to Tiny size for 1d4 rounds. Target's physical damage is halved. WILL save negates."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Greater Invisibility",
+      "cost": "1 reaction",
+      "effect": "When targeted by an attack, the Pixie turns invisible until the end of its next turn. Attacking breaks the invisibility."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["cold iron"],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The Pixie can fly and does not provoke reactions when leaving an enemy's reach."
+    },
+    {
+      "name": "Naturally Invisible",
+      "desc": "The Pixie can turn invisible at will as a free action at the end of its turn if it did not attack."
+    }
+  ],
+  "lore": "Pixies are mischievous tiny fey who delight in pranks and trickery. They inhabit enchanted glades and fairy rings, using their innate magic to confound and bewilder intruders into their domain."
+}

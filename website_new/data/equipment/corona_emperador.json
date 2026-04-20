@@ -1,0 +1,35 @@
+{
+  "id": "corona_emperador",
+  "name": "Corona del Emperador Eterno",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Ligera",
+  "rarity": "Legendaria",
+  "image": "corona_emperador.jpg",
+  "description": "Una corona de platino con siete gemas que representan las siete virtudes del primer imperio. Quien la porte irradia una autoridad que trasciende la mortalidad.",
+  "defense": "2",
+  "price": "80 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Autoridad Absoluta",
+      "cost": "1 acción + 3 Chi",
+      "uses": "3/día",
+      "description": "Emites un comando que todos los que te escuchen en 18m deben superar WILL (CD 22) o obedecer durante 1 turno. No funciona contra criaturas inmunes a encantamiento."
+    },
+    {
+      "name": "Presencia Imperial",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu CAR se incrementa en +2 (hasta el máximo de tu nivel). Eres inmune a Miedo y encantamiento. Aliados en 9m ganan +1d6 a tiradas de WILL."
+    },
+    {
+      "name": "Inmortalidad del Trono",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Mientras lleves la corona, no envejeces y eres inmune a enfermedades y venenos."
+    }
+  ]
+}

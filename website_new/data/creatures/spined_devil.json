@@ -1,0 +1,62 @@
+{
+  "id": "spined_devil",
+  "name": "Spined Devil",
+  "level": 6,
+  "type": "devil",
+  "size": "Small",
+  "hp": 16,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 8,
+    "general": 6
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Tail Spine",
+      "cost": "1 action",
+      "damage": "3d6 piercing + 1d6 fire",
+      "effect": "Ranged attack at medium range. The spine embeds in the target, dealing 1d6 fire at the start of each turn until removed (1 action)."
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": null
+    },
+    {
+      "name": "Spine Volley",
+      "cost": "2 actions",
+      "damage": "3d6 piercing + fire",
+      "effect": "Launches spines at up to 3 targets within medium range."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Evasive Flight",
+      "cost": "1 reaction",
+      "effect": "When targeted by a melee attack, the Spined Devil flies up to 6m away without provoking reactions."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of reach."
+    },
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    }
+  ],
+  "lore": "Spined Devils are winged, spine-covered fiends that serve as scouts and harassers in infernal armies. They circle above battlefields, peppering enemies with burning tail spines while staying out of melee range."
+}

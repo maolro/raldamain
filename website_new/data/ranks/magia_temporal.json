@@ -9,7 +9,7 @@
   ],
   "description": "Manipulas el flujo del tiempo haciendo pequeñas modificaciones en lo escrito por el universo. Tienes premoniciones, reviertes daños, aceleras o ralentizas a las criaturas y, en tus niveles más altos, puedes detener el tiempo o retroceder eventos enteros en el campo de batalla.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango."
   ],
   "levels": [
@@ -24,8 +24,8 @@
             "Arcana",
             "Pasiva"
           ],
-          "desc": "Repetir un tiro (ataque, defensa, salvación, habilidad) y elegir el mejor. Usos diarios: Rango + 2.",
-          "empower": "Recuperas un uso de esta habilidad."
+          "desc": "Puedes repetir un tiro (ataque, defensa, salvación o habilidad) y elegir el mejor resultado. Tienes Rango + 2 usos diarios.",
+          "empower": "Recuperas un uso gastado de Premonición."
         },
         {
           "name": "Alteración Temporal",
@@ -37,8 +37,8 @@
           "cost": "2 acciones",
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
-          "desc": "Repara objeto (quita estado Roto) o sana a aliado (Rango + 2 Vitalidad) revertiendo daño reciente (ronda pasada).",
-          "empower": "Afecta área pequeña o reduce herida permanente/aflicción un paso."
+          "desc": "Reviertes daño reciente (de la ronda pasada). Puedes reparar un objeto (elimina estado Roto) o sanar a un aliado por Rango + 2 de Vitalidad.",
+          "empower": "Afecta un área pequeña o reduces una herida permanente o aflicción un paso."
         },
         {
           "name": "Robar el Tiempo",
@@ -52,8 +52,8 @@
           "cost": "1 acción",
           "range": "Cuerpo a cuerpo",
           "crit": "Objetivo fatigado una ronda.",
-          "desc": "Envejece al objetivo (CON vs Temporal). Daño 1d6 + Rango Fuerza (traspasa defensa). Rompe objetos no mágicos o reduce duración hechizos (-2 rondas).",
-          "empower": "Aumenta alcance a medio o afecta objetivo adicional."
+          "desc": "Envejeces al objetivo (tiro de salvación de CON contra tu Magia Temporal). Inflige 1d6 + Rango de daño de Fuerza que traspasa la defensa. Rompe objetos no mágicos o reduce la duración de hechizos en -2 rondas.",
+          "empower": "Aumenta el alcance a medio o afecta a un objetivo adicional."
         }
       ]
     },
@@ -72,7 +72,7 @@
           "cost": "2 acciones, 1 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "Otorga acción adicional y Ventaja en tiros de DES.",
+          "desc": "El objetivo obtiene una acción adicional por turno y Ventaja en tiros de DES.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -86,8 +86,8 @@
           "range": "Medio",
           "area": "Radio pequeño",
           "duration": "Concentración",
-          "desc": "Zona de tiempo lento. Enemigos tiran Salud vs Temporal o quedan Ralentizados. Puedes mover la zona como acción bonus.",
-          "empower": "Ralentizas tiempo alrededor de ti (Desventaja ataques enemigos 1 ronda)."
+          "desc": "Creas una zona de tiempo ralentizado. Los enemigos en su interior deben superar un tiro de salvación de Salud contra tu Magia Temporal o quedan Ralentizados. Puedes mover la zona como acción bonus.",
+          "empower": "Ralentizas el tiempo a tu alrededor, imponiendo Desventaja en ataques enemigos durante 1 ronda."
         },
         {
           "name": "Desplazamiento",
@@ -99,7 +99,7 @@
           ],
           "cost": "1 chi",
           "duration": "Instantánea",
-          "desc": "Evitas un impacto reduciendo el daño a 0 y evitando efectos de estado directos (no funciona contra Mental/Miedo/Maldición).",
+          "desc": "Como reacción, reduces el daño de un impacto a 0 y evitas todos los efectos de estado directos. No funciona contra efectos Mentales, de Miedo ni Maldiciones.",
           "empower": "N/A"
         }
       ]
@@ -116,7 +116,7 @@
             "Arcana",
             "Ritual"
           ],
-          "desc": "Recibes una visión del pasado, presente o futuro relacionada con un objeto/lugar/persona presente durante el ritual."
+          "desc": "Mediante un ritual, recibes una visión del pasado, presente o futuro relacionada con un objeto, lugar o persona presente durante el ritual."
         },
         {
           "name": "Predecir Movimiento",
@@ -127,8 +127,8 @@
           ],
           "cost": "2 chi",
           "duration": "Instantánea",
-          "desc": "Éxito automático en un tiro defensivo o de habilidad como reacción (salvo Aflicción/Mental/Miedo/Maldición/Agarre).",
-          "empower": "Puedes volver a usar este hechizo esta ronda."
+          "desc": "Como reacción, obtienes éxito automático en un tiro defensivo o de habilidad. No funciona contra efectos de Aflicción, Mentales, de Miedo, Maldición ni Agarre.",
+          "empower": "Puedes volver a usar este hechizo una vez más esta ronda."
         },
         {
           "name": "Dobles Temporales",
@@ -140,8 +140,8 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Crea copias (cantidad = Rango). Reacción: Sacrificar doble para recibir impacto o anular tu propia acción reciente (recuperando costes).",
-          "empower": "Restaura la mitad de tus dobles temporales."
+          "desc": "Creas copias temporales de ti mismo (cantidad igual a tu Rango). Como reacción, puedes sacrificar un doble para absorber un impacto o anular tu propia acción más reciente (recuperando los costes gastados).",
+          "empower": "Restauras la mitad de tus dobles temporales."
         }
       ]
     },
@@ -158,8 +158,8 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Cuatro rondas",
-          "desc": "Guarda estado actual (Vit, PV, estados, posición). Puedes volver a ese estado como acción bonus (o automático al morir). No restaura chi ni duraciones.",
-          "empower": "Lanza el hechizo sobre otro personaje (CON vs Temporal si es hostil)."
+          "desc": "Guardas tu estado actual (Vitalidad, PV, estados y posición). En cualquier momento durante la duración, puedes volver a ese estado como acción bonus (o automáticamente al morir). No restaura chi gastado ni duraciones de hechizos.",
+          "empower": "Lanzas el hechizo sobre otro personaje (tiro de salvación de CON contra tu Magia Temporal si es hostil)."
         },
         {
           "name": "Estasis",
@@ -172,7 +172,7 @@
           "range": "Medio",
           "crit": "Objetivo no puede intentar liberarse la primera ronda.",
           "duration": "Concentración",
-          "desc": "Congela objetivo (CON vs Temporal). Paralizado hasta recibir daño o perder concentración. 3 fallos = congelado 1 día.",
+          "desc": "Congelas al objetivo en el tiempo (tiro de salvación de CON contra tu Magia Temporal). El objetivo queda Paralizado hasta que reciba daño o pierdas la concentración. Si falla el tiro de salvación 3 veces, queda congelado durante 1 día.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -184,7 +184,7 @@
           ],
           "cost": "2 chi",
           "duration": "Instantáneo",
-          "desc": "Lanza un ataque/hechizo para que impacte en el futuro (mínimo 1 ronda). Al impactar: Acción bonus, Efecto Crítico y Ataque Sorpresa.",
+          "desc": "Lanzas un ataque o hechizo que impacta en el futuro (mínimo 1 ronda de retraso). Al impactar, el ataque se beneficia de acción bonus, efecto crítico y cuenta como ataque sorpresa.",
           "empower": "N/A"
         }
       ]
@@ -205,8 +205,8 @@
           "cost": "3 acciones, 3 chi",
           "area": "Esfera grande",
           "duration": "Una ronda",
-          "desc": "Paraliza a todos (CON vs Temporal) y te da un turno extra inmediato. Termina si atacas a un afectado.",
-          "empower": "Extiende el efecto una ronda adicional al final de tu turno (sin coste)."
+          "desc": "Todas las criaturas en el área deben superar un tiro de salvación de CON contra tu Magia Temporal o quedan Paralizadas. Obtienes un turno extra inmediato. El efecto termina si atacas a un afectado.",
+          "empower": "Extiendes el efecto una ronda adicional al final de tu turno sin coste."
         },
         {
           "name": "Visión Futura",
@@ -217,8 +217,8 @@
           ],
           "cost": "3 chi",
           "duration": "Seis rondas",
-          "desc": "Ventaja en todos los tiros (ataque, defensa, habilidad) e Inmunidad a Sorpresa. Recuperas 1 Premonición/turno y puedes usarlas para Predecir Movimiento.",
-          "empower": "Otorga el hechizo a un aliado."
+          "desc": "Obtienes Ventaja en todos los tiros (ataque, defensa y habilidad) e inmunidad a sorpresa. Recuperas 1 uso de Premonición por turno y puedes usar Premonición para activar Predecir Movimiento.",
+          "empower": "Otorgas el efecto a un aliado."
         },
         {
           "name": "Brecha Temporal",
@@ -230,8 +230,8 @@
           "cost": "3 acciones, 3 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
-          "desc": "Controlas el tiempo en la zona (duración relativa). Eliges orden de iniciativa. Hechizos temporales cuestan -1 acción (0 = acción bonus).",
-          "empower": "Lanza hechizo temporal de 1 acción como acción bonus."
+          "desc": "Controlas el flujo del tiempo en la zona. Eliges el orden de iniciativa de las criaturas dentro. Tus hechizos temporales cuestan -1 acción (mínimo 0, que se convierte en acción bonus).",
+          "empower": "Lanzas un hechizo temporal de 1 acción como acción bonus."
         }
       ]
     },
@@ -250,7 +250,7 @@
           "cost": "3 acciones, 5 chi",
           "area": "Esfera grande",
           "duration": "Cinco rondas",
-          "desc": "Guarda estado del campo de batalla. Puedes activarlo para revertir todo al estado guardado (stats, posiciones, estados). Elimina efectos duraderos posteriores.",
+          "desc": "Guardas el estado completo del campo de batalla. En cualquier momento durante la duración, puedes activar el retroceso para revertir todo al estado guardado (estadísticas, posiciones y estados). Elimina todos los efectos duraderos aplicados después del momento guardado.",
           "empower": "N/A"
         }
       ]

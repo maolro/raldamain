@@ -1,0 +1,32 @@
+{
+  "id": "armadura_dioses",
+  "name": "Armadura de los Dioses",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Pesada",
+  "rarity": "Legendaria",
+  "image": "armadura_dioses.jpg",
+  "description": "Una armadura resplandeciente de metal divino que parece hecha de amanecer solidificado. Fue forjada antes de la Guerra de los Dioses y pocos mortales la han vestido.",
+  "defense": "12",
+  "price": "100 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Divina:</b> Inmunidad a daño necrótico y veneno",
+    "<b>Irrompible:</b> No puede ser dañada ni destruida"
+  ],
+  "abilities": [
+    {
+      "name": "Escudo Divino",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Resistencia a todo daño mágico. +3 a todas las salvaciones."
+    },
+    {
+      "name": "Intervención Divina",
+      "cost": "1 reacción",
+      "uses": "1/día",
+      "description": "Cuando recibirías daño que te reduciría a 0 PV, en su lugar quedas con 1 PV y el daño se anula completamente."
+    }
+  ],
+  "penalties": "Ninguna. La armadura no tiene penalizaciones."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "purple_worm",
+  "name": "Purple Worm",
+  "level": 14,
+  "type": "monster",
+  "size": "Gargantuan",
+  "hp": 50,
+  "shields": 5,
+  "saves": {
+    "PHYS": "+13+3d6",
+    "WILL": "+5",
+    "MIND": "+5"
+  },
+  "defenses": {
+    "physical": 20,
+    "magical": 13,
+    "general": 12
+  },
+  "attackRoll": "+13+4d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "6d10 piercing",
+      "effect": "Target must pass PHYS save or be swallowed. Swallowed creatures are blinded, restrained, and take 5d10 acid damage at the start of each of the worm's turns. If the worm takes 20 damage from inside, it regurgitates."
+    },
+    {
+      "name": "Tail Stinger",
+      "cost": "1 action",
+      "damage": "4d10 piercing + 4d10 poison",
+      "effect": "Target must pass PHYS save or take full poison damage. On success, half poison damage."
+    },
+    {
+      "name": "Tunneling Charge",
+      "cost": "2 actions",
+      "damage": "5d10 bludgeoning",
+      "effect": "The worm burrows underground and erupts beneath its target. All creatures within 3m of the eruption point must pass PHYS save or take damage and be knocked prone."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Thrash",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the worm's body convulses. All creatures within 3m must pass PHYS save or take 3d10 bludgeoning and be pushed 6m."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Tunneler",
+      "desc": "Can burrow through solid rock, leaving a 3m diameter tunnel. Moves through earth at full speed."
+    },
+    {
+      "name": "Tremorsense",
+      "desc": "Can detect creatures touching the ground within 30m."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "Deals double damage to objects and structures."
+    }
+  ],
+  "lore": "Purple Worms are among the most terrifying subterranean predators, massive burrowing beasts that can swallow a horse whole. Their tunnels riddle the Underdark, and entire settlements have been consumed when a Purple Worm erupts from below."
+}

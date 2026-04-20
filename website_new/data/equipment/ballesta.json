@@ -1,0 +1,18 @@
+{
+  "id": "ballesta",
+  "name": "Ballesta",
+  "type": "Arma",
+  "subtype": "Arma Marcial a Distancia",
+  "rarity": "Común",
+  "image": "ballesta.jpg",
+  "description": "Un arma mecánica que dispara virotes con fuerza devastadora. Requiere recarga pero no necesita gran fuerza física.",
+  "damage": "1d10 + DES",
+  "damageType": "Perforante",
+  "price": "1 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Recarga</b>: Cuesta 1 acción recargar",
+    "<b>Munición</b>: Requiere virotes"
+  ]
+}

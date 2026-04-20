@@ -1,0 +1,60 @@
+{
+  "id": "imp",
+  "name": "Imp",
+  "level": 4,
+  "type": "devil",
+  "size": "Tiny",
+  "hp": 10,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 9,
+    "general": 6
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Poison Sting",
+      "cost": "1 action",
+      "damage": "2d6 piercing + 2d6 poison",
+      "effect": "Target must pass PHYS save or be poisoned for 1 minute."
+    },
+    {
+      "name": "Invisibility",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Imp turns invisible until it attacks or loses concentration."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shapeshift Escape",
+      "cost": "1 reaction",
+      "effect": "When hit, the Imp shifts into a rat, raven, or spider and scurries up to 6m away. +3 to defenses against the triggering attack."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Can polymorph into a rat, raven, or spider, or back to its true form. Stats remain the same."
+    },
+    {
+      "name": "Devil's Sight",
+      "desc": "Can see perfectly in magical and non-magical darkness up to 36m."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "+1d6 to saves against spells and magical effects."
+    }
+  ],
+  "lore": "Imps are small, devious devils that serve as familiars, messengers, and spies for more powerful fiends and mortal warlocks. They are patient corruptors, whispering temptations and keeping careful records of their master's sins."
+}

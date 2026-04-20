@@ -1,0 +1,16 @@
+{
+  "id": "espada_corta",
+  "name": "Espada Corta",
+  "type": "Arma",
+  "subtype": "Arma Simple Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "espada_corta.jpg",
+  "description": "Una hoja recta y ligera de unos 60 centímetros. Popular entre soldados y aventureros por su versatilidad en espacios reducidos.",
+  "damage": "1d6 + FUE/DES",
+  "damageType": "Cortante",
+  "price": "0 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Ligera</b>: Puedes usar FUE o DES para tiros de ataque"
+  ]
+}

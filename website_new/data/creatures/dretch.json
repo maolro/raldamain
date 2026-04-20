@@ -1,0 +1,62 @@
+{
+  "id": "dretch",
+  "name": "Dretch",
+  "level": 4,
+  "type": "demon",
+  "size": "Small",
+  "hp": 12,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 9,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Claws",
+      "cost": "1 action",
+      "damage": "3d6 slashing",
+      "effect": null
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": null
+    },
+    {
+      "name": "Fetid Cloud",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "A 3m radius cloud of disgusting gas. All creatures in the area must pass PHYS save or be poisoned (disadvantage on attacks) for 1 round. Usable once per encounter."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Desperate Flail",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the Dretch claws wildly, dealing 1d6 slashing to the attacker."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Mob Fighter",
+      "desc": "When at least 2 other Dretches are within 3m, the Dretch has +1d6 to attack rolls."
+    },
+    {
+      "name": "Abyssal Resilience",
+      "desc": "Resistant to non-magical physical damage."
+    }
+  ],
+  "lore": "Dretches are the lowest and most pitiful of demons, formed from the souls of the wretched and cowardly. They are used as cannon fodder by greater demons and are most dangerous in large numbers, where their fetid stench can overwhelm even hardened warriors."
+}

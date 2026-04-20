@@ -1,0 +1,21 @@
+{
+  "id": "pergamino_proteccion",
+  "name": "Pergamino de Protección contra el Mal",
+  "type": "Objeto Mágico",
+  "subtype": "Pergamino",
+  "rarity": "Rara",
+  "image": "pergamino_proteccion.jpg",
+  "description": "Un pergamino de vitela con oraciones protectoras escritas en tinta de plata. Al leerlo, una barrera invisible rodea al lector.",
+  "price": "5 CR",
+  "properties": [
+    "<b>Consumible:</b> Se destruye al usarse"
+  ],
+  "abilities": [
+    {
+      "name": "Protección contra el Mal",
+      "cost": "1 acción",
+      "uses": "Una vez",
+      "description": "Durante 10 minutos, no-muertos, demonios y diablos tienen Desventaja en ataques contra ti y no pueden poseerte ni encantarte."
+    }
+  ]
+}

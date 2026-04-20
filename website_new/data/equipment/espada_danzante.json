@@ -1,0 +1,21 @@
+{
+  "id": "espada_danzante",
+  "name": "Espada Danzante",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "espada_danzante.jpg",
+  "description": "Una espada larga de hoja iridiscente que parece tener voluntad propia. Cuando se libera, flota y combate sola.",
+  "damage": "1d8 + FUE",
+  "damageType": "Cortante",
+  "price": "8 CR",
+  "range": "Cuerpo a cuerpo",
+  "abilities": [
+    {
+      "name": "Danza de la Espada",
+      "cost": "1 acción + 2 Chi",
+      "uses": "1/día",
+      "description": "La espada flota y ataca por sí sola durante 1 minuto, usando tu bonificador de ataque. Puedes dirigirla como acción bonus a un objetivo dentro de 9m."
+    }
+  ]
+}

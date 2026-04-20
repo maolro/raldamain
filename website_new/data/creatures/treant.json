@@ -1,0 +1,71 @@
+{
+  "id": "treant",
+  "name": "Treant",
+  "level": 12,
+  "type": "plant",
+  "size": "Huge",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+3d6",
+    "WILL": "+11+1d6",
+    "MIND": "+11+2d6"
+  },
+  "defenses": {
+    "physical": 17,
+    "magical": 12,
+    "general": 11
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+1d6",
+  "actions": [
+    {
+      "name": "Slam",
+      "cost": "1 action",
+      "damage": "6d8 bludgeoning",
+      "effect": "Target must pass PHYS save or be knocked prone and pushed 3m."
+    },
+    {
+      "name": "Rock Throw",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning",
+      "effect": "Ranged attack at long range."
+    },
+    {
+      "name": "Animate Trees",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Two trees within 18m become Awakened Trees (20 HP, +9+1d6 attack, 3d8 bludgeoning slam) that act on the Treant's turn for 1 minute. Can only have 2 animated trees at a time."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Bark Armor",
+      "cost": "1 reaction",
+      "effect": "Hardens its bark, reducing physical damage from one attack by 3d8."
+    },
+    {
+      "name": "Entangling Roots",
+      "cost": "1 reaction",
+      "effect": "When a creature moves within 6m, roots erupt from the ground. Target must pass PHYS save or be restrained."
+    }
+  ],
+  "resistances": ["bludgeoning", "piercing"],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Siege Monster",
+      "desc": "Deals double damage to objects and structures."
+    },
+    {
+      "name": "Speak with Plants",
+      "desc": "Can communicate with all plants within 1km, learning of creatures that have passed through."
+    },
+    {
+      "name": "False Appearance",
+      "desc": "While motionless, the Treant is indistinguishable from a large tree."
+    }
+  ],
+  "lore": "Treants are ancient, awakened trees that serve as guardians of primeval forests. They can stand motionless for decades, rousing only when their forest is threatened. In battle, they animate other trees and hurl boulders with devastating force."
+}

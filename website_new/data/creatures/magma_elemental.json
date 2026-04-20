@@ -1,0 +1,67 @@
+{
+  "id": "magma_elemental",
+  "name": "Magma Elemental",
+  "level": 12,
+  "type": "elemental",
+  "size": "Large",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 17,
+    "magical": 12,
+    "general": 10
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Magma Fist",
+      "cost": "1 action",
+      "damage": "5d8 bludgeoning + fire",
+      "effect": "Target catches fire, taking 2d8 fire damage at the start of each turn until extinguished."
+    },
+    {
+      "name": "Lava Pool",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "The elemental melts the ground in a 6m radius around itself. The area becomes a pool of lava for 1 minute. Creatures entering or starting their turn in the pool take 4d8 fire damage."
+    },
+    {
+      "name": "Eruption",
+      "cost": "2 actions",
+      "damage": "6d8 fire",
+      "effect": "The elemental erupts, spraying magma in a 9m radius. All creatures must pass PHYS save for half damage. The area becomes difficult terrain."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Molten Shell",
+      "cost": "1 reaction",
+      "effect": "When hit by a physical attack, the attacker's weapon takes damage from the heat. Non-magical weapons are destroyed; magical weapons have -1 to damage rolls for the rest of the encounter."
+    },
+    {
+      "name": "Lava Splash",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack from within 3m, the attacker takes 2d8 fire damage from splashing magma."
+    }
+  ],
+  "resistances": ["slashing", "piercing", "bludgeoning"],
+  "immunities": ["fire", "poison"],
+  "vulnerabilities": ["cold"],
+  "traits": [
+    {
+      "name": "Molten Body",
+      "desc": "The elemental's body is semi-liquid magma. It illuminates a 12m radius. Creatures grappled by it take 3d8 fire damage per round."
+    },
+    {
+      "name": "Hardened Crust",
+      "desc": "When the elemental takes cold damage, its outer layer hardens, granting +3 to physical defense until end of its next turn, but its speed is halved."
+    }
+  ],
+  "lore": "Magma Elementals are terrifying fusions of earth and fire, living volcanoes in humanoid form. They leave trails of molten rock wherever they walk, and the ground itself melts beneath their feet."
+}

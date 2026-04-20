@@ -1,0 +1,21 @@
+{
+  "id": "capa_desplazamiento",
+  "name": "Capa del Desplazamiento",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Rara",
+  "image": "capa_desplazamiento.jpg",
+  "description": "Una capa de tela oscura que distorsiona la luz a su alrededor. Tu imagen parece estar siempre ligeramente desplazada de tu posición real.",
+  "price": "8 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Desplazamiento",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Los ataques contra ti tienen Desventaja. Si recibes daño, el efecto se desactiva hasta el inicio de tu siguiente turno."
+    }
+  ]
+}

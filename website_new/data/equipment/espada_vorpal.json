@@ -1,0 +1,18 @@
+{
+  "id": "espada_vorpal",
+  "name": "Espada Vorpal",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Muy Rara",
+  "image": "espada_vorpal.jpg",
+  "description": "Una espada de hoja imposiblemente afilada que corta a través de cualquier material. Su filo nunca se embota y brilla con una luz acerada.",
+  "damage": "2d6 + FUE",
+  "damageType": "Cortante",
+  "price": "30 CR",
+  "range": "Cuerpo a cuerpo",
+  "properties": [
+    "<b>Dos manos</b>: Requiere ambas manos",
+    "<b>Sintonización</b>",
+    "<b>Decapitadora:</b> Cuando sacas un crítico natural en un ataque, el objetivo debe superar PHYS (CD 18) o ser decapitado (muerte instantánea si tiene cabeza y menos de 50 PV+VIT). Criaturas inmunes a críticos son inmunes a este efecto"
+  ]
+}

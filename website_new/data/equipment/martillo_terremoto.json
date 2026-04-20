@@ -1,0 +1,21 @@
+{
+  "id": "martillo_terremoto",
+  "name": "Martillo del Terremoto",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Rara",
+  "image": "martillo_terremoto.jpg",
+  "description": "Un martillo de guerra con la cabeza tallada en roca volcánica y runas de tierra. El suelo tiembla con cada golpe.",
+  "damage": "1d10 + FUE + 1d8 contundente",
+  "damageType": "Contundente",
+  "price": "10 CR",
+  "range": "Cuerpo a cuerpo",
+  "abilities": [
+    {
+      "name": "Temblor",
+      "cost": "2 acciones + 2 Vigor",
+      "uses": "2/día",
+      "description": "Golpeas el suelo. Todos los enemigos en 6m deben superar PHYS o caer tropezados y recibir 2d8 contundente."
+    }
+  ]
+}

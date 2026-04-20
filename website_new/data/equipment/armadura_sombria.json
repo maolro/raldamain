@@ -1,0 +1,14 @@
+{
+  "id": "armadura_sombria",
+  "name": "Armadura Sombría",
+  "type": "Armadura Mágica",
+  "subtype": "Armadura Ligera",
+  "rarity": "Poco Común",
+  "image": "armadura_sombria.jpg",
+  "description": "Cuero negro que parece absorber la luz a su alrededor. Los bordes se difuminan en sombras que ocultan la silueta del portador.",
+  "defense": "2",
+  "price": "4 CR",
+  "properties": [
+    "<b>Umbral:</b> Ventaja en tiradas de Sigilo en penumbra u oscuridad"
+  ]
+}

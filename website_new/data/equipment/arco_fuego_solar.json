@@ -1,0 +1,25 @@
+{
+  "id": "arco_fuego_solar",
+  "name": "Arco del Fuego Solar",
+  "type": "Arma Mágica",
+  "subtype": "Arma Marcial a Distancia",
+  "rarity": "Rara",
+  "image": "arco_fuego_solar.jpg",
+  "description": "Un arco de madera dorada que arde sin consumirse. Las flechas que dispara se envuelven en llamas al salir del arco.",
+  "damage": "1d10 + DES + 1d8 fuego",
+  "damageType": "Perforante + Fuego",
+  "price": "10 CR",
+  "range": "Distancia lejana",
+  "properties": [
+    "<b>Flechas Ígneas:</b> Las flechas son de fuego puro. No requiere munición física",
+    "<b>Dos manos</b>: Requiere ambas manos"
+  ],
+  "abilities": [
+    {
+      "name": "Flecha Solar",
+      "cost": "2 acciones + 2 Chi",
+      "uses": "1/día",
+      "description": "Disparas una flecha de fuego solar que explota al impactar. Todos en un radio de 6m del objetivo deben superar PHYS o recibir 3d10 fuego."
+    }
+  ]
+}

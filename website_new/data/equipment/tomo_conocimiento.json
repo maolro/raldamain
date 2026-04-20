@@ -1,0 +1,27 @@
+{
+  "id": "tomo_conocimiento",
+  "name": "Tomo del Conocimiento Infinito",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Muy Rara",
+  "image": "tomo_conocimiento.jpg",
+  "description": "Un libro grueso con tapas de metal antiguo cuyas páginas están en blanco hasta que se formula una pregunta. La respuesta aparece escrita.",
+  "price": "35 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Consultar",
+      "cost": "1 acción",
+      "uses": "3/día",
+      "description": "Formula una pregunta sobre historia, geografía, magia o criaturas. El tomo proporciona la respuesta más precisa disponible (a discreción del DJ). No puede revelar el futuro ni secretos protegidos mágicamente."
+    },
+    {
+      "name": "Estudio Acelerado",
+      "cost": "8 horas",
+      "uses": "1/semana",
+      "description": "Estudias el tomo durante un descanso largo. Ganas competencia temporal en una habilidad de conocimiento de tu elección durante 1 semana."
+    }
+  ]
+}

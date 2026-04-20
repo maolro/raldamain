@@ -1,0 +1,52 @@
+{
+  "id": "vine_blight",
+  "name": "Vine Blight",
+  "level": 4,
+  "type": "plant",
+  "size": "Medium",
+  "hp": 14,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+1d6",
+    "WILL": "+2",
+    "MIND": "+2"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 6,
+    "general": 5
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Constrict",
+      "cost": "1 action",
+      "damage": "3d6 bludgeoning",
+      "effect": "Target is grappled. Grappled targets take 1d6 bludgeoning at the start of each of the Vine Blight's turns."
+    },
+    {
+      "name": "Entangling Plants",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "All creatures on the ground within 5m of the Vine Blight must pass PHYS save or be restrained by grasping vines. Restrained targets can attempt a PHYS save at end of each turn to escape."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Vine Lash",
+      "cost": "1 reaction",
+      "effect": "When a creature enters melee range, the Vine Blight lashes out. Target must pass PHYS save or be grappled."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While motionless, the Vine Blight is indistinguishable from a tangle of vines."
+    }
+  ],
+  "lore": "Vine Blights are masses of creeping vines animated by dark magic. They specialize in area control, entangling everything around them in a suffocating web of vegetation. They often work in concert with Twig and Needle Blights."
+}

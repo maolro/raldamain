@@ -1,0 +1,66 @@
+{
+  "id": "chasme",
+  "name": "Chasme",
+  "level": 8,
+  "type": "demon",
+  "size": "Large",
+  "hp": 24,
+  "shields": 1,
+  "saves": {
+    "PHYS": "+9+1d6",
+    "WILL": "+9",
+    "MIND": "+9+1d6"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 10,
+    "general": 8
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Proboscis",
+      "cost": "1 action",
+      "damage": "4d8 piercing + necrotic",
+      "effect": "The Chasme drains blood. It heals for half the damage dealt. Target's max HP is reduced by the necrotic portion until a long rest."
+    },
+    {
+      "name": "Droning Buzz",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "All creatures within 9m must pass WILL save or fall into a magical sleep for 1 minute. Taking damage wakes the creature. Creatures immune to being charmed are immune."
+    },
+    {
+      "name": "Claw",
+      "cost": "1 action",
+      "damage": "3d8 slashing",
+      "effect": null
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Flyby Retreat",
+      "cost": "1 reaction",
+      "effect": "When hit by a melee attack, the Chasme flies up to 9m without provoking reactions."
+    }
+  ],
+  "resistances": ["cold", "fire", "lightning"],
+  "immunities": ["poison"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "Can fly. Does not provoke reactions when flying out of an enemy's reach."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "Can climb any surface without checks."
+    },
+    {
+      "name": "Drone",
+      "desc": "Creatures that start their turn within 9m and can hear the Chasme must pass WILL save or be drowsy (-1d6 to attack rolls) for 1 round."
+    }
+  ],
+  "lore": "Chasmes are horrific fly-demons with a droning buzz that lulls victims into supernatural sleep. They feed by plunging their proboscis into sleeping prey, draining them of blood and vitality. Other demons despise Chasmes and use them as enforcers to keep lesser demons in line."
+}

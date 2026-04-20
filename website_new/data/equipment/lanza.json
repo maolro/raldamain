@@ -1,0 +1,17 @@
+{
+  "id": "lanza",
+  "name": "Lanza",
+  "type": "Arma",
+  "subtype": "Arma Marcial Cuerpo a Cuerpo",
+  "rarity": "Común",
+  "image": "lanza.jpg",
+  "description": "Un asta de madera rematada con una punta de acero. Su alcance superior permite mantener a los enemigos a distancia.",
+  "damage": "1d10 + FUE",
+  "damageType": "Perforante",
+  "price": "0 CR",
+  "range": "Alcance cercano",
+  "properties": [
+    "<b>Alcance</b>: Ataca a distancia cercana en vez de adyacente",
+    "<b>Dos manos</b>: Requiere ambas manos para usarse"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "guantes_fuerza",
+  "name": "Guantes de Fuerza de Ogro",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "guantes_fuerza.jpg",
+  "description": "Guantes de cuero grueso imbuidos con la esencia de un ogro. Al ponérselos, los músculos del portador se hinchan visiblemente.",
+  "price": "4 CR",
+  "properties": [
+    "<b>Sintonización</b>"
+  ],
+  "abilities": [
+    {
+      "name": "Fuerza Sobrenatural",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tu estadística de FUE se considera 4 mientras lleves estos guantes (no tiene efecto si tu FUE ya es 4 o mayor)."
+    }
+  ]
+}

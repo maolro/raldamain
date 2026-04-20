@@ -1,0 +1,18 @@
+{
+  "id": "botas_sigilo",
+  "name": "Botas del Sigilo",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Poco Común",
+  "image": "botas_sigilo.jpg",
+  "description": "Botas de cuero suave con suelas encantadas que amortiguan cualquier sonido. Ni la grava ni las hojas secas revelan tus pasos.",
+  "price": "3 CR",
+  "abilities": [
+    {
+      "name": "Pasos Silenciosos",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Tus pasos no producen sonido. Ventaja en tiradas de Sigilo relacionadas con ruido."
+    }
+  ]
+}

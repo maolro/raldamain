@@ -1,0 +1,62 @@
+{
+  "id": "satyr",
+  "name": "Satyr",
+  "level": 6,
+  "type": "spirit_fey",
+  "size": "Medium",
+  "hp": 18,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7",
+    "WILL": "+7+1d6",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 10,
+    "magical": 9,
+    "general": 6
+  },
+  "attackRoll": "+7+1d6",
+  "magicRoll": "+7",
+  "actions": [
+    {
+      "name": "Ram",
+      "cost": "1 action",
+      "damage": "4d6 bludgeoning",
+      "effect": "If the Satyr moved at least 6m toward the target, the target must pass PHYS save or be knocked prone."
+    },
+    {
+      "name": "Shortsword",
+      "cost": "1 action",
+      "damage": "3d6 slashing",
+      "effect": null
+    },
+    {
+      "name": "Enchanting Melody",
+      "cost": "2 actions",
+      "damage": null,
+      "effect": "Plays a magical tune on pipes. All enemies within close range must pass WILL save or be charmed, frightened, or put to sleep (Satyr's choice) for 1 round."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Mirthful Escape",
+      "cost": "1 reaction",
+      "effect": "When an enemy misses the Satyr with an attack, the Satyr can move up to half its speed without provoking reactions."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": ["cold iron"],
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The Satyr has +1d6 on saves against spells and magical effects."
+    },
+    {
+      "name": "Revelry",
+      "desc": "Creatures charmed by the Satyr have disadvantage on saves against the Satyr's other abilities."
+    }
+  ],
+  "lore": "Satyrs are hedonistic fey who revel in wine, music, and merriment. Their enchanted pipes can bend emotions to their will, turning a battlefield into a dance floor or a campfire gathering into a nightmare."
+}

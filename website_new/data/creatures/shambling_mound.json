@@ -1,0 +1,62 @@
+{
+  "id": "shambling_mound",
+  "name": "Shambling Mound",
+  "level": 8,
+  "type": "plant",
+  "size": "Large",
+  "hp": 30,
+  "shields": 2,
+  "saves": {
+    "PHYS": "+9+2d6",
+    "WILL": "+9",
+    "MIND": "+5"
+  },
+  "defenses": {
+    "physical": 14,
+    "magical": 9,
+    "general": 8
+  },
+  "attackRoll": "+9+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Slam",
+      "cost": "1 action",
+      "damage": "4d8 bludgeoning",
+      "effect": null
+    },
+    {
+      "name": "Engulf",
+      "cost": "2 actions",
+      "damage": "3d8 bludgeoning",
+      "effect": "One Medium or smaller creature the Shambling Mound has grappled is absorbed into its body. Engulfed creatures are blinded, restrained, and can't breathe. They take 3d8 bludgeoning at the start of each of the Mound's turns."
+    },
+    {
+      "name": "Double Slam",
+      "cost": "2 actions",
+      "damage": "4d8 bludgeoning (each hit)",
+      "effect": "Makes 2 Slam attacks. If both hit the same target, the target is grappled."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Absorb Lightning",
+      "cost": "1 reaction",
+      "effect": "When hit by lightning damage, the Shambling Mound takes no damage and instead heals for the amount. It also gains +1d6 to attack rolls until end of its next turn."
+    }
+  ],
+  "resistances": ["cold"],
+  "immunities": ["lightning"],
+  "vulnerabilities": ["fire"],
+  "traits": [
+    {
+      "name": "Lightning Absorption",
+      "desc": "Lightning damage heals the Shambling Mound instead of harming it."
+    },
+    {
+      "name": "Swamp Camouflage",
+      "desc": "In swamps or dense vegetation, the Shambling Mound is nearly invisible (+2d6 to stealth)."
+    }
+  ],
+  "lore": "Shambling Mounds are masses of rotting vegetation animated by lightning strikes and dark magic. They lurk in swamps and bogs, engulfing victims in their sodden mass. Lightning only makes them stronger, a fact many spellcasters have learned too late."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "piedra_luz",
+  "name": "Piedra de Luz",
+  "type": "Objeto Mágico",
+  "subtype": "Maravilloso",
+  "rarity": "Común",
+  "image": "piedra_luz.jpg",
+  "description": "Una pequeña piedra cristalina que emite una luz suave y constante cuando se sostiene. Común entre mineros y exploradores.",
+  "price": "1/4 CR",
+  "abilities": [
+    {
+      "name": "Iluminar",
+      "cost": "Pasiva",
+      "uses": "Permanente",
+      "description": "Emite luz brillante en un radio de 6m y luz tenue en 12m adicionales. Puede apagarse cubriéndola."
+    }
+  ]
+}

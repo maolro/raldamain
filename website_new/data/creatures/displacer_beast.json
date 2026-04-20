@@ -1,0 +1,62 @@
+{
+  "id": "displacer_beast",
+  "name": "Displacer Beast",
+  "level": 6,
+  "type": "monster",
+  "size": "Large",
+  "hp": 18,
+  "shields": 0,
+  "saves": {
+    "PHYS": "+7+2d6",
+    "WILL": "+7",
+    "MIND": "+7"
+  },
+  "defenses": {
+    "physical": 12,
+    "magical": 8,
+    "general": 7
+  },
+  "attackRoll": "+7+2d6",
+  "magicRoll": null,
+  "actions": [
+    {
+      "name": "Tentacle",
+      "cost": "1 action",
+      "damage": "4d6 bludgeoning + piercing",
+      "effect": null
+    },
+    {
+      "name": "Double Tentacle Slam",
+      "cost": "2 actions",
+      "damage": "5d6 bludgeoning",
+      "effect": "Attacks with both tentacles. If both hit the same target, the target is grappled."
+    },
+    {
+      "name": "Bite",
+      "cost": "1 action",
+      "damage": "3d6 piercing",
+      "effect": "Can only target grappled creatures."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Displacement Flicker",
+      "cost": "1 reaction",
+      "effect": "When hit by an attack, the Displacer Beast can force the attacker to reroll the attack at -1d6 as its displaced image shifts."
+    }
+  ],
+  "resistances": [],
+  "immunities": [],
+  "vulnerabilities": [],
+  "traits": [
+    {
+      "name": "Displacement",
+      "desc": "The Displacer Beast projects an illusion of itself 1m from its actual location. All attacks against it have -1d6 to hit. This effect is suppressed for 1 round after the beast takes damage."
+    },
+    {
+      "name": "Avoidance",
+      "desc": "When targeted by an area effect that allows a save for half damage, the Displacer Beast takes no damage on success and half on failure."
+    }
+  ],
+  "lore": "Displacer Beasts are panther-like creatures with two barbed tentacles and the ability to bend light around their bodies, making them appear to be a few feet from their actual position. They are cunning pack hunters prized by the fey for their hunting prowess."
+}

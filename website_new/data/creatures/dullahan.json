@@ -1,0 +1,71 @@
+{
+  "id": "dullahan",
+  "name": "Dullahan",
+  "level": 12,
+  "type": "undead",
+  "size": "Large",
+  "hp": 40,
+  "shields": 3,
+  "saves": {
+    "PHYS": "+11+2d6",
+    "WILL": "+11+2d6",
+    "MIND": "+11+1d6"
+  },
+  "defenses": {
+    "physical": 17,
+    "magical": 13,
+    "general": 11
+  },
+  "attackRoll": "+11+3d6",
+  "magicRoll": "+11+2d6",
+  "actions": [
+    {
+      "name": "Vorpal Blade",
+      "cost": "1 action",
+      "damage": "6d8 slashing + necrotic",
+      "effect": "On a critical hit, the target must pass PHYS save or be decapitated (instant death for creatures without legendary resistance or equivalent)."
+    },
+    {
+      "name": "Death's Gaze",
+      "cost": "1 action",
+      "damage": null,
+      "effect": "The Dullahan holds up its severed head and calls a creature's name. That creature must pass WILL save or be frightened and have their max HP reduced by 3d8. If max HP reaches 0, the creature dies."
+    },
+    {
+      "name": "Nightmare Charge",
+      "cost": "2 actions",
+      "damage": "5d8 bludgeoning + necrotic",
+      "effect": "The Dullahan charges on its spectral horse up to 18m in a straight line. All creatures in the path must pass PHYS save or take damage and be knocked prone."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Deathly Aura",
+      "cost": "1 reaction",
+      "effect": "When a creature within 6m is healed, the Dullahan can negate the healing entirely."
+    },
+    {
+      "name": "Mounted Dodge",
+      "cost": "1 reaction",
+      "effect": "The Dullahan's nightmare steed rears, granting +4 to all defenses against one attack."
+    }
+  ],
+  "resistances": ["cold", "necrotic"],
+  "immunities": ["poison", "psychic", "frightened"],
+  "vulnerabilities": ["radiant"],
+  "traits": [
+    {
+      "name": "Headless Horror",
+      "desc": "The Dullahan carries its own severed head. It can see through the head's eyes regardless of where the head is. Cannot be blinded while holding the head."
+    },
+    {
+      "name": "Nightmare Steed",
+      "desc": "The Dullahan rides a spectral black horse. The steed has no separate stats but grants the Dullahan enhanced mobility and the Nightmare Charge action."
+    },
+    {
+      "name": "Death Omen",
+      "desc": "Creatures that see the Dullahan for the first time must pass WILL save or be frightened for 1 round."
+    }
+  ],
+  "lore": "The Dullahan is a headless rider of Celtic legend, an omen of death itself. When it stops riding and speaks a mortal's name, that person's life is forfeit. Its whip is a human spine, and its coach is adorned with funeral objects."
+}

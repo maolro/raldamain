@@ -3,122 +3,117 @@
   "title": "Ascendencia Primigenia",
   "category": "Ascendencias",
   "image": "ascendencia_primigenia.jpg",
-  "stats": ["Sabiduría", "Vigor", "Chi"],
-  "description": "Te conviertes en un guardián de la vida, conectando con la naturaleza y los espíritus. Comandas bestias, plantas y fuerzas primigenias para proteger el equilibrio.",
+  "stats": ["Sabiduría", "Chi", "Chi"],
+  "description": "Te conviertes en un guardián de la naturaleza, conectando con los espíritus y las fuerzas primordiales del mundo. Adoptas formas bestiales, invocas espíritus, sanas heridas con energía vital y caminas entre el plano material y el espiritual.",
   "fundamentals": [
-    "<strong>Poder innato:</strong> Incrementa tus reservas de Vigor y Chi por un valor igual a tu Rango.",
-    "<strong>Estadística principal:</strong> Sabiduría + Rango."
+    "<strong>Poder innato:</strong> Incrementa tu reserva de Chi por un valor igual a tu Rango x 2.",
+    "<strong>Estadística principal:</strong> Sabiduría/Constitución + Rango."
   ],
   "levels": [
     {
       "rank": "I",
-      "title": "Iniciado",
+      "title": "Rango I",
       "abilities": [
+        {
+          "name": "Forma de la Bestia",
+          "tags": ["Innata", "Mejora"],
+          "cost": "1 acción",
+          "duration": "Concentración",
+          "desc": "Adoptas una forma híbrida entre hombre y bestia. Mientras mantengas esta forma, obtienes Ventaja en todos los tiros relacionados con estadísticas físicas (FUE, DES, CON) y tu DEF aumenta en un valor igual a tu Rango + 1. Al final de cada ronda en forma híbrida, reduces tu Cordura en 1. Si tu Cordura llega a 0, pierdes el control de tu personaje hasta que otro aliado te calme o quedes inconsciente."
+        },
         {
           "name": "Aspecto Primigenio",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Sentidos animales (visión nocturna, olfato). Inmunidad a terreno difícil natural. Animales salvajes no son hostiles."
-        },
-        {
-          "name": "Forma de la bestia",
-          "tags": ["Innata", "Mejora"],
-          "duration": "6 Rondas",
-          "desc": "Forma híbrida. Ventaja en tiros físicos. DEF aumenta en (Rango + 1). Al terminar, daño a Cordura (Chi actual - Rondas). Riesgo de perder control si Cordura cae a 0."
+          "desc": "Obtienes visión nocturna y olfato agudo a distancia media. Los animales salvajes no son hostiles hacia ti a menos que los provoques."
         }
       ]
     },
     {
       "rank": "II",
-      "title": "Adepto",
-      "passive": "Incrementa tu estadística de SAB y su limitador máximo en +1.",
+      "title": "Rango II",
       "abilities": [
         {
-          "name": "Fuerza Salvaje",
+          "name": "Infusión Espiritual",
           "tags": ["Innata", "Mejora"],
-          "cost": "1 chi/vigor",
-          "desc": "El siguiente ataque físico gana +1 dado de daño y cuenta como mágico.",
-          "empower": "Añade otro dado de daño adicional (Max 2 veces)."
+          "cost": "1 chi",
+          "desc": "Cuando realizas un ataque físico, puedes imbuirlo con un hechizo que conozcas. Debes declarar el hechizo antes de realizar el tiro de ataque y pagar su coste de chi por separado. Si el ataque impacta, ambos efectos se activan simultáneamente. Para el hechizo imbuido, usa tu tiro de ataque y tu Rango de Ascendencia Primigenia como modificador en lugar de los del hechizo original."
         },
         {
           "name": "Comunión con la Naturaleza",
           "tags": ["Innata", "Pasiva"],
-          "range": "Lejano",
-          "desc": "Detectas espíritus y magia. Aprendes 2 hechizos Divinos de Rango I vinculados a un Espíritu Mayor (usan Vigor)."
+          "range": "Medio",
+          "desc": "Detectas la presencia de magia y de seres espirituales a distancia media. Aprendes 2 hechizos de Rango I o menos relacionados con tu patrón espiritual (usan chi). A Rango IV aprendes 2 hechizos adicionales de Rango II o menos, y a Rango VI aprendes 2 hechizos adicionales de Rango III o menos."
         }
       ]
     },
     {
       "rank": "III",
-      "title": "Profesional",
+      "title": "Rango III",
       "abilities": [
         {
           "name": "Transformación Animal",
           "tags": ["Innata", "Transmutación"],
-          "cost": "2 acciones, 2 chi/vigor",
-          "duration": "1 Hora",
-          "desc": "Te transformas en animal (sin equipo). Eliges 2 mejoras: Vuelo, Gigante (Tamaño/Alcance+, Daño+), Resistencia Elemental, Coraza (Escudos=Rango) o Espinas (Daño+ y Sangrado al contacto).",
-          "empower": "N/A"
+          "cost": "1 acción, 2 chi",
+          "duration": "1 hora",
+          "desc": "Te transformas en un animal, recibiendo así dos mejoras entre Vuelo, Coraza, Tamaño Superior o Resistencia Elemental (u otras permitidas por el DJ) además que de tus estadísticas físicas pasan a ser 7 (si eran más bajas). Durará hasta una hora. \nComo alternativa, puedes convertirte en un animal normal de nivel máximo 4, el cual aumenta en 2 cada rango. Recibirás las estadísticas, acciones, habilidades pasivas y reacciones del animal. Si los PV y Vitalidad del animal son superirores a los tuyos, recibirás PV y Vitalidad temporal igual a la diferencia."
         },
         {
           "name": "Llamar a los Espíritus",
           "tags": ["Divina", "Invocación"],
-          "cost": "3 acciones, 2 chi/vigor",
-          "range": "Medio",
-          "duration": "1 Hora",
-          "desc": "Invocas espíritu de Nivel <= (Rango x 2). Max 4 criaturas simultáneas.",
-          "empower": "La criatura invocada recupera el 50% de su Vitalidad."
+          "cost": "3 acciones, 2 chi",
+          "duration": "1 hora",
+          "desc": "Invocas un espíritu o animal con un Nivel igual o inferior a tu Rango x 2 (máximo 4 invocaciones simultáneas). La criatura invocada actúa en tu turno y obedece tus órdenes.",
+          "empower": "Invocas una criatura adicional con esta habilidad. Empoderar así te costará 2 chi."
         }
       ]
     },
     {
       "rank": "IV",
-      "title": "Experto",
-      "passive": "Incrementa tu estadística de FUE y su limitador en +1. Aprendes 2 hechizos de Rango II (usan Vigor).",
+      "title": "Rango IV",
       "abilities": [
         {
           "name": "Vínculo Primigenio",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a Fuego, Frío, Eléctrico, Sónico y Radiante (e Inmunidad a sus críticos). Comunicación con animales y espíritus."
+          "desc": "Obtienes Resistencia a daño de Fuego, Frío, Eléctrico, Sónico y Radiante."
         },
         {
           "name": "Sanación Espiritual",
-          "tags": ["Innata", "Pasiva"],
-          "desc": "Al inicio de turno: Recuperas (Rango) Vitalidad y reduces 1 herida permanente un paso. Se anula 1 ronda por daño de Hierro Frío."
+          "tags": ["Innata", "Sanación"],
+          "cost": "1 chi",
+          "desc": "Recuperas una cantidad de Vitalidad igual a tu Rango o reduces el nivel de una herida permanente en 1. Este efecto se anula durante 1 ronda si recibes daño de Hierro Frío.",
+          "empower": "En lugar del efecto normal, te recuperas de un efecto de estado o maldición. Si empoderas esta habilidad, no puedes usar el efecto base en el mismo turno."
         }
       ]
     },
     {
       "rank": "V",
-      "title": "Maestro",
+      "title": "Rango V",
       "abilities": [
         {
           "name": "Aura Primigenia",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Resistencia a Arcano y Divino. Objetos mágicos/glifos cercanos tienen 50% fallo.",
-          "empower": "Éxito automático vs Arcano o Contrarrestar (pagando coste)."
+          "desc": "Obtienes Ventaja en tiros de salvación contra efectos Arcanos. Los objetos mágicos y glifos enemigos cercanos a ti tienen un 50% de probabilidad de fallar al activarse.",
+          "empower": "Anulas un efecto Arcano de Rango II o menos lanzado a distancia cercana a ti. Este efecto no consume Reacciones."
         },
         {
-          "name": "Portal Espiritual",
+          "name": "Paso Espiritual",
           "tags": ["Innata", "Espacial"],
-          "cost": "3 acciones, 3 chi/vigor",
-          "area": "Radio Grande",
-          "duration": "6 Rondas",
-          "desc": "Fusiona planos (Tierra Consagrada). Permite viajar al plano espiritual (acción). En plano espiritual tienes +3 acciones extra (dilatación temporal).",
-          "empower": "Cambio de plano como Reacción para esquivar."
+          "cost": "1 acción",
+          "desc": "Entras o sales del plano espiritual. Puedes llevar contigo a otras criaturas voluntarias o inconscientes que estén en contacto contigo.",
+          "empower": "Entras al plano espiritual para esquivar un ataque dirigido a ti. Esto consumirá una Reccción."
         }
       ]
     },
     {
       "rank": "VI",
-      "title": "Ascendido",
-      "passive": "Incrementa tu estadística de CON y su limitador en +1. Aprendes 2 hechizos de Rango III (usan Vigor).",
+      "title": "Rango VI",
       "abilities": [
         {
           "name": "Despertar la Bestia",
           "tags": ["Innata", "Transformación"],
-          "cost": "3 acciones, 5 chi/vigor",
-          "duration": "6 Rondas",
-          "desc": "Avatar espiritual (+40 Vitalidad Temporal). Físicas a 12, DEF 20. Inmunidad Mental/Miedo/Aflicción/Toque. Tamaño +1. Ataques naturales 1d10 (Material III). Vuelo 1. Conoces Estilo Salvaje (Rango III gratis). 6 Escudos. Hechizos gratis."
+          "cost": "1 acción, 5 chi",
+          "duration": "6 rondas",
+          "desc": "Te transformas en un avatar primigenio de poder devastador. Obtienes +20 Vitalidad temporal y 6 contadores de escudo. Tus estadísticas físicas (FUE, DES, CON) suben a 12 y tu DEF sube a 20. Obtienes Inmunidad a efectos Mentales, de Miedo, Aflicciones y de Toque. Tu tamaño aumenta en un paso, tus ataques naturales infligen 1d10 de daño adicional y cuentan como material superior III. Obtienes también Velocidad de Vuelo 1 u otra característica similar. Mientras dure la transformación, las habilidades de Rango III o menos de un rango de tu elección no cuestan chi (salvo para empoderar)."
         }
       ]
     }

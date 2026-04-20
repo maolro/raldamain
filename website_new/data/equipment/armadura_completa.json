@@ -1,0 +1,12 @@
+{
+  "id": "armadura_completa",
+  "name": "Armadura Completa",
+  "type": "Armadura",
+  "subtype": "Armadura Pesada",
+  "rarity": "Común",
+  "image": "armadura_completa.jpg",
+  "description": "Placas de acero que cubren todo el cuerpo, incluyendo casco cerrado y guanteletes articulados. La máxima protección mundana posible.",
+  "defense": "9",
+  "price": "3 CR",
+  "penalties": "-6 a tiradas de DES. Velocidad -3m. Desventaja en tiradas de magia si FUE < 6."
+}

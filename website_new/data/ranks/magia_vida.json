@@ -9,10 +9,15 @@
   ],
   "description": "Conoces los secretos de la energía vital pura que permea el universo. Sanas heridas, purgas venenos y usas la luz como arma para castigar a los impíos o crear explosiones de energía pura.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",
     "<strong>Fuerza vital:</strong> La potencia depende del entorno (Ventaja/Desventaja según flujo de energía).",
     "<strong>Defensa vital:</strong> Usas Magia de Vida para tiros defensivos y salvaciones contra Vida, Sombría, Muerte y Fuego."
+  ],
+  "rules_refs": [
+    "Contadores de Escudo (ver manual_core.md § Valores Defensivos)",
+    "Concentración (ver manual_core.md § El Combate)",
+    "Tipos de Daño - Radiante (ver manual_core.md § El Combate)"
   ],
   "levels": [
     {
@@ -29,7 +34,7 @@
           "cost": "1 acción",
           "range": "Toque",
           "duration": "Instantánea",
-          "desc": "Sana a un aliado Vitalidad igual a Rango + 2. Alternativamente, reduce el nivel de una Aflicción por un paso.",
+          "desc": "Tocas a un aliado y le sanas Vitalidad igual a Rango + 2. Alternativamente, puedes reducir el nivel de una Aflicción un paso en lugar de curar Vitalidad.",
           "empower": "Cura una herida permanente leve o una Aflicción en fase 1."
         },
         {
@@ -44,8 +49,8 @@
           "range": "Medio",
           "crit": "El objetivo queda cegado durante una ronda.",
           "duration": "Instantánea",
-          "desc": "Ataque de luz que inflige 1d6 + Rango daño Radiante. No puede ser esquivado a distancia corta.",
-          "empower": "Realiza un ataque adicional contra un objetivo distinto."
+          "desc": "Lanzas un rayo de luz que inflige 1d6 + Rango daño Radiante. A distancia corta, el ataque no puede ser esquivado.",
+          "empower": "Realizas un ataque adicional contra un objetivo distinto."
         },
         {
           "name": "Halo Cegador",
@@ -57,10 +62,10 @@
           ],
           "cost": "2 acciones, 1 chi",
           "area": "Radio corto",
-          "crit": "Objetivos cegados hasta recibir sanación.",
+          "crit": "Los objetivos quedan cegados hasta que reciban sanación.",
           "duration": "Instantánea",
-          "desc": "Explosión de luz. Enemigos tiran CON o sufren 1d6 + Rango daño Radiante y quedan cegados 1 ronda. Disipa hechizos Sombríos.",
-          "empower": "El brillo persiste 1 ronda: Desventaja a ataques contra ti y ciega a quien se acerque."
+          "desc": "Emites una explosión de luz cegadora. Los enemigos en el área deben superar un tiro de salvación de CON o sufren 1d6 + Rango daño Radiante y quedan cegados durante 1 ronda. Disipa hechizos Sombríos activos en el área.",
+          "empower": "El brillo persiste 1 ronda, lo que otorga Desventaja en tiros de ataque contra ti y ciega a quien se acerque."
         }
       ]
     },
@@ -79,7 +84,7 @@
           "cost": "3 acciones, 1 chi",
           "range": "Toque",
           "duration": "Concentración",
-          "desc": "Enlace con aliado. Puedes absorber la mitad de su daño (como reacción) o lanzarle hechizos de sanación a distancia.",
+          "desc": "Creas un enlace vital con un aliado. Como reacción, puedes absorber la mitad del daño que reciba el aliado vinculado. Además, puedes lanzarle hechizos de sanación a distancia mientras el vínculo persista.",
           "empower": "Lanzas Toque Sanador al aliado vinculado como acción bonus."
         },
         {
@@ -93,10 +98,10 @@
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea media",
-          "crit": "Cegado hasta ser curado.",
+          "crit": "Los objetivos quedan cegados hasta recibir curación.",
           "duration": "Concentración",
-          "desc": "Muro de luz. Inmune a ataques a distancia. Cruzar causa 1d6 + Rango daño y Ceguera. Uso defensivo como reacción.",
-          "empower": "Afecta a criaturas cercanas a la barrera como si intentaran cruzarla."
+          "desc": "Creas un muro de luz sólida que bloquea ataques a distancia. Las criaturas que intenten cruzarlo sufren 1d6 + Rango daño Radiante y quedan cegadas. Puede desplegarse como reacción para uso defensivo.",
+          "empower": "La barrera daña a las criaturas cercanas como si intentaran cruzarla."
         },
         {
           "name": "Arma Solar",
@@ -108,10 +113,10 @@
           ],
           "cost": "2 acciones, 1 chi",
           "area": "Línea mediana",
-          "crit": "Cegado durante una ronda.",
+          "crit": "El objetivo queda cegado durante una ronda.",
           "duration": "Concentración",
-          "desc": "Ataque inicial en línea (1d6 + CAR). Luego permite atacar como acción (1d6 + CAR a distancia media).",
-          "empower": "Ataque adicional contra objetivo diferente."
+          "desc": "Creas un arma de luz pura con un ataque inicial en línea que inflige 1d6 + CAR daño Radiante. Mientras el hechizo persista, puedes atacar como acción (1d6 + CAR daño Radiante a distancia media).",
+          "empower": "Realizas un ataque adicional contra un objetivo diferente."
         }
       ]
     },
@@ -129,8 +134,8 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Velocidad +1. Posición Defensiva como acción bonus. Ventaja en Esquiva usando magia de Vida.",
-          "empower": "Evasión: Reduces daño a la mitad, desenganchas y te mueves 1 paso."
+          "desc": "Tu cuerpo irradia luz viviente. Tu Velocidad aumenta en +1 y puedes usar una Reacción defensiva adicional por ronda. Obtienes Ventaja en tiros de Esquiva usando Magia de Vida.",
+          "empower": "Evasión: reduces el daño recibido a la mitad, desenganchas y te mueves 1 paso."
         },
         {
           "name": "Sanación Superior",
@@ -142,8 +147,8 @@
           "cost": "1 acción, 2 chi",
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
-          "desc": "Cura Vitalidad y PV iguales a Rango + 2. Reduce herida permanente 2 pasos o cura Aflicción/Maldición total.",
-          "empower": "Lanzar como acción bonus en ti mismo o afectar a objetivo extra."
+          "desc": "Curas Vitalidad y PV iguales a Rango + 2. Además, puedes reducir una herida permanente 2 pasos o eliminar completamente una Aflicción o Maldición.",
+          "empower": "Puedes lanzarlo como acción bonus sobre ti mismo o afectar a un objetivo adicional."
         },
         {
           "name": "Telaraña de Vida",
@@ -155,7 +160,7 @@
           "cost": "2 acciones, 2 chi",
           "area": "Radio medio",
           "duration": "Concentración",
-          "desc": "Ventaja en tiros de Vida. Detectar vivos (vista ciega). Hechizos de sanación curan +2 y tienen alcance corto.",
+          "desc": "Generas una red de energía vital en el área. Obtienes Ventaja en tiros de Vida y vista ciega para detectar criaturas vivas. Tus hechizos de sanación curan +2 adicional y su alcance aumenta a corto.",
           "empower": "Lanzas un hechizo de Sanación como acción bonus."
         }
       ]
@@ -173,7 +178,7 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Ganas contadores de escudo = Rango. Permite lanzar Rayo Luminoso o Toque Sanador como acción bonus (Alcance Medio).",
+          "desc": "Invocas espadas de luz que te protegen. Obtienes contadores de escudo iguales a tu Rango. Mientras el hechizo persista, puedes lanzar Rayo de Luz o Toque Sanador como acción bonus a distancia media.",
           "empower": "Repones un contador de escudo perdido."
         },
         {
@@ -187,8 +192,8 @@
           "cost": "3 acciones, 2 chi",
           "range": "Toque",
           "duration": "Una hora",
-          "desc": "Vincula a 2 aliados contigo. Comparten daño recibido (ignora resistencias) y sanación recibida a voluntad.",
-          "empower": "Siguiente sanación afecta a todos los vinculados."
+          "desc": "Vinculas a 2 aliados contigo. El daño recibido por cualquiera de los vinculados se reparte entre todos (ignora resistencias). La sanación recibida puede compartirse a voluntad entre los vinculados.",
+          "empower": "Tu siguiente sanación afecta a todos los vinculados."
         },
         {
           "name": "Castigo Celestial",
@@ -200,10 +205,10 @@
           ],
           "cost": "1 acción, 2 chi",
           "area": "Línea Mediana",
-          "crit": "Quemadura media y cegado 1 ronda.",
+          "crit": "El objetivo sufre quemadura media y queda cegado 1 ronda.",
           "duration": "Instantáneo",
-          "desc": "Rayo devastador. 2d8 + CAR daño Radiante + quemadura leve. No se puede esquivar a distancia corta.",
-          "empower": "Segundo ataque en dirección diferente."
+          "desc": "Desatas un rayo devastador de luz que inflige 2d8 + CAR daño Radiante e inflige quemadura leve. A distancia corta, el ataque no puede ser esquivado.",
+          "empower": "Realizas un segundo ataque en una dirección diferente."
         }
       ]
     },
@@ -223,10 +228,10 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera mediana",
-          "crit": "Quemadura media y cegado 1 ronda.",
+          "crit": "Los objetivos sufren quemadura media y quedan cegados 1 ronda.",
           "duration": "Instantáneo",
-          "desc": "Explosión 2d10 + CAR Radiante y quemadura media. A aliados vinculados los sana (2+Rango Vit) y reduce heridas.",
-          "empower": "Aumenta radio un paso y selección de objetivos (daño/cura)."
+          "desc": "Liberas una explosión de energía solar que inflige 2d10 + CAR daño Radiante e inflige quemadura media a los enemigos. Los aliados vinculados en el área se curan Rango + 2 Vitalidad y reducen sus heridas permanentes un paso.",
+          "empower": "Aumenta el radio un paso y permite seleccionar objetivos individuales para daño o curación."
         },
         {
           "name": "Milagro de Sanación",
@@ -238,8 +243,8 @@
           "cost": "1 acción, 3 chi",
           "range": "Toque",
           "duration": "Instantáneo",
-          "desc": "Restaura toda la Vitalidad y (Rango + 2) PV. Elimina todas las heridas/aflicciones. Resucita (muerte < 1 hora).",
-          "empower": "Lanzar sobre ti mismo como acción bonus."
+          "desc": "Restauras toda la Vitalidad del objetivo y Rango + 2 PV. Eliminas todas las heridas permanentes y aflicciones. Puede resucitar a una criatura muerta hace menos de 1 hora.",
+          "empower": "Puedes lanzarlo sobre ti mismo como acción bonus."
         },
         {
           "name": "Sello de Regeneración",
@@ -252,8 +257,8 @@
           "cost": "2 acciones, 3 chi",
           "range": "Toque",
           "duration": "Seis rondas",
-          "desc": "Regeneración masiva: Recupera (Rango + 2) Vitalidad al inicio del turno y reduce herida/aflicción un paso.",
-          "empower": "Objetivo regenera el doble esta ronda."
+          "desc": "Colocas un sello de regeneración sobre el objetivo. Al inicio de cada turno, el objetivo recupera Rango + 2 Vitalidad y reduce una herida permanente o aflicción un paso.",
+          "empower": "El objetivo regenera el doble esta ronda."
         }
       ]
     },
@@ -274,9 +279,9 @@
           ],
           "cost": "3 acciones, 5 chi",
           "area": "Radio grande",
-          "crit": "Cegado durante una ronda.",
+          "crit": "Los objetivos quedan cegados durante una ronda.",
           "duration": "Siete rondas",
-          "desc": "Ataque inicial 3d10 + CAR. Sobrecarga zonal: Ventaja en Vida, sanación pasiva (Rango + 2) a vivos, resurrección inmediata (1 PV) al morir, daña a no-muertos/malignos.",
+          "desc": "Desatas una fuente de energía vital pura. El ataque inicial inflige 3d10 + CAR daño Radiante. Durante la sobrecarga: obtienes Ventaja en tiros de Vida, las criaturas vivas aliadas recuperan Rango + 2 Vitalidad al inicio de cada turno, las criaturas que mueran resucitan inmediatamente a 1 PV (una vez) y los no-muertos y criaturas malignas sufren daño continuo.",
           "empower": "N/A"
         }
       ]

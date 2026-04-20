@@ -1,0 +1,30 @@
+{
+  "id": "escudo_invencible",
+  "name": "Escudo Invencible",
+  "type": "Armadura Mágica",
+  "subtype": "Escudo",
+  "rarity": "Legendaria",
+  "image": "escudo_invencible.jpg",
+  "description": "Un escudo circular de adamantina pura con runas de protección de los Primeros Dioses grabadas en su superficie. Ningún golpe lo ha agrietado jamás.",
+  "defense": "4",
+  "price": "60 CR",
+  "properties": [
+    "<b>Sintonización</b>",
+    "<b>Artefacto</b>",
+    "<b>Impenetrable:</b> +3 a DEF adicional contra ataques a distancia"
+  ],
+  "abilities": [
+    {
+      "name": "Muro Inamovible",
+      "cost": "1 acción",
+      "uses": "3/día",
+      "description": "Plantas el escudo y creas una barrera mágica de 6m de ancho que bloquea todo movimiento y proyectiles durante 1 minuto. La barrera tiene 50 PV."
+    },
+    {
+      "name": "Contraataque Perfecto",
+      "cost": "1 reacción",
+      "uses": "Ilimitado",
+      "description": "Cuando un ataque cuerpo a cuerpo contra ti falla, puedes hacer un ataque de escudo inmediato (2d8+FUE contundente)."
+    }
+  ]
+}

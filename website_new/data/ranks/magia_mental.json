@@ -6,7 +6,7 @@
   "stats": ["Inteligencia", "Chi"],
   "description": "Manipulas la psique de tus enemigos para leer pensamientos, alterar emociones y controlar voluntades. Puedes sanar la cordura de aliados o destrozar la de tus rivales.",
   "fundamentals": [
-    "<strong>Reserva de Chi:</strong> Incrementa por Rango + 2.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango."
   ],
   "levels": [
@@ -17,10 +17,10 @@
         {
           "name": "Asalto Mental",
           "tags": ["Mental", "Cordura"],
-          "cost": "1 Acción",
+          "cost": "1 acción",
           "range": "Medio",
           "crit": "Objetivo queda Aturdido 1 ronda.",
-          "desc": "Ataque a la cordura. Daño a Cordura (Rango + 1) y pierde concentración. Si Cordura llega a 0, cae Inconsciente. (Resiste: Concentración/Averiguar).",
+          "desc": "Atacas la cordura del objetivo, infligiendo Rango + 1 de daño a Cordura e interrumpiendo su concentración. El objetivo resiste con Concentración o Averiguar Intenciones. Si su Cordura llega a 0, cae Inconsciente.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -29,16 +29,16 @@
           "cost": "2 acciones, 1 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
-          "desc": "Detectas criaturas y lees pensamientos superficiales. Acción: Leer pensamiento profundo (Resiste: Concentración/Averiguar).",
-          "empower": "Reacción para prever acción enemiga (Ventaja en defensa)."
+          "desc": "Detectas la presencia de criaturas en el área y lees sus pensamientos superficiales. Como acción, puedes leer un pensamiento profundo (el objetivo resiste con Concentración o Averiguar Intenciones).",
+          "empower": "Como reacción, previenes la acción de un enemigo detectado (Ventaja en tu tiro defensivo)."
         },
         {
           "name": "Escudo Mental",
           "tags": ["Mental", "Duradera"],
           "cost": "2 acciones",
           "duration": "Concentración",
-          "desc": "Usas Magia Mental para defensa contra efectos Mentales. Aumenta Cordura en (Rango). Bloquea detección de pensamientos.",
-          "empower": "Otorgar beneficio a un aliado (Toque)."
+          "desc": "Usas Magia Mental para defenderte de efectos Mentales. Tu Cordura aumenta en una cantidad igual a tu Rango. Bloquea intentos de detección de pensamientos.",
+          "empower": "Otorgas el beneficio a un aliado al tacto."
         }
       ]
     },
@@ -51,23 +51,23 @@
           "tags": ["Mental", "Duradero"],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
-          "desc": "Implantas una orden o comportamiento lógico. En combate: Fuerza a realizar 1 acción específica.",
-          "empower": "Reusar como acción bonus sin coste."
+          "desc": "Implantas una orden o comportamiento lógico en la mente del objetivo. En combate, fuerzas al objetivo a realizar 1 acción específica.",
+          "empower": "Puedes reusar como acción bonus sin coste de chi."
         },
         {
           "name": "Sanación Mental",
           "tags": ["Mental", "Toque"],
           "cost": "2 acciones, 1 chi",
           "range": "Toque",
-          "desc": "Restauras Cordura (Rango + 1). Eliminas un hechizo Mental ajeno (Tiro enfrentado).",
-          "empower": "Eliminas un efecto adicional."
+          "desc": "Restauras Rango + 1 de Cordura al objetivo. Además, eliminas un hechizo Mental ajeno que lo afecte (mediante tiro enfrentado).",
+          "empower": "Eliminas un efecto Mental adicional."
         },
         {
           "name": "Alterar Emociones",
           "tags": ["Mental", "Duradero"],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
-          "desc": "Induces estado emocional (Cansancio, Ira, Miedo, Calma o Valentía) hasta que el objetivo se recupere o termine el combate.",
+          "desc": "Induces un estado emocional en el objetivo: Cansancio, Ira, Miedo, Calma o Valentía. El efecto persiste hasta que el objetivo se recupere o termine el combate.",
           "empower": "Afecta a un objetivo adicional."
         }
       ]
@@ -83,9 +83,9 @@
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
-          "crit": "Daño a Cordura adicional (Rango + 1).",
-          "desc": "Ataque de área. Daño a Cordura (Rango + 1) y causa estado Confundido.",
-          "empower": "Lanzar como acción bonus en otra área."
+          "crit": "Daño a Cordura adicional igual a Rango + 1.",
+          "desc": "Ataque de área que inflige Rango + 1 de daño a Cordura a todas las criaturas en la zona y las deja en estado Confundido.",
+          "empower": "Lanzas el hechizo como acción bonus en otra área."
         },
         {
           "name": "Geas",
@@ -93,14 +93,14 @@
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "duration": "1 día",
-          "crit": "Reduce Cordura (Rango + 1).",
-          "desc": "Implanta orden latente de cumplimiento forzoso. Puedes activarla para controlar al objetivo 1 ronda.",
+          "crit": "Reduce la Cordura del objetivo en Rango + 1.",
+          "desc": "Implantas una orden latente de cumplimiento forzoso en el objetivo. Puedes activar la orden para controlar al objetivo durante 1 ronda.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
           "name": "Telepatía",
           "tags": ["Mental", "Pasiva"],
-          "desc": "Comunicación mental con criaturas detectadas. Permite lanzar hechizos mentales sin línea de visión a objetivos detectados."
+          "desc": "Estableces comunicación mental con criaturas que hayas detectado. Puedes lanzar hechizos mentales sin línea de visión contra objetivos detectados."
         }
       ]
     },
@@ -115,8 +115,8 @@
           "cost": "2 acciones, 2 chi",
           "area": "Esfera media",
           "duration": "Concentración",
-          "desc": "Controlas comportamiento de grupo. Afectados repiten tiro cada turno.",
-          "empower": "Fuerzas a un afectado a obedecer una orden inmediata (efecto Geas)."
+          "desc": "Controlas el comportamiento de un grupo de criaturas en el área. Los afectados pueden repetir el tiro de salvación al inicio de cada turno.",
+          "empower": "Fuerzas a un afectado a obedecer una orden inmediata (como el efecto de Geas)."
         },
         {
           "name": "Modificar Recuerdos",
@@ -124,7 +124,7 @@
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "duration": "Permanente",
-          "desc": "Reescribes 10 minutos de memoria. Si tiene 0 Cordura, puedes borrar habilidades/rangos.",
+          "desc": "Reescribes hasta 10 minutos de los recuerdos del objetivo. Si el objetivo tiene 0 de Cordura, puedes borrar habilidades o rangos de su memoria.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -133,8 +133,8 @@
           "cost": "2 acciones, 2 chi",
           "area": "Esfera media",
           "duration": "Concentración",
-          "desc": "Aplica 'Alterar Emociones' a todo el que entre en el área.",
-          "empower": "Cancela efectos Mentales/Moral en el área."
+          "desc": "Creas un aura que aplica el efecto de Alterar Emociones a toda criatura que entre en el área.",
+          "empower": "Cancelas todos los efectos Mentales y de Moral en el área."
         }
       ]
     },
@@ -149,7 +149,7 @@
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "desc": "Control total del objetivo. Obedece órdenes (salvo suicidas, a menos que tenga 0 Cordura).",
+          "desc": "Tomas control total del objetivo. Obedece todas tus órdenes, salvo las suicidas (a menos que tenga 0 de Cordura).",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -157,16 +157,16 @@
           "tags": ["Mental", "Mejora", "Toque"],
           "cost": "1 acción, 3 chi",
           "range": "Toque",
-          "desc": "Inmunidad a efectos Mentales y detección. Termina si la Cordura cae demasiado.",
-          "empower": "Reacción: Reflejar hechizo mental al atacante."
+          "desc": "El objetivo se vuelve inmune a efectos Mentales y a detección. El efecto termina si la Cordura del objetivo cae demasiado.",
+          "empower": "Como reacción, reflejas un hechizo mental recibido hacia el atacante."
         },
         {
           "name": "Destrozar Mente",
           "tags": ["Mental", "Cordura"],
-          "cost": "1 Acción, 3 chi",
+          "cost": "1 acción, 3 chi",
           "range": "Medio",
           "crit": "Objetivo cae Inconsciente.",
-          "desc": "Daño masivo a Cordura (1d10 + INT) y Aturdido. Si Cordura llega a 0, daño permanente.",
+          "desc": "Infliges 1d10 + INT de daño a la Cordura del objetivo y lo dejas Aturdido. Si su Cordura llega a 0, sufre daño permanente.",
           "empower": "Afecta a un objetivo adicional."
         }
       ]
@@ -182,8 +182,8 @@
           "cost": "3 acciones, 5 chi",
           "area": "Esfera media",
           "duration": "Concentración",
-          "crit": "Fallo automático en resistencia al hechizo extra.",
-          "desc": "Daño Cordura (1d10 + INT) a todos en el área + Aplicas otro hechizo Mental (Rango III o menos) gratis. Repetible cada turno. Impide concentración enemiga."
+          "crit": "Los afectados fallan automáticamente su siguiente tiro de salvación contra el hechizo.",
+          "desc": "Infliges 1d10 + INT de daño a la Cordura de todas las criaturas en el área y aplicas un hechizo Mental de Rango III o inferior gratis. El efecto se repite cada turno. Las criaturas dentro del área no pueden mantener la concentración."
         }
       ]
     }
