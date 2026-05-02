@@ -1,20 +1,20 @@
 {
-  "id": "elemental_fuego",
-  "name": "Elemental de Fuego",
-  "tier": "Esbirro Élite II",
+  "id": "elemental_fuego_avanzado",
+  "name": "Elemental de Fuego Gigante",
+  "tier": "Esbirro Élite III",
   "type": "Elemental",
-  "size": "Grande",
+  "size": "Gigante",
   "image": "creatures/elemental_fuego.jpg",
 
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7",
-    "MEN": "+4"
+    "FÍS": "+9+2d6",
+    "VOL": "+9+1d6",
+    "MEN": "+9"
   },
   "damageThreshold": {
-    "magic": 12,
-    "other": 8
+    "magic": 15 ,
+    "other": 10
   },
   "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Fuego", "Terreno difícil"],
   "senses": "Percepción vital a distancia media",
@@ -27,7 +27,7 @@
   "traits": [
     {
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 golpe automáticamente."
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 3d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 golpe automáticamente."
     },
     {
       "name": "Vuelo",
@@ -37,19 +37,20 @@
 
   "actions": [
     {
-      "name": "Llamarada",
+      "name": "Bola de Fuego",
       "cost": 1,
-      "bonus": "+7 + 2d6",
+      "bonus": "+9 + 3d6",
       "range": "8",
-      "damage": "3d6 Fuego",
+      "area": "Radio 2",
+      "damage": "4d8 Fuego",
       "desc": "Al impactar, el objetivo sufre una *quemadura* y todos los objetos inflamables del área se incendian. Puede moverse 4 pasos antes o después del ataque."
     },
     {
       "name": "Aliento Abrasador",
       "cost": 2,
-      "bonus": "+7 + 2d6",
-      "area": "Cono 8",
-      "damage": "4d6 Fuego",
+      "bonus": "+9 + 3d6",
+      "area": "Cono 12",
+      "damage": "5d8 Fuego",
       "desc": "Al impactar, todos los afectados sufren una *quemadura* y los objetos inflamables del área se incendian."
     }
   ],
@@ -57,7 +58,7 @@
   "reactions": [
     {
       "name": "Parada / Esquiva",
-      "bonus": "+7 + 2d6",
+      "bonus": "+9 + 3d6",
       "desc": "Puede moverse 4 pasos con éxito o con fallo."
     },
     {
@@ -68,7 +69,7 @@
     {
       "name": "Muro de Fuego",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo reciben 2d6 de daño de Fuego."
+      "desc": "Aumenta todos sus umbrales de daño en 5. Si es impactado por un ataque cuerpo a cuerpo, su atacante sufre 3d8 de daño de Fuego."
     }
   ],
 

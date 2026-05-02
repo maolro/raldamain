@@ -1,20 +1,20 @@
 {
-  "id": "elemental_fuego",
-  "name": "Elemental de Fuego",
-  "tier": "Esbirro Élite II",
+  "id": "elemental_fuego_anciano",
+  "name": "Elemental de Fuego Anciano",
+  "tier": "Esbirro Élite V",
   "type": "Elemental",
-  "size": "Grande",
+  "size": "Gigante",
   "image": "creatures/elemental_fuego.jpg",
 
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7",
-    "MEN": "+4"
+    "FÍS": "+13+3d6",
+    "VOL": "+13+2d6",
+    "MEN": "+13+1d6"
   },
   "damageThreshold": {
-    "magic": 12,
-    "other": 8
+    "magic": 28,
+    "other": 24
   },
   "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Fuego", "Terreno difícil"],
   "senses": "Percepción vital a distancia media",
@@ -27,7 +27,7 @@
   "traits": [
     {
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 golpe automáticamente."
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 4d10 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 golpe automáticamente."
     },
     {
       "name": "Vuelo",
@@ -37,27 +37,28 @@
 
   "actions": [
     {
-      "name": "Llamarada",
+      "name": "Fuego Puro",
       "cost": 1,
-      "bonus": "+7 + 2d6",
-      "range": "8",
-      "damage": "3d6 Fuego",
+      "bonus": "+13 + 4d6",
+      "range": "12",
+      "area": "Radio 4",
+      "damage": "5d10 Fuego/Radiante",
       "desc": "Al impactar, el objetivo sufre una *quemadura* y todos los objetos inflamables del área se incendian. Puede moverse 4 pasos antes o después del ataque."
     },
     {
-      "name": "Aliento Abrasador",
+      "name": "Lluvia de Brasas",
       "cost": 2,
-      "bonus": "+7 + 2d6",
+      "bonus": "+13 + 4d6",
       "area": "Cono 8",
-      "damage": "4d6 Fuego",
-      "desc": "Al impactar, todos los afectados sufren una *quemadura* y los objetos inflamables del área se incendian."
+      "damage": "6d10 Fuego/Radiante",
+      "desc": "Hace secuencia de dos ataques contra la misma zona. Al impactar, todos los afectados sufren una *quemadura* y los objetos inflamables del área se incendian. Convierte todo el terreno en fuego."
     }
   ],
 
   "reactions": [
     {
       "name": "Parada / Esquiva",
-      "bonus": "+7 + 2d6",
+      "bonus": "+13 + 4d6",
       "desc": "Puede moverse 4 pasos con éxito o con fallo."
     },
     {
@@ -68,7 +69,7 @@
     {
       "name": "Muro de Fuego",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo reciben 2d6 de daño de Fuego."
+      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo reciben 4d10 de daño de Fuego."
     }
   ],
 

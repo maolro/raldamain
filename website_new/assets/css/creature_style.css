@@ -112,6 +112,7 @@
     font-style: italic;
     margin: 0;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 /* Tapered separators (like D&D Beyond) */
@@ -129,9 +130,15 @@
 /* --- COMBAT STATS ROW --- */
 .statblock-combat {
     padding: 1rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
+    align-items: flex-start;
+}
+
+/* Legacy grid override for old-format creatures */
+.statblock-combat .combat-stat {
+    flex: 1 1 100px;
     text-align: center;
 }
 
@@ -299,6 +306,105 @@
 .damage {
     color: #ff6b6b;
     font-weight: bold;
+}
+
+/* --- NEW FORMAT: HITS + UD + SAVES --- */
+
+/* Override the combat container to stack vertically and center */
+.statblock-combat:has(.new-format-toprow) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem 0.75rem;
+}
+
+.new-format-toprow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.nf-stat {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.nf-stat-sep {
+    color: #5c4010;
+    font-size: 1.1rem;
+    margin: 0 0.2rem;
+}
+
+.new-format-savesrow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding: 0.4rem 0;
+}
+
+.nf-saves-label {
+    flex-shrink: 0;
+}
+
+.nf-props-sep {
+    margin: 0.5rem 0 0.6rem !important;
+}
+
+.hits-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e76a6a;
+    line-height: 1;
+}
+
+.save-pills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.save-pill {
+    background: rgba(201, 162, 39, 0.08);
+    border: 1px solid #5c4010;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.save-label {
+    color: #c9a227;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.save-value {
+    color: var(--text-main);
+}
+
+/* --- NEW FORMAT: FREE REACTION TAG --- */
+.free-tag {
+    display: inline-block;
+    background: rgba(45, 138, 78, 0.15);
+    border: 1px solid #2d8a4e;
+    color: #6fc98a;
+    font-size: 0.75rem;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 4px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/* Movement note within an action */
+.action-move {
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* --- LEGENDARY ACTIONS --- */

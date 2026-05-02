@@ -101,8 +101,8 @@
           "tags": ["Gravedad", "Duradero"],
           "cost": "2 chi",
           "duration": "Concentración",
-          "desc": "Obtienes velocidad de vuelo 1 y Ventaja en tiros de Esquiva.",
-          "empower": "Vuelas 1 paso adicional y reduces el daño recibido a la mitad durante 1 ronda."
+          "desc": "Obtienes velocidad de vuelo 1 y Ventaja en tiros de Esquiva. Puedes emplear tu tiro de Magia Gravitatoria para todos tus tiros de Esquiva o tus tiros de Salvación Físicos.",
+          "empower": "Vuelas un paso y aumentas tu tiro defensivo de Esquiva por 10."
         },
         {
           "name": "Bomba de Gravedad",
@@ -127,8 +127,8 @@
           "cost": "2 acciones, 2 chi",
           "area": "Radio pequeño",
           "duration": "Concentración",
-          "desc": "Obtienes contadores de escudo iguales a tu Rango y Resistencia a ataques a distancia. Como reacción, puedes atraer o empujar a enemigos que se acerquen al vórtice.",
-          "empower": "Recuperas contadores de escudo perdidos o aumentas el radio del vórtice."
+          "desc": "Obtienes contadores de escudo iguales a tu Rango y Resistencia a ataques a distancia. Todos tus ataques de Lanzamiento aumentan su radio de efecto a pequeño y puedes emplear Lanzamiento como acción bonus una vez por ronda contra enemigos en el vórtice.",
+          "empower": "Recuperas contadores de escudo iguales a la mitad de tu Rango (redondeando hacia abajo) o aumentas el radio del vórtice."
         },
         {
           "name": "Distorsión Gravitatoria",

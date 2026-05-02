@@ -1,0 +1,3 @@
+# Plantillas
+- **Superior**: +1 categoría, +2 en todos los tiros, obtiene +1d6 en todos sus tiros si pasa de una categoría par a impar, aumenta todos sus Umbrales de Daño por 4 y recibe un dado de daño adicional del mismo tipo (si pasa de una categoría par a impar, en lugar de recibir un dado adicional aumenta el nivel de los dados aumentan por un paso).
+- **Inferior**: -1 categoría, -2 en todos los tiros, obtiene -1d6 en todos sus tiros si pasa de una categoría impar a par, reduce todos sus Umbrales de Daño por 4 y pierde un dado de daño (si pasa de una categoría impar a par, en lugar de perder un dado reduce el nivel de los dados por un paso).

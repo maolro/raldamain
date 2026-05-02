@@ -92,18 +92,6 @@ Solo para jefes de nivel 10+. Permiten actuar fuera de turno:
 - Ataque de Cola (1): Un ataque adicional con cola
 - Ataque de Alas (2): Ataque en área que puede derribar
 
-### Paso 8: Recompensas
-
-Define la experiencia y el botín:
-
-| Nivel | XP Base | Tesoro Sugerido |
-|-------|---------|-----------------|
-| 1-3   | 25-100  | Objetos mundanos, pocas monedas |
-| 4-6   | 200-700 | Objetos poco comunes, componentes |
-| 7-10  | 1000-2500 | Objetos raros, gemas |
-| 11-15 | 3000-7000 | Objetos muy raros, artefactos menores |
-| 16-20 | 8000-20000 | Objetos legendarios |
-
 ### Equilibrio Final
 
 Prueba tu criatura contra un grupo de 4 personajes del mismo nivel:

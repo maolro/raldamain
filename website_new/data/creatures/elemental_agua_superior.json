@@ -1,0 +1,75 @@
+{
+  "id": "elemental_agua_superior",
+  "name": "Elemental de Agua Superior",
+  "tier": "Esbirro Élite IV",
+  "type": "Elemental",
+  "size": "Grande",
+  "image": "creatures/elemental_agua.jpg",
+
+  "hits": 2,
+  "saves": { "FÍS": "+11+2d6", "VOL": "+11+1d6", "MEN": "+11" },
+  "damageThreshold": { "magic": 25, "other": 20 },
+  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Fuego"],
+  "senses": "Percepción de corrientes a distancia media",
+  "speed": "Paso 14, Nado 20",
+
+  "combat": { "acciones": 3, "reacciones": 1 },
+
+  "traits": [
+    {
+      "name": "Cuerpo Líquido",
+      "desc": "Puede fluir a través de cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Las criaturas que entren en contacto o pasen por su espacio sufren 3d8 Contundente automáticamente. Si queda completamente sumergido en agua natural al inicio de su turno, recupera 1 Impacto."
+    }
+  ],
+
+  "actions": [
+    {
+      "name": "Torrente",
+      "cost": 1,
+      "bonus": "+11+3d6",
+      "range": "10 pasos",
+      "damage": "5d8 Contundente",
+      "move": "Puede moverse 4 pasos antes o después del ataque.",
+      "desc": "Al impactar, el objetivo es empujado 6 pasos."
+    },
+    {
+      "name": "Ola Chocante",
+      "cost": 2,
+      "bonus": "+11+3d6",
+      "area": "Línea de 14 pasos",
+      "damage": "5d8 Contundente",
+      "move": "Se desplaza hasta 10 pasos en línea recta antes de atacar.",
+      "desc": "Al impactar, cada objetivo es empujado 8 pasos y sufre *tropiezo*."
+    },
+    {
+      "name": "Agarre Acuoso",
+      "cost": 2,
+      "bonus": "+11+3d6",
+      "range": "Adyacente o medio",
+      "damage": "3d8 Contundente",
+      "desc": "Al impactar, el objetivo queda *agarrado* (FÍS UD 25 para escapar). Mientras está agarrado, sufre 3d8 Contundente al inicio de cada uno de sus turnos por ahogamiento. El elemental puede arrastrar al objetivo consigo al moverse gastando 1 acción adicional."
+    }
+  ],
+
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "bonus": "+11+2d6",
+      "desc": "Puede moverse 4 pasos con éxito o con fallo."
+    },
+    {
+      "name": "Evasión",
+      "cost": 1,
+      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 8 pasos. No puede moverse a zonas congeladas."
+    },
+    {
+      "name": "Muro de Agua",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 6. Los atacantes cuerpo a cuerpo son empujados 8 pasos y sufren 3d8 Contundente de rebote."
+    }
+  ],
+
+  "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento, convocadas desde el Plano Elemental del Agua. Pacientes y deliberados, fluyen alrededor de los obstáculos antes de golpear con la fuerza de las mareas. Absorben el calor del entorno, sofocan el fuego y asfixian a sus enemigos con una eficiencia silenciosa y letal.",
+
+  "tags": ["Elemental", "Agua", "Invocación", "Élite"]
+}

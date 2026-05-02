@@ -15,15 +15,15 @@
       "title": "Iniciado",
       "abilities": [
         {
-          "name": "Destreza Defensiva",
+          "name": "Defensa Hábil",
           "tags": ["Duelo", "Pasiva"],
-          "desc": "Al usar Parada, puedes tirar una segunda reacción defensiva (por ejemplo, Esquiva) y quedarte con el mejor resultado."
+          "desc": "Al defenderse, tira tanto Esquiva como Parada y se queda con el mejor resultado."
         },
         {
-          "name": "Truco de Espada",
-          "tags": ["Duelo", "Mejora"],
-          "cost": "1 chi",
-          "desc": "Realizas una maniobra como acción bonus: Paso Rápido, Derribo, Cambio de objetivo o Daño extra."
+          "name": "Preparación contra Cargas",
+          "tags": ["Duelo", "Maniobra"],
+          "cost": "2 acciones, 1 chi",
+          "desc": "Termina su turno entrando en posición defensiva. Puede realizar un ataque de oportunidad a cada enemigo que entre en una posición que alcance, el cual empuja al impactar. El efecto termina al inicio de su siguiente turno, al recibir un impacto o al moverse. No afecta a enemigos que ya pueda alcanzar."
         }
       ]
     },
@@ -35,21 +35,25 @@
           "name": "Finta Engañosa",
           "tags": ["Duelo", "Visual"],
           "cost": "1 chi",
-          "desc": "Si fallas un ataque, el objetivo debe superar un tiro de Averiguar Intenciones o pierde su siguiente reacción."
-        },
-        {
-          "name": "Golpe de Mango",
-          "tags": ["Duelo", "Ataque"],
-          "cost": "1 chi",
-          "range": "Cuerpo a cuerpo",
-          "crit": "Objetivo sufre herida permanente leve.",
-          "desc": "Realizas un ataque contundente (1d6 + MOD). Al impactar, el objetivo pierde su siguiente reacción. El daño escala a 1d8 a Rango III y 1d10 a Rango V."
+          "desc": "Si su ataque es detenido exitosamente, provoca Desventaja al objetivo en su siguiente ataque. Si el ataque impacta, no hace daño ni provoca efectos. Debe declararse antes de atacar y puede identificarse con un tiro exitoso de Mente."
         },
         {
           "name": "Ataque Torbellino",
           "tags": ["Duelo", "Mejora"],
           "cost": "1 chi",
-          "desc": "Tu siguiente ataque afecta a todos los enemigos adyacentes y provoca +1d6 daño."
+          "desc": "Ataca a cada enemigo que alcance y empuja hacia atrás a todos los que impacte. Aplica mejoras de ataque a todos los golpes."
+        },
+        {
+          "name": "Estocada Fuerte",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Al impactar provoca un dado de daño adicional y una herida leve en la parte del cuerpo que escoja. Debe declararse antes de atacar."
+        },
+        {
+          "name": "Secuencia de Golpes",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Hace dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Solo puede usarse con armas de una mano."
         }
       ]
     },
@@ -58,23 +62,22 @@
       "title": "Profesional",
       "abilities": [
         {
+          "name": "Carga del Espadachín",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Realiza un movimiento como acción bonus y ataca a cada enemigo en su camino, recibiendo un dado de daño adicional en cada ataque."
+        },
+        {
+          "name": "Contrataque",
+          "tags": ["Duelo", "Reacción"],
+          "cost": "1 reacción, 2 chi",
+          "desc": "En respuesta a ser atacado, realiza un ataque como reacción. Al impactar, interrumpe la acción enemiga y gasta toda su reserva de chi empleada en ella, incluyendo si el objetivo emplea una reacción defensiva."
+        },
+        {
           "name": "Espadas Trabadas",
           "tags": ["Duelo", "Maniobra"],
-          "cost": "2 chi",
-          "duration": "Concentración",
-          "desc": "Al detener un ataque con Parada, fuerzas un tiro opuesto. Si ganas, el arma del objetivo queda trabada e inutilizada. Si el objetivo falla de nuevo para escapar, puedes desarmarlo."
-        },
-        {
-          "name": "Ataque Saltarín",
-          "tags": ["Duelo", "Mejora"],
-          "cost": "2 chi",
-          "desc": "Saltas un paso antes de atacar y provocas +2d6 daño al impactar. Obtienes Ventaja defensiva contra ataques preparados. Los enemigos voladores sufren Desventaja en su tiro defensivo."
-        },
-        {
-          "name": "Combinar Técnicas",
-          "tags": ["Duelo", "Mejora"],
-          "cost": "2 chi",
-          "desc": "Tras atacar, realizas un segundo ataque como acción bonus contra el mismo objetivo."
+          "cost": "1 chi",
+          "desc": "Al ser detenido con Parada, puede forzar al afectado a superar un tiro físico o su arma queda agarrada. Si el arma ya está agarrada, puede usar esta habilidad para desarmarle. Cada intento de repetir el tiro cuesta una acción y provoca apertura."
         }
       ]
     },
@@ -83,24 +86,23 @@
       "title": "Experto",
       "abilities": [
         {
-          "name": "Contrataque",
-          "tags": ["Duelo", "Reacción"],
-          "cost": "1 reacción, 2 chi",
-          "desc": "Interrumpes una acción enemiga con un ataque de reacción. Al impactar, la acción del enemigo se pierde."
-        },
-        {
-          "name": "Danza del Espadachín",
+          "name": "Maestría de Arma",
           "tags": ["Duelo", "Duradera"],
           "cost": "2 acciones, 2 chi",
-          "duration": "Concentración",
-          "desc": "Obtienes Ventaja en tiros de ataque. Puedes usar una reacción defensiva adicional por ronda. Además, puedes parar proyectiles físicos.",
-          "empower": "Reduce el daño de un ataque no detenido a la mitad."
+          "desc": "Entra en un estado donde recibe Ventaja en todos sus tiros relacionados con armas y puede moverse al atacar o defenderse sin provocar aperturas.",
+          "empower": "(1 Reacción) Reduce el daño de un ataque enemigo a la mitad."
         },
         {
-          "name": "Estocada Poderosa",
+          "name": "Cortar el Acero",
+          "tags": ["Duelo", "Mejora"],
+          "cost": "1 chi",
+          "desc": "Su ataque elimina un contador de escudo del objetivo y rompe su armadura. Si el objetivo ha detenido el ataque con Parada, rompe el arma en su lugar."
+        },
+        {
+          "name": "Impacto Aéreo",
           "tags": ["Duelo", "Mejora"],
           "cost": "2 chi",
-          "desc": "Tu siguiente ataque provoca +2d6 daño y una herida permanente leve al impactar. Este ataque ignora armaduras (salvo armaduras completas). Requiere un contador de escudo adicional para ser detenido con Parada."
+          "desc": "Vuela dos pasos antes de atacar y tira un dado de daño adicional. Los objetivos voladores tienen Desventaja al defenderse. Si hiere a un objetivo volador, este debe superar un tiro de salvación Físico o cae al suelo."
         }
       ]
     },
@@ -109,22 +111,21 @@
       "title": "Maestro",
       "abilities": [
         {
-          "name": "Golpe de Gracia",
+          "name": "Muerte por Mil Cortes",
           "tags": ["Duelo", "Mejora"],
-          "cost": "3 chi",
-          "desc": "Tu siguiente ataque provoca +3d6 daño y una herida grave al impactar. Este ataque ignora armaduras. Si reduce al objetivo a 0 PV, lo mata instantáneamente."
+          "cost": "2 acciones, 3 chi",
+          "desc": "Realiza cuatro ataques contra un mismo objetivo, quien solo puede tirar defensa una vez. Cada ataque consecutivo tira con +1 al tiro de ataque y al daño, y todos provocan una herida leve."
         },
         {
-          "name": "Cortes en Cadena",
+          "name": "Partir Montañas",
           "tags": ["Duelo", "Mejora"],
           "cost": "3 chi",
-          "desc": "Al impactar, puedes moverte y atacar a otro enemigo adyacente. Este efecto continúa hasta que falles un ataque o no queden objetivos."
+          "desc": "Su siguiente ataque añade 2 dados de daño y afecta a cada objetivo en un radio medio o una línea grande. Destruye barreras y estructuras en su camino, y lanza por los aires y tropieza a todo objetivo que impacte."
         },
         {
-          "name": "Secuencia de Ataques",
-          "tags": ["Duelo", "Reacción"],
-          "cost": "3 chi",
-          "desc": "Al impactar, realizas 2 ataques adicionales contra el mismo objetivo, quien usa el mismo tiro defensivo. Cada impacto consecutivo otorga +1 al tiro de ataque y daño."
+          "name": "Proyección de Chi",
+          "tags": ["Duelo", "Pasiva"],
+          "desc": "Puede detener ataques mágicos y de área con su arma. Duplica el alcance de su arma y su daño cuenta como mágico a efectos de resistencias e inmunidades."
         }
       ]
     }

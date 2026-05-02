@@ -1,0 +1,82 @@
+{
+  "id": "elemental_aire_anciano",
+  "name": "Elemental de Aire Primigenio",
+  "tier": "Esbirro Élite V",
+  "type": "Elemental",
+  "size": "Gigante",
+  "image": "creatures/elemental_aire.jpg",
+
+  "hits": 2,
+  "saves": { "FÍS": "+11+3d6", "VOL": "+13+3d6", "MEN": "+13" },
+  "damageThreshold": { "magic": 28, "other": 20 },
+  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Terreno difícil", "Eléctrico"],
+  "senses": "Percepción de vibraciones a distancia larga",
+  "speed": "Vuelo 28",
+
+  "combat": { "acciones": 3, "reacciones": 2 },
+
+  "traits": [
+    {
+      "name": "Cuerpo de Aire",
+      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Las criaturas que entren en contacto o pasen por su espacio sufren 4d10 Eléctrico/Contundente automáticamente. Su forma es completamente invisible; las criaturas sin sentidos especiales no pueden detectarlo."
+    },
+    {
+      "name": "Vuelo",
+      "desc": "Vuela con total libertad y gana inmunidad a todos los efectos que actúen desde el suelo."
+    },
+    {
+      "name": "Ojo de la Tormenta",
+      "desc": "El elemental genera una zona de tormenta a su alrededor. Las criaturas sin vuelo en un radio de 4 pasos deben superar FÍS UD 28 al inicio de su turno o ser empujadas 4 pasos y sufrir *tropiezo*."
+    }
+  ],
+
+  "actions": [
+    {
+      "name": "Vendaval Primigenio",
+      "cost": 1,
+      "bonus": "+13+4d6",
+      "range": "14 pasos",
+      "damage": "5d10 Contundente/Eléctrico",
+      "move": "Puede moverse 8 pasos antes o después del ataque.",
+      "desc": "Al impactar, el objetivo es empujado 10 pasos. Las criaturas voladoras reciben 2 dados de daño adicionales y son derribadas automáticamente."
+    },
+    {
+      "name": "Viento Furibundo",
+      "cost": 2,
+      "bonus": "+13+4d6",
+      "area": "Cono de 16 pasos",
+      "damage": "5d10 Contundente/Eléctrico",
+      "desc": "Al impactar, cada objetivo es empujado 12 pasos y sufre *tropiezo*. Los voladores reciben 2 dados adicionales y son derribados al suelo automáticamente."
+    },
+    {
+      "name": "Torbellino Viviente",
+      "cost": 2,
+      "bonus": "+13+4d6",
+      "range": "Medio",
+      "damage": "4d10 Eléctrico/Contundente",
+      "desc": "Al impactar, el objetivo queda atrapado en el torbellino (FÍS UD 28 para escapar). Sufre 4d10 Eléctrico/Contundente al inicio de cada uno de sus turnos. El elemental puede moverse libremente arrastrando al objetivo. Si el objetivo muere, el elemental recupera 1 Impacto."
+    }
+  ],
+
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "bonus": "+11+3d6",
+      "desc": "Puede moverse 10 pasos con éxito o con fallo."
+    },
+    {
+      "name": "Evasión",
+      "cost": 1,
+      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 16 pasos en cualquier dirección."
+    },
+    {
+      "name": "Muro de Aire",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo son empujados 12 pasos y sufren 4d10 Eléctrico de rebote."
+    }
+  ],
+
+  "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta convocados desde el Plano Elemental del Aire. En su forma más antigua, son tempestades vivientes capaces de arrasar ciudades. Su mera presencia desata tormentas a su alrededor y su cuerpo es completamente imperceptible, delatado tan solo por el estruendo de los truenos y el olor a ozono.",
+
+  "tags": ["Elemental", "Aire", "Invocación", "Vuelo", "Élite", "Primigenio"]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "elemental_fuego",
+  "name": "Elemental de Fuego",
+  "level": 6,
+  "type": "Elemental",
+  "size": "Grande",
+  "image": "creatures/elemental_fuego.jpg",
+
+  "stats": {
+    "FUE": 4,
+    "DES": 5,
+    "CON": 4,
+    "INT": 1,
+    "SAB": 2,
+    "CAR": 2
+  },
+
+  "combat": {
+    "pv": 35,
+    "vitalidad": 50,
+    "defense": 16,
+    "speed": "15m, Vuelo 15m (flotar)",
+    "acciones": 3,
+    "reacciones": 1
+  },
+
+  "defenses": {
+    "resistances": [],
+    "immunities": ["Fuego", "Veneno", "agarrado", "paralizado", "derribado"],
+    "vulnerabilities": ["Frío", "Agua"]
+  },
+
+  "senses": ["Visión en la oscuridad 18m", "Percepción pasiva 10"],
+  "languages": ["Ignan"],
+
+  "traits": [
+    {
+      "name": "Cuerpo de Fuego",
+      "desc": "Una criatura que toca al elemental o lo golpea con un ataque cuerpo a cuerpo desde menos de 1.5m recibe 1d10 daño de fuego. El elemental ilumina un radio de 9m con luz brillante y 9m adicionales con luz tenue."
+    },
+    {
+      "name": "Forma Acuática Debilitada",
+      "desc": "Por cada 1.5m que el elemental se mueva en agua, o por cada 4 litros de agua que le arrojen, recibe 1 daño de frío."
+    },
+    {
+      "name": "Forma Incorpórea Parcial",
+      "desc": "El elemental puede moverse a través de espacios de hasta 2.5cm de ancho sin apretarse. No puede terminar su movimiento dentro de objetos sólidos."
+    }
+  ],
+
+  "actions": [
+    {
+      "name": "Multiataque",
+      "cost": "3 Acciones",
+      "tags": ["Especial"],
+      "desc": "El elemental realiza dos ataques de Toque Ardiente."
+    },
+    {
+      "name": "Toque Ardiente",
+      "cost": "1 Acción",
+      "tags": ["Cuerpo a cuerpo", "Fuego"],
+      "bonus": "+8",
+      "reach": "Adyacente",
+      "damage": "2d6+5 Fuego",
+      "desc": "Al impactar, prende objetos inflamables que no estén siendo portados. El objetivo puede sufrir quemadura leve con un golpe crítico."
+    }
+  ],
+
+  "reactions": [
+    {
+      "name": "Llamarada Defensiva",
+      "cost": "1 Reacción",
+      "tags": ["Fuego", "Defensiva"],
+      "desc": "Cuando es golpeado por un ataque cuerpo a cuerpo, el atacante recibe 1d6 daño de Fuego adicional."
+    }
+  ],
+
+  "legendaryActions": null,
+
+  "lore": "Los elementales de fuego son espíritus del plano elemental, atraídos al mundo material por poderosos conjuros de invocación. Son extremadamente destructivos y difíciles de controlar para magos inexpertos. Su forma fluctúa constantemente, adoptando vagamente una silueta humanoide compuesta enteramente de llamas vivas.",
+
+  "loot": {
+    "xp": 700,
+    "items": [
+      { "name": "Núcleo Elemental de Fuego", "chance": "50%" },
+      { "name": "Cenizas Incandescentes (3 dosis)", "chance": "75%" },
+      { "name": "Cristal de Llama Eterna", "chance": "10%" }
+    ]
+  },
+
+  "tags": ["Invocación", "Magia de Fuego", "Elemental", "Medio"]
+}

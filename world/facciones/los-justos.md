@@ -1,4 +1,0 @@
----
-title: Los Justos
----
-

@@ -1,0 +1,78 @@
+{
+  "id": "elemental_agua_anciano",
+  "name": "Elemental de Agua Primigenio",
+  "tier": "Esbirro Élite V",
+  "type": "Elemental",
+  "size": "Gigante",
+  "image": "creatures/elemental_agua.jpg",
+
+  "hits": 2,
+  "saves": { "FÍS": "+13+3d6", "VOL": "+13+2d6", "MEN": "+13+1d6" },
+  "damageThreshold": { "magic": 28, "other": 24 },
+  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Fuego", "Frío"],
+  "senses": "Percepción de corrientes a distancia larga",
+  "speed": "Paso 14, Nado 24",
+
+  "combat": { "acciones": 3, "reacciones": 2 },
+
+  "traits": [
+    {
+      "name": "Cuerpo Líquido",
+      "desc": "Puede fluir a través de cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Las criaturas que entren en contacto o pasen por su espacio sufren 4d10 Contundente automáticamente. Al inicio de su turno, recupera 1 Impacto si está en contacto con agua natural o si su Muro de Agua está activo."
+    },
+    {
+      "name": "Marea Primigenia",
+      "desc": "El agua en el entorno responde a su voluntad. Las zonas de agua adyacentes o próximas dificultan el movimiento de los enemigos (terreno difícil). Los aliados en esas zonas no sufren este efecto."
+    }
+  ],
+
+  "actions": [
+    {
+      "name": "Torrente Abismal",
+      "cost": 1,
+      "bonus": "+13+4d6",
+      "range": "12 pasos",
+      "damage": "5d10 Contundente",
+      "move": "Puede moverse 6 pasos antes o después del ataque.",
+      "desc": "Al impactar, el objetivo es empujado 8 pasos y queda *derribado*."
+    },
+    {
+      "name": "Tifón",
+      "cost": 2,
+      "bonus": "+13+4d6",
+      "area": "Radio de 6 pasos",
+      "damage": "5d10 Contundente",
+      "desc": "Al impactar, cada objetivo es empujado 8 pasos y sufre *tropiezo*. El área del ataque queda inundada (terreno difícil)."
+    },
+    {
+      "name": "Agarre Abismal",
+      "cost": 2,
+      "bonus": "+13+4d6",
+      "range": "Medio",
+      "damage": "4d10 Contundente",
+      "desc": "Al impactar, el objetivo queda *agarrado* en el interior del elemental (FÍS UD 28 para escapar). Mientras está atrapado, sufre 4d10 Contundente al inicio de cada uno de sus turnos por ahogamiento. Si el objetivo muere dentro del elemental, este recupera 1 Impacto."
+    }
+  ],
+
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "bonus": "+13+3d6",
+      "desc": "Puede moverse 6 pasos con éxito o con fallo."
+    },
+    {
+      "name": "Evasión",
+      "cost": 1,
+      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 10 pasos. No puede moverse a zonas congeladas."
+    },
+    {
+      "name": "Muro de Agua",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo son empujados 8 pasos y sufren 4d10 Contundente de rebote. Los atacantes que fallen por más de 5 quedan *derribados*."
+    }
+  ],
+
+  "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento, convocadas desde el Plano Elemental del Agua. En su forma más antigua, estos seres son mareas conscientes capaces de doblegar el paisaje a su voluntad. Su simple presencia inunda el terreno y sus ataques arrastran a los enemigos hacia profundidades de las que no regresan.",
+
+  "tags": ["Elemental", "Agua", "Invocación", "Élite", "Primigenio"]
+}

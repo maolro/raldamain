@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/rangos/armas/duelo.md",
+                "file": "website_new/data/world/idiomas/idioma_ustiles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "duelo"
+              "title": "idioma_ustiles"
             }
           },
           {
@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/rangos/ascendencias/ascendencia cruen.md",
+                "file": "website_new/data/bestiary/tier_vi/malakhim.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ascendencia cruen"
+              "title": "malakhim"
+            }
+          },
+          {
+            "id": "d0f7372f6752d703",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rules/reglas principales/ejercitos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ejercitos"
             }
           },
           {
@@ -83,16 +97,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/rangos/religion/chakras.md",
+                "file": "website_new/data/bestiary/tier_iii/naga_lunar.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chakras"
+              "title": "naga_lunar"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,46 +223,46 @@
       "bases:Create new base": false
     }
   },
-  "active": "68ce5dd5d07096dd",
+  "active": "d0f7372f6752d703",
   "lastOpenFiles": [
-    "website_new/data/world/lugares/dimensiones/plano-sombrio.md",
-    "rules/reglas principales/ejercitos.md",
-    "website_new/data/world/lugares/ciudades/rimas.md",
+    "website_new/data/world/idiomas/idioma_arshalani.md",
+    "website_new/data/bestiary/tier_vi/malakhim.md",
+    "website_new/data/bestiary/tier_vi/dragon_joven.md",
+    "website_new/data/bestiary/tier_iii/elemental_fuego.md",
+    "website_new/data/bestiary/tier_vi/gul_de_leng.md",
+    "website_new/data/bestiary/tier_vi/nergeth.md",
+    "website_new/data/bestiary/tier_vi/ornuzeg.md",
+    "website_new/data/bestiary/tier_vi/pesadilla_viviente.md",
+    "website_new/data/bestiary/tier_vi/azidahak.md",
+    "website_new/data/guia_criaturas.md",
+    "website_new/data/bestiary/templates.md",
+    "website_new/data/bestiary/base.md",
+    "website_new/data/bestiary/tier_iv/quimera.md",
+    "website_new/data/bestiary/tier_vi/einherjar.md",
+    "website_new/data/bestiary/tier_vi/golem_guardian.md",
+    "website_new/data/bestiary/tier_vi/soferiel.md",
+    "website_new/data/bestiary/tier_v/seripente_solar.md",
+    "website_new/data/bestiary/tier_iv/humatiel.md",
+    "website_new/data/bestiary/tier_iv/lilim.md",
+    "website_new/data/bestiary/tier_iv/can_cerbero.md",
+    "website_new/data/bestiary/tier_iv/langosta_de_abbadon.md",
+    "website_new/data/bestiary/tier_iii/cauchemar.md",
+    "website_new/data/bestiary/tier_v/ophanim.md",
+    "website_new/data/bestiary/tier_iii/usiu.md",
+    "website_new/data/bestiary/tier_iii/sabueso_infernal.md",
+    "website_new/data/bestiary/tier_iii/khutul.md",
+    "website_new/data/world/idiomas",
+    "website_new/data/bestiary/tier_vi",
+    "website_new/data/bestiary/tier_v",
+    "website_new/data/bestiary/tier_iv",
+    "website_new/data/bestiary/tier_iii",
+    "website_new/data/bestiary",
+    "website_new/data/c",
     "website_new/creador.html",
     "website_new/assets/css/builder_overrides.css",
     "website_new/assets/css/builder_style.css",
-    "website_new/assets/js/builder/main.js",
-    "website_new/assets/js/builder/v-equipage.js",
-    "website_new/assets/js/builder/v-archpage.js",
-    "website_new/assets/js/builder/v-statpage.js",
-    "website_new/assets/js/builder/v-spellpage.js",
-    "website_new/assets/js/builder/v-talpage.js",
-    "website_new/assets/js/builder/v-rankpage.js",
-    "website_new/data/world/facciones/clan-dokosha.md",
-    "website_new/data/world/facciones/clan-khodole.md",
-    "website_new/data/world/facciones/clan-daeyal.md",
-    "website_new/data/world/facciones/clan-katamashi.md",
-    "website_new/data/world/facciones/clan-hibotoru.md",
-    "website_new/data/world/personajes/shinri/keito.md",
-    "website_new/data/world/personajes/shinri/shizen.md",
-    "website_new/data/world/personajes/shinri/kenamaru.md",
-    "website_new/data/world/personajes/shinri/Shizen.md",
-    "campaign/caballeros de ustilus/personajes/theodora.md",
-    "campaign/caballeros de ustilus/personajes/rostam.md",
-    "campaign/caballeros de ustilus/personajes/reki.md",
-    "campaign/caballeros de ustilus/personajes/regulus.md",
     "campaign/caballeros de ustilus/personajes/regulus.jpg",
-    "campaign/caballeros de ustilus/personajes/petrikov.md",
     "campaign/caballeros de ustilus/personajes/petrikov.jpg",
-    "campaign/caballeros de ustilus/personajes/pantor.md",
-    "website_new/data/world/personajes/caballeros-de-ustilus/Pantor.md",
-    "campaign/caballeros de ustilus/personajes/madeleine.md",
-    "campaign/caballeros de ustilus/personajes/lucanor.md",
-    "campaign/caballeros de ustilus/personajes/laicon.md",
-    "campaign/caballeros de ustilus/personajes/ileria.md",
-    "campaign/caballeros de ustilus/personajes/iakub lazarevic.md",
-    "campaign/caballeros de ustilus/personajes/fileon.md",
-    "campaign/caballeros de ustilus/personajes/eliyet.md",
     "campaign/caballeros de ustilus/personajes/basileos.jpg",
     "campaign/caballeros de ustilus/personajes/abshalom.jpg",
     "website_new/data/world/world4000.jpg",

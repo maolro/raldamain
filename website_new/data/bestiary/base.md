@@ -1,0 +1,125 @@
+Summons 
+Templates
+- Advanced: +1 tier, +2 in all rolls, gain +1d6 in all rolls (if from even to odd), boost damage dice, increase all thresholds
+- Celestial: +1 tier, +2 in all rolls, gain +1d6 in all rolls (if from even to odd), convert damage dice (if from odd to even), boost magic and physical thresholds, attacks count as Radiant, gain vulnerability to Necrotic Steel, Gain 2 spells/mutations
+- Infernal: +1 tier, +2 in all rolls, gain +1d6 in all rolls (if from even to odd), convert damage dice (if from odd to even), boost magic and physical thresholds, attacks inflict Infernal Wounds, gain vulnerability to Abyssal Ichor, Gain 2 spells/mutations
+- Abyssal: +1 tier, +2 in all rolls, gain +1d6 in all rolls (if from even to odd), convert damage dice (if from odd to even), boost magic and physical thresholds, attacks inflict Abyssal Plague, gain vulnerability to Celestial Silver, Gain 2 spells/mutations
+- Spiritual: +1 tier, +2 in all rolls, gain +1d6 in all rolls (if from even to odd), convert damage dice (if from odd to even), boost magic and physical thresholds, attacks are Magic, gain vulnerability to Cold Iron, Gain 3 spells/mutations
+Rank III
+- Large Elemental
+- Cerberus: Bite+Dimensional Anchor, Triple Bite, Fire Breath, Devour Soul, Counter Bite, Resilience
+- Demonic Minotaur: Greataxe, Gore, Bull Rush, Darkness Breath, Pursuit, Resilience
+- Bearded Devil: Glaive, Beard, Stabbing Strike, Powerful Cleave, Brace, Spaital Leap
+- Merrow: Claw, Bite, Harpoon, Drowning Strangle, Evasion, Resilience
+- Abyssal Spider Eater: Sting, Claws, Flyby Attack, Buzz, Evasion, Break Free
+- Satyr: Ram, Shortbow, Sleeping Pipes, Discordant Pipes, Evasion, Countersong
+- Byakhee: Bite, Claws, Shriek, Rend, Evasion, Maddening Form
+- Ghul: Claw, Bite, Rend, Blood Drain, Smoke Form, Fear Gaze
+- Yeti: Slam, Grab, Savage Rend, Freezing Gaze, Resilience, Snow Stealth
+- Achaierai: Beak, Claw, Savage Charge, Black Cloud, Evasion, Pursuit
+- Barghest: Bite, Psychic Assault, Rend, Crushing Despair, Displacement, Spaital Leap
+- Shadow Mastiff: Bite, Life Drain, Darkness, Bay, Shadow Leap, Shadow Stealth
+- Abyssal Grick: Beak, Tentacles, Acid Spittle, Underground Charge, Resilience, Devour Magic
+- Abyssal Gibbering Mouther: Bite, Spittle, Gibbering, Engulf, Amorphous Form, Counter Bite
+- Nightmare: Hoof, Tag Strike, Smoke Breath, Powerful Charge, Plane Shift, Evasion
+- Vulpinal: Bite, Flame Arrow, Healing Touch, Manipulate Emotions, Invisibility, Evasion
+- Basidirond: Slam, Grab, Hallucination Spores, Fungal Growth, Regenerate, Spore Cloud
+- Ceustodaemon: Claw, Magic-eating Bite, Fire Breath, Rend, Spaital Leap, Paralyzing Gaze
+- Ostiarius Kyton: Draining Touch, Psychic Assault, Despairing Darkness, Enthrall, Shadow Jaunt, Gaze of Pain
+- Redcap: Scythe, Kick, Violent Assault, Charge, Evasion, Feed off Violence
+- Tojanida: Bite, Claw, Ink Cloud, Rend, Shell Armor, Evasion
+- Host Devil: 
+- Babau demon: 
+- Azata Bralani: 
+- Belker: 
+Rank IV
+- Huge Elemental
+- Chimera 
+- Drowning Devil
+- Chaos Beast
+- Aeon Theletos
+- Vanth Psychopomp
+- Shoggti 
+- Mi-go
+- Janni 
+- Axiomite 
+- Hellcat
+- Hydro daemon
+- Naunet Protean
+- Mishtu
+- Legion Archon
+- Pairaka 
+- Succubus 
+- Soul Eater
+- Shadow Demon
+- Triceratops
+- Dire Tiger
+- Dire Bear
+- Kirin
+- Warmonger Devil
+- Dark Naga
+- Kyton Evangelist
+- Apocalypse Locust: Pincer, Sting, Accursed Breath, Maddening Buzz, Evasion, Locust Cloud
+Rank V
+- Greater Elemental
+- Shield Archon
+- Couatl
+- Bone Devil
+- Bebilith 
+- Vrock 
+- Tyrannosaurus
+- Megalodon
+- Mammoth
+- Giant Squid
+- Dragon Horse 
+- Sacristan Kyton
+- Nyogoth 
+- Zelekhut
+- Ghawwas Div
+- Piscodaemon 
+- Leukodaemon
+- Asura Upasunda
+- Movanic Deva
+- Shoki Psychopomp
+- Jyoti 
+- Treant 
+- Shedu
+- Avoral Agathion
+- Nuckelavee
+- Zuishin Kami
+- Star Monarch
+- Behir 
+- Erinyes
+Rank VI
+- Elder Elemental 
+- Monadic Deva: Morningstar, Healing Touch, Holy Word, Meteor Mash, Blinding Halo, Lightspeed Dash
+- Stone Golem: Smash, Crushing Grip, Earthquake, Petrification Curse, Stone Wall, Absorb Magic
+- Agashura Asura: Scimitars, Devour, Toxic Cloud, Deathspin, Plane Shift, Hypnotic Gaze
+- Leng Ghoul: Claws, Bite, Savage Rend, Nightmare Invasion, Evasion, Regeneration
+- Bogeyman: Claw, Phantasmal Assault, Despairing Darkness, Deepest Fear, Shadow Form, Jumpscare
+- Einherjar: Battleaxe Cleave, War Charge, Challenge of the Warrior, Battle Rage, Invulnerability, Blow for Blow
+- Thanadaemon: Draining Claw, Fear Gaze, Negative Energy Storm, Deathtouch, Devour Soul, Plane Shift
+- Young Dragon: Bite, Tail Slap, Breath, Wind Burst, Evasion, Resilience
+- Barbed Devil: Impaling Claw, Hellfire Bolts, Rend, Destructive Wave, Dimensional Leap, Spike Armor
+- Hezrou: Crushing Grip, Bite, Toxic Cloud, Divine Word, Gaseous Form, Abyssal Step
+- Chernobue: Tentacles, Bite, Qlippoth Corruption, Chaos Burst, Abyssal Step, Horror Gaze
+- Kolyarut: Blade Strike, Chains of Justice, Soul-stealing Smite, Impose Order, Regeneration, Commanding Gaze
+- Shira Div: Claw, Soul-eating Bite, Savage Rend, Black Sand, Phase Out, Dust Cloud
+- Imetesh Protean
+- Lammasu 
+- Meladaemon
+- Derghodaemon
+- Dorvae 
+- Hamatula Devil
+- Rusalka 
+- Omox Demon
+- Interocutor Kyton
+- Coloxus Demon
+- Greater Shadow
+- Contract Devil
+- Tophet 
+- Jorogumo 
+- Nereid 
+- Leonal
+- Black Jinn 
+- Jinn Noble
