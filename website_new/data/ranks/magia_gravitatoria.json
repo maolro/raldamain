@@ -160,7 +160,7 @@
         {
           "name": "Invertir la Gravedad",
           "tags": ["Gravedad", "Área"],
-          "cost": "3 acciones, 3 chi",
+          "cost": "2 acciones, 3 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
           "crit": "Empuje extra y herida leve al chocar.",
