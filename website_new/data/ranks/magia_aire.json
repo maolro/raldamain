@@ -46,7 +46,7 @@
           "crit": "El objetivo sufre una herida permanente leve.",
           "duration": "Instantánea",
           "desc": "Ataca con un tajo de aire comprimido que inflige 1d6 + SAB daño Cortante. Este ataque ignora ocultamiento y resistencias a ataques a distancia. \nPuedes gastar una acción adicional para incrementar el daño base de este ataque por 1d6 (máximo 2 acciones).",
-          "empower": "Haz un ataque contra un objetivo adicional o aumenta el daño por un dado y el área a un radio pequeño (medio si empoderas la segunda vez)."
+          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
         },
         {
           "name": "Agilidad del Aire",

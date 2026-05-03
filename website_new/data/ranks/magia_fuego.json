@@ -29,8 +29,8 @@
           "cost": "1+ acciones",
           "range": "Medio",
           "crit": "Objetivo sufre quemadura leve.",
-          "desc": "Inflige 1d6 + CAR daño Fuego y prende objetos inflamables. Puedes emplear una acción adicional para hacer otro ataque contra el mismo objetivo, quien debe emplear el mismo resultado defensivo.",
-          "empower": "Afecta a un objetivo adicional al alcance."
+          "desc": "Inflige 1d6 + CAR daño Fuego y prende objetos inflamables. Puedes emplear una acción adicional aumentar el daño base de este ataque por 1d6 (máx 2 veces).",
+          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
         },
         {
           "name": "Aliento de Fuego",
