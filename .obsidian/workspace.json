@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/reglas principales/ejercitos.md",
+                "file": "rules/rangos/ascendencias/ascendencia de aire.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ejercitos"
+              "title": "ascendencia de aire"
             }
           },
           {
@@ -225,6 +225,7 @@
   },
   "active": "d0f7372f6752d703",
   "lastOpenFiles": [
+    "rules/reglas principales/ejercitos.md",
     "website_new/data/world/idiomas/idioma_arshalani.md",
     "website_new/data/bestiary/tier_vi/malakhim.md",
     "website_new/data/bestiary/tier_vi/dragon_joven.md",
@@ -250,7 +251,6 @@
     "website_new/data/bestiary/tier_v/ophanim.md",
     "website_new/data/bestiary/tier_iii/usiu.md",
     "website_new/data/bestiary/tier_iii/sabueso_infernal.md",
-    "website_new/data/bestiary/tier_iii/khutul.md",
     "website_new/data/world/idiomas",
     "website_new/data/bestiary/tier_vi",
     "website_new/data/bestiary/tier_v",

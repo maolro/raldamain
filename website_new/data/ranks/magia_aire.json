@@ -23,14 +23,15 @@
           "tags": [
             "Aire",
             "Maniobra",
-            "Físico"
+            "Físico",
+            "Área"
           ],
-          "cost": "1 acción",
-          "range": "Medio",
-          "crit": "Objetivo sufre herida permanente leve.",
+          "cost": "2 Acciones, 1 chi",
+          "crit": "Los objetivos sufren una herida permanente leve.",
           "duration": "Instantánea",
-          "desc": "Ráfaga de viento que empuja y derriba al objetivo (tiro de Heroísmo/Acrobacias contra Aire para resistir). Si el objetivo no puede ser empujado, sufre 1d6 + SAB daño Contundente.",
-          "empower": "Afecta a un objetivo adicional."
+          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o son empujados dos pasos y caen tropezados. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. Además, si el objetivo empujado choca con una superficie física sufrirá entonces 3d6 + SAB daño Contundente (lo mismo ocurre con las caídas).",
+          "empower": "Vuelve a emplear este hechizo en la misma zona sin la necesidad de gastar acciones adicionales.",
+          "area": "Cono Medio"
         },
         {
           "name": "Tajo de los Vientos",
@@ -40,27 +41,20 @@
             "A distancia",
             "Físico"
           ],
-          "cost": "2 acciones",
+          "cost": "1+ acción",
           "range": "Medio",
-          "crit": "Objetivo sufre herida permanente leve.",
+          "crit": "El objetivo sufre una herida permanente leve.",
           "duration": "Instantánea",
-          "desc": "Inflige 1d6 + SAB daño Cortante con un corte de aire comprimido. Ignora resistencias a distancia y ocultamiento.",
-          "empower": "Realiza un ataque contra un objetivo adicional."
+          "desc": "Ataca con un tajo de aire comprimido que inflige 1d6 + SAB daño Cortante. Este ataque ignora ocultamiento y resistencias a ataques a distancia. \nPuedes gastar una acción adicional para incrementar el daño base de este ataque por 1d6 (máximo 2 acciones).",
+          "empower": "Haz un ataque contra un objetivo adicional o aumenta el daño por un dado y el área a un radio pequeño (medio si empoderas la segunda vez)."
         },
         {
-          "name": "Viento Furibundo",
+          "name": "Agilidad del Aire",
           "tags": [
             "Aire",
-            "Ataque",
-            "Área",
-            "Físico"
+            "Pasiva"
           ],
-          "cost": "2 acciones, 1 chi",
-          "area": "Línea mediana",
-          "crit": "Objetivo sufre herida permanente leve y es tropezado.",
-          "duration": "Instantánea",
-          "desc": "Inflige 1d6 + SAB daño Contundente en línea y empuja 1 paso. Destruye barreras débiles y disipa efectos gaseosos.",
-          "empower": "Crea terreno difícil de viento fuerte en el área. Empuja y tropieza a cualquier criatura que entre."
+          "desc": "Aumenta todas tus velocidades por un paso y obtienes velocidad de Salto igual a tu velocidad base. Además, puedes emplear tu modificador de Magia de Aire para todos tus tiros de Esquiva o de salvación Físicos."
         }
       ]
     },
@@ -75,11 +69,11 @@
             "Defensiva",
             "Duradera"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 reacción, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
           "duration": "Concentración",
-          "desc": "Crea una barrera con PV iguales a tu Rango x 3. Inmune a daño físico no-mágico. Protege de efectos Gaseosos y ataques Físicos a distancia. Cruzar requiere un tiro de Heroísmo/Acrobacias. Puede usarse como reacción defensiva.",
+          "desc": "Crea una barrera con PV iguales a tu Rango x 3, la cual protegerá a todos detrás de ella. Reduce el daño del ataque recibido por esa cantidad y detendrá automáticamente un ataque a distancia o efecto Gaseoso. Si se emplea contra un enemigo que ataque cuerpo a cuerpo, deberá tener éxito en un tiro de salvación Físico o será empujado hacia atrás. ",
           "empower": "Recupera todos los PV del muro."
         },
         {
@@ -94,29 +88,24 @@
           "range": "Cuerpo a cuerpo",
           "crit": "Herida permanente leve y fallo automático en defensa.",
           "duration": "Instantáneo",
-          "desc": "Inflige 2d6 + SAB daño Cortante con una esfera cortante. Empuja 1 paso y tropieza (tiro de Heroísmo/Acrobacias para resistir).",
+          "desc": "Haz un ataque con una esfera de vientos que provoca 3d6 + SAB daño Cortante al impactar. Además, el objetivo será empujado un pasos y cae tropezado (puede resistirse con un tiro de salvación Físico).",
           "empower": "La esfera permanece en tu mano para lanzarla gratis hasta el final del siguiente turno."
         },
         {
-          "name": "Viento Arrastrante",
           "tags": [
-            "Aire",
-            "Maniobra",
-            "Físico"
+            "Pasiva",
+            "Aire"
           ],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "crit": "Objetivo sufre herida permanente leve.",
-          "duration": "Instantánea",
-          "desc": "Arrastra al objetivo 2 pasos hacia ti (tiro de Heroísmo/Acrobacias para resistir). El objetivo pierde su siguiente reacción. Si choca contra un obstáculo, sufre 1d6 + SAB daño Contundente.",
-          "empower": "Afecta a una criatura adicional."
+          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso. Además, puedes emplear tu modificador de Magia de Aire para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos.",
+          "name": "Infusión de Viento"
         }
-      ]
+      ],
+      "passive": "Aumenta estadística de Destreza por 1"
     },
     {
       "rank": "III",
       "title": "Rango III",
-      "passive": "Todos tus hechizos de Aire sustituyen sus dados de daño por d8. Hechizos Rango I cuestan -1 acción.",
+      "passive": "Todos tus hechizos de Aire sustituyen sus dados de daño por d8.",
       "abilities": [
         {
           "name": "Agarre del Aire",
@@ -124,46 +113,44 @@
             "Aire",
             "Agarre",
             "Físico",
-            "Duradero"
+            "Duradera"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "2 chi",
           "range": "Medio",
           "crit": "Objetivo fatigado.",
           "duration": "Concentración",
-          "desc": "Inmoviliza al objetivo con presión de aire (tiro de Heroísmo/Acrobacias para resistir). Como acción, puedes mover a la criatura agarrada 1 paso (incluyendo vuelo).",
-          "empower": "Afecta a una criatura adicional."
+          "desc": "Un objetivo que logres empujar o tropezar con un efecto de Aire debe tener éxito en un tiro de salvación Físico o queda agarrado. Este agarre durará hasta que reciba un impacto o se libere, además que puedes emplear una acción para moverlo un paso en cualquier dirección.",
+          "empower": "Afecta a una criatura adicional con este hechizo."
         },
         {
           "name": "Controlar Vientos",
           "tags": [
             "Aire",
             "Ambiental",
-            "Duradero"
+            "Duradera"
           ],
-          "cost": "3 acciones, 2 chi",
+          "cost": "2 acciones, 2 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
-          "desc": "Genera vientos fuertes que crean terreno difícil para vuelo y disipan efectos gaseosos. Obtienes Ventaja en tiros de Magia de Aire. Los ataques a distancia dentro del área tienen Desventaja. Puedes controlar efectos gaseosos en el área.",
-          "empower": "El siguiente hechizo de Aire cuesta -1 acción."
+          "desc": "Generas vientos fuertes que crean terreno difícil para vuelo y disipan efectos gaseosos. Mientras este efecto permanezca activo, recibes Ventaja en todos tus tiros de Magia de Aire y provocas un dado de daño adicional con ellos. Además, todos los ataques A Distancia recibirán Desventaja salvo que tú lo decidas.",
+          "empower": "El siguiente hechizo de Aire cuesta -1 acción (mínimo 1)"
         },
         {
-          "name": "Invocar Elemental de Aire",
           "tags": [
             "Aire",
-            "Invocación"
+            "Duradera"
           ],
-          "cost": "3 acciones, 2 chi",
-          "range": "Medio",
-          "duration": "1 hora",
-          "desc": "Invoca un Elemental de Aire de Nivel 6 (+2 Niveles por cada Rango superior a III).",
-          "empower": "El elemental recupera la mitad de su Vitalidad."
+          "desc": "Obtienes Velocidad de Vuelo 2 y Ventaja en todos tus tiros de Esquiva. Este hechizo solo puede lanzarse en entornos con vientos fuertes.",
+          "name": "Viajero de los Cielos",
+          "cost": "1 acción, 2 chi",
+          "duration": "Concentración",
+          "empower": "Suma +10 a un tiro de Esquiva o salvación Físico, y vuela un paso en cualquier dirección."
         }
       ]
     },
     {
       "rank": "IV",
       "title": "Rango IV",
-      "passive": "Hechizos de Aire Rango II cuestan -1 acción.",
       "abilities": [
         {
           "name": "Tornado",
@@ -175,27 +162,26 @@
             "Físico",
             "Duradero"
           ],
-          "cost": "3 acciones, 2 chi",
+          "cost": "2 acciones, 2 chi",
           "area": "Cilindro pequeño",
           "crit": "Fallo automático en agarre o no puede escapar.",
           "duration": "Concentración",
-          "desc": "Inflige 1d8 + SAB daño Contundente. Agarra y eleva a los objetivos (tiro de Heroísmo/Acrobacias para resistir) o los empuja y tropieza. El interior tiene el efecto de Muro de Vientos. Puede moverse 1 paso por acción e inflige daño recurrente a las criaturas atrapadas.",
-          "empower": "Crea un tornado adicional o aumenta el tamaño un paso."
+          "desc": "Todos los objetivos en el área afectada sufren 3d8 + SAB daño Contundente y quedan enredados (deben tener éxito en un tiro de salvación físico para escapar). Mientras estén enredados, quedarán suspendidos en el aire y se moverán con el tornado además que con cada intento fracasado sufrirán 2d8 + SAB daño Contundente. \nMientras el tornado permanezca activo, puedes moverlo un paso como acción, atacando con él a cada criatura que se encuentre en su camino,",
+          "empower": "Crea un tornado adicional o aumenta el tamaño un paso y su daño por un dado."
         },
         {
-          "name": "Danza de los Vientos",
+          "name": "Vientos Protectores",
           "tags": [
             "Aire",
             "Defensivo",
             "Duradero"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "1 acción, 2 chi",
           "duration": "Concentración",
-          "desc": "Obtienes velocidad de vuelo 1, Resistencia a ataques a distancia e Inmunidad a efectos Gaseosos. Obtienes contadores de escudo iguales a tu Rango. Puedes gastar un contador de escudo para volar 1 paso sin provocar ataques de oportunidad.",
-          "empower": "Recupera 1 contador de escudo (+1 adicional si hay viento fuerte)."
+          "desc": "Obtienes Resistencia a ataques a distancia e Inmunidad a efectos Gaseosos además de contadores de escudo iguales a tu Rango. Puedes gastar un contador de escudo para emplear la habilidad de Empoderar de Viajero de los Cielos.",
+          "empower": "Recupera 1 contador de escudo (+1 adicional si hay vientos fuertes)."
         },
         {
-          "name": "Viento Cortante",
           "tags": [
             "Aire",
             "Ataque",
@@ -204,17 +190,19 @@
           ],
           "cost": "1 acción, 2 chi",
           "area": "Cono mediano",
-          "crit": "Herida permanente media a todos los afectados.",
+          "crit": "Inflige una herida permanente media a todos los afectados.",
           "duration": "Instantáneo",
-          "desc": "Inflige 2d8 + SAB daño Cortante e inflige herida permanente leve. Los afectados tienen Desventaja en tiros de Esquiva. Destruye 1 contador de escudo.",
-          "empower": "El siguiente uso no tiene coste de chi."
+          "desc": "Haz un ataque contra todos los objetivos el el área afectada que inflige 4d8 + SAB daño Cortante al impactar y una herida permanente leve. Los afectados tienen Desventaja en tiros de Esquiva y perderán un contador de escudo.",
+          "empower": "El siguiente uso este turno de este hechizo no cuesta chi o aumenta el daño por un dado y el área afectada por un paso.",
+          "name": "Viento Cortante"
         }
-      ]
+      ],
+      "passive": "Aumenta estadística de Sabiduría por 1"
     },
     {
       "rank": "V",
       "title": "Rango V",
-      "passive": "Todos tus hechizos de Aire sustituyen sus dados de daño por d10. Hechizos Rango III cuestan -1 acción.",
+      "passive": "Todos tus hechizos de Aire sustituyen sus dados de daño por d10. ",
       "abilities": [
         {
           "name": "Huracán",
@@ -224,11 +212,12 @@
             "Área",
             "Físico"
           ],
-          "cost": "3 acciones, 3 chi",
+          "cost": "2 acciones, 3 chi",
           "area": "Cono grande",
           "duration": "Instantáneo",
-          "desc": "Inflige 3d10 + SAB daño Contundente, empuja y tropieza a los afectados. Destruye estructuras. Los afectados tienen Desventaja en tiros de Esquiva. Impide el vuelo y los ataques a distancia durante 1 ronda. Crea terreno difícil.",
-          "empower": "Puedes relanzar gratis en la siguiente ronda (mismo área)."
+          "desc": "Haz un ataque contra todos los objetivos en el área afectada que provoca 4d10 + SAB daño Contundente además de empujar dos pasos y tropezar. Este ataque destruirá todas las estructuras frágiles y las criaturas voladoras tienen Desventaja defendiéndose y caerán al suelo al fallar.\n\nHasta el principio de tu siguiente turno, el aire será terreno difícil para voladores y forzando a toda criatura que intente alzar el vuelo a superar un tiro de salvación Físico.",
+          "empower": "Lanza de nuevo este ataque contra la misma zona afectada.",
+          "crit": "Los afectados sufren una herida permanente leve."
         },
         {
           "name": "Esfera de Vacío",
@@ -241,24 +230,27 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera pequeña",
-          "crit": "Exhaustos y se ahogan.",
+          "crit": "Los afectados quedan exhaustos.",
           "duration": "Concentración",
-          "desc": "Drena el aire del área. El objetivo debe superar un tiro de salvación de CON contra Aire o queda fatigado y comienza a ahogarse. Repite el tiro cada turno.",
+          "desc": "Drenas todo el aire de la zona afectada, forzando a tus objetivos a tener éxito en un tiro de salvación Físico o quedan fatigados y sufren 3d10 + SAB daño Necrótico. La esfera permanecerá hasta que pierdas la conecntración y quienes permanezcan en ella al final de su turno o se muevan ahí sufrirán de nuevo sus efectos.",
           "empower": "Recuperas 5 Vitalidad por cada fallo enemigo."
         },
         {
-          "name": "Corrientes Cambiantes",
+          "name": "Uno con el Viento",
           "tags": [
             "Aire",
             "Ataque",
             "Físico"
           ],
-          "cost": "2 acciones, 3 chi",
-          "range": "Medio",
-          "crit": "Herida permanente leve.",
-          "duration": "Instantánea",
-          "desc": "Realiza 2 ataques que infligen 2d10 + SAB daño Cortante y empujan. Puedes gastar acciones extra para ataques adicionales (+1 al bono y al daño por cada uno). 2 impactos: el objetivo queda tropezado. 3 impactos: empuje adicional y herida permanente leve.",
-          "empower": "El objetivo repite su defensa y elige el peor resultado."
+          "cost": "1 reacción, 2 chi",
+          "duration": "Concentración/Una ronda",
+          "desc": "Te transformas en aire viviente, recibiendo así Inmunidad a efectos Físicos, Aflicciones, Mentales, Miedo y Agarres a costa de Vulnerabilidad a efectos de Aire (quienes podrán agarrarte con normalidad).\n\nEste efecto permanecerá activo hasta que pierdas la concentración o pase una ronda. Hasta que eso ocurra, contarás como incorpóreo y serás invisible, pero solo podrás emplear hechizos de Magia de Aire.",
+          "empower": "Extiende el efecto durante una ronda adicional."
+        },
+        {
+          "name": "",
+          "tags": [],
+          "desc": ""
         }
       ]
     },
@@ -267,22 +259,17 @@
       "title": "Rango VI",
       "abilities": [
         {
-          "name": "Vientos de la Devastación",
+          "name": "Forma Elemental",
           "tags": [
             "Aire",
-            "Ataque",
-            "Área",
-            "Físico",
-            "Duradero",
-            "Ambiental"
+            "Duradera"
           ],
-          "cost": "3 acciones, 5 chi",
-          "area": "Esfera grande",
-          "duration": "Siete rondas",
-          "desc": "Genera un Control de Vientos masivo. En la ronda 2 puedes lanzar Viento Furibundo o Viento Arrastrante gratis y mejorados. En la ronda 4 puedes lanzar Tornado gratis sin concentración. En la ronda 6 puedes lanzar Huracán gratis.",
-          "empower": "Puedes usar Muro de Vientos para defenderte sin estar en posición defensiva."
+          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
+          "cost": "1 acción, 5 chi",
+          "duration": "Seis rondas"
         }
-      ]
+      ],
+      "passive": "Aumenta estadística de Carisma por 1"
     }
   ]
 }

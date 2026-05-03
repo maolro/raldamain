@@ -3,7 +3,11 @@
   "title": "Magia de Fuego",
   "category": "Elementalismo",
   "image": "magia_fuego.jpg",
-  "stats": ["Carisma", "Elementalismo", "Innato"],
+  "stats": [
+    "Carisma",
+    "Elementalismo",
+    "Innato"
+  ],
   "description": "Controlas las llamas para causar destrucción, alterar el campo de batalla y protegerte.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -17,7 +21,11 @@
       "abilities": [
         {
           "name": "Llamarada",
-          "tags": ["Fuego", "Ataque", "A distancia"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "A distancia"
+          ],
           "cost": "1+ acciones",
           "range": "Medio",
           "crit": "Objetivo sufre quemadura leve.",
@@ -26,7 +34,11 @@
         },
         {
           "name": "Aliento de Fuego",
-          "tags": ["Fuego", "Ataque", "Área"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "Área"
+          ],
           "cost": "2 acciones, 1 chi",
           "area": "Cono pequeño",
           "crit": "Afectados sufren quemadura leve.",
@@ -35,7 +47,10 @@
         },
         {
           "name": "Fuego Interno",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Resistencia al daño Fuego y Frío, además de Inmunidad al calor y frío extremo. Tienes también visión térmica a distancia media."
         }
       ]
@@ -47,7 +62,11 @@
       "abilities": [
         {
           "name": "Muro de Llamas",
-          "tags": ["Fuego", "Defensivo", "Duradero"],
+          "tags": [
+            "Fuego",
+            "Defensivo",
+            "Duradero"
+          ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña / Línea media",
@@ -58,7 +77,11 @@
         },
         {
           "name": "Bola de Fuego",
-          "tags": ["Fuego", "Ataque", "Área"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "Área"
+          ],
           "cost": "1+ acciones, 1 chi",
           "range": "Medio",
           "area": "Radio pequeño",
@@ -68,7 +91,10 @@
         },
         {
           "name": "Infusión de Fuego",
-          "tags": ["Fuego", "Pasiva"],
+          "tags": [
+            "Fuego",
+            "Pasiva"
+          ],
           "desc": "Tus armas infligen 1d6 daño Fuego adicional al impactar y cuentan como mágicas. Puedes emplear tu modificador de Magia de Fuego para todos tus tiros relacionados con armas. El daño Fuego aumenta a 2d6 a Rango IV y a 3d6 a Rango VI."
         }
       ]
@@ -79,7 +105,11 @@
       "abilities": [
         {
           "name": "Erupción Abrasadora",
-          "tags": ["Fuego", "Ataque", "Área"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "Área"
+          ],
           "cost": "2 acciones, 2 chi",
           "area": "Esfera mediana",
           "crit": "Afectados sufren quemadura media.",
@@ -88,7 +118,10 @@
         },
         {
           "name": "Propulsión",
-          "tags": ["Fuego", "Duradera"],
+          "tags": [
+            "Fuego",
+            "Duradera"
+          ],
           "cost": "1 acción, 2 chi",
           "duration": "Concentración",
           "desc": "Obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. No puedes acabar tu turno en el aire.",
@@ -96,10 +129,14 @@
         },
         {
           "name": "Elemento del Poder",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Reduce tu Vitalidad o PV máximos por 2 para reducir el coste de un hechizo en 1 chi (mínimo 1)."
         }
-      ]
+      ],
+      "passive": "Los dados de daño base aumentan a d10."
     },
     {
       "rank": "IV",
@@ -108,13 +145,20 @@
       "abilities": [
         {
           "name": "Renacer del Fénix",
-          "tags": ["Fuego", "Reacción"],
+          "tags": [
+            "Fuego",
+            "Reacción"
+          ],
           "cost": "1 reacción, 1 chi",
           "desc": "Recuperas Vitalidad igual a tu Rango x 2 y reduces el nivel de una herida permanente por un paso. Requiere estar en un lugar en llamas o sufrir un ataque de daño Fuego, cuyo daño se anula de inmediato."
         },
         {
           "name": "Torbellino de Fuego",
-          "tags": ["Fuego", "Ataque", "Área"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "Área"
+          ],
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "area": "Cilindro pequeño",
@@ -125,7 +169,10 @@
         },
         {
           "name": "Maestro de las Llamas",
-          "tags": ["Fuego", "Duradera"],
+          "tags": [
+            "Fuego",
+            "Duradera"
+          ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
           "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego y el espacio a distancia media de ti cuenta como calor extremo. Recibes una cantidad de contadores de escudo igual a tu Rango.",
@@ -140,7 +187,11 @@
       "abilities": [
         {
           "name": "Lluvia de Brasas",
-          "tags": ["Fuego", "Ataque", "Área"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "Área"
+          ],
           "cost": "2 acciones, 3 chi",
           "range": "Medio",
           "area": "4 Esferas pequeñas",
@@ -150,7 +201,11 @@
         },
         {
           "name": "Rayo de Plasma",
-          "tags": ["Fuego", "Ataque", "Área"],
+          "tags": [
+            "Fuego",
+            "Ataque",
+            "Área"
+          ],
           "cost": "1 acción, 3 chi",
           "range": "Lejano",
           "area": "Línea grande",
@@ -160,7 +215,10 @@
         },
         {
           "name": "Llama Viviente",
-          "tags": ["Fuego", "Duradera"],
+          "tags": [
+            "Fuego",
+            "Duradera"
+          ],
           "cost": "1 acción, 2 chi",
           "duration": "Concentración",
           "desc": "Te transformas en fuego. Obtienes Inmunidad a efectos Físicos no-mágicos, Agarres, Mentales, Fuego y Aflicciones, pero pierdes toda tu Defensa y recibes Vulnerabilidad a efectos de Agua y Hielo. Esta habilidad puede emplearse como reacción para evitar automáticamente un efecto."
@@ -173,14 +231,6 @@
       "passive": "Aumenta estadística de Constitución por 1.",
       "abilities": [
         {
-          "name": "Infierno Abrasador",
-          "tags": ["Fuego", "Ambiental"],
-          "cost": "2 acciones, 5 chi",
-          "area": "Radio grande",
-          "duration": "6 rondas",
-          "desc": "Genera calor extremo que disipa todos los efectos de Frío. Tus hechizos de Rango I y II son gratuitos (0 chi). A partir de la 4.ª ronda, puedes detonar el área para lanzar Inmolación masiva gratis con +1 dado de daño."
-        },
-        {
           "name": "Forma Elemental",
           "tags": [
             "Fuego",
@@ -188,8 +238,7 @@
           ],
           "cost": "1 acción, 5 chi",
           "duration": "Seis rondas",
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque, velocidad de vuelo 1 y 6 contadores de escudo. Estás rodeado permanentemente por Muro de Fuego y tienes activos Aura Abrasadora, Propulsión y Asalto Flamígero.",
-          "empower": "N/A"
+          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque y tienes activos los hechizos Aura Abrasadora y Propulsión, recibiendo así velocidad de vuelo 2 y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados."
         }
       ]
     }
