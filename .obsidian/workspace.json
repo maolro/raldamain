@@ -225,6 +225,9 @@
   },
   "active": "d0f7372f6752d703",
   "lastOpenFiles": [
+    "website_new/assets/images/ranks/magia_aire.jpg",
+    "website_new/assets/images/ranks/magia_de_aire.jpg",
+    "website_new/assets/images/ranks/Unconfirmed 418848.crdownload",
     "rules/reglas principales/ejercitos.md",
     "website_new/data/world/idiomas/idioma_arshalani.md",
     "website_new/data/bestiary/tier_vi/malakhim.md",
@@ -250,7 +253,6 @@
     "website_new/data/bestiary/tier_iii/cauchemar.md",
     "website_new/data/bestiary/tier_v/ophanim.md",
     "website_new/data/bestiary/tier_iii/usiu.md",
-    "website_new/data/bestiary/tier_iii/sabueso_infernal.md",
     "website_new/data/world/idiomas",
     "website_new/data/bestiary/tier_vi",
     "website_new/data/bestiary/tier_v",
@@ -260,7 +262,6 @@
     "website_new/data/c",
     "website_new/creador.html",
     "website_new/assets/css/builder_overrides.css",
-    "website_new/assets/css/builder_style.css",
     "campaign/caballeros de ustilus/personajes/regulus.jpg",
     "campaign/caballeros de ustilus/personajes/petrikov.jpg",
     "campaign/caballeros de ustilus/personajes/basileos.jpg",
@@ -269,7 +270,6 @@
     "website_new/assets/images/world/culturas/shinri.jpg",
     "website_new/assets/images/world/culturas/ustileses.jpg",
     "website_new/assets/images/world/culturas/tapeties.jpg",
-    "website_new/assets/images/world/culturas/tangarinos.jpg",
-    "website_new/assets/images/world/culturas/shirajianos.jpg"
+    "website_new/assets/images/world/culturas/tangarinos.jpg"
   ]
 }
