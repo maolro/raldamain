@@ -3,7 +3,10 @@
   "title": "Mente Desencadenada",
   "category": "Combate",
   "image": "mente_desencadenada.jpg",
-  "stats": ["Inteligencia", "Chi"],
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
   "description": "Conectas tu mente con un plano superior para alcanzar un estado cognitivo absoluto. Obtienes poderes psíquicos y resistencia mental a costa de tu propia cordura.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -16,14 +19,20 @@
       "abilities": [
         {
           "name": "Mente Desencadenada",
-          "tags": ["Mente desencadenada", "Mental", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Mental",
+            "Pasiva"
+          ],
           "duration": "Max 6 rondas",
-          "desc": "Entras en un estado de trance. Obtienes Ventaja en tiros de ataque, defensa y talentos Mentales, y +1d6 al daño mental. Al terminar, sufres daño a Cordura igual a (Chi actual - rondas usadas).",
-          "empower": "N/A"
+          "desc": "Entras en un estado de trance. Obtienes Ventaja en tiros de ataque, defensa y talentos Mentales, y provocas un dado de daño adicional con tus hechizos y ataques mágicos. Al terminar, sufres daño a Cordura igual a las rondas pasadas en Mente Desencadenada."
         },
         {
           "name": "Agilidad Mental",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes (Rango + 2) niveles de talento adicionales para mejorar tus habilidades."
         }
       ]
@@ -34,12 +43,20 @@
       "abilities": [
         {
           "name": "Poder del Dolor",
-          "tags": ["Mente desencadenada", "Mental", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Mental",
+            "Pasiva"
+          ],
           "desc": "Mientras dure el estado Mente Desencadenada, ignoras los efectos de heridas permanentes leves y medias. Obtienes Resistencia a Aflicciones y Aturdimiento."
         },
         {
           "name": "Conocimiento Arcano",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Mientras dure el estado Mente Desencadenada, puedes lanzar 2 hechizos de Rango I (Arcano u Ocultismo) usando INT + Rango. Aprendes 1 hechizo nuevo cada vez que subes de rango."
         }
       ]
@@ -50,12 +67,20 @@
       "abilities": [
         {
           "name": "Concentración Superior",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "No pierdes la concentración al recibir daño o efectos negativos, salvo por heridas graves o incapacitación."
         },
         {
           "name": "Poder de la Locura",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Mientras dure el estado Mente Desencadenada, puedes reducir tu Cordura en 2 para recuperar 1 punto de Chi. Usos por ronda: 3."
         }
       ]
@@ -66,14 +91,22 @@
       "abilities": [
         {
           "name": "Sentido Arcano",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "range": "Medio",
           "desc": "Puedes identificar las propiedades de hechizos y objetos mágicos. Obtienes vista ciega a alcance medio.",
           "empower": "Suprimes las propiedades de un objeto mágico o hechizo activo. Coste: 1 chi o 2 de Cordura."
         },
         {
           "name": "Psique Retorcida",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Inmunidad a Miedo y efectos Mentales. Reacción: Cuando recibes un ataque mental, lo reflejas al atacante, obligándole a defenderse de su propio efecto."
         }
       ]
@@ -84,12 +117,20 @@
       "abilities": [
         {
           "name": "División Mental",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Mientras dure el estado Mente Desencadenada, obtienes un turno adicional completo con 3 acciones, a -10 de Iniciativa."
         },
         {
           "name": "Mente sobre Cuerpo",
-          "tags": ["Mente desencadenada", "Innata", "Pasiva"],
+          "tags": [
+            "Mente desencadenada",
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Puedes luchar a 0 PV o menos sin penalizadores. Ignoras heridas permanentes no críticas. Al terminar el estado, si tus PV son inferiores a -CON, mueres instantáneamente. Además, pierdes Cordura igual al daño recibido durante el estado. [AVISO AUTOR: No queda claro si la pérdida de Cordura se refiere al daño total acumulado o solo al daño del último turno.]"
         }
       ]

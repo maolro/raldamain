@@ -12,10 +12,10 @@
     "id": "elemental_fuego",
     "name": "Elemental de Fuego",
     "type": "Elemental",
-    "level": 6,
+    "level": 5,
     "size": "Grande",
     "image": "creatures/elemental_fuego.jpg",
-    "description": "Un ser de llamas vivas invocado desde el Plano Elemental del Fuego. Extremadamente destructivo."
+    "description": ""
   },
   {
     "id": "elemental_fuego_avanzado",

@@ -3,7 +3,11 @@
   "title": "Ascendencia Abisal",
   "category": "Ascendencias",
   "image": "ascendencia_abisal.jpg",
-  "stats": ["Carisma", "Constitución", "Innata"],
+  "stats": [
+    "Carisma",
+    "Constitución",
+    "Innata"
+  ],
   "description": "Canalizas el poder de entidades olvidadas para transformar tu cuerpo y mente. Obtienes gran poder físico y mágico a cambio de tu propia cordura y humanidad.",
   "fundamentals": [
     "<strong>Poder innato:</strong> Incrementa tu reserva de Chi por un valor igual a tu Rango x 2.",
@@ -17,12 +21,18 @@
       "abilities": [
         {
           "name": "Tocado por la Locura",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Resistencia a efectos Mentales y Necróticos. Las criaturas abisales te reconocen como aliado. Adquieres una locura permanente."
         },
         {
           "name": "Furia Abisal",
-          "tags": ["Innata", "Mejora"],
+          "tags": [
+            "Innata",
+            "Mejora"
+          ],
           "duration": "6 Rondas",
           "desc": "Entras en un estado de furia que te otorga Ventaja en tiros de ataque, defensa y magia. Dura hasta 6 rondas. Al terminar, sufres daño a la cordura igual al número de rondas transcurridas. Si tu cordura llega a 0, pierdes el control del personaje."
         }
@@ -31,18 +41,24 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "passive": "Incrementa tu estadística de FUE y su limitador máximo en +1.",
+      "passive": "Incrementa tu estadística de FUE y su limitador máximo en 1.",
       "abilities": [
         {
           "name": "Mutación",
-          "tags": ["Innata", "Mejora"],
+          "tags": [
+            "Innata",
+            "Mejora"
+          ],
           "cost": "1 chi",
           "duration": "1 Ronda",
           "desc": "Modificas tu cuerpo para obtener un beneficio a tu elección: Resistencia elemental, Anfibio, Vuelo, Arma Natural (1d6 daño, mejora con Rango), Toxina o Infusión mágica en ataques."
         },
         {
           "name": "Poder Antinatural",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "range": "Medio",
           "desc": "Obtienes vista ciega y detectas magia a distancia media. Aprendes 2 hechizos abisales de Rango I que puedes lanzar gastando chi."
         }
@@ -54,12 +70,18 @@
       "abilities": [
         {
           "name": "Abrazar la Locura",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Mientras estés en Furia Abisal, puedes reducir tu Cordura en 2 para recuperar 1 punto de chi. Puedes hacerlo un máximo de 3 veces por ronda."
         },
         {
           "name": "Invocación Abisal",
-          "tags": ["Innata", "Invocación"],
+          "tags": [
+            "Innata",
+            "Invocación"
+          ],
           "cost": "3 acciones, 2 chi",
           "duration": "1 Hora",
           "desc": "Invocas una criatura abisal con un Nivel máximo igual a Rango x 2. Puedes tener hasta 4 criaturas invocadas simultáneamente.",
@@ -74,13 +96,19 @@
       "abilities": [
         {
           "name": "Rasgo Monstruoso Superior",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Una de tus Mutaciones se vuelve permanente y no requiere coste para activarla.",
           "empower": "Durante el combate, puedes cambiar tu mutación permanente por otra diferente (coste: 2 chi)."
         },
         {
           "name": "Paso Abisal",
-          "tags": ["Innata", "Espacial"],
+          "tags": [
+            "Innata",
+            "Espacial"
+          ],
           "cost": "1 acción, 2 chi",
           "duration": "Instantánea",
           "desc": "Te teletransportas a través del vacío a cualquier punto del campo de batalla o a otro plano. Puedes usarlo como reacción (cuesta 1 Reacción) para evitar un ataque."
@@ -93,14 +121,20 @@
       "abilities": [
         {
           "name": "Aura del Caos",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "range": "Corto",
           "desc": "Obtienes Resistencia a efectos Arcanos y Divinos. Los objetos mágicos y glifos cercanos tienen un 50% de probabilidad de fallo.",
           "empower": "Éxito automático en un tiro de salvación contra magia o contrarrestas un hechizo (pagando su coste en chi)."
         },
         {
           "name": "Corrupción Absoluta",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Inmunidad a Miedo, Ilusiones y daño a la Cordura. Obtienes Resistencia a Aflicciones y Maldiciones. Las criaturas abisales menores te obedecen. Adquieres otra locura permanente."
         }
       ]
@@ -112,7 +146,10 @@
       "abilities": [
         {
           "name": "Transformación Abisal",
-          "tags": ["Innata", "Transformación"],
+          "tags": [
+            "Innata",
+            "Transformación"
+          ],
           "duration": "6 Rondas",
           "desc": "Te conviertes en un avatar del caos. Obtienes +40 Vitalidad temporal, tus estadísticas físicas suben a 12 y tu DEF sube a 20. Obtienes Inmunidad a efectos Mentales, de Miedo y Aflicciones. Tu tamaño aumenta en +1 y tus armas naturales infligen 1d10 daño. Conoces todas las técnicas marciales (Rango III gratis). La primera vez que lanzas un hechizo cada ronda no cuesta chi."
         }

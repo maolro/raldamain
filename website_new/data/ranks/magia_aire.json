@@ -41,7 +41,7 @@
             "A distancia",
             "Físico"
           ],
-          "cost": "1+ acción",
+          "cost": "1+ Acciones",
           "range": "Medio",
           "crit": "El objetivo sufre una herida permanente leve.",
           "duration": "Instantánea",
@@ -132,7 +132,7 @@
           "cost": "2 acciones, 2 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
-          "desc": "Generas vientos fuertes que crean terreno difícil para vuelo y disipan efectos gaseosos. Mientras este efecto permanezca activo, recibes Ventaja en todos tus tiros de Magia de Aire y provocas un dado de daño adicional con ellos. Además, todos los ataques A Distancia recibirán Desventaja salvo que tú lo decidas.",
+          "desc": "Generas vientos fuertes que crean terreno difícil para vuelo y disipan efectos gaseosos. Mientras este efecto permanezca activo, recibes Ventaja en todos tus tiros de Magia de Aire y provocas un dado de daño adicional con ellos (si tienes también Magia de Tormenta, esta habilidad le dará las mismas mejoras). Además, todos los ataques A Distancia recibirán Desventaja salvo que tú lo decidas.",
           "empower": "El siguiente hechizo de Aire cuesta -1 acción (mínimo 1)"
         },
         {

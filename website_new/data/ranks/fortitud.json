@@ -3,7 +3,10 @@
   "title": "Fortitud",
   "category": "Combate",
   "image": "fortitud.jpg",
-  "stats": ["Constitución", "Chi"],
+  "stats": [
+    "Constitución",
+    "Chi"
+  ],
   "description": "Tu resistencia física es superior a la media. Eres capaz de soportar climas adversos, resistir el dolor y seguir luchando cuando otros caerían.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -21,15 +24,21 @@
       "abilities": [
         {
           "name": "Armadura Natural",
-          "tags": ["Innata", "Pasiva"],
-          "desc": "Tus PV máximos y tu DEF aumentan en (Rango + 1). Este bonificador se acumula con armaduras."
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Tus PV máximos y tu DEF aumentan por un valor igual a tu Rango + 1. Este bonificador se acumula con armaduras."
         },
         {
           "name": "Segundo Aliento",
-          "tags": ["Innata", "Sanación"],
-          "cost": "1 chi",
-          "desc": "Como acción bonus, recuperas (Rango + 2) de Vitalidad. Usos por ronda: 1.",
-          "empower": "Reduce los penalizadores de una herida permanente tratándola como de un nivel menor."
+          "tags": [
+            "Innata",
+            "Sanación",
+            "Reacción"
+          ],
+          "cost": "1 Reacción, 1 chi",
+          "desc": "Recuperas Rango + 2 Vitalidad y reduce los penalizadores de una herida permanente, tratándola  así como de un nivel menor hasta que termine el combate."
         }
       ]
     },
@@ -39,14 +48,20 @@
       "abilities": [
         {
           "name": "Duro de Pelar",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Resistencia a daño Sónico, Aturdimiento y Maniobras. Inmune a efectos críticos de Aturdimiento y Ralentización."
         },
         {
           "name": "Resiliencia",
-          "tags": ["Innata", "Defensiva"],
-          "cost": "1 chi",
-          "desc": "Reacción: Reduces el daño de un ataque a la mitad (después de aplicar DEF y Resistencias). Usos por ronda: 1."
+          "tags": [
+            "Innata",
+            "Defensiva"
+          ],
+          "cost": "1 Reacción, 1 chi",
+          "desc": "Reduces el daño de un ataque a la mitad después de aplicar DEF y Resistencias."
         }
       ]
     },
@@ -56,12 +71,18 @@
       "abilities": [
         {
           "name": "Hasta la Muerte",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Puedes seguir luchando a 0 PV o menos, realizando tiros de muerte. Las heridas permanentes reducen su gravedad en un paso."
         },
         {
           "name": "Constitución Férrea",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Resistencia a Aflicciones y daño Necrótico. Inmune a efectos críticos de Enfermedad y Náuseas."
         }
       ]
@@ -72,7 +93,11 @@
       "abilities": [
         {
           "name": "Muro Viviente",
-          "tags": ["Innata", "Defensiva", "Duradera"],
+          "tags": [
+            "Innata",
+            "Defensiva",
+            "Duradera"
+          ],
           "cost": "2 acciones, 2 chi",
           "range": "Propio",
           "duration": "Concentración",
@@ -81,7 +106,10 @@
         },
         {
           "name": "Aguantar los Elementos",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Resistencia a daño de Frío, Fuego, Ácido y Eléctrico. Inmune a efectos críticos de Quemadura y Parálisis."
         }
       ]
@@ -92,13 +120,20 @@
       "abilities": [
         {
           "name": "Sanación Rápida",
-          "tags": ["Innata", "Pasiva", "Sanación"],
+          "tags": [
+            "Innata",
+            "Pasiva",
+            "Sanación"
+          ],
           "desc": "Al inicio de tu turno, recuperas (Rango + 2) de Vitalidad. Si tienes heridas permanentes, en su lugar reduces el nivel de una herida en un paso.",
           "empower": "Reduce el nivel de una herida permanente (no crítica) en un paso."
         },
         {
           "name": "Una Última Resistencia",
-          "tags": ["Innata", "Sanación"],
+          "tags": [
+            "Innata",
+            "Sanación"
+          ],
           "cost": "3 chi",
           "desc": "Al caer a 0 PV, recuperas toda tu Vitalidad y la mitad de tus PV máximos. Usos por descanso largo: 1."
         }

@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/rangos/ascendencias/ascendencia de aire.md",
+                "file": "rules/rangos/ascendencias/ascendencia de agua.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ascendencia de aire"
+              "title": "ascendencia de agua"
             }
           },
           {
@@ -225,6 +225,7 @@
   },
   "active": "d0f7372f6752d703",
   "lastOpenFiles": [
+    "rules/rangos/ascendencias/ascendencia de aire.md",
     "website_new/assets/images/ranks/magia_aire.jpg",
     "website_new/assets/images/ranks/magia_de_aire.jpg",
     "website_new/assets/images/ranks/Unconfirmed 418848.crdownload",
@@ -269,7 +270,6 @@
     "website_new/data/world/world4000.jpg",
     "website_new/assets/images/world/culturas/shinri.jpg",
     "website_new/assets/images/world/culturas/ustileses.jpg",
-    "website_new/assets/images/world/culturas/tapeties.jpg",
-    "website_new/assets/images/world/culturas/tangarinos.jpg"
+    "website_new/assets/images/world/culturas/tapeties.jpg"
   ]
 }

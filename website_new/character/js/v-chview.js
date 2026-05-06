@@ -21,6 +21,8 @@ Vue.component('v-chview', {
             </div>
         </div>
         <hr></hr>
+        <div><b>Tiros de Salvación: </b>Físico {{ savingThrows.fisico }}, Voluntad {{ savingThrows.voluntad }}, Mental {{ savingThrows.mental }}<br></div>
+        <hr></hr>
         <div v-if="talstring"><b>Talentos: </b> {{ talstring }}<br></div>
         <div v-if="rkString"><b>Rangos: </b> {{ rkString }}<br></div>
         <div v-if="arcString"><b>Arquetipos: </b> {{ arcString }}<br></div>
@@ -68,7 +70,16 @@ Vue.component('v-chview', {
         };
     },
     computed: {
-
+        savingThrows: function() {
+            const fs = this.finalStats;
+            const sum = (a, b) => (a === '-' || b === '-') ? '-' : a + b;
+            const fmt = v => v === '-' ? '-' : (v >= 0 ? '+' + v : String(v));
+            return {
+                fisico:   fmt(sum(fs.str.value, fs.dex.value)),
+                voluntad: fmt(sum(fs.con.value, fs.cha.value)),
+                mental:   fmt(sum(fs.itl.value, fs.wis.value)),
+            };
+        },
     },
     methods: {
         addItem(slot, cat, id) {

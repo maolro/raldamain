@@ -374,6 +374,7 @@ new Vue({
 **PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Chi:** ${this.reserves.chi}\n
 **FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
 ****\n
+**Tiros de Salvación:** Físico ${this.savingThrows.fisico}, Voluntad ${this.savingThrows.voluntad}, Mental ${this.savingThrows.mental}\n
 ${midSect()}
 **Acciones:** ${this.actions}
 ****\n
@@ -730,6 +731,16 @@ ${toMd(this.atbCatString("reactions"))}
             }
             chiRes += this.sumAllKeys('chi', this.myatb.passive);
             return { chi: chiRes };
+        },
+        savingThrows: function() {
+            const fs = this.finalStats;
+            const sum = (a, b) => (a === '-' || b === '-') ? '-' : a + b;
+            const fmt = v => v === '-' ? '-' : (v >= 0 ? '+' + v : String(v));
+            return {
+                fisico:   fmt(sum(fs.str.value, fs.dex.value)),
+                voluntad: fmt(sum(fs.con.value, fs.cha.value)),
+                mental:   fmt(sum(fs.itl.value, fs.wis.value)),
+            };
         },
         finalStats: function () {
             statsRes = {

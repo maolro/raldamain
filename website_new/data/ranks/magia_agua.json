@@ -11,7 +11,8 @@
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",
-    "<strong>Parada mágica:</strong> Usas Magia de Agua para tiros de parada y salvaciones contra Agua, Fuego, Tierra, Aire o Ácido."
+    "<strong>Parada mágica:</strong> Usas Magia de Agua para tiros de parada y salvaciones contra Agua, Fuego, Tierra, Aire o Ácido.",
+    "<strong>Componentes Materialesi:</strong> Para lanzar cualquier hechizo necesitas una cantidad adecuada de agua para manipular."
   ],
   "levels": [
     {
@@ -26,25 +27,25 @@
             "A distancia",
             "Físico"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "crit": "Objetivo empujado 1 paso y tropezado.",
+          "crit": "El objetivo es tropezado",
           "duration": "Instantáneo",
-          "desc": "Inflige 1d6 + SAB daño Contundente con un chorro a presión. Si el objetivo está adyacente, puedes desenganchar como acción bonus.",
-          "empower": "Afecta a un objetivo adicional."
+          "desc": "Disparas un chorro a presión que provoca 1d6 + SAB daño Contundente además que empuja un paso al objetivo. Este ataque puede herir a seres incorpóreos y apagará todos los fuegos a su paso.",
+          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
         },
         {
           "name": "Aguas de la Vida",
           "tags": [
             "Agua",
             "Toque",
-            "Curación"
+            "Sanación"
           ],
-          "cost": "2 acciones",
+          "cost": "1 Acción/Reacción, 1 chi",
           "range": "Toque",
           "duration": "Instantáneo",
-          "desc": "Cura a un aliado por una cantidad de Vitalidad igual a tu Rango + 2. Contra no-muertos, inflige 1d6 + SAB daño Radiante (tiro de salvación de CON contra Agua).",
-          "empower": "Cura una herida permanente leve o una Aflicción en etapa 1."
+          "desc": "Una criatura que toques se cura Rango + 2 Vitalidad y se cura de un efecto de estado negativo o reduce el nivel de una herida permanente por un paso. \nSi empleas esta habilidad contra un no-muerto, haz un tiro de ataque contra él que provoca 2d6 + SAB daño Radiante al impactar y lo ralentiza durante una ronda.",
+          "empower": "Aumenta el área de este efecto a un radio corto (medio si empoderas por segunda vez). No obstante, solo podrás afectar a criaturas que estén en contacto con el agua."
         },
         {
           "name": "Niebla Envolvente",
@@ -58,8 +59,17 @@
           "range": "Medio",
           "area": "Esfera pequeña o mediana",
           "duration": "Concentración",
-          "desc": "Crea una neblina que ciega y otorga ocultamiento. El tamaño aumenta si hay mucha agua disponible.",
-          "empower": "Aumenta el tamaño un paso o mueve la niebla un paso."
+          "desc": "Creas una densa neblina que ciega a todas las criaturas en ella además de darles ocultamiento. Esta neblina permanecerá hasta que pierdas la concentración o sea disipada. ",
+          "empower": "Aumenta su tamaño por paso o mueve la neblina un paso."
+        },
+        {
+          "name": "Adaptación Acuática",
+          "tags": [
+            "Agua",
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Obtienes velocidad de natación igual a tu velocidad base y puedes respirar bajo el agua hasta un máximo de diez minutos. Además, si te encuentras en el agua recibes vista a ciegas a distancia media y puedes emplear tu tiro de Magia de Agua para todos tus tiros de Esquiva y de salvación Físicos."
         }
       ]
     },
@@ -74,11 +84,11 @@
             "Defensivo",
             "Duradero"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Acción/Reacción, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
           "duration": "Concentración",
-          "desc": "Crea una barrera con PV iguales a tu Rango x 3. Inmune a daño físico no-mágico. Otorga cubierta completa y protege de efectos Gaseosos. Inflige daño al cruzar (tiro de Heroísmo/Atletismo para resistir). Puede usarse como reacción defensiva.",
+          "desc": "Crea una barrera de agua con PV iguales a tu Rango x 3, la cual protegerá a todos detrás de ella. Reduce el daño del ataque recibido por esa cantidad y detendrá automáticamente un efecto Gaseoso o de Fuego. Si se emplea contra un enemigo que ataque cuerpo a cuerpo, deberá tener éxito en un tiro de salvación Físico o será empujado hacia atrás (aquellos Incorpóreos fracasarán automáticamente). ",
           "empower": "Recupera todos los PV del muro (requiere agua cercana)."
         },
         {
@@ -93,24 +103,21 @@
           "cost": "2 acciones, 1 chi",
           "range": "Corto",
           "area": "Línea mediana",
-          "crit": "Fallo automático en la tirada de resistencia.",
           "duration": "Concentración",
-          "desc": "Inflige 1d6 + SAB daño Contundente con una ola que empuja y derriba (tiro de Heroísmo/Atletismo para resistir). Si concentras, se mueve 1 paso por ronda.",
-          "empower": "Creas una segunda ola en dirección diferente."
+          "desc": "Crea una ola que ataca a todas las criaturas en su área, infligiendo 2d6 + SAB daño Contundente además de empujar un paso y tropezar (hace falta un tiro de salvación Físico para resistir). Si mantienes la concentración, puedes mover la ola un paso cada ronda gastando una acción, pudiendo así atacar a todo objetivo en su paso.",
+          "empower": "Creas una segunda ola en dirección diferente. Cuando gastes una acción para controlar una ola, puedes mover a ambas y atacar a cada objetivo a su paso.",
+          "crit": "Los objetivos quedan tropezados"
         },
         {
-          "name": "Tentáculos de Agua",
+          "name": "Infusión de Agua",
           "tags": [
             "Agua",
-            "Defensivo",
-            "Duradero"
+            "Pasiva"
           ],
-          "cost": "2 acciones, 1 chi",
-          "duration": "Concentración",
-          "desc": "Obtienes una cantidad de contadores de escudo igual a tu Rango - 1. Como acción bonus, puedes hacer un ataque de Torrente contra un objetivo adyacente (1 vez por ronda).",
-          "empower": "Crea un tentáculo adicional (+1 escudo, +1 ataque bonus)."
+          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso. Además, puedes emplear tu modificador de Magia de Agua para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos."
         }
-      ]
+      ],
+      "passive": "Aumenta tu estadística de Constitución 1."
     },
     {
       "rank": "III",
@@ -129,7 +136,7 @@
           "range": "Medio",
           "crit": "Objetivo fatigado y se ahoga un paso adicional.",
           "duration": "Concentración",
-          "desc": "Como acción bonus tras impactar con un hechizo de Agua, atrapa al objetivo impactado (tiro de Heroísmo/Atletismo para resistir). El objetivo queda agarrado y comienza a ahogarse.",
+          "desc": "Al impactar con un ataque de agua, puedes forzar al afectado a tener éxito en un tiro de salvación Físico o queda agarrado. Mientras permanezca agarrado, estará también ahogado hasta que escape o el efecto sea eliminado.",
           "empower": "Afecta a un objetivo adicional impactado."
         },
         {
@@ -142,20 +149,20 @@
           "cost": "2 acciones, 2 chi",
           "area": "Radio grande",
           "duration": "Concentración",
-          "desc": "Inunda el área, creando terreno difícil. Obtienes Ventaja en tiros de Magia de Agua. Las corrientes dificultan nadar (tiro de Atletismo) y pueden ahogar.",
-          "empower": "El siguiente hechizo de Agua cuesta -1 acción."
+          "empower": "El siguiente hechizo de Agua que lances cuesta -1 acción (mínimo 1)",
+          "desc": "Amplificas tu control elemental sobre el agua en el área afectada, pudiendo subir o bajar su nivel como desees y moverte por ella sin dificultades. Recibes Ventaja en todos tus tiros relacionados con Magia de Agua y tus hechizos de Agua reciben un dado de daño adicional (esto afecta también a Magia de Hielo y Magia de Sangre). Además, el alcance de todos tus efectos aumenta al área afectada y el agua es terreno difícil para criaturas que puedan nadar salvo que tú lo decidas."
         },
         {
-          "name": "Invocar Elemental de Agua",
+          "name": "Columna de Agua",
           "tags": [
             "Agua",
-            "Invocación"
+            "Duradera",
+            "Mejora"
           ],
-          "cost": "3 acciones, 2 chi",
-          "range": "Medio",
-          "duration": "Una hora",
-          "desc": "Invoca un Elemental de Agua de Nivel 6 (+2 Niveles por cada Rango superior a III).",
-          "empower": "El elemental recupera la mitad de su Vitalidad."
+          "cost": "1 Acción, 2 chi",
+          "duration": "Concentración",
+          "desc": "Creas una columna de agua a tus pies que te otorga velocidad de vuelo igual a tu movimiento base y Ventaja en tus tiros de Esquiva. No puedes volar excesivamente alto y debes estar rodeado de agua para poder volar.",
+          "empower": "Suma +10 a un tiro de Esquiva o salvación Físico, y vuela un paso en cualquier dirección."
         }
       ]
     },
@@ -169,29 +176,28 @@
             "Agua",
             "Ataque",
             "Área",
-            "Restricción",
-            "Duradera"
+            "Duradera",
+            "Agarre"
           ],
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
-          "area": "Radio pequeño",
+          "area": "Radio medio",
           "crit": "Fallo automático para evitar agarre.",
           "duration": "Concentración",
-          "desc": "Crea un remolino que inflige 1d8 + SAB daño Contundente, arrastra al centro, atrapa y ahoga. Inflige daño cada turno a las criaturas atrapadas.",
-          "empower": "Aumenta el radio a mediano."
+          "desc": "Crea un remolino que inflige 3d8 + SAB daño Contundente en su área afectada que arrastra y enreda. Aquellos que fallen el tiro deberán tener éxito en un tiro de salvación Físico o quedarán agarrados y ahogados. Este efecto permanecerá hasta que pierdas la concentración y puedes reactivarlo gastando una acción.",
+          "empower": "Aumenta el radio por un paso y el daño por un dado adicional."
         },
         {
-          "name": "Escaldar",
+          "name": "Aguas Protectoras",
           "tags": [
             "Agua",
+            "Duradera",
             "Mejora"
           ],
-          "cost": "1 acción, 2 chi",
-          "area": "Radio pequeño",
-          "crit": "Quemadura de segundo grado.",
-          "duration": "Una ronda",
-          "desc": "Hierve el agua en el área. Inflige 1d6 + Rango daño Fuego y quemadura leve a toda criatura que toque el agua. Añade daño Fuego a tus ataques de Agua. Penetra resistencia al Fuego.",
-          "empower": "Aumenta el radio a mediano."
+          "cost": "1 Acción, 2 chi",
+          "desc": "Te rodeas de aguas protectoras que te otorgan contadores de escudo iguales a tu Rango. Mientras este efecto permanezca activo, todo el espacio a distancia cercana cuenta como si estuviera rodeado por agua. Puedes emplear tus contadores de escudo para lanzar el hechizo Aguas de la Vida sin la necesidad de pagar chi o para empoderarlo.",
+          "empower": "Recupera la mitad de tus contadores de escudo.",
+          "duration": "Concentración"
         },
         {
           "name": "Taladro Hidráulico",
@@ -202,12 +208,13 @@
           ],
           "cost": "1 acción, 2 chi",
           "area": "Línea mediana",
-          "crit": "Herida media, tropezado y pierde 1 escudo extra.",
+          "crit": "Herida media, tropezado y pierde un contador de escudo adicional.",
           "duration": "Instantáneo",
-          "desc": "Inflige 2d8 + SAB daño Contundente con un chorro a alta presión e inflige herida leve. Perfora muros, rompe armadura, destruye un contador de escudo e ignora la defensa de estructuras y elementales.",
-          "empower": "Realiza un segundo ataque en dirección diferente."
+          "desc": "Dispara un chorro de agua a presión que inflige 4d8 + SAB daño Contundente, empuja y una herida leve al impactar. Este ataque ignora los muros a su paso además que romperá la armadura y eliminará un contador de escudo que tenga.",
+          "empower": "Haz un segundo ataque contra objetivos diferentes o los mismos, quienes deberán defenderse con el mismo resultado."
         }
-      ]
+      ],
+      "passive": "Aumenta tu estadística de Sabiduría por 1."
     },
     {
       "rank": "V",
@@ -226,23 +233,10 @@
           "cost": "2 acciones, 3 chi",
           "range": "Medio",
           "area": "Línea grande",
-          "crit": "Fallo automático para evitar agarre.",
+          "crit": "Fallo automático para evitar el agarre.",
           "duration": "Concentración",
-          "desc": "Ola colosal que inflige 2d10 + SAB daño Contundente, agarra y ahoga. Se mueve cada ronda. Al chocar contra un obstáculo o al terminar, inflige 3d10 daño Contundente y tropieza a los afectados.",
-          "empower": "Aumenta el daño en +1d10 durante esta ronda."
-        },
-        {
-          "name": "Lluvias Torrenciales",
-          "tags": [
-            "Agua",
-            "Ambiental"
-          ],
-          "cost": "2 acciones, 3 chi",
-          "range": "Personal",
-          "area": "Campo de batalla",
-          "duration": "Una hora",
-          "desc": "Genera lluvia intensa sobre todo el campo de batalla. Obtienes Ventaja en tiros de Magia de Agua. Otorga ocultamiento global y un suministro constante de agua.",
-          "empower": "El siguiente hechizo de Agua cuesta -1 acción."
+          "desc": "Invocas una Ola colosal que inflige 4d10 + SAB daño Contundente al impactar y enreda. Además, los objetivos impactados deben tener éxito en un tiro de salvación Físico o quedan agarrados y se empiezan a ahogar. \n\nPuedes mover el Tsunami un paso cada ronda como acción, atacando de nuevo a cada criatura a su paso. Si esto le haría chocar contra un obstáculo, el tsunami provocará 6d10 daño Contundente de manera automática a todos los objetivos agarrados y termina de inmediato.",
+          "empower": "Crea una ola adicional con este hechizo, la cual puede atacar a los mismos objetivos o a otros diferentes."
         },
         {
           "name": "Vapor Hirviente",
@@ -257,8 +251,19 @@
           "area": "Esfera mediana",
           "crit": "Quemadura media.",
           "duration": "Concentración",
-          "desc": "Crea una nube de vapor que otorga ocultamiento. Inflige 1d10 + SAB daño Fuego y quemadura leve a toda criatura que entre en el área. Penetra resistencia al Fuego.",
-          "empower": "Aumenta el tamaño un paso o el daño a 2d10."
+          "desc": "Crea una nube de vapor hirviente que otorga ocultamiento y ciega a todos en ella. Cada objetivo que se encuentre ahí debe tener éxito en un tiro de Voluntad o sufre 3d10 + SAB daño Fuego y una quemadura (este daño ignora Resistencias). Este efecto permanecerá hasta que pierdas la concentración y puedes reactivarlo gastando una acción.",
+          "empower": "Aumenta el tamaño un paso y el daño por un dado."
+        },
+        {
+          "name": "Forma Fluida",
+          "tags": [
+            "Agua",
+            "Reacción"
+          ],
+          "desc": "Te transformas en líquido, recibiendo Inmunidad al daño Físico no-mágico además de Aflicciones, Efectos Mentales, Ácido y Miedo, pero recibes Vulnerabilidad al daño Frío y a efectos de Agua (quienes podrán herirte con normalidad).\n\nEste efecto permanecerá activo hasta que pierdas la concentración o pase una ronda. Hasta que eso ocurra, contarás como incorpóreo y podrás pasar a través de ranuras pequeñas además de ser Invisible si estás en el agua, pero solo podrás emplear hechizos de Magia de Agua.",
+          "cost": "1 Acción/Reacción, 2 chi",
+          "duration": "Concentración/Una ronda",
+          "empower": "Extiende este efecto durante una ronda adicional."
         }
       ]
     },
@@ -267,18 +272,17 @@
       "title": "Rango VI",
       "abilities": [
         {
-          "name": "Furia del Océano",
+          "name": "Forma Elemental",
           "tags": [
             "Agua",
             "Ambiental"
           ],
-          "cost": "3 acciones, 5 chi",
-          "area": "Radio grande",
-          "duration": "Siete rondas",
-          "desc": "Desata una tormenta marina masiva con los efectos de Lluvias Torrenciales. En las rondas 2, 4 y 6, puedes lanzar Ola Chocante, Vórtice o Tsunami respectivamente como acción bonus y sin coste de chi.",
-          "empower": "N/A"
+          "cost": "1 Acción, 5 chi",
+          "duration": "Seis rondas",
+          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Aguas Protectoras y Columna de Agua, recibiendo así vuelo si estás sobre el agua y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Agua de Rango III o menos no te costarán chi para ser lanzados."
         }
-      ]
+      ],
+      "passive": "Aumenta tu estadística de Destreza por 1."
     }
   ]
 }

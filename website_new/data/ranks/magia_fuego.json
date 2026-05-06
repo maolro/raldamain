@@ -147,9 +147,10 @@
           "name": "Renacer del Fénix",
           "tags": [
             "Fuego",
-            "Reacción"
+            "Reacción",
+            "Sanación"
           ],
-          "cost": "1 reacción, 1 chi",
+          "cost": "1 Acción/Reacción, 1 chi",
           "desc": "Recuperas Vitalidad igual a tu Rango x 2 y reduces el nivel de una herida permanente por un paso. Requiere estar en un lugar en llamas o sufrir un ataque de daño Fuego, cuyo daño se anula de inmediato."
         },
         {
@@ -217,10 +218,11 @@
           "name": "Llama Viviente",
           "tags": [
             "Fuego",
-            "Duradera"
+            "Duradera",
+            "Reacción"
           ],
-          "cost": "1 acción, 2 chi",
-          "duration": "Concentración",
+          "cost": "1 Acción/Reacción, 2 chi",
+          "duration": "1 Ronda",
           "desc": "Te transformas en fuego. Obtienes Inmunidad a efectos Físicos no-mágicos, Agarres, Mentales, Fuego y Aflicciones, pero pierdes toda tu Defensa y recibes Vulnerabilidad a efectos de Agua y Hielo. Esta habilidad puede emplearse como reacción para evitar automáticamente un efecto."
         }
       ]
@@ -238,7 +240,7 @@
           ],
           "cost": "1 acción, 5 chi",
           "duration": "Seis rondas",
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque y tienes activos los hechizos Aura Abrasadora y Propulsión, recibiendo así velocidad de vuelo 2 y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados."
+          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque y tienes activos los hechizos Aura Abrasadora y Propulsión, recibiendo así velocidad de vuelo 2 y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Fuego de Rango III o menos no te costarán chi para ser lanzados."
         }
       ]
     }
