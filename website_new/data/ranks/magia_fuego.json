@@ -110,8 +110,8 @@
             "Ataque",
             "Área"
           ],
-          "cost": "2 acciones, 2 chi",
-          "area": "Esfera mediana",
+          "cost": "1 Acción, 2 chi",
+          "area": "Esfera pequeña",
           "crit": "Afectados sufren quemadura media.",
           "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar y una quemadura leve. Si el objetivo ya tiene una quemadura, solo puede defenderse con un tiro de salvación de Voluntad.",
           "empower": "Aumenta el área de efecto de este hechizo por un paso y el daño por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada."
@@ -176,7 +176,7 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego, recibes un dado de daño en tus tiros relacionados con ellos y el espacio a distancia media de ti cuenta como calor extremo. Recibes una cantidad de contadores de escudo igual a tu Rango.",
+          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego, recibes un dado de daño en tus tiros relacionados con ellos (esto se aplica también a Magia de Tormenta y Aire) y el espacio a distancia media de ti cuenta como calor extremo. Recibes una cantidad de contadores de escudo igual a tu Rango.",
           "empower": "El siguiente hechizo de fuego cuesta -1 acción."
         }
       ]
@@ -240,7 +240,7 @@
           ],
           "cost": "1 acción, 5 chi",
           "duration": "Seis rondas",
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque y tienes activos los hechizos Aura Abrasadora y Propulsión, recibiendo así velocidad de vuelo 2 y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Fuego de Rango III o menos no te costarán chi para ser lanzados."
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque y tienes activos los hechizos Aura Abrasadora y Propulsión, recibiendo así velocidad de vuelo 2 y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Fuego de Rango III o menos no te costarán chi para ser lanzados."
         }
       ]
     }

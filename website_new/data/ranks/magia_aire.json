@@ -264,7 +264,7 @@
             "Aire",
             "Duradera"
           ],
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
           "cost": "1 acción, 5 chi",
           "duration": "Seis rondas"
         }

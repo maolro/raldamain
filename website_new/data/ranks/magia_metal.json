@@ -1,0 +1,261 @@
+{
+  "id": "magia_metal",
+  "title": "Magia de Metal",
+  "category": "Elementalismo",
+  "image": "magia_metal.jpg",
+  "stats": [
+    "Carisma",
+    "Chi"
+  ],
+  "description": "Controlas el metal con precisión mortal, arrancando armas de las manos de tus enemigos, desatando tormentas de fragmentos cortantes y clavando espinas metálicas en puntos vitales. Tu magia es quirúrgica y letal: no destruye el terreno como la tierra, sino a los que se atreven a ponerse en tu camino.",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Parada mágica:</strong> Usas Magia de Metal para tiros de parada y salvaciones contra Metal, Tierra, Físico, Cortante y Tormenta."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Rango I",
+      "abilities": [
+        {
+          "name": "Manipulación Metálica",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "A distancia",
+            "Físico"
+          ],
+          "cost": "1 acción",
+          "range": "Medio",
+          "duration": "Instantáneo",
+          "crit": "El objetivo queda desarmado automáticamente.",
+          "desc": "Tomas control de un objeto metálico cercano. Puedes intentar desarmar a un objetivo, que debe superar un tiro de salvación Físico para evitarlo, o atacarlo directamente con el objeto, infligiendo 2d6 + CAR daño Cortante, Perforante o Contundente.",
+          "empower": "Haz un ataque adicional contra un objetivo diferente o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
+        },
+        {
+          "name": "Redirigir Ataque",
+          "tags": [
+            "Metal",
+            "Reacción"
+          ],
+          "cost": "1 chi",
+          "duration": "Instantáneo",
+          "desc": "En respuesta a que falle un ataque con un proyectil metálico puedes redirigirlo contra cualquier objetivo que puedas ver en distancia media. Si eras tú quien atacó y fallaste, puedes repetir el ataque contra el mismo objetivo o lanzarlo contra uno diferente.",
+          "empower": "El ataque redirigido recibe un dado de daño adicional."
+        },
+        {
+          "name": "Sentido del Metal",
+          "tags": [
+            "Metal",
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Desarrollas una percepción innata de todo el metal que te rodea. Puedes sentir la presencia, composición y posición de todo objeto metálico a distancia media, incluso a través de paredes y obstáculos. Obtienes Resistencia contra Maniobras de Desarme y no puedes ser sorprendido por ataques que empleen proyectiles o armas metálicas."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "passive": "Aumenta tu estadística de Destreza por 1.",
+      "abilities": [
+        {
+          "name": "Nube de Cuchillas",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "Área",
+            "Duradera"
+          ],
+          "cost": "1 Acción, 1 chi",
+          "area": "Esfera pequeña",
+          "duration": "Concentración",
+          "crit": "Los afectados sufren una herida leve.",
+          "desc": "Crea una nube de fragmentos metálicos que inflige 3d6 + CAR daño Cortante y sangrado a todos los que alcance. Mientras mantengas la concentración, puedes gastar una acción para mover la nube, atacando a cada objetivo en su trayectoria.",
+          "empower": "Aumenta el área de efecto de la nube por un paso y su daño por un dado."
+        },
+        {
+          "name": "Repulsión Magnética",
+          "tags": [
+            "Metal",
+            "Reacción",
+            "Duradera"
+          ],
+          "cost": "1 Reacción, 1 chi",
+          "duration": "Una ronda",
+          "desc": "Emites un pulso magnético que te hace inmune a todos los proyectiles metálicos pequeños durante esta ronda. Además, todas las criaturas que lleven armas o armaduras metálicas en distancia cercana deben superar un tiro de salvación Físico o son empujadas un paso hacia atrás.",
+          "empower": "Detienes automáticamente un ataque hecho con un proyectil metálico de cualquier tamaño o hecho por una criatura con armadura metálica."
+        },
+        {
+          "name": "Infusión de Metal",
+          "tags": [
+            "Metal",
+            "Pasiva"
+          ],
+          "desc": "Impregnas tus armas metálicas con tu control elemental, agudizando su filo más allá de sus límites naturales. Tus ataques con armas metálicas infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Metal para todos tus tiros de técnicas de combate y aplicar técnicas de combate a tus ataques elementales. "
+        }
+      ]
+    },
+    {
+      "rank": "III",
+      "title": "Rango III",
+      "passive": "Todos tus hechizos de Metal sustituyen sus dados de daño por d8.",
+      "abilities": [
+        {
+          "name": "Espina Metálica",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "Físico"
+          ],
+          "cost": "1 acción, 2 chi",
+          "range": "Medio",
+          "duration": "Instantáneo",
+          "crit": "El objetivo sufre una herida media.",
+          "desc": "Clavas o tensas el metal que ya porta un objetivo, convirtiendo su propia armadura o arma en su perdición. Un objetivo que lleve un objeto de metal clavado o armadura metálica debe superar un tiro de salvación de Voluntad o sufre 3d8 + CAR daño Perforante que ignora su defensa, una herida leve y sangrado.",
+          "empower": "Afecta a un objetivo adicional que lleve metal en distancia media del primero."
+        },
+        {
+          "name": "Maestría del Metal",
+          "tags": [
+            "Metal",
+            "Duradera",
+            "Mejora"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Amplías tu dominio sobre el metal cercano, agudizando tu control hasta la perfección. Mientras este efecto permanezca activo, obtienes Ventaja en todos tus tiros relacionados con Magia de Metal y recibes un dado de daño adicional en tus ataques. Puedes atacar con objetos metálicos contra cualquier punto que puedas ver a distancia lejana.",
+          "empower": "Reduce el coste en acciones del siguiente hechizo de Metal en 1 (mínimo 1)."
+        },
+        {
+          "name": "Hilos de Acero",
+          "tags": [
+            "Metal",
+            "Duradera",
+            "Mejora"
+          ],
+          "cost": "1 Acción, 2 chi",
+          "duration": "Concentración",
+          "desc": "Manifiestas hilos de acero que se extienden desde tus manos. Puedes engancharte a cualquier superficie sólida o volante a distancia media para desplazarte por el entorno, obteniendo velocidad de vuelo igual a tu velocidad base y Ventaja en tus tiros de Esquiva. Como acción, puedes atacar a un objetivo a distancia media con los hilos, haciendo así que quede enredado y cuenta cuente como si estuviera rodeado de metal a efectos de tus hechizos.",
+          "empower": "Enreda a un objetivo adicional u obtienes +10 a un tiro de Esquiva y vuelas un paso."
+        }
+      ]
+    },
+    {
+      "rank": "IV",
+      "title": "Rango IV",
+      "passive": "Aumenta tu estadística de Carisma por 1.",
+      "abilities": [
+        {
+          "name": "Armadura de Hierro",
+          "tags": [
+            "Metal",
+            "Defensivo",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Te recubres de placas de hierro y acero que te otorga contadores de escudo iguales a tu Rango. Cada vez que gastes un contador de escudo por un ataque cuerpo a cuerpo, puedes infligir 2d8 daño Cortante al atacante (máximo 6d8). Si esta reducción anula el daño por completo, el arma del atacante queda rota. ",
+          "empower": "Recuperas la mitad de tus contadores de escudo (redondeando hacia abajo). "
+        },
+        {
+          "name": "Torbellino de Cuchillas",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "Área",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "area": "Cilindro pequeño",
+          "duration": "Concentración",
+          "crit": "Los afectados sufren una herida leve.",
+          "desc": "Crea un torbellino de fragmentos metálicos y cuchillas que inflige 3d8 + CAR daño Cortante y sangrado a todos los que alcance. El torbellino puede moverse como acción. Los objetivos con armadura metálica tienen Desventaja para resistir sus efectos.",
+          "empower": "Crea un torbellino adicional o aumenta el daño del existente en 1d8 y su alcance un paso durante una ronda."
+        },
+        {
+          "name": "Puntos Vitales",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "Físico"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "range": "Medio",
+          "duration": "Instantáneo",
+          "crit": "El objetivo sufre una herida grave adicional.",
+          "desc": "Estudias las debilidades de tu objetivo y diriges el metal directamente hacia sus puntos vitales. Contra un objetivo que ya sufra sangrado o una herida permanente, este ataque ignora su defensa física e inflige 3d8 + CAR daño Perforante y una herida grave. Contra cualquier otro objetivo, el ataque se realiza con Ventaja.",
+          "empower": "Afecta a un objetivo adicional que cumpla alguna de las condiciones."
+        }
+      ]
+    },
+    {
+      "rank": "V",
+      "title": "Rango V",
+      "passive": "Todos tus hechizos de Metal sustituyen sus dados de daño por d10.",
+      "abilities": [
+        {
+          "name": "Tormenta de Acero",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "Área",
+            "Físico"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "area": "Radio grande",
+          "duration": "Instantáneo",
+          "crit": "Los afectados sufren una herida grave y sangrado grave.",
+          "desc": "Desatas una tempestad de fragmentos metálicos que inflige 5d10 + CAR daño Cortante o Perforante a todos los que alcance, una herida media y sangrado. Los proyectiles quedan clavados en el terreno, creando terreno difícil, y la armadura metálica de los afectados queda dañada, reduciendo su efectividad hasta ser reparada.",
+          "empower": "Vuelve a atacar el mismo área o amplía el radio un paso."
+        },
+        {
+          "name": "Cadenas de Hierro",
+          "tags": [
+            "Metal",
+            "Ataque",
+            "Área",
+            "Agarre"
+          ],
+          "cost": "2 acciones, 3 chi",
+          "area": "Radio mediano",
+          "duration": "Hasta que escapen",
+          "crit": "Los agarrados sufren 2d10 + CAR daño Cortante adicional.",
+          "desc": "Lanzas cadenas de acero que se enroscan alrededor de hasta un número de objetivos igual a tu Rango. Cada objetivo afectado debe superar un tiro de salvación Físico o queda agarrado y enredado, contando como rodeado de metal a efectos de tus hechizos. Para liberarse deben romper las cadenas o tener éxito en el tiro de nuevo.",
+          "empower": "Los encadenados pueden ser lanzados contra otros objetivos a distancia media, infligiendo 3d10 + CAR daño Contundente a ambos."
+        },
+        {
+          "name": "Forma de Acero",
+          "tags": [
+            "Metal",
+            "Reacción",
+            "Duradera"
+          ],
+          "cost": "1 Acción/Reacción, 2 chi",
+          "duration": "Una ronda",
+          "desc": "Te transformas en metal líquido y fluido. Obtienes Inmunidad a efectos Físicos no mágicos, Agarres, Mentales y Aflicciones, pero pierdes toda tu Defensa y recibes Vulnerabilidad a daño Eléctrico y Ácido. Solo puedes emplear Magia de Metal mientras estés en esta forma. Esta habilidad puede emplearse como reacción para evitar automáticamente un efecto.",
+          "empower": "Extiende este efecto durante una ronda adicional."
+        }
+      ]
+    },
+    {
+      "rank": "VI",
+      "title": "Rango VI",
+      "passive": "Aumenta tu estadística de Inteligencia por 1.",
+      "abilities": [
+        {
+          "name": "Forma Elemental",
+          "tags": [
+            "Metal",
+            "Mejora",
+            "Duradera"
+          ],
+          "cost": "1 acción, 5 chi",
+          "duration": "Seis rondas",
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque, y tienes activos los hechizos Hilos de Acero y Armadura de Hierro, recibiendo así velocidad de vuelo igual a tu velocidad base, Ventaja en Esquiva y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Metal de Rango III o menos no te costarán chi para ser lanzados."
+        }
+      ]
+    }
+  ]
+}

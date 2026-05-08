@@ -140,6 +140,12 @@ body {
     gap: 2rem;
 }
 
+.ability-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .card {
     background-color: var(--secondary-black);
     border: 1px solid #333;
@@ -286,6 +292,10 @@ body {
         gap: 1.5rem;
     }
 
+    .ability-grid {
+        gap: 1rem;
+    }
+
     .card-content {
         padding: 1rem;
     }
@@ -370,5 +380,6 @@ body {
 
     .card-grid {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1.5rem;
     }
 }

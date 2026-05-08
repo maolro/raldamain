@@ -130,7 +130,7 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Amplías tu dominio sobre la tierra cercana para volverte uno con ella. Mientras este efecto permanezca activo, obtienes Ventaja en todos tus tiros relacionados con Magia de Tierra y recibes un dado de daño adicional en tus ataques. El suelo a distancia media de ti se torna inestable para los enemigos, contando como terreno difícil.",
+          "desc": "Amplías tu dominio sobre la tierra cercana para volverte uno con ella. Mientras este efecto permanezca activo, obtienes Ventaja en todos tus tiros relacionados con Magia de Tierra y recibes un dado de daño adicional en tus ataques (esto se aplica también a Magia de Metal y Naturaleza). El suelo a distancia media de ti se torna inestable para los enemigos, contando como terreno difícil.",
           "empower": "Reduce el coste en acciones del siguiente hechizo de Tierra en 1 (mínimo 1)."
         },
         {
@@ -261,7 +261,7 @@
           ],
           "cost": "1 acción, 5 chi",
           "duration": "Seis rondas",
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque, y tienes activos los hechizos Forma de la Montaña y Ola de Tierra, recibiendo así Ventaja en Magia de Tierra, un dado de daño adicional y velocidad de vuelo igual a tu velocidad base. Tus hechizos de Magia de Tierra de Rango III o menos no te costarán chi para ser lanzados."
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque, y tienes activos los hechizos Forma de la Montaña y Ola de Tierra, recibiendo así Ventaja en Magia de Tierra, un dado de daño adicional y velocidad de vuelo igual a tu velocidad base. Tus hechizos de Magia de Tierra de Rango III o menos no te costarán chi para ser lanzados."
         }
       ]
     }

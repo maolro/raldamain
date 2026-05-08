@@ -48,21 +48,6 @@
           "empower": "Aumenta el área de este efecto a un radio corto (medio si empoderas por segunda vez). No obstante, solo podrás afectar a criaturas que estén en contacto con el agua."
         },
         {
-          "name": "Niebla Envolvente",
-          "tags": [
-            "Agua",
-            "Gaseosa",
-            "Visual",
-            "Duradera"
-          ],
-          "cost": "2 acciones, 1 chi",
-          "range": "Medio",
-          "area": "Esfera pequeña o mediana",
-          "duration": "Concentración",
-          "desc": "Creas una densa neblina que ciega a todas las criaturas en ella además de darles ocultamiento. Esta neblina permanecerá hasta que pierdas la concentración o sea disipada. ",
-          "empower": "Aumenta su tamaño por paso o mueve la neblina un paso."
-        },
-        {
           "name": "Adaptación Acuática",
           "tags": [
             "Agua",
@@ -100,11 +85,11 @@
             "Físico",
             "Duradero"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 chi",
           "range": "Corto",
           "area": "Línea mediana",
           "duration": "Concentración",
-          "desc": "Crea una ola que ataca a todas las criaturas en su área, infligiendo 2d6 + SAB daño Contundente además de empujar un paso y tropezar (hace falta un tiro de salvación Físico para resistir). Si mantienes la concentración, puedes mover la ola un paso cada ronda gastando una acción, pudiendo así atacar a todo objetivo en su paso.",
+          "desc": "Crea una ola que ataca a todas las criaturas en su área, infligiendo 2d6 + SAB daño Contundente además de empujar un paso y tropezar (hace falta un tiro de salvación Físico para resistir). Si mantienes la concentración, puedes mover la ola un paso cada ronda gastando una Acción, pudiendo así atacar a todo objetivo en su paso.",
           "empower": "Creas una segunda ola en dirección diferente. Cuando gastes una acción para controlar una ola, puedes mover a ambas y atacar a cada objetivo a su paso.",
           "crit": "Los objetivos quedan tropezados"
         },
@@ -284,7 +269,7 @@
           ],
           "cost": "1 Acción, 5 chi",
           "duration": "Seis rondas",
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Aguas Protectoras y Columna de Agua, recibiendo así vuelo si estás sobre el agua y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Agua de Rango III o menos no te costarán chi para ser lanzados."
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Aguas Protectoras y Columna de Agua, recibiendo así vuelo si estás sobre el agua y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Agua de Rango III o menos no te costarán chi para ser lanzados."
         }
       ],
       "passive": "Aumenta tu estadística de Destreza por 1."

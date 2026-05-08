@@ -85,7 +85,7 @@
           "cost": "2 acciones, 1 chi",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "desc": "Crea una niebla fría que ciega y otorga ocultamiento además de congelar todo el agua en su espacio. Todas las criaturas en su área de efecto deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB daño Frío y quedan ralentizadas durante una ronda. Puedes repetir este efecto en cada turno que esta habilidad permanezca activa empleando una acción.",
+          "desc": "Crea una niebla fría que ciega y otorga ocultamiento. Todas las criaturas en su área de efecto deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB daño Frío y quedan ralentizadas durante una ronda. Puedes repetir este efecto en cada turno que esta habilidad permanezca activa empleando una acción.",
           "empower": "Aumenta el área de efecto por un paso y el daño Frío por un dado.",
           "crit": "Los afectados quedan paralizados durante una ronda."
         },
@@ -252,7 +252,7 @@
           ],
           "cost": "1 acción, 5 chi",
           "duration": "Seis Rondas",
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Armadura de Hielo y Ola de Frío, recibiendo así contadores de escudo iguales a tu Rango y el área a tu alrededor es Frío Extremo. Tus hechizos de Magia de Hielo de Rango III o menos no te costarán chi para ser lanzados."
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Armadura de Hielo y Ola de Frío, recibiendo así contadores de escudo iguales a tu Rango y el área a tu alrededor es Frío Extremo. Tus hechizos de Magia de Hielo de Rango III o menos no te costarán chi para ser lanzados."
         }
       ],
       "passive": "Aumenta tu estadística de Destreza por 1."

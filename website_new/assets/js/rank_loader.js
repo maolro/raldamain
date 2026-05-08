@@ -121,7 +121,7 @@ function renderRankPage(data) {
         }
 
         // Start Grid
-        levelHTML += `<div class="card-grid">`;
+        levelHTML += `<div class="ability-grid">`;
 
         // Loop through abilities in this rank
         level.abilities.forEach(ability => {
