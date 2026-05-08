@@ -7,11 +7,11 @@
     "Sabiduría",
     "Chi"
   ],
-  "description": "Tienes la capacidad de manipular la tierra bajo tus pies. Creas obstáculos, muros de piedra, provocas terremotos y lanzas rocas devastadoras. Tu magia es sólida y defensiva, pero capaz de una destrucción masiva en sus niveles más altos.",
+  "description": "Controlas la tierra y la roca para aplastar a tus enemigos, dominar el campo de batalla y resistir los golpes más devastadores. Tu magia es lenta e implacable: cada ataque destruye el terreno, cada defensa aplasta al que se atreve a atacarte.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",
-    "<strong>Parada mágica:</strong> Usas Magia de Tierra para tiros de parada y salvaciones contra Tierra, Agua, Aire, Fuego o Tormenta."
+    "<strong>Parada mágica:</strong> Usas Magia de Tierra para tiros de parada y salvaciones contra Tierra, Agua, Aire, Fuego y Tormenta."
   ],
   "levels": [
     {
@@ -26,181 +26,179 @@
             "A distancia",
             "Físico"
           ],
-          "cost": "2 acciones",
-          "range": "Medio",
-          "crit": "Herida permanente leve y tropezado.",
-          "duration": "Instantáneo",
-          "desc": "Inflige 2d6 + SAB daño Contundente lanzando una roca. Ignora resistencia a ataques a distancia.",
-          "empower": "Realiza un ataque adicional contra un objetivo diferente."
-        },
-        {
-          "name": "Crear Obstáculo",
-          "tags": [
-            "Tierra",
-            "Físico",
-            "Ambiental"
-          ],
           "cost": "1 acción",
           "range": "Medio",
           "duration": "Instantáneo",
-          "desc": "Crea una barrera o trinchera pequeña que otorga cubierta. Solo puede ser destruida por ataques de área.",
-          "empower": "Crea un obstáculo adicional como acción bonus o aumenta el tamaño a mediano."
+          "crit": "El objetivo sufre una herida leve.",
+          "desc": "Lanza una roca que inflige 2d6 + SAB daño Contundente al impactar. Necesitas contar con tierra suficiente para emplear esta habilidad.",
+          "empower": "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo."
         },
         {
-          "name": "Terratemblor",
-          "tags": [
-            "Tierra",
-            "Físico",
-            "Maniobra"
-          ],
-          "cost": "2 acciones, 1 chi",
-          "area": "Radio pequeño",
-          "crit": "Herida leve en la pierna y empujado 1 paso.",
-          "duration": "Instantáneo",
-          "desc": "Inflige 2d6 + SAB daño Contundente con un golpe sísmico y tropieza a los afectados (tiro de Heroísmo/Acrobacias para resistir). Crea terreno difícil y derrumba estructuras pequeñas.",
-          "empower": "Aumenta el radio a mediano."
-        }
-      ]
-    },
-    {
-      "rank": "II",
-      "title": "Rango II",
-      "abilities": [
-        {
-          "name": "Muro de Piedra",
-          "tags": [
-            "Tierra",
-            "Defensivo"
-          ],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "area": "Línea media o esfera pequeña",
-          "duration": "Hasta que sea destruido",
-          "desc": "Crea un muro sólido con PV iguales a tu Rango x 3 y Resistencia igual a tu Rango + 4. Vulnerable a daño Sónico. Otorga cubierta total. Puede usarse como reacción defensiva, incluso contra ataques cuerpo a cuerpo.",
-          "empower": "El muro recupera todos sus puntos de vida."
-        },
-        {
-          "name": "Tierra Viva",
+          "name": "Erupción de Tierra",
           "tags": [
             "Tierra",
             "Ataque",
             "Área",
             "Físico"
           ],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "area": "Cilindro mediano",
-          "crit": "Herida leve y cae al suelo.",
+          "cost": "2 acciones, 1 chi",
+          "area": "Radio cercano",
           "duration": "Instantáneo",
-          "desc": "Inflige 3d6 + SAB daño Contundente con una erupción de tierra. Crea terreno difícil. Derriba criaturas voladoras (tiro de salvación de Heroísmo contra Tierra), dejándolas aturdidas.",
-          "empower": "Aumenta el tamaño a cilindro grande."
+          "crit": "Los afectados sufren una herida leve.",
+          "desc": "Sacudes el suelo bajo los pies de tus enemigos, haciendo brotar la tierra con violencia. Inflige 3d6 + SAB daño Contundente a todos los que se encuentren en el área, empuja un paso y deben tener éxito en un tiro de salvación Físico o quedan tropezados. El área queda cubierta de terreno difícil y las estructuras pequeñas en ella son destruidas.",
+          "empower": "Aumenta el radio un paso y el daño un dado adicional, o lanza este hechizo de nuevo sobre la misma zona."
         },
         {
-          "name": "Moldear la Tierra",
+          "name": "Vínculo con la Tierra",
           "tags": [
             "Tierra",
-            "Ambiental"
+            "Innata",
+            "Pasiva"
           ],
-          "cost": "2 acciones, 1 chi",
-          "area": "Radio grande",
-          "duration": "Hasta que sea eliminado",
-          "desc": "Modifica el terreno a voluntad, creando obstáculos, fosos o terreno difícil. Obtienes Ventaja en tiros de Magia de Tierra mientras toques el terreno moldeado.",
-          "empower": "El siguiente hechizo de Tierra cuesta -1 acción."
+          "desc": "Desarrollas una conexión profunda con la tierra bajo tus pies. Mientras estés en contacto con el suelo, obtienes vista a ciegas a distancia media. Además, ganas una velocidad de Excavar igual a la mitad de tu velocidad base y Resistencia contra las Maniobras que intenten derribarte o desplazarte."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Rango II",
+      "passive": "Aumenta tu estadística de Constitución por 1.",
+      "abilities": [
+        {
+          "name": "Muro de Piedra",
+          "tags": [
+            "Tierra",
+            "Defensivo",
+            "Duradera"
+          ],
+          "cost": "1 Acción/Reacción, 1 chi",
+          "range": "Medio",
+          "area": "Esfera pequeña o línea mediana",
+          "duration": "Hasta que sea destruido",
+          "desc": "Levanta una barrera de roca maciza con PV iguales a tu Rango x 4. Esta habilidad puede emplearse como reacción para reducir el daño de un ataque recibido en la cantidad de PV restantes del muro. Si esta reducción anula el daño por completo, el arma del atacante queda rota. Además, cualquier criatura que golpee el muro cuerpo a cuerpo sufrirá 1d6 + SAB daño Contundente.",
+          "empower": "El muro recupera todos sus puntos de vida."
+        },
+        {
+          "name": "Lluvia de Piedras",
+          "tags": [
+            "Tierra",
+            "Ataque",
+            "Área",
+            "Físico"
+          ],
+          "cost": "1+ acciones, 1 chi",
+          "range": "Medio",
+          "area": "Radio pequeño",
+          "duration": "Instantáneo",
+          "crit": "Los afectados quedan tropezados.",
+          "desc": "Lanza una ráfaga de fragmentos de roca sobre el área afectada, infligiendo 2d6 + SAB daño Contundente o Perforante a todos los objetivos Si impactas a un objetivo volador, este debe tener éxito en un tiro de salvación Físico o cae al suelo. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 y el área un paso por carga (máximo 2 cargas).",
+          "empower": "Lanza una segunda descarga sobre la misma zona o una diferente."
+        },
+        {
+          "name": "Puños de Tierra",
+          "tags": [
+            "Tierra",
+            "Pasiva"
+          ],
+          "desc": "Eres capaz de envolver tus extremidades con roca para infligir golpes devastadores. Tus ataques físicos infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Tierra para todos tus tiros de ataque, defensa y técnicas relacionados con ellos."
         }
       ]
     },
     {
       "rank": "III",
       "title": "Rango III",
-      "passive": "Todos tus hechizos de Tierra sustituyen sus dados de daño por d8. Hechizos Rango I cuestan -1 acción.",
+      "passive": "Todos tus hechizos de Tierra sustituyen sus dados de daño por d8.",
       "abilities": [
         {
-          "name": "Abrazo de la Tierra",
+          "name": "Ola de Tierra",
           "tags": [
             "Tierra",
-            "Ataque",
-            "Físico",
-            "Agarre"
+            "Duradera",
+            "Mejora"
           ],
           "cost": "1 acción, 2 chi",
-          "range": "Medio",
           "duration": "Concentración",
-          "desc": "Realiza un ataque de Pedrada que agarra al objetivo con rocas (tiro de FUE/Destrozar para escapar). Las rocas tienen la misma resistencia que Muro de Piedra.",
-          "empower": "Afecta a un objetivo adicional."
+          "desc": "Levantas una corriente de tierra bajo tus pies que te arrastra a su paso. Obtienes velocidad de vuelo igual a tu velocidad base, ignoras el terreno difícil y obtienes Ventaja en tus tiros de Esquiva. Mientras te desplaces, puedes infligir 2d8 + SAB daño Contundente y empujar un paso a todos los enemigos que atravieses en tu trayectoria.",
+          "empower": "Suma +10 a un tiro de Esquiva o salvación Físico, y muévete un paso en cualquier dirección. "
         },
         {
           "name": "Forma de la Montaña",
           "tags": [
             "Tierra",
-            "Defensivo",
-            "Ataque"
+            "Duradera",
+            "Mejora"
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Levantas una cantidad de piedras igual a tu Rango - 1. Como acción bonus, puedes sacrificar una piedra para detener un ataque que te haya impactado o para lanzar un ataque de Pedrada.",
-          "empower": "N/A"
+          "desc": "Amplías tu dominio sobre la tierra cercana para volverte uno con ella. Mientras este efecto permanezca activo, obtienes Ventaja en todos tus tiros relacionados con Magia de Tierra y recibes un dado de daño adicional en tus ataques. El suelo a distancia media de ti se torna inestable para los enemigos, contando como terreno difícil.",
+          "empower": "Reduce el coste en acciones del siguiente hechizo de Tierra en 1 (mínimo 1)."
         },
         {
-          "name": "Invocar Elemental de Tierra",
+          "name": "Abrazo de la Tierra",
           "tags": [
             "Tierra",
-            "Invocación"
+            "Mejora",
+            "Agarre"
           ],
-          "cost": "3 acciones, 2 chi",
-          "duration": "Combate",
-          "desc": "Invoca un Elemental de Tierra. A mayor Rango, puedes mejorar al elemental o invocar uno adicional (máximo 4).",
-          "empower": "N/A"
+          "cost": "2 chi",
+          "duration": "Hasta que el afectado escape",
+          "crit": "El objetivo queda además paralizado durante una ronda.",
+          "desc": "Al impactar con un hechizo de Magia de Tierra, todos los afectados deben superar un tiro de salvación Físico o quedan agarrados por rocas que emergen del suelo a su alrededor. Para liberarse, deben romper las rocas (PV iguales a tu Rango x 4, con las mismas propiedades que un Muro de Piedra) o tener éxito en el tiro de nuevo."
         }
       ]
     },
     {
       "rank": "IV",
       "title": "Rango IV",
-      "passive": "Hechizos de Tierra Rango II cuestan -1 acción.",
+      "passive": "Aumenta tu estadística de Sabiduría por 1.",
       "abilities": [
         {
-          "name": "Pilares de la Tierra",
+          "name": "Armadura de Piedra",
+          "tags": [
+            "Tierra",
+            "Defensivo",
+            "Duradera"
+          ],
+          "cost": "2 acciones, 2 chi",
+          "duration": "Concentración",
+          "desc": "Te recubres de placas de roca maciza que absorben los impactos. Obtienes contadores de escudo iguales a tu Rango y Resistencia a daño Fuego y Ácido. Cada vez que gastes un contador de escudo por un ataque cuerpo a cuerpo y logras reducir el daño a 0, puedes romper el arma del objetivo o hacerle 2d8 daño Contundente si te ha atacado con un arma cuerpo a cuerpo.",
+          "empower": "Recuperas la mitad de tus contadores de escudo (redondeando hacia abajo)."
+        },
+        {
+          "name": "Cascada de Escombros",
           "tags": [
             "Tierra",
             "Ataque",
+            "Área",
             "Físico"
           ],
-          "cost": "3 acciones, 2 chi",
-          "range": "Lejano",
-          "desc": "Crea 6 pilares cilíndricos que elevan a las criaturas sobre ellos (tiro de salvación de DES para evitar). Si una criatura choca contra el techo, sufre el efecto de Derrumbamiento.",
-          "empower": "N/A"
+          "cost": "2 acciones, 2 chi",
+          "duration": "Instantáneo",
+          "crit": "Los afectados quedan tropezados y sufren una herida leve.",
+          "desc": "Desatas una lluvia de rocas y escombros sobre el área afectada, infligiendo 4d8 + SAB daño Contundente y enreda a todos los que alcance. El impacto destroza cualquier cobertura o barrera en la zona y convierte el terreno en un campo de escombros difícil de atravesar.",
+          "empower": "Aumenta el área de efecto un paso y el daño un dado adicional, o ataca de nuevo a todas las criaturas en el área.",
+          "area": "Cono medio"
         },
         {
-          "name": "Derrumbamiento",
+          "name": "Sepultar",
           "tags": [
             "Tierra",
             "Ataque",
-            "Área"
+            "Agarre"
           ],
-          "cost": "2 acciones, 2 chi",
-          "area": "Radio cercano a estructura",
-          "desc": "Derrumba una estructura. Inflige el mismo daño que Tierra Viva y agarra a los afectados, dejándolos cegados y asfixiándose.",
-          "empower": "N/A"
-        },
-        {
-          "name": "Espinas de Piedra",
-          "tags": [
-            "Tierra",
-            "Ataque",
-            "Área"
-          ],
-          "cost": "2 acciones, 2 chi",
-          "area": "Radio medio",
-          "duration": "Concentración",
-          "desc": "Inflige daño de Pedrada + 1d8 en el área y crea terreno difícil. Como acción bonus, puedes lanzar un ataque de espina (daño de Pedrada) a distancia media.",
-          "empower": "N/A"
+          "cost": "1 Acción, 2 chi",
+          "range": "Medio",
+          "duration": "Hasta que escape",
+          "crit": "El objetivo queda además cegado.",
+          "desc": "La tierra se abre y engulle a un objetivo, arrastrándolo al interior del suelo. El objetivo debe superar un tiro de salvación Físico o sufre 3d8 + SAB daño Contundente y queda agarrado, cegado y comienza a asfixiarse. Para liberarse debe tener éxito en el tiro de nuevo, romper las rocas que lo aprisionan (PV iguales a tu Rango x 4) o ser rescatado desde el exterior.",
+          "empower": "Afecta a un objetivo adicional."
         }
       ]
     },
     {
       "rank": "V",
       "title": "Rango V",
-      "passive": "Todos tus hechizos de Tierra sustituyen sus dados de daño por d10. Hechizos Rango III cuestan -1 acción.",
+      "passive": "Todos tus hechizos de Tierra sustituyen sus dados de daño por d10.",
       "abilities": [
         {
           "name": "Terremoto",
@@ -208,66 +206,62 @@
             "Tierra",
             "Ataque",
             "Área",
-            "Duradero",
-            "Ambiental",
-            "Físico"
+            "Físico",
+            "Ambiental"
           ],
-          "cost": "3 acciones, 3 chi",
+          "cost": "2 acciones, 3 chi",
           "area": "Radio grande",
-          "crit": "Aturdido 1 ronda.",
-          "duration": "Concentración",
-          "desc": "Genera un sismo continuo que tropieza a los afectados (tiro de Heroísmo/Acrobacias para resistir) y crea terreno difícil con derrumbes. En rondas sucesivas puedes lanzar gratis: Terratemblor/Crear Obstáculo (ronda 2), Tierra Viva/Espinas de Piedra/Derrumbamiento (ronda 4) o Brecha (ronda 7).",
-          "empower": "N/A"
+          "duration": "Instantáneo",
+          "crit": "Los afectados quedan aturdidos durante una ronda.",
+          "desc": "Desatas un sismo devastador que sacude el suelo en toda el área afectada, infligiendo 5d10 + SAB daño Contundente a todos los que se encuentren en él. El impacto los tropieza y cubre el terreno de grietas y escombros que lo convierten en terreno difícil. Las estructuras en el área se derrumban y pueden provocar derrumbamientos secundarios que causen daño adicional a las criaturas atrapadas bajo los escombros.",
+          "empower": "Vuelve a atacar la misma área con un terremoto secundario."
         },
         {
-          "name": "Brecha",
+          "name": "Bastión",
           "tags": [
             "Tierra",
-            "Área",
-            "Ambiental"
+            "Ambiental",
+            "Agarre"
           ],
-          "cost": "3 acciones, 3 chi",
-          "range": "Medio",
-          "area": "Línea grande",
-          "crit": "Aturdido 1 ronda.",
-          "duration": "Instantánea",
-          "desc": "Abre una fisura en el suelo. Inflige 4d10 + SAB daño Contundente por la caída y tropieza a los afectados. Destruye estructuras en el área.",
-          "empower": "Amplía la anchura un paso, afectando a distancia media de la línea."
-        },
-        {
-          "name": "Bastión de Piedra",
-          "tags": [
-            "Tierra",
-            "Ambiental"
-          ],
-          "cost": "3 acciones, 3 chi",
+          "cost": "2 acciones, 3 chi",
           "area": "Cubo grande",
-          "duration": "Un día",
-          "desc": "Crea una fortaleza de 4 muros con PV iguales a tu Rango x 3 cada uno. Atrapa a los enemigos dentro (tiro de salvación de DES/Esquiva para evitar). Obtienes Ventaja en todos tus tiros dentro. Alternativa: puedes crear un elemental gigante (+40 Vitalidad, estadísticas iguales a tu Magia de Tierra).",
-          "empower": "Una pared recupera todos sus PV."
+          "duration": "Concentración",
+          "crit": "Los agarrados quedan además paralizados durante una ronda.",
+          "desc": "Levanta una estructura masiva de tierra y roca que moldea el campo de batalla a tu voluntad. Las criaturas en el espacio afectado deben superar un tiro de salvación Físico o quedan agarradas entre las rocas y sufren 4d10 + SAB daño Contundente. Mientras permanezca activo, puedes emplear una acción para hacer que las rocas se cierren sobre los agarrados, repitiendo el ataque de daño automáticamente contra ellos.",
+          "empower": "Una sección del bastión colapsa, aplastando a todos los agarrados en ella y repitiendo el ataque automáticamente."
+        },
+        {
+          "name": "Lluvia de Meteoritos",
+          "tags": [
+            "Tierra",
+            "Reacción",
+            "Duradera"
+          ],
+          "cost": "1 Acción/Reacción, 2 chi",
+          "duration": "Concentración",
+          "desc": "Lanza 4 meteoritos simultáneos que infligen 5d10 + CAR daño Contundente, empujan un paso y tropiezan al impactar además de destruir las estructuras en su posición. Puedes dejar meteoritos suspendidos en el aire para lanzarlos en un turno posterior.",
+          "empower": "Emplea de nuevo esta habilidad para atacar a puntos diferentes o al mismo. ",
+          "crit": "Los afectados quedan aturdidos una ronda.",
+          "range": "Medio",
+          "area": "4 Esferas pequeñas"
         }
       ]
     },
     {
       "rank": "VI",
       "title": "Rango VI",
-      "passive": "Hechizos de Tierra Rango IV cuestan -1 acción.",
+      "passive": "Aumenta tu estadística de Fuerza por 1.",
       "abilities": [
         {
-          "name": "Lluvia de Meteoritos",
+          "name": "Forma Elemental",
           "tags": [
             "Tierra",
-            "Ataque",
-            "Área",
-            "Físico"
+            "Mejora",
+            "Duradera"
           ],
-          "cost": "3 acciones, 5 chi",
-          "range": "Largo",
-          "area": "4 esferas medianas",
-          "crit": "Aturdido y herida leve.",
-          "duration": "Instantáneo o concentración",
-          "desc": "Invoca 4 rocas masivas que infligen 4d10 + SAB daño Contundente y tropiezan a los afectados. Derriba criaturas voladoras y destruye estructuras. Puedes mantener las rocas suspendidas en el aire para lanzarlas en turnos posteriores.",
-          "empower": "Crea una roca adicional."
+          "cost": "1 acción, 5 chi",
+          "duration": "Seis rondas",
+          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque, y tienes activos los hechizos Forma de la Montaña y Ola de Tierra, recibiendo así Ventaja en Magia de Tierra, un dado de daño adicional y velocidad de vuelo igual a tu velocidad base. Tus hechizos de Magia de Tierra de Rango III o menos no te costarán chi para ser lanzados."
         }
       ]
     }

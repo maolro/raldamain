@@ -182,6 +182,11 @@
           "area": "Esfera media",
           "crit": "Los afectados quedan paralizados durante una ronda",
           "empower": "Aumenta el área de efecto de este hechizo por un paso y el daño por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada."
+        },
+        {
+          "name": "",
+          "tags": [],
+          "desc": ""
         }
       ],
       "passive": "Aumenta tu estadística de Sabiduría por 1."
@@ -231,7 +236,8 @@
           "empower": "Afecta a un objetivo adicional.",
           "crit": "El objetivo sufre una herida permanente crítica."
         }
-      ]
+      ],
+      "passive": "Todos tus hechizos de Hielo sustituyen sus dados de daño por d10."
     },
     {
       "rank": "VI",
