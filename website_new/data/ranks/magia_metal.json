@@ -10,7 +10,7 @@
   "description": "Controlas el metal con precisión mortal, arrancando armas de las manos de tus enemigos, desatando tormentas de fragmentos cortantes y clavando espinas metálicas en puntos vitales. Tu magia es quirúrgica y letal: no destruye el terreno como la tierra, sino a los que se atreven a ponerse en tu camino.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",
     "<strong>Parada mágica:</strong> Usas Magia de Metal para tiros de parada y salvaciones contra Metal, Tierra, Físico, Cortante y Tormenta."
   ],
   "levels": [
@@ -109,7 +109,7 @@
             "Ataque",
             "Físico"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "1 Acción, 2 chi",
           "range": "Medio",
           "duration": "Instantáneo",
           "crit": "El objetivo sufre una herida media.",
@@ -123,7 +123,7 @@
             "Duradera",
             "Mejora"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 chi",
           "duration": "Concentración",
           "desc": "Amplías tu dominio sobre el metal cercano, agudizando tu control hasta la perfección. Mientras este efecto permanezca activo, obtienes Ventaja en todos tus tiros relacionados con Magia de Metal y recibes un dado de daño adicional en tus ataques. Puedes atacar con objetos metálicos contra cualquier punto que puedas ver a distancia lejana.",
           "empower": "Reduce el coste en acciones del siguiente hechizo de Metal en 1 (mínimo 1)."
@@ -160,7 +160,7 @@
           "empower": "Recuperas la mitad de tus contadores de escudo (redondeando hacia abajo). "
         },
         {
-          "name": "Torbellino de Cuchillas",
+          "name": "Pulso Destructor",
           "tags": [
             "Metal",
             "Ataque",
@@ -168,25 +168,25 @@
             "Duradera"
           ],
           "cost": "2 acciones, 2 chi",
-          "area": "Cilindro pequeño",
-          "duration": "Concentración",
+          "area": "Radio Medio",
+          "duration": "Instantáneo",
           "crit": "Los afectados sufren una herida leve.",
-          "desc": "Crea un torbellino de fragmentos metálicos y cuchillas que inflige 3d8 + CAR daño Cortante y sangrado a todos los que alcance. El torbellino puede moverse como acción. Los objetivos con armadura metálica tienen Desventaja para resistir sus efectos.",
-          "empower": "Crea un torbellino adicional o aumenta el daño del existente en 1d8 y su alcance un paso durante una ronda."
+          "desc": "Genera un pulso magnético que destruye todos los objetos metálicos en el área afectada y ocasiona el efecto de estado roto a los objetos mágicos de ese material que no sean artefactos. Aquellos que estén llevando objetos que se van a romper deben tener éxito en un tiro de salvación Físico o sufren 3d8 + CAR daño Perforante y se les clavan fragmentos de metal.",
+          "empower": "Aumenta el radio por un paso y el daño de la fragmentación por un dado adicional."
         },
         {
-          "name": "Puntos Vitales",
+          "name": "Ferrokinesia",
           "tags": [
             "Metal",
-            "Ataque",
-            "Físico"
+            "Duradera",
+            "Agarre"
           ],
-          "cost": "2 acciones, 2 chi",
+          "desc": "Un objetivo con armadura metálica o cantidad suficiente de metal clavado queda enredado y debe tener éxito en un tiro de salvación Físico o queda agarrado. Mientras esté agarrado puedes moverlo un paso como Acción o Reacción para que reciba ataques dirigidos contra ti o emplee Acciones que no supongan un coste (como moverse o hacer ataques básicos). El afectado podrá repetir el tiro gastando una Acción para intentar escapar.",
+          "cost": "1 Acción/Reacción, 2 chi",
+          "duration": "Concentración",
+          "crit": "El objetivo queda agarrado",
           "range": "Medio",
-          "duration": "Instantáneo",
-          "crit": "El objetivo sufre una herida grave adicional.",
-          "desc": "Estudias las debilidades de tu objetivo y diriges el metal directamente hacia sus puntos vitales. Contra un objetivo que ya sufra sangrado o una herida permanente, este ataque ignora su defensa física e inflige 3d8 + CAR daño Perforante y una herida grave. Contra cualquier otro objetivo, el ataque se realiza con Ventaja.",
-          "empower": "Afecta a un objetivo adicional que cumpla alguna de las condiciones."
+          "empower": "Afecta a un objetivo adicional con esta habilidad"
         }
       ]
     },
@@ -211,22 +211,22 @@
           "empower": "Vuelve a atacar el mismo área o amplía el radio un paso."
         },
         {
-          "name": "Cadenas de Hierro",
+          "name": "Polvo Metálico",
           "tags": [
-            "Metal",
-            "Ataque",
+            "Agua",
+            "Gaseosa",
             "Área",
-            "Agarre"
+            "Duradera"
           ],
           "cost": "2 acciones, 3 chi",
-          "area": "Radio mediano",
-          "duration": "Hasta que escapen",
-          "crit": "Los agarrados sufren 2d10 + CAR daño Cortante adicional.",
-          "desc": "Lanzas cadenas de acero que se enroscan alrededor de hasta un número de objetivos igual a tu Rango. Cada objetivo afectado debe superar un tiro de salvación Físico o queda agarrado y enredado, contando como rodeado de metal a efectos de tus hechizos. Para liberarse deben romper las cadenas o tener éxito en el tiro de nuevo.",
-          "empower": "Los encadenados pueden ser lanzados contra otros objetivos a distancia media, infligiendo 3d10 + CAR daño Contundente a ambos."
+          "range": "Medio",
+          "area": "Esfera mediana",
+          "duration": "Concentración",
+          "desc": "Crea una nube de partículas de metal que otorga ocultamiento y ciega a todos en ella. Cada objetivo que se encuentre ahí debe tener éxito en un tiro de Voluntad o sufre 3d10 + SAB daño Perforante que ignora defensa y el metal entrará en su cuerpo, haciendo así que cuenten como si llevasen armadura metálica además de estar enfermados una ronda. Este efecto permanecerá hasta que pierdas la concentración y puedes reactivarlo gastando una acción. ",
+          "empower": "Aumenta el tamaño un paso y el daño por un dado.",
+          "crit": "Los afectados sufren náuseas durante una ronda."
         },
         {
-          "name": "Forma de Acero",
           "tags": [
             "Metal",
             "Reacción",
@@ -235,14 +235,15 @@
           "cost": "1 Acción/Reacción, 2 chi",
           "duration": "Una ronda",
           "desc": "Te transformas en metal líquido y fluido. Obtienes Inmunidad a efectos Físicos no mágicos, Agarres, Mentales y Aflicciones, pero pierdes toda tu Defensa y recibes Vulnerabilidad a daño Eléctrico y Ácido. Solo puedes emplear Magia de Metal mientras estés en esta forma. Esta habilidad puede emplearse como reacción para evitar automáticamente un efecto.",
-          "empower": "Extiende este efecto durante una ronda adicional."
+          "empower": "Extiende este efecto durante una ronda adicional.",
+          "name": "Metal Líquido"
         }
       ]
     },
     {
       "rank": "VI",
       "title": "Rango VI",
-      "passive": "Aumenta tu estadística de Inteligencia por 1.",
+      "passive": "Aumenta tu estadística de Carisma por 1.",
       "abilities": [
         {
           "name": "Forma Elemental",

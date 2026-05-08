@@ -295,6 +295,7 @@ select.inp{cursor:pointer}
   <div class="sb-ft">
     <button class="btn" id="cmp-btn" onclick="toggleMode()">⚖ Comparar</button>
     <button class="btn" id="meta-btn" onclick="toggleMeta()">Metadatos</button>
+    <button class="btn" style="color:var(--green);border-color:var(--green)" onclick="newRank()">＋ Nuevo</button>
   </div>
 </aside>
 
@@ -370,6 +371,36 @@ select.inp{cursor:pointer}
 </div>
 
 <div class="toasts" id="toasts"></div>
+
+<!-- ── New rank modal ── -->
+<div id="new-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);
+     z-index:10000;align-items:center;justify-content:center">
+  <div style="background:var(--bg2);border:1px solid var(--border2);border-radius:9px;
+       padding:22px 24px;width:340px;display:flex;flex-direction:column;gap:13px;
+       box-shadow:0 8px 32px rgba(0,0,0,.6)">
+    <div style="font-size:14px;font-weight:700;color:var(--gold);letter-spacing:.5px">＋ Nuevo Rango</div>
+    <div class="field">
+      <div class="lbl">Título</div>
+      <input class="inp" id="nr-title" placeholder="Magia de Bombas"
+        oninput="autoNrId(this.value)"
+        onkeydown="if(event.key==='Enter')document.getElementById('nr-id').focus()">
+    </div>
+    <div class="field">
+      <div class="lbl">ID (nombre del archivo .json)</div>
+      <input class="inp" id="nr-id" placeholder="magia_bombas"
+        onkeydown="if(event.key==='Enter')document.getElementById('nr-cat').focus()">
+    </div>
+    <div class="field">
+      <div class="lbl">Categoría</div>
+      <input class="inp" id="nr-cat" list="cat-dl" placeholder="Ciencia"
+        onkeydown="if(event.key==='Enter')confirmNewRank()">
+    </div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;padding-top:3px">
+      <button class="btn" onclick="closeNewModal()">Cancelar</button>
+      <button class="btn pri" onclick="confirmNewRank()">Crear</button>
+    </div>
+  </div>
+</div>
 
 <script>
 // ── State ────────────────────────────────────────────────────────────────────
@@ -839,6 +870,69 @@ function toast(msg,type='ok') {
   const c=document.getElementById('toasts');
   const el=document.createElement('div'); el.className=`toast ${type}`; el.textContent=msg;
   c.appendChild(el); setTimeout(()=>el.remove(),3000);
+}
+
+// ── New rank ──────────────────────────────────────────────────────────────────
+function slugify(s) {
+  return s.toLowerCase().trim()
+    .replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u')
+    .replace(/ñ/g,'n').replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
+}
+
+function autoNrId(title) {
+  const idEl = document.getElementById('nr-id');
+  // only auto-fill if user hasn't typed their own id yet
+  if (!idEl._manualEdit) idEl.value = slugify(title);
+}
+
+function newRank() {
+  const m = document.getElementById('new-modal');
+  document.getElementById('nr-title').value = '';
+  document.getElementById('nr-id').value    = '';
+  document.getElementById('nr-cat').value   = '';
+  document.getElementById('nr-id')._manualEdit = false;
+  document.getElementById('nr-id').addEventListener('input', function() {
+    this._manualEdit = !!this.value;
+  }, { once: false });
+  m.style.display = 'flex';
+  document.getElementById('nr-title').focus();
+}
+
+function closeNewModal() {
+  document.getElementById('new-modal').style.display = 'none';
+}
+
+async function confirmNewRank() {
+  const title = document.getElementById('nr-title').value.trim();
+  const id    = slugify(document.getElementById('nr-id').value || document.getElementById('nr-title').value);
+  const cat   = document.getElementById('nr-cat').value.trim();
+  if (!title || !id) { toast('Título e ID son obligatorios', 'err'); return; }
+
+  const template = {
+    id,
+    title,
+    category: cat || 'Sin categoría',
+    image: `${id}.jpg`,
+    stats: [],
+    description: '',
+    fundamentals: [
+      '<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.',
+      '<strong>Estadística principal:</strong> Carisma + Rango.',
+      '<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones.'
+    ],
+    levels: []
+  };
+
+  try {
+    await api('POST', `/api/rank/${id}`, template);
+    closeNewModal();
+    S.all = await api('GET', '/api/ranks');
+    renderSidebar();
+    renderCats();
+    fillCmpSelects();
+    await loadRank(id);
+    toast(`"${title}" creado ✓`, 'ok');
+  } catch(e) { toast('Error: '+e.message, 'err'); }
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────

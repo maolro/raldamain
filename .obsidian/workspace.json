@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/rangos/ascendencias/ascendencia boreal.md",
+                "file": "rules/rangos/ciencia/bombas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ascendencia boreal"
+              "title": "bombas"
             }
           },
           {
@@ -225,6 +225,24 @@
   },
   "active": "d0f7372f6752d703",
   "lastOpenFiles": [
+    "rules/rangos/elementalismo/magia de metal.md",
+    "rules/rangos/ascendencias/ascendencia boreal.md",
+    "website_new/data/ranks/bombas.json",
+    "website_new/assets/images/ranks/magia_metal.jpg",
+    "website_new/assets/images/ranks/Unconfirmed 562089.crdownload",
+    "website_new/data/ranks/magia_metal.json",
+    "website_new/assets/images/ranks/magia_tormenta.jpg",
+    "website_new/assets/images/ranks/Unconfirmed 868610.crdownload",
+    "website_new/assets/images/ranks/magia_tierra.jpg",
+    "website_new/assets/images/ranks/Unconfirmed 681912.crdownload",
+    "website_new/assets/images/ranks/magia_hielo.jpg",
+    "website_new/assets/images/ranks/Unconfirmed 692285.crdownload",
+    "website_new/assets/images/ranks/magia_agua.jpg",
+    "website_new/assets/images/ranks/Unconfirmed 675235.crdownload",
+    "website_new/data/characters/shoto_todoroki.md",
+    "website_new/data/characters/katara.md",
+    "website_new/data/characters/aokiji.md",
+    "website_new/data/characters",
     "rules/rangos/ascendencias/ascendencia de agua.md",
     "rules/rangos/ascendencias/ascendencia de aire.md",
     "website_new/assets/images/ranks/magia_aire.jpg",
@@ -249,27 +267,9 @@
     "website_new/data/bestiary/tier_vi/soferiel.md",
     "website_new/data/bestiary/tier_v/seripente_solar.md",
     "website_new/data/bestiary/tier_iv/humatiel.md",
-    "website_new/data/bestiary/tier_iv/lilim.md",
-    "website_new/data/bestiary/tier_iv/can_cerbero.md",
-    "website_new/data/bestiary/tier_iv/langosta_de_abbadon.md",
-    "website_new/data/bestiary/tier_iii/cauchemar.md",
-    "website_new/data/bestiary/tier_v/ophanim.md",
     "website_new/data/world/idiomas",
-    "website_new/data/bestiary/tier_vi",
-    "website_new/data/bestiary/tier_v",
-    "website_new/data/bestiary/tier_iv",
-    "website_new/data/bestiary/tier_iii",
-    "website_new/data/bestiary",
-    "website_new/data/c",
-    "website_new/creador.html",
-    "website_new/assets/css/builder_overrides.css",
     "campaign/caballeros de ustilus/personajes/regulus.jpg",
     "campaign/caballeros de ustilus/personajes/petrikov.jpg",
-    "campaign/caballeros de ustilus/personajes/basileos.jpg",
-    "campaign/caballeros de ustilus/personajes/abshalom.jpg",
-    "website_new/data/world/world4000.jpg",
-    "website_new/assets/images/world/culturas/shinri.jpg",
-    "website_new/assets/images/world/culturas/ustileses.jpg",
-    "website_new/assets/images/world/culturas/tapeties.jpg"
+    "campaign/caballeros de ustilus/personajes/basileos.jpg"
   ]
 }

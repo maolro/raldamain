@@ -10,7 +10,7 @@
   "description": "Controlas la faceta más destructiva del clima, desatando descargas eléctricas devastadoras y truenos ensordecedores. Aprovechas la conductividad del campo de batalla, te mueves a la velocidad del rayo y desatas tormentas que amplifican cada uno de tus ataques.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",
     "<strong>Parada mágica:</strong> Usas Magia de Tormenta para tiros de parada y salvaciones contra Tormenta, Fuego, Radiante, Tierra y Naturaleza."
   ],
   "levels": [
@@ -30,7 +30,7 @@
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
           "crit": "El objetivo queda aturdido durante una ronda.",
-          "desc": "Canaliza una descarga eléctrica a través del contacto directo que inflige 1d6 + CAR daño Eléctrico al objetivo. Los enemigos que lleven armadura metálica tienen Desventaja en sus tiros defensivos contra este ataque.",
+          "desc": "Canaliza una descarga eléctrica a través del contacto directo que inflige 1d6 + SAB/CAR daño Eléctrico al objetivo. Los enemigos que lleven armadura metálica tienen Desventaja en sus tiros defensivos contra este ataque.",
           "empower": "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo."
         },
         {
@@ -45,7 +45,7 @@
           "area": "Radio cercano",
           "duration": "Instantáneo",
           "crit": "Los afectados quedan ensordecidos durante una ronda.",
-          "desc": "Emites un estallido de energía sónica que inflige 2d6 + CAR daño Sónico a todos los que se encuentren en el área y los empuja un paso. Los afectados deben superar un tiro de salvación de Voluntad o quedan ensordecidos una ronda. Este ataque destruye objetos frágiles e interrupe efectos Auditivos.",
+          "desc": "Emites un estallido de energía sónica que inflige 2d6 + SAB/CAR daño Sónico a todos los que se encuentren en el área y los empuja un paso. Los afectados deben superar un tiro de salvación de Voluntad o quedan ensordecidos una ronda. Este ataque destruye objetos frágiles e interrupe efectos Auditivos.",
           "empower": "Aumenta el radio un paso y el daño un dado adicional."
         },
         {

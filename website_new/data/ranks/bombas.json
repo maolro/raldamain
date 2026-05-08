@@ -1,0 +1,39 @@
+{
+  "id": "bombas",
+  "title": "Bombas",
+  "category": "Ciencia",
+  "image": "bombas.jpg",
+  "stats": [],
+  "description": "",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
+    "<strong>Estadística principal:</strong> Inteligencia + Rango."
+  ],
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "abilities": []
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "abilities": []
+    }
+  ]
+}
