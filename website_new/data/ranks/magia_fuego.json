@@ -113,8 +113,8 @@
           "cost": "2 acciones, 2 chi",
           "area": "Esfera mediana",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar. Si el objetivo ya arde, solo puede defenderse con un tiro de salvación de VOL.",
-          "empower": "Usar como reacción al ser golpeado."
+          "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar y una quemadura leve. Si el objetivo ya tiene una quemadura, solo puede defenderse con un tiro de salvación de Voluntad.",
+          "empower": "Aumenta el área de efecto de este hechizo por un paso y el daño por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada."
         },
         {
           "name": "Propulsión",
@@ -122,7 +122,7 @@
             "Fuego",
             "Duradera"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "1 Acción, 2 chi",
           "duration": "Concentración",
           "desc": "Obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. No puedes acabar tu turno en el aire.",
           "empower": "Te mueves un paso y reduces el daño de un ataque enemigo a la mitad. Cuesta 1 reacción."
@@ -165,7 +165,7 @@
           "area": "Cilindro pequeño",
           "duration": "Concentración",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Crea un torbellino móvil que inflige 2d8 + CAR daño Fuego. Deja un rastro de Muro de Llamas y puede moverse como acción.",
+          "desc": "Crea un torbellino móvil que inflige 3d8 + CAR daño Fuego y una quemadura. Deja un rastro de Muro de Llamas y puede moverse como acción.",
           "empower": "Crea un torbellino extra o aumenta el daño de un torbellino en 1d8 y su alcance un paso durante una ronda."
         },
         {
@@ -176,7 +176,7 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Concentración",
-          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego y el espacio a distancia media de ti cuenta como calor extremo. Recibes una cantidad de contadores de escudo igual a tu Rango.",
+          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego, recibes un dado de daño en tus tiros relacionados con ellos y el espacio a distancia media de ti cuenta como calor extremo. Recibes una cantidad de contadores de escudo igual a tu Rango.",
           "empower": "El siguiente hechizo de fuego cuesta -1 acción."
         }
       ]
@@ -198,7 +198,7 @@
           "area": "4 Esferas pequeñas",
           "crit": "Afectados sufren quemadura grave.",
           "desc": "Lanza 4 explosiones simultáneas que infligen 4d10 + CAR daño Fuego. Puedes dejar bolas suspendidas para lanzarlas en un turno posterior.",
-          "empower": "+1 bola de fuego (máximo 3 extra)."
+          "empower": "Crea una bola de fuego adicional, atacando a otra localización o al mismo punto otra vez."
         },
         {
           "name": "Rayo de Plasma",
@@ -212,7 +212,7 @@
           "area": "Línea grande",
           "crit": "Herida permanente grave.",
           "desc": "Rayo que inflige 4d10 + CAR daño Radiante. Ignora muros, armadura y escudos.",
-          "empower": "Afecta a un objetivo adicional al alcance o vuelve a emplear este hechizo sin pagar chi."
+          "empower": "Afecta a un objetivo adicional que puedas alcanzar o lanza de nuevo este hechizo sin la necesidad de pagar chi."
         },
         {
           "name": "Llama Viviente",

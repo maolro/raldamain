@@ -167,6 +167,14 @@ select.inp{cursor:pointer}
 .ltab.on{background:var(--bg);color:var(--text);border-color:var(--border);border-bottom-color:var(--bg)}
 .ltab.add{font-size:15px;padding:3px 11px;color:var(--text3)}
 .ltab.add:hover{color:var(--gold)}
+.ltab.paste{font-size:10px;padding:3px 9px;color:var(--teal);border:1px dashed var(--teal);
+  border-bottom:none;background:rgba(32,201,151,.06)}
+.ltab.paste:hover{background:rgba(32,201,151,.16);color:#40ffcc}
+
+/* ── Clipboard badge ── */
+#clip-badge{font-size:10px;padding:2px 8px;border-radius:3px;display:none;
+  border:1px solid var(--teal);color:var(--teal);background:rgba(32,201,151,.08);cursor:default}
+#clip-badge.ab{border-color:var(--blue);color:var(--blue);background:rgba(74,158,255,.08)}
 
 /* ── Level content ── */
 .lvl-hd{display:flex;align-items:center;gap:9px;margin-bottom:13px}
@@ -293,6 +301,7 @@ select.inp{cursor:pointer}
 <div class="main">
   <div class="tb">
     <span class="tb-title" id="tb-title">Selecciona un rango</span>
+    <span id="clip-badge" title="Clic para limpiar portapapeles" onclick="clearClip()"></span>
     <button class="btn pri" id="save-btn" style="display:none" onclick="saveRank()">💾 Guardar</button>
   </div>
 
@@ -374,6 +383,7 @@ const S = {
   cat: '',
   metaOpen: false,
   cmpA: null, cmpB: null,
+  clipboard: null,  // { kind: 'level'|'ability', data: {...} }
 };
 
 const TAGS = ['Duelo','Pasiva','Mejora','Reacción','Duradera','Maniobra',
@@ -484,6 +494,7 @@ function renderToolbar() {
   const sb = document.getElementById('save-btn');
   sb.style.display = S.rank?'':'none';
   sb.classList.toggle('pri', d);
+  updateClipBadge();
 }
 
 // ── Editor ───────────────────────────────────────────────────────────────────
@@ -521,12 +532,16 @@ function clickMetaTog() {
 // ── Level tabs ───────────────────────────────────────────────────────────────
 function renderTabs() {
   const lvls = S.rank.levels||[];
+  const pasteBtn = S.clipboard?.kind==='level'
+    ? `<button class="ltab paste" onclick="pasteLevel()" title="Pegar nivel copiado al final">📋 Pegar nivel</button>`
+    : '';
   document.getElementById('lvl-tabs').innerHTML =
     lvls.map((lv,i)=>`
       <button class="ltab ${i===S.lv?'on':''}" onclick="setLv(${i})">
         ${lv.rank} <span style="opacity:.6;font-weight:400">${lv.title||''}</span>
       </button>`).join('') +
-    `<button class="ltab add" onclick="addLv()" title="Añadir rango">＋</button>`;
+    `<button class="ltab add" onclick="addLv()" title="Añadir rango">＋</button>` +
+    pasteBtn;
 }
 
 function setLv(i) { S.lv=i; renderTabs(); renderLvl(); }
@@ -539,12 +554,21 @@ function renderLvl() {
   const lv = lvls[S.lv]; if (!lv) return;
   const abs = lv.abilities||[];
 
+  const canUp   = S.lv > 0;
+  const canDown = S.lv < lvls.length - 1;
+  const pasteAbBtn = S.clipboard?.kind==='ability'
+    ? `<button class="btn sm" style="color:var(--blue);border-color:var(--blue)" onclick="pasteAb(${S.lv})" title="Pegar habilidad copiada">📋 Pegar habilidad</button>`
+    : '';
   el.innerHTML = `
     <div class="lvl-hd">
       <div class="lvl-badge">${lv.rank}</div>
       <input class="inp" style="flex:1;max-width:180px" value="${esc(lv.title||'')}"
         placeholder="Título" oninput="setLvTitle(${S.lv},this.value)">
-      <button class="btn danger sm" style="margin-left:auto" onclick="delLv(${S.lv})">Eliminar rango</button>
+      <button class="btn sm" title="Mover izquierda" ${canUp?'':'disabled style="opacity:.3"'} onclick="moveLv(${S.lv},-1)">◀</button>
+      <button class="btn sm" title="Mover derecha"  ${canDown?'':'disabled style="opacity:.3"'} onclick="moveLv(${S.lv},1)">▶</button>
+      <button class="btn sm" style="color:var(--teal);border-color:var(--teal)" onclick="copyLevel(${S.lv})" title="Copiar este nivel al portapapeles">📋 Copiar</button>
+      ${pasteAbBtn}
+      <button class="btn danger sm" style="margin-left:auto" onclick="delLv(${S.lv})">✕ Eliminar</button>
     </div>
 
     ${lv.passive!==undefined ? `
@@ -590,11 +614,17 @@ function cardHtml(li, ab, ai) {
          <button class="emp-tog" onclick="addEmp(${li},${ai})">✦ Añadir empower</button>
        </div>`;
 
+  const totalAbs = S.rank.levels[li].abilities.length;
+  const canAbUp   = ai > 0;
+  const canAbDown = ai < totalAbs - 1;
   return `
     <div class="card" id="card-${li}-${ai}">
       <div class="card-top">
         <input class="inp" value="${esc(ab.name||'')}" placeholder="Nombre de la habilidad"
           oninput="setAb(${li},${ai},'name',this.value)">
+        <button class="card-x" title="Subir"    style="font-size:11px;color:var(--text3)" ${canAbUp?'':'disabled'} onclick="moveAb(${li},${ai},-1)">▲</button>
+        <button class="card-x" title="Bajar"    style="font-size:11px;color:var(--text3)" ${canAbDown?'':'disabled'} onclick="moveAb(${li},${ai},1)">▼</button>
+        <button class="card-x" title="Copiar"   style="color:var(--teal)" onclick="copyAb(${li},${ai})">📋</button>
         <button class="card-x" onclick="delAb(${li},${ai})" title="Eliminar">×</button>
       </div>
       <div class="tags" id="tags-${li}-${ai}">${tagHtml}</div>
@@ -669,6 +699,74 @@ function refreshTags(li,ai) {
 // ── Empower ───────────────────────────────────────────────────────────────────
 function addEmp(li,ai) { S.rank.levels[li].abilities[ai].empower=''; renderLvl(); }
 function delEmp(li,ai) { delete S.rank.levels[li].abilities[ai].empower; renderToolbar(); renderLvl(); }
+
+// ── Clipboard ─────────────────────────────────────────────────────────────────
+function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }
+
+function copyLevel(li) {
+  S.clipboard = { kind: 'level', data: deepCopy(S.rank.levels[li]) };
+  updateClipBadge();
+  renderTabs();
+  toast(`Nivel ${S.rank.levels[li].rank} copiado`, 'ok');
+}
+function pasteLevel() {
+  if (S.clipboard?.kind !== 'level') return;
+  const d = deepCopy(S.clipboard.data);
+  S.rank.levels.push(d);
+  S.lv = S.rank.levels.length - 1;
+  renderToolbar(); renderEditor();
+  toast('Nivel pegado al final', 'ok');
+}
+
+function copyAb(li, ai) {
+  S.clipboard = { kind: 'ability', data: deepCopy(S.rank.levels[li].abilities[ai]) };
+  updateClipBadge();
+  renderLvl();
+  toast(`Habilidad "${S.rank.levels[li].abilities[ai].name||'sin nombre'}" copiada`, 'ok');
+}
+function pasteAb(li) {
+  if (S.clipboard?.kind !== 'ability') return;
+  (S.rank.levels[li].abilities||(S.rank.levels[li].abilities=[])).push(deepCopy(S.clipboard.data));
+  renderToolbar(); renderLvl();
+  toast('Habilidad pegada', 'ok');
+}
+
+function clearClip() {
+  S.clipboard = null;
+  updateClipBadge();
+  renderTabs();
+  renderLvl();
+}
+function updateClipBadge() {
+  const el = document.getElementById('clip-badge');
+  if (!el) return;
+  if (!S.clipboard) { el.style.display='none'; return; }
+  el.style.display = '';
+  if (S.clipboard.kind === 'level') {
+    el.className = '';
+    el.textContent = `📋 Nivel: ${S.clipboard.data.rank} ${S.clipboard.data.title||''} ✕`;
+  } else {
+    el.className = 'ab';
+    el.textContent = `📋 Hab: ${S.clipboard.data.name||'sin nombre'} ✕`;
+  }
+}
+
+// ── Reorder ───────────────────────────────────────────────────────────────────
+function moveLv(li, dir) {
+  const lvls = S.rank.levels;
+  const to = li + dir;
+  if (to < 0 || to >= lvls.length) return;
+  [lvls[li], lvls[to]] = [lvls[to], lvls[li]];
+  S.lv = to;
+  renderToolbar(); renderEditor();
+}
+function moveAb(li, ai, dir) {
+  const abs = S.rank.levels[li].abilities;
+  const to = ai + dir;
+  if (to < 0 || to >= abs.length) return;
+  [abs[ai], abs[to]] = [abs[to], abs[ai]];
+  renderToolbar(); renderLvl();
+}
 
 // ── Level / Ability CRUD ──────────────────────────────────────────────────────
 function addLv() {

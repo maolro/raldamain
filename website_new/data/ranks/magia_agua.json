@@ -114,7 +114,7 @@
             "Agua",
             "Pasiva"
           ],
-          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso. Además, puedes emplear tu modificador de Magia de Agua para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos."
+          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso además de contar como Agua para los propósitos de Vulnerabilidades y habilidades mágicas. Además, puedes emplear tu modificador de Magia de Agua para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos."
         }
       ],
       "passive": "Aumenta tu estadística de Constitución 1."
@@ -150,7 +150,7 @@
           "area": "Radio grande",
           "duration": "Concentración",
           "empower": "El siguiente hechizo de Agua que lances cuesta -1 acción (mínimo 1)",
-          "desc": "Amplificas tu control elemental sobre el agua en el área afectada, pudiendo subir o bajar su nivel como desees y moverte por ella sin dificultades. Recibes Ventaja en todos tus tiros relacionados con Magia de Agua y tus hechizos de Agua reciben un dado de daño adicional (esto afecta también a Magia de Hielo y Magia de Sangre). Además, el alcance de todos tus efectos aumenta al área afectada y el agua es terreno difícil para criaturas que puedan nadar salvo que tú lo decidas."
+          "desc": "Amplificas tu control elemental sobre el agua en el área afectada, pudiendo subir o bajar su nivel como desees y moverte por ella sin dificultades. Recibes Ventaja en todos tus tiros relacionados con Magia de Agua y tus hechizos de Agua reciben un dado de daño adicional (esto afecta también a Magia de Hielo, Ácido, Tormenta y Sangre). Además, el alcance de todos tus efectos aumenta al área afectada y el agua es terreno difícil para criaturas que puedan nadar salvo que tú lo decidas."
         },
         {
           "name": "Columna de Agua",
@@ -163,6 +163,11 @@
           "duration": "Concentración",
           "desc": "Creas una columna de agua a tus pies que te otorga velocidad de vuelo igual a tu movimiento base y Ventaja en tus tiros de Esquiva. No puedes volar excesivamente alto y debes estar rodeado de agua para poder volar.",
           "empower": "Suma +10 a un tiro de Esquiva o salvación Físico, y vuela un paso en cualquier dirección."
+        },
+        {
+          "name": "",
+          "tags": [],
+          "desc": ""
         }
       ]
     },
