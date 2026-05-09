@@ -5,12 +5,13 @@
   "image": "magia_aire.jpg",
   "stats": [
     "Sabiduría",
+    "Carisma",
     "Chi"
   ],
   "description": "Tienes un control absoluto sobre el aire, manipulándolo para crear desde brisas hasta huracanes y desastres naturales. Tus hechizos se centran en el movimiento, empujar enemigos, crear barreras de viento y asfixiar a tus oponentes.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Sabiduría + Rango.",
+    "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",
     "<strong>Parada mágica:</strong> Usas Magia de Aire para tiros de parada y salvaciones contra Naturaleza, Gravitatoria, Agua y Telekinesia."
   ],
   "levels": [
@@ -29,7 +30,7 @@
           "cost": "2 Acciones, 1 chi",
           "crit": "Los objetivos sufren una herida permanente leve.",
           "duration": "Instantánea",
-          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o son empujados dos pasos y caen tropezados. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. Además, si el objetivo empujado choca con una superficie física sufrirá entonces 3d6 + SAB daño Contundente (lo mismo ocurre con las caídas).",
+          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o son empujados dos pasos y caen tropezados. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. Además, si el objetivo empujado choca con una superficie física sufrirá entonces 3d6 + SAB/CAR daño Contundente (lo mismo ocurre con las caídas).",
           "empower": "Vuelve a emplear este hechizo en la misma zona sin la necesidad de gastar acciones adicionales.",
           "area": "Cono Medio"
         },
@@ -45,7 +46,7 @@
           "range": "Medio",
           "crit": "El objetivo sufre una herida permanente leve.",
           "duration": "Instantánea",
-          "desc": "Ataca con un tajo de aire comprimido que inflige 1d6 + SAB daño Cortante. Este ataque ignora ocultamiento y resistencias a ataques a distancia. \nPuedes gastar una acción adicional para incrementar el daño base de este ataque por 1d6 (máximo 2 acciones).",
+          "desc": "Ataca con un tajo de aire comprimido que inflige 1d6 + SAB/CAR daño Cortante. Este ataque ignora ocultamiento y resistencias a ataques a distancia. \nPuedes gastar una acción adicional para incrementar el daño base de este ataque por 1d6 (máximo 2 acciones).",
           "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
         },
         {
@@ -88,7 +89,7 @@
           "range": "Cuerpo a cuerpo",
           "crit": "Herida permanente leve y fallo automático en defensa.",
           "duration": "Instantáneo",
-          "desc": "Haz un ataque con una esfera de vientos que provoca 3d6 + SAB daño Cortante al impactar. Además, el objetivo será empujado un pasos y cae tropezado (puede resistirse con un tiro de salvación Físico).",
+          "desc": "Haz un ataque con una esfera de vientos que provoca 3d6 + SAB/CAR daño Cortante al impactar. Además, el objetivo será empujado un pasos y cae tropezado (puede resistirse con un tiro de salvación Físico).",
           "empower": "La esfera permanece en tu mano para lanzarla gratis hasta el final del siguiente turno."
         },
         {
@@ -166,7 +167,7 @@
           "area": "Cilindro pequeño",
           "crit": "Fallo automático en agarre o no puede escapar.",
           "duration": "Concentración",
-          "desc": "Todos los objetivos en el área afectada sufren 3d8 + SAB daño Contundente y quedan enredados (deben tener éxito en un tiro de salvación físico para escapar). Mientras estén enredados, quedarán suspendidos en el aire y se moverán con el tornado además que con cada intento fracasado sufrirán 2d8 + SAB daño Contundente. \nMientras el tornado permanezca activo, puedes moverlo un paso como acción, atacando con él a cada criatura que se encuentre en su camino,",
+          "desc": "Todos los objetivos en el área afectada sufren 3d8 + SAB/CAR daño Contundente y quedan enredados (deben tener éxito en un tiro de salvación físico para escapar). Mientras estén enredados, quedarán suspendidos en el aire y se moverán con el tornado además que con cada intento fracasado sufrirán 2d8 + SAB/CAR daño Contundente. \nMientras el tornado permanezca activo, puedes moverlo un paso como acción, atacando con él a cada criatura que se encuentre en su camino,",
           "empower": "Crea un tornado adicional o aumenta el tamaño un paso y su daño por un dado."
         },
         {
@@ -192,7 +193,7 @@
           "area": "Cono mediano",
           "crit": "Inflige una herida permanente media a todos los afectados.",
           "duration": "Instantáneo",
-          "desc": "Haz un ataque contra todos los objetivos el el área afectada que inflige 4d8 + SAB daño Cortante al impactar y una herida permanente leve. Los afectados tienen Desventaja en tiros de Esquiva y perderán un contador de escudo.",
+          "desc": "Haz un ataque contra todos los objetivos el el área afectada que inflige 4d8 + SAB/CAR daño Cortante al impactar y una herida permanente leve. Los afectados tienen Desventaja en tiros de Esquiva y perderán un contador de escudo.",
           "empower": "El siguiente uso este turno de este hechizo no cuesta chi o aumenta el daño por un dado y el área afectada por un paso.",
           "name": "Viento Cortante"
         }
@@ -215,7 +216,7 @@
           "cost": "2 acciones, 3 chi",
           "area": "Cono grande",
           "duration": "Instantáneo",
-          "desc": "Haz un ataque contra todos los objetivos en el área afectada que provoca 4d10 + SAB daño Contundente además de empujar dos pasos y tropezar. Este ataque destruirá todas las estructuras frágiles y las criaturas voladoras tienen Desventaja defendiéndose y caerán al suelo al fallar.\n\nHasta el principio de tu siguiente turno, el aire será terreno difícil para voladores y forzando a toda criatura que intente alzar el vuelo a superar un tiro de salvación Físico.",
+          "desc": "Haz un ataque contra todos los objetivos en el área afectada que provoca 4d10 + SAB/CAR daño Contundente además de empujar dos pasos y tropezar. Este ataque destruirá todas las estructuras frágiles y las criaturas voladoras tienen Desventaja defendiéndose y caerán al suelo al fallar.\n\nHasta el principio de tu siguiente turno, el aire será terreno difícil para voladores y forzando a toda criatura que intente alzar el vuelo a superar un tiro de salvación Físico.",
           "empower": "Lanza de nuevo este ataque contra la misma zona afectada.",
           "crit": "Los afectados sufren una herida permanente leve."
         },
@@ -232,7 +233,7 @@
           "area": "Esfera pequeña",
           "crit": "Los afectados quedan exhaustos.",
           "duration": "Concentración",
-          "desc": "Drenas todo el aire de la zona afectada, forzando a tus objetivos a tener éxito en un tiro de salvación Físico o quedan fatigados y sufren 3d10 + SAB daño Necrótico. La esfera permanecerá hasta que pierdas la conecntración y quienes permanezcan en ella al final de su turno o se muevan ahí sufrirán de nuevo sus efectos.",
+          "desc": "Drenas todo el aire de la zona afectada, forzando a tus objetivos a tener éxito en un tiro de salvación Físico o quedan fatigados y sufren 3d10 + SAB/CAR daño Necrótico. La esfera permanecerá hasta que pierdas la conecntración y quienes permanezcan en ella al final de su turno o se muevan ahí sufrirán de nuevo sus efectos.",
           "empower": "Recuperas 5 Vitalidad por cada fallo enemigo."
         },
         {
@@ -246,11 +247,6 @@
           "duration": "Concentración/Una ronda",
           "desc": "Te transformas en aire viviente, recibiendo así Inmunidad a efectos Físicos, Aflicciones, Mentales, Miedo y Agarres a costa de Vulnerabilidad a efectos de Aire (quienes podrán agarrarte con normalidad).\n\nEste efecto permanecerá activo hasta que pierdas la concentración o pase una ronda. Hasta que eso ocurra, contarás como incorpóreo y serás invisible, pero solo podrás emplear hechizos de Magia de Aire.",
           "empower": "Extiende el efecto durante una ronda adicional."
-        },
-        {
-          "name": "",
-          "tags": [],
-          "desc": ""
         }
       ]
     },
@@ -264,7 +260,7 @@
             "Aire",
             "Duradera"
           ],
-          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y tu SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
+          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB/CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
           "cost": "1 acción, 5 chi",
           "duration": "Seis rondas"
         }
