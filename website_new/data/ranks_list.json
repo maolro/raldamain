@@ -222,5 +222,19 @@
     "category": "Divino",
     "image": "guerrero_divino.jpg",
     "description": "Infunde armas con poder divino para acabar con los enemigos de tu fe."
+  },
+  {
+    "id": "magia_metal",
+    "name": "Magia de Metal",
+    "category": "Elementalismo",
+    "image": "magia_metal.jpg",
+    "description": "Controlas el metal con precisión mortal, arrancando armas de las manos de tus enemigos, desatando tormentas de fragmentos cortantes y clavando espinas metálicas en puntos vitales."
+  },
+  {
+    "id": "bombas",
+    "name": "Bombas",
+    "category": "Ciencia",
+    "image": "bombas.jpg",
+    "description": "Conviertes la química y la física en armas de guerra, diseñando explosivos capaces de negar terreno, envenenar el aire y reducir fortalezas a escombros."
   }
 ]

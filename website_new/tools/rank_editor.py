@@ -18,7 +18,8 @@ except ImportError:
     sys.exit(1)
 
 app = Flask(__name__)
-RANKS_DIR = Path(__file__).parent.parent / "data" / "ranks"
+RANKS_DIR  = Path(__file__).parent.parent / "data" / "ranks"
+RANKS_LIST = Path(__file__).parent.parent / "data" / "ranks_list.json"
 
 # ── API ───────────────────────────────────────────────────────────────────────
 
@@ -49,7 +50,27 @@ def api_save(rid):
     p = RANKS_DIR / f"{rid}.json"
     data = request.get_json(force=True)
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    _sync_ranks_list(data)
     return jsonify({"ok": True})
+
+def _sync_ranks_list(data):
+    try:
+        entries = json.loads(RANKS_LIST.read_text(encoding="utf-8")) if RANKS_LIST.exists() else []
+        entry = {
+            "id":          data.get("id", ""),
+            "name":        data.get("title", ""),
+            "category":    data.get("category", ""),
+            "image":       data.get("image", ""),
+            "description": data.get("description", ""),
+        }
+        idx = next((i for i, e in enumerate(entries) if e.get("id") == entry["id"]), None)
+        if idx is not None:
+            entries[idx] = entry
+        else:
+            entries.append(entry)
+        RANKS_LIST.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        pass
 
 @app.route("/")
 def index():
