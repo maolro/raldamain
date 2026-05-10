@@ -158,7 +158,7 @@
             "Mejora"
           ],
           "cost": "+1 chi",
-          "desc": "Puedes aplicar este modificador a cualquiera de tus hechizos de Ciencia para que exploten con retraso. El explosivo queda latente hasta el inicio de tu siguiente turno o hasta que lo actives como acción bonus, lo cual hará que cuente como un ataque sorpresa.",
+          "desc": "Puedes aplicar este modificador a cualquiera de tus hechizos de Ciencia para que exploten con retraso. El explosivo queda latente hasta que lo actives como acción bonus, lo cual hará que cuente como un ataque sorpresa.",
           "duration": "Hasta seis rondas"
         }
       ]
