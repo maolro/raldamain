@@ -336,18 +336,8 @@ select.inp{cursor:pointer}
             </select>
           </div>
           <div class="field">
-            <div class="lbl">Tier (texto)</div>
-            <input class="inp" id="f-tier" placeholder="Esbirro Élite II" oninput="setF('tier',this.value)">
-          </div>
-          <div class="field">
             <div class="lbl">Nivel (índice)</div>
             <input class="inp" id="f-level" type="number" min="0" oninput="setF('level',+this.value)">
-          </div>
-        </div>
-        <div class="opt-row">
-          <div class="field" style="flex:2">
-            <div class="lbl">Imagen (ruta relativa)</div>
-            <input class="inp" id="f-image" placeholder="creatures/nombre.jpg" oninput="setF('image',this.value)">
           </div>
         </div>
         <div class="field">
@@ -367,6 +357,10 @@ select.inp{cursor:pointer}
             <input class="inp" id="f-hits" type="number" min="0" oninput="setHits(+this.value)">
           </div>
           <div class="field">
+            <div class="lbl">Acciones</div>
+            <input class="inp" id="f-acc" type="number" min="0" oninput="setCombat('acciones',+this.value)">
+          </div>
+          <div class="field">
             <div class="lbl">Reacciones</div>
             <input class="inp" id="f-reac" type="number" min="0" oninput="setCombat('reacciones',+this.value)">
           </div>
@@ -384,21 +378,16 @@ select.inp{cursor:pointer}
           <div class="saves-grid" id="saves-grid"></div>
         </div>
         <div>
-          <div class="lbl" style="margin-bottom:6px">Umbrales de Daño</div>
-          <div class="opt-row">
-            <div class="field">
-              <div class="lbl">Mágico</div>
-              <input class="inp" id="f-ud-magic" type="number" min="0" oninput="setDT('magic',+this.value)">
-            </div>
-            <div class="field">
-              <div class="lbl">Otros</div>
-              <input class="inp" id="f-ud-other" type="number" min="0" oninput="setDT('other',+this.value)">
-            </div>
-            <div class="field" style="flex:2">
-              <div class="lbl">Nota</div>
-              <input class="inp" id="f-ud-note" oninput="setDT('note',this.value)">
-            </div>
-          </div>
+          <div class="lbl" style="margin-bottom:4px">Umbrales de Daño</div>
+          <table style="width:100%;border-collapse:collapse" id="umbral-table">
+            <thead><tr>
+              <th style="text-align:left;padding:3px 8px 3px 0;font-size:.75rem;color:#888;letter-spacing:.06em;border-bottom:1px solid #333;width:90px">UMBRAL</th>
+              <th style="text-align:left;padding:3px 0;font-size:.75rem;color:#888;letter-spacing:.06em;border-bottom:1px solid #333">CATEGORÍAS</th>
+              <th style="width:24px"></th>
+            </tr></thead>
+            <tbody id="umbral-body"></tbody>
+          </table>
+          <button class="btn sm" style="margin-top:6px;color:var(--purple);border-color:var(--purple)" onclick="addUmbral()">＋ Umbral</button>
         </div>
         <div>
           <div class="lbl" style="margin-bottom:4px">Inmunidades</div>
@@ -564,19 +553,17 @@ function newCreature() {
   S.creature = {
     id: 'nueva_criatura_' + Date.now(),
     name: 'Nueva Criatura',
-    tier: '',
     type: 'Bestia',
     size: 'Mediano',
-    image: '',
     level: 1,
     description: '',
     hits: 1,
     saves: { 'FÍS': '+0', 'VOL': '+0', 'MEN': '+0' },
-    damageThreshold: { magic: 0, other: 0 },
+    umbrales: [],
     immune: [],
     senses: '',
     speed: '',
-    combat: { reacciones: 1 },
+    combat: { acciones: 3, reacciones: 1 },
     traits: [],
     actions: [],
     reactions: [],
@@ -671,9 +658,7 @@ function renderEditor() {
   document.getElementById('f-name').value  = c.name||'';
   document.getElementById('f-id').value    = c.id||'';
   document.getElementById('f-type').value  = c.type||'';
-  document.getElementById('f-tier').value  = c.tier||'';
   document.getElementById('f-level').value = c.level||0;
-  document.getElementById('f-image').value = c.image||'';
   document.getElementById('f-desc').value  = c.description||'';
 
   const sz = document.getElementById('f-size');
@@ -681,6 +666,7 @@ function renderEditor() {
 
   // stats
   document.getElementById('f-hits').value  = c.hits||0;
+  document.getElementById('f-acc').value   = c.combat?.acciones||0;
   document.getElementById('f-reac').value  = c.combat?.reacciones||0;
   document.getElementById('f-speed').value = c.speed||'';
   document.getElementById('f-senses').value= c.senses||'';
@@ -698,10 +684,7 @@ function renderEditor() {
      <input class="inp" placeholder="Nuevo..." onkeydown="addSaveKey(event,this)"></div>`;
 
   // damage thresholds
-  const dt = c.damageThreshold||{};
-  document.getElementById('f-ud-magic').value = dt.magic||0;
-  document.getElementById('f-ud-other').value = dt.other||0;
-  document.getElementById('f-ud-note').value  = dt.note||'';
+  renderUmbrales();
 
   // immune
   renderImmune();
@@ -811,13 +794,13 @@ function renderActionCard(type, ac, i) {
       <div class="field"><div class="lbl">Salvación</div>
         <input class="inp" value="${esc(ac.save||'')}" placeholder="FÍS CD 14"
           oninput="setEntry('${type}',${i},'save',this.value)"></div>
-      <div class="field"><div class="lbl">Movimiento</div>
-        <input class="inp" value="${esc(ac.move||'')}" placeholder="Mueve 4 pasos"
-          oninput="setEntry('${type}',${i},'move',this.value)"></div>
     </div>
     <div class="field"><div class="lbl">Descripción</div>
       <textarea class="inp" rows="2"
         oninput="setEntry('${type}',${i},'desc',this.value)">${esc(ac.desc||'')}</textarea></div>
+    <div class="field"><div class="lbl">Movimiento</div>
+      <input class="inp" value="${esc(ac.move||'')}" placeholder="Mueve 4 pasos"
+        oninput="setEntry('${type}',${i},'move',this.value)"></div>
   </div>`;
 }
 
@@ -835,13 +818,13 @@ function renderReactionCard(type, rx, i) {
       <div class="field"><div class="lbl">Bonus</div>
         <input class="inp" value="${esc(rx.bonus||'')}" placeholder="+7+2d6"
           oninput="setEntry('${type}',${i},'bonus',this.value)"></div>
-      <div class="field"><div class="lbl">Movimiento</div>
-        <input class="inp" value="${esc(rx.move||'')}" placeholder="Mueve 4 pasos"
-          oninput="setEntry('${type}',${i},'move',this.value)"></div>
     </div>
     <div class="field"><div class="lbl">Descripción</div>
       <textarea class="inp" rows="2"
         oninput="setEntry('${type}',${i},'desc',this.value)">${esc(rx.desc||'')}</textarea></div>
+    <div class="field"><div class="lbl">Movimiento</div>
+      <input class="inp" value="${esc(rx.move||'')}" placeholder="Mueve 4 pasos"
+        oninput="setEntry('${type}',${i},'move',this.value)"></div>
   </div>`;
 }
 
@@ -874,7 +857,38 @@ function setEntryNum(type, i, k, v) {
 function setF(k,v)        { if(S.creature){ S.creature[k]=v; renderToolbar(); } }
 function setHits(v)       { if(S.creature){ S.creature.hits=v; renderToolbar(); } }
 function setCombat(k,v)   { if(S.creature){ (S.creature.combat??={})[k]=v; renderToolbar(); } }
-function setDT(k,v)       { if(S.creature){ (S.creature.damageThreshold??={})[k]=v||undefined; if(!v)delete S.creature.damageThreshold[k]; renderToolbar(); } }
+function renderUmbrales() {
+  const tbody = document.getElementById('umbral-body'); if (!tbody) return;
+  const list = S.creature.umbrales || [];
+  tbody.innerHTML = list.map((u, i) => `
+    <tr>
+      <td style="padding:3px 8px 3px 0">
+        <input class="inp" type="number" value="${esc(String(u.value||''))}" placeholder="0"
+          style="width:70px" oninput="setUmbral(${i},'value',this.value)">
+      </td>
+      <td style="padding:3px 0">
+        <input class="inp" value="${esc(u.categories||'')}" placeholder="General"
+          oninput="setUmbral(${i},'categories',this.value)">
+      </td>
+      <td><button class="btn sm danger" onclick="delUmbral(${i})">×</button></td>
+    </tr>`).join('');
+}
+function addUmbral() {
+  if (!S.creature) return;
+  if (!S.creature.umbrales) S.creature.umbrales = [];
+  S.creature.umbrales.push({ value: 0, categories: '' });
+  renderToolbar(); renderUmbrales();
+}
+function delUmbral(i) {
+  S.creature.umbrales.splice(i, 1);
+  if (!S.creature.umbrales.length) delete S.creature.umbrales;
+  renderToolbar(); renderUmbrales();
+}
+function setUmbral(i, k, v) {
+  if (!S.creature.umbrales) return;
+  S.creature.umbrales[i][k] = k === 'value' ? (parseInt(v,10)||0) : v;
+  renderToolbar();
+}
 function setSave(k,v)     { if(S.creature){ (S.creature.saves??={})[k]=v; renderToolbar(); } }
 function addSaveKey(e,el) {
   if (e.key!=='Enter') return;
@@ -917,19 +931,16 @@ async function renderCmpCol(side) {
 
 function cmpHtml(c) {
   const saves = c.saves||{};
-  const dt    = c.damageThreshold||{};
   let h = `<h2 style="font-size:16px;font-weight:700;color:var(--goldf);margin-bottom:4px">${esc(c.name)}</h2>
-  <div style="font-size:11px;color:var(--text3);margin-bottom:10px">${esc(c.type||'')} ${esc(c.size||'')} · ${esc(c.tier||'Nv '+(c.level||'?'))}</div>`;
+  <div style="font-size:11px;color:var(--text3);margin-bottom:10px">${esc(c.type||'')} ${esc(c.size||'')} · Nv ${esc(String(c.level||'?'))}</div>`;
 
   // core stats
   h += `<div class="cmp-sec"><div class="cmp-sec-title">Estadísticas</div><div class="stat-row">`;
   h += `<div class="stat-box"><div class="stat-label">Impactos</div><div class="stat-val">${c.hits??'—'}</div></div>`;
   for (const [k,v] of Object.entries(saves))
     h += `<div class="stat-box"><div class="stat-label">${esc(k)}</div><div class="stat-val">${esc(v)}</div></div>`;
-  if (dt.magic!=null)
-    h += `<div class="stat-box"><div class="stat-label">UD Mágico</div><div class="stat-val">${dt.magic}</div></div>`;
-  if (dt.other!=null)
-    h += `<div class="stat-box"><div class="stat-label">UD Otros</div><div class="stat-val">${dt.other}</div></div>`;
+  for (const u of (c.umbrales||[]))
+    h += `<div class="stat-box"><div class="stat-label">UD ${esc(u.categories)}</div><div class="stat-val">${u.value}</div></div>`;
   h += `</div>`;
   if (c.speed)  h += `<div style="font-size:11px;color:var(--text2);margin-top:3px"><b>Velocidad:</b> ${esc(c.speed)}</div>`;
   if (c.senses) h += `<div style="font-size:11px;color:var(--text2);margin-top:2px"><b>Sentidos:</b> ${esc(c.senses)}</div>`;

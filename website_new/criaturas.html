@@ -146,10 +146,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Raldamain Studios</p>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         // Store all data globally for filtering
@@ -264,7 +260,7 @@
                 const levelColor = getLevelColor(creature.level);
                 const cardHTML = `
                     <article class="card creature-card">
-                        <div class="card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('/assets/images/${creature.image}'); background-size: cover; background-position: center;">
+                        <div class="card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('/assets/images/creatures/${creature.id}.jpg'); background-size: cover; background-position: center;">
                             <span class="creature-level-badge" style="background-color: ${levelColor};">Nvl ${creature.level}</span>
                         </div>
                         <div class="card-content">

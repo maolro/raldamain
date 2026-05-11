@@ -28,6 +28,8 @@
             "Innata",
             "Pasiva"
           ],
+          "def": "RANGO+1",
+          "hp": "RANGO+1",
           "desc": "Tus PV máximos y tu DEF aumentan por un valor igual a tu Rango + 1. Este bonificador se acumula con armaduras."
         },
         {

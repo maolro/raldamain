@@ -701,6 +701,21 @@ function cardHtml(li, ab, ai) {
       <div class="field"><div class="lbl">Descripción</div>
         <textarea class="inp" rows="3"
           oninput="setAb(${li},${ai},'desc',this.value)">${esc(ab.desc||'')}</textarea></div>
+      ${tags.includes('Pasiva') || ab.def!==undefined || ab.hp!==undefined || ab.vt!==undefined || ab.chi!==undefined ? `
+      <div class="opt-row" style="margin-top:4px">
+        <div class="field"><div class="lbl">+DEF</div>
+          <input class="inp" value="${esc(ab.def||'')}" placeholder="—"
+            oninput="setAb(${li},${ai},'def',this.value)"></div>
+        <div class="field"><div class="lbl">+PV</div>
+          <input class="inp" value="${esc(ab.hp||'')}" placeholder="—"
+            oninput="setAb(${li},${ai},'hp',this.value)"></div>
+        <div class="field"><div class="lbl">+VT</div>
+          <input class="inp" value="${esc(ab.vt||'')}" placeholder="—"
+            oninput="setAb(${li},${ai},'vt',this.value)"></div>
+        <div class="field"><div class="lbl">+Chi</div>
+          <input class="inp" value="${esc(ab.chi||'')}" placeholder="—"
+            oninput="setAb(${li},${ai},'chi',this.value)"></div>
+      </div>` : ''}
       ${empHtml}
     </div>`;
 }

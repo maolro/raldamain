@@ -6,7 +6,9 @@ Vue.component('v-minusplusfield', {
     </div>
     
     <div id="field_container">
-        <input type="number" v-model="newValue" disabled />
+        <input type="number" v-model.number="newValue"
+            @change="onManualInput"
+            @keydown.enter="onManualInput" />
     </div>
     
     <div class="mpbtn plus" v-on:click="mpplus()" :class="{ disabled: enableval <= 0 }">
@@ -50,6 +52,14 @@ Vue.component('v-minusplusfield', {
                 this.newValue = this.newValue - 1;
                 this.$emit('input', this.newValue);
             }
+        },
+        onManualInput: function() {
+            let v = parseInt(this.newValue, 10);
+            if (isNaN(v)) v = this.min;
+            if (v < this.min) v = this.min;
+            if (this.max !== undefined && v > this.max) v = this.max;
+            this.newValue = v;
+            this.$emit('input', v);
         }
     },
     watch: {

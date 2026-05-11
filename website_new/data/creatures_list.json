@@ -160,5 +160,14 @@
     "size": "Enorme",
     "image": "creatures/dragon_rojo_joven.jpg",
     "description": "Un temible depredador capaz de arrasar ciudades enteras con su aliento de fuego. Arrogante y codicioso."
+  },
+  {
+    "id": "usiu",
+    "name": "Usiu, Sabueso Celestial",
+    "type": "Celestial",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": "Espíritus celestiales que poseen el cuerpo de perros. Son extremadamente leales a sus amos y su manada, luchando a su lado hasta el final y protegiéndolos del mal."
   }
 ]

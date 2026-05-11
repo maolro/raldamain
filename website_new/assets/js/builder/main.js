@@ -131,7 +131,11 @@ new Vue({
                                                 range: ability.range || '',
                                                 area: ability.area || '',
                                                 duration: ability.duration || '',
-                                                crit: ability.crit || ''
+                                                crit: ability.crit || '',
+                                                ...(ability.def  !== undefined ? { def:  ability.def  } : {}),
+                                                ...(ability.hp   !== undefined ? { hp:   ability.hp   } : {}),
+                                                ...(ability.vt   !== undefined ? { vt:   ability.vt   } : {}),
+                                                ...(ability.chi  !== undefined ? { chi:  ability.chi  } : {}),
                                             });
                                         }
                                     }
@@ -459,6 +463,26 @@ ${toMd(this.atbCatString("reactions"))}
                 reader.readAsText(file);
             };
             input.click();
+        },
+        weaponMod(weapon) {
+            if (!weapon || !weapon.name || !weapon.style || weapon.style === 'shield') return null;
+            const str = this.finalStats.str.value;
+            const dex = this.finalStats.dex.value;
+            const strV = str === '-' ? -99 : str;
+            const dexV = dex === '-' ? -99 : dex;
+            const colosoRk   = this.getRank('estilo_coloso');
+            const duelistaRk = this.getRank('estilo_duelista');
+            const asesinоRk  = this.getRank('estilo_asesino');
+            let mod;
+            switch (weapon.style) {
+                case 'heavy':   mod = strV + colosoRk; break;
+                case 'duelist': mod = Math.max(strV, dexV) + duelistaRk; break;
+                case 'light':
+                case 'ranged':  mod = dexV + asesinоRk; break;
+                case 'flex':    mod = Math.max(strV + colosoRk, Math.max(strV, dexV) + duelistaRk, dexV + asesinоRk); break;
+                default:        mod = Math.max(strV, dexV); break;
+            }
+            return mod >= 0 ? `+${mod}` : `${mod}`;
         },
         loadCharacter(character) {
             this.charactername = character["name"];
@@ -788,6 +812,22 @@ ${toMd(this.atbCatString("reactions"))}
         },
         arclevels: function () {
             return this.sumAllKeys('rank', this.myarch);
+        },
+        weaponString: function () {
+            const slots = [
+                { label: 'MP', weapon: this.equipment.mainHand },
+                { label: 'MS', weapon: this.equipment.secondHand }
+            ];
+            const styleLabel = { heavy: 'Coloso', duelist: 'Duelista', light: 'Asesino', ranged: 'Asesino', flex: 'flex', shield: null };
+            return slots
+                .filter(s => s.weapon && s.weapon.name)
+                .map(s => {
+                    const mod = this.weaponMod(s.weapon);
+                    const style = s.weapon.style ? styleLabel[s.weapon.style] : null;
+                    const suffix = [mod, style ? `(${style})` : null].filter(Boolean).join(' ');
+                    return suffix ? `${s.weapon.name} ${suffix}` : s.weapon.name;
+                })
+                .join(', ');
         }
     },
     created() {

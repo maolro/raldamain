@@ -71,7 +71,7 @@ function renderCreaturePage(data) {
         updateMetaTags({
             title: `${data.name} | Raldamain Bestiario`,
             description: `${data.type} ${data.tier ? '· ' + data.tier : (data.level ? 'de nivel ' + data.level : '')}. ${data.lore ? data.lore.substring(0, 150) + '...' : ''}`,
-            image: data.image ? `${window.location.origin}/assets/images/${data.image}` : `${window.location.origin}/assets/images/raldamain_logo.png`,
+            image: data.id ? `${window.location.origin}/assets/images/creatures/${data.id}.jpg` : `${window.location.origin}/assets/images/raldamain_logo.png`,
             url: window.location.href,
             type: 'article'
         });
@@ -82,7 +82,7 @@ function renderCreaturePage(data) {
     // B. Hero
     document.getElementById("creature-name").innerText = data.name;
     const hero = document.getElementById("hero-section");
-    hero.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/images/${data.image}') center/cover`;
+    hero.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/images/creatures/${data.id}.jpg') center/cover`;
 
     // C. Meta badges
     const metaContainer = document.getElementById("creature-meta");
@@ -210,10 +210,8 @@ function renderNewFormat(data) {
 
     // Build UD string
     let udText = '';
-    if (data.damageThreshold) {
-        const dt = data.damageThreshold;
-        udText = `${dt.magic} (mágico) · ${dt.other} (otros)`;
-        if (dt.note) udText += ` — ${dt.note}`;
+    if (data.umbrales && data.umbrales.length) {
+        udText = data.umbrales.map(u => `${u.value} (${u.categories})`).join(' · ');
     }
 
     // Build saves pills
@@ -375,14 +373,14 @@ function renderAction(action, isNewFormat) {
         html += `<span class="damage">${action.damage}</span>. `;
     }
 
-    // Movement note (new format)
-    if (action.move) {
-        html += `<span class="action-move">${action.move}</span> `;
-    }
-
     // Description
     if (action.desc) {
         html += `<span class="action-desc">${linkStatusEffects(parseInlineMarkdown(action.desc))}</span>`;
+    }
+
+    // Movement note (new format)
+    if (action.move) {
+        html += `<span class="action-move">${action.move}</span> `;
     }
 
     html += '</div>';
@@ -406,13 +404,13 @@ function renderReaction(reaction, isNewFormat) {
     }
 
     if (reaction.bonus) {
-        html += `<span class="attack-bonus">${reaction.bonus}</span> para defenderse. `;
-    }
-    if (reaction.move) {
-        html += `<span class="action-move">${reaction.move}</span> `;
+        html += `<span class="attack-bonus"> ${reaction.bonus}</span> para defenderse. `;
     }
     if (reaction.desc) {
-        html += `<span class="action-desc">${linkStatusEffects(parseInlineMarkdown(reaction.desc))}</span>`;
+        html += `<span class="action-desc"> ${linkStatusEffects(parseInlineMarkdown(reaction.desc))}</span>`;
+    }
+    if (reaction.move) {
+        html += `<span class="action-move"> ${reaction.move}</span> `;
     }
 
     html += '</div>';

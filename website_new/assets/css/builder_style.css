@@ -214,13 +214,21 @@
 }
 
 .minusplusnumber #field_container input {
-    width: 50px;
+    width: 52px;
+    min-width: 40px;
     text-align: center;
     font-size: 15px;
     padding: 1px;
     border: none;
     background-color: transparent;
     color: var(--text-main);
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.minusplusnumber #field_container input::-webkit-outer-spin-button,
+.minusplusnumber #field_container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .minusplusnumber .mpbtn {
