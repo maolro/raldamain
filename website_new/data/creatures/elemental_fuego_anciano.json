@@ -1,11 +1,10 @@
 {
   "id": "elemental_fuego_anciano",
-  "name": "Elemental de Fuego Anciano",
+  "name": "Elemental de Fuego Primigenio",
   "tier": "Esbirro Élite V",
   "type": "Elemental",
   "size": "Gigante",
   "image": "creatures/elemental_fuego.jpg",
-
   "hits": 2,
   "saves": {
     "FÍS": "+13+3d6",
@@ -16,14 +15,20 @@
     "magic": 28,
     "other": 24
   },
-  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Fuego", "Terreno difícil"],
+  "immune": [
+    "Efectos físicos no mágicos",
+    "Veneno",
+    "Necrótico",
+    "Efectos mentales",
+    "Miedo",
+    "Fuego",
+    "Terreno difícil"
+  ],
   "senses": "Percepción vital a distancia media",
   "speed": "Paso 16, Vuelo 16",
-
   "combat": {
     "reacciones": 1
   },
-
   "traits": [
     {
       "name": "Cuerpo de Fuego",
@@ -34,7 +39,6 @@
       "desc": "Vuela con total libertad y gana inmunidad a todos los efectos que actúen desde el suelo."
     }
   ],
-
   "actions": [
     {
       "name": "Fuego Puro",
@@ -54,7 +58,6 @@
       "desc": "Hace secuencia de dos ataques contra la misma zona. Al impactar, todos los afectados sufren una *quemadura* y los objetos inflamables del área se incendian. Convierte todo el terreno en fuego."
     }
   ],
-
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -72,8 +75,13 @@
       "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo reciben 4d10 de daño de Fuego."
     }
   ],
-
   "lore": "Los elementales de fuego son espíritus convocados al mundo material mediante rituales de invocación de gran potencia. Su forma fluctúa sin cesar, adoptando vagamente la silueta de un humanoide envuelto en llamas vivas. Son criaturas de instinto puro con tendencias a destruir todo cuanto alcanzan y resultan extraordinariamente peligrosas para los invocadores sin experiencia.",
-
-  "tags": ["Elemental", "Fuego", "Invocación", "Vuelo", "Élite"]
+  "tags": [
+    "Elemental",
+    "Fuego",
+    "Invocación",
+    "Vuelo",
+    "Élite"
+  ],
+  "level": 11
 }

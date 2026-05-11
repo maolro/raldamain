@@ -5,23 +5,36 @@
   "type": "Elemental",
   "size": "Grande",
   "image": "creatures/elemental_agua.jpg",
-
   "hits": 2,
-  "saves": { "FÍS": "+7+1d6", "VOL": "+7", "MEN": "+4" },
-  "damageThreshold": { "magic": 8, "other": 4 },
-  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Fuego"],
+  "saves": {
+    "FÍS": "+7+1d6",
+    "VOL": "+7",
+    "MEN": "+4"
+  },
+  "damageThreshold": {
+    "magic": 8,
+    "other": 4
+  },
+  "immune": [
+    "Efectos físicos no mágicos",
+    "Veneno",
+    "Necrótico",
+    "Efectos mentales",
+    "Miedo",
+    "Fuego"
+  ],
   "senses": "Percepción de corrientes a distancia media",
   "speed": "Paso 14, Nado 20",
-
-  "combat": { "acciones": 2, "reacciones": 1 },
-
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
   "traits": [
     {
       "name": "Cuerpo Líquido",
       "desc": "Puede fluir a través de cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Si queda completamente sumergido en agua natural al inicio de su turno, recupera 1 Impacto."
     }
   ],
-
   "actions": [
     {
       "name": "Torrente",
@@ -42,7 +55,6 @@
       "desc": "Al impactar, cada objetivo es empujado 4 pasos y es *derribado*."
     }
   ],
-
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -60,8 +72,12 @@
       "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo son empujados 4 pasos tras el impacto."
     }
   ],
-
   "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento. Pacientes y deliberados, fluyen alrededor de los obstáculos antes de golpear con la fuerza de las mareas. Absorben el calor del entorno, sofocan el fuego y asfixian a sus enemigos con una eficiencia silenciosa y letal.",
-
-  "tags": ["Elemental", "Agua", "Invocación", "Élite"]
+  "tags": [
+    "Elemental",
+    "Agua",
+    "Invocación",
+    "Élite"
+  ],
+  "level": 5
 }

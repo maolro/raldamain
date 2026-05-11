@@ -5,16 +5,32 @@
   "type": "Elemental",
   "size": "Grande",
   "image": "creatures/elemental_tierra.jpg",
-
   "hits": 2,
-  "saves": { "FÍS": "+7+2d6", "VOL": "+5", "MEN": "+4" },
-  "damageThreshold": { "magic": 8, "other": 16, "note": "en contacto con tierra aumenta a 20" },
-  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Terreno difícil", "Eléctrico"],
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+5",
+    "MEN": "+4"
+  },
+  "damageThreshold": {
+    "magic": 8,
+    "other": 16,
+    "note": "en contacto con tierra aumenta a 20"
+  },
+  "immune": [
+    "Efectos físicos no mágicos",
+    "Veneno",
+    "Necrótico",
+    "Efectos mentales",
+    "Miedo",
+    "Terreno difícil",
+    "Eléctrico"
+  ],
   "senses": "Visión en la tierra a distancia media",
   "speed": "Paso 10, Excavar 10",
-
-  "combat": { "acciones": 2, "reacciones": 1 },
-
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
   "traits": [
     {
       "name": "Cuerpo de Tierra",
@@ -25,7 +41,6 @@
       "desc": "Mientras esté en contacto con tierra, roca o piedra, aumenta todos sus umbrales de daño en 4. Este bono ya está incluido en la entrada de Umbrales de Daño."
     }
   ],
-
   "actions": [
     {
       "name": "Golpe de Piedra",
@@ -45,7 +60,6 @@
       "desc": "Al impactar, cada objetivo es empujado 4 pasos y sufre *tropiezo*. El terreno en la línea recorrida pasa a ser difícil."
     }
   ],
-
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -58,8 +72,12 @@
       "desc": "Aumenta todos sus umbrales de daño en 6 (o en 10 si está en contacto con tierra). Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 2d6 de daño Contundente de rebote y pueden ver sus armas dañadas."
     }
   ],
-
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. Lentos pero absolutamente implacables, absorben castigos que destrozarían a cualquier otra criatura y devuelven cada golpe con fuerza aplastante. Su conexión con el suelo les otorga una resistencia casi indestructible mientras permanecen en contacto con la tierra firme.",
-
-  "tags": ["Elemental", "Tierra", "Invocación", "Élite"]
+  "tags": [
+    "Elemental",
+    "Tierra",
+    "Invocación",
+    "Élite"
+  ],
+  "level": 5
 }

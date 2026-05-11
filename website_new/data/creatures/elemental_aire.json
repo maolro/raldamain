@@ -5,16 +5,30 @@
   "type": "Elemental",
   "size": "Grande",
   "image": "creatures/elemental_aire.jpg",
-
   "hits": 2,
-  "saves": { "FÍS": "+5+1d6", "VOL": "+7+1d6", "MEN": "+7" },
-  "damageThreshold": { "magic": 8, "other": 4 },
-  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Terreno difícil"],
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+7+1d6",
+    "MEN": "+7"
+  },
+  "damageThreshold": {
+    "magic": 8,
+    "other": 4
+  },
+  "immune": [
+    "Efectos físicos no mágicos",
+    "Veneno",
+    "Necrótico",
+    "Efectos mentales",
+    "Miedo",
+    "Terreno difícil"
+  ],
   "senses": "Percepción de vibraciones a distancia media",
   "speed": "Vuelo 20",
-
-  "combat": { "acciones": 2, "reacciones": 1 },
-
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
   "traits": [
     {
       "name": "Cuerpo de Aire",
@@ -25,7 +39,6 @@
       "desc": "Vuela con total libertad y gana inmunidad a todos los efectos que actúen desde el suelo."
     }
   ],
-
   "actions": [
     {
       "name": "Vendaval",
@@ -45,7 +58,6 @@
       "desc": "Al impactar, cada objetivo es empujado 6 pasos y sufre *tropiezo*. Las criaturas voladoras reciben un dado de daño adicional y son derribadas al suelo si fallan."
     }
   ],
-
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -63,8 +75,13 @@
       "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo son empujados 6 pasos tras el impacto."
     }
   ],
-
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta convocados desde el Plano Elemental del Aire. Se mueven a velocidades difíciles de seguir y atacan donde menos se espera. Su cuerpo es prácticamente invisible, delatado tan solo por una tenue distorsión del ambiente y el rugido del viento que los rodea.",
-
-  "tags": ["Elemental", "Aire", "Invocación", "Vuelo", "Élite"]
+  "tags": [
+    "Elemental",
+    "Aire",
+    "Invocación",
+    "Vuelo",
+    "Élite"
+  ],
+  "level": 5
 }

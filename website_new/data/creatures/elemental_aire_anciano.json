@@ -5,16 +5,31 @@
   "type": "Elemental",
   "size": "Gigante",
   "image": "creatures/elemental_aire.jpg",
-
   "hits": 2,
-  "saves": { "FÍS": "+11+3d6", "VOL": "+13+3d6", "MEN": "+13" },
-  "damageThreshold": { "magic": 28, "other": 20 },
-  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Terreno difícil", "Eléctrico"],
+  "saves": {
+    "FÍS": "+11+3d6",
+    "VOL": "+13+3d6",
+    "MEN": "+13"
+  },
+  "damageThreshold": {
+    "magic": 28,
+    "other": 20
+  },
+  "immune": [
+    "Efectos físicos no mágicos",
+    "Veneno",
+    "Necrótico",
+    "Efectos mentales",
+    "Miedo",
+    "Terreno difícil",
+    "Eléctrico"
+  ],
   "senses": "Percepción de vibraciones a distancia larga",
   "speed": "Vuelo 28",
-
-  "combat": { "acciones": 3, "reacciones": 2 },
-
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
   "traits": [
     {
       "name": "Cuerpo de Aire",
@@ -29,7 +44,6 @@
       "desc": "El elemental genera una zona de tormenta a su alrededor. Las criaturas sin vuelo en un radio de 4 pasos deben superar FÍS UD 28 al inicio de su turno o ser empujadas 4 pasos y sufrir *tropiezo*."
     }
   ],
-
   "actions": [
     {
       "name": "Vendaval Primigenio",
@@ -57,7 +71,6 @@
       "desc": "Al impactar, el objetivo queda atrapado en el torbellino (FÍS UD 28 para escapar). Sufre 4d10 Eléctrico/Contundente al inicio de cada uno de sus turnos. El elemental puede moverse libremente arrastrando al objetivo. Si el objetivo muere, el elemental recupera 1 Impacto."
     }
   ],
-
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -75,8 +88,14 @@
       "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo son empujados 12 pasos y sufren 4d10 Eléctrico de rebote."
     }
   ],
-
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta convocados desde el Plano Elemental del Aire. En su forma más antigua, son tempestades vivientes capaces de arrasar ciudades. Su mera presencia desata tormentas a su alrededor y su cuerpo es completamente imperceptible, delatado tan solo por el estruendo de los truenos y el olor a ozono.",
-
-  "tags": ["Elemental", "Aire", "Invocación", "Vuelo", "Élite", "Primigenio"]
+  "tags": [
+    "Elemental",
+    "Aire",
+    "Invocación",
+    "Vuelo",
+    "Élite",
+    "Primigenio"
+  ],
+  "level": 11
 }

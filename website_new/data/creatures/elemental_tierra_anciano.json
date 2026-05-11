@@ -5,16 +5,33 @@
   "type": "Elemental",
   "size": "Colosal",
   "image": "creatures/elemental_tierra.jpg",
-
   "hits": 2,
-  "saves": { "FÍS": "+13+4d6", "VOL": "+11", "MEN": "+13" },
-  "damageThreshold": { "magic": 28, "other": 30, "note": "en contacto con tierra aumenta a 35" },
-  "immune": ["Efectos físicos no mágicos", "Veneno", "Necrótico", "Efectos mentales", "Miedo", "Terreno difícil", "Eléctrico", "Ácido"],
+  "saves": {
+    "FÍS": "+13+4d6",
+    "VOL": "+11",
+    "MEN": "+13"
+  },
+  "damageThreshold": {
+    "magic": 28,
+    "other": 30,
+    "note": "en contacto con tierra aumenta a 35"
+  },
+  "immune": [
+    "Efectos físicos no mágicos",
+    "Veneno",
+    "Necrótico",
+    "Efectos mentales",
+    "Miedo",
+    "Terreno difícil",
+    "Eléctrico",
+    "Ácido"
+  ],
   "senses": "Visión en la tierra a distancia larga",
   "speed": "Paso 12, Excavar 16",
-
-  "combat": { "acciones": 3, "reacciones": 2 },
-
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
   "traits": [
     {
       "name": "Cuerpo de Tierra",
@@ -25,7 +42,6 @@
       "desc": "Mientras esté en contacto con tierra, roca o piedra, aumenta todos sus umbrales de daño en 5 y regenera 1 Impacto al inicio de su turno si tenía 1. Este bono ya está incluido en la entrada de Umbrales de Daño."
     }
   ],
-
   "actions": [
     {
       "name": "Golpe Sísmico",
@@ -53,7 +69,6 @@
       "desc": "Hace temblar la tierra con una sacudida devastadora. Al impactar, cada objetivo es *derribado*. El área entera colapsa en terreno difícil. Las estructuras y muros en el radio pueden derrumbarse (a criterio del DJ). No tiene efecto sobre criaturas que vuelen."
     }
   ],
-
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -66,8 +81,13 @@
       "desc": "Aumenta todos sus umbrales de daño en 12 (o en 18 si está en contacto con tierra). Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 5d10 Contundente de rebote y sus armas son destruidas."
     }
   ],
-
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. En su forma más antigua, son montañas vivas que reconfiguran el paisaje a cada paso. Inmunes a casi todo daño físico, cada golpe que reciben es devuelto multiplicado. Su simple presencia hace temblar el suelo y su paso deja un reguero de escombros y cráteres.",
-
-  "tags": ["Elemental", "Tierra", "Invocación", "Élite", "Primigenio"]
+  "tags": [
+    "Elemental",
+    "Tierra",
+    "Invocación",
+    "Élite",
+    "Primigenio"
+  ],
+  "level": 11
 }
