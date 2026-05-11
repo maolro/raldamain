@@ -6,7 +6,7 @@ Needs:  pip install flask
 Saves to both data/creatures/<id>.json AND data/creatures_list.json index.
 """
 
-import json, sys, threading, webbrowser
+import json, sys, threading, webbrowser, subprocess
 from pathlib import Path
 
 try:
@@ -29,6 +29,28 @@ def load_index():
 
 def save_index(lst):
     CIDX.write_text(json.dumps(lst, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def _git_push(files, message):
+    """Stage files, commit, push. Returns 'ok', 'nothing', or an error string."""
+    try:
+        subprocess.run(["git", "add", "--"] + files, cwd=BASE, check=True,
+                       capture_output=True, timeout=10)
+        r = subprocess.run(["git", "commit", "-m", message], cwd=BASE,
+                           capture_output=True, text=True, timeout=10)
+        if r.returncode != 0:
+            if "nothing to commit" in (r.stdout + r.stderr):
+                return "nothing"
+            return r.stderr.strip() or "commit error"
+        subprocess.run(["git", "push"], cwd=BASE, check=True,
+                       capture_output=True, timeout=30)
+        return "ok"
+    except subprocess.TimeoutExpired:
+        return "timeout"
+    except subprocess.CalledProcessError as e:
+        out = e.stderr
+        return (out.decode() if isinstance(out, bytes) else out or str(e)).strip()
+    except Exception as e:
+        return str(e)
 
 # ── API ───────────────────────────────────────────────────────────────────────
 
@@ -68,7 +90,11 @@ def api_save(cid):
     if not found:
         idx.append(entry)
     save_index(idx)
-    return jsonify({"ok": True})
+    git = _git_push(
+        [str(CDIR / f"{cid}.json"), str(CIDX)],
+        f"Update creature: {data.get('name', cid)}"
+    )
+    return jsonify({"ok": True, "git": git})
 
 @app.route("/api/creature/<cid>", methods=["DELETE"])
 def api_delete(cid):
@@ -599,15 +625,18 @@ async function deleteCreature() {
 async function saveCreature() {
   if (!S.creature) return;
   try {
-    await api('POST', `/api/creature/${S.creature.id}`, S.creature);
+    const res = await api('POST', `/api/creature/${S.creature.id}`, S.creature);
     S.saved = JSON.stringify(S.creature);
-    // refresh index
     const list = await api('GET', '/api/creatures');
     S.all = list;
     buildTypeFilters();
     renderSidebar();
-    toast('Guardado ✓','ok');
     renderToolbar();
+    const git = res.git||'';
+    if (git === 'ok')      toast('Guardado y publicado ✓', 'ok');
+    else if (git === 'nothing') toast('Guardado ✓ (sin cambios en git)', 'ok');
+    else if (git)          toast('Guardado ✓ — push: ' + git, 'err');
+    else                   toast('Guardado ✓', 'ok');
   } catch(e) { toast('Error: '+e.message,'err'); }
 }
 

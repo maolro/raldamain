@@ -98,8 +98,8 @@ function renderCreaturePage(data) {
     // D. Statblock header
     document.getElementById("statblock-name").innerText = data.name;
     const subtitleEl = document.getElementById("statblock-subtitle");
-    if (data.tier) {
-        subtitleEl.innerText = `${data.type} ${data.size}  · ${data.tier}`;
+    if (data.level) {
+        subtitleEl.innerText = `${data.type} ${data.size}  ·  Nivel ${data.level}`;
         subtitleEl.style.display = '';
     } else {
         subtitleEl.style.display = 'none';
