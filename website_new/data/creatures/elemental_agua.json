@@ -26,7 +26,7 @@
   "senses": "Ecolocación",
   "speed": "Paso 10, Natación 10",
   "combat": {
-    "acciones": 2,
+    "acciones": 1,
     "reacciones": 1
   },
   "traits": [
