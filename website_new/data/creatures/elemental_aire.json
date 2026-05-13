@@ -32,8 +32,12 @@
   "traits": [
     {
       "name": "Cuerpo de Aire",
-      "desc": "Puede colarse por cualquier apertura. Es inmune a todos los efectos físicos (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
-      "ability_id": "cuerpo-de-aire_1778694356948"
+      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos físicos (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "ability_id": "cuerpo-de-aire_1778694356948",
+      "type": "passive",
+      "tags": [
+        "Aire"
+      ]
     }
   ],
   "actions": [
@@ -46,16 +50,28 @@
       "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia.",
       "attacks": 2,
       "ability_id": "viento-cortante_1778706447471",
-      "range": "8"
+      "range": "8",
+      "type": "action",
+      "tags": [
+        "Aire",
+        "Ataque"
+      ]
     },
     {
       "name": "Vendaval",
       "cost": 2,
       "bonus": "+7+2d6",
       "area": "Cono 8",
-      "damage": "4d6 + 5 Contundente",
+      "damage": "HIGH Contundente",
       "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
-      "ability_id": "vendaval_1778706575166"
+      "ability_id": "vendaval_1778706575166",
+      "type": "action",
+      "tags": [
+        "Aire",
+        "Ataque",
+        "Area",
+        "Maniobra"
+      ]
     },
     {
       "name": "Torbellino Viviente",
@@ -69,18 +85,8 @@
   "reactions": [
     {
       "name": "Parada / Esquiva",
-      "bonus": "+5+1d6",
-      "desc": "Puede moverse 6 pasos con éxito o con fallo."
-    },
-    {
-      "name": "Evasión",
-      "cost": 1,
-      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 10 pasos en cualquier dirección, incluso verticalmente."
-    },
-    {
-      "name": "Muro de Aire",
-      "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo son empujados 6 pasos tras el impacto."
+      "bonus": "+7+2d6",
+      "move": 5
     }
   ],
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta convocados desde el Plano Elemental del Aire. Se mueven a velocidades difíciles de seguir y atacan donde menos se espera. Su cuerpo es prácticamente invisible, delatado tan solo por una tenue distorsión del ambiente y el rugido del viento que los rodea.",
