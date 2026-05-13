@@ -32,30 +32,38 @@
   "traits": [
     {
       "name": "Cuerpo de Aire",
-      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Su forma es prácticamente invisible; las criaturas sin sentidos especiales atacan con Desventaja."
-    },
-    {
-      "name": "Vuelo",
-      "desc": "Vuela con total libertad y gana inmunidad a todos los efectos que actúen desde el suelo."
+      "desc": "Puede colarse por cualquier apertura. Es inmune a todos los efectos físicos (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "ability_id": "cuerpo-de-aire_1778694356948"
     }
   ],
   "actions": [
     {
-      "name": "Vendaval",
+      "name": "Viento Cortante",
       "cost": 1,
       "bonus": "+7+2d6",
-      "range": "8 pasos",
-      "damage": "3d6 Contundente",
-      "move": "Puede moverse 4 pasos antes o después del ataque.",
-      "desc": "Al impactar, el objetivo es empujado 4 pasos. Las criaturas voladoras reciben un dado de daño adicional."
+      "damage": "3d6 + 5 Cortante",
+      "move": 5,
+      "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia.",
+      "attacks": 2,
+      "ability_id": "viento-cortante_1778706447471",
+      "range": "8"
     },
     {
-      "name": "Viento Furibundo",
+      "name": "Vendaval",
       "cost": 2,
       "bonus": "+7+2d6",
-      "area": "Cono de 8 pasos",
-      "damage": "3d6 Contundente",
-      "desc": "Al impactar, cada objetivo es empujado 6 pasos y sufre *tropiezo*. Las criaturas voladoras reciben un dado de daño adicional y son derribadas al suelo si fallan."
+      "area": "Cono 8",
+      "damage": "4d6 + 5 Contundente",
+      "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
+      "ability_id": "vendaval_1778706575166"
+    },
+    {
+      "name": "Torbellino Viviente",
+      "desc": "El objetivo queda enredado y debe tener éxito en un tiro de salvación Físico o queda agarrado. Mientras permanezca agarrado, se moverá junto a esta criatura y sufrirá todo el daño que reciba siempre y cuando sea aplicable. ",
+      "range": "2",
+      "damage": "3d6 + 5 Cortante",
+      "move": 5,
+      "cost": 1
     }
   ],
   "reactions": [
