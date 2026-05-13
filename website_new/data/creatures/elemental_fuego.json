@@ -70,7 +70,7 @@
       "damage": "2d6 + 5 Fuego",
       "save": "",
       "attacks": 2,
-      "desc": "Quema objetos inflamables que impacte",
+      "desc": "Quema objetos inflamables que impacte.",
       "move": "4"
     }
   ],
