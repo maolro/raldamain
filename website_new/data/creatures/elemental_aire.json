@@ -49,7 +49,6 @@
       "move": 5,
       "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia.",
       "attacks": 2,
-      "ability_id": "viento-cortante_1778706447471",
       "range": "8",
       "type": "action",
       "tags": [
@@ -62,9 +61,8 @@
       "cost": 2,
       "bonus": "+7+2d6",
       "area": "Cono 8",
-      "damage": "HIGH Contundente",
+      "damage": "4d6 + 5 Contundente",
       "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
-      "ability_id": "vendaval_1778706575166",
       "type": "action",
       "tags": [
         "Aire",
@@ -87,6 +85,27 @@
       "name": "Parada / Esquiva",
       "bonus": "+7+2d6",
       "move": 5
+    },
+    {
+      "name": "Evasión",
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
+      "move": 10,
+      "id": "evasion_1778692238910",
+      "type": "reaction",
+      "tags": [
+        "Reflejos"
+      ]
+    },
+    {
+      "name": "Muro de Aire",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo sufren 2d6 + 5 daño Cortante y serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
+      "id": "muro-de-agua_1778693409061",
+      "type": "reaction",
+      "tags": [
+        "Agua"
+      ]
     }
   ],
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta convocados desde el Plano Elemental del Aire. Se mueven a velocidades difíciles de seguir y atacan donde menos se espera. Su cuerpo es prácticamente invisible, delatado tan solo por una tenue distorsión del ambiente y el rugido del viento que los rodea.",
