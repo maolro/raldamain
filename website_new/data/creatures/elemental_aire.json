@@ -7,9 +7,9 @@
   "image": "creatures/elemental_aire.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+5+1d6",
+    "FÍS": "+7+1d6",
     "VOL": "+7+1d6",
-    "MEN": "+7"
+    "MEN": "+4"
   },
   "damageThreshold": {
     "magic": 8,
@@ -83,5 +83,11 @@
     "Vuelo",
     "Élite"
   ],
-  "level": 5
+  "level": 5,
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General"
+    }
+  ]
 }
