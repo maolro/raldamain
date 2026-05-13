@@ -105,7 +105,8 @@
       "type": "reaction",
       "tags": [
         "Agua"
-      ]
+      ],
+      "ability_id": "muro-de-aire_1778707098298"
     }
   ],
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta. Se mueven a velocidades difíciles de seguir y atacan donde menos se espera. Su cuerpo es prácticamente invisible, delatado tan solo por una tenue distorsión del ambiente y el rugido del viento que los rodea.",
