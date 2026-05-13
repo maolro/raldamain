@@ -64,7 +64,7 @@
       "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). "
     },
     {
-      "name": "Agarre del Agua",
+      "name": "Vórtice Viviente",
       "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
       "cost": 1,
       "bonus": "+7 + 2d6",
@@ -75,7 +75,8 @@
         "Agua",
         "Ataque",
         "Agarre"
-      ]
+      ],
+      "ability_id": "vortice-viviente_1778706814167"
     }
   ],
   "reactions": [
