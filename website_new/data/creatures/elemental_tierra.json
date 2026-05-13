@@ -7,9 +7,9 @@
   "image": "creatures/elemental_tierra.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+7+2d6",
-    "VOL": "+5",
-    "MEN": "+4"
+    "FÍS": "+7+1d6",
+    "VOL": "+7",
+    "MEN": "+7"
   },
   "damageThreshold": {
     "magic": 8,
@@ -17,24 +17,23 @@
     "note": "en contacto con tierra aumenta a 20"
   },
   "immune": [
-    "Efectos físicos no mágicos",
     "Veneno",
     "Necrótico",
     "Efectos mentales",
     "Miedo",
-    "Terreno difícil",
-    "Eléctrico"
+    "Terreno difícil"
   ],
-  "senses": "Visión en la tierra a distancia media",
+  "senses": "Sentir Vibraciones",
   "speed": "Paso 10, Excavar 10",
   "combat": {
-    "acciones": 2,
+    "acciones": 1,
     "reacciones": 1
   },
   "traits": [
     {
       "name": "Cuerpo de Tierra",
-      "desc": "Puede moverse a través de roca y tierra sin dejar rastro ni reducir velocidad. Es inmune a todos los efectos físicos (ya incluido). Las criaturas que lo golpeen con ataques cuerpo a cuerpo que reduzcan el daño a 0 pueden ver sus armas dañadas o rotas (a criterio del DJ)."
+      "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
+      "ability_id": "cuerpo-de-tierra_1778707274474"
     },
     {
       "name": "Arraigo",
@@ -79,5 +78,19 @@
     "Invocación",
     "Élite"
   ],
-  "level": 5
+  "level": 5,
+  "umbrales": [
+    {
+      "value": 16,
+      "categories": "Físico"
+    },
+    {
+      "value": 12,
+      "categories": "Magia"
+    },
+    {
+      "value": 8,
+      "categories": "General"
+    }
+  ]
 }
