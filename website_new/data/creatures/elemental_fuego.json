@@ -38,24 +38,6 @@
   ],
   "actions": [
     {
-      "name": "Erupción Abrasadora",
-      "bonus": "+7 + 2d6",
-      "area": "Cono 8/Radio 4",
-      "damage": "3d6 + 5 Fuego",
-      "move": "5",
-      "cost": 1,
-      "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los afectados si llevan objetos metálicos o inflamables.",
-      "range": "1"
-    },
-    {
-      "name": "Combustión Espontánea",
-      "desc": "Solo puede afectar a objetivos que tengan una quemadura.",
-      "cost": 1,
-      "save": "VOL +7+1d6",
-      "range": "8 (hasta 3 objetivos)",
-      "damage": "2d6 + 5 Fuego"
-    },
-    {
       "id": "ab_1778690641452",
       "name": "Asalto Abrasador",
       "type": "action",
@@ -71,7 +53,25 @@
       "save": "",
       "attacks": 2,
       "desc": "Quema objetos inflamables que impacte.",
-      "move": "4"
+      "move": 5
+    },
+    {
+      "name": "Aliento de Fuego",
+      "bonus": "+7 + 2d6",
+      "area": "Cono 8",
+      "damage": "3d6 + 5 Fuego",
+      "move": "5",
+      "cost": 1,
+      "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
+      "range": "1"
+    },
+    {
+      "name": "Combustión Espontánea",
+      "desc": "Solo puede afectar a objetivos que tengan una quemadura.",
+      "cost": 1,
+      "save": "VOL +7+1d6",
+      "damage": "2d6 + 5 Fuego",
+      "move": 5
     }
   ],
   "reactions": [
@@ -83,7 +83,8 @@
     {
       "name": "Evasión",
       "cost": 1,
-      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 10 casillas. No puede moverse a zonas de agua."
+      "desc": "Obtiene +10 a su tirada de Esquiva.",
+      "move": 10
     },
     {
       "name": "Muro de Fuego",
