@@ -78,7 +78,7 @@
     {
       "name": "Parada / Esquiva",
       "bonus": "+7 + 2d6",
-      "move": "Se mueve hasta 5 casillas."
+      "move": "5"
     },
     {
       "name": "Evasión",
