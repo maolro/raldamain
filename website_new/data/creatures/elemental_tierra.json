@@ -31,13 +31,9 @@
   },
   "traits": [
     {
-      "name": "Cuerpo de Tierra",
+      "name": "Paso Terrestre",
       "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
       "ability_id": "cuerpo-de-tierra_1778707274474"
-    },
-    {
-      "name": "Arraigo",
-      "desc": "Mientras esté en contacto con tierra, roca o piedra, aumenta todos sus umbrales de daño en 4. Este bono ya está incluido en la entrada de Umbrales de Daño."
     }
   ],
   "actions": [
@@ -45,7 +41,7 @@
       "name": "Golpe de Piedra",
       "cost": 1,
       "bonus": "+7+2d6",
-      "range": "Adyacente",
+      "range": "1",
       "damage": "3d6 Contundente",
       "desc": "Al impactar, el objetivo es empujado 4 pasos. Si el objetivo porta armadura o escudo, puede reducir su DEF en 1 hasta que repare el equipo (a criterio del DJ)."
     },
