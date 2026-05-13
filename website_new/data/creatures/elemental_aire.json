@@ -23,10 +23,10 @@
     "Miedo",
     "Terreno difícil"
   ],
-  "senses": "Percepción de vibraciones a distancia media",
-  "speed": "Vuelo 20",
+  "senses": "Vista a ciegas",
+  "speed": "Vuelo 10",
   "combat": {
-    "acciones": 2,
+    "acciones": 1,
     "reacciones": 1
   },
   "traits": [
