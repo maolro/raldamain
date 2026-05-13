@@ -92,8 +92,8 @@
       "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 1d6 + 5 de daño de Fuego."
     },
     {
-      "name": "Absorber Elemento",
-      "desc": "Recupera 1 Impacto si se encuentra en un lugar en llamas o es impactado por un efecto de Fuego que provoque 8 o más daño.",
+      "name": "Absorber Fuego",
+      "desc": "Recupera 1 Impacto si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
       "cost": 1
     }
   ],
