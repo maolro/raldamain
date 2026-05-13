@@ -20,8 +20,7 @@
     "Veneno",
     "Necrótico",
     "Efectos mentales",
-    "Miedo",
-    "Fuego"
+    "Miedo"
   ],
   "senses": "Ecolocación",
   "speed": "Paso 10, Natación 10",
@@ -79,5 +78,15 @@
     "Invocación",
     "Élite"
   ],
-  "level": 5
+  "level": 5,
+  "umbrales": [
+    {
+      "value": 16,
+      "categories": "Agua"
+    },
+    {
+      "value": 8,
+      "categories": "Hielo"
+    }
+  ]
 }
