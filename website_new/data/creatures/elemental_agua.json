@@ -31,44 +31,68 @@
   "traits": [
     {
       "name": "Cuerpo Líquido",
-      "desc": "Puede fluir a través de cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Si queda completamente sumergido en agua natural al inicio de su turno, recupera 1 Impacto."
+      "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "id": "cuerpo-de-fuego_1778692691656",
+      "type": "passive",
+      "tags": [
+        "Fuego"
+      ],
+      "ability_id": "cuerpo-liquido_1778692889955"
     }
   ],
   "actions": [
     {
-      "name": "Torrente",
       "cost": 1,
       "bonus": "+7+2d6",
-      "range": "8 pasos",
-      "damage": "3d6 Contundente",
+      "damage": "3d6 + 5 Contundente",
       "move": "Puede moverse 4 pasos antes o después del ataque.",
-      "desc": "Al impactar, el objetivo es empujado 4 pasos."
+      "desc": "El objetivo es empujado 4 casillas por cada impacto.",
+      "name": "Golpes Fluidos",
+      "attacks": 2,
+      "range": "4",
+      "ability_id": "golpes-fluidos_1778693302107"
     },
     {
       "name": "Ola Chocante",
       "cost": 2,
       "bonus": "+7+2d6",
-      "area": "Línea de 8 pasos",
-      "damage": "3d6 Contundente",
-      "move": "Se desplaza hasta 6 pasos en línea recta antes de atacar.",
-      "desc": "Al impactar, cada objetivo es empujado 4 pasos y es *derribado*."
+      "damage": "4d6 + 5 Contundente",
+      "move": 10,
+      "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). ",
+      "ability_id": "ola-chocante_1778693300723"
+    },
+    {
+      "name": "Agarre del Agua",
+      "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
+      "cost": 1,
+      "bonus": "+7 + 2d6",
+      "range": "8",
+      "damage": "3d6 + 5 Contundente",
+      "ability_id": "agarre-del-agua_1778693299427"
     }
   ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
       "bonus": "+7+2d6",
-      "desc": "Puede moverse 4 pasos con éxito o con fallo."
+      "move": 4
     },
     {
       "name": "Evasión",
       "cost": 1,
-      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 8 pasos. No puede moverse a zonas congeladas."
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
+      "move": 10,
+      "id": "evasion_1778692238910",
+      "type": "reaction",
+      "tags": [
+        "Reflejos"
+      ]
     },
     {
       "name": "Muro de Agua",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo son empujados 4 pasos tras el impacto."
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
+      "ability_id": "muro-de-agua_1778693409061"
     }
   ],
   "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento. Pacientes y deliberados, fluyen alrededor de los obstáculos antes de golpear con la fuerza de las mareas. Absorben el calor del entorno, sofocan el fuego y asfixian a sus enemigos con una eficiencia silenciosa y letal.",
@@ -82,11 +106,11 @@
   "umbrales": [
     {
       "value": 16,
-      "categories": "Agua"
+      "categories": "Fuego"
     },
     {
       "value": 8,
-      "categories": "Hielo"
+      "categories": "General"
     }
   ]
 }
