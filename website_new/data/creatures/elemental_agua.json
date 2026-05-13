@@ -23,7 +23,7 @@
     "Miedo",
     "Fuego"
   ],
-  "senses": "Percepción de corrientes a distancia media",
+  "senses": "Ecolocación",
   "speed": "Paso 10, Natación 10",
   "combat": {
     "acciones": 2,
