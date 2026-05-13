@@ -35,7 +35,7 @@
       "id": "cuerpo-de-fuego_1778692691656",
       "type": "passive",
       "tags": [
-        "Fuego"
+        "Agua"
       ],
       "ability_id": "cuerpo-liquido_1778692889955"
     }
@@ -44,13 +44,18 @@
     {
       "cost": 1,
       "bonus": "+7+2d6",
-      "damage": "3d6 + 5 Contundente",
+      "damage": "MID Contundente",
       "move": "Puede moverse 4 pasos antes o después del ataque.",
       "desc": "El objetivo es empujado 4 casillas por cada impacto.",
       "name": "Golpes Fluidos",
       "attacks": 2,
       "range": "4",
-      "ability_id": "golpes-fluidos_1778693302107"
+      "ability_id": "golpes-fluidos_1778693302107",
+      "type": "action",
+      "tags": [
+        "Agua",
+        "Ataque"
+      ]
     },
     {
       "name": "Ola Chocante",
@@ -67,8 +72,14 @@
       "cost": 1,
       "bonus": "+7 + 2d6",
       "range": "8",
-      "damage": "3d6 + 5 Contundente",
-      "ability_id": "agarre-del-agua_1778693299427"
+      "damage": "MID Contundente",
+      "ability_id": "agarre-del-agua_1778693299427",
+      "type": "action",
+      "tags": [
+        "Agua",
+        "Ataque",
+        "Agarre"
+      ]
     }
   ],
   "reactions": [
@@ -92,7 +103,22 @@
       "name": "Muro de Agua",
       "cost": 1,
       "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
-      "ability_id": "muro-de-agua_1778693409061"
+      "ability_id": "muro-de-agua_1778693409061",
+      "type": "reaction",
+      "tags": [
+        "Agua"
+      ]
+    },
+    {
+      "name": "Absorber Agua",
+      "desc": "Recupera 1 Impacto si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
+      "cost": 1,
+      "id": "absorber-elemento_1778692436921",
+      "type": "reaction",
+      "tags": [
+        "Fuego",
+        "Sanacion"
+      ]
     }
   ],
   "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento. Pacientes y deliberados, fluyen alrededor de los obstáculos antes de golpear con la fuerza de las mareas. Absorben el calor del entorno, sofocan el fuego y asfixian a sus enemigos con una eficiencia silenciosa y letal.",
