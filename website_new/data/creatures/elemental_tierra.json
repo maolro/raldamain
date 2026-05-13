@@ -57,7 +57,7 @@
   ],
   "reactions": [
     {
-      "name": "Parada / Esquiva",
+      "name": "Parada",
       "bonus": "+7+2d6",
       "desc": "Puede moverse 2 pasos con éxito o con fallo."
     },
