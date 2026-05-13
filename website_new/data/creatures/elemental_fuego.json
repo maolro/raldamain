@@ -8,7 +8,7 @@
   "hits": 2,
   "saves": {
     "FÍS": "+7+1d6",
-    "VOL": "+7",
+    "VOL": "+7+1d6",
     "MEN": "+4"
   },
   "damageThreshold": {
@@ -24,54 +24,76 @@
     "Fuego",
     "Terreno difícil"
   ],
-  "senses": "Percepción vital a distancia media",
-  "speed": "Paso 16, Vuelo 16",
+  "senses": "Sentido Vital",
+  "speed": "Paso 10, Vuelo 10",
   "combat": {
-    "reacciones": 1
+    "reacciones": 1,
+    "acciones": 1
   },
   "traits": [
     {
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 golpe automáticamente."
-    },
-    {
-      "name": "Vuelo",
-      "desc": "Vuela con total libertad y gana inmunidad a todos los efectos que actúen desde el suelo."
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d6 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente."
     }
   ],
   "actions": [
     {
-      "name": "Llamarada",
-      "cost": 1,
+      "name": "Erupción Abrasadora",
       "bonus": "+7 + 2d6",
-      "range": "8",
-      "damage": "3d6 Fuego",
-      "desc": "Al impactar, el objetivo sufre una *quemadura* y todos los objetos inflamables del área se incendian. Puede moverse 4 pasos antes o después del ataque."
+      "area": "Cono 8/Radio 4",
+      "damage": "3d6 + 5 Fuego",
+      "move": "5",
+      "cost": 1,
+      "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los afectados si llevan objetos metálicos o inflamables.",
+      "range": "1"
     },
     {
-      "name": "Aliento Abrasador",
-      "cost": 2,
-      "bonus": "+7 + 2d6",
-      "area": "Cono 8",
-      "damage": "4d6 Fuego",
-      "desc": "Al impactar, todos los afectados sufren una *quemadura* y los objetos inflamables del área se incendian."
+      "name": "Combustión Espontánea",
+      "desc": "Solo puede afectar a objetivos que tengan una quemadura.",
+      "cost": 1,
+      "save": "VOL +7+1d6",
+      "range": "8 (hasta 3 objetivos)",
+      "damage": "2d6 + 5 Fuego"
+    },
+    {
+      "id": "ab_1778690641452",
+      "name": "Asalto Abrasador",
+      "type": "action",
+      "tags": [
+        "Fuego",
+        "Ataque"
+      ],
+      "cost": "1",
+      "bonus": "+7+2d6",
+      "range": "4",
+      "area": "",
+      "damage": "2d6 + 5 Fuego",
+      "save": "",
+      "attacks": 2,
+      "desc": "Quema objetos inflamables que impacte",
+      "move": "4"
     }
   ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
       "bonus": "+7 + 2d6",
-      "desc": "Puede moverse 4 pasos con éxito o con fallo."
+      "move": "Se mueve hasta 5 casillas."
     },
     {
       "name": "Evasión",
       "cost": 1,
-      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 8 pasos. No puede moverse a zonas de agua."
+      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 10 casillas. No puede moverse a zonas de agua."
     },
     {
       "name": "Muro de Fuego",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo reciben 2d6 de daño de Fuego."
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 1d6 + 5 de daño de Fuego."
+    },
+    {
+      "name": "Absorber Elemento",
+      "desc": "Recupera 1 Impacto si se encuentra en un lugar en llamas o es impactado por un efecto de Fuego que provoque 8 o más daño.",
+      "cost": 1
     }
   ],
   "lore": "Los elementales de fuego son espíritus convocados al mundo material mediante rituales de invocación de gran potencia. Su forma fluctúa sin cesar, adoptando vagamente la silueta de un humanoide envuelto en llamas vivas. Son criaturas de instinto puro con tendencias a destruir todo cuanto alcanzan y resultan extraordinariamente peligrosas para los invocadores sin experiencia.",
@@ -82,5 +104,11 @@
     "Vuelo",
     "Élite"
   ],
-  "level": 5
+  "level": 5,
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General"
+    }
+  ]
 }
