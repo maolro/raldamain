@@ -65,10 +65,10 @@
     },
     {
       "name": "Agarre del Agua",
-      "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
+      "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
       "cost": 1,
       "bonus": "+7 + 2d6",
-      "range": "8",
+      "range": "4",
       "damage": "3d6 + 5 Contundente",
       "type": "action",
       "tags": [
