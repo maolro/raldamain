@@ -36,21 +36,19 @@
       "type": "passive",
       "tags": [
         "Agua"
-      ],
-      "ability_id": "cuerpo-liquido_1778692889955"
+      ]
     }
   ],
   "actions": [
     {
       "cost": 1,
       "bonus": "+7+2d6",
-      "damage": "MID Contundente",
+      "damage": "3d6 + 5 Contundente",
       "move": "Puede moverse 4 pasos antes o después del ataque.",
       "desc": "El objetivo es empujado 4 casillas por cada impacto.",
       "name": "Golpes Fluidos",
       "attacks": 2,
       "range": "4",
-      "ability_id": "golpes-fluidos_1778693302107",
       "type": "action",
       "tags": [
         "Agua",
@@ -63,8 +61,7 @@
       "bonus": "+7+2d6",
       "damage": "4d6 + 5 Contundente",
       "move": 10,
-      "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). ",
-      "ability_id": "ola-chocante_1778693300723"
+      "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). "
     },
     {
       "name": "Agarre del Agua",
@@ -72,8 +69,7 @@
       "cost": 1,
       "bonus": "+7 + 2d6",
       "range": "8",
-      "damage": "MID Contundente",
-      "ability_id": "agarre-del-agua_1778693299427",
+      "damage": "3d6 + 5 Contundente",
       "type": "action",
       "tags": [
         "Agua",
@@ -102,8 +98,7 @@
     {
       "name": "Muro de Agua",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
-      "ability_id": "muro-de-agua_1778693409061",
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás y tropezados si no logran hacer daño.",
       "type": "reaction",
       "tags": [
         "Agua"
