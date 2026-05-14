@@ -47,7 +47,7 @@
       "cost": 1,
       "bonus": "+11 + 3d6",
       "damage": "4d8 + 7 Contundente",
-      "desc": "Al impactar, el objetivo es empujado 4 casillas. Si recibe ambos golpes, debe tener éxito en un tiro de salvación Físico o cae tropezado.",
+      "desc": "Al impactar, el objetivo es empujado 4 casillas. Si recibe ambos golpes, debe tener éxito en un tiro de salvación Físico contra +11+2d6 o cae tropezado.",
       "name": "Puños de Piedra",
       "attacks": 2,
       "id": "punos-de-piedra_1778747633622",
@@ -74,6 +74,24 @@
       ],
       "id": "pedrada_1778747712364",
       "range": "12"
+    },
+    {
+      "name": "Ola de Tierra",
+      "cost": 1,
+      "bonus": "+11 + 3d6 ",
+      "damage": "5d8 + 7 Contundente",
+      "move": 8,
+      "range": "1",
+      "area": "Linea 8",
+      "desc": "Todos los objetivos impactados son empujados 4 casillas y deben tener éxito en un tiro de salvación Físico contra +11+2d6 o caen tropezados. Este ataque crea terreno difícil por donde pasa y elimina otros efectos en el suelo. ",
+      "tags": [
+        "Tierra",
+        "Ataque",
+        "Area",
+        "Maniobra"
+      ],
+      "id": "ola-de-tierra_1778755219012",
+      "type": "action"
     }
   ],
   "reactions": [
