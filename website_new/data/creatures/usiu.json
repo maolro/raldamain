@@ -25,7 +25,8 @@
   "traits": [
     {
       "name": "Tácticas en Manada",
-      "desc": "Su iniciativa será siempre la más alta entre sus aliados y al atacar junto a ellos el objetivo solo podrá tirar defensa una vez como si fuera una secuencia."
+      "desc": "Su iniciativa será siempre la más alta entre sus aliados y al atacar junto a ellos el objetivo solo podrá tirar defensa una vez como si fuera una secuencia.",
+      "ability_id": "tacticas-en-manada_1778751341323"
     }
   ],
   "actions": [
@@ -34,8 +35,13 @@
       "desc": "El afectado hace un tiro salvación FÍS +7+1d6 o queda enredado y tropezado. ",
       "bonus": "+7+2d6",
       "damage": "4d6 + 5 Perforante/Radiante",
-      "move": "Se mueve hasta 10 casillas",
-      "range": "1"
+      "move": 5,
+      "range": "1",
+      "cost": 1,
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ]
     },
     {
       "name": "Aliento Radiante",
@@ -43,12 +49,23 @@
       "bonus": "+7+2d6",
       "area": "Cono 8",
       "damage": "3d6 + 5 Radiante",
-      "range": "1"
+      "range": "1",
+      "tags": [
+        "Vida",
+        "Ataque",
+        "Area"
+      ],
+      "cost": 1
     },
     {
       "name": "Toque Sanador",
       "desc": "El objetivo recupera 8 Vitalidad/1 Impacto y se cura de un efecto de estado negativo.",
-      "range": "1"
+      "range": "1",
+      "tags": [
+        "Vida",
+        "Sanacion"
+      ],
+      "cost": 1
     }
   ],
   "reactions": [
@@ -60,16 +77,28 @@
     },
     {
       "name": "Salto Espacial",
-      "desc": "Añade +10 a su tiro de Esquiva.",
-      "move": "Se teletransporta hasta 10 casillas."
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta al moverse.",
+      "move": 8,
+      "tags": [
+        "Espacial"
+      ],
+      "ability_id": "salto-espacial_1778751219905"
     },
     {
       "name": "Vínculo Vital",
-      "desc": "Recibe el daño que sufriría un aliado a distancia 8. Ese daño contará como Otro para determinar si traspasa su umbral."
+      "desc": "Recibe el daño que sufriría un aliado a distancia 8. Ese daño contará como General para determinar si traspasa su umbral.",
+      "tags": [
+        "Vida"
+      ],
+      "ability_id": "vinculo-vital_1778751231679"
     },
     {
-      "desc": "Se recupera de un efecto de estado negativo y aumenta sus umbrales de daño por 8 contra el siguiente ataque.",
-      "name": "Sanación Rápida"
+      "desc": "Se sana un Impacto y se recupera de un efecto de estado negativo. ",
+      "name": "Sanación Rápida",
+      "ability_id": "sanacion-rapida_1778751268910",
+      "tags": [
+        "Sanacion"
+      ]
     }
   ],
   "lore": "",
