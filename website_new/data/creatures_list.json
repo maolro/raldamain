@@ -47,7 +47,7 @@
   {
     "id": "elemental_aire_anciano",
     "name": "Elemental de Aire Primigenio",
-    "type": "Elemental",
+    "type": "Espíritu",
     "level": 11,
     "size": "Gigante",
     "image": "creatures/elemental_aire.jpg",
