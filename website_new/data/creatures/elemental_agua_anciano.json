@@ -7,9 +7,9 @@
   "image": "creatures/elemental_agua.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+13+3d6",
-    "VOL": "+13+2d6",
-    "MEN": "+13+1d6"
+    "FÍS": "+11+2d6",
+    "VOL": "+11+1d6",
+    "MEN": "+11+1d6"
   },
   "damageThreshold": {
     "magic": 28,
@@ -33,38 +33,68 @@
   "traits": [
     {
       "name": "Cuerpo Líquido",
-      "desc": "Puede fluir a través de cualquier abertura. Es inmune a todos los efectos físicos (ya incluido). Las criaturas que entren en contacto o pasen por su espacio sufren 4d10 Contundente automáticamente. Al inicio de su turno, recupera 1 Impacto si está en contacto con agua natural o si su Muro de Agua está activo."
-    },
-    {
-      "name": "Marea Primigenia",
-      "desc": "El agua en el entorno responde a su voluntad. Las zonas de agua adyacentes o próximas dificultan el movimiento de los enemigos (terreno difícil). Los aliados en esas zonas no sufren este efecto."
+      "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "id": "cuerpo-liquido_1778692889955",
+      "type": "passive",
+      "tags": [
+        "Agua"
+      ]
     }
   ],
   "actions": [
     {
-      "name": "Torrente Abismal",
       "cost": 1,
-      "bonus": "+13+4d6",
-      "range": "12 pasos",
-      "damage": "5d10 Contundente",
-      "move": "Puede moverse 6 pasos antes o después del ataque.",
-      "desc": "Al impactar, el objetivo es empujado 8 pasos y queda *derribado*."
+      "bonus": "+11 + 3d6",
+      "damage": "4d8 + 7 Contundente",
+      "move": "Puede moverse 4 pasos antes o después del ataque.",
+      "desc": "El objetivo es empujado 4 casillas por cada impacto. Si impacta con ambos golpes, su armadura quedará rota y pierde un contador de escudo.",
+      "name": "Taladro de Agua",
+      "attacks": 2,
+      "range": "8",
+      "id": "golpes-fluidos_1778693302107",
+      "type": "action",
+      "tags": [
+        "Agua",
+        "Ataque"
+      ],
+      "damage_tier": "MID",
+      "damage_base_type": "Contundente"
     },
     {
-      "name": "Tifón",
+      "name": "Ola Chocante",
       "cost": 2,
-      "bonus": "+13+4d6",
-      "area": "Radio de 6 pasos",
-      "damage": "5d10 Contundente",
-      "desc": "Al impactar, cada objetivo es empujado 8 pasos y sufre *tropiezo*. El área del ataque queda inundada (terreno difícil)."
+      "bonus": "+11 + 3d6",
+      "damage": "5d8 + 7 Contundente",
+      "move": 10,
+      "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). Este ataque eliminará efectos de terreno a su paso.",
+      "id": "ola-chocante_1778693300723",
+      "type": "action",
+      "tags": [
+        "Agua",
+        "Ataque",
+        "Area",
+        "Maniobra"
+      ],
+      "damage_tier": "HIGH",
+      "damage_base_type": "Contundente",
+      "area": "Linea 10 "
     },
     {
-      "name": "Agarre Abismal",
-      "cost": 2,
-      "bonus": "+13+4d6",
-      "range": "Medio",
-      "damage": "4d10 Contundente",
-      "desc": "Al impactar, el objetivo queda *agarrado* en el interior del elemental (FÍS UD 28 para escapar). Mientras está atrapado, sufre 4d10 Contundente al inicio de cada uno de sus turnos por ahogamiento. Si el objetivo muere dentro del elemental, este recupera 1 Impacto."
+      "name": "Vórtice Viviente",
+      "desc": "Los objetivos serán arrastrados a su posición y deben tener éxito en un tiro de salvación Físico o quedan agarrado y se empiezan a ahogar (quedan enredados si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
+      "cost": 1,
+      "bonus": "+11 + 3d6",
+      "damage": "4d8+7 Contundente",
+      "type": "action",
+      "tags": [
+        "Agua",
+        "Ataque",
+        "Agarre"
+      ],
+      "id": "vortice-viviente_1778706814167",
+      "damage_tier": "MID",
+      "damage_base_type": "Contundente",
+      "area": "Radio 4"
     }
   ],
   "reactions": [
@@ -76,12 +106,23 @@
     {
       "name": "Evasión",
       "cost": 1,
-      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 10 pasos. No puede moverse a zonas congeladas."
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
+      "move": 10,
+      "id": "evasion_1778692238910",
+      "type": "reaction",
+      "tags": [
+        "Reflejos"
+      ]
     },
     {
       "name": "Muro de Agua",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo son empujados 8 pasos y sufren 4d10 Contundente de rebote. Los atacantes que fallen por más de 5 quedan *derribados*."
+      "desc": "Aumenta todos sus umbrales de daño en 10. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
+      "id": "muro-de-agua_1778693409061",
+      "type": "reaction",
+      "tags": [
+        "Agua"
+      ]
     }
   ],
   "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento, convocadas desde el Plano Elemental del Agua. En su forma más antigua, estos seres son mareas conscientes capaces de doblegar el paisaje a su voluntad. Su simple presencia inunda el terreno y sus ataques arrastran a los enemigos hacia profundidades de las que no regresan.",
@@ -92,5 +133,11 @@
     "Élite",
     "Primigenio"
   ],
-  "level": 11
+  "level": 11,
+  "umbrales": [
+    {
+      "value": 20,
+      "categories": "General"
+    }
+  ]
 }
