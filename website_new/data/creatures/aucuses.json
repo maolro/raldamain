@@ -5,7 +5,7 @@
   "size": "Mediano",
   "level": 11,
   "description": "",
-  "hits": 1,
+  "hits": 2,
   "saves": {
     "FÍS": "+11",
     "VOL": "+11+1d6",
@@ -109,14 +109,15 @@
       "id": "vendaval_1778706575166",
       "type": "action",
       "tags": [
-        "Aire",
+        "Telekinesia",
         "Ataque",
-        "Area",
-        "Maniobra"
+        "Area"
       ],
       "cost": 1,
       "desc": "Empuja 4 casillas al impactar. El espacio afectado se convierte en terreno difícil y puede alterar el terreno a distancia 4 como desee, eliminando muros y barreras.",
-      "ability_id": "tormenta-telekinetica_1778753241551"
+      "ability_id": "tormenta-telekinetica_1778753241551",
+      "damage_tier": "HIGH",
+      "damage_base_type": "Contundente/Perforante/Cortante"
     }
   ],
   "reactions": [
