@@ -2,7 +2,7 @@
   "id": "elemental_tierra_anciano",
   "name": "Elemental de Tierra Primigenio",
   "tier": "Esbirro Élite V",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Colosal",
   "image": "creatures/elemental_tierra.jpg",
   "hits": 2,

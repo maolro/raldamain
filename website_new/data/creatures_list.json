@@ -65,7 +65,7 @@
   {
     "id": "elemental_tierra_anciano",
     "name": "Elemental de Tierra Primigenio",
-    "type": "Elemental",
+    "type": "Espíritu",
     "level": 11,
     "size": "Colosal",
     "image": "creatures/elemental_tierra.jpg",
