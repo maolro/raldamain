@@ -43,7 +43,7 @@
   "actions": [
     {
       "cost": 1,
-      "bonus": "+7+2d6",
+      "bonus": "+11+3d6",
       "range": "12",
       "damage": "4d8 + 7 Cortante",
       "move": 5,
@@ -60,7 +60,7 @@
     {
       "name": "Vendaval",
       "cost": 2,
-      "bonus": "+7+2d6",
+      "bonus": "+11+3d6",
       "area": "Cono 16",
       "damage": "5d8 + 7 Contundente",
       "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
