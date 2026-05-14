@@ -2,7 +2,7 @@
   "id": "elemental_tierra",
   "name": "Elemental de Tierra",
   "tier": "Esbirro Élite II",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_tierra.jpg",
   "hits": 2,

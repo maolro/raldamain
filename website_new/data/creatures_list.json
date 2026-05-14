@@ -56,7 +56,7 @@
   {
     "id": "elemental_tierra",
     "name": "Elemental de Tierra",
-    "type": "Elemental",
+    "type": "Espíritu",
     "level": 5,
     "size": "Grande",
     "image": "creatures/elemental_tierra.jpg",
