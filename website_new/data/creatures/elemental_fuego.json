@@ -8,8 +8,8 @@
   "hits": 2,
   "saves": {
     "FÍS": "+7+1d6",
-    "VOL": "+7",
-    "MEN": "+7"
+    "VOL": "+7+1d6",
+    "MEN": "+4"
   },
   "damageThreshold": {
     "magic": 12,
