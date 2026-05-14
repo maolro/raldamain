@@ -90,7 +90,8 @@
     {
       "name": "Muro de Fuego",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 1d6 + 5 de daño de Fuego."
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 2d6 daño Fuego.",
+      "ability_id": "muro-de-fuego_1778692256831"
     },
     {
       "name": "Absorber Fuego",
