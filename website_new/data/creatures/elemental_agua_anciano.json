@@ -2,7 +2,7 @@
   "id": "elemental_agua_anciano",
   "name": "Elemental de Agua Primigenio",
   "tier": "Esbirro Élite V",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Gigante",
   "image": "creatures/elemental_agua.jpg",
   "hits": 2,
