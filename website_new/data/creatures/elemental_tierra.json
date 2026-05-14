@@ -24,7 +24,7 @@
     "Terreno difícil"
   ],
   "senses": "Sentir Vibraciones",
-  "speed": "Paso 10, Excavar 10",
+  "speed": "Paso 8, Excavar 8",
   "combat": {
     "acciones": 1,
     "reacciones": 1
@@ -38,33 +38,57 @@
   ],
   "actions": [
     {
-      "name": "Golpe de Piedra",
       "cost": 1,
       "bonus": "+7+2d6",
       "range": "1",
-      "damage": "3d6 Contundente",
-      "desc": "Al impactar, el objetivo es empujado 4 pasos. Si el objetivo porta armadura o escudo, puede reducir su DEF en 1 hasta que repare el equipo (a criterio del DJ)."
+      "damage": "3d6 + 5 Contundente",
+      "desc": "Al impactar, el objetivo es empujado 4 casillas. Si recibe ambos golpes, debe tener éxito en un tiro de salvación Físico o cae tropezado y su armadura se rompe.",
+      "name": "Puños de Piedra",
+      "attacks": 2,
+      "ability_id": "punos-de-piedra_1778747633622"
     },
     {
-      "name": "Avalancha",
-      "cost": 2,
+      "name": "Pedrada",
+      "cost": 1,
+      "bonus": "+7 + 2d6",
+      "range": "8",
+      "area": "Radio 2",
+      "damage": "4d6 + 5 Contundente",
+      "desc": "Todos los impactados deben tener éxito en un tiro de salvación de Voluntad o son aturdidos una ronda. Si impacta a un objetivo volador, caerá al suelo y sufrirá el daño de caída correspondiente. ",
+      "ability_id": "pedrada_1778747712364"
+    },
+    {
+      "name": "Ola de Tierra",
+      "cost": 1,
       "bonus": "+7+2d6",
-      "area": "Línea de 6 pasos",
-      "damage": "3d6 Contundente",
-      "move": "Se desplaza hasta 6 pasos en línea recta, aplastando todo en su camino.",
-      "desc": "Al impactar, cada objetivo es empujado 4 pasos y sufre *tropiezo*. El terreno en la línea recorrida pasa a ser difícil."
+      "damage": "4d6 + 5 Contundente",
+      "move": 8,
+      "range": "1",
+      "area": "Linea 8",
+      "desc": "Todos los objetivos impactados son empujados 4 casillas y deben tener éxito en un tiro de salvación Físico o caen tropezados. Este ataque crea terreno difícil por donde pasa y elimina otros efectos en el suelo. "
     }
   ],
   "reactions": [
     {
       "name": "Parada",
-      "bonus": "+7+2d6",
-      "desc": "Puede moverse 2 pasos con éxito o con fallo."
+      "bonus": "+7+2d6"
     },
     {
-      "name": "Muro de Roca",
+      "name": "Muro de Piedra",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 6 (o en 10 si está en contacto con tierra). Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 2d6 de daño Contundente de rebote y pueden ver sus armas dañadas."
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 2d6 + 5 daño Contundente (si atacaron con armas naturales) o su arma se rompe."
+    },
+    {
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
+      "cost": 1,
+      "id": "absorber-elemento_1778692436921",
+      "type": "reaction",
+      "tags": [
+        "Fuego",
+        "Sanacion"
+      ],
+      "name": "Vínculo con la Tierra",
+      "ability_id": "vinculo-con-la-tierra_1778712119755"
     }
   ],
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. Lentos pero absolutamente implacables, absorben castigos que destrozarían a cualquier otra criatura y devuelven cada golpe con fuerza aplastante. Su conexión con el suelo les otorga una resistencia casi indestructible mientras permanecen en contacto con la tierra firme.",
