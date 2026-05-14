@@ -78,14 +78,8 @@
   ],
   "reactions": [
     {
-      "name": "Parada / Esquiva",
-      "bonus": "+13+4d6",
-      "desc": "Puede moverse 2 pasos con éxito o con fallo."
-    },
-    {
-      "name": "Muro de Roca",
-      "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 12 (o en 18 si está en contacto con tierra). Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 5d10 Contundente de rebote y sus armas son destruidas."
+      "name": "Parada ",
+      "bonus": "+11 + 3d6"
     }
   ],
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. En su forma más antigua, son montañas vivas que reconfiguran el paisaje a cada paso. Inmunes a casi todo daño físico, cada golpe que reciben es devuelto multiplicado. Su simple presencia hace temblar el suelo y su paso deja un reguero de escombros y cráteres.",
