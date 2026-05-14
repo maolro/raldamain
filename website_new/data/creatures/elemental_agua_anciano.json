@@ -24,11 +24,11 @@
     "Fuego",
     "Frío"
   ],
-  "senses": "Percepción de corrientes a distancia larga",
-  "speed": "Paso 14, Nado 24",
+  "senses": "Ecolocación",
+  "speed": "Paso 10, Natación 10",
   "combat": {
-    "acciones": 3,
-    "reacciones": 2
+    "acciones": 1,
+    "reacciones": 1
   },
   "traits": [
     {
@@ -45,10 +45,9 @@
     {
       "cost": 1,
       "bonus": "+11 + 3d6",
-      "damage": "4d8 + 7 Contundente",
-      "move": "Puede moverse 4 pasos antes o después del ataque.",
+      "damage": "4d8 + 7 Contundente / Cortante",
+      "move": 6,
       "desc": "El objetivo es empujado 4 casillas por cada impacto. Si impacta con ambos golpes, su armadura quedará rota y pierde un contador de escudo.",
-      "name": "Taladro de Agua",
       "attacks": 2,
       "range": "8",
       "id": "golpes-fluidos_1778693302107",
@@ -58,7 +57,8 @@
         "Ataque"
       ],
       "damage_tier": "MID",
-      "damage_base_type": "Contundente"
+      "damage_base_type": "Contundente",
+      "name": "Aguas a Presión"
     },
     {
       "name": "Ola Chocante",
@@ -80,11 +80,11 @@
       "area": "Linea 10 "
     },
     {
-      "name": "Vórtice Viviente",
+      "name": "Tifón Viviente",
       "desc": "Los objetivos serán arrastrados a su posición y deben tener éxito en un tiro de salvación Físico o quedan agarrado y se empiezan a ahogar (quedan enredados si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
       "cost": 1,
       "bonus": "+11 + 3d6",
-      "damage": "4d8+7 Contundente",
+      "damage": "4d8 + 7 Contundente",
       "type": "action",
       "tags": [
         "Agua",
@@ -94,14 +94,15 @@
       "id": "vortice-viviente_1778706814167",
       "damage_tier": "MID",
       "damage_base_type": "Contundente",
-      "area": "Radio 4"
+      "area": "Radio 4",
+      "move": 5
     }
   ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
       "bonus": "+13+3d6",
-      "desc": "Puede moverse 6 pasos con éxito o con fallo."
+      "move": 5
     },
     {
       "name": "Evasión",
