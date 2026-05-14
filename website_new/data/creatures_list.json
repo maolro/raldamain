@@ -20,7 +20,7 @@
   {
     "id": "elemental_agua",
     "name": "Elemental de Agua",
-    "type": "Elemental",
+    "type": "Espíritu",
     "level": 5,
     "size": "Grande",
     "image": "creatures/elemental_agua.jpg",

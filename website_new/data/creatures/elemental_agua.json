@@ -2,7 +2,7 @@
   "id": "elemental_agua",
   "name": "Elemental de Agua",
   "tier": "Esbirro Élite II",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_agua.jpg",
   "hits": 2,
@@ -76,7 +76,9 @@
         "Ataque",
         "Agarre"
       ],
-      "ability_id": "vortice-viviente_1778706814167"
+      "ability_id": "vortice-viviente_1778706814167",
+      "damage_tier": "MID",
+      "damage_base_type": "Contundente"
     }
   ],
   "reactions": [
