@@ -33,7 +33,11 @@
     {
       "name": "Paso Terrestre",
       "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
-      "ability_id": "cuerpo-de-tierra_1778707274474"
+      "ability_id": "cuerpo-de-tierra_1778707274474",
+      "type": "passive",
+      "tags": [
+        "Tierra"
+      ]
     }
   ],
   "actions": [
