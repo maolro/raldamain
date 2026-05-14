@@ -40,7 +40,58 @@
       ]
     }
   ],
-  "actions": [],
+  "actions": [
+    {
+      "cost": 1,
+      "bonus": "+7+2d6",
+      "range": "12",
+      "damage": "4d8 + 7 Cortante",
+      "move": 5,
+      "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia. Si impacta con ambos ataques, rompe la armadura del objetivo y este pierde un contador de escudo (sufre una herida media si no tiene armadura).",
+      "id": "tajo-de-los-vientos_1778754690668",
+      "type": "action",
+      "tags": [
+        "Aire",
+        "Ataque"
+      ],
+      "attacks": 2,
+      "name": "Tajo de los Vientos"
+    },
+    {
+      "name": "Vendaval",
+      "cost": 2,
+      "bonus": "+7+2d6",
+      "area": "Cono 16",
+      "damage": "5d8 + 7 Contundente",
+      "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
+      "id": "vendaval_1778706575166",
+      "type": "action",
+      "tags": [
+        "Aire",
+        "Ataque",
+        "Area",
+        "Maniobra"
+      ],
+      "move": 2
+    },
+    {
+      "name": "Torbellino Viviente",
+      "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado (si tiene éxito será enredado). Mientras permanezca agarrado, se moverá junto a esta criatura y sufrirá todo el daño que reciba siempre y cuando sea aplicable. ",
+      "range": "2",
+      "damage": "4d8+7 Cortante",
+      "cost": 1,
+      "id": "torbellino-viviente_1778706845890",
+      "type": "action",
+      "tags": [
+        "Aire",
+        "Ataque",
+        "Agarre"
+      ],
+      "move": 10,
+      "damage_tier": "MID",
+      "damage_base_type": "Cortante"
+    }
+  ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -56,6 +107,27 @@
       "type": "reaction",
       "tags": [
         "Reflejos"
+      ]
+    },
+    {
+      "name": "Muro de Aire",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Cortante.",
+      "id": "muro-de-aire_1778707098298",
+      "type": "reaction",
+      "tags": [
+        "Aire"
+      ]
+    },
+    {
+      "name": "Absorber Aire",
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un lugar con vientos fuertes o es impactado por un efecto de Aire que atraviese su umbral.",
+      "cost": 1,
+      "id": "absorber-aire_1778748254508",
+      "type": "reaction",
+      "tags": [
+        "Aire",
+        "Sanacion"
       ]
     }
   ],
