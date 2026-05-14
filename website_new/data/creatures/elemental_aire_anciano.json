@@ -9,7 +9,7 @@
   "saves": {
     "FÍS": "+11+2d6",
     "VOL": "+11+2d6",
-    "MEN": "+13"
+    "MEN": "+11"
   },
   "damageThreshold": {
     "magic": 28,
