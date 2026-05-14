@@ -92,7 +92,7 @@
     {
       "name": "Muro de Piedra",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 2d6 + 5 daño Contundente (si atacaron con armas naturales) o su arma se rompe.",
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 3d6 daño Contundente (si atacaron con armas naturales) o su arma se rompe.",
       "tags": [
         "Tierra"
       ]
