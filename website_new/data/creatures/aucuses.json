@@ -1,0 +1,125 @@
+{
+  "id": "aucuses",
+  "name": "Aucuses",
+  "type": "Celestial",
+  "size": "Mediano",
+  "level": 11,
+  "description": "",
+  "hits": 1,
+  "saves": {
+    "FÍS": "+11",
+    "VOL": "+11+1d6",
+    "MEN": "+11+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 30,
+      "categories": "Radiante"
+    },
+    {
+      "value": 25,
+      "categories": "Magia"
+    },
+    {
+      "value": 20,
+      "categories": "General, Necrótico"
+    }
+  ],
+  "immune": [
+    "Fuego",
+    "Veneno",
+    "Mental",
+    "Miedo",
+    "Ilusion",
+    "Afliccion",
+    "Afliccion"
+  ],
+  "senses": "Vision Verdadera, Leer Pensamientos",
+  "speed": "Vuelo 16",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "name": "Cuerpo de Fuego",
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 3d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "id": "cuerpo-de-fuego_1778692691656",
+      "type": "passive",
+      "tags": [
+        "Fuego"
+      ]
+    },
+    {
+      "name": "Jinete",
+      "desc": "Se engancha a un aliado, empleándolo como montura. Esto hará que se mueva junto a él sin la necesidad de emplear movimiento.",
+      "ability_id": "jinete_1778753235567"
+    }
+  ],
+  "actions": [
+    {
+      "id": "ab_1778690641452",
+      "name": "Rayos Luminosos",
+      "type": "action",
+      "tags": [
+        "Vida",
+        "Ataque"
+      ],
+      "cost": "1",
+      "bonus": "+11+3d6",
+      "area": "",
+      "damage": "3d8+7 Radiante",
+      "save": "",
+      "move": "",
+      "damage_tier": "MID",
+      "damage_base_type": "Fuego",
+      "range": "8",
+      "ability_id": "rayos-luminosos_1778752957956",
+      "attacks": 2,
+      "desc": "Afecta a tres objetivos diferentes con cada ataque."
+    },
+    {
+      "name": "Toque Sanador",
+      "desc": "El objetivo recupera 12 Vitalidad/1 Impacto y se cura de un efecto de estado negativo.",
+      "range": "1",
+      "tags": [
+        "Vida",
+        "Sanacion"
+      ],
+      "cost": 1,
+      "id": "toque-sanador_1778751359599",
+      "type": "action"
+    },
+    {
+      "desc": "El afectado reduce su cordura por 6 y queda confundido durante una ronda.",
+      "attacks": 2,
+      "cost": 1,
+      "save": "Mental +11+2d6",
+      "name": "Sobrecarga Mental",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "sobrecarga-mental_1778753097013"
+    },
+    {
+      "name": "Tormenta Telekinética",
+      "bonus": "+7+2d6",
+      "area": "Cono 12",
+      "damage": "5d8 + 7 Contundente/Perforante/Cortante",
+      "id": "vendaval_1778706575166",
+      "type": "action",
+      "tags": [
+        "Aire",
+        "Ataque",
+        "Area",
+        "Maniobra"
+      ],
+      "cost": 1,
+      "desc": "Empuja 4 casillas al impactar. El espacio afectado se convierte en terreno difícil y puede alterar el terreno a distancia 4 como desee, eliminando muros y barreras.",
+      "ability_id": "tormenta-telekinetica_1778753241551"
+    }
+  ],
+  "reactions": [],
+  "lore": "",
+  "tags": []
+}

@@ -79,5 +79,14 @@
     "size": "Mediano",
     "image": "",
     "description": "Espíritus celestiales que poseen el cuerpo de perros. Son extremadamente leales a sus amos y su manada, luchando a su lado hasta el final y protegiéndolos del mal."
+  },
+  {
+    "id": "aucuses",
+    "name": "Aucuses",
+    "type": "Celestial",
+    "level": 11,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
