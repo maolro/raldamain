@@ -101,7 +101,7 @@
   "reactions": [
     {
       "name": "Parada / Esquiva",
-      "bonus": "+13+3d6",
+      "bonus": "+11+3d6",
       "move": 5
     },
     {
