@@ -2,7 +2,7 @@
   "id": "elemental_aire",
   "name": "Elemental de Aire",
   "tier": "Esbirro Élite II",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_aire.jpg",
   "hits": 2,
