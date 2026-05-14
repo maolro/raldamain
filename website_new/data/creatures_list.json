@@ -11,7 +11,7 @@
   {
     "id": "elemental_fuego_anciano",
     "name": "Elemental de Fuego Primigenio",
-    "type": "Elemental",
+    "type": "Espíritu",
     "level": 11,
     "size": "Gigante",
     "image": "creatures/elemental_fuego.jpg",

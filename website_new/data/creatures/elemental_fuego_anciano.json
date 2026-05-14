@@ -2,7 +2,7 @@
   "id": "elemental_fuego_anciano",
   "name": "Elemental de Fuego Primigenio",
   "tier": "Esbirro Élite V",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Gigante",
   "image": "creatures/elemental_fuego.jpg",
   "hits": 2,
@@ -94,7 +94,9 @@
       "type": "action",
       "move": 10,
       "area": "Linea 10x4",
-      "range": "1"
+      "range": "1",
+      "damage_tier": "HIGH",
+      "damage_base_type": "Fuego"
     }
   ],
   "reactions": [
