@@ -7,9 +7,9 @@
   "image": "creatures/elemental_fuego.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+13+3d6",
-    "VOL": "+13+2d6",
-    "MEN": "+13+1d6"
+    "FÍS": "+11+2d6",
+    "VOL": "+11+1d6",
+    "MEN": "+11"
   },
   "damageThreshold": {
     "magic": 28,
@@ -24,55 +24,116 @@
     "Fuego",
     "Terreno difícil"
   ],
-  "senses": "Percepción vital a distancia media",
-  "speed": "Paso 16, Vuelo 16",
+  "senses": "Sentido Vital",
+  "speed": "Paso 10, Vuelo 10",
   "combat": {
-    "reacciones": 1
+    "reacciones": 1,
+    "acciones": 0
   },
   "traits": [
     {
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 4d10 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 golpe automáticamente."
-    },
-    {
-      "name": "Vuelo",
-      "desc": "Vuela con total libertad y gana inmunidad a todos los efectos que actúen desde el suelo."
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 4d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "id": "cuerpo-de-fuego_1778692691656",
+      "type": "passive",
+      "tags": [
+        "Fuego"
+      ]
     }
   ],
   "actions": [
     {
-      "name": "Fuego Puro",
-      "cost": 1,
-      "bonus": "+13 + 4d6",
-      "range": "12",
-      "area": "Radio 4",
-      "damage": "5d10 Fuego/Radiante",
-      "desc": "Al impactar, el objetivo sufre una *quemadura* y todos los objetos inflamables del área se incendian. Puede moverse 4 pasos antes o después del ataque."
+      "id": "ab_1778690641452",
+      "type": "action",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "cost": "1",
+      "bonus": "+11+3d6",
+      "area": "Radio 2",
+      "damage": "3d8 + 7 Fuego",
+      "save": "",
+      "move": 5,
+      "attacks": 2,
+      "desc": "Quema objetos inflamables que impacte.",
+      "range": "8",
+      "name": "Bolas de Fuego"
     },
     {
-      "name": "Lluvia de Brasas",
-      "cost": 2,
-      "bonus": "+13 + 4d6",
-      "area": "Cono 8",
-      "damage": "6d10 Fuego/Radiante",
-      "desc": "Hace secuencia de dos ataques contra la misma zona. Al impactar, todos los afectados sufren una *quemadura* y los objetos inflamables del área se incendian. Convierte todo el terreno en fuego."
+      "name": "Aliento de Fuego",
+      "bonus": "+11+3d6",
+      "area": "Cono 12",
+      "damage": "4d8 + 7 Fuego",
+      "move": "5",
+      "cost": 1,
+      "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
+      "range": "1",
+      "id": "aliento-de-fuego_1778692098257",
+      "type": "action",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ]
+    },
+    {
+      "name": "Torbellino de Fuego",
+      "cost": 1,
+      "bonus": "+11+3d6",
+      "damage": "4d8 + 7 Fuego",
+      "desc": "Todos los objetivos impactados sufren una quemadura. Este ataque llena los espacios por los que pase con fuego y solo podrá atacar a objetivos en su trayectoria.",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ola-de-tierra_1778747893560",
+      "id": "ola-de-tierra_1778747893560",
+      "type": "action",
+      "move": 10,
+      "area": "Linea 10x4",
+      "range": "1"
     }
   ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
-      "bonus": "+13 + 4d6",
-      "desc": "Puede moverse 4 pasos con éxito o con fallo."
+      "bonus": "+11 + 3d6",
+      "move": 5
     },
     {
       "name": "Evasión",
       "cost": 1,
-      "desc": "Obtiene +10 a su tirada de esquiva y se desplaza 8 pasos. No puede moverse a zonas de agua."
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
+      "move": 10,
+      "id": "evasion_1778692238910",
+      "type": "reaction",
+      "tags": [
+        "Reflejos"
+      ]
     },
     {
       "name": "Muro de Fuego",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo reciben 4d10 de daño de Fuego."
+      "desc": "Aumenta todos sus umbrales de daño en 5 esta ronda. Los atacantes cuerpo a cuerpo sufren 2d8 + 7 daño Fuego.",
+      "id": "muro-de-fuego_1778692256831",
+      "type": "reaction",
+      "tags": [
+        "Fuego"
+      ]
+    },
+    {
+      "name": "Absorber Fuego",
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
+      "cost": 1,
+      "id": "absorber-elemento_1778692436921",
+      "type": "reaction",
+      "tags": [
+        "Fuego",
+        "Sanacion"
+      ]
     }
   ],
   "lore": "Los elementales de fuego son espíritus convocados al mundo material mediante rituales de invocación de gran potencia. Su forma fluctúa sin cesar, adoptando vagamente la silueta de un humanoide envuelto en llamas vivas. Son criaturas de instinto puro con tendencias a destruir todo cuanto alcanzan y resultan extraordinariamente peligrosas para los invocadores sin experiencia.",
@@ -83,5 +144,11 @@
     "Vuelo",
     "Élite"
   ],
-  "level": 11
+  "level": 11,
+  "umbrales": [
+    {
+      "value": 20,
+      "categories": "General"
+    }
+  ]
 }
