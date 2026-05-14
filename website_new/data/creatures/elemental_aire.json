@@ -100,11 +100,11 @@
     {
       "name": "Muro de Aire",
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo sufren 2d6 + 5 daño Cortante y serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
+      "desc": "Aumenta todos sus umbrales de daño en 4. Los atacantes cuerpo a cuerpo sufren 3d6 daño Cortante y serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
       "id": "muro-de-agua_1778693409061",
       "type": "reaction",
       "tags": [
-        "Agua"
+        "Aire"
       ],
       "ability_id": "muro-de-aire_1778707098298"
     }
