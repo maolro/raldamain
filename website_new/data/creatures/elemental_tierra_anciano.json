@@ -7,9 +7,9 @@
   "image": "creatures/elemental_tierra.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+13+4d6",
-    "VOL": "+11",
-    "MEN": "+13"
+    "FÍS": "+11+2d6",
+    "VOL": "+11+1d6",
+    "MEN": "+11+1d6"
   },
   "damageThreshold": {
     "magic": 28,
@@ -22,51 +22,58 @@
     "Necrótico",
     "Efectos mentales",
     "Miedo",
-    "Terreno difícil",
-    "Eléctrico",
-    "Ácido"
+    "Terreno difícil"
   ],
-  "senses": "Visión en la tierra a distancia larga",
-  "speed": "Paso 12, Excavar 16",
+  "senses": "Sentir Vibraciones",
+  "speed": "Paso 10, Excavar 10",
   "combat": {
-    "acciones": 3,
-    "reacciones": 2
+    "acciones": 1,
+    "reacciones": 1
   },
   "traits": [
     {
-      "name": "Cuerpo de Tierra",
-      "desc": "Puede moverse a través de roca y tierra sin reducir velocidad. Es inmune a todos los efectos físicos (ya incluido). Las criaturas que lo golpeen con ataques cuerpo a cuerpo sufren 4d10 Contundente automáticamente y sus armas son destruidas si reducen el daño a 0."
-    },
-    {
-      "name": "Arraigo Primigenio",
-      "desc": "Mientras esté en contacto con tierra, roca o piedra, aumenta todos sus umbrales de daño en 5 y regenera 1 Impacto al inicio de su turno si tenía 1. Este bono ya está incluido en la entrada de Umbrales de Daño."
+      "name": "Paso Terrestre",
+      "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
+      "ability_id": "cuerpo-de-tierra_1778707274474",
+      "id": "cuerpo-de-tierra_1778707274474",
+      "type": "passive",
+      "tags": [
+        "Tierra"
+      ]
     }
   ],
   "actions": [
     {
-      "name": "Golpe Sísmico",
       "cost": 1,
-      "bonus": "+13+4d6",
-      "range": "Adyacente",
-      "damage": "6d10 Contundente",
-      "desc": "Al impactar, el objetivo es empujado 10 pasos y sufre *derribado*. Destruye armaduras y reduce la DEF del objetivo en 4 hasta su reparación."
+      "bonus": "+11 + 3d6",
+      "damage": "4d8 + 7 Contundente",
+      "desc": "Al impactar, el objetivo es empujado 4 casillas. Si recibe ambos golpes, debe tener éxito en un tiro de salvación Físico o cae tropezado.",
+      "name": "Puños de Piedra",
+      "attacks": 2,
+      "id": "punos-de-piedra_1778747633622",
+      "type": "action",
+      "tags": [
+        "Tierra",
+        "Ataque",
+        "Maniobra"
+      ],
+      "range": "4"
     },
     {
-      "name": "Avalancha",
-      "cost": 2,
-      "bonus": "+13+4d6",
-      "area": "Línea de 12 pasos",
-      "damage": "6d10 Contundente",
-      "move": "Se desplaza hasta 12 pasos en línea recta, aplastando todo en su camino.",
-      "desc": "Al impactar, cada objetivo es empujado 10 pasos y sufre *tropiezo* y *derribado*. El terreno recorrido se convierte en escombros (terreno difícil permanente)."
-    },
-    {
-      "name": "Terremoto",
-      "cost": 2,
-      "bonus": "+13+4d6",
-      "area": "Radio de 8 pasos",
-      "damage": "5d10 Contundente",
-      "desc": "Hace temblar la tierra con una sacudida devastadora. Al impactar, cada objetivo es *derribado*. El área entera colapsa en terreno difícil. Las estructuras y muros en el radio pueden derrumbarse (a criterio del DJ). No tiene efecto sobre criaturas que vuelen."
+      "name": "Pedrada",
+      "cost": 1,
+      "bonus": "+11 + 3d6",
+      "area": "Radio 4",
+      "damage": "5d8 + 7 Contundente",
+      "desc": "Todos los impactados deben tener éxito en un tiro de salvación de Voluntad contra +11 + 2d6 o son aturdidos una ronda. Si impacta a un objetivo volador, caerá al suelo y sufrirá el daño de caída correspondiente. ",
+      "type": "action",
+      "tags": [
+        "Tierra",
+        "Ataque",
+        "Area"
+      ],
+      "id": "pedrada_1778747712364",
+      "range": "12"
     }
   ],
   "reactions": [
@@ -89,5 +96,19 @@
     "Élite",
     "Primigenio"
   ],
-  "level": 11
+  "level": 11,
+  "umbrales": [
+    {
+      "value": 30,
+      "categories": "Físico"
+    },
+    {
+      "value": 25,
+      "categories": "Magia"
+    },
+    {
+      "value": 20,
+      "categories": "General"
+    }
+  ]
 }
