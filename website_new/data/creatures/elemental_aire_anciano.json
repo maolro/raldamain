@@ -76,7 +76,7 @@
     },
     {
       "name": "Torbellino Viviente",
-      "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado (si tiene éxito será enredado). Mientras permanezca agarrado, se moverá junto a esta criatura y sufrirá todo el daño que reciba siempre y cuando sea aplicable. ",
+      "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico contra +11+2d6 o queda agarrado (si tiene éxito será enredado). Mientras permanezca agarrado, se moverá junto a esta criatura y sufrirá todo el daño que reciba siempre y cuando sea aplicable. ",
       "range": "2",
       "damage": "4d8+7 Cortante",
       "cost": 1,
@@ -90,8 +90,7 @@
       "move": 10,
       "damage_tier": "MID",
       "damage_base_type": "Cortante",
-      "bonus": "+11+3d6",
-      "save": "+11+2d6"
+      "bonus": "+11+3d6"
     }
   ],
   "reactions": [
