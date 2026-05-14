@@ -2,7 +2,7 @@
   {
     "id": "elemental_fuego",
     "name": "Elemental de Fuego",
-    "type": "Elemental",
+    "type": "Espíritu",
     "level": 5,
     "size": "Grande",
     "image": "creatures/elemental_fuego.jpg",

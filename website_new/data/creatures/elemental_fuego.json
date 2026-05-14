@@ -2,7 +2,7 @@
   "id": "elemental_fuego",
   "name": "Elemental de Fuego",
   "tier": "Esbirro Élite II",
-  "type": "Elemental",
+  "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_fuego.jpg",
   "hits": 2,
