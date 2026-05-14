@@ -119,7 +119,27 @@
       "ability_id": "tormenta-telekinetica_1778753241551"
     }
   ],
-  "reactions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "bonus": "+11 + 3d6",
+      "id": "parada--esquiva_1778753374110",
+      "type": "reaction"
+    },
+    {
+      "desc": "Un aliado adyacente repite un tiro y se queda con el resultado que más le convenga.",
+      "name": "Milagro Menor",
+      "tags": [
+        "Divina"
+      ],
+      "ability_id": "milagro-menor_1778753435883"
+    },
+    {
+      "name": "Halo Cegador",
+      "desc": "Todos los que le vean deben tener éxito en un tiro de salvación de Voluntad +11+2d6 o quedan cegados una ronda, fallando automáticamente sus ataques. Los atacantes cuerpo a cuerpo sufrirán además 4d8 daño Radiante.",
+      "ability_id": "halo-cegador_1778753483283"
+    }
+  ],
   "lore": "",
   "tags": []
 }
