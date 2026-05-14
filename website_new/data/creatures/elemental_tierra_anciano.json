@@ -80,6 +80,27 @@
     {
       "name": "Parada ",
       "bonus": "+11 + 3d6"
+    },
+    {
+      "name": "Muro de Piedra",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 10. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 4d8 daño Contundente (si atacaron con armas naturales) o su arma se rompe.",
+      "tags": [
+        "Tierra"
+      ],
+      "id": "muro-de-piedra_1778712055897",
+      "type": "reaction"
+    },
+    {
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
+      "cost": 1,
+      "id": "vinculo-con-la-tierra_1778712119755",
+      "type": "reaction",
+      "tags": [
+        "Tierra",
+        "Sanacion"
+      ],
+      "name": "Vínculo con la Tierra"
     }
   ],
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. En su forma más antigua, son montañas vivas que reconfiguran el paisaje a cada paso. Inmunes a casi todo daño físico, cada golpe que reciben es devuelto multiplicado. Su simple presencia hace temblar el suelo y su paso deja un reguero de escombros y cráteres.",
