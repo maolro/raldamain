@@ -88,5 +88,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "nueva_criatura_1778930416376",
+    "name": "Planta Carnívora Gigante",
+    "type": "Planta",
+    "level": 11,
+    "size": "Enorme",
+    "image": "",
+    "description": ""
   }
 ]
