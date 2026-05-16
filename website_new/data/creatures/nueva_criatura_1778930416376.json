@@ -103,6 +103,17 @@
         "Sanacion"
       ],
       "damage": "4d8+7 Necrótico"
+    },
+    {
+      "name": "Polen Adormidor",
+      "desc": "Los afectados caen inconscientes. Deben repetir el tiro cada ronda y se despiertan al sufrir daño. ",
+      "tags": [
+        "Naturaleza",
+        "Afliccion"
+      ],
+      "cost": 1,
+      "save": "Voluntad +11+2d6",
+      "area": "Radio 8"
     }
   ],
   "reactions": [
