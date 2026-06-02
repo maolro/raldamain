@@ -97,5 +97,14 @@
     "size": "Enorme",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "planta_carnivora_gigante",
+    "name": "Planta Carnívora Gigante",
+    "type": "Planta",
+    "level": 11,
+    "size": "Enorme",
+    "image": "",
+    "description": ""
   }
 ]
