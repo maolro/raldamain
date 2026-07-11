@@ -13,6 +13,10 @@
   },
   "umbrales": [
     {
+      "value": 18,
+      "categories": "Interno"
+    },
+    {
       "value": 24,
       "categories": "General, Agua"
     },
@@ -76,6 +80,44 @@
         "Duradera",
         "Transmutacion"
       ]
+    },
+    {
+      "name": "Lluvia de Brasas",
+      "desc": "Quema objetivos inflamables que impacte.",
+      "cost": 2,
+      "bonus": "+15 + 4d6",
+      "area": "Cono Grande",
+      "damage": "6d10 + 8 Fuego",
+      "tags": [
+        "Ataque",
+        "Fuego",
+        "Area"
+      ]
+    },
+    {
+      "name": "Tormenta de Energía Negativa",
+      "desc": "El daño de este ataque no puede ser restaurado, y los objetivos que tengan éxito en el tiro sufren la mitad de daño. ",
+      "cost": 2,
+      "save": "+15 + 3d6 VOL",
+      "damage": "5d10 + 8 Necrótico",
+      "area": "Radio Medio",
+      "tags": [
+        "Nigromancia",
+        "Afliccion",
+        "Area",
+        "Necrotico"
+      ]
+    },
+    {
+      "name": "Vínculo Parasítico",
+      "desc": "El objetivo recibe un Vínculo Parasítico, el cual permite a esta criatura transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse después de sufrir el daño.",
+      "cost": 2,
+      "range": "1",
+      "save": "+15 + 3d6 VOL",
+      "tags": [
+        "Nigromancia",
+        "Afliccion"
+      ]
     }
   ],
   "reactions": [
@@ -98,6 +140,25 @@
         "Fuego",
         "Sanacion"
       ]
+    },
+    {
+      "name": "Forma de Fuego",
+      "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de reducir su Umbral de Daño al agua por 6. Solo podrá emplear efectos de Fuego en esta forma y puede salir antes si lo desea.",
+      "cost": 1,
+      "tags": [
+        "Fuego",
+        "Defensiva"
+      ]
+    },
+    {
+      "name": "Propulsión",
+      "tags": [
+        "Fuego",
+        "Defensiva"
+      ],
+      "cost": 1,
+      "desc": "Suma +10 a un tiro defensivo y desengancha.",
+      "move": 8
     }
   ],
   "lore": "",
