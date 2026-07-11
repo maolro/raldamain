@@ -35,7 +35,7 @@
           "range": "Toque",
           "duration": "Instantánea",
           "desc": "Tocas a un aliado y le sanas Vitalidad igual a Rango + 2. Alternativamente, puedes reducir el nivel de una Aflicción un paso en lugar de curar Vitalidad.",
-          "empower": "Cura una herida permanente leve o una Aflicción en fase 1."
+          "empower": "Cura Herido-1 (permanente) o una Aflicción en fase 1."
         },
         {
           "name": "Rayo de Luz",
@@ -47,7 +47,7 @@
           ],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "El objetivo queda cegado durante una ronda.",
+          "crit": "El objetivo queda con Confundido-1 durante una ronda.",
           "duration": "Instantánea",
           "desc": "Lanzas un rayo de luz que inflige 1d6 + Rango daño Radiante. A distancia corta, el ataque no puede ser esquivado.",
           "empower": "Realizas un ataque adicional contra un objetivo distinto."
@@ -62,9 +62,9 @@
           ],
           "cost": "2 acciones, 1 chi",
           "area": "Radio corto",
-          "crit": "Los objetivos quedan cegados hasta que reciban sanación.",
+          "crit": "Los objetivos quedan con Confundido-2 hasta que reciban sanación.",
           "duration": "Instantánea",
-          "desc": "Emites una explosión de luz cegadora. Los enemigos en el área deben superar un tiro de salvación de CON o sufren 1d6 + Rango daño Radiante y quedan cegados durante 1 ronda. Disipa hechizos Sombríos activos en el área.",
+          "desc": "Emites una explosión de luz cegadora. Los enemigos en el área deben superar un tiro de salvación de CON o sufren 1d6 + Rango daño Radiante y quedan con Confundido-1 durante 1 ronda. Disipa hechizos Sombríos activos en el área.",
           "empower": "El brillo persiste 1 ronda, lo que otorga Desventaja en tiros de ataque contra ti y ciega a quien se acerque."
         }
       ]
@@ -98,9 +98,9 @@
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea media",
-          "crit": "Los objetivos quedan cegados hasta recibir curación.",
+          "crit": "Los objetivos quedan con Confundido-2 hasta recibir curación.",
           "duration": "Concentración",
-          "desc": "Creas un muro de luz sólida que bloquea ataques a distancia. Las criaturas que intenten cruzarlo sufren 1d6 + Rango daño Radiante y quedan cegadas. Puede desplegarse como reacción para uso defensivo.",
+          "desc": "Creas un muro de luz sólida que bloquea ataques a distancia. Las criaturas que intenten cruzarlo sufren 1d6 + Rango daño Radiante y quedan con Confundido-1. Puede desplegarse como reacción para uso defensivo.",
           "empower": "La barrera daña a las criaturas cercanas como si intentaran cruzarla."
         },
         {
@@ -113,7 +113,7 @@
           ],
           "cost": "2 acciones, 1 chi",
           "area": "Línea mediana",
-          "crit": "El objetivo queda cegado durante una ronda.",
+          "crit": "El objetivo queda con Confundido-1 durante una ronda.",
           "duration": "Concentración",
           "desc": "Creas un arma de luz pura con un ataque inicial en línea que inflige 1d6 + CAR daño Radiante. Mientras el hechizo persista, puedes atacar como acción (1d6 + CAR daño Radiante a distancia media).",
           "empower": "Realizas un ataque adicional contra un objetivo diferente."
@@ -147,7 +147,7 @@
           "cost": "1 acción, 2 chi",
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
-          "desc": "Curas Vitalidad y PV iguales a Rango + 2. Además, puedes reducir una herida permanente 2 pasos o eliminar completamente una Aflicción o Maldición.",
+          "desc": "Curas Vitalidad y PV iguales a Rango + 2. Además, puedes reducir Herido (permanente) 2 pasos o eliminar completamente una Aflicción o Maldición.",
           "empower": "Puedes lanzarlo como acción bonus sobre ti mismo o afectar a un objetivo adicional."
         },
         {
@@ -205,7 +205,7 @@
           ],
           "cost": "1 acción, 2 chi",
           "area": "Línea Mediana",
-          "crit": "El objetivo sufre quemadura media y queda cegado 1 ronda.",
+          "crit": "El objetivo sufre quemadura media y queda con Confundido-1 durante 1 ronda.",
           "duration": "Instantáneo",
           "desc": "Desatas un rayo devastador de luz que inflige 2d8 + CAR daño Radiante e inflige quemadura leve. A distancia corta, el ataque no puede ser esquivado.",
           "empower": "Realizas un segundo ataque en una dirección diferente."
@@ -228,9 +228,9 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera mediana",
-          "crit": "Los objetivos sufren quemadura media y quedan cegados 1 ronda.",
+          "crit": "Los objetivos sufren quemadura media y quedan con Confundido-1 durante 1 ronda.",
           "duration": "Instantáneo",
-          "desc": "Liberas una explosión de energía solar que inflige 2d10 + CAR daño Radiante e inflige quemadura media a los enemigos. Los aliados vinculados en el área se curan Rango + 2 Vitalidad y reducen sus heridas permanentes un paso.",
+          "desc": "Liberas una explosión de energía solar que inflige 2d10 + CAR daño Radiante e inflige quemadura media a los enemigos. Los aliados vinculados en el área se curan Rango + 2 Vitalidad y reducen su Herido (permanente) un nivel.",
           "empower": "Aumenta el radio un paso y permite seleccionar objetivos individuales para daño o curación."
         },
         {
@@ -243,7 +243,7 @@
           "cost": "1 acción, 3 chi",
           "range": "Toque",
           "duration": "Instantáneo",
-          "desc": "Restauras toda la Vitalidad del objetivo y Rango + 2 PV. Eliminas todas las heridas permanentes y aflicciones. Puede resucitar a una criatura muerta hace menos de 1 hora.",
+          "desc": "Restauras toda la Vitalidad del objetivo y Rango + 2 PV. Eliminas todo el Herido (permanente) y aflicciones. Puede resucitar a una criatura muerta hace menos de 1 hora.",
           "empower": "Puedes lanzarlo sobre ti mismo como acción bonus."
         },
         {
@@ -257,7 +257,7 @@
           "cost": "2 acciones, 3 chi",
           "range": "Toque",
           "duration": "Seis rondas",
-          "desc": "Colocas un sello de regeneración sobre el objetivo. Al inicio de cada turno, el objetivo recupera Rango + 2 Vitalidad y reduce una herida permanente o aflicción un paso.",
+          "desc": "Colocas un sello de regeneración sobre el objetivo. Al inicio de cada turno, el objetivo recupera Rango + 2 Vitalidad y reduce Herido (permanente) o aflicción un paso.",
           "empower": "El objetivo regenera el doble esta ronda."
         }
       ]
@@ -279,7 +279,7 @@
           ],
           "cost": "3 acciones, 5 chi",
           "area": "Radio grande",
-          "crit": "Los objetivos quedan cegados durante una ronda.",
+          "crit": "Los objetivos quedan con Confundido-1 durante una ronda.",
           "duration": "Siete rondas",
           "desc": "Desatas una fuente de energía vital pura. El ataque inicial inflige 3d10 + CAR daño Radiante. Durante la sobrecarga: obtienes Ventaja en tiros de Vida, las criaturas vivas aliadas recuperan Rango + 2 Vitalidad al inicio de cada turno, las criaturas que mueran resucitan inmediatamente a 1 PV (una vez) y los no-muertos y criaturas malignas sufren daño continuo.",
           "empower": "N/A"

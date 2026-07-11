@@ -150,7 +150,7 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera mediana",
-          "crit": "Los afectados quedan aturdidos 1 ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante 1 ronda.",
           "desc": "Pronuncias una palabra de poder divino. Los enemigos de fe opuesta deben superar un tiro de salvación de CON o sufren 2d10 + SAB daño Sónico y quedan sordos. Mata invocaciones enemigas instantáneamente.",
           "empower": "Aumenta el área a esfera grande."
         },

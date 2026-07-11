@@ -27,7 +27,7 @@
           ],
           "cost": "1 acción",
           "range": "Cuerpo a cuerpo",
-          "crit": "El afectado queda fatigado durante una ronda.",
+          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
           "duration": "Instantáneo",
           "desc": "Realizas un ataque de toque. El objetivo debe superar un tiro de salvación de CON o sufre 1d6 + Rango daño Frío. Además, reduce su Vitalidad y PV máximos (Aflicción nivel 1).",
           "empower": "Aumenta el alcance a medio."
@@ -42,7 +42,7 @@
           ],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "El afectado queda fatigado durante una ronda.",
+          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
           "duration": "Instantáneo",
           "desc": "Lanzas un corte de energía sombría a distancia. Inflige 1d6 + Rango daño Frío y reduce la Vitalidad y PV máximos del objetivo (Aflicción nivel 1).",
           "empower": "Afecta a una criatura adicional a distancia media."
@@ -58,7 +58,7 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "desc": "Creas una nube de oscuridad que apaga fuentes de luz y disipa hechizos de Vida de Rango menor. Las criaturas dentro quedan cegadas y obtienen ocultamiento.",
+          "desc": "Creas una nube de oscuridad que apaga fuentes de luz y disipa hechizos de Vida de Rango menor. Las criaturas dentro quedan con Confundido-1 y obtienen ocultamiento.",
           "empower": "Extiende el área a esfera mediana o mueve la nube un paso."
         }
       ]
@@ -78,7 +78,7 @@
           "cost": "1 o más acciones, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
-          "crit": "El afectado queda fatigado durante una ronda.",
+          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
           "duration": "Instantáneo",
           "desc": "Lanzas una explosión de energía sombría que inflige 1d6 + CAR daño Frío y reduce Vitalidad y PV máximos. Puedes cargarla: por cada 2 acciones adicionales gastadas (máximo 4 acciones totales), aumenta el daño en +1d6 y el radio en +1 paso. Requiere oscuridad para cargar.",
           "empower": "Lanza una bola sombría adicional a otro objetivo."
@@ -104,7 +104,7 @@
           ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
-          "crit": "El afectado queda fatigado durante una ronda.",
+          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
           "duration": "Concentración",
           "desc": "Solidificas la oscuridad para atrapar a un objetivo. El objetivo debe superar un tiro de Heroísmo o Destrozar contra tu Sombría o queda Enredado y sufre 1d6 + Rango daño Frío. Mientras permanezca atrapado, sufre daño recurrente cada vez que falle el tiro para escapar.",
           "empower": "Afecta a un objetivo adicional."
@@ -142,7 +142,7 @@
           ],
           "cost": "2 chi",
           "duration": "Hasta que sea eliminada",
-          "desc": "Al impactar con un ataque Sombrío, puedes maldecir al objetivo. La maldición impide toda curación y recuperación de cordura. El efecto empeora con el daño recibido o el paso del tiempo: nivel 1 (sin moral), nivel 2 (exhausto), nivel 3 (catatónico), nivel 4 (muerte o transformación en Criatura Sombría).",
+          "desc": "Al impactar con un ataque Sombrío, puedes maldecir al objetivo. La maldición impide toda curación y recuperación de cordura. El efecto empeora con el daño recibido o el paso del tiempo: nivel 1 (sin moral), nivel 2 (Fatigado-3), nivel 3 (Confundido-4), nivel 4 (muerte o transformación en Criatura Sombría).",
           "empower": "Realizas un ataque de Toque Sombrío como acción bonus contra un objetivo maldito."
         },
         {

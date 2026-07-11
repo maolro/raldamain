@@ -90,7 +90,7 @@
     "description": ""
   },
   {
-    "id": "nueva_criatura_1778930416376",
+    "id": "planta_carnivora_gigante",
     "name": "Planta Carnívora Gigante",
     "type": "Planta",
     "level": 11,
@@ -99,11 +99,11 @@
     "description": ""
   },
   {
-    "id": "planta_carnivora_gigante",
-    "name": "Planta Carnívora Gigante",
-    "type": "Planta",
-    "level": 11,
-    "size": "Enorme",
+    "id": "fenix_oscuro",
+    "name": "Fénix Oscuro",
+    "type": "Espíritu",
+    "level": 16,
+    "size": "Mediano",
     "image": "",
     "description": ""
   }

@@ -29,7 +29,7 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "crit": "El objetivo es tropezado",
+          "crit": "el objetivo cae con Ralentizado-1",
           "duration": "Instantáneo",
           "desc": "Disparas un chorro a presión que provoca 1d6 + SAB daño Contundente además que empuja un paso al objetivo. Este ataque puede herir a seres incorpóreos y apagará todos los fuegos a su paso.",
           "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
@@ -44,7 +44,7 @@
           "cost": "1 Acción/Reacción, 1 chi",
           "range": "Toque",
           "duration": "Instantáneo",
-          "desc": "Una criatura que toques se cura Rango + 2 Vitalidad y se cura de un efecto de estado negativo o reduce el nivel de una herida permanente por un paso. \nSi empleas esta habilidad contra un no-muerto, haz un tiro de ataque contra él que provoca 2d6 + SAB daño Radiante al impactar y lo ralentiza durante una ronda.",
+          "desc": "Una criatura que toques se cura Rango + 2 Vitalidad y se cura de un efecto de estado negativo o reduce el nivel de Herido (permanente) por un paso. \nSi empleas esta habilidad contra un no-muerto, haz un tiro de ataque contra él que provoca 2d6 + SAB daño Radiante al impactar y lo ralentiza durante una ronda.",
           "empower": "Aumenta el área de este efecto a un radio corto (medio si empoderas por segunda vez). No obstante, solo podrás afectar a criaturas que estén en contacto con el agua."
         },
         {
@@ -91,7 +91,7 @@
           "duration": "Concentración",
           "desc": "Crea una ola que ataca a todas las criaturas en su área, infligiendo 2d6 + SAB daño Contundente además de empujar un paso y tropezar (hace falta un tiro de salvación Físico para resistir). Si mantienes la concentración, puedes mover la ola un paso cada ronda gastando una Acción, pudiendo así atacar a todo objetivo en su paso.",
           "empower": "Creas una segunda ola en dirección diferente. Cuando gastes una acción para controlar una ola, puedes mover a ambas y atacar a cada objetivo a su paso.",
-          "crit": "Los objetivos quedan tropezados"
+          "crit": "Los objetivos quedan con Ralentizado-1"
         },
         {
           "name": "Infusión de Agua",
@@ -119,7 +119,7 @@
           ],
           "cost": "2 chi",
           "range": "Medio",
-          "crit": "Objetivo fatigado y se ahoga un paso adicional.",
+          "crit": "Objetivo con Fatigado-1 y se ahoga un paso adicional.",
           "duration": "Concentración",
           "desc": "Al impactar con un ataque de agua, puedes forzar al afectado a tener éxito en un tiro de salvación Físico o queda agarrado. Mientras permanezca agarrado, estará también ahogado hasta que escape o el efecto sea eliminado.",
           "empower": "Afecta a un objetivo adicional impactado."
@@ -198,9 +198,9 @@
           ],
           "cost": "1 acción, 2 chi",
           "area": "Línea mediana",
-          "crit": "Herida media, tropezado y pierde un contador de escudo adicional.",
+          "crit": "Herido-2, con Ralentizado-1 y pierde un contador de escudo adicional.",
           "duration": "Instantáneo",
-          "desc": "Dispara un chorro de agua a presión que inflige 4d8 + SAB daño Contundente, empuja y una herida leve al impactar. Este ataque ignora los muros a su paso además que romperá la armadura y eliminará un contador de escudo que tenga.",
+          "desc": "Dispara un chorro de agua a presión que inflige 4d8 + SAB daño Contundente, empuja y Herido-1 al impactar. Este ataque ignora los muros a su paso además que romperá la armadura y eliminará un contador de escudo que tenga.",
           "empower": "Haz un segundo ataque contra objetivos diferentes o los mismos, quienes deberán defenderse con el mismo resultado."
         }
       ],

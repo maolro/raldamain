@@ -80,7 +80,7 @@
           "name": "Sanación Espiritual",
           "tags": ["Innata", "Sanación"],
           "cost": "1 chi",
-          "desc": "Recuperas una cantidad de Vitalidad igual a tu Rango o reduces el nivel de una herida permanente en 1. Este efecto se anula durante 1 ronda si recibes daño de Hierro Frío.",
+          "desc": "Recuperas una cantidad de Vitalidad igual a tu Rango o reduces el nivel de Herido (permanente) en 1. Este efecto se anula durante 1 ronda si recibes daño de Hierro Frío.",
           "empower": "En lugar del efecto normal, te recuperas de un efecto de estado o maldición. Si empoderas esta habilidad, no puedes usar el efecto base en el mismo turno."
         }
       ]

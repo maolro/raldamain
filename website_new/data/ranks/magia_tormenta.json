@@ -29,7 +29,7 @@
           "cost": "1 acción",
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
-          "crit": "El objetivo queda aturdido durante una ronda.",
+          "crit": "El objetivo queda con Aturdido-2 durante una ronda.",
           "desc": "Canaliza una descarga eléctrica a través del contacto directo que inflige 1d6 + SAB/CAR daño Eléctrico al objetivo. Los enemigos que lleven armadura metálica tienen Desventaja en sus tiros defensivos contra este ataque.",
           "empower": "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo."
         },
@@ -89,7 +89,7 @@
           "cost": "1+ acciones, 1 chi",
           "area": "Línea grande",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan aturdidos durante una ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
           "desc": "Lanza una descarga eléctrica en línea recta que inflige 2d6 + CAR daño Eléctrico a todos los que alcance. Los objetivos con armadura metálica tienen Desventaja en sus tiros defensivos. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 por carga (máximo 2 cargas). Si hay puntos conductores en el trayecto, el rayo puede saltar entre ellos e infligir daño a los que se encuentren cerca.",
           "empower": "Lanza un relámpago adicional en otra dirección desde el punto de impacto con la misma cantidad de cargas."
         },
@@ -143,7 +143,7 @@
           ],
           "cost": "1 Acción, 2 chi",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan aturdidos durante una ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
           "empower": "Aumenta el área de efecto de este hechizo por un paso y el daño por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada.",
           "area": "Esfera pequeña",
           "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Eléctrico y Sónico al impactar y ensordece durante una ronda.Todos los objetivos con armadura metálica solo podrán defenderse con un tiro de Voluntad."
@@ -165,7 +165,7 @@
           "cost": "1 Acción/Reacción, 1 chi",
           "duration": "Instantáneo",
           "desc": "Canaliza una descarga eléctrica a través de tu propio cuerpo para reiniciarte. Recuperas Vitalidad igual a tu Rango x 2 y eliminas un efecto de estado negativo. Esta habilidad solo puede emplearse si te encuentras en una zona de tormenta o al recibir un ataque de daño Eléctrico, cuyo daño se anula de inmediato.",
-          "empower": "Recuperas Vitalidad adicional igual a tu Rango y reduces el nivel de una herida permanente por un paso."
+          "empower": "Recuperas Vitalidad adicional igual a tu Rango y reduces el nivel de Herido (permanente) por un paso."
         },
         {
           "name": "Esferas del Relámpago",
@@ -190,7 +190,7 @@
           "cost": "2 acciones, 2 chi",
           "area": "Cilindro pequeño",
           "duration": "Concentración",
-          "crit": "Los afectados quedan aturdidos durante una ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
           "desc": "Crea un torbellino de electricidad y viento que inflige 3d8 + CAR daño Eléctrico a todos los que alcance y los ralentiza una ronda. El torbellino puede moverse como acción. Las criaturas con armadura metálica tienen Desventaja para resistir sus efectos.",
           "empower": "Crea un torbellino adicional o aumenta el daño del existente en 1d8 y su alcance un paso durante una ronda."
         }
@@ -212,8 +212,8 @@
           "cost": "2 acciones, 3 chi",
           "area": "Línea grande",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan aturdidos automáticamente sin tiro de salvación.",
-          "desc": "Invoca un rayo devastador que desciende desde las nubes sobre el área afectada, infligiendo 4d10 + CAR daño Eléctrico a todos los que alcance y ralentizándolos. Los afectados deben superar un tiro de salvación de Voluntad o quedan aturdidos durante una ronda. Si se emplea desde una tormenta activa, cae directamente del cielo y no puede ser bloqueado por barreras ni muros.",
+          "crit": "Los afectados quedan con Aturdido-2 automáticamente sin tiro de salvación.",
+          "desc": "Invoca un rayo devastador que desciende desde las nubes sobre el área afectada, infligiendo 4d10 + CAR daño Eléctrico a todos los que alcance y ralentizándolos. Los afectados deben superar un tiro de salvación de Voluntad o quedan con Aturdido-2 durante una ronda. Si se emplea desde una tormenta activa, cae directamente del cielo y no puede ser bloqueado por barreras ni muros.",
           "empower": "Invoca un segundo rayo sobre el mismo área o uno diferente."
         },
         {
@@ -239,8 +239,8 @@
           "cost": "1 acción, 3 chi",
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
-          "crit": "El objetivo sufre una herida permanente crítica.",
-          "desc": "Desatas toda la electricidad acumulada en tu cuerpo a través del contacto directo. Inflige 5d10 + CAR daño Eléctrico, una herida grave y deja al objetivo aturdido. Los objetivos con armadura metálica no pueden defenderse de este ataque.",
+          "crit": "El objetivo sufre Herido-4 (Herida Crítica Incurable).",
+          "desc": "Desatas toda la electricidad acumulada en tu cuerpo a través del contacto directo. Inflige 5d10 + CAR daño Eléctrico, Herido-3 y deja al objetivo con Aturdido-2. Los objetivos con armadura metálica no pueden defenderse de este ataque.",
           "empower": "Afecta a un objetivo adicional adyacente al primero."
         }
       ]

@@ -40,7 +40,7 @@
             "Reacción"
           ],
           "cost": "1 Reacción, 1 chi",
-          "desc": "Recuperas Rango + 2 Vitalidad y reduce los penalizadores de una herida permanente, tratándola  así como de un nivel menor hasta que termine el combate."
+          "desc": "Recuperas Rango + 2 Vitalidad y reduce los penalizadores de Herido (permanente), tratándola  así como de un nivel menor hasta que termine el combate."
         }
       ]
     },
@@ -54,7 +54,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a daño Sónico, Aturdimiento y Maniobras. Inmune a efectos críticos de Aturdimiento y Ralentización."
+          "desc": "Obtienes Resistencia a daño Sónico, Aturdido y Maniobras. Inmune a efectos críticos de Aturdido y Ralentizado."
         },
         {
           "name": "Resiliencia",
@@ -77,7 +77,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Puedes seguir luchando a 0 PV o menos, realizando tiros de muerte. Las heridas permanentes reducen su gravedad en un paso."
+          "desc": "Puedes seguir luchando a 0 PV o menos, realizando tiros de muerte. Tu Herido (permanente) se reduce un nivel."
         },
         {
           "name": "Constitución Férrea",
@@ -85,7 +85,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a Aflicciones y daño Necrótico. Inmune a efectos críticos de Enfermedad y Náuseas."
+          "desc": "Obtienes Resistencia a Aflicciones y daño Necrótico. Inmune a efectos críticos de Enfermado."
         }
       ]
     },
@@ -104,7 +104,11 @@
           "range": "Propio",
           "duration": "Concentración",
           "desc": "Obtienes una cantidad de Escudos igual a tu Rango.",
-          "empower": "Recuperas Escudos iguales a (Rango / 2)."
+          "empower": "Recuperas Escudos iguales a (Rango / 2).",
+          "toggle": {
+            "label": "Muro Viviente",
+            "ce": "rango"
+          }
         },
         {
           "name": "Aguantar los Elementos",
@@ -112,7 +116,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a daño de Frío, Fuego, Ácido y Eléctrico. Inmune a efectos críticos de Quemadura y Parálisis."
+          "desc": "Obtienes Resistencia a daño de Frío, Fuego, Ácido y Eléctrico. Inmune a efectos críticos de Quemadura y Aturdido."
         }
       ]
     },
@@ -127,8 +131,8 @@
             "Pasiva",
             "Sanación"
           ],
-          "desc": "Al inicio de tu turno, recuperas (Rango + 2) de Vitalidad. Si tienes heridas permanentes, en su lugar reduces el nivel de una herida en un paso.",
-          "empower": "Reduce el nivel de una herida permanente (no crítica) en un paso."
+          "desc": "Al inicio de tu turno, recuperas (Rango + 2) de Vitalidad. Si tienes Herido (permanente), en su lugar reduces su nivel en un paso.",
+          "empower": "Reduce el nivel de Herido (permanente) (no crítica) en un paso."
         },
         {
           "name": "Una Última Resistencia",

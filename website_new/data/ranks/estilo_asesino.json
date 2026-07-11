@@ -24,7 +24,7 @@
           "name": "Ataque Furtivo",
           "tags": ["Asesino", "Mejora"],
           "cost": "1 chi",
-          "desc": "Tu siguiente ataque provoca un dado de daño adicional y una herida leve al impactar. Debes declarar esta habilidad antes de atacar."
+          "desc": "Tu siguiente ataque provoca un dado de daño adicional y Herido-1 al impactar. Debes declarar esta habilidad antes de atacar."
         }
       ]
     },
@@ -90,19 +90,25 @@
           "tags": ["Asesino", "Duradera"],
           "cost": "2 acciones, 2 chi",
           "duration": "Seis rondas",
-          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Asesino. Además, tus ataques provocan un dado de daño adicional y una herida leve al impactar."
+          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Asesino. Además, tus ataques provocan un dado de daño adicional y Herido-1 al impactar.",
+          "toggle": {
+            "label": "Maestría Asesino",
+            "adv": ["Ataque"],
+            "adv_tags": ["Asesino"],
+            "damage": "+1 dado"
+          }
         },
         {
           "name": "Impacto Deshabilitante",
           "tags": ["Asesino", "Mejora"],
           "cost": "2 chi",
-          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o una parte de su cuerpo queda debilitada como si sufriese una herida permanente crítica. Este efecto desaparece cuando el afectado reciba sanación. La parte del cuerpo afectada es aleatoria salvo que declares esta habilidad antes de atacar."
+          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o una parte de su cuerpo queda debilitada como si sufriese Herido-4 (Herida Crítica Incurable). Este efecto desaparece cuando el afectado reciba sanación. La parte del cuerpo afectada es aleatoria salvo que declares esta habilidad antes de atacar."
         },
         {
           "name": "Furia Asesina",
           "tags": ["Asesino", "Mejora"],
           "cost": "2 chi",
-          "desc": "Realizas tres ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Tu tiro de ataque y daño aumenta en +1 por cada impacto consecutivo. Todos los ataques cuentan como Ataque Furtivo, provocando un dado de daño adicional y una herida leve al impactar (no se acumula con dicha habilidad)."
+          "desc": "Realizas tres ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Tu tiro de ataque y daño aumenta en +1 por cada impacto consecutivo. Todos los ataques cuentan como Ataque Furtivo, provocando un dado de daño adicional y Herido-1 al impactar (no se acumula con dicha habilidad)."
         }
       ]
     },
@@ -114,13 +120,13 @@
           "name": "Impacto Mortal",
           "tags": ["Asesino", "Mejora"],
           "cost": "3 chi",
-          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o sufre 4d6 daño irreducible y una herida crítica. En caso de éxito, sufre la mitad de daño. Este efecto puede activarse con retraso."
+          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o sufre 4d6 daño irreducible y Herido-4 (Herida Crítica Incurable). En caso de éxito, sufre la mitad de daño. Este efecto puede activarse con retraso."
         },
         {
           "name": "Masacre",
           "tags": ["Asesino", "Mejora"],
           "cost": "3 chi",
-          "desc": "Tu siguiente ataque afecta a todos los enemigos en un radio medio y provoca 2d6 daño adicional y una herida leve al impactar. Al terminar el ataque, puedes aparecer en cualquier posición dentro del área afectada sin provocar aperturas."
+          "desc": "Tu siguiente ataque afecta a todos los enemigos en un radio medio y provoca 2d6 daño adicional y Herido-1 al impactar. Al terminar el ataque, puedes aparecer en cualquier posición dentro del área afectada sin provocar aperturas."
         },
         {
           "name": "Proyección de Chi",

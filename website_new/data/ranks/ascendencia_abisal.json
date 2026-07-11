@@ -25,6 +25,7 @@
             "Innata",
             "Pasiva"
           ],
+          "resistances": ["Mental", "Necrótico"],
           "desc": "Obtienes Resistencia a efectos Mentales y Necróticos. Las criaturas abisales te reconocen como aliado. Adquieres una locura permanente."
         },
         {
@@ -34,7 +35,11 @@
             "Mejora"
           ],
           "duration": "6 Rondas",
-          "desc": "Entras en un estado de furia que te otorga Ventaja en tiros de ataque, defensa y magia. Dura hasta 6 rondas. Al terminar, sufres daño a la cordura igual al número de rondas transcurridas. Si tu cordura llega a 0, pierdes el control del personaje."
+          "desc": "Entras en un estado de furia que te otorga Ventaja en tiros de ataque, defensa y magia. Dura hasta 6 rondas. Al terminar, sufres daño a la cordura igual al número de rondas transcurridas. Si tu cordura llega a 0, pierdes el control del personaje.",
+          "toggle": {
+            "label": "Furia Abisal",
+            "adv": ["Ataque", "Defensa", "Magia"]
+          }
         }
       ]
     },
@@ -135,6 +140,8 @@
             "Innata",
             "Pasiva"
           ],
+          "immunities": ["Miedo", "Ilusiones", "Daño de Cordura"],
+          "resistances": ["Aflicciones", "Maldiciones"],
           "desc": "Obtienes Inmunidad a Miedo, Ilusiones y daño a la Cordura. Obtienes Resistencia a Aflicciones y Maldiciones. Las criaturas abisales menores te obedecen. Adquieres otra locura permanente."
         }
       ]

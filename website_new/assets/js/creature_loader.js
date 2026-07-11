@@ -37,6 +37,12 @@ function parseInlineMarkdown(text) {
     return text.replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
+// Format dice strings: "3d8+6 Fuego" → "3d8 + 6 Fuego"
+function formatDice(str) {
+    if (!str) return str;
+    return str.replace(/\s*\+\s*/g, '+').replace(/([a-z0-9])\+/gi, '$1 + ');
+}
+
 function getModifier(score) {
     const mod = Math.floor((score - 10) / 2);
     return mod >= 0 ? `+${mod}` : `${mod}`;
@@ -353,9 +359,14 @@ function renderAction(action, isNewFormat) {
         html += ': ';
     }
 
+    // Number of attacks
+    if (action.attacks && action.attacks > 1) {
+        html += `<strong>${action.attacks} ataques:</strong> `;
+    }
+
     // Attack bonus
     if (action.bonus) {
-        html += `<span class="attack-bonus">${action.bonus}</span> para impactar, `;
+        html += `<span class="attack-bonus">${formatDice(action.bonus)}</span> para impactar, `;
     }
 
     // Reach / Range
@@ -370,7 +381,7 @@ function renderAction(action, isNewFormat) {
 
     // Damage
     if (action.damage) {
-        html += `<span class="damage">${action.damage}</span>. `;
+        html += `<span class="damage">${formatDice(action.damage)}</span>. `;
     }
 
     // Description
@@ -378,9 +389,10 @@ function renderAction(action, isNewFormat) {
         html += `<span class="action-desc">${linkStatusEffects(parseInlineMarkdown(action.desc))}</span>`;
     }
 
-    // Movement note (new format)
-    if (action.move) {
-        html += `<span class="action-move">${action.move}</span> `;
+    // Movement
+    if (action.move != null && action.move !== '') {
+        const moveText = ` Se mueve ${action.move} casillas`;
+        html += `<span class="action-move">${moveText}.</span> `;
     }
 
     html += '</div>';
@@ -404,13 +416,14 @@ function renderReaction(reaction, isNewFormat) {
     }
 
     if (reaction.bonus) {
-        html += `<span class="attack-bonus"> ${reaction.bonus}</span> para defenderse. `;
+        html += `<span class="attack-bonus"> ${formatDice(reaction.bonus)}</span> para defenderse. `;
     }
     if (reaction.desc) {
         html += `<span class="action-desc"> ${linkStatusEffects(parseInlineMarkdown(reaction.desc))}</span>`;
     }
-    if (reaction.move) {
-        html += `<span class="action-move"> ${reaction.move}</span> `;
+    if (reaction.move != null && reaction.move !== '') {
+        const moveText = typeof reaction.move === 'number' ? `Se mueve ${reaction.move} casillas` : reaction.move;
+        html += `<span class="action-move"> ${moveText}.</span> `;
     }
 
     html += '</div>';

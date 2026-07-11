@@ -34,7 +34,7 @@
           ],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "Objetivo sufre herida permanente leve.",
+          "crit": "Objetivo sufre Herido-1 (permanente).",
           "duration": "Instantáneo",
           "desc": "Lanzas un rayo de energía que inflige 1d6 + Rango Arcano de daño. No es esquivable a distancia corta.",
           "empower": "Ataca a un objetivo adicional."
@@ -57,7 +57,7 @@
           ],
           "cost": "2 acciones, 1 chi",
           "area": "Cono pequeño",
-          "crit": "Afectados sufren herida permanente leve.",
+          "crit": "Afectados sufren Herido-1 (permanente).",
           "duration": "Instantáneo",
           "desc": "Proyectas un cono de energía que inflige 1d6 + INT Arcano de daño. Las criaturas que eviten el ataque reciben la mitad de daño.",
           "empower": "Aumenta el tamaño a cono mediano."
@@ -148,9 +148,9 @@
           ],
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
-          "crit": "Objetivo sufre herida permanente media.",
+          "crit": "Objetivo sufre Herido-2 (permanente).",
           "duration": "Instantáneo",
-          "desc": "Inflige 2d8 + INT Arcano de daño y una herida leve. Destruye 1 contador de escudo y rompe la armadura del objetivo. Si el objetivo es reducido a 0 PV, queda desintegrado (muerte instantánea).",
+          "desc": "Inflige 2d8 + INT Arcano de daño y Herido-1. Destruye 1 contador de escudo y rompe la armadura del objetivo. Si el objetivo es reducido a 0 PV, queda desintegrado (muerte instantánea).",
           "empower": "Ataca a un objetivo adicional."
         },
         {
@@ -184,9 +184,9 @@
           "cost": "2 acciones, 3 chi",
           "range": "Medio",
           "area": "Radio medio",
-          "crit": "Afectados sufren herida permanente media.",
+          "crit": "Afectados sufren Herido-2 (permanente).",
           "duration": "Instantáneo",
-          "desc": "Explosión masiva que inflige 2d10 + INT Arcano de daño y una herida leve. Ignora barreras mágicas, destruye 1 contador de escudo y rompe objetos no artefactos.",
+          "desc": "Explosión masiva que inflige 2d10 + INT Arcano de daño y Herido-1. Ignora barreras mágicas, destruye 1 contador de escudo y rompe objetos no artefactos.",
           "empower": "Aumenta el radio a grande o realiza otro ataque en un lugar diferente."
         },
         {
@@ -215,9 +215,9 @@
           ],
           "cost": "3 acciones, 5 chi",
           "area": "Radio grande",
-          "crit": "Muerte instantánea (sin Resistencia Arcana) o herida grave.",
+          "crit": "Muerte instantánea (sin Resistencia Arcana) o Herido-3.",
           "duration": "Instantáneo",
-          "desc": "Inflige 4d10 + INT Arcano de daño y una herida media. Destruye todas las barreras, contadores de escudo y objetos no mágicos en el área. Rompe objetos mágicos. Al resolverse, deja una zona de Irradiación de Chi.",
+          "desc": "Inflige 4d10 + INT Arcano de daño y Herido-2. Destruye todas las barreras, contadores de escudo y objetos no mágicos en el área. Rompe objetos mágicos. Al resolverse, deja una zona de Irradiación de Chi.",
           "empower": "N/A"
         }
       ]

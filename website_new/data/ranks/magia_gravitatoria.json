@@ -20,8 +20,8 @@
           "tags": ["Gravedad", "Maniobra", "Físico"],
           "cost": "1 acción",
           "range": "Cercano",
-          "crit": "Objetivo sufre herida leve.",
-          "desc": "Empujas al objetivo 1 paso con fuerza gravitatoria y lo derribas (Tropezado). Si choca contra una superficie u otra criatura, inflige 1d6 + INT de daño. También puede disipar efectos ambientales en el área.",
+          "crit": "Objetivo sufre Herido-1.",
+          "desc": "Empujas al objetivo 1 paso con fuerza gravitatoria y lo derribas (Ralentizado-1). Si choca contra una superficie u otra criatura, inflige 1d6 + INT de daño. También puede disipar efectos ambientales en el área.",
           "empower": "Afecta a todos los enemigos a distancia cercano o aumenta el daño de esta habilidad por un dado."
         },
         {
@@ -29,7 +29,7 @@
           "tags": ["Gravedad", "Maniobra", "Físico"],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "Objetivo sufre herida leve.",
+          "crit": "Objetivo sufre Herido-1.",
           "desc": "Empleas el poder de la gravedad para lanzar un objeto hacia un enemigo que puedas alcanzar, infligiéndole así 2d6 + INT daño Contundente, Cortante o Perforante al impactar además de empujarlo un paso. Necesitas contar con objetos del tamaño suficiente en tu entorno para usar esta habilidad.",
           "empower": "Añade un dado de daño adicional al ataque y aumenta el radio de efecto por un paso, o haz un segundo ataque como secuencia contra el mismo punto."
         },
@@ -40,7 +40,7 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "crit": "Afectados quedan Tropezados.",
+          "crit": "Afectados quedan con Ralentizado-1.",
           "desc": "Creas una zona de alta gravedad. Todas las criaturas en su área deben tener éxito en un tiro de salvación Físico o serán arrastrados un paso hacia él y quedarán *Enredados*. Pueden repetir el tiro cada ronda para intentar escapar gastando una acción y aquellas criaturas que entren en un espacio afectado por el pozo deberán tener éxito en ese mismo tiro de salvación o sufrirán sus efectos.",
           "empower": "Crea un pozo adicional en otra posición, o emplea un efecto de Empuje Gravitatorio desde un pozo existente para arrastrar hacia su posición."
         }
@@ -65,7 +65,7 @@
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "crit": "Herida leve.",
+          "crit": "Herido-1.",
           "desc": "El objetivo debe etener éxito en un tiro de salvación Físico o perderá inmediatamente la capacidad de volar y quedará *Enredado*. Si está en el aire, sufrirá el daño de Caída correspondiente, el cual oscilará de 2d6 a 6d6. El objetivo puede emplear una acción para intentar liberarse, repitiendo así este mismo tiro.",
           "empower": "Afecta a un objetivo adicional."
         },
@@ -111,7 +111,7 @@
           "range": "Medio",
           "area": "Radio corto",
           "duration": "Instantáneo",
-          "crit": "Herida leve a todos los afectados.",
+          "crit": "Herido-1 a todos los afectados.",
           "desc": "Explosión gravitatoria que inflige 3d8 + INT daño Fuerza. Este ataque ignora las barreras y efectos de gravedad en su camino además que empuja un paso a todos los afectados y los derriba (hace falta tener éxito en un tiro de salvación Físico para evitarlo).",
           "empower": "Dispara una segunda Bomba de Gravedad contra otro objetivo o haz otro ataque contra el mismo objetivo como secuencia."
         }
@@ -146,8 +146,8 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "crit": "Parálisis inmediata.",
-          "desc": "Creas una zona de tiempo ralentizado. Las criaturas en su interior deben tener éxito en un tiro de salvación de Voluntad o sufren Náuseas durante una ronda. Si fallan el tiro de salvación 2 veces, quedan Paralizadas.",
+          "crit": "Aturdido-4 inmediato.",
+          "desc": "Creas una zona de tiempo ralentizado. Las criaturas en su interior deben tener éxito en un tiro de salvación de Voluntad o sufren Enfermado-1 durante una ronda. Si fallan el tiro de salvación 2 veces, quedan con Aturdido-4.",
           "empower": "Bloqueas un ataque automáticamente."
         }
       ]
@@ -163,8 +163,8 @@
           "cost": "2 acciones, 3 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
-          "crit": "Empuje extra y herida leve al chocar.",
-          "desc": "Inviertes la gravedad en el área, forzando a las criaturas a caer dos pasos en la direacción y infligiendo 3d10 + INT daño Fuerza además de quedar *tropezados*. La gravedad ahora será en otro punto de tu elección y, una vez actives esta habilidad, aquellos que se encuentren en dicho punto podrán moverse con normalidad hasta que termine el efecto.",
+          "crit": "Empuje extra y Herido-1 al chocar.",
+          "desc": "Inviertes la gravedad en el área, forzando a las criaturas a caer dos pasos en la direacción y infligiendo 3d10 + INT daño Fuerza además de quedar *Ralentizado-1*. La gravedad ahora será en otro punto de tu elección y, una vez actives esta habilidad, aquellos que se encuentren en dicho punto podrán moverse con normalidad hasta que termine el efecto.",
           "empower": "Cambias la dirección de la gravedad invertida."
         },
         {
@@ -173,8 +173,8 @@
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Concentración",
-          "crit": "Herida media.",
-          "desc": "EL objetivo debe tener éxito en un tiro de salvación Físico o quedará afectado con gravedad extrema, sufriendo así 4d10 + INT daño Fuerza, una herida leve y quedando Agarrado. El objetivo puede gastar una acción para repetir el tiro para liberarse, pero cada vez que fracase sufrirá 2d10 daño Fuerza.",
+          "crit": "Herido-2.",
+          "desc": "EL objetivo debe tener éxito en un tiro de salvación Físico o quedará afectado con gravedad extrema, sufriendo así 4d10 + INT daño Fuerza, Herido-1 y quedando Agarrado. El objetivo puede gastar una acción para repetir el tiro para liberarse, pero cada vez que fracase sufrirá 2d10 daño Fuerza.",
           "empower": "Afecta a un objetivo adicional."
         },
         {

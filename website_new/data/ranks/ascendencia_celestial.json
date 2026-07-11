@@ -133,8 +133,8 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Al inicio de tu turno, recuperas Rango + 2 Vitalidad y reduces una herida permanente o aflicción un paso. Este efecto se anula durante 1 ronda si recibes daño de material anti-celestial.",
-          "empower": "Reduces el nivel de una herida o aflicción adicional."
+          "desc": "Al inicio de tu turno, recuperas Rango + 2 Vitalidad y reduces Herido (permanente) o aflicción un paso. Este efecto se anula durante 1 ronda si recibes daño de material anti-celestial.",
+          "empower": "Reduces el nivel de Herido (permanente) o aflicción adicional."
         },
         {
           "name": "Alma Ascendida",

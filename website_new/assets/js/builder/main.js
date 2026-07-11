@@ -41,6 +41,7 @@ new Vue({
         arcanespecs: {},
         races: {},
         race: {},
+        activeToggles: [],
     },
     methods: {
         updateMySpells(updatedMySpells) {
@@ -132,10 +133,16 @@ new Vue({
                                                 area: ability.area || '',
                                                 duration: ability.duration || '',
                                                 crit: ability.crit || '',
-                                                ...(ability.def  !== undefined ? { def:  ability.def  } : {}),
-                                                ...(ability.hp   !== undefined ? { hp:   ability.hp   } : {}),
-                                                ...(ability.vt   !== undefined ? { vt:   ability.vt   } : {}),
-                                                ...(ability.chi  !== undefined ? { chi:  ability.chi  } : {}),
+                                                ...(ability.def    !== undefined ? { def:    ability.def    } : {}),
+                                                ...(ability.hp     !== undefined ? { hp:     ability.hp     } : {}),
+                                                ...(ability.vt     !== undefined ? { vt:     ability.vt     } : {}),
+                                                ...(ability.chi    !== undefined ? { chi:    ability.chi    } : {}),
+                                                ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
+                                ...(ability.resistances     !== undefined ? { resistances:     ability.resistances     } : {}),
+                                ...(ability.immunities      !== undefined ? { immunities:      ability.immunities      } : {}),
+                                ...(ability.vulnerabilities !== undefined ? { vulnerabilities: ability.vulnerabilities } : {}),
+                                ...(ability.damage          !== undefined ? { damage:          ability.damage          } : {}),
+                                ...(ability.damage_type     !== undefined ? { damage_type:     ability.damage_type     } : {}),
                                             });
                                         }
                                     }
@@ -154,6 +161,21 @@ new Vue({
                                     attributes: attributeIds.join(',')
                                 };
                                 if (statBoosts) rankEntry.stats = statBoosts;
+                                // Detect magic parry from fundamentals
+                                for (const f of (rankData.fundamentals || [])) {
+                                    if (/parada m[aá]gica/i.test(f)) {
+                                        const m = f.match(/[Uu]sas ([^<]+?) para/);
+                                        if (m) {
+                                            const used = m[1].trim();
+                                            const tagM = used.match(/[Mm]agia de (.+)/);
+                                            rankEntry.parry_tag = tagM ? tagM[1] : used;
+                                        } else {
+                                            const titleM = rankData.title.match(/[Mm]agia de (.+)/);
+                                            rankEntry.parry_tag = titleM ? titleM[1] : rankData.title;
+                                        }
+                                        break;
+                                    }
+                                }
 
                                 // Spell grants for ascendencia ranks
                                 const ascSpells = {
@@ -308,39 +330,68 @@ new Vue({
         },
         atbCatString: function (cat) {
             let obArray = this.myatb[cat];
-            const getEmpowerCost = () => '1 chi';
+            const getEmpowerCost = () => '1 chi · máx. 2×';
+            const rankInMap = (skill) => skill && skill in this.ranks;
             return obArray.map(obj => {
                 let formattedString = `<b>${obj.name}</b>`;
-                // Build parenthetical: (tags; cost)
                 let parenParts = [];
                 if (obj.tags) parenParts.push(obj.tags);
                 if (obj.cost) parenParts.push(obj.cost);
                 if (parenParts.length > 0)
                     formattedString += ` (${parenParts.join('; ')})`;
-                // Build description with optional range/area/duration prefix
                 let descParts = [];
                 if (obj.range) descParts.push(obj.range);
                 if (obj.area) descParts.push(obj.area);
                 if (obj.duration) descParts.push(obj.duration);
-                let desc = obj.skill
+                let desc = rankInMap(obj.skill)
                     ? this.replaceTag(obj.description, obj.rank, obj.skill)
-                    : obj.description;
+                    : this.resolveWeaponDesc(obj);
+                desc = this.resolveStatTokens(desc);
+                // Modifier prefix for attack spells or abilities that force saves
+                if (rankInMap(obj.skill)) {
+                    const tagsArr = (obj.tags || '').split(',').map(t => t.trim());
+                    if (tagsArr.includes('Ataque') || (desc && desc.includes('debe superar'))) {
+                        const mainStatKey = this.getMainStat(this.ranks[obj.skill].stat);
+                        const mainStatVal = this.finalStats[mainStatKey].value;
+                        if (mainStatVal !== '-') {
+                            const mod = obj.rank + mainStatVal;
+                            const advCount = this.abilityAdvantageCount(obj);
+                            const advBit = advCount > 0 ? '+' + advCount + 'd6' : '';
+                            const modStr = (mod >= 0 ? '+' + mod : String(mod)) + advBit;
+                            desc = `<b>${modStr}</b> — ` + desc;
+                        }
+                    }
+                }
+                // Inline resistances/immunities granted by this ability
+                const extras = [];
+                if (obj.resistances && obj.resistances.length > 0) extras.push(`Resistencia a ${obj.resistances.join(', ')}`);
+                if (obj.immunities && obj.immunities.length > 0) extras.push(`Inmunidad a ${obj.immunities.join(', ')}`);
+                if (extras.length > 0) desc = (desc ? desc + '. ' : '') + extras.join('. ');
+                // Integrate damage boosts
+                if (obj.damage) {
+                    const dmgBoosts = this.getDamageBoosts(obj);
+                    const boostedDice = dmgBoosts.length > 0 ? this.applyDiceBoosts(obj.damage, dmgBoosts) : obj.damage;
+                    const typeStr = obj.damage_type ? ` ${obj.damage_type}` : '';
+                    const dmgLabel = `<b>${boostedDice}${typeStr} daño</b>`;
+                    desc = desc ? dmgLabel + ' — ' + desc : dmgLabel;
+                } else if (desc && /\d+d\d+(?:\s*[+\-]\s*\d+)?\s+daño/.test(desc)) {
+                    const dmgBoosts = this.getDamageBoosts(obj);
+                    if (dmgBoosts.length > 0) desc = this.applyDamageBoosts(desc, dmgBoosts);
+                }
                 if (desc) descParts.push(desc);
                 if (descParts.length > 0)
                     formattedString += ': ' + descParts.join(', ');
-                // Crit
                 if (obj.crit) {
-                    let crit = obj.skill
-                        ? this.replaceTag(obj.crit, obj.rank, obj.skill)
+                    let crit = rankInMap(obj.skill)
+                        ? this.resolveStatTokens(this.replaceTag(obj.crit, obj.rank, obj.skill))
                         : obj.crit;
                     formattedString += ` Crítico: ${crit}`;
                 }
-                // Empower
                 if (obj.empower) {
-                    let empower = obj.skill
-                        ? this.replaceTag(obj.empower, obj.rank, obj.skill)
+                    let empower = rankInMap(obj.skill)
+                        ? this.resolveStatTokens(this.replaceTag(obj.empower, obj.rank, obj.skill))
                         : obj.empower;
-                    formattedString += ` <i>Empoderar (${getEmpowerCost(obj.skill)}): ${empower}</i>`;
+                    formattedString += ` <i>Empoderar (${getEmpowerCost()}): ${empower}</i>`;
                 }
                 return formattedString;
             }).join("<br><br>");
@@ -494,7 +545,193 @@ ${toMd(this.atbCatString("reactions"))}
             this.myspells = character["spells"];
             this.equipment = character["equipment"];
             this.myarch = character["archetypes"];
-        }
+        },
+        isToggleActive(name) {
+            return this.activeToggles.includes(name);
+        },
+        toggleAbility(name) {
+            const idx = this.activeToggles.indexOf(name);
+            if (idx >= 0) this.activeToggles.splice(idx, 1);
+            else this.activeToggles.push(name);
+        },
+        toggleBenefitText(ab) {
+            const t = ab.toggle;
+            const parts = [];
+            if (t.adv && t.adv.length > 0) parts.push('Vent: ' + t.adv.join(', '));
+            if (t.adv_tags && t.adv_tags.length > 0) parts.push('+1d6 ' + t.adv_tags.join('/'));
+            if (t.saves && t.saves.length > 0) parts.push('Salv: ' + t.saves.join(', '));
+            if (t.damage) parts.push('Daño: ' + t.damage);
+            if (t.def_set != null) parts.push('DEF→' + t.def_set);
+            else if (t.def) parts.push('DEF+' + t.def);
+            if (t.vt_temp) parts.push('+' + t.vt_temp + 'VT');
+            if (t.stat_min != null) parts.push('Est≥' + t.stat_min);
+            if (t.ce) parts.push('CE+' + (typeof t.ce === 'string' && t.ce.toLowerCase() === 'rango' ? 'Rango' : t.ce));
+            if (t.resistances && t.resistances.length > 0) parts.push('Res: ' + t.resistances.join(', '));
+            if (t.immunities && t.immunities.length > 0) parts.push('Inm: ' + t.immunities.join(', '));
+            return parts.join(' · ');
+        },
+        applyDamageBoosts(desc, boosts) {
+            if (!boosts.length || !desc) return desc;
+            // Match the damage dice specifically: NdX (optional +/- modifier) daño
+            // This skips any NdX that appears in the attack modifier prefix
+            const dmgRegex = /(\d+)(d\d+)((?:\s*[+\-]\s*\d+)*)\s+daño/;
+            const match = dmgRegex.exec(desc);
+            if (!match) return desc;
+            let count = parseInt(match[1]);
+            const dieType = match[2];
+            const literalExtra = [];
+            for (const boost of boosts) {
+                const b = boost.trim();
+                if (/\+\d*\s*dado/i.test(b)) {
+                    const n = parseInt((b.match(/\+(\d+)/) || ['', '1'])[1]);
+                    count += n;
+                } else {
+                    const m = b.match(/\+?(\d+d\d+)/i);
+                    if (m) literalExtra.push(m[1]);
+                }
+            }
+            let newDice = count + dieType;
+            if (literalExtra.length > 0) newDice += '+' + literalExtra.join('+');
+            // Replace only the dice part (NdX), leaving the modifier and "daño" intact
+            const diceStr = match[1] + match[2];
+            return desc.substring(0, match.index) + newDice + desc.substring(match.index + diceStr.length);
+        },
+        applyDiceBoosts(diceStr, boosts) {
+            if (!boosts.length || !diceStr) return diceStr;
+            const match = /^(\d+)(d\d+)((?:\s*[+\-]\s*\d+)*)$/.exec(diceStr.trim());
+            if (!match) return diceStr;
+            let count = parseInt(match[1]);
+            const dieType = match[2];
+            const modifier = match[3];
+            const literalExtra = [];
+            for (const boost of boosts) {
+                const b = boost.trim();
+                if (/\+\d*\s*dado/i.test(b)) {
+                    const n = parseInt((b.match(/\+(\d+)/) || ['', '1'])[1]);
+                    count += n;
+                } else {
+                    const m = b.match(/\+?(\d+d\d+)/i);
+                    if (m) literalExtra.push(m[1]);
+                }
+            }
+            let result = count + dieType + modifier;
+            if (literalExtra.length > 0) result += '+' + literalExtra.join('+');
+            return result;
+        },
+        getDamageBoosts(obj) {
+            const tags = (obj.tags || '').split(',').map(t => t.trim().toLowerCase());
+            if (obj.damage_type) tags.push(obj.damage_type.toLowerCase());
+            const hasRankSkill = !!(obj.skill && obj.skill in this.ranks);
+            const hasDamageField = !!obj.damage;
+            // If the ability has an explicit damage field, always check for boosts;
+            // otherwise only apply to attack/improvement abilities and weapon abilities
+            if (!hasDamageField && hasRankSkill && !tags.includes('ataque') && !tags.includes('mejora')) return [];
+            const boosts = [];
+            for (const ab of this.toggleableAbilities) {
+                if (!this.isToggleActive(ab.toggle.label)) continue;
+                const t = ab.toggle;
+                if (!t.damage) continue;
+                let applies = false;
+                if (t.adv) {
+                    for (const adv of t.adv) {
+                        if (tags.includes(adv.toLowerCase())) { applies = true; break; }
+                    }
+                }
+                if (!applies && t.adv_tags) {
+                    for (const group of t.adv_tags) {
+                        const required = group.split('+').map(s => s.trim().toLowerCase());
+                        if (required.every(r => tags.includes(r))) { applies = true; break; }
+                    }
+                }
+                if (!applies && hasRankSkill) {
+                    const mainStatKey = this.getMainStat(this.ranks[obj.skill].stat);
+                    if (t.adv) {
+                        if      (t.adv.includes('Físico')   && ['str', 'dex', 'con'].includes(mainStatKey)) applies = true;
+                        else if (t.adv.includes('Voluntad') && ['con', 'cha'].includes(mainStatKey))        applies = true;
+                        else if (t.adv.includes('Mental')   && ['itl', 'wis'].includes(mainStatKey))        applies = true;
+                    }
+                }
+                if (applies) boosts.push(t.damage);
+            }
+            return boosts;
+        },
+        resolveStatTokens(str) {
+            if (!str) return str;
+            const fs = this.finalStats;
+            const statMap = {
+                'FUE': fs.str.value, 'DES': fs.dex.value, 'CON': fs.con.value,
+                'INT': fs.itl.value, 'SAB': fs.wis.value, 'CAR': fs.cha.value
+            };
+            // Replace STAT1/STAT2 alternatives (pick max)
+            str = str.replace(/\b(FUE|DES|CON|INT|SAB|CAR)\/(FUE|DES|CON|INT|SAB|CAR)\b/g, (_, a, b) => {
+                const va = statMap[a], vb = statMap[b];
+                if (va === '-' && vb === '-') return '-';
+                if (va === '-') return String(vb);
+                if (vb === '-') return String(va);
+                return String(Math.max(va, vb));
+            });
+            // Replace individual stat tokens
+            return str.replace(/\b(FUE|DES|CON|INT|SAB|CAR)\b/g, (_, token) => {
+                const v = statMap[token];
+                return v === '-' ? '-' : String(v);
+            });
+        },
+        abilityAdvantageCount(obj) {
+            const tags = (obj.tags || '').split(',').map(t => t.trim().toLowerCase());
+            let count = 0;
+            for (const ab of this.toggleableAbilities) {
+                if (!this.isToggleActive(ab.toggle.label)) continue;
+                const t = ab.toggle;
+                let grants = false;
+                if (t.adv) {
+                    for (const adv of t.adv) {
+                        if (tags.includes(adv.toLowerCase())) { grants = true; break; }
+                    }
+                }
+                if (!grants && t.adv_tags) {
+                    for (const group of t.adv_tags) {
+                        const required = group.split('+').map(s => s.trim().toLowerCase());
+                        if (required.every(r => tags.includes(r))) { grants = true; break; }
+                    }
+                }
+                if (!grants && obj.skill && obj.skill in this.ranks) {
+                    const mk = this.getMainStat(this.ranks[obj.skill].stat);
+                    const has = (types) => types.some(s =>
+                        (t.adv && t.adv.includes(s)) || (t.saves && t.saves.includes(s)));
+                    if      (['str','dex','con'].includes(mk) && has(['Físico']))            grants = true;
+                    else if (['con','cha'].includes(mk)       && has(['Voluntad','Físico'])) grants = true;
+                    else if (['itl','wis'].includes(mk)       && has(['Mental']))            grants = true;
+                }
+                if (grants) count++;
+            }
+            return Math.min(count, 4);
+        },
+        resolveWeaponDesc(obj) {
+            const desc = obj.description || '';
+            if (!desc.includes('MOD') && !desc.includes('STAT')) return desc;
+            const tags = (obj.tags || '').toLowerCase();
+            const strV = this.finalStats.str.value === '-' ? 0 : this.finalStats.str.value;
+            const dexV = this.finalStats.dex.value === '-' ? 0 : this.finalStats.dex.value;
+            const colosoRk   = this.getRank('estilo_coloso');
+            const duelistaRk = this.getRank('estilo_duelista');
+            const asesinоRk  = this.getRank('estilo_asesino');
+            let stat, mod;
+            if (tags.includes('pesada') || tags.includes('pesado')) {
+                stat = strV; mod = strV + colosoRk;
+            } else if (tags.includes('duelo')) {
+                stat = Math.max(strV, dexV); mod = Math.max(strV, dexV) + duelistaRk;
+            } else if (tags.includes('ligera') || tags.includes('a distancia')) {
+                stat = dexV; mod = dexV + asesinоRk;
+            } else {
+                stat = Math.max(strV, dexV); mod = Math.max(strV, dexV);
+            }
+            const advCount = this.abilityAdvantageCount(obj);
+            const advStr = advCount > 0 ? '+' + advCount + 'd6' : '';
+            const modStr = (mod >= 0 ? '+' + mod : String(mod)) + advStr;
+            return desc
+                .replace(/\+MOD\b/g, modStr)
+                .replace(/\bSTAT\b/g, String(stat));
+        },
     },
     computed: {
         hp: function () {
@@ -638,6 +875,19 @@ ${toMd(this.atbCatString("reactions"))}
                     }
                 }
             }
+            for (const rs of this.toggleBuffs.resistances) {
+                if (!rsobj.immunities.includes(rs) && !rsobj.supresist.includes(rs) && !rsobj.resistances.includes(rs))
+                    rsobj.resistances.push(rs);
+            }
+            for (const rs of this.toggleBuffs.immunities) {
+                if (!rsobj.immunities.includes(rs)) {
+                    const rIdx = rsobj.resistances.indexOf(rs);
+                    if (rIdx >= 0) rsobj.resistances.splice(rIdx, 1);
+                    const sIdx = rsobj.supresist.indexOf(rs);
+                    if (sIdx >= 0) rsobj.supresist.splice(sIdx, 1);
+                    rsobj.immunities.push(rs);
+                }
+            }
             return {
                 vulnerabilities: rsobj.vulnerabilities.join(", "),
                 resistances: rsobj.resistances.join(", "),
@@ -760,10 +1010,25 @@ ${toMd(this.atbCatString("reactions"))}
             const fs = this.finalStats;
             const sum = (a, b) => (a === '-' || b === '-') ? '-' : a + b;
             const fmt = v => v === '-' ? '-' : (v >= 0 ? '+' + v : String(v));
+            const countSave = (saveType) => {
+                let n = 0;
+                for (const ab of this.toggleableAbilities) {
+                    if (!this.isToggleActive(ab.toggle.label)) continue;
+                    const t = ab.toggle;
+                    let grants = (t.adv && t.adv.includes(saveType)) || (t.saves && t.saves.includes(saveType));
+                    if (!grants && saveType === 'Voluntad')
+                        grants = (t.adv && t.adv.includes('Físico')) || (t.saves && t.saves.includes('Físico'));
+                    if (!grants && (saveType === 'Voluntad' || saveType === 'Mental'))
+                        grants = !!(t.resistances && t.resistances.some(r => ['Miedo', 'Mental'].includes(r)));
+                    if (grants) n++;
+                }
+                return Math.min(n, 4);
+            };
+            const advStr = (base, count) => (count > 0 && base !== '-') ? base + '+' + count + 'd6' : base;
             return {
-                fisico:   fmt(sum(fs.str.value, fs.dex.value)),
-                voluntad: fmt(sum(fs.con.value, fs.cha.value)),
-                mental:   fmt(sum(fs.itl.value, fs.wis.value)),
+                fisico:   advStr(fmt(sum(fs.str.value, fs.dex.value)), countSave('Físico')),
+                voluntad: advStr(fmt(sum(fs.con.value, fs.cha.value)), countSave('Voluntad')),
+                mental:   advStr(fmt(sum(fs.itl.value, fs.wis.value)), countSave('Mental')),
             };
         },
         finalStats: function () {
@@ -799,13 +1064,24 @@ ${toMd(this.atbCatString("reactions"))}
             }
             if ('penalty' in this.equipment.armor && -statsRes.str.value > this.equipment.armor.penalty)
                 statsRes.dex.value += this.equipment.armor.penalty;
+            const tb = this.toggleBuffs;
+            if (tb.stat_min !== null) {
+                for (const stat of tb.stat_min_list) {
+                    if (stat in statsRes && statsRes[stat].value !== '-' && statsRes[stat].value < tb.stat_min)
+                        statsRes[stat].value = tb.stat_min;
+                }
+            }
             return statsRes;
         },
         def: function () {
-            res = 0;
+            let res = 0;
             if (this.equipment.armor.def != null)
                 res += this.equipment.armor.def;
-            return res + this.sumAllKeys('def', this.myatb.passive);
+            res += this.sumAllKeys('def', this.myatb.passive);
+            res += this.toggleBuffs.def;
+            if (this.toggleBuffs.def_set !== null && res < this.toggleBuffs.def_set)
+                res = this.toggleBuffs.def_set;
+            return res;
         },
         actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
@@ -813,7 +1089,56 @@ ${toMd(this.atbCatString("reactions"))}
         arclevels: function () {
             return this.sumAllKeys('rank', this.myarch);
         },
+        defenseReactions: function () {
+            const fs = this.finalStats;
+            const dexV = fs.dex.value === '-' ? 0 : fs.dex.value;
+            const reflejosRank = this.getRank('reflejos');
+            const fmtMod = (num, adv) => {
+                const base = num >= 0 ? '+' + num : String(num);
+                return adv > 0 ? base + '+' + adv + 'd6' : base;
+            };
+            const lines = [];
+
+            // Esquiva — always present
+            const esquivaMod = dexV + reflejosRank;
+            const esquivaAdv = this.abilityAdvantageCount({ tags: 'Reflejos, Defensiva' });
+            lines.push(`<b>Esquiva</b> (Reflejos, Defensiva): ${fmtMod(esquivaMod, esquivaAdv)} para defenderse`);
+
+            // Parada Mágica — one per magic rank with a parry_tag
+            const seenParry = new Set();
+            for (const key in this.myranks) {
+                const rk = this.myranks[key];
+                if (rk.rank <= 0) continue;
+                const rd = this.ranks[rk.id];
+                if (!rd || !rd.parry_tag || seenParry.has(rd.parry_tag)) continue;
+                seenParry.add(rd.parry_tag);
+                const mainStatKey = this.getMainStat(rd.stat);
+                const statVal = fs[mainStatKey] ? fs[mainStatKey].value : '-';
+                const mod = statVal === '-' ? null : statVal + rk.rank;
+                const parryAdv = this.abilityAdvantageCount({ tags: rd.parry_tag + ', Defensiva' });
+                const modStr = mod === null ? '-' : fmtMod(mod, parryAdv);
+                lines.push(`<b>Parada Mágica</b> (${rd.parry_tag}, Defensiva): ${modStr} para defenderse`);
+            }
+
+            // Parada — one per weapon style equipped (deduped)
+            const styleTagMap = { heavy: 'Pesadas', duelist: 'Duelo', light: 'Ligeras', ranged: 'A Distancia', flex: 'Flexible' };
+            const seenWeap = new Set();
+            for (const weapon of [this.equipment.mainHand, this.equipment.secondHand]) {
+                if (!weapon || !weapon.name || !weapon.style || weapon.style === 'shield') continue;
+                const tag = styleTagMap[weapon.style] || weapon.style;
+                if (seenWeap.has(tag)) continue;
+                seenWeap.add(tag);
+                const mod = this.weaponMod(weapon);
+                if (!mod) continue;
+                const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' });
+                const modStr = parryAdv > 0 ? mod + '+' + parryAdv + 'd6' : mod;
+                lines.push(`<b>Parada</b> (${tag}, Defensiva): ${modStr} para defenderse`);
+            }
+
+            return lines.join('<br><br>');
+        },
         weaponString: function () {
+            const atkAdv = this.toggleBuffs.adv.includes('Ataque');
             const slots = [
                 { label: 'MP', weapon: this.equipment.mainHand },
                 { label: 'MS', weapon: this.equipment.secondHand }
@@ -823,12 +1148,55 @@ ${toMd(this.atbCatString("reactions"))}
                 .filter(s => s.weapon && s.weapon.name)
                 .map(s => {
                     const mod = this.weaponMod(s.weapon);
+                    const modStr = mod ? (atkAdv ? mod + '+1d6' : mod) : null;
                     const style = s.weapon.style ? styleLabel[s.weapon.style] : null;
-                    const suffix = [mod, style ? `(${style})` : null].filter(Boolean).join(' ');
+                    const suffix = [modStr, style ? `(${style})` : null].filter(Boolean).join(' ');
                     return suffix ? `${s.weapon.name} ${suffix}` : s.weapon.name;
                 })
                 .join(', ');
-        }
+        },
+        toggleableAbilities: function () {
+            const all = [...this.myatb.passive, ...this.myatb.actions, ...this.myatb.reactions];
+            const seen = new Set();
+            return all.filter(a => {
+                if (!a.toggle) return false;
+                const key = a.toggle.label;
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        },
+        toggleBuffs: function () {
+            const buffs = {
+                adv: [], adv_tags: [], saves: [],
+                def: 0, def_set: null, vt_temp: 0,
+                stat_min: null, stat_min_list: [], ce: 0,
+                resistances: [], immunities: [], damage: []
+            };
+            for (const ab of this.toggleableAbilities) {
+                if (!this.isToggleActive(ab.toggle.label)) continue;
+                const t = ab.toggle;
+                if (t.adv) t.adv.forEach(a => { if (!buffs.adv.includes(a)) buffs.adv.push(a); });
+                if (t.adv_tags) t.adv_tags.forEach(a => { if (!buffs.adv_tags.includes(a)) buffs.adv_tags.push(a); });
+                if (t.saves) t.saves.forEach(s => { if (!buffs.saves.includes(s)) buffs.saves.push(s); });
+                if (t.def) buffs.def += t.def;
+                if (t.def_set != null && (buffs.def_set === null || t.def_set > buffs.def_set)) buffs.def_set = t.def_set;
+                if (t.vt_temp) buffs.vt_temp += t.vt_temp;
+                if (t.stat_min != null && (buffs.stat_min === null || t.stat_min > buffs.stat_min)) buffs.stat_min = t.stat_min;
+                if (t.stat_min_list) t.stat_min_list.forEach(s => { if (!buffs.stat_min_list.includes(s)) buffs.stat_min_list.push(s); });
+                if (t.ce) {
+                    if (typeof t.ce === 'number') buffs.ce += t.ce;
+                    else if (t.ce.toLowerCase() === 'rango') buffs.ce += (ab.rank || 0);
+                }
+                if (t.resistances) t.resistances.forEach(r => { if (!buffs.resistances.includes(r)) buffs.resistances.push(r); });
+                if (t.immunities) t.immunities.forEach(r => { if (!buffs.immunities.includes(r)) buffs.immunities.push(r); });
+                if (t.damage) buffs.damage.push(t.damage);
+            }
+            return buffs;
+        },
+        shieldCounters: function () {
+            return this.sumAllKeys('ce', this.myatb.passive) + this.toggleBuffs.ce;
+        },
     },
     created() {
         this.getData("talents", '/data/builder/talents.json');

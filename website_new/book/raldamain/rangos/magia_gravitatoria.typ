@@ -1,0 +1,196 @@
+#import "../theme.typ": *
+
+La gravedad es la fuerza más silenciosa y más absoluta del universo. La Magia Gravitatoria opera sobre esta verdad invisible, curvando la atracción entre objetos para crear efectos que ningún otro rango puede replicar. Aplasta armaduras desde dentro, lanza enemigos al cielo y los trae de vuelta con fuerza fatal, crea zonas donde el movimiento es imposible y permite al practicante avanzar por superficies verticales o volar sin necesidad de alas. Es una magia discreta en su operación y devastadora en sus resultados.
+
+#tip-box[
+  *Reserva de Chi:* Incrementa por Rango x 2.
+  *Estadística principal:* Inteligencia + Rango.
+  *Parada Gravitatoria:* Usas Magia Gravitatoria para defenderte de Aire, Tierra, Agua, Gravedad y Telekinesia.
+]
+
+==== Rango I — Iniciado
+
+#ability-card(
+  name: "Pulso Gravitatorio",
+  tags: ("Gravedad", "Maniobra", "Físico"),
+  cost: "1 acción",
+  range: "Cercano",
+  crit: "Objetivo sufre Herido-1.",
+  desc: "Empujas al objetivo 1 paso con fuerza gravitatoria y lo derribas (Ralentizado-1). Si choca contra una superficie u otra criatura, inflige 1d6 + INT de daño. También puede disipar efectos ambientales en el área.",
+  empower: "Afecta a todos los enemigos a distancia cercano o aumenta el daño de esta habilidad por un dado.",
+)
+
+#ability-card(
+  name: "Lanzamiento",
+  tags: ("Gravedad", "Maniobra", "Físico"),
+  cost: "1 acción",
+  range: "Medio",
+  crit: "Objetivo sufre Herido-1.",
+  desc: "Empleas el poder de la gravedad para lanzar un objeto hacia un enemigo que puedas alcanzar, infligiéndole así 2d6 + INT daño Contundente, Cortante o Perforante al impactar además de empujarlo un paso. Necesitas contar con objetos del tamaño suficiente en tu entorno para usar esta habilidad.",
+  empower: "Añade un dado de daño adicional al ataque y aumenta el radio de efecto por un paso, o haz un segundo ataque como secuencia contra el mismo punto.",
+)
+
+#ability-card(
+  name: "Pozo de Gravedad",
+  tags: ("Gravedad", "Sostenido", "Maniobra"),
+  cost: "2 acciones, 1 chi",
+  range: "Medio",
+  area: "Esfera pequeña",
+  duration: "Concentración",
+  crit: "Afectados quedan con Ralentizado-1.",
+  desc: "Creas una zona de alta gravedad. Todas las criaturas en su área deben tener éxito en un tiro de salvación Físico o serán arrastrados un paso hacia él y quedarán *Enredados*. Pueden repetir el tiro cada ronda para intentar escapar gastando una acción y aquellas criaturas que entren en un espacio afectado por el pozo deberán tener éxito en ese mismo tiro de salvación o sufrirán sus efectos.",
+  empower: "Crea un pozo adicional en otra posición, o emplea un efecto de Empuje Gravitatorio desde un pozo existente para arrastrar hacia su posición.",
+)
+
+==== Rango II — Adepto
+
+#ability-card(
+  name: "Alterar Peso",
+  tags: ("Gravedad", "Duradero", "Físico"),
+  cost: "1 Acción, 1 chi",
+  range: "Medio",
+  duration: "Concentración",
+  desc: "Elige un modo al lanzar. Reducir: el objetivo gana Salto 1, Ventaja en Esquiva y Sigilo, pero es vulnerable a maniobras. Aumentar: el objetivo gana Resistencia a maniobras, pero su coste de movimiento aumenta en +1 y cae si está volando.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+#ability-card(
+  name: "Ancla Gravitatoria",
+  tags: ("Gravedad", "Maniobra", "Duradero"),
+  cost: "1 acción, 1 chi",
+  range: "Medio",
+  duration: "Concentración",
+  crit: "Herido-1.",
+  desc: "El objetivo debe etener éxito en un tiro de salvación Físico o perderá inmediatamente la capacidad de volar y quedará *Enredado*. Si está en el aire, sufrirá el daño de Caída correspondiente, el cual oscilará de 2d6 a 6d6. El objetivo puede emplear una acción para intentar liberarse, repitiendo así este mismo tiro.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+#ability-card(
+  name: "Campo de Repulsión",
+  tags: ("Gravedad", "Defensivo", "Duradero"),
+  cost: "1 acción, 1 chi",
+  range: "Medio",
+  area: "Esfera pequeña",
+  duration: "Concentración",
+  desc: "Creas una zona que expulsa a toda criatura que entre. Toda criatura en esa posición debe tener éxito en un tiro de salvación Físico para entrar ahí y todos ataques dirigidos hacia el interior del campo tienen Desventaja.",
+  empower: "(1 Reacción) Bloqueas automáticamente un ataque físico o empleas un ataque de Empuje Gravitatorio como acción bonus contra todas las criaturas en el campo.",
+)
+
+==== Rango III — Profesional
+
+_Pasiva: Convierte todos los dados de daño en d8._
+
+#ability-card(
+  name: "Agarre Gravitatorio",
+  tags: ("Gravedad", "Agarre", "Duradero"),
+  cost: "1 acción, 2 chi",
+  range: "Medio",
+  duration: "Concentración",
+  crit: "Empuja 1 paso como acción bonus.",
+  desc: "Inmovilizas al objetivo (Agarrado). Mientras esté agarrado, falla automáticamente los tiros contra maniobras de gravedad.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+#ability-card(
+  name: "Burlar la Gravedad",
+  tags: ("Gravedad", "Duradero"),
+  cost: "2 chi",
+  duration: "Concentración",
+  desc: "Obtienes velocidad de vuelo 1 y Ventaja en tiros de Esquiva. Puedes emplear tu tiro de Magia Gravitatoria para todos tus tiros de Esquiva o tus tiros de Salvación Físicos.",
+  empower: "Vuelas un paso y aumentas tu tiro defensivo de Esquiva por 10.",
+)
+
+#ability-card(
+  name: "Bomba de Gravedad",
+  tags: ("Gravedad", "Ataque", "Área"),
+  cost: "1 acción, 2 chi",
+  range: "Medio",
+  area: "Radio corto",
+  duration: "Instantáneo",
+  crit: "Herido-1 a todos los afectados.",
+  desc: "Explosión gravitatoria que inflige 3d8 + INT daño Fuerza. Este ataque ignora las barreras y efectos de gravedad en su camino además que empuja un paso a todos los afectados y los derriba (hace falta tener éxito en un tiro de salvación Físico para evitarlo).",
+  empower: "Dispara una segunda Bomba de Gravedad contra otro objetivo o haz otro ataque contra el mismo objetivo como secuencia.",
+)
+
+==== Rango IV — Experto
+
+#ability-card(
+  name: "Vórtice Gravitatorio",
+  tags: ("Gravedad", "Defensivo", "Duradero"),
+  cost: "2 acciones, 2 chi",
+  area: "Radio pequeño",
+  duration: "Concentración",
+  desc: "Obtienes contadores de escudo iguales a tu Rango y Resistencia a ataques a distancia. Todos tus ataques de Lanzamiento aumentan su radio de efecto a pequeño y puedes emplear Lanzamiento como acción bonus una vez por ronda contra enemigos en el vórtice.",
+  empower: "Recuperas contadores de escudo iguales a la mitad de tu Rango (redondeando hacia abajo) o aumentas el radio del vórtice.",
+)
+
+#ability-card(
+  name: "Distorsión Gravitatoria",
+  tags: ("Gravedad", "Ambiental"),
+  cost: "2 acciones, 2 chi",
+  area: "Esfera grande",
+  duration: "6 Rondas",
+  desc: "Obtienes Ventaja en todos tus tiros de Magia Gravitatoria, recibes un dado de daño adicional en tus hechizos y tu alcance aumenta en por paso dentro del área.",
+  empower: "Tu siguiente hechizo Gravitatorio cuesta una acción menos.",
+)
+
+#ability-card(
+  name: "Dilatación Temporal",
+  tags: ("Gravedad", "Duradero", "Maniobra"),
+  cost: "1 acción, 2 chi",
+  range: "Medio",
+  area: "Esfera pequeña",
+  duration: "Concentración",
+  crit: "Aturdido-4 inmediato.",
+  desc: "Creas una zona de tiempo ralentizado. Las criaturas en su interior deben tener éxito en un tiro de salvación de Voluntad o sufren Enfermado-1 durante una ronda. Si fallan el tiro de salvación 2 veces, quedan con Aturdido-4.",
+  empower: "Bloqueas un ataque automáticamente.",
+)
+
+==== Rango V — Maestro
+
+_Pasiva: Convierte todos los dados de daño en d10._
+
+#ability-card(
+  name: "Invertir la Gravedad",
+  tags: ("Gravedad", "Área"),
+  cost: "2 acciones, 3 chi",
+  area: "Esfera grande",
+  duration: "Concentración",
+  crit: "Empuje extra y Herido-1 al chocar.",
+  desc: "Inviertes la gravedad en el área, forzando a las criaturas a caer dos pasos en la direacción y infligiendo 3d10 + INT daño Fuerza además de quedar *Ralentizado-1*. La gravedad ahora será en otro punto de tu elección y, una vez actives esta habilidad, aquellos que se encuentren en dicho punto podrán moverse con normalidad hasta que termine el efecto.",
+  empower: "Cambias la dirección de la gravedad invertida.",
+)
+
+#ability-card(
+  name: "Compresión Gravitatoria",
+  tags: ("Gravedad", "Ataque"),
+  cost: "1 acción, 3 chi",
+  range: "Medio",
+  duration: "Concentración",
+  crit: "Herido-2.",
+  desc: "EL objetivo debe tener éxito en un tiro de salvación Físico o quedará afectado con gravedad extrema, sufriendo así 4d10 + INT daño Fuerza, Herido-1 y quedando Agarrado. El objetivo puede gastar una acción para repetir el tiro para liberarse, pero cada vez que fracase sufrirá 2d10 daño Fuerza.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+#ability-card(
+  name: "Empuje Todopoderoso",
+  tags: ("Gravedad", "Ataque", "Área"),
+  cost: "2 acciones, 3 chi",
+  range: "Lejano",
+  desc: "Desatas una onda de choque masiva que inflige 4d10 + INT daño Fuerza y lanza a los afectados por los aires. Este ataque destruirá todas las estructuras frágiles en el área afectada, creando así terreno difícil y enterrando a los enemigos bajo escombros (quienes deben tener éxito en un tiro de salvación Físico o sufrirán 6d10 daño Contundente y quedarán *Agarrados*).",
+  empower: "Añade un dado de daño adicional o haz otro ataque la misma área como secuencia.",
+)
+
+==== Rango VI — Ascendido
+
+#ability-card(
+  name: "Agujero Negro",
+  tags: ("Gravedad", "Duradero", "Ambiental"),
+  cost: "2 acciones, 5 chi",
+  range: "Lejano",
+  area: "Esfera pequeña",
+  duration: "5 Rondas",
+  desc: "Creas un agujero negro con atracción ineludible. Todas las criaturas en su área deben tener éxito en un tiro de salvación Físico o serán arrastrados hacia él, sufriendo 5d10 + INT daño Fuerza y quedando Agarrados. Este hechizo destruirá todos los efectos Ambientales a su paso y puede colapsar incluso Dominios, zonas Divinas o Demiplanos. 
+Los afectados pueden gastar una acción para repetir el tiro para liberarse, pero cada vez que fracasen sufrirán 3d10 daño Fuerza. Al igual que un Pozo de Gravedad o un Campo Repulsivo, todos los que entren en una posición a distancia cercana del Agujero Negro deberán hacer un tiro de salvación contra él. Un agujero negro puede destruirse por efectos del Rango adecuado, pero si es eliminado infligirá 6d10 + INT daño Fuerza a todas las criaturas agarradas por él.",
+  empower: "Mueve un paso al agujero negro, forzando a todas las criaturas a su paso a tener éxito en ese mismo tiro o sufren de nuevo sus efectos.",
+)

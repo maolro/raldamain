@@ -233,7 +233,7 @@
           ],
           "cost": "2 acciones, 3 chi",
           "range": "Cuerpo a cuerpo",
-          "crit": "Objetivo aturdido 1 ronda.",
+          "crit": "Objetivo con Aturdido-2 durante 1 ronda.",
           "duration": "Instantáneo",
           "desc": "Sobrecargas los conductos de chi del objetivo (tiro de salvación de CON contra tu Magia Protectora). La reserva de chi del objetivo aumenta en +3 y recibe daño igual a su reserva de chi total. El objetivo puede gastar chi para reducir el daño recibido.",
           "empower": "Aumenta el alcance a medio."

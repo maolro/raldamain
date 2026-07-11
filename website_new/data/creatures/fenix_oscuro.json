@@ -1,0 +1,109 @@
+{
+  "id": "fenix_oscuro",
+  "name": "Fénix Oscuro",
+  "type": "Espíritu",
+  "size": "Mediano",
+  "level": 16,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+15+3d6",
+    "VOL": "+15+2d6",
+    "MEN": "+15+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 24,
+      "categories": "General, Agua"
+    },
+    {
+      "value": 30,
+      "categories": "Mágico, Físico"
+    },
+    {
+      "value": 36,
+      "categories": "Radiante, Frío"
+    },
+    {
+      "value": 42,
+      "categories": "Fuego, Necrótico"
+    }
+  ],
+  "immune": [],
+  "senses": "Sentido Vital",
+  "speed": "Paso 8, Vuelo 16",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "desc": "El objetivo tiene Desventaja defendiéndose de sus ataques.",
+      "cost": 1,
+      "tags": [
+        "Ataque",
+        "Físico",
+        "Fuego"
+      ],
+      "attacks": 2,
+      "bonus": "+15 + 4d6",
+      "range": "Corto",
+      "damage": "5d10 + 8 Físico/Fuego",
+      "name": "Zarpazo Ígneo",
+      "move": 8
+    },
+    {
+      "desc": "Quema objetivos inflamables que impacte.",
+      "name": "Bolas de Fuego",
+      "cost": 1,
+      "attacks": 2,
+      "bonus": "+15 + 4d6",
+      "range": "Medio",
+      "damage": "4d10 + 8 Fuego",
+      "area": "Radio Corto",
+      "tags": [
+        "Ataque",
+        "Fuego",
+        "Area"
+      ]
+    },
+    {
+      "name": "Transformación Animal",
+      "desc": "Pasa de forma Humanoide a forma Fénix (sus estadísticas básicas están en forma Humanoide). En forma Fénix aumenta su movimiento por 8 (y su movimiento por acciones/reacciones por 4) y tiene siempre activo el Muro de Fuego, aumentado así su umbral por 6 y provocando daño a atacantes cuerpo a cuerpo. No obstante, reducirá sus tiros de salvación Físico y de Voluntad por 1d6.",
+      "cost": 1,
+      "tags": [
+        "Duradera",
+        "Transmutacion"
+      ]
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Muro de Fuego",
+      "desc": "Aumenta sus umbrales defensivos por 6. Si ha recibido un ataque cuerpo a cuerpo, su atacante sufrirá 3d10 + 8 daño Fuego.",
+      "tags": [
+        "Defensiva",
+        "Fuego"
+      ],
+      "cost": 1
+    },
+    {
+      "name": "Absorber Fuego",
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que no atraviese su umbral.",
+      "cost": 1,
+      "id": "absorber-elemento_1778692436921",
+      "type": "reaction",
+      "tags": [
+        "Fuego",
+        "Sanacion"
+      ]
+    }
+  ],
+  "lore": "",
+  "tags": [
+    "Espíritu",
+    "Fuego",
+    "Necrótico"
+  ]
+}

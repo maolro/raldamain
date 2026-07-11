@@ -10,7 +10,7 @@
   ],
   "description": "Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. Este don otorgado por los dioses crecerá alimentándose de tu fe y ambición siempre que estos coincidan con los deseos de tus dioses dándote fuertes habilidades que te convertirán en un santo viviente.",
   "fundamentals": [
-    "<strong>Fuerza y magia:</strong> Tu rango en Guerrero divino mejorará tus reservas de chi, incrementando ambas por un valor igual a tu Rango. Se acumula con otras habilidades.",
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Tu modificador de Guerrero Divino será igual a la suma de tu estadística de Carisma y tu rango en esta habilidad.",
     "<strong>Conocimiento de los dioses:</strong> Canalizas una pequeña porción de los poderes de tu dios. Cada dios tiene magias relacionadas que podrás aprender a rangos superiores."
   ],
@@ -58,8 +58,21 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Obtienes Ventaja en tiros de ataque y defensa con armas y hechizos relacionados con tu dios, y Resistencia a efectos de Miedo y Mentales. Dura 6 rondas. Al terminar, pierdes chi igual al número de rondas activas (si no puedes pagar, quedas exhausto o inconsciente).",
-          "empower": "N/A"
+          "desc": "Obtienes Ventaja en tiros de ataque y defensa con armas y hechizos relacionados con tu dios, y Resistencia a efectos de Miedo y Mentales. Al terminar, pierdes chi igual al número de rondas activas (si no puedes pagar, quedas con Fatigado-3 o Inconsciente).",
+          "toggle": {
+            "label": "Guerrero de la Fe",
+            "adv": [
+              "Ataque"
+            ],
+            "adv_tags": [
+              "Divina"
+            ],
+            "resistances": [
+              "Miedo",
+              "Mental"
+            ]
+          },
+          "duration": "6 Rondas"
         },
         {
           "name": "Plegaria de Batalla",
@@ -108,6 +121,10 @@
             "Divina",
             "Pasiva"
           ],
+          "resistances": [
+            "Arcano",
+            "Divino"
+          ],
           "desc": "Obtienes Resistencia a efectos Arcanos y Divinos. Puedes gastar chi (igual al coste del hechizo del lanzador) para convertir un fallo en un tiro de salvación contra un hechizo en éxito."
         }
       ]
@@ -138,7 +155,7 @@
           "cost": "1 acción, 2 chi",
           "range": "Toque",
           "duration": "Instantáneo",
-          "desc": "Resucitas a una criatura que haya muerto hace máximo 1 ronda. Vuelve a la vida con 1 PV y consciente, conservando sus heridas (las heridas Críticas pasan a ser Graves).",
+          "desc": "Resucitas a una criatura que haya muerto hace máximo 1 ronda. Vuelve a la vida con 1 PV y consciente, conservando su Herido (permanente) (Herido-4 pasa a ser Herido-3).",
           "empower": "Puedes usarlo como acción bonus sobre ti mismo al caer a menos de 1 PV."
         },
         {
@@ -166,7 +183,7 @@
             "Mejora"
           ],
           "cost": "3 chi",
-          "crit": "El objetivo queda aturdido durante una ronda.",
+          "crit": "El objetivo queda con Aturdido-2 durante una ronda.",
           "duration": "Una ronda",
           "desc": "Tu siguiente impacto inflige 2d10 + CAR daño adicional. Si reduces al objetivo a 0 PV, muere instantáneamente y no puede ser resucitado.",
           "empower": "Extiende el efecto una ronda adicional."
@@ -180,7 +197,7 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Radio medio",
-          "crit": "Los afectados quedan aturdidos durante una ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
           "duration": "Instantáneo",
           "desc": "Desatas una explosión de energía divina que inflige 3d10 + CAR daño en el área. Las criaturas que superen el tiro de salvación sufren mitad de daño. Las criaturas adyacentes a ti fallan automáticamente.",
           "empower": "Puedes lanzarlo como acción bonus tras atacar con un arma."
@@ -201,7 +218,19 @@
           "cost": "3 acciones, 5 chi",
           "duration": "Seis rondas",
           "desc": "Te transformas en un avatar de tu dios. Obtienes +40 Vitalidad temporal, tus estadísticas físicas suben a 12 y tu DEF sube a 20. Obtienes Resistencias múltiples e Inmunidad a Aflicciones y efectos de Toque. Ganas Vuelo 1 y 6 contadores de escudo. Los hechizos que lances cuestan solo acciones (sin chi).",
-          "empower": "N/A"
+          "empower": "N/A",
+          "toggle": {
+            "label": "Avatar Divino",
+            "def_set": 20,
+            "vt_temp": 40,
+            "stat_min": 12,
+            "stat_min_list": [
+              "str",
+              "dex",
+              "con"
+            ],
+            "ce": 6
+          }
         }
       ]
     }

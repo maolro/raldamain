@@ -68,7 +68,7 @@
           "tags": ["Espacial", "Arcano"],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
-          "crit": "Objetivo cae Tropezado.",
+          "crit": "Objetivo cae con Ralentizado-1.",
           "desc": "Teletransportas a un enemigo 1 paso en cualquier dirección. El objetivo debe superar un tiro de salvación de Salud o pierde su acción actual e interrumpe su concentración.",
           "empower": "Afecta a un objetivo adicional."
         }

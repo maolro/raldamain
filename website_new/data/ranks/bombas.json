@@ -29,7 +29,7 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Instantáneo",
-          "crit": "Los afectados sufren una herida permanente leve.",
+          "crit": "Los afectados sufren Herido-1 (permanente).",
           "desc": "Lanzas una bomba que explota en una lluvia de fragmentos metálicos, infligiendo 2d6 + INT daño Cortante y Fuego a todos los que alcance. Los fragmentos dispersos crean terreno difícil en el área hasta el inicio de tu siguiente turno.",
           "empower": "Aumenta el área un paso y el daño por un dado adicional."
         },
@@ -58,9 +58,9 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Instantáneo",
-          "crit": "Cegado durante dos rondas y aturdido una ronda adicional.",
-          "desc": "Lanzas una granada que emite un destello cegador, forzando a todas las criaturas en el área afectada a tener éxito en un tiro de salvación de Voluntad o quedan cegadas una ronda. ",
-          "empower": "Aumenta el área un paso y la duración de la ceguera por una ronda adicional."
+          "crit": "Confundido-2 durante dos rondas y Aturdido-2 una ronda adicional.",
+          "desc": "Lanzas una granada que emite un destello cegador, forzando a todas las criaturas en el área afectada a tener éxito en un tiro de salvación de Voluntad o quedan con Confundido-1 durante una ronda. ",
+          "empower": "Aumenta el área un paso y la duración del Confundido por una ronda adicional."
         }
       ]
     },
@@ -135,7 +135,7 @@
           "duration": "Concentración",
           "desc": "Lanzas una bomba que libera una nube de gas tóxico que ciega y da ocultamiento. Todos los que estén en ella deben superar un tiro de salvación de Voluntad o quedan enfermados y sufren 3d8 + INT daño Veneno. La nube permanece mientras mantengas la concentración, y cualquier criatura que entre en ella o permanezca al final de su turno deberá superar de nuevo el tiro.\n\nSi tienes el rango de Química, puedes dar los efectos de cualquier poción al gas creado mediante esta bomba pagando su coste en chi.",
           "empower": "Aumenta el área un paso y el daño por un dado adicional.",
-          "crit": "Los afectados sufren náuseas una ronda."
+          "crit": "Los afectados sufren Enfermado-1 durante una ronda."
         },
         {
           "name": "Bomba Antimágica",
@@ -194,7 +194,7 @@
           ],
           "cost": "1 reacción, 1 chi",
           "duration": "Instantáneo",
-          "desc": "En respuesta a ser atacado, detonas una bomba defensiva en distancia cercana. Reduces el daño recibido en Rango x 3 y el atacante debe superar un tiro de salvación Físico o ser empujado un paso hacia atrás y quedar tropezado. Si empleas esta reacción contra un ataque que falle o logras reducir su daño a 0, el atacante sufre automáticamente los efectos de una bomba de tu elección (debes seguir pagando su coste en chi)."
+          "desc": "En respuesta a ser atacado, detonas una bomba defensiva en distancia cercana. Reduces el daño recibido en Rango x 3 y el atacante debe superar un tiro de salvación Físico o ser empujado un paso hacia atrás y quedar con Ralentizado-1. Si empleas esta reacción contra un ataque que falle o logras reducir su daño a 0, el atacante sufre automáticamente los efectos de una bomba de tu elección (debes seguir pagando su coste en chi)."
         }
       ]
     },
@@ -215,8 +215,8 @@
           "range": "Medio",
           "area": "Radio grande",
           "duration": "Instantáneo",
-          "crit": "Los afectados sufren una herida permanente leve.",
-          "desc": "Lanzas una bomba de alto impacto que sacude el terreno en un área masiva. Todos los afectados sufren 5d10 + INT daño Contundente y deben tener éxito en un tiro de salvación Físico o quedan tropezados. Las estructuras frágiles en el área se derrumban y el área afectada se convierte en terreno difícil.",
+          "crit": "Los afectados sufren Herido-1 (permanente).",
+          "desc": "Lanzas una bomba de alto impacto que sacude el terreno en un área masiva. Todos los afectados sufren 5d10 + INT daño Contundente y deben tener éxito en un tiro de salvación Físico o quedan con Ralentizado-1. Las estructuras frágiles en el área se derrumban y el área afectada se convierte en terreno difícil.",
           "empower": "Lanza de nuevo el ataque contra la misma zona, o aumenta el daño por un dado adicional."
         },
         {
@@ -230,7 +230,7 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Una ronda",
-          "crit": "El objetivo sufre una herida permanente grave y queda exhausto.",
+          "crit": "El objetivo sufre Herido-3 (permanente) y queda con Fatigado-3.",
           "desc": "Lanzas una bomba que descompone la materia a nivel fundamental. Inflige 4d10 + INT daño Fuerza a todos en el área y destruye objetos no mágicos. Además, todas las criaturas a distancia media deberán tener éxito en un tiro de salvación Físico o son arrastradas un paso hacia ella y sufren el mismo daño. La esfera permanecerá en el campo de batalla durante una ronda y arrastrará a cada criatura que entre en un espacio a distancia media.",
           "empower": "Aumenta el área de efecto por un paso y el daño por un dado adicional o extiende el efecto de la bomba durante una ronda adicional."
         },
@@ -246,7 +246,7 @@
           "range": "Medio",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "crit": "Los afectados quedan fatigados automáticamente al inicio de su siguiente turno.",
+          "crit": "Los afectados quedan con Fatigado-1 automáticamente al inicio de su siguiente turno.",
           "desc": "Lanzas una bomba que contamina el área con energía radiactiva. Todos en ella al lanzarla sufren 3d10 + INT daño Necrótico y quedan enfermados. La zona afectada impedirá la Sanación y provocará que todos los objetos mágicos tengan una probabilidad 50% de fallar.",
           "empower": "Aumenta el área un paso y el daño por un dado adicional."
         }

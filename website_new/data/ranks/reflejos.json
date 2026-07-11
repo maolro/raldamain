@@ -63,8 +63,8 @@
         {
           "name": "Gran Acróbata",
           "tags": ["Innata", "Pasiva"],
-          "desc": "Obtienes Inmunidad a Terreno Difícil y al estado Tropezado. Obtienes Velocidad de Escalada 1 y Resistencia a daño de Caídas.",
-          "empower": "Te levantas inmediatamente del estado Tropezado."
+          "desc": "Obtienes Inmunidad a Terreno Difícil y al estado Ralentizado. Obtienes Velocidad de Escalada 1 y Resistencia a daño de Caídas.",
+          "empower": "Te levantas inmediatamente del estado Ralentizado."
         }
       ]
     },

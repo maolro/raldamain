@@ -47,7 +47,7 @@
           "name": "Estocada Fuerte",
           "tags": ["Duelo", "Mejora"],
           "cost": "1 chi",
-          "desc": "Al impactar provoca un dado de daño adicional y una herida leve en la parte del cuerpo que escoja. Debe declararse antes de atacar."
+          "desc": "Al impactar provoca un dado de daño adicional y Herido-1 en la parte del cuerpo que escoja. Debe declararse antes de atacar."
         },
         {
           "name": "Secuencia de Golpes",
@@ -90,7 +90,12 @@
           "tags": ["Duelo", "Duradera"],
           "cost": "2 acciones, 2 chi",
           "desc": "Entra en un estado donde recibe Ventaja en todos sus tiros relacionados con armas y puede moverse al atacar o defenderse sin provocar aperturas.",
-          "empower": "(1 Reacción) Reduce el daño de un ataque enemigo a la mitad."
+          "empower": "(1 Reacción) Reduce el daño de un ataque enemigo a la mitad.",
+          "toggle": {
+            "label": "Maestría Duelista",
+            "adv": ["Ataque", "Defensa"],
+            "adv_tags": ["Duelo"]
+          }
         },
         {
           "name": "Cortar el Acero",
@@ -114,7 +119,7 @@
           "name": "Muerte por Mil Cortes",
           "tags": ["Duelo", "Mejora"],
           "cost": "2 acciones, 3 chi",
-          "desc": "Realiza cuatro ataques contra un mismo objetivo, quien solo puede tirar defensa una vez. Cada ataque consecutivo tira con +1 al tiro de ataque y al daño, y todos provocan una herida leve."
+          "desc": "Realiza cuatro ataques contra un mismo objetivo, quien solo puede tirar defensa una vez. Cada ataque consecutivo tira con +1 al tiro de ataque y al daño, y todos provocan Herido-1."
         },
         {
           "name": "Partir Montañas",

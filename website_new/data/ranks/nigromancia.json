@@ -9,6 +9,7 @@
   ],
   "description": "Tienes una fuerte conexión con el plano de los muertos, esclavizando cuerpos y corrompiendo almas. Drenas la vida, levantas ejércitos de no-muertos y manipulas energía negativa para aniquilar a tus enemigos.",
   "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Carisma + Rango (Deducido por fórmulas de daño).",
     "<strong>Energía Negativa:</strong> Tus hechizos suelen reducir la Vitalidad y PV máximos, impidiendo la sanación.",
     "<strong>No-muertos:</strong> Puedes levantar y controlar cadáveres para que luchen por ti o usarlos como conductos para tus hechizos."
@@ -28,7 +29,7 @@
           ],
           "cost": "1 acción",
           "range": "Cuerpo a cuerpo",
-          "crit": "El objetivo queda fatigado hasta que se recupere.",
+          "crit": "El objetivo queda con Fatigado-2 hasta que se recupere.",
           "duration": "Instantáneo",
           "desc": "Realizas un ataque de toque. El objetivo debe superar un tiro de salvación de CON o sufre 1d6 + Rango daño Necrótico. Además, reduce su Vitalidad y PV máximos (Aflicción nivel 1).",
           "empower": "Aumenta el alcance a medio."
@@ -43,7 +44,7 @@
           ],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "El afectado queda fatigado hasta que se recupere.",
+          "crit": "El afectado queda con Fatigado-2 hasta que se recupere.",
           "duration": "Instantáneo",
           "desc": "Lanzas un rayo de energía negativa a distancia. Inflige 1d6 + Rango daño Necrótico y reduce la Vitalidad y PV máximos del objetivo (Aflicción nivel 1).",
           "empower": "Afecta a una criatura adicional a distancia media."
@@ -74,7 +75,7 @@
           "range": "Cuerpo a cuerpo",
           "duration": "Concentración",
           "desc": "Ligas tu vida a otra criatura (tiro de salvación de CON contra tu Nigromancia). Transfieres la mitad del daño que recibes a la criatura vinculada. Además, puedes lanzar hechizos de Toque a través del vínculo.",
-          "empower": "Transfieres una herida permanente o efecto negativo propio a la criatura vinculada."
+          "empower": "Transfieres Herido (permanente) o efecto negativo propio a la criatura vinculada."
         },
         {
           "name": "Animar No-muerto",
@@ -99,7 +100,7 @@
           "range": "Toque",
           "duration": "Hasta que sea eliminada",
           "desc": "Marcas a un enemigo con una maldición vampírica (tiro de salvación de CON contra tu Nigromancia). Mientras la maldición persista, recuperas Vitalidad igual a la mitad del daño Necrótico que le inflijas.",
-          "empower": "Afecta a un objetivo adicional o reduce el nivel de una herida o aflicción propia cada vez que lo hieres."
+          "empower": "Afecta a un objetivo adicional o reduce el nivel de Herido (permanente) o aflicción propia cada vez que lo hieres."
         }
       ]
     },
@@ -126,7 +127,7 @@
           ],
           "cost": "2 acciones, 2 chi",
           "area": "Radio corto",
-          "crit": "Los afectados quedan fatigados hasta que se recuperen.",
+          "crit": "Los afectados quedan con Fatigado-2 hasta que se recuperen.",
           "duration": "Instantáneo",
           "desc": "Liberas una explosión de energía negativa que inflige 2d8 + CAR daño Necrótico (mitad en caso de éxito en el tiro de salvación). Reduce la Vitalidad y PV máximos de los afectados. Los no-muertos aliados en el área se curan Rango + 2 Vitalidad en lugar de recibir daño.",
           "empower": "Aumenta el área a radio medio."
@@ -184,7 +185,7 @@
           "cost": "2 chi",
           "crit": "Aumenta el nivel del efecto un paso.",
           "duration": "Hasta que sea eliminada",
-          "desc": "Al impactar con daño Necrótico, puedes maldecir al objetivo con Enervación. La maldición impide toda sanación y convierte los intentos de curación en daño. El efecto empeora con el paso de los días o al recibir daño adicional: Fatiga, Exhausto, Control Mental y finalmente Muerte (el cadáver se levanta como Zombi).",
+          "desc": "Al impactar con daño Necrótico, puedes maldecir al objetivo con Enervación. La maldición impide toda sanación y convierte los intentos de curación en daño. El efecto empeora con el paso de los días o al recibir daño adicional: Fatigado-1, Fatigado-3, Confundido-4 y finalmente Muerte (el cadáver se levanta como Zombi).",
           "empower": "N/A"
         }
       ]

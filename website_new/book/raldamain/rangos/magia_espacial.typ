@@ -1,0 +1,171 @@
+#import "../theme.typ": *
+
+Para el maestro de la Magia Espacial, la distancia no es una realidad: es una sugerencia. Este rango reescribe las reglas del campo de batalla al permitir teletransporte instantáneo, apertura de portales y manipulación de las posiciones relativas de cualquier criatura u objeto. Las líneas que separan un lugar de otro se vuelven permeables ante su voluntad. En sus niveles más altos, el practicante puede plegar el espacio a su alrededor, impedir que los enemigos huyan y mover a sus aliados en el tiempo que tarda un parpadeo.
+
+#tip-box[
+  *Reserva de Chi:* Incrementa por Rango x 2.
+  *Estadística principal:* Inteligencia + Rango.
+  *Parada Espacial:* Usas Magia Espacial para tiros de Esquiva y salvaciones de Destreza.
+]
+
+==== Rango I — Iniciado
+
+#ability-card(
+  name: "Salto Espacial",
+  tags: ("Espacial", "Arcana", "Defensiva"),
+  cost: "1 acción, 1 chi",
+  duration: "Instantáneo",
+  desc: "Te teletransportas 1 paso. Como reacción (1 Reacción): reduces el daño recibido a la mitad y te teletransportas 1 paso. A Rango III, la reacción evita el ataque por completo.",
+  empower: "Aumenta la distancia de teletransporte en 1 paso (máximo 2 veces).",
+)
+
+#ability-card(
+  name: "Portal Menor",
+  tags: ("Espacial", "Arcana", "Duradera"),
+  cost: "1 acción",
+  range: "Medio (Visión)",
+  duration: "Concentración",
+  desc: "Creas un portal pequeño (tamaño de una mano) que conecta un punto adyacente con otro a distancia media. Puedes atacar o interactuar a través del portal.",
+  empower: "Creas un portal menor adicional como acción bonus (dura 1 ronda).",
+)
+
+#ability-card(
+  name: "Bolsillo Interdimensional",
+  tags: ("Espacial", "Arcana"),
+  cost: "1 acción",
+  desc: "Guardas o extraes un objeto pequeño en una dimensión de bolsillo personal.",
+  empower: "Puedes usar esta habilidad como acción bonus.",
+)
+
+==== Rango II — Adepto
+
+#ability-card(
+  name: "Puerta Dimensional",
+  tags: ("Espacial", "Arcano", "Duradero"),
+  cost: "2 acciones, 1 chi",
+  range: "Cercano",
+  duration: "Concentración",
+  desc: "Creas un portal de tamaño humano que conecta con un punto lejano visible. Forzar a una criatura a cruzarlo requiere un empujón exitoso o que el objetivo falle un tiro de salvación de Salud.",
+  empower: "Puedes crear el portal como reacción (1 Reacción) para esquivar un ataque o forzar a un enemigo a cruzar.",
+)
+
+#ability-card(
+  name: "Ancla Dimensional",
+  tags: ("Espacial", "Arcano", "Toque"),
+  cost: "1 acción, 1 chi",
+  range: "Toque",
+  duration: "1 hora",
+  desc: "El objetivo debe superar un tiro de salvación de CON o queda incapacitado de teletransportarse o usar portales durante la duración.",
+  empower: "Suprimes el ancla sobre ti mismo durante una ronda.",
+)
+
+#ability-card(
+  name: "Distorsión Espacial",
+  tags: ("Espacial", "Arcano"),
+  cost: "1 acción, 1 chi",
+  range: "Medio",
+  crit: "Objetivo cae con Ralentizado-1.",
+  desc: "Teletransportas a un enemigo 1 paso en cualquier dirección. El objetivo debe superar un tiro de salvación de Salud o pierde su acción actual e interrumpe su concentración.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+==== Rango III — Profesional
+
+_Pasiva: Hechizos de Rango I cuestan -1 acción._
+
+#ability-card(
+  name: "Brecha Espacial",
+  tags: ("Espacial", "Arcano", "Mejora"),
+  cost: "2 chi",
+  desc: "Tu siguiente ataque ignora barreras, muros, DEF y contadores de escudo. También impacta a criaturas etéreas o en proceso de teletransporte.",
+  empower: "Afecta a un ataque adicional esta ronda.",
+)
+
+#ability-card(
+  name: "Portal Múltiple",
+  tags: ("Espacial", "Arcano", "Mejora"),
+  cost: "1 acción, 2 chi",
+  area: "Esfera mediana",
+  duration: "Concentración",
+  desc: "Creas una red de portales en el área. Tu alcance aumenta a medio e ignoras cobertura. Como reacción, puedes redirigir un ataque fallido hacia otro objetivo dentro del área.",
+  empower: "Rediriges un ataque adicional esta ronda.",
+)
+
+#ability-card(
+  name: "Invocar Extraplanario",
+  tags: ("Espacial", "Arcano", "Invocación"),
+  cost: "3 acciones, 2 chi",
+  duration: "1 hora",
+  desc: "Invocas una criatura de Nivel 6 o inferior (+2 niveles por cada rango superior a III). La criatura no está obligada a obedecerte.",
+  empower: "Invocas una criatura adicional.",
+)
+
+==== Rango IV — Experto
+
+#ability-card(
+  name: "Agujero de Gusano",
+  tags: ("Espacial", "Arcano", "Duradero"),
+  cost: "2 acciones, 2 chi",
+  range: "Medio",
+  duration: "Concentración",
+  desc: "Abres un portal a cualquier lugar conocido del mundo. Si el destino no te es familiar, existe riesgo de error en el transporte.",
+  empower: "Repites un tiro de transporte fallido.",
+)
+
+#ability-card(
+  name: "Cambio de Posición",
+  tags: ("Espacial", "Arcana", "Defensiva"),
+  cost: "1 acción, 2 chi",
+  range: "Medio",
+  crit: "El objetivo pierde su siguiente Reacción.",
+  desc: "Intercambias tu posición con la de un objetivo a distancia media. Si el objetivo es hostil, debe superar un tiro de salvación de Salud o el intercambio se produce. Como reacción defensiva, puedes intercambiar posición con un enemigo para que reciba un ataque dirigido a ti.",
+  empower: "Intercambias las posiciones de dos criaturas ajenas entre sí.",
+)
+
+#ability-card(
+  name: "Cierre Dimensional",
+  tags: ("Espacial", "Arcano"),
+  cost: "2 acciones, 2 chi",
+  area: "Radio grande",
+  duration: "Concentración",
+  desc: "Bloqueas toda magia espacial y teletransporte en el área. Tú también sufres Desventaja en tiros de Magia Espacial mientras el efecto esté activo.",
+  empower: "Permites un hechizo espacial aliado o ignoras tu penalizador durante 1 ronda.",
+)
+
+==== Rango V — Maestro
+
+#ability-card(
+  name: "Crear Demiplano",
+  tags: ("Espacial", "Pasiva"),
+  desc: "Controlas una dimensión de bolsillo de 1 km². Puedes alterar su terreno y clima usando magia elemental u ocultismo.",
+)
+
+#ability-card(
+  name: "Puerta Interdimensional",
+  tags: ("Espacial", "Arcano"),
+  cost: "2 acciones, 3 chi",
+  range: "Medio",
+  duration: "Concentración",
+  desc: "Abres un portal a otro plano de existencia. El portal genera efectos crecientes por ronda: consagrar la tierra (ronda 2), invocar un nativo del plano (ronda 3) y explosión de área (ronda 7).",
+  empower: "N/A",
+)
+
+#ability-card(
+  name: "Desfase Espacial",
+  tags: ("Espacial", "Arcano", "Duradero"),
+  cost: "1 acción, 3 chi",
+  duration: "Concentración",
+  desc: "Te vuelves intangible e inmune a todo efecto del plano material. Mientras dure, no puedes afectar al plano material de ninguna forma.",
+  empower: "Te materializas parcialmente durante 1 ronda para atacar (eres vulnerable mientras tanto).",
+)
+
+==== Rango VI — Ascendido
+
+#ability-card(
+  name: "Extensión de Dominio",
+  tags: ("Espacial", "Arcano", "Ambiental"),
+  cost: "3 acciones, 5 chi",
+  area: "Esfera grande",
+  duration: "Concentración",
+  desc: "Superpones tu demiplano sobre el campo de batalla. Obtienes Ventaja en Magia Espacial y los hechizos de Rango I-II no cuestan chi. Aplicas los efectos ambientales de tu demiplano. Los enemigos pueden disputar el control del área.",
+)

@@ -4,7 +4,7 @@
     "name": "Estilo Coloso",
     "category": "Marcial",
     "image": "estilo_coloso.jpg",
-    "description": "Uso de armas pesadas centrado en causar gran daño y poder destructivo masivo."
+    "description": "Dominas el arte de las armas a dos manos. Sacrificas velocidad y defensa a cambio de golpes devastadores capaces de romper armaduras y aturdir enemigos."
   },
   {
     "id": "estilo_duelista",
@@ -25,7 +25,7 @@
     "name": "Ira",
     "category": "Combate",
     "image": "ira.jpg",
-    "description": "Canaliza tu furia para superar los límites físicos, mejorar el combate y resistir el dolor."
+    "description": "Canalizas tu furia para superar los límites físicos. Entras en un trance de combate que incrementa tu fuerza y resistencia a costa de tu defensa y racionalidad."
   },
   {
     "id": "reflejos",
@@ -137,7 +137,7 @@
     "name": "Magia de Aire",
     "category": "Elementalismo",
     "image": "magia_aire.jpg",
-    "description": "Controla el viento para volar, ganar velocidad y empujar a tus enemigos."
+    "description": "Tienes un control absoluto sobre el aire, manipulándolo para crear desde brisas hasta huracanes y desastres naturales. Tus hechizos se centran en el movimiento, empujar enemigos, crear barreras de viento y asfixiar a tus oponentes."
   },
   {
     "id": "magia_temporal",
@@ -219,9 +219,9 @@
   {
     "id": "guerrero_divino",
     "name": "Guerrero Divino",
-    "category": "Divino",
+    "category": "Religión",
     "image": "guerrero_divino.jpg",
-    "description": "Infunde armas con poder divino para acabar con los enemigos de tu fe."
+    "description": "Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe otorgándote un don para oponerte a cualquiera que ose convertirse en tu enemigo. Este don otorgado por los dioses crecerá alimentándose de tu fe y ambición siempre que estos coincidan con los deseos de tus dioses dándote fuertes habilidades que te convertirán en un santo viviente."
   },
   {
     "id": "magia_metal",

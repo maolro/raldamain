@@ -28,9 +28,9 @@
             "Área"
           ],
           "cost": "2 Acciones, 1 chi",
-          "crit": "Los objetivos sufren una herida permanente leve.",
+          "crit": "Los objetivos sufren Herido-1 (permanente).",
           "duration": "Instantánea",
-          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o son empujados dos pasos y caen tropezados. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. Además, si el objetivo empujado choca con una superficie física sufrirá entonces 3d6 + SAB/CAR daño Contundente (lo mismo ocurre con las caídas).",
+          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o son empujados dos pasos y caen con Ralentizado-1. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. Además, si el objetivo empujado choca con una superficie física sufrirá entonces 3d6 + SAB/CAR daño Contundente (lo mismo ocurre con las caídas).",
           "empower": "Vuelve a emplear este hechizo en la misma zona sin la necesidad de gastar acciones adicionales.",
           "area": "Cono Medio"
         },
@@ -44,7 +44,7 @@
           ],
           "cost": "1+ Acciones",
           "range": "Medio",
-          "crit": "El objetivo sufre una herida permanente leve.",
+          "crit": "El objetivo sufre Herido-1 (permanente).",
           "duration": "Instantánea",
           "desc": "Ataca con un tajo de aire comprimido que inflige 1d6 + SAB/CAR daño Cortante. Este ataque ignora ocultamiento y resistencias a ataques a distancia. \nPuedes gastar una acción adicional para incrementar el daño base de este ataque por 1d6 (máximo 2 acciones).",
           "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
@@ -87,9 +87,9 @@
           ],
           "cost": "1 acción, 1 chi",
           "range": "Cuerpo a cuerpo",
-          "crit": "Herida permanente leve y fallo automático en defensa.",
+          "crit": "Herido-1 (permanente) y fallo automático en defensa.",
           "duration": "Instantáneo",
-          "desc": "Haz un ataque con una esfera de vientos que provoca 3d6 + SAB/CAR daño Cortante al impactar. Además, el objetivo será empujado un pasos y cae tropezado (puede resistirse con un tiro de salvación Físico).",
+          "desc": "Haz un ataque con una esfera de vientos que provoca 3d6 + SAB/CAR daño Cortante al impactar. Además, el objetivo será empujado un pasos y cae con Ralentizado-1 (puede resistirse con un tiro de salvación Físico).",
           "empower": "La esfera permanece en tu mano para lanzarla gratis hasta el final del siguiente turno."
         },
         {
@@ -118,9 +118,9 @@
           ],
           "cost": "2 chi",
           "range": "Medio",
-          "crit": "Objetivo fatigado.",
+          "crit": "Objetivo con Fatigado-1.",
           "duration": "Concentración",
-          "desc": "Un objetivo que logres empujar o tropezar con un efecto de Aire debe tener éxito en un tiro de salvación Físico o queda agarrado. Este agarre durará hasta que reciba un impacto o se libere, además que puedes emplear una acción para moverlo un paso en cualquier dirección.",
+          "desc": "Un objetivo que logres empujar o derribar con un efecto de Aire debe tener éxito en un tiro de salvación Físico o queda agarrado. Este agarre durará hasta que reciba un impacto o se libere, además que puedes emplear una acción para moverlo un paso en cualquier dirección.",
           "empower": "Afecta a una criatura adicional con este hechizo."
         },
         {
@@ -191,9 +191,9 @@
           ],
           "cost": "1 acción, 2 chi",
           "area": "Cono mediano",
-          "crit": "Inflige una herida permanente media a todos los afectados.",
+          "crit": "Inflige Herido-2 (permanente) a todos los afectados.",
           "duration": "Instantáneo",
-          "desc": "Haz un ataque contra todos los objetivos el el área afectada que inflige 4d8 + SAB/CAR daño Cortante al impactar y una herida permanente leve. Los afectados tienen Desventaja en tiros de Esquiva y perderán un contador de escudo.",
+          "desc": "Haz un ataque contra todos los objetivos el el área afectada que inflige 4d8 + SAB/CAR daño Cortante al impactar y Herido-1 (permanente). Los afectados tienen Desventaja en tiros de Esquiva y perderán un contador de escudo.",
           "empower": "El siguiente uso este turno de este hechizo no cuesta chi o aumenta el daño por un dado y el área afectada por un paso.",
           "name": "Viento Cortante"
         }
@@ -218,7 +218,7 @@
           "duration": "Instantáneo",
           "desc": "Haz un ataque contra todos los objetivos en el área afectada que provoca 4d10 + SAB/CAR daño Contundente además de empujar dos pasos y tropezar. Este ataque destruirá todas las estructuras frágiles y las criaturas voladoras tienen Desventaja defendiéndose y caerán al suelo al fallar.\n\nHasta el principio de tu siguiente turno, el aire será terreno difícil para voladores y forzando a toda criatura que intente alzar el vuelo a superar un tiro de salvación Físico.",
           "empower": "Lanza de nuevo este ataque contra la misma zona afectada.",
-          "crit": "Los afectados sufren una herida permanente leve."
+          "crit": "Los afectados sufren Herido-1 (permanente)."
         },
         {
           "name": "Esfera de Vacío",
@@ -231,9 +231,9 @@
           ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera pequeña",
-          "crit": "Los afectados quedan exhaustos.",
+          "crit": "Los afectados quedan con Fatigado-3.",
           "duration": "Concentración",
-          "desc": "Drenas todo el aire de la zona afectada, forzando a tus objetivos a tener éxito en un tiro de salvación Físico o quedan fatigados y sufren 3d10 + SAB/CAR daño Necrótico. La esfera permanecerá hasta que pierdas la conecntración y quienes permanezcan en ella al final de su turno o se muevan ahí sufrirán de nuevo sus efectos.",
+          "desc": "Drenas todo el aire de la zona afectada, forzando a tus objetivos a tener éxito en un tiro de salvación Físico o quedan con Fatigado-1 y sufren 3d10 + SAB/CAR daño Necrótico. La esfera permanecerá hasta que pierdas la conecntración y quienes permanezcan en ella al final de su turno o se muevan ahí sufrirán de nuevo sus efectos.",
           "empower": "Recuperas 5 Vitalidad por cada fallo enemigo."
         },
         {
@@ -260,9 +260,30 @@
             "Aire",
             "Duradera"
           ],
-          "desc": "Obtienes +40 Vitalidad temporal. Tus estadísticas físicas y tu SAB/CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
+          "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas de DES, CON, SAB y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque además que estás bajo los efectos de Viajero de los Cielos y Vientos Protectores, recibiendo así vuelo y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Aire de Rango III o menos no te costarán chi para ser lanzados.",
           "cost": "1 acción, 5 chi",
-          "duration": "Seis rondas"
+          "duration": "Seis rondas",
+          "toggle": {
+            "label": "Forma Elemental",
+            "damage": "+1 dado",
+            "adv": [
+              "Aire"
+            ],
+            "def_set": 20,
+            "stat_min": 12,
+            "stat_min_list": [
+              "des",
+              "con",
+              "sab",
+              "car"
+            ],
+            "immunities": [
+              "Aflicción",
+              "Toque"
+            ],
+            "vt_temp": 20,
+            "ce": "rango"
+          }
         }
       ],
       "passive": "Aumenta estadística de Carisma por 1"

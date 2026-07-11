@@ -113,10 +113,11 @@
                     </hr>
                     <div class="row p-1">
                         <div class="col"><b>PV:</b> {{ hp }}</div>
-                        <div class="col"><b>VT:</b> {{ vt }}</div>
+                        <div class="col"><b>VT:</b> {{ vt }}<span v-if="toggleBuffs.vt_temp > 0" style="color:#28a745"> (+{{ toggleBuffs.vt_temp }})</span></div>
                         <div class="col"><b>Crd:</b> {{ san }}</div>
                         <div class="col"><b>DEF:</b> {{ def }}</div>
                         <div class="col"><b>Chi:</b> {{ reserves.chi }}</div>
+                        <div class="col"><b>CE:</b> {{ shieldCounters }}</div>
                     </div>
                     <div class="row p-1">
                         <div v-for="(value, name) in finalStats" class="col">
@@ -126,6 +127,29 @@
                     </div>
                     <hr></hr>
                     <div><b>Tiros de Salvación: </b>Físico {{ savingThrows.fisico }}, Voluntad {{ savingThrows.voluntad }}, Mental {{ savingThrows.mental }}<br></div>
+                    <hr></hr>
+                    <div v-if="toggleableAbilities.length > 0" class="mb-1">
+                        <small><b>Estados de combate:</b></small><br>
+                        <button v-for="ab in toggleableAbilities" :key="ab.toggle.label"
+                            class="btn btn-sm mr-1 mb-1"
+                            :style="isToggleActive(ab.toggle.label) ? 'background:#dc3545;color:#fff;border-color:#dc3545' : ''"
+                            :class="isToggleActive(ab.toggle.label) ? '' : 'btn-outline-secondary'"
+                            @click="toggleAbility(ab.toggle.label)">
+                            {{ ab.toggle.label }}
+                        </button>
+                    </div>
+                    <div v-if="toggleBuffs.adv.length > 0" class="mb-1">
+                        <small><b>Ventaja (+1d6):</b>
+                            <span v-for="a in toggleBuffs.adv" :key="a"
+                                style="display:inline-block;background:#28a745;color:#fff;border-radius:3px;padding:0 4px;margin:0 2px;font-size:11px">{{ a }}</span>
+                        </small>
+                    </div>
+                    <div v-if="toggleBuffs.damage.length > 0" class="mb-1">
+                        <small><b>Daño adicional:</b>
+                            <span v-for="d in toggleBuffs.damage" :key="d"
+                                style="display:inline-block;background:#dc3545;color:#fff;border-radius:3px;padding:0 4px;margin:0 2px;font-size:11px">{{ d }}</span>
+                        </small>
+                    </div>
                     <hr></hr>
                     <div v-if="talstring"><b>Talentos: </b> {{ talstring }}<br></div>
                     <div v-if="rkString"><b>Rangos: </b> {{ rkString }}<br></div>

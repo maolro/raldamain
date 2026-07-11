@@ -38,7 +38,7 @@
           "range": "Cuerpo a cuerpo",
           "duration": "Instantáneo",
           "desc": "Reviertes daño reciente (de la ronda pasada). Puedes reparar un objeto (elimina estado Roto) o sanar a un aliado por Rango + 2 de Vitalidad.",
-          "empower": "Afecta un área pequeña o reduces una herida permanente o aflicción un paso."
+          "empower": "Afecta un área pequeña o reduces Herido (permanente) o aflicción un paso."
         },
         {
           "name": "Robar el Tiempo",
@@ -51,7 +51,7 @@
           ],
           "cost": "1 acción",
           "range": "Cuerpo a cuerpo",
-          "crit": "Objetivo fatigado una ronda.",
+          "crit": "Objetivo con Fatigado-1 durante una ronda.",
           "desc": "Envejeces al objetivo (tiro de salvación de CON contra tu Magia Temporal). Inflige 1d6 + Rango de daño de Fuerza que traspasa la defensa. Rompe objetos no mágicos o reduce la duración de hechizos en -2 rondas.",
           "empower": "Aumenta el alcance a medio o afecta a un objetivo adicional."
         }
@@ -166,13 +166,13 @@
           "tags": [
             "Temporal",
             "Arcana",
-            "Parálisis"
+            "Aturdido"
           ],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "crit": "Objetivo no puede intentar liberarse la primera ronda.",
           "duration": "Concentración",
-          "desc": "Congelas al objetivo en el tiempo (tiro de salvación de CON contra tu Magia Temporal). El objetivo queda Paralizado hasta que reciba daño o pierdas la concentración. Si falla el tiro de salvación 3 veces, queda congelado durante 1 día.",
+          "desc": "Congelas al objetivo en el tiempo (tiro de salvación de CON contra tu Magia Temporal). El objetivo queda con Aturdido-4 hasta que reciba daño o pierdas la concentración. Si falla el tiro de salvación 3 veces, queda congelado durante 1 día.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -200,12 +200,12 @@
             "Temporal",
             "Arcana",
             "Área",
-            "Parálisis"
+            "Aturdido"
           ],
           "cost": "3 acciones, 3 chi",
           "area": "Esfera grande",
           "duration": "Una ronda",
-          "desc": "Todas las criaturas en el área deben superar un tiro de salvación de CON contra tu Magia Temporal o quedan Paralizadas. Obtienes un turno extra inmediato. El efecto termina si atacas a un afectado.",
+          "desc": "Todas las criaturas en el área deben superar un tiro de salvación de CON contra tu Magia Temporal o quedan con Aturdido-4. Obtienes un turno extra inmediato. El efecto termina si atacas a un afectado.",
           "empower": "Extiendes el efecto una ronda adicional al final de tu turno sin coste."
         },
         {

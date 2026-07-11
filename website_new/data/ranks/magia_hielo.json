@@ -87,7 +87,7 @@
           "duration": "Concentración",
           "desc": "Crea una niebla fría que ciega y otorga ocultamiento. Todas las criaturas en su área de efecto deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB daño Frío y quedan ralentizadas durante una ronda. Puedes repetir este efecto en cada turno que esta habilidad permanezca activa empleando una acción.",
           "empower": "Aumenta el área de efecto por un paso y el daño Frío por un dado.",
-          "crit": "Los afectados quedan paralizados durante una ronda."
+          "crit": "Los afectados quedan con Aturdido-4 durante una ronda."
         },
         {
           "name": "Infusión de Hielo",
@@ -118,7 +118,7 @@
           "area": "Cono mediano",
           "duration": "Instantáneo",
           "desc": "Crea una tormenta de granizo y hielo que inflige 3d8 + SAB daño Cortante y Frío. Este ataque llenará el área afectada de terreno difícil y disipará efectos Gaseosos a su paso.",
-          "crit": "Los afectados quedarán paralizados durante una ronda.",
+          "crit": "Los afectados quedarán con Aturdido-4 durante una ronda.",
           "empower": "Lanza de nuevo este hechizo contra el mismo área o contra una zona diferente, o aumenta su área de efecto por un paso y su daño por un dado."
         },
         {
@@ -131,7 +131,7 @@
           ],
           "cost": "2 chi",
           "duration": "Hasta que el afectado escape",
-          "desc": "Al impactar con un hechizo de Hielo, todos los afectados deben tener éxito en un tiro de salvación Físico o quedarán paralizados además de sufrir hipotermia. Pueden liberarse si entran en calor, repiten el tiro y tienen éxito o sufren un ataque.",
+          "desc": "Al impactar con un hechizo de Hielo, todos los afectados deben tener éxito en un tiro de salvación Físico o quedarán con Aturdido-4 además de sufrir hipotermia. Pueden liberarse si entran en calor, repiten el tiro y tienen éxito o sufren un ataque.",
           "crit": "Los afectados quedarán afectados por Hipotermia."
         },
         {
@@ -180,7 +180,7 @@
           "cost": "2 Acciones, 2 chi",
           "duration": "Instantáneo",
           "area": "Esfera media",
-          "crit": "Los afectados quedan paralizados durante una ronda",
+          "crit": "Los afectados quedan con Aturdido-4 durante una ronda",
           "empower": "Aumenta el área de efecto de este hechizo por un paso y el daño por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada."
         },
         {
@@ -204,7 +204,7 @@
           "area": "Radio grande",
           "duration": "Concentración",
           "name": "Medianoche Polar",
-          "desc": "Bajas masivamente las temperaduras en el área afectada, congelando toda el agua ahí y eliminando todos los efectos de Fuego, Naturaleza y Agua no-míticos activos. Aquellas criaturas que se encuentren en el agua cuando lances este hechizo deberán tener éxito en un tiro de salvación Físico o quedarán paralizadas hasta que se liberen o tengan éxito en el tiro (cuenta como si estuvieran rodeadas por un Muro de Hielo). \n\nMientras este hechizo permanezca activo, tus hechizos de Magia de Hielo aumentan su alcance a toda el área y además que todos los objetivos estarán bajo los efectos de hipotermia hasta que entren en calor. El terreno también contará como frío extremo para los propósitos de tus hechizos y el agua se congelará de inmediato salvo que tú lo decidas."
+          "desc": "Bajas masivamente las temperaduras en el área afectada, congelando toda el agua ahí y eliminando todos los efectos de Fuego, Naturaleza y Agua no-míticos activos. Aquellas criaturas que se encuentren en el agua cuando lances este hechizo deberán tener éxito en un tiro de salvación Físico o quedarán con Aturdido-4 hasta que se liberen o tengan éxito en el tiro (cuenta como si estuvieran rodeadas por un Muro de Hielo). \n\nMientras este hechizo permanezca activo, tus hechizos de Magia de Hielo aumentan su alcance a toda el área y además que todos los objetivos estarán bajo los efectos de hipotermia hasta que entren en calor. El terreno también contará como frío extremo para los propósitos de tus hechizos y el agua se congelará de inmediato salvo que tú lo decidas."
         },
         {
           "name": "Alud",
@@ -232,9 +232,9 @@
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Instantáneo",
-          "desc": "Un objetivo afectado por hipotermia debe tener éxito en un tiro de Voluntad o sufre 4d10 + SAB daño Frío, una herida grave y queda paralizado. Se podrá liberar si entra en calor, repite el tiro con éxito o es liberado por otro.",
+          "desc": "Un objetivo afectado por hipotermia debe tener éxito en un tiro de Voluntad o sufre 4d10 + SAB daño Frío, Herido-3 y queda con Aturdido-4. Se podrá liberar si entra en calor, repite el tiro con éxito o es liberado por otro.",
           "empower": "Afecta a un objetivo adicional.",
-          "crit": "El objetivo sufre una herida permanente crítica."
+          "crit": "El objetivo sufre Herido-4 (Herida Crítica Incurable)."
         }
       ],
       "passive": "Todos tus hechizos de Hielo sustituyen sus dados de daño por d10."

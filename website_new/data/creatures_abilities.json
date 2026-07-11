@@ -1,0 +1,774 @@
+[
+  {
+    "id": "ab_1778690641452",
+    "name": "Asalto Abrasador",
+    "type": "action",
+    "tags": [
+      "Fuego",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "4",
+    "area": "",
+    "damage": "MID Fuego",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "Quema objetos inflamables que impacte.",
+    "damage_tier": "MID",
+    "damage_base_type": "Fuego"
+  },
+  {
+    "name": "Aliento de Fuego",
+    "bonus": "+7 + 2d6",
+    "area": "Cono 8",
+    "damage": "HIGH Fuego",
+    "move": "5",
+    "cost": 1,
+    "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
+    "range": "1",
+    "id": "aliento-de-fuego_1778692098257",
+    "type": "action",
+    "tags": [
+      "Fuego",
+      "Ataque",
+      "Area"
+    ],
+    "damage_tier": "HIGH",
+    "damage_base_type": "Fuego"
+  },
+  {
+    "name": "Evasión",
+    "cost": 1,
+    "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
+    "move": 10,
+    "id": "evasion_1778692238910",
+    "type": "reaction",
+    "tags": [
+      "Reflejos"
+    ]
+  },
+  {
+    "name": "Muro de Fuego",
+    "cost": 1,
+    "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 2d6 daño Fuego.",
+    "ability_id": "muro-de-fuego_1778692256831",
+    "id": "muro-de-fuego_1778692256831",
+    "type": "reaction"
+  },
+  {
+    "name": "Absorber Fuego",
+    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
+    "cost": 1,
+    "id": "absorber-elemento_1778692436921",
+    "type": "reaction",
+    "tags": [
+      "Fuego",
+      "Sanacion"
+    ]
+  },
+  {
+    "name": "Cuerpo de Fuego",
+    "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "id": "cuerpo-de-fuego_1778692691656",
+    "type": "passive",
+    "tags": [
+      "Fuego"
+    ]
+  },
+  {
+    "name": "Cuerpo Líquido",
+    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "id": "cuerpo-liquido_1778692889955",
+    "type": "passive",
+    "tags": [
+      "Agua"
+    ]
+  },
+  {
+    "name": "Ola Chocante",
+    "cost": 2,
+    "bonus": "+7+2d6",
+    "damage": "HIGH Contundente",
+    "move": 10,
+    "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). ",
+    "id": "ola-chocante_1778693300723",
+    "type": "action",
+    "tags": [
+      "Agua",
+      "Ataque",
+      "Area",
+      "Maniobra"
+    ],
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente",
+    "area": "Linea 10 "
+  },
+  {
+    "cost": 1,
+    "bonus": "+7+2d6",
+    "damage": "MID Contundente",
+    "move": "Puede moverse 4 pasos antes o después del ataque.",
+    "desc": "El objetivo es empujado 4 casillas por cada impacto.",
+    "name": "Golpes Fluidos",
+    "attacks": 2,
+    "range": "4",
+    "id": "golpes-fluidos_1778693302107",
+    "type": "action",
+    "tags": [
+      "Agua",
+      "Ataque"
+    ],
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente"
+  },
+  {
+    "name": "Muro de Agua",
+    "cost": 1,
+    "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
+    "id": "muro-de-agua_1778693409061",
+    "type": "reaction",
+    "tags": [
+      "Agua"
+    ]
+  },
+  {
+    "name": "Absorber Agua",
+    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
+    "cost": 1,
+    "id": "absorber-agua_1778693562144",
+    "type": "reaction",
+    "tags": [
+      "Agua",
+      "Sanacion"
+    ]
+  },
+  {
+    "name": "Cuerpo de Aire",
+    "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos físicos (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "id": "cuerpo-de-aire_1778694356948",
+    "type": "passive",
+    "tags": [
+      "Aire"
+    ]
+  },
+  {
+    "name": "Viento Cortante",
+    "cost": 1,
+    "bonus": "+7+2d6",
+    "range": "8",
+    "damage": "3d6 + 5 Cortante",
+    "move": 5,
+    "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia.",
+    "attacks": 2,
+    "id": "viento-cortante_1778706447471",
+    "type": "action",
+    "tags": [
+      "Aire",
+      "Ataque"
+    ]
+  },
+  {
+    "name": "Vendaval",
+    "cost": 2,
+    "bonus": "+7+2d6",
+    "area": "Cono 16",
+    "damage": "5d8 + 7 Contundente",
+    "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
+    "id": "vendaval_1778706575166",
+    "type": "action",
+    "tags": [
+      "Aire",
+      "Ataque",
+      "Area",
+      "Maniobra"
+    ],
+    "move": 2,
+    "ability_id": "vendaval_1778706575166"
+  },
+  {
+    "name": "Vórtice Viviente",
+    "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
+    "cost": 1,
+    "bonus": "+7 + 2d6",
+    "range": "4",
+    "damage": "3d6 + 5 Contundente",
+    "type": "action",
+    "tags": [
+      "Agua",
+      "Ataque",
+      "Agarre"
+    ],
+    "id": "vortice-viviente_1778706814167",
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente"
+  },
+  {
+    "name": "Torbellino Viviente",
+    "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado (si tiene éxito será enredado). Mientras permanezca agarrado, se moverá junto a esta criatura y sufrirá todo el daño que reciba siempre y cuando sea aplicable. ",
+    "range": "2",
+    "damage": "4d8 + 7 Cortante",
+    "cost": 1,
+    "id": "torbellino-viviente_1778706845890",
+    "type": "action",
+    "tags": [
+      "Aire",
+      "Ataque",
+      "Agarre"
+    ],
+    "move": 10,
+    "ability_id": "torbellino-viviente_1778706845890",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante"
+  },
+  {
+    "name": "Muro de Aire",
+    "cost": 1,
+    "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Cortante.",
+    "id": "muro-de-aire_1778707098298",
+    "type": "reaction",
+    "tags": [
+      "Aire"
+    ],
+    "ability_id": "muro-de-aire_1778707098298"
+  },
+  {
+    "name": "Paso Terrestre",
+    "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
+    "ability_id": "cuerpo-de-tierra_1778707274474",
+    "id": "cuerpo-de-tierra_1778707274474",
+    "type": "passive",
+    "tags": [
+      "Tierra"
+    ]
+  },
+  {
+    "name": "Muro de Piedra",
+    "cost": 1,
+    "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 3d6 daño Contundente (si atacaron con armas naturales) o su arma se rompe.",
+    "tags": [
+      "Tierra"
+    ],
+    "ability_id": "muro-de-piedra_1778712055897",
+    "id": "muro-de-piedra_1778712055897",
+    "type": "reaction"
+  },
+  {
+    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
+    "cost": 1,
+    "id": "vinculo-con-la-tierra_1778712119755",
+    "type": "reaction",
+    "tags": [
+      "Tierra",
+      "Sanacion"
+    ],
+    "name": "Vínculo con la Tierra",
+    "ability_id": "vinculo-con-la-tierra_1778712119755"
+  },
+  {
+    "cost": 1,
+    "bonus": "+7+2d6",
+    "range": "1",
+    "damage": "4d8 + 7 Contundente",
+    "desc": "Al impactar, el objetivo es empujado 4 casillas. Si recibe ambos golpes, debe tener éxito en un tiro de salvación Físico o cae tropezado.",
+    "name": "Puños de Piedra",
+    "attacks": 2,
+    "id": "punos-de-piedra_1778747633622",
+    "type": "action",
+    "tags": [
+      "Tierra",
+      "Ataque",
+      "Maniobra"
+    ],
+    "ability_id": "punos-de-piedra_1778747633622"
+  },
+  {
+    "name": "Pedrada",
+    "cost": 1,
+    "bonus": "+7 + 2d6",
+    "range": "8",
+    "area": "Radio 2",
+    "damage": "5d8 + 7 Contundente",
+    "desc": "Todos los impactados deben tener éxito en un tiro de salvación de Voluntad o son aturdidos una ronda. Si impacta a un objetivo volador, caerá al suelo y sufrirá el daño de caída correspondiente. ",
+    "ability_id": "pedrada_1778747712364",
+    "type": "action",
+    "tags": [
+      "Tierra",
+      "Ataque",
+      "Area"
+    ],
+    "id": "pedrada_1778747712364"
+  },
+  {
+    "name": "Torbellino de Fuego",
+    "cost": 1,
+    "bonus": "+11+3d6",
+    "damage": "4d8 + 7 Fuego",
+    "desc": "Todos los objetivos impactados sufren una quemadura. Este ataque llena los espacios por los que pase con fuego y solo podrá atacar a objetivos en su trayectoria.",
+    "tags": [
+      "Fuego",
+      "Ataque",
+      "Area"
+    ],
+    "ability_id": "ola-de-tierra_1778747893560",
+    "id": "ola-de-tierra_1778747893560",
+    "type": "action",
+    "move": 10,
+    "area": "Linea 10x4",
+    "range": "1",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Fuego"
+  },
+  {
+    "name": "Absorber Aire",
+    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un lugar con vientos fuertes o es impactado por un efecto de Aire que atraviese su umbral.",
+    "cost": 1,
+    "id": "absorber-aire_1778748254508",
+    "type": "reaction",
+    "tags": [
+      "Aire",
+      "Sanacion"
+    ]
+  },
+  {
+    "name": "Salto Espacial",
+    "desc": "Añade +10 a su tiro de Esquiva y se teletransporta al moverse.",
+    "move": 8,
+    "tags": [
+      "Espacial"
+    ],
+    "ability_id": "salto-espacial_1778751219905",
+    "id": "salto-espacial_1778751219905",
+    "type": "reaction"
+  },
+  {
+    "name": "Vínculo Vital",
+    "desc": "Recibe el daño que sufriría un aliado a distancia 8. Ese daño contará como General para determinar si traspasa su umbral.",
+    "tags": [
+      "Vida"
+    ],
+    "ability_id": "vinculo-vital_1778751231679",
+    "id": "vinculo-vital_1778751231679",
+    "type": "reaction"
+  },
+  {
+    "desc": "Se sana un Impacto y se recupera de un efecto de estado negativo. ",
+    "name": "Sanación Rápida",
+    "ability_id": "sanacion-rapida_1778751268910",
+    "tags": [
+      "Sanacion"
+    ],
+    "id": "sanacion-rapida_1778751268910",
+    "type": "reaction"
+  },
+  {
+    "name": "Tácticas en Manada",
+    "desc": "Su iniciativa será siempre la más alta entre sus aliados y al atacar junto a ellos el objetivo solo podrá tirar defensa una vez como si fuera una secuencia.",
+    "id": "tacticas-en-manada_1778751341323",
+    "type": "passive"
+  },
+  {
+    "name": "Mordisco",
+    "desc": "El afectado debe tener éxito en un tiro salvación FÍS +7+1d6 o queda enredado y tropezado. ",
+    "bonus": "+7+2d6",
+    "damage": "4d6 + 5 Perforante/Radiante",
+    "move": "HALF",
+    "range": "1",
+    "cost": 1,
+    "tags": [
+      "Ataque",
+      "Fisico"
+    ],
+    "id": "mordisco_1778751352442",
+    "type": "action",
+    "damage_tier": "HIGH"
+  },
+  {
+    "name": "Aliento Radiante",
+    "desc": "",
+    "bonus": "+7+2d6",
+    "area": "Cono 8",
+    "damage": "3d6 + 5 Radiante",
+    "range": "1",
+    "tags": [
+      "Vida",
+      "Ataque",
+      "Area"
+    ],
+    "cost": 1,
+    "id": "aliento-radiante_1778751356221",
+    "type": "action",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Radiante"
+  },
+  {
+    "name": "Toque Sanador",
+    "desc": "El objetivo recupera 8 Vitalidad/1 Impacto y se cura de un efecto de estado negativo.",
+    "range": "1",
+    "tags": [
+      "Vida",
+      "Sanacion"
+    ],
+    "cost": 1,
+    "id": "toque-sanador_1778751359599",
+    "type": "action"
+  },
+  {
+    "id": "rayos-luminosos_1778752957956",
+    "name": "Rayos Luminosos",
+    "type": "action",
+    "tags": [
+      "Vida",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "area": "",
+    "damage": "3d8+7 Radiante",
+    "save": "",
+    "move": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Radiante",
+    "range": "8",
+    "attacks": 3
+  },
+  {
+    "desc": "El afectado reduce su cordura por 6 y queda confundido durante una ronda.",
+    "attacks": 2,
+    "cost": 1,
+    "save": "Mental +11+2d6",
+    "name": "Sobrecarga Mental",
+    "tags": [
+      "Mental"
+    ],
+    "id": "sobrecarga-mental_1778753097013",
+    "type": "action"
+  },
+  {
+    "name": "Jinete",
+    "desc": "Se engancha a un aliado, empleándolo como montura. Esto hará que se mueva junto a él sin la necesidad de emplear movimiento.",
+    "id": "jinete_1778753235567",
+    "type": "passive"
+  },
+  {
+    "name": "Tormenta Telekinética",
+    "bonus": "+7+2d6",
+    "area": "Cono 12",
+    "damage": "5d8 + 7 Contundente/Perforante/Cortante",
+    "id": "tormenta-telekinetica_1778753241551",
+    "type": "action",
+    "tags": [
+      "Telekinesia",
+      "Ataque",
+      "Area"
+    ],
+    "cost": 1,
+    "desc": "Empuja 4 casillas al impactar. El espacio afectado se convierte en terreno difícil y puede alterar el terreno a distancia 4 como desee, eliminando muros y barreras.",
+    "ability_id": "tormenta-telekinetica_1778753241551",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente/Perforante/Cortante"
+  },
+  {
+    "name": "Parada / Esquiva",
+    "bonus": "+7 + 2d6",
+    "move": "5",
+    "id": "parada--esquiva_1778753374110",
+    "type": "reaction"
+  },
+  {
+    "desc": "Un aliado adyacente repite un tiro y se queda con el resultado que más le convenga.",
+    "name": "Milagro Menor",
+    "tags": [
+      "Divina"
+    ],
+    "id": "milagro-menor_1778753435883",
+    "type": "reaction"
+  },
+  {
+    "name": "Halo Cegador",
+    "desc": "Todos los que le vean deben tener éxito en un tiro de salvación de Voluntad +11+2d6 o quedan cegados una ronda, fallando automáticamente sus ataques. Los atacantes cuerpo a cuerpo sufrirán además 4d8 daño Radiante.",
+    "id": "halo-cegador_1778753483283",
+    "type": "reaction"
+  },
+  {
+    "cost": 1,
+    "bonus": "+7+2d6",
+    "range": "12",
+    "damage": "4d8 + 7 Cortante",
+    "move": 5,
+    "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia. Si impacta con ambos ataques, rompe la armadura del objetivo y este pierde un contador de escudo (sufre una herida media si no tiene armadura).",
+    "id": "tajo-de-los-vientos_1778754690668",
+    "type": "action",
+    "tags": [
+      "Aire",
+      "Ataque"
+    ],
+    "attacks": 2,
+    "name": "Tajo de los Vientos"
+  },
+  {
+    "name": "Ola de Tierra",
+    "cost": 1,
+    "bonus": "+7+2d6",
+    "damage": "4d6 + 5 Contundente",
+    "move": 8,
+    "range": "1",
+    "area": "Linea 8",
+    "desc": "Todos los objetivos impactados son empujados 4 casillas y deben tener éxito en un tiro de salvación Físico o caen tropezados. Este ataque crea terreno difícil por donde pasa y elimina otros efectos en el suelo. ",
+    "tags": [
+      "Tierra",
+      "Ataque",
+      "Area",
+      "Maniobra"
+    ],
+    "id": "ola-de-tierra_1778755219012",
+    "type": "action"
+  },
+  {
+    "id": "ab_1778929633136",
+    "name": "Animar Plantas",
+    "type": "action",
+    "tags": [
+      "Naturaleza",
+      "Ataque",
+      "Area",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "",
+    "area": "Cono 12/Radio 8",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente/Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Todos los objetivos impactados quedan enredados (tiro salvación Físico para escapar). Cada vez que un objetivo fracase su tiro para escapar, sufrirá LOW daño Contundente/Perforante. El área afectada se convierte en terreno difícil. "
+  },
+  {
+    "id": "ab_1778929845703",
+    "name": "Devorar",
+    "type": "action",
+    "tags": [
+      "Fisico",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "1",
+    "area": "",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo queda agarrado y engullido en su interior. Cada ronda que pase devorado sufrirá MID daño ácido. Puede escapar si logra provocar un impacto desde dentro o escapa de otra manera (a través de dos tiros de salvación Físicos). Esta habilidad solo funcionará contra enemigos cuyo tamaño sea dos veces inferior."
+  },
+  {
+    "id": "ab_1778930132296",
+    "name": "Chupasangre",
+    "type": "action",
+    "tags": [
+      "Sangre",
+      "Sanacion",
+      "Necrotico",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "1",
+    "area": "",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Perforante/Necrótico",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El daño de este ataque no podrá ser sanado. Si esta criatura provoca un impacto / (X o más daño), se sanará un impacto o se recupera de un efecto de estado negativo."
+  },
+  {
+    "id": "ab_1778930247678",
+    "name": "Garras",
+    "type": "action",
+    "tags": [
+      "Fisico",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "1",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "Si impacta con ambos ataques, el objetivo sufre sangrado."
+  },
+  {
+    "id": "ab_1778930291704",
+    "name": "Aliento Ácido",
+    "type": "action",
+    "tags": [
+      "Acido",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "",
+    "area": "Cono 8",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Ácido",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Provoca una quemadura a todos los impactados y corroe madera u otros materiales frágiles, provocando así el efecto de estado roto."
+  },
+  {
+    "name": "Planta",
+    "desc": "Es una planta viviente, siendo así Inmune a efectos Mentales, Miedo, Aturdimiento, Aflicciones y Sónicos, Resistencia a Ácido y Eléctrico a costa de Vulnerabilidad a efectos de Fuego y Cortantes (todo ya incluido). El terreno difícil por naturaleza no le afecta y puede camuflarse ahí.",
+    "tags": [
+      "Naturaleza"
+    ],
+    "id": "planta_1778930785381",
+    "type": "passive"
+  },
+  {
+    "name": "Raíces Parasíticas",
+    "tags": [
+      "Naturaleza"
+    ],
+    "cost": 1,
+    "desc": "Transfiere la mitad del daño recibido a un objetivo enredado. Este daño es obligatorio y cuenta como General a la hora de determinar umbrales. ",
+    "id": "raices-parasiticas_1778931038697",
+    "type": "reaction"
+  },
+  {
+    "name": "Muro de Espinas",
+    "cost": 1,
+    "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Perforante y deben tener éxito en un tiro de salvación Físico o quedan enredados.",
+    "id": "muro-de-espinas_1778931041786",
+    "type": "reaction",
+    "tags": [
+      "Naturaleza"
+    ]
+  },
+  {
+    "name": "Absorber Nutrientes",
+    "cost": 1,
+    "save": "Voluntad +11+2d6",
+    "area": "Radio 8",
+    "desc": "Solo afecta a objetivos enredados por plantas. Se sana 1 impacto por cada 20 puntos de daño que logra provocar. ",
+    "tags": [
+      "Naturaleza",
+      "Afliccion",
+      "Sanacion"
+    ],
+    "damage": "4d8+7 Necrótico",
+    "id": "absorber-nutrientes_1778942235047",
+    "type": "action",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Necrótico"
+  },
+  {
+    "name": "Polen Adormidor",
+    "desc": "Los afectados caen inconscientes. Deben repetir el tiro cada ronda y se despiertan al sufrir daño. ",
+    "tags": [
+      "Naturaleza",
+      "Afliccion",
+      "Gaseoso"
+    ],
+    "cost": 1,
+    "save": "Voluntad +11+2d6",
+    "area": "Radio 8",
+    "ability_id": "polen-adormidor_1778942353077",
+    "id": "polen-adormidor_1778942353077",
+    "type": "action"
+  },
+  {
+    "id": "ab_1778944367038",
+    "name": "Polen Hipnotizante",
+    "type": "action",
+    "tags": [
+      "Naturaleza",
+      "Afliccion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "",
+    "area": "Radio 8",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "Voluntad",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados quedan embobados y bajo los efectos de Sugestión durante una ronda, obligados así a seguir una orden específica. Pueden repetir el tiro al principio de su siguiente turno para liberarse. "
+  },
+  {
+    "id": "ab_1778944470164",
+    "name": "Espinas de Madera",
+    "type": "action",
+    "tags": [
+      "Naturaleza",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "8",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "El daño de este ataque cuenta como Fuerza contra objetivos enredados por efectos de naturaleza. "
+  },
+  {
+    "id": "ab_1778944605648",
+    "name": "Enmarañar",
+    "type": "action",
+    "tags": [
+      "Naturaleza",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "",
+    "area": "Radio 8",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Todos los afectados quedan enredados y el área afectada se convierte en terreno difícil. Los objetivos ya enredados por este efecto serán impactados de manera automática y deben tener éxito en un tiro de salvación Físico o quedan agarrados hasta que escapen. "
+  },
+  {
+    "id": "ab_1778944903955",
+    "name": "Desfase Planar",
+    "type": "reaction",
+    "tags": [
+      "Espacial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Se vuelve inmune a todos los efectos que provengan del plano material a costa que no podrá afectar al plano material de ninguna manera. Durará hasta su siguiente turno,"
+  }
+]

@@ -259,6 +259,11 @@ select.inp{cursor:pointer}
   font-family:inherit}
 .emp-tog:hover{text-decoration:underline}
 
+/* ── Toggle (combat state) section ── */
+.tog-section{border-top:1px solid var(--border);padding-top:8px;margin-top:4px}
+.tog-hd{display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.tog-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--teal)}
+
 /* ── Add card button ── */
 .add-card{border:1px dashed var(--border);background:transparent;border-radius:7px;
   padding:13px;cursor:pointer;color:var(--text3);font-size:12px;transition:all .15s;
@@ -666,6 +671,67 @@ function cardHtml(li, ab, ai) {
          <button class="emp-tog" onclick="addEmp(${li},${ai})">✦ Añadir empower</button>
        </div>`;
 
+  const toggleSect = 'toggle' in ab ? `
+    <div class="tog-section">
+      <div class="tog-hd">
+        <span class="tog-label">⚡ Estado de combate</span>
+        <button class="btn sm danger" style="margin-left:auto" onclick="delToggle(${li},${ai})">× Quitar</button>
+      </div>
+      <div class="row2" style="margin-bottom:6px">
+        <div class="field"><div class="lbl">Etiqueta</div>
+          <input class="inp" value="${esc(ab.toggle.label||'')}" placeholder="Nombre del estado"
+            oninput="setToggle(${li},${ai},'label',this.value)"></div>
+        <div class="field"><div class="lbl">Daño extra</div>
+          <input class="inp" value="${esc(ab.toggle.damage||'')}" placeholder="+1d6 · +1 dado"
+            oninput="setToggle(${li},${ai},'damage',this.value)"></div>
+      </div>
+      <div class="row2" style="margin-bottom:6px">
+        <div class="field"><div class="lbl">Ventaja en (comas)</div>
+          <input class="inp" value="${esc((ab.toggle.adv||[]).join(', '))}" placeholder="Ataque, Defensa…"
+            oninput="setToggleArr(${li},${ai},'adv',this.value)"></div>
+        <div class="field"><div class="lbl">+1d6 etiquetas (+= AND, ,= OR)</div>
+          <input class="inp" value="${esc((ab.toggle.adv_tags||[]).join(', '))}" placeholder="Fuego, Ataque+Físico…"
+            oninput="setToggleArr(${li},${ai},'adv_tags',this.value)"></div>
+      </div>
+      <div class="field" style="margin-bottom:6px">
+        <div class="lbl">Ventaja en salvaciones (comas)</div>
+        <input class="inp" value="${esc((ab.toggle.saves||[]).join(', '))}" placeholder="Físico, Voluntad, Mental"
+          oninput="setToggleArr(${li},${ai},'saves',this.value)"></div>
+      <div class="row3" style="margin-bottom:6px">
+        <div class="field"><div class="lbl">+DEF</div>
+          <input class="inp" value="${ab.toggle.def!=null?ab.toggle.def:''}" placeholder="—"
+            oninput="setToggleNum(${li},${ai},'def',this.value)"></div>
+        <div class="field"><div class="lbl">DEF mínima</div>
+          <input class="inp" value="${ab.toggle.def_set!=null?ab.toggle.def_set:''}" placeholder="—"
+            oninput="setToggleNum(${li},${ai},'def_set',this.value)"></div>
+        <div class="field"><div class="lbl">+VT temporal</div>
+          <input class="inp" value="${ab.toggle.vt_temp!=null?ab.toggle.vt_temp:''}" placeholder="—"
+            oninput="setToggleNum(${li},${ai},'vt_temp',this.value)"></div>
+      </div>
+      <div class="row3" style="margin-bottom:6px">
+        <div class="field"><div class="lbl">Stat mínima</div>
+          <input class="inp" value="${ab.toggle.stat_min!=null?ab.toggle.stat_min:''}" placeholder="—"
+            oninput="setToggleNum(${li},${ai},'stat_min',this.value)"></div>
+        <div class="field"><div class="lbl">Stats afectadas (comas)</div>
+          <input class="inp" value="${esc((ab.toggle.stat_min_list||[]).join(', '))}" placeholder="str, dex, con…"
+            oninput="setToggleArr(${li},${ai},'stat_min_list',this.value)"></div>
+        <div class="field"><div class="lbl">CE +</div>
+          <input class="inp" value="${esc(ab.toggle.ce!=null?String(ab.toggle.ce):'')}" placeholder="# o rango"
+            oninput="setToggleCe(${li},${ai},this.value)"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><div class="lbl">Resistencias (comas)</div>
+          <input class="inp" value="${esc((ab.toggle.resistances||[]).join(', '))}" placeholder="Fuego, Miedo…"
+            oninput="setToggleArr(${li},${ai},'resistances',this.value)"></div>
+        <div class="field"><div class="lbl">Inmunidades (comas)</div>
+          <input class="inp" value="${esc((ab.toggle.immunities||[]).join(', '))}" placeholder="Aflicción…"
+            oninput="setToggleArr(${li},${ai},'immunities',this.value)"></div>
+      </div>
+    </div>` : `
+    <div class="tog-section">
+      <button class="emp-tog" style="color:var(--teal)" onclick="addToggle(${li},${ai})">⚡ Añadir estado de combate</button>
+    </div>`;
+
   const totalAbs = S.rank.levels[li].abilities.length;
   const canAbUp   = ai > 0;
   const canAbDown = ai < totalAbs - 1;
@@ -694,6 +760,14 @@ function cardHtml(li, ab, ai) {
           <input class="inp" value="${esc(ab.area||'')}" placeholder="—"
             oninput="setAb(${li},${ai},'area',this.value)"></div>
       </div>
+      <div class="row2">
+        <div class="field"><div class="lbl">Daño (dados)</div>
+          <input class="inp" value="${esc(ab.damage||'')}" placeholder="1d6, 2d8+3…"
+            oninput="setAb(${li},${ai},'damage',this.value)"></div>
+        <div class="field"><div class="lbl">Tipo de daño</div>
+          <input class="inp" value="${esc(ab.damage_type||'')}" placeholder="Fuego, Físico…"
+            oninput="setAb(${li},${ai},'damage_type',this.value)"></div>
+      </div>
       <div class="field"><div class="lbl">Crítico</div>
         <input class="inp" value="${esc(ab.crit||'')}" placeholder="—"
             oninput="setAb(${li},${ai},'crit',this.value)">
@@ -701,7 +775,7 @@ function cardHtml(li, ab, ai) {
       <div class="field"><div class="lbl">Descripción</div>
         <textarea class="inp" rows="3"
           oninput="setAb(${li},${ai},'desc',this.value)">${esc(ab.desc||'')}</textarea></div>
-      ${tags.includes('Pasiva') || ab.def!==undefined || ab.hp!==undefined || ab.vt!==undefined || ab.chi!==undefined ? `
+      ${tags.includes('Pasiva') || ab.def!==undefined || ab.hp!==undefined || ab.vt!==undefined || ab.chi!==undefined || ab.resistances!==undefined || ab.immunities!==undefined ? `
       <div class="opt-row" style="margin-top:4px">
         <div class="field"><div class="lbl">+DEF</div>
           <input class="inp" value="${esc(ab.def||'')}" placeholder="—"
@@ -715,8 +789,17 @@ function cardHtml(li, ab, ai) {
         <div class="field"><div class="lbl">+Chi</div>
           <input class="inp" value="${esc(ab.chi||'')}" placeholder="—"
             oninput="setAb(${li},${ai},'chi',this.value)"></div>
+      </div>
+      <div class="row2" style="margin-top:4px">
+        <div class="field"><div class="lbl">Resistencias (comas)</div>
+          <input class="inp" value="${esc((ab.resistances||[]).join(', '))}" placeholder="—"
+            oninput="setAbArr(${li},${ai},'resistances',this.value)"></div>
+        <div class="field"><div class="lbl">Inmunidades (comas)</div>
+          <input class="inp" value="${esc((ab.immunities||[]).join(', '))}" placeholder="—"
+            oninput="setAbArr(${li},${ai},'immunities',this.value)"></div>
       </div>` : ''}
       ${empHtml}
+      ${toggleSect}
     </div>`;
 }
 
@@ -766,6 +849,15 @@ function refreshTags(li,ai) {
 // ── Empower ───────────────────────────────────────────────────────────────────
 function addEmp(li,ai) { S.rank.levels[li].abilities[ai].empower=''; renderLvl(); }
 function delEmp(li,ai) { delete S.rank.levels[li].abilities[ai].empower; renderToolbar(); renderLvl(); }
+
+// ── Toggle (combat state) ─────────────────────────────────────────────────────
+function addToggle(li,ai)        { S.rank.levels[li].abilities[ai].toggle={label:''}; renderToolbar(); renderLvl(); }
+function delToggle(li,ai)        { delete S.rank.levels[li].abilities[ai].toggle; renderToolbar(); renderLvl(); }
+function setToggle(li,ai,k,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(v)t[k]=v; else delete t[k]; renderToolbar(); }
+function setToggleArr(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)t[k]=a; else delete t[k]; renderToolbar(); }
+function setToggleNum(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const n=parseInt(v); if(!isNaN(n))t[k]=n; else delete t[k]; renderToolbar(); }
+function setToggleCe(li,ai,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(!v){delete t.ce;renderToolbar();return;} const n=parseFloat(v); t.ce=isNaN(n)?v:n; renderToolbar(); }
+function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)ab[k]=a; else delete ab[k]; renderToolbar(); }
 
 // ── Clipboard ─────────────────────────────────────────────────────────────────
 function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }

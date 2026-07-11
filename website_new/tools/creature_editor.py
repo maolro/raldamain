@@ -19,6 +19,7 @@ app   = Flask(__name__)
 BASE  = Path(__file__).parent.parent
 CDIR  = BASE / "data" / "creatures"
 CIDX  = BASE / "data" / "creatures_list.json"
+ABANK = BASE / "data" / "creatures_abilities.json"
 
 # ── helpers ───────────────────────────────────────────────────────────────────
 
@@ -29,6 +30,38 @@ def load_index():
 
 def save_index(lst):
     CIDX.write_text(json.dumps(lst, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def load_abilities():
+    if ABANK.exists():
+        return json.loads(ABANK.read_text(encoding="utf-8"))
+    return []
+
+def save_abilities(lst):
+    ABANK.write_text(json.dumps(lst, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def _propagate_ability(aid, ab_data):
+    """Update all creature JSON files that reference aid in actions/traits/reactions."""
+    changed = []
+    if not CDIR.exists():
+        return changed
+    for p in CDIR.glob("*.json"):
+        try:
+            data = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        modified = False
+        for section in ("actions", "traits", "reactions"):
+            for entry in data.get(section, []):
+                if entry.get("ability_id") == aid:
+                    for k, v in ab_data.items():
+                        if k != "id":
+                            entry[k] = v
+                    entry["ability_id"] = aid
+                    modified = True
+        if modified:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            changed.append(str(p))
+    return changed
 
 def _git_push(files, message):
     """Stage files, commit, push. Returns 'ok', 'nothing', or an error string."""
@@ -102,6 +135,42 @@ def api_delete(cid):
     if p.exists(): p.unlink()
     idx = [e for e in load_index() if e.get("id") != cid]
     save_index(idx)
+    return jsonify({"ok": True})
+
+@app.route("/api/abilities")
+def api_abilities():
+    return Response(
+        json.dumps(load_abilities(), ensure_ascii=False),
+        mimetype="application/json"
+    )
+
+@app.route("/api/ability/<aid>")
+def api_ability_get(aid):
+    lst = load_abilities()
+    for ab in lst:
+        if ab.get("id") == aid:
+            return jsonify(ab)
+    return jsonify({"error": "not found"}), 404
+
+@app.route("/api/ability/<aid>", methods=["POST"])
+def api_ability_upsert(aid):
+    data = request.get_json(force=True)
+    data["id"] = aid
+    lst = load_abilities()
+    found = False
+    for i, ab in enumerate(lst):
+        if ab.get("id") == aid:
+            lst[i] = data; found = True; break
+    if not found:
+        lst.append(data)
+    save_abilities(lst)
+    changed = _propagate_ability(aid, data)
+    return jsonify({"ok": True, "propagated": len(changed)})
+
+@app.route("/api/ability/<aid>", methods=["DELETE"])
+def api_ability_delete(aid):
+    lst = [ab for ab in load_abilities() if ab.get("id") != aid]
+    save_abilities(lst)
     return jsonify({"ok": True})
 
 @app.route("/")
@@ -301,6 +370,29 @@ select.inp{cursor:pointer}
 #toast.ok{border-color:var(--green);color:var(--green)}
 #toast.err{border-color:var(--red);color:var(--red)}
 #toast.vis{opacity:1}
+
+/* ── Ability Bank ── */
+#lib-view{display:flex;flex-direction:column;flex:1;overflow-y:auto;padding:18px 20px 60px 20px;gap:14px;min-height:0}
+.lib-topbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-bottom:12px;
+  border-bottom:1px solid var(--border);margin-bottom:14px}
+.ab-grid{display:flex;flex-direction:column;gap:10px}
+.ab-card{border-left:3px solid var(--border)}
+.ab-type-badge{font-size:9px;padding:1px 6px;border-radius:3px}
+.link-badge{background:var(--bg4);border:1px solid var(--teal);color:var(--teal);
+  font-size:9px;padding:1px 5px;border-radius:3px}
+#pick-modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.7);
+  align-items:center;justify-content:center}
+.pick-panel{width:520px;max-height:70vh;background:var(--bg2);border:1px solid var(--border2);
+  border-radius:8px;display:flex;flex-direction:column;overflow:hidden}
+.pick-list{flex:1;overflow-y:auto;padding:8px}
+.pick-item{padding:8px 10px;border-radius:5px;cursor:pointer;margin-bottom:6px;
+  background:var(--bg3);display:flex;flex-direction:column;gap:3px}
+.pick-item:hover{background:var(--bg4)}
+.tab-btn{padding:4px 11px;border-radius:5px;border:1px solid var(--border);
+  background:var(--bg3);color:var(--text2);font-size:11px;cursor:pointer;
+  transition:all .15s;white-space:nowrap;font-family:inherit}
+.tab-btn:hover{background:var(--bg4);color:var(--text)}
+.tab-btn.on{background:var(--bg4);color:var(--gold);border-color:var(--goldd)}
 </style>
 </head>
 <body>
@@ -321,7 +413,10 @@ select.inp{cursor:pointer}
 <!-- ── Main ── -->
 <div class="main">
   <div class="tb">
-    <span class="tb-title" id="tb-title">Selecciona una criatura</span>
+    <button class="tab-btn btn" id="tab-creatures" onclick="setTab('creatures')" style="margin-right:4px">🐉 Criaturas</button>
+    <button class="tab-btn btn" id="tab-library" onclick="setTab('library')">📚 Biblioteca</button>
+    <span class="tb-title" id="tb-title" style="margin-left:8px">Selecciona una criatura</span>
+    <div style="flex:1"></div>
     <button class="btn on" id="cmp-btn" onclick="toggleMode()">⚖ Comparar</button>
     <button class="btn danger" id="del-btn" onclick="deleteCreature()" style="display:none">🗑 Eliminar</button>
     <button class="btn pri" id="save-btn" onclick="saveCreature()" style="display:none">💾 Guardar</button>
@@ -424,7 +519,11 @@ select.inp{cursor:pointer}
 
     <!-- Traits -->
     <div class="sec">
-      <div class="sec-hd"><span>Rasgos Pasivos</span></div>
+      <div class="sec-hd">
+        <span>Rasgos Pasivos</span>
+        <button class="btn sm" onclick="addEntry('traits')" style="color:var(--text2)">＋ Añadir</button>
+        <button class="btn sm" style="color:var(--teal);border-color:var(--teal)" onclick="openPick(ab=>insertFromBank('traits',ab),'passive')">📚 Biblioteca</button>
+      </div>
       <div class="sec-body">
         <div class="grid" id="traits-grid"></div>
       </div>
@@ -432,7 +531,11 @@ select.inp{cursor:pointer}
 
     <!-- Actions -->
     <div class="sec">
-      <div class="sec-hd"><span>Acciones</span></div>
+      <div class="sec-hd">
+        <span>Acciones</span>
+        <button class="btn sm" onclick="addEntry('actions')" style="color:var(--text2)">＋ Añadir</button>
+        <button class="btn sm" style="color:var(--teal);border-color:var(--teal)" onclick="openPick(ab=>insertFromBank('actions',ab),'action')">📚 Biblioteca</button>
+      </div>
       <div class="sec-body">
         <div class="grid" id="actions-grid"></div>
       </div>
@@ -440,7 +543,11 @@ select.inp{cursor:pointer}
 
     <!-- Reactions -->
     <div class="sec">
-      <div class="sec-hd"><span>Reacciones</span></div>
+      <div class="sec-hd">
+        <span>Reacciones</span>
+        <button class="btn sm" onclick="addEntry('reactions')" style="color:var(--text2)">＋ Añadir</button>
+        <button class="btn sm" style="color:var(--teal);border-color:var(--teal)" onclick="openPick(ab=>insertFromBank('reactions',ab),'reaction')">📚 Biblioteca</button>
+      </div>
       <div class="sec-body">
         <div class="grid" id="reactions-grid"></div>
       </div>
@@ -463,6 +570,16 @@ select.inp{cursor:pointer}
     </div>
 
   </div><!-- /edit-scroll -->
+
+  <!-- Library view -->
+  <div id="lib-view" class="scroll" style="display:none">
+    <div class="lib-topbar">
+      <input class="inp" id="lib-search" placeholder="Buscar habilidad..." style="width:200px; flex-shrink:0" oninput="renderLibrary()">
+      <div id="lib-tag-filters" class="pills"></div>
+      <button class="btn sm" style="color:var(--green);border-color:var(--green);margin-left:auto" onclick="startNewAbility()">＋ Nueva habilidad</button>
+    </div>
+    <div id="lib-grid" class="ab-grid"></div>
+  </div>
 
   <!-- Empty state -->
   <div class="empty" id="empty">
@@ -491,6 +608,20 @@ select.inp{cursor:pointer}
 
 <div id="toast"></div>
 
+<div id="pick-modal" style="display:none" onclick="if(event.target===this)closePick()">
+  <div class="pick-panel">
+    <div style="padding:10px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px">
+      <span style="font-weight:600;font-size:13px;flex:1">Seleccionar habilidad</span>
+      <button class="btn sm danger" onclick="closePick()">✕</button>
+    </div>
+    <div style="padding:8px 14px;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:6px;align-items:center">
+      <input class="inp" id="pick-search" placeholder="Buscar..." style="width:160px;flex-shrink:0" oninput="renderPickList()">
+      <div id="pick-tag-filters" class="pills"></div>
+    </div>
+    <div class="pick-list" id="pick-list"></div>
+  </div>
+</div>
+
 <script>
 // ── State ─────────────────────────────────────────────────────────────────────
 const S = {
@@ -502,6 +633,12 @@ const S = {
   types: new Set(),
   cmpA: '', cmpB: '',
   cmpDataA: null, cmpDataB: null,
+  tab: 'creatures', // 'creatures' | 'library'
+  abilities: [],    // loaded ability bank
+  libTag: '',       // active tag filter in library
+  abEdit: null,     // ability being edited
+  pickCb: null,     // callback(ability) when pick modal confirms
+  pickTag: '',      // active tag filter in pick modal
 };
 
 const SAVE_FIELDS = ['name','cost','bonus','range','area','save','damage','move','desc'];
@@ -509,12 +646,34 @@ const KNOWN_SAVES = ['FÍS','VOL','MEN'];
 const KNOWN_TAGS = ['Elemental','No-muerto','Bestia','Humanoide','Dragón','Construcción',
   'Fiend','Celestial','Fey','Vegetal','Fuego','Agua','Aire','Tierra','Vuelo','Élite','Invocación','Jefe'];
 
+const DAMAGE_TIERS = [
+  { min:1,  max:3,  LOW:[1,6,4],   MID:[2,6,4],   HIGH:[3,6,4]   },
+  { min:4,  max:6,  LOW:[2,6,5],   MID:[3,6,5],   HIGH:[4,6,5]   },
+  { min:7,  max:9,  LOW:[2,8,6],   MID:[3,8,6],   HIGH:[4,8,6]   },
+  { min:10, max:12, LOW:[3,8,7],   MID:[4,8,7],   HIGH:[5,8,7]   },
+  { min:13, max:15, LOW:[3,10,8],  MID:[4,10,8],  HIGH:[5,10,8]  },
+  { min:16, max:18, LOW:[4,10,9],  MID:[5,10,9],  HIGH:[6,10,9]  },
+  { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
+];
+const PHYSICAL_TYPES = ['contundente','cortante','perforante'];
+const BONUS_TABLE = [
+  { min:1,  max:3,  bonus:'+5+1d6'  },
+  { min:4,  max:6,  bonus:'+7+2d6'  },
+  { min:7,  max:9,  bonus:'+9+2d6'  },
+  { min:10, max:12, bonus:'+11+3d6' },
+  { min:13, max:15, bonus:'+13+3d6' },
+  { min:16, max:18, bonus:'+15+4d6' },
+  { min:19, max:21, bonus:'+17+4d6' },
+];
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 async function init() {
   const list = await api('GET', '/api/creatures');
   S.all = list;
+  S.abilities = await api('GET', '/api/abilities');
   buildTypeFilters();
   renderSidebar();
+  setTab('creatures');
 }
 
 function buildTypeFilters() {
@@ -654,18 +813,22 @@ function renderAll() {
 
 function renderToolbar() {
   const d = dirty();
+  const isLib = S.tab === 'library';
+
+  document.getElementById('cmp-btn').style.display = isLib ? 'none' : '';
   document.getElementById('cmp-btn').classList.toggle('on', S.mode==='compare');
   document.getElementById('cmp-btn').textContent = S.mode==='compare' ? '✏ Editar' : '⚖ Comparar';
-  
+
   const t = document.getElementById('tb-title');
-  t.innerHTML = S.creature ? `${d?'<span class="dot">●</span>':''}${S.creature.name}` : 'Selecciona una criatura';
-  
+  t.innerHTML = isLib ? 'Biblioteca de Habilidades'
+    : (S.creature ? `${d?'<span class="dot">●</span>':''}${S.creature.name}` : 'Selecciona una criatura');
+
   const sb = document.getElementById('save-btn');
-  sb.style.display = S.creature ? '' : 'none';
+  sb.style.display = (!isLib && S.creature) ? '' : 'none';
   sb.classList.toggle('pri', d);
 
   const db = document.getElementById('del-btn');
-  db.style.display = S.creature ? '' : 'none';
+  db.style.display = (!isLib && S.creature) ? '' : 'none';
 }
 
 function toggleMode() {
@@ -778,17 +941,26 @@ function delTag(i) { S.creature.tags.splice(i,1); renderTagPills(); renderToolba
 function renderAbilityGrid(containerId, arr, cardFn) {
   const el = document.getElementById(containerId);
   const type = containerId.replace('-grid','');
-  el.innerHTML = arr.map((item,i)=>cardFn(type,item,i)).join('') +
-    `<button class="add-card" onclick="addEntry('${type}')">＋ Añadir</button>`;
+  el.innerHTML = arr.map((item,i)=>cardFn(type,item,i)).join('');
 }
 
 function renderTraitCard(type, tr, i) {
+  const total = S.creature[type]?.length||0;
+  const linked = tr.ability_id ? `<span class="link-badge" title="Vinculado a biblioteca">🔗</span>` : '';
+  const editBaseBtn = tr.ability_id ? `<button class="card-x" style="color:var(--teal);font-size:11px" onclick="editAbilityFromCreature('${tr.ability_id}')" title="Editar base">✎base</button>` : '';
+  const unlinkBtn = tr.ability_id ? `<button class="card-x" style="color:var(--text3);font-size:10px" title="Desvincular" onclick="unlinkAbility('${type}',${i})">🔓</button>` : '';
   return `<div class="card">
     <div class="card-top">
+      ${linked}
       <input class="inp" value="${esc(tr.name||'')}" placeholder="Nombre del rasgo"
         oninput="setEntry('${type}',${i},'name',this.value)">
+      ${editBaseBtn}${unlinkBtn}
+      <button class="card-x" style="font-size:11px;color:var(--text3)" title="Subir"   ${i===0?'disabled':''} onclick="moveEntry('${type}',${i},-1)">▲</button>
+      <button class="card-x" style="font-size:11px;color:var(--text3)" title="Bajar"   ${i===total-1?'disabled':''} onclick="moveEntry('${type}',${i},1)">▼</button>
+      <button class="card-x" style="color:var(--purple)" title="Guardar en banco" onclick="saveEntryToBank('${type}',${i})">📥</button>
       <button class="card-x" onclick="delEntry('${type}',${i})">×</button>
     </div>
+    <div class="tags-row" id="entry-tags-${type}-${i}">${entryTagsHtml(type, i, tr.tags||[])}</div>
     <div class="field"><div class="lbl">Descripción</div>
       <textarea class="inp" rows="3"
         oninput="setEntry('${type}',${i},'desc',this.value)">${esc(tr.desc||'')}</textarea></div>
@@ -796,16 +968,29 @@ function renderTraitCard(type, tr, i) {
 }
 
 function renderActionCard(type, ac, i) {
+  const total = S.creature[type]?.length||0;
+  const linked = ac.ability_id ? `<span class="link-badge" title="Vinculado a biblioteca">🔗</span>` : '';
+  const editBaseBtn = ac.ability_id ? `<button class="card-x" style="color:var(--teal);font-size:11px" onclick="editAbilityFromCreature('${ac.ability_id}')" title="Editar base">✎base</button>` : '';
+  const unlinkBtn = ac.ability_id ? `<button class="card-x" style="color:var(--text3);font-size:10px" title="Desvincular" onclick="unlinkAbility('${type}',${i})">🔓</button>` : '';
   return `<div class="card">
     <div class="card-top">
+      ${linked}
       <input class="inp" value="${esc(ac.name||'')}" placeholder="Nombre de la acción"
         oninput="setEntry('${type}',${i},'name',this.value)">
+      ${editBaseBtn}${unlinkBtn}
+      <button class="card-x" style="font-size:11px;color:var(--text3)" title="Subir"  ${i===0?'disabled':''} onclick="moveEntry('${type}',${i},-1)">▲</button>
+      <button class="card-x" style="font-size:11px;color:var(--text3)" title="Bajar"  ${i===total-1?'disabled':''} onclick="moveEntry('${type}',${i},1)">▼</button>
+      <button class="card-x" style="color:var(--purple)" title="Guardar en banco" onclick="saveEntryToBank('${type}',${i})">📥</button>
       <button class="card-x" onclick="delEntry('${type}',${i})">×</button>
     </div>
+    <div class="tags-row" id="entry-tags-${type}-${i}">${entryTagsHtml(type, i, ac.tags||[])}</div>
     <div class="opt-row">
       <div class="field"><div class="lbl">Coste</div>
         <input class="inp" type="number" min="0" value="${ac.cost??''}"
           oninput="setEntryNum('${type}',${i},'cost',this.value)"></div>
+      <div class="field"><div class="lbl">Ataques</div>
+        <input class="inp" type="number" min="1" value="${ac.attacks??1}"
+          oninput="setEntryNum('${type}',${i},'attacks',this.value)"></div>
       <div class="field"><div class="lbl">Bonus</div>
         <input class="inp" value="${esc(ac.bonus||'')}" placeholder="+7+2d6"
           oninput="setEntry('${type}',${i},'bonus',this.value)"></div>
@@ -827,19 +1012,29 @@ function renderActionCard(type, ac, i) {
     <div class="field"><div class="lbl">Descripción</div>
       <textarea class="inp" rows="2"
         oninput="setEntry('${type}',${i},'desc',this.value)">${esc(ac.desc||'')}</textarea></div>
-    <div class="field"><div class="lbl">Movimiento</div>
-      <input class="inp" value="${esc(ac.move||'')}" placeholder="Mueve 4 pasos"
-        oninput="setEntry('${type}',${i},'move',this.value)"></div>
+    <div class="field"><div class="lbl">Movimiento (casillas)</div>
+      <input class="inp" type="number" min="0" value="${ac.move??''}" placeholder="4"
+        oninput="setEntryNum('${type}',${i},'move',this.value)"></div>
   </div>`;
 }
 
 function renderReactionCard(type, rx, i) {
+  const total = S.creature[type]?.length||0;
+  const linked = rx.ability_id ? `<span class="link-badge" title="Vinculado a biblioteca">🔗</span>` : '';
+  const editBaseBtn = rx.ability_id ? `<button class="card-x" style="color:var(--teal);font-size:11px" onclick="editAbilityFromCreature('${rx.ability_id}')" title="Editar base">✎base</button>` : '';
+  const unlinkBtn = rx.ability_id ? `<button class="card-x" style="color:var(--text3);font-size:10px" title="Desvincular" onclick="unlinkAbility('${type}',${i})">🔓</button>` : '';
   return `<div class="card">
     <div class="card-top">
+      ${linked}
       <input class="inp" value="${esc(rx.name||'')}" placeholder="Nombre de la reacción"
         oninput="setEntry('${type}',${i},'name',this.value)">
+      ${editBaseBtn}${unlinkBtn}
+      <button class="card-x" style="font-size:11px;color:var(--text3)" title="Subir"  ${i===0?'disabled':''} onclick="moveEntry('${type}',${i},-1)">▲</button>
+      <button class="card-x" style="font-size:11px;color:var(--text3)" title="Bajar"  ${i===total-1?'disabled':''} onclick="moveEntry('${type}',${i},1)">▼</button>
+      <button class="card-x" style="color:var(--purple)" title="Guardar en banco" onclick="saveEntryToBank('${type}',${i})">📥</button>
       <button class="card-x" onclick="delEntry('${type}',${i})">×</button>
     </div>
+    <div class="tags-row" id="entry-tags-${type}-${i}">${entryTagsHtml(type, i, rx.tags||[])}</div>
     <div class="opt-row">
       <div class="field"><div class="lbl">Coste</div>
         <input class="inp" type="number" min="0" value="${rx.cost??''}"
@@ -851,9 +1046,9 @@ function renderReactionCard(type, rx, i) {
     <div class="field"><div class="lbl">Descripción</div>
       <textarea class="inp" rows="2"
         oninput="setEntry('${type}',${i},'desc',this.value)">${esc(rx.desc||'')}</textarea></div>
-    <div class="field"><div class="lbl">Movimiento</div>
-      <input class="inp" value="${esc(rx.move||'')}" placeholder="Mueve 4 pasos"
-        oninput="setEntry('${type}',${i},'move',this.value)"></div>
+    <div class="field"><div class="lbl">Movimiento (casillas)</div>
+      <input class="inp" type="number" min="0" value="${rx.move??''}" placeholder="4"
+        oninput="setEntryNum('${type}',${i},'move',this.value)"></div>
   </div>`;
 }
 
@@ -880,6 +1075,124 @@ function setEntryNum(type, i, k, v) {
   const n = parseInt(v,10);
   if (!isNaN(n)) obj[k]=n; else delete obj[k];
   renderToolbar();
+}
+function moveEntry(type, i, dir) {
+  const arr = S.creature[type];
+  const j = i + dir;
+  if (j < 0 || j >= arr.length) return;
+  [arr[i], arr[j]] = [arr[j], arr[i]];
+  const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
+  renderAbilityGrid(type+'-grid', arr, fn);
+  renderToolbar();
+}
+function entryTagsHtml(type, i, tags) {
+  return tags.map((t,ti)=>`<span class="pill" style="font-size:9px">${esc(t)}<span class="pill-x" onclick="removeEntryTag('${type}',${i},${ti})">×</span></span>`).join('') +
+    `<input class="tag-inp" placeholder="+ tag" onkeydown="addEntryTag(event,'${type}',${i},this)">`;
+}
+function addEntryTag(e, type, i, el) {
+  if (e.key!=='Enter' && e.key!==',') return;
+  e.preventDefault();
+  const v = el.value.trim(); if (!v) return;
+  (S.creature[type][i].tags||(S.creature[type][i].tags=[])).push(v);
+  el.value = '';
+  const cont = document.getElementById(`entry-tags-${type}-${i}`);
+  if (cont) cont.innerHTML = entryTagsHtml(type, i, S.creature[type][i].tags||[]);
+  renderToolbar();
+}
+function removeEntryTag(type, i, ti) {
+  S.creature[type][i].tags.splice(ti, 1);
+  const cont = document.getElementById(`entry-tags-${type}-${i}`);
+  if (cont) cont.innerHTML = entryTagsHtml(type, i, S.creature[type][i].tags||[]);
+  renderToolbar();
+}
+
+// ── Damage / bonus tier helpers ───────────────────────────────────────────────
+function normalizeFormula(str) {
+  return (str||'').replace(/\s*\+\s*/g, '+').trim();
+}
+function formatDice(str) {
+  if (!str) return str;
+  return normalizeFormula(str).replace(/([a-z0-9])\+/gi, '$1 + ');
+}
+function getTierBand(level) {
+  return DAMAGE_TIERS.find(b => level >= b.min && level <= b.max) || DAMAGE_TIERS[0];
+}
+function getBonusBand(level) {
+  return BONUS_TABLE.find(b => level >= b.min && level <= b.max) || BONUS_TABLE[0];
+}
+function parseDamage(str) {
+  if (!str) return null;
+  const s = normalizeFormula(str);
+  const m = s.match(/^(\d+)d(\d+)(?:\+(\d+))?\s*(.*)/i);
+  if (!m) return null;
+  return { dice: parseInt(m[1]), sides: parseInt(m[2]), bonus: m[3]?parseInt(m[3]):0, type: m[4].trim() };
+}
+function isPhysical(typeStr) {
+  const t = (typeStr||'').toLowerCase();
+  return PHYSICAL_TYPES.some(p => t.includes(p));
+}
+function scaleDamageStr(tier, typeStr, level) {
+  const band = getTierBand(level);
+  const [baseDice, sides, bonus] = band[tier];
+  const dice = isPhysical(typeStr) ? baseDice : Math.max(0, baseDice - 1);
+  const diceStr = dice > 0 ? `${dice}d${sides} + ${bonus}` : String(bonus);
+  return typeStr ? `${diceStr} ${typeStr}` : diceStr;
+}
+function detectDamageTier(damageStr, level) {
+  const parsed = parseDamage(damageStr);
+  if (!parsed) return null;
+  const band = getTierBand(level);
+  const physical = isPhysical(parsed.type);
+  for (const tier of ['LOW','MID','HIGH']) {
+    const [baseDice, sides, bonus] = band[tier];
+    const expectedDice = physical ? baseDice : Math.max(0, baseDice - 1);
+    if (parsed.dice === expectedDice && parsed.sides === sides && parsed.bonus === bonus) return tier;
+  }
+  return null;
+}
+
+async function saveEntryToBank(type, i) {
+  const entry = S.creature[type][i];
+  let existingId = entry.ability_id;
+  const name = entry.name || '';
+  // Check for duplicate name with a different ID
+  const sameName = S.abilities.find(a =>
+    a.name?.toLowerCase() === name.toLowerCase() && a.id !== existingId
+  );
+  if (sameName) {
+    if (!confirm(`Ya existe una habilidad llamada "${sameName.name}" en el banco. ¿Sobrescribir?`)) return;
+    existingId = sameName.id;
+    S.creature[type][i].ability_id = sameName.id;
+  }
+  const id = existingId || name.toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') + '_' + Date.now();
+  const abType = type==='actions'?'action' : type==='reactions'?'reaction' : 'passive';
+  const ab = { ...entry, id, type: abType };
+  const lvl = S.creature.level || 1;
+  if (ab.damage) {
+    const parsed = parseDamage(ab.damage);
+    const tier = detectDamageTier(ab.damage, lvl);
+    if (tier) {
+      ab.damage_tier = tier;
+      ab.damage_base_type = parsed?.type || '';
+    }
+  }
+  if (ab.bonus) {
+    const band = getBonusBand(lvl);
+    if (normalizeFormula(ab.bonus) === normalizeFormula(band.bonus)) {
+      ab.bonus_scaled = true;
+    }
+  }
+  try {
+    const res = await api('POST', `/api/ability/${id}`, ab);
+    S.creature[type][i].ability_id = id;
+    S.abilities = await api('GET', '/api/abilities');
+    const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
+    renderAbilityGrid(type+'-grid', S.creature[type], fn);
+    renderToolbar();
+    toast(`Guardado en banco · ${res.propagated||0} criatura(s) sincronizadas`, 'ok');
+  } catch(e) { toast('Error: '+e.message, 'err'); }
 }
 
 // ── Field setters ─────────────────────────────────────────────────────────────
@@ -1034,6 +1347,276 @@ function cmpHtml(c) {
     h += `</div>`;
   }
   return h;
+}
+
+// ── Tab switching ─────────────────────────────────────────────────────────────
+function setTab(tab) {
+  S.tab = tab;
+  document.getElementById('tab-creatures').classList.toggle('on', tab==='creatures');
+  document.getElementById('tab-library').classList.toggle('on', tab==='library');
+  const isLib = tab === 'library';
+  document.getElementById('lib-view').style.display = isLib ? 'flex' : 'none';
+  if (!isLib) {
+    renderAll();
+  } else {
+    document.getElementById('edit-scroll').style.display = 'none';
+    document.getElementById('empty').style.display = 'none';
+    document.getElementById('cmp-view').style.display = 'none';
+    renderLibrary();
+  }
+  renderToolbar();
+}
+
+// ── Library ───────────────────────────────────────────────────────────────────
+function renderLibrary() {
+  const search = (document.getElementById('lib-search')?.value||'').toLowerCase();
+  const activeTag = S.libTag;
+
+  const allTags = [...new Set(S.abilities.flatMap(a=>a.tags||[]))].sort();
+  const tfEl = document.getElementById('lib-tag-filters');
+  if (tfEl) tfEl.innerHTML = allTags.map(t=>`
+    <span class="pill" style="cursor:pointer;${t===activeTag?'border-color:var(--gold);color:var(--gold)':''}"
+      onclick="S.libTag=S.libTag==='${t}'?'':'${t}'; renderLibrary()">${t}
+    </span>`).join('') + (activeTag?`<span class="pill" style="cursor:pointer;color:var(--red)" onclick="S.libTag='';renderLibrary()">✕ Limpiar</span>`:'');
+
+  const filtered = S.abilities.filter(a => {
+    const matchSearch = !search || a.name?.toLowerCase().includes(search);
+    const matchTag = !activeTag || (a.tags||[]).includes(activeTag);
+    return matchSearch && matchTag;
+  });
+
+  const groups = { action: [], passive: [], reaction: [] };
+  filtered.forEach(a => (groups[a.type]??=[]).push(a));
+  const labels = { action: 'Acciones', passive: 'Pasivos', reaction: 'Reacciones' };
+  const colors = { action: 'var(--blue)', passive: 'var(--green)', reaction: 'var(--orange)' };
+
+  let html = '';
+  for (const [type, list] of Object.entries(groups)) {
+    if (!list.length) continue;
+    html += `<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:${colors[type]};text-transform:uppercase;margin-bottom:8px;margin-top:4px">${labels[type]}</div>`;
+    html += list.map(a => abCardHtml(a)).join('');
+  }
+  if (!html) html = `<div style="color:var(--text3);text-align:center;padding:30px">No hay habilidades</div>`;
+  document.getElementById('lib-grid').innerHTML = html;
+}
+
+function abCardHtml(a) {
+  const colors = { action: 'var(--blue)', passive: 'var(--green)', reaction: 'var(--orange)' };
+  const clr = colors[a.type]||'var(--text2)';
+  const tags = (a.tags||[]).map(t=>`<span class="pill" style="font-size:9px">${esc(t)}</span>`).join('');
+  const tierColors = {LOW:'#4caf6a',MID:'#f0c040',HIGH:'#e74c3c'};
+  const tierClr = tierColors[a.damage_tier];
+  const tierBadge = tierClr ? `<span style="font-size:9px;padding:1px 5px;border-radius:3px;border:1px solid ${tierClr};color:${tierClr}">${a.damage_tier}</span>` : '';
+  const damageLabel = a.damage ? `Daño: ${formatDice(a.damage)}${a.damage_tier?` [${a.damage_tier}]`:''}` : '';
+  const bonusLabel  = a.bonus  ? `Bonus: ${formatDice(a.bonus)}${a.bonus_scaled?' [⚖]':''}` : '';
+  const stats = [
+    a.cost&&`Coste: ${a.cost}`, a.range&&`Alcance: ${a.range}`, damageLabel||false,
+    bonusLabel||false, a.save&&`Salv: ${a.save}`, a.attacks>1&&`Ataques: ${a.attacks}`
+  ].filter(Boolean).join(' · ');
+  return `<div class="ab-card card" style="border-left:3px solid ${clr}">
+    <div class="card-top">
+      <span style="font-weight:600;font-size:12px;flex:1">${esc(a.name||'Sin nombre')}</span>
+      ${tierBadge}
+      <span class="ab-type-badge" style="font-size:9px;padding:1px 6px;border-radius:3px;border:1px solid ${clr};color:${clr}">${esc(a.type||'')}</span>
+      <button class="card-x" style="color:var(--blue)" onclick="editAbility('${a.id}')" title="Editar">✎</button>
+      <button class="card-x" onclick="deleteAbility('${a.id}')" title="Eliminar">×</button>
+    </div>
+    <div class="pills">${tags}</div>
+    ${stats?`<div style="font-size:10px;color:var(--text2)">${stats}</div>`:''}
+    ${a.desc?`<div style="font-size:11px;color:var(--text3)">${esc(a.desc.substring(0,120))}${a.desc.length>120?'…':''}</div>`:''}
+  </div>`;
+}
+
+// ── Ability edit ──────────────────────────────────────────────────────────────
+function startNewAbility() {
+  S.abEdit = { id: 'ab_'+Date.now(), name:'', type:'action', tags:[], cost:'', bonus:'', bonus_scaled:false, range:'', area:'', damage:'', damage_tier:'', damage_base_type:'', save:'', move:'', attacks:1, desc:'' };
+  renderAbEdit();
+}
+
+function editAbility(id) {
+  S.abEdit = JSON.parse(JSON.stringify(S.abilities.find(a=>a.id===id)||{}));
+  renderAbEdit();
+}
+
+function renderAbEdit() {
+  const a = S.abEdit;
+  if (!a) return;
+  document.getElementById('lib-grid').innerHTML = `
+    <div class="sec">
+      <div class="sec-hd">
+        <span>${esc(a.name||'Nueva Habilidad')}</span>
+        <button class="btn sm danger" onclick="closeAbEdit()">Cancelar</button>
+        <button class="btn sm pri" onclick="saveAbility()">Guardar</button>
+      </div>
+      <div class="sec-body" style="display:flex;flex-direction:column;gap:10px">
+        <div class="opt-row">
+          <div class="field" style="flex:2"><div class="lbl">Nombre</div>
+            <input class="inp" id="abe-name" value="${esc(a.name||'')}" oninput="S.abEdit.name=this.value"></div>
+          <div class="field"><div class="lbl">Tipo</div>
+            <select class="inp" id="abe-type" onchange="S.abEdit.type=this.value">
+              <option value="action" ${a.type==='action'?'selected':''}>Acción</option>
+              <option value="passive" ${a.type==='passive'?'selected':''}>Pasivo</option>
+              <option value="reaction" ${a.type==='reaction'?'selected':''}>Reacción</option>
+            </select></div>
+          <div class="field"><div class="lbl">Ataques</div>
+            <input class="inp" type="number" id="abe-attacks" value="${a.attacks||1}" min="1"
+              oninput="S.abEdit.attacks=+this.value"></div>
+        </div>
+        <div class="field"><div class="lbl">Tags (Enter para añadir)</div>
+          <div class="pills" id="abe-tags">${renderAbeTags()}</div></div>
+        <div class="opt-row">
+          <div class="field"><div class="lbl">Coste</div>
+            <input class="inp" value="${esc(a.cost||'')}" oninput="S.abEdit.cost=this.value||undefined"></div>
+          <div class="field"><div class="lbl">Bonus</div>
+            <input class="inp" value="${esc(a.bonus||'')}" placeholder="+7" oninput="S.abEdit.bonus=this.value||undefined"></div>
+          <div class="field"><div class="lbl">Alcance</div>
+            <input class="inp" value="${esc(a.range||'')}" oninput="S.abEdit.range=this.value||undefined"></div>
+          <div class="field"><div class="lbl">Área</div>
+            <input class="inp" value="${esc(a.area||'')}" oninput="S.abEdit.area=this.value||undefined"></div>
+        </div>
+        <div class="opt-row">
+          <div class="field"><div class="lbl">Daño</div>
+            <input class="inp" value="${esc(a.damage||'')}" placeholder="2d6+4 Fuego" oninput="S.abEdit.damage=this.value||undefined"></div>
+          <div class="field"><div class="lbl">Salvación</div>
+            <input class="inp" value="${esc(a.save||'')}" placeholder="FÍS CD 14" oninput="S.abEdit.save=this.value||undefined"></div>
+        </div>
+        <div class="opt-row">
+          <div class="field"><div class="lbl">Tier de daño</div>
+            <select class="inp" onchange="S.abEdit.damage_tier=this.value||undefined">
+              <option value="">— Sin tier —</option>
+              <option value="LOW" ${a.damage_tier==='LOW'?'selected':''}>LOW</option>
+              <option value="MID" ${a.damage_tier==='MID'?'selected':''}>MID</option>
+              <option value="HIGH" ${a.damage_tier==='HIGH'?'selected':''}>HIGH</option>
+            </select></div>
+          <div class="field"><div class="lbl">Tipo base de daño</div>
+            <input class="inp" value="${esc(a.damage_base_type||'')}" placeholder="Fuego, Cortante..."
+              oninput="S.abEdit.damage_base_type=this.value||undefined"></div>
+          <div class="field" style="flex:0;min-width:130px"><div class="lbl">Bonus escalado</div>
+            <label style="display:flex;align-items:center;gap:6px;cursor:pointer;padding-top:6px">
+              <input type="checkbox" ${a.bonus_scaled?'checked':''} onchange="S.abEdit.bonus_scaled=this.checked||false">
+              <span style="font-size:11px;color:var(--text2)">Escalar al insertar</span>
+            </label></div>
+        </div>
+        <div class="field"><div class="lbl">Descripción</div>
+          <textarea class="inp" rows="3" oninput="S.abEdit.desc=this.value||undefined">${esc(a.desc||'')}</textarea></div>
+        <div class="field"><div class="lbl">Movimiento</div>
+          <input class="inp" value="${esc(a.move||'')}" oninput="S.abEdit.move=this.value||undefined"></div>
+      </div>
+    </div>`;
+}
+
+function renderAbeTags() {
+  const tags = S.abEdit.tags||[];
+  return tags.map((t,i)=>`<span class="pill">${esc(t)}<span class="pill-x" onclick="removeAbeTag(${i})">×</span></span>`).join('') +
+    `<input class="pill-inp" placeholder="+ Tag" onkeydown="addAbeTag(event,this)">`;
+}
+function addAbeTag(e, el) {
+  if (e.key!=='Enter'&&e.key!==',') return;
+  e.preventDefault();
+  const v=el.value.trim(); if(!v) return;
+  (S.abEdit.tags||(S.abEdit.tags=[])).push(v); el.value='';
+  document.getElementById('abe-tags').innerHTML=renderAbeTags();
+}
+function removeAbeTag(i) { S.abEdit.tags.splice(i,1); document.getElementById('abe-tags').innerHTML=renderAbeTags(); }
+
+async function saveAbility() {
+  const a = S.abEdit; if (!a) return;
+  if (!a.name) { toast('Nombre requerido','err'); return; }
+  if (!a.id) a.id = a.name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') + '_' + Date.now();
+  try {
+    const res = await api('POST', `/api/ability/${a.id}`, a);
+    S.abilities = await api('GET', '/api/abilities');
+    S.abEdit = null;
+    toast(`Guardado · propagado a ${res.propagated} criatura(s)`, 'ok');
+    renderLibrary();
+  } catch(e) { toast('Error: '+e.message, 'err'); }
+}
+
+function closeAbEdit() { S.abEdit = null; renderLibrary(); }
+
+async function deleteAbility(id) {
+  if (!confirm('¿Eliminar esta habilidad del banco?')) return;
+  await api('DELETE', `/api/ability/${id}`);
+  S.abilities = await api('GET', '/api/abilities');
+  toast('Habilidad eliminada','ok');
+  renderLibrary();
+}
+
+// ── Pick modal ────────────────────────────────────────────────────────────────
+function openPick(cb, typeFilter) {
+  S.pickCb = cb;
+  S.pickTag = '';
+  S.pickTypeFilter = typeFilter || '';
+  document.getElementById('pick-modal').style.display = 'flex';
+  document.getElementById('pick-search').value = '';
+  renderPickList();
+}
+function closePick() {
+  document.getElementById('pick-modal').style.display = 'none';
+  S.pickCb = null;
+}
+function renderPickList() {
+  const search = (document.getElementById('pick-search')?.value||'').toLowerCase();
+  const typeSource = S.pickTypeFilter ? S.abilities.filter(a=>a.type===S.pickTypeFilter) : S.abilities;
+  const allTags = [...new Set(typeSource.flatMap(a=>a.tags||[]))].sort();
+  const tfEl = document.getElementById('pick-tag-filters');
+  if (tfEl) tfEl.innerHTML = allTags.map(t=>`
+    <span class="pill" style="cursor:pointer;${t===S.pickTag?'border-color:var(--gold);color:var(--gold)':''}"
+      onclick="S.pickTag=S.pickTag==='${t}'?'':'${t}'; renderPickList()">${t}</span>`).join('');
+
+  const filtered = typeSource.filter(a => {
+    const ms = !search || a.name?.toLowerCase().includes(search);
+    const mt = !S.pickTag || (a.tags||[]).includes(S.pickTag);
+    return ms && mt;
+  });
+  const colors = { action:'var(--blue)', passive:'var(--green)', reaction:'var(--orange)' };
+  document.getElementById('pick-list').innerHTML = filtered.length
+    ? filtered.map(a=>`
+        <div class="pick-item" style="border-left:3px solid ${colors[a.type]||'var(--text2)'}"
+          onclick="confirmPick('${a.id}')">
+          <div style="display:flex;gap:6px;align-items:center">
+            <span style="font-weight:600;font-size:12px;flex:1">${esc(a.name)}</span>
+            <span style="font-size:9px;color:${colors[a.type]||'var(--text2)'}">${esc(a.type)}</span>
+          </div>
+          ${(a.tags||[]).length?`<div>${(a.tags||[]).map(t=>`<span class="pill" style="font-size:9px">${esc(t)}</span>`).join('')}</div>`:''}
+          ${a.damage?`<div style="font-size:10px;color:var(--text2)">${esc(a.damage)}</div>`:''}
+        </div>`).join('')
+    : '<div style="color:var(--text3);text-align:center;padding:20px">Sin resultados</div>';
+}
+function confirmPick(id) {
+  const ab = S.abilities.find(a=>a.id===id);
+  if (!ab || !S.pickCb) return;
+  S.pickCb(JSON.parse(JSON.stringify(ab)));
+  closePick();
+}
+
+// ── Insert from bank ──────────────────────────────────────────────────────────
+function insertFromBank(type, ab) {
+  if (!S.creature) return;
+  S.creature[type] ??= [];
+  const entry = { ...ab };
+  const tgtLevel = S.creature.level || 1;
+  if (entry.damage_tier) {
+    entry.damage = scaleDamageStr(entry.damage_tier, entry.damage_base_type || '', tgtLevel);
+  }
+  if (entry.bonus_scaled) {
+    entry.bonus = formatDice(getBonusBand(tgtLevel).bonus);
+  }
+  S.creature[type].push(entry);
+  const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
+  renderAbilityGrid(type+'-grid', S.creature[type], fn);
+  renderToolbar();
+}
+
+function editAbilityFromCreature(id) {
+  setTab('library');
+  editAbility(id);
+}
+function unlinkAbility(type, i) {
+  delete S.creature[type][i].ability_id;
+  const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
+  renderAbilityGrid(type+'-grid', S.creature[type], fn);
+  renderToolbar();
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

@@ -147,7 +147,7 @@ function renderRankPage(data) {
 
                     ${ability.empower ? `
                     <div class="empower-box">
-                        <span class="empower-label">Empoderar (1 Chi):</span> ${linkStatusEffects(ability.empower)}
+                        <span class="empower-label">Empoderar (1 Chi · máx. 2×):</span> ${linkStatusEffects(ability.empower)}
                     </div>` : ''}
                 </article>
             `;

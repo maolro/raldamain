@@ -19,7 +19,7 @@
           "tags": ["Mental", "Cordura"],
           "cost": "1 acción",
           "range": "Medio",
-          "crit": "Objetivo queda Aturdido 1 ronda.",
+          "crit": "Objetivo queda con Aturdido-2 durante 1 ronda.",
           "desc": "Atacas la cordura del objetivo, infligiendo Rango + 1 de daño a Cordura e interrumpiendo su concentración. El objetivo resiste con Concentración o Averiguar Intenciones. Si su Cordura llega a 0, cae Inconsciente.",
           "empower": "Afecta a un objetivo adicional."
         },
@@ -84,7 +84,7 @@
           "range": "Medio",
           "area": "Esfera pequeña",
           "crit": "Daño a Cordura adicional igual a Rango + 1.",
-          "desc": "Ataque de área que inflige Rango + 1 de daño a Cordura a todas las criaturas en la zona y las deja en estado Confundido.",
+          "desc": "Ataque de área que inflige Rango + 1 de daño a Cordura a todas las criaturas en la zona y las deja con Confundido-1.",
           "empower": "Lanzas el hechizo como acción bonus en otra área."
         },
         {
@@ -166,7 +166,7 @@
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "crit": "Objetivo cae Inconsciente.",
-          "desc": "Infliges 1d10 + INT de daño a la Cordura del objetivo y lo dejas Aturdido. Si su Cordura llega a 0, sufre daño permanente.",
+          "desc": "Infliges 1d10 + INT de daño a la Cordura del objetivo y lo dejas con Aturdido-2. Si su Cordura llega a 0, sufre daño permanente.",
           "empower": "Afecta a un objetivo adicional."
         }
       ]

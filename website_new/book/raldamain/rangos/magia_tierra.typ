@@ -1,0 +1,188 @@
+#import "../theme.typ": *
+
+La tierra no se apresura. La Magia de Tierra comparte esa filosofía: lenta, implacable y absolutamente devastadora cuando llega. Los practicantes de este rango aprenden a levantar muros, hundir el suelo bajo los enemigos y lanzar rocas del tamaño de casas. Su defensa es igualmente formidable: la tierra puede solidificarse alrededor del practicante como una armadura viva o erigirse como un bastión que transforma cualquier terreno en fortaleza. Quien se enfrenta a un maestro de Tierra se enfrenta al terreno mismo.
+
+#tip-box[
+  *Reserva de Chi:* Incrementa por Rango x 2.
+  *Estadística principal:* Sabiduría + Rango.
+  *Parada mágica:* Usas Magia de Tierra para tiros de parada y salvaciones contra Tierra, Agua, Aire, Fuego y Tormenta.
+]
+
+==== Rango I — Rango I
+
+#ability-card(
+  name: "Pedrada",
+  tags: ("Tierra", "Ataque", "A distancia", "Físico"),
+  cost: "1 acción",
+  range: "Medio",
+  duration: "Instantáneo",
+  crit: "El objetivo sufre Herido-1.",
+  desc: "Lanza una roca que inflige 2d6 + SAB daño Contundente al impactar. Necesitas contar con tierra suficiente para emplear esta habilidad.",
+  empower: "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo.",
+)
+
+#ability-card(
+  name: "Erupción de Tierra",
+  tags: ("Tierra", "Ataque", "Área", "Físico"),
+  cost: "2 acciones, 1 chi",
+  area: "Radio cercano",
+  duration: "Instantáneo",
+  crit: "Los afectados sufren Herido-1.",
+  desc: "Sacudes el suelo bajo los pies de tus enemigos, haciendo brotar la tierra con violencia. Inflige 3d6 + SAB daño Contundente a todos los que se encuentren en el área, empuja un paso y deben tener éxito en un tiro de salvación Físico o quedan con Ralentizado-1. El área queda cubierta de terreno difícil y las estructuras pequeñas en ella son destruidas.",
+  empower: "Aumenta el radio un paso y el daño un dado adicional, o lanza este hechizo de nuevo sobre la misma zona.",
+)
+
+#ability-card(
+  name: "Vínculo con la Tierra",
+  tags: ("Tierra", "Innata", "Pasiva"),
+  desc: "Desarrollas una conexión profunda con la tierra bajo tus pies. Mientras estés en contacto con el suelo, obtienes vista a ciegas a distancia media. Además, ganas una velocidad de Excavar igual a la mitad de tu velocidad base y Resistencia contra las Maniobras que intenten derribarte o desplazarte.",
+)
+
+==== Rango II — Rango II
+
+_Pasiva: Aumenta tu estadística de Constitución por 1._
+
+#ability-card(
+  name: "Muro de Piedra",
+  tags: ("Tierra", "Defensivo", "Duradera"),
+  cost: "1 Acción/Reacción, 1 chi",
+  range: "Medio",
+  area: "Esfera pequeña o línea mediana",
+  duration: "Hasta que sea destruido",
+  desc: "Levanta una barrera de roca maciza con PV iguales a tu Rango x 4. Esta habilidad puede emplearse como reacción para reducir el daño de un ataque recibido en la cantidad de PV restantes del muro. Si esta reducción anula el daño por completo, el arma del atacante queda rota. Además, cualquier criatura que golpee el muro cuerpo a cuerpo sufrirá 1d6 + SAB daño Contundente.",
+  empower: "El muro recupera todos sus puntos de vida.",
+)
+
+#ability-card(
+  name: "Lluvia de Piedras",
+  tags: ("Tierra", "Ataque", "Área", "Físico"),
+  cost: "1+ acciones, 1 chi",
+  range: "Medio",
+  area: "Radio pequeño",
+  duration: "Instantáneo",
+  crit: "Los afectados quedan con Ralentizado-1.",
+  desc: "Lanza una ráfaga de fragmentos de roca sobre el área afectada, infligiendo 2d6 + SAB daño Contundente o Perforante a todos los objetivos Si impactas a un objetivo volador, este debe tener éxito en un tiro de salvación Físico o cae al suelo. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 y el área un paso por carga (máximo 2 cargas).",
+  empower: "Lanza una segunda descarga sobre la misma zona o una diferente.",
+)
+
+#ability-card(
+  name: "Puños de Tierra",
+  tags: ("Tierra", "Pasiva"),
+  desc: "Eres capaz de envolver tus extremidades con roca para infligir golpes devastadores. Tus ataques físicos infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Tierra para todos tus tiros de ataque, defensa y técnicas relacionados con ellos.",
+)
+
+==== Rango III — Rango III
+
+_Pasiva: Todos tus hechizos de Tierra sustituyen sus dados de daño por d8._
+
+#ability-card(
+  name: "Ola de Tierra",
+  tags: ("Tierra", "Duradera", "Mejora"),
+  cost: "1 acción, 2 chi",
+  duration: "Concentración",
+  desc: "Levantas una corriente de tierra bajo tus pies que te arrastra a su paso. Obtienes velocidad de vuelo igual a tu velocidad base, ignoras el terreno difícil y obtienes Ventaja en tus tiros de Esquiva. Mientras te desplaces, puedes infligir 2d8 + SAB daño Contundente y empujar un paso a todos los enemigos que atravieses en tu trayectoria.",
+  empower: "Suma +10 a un tiro de Esquiva o salvación Físico, y muévete un paso en cualquier dirección.",
+)
+
+#ability-card(
+  name: "Forma de la Montaña",
+  tags: ("Tierra", "Duradera", "Mejora"),
+  cost: "2 acciones, 2 chi",
+  duration: "Concentración",
+  desc: "Amplías tu dominio sobre la tierra cercana para volverte uno con ella. Mientras este efecto permanezca activo, obtienes Ventaja en todos tus tiros relacionados con Magia de Tierra y recibes un dado de daño adicional en tus ataques (esto se aplica también a Magia de Metal y Naturaleza). El suelo a distancia media de ti se torna inestable para los enemigos, contando como terreno difícil.",
+  empower: "Reduce el coste en acciones del siguiente hechizo de Tierra en 1 (mínimo 1).",
+)
+
+#ability-card(
+  name: "Abrazo de la Tierra",
+  tags: ("Tierra", "Mejora", "Agarre"),
+  cost: "2 chi",
+  duration: "Hasta que el afectado escape",
+  crit: "El objetivo queda además con Aturdido-4 durante una ronda.",
+  desc: "Al impactar con un hechizo de Magia de Tierra, todos los afectados deben superar un tiro de salvación Físico o quedan agarrados por rocas que emergen del suelo a su alrededor. Para liberarse, deben romper las rocas (PV iguales a tu Rango x 4, con las mismas propiedades que un Muro de Piedra) o tener éxito en el tiro de nuevo.",
+)
+
+==== Rango IV — Rango IV
+
+_Pasiva: Aumenta tu estadística de Sabiduría por 1._
+
+#ability-card(
+  name: "Armadura de Piedra",
+  tags: ("Tierra", "Defensivo", "Duradera"),
+  cost: "2 acciones, 2 chi",
+  duration: "Concentración",
+  desc: "Te recubres de placas de roca maciza que absorben los impactos. Obtienes contadores de escudo iguales a tu Rango y Resistencia a daño Fuego y Ácido. Cada vez que gastes un contador de escudo por un ataque cuerpo a cuerpo y logras reducir el daño a 0, puedes romper el arma del objetivo o hacerle 2d8 daño Contundente si te ha atacado con un arma cuerpo a cuerpo.",
+  empower: "Recuperas la mitad de tus contadores de escudo (redondeando hacia abajo).",
+)
+
+#ability-card(
+  name: "Cascada de Escombros",
+  tags: ("Tierra", "Ataque", "Área", "Físico"),
+  cost: "2 acciones, 2 chi",
+  area: "Cono medio",
+  duration: "Instantáneo",
+  crit: "Los afectados quedan con Ralentizado-1 y sufren Herido-1.",
+  desc: "Desatas una lluvia de rocas y escombros sobre el área afectada, infligiendo 4d8 + SAB daño Contundente y enreda a todos los que alcance. El impacto destroza cualquier cobertura o barrera en la zona y convierte el terreno en un campo de escombros difícil de atravesar.",
+  empower: "Aumenta el área de efecto un paso y el daño un dado adicional, o ataca de nuevo a todas las criaturas en el área.",
+)
+
+#ability-card(
+  name: "Sepultar",
+  tags: ("Tierra", "Ataque", "Agarre"),
+  cost: "1 Acción, 2 chi",
+  range: "Medio",
+  duration: "Hasta que escape",
+  crit: "El objetivo queda además con Confundido-1.",
+  desc: "La tierra se abre y engulle a un objetivo, arrastrándolo al interior del suelo. El objetivo debe superar un tiro de salvación Físico o sufre 3d8 + SAB daño Contundente y queda Agarrado, con Confundido-1 y comienza a asfixiarse. Para liberarse debe tener éxito en el tiro de nuevo, romper las rocas que lo aprisionan (PV iguales a tu Rango x 4) o ser rescatado desde el exterior.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+==== Rango V — Rango V
+
+_Pasiva: Todos tus hechizos de Tierra sustituyen sus dados de daño por d10._
+
+#ability-card(
+  name: "Terremoto",
+  tags: ("Tierra", "Ataque", "Área", "Físico", "Ambiental"),
+  cost: "2 acciones, 3 chi",
+  area: "Radio grande",
+  duration: "Instantáneo",
+  crit: "Los afectados quedan con Aturdido-2 durante una ronda.",
+  desc: "Desatas un sismo devastador que sacude el suelo en toda el área afectada, infligiendo 5d10 + SAB daño Contundente a todos los que se encuentren en él. El impacto los tropieza y cubre el terreno de grietas y escombros que lo convierten en terreno difícil. Las estructuras en el área se derrumban y pueden provocar derrumbamientos secundarios que causen daño adicional a las criaturas atrapadas bajo los escombros.",
+  empower: "Vuelve a atacar la misma área con un terremoto secundario.",
+)
+
+#ability-card(
+  name: "Bastión",
+  tags: ("Tierra", "Ambiental", "Agarre"),
+  cost: "2 acciones, 3 chi",
+  area: "Cubo grande",
+  duration: "Concentración",
+  crit: "Los agarrados quedan además con Aturdido-4 durante una ronda.",
+  desc: "Levanta una estructura masiva de tierra y roca que moldea el campo de batalla a tu voluntad. Las criaturas en el espacio afectado deben superar un tiro de salvación Físico o quedan agarradas entre las rocas y sufren 4d10 + SAB daño Contundente. Mientras permanezca activo, puedes emplear una acción para hacer que las rocas se cierren sobre los agarrados, repitiendo el ataque de daño automáticamente contra ellos.",
+  empower: "Una sección del bastión colapsa, aplastando a todos los agarrados en ella y repitiendo el ataque automáticamente.",
+)
+
+#ability-card(
+  name: "Lluvia de Meteoritos",
+  tags: ("Tierra", "Reacción", "Duradera"),
+  cost: "1 Acción/Reacción, 2 chi",
+  range: "Medio",
+  area: "4 Esferas pequeñas",
+  duration: "Concentración",
+  crit: "Los afectados quedan con Aturdido-2 durante una ronda.",
+  desc: "Lanza 4 meteoritos simultáneos que infligen 5d10 + CAR daño Contundente, empujan un paso y tropiezan al impactar además de destruir las estructuras en su posición. Puedes dejar meteoritos suspendidos en el aire para lanzarlos en un turno posterior.",
+  empower: "Emplea de nuevo esta habilidad para atacar a puntos diferentes o al mismo.",
+)
+
+==== Rango VI — Rango VI
+
+_Pasiva: Aumenta tu estadística de Fuerza por 1._
+
+#ability-card(
+  name: "Forma Elemental",
+  tags: ("Tierra", "Mejora", "Duradera"),
+  cost: "1 acción, 5 chi",
+  duration: "Seis rondas",
+  desc: "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y SAB pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y efectos de Toque, y tienes activos los hechizos Forma de la Montaña y Ola de Tierra, recibiendo así Ventaja en Magia de Tierra, un dado de daño adicional y velocidad de vuelo igual a tu velocidad base. Tus hechizos de Magia de Tierra de Rango III o menos no te costarán chi para ser lanzados.",
+)

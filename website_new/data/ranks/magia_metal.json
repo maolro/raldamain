@@ -72,7 +72,7 @@
           "cost": "1 Acción, 1 chi",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "crit": "Los afectados sufren una herida leve.",
+          "crit": "Los afectados sufren Herido-1.",
           "desc": "Crea una nube de fragmentos metálicos que inflige 3d6 + SAB/CAR daño Cortante y sangrado a todos los que alcance. Mientras mantengas la concentración, puedes gastar una acción para mover la nube, atacando a cada objetivo en su trayectoria.",
           "empower": "Aumenta el área de efecto de la nube por un paso y su daño por un dado."
         },
@@ -113,8 +113,8 @@
           "cost": "1 Acción, 2 chi",
           "range": "Medio",
           "duration": "Instantáneo",
-          "crit": "El objetivo sufre una herida media.",
-          "desc": "Clavas o tensas el metal que ya porta un objetivo, convirtiendo su propia armadura o arma en su perdición. Un objetivo que lleve un objeto de metal clavado o armadura metálica debe superar un tiro de salvación de Voluntad o sufre 3d8 + SAB/CAR daño Perforante que ignora su defensa, una herida leve y sangrado.",
+          "crit": "El objetivo sufre Herido-2.",
+          "desc": "Clavas o tensas el metal que ya porta un objetivo, convirtiendo su propia armadura o arma en su perdición. Un objetivo que lleve un objeto de metal clavado o armadura metálica debe superar un tiro de salvación de Voluntad o sufre 3d8 + SAB/CAR daño Perforante que ignora su defensa, Herido-1 y sangrado.",
           "empower": "Afecta a un objetivo adicional que lleve metal en distancia media del primero."
         },
         {
@@ -171,7 +171,7 @@
           "cost": "2 acciones, 2 chi",
           "area": "Radio Medio",
           "duration": "Instantáneo",
-          "crit": "Los afectados sufren una herida leve.",
+          "crit": "Los afectados sufren Herido-1.",
           "desc": "Genera un pulso magnético que destruye todos los objetos metálicos en el área afectada y ocasiona el efecto de estado roto a los objetos mágicos de ese material que no sean artefactos. Aquellos que estén llevando objetos que se van a romper deben tener éxito en un tiro de salvación Físico o sufren 3d8 + SAB/CAR daño Perforante y se les clavan fragmentos de metal.",
           "empower": "Aumenta el radio por un paso y el daño de la fragmentación por un dado adicional."
         },
@@ -207,8 +207,8 @@
           "cost": "2 acciones, 3 chi",
           "area": "Radio grande",
           "duration": "Instantáneo",
-          "crit": "Los afectados sufren una herida grave y sangrado grave.",
-          "desc": "Desatas una tempestad de fragmentos metálicos que inflige 5d10 + SAB/CAR daño Cortante o Perforante a todos los que alcance, una herida media y sangrado. Los proyectiles quedan clavados en el terreno, creando terreno difícil, y la armadura metálica de los afectados queda dañada, reduciendo su efectividad hasta ser reparada.",
+          "crit": "Los afectados sufren Herido-3 y sangrado grave.",
+          "desc": "Desatas una tempestad de fragmentos metálicos que inflige 5d10 + SAB/CAR daño Cortante o Perforante a todos los que alcance, Herido-2 y sangrado. Los proyectiles quedan clavados en el terreno, creando terreno difícil, y la armadura metálica de los afectados queda dañada, reduciendo su efectividad hasta ser reparada.",
           "empower": "Vuelve a atacar el mismo área o amplía el radio un paso."
         },
         {
@@ -225,7 +225,7 @@
           "duration": "Concentración",
           "desc": "Crea una nube de partículas de metal que otorga ocultamiento y ciega a todos en ella. Cada objetivo que se encuentre ahí debe tener éxito en un tiro de Voluntad o sufre 3d10 + SAB/CAR daño Perforante que ignora defensa y el metal entrará en su cuerpo, haciendo así que cuenten como si llevasen armadura metálica además de estar enfermados una ronda. Este efecto permanecerá hasta que pierdas la concentración y puedes reactivarlo gastando una acción. ",
           "empower": "Aumenta el tamaño un paso y el daño por un dado.",
-          "crit": "Los afectados sufren náuseas durante una ronda."
+          "crit": "Los afectados sufren Enfermado-1 durante una ronda."
         },
         {
           "tags": [

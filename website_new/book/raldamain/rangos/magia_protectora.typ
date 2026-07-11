@@ -1,0 +1,184 @@
+#import "../theme.typ": *
+
+Donde otros aprendieron a atacar, el practicante de Magia Protectora aprendió a negar. Este rango domina los escudos de fuerza, la disipación de hechizos y la creación de campos antimágicos que convierten al practicante en el peor enemigo de cualquier mago. Su valor en un grupo no se mide en daño infligido sino en daño absorbido: la Magia Protectora puede neutralizar amenazas que derrotarían a todo el grupo por sí solas, convirtiendo a su portador en un muro que ningún hechizo atraviesa fácilmente.
+
+#tip-box[
+  *Reserva de Chi:* Incrementa por Rango x 2.
+  *Estadística principal:* Inteligencia + Rango.
+  *Parada mágica:* Usas Magia Protectora para tiros de parada y salvaciones contra habilidades Arcanas.
+]
+
+==== Rango I — Rango I
+
+#ability-card(
+  name: "Armadura del Mago",
+  tags: ("Protectora", "Arcana", "Duradera"),
+  cost: "2 acciones",
+  duration: "Concentración",
+  desc: "Creas un campo de fuerza personal que otorga DEF base igual a Rango + 2 y Resistencia a efectos Arcanos. No se acumula con armaduras.",
+  empower: "Otorgas los beneficios a un aliado al tacto.",
+)
+
+#ability-card(
+  name: "Contrahechizo",
+  tags: ("Protectora", "Arcana", "Reacción"),
+  desc: "Como reacción (1 Reacción), intentas cancelar un hechizo arcano enemigo de Rango igual o inferior al tuyo +1 mediante un tiro enfrentado. No funciona contra hechizos míticos.",
+  empower: "Éxito automático contra hechizos que cuesten X chi o menos. El lanzador puede pagar chi adicional para evitar la cancelación.",
+)
+
+#ability-card(
+  name: "Disrupción Mágica",
+  tags: ("Protectora", "Arcana", "Toque"),
+  cost: "1 acción",
+  range: "Toque",
+  duration: "Instantáneo",
+  crit: "Repones 1 chi.",
+  desc: "Suprimes las propiedades de un objeto mágico durante el resto del combate (tiro contra la dificultad del objeto). No afecta a artefactos.",
+  empower: "Aumenta el alcance a medio.",
+)
+
+==== Rango II — Rango II
+
+#ability-card(
+  name: "Eliminar Magia",
+  tags: ("Protectora", "Arcana"),
+  cost: "1 acción, 1 chi",
+  range: "Medio",
+  duration: "Instantáneo",
+  crit: "Elimina todos los efectos Arcanos activos del objetivo.",
+  desc: "Anulas un hechizo Arcano duradero activo sobre el objetivo mediante un tiro enfrentado de Magia Arcana.",
+  empower: "Afecta a un objetivo adicional o cancela un hechizo extra en el mismo objetivo.",
+)
+
+#ability-card(
+  name: "Círculo de Sellado",
+  tags: ("Protectora", "Arcana", "Duradera"),
+  cost: "3 acciones, 1 chi",
+  range: "Cuerpo a cuerpo",
+  duration: "Hasta que sea eliminado",
+  desc: "Trazas una barrera contra criaturas extraplanarias. No pueden cruzarla ni atacarte directamente (Desventaja en sus ataques). Los extraplanarios pueden intentar romperla con una acción (Dificultad Nivel + 3).",
+  empower: "Trazas el círculo sobre un aliado para que se mueva con él.",
+)
+
+#ability-card(
+  name: "Sello Protector",
+  tags: ("Protectora", "Arcana", "Duradera", "Toque"),
+  cost: "3 acciones, 1 chi",
+  range: "Cuerpo a cuerpo",
+  duration: "Seis rondas o hasta eliminado",
+  desc: "Otorga Resistencia Arcana al objetivo y le permite usar Magia Protectora para defenderse. Puedes sacrificar el sello para convertir un fallo en un tiro defensivo arcano en éxito automático.",
+  empower: "El objetivo repite un tiro defensivo arcano y elige el mejor resultado.",
+)
+
+==== Rango III — Rango III
+
+_Pasiva: Hechizos Protectores Rango I reducen coste -1 acción._
+
+#ability-card(
+  name: "Retener Persona",
+  tags: ("Protectora", "Arcana", "Agarre"),
+  cost: "1 acción, 2 chi",
+  range: "Medio",
+  duration: "Concentración",
+  crit: "Aplica Eliminar Magia gratis sobre el objetivo.",
+  desc: "Agarras al objetivo con cuerdas de chi (el objetivo resiste con Heroísmo o Acrobacias contra tu Magia Protectora). Mientras esté agarrado, no puede usar magia Arcana.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+#ability-card(
+  name: "Glifo Mágico",
+  tags: ("Protectora", "Arcana", "Duradera", "Mejora"),
+  cost: "3 acciones, 2 chi",
+  duration: "Un día o hasta activación",
+  desc: "Inscribes un hechizo conocido (Rango igual o inferior a tu Magia Protectora) en una superficie. El glifo se activa como acción bonus cuando se cumple la condición. Debes pagar el coste del hechizo inscrito al momento de la activación.",
+  empower: "N/A",
+)
+
+#ability-card(
+  name: "Absorber Chi",
+  tags: ("Protectora", "Pasiva"),
+  desc: "Recuperas 1 chi cada vez que anulas magia con éxito (mediante Eliminar Magia, Disrupción Mágica o Contrahechizo). Al afectar a un enemigo con Magia Protectora, le drenas 1 chi y lo ganas tú.",
+)
+
+==== Rango IV — Rango IV
+
+_Pasiva: Hechizos Protectores Rango II reducen coste -1 acción._
+
+#ability-card(
+  name: "Campo Antimágico",
+  tags: ("Protectora", "Arcana", "Duradera"),
+  cost: "2 acciones, 2 chi",
+  area: "Esfera pequeña",
+  duration: "Concentración",
+  desc: "Anulas toda magia Arcana dentro del área. Impide el lanzamiento de hechizos y la activación de objetos mágicos. Tú también sufres Desventaja en Arcana y no puedes mantener hechizos duraderos ni recibir efectos mágicos externos.",
+  empower: "Centras el campo alrededor de otra criatura (puede intentar Esquivar para evitarlo).",
+)
+
+#ability-card(
+  name: "Exilio",
+  tags: ("Protectora", "Arcana"),
+  cost: "2 acciones, 2 chi",
+  range: "Medio",
+  duration: "Instantáneo",
+  desc: "Devuelves a una criatura extraplanaria a su plano de origen (Dificultad Nivel + 3). No afecta a criaturas míticas ni nativas del plano actual.",
+  empower: "Afecta a una criatura extraplanaria adicional.",
+)
+
+#ability-card(
+  name: "Esfera de Fuerza",
+  tags: ("Protectora", "Arcana", "Duradera"),
+  cost: "2 acciones, 2 chi",
+  range: "Medio",
+  area: "Esfera pequeña",
+  duration: "Concentración",
+  desc: "Creas una barrera impenetrable con PV iguales a Rango x 6 y DEF igual a Rango + 4. Es inmune a efectos de Toque, ataques gaseosos y daño no mágico. Puedes atrapar a enemigos dentro (el objetivo puede intentar Esquivar).",
+  empower: "Recuperas todos los PV de la esfera (solo si tiene al menos 1 PV restante).",
+)
+
+==== Rango V — Rango V
+
+_Pasiva: Hechizos Protectores Rango III reducen coste -1 acción._
+
+#ability-card(
+  name: "Disyunción",
+  tags: ("Protectora", "Arcana"),
+  cost: "2 acciones, 3 chi",
+  range: "Medio",
+  duration: "Instantáneo",
+  desc: "Eliminas todos los hechizos Arcanos duraderos del objetivo y anulas sus objetos mágicos durante el resto del combate. Solo es evitable con Magia Protectora.",
+  empower: "Afecta a un objetivo adicional.",
+)
+
+#ability-card(
+  name: "Ligación Planar",
+  tags: ("Protectora", "Arcana", "Duradera"),
+  cost: "3 acciones, 3 chi",
+  range: "Medio",
+  duration: "Concentración",
+  desc: "Sometes a una criatura extraplanaria a tu voluntad (Dificultad Nivel + 3). Puedes controlar un máximo de 4 criaturas ligadas simultáneamente. Todas se liberan al perder la concentración.",
+  empower: "Afecta a una criatura adicional.",
+)
+
+#ability-card(
+  name: "Invertir Chi",
+  tags: ("Protectora", "Arcana", "Toque"),
+  cost: "2 acciones, 3 chi",
+  range: "Cuerpo a cuerpo",
+  duration: "Instantáneo",
+  crit: "Objetivo con Aturdido-2 durante 1 ronda.",
+  desc: "Sobrecargas los conductos de chi del objetivo (tiro de salvación de CON contra tu Magia Protectora). La reserva de chi del objetivo aumenta en +3 y recibe daño igual a su reserva de chi total. El objetivo puede gastar chi para reducir el daño recibido.",
+  empower: "Aumenta el alcance a medio.",
+)
+
+==== Rango VI — Rango VI
+
+_Pasiva: Hechizos Protectores Rango IV reducen coste -1 acción._
+
+#ability-card(
+  name: "Sello Extraplanario",
+  tags: ("Protectora", "Arcana", "Duradera"),
+  cost: "3 acciones, 5 chi",
+  duration: "Hasta que termine",
+  desc: "Absorbes una criatura extraplanaria ligada (Dificultad Nivel + 3). Ganas sus habilidades, ataques, resistencias y estadísticas (+1 estadística o limitador por cada 4 niveles de la criatura). Si la criatura se libera, sufres los efectos de Disyunción e Invertir Chi simultáneamente.",
+  empower: "N/A",
+)

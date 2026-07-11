@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/rangos/ciencia/bombas.md",
+                "file": "rules/rangos/religion/guerrero-divino.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bombas"
+              "title": "guerrero-divino"
             }
           },
           {
@@ -225,6 +225,11 @@
   },
   "active": "d0f7372f6752d703",
   "lastOpenFiles": [
+    "rules/rangos/combate/presencia.md",
+    "rules/rangos/combate/mente desencadenada.md",
+    "rules/rangos/ocultismo/magia_mental.md",
+    "rules/rangos/ocultismo/magia_mental.jpg",
+    "rules/rangos/ciencia/bombas.md",
     "website_new/assets/images/ranks/bombas.jpg",
     "website_new/assets/images/ranks/Unconfirmed 325148.crdownload",
     "website_new/data/ranks/magia_bombas.json",
@@ -265,11 +270,6 @@
     "website_new/data/bestiary/base.md",
     "website_new/data/bestiary/tier_iv/quimera.md",
     "website_new/data/bestiary/tier_vi/einherjar.md",
-    "website_new/data/bestiary/tier_vi/golem_guardian.md",
-    "website_new/data/bestiary/tier_vi/soferiel.md",
-    "website_new/data/bestiary/tier_v/seripente_solar.md",
-    "campaign/caballeros de ustilus/personajes/regulus.jpg",
-    "campaign/caballeros de ustilus/personajes/petrikov.jpg",
-    "campaign/caballeros de ustilus/personajes/basileos.jpg"
+    "campaign/caballeros de ustilus/personajes/regulus.jpg"
   ]
 }

@@ -312,6 +312,7 @@ La mayoría de habilidades de Rango incluyen un efecto de **Empoderar**: un bene
 
 **Reglas:**
 * Al usar una habilidad, puedes gastar **1 chi adicional** para activar su efecto Empoderar.
+* Puedes empoderar la misma habilidad un **máximo de 2 veces** por uso, gastando 1 chi por cada vez.
 * Empoderar **no cuesta acciones adicionales**, solo el recurso extra.
 * El efecto Empoderar está descrito en cada habilidad individual.
 
@@ -464,7 +465,7 @@ Los ataques y habilidades infligen distintos tipos de daño. El tipo importa par
 | **DEF (Defensa)** | Valor pasivo que reduce daño de cada impacto. |
 | **Desventaja** | Penalización de -1d6 a un tiro. No se acumula. |
 | **Duradera / Duradero** | Habilidad que persiste más allá del instante (con o sin Concentración). |
-| **Empoderar** | Gastar 1 recurso extra al usar una habilidad para activar su efecto bonus. Máx. 1/turno. |
+| **Empoderar** | Gastar 1 chi adicional al usar una habilidad para activar su efecto bonus. Máx. 2× por uso, 1 chi cada vez. |
 | **Enredado** | Estado: Velocidad = 0, Desventaja en ataques y Esquiva. |
 | **Esquiva** | Tiro defensivo con DES. No requiere equipo. Cuesta 1 reacción. |
 | **Gaseoso** | Habilidad con forma de nube o gas. Bloqueada por viento fuerte e inmunidad a Gaseosos. |

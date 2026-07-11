@@ -29,7 +29,7 @@
           "cost": "1 acción",
           "range": "Medio",
           "duration": "Instantáneo",
-          "crit": "El objetivo sufre una herida leve.",
+          "crit": "El objetivo sufre Herido-1.",
           "desc": "Lanza una roca que inflige 2d6 + SAB daño Contundente al impactar. Necesitas contar con tierra suficiente para emplear esta habilidad.",
           "empower": "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo."
         },
@@ -44,8 +44,8 @@
           "cost": "2 acciones, 1 chi",
           "area": "Radio cercano",
           "duration": "Instantáneo",
-          "crit": "Los afectados sufren una herida leve.",
-          "desc": "Sacudes el suelo bajo los pies de tus enemigos, haciendo brotar la tierra con violencia. Inflige 3d6 + SAB daño Contundente a todos los que se encuentren en el área, empuja un paso y deben tener éxito en un tiro de salvación Físico o quedan tropezados. El área queda cubierta de terreno difícil y las estructuras pequeñas en ella son destruidas.",
+          "crit": "Los afectados sufren Herido-1.",
+          "desc": "Sacudes el suelo bajo los pies de tus enemigos, haciendo brotar la tierra con violencia. Inflige 3d6 + SAB daño Contundente a todos los que se encuentren en el área, empuja un paso y deben tener éxito en un tiro de salvación Físico o quedan con Ralentizado-1. El área queda cubierta de terreno difícil y las estructuras pequeñas en ella son destruidas.",
           "empower": "Aumenta el radio un paso y el daño un dado adicional, o lanza este hechizo de nuevo sobre la misma zona."
         },
         {
@@ -90,7 +90,7 @@
           "range": "Medio",
           "area": "Radio pequeño",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan tropezados.",
+          "crit": "Los afectados quedan con Ralentizado-1.",
           "desc": "Lanza una ráfaga de fragmentos de roca sobre el área afectada, infligiendo 2d6 + SAB daño Contundente o Perforante a todos los objetivos Si impactas a un objetivo volador, este debe tener éxito en un tiro de salvación Físico o cae al suelo. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 y el área un paso por carga (máximo 2 cargas).",
           "empower": "Lanza una segunda descarga sobre la misma zona o una diferente."
         },
@@ -142,7 +142,7 @@
           ],
           "cost": "2 chi",
           "duration": "Hasta que el afectado escape",
-          "crit": "El objetivo queda además paralizado durante una ronda.",
+          "crit": "El objetivo queda además con Aturdido-4 durante una ronda.",
           "desc": "Al impactar con un hechizo de Magia de Tierra, todos los afectados deben superar un tiro de salvación Físico o quedan agarrados por rocas que emergen del suelo a su alrededor. Para liberarse, deben romper las rocas (PV iguales a tu Rango x 4, con las mismas propiedades que un Muro de Piedra) o tener éxito en el tiro de nuevo."
         }
       ]
@@ -174,7 +174,7 @@
           ],
           "cost": "2 acciones, 2 chi",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan tropezados y sufren una herida leve.",
+          "crit": "Los afectados quedan con Ralentizado-1 y sufren Herido-1.",
           "desc": "Desatas una lluvia de rocas y escombros sobre el área afectada, infligiendo 4d8 + SAB daño Contundente y enreda a todos los que alcance. El impacto destroza cualquier cobertura o barrera en la zona y convierte el terreno en un campo de escombros difícil de atravesar.",
           "empower": "Aumenta el área de efecto un paso y el daño un dado adicional, o ataca de nuevo a todas las criaturas en el área.",
           "area": "Cono medio"
@@ -189,8 +189,8 @@
           "cost": "1 Acción, 2 chi",
           "range": "Medio",
           "duration": "Hasta que escape",
-          "crit": "El objetivo queda además cegado.",
-          "desc": "La tierra se abre y engulle a un objetivo, arrastrándolo al interior del suelo. El objetivo debe superar un tiro de salvación Físico o sufre 3d8 + SAB daño Contundente y queda agarrado, cegado y comienza a asfixiarse. Para liberarse debe tener éxito en el tiro de nuevo, romper las rocas que lo aprisionan (PV iguales a tu Rango x 4) o ser rescatado desde el exterior.",
+          "crit": "El objetivo queda además con Confundido-1.",
+          "desc": "La tierra se abre y engulle a un objetivo, arrastrándolo al interior del suelo. El objetivo debe superar un tiro de salvación Físico o sufre 3d8 + SAB daño Contundente y queda Agarrado, con Confundido-1 y comienza a asfixiarse. Para liberarse debe tener éxito en el tiro de nuevo, romper las rocas que lo aprisionan (PV iguales a tu Rango x 4) o ser rescatado desde el exterior.",
           "empower": "Afecta a un objetivo adicional."
         }
       ]
@@ -212,7 +212,7 @@
           "cost": "2 acciones, 3 chi",
           "area": "Radio grande",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan aturdidos durante una ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
           "desc": "Desatas un sismo devastador que sacude el suelo en toda el área afectada, infligiendo 5d10 + SAB daño Contundente a todos los que se encuentren en él. El impacto los tropieza y cubre el terreno de grietas y escombros que lo convierten en terreno difícil. Las estructuras en el área se derrumban y pueden provocar derrumbamientos secundarios que causen daño adicional a las criaturas atrapadas bajo los escombros.",
           "empower": "Vuelve a atacar la misma área con un terremoto secundario."
         },
@@ -226,7 +226,7 @@
           "cost": "2 acciones, 3 chi",
           "area": "Cubo grande",
           "duration": "Concentración",
-          "crit": "Los agarrados quedan además paralizados durante una ronda.",
+          "crit": "Los agarrados quedan además con Aturdido-4 durante una ronda.",
           "desc": "Levanta una estructura masiva de tierra y roca que moldea el campo de batalla a tu voluntad. Las criaturas en el espacio afectado deben superar un tiro de salvación Físico o quedan agarradas entre las rocas y sufren 4d10 + SAB daño Contundente. Mientras permanezca activo, puedes emplear una acción para hacer que las rocas se cierren sobre los agarrados, repitiendo el ataque de daño automáticamente contra ellos.",
           "empower": "Una sección del bastión colapsa, aplastando a todos los agarrados en ella y repitiendo el ataque automáticamente."
         },
@@ -241,7 +241,7 @@
           "duration": "Concentración",
           "desc": "Lanza 4 meteoritos simultáneos que infligen 5d10 + CAR daño Contundente, empujan un paso y tropiezan al impactar además de destruir las estructuras en su posición. Puedes dejar meteoritos suspendidos en el aire para lanzarlos en un turno posterior.",
           "empower": "Emplea de nuevo esta habilidad para atacar a puntos diferentes o al mismo. ",
-          "crit": "Los afectados quedan aturdidos una ronda.",
+          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
           "range": "Medio",
           "area": "4 Esferas pequeñas"
         }

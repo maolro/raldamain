@@ -176,7 +176,7 @@
           "cost": "2 acciones, 2 chi",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "desc": "Confundes la apariencia de los enemigos en el área (resisten con Percepción o Averiguar Intenciones). Los afectados quedan Confundidos y pierden Moral. Un aliado con Presencia puede ayudar a liberar a los afectados.",
+          "desc": "Confundes la apariencia de los enemigos en el área (resisten con Percepción o Averiguar Intenciones). Los afectados quedan con Confundido-1 y pierden Moral. Un aliado con Presencia puede ayudar a liberar a los afectados.",
           "empower": "Cambias la apariencia de un enemigo para redirigir un ataque enemigo hacia otro objetivo."
         },
         {

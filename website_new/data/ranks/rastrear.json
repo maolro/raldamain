@@ -25,7 +25,7 @@
           "name": "Sanador Instintivo",
           "tags": ["Innata", "Sanación", "Toque"],
           "cost": "1 acción, 1 chi",
-          "desc": "Curas Rango + 2 Vitalidad y reduces la gravedad de una herida permanente o aflicción un paso. Requiere materiales de sanación."
+          "desc": "Curas Rango + 2 Vitalidad y reduces la gravedad de Herido (permanente) o aflicción un paso. Requiere materiales de sanación."
         }
       ]
     },
