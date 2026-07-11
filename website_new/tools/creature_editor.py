@@ -64,7 +64,7 @@ def _propagate_ability(aid, ab_data):
     return changed
 
 def _git_push(files, message):
-    """Stage files, commit, push. Returns 'ok', 'nothing', or an error string."""
+    """Stage files, commit, pull --rebase, push. Returns 'ok', 'nothing', or an error string."""
     try:
         subprocess.run(["git", "add", "--"] + files, cwd=BASE, check=True,
                        capture_output=True, timeout=10)
@@ -74,8 +74,11 @@ def _git_push(files, message):
             if "nothing to commit" in (r.stdout + r.stderr):
                 return "nothing"
             return r.stderr.strip() or "commit error"
+        # Rebase on top of any remote commits so push is never rejected as non-fast-forward
+        subprocess.run(["git", "pull", "--rebase", "--autostash"], cwd=BASE,
+                       check=True, capture_output=True, timeout=60)
         subprocess.run(["git", "push"], cwd=BASE, check=True,
-                       capture_output=True, timeout=30)
+                       capture_output=True, timeout=90)
         return "ok"
     except subprocess.TimeoutExpired:
         return "timeout"
