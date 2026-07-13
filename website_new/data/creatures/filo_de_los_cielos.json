@@ -58,6 +58,20 @@
       ]
     },
     {
+      "name": "Relámpago en Cadena",
+      "desc": "Los objetivos con armadura metálica tienen Desventaja defendiéndose.",
+      "tags": [
+        "Ataque",
+        "Tormenta"
+      ],
+      "attacks": 2,
+      "cost": 1,
+      "area": "Línea Media",
+      "range": "Lejano",
+      "bonus": "+15+4d6",
+      "damage": "4d10 + 9 Eléctrico"
+    },
+    {
       "name": "Torbellino",
       "tags": [
         "Aire",
@@ -83,9 +97,55 @@
       "bonus": "+15+4d6",
       "area": "Cono grande",
       "damage": "6d10 + 9 Contundente"
+    },
+    {
+      "name": "Voltio Cruel",
+      "desc": "El afectado tiene Desventaja defendiéndose. Si falla, debe tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o queda Aturdido.",
+      "cost": 2,
+      "tags": [
+        "Ataque",
+        "Tormenta"
+      ],
+      "move": 8,
+      "range": "1",
+      "bonus": "+15+4d6",
+      "damage": "6d10 + 9 Eléctrico"
     }
   ],
-  "reactions": [],
+  "reactions": [
+    {
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "cost": 1,
+      "desc": "Suma +10 a su tiro defensivo.",
+      "move": 8
+    },
+    {
+      "name": "Muro de Aire",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 6. Los atacantes cuerpo a cuerpo sufren 3d10 + 9 daño Cortante y son empujados.",
+      "id": "muro-de-aire_1778707098298",
+      "type": "reaction",
+      "tags": [
+        "Aire",
+        "Defensiva"
+      ]
+    },
+    {
+      "name": "Absorber Aire",
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si es impactado por un efecto de Aire o Tormenta que no atraviese su umbral.",
+      "cost": 1,
+      "id": "absorber-aire_1778748254508",
+      "type": "reaction",
+      "tags": [
+        "Aire",
+        "Sanacion"
+      ]
+    }
+  ],
   "lore": "",
   "tags": []
 }
