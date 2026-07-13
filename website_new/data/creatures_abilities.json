@@ -770,5 +770,33 @@
     "move": "",
     "attacks": 1,
     "desc": "Se vuelve inmune a todos los efectos que provengan del plano material a costa que no podrá afectar al plano material de ninguna manera. Durará hasta su siguiente turno,"
+  },
+  {
+    "name": "",
+    "desc": "",
+    "id": "_1783972702661",
+    "type": "reaction"
+  },
+  {
+    "name": "Forma de Fuego",
+    "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de reducir su Umbral de Daño al agua por 6. Solo podrá emplear efectos de Fuego en esta forma y puede salir antes si lo desea.",
+    "cost": 1,
+    "tags": [
+      "Fuego",
+      "Defensiva"
+    ],
+    "id": "forma-de-fuego_1783973232927",
+    "type": "reaction"
+  },
+  {
+    "name": "Uno con los Vientos",
+    "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de recibir Desventaja contra efectos de Aire. Solo podrá emplear efectos de Aire en esta forma y puede salir antes si lo desea.",
+    "cost": 1,
+    "tags": [
+      "Aire",
+      "Defensiva"
+    ],
+    "id": "uno-con-los-vientos_1783973361403",
+    "type": "reaction"
   }
 ]
