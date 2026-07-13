@@ -72,6 +72,11 @@
       "damage": "4d10 + 9 Eléctrico"
     },
     {
+      "name": "Apuntar Ataque",
+      "desc": "Aumenta su modificador de ataque en un tiro por +6.",
+      "cost": 1
+    },
+    {
       "name": "Torbellino",
       "tags": [
         "Aire",
@@ -100,7 +105,7 @@
     },
     {
       "name": "Voltio Cruel",
-      "desc": "El afectado tiene Desventaja defendiéndose. Si falla, debe tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o queda Aturdido.",
+      "desc": "El afectado tiene Desventaja defendiéndose. Si falla, debe tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o queda Aturdido, Herido y recibe un impacto adicional.",
       "cost": 2,
       "tags": [
         "Ataque",
@@ -144,6 +149,17 @@
         "Aire",
         "Sanacion"
       ]
+    },
+    {
+      "name": "Uno con los Vientos",
+      "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de recibir Desventaja contra efectos de Aire. Solo podrá emplear efectos de Aire en esta forma y puede salir antes si lo desea.",
+      "cost": 1,
+      "tags": [
+        "Aire",
+        "Defensiva"
+      ],
+      "id": "forma-de-fuego_1783973232927",
+      "type": "reaction"
     }
   ],
   "lore": "",
