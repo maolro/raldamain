@@ -114,7 +114,8 @@
       "move": 8,
       "range": "1",
       "bonus": "+15+4d6",
-      "damage": "6d10 + 9 Eléctrico"
+      "damage": "6d10 + 9 Eléctrico",
+      "area": "Línea media"
     }
   ],
   "reactions": [
