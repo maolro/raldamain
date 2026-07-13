@@ -73,7 +73,7 @@
     },
     {
       "name": "Apuntar Ataque",
-      "desc": "Aumenta su modificador de ataque en un tiro por +6.",
+      "desc": "Recibe +6 en su siguiente tiro de ataque.",
       "cost": 1
     },
     {
