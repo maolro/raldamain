@@ -106,5 +106,14 @@
     "size": "Grande",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "filo_de_los_cielos",
+    "name": "Filo de los Cielos",
+    "type": "Humanoide",
+    "level": 17,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]

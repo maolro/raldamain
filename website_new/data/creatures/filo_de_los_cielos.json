@@ -1,0 +1,91 @@
+{
+  "id": "filo_de_los_cielos",
+  "name": "Filo de los Cielos",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 17,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+15+3d6",
+    "VOL": "+15+2d6",
+    "MEN": "+15+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 18,
+      "categories": "Interno"
+    },
+    {
+      "value": 24,
+      "categories": "General"
+    },
+    {
+      "value": 30,
+      "categories": "Mágico, Físico"
+    },
+    {
+      "value": 36,
+      "categories": "Fuego"
+    },
+    {
+      "value": 42,
+      "categories": "Eléctrico, Sónico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 16, Vuelo 24",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Tajo de los Vientos",
+      "desc": "Empuja un paso al impactar. Si impacta con ambos ataques, derriba al objetivo del aire.",
+      "attacks": 2,
+      "cost": 1,
+      "bonus": "+15+4d6",
+      "range": "Medio",
+      "area": "Línea Media",
+      "damage": "5d10 + 9 Cortante",
+      "tags": [
+        "Ataque",
+        "Aire",
+        "Area"
+      ]
+    },
+    {
+      "name": "Torbellino",
+      "tags": [
+        "Aire",
+        "Duradero",
+        "Agarre"
+      ],
+      "area": "Radio medio",
+      "range": "Medio",
+      "bonus": "+15+4d6",
+      "desc": "Los afectados quedan enredados y deben tener éxito en un tiro de salvación Físico contra +15+3d6 o quedan agarrados hasta que escapen. Pueden repetir el tiro cada turno hasta lograrlo.",
+      "cost": 1,
+      "damage": "4d10 + 9 Contundente"
+    },
+    {
+      "name": "Huracán",
+      "desc": "Empuja dos pasos, derriba a todos los objetivos voladores y destruye todas las estructuras en el área afectada. ",
+      "tags": [
+        "Ataque",
+        "Aire",
+        "Area"
+      ],
+      "cost": 2,
+      "bonus": "+15+4d6",
+      "area": "Cono grande",
+      "damage": "6d10 + 9 Contundente"
+    }
+  ],
+  "reactions": [],
+  "lore": "",
+  "tags": []
+}
