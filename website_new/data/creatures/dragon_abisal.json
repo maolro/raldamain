@@ -1,0 +1,152 @@
+{
+  "id": "dragon_abisal",
+  "name": "Dragón Abisal",
+  "type": "Abisal",
+  "size": "Enorme",
+  "level": 17,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+15+3d6",
+    "VOL": "+15+2d6",
+    "MEN": "+15+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 18,
+      "categories": "Interno"
+    },
+    {
+      "value": 24,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 30,
+      "categories": "Magia"
+    },
+    {
+      "value": 36,
+      "categories": "Físico, Ácido"
+    }
+  ],
+  "immune": [
+    "Necrotico",
+    "Aflicciones",
+    "Mentales",
+    "Miedo",
+    "Miedo"
+  ],
+  "senses": "Vista a ciegas, Detectar magia",
+  "speed": "Paso 16, Vuelo 32",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Garras",
+      "desc": "Empuja a los objetivos un paso hacia atrás. Si impacta con ambas, provoca el efecto Tropezado.",
+      "attacks": 2,
+      "cost": 1,
+      "bonus": "+15+4d6",
+      "range": "Corto",
+      "area": "Arco Corto",
+      "damage": "5d10 + 8 Cortante",
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ]
+    },
+    {
+      "name": "Mordisco",
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "cost": 1,
+      "bonus": "+15+4d6",
+      "range": "Corto",
+      "damage": "5d10 + 8 Perforante/Ácido",
+      "desc": "El objetivo debe tener éxito en un tiro de salvación Físico contra +15+3d6 o será agarrado y devorado. Queda además cubierto de ácido."
+    },
+    {
+      "name": "Carga Arrolladora",
+      "desc": "Ataca a cada objetivo en su camino. Aquellos que sean impactados son empujados y deben tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o son Aturdidos.",
+      "cost": 1,
+      "move": 16,
+      "damage": "6d10 + 8 Contundente",
+      "range": "1",
+      "bonus": "+15+4d6",
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ]
+    },
+    {
+      "name": "Rugido Terrorífico",
+      "desc": "Los afectados quedan Enloquecidos y pierden los efectos de Moral que tengan activos. Aquellos que tengan éxito no pueden volver a ser afectados durante el resto del combate.",
+      "tags": [
+        "Miedo",
+        "Sonico"
+      ],
+      "save": "Voluntad +15+3d6",
+      "area": "Radio Grande",
+      "cost": 1
+    },
+    {
+      "name": "Aliento Ácido",
+      "area": "Cono Grande",
+      "damage": "6d10 + 8 Ácido",
+      "bonus": "+15+4d6",
+      "desc": "Rompe las armaduras de todos los objetivos en la zona afectada y la llena de ácido, haciéndola terreno difícil que Enferma a los objetivos ahí además de cubrirlos de ácido (deben superar un tiro de Voluntad contra +15+3d6 para evitarlo). ",
+      "tags": [
+        "Ataque",
+        "Area",
+        "Acido"
+      ],
+      "cost": 2
+    },
+    {
+      "name": "Aliento de Fuego Abisal",
+      "desc": "Quema todos los objetivos inflamables en la zona afectada. Todos los objetivos cubiertos en ácido tienen Desventaja defendiéndose y quedarán Heridos. ",
+      "cost": 2,
+      "bonus": "+15+4d6",
+      "area": "Cono Grande",
+      "damage": "6d10 + 8 Fuego/Necrótico"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Sangre Ácida",
+      "tags": [
+        "Acido",
+        "Defensiva"
+      ],
+      "cost": 1,
+      "desc": "Un atacante cuerpo a cuerpo sufre 3d10 + 8 daño Ácido y su arma quedará rota. Queda además cubierto de ácido hasta que lo elimine, lo cual cuesta una Acción."
+    },
+    {
+      "name": "Regeneración",
+      "desc": "Aumenta todos sus umbrales por 6 y se recupera de un efecto de estado que tenga. No puede emplear esta habilidad si ha sufrido daño Radiante o ha sido impactado por un arma anti-abisales esta ronda.",
+      "cost": 1
+    },
+    {
+      "name": "Aura del Caos",
+      "desc": "Anula un efecto Arcano de coste 1 o inferior. Si se emplea contra enemigos sin reserva, solo anulará hechizos de enemigos cuyo nivel sea inferior al suyo por 3 o más.",
+      "tags": [
+        "Abisal",
+        "Defensiva"
+      ],
+      "cost": 1
+    },
+    {
+      "name": "Evasión",
+      "cost": 1,
+      "move": 8,
+      "desc": "Aumenta su tiro defensivo por +10. Solo puede emplear esta habilidad si está en el aire."
+    }
+  ],
+  "lore": "",
+  "tags": []
+}
