@@ -115,5 +115,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "nueva_criatura_1784219591581",
+    "name": "Dragón Abisal",
+    "type": "Abisal",
+    "level": 17,
+    "size": "Enorme",
+    "image": "",
+    "description": ""
   }
 ]

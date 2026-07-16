@@ -1,0 +1,27 @@
+{
+  "id": "nueva_criatura_1784219591581",
+  "name": "Dragón Abisal",
+  "type": "Abisal",
+  "size": "Enorme",
+  "level": 17,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+15+3d6",
+    "VOL": "+15+2d6",
+    "MEN": "+15+1d6"
+  },
+  "umbrales": [],
+  "immune": [],
+  "senses": "Vista a ciegas, Detectar magia",
+  "speed": "Paso 16, Vuelo 32",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [],
+  "lore": "",
+  "tags": []
+}
