@@ -127,16 +127,24 @@
       "desc": "Un atacante cuerpo a cuerpo sufre 3d10 + 8 daño Ácido y su arma quedará rota. Queda además cubierto de ácido hasta que lo elimine, lo cual cuesta una Acción."
     },
     {
-      "name": "",
-      "desc": ""
+      "name": "Regeneración",
+      "desc": "Aumenta todos sus umbrales por 6 y se recupera de un efecto de estado que tenga. No puede emplear esta habilidad si ha sufrido daño Radiante o ha sido impactado por un arma anti-abisales esta ronda.",
+      "cost": 1
     },
     {
-      "name": "",
-      "desc": ""
+      "name": "Aura del Caos",
+      "desc": "Anula un efecto Arcano de coste 1 o inferior. Si se emplea contra enemigos sin reserva, solo anulará hechizos de enemigos cuyo nivel sea inferior al suyo por 3 o más.",
+      "tags": [
+        "Abisal",
+        "Defensiva"
+      ],
+      "cost": 1
     },
     {
-      "name": "",
-      "desc": ""
+      "name": "Evasión",
+      "cost": 1,
+      "move": 8,
+      "desc": "Aumenta su tiro defensivo por +10. Solo puede emplear esta habilidad si está en el aire."
     }
   ],
   "lore": "",
