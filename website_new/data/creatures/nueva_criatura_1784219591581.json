@@ -46,13 +46,13 @@
   "actions": [
     {
       "name": "Garras",
-      "desc": "Empuja a los objetivos un paso hacia atrás.",
+      "desc": "Empuja a los objetivos un paso hacia atrás. Si impacta con ambas, provoca el efecto Tropezado.",
       "attacks": 2,
       "cost": 1,
       "bonus": "+15+4d6",
       "range": "Corto",
       "area": "Arco Corto",
-      "damage": "5d10 + 8 Cortante/Ácido",
+      "damage": "5d10 + 8 Cortante",
       "tags": [
         "Ataque",
         "Fisico"
@@ -68,11 +68,11 @@
       "bonus": "+15+4d6",
       "range": "Corto",
       "damage": "5d10 + 8 Perforante/Ácido",
-      "desc": "El objetivo debe tener éxito en un tiro de salvación Físico contra +15+3d6 o será agarrado y devorado."
+      "desc": "El objetivo debe tener éxito en un tiro de salvación Físico contra +15+3d6 o será agarrado y devorado. Queda además cubierto de ácido."
     },
     {
       "name": "Carga Arrolladora",
-      "desc": "Ataca a cada objetivo en su camino. Aquellos que sean impactados son empujados y deben tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o son aturdidos.",
+      "desc": "Ataca a cada objetivo en su camino. Aquellos que sean impactados son empujados y deben tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o son Aturdidos.",
       "cost": 1,
       "move": 16,
       "damage": "6d10 + 8 Contundente",
@@ -99,13 +99,21 @@
       "area": "Cono Grande",
       "damage": "6d10 + 8 Ácido",
       "bonus": "+15+4d6",
-      "desc": "Rompe las armaduras de todos los objetivos en la zona afectada y la llena de ácido, haciéndola terreno difícil que Enferma a los objetivos ahí (deben superar un tiro de Voluntad contra +15+3d6 para evitarlo).",
+      "desc": "Rompe las armaduras de todos los objetivos en la zona afectada y la llena de ácido, haciéndola terreno difícil que Enferma a los objetivos ahí además de cubrirlos de ácido (deben superar un tiro de Voluntad contra +15+3d6 para evitarlo). ",
       "tags": [
         "Ataque",
         "Area",
         "Acido"
       ],
       "cost": 2
+    },
+    {
+      "name": "Aliento de Fuego Abisal",
+      "desc": "Quema todos los objetivos inflamables en la zona afectada. Todos los objetivos cubiertos en ácido tienen Desventaja defendiéndose y quedarán Heridos. ",
+      "cost": 2,
+      "bonus": "+15+4d6",
+      "area": "Cono Grande",
+      "damage": "6d10 + 8 Fuego/Necrótico"
     }
   ],
   "reactions": [
@@ -116,7 +124,7 @@
         "Defensiva"
       ],
       "cost": 1,
-      "desc": "Un atacante cuerpo a cuerpo sufre 3d10 + 8 daño Ácido y su arma quedará rota."
+      "desc": "Un atacante cuerpo a cuerpo sufre 3d10 + 8 daño Ácido y su arma quedará rota. Queda además cubierto de ácido hasta que lo elimine, lo cual cuesta una Acción."
     },
     {
       "name": "",
