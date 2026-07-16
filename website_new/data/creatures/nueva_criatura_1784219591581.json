@@ -11,8 +11,31 @@
     "VOL": "+15+2d6",
     "MEN": "+15+1d6"
   },
-  "umbrales": [],
-  "immune": [],
+  "umbrales": [
+    {
+      "value": 18,
+      "categories": "Interno"
+    },
+    {
+      "value": 24,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 30,
+      "categories": "Magia"
+    },
+    {
+      "value": 36,
+      "categories": "Físico, Ácido"
+    }
+  ],
+  "immune": [
+    "Necrotico",
+    "Aflicciones",
+    "Mentales",
+    "Miedo",
+    "Miedo"
+  ],
   "senses": "Vista a ciegas, Detectar magia",
   "speed": "Paso 16, Vuelo 32",
   "combat": {
@@ -21,7 +44,12 @@
   },
   "traits": [],
   "actions": [],
-  "reactions": [],
+  "reactions": [
+    {
+      "name": "Sangre Ácida",
+      "desc": ""
+    }
+  ],
   "lore": "",
   "tags": []
 }
