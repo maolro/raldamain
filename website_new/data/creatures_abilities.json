@@ -798,5 +798,16 @@
     ],
     "id": "uno-con-los-vientos_1783973361403",
     "type": "reaction"
+  },
+  {
+    "name": "Aura del Caos",
+    "desc": "Anula un efecto Arcano de coste 1 o inferior. Si se emplea contra enemigos sin reserva, solo anulará hechizos de enemigos cuyo nivel sea inferior al suyo por 3 o más.",
+    "tags": [
+      "Abisal",
+      "Defensiva"
+    ],
+    "cost": 1,
+    "id": "aura-del-caos_1784290282931",
+    "type": "reaction"
   }
 ]
