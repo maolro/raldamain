@@ -41,13 +41,66 @@
   "traits": [],
   "actions": [
     {
-      "name": "",
-      "desc": ""
+      "name": "Rayo Elemental",
+      "cost": 1,
+      "bonus": "+13+4d6",
+      "range": "Medio",
+      "damage": "4d10 + 7 Fuego, Frío, Eléctrico o Ácido",
+      "attacks": 2,
+      "desc": "El daño de este ataque será aleatorio."
+    },
+    {
+      "name": "Rayo Transmutador",
+      "cost": 1,
+      "bonus": "+13+4d6",
+      "range": "Medio",
+      "attacks": 2,
+      "desc": "El objetivo sufre un efecto de estado aleatorio entre Fatigado, Ralentizado, Enfermado, Confundido, Cegado o Espantado hasta que se libere. Si ya tiene un efecto activo, empeorará por una categoría. "
+    },
+    {
+      "name": "Hipnosis Ocular",
+      "save": "+13+3d6 Mental",
+      "desc": "Los objetivos deben seguir una orden que le dés esta ronda, la cual no puede atentar contra su instinto de supervivencia. Solo afecta a aquellos que miren fijamente sus ojos.",
+      "area": "Radio Medio",
+      "tags": [
+        "Mental",
+        "Visual"
+      ]
+    },
+    {
+      "desc": "Los objetivos quedan enredados hasta que escapen. Solo afecta a aquellos que miren fijamente sus ojos.",
+      "name": "Agarre Telekinético",
+      "save": "+13+3d6 Físico",
+      "cost": 1,
+      "damage": "4d10 + 7 Fuerza",
+      "tags": [
+        "Telekinesia",
+        "Agarre",
+        "Visual"
+      ],
+      "area": "Radio Medio"
     }
   ],
   "reactions": [
     {
-      "desc": ""
+      "name": "Aura del Caos",
+      "desc": "Anula un efecto Arcano de coste 1 o inferior. Si se emplea contra enemigos sin reserva, solo anulará hechizos de enemigos cuyo nivel sea inferior al suyo por 3 o más.",
+      "tags": [
+        "Abisal",
+        "Defensiva"
+      ],
+      "cost": 1,
+      "id": "aura-del-caos_1784290282931",
+      "type": "reaction"
+    },
+    {
+      "name": "Barrera Arcana",
+      "desc": "Aumenta sus umbrales por 6. Si se está defendiéndose de un atacante cuerpo a cuerpo, puede provocarle 2d10 + 7 daño Fuego, Frío, Ácido o Eléctrico, o un efecto de estado negativo.",
+      "tags": [
+        "Evocacion",
+        "Defensiva"
+      ],
+      "cost": 1
     }
   ],
   "lore": "",
