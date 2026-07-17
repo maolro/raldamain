@@ -124,5 +124,14 @@
     "size": "Enorme",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "contemplador",
+    "name": "Contemplador",
+    "type": "Abisal",
+    "level": 14,
+    "size": "Grande",
+    "image": "",
+    "description": ""
   }
 ]

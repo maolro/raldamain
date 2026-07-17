@@ -1,0 +1,55 @@
+{
+  "id": "contemplador",
+  "name": "Contemplador",
+  "type": "Abisal",
+  "size": "Grande",
+  "level": 14,
+  "description": "",
+  "hits": 1,
+  "saves": {
+    "FÍS": "+13+1d6",
+    "VOL": "+13+2d6",
+    "MEN": "+13+3d6"
+  },
+  "umbrales": [
+    {
+      "value": 24,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 30,
+      "categories": "Físico, Magia"
+    },
+    {
+      "value": 36,
+      "categories": "Ácido"
+    }
+  ],
+  "immune": [
+    "Necrotico",
+    "Aflicciones",
+    "Mentales",
+    "Miedo",
+    "Miedo"
+  ],
+  "senses": "",
+  "speed": "Vuelo 8",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "",
+      "desc": ""
+    }
+  ],
+  "reactions": [
+    {
+      "desc": ""
+    }
+  ],
+  "lore": "",
+  "tags": []
+}
