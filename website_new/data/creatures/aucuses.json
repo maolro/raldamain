@@ -37,7 +37,7 @@
   "senses": "Vision Verdadera, Leer Pensamientos",
   "speed": "Vuelo 16",
   "combat": {
-    "acciones": 1,
+    "acciones": 2,
     "reacciones": 1
   },
   "traits": [
