@@ -61,7 +61,22 @@
       "damage": "4d10 + 8 Fuego/Necrótico"
     },
     {
-      "desc": "Provoca 4d10 + 8 Sónico, Aturdimiento y Miedo III. Las criaturas de nivel 11 o menos caen inconscientes al fracasar.",
+      "name": "Tormenta Telekinética",
+      "cost": 1,
+      "attacks": 2,
+      "bonus": "+15+4d6",
+      "range": "Medio",
+      "damage": "5d10 + 8 Contundente, Cortante o Perforante",
+      "area": "Cono medio o Radio corto",
+      "tags": [
+        "Fisico",
+        "Ataque",
+        "Area",
+        "Telekinesia"
+      ]
+    },
+    {
+      "desc": "Provoca 5d10 + 8 Sónico, Aturdimiento y Miedo.",
       "name": "Aullido de Alma en Pena",
       "tags": [
         "Alma",
@@ -70,7 +85,40 @@
       ],
       "save": "+15+3d6 VOL",
       "area": "Radio medio",
-      "cost": 2
+      "cost": 1
+    },
+    {
+      "name": "Drenar Alma",
+      "desc": "Provoca 6d10 + 8 Necrótico que no puede curarse y se cura un impacto o se recupera de un efecto de estado. Si afecta a un Extraplanario morirá instantáneamente si es de nivel 14 o menos, mientras si logra matar a un objetivo le drenará su alma, recuperando así un impacto adicional.",
+      "range": "Medio",
+      "cost": 2,
+      "save": "+15+3d6 VOL",
+      "tags": [
+        "Alma",
+        "Necrotico",
+        "Afliccion"
+      ]
+    },
+    {
+      "name": "Desatar Maldición",
+      "desc": "El afectado tiene Desventaja en todos sus tiros relacionados con dos estadísticas objetivo hasta que se recupere de la maldición. Este efecto es acumulable.",
+      "cost": 1,
+      "save": "+15+3d6 FÍS, MEN o VOL",
+      "range": "Medio",
+      "tags": [
+        "Divina",
+        "Maldicion"
+      ]
+    },
+    {
+      "tags": [
+        "Mental"
+      ],
+      "cost": 2,
+      "area": "Cono medio",
+      "name": "Sobrecarga Mental",
+      "save": "+15+3d6 MEN",
+      "desc": "Reduce la cordura de los afectados por 12 y provoca Confusión II hasta que se recuperen. "
     }
   ],
   "reactions": [],
