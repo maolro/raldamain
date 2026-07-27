@@ -1,0 +1,79 @@
+{
+  "id": "demilich",
+  "name": "Demilich",
+  "type": "No-muerto",
+  "size": "Pequeño",
+  "level": 17,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+15",
+    "VOL": "+15+3d6",
+    "MEN": "+15+4d6"
+  },
+  "umbrales": [
+    {
+      "value": 18,
+      "categories": "Interno"
+    },
+    {
+      "value": 26,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 30,
+      "categories": "Físico"
+    },
+    {
+      "value": 36,
+      "categories": "Magia"
+    }
+  ],
+  "immune": [
+    "Necrotico",
+    "Aflicciones",
+    "Mentales",
+    "Miedo",
+    "Ilusiones",
+    "Ilusiones"
+  ],
+  "senses": "Visión Verdadera",
+  "speed": "",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Fuego Maldito",
+      "desc": "El daño de este ataque no puede curarse.",
+      "tags": [
+        "Fuego",
+        "Necrotico",
+        "Ataque"
+      ],
+      "cost": 1,
+      "attacks": 2,
+      "bonus": "+15+4d6",
+      "range": "Medio",
+      "area": "Radio corto",
+      "damage": "4d10 + 8 Fuego/Necrótico"
+    },
+    {
+      "desc": "Provoca 4d10 + 8 Sónico, Aturdimiento y Miedo III. Las criaturas de nivel 11 o menos caen inconscientes al fracasar.",
+      "name": "Aullido de Alma en Pena",
+      "tags": [
+        "Alma",
+        "Sonico",
+        "Miedo"
+      ],
+      "save": "+15+3d6 VOL",
+      "area": "Radio medio",
+      "cost": 2
+    }
+  ],
+  "reactions": [],
+  "lore": "",
+  "tags": []
+}

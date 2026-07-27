@@ -133,5 +133,14 @@
     "size": "Grande",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "demilich",
+    "name": "Demilich",
+    "type": "No-muerto",
+    "level": 17,
+    "size": "Pequeño",
+    "image": "",
+    "description": ""
   }
 ]
