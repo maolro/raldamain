@@ -51,7 +51,7 @@
       ],
       "cost": 1,
       "attacks": 2,
-      "damage": "4d10 + 10 Perforante y 6d10 Necrótico",
+      "damage": "5d10 + 10 Perforante y 6d10 Necrótico",
       "bonus": "+17+5d6",
       "range": "Adyacente"
     },
