@@ -154,7 +154,7 @@
             "Visual"
           ],
           "cost": "2 acciones, 2 chi",
-          "range": "Medio",
+          "range": "Medio", 
           "area": "Esfera media",
           "duration": "Concentración",
           "desc": "Creas una nube de pesadillas vivientes. Obtienes Ventaja en tiros de Sombría dentro del área. Los enemigos deben superar un tiro de Voluntad o Percepción o sufren Miedo +1 y quedan atrapados en el área. La nube otorga ceguera y ocultamiento.",

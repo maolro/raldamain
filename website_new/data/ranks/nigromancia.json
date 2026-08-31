@@ -185,7 +185,7 @@
           "cost": "2 chi",
           "crit": "Aumenta el nivel del efecto un paso.",
           "duration": "Hasta que sea eliminada",
-          "desc": "Al impactar con daño Necrótico, puedes maldecir al objetivo con Enervación. La maldición impide toda sanación y convierte los intentos de curación en daño. El efecto empeora con el paso de los días o al recibir daño adicional: Fatigado-1, Fatigado-3, Confundido-4 y finalmente Muerte (el cadáver se levanta como Zombi).",
+          "desc": "Al impactar con daño Necrótico, puedes maldecir al objetivo con Enervación. La maldición impide toda sanación y convierte los intentos de curación en daño. El efecto empeora con el paso de los días o al recibir daño adicional: Fatigado-1, Fatigado-3, Fatigado-4 y finalmente Muerte (el cadáver se levanta como Zombi).",
           "empower": "N/A"
         }
       ]
