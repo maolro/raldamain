@@ -52,7 +52,7 @@
       "bonus": "+15+4d6",
       "range": "Corto",
       "area": "Arco Corto",
-      "damage": "5d10 + 8 Cortante",
+      "damage": "5d10 + 9 Cortante",
       "tags": [
         "Ataque",
         "Fisico"
@@ -67,7 +67,7 @@
       "cost": 1,
       "bonus": "+15+4d6",
       "range": "Corto",
-      "damage": "5d10 + 8 Perforante/Ácido",
+      "damage": "5d10 + 9 Perforante y 5d10 Ácido",
       "desc": "El objetivo debe tener éxito en un tiro de salvación Físico contra +15+3d6 o será agarrado y devorado. Queda además cubierto de ácido."
     },
     {
@@ -75,7 +75,7 @@
       "desc": "Ataca a cada objetivo en su camino. Aquellos que sean impactados son empujados y deben tener éxito en un tiro de salvación de Voluntad contra +15+3d6 o son Aturdidos.",
       "cost": 1,
       "move": 16,
-      "damage": "6d10 + 8 Contundente",
+      "damage": "6d10 + 9 Contundente",
       "range": "1",
       "bonus": "+15+4d6",
       "tags": [
@@ -97,7 +97,7 @@
     {
       "name": "Aliento Ácido",
       "area": "Cono Grande",
-      "damage": "6d10 + 8 Ácido",
+      "damage": "6d10 + 9 Ácido",
       "bonus": "+15+4d6",
       "desc": "Rompe las armaduras de todos los objetivos en la zona afectada y la llena de ácido, haciéndola terreno difícil que Enferma a los objetivos ahí además de cubrirlos de ácido (deben superar un tiro de Voluntad contra +15+3d6 para evitarlo). ",
       "tags": [
@@ -113,7 +113,7 @@
       "cost": 2,
       "bonus": "+15+4d6",
       "area": "Cono Grande",
-      "damage": "6d10 + 8 Fuego/Necrótico"
+      "damage": "6d10 + 9 Fuego y 5d10 Necrótico"
     }
   ],
   "reactions": [
@@ -124,7 +124,7 @@
         "Defensiva"
       ],
       "cost": 1,
-      "desc": "Un atacante cuerpo a cuerpo sufre 3d10 + 8 daño Ácido y su arma quedará rota. Queda además cubierto de ácido hasta que lo elimine, lo cual cuesta una Acción."
+      "desc": "Un atacante cuerpo a cuerpo sufre 3d10 + 9 daño Ácido y su arma quedará rota. Queda además cubierto de ácido hasta que lo elimine, lo cual cuesta una Acción."
     },
     {
       "name": "Regeneración",
