@@ -1,0 +1,160 @@
+{
+  "id": "kurungor",
+  "name": "Kurungor",
+  "type": "Abisal",
+  "size": "Gigante",
+  "level": 17,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+15+3d6",
+    "VOL": "+15+3d6",
+    "MEN": "+15"
+  },
+  "umbrales": [
+    {
+      "value": 42,
+      "categories": "Necrótico"
+    },
+    {
+      "value": 36,
+      "categories": "Físico, Ácido, Fuego, Frío"
+    },
+    {
+      "value": 30,
+      "categories": "Mágico, Plata Celestial"
+    },
+    {
+      "value": 24,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 18,
+      "categories": "Interno"
+    }
+  ],
+  "immune": [
+    "Mentales",
+    "Miedo",
+    "Aflicciones",
+    "Ilusiones",
+    "Ilusiones"
+  ],
+  "senses": "Visión Verdadera",
+  "speed": "Paso 10, Vuelo 16",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mordisco",
+      "desc": "El objetivo está Enredado (FÍS +15+3d6 para escapar). Este ataque eliminará un contador de escudo y provocará el efecto Roto I a la armadura del objetivo.",
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "cost": 1,
+      "bonus": "+15+4d6",
+      "range": "Corto",
+      "damage": "5d10 + 9 Perforante y 5d10 Ácido"
+    },
+    {
+      "name": "Garras",
+      "desc": "",
+      "cost": 1,
+      "attacks": 2,
+      "bonus": "+15+4d6",
+      "range": "Corto",
+      "damage": "4d10 + 9 Cortante y 5d10 Ácido",
+      "area": "Radio corto"
+    },
+    {
+      "name": "Carga Arrolladora",
+      "move": 10,
+      "area": "Cada enemigo en su camino",
+      "damage": "6d10 + 9 Contundente",
+      "cost": 1,
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "desc": "Los afectados tiran VOL +15+3d6 o quedan Aturdidos. Destruye cada estructura en su camino",
+      "ability_id": "carga-arrolladora_1788189184656"
+    },
+    {
+      "tags": [
+        "Miedo",
+        "Mental"
+      ],
+      "area": "Radio grande",
+      "save": "MEN +15+3d6",
+      "desc": "Provoca Miedo I objetivos de nivel 17 o menos, Miedo II a los de nivel 14 o menos, Miedo III a los de nivel 11 o menos y Miedo IV a los de nivel 8 o menos. Aquellos que tengan éxito no pueden volver a ser afectados.",
+      "attacks": 1,
+      "damage": "5d10 + 9 Psíquico",
+      "name": "Presencia Enloquecedora",
+      "cost": 2,
+      "ability_id": "presencia-enloquecedora_1788189183314"
+    },
+    {
+      "name": "Partir Montañas",
+      "damage": "7d10 + 9 Cortante",
+      "area": "Cono grande",
+      "desc": "Destruye todas las estructuras, muros y escudos que tengan los objetivos",
+      "cost": 2,
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "partir-montanas_1788189181312"
+    },
+    {
+      "desc": "El daño de este ataque no puede se sanado. Cada objetivo que mate mutará hasta transformase en un Abisal de nivel 8 o menos bajo su control.",
+      "name": "Miasma de Corrupción",
+      "tags": [
+        "Aficcion",
+        "Necrotico",
+        "Abisal",
+        "Gaseoso"
+      ],
+      "cost": 2,
+      "save": "VOL +15+3d6",
+      "damage": "5d10 + 9 Ácido"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Golpe por Golpe",
+      "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
+      "ability_id": "golpe-por-golpe_1788189327012"
+    },
+    {
+      "name": "Piel de Hierro",
+      "desc": "Reduce el daño de un ataque recibido por 32. Si reduce el daño a 0, rompe el arma del atacante. ",
+      "cost": 1,
+      "tags": [
+        "Muro"
+      ]
+    },
+    {
+      "name": "Regeneración Rápida",
+      "desc": "Recupera un impacto o se cura de un efecto de estado.",
+      "cost": 1,
+      "tags": [
+        "Sanacion"
+      ]
+    },
+    {
+      "desc": "Obtiene +10 en un tiro de salvación contra un hechizo, o un objetivo a distancia corta debe tirar MEN +15+3d6 o no podrá emplear hechizos como reacciones defensivas.",
+      "cost": 1,
+      "name": "Aura del Caos",
+      "tags": [
+        "Abisal"
+      ],
+      "ability_id": "aura-del-caos_1784290282931"
+    }
+  ],
+  "lore": "",
+  "tags": []
+}

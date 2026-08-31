@@ -142,5 +142,14 @@
     "size": "Pequeño",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "kurungor",
+    "name": "Kurungor",
+    "type": "Abisal",
+    "level": 17,
+    "size": "Gigante",
+    "image": "",
+    "description": ""
   }
 ]
