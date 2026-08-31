@@ -52,7 +52,7 @@
       "bonus": "+15+4d6",
       "range": "Corto",
       "area": "Arco Corto",
-      "damage": "5d10 + 9 Cortante",
+      "damage": "5d10 + 9 Cortante  y 5d10 Ácido",
       "tags": [
         "Ataque",
         "Fisico"
