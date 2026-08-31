@@ -1,0 +1,156 @@
+{
+  "id": "tirano_sombrio",
+  "name": "Tirano Sombrío",
+  "type": "Abisal",
+  "size": "Mediano",
+  "level": 20,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+17+4d6",
+    "VOL": "+17+3d6",
+    "MEN": "+17+4d6"
+  },
+  "umbrales": [
+    {
+      "value": 49,
+      "categories": "Necrótico, Frío"
+    },
+    {
+      "value": 42,
+      "categories": "Ácido, Fuego"
+    },
+    {
+      "value": 35,
+      "categories": "Mágico, Físico"
+    },
+    {
+      "value": 28,
+      "categories": "General, Radiante, Plata Celestial"
+    },
+    {
+      "value": 21,
+      "categories": "Interno"
+    }
+  ],
+  "immune": [],
+  "senses": "Visión Verdadera",
+  "speed": "Paso 10, Vuelo 16",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Secuencia de Puñaladas",
+      "desc": "El daño necrótico reducirá impactos máximos. ",
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "cost": 1,
+      "attacks": 2,
+      "damage": "4d10 + 10 Perforante y 6d10 Necrótico",
+      "bonus": "+17+5d6",
+      "range": "Adyacente"
+    },
+    {
+      "name": "Furia de Shade",
+      "desc": "El área afectada se llena de oscuridad mágica y el daño de este ataque reducirá impactos máximos.",
+      "cost": 2,
+      "tags": [
+        "Area",
+        "Sombra"
+      ],
+      "damage": "6d10 + 10 Necrótico",
+      "area": "Cono grande",
+      "bonus": "+17+5d6"
+    },
+    {
+      "name": "Masacre",
+      "cost": 2,
+      "damage": "7d10 + 10 Cortante y 6d10 Necrótico",
+      "area": "Radio grande",
+      "desc": "Puede aparecer en cualquier punto del área afectada.",
+      "bonus": "+17+5d6",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Area"
+      ]
+    },
+    {
+      "name": "Impacto Mortal",
+      "desc": "El objetivo tiene Desventaja en su tiro defensivo. Si impacta, tira VOL +17+4d6 o sufre un impacto automático y Herido III. Este efecto puede activarse con retraso.",
+      "cost": 2,
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "move": 16,
+      "bonus": "+17+5d6",
+      "damage": "7d10 + 10 Perforante y 6d10 Necrótico"
+    },
+    {
+      "name": "Titiritero Sombrío",
+      "desc": "El objetivo queda Enredado y bajo su control durante una ronda. Si le obliga a seguir una acción suicida, puede repetir el tiro.",
+      "save": "FÍS +17+4d6",
+      "range": "Medio",
+      "cost": 1,
+      "tags": [
+        "Sombra"
+      ]
+    },
+    {
+      "name": "Oscuridad Enloquecedora",
+      "cost": 2,
+      "tags": [
+        "Mental",
+        "Sombra"
+      ],
+      "save": "MEN +17+4d6",
+      "desc": "El área afectada se llena de oscuridad mágica y los afectados sufren Miedo II o Confundido II",
+      "area": "Radio o Cono medio",
+      "damage": "5d10 + 10 Psíquico"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva / Parada",
+      "desc": "",
+      "bonus": "+17+5d6"
+    },
+    {
+      "desc": "Un ataque dirigdo directamente a él impacta en su lugar a un clon sombrío. Puede aparecer en cualquier localización a distancia lejana del clon.",
+      "name": "Clon Sombrío",
+      "tags": [
+        "Sombra"
+      ],
+      "cost": 1
+    },
+    {
+      "name": "Regeneración Sombría",
+      "desc": "Recupera un impacto o se cura de un efecto de estado. No puede emplear esta habilidad si está en un área llena de luz.",
+      "cost": 1,
+      "tags": [
+        "Sombra"
+      ]
+    },
+    {
+      "tags": [
+        "Sombra"
+      ],
+      "cost": 1,
+      "name": "Lo He Visto Antes",
+      "desc": "Obtiene +10 en un tiro de salvación o defensa contra un efecto que un enemigo ya haya usado contra él"
+    },
+    {
+      "name": "Forma Sombría",
+      "cost": 1,
+      "desc": "Se vuelve Incorpóreo e Invisible hasta final de ronda o haga un ataque que no sea de Magia Sombría. No será detectado como un ser vivo en este estado"
+    }
+  ],
+  "lore": "",
+  "tags": []
+}

@@ -151,5 +151,14 @@
     "size": "Gigante",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "tirano_sombrio",
+    "name": "Tirano Sombrío",
+    "type": "Abisal",
+    "level": 20,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
