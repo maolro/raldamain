@@ -97,7 +97,7 @@
     {
       "cost": 1,
       "name": "Milagro de Sanación",
-      "desc": "Un objetivo recupera tres impactos y se cura de todos los efectos de estado que tenga. "
+      "desc": "Un objetivo recupera tres impactos y se cura de todos los efectos de estado que tenga, o Resucita a un objetivo que se haya muerto hace menos de una hora. "
     }
   ],
   "reactions": [
