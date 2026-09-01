@@ -1,0 +1,132 @@
+{
+  "id": "empireo",
+  "name": "Empíreo",
+  "type": "Celestial",
+  "size": "Mediano",
+  "level": 20,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+17+4d6",
+    "VOL": "+17+4d6",
+    "MEN": "+17+3d6"
+  },
+  "umbrales": [
+    {
+      "value": 49,
+      "categories": "Radiante, Fuego"
+    },
+    {
+      "value": 42,
+      "categories": "Frío, Necrótico"
+    },
+    {
+      "value": 35,
+      "categories": "Físico, Mágico"
+    },
+    {
+      "value": 28,
+      "categories": "General, Abisal"
+    },
+    {
+      "value": 21,
+      "categories": "Interno"
+    }
+  ],
+  "immune": [
+    "Mentales",
+    "Miedo",
+    "Aflicciones"
+  ],
+  "senses": "",
+  "speed": "",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Arma Celestial",
+      "desc": "",
+      "attacks": 2,
+      "cost": 1,
+      "tags": [
+        "Ataque",
+        "Fisico"
+      ],
+      "damage": "5d10 + 10 Cortante/Perforante y 6d10 Radiante",
+      "bonus": "+17+5d6",
+      "range": "Cercano"
+    },
+    {
+      "name": "Explosión Solar",
+      "bonus": "+17+5d6",
+      "damage": "7d10 + 10 Radiante",
+      "desc": "Cura un impacto a todos sus aliados en el área afectada",
+      "cost": 2
+    },
+    {
+      "name": "Inspirar Leyenda",
+      "desc": "Todos sus aliados a distancia media recuperan un impacto y hacen un ataque inmediato con Ventaja. Sus enemigos de menor nivel tiran VOL +17+4d6 o sufren Miedo II",
+      "cost": 2
+    },
+    {
+      "name": "Azote Ejecutor",
+      "desc": "Elimina todos los muros y contadores de escudo que tenga el objetivo. Si impacta a un Extraplanario o No-Muerto de menor nivel, tira VOL +17+4d6 o muere instantáneamente. Si es de nivel igual o mayor, sufre 6d10 + 10 daño Radiante si fracasa.",
+      "damage": "7d10 + 10 Cortante/Perforante y 6d10 Radiante",
+      "cost": 2,
+      "bonus": "+17+5d6",
+      "range": "Cercano"
+    },
+    {
+      "desc": "Si impacta a un objetivo volador, tira FÍS +17+4d6 o cae al suelo.",
+      "name": "Tajo Aéreo",
+      "cost": 1,
+      "area": "Columna Media",
+      "damage": "6d10 + 10 Cortante/Perforante y 6d10 Radiante",
+      "move": 16
+    },
+    {
+      "desc": "Los afectados quedan Aturdidos una ronda. Si afecta a Extraplanarios de nivel 14 o menos, estos serán exiliados de inmediato.",
+      "cost": 2,
+      "name": "Palabra Divina",
+      "save": "VOL +17+4d6",
+      "damage": "6d10 + 10 Sónico"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Vínculo Vital",
+      "desc": "Absorbe la mitad de los impactos destinados a un aliado a distancia media",
+      "tags": [
+        "Vida"
+      ],
+      "cost": 1
+    },
+    {
+      "name": "Sanación Superior",
+      "desc": "Recupera un impacto y se cura de todos sus efectos de estado",
+      "cost": 1,
+      "tags": [
+        "Vida"
+      ]
+    },
+    {
+      "name": "Indómito",
+      "desc": "Obtiene +10 en un tiro de salvación",
+      "cost": 1,
+      "ability_id": "indomito_1788251108371"
+    },
+    {
+      "name": "Muro de Luz",
+      "cost": 1,
+      "tags": [
+        "Vida"
+      ],
+      "desc": "Reduce el daño recibido a él y sus aliados cercanos por 18. Si se defiende contra un ataque cuerpo a cuerpo, el atacante tira VOL +17+4d6 o sufre 4d10 + 10 daño Radiante."
+    }
+  ],
+  "lore": "",
+  "tags": []
+}

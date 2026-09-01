@@ -160,5 +160,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "empireo",
+    "name": "Empíreo",
+    "type": "Celestial",
+    "level": 20,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
