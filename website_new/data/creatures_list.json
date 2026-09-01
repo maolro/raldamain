@@ -178,5 +178,14 @@
     "size": "Grande",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "titan_mitico",
+    "name": "Titán Mítico",
+    "type": "Humanoide",
+    "level": 23,
+    "size": "Gigante",
+    "image": "",
+    "description": ""
   }
 ]

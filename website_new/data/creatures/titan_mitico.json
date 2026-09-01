@@ -1,0 +1,120 @@
+{
+  "id": "titan_mitico",
+  "name": "Titán Mítico",
+  "type": "Humanoide",
+  "size": "Gigante",
+  "level": 23,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+19+5d6",
+    "VOL": "+19+5d6",
+    "MEN": "+19+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 56,
+      "categories": "Físico"
+    },
+    {
+      "value": 49,
+      "categories": "Mágico"
+    },
+    {
+      "value": 42,
+      "categories": "General"
+    },
+    {
+      "value": 35,
+      "categories": "Interno"
+    }
+  ],
+  "immune": [
+    "Mental",
+    "Miedo",
+    "Aflicciones"
+  ],
+  "senses": "",
+  "speed": "Paso 24",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [
+    {
+      "name": "Mítico",
+      "desc": "Esta criatura cuenta como Mítica para los propósitos de Resistencias e Inmunidades"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Martillo del Titán",
+      "cost": 1,
+      "attacks": 2,
+      "bonus": "+19+5d6",
+      "area": "Radio medio",
+      "range": "Cercano",
+      "damage": "6d12 + 11 Contundente"
+    },
+    {
+      "name": "Carga Arrolladora",
+      "desc": "Destruye todas las estructuras a su paso. El objetivo tira VOL +19+4d6 o sufre Aturdido I, 6d12 daño Fuerza y es lanzado por los aires, cayendo al suelo.",
+      "cost": 1,
+      "move": 24,
+      "damage": "7d12 + 11 Contundente",
+      "bonus": "+19+5d6"
+    },
+    {
+      "name": "Partir Montañas",
+      "cost": 2,
+      "damage": "8d12 + 11 Cortante",
+      "area": "Cono Grande",
+      "bonus": "+19+5d6",
+      "desc": "Elimina todos los muros, contadores de escudo y estructuras a su paso. Aquellos cerca de estructuras tiran FÍS +19+4d6 o caen al suelo, sufren 6d12 daño Fuerza y son Enredados por escombros"
+    },
+    {
+      "name": "Liderazgo Mítico",
+      "cost": 2,
+      "desc": "Sus aliados hacen un ataque inmediato con Ventaja, y sus enemigos de menor nivel tiran VOL +19+4d6 o sufren Miedo II (III si son no-míticos)"
+    },
+    {
+      "name": "Agarre Aplastador",
+      "desc": "El objetivo tira FÍS +19+4d6 o queda Enredado y sufre 6d12 daño Fuerza. Este ataque romperá su armadura y todos sus contadores de escudo",
+      "cost": 1,
+      "damage": "7d12 + 11 Contundente",
+      "range": "Medio"
+    },
+    {
+      "name": "Calamidad",
+      "cost": 2,
+      "area": "Radio grande",
+      "desc": "Provoca un desastre natural, desafiando un control de dominio con +19+4d6",
+      "bonus": "+19+5d6",
+      "damage": "7d12 + 11 Fuego/Eléctrico/Sónico"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Resiliencia",
+      "desc": "Reduce la cantidad de impactos recibidos a la mitad redondeando hacia abajo",
+      "cost": 1
+    },
+    {
+      "name": "Golpe por Golpe",
+      "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto",
+      "cost": 1
+    },
+    {
+      "name": "Regeneración",
+      "desc": "Recupera un impacto y se cura de todos los efectos de estado que tenga activos",
+      "cost": 1
+    },
+    {
+      "name": "Indómito",
+      "desc": "Obtiene +10 en un tiro de salvación. Si se está defendiendo de un efecto no-mítico, tendrá éxito automático contra él",
+      "cost": 1
+    }
+  ],
+  "lore": "",
+  "tags": []
+}
