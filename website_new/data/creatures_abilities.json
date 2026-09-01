@@ -871,5 +871,12 @@
     "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
     "id": "golpe-por-golpe_1788189327012",
     "type": "reaction"
+  },
+  {
+    "name": "Indómito",
+    "desc": "Obtiene +10 en un tiro de salvación",
+    "cost": 1,
+    "id": "indomito_1788251108371",
+    "type": "reaction"
   }
 ]

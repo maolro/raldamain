@@ -1,0 +1,127 @@
+{
+  "id": "fenix_mitico",
+  "name": "Fénix Mítico",
+  "type": "Espíritu",
+  "size": "Grande",
+  "level": 23,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+19+4d6",
+    "VOL": "+19+4d6",
+    "MEN": "+19+3d6"
+  },
+  "umbrales": [
+    {
+      "value": 56,
+      "categories": "Radiante, Fuego"
+    },
+    {
+      "value": 49,
+      "categories": "Frío, Necrótico, Eléctrico"
+    },
+    {
+      "value": 42,
+      "categories": "Físico, Mágico"
+    },
+    {
+      "value": 35,
+      "categories": "General"
+    },
+    {
+      "value": 28,
+      "categories": "Interno"
+    }
+  ],
+  "immune": [
+    "Mentales",
+    "Miedo",
+    "Aflicciones",
+    "Ilusiones",
+    "Ilusiones"
+  ],
+  "senses": "Visión Verdadera",
+  "speed": "Paso 10, Vuelo 16",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [
+    {
+      "name": "Mítico",
+      "desc": "Esta criatura y todas sus habilidades cuentan como Míticas para los propósitos de Resistencias e Inmunidades. "
+    }
+  ],
+  "actions": [
+    {
+      "name": "Garras",
+      "desc": "",
+      "cost": 1,
+      "attacks": 2,
+      "bonus": "+19+5d6",
+      "range": "Medio",
+      "area": "Radio Corto",
+      "damage": "5d12 + 11 Cortante y 6d12 Fuego"
+    },
+    {
+      "name": "Rayo de Plasma",
+      "desc": "",
+      "cost": 1,
+      "attacks": 2,
+      "range": "Lejano",
+      "area": "Línea media",
+      "bonus": "+19+5d6",
+      "damage": "5d12 + 11 Radiante"
+    },
+    {
+      "name": "Fuente de Toda la Vida",
+      "cost": 2,
+      "desc": "Cura un impacto a todos los aliados. Activa Expansión de Dominio y elimina efectos Necróticos en el área. Mientras permanezca en dominio, cada criatura se cura un impacto al principio de su turno y cada no-muerto tira VOL +19+4d6 o sufre 5d12 + 11 Radiante.",
+      "damage": "6d12 + 11 Radiante"
+    },
+    {
+      "name": "Lluvia de Brasas",
+      "desc": "Quema todos los objetos en el área afectada.",
+      "attacks": 2,
+      "cost": 2,
+      "area": "Radio Grande",
+      "damage": "6d12 + 11 Fuego"
+    },
+    {
+      "name": "Canto de la Perdición",
+      "desc": "Provoca Aturdido II. Los afectados tiran MEN +19+4d6 o sufren 6d12 daño Psíquico y su elección entre Miedo II o Confundido II. Repiten cada ronda.",
+      "cost": 2,
+      "save": "VOL +19+4d6",
+      "damage": "6d12 + 11 Sónico"
+    },
+    {
+      "cost": 1,
+      "name": "Milagro de Sanación",
+      "desc": "Un objetivo recupera tres impactos y se cura de todos los efectos de estado que tenga. "
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Aura Protectora",
+      "desc": "Suma +10 a un tiro de salvación. Si el efecto no es mítico, tendrá éxito automático en él.",
+      "cost": 1
+    },
+    {
+      "name": "Muro de Llamas",
+      "cost": 1,
+      "desc": "Reduce el daño recibido por 24. Si es atacado por un ataque cuerpo a cuerpo, el atacante tira FÍS +19+4d6 o sufre 5d12 + 11 Fuego."
+    },
+    {
+      "cost": 1,
+      "desc": "Él y hasta tres aliados vinculados se curan un impacto y se recuperan de todos los efectos de estado que tenga. ",
+      "name": "Transferencia VItal"
+    },
+    {
+      "name": "Forma de Fuego",
+      "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de reducir su Umbral de Daño al agua por 7. Solo podrá emplear efectos de Fuego en esta forma y puede salir antes si lo desea",
+      "cost": 1
+    }
+  ],
+  "lore": "",
+  "tags": []
+}

@@ -169,5 +169,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "fenix_mitico",
+    "name": "Fénix Mítico",
+    "type": "Espíritu",
+    "level": 23,
+    "size": "Grande",
+    "image": "",
+    "description": ""
   }
 ]
