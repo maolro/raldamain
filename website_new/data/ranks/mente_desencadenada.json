@@ -71,7 +71,17 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Mientras dure el estado Mente Desencadenada, puedes lanzar 2 hechizos de Rango I (Arcano u Ocultismo) usando INT + Rango. Aprendes 1 hechizo nuevo cada vez que subes de rango."
+          "desc": "Mientras dure el estado Mente Desencadenada, puedes lanzar 2 hechizos de Rango I (Arcano u Ocultismo) usando INT + Rango. Aprendes 1 hechizo nuevo cada vez que subes de rango.",
+          "spell_grants": [
+            {
+              "count": "RANGO",
+              "spell_rank": 1,
+              "sources": [
+                "cat:Arcano",
+                "cat:Ocultismo"
+              ]
+            }
+          ]
         }
       ]
     },

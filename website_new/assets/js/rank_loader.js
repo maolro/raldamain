@@ -179,6 +179,7 @@ function renderRankPage(data) {
                         ${ability.duration ? `<div class="stat-pill">Duración: <span>${ability.duration}</span></div>` : ''}
                         ${(ability.umbrales || []).map(u => `<div class="stat-pill umbral-pill">Umbral ${u.categories || 'General'}: <span>+${formatRankValue(u.value)}</span></div>`).join('')}
                         ${ability.hits ? `<div class="stat-pill umbral-pill">Impactos: <span>+${formatRankValue(ability.hits)}</span></div>` : ''}
+                        ${(ability.spell_grants || []).map(g => `<div class="stat-pill umbral-pill">Hechizos: <span>${g.count} × Rango ≤ ${['','I','II','III','IV','V','VI'][g.spell_rank || 1]}${g.from_rank ? ' (desde Rango ' + ['','I','II','III','IV','V','VI'][g.from_rank] + ')' : ''}</span></div>`).join('')}
                         ${ability.condition ? `<div class="stat-pill umbral-pill">Solo con: <span>${ability.condition}</span></div>` : ''}
                         ${ability.talpoints ? `<div class="stat-pill umbral-pill">Talentos: <span>+${formatRankValue(ability.talpoints)}</span></div>` : ''}
                         ${(ability.adv_stats || []).length ? `<div class="stat-pill umbral-pill">+1d6 con: <span>${ability.adv_stats.join(', ')}</span></div>` : ''}

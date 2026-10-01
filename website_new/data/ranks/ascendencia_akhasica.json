@@ -35,7 +35,17 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a efectos Mentales. Aprendes cualquier idioma en 1 mes. Aprendes 2 hechizos (Mentales o Arcanos) de Rango I que usan INT y chi."
+          "desc": "Obtienes Resistencia a efectos Mentales. Aprendes cualquier idioma en 1 mes. Aprendes 2 hechizos (Mentales o Arcanos) de Rango I que usan INT y chi.",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "rank:magia_mental",
+                "cat:Arcano"
+              ]
+            }
+          ]
         }
       ]
     },

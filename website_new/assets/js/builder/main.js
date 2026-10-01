@@ -42,7 +42,9 @@ new Vue({
             bag: []
         },
         eqAtb: {},
-        myspells: {},
+        // Hechizos: higher entity (god / patron / spirit) and the spells picked per grant
+        patron: { name: '', domains: [], damage_type: '' },
+        spellPicks: {},      // grant key ("<ability id>#<n>") → [spell ability ids]
         divinepatrons: {},
         arcanespecs: {},
         races: {},
@@ -53,9 +55,7 @@ new Vue({
         noPersist: !!window.STATBLOCK_NO_PERSIST,
     },
     methods: {
-        updateMySpells(updatedMySpells) {
-            this.myspells = updatedMySpells;
-        },
+
         loadRanksFromWebsite: function () {
             const statNameMap = {
                 'Fuerza': 'str', 'Destreza': 'dex', 'Constitución': 'con',
@@ -133,6 +133,7 @@ new Vue({
                                             let allTags = (ability.tags || []).join(', ');
                                             vm.$set(vm.attributes, atbId, {
                                                 name: ability.name,
+                                                id: atbId,
                                                 type: type,
                                                 description: ability.desc || '',
                                                 rank: rankNum,
@@ -154,6 +155,7 @@ new Vue({
                                                 ...(ability.talpoints   !== undefined ? { talpoints:   ability.talpoints   } : {}),
                                                 ...(ability.replace_mod !== undefined ? { replace_mod: ability.replace_mod } : {}),
                                                 ...(ability.adv_stats   !== undefined ? { adv_stats:   ability.adv_stats   } : {}),
+                                                ...(ability.spell_grants !== undefined ? { spell_grants: ability.spell_grants } : {}),
                                                 ...(ability.reactions !== undefined ? { reactions: ability.reactions } : {}),
                                                 ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
                                 ...(ability.resistances     !== undefined ? { resistances:     ability.resistances     } : {}),
@@ -195,32 +197,6 @@ new Vue({
                                     }
                                 }
 
-                                // Spell grants for ascendencia ranks
-                                const ascSpells = {
-                                    'ascendencia_abisal': [
-                                        {rank: 2, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_abisal"},
-                                        {rank: 4, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_abisal"},
-                                        {rank: 6, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_abisal"}
-                                    ],
-                                    'ascendencia_infernal': [
-                                        {rank: 1, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_infernal"},
-                                        {rank: 3, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_infernal"},
-                                        {rank: 5, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_infernal"}
-                                    ],
-                                    'ascendencia_akhasica': [
-                                        {rank: 1, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_akhasica"},
-                                        {rank: 3, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_akhasica"},
-                                        {rank: 5, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_akhasica"}
-                                    ],
-                                    'ascendencia_primigenia': [
-                                        {rank: 2, "spell-lvl": 1, slots: 2, cat: "patron-domains", mod: "ascendencia_primigenia"},
-                                        {rank: 4, "spell-lvl": 2, slots: 2, cat: "patron-domains", mod: "ascendencia_primigenia"},
-                                        {rank: 6, "spell-lvl": 3, slots: 2, cat: "patron-domains", mod: "ascendencia_primigenia"}
-                                    ]
-                                };
-                                if (rankId in ascSpells) {
-                                    rankEntry.spells = ascSpells[rankId];
-                                }
 
                                 return { id: rankId, entry: rankEntry };
                             })
@@ -406,13 +382,18 @@ new Vue({
                 // Integrate damage boosts
                 if (obj.damage) {
                     const dmgBoosts = this.getDamageBoosts(obj);
-                    const boostedDice = dmgBoosts.length > 0 ? this.applyDiceBoosts(obj.damage, dmgBoosts) : obj.damage;
+                    const plain = dmgBoosts.filter(b => !b.type).map(b => b.dice);
+                    const boostedDice = plain.length > 0 ? this.applyDiceBoosts(obj.damage, plain) : obj.damage;
                     const typeStr = obj.damage_type ? ` ${obj.damage_type}` : '';
-                    const dmgLabel = `<b>${boostedDice}${typeStr} daño</b>`;
+                    const dmgLabel = `<b>${boostedDice}${typeStr} daño${this.typedDamageText(dmgBoosts)}</b>`;
                     desc = desc ? dmgLabel + ' — ' + desc : dmgLabel;
                 } else if (desc && /\d+d\d+(?:\s*[+\-]\s*\d+)?\s+daño/.test(desc)) {
                     const dmgBoosts = this.getDamageBoosts(obj);
-                    if (dmgBoosts.length > 0) desc = this.applyDamageBoosts(desc, dmgBoosts);
+                    const plain = dmgBoosts.filter(b => !b.type).map(b => b.dice);
+                    if (plain.length > 0) desc = this.applyDamageBoosts(desc, plain);
+                    const typed = this.typedDamageText(dmgBoosts);
+                    // "2d8 + 4 daño Cortante" → "2d8 + 4 daño Cortante + 1d6 daño Radiante"
+                    if (typed) desc = desc.replace(/(\d+d\d+(?:\s*[+\-]\s*\d+)*\s+daño(?:\s+[A-ZÁÉÍÓÚÑ][\wáéíóúñ]*)?)/, '$1' + typed);
                 }
                 if (desc) descParts.push(desc);
                 if (descParts.length > 0)
@@ -528,7 +509,7 @@ ${reactions}
                 stats: this.stats,
                 talents: this.mytalents,
                 ranks: this.myranks,
-                spells: this.myspells,
+                spells: { patron: this.patron, picks: this.spellPicks },
                 equipment: this.equipment,
                 archetypes: this.myarch,
             };
@@ -563,6 +544,29 @@ ${reactions}
                 }
             }
             return res;
+        },
+        // Rank ids a spell grant can draw from: "patron" (entity domains), "cat:Arcano", "rank:magia_mental"
+        spellSourceRanks(sources) {
+            const out = new Set();
+            for (const src of sources) {
+                if (src === 'patron') (this.patron.domains || []).forEach(d => out.add(d));
+                else if (src.startsWith('cat:')) {
+                    const cat = src.slice(4);
+                    Object.keys(this.ranks).forEach(r => { if (this.ranks[r].category === cat) out.add(r); });
+                }
+                else if (src.startsWith('rank:')) out.add(src.slice(5));
+                else out.add(src);
+            }
+            return [...out];
+        },
+        // "+(RANGO/3+1)d6" → "+1d6" at Rank I-II, "+2d6" at III-V, "+3d6" at VI (rounded down)
+        resolveDiceFormula(str, rk) {
+            if (!str) return str;
+            return String(str).replace(/\(([^()]*RANGO[^()]*)\)/gi, (m, expr) => {
+                const e = expr.replace(/RANGO/gi, rk || 0).replace(/[x×]/g, '*');
+                if (!/^[\d+\-*/ .]+$/.test(e)) return m;
+                try { return String(Math.max(0, Math.floor(Function('return (' + e + ')')()))); } catch (err) { return m; }
+            });
         },
         // Resolves a number or a rank formula ("RANGO+1") for the ability that owns it
         evalRankValue(value, owner) {
@@ -636,7 +640,9 @@ ${reactions}
             this.stats = character["stats"];
             this.mytalents = character["talents"];
             this.myranks = character["ranks"];
-            this.myspells = character["spells"];
+            const sp = character["spells"] || {};
+            this.patron = sp.patron ? { name: '', domains: [], damage_type: '', ...sp.patron } : { name: '', domains: [], damage_type: '' };
+            this.spellPicks = sp.picks || {};
             this.equipment = character["equipment"];
             this.myarch = character["archetypes"];
         },
@@ -655,7 +661,7 @@ ${reactions}
             if (t.adv_tags && t.adv_tags.length > 0) parts.push('+1d6 ' + t.adv_tags.join('/'));
             if (t.saves && t.saves.length > 0) parts.push('Salv: ' + t.saves.join(', '));
             if (t.adv_stats && t.adv_stats.length > 0) parts.push('+1d6 con ' + t.adv_stats.join('/'));
-            if (t.damage) parts.push('Daño: ' + t.damage);
+            if (t.damage) { const b = this.damageBoostOf(ab); parts.push('Daño: ' + b.dice + (b.type ? ' ' + b.type : '')); }
             if (t.umbrales && t.umbrales.length > 0)
                 parts.push('Umbral ' + t.umbrales.map(u => '+' + u.value + ' ' + (u.categories || 'General')).join(', '));
             if (t.hits) parts.push('+' + t.hits + ' Imp');
@@ -727,6 +733,15 @@ ${reactions}
                 const t = ab.toggle;
                 if (!t.damage) continue;
                 let applies = false;
+                // "Daño aplica a": explicit targets for the extra damage (+ = AND, list = OR)
+                if (t.damage_tags && t.damage_tags.length) {
+                    for (const group of t.damage_tags) {
+                        const required = group.split('+').map(s => s.trim().toLowerCase());
+                        if (required.every(r => tags.includes(r))) { applies = true; break; }
+                    }
+                    if (applies) boosts.push(this.damageBoostOf(ab));
+                    continue;
+                }
                 if (t.adv) {
                     for (const adv of t.adv) {
                         if (tags.includes(adv.toLowerCase())) { applies = true; break; }
@@ -746,9 +761,23 @@ ${reactions}
                         else if (t.adv.includes('Mental')   && ['itl', 'wis'].includes(mainStatKey))        applies = true;
                     }
                 }
-                if (applies) boosts.push(t.damage);
+                if (applies) boosts.push(this.damageBoostOf(ab));
             }
             return boosts;
+        },
+        // A toggle's extra damage: { dice: "+1d6" | "+1 dado", type: "Radiante" | null }
+        // type "PATRÓN" uses the higher entity's damage type (Hechizos tab)
+        damageBoostOf(ab) {
+            const t = ab.toggle;
+            const dice = this.resolveDiceFormula(t.damage, this.getRank(ab.skill) || ab.rank);
+            let type = (t.damage_type || '').trim() || null;
+            if (type && /^patr[oó]n$/i.test(type)) type = this.patron.damage_type || 'del patrón';
+            return { dice, type };
+        },
+        // " + 1d6 daño Radiante" for typed boosts (kept apart from the base dice)
+        typedDamageText(boosts) {
+            return boosts.filter(b => b.type)
+                .map(b => ` + ${String(b.dice).replace(/^\+\s*/, '')} daño ${b.type}`).join('');
         },
         // Resolves rank formulas written in ability text with the character's rank:
         // "Rango + 2", "tu Rango x 3", "(Rango + 1)", "Rango / 2" → the number
@@ -779,18 +808,19 @@ ${reactions}
                 'FUE': fs.str.value, 'DES': fs.dex.value, 'CON': fs.con.value,
                 'INT': fs.itl.value, 'SAB': fs.wis.value, 'CAR': fs.cha.value
             };
-            // Replace STAT1/STAT2 alternatives (pick max)
-            str = str.replace(/\b(FUE|DES|CON|INT|SAB|CAR)\/(FUE|DES|CON|INT|SAB|CAR)\b/g, (_, a, b) => {
-                const va = statMap[a], vb = statMap[b];
+            // Only inside formulas ("1d6 + CAR", "INT/SAB + Rango"); plain mentions such as
+            // "usan INT y chi" or "tiro de salvación de CON" keep the stat name.
+            // STAT1/STAT2 alternatives take the higher value.
+            const T = '(FUE|DES|CON|INT|SAB|CAR)';
+            const re = new RegExp(`(?<=[+\\-]\\s*)${T}(?:\\/${T})?\\b|\\b${T}(?:\\/${T})?(?=\\s*[+\\-]\\s*[\\dRr(])`, 'g');
+            return str.replace(re, (m, a1, b1, a2, b2) => {
+                const a = a1 || a2, b = b1 || b2;
+                const va = statMap[a], vb = b ? statMap[b] : undefined;
+                if (vb === undefined) return va === '-' ? '-' : String(va);
                 if (va === '-' && vb === '-') return '-';
                 if (va === '-') return String(vb);
                 if (vb === '-') return String(va);
                 return String(Math.max(va, vb));
-            });
-            // Replace individual stat tokens
-            return str.replace(/\b(FUE|DES|CON|INT|SAB|CAR)\b/g, (_, token) => {
-                const v = statMap[token];
-                return v === '-' ? '-' : String(v);
             });
         },
         // Stat keys (str/dex/…) of an "adv_stats" list like ["FUE", "SAB"]
@@ -1117,11 +1147,17 @@ ${reactions}
                         abSwitch(atb);
                 }
             }
-            //Add spells
-            for (let i in this.myspells) {
-                let atb = this.myspells[i];
-                if ("type" in atb)
+            //Add learned spells: cast with the granting rank (its stat and level)
+            for (const g of this.spellGrants) {
+                const picks = (this.spellPicks[g.key] || []).slice(0, g.count);
+                for (const sid of picks) {
+                    if (!sid || !(sid in this.attributes) || !g.optionIds.includes(sid)) continue;
+                    const sp = this.attributes[sid];
+                    const from = this.ranks[sp.skill] ? this.ranks[sp.skill].name : '';
+                    const atb = { ...sp, skill: g.ownerSkill, rank: this.getRank(g.ownerSkill), spell_from: from };
+                    atb.tags = [`Hechizo (${from})`, sp.tags].filter(Boolean).join(', ');
                     abSwitch(atb);
+                }
             }
             //Add rank abilities
             for (let key in this.myranks) {
@@ -1361,6 +1397,61 @@ ${reactions}
                 })
                 .join(', ');
         },
+        // Spells the character may learn, from "spell_grants" on owned rank abilities:
+        // [{ key, abilityName, ownerSkill, rankName, abilityRank, count, spellRank,
+        //    usesPatron, sourceText, groups: [{label, options:[{id,name,rank}]}], optionIds, optionCount }]
+        spellGrants: function () {
+            const res = [];
+            const seen = new Set();
+            for (const mr of this.myranks) {
+                if (!mr || !mr.id || !mr.rank || !(mr.id in this.ranks)) continue;
+                const rd = this.ranks[mr.id];
+                const level = this.getRank(mr.id);
+                for (const id of (rd.attributes || '').split(',').map(x => x.trim()).filter(Boolean)) {
+                    const ab = this.attributes[id];
+                    if (!ab || !ab.spell_grants || ab.rank > level || seen.has(id)) continue;
+                    seen.add(id);
+                    const owner = { ...ab, rank: level };
+                    ab.spell_grants.forEach((g, i) => {
+                        if (g.from_rank && level < g.from_rank) return;
+                        const count = Math.max(0, Math.floor(this.evalRankValue(g.count != null ? g.count : 1, owner)) || 0);
+                        if (!count) return;
+                        const sources = g.sources && g.sources.length ? g.sources : ['patron'];
+                        const spellRank = g.spell_rank || 1;
+                        const srcRanks = this.spellSourceRanks(sources);
+                        const groups = {};
+                        const optionIds = [];
+                        for (const aid in this.attributes) {
+                            const a = this.attributes[aid];
+                            if (!srcRanks.includes(a.skill) || a.rank > spellRank || a.type === 'Pasiva') continue;
+                            const label = this.ranks[a.skill] ? this.ranks[a.skill].name : a.skill;
+                            (groups[label] || (groups[label] = [])).push({ id: aid, name: a.name, rank: a.rank });
+                            optionIds.push(aid);
+                        }
+                        res.push({
+                            key: `${id}#${i}`,
+                            abilityName: ab.name,
+                            ownerSkill: ab.skill,
+                            rankName: rd.name,
+                            abilityRank: ab.rank,
+                            count, spellRank,
+                            usesPatron: sources.includes('patron'),
+                            sourceText: sources.map(src => src === 'patron' ? 'dominios de tu entidad'
+                                : src.startsWith('cat:') ? src.slice(4)
+                                : src.startsWith('rank:') ? (this.ranks[src.slice(5)] ? this.ranks[src.slice(5)].name : src.slice(5))
+                                : src).join(', '),
+                            groups: Object.keys(groups).sort().map(label => ({
+                                label,
+                                options: groups[label].sort((x, y) => x.rank - y.rank || x.name.localeCompare(y.name)),
+                            })),
+                            optionIds,
+                            optionCount: optionIds.length,
+                        });
+                    });
+                }
+            }
+            return res;
+        },
         // Every ability the character has (passive, actions and reactions)
         allAbilities: function () {
             return [...this.myatb.passive, ...this.myatb.actions, ...this.myatb.reactions];
@@ -1425,7 +1516,7 @@ ${reactions}
                 }
                 if (t.resistances) t.resistances.forEach(r => { if (!buffs.resistances.includes(r)) buffs.resistances.push(r); });
                 if (t.immunities) t.immunities.forEach(r => { if (!buffs.immunities.includes(r)) buffs.immunities.push(r); });
-                if (t.damage) buffs.damage.push(t.damage);
+                if (t.damage) { const b = this.damageBoostOf(ab); buffs.damage.push(b.dice + (b.type ? ' ' + b.type : '')); }
             }
             return buffs;
         },

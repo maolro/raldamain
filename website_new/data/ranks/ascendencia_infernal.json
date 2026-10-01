@@ -36,7 +36,16 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Estableces un pacto con fuerzas infernales. Aprendes dos hechizos de Rango I (Arcana, Elemental u Ocultismo) relacionados con tu patrón. Usan chi y tu bonificador de CAR + Rango. [AVISO AUTOR: La descripción original dice 'Usan chi en lugar de chi', lo cual es redundante. Verificar si debería decir 'usan chi en lugar de otra reserva'.]"
+          "desc": "Estableces un pacto con fuerzas infernales. Aprendes dos hechizos de Rango I (Arcana, Elemental u Ocultismo) relacionados con tu patrón. Usan chi y tu bonificador de CAR + Rango. [AVISO AUTOR: La descripción original dice 'Usan chi en lugar de chi', lo cual es redundante. Verificar si debería decir 'usan chi en lugar de otra reserva'.]",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ]
+            }
+          ]
         }
       ]
     },

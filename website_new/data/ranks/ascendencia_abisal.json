@@ -84,7 +84,16 @@
             "Pasiva"
           ],
           "range": "Medio",
-          "desc": "Obtienes vista ciega y detectas magia a distancia media. Aprendes 2 hechizos abisales de Rango I que puedes lanzar gastando chi."
+          "desc": "Obtienes vista ciega y detectas magia a distancia media. Aprendes 2 hechizos abisales de Rango I que puedes lanzar gastando chi.",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ]
+            }
+          ]
         }
       ]
     },

@@ -183,6 +183,35 @@
 /* Combat stats grid, Umbrales, etc. → assets/css/statblock.css */
 
 /* ============================================
+   HECHIZOS tab
+   ============================================ */
+.spell-page .spell-empty { color: var(--text-muted); font-style: italic; }
+.spell-box {
+    border: 1px solid #333;
+    border-left: 3px solid var(--accent-gold);
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+.spell-box-title { font-family: var(--font-heading); color: var(--accent-gold); font-size: 1.05rem; margin-bottom: 0.2rem; }
+.spell-box-title small { color: var(--text-muted); font-family: var(--font-body); font-size: 0.8rem; margin-left: 6px; }
+.spell-hint { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.5rem; }
+.spell-warn { color: #f0a060; font-size: 0.85rem; }
+.spell-sub { font-weight: bold; font-size: 0.85rem; margin-bottom: 0.35rem; }
+.spell-count { font-weight: normal; font-size: 0.75rem; margin-left: 6px; padding: 0 6px; border-radius: 3px; }
+.spell-count.ok { color: #6fc98a; border: 1px solid #3a6; }
+.spell-count.low { color: #f0a060; border: 1px solid #a64; }
+.domain-grid { display: flex; flex-wrap: wrap; gap: 5px; }
+.domain-chip { display: inline-flex; align-items: center; gap: 5px; margin: 0; padding: 2px 9px; border: 1px solid #444; border-radius: 4px; font-size: 0.82rem; cursor: pointer; }
+.domain-chip small { color: var(--text-muted); font-size: 0.7rem; }
+.domain-chip.on { border-color: var(--accent-gold); background: rgba(255, 242, 0, 0.07); }
+.domain-chip.off { opacity: 0.45; cursor: not-allowed; }
+.domain-chip input { accent-color: var(--accent-gold); }
+.spell-slot { margin-bottom: 0.5rem; }
+.spell-desc { font-size: 0.78rem; color: var(--text-muted); margin-top: 3px; padding-left: 4px; border-left: 2px solid #444; }
+
+/* ============================================
    MINUSPLUSFIELD (dark theme)
    ============================================ */
 

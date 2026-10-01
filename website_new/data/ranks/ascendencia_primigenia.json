@@ -76,7 +76,32 @@
             "Pasiva"
           ],
           "range": "Medio",
-          "desc": "Detectas la presencia de magia y de seres espirituales a distancia media. Aprendes 2 hechizos de Rango I o menos relacionados con tu patrón espiritual (usan chi). A Rango IV aprendes 2 hechizos adicionales de Rango II o menos, y a Rango VI aprendes 2 hechizos adicionales de Rango III o menos."
+          "desc": "Detectas la presencia de magia y de seres espirituales a distancia media. Aprendes 2 hechizos de Rango I o menos relacionados con tu patrón espiritual (usan chi). A Rango IV aprendes 2 hechizos adicionales de Rango II o menos, y a Rango VI aprendes 2 hechizos adicionales de Rango III o menos.",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ]
+            },
+            {
+              "count": 2,
+              "spell_rank": 2,
+              "from_rank": 4,
+              "sources": [
+                "patron"
+              ]
+            },
+            {
+              "count": 2,
+              "spell_rank": 3,
+              "from_rank": 6,
+              "sources": [
+                "patron"
+              ]
+            }
+          ]
         }
       ]
     },

@@ -1,281 +1,131 @@
+// =============================================
+// HECHIZOS — spells learned through rank abilities
+// Grants come from the rank data ("spell_grants" on an ability, edited in the rank
+// editor); main.js turns them into $root.spellGrants. Picks live in $root.spellPicks,
+// the higher entity (name, 3-5 domains, damage type) in $root.patron.
+// =============================================
+
+const MAX_DOMAINS = 5;
+const MIN_DOMAINS = 3;
+const ROMAN_NUM = ['', 'I', 'II', 'III', 'IV', 'V', 'VI'];
+
 Vue.component('v-spellpage', {
     template: `
-<div class="spell-page" style="height: 400px; max-height: 400px; overflow-y: auto; overflow-x: hidden;">
-    <div class="row my-2 justify-content-center">
-        <h2>Hechizos</h2>
-    </div>
-    <!-- Divine Patron Selection -->
-    <div v-if="showDivinePatron" class="row my-2 justify-content-around">
-        <b> Patrón Divino: </b>
-        <v-select-search v-bind:optionsobj="divpatrons"
-        v-on:selected-key="setDivinePatron($event)"></v-select-search>
-    </div>
+    <div class="spell-page">
+        <h3 class="section-header">Hechizos</h3>
 
-    <!-- Arcane Specialization Selection -->
-    <div v-if="showArcaneSpecialization" class="form-group">
-        <b> Especialización Arcana: </b>
-        <v-select-search v-bind:optionsobj="arcspecs"
-        v-on:selected-key="setArcaneSpec($event)"></v-select-search>
-    </div>
+        <p v-if="!r.spellGrants.length" class="spell-empty">
+            Ningún rango de tu personaje otorga hechizos todavía
+            (por ejemplo Guerrero Divino I, Ascendencia Akhásica I o Ascendencia Abisal II).
+        </p>
 
-    <!-- Patron Domains Selection -->
-    <div v-if="showPatronDomains" class="mb-3">
-        <b>Dominios del Patrón (elige 3):</b>
-        <div v-for="idx in 3" :key="'dom'+idx" class="my-1">
-            <v-select-search v-bind:optionsobj="domainOptions"
-            v-on:selected-key="setPatronDomain($event, idx - 1)"></v-select-search>
+        <!-- Higher entity: god, patron or spirit -->
+        <div v-if="needsPatron" class="spell-box">
+            <h4 class="spell-box-title">Entidad superior</h4>
+            <p class="spell-hint">Dios, patrón o espíritu del que provienen tus hechizos. Sus dominios son las ramas de magia que puedes aprender.</p>
+            <input type="text" class="form-control form-control-sm mb-2" placeholder="Nombre de la entidad"
+                :value="r.patron.name" @input="r.patron.name = $event.target.value">
+            <div class="spell-sub">
+                Dominios
+                <span :class="['spell-count', domainState]">{{ r.patron.domains.length }} / {{ maxDomains }} · elige {{ minDomains }}-{{ maxDomains }}</span>
+            </div>
+            <div class="domain-grid">
+                <label v-for="d in domainOptions" :key="d.id"
+                    :class="['domain-chip', { on: r.patron.domains.includes(d.id), off: !r.patron.domains.includes(d.id) && r.patron.domains.length >= maxDomains }]">
+                    <input type="checkbox" :checked="r.patron.domains.includes(d.id)"
+                        :disabled="!r.patron.domains.includes(d.id) && r.patron.domains.length >= maxDomains"
+                        @change="toggleDomain(d.id)">
+                    {{ d.name }} <small>{{ d.category }}</small>
+                </label>
+            </div>
+            <div class="spell-sub mt-2">Tipo de daño de la entidad
+                <small class="spell-hint">(lo usan habilidades como Azote Divino)</small></div>
+            <select class="form-control form-control-sm" :value="r.patron.damage_type"
+                @change="r.patron.damage_type = $event.target.value">
+                <option value="">—</option>
+                <option v-for="t in damageTypes" :key="t" :value="t">{{ t }}</option>
+            </select>
         </div>
-    </div>
 
-    <!-- Dynamic Spell Level Sections -->
-    <div v-for="(value, key, rowIndex) in spellSections" v-if="value.slots > 0" class="mb-4">
-        <h3>{{ key }} ({{ value.slots }} ranuras)</h3>
-        <div v-for="(n, colIndex) in value.skill" class="mb-2">
-            <v-select-search v-bind:optionsobj="value.atb[colIndex]"
-            v-on:selected-key="addSpell($event, rowIndex, colIndex, n, key)"></v-select-search>
+        <!-- One box per grant -->
+        <div v-for="g in r.spellGrants" :key="g.key" class="spell-box">
+            <h4 class="spell-box-title">{{ g.abilityName }}
+                <small>{{ g.rankName }} {{ roman(g.abilityRank) }}</small></h4>
+            <p class="spell-hint">
+                {{ g.count }} hechizo{{ g.count === 1 ? '' : 's' }} de Rango {{ roman(g.spellRank) }} o menos
+                · {{ g.sourceText }} · se lanzan con tu modificador de {{ g.rankName }}
+            </p>
+            <p v-if="!g.optionCount" class="spell-warn">
+                {{ g.usesPatron && !r.patron.domains.length ? 'Elige los dominios de tu entidad superior para ver los hechizos disponibles.' : 'No hay hechizos disponibles con estas condiciones.' }}
+            </p>
+            <div v-else v-for="i in g.count" :key="g.key + '-' + i" class="spell-slot">
+                <select class="form-control form-control-sm" :value="pick(g.key, i - 1)"
+                    @change="setPick(g.key, i - 1, $event.target.value)">
+                    <option value="">— Elige un hechizo —</option>
+                    <optgroup v-for="grp in g.groups" :key="grp.label" :label="grp.label">
+                        <option v-for="o in grp.options" :key="o.id" :value="o.id"
+                            :disabled="takenElsewhere(g.key, i - 1, o.id)">{{ o.name }} ({{ roman(o.rank) }})</option>
+                    </optgroup>
+                </select>
+                <div v-if="pick(g.key, i - 1) && r.attributes[pick(g.key, i - 1)]" class="spell-desc">
+                    {{ short(r.attributes[pick(g.key, i - 1)].description) }}
+                </div>
+            </div>
         </div>
-    </div>
-  </div>
-    `,
-    props: {
-        myranks: {
-            type: Array,
-        },
-        myarch: {
-            type: Array,
-        },
-        attributes: {
-            type: Object
-        },
-        divpatrons: {
-            type: Object
-        },
-        arcspecs: {
-            type: Object
-        },
-        ranks: {
-            type: Object
-        },
-        race: {
-            type: Object
-        },
-        level: {
-            type: Number,
-        },
-        basespells:{
-            type: Object,
-            default: {}
-        }
-    },
+    </div>`,
     data: function () {
         return {
-            selectedDivinePatron: {},
-            selectedArcaneSpecialization: {},
-            selectedPatronDomains: [],
-            divineRanks: ["magia_divina", "guerrero_divino"],
-            ascendenciaRanks: ["ascendencia_abisal", "ascendencia_infernal",
-                "ascendencia_akhasica", "ascendencia_primigenia"],
-            myspells: { ...this.basespells }
+            maxDomains: MAX_DOMAINS,
+            minDomains: MIN_DOMAINS,
+            damageTypes: ['Fuego', 'Frío', 'Eléctrico', 'Ácido', 'Sónico', 'Radiante', 'Necrótico',
+                'Arcano', 'Cortante', 'Contundente', 'Perforante'],
         };
     },
     computed: {
-        showDivinePatron: function () {
-            for(let i in this.myarch)
-            {
-                let arc = this.myarch[i];
-                if("modranks" in arc && arc.modranks.some(modrank => this.divineRanks.includes(modrank)))
-                    return true;
-            }
-            return this.myranks.some(obj => this.divineRanks.includes(obj.id));
+        r: function () { return this.$root; },
+        needsPatron: function () { return this.r.spellGrants.some(g => g.usesPatron); },
+        domainState: function () {
+            const n = this.r.patron.domains.length;
+            return n >= MIN_DOMAINS && n <= MAX_DOMAINS ? 'ok' : 'low';
         },
-        showArcaneSpecialization: function () {
-            for(let i in this.myarch)
-            {
-                let arc = this.myarch[i];
-                if("modranks" in arc && arc.modranks.includes("magia_evocacion"))
-                    return true;
-            }
-            return this.myranks.some(obj => obj.id === "magia_evocacion")
-        },
-        showPatronDomains: function () {
-            for(let i in this.myarch)
-            {
-                let arc = this.myarch[i];
-                if("modranks" in arc && arc.modranks.some(modrank => this.ascendenciaRanks.includes(modrank)))
-                    return true;
-            }
-            return this.myranks.some(obj => this.ascendenciaRanks.includes(obj.id));
-        },
+        // Magic branches that can be a domain (ranks of the magic categories)
         domainOptions: function () {
-            let options = {};
-            const magicCategories = ["Elementalismo", "Arcano", "Ocultismo", "Divino"];
-            for (let key in this.ranks) {
-                if (this.ranks[key].category && magicCategories.includes(this.ranks[key].category)) {
-                    options[key] = { name: this.ranks[key].name };
-                }
-            }
-            return options;
-        },
-        spellSections: function () {
-            spellsect = {
-                "Rango I": { slots: 0, skill: [], atb: [], isFree: []},
-                "Rango II": { slots: 0, skill: [], atb: [], isFree: []},
-                "Rango III": { slots: 0, skill: [], atb: [], isFree: []},
-                "Rango IV": { slots: 0, skill: [], atb: [], isFree: []},
-                "Rango V": { slots: 0, skill: [], atb: [], isFree: []}
-            }
-            if(this.race.spells){
-                this.spellSwitcher(spellsect, this.level, this.race.spells, false)
-            }
-            this.myarch.forEach(arc => {
-                if (arc.spells) {
-                    this.spellSwitcher(spellsect, arc.rank, arc.spells, true)
-                }
-            });
-            this.myranks.forEach(rank => {
-                if (rank.spells) {
-                    this.spellSwitcher(spellsect, rank.rank, rank.spells, false)
-                }
-            });
-            return spellsect;
+            const magic = ['Elementalismo', 'Arcano', 'Ocultismo', 'Divino'];
+            return Object.keys(this.r.ranks)
+                .filter(id => magic.includes(this.r.ranks[id].category))
+                .map(id => ({ id, name: this.r.ranks[id].name, category: this.r.ranks[id].category }))
+                .sort((a, b) => a.name.localeCompare(b.name));
         },
     },
     methods: {
-        spellSwitcher(switchObj, rval, src, isFree){
-            src.forEach(spell => {
-                if (spell.rank <= rval) {
-                    switch (spell["spell-lvl"]) {
-                        case 1: key = "Rango I";
-                            break;
-                        case 2: key = "Rango II";
-                            break;
-                        case 3: key = "Rango III";
-                            break;
-                        case 4: key = "Rango IV";
-                            break;
-                        case 5: key = "Rango V";
-                            break;
-                    }
-                    for (let i = 0; i < spell.slots; i++) {
-                        switchObj[key].slots += 1;
-                        switchObj[key].skill.push(spell.mod);
-                        switchObj[key].atb.push(this.getSpellOptions(spell.cat, spell["spell-lvl"], this.attributes,
-                            this.selectedDivinePatron, this.selectedArcaneSpecialization));
-                        switchObj[key].isFree.push(isFree);
-                    }
-                }
-            })
+        roman: function (n) { return ROMAN_NUM[n] || String(n); },
+        short: function (t) {
+            const plain = String(t || '').replace(/\*\*/g, '').replace(/\n/g, ' ');
+            return plain.length > 180 ? plain.slice(0, 177) + '…' : plain;
         },
-        setDivinePatron(obj) {
-            this.selectedDivinePatron = { id: obj, ...this.divpatrons[obj] };
+        toggleDomain: function (id) {
+            const d = this.r.patron.domains;
+            const i = d.indexOf(id);
+            if (i >= 0) d.splice(i, 1);
+            else if (d.length < MAX_DOMAINS) d.push(id);
         },
-        setArcaneSpec(obj) {
-            this.selectedArcaneSpecialization = { id: obj, ...this.arcspecs[obj] };
+        pick: function (key, i) {
+            return (this.r.spellPicks[key] || [])[i] || '';
         },
-        setPatronDomain(key, index) {
-            this.$set(this.selectedPatronDomains, index, key);
+        setPick: function (key, i, value) {
+            const arr = (this.r.spellPicks[key] || []).slice();
+            arr[i] = value;
+            this.$set(this.r.spellPicks, key, arr);
         },
-        getSpellOptions(cat, level, atbList, divpatron, arcanespec) {
-            options = {};
-            avRanks = [];
-            if (cat === 'patron-domains') {
-                avRanks = this.selectedPatronDomains.filter(d => d);
-            }
-            else if (this.divineRanks.includes(cat) && "domains" in divpatron) {
-                avRanks = divpatron.domains;
-            }
-            else if (cat === 'magia_evocacion' && "magics" in arcanespec) {
-                avRanks = arcanespec.magics;
-            }
-            else {
-                avRanks = cat;
-            }
-            for (let i of Object.keys(atbList)) {
-                atb = atbList[i];
-                let skillMatch = avRanks.includes(atb.skill);
-                let rankMatch = atb.rank == level;
-                let notPassive = cat === 'patron-domains' ? atb.type !== 'Pasiva' : true;
-                if (skillMatch && rankMatch && notPassive) {
-                    this.$set(options, i, atb);
+        // The same spell can't be learned twice
+        takenElsewhere: function (key, i, id) {
+            for (const k in this.r.spellPicks) {
+                const arr = this.r.spellPicks[k] || [];
+                for (let j = 0; j < arr.length; j++) {
+                    if (arr[j] === id && !(k === key && j === i)) return true;
                 }
             }
-            return options;
-        },
-        addSpell(spell, x, y, cat, spkey) {
-            const key = `spell${x}${y}`;
-            let atb = {...this.attributes[spell]};
-            atb.skill = cat;
-            if(atb.skill == "magia_divina")
-                atb.tags += ", Divina";
-            if(atb.skill == "magia_evocacion")
-                atb.tags += ", Arcana";
-            if(this.spellSections[spkey].isFree[y])
-                atb = this.$root.updateCostAndUses(atb);
-            this.$set(this.myspells, key, atb);
-            this.$emit('update-myspells', this.myspells);
+            return false;
         },
     },
-    watch: {
-        myspells: {
-            deep: true,
-            handler(newMyspells) {
-                this.$emit('update-myspells', newMyspells);
-            },
-        },
-        myranks: {
-            handler: function (newVal) {
-                this.myranks = newVal;
-                this.myspells = {};
-                this.$emit("reset-selects");
-            }
-        },
-        myarch: {
-            handler: function (newVal) {
-                this.myarch = newVal;
-                this.myspells = {};
-                this.$emit("reset-selects");
-            }
-        },
-        attributes: {
-            handler: function (newVal) {
-                this.attributes = newVal;
-            }
-        },
-        divpatrons: {
-            handler: function (newVal) {
-                this.divpatrons = newVal;
-                this.myspells = {};
-                this.$emit("reset-selects");
-            }
-        },
-        arcspecs: {
-            handler: function (newVal) {
-                this.arcspecs = newVal;
-                this.myspells = {};
-                this.$emit("reset-selects");
-            }
-        },
-        race: {
-            handler: function (newVal) {
-                this.race = newVal;
-                this.myspells = {};
-                this.$emit("reset-selects");
-            }
-        },
-    },
-    style:
-        `.dropdown-menu {
-        max-height: 200px;
-        overflow-y: auto;
-        padding: 0;
-      }
-
-      .dropdown-item {
-        cursor: pointer;
-      }
-
-      .form-control {
-        width: 100%;
-        margin-bottom: 0;
-      }`
 });

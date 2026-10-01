@@ -106,8 +106,7 @@
                         <v-rankpage v-bind:ranks="ranks" :level="level" :rkpoints="rkpoints"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel">
-                        <h3 class="section-header">Hechizos</h3>
-                        <p style="color: var(--text-muted); font-style: italic;">Próximamente — esta sección se integrará en una futura actualización.</p>
+                        <v-spellpage></v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel">
                         <v-equipage v-bind:equipment="equipment" :eqlist="eqList" :bagslots="equipment['bag']">

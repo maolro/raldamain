@@ -230,6 +230,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 .rt-prev strong,.cmp-desc strong{color:var(--text)}
 .rt-list{margin:3px 0 3px 16px}
 
+/* ── Spell grants ── */
+.grant-row{border:1px solid var(--border);border-left:3px solid var(--purple);border-radius:5px;padding:8px;margin-top:6px}
+
 /* ── Boosts ── */
 .boost-section{border-top:1px solid var(--border);padding-top:8px;margin-top:4px}
 .boost-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gold)}
@@ -618,7 +621,13 @@ function renderCats() {
 function setCat(c) { S.cat=c; renderCats(); renderSidebar(); }
 function onSearch() { S.search=document.getElementById('sb-search').value.toLowerCase(); renderSidebar(); }
 
+function refreshRankIdList() {
+  let dl = document.getElementById('rank-id-dl');
+  if (!dl) { dl = document.createElement('datalist'); dl.id = 'rank-id-dl'; document.body.appendChild(dl); }
+  dl.innerHTML = S.all.map(r => `<option value="${r.id}">${esc(r.title)}</option>`).join('');
+}
 function renderSidebar() {
+  refreshRankIdList();
   const filtered = S.all.filter(r => {
     const ms = !S.search || r.title.toLowerCase().includes(S.search) || r.id.includes(S.search);
     const mc = !S.cat || r.category===S.cat;
@@ -882,6 +891,20 @@ function cardHtml(li, ab, ai) {
       <button class="emp-tog" style="color:var(--gold)" onclick="openPassive(${li},${ai})">✦ Añadir bonificadores pasivos</button>
     </div>`;
 
+  const grants = ab.spell_grants || [];
+  const grantsSect = grants.length ? `
+    <div class="boost-section">
+      <div class="tog-hd">
+        <span class="boost-label" style="color:var(--purple)">📜 Otorga hechizos</span>
+        <span class="boost-hint">el personaje elige hechizos en la pestaña Hechizos</span>
+        <button class="btn sm" style="margin-left:auto" onclick="addGrant(${li},${ai})">＋ Regla</button>
+      </div>
+      ${grants.map((g,gi) => grantHtml(g, li, ai, gi)).join('')}
+    </div>` : `
+    <div class="boost-section">
+      <button class="emp-tog" style="color:var(--purple)" onclick="addGrant(${li},${ai})">📜 Añadir hechizos aprendidos</button>
+    </div>`;
+
   const toggleSect = 'toggle' in ab ? `
     <div class="tog-section">
       <div class="tog-hd">
@@ -892,9 +915,17 @@ function cardHtml(li, ab, ai) {
         <div class="field"><div class="lbl">Etiqueta</div>
           <input class="inp" value="${esc(ab.toggle.label||'')}" placeholder="Nombre del estado"
             oninput="setToggle(${li},${ai},'label',this.value)"></div>
-        <div class="field"><div class="lbl">Daño extra</div>
-          <input class="inp" value="${esc(ab.toggle.damage||'')}" placeholder="+1d6 · +1 dado"
+        <div class="field"><div class="lbl" title="Dados extra: +1d6, +1 dado, o con fórmula de rango: +(RANGO/3+1)d6">Daño extra</div>
+          <input class="inp" value="${esc(ab.toggle.damage||'')}" placeholder="+1d6 · +1 dado · +(RANGO/3+1)d6"
             oninput="setToggle(${li},${ai},'damage',this.value)"></div>
+      </div>
+      <div class="row2" style="margin-bottom:6px">
+        <div class="field"><div class="lbl" title="Vacío = se suma a los dados del ataque. Con tipo = daño aparte («+ 1d6 daño Radiante»). PATRÓN = tipo de daño de la entidad superior del personaje">Tipo del daño extra</div>
+          <input class="inp" list="dmg-type-dl" value="${esc(ab.toggle.damage_type||'')}" placeholder="— mismo tipo · Radiante · PATRÓN"
+            oninput="setToggle(${li},${ai},'damage_type',this.value)"></div>
+        <div class="field"><div class="lbl" title="Habilidades a las que se aplica el daño extra (etiquetas; + = Y, coma = O). Vacío = las mismas que la Ventaja">Daño aplica a (etiquetas)</div>
+          <input class="inp" value="${esc((ab.toggle.damage_tags||[]).join(', '))}" placeholder="Ataque+Físico…"
+            oninput="setToggleArr(${li},${ai},'damage_tags',this.value)"></div>
       </div>
       <div class="row2" style="margin-bottom:6px">
         <div class="field"><div class="lbl">Ventaja en (comas)</div>
@@ -975,6 +1006,7 @@ function cardHtml(li, ab, ai) {
         <div class="rt-prev" id="rtprev-${li}-${ai}">${rtPreview(ab.desc)}</div></div>
       <div class="mod-opt" id="modopt-${li}-${ai}">${modOptHtml(li,ai)}</div>
       ${passiveSect}
+      ${grantsSect}
       ${empHtml}
       ${toggleSect}
     </div>`;
@@ -1036,6 +1068,70 @@ function setToggleArr(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggl
 function setToggleNum(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const n=parseInt(v); if(!isNaN(n))t[k]=n; else delete t[k]; renderToolbar(); }
 function setToggleCe(li,ai,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(!v){delete t.ce;renderToolbar();return;} const n=parseFloat(v); t.ce=isNaN(n)?v:n; renderToolbar(); }
 function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)ab[k]=a; else delete ab[k]; renderToolbar(); }
+
+// ── Spell grants ("Otorga hechizos") ─────────────────────────────────────────
+// spell_grants: [{ count: 2 | "RANGO", spell_rank: 1, from_rank?: 4,
+//                  sources: ["patron" | "cat:Arcano" | "rank:magia_mental", …] }]
+const GRANT_CATS = ['Elementalismo','Arcano','Ocultismo','Divino'];
+function grantHtml(g, li, ai, gi) {
+  const src = g.sources || [];
+  const romanOpts = (cur, withNone) => (withNone ? `<option value="">—</option>` : '') +
+    ROMAN.slice(0,6).map((r,i) => `<option value="${i+1}" ${cur==i+1?'selected':''}>${r}</option>`).join('');
+  const chip = (val, label) => `<label class="chk ${src.includes(val)?'on':''}"><input type="checkbox" ${src.includes(val)?'checked':''}
+      onchange="toggleGrantSrc(${li},${ai},${gi},'${val}',this.checked)">${label}</label>`;
+  const specific = src.filter(x => x.startsWith('rank:')).map(x => x.slice(5)).join(', ');
+  return `
+    <div class="grant-row">
+      <div class="row3">
+        <div class="field"><div class="lbl" title="Número o fórmula (RANGO, RANGO+1…)">Cantidad</div>
+          <input class="inp" value="${esc(g.count!=null?g.count:'')}" placeholder="2 · RANGO"
+            oninput="setGrant(${li},${ai},${gi},'count',this.value)"></div>
+        <div class="field"><div class="lbl">Hechizos de Rango ≤</div>
+          <select class="inp" onchange="setGrant(${li},${ai},${gi},'spell_rank',this.value)">${romanOpts(g.spell_rank||1,false)}</select></div>
+        <div class="field"><div class="lbl" title="Rango mínimo de ESTE rango para obtener la regla (vacío = el nivel de la habilidad)">Desde Rango</div>
+          <select class="inp" onchange="setGrant(${li},${ai},${gi},'from_rank',this.value)">${romanOpts(g.from_rank||'',true)}</select></div>
+      </div>
+      <div class="lbl" style="margin-top:6px">Fuentes</div>
+      <div class="chk-group">
+        ${chip('patron','Dominios de la entidad')}
+        ${GRANT_CATS.map(c => chip('cat:'+c, c)).join('')}
+      </div>
+      <div class="field" style="margin-top:6px"><div class="lbl">Rangos concretos (ids, comas)</div>
+        <input class="inp" list="rank-id-dl" value="${esc(specific)}" placeholder="magia_mental, magia_fuego…"
+          oninput="setGrantRanks(${li},${ai},${gi},this.value)"></div>
+      <button class="btn sm danger" style="margin-top:6px" onclick="delGrant(${li},${ai},${gi})">× Quitar regla</button>
+    </div>`;
+}
+function grantOf(li,ai,gi) { return S.rank.levels[li].abilities[ai].spell_grants[gi]; }
+function addGrant(li,ai) {
+  const ab = S.rank.levels[li].abilities[ai];
+  (ab.spell_grants || (ab.spell_grants = [])).push({ count: 2, spell_rank: 1, sources: ['patron'] });
+  renderToolbar(); renderLvl();
+}
+function delGrant(li,ai,gi) {
+  const ab = S.rank.levels[li].abilities[ai];
+  ab.spell_grants.splice(gi,1);
+  if (!ab.spell_grants.length) delete ab.spell_grants;
+  renderToolbar(); renderLvl();
+}
+function setGrant(li,ai,gi,k,v) {
+  const g = grantOf(li,ai,gi); v = String(v).trim();
+  if (!v) delete g[k]; else { const n = Number(v); g[k] = isNaN(n) ? v : n; }
+  renderToolbar();
+}
+function toggleGrantSrc(li,ai,gi,val,on) {
+  const g = grantOf(li,ai,gi);
+  const a = (g.sources||[]).filter(x => x !== val);
+  if (on) a.push(val);
+  g.sources = a;
+  renderToolbar(); renderLvl();
+}
+function setGrantRanks(li,ai,gi,v) {
+  const g = grantOf(li,ai,gi);
+  const ids = v.split(',').map(x => x.trim()).filter(Boolean).map(x => 'rank:' + x);
+  g.sources = (g.sources||[]).filter(x => !x.startsWith('rank:')).concat(ids);
+  renderToolbar();
+}
 
 // ── Rich text in descriptions: **negrita**, *cursiva*, "- " lists ─────────────
 const NL = String.fromCharCode(10);
@@ -1379,6 +1475,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const dl=document.createElement('datalist'); dl.id='tag-dl';
   dl.innerHTML=TAGS.map(t=>`<option value="${t}">`).join('');
   document.body.appendChild(dl);
+  const ddl=document.createElement('datalist'); ddl.id='dmg-type-dl';
+  ddl.innerHTML=['PATRÓN','Fuego','Frío','Eléctrico','Ácido','Sónico','Radiante','Necrótico','Arcano','Cortante','Contundente','Perforante'].map(t=>`<option value="${t}">`).join('');
+  document.body.appendChild(ddl);
   const cdl=document.createElement('datalist'); cdl.id='umb-cat-dl';
   cdl.innerHTML=UMB_CATS.map(t=>`<option value="${t}">`).join('');
   document.body.appendChild(cdl);

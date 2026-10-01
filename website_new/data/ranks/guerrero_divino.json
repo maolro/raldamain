@@ -28,7 +28,15 @@
             "Mejora"
           ],
           "cost": "1 chi",
-          "desc": "Empoderas tu siguiente ataque físico con energía divina. Al impactar, infliges 1d6 daño adicional (tipo según tu dios). El daño aumenta a 2d6 a Rango III y a 3d6 a Rango VI. Solo puedes escoger un daño asociado con tu dios y debe declararse antes de atacar. "
+          "desc": "Empoderas tu siguiente ataque físico con energía divina. Al impactar, infliges 1d6 daño adicional (tipo según tu dios). El daño aumenta a 2d6 a Rango III y a 3d6 a Rango VI. Solo puedes escoger un daño asociado con tu dios y debe declararse antes de atacar. ",
+          "toggle": {
+            "label": "Azote Divino",
+            "damage": "+(RANGO/3+1)d6",
+            "damage_type": "PATRÓN",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
+          }
         },
         {
           "name": "Sentido Divino",
@@ -44,7 +52,16 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Aprendes dos hechizos de Rango I vinculados a tu dios, los cuales puedes lanzar empleando tu bonificador de Guerrero Divino. Estos pueden mejorarse con técnicas de armas y puedes emplear tu tiro de Guerrero o Magia Divina para tiros de ataque con armas."
+          "desc": "Aprendes dos hechizos de Rango I vinculados a tu dios, los cuales puedes lanzar empleando tu bonificador de Guerrero Divino. Estos pueden mejorarse con técnicas de armas y puedes emplear tu tiro de Guerrero o Magia Divina para tiros de ataque con armas.",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ]
+            }
+          ]
         }
       ]
     },
