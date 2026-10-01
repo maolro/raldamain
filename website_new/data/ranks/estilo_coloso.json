@@ -31,14 +31,7 @@
             "Mejora"
           ],
           "cost": "1 Acción",
-          "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar.",
-          "toggle": {
-            "label": "Ataque Poderoso",
-            "damage": "+1 dado",
-            "adv": [
-              "Ataque"
-            ]
-          }
+          "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar."
         },
         {
           "name": "Golpe Desestabilizador",
@@ -47,7 +40,7 @@
             "Mejora",
             "Maniobra"
           ],
-          "cost": "1 Chi",
+          "cost": "1 chi",
           "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado y tiene Desventaja defendiéndose del siguiente ataque. Esta habilidad puede usarse incluso si el enemigo detiene exitosamente el ataque con Parada",
           "show_mod": true
         },
@@ -65,7 +58,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Gran Barrido",
@@ -74,28 +67,13 @@
             "Mejora",
             "Área"
           ],
-          "cost": "1 chi",
+          "cost": "1 Chi",
           "area": "Radio Corto",
-          "desc": "Tu siguiente ataque afecta a todos los enemigos en radio corto y provoca +1d6 daño. Al impactar, empujas a los afectados un paso hacia atrás."
-        },
-        {
-          "name": "Guardia Fluida",
-          "tags": [
-            "Pesado",
-            "Mejora"
-          ],
-          "cost": "2 acciones, 1 chi",
-          "duration": "Una ronda",
-          "desc": "Terminas inmediatamente tu turno. Hasta el inicio de tu siguiente turno, puedes atacar como reacción a cada criatura que entre en tu alcance. Al impactar, empujas al objetivo un paso hacia atrás. Pierdes este efecto si pierdes la concentración o te mueves."
-        },
-        {
-          "name": "Lanzamiento",
-          "tags": [
-            "Pesado",
-            "Mejora"
-          ],
-          "cost": "1 acción, 1 chi",
-          "desc": "Lanzas un arma u objeto a un objetivo a distancia media, provocando +1d6 daño adicional (si es un objeto, su daño base es 3d6). Al impactar a un enemigo volador, este debe superar un tiro de salvación de Voluntad o cae inmediatamente al suelo."
+          "desc": "Tu siguiente ataque afectará a cada objetivo en un radio pequeño y aumentará su daño base por un dado. Además, al impactar empujarás un paso a los afectados.",
+          "toggle": {
+            "label": "Gran Barrido",
+            "damage": "+1 Dado"
+          }
         },
         {
           "name": "Reposición Forzosa",
@@ -103,8 +81,22 @@
             "Pesado",
             "Reacción"
           ],
+          "cost": "1 Chi",
+          "desc": "Un enemigo que haya esquivado tu ataque debe tener éxito en un tiro de salvación Físico o recibirá Desventaja en su siguiente tiro defensivo.",
+          "show_mod": true
+        },
+        {
+          "name": "Lanzamiento",
+          "tags": [
+            "Pesado",
+            "Mejora"
+          ],
           "cost": "1 chi",
-          "desc": "Cuando un enemigo esquiva exitosamente tu ataque, debe superar un tiro de salvación de Físico o es movido un paso y sufre Desventaja en su siguiente tiro defensivo."
+          "desc": "Lanzas tu arma u otro objeto a una distancia media, aumentando su daño base por un dado. Si impactas a un enemigo volador, debe tener éxito en un tiro de salvación de Voluntad o cae al suelo.",
+          "toggle": {
+            "label": "Lanzamiento",
+            "damage": "+1 Dado"
+          }
         }
       ]
     },
