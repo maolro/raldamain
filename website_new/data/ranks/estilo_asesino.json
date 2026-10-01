@@ -17,7 +17,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Apuntar Ataque",
@@ -25,8 +25,8 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "1 acción",
-          "desc": "Obtienes +2 en tu siguiente tiro de ataque. Este bonus aumenta a +4 a Rango III y a +6 a Rango V."
+          "cost": "1 Acción",
+          "desc": "Obtienes +2 en tu siguiente tiro de ataque. Este bonus aumenta a +4 a Rango III y a +6 a Rango V. Debes declarar esta habilidad antes de atacar."
         },
         {
           "name": "Ataque Furtivo",
@@ -34,8 +34,21 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Tu siguiente ataque provoca un dado de daño adicional y Herido-1 al impactar. Debes declarar esta habilidad antes de atacar."
+          "cost": "1 Chi",
+          "desc": "Tu siguiente ataque provoca un dado de daño adicional y provoca el efecto Herido I al impactar. Debes declarar esta habilidad antes de atacar.",
+          "toggle": {
+            "label": "Ataque Furtivo",
+            "damage": "+1 dado"
+          }
+        },
+        {
+          "name": "Robo Rápido",
+          "tags": [
+            "Asesino",
+            "Mejora"
+          ],
+          "desc": "Al impactar con un ataque, puedes roba un objeto pequeño que lleve tu objetivo y no se encuentre enganchado. Esta habilidad solo funciona si tu objetivo está adyacente.",
+          "cost": "1 Chi"
         }
       ]
     },

@@ -22,9 +22,9 @@
     "name": "Estilo Asesino",
     "category": "Marcial",
     "image": "estilo_asesino.jpg",
-    "description": "Uso de armas ligeras, centrado en el engaño, el sigilo y el asesinato rápido.",
+    "description": "Estilo de combate rápido y preciso. Aprovechas la movilidad y los puntos débiles del enemigo para eliminarlo antes de que pueda contraatacar.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "ira",
