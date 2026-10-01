@@ -132,7 +132,7 @@
     "image": "magia_fuego.jpg",
     "description": "Controlas las llamas para causar destrucción, alterar el campo de batalla y protegerte.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_hielo",

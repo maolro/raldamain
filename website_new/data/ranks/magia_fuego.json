@@ -19,7 +19,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Llamarada",
@@ -28,10 +28,10 @@
             "Ataque",
             "A distancia"
           ],
-          "cost": "1+ acciones",
+          "cost": "1+ Acciones",
           "range": "Medio",
           "desc": "Puedes emplear una acción adicional aumentar el daño base de este ataque por 1d6 (máx 2 veces).",
-          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo.",
+          "empower": "Ataca a un objetivo adicional.",
           "damage": "1d6 + CAR",
           "damage_type": "Fuego"
         },
@@ -42,11 +42,12 @@
             "Ataque",
             "Área"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "area": "Cono pequeño",
-          "crit": "Afectados sufren quemadura leve.",
-          "desc": "Inflige 2d6 + CAR daño Fuego a todos los objetivos en el área. Prende objetos y elimina efectos de Hielo, Agua o Naturaleza.",
-          "empower": "Aumenta tamaño un paso y añade un dado de daño adicional (máximo 2 veces)."
+          "desc": "Este ataque prende objetos inflambales y elimina efectos de Hielo, Agua o Naturaleza.",
+          "empower": "Aumenta tamaño un paso y añade un dado de daño adicional.",
+          "damage": "2d6 + CAR",
+          "damage_type": "Fuego"
         },
         {
           "name": "Fuego Interno",
@@ -54,11 +55,17 @@
             "Innata",
             "Pasiva"
           ],
-          "resistances": [
-            "Fuego",
-            "Frío"
-          ],
-          "desc": "Obtienes Resistencia al daño Fuego y Frío, además de Inmunidad al calor y frío extremo. Tienes también visión térmica a distancia media."
+          "desc": "Aumenta tus Umbrales al daño Fuego y Frío por Rango + 1, además de Inmunidad al calor y frío extremo. Tienes también visión térmica a distancia media.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Fuego"
+            },
+            {
+              "value": "RANGO+1",
+              "categories": "Frío"
+            }
+          ]
         }
       ]
     },
