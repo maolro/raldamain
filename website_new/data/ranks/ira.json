@@ -66,15 +66,20 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Demostración Terrorífica",
+          "name": "Frenesí de Batalla",
           "tags": [
             "Ira",
-            "Miedo"
+            "Mejora",
+            "Pasiva"
           ],
           "cost": "1 chi",
-          "area": "Radio medio",
-          "crit": "Aumenta nivel de Miedo un paso extra.",
-          "desc": "Los enemigos en el área deben superar un tiro de salvación de Voluntad (o enfrentado de Intimidar) o aumentan su nivel de Miedo en un paso."
+          "desc": "Puedes recibir Ventaja en todos sus tiros de ataque esta ronda a costa de recibir Desventaja en todos sus tiros defensivos.",
+          "toggle": {
+            "label": "Frenesí de Batalla",
+            "adv": [
+              "Ataque"
+            ]
+          }
         },
         {
           "name": "Resistencia Salvaje",
@@ -82,7 +87,7 @@
             "Ira",
             "Pasiva"
           ],
-          "desc": "Mientras dure la Ira, reduces todo el daño recibido en una cantidad igual a tu Rango. Ignoras los efectos de Herido-1 y Herido-2 (permanentes), y obtienes Resistencia a Aflicciones."
+          "desc": "Mientras te encuentres en Ira, aumentas todos sus umbrales por RANGO e ignoras los efectos Herido I y II."
         }
       ]
     },
