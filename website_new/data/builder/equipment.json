@@ -160,7 +160,7 @@
         "rifle-francotirador": {
             "name": "Rifle Francotirador",
             "eqab": "rifle-francotirador",
-            "style": "duelist"
+            "style": "ranged"
         }
     }
 }
