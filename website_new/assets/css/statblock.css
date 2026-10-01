@@ -40,6 +40,22 @@
     font-weight: bold;
 }
 
+/* Combat-state tick box before an ability name */
+.statblock-char .sb-toggle {
+    width: 15px;
+    height: 15px;
+    vertical-align: -2px;
+    margin-right: 2px;
+    accent-color: #c0392b;
+    cursor: pointer;
+}
+
+.statblock-char b.sb-toggle-on {
+    background: rgba(192, 57, 43, 0.25);
+    border-radius: 3px;
+    padding: 0 4px;
+}
+
 /* Combat stats grid */
 .preview-stats-row {
     display: flex;

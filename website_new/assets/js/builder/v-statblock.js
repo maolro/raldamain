@@ -31,9 +31,14 @@ Vue.component('v-statblock', {
     methods: {
         h: function (html) { return markRollables(html, this.rollable); },
         saveRoll: function (v) { return String(v).replace(/\s+/g, ''); },
+        // Tick boxes live inside v-html ability text, so their changes are delegated here
+        onChange: function (e) {
+            const t = e.target;
+            if (t.classList && t.classList.contains('sb-toggle')) this.r.toggleAbility(t.dataset.toggle);
+        },
     },
     template: `
-    <div class="statblock-char" :class="{ 'sb-rollable': rollable }">
+    <div class="statblock-char" :class="{ 'sb-rollable': rollable }" @change="onChange">
         <div class="text-center mb-2">
             <h2>{{ r.charactername }}</h2>
             <span style="color: var(--text-muted);">Nivel {{ r.level }}</span>
@@ -74,26 +79,6 @@ Vue.component('v-statblock', {
             </span>
         </div>
         <div class="sb-line"><b>Velocidad</b> Paso 1</div>
-        <div v-if="r.toggleableAbilities.length > 0" class="mb-2 mt-1">
-            <small style="font-weight:bold">Estados de combate:</small><br>
-            <div v-for="ab in r.toggleableAbilities" :key="ab.toggle.label"
-                style="display:inline-block;margin:0 4px 6px 0;vertical-align:top;text-align:center">
-                <button class="sb-toggle-btn" :class="{ active: r.isToggleActive(ab.toggle.label) }"
-                    @click="r.toggleAbility(ab.toggle.label)">
-                    {{ ab.toggle.label }}
-                </button>
-                <div v-if="r.toggleBenefitText(ab)"
-                    style="font-size:9px;color:#666;max-width:120px;line-height:1.3;word-break:break-word;margin-top:1px">
-                    {{ r.toggleBenefitText(ab) }}
-                </div>
-            </div>
-            <div v-if="r.toggleBuffs.damage.length > 0" style="margin-top:2px">
-                <small><b>Daño extra activo:</b>
-                    <span v-for="d in r.toggleBuffs.damage" :key="d"
-                        style="display:inline-block;background:#c0392b;color:#fff;border-radius:3px;padding:0 5px;margin:1px;font-size:11px">{{ d }}</span>
-                </small>
-            </div>
-        </div>
         <hr>
         <div v-if="r.rkString" class="mb-1"><b>Rangos: </b>{{ r.rkString }}</div>
         <div v-if="r.talstring" class="mb-1"><b>Talentos: </b><span v-html="h(r.talstring)"></span></div>

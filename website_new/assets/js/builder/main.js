@@ -340,8 +340,18 @@ new Vue({
             let obArray = this.myatb[cat];
             const getEmpowerCost = () => '1 chi · máx. 2×';
             const rankInMap = (skill) => skill && skill in this.ranks;
+            const attr = (v) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
             return obArray.map(obj => {
-                let formattedString = `<b>${obj.name}</b>`;
+                // Combat states ("toggle"): a tick box before the name; ticking it applies the
+                // state's buffs (advantage dice, damage, umbrales…) to the whole stat block
+                let toggleBox = '';
+                if (obj.toggle && obj.toggle.label) {
+                    const on = this.isToggleActive(obj.toggle.label);
+                    const tip = this.toggleBenefitText(obj);
+                    toggleBox = `<input type="checkbox" class="sb-toggle" data-toggle="${attr(obj.toggle.label)}"${on ? ' checked' : ''}`
+                        + ` title="${attr((on ? 'Desactivar ' : 'Activar ') + obj.toggle.label + (tip ? ' — ' + tip : ''))}"> `;
+                }
+                let formattedString = toggleBox + `<b${toggleBox && this.isToggleActive(obj.toggle.label) ? ' class="sb-toggle-on"' : ''}>${obj.name}</b>`;
                 let parenParts = [];
                 if (obj.tags) parenParts.push(obj.tags);
                 if (obj.cost) parenParts.push(`<span class="sb-cost">${obj.cost}</span>`);
@@ -412,7 +422,7 @@ new Vue({
             let toMd = (text) => {
                 return text
                     .replace(/<br><br>/g, "\n\n")
-                    .replace(/<b>(.*?)<\/b>/g, "**$1**")
+                    .replace(/<b[^>]*>(.*?)<\/b>/g, "**$1**")
                     .replace(/<i>(.*?)<\/i>/g, "_$1_")
                     .replace(/<[^>]+>/g, '');
             };
