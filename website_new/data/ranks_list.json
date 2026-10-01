@@ -42,7 +42,7 @@
     "image": "reflejos.jpg",
     "description": "Posees una velocidad de reacción sobrenatural. Esquivas ataques invisibles, reaccionas antes que nadie y te mueves con una agilidad imposible de rastrear.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "fortitud",

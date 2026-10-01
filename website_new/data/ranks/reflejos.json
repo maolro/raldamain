@@ -30,7 +30,10 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Suma tu Rango a tu tiro de Iniciativa y recibes Ventaja en tus tiros de salvación Físicos."
+          "desc": "Suma tu Rango a tu tiro de Iniciativa y recibes Ventaja en tus tiros de salvación Físicos.",
+          "saves": [
+            "Físico"
+          ]
         },
         {
           "name": "Instinto de Supervivencia",
