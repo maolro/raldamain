@@ -43,7 +43,7 @@ Sin embargo, la posición de los Ayutanos siempre fue precaria. Atrapados entre 
 
 El evento que marcó un antes y un después en la historia ayutana fue la catástrofe de **Vilye**, el Sapran [chothgar](chothgar.md) que se transformó en **rey-liche** mediante pactos con entidades abisales. Cuando los ejércitos de muertos vivientes de Vilye descendieron de las montañas del noreste, los reinos ayutanos fueron de los primeros en sufrir el embate. Ciudades costeras enteras fueron arrasadas, y los drakkar ayutanos, diseñados para luchar contra enemigos que sangran y mueren, resultaron inútiles contra hordas que no conocían el miedo ni el dolor.
 
-Fue durante esta crisis existencial que el Reino de Ayután selló una alianza con [Arkedania](../naciones/Arkedania.md), la mayor potencia Feynista de la época, para enfrentar la amenaza común. La alianza, impensable décadas antes dada la historia de incursiones ayutanas contra costas arkedanias, se cimentó en la desesperación mutua. Los marineros ayutanos transportaron tropas arkedanias, cortaron las líneas de suministro de Vilye por mar y lucharon hombro con hombro con los soldados del Basileús en batallas donde los vivos se enfrentaban a los muertos.
+Fue durante esta crisis existencial que el Sapranato Chothgar selló una alianza con [Arkedania](../naciones/Arkedania.md), la mayor potencia Feynista de la época, para enfrentar la amenaza común. La alianza, impensable décadas antes dada la historia de incursiones ayutanas contra costas arkedanias, se cimentó en la desesperación mutua. Los marineros ayutanos transportaron tropas arkedanias, cortaron las líneas de suministro de Vilye por mar y lucharon hombro con hombro con los soldados del Basileús en batallas donde los vivos se enfrentaban a los muertos.
 
 La guerra contra Vilye duró décadas y dejó cicatrices profundas en ambos pueblos. La victoria fue costosa: el Reino de Ayután quedó diezmado, con gran parte de su población masculina muerta y sus costas devastadas. Sin embargo, la alianza con Arkedania abrió una era de contacto cultural que transformaría gradualmente a los Ayutanos. Misioneros Feynistas comenzaron a predicar en tierras ayutanas, y aunque la conversión fue lenta y superficial, marcó el inicio de una apertura religiosa que facilitaría la posterior adopción del Mekhatimismo.
 
@@ -73,18 +73,6 @@ Los hombres ayutanos cultivan barbas espesas como protección contra el frío, a
 
 Las cicatrices se exhiben con orgullo, no se ocultan. Un ayutano sin cicatrices es un ayutano que no ha vivido, según el dicho popular.
 
-## Vestimenta
-
-La indumentaria ayutana prioriza la funcionalidad sobre la estética, aunque posee una belleza austera que le es propia:
-
-- **Abrigos y capas de piel**: La prenda esencial del norte, confeccionada con pieles de lobo, oso o foca. Los más ricos usan pieles de animales exóticos; los más pobres, pieles curtidas de cabra
-- **Túnicas de lana gruesa**: Teñidas en tonos oscuros (azul marino, verde bosque, rojo sangre) con patrones geométricos tejidos en los bordes que identifican al clan de origen
-- **Cinturones anchos de cuero**: Donde cuelgan herramientas, armas y bolsas de provisiones. El cinturón de un ayutano es su hogar portátil
-- **Botas de cuero engrasado**: Altas hasta la rodilla, impermeabilizadas con grasa de foca para resistir el agua
-- **Fíbulas y broches de bronce**: Los únicos elementos decorativos aceptados universalmente, utilizados para sujetar las capas y como símbolo de rango
-
-En la era moderna, los ayutanos urbanizados dentro del Imperio de Arshalán han adoptado vestimentas arshalaníes para la vida pública, pero conservan elementos tradicionales en el hogar y durante festividades: las capas de piel reaparecen en bodas, los broches ancestrales se lucen en funerales, y los marineros siguen vistiendo como sus abuelos cuando salen al mar.
-
 # Temperamento y Valores
 
 La psicología ayutana se forja en el yunque de un entorno que no tolera la debilidad ni la indecisión. El mar del norte es un maestro cruel que enseña dos lecciones fundamentales: actúa con determinación o muere, y tu supervivencia depende de los que tienes al lado.
@@ -105,19 +93,14 @@ La conversión al Mekhatimismo no borró estas creencias sino que las sumergió 
 
 # Vida Social y Costumbres
 
-## Estructura Social
 
 La sociedad ayutana tradicional se organizaba en clanes familiares liderados por jarls, con una jerarquía determinada por la capacidad y el prestigio más que por el nacimiento puro. Aunque la aristocracia guerrera ocupaba la cúspide, la movilidad social era posible para quienes demostraran valor en el mar o astucia en el comercio.
 
 Bajo el dominio arshalaní, esta estructura se ha transformado significativamente. Los antiguos clanes perviven como identidades familiares pero han perdido su poder político. La nueva élite ayutana está compuesta por comerciantes exitosos, oficiales militares y administradores que han prosperado dentro del sistema imperial. Sin embargo, en las comunidades costeras más remotas, la vieja estructura de clanes sigue siendo la verdadera autoridad, y las decisiones del gobierno provincial son secundarias frente a la palabra del anciano del clan.
 
-## El Mar como Centro de la Vida
-
 Toda la cultura ayutana gravita en torno al mar. Los niños aprenden a nadar antes que a caminar y a atar nudos marineros antes que a escribir. Los mejores constructores navales ayutanos son artistas venerados cuya habilidad se transmite de padre a hijo como secretos celosamente guardados. Las estaciones del año se miden no por el calendario sino por los ciclos de pesca: la temporada del arenque, la temporada del bacalao, la temporada de las ballenas.
 
 La gastronomía refleja esta obsesión marina: pescado ahumado, bacalao salado, estofados de marisco espesados con cebada, pan negro untado con grasa de foca y, en ocasiones festivas, carne de ballena asada. La bebida tradicional es el **mjöd**, un hidromiel fermentado con miel y especias que se consume en cuernos tallados durante los banquetes comunales. Los ayutanos urbanizados han adoptado los gustos culinarios arshalaníes, pero siguen considerando que ningún alimento terrestre puede compararse con un buen pescado fresco.
-
-## Sagas y Tradición Oral
 
 La tradición oral es el tesoro más preciado de la cultura ayutana. Las **sagas**, narraciones épicas que combinan historia, mitología y ficción, se transmiten de generación en generación a través de los **skalds**, poetas-cantores que memorizan miles de versos y los recitan en banquetes, funerales y reuniones comunales. Cada clan posee sus propias sagas que narran las hazañas de sus ancestros, y conocerlas de memoria es considerado un deber sagrado.
 

@@ -20,7 +20,7 @@ The traditional seat of the [Hibotoru clan](https://raldamain.com/en/ideas/facti
 
 ## Origin
 
-The region was settled by Drakutian colonists in the mid-31st century, coinciding with their push towards the Shinri interior as they desired more fertile land to support their growing cities. They would choose the shores of an inland lake to establish a small village which in time would grow to become the city of Iwakashi. 
+The region was settled by Xiangdi colonists in the mid-31st century, coinciding with their push towards the Shinri interior as they desired more fertile land to support their growing cities. They would choose the shores of an inland lake to establish a small village which in time would grow to become the city of Iwakashi. 
 
 Legends tell that the patriarch of the Hibotoru clan stole the secrets of fire from the flame spirit Suzakushin and gave them to his people so they could prosper, starting an ancient feud between the two. They would fight many years later in a great clash that caused devastating damage to the small settlement, and while the first Hibotoru lord was no match to the powerful spirit Suzakushin was so impressed with his valor that he gifted the hero with parts of his essence, granding him the power to create fire. This power would pass down through generations of the Hibotoru clan, granting them elemental fire magic.
 

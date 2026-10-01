@@ -15,7 +15,7 @@ La revolución de los [Reforjados](../facciones/Reforjados.md) en 4006 no solo t
 
 Los ancestros de los Iskarianos fueron colonos del vasto Imperio de Xiangdi que viajaron hacia el oeste en busca de nuevas tierras, separándose del grupo principal que eventualmente fundaría Shinri. Mientras los futuros Shinri se establecieron en las islas orientales, los ancestros iskarianos continuaron hacia el interior del continente, atraídos por los ricos yacimientos minerales de las montañas que llamaron "Tierras de Hierro".
 
-Estos colonos trajeron consigo las tradiciones de Xiangdi: la escritura, las artes marciales, la cocina basada en arroz y fideos, y —crucialmente— las técnicas metalúrgicas avanzadas que los distinguirían durante milenios. También trajeron sus creencias espirituales, una forma de animismo similar a la [Fe Espiritual](../religiones/fe-espiritual.md) pero con énfasis en los espíritus del fuego, la montaña y el metal. Los espíritus de la fragua (**Hwaro**) eran particularmente reverenciados.
+Estos colonos trajeron consigo las tradiciones de Xiangdi: la escritura, las artes marciales, la cocina basada en arroz y fideos, y —crucialmente— las técnicas metalúrgicas avanzadas que los distinguirían durante milenios. También trajeron sus creencias espirituales, una forma de animismo similar a la [Fe Espiritual](../religiones/fe-espiritual.md) pero con énfasis en los espíritus del fuego, la montaña y el metal. Los espíritus de la fragua eran particularmente reverenciados.
 
 Durante los primeros siglos, los colonos vivieron en relativa paz con las comunas élficas vecinas, comerciando sus productos metálicos a cambio de madera y conocimiento mágico. Fue una época de intercambio cultural que dejó marcas duraderas: los Iskarianos adoptaron elementos de la estética élfica en su arquitectura y vestimenta, mientras los elfos adquirieron técnicas de forja que nunca habían desarrollado por sí mismos.
 
@@ -82,7 +82,7 @@ La revolución transformó radicalmente la vestimenta iskariana:
 - **Ropa de trabajo industrial**: Overol de tela gruesa, guantes de cuero, gafas protectoras. Los trabajadores de fundiciones visten delantales resistentes al calor.
 - **Ropa civil**: Fuera del trabajo, los Iskarianos visten ropa sencilla en colores apagados. La ostentación está mal vista ideológicamente y cualquier signo de "lujo burgués" atrae sospechas.
 
-**Colores prohibidos**: El blanco puro (asociado con los elfos), el dorado (asociado con la aristocracia), y cualquier color brillante o "decadente".
+**Colores prohibidos**: El blanco puro (asociado con los elfos), el plateado (asociado con la aristocracia), y cualquier color brillante o "decadente".
 
 # Temperamento y Valores
 
@@ -166,32 +166,21 @@ A pesar de la represión, la espiritualidad no ha desaparecido:
 
 La familia tradicional iskariana fue severamente transformada por el régimen:
 
-**Antes**: Familias extensas vivían juntas, con el patriarca herrero en la cúspide. Los matrimonios eran arreglados entre familias de herreros para preservar técnicas secretas.
+**Antes**: Familias extensas vivían juntas, con el patriarca  en la cúspide. Los matrimonios eran arreglados entre familias.
 
 **Ahora**: El Estado desalienta la "lealtad familiar burguesa". Los niños son educados en escuelas estatales, inculcados con lealtad al Partido. Las familias viven en bloques de vivienda comunal con poca privacidad. Los matrimonios son "libres" pero en la práctica sujetos a aprobación del comisario local.
 
 **Resistencia silenciosa**: A pesar de todo, los lazos familiares persisten. Los padres transmiten historias y tradiciones en susurros. Los abuelos enseñan canciones antiguas disfrazadas de canciones de trabajo. La familia sigue siendo el único espacio donde los Iskarianos pueden ser ellos mismos.
-
-## Nombres
-
-Los nombres iskarianos reflejan su herencia de Xiangdi:
-
-**Nombres masculinos**: Hyung, Daeho, Taeyang, Seojin, Minho, Jungwoo, Seonghwa
-**Nombres femeninos**: Soyeon, Minji, Yuna, Jiwoo, Hana, Eunji, Chaeyoung
-**Apellidos**: Shen, Ri, Pak, Kim, Won, Jang, Choi
-
-El régimen promueve nombres iskarianos tradicionales frente a nombres élficos o ustileses. Nombrar a un hijo con nombre no iskariano es acto políticamente sospechoso.
 
 ## Comida
 
 La cocina iskariana refleja su historia de escasez y trabajo duro:
 
 **Platos básicos**:
-- **Juk** (gachas de arroz): Comida de desayuno, simple y nutritiva
-- **Bibimbap iskariano**: Arroz mezclado con vegetales encurtidos y (raramente) carne. Más austero que la versión Shinri
-- **Kimchi**: Vegetales fermentados picantes, fuente crucial de vitaminas en invierno
-- **Japchae**: Fideos de almidón con vegetales salteados
-- **Mandu**: Empanadillas rellenas de vegetales o carne, herencia de Xiangdi
+- Arroz mezclado con vegetales encurtidos y (raramente) carne. Más austero que la versión Shinri
+- Vegetales fermentados picantes, fuente crucial de vitaminas en invierno
+- Fideos de almidón con vegetales salteados
+- Empanadillas rellenas de vegetales o carne, herencia de Xiangdi
 
 **Comida de trabajador**:
 - **Raciones estatales**: Arroz, mijo, soja, vegetales básicos. La carne es rara y reservada para ocasiones especiales o raciones de mérito
@@ -207,11 +196,10 @@ La cocina iskariana refleja su historia de escasez y trabajo duro:
 
 **Oficiales** (obligatorias):
 - **Día de las Cadenas Rotas** (1 de primavera): Aniversario de la revolución. Desfiles, discursos, "Quema del Pasado"
-- **Día del Acero**: Aniversario de la primera producción industrial
 - **Día de los Mártires**: Honra a los caídos en la revolución
 
 **Tradicionales** (prohibidas pero recordadas):
-- **Chuseok iskariano**: Festival de la cosecha de otoño, con danzas y ofrendas a los espíritus de la tierra
+- **Chuseok**: Festival de la cosecha de otoño, con danzas y ofrendas a los espíritus de la tierra
 - **Festival del Fuego**: Celebración del solsticio de invierno, cuando se encendían grandes hogueras para honrar a los Hwaro
 - **Día de los Ancestros**: Visita a tumbas familiares con ofrendas de comida
 
@@ -233,7 +221,7 @@ La educación universal es logro genuino del régimen, aunque severamente ideolo
 
 - **Alfabetización**: Antes de la revolución, 90% de los Iskarianos eran analfabetos. Hoy la tasa de alfabetización supera el 80%
 - **Educación técnica**: Énfasis en matemáticas, ingeniería, metalurgia. Formación de trabajadores cualificados
-- **Adoctrinamiento**: Los Tratados de la Fundición son lectura obligatoria. La historia se enseña como lucha de clases
+- **Adoctrinamiento**: Los Tratados de Shen Hyung son lectura obligatoria. La historia se enseña como lucha de clases
 - **Elementalistas**: Niños con habilidades elementales son separados y enviados al Monasterio de Liulang
 
 # Relaciones con Otros Pueblos

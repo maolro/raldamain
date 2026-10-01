@@ -49,7 +49,7 @@ El cuerpo de Meisodh fue llevado entonces a **Andir**, la ciudad Natanea caída 
 
 ## La Era de los Caciques (3658-Presente)
 
-La muerte de Meisodh fragmentó nuevamente a los Chothgar, pero el [Camino de Yathanra](../religiones/camino-de-yathanra.md) pervivió. Desde entonces, los Chothgar alternan entre guerra civil y unificación temporal, lanzando grandes incursiones contra [Arshalán](../naciones/imperio-de-arshalan.md) cada pocas generaciones.El único poder que permanecería en esta compleja época todos respetan es el **Juez de Andir**, la autoridad religiosa que custodia la tumba de Meisodh.
+La muerte de Meisodh fragmentó nuevamente a los Chothgar, pero el [Camino de Yathanra](../religiones/camino-de-yathanra.md) pervivió. Desde entonces, los Chothgar alternan entre guerra civil y unificación temporal, lanzando grandes incursiones contra [Arshalán](../naciones/imperio-de-arshalan.md) cada pocas generaciones.El único poder que permanecería en esta compleja época todos respetan es el **Vicario de Andir**, la autoridad religiosa que custodia la tumba de Meisodh.
 
 # Apariencia
 

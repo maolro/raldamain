@@ -25,17 +25,15 @@ Las manos de los Temash son especialmente reveladoras: manos de nómada (callosa
 La ropa Temash es funcional ante el desierto y culturalmente rica en significado:
 
 **Hombres**:
-- **Burnús**: Capa amplia con capucha, de lana o algodón, que protege de sol, viento y frío nocturno. Color indica tribu y región
-- **Gandora**: Túnica holgada sin mangas que permite circulación de aire
-- **Sirwal**: Pantalones amplios, cintura alta atada con faja
+- Capa amplia con capucha, de lana o algodón, que protege de sol, viento y frío nocturno. Color indica tribu y región
+- Pantalones amplios, cintura alta atada con faja
 - **Tagelmust**: El velo facial icónico. Tela larga (3-5 metros) enrollada alrededor de la cabeza y cara, dejando solo ojos visibles. Protege de arena y sol, pero también es símbolo de identidad: un hombre adulto nunca muestra su boca ante extraños. El color del tagelmust tiene significado tribal profundo
-- **Babuchas**: Zapatos de cuero suave sin tacón, o sandalias para el desierto
 - **Puñal curvo** (koummya): Siempre al cinto, arma ceremonial y práctica
 
 **Mujeres**:
 - **Melhfa**: Tela larga (4-5 metros) drapeada alrededor del cuerpo como sari/toga, en colores vibrantes
-- **Henna**: Diseños intrincados en manos y pies, renovados para cada celebración
-- **Joyería de plata**: Collares masivos, brazaletes apilados, pendientes elaborados, diademas. La plata es metal sagrado (refleja luna; oro es de los ustileses, no de los Temash)
+- Diseños intrincados en manos y pies, renovados para cada celebración
+- Collares masivos, brazaletes apilados, pendientes elaborados, diademas. La plata es metal sagrado (refleja luna; oro es de los ustileses, no de los Temash)
 - **Kohl**: Obligatorio; ojos sin kohl están "desnudos"
 - **Velo**: Variable por región y familia. Algunas tradiciones requieren velo facial; otras solo cobertura de cabello; las tribus del desierto profundo permiten rostro descubierto
 
@@ -44,7 +42,6 @@ La ropa Temash es funcional ante el desierto y culturalmente rica en significado
 - **Blanco**: Pureza, peregrinación, luto
 - **Negro**: Protección, misterio, fuerza
 - **Rojo**: Celebración, matrimonio, fertilidad
-- **Colores prohibidos**: Amarillo imperial (color de Ustilus, rechazado como marca del opresor)
 
 # Temperamento y Valores
 
@@ -54,7 +51,7 @@ Los Temash viven según el **Asuf**, un código de honor tan antiguo como el des
 
 **Palabra sagrada**: La palabra dada es vínculo inquebrantable. Un Temash que rompe su palabra pierde todo: honor, familia, tribu, identidad. "Mejor morir que mentir" no es exageración poética; es principio vivido. Los contratos comerciales Temash son verbales; no necesitan papel porque la palabra es suficiente.
 
-**Hospitalidad del desierto**: En el desierto, rechazar hospitalidad a un viajero es sentencia de muerte. La **diyafa** (hospitalidad) es obligación sagrada que trasciende enemistad personal. Un viajero que llega a un campamento debe recibir tres días de comida, agua y protección, sin que se le pregunte su nombre o intenciones. Solo al cuarto día puede el anfitrión preguntar quién es y qué busca.
+**Hospitalidad del desierto**: En el desierto, rechazar hospitalidad a un viajero es sentencia de muerte. La hospitalidad es obligación sagrada que trasciende enemistad personal. Un viajero que llega a un campamento debe recibir tres días de comida, agua y protección, sin que se le pregunte su nombre o intenciones. Solo al cuarto día puede el anfitrión preguntar quién es y qué busca.
 
 **Venganza proporcional**: El Asuf no exige ojo por ojo; exige respuesta proporcional al agravio. Un insulto se responde con insulto; un robo con compensación; una muerte con muerte. Las **feudos de sangre** entre familias pueden durar generaciones, pero también pueden resolverse mediante mediación de ancianos y pago de **diya** (precio de sangre: compensación en ganado, riqueza u objetos de valor).
 
@@ -62,7 +59,7 @@ Los Temash viven según el **Asuf**, un código de honor tan antiguo como el des
 
 ## Libertad e Independencia
 
-Si hay un valor que define al Temash es **tillas** (libertad/autodeterminación):
+Si hay un valor que define al Temash es la libertad
 
 El desierto no tiene muros, ni fronteras, ni cadenas. Un Temash nace libre bajo el cielo infinito y morirá libre. Esta libertad no es abstracta sino experiencial: la libertad de moverse sin restricción, de elegir a quién sirves, de rechazar autoridad que no reconoces.
 
@@ -72,7 +69,7 @@ La conquista ustilesa es insoportable precisamente porque viola este valor funda
 
 ## Paciencia y Resistencia
 
-El desierto enseña paciencia (**sabr**):
+El desierto enseña paciencia
 
 Nada en el desierto se apura. Las estaciones se mueven lentamente. Las caravanas avanzan al ritmo de los camellos. Las negociaciones pueden durar semanas. La venganza puede esperar décadas. Un Temash aprende desde niño que la prisa es enemiga del sabio.
 
@@ -86,7 +83,7 @@ Esta paciencia se traduce en resistencia extraordinaria:
 
 Bajo la superficie estoica, los Temash son profundamente apasionados:
 
-La poesía es el arte supremo. Un Temash que puede componer versos es respetado más que un guerrero. Las competencias poéticas (**musha'ara**) son eventos sociales masivos donde poetas improvisan sobre temas dados por la audiencia. Un verso brillante puede cambiar el resultado de una negociación tribal, conquistar un corazón, o iniciar una guerra.
+La poesía es el arte supremo. Un Temash que puede componer versos es respetado más que un guerrero. Las competencias poéticas son eventos sociales masivos donde poetas improvisan sobre temas dados por la audiencia. Un verso brillante puede cambiar el resultado de una negociación tribal, conquistar un corazón, o iniciar una guerra.
 
 El amor es vivido con intensidad absoluta. La poesía amorosa Temash es la más apasionada del continente: describe al amado con metáforas del desierto (ojos como oasis, piel como arena dorada, voz como brisa nocturna). El amor prohibido (entre tribus enemigas, entre clases diferentes) es tema favorito que genera las más bellas composiciones.
 
@@ -100,7 +97,7 @@ La religión tradicional Temash es animismo sofisticado, profundamente conectado
 
 **Los Eternos** (Imeddukal): Espíritus ancestrales que habitan el desierto. No son dioses sino antepasados poderosos que tras la muerte se fusionaron con las fuerzas naturales del desierto. Cada tribu venera a sus propios Eternos, quienes protegen a descendientes y castigan a transgresores del Asuf.
 
-**La Gran Arena** (Tiniri): Concepto cósmico del desierto como entidad viva, consciente, que todo lo ve. La Gran Arena no es dios sino la suma de toda existencia: el calor, el frío, la sed, la saciedad, la vida, la muerte. Vivir en armonía con Tiniri es la meta espiritual.
+**La Gran Arena**: Concepto cósmico del desierto como entidad viva, consciente, que todo lo ve. La Gran Arena no es dios sino la suma de toda existencia: el calor, el frío, la sed, la saciedad, la vida, la muerte. Vivir en armonía con Tiniri es la meta espiritual.
 
 **Los Djinn**: Espíritus del desierto, caprichosos y peligrosos. No son buenos ni malvados sino imprevisibles, como tormentas de arena. Habitan ruinas abandonadas, oasis profundos, cuevas en montañas. Se les ofrece leche y dátiles para apaciguarlos; se les enfrenta con invocaciones si se vuelven hostiles.
 
@@ -116,7 +113,6 @@ La religión tradicional Temash es animismo sofisticado, profundamente conectado
 - **Nacimiento**: Recién nacido es presentado al cielo estrellado en su primera noche, para que los Eternos lo reconozcan
 - **Nombre**: Dado a los 7 días, elegido consultando los Eternos mediante lectura de arena
 - **Adolescencia** (hombres): Supervivencia solitaria en desierto durante 7 días. Si regresa, es hombre
-- **Adolescencia** (mujeres): Ceremonia de henna donde ancianas le enseñan secretos femeninos
 - **Matrimonio**: Tres días de celebración con poesía, música, intercambio de regalos
 - **Muerte**: Cuerpo enterrado directamente en la arena mirando al este (donde nace el sol). Lamentaciones durante 3 días. Se sacrifica un camello en honor del difunto
 
@@ -146,16 +142,16 @@ En las últimas décadas, el [Mekhatimismo](../religiones/mekhatimismo.md) ha ga
 
 ## La Tribu
 
-La **tribu** (tawsit) es la unidad social fundamental:
+La **tribu** es la unidad social fundamental:
 
-Cada tribu traza su linaje hasta un ancestro fundador, real o mítico, cuyas hazañas definen la identidad tribal. Las tribus se organizan en **confederaciones** (taqqbilit) para defensa mutua, comercio, y resolución de disputas. No existe autoridad centralizada; el poder es descentralizado y consensual.
+Cada tribu traza su linaje hasta un ancestro fundador, real o mítico, cuyas hazañas definen la identidad tribal. Las tribus se organizan en **confederaciones**  para defensa mutua, comercio, y resolución de disputas. No existe autoridad centralizada; el poder es descentralizado y consensual.
 
 **Jerarquía tribal**:
 - **Amghar**: Jefe tribal, elegido por asamblea de hombres adultos. No es hereditario; se elige al más capaz. Puede ser depuesto si gobierna mal
 - **Ineslemen**: Casta religiosa/erudita. Guardianes de la tradición oral, jueces, mediadores
-- **Imghad**: Guerreros y pastores. Mayoría de la población
-- **Inaden**: Herreros y artesanos. Casta especial, respetada por su habilidad pero temida por su conexión con el fuego y los djinn
-- **Iklan**: Esclavos/sirvientes. Históricamente capturados en incursiones; hoy día la esclavitud formal ha disminuido pero relaciones de servidumbre persisten
+- Guerreros y pastores. Mayoría de la población
+- Herreros y artesanos. Casta especial, respetada por su habilidad pero temida por su conexión con el fuego y los djinn
+- Esclavos/sirvientes. Históricamente capturados en incursiones; hoy día la esclavitud formal ha disminuido pero relaciones de servidumbre persisten
 
 **Asamblea** (Jemaa): Las decisiones importantes se toman colectivamente. Todos los hombres adultos tienen voz. Se debate hasta alcanzar consenso (no votación; la unanimidad es ideal). Las mujeres no participan formalmente pero influyen decisivamente a través de redes familiares.
 
@@ -165,7 +161,7 @@ Cada tribu traza su linaje hasta un ancestro fundador, real o mítico, cuyas haz
 
 **Matrimonio**:
 - Arreglado entre familias, pero el consentimiento de la novia es requerido (tradición Temash; ignorada en comunidades más conservadoras)
-- **Taggalt** (dote): El novio paga precio a la familia de la novia en ganado, plata, telas. Monto indica valor de la novia y riqueza del novio
+- Dote: El novio paga precio a la familia de la novia en ganado, plata, telas. Monto indica valor de la novia y riqueza del novio
 - Celebración de tres días: poesía, música, banquetes, competencias de equitación de camellos
 - Poligamia permitida (hasta cuatro esposas si se puede mantenerlas equitativamente) pero no común entre la mayoría
 - Divorcio permitido para ambos sexos (innovación Temash; mujeres pueden iniciar divorcio devolviendo la taggalt)
@@ -182,7 +178,7 @@ Cada tribu traza su linaje hasta un ancestro fundador, real o mítico, cuyas haz
 
 Las tribus del desierto mantienen estilo de vida nómada o semi-nómada:
 
-**La tienda** (ahaket): Vivienda icónica. Estructura de pieles de cabra o tejido de lana sobre armazón de madera, cubriendo 20-40 metros cuadrados. Interior dividido por cortina: lado masculino (donde se recibe huéspedes) y lado femenino (cocina, crianza, almacenamiento). La tienda pertenece a la mujer; en caso de divorcio, el hombre se va.
+**La tienda**: Vivienda icónica. Estructura de pieles de cabra o tejido de lana sobre armazón de madera, cubriendo 20-40 metros cuadrados. Interior dividido por cortina: lado masculino (donde se recibe huéspedes) y lado femenino (cocina, crianza, almacenamiento). La tienda pertenece a la mujer; en caso de divorcio, el hombre se va.
 
 **Caravanas**: Los Temash son los grandes caravaneros del continente. Rutas comerciales atraviesan el desierto conectando oasis, ciudades costeras y tierras lejanas. Una caravana grande puede incluir 200+ camellos, docenas de comerciantes, guardias armados, y viajeros. El **jefe de caravana** es posición de enorme prestigio y responsabilidad.
 
@@ -214,9 +210,9 @@ La cocina Temash es gastronomía de la escasez transformada en arte:
 
 **Platos emblemáticos**:
 - **Cuscús**: Sémola de trigo cocida al vapor con verduras y carne. Plato nacional, ceremonial, que se come con la mano derecha del plato comunal
-- **Tajín**: Estofado lento en olla de barro cónica, combinando carne con frutas secas y especias
-- **Mechoui**: Cordero entero asado lentamente en hoyo en la tierra, plato festivo supremo
-- **Harira**: Sopa espesa de lentejas, garbanzos y tomate, alimento cotidiano
+- Estofado lento en olla de barro cónica, combinando carne con frutas secas y especias
+- Cordero entero asado lentamente en hoyo en la tierra, plato festivo supremo
+- Sopa espesa de lentejas, garbanzos y tomate, alimento cotidiano
 - **Pan de arena**: Pan cocido enterrado en brasas y arena caliente (técnica nómada ancestral)
 - **Dátiles rellenos**: Con almendras o pasta de almendras, dulce ceremonial
 
@@ -236,9 +232,9 @@ La cocina Temash es gastronomía de la escasez transformada en arte:
 ## Artes y Artesanía
 
 **Poesía oral**: Arte supremo. Los **Imeddukalen** (poetas) son las personas más respetadas después de los ancianos y religiosos. Componen en dialecto Tamazight, con métricas complejas y metáforas elaboradas. Temas principales:
-- **Ghazal**: Poesía amorosa (el amado descrito como oasis, estrella, brisa)
-- **Qasida**: Poesía épica (hazañas guerreras, historia tribal, lamentos de exilio)
-- **Zajal**: Poesía satírica (burlas de enemigos, crítica social)
+- Poesía amorosa (el amado descrito como oasis, estrella, brisa)
+- Poesía épica (hazañas guerreras, historia tribal, lamentos de exilio)
+- *Poesía satírica (burlas de enemigos, crítica social)
 
 **Música**: Instrumentos tradicionales:
 - **Imzad**: Violín de una sola cuerda tocado exclusivamente por mujeres. Sonido evocativo del desierto. Maestras del imzad son veneradas
@@ -249,9 +245,7 @@ La cocina Temash es gastronomía de la escasez transformada en arte:
 - **Joyería de plata**: Las más elaboradas del continente. Cruces, amuletos, brazaletes con diseños geométricos que codifican identidad tribal y protección mística. Cada pieza es única
 - **Cuero**: Trabajado con habilidad extraordinaria: sillas de montar de camello, bolsas, fundas de espada, tapicería. Teñido con tintes naturales (rojo de henna, azul de índigo)
 - **Tejidos**: Alfombras y mantas con patrones geométricos abstractos. Cada tribu tiene diseños identificativos
-- **Metalurgia**: Los Inaden (herreros) forjan espadas rectas de doble filo, puñales curvos (koummya), puntas de lanza. El acero Temash es apreciado por su calidad
-
-**Caligrafía**: Los Temash tienen su propio sistema de escritura: el **Tifinagh**, caracteres geométricos derivados de tradiciones antiquísimas. Usado para inscripciones sagradas, marcas tribales, y mensajes secretos. Los Ineslemen preservan bibliotecas enteras escritas en Tifinagh sobre piel de gacela.
+- **Metalurgia**: Los herreros forjan espadas rectas de doble filo, puñales curvos (koummya), puntas de lanza. El acero Temash es apreciado por su calidad
 
 **Tatuajes y henna**: Las mujeres se decoran manos, pies, barbilla y frente con diseños geométricos en henna (temporales) o tatuajes (permanentes). Cada símbolo tiene significado: fertilidad, protección, identidad tribal, estado civil. Los hombres llevan tatuajes más discretos (marcas tribales en mano o antebrazo).
 
@@ -273,7 +267,7 @@ Relación de opresión, resentimiento y resistencia:
 
 Relación ambivalente pero crecientemente positiva:
 
-**Afinidad cultural**: Temash y tangarinos/letemitas comparten raíces culturales remotas (pueblos mediterráneos/del desierto). Comercio histórico conectaba Tamashkhan con Arshalán antes de la conquista ustilesa.
+**Afinidad cultural**: Comercio histórico conectaba Tamashkhan con Arshalán antes de la conquista ustilesa.
 
 **Mekhatimismo**: La religión arshalaní es puente cada vez más importante. Misioneros Mekhatimistas en barrios Temash son bienvenidos como aliados contra dominación Feynista/del Heredero.
 

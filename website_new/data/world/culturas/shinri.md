@@ -28,7 +28,7 @@ La ropa tradicional sigue siendo muy valorada, aunque está desapareciendo en ci
 
 **Geta/Zōri**: Sandalias de madera o paja elevadas, requieren marcha distintiva que se considera elegante.
 
-**Vestimenta Moderna**: En ciudades, especialmente Klonum, hombres de negocios y funcionarios han adoptado trajes occidentales al estilo ustilés. Mujeres jóvenes urbanas experimentan mezclando kimono con elementos modernos, creando estilos híbridos que escandalizan a tradicionalistas.
+**Vestimenta Moderna**: En ciudades, especialmente Klonum, hombres de negocios y funcionarios han adoptado trajes occidentales al estilo ustilés. 
 
 # Temperamento y Valores
 
@@ -46,12 +46,12 @@ Los Shinri son profundamente colectivistas. El grupo (familia, clan, empresa, na
 
 Los Shinri operan en una cultura de honor/vergüenza en lugar de culpa/inocencia:
 
-**Haji** (vergüenza) es la emoción social más poderosa. Perder reputación es peor que perder vida. Esto explica prácticas como:
+la vergüenza es la emoción social más poderosa. Perder reputación es peor que perder vida. Esto explica prácticas como:
 - **Seppuku** (suicidio ritual): Forma honorable de asumir responsabilidad por fracaso
 - Ataques suicidas en guerra (morir honorablemente es preferible a rendirse deshonrosamente)
 - Ocultamiento de problemas familiares (enfermedad mental, deudas) para evitar vergüenza
 
-**Kao** (face, reputación): Debe protegerse a toda costa. Mejor mentir que admitir publicamente debilidad o error.
+La reputación debe protegerse a toda costa. Mejor mentir que admitir publicamente debilidad o error.
 
 ## Bushidō: El Camino del Guerrero
 
@@ -62,8 +62,6 @@ Aunque la era del samurái ha terminado oficialmente, el código bushidō sigue 
 - **Desprecio al miedo y la muerte**
 - **Perfección en el oficio**
 - **Frugalidad** (ostentación vulgar es despreciada)
-
-En contexto moderno, empresarios hablan de "servir a la corporación con espíritu samurái", trabajando hasta la extenuación sin quejarse.
 
 ## Estética y Belleza
 
@@ -76,35 +74,26 @@ Los Shinri tienen apreciación profunda por la belleza sutil:
 - **Natural** sobre artificial
 - **Impermanencia** celebrada, no negada
 
-Esto se refleja en:
-- Jardines zen de grava rastrillada
-- Arreglos florales minimalistas (ikebana)
-- Cerámica "imperfecta" valorada más que porcelana perfecta
-- Poesía de 17 sílabas (haiku) capturando momentos efímeros
-
-## Paradoja: Modernidad vs Tradición
-
 Actualmente, los Shinri viven tensión extrema entre dos imperativos contradictorios:
 - **Preservar** tradiciones milenarias y armonía con espíritus
 - **Modernizar** agresivamente para evitar colonización
 
-Jóvenes urbanizados abrazan tecnología, moda occidental, ideas progresistas. Rurales y ancianos los ven como traidores a la identidad Shinri. Esta división generacional está rasgando el tejido social.
+Jóvenes urbanizados abrazan tecnología, moda extranjera, ideas progresistas. Rurales y ancianos los ven como traidores a la identidad Shinri. Esta división generacional está rasgando el tejido social.
 
 # Espiritualidad y Religión
 
 ## La Fe Espiritual
 
-Los Shinri practican la forma más organizada de [Fe Espiritual](../religiones/fe-espiritual.md) en Raldamain. A diferencia del animismo informal de otras culturas, han sistematizado la veneración de kami en ortodoxia compleja.
+Los Shinri practican la forma más organizada de [Fe Espiritual](../religiones/fe-espiritual.md) en Raldamain. A diferencia del animismo informal de otras culturas, han sistematizado la veneración de los espíritus en ortodoxia compleja.
 
-**Los Kami:**
-Se reconocen 8 millones de kami (número simbólico significando "innumerables"). Van desde:
-- **Kami cósmicos**: Amatsukami (sol), Tsukuyomi (luna), Susanoo (tormenta)
-- **Kami de naturaleza**: Cada montaña, río, árbol antiguo tiene guardián
-- **Kami ancestrales**: Antepasados venerados se convierten en protectores familiares
-- **Kami de objetos**: Herramientas usadas durante 100 años ganan alma
+**Espíritus:**
+Se reconocen numerosos espíritus, reperesentando elementos naturales, conceptos y objetos y mucho más. Los más destacables son los Primigenios, los cuales están atados a regiones específicas y cuentan con la veneración de grandes familias. Van desde:
+- **Espíritus primigenios**: Suzakushin (fénix de fuego), Seiryuu (dragón de hielo), Chiso-Shitari (tortuga de aguas), Kizakage (tengu de vientos), Halai-Aem (dama de la tierra), Tamashi-Kuso (señor de los muertos) y muchos más
+- **Espíritus de naturaleza**: Cada montaña, río, árbol antiguo tiene guardián
+- **Espíritus ancestrales**: Antepasados venerados se convierten en protectores familiares
 
 **Concepto de Pureza:**
-Los Shinri están obsesionados con **kegare** (impureza) vs **harae** (purificación). Todo contacto con muerte, sangre, enfermedad causa impureza que debe limpiarse ritualmente.
+Los Shinri están obsesionados con impureza e imperfecfción Todo contacto con muerte, sangre, enfermedad causa impureza que debe limpiarse ritualmente.
 
 **Prácticas Diarias:**
 - Abluciones matutinas con agua fría
@@ -113,7 +102,7 @@ Los Shinri están obsesionados con **kegare** (impureza) vs **harae** (purificac
 - Visitar santuario local regularmente
 - Agradecer a objetos antes de desecharlos
 
-**Santuarios (Jinja):**
+**Santuarios Espirituales**:
 Arquitectura distintiva:
 - Torii (portales rojos) marcan entrada a espacio sagrado
 - Purificación con agua en fuente antes de entrar
@@ -122,27 +111,27 @@ Arquitectura distintiva:
 - Ofrendas de comida, sake, dinero
 - Amuletos protectores (omamori) vendidos
 
-## La Senda de Armonía (Controversia)
+## La Senda de Armonía
 
 La nueva religión estatal creada por el Encarnado es fuente de división:
 
-**Defensores** argumentan que adapta tradición a realidad moderna, que subordinar kami al Tennō garantiza orden, que industrializar "áreas de bajo valor espiritual" es pragmatismo necesario.
+**Defensores** argumentan que adapta tradición a realidad moderna, que subordinar espíritus al Emperador garantiza orden, que industrializar "áreas de bajo valor espiritual" es pragmatismo necesario.
 
-**Críticos** la denuncian como prostitución de fe verdadera, que los sacerdotes de la Senda mienten cuando dicen "kami bendicen" políticas destructivas, que es herramienta política disfrazada de religión.
+**Críticos** la denuncian como prostitución de fe verdadera, que los sacerdotes de la Senda mienten cuando dicen "espíritus bendicen" políticas destructivas, que es herramienta política disfrazada de religión.
 
 Esta división religiosa refleja y profundiza divisiones sociales más amplias.
 
 # Vida Social y Costumbres
 
-## La Familia (Ie)
+## La Familia 
 
 La familia extendida es la unidad social básica, pero de forma diferente a occidentales:
 
-El **ie** (casa/linaje) trasciende individuos. No es solo personas vivas, incluye ancestros muertos y descendientes no nacidos. El bien del ie está infinitamente por encima del bien individual.
+El familia trasciende individuos. No es solo personas vivas, incluye ancestros muertos y descendientes no nacidos. El bien del ie está infinitamente por encima del bien individual.
 
 **Primogenitura estricta**: El hijo mayor hereda todo y responsabilidad de mantener el ie. Hijos menores deben encontrar su camino (tradicionalmente servicio militar, sacerdocio, adopción a familias sin herederos).
 
-**Matrimonios arreglados**: Especialmente entre nobles y clase media. Unión de dos ie, no dos individuos. Amor romántico es irrelevante o se espera que se desarrolle después.
+**Matrimonios arreglados**: Especialmente entre nobles y clase media. Unión de dos familias, no dos individuos. Amor romántico es irrelevante o se espera que se desarrolle después.
 
 **Piedad filial extrema**: Hijos deben obedecer y cuidar padres incondicionalmente. Asilos de ancianos son escándalo vergonzoso.
 
@@ -158,12 +147,6 @@ La cocina Shinri enfatiza ingredientes frescos, presentación estética, y prepa
 - **Tempura**: Fritura ligera de verduras/mariscos
 - **Sake**: Vino de arroz, beber juntos fortalece lazos sociales
 
-**Etiqueta:**
-- Nunca pinchar comida con palillos (recuerda incienso funerario)
-- Sorber fideos ruidosamente es aceptable (incluso cortés)
-- Terminar todo es cortés (desperdiciar es insulto)
-- Reverenciar comida antes de comer ("itadakimasu")
-
 ## Baños Públicos (Onsen/Sentō)
 
 Baños comunales tienen importancia cultural enorme:
@@ -177,39 +160,6 @@ Rituales:
 - Sentarse en silencio contemplativo
 - Conversaciones tranquilas permitidas
 - Lugar de igualdad social (todos desnudos, status desaparece)
-
-## Festivales (Matsuri)
-
-El calendario está lleno de festivales religiosos/estacionales:
-
-- **Hanami** (primavera): Observar flores de cerezo, meditar sobre impermanencia
-- **O-Bon** (verano): Honrar muertos, se cree que ancestros visitan
-- **Festivales de cosecha** (otoño): Agradecer a kami de arroz
-- **Año Nuevo**: Más importante, limpiar todo, saldar deudas, comenzar fresco
-
-Festivales incluyen:
-- Procesiones portando mikoshi (santuarios portátiles)
-- Danzas tradicionales
-- Comida de festival
-- Juegos y competencias
-- Fuegos artificiales
-
-## Artes Tradicionales
-
-Los Shinri han perfeccionado numerosas formas de arte que requieren décadas dominar:
-
-**Ceremonia del té (Chadō)**: No es solo beber té, es meditación en movimiento. Cada gesto ha sido refinado durante siglos. Requiere años de estudio.
-
-**Ikebana**: Arreglo floral como filosofía. No es decoración, es expresión de armonía entre cielo, tierra y humanidad.
-
-**Caligrafía (Shodō)**: Escribir kanji con pincel es arte marcial espiritual. El carácter revela alma del escritor.
-
-**Artes marciales (Budō)**: Kenjutsu (espada), kyūdō (arco), judo, karate. No son solo combate, son caminos espirituales de autodisciplina.
-
-**Teatro Noh**: Drama de máscaras extremadamente estilizado, movimientos lentos, historias de espíritus y honor.
-
-**Teatro Kabuki**: Drama popular más dinámico, maquillaje elaborado, actuación exagerada.
-
 # Relaciones con Otros Pueblos
 
 ## Ustileses

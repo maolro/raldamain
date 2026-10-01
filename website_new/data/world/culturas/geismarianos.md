@@ -28,7 +28,7 @@ La ropa geismariana prioriza la funcionalidad sobre la estética:
 
 **Vestimenta cotidiana:**
 - **Wams**: Jubón acolchado que sirve como protección básica y abrigo. Los colores identifican la región de origen.
-- **Landsknechttracht**: Los mercenarios de mayor rango visten con exuberancia deliberada: mangas acuchilladas de colores brillantes, gorras con plumas, y calzones bombachos. Esta vestimenta ostentosa es un símbolo de estatus que dice "puedo permitirme vestir así porque nadie se atreve a atacarme".
+- Los mercenarios de mayor rango visten con exuberancia deliberada: mangas acuchilladas de colores brillantes, gorras con plumas, y calzones bombachos. Esta vestimenta ostentosa es un símbolo de estatus que dice "puedo permitirme vestir así porque nadie se atreve a atacarme".
 - **Botas altas**: De cuero resistente, diseñadas para marchas largas.
 
 **Armadura:**
@@ -36,14 +36,11 @@ La ropa geismariana prioriza la funcionalidad sobre la estética:
 - Yelmos de media cara con protección nasal
 - Escudos redondos decorados con el emblema personal o de la compañía
 
-**Distintivos de rango:**
-Los mercenarios de la Liga llevan un **brazalete de rango** en el antebrazo izquierdo: cuero para rangos bajos, bronce para intermedios, plata para los primeros cien. El color de las plumas en el sombrero también indica rango y especialidad.
-
 # Historia
 
 ## La Gran Migración (Siglos XXI-XXIII)
 
-Los ancestros de los Geismarianos eran tribus nómadas del norte que fueron empujadas hacia el sur durante las grandes invasiones bárbaras que siguieron al colapso del [Imperio Nataneo](../naciones/imperio-nataneo.md). Según sus propias sagas, huyeron de una horda [tangarina](tangarinos.md) que arrasó su patria original, un trauma que los Geismarianos recuerdan como **"Der Große Untergang"** (La Gran Caída).
+Los ancestros de los Geismarianos eran tribus nómadas del norte que fueron empujadas hacia el sur durante las grandes invasiones bárbaras que siguieron al colapso del [Imperio Nataneo](../naciones/imperio-nataneo.md). Según sus propias sagas, huyeron de un temible espíritu del invierno que arrasó su patria original, un trauma que los Geismarianos recuerdan como *La Gran Caída*.
 
 Llegaron a las fértiles llanuras fluviales entre lo que hoy es [Mazarín](../naciones/reino-de-mazarin.md) y las tierras que eventualmente se convertirían en [Arshalán](../naciones/imperio-de-arshalan.md). El Imperio Nataneo, en sus últimos estertores, los recibió con reticencia, permitiéndoles asentarse como foederati (tropas auxiliares) en las fronteras a cambio de servicio militar.
 
@@ -66,7 +63,7 @@ Geismaria se encontró atrapada entre dos potencias que reclamaban su alma:
 Lo que comenzó como tensiones religiosas estalló en las **Guerras de los Tres Credos** (3780-3820), cuatro décadas de conflicto devastador donde feynistas, mekhatimistas y seguidores de la Fe Espiritual se masacraron mutuamente mientras Mazarín y Arshalán intervenían para apoyar a sus respectivos aliados.
 
 Las guerras fueron apocalípticas para Geismaria:
-- Ciudades enteras incendiadas por ejércitos cruzados o santos
+- Ciudades enteras incendiadas por ejércitos
 - Poblaciones masacradas por su fe (o la fe que se les atribuía)
 - Hambrunas generalizadas al destruirse cosechas y ganado
 - Se estima que la población geismariana se redujo en un tercio
@@ -81,7 +78,7 @@ Cuando las grandes potencias finalmente se agotaron y retiraron sus ejércitos, 
 
 ## La Fundación de los Reinos Libres (3820)
 
-En 3820, los capitanes mercenarios más poderosos firmaron el **Tratado de Nivenburg**, estableciendo los [Reinos Libres](../lugares/reinos-libres.md) y la [Liga de Mercenarios](../facciones/liga-mercenarios.md). Los principios fundacionales fueron claros: ninguna potencia extranjera gobernaría Geismaria; todas las fes serían toleradas mientras no sirvieran a intereses foráneos; y la Liga sería la institución que garantizaría la independencia de todos.
+En 3820, los capitanes mercenarios más poderosos firmaron el **Tratado de Dagestadt**, estableciendo los [Reinos Libres](../lugares/reinos-libres.md) y la [Liga de Mercenarios](../facciones/liga-mercenarios.md). Los principios fundacionales fueron claros: ninguna potencia extranjera gobernaría Geismaria; todas las fes serían toleradas mientras no sirvieran a intereses foráneos; y la Liga sería la institución que garantizaría la independencia de todos.
 
 ## La Era Moderna (3820-Presente)
 
@@ -138,29 +135,18 @@ Para muchos Geismarianos, especialmente los mercenarios profesionales, la **comp
 
 La **taberna** es el centro de la vida social geismariana. No es solo un lugar para beber (aunque se bebe mucho); es donde se negocian contratos, se reclutan soldados, se cierran acuerdos comerciales, y se resuelven disputas. Cada ciudad geismariana tiene docenas de tabernas, cada una con su propia personalidad y clientela.
 
-## Nombres Geismarianos
-
-Los nombres siguen patrones germánicos:
-
-**Nombres masculinos:** Konrad, Heinrich, Friedrich, Wolfgang, Dietrich, Albrecht, Ludwig, Siegfried, Gottfried, Bernhard, Wilhelm, Ulrich
-**Nombres femeninos:** Hildegard, Brunhilde, Ingrid, Gretchen, Liesel, Elke, Gudrun, Sigrid, Waltraud, Irmgard
-
-Los apellidos frecuentemente reflejan oficios o características: Eisenherz (corazón de hierro), Schwertträger (portador de espada), Blutfaust (puño de sangre), Steinbrecher (rompe-piedras).
-
 ## Comida y Bebida
 
 La cocina geismariana es contundente y diseñada para alimentar guerreros:
 
 **Platos típicos:**
-- **Schweinshaxe**: Codillo de cerdo asado, plato festivo por excelencia
-- **Würste**: Embutidos de todo tipo, llevados por mercenarios como provisión de marcha
-- **Kartoffelsuppe**: Sopa espesa de tubérculos y verduras
-- **Brot und Käse**: Pan negro denso con queso curado, la comida del soldado
-- **Strudel**: Pastel enrollado de frutas o carne
+- Codillo de cerdo asado, plato festivo por excelencia
+- Embutidos de todo tipo, llevados por mercenarios como provisión de marcha
+- Sopa espesa de tubérculos y verduras
+- Pan negro denso con queso curado, la comida del soldado
 
 **Bebidas:**
 - **Cerveza**: La bebida nacional. Cada región, cada ciudad, cada taberna tiene su propia receta. Las competencias de bebida son eventos sociales. La cerveza geismariana es famosa en todo el continente.
-- **Schnaps**: Aguardiente fuerte para ocasiones especiales o noches frías
 - **Hidromiel**: Popular en regiones del sur cercanas a territorio élfico
 
 ## Arte y Cultura
@@ -198,6 +184,4 @@ Los [elfos](elfos.md) de [Thiamashte](../naciones/reino-de-thiamashte.md) son ve
 
 Los [Tapeties](tapeties.md) son socios comerciales valiosos que financian compañías mercenarias. Los [Kratenses](kratenses.md) son vistos con curiosidad e incluso simpatía como otro pueblo pequeño que lucha por su independencia.
 
----
 
-*"Dicen que no tenemos lealtad. Mentira. Somos leales al contrato, leales a la compañía, leales a nuestra tierra. Lo que no somos es leales a reyes que nos enviarían a morir por su trono mientras ellos banquetean en palacios. Si quieres nuestra espada, ofrece algo que valga la pena. Y paga por adelantado."* — Hildegard Blutfaust, Capitana de la Compañía del Cuervo Negro

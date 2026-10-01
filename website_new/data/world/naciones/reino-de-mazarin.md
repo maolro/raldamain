@@ -38,18 +38,17 @@ Kratoi había estado durante siglos en la órbita de influencia Mazarina, pero l
 
 Durante su reinado, [el Pacto](../facciones/pacto.md), una organización secreta ilustrada y anticlerical, ganó enorme influencia en la corte Mazarina. Los agentes del Pacto se infiltraron en el gobierno, controlando ministros clave y dirigiendo la política exterior desde las sombras. Utilizaron a Mazarín como un estado títere para frenar el expansionismo ustilés, empujando al anciano rey a otra guerra desastrosa contra Ustilus que acabó en ruina económica.
 
-Gerashim IX murió en 4002, dos años antes de la desaparición de Feyn. La avanzada edad de Gerashim hizo que su hijo Latshezar IV, ya un hombre mayor, durase poco en el trono. A él le sucedería su nieto Kaleyan III, un monarca melancólico y depresivo que dedicó su tiempo a escribir poesía en lugar de gobernar, delegando casi todas sus funciones gubernamentales a ministros influenciados por el Pacto. 
+Gerashim IX murió en 4002, dos años antes de la desaparición de Feyn. La avanzada edad de Gerashim hizo que su hijo Latshezar IV, ya un hombre mayor, durase poco en el trono y moriría en el año 4004. A él le sucedería su nieto Kaleyan III, un monarca melancólico y depresivo que dedicó su tiempo a escribir poesía en lugar de gobernar, delegando casi todas sus funciones gubernamentales a ministros influenciados por el Pacto. 
 
 # Gobierno
 
 Mazarín es una monarquía absoluta en teoría, pero en la práctica el poder está fragmentado entre el rey, la alta nobleza y las fuerzas invisibles del [Pacto](../facciones/pacto.md). El sistema de gobierno se basa en complejos acuerdos de vasallaje entre el monarca y las grandes casas nobles, quienes controlan vastos territorios con casi total autonomía.
 
-El monarca teóricamente posee poder absoluto, pero la realidad es muy diferente. El actual Netyalko VII ahora no es más que un niño, haciendo así que todo el poder real se encuentre en numerosas figuras de la camarilla. La alta nobleza, organizada en la Asamblea o Duma de Boyardos, acapara el verdadero poder legislativo y financiero. Estos nobles, muchos de los cuales tienen linajes tan antiguos o más que la propia dinastía real, se oponen ferozmente a cualquier intento de reforma que amenace sus privilegios.
+El monarca teóricamente posee poder absoluto, pero la realidad es muy diferente. El actual Kaleyan III dedica poco tiempo a la governanza, haciendo así que todo el poder real se encuentre en numerosas figuras de la camarilla. La alta nobleza, organizada en la Asamblea o Duma de Boyardos, acapara el verdadero poder legislativo y financiero. Estos nobles, muchos de los cuales tienen linajes tan antiguos o más que la propia dinastía real, se oponen ferozmente a cualquier intento de reforma que amenace sus privilegios.
 
 La burocracia Mazarina es notoriamente corrupta e ineficiente. Los cargos gubernamentales se venden abiertamente al mejor postor, y la justicia favorece descaradamente a los ricos y poderosos. El Pacto ha infiltrado profundamente este sistema, controlando a varios ministros clave y utilizando a Mazarín como pieza en su juego contra Ustilus.
 
 El Patriarcado de Svaikal, que antaño fue una institución poderosa y respetada, ahora es poco más que un brazo ceremonial del estado. El actual Patriarca Mikhail III es un anciano corrupto más interesado en sus concubinas y su bodega de vinos que en asuntos espirituales, contribuyendo cada vez más al rechazo popular del decaído Feynismo por tradiciones espirituales.
-
 
 # Economía
 
@@ -75,7 +74,7 @@ Un elemento común de la cultura mazarina es la obsesión por su glorioso pasado
 
 El [Feynismo](../religiones/feynismo.md) fue durante siglos la religión dominante de Mazarín, pero la institución eclesiástica cayó en profunda corrupción e hipocresía. Los sacerdotes vivían en lujo mientras predicaban ascetismo, el Patriarcado vendía indulgencias abiertamente, y la Iglesia se convirtió en poco más que un instrumento de control social para la nobleza. La desaparición de Feyn en el año 4000 fue el golpe final que expuso el vacío espiritual de la institución.
 
-Hoy en día, el Feynismo en Mazarín es principalmente una tradiciónvacía que la nobleza mantiene por costumbre. La verdadera fe religiosa ha migrado hacia la [Fe Espiritual](../religiones/fe-espiritual.md), un retorno a las antiguas creencias animistas de los antepasados pre-Feynistas. Chamanes y curanderos populares han ganado enorme influencia en las aldeas rurales, donde la gente busca consuelo en los espíritus de la naturaleza que, a diferencia de Feyn, nunca los abandonaron.
+Hoy en día, el Feynismo en Mazarín es principalmente una tradición vacía que la nobleza mantiene por costumbre. La verdadera fe religiosa ha migrado hacia la [Fe Espiritual](../religiones/fe-espiritual.md), un retorno a las antiguas creencias animistas de los antepasados pre-Feynistas. Chamanes y curanderos populares han ganado enorme influencia en las aldeas rurales, donde la gente busca consuelo en los espíritus de la naturaleza que, a diferencia de Feyn, nunca los abandonaron.
 
 Existe también un sincretismo peculiar donde muchos Mazarinos mantienen prácticas Feynistas superficiales, como serían los bautizos o funerales, mientras en secreto consultan a chamanes, hacen ofrendas a espíritus ancestrales y practican rituales paganos en los bosques. La Iglesia oficial condena estas prácticas pero, al final, carece del poder para detenerlas.
 
@@ -123,15 +122,15 @@ Mazarín mantiene relaciones cordiales con los Reinos Libres, quienes los ven co
 
 La ciudad tiene un ambiente más cosmopolita que la capital. Mercaderes de Ustilus, Thas-Tapet e incluso elfos operan aquí. Hay barrios enteros de trabajadores industriales que viven en condiciones miserables pero que al menos han escapado de la servidumbre rural. Es también un hervidero de activismo político ya que células del Pacto operan abiertamente disfrazadas como "círculos de lectura", y hay murmuraciones de movimientos revolucionarios entre los trabajadores.
 
-## Novotsar
+## Novostar
 
-**Novotsar** fue fundada como una "nueva capital" por el Rey Dragomir II hace 200 años en un intento de modernizar el reino. La idea era construir una ciudad planificada con calles rectilíneas, arquitectura moderna y servicios adecuados. El proyecto consumió el tesoro real durante décadas y el resultado es... extraño.
+**Novostar** fue fundada como una "nueva capital" por el Rey Dragomir II hace 200 años en un intento de modernizar el reino. La idea era construir una ciudad planificada con calles rectilíneas, arquitectura moderna y servicios adecuados. El proyecto consumió el tesoro real durante décadas y el resultado es... extraño.
 
-Novotsar es una ciudad fantasma de palacios vacíos y avenidas desiertas. Los nobles se negaron a abandonar Svaikal, así que los edificios monumentales se construyeron pero nunca se habitaron. Hoy tiene solo 50,000 residentes, principalmente burócratas de nivel medio forzados a vivir allí y sus familias resentidas. Es un monumento a la vanidad real y al fracaso de la modernización Mazarina. Aún así, algunos visionarios ven potencial en Novotsar y el Pacto la está considerando como posible base de operaciones.
+Novostar es una ciudad fantasma de palacios vacíos y avenidas desiertas. Los nobles se negaron a abandonar Svaikal, así que los edificios monumentales se construyeron pero nunca se habitaron. Hoy tiene solo 50,000 residentes, principalmente burócratas de nivel medio forzados a vivir allí y sus familias resentidas. Es un monumento a la vanidad real y al fracaso de la modernización Mazarina. Aún así, algunos visionarios ven potencial en Novostar y el Pacto la está considerando como posible base de operaciones.
 
 ## La Estepa Blanca
 
-No es una ciudad sino una región: las vastas llanuras nevadas que cubren el norte de Mazarín. Aquí viven tribus nómadas que nunca fueron completamente asimiladas al reino, los **Stepnyaki**, guerreros-pastores que mantienen las antiguas tradiciones y rechazan la autoridad del Zarin. Son famosos jinetes y arqueros, y ocasionalmente realizan incursiones en territorios colonizados. El gobierno central ha intentado someterlos durante siglos sin éxito.
+No es una ciudad sino una región: las vastas llanuras nevadas que cubren el norte de Mazarín. Aquí viven tribus nómadas que nunca fueron completamente asimiladas al reino, los **Pechenyak**, guerreros-pastores que mantienen las antiguas tradiciones y rechazan la autoridad del Zarin. Son famosos jinetes y arqueros, y ocasionalmente realizan incursiones en territorios colonizados. El gobierno central ha intentado someterlos durante siglos sin éxito.
 
 La Estepa Blanca es también el hogar de criaturas mágicas peligrosas: manadas de lobos invernales, espíritus helados, y ocasionalmente dragones menores. Es una tierra salvaje e indómita que representa todo lo que Mazarín fue antes de ser "civilizado" por el Feynismo.
 

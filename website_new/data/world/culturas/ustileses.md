@@ -19,44 +19,6 @@ Los Ustileses presentan rasgos de clara herencia mediterránea, resultado de la 
 Piel morena clara a olivácea, que se broncea fácilmente bajo el sol generoso de sus tierras. Cabello predominantemente negro o castaño muy oscuro, típicamente ondulado, aunque no es raro encontrar castaños más claros especialmente en las provincias occidentales (herencia Deverenta). Ojos oscuros (marrón, negro, avellana) son los más comunes, aunque los ojos verdes aparecen con frecuencia entre la aristocracia, considerados marca de belleza y linaje puro. Narices rectas o ligeramente aguileñas, mandíbulas marcadas, pómulos definidos. Los hombres son de estatura media-alta (172cm promedio), complexión atlética o robusta; las mujeres tienden a curvas pronunciadas que la estética ustilesa celebra abiertamente.
 
 Los hombres ustileses cuidan escrupulosamente su apariencia: barba recortada con precisión (estilos específicos según clase social y profesión), cabello peinado con aceites, uñas limpias. La vanidad masculina es socialmente aceptada, incluso admirada. Un hombre desaliñado es un hombre sin honor. Las mujeres invierten considerable esfuerzo en su presentación: cabello elaboradamente recogido con horquillas y tocados, piel cuidada con ungüentos y cosméticos, movimientos ensayados para proyectar gracia y dignidad.
-
-## Vestimenta
-
-La moda ustilesa es una declaración de identidad, estatus y lealtad:
-
-**Nobleza masculina**:
-- **Jubón** (giubbetto): Prenda ajustada al torso, frecuentemente acolchada, de seda o terciopelo, con bordados intrincados
-- **Calzas**: Pantalones ajustados que marcan piernas, símbolo de virilidad
-- **Capa corta** (mantello): Drapeada sobre un hombro, sujeta con broche de la casa familiar
-- **Botas altas** de cuero lustrado
-- **Sombrero emplumado** para nobles; birrete para funcionarios
-- **Espada ceremonial**: Ropera al cinto, siempre visible; ir desarmado es deshonra
-
-**Nobleza femenina**:
-- **Vestidos** de múltiples capas con corpiño ajustado y faldas amplias
-- **Escote**: Moderado pero presente; la moda ustilesa celebra la figura femenina
-- **Mangas acuchilladas**: Con tela de color contrastante visible entre cortes
-- **Mantilla** de encaje para actos religiosos
-- **Abanicos**: Objeto social esencial, lenguaje codificado de coqueteo y diplomacia
-
-**Pueblo llano**:
-- Ropa más simple pero imitando estilos nobles (con materiales baratos)
-- **Camisa** holgada, pantalones anchos, faja al cinto
-- **Chaleco** de lana o cuero
-- **Alpargatas** de esparto en sur; botas de cuero en norte
-- Colores sobrios (marrón, beige, gris) excepto en festividades
-
-**Colores significativos**:
-- **Negro**: Elegancia suprema, favorito de la aristocracia (difícil y caro de teñir bien)
-- **Rojo** y **dorado**: Colores imperiales, uso restringido a la familia imperial y altos cargos
-- **Blanco**: Pureza religiosa
-- **Púrpura**: Asociado con la nobleza antigua, cada vez más raro
-
-**Militares y Caballeros**:
-- Armaduras ceremoniales de acero bruñido, grabadas con motivos religiosos
-- [Caballeros de Ustilus](../facciones/caballeros-de-ustilus.md): Capas blancas con cruz de fuego bordada en rojo, armaduras relucientes, yelmos con penachos de plumas
-- Soldados regulares: Uniformes estandarizados (innovación ustilesa), gambeson con colores provinciales
-
 # Temperamento y Valores
 
 ## Orgullo y Honor
@@ -133,7 +95,7 @@ Para los Ustileses, la religión no es solo creencia espiritual; es identidad na
 
 A pesar de la fe oficial, los Ustileses mantienen creencias populares abundantes:
 
-- **Mal de ojo**: Mirada envidiosa puede causar desgracia. Protección mediante amuletos (cuerno rojo, mano de Feyn)
+- **Mal de ojo**: Mirada envidiosa puede causar desgracia. Protección mediante amuletos
 - **Presagios**: Gatos negros, espejos rotos, búhos cantando predicen desgracia
 - **Santos milagreros**: Cada oficio tiene santo protector; artesanos, marineros, soldados invocan ayuda específica
 - **Fantasmas**: Almas de los no incinerados correctamente vagan causando problemas
@@ -171,39 +133,6 @@ La sociedad ustilesa es rigidamente estratificada pero con movilidad posible:
 
 **Niños**: La infancia es corta. A los 7 años, niños de noble cuna son enviados como pajes a otras casas; a los 14, son escuderos o aprendices. Niñas aprenden administración del hogar, costura, música, lectura, y las artes sutiles de la diplomacia social.
 
-## Comida y Bebida
-
-La cocina ustilesa es una de las más refinadas del continente, celebrando la abundancia de sus tierras fértiles:
-
-**Ingredientes base**: Aceite de oliva (sagrado, presente en todo), tomates, pimientos, ajo, cebollas, hierbas aromáticas (albahaca, romero, tomillo, orégano). Pan de trigo es alimento fundamental.
-
-**Platos emblemáticos**:
-- **Pasta fresca**: En cientos de variedades, desde espaguetis hasta ravioles, con salsas regionales distintivas. Deverentio es capital gastronómica
-- **Risotto**: Arroz cocinado lentamente con caldo, azafrán y queso (plato de las provincias orientales)
-- **Paella**: Arroz con mariscos, carne, verduras (plato costero)
-- **Cordero asado**: Con hierbas y ajo, plato festivo por excelencia
-- **Embutidos curados**: Jamón serrano, chorizo, salami; cada provincia tiene especialidad
-- **Quesos**: Cientos de variedades regionales; los más apreciados maduran años en cuevas
-- **Gazpacho**: Sopa fría de tomate, pepino y ajo para veranos calurosos
-
-**Postres**:
-- **Cannoli**: Tubos de masa frita rellenos de crema dulce
-- **Turrón**: Almendras y miel, dulce navideño
-- **Tiramisú**: Capas de bizcocho empapado en café con crema
-- **Churros**: Masa frita servida con chocolate espeso
-
-**Bebidas**:
-- **Vino**: Institución cultural. Cada región tiene viñedos; tintos corpulentos del centro, blancos frescos de la costa, espumosos del oeste. Beber vino es ritual social; agua sin vino es para enfermos
-- **Sangría**: Vino con frutas, bebida festiva popular
-- **Café**: Introducido recientemente (importado de tierras Arshalaníes), ha conquistado ciudades. Cafés son nuevos centros de socialización
-- **Grappa**: Aguardiente destilado de orujo, digestivo potente
-
-**Etiqueta alimentaria**:
-- Comida es acto social, nunca solitario. Comer solo es triste; comer en familia es sagrado
-- Comida principal al mediodía (puede durar 2 horas con múltiples platos)
-- Sobremesa: Conversación larga después de comer, con café y licor. Negocios importantes se cierran en sobremesa
-- Gesticular mientras se come es normal y esperado
-- Nunca elogiar la comida de un rival frente a tu anfitrión
 
 ## Entretenimiento y Vida Social
 
@@ -211,9 +140,7 @@ La cocina ustilesa es una de las más refinadas del continente, celebrando la ab
 
 **Teatro y ópera**: Los Ustileses son creadores de la ópera, combinando drama, música y espectáculo visual. Las funciones de ópera son eventos sociales donde la aristocracia exhibe riqueza y forma alianzas. Los palcos son más importantes que el escenario. Dramaturgos famosos son celebridades nacionales.
 
-**Corridas de toros**: En provincias del sur, espectáculo popular donde matadores enfrentan toros bravos en arenas. Combina riesgo mortal con estética coreográfica. Los mejores matadores son héroes populares.
-
-**Carnaval**: Festival anual antes de cuaresma donde toda norma social se invierte: nobles se disfrazan de campesinos, hombres de mujeres, la autoridad es burlada. Máscaras permiten anonimato y libertinaje. El Carnaval de Deverentio es legendario: dura dos semanas.
+**Carnaval**: Festival anual donde toda norma social se invierte: nobles se disfrazan de campesinos, hombres de mujeres, la autoridad es burlada. Máscaras permiten anonimato y libertinaje. El Carnaval de Deverentio es legendario: dura dos semanas.
 
 **Juegos de azar**: Dados, cartas, apuestas deportivas. Los Ustileses son jugadores compulsivos; la adicción al juego ha arruinado más casas nobles que las guerras.
 
@@ -302,23 +229,3 @@ Son esos mercaderes sin patria ni honor que venden a todos, traicionan a todos, 
 Los [Jadditas](jaddi.md) representan problema interno:
 
 Antes de la Iglesia del Heredero, los Jadditas eran Feynistas devotos perfectamente integrados. Con la nueva fe, su insistencia en el Feynismo viejo los ha convertido en herejes perseguidos. Muchos Ustileses sienten culpa secreta por la persecución (los Jadditas eran vecinos, socios comerciales, amigos), pero el fanatismo de la nueva Iglesia no admite matices.
-
-# El Ustilés Moderno: Entre la Gloria y el Abismo
-
-La generación actual de Ustileses vive en el cruce más peligroso de su historia:
-
-**La crisis de fe**: La desaparición de Feyn dejó un vacío que la Iglesia del Heredero llenó con fervor renovado, pero debajo persiste la duda. ¿Fue todo mentira? ¿Merecían realmente el destino prometido? Algunos han respondido con fanatismo redoblado; otros con nihilismo creciente; unos pocos con búsqueda de nuevas verdades.
-
-**División política**: Las Cortes (reformistas seculares) contra los [Caballeros de Ustilus](../facciones/caballeros-de-ustilus.md) (fanáticos religiosos) contra la nueva Iglesia del Heredero (que controla al emperador Fileon). Tres facciones irreconciliables, todas convencidas de tener la solución, encaminándose hacia guerra civil.
-
-**Tensión social**: Las clases bajas sufren mientras la nobleza vive en opulencia. La promesa feynista de fraternidad humana suena hueca cuando campesinos mueren de hambre viendo pasar carrozas doradas. Conversiones al Mekhatimismo y movimientos populistas crecen entre los desesperados.
-
-**Amenazas externas**: Arshalán debilitada pero vengativa; Shinri resistente; colonias costosas; y la sombra de amenazas que aún no comprenden (los verdaderos amos de la Iglesia del Heredero).
-
-**Identidad fragmentada**: ¿Qué significa ser ustilés sin Feyn? ¿Sin la certeza del destino divino? ¿Sin la promesa de un retorno glorioso? La generación post-desaparición busca respuestas en las que sus padres nunca necesitaron pensar.
-
-# Los Ustileses como Pueblo
-
-Los Ustileses son el espejo del propio Feyn: brillantes, ambiciosos, convencidos de su superioridad, capaces de grandeza extraordinaria y crueldad igualmente extraordinaria. Han construido el imperio más poderoso del continente, las ciudades más magníficas, las instituciones más sofisticadas. Pero también han perpetuado esclavitud, fanatismo religioso, y una arrogancia que les ciega ante sus propias debilidades.
-
-Son un pueblo que necesita creer en algo más grande que ellos mismos para funcionar. Cuando esa creencia era Feyn, el mundo entero temblaba ante su determinación. Ahora que esa creencia ha sido sustituida por una mentira con dientes de demonio, el futuro del pueblo ustilés depende de si descubrirán la verdad a tiempo, o si serán consumidos por la misma oscuridad que juran combatir.

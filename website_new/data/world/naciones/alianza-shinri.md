@@ -99,9 +99,9 @@ Sin embargo, el Encarnado no gobernaba por fuerza bruta solamente. Mantenía el 
 
 - **La Senda de Armonía**: Proporcionaba legitimidad religiosa
 - **Los Zaibatsu**: Financiaban la industrialización a cambio de monopolios
-- **Clanes Shinobi**: Servían como inteligencia y policía secreta
+- **Clanes Shinobi** (Shikurai y Dokosha): Servían como inteligencia y policía secreta
 - **El Nuevo Ejército**: Leal a la corona, no a los clanes
-- **Incluso Yakuza**: Controlaban el mercado negro y mantenían orden en puertos
+- **Incluso Organizaciones Criminales**: Controlaban el mercado negro y mantenían orden en puertos
 
 Esta coalición de intereses contradictorios es tanto la fortaleza como la debilidad de Shinri moderna.
 
@@ -113,15 +113,15 @@ El Encarnado actual es una figura enigmática que raramente aparece en público.
 
 ## Estructura Gubernamental
 
-**El Trono Celestial:**
-- El Tennō es inviolable y sagrado
+**El Trono de Jade:**
+- El Emperador es inviolable y sagrado
 - Tiene poder de veto absoluto sobre cualquier legislación
 - Comanda las fuerzas armadas directamente
 - Nombra al Primer Ministro y puede destituirlo a voluntad
 
 **La Dieta Imperial:**
 Parlamento bicameral establecido en 4033:
-- **Cámara de Pares**: Representa a los clanes tradicionales, nobleza, y líderes espirituales. 200 escaños hereditarios o designados por el Tennō.
+- **Cámara de Lores**: Representa a los clanes tradicionales, nobleza, y líderes espirituales. 200 escaños hereditarios o designados por el Emperador.
 - **Cámara de Representantes**: 400 escaños elegidos mediante sufragio censitario (solo hombres mayores de 25 años que paguen impuestos significativos pueden votar o ser elegidos, ~8% de la población).
 
 La Dieta aprueba leyes y presupuestos, pero el Tennō puede disolverla cuando desee.
@@ -136,13 +136,13 @@ Organismo no oficial pero enormemente influyente compuesto por sumos sacerdotes 
 
 ## Poder Real vs Poder Nominal
 
-Aunque el Tennō tiene autoridad absoluta en papel, en la práctica debe equilibrar múltiples facciones:
+Aunque el Emperador tiene autoridad absoluta en papel, en la práctica debe equilibrar múltiples facciones:
 
 - **Tradicionalistas**: Clanes viejos, sacerdotes, samuráis desplazados que quieren frenar la modernización
 - **Modernizadores**: Zaibatsu, tecnócratas, jóvenes oficiales militares que quieren acelerar el cambio
-- **Shinobi**: Leales al Tennō pero operan autónomamente
+- **Shinobi**: Leales al Emperador pero operan autónomamente
 - **Militares**: El ejército tiene cada vez más poder político
-- **Yakuza**: Controlan economía sumergida, necesarios pero peligrosos
+- **Criminales**: Controlan economía sumergida, necesarios pero peligrosos
 
 El Encarnado mantiene el equilibrio jugando a estas facciones unas contra otras, pero el sistema es inherentemente inestable. Sigue siendo muy descentralizado, con los antiguos señores de la guerra, ahora transformados en gobernadores provinciales o grandes industrialistas, gobernando sus territorios con considerable autonomía.
 
@@ -162,7 +162,7 @@ Durante la Guerra del Falso Encarnado, los Hibotoru fueron el pilar de la coalic
 
 Hikori transformó la Casa Hibotoru en un pilar de la nueva Shinri. El **Grupo Hattatsu**, el zaibatsu agrícola vinculado al clan, se convirtió en el mayor productor de arroz y seda del país, y el Ejército Imperial encontró en Iwakashi su hogar natural. La Casa prosperaba como nunca antes.
 
-Pero Kaimon no encontró paz en el retiro. El viejo guerrero, incapaz de adaptarse a un mundo donde los samuráis vestían trajes occidentales y los campos de batalla eran reemplazados por salas de juntas, fundó en secreto una hermandad de antiguos señores que aún seguían el camino del guerrero. Cuando en 4040 **Renshin** reapareció y lanzó una rebelión para restaurar las tradiciones abolidas por la modernización, Kaimon y sus compañeros se unieron sin dudarlo. La **Rebelión de los Últimos Samuráis** fue tan heroica como condenada: los veteranos, armados con espadas y honor, cargaron contra rifles y cañones. Kaimon murió como había vivido, espada en mano. Seigo, que no había olvidado la amistad que los unió en otra vida, se negó a castigar a la Casa Hibotoru, reconociendo que Kaimon había actuado solo y no había involucrado a su familia.
+Pero Kaimon no encontró paz en el retiro. El viejo guerrero, incapaz de adaptarse a un mundo donde los samuráis vestían trajes extranjeros y los campos de batalla eran reemplazados por salas de juntas, fundó en secreto una hermandad de antiguos señores que aún seguían el camino del guerrero. Cuando en 4040 **Renshin** reapareció y lanzó una rebelión para restaurar las tradiciones abolidas por la modernización, Kaimon y sus compañeros se unieron sin dudarlo. La **Rebelión de los Últimos Samuráis** fue tan heroica como condenada: los veteranos, armados con espadas y honor, cargaron contra rifles y cañones. Kaimon murió como había vivido, espada en mano. Seigo, que no había olvidado la amistad que los unió en otra vida, se negó a castigar a la Casa Hibotoru, reconociendo que Kaimon había actuado solo y no había involucrado a su familia.
 
 Hoy, bajo el liderazgo de Hikori, los Hibotoru son aliados leales del trono: ricos, influyentes y modernizados, aunque en las noches de luna llena los viejos guerreros del clan encienden lámparas en memoria de Kaimon y los que murieron como samuráis en un mundo que ya no tenía lugar para ellos.
 
@@ -226,16 +226,6 @@ No obstante, la relación con el Encarnado no es hostil. Seigo, que comprende el
 
 La economía de Shinri ha experimentado la transformación más dramática de cualquier nación en Raldamain en el último siglo. En solo dos décadas, pasó de ser predominantemente agrícola y artesanal a convertirse en una potencia industrial emergente.
 
-## Agricultura
-
-A pesar de la industrialización, el 65% de la población todavía trabaja en agricultura. El cultivo principal es el arroz, que no solo es alimento básico sino también tiene significado espiritual. Los campos de arroz son bendecidos por los espíritus antes de cada plantación, y la cosecha es ocasión de festivales religiosos.
-
-La reforma agraria de 4033 abolió teóricamente la servidumbre, permitiendo a los campesinos poseer tierra. En la práctica, la mayoría tuvo que endeudarse con bancos controlados por zaibatsu para comprar sus parcelas, creando una nueva forma de dependencia.
-
-Otros cultivos importantes incluyen té (de exportación), seda (industria textil), y bambú (construcción y artesanía).
-
-## Industria
-
 La industrialización de Shinri ha sido agresiva y concentrada:
 
 **Sectores Principales:**
@@ -255,8 +245,6 @@ Los conglomerados empresariales gigantes dominan la economía:
 
 Estos zaibatsu operan como imperios económicos verticalmente integrados, controlando todo desde extracción de recursos hasta venta al consumidor. Tienen estrecha relación con el gobierno, recibiendo contratos exclusivos y subsidios a cambio de lealtad política.
 
-## Comercio Exterior
-
 Shinri ha abierto sus puertos pero de forma controlada:
 
 **Exportaciones:**
@@ -273,7 +261,11 @@ Shinri ha abierto sus puertos pero de forma controlada:
 
 Principales socios comerciales: Thas-Tapet (neutral, vende a todos), Reinos Libres, y comercio limitado con Ustilus (desconfianza mutua pero necesidad económica).
 
-## Costo Espiritual de la Industrialización
+A pesar de la industrialización, el 65% de la población todavía trabaja en agricultura. El cultivo principal es el arroz, que no solo es alimento básico sino también tiene significado espiritual. Los campos de arroz son bendecidos por los espíritus antes de cada plantación, y la cosecha es ocasión de festivales religiosos.
+
+La reforma agraria de 4033 abolió teóricamente la servidumbre, permitiendo a los campesinos poseer tierra. En la práctica, la mayoría tuvo que endeudarse con bancos controlados por zaibatsu para comprar sus parcelas, creando una nueva forma de dependencia.
+
+Otros cultivos importantes incluyen té (de exportación), seda (industria textil), y bambú (construcción y artesanía).
 
 La modernización ha tenido consecuencias devastadoras para el equilibrio espiritual:
 
@@ -285,8 +277,6 @@ La modernización ha tenido consecuencias devastadoras para el equilibrio espiri
 Los sacerdotes advierten que Shinri está "desangrando su alma por oro", pero sus protestas son ignoradas. El Encarnado ha declarado que "los espíritus comprenden la necesidad de sacrificio temporal para supervivencia nacional", pero muchos dudan.
 
 # Sociedad y Cultura
-
-## Estratificación Social (Post-Reforma)
 
 Aunque el sistema de castas fue abolido oficialmente, la realidad social es compleja:
 
@@ -312,26 +302,18 @@ Aunque el sistema de castas fue abolido oficialmente, la realidad social es comp
 - 65% de la población
 - Ahora técnicamente "libres" pero económicamente atrapados
 
-**Marginados:**
-- Antiguos parias (oficialmente iguales, socialmente todavía discriminados)
-- Pueblos indígenas que no se asimilaron
-- Shinobi retirados
-- Samuráis sin señor (ronin) que no encontraron lugar en el nuevo orden
-
-## Cultura Tradicional vs Moderna
-
 Shinri vive una tensión cultural profunda:
 
 **Elementos Tradicionales que Persisten:**
-- **Código Bushidō**: Ética samurái de honor, lealtad y deber se ha adaptado al contexto moderno. Empresarios hablan de "servir a la corporación con honor de samurái".
-- **Respeto a Jerarquía**: La sociedad sigue siendo muy jerárquica. Edad y posición social determinan tratamiento.
-- **Estética**: Amor por la belleza sutil, naturaleza, simplicidad. Contrasta brutalmente con fábricas humeantes.
-- **Ceremonias**: Té, ikebana (arreglo floral), caligrafía siguen siendo altamente valoradas.
-- **Festivales Espirituales**: Celebraciones de estaciones, peticiones a kami, purificaciones rituales continúan.
+- Ética samurái de honor, lealtad y deber se ha adaptado al contexto moderno. Empresarios hablan de "servir a la corporación con honor de samurái".
+- La sociedad sigue siendo muy jerárquica. Edad y posición social determinan tratamiento.
+- Amor por la belleza sutil, naturaleza, simplicidad. Contrasta brutalmente con fábricas humeantes.
+- Té, ikebana (arreglo floral), caligrafía siguen siendo altamente valoradas.
+- **Festivales Espirituales**: Celebraciones de estaciones, peticiones a espíritus, purificaciones rituales continúan.
 
 **Influencias Modernas:**
-- Occidentalización en vestimenta (funcionarios usan trajes al estilo ustilés)
-- Educación secular en ciencias
+- Cambios en vestimenta (funcionarios usan trajes al estilo ustilés)
+- Educación en ciencias
 - Consumo de productos extranjeros entre élites
 - Arquitectura occidental (ladrillo y hierro vs madera y papel)
 

@@ -213,6 +213,17 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 .mod-reset{font-size:9px;color:var(--blue);cursor:pointer;background:none;border:none;padding:0;font-family:inherit}
 .mod-reset:hover{text-decoration:underline}
 
+/* ── Boosts ── */
+.boost-section{border-top:1px solid var(--border);padding-top:8px;margin-top:4px}
+.boost-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gold)}
+.boost-hint{font-size:9px;color:var(--text3)}
+.boost-sub{font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--text3);margin:8px 0 4px}
+.chk-group{display:flex;flex-wrap:wrap;gap:4px}
+.chk{display:flex;align-items:center;gap:4px;font-size:11px;padding:2px 8px;border-radius:4px;
+  border:1px solid var(--border);color:var(--text2);cursor:pointer;user-select:none}
+.chk input{accent-color:var(--gold);cursor:pointer;margin:0}
+.chk.on{border-color:var(--goldd);color:var(--gold);background:rgba(201,162,39,.08)}
+
 /* ── Umbrales list ── */
 .umb-box{border-top:1px solid var(--border);padding-top:8px;display:flex;flex-direction:column;gap:5px}
 .umb-hd{display:flex;align-items:center;gap:6px}
@@ -544,6 +555,7 @@ const S = {
   metaOpen: false,
   cmpA: null, cmpB: null,
   clipboard: null,  // { kind: 'level'|'ability', data: {...} }
+  openBoost: {},    // "li-ai" -> passive-boost section opened without any value yet
 };
 
 const TAGS = ['Duelo','Pasiva','Mejora','Reacción','Duradera','Maniobra',
@@ -831,6 +843,20 @@ function cardHtml(li, ab, ai) {
          <button class="emp-tog" onclick="addEmp(${li},${ai})">✦ Añadir empower</button>
        </div>`;
 
+  const showPassive = tags.includes('Pasiva') || PASSIVE_KEYS.some(k => ab[k] !== undefined) || S.openBoost[`${li}-${ai}`];
+  const passiveSect = showPassive ? `
+    <div class="boost-section">
+      <div class="tog-hd">
+        <span class="boost-label">✦ Bonificadores pasivos</span>
+        <span class="boost-hint">siempre activos</span>
+        <button class="btn sm danger" style="margin-left:auto" onclick="clearPassive(${li},${ai})">× Quitar</button>
+      </div>
+      ${boostsHtml(ab, li, ai, 'ab')}
+    </div>` : `
+    <div class="boost-section">
+      <button class="emp-tog" style="color:var(--gold)" onclick="openPassive(${li},${ai})">✦ Añadir bonificadores pasivos</button>
+    </div>`;
+
   const toggleSect = 'toggle' in ab ? `
     <div class="tog-section">
       <div class="tog-hd">
@@ -853,17 +879,9 @@ function cardHtml(li, ab, ai) {
           <input class="inp" value="${esc((ab.toggle.adv_tags||[]).join(', '))}" placeholder="Fuego, Ataque+Físico…"
             oninput="setToggleArr(${li},${ai},'adv_tags',this.value)"></div>
       </div>
-      <div class="field" style="margin-bottom:6px">
-        <div class="lbl">Ventaja en salvaciones (comas)</div>
-        <input class="inp" value="${esc((ab.toggle.saves||[]).join(', '))}" placeholder="Físico, Voluntad, Mental"
-          oninput="setToggleArr(${li},${ai},'saves',this.value)"></div>
-      <div style="margin-bottom:6px">${umbHtml(ab.toggle.umbrales, li, ai, 'tog')}</div>
-      <div class="row2" style="margin-bottom:6px">
-        <div class="field"><div class="lbl">+Impactos (mientras activo)</div>
-          <input class="inp" value="${ab.toggle.hits!=null?ab.toggle.hits:''}" placeholder="—"
-            oninput="setToggleNum(${li},${ai},'hits',this.value)"></div>
-      </div>
-      <div class="row3" style="margin-bottom:6px">
+      <div class="boost-sub">Bonificadores mientras está activo</div>
+      ${boostsHtml(ab.toggle, li, ai, 'tog')}
+      <div class="row3" style="margin:8px 0 6px">
         <div class="field"><div class="lbl">Stat mínima</div>
           <input class="inp" value="${ab.toggle.stat_min!=null?ab.toggle.stat_min:''}" placeholder="—"
             oninput="setToggleNum(${li},${ai},'stat_min',this.value)"></div>
@@ -873,14 +891,6 @@ function cardHtml(li, ab, ai) {
         <div class="field"><div class="lbl">CE +</div>
           <input class="inp" value="${esc(ab.toggle.ce!=null?String(ab.toggle.ce):'')}" placeholder="# o rango"
             oninput="setToggleCe(${li},${ai},this.value)"></div>
-      </div>
-      <div class="row2">
-        <div class="field"><div class="lbl">Resistencias (comas)</div>
-          <input class="inp" value="${esc((ab.toggle.resistances||[]).join(', '))}" placeholder="Fuego, Miedo…"
-            oninput="setToggleArr(${li},${ai},'resistances',this.value)"></div>
-        <div class="field"><div class="lbl">Inmunidades (comas)</div>
-          <input class="inp" value="${esc((ab.toggle.immunities||[]).join(', '))}" placeholder="Aflicción…"
-            oninput="setToggleArr(${li},${ai},'immunities',this.value)"></div>
       </div>
     </div>` : `
     <div class="tog-section">
@@ -931,24 +941,7 @@ function cardHtml(li, ab, ai) {
         <textarea class="inp" rows="3"
           oninput="setAb(${li},${ai},'desc',this.value)">${esc(ab.desc||'')}</textarea></div>
       <div class="mod-opt" id="modopt-${li}-${ai}">${modOptHtml(li,ai)}</div>
-      ${tags.includes('Pasiva') || ab.umbrales!==undefined || ab.hits!==undefined || ab.chi!==undefined || ab.resistances!==undefined || ab.immunities!==undefined ? `
-      ${umbHtml(ab.umbrales, li, ai, 'ab')}
-      <div class="opt-row" style="margin-top:4px">
-        <div class="field"><div class="lbl">+Impactos</div>
-          <input class="inp" value="${esc(ab.hits||'')}" placeholder="—"
-            oninput="setAb(${li},${ai},'hits',this.value)"></div>
-        <div class="field"><div class="lbl">+Chi</div>
-          <input class="inp" value="${esc(ab.chi||'')}" placeholder="—"
-            oninput="setAb(${li},${ai},'chi',this.value)"></div>
-      </div>
-      <div class="row2" style="margin-top:4px">
-        <div class="field"><div class="lbl">Resistencias (comas)</div>
-          <input class="inp" value="${esc((ab.resistances||[]).join(', '))}" placeholder="—"
-            oninput="setAbArr(${li},${ai},'resistances',this.value)"></div>
-        <div class="field"><div class="lbl">Inmunidades (comas)</div>
-          <input class="inp" value="${esc((ab.immunities||[]).join(', '))}" placeholder="—"
-            oninput="setAbArr(${li},${ai},'immunities',this.value)"></div>
-      </div>` : ''}
+      ${passiveSect}
       ${empHtml}
       ${toggleSect}
     </div>`;
@@ -1040,6 +1033,72 @@ function resetShowMod(li,ai) {
   renderToolbar(); refreshModOpt(li,ai);
 }
 
+// ── Boosts (shared by "Bonificadores pasivos" and "Estado de combate") ───────
+// Same keys on the ability (always on) and on its toggle (while active):
+//   umbrales [{value, categories}] · hits · chi (ability only) · saves [Físico|Voluntad|Mental]
+//   replace_mod [targets that use this rank's modifier (stat + Rango) when higher]
+//   resistances [] · immunities []
+const PASSIVE_KEYS = ['umbrales','hits','chi','saves','replace_mod','resistances','immunities'];
+const SAVE_TYPES = ['Físico','Voluntad','Mental'];
+const REPLACE_TARGETS = ['Físico','Voluntad','Mental','Esquiva','Parada'];
+const UMB_CATS = ['General','Físico','Cortante','Contundente','Perforante','Magia','Arcano',
+                  'Fuego','Frío','Eléctrico','Ácido','Sónico','Radiante','Necrótico'];
+
+function chkGroup(o, li, ai, scope, key, opts, labels) {
+  const cur = o[key] || [];
+  return `<div class="chk-group">${opts.map((v,i) => `
+    <label class="chk ${cur.includes(v)?'on':''}"><input type="checkbox" ${cur.includes(v)?'checked':''}
+      onchange="toggleBoostItem(${li},${ai},'${scope}','${key}','${v}',this.checked)">${labels?labels[i]:v}</label>`).join('')}</div>`;
+}
+function boostsHtml(o, li, ai, scope) {
+  return `
+    ${umbHtml(o.umbrales, li, ai, scope)}
+    <div class="row2" style="margin-top:6px">
+      <div class="field"><div class="lbl">+Impactos</div>
+        <input class="inp" value="${esc(o.hits!=null?o.hits:'')}" placeholder="— · 1 · RANGO"
+          oninput="setBoost(${li},${ai},'${scope}','hits',this.value)"></div>
+      ${scope==='ab' ? `<div class="field"><div class="lbl">+Chi</div>
+        <input class="inp" value="${esc(o.chi!=null?o.chi:'')}" placeholder="—"
+          oninput="setBoost(${li},${ai},'${scope}','chi',this.value)"></div>` : '<div></div>'}
+    </div>
+    <div class="field" style="margin-top:6px"><div class="lbl">Ventaja en tiros de salvación</div>
+      ${chkGroup(o, li, ai, scope, 'saves', SAVE_TYPES)}</div>
+    <div class="field" style="margin-top:6px">
+      <div class="lbl" title="Si el modificador de este rango (estadística principal + Rango) es mayor, sustituye al de estos tiros">Usar el modificador de este rango (si es mayor) en</div>
+      ${chkGroup(o, li, ai, scope, 'replace_mod', REPLACE_TARGETS, ['Salv. Físico','Salv. Voluntad','Salv. Mental','Esquiva','Parada'])}</div>
+    <div class="row2" style="margin-top:6px">
+      <div class="field"><div class="lbl">Resistencias (comas)</div>
+        <input class="inp" value="${esc((o.resistances||[]).join(', '))}" placeholder="Miedo, Veneno…"
+          oninput="setBoostArr(${li},${ai},'${scope}','resistances',this.value)"></div>
+      <div class="field"><div class="lbl">Inmunidades (comas)</div>
+        <input class="inp" value="${esc((o.immunities||[]).join(', '))}" placeholder="Aflicción…"
+          oninput="setBoostArr(${li},${ai},'${scope}','immunities',this.value)"></div>
+    </div>`;
+}
+function setBoost(li,ai,scope,k,v) {
+  const o = umbOwner(li,ai,scope); v = v.trim();
+  if (!v) delete o[k]; else { const n = Number(v); o[k] = isNaN(n) ? v : n; }
+  renderToolbar();
+}
+function setBoostArr(li,ai,scope,k,v) {
+  const o = umbOwner(li,ai,scope); const a = v.split(',').map(x=>x.trim()).filter(Boolean);
+  if (a.length) o[k] = a; else delete o[k];
+  renderToolbar();
+}
+function toggleBoostItem(li,ai,scope,k,v,on) {
+  const o = umbOwner(li,ai,scope); const a = (o[k]||[]).filter(x => x !== v);
+  if (on) a.push(v);
+  if (a.length) o[k] = a; else delete o[k];
+  renderToolbar(); renderLvl();
+}
+function openPassive(li,ai) { S.openBoost[`${li}-${ai}`] = true; renderLvl(); }
+function clearPassive(li,ai) {
+  const ab = S.rank.levels[li].abilities[ai];
+  PASSIVE_KEYS.forEach(k => delete ab[k]);
+  delete S.openBoost[`${li}-${ai}`];
+  renderToolbar(); renderLvl();
+}
+
 // ── Umbrales (damage thresholds) ──────────────────────────────────────────────
 // Stored like creature umbrales: [{ value: 2 | "RANGO+1", categories: "General" | "Fuego, Frío" }]
 // "General" raises every threshold; other categories add on top of General.
@@ -1049,14 +1108,14 @@ function umbHtml(list, li, ai, scope) {
     <div class="umb-row">
       <input class="inp" value="${esc(u.value!=null?u.value:'')}" placeholder="RANGO+1"
         oninput="setUmb(${li},${ai},'${scope}',${ui},'value',this.value)">
-      <input class="inp" value="${esc(u.categories||'')}" placeholder="General · Físico · Fuego, Frío…"
+      <input class="inp" list="umb-cat-dl" value="${esc(u.categories||'')}" placeholder="General (todos) · Necrótico · Fuego, Frío…"
         oninput="setUmb(${li},${ai},'${scope}',${ui},'categories',this.value)">
       <button class="card-x" title="Quitar umbral" onclick="delUmb(${li},${ai},'${scope}',${ui})">×</button>
     </div>`).join('');
   return `
     <div class="umb-box">
       <div class="umb-hd">
-        <span class="umb-label">🛡 Umbrales de Daño</span>
+        <span class="umb-label" title="General sube todos los umbrales; un tipo concreto (p. ej. Necrótico) solo ese">🛡 Umbrales de Daño</span>
         <button class="btn sm" style="margin-left:auto" onclick="addUmb(${li},${ai},'${scope}')">＋ Umbral</button>
       </div>
       ${rows ? `<div class="umb-row"><div class="lbl">Valor</div><div class="lbl">Categorías (comas)</div><span></span></div>${rows}` : ''}
@@ -1219,6 +1278,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const dl=document.createElement('datalist'); dl.id='tag-dl';
   dl.innerHTML=TAGS.map(t=>`<option value="${t}">`).join('');
   document.body.appendChild(dl);
+  const cdl=document.createElement('datalist'); cdl.id='umb-cat-dl';
+  cdl.innerHTML=UMB_CATS.map(t=>`<option value="${t}">`).join('');
+  document.body.appendChild(cdl);
 });
 
 // ── Toast ─────────────────────────────────────────────────────────────────────

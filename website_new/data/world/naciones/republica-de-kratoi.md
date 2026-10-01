@@ -29,18 +29,11 @@ Fue también en esta era cuando los kratenses desarrollaron sus instituciones re
 
 La relación entre Mazarín y Kratoi se deterioró fatalmente durante las guerras contra Ustilus. Las **Guerras de Kratoi** (3629-3707) fueron una serie de conflictos donde ambas potencias disputaron el control de la región. Ustilus, en plena expansión imperial, apoyó activamente a los movimientos separatistas kratenses que deseaban liberarse del yugo feudal mazarino. Con superioridad militar y promesas de autonomía, Ustilus fue arrebatando territorio tras territorio hasta lograr el control total de Kratoi.
 
-Para Mazarín, la pérdida de Kratoi fue una catástrofe múltiple: económica (privación de su provincia más rica), estratégica (pérdida de frontera defensiva), y espiritual (interpretada como abandono de Feyn en favor de Ustilus). Para los kratenses, el cambio de amo no fue exactamente una liberación. Ustilus prometió respetar sus derechos tradicionales pero gradualmente los fue erosionando, imponiendo gobernadores imperiales, exigiendo reclutas para sus guerras y extendiendo la jurisdicción de la Iglesia Feynista sobre las tradiciones espirituales locales.
+Para Mazarín, la pérdida de Kratoi fue una catástrofe múltiple, significando así un desastre económico, estratégico y espiritual, ya que la pérdida de una provincia tan rica y estratégica fue considerada por muchos como prueba que Feyn les había abandonado a favor de Ustilus. Para los kratenses, el cambio de amo no fue exactamente una liberación. Mientras que Ustilus prometió inicialmente respetar sus derechos tradicionales y autonomía local, el creciente control imperial iría mermándolas poco a poco hasta que estas existirían únicamente en nombre.
 
 ## Provincia Autónoma de Ustilus (3707-4025)
 
-Durante tres siglos, Kratoi existió como provincia del Imperio de Ustilus con un estatus especial de autonomía limitada. Los términos del acuerdo original incluían:
-
-- Mantenimiento de las Asambleas Provinciales (aunque con poder reducido)
-- Derecho a recaudar impuestos locales (aunque la mayoría iba a la metrópoli)
-- Respeto a la lengua y costumbres kratenses (cada vez más ignorado)
-- Exención parcial de levas militares (abolida en tiempos de guerra)
-
-La realidad fue que Ustilus trató a Kratoi como colonia: extraía recursos, imponía funcionarios, y utilizaba las ciudades kratenses como guarniciones militares. Sin embargo, la relativa prosperidad económica y la lejanía de los peores conflictos del imperio mantuvieron el descontento a niveles manejables durante la mayor parte de este período.
+Durante tres siglos, Kratoi existió como provincia del Imperio de Ustilus con un estatus especial de autonomía limitada. Aunque los términos del acuerdo original incluían el mantenimiento de las Asambleas Provinciales, el derecho a recaudar impuestos locales, el respeto a la lengua y costumbres kratenses y la exención parcial de levas militares, la realidad fue que Ustilus siempre consideraba a Kratoi como una provincia suya y empezó a progresivamente ignorar los acuerdos del tratado.  Sin embargo, la relativa prosperidad económica y la lejanía de los peores conflictos del imperio mantuvieron el descontento a niveles manejables durante la mayor parte de este período.
 
 Kratoi se convirtió en refugio intelectual dentro del imperio. Su tradición de asambleas y debate atrajo a pensadores reformistas, académicos, filósofos y librepensadores que encontraban en la provincia una atmósfera más tolerante que en la metrópoli. Las universidades kratenses, especialmente la **Universidad de Rimas**, se convirtieron en centros de ideas ilustradas sobre derechos naturales, soberanía popular, separación de poderes y laicismo. Fue en estos círculos académicos donde [El Pacto](../facciones/pacto.md) encontró terreno fértil para sus operaciones, estableciendo logias en las principales ciudades.
 
@@ -48,33 +41,21 @@ Los representantes kratenses en las Cortes imperiales formaron consistentemente 
 
 ## El Camino a la Revolución (4000-4025)
 
-La desaparición de Feyn en el año 4000 desencadenó una cascada de eventos que transformaría Kratoi:
+La desaparición de Feyn en el año 4000 desencadenó una cascada de eventos que transformaría a Kratoi para siempre, trazando su camino desde provincia con algo de autonomía hasta una república independiente. Su fuerte apoyo a la causa reformista les colocaría en el centro de los debates sobre la relación entre la fe y el estado una vez el dios del imperio había desaparecido, y mientras que el golpe de estado de 4003 cortaría en seco tales ambiciones, la muerte de Abshalom en 4005 y el ascenso de la emperatriz [Theodora](../personajes/caballeros-de-ustilus/Theodora.md) al trono daría inicio a un periodo de fuertes reformas que culminaría en la Constitución Ustilesa de 4006, la cual fue redactada con la inestimable ayuda de numerosos juristas Kratenses de renombre.
 
-**El fracaso constitucional** (4003-4005): La emperatriz [Theodora](../personajes/caballeros-de-ustilus/Theodora.md), con apoyo del Pacto, intentó promulgar una constitución que hubiera transformado Ustilus en monarquía parlamentaria. Representantes kratenses fueron los principales arquitectos del texto. La insurrección de Rizad en 4003 y su aplastamiento por los Caballeros destruyeron las esperanzas constitucionalistas, pero las ideas quedaron vivas en Kratoi.
+Este sueño constitucionalista moriría en la cuna con la invasión Arshalaní de 4009 y el posterior golpe de estado del Gran Maestre [Fileon](../personajes/caballeros-de-ustilus/Fileon.md), quien se autoproclamaría como el nuevo Emperador y llevaría al establecimiento de la [Iglesia del Heredero](../religiones/iglesia-del-heredero.md) como religión de estado. La emperatriz Theodora al igual que muchos políticos reformistas morirían en circumstancias misteriosas durante el caos tras el golpe, forzando a que los supervivientes huyeran por sus vidas hacia Kratoi. Por ello, la provincia acabería albergando una notable comunidad de exiliados formada por políticos, académicos, oficiales militares disidentes y nobles liberales, quienes empezarían a trazar sus planes para cobrar venganza del nuevo régimen.
 
-**El golpe de Fileon** (4010): Cuando el Gran Maestre [Fileon](../personajes/caballeros-de-ustilus/Fileon.md) se autoproclamó emperador y estableció la [Iglesia del Heredero](../religiones/iglesia-del-heredero.md) como religión de estado, los reformistas huyeron en masa hacia Kratoi. Políticos, académicos, oficiales militares disidentes y nobles liberales se refugiaron en la provincia, formando una comunidad de exiliados que ardía de indignación y deseos de venganza.
+El auge de Fileon sería desastroso para Kratoi, ya que el emperador no olvidaría quienes se enfrentaron a él y buscó acabar con los últimos restos de la oposición. Entre sus mediadas se encontarían la imposición de la Iglesia del Heredero sobre Kratoi, a la que seguiría el destacamiento de nuevos inquisidores para erradicar la "herejía" y el "paganismo" en la región, conduciendo a la persecución de los viejos Feynistas y de los seguidores de la Fe Espiritual. Las revueltas locales le darían a Fileon el motivo perfecto para abolir los últimos vestigios de autonomía provincial, convirtiendo a Kratoi en una provincia en pleno derecho. La guerra de Tamashkhan no haría que llevar más leña al fuego, ya que para financiarla Fileon impodría impuestos aplastantes a Kratoi y reclutaría forzosamente a numerosos jovenes Kratenses para esa guerra. 
 
-**La opresión creciente** (4010-4025): Fileon impuso políticas que afectaron directamente a Kratoi:
-- Imposición de la Iglesia del Heredero y persecución de los viejos Feynistas y de los seguidores de la Fe Espiritual
-- Impuestos de guerra aplastantes para financiar las campañas contra el Tamashkhan
-- Abolición de los últimos vestigios de autonomía provincial
-- Destacamento de inquisidores para erradicar "herejía" y "paganismo"
-- Reclutamiento forzoso de jóvenes kratenses para guerras lejanas
-
-**La conspiración del Pacto** (4020-4025): [Madeleine](../personajes/madeleine.md), líder del Pacto, vio en Kratoi la oportunidad perfecta. Todas las condiciones estaban dadas: población furiosa, elite intelectual exiliada, tradición de autogobierno, y un imperio distraído en múltiples frentes. El Pacto organizó metódicamente la revolución:
-- Financiación de milicias clandestinas
-- Infiltración de guarniciones imperiales (sobornos, conversiones ideológicas)
-- Propaganda masiva (panfletos, discursos en cafés, obras de teatro subversivas)
-- Coordinación con Mazarín para distracción diplomática
-- Reclutamiento de oficiales militares exiliados para formar un ejército revolucionario
+Mientras la tiranía de Fileon no hacía más que volverse cada vez más dura sobre Kratoi, para el Pacto toda la situación representaría la oportunidad perfecta. Todas las condiciones estaban dadas: población furiosa, elite intelectual exiliada, tradición de autogobierno, y un imperio distraído en múltiples frentes. Para ello, Pacto organizó metódicamente la revolución mediante la creación de un ejército secreto revolucionario, la infiltración en las instituciones locales y una campaña de propaganda masiva para radicalizar la población local en contra de Ustilus. Las piezas estaban colocadas. Lo único que faltaba era una chispa para encender la rebelión
 
 ## La Revolución Kratense (4025-4027)
 
-La revolución estalló el **14 de Marzo de 4025** cuando milicias kratenses asaltaron simultáneamente las guarniciones imperiales en Rimas, Argostana y Carpentia. La coordinación fue obra maestra del Pacto: cada célula actuó en el momento preciso, cortando comunicaciones imperiales, tomando arsenales y arrestando gobernadores.
+La revolución estalló el **14 de Marzo de 4025** cuando milicias kratenses asaltaron simultáneamente las guarniciones imperiales en Rimas, Argostana y Carpentia, actuando en respuesta a una nueva ley de conscripción que destacaría a decenas de miles de Kratenses a la guerra de Tamashkhan. La coordinación fue obra maestra del Pacto: cada célula actuó en el momento preciso, cortando comunicaciones imperiales, tomando arsenales y arrestando gobernadores.
 
-Ustilus, empantanado en la reconquista del Tamashkhan y enfrentando tensiones internas, no pudo enviar un ejército de respuesta adecuado a tiempo. Las pocas fuerzas imperiales en Kratoi fueron derrotadas en una serie de escaramuzas por un ejército revolucionario liderado por oficiales exiliados con experiencia real de combate. La **Batalla de Grevara** (4026), donde milicianos kratenses rechazaron una columna imperial de 15,000 hombres, se convirtió en el mito fundacional de la república.
+Ustilus, empantanado en la reconquista de  Tamashkhan y enfrentando tensiones internas, no pudo enviar un ejército de respuesta adecuado a tiempo. Las pocas fuerzas imperiales en Kratoi fueron derrotadas en una serie de escaramuzas por un ejército revolucionario liderado por oficiales exiliados con experiencia real de combate. La legendaria **Batalla de Bruchart** (4026), donde milicianos kratenses rechazaron una columna imperial de 15,000 hombres mediante una emboscada en las montañas, se convirtió en el mito fundacional de la república y significaría el mayor revés enfrentado por el Imperio desde la invasión Arshalaní.
 
-La guerra duró apenas dos años. En 4027, Ustilus aceptó de facto la independencia kratense, no por generosidad sino porque no podía permitirse otro frente. No hubo tratado formal de paz (Ustilus se niega a reconocer la secesión), pero una tregua implícita se ha mantenido desde entonces.
+La guerra duró apenas dos años. En 4027, Ustilus aceptó de facto la independencia kratense, no por generosidad sino porque no podía permitirse otro frente. No hubo tratado formal de paz ya que Ustilus se negaría a reconocer al estado separatista, ambas naciones firmarían una tregua  que se mantendría hasta entonces, dándole a la joven república una existencia libre pero a su vez amenazada por el constante fantasma de una nueva guerra.
 
 ## La Primera República (4027-Presente)
 
@@ -90,29 +71,19 @@ La guerra duró apenas dos años. En 4027, Ustilus aceptó de facto la independe
 Reki gobernó durante dos mandatos, estabilizando la economía, estableciendo instituciones, profesionalizando el ejército y navegando las peligrosas aguas de la diplomacia continental. Siguiendo el ejemplo de las grandes repúblicas, se negó a presentarse a un tercer mandato, estableciendo el precedente de alternancia pacífica.
 
 **Rezeda Valdei** (4037-Presente), sucesora de Reki y su antigua ministra de exteriores, gobierna actualmente la república. Su administración se ha centrado en consolidar la posición internacional de Kratoi:
-- Alianza diplomática con Mazarín (enemigo común: Ustilus)
-- Acuerdos comerciales con la [Alianza Shinri](alianza-shinri.md) (intercambio de tecnología naval)
+- Alianza diplomática con Mazarín 
+- Acuerdos comerciales con la [Alianza Shinri](alianza-shinri.md)
 - Contactos cautelosos con [Iskaria](iskaria.md) (coinciden en anti-imperialismo, aunque la naturaleza totalitaria de Iskaria genera incomodidad)
 - Incorporación de comunas élficas fronterizas como **protectorados** bajo protección militar kratense a cambio de alianza y acceso a conocimiento élfico
 - Negociaciones comerciales con [Thas-Tapet](../lugares/thas-tapet.md) para romper dependencia económica de Ustilus
 
 # Gobierno
 
-## Sistema Político
+Kratoi es la única república presidencialista en el continente, contando con un sistema completamente innovador basado en la soberanía popular, el sufragio universal y la separación de poderes. El poder ejecutivo del país se encuentra en manos del **Presidente de la República**, quien es elegido por sufragio universal directo cada 5 años y cumple las labores de comandar las fuerzas armadas, dirigir la política exterior, nombrar ministros e incluso es capaz de vetar legislación del Congreso si atenta contra la Constitución. El poder legislativo se encuentra en el **Congreso de Diputados**, elegido también cada 5 años con el poder de promulgar leyes, aprobar presupuestos, ratificar tratados internacionales e incluso someter al presidente a mociones de censura si estas cuentan con el apoyo suficiente. 
 
-Kratoi es una **república presidencialista** con separación de poderes rigurosa:
+En último lugar, el poder judicial está en manos del **Tribunal Supremo**, formado por nueve magistrados vitalicios nombrados por el presidente y confirmados por el congreso, quien interpreta la Constitución y actúa como última instancia de apelación. Es la institución más respetada y menos corrupta de la república. Además de estas autoridades, la república en sí se divide en **departamentos** gobernados por gobernadores elegidos localmente, quienes cuentan además con asambleas y tribunales propios con las mismas atribuciones que las instituciones estatales pero a un nivel mucho menor.
 
-**Poder Ejecutivo**: El **Presidente de la República** es elegido por sufragio universal directo cada 5 años, con posibilidad de una reelección. Comanda las fuerzas armadas, dirige la política exterior, nombra ministros y puede vetar legislación del Congreso (veto superable por mayoría de dos tercios).
-
-**Poder Legislativo**: El **Congreso de Diputados** (200 escaños) es elegido cada 4 años por distritos. Promulga leyes, aprueba presupuestos, ratifica tratados internacionales, y puede someter al presidente a juicio político.
-
-**Poder Judicial**: El **Tribunal Supremo** (9 magistrados vitalicios nombrados por el presidente y confirmados por el Congreso) interpreta la Constitución y actúa como última instancia de apelación. Es la institución más respetada y menos corrupta de la república.
-
-**Gobierno local**: La república se divide en **departamentos** gobernados por prefectos elegidos localmente, con asambleas departamentales propias.
-
-## Partidos Políticos
-
-### Partido Nacionalista (Strollad Broadel)
+### Partido Nacionalista
 
 **Ideología**: Centralismo, republicanismo militante, expansionismo cauteloso, laicismo estricto, anti-ustilismo. Representa intereses urbanos, intelectuales, comerciantes.
 
@@ -127,22 +98,6 @@ Kratoi es una **república presidencialista** con separación de poderes riguros
 **Realidad**: Representan intereses rurales, agricultores, pequeños nobles reconvertidos en terratenientes, y la importante minoría que mantiene vínculos económicos con Ustilus. No son traidores sino pragmáticos: creen que confrontar al imperio es suicida y que la prosperidad viene del comercio, no del conflicto.
 
 **Base electoral**: Interior rural, comunidades pesqueras tradicionales, comerciantes vinculados a Ustilus, creyentes Feynistas.
-
-### Otras Fuerzas
-
-- **Movimientos obreros**: Incipientes sindicatos en astilleros y fábricas, influenciados por ideas iskarianas. El Pacto los vigila con inquietud
-- **Grupos élficos**: Los protectorados élficos tienen representantes observadores (sin voto) en el Congreso
-- **Legitimistas**: Minoría minúscula que aboga por restauración monárquica (mazarina o ustilesa). Políticamente irrelevantes pero útiles como espantajo propagandístico
-
-## Libertades y Limitaciones
-
-La Constitución de 4027 garantiza libertades sin precedentes en el continente: libertad de prensa, libertad de culto, habeas corpus, juicio por jurado, derecho a la propiedad privada y prohibición de la tortura.
-
-Sin embargo, la realidad tiene matices:
-- El Pacto manipula la opinión pública a través de periódicos que controla
-- Los servicios de inteligencia (dirigidos por agentes del Pacto) vigilan a disidentes
-- Los derechos de los simpatizantes ustileses son legales pero socialmente penalizados
-- La libertad de culto no impide que la Iglesia del Heredero sea vista con hostilidad extrema
 
 # Economía
 
@@ -166,8 +121,6 @@ Kratoi compensa su tamaño modesto con una economía diversificada y dinámica:
 - **Desigualdad regional**: Costa próspera vs interior rural empobrecido
 
 # Cultura
-
-## Identidad Nacional
 
 Los kratenses están construyendo activamente una identidad nacional nueva, separada tanto de Mazarín como de Ustilus:
 
@@ -221,9 +174,9 @@ Los kratenses están construyendo activamente una identidad nacional nueva, sepa
 
 **Marina de Kratoi**: 60 navíos de guerra basados en Carpentia, marina mercante de 200+ barcos. Doctrina naval de guerra de corso y defensa costera. Los astilleros de Carpentia pueden producir 8-10 navíos al año.
 
-**Fortalezas**: Red de fortificaciones costeras y fronterizas. La **Línea de Grevara** a lo largo de la frontera ustilesa es proyecto prioritario.
+**Fortalezas**: Red de fortificaciones costeras y fronterizas. La **Línea Tardivel** a lo largo de la frontera ustilesa es proyecto prioritario.
 
-**Inteligencia**: El **Bureau de la Sûreté** es en realidad extensión operativa del Pacto. Sus agentes operan dentro y fuera de Kratoi, espiando movimientos ustileses y rastreando agentes de la Iglesia del Heredero.
+**Inteligencia**: El **Directorado de Seguridad Interna** es en realidad extensión operativa del Pacto. Sus agentes operan dentro y fuera de Kratoi, espiando movimientos ustileses y rastreando agentes de la Iglesia del Heredero.
 
 **Debilidades**: Ejército pequeño, dependencia de importaciones para armamento avanzado, oficialidad joven y una flota que no puede rivalizar con la ustilesa en mar abierto.
 

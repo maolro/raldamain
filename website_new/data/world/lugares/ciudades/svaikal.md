@@ -4,7 +4,7 @@ nation: Reino de Mazarín
 population: ~800,000
 ---
 
-**Svaikal**, la Ciudad de las Mil Cúpulas, es la capital del [Reino de Mazarín](../../naciones/reino-de-mazarin.md) y la sede del Patriarcado Feynista del norte. Construida sobre siete colinas a orillas del río Svaika, esta metrópolis es un estudio en contradicciones: majestuosa y miserable, sagrada y corrupta, cultural y brutal. Sus doradas cúpulas de cebolla y sus blancas catedrales brillan bajo el sol invernal como faros de una gloria pasada, pero bajo esa fachada grandiosa se pudre una ciudad enferma de pobreza, corrupción y desesperanza.
+**Svaikal**, la Ciudad de las Mil Cúpulas, es la capital del [Reino de Mazarín](../../naciones/reino-de-mazarin.md) y la sede del Patriarcado Feynista del norte. Construida a orillas del río Svaika, esta metrópolis es un estudio en contradicciones: majestuosa y miserable, sagrada y corrupta, cultural y brutal. Sus doradas cúpulas de cebolla y sus blancas catedrales brillan bajo el sol invernal como faros de una gloria pasada, pero bajo esa fachada grandiosa se pudre una ciudad enferma de pobreza, corrupción y desesperanza.
 
 Svaikal es más que una capital; es el alma de Mazarín, conteniendo toda la belleza, el sufrimiento, la grandeza y la decadencia de la nación en sus calles heladas. Aquí, un campesino puede morir congelado en un callejón mientras a cien metros de distancia, nobles bailan vals en salones dorados. Es una ciudad donde lo sublime y lo abyecto coexisten en cada esquina.
 

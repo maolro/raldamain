@@ -18,7 +18,7 @@ Las tierras que hoy conforman el corazón de Arshalán fueron una vez la joya de
 
 Pero la soberbia del Emperador Tenebrio y su blasfemo intento de usurpar la divinidad de Feyn trajeron la ira del dios. El cataclismo que destruyó el Imperio Nataneo en el siglo XX fue especialmente devastador aquí: las ciudades voladoras se estrellaron, los artefactos mágicos se volvieron inertes, y la población fue diezmada. De las ruinas emergió el **Reino de Arkedania**, que se proclamó heredero legítimo de la tradición Natanea y bastión del Feynismo ortodoxo.
 
-Sin embargo, Arkedania estaba debilitada, y las llanuras al norte y al este quedaron abiertas a invasiones. Durante la tumultuosa **Era de Sucesión**, oleadas de tribus bárbaras descendieron sobre las tierras civilizadas. Los **Tangarinos**, nómadas ecuestres feroces de las estepas orientales, lanzaron incursiones devastadoras. Los **Chothgar**, guerreros salvajes que veneraban a un dios de guerra sangriento, conquistaron vastos territorios. Reinos humanos se levantaban y caían en cuestión de generaciones.
+Sin embargo, Arkedania estaba debilitada, y las llanuras al norte y al este quedaron abiertas a invasiones. Durante la tumultuosa **Era de Sucesión**, oleadas de tribus bárbaras descendieron sobre las tierras civilizadas. Los **Tangarinos**, nómadas ecuestres feroces de las estepas orientales, lanzaron incursiones devastadoras. Los **Chothgar**, guerreros genéticamente creados por los Nataneos, conquistaron vastos territorios proclamándose los legítimos herederos de la caída Natanea incluso cuando Feyn les abandonó. Reinos humanos se levantaban y caían en cuestión de generaciones.
 
 Arkedania sobrevivió aferrándose a las costas y sus fortalezas, pero su poder menguaba con cada siglo. El **Patriarca de Arkedania** seguía siendo "primero entre iguales" en la jerarquía Feynista, pero su influencia espiritual no se traducía en seguridad militar. El reino estaba rodeado de enemigos y su destino parecía inevitable.
 
@@ -39,7 +39,7 @@ Canrim y su tribu se convirtieron, convirtiéndose en los primeros **Mekhatimist
 
 En 3652, el ejército santo descendió de las montañas. Pueblos humanos que habían despreciado a los leoninos como bestias ahora los veían liderar un movimiento religioso. Muchos, especialmente los oprimidos y marginados, se convirtieron voluntariamente. Otros fueron conquistados. En apenas seis años, Mekhatim había forjado un reino considerable.
 
-Su destino se selló cuando enfrentó a una horda **Chothgar** liderada por **Meisodh el Viajero**, un temible señor de la guerra. En la **Batalla de las Lanzas Rotas** (3658), Mekhatim lideró personalmente la carga final que rompió las líneas enemigas. Meisodh cayó, pero la profeta recibió heridas mortales. Según la leyenda, no murió en sentido convencional: su cuerpo brilló con luz dorada y **ascendió físicamente a los cielos**, presenciado por miles. Antes de partir, nombró a Canrim su sucesor.
+Su destino se selló cuando enfrentó a una horda **Chothgar** liderada por **Meisodh el Viajero**, un temible señor de la guerra. En la **Batalla de los Dos Profetas** (3658), Mekhatim lideró personalmente la carga final que rompió las líneas enemigas. Meisodh cayó, pero la profeta recibió heridas mortales. Según la leyenda, no murió en sentido convencional: su cuerpo brilló con luz dorada y **ascendió físicamente a los cielos**, presenciado por miles. Antes de partir, nombró a Canrim su sucesor.
 
 ## El Primer Mhayid y la Fundación del Imperio (3658-3710)
 
@@ -55,7 +55,7 @@ Durante su reinado de 52 años, Canrim expandió agresivamente el naciente imper
 
 La conquista culminante llegó en 3694 cuando Arshalán sitió **Arkedania**, el bastión Feynista. Tras un asedio de dos años que destruyó gran parte de la ciudad, Arkedania cayó. El Patriarca Feynista huyó hacia el norte. La conquista de la sede del Patriarcado fue interpretada como señal divina de que el Mekhatimismo había superado al Feynismo.
 
-Canrim murió en 3710, anciano y venerado. Su hijo **Rashad I** heredó el trono, estableciendo el precedente de sucesión leonina dentro de la Casa de Canrim.
+Canrim murió en 3710, anciano y venerado. Su hijo **Erdelan I** heredó el trono, estableciendo el precedente de sucesión leonina dentro de la Casa de Canrim.
 
 ## La Era de Oro: Guerras Santas y Expansión (Siglos XXXVIII-XXXIX)
 
@@ -75,13 +75,7 @@ Sin embargo, las semillas de problemas futuros ya estaban plantadas. El método 
 
 ## Conflicto con Ustilus y el Estancamiento (Siglos XL-XLI)
 
-La rivalidad con Ustilus definió los últimos siglos de historia Arshalaní. Ambos imperios se veían como destinados por sus respectivos dioses para gobernar el mundo. Guerras eran inevitables y frecuentes:
-
-- **Primera Guerra Ustilo-Arshalaní** (3821-3829): Empate sangriento. Ambos bandos reclamaron victoria.
-- **Segunda Guerra** (3912-3921): Arshalán perdió territorio en el Mar Interior pero se mantuvo firme en tierra.
-- **Tercera Guerra** (3998-4003): Devastadora. Coincidió con la desaparición de Feyn (4000), que Arshalán intentó explotar. Fracasó debido a la sorpresiva resiliencia ustilesa.
-
-Cada guerra costaba fortunas y vidas. Arshalán, aunque poderoso, comenzó a mostrar signos de fatiga: territorios fronterizos devastados, economía tensionada, población cansada de conflicto constante.
+La rivalidad con Ustilus definió los últimos siglos de historia Arshalaní. Ambos imperios se veían como destinados por sus respectivos dioses para gobernar el mundo. Guerras eran inevitables y frecuentes. Cada guerra costaba fortunas y vidas. Arshalán, aunque poderoso, comenzó a mostrar signos de fatiga: territorios fronterizos devastados, economía tensionada, población cansada de conflicto constante.
 
 ## La Gran Crisis: De la Invasión Fallida a la Guerra Civil (4010-Presente)
 
@@ -120,9 +114,9 @@ Arshalán se desangra. El trono permanece disputado, el tesoro imperial está ag
 
 El título de **Mhayid** combina autoridad religiosa y secular absoluta. Como sucesor directo del primer discípulo de Mekhatim, el Mhayid es intermediario entre los mortales y la Hueste Celestial, comandante supremo de los ejércitos, legislador final y juez de apelación última. En teoría, su palabra es ley incuestionable. En práctica, su poder real depende de su capacidad para equilibrar facciones rivales.
 
-La sucesión sigue el sistema tradicional leonino establecido por Canrim: cuando muere un Mhayid, todos sus hijos varones tienen derecho legítimo al trono. Históricamente, esto significa guerra civil, aunque civilizada con reglas: el conflicto debe resolverse dentro de un año de la muerte del padre, y una vez que un heredero es reconocido por el Divan y coronado en la Gran Mezquita, los demás deben someterse o exiliarse. Este sistema brutal garantiza que solo los más aptos (o despiadados) gobiernen, pero causa inestabilidad periódica devastadora.
+La sucesión sigue el sistema tradicional leonino establecido por Canrim: cuando muere un Mhayid, todos sus hijos varones tienen derecho legítimo al trono. Históricamente, esto significa guerra civil, aunque civilizada con reglas: el conflicto debe resolverse dentro de un año de la muerte del padre, y una vez que un heredero es reconocido por el Divan y coronado en el Gran Templo, los demás deben someterse o exiliarse. Este sistema brutal garantiza que solo los más aptos (o despiadados) gobiernen, pero causa inestabilidad periódica devastadora.
 
-Actualmente, el trono del Mhayid permanece disputado. Tras la guerra civil que siguió a la muerte de los príncipes Leysson y Cemel, múltiples facciones reclaman la legitimidad: el general **Zagnos** se ha proclamado **Campeón de la Hueste**, varios gobernadores regionales actúan como soberanos independientes, y un movimiento republicano rechaza la propia institución del Mhayid. El **Palacio de Topkani** en Sershalán permanece como símbolo de una autoridad que nadie ejerce plenamente.
+Actualmente, el trono del Mhayid permanece disputado. Tras la guerra civil que siguió a la muerte de los príncipes Leysson y Cemel, múltiples facciones reclaman la legitimidad: el general **Zagnos** se ha proclamado **Campeón de la Hueste**, varios gobernadores regionales actúan como soberanos independientes, y un movimiento republicano rechaza la propia institución del Mhayid. El **Palacio Imperial** en Sershalán permanece como símbolo de una autoridad que nadie ejerce plenamente.
 
 ## El Divan: Consejo Imperial
 
@@ -132,11 +126,9 @@ El **Divan** es el órgano administrativo central del imperio, compuesto por fun
 
 **Visir de Guerra**: Coordina los cuatro comandos militares. Posición vacante desde la muerte de Chandrial. El general **Zagnos**, autoproclamado Campeón de la Hueste, reclama esta autoridad de facto pero no es reconocido universalmente.
 
-**Visir de Tesoro**: Gestiona impuestos y gastos imperiales. Actualmente **Mirza Tangar**, un tangarino pragmático que intenta desesperadamente evitar bancarrota.
+**Visir de Tesoro**: Gestiona impuestos y gastos imperiales. Actualmente **Zevar Pasha**, un leonino pragmático que intenta desesperadamente evitar bancarrota.
 
-**Kadí Mayor**: Juez supremo que interpreta ley Mekhatimista y supervisa tribunales religiosos.
-
-**Muftí de Sershalán**: Máxima autoridad religiosa, emite fatwas (decretos religiosos) y controla el clero oficial.
+**Juez de la Verdad**: Juez supremo que interpreta ley Mekhatimista y supervisa tribunales religiosos. Es también la máxima autoridad religiosa, emite fatwas (decretos religiosos) y controla el clero oficial.
 
 Las reuniones del Divan son famosas por su protocolo rígido pero también por intrigas constantes. Visires compiten por el oído del Mhayid, forman alianzas temporales, y ocasionalmente son ejecutados cuando caen en desgracia.
 
@@ -156,7 +148,7 @@ Cada millet (Feynista, Culto de los Ancestros Ayutanos, tradiciones tribales Cho
 - Exención de ciertos impuestos religiosos
 - Representante reconocido ante el gobierno imperial
 
-A cambio, pagan el **jizya** (impuesto especial sobre no-Mekhatimistas) y aceptan superioridad legal del Mekhatimismo. Este sistema pragmático ha permitido a Arshalán gobernar un imperio masivo multiétnico sin rebelliones religiosas constantes, aunque las tensiones ocasionalmente explotan.
+A cambio, pagan un impuesto especial sobre no-Mekhatimista y aceptan superioridad legal del Mekhatimismo. Este sistema pragmático ha permitido a Arshalán gobernar un imperio masivo multiétnico sin rebelliones religiosas constantes, aunque las tensiones ocasionalmente explotan.
 
 # Economía
 
@@ -172,16 +164,17 @@ Este sistema genera varios problemas:
 - **Corrupción**: Timares se compran y venden ilegalmente; conexiones políticas importan más que mérito
 
 Regiones agrícolas principales:
-- **Llanuras de Arzawan** (oeste): Trigo, cebada, centro alimentario del imperio
-- **Delta de Beisyan** (sur): Algodón, frutas, especias
-- **Valles de Kajmasar** (este): Ganadería, caballos de guerra
-- **Costas del Mar Interior**: Olivos, vino (en zonas Feynistas toleradas)
+- **Letemi** (sur): Trigo, cebada, olivos, vino
+- **Kuduzu** (centro): Ganadería, caballos
+- **Gazili** (oeste): Hierro, cobre, trigo
+- **Ayután** (norte): Madera, pieles, carbón
+- **Yalshin** (este): 
 
 ## Comercio
 
 Arshalán se beneficia de su posición geográfica controlando rutas terrestres entre Kimon oriental y occidental, y marítimas en el Mar Interior:
 
-**Rutas de Caravanas**: Comerciantes atraviesan el imperio llevando seda, especias, té desde el este hacia Mazarín y Reinos Libres. El imperio cobra tarifas en cada frontera y ciudad principal.
+**Rutas de Caravanas**: Comerciantes atraviesan el imperio llevando seda, especias, té desde el este hacia Mazarín y Reinos Libres. El imperio cobra aranceles en cada frontera y ciudad principal.
 
 **Puertos**: Beisyan es uno de los puertos más grandes del continente, donde mercancías de todo el mundo conocido confluyen. Rivaliza con puertos ustileses.
 
@@ -194,7 +187,7 @@ Sin embargo, el comercio ha sufrido por guerras constantes y competencia ustiles
 Arshalán es famoso por producción artesanal de alta calidad:
 - **Alfombras**: Anudadas a mano, diseños geométricos intrincados, exportadas por todo el continente
 - **Cerámica**: Azulejos vidriados con caligrafía sagrada, vajilla fina
-- **Metalurgia**: Armas (especialmente sables curvos), armaduras, joyas
+- **Metalurgia**: Armas (especialmente sables), armaduras, joyas
 - **Textiles**: Sedas bordadas, brocados, terciopelos
 
 Gremios artesanales poderosos controlan producción y entrenamiento de aprendices. Tienen influencia política considerable en ciudades.
@@ -245,8 +238,8 @@ Guerreros formidables, forman infantería pesada de elite. Leales pero mantienen
 ### Otros Grupos
 
 - **Aven**: Hombres-pájaro que habitan montañas, sirviendo como mensajeros y exploradores aéreos
-- **Enanos**: Mineros y herreros en montañas orientales, mantienen autonomía bajo protección imperial
-- **Chothgar convertidos**: Antiguos enemigos que aceptaron Mekhatimismo tras derrotas, sirven como tropas de choque
+- **Urlok**: Mineros y herreros en montañas orientales, mantienen autonomía bajo protección imperial
+- **Chothgar convertidos** (Shetyen): Antiguos enemigos que aceptaron Mekhatimismo tras derrotas, sirven como tropas de choque
 - **Comunidades Feynistas**: Especialmente en antiguo Arkedania, toleradas bajo sistema de millets
 
 ## Vida Urbana
@@ -254,7 +247,7 @@ Guerreros formidables, forman infantería pesada de elite. Leales pero mantienen
 Las ciudades Arshalaníes son vibrantes, caóticas, cosmopolitas:
 
 **Arquitectura distintiva**:
-- Mezquitas con cúpulas masivas y minaretes delgados
+- Templos con cúpulas masivas y minaretes delgados
 - Azulejos de cerámica cubriendo fachadas con patrones geométricos y caligrafía
 - Fuentes públicas en cada plaza
 - Calles estrechas y laberínticas (deliberadamente, para defensa)
@@ -262,7 +255,7 @@ Las ciudades Arshalaníes son vibrantes, caóticas, cosmopolitas:
 
 **El Hamam**: Baños públicos son institución central. Segregados por género, sirven no solo para higiene sino como espacio social. Hombres discuten negocios y política; mujeres intercambian chismes y organizan matrimonios. Arquitectura incluye salas calientes, tibias, frías, con cúpulas perforadas dejando pasar luz.
 
-**Bazares**: Corazón económico y social. Organizados por gremio (calle de joyeros, calle de especias, calle de libros). Negociación es arte; precio inicial es tres veces el final. Mezquitas y caravanserais (posadas) integrados en complejo.
+**Bazares**: Corazón económico y social. Organizados por gremio (calle de joyeros, calle de especias, calle de libros). Negociación es arte; precio inicial es tres veces el final. Templos y caravanserais (posadas) integrados en complejo.
 
 **Casas de Café**: Innovación reciente (últimos 100 años), las casas de café se han vuelto increíblemente populares. Hombres pasan horas bebiendo café fuerte y espeso, fumando pipa de agua, jugando ajedrez, discutiendo teología y política. El clero conservador ocasionalmente intenta prohibirlas como moralmente corruptas.
 
@@ -272,73 +265,33 @@ Las ciudades Arshalaníes son vibrantes, caóticas, cosmopolitas:
 
 La mayoría (75%) vive en áreas rurales:
 
-Aldeas agrícolas organizadas alrededor de mezquita local y pozo comunal. Vida regida por ciclos estacionales de siembra y cosecha. Campesinos trabajan tierra que "pertenece" a titular de timar, entregando porción de cosecha como renta.
+Aldeas agrícolas organizadas alrededor de templo local y pozo comunal. Vida regida por ciclos estacionales de siembra y cosecha. Campesinos trabajan tierra que "pertenece" a titular de timar, entregando porción de cosecha como renta.
 
 Estructura social en aldeas:
 - **Imam**: Líder religioso, también maestro, mediador de disputas
 - **Muhtar**: Jefe elegido de aldea, representa comunidad ante autoridades
-- **Aga**: Si hay un aga local (señor menor), vive en pequeña fortaleza supervisando varias aldeas
+- **Agha**: Si hay un agha local (señor menor), vive en pequeña fortaleza supervisando varias aldeas
 
 La vida es dura pero con ritmos consoladores: festivales religiosos marcan el año, tradiciones orales preservan identidad, comunidad provee red de seguridad. Sin embargo, impuestos crecientes y reclutamiento militar forzado están erosionando el tejido social rural.
 
-## Familia y Género
-
-**Familia extendida** es unidad básica. Hijos casados viven con padres, formando hogares multigeneracionales. El patriarca tiene autoridad absoluta.
-
-**Matrimonios** típicamente arreglados entre familias, uniendo intereses económicos. Poligamia es legal (hasta cuatro esposas si se puede mantenerlas equitativamente) pero solo común entre ricos.
-
-**Roles de género** son estrictamente definidos pero varían por etnia:
-- Entre leoninos: Separación extrema, mujeres nobles raramente vistas en público
-- Entre tangarinos: Mujeres tienen más libertad, algunas son jinetes respetadas
-- Entre ayutanos: Mujeres pueden poseer propiedad y comerciar independientemente
-
-En todas las culturas, hombres dominan espacios públicos (mezquitas, bazares, casas de café), mientras mujeres reinan en espacio doméstico.
-
-## Comida
-
-Cocina Arshalaní es fusión de tradiciones:
-
-**Platos principales**:
-- **Pilaf**: Arroz cocido con carne, especias, frutos secos
-- **Kebab**: Carne asada en brochetas (cordero, pollo, res)
-- **Dolma**: Verduras rellenas (pimientos, hojas de parra)
-- **Lahmacun**: Pan plano cubierto con carne picada especiada
-- **Baklava**: Postre de hojaldre con miel y pistachos
-
-**Bebidas**:
-- **Café**: Fuerte, espeso, sin filtrar, servido en tazas pequeñas
-- **Té**: Alternativa popular, especialmente entre clase trabajadora
-- **Ayran**: Yogur salado batido con agua
-- **Sherbet**: Bebidas dulces de frutas
-
-**Etiqueta**:
-- Comer con mano derecha (izquierda es impura)
-- Compartir platos comunales
-- Hospitalidad sagrada: rechazar comida ofrecida es insulto grave
 
 ## Artes
 
-**Caligrafía**: Arte supremo. Versos del Taurenet escritos en caligrafía hermosa adornan mezquitas, palacios, objetos cotidianos. Maestros calígrafos son venerados.
+**Caligrafía**: Arte supremo. Versos del Taurenet escritos en caligrafía hermosa adornan templos, palacios, objetos cotidianos. Maestros calígrafos son venerados.
 
 **Música**: Instrumentos tradicionales incluyen el oud (laúd), ney (flauta), qanun (cítara). Modos melódicos complejos (makam) evocan emociones específicas. Danza de derviches giratorios (orden mística Mekhatimista) es espectáculo espiritual.
 
-**Literatura**: Poesía domina. Grandes poetas como **Tariq al-Muharib** (siglo XXXVIII) son memorizados por generaciones. Temas: amor divino, anhelo de ascensión, belleza transitoria, heroísmo en batalla.
-
-**Arquitectura**: Mezquitas monumentales compiten en tamaño y belleza. La **Mezquita Azul de Sershalán** puede albergar 100,000 fieles, con seis minaretes y cúpula de 43 metros.
+**Literatura**: Poesía domina. Grandes poetas como **Muharib** (siglo XXXVIII) son memorizados por generaciones. Temas: amor divino, anhelo de ascensión, belleza transitoria, heroísmo en batalla.
 
 ## Educación
 
-**Madrasas**: Escuelas religiosas anexas a mezquitas. Enseñan lectura (del Taurenet), escritura, aritmética básica, teología. Abiertas a todos los niños varones Mekhatimistas gratuitamente.
+**Madrasas**: Escuelas religiosas anexas a templos. Enseñan lectura (del Taurenet), escritura, aritmética básica, teología. Abiertas a todos los niños varones Mekhatimistas gratuitamente.
 
-**Tekke**: Lodges de órdenes místicas Sufíes donde maestros espirituales entrenan discípulos en meditación, ritual y filosofía esotérica.
+**Tekke**: Lodges de órdenes místicas Mekhatimistas donde maestros espirituales entrenan discípulos en meditación, ritual y filosofía esotérica.
 
-**Academias militares**: Para hijos de elite, enseñando equitación, esgrima, estrategia, además de educación clásica.
-
-Las niñas típicamente se educan en casa, aprendiendo tareas domésticas, aunque hijas de familias ricas pueden recibir educación privada en literatura y artes.
+**Academias militares**: Para hijos de elite, enseñando equitación, esgrima, estrategia, además de educación clásica. La más destacable es la Academia de Oficiales de Sershalán, localizada en la región oriental de Fenerli Köy
 
 # Fuerzas Armadas
-
-## Estructura: Los Cuatro Ejércitos
 
 Una innovación de Canrim para prevenir que cualquier general acumulara suficiente poder para desafiar al Mhayid fue dividir las fuerzas armadas en cuatro comandos independientes:
 
@@ -347,20 +300,18 @@ Una innovación de Canrim para prevenir que cualquier general acumulara suficien
 **Función**: Defensa contra Chothgar y amenazas de las estepas
 **Tamaño**: ~120,000 (tras pérdidas recientes)
 **Composición**: Principalmente tangarinos (caballería ligera), leoninos (caballería pesada), infantería mixta
-**Base**: Tophane
-**Comandante Actual**: **General Arslan el Joven** (leonino, 38 años, agresivo, favorece ofensivas preventivas)
+**Base**: Aksütun
+**Comandantes Destacables**: **Bahtiyar Pasha** (4009-4019), **Ayberk Pasha** (4019-4034), **Ayhan Pasha** (4034-4037)
 
 Este ejército es el más experimentado en guerra de movimiento. Décadas luchando contra incursores Chothgar lo han endurecido. Caballería ligera tangarino realiza exploraciones profundas, emboscadas y hostigamiento, mientras que sipahis leoninos proporcionan golpe decisivo en batalla campal.
 
 ### Ejército del Oeste
 
-**Función**: Guerra contra Mazarín, Reinos Libres, contención de Ustilus
-**Base**: Arkedania
-**Tamaño**: ~80,000 (severamente reducido tras invasión fallida de Ustilus)
+**Función**: Guerra contra Mazarín, Reinos Libres
+**Base**: Egilburg
+**Tamaño**: ~80,000
 **Composición**: Infantería pesada ayutana, caballería leonina, ingenieros de asedio
-**Comandante Actual**: **General Ibrahim al-Qadim** (letemita, 52 años, cauteloso, traumatizado por desastre ustilés)
-
-Este ejército sufrió las mayores pérdidas en la invasión fallida. Está en proceso de reconstrucción, pero moral es baja. Ibrahim es competente pero obsesionado con no repetir los errores del difunto Chandrial, lo cual lo paraliza en inacción.
+**Comandantes Destacables**: **Wilhelm Pasha** (4019-4040)
 
 ### Ejército del Sur y Armada
 
@@ -368,39 +319,19 @@ Este ejército sufrió las mayores pérdidas en la invasión fallida. Está en p
 **Base**: Beisyan
 **Tamaño**: ~40,000 tropas terrestres, 250 naves (galleys, galleones)
 **Composición**: Marineros letemitas, marines leoninos y ayutanos
-**Comandante Actual**: **Almirante Mehmed Pasha** (letemita, 61 años, legendario estratega naval)
+**Comandantes Destacables**: **Areshgal Dey** (4023-4031) 
 
-Responsable de desafiar dominio ustilés del Mar Interior. La armada Arshalaní en su apogeo rivalizaba con Ustilus; ahora está en desventaja numérica. Mehmed es viejo pero brillante, ganando batallas mediante astucia más que fuerza bruta.
+Responsable de desafiar dominio ustilés del Mar Interior. La armada Arshalaní en su apogeo rivalizaba con Ustilus; ahora está en desventaja numérica. 
 
 ### Ejército del Centro y Guardia Imperial
 
 **Función**: Seguridad interna, supresión de rebeliones, protección del Mhayid
 **Base**: Sershalán
 **Tamaño**: ~60,000
-**Composición**: Guardia Janwar (elite leonina), janízaros (infantería elite), sipahis de la capital
-**Comandante**: Directamente el Mhayid
+**Composición**: Leoninos, Kurt Ayali
+**Comandantes Destacables**: **Zagnos Pasha** (4021-4037) 
 
-Este ejército es el más leal (en teoría) y mejor equipado. La **Guardia Janwar** (5000 leoninos) protege personalmente al Mhayid, vistiendo armadura dorada ceremonial. Los **janízaros** (15,000) son infantería de elite entrenada desde juventud, fanaticamente devota.
-
-## Reclutamiento y Organización
-
-**Sipahis**: Caballería pesada, backbone del ejército. Son titulares de timar que deben presentarse para campañas con equipo completo (caballo, armadura, armas) y traer número de soldados proporcional al valor de su timar. Esto significa que el ejército no requiere presupuesto permanente masivo, pero calidad varía enormemente.
-
-**Janízaros**: Sistema único. Originalmente reclutados mediante **devshirme** (leva de niños de comunidades no-Mekhatimistas, convertidos y entrenados como soldados de elite). El sistema se ha vuelto hereditario; hijos de janízaros se unen al cuerpo. Son infantería profesional permanente con arcabuces y picas, disciplinados y fanáticos.
-
-**Levas**: En tiempos de guerra, campesinos son reclutados forzadamente. Mal entrenados y equipados, sirven como infantería de masa. Sufren horribles casualidades.
-
-**Ingenieros**: Cuerpo especializado responsable de artillería (cañones de asedio), zapadores, construcción de fortificaciones.
-
-## Tácticas y Doctrina
-
-Doctrina militar Arshalaní enfatiza:
-- **Caballería como arma decisiva**: Cargas masivas de sipahis con lanzas y sables
-- **Caballería ligera para exploración y hostigamiento**: Arqueros montados tangarinos
-- **Infantería defensiva**: Janízaros forman líneas sólidas con arcabuces y picas
-- **Artillería de asedio**: Arshalán fabrica excelentes cañones de bronce en fundiciones de Tophane
-
-La debilidad principal es logística. El sistema de timar significa que los ejércitos deben licenciarse después de cada campaña (los sipahis deben regresar a gestionar sus tierras). Esto hace difícil mantener presión estratégica a largo plazo.
+Este ejército es el más leal (en teoría) y mejor equipado.
 
 ## Crisis Militar Actual
 
@@ -467,56 +398,21 @@ Pocas interacciones. Territorios élficos están lejos de fronteras Arshalaníes
 **Población**: ~1,200,000
 **Función**: Capital imperial, corazón espiritual del Mekhatimismo
 
-Fundada por Canrim al pie de las Montañas de Kajmasar en el lugar donde Mekhatim convirtió a los leoninos. Ciudad de contrastes extremos: palacios de mármol junto a barrios pobres apretados, mezquitas monumentales junto a bazares caóticos.
-
-**Distritos principales**:
-
-*Colina Imperial*: Cumbre de la ciudad, donde se eleva el **Palacio de Topkani**, vasto complejo de jardines, harenes, tesoros y salones del trono. 4000 habitantes viven dentro de sus murallas (familia imperial, cortesanos, guardias, sirvientes). La **Mezquita Azul** adyacente puede albergar 100,000 fieles.
-
-*Barrio Janízaro*: Cuarteles y campos de entrenamiento de la elite militar. Acceso restringido.
-
-*El Gran Bazar*: Laberinto comercial cubriendo 30 hectáreas, 4000 tiendas organizadas por gremio. Centro económico del imperio.
-
-*Puerto Dorado*: Aunque Sershalán no está directamente en costa, canal artificial conecta con el Mar Interior a 20km. Galeras y galleones descargan mercancías del mundo.
-
-*Barrios extranjeros*: Millets Feynista, Ayutano, y otros mantienen barrios autónomos con sus propias iglesias/templos, tribunales, mercados.
-
-*Suburbios*: Anillos de viviendas miserables se extienden por kilómetros, hogar de campesinos desplazados, veteranos lisiados, pobres desesperados.
-
-**Problemas actuales**: Superpoblación, crimen organizado, tensiones entre millets, intrigas políticas constantes.
+Fundada por Canrim al pie de las Montañas de Kajmasar en el lugar donde Mekhatim convirtió a los leoninos. Ciudad de contrastes extremos: palacios de mármol junto a barrios pobres apretados, templos monumentales junto a bazares caóticos.
 
 ## Beisyan
 
 **Población**: ~600,000
 **Función**: Principal puerto, capital naval, centro comercial
 
-Ubicada en delta fértil en costa del Mar Interior. Ciudad más cosmopolita del imperio: mercaderes de todas las naciones, marineros de mil puertos, espías de todos los reinos.
-
-**Características**:
-- **Arsenales navales**: Astilleros masivos construyen galeras de guerra
-- **Barrio Letemita**: Hogar de clase mercantil que domina economía urbana
-- **Casas de cambio**: Banqueros letemitas financian comercio internacional
-- **Distrito de placer**: Reputación de vice, tolerado por autoridades por ingresos fiscales
-
-Gobernador de Beisyan es segundo funcionario más poderoso del imperio después del Mhayid.
+Ubicada en delta fértil en costa del Mar Interior. Ciudad más cosmopolita del imperio: mercaderes de todas las naciones, marineros de mil puertos, espías de todos los reinos. Gobernador de Beisyan es segundo funcionario más poderoso del imperio después del Mhayid.
 
 ## Tophane
 
 **Población**: ~200,000
 **Función**: Arsenal imperial, centro de producción de armamentos
 
-Ciudad fortaleza en las estribaciones de Kajmasar. Aquí se fabrican los mejores cañones, espadas, armaduras del imperio. Fundiciones de bronce trabajan día y noche. Maestros armeros son tesoro nacional (prohibido salir del imperio bajo pena de muerte).
-
-Cuarteles generales del Ejército del Este. La ciudad es militarizada; todos los varones hacen servicio de guarnición.
-
-## Arkedania
-
-**Población**: ~400,000
-**Función**: Antigua capital Feynista, ahora ciudad fronteriza
-
-Conquistada en 3694, Arkedania nunca ha aceptado completamente dominio Arshalaní. Población mayoritariamente Feynista bajo sistema de millet. Catedral Feynista (ahora mezquita convertida) domina plaza central, recordatorio de pasado glorioso perdido.
-
-Cuarteles generales del Ejército del Oeste. Atmósfera tensa; gobernadores militares gobiernan con mano dura.
+Ciudad fortaleza en las estribaciones de Yalshin. Aquí se fabrican los mejores cañones, espadas, armaduras del imperio. Fundiciones de bronce trabajan día y noche. Maestros armeros son tesoro nacional (prohibido salir del imperio bajo pena de muerte).
 
 ## Kajmasar (Montañas Sagradas)
 
@@ -525,7 +421,3 @@ No es ciudad sino región montañosa entera. Aquí Mekhatim recibió el Taurenet
 **Cueva de la Revelación**: Donde Ithanatron entregó el Taurenet a Mekhatim. Destino de peregrinación obligatoria. Solo se permite acceso durante mes sagrado una vez al año.
 
 Los leoninos consideran estas montañas su tierra ancestral. Tribus mantienen fortalezas inaccesibles en picos más altos.
-
----
-
-*El Imperio de Arshalán permanece como coloso herido: vasto, poderoso, orgulloso, pero tambaleándose al borde del abismo. Su destino determinará el equilibrio de poder en todo Raldamain durante el siglo venidero.*

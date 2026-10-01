@@ -13,8 +13,6 @@ Los Mazarinos son generalmente altos y de constitución robusta, adaptados al du
 
 Las mujeres Mazarinas son conocidas por su belleza melancólica, con pómulos altos y rasgos marcados que transmiten una tristeza inherente incluso cuando sonríen. Los hombres tienen rasgos angulosos y expresiones severas que raramente se suavizan.
 
-La vestimenta tradicional incluye el **kaftan**, una túnica larga acolchada, y el **shapka**, un gorro de piel para el invierno brutal. Los nobles visten con opulencia exagerada, usando pieles de animales exóticos, joyas ostentosas y túnicas bordadas con hilo de oro, mientras que los campesinos usan simples túnicas de lana gris y zuecos de madera.
-
 
 # Temperamento y Personalidad
 
@@ -32,7 +30,7 @@ La relación de los Mazarinos con la religión es compleja y contradictoria. Ofi
 
 En las profundidades del campo, la [Fe Espiritual](../religiones/fe-espiritual.md) nunca murió realmente. Las viejas costumbres paganas, la veneración de espíritus ancestrales y de la naturaleza, persisten bajo una fina capa de barniz Feynista. Los campesinos consultan a **chamanes** (oficialmente prohibidos), hacen ofrendas a espíritus del bosque, y practican rituales de fertilidad que son claramente pre-Feynistas.
 
-Los Mazarinos tienen una fascinación obsesiva con la **muerte** y el más allá. Los funerales son elaborados y pueden durar días, con llantos profesionales (**plañideras**), banquetes funerarios donde se bebe en honor al muerto, y rituales complejos para asegurar que el alma del difunto encuentre el camino al otro lado. Existe la creencia popular en los **domovoi** (espíritus del hogar que protegen a la familia) y los **rusalki** (espíritus de mujeres ahogadas que acechan en ríos y lagos).
+Los Mazarinos tienen una fascinación obsesiva con la muerte y el más allá. Los funerales son elaborados y pueden durar días, con llantos profesionales, banquetes funerarios donde se bebe en honor al muerto, y rituales complejos para asegurar que el alma del difunto encuentre el camino al otro lado. Existe la creencia popular en los domovoi (espíritus del hogar que protegen a la familia) y los rusalki (espíritus de mujeres ahogadas que acechan en ríos y lagos).
 
 # Vida Social y Costumbres
 
@@ -44,21 +42,10 @@ Los matrimonios tradicionalmente son arreglados por las familias, especialmente 
 
 ## El Vodka
 
-El **vodka** no es solo una bebida en la cultura Mazarina; es una institución social, un medicamento, un sacramento secular. Se bebe en celebraciones, funerales, reuniones sociales, negocios, y en solitario cuando la **toska** se vuelve insoportable. Existe un ritual elaborado para beber vodka correctamente: se sirve frío, se bebe de un trago (nunca a sorbos), se huele un trozo de pan negro inmediatamente después, y se acompaña con **zakuski** (aperitivos: pepinillos encurtidos, arenque, pan negro).
+El **vodka** no es solo una bebida en la cultura Mazarina; es una institución social, un medicamento, un sacramento secular. Se bebe en celebraciones, funerales, reuniones sociales, negocios, y en solitario cuando la vida se vuelve insoportable. Existe un ritual elaborado para beber vodka correctamente: se sirve frío, se bebe de un trago (nunca a sorbos), se huele un trozo de pan negro inmediatamente después, y se acompaña con aperitivos.
 
 El alcoholismo es endémico en todos los niveles sociales. Los nobles justifican su consumo excesivo como "sensibilidad artística" necesaria para la creatividad, mientras que los campesinos beben para olvidar temporalmente su miseria. Es socialmente aceptado, incluso esperado, emborracharse en reuniones sociales.
 
-## Comida
-
-La cocina Mazarina es sustanciosa y diseñada para combatir el frío invernal. Los platos típicos incluyen:
-
-- **Borsch**: Sopa de remolacha con carne y verduras, servida con crema agria.
-- **Pelmeni**: Empanadillas rellenas de carne, similares a raviolis.
-- **Kasha**: Gachas de cereales (avena, trigo sarraceno) que es el alimento básico del campesinado.
-- **Blini**: Crepes finas servidas con caviar (nobles) o mermelada (pobres).
-- **Pan negro de centeno**: Considerado sagrado; desperdiciar pan es pecado gravísimo.
-
-La comida tiene connotaciones espirituales. El pan y la sal se ofrecen a invitados como símbolo de hospitalidad. Los banquetes funerarios (**pominki**) incluyen platos específicos que se creía ayudan al alma del difunto en su viaje al más allá.
 
 ## Arte y Literatura
 
@@ -97,9 +84,3 @@ Los elfos son respetados por los Mazarinos, quienes ven en ellos una sabiduría 
 - **Respeto por los Ancianos**: La edad trae sabiduría. Los ancianos son tratados con deferencia, y sus palabras tienen peso.
 
 - **Destino y Fatalismo**: Lo que será, será. Luchar contra el destino es inútil, pero uno debe enfrentar su destino con dignidad.
-
-# Mazarinos Notables
-
-(Esta sección puede expandirse con personajes específicos que crees para tu mundo)
-
-Los Mazarinos son un pueblo de extremos: capaces de la más alta cultura y la más baja degeneración, de la más profunda espiritualidad y el más cínico materialismo, de la más cálida hospitalidad y la más fría crueldad. Son un enigma incluso para ellos mismos, eternamente buscando un significado en un mundo que les ha dado todas las razones para desesperarse, pero que se niegan a abandonar.

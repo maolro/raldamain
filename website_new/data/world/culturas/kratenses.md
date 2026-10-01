@@ -23,45 +23,38 @@ Los hombres kratenses lucen aspecto de gente que trabaja con las manos: manos an
 La moda kratense refleja la tensión entre tradición rural y modernización republicana:
 
 **Tradicional rural**:
-- **Bragou-braz**: Pantalones amplios de lona, prácticos para trabajo
-- **Chupenn**: Chaqueta corta de lana gruesa, bordada en los puños y cuello con motivos geométricos celtas que indican región de origen
+- Pantalones amplios de lona, prácticos para trabajo
+- Chaqueta corta de lana gruesa, bordada en los puños y cuello con motivos geométricos que indican región de origen
 - **Tok**: Sombrero redondo de fieltro negro, icono del campesino kratense
-- **Sabots**: Zuecos de madera para trabajo de campo; botas de cuero para ciudad
-- **Capa de lana**: Con capucha, imprescindible para el clima lluvioso
+- Capa de lana con capucha, imprescindible para el clima lluvioso
 
 **Mujeres tradicionales**:
-- **Coiffe**: Tocado de encaje blanco, altura y forma varían por región (el de Carpentia tiene forma de vela de barco; el de Rimas es más austero)
-- **Jupe**: Falda amplia de lana oscura con delantal bordado
-- **Corselet**: Corpiño ajustado sobre camisa blanca
+- **Coiffe**: Tocado de encaje blanco, altura y forma varían por región 
+- Falda amplia de lana oscura con delantal bordado
+- Corpiño ajustado sobre camisa blanca
 - **Chal** de lana para los hombros
 
 **Urbana republicana**:
 - Inspirada en la moda ustilesa pero deliberadamente simplificada (rechazando la opulencia aristocrática)
 - Hombres: chaqueta recta, pantalón sencillo, camisa sin adornos, **escarapela tricolor** (azul, blanco, dorado: colores de la república) en la solapa
 - Mujeres: vestidos más sencillos que los ustileses, peinados naturales sin los elaborados tocados de la aristocracia sureña
-- **La escarapela**: Símbolo omnipresente de identidad republicana. Llevarla es acto político; no llevarla genera sospechas
 
 **Colores**: Preferencia por tonos sobrios y prácticos (azul marino, marrón, gris, negro) con acentos de color en bordados o accesorios. El rojo se asocia con la revolución; el verde con la naturaleza y la Fe Espiritual; el blanco con la pureza de ideales.
 
 # Temperamento y Valores
 
-## Terquedad Independiente
 
 El rasgo más definitorio del kratense es una obstinación que raya en lo heroico. Cuando un kratense decide algo, ni los dioses (que probablemente no existen, según los más republicanos) lo harán cambiar de opinión. Esta terquedad se manifiesta en todo: en la resistencia del pescador que sale al mar con tormenta, en el agricultor que se niega a abandonar tierra pobre, en el político que defiende una posición durante horas en el Congreso, y en la resistencia colectiva de un pueblo que se negó a ser absorbido por dos imperios.
 
-**Independencia**: Los kratenses valoran la autonomía por encima de casi todo. Independencia nacional, independencia personal, independencia de pensamiento. "Ni rey, ni papa, ni amo" es lema no oficial que resume la actitud. Esta independencia puede degenerar en individualismo terco que dificulta la cooperación (los kratenses discuten interminablemente antes de actuar colectivamente, pero una vez que se ponen de acuerdo, son imparables).
-
-## Pragmatismo Terrestre
+**Independencia**: Los kratenses valoran la autonomía por encima de casi todo. Independencia nacional, independencia personal, independencia de pensamiento. "Ni rey, ni patriarca, ni amo" es lema no oficial que resume la actitud. Esta independencia puede degenerar en individualismo terco que dificulta la cooperación (los kratenses discuten interminablemente antes de actuar colectivamente, pero una vez que se ponen de acuerdo, son imparables).
 
 A diferencia del idealismo abstracto de los intelectuales ustileses o la melancolía filosófica de los mazarinos, el pragmatismo kratense está arraigado en la realidad material:
 
-**"Gwir eo, met kontrollet eo?"** ("Es verdad, pero ¿funciona?"): Frase que resume la actitud. Los kratenses juzgan ideas por sus resultados, no por su elegancia teórica. La revolución se justifica no porque la teoría política lo exija sino porque la vida bajo Ustilus era intolerable. La democracia vale porque funciona mejor que la monarquía, no porque un filósofo lo diga.
+Es verdad, pero ¿funciona?": Frase que resume la actitud. Los kratenses juzgan ideas por sus resultados, no por su elegancia teórica. La revolución se justifica no porque la teoría política lo exija sino porque la vida bajo Ustilus era intolerable. La democracia vale porque funciona mejor que la monarquía, no porque un filósofo lo diga.
 
 **Trabajo como virtud**: Los kratenses desprecian la ociosidad aristocrática. Un hombre que no trabaja con sus manos o su cabeza no merece respeto, sin importar su linaje. Esta ética del trabajo es profundamente igualitaria: el astillero que construye barcos y la profesora que educa niños contribuyen igualmente a la república.
 
 **Desconfianza de lo grandilocuente**: Los kratenses recelan de grandes discursos, promesas exageradas y gestos dramáticos. Prefieren hechos a palabras, acción a retórica, evidencia a fe. Esta actitud los hace excelentes comerciantes y pésimos oradores (aunque la revolución produjo excepciones notables como Reki Hyung).
-
-## Solidaridad Comunitaria
 
 La vida en tierra de frontera, donde la supervivencia dependía de la cooperación vecinal, ha generado una fuerte cultura de solidaridad:
 
@@ -70,8 +63,6 @@ La vida en tierra de frontera, donde la supervivencia dependía de la cooperaci�
 **Vida asociativa**: Los kratenses se organizan compulsivamente en asociaciones: cooperativas agrícolas, cofradías de pescadores, sociedades de socorros mutuos, clubes de lectura, círculos de debate. Esta red asociativa es la espina dorsal de la sociedad civil y fue instrumental durante la revolución.
 
 **Patriotismo local**: Antes de ser patriotas nacionales, los kratenses son patriotas de su pueblo, su valle, su costa. La rivalidad entre localidades es intensa pero generalmente amistosa: Rimas vs Carpentia en todo, desde cuál hace mejor sidra hasta cuál aportó más héroes a la revolución.
-
-## Escepticismo y Humor
 
 Los kratenses son escépticos por naturaleza y sarcásticos por diversión:
 
@@ -113,7 +104,7 @@ La elite intelectual y política promueve un ateísmo ilustrado directamente inf
 
 ## La Familia
 
-**Estructura familiar**: Nuclear con fuertes lazos con familia extendida y comunidad. A diferencia de las familias patriarcales de Ustilus o Mazarín, las familias kratenses tienden a mayor igualdad entre esposos, herencia de la tradición céltica ancestral.
+**Estructura familiar**: Nuclear con fuertes lazos con familia extendida y comunidad. A diferencia de las familias patriarcales de Ustilus o Mazarín, las familias kratenses tienden a mayor igualdad entre esposos, herencia de la tradición ancestral.
 
 **Matrimonio**: Tradicionalmente arreglado por familias (especialmente entre agricultores, para unir tierras), pero el amor romántico siempre fue valorado. La revolución ha acelerado la tendencia hacia matrimonios por elección libre. La ceremonia puede ser feynista, druídica, o puramente civil (innovación republicana). La **Noche de Beltane** es tradicionalmente cuando se forman parejas.
 
@@ -121,7 +112,7 @@ La elite intelectual y política promueve un ateísmo ilustrado directamente inf
 - Mujeres kratenses poseen propiedad independientemente
 - Viudas heredan directamente (no tutela masculina)
 - Mujeres trabajan en pesca, agricultura, comercio y desde la revolución en funciones públicas
-- El sufragio femenino (4031) fue innovación sin equivalente continental
+- El sufragio femenino fue innovación sin equivalente continental
 - Sin embargo, en zonas rurales conservadoras persisten roles más tradicionales
 
 ## Comida y Bebida
@@ -131,16 +122,13 @@ La cocina kratense es campesina, marítima y satisfactoria:
 **Ingredientes base**: Mariscos, pescado, mantequilla, trigo sarraceno, patatas, manzanas, cerdo, repollo.
 
 **Platos emblemáticos**:
-- **Kig ha farz**: Cocido de carnes (cerdo, res, salchichas) con verduras y farz (masa de trigo sarraceno cocida en tela)
-- **Cotriade**: Guiso de pescado y patatas, plato de pescadores
-- **Galettes de blé noir**: Crepes de trigo sarraceno rellenas de queso, jamón, huevo
-- **Kouign-amann**: Pastel de mantequilla y azúcar, denso y adictivo
-- **Far breton**: Pudín de ciruelas pasas
+- Cocido de carnes (cerdo, res, salchichas) con verduras y farz (masa de trigo sarraceno cocida en tela)
+- Guiso de pescado y patatas, plato de pescadores
+- Pastel de mantequilla y azúcar, denso y adictivo
 - **Mariscos**: Ostras, mejillones, langostinos frescos, servidos simplemente
 
 **Bebidas**:
 - **Sidra** (chistr): Bebida nacional. Cada granja tiene sus propios manzanos. Beber sidra es acto patriótico. Se sirve en cuencos de cerámica
-- **Chouchen**: Hidromiel con miel local, bebida tradicional druídica con connotaciones rituales
 - **Café**: Adoptado con entusiasmo post-revolución; los cafés de Rimas son centros de vida intelectual
 
 **Etiqueta**:
@@ -150,32 +138,18 @@ La cocina kratense es campesina, marítima y satisfactoria:
 
 ## Entretenimiento y Tradiciones
 
-**Fest-noz** (fiesta nocturna): Evento social central. Reuniones comunitarias con música tradicional, danza en grupo (círculos y cadenas), comida compartida, sidra abundante y narración de historias. Antes de la revolución eran clandestinos (prohibidos por autoridades ustilesas como "reuniones sediciosas"). Ahora son celebración oficial de identidad kratense.
+Fiesta nocturna: Evento social central. Reuniones comunitarias con música tradicional, danza en grupo (círculos y cadenas), comida compartida, sidra abundante y narración de historias. Antes de la revolución eran clandestinos (prohibidos por autoridades ustilesas como "reuniones sediciosas"). Ahora son celebración oficial de identidad kratense.
 
 **Música y danza**: Tradición musical celta vibrante:
-- **Biniou** (gaita kratense): Instrumento icónico, sonido penetrante
-- **Bombarde**: Oboe tradicional, acompaña al biniou
-- **Arpa kratense**: Para música más íntima
-- **An dro, Hanter dro, Gavotte**: Danzas en cadena o círculo, comunitarias
+- Gaita kratense: Instrumento icónico, sonido penetrante
+- Bombarde: Oboe tradicional, acompaña al biniou
+- Arpa kratense: Para música más íntima
 
 **Deportes**:
-- **Gouren**: Lucha tradicional, torneos son eventos sociales mayores
 - **Lanzamiento de tronco**: Competencia de fuerza en ferias rurales
 - **Regatas**: Carreras de barcos pesqueros en la costa
 
-**Narración oral**: Tradición de **kontadennou** (cuentos) y **gwerzioù** (baladas) recitados en fest-noz o junto al fuego. Historias de espíritus, hadas, la Ankou (personificación de la muerte), guerreros ancestrales, y cada vez más, héroes de la revolución.
-
-## Artes y Artesanía
-
-**Encaje**: El encaje kratense es famoso por su delicadeza. Las coiffes ceremoniales y manteles decorativos son piezas de complejidad extraordinaria.
-
-**Cerámica**: Vajilla tradicional pintada con motivos celtas (espirales, triskeles, entrelazados). Cada región tiene estilo propio.
-
-**Construcción naval**: Los barcos de Carpentia combinan funcionalidad con elegancia de líneas. Los carpinteros navales son artesanos respetadísimos.
-
-**Madera tallada**: Muebles, instrumentos musicales, objetos decorativos con motivos celtas y naturales.
-
-**Bordado**: Los bordados de las chupenn y trajes tradicionales son obras de arte portátiles que identifican región, familia y estatus.
+**Narración oral**: Tradición de baladas recitados en fest-noz o junto al fuego. Historias de espíritus, hadas, guerreros ancestrales, y cada vez más, héroes de la revolución.
 
 # Relaciones con Otros Pueblos
 

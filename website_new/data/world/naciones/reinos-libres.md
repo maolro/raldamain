@@ -166,7 +166,7 @@ La capital de facto de los Reinos Libres (aunque ningún geismariano admitiría 
 - **La Cervecería de los Fundadores**: Taberna legendaria donde se firmó el Tratado de Nivenburg. Todavía se puede ver la mesa original con las marcas de las peleas durante las negociaciones.
 - **La Fortaleza de la Liga**: Cuartel general de la Liga de Mercenarios, donde residen el Mariscal y los oficiales de alto rango.
 
-## Urinjen
+## Mevien
 
 **Población:** ~35,000
 **Tipo:** Principado eclesiástico (Feynista)
@@ -174,11 +174,11 @@ La capital de facto de los Reinos Libres (aunque ningún geismariano admitiría 
 La mayor ciudad feynista de los Reinos Libres, gobernada por un obispo-príncipe que equilibra lealtad religiosa con independencia política.
 
 **Características:**
-- La **Catedral de San Acrodio**: El templo feynista más grande de Geismaria.
-- **Universidad de Urinjen**: Centro de aprendizaje que atrae a estudiantes de todo el continente.
-- Tensiones constantes entre la jerarquía eclesiástica (que mira hacia Ustilus) y la población local (que prioriza la independencia).
+- La **Catedral de San Adalbert**: El templo feynista más grande de Geismaria.
+- **Universidad de Mevien**: Centro de aprendizaje que atrae a estudiantes de todo el continente.
+- Tensiones constantes entre la jerarquía eclesiástica (que mira hacia Mazarín) y la población local (que prioriza la independencia).
 
-## Terborg
+## Dagestadt
 
 **Población:** ~40,000
 **Tipo:** Ciudad libre
@@ -187,23 +187,6 @@ Ciudad portuaria en la costa norte, principal punto de comercio marítimo de los
 
 **Características:**
 - **Puerto de la Liga**: Donde se embarcan compañías mercenarias hacia contratos ultramarinos.
-- **El Barrio Mekhatimista**: La mayor comunidad mekhatimista de Geismaria, con una mezquita notable.
+- **El Barrio Mekhatimista**: La mayor comunidad mekhatimista de Geismaria, con un templo notable.
 - **Los Astilleros**: Producción naval limitada pero creciente.
 - Escenario de la victoria contra la incursión arshalaní de 3901.
-
-## Lara Quayla
-
-**Población:** ~20,000
-**Tipo:** Ciudad-estado independiente
-
-Ciudad-estado de mercenarios en la frontera sur, aliada de [El Pacto](../facciones/pacto.md). Fundada por ex-miembros de la Hermandad del Cuervo, sirve como centro de operaciones para actividades clandestinas y como refugio para quienes huyen de persecución política o religiosa.
-
-**Características:**
-- Centro neurálgico de inteligencia y espionaje
-- Laboratorios de investigación de tecnomagia
-- Bancos que no preguntan de dónde viene el oro
-- Territorio neutral donde espías de todas las naciones operan con relativa libertad
-
----
-
-*"Los imperios necesitan dioses, reyes y ejércitos para existir. Los Reinos Libres solo necesitan una cosa: gente que prefiera morir de pie a vivir de rodillas. De esos nunca nos faltarán."* — Albrecht Schwertträger, Mariscal de la Liga

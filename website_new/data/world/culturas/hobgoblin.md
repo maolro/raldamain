@@ -56,17 +56,6 @@ La diferenciación entre machos y hembras es menos marcada que en los humanos. L
 
 Las marcas rituales son una parte esencial de la apariencia hobgoblin. Cada guerrero lleva cicatrices deliberadas en el rostro y los brazos que indican su rango dentro de la estructura militar, las batallas en las que ha participado y los compañeros que ha visto caer. Un hobgoblin sin cicatrices es un niño que aún no ha probado su valor.
 
-## Vestimenta
-
-La indumentaria hobgoblin es utilitaria hasta el extremo, desprovista de ornamento superfluo:
-
-- **Armadura de cuero endurecido**: La prenda básica de todo hobgoblin adulto, fabricada con pieles curtidas mediante técnicas ancestrales que producen un material sorprendentemente resistente
-- **Tiras de tela**: Enrolladas alrededor de extremidades para protección y soporte, teñidas con pigmentos naturales que indican la unidad a la que pertenece el guerrero
-- **Estandartes colectivos**: No existe la heráldica individual. Las banderas y símbolos representan siempre a la unidad, nunca al individuo
-- **Color predominante**: Rojo oscuro, el color de la sangre seca, que simboliza el vínculo entre los vivos y La Legión de los muertos
-
-Los hobgoblins esclavos en las plantaciones visten harapos proporcionados por sus amos, pero incluso bajo la ropa de esclavo mantienen ocultas las tiras de tela con sus colores de unidad, un acto de resistencia silenciosa que los capataces nunca han logrado erradicar completamente.
-
 # Temperamento y Valores
 
 La psicología hobgoblin es radicalmente diferente a la humana, y esta diferencia es la fuente principal de los malentendidos que alimentan su opresión. Los humanos interpretan el colectivismo hobgoblin como falta de individualidad, su estoicismo como estupidez y su disposición a morir como bestialidad. La realidad es considerablemente más compleja.
@@ -83,9 +72,7 @@ El **desprecio a la muerte individual** es quizás el rasgo más incomprendido. 
 
 Según la cosmología hobgoblin, el mundo está destinado a enfrentar un conflicto apocalíptico en el que todas las fuerzas de la existencia chocarán en una batalla definitiva. En ese día, La Legión marchará desde el más allá como un ejército invencible de espíritus guerreros, y su poder será proporcional al número de almas que la compongan. Cada hobgoblin que muere con honor en batalla añade su fuerza a La Legión, y cada cobarde que huye o muere sin luchar la debilita. Por ello, la vida entera de un hobgoblin es preparación para una muerte digna: entrenar, luchar, servir al colectivo y, cuando llegue el momento, caer con las armas en la mano.
 
-La comunicación con La Legión es una experiencia constante para los Hobgoblins. Los guerreros más veteranos aseguran escuchar los susurros de los ancestros muertos en los momentos previos a la batalla, recibiendo consejos tácticos, advertencias de peligro y, sobre todo, la promesa de que un lugar les espera entre los caídos. Los **Portavoces**, hobgoblins con una conexión especialmente fuerte con La Legión, actúan como intermediarios entre los vivos y los muertos, canalizando la voluntad colectiva de los espíritus ancestrales en directrices para la comunidad.
-
-Los rituales de La Legión son austeros y marciales. No existen templos, altares ni ídolos: el campo de batalla es el santuario y la sangre derramada es la ofrenda. Antes de cada combate, los hobgoblins entonan el **Cántico de los Nombres**, una letanía donde cada guerrero recita los nombres de los compañeros caídos que conoció en vida, recordándolos para que La Legión sepa que no han sido olvidados. Tras la batalla, los supervivientes recogen las armas de los muertos y las entierran juntas en un montículo comunal, creando así un **Túmulo de la Legión** que marca el lugar donde nuevas almas se unieron al ejército eterno.
+La comunicación con La Legión es una experiencia constante para los Hobgoblins. Los guerreros más veteranos aseguran escuchar los susurros de los ancestros muertos en los momentos previos a la batalla, recibiendo consejos tácticos, advertencias de peligro y, sobre todo, la promesa de que un lugar les espera entre los caídos. Los **Zelotas**, hobgoblins con una conexión especialmente fuerte con La Legión, actúan como intermediarios entre los vivos y los muertos, canalizando la voluntad colectiva de los espíritus ancestrales en directrices para la comunidad.
 
 # Vida Social y Costumbres
 
@@ -114,5 +101,3 @@ Los elfos observan a los Hobgoblins con sentimientos encontrados. Por un lado, s
 ## [Legión Hobgoblin](../facciones/legion-hobgoblin.md)
 
 La facción militar que canalizó la fe colectiva en una insurrección armada sigue existiendo en la clandestinidad tras la derrota de la Guerra de la Legión. Sus células operan en las plantaciones y minas de Thalos, reclutando silenciosamente, almacenando armas y esperando la señal para un segundo levantamiento. Para los Hobgoblins libres que escaparon al control ustilés, la Legión (la facción) es la manifestación terrenal de La Legión (la entidad espiritual), y servir a una es servir a la otra.
-
-*"Los humanos piensan que nos han derrotado. Los humanos piensan que sus cadenas son más fuertes que nuestra voluntad. Los humanos no entienden que cada hermano que muere en sus minas y sus campos se une a La Legión, y que La Legión no olvida, no perdona y no se detiene."* — Portavoz anónimo de la Legión Hobgoblin, interceptado por la Marca de Thalos

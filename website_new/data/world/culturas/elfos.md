@@ -78,8 +78,6 @@ Esta sensibilidad los hace:
 - **Vulnerables a la contaminación**: La destrucción de lugares sagrados o la muerte de espíritus les causa dolor casi físico.
 - **Receptivos a la magia**: Los elfos tienen afinidad natural a la magia que no está presente en otras razas.
 
-## La Toska Élfica
-
 Los elfos tienen un concepto llamado **hiraeth** (pronunciado "heer-eye-th"): una mezcla de nostalgia, melancolía y anhelo por algo perdido que quizás nunca existió. Es el sentimiento de ver cómo el mundo se vuelve cada vez menos mágico, cómo los bosques retroceden, cómo los espíritus mueren, cómo todo lo que amaban se desvanece mientras ellos permanecen.
 
 El hiraeth es omnipresente en la cultura élfica: en su música, su poesía, su arte. Es una tristeza que los define tanto como su inmortalidad. Los elfos ancianos a veces sucumben al hiraeth y simplemente "se marchan", dejando de comer, dejando de moverse, dejando que su espíritu abandone el cuerpo para reunirse con el Mundo Espiritual.
@@ -101,10 +99,10 @@ Los elfos practican la forma más pura y antigua de la [Fe Espiritual](../religi
 Los **druidas** son los líderes espirituales de la sociedad élfica, intermediarios entre el mundo mortal y el espiritual. A diferencia de los sacerdotes humanos, los druidas no predican ni buscan convertir a nadie; simplemente mantienen el equilibrio.
 
 **Jerarquía druídica:**
-- **Bardo (Beirdd)**: Aprendices que preservan la historia oral, la música y la poesía sagrada.
-- **Ovate (Ofydd)**: Druidas intermedios especializados en adivinación, herbalismo y sanación.
-- **Druida (Derwydd)**: Practicantes completos capaces de comunicarse directamente con los espíritus.
-- **Archidruida (Archdderwydd)**: Los líderes espirituales de cada comuna, elegidos por consenso entre los druidas.
+- **Bardo: Aprendices que preservan la historia oral, la música y la poesía sagrada.
+- **Ovate**: Druidas intermedios especializados en adivinación, herbalismo y sanación.
+- **Druida**: Practicantes completos capaces de comunicarse directamente con los espíritus.
+- **Archidruida: Los líderes espirituales de cada comuna, elegidos por consenso entre los druidas.
 
 El entrenamiento druídico dura un mínimo de 19 años (el ciclo lunar completo) e implica memorizar una cantidad inmensa de conocimiento oral, ya que los misterios más sagrados nunca se escriben.
 
@@ -121,17 +119,17 @@ Los rituales élficos ocurren en arboledas sagradas (llamadas **nemeton**), cír
 
 # Vida Social y Costumbres
 
-## La Comuna (Tuath)
+## La Comuna
 
-La unidad básica de la sociedad élfica es la **tuath** (pronunciado "too-ah"), una comunidad autónoma de entre 500 y 5,000 elfos unidos por territorio, lazos de parentesco y veneración a un conjunto particular de espíritus locales. Cada tuath es esencialmente una ciudad-estado en miniatura.
+La unidad básica de la sociedad élfica es la comuna, una comunidad autónoma de entre 500 y 5,000 elfos unidos por territorio, lazos de parentesco y veneración a un conjunto particular de espíritus locales. Cada comuna es esencialmente una ciudad-estado en miniatura.
 
-**Características de la tuath:**
+**Características de las comunas:**
 - Autosuficiencia económica (agricultura, artesanía, caza)
 - Gobierno por consejo de ancianos y archidruida local
 - Territorio definido protegido por guerreros de la comuna
 - Identidad distintiva (dialectos, tradiciones específicas, espíritus patronos)
 
-Las tuath pueden unirse en federaciones (como Neronvain) o someterse a un reino unificado (como Thiamashte), pero incluso entonces mantienen considerable autonomía interna.
+Las comunas pueden unirse en federaciones (como Neronvain) o someterse a un reino unificado (como Thiamashte), pero incluso entonces mantienen considerable autonomía interna.
 
 ## La Familia
 
@@ -142,15 +140,6 @@ Los elfos tienen estructuras familiares más fluidas que los humanos. Dado que l
 - **Crianza comunitaria**: Los niños son responsabilidad de toda la tuath, no solo de sus padres biológicos.
 - **Matrimonio fluido**: Las uniones élficas pueden durar décadas o siglos, pero no necesariamente "para siempre". Es aceptable que una pareja se separe amistosamente tras unos siglos y forme nuevas uniones.
 - **Linaje matrilineal**: La línea materna determina el clan y la herencia.
-
-## Nombres Élficos
-
-Los nombres élficos siguen patrones celtas y tienen significado profundo:
-
-**Nombres masculinos comunes:** Aedan, Bran, Cernunnos, Daegan, Eirnin, Faelan, Gwydion, Lugh, Nuada, Ossian, Rhys, Taliesin, Turlough
-**Nombres femeninos comunes:** Aine, Branwen, Caradwen, Deirbhile, Eithne, Fionnuala, Grainne, Lasair, Niamh, Rhiannon, Sadhbh, Siobhan
-
-Los elfos usan el patronímico/matronímico "ap" (hijo de) o "ferch" (hija de): Taliesin ap Gwydion significa "Taliesin, hijo de Gwydion".
 
 ## Arte y Artesanía
 
@@ -175,8 +164,7 @@ La dieta élfica refleja su conexión con la naturaleza:
 - Hongos cultivados en las raíces de árboles antiguos
 
 **Bebida ceremonial:**
-- **Hidromiel** (mead): La bebida élfica por excelencia, fermentado con miel y hierbas secretas. El hidromiel de algunas tuath tiene propiedades levemente mágicas.
-- **Vino de saúco**: Para ocasiones formales.
+- **Hidromiel**: La bebida élfica por excelencia, fermentado con miel y hierbas secretas. El hidromiel de algunas tuath tiene propiedades levemente mágicas.
 - Agua de manantiales sagrados.
 
 Los elfos comen poco pero disfrutan de comidas largas y ceremoniosas, especialmente cuando hay invitados.
@@ -222,22 +210,3 @@ Los elfos simpatizan vagamente con la historia de opresión hobgoblin, viéndolo
 Los elfos tienen la mejor relación con los **[Kratenses](kratenses.md)** entre todos los pueblos humanos. Respetan su sistema democrático, su tradición filosófica, y el hecho de que muchos Kratenses mantengan la Fe Espiritual. Sin embargo, la tala ilegal de bosques élficos por leñadores kratenses genera tensiones periódicas.
 
 Kratoi sirve como intermediario diplomático entre las facciones élficas y el mundo humano, un rol que ambas partes valoran.
-
-# La Crisis Élfica Contemporánea
-
-Los elfos enfrentan la crisis existencial más grave de su historia:
-
-**Amenazas externas:**
-- La guerra de exterminio de Iskaria ha destruido docenas de comunas y asesinado a miles de elfos.
-- La industrialización humana contamina lugares sagrados y mata espíritus incluso en zonas de paz.
-- La expansión de las religiones monoteístas erosiona las tradiciones espirituales que los elfos necesitan para sobrevivir.
-
-**Divisiones internas:**
-- Thiamashte se niega a ayudar a Neronvain, considerando que "traen sus problemas sobre sí mismos".
-- Comunas independientes no saben si unirse a alguna facción o intentar sobrevivir solas.
-- Jóvenes elfos radicalizados por la guerra quieren venganza total contra la humanidad; ancianos piden prudencia.
-
-**El dilema fundamental:**
-¿Pueden los elfos adaptarse a un mundo que cambia cada vez más rápido mientras ellos permanecen inmutables? ¿O su resistencia al cambio será su perdición?
-
-*"Hemos visto imperios nacer y morir. Hemos sobrevivido a los Oni, al Primer Imperio, a los Hobgoblins. Sobreviviremos a los humanos también. La única pregunta es cuántos de nosotros quedarán cuando el humo se disipe, y si valdrá la pena seguir viviendo en el mundo que dejen."* — Fionnuala ferch Rhiannon, Guerrera de Neronvain
