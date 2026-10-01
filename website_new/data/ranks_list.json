@@ -272,11 +272,11 @@
   {
     "id": "magia_divina",
     "name": "Magia Divina",
-    "category": "Divino",
+    "category": "Religión",
     "image": "magia_divina.jpg",
-    "description": "Canaliza el poder de un dios para otorgar bendiciones, maldiciones y consagrar la tierra.",
+    "description": "Canalizas el poder de tu dios a través de oraciones y devoción. Bendices aliados, consagras la tierra, castigas a infieles y realizas milagros. A medida que avanzas, tu dios te otorga acceso a magias específicas relacionadas con su dominio.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "guerrero_divino",

@@ -19,16 +19,16 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Milagro menor",
           "tags": [
             "Divina",
-            "Pasiva"
+            "Reacción"
           ],
-          "desc": "Como acción bonus, puedes hacer que una criatura a distancia media repita un tiro y se quede con el mejor o peor resultado (a tu elección). Usos diarios: Rango + 2.",
-          "empower": "Recuperas un uso gastado de esta habilidad."
+          "desc": "Un aliado o enemigo repite un tiro y se queda con el resultado que más te convenga. Solo puede usarse Rango + 2 veces por combate, y esta habilidad se puede anular con otras habilidades de repetición. ",
+          "empower": "Recuperas un uso de esta habilidad."
         },
         {
           "name": "Enviado de los dioses",
@@ -36,7 +36,7 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Conoces el idioma de tu dios y las criaturas relacionadas con tu divinidad son amistosas hacia ti. Detectas criaturas extraplanarias y magia (Arcana o Divina) a distancia media.",
+          "desc": "Conoces el idioma de tu dios y las criaturas relacionadas con tu divinidad son amistosas hacia ti. Detectas criaturas extraplanarias e influencias mágicas a distancia media.",
           "empower": "Tu dios te otorga una pequeña ayuda no relacionada con el combate."
         },
         {
@@ -45,7 +45,7 @@
             "Divina",
             "Ritual"
           ],
-          "desc": "Tras 10 minutos de rezo, puedes hacer hasta 4 preguntas a tu dios. Las respuestas son sinceras pero pueden ser crípticas. Los usos sucesivos en el mismo día reducen el número de preguntas disponibles."
+          "desc": "Tras 10 minutos de rezo, puedes hacer hasta 4 preguntas a tu dios. Las respuestas son sinceras pero pueden ser crípticas. Los usos sucesivos en el mismo día reducen el número de preguntas disponibles o las hacen menos fiables."
         }
       ]
     },
