@@ -26,7 +26,8 @@
           "tags": [
             "Fuego",
             "Ataque",
-            "A distancia"
+            "A distancia",
+            "Magia"
           ],
           "cost": "1+ Acciones",
           "range": "Medio",
@@ -40,7 +41,8 @@
           "tags": [
             "Fuego",
             "Ataque",
-            "Área"
+            "Área",
+            "Magia"
           ],
           "cost": "2 Acciones, 1 Chi",
           "area": "Cono pequeño",
