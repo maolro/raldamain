@@ -26,9 +26,15 @@
             "Innata",
             "Mejora"
           ],
-          "cost": "1 acción",
-          "duration": "Concentración",
-          "desc": "Adoptas una forma híbrida entre hombre y bestia. Mientras mantengas esta forma, obtienes Ventaja en todos los tiros relacionados con estadísticas físicas (FUE, DES, CON) y tu DEF aumenta en un valor igual a tu Rango + 1. Al final de cada ronda en forma híbrida, reduces tu Cordura en 1. Si tu Cordura llega a 0, pierdes el control de tu personaje hasta que otro aliado te calme o quedes inconsciente."
+          "cost": "1 Acción",
+          "duration": "Max 6 Rondas",
+          "desc": "Recibes Ventaja en todos tus tiros relacionados con estadísticas físicas y Sabiduría además que aumentas tus umbrales por Rango + 1. Este efecto dura hasta 6 rondas y cuando acabe reduces tu cordura por 1 por cada 2 rondas que hayas pasado en él.",
+          "toggle": {
+            "label": "Forma de la Bestia",
+            "adv": [
+              "F"
+            ]
+          }
         },
         {
           "name": "Aspecto Primigenio",
