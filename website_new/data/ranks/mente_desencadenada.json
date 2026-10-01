@@ -37,6 +37,11 @@
             "damage": "+1 dado",
             "damage_tags": [
               "Ataque+Magia"
+            ],
+            "adv_stats": [
+              "INT",
+              "SAB",
+              "CAR"
             ]
           },
           "cost": "1 Acción"
