@@ -40,7 +40,7 @@
               "Ataque",
               "Físico"
             ],
-            "damage": "+1d6",
+            "damage": "+1 dado",
             "adv_tags": [
               "Físico"
             ]
