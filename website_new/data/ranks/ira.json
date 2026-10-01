@@ -39,7 +39,8 @@
             "adv": [
               "Ataque",
               "Físico",
-              "Defensiva"
+              "Parada",
+              "Esquiva"
             ],
             "damage": "+1 dado",
             "adv_tags": [
