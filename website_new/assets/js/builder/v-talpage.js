@@ -1,3 +1,5 @@
+const MAX_TALENT_LEVEL = 5;
+
 Vue.component('v-talpage', {
     template: `
     <div>
@@ -35,9 +37,9 @@ Vue.component('v-talpage', {
             }
             return (2 + 2 * parseInt(this.level) - talSum + this.$root.sumAllKeys('talpoints', this.$root.activeAbilities || this.psatb));
         },
-        // Talent levels can go up to Tier + 1
+        // Talent levels can go up to Tier + 1, never above MAX_TALENT_LEVEL
         talentlimit: function () {
-            return this.$root.tier + 1;
+            return Math.min(this.$root.tier + 1, MAX_TALENT_LEVEL);
         },
         mytalents: function() {
             return this.$root.mytalents;
