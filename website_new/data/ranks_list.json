@@ -13,9 +13,9 @@
     "name": "Estilo Duelista",
     "category": "Marcial",
     "image": "estilo_duelista.jpg",
-    "description": "Maestría en armas de duelo, centrado en la precisión, paradas y maniobras elegantes.",
+    "description": "Maestría en el combate uno contra uno. Usas la precisión, las paradas y las maniobras para desarmar, engañar y superar a tu oponente.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "estilo_asesino",
