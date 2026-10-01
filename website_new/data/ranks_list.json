@@ -191,11 +191,11 @@
   {
     "id": "magia_espacial",
     "name": "Magia Espacial",
-    "category": "Arcano",
+    "category": "Arcana",
     "image": "magia_espacial.jpg",
-    "description": "Domina el espacio con teletransporte, portales y creación de dominios extraplanarios.",
+    "description": "Manipulas los conductos de chi para alterar la distancia y el espacio. Te especializas en teletransporte, creación de portales y el control del campo de batalla.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_protectora",

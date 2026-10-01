@@ -18,32 +18,28 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Salto Espacial",
           "tags": [
             "Espacial",
             "Arcana",
-            "Defensiva"
+            "Reacción"
           ],
-          "cost": "1 acción, 1 chi",
-          "duration": "Instantáneo",
-          "desc": "Te teletransportas 1 paso. Como reacción (1 Reacción): reduces el daño recibido a la mitad y te teletransportas 1 paso. A Rango III, la reacción evita el ataque por completo.",
-          "empower": "Aumenta la distancia de teletransporte en 1 paso (máximo 2 veces)."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Sumas +10 a un tiro defensivo y te teletransportas hasta un paso sin provocar aperturas. Esta habilidad no funciona contra ataques de área demasiado grande. ",
+          "empower": "Aumenta la distancia de teletransporte en 1 paso."
         },
         {
-          "name": "Portal Menor",
+          "name": "Redirigir Ataque",
           "tags": [
             "Espacial",
             "Arcana",
-            "Duradera"
+            "Reacción"
           ],
-          "cost": "1 acción",
-          "range": "Medio (Visión)",
-          "duration": "Concentración",
-          "desc": "Creas un portal pequeño (tamaño de una mano) que conecta un punto adyacente con otro a distancia media. Puedes atacar o interactuar a través del portal.",
-          "empower": "Creas un portal menor adicional como acción bonus (dura 1 ronda)."
+          "cost": "1 Chi",
+          "desc": "Redirige un ataque fallido hacia un objetivo diferente o el mismo (llegando como máximo a distancia media), pudiendo así repetir un ataque que hayas fallado o devolverle un ataque enemigo a su objetivo (lo cual te haría tirar por él). Cada uso consecutivo de esta habilidad en un mismo ataque te costará una Reacción."
         },
         {
           "name": "Bolsillo Interdimensional",
@@ -51,7 +47,7 @@
             "Espacial",
             "Arcana"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "desc": "Guardas o extraes un objeto pequeño en una dimensión de bolsillo personal.",
           "empower": "Puedes usar esta habilidad como acción bonus."
         }
