@@ -19,7 +19,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Azote Divino",

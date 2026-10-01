@@ -285,7 +285,7 @@
     "image": "guerrero_divino.jpg",
     "description": "Los dioses te han bendecido para que lideres sus huestes hacia la victoria contra todos aquellos que se atrevan a desafiar su fe.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_metal",
