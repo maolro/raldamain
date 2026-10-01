@@ -38,7 +38,8 @@
             "label": "Ira",
             "adv": [
               "Ataque",
-              "Físico"
+              "Físico",
+              "Defensiva"
             ],
             "damage": "+1 dado",
             "adv_tags": [
