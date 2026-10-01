@@ -156,6 +156,11 @@
             "eqab": "pistola-de-mano",
             "name": "Pistola de Mano",
             "style": "ranged"
+        },
+        "rifle-francotirador": {
+            "name": "Rifle Francotirador",
+            "eqab": "rifle-francotirador",
+            "style": "duelist"
         }
     }
 }

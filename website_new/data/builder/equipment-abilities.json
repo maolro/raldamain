@@ -1,7 +1,7 @@
 {
     "arco": {
         "cost": "2 Acciones",
-        "damage": "1d10",
+        "damage": "2d6",
         "damage_type": "Perforante",
         "description": "",
         "name": "Arco",
@@ -177,14 +177,13 @@
     },
     "martillo-de-guerra": {
         "cost": "1 Acción",
-        "damage": "1d10",
         "damage_type": "Contundente",
-        "description": "El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6.",
         "name": "Martillo de Guerra",
         "range": "Adyacente",
         "skill": "armas-pesadas",
         "tags": "Físico, Ataque, Pesada",
-        "type": "Accion"
+        "type": "Accion",
+        "damage": "2d6"
     },
     "mordisco": {
         "cost": "1 Acción",
@@ -216,11 +215,20 @@
         "cost": "1 Acción",
         "damage": "2d6",
         "damage_type": "Perforante",
-        "description": "Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d6 daño obligatorio al portador.",
         "name": "Pistola de Mano",
         "range": "Distancia media",
         "skill": "armas-a-distancia",
         "tags": "Físico, Ataque, A Distancia",
         "type": "Accion"
+    },
+    "rifle-francotirador": {
+        "name": "Rifle Francotirador",
+        "type": "Accion",
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Duelo",
+        "range": "Extremo",
+        "damage": "3d6",
+        "damage_type": "Perforante",
+        "description": "Tienes Desventaja atacando a enemigos a distancia corta o inferior."
     }
 }
