@@ -31,15 +31,17 @@
           "desc": "Recibes Ventaja en todos tus tiros relacionados con estadísticas físicas y Sabiduría además que aumentas tus umbrales por Rango + 1. Este efecto dura hasta 6 rondas y cuando acabe reduces tu cordura por 1 por cada 2 rondas que hayas pasado en él.",
           "toggle": {
             "label": "Forma de la Bestia",
-            "adv": [
-              "Físico",
-              "Sabiduría"
-            ],
             "umbrales": [
               {
                 "value": "RANGO+1",
                 "categories": "General"
               }
+            ],
+            "adv_stats": [
+              "FUE",
+              "DES",
+              "CON",
+              "SAB"
             ]
           }
         },

@@ -1,6 +1,8 @@
 // Base combat values for the Impactos / Umbrales system
 const BASE_HITS = 6;      // Impactos every character starts with
 const BASE_UMBRAL = 2;    // Base "General" damage threshold
+// "adv_stats" boost values (FUE/DES/…) → finalStats keys
+const STAT_ABBR = { FUE: 'str', DES: 'dex', CON: 'con', INT: 'itl', SAB: 'wis', CAR: 'cha' };
 
 // Define the main Vue instance
 new Vue({
@@ -151,6 +153,7 @@ new Vue({
                                                 ...(ability.condition   !== undefined ? { condition:   ability.condition   } : {}),
                                                 ...(ability.talpoints   !== undefined ? { talpoints:   ability.talpoints   } : {}),
                                                 ...(ability.replace_mod !== undefined ? { replace_mod: ability.replace_mod } : {}),
+                                                ...(ability.adv_stats   !== undefined ? { adv_stats:   ability.adv_stats   } : {}),
                                                 ...(ability.reactions !== undefined ? { reactions: ability.reactions } : {}),
                                                 ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
                                 ...(ability.resistances     !== undefined ? { resistances:     ability.resistances     } : {}),
@@ -651,6 +654,7 @@ ${reactions}
             if (t.adv && t.adv.length > 0) parts.push('Vent: ' + t.adv.join(', '));
             if (t.adv_tags && t.adv_tags.length > 0) parts.push('+1d6 ' + t.adv_tags.join('/'));
             if (t.saves && t.saves.length > 0) parts.push('Salv: ' + t.saves.join(', '));
+            if (t.adv_stats && t.adv_stats.length > 0) parts.push('+1d6 con ' + t.adv_stats.join('/'));
             if (t.damage) parts.push('Daño: ' + t.damage);
             if (t.umbrales && t.umbrales.length > 0)
                 parts.push('Umbral ' + t.umbrales.map(u => '+' + u.value + ' ' + (u.categories || 'General')).join(', '));
@@ -789,9 +793,31 @@ ${reactions}
                 return v === '-' ? '-' : String(v);
             });
         },
-        abilityAdvantageCount(obj) {
+        // Stat keys (str/dex/…) of an "adv_stats" list like ["FUE", "SAB"]
+        statKeysOf(list) {
+            return (list || []).map(s => STAT_ABBR[s] || s);
+        },
+        // Stat used by a weapon style's modifier
+        weaponStatKeys(style) {
+            const fs = this.finalStats;
+            const str = fs.str.value === '-' ? -99 : fs.str.value;
+            const dex = fs.dex.value === '-' ? -99 : fs.dex.value;
+            if (style === 'heavy') return ['str'];
+            if (style === 'light' || style === 'ranged') return ['dex'];
+            return [str >= dex ? 'str' : 'dex'];
+        },
+        // Advantage dice for a roll. statKeys = stats in the roll's modifier (defaults to the
+        // ability's rank stat); "Ventaja en tiros con la estadística" boosts match on them.
+        abilityAdvantageCount(obj, statKeys) {
             const tags = (obj.tags || '').split(',').map(t => t.trim().toLowerCase());
+            if (!statKeys && obj.skill && obj.skill in this.ranks)
+                statKeys = [this.getMainStat(this.ranks[obj.skill].stat)];
+            statKeys = statKeys || [];
+            const statHit = (list) => this.statKeysOf(list).some(k => statKeys.includes(k));
             let count = 0;
+            // Always-on (and conditional) passive stat advantage
+            for (const ab of this.activeAbilities)
+                if (ab.adv_stats && statHit(ab.adv_stats)) count++;
             for (const ab of this.toggleableAbilities) {
                 if (!this.isToggleActive(ab.toggle.label)) continue;
                 const t = ab.toggle;
@@ -807,6 +833,7 @@ ${reactions}
                         if (required.every(r => tags.includes(r))) { grants = true; break; }
                     }
                 }
+                if (!grants && t.adv_stats && statHit(t.adv_stats)) grants = true;
                 if (!grants && obj.skill && obj.skill in this.ranks) {
                     const mk = this.getMainStat(this.ranks[obj.skill].stat);
                     const has = (types) => types.some(s =>
@@ -828,17 +855,17 @@ ${reactions}
             const colosoRk   = this.getRank('estilo_coloso');
             const duelistaRk = this.getRank('estilo_duelista');
             const asesinоRk  = this.getRank('estilo_asesino');
-            let stat, mod;
+            let stat, mod, statKey;
             if (tags.includes('pesada') || tags.includes('pesado')) {
-                stat = strV; mod = strV + colosoRk;
+                stat = strV; mod = strV + colosoRk; statKey = 'str';
             } else if (tags.includes('duelo')) {
-                stat = Math.max(strV, dexV); mod = Math.max(strV, dexV) + duelistaRk;
+                stat = Math.max(strV, dexV); mod = Math.max(strV, dexV) + duelistaRk; statKey = strV >= dexV ? 'str' : 'dex';
             } else if (tags.includes('ligera') || tags.includes('a distancia')) {
-                stat = dexV; mod = dexV + asesinоRk;
+                stat = dexV; mod = dexV + asesinоRk; statKey = 'dex';
             } else {
-                stat = Math.max(strV, dexV); mod = Math.max(strV, dexV);
+                stat = Math.max(strV, dexV); mod = Math.max(strV, dexV); statKey = strV >= dexV ? 'str' : 'dex';
             }
-            const advCount = this.abilityAdvantageCount(obj);
+            const advCount = this.abilityAdvantageCount(obj, [statKey]);
             const advStr = advCount > 0 ? '+' + advCount + 'd6' : '';
             const modStr = (mod >= 0 ? '+' + mod : String(mod)) + advStr;
             return desc
@@ -891,7 +918,8 @@ ${reactions}
         initiative: function () {
             const dex = this.finalStats.dex.value === '-' ? 0 : this.finalStats.dex.value;
             const v = dex + this.getRank('reflejos');
-            return v >= 0 ? '+' + v : String(v);
+            const adv = this.abilityAdvantageCount({ tags: 'Iniciativa' }, ['dex']);
+            return (v >= 0 ? '+' + v : String(v)) + (adv > 0 ? '+' + adv + 'd6' : '');
         },
         san: function () {
             if (this.finalStats.itl.value == "-")
@@ -902,8 +930,9 @@ ${reactions}
             ts = [];
             for (let key in this.mytalents) {
                 if (this.mytalents[key].level > 0) {
-                    ts.push((this.mytalents[key].name + " + " + this.getMod(key)));
-                    console.log(res.toString());
+                    const statKey = this.talents[key] ? this.getMainStat(this.talents[key].stat) : null;
+                    const adv = statKey ? this.abilityAdvantageCount({ tags: 'Habilidad' }, [statKey]) : 0;
+                    ts.push(this.mytalents[key].name + " + " + this.getMod(key) + (adv > 0 ? '+' + adv + 'd6' : ''));
                 }
             }
             return ts.join(", ");
@@ -1158,12 +1187,16 @@ ${reactions}
             const countSave = (saveType) => {
                 let n = 0;
                 // Passive "Ventaja en tiros de salvación" (always on)
+                // Stats in each save's modifier, for "Ventaja en tiros con la estadística"
+                const saveStats = { 'Físico': ['str', 'dex'], 'Voluntad': ['con', 'cha'], 'Mental': ['itl', 'wis'] }[saveType];
+                const statHit = (list) => this.statKeysOf(list).some(k => saveStats.includes(k));
                 for (const ab of this.activeAbilities)
-                    if (ab.saves && ab.saves.includes(saveType)) n++;
+                    if ((ab.saves && ab.saves.includes(saveType)) || (ab.adv_stats && statHit(ab.adv_stats))) n++;
                 for (const ab of this.toggleableAbilities) {
                     if (!this.isToggleActive(ab.toggle.label)) continue;
                     const t = ab.toggle;
-                    let grants = (t.adv && t.adv.includes(saveType)) || (t.saves && t.saves.includes(saveType));
+                    let grants = (t.adv && t.adv.includes(saveType)) || (t.saves && t.saves.includes(saveType))
+                        || !!(t.adv_stats && statHit(t.adv_stats));
                     if (!grants && saveType === 'Voluntad')
                         grants = (t.adv && t.adv.includes('Físico')) || (t.saves && t.saves.includes('Físico'));
                     if (!grants && (saveType === 'Voluntad' || saveType === 'Mental'))
@@ -1263,7 +1296,7 @@ ${reactions}
             // Esquiva — always present
             const esquivaRepl = this.modReplacements['Esquiva'];
             const esquivaMod = Math.max(dexV + reflejosRank, esquivaRepl ? esquivaRepl.value : -Infinity);
-            const esquivaAdv = this.abilityAdvantageCount({ tags: 'Reflejos, Defensiva' });
+            const esquivaAdv = this.abilityAdvantageCount({ tags: 'Reflejos, Defensiva' }, ['dex']);
             lines.push(`<b>Esquiva</b> (Reflejos, Defensiva): ${fmtMod(esquivaMod, esquivaAdv)} para defenderse`);
 
             // Parada Mágica — one per magic rank with a parry_tag
@@ -1277,7 +1310,7 @@ ${reactions}
                 const mainStatKey = this.getMainStat(rd.stat);
                 const statVal = fs[mainStatKey] ? fs[mainStatKey].value : '-';
                 const mod = statVal === '-' ? null : statVal + rk.rank;
-                const parryAdv = this.abilityAdvantageCount({ tags: rd.parry_tag + ', Defensiva' });
+                const parryAdv = this.abilityAdvantageCount({ tags: rd.parry_tag + ', Defensiva' }, [mainStatKey]);
                 const modStr = mod === null ? '-' : fmtMod(mod, parryAdv);
                 lines.push(`<b>Parada Mágica</b> (${rd.parry_tag}, Defensiva): ${modStr} para defenderse`);
             }
@@ -1295,7 +1328,7 @@ ${reactions}
                 const paradaRepl = this.modReplacements['Parada'];
                 if (paradaRepl && paradaRepl.value > parseInt(mod, 10))
                     mod = (paradaRepl.value >= 0 ? '+' : '') + paradaRepl.value;
-                const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' });
+                const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' }, this.weaponStatKeys(weapon.style));
                 const modStr = parryAdv > 0 ? mod + '+' + parryAdv + 'd6' : mod;
                 lines.push(`<b>Parada</b> (${tag}, Defensiva): ${modStr} para defenderse`);
             }

@@ -1116,7 +1116,8 @@ function resetShowMod(li,ai) {
 //   umbrales [{value, categories}] · hits · chi (ability only) · saves [Físico|Voluntad|Mental]
 //   replace_mod [targets that use this rank's modifier (stat + Rango) when higher]
 //   resistances [] · immunities []
-const PASSIVE_KEYS = ['umbrales','hits','chi','talpoints','saves','replace_mod','resistances','immunities','condition'];
+const PASSIVE_KEYS = ['umbrales','hits','chi','talpoints','saves','adv_stats','replace_mod','resistances','immunities','condition'];
+const STAT_ABBRS = ['FUE','DES','CON','INT','SAB','CAR'];
 const SAVE_TYPES = ['Físico','Voluntad','Mental'];
 const REPLACE_TARGETS = ['Físico','Voluntad','Mental','Esquiva','Parada'];
 const UMB_CATS = ['General','Físico','Cortante','Contundente','Perforante','Magia','Arcano',
@@ -1147,6 +1148,9 @@ function boostsHtml(o, li, ai, scope) {
     </div>` : ''}
     <div class="field" style="margin-top:6px"><div class="lbl">Ventaja en tiros de salvación</div>
       ${chkGroup(o, li, ai, scope, 'saves', SAVE_TYPES)}</div>
+    <div class="field" style="margin-top:6px">
+      <div class="lbl" title="+1d6 en todo tiro cuyo modificador use la estadística: habilidades de rango, armas, Esquiva/Parada, iniciativa, salvaciones y talentos">Ventaja (+1d6) en tiros con la estadística</div>
+      ${chkGroup(o, li, ai, scope, 'adv_stats', STAT_ABBRS)}</div>
     <div class="field" style="margin-top:6px">
       <div class="lbl" title="Si el modificador de este rango (estadística principal + Rango) es mayor, sustituye al de estos tiros">Usar el modificador de este rango (si es mayor) en</div>
       ${chkGroup(o, li, ai, scope, 'replace_mod', REPLACE_TARGETS, ['Salv. Físico','Salv. Voluntad','Salv. Mental','Esquiva','Parada'])}</div>
