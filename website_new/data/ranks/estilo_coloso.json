@@ -47,7 +47,7 @@
           "name": "Proteger Aliado",
           "tags": [
             "Coloso",
-            "Defensiva"
+            "Reacción"
           ],
           "desc": "Te mueves hasta un paso para interceptar un ataque hecho contra un aliado tuyo, pudiendo así emplear tu tiro defensivo en lugar del suyo y recibiendo tú el daño del ataque si fallas.",
           "cost": "1 reacción"
