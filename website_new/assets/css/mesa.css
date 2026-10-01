@@ -78,10 +78,6 @@ body.mesa {
     background: rgba(255, 242, 0, 0.08);
 }
 
-select.mesa-btn {
-    max-width: 230px;
-}
-
 /* ── Main grid ── */
 .mesa-grid {
     flex: 1;
@@ -162,7 +158,7 @@ select.mesa-btn {
     font-style: italic;
 }
 
-/* Markdown stat blocks (playtest modules) */
+/* Markdown stat blocks (.md files) */
 .md-statblock h1 {
     font-family: var(--font-heading);
     color: var(--accent-gold);
@@ -576,10 +572,5 @@ select.mesa-btn {
     .mesa-load {
         margin-left: 0;
         width: 100%;
-    }
-
-    select.mesa-btn {
-        max-width: none;
-        flex: 1;
     }
 }

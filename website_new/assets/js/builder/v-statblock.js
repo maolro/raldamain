@@ -81,15 +81,7 @@ Vue.component('v-statblock', {
         <div class="sb-line"><b>Velocidad</b> Paso 1</div>
         <hr>
         <div v-if="r.rkString" class="mb-1"><b>Rangos: </b>{{ r.rkString }}</div>
-        <div v-if="r.equipmentList.length" class="sb-equip mb-1">
-            <b>Equipamiento:</b>
-            <ul class="sb-equip-list">
-                <li v-for="e in r.equipmentList" :key="e.slot">
-                    <span class="sb-equip-slot">{{ e.slot }}</span>
-                    <span v-html="h(e.text)"></span>
-                </li>
-            </ul>
-        </div>
+        <div v-if="r.equipmentString" class="mb-1"><b>Equipamiento: </b>{{ r.equipmentString }}</div>
         <div v-if="r.talstring" class="mb-1"><b>Talentos: </b><span v-html="h(r.talstring)"></span></div>
         <div v-if="r.arcString" class="mb-1"><b>Arquetipos: </b>{{ r.arcString }}</div>
         <div v-if="r.resistances.resistances" class="mb-1"><b>Resistencias: </b>{{ r.resistances.resistances }}</div>

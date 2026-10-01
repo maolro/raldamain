@@ -1,7 +1,7 @@
 // =============================================
 // MESA DE PRUEBAS — stat block loader + dice roller
 // The stat block itself is the builder's v-statblock (main.js computes it);
-// playtest .md sheets are rendered with marked.
+// .md sheets are rendered with marked.
 // =============================================
 
 // ── Dice ─────────────────────────────────────────────────────────────────────
@@ -214,7 +214,10 @@ function initSheetRolls() {
 
 function vm() { return document.getElementById('app').__vue__; }
 
+let currentMode = null;   // 'vue' (character) | 'md' (markdown sheet)
+
 function show(mode, title) {
+    currentMode = mode;
     document.getElementById('empty-state').hidden = true;
     document.getElementById('vue-sheet').hidden = mode !== 'vue';
     document.getElementById('md-sheet').hidden = mode !== 'md';
@@ -255,6 +258,15 @@ function loadFromCreador() {
     loadCharacterObject(obj, (obj.name || 'Personaje') + ' · Creador');
 }
 
+// Opens the Creador with the character on screen (a loaded .json / Creador character).
+// For a .md sheet or an empty Mesa it just opens the Creador with its own character.
+function backToCreador() {
+    if (currentMode === 'vue') {
+        try { localStorage.setItem('currentCharacter', JSON.stringify(vm().characterData())); } catch (e) { }
+    }
+    location.href = '/creador.html';
+}
+
 function loadFile(file) {
     const reader = new FileReader();
     reader.onload = () => {
@@ -270,26 +282,10 @@ function loadFile(file) {
 }
 
 function initLoaders() {
-    document.getElementById('load-creador').onclick = loadFromCreador;
+    document.getElementById('back-creador').onclick = backToCreador;
     document.getElementById('file-input').addEventListener('change', e => {
         if (e.target.files[0]) loadFile(e.target.files[0]);
         e.target.value = '';
-    });
-
-    const sel = document.getElementById('preset-select');
-    fetch('/playtest/index.json')
-        .then(r => r.ok ? r.json() : [])
-        .then(list => {
-            const groups = {};
-            list.forEach(f => (groups[`Tier ${f.tier} · ${f.group}`] ||= []).push(f));
-            sel.innerHTML = '<option value="">Fichas de playtest…</option>' + Object.entries(groups).map(([g, fs]) =>
-                `<optgroup label="${g}">${fs.map(f => `<option value="${f.path}">${escapeHtml(f.name)}</option>`).join('')}</optgroup>`).join('');
-        })
-        .catch(() => { sel.hidden = true; });
-    sel.addEventListener('change', () => {
-        if (!sel.value) return;
-        const name = sel.options[sel.selectedIndex].text;
-        fetch(sel.value).then(r => r.text()).then(t => loadMarkdown(t, name));
     });
 
     // Drag & drop a .json / .md onto the sheet area

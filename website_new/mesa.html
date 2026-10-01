@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesa de Pruebas | Raldamain</title>
-    <meta name="description" content="Ficha de personaje a pantalla completa con lanzador de dados para playtesting.">
+    <meta name="description" content="Ficha de personaje a pantalla completa con lanzador de dados para pruebas de juego.">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/statblock.css">
@@ -25,10 +25,7 @@
         <h1 class="mesa-title">Mesa de Pruebas</h1>
         <span class="mesa-sheet-name" id="sheet-name"></span>
         <div class="mesa-load">
-            <select id="preset-select" class="mesa-btn" title="Fichas de los módulos de playtest">
-                <option value="">Fichas de playtest…</option>
-            </select>
-            <button id="load-creador" class="mesa-btn" title="Personaje guardado en el Creador de Personajes">Personaje del Creador</button>
+            <button id="back-creador" class="mesa-btn" title="Abre el Creador de Personajes con el personaje que tienes en pantalla">&larr; Volver al Creador</button>
             <label class="mesa-btn mesa-btn-primary">
                 Cargar ficha (.json / .md)
                 <input type="file" id="file-input" accept=".json,.md,.txt" hidden>
@@ -42,7 +39,7 @@
             <div class="mesa-empty" id="empty-state">
                 <div class="mesa-empty-icon">📜</div>
                 <h2>Carga una ficha</h2>
-                <p>Elige una ficha de playtest, abre el personaje del <a href="/creador.html">Creador</a>
+                <p>Abre la Mesa desde el <a href="/creador.html">Creador de Personajes</a>
                     o carga un archivo <code>.json</code> (Descargar del Creador) o <code>.md</code>.
                     También puedes arrastrarlo aquí.</p>
                 <p class="mesa-hint">Pulsa cualquier valor subrayado de la ficha para tirarlo.</p>
