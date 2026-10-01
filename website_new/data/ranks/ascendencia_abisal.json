@@ -27,7 +27,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Ventaja en tiros de salvación Mentales y obtienes Resistencia Mágica igual a tu Rango + 1. Las criaturas abisales te reconocen como aliado y adquieres una locura permanente.",
+          "desc": "Obtienes Ventaja en tiros de salvación Mentales y obtienes Resistencia Mágica igual a tu Rango + 1 (ya incluido). Las criaturas abisales te reconocen como aliado y adquieres una locura permanente.",
           "saves": [
             "Mental"
           ],
