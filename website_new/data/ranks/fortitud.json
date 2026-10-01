@@ -30,7 +30,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Aumenta todos sus umbrales por un valor igual a tu Rango + 1.",
+          "desc": "Aumenta todos sus umbrales por RANGO+1 (ya incluido).",
           "umbrales": [
             {
               "value": "RANGO+1",
@@ -45,7 +45,7 @@
             "Reacción"
           ],
           "cost": "1 Reacción, 1 Chi",
-          "desc": "Aumenta sus umbrales por Rango + 2 contra el siguiente ataque que recibas o reduces un efecto de estado por un paso."
+          "desc": "Aumenta sus umbrales por RANGO+2 contra el siguiente ataque que recibas o reduces un efecto de estado por un paso."
         }
       ]
     },
