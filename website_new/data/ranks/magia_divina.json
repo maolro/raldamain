@@ -52,7 +52,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "passive": "Aprendes dos hechizos de Rango I de una magia relacionada con tu dios (ganan categoría Divina).",
       "abilities": [
         {
@@ -61,11 +61,12 @@
             "Divina",
             "Maldición"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
           "duration": "Instantáneo o hasta eliminado",
-          "desc": "Canalizas el poder de tu dios para producir un efecto variable según tu divinidad: curar un estado negativo, eliminar una maldición o efecto mágico (tiro enfrentado), causar un estado negativo (Ceguera, Sangrado, etc.) o reducir una Resistencia del objetivo.",
-          "empower": "Afectas a un objetivo adicional."
+          "desc": "Elimina un efecto de estado que tenga un objetivo, o provoca una maldición menor a un objetivo de la cual se defenderá con un tiro de salvación de Voluntad. Si fracasa, podrás provocarle Desventaja en todos sus tiros relacionados con una estadística durante el resto del combate o un efecto equivalente, y puede repetir el tiro cada ronda para recuperarse.",
+          "empower": "Afectas a un objetivo adicional.",
+          "show_mod": true
         },
         {
           "name": "Consagrar la Tierra",
@@ -73,11 +74,27 @@
             "Divina",
             "Ambiental"
           ],
-          "cost": "3 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "area": "Radio grande",
-          "duration": "10 minutos",
-          "desc": "Consagras el área en nombre de tu dios. Los creyentes dentro obtienen Ventaja en todos sus tiros. Las invocaciones enemigas son impedidas y se activa Guerrero de la Fe de forma gratuita. Puedes realizar un ritual de 1 hora para hacer la consagración permanente.",
-          "empower": "Reduce el coste de un hechizo Divino en -1 acción."
+          "desc": "El campo de batalla queda consagrado a tu divinidad, otorgando a todos sus adoradores Ventaja en sus tiros de ataque, defensa y magias relacionadas con tu dios. La consagración permanece activa hasta que acabe el combate o sea eliminada, y puede hacerse permanente mediante un ritual.",
+          "duration": "6 Rondas"
+        },
+        {
+          "name": "Canalizar Divinidad",
+          "tags": [
+            "Divina",
+            "Pasiva"
+          ],
+          "desc": "Aprendes dos hechizos de Rango I relacionados con tu dios, los cuales puedes lanzar empleando tu bonificador de Magia Divina. Estos ganan el atributo Divino",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ]
+            }
+          ]
         }
       ]
     },
