@@ -41,7 +41,7 @@ Vue.component('v-statblock', {
     <div class="statblock-char" :class="{ 'sb-rollable': rollable }" @change="onChange">
         <div class="text-center mb-2">
             <h2>{{ r.charactername }}</h2>
-            <span style="color: var(--text-muted);">Nivel {{ r.level }}</span>
+            <span style="color: var(--text-muted);">Nivel {{ r.level }} · Tier {{ r.tier }}</span>
         </div>
         <hr>
         <!-- Combat header: Impactos + resources (enemy-style stat block) -->

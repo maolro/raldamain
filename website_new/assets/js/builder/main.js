@@ -1,6 +1,15 @@
 // Base combat values for the Impactos / Umbrales system
 const BASE_HITS = 6;      // Impactos every character starts with
 const BASE_UMBRAL = 2;    // Base "General" damage threshold
+// Tier by level: first level of each tier (Tier 1 = niv 1-3 … Tier 6 = niv 16-19, Tier 7 = niv 20-22)
+const TIER_START = [1, 4, 7, 10, 13, 16, 20];
+
+// Tier of a character level (levels above the table stay at the highest tier)
+function tierForLevel(level) {
+    let tier = 1;
+    TIER_START.forEach((start, i) => { if (level >= start) tier = i + 1; });
+    return tier;
+}
 // "adv_stats" boost values (FUE/DES/…) → finalStats keys
 const STAT_ABBR = { FUE: 'str', DES: 'dex', CON: 'con', INT: 'itl', SAB: 'wis', CAR: 'cha' };
 
@@ -476,7 +485,7 @@ new Vue({
             const reactions = [toMd(this.defenseReactions), toMd(this.atbCatString("reactions"))].filter(Boolean).join('\n\n');
             // Construct the formatted text (same layout as enemy / playtest hero stat blocks)
             return `
-# ${this.charactername} (niv ${this.level})
+# ${this.charactername} (niv ${this.level} · Tier ${this.tier})
 
 **Impactos:** ${this.hits}\t|\t**Chi:** ${this.reserves.chi}\t|\t**Cordura:** ${this.san}${this.shieldCounters > 0 ? `\t|\t**Escudos:** ${this.shieldCounters}` : ''}
 
@@ -955,6 +964,10 @@ ${reactions}
     computed: {
         characterSnapshot: function () {
             return JSON.stringify(this.characterData());
+        },
+        // Tier (1-7) from the level; drives stat limit (3 + Tier) and talent limit (Tier + 1)
+        tier: function () {
+            return tierForLevel(parseInt(this.level, 10) || 1);
         },
         // Impactos: every character starts with 6, plus passive/toggle bonuses
         hits: function () {

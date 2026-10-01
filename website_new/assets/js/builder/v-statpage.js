@@ -59,8 +59,9 @@ Vue.component('v-statpage', {
             }
             return 10 + parseInt(this.level) - statSum - this.arclevels*2;
         },
+        // Stats can go up to 3 + Tier
         statlimit: function () {
-            return Math.max(Math.floor(3 + (this.level - this.arclevels*2) / 3), 3);
+            return 3 + this.$root.tier;
         },
     },
     methods: {

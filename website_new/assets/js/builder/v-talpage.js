@@ -35,12 +35,9 @@ Vue.component('v-talpage', {
             }
             return (2 + 2 * parseInt(this.level) - talSum + this.$root.sumAllKeys('talpoints', this.$root.activeAbilities || this.psatb));
         },
+        // Talent levels can go up to Tier + 1
         talentlimit: function () {
-            level = this.level
-            if (level < 5) return 2;
-            else if (level < 8) return 3;
-            else if (level < 11) return 4;
-            else return 5;
+            return this.$root.tier + 1;
         },
         mytalents: function() {
             return this.$root.mytalents;
