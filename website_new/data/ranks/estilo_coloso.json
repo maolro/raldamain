@@ -22,25 +22,35 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Ataque Poderoso",
           "tags": [
-            "Pesada",
+            "Coloso",
             "Mejora"
           ],
           "cost": "1 acción",
-          "desc": "Tu siguiente ataque provoca un dado de daño adicional. Debes declarar esta habilidad antes de atacar."
+          "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar."
         },
         {
           "name": "Golpe Desestabilizador",
           "tags": [
-            "Pesada",
-            "Mejora"
+            "Coloso",
+            "Mejora",
+            "Maniobra"
           ],
           "cost": "1 chi",
-          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Físico o es empujado un paso y cae con Ralentizado-1. También funciona contra enemigos que detengan el ataque con Parada."
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado y tiene Desventaja defendiéndose del siguiente ataque. Esta habilidad puede usarse incluso si el enemigo detiene exitosamente el ataque con Parada"
+        },
+        {
+          "name": "Proteger Aliado",
+          "tags": [
+            "Coloso",
+            "Defensiva"
+          ],
+          "desc": "Te mueves hasta un paso para interceptar un ataque hecho contra un aliado tuyo, pudiendo así emplear tu tiro defensivo en lugar del suyo y recibiendo tú el daño del ataque si fallas.",
+          "cost": "1 reacción"
         }
       ]
     },
