@@ -34,7 +34,10 @@
           "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar.",
           "toggle": {
             "label": "Ataque Poderoso",
-            "damage": "+1 Dado"
+            "damage": "+1 Dado",
+            "adv_tags": [
+              "Físico"
+            ]
           }
         },
         {
