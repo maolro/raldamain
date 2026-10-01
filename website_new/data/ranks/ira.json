@@ -23,7 +23,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Ira de Combate",
@@ -33,7 +33,7 @@
             "Pasiva"
           ],
           "duration": "Max 6 rondas",
-          "desc": "Entras en un estado de furia. Obtienes Ventaja en tiros de ataque y tiros de salvación físicos, y +1d6 al daño. No puedes concentrarte mientras dure. Al terminar, pierdes Chi igual a las rondas usadas (con riesgo de inconsciencia).",
+          "desc": "Recibes Ventaja en todos sus tiros relacionados con estadísticas Físicas, incluyendo ataque, defensa, habilidad y salvación, además que aumentas su daño base por un dado. Este efecto dura hasta 6 rondas y cuando acabe pierdes tanto Chi como rondas en Ira. Si esto te baja a chi negativo, recibirás el efecto Fatiga II.",
           "toggle": {
             "label": "Ira",
             "adv": [
@@ -47,13 +47,16 @@
           }
         },
         {
-          "name": "Frenesí de Batalla",
+          "name": "Demostración Terrorífica",
           "tags": [
             "Innata",
-            "Pasiva"
+            "Miedo"
           ],
           "duration": "1 Ronda",
-          "desc": "Obtienes Ventaja en todos los tiros de ataque con arma y artes marciales, pero sufres Desventaja en tiros defensivos."
+          "desc": "Todos tus enemigos deben tener éxito en un tiro de salvación de Voluntad o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad.",
+          "area": "Radio medio",
+          "cost": "1 Acción, 1 Chi",
+          "show_mod": true
         }
       ]
     },
