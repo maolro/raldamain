@@ -43,6 +43,9 @@
             "damage": "+1 dado",
             "adv_tags": [
               "Físico"
+            ],
+            "damage_tags": [
+              "Ataque+Físico"
             ]
           },
           "cost": "1 Acción"
