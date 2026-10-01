@@ -24,7 +24,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Rayo Arcano",
@@ -34,20 +34,20 @@
             "Ataque",
             "A distancia"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "crit": "Objetivo sufre Herido-1 (permanente).",
-          "duration": "Instantáneo",
-          "desc": "Lanzas un rayo de energía que inflige 1d6 + Rango Arcano de daño. No es esquivable a distancia corta.",
-          "empower": "Ataca a un objetivo adicional."
+          "empower": "Añade un dado de daño adicional.",
+          "damage": "1d6 + INT",
+          "damage_type": "Fuerza"
         },
         {
-          "name": "Especialidad Arcana",
+          "name": "Transformación Elemental",
           "tags": [
             "Evocación",
-            "Pasiva"
+            "Mejora"
           ],
-          "desc": "Eliges una especialidad (Flujo, Energía, Antienergía, Materia o Electromagnetismo). La especialidad otorga resistencias elementales específicas y acceso a aprender hechizos de esas ramas a mayor rango."
+          "desc": "Cambias el tipo de daño de uno de tus hechizos a otro tipo de daño mágico de tu elección.",
+          "cost": "1 Chi"
         },
         {
           "name": "Descarga de Energía",
@@ -57,12 +57,11 @@
             "Ataque",
             "Área"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "area": "Cono pequeño",
-          "crit": "Afectados sufren Herido-1 (permanente).",
-          "duration": "Instantáneo",
-          "desc": "Proyectas un cono de energía que inflige 1d6 + INT Arcano de daño. Las criaturas que eviten el ataque reciben la mitad de daño.",
-          "empower": "Aumenta el tamaño a cono mediano."
+          "empower": "Aumenta el tamaño del hechizo por un paso y recibe un dado de daño adicional.",
+          "damage": "2d6 + INT",
+          "damage_type": "Fuerza"
         }
       ]
     },

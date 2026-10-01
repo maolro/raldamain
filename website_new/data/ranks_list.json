@@ -209,11 +209,11 @@
   {
     "id": "magia_evocacion",
     "name": "Magia de Evocación",
-    "category": "Arcano",
+    "category": "Arcana",
     "image": "magia_evocacion.jpg",
-    "description": "Canalización de energía pura y transformación elemental para una ofensiva total.",
+    "description": "Te especializas en la forma más destructiva del chi, provocando explosiones elementales y ráfagas de energía pura. Tu agilidad mental te permite lanzar numerosos hechizos y mantener la concentración bajo presión.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_vida",
