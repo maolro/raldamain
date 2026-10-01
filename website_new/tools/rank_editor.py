@@ -199,6 +199,16 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 #git-badge.ok{border-color:#2d5a3a;color:var(--green)}
 #git-badge.bad{border-color:#6a2020;color:var(--red);background:rgba(231,76,60,.08)}
 
+/* ── Show modifier option ── */
+.mod-opt{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--text2);
+  border-top:1px solid var(--border);padding-top:8px}
+.mod-opt input{accent-color:var(--gold);cursor:pointer}
+.mod-opt label{cursor:pointer;display:flex;align-items:center;gap:6px}
+.mod-opt code{color:var(--gold);font-size:10px}
+.mod-auto{font-size:9px;padding:1px 5px;border-radius:3px;border:1px solid var(--border);color:var(--text3)}
+.mod-reset{font-size:9px;color:var(--blue);cursor:pointer;background:none;border:none;padding:0;font-family:inherit}
+.mod-reset:hover{text-decoration:underline}
+
 /* ── Umbrales list ── */
 .umb-box{border-top:1px solid var(--border);padding-top:8px;display:flex;flex-direction:column;gap:5px}
 .umb-hd{display:flex;align-items:center;gap:6px}
@@ -911,6 +921,7 @@ function cardHtml(li, ab, ai) {
       <div class="field"><div class="lbl">Descripción</div>
         <textarea class="inp" rows="3"
           oninput="setAb(${li},${ai},'desc',this.value)">${esc(ab.desc||'')}</textarea></div>
+      <div class="mod-opt" id="modopt-${li}-${ai}">${modOptHtml(li,ai)}</div>
       ${tags.includes('Pasiva') || ab.umbrales!==undefined || ab.hits!==undefined || ab.chi!==undefined || ab.resistances!==undefined || ab.immunities!==undefined ? `
       ${umbHtml(ab.umbrales, li, ai, 'ab')}
       <div class="opt-row" style="margin-top:4px">
@@ -964,6 +975,7 @@ function removeTag(li,ai,ti) {
   renderToolbar(); refreshTags(li,ai);
 }
 function refreshTags(li,ai) {
+  refreshModOpt(li,ai);
   const el=document.getElementById(`tags-${li}-${ai}`); if(!el) return;
   const ab=S.rank.levels[li].abilities[ai]; const tags=ab.tags||[];
   el.innerHTML = tags.map((t,ti)=>`
@@ -989,6 +1001,35 @@ function setToggleArr(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggl
 function setToggleNum(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const n=parseInt(v); if(!isNaN(n))t[k]=n; else delete t[k]; renderToolbar(); }
 function setToggleCe(li,ai,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(!v){delete t.ce;renderToolbar();return;} const n=parseFloat(v); t.ce=isNaN(n)?v:n; renderToolbar(); }
 function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)ab[k]=a; else delete ab[k]; renderToolbar(); }
+
+// ── Show modifier ("+X — Descripción" in the character stat block) ───────────
+// Not set → default: on for "Ataque" abilities (and abilities whose text says "debe superar").
+function defaultShowMod(ab) {
+  return (ab.tags||[]).includes('Ataque') || (ab.desc||'').includes('debe superar');
+}
+function modOptHtml(li,ai) {
+  const ab = S.rank.levels[li].abilities[ai];
+  const explicit = ab.show_mod !== undefined;
+  const on = explicit ? ab.show_mod : defaultShowMod(ab);
+  return `
+    <label><input type="checkbox" ${on?'checked':''} onchange="setShowMod(${li},${ai},this.checked)">
+      Mostrar modificador <code>+X — Descripción</code></label>
+    ${explicit
+      ? `<button class="mod-reset" onclick="resetShowMod(${li},${ai})" title="Volver al valor por defecto (según etiqueta Ataque)">↺ auto</button>`
+      : `<span class="mod-auto" title="Por defecto: activado en habilidades con la etiqueta Ataque">auto</span>`}`;
+}
+function refreshModOpt(li,ai) {
+  const el = document.getElementById(`modopt-${li}-${ai}`);
+  if (el) el.innerHTML = modOptHtml(li,ai);
+}
+function setShowMod(li,ai,v) {
+  S.rank.levels[li].abilities[ai].show_mod = v;
+  renderToolbar(); refreshModOpt(li,ai);
+}
+function resetShowMod(li,ai) {
+  delete S.rank.levels[li].abilities[ai].show_mod;
+  renderToolbar(); refreshModOpt(li,ai);
+}
 
 // ── Umbrales (damage thresholds) ──────────────────────────────────────────────
 // Stored like creature umbrales: [{ value: 2 | "RANGO+1", categories: "General" | "Fuego, Frío" }]

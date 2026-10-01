@@ -105,7 +105,7 @@ Vue.component('v-statblock', {
         <div v-html="h(r.atbCatString('passive'))"></div>
         <h3 class="sb-section-title">Acciones ({{ r.actions }})</h3>
         <div v-html="h(r.atbCatString('actions'))"></div>
-        <h3 class="sb-section-title">Reacciones</h3>
+        <h3 class="sb-section-title">Reacciones ({{ r.reactionCount }})</h3>
         <div v-html="h(r.defenseReactions)"></div>
         <div v-if="r.atbCatString('reactions')" style="margin-top:8px" v-html="h(r.atbCatString('reactions'))"></div>
         <slot></slot>

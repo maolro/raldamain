@@ -143,6 +143,8 @@ new Vue({
                                                 ...(ability.umbrales !== undefined ? { umbrales: ability.umbrales } : {}),
                                                 ...(ability.hits     !== undefined ? { hits:     ability.hits     } : {}),
                                                 ...(ability.chi      !== undefined ? { chi:      ability.chi      } : {}),
+                                                ...(ability.show_mod !== undefined ? { show_mod: ability.show_mod } : {}),
+                                                ...(ability.reactions !== undefined ? { reactions: ability.reactions } : {}),
                                                 ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
                                 ...(ability.resistances     !== undefined ? { resistances:     ability.resistances     } : {}),
                                 ...(ability.immunities      !== undefined ? { immunities:      ability.immunities      } : {}),
@@ -342,7 +344,7 @@ new Vue({
                 let formattedString = `<b>${obj.name}</b>`;
                 let parenParts = [];
                 if (obj.tags) parenParts.push(obj.tags);
-                if (obj.cost) parenParts.push(obj.cost);
+                if (obj.cost) parenParts.push(`<span class="sb-cost">${obj.cost}</span>`);
                 if (parenParts.length > 0)
                     formattedString += ` (${parenParts.join('; ')})`;
                 let descParts = [];
@@ -353,10 +355,14 @@ new Vue({
                     ? this.replaceTag(obj.description, obj.rank, obj.skill)
                     : this.resolveWeaponDesc(obj);
                 desc = this.resolveStatTokens(desc);
-                // Modifier prefix for attack spells or abilities that force saves
+                // Modifier prefix "+X — Description": set per ability in the rank editor (show_mod);
+                // by default on for "Ataque" abilities and abilities that force a save
                 if (rankInMap(obj.skill)) {
                     const tagsArr = (obj.tags || '').split(',').map(t => t.trim());
-                    if (tagsArr.includes('Ataque') || (desc && desc.includes('debe superar'))) {
+                    const showMod = obj.show_mod !== undefined
+                        ? obj.show_mod
+                        : (tagsArr.includes('Ataque') || !!(desc && desc.includes('debe superar')));
+                    if (showMod) {
                         const mainStatKey = this.getMainStat(this.ranks[obj.skill].stat);
                         const mainStatVal = this.finalStats[mainStatKey].value;
                         if (mainStatVal !== '-') {
@@ -468,7 +474,7 @@ ${toMd(this.atbCatString("passive"))}
 
 ${toMd(this.atbCatString("actions"))}
 
-## Reacciones
+## Reacciones (${this.reactionCount})
 
 ${reactions}
         `;
@@ -1164,6 +1170,10 @@ ${reactions}
         },
         actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
+        },
+        // 2 reactions per round (manual_core § Reacciones), plus passive bonuses
+        reactionCount: function () {
+            return 2 + this.sumAllKeys('reactions', this.myatb.passive);
         },
         arclevels: function () {
             return this.sumAllKeys('rank', this.myarch);

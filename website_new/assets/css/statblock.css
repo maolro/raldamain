@@ -28,6 +28,12 @@
 .statblock-char .mt-1 { margin-top: 0.25rem; }
 .statblock-char .mt-3 { margin-top: 1rem; }
 
+/* Ability cost (Acción / Reacción / chi) */
+.statblock-char .sb-cost {
+    color: #ff5c5c;
+    font-weight: bold;
+}
+
 /* Combat stats grid */
 .preview-stats-row {
     display: flex;
