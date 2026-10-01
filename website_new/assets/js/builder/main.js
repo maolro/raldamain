@@ -324,7 +324,6 @@ new Vue({
         },
         atbCatString: function (cat) {
             let obArray = this.myatb[cat];
-            const getEmpowerCost = () => '1 chi · máx. 2×';
             const rankInMap = (skill) => skill && skill in this.ranks;
             // **negrita**, *cursiva*, "- " lists and line breaks (assets/js/richtext.js)
             const rich = (t) => typeof formatRichText === 'function' ? formatRichText(t) : t;
@@ -426,7 +425,7 @@ new Vue({
                     let empower = rankInMap(obj.skill)
                         ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.empower), obj.rank), obj.rank, obj.skill))
                         : obj.empower;
-                    formattedString += ` <i>Empoderar (${getEmpowerCost()}): ${empower}</i>`;
+                    formattedString += ` <i><span class="sb-empower">Empoderar</span> (<span class="sb-cost">1 chi</span> · máx. 2×): ${empower}</i>`;
                 }
                 return formattedString;
             }).join("<br><br>");

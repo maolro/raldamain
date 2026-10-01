@@ -90,6 +90,12 @@
     background: rgba(192, 57, 43, 0.15);
 }
 
+/* "Empoderar" label (its chi cost uses .sb-cost) */
+.statblock-char .sb-empower {
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
 /* Combat stats grid */
 .preview-stats-row {
     display: flex;
