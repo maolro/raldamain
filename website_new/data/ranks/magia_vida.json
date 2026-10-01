@@ -31,7 +31,8 @@
           "tags": [
             "Vida",
             "Sanación",
-            "Toque"
+            "Toque",
+            "Magia"
           ],
           "cost": "1 Acción",
           "range": "Toque",
@@ -45,7 +46,8 @@
             "Vida",
             "Ataque",
             "A Distancia",
-            "Radiante"
+            "Radiante",
+            "Magia"
           ],
           "cost": "1 Acción",
           "range": "Medio",
@@ -59,7 +61,8 @@
             "Vida",
             "Visual",
             "Área",
-            "Radiante"
+            "Radiante",
+            "Magia"
           ],
           "cost": "2 Acciones, 1 Chi",
           "area": "Radio corto",
