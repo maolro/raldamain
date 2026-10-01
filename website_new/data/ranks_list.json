@@ -6,7 +6,7 @@
     "image": "estilo_coloso.jpg",
     "description": "Dominas el arte de las armas a dos manos. Sacrificas velocidad y defensa a cambio de golpes devastadores capaces de romper armaduras y aturdir enemigos.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "estilo_duelista",
@@ -33,7 +33,7 @@
     "image": "ira.jpg",
     "description": "Canalizas tu furia para superar los límites físicos. Entras en un trance de combate que incrementa tu fuerza y resistencia a costa de tu defensa y racionalidad.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "reflejos",
@@ -51,7 +51,7 @@
     "image": "fortitud.jpg",
     "description": "Tu resistencia física es superior a la media. Eres capaz de soportar climas adversos, resistir el dolor y seguir luchando cuando otros caerían.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "mente_desencadenada",

@@ -103,10 +103,15 @@ function renderRankPage(data) {
     // C. Fill Fundamentals
     document.getElementById("rank-desc").innerText = data.description;
 
-    // Ranks are drafts unless explicitly marked "draft": false — show only an
-    // "under construction" notice instead of fundamentals and abilities.
-    if (data.draft !== false) {
+    // Ranks/levels are drafts unless explicitly marked "draft": false.
+    // A draft rank still shows its finished levels (draft levels get a strip below);
+    // only a rank with no finished level at all shows the full "under construction" notice.
+    const isDraftRank = data.draft !== false;
+    const hasFinishedLevel = (data.levels || []).some(l => l.draft === false);
+    if (isDraftRank) {
         metaContainer.innerHTML += `<div class="meta-badge draft-badge">🚧 En construcción</div>`;
+    }
+    if (isDraftRank && !hasFinishedLevel) {
         document.getElementById("rank-fundamentals").style.display = 'none';
         const fundTitle = document.querySelector(".container .section-title");
         if (fundTitle) fundTitle.innerText = "Descripción";

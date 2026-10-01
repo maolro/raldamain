@@ -71,6 +71,10 @@ def _git_push(files, message):
 def _is_draft(obj):
     return obj.get("draft", True) is not False
 
+def _is_partial(rank):
+    levels = rank.get("levels", [])
+    return any(_is_draft(lv) for lv in levels) and any(not _is_draft(lv) for lv in levels)
+
 # ── API ───────────────────────────────────────────────────────────────────────
 
 @app.route("/api/ranks")
@@ -84,7 +88,7 @@ def api_list():
                 "title":    d.get("title", f.stem),
                 "category": d.get("category", ""),
                 "draft":    _is_draft(d),
-                "partial":  not _is_draft(d) and any(_is_draft(lv) for lv in d.get("levels", [])),
+                "partial":  _is_partial(d),
             })
         except Exception:
             pass
@@ -122,8 +126,8 @@ def _sync_ranks_list(data):
             "image":       data.get("image", ""),
             "description": data.get("description", ""),
             "draft":       _is_draft(data),
-            # Rank published, but some levels still under construction
-            "partial":     not _is_draft(data) and any(_is_draft(lv) for lv in data.get("levels", [])),
+            # Some levels finished (shown on the site), others still under construction
+            "partial":     _is_partial(data),
         }
         idx = next((i for i, e in enumerate(entries) if e.get("id") == entry["id"]), None)
         if idx is not None:
@@ -622,7 +626,7 @@ async function saveRank() {
     const res = await api('POST', `/api/rank/${S.rank.id}`, S.rank);
     S.saved = JSON.stringify(S.rank);
     const entry = S.all.find(r=>r.id===S.rank.id);
-    if (entry) { entry.draft = isDraft(S.rank); entry.partial = !entry.draft && (S.rank.levels||[]).some(isDraft); }
+    if (entry) { entry.draft = isDraft(S.rank); entry.partial = isPartial(S.rank); }
     const git = res.git||'';
     if (git === 'ok')                     toast('Guardado y publicado en GitHub ✓', 'ok');
     else if (git === 'nothing')           toast('Guardado ✓ (sin cambios en git)', 'ok');
@@ -683,10 +687,15 @@ async function loadGit() {
 // Ranks are drafts unless explicitly marked "draft": false
 function isDraft(r) { return !r || r.draft !== false; }
 // Sidebar badge: full draft, or published with some levels still in draft
+function isPartial(r) {
+  const lv = r.levels || [];
+  return lv.some(isDraft) && lv.some(l => !isDraft(l));
+}
 function draftBadge(r) {
+  const partial = r.levels ? isPartial(r) : r.partial;
+  if (partial) return '<span class="ri-draft" title="Los niveles terminados se muestran en la web; el resto aparece en construcción">🚧 Parcial</span>';
   if (isDraft(r)) return '<span class="ri-draft">🚧 Borrador</span>';
-  const partial = r.levels ? r.levels.some(isDraft) : r.partial;
-  return partial ? '<span class="ri-draft" title="Algunos niveles siguen en borrador">🚧 Parcial</span>' : '';
+  return '';
 }
 function toggleLvDraft(li) {
   const lv = S.rank.levels[li];
@@ -777,7 +786,7 @@ function renderLvl() {
       ${pasteAbBtn}
       <button class="btn danger sm" style="margin-left:auto" onclick="delLv(${S.lv})">✕ Eliminar</button>
     </div>
-    ${isDraft(S.rank) ? `<div class="lvl-draft-note">🚧 El rango entero está en borrador: en la web todo aparece "En construcción", sea cual sea el estado de cada nivel.</div>` : ''}
+    ${isDraft(S.rank) ? `<div class="lvl-draft-note">🚧 Rango en borrador: la web muestra la etiqueta "En construcción" y solo los niveles marcados como final (si no hay ninguno, la página entera aparece en construcción).</div>` : ''}
 
     ${lv.passive!==undefined ? `
     <div class="passive-block">
