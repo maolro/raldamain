@@ -19,15 +19,28 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Nacido del cielo",
+          "name": "Nacido de los Cielos",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a efectos Radiantes. Las criaturas celestiales te reconocen como aliado."
+          "desc": "Obtienes Ventaja en tiros de salvación de Voluntad y Resistencia Rango + 1 al daño Radiante y Fuego. Además, los Celestiales serán naturalmente amistosos hacia ti.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Fuego"
+            },
+            {
+              "value": "RANGO+1",
+              "categories": "Radiante"
+            }
+          ],
+          "saves": [
+            "Voluntad"
+          ]
         },
         {
           "name": "Canalización Celestial",
@@ -35,9 +48,21 @@
             "Innata",
             "Mejora"
           ],
-          "cost": "1 acción",
-          "duration": "Hasta 6 Rondas",
-          "desc": "Obtienes Ventaja en tiros de ataque, defensa, habilidad y salvación. El efecto dura hasta 6 rondas. Al terminar, tu Vitalidad máxima se reduce en 2 por cada ronda activa. Si esta reducción te llevaría a menos de 0 Vitalidad, caes inconsciente."
+          "cost": "1 Acción",
+          "duration": "Max 6 Rondas",
+          "desc": "Recibes Ventaja en todos tus tiros de ataque, defensa, salvación y habilidad. Este efecto dura hasta 6 rondas y cuando acabe reduces tu chi o tus impactos máximos por 1 por cada 2 rondas que hayas pasado en él.",
+          "toggle": {
+            "label": "Canalización Celestial",
+            "adv": [
+              "Ataque",
+              "Defensa"
+            ],
+            "saves": [
+              "Físico",
+              "Voluntad",
+              "Mental"
+            ]
+          }
         }
       ]
     },

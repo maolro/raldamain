@@ -101,11 +101,11 @@
   {
     "id": "ascendencia_celestial",
     "name": "Ascendencia Celestial",
-    "category": "Ascendencia",
+    "category": "Ascendencias",
     "image": "ascendencia_celestial.jpg",
-    "description": "Expolia tu cuerpo físico para desbloquear tu espíritu y buscar la ascensión divina.",
+    "description": "Canalizas el poder de los seres superiores para convertirte en luz y guía. Obtienes poderes de sanación, vuelo y la capacidad de invocar fuerzas celestiales para erradicar el mal.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "ascendencia_infernal",
