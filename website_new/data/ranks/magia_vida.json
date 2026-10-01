@@ -24,7 +24,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Toque Sanador",
@@ -33,26 +33,25 @@
             "Sanación",
             "Toque"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Toque",
-          "duration": "Instantánea",
-          "desc": "Tocas a un aliado y le sanas Vitalidad igual a Rango + 2. Alternativamente, puedes reducir el nivel de una Aflicción un paso en lugar de curar Vitalidad.",
-          "empower": "Cura Herido-1 (permanente) o una Aflicción en fase 1."
+          "desc": "Cura un impacto a un aliado adyacente. Si esta habilidad se usa en un no-muerto, este deberá tener éxito en un tiro de salvación de Voluntad o sufrirá 1d6 + SAB/CAR daño Radiante.",
+          "empower": "Cura un impacto o elimina un efecto de estado adicional, o añade un dado de daño adicional is afectas a un no-muerto.",
+          "show_mod": true
         },
         {
-          "name": "Rayo de Luz",
+          "name": "Rayo Luminoso",
           "tags": [
             "Vida",
             "Ataque",
             "A Distancia",
             "Radiante"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "crit": "El objetivo queda con Confundido-1 durante una ronda.",
-          "duration": "Instantánea",
-          "desc": "Lanzas un rayo de luz que inflige 1d6 + Rango daño Radiante. A distancia corta, el ataque no puede ser esquivado.",
-          "empower": "Realizas un ataque adicional contra un objetivo distinto."
+          "empower": "Añade un dado de daño adicional.",
+          "damage": "1d6 + SAB/CAR",
+          "damage_type": "Radiante"
         },
         {
           "name": "Halo Cegador",
@@ -62,12 +61,11 @@
             "Área",
             "Radiante"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "area": "Radio corto",
           "crit": "Los objetivos quedan con Confundido-2 hasta que reciban sanación.",
-          "duration": "Instantánea",
-          "desc": "Emites una explosión de luz cegadora. Los enemigos en el área deben superar un tiro de salvación de CON o sufren 1d6 + Rango daño Radiante y quedan con Confundido-1 durante 1 ronda. Disipa hechizos Sombríos activos en el área.",
-          "empower": "El brillo persiste 1 ronda, lo que otorga Desventaja en tiros de ataque contra ti y ciega a quien se acerque."
+          "desc": "Los objetivos deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB/CAR daño Radiante y quedan Cegados una ronda. ",
+          "empower": "Permanece como un aura durante una ronda, haciendo así que todo objetivo que te impacte sufra sus efectos."
         }
       ]
     },
