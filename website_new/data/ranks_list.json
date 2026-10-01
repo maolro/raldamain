@@ -76,7 +76,7 @@
     "name": "Presencia",
     "category": "Combate",
     "image": "presencia.jpg",
-    "description": "Inspira a tus aliados con tácticas coordinadas o infunde miedo terrorífico en tus enemigos.",
+    "description": "",
     "draft": true,
     "partial": false
   },
