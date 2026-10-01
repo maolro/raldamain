@@ -36,18 +36,17 @@
           "desc": "Recibes Ventaja en todos sus tiros relacionados con estadísticas Físicas, incluyendo ataque, defensa, habilidad y salvación, además que aumentas su daño base por un dado. Este efecto dura hasta 6 rondas y cuando acabe pierdes tanto Chi como rondas en Ira. Si esto te baja a chi negativo, recibirás el efecto Fatiga II.",
           "toggle": {
             "label": "Ira",
-            "adv": [
-              "Ataque",
-              "Físico",
-              "Parada",
-              "Esquiva"
-            ],
             "damage": "+1 dado",
             "adv_tags": [
               "Físico"
             ],
             "damage_tags": [
               "Ataque+Físico"
+            ],
+            "adv_stats": [
+              "FUE",
+              "DES",
+              "CON"
             ]
           },
           "cost": "1 Acción"
