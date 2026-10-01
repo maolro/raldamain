@@ -4,12 +4,13 @@
   "category": "Combate",
   "draft": true,
   "image": "presencia.jpg",
-  "stats": [],
-  "description": "",
+  "stats": [
+    "CAR"
+  ],
+  "description": "Inspira y lidera a tus aliados para que superen sus límites.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
-    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+    "<strong>Estadística principal:</strong> Carisma + Rango."
   ],
   "levels": []
 }

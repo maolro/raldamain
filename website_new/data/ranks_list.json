@@ -76,7 +76,7 @@
     "name": "Presencia",
     "category": "Combate",
     "image": "presencia.jpg",
-    "description": "",
+    "description": "Inspira y lidera a tus aliados para que superen sus límites.",
     "draft": true,
     "partial": false
   },
