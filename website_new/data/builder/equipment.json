@@ -49,6 +49,10 @@
         "bateria-chi": {
             "eqab": "bateria-de-chi",
             "name": "Batería de Chi"
+        },
+        "bomba": {
+            "name": "Bomba",
+            "eqab": "bomba"
         }
     },
     "head": {

@@ -230,5 +230,16 @@
         "damage": "3d6",
         "damage_type": "Perforante",
         "description": "Tienes Desventaja atacando a enemigos a distancia corta o inferior."
+    },
+    "bomba": {
+        "name": "Bomba",
+        "type": "Accion",
+        "tags": "Objeto",
+        "description": "",
+        "cost": "1 Acción",
+        "damage": "2d6",
+        "damage_type": "Fuego",
+        "range": "Medio",
+        "area": "Radio Corto"
     }
 }
