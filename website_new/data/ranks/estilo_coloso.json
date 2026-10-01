@@ -40,9 +40,8 @@
             "Mejora",
             "Maniobra"
           ],
-          "cost": "1 chi",
-          "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado y tiene Desventaja defendiéndose del siguiente ataque. Esta habilidad puede usarse incluso si el enemigo detiene exitosamente el ataque con Parada",
-          "show_mod": true
+          "cost": "1 Chi",
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado y tiene Desventaja defendiéndose del siguiente ataque. Esta habilidad puede usarse incluso si el enemigo detiene exitosamente el ataque con Parada"
         },
         {
           "name": "Proteger Aliado",
