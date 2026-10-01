@@ -12,5 +12,57 @@
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Carisma + Rango."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Voz del Comandante",
+          "tags": [
+            "Presencia",
+            "Mejora"
+          ],
+          "desc": "Un aliado a distancia media recibe Ventaja en su siguiente tiro. Puedes emplear esta habilidad RANGO+2 veces por combate.",
+          "empower": "Recupera un uso de esta habilidad"
+        },
+        {
+          "name": "Voluntad Poderosa",
+          "tags": [
+            "Presencia",
+            "Pasiva"
+          ],
+          "desc": "Recibes Ventaja en tiros de salvación de Voluntad y puedes cambiar tu tiro de salvación Mental por tu tiro de Presencia (ya incluido).",
+          "toggle": {
+            "label": ""
+          }
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
+    }
+  ]
 }
