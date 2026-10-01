@@ -50,7 +50,7 @@
             "label": "Segundo Aliento",
             "umbrales": [
               {
-                "value": "RANGO+1",
+                "value": "RANGO+2",
                 "categories": "General"
               }
             ]
