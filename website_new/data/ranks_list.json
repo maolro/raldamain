@@ -49,7 +49,7 @@
     "name": "Fortitud",
     "category": "Combate",
     "image": "fortitud.jpg",
-    "description": "Endurece tu cuerpo para obtener armadura natural y capacidad de sanación rápida.",
+    "description": "Tu resistencia física es superior a la media. Eres capaz de soportar climas adversos, resistir el dolor y seguir luchando cuando otros caerían.",
     "draft": true,
     "partial": false
   },
