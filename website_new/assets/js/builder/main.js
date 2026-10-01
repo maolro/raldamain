@@ -648,6 +648,9 @@ ${reactions}
                 case 'flex':    mod = Math.max(strV + colosoRk, Math.max(strV, dexV) + duelistaRk, dexV + asesinоRk); break;
                 default:        mod = Math.max(strV, dexV); break;
             }
+            // "Usar el modificador de este rango" → Tiros de arma (attacks and weapon Parada)
+            const repl = this.modReplacements['Arma'];
+            if (repl && repl.value > mod) mod = repl.value;
             return mod >= 0 ? `+${mod}` : `${mod}`;
         },
         loadCharacter(character) {
@@ -912,6 +915,8 @@ ${reactions}
             } else {
                 stat = Math.max(strV, dexV); mod = Math.max(strV, dexV); statKey = strV >= dexV ? 'str' : 'dex';
             }
+            const armaRepl = this.modReplacements['Arma'];
+            if (armaRepl && armaRepl.value > mod) mod = armaRepl.value;
             const advCount = this.abilityAdvantageCount(obj, [statKey]);
             const advStr = advCount > 0 ? '+' + advCount + 'd6' : '';
             const modStr = (mod >= 0 ? '+' + mod : String(mod)) + advStr;

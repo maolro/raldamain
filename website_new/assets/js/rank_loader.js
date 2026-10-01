@@ -184,7 +184,7 @@ function renderRankPage(data) {
                         ${ability.talpoints ? `<div class="stat-pill umbral-pill">Talentos: <span>+${formatRankValue(ability.talpoints)}</span></div>` : ''}
                         ${(ability.adv_stats || []).length ? `<div class="stat-pill umbral-pill">+1d6 con: <span>${ability.adv_stats.join(', ')}</span></div>` : ''}
                         ${(ability.saves || []).length ? `<div class="stat-pill umbral-pill">Ventaja en salvación: <span>${ability.saves.join(', ')}</span></div>` : ''}
-                        ${(ability.replace_mod || []).length ? `<div class="stat-pill umbral-pill">Usa este rango en: <span>${ability.replace_mod.join(', ')}</span></div>` : ''}
+                        ${(ability.replace_mod || []).length ? `<div class="stat-pill umbral-pill">Usa este rango en: <span>${ability.replace_mod.map(t => t === 'Arma' ? 'Tiros de arma' : t).join(', ')}</span></div>` : ''}
                     </div>
 
                     <div class="ability-desc">

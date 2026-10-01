@@ -1215,7 +1215,7 @@ function resetShowMod(li,ai) {
 const PASSIVE_KEYS = ['umbrales','hits','chi','talpoints','saves','adv_stats','replace_mod','resistances','immunities','condition'];
 const STAT_ABBRS = ['FUE','DES','CON','INT','SAB','CAR'];
 const SAVE_TYPES = ['Físico','Voluntad','Mental'];
-const REPLACE_TARGETS = ['Físico','Voluntad','Mental','Esquiva','Parada'];
+const REPLACE_TARGETS = ['Físico','Voluntad','Mental','Esquiva','Parada','Arma'];
 const UMB_CATS = ['General','Físico','Cortante','Contundente','Perforante','Magia','Arcano',
                   'Fuego','Frío','Eléctrico','Ácido','Sónico','Radiante','Necrótico'];
 
@@ -1249,7 +1249,7 @@ function boostsHtml(o, li, ai, scope) {
       ${chkGroup(o, li, ai, scope, 'adv_stats', STAT_ABBRS)}</div>
     <div class="field" style="margin-top:6px">
       <div class="lbl" title="Si el modificador de este rango (estadística principal + Rango) es mayor, sustituye al de estos tiros">Usar el modificador de este rango (si es mayor) en</div>
-      ${chkGroup(o, li, ai, scope, 'replace_mod', REPLACE_TARGETS, ['Salv. Físico','Salv. Voluntad','Salv. Mental','Esquiva','Parada'])}</div>
+      ${chkGroup(o, li, ai, scope, 'replace_mod', REPLACE_TARGETS, ['Salv. Físico','Salv. Voluntad','Salv. Mental','Esquiva','Parada','Tiros de arma'])}</div>
     <div class="row2" style="margin-top:6px">
       <div class="field"><div class="lbl">Resistencias (comas)</div>
         <input class="inp" value="${esc((o.resistances||[]).join(', '))}" placeholder="Miedo, Veneno…"
