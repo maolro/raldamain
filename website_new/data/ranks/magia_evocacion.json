@@ -76,10 +76,10 @@
           "tags": [
             "Evocación",
             "Arcano",
-            "Defensivo",
-            "Duradero"
+            "Duradero",
+            "Reacción"
           ],
-          "cost": "1 Acción, 1 Chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Línea mediana o esfera pequeña",
           "duration": "Concentración",
@@ -90,15 +90,9 @@
           "tags": [
             "Evocación",
             "Arcano",
-            "Mejora",
-            "Toque",
-            "Duradero"
+            "Pasiva"
           ],
-          "cost": "3 acciones, 1 chi",
-          "range": "Cuerpo a cuerpo",
-          "duration": "Una hora",
-          "desc": "El arma tocada cuenta como Arcana y otorga +1 chi a su portador. Como acción bonus, el portador puede infundir un ataque con un hechizo conocido, pagando su coste +1 chi adicional.",
-          "empower": "Aumenta la reserva del portador en 1 chi adicional."
+          "desc": "Puedes emplear tu modificador de Magia de Evocación para tus tiros de ataque con armas, o aplicar técnicas de armas a ataques de Magia de Evocación. "
         },
         {
           "name": "Metamagia",
