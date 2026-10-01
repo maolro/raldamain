@@ -179,6 +179,8 @@ function renderRankPage(data) {
                         ${ability.duration ? `<div class="stat-pill">Duración: <span>${ability.duration}</span></div>` : ''}
                         ${(ability.umbrales || []).map(u => `<div class="stat-pill umbral-pill">Umbral ${u.categories || 'General'}: <span>+${formatRankValue(u.value)}</span></div>`).join('')}
                         ${ability.hits ? `<div class="stat-pill umbral-pill">Impactos: <span>+${formatRankValue(ability.hits)}</span></div>` : ''}
+                        ${ability.condition ? `<div class="stat-pill umbral-pill">Solo con: <span>${ability.condition}</span></div>` : ''}
+                        ${ability.talpoints ? `<div class="stat-pill umbral-pill">Talentos: <span>+${formatRankValue(ability.talpoints)}</span></div>` : ''}
                         ${(ability.saves || []).length ? `<div class="stat-pill umbral-pill">Ventaja en salvación: <span>${ability.saves.join(', ')}</span></div>` : ''}
                         ${(ability.replace_mod || []).length ? `<div class="stat-pill umbral-pill">Usa este rango en: <span>${ability.replace_mod.join(', ')}</span></div>` : ''}
                     </div>

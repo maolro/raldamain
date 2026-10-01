@@ -74,6 +74,22 @@
     margin: 0.15rem 0;
 }
 
+/* Conditional passive marker ("⚡ con Ira") */
+.statblock-char .sb-cond {
+    font-size: 0.75em;
+    padding: 0 5px;
+    border-radius: 3px;
+    border: 1px solid #555;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.statblock-char .sb-cond.on {
+    border-color: #c0392b;
+    color: #ff8a7a;
+    background: rgba(192, 57, 43, 0.15);
+}
+
 /* Combat stats grid */
 .preview-stats-row {
     display: flex;

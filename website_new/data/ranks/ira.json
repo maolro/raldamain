@@ -87,7 +87,14 @@
             "Ira",
             "Pasiva"
           ],
-          "desc": "Mientras te encuentres en Ira, aumentas todos sus umbrales por RANGO e ignoras los efectos Herido I y II."
+          "desc": "Mientras te encuentres en Ira, aumentas todos sus umbrales por RANGO e ignoras los efectos Herido I y II.",
+          "condition": "Ira",
+          "umbrales": [
+            {
+              "value": "RANGO",
+              "categories": "General"
+            }
+          ]
         }
       ]
     },

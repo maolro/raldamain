@@ -45,7 +45,8 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes RANGO + 2 niveles de talento adicionales para mejorar tus habilidades."
+          "desc": "Obtienes RANGO + 2 niveles de talento adicionales para mejorar tus habilidades.",
+          "talpoints": "RANGO+2"
         }
       ]
     },

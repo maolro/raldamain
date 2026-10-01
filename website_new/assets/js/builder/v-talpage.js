@@ -33,7 +33,7 @@ Vue.component('v-talpage', {
             for (let key in this.mytalents) {
                 talSum += this.mytalents[key].level;
             }
-            return (2 + 2 * parseInt(this.level) - talSum + this.$root.sumAllKeys('talpoints', this.psatb));
+            return (2 + 2 * parseInt(this.level) - talSum + this.$root.sumAllKeys('talpoints', this.$root.activeAbilities || this.psatb));
         },
         talentlimit: function () {
             level = this.level

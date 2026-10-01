@@ -645,7 +645,9 @@ async function loadRank(id) {
   S.rank = await api('GET', `/api/rank/${id}`);
   S.saved = JSON.stringify(S.rank);
   S.lv = 0;
+  S.openBoost = {};
   renderAll();
+  renderSidebar();
 }
 
 // ── Save ─────────────────────────────────────────────────────────────────────
@@ -791,6 +793,7 @@ function setLv(i) { S.lv=i; renderTabs(); renderLvl(); }
 
 // ── Level content ─────────────────────────────────────────────────────────────
 function renderLvl() {
+  refreshToggleList();
   const el = document.getElementById('lvl-body');
   const lvls = S.rank.levels||[];
   if (!lvls.length) { el.innerHTML='<div style="color:var(--text3)">Sin rangos. Pulsa ＋ para añadir.</div>'; return; }
@@ -865,8 +868,13 @@ function cardHtml(li, ab, ai) {
     <div class="boost-section">
       <div class="tog-hd">
         <span class="boost-label">✦ Bonificadores pasivos</span>
-        <span class="boost-hint">siempre activos</span>
+        <span class="boost-hint">${ab.condition ? 'solo con «' + esc(ab.condition) + '» activo' : 'siempre activos'}</span>
         <button class="btn sm danger" style="margin-left:auto" onclick="clearPassive(${li},${ai})">× Quitar</button>
+      </div>
+      <div class="field" style="margin-bottom:6px">
+        <div class="lbl" title="Pasiva condicional: estos bonificadores solo se aplican mientras el estado de combate indicado esté activo (p. ej. Ira)">Solo mientras esté activo (estado de combate)</div>
+        <input class="inp" list="toggle-dl" value="${esc(ab.condition||'')}" placeholder="— siempre activo · Ira · Mente Desencadenada…"
+          oninput="setCondition(${li},${ai},this.value)">
       </div>
       ${boostsHtml(ab, li, ai, 'ab')}
     </div>` : `
@@ -1108,7 +1116,7 @@ function resetShowMod(li,ai) {
 //   umbrales [{value, categories}] · hits · chi (ability only) · saves [Físico|Voluntad|Mental]
 //   replace_mod [targets that use this rank's modifier (stat + Rango) when higher]
 //   resistances [] · immunities []
-const PASSIVE_KEYS = ['umbrales','hits','chi','saves','replace_mod','resistances','immunities'];
+const PASSIVE_KEYS = ['umbrales','hits','chi','talpoints','saves','replace_mod','resistances','immunities','condition'];
 const SAVE_TYPES = ['Físico','Voluntad','Mental'];
 const REPLACE_TARGETS = ['Físico','Voluntad','Mental','Esquiva','Parada'];
 const UMB_CATS = ['General','Físico','Cortante','Contundente','Perforante','Magia','Arcano',
@@ -1131,6 +1139,12 @@ function boostsHtml(o, li, ai, scope) {
         <input class="inp" value="${esc(o.chi!=null?o.chi:'')}" placeholder="—"
           oninput="setBoost(${li},${ai},'${scope}','chi',this.value)"></div>` : '<div></div>'}
     </div>
+    ${scope==='ab' ? `<div class="row2" style="margin-top:6px">
+      <div class="field"><div class="lbl" title="Niveles de talento adicionales para repartir (Talentos)">+Puntos de talento</div>
+        <input class="inp" value="${esc(o.talpoints!=null?o.talpoints:'')}" placeholder="— · 2 · RANGO+2"
+          oninput="setBoost(${li},${ai},'${scope}','talpoints',this.value)"></div>
+      <div></div>
+    </div>` : ''}
     <div class="field" style="margin-top:6px"><div class="lbl">Ventaja en tiros de salvación</div>
       ${chkGroup(o, li, ai, scope, 'saves', SAVE_TYPES)}</div>
     <div class="field" style="margin-top:6px">
@@ -1160,6 +1174,19 @@ function toggleBoostItem(li,ai,scope,k,v,on) {
   if (on) a.push(v);
   if (a.length) o[k] = a; else delete o[k];
   renderToolbar(); renderLvl();
+}
+function setCondition(li,ai,v) {
+  const ab = S.rank.levels[li].abilities[ai]; v = v.trim();
+  if (v) ab.condition = v; else delete ab.condition;
+  renderToolbar();
+}
+// Combat-state labels for the condition field: this rank's toggles + the usual ones
+function refreshToggleList() {
+  let dl = document.getElementById('toggle-dl');
+  if (!dl) { dl = document.createElement('datalist'); dl.id = 'toggle-dl'; document.body.appendChild(dl); }
+  const labels = new Set(['Ira','Mente Desencadenada','Furia Abisal']);
+  (S.rank && S.rank.levels || []).forEach(lv => (lv.abilities||[]).forEach(a => { if (a.toggle && a.toggle.label) labels.add(a.toggle.label); }));
+  dl.innerHTML = [...labels].map(l => `<option value="${esc(l)}">`).join('');
 }
 function openPassive(li,ai) { S.openBoost[`${li}-${ai}`] = true; renderLvl(); }
 function clearPassive(li,ai) {

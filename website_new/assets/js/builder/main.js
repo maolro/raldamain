@@ -148,6 +148,8 @@ new Vue({
                                                 ...(ability.chi      !== undefined ? { chi:      ability.chi      } : {}),
                                                 ...(ability.show_mod !== undefined ? { show_mod: ability.show_mod } : {}),
                                                 ...(ability.saves       !== undefined ? { saves:       ability.saves       } : {}),
+                                                ...(ability.condition   !== undefined ? { condition:   ability.condition   } : {}),
+                                                ...(ability.talpoints   !== undefined ? { talpoints:   ability.talpoints   } : {}),
                                                 ...(ability.replace_mod !== undefined ? { replace_mod: ability.replace_mod } : {}),
                                                 ...(ability.reactions !== undefined ? { reactions: ability.reactions } : {}),
                                                 ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
@@ -359,6 +361,8 @@ new Vue({
                         + ` title="${attr((on ? 'Desactivar ' : 'Activar ') + obj.toggle.label + (tip ? ' — ' + tip : ''))}"> `;
                 }
                 let formattedString = toggleBox + `<b${toggleBox && this.isToggleActive(obj.toggle.label) ? ' class="sb-toggle-on"' : ''}>${obj.name}</b>`;
+                if (obj.condition)
+                    formattedString += ` <span class="sb-cond${this.isToggleActive(obj.condition) ? ' on' : ''}" title="Pasiva condicional: se aplica mientras ${attr(obj.condition)} esté activo">⚡ con ${obj.condition}</span>`;
                 let parenParts = [];
                 if (obj.tags) parenParts.push(obj.tags);
                 if (obj.cost) parenParts.push(`<span class="sb-cost">${obj.cost}</span>`);
@@ -848,7 +852,7 @@ ${reactions}
         },
         // Impactos: every character starts with 6, plus passive/toggle bonuses
         hits: function () {
-            return BASE_HITS + this.sumAllKeys('hits', this.allAbilities) + this.toggleBuffs.hits;
+            return BASE_HITS + this.sumAllKeys('hits', this.activeAbilities) + this.toggleBuffs.hits;
         },
         // Umbrales de Daño: "General" applies to all damage; each other category
         // (Físico, Fuego, Magia…) stacks on top of General.
@@ -933,8 +937,8 @@ ${reactions}
         resistances: function () {
             let rsobj = { vulnerabilities: [], resistances: [], supresist: [], immunities: [] };
 
-            for (let i in this.allAbilities) {
-                let ab = this.allAbilities[i];
+            for (let i in this.activeAbilities) {
+                let ab = this.activeAbilities[i];
                 if ("resistances" in ab) {
                     for (let j in ab.resistances) {
                         let rs = ab.resistances[j];
@@ -1144,7 +1148,7 @@ ${reactions}
                 rk = this.myranks[i];
                 chiRes += rk.rank * 2;
             }
-            chiRes += this.sumAllKeys('chi', this.allAbilities);
+            chiRes += this.sumAllKeys('chi', this.activeAbilities);
             return { chi: chiRes };
         },
         savingThrows: function() {
@@ -1154,7 +1158,7 @@ ${reactions}
             const countSave = (saveType) => {
                 let n = 0;
                 // Passive "Ventaja en tiros de salvación" (always on)
-                for (const ab of this.allAbilities)
+                for (const ab of this.activeAbilities)
                     if (ab.saves && ab.saves.includes(saveType)) n++;
                 for (const ab of this.toggleableAbilities) {
                     if (!this.isToggleActive(ab.toggle.label)) continue;
@@ -1330,8 +1334,13 @@ ${reactions}
         },
         // Where boosts come from: each ability's always-on boosts + the toggles that are active.
         // [{ o: object holding the boost keys, owner: ability (for rank formulas) }]
+        // Abilities whose passive boosts apply right now: always-on ones, plus conditional
+        // passives ("condition": toggle label) while that combat state is ticked
+        activeAbilities: function () {
+            return this.allAbilities.filter(ab => !ab.condition || this.isToggleActive(ab.condition));
+        },
         boostSources: function () {
-            const res = this.allAbilities.map(ab => ({ o: ab, owner: ab }));
+            const res = this.activeAbilities.map(ab => ({ o: ab, owner: ab }));
             for (const ab of this.toggleableAbilities)
                 if (this.isToggleActive(ab.toggle.label)) res.push({ o: ab.toggle, owner: ab });
             return res;
