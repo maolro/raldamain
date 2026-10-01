@@ -30,7 +30,7 @@
             "Coloso",
             "Mejora"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar."
         },
         {
@@ -50,7 +50,7 @@
             "Reacción"
           ],
           "desc": "Te mueves hasta un paso para interceptar un ataque hecho contra un aliado tuyo, pudiendo así emplear tu tiro defensivo en lugar del suyo y recibiendo tú el daño del ataque si fallas.",
-          "cost": "1 reacción"
+          "cost": "1 Reacción"
         }
       ]
     },
