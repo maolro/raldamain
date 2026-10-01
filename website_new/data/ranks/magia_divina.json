@@ -43,7 +43,8 @@
           "name": "Oración",
           "tags": [
             "Divina",
-            "Ritual"
+            "Ritual",
+            "Pasiva"
           ],
           "desc": "Tras 10 minutos de rezo, puedes hacer hasta 4 preguntas a tu dios. Las respuestas son sinceras pero pueden ser crípticas. Los usos sucesivos en el mismo día reducen el número de preguntas disponibles o las hacen menos fiables."
         }
