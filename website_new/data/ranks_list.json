@@ -67,9 +67,9 @@
     "name": "Rastrear",
     "category": "Combate",
     "image": "rastrear.jpg",
-    "description": "Analiza enemigos, sigue rastros y utiliza tu inteligencia para ganar ventaja en combate.",
+    "description": "Eres un experto en el terreno y la caza. Analizas a tus enemigos, te mueves sin ser visto y usas el entorno a tu favor para emboscar o sanar.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "presencia",

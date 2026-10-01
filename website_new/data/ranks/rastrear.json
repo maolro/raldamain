@@ -17,7 +17,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Analizar Enemigo",
@@ -25,19 +25,28 @@
             "Innata",
             "Duradera"
           ],
-          "cost": "1 chi",
-          "duration": "Indefinido",
-          "desc": "Tras observar a un enemigo durante 1 ronda, obtienes Ventaja en tiros de ataque y defensa contra él. El efecto se pierde al cambiar de objetivo."
+          "cost": "1 Chi",
+          "desc": "Recibes Ventaja en todos tus tiros de Ataque, Defensa, Habilidad y un dado de daño adicional contra un enemigo específico. Este efecto dura hasta que el enemigo sea derrotado o termine el combate.",
+          "duration": "Max 6 Rondas",
+          "toggle": {
+            "label": "Analizar Enemigo",
+            "damage": "+1 dado",
+            "adv": [
+              "Ataque",
+              "Defensa",
+              "Habilidad"
+            ]
+          }
         },
         {
-          "name": "Sanador Instintivo",
+          "name": "Siempre Preparado",
           "tags": [
             "Innata",
-            "Sanación",
-            "Toque"
+            "Mejora"
           ],
-          "cost": "1 acción, 1 chi",
-          "desc": "Curas Rango + 2 Vitalidad y reduces la gravedad de Herido (permanente) o aflicción un paso. Requiere materiales de sanación."
+          "cost": "1 Acción, 1 Chi",
+          "desc": "Obtienes de inmediato un objeto consumible de coste 1. Algunas opciones para objetos de esta categoría son los siguientes:\n- Poción de Sanación (1 Acción): Cura un impacto o un efecto de estado\n- Bomba (1 Acción): Distancia media, Radio corto, provoca 1d6 + INT/SAB daño Fuego\n- Veneno: Al impactar con un arma, el afectado debe tener éxito en un tiro de salvación de Voluntad o sufre 1d6 daño Veneno y un efecto entre Enfermado I, Fatigado I, Ralentizado I o Confundido I",
+          "show_mod": true
         }
       ]
     },
