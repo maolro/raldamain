@@ -1,8 +1,8 @@
 // Base combat values for the Impactos / Umbrales system
 const BASE_HITS = 6;      // Impactos every character starts with
 const BASE_UMBRAL = 2;    // Base "General" damage threshold
-// Tier by level: first level of each tier (Tier 1 = niv 1-3 … Tier 6 = niv 16-19, Tier 7 = niv 20-22)
-const TIER_START = [1, 4, 7, 10, 13, 16, 20];
+// Tier by level: first level of each tier (Tier 1 = niv 1-3, 2 = 4-6 … 6 = 16-18, 7 = 19-21)
+const TIER_START = [1, 4, 7, 10, 13, 16, 19];
 
 // Tier of a character level (levels above the table stay at the highest tier)
 function tierForLevel(level) {
