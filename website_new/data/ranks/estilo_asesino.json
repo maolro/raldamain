@@ -55,7 +55,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Presionar Defensas",
@@ -64,17 +64,8 @@
             "Mejora",
             "Visual"
           ],
-          "cost": "1 chi",
-          "desc": "Antes de atacar, el objetivo debe superar un tiro de salvación de Mente o sufre Desventaja en su tiro defensivo. El objetivo puede anular este efecto gastando una Premonición. No funciona contra enemigos con Visión Futura."
-        },
-        {
-          "name": "Clavar Arma",
-          "tags": [
-            "Asesino",
-            "Mejora"
-          ],
-          "cost": "1 chi",
-          "desc": "Al impactar, tu arma se queda clavada en el objetivo, provocándole 1d6 daño adicional y enfermándolo durante una ronda. Solo funciona con armas perforantes."
+          "cost": "1 Chi",
+          "desc": "Antes de atacar, el objetivo debe tener éxito en un tiro de salvación Mental o recibe Desventaja en su tiro defensivo. No funciona contra enemigos con Visión Futura y puede anularse con una Premonición."
         },
         {
           "name": "Secuencia de Puñaladas",
@@ -82,8 +73,8 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Realizas dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Solo puede aplicarse a armas de una mano."
+          "cost": "1 Chi",
+          "desc": "Haz un segundo ataque contra el mismo objetivo como acción bonus. Este no conservará ninguno de los bonificadores del anterior y no puedes aplicar esta mejora más de una vez por ataque."
         },
         {
           "name": "Ataque Triple",
@@ -91,7 +82,7 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "1 chi",
+          "cost": "1 Chi",
           "desc": "Tu siguiente ataque puede afectar a hasta tres objetivos que puedas alcanzar. Los efectos adicionales que añadas se aplican a todos los ataques."
         }
       ]
