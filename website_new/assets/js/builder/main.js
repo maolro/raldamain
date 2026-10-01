@@ -399,7 +399,7 @@ new Vue({
                     if (modStr) head.push(`<b>${modStr}</b> para atacar`);
                     if (obj.range) head.push(obj.range);
                     if (obj.area) head.push(obj.area);
-                    if (dmgLabel) head.push(`<b>${dmgLabel}</b>`);
+                    if (dmgLabel) head.push(dmgLabel);
                     if (obj.duration) head.push(obj.duration);
                     const body = [head.join(', '), desc].filter(Boolean).join('. ');
                     if (body) formattedString += ': ' + body;
@@ -409,7 +409,7 @@ new Vue({
                     if (obj.range) descParts.push(obj.range);
                     if (obj.area) descParts.push(obj.area);
                     if (obj.duration) descParts.push(obj.duration);
-                    if (dmgLabel) desc = desc ? `<b>${dmgLabel}</b> — ` + desc : `<b>${dmgLabel}</b>`;
+                    if (dmgLabel) desc = desc ? `${dmgLabel} — ` + desc : dmgLabel;
                     if (modStr) desc = `<b>${modStr}</b> — ` + desc;
                     if (desc) descParts.push(desc);
                     if (descParts.length > 0)
