@@ -35,7 +35,10 @@
               "Defensa",
               "Mental"
             ],
-            "damage": "+1 dado"
+            "damage": "+1 dado",
+            "damage_tags": [
+              "Mental"
+            ]
           },
           "cost": "1 Acción"
         },
