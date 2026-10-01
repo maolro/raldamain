@@ -27,7 +27,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Ventaja en tiros de salvación de Voluntad y Resistencia Rango + 1 al daño Radiante y Fuego. Además, los Celestiales serán naturalmente amistosos hacia ti.",
+          "desc": "Obtienes Ventaja en tiros de salvación de Voluntad y Resistencia Rango + 1 al daño Radiante y Fuego (ya incluido). Además, los Celestiales serán naturalmente amistosos hacia ti.",
           "umbrales": [
             {
               "value": "RANGO+1",
