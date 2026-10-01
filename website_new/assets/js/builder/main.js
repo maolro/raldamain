@@ -1,3 +1,7 @@
+// Base combat values for the Impactos / Umbrales system
+const BASE_HITS = 6;      // Impactos every character starts with
+const BASE_UMBRAL = 2;    // Base "General" damage threshold
+
 // Define the main Vue instance
 new Vue({
     el: '#app',                // Bind Vue to the element with id="app" in index.html
@@ -42,6 +46,9 @@ new Vue({
         races: {},
         race: {},
         activeToggles: [],
+        copyLabel: 'Copiar ficha (Markdown)',
+        // The Mesa de Pruebas sets this so loading a file there never overwrites the Creador character
+        noPersist: !!window.STATBLOCK_NO_PERSIST,
     },
     methods: {
         updateMySpells(updatedMySpells) {
@@ -133,10 +140,9 @@ new Vue({
                                                 area: ability.area || '',
                                                 duration: ability.duration || '',
                                                 crit: ability.crit || '',
-                                                ...(ability.def    !== undefined ? { def:    ability.def    } : {}),
-                                                ...(ability.hp     !== undefined ? { hp:     ability.hp     } : {}),
-                                                ...(ability.vt     !== undefined ? { vt:     ability.vt     } : {}),
-                                                ...(ability.chi    !== undefined ? { chi:    ability.chi    } : {}),
+                                                ...(ability.umbrales !== undefined ? { umbrales: ability.umbrales } : {}),
+                                                ...(ability.hits     !== undefined ? { hits:     ability.hits     } : {}),
+                                                ...(ability.chi      !== undefined ? { chi:      ability.chi      } : {}),
                                                 ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
                                 ...(ability.resistances     !== undefined ? { resistances:     ability.resistances     } : {}),
                                 ...(ability.immunities      !== undefined ? { immunities:      ability.immunities      } : {}),
@@ -404,14 +410,18 @@ new Vue({
                     .replace(/<i>(.*?)<\/i>/g, "_$1_")
                     .replace(/<[^>]+>/g, '');
             };
-            let midSect = () => {
+            let progSect = () => {
                 let ms = [];
-                if (this.talstring)
-                    ms.push(`**Talentos:** ${this.talstring}`);
                 if (this.rkString)
                     ms.push(`**Rangos:** ${this.rkString}`);
+                if (this.talstring)
+                    ms.push(`**Talentos:** ${this.talstring}`);
                 if (this.arcString)
                     ms.push(`**Arquetipos:** ${this.arcString}`);
+                return ms.join('\n');
+            };
+            let midSect = () => {
+                let ms = [];
                 if (this.resistances.resistances)
                     ms.push(`**Resistencias:** ${this.resistances.resistances}`);
                 if (this.resistances.supresist)
@@ -422,27 +432,59 @@ new Vue({
                     ms.push(`**Vulnerabilidades:** ${this.resistances.vulnerabilities}`);
                 return ms.join('\n');
             }
-            // Construct the formatted text
+            const fs = this.finalStats;
+            const reactions = [toMd(this.defenseReactions), toMd(this.atbCatString("reactions"))].filter(Boolean).join('\n\n');
+            // Construct the formatted text (same layout as enemy / playtest hero stat blocks)
             return `
-# ${this.charactername} (Nivel ${this.level})\n
-****\n  
-**PV:** ${this.hp}\t**Vit:** ${this.vt}\t**Def:** ${this.def}\t**Crd:** ${this.san}\t**Chi:** ${this.reserves.chi}\n
-**FUE:** ${this.finalStats.str.value}\t**DES:** ${this.finalStats.dex.value}\t**CON:** ${this.finalStats.con.value}\t**INT:** ${this.finalStats.itl.value}\t**SAB:** ${this.finalStats.wis.value}\t**CAR:** ${this.finalStats.cha.value}\n
-****\n
-**Tiros de Salvación:** Físico ${this.savingThrows.fisico}, Voluntad ${this.savingThrows.voluntad}, Mental ${this.savingThrows.mental}\n
-${midSect()}
-**Acciones:** ${this.actions}
-****\n
+# ${this.charactername} (niv ${this.level})
+
+**Impactos:** ${this.hits}\t|\t**Chi:** ${this.reserves.chi}\t|\t**Cordura:** ${this.san}${this.shieldCounters > 0 ? `\t|\t**Escudos:** ${this.shieldCounters}` : ''}
+
+****
+
+**FUE** ${fs.str.value}\t**DES** ${fs.dex.value}\t**CON** ${fs.con.value}\t**INT** ${fs.itl.value}\t**SAB** ${fs.wis.value}\t**CAR** ${fs.cha.value}
+
+****
+
+${progSect()}
+
+****
+
+${[
+    `**Umbrales de Daño**: ${this.umbralString}`,
+    `**Tiros de Salvación:** FÍS ${this.savingThrows.fisico}, VOL ${this.savingThrows.voluntad}, MEN ${this.savingThrows.mental}`,
+    midSect(),
+    `**Velocidad:** Paso 1`,
+    `**Iniciativa:** ${this.initiative}`
+].filter(Boolean).join('\n')}
+
+****
+
+## Pasivas
+
 ${toMd(this.atbCatString("passive"))}
-****\n
+
+## Acciones (${this.actions})
+
 ${toMd(this.atbCatString("actions"))}
-****\n
-${toMd(this.atbCatString("reactions"))}
+
+## Reacciones
+
+${reactions}
         `;
         },
 
-        downloadCharacterInfo() {
-            const character = {
+        copyStatBlock() {
+            const text = this.formatCharacterInfo().trim() + '\n';
+            const done = (ok) => {
+                this.copyLabel = ok ? 'Ficha copiada ✓' : 'No se pudo copiar';
+                setTimeout(() => { this.copyLabel = 'Copiar ficha (Markdown)'; }, 2000);
+            };
+            if (navigator.clipboard) navigator.clipboard.writeText(text).then(() => done(true), () => done(false));
+            else done(false);
+        },
+        characterData() {
+            return {
                 name: this.charactername,
                 level: this.level,
                 race: this.race,
@@ -453,6 +495,14 @@ ${toMd(this.atbCatString("reactions"))}
                 equipment: this.equipment,
                 archetypes: this.myarch,
             };
+        },
+        // Keeps the Creador character in localStorage (read back on load and by the Mesa de Pruebas)
+        persistCharacter() {
+            if (this.noPersist) return;
+            try { localStorage.setItem("currentCharacter", JSON.stringify(this.characterData())); } catch (e) { }
+        },
+        downloadCharacterInfo() {
+            const character = this.characterData();
             const blob = new Blob([JSON.stringify(character, null, 2)], { type: 'application/json' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
@@ -476,6 +526,13 @@ ${toMd(this.atbCatString("reactions"))}
                 }
             }
             return res;
+        },
+        // Resolves a number or a rank formula ("RANGO+1") for the ability that owns it
+        evalRankValue(value, owner) {
+            if (typeof value === 'number') return value;
+            if (owner && owner.skill && owner.rank && owner.skill in this.ranks)
+                return Number.parseInt(this.replaceTag(String(value), owner.rank, owner.skill));
+            return Number.parseInt(value);
         },
         setRace(id) {
             if (id in this.races) {
@@ -561,9 +618,9 @@ ${toMd(this.atbCatString("reactions"))}
             if (t.adv_tags && t.adv_tags.length > 0) parts.push('+1d6 ' + t.adv_tags.join('/'));
             if (t.saves && t.saves.length > 0) parts.push('Salv: ' + t.saves.join(', '));
             if (t.damage) parts.push('Daño: ' + t.damage);
-            if (t.def_set != null) parts.push('DEF→' + t.def_set);
-            else if (t.def) parts.push('DEF+' + t.def);
-            if (t.vt_temp) parts.push('+' + t.vt_temp + 'VT');
+            if (t.umbrales && t.umbrales.length > 0)
+                parts.push('Umbral ' + t.umbrales.map(u => '+' + u.value + ' ' + (u.categories || 'General')).join(', '));
+            if (t.hits) parts.push('+' + t.hits + ' Imp');
             if (t.stat_min != null) parts.push('Est≥' + t.stat_min);
             if (t.ce) parts.push('CE+' + (typeof t.ce === 'string' && t.ce.toLowerCase() === 'rango' ? 'Rango' : t.ce));
             if (t.resistances && t.resistances.length > 0) parts.push('Res: ' + t.resistances.join(', '));
@@ -734,21 +791,53 @@ ${toMd(this.atbCatString("reactions"))}
         },
     },
     computed: {
-        hp: function () {
-            let hpstat;
-            if (this.finalStats.con.value != "-")
-                hpstat = this.finalStats.con.value;
-            else
-                hpstat = this.finalStats.cha.value;
-            return Math.floor(3 + (this.level - 1) / 3 + hpstat + this.sumAllKeys('hp', this.myatb.passive));
+        characterSnapshot: function () {
+            return JSON.stringify(this.characterData());
         },
-        vt: function () {
-            let vtstat;
-            if (this.finalStats.con.value != "-")
-                vtstat = this.finalStats.con.value;
-            else
-                vtstat = this.finalStats.cha.value;
-            return (2 + this.level / 1 + vtstat + this.sumAllKeys('vt', this.myatb.passive));
+        // Impactos: every character starts with 6, plus passive/toggle bonuses
+        hits: function () {
+            return BASE_HITS + this.sumAllKeys('hits', this.myatb.passive) + this.toggleBuffs.hits;
+        },
+        // Umbrales de Daño: "General" applies to all damage; each other category
+        // (Físico, Fuego, Magia…) stacks on top of General.
+        // Returns [{ value, categories: [..] }] sorted ascending, General first.
+        umbrales: function () {
+            const bonus = {};
+            const add = (list, owner) => {
+                for (const u of (list || [])) {
+                    const val = this.evalRankValue(u.value, owner);
+                    if (isNaN(val)) continue;
+                    for (const cat of String(u.categories || 'General').split(',').map(c => c.trim()).filter(Boolean))
+                        bonus[cat] = (bonus[cat] || 0) + val;
+                }
+            };
+            // Armor (legacy saved characters may still carry "def" → Físico)
+            const armor = this.equipment.armor || {};
+            if (armor.umbrales) add(armor.umbrales);
+            else if (armor.def != null) add([{ value: armor.def, categories: 'Físico' }]);
+            for (const ab of this.myatb.passive) add(ab.umbrales, ab);
+            for (const ab of this.toggleableAbilities)
+                if (this.isToggleActive(ab.toggle.label)) add(ab.toggle.umbrales, ab);
+
+            const general = BASE_UMBRAL + (bonus['General'] || 0);
+            const byValue = {};
+            for (const cat in bonus) {
+                if (cat === 'General') continue;
+                const v = general + bonus[cat];
+                if (v === general) continue;
+                (byValue[v] || (byValue[v] = [])).push(cat);
+            }
+            return [{ value: general, categories: ['General'] }].concat(
+                Object.keys(byValue).map(Number).sort((a, b) => a - b)
+                    .map(v => ({ value: v, categories: byValue[v] })));
+        },
+        umbralString: function () {
+            return this.umbrales.map(u => `${u.value} (${u.categories.join(', ')})`).join(' | ');
+        },
+        initiative: function () {
+            const dex = this.finalStats.dex.value === '-' ? 0 : this.finalStats.dex.value;
+            const v = dex + this.getRank('reflejos');
+            return v >= 0 ? '+' + v : String(v);
         },
         san: function () {
             if (this.finalStats.itl.value == "-")
@@ -1073,16 +1162,6 @@ ${toMd(this.atbCatString("reactions"))}
             }
             return statsRes;
         },
-        def: function () {
-            let res = 0;
-            if (this.equipment.armor.def != null)
-                res += this.equipment.armor.def;
-            res += this.sumAllKeys('def', this.myatb.passive);
-            res += this.toggleBuffs.def;
-            if (this.toggleBuffs.def_set !== null && res < this.toggleBuffs.def_set)
-                res = this.toggleBuffs.def_set;
-            return res;
-        },
         actions: function () {
             return 3 + this.sumAllKeys('actions', this.myatb.passive);
         },
@@ -1168,8 +1247,7 @@ ${toMd(this.atbCatString("reactions"))}
         },
         toggleBuffs: function () {
             const buffs = {
-                adv: [], adv_tags: [], saves: [],
-                def: 0, def_set: null, vt_temp: 0,
+                adv: [], adv_tags: [], saves: [], hits: 0,
                 stat_min: null, stat_min_list: [], ce: 0,
                 resistances: [], immunities: [], damage: []
             };
@@ -1179,9 +1257,7 @@ ${toMd(this.atbCatString("reactions"))}
                 if (t.adv) t.adv.forEach(a => { if (!buffs.adv.includes(a)) buffs.adv.push(a); });
                 if (t.adv_tags) t.adv_tags.forEach(a => { if (!buffs.adv_tags.includes(a)) buffs.adv_tags.push(a); });
                 if (t.saves) t.saves.forEach(s => { if (!buffs.saves.includes(s)) buffs.saves.push(s); });
-                if (t.def) buffs.def += t.def;
-                if (t.def_set != null && (buffs.def_set === null || t.def_set > buffs.def_set)) buffs.def_set = t.def_set;
-                if (t.vt_temp) buffs.vt_temp += t.vt_temp;
+                if (t.hits) buffs.hits += t.hits;
                 if (t.stat_min != null && (buffs.stat_min === null || t.stat_min > buffs.stat_min)) buffs.stat_min = t.stat_min;
                 if (t.stat_min_list) t.stat_min_list.forEach(s => { if (!buffs.stat_min_list.includes(s)) buffs.stat_min_list.push(s); });
                 if (t.ce) {
@@ -1207,9 +1283,14 @@ ${toMd(this.atbCatString("reactions"))}
         this.getData("races", '/data/builder/races.json');
         this.getData("divinepatrons", '/data/builder/divine-patrons.json');
         this.getData("arcanespecs", '/data/builder/arcane-specs.json');
-        if (localStorage.getItem("currentCharacter"))
-            this.loadCharacter(JSON.parse(localStorage.getItem("currentCharacter")));
+        let saved = null;
+        try { saved = JSON.parse(localStorage.getItem("currentCharacter")); } catch (e) { }
+        if (saved)
+            this.loadCharacter(saved);
         else
             this.getData("mytalents", '/data/builder/talents.json');
+    },
+    watch: {
+        characterSnapshot: function () { this.persistCharacter(); },
     }
 });

@@ -2,6 +2,7 @@
   "id": "magia_divina",
   "title": "Magia Divina",
   "category": "Religión",
+  "draft": true,
   "image": "magia_divina.jpg",
   "stats": [
     "Sabiduría",
@@ -18,6 +19,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Milagro menor",
@@ -50,6 +52,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango I de una magia relacionada con tu dios (ganan categoría Divina).",
       "abilities": [
         {
@@ -81,6 +84,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango II de una magia relacionada con tu dios.",
       "abilities": [
         {
@@ -108,6 +112,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango III de tu dios. Daño Divino pasa a d8. Hechizos Rango I cuestan -1 acción.",
       "abilities": [
         {
@@ -138,6 +143,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango IV de tu dios.",
       "abilities": [
         {
@@ -171,6 +177,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango V de tu dios. Daño Divino pasa a d10. Hechizos Rango III cuestan -1 acción.",
       "abilities": [
         {

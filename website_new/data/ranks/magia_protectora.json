@@ -2,6 +2,7 @@
   "id": "magia_protectora",
   "title": "Magia Protectora",
   "category": "Arcana",
+  "draft": true,
   "image": "magia_protectora.jpg",
   "stats": [
     "Inteligencia",
@@ -21,6 +22,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Armadura del Mago",
@@ -63,6 +65,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "abilities": [
         {
           "name": "Eliminar Magia",
@@ -109,6 +112,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Hechizos Protectores Rango I reducen coste -1 acción.",
       "abilities": [
         {
@@ -151,6 +155,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "passive": "Hechizos Protectores Rango II reducen coste -1 acción.",
       "abilities": [
         {
@@ -197,6 +202,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Hechizos Protectores Rango III reducen coste -1 acción.",
       "abilities": [
         {
@@ -243,6 +249,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Hechizos Protectores Rango IV reducen coste -1 acción.",
       "abilities": [
         {

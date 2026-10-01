@@ -2,6 +2,7 @@
   "id": "magia_tormenta",
   "title": "Magia de Tormenta",
   "category": "Elementalismo",
+  "draft": true,
   "image": "magia_tormenta.jpg",
   "stats": [
     "Carisma",
@@ -17,6 +18,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Toque Chispeante",
@@ -62,6 +64,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "passive": "Aumenta tu estadística de Destreza por 1.",
       "abilities": [
         {
@@ -106,6 +109,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Todos tus hechizos de Tormenta sustituyen sus dados de daño por d8.",
       "abilities": [
         {
@@ -153,6 +157,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "passive": "Aumenta tu estadística de Carisma por 1.",
       "abilities": [
         {
@@ -199,6 +204,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Todos tus hechizos de Tormenta sustituyen sus dados de daño por d10.",
       "abilities": [
         {
@@ -248,6 +254,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Aumenta tu estadística de Inteligencia por 1.",
       "abilities": [
         {

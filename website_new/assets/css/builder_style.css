@@ -180,22 +180,7 @@
     color: var(--accent-gold);
 }
 
-/* Combat stats grid */
-.preview-stats-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-.preview-stats-row .col {
-    flex: 1;
-    min-width: 0;
-    text-align: center;
-    padding: 4px;
-    background-color: rgba(255, 242, 0, 0.03);
-    border-radius: 4px;
-    font-size: 0.85rem;
-}
+/* Combat stats grid, Umbrales, etc. → assets/css/statblock.css */
 
 /* ============================================
    MINUSPLUSFIELD (dark theme)

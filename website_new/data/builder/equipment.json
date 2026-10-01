@@ -1,9 +1,9 @@
 {
     "armor": {
-        "light": {"name": "Ligera","def":2, "penalty":0, "eqab": ""},
-        "medium": {"name": "Media", "def":4, "penalty":-2, "eqab": ""},
-        "heavy": {"name": "Pesada", "def":6, "penalty":-4, "eqab": ""},
-        "full": {"name": "Completa", "def":8, "penalty":-6, "eqab": ""}
+        "light": {"name": "Ligera","umbrales": [{"value": 2, "categories": "Físico"}], "penalty":0, "eqab": ""},
+        "medium": {"name": "Media", "umbrales": [{"value": 4, "categories": "Físico"}], "penalty":-2, "eqab": ""},
+        "heavy": {"name": "Pesada", "umbrales": [{"value": 6, "categories": "Físico"}], "penalty":-4, "eqab": ""},
+        "full": {"name": "Completa", "umbrales": [{"value": 8, "categories": "Físico"}], "penalty":-6, "eqab": ""}
     },
     "weapons":{
         "arco":              {"name": "Arco",              "eqab": "arco",              "style": "ranged"},

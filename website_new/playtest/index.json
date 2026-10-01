@@ -1,0 +1,452 @@
+[
+  {
+    "path": "/playtest/modules/tier_1/heroes/barbaro.md",
+    "name": "Bárbaro (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/bardo.md",
+    "name": "Bardo (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/cazador.md",
+    "name": "Cazador (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/clerigo_celestial.md",
+    "name": "Clérigo Celestial (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/druida.md",
+    "name": "Druida (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/elementalista.md",
+    "name": "Elementalista (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/luchador.md",
+    "name": "Luchador (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/mago.md",
+    "name": "Mago (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/monje.md",
+    "name": "Monje (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/heroes/paladin.md",
+    "name": "Paladín (niv 2)",
+    "tier": 1,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/engendro_abisal.md",
+    "name": "Engendro Abisal (niv 2)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/espia.md",
+    "name": "Espía (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/familiar_abisal.md",
+    "name": "Familiar Abisal (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/fanatico_abisal.md",
+    "name": "Fanático Abisal (niv 7)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/guerrero_abisal.md",
+    "name": "Guerrero Abisal (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/lagarto_gigante.md",
+    "name": "Lagarto Gigante (niv 2)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/mago_aprendiz.md",
+    "name": "Mago Aprendiz (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/osgo.md",
+    "name": "Osgo (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/perrotrasgo.md",
+    "name": "Perro trasgo (niv 0)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/trasgo.md",
+    "name": "Trasgo (Nivel 0)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/trasgo_cantor.md",
+    "name": "Trasgo Cantor (Nivel 2)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/trasgo_chaman.md",
+    "name": "Trasgo Chamán (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/trasgo_comando.md",
+    "name": "Trasgo Comando (Nivel 2)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/trasgo_jefe.md",
+    "name": "Trasgo Jefe (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_1/villains/veterano.md",
+    "name": "Veterano (niv 5)",
+    "tier": 1,
+    "group": "Villanos"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/barbaro.md",
+    "name": "Bárbaro (niv 5)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/bardo.md",
+    "name": "Bardo (niv 5)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/cazador.md",
+    "name": "Cazador (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/clerigo_celestial.md",
+    "name": "Clérigo Celestial (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/druida.md",
+    "name": "Druida (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/elementalista.md",
+    "name": "Elementalista (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/luchador.md",
+    "name": "Luchador (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/mago.md",
+    "name": "Mago (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/monje.md",
+    "name": "Monje (niv 2)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_2/heroes/paladin.md",
+    "name": "Paladín (niv 5)",
+    "tier": 2,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/barbaro.md",
+    "name": "Bárbaro (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/bardo.md",
+    "name": "Bardo (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/cazador.md",
+    "name": "Cazador (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/clerigo_celestial.md",
+    "name": "Clérigo Celestial (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/druida.md",
+    "name": "Druida (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/elementalista.md",
+    "name": "Elementalista (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/luchador.md",
+    "name": "Luchador (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/mago.md",
+    "name": "Mago (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/monje.md",
+    "name": "Monje (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_3/heroes/paladin.md",
+    "name": "Paladín (niv 2)",
+    "tier": 3,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/barbaro.md",
+    "name": "Bárbaro (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/bardo.md",
+    "name": "Bardo (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/cazador.md",
+    "name": "Cazador (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/clerigo_celestial.md",
+    "name": "Clérigo Celestial (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/druida.md",
+    "name": "Druida (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/elementalista.md",
+    "name": "Elementalista (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/luchador.md",
+    "name": "Luchador (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/mago.md",
+    "name": "Mago (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/monje.md",
+    "name": "Monje (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_4/heroes/paladin.md",
+    "name": "Paladín (niv 2)",
+    "tier": 4,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/barbaro.md",
+    "name": "Bárbaro (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/bardo.md",
+    "name": "Bardo (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/cazador.md",
+    "name": "Cazador (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/clerigo_celestial.md",
+    "name": "Clérigo Celestial (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/druida.md",
+    "name": "Druida (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/elementalista.md",
+    "name": "Elementalista (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/luchador.md",
+    "name": "Luchador (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/mago.md",
+    "name": "Mago (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/monje.md",
+    "name": "Monje (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_5/heroes/paladin.md",
+    "name": "Paladín (niv 2)",
+    "tier": 5,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/barbaro.md",
+    "name": "Bárbaro (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/bardo.md",
+    "name": "Bardo (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/cazador.md",
+    "name": "Cazador (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/clerigo_celestial.md",
+    "name": "Clérigo Celestial (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/druida.md",
+    "name": "Druida (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/elementalista.md",
+    "name": "Elementalista (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/luchador.md",
+    "name": "Luchador (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/mago.md",
+    "name": "Mago (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/monje.md",
+    "name": "Monje (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  },
+  {
+    "path": "/playtest/modules/tier_6/heroes/paladin.md",
+    "name": "Paladín (niv 2)",
+    "tier": 6,
+    "group": "Héroes"
+  }
+]

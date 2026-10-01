@@ -2,6 +2,7 @@
   "id": "nigromancia",
   "title": "Nigromancia",
   "category": "Ocultismo",
+  "draft": true,
   "image": "nigromancia.jpg",
   "stats": [
     "Carisma",
@@ -18,6 +19,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Toque Necrótico",
@@ -62,6 +64,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "abilities": [
         {
           "name": "Vínculo Parasítico",
@@ -107,6 +110,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d8.",
       "abilities": [
         {
@@ -150,6 +154,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "abilities": [
         {
           "name": "Crear no-muerto Superior",
@@ -193,6 +198,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d10.",
       "abilities": [
         {
@@ -238,6 +244,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "abilities": [
         {
           "name": "Apocalipsis de la No-muerte",

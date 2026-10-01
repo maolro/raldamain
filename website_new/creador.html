@@ -17,6 +17,7 @@
     <!-- Builder styles (load AFTER Bootstrap to override) -->
     <link rel="stylesheet" href="./assets/css/builder_style.css">
     <link rel="stylesheet" href="./assets/css/builder_overrides.css">
+    <link rel="stylesheet" href="./assets/css/statblock.css">
 
     <!-- JS dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -38,6 +39,7 @@
     <script src="./assets/js/builder/v-talpage.js" type="text/javascript"></script>
     <script src="./assets/js/builder/v-spellpage.js" type="text/javascript"></script>
     <script src="./assets/js/builder/v-statpage.js" type="text/javascript"></script>
+    <script src="./assets/js/builder/v-statblock.js" type="text/javascript"></script>
     <!--
     <script src="./assets/js/builder/v-archpage.js" type="text/javascript"></script>
     --->
@@ -120,66 +122,12 @@
 
             <!-- RIGHT: Character preview -->
             <aside class="builder-preview">
-                <div class="text-justify">
-                    <div class="text-center mb-2">
-                        <h2>{{ charactername }}</h2>
-                        <span style="color: var(--text-muted);">Nivel {{ level }}</span>
+                <v-statblock class="text-justify">
+                    <div class="text-center mt-3 sb-actions">
+                        <button class="sb-copy-btn" @click="copyStatBlock">{{ copyLabel }}</button>
+                        <a class="sb-copy-btn" href="/mesa.html?load=creador" target="_blank" rel="noopener">🎲 Mesa de Pruebas</a>
                     </div>
-                    <hr>
-                    <div class="preview-stats-row mb-2">
-                        <div class="col"><b>PV</b><br>{{ hp }}</div>
-                        <div class="col"><b>VT</b><br>{{ vt }}<span v-if="toggleBuffs.vt_temp > 0" style="color:#28a745;font-size:11px"> +{{ toggleBuffs.vt_temp }}</span></div>
-                        <div class="col"><b>Crd</b><br>{{ san }}</div>
-                        <div class="col"><b>DEF</b><br>{{ def }}</div>
-                        <div class="col"><b>Chi</b><br>{{ reserves.chi }}</div>
-                        <div class="col"><b>CE</b><br>{{ shieldCounters }}</div>
-                    </div>
-                    <div class="preview-stats-row mb-2">
-                        <div v-for="(value, name) in finalStats" class="col">
-                            <b>{{ value.name }}</b><br>{{ value.value }}
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="mb-1"><b>Tiros de Salvación: </b>Físico {{ savingThrows.fisico }}, Voluntad {{ savingThrows.voluntad }}, Mental {{ savingThrows.mental }}</div>
-                    <div v-if="toggleableAbilities.length > 0" class="mb-2 mt-1">
-                        <small style="font-weight:bold">Estados de combate:</small><br>
-                        <div v-for="ab in toggleableAbilities" :key="ab.toggle.label"
-                            style="display:inline-block;margin:0 4px 6px 0;vertical-align:top;text-align:center">
-                            <button class="btn btn-sm"
-                                :style="isToggleActive(ab.toggle.label) ? 'background:#c0392b;color:#fff;border-color:#c0392b;' : 'background:transparent;border:1px solid #888;color:inherit'"
-                                @click="toggleAbility(ab.toggle.label)">
-                                {{ ab.toggle.label }}
-                            </button>
-                            <div v-if="toggleBenefitText(ab)"
-                                style="font-size:9px;color:#666;max-width:120px;line-height:1.3;word-break:break-word;margin-top:1px">
-                                {{ toggleBenefitText(ab) }}
-                            </div>
-                        </div>
-                        <div v-if="toggleBuffs.damage.length > 0" style="margin-top:2px">
-                            <small><b>Daño extra activo:</b>
-                                <span v-for="d in toggleBuffs.damage" :key="d"
-                                    style="display:inline-block;background:#c0392b;color:#fff;border-radius:3px;padding:0 5px;margin:1px;font-size:11px">{{ d }}</span>
-                            </small>
-                        </div>
-                    </div>
-                    <hr>
-                    <div v-if="talstring" class="mb-1"><b>Talentos: </b>{{ talstring }}</div>
-                    <div v-if="rkString" class="mb-1"><b>Rangos: </b>{{ rkString }}</div>
-                    <div v-if="arcString" class="mb-1"><b>Arquetipos: </b>{{ arcString }}</div>
-                    <hr>
-                    <div v-if="resistances.resistances" class="mb-1"><b>Resistencias: </b>{{ resistances.resistances }}</div>
-                    <div v-if="resistances.supresist" class="mb-1"><b>Resistencias Superiores: </b>{{ resistances.supresist }}</div>
-                    <div v-if="resistances.immunities" class="mb-1"><b>Inmunidades: </b>{{ resistances.immunities }}</div>
-                    <div v-if="resistances.vulnerabilities" class="mb-1"><b>Vulnerabilidades: </b>{{ resistances.vulnerabilities }}</div>
-                    <div class="mb-1"><b>Acciones: </b>{{ actions }}</div>
-                    <hr>
-                    <div v-html="atbCatString('passive')"></div>
-                    <hr>
-                    <div v-html="atbCatString('actions')"></div>
-                    <hr>
-                    <div v-html="defenseReactions"></div>
-                    <div v-if="atbCatString('reactions')" style="margin-top:8px" v-html="atbCatString('reactions')"></div>
-                </div>
+                </v-statblock>
             </aside>
         </div>
     </section>

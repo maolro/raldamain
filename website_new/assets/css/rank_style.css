@@ -152,6 +152,81 @@
     margin-right: 5px;
 }
 
+/* Umbral / Impactos pills on ability cards */
+.stat-pill.umbral-pill {
+    border-color: #6a5410;
+    background: rgba(255, 242, 0, 0.04);
+}
+
+.stat-pill.umbral-pill span {
+    color: var(--accent-gold);
+}
+
+/* Draft ranks: "En construcción" */
+.meta-badge.draft-badge {
+    border-color: #e07b39;
+    color: #f0a060;
+}
+
+.under-construction {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border: 2px dashed #6a4a10;
+    border-radius: 8px;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(224, 123, 57, 0.04) 0 16px,
+        transparent 16px 32px
+    );
+}
+
+.uc-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.uc-title {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.uc-text {
+    color: #ccc;
+    max-width: 560px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+.under-construction.under-construction-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 1.25rem 1rem;
+    text-align: left;
+}
+
+.under-construction-sm .uc-icon {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.under-construction-sm .uc-text {
+    margin: 0;
+}
+
+.uc-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-family: var(--font-heading);
+}
+
+.uc-link:hover {
+    text-decoration: underline;
+}
+
 /* Status Effect Links */
 .status-effect-link {
     color: #ff9966;

@@ -2,6 +2,7 @@
   "id": "ascendencia_akhasica",
   "title": "Ascendencia Akhásica",
   "category": "Ascendencias",
+  "draft": true,
   "image": "ascendencia_akhasica.jpg",
   "stats": [
     "Inteligencia",
@@ -17,6 +18,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Vínculo Akhásico",
@@ -40,6 +42,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "passive": "Incrementa tu estadística de INT y su limitador máximo en +1.",
       "abilities": [
         {
@@ -66,6 +69,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "passive": "Aprendes 2 hechizos (Mentales o Arcanos) adicionales de Rango II o menos (usan Chi).",
       "abilities": [
         {
@@ -92,6 +96,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "passive": "Incrementa tu estadística de SAB y su limitador en +1.",
       "abilities": [
         {
@@ -118,6 +123,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "passive": "Aprendes 2 hechizos (Mentales o Arcanos) adicionales de Rango III o menos (usan Chi).",
       "abilities": [
         {
@@ -141,6 +147,7 @@
     {
       "rank": "VI",
       "title": "Ascendido",
+      "draft": true,
       "passive": "Incrementa tu estadística de CAR y su limitador en +1.",
       "abilities": [
         {

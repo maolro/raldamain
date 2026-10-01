@@ -1,0 +1,211 @@
+/* ============================================
+   CHARACTER STAT BLOCK (v-statblock)
+   Used by the Creador preview and the Mesa de Pruebas
+   ============================================ */
+
+.statblock-char h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.statblock-char hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 0.75rem 0;
+}
+
+.statblock-char b {
+    color: var(--accent-gold);
+}
+
+/* Bootstrap-like helpers, so the block also works on pages without Bootstrap */
+.statblock-char .text-center { text-align: center; }
+.statblock-char .mb-1 { margin-bottom: 0.25rem; }
+.statblock-char .mb-2 { margin-bottom: 0.5rem; }
+.statblock-char .mt-1 { margin-top: 0.25rem; }
+.statblock-char .mt-3 { margin-top: 1rem; }
+
+/* Combat stats grid */
+.preview-stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.preview-stats-row .col {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    padding: 4px;
+    background-color: rgba(255, 242, 0, 0.03);
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.preview-stats-row .col.sb-hits {
+    background-color: rgba(231, 106, 106, 0.08);
+}
+
+.sb-hits-value {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e76a6a;
+    line-height: 1.2;
+}
+
+.sb-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0.4rem;
+}
+
+.sb-pills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Umbrales de Daño: label on its own line, then one big box per threshold */
+.sb-block {
+    margin-bottom: 0.7rem;
+}
+
+.sb-block-label {
+    font-weight: bold;
+    color: var(--accent-gold);
+    margin-bottom: 0.35rem;
+}
+
+.sb-umbrales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sb-umbral {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 7px;
+    padding: 6px 14px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.sb-umbral-value {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: var(--text-main);
+    line-height: 1;
+}
+
+.sb-umbral-cat {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.sb-umbral.sb-umbral-general {
+    border-color: var(--accent-gold);
+    background: rgba(255, 242, 0, 0.06);
+}
+
+.sb-umbral.sb-umbral-general .sb-umbral-value {
+    color: var(--accent-gold);
+}
+
+.sb-save {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.sb-save-label {
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.sb-section-title {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1rem;
+    border-bottom: 1px solid #5c4010;
+    padding-bottom: 3px;
+    margin: 1rem 0 0.5rem;
+}
+
+.sb-toggle-btn {
+    background: transparent;
+    border: 1px solid #888;
+    color: inherit;
+    border-radius: 4px;
+    padding: 2px 9px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.sb-toggle-btn.active {
+    background: #c0392b;
+    border-color: #c0392b;
+    color: #fff;
+}
+
+.sb-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sb-copy-btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sb-copy-btn:hover {
+    background: rgba(255, 242, 0, 0.08);
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+/* Clickable dice expressions (Mesa de Pruebas) */
+.rollable {
+    cursor: pointer;
+    border-bottom: 1px dotted var(--accent-gold);
+    border-radius: 2px;
+    transition: background 0.15s;
+}
+
+.rollable:hover {
+    background: rgba(255, 242, 0, 0.15);
+}
+
+.sb-save.rollable {
+    border-bottom: 1px solid #444;
+}
+
+.sb-save.rollable:hover {
+    border-color: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+    .preview-stats-row .col {
+        font-size: 0.75rem;
+        padding: 3px 2px;
+    }
+}

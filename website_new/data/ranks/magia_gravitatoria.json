@@ -2,8 +2,12 @@
   "id": "magia_gravitatoria",
   "title": "Magia Gravitatoria",
   "category": "Ocultismo",
+  "draft": true,
   "image": "magia_gravitatoria.jpg",
-  "stats": ["Inteligencia", "Chi"],
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
   "description": "Controlas las fuerzas fundamentales para manipular la gravedad. Atraes, repeles y aplastas a tus enemigos o alteras la densidad de los objetos.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -14,10 +18,15 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Pulso Gravitatorio",
-          "tags": ["Gravedad", "Maniobra", "Físico"],
+          "tags": [
+            "Gravedad",
+            "Maniobra",
+            "Físico"
+          ],
           "cost": "1 acción",
           "range": "Cercano",
           "crit": "Objetivo sufre Herido-1.",
@@ -26,7 +35,11 @@
         },
         {
           "name": "Lanzamiento",
-          "tags": ["Gravedad", "Maniobra", "Físico"],
+          "tags": [
+            "Gravedad",
+            "Maniobra",
+            "Físico"
+          ],
           "cost": "1 acción",
           "range": "Medio",
           "crit": "Objetivo sufre Herido-1.",
@@ -35,7 +48,11 @@
         },
         {
           "name": "Pozo de Gravedad",
-          "tags": ["Gravedad", "Sostenido", "Maniobra"],
+          "tags": [
+            "Gravedad",
+            "Sostenido",
+            "Maniobra"
+          ],
           "cost": "2 acciones, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
@@ -49,10 +66,15 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Alterar Peso",
-          "tags": ["Gravedad", "Duradero", "Físico"],
+          "tags": [
+            "Gravedad",
+            "Duradero",
+            "Físico"
+          ],
           "cost": "1 Acción, 1 chi",
           "range": "Medio",
           "duration": "Concentración",
@@ -61,7 +83,11 @@
         },
         {
           "name": "Ancla Gravitatoria",
-          "tags": ["Gravedad", "Maniobra", "Duradero"],
+          "tags": [
+            "Gravedad",
+            "Maniobra",
+            "Duradero"
+          ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "duration": "Concentración",
@@ -71,7 +97,11 @@
         },
         {
           "name": "Campo de Repulsión",
-          "tags": ["Gravedad", "Defensivo", "Duradero"],
+          "tags": [
+            "Gravedad",
+            "Defensivo",
+            "Duradero"
+          ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
@@ -84,11 +114,16 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "passive": "Convierte todos los dados de daño en d8.",
       "abilities": [
         {
           "name": "Agarre Gravitatorio",
-          "tags": ["Gravedad", "Agarre", "Duradero"],
+          "tags": [
+            "Gravedad",
+            "Agarre",
+            "Duradero"
+          ],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "duration": "Concentración",
@@ -98,7 +133,10 @@
         },
         {
           "name": "Burlar la Gravedad",
-          "tags": ["Gravedad", "Duradero"],
+          "tags": [
+            "Gravedad",
+            "Duradero"
+          ],
           "cost": "2 chi",
           "duration": "Concentración",
           "desc": "Obtienes velocidad de vuelo 1 y Ventaja en tiros de Esquiva. Puedes emplear tu tiro de Magia Gravitatoria para todos tus tiros de Esquiva o tus tiros de Salvación Físicos.",
@@ -106,7 +144,11 @@
         },
         {
           "name": "Bomba de Gravedad",
-          "tags": ["Gravedad", "Ataque", "Área"],
+          "tags": [
+            "Gravedad",
+            "Ataque",
+            "Área"
+          ],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "area": "Radio corto",
@@ -120,10 +162,15 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "abilities": [
         {
           "name": "Vórtice Gravitatorio",
-          "tags": ["Gravedad", "Defensivo", "Duradero"],
+          "tags": [
+            "Gravedad",
+            "Defensivo",
+            "Duradero"
+          ],
           "cost": "2 acciones, 2 chi",
           "area": "Radio pequeño",
           "duration": "Concentración",
@@ -132,7 +179,10 @@
         },
         {
           "name": "Distorsión Gravitatoria",
-          "tags": ["Gravedad", "Ambiental"],
+          "tags": [
+            "Gravedad",
+            "Ambiental"
+          ],
           "cost": "2 acciones, 2 chi",
           "area": "Esfera grande",
           "duration": "6 Rondas",
@@ -141,7 +191,11 @@
         },
         {
           "name": "Dilatación Temporal",
-          "tags": ["Gravedad", "Duradero", "Maniobra"],
+          "tags": [
+            "Gravedad",
+            "Duradero",
+            "Maniobra"
+          ],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
@@ -155,11 +209,15 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "passive": "Convierte todos los dados de daño en d10.",
       "abilities": [
         {
           "name": "Invertir la Gravedad",
-          "tags": ["Gravedad", "Área"],
+          "tags": [
+            "Gravedad",
+            "Área"
+          ],
           "cost": "2 acciones, 3 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
@@ -169,7 +227,10 @@
         },
         {
           "name": "Compresión Gravitatoria",
-          "tags": ["Gravedad", "Ataque"],
+          "tags": [
+            "Gravedad",
+            "Ataque"
+          ],
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Concentración",
@@ -179,7 +240,11 @@
         },
         {
           "name": "Empuje Todopoderoso",
-          "tags": ["Gravedad", "Ataque", "Área"],
+          "tags": [
+            "Gravedad",
+            "Ataque",
+            "Área"
+          ],
           "cost": "2 acciones, 3 chi",
           "range": "Lejano",
           "desc": "Desatas una onda de choque masiva que inflige 4d10 + INT daño Fuerza y lanza a los afectados por los aires. Este ataque destruirá todas las estructuras frágiles en el área afectada, creando así terreno difícil y enterrando a los enemigos bajo escombros (quienes deben tener éxito en un tiro de salvación Físico o sufrirán 6d10 daño Contundente y quedarán *Agarrados*).",
@@ -190,10 +255,15 @@
     {
       "rank": "VI",
       "title": "Ascendido",
+      "draft": true,
       "abilities": [
         {
           "name": "Agujero Negro",
-          "tags": ["Gravedad", "Duradero", "Ambiental"],
+          "tags": [
+            "Gravedad",
+            "Duradero",
+            "Ambiental"
+          ],
           "cost": "2 acciones, 5 chi",
           "range": "Lejano",
           "area": "Esfera pequeña",

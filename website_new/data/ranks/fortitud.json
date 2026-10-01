@@ -2,6 +2,7 @@
   "id": "fortitud",
   "title": "Fortitud",
   "category": "Combate",
+  "draft": true,
   "image": "fortitud.jpg",
   "stats": [
     "Constitución",
@@ -21,6 +22,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Armadura Natural",
@@ -28,9 +30,13 @@
             "Innata",
             "Pasiva"
           ],
-          "def": "RANGO+1",
-          "hp": "RANGO+1",
-          "desc": "Tus PV máximos y tu DEF aumentan por un valor igual a tu Rango + 1. Este bonificador se acumula con armaduras."
+          "desc": "Tus PV máximos y tu DEF aumentan por un valor igual a tu Rango + 1. Este bonificador se acumula con armaduras.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "General"
+            }
+          ]
         },
         {
           "name": "Segundo Aliento",
@@ -47,6 +53,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Duro de Pelar",
@@ -70,6 +77,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "abilities": [
         {
           "name": "Hasta la Muerte",
@@ -92,6 +100,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "abilities": [
         {
           "name": "Muro Viviente",
@@ -123,6 +132,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "abilities": [
         {
           "name": "Sanación Rápida",

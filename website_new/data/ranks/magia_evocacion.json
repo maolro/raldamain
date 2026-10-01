@@ -2,6 +2,7 @@
   "id": "magia_evocacion",
   "title": "Magia de Evocación",
   "category": "Arcana",
+  "draft": true,
   "image": "magia_evocacion.jpg",
   "stats": [
     "Inteligencia",
@@ -23,6 +24,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Rayo Arcano",
@@ -67,6 +69,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango I de tu Especialidad Arcana.",
       "abilities": [
         {
@@ -104,6 +107,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Tus hechizos de Evocación convierten daño a d8. Rango I cuesta -1 acción. Aprendes dos hechizos de Rango II de tu Especialidad.",
       "abilities": [
         {
@@ -136,6 +140,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "passive": "Hechizos Rango II cuestan -1 acción. Aprendes dos hechizos de Rango III de tu Especialidad.",
       "abilities": [
         {
@@ -171,6 +176,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Tus hechizos de Evocación convierten daño a d10. Rango III cuesta -1 acción. Aprendes dos hechizos de Rango IV de tu Especialidad.",
       "abilities": [
         {
@@ -203,6 +209,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Aprendes dos hechizos de Rango V de cualquier magia elemental.",
       "abilities": [
         {

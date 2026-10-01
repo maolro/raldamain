@@ -2,6 +2,7 @@
   "id": "magia_fuego",
   "title": "Magia de Fuego",
   "category": "Elementalismo",
+  "draft": true,
   "image": "magia_fuego.jpg",
   "stats": [
     "Carisma",
@@ -18,6 +19,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Llamarada",
@@ -51,7 +53,10 @@
             "Innata",
             "Pasiva"
           ],
-          "resistances": ["Fuego", "Frío"],
+          "resistances": [
+            "Fuego",
+            "Frío"
+          ],
           "desc": "Obtienes Resistencia al daño Fuego y Frío, además de Inmunidad al calor y frío extremo. Tienes también visión térmica a distancia media."
         }
       ]
@@ -59,6 +64,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "passive": "Aumenta estadística de Destreza por 1",
       "abilities": [
         {
@@ -103,6 +109,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "abilities": [
         {
           "name": "Erupción Abrasadora",
@@ -129,7 +136,9 @@
           "empower": "Te mueves un paso y reduces el daño de un ataque enemigo a la mitad. Cuesta 1 reacción.",
           "toggle": {
             "label": "Propulsión",
-            "adv": ["Esquiva"]
+            "adv": [
+              "Esquiva"
+            ]
           }
         },
         {
@@ -146,6 +155,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "passive": "Aumenta estadística de Carisma por 1",
       "abilities": [
         {
@@ -185,8 +195,12 @@
           "empower": "El siguiente hechizo de fuego cuesta -1 acción.",
           "toggle": {
             "label": "Maestro de las Llamas",
-            "adv": ["Magia"],
-            "adv_tags": ["Fuego"],
+            "adv": [
+              "Magia"
+            ],
+            "adv_tags": [
+              "Fuego"
+            ],
             "damage": "+1 dado",
             "ce": "rango"
           }
@@ -196,6 +210,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "passive": "Los dados de daño base aumentan a d10.",
       "abilities": [
         {
@@ -238,7 +253,13 @@
           "desc": "Te transformas en fuego. Obtienes Inmunidad a efectos Físicos no-mágicos, Agarres, Mentales, Fuego y Aflicciones, pero pierdes toda tu Defensa y recibes Vulnerabilidad a efectos de Agua y Hielo. Esta habilidad puede emplearse como reacción para evitar automáticamente un efecto.",
           "toggle": {
             "label": "Llama Viviente",
-            "immunities": ["Físico no-mágico", "Agarre", "Mental", "Fuego", "Aflicción"]
+            "immunities": [
+              "Físico no-mágico",
+              "Agarre",
+              "Mental",
+              "Fuego",
+              "Aflicción"
+            ]
           }
         }
       ]
@@ -246,6 +267,7 @@
     {
       "rank": "VI",
       "title": "Ascendido",
+      "draft": true,
       "passive": "Aumenta estadística de Constitución por 1.",
       "abilities": [
         {
@@ -259,13 +281,19 @@
           "desc": "Obtienes +20 Vitalidad temporal. Tus estadísticas físicas y CAR pasan a 12, tu Defensa base pasa a ser 20 y añades +1 dado de daño a tus hechizos. Obtienes Inmunidad a Aflicciones y Toque y tienes activos los hechizos Aura Abrasadora y Propulsión, recibiendo así velocidad de vuelo 2 y contadores de escudo iguales a tu Rango. Tus hechizos de Magia de Fuego de Rango III o menos no te costarán chi para ser lanzados.",
           "toggle": {
             "label": "Forma Elemental",
-            "vt_temp": 20,
             "stat_min": 12,
-            "stat_min_list": ["str", "dex", "con", "cha"],
-            "def_set": 20,
+            "stat_min_list": [
+              "str",
+              "dex",
+              "con",
+              "cha"
+            ],
             "damage": "+1 dado",
             "ce": "rango",
-            "immunities": ["Aflicción", "Toque"]
+            "immunities": [
+              "Aflicción",
+              "Toque"
+            ]
           }
         }
       ]

@@ -109,6 +109,7 @@
                         <div class="card-image" style="background-image: url('/assets/images/ranks/${rank.image}'); background-size: cover; height: 150px;"></div>
                         <div class="card-content">
                             <span style="color: #888; font-size: 0.8rem; text-transform: uppercase;">${rank.category}</span>
+                            ${rank.draft !== false || rank.partial ? `<span style="margin-left: 8px; font-size: 0.7rem; padding: 1px 6px; border: 1px solid #e07b39; color: #f0a060; border-radius: 3px; text-transform: uppercase;">🚧 ${rank.draft !== false ? 'En construcción' : 'Parcialmente en construcción'}</span>` : ''}
                             <h3>${rank.name}</h3>
                             <p>${rank.description}</p>
                             

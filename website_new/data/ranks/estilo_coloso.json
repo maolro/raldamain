@@ -2,6 +2,7 @@
   "id": "estilo_coloso",
   "title": "Estilo Coloso",
   "category": "Marcial",
+  "draft": true,
   "image": "estilo_coloso.jpg",
   "stats": [
     "Fuerza",
@@ -21,6 +22,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Ataque Poderoso",
@@ -45,6 +47,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Gran Barrido",
@@ -90,6 +93,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "abilities": [
         {
           "name": "Golpe Demoledor",
@@ -124,6 +128,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "abilities": [
         {
           "name": "Golpe Ascendente",
@@ -177,6 +182,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "abilities": [
         {
           "name": "Impacto Meteoro",

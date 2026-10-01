@@ -6,6 +6,7 @@ Needs:  pip install flask
 """
 
 import json
+import subprocess
 import sys
 import threading
 import webbrowser
@@ -18,8 +19,57 @@ except ImportError:
     sys.exit(1)
 
 app = Flask(__name__)
-RANKS_DIR  = Path(__file__).parent.parent / "data" / "ranks"
-RANKS_LIST = Path(__file__).parent.parent / "data" / "ranks_list.json"
+BASE       = Path(__file__).parent.parent
+RANKS_DIR  = BASE / "data" / "ranks"
+RANKS_LIST = BASE / "data" / "ranks_list.json"
+
+# Guardar commits the rank (+ ranks_list.json) and pushes it to GitHub — but only
+# while the repo is on this branch. Set to None to allow any branch.
+GIT_BRANCH = "rank-impactos-umbrales"
+
+# ── Git ───────────────────────────────────────────────────────────────────────
+
+def _git(*args, timeout=30):
+    return subprocess.run(["git", *args], cwd=BASE, capture_output=True,
+                          text=True, encoding="utf-8", timeout=timeout)
+
+def _current_branch():
+    try:
+        r = _git("branch", "--show-current", timeout=10)
+        return r.stdout.strip() if r.returncode == 0 else ""
+    except Exception:
+        return ""
+
+def _git_push(files, message):
+    """Commit only `files`, rebase on the remote branch and push.
+    Returns 'ok', 'nothing', 'wrong-branch:<name>' or an error string."""
+    branch = _current_branch()
+    if GIT_BRANCH and branch != GIT_BRANCH:
+        return f"wrong-branch:{branch or '?'}"
+    try:
+        _git("add", "--", *files)
+        # Commit just these paths so other staged/modified files are never swept in
+        r = _git("commit", "-m", message, "--", *files)
+        if r.returncode != 0:
+            if "nothing to commit" in (r.stdout + r.stderr) or "no changes added" in (r.stdout + r.stderr):
+                return "nothing"
+            return r.stderr.strip() or "commit error"
+        # Rebase on the remote branch first (if it exists) so the push is never rejected
+        if _git("ls-remote", "--exit-code", "--heads", "origin", branch, timeout=60).returncode == 0:
+            r = _git("pull", "--rebase", "--autostash", "origin", branch, timeout=90)
+            if r.returncode != 0:
+                return "pull: " + (r.stderr.strip() or "error")
+        r = _git("push", "-u", "origin", branch, timeout=120)
+        if r.returncode != 0:
+            return "push: " + (r.stderr.strip() or "error")
+        return "ok"
+    except subprocess.TimeoutExpired:
+        return "timeout"
+    except Exception as e:
+        return str(e)
+
+def _is_draft(obj):
+    return obj.get("draft", True) is not False
 
 # ── API ───────────────────────────────────────────────────────────────────────
 
@@ -33,6 +83,8 @@ def api_list():
                 "id":       d.get("id", f.stem),
                 "title":    d.get("title", f.stem),
                 "category": d.get("category", ""),
+                "draft":    _is_draft(d),
+                "partial":  not _is_draft(d) and any(_is_draft(lv) for lv in d.get("levels", [])),
             })
         except Exception:
             pass
@@ -51,7 +103,14 @@ def api_save(rid):
     data = request.get_json(force=True)
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _sync_ranks_list(data)
-    return jsonify({"ok": True})
+    git = _git_push([str(p), str(RANKS_LIST)], f"Update rank: {data.get('title', rid)}")
+    return jsonify({"ok": True, "git": git})
+
+@app.route("/api/git")
+def api_git():
+    branch = _current_branch()
+    return jsonify({"branch": branch, "expected": GIT_BRANCH,
+                    "ok": not GIT_BRANCH or branch == GIT_BRANCH})
 
 def _sync_ranks_list(data):
     try:
@@ -62,6 +121,9 @@ def _sync_ranks_list(data):
             "category":    data.get("category", ""),
             "image":       data.get("image", ""),
             "description": data.get("description", ""),
+            "draft":       _is_draft(data),
+            # Rank published, but some levels still under construction
+            "partial":     not _is_draft(data) and any(_is_draft(lv) for lv in data.get("levels", [])),
         }
         idx = next((i for i, e in enumerate(entries) if e.get("id") == entry["id"]), None)
         if idx is not None:
@@ -119,6 +181,30 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 .ri-name{font-size:12px;font-weight:500}
 .ri-id{font-size:10px;color:var(--text3)}
 .ri.dirty::after{content:'●';color:var(--gold);font-size:8px;margin-left:auto}
+.ri-draft{font-size:9px;padding:1px 5px;border-radius:3px;margin-left:auto;
+  border:1px solid #6a4a10;color:var(--orange);background:rgba(224,123,57,.08)}
+.ri.dirty .ri-draft{margin-left:auto;margin-right:4px}
+
+/* ── Draft toggle ── */
+.btn.draft{border-color:var(--orange);color:var(--orange);background:rgba(224,123,57,.08)}
+.btn.draft:hover{background:rgba(224,123,57,.2)}
+.btn.final{border-color:var(--green);color:var(--green);background:rgba(76,175,106,.08)}
+.btn.final:hover{background:rgba(76,175,106,.2)}
+
+.ltab.draft-lv{color:var(--orange)}
+.ltab.draft-lv.on{color:var(--orange)}
+.lvl-draft-note{font-size:11px;color:var(--orange);background:rgba(224,123,57,.08);
+  border:1px solid #6a4a10;border-radius:5px;padding:6px 10px;margin-bottom:10px}
+#git-badge{font-size:10px;padding:2px 8px;border-radius:3px;border:1px solid var(--border);color:var(--text3)}
+#git-badge.ok{border-color:#2d5a3a;color:var(--green)}
+#git-badge.bad{border-color:#6a2020;color:var(--red);background:rgba(231,76,60,.08)}
+
+/* ── Umbrales list ── */
+.umb-box{border-top:1px solid var(--border);padding-top:8px;display:flex;flex-direction:column;gap:5px}
+.umb-hd{display:flex;align-items:center;gap:6px}
+.umb-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gold)}
+.umb-row{display:grid;grid-template-columns:90px 1fr auto;gap:5px;align-items:center}
+.umb-pill{font-size:10px;padding:1px 6px;border-radius:3px;border:1px solid var(--goldd);color:var(--gold)}
 .sb-cat-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;
   color:var(--text3);padding:8px 14px 3px}
 .sb-ft{padding:9px 10px;border-top:1px solid var(--border);display:flex;gap:6px}
@@ -329,6 +415,9 @@ select.inp{cursor:pointer}
   <div class="tb">
     <span class="tb-title" id="tb-title">Selecciona un rango</span>
     <span id="clip-badge" title="Clic para limpiar portapapeles" onclick="clearClip()"></span>
+    <span id="git-badge" title="Rama de git: Guardar hace commit y push a esta rama"></span>
+    <button class="btn" id="draft-btn" style="display:none" onclick="toggleDraft()"
+      title="Borrador global: el rango entero aparece como 'En construcción' en la web. En versión final, cada nivel marcado como borrador sigue en construcción."></button>
     <button class="btn pri" id="save-btn" style="display:none" onclick="saveRank()">💾 Guardar</button>
   </div>
 
@@ -462,6 +551,7 @@ async function api(method, path, body) {
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 async function init() {
+  loadGit();
   S.all = await api('GET','/api/ranks');
   renderSidebar();
   renderCats();
@@ -501,6 +591,7 @@ function renderSidebar() {
       <div class="ri ${S.rank&&S.rank.id===r.id?'on':''} ${S.rank&&S.rank.id===r.id&&dirty()?'dirty':''}"
            onclick="loadRank('${r.id}')">
         <div><div class="ri-name">${r.title}</div><div class="ri-id">${r.id}</div></div>
+        ${draftBadge(S.rank&&S.rank.id===r.id?S.rank:r)}
       </div>`).join('')}
   `).join('');
 }
@@ -518,9 +609,16 @@ async function loadRank(id) {
 async function saveRank() {
   if (!S.rank) return;
   try {
-    await api('POST', `/api/rank/${S.rank.id}`, S.rank);
+    const res = await api('POST', `/api/rank/${S.rank.id}`, S.rank);
     S.saved = JSON.stringify(S.rank);
-    toast('Guardado ✓', 'ok');
+    const entry = S.all.find(r=>r.id===S.rank.id);
+    if (entry) { entry.draft = isDraft(S.rank); entry.partial = !entry.draft && (S.rank.levels||[]).some(isDraft); }
+    const git = res.git||'';
+    if (git === 'ok')                     toast('Guardado y publicado en GitHub ✓', 'ok');
+    else if (git === 'nothing')           toast('Guardado ✓ (sin cambios en git)', 'ok');
+    else if (git.startsWith('wrong-branch')) toast(`Guardado ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
+    else if (git)                         toast('Guardado ✓ — git: ' + git, 'err');
+    loadGit();
     renderToolbar(); renderSidebar();
   } catch(e) { toast('Error: '+e.message,'err'); }
 }
@@ -551,7 +649,46 @@ function renderToolbar() {
   const sb = document.getElementById('save-btn');
   sb.style.display = S.rank?'':'none';
   sb.classList.toggle('pri', d);
+  const db = document.getElementById('draft-btn');
+  db.style.display = S.rank?'':'none';
+  if (S.rank) {
+    const dr = isDraft(S.rank);
+    db.className = 'btn ' + (dr ? 'draft' : 'final');
+    db.textContent = dr ? '🚧 Borrador' : '✓ Versión final';
+  }
   updateClipBadge();
+}
+
+// ── Git ───────────────────────────────────────────────────────────────────────
+async function loadGit() {
+  const el = document.getElementById('git-badge');
+  try {
+    const g = await api('GET','/api/git');
+    el.className = g.ok ? 'ok' : 'bad';
+    el.textContent = g.ok ? `⎇ ${g.branch}` : `⎇ ${g.branch||'?'} (se espera ${g.expected}: no se hará push)`;
+  } catch(e) { el.textContent = '⎇ ?'; }
+}
+
+// ── Draft ─────────────────────────────────────────────────────────────────────
+// Ranks are drafts unless explicitly marked "draft": false
+function isDraft(r) { return !r || r.draft !== false; }
+// Sidebar badge: full draft, or published with some levels still in draft
+function draftBadge(r) {
+  if (isDraft(r)) return '<span class="ri-draft">🚧 Borrador</span>';
+  const partial = r.levels ? r.levels.some(isDraft) : r.partial;
+  return partial ? '<span class="ri-draft" title="Algunos niveles siguen en borrador">🚧 Parcial</span>' : '';
+}
+function toggleLvDraft(li) {
+  const lv = S.rank.levels[li];
+  lv.draft = !isDraft(lv);
+  renderToolbar(); renderTabs(); renderLvl(); renderSidebar();
+}
+function toggleDraft() {
+  if (!S.rank) return;
+  S.rank.draft = !isDraft(S.rank);
+  renderToolbar(); renderSidebar();
+  if (S.mode==='edit') renderLvl();
+  toast(S.rank.draft ? 'Marcado como borrador (guarda para aplicar)' : 'Marcado como versión final (guarda para aplicar)', 'ok');
 }
 
 // ── Editor ───────────────────────────────────────────────────────────────────
@@ -594,8 +731,9 @@ function renderTabs() {
     : '';
   document.getElementById('lvl-tabs').innerHTML =
     lvls.map((lv,i)=>`
-      <button class="ltab ${i===S.lv?'on':''}" onclick="setLv(${i})">
-        ${lv.rank} <span style="opacity:.6;font-weight:400">${lv.title||''}</span>
+      <button class="ltab ${i===S.lv?'on':''} ${isDraft(lv)?'draft-lv':''}" onclick="setLv(${i})"
+        title="${isDraft(lv)?'Nivel en borrador':'Nivel final'}">
+        ${isDraft(lv)?'🚧 ':''}${lv.rank} <span style="opacity:.6;font-weight:400">${lv.title||''}</span>
       </button>`).join('') +
     `<button class="ltab add" onclick="addLv()" title="Añadir rango">＋</button>` +
     pasteBtn;
@@ -623,10 +761,13 @@ function renderLvl() {
         placeholder="Título" oninput="setLvTitle(${S.lv},this.value)">
       <button class="btn sm" title="Mover izquierda" ${canUp?'':'disabled style="opacity:.3"'} onclick="moveLv(${S.lv},-1)">◀</button>
       <button class="btn sm" title="Mover derecha"  ${canDown?'':'disabled style="opacity:.3"'} onclick="moveLv(${S.lv},1)">▶</button>
+      <button class="btn sm ${isDraft(lv)?'draft':'final'}" onclick="toggleLvDraft(${S.lv})"
+        title="Un nivel en borrador aparece como 'En construcción' en la web">${isDraft(lv)?'🚧 Nivel en borrador':'✓ Nivel final'}</button>
       <button class="btn sm" style="color:var(--teal);border-color:var(--teal)" onclick="copyLevel(${S.lv})" title="Copiar este nivel al portapapeles">📋 Copiar</button>
       ${pasteAbBtn}
       <button class="btn danger sm" style="margin-left:auto" onclick="delLv(${S.lv})">✕ Eliminar</button>
     </div>
+    ${isDraft(S.rank) ? `<div class="lvl-draft-note">🚧 El rango entero está en borrador: en la web todo aparece "En construcción", sea cual sea el estado de cada nivel.</div>` : ''}
 
     ${lv.passive!==undefined ? `
     <div class="passive-block">
@@ -697,16 +838,11 @@ function cardHtml(li, ab, ai) {
         <div class="lbl">Ventaja en salvaciones (comas)</div>
         <input class="inp" value="${esc((ab.toggle.saves||[]).join(', '))}" placeholder="Físico, Voluntad, Mental"
           oninput="setToggleArr(${li},${ai},'saves',this.value)"></div>
-      <div class="row3" style="margin-bottom:6px">
-        <div class="field"><div class="lbl">+DEF</div>
-          <input class="inp" value="${ab.toggle.def!=null?ab.toggle.def:''}" placeholder="—"
-            oninput="setToggleNum(${li},${ai},'def',this.value)"></div>
-        <div class="field"><div class="lbl">DEF mínima</div>
-          <input class="inp" value="${ab.toggle.def_set!=null?ab.toggle.def_set:''}" placeholder="—"
-            oninput="setToggleNum(${li},${ai},'def_set',this.value)"></div>
-        <div class="field"><div class="lbl">+VT temporal</div>
-          <input class="inp" value="${ab.toggle.vt_temp!=null?ab.toggle.vt_temp:''}" placeholder="—"
-            oninput="setToggleNum(${li},${ai},'vt_temp',this.value)"></div>
+      <div style="margin-bottom:6px">${umbHtml(ab.toggle.umbrales, li, ai, 'tog')}</div>
+      <div class="row2" style="margin-bottom:6px">
+        <div class="field"><div class="lbl">+Impactos (mientras activo)</div>
+          <input class="inp" value="${ab.toggle.hits!=null?ab.toggle.hits:''}" placeholder="—"
+            oninput="setToggleNum(${li},${ai},'hits',this.value)"></div>
       </div>
       <div class="row3" style="margin-bottom:6px">
         <div class="field"><div class="lbl">Stat mínima</div>
@@ -775,17 +911,12 @@ function cardHtml(li, ab, ai) {
       <div class="field"><div class="lbl">Descripción</div>
         <textarea class="inp" rows="3"
           oninput="setAb(${li},${ai},'desc',this.value)">${esc(ab.desc||'')}</textarea></div>
-      ${tags.includes('Pasiva') || ab.def!==undefined || ab.hp!==undefined || ab.vt!==undefined || ab.chi!==undefined || ab.resistances!==undefined || ab.immunities!==undefined ? `
+      ${tags.includes('Pasiva') || ab.umbrales!==undefined || ab.hits!==undefined || ab.chi!==undefined || ab.resistances!==undefined || ab.immunities!==undefined ? `
+      ${umbHtml(ab.umbrales, li, ai, 'ab')}
       <div class="opt-row" style="margin-top:4px">
-        <div class="field"><div class="lbl">+DEF</div>
-          <input class="inp" value="${esc(ab.def||'')}" placeholder="—"
-            oninput="setAb(${li},${ai},'def',this.value)"></div>
-        <div class="field"><div class="lbl">+PV</div>
-          <input class="inp" value="${esc(ab.hp||'')}" placeholder="—"
-            oninput="setAb(${li},${ai},'hp',this.value)"></div>
-        <div class="field"><div class="lbl">+VT</div>
-          <input class="inp" value="${esc(ab.vt||'')}" placeholder="—"
-            oninput="setAb(${li},${ai},'vt',this.value)"></div>
+        <div class="field"><div class="lbl">+Impactos</div>
+          <input class="inp" value="${esc(ab.hits||'')}" placeholder="—"
+            oninput="setAb(${li},${ai},'hits',this.value)"></div>
         <div class="field"><div class="lbl">+Chi</div>
           <input class="inp" value="${esc(ab.chi||'')}" placeholder="—"
             oninput="setAb(${li},${ai},'chi',this.value)"></div>
@@ -859,6 +990,49 @@ function setToggleNum(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggl
 function setToggleCe(li,ai,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(!v){delete t.ce;renderToolbar();return;} const n=parseFloat(v); t.ce=isNaN(n)?v:n; renderToolbar(); }
 function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)ab[k]=a; else delete ab[k]; renderToolbar(); }
 
+// ── Umbrales (damage thresholds) ──────────────────────────────────────────────
+// Stored like creature umbrales: [{ value: 2 | "RANGO+1", categories: "General" | "Fuego, Frío" }]
+// "General" raises every threshold; other categories add on top of General.
+function umbOwner(li,ai,scope) { const ab=S.rank.levels[li].abilities[ai]; return scope==='tog' ? ab.toggle : ab; }
+function umbHtml(list, li, ai, scope) {
+  const rows = (list||[]).map((u,ui)=>`
+    <div class="umb-row">
+      <input class="inp" value="${esc(u.value!=null?u.value:'')}" placeholder="RANGO+1"
+        oninput="setUmb(${li},${ai},'${scope}',${ui},'value',this.value)">
+      <input class="inp" value="${esc(u.categories||'')}" placeholder="General · Físico · Fuego, Frío…"
+        oninput="setUmb(${li},${ai},'${scope}',${ui},'categories',this.value)">
+      <button class="card-x" title="Quitar umbral" onclick="delUmb(${li},${ai},'${scope}',${ui})">×</button>
+    </div>`).join('');
+  return `
+    <div class="umb-box">
+      <div class="umb-hd">
+        <span class="umb-label">🛡 Umbrales de Daño</span>
+        <button class="btn sm" style="margin-left:auto" onclick="addUmb(${li},${ai},'${scope}')">＋ Umbral</button>
+      </div>
+      ${rows ? `<div class="umb-row"><div class="lbl">Valor</div><div class="lbl">Categorías (comas)</div><span></span></div>${rows}` : ''}
+    </div>`;
+}
+function addUmb(li,ai,scope) {
+  const o=umbOwner(li,ai,scope);
+  (o.umbrales||(o.umbrales=[])).push({ value:'RANGO+1', categories:'General' });
+  renderToolbar(); renderLvl();
+}
+function delUmb(li,ai,scope,ui) {
+  const o=umbOwner(li,ai,scope);
+  o.umbrales.splice(ui,1);
+  if (!o.umbrales.length) delete o.umbrales;
+  renderToolbar(); renderLvl();
+}
+function setUmb(li,ai,scope,ui,k,v) {
+  const u=umbOwner(li,ai,scope).umbrales[ui];
+  if (k==='value') { const n=Number(v); u.value = (v.trim()!=='' && !isNaN(n)) ? n : v.trim(); }
+  else u[k]=v;
+  renderToolbar();
+}
+function umbText(list) {
+  return (list||[]).map(u=>`+${u.value} (${u.categories||'General'})`).join(' · ');
+}
+
 // ── Clipboard ─────────────────────────────────────────────────────────────────
 function deepCopy(o) { return JSON.parse(JSON.stringify(o)); }
 
@@ -931,7 +1105,7 @@ function moveAb(li, ai, dir) {
 function addLv() {
   if (!S.rank.levels) S.rank.levels=[];
   const i=S.rank.levels.length;
-  S.rank.levels.push({ rank:ROMAN[i]||String(i+1), title:TITLES[i]||'Rango '+(i+1), abilities:[] });
+  S.rank.levels.push({ rank:ROMAN[i]||String(i+1), title:TITLES[i]||'Rango '+(i+1), draft:true, abilities:[] });
   S.lv=i; renderToolbar(); renderEditor();
 }
 function delLv(li) {
@@ -968,10 +1142,10 @@ function renderCmpCol(side) {
   if (!rank) { el.innerHTML=`<div style="color:var(--text3)">Selecciona ${side.toUpperCase()}</div>`; return; }
   el.innerHTML=`
     <div class="cmp-col-hd">${rank.title}</div>
-    <div class="cmp-col-sub">${rank.category||''}</div>
+    <div class="cmp-col-sub">${rank.category||''}${isDraft(rank)?' · 🚧 Borrador':' · ✓ Final'}</div>
     ${(rank.levels||[]).map(lv=>`
       <div class="cmp-sec">
-        <div class="cmp-sec-hd">Rango ${lv.rank} — ${lv.title||''}</div>
+        <div class="cmp-sec-hd">${isDraft(lv)?'🚧 ':''}Rango ${lv.rank} — ${lv.title||''}</div>
         ${lv.passive?`<div class="cmp-passive">✦ ${lv.passive}</div>`:''}
         ${(lv.abilities||[]).map(ab=>`
           <div class="cmp-card">
@@ -981,6 +1155,10 @@ function renderCmpCol(side) {
               ${ab.cost?`<span class="cmp-cost">${ab.cost}</span>`:''}
             </div>
             <div class="cmp-desc">${ab.desc||''}</div>
+            ${ab.umbrales||ab.hits?`<div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:5px">
+              ${ab.umbrales?`<span class="umb-pill">🛡 ${umbText(ab.umbrales)}</span>`:''}
+              ${ab.hits?`<span class="umb-pill">+${ab.hits} Impactos</span>`:''}
+            </div>`:''}
             ${ab.empower?`<div class="cmp-emp">✦ ${ab.empower}</div>`:''}
           </div>`).join('')}
       </div>`).join('')}`;
@@ -1040,6 +1218,7 @@ async function confirmNewRank() {
     id,
     title,
     category: cat || 'Sin categoría',
+    draft: true,
     image: `${id}.jpg`,
     stats: [],
     description: '',

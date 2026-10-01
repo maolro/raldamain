@@ -2,6 +2,7 @@
   "id": "bombas",
   "title": "Bombas",
   "category": "Ciencia",
+  "draft": true,
   "image": "bombas.jpg",
   "stats": [
     "Inteligencia",
@@ -16,6 +17,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Bomba de Metralla",
@@ -67,6 +69,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "abilities": [
         {
           "name": "Bomba PEM",
@@ -118,6 +121,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Todas sus bombas convierten sus dados de daño por d8.",
       "abilities": [
         {
@@ -166,6 +170,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "abilities": [
         {
           "name": "Bomba Teledirigida",
@@ -201,6 +206,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Todas sus bombas convierten sus dados de daño por d10.",
       "abilities": [
         {

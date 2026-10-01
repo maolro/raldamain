@@ -2,6 +2,7 @@
   "id": "magia_vida",
   "title": "Magia de Vida",
   "category": "Divina",
+  "draft": true,
   "image": "magia_vida.jpg",
   "stats": [
     "Sabiduría",
@@ -23,6 +24,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Toque Sanador",
@@ -72,6 +74,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Vínculo Vital",
@@ -123,6 +126,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "passive": "Todos los dados de daño de Vida pasan a ser d8.",
       "abilities": [
         {
@@ -168,6 +172,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "abilities": [
         {
           "name": "Espadas de Justicia",
@@ -215,6 +220,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "passive": "Todos los dados de daño de Vida pasan a ser d10.",
       "abilities": [
         {
@@ -265,6 +271,7 @@
     {
       "rank": "VI",
       "title": "Ascendido",
+      "draft": true,
       "passive": "Hechizos de Vida de Rango IV cuestan -1 acción.",
       "abilities": [
         {

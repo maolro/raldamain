@@ -2,6 +2,7 @@
   "id": "magia_tierra",
   "title": "Magia de Tierra",
   "category": "Elementalismo",
+  "draft": true,
   "image": "magia_tierra.jpg",
   "stats": [
     "Sabiduría",
@@ -17,6 +18,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Pedrada",
@@ -62,6 +64,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "passive": "Aumenta tu estadística de Constitución por 1.",
       "abilities": [
         {
@@ -107,6 +110,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Todos tus hechizos de Tierra sustituyen sus dados de daño por d8.",
       "abilities": [
         {
@@ -150,6 +154,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "passive": "Aumenta tu estadística de Sabiduría por 1.",
       "abilities": [
         {
@@ -198,6 +203,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Todos tus hechizos de Tierra sustituyen sus dados de daño por d10.",
       "abilities": [
         {
@@ -250,6 +256,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Aumenta tu estadística de Fuerza por 1.",
       "abilities": [
         {

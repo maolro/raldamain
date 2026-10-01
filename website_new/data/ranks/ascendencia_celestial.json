@@ -2,6 +2,7 @@
   "id": "ascendencia_celestial",
   "title": "Ascendencia Celestial",
   "category": "Ascendencias",
+  "draft": true,
   "image": "ascendencia_celestial.jpg",
   "stats": [
     "Sabiduría",
@@ -18,6 +19,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Nacido del cielo",
@@ -42,6 +44,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "passive": "Incrementa tu estadística de CAR y su limitador máximo en +1.",
       "abilities": [
         {
@@ -76,6 +79,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "abilities": [
         {
           "name": "Ángel Protector",
@@ -102,6 +106,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "passive": "Incrementa tu estadística de CON y su limitador en +1.",
       "abilities": [
         {
@@ -125,6 +130,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "passive": "Aprendes los hechizos 'Sanación superior' y 'Luz viviente' (usan Chi).",
       "abilities": [
         {
@@ -149,6 +155,7 @@
     {
       "rank": "VI",
       "title": "Ascendido",
+      "draft": true,
       "passive": "Incrementa tu estadística de SAB y su limitador en +1. ",
       "abilities": [
         {

@@ -2,6 +2,7 @@
   "id": "mente_desencadenada",
   "title": "Mente Desencadenada",
   "category": "Combate",
+  "draft": true,
   "image": "mente_desencadenada.jpg",
   "stats": [
     "Inteligencia",
@@ -16,6 +17,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Mente Desencadenada",
@@ -28,7 +30,11 @@
           "desc": "Entras en un estado de trance. Obtienes Ventaja en tiros de ataque, defensa y talentos Mentales, y provocas un dado de daño adicional con tus hechizos y ataques mágicos. Al terminar, sufres daño a Cordura igual a las rondas pasadas en Mente Desencadenada.",
           "toggle": {
             "label": "Mente Desencadenada",
-            "adv": ["Ataque", "Defensa", "Mental"],
+            "adv": [
+              "Ataque",
+              "Defensa",
+              "Mental"
+            ],
             "damage": "+1 dado"
           }
         },
@@ -45,6 +51,7 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Poder del Dolor",
@@ -69,6 +76,7 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "abilities": [
         {
           "name": "Concentración Superior",
@@ -93,6 +101,7 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "abilities": [
         {
           "name": "Sentido Arcano",
@@ -119,6 +128,7 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "abilities": [
         {
           "name": "División Mental",

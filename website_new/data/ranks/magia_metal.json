@@ -2,6 +2,7 @@
   "id": "magia_metal",
   "title": "Magia de Metal",
   "category": "Elementalismo",
+  "draft": true,
   "image": "magia_metal.jpg",
   "stats": [
     "Sabiduría",
@@ -18,6 +19,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Manipulación Metálica",
@@ -59,6 +61,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "passive": "Aumenta tu estadística de Destreza por 1.",
       "abilities": [
         {
@@ -101,6 +104,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Todos tus hechizos de Metal sustituyen sus dados de daño por d8.",
       "abilities": [
         {
@@ -146,6 +150,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "passive": "Aumenta tu estadística de Carisma por 1.",
       "abilities": [
         {
@@ -194,6 +199,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Todos tus hechizos de Metal sustituyen sus dados de daño por d10.",
       "abilities": [
         {
@@ -244,6 +250,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Aumenta tu estadística de Carisma por 1.",
       "abilities": [
         {

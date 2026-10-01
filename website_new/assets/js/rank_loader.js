@@ -40,6 +40,11 @@ function linkStatusEffects(text) {
     return processed;
 }
 
+// "RANGO+1" → "Rango + 1" for display
+function formatRankValue(v) {
+    return String(v).replace(/RANGO/g, 'Rango').replace(/\s*([+\-x\/])\s*/g, ' $1 ').trim();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     // NEW METHOD: Get the last part of the URL
     // Example URL: http://localhost/rangos/magia_fuego
@@ -97,6 +102,24 @@ function renderRankPage(data) {
 
     // C. Fill Fundamentals
     document.getElementById("rank-desc").innerText = data.description;
+
+    // Ranks are drafts unless explicitly marked "draft": false — show only an
+    // "under construction" notice instead of fundamentals and abilities.
+    if (data.draft !== false) {
+        metaContainer.innerHTML += `<div class="meta-badge draft-badge">🚧 En construcción</div>`;
+        document.getElementById("rank-fundamentals").style.display = 'none';
+        const fundTitle = document.querySelector(".container .section-title");
+        if (fundTitle) fundTitle.innerText = "Descripción";
+        document.getElementById("abilities-container").innerHTML = `
+            <div class="under-construction">
+                <div class="uc-icon">🚧</div>
+                <h2 class="uc-title">Rango en construcción</h2>
+                <p class="uc-text">Este rango se está adaptando al nuevo sistema de <strong>Impactos</strong> y <strong>Umbrales de Daño</strong>. Sus habilidades se publicarán cuando la versión final esté lista.</p>
+                <a href="/rangos.html" class="uc-link">&larr; Volver a los Rangos</a>
+            </div>`;
+        return;
+    }
+
     const fundList = document.getElementById("rank-fundamentals");
     data.fundamentals.forEach(rule => {
         fundList.innerHTML += `<li>${linkStatusEffects(rule)}</li>`;
@@ -114,6 +137,17 @@ function renderRankPage(data) {
                     <span class="rank-title">${level.title}</span>
                 </div>
         `;
+
+        // Level still in draft: header + "under construction" only
+        if (level.draft !== false) {
+            container.innerHTML += levelHTML + `
+                <div class="under-construction under-construction-sm">
+                    <span class="uc-icon">🚧</span>
+                    <span class="uc-text">Las habilidades de este nivel están en construcción.</span>
+                </div>
+            </div>`;
+            return;
+        }
 
         // Add Passive text if it exists
         if (level.passive) {
@@ -138,6 +172,8 @@ function renderRankPage(data) {
                         ${ability.cost ? `<div class="stat-pill">Coste: <span>${ability.cost}</span></div>` : ''}
                         ${ability.range ? `<div class="stat-pill">Alcance: <span>${ability.range}</span></div>` : ''}
                         ${ability.duration ? `<div class="stat-pill">Duración: <span>${ability.duration}</span></div>` : ''}
+                        ${(ability.umbrales || []).map(u => `<div class="stat-pill umbral-pill">Umbral ${u.categories || 'General'}: <span>+${formatRankValue(u.value)}</span></div>`).join('')}
+                        ${ability.hits ? `<div class="stat-pill umbral-pill">Impactos: <span>+${formatRankValue(ability.hits)}</span></div>` : ''}
                     </div>
 
                     <p class="ability-desc">

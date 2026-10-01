@@ -2,8 +2,12 @@
   "id": "rastrear",
   "title": "Rastrear",
   "category": "Combate",
+  "draft": true,
   "image": "rastrear.jpg",
-  "stats": ["Sabiduría", "Chi"],
+  "stats": [
+    "Sabiduría",
+    "Chi"
+  ],
   "description": "Eres un experto en el terreno y la caza. Analizas a tus enemigos, te mueves sin ser visto y usas el entorno a tu favor para emboscar o sanar.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -13,17 +17,25 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Analizar Enemigo",
-          "tags": ["Innata", "Duradera"],
+          "tags": [
+            "Innata",
+            "Duradera"
+          ],
           "cost": "1 chi",
           "duration": "Indefinido",
           "desc": "Tras observar a un enemigo durante 1 ronda, obtienes Ventaja en tiros de ataque y defensa contra él. El efecto se pierde al cambiar de objetivo."
         },
         {
           "name": "Sanador Instintivo",
-          "tags": ["Innata", "Sanación", "Toque"],
+          "tags": [
+            "Innata",
+            "Sanación",
+            "Toque"
+          ],
           "cost": "1 acción, 1 chi",
           "desc": "Curas Rango + 2 Vitalidad y reduces la gravedad de Herido (permanente) o aflicción un paso. Requiere materiales de sanación."
         }
@@ -32,16 +44,23 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Acechar",
-          "tags": ["Innata", "Duradera"],
+          "tags": [
+            "Innata",
+            "Duradera"
+          ],
           "cost": "1 chi",
           "desc": "Te vuelves invisible mientras no seas detectado. El efecto termina al atacar o salir de tu escondite."
         },
         {
           "name": "Maestro del Terreno",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Eliges un entorno predilecto (Bosque, Ciudad, Subterráneo, etc.). Obtienes Ventaja en tiros de Sigilo y Percepción en ese entorno, además de beneficios pasivos (ejemplos: vista ciega en subterráneo, inmunidad climática, etc.)."
         }
       ]
@@ -49,15 +68,22 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "abilities": [
         {
           "name": "Lo he visto Antes",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Cuando te defiendes de un ataque o habilidad que el mismo enemigo ya haya usado contra ti anteriormente, puedes repetir el tiro defensivo y quedarte con el mejor resultado."
         },
         {
           "name": "Inescrutable",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "desc": "Obtienes Resistencia a efectos Mentales y de Miedo. Eres inmune a lectura de mente y predicción de movimientos."
         }
       ]
@@ -65,17 +91,24 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "abilities": [
         {
           "name": "Vista de Lince",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "range": "Medio",
           "desc": "Obtienes Resistencia a Ilusiones. Como reacción, puedes intentar identificar una ilusión.",
           "empower": "Éxito automático para identificar o resistir una ilusión."
         },
         {
           "name": "Cambio Repentino",
-          "tags": ["Innata", "Reacción"],
+          "tags": [
+            "Innata",
+            "Reacción"
+          ],
           "cost": "2 chi",
           "desc": "Como reacción, después de tirar un ataque pero antes de aplicar daño, puedes cambiar tu ataque por otro de coste igual o menor. El enemigo pierde su defensa previa contra el nuevo ataque."
         }
@@ -84,17 +117,25 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "abilities": [
         {
           "name": "Enemigo Juramentado",
-          "tags": ["Innata", "Pasiva"],
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
           "cost": "3 chi",
           "duration": "Permanente (hasta muerte)",
           "desc": "Marcas a un enemigo como tu objetivo juramentado. Obtienes Ventaja total en todos los tiros contra él, +1d6 daño adicional y aplicas el efecto crítico de tu ataque en cada impacto."
         },
         {
           "name": "Coto de Caza",
-          "tags": ["Innata", "Mental", "Duradera"],
+          "tags": [
+            "Innata",
+            "Mental",
+            "Duradera"
+          ],
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Concentración",

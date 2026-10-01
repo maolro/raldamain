@@ -2,6 +2,7 @@
   "id": "magia_temporal",
   "title": "Magia Temporal",
   "category": "Arcana",
+  "draft": true,
   "image": "magia_temporal.jpg",
   "stats": [
     "Inteligencia",
@@ -16,6 +17,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Premonición",
@@ -60,6 +62,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "abilities": [
         {
           "name": "Acelerar",
@@ -107,6 +110,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Tus hechizos Temporales convierten sus dados de daño a d8.",
       "abilities": [
         {
@@ -148,6 +152,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "abilities": [
         {
           "name": "Revertir el Tiempo",
@@ -192,6 +197,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "passive": "Tus hechizos Temporales convierten sus dados de daño a d10.",
       "abilities": [
         {
@@ -238,6 +244,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "passive": "Hechizos Temporales Rango IV reducen coste -1 acción.",
       "abilities": [
         {

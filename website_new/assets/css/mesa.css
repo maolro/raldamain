@@ -1,0 +1,585 @@
+/* ============================================
+   MESA DE PRUEBAS — fullscreen stat block (2/3) + dice roller (1/3)
+   ============================================ */
+
+html, body.mesa {
+    height: 100%;
+}
+
+body.mesa {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ── Top bar ── */
+.mesa-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 18px;
+    background: var(--secondary-black);
+    border-bottom: 2px solid var(--accent-gold);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.mesa-home img {
+    height: 34px;
+    display: block;
+}
+
+.mesa-title {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.mesa-sheet-name {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+}
+
+.mesa-load {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.mesa-btn {
+    background: #151515;
+    border: 1px solid #555;
+    color: var(--text-main);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.mesa-btn:hover {
+    border-color: var(--accent-gold);
+}
+
+.mesa-btn-primary {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.mesa-btn-primary:hover {
+    background: rgba(255, 242, 0, 0.08);
+}
+
+select.mesa-btn {
+    max-width: 230px;
+}
+
+/* ── Main grid ── */
+.mesa-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 0;
+}
+
+.mesa-sheet {
+    overflow-y: auto;
+    padding: 1.5rem 2.5rem 3rem;
+    position: relative;
+}
+
+.mesa-sheet.drag {
+    outline: 2px dashed var(--accent-gold);
+    outline-offset: -10px;
+}
+
+.mesa-sheet .statblock-char,
+.mesa-sheet .md-statblock {
+    max-width: 980px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.mesa-sheet .statblock-char h2 {
+    font-size: 2rem;
+}
+
+.mesa-sheet .preview-stats-row .col {
+    font-size: 1rem;
+    padding: 8px 4px;
+}
+
+.mesa-sheet .sb-hits-value {
+    font-size: 1.8rem;
+}
+
+.mesa-sheet .sb-section-title {
+    font-size: 1.25rem;
+}
+
+/* Empty state */
+.mesa-empty {
+    max-width: 520px;
+    margin: 12vh auto 0;
+    text-align: center;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.mesa-empty h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    margin-bottom: 0.75rem;
+}
+
+.mesa-empty-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.mesa-empty a {
+    color: var(--accent-gold);
+}
+
+.mesa-empty code {
+    background: #1a1a1a;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+.mesa-hint {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Markdown stat blocks (playtest modules) */
+.md-statblock h1 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.md-statblock h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    border-bottom: 1px solid #5c4010;
+    padding-bottom: 3px;
+    margin: 1.25rem 0 0.6rem;
+}
+
+.md-statblock p,
+.md-statblock ul {
+    margin-bottom: 0.7rem;
+    white-space: pre-wrap;
+}
+
+.md-statblock ul {
+    padding-left: 1.4rem;
+}
+
+.md-statblock strong {
+    color: var(--accent-gold);
+}
+
+.md-statblock hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 0.9rem 0;
+}
+
+.md-statblock .md-umbrales {
+    display: block;
+    white-space: normal;
+    margin: 0.2rem 0 0.6rem;
+}
+
+.md-statblock .md-umbrales .sb-block-label {
+    display: block;
+}
+
+.md-statblock table {
+    border-collapse: collapse;
+    margin-bottom: 0.8rem;
+}
+
+.md-statblock th,
+.md-statblock td {
+    border: 1px solid #333;
+    padding: 4px 10px;
+}
+
+/* ── Dice panel ── */
+.mesa-dice {
+    border-left: 2px solid var(--accent-gold);
+    background: var(--secondary-black);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 1.2rem;
+    min-height: 0;
+    position: relative;
+}
+
+.dice-title {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+}
+
+.dice-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.die-btn {
+    background: #151515;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 5px 2px 3px;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.75rem;
+    transition: border-color 0.15s, transform 0.1s;
+}
+
+.die-btn img {
+    width: 100%;
+    max-width: 38px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.die-btn:hover {
+    border-color: var(--accent-gold);
+}
+
+.die-btn:active {
+    transform: scale(0.94);
+}
+
+.dice-pool {
+    min-height: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1px dashed #444;
+    border-radius: 6px;
+}
+
+.pool-chip {
+    background: rgba(255, 242, 0, 0.08);
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.pool-mod {
+    font-weight: bold;
+}
+
+.pool-empty {
+    color: #666;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.dice-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.mod-ctrl {
+    display: flex;
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mod-btn {
+    background: #151515;
+    border: none;
+    color: var(--accent-gold);
+    width: 30px;
+    height: 32px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.mod-value {
+    min-width: 34px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.roll-btn {
+    flex: 1;
+    background: var(--accent-gold);
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    height: 34px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.roll-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.expr-form {
+    display: flex;
+    gap: 6px;
+}
+
+.expr-form input {
+    flex: 1;
+    min-width: 0;
+    background: #151515;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: var(--text-main);
+    padding: 6px 10px;
+    font-size: 0.9rem;
+}
+
+.expr-form input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.log-head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 4px;
+}
+
+.log-clear {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.log-clear:hover {
+    color: #e76a6a;
+}
+
+.dice-log {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+}
+
+.log-empty {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+}
+
+.log-entry {
+    position: relative;
+    background: #151515;
+    border: 1px solid #333;
+    border-left: 3px solid var(--accent-gold);
+    border-radius: 4px;
+    padding: 8px 34px 8px 10px;
+    transition: background 0.6s;
+}
+
+.log-entry.fresh {
+    background: rgba(255, 242, 0, 0.1);
+}
+
+.log-entry:not(:first-child) {
+    opacity: 0.75;
+    border-left-color: #555;
+}
+
+.log-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+
+.log-label {
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
+.log-time {
+    color: #666;
+}
+
+.log-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.log-breakdown {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.log-total {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+}
+
+.die-faces {
+    display: inline-flex;
+    gap: 2px;
+    margin-left: 3px;
+}
+
+.die-face {
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 4px;
+    text-align: center;
+    border: 1px solid #555;
+    border-radius: 3px;
+    color: var(--text-main);
+    font-size: 0.8rem;
+}
+
+.die-face.die-max {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.die-face.die-min {
+    border-color: #a44;
+    color: #e76a6a;
+}
+
+.log-entry.crit {
+    border-left-color: var(--accent-gold);
+    box-shadow: 0 0 0 1px rgba(255, 242, 0, 0.35);
+}
+
+.log-crit {
+    margin-left: 6px;
+    font-size: 0.7rem;
+    padding: 0 5px;
+    border-radius: 3px;
+    background: var(--accent-gold);
+    color: #000;
+}
+
+.log-reroll {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: none;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.log-reroll:hover {
+    color: var(--accent-gold);
+}
+
+.dice-flash {
+    position: absolute;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1rem;
+    background: #3a1515;
+    border: 1px solid #a44;
+    color: #f0a0a0;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.dice-flash.show {
+    opacity: 1;
+}
+
+/* ── Mobile: stack the sheet above the roller ── */
+@media (max-width: 900px) {
+    body.mesa {
+        overflow: auto;
+        height: auto;
+    }
+
+    .mesa-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mesa-sheet {
+        overflow: visible;
+        padding: 1rem 16px 2rem;
+    }
+
+    .mesa-dice {
+        border-left: none;
+        border-top: 2px solid var(--accent-gold);
+        padding: 1rem 16px;
+    }
+
+    .dice-log {
+        max-height: 50vh;
+    }
+
+    .mesa-load {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    select.mesa-btn {
+        max-width: none;
+        flex: 1;
+    }
+}

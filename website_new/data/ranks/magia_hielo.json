@@ -2,6 +2,7 @@
   "id": "magia_hielo",
   "title": "Magia de Hielo",
   "category": "Elementalismo",
+  "draft": true,
   "image": "magia_hielo.jpg",
   "stats": [
     "Sabiduría",
@@ -17,6 +18,7 @@
     {
       "rank": "I",
       "title": "Rango I",
+      "draft": true,
       "abilities": [
         {
           "name": "Espina de Hielo",
@@ -60,6 +62,7 @@
     {
       "rank": "II",
       "title": "Rango II",
+      "draft": true,
       "abilities": [
         {
           "name": "Muro de Hielo",
@@ -103,6 +106,7 @@
     {
       "rank": "III",
       "title": "Rango III",
+      "draft": true,
       "passive": "Todos tus hechizos de Hielo sustituyen sus dados de daño por d8. ",
       "abilities": [
         {
@@ -152,6 +156,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
+      "draft": true,
       "abilities": [
         {
           "name": "Armadura de Hielo",
@@ -194,6 +199,7 @@
     {
       "rank": "V",
       "title": "Rango V",
+      "draft": true,
       "abilities": [
         {
           "tags": [
@@ -242,6 +248,7 @@
     {
       "rank": "VI",
       "title": "Rango VI",
+      "draft": true,
       "abilities": [
         {
           "name": "Forma Elemental",

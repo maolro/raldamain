@@ -2,8 +2,12 @@
   "id": "magia_mental",
   "title": "Magia Mental",
   "category": "Ocultismo",
+  "draft": true,
   "image": "magia_mental.jpg",
-  "stats": ["Inteligencia", "Chi"],
+  "stats": [
+    "Inteligencia",
+    "Chi"
+  ],
   "description": "Manipulas la psique de tus enemigos para leer pensamientos, alterar emociones y controlar voluntades. Puedes sanar la cordura de aliados o destrozar la de tus rivales.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -13,10 +17,14 @@
     {
       "rank": "I",
       "title": "Iniciado",
+      "draft": true,
       "abilities": [
         {
           "name": "Asalto Mental",
-          "tags": ["Mental", "Cordura"],
+          "tags": [
+            "Mental",
+            "Cordura"
+          ],
           "cost": "1 acción",
           "range": "Medio",
           "crit": "Objetivo queda con Aturdido-2 durante 1 ronda.",
@@ -25,7 +33,10 @@
         },
         {
           "name": "Leer Pensamientos",
-          "tags": ["Mental", "Duradera"],
+          "tags": [
+            "Mental",
+            "Duradera"
+          ],
           "cost": "2 acciones, 1 chi",
           "area": "Esfera grande",
           "duration": "Concentración",
@@ -34,7 +45,10 @@
         },
         {
           "name": "Escudo Mental",
-          "tags": ["Mental", "Duradera"],
+          "tags": [
+            "Mental",
+            "Duradera"
+          ],
           "cost": "2 acciones",
           "duration": "Concentración",
           "desc": "Usas Magia Mental para defenderte de efectos Mentales. Tu Cordura aumenta en una cantidad igual a tu Rango. Bloquea intentos de detección de pensamientos.",
@@ -45,10 +59,14 @@
     {
       "rank": "II",
       "title": "Adepto",
+      "draft": true,
       "abilities": [
         {
           "name": "Sugestión",
-          "tags": ["Mental", "Duradero"],
+          "tags": [
+            "Mental",
+            "Duradero"
+          ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "desc": "Implantas una orden o comportamiento lógico en la mente del objetivo. En combate, fuerzas al objetivo a realizar 1 acción específica.",
@@ -56,7 +74,10 @@
         },
         {
           "name": "Sanación Mental",
-          "tags": ["Mental", "Toque"],
+          "tags": [
+            "Mental",
+            "Toque"
+          ],
           "cost": "2 acciones, 1 chi",
           "range": "Toque",
           "desc": "Restauras Rango + 1 de Cordura al objetivo. Además, eliminas un hechizo Mental ajeno que lo afecte (mediante tiro enfrentado).",
@@ -64,7 +85,10 @@
         },
         {
           "name": "Alterar Emociones",
-          "tags": ["Mental", "Duradero"],
+          "tags": [
+            "Mental",
+            "Duradero"
+          ],
           "cost": "1 acción, 1 chi",
           "range": "Medio",
           "desc": "Induces un estado emocional en el objetivo: Cansancio, Ira, Miedo, Calma o Valentía. El efecto persiste hasta que el objetivo se recupere o termine el combate.",
@@ -75,11 +99,15 @@
     {
       "rank": "III",
       "title": "Profesional",
+      "draft": true,
       "passive": "Hechizos Mentales de Rango I cuestan -1 acción.",
       "abilities": [
         {
           "name": "Sobrecarga Mental",
-          "tags": ["Mental", "Cordura"],
+          "tags": [
+            "Mental",
+            "Cordura"
+          ],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
@@ -89,7 +117,9 @@
         },
         {
           "name": "Geas",
-          "tags": ["Mental"],
+          "tags": [
+            "Mental"
+          ],
           "cost": "1 acción, 2 chi",
           "range": "Medio",
           "duration": "1 día",
@@ -99,7 +129,10 @@
         },
         {
           "name": "Telepatía",
-          "tags": ["Mental", "Pasiva"],
+          "tags": [
+            "Mental",
+            "Pasiva"
+          ],
           "desc": "Estableces comunicación mental con criaturas que hayas detectado. Puedes lanzar hechizos mentales sin línea de visión contra objetivos detectados."
         }
       ]
@@ -107,11 +140,16 @@
     {
       "rank": "IV",
       "title": "Experto",
+      "draft": true,
       "passive": "Hechizos Mentales de Rango II cuestan -1 acción.",
       "abilities": [
         {
           "name": "Sugestión en Masa",
-          "tags": ["Mental", "Área", "Duradera"],
+          "tags": [
+            "Mental",
+            "Área",
+            "Duradera"
+          ],
           "cost": "2 acciones, 2 chi",
           "area": "Esfera media",
           "duration": "Concentración",
@@ -120,7 +158,10 @@
         },
         {
           "name": "Modificar Recuerdos",
-          "tags": ["Mental", "Duradera"],
+          "tags": [
+            "Mental",
+            "Duradera"
+          ],
           "cost": "2 acciones, 2 chi",
           "range": "Medio",
           "duration": "Permanente",
@@ -129,7 +170,10 @@
         },
         {
           "name": "Aura Emocional",
-          "tags": ["Mental", "Duradera"],
+          "tags": [
+            "Mental",
+            "Duradera"
+          ],
           "cost": "2 acciones, 2 chi",
           "area": "Esfera media",
           "duration": "Concentración",
@@ -141,11 +185,15 @@
     {
       "rank": "V",
       "title": "Maestro",
+      "draft": true,
       "passive": "Hechizos Mentales de Rango III cuestan -1 acción.",
       "abilities": [
         {
           "name": "Esclavizar",
-          "tags": ["Mental", "Duradera"],
+          "tags": [
+            "Mental",
+            "Duradera"
+          ],
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "duration": "Concentración",
@@ -154,7 +202,11 @@
         },
         {
           "name": "Mente en Blanco",
-          "tags": ["Mental", "Mejora", "Toque"],
+          "tags": [
+            "Mental",
+            "Mejora",
+            "Toque"
+          ],
           "cost": "1 acción, 3 chi",
           "range": "Toque",
           "desc": "El objetivo se vuelve inmune a efectos Mentales y a detección. El efecto termina si la Cordura del objetivo cae demasiado.",
@@ -162,7 +214,10 @@
         },
         {
           "name": "Destrozar Mente",
-          "tags": ["Mental", "Cordura"],
+          "tags": [
+            "Mental",
+            "Cordura"
+          ],
           "cost": "1 acción, 3 chi",
           "range": "Medio",
           "crit": "Objetivo cae Inconsciente.",
@@ -174,11 +229,16 @@
     {
       "rank": "VI",
       "title": "Ascendido",
+      "draft": true,
       "passive": "Hechizos Mentales de Rango IV cuestan -1 acción.",
       "abilities": [
         {
           "name": "Ráfaga Mental",
-          "tags": ["Mental", "Área", "Cordura"],
+          "tags": [
+            "Mental",
+            "Área",
+            "Cordura"
+          ],
           "cost": "3 acciones, 5 chi",
           "area": "Esfera media",
           "duration": "Concentración",

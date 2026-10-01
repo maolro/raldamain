@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Pruebas | Raldamain</title>
+    <meta name="description" content="Ficha de personaje a pantalla completa con lanzador de dados para playtesting.">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/statblock.css">
+    <link rel="stylesheet" href="/assets/css/mesa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+    <!-- Loading a sheet here must never overwrite the Creador character -->
+    <script>window.STATBLOCK_NO_PERSIST = true;</script>
+    <script src="/assets/js/builder/v-statblock.js"></script>
+</head>
+
+<body class="mesa">
+    <header class="mesa-bar">
+        <a href="/" class="mesa-home"><img src="/assets/images/raldamain_logo.png" alt="Raldamain"></a>
+        <h1 class="mesa-title">Mesa de Pruebas</h1>
+        <span class="mesa-sheet-name" id="sheet-name"></span>
+        <div class="mesa-load">
+            <select id="preset-select" class="mesa-btn" title="Fichas de los módulos de playtest">
+                <option value="">Fichas de playtest…</option>
+            </select>
+            <button id="load-creador" class="mesa-btn" title="Personaje guardado en el Creador de Personajes">Personaje del Creador</button>
+            <label class="mesa-btn mesa-btn-primary">
+                Cargar ficha (.json / .md)
+                <input type="file" id="file-input" accept=".json,.md,.txt" hidden>
+            </label>
+        </div>
+    </header>
+
+    <main class="mesa-grid">
+        <!-- 2/3: stat block -->
+        <section class="mesa-sheet" id="sheet">
+            <div class="mesa-empty" id="empty-state">
+                <div class="mesa-empty-icon">📜</div>
+                <h2>Carga una ficha</h2>
+                <p>Elige una ficha de playtest, abre el personaje del <a href="/creador.html">Creador</a>
+                    o carga un archivo <code>.json</code> (Descargar del Creador) o <code>.md</code>.
+                    También puedes arrastrarlo aquí.</p>
+                <p class="mesa-hint">Pulsa cualquier valor subrayado de la ficha para tirarlo.</p>
+            </div>
+
+            <div id="vue-sheet" hidden>
+                <div id="app">
+                    <v-statblock rollable></v-statblock>
+                </div>
+            </div>
+
+            <article id="md-sheet" class="md-statblock" hidden></article>
+        </section>
+
+        <!-- 1/3: dice roller -->
+        <aside class="mesa-dice">
+            <h2 class="dice-title">Tiradas</h2>
+
+            <div class="dice-grid" id="dice-grid"></div>
+
+            <div class="dice-pool" id="dice-pool"></div>
+
+            <div class="dice-controls">
+                <div class="mod-ctrl">
+                    <button id="mod-minus" class="mod-btn">−</button>
+                    <span id="mod-value" class="mod-value">0</span>
+                    <button id="mod-plus" class="mod-btn">+</button>
+                </div>
+                <button id="roll-pool" class="roll-btn">Tirar</button>
+                <button id="clear-pool" class="mesa-btn">Limpiar</button>
+            </div>
+
+            <form id="expr-form" class="expr-form">
+                <input id="expr-input" type="text" placeholder="+5 (1d20+5), +5+1d6, 2d6+4…" autocomplete="off">
+                <button type="submit" class="mesa-btn">🎲</button>
+            </form>
+
+            <div class="log-head-row">
+                <span>Historial</span>
+                <button id="clear-log" class="log-clear">Borrar</button>
+            </div>
+            <div class="dice-log" id="dice-log">
+                <div id="log-empty" class="log-empty">Sin tiradas todavía. Pulsa cualquier valor subrayado de la ficha para tirarlo.</div>
+            </div>
+            <div class="dice-flash" id="dice-flash"></div>
+        </aside>
+    </main>
+
+    <script src="/assets/js/builder/main.js"></script>
+    <script src="/assets/js/mesa.js"></script>
+</body>
+
+</html>
