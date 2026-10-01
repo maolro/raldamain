@@ -22,7 +22,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Velocidad Superior",
@@ -30,8 +30,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes +1 acción por turno. Sumas tu Rango a la Iniciativa.",
-          "empower": "Realizas una acción fuera de turno (pagando su coste)."
+          "desc": "Suma tu Rango a tu tiro de Iniciativa y recibes Ventaja en tus tiros de salvación Físicos."
         },
         {
           "name": "Instinto de Supervivencia",
@@ -39,7 +38,7 @@
             "Innata",
             "Reacción"
           ],
-          "desc": "Repites un tiro de DES (ataque, defensa o tiro de salvación) y te quedas con el mejor resultado. Usos por combate: Rango + 2.",
+          "desc": "Repites un tiro de Destreza y te quedas con el resultado que más te convenga. Puedes usar esta habilidad RANGO + 2 veces por combate.",
           "empower": "Recuperas un uso de esta habilidad."
         }
       ]
