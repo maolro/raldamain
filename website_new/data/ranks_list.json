@@ -58,9 +58,9 @@
     "name": "Mente Desencadenada",
     "category": "Combate",
     "image": "mente_desencadenada.jpg",
-    "description": "Desencadena tu poder mágico y fuerza física al precio de tu propia cordura.",
+    "description": "Conectas tu mente con un plano superior para alcanzar un estado cognitivo absoluto. Obtienes poderes psíquicos y resistencia mental a costa de tu propia cordura.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "rastrear",

@@ -17,7 +17,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Mente Desencadenada",
@@ -27,7 +27,7 @@
             "Pasiva"
           ],
           "duration": "Max 6 rondas",
-          "desc": "Entras en un estado de trance. Obtienes Ventaja en tiros de ataque, defensa y talentos Mentales, y provocas un dado de daño adicional con tus hechizos y ataques mágicos. Al terminar, sufres daño a Cordura igual a las rondas pasadas en Mente Desencadenada.",
+          "desc": "Obtienes Ventaja en todos sus tiros relacionados con estadísticas mentales, incluyendo Ataque, Defensa, Habilidad y Salvación, además que aumenta su daño base con magia por un dado. Este efecto dura hasta 6 rondas y cuando acabe reduces tu cordura por 1 por cada 2 rondas que hayas pasado en él.",
           "toggle": {
             "label": "Mente Desencadenada",
             "adv": [
@@ -36,7 +36,8 @@
               "Mental"
             ],
             "damage": "+1 dado"
-          }
+          },
+          "cost": "1 Acción"
         },
         {
           "name": "Agilidad Mental",
@@ -44,7 +45,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes (Rango + 2) niveles de talento adicionales para mejorar tus habilidades."
+          "desc": "Obtienes RANGO + 2 niveles de talento adicionales para mejorar tus habilidades."
         }
       ]
     },
