@@ -156,7 +156,7 @@ function renderRankPage(data) {
 
         // Add Passive text if it exists
         if (level.passive) {
-            levelHTML += `<p class="rank-passive">✦ ${linkStatusEffects(level.passive)}</p>`;
+            levelHTML += `<div class="rank-passive">✦ ${linkStatusEffects(formatRichText(level.passive))}</div>`;
         }
 
         // Start Grid
@@ -183,14 +183,14 @@ function renderRankPage(data) {
                         ${(ability.replace_mod || []).length ? `<div class="stat-pill umbral-pill">Usa este rango en: <span>${ability.replace_mod.join(', ')}</span></div>` : ''}
                     </div>
 
-                    <p class="ability-desc">
-                        ${linkStatusEffects(ability.desc)}
-                        ${ability.crit ? `<br><br><em style="color:#ff6b6b">Crítico:</em> ${linkStatusEffects(ability.crit)}` : ''}
-                    </p>
+                    <div class="ability-desc">
+                        ${linkStatusEffects(formatRichText(ability.desc))}
+                        ${ability.crit ? `<br><br><em style="color:#ff6b6b">Crítico:</em> ${linkStatusEffects(formatRichText(ability.crit))}` : ''}
+                    </div>
 
                     ${ability.empower ? `
                     <div class="empower-box">
-                        <span class="empower-label">Empoderar (1 Chi · máx. 2×):</span> ${linkStatusEffects(ability.empower)}
+                        <span class="empower-label">Empoderar (1 Chi · máx. 2×):</span> ${linkStatusEffects(formatRichText(ability.empower))}
                     </div>` : ''}
                 </article>
             `;

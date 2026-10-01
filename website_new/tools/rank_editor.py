@@ -138,6 +138,11 @@ def _sync_ranks_list(data):
     except Exception:
         pass
 
+@app.route("/richtext.js")
+def richtext_js():
+    js = BASE / "assets" / "js" / "richtext.js"
+    return Response(js.read_text(encoding="utf-8") if js.exists() else "", mimetype="application/javascript")
+
 @app.route("/")
 def index():
     return Response(HTML, mimetype="text/html")
@@ -149,6 +154,7 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <title>Rank Editor · Raldamain</title>
+<script src="/richtext.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -212,6 +218,17 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 .mod-auto{font-size:9px;padding:1px 5px;border-radius:3px;border:1px solid var(--border);color:var(--text3)}
 .mod-reset{font-size:9px;color:var(--blue);cursor:pointer;background:none;border:none;padding:0;font-family:inherit}
 .mod-reset:hover{text-decoration:underline}
+
+/* ── Rich text ── */
+.rt-lbl{display:flex;align-items:center;gap:6px}
+.rt-tools{margin-left:auto;display:flex;gap:3px}
+.rt-btn{font-size:10px;padding:1px 7px;border-radius:3px;border:1px solid var(--border);
+  background:var(--bg3);color:var(--text2);cursor:pointer;font-family:inherit;text-transform:none;letter-spacing:0}
+.rt-btn:hover{border-color:var(--goldd);color:var(--gold)}
+.rt-prev{font-size:11px;color:var(--text2);line-height:1.5;padding:4px 2px 0}
+.rt-prev:empty{display:none}
+.rt-prev strong,.cmp-desc strong{color:var(--text)}
+.rt-list{margin:3px 0 3px 16px}
 
 /* ── Boosts ── */
 .boost-section{border-top:1px solid var(--border);padding-top:8px;margin-top:4px}
@@ -937,9 +954,17 @@ function cardHtml(li, ab, ai) {
         <input class="inp" value="${esc(ab.crit||'')}" placeholder="—"
             oninput="setAb(${li},${ai},'crit',this.value)">
         </div>
-      <div class="field"><div class="lbl">Descripción</div>
-        <textarea class="inp" rows="3"
-          oninput="setAb(${li},${ai},'desc',this.value)">${esc(ab.desc||'')}</textarea></div>
+      <div class="field">
+        <div class="lbl rt-lbl">Descripción
+          <span class="rt-tools">
+            <button class="rt-btn" title="Negrita: **texto**" onclick="rtWrap(${li},${ai},'**')"><b>B</b></button>
+            <button class="rt-btn" title="Cursiva: *texto*" onclick="rtWrap(${li},${ai},'*')"><i>I</i></button>
+            <button class="rt-btn" title="Lista: líneas que empiezan por «- »" onclick="rtList(${li},${ai})">• Lista</button>
+          </span>
+        </div>
+        <textarea class="inp" rows="3" id="desc-${li}-${ai}"
+          oninput="setDesc(${li},${ai},this.value)">${esc(ab.desc||'')}</textarea>
+        <div class="rt-prev" id="rtprev-${li}-${ai}">${rtPreview(ab.desc)}</div></div>
       <div class="mod-opt" id="modopt-${li}-${ai}">${modOptHtml(li,ai)}</div>
       ${passiveSect}
       ${empHtml}
@@ -1003,6 +1028,51 @@ function setToggleArr(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggl
 function setToggleNum(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const n=parseInt(v); if(!isNaN(n))t[k]=n; else delete t[k]; renderToolbar(); }
 function setToggleCe(li,ai,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(!v){delete t.ce;renderToolbar();return;} const n=parseFloat(v); t.ce=isNaN(n)?v:n; renderToolbar(); }
 function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)ab[k]=a; else delete ab[k]; renderToolbar(); }
+
+// ── Rich text in descriptions: **negrita**, *cursiva*, "- " lists ─────────────
+const NL = String.fromCharCode(10);
+function rich(t) { return typeof formatRichText === 'function' ? formatRichText(t) : t; }
+function rtPreview(t) {
+  if (!t || !(t.includes('*') || t.includes(NL))) return '';
+  return `<div class="lbl">Vista previa</div>${rich(esc(t))}`;
+}
+function setDesc(li,ai,v) {
+  setAb(li,ai,'desc',v);
+  const p = document.getElementById(`rtprev-${li}-${ai}`);
+  if (p) p.innerHTML = rtPreview(v);
+}
+// Wraps the selection (or a placeholder) in ** / *
+function rtWrap(li,ai,mark) {
+  const ta = document.getElementById(`desc-${li}-${ai}`); if (!ta) return;
+  let a = ta.selectionStart, b = ta.selectionEnd;
+  // keep spaces around the selection outside the markers ("**texto** " not "**texto **")
+  while (a < b && ta.value[a] === ' ') a++;
+  while (b > a && ta.value[b-1] === ' ') b--;
+  const sel = ta.value.slice(a,b) || 'texto';
+  ta.value = ta.value.slice(0,a) + mark + sel + mark + ta.value.slice(b);
+  ta.focus(); ta.setSelectionRange(a + mark.length, a + mark.length + sel.length);
+  setDesc(li,ai,ta.value);
+}
+// Toggles "- " on the selected lines, or starts a new list item at the cursor
+function rtList(li,ai) {
+  const ta = document.getElementById(`desc-${li}-${ai}`); if (!ta) return;
+  const v = ta.value, a = ta.selectionStart, b = ta.selectionEnd;
+  if (a === b) {
+    const atLineStart = a === 0 || v[a-1] === NL;
+    const ins = (atLineStart ? '' : NL) + '- ';
+    ta.value = v.slice(0,a) + ins + v.slice(a);
+    ta.focus(); ta.setSelectionRange(a + ins.length, a + ins.length);
+  } else {
+    const start = v.lastIndexOf(NL, a - 1) + 1;
+    let end = v.indexOf(NL, b); if (end < 0) end = v.length;
+    const lines = v.slice(start,end).split(NL);
+    const allItems = lines.every(l => l.startsWith('- '));
+    const block = lines.map(l => allItems ? l.slice(2) : (l.startsWith('- ') || !l.trim() ? l : '- ' + l)).join(NL);
+    ta.value = v.slice(0,start) + block + v.slice(end);
+    ta.focus(); ta.setSelectionRange(start, start + block.length);
+  }
+  setDesc(li,ai,ta.value);
+}
 
 // ── Show modifier ("+X — Descripción" in the character stat block) ───────────
 // Not set → default: on for "Ataque" abilities (and abilities whose text says "debe superar").
@@ -1263,7 +1333,7 @@ function renderCmpCol(side) {
               ${(ab.tags||[]).map(t=>`<span class="tag" data-t="${t}">${t}</span>`).join('')}
               ${ab.cost?`<span class="cmp-cost">${ab.cost}</span>`:''}
             </div>
-            <div class="cmp-desc">${ab.desc||''}</div>
+            <div class="cmp-desc">${rich(ab.desc||'')}</div>
             ${ab.umbrales||ab.hits?`<div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:5px">
               ${ab.umbrales?`<span class="umb-pill">🛡 ${umbText(ab.umbrales)}</span>`:''}
               ${ab.hits?`<span class="umb-pill">+${ab.hits} Impactos</span>`:''}

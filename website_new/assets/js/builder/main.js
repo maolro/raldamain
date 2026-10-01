@@ -345,6 +345,8 @@ new Vue({
             let obArray = this.myatb[cat];
             const getEmpowerCost = () => '1 chi · máx. 2×';
             const rankInMap = (skill) => skill && skill in this.ranks;
+            // **negrita**, *cursiva*, "- " lists and line breaks (assets/js/richtext.js)
+            const rich = (t) => typeof formatRichText === 'function' ? formatRichText(t) : t;
             const attr = (v) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
             return obArray.map(obj => {
                 // Combat states ("toggle"): a tick box before the name; ticking it applies the
@@ -367,8 +369,8 @@ new Vue({
                 if (obj.area) descParts.push(obj.area);
                 if (obj.duration) descParts.push(obj.duration);
                 let desc = rankInMap(obj.skill)
-                    ? this.replaceTag(this.resolveRankText(obj.description, obj.rank), obj.rank, obj.skill)
-                    : this.resolveWeaponDesc(obj);
+                    ? this.replaceTag(this.resolveRankText(rich(obj.description), obj.rank), obj.rank, obj.skill)
+                    : rich(this.resolveWeaponDesc(obj));
                 desc = this.resolveStatTokens(desc);
                 // Modifier prefix "+X — Description": set per ability in the rank editor (show_mod);
                 // by default on for "Ataque" abilities and abilities that force a save
@@ -410,13 +412,13 @@ new Vue({
                     formattedString += ': ' + descParts.join(', ');
                 if (obj.crit) {
                     let crit = rankInMap(obj.skill)
-                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(obj.crit, obj.rank), obj.rank, obj.skill))
+                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.crit), obj.rank), obj.rank, obj.skill))
                         : obj.crit;
                     formattedString += ` Crítico: ${crit}`;
                 }
                 if (obj.empower) {
                     let empower = rankInMap(obj.skill)
-                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(obj.empower, obj.rank), obj.rank, obj.skill))
+                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.empower), obj.rank), obj.rank, obj.skill))
                         : obj.empower;
                     formattedString += ` <i>Empoderar (${getEmpowerCost()}): ${empower}</i>`;
                 }
@@ -427,6 +429,11 @@ new Vue({
             let toMd = (text) => {
                 return text
                     .replace(/<br><br>/g, "\n\n")
+                    .replace(/<ul[^>]*>/g, "\n").replace(/<\/ul>/g, "\n")
+                    .replace(/<li>(.*?)<\/li>/g, "- $1\n")
+                    .replace(/<br>/g, "\n")
+                    .replace(/<strong>(.*?)<\/strong>/g, "**$1**")
+                    .replace(/<em>(.*?)<\/em>/g, "_$1_")
                     .replace(/<b[^>]*>(.*?)<\/b>/g, "**$1**")
                     .replace(/<i>(.*?)<\/i>/g, "_$1_")
                     .replace(/<[^>]+>/g, '');
