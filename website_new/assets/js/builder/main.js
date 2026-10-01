@@ -121,7 +121,10 @@ new Vue({
                                 for (let level of (rankData.levels || [])) {
                                     let rankNum = romanToNum[level.rank] || 1;
                                     for (let ability of (level.abilities || [])) {
-                                        let atbId = toKebab(ability.name);
+                                        // Unique per rank + level: the same name can appear in several
+                                        // levels or ranks (e.g. two "Demostración Terrorífica" in Ira)
+                                        let atbId = `${rankId}--${rankNum}--${toKebab(ability.name)}`;
+                                        if (attributeIds.includes(atbId)) atbId += '--' + attributeIds.length;
                                         attributeIds.push(atbId);
                                         if (!(atbId in vm.attributes)) {
                                             let type = getTypeFromTags(ability.tags);
@@ -362,7 +365,7 @@ new Vue({
                 if (obj.area) descParts.push(obj.area);
                 if (obj.duration) descParts.push(obj.duration);
                 let desc = rankInMap(obj.skill)
-                    ? this.replaceTag(obj.description, obj.rank, obj.skill)
+                    ? this.replaceTag(this.resolveRankText(obj.description, obj.rank), obj.rank, obj.skill)
                     : this.resolveWeaponDesc(obj);
                 desc = this.resolveStatTokens(desc);
                 // Modifier prefix "+X — Description": set per ability in the rank editor (show_mod);
@@ -405,13 +408,13 @@ new Vue({
                     formattedString += ': ' + descParts.join(', ');
                 if (obj.crit) {
                     let crit = rankInMap(obj.skill)
-                        ? this.resolveStatTokens(this.replaceTag(obj.crit, obj.rank, obj.skill))
+                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(obj.crit, obj.rank), obj.rank, obj.skill))
                         : obj.crit;
                     formattedString += ` Crítico: ${crit}`;
                 }
                 if (obj.empower) {
                     let empower = rankInMap(obj.skill)
-                        ? this.resolveStatTokens(this.replaceTag(obj.empower, obj.rank, obj.skill))
+                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(obj.empower, obj.rank), obj.rank, obj.skill))
                         : obj.empower;
                     formattedString += ` <i>Empoderar (${getEmpowerCost()}): ${empower}</i>`;
                 }
@@ -727,6 +730,28 @@ ${reactions}
                 if (applies) boosts.push(t.damage);
             }
             return boosts;
+        },
+        // Resolves rank formulas written in ability text with the character's rank:
+        // "Rango + 2", "tu Rango x 3", "(Rango + 1)", "Rango / 2" → the number
+        // (division rounds down). The formula is kept as a tooltip.
+        resolveRankText(str, rk) {
+            if (!str || !rk) return str;
+            const calc = (op, n) => {
+                n = parseInt(n, 10);
+                switch (op) {
+                    case '+': return rk + n;
+                    case '-': case '−': return rk - n;
+                    case '/': return Math.floor(rk / n);
+                    default: return rk * n;   // x × *
+                }
+            };
+            return str.replace(/\(\s*(?:tu\s+)?rango\s*([+\-−x×*\/])\s*(\d+)\s*\)|(?:\btu\s+)?\brango\s*([+\-−x×*\/])\s*(\d+)\b/gi,
+                (m, op1, n1, op2, n2) => {
+                    const v = calc(op1 || op2, n1 || n2);
+                    // Normalised ("Rango + 1") so replaceTag's RANGO/arithmetic pass leaves it alone
+                    const formula = `Rango ${op1 || op2} ${n1 || n2}`;
+                    return `<span class="sb-calc" title="${formula}">${v}</span>`;
+                });
         },
         resolveStatTokens(str) {
             if (!str) return str;
@@ -1059,7 +1084,9 @@ ${reactions}
             //Add rank abilities
             for (let key in this.myranks) {
                 if (this.myranks[key].rank != 0) {
-                    let atlist = (this.myranks[key].attributes).split(",");
+                    // Prefer the current rank data over the copy stored in a saved character
+                    const fresh = this.ranks[this.myranks[key].id];
+                    let atlist = ((fresh && fresh.attributes) || this.myranks[key].attributes || '').split(",");
                     for (let i in atlist) {
                         let eid = atlist[i].trim();
                         if (eid in this.attributes && this.attributes[eid].rank <= this.myranks[key].rank) {

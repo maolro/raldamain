@@ -56,6 +56,14 @@
     padding: 0 4px;
 }
 
+/* Rank formulas resolved to a number ("Rango + 2" → 3); formula on hover */
+.statblock-char .sb-calc {
+    color: #7fd1ff;
+    font-weight: bold;
+    border-bottom: 1px dotted #7fd1ff;
+    cursor: help;
+}
+
 /* Combat stats grid */
 .preview-stats-row {
     display: flex;
