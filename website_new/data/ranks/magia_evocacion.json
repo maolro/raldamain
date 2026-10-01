@@ -68,7 +68,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "passive": "Aprendes dos hechizos de Rango I de tu Especialidad Arcana.",
       "abilities": [
         {
@@ -79,12 +79,11 @@
             "Defensivo",
             "Duradero"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
           "area": "Línea mediana o esfera pequeña",
           "duration": "Concentración",
-          "desc": "Creas una barrera con PV iguales a Rango x 3. Es inmune a daño físico no mágico y bloquea ataques a distancia y de área. Cruzar la barrera inflige 1d6 + INT de daño. Puedes crearla como reacción para uso defensivo.",
-          "empower": "Recuperas todos los PV del muro (solo si tiene al menos 1 PV restante)."
+          "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren 1d6 + INT daño Fuego, Frío, Ácido o Eléctrico."
         },
         {
           "name": "Infundir Arma",
@@ -100,6 +99,15 @@
           "duration": "Una hora",
           "desc": "El arma tocada cuenta como Arcana y otorga +1 chi a su portador. Como acción bonus, el portador puede infundir un ataque con un hechizo conocido, pagando su coste +1 chi adicional.",
           "empower": "Aumenta la reserva del portador en 1 chi adicional."
+        },
+        {
+          "name": "Metamagia",
+          "tags": [
+            "Evocación",
+            "Mejora"
+          ],
+          "desc": "Mejora un hechizo de tu elección con una de las siguientes opciones. Puedes aplicar esta habilidad además del Empoderar del hechizo correspondiente.\n- Aumenta su alcance por un paso (máximo Extremo)\n- Aumenta su área por un paso (máximo Gigante)\n- Aumenta su daño por un dado\n- Lanza el hechizo de nuevo como acción bonus",
+          "cost": "1 Chi"
         }
       ]
     },
