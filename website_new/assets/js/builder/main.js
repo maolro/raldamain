@@ -437,6 +437,8 @@ new Vue({
                     ms.push(`**Talentos:** ${this.talstring}`);
                 if (this.arcString)
                     ms.push(`**Arquetipos:** ${this.arcString}`);
+                if (this.equipmentList.length)
+                    ms.push(`**Equipamiento:** ` + this.equipmentList.map(e => `${e.slot}: ${e.text}`).join(' · '));
                 return ms.join('\n');
             };
             let midSect = () => {
@@ -1262,6 +1264,33 @@ ${reactions}
             }
 
             return lines.join('<br><br>');
+        },
+        // Equipped items for the stat block: [{ slot, text }] (text may hold +X modifiers)
+        equipmentList: function () {
+            const eq = this.equipment || {};
+            const named = (it) => it && it.name && it.name.trim();
+            const styleLabel = { heavy: 'Coloso', duelist: 'Duelista', light: 'Asesino', ranged: 'Asesino, a distancia', flex: 'Flexible', shield: 'Escudo' };
+            const list = [];
+            if (named(eq.armor)) {
+                const bits = [];
+                const umb = eq.armor.umbrales || (eq.armor.def != null ? [{ value: eq.armor.def, categories: 'Físico' }] : []);
+                umb.forEach(u => bits.push(`Umbral ${u.categories || 'General'} +${u.value}`));
+                if (eq.armor.penalty) bits.push(`penalización DES ${String(eq.armor.penalty).replace('-', '−')}`);
+                list.push({ slot: 'Armadura', text: eq.armor.name.trim() + (bits.length ? ` (${bits.join(', ')})` : '') });
+            }
+            const atkAdv = this.toggleBuffs.adv.includes('Ataque');
+            [['Mano principal', eq.mainHand], ['Mano secundaria', eq.secondHand]].forEach(([slot, w]) => {
+                if (!named(w)) return;
+                const mod = this.weaponMod(w);
+                const bits = [];
+                if (mod) bits.push(atkAdv ? mod + '+1d6' : mod);
+                if (w.style && styleLabel[w.style]) bits.push(styleLabel[w.style]);
+                list.push({ slot, text: w.name.trim() + (bits.length ? ` (${bits.join(', ')})` : '') });
+            });
+            if (named(eq.head)) list.push({ slot: 'Cabeza', text: eq.head.name.trim() });
+            const bag = (eq.bag || []).filter(named).map(it => it.name.trim());
+            if (bag.length) list.push({ slot: 'Bolsa', text: bag.join(', ') });
+            return list;
         },
         weaponString: function () {
             const atkAdv = this.toggleBuffs.adv.includes('Ataque');
