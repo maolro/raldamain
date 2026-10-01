@@ -51,6 +51,7 @@ new Vue({
         race: {},
         activeToggles: [],
         copyLabel: 'Copiar ficha (Markdown)',
+        formKey: 0,
         // The Mesa de Pruebas sets this so loading a file there never overwrites the Creador character
         noPersist: !!window.STATBLOCK_NO_PERSIST,
     },
@@ -351,7 +352,9 @@ new Vue({
                     : rich(this.resolveWeaponDesc(obj));
                 desc = this.resolveStatTokens(desc);
                 const tagsArr = (obj.tags || '').split(',').map(t => t.trim());
-                const isAttack = rankInMap(obj.skill) && tagsArr.includes('Ataque');
+                // Structured equipment weapon (equipment editor): damage dice + weapon stat
+                const weapon = !rankInMap(obj.skill) && obj.damage ? this.weaponRoll(obj) : null;
+                const isAttack = (rankInMap(obj.skill) || !!weapon) && tagsArr.includes('Ataque');
                 // Modifier "+X": set per ability in the rank editor (show_mod);
                 // by default on for "Ataque" abilities and abilities that force a save
                 let modStr = null;
@@ -370,6 +373,7 @@ new Vue({
                         }
                     }
                 }
+                if (weapon && obj.show_mod !== false && isAttack) modStr = weapon.modStr;
                 // Inline resistances/immunities granted by this ability
                 const extras = [];
                 if (obj.resistances && obj.resistances.length > 0) extras.push(`Resistencia a ${obj.resistances.join(', ')}`);
@@ -381,7 +385,8 @@ new Vue({
                 if (obj.damage) {
                     const dmgBoosts = this.getDamageBoosts(obj);
                     const plain = dmgBoosts.filter(b => !b.type).map(b => b.dice);
-                    const baseDice = rankInMap(obj.skill) ? this.resolveStatTokens(obj.damage) : obj.damage;
+                    const baseDice = rankInMap(obj.skill) ? this.resolveStatTokens(obj.damage)
+                        : weapon ? `${obj.damage} + ${weapon.stat}` : obj.damage;
                     const boostedDice = plain.length > 0 ? this.applyDiceBoosts(baseDice, plain) : baseDice;
                     const typeStr = obj.damage_type ? ` ${obj.damage_type}` : '';
                     dmgLabel = `${boostedDice} daño${typeStr}${this.typedDamageText(dmgBoosts)}`;
@@ -653,7 +658,23 @@ ${reactions}
             if (repl && repl.value > mod) mod = repl.value;
             return mod >= 0 ? `+${mod}` : `${mod}`;
         },
+        // "Nueva ficha": back to an empty character (asks first)
+        resetCharacter() {
+            if (!confirm('¿Borrar la ficha actual y empezar una nueva? Esta acción no se puede deshacer (descarga la ficha antes si quieres conservarla).')) return;
+            this.loadCharacter({
+                name: 'Nombre', level: 1, race: {},
+                stats: {
+                    str: { name: "FUE", value: 0 }, dex: { name: "DES", value: 0 }, con: { name: "CON", value: 0 },
+                    itl: { name: "INT", value: 0 }, wis: { name: "SAB", value: 0 }, cha: { name: "CAR", value: 0 }
+                },
+                talents: {}, ranks: [], archetypes: [], spells: {},
+                equipment: { armor: {}, mainHand: {}, secondHand: {}, head: {}, bag: [] },
+            });
+            this.getData("mytalents", '/data/builder/talents.json');
+        },
         loadCharacter(character) {
+            this.activeToggles = [];
+            this.formKey++;   // re-mount the form tabs so their pickers show the loaded values
             this.charactername = character["name"];
             this.level = character["level"];
             this.race = character["race"];
@@ -896,9 +917,9 @@ ${reactions}
             }
             return Math.min(count, 4);
         },
-        resolveWeaponDesc(obj) {
-            const desc = obj.description || '';
-            if (!desc.includes('MOD') && !desc.includes('STAT')) return desc;
+        // Weapon roll from its tags (Pesada → FUE + Coloso, Duelo → best of FUE/DES + Duelista,
+        // Ligera / A Distancia → DES + Asesino): { stat, modStr } incl. rank replacement and advantage
+        weaponRoll(obj) {
             const tags = (obj.tags || '').toLowerCase();
             const strV = this.finalStats.str.value === '-' ? 0 : this.finalStats.str.value;
             const dexV = this.finalStats.dex.value === '-' ? 0 : this.finalStats.dex.value;
@@ -919,7 +940,13 @@ ${reactions}
             if (armaRepl && armaRepl.value > mod) mod = armaRepl.value;
             const advCount = this.abilityAdvantageCount(obj, [statKey]);
             const advStr = advCount > 0 ? '+' + advCount + 'd6' : '';
-            const modStr = (mod >= 0 ? '+' + mod : String(mod)) + advStr;
+            return { stat, modStr: (mod >= 0 ? '+' + mod : String(mod)) + advStr };
+        },
+        // Legacy weapon text templates: "+MOD para atacar, …, 1d8 + STAT daño Cortante."
+        resolveWeaponDesc(obj) {
+            const desc = obj.description || '';
+            if (!desc.includes('MOD') && !desc.includes('STAT')) return desc;
+            const { stat, modStr } = this.weaponRoll(obj);
             return desc
                 .replace(/\+MOD\b/g, modStr)
                 .replace(/\bSTAT\b/g, String(stat));
@@ -1154,9 +1181,11 @@ ${reactions}
                 }
                 else if (key == 'bag') {
                     for (let i in slot) {
-                        let eid = slot[i];
-                        if ('eqab' in eid && eid.eqab in this.eqAtb) {
-                            abSwitch(this.eqAtb[eid.eqab]);
+                        const bagItem = slot[i];
+                        if (!bagItem || !bagItem.eqab) continue;
+                        // An item may grant several abilities ("a,b"), like the other slots
+                        for (const eid of String(bagItem.eqab).split(',').map(x => x.trim())) {
+                            if (eid in this.eqAtb) abSwitch({ ...this.eqAtb[eid] });
                         }
                     }
                 }

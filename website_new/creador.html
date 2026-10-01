@@ -86,6 +86,7 @@
             <div class="builder-actions-inline">
                 <button @click="downloadCharacterInfo">Descargar</button>
                 <button @click="loadCharacterFromFile">Cargar</button>
+                <button @click="resetCharacter" title="Borra la ficha y empieza un personaje nuevo">Nueva ficha</button>
             </div>
         </nav>
 
@@ -95,21 +96,21 @@
             <main class="builder-form">
                 <div class="tab-content" id="mainTabContent">
                     <div class="tab-pane fade show active" id="stats" role="tabpanel">
-                        <v-statpage v-bind:level="level" :stats="stats" :races="races" :arclevels="arclevels"
+                        <v-statpage :key="'v-statpage-' + formKey" v-bind:level="level" :stats="stats" :races="races" :arclevels="arclevels"
                             :charactername="charactername" @set-race="race = $event"
                             @set-level="level = $event" @set-name="charactername = $event"></v-statpage>
                     </div>
                     <div class="tab-pane fade" id="talents" role="tabpanel">
-                        <v-talpage v-bind:level="level" :talents="talents" :psatb="myatb.passive"></v-talpage>
+                        <v-talpage :key="'v-talpage-' + formKey" v-bind:level="level" :talents="talents" :psatb="myatb.passive"></v-talpage>
                     </div>
                     <div class="tab-pane fade" id="ranks" role="tabpanel">
-                        <v-rankpage v-bind:ranks="ranks" :level="level" :rkpoints="rkpoints"></v-rankpage>
+                        <v-rankpage :key="'v-rankpage-' + formKey" v-bind:ranks="ranks" :level="level" :rkpoints="rkpoints"></v-rankpage>
                     </div>
                     <div class="tab-pane fade" id="spells" role="tabpanel">
-                        <v-spellpage></v-spellpage>
+                        <v-spellpage :key="'v-spellpage-' + formKey"></v-spellpage>
                     </div>
                     <div class="tab-pane fade" id="gear" role="tabpanel">
-                        <v-equipage v-bind:equipment="equipment" :eqlist="eqList" :bagslots="equipment['bag']">
+                        <v-equipage :key="'v-equipage-' + formKey" v-bind:equipment="equipment" :eqlist="eqList" :bagslots="equipment['bag']">
                         </v-equipage>
                     </div>
                     <div class="tab-pane fade" id="archetypes" role="tabpanel">

@@ -9,7 +9,7 @@ Vue.component('v-equipage', {
             <b>Armadura</b>
         </div>
     <div class="col-6">
-        <v-select-search v-bind:optionsobj="eqlist.armor" 
+        <v-select-search v-bind:optionsobj="optsArmor" 
             :placeholder="getPlaceholder(equipment.armor)"
             v-on:selected-key="addItem('armor', 'armor', $event)">
         </v-select-search>
@@ -20,7 +20,7 @@ Vue.component('v-equipage', {
             <b>Mano Principal</b>
         </div>
         <div class="col-6">
-            <v-select-search v-bind:optionsobj="eqlist.weapons" 
+            <v-select-search v-bind:optionsobj="optsWeapons" 
             :placeholder="getPlaceholder(equipment.mainHand)"
                 v-on:selected-key="addItem('mainHand', 'weapons', $event)">
             </v-select-search>
@@ -31,7 +31,7 @@ Vue.component('v-equipage', {
             <b>Mano Secundaria</b>
         </div>
         <div class="col-6">
-            <v-select-search v-bind:optionsobj="eqlist.weapons" 
+            <v-select-search v-bind:optionsobj="optsWeapons" 
             :placeholder="getPlaceholder(equipment.secondHand)"
                 v-on:selected-key="addItem('secondHand', 'weapons', $event)">
             </v-select-search>
@@ -42,7 +42,7 @@ Vue.component('v-equipage', {
             <b>Cabeza</b>
         </div>
         <div class="col-6">
-            <v-select-search v-bind:optionsobj="eqlist.head" 
+            <v-select-search v-bind:optionsobj="optsHead" 
                 :placeholder="getPlaceholder(equipment.head)"
                 v-on:selected-key="addItem('head', 'head', $event)">
             </v-select-search>
@@ -58,7 +58,7 @@ Vue.component('v-equipage', {
         </div>
     </div>
     <div v-for="(value, index) in bagslots" class="mb-2">
-        <v-select-search v-bind:optionsobj="eqlist.bag" :placeholder="equipment.bag[index]"
+        <v-select-search v-bind:optionsobj="optsBag" :placeholder="getPlaceholder(equipment.bag[index])"
             v-on:selected-key="addBagItem($event, index)">
         </v-select-search>
     </div>
@@ -81,13 +81,25 @@ Vue.component('v-equipage', {
     },
     data: function() {
         return {
-            bagItems: 0,
+            bagItems: (this.bagslots || []).length,
         };
     },
     computed: {
-
+        // Picker options per slot, each with "— Sin equipar —" first
+        optsArmor: function () { return this.withNone(this.eqlist.armor); },
+        optsWeapons: function () { return this.withNone(this.eqlist.weapons); },
+        optsHead: function () { return this.withNone(this.eqlist.head); },
+        optsBag: function () { return this.withNone(this.eqlist.bag); },
     },
     methods: {
+        // Options with a first "— Sin equipar —" entry (empty items like head "" are hidden)
+        withNone(obj) {
+            const res = { '__none': { name: '— Sin equipar —' } };
+            for (const k in (obj || {})) {
+                if (obj[k] && obj[k].name && obj[k].name.trim()) res[k] = obj[k];
+            }
+            return res;
+        },
         addItem(slot, cat, id) {
             if (cat in this.eqlist && id in this.eqlist[cat])
                 this.equipment[slot] = this.eqlist[cat][id];
@@ -105,7 +117,7 @@ Vue.component('v-equipage', {
             return res;
         },
         addBagItem(id, index){
-            if(id in this.eqlist['bag'])
+            if(id !== '__none' && id in this.eqlist['bag'])
                 this.$set(this.bagslots, index, {...this.eqlist['bag'][id]});
             else
                 this.$set(this.bagslots, index, {});

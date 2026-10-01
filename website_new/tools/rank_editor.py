@@ -6,7 +6,6 @@ Needs:  pip install flask
 """
 
 import json
-import subprocess
 import sys
 import threading
 import webbrowser
@@ -23,50 +22,9 @@ BASE       = Path(__file__).parent.parent
 RANKS_DIR  = BASE / "data" / "ranks"
 RANKS_LIST = BASE / "data" / "ranks_list.json"
 
-# Guardar commits the rank (+ ranks_list.json) and pushes it to GitHub — but only
-# while the repo is on this branch. Set to None to allow any branch.
-GIT_BRANCH = "rank-impactos-umbrales"
-
-# ── Git ───────────────────────────────────────────────────────────────────────
-
-def _git(*args, timeout=30):
-    return subprocess.run(["git", *args], cwd=BASE, capture_output=True,
-                          text=True, encoding="utf-8", timeout=timeout)
-
-def _current_branch():
-    try:
-        r = _git("branch", "--show-current", timeout=10)
-        return r.stdout.strip() if r.returncode == 0 else ""
-    except Exception:
-        return ""
-
-def _git_push(files, message):
-    """Commit only `files`, rebase on the remote branch and push.
-    Returns 'ok', 'nothing', 'wrong-branch:<name>' or an error string."""
-    branch = _current_branch()
-    if GIT_BRANCH and branch != GIT_BRANCH:
-        return f"wrong-branch:{branch or '?'}"
-    try:
-        _git("add", "--", *files)
-        # Commit just these paths so other staged/modified files are never swept in
-        r = _git("commit", "-m", message, "--", *files)
-        if r.returncode != 0:
-            if "nothing to commit" in (r.stdout + r.stderr) or "no changes added" in (r.stdout + r.stderr):
-                return "nothing"
-            return r.stderr.strip() or "commit error"
-        # Rebase on the remote branch first (if it exists) so the push is never rejected
-        if _git("ls-remote", "--exit-code", "--heads", "origin", branch, timeout=60).returncode == 0:
-            r = _git("pull", "--rebase", "--autostash", "origin", branch, timeout=90)
-            if r.returncode != 0:
-                return "pull: " + (r.stderr.strip() or "error")
-        r = _git("push", "-u", "origin", branch, timeout=120)
-        if r.returncode != 0:
-            return "push: " + (r.stderr.strip() or "error")
-        return "ok"
-    except subprocess.TimeoutExpired:
-        return "timeout"
-    except Exception as e:
-        return str(e)
+# Guardar commits the rank (+ ranks_list.json) and pushes it (see git_sync.py for the branch guard)
+sys.path.insert(0, str(Path(__file__).parent))
+from git_sync import GIT_BRANCH, current_branch as _current_branch, git_push as _git_push  # noqa: E402
 
 def _is_draft(obj):
     return obj.get("draft", True) is not False

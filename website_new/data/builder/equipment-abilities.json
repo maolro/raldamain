@@ -1,176 +1,227 @@
 {
     "arco": {
         "name": "Arco",
-        "skill":"armas-a-distancia", 
-        "type": "Accion", 
+        "skill": "armas-a-distancia",
+        "type": "Accion",
         "cost": "2 Acciones",
-        "tags": "Físico, Ataque, A Distancia", 
-        "description": "+MOD para atacar, Distancia lejana, 1d10 + STAT daño Perforante."
+        "tags": "Físico, Ataque, A Distancia",
+        "range": "Distancia lejana",
+        "damage": "1d10",
+        "damage_type": "Perforante",
+        "description": ""
     },
-    "bateria-de-chi":{
+    "bateria-de-chi": {
         "name": "Batería de Chi",
-        "type": "Pasiva", 
-        "tags": "Objeto, Arcano", 
+        "type": "Pasiva",
+        "tags": "Objeto, Arcano",
         "chi": 3,
         "description": "Tiene una batería de chi que aumenta su reserva máxima de chi por 3. (ya incluida)"
     },
     "cadena": {
         "name": "Cadena",
-        "skill":"cadenas", 
-        "type": "Accion", 
+        "skill": "cadenas",
+        "type": "Accion",
         "cost": "2 Acciones",
-        "tags": "Físico, Ataque, Cadena", 
-        "description": "+MOD para atacar, Distancia cercana, 1d10 + STAT daño Contundente."
+        "tags": "Físico, Ataque, Cadena",
+        "range": "Distancia cercana",
+        "damage": "1d10",
+        "damage_type": "Contundente",
+        "description": ""
     },
     "daga": {
         "name": "Daga",
-        "skill":"armas-ligeras", 
-        "type": "Accion", 
+        "skill": "armas-ligeras",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Ligera, A Distancia", 
-        "description": "+MOD para atacar, Adyacente o Distancia media, 1d6 + STAT daño Perforante."
+        "tags": "Físico, Ataque, Ligera, A Distancia",
+        "range": "Adyacente o Distancia media",
+        "damage": "1d6",
+        "damage_type": "Perforante",
+        "description": ""
     },
     "espada-larga": {
         "name": "Espada Larga",
-        "skill":"armas-de-duelo", 
-        "type": "Accion", 
+        "skill": "armas-de-duelo",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Duelo", 
-        "description": "+MOD para atacar, Adyacente, 1d8 + STAT daño Cortante."
+        "tags": "Físico, Ataque, Duelo",
+        "range": "Adyacente",
+        "damage": "1d8",
+        "damage_type": "Cortante",
+        "description": ""
     },
     "espada-ropera": {
         "name": "Espada Ropera",
-        "skill":"armas-de-duelo", 
-        "type": "Accion", 
+        "skill": "armas-de-duelo",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Duelo", 
-        "description": "+MOD para atacar, Adyacente, 1d8 + STAT daño Perforante."
+        "tags": "Físico, Ataque, Duelo",
+        "range": "Adyacente",
+        "damage": "1d8",
+        "damage_type": "Perforante",
+        "description": ""
     },
     "escudo": {
         "name": "Escudo",
-        "skill":"escudo", 
-        "type": "Accion", 
+        "skill": "escudo",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Escudo", 
-        "description": "+MOD para atacar, Adyacente, 1d6 + STAT daño Contundente."
-    },    
+        "tags": "Físico, Ataque, Escudo",
+        "range": "Adyacente",
+        "damage": "1d6",
+        "damage_type": "Contundente",
+        "description": ""
+    },
     "garra": {
         "name": "Garra",
-        "skill":"estilo-salvaje", 
-        "type": "Accion", 
+        "skill": "estilo-salvaje",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Marcial, Salvaje", 
+        "tags": "Físico, Ataque, Marcial, Salvaje",
         "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Cortante."
     },
     "garrote": {
         "name": "Garrote",
-        "skill":"armas-pesadas", 
-        "type": "Accion", 
+        "skill": "armas-pesadas",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Pesada", 
-        "description": "+MOD para atacar, Adyacente, 1d6 + STAT daño Contundente."
+        "tags": "Físico, Ataque, Pesada",
+        "range": "Adyacente",
+        "damage": "1d6",
+        "damage_type": "Contundente",
+        "description": ""
     },
     "golpe-serpiente": {
         "name": "Golpe Serpiente",
-        "skill":"estilo-serpiente", 
-        "type": "Accion", 
+        "skill": "estilo-serpiente",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Marcial, Serpiente", 
+        "tags": "Físico, Ataque, Marcial, Serpiente",
         "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Contundente, Perforante o Cortante."
     },
     "gran-hacha": {
         "name": "Gran Hacha",
-        "skill":"armas-pesadas", 
-        "type": "Accion", 
+        "skill": "armas-pesadas",
+        "type": "Accion",
         "cost": "2 Acciones",
-        "tags": "Físico, Ataque, Pesada", 
-        "description": "+MOD para atacar, Adyacente, 2d8 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
+        "tags": "Físico, Ataque, Pesada",
+        "range": "Adyacente",
+        "damage": "2d8",
+        "damage_type": "Cortante",
+        "description": "El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
     },
     "gran-maza": {
         "name": "Gran Maza",
-        "skill":"armas-pesadas", 
-        "type": "Accion", 
+        "skill": "armas-pesadas",
+        "type": "Accion",
         "cost": "2 Acciones",
-        "tags": "Físico, Ataque, Pesada", 
-        "description": "+MOD para atacar, Adyacente, 2d8 + STAT daño Contundente. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
+        "tags": "Físico, Ataque, Pesada",
+        "range": "Adyacente",
+        "damage": "2d8",
+        "damage_type": "Contundente",
+        "description": "El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
     },
     "hacha-de-batalla": {
         "name": "Hacha de Batalla",
-        "skill":"armas-pesadas", 
-        "type": "Accion", 
+        "skill": "armas-pesadas",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Pesada", 
-        "description": "+MOD para atacar, Adyacente, 1d10 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
+        "tags": "Físico, Ataque, Pesada",
+        "range": "Adyacente",
+        "damage": "1d10",
+        "damage_type": "Cortante",
+        "description": "El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
     },
-    "jabalina":{
+    "jabalina": {
         "name": "Jabalina",
-        "skill":"alabardas", 
-        "type": "Accion", 
+        "skill": "alabardas",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Alabarda, A Distancia", 
-        "description": "+MOD para atacar, Distancia cercana, 1d8 + STAT daño Perforante. Puede lanzarse para aumentar su alcance a distancia media."
+        "tags": "Físico, Ataque, Alabarda, A Distancia",
+        "range": "Distancia cercana",
+        "damage": "1d8",
+        "damage_type": "Perforante",
+        "description": "Puede lanzarse para aumentar su alcance a distancia media."
     },
     "mandoble": {
         "name": "Mandoble",
-        "skill":"armas-pesadas", 
-        "type": "Accion", 
+        "skill": "armas-pesadas",
+        "type": "Accion",
         "cost": "2 Acciones",
-        "tags": "Físico, Ataque, Pesada", 
-        "description": "+MOD para atacar, Adyacente, 2d6 + STAT daño Cortante."
+        "tags": "Físico, Ataque, Pesada",
+        "range": "Adyacente",
+        "damage": "2d6",
+        "damage_type": "Cortante",
+        "description": ""
     },
     "martillo-de-guerra": {
         "name": "Martillo de Guerra",
-        "skill":"armas-pesadas", 
-        "type": "Accion", 
+        "skill": "armas-pesadas",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Pesada", 
-        "description": "+MOD para atacar, Adyacente, 1d10 + STAT daño Contundente. El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
+        "tags": "Físico, Ataque, Pesada",
+        "range": "Adyacente",
+        "damage": "1d10",
+        "damage_type": "Contundente",
+        "description": "El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
     },
     "lanza": {
         "name": "Lanza",
-        "skill":"alabardas", 
-        "type": "Accion", 
+        "skill": "alabardas",
+        "type": "Accion",
         "cost": "2 Acciones",
-        "tags": "Físico, Ataque, Alabarda", 
-        "description": "+MOD para atacar, Distancia cercana, 1d10 + STAT daño Perforante."
+        "tags": "Físico, Ataque, Alabarda",
+        "range": "Distancia cercana",
+        "damage": "1d10",
+        "damage_type": "Perforante",
+        "description": ""
     },
     "latigo": {
         "name": "Látigo",
-        "skill":"cadenas", 
-        "type": "Accion", 
+        "skill": "cadenas",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Cadena", 
-        "description": "+MOD para atacar, Distancia cercana, 1d6 + STAT daño Contundente."
+        "tags": "Físico, Ataque, Cadena",
+        "range": "Distancia cercana",
+        "damage": "1d6",
+        "damage_type": "Contundente",
+        "description": ""
     },
     "mordisco": {
         "name": "Mordisco",
-        "skill":"estilo-salvaje", 
-        "type": "Accion", 
+        "skill": "estilo-salvaje",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, Marcial, Salvaje", 
+        "tags": "Físico, Ataque, Marcial, Salvaje",
         "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Perforante."
     },
     "mosqueton": {
         "name": "Mosquetón",
-        "skill":"armas-a-distancia", 
-        "type": "Accion", 
+        "skill": "armas-a-distancia",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, A Distancia", 
-        "description": "+MOD para atacar, Distancia lejana, 2d8 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador."
+        "tags": "Físico, Ataque, A Distancia",
+        "range": "Distancia lejana",
+        "damage": "2d8",
+        "damage_type": "Perforante",
+        "description": "Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador."
     },
     "parada-con-escudo": {
         "name": "Parada con Escudo",
-        "skill":"escudo", 
-        "type": "Reaccion", 
-        "tags": "Físico, Defensivo, Escudo", 
+        "skill": "escudo",
+        "type": "Reaccion",
+        "tags": "Físico, Defensivo, Escudo",
         "description": "+MOD para defenderse. Funciona contra ataques cuerpo a cuerpo y a distancia"
     },
     "pistola-de-mano": {
         "name": "Pistola de Mano",
-        "skill":"armas-a-distancia", 
-        "type": "Accion", 
+        "skill": "armas-a-distancia",
+        "type": "Accion",
         "cost": "1 Acción",
-        "tags": "Físico, Ataque, A Distancia", 
-        "description": "+MOD para atacar, Distancia media, 2d6 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d6 daño obligatorio al portador."
+        "tags": "Físico, Ataque, A Distancia",
+        "range": "Distancia media",
+        "damage": "2d6",
+        "damage_type": "Perforante",
+        "description": "Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d6 daño obligatorio al portador."
     }
 }
