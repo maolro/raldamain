@@ -52,16 +52,17 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Finta Engañosa",
+          "name": "Atrapar Arma",
           "tags": [
             "Duelo",
-            "Visual"
+            "Reacción"
           ],
-          "cost": "1 chi",
-          "desc": "Si su ataque es detenido exitosamente, provoca Desventaja al objetivo en su siguiente ataque. Si el ataque impacta, no hace daño ni provoca efectos. Debe declararse antes de atacar y puede identificarse con un tiro exitoso de Mente."
+          "cost": "1 Chi",
+          "desc": "En respuesta a que un enemigo detenga tu ataque usando Parada o detengas el ataque de un arma enemiga, puedes forzarle tener éxito en un tiro de salvación Físico o queda Enredado y no podrá volver a atacar con su arma hasta que escape. Además, podrás emplear una Acción para intentar desarmarle, lo cual supone un tiro enfrentado contra su modificador de arma. ",
+          "show_mod": true
         },
         {
           "name": "Ataque Torbellino",
@@ -69,17 +70,21 @@
             "Duelo",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Ataca a cada enemigo que alcance y empuja hacia atrás a todos los que impacte. Aplica mejoras de ataque a todos los golpes."
+          "cost": "1 Chi",
+          "desc": "Tu siguiente ataque afectará a cada objetivo en un radio corto y aumenta su daño por un dado adicional. Además, puedes moverte antes o después de atacar sin provocar aperturas.",
+          "toggle": {
+            "label": "Ataque Torbellino",
+            "damage": "+1 dado"
+          }
         },
         {
-          "name": "Estocada Fuerte",
+          "name": "Persecución",
           "tags": [
             "Duelo",
-            "Mejora"
+            "Reacción"
           ],
-          "cost": "1 chi",
-          "desc": "Al impactar provoca un dado de daño adicional y Herido-1 en la parte del cuerpo que escoja. Debe declararse antes de atacar."
+          "cost": "1 Chi",
+          "desc": "En respuesta a que un enemigo se mueva, puedes movefrte y hacer un ataque inmediato contra él contra el cual recibirá Desventaja."
         },
         {
           "name": "Secuencia de Golpes",
