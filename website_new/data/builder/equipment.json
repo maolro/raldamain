@@ -1,36 +1,161 @@
 {
     "armor": {
-        "light": {"name": "Ligera","umbrales": [{"value": 2, "categories": "Físico"}], "penalty":0, "eqab": ""},
-        "medium": {"name": "Media", "umbrales": [{"value": 4, "categories": "Físico"}], "penalty":-2, "eqab": ""},
-        "heavy": {"name": "Pesada", "umbrales": [{"value": 6, "categories": "Físico"}], "penalty":-4, "eqab": ""},
-        "full": {"name": "Completa", "umbrales": [{"value": 8, "categories": "Físico"}], "penalty":-6, "eqab": ""}
+        "full": {
+            "eqab": "",
+            "name": "Completa",
+            "penalty": -6,
+            "umbrales": [
+                {
+                    "categories": "Físico",
+                    "value": 8
+                }
+            ]
+        },
+        "heavy": {
+            "eqab": "",
+            "name": "Pesada",
+            "penalty": -4,
+            "umbrales": [
+                {
+                    "categories": "Físico",
+                    "value": 6
+                }
+            ]
+        },
+        "light": {
+            "eqab": "",
+            "name": "Ligera",
+            "penalty": 0,
+            "umbrales": [
+                {
+                    "categories": "Físico",
+                    "value": 2
+                }
+            ]
+        },
+        "medium": {
+            "eqab": "",
+            "name": "Media",
+            "penalty": -2,
+            "umbrales": [
+                {
+                    "categories": "Físico",
+                    "value": 4
+                }
+            ]
+        }
     },
-    "weapons":{
-        "arco":              {"name": "Arco",              "eqab": "arco",              "style": "ranged"},
-        "cadena":            {"name": "Cadena",            "eqab": "cadena",            "style": "light"},
-        "daga":              {"name": "Daga",              "eqab": "daga",              "style": "light"},
-        "escudo":            {"name": "Escudo",            "eqab": "escudo,parada-con-escudo", "style": "shield"},
-        "espada-larga":      {"name": "Espada Larga",      "eqab": "espada-larga",      "style": "duelist"},
-        "espada-ropera":     {"name": "Espada Ropera",     "eqab": "espada-ropera",     "style": "duelist"},
-        "garra":             {"name": "Garra",             "eqab": "garra",             "style": "light"},
-        "garrote":           {"name": "Garrote",           "eqab": "garrote",           "style": "duelist"},
-        "golpe-serpiente":   {"name": "Golpe Serpiente",   "eqab": "golpe-serpiente",   "style": "flex"},
-        "gran-hacha":        {"name": "Gran Hacha",        "eqab": "gran-hacha",        "style": "heavy"},
-        "gran-maza":         {"name": "Gran Maza",         "eqab": "gran-maza",         "style": "heavy"},
-        "hacha-de-batalla":  {"name": "Hacha de Batalla",  "eqab": "hacha-de-batalla",  "style": "duelist"},
-        "jabalina":          {"name": "Jabalina",          "eqab": "jabalina",          "style": "ranged"},
-        "lanza":             {"name": "Lanza",             "eqab": "lanza",             "style": "duelist"},
-        "latigo":            {"name": "Látigo",            "eqab": "latigo",            "style": "light"},
-        "mandoble":          {"name": "Mandoble",          "eqab": "mandoble",          "style": "heavy"},
-        "martillo-de-guerra":{"name": "Martillo de Guerra","eqab": "martillo-de-guerra","style": "heavy"},
-        "mosqueton":         {"name": "Mosquetón",         "eqab": "mosqueton",         "style": "ranged"},
-        "pistola-de-mano":   {"name": "Pistola de Mano",   "eqab": "pistola-de-mano",   "style": "ranged"}
+    "bag": {
+        "bateria-chi": {
+            "eqab": "bateria-de-chi",
+            "name": "Batería de Chi"
+        }
     },
-    "head":{
-        "": {"name": " ", "eqab": ""},
-        "mordisco": {"name": "Mordisco", "eqab": "mordisco"}
+    "head": {
+        "": {
+            "eqab": "",
+            "name": " "
+        },
+        "mordisco": {
+            "eqab": "mordisco",
+            "name": "Mordisco"
+        }
     },
-    "bag":{
-        "bateria-chi": {"name": "Batería de Chi", "eqab": "bateria-de-chi"}
+    "weapons": {
+        "arco": {
+            "eqab": "arco",
+            "name": "Arco",
+            "style": "ranged"
+        },
+        "cadena": {
+            "eqab": "cadena",
+            "name": "Cadena",
+            "style": "light"
+        },
+        "daga": {
+            "eqab": "daga",
+            "name": "Daga",
+            "style": "light"
+        },
+        "escudo": {
+            "eqab": "escudo,parada-con-escudo",
+            "name": "Escudo",
+            "style": "shield"
+        },
+        "espada-larga": {
+            "eqab": "espada-larga",
+            "name": "Espada Larga",
+            "style": "duelist"
+        },
+        "espada-ropera": {
+            "eqab": "espada-ropera",
+            "name": "Espada Ropera",
+            "style": "duelist"
+        },
+        "garra": {
+            "eqab": "garra",
+            "name": "Garra",
+            "style": "light"
+        },
+        "garrote": {
+            "eqab": "garrote",
+            "name": "Garrote",
+            "style": "duelist"
+        },
+        "golpe-serpiente": {
+            "eqab": "golpe-serpiente",
+            "name": "Golpe Serpiente",
+            "style": "flex"
+        },
+        "gran-hacha": {
+            "eqab": "gran-hacha",
+            "name": "Gran Hacha",
+            "style": "heavy"
+        },
+        "gran-maza": {
+            "eqab": "gran-maza",
+            "name": "Gran Maza",
+            "style": "heavy"
+        },
+        "hacha-de-batalla": {
+            "eqab": "hacha-de-batalla",
+            "name": "Hacha de Batalla",
+            "style": "duelist"
+        },
+        "jabalina": {
+            "eqab": "jabalina",
+            "name": "Jabalina",
+            "style": "ranged"
+        },
+        "lanza": {
+            "eqab": "lanza",
+            "name": "Lanza",
+            "style": "duelist"
+        },
+        "latigo": {
+            "eqab": "latigo",
+            "name": "Látigo",
+            "style": "light"
+        },
+        "mandoble": {
+            "eqab": "mandoble",
+            "name": "Mandoble",
+            "style": "heavy"
+        },
+        "martillo-de-guerra": {
+            "eqab": "martillo-de-guerra",
+            "name": "Martillo de Guerra",
+            "style": "heavy"
+        },
+        "mosqueton": {
+            "eqab": "mosqueton",
+            "name": "Mosquetón",
+            "style": "ranged"
+        },
+        "pistola-de-mano": {
+            "eqab": "pistola-de-mano",
+            "name": "Pistola de Mano",
+            "style": "ranged"
+        }
     }
 }
