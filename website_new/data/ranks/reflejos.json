@@ -49,24 +49,30 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Esquiva Asombrosa",
+          "name": "Giro Defensivo",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Puedes usar Esquiva contra ataques sorpresa o imposibles de esquivar. En ese caso, el tiro de Esquiva se realiza con Desventaja."
+          "desc": "Aumentas todos tus umbrales por un valor igual a tu Rango + 1 (ya incluido).",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "General"
+            }
+          ]
         },
         {
           "name": "Evasión",
           "tags": [
             "Innata",
-            "Defensiva"
+            "Reacción"
           ],
-          "cost": "1 chi",
-          "desc": "Al fallar una Esquiva, reduces el daño a la mitad, evitas los efectos de estado asociados y puedes desenganchar como acción bonus."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Suma +10 a un tiro de Esquiva y te mueves un paso sin provocar aperturas."
         }
       ]
     },
