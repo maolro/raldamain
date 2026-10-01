@@ -32,7 +32,14 @@
           "toggle": {
             "label": "Forma de la Bestia",
             "adv": [
-              "F"
+              "Físico",
+              "Sabiduría"
+            ],
+            "umbrales": [
+              {
+                "value": "RANGO+1",
+                "categories": "General"
+              }
             ]
           }
         },
@@ -42,7 +49,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes visión nocturna y olfato agudo a distancia media. Los animales salvajes no son hostiles hacia ti a menos que los provoques."
+          "desc": "Obtienes visión nocturna y olfato agudo a distancia media. Los animales salvajes y espíritus te reconocen como aliado."
         }
       ]
     },
