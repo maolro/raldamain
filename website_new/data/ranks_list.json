@@ -256,9 +256,9 @@
     "name": "Magia Ilusoria",
     "category": "Ocultismo",
     "image": "magia_ilusoria.jpg",
-    "description": "Crea proyecciones falsas, invisibilidad y engaños visuales complejos.",
+    "description": "Engañas los sentidos y manipulas la realidad percibida mediante la energía del entorno. Creas imágenes, sonidos y sensaciones falsas para confundir, disfrazarte, volverte invisible o crear monstruos y terrenos ilusorios que pueden llegar a matar.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_gravitatoria",
