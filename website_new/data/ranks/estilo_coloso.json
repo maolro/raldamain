@@ -31,7 +31,11 @@
             "Mejora"
           ],
           "cost": "1 Acción",
-          "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar."
+          "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar.",
+          "toggle": {
+            "label": "",
+            "damage": "+1 dado"
+          }
         },
         {
           "name": "Golpe Desestabilizador",
@@ -41,7 +45,8 @@
             "Maniobra"
           ],
           "cost": "1 Chi",
-          "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado y tiene Desventaja defendiéndose del siguiente ataque. Esta habilidad puede usarse incluso si el enemigo detiene exitosamente el ataque con Parada"
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado y tiene Desventaja defendiéndose del siguiente ataque. Esta habilidad puede usarse incluso si el enemigo detiene exitosamente el ataque con Parada",
+          "show_mod": true
         },
         {
           "name": "Proteger Aliado",
