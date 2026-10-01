@@ -83,9 +83,9 @@
   {
     "id": "ascendencia_abisal",
     "name": "Ascendencia Abisal",
-    "category": "Ascendencia",
+    "category": "Ascendencias",
     "image": "ascendencia_abisal.jpg",
-    "description": "Poderes mutantes y aberrantes derivados de las criaturas caóticas del abismo.",
+    "description": "Canalizas el poder de entidades olvidadas para transformar tu cuerpo y mente. Obtienes gran poder físico y mágico a cambio de tu propia cordura y humanidad.",
     "draft": true,
     "partial": false
   },

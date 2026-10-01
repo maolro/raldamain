@@ -45,7 +45,7 @@
             "Mejora"
           ],
           "duration": "6 Rondas",
-          "desc": "Entras en un estado de furia que te otorga Ventaja en tiros de ataque, defensa y magia. Dura hasta 6 rondas. Al terminar, sufres daño a la cordura igual al número de rondas transcurridas. Si tu cordura llega a 0, pierdes el control del personaje.",
+          "desc": "Recibes Ventaja en todos tus tiros de Ataque, Defensa, Salvación y Habilidad. Este efecto dura hasta 6 rondas y cuando acabe reduces tu cordura por 1 por cada 2 rondas que hayas pasado en él.",
           "toggle": {
             "label": "Furia Abisal",
             "adv": [
