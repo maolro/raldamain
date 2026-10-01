@@ -33,7 +33,7 @@
           "cost": "1 Acción",
           "desc": "Tu siguiente ataque recibe un dado de daño adicional. Esta habilidad debe declararse antes de atacar.",
           "toggle": {
-            "label": "",
+            "label": "Ataque Poderoso",
             "damage": "+1 dado"
           }
         },
