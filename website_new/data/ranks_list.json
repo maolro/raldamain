@@ -182,11 +182,11 @@
   {
     "id": "magia_temporal",
     "name": "Magia Temporal",
-    "category": "Arcano",
+    "category": "Arcana",
     "image": "magia_temporal.jpg",
-    "description": "Vislumbra el futuro y manipula el flujo del tiempo para acelerar o ralentizar objetivos.",
+    "description": "Manipulas el flujo del tiempo haciendo pequeñas modificaciones en lo escrito por el universo. Tienes premoniciones, reviertes daños, aceleras o ralentizas a las criaturas y, en tus niveles más altos, puedes detener el tiempo o retroceder eventos enteros en el campo de batalla.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_espacial",
