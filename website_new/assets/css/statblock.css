@@ -34,6 +34,12 @@
     font-weight: bold;
 }
 
+/* Dice / modifier text (+4, 2d6+3…) */
+.sb-dice {
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
 /* Combat stats grid */
 .preview-stats-row {
     display: flex;

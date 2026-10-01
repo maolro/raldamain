@@ -5,16 +5,18 @@
 // =============================================
 
 // Wraps dice/modifier expressions ("+5", "+5+1d6", "2d6+4", "1d6 + 3")
-// found in an HTML string with <span class="rollable" data-roll="…">.
+// found in an HTML string with <span class="sb-dice"> (highlighted). When
+// `clickable`, they also get class "rollable" + data-roll for the dice roller.
 // Only text outside of tags is touched.
 const ROLLABLE_RE = /(?<![\wÀ-ɏ)])(?:[+\-]?\d*d\d+|[+\-]\d+)(?:\s*[+\-]\s*\(?(?:\d*d\d+|\d+)\)?)*(?![\wÀ-ɏ])(?!\s*dados?\b)/g;
 
-function markRollables(html) {
+function markRollables(html, clickable = true) {
     if (!html) return html;
     return String(html).split(/(<[^>]+>)/).map(part => {
         if (part.startsWith('<')) return part;
-        return part.replace(ROLLABLE_RE, m =>
-            `<span class="rollable" data-roll="${m.replace(/\s+/g, '')}" title="Tirar ${m}">${m}</span>`);
+        return part.replace(ROLLABLE_RE, m => clickable
+            ? `<span class="sb-dice rollable" data-roll="${m.replace(/\s+/g, '')}" title="Tirar ${m}">${m}</span>`
+            : `<span class="sb-dice">${m}</span>`);
     }).join('');
 }
 
@@ -27,7 +29,7 @@ Vue.component('v-statblock', {
         r: function () { return this.$root; },
     },
     methods: {
-        h: function (html) { return this.rollable ? markRollables(html) : html; },
+        h: function (html) { return markRollables(html, this.rollable); },
         saveRoll: function (v) { return String(v).replace(/\s+/g, ''); },
     },
     template: `
@@ -43,8 +45,7 @@ Vue.component('v-statblock', {
             <div class="col"><b>Chi</b><br>{{ r.reserves.chi }}</div>
             <div class="col"><b>Crd</b><br>{{ r.san }}</div>
             <div class="col"><b>Inic.</b><br>
-                <span v-if="rollable" class="rollable" :data-roll="r.initiative" data-label="Iniciativa">{{ r.initiative }}</span>
-                <template v-else>{{ r.initiative }}</template>
+                <span class="sb-dice" :class="{ rollable: rollable }" :data-roll="r.initiative" data-label="Iniciativa">{{ r.initiative }}</span>
             </div>
             <div v-if="r.shieldCounters > 0" class="col"><b>CE</b><br>{{ r.shieldCounters }}</div>
         </div>
@@ -67,9 +68,9 @@ Vue.component('v-statblock', {
         <div class="sb-line">
             <b>Tiros de Salvación</b>
             <span class="sb-pills">
-                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.fisico)" data-label="Salvación Física"><span class="sb-save-label">FÍS</span> {{ r.savingThrows.fisico }}</span>
-                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.voluntad)" data-label="Salvación de Voluntad"><span class="sb-save-label">VOL</span> {{ r.savingThrows.voluntad }}</span>
-                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.mental)" data-label="Salvación Mental"><span class="sb-save-label">MEN</span> {{ r.savingThrows.mental }}</span>
+                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.fisico)" data-label="Salvación Física"><span class="sb-save-label">FÍS</span> <span class="sb-dice">{{ r.savingThrows.fisico }}</span></span>
+                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.voluntad)" data-label="Salvación de Voluntad"><span class="sb-save-label">VOL</span> <span class="sb-dice">{{ r.savingThrows.voluntad }}</span></span>
+                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.mental)" data-label="Salvación Mental"><span class="sb-save-label">MEN</span> <span class="sb-dice">{{ r.savingThrows.mental }}</span></span>
             </span>
         </div>
         <div class="sb-line"><b>Velocidad</b> Paso 1</div>
