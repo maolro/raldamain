@@ -34,9 +34,12 @@
             "Pasiva"
           ],
           "desc": "Recibes Ventaja en tiros de salvación de Voluntad y puedes cambiar tu tiro de salvación Mental por tu tiro de Presencia (ya incluido).",
-          "toggle": {
-            "label": ""
-          }
+          "saves": [
+            "Voluntad"
+          ],
+          "replace_mod": [
+            "Mental"
+          ]
         }
       ]
     },

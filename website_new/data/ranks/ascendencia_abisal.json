@@ -27,11 +27,16 @@
             "Innata",
             "Pasiva"
           ],
-          "resistances": [
-            "Mental",
-            "Necrótico"
+          "desc": "Obtienes Ventaja en tiros de salvación Mentales y obtienes Resistencia Mágica igual a tu Rango + 1. Las criaturas abisales te reconocen como aliado y adquieres una locura permanente.",
+          "saves": [
+            "Mental"
           ],
-          "desc": "Obtienes Resistencia a efectos Mentales y Necróticos. Las criaturas abisales te reconocen como aliado. Adquieres una locura permanente."
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Magia"
+            }
+          ]
         },
         {
           "name": "Furia Abisal",

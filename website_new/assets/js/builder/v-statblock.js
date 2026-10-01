@@ -73,9 +73,9 @@ Vue.component('v-statblock', {
         <div class="sb-line">
             <b>Tiros de Salvación</b>
             <span class="sb-pills">
-                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.fisico)" data-label="Salvación Física"><span class="sb-save-label">FÍS</span> <span class="sb-dice">{{ r.savingThrows.fisico }}</span></span>
-                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.voluntad)" data-label="Salvación de Voluntad"><span class="sb-save-label">VOL</span> <span class="sb-dice">{{ r.savingThrows.voluntad }}</span></span>
-                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.mental)" data-label="Salvación Mental"><span class="sb-save-label">MEN</span> <span class="sb-dice">{{ r.savingThrows.mental }}</span></span>
+                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.fisico)" data-label="Salvación Física"><span class="sb-save-label">FÍS</span> <span class="sb-dice">{{ r.savingThrows.fisico }}</span><span v-if="r.saveSources.fisico" class="sb-save-src"> ({{ r.saveSources.fisico }})</span></span>
+                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.voluntad)" data-label="Salvación de Voluntad"><span class="sb-save-label">VOL</span> <span class="sb-dice">{{ r.savingThrows.voluntad }}</span><span v-if="r.saveSources.voluntad" class="sb-save-src"> ({{ r.saveSources.voluntad }})</span></span>
+                <span class="sb-save" :class="{ rollable: rollable }" :data-roll="saveRoll(r.savingThrows.mental)" data-label="Salvación Mental"><span class="sb-save-label">MEN</span> <span class="sb-dice">{{ r.savingThrows.mental }}</span><span v-if="r.saveSources.mental" class="sb-save-src"> ({{ r.saveSources.mental }})</span></span>
             </span>
         </div>
         <div class="sb-line"><b>Velocidad</b> Paso 1</div>

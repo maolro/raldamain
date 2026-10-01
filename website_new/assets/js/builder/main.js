@@ -147,6 +147,8 @@ new Vue({
                                                 ...(ability.hits     !== undefined ? { hits:     ability.hits     } : {}),
                                                 ...(ability.chi      !== undefined ? { chi:      ability.chi      } : {}),
                                                 ...(ability.show_mod !== undefined ? { show_mod: ability.show_mod } : {}),
+                                                ...(ability.saves       !== undefined ? { saves:       ability.saves       } : {}),
+                                                ...(ability.replace_mod !== undefined ? { replace_mod: ability.replace_mod } : {}),
                                                 ...(ability.reactions !== undefined ? { reactions: ability.reactions } : {}),
                                                 ...(ability.toggle          !== undefined ? { toggle:          ability.toggle          } : {}),
                                 ...(ability.resistances     !== undefined ? { resistances:     ability.resistances     } : {}),
@@ -839,7 +841,7 @@ ${reactions}
         },
         // Impactos: every character starts with 6, plus passive/toggle bonuses
         hits: function () {
-            return BASE_HITS + this.sumAllKeys('hits', this.myatb.passive) + this.toggleBuffs.hits;
+            return BASE_HITS + this.sumAllKeys('hits', this.allAbilities) + this.toggleBuffs.hits;
         },
         // Umbrales de Daño: "General" applies to all damage; each other category
         // (Físico, Fuego, Magia…) stacks on top of General.
@@ -858,9 +860,7 @@ ${reactions}
             const armor = this.equipment.armor || {};
             if (armor.umbrales) add(armor.umbrales);
             else if (armor.def != null) add([{ value: armor.def, categories: 'Físico' }]);
-            for (const ab of this.myatb.passive) add(ab.umbrales, ab);
-            for (const ab of this.toggleableAbilities)
-                if (this.isToggleActive(ab.toggle.label)) add(ab.toggle.umbrales, ab);
+            for (const { o, owner } of this.boostSources) add(o.umbrales, owner);
 
             const general = BASE_UMBRAL + (bonus['General'] || 0);
             const byValue = {};
@@ -926,8 +926,8 @@ ${reactions}
         resistances: function () {
             let rsobj = { vulnerabilities: [], resistances: [], supresist: [], immunities: [] };
 
-            for (let i in this.myatb["passive"]) {
-                let ab = this.myatb.passive[i];
+            for (let i in this.allAbilities) {
+                let ab = this.allAbilities[i];
                 if ("resistances" in ab) {
                     for (let j in ab.resistances) {
                         let rs = ab.resistances[j];
@@ -1137,7 +1137,7 @@ ${reactions}
                 rk = this.myranks[i];
                 chiRes += rk.rank * 2;
             }
-            chiRes += this.sumAllKeys('chi', this.myatb.passive);
+            chiRes += this.sumAllKeys('chi', this.allAbilities);
             return { chi: chiRes };
         },
         savingThrows: function() {
@@ -1146,6 +1146,9 @@ ${reactions}
             const fmt = v => v === '-' ? '-' : (v >= 0 ? '+' + v : String(v));
             const countSave = (saveType) => {
                 let n = 0;
+                // Passive "Ventaja en tiros de salvación" (always on)
+                for (const ab of this.allAbilities)
+                    if (ab.saves && ab.saves.includes(saveType)) n++;
                 for (const ab of this.toggleableAbilities) {
                     if (!this.isToggleActive(ab.toggle.label)) continue;
                     const t = ab.toggle;
@@ -1159,10 +1162,29 @@ ${reactions}
                 return Math.min(n, 4);
             };
             const advStr = (base, count) => (count > 0 && base !== '-') ? base + '+' + count + 'd6' : base;
+            // "Usar el modificador de este rango": take the rank's modifier when it is higher
+            const best = (target, base) => {
+                const r = this.modReplacements[target];
+                return r && (base === '-' || r.value > base) ? r.value : base;
+            };
             return {
-                fisico:   advStr(fmt(sum(fs.str.value, fs.dex.value)), countSave('Físico')),
-                voluntad: advStr(fmt(sum(fs.con.value, fs.cha.value)), countSave('Voluntad')),
-                mental:   advStr(fmt(sum(fs.itl.value, fs.wis.value)), countSave('Mental')),
+                fisico:   advStr(fmt(best('Físico',   sum(fs.str.value, fs.dex.value))), countSave('Físico')),
+                voluntad: advStr(fmt(best('Voluntad', sum(fs.con.value, fs.cha.value))), countSave('Voluntad')),
+                mental:   advStr(fmt(best('Mental',   sum(fs.itl.value, fs.wis.value))), countSave('Mental')),
+            };
+        },
+        // Which rank replaced each save's modifier, e.g. { mental: 'Presencia' }
+        saveSources: function () {
+            const fs = this.finalStats;
+            const sum = (a, b) => (a === '-' || b === '-') ? '-' : a + b;
+            const src = (target, base) => {
+                const r = this.modReplacements[target];
+                return r && (base === '-' || r.value > base) ? r.source : '';
+            };
+            return {
+                fisico:   src('Físico',   sum(fs.str.value, fs.dex.value)),
+                voluntad: src('Voluntad', sum(fs.con.value, fs.cha.value)),
+                mental:   src('Mental',   sum(fs.itl.value, fs.wis.value)),
             };
         },
         finalStats: function () {
@@ -1228,7 +1250,8 @@ ${reactions}
             const lines = [];
 
             // Esquiva — always present
-            const esquivaMod = dexV + reflejosRank;
+            const esquivaRepl = this.modReplacements['Esquiva'];
+            const esquivaMod = Math.max(dexV + reflejosRank, esquivaRepl ? esquivaRepl.value : -Infinity);
             const esquivaAdv = this.abilityAdvantageCount({ tags: 'Reflejos, Defensiva' });
             lines.push(`<b>Esquiva</b> (Reflejos, Defensiva): ${fmtMod(esquivaMod, esquivaAdv)} para defenderse`);
 
@@ -1256,8 +1279,11 @@ ${reactions}
                 const tag = styleTagMap[weapon.style] || weapon.style;
                 if (seenWeap.has(tag)) continue;
                 seenWeap.add(tag);
-                const mod = this.weaponMod(weapon);
+                let mod = this.weaponMod(weapon);
                 if (!mod) continue;
+                const paradaRepl = this.modReplacements['Parada'];
+                if (paradaRepl && paradaRepl.value > parseInt(mod, 10))
+                    mod = (paradaRepl.value >= 0 ? '+' : '') + paradaRepl.value;
                 const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' });
                 const modStr = parryAdv > 0 ? mod + '+' + parryAdv + 'd6' : mod;
                 lines.push(`<b>Parada</b> (${tag}, Defensiva): ${modStr} para defenderse`);
@@ -1291,6 +1317,33 @@ ${reactions}
                 })
                 .join(', ');
         },
+        // Every ability the character has (passive, actions and reactions)
+        allAbilities: function () {
+            return [...this.myatb.passive, ...this.myatb.actions, ...this.myatb.reactions];
+        },
+        // Where boosts come from: each ability's always-on boosts + the toggles that are active.
+        // [{ o: object holding the boost keys, owner: ability (for rank formulas) }]
+        boostSources: function () {
+            const res = this.allAbilities.map(ab => ({ o: ab, owner: ab }));
+            for (const ab of this.toggleableAbilities)
+                if (this.isToggleActive(ab.toggle.label)) res.push({ o: ab.toggle, owner: ab });
+            return res;
+        },
+        // "Usar el modificador de este rango (si es mayor)": target → best { value, source }
+        // Targets: Físico / Voluntad / Mental (saves), Esquiva, Parada
+        modReplacements: function () {
+            const res = {};
+            for (const { o, owner } of this.boostSources) {
+                if (!o.replace_mod || !owner.skill || !(owner.skill in this.ranks)) continue;
+                const rd = this.ranks[owner.skill];
+                const statVal = this.finalStats[this.getMainStat(rd.stat)].value;
+                if (statVal === '-') continue;
+                const value = statVal + this.getRank(owner.skill);
+                for (const target of o.replace_mod)
+                    if (!res[target] || value > res[target].value) res[target] = { value, source: rd.name };
+            }
+            return res;
+        },
         toggleableAbilities: function () {
             const all = [...this.myatb.passive, ...this.myatb.actions, ...this.myatb.reactions];
             const seen = new Set();
@@ -1314,7 +1367,7 @@ ${reactions}
                 if (t.adv) t.adv.forEach(a => { if (!buffs.adv.includes(a)) buffs.adv.push(a); });
                 if (t.adv_tags) t.adv_tags.forEach(a => { if (!buffs.adv_tags.includes(a)) buffs.adv_tags.push(a); });
                 if (t.saves) t.saves.forEach(s => { if (!buffs.saves.includes(s)) buffs.saves.push(s); });
-                if (t.hits) buffs.hits += t.hits;
+                if (t.hits) { const h = this.evalRankValue(t.hits, ab); if (!isNaN(h)) buffs.hits += h; }
                 if (t.stat_min != null && (buffs.stat_min === null || t.stat_min > buffs.stat_min)) buffs.stat_min = t.stat_min;
                 if (t.stat_min_list) t.stat_min_list.forEach(s => { if (!buffs.stat_min_list.includes(s)) buffs.stat_min_list.push(s); });
                 if (t.ce) {
