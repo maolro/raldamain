@@ -347,21 +347,19 @@ new Vue({
                 if (obj.cost) parenParts.push(`<span class="sb-cost">${obj.cost}</span>`);
                 if (parenParts.length > 0)
                     formattedString += ` (${parenParts.join('; ')})`;
-                let descParts = [];
-                if (obj.range) descParts.push(obj.range);
-                if (obj.area) descParts.push(obj.area);
-                if (obj.duration) descParts.push(obj.duration);
                 let desc = rankInMap(obj.skill)
                     ? this.replaceTag(this.resolveRankText(rich(obj.description), obj.rank), obj.rank, obj.skill)
                     : rich(this.resolveWeaponDesc(obj));
                 desc = this.resolveStatTokens(desc);
-                // Modifier prefix "+X — Description": set per ability in the rank editor (show_mod);
+                const tagsArr = (obj.tags || '').split(',').map(t => t.trim());
+                const isAttack = rankInMap(obj.skill) && tagsArr.includes('Ataque');
+                // Modifier "+X": set per ability in the rank editor (show_mod);
                 // by default on for "Ataque" abilities and abilities that force a save
+                let modStr = null;
                 if (rankInMap(obj.skill)) {
-                    const tagsArr = (obj.tags || '').split(',').map(t => t.trim());
                     const showMod = obj.show_mod !== undefined
                         ? obj.show_mod
-                        : (tagsArr.includes('Ataque') || !!(desc && desc.includes('debe superar')));
+                        : (isAttack || !!(desc && desc.includes('debe superar')));
                     if (showMod) {
                         const mainStatKey = this.getMainStat(this.ranks[obj.skill].stat);
                         const mainStatVal = this.finalStats[mainStatKey].value;
@@ -369,8 +367,7 @@ new Vue({
                             const mod = obj.rank + mainStatVal;
                             const advCount = this.abilityAdvantageCount(obj);
                             const advBit = advCount > 0 ? '+' + advCount + 'd6' : '';
-                            const modStr = (mod >= 0 ? '+' + mod : String(mod)) + advBit;
-                            desc = `<b>${modStr}</b> — ` + desc;
+                            modStr = (mod >= 0 ? '+' + mod : String(mod)) + advBit;
                         }
                     }
                 }
@@ -379,14 +376,16 @@ new Vue({
                 if (obj.resistances && obj.resistances.length > 0) extras.push(`Resistencia a ${obj.resistances.join(', ')}`);
                 if (obj.immunities && obj.immunities.length > 0) extras.push(`Inmunidad a ${obj.immunities.join(', ')}`);
                 if (extras.length > 0) desc = (desc ? desc + '. ' : '') + extras.join('. ');
-                // Integrate damage boosts
+                // Damage: the "Daño" field ("2d6 daño Fuego") with active boosts, or boosts
+                // applied to damage written inside the description
+                let dmgLabel = '';
                 if (obj.damage) {
                     const dmgBoosts = this.getDamageBoosts(obj);
                     const plain = dmgBoosts.filter(b => !b.type).map(b => b.dice);
-                    const boostedDice = plain.length > 0 ? this.applyDiceBoosts(obj.damage, plain) : obj.damage;
+                    const baseDice = rankInMap(obj.skill) ? this.resolveStatTokens(obj.damage) : obj.damage;
+                    const boostedDice = plain.length > 0 ? this.applyDiceBoosts(baseDice, plain) : baseDice;
                     const typeStr = obj.damage_type ? ` ${obj.damage_type}` : '';
-                    const dmgLabel = `<b>${boostedDice}${typeStr} daño${this.typedDamageText(dmgBoosts)}</b>`;
-                    desc = desc ? dmgLabel + ' — ' + desc : dmgLabel;
+                    dmgLabel = `${boostedDice} daño${typeStr}${this.typedDamageText(dmgBoosts)}`;
                 } else if (desc && /\d+d\d+(?:\s*[+\-]\s*\d+)?\s+daño/.test(desc)) {
                     const dmgBoosts = this.getDamageBoosts(obj);
                     const plain = dmgBoosts.filter(b => !b.type).map(b => b.dice);
@@ -395,9 +394,28 @@ new Vue({
                     // "2d8 + 4 daño Cortante" → "2d8 + 4 daño Cortante + 1d6 daño Radiante"
                     if (typed) desc = desc.replace(/(\d+d\d+(?:\s*[+\-]\s*\d+)*\s+daño(?:\s+[A-ZÁÉÍÓÚÑ][\wáéíóúñ]*)?)/, '$1' + typed);
                 }
-                if (desc) descParts.push(desc);
-                if (descParts.length > 0)
-                    formattedString += ': ' + descParts.join(', ');
+                if (isAttack) {
+                    // Attacks: "+X para atacar, alcance, área, 2d6 daño Fuego, duración. Descripción"
+                    const head = [];
+                    if (modStr) head.push(`<b>${modStr}</b> para atacar`);
+                    if (obj.range) head.push(obj.range);
+                    if (obj.area) head.push(obj.area);
+                    if (dmgLabel) head.push(`<b>${dmgLabel}</b>`);
+                    if (obj.duration) head.push(obj.duration);
+                    const body = [head.join(', '), desc].filter(Boolean).join('. ');
+                    if (body) formattedString += ': ' + body;
+                } else {
+                    // Other abilities: "alcance, área, duración, +X — 2d6 daño Fuego — Descripción"
+                    let descParts = [];
+                    if (obj.range) descParts.push(obj.range);
+                    if (obj.area) descParts.push(obj.area);
+                    if (obj.duration) descParts.push(obj.duration);
+                    if (dmgLabel) desc = desc ? `<b>${dmgLabel}</b> — ` + desc : `<b>${dmgLabel}</b>`;
+                    if (modStr) desc = `<b>${modStr}</b> — ` + desc;
+                    if (desc) descParts.push(desc);
+                    if (descParts.length > 0)
+                        formattedString += ': ' + descParts.join(', ');
+                }
                 if (obj.crit) {
                     let crit = rankInMap(obj.skill)
                         ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.crit), obj.rank), obj.rank, obj.skill))

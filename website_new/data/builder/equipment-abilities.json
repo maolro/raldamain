@@ -5,7 +5,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, A Distancia", 
-        "description": "Distancia lejana, +MOD para impactar, 1d10 + STAT daño Perforante."
+        "description": "+MOD para atacar, Distancia lejana, 1d10 + STAT daño Perforante."
     },
     "bateria-de-chi":{
         "name": "Batería de Chi",
@@ -20,7 +20,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Cadena", 
-        "description": "Distancia cercana, +MOD para impactar, 1d10 + STAT daño Contundente."
+        "description": "+MOD para atacar, Distancia cercana, 1d10 + STAT daño Contundente."
     },
     "daga": {
         "name": "Daga",
@@ -28,7 +28,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Ligera, A Distancia", 
-        "description": "Adyacente o Distancia media, +MOD para impactar, 1d6 + STAT daño Perforante."
+        "description": "+MOD para atacar, Adyacente o Distancia media, 1d6 + STAT daño Perforante."
     },
     "espada-larga": {
         "name": "Espada Larga",
@@ -36,7 +36,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Duelo", 
-        "description": "Adyacente, +MOD para impactar, 1d8 + STAT daño Cortante."
+        "description": "+MOD para atacar, Adyacente, 1d8 + STAT daño Cortante."
     },
     "espada-ropera": {
         "name": "Espada Ropera",
@@ -44,7 +44,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Duelo", 
-        "description": "Adyacente, +MOD para impactar, 1d8 + STAT daño Perforante."
+        "description": "+MOD para atacar, Adyacente, 1d8 + STAT daño Perforante."
     },
     "escudo": {
         "name": "Escudo",
@@ -52,7 +52,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Escudo", 
-        "description": "Adyacente, +MOD para impactar, 1d6 + STAT daño Contundente."
+        "description": "+MOD para atacar, Adyacente, 1d6 + STAT daño Contundente."
     },    
     "garra": {
         "name": "Garra",
@@ -60,7 +60,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Marcial, Salvaje", 
-        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Cortante."
+        "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Cortante."
     },
     "garrote": {
         "name": "Garrote",
@@ -68,7 +68,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 1d6 + STAT daño Contundente."
+        "description": "+MOD para atacar, Adyacente, 1d6 + STAT daño Contundente."
     },
     "golpe-serpiente": {
         "name": "Golpe Serpiente",
@@ -76,7 +76,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Marcial, Serpiente", 
-        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Contundente, Perforante o Cortante."
+        "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Contundente, Perforante o Cortante."
     },
     "gran-hacha": {
         "name": "Gran Hacha",
@@ -84,7 +84,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 2d8 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
+        "description": "+MOD para atacar, Adyacente, 2d8 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
     },
     "gran-maza": {
         "name": "Gran Maza",
@@ -92,7 +92,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 2d8 + STAT daño Contundente. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
+        "description": "+MOD para atacar, Adyacente, 2d8 + STAT daño Contundente. El portador recibe Desventaja en todos sus tiros de Parada con esta arma."
     },
     "hacha-de-batalla": {
         "name": "Hacha de Batalla",
@@ -100,7 +100,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 1d10 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
+        "description": "+MOD para atacar, Adyacente, 1d10 + STAT daño Cortante. El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
     },
     "jabalina":{
         "name": "Jabalina",
@@ -108,7 +108,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Alabarda, A Distancia", 
-        "description": "Distancia cercana, +MOD para impactar, 1d8 + STAT daño Perforante. Puede lanzarse para aumentar su alcance a distancia media."
+        "description": "+MOD para atacar, Distancia cercana, 1d8 + STAT daño Perforante. Puede lanzarse para aumentar su alcance a distancia media."
     },
     "mandoble": {
         "name": "Mandoble",
@@ -116,7 +116,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 2d6 + STAT daño Cortante."
+        "description": "+MOD para atacar, Adyacente, 2d6 + STAT daño Cortante."
     },
     "martillo-de-guerra": {
         "name": "Martillo de Guerra",
@@ -124,7 +124,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Pesada", 
-        "description": "Adyacente, +MOD para impactar, 1d10 + STAT daño Contundente. El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
+        "description": "+MOD para atacar, Adyacente, 1d10 + STAT daño Contundente. El portador recibe Desventaja en todos sus tiros de Parada con esta arma. Puede emplear una acción adicional en este ataque para que el daño base pase a ser 2d6."
     },
     "lanza": {
         "name": "Lanza",
@@ -132,7 +132,7 @@
         "type": "Accion", 
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Alabarda", 
-        "description": "Distancia cercana, +MOD para impactar, 1d10 + STAT daño Perforante."
+        "description": "+MOD para atacar, Distancia cercana, 1d10 + STAT daño Perforante."
     },
     "latigo": {
         "name": "Látigo",
@@ -140,7 +140,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Cadena", 
-        "description": "Distancia cercana, +MOD para impactar, 1d6 + STAT daño Contundente."
+        "description": "+MOD para atacar, Distancia cercana, 1d6 + STAT daño Contundente."
     },
     "mordisco": {
         "name": "Mordisco",
@@ -148,7 +148,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Marcial, Salvaje", 
-        "description": "Adyacente, +MOD para impactar, 1DD + STAT daño Perforante."
+        "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Perforante."
     },
     "mosqueton": {
         "name": "Mosquetón",
@@ -156,7 +156,7 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, A Distancia", 
-        "description": "Distancia lejana, +MOD para impactar, 2d8 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador."
+        "description": "+MOD para atacar, Distancia lejana, 2d8 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador."
     },
     "parada-con-escudo": {
         "name": "Parada con Escudo",
@@ -171,6 +171,6 @@
         "type": "Accion", 
         "cost": "1 Acción",
         "tags": "Físico, Ataque, A Distancia", 
-        "description": "Distancia media, +MOD para impactar, 2d6 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d6 daño obligatorio al portador."
+        "description": "+MOD para atacar, Distancia media, 2d6 + STAT daño Perforante. Debe recargarse tras cada disparo empleando dos acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d6 daño obligatorio al portador."
     }
 }
