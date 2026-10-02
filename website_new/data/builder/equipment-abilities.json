@@ -213,13 +213,14 @@
     },
     "pistola-de-mano": {
         "cost": "1 Acción",
-        "damage": "2d6",
+        "damage": "2d8",
         "damage_type": "Perforante",
         "name": "Pistola de Mano",
         "range": "Distancia media",
         "skill": "armas-a-distancia",
         "tags": "Físico, Ataque, A Distancia",
-        "type": "Accion"
+        "type": "Accion",
+        "description": "Debe recargarse tras hacer seis disparos."
     },
     "rifle-francotirador": {
         "name": "Rifle Francotirador",
@@ -227,7 +228,7 @@
         "cost": "2 Acciones",
         "tags": "Físico, Ataque, Asesino",
         "range": "Extremo",
-        "damage": "3d6",
+        "damage": "3d8",
         "damage_type": "Perforante",
         "description": "Tienes Desventaja atacando a enemigos a distancia corta o inferior."
     },
@@ -241,5 +242,25 @@
         "damage_type": "Fuego",
         "range": "Medio",
         "area": "Radio Corto"
+    },
+    "escopeta": {
+        "name": "Escopeta",
+        "type": "Accion",
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Duelo, Coloso",
+        "range": "Adyacente",
+        "damage": "3d8",
+        "damage_type": "Perforante",
+        "description": "",
+        "area": "Cono Pequeño"
+    },
+    "rifle-de-asalto": {
+        "name": "Fusil",
+        "type": "Accion",
+        "cost": "2 Acciones",
+        "tags": "Físico, Ataque, Duelo",
+        "range": "Lejano",
+        "damage_type": "Perforante",
+        "damage": "3d8"
     }
 }
