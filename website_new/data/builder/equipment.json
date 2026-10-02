@@ -51,8 +51,8 @@
             "name": "Batería de Chi"
         },
         "bomba": {
-            "name": "Bomba",
-            "eqab": "bomba"
+            "eqab": "bomba",
+            "name": "Bomba"
         }
     },
     "head": {
@@ -80,6 +80,11 @@
             "eqab": "daga",
             "name": "Daga",
             "style": "light"
+        },
+        "escopeta": {
+            "eqab": "escopeta",
+            "name": "Escopeta",
+            "style": "duelist"
         },
         "escudo": {
             "eqab": "escudo,parada-con-escudo",
@@ -161,20 +166,15 @@
             "name": "Pistola de Mano",
             "style": "ranged"
         },
-        "rifle-francotirador": {
-            "name": "Rifle Francotirador",
-            "eqab": "rifle-francotirador",
-            "style": "ranged"
-        },
-        "escopeta": {
-            "name": "Escopeta",
-            "eqab": "escopeta",
-            "style": "duelist"
-        },
         "rifle-de-asalto": {
-            "name": "Rifle de Asalto",
             "eqab": "rifle-de-asalto",
+            "name": "Fusil",
             "style": "duelist"
+        },
+        "rifle-francotirador": {
+            "eqab": "rifle-francotirador",
+            "name": "Rifle Francotirador",
+            "style": "ranged"
         }
     }
 }
