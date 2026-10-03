@@ -19,33 +19,36 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Manipulación Metálica",
+          "name": "Ferrokinesia",
           "tags": [
             "Metal",
             "Ataque",
             "A distancia",
-            "Físico"
+            "Físico",
+            "Maniobra"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "duration": "Instantáneo",
-          "crit": "El objetivo queda desarmado automáticamente.",
-          "desc": "Tomas control de un objeto metálico cercano. Puedes intentar desarmar a un objetivo, que debe superar un tiro de salvación Físico para evitarlo, o atacarlo directamente con el objeto, infligiendo 2d6 + SAB/CAR daño Cortante, Perforante o Contundente.",
-          "empower": "Haz un ataque adicional contra un objetivo diferente o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
+          "damage": "1d6",
+          "damage_type": "Contundente/Cortante/Perforante",
+          "desc": "En lugar de atacar, puedes arrastrar un objeto metálico hasta un paso en cualquier dirección. Si dicho objeto está en manos de otro personaje, debes superarle en un tiro de salvación Físico",
+          "show_mod": false,
+          "empower": "Haz un ataque adicional o afecta a un objetivo adicional."
         },
         {
-          "name": "Redirigir Ataque",
+          "name": "Manipular Metal",
           "tags": [
             "Metal",
-            "Reacción"
+            "Físico"
           ],
-          "cost": "1 chi",
-          "duration": "Instantáneo",
-          "desc": "En respuesta a que falle un ataque con un proyectil metálico puedes redirigirlo contra cualquier objetivo que puedas ver en distancia media. Si eras tú quien atacó y fallaste, puedes repetir el ataque contra el mismo objetivo o lanzarlo contra uno diferente.",
-          "empower": "El ataque redirigido recibe un dado de daño adicional."
+          "cost": "1 Acción, 1 Chi",
+          "desc": "Arregla o rompe un objeto metálico (en algunas circunstancias tira contra una dificultad escogida por el máster). Si afectas a un constructo metálico, puedes curarle un impacto o efecto de estado, o forzarle a tener éxito en un tiro de salvación de Voluntad o sufre 1d6 + SAB/CAR daño Fuerza.",
+          "empower": "Afecta a un objetivo adicional.",
+          "range": "Media",
+          "show_mod": true
         },
         {
           "name": "Sentido del Metal",
@@ -54,7 +57,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Desarrollas una percepción innata de todo el metal que te rodea. Puedes sentir la presencia, composición y posición de todo objeto metálico a distancia media, incluso a través de paredes y obstáculos. Obtienes Resistencia contra Maniobras de Desarme y no puedes ser sorprendido por ataques que empleen proyectiles o armas metálicas."
+          "desc": "Puedes sentir la presencia, composición y posición de todo objeto metálico a distancia media y sus portadores."
         }
       ]
     },
