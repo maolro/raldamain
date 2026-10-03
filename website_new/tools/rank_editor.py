@@ -885,6 +885,10 @@ function cardHtml(li, ab, ai) {
           <input class="inp" value="${esc((ab.toggle.damage_tags||[]).join(', '))}" placeholder="Ataque+Físico…"
             oninput="setToggleArr(${li},${ai},'damage_tags',this.value)"></div>
       </div>
+      <label class="chk ${ab.toggle.adv_all?'on':''}" style="margin-bottom:6px;align-self:flex-start"
+        title="+1d6 en todos los tiros mientras esté activo: ataque, defensa (Esquiva, Paradas), salvaciones, magia, iniciativa y habilidades">
+        <input type="checkbox" ${ab.toggle.adv_all?'checked':''} onchange="setToggleBool(${li},${ai},'adv_all',this.checked)">
+        Ventaja en todos los tiros (ataque, defensa, salvaciones, magia…)</label>
       <div class="row2" style="margin-bottom:6px">
         <div class="field"><div class="lbl">Ventaja en (comas)</div>
           <input class="inp" value="${esc((ab.toggle.adv||[]).join(', '))}" placeholder="Ataque, Defensa…"
@@ -1023,6 +1027,7 @@ function addToggle(li,ai)        { S.rank.levels[li].abilities[ai].toggle={label
 function delToggle(li,ai)        { delete S.rank.levels[li].abilities[ai].toggle; renderToolbar(); renderLvl(); }
 function setToggle(li,ai,k,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(v)t[k]=v; else delete t[k]; renderToolbar(); }
 function setToggleArr(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)t[k]=a; else delete t[k]; renderToolbar(); }
+function setToggleBool(li,ai,k,on) { const t=S.rank.levels[li].abilities[ai].toggle; if(on)t[k]=true; else delete t[k]; renderToolbar(); renderLvl(); }
 function setToggleNum(li,ai,k,v) { const t=S.rank.levels[li].abilities[ai].toggle; const n=parseInt(v); if(!isNaN(n))t[k]=n; else delete t[k]; renderToolbar(); }
 function setToggleCe(li,ai,v)    { const t=S.rank.levels[li].abilities[ai].toggle; if(!v){delete t.ce;renderToolbar();return;} const n=parseFloat(v); t.ce=isNaN(n)?v:n; renderToolbar(); }
 function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; const a=v.split(',').map(s=>s.trim()).filter(Boolean); if(a.length)ab[k]=a; else delete ab[k]; renderToolbar(); }

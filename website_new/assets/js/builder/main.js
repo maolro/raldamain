@@ -706,7 +706,8 @@ ${reactions}
         toggleBenefitText(ab) {
             const t = ab.toggle;
             const parts = [];
-            if (t.adv && t.adv.length > 0) parts.push('Vent: ' + t.adv.join(', '));
+            if (t.adv_all) parts.push('Ventaja en todos los tiros');
+            else if (t.adv && t.adv.length > 0) parts.push('Vent: ' + t.adv.join(', '));
             if (t.adv_tags && t.adv_tags.length > 0) parts.push('+1d6 ' + t.adv_tags.join('/'));
             if (t.saves && t.saves.length > 0) parts.push('Salv: ' + t.saves.join(', '));
             if (t.adv_stats && t.adv_stats.length > 0) parts.push('+1d6 con ' + t.adv_stats.join('/'));
@@ -913,6 +914,7 @@ ${reactions}
                     }
                 }
                 if (!grants && t.adv_stats && statHit(t.adv_stats)) grants = true;
+                if (t.adv_all) grants = true;   // "Ventaja en todos los tiros"
                 if (!grants && obj.skill && obj.skill in this.ranks) {
                     const mk = this.getMainStat(this.ranks[obj.skill].stat);
                     const has = (types) => types.some(s =>
@@ -1301,7 +1303,7 @@ ${reactions}
                     if (!this.isToggleActive(ab.toggle.label)) continue;
                     const t = ab.toggle;
                     let grants = (t.adv && t.adv.includes(saveType)) || (t.saves && t.saves.includes(saveType))
-                        || !!(t.adv_stats && statHit(t.adv_stats));
+                        || !!(t.adv_stats && statHit(t.adv_stats)) || !!t.adv_all;
                     if (!grants && saveType === 'Voluntad')
                         grants = (t.adv && t.adv.includes('Físico')) || (t.saves && t.saves.includes('Físico'));
                     if (!grants && (saveType === 'Voluntad' || saveType === 'Mental'))
