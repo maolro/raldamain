@@ -1,6 +1,5 @@
 // Base combat values for the Impactos / Umbrales system
 const BASE_HITS = 6;      // Impactos every character starts with
-const BASE_UMBRAL = 2;    // Base "General" damage threshold
 // Tier by level: first level of each tier (Tier 1 = niv 1-3, 2 = 4-6 … 6 = 16-18, 7 = 19-21)
 const TIER_START = [1, 4, 7, 10, 13, 16, 19];
 
@@ -965,6 +964,12 @@ ${reactions}
         characterSnapshot: function () {
             return JSON.stringify(this.characterData());
         },
+        // Base "General" damage threshold = CON (CAR for beings without CON, like the old PV rule); never below 0
+        baseUmbral: function () {
+            const fs = this.finalStats;
+            const v = fs.con.value !== '-' ? fs.con.value : fs.cha.value;
+            return v === '-' ? 0 : Math.max(0, v);
+        },
         // Tier (1-7) from the level; drives stat limit (3 + Tier) and talent limit (Tier + 1)
         tier: function () {
             return tierForLevel(parseInt(this.level, 10) || 1);
@@ -992,7 +997,7 @@ ${reactions}
             else if (armor.def != null) add([{ value: armor.def, categories: 'Físico' }]);
             for (const { o, owner } of this.boostSources) add(o.umbrales, owner);
 
-            const general = BASE_UMBRAL + (bonus['General'] || 0);
+            const general = this.baseUmbral + (bonus['General'] || 0);
             const byValue = {};
             for (const cat in bonus) {
                 if (cat === 'General') continue;
