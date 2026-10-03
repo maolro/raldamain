@@ -8,3 +8,10 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+
+# Scripts y estilos: el navegador comprueba si hay una versión nueva en cada visita
+# (si no ha cambiado, el servidor responde "304" sin volver a enviar el archivo)
+/assets/js/*
+  Cache-Control: no-cache
+/assets/css/*
+  Cache-Control: no-cache

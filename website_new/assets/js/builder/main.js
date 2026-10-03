@@ -1597,7 +1597,6 @@ ${reactions}
     },
     created() {
         this.getData("talents", '/data/builder/talents.json');
-        this.getData("attributes", '/data/builder/attributes.json');
         this.loadRanksFromWebsite();
         this.getData("eqList", '/data/builder/equipment.json');
         this.getData("eqAtb", '/data/builder/equipment-abilities.json');
