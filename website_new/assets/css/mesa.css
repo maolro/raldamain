@@ -403,6 +403,28 @@ body.mesa {
     border-radius: 6px;
 }
 
+.dice-pool.loaded {
+    border-style: solid;
+    border-color: var(--accent-gold);
+    background: rgba(255, 242, 0, 0.04);
+}
+
+.dice-pool.pulse {
+    animation: pool-pulse 0.6s ease;
+}
+
+@keyframes pool-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 242, 0, 0.5); }
+    100% { box-shadow: 0 0 0 10px rgba(255, 242, 0, 0); }
+}
+
+.pool-label {
+    width: 100%;
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+}
+
 .pool-chip {
     background: rgba(255, 242, 0, 0.08);
     border: 1px solid var(--accent-gold);

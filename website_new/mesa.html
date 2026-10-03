@@ -7,16 +7,16 @@
     <title>Mesa de Pruebas | Raldamain</title>
     <meta name="description" content="Ficha de personaje a pantalla completa con lanzador de dados para pruebas de juego.">
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=20261003b">
-    <link rel="stylesheet" href="/assets/css/statblock.css?v=20261003b">
-    <link rel="stylesheet" href="/assets/css/mesa.css?v=20261003b">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261003c">
+    <link rel="stylesheet" href="/assets/css/statblock.css?v=20261003c">
+    <link rel="stylesheet" href="/assets/css/mesa.css?v=20261003c">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
     <!-- Loading a sheet here must never overwrite the Creador character -->
     <script>window.STATBLOCK_NO_PERSIST = true;</script>
-    <script src="/assets/js/builder/v-statblock.js?v=20261003b"></script>
+    <script src="/assets/js/builder/v-statblock.js?v=20261003c"></script>
 </head>
 
 <body class="mesa">
@@ -42,7 +42,7 @@
                 <p>Abre la Mesa desde el <a href="/creador.html">Creador de Personajes</a>
                     o carga un archivo <code>.json</code> (Descargar del Creador) o <code>.md</code>.
                     También puedes arrastrarlo aquí.</p>
-                <p class="mesa-hint">Pulsa cualquier valor subrayado de la ficha para tirarlo.</p>
+                <p class="mesa-hint">Pulsa cualquier valor subrayado de la ficha para cargarlo en la reserva y ajustarlo antes de tirar.</p>
             </div>
 
             <div id="vue-sheet" hidden>
@@ -86,7 +86,7 @@
                 <button id="clear-log" class="log-clear">Borrar</button>
             </div>
             <div class="dice-log" id="dice-log">
-                <div id="log-empty" class="log-empty">Sin tiradas todavía. Pulsa cualquier valor subrayado de la ficha para tirarlo.</div>
+                <div id="log-empty" class="log-empty">Sin tiradas todavía. Pulsa cualquier valor subrayado de la ficha para cargarlo en la reserva y ajustarlo antes de tirar.</div>
             </div>
             <div class="dice-flash" id="dice-flash"></div>
         </aside>
@@ -110,9 +110,9 @@
         </form>
     </dialog>
 
-    <script src="/assets/js/richtext.js?v=20261003b"></script>
-    <script src="/assets/js/builder/main.js?v=20261003b"></script>
-    <script src="/assets/js/mesa.js?v=20261003b"></script>
+    <script src="/assets/js/richtext.js?v=20261003c"></script>
+    <script src="/assets/js/builder/main.js?v=20261003c"></script>
+    <script src="/assets/js/mesa.js?v=20261003c"></script>
 </body>
 
 </html>

@@ -18,6 +18,7 @@ const DICE = [
 
 const pool = {};          // sides → count (negative sides = subtracted die)
 let poolMod = 0;
+let poolLabel = '';       // ability loaded from the sheet ("Gran Hacha"), used as the roll's label
 
 function rollDie(sides) { return Math.floor(Math.random() * sides) + 1; }
 
@@ -69,7 +70,7 @@ function roll(expr, label) {
     const tiro = isTiro(terms, expr);
     if (tiro) terms.unshift({ sign: 1, count: 1, sides: 20 });
     const { total, breakdown } = evaluate(terms);
-    const crit = tiro && /die-max">20</.test(breakdown);
+    const crit = /\d*d20<span class="die-faces">(?:(?!<\/span><\/span>).)*die-max">20</.test(breakdown);
     const sent = sendDiscord(label, breakdown, total, crit);
     addLog({ label, expr: expr.replace(/[()]/g, ''), breakdown, total, crit, sent });
 }
@@ -239,7 +240,9 @@ function sendDiscord(label, breakdown, total, crit) {
 
 function poolExpr() {
     const parts = [];
-    for (const d of DICE) {
+    // d20 first ("1d20+1d6+4"), then the other dice in button order
+    const order = [...DICE].sort((x, y) => (y.sides === 20) - (x.sides === 20));
+    for (const d of order) {
         const n = pool[d.sides] || 0;
         if (!n) continue;
         parts.push(d.sides < 0 ? `-${n}d${-d.sides}` : `+${n}d${d.sides}`);
@@ -251,13 +254,50 @@ function poolExpr() {
 function renderPool() {
     const el = document.getElementById('dice-pool');
     const expr = poolExpr();
+    const label = poolLabel ? `<span class="pool-label" title="Tirada cargada desde la ficha">${escapeHtml(poolLabel)}</span>` : '';
+    el.classList.toggle('loaded', !!poolLabel);
     el.innerHTML = expr
-        ? DICE.filter(d => pool[d.sides]).map(d =>
+        ? label + DICE.filter(d => pool[d.sides]).map(d =>
             `<button class="pool-chip" data-sides="${d.sides}" title="Quitar">${d.sides < 0 ? '−' : ''}${pool[d.sides]}d${Math.abs(d.sides)} ×</button>`).join('')
           + (poolMod ? `<span class="pool-mod">${poolMod > 0 ? '+' : ''}${poolMod}</span>` : '')
         : '<span class="pool-empty">Pulsa un dado para añadirlo</span>';
     document.getElementById('mod-value').textContent = (poolMod > 0 ? '+' : '') + poolMod;
     document.getElementById('roll-pool').disabled = !expr;
+}
+
+function clearPool() {
+    for (const k in pool) delete pool[k];
+    poolMod = 0; poolLabel = '';
+    renderPool();
+}
+
+// Puts a sheet roll in the pool so it can be adjusted (extra dice, modifier, −d6) before "Tirar".
+// "+5+1d6" (a tiro) → d20 + d6, modifier +5 · "2d8+4" (damage) → 2×d8, modifier +4
+function loadIntoPool(expr, label) {
+    const terms = parseRoll(expr);
+    if (!terms) { flash(`No se puede tirar "${expr}"`); return; }
+    if (isTiro(terms, expr)) terms.unshift({ sign: 1, count: 1, sides: 20 });
+    const supported = new Set(DICE.map(d => d.sides));
+    const fits = terms.every(t => t.value !== undefined || supported.has(t.sign < 0 ? -t.sides : t.sides));
+    if (!fits) {
+        // Dice the pool has no button for: leave it in the expression line instead
+        const inp = document.getElementById('expr-input');
+        inp.value = expr; inp.focus();
+        flash(`${label}: ajusta la expresión y pulsa 🎲`, 'ok');
+        return;
+    }
+    for (const k in pool) delete pool[k];
+    poolMod = 0;
+    for (const t of terms) {
+        if (t.value !== undefined) poolMod += t.sign * t.value;
+        else { const key = t.sign < 0 ? -t.sides : t.sides; pool[key] = (pool[key] || 0) + t.count; }
+    }
+    poolLabel = label || '';
+    renderPool();
+    const el = document.getElementById('dice-pool');
+    el.classList.remove('pulse'); void el.offsetWidth; el.classList.add('pulse');
+    el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    flash(`${poolLabel || 'Tirada'} cargada: añade dados, cambia el modificador o pulsa Tirar`, 'ok');
 }
 
 function initDice() {
@@ -277,15 +317,15 @@ function initDice() {
     });
     document.getElementById('mod-minus').onclick = () => { poolMod--; renderPool(); };
     document.getElementById('mod-plus').onclick = () => { poolMod++; renderPool(); };
-    document.getElementById('roll-pool').onclick = () => { const x = poolExpr(); if (x) roll(x, 'Reserva'); };
-    document.getElementById('clear-pool').onclick = () => { for (const k in pool) delete pool[k]; poolMod = 0; renderPool(); };
+    document.getElementById('roll-pool').onclick = () => { const x = poolExpr(); if (x) roll(x, poolLabel || 'Reserva'); };
+    document.getElementById('clear-pool').onclick = clearPool;
     document.getElementById('expr-form').addEventListener('submit', e => {
         e.preventDefault();
         const inp = document.getElementById('expr-input');
         if (inp.value.trim()) roll(inp.value.trim(), 'Expresión');
     });
     document.getElementById('clear-log').onclick = () => {
-        document.getElementById('dice-log').innerHTML = '<div id="log-empty" class="log-empty">Sin tiradas todavía. Pulsa cualquier valor subrayado de la ficha para tirarlo.</div>';
+        document.getElementById('dice-log').innerHTML = '<div id="log-empty" class="log-empty">Sin tiradas todavía. Pulsa un valor subrayado de la ficha para cargarlo en la reserva.</div>';
     };
     renderPool();
 }
@@ -317,7 +357,7 @@ function initSheetRolls() {
         const r = e.target.closest('.rollable');
         if (!r) return;
         e.preventDefault();
-        roll(r.dataset.roll, labelFor(r));
+        loadIntoPool(r.dataset.roll, labelFor(r));
     });
 }
 
