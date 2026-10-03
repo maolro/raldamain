@@ -9,7 +9,7 @@ from pathlib import Path
 
 BASE = Path(__file__).parent.parent
 
-GIT_BRANCH = "rank-impactos-umbrales"
+GIT_BRANCH = "master"
 
 
 def _git(*args, timeout=30):
