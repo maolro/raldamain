@@ -70,13 +70,13 @@ function roll(expr, label) {
     if (tiro) terms.unshift({ sign: 1, count: 1, sides: 20 });
     const { total, breakdown } = evaluate(terms);
     const crit = tiro && /die-max">20</.test(breakdown);
-    addLog({ label, expr: expr.replace(/[()]/g, ''), breakdown, total, crit });
-    sendDiscord(label, expr, breakdown, total);
+    const sent = sendDiscord(label, breakdown, total, crit);
+    addLog({ label, expr: expr.replace(/[()]/g, ''), breakdown, total, crit, sent });
 }
 
 // ── Log ──────────────────────────────────────────────────────────────────────
 
-function addLog({ label, expr, breakdown, total, crit }) {
+function addLog({ label, expr, breakdown, total, crit, sent }) {
     const log = document.getElementById('dice-log');
     document.getElementById('log-empty')?.remove();
     const el = document.createElement('div');
@@ -85,7 +85,7 @@ function addLog({ label, expr, breakdown, total, crit }) {
     el.innerHTML = `
         <div class="log-head">
             <span class="log-label">${escapeHtml(label || 'Tirada')}${crit ? ' <span class="log-crit">¡Crítico!</span>' : ''}</span>
-            <span class="log-time">${time}</span>
+            <span class="log-time">${sent ? '<span class="log-sent" title="Enviada a Discord">🔗</span> ' : ''}${time}</span>
         </div>
         <div class="log-body">
             <span class="log-breakdown">${breakdown}</span>
@@ -102,26 +102,137 @@ function escapeHtml(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-function flash(msg) {
+function flash(msg, type) {
     const el = document.getElementById('dice-flash');
     el.textContent = msg;
+    el.classList.toggle('ok', type === 'ok');
     el.classList.add('show');
     clearTimeout(flash._t);
-    flash._t = setTimeout(() => el.classList.remove('show'), 2200);
+    flash._t = setTimeout(() => el.classList.remove('show'), 2600);
 }
 
-// Optional Discord webhook, same parameters as the old roller: ?hook=<id/token>&name=<who>
-function sendDiscord(label, expr, breakdown, total) {
+// ── Discord link ─────────────────────────────────────────────────────────────
+// { name, hook } saved in this browser. With saved data the link starts on; without, off.
+const DISCORD_KEY = 'mesaDiscord';
+const HOOK_RE = /^https:\/\/(?:canary\.|ptb\.)?discord(?:app)?\.com\/api\/webhooks\/\d+\/[\w-]+$/;
+const discord = { config: null, on: false };
+
+// Accepts a full webhook URL or the old "id/token" form
+function normalizeHook(v) {
+    v = String(v || '').trim();
+    if (/^\d+\/[\w-]+$/.test(v)) v = 'https://discord.com/api/webhooks/' + v;
+    return v.replace(/\/+$/, '');
+}
+
+function saveDiscord(config) {
+    discord.config = config;
+    try {
+        if (config) localStorage.setItem(DISCORD_KEY, JSON.stringify(config));
+        else localStorage.removeItem(DISCORD_KEY);
+    } catch (e) { }
+}
+
+function loadDiscord() {
+    try { discord.config = JSON.parse(localStorage.getItem(DISCORD_KEY)); } catch (e) { discord.config = null; }
+    // One-time import of the old ?hook=…&name=… links, then clean the address bar
     const params = new URLSearchParams(location.search);
-    const hook = params.get('hook');
-    if (!hook) return;
-    const who = params.get('name') || 'Alguien';
-    const plain = breakdown.replace(/<span class="die-faces">(.*?)<\/span>/g, (_, f) => ' [' + f.replace(/<[^>]+>/g, ',').replace(/,+/g, ',').replace(/^,|,$/g, '') + ']').replace(/<[^>]+>/g, '');
-    fetch('https://discord.com/api/webhooks/' + hook, {
+    if (params.get('hook')) {
+        saveDiscord({ name: params.get('name') || '', hook: normalizeHook(params.get('hook')) });
+        params.delete('hook'); params.delete('name');
+        const q = params.toString();
+        history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+    }
+    discord.on = !!(discord.config && discord.config.hook);
+    renderDiscordBtn();
+}
+
+function renderDiscordBtn() {
+    const btn = document.getElementById('discord-btn');
+    btn.classList.toggle('on', discord.on);
+    btn.textContent = discord.on ? '🔗 Discord: ON' : '🔗 Discord: OFF';
+    btn.title = discord.on
+        ? `Las tiradas se envían a Discord como «${discord.config.name || 'Alguien'}». Pulsa para desactivar.`
+        : (discord.config ? 'Pulsa para enviar las tiradas a Discord' : 'Pulsa para conectar un canal de Discord');
+    document.getElementById('discord-cfg').hidden = !discord.config;
+}
+
+function openDiscordDialog() {
+    const dlg = document.getElementById('discord-dialog');
+    document.getElementById('dc-name').value = discord.config ? discord.config.name || '' : '';
+    document.getElementById('dc-hook').value = discord.config ? discord.config.hook || '' : '';
+    document.getElementById('dc-error').textContent = '';
+    document.getElementById('dc-forget').hidden = !discord.config;
+    dlg.showModal();
+    document.getElementById('dc-name').focus();
+}
+
+// Reads and validates the dialog; returns { name, hook } or null (and shows why)
+function dialogConfig() {
+    const name = document.getElementById('dc-name').value.trim();
+    const hook = normalizeHook(document.getElementById('dc-hook').value);
+    const err = document.getElementById('dc-error');
+    if (!name) { err.textContent = 'Escribe tu nombre.'; return null; }
+    if (!HOOK_RE.test(hook)) { err.textContent = 'El webhook debe ser una URL como https://discord.com/api/webhooks/…'; return null; }
+    err.textContent = '';
+    return { name, hook };
+}
+
+async function postToDiscord(config, embed) {
+    const r = await fetch(config.hook, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ embeds: [{ title: `${who} ha tirado${label ? ': ' + label : ''}`, description: plain, fields: [{ name: 'Resultado', value: String(total), inline: true }] }] })
-    }).catch(() => { });
+        body: JSON.stringify({ username: config.name, embeds: [embed] }),
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+}
+
+function initDiscord() {
+    document.getElementById('discord-btn').onclick = () => {
+        if (discord.on) { discord.on = false; renderDiscordBtn(); return; }
+        if (!discord.config) { openDiscordDialog(); return; }
+        discord.on = true; renderDiscordBtn();
+    };
+    document.getElementById('discord-cfg').onclick = openDiscordDialog;
+    document.getElementById('dc-cancel').onclick = () => document.getElementById('discord-dialog').close();
+    document.getElementById('dc-save').onclick = (e) => {
+        e.preventDefault();
+        const cfg = dialogConfig(); if (!cfg) return;
+        saveDiscord(cfg); discord.on = true; renderDiscordBtn();
+        document.getElementById('discord-dialog').close();
+        flash('Discord conectado: las tiradas se enviarán al canal', 'ok');
+    };
+    document.getElementById('dc-test').onclick = async (e) => {
+        e.preventDefault();
+        const cfg = dialogConfig(); if (!cfg) return;
+        const err = document.getElementById('dc-error');
+        err.textContent = 'Enviando…';
+        try {
+            await postToDiscord(cfg, { title: `${cfg.name} se ha conectado a la Mesa de Pruebas`, color: 0xFFF200 });
+            err.textContent = '✓ Mensaje de prueba enviado.';
+        } catch (x) { err.textContent = 'No se pudo enviar (' + x.message + '). Revisa el webhook.'; }
+    };
+    document.getElementById('dc-forget').onclick = (e) => {
+        e.preventDefault();
+        if (!confirm('¿Olvidar el nombre y el webhook guardados en este navegador?')) return;
+        saveDiscord(null); discord.on = false; renderDiscordBtn();
+        document.getElementById('discord-dialog').close();
+    };
+    loadDiscord();
+}
+
+// Sends a roll to the channel when the link is on; returns whether it was sent
+function sendDiscord(label, breakdown, total, crit) {
+    if (!discord.on || !discord.config) return false;
+    const plain = breakdown
+        .replace(/<span class="die-faces">(.*?)<\/span>/g, (_, f) =>
+            ' [' + f.replace(/<[^>]+>/g, ',').replace(/,+/g, ',').replace(/^,|,$/g, '') + ']')
+        .replace(/<[^>]+>/g, '');
+    postToDiscord(discord.config, {
+        title: `${discord.config.name} — ${label || 'Tirada'}${crit ? ' · ¡Crítico!' : ''}`,
+        description: `${plain}\n**Total: ${total}**`,
+        color: crit ? 0xE74C3C : 0xFFF200,
+    }).catch(() => flash('No se pudo enviar la tirada a Discord. Revisa el webhook (⚙).'));
+    return true;
 }
 
 // ── Pool builder ─────────────────────────────────────────────────────────────
@@ -305,6 +416,7 @@ function initLoaders() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initDice();
+    initDiscord();
     initSheetRolls();
     initLoaders();
 });

@@ -97,6 +97,21 @@ new Vue({
                 }
                 return 'cha';
             };
+            // Main stat from the fundamentals ("Estadística principal: Sabiduría/Constitución + Rango",
+            // "Modificador: Carisma o Constitución + Rango"): two stats → the higher one is used.
+            // Ranks without that line fall back to their "stats" list.
+            const rankMainStat = (rankData) => {
+                const statWord = /(Fuerza|Destreza|Constituci[oó]n|Inteligencia|Sabidur[ií]a|Carisma)/gi;
+                const fullName = { fuerza: 'str', destreza: 'dex', constitucion: 'con', 'constitución': 'con',
+                    inteligencia: 'itl', sabiduria: 'wis', 'sabiduría': 'wis', carisma: 'cha' };
+                for (const f of (rankData.fundamentals || [])) {
+                    const text = f.replace(/<[^>]+>/g, '');
+                    if (!/estad[ií]stica principal|modificador/i.test(text)) continue;
+                    const keys = [...new Set((text.match(statWord) || []).map(w => fullName[w.toLowerCase()]))].filter(Boolean);
+                    if (keys.length) return keys.slice(0, 2).join('/');
+                }
+                return getMainStat(rankData.stats || []);
+            };
             const parseStatBoosts = (levels) => {
                 let boosts = [];
                 const boostPattern = /(?:Aumenta|Incrementa).*?estad[ií]stica\s+de\s+([\w\u00C0-\u024F]+).*?(?:en|por)\s+\+?(\d+)/i;
@@ -182,7 +197,7 @@ new Vue({
                                 let rankEntry = {
                                     name: rankData.title,
                                     category: entry.category,
-                                    stat: getMainStat(statsArr),
+                                    stat: rankMainStat(rankData),
                                     reserve: getReserve(),
                                     rank: 0,
                                     freeranks: 0,
@@ -358,7 +373,9 @@ new Vue({
                 let desc = rankInMap(obj.skill)
                     ? this.replaceTag(this.resolveRankText(rich(obj.description), obj.rank), obj.rank, obj.skill)
                     : rich(this.resolveWeaponDesc(obj));
-                desc = this.resolveStatTokens(desc);
+                // Learned spells: damage/effects use the granting rank's main stat
+                const spellStat = obj.spell_stat ? this.finalStats[this.getMainStat(obj.spell_stat)].value : undefined;
+                desc = this.resolveStatTokens(desc, spellStat);
                 const tagsArr = (obj.tags || '').split(',').map(t => t.trim());
                 // Structured equipment weapon (equipment editor): damage dice + weapon stat
                 const weapon = !rankInMap(obj.skill) && obj.damage ? this.weaponRoll(obj) : null;
@@ -393,7 +410,7 @@ new Vue({
                 if (obj.damage) {
                     const dmgBoosts = this.getDamageBoosts(obj);
                     const plain = dmgBoosts.filter(b => !b.type).map(b => b.dice);
-                    const baseDice = rankInMap(obj.skill) ? this.resolveStatTokens(obj.damage)
+                    const baseDice = rankInMap(obj.skill) ? this.resolveStatTokens(obj.damage, spellStat)
                         : weapon ? `${obj.damage} + ${weapon.stat}` : obj.damage;
                     const boostedDice = plain.length > 0 ? this.applyDiceBoosts(baseDice, plain) : baseDice;
                     const typeStr = obj.damage_type ? ` ${obj.damage_type}` : '';
@@ -430,13 +447,13 @@ new Vue({
                 }
                 if (obj.crit) {
                     let crit = rankInMap(obj.skill)
-                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.crit), obj.rank), obj.rank, obj.skill))
+                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.crit), obj.rank), obj.rank, obj.skill), spellStat)
                         : obj.crit;
                     formattedString += ` Crítico: ${crit}`;
                 }
                 if (obj.empower) {
                     let empower = rankInMap(obj.skill)
-                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.empower), obj.rank), obj.rank, obj.skill))
+                        ? this.resolveStatTokens(this.replaceTag(this.resolveRankText(rich(obj.empower), obj.rank), obj.rank, obj.skill), spellStat)
                         : obj.empower;
                     formattedString += ` <i><span class="sb-empower">Empoderar</span> (<span class="sb-cost">1 chi</span> · máx. 2×): ${empower}</i>`;
                 }
@@ -851,7 +868,8 @@ ${reactions}
                     return `<span class="sb-calc" title="${formula}">${v}</span>`;
                 });
         },
-        resolveStatTokens(str) {
+        // forced: when given (learned spells), every stat name in a formula takes this value
+        resolveStatTokens(str, forced) {
             if (!str) return str;
             const fs = this.finalStats;
             const statMap = {
@@ -864,6 +882,7 @@ ${reactions}
             const T = '(FUE|DES|CON|INT|SAB|CAR)';
             const re = new RegExp(`(?<=[+\\-]\\s*)${T}(?:\\/${T})?\\b|\\b${T}(?:\\/${T})?(?=\\s*[+\\-]\\s*[\\dRr(])`, 'g');
             return str.replace(re, (m, a1, b1, a2, b2) => {
+                if (forced !== undefined && forced !== null) return forced === '-' ? '-' : String(forced);
                 const a = a1 || a2, b = b1 || b2;
                 const va = statMap[a], vb = b ? statMap[b] : undefined;
                 if (vb === undefined) return va === '-' ? '-' : String(va);
@@ -1225,7 +1244,8 @@ ${reactions}
                     if (!sid || !(sid in this.attributes) || !g.optionIds.includes(sid)) continue;
                     const sp = this.attributes[sid];
                     const from = this.ranks[sp.skill] ? this.ranks[sp.skill].name : '';
-                    const atb = { ...sp, skill: g.ownerSkill, rank: this.getRank(g.ownerSkill), spell_from: from };
+                    const atb = { ...sp, skill: g.ownerSkill, rank: this.getRank(g.ownerSkill), spell_from: from,
+                        spell_stat: this.ranks[g.ownerSkill] ? this.ranks[g.ownerSkill].stat : null };
                     atb.tags = [`Hechizo (${from})`, sp.tags].filter(Boolean).join(', ');
                     abSwitch(atb);
                 }
