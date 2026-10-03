@@ -89,7 +89,10 @@
         },
         {
           "name": "Infusión Elemental",
-          "tags": [],
+          "tags": [
+            "Pasiva",
+            "Naturaleza"
+          ],
           "desc": "Puedes emplear tu modificador de Magia de Naturaleza para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia de Naturaleza.",
           "replace_mod": [
             "Arma",
