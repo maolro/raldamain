@@ -34,7 +34,7 @@
             "Toque",
             "Magia"
           ],
-          "cost": "1 Acción",
+          "cost": "1 Acción, 1 Chi",
           "range": "Toque",
           "desc": "Cura un impacto a un aliado adyacente. Si esta habilidad se usa en un no-muerto, este deberá tener éxito en un tiro de salvación de Voluntad o sufrirá 1d6 + SAB/CAR daño Radiante.",
           "empower": "Cura un impacto o elimina un efecto de estado adicional, o añade un dado de daño adicional is afectas a un no-muerto.",
