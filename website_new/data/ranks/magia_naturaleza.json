@@ -5,11 +5,55 @@
   "draft": true,
   "image": "magia_naturaleza.jpg",
   "stats": [],
-  "description": "",
+  "description": "Manipula las plantas y la naturaleza para atrapar a tus enemigos y llamar a poderosos guardianes.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
-    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+    "<strong>Estadística principal:</strong> Sabiduría + Rango.",
+    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Enmarañar",
+          "tags": [
+            "Naturaleza",
+            "Ataque",
+            "Agarre"
+          ],
+          "desc": "El objetivo queda Enredado hasta que escape.",
+          "cost": "1 Acción",
+          "range": "Medio",
+          "empower": "Aumenta el área afectada por un paso."
+        },
+        {
+          "name": "Espinas de Madera",
+          "tags": [
+            "Naturaleza",
+            "Ataque"
+          ],
+          "desc": "El daño de este ataque cuenta como Fuerza si impacta a un objetivo Enredado por efectos de Naturaleza.",
+          "cost": "1 Acción",
+          "range": "Medio",
+          "damage": "1d6",
+          "damage_type": "Perforante/Cortante",
+          "empower": "Añade un dado de daño adicional y aumenta el área afectada por un paso."
+        },
+        {
+          "name": "Pulso Vital",
+          "tags": [
+            "Naturaleza",
+            "Sanación"
+          ],
+          "desc": "El objetivo recupera un impacto o se cura de un efecto de estado. Esta habilidad también puede usarse para curar o hacer crecer plantas, y puedes alcanzar a objetivos hasta distancia media que estén en contacto con tus plantas.",
+          "empower": "Afecta a un objetivo adicional.",
+          "range": "Adyacente",
+          "cost": "1 Acción, 1 Chi"
+        }
+      ]
+    }
+  ]
 }
