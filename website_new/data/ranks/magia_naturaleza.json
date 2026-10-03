@@ -54,6 +54,50 @@
           "cost": "1 Acción, 1 Chi"
         }
       ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Muro de Zarzas",
+          "tags": [
+            "Naturaleza",
+            "Reacción"
+          ],
+          "desc": "Crea un muro que protege a todos en su alcance, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren 2d6 + SAB daño Perforante y quedan Enredados.",
+          "cost": "1 Reacción, 1 Chi",
+          "range": "Medio",
+          "area": "Línea media/Radio corto",
+          "show_mod": true
+        },
+        {
+          "name": "Raíces Devoradoras",
+          "tags": [
+            "Naturaleza",
+            "Ataque",
+            "Físico",
+            "Área"
+          ],
+          "desc": "Los objetivos quedan Enredados hasta que escapen. Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. ",
+          "damage": "2d6",
+          "damage_type": "Contundente",
+          "range": "Medio",
+          "area": "Cilindro Medio",
+          "cost": "2 Acciones, 1 Chi"
+        },
+        {
+          "name": "Infusión Elemental",
+          "tags": [],
+          "desc": "Puedes emplear tu modificador de Magia de Naturaleza para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia de Naturaleza.",
+          "replace_mod": [
+            "Arma",
+            "Parada"
+          ],
+          "empower": "Aumenta el daño base de un ataque Físico hecho con un arma natural o de madera por un dado."
+        }
+      ]
     }
   ]
 }
