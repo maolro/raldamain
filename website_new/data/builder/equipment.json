@@ -177,8 +177,13 @@
             "style": "ranged"
         },
         "sable": {
-            "name": "Sable",
             "eqab": "sable",
+            "name": "Sable",
+            "style": "duelist"
+        },
+        "golpe": {
+            "name": "Golpe",
+            "eqab": "golpe",
             "style": "duelist"
         }
     }

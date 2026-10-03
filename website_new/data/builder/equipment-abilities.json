@@ -264,13 +264,23 @@
         "type": "Accion"
     },
     "sable": {
+        "cost": "1 Acción",
+        "damage": "1d8",
+        "damage_type": "Cortante",
+        "description": "",
         "name": "Sable",
+        "range": "Adyacente",
+        "tags": "Físico, Ataque, Duelo",
+        "type": "Accion"
+    },
+    "golpe": {
+        "name": "Golpe",
         "type": "Accion",
         "cost": "1 Acción",
         "tags": "Físico, Ataque, Duelo",
         "range": "Adyacente",
-        "damage": "1d8",
-        "damage_type": "Cortante",
+        "damage": "1d6",
+        "damage_type": "Contundente",
         "description": ""
     }
 }
