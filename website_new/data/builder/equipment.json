@@ -175,6 +175,11 @@
             "eqab": "rifle-francotirador",
             "name": "Rifle Francotirador",
             "style": "ranged"
+        },
+        "sable": {
+            "name": "Sable",
+            "eqab": "sable",
+            "style": "duelist"
         }
     }
 }

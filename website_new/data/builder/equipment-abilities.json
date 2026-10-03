@@ -262,5 +262,15 @@
         "range": "Extremo",
         "tags": "Físico, Ataque, Asesino",
         "type": "Accion"
+    },
+    "sable": {
+        "name": "Sable",
+        "type": "Accion",
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Duelo",
+        "range": "Adyacente",
+        "damage": "1d8",
+        "damage_type": "Cortante",
+        "description": ""
     }
 }
