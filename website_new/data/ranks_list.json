@@ -304,5 +304,14 @@
     "description": "Conviertes la química y la física en armas de guerra, diseñando explosivos capaces de negar terreno, envenenar el aire y reducir fortalezas a escombros.",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "magia_naturaleza",
+    "name": "Magia de Naturaleza",
+    "category": "Elementalismo",
+    "image": "magia_naturaleza.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
