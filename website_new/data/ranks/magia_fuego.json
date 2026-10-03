@@ -74,23 +74,20 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
-      "passive": "Aumenta estadística de Destreza por 1",
+      "draft": false,
       "abilities": [
         {
           "name": "Muro de Llamas",
           "tags": [
             "Fuego",
-            "Defensivo",
-            "Duradero"
+            "Duradero",
+            "Reacción"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña / Línea media",
-          "duration": "Concentración",
-          "crit": "Afectados sufren quemadura media.",
-          "desc": "Crea un muro con PV iguales a tu Rango x 3. El muro proporciona cubierta parcial e inflige 1d6 + CAR daño Fuego a las criaturas que intenten cruzarlo. Si se emplea como reacción defensiva, reduce el daño de un ataque que recibas por un valor igual a sus PV.",
-          "empower": "Restaura todos los PV del muro."
+          "duration": "Una ronda",
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren 1d6 + CAR daño Fuego que quema objetos inflamables."
         },
         {
           "name": "Bola de Fuego",
@@ -99,12 +96,14 @@
             "Ataque",
             "Área"
           ],
-          "cost": "1+ acciones, 1 chi",
+          "cost": "1+ Acciones, 1 Chi",
           "range": "Medio",
           "area": "Radio pequeño",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Inflige 2d6 + CAR daño Fuego al impactar. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 y el tamaño un paso por cada acción extra (máximo 2 cargas).",
-          "empower": "Lanza una bola adicional con la misma carga a otro objetivo."
+          "desc": "Prende objetos inflamables en el área afectada. Puedes emplear una Acción para aumentar el daño por 1d6.",
+          "empower": "Lanza una bola adicional con la misma carga a otro objetivo.",
+          "damage": "1d6",
+          "damage_type": "Fuego"
         },
         {
           "name": "Infusión de Fuego",
@@ -112,7 +111,12 @@
             "Fuego",
             "Pasiva"
           ],
-          "desc": "Tus armas infligen 1d6 daño Fuego adicional al impactar y cuentan como mágicas. Puedes emplear tu modificador de Magia de Fuego para todos tus tiros relacionados con armas. El daño Fuego aumenta a 2d6 a Rango IV y a 3d6 a Rango VI."
+          "desc": "Puedes emplear tu modificador de Magia de Fuego para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Fuego.",
+          "replace_mod": [
+            "Parada",
+            "Arma"
+          ],
+          "empower": "Un ataque de arma provoca 1d6 daño Fuego al impactar."
         }
       ]
     },

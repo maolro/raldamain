@@ -200,11 +200,11 @@
   {
     "id": "magia_protectora",
     "name": "Magia Protectora",
-    "category": "Arcano",
+    "category": "Arcana",
     "image": "magia_protectora.jpg",
-    "description": "Crea glifos de sellado y barreras capaces de anular otras magias.",
+    "description": "Te especializas en la defensa mágica, desviando o cerrando los conductos de chi para impedir el uso de magia hostil. Creas campos de fuerza, disipas hechizos, anulas objetos mágicos y proteges contra criaturas extraplanarias.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_evocacion",
