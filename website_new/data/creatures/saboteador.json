@@ -7,7 +7,7 @@
   "description": "",
   "hits": 2,
   "saves": {
-    "FÍS": "+5+1d6",
+    "FÍS": "+5+2d6",
     "VOL": "+2",
     "MEN": "+5"
   },
@@ -43,6 +43,11 @@
       "damage": "2d6 + 4 Perforante"
     },
     {
+      "name": "Asalto Coordinado",
+      "cost": 1,
+      "desc": "Hace un ataque junto a un aliado, y ambos reciben +2 al tiro."
+    },
+    {
       "name": "Bomba",
       "desc": "",
       "cost": 2,
@@ -58,11 +63,6 @@
       "bonus": "+5+2d6",
       "damage": "3d6 + 4 Perforante",
       "range": "Adyacente"
-    },
-    {
-      "name": "Asalto Coordinado",
-      "cost": 1,
-      "desc": "Hace un ataque junto a un aliado, y ambos reciben +2 al tiro."
     }
   ],
   "reactions": [
