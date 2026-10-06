@@ -81,7 +81,7 @@
             "Área"
           ],
           "desc": "Los objetivos quedan Enredados hasta que escapen. Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. ",
-          "damage": "2d6",
+          "damage": "2d6 + SAB",
           "damage_type": "Contundente",
           "range": "Medio",
           "area": "Cilindro Medio",
