@@ -185,6 +185,11 @@
             "eqab": "sable",
             "name": "Sable",
             "style": "duelist"
+        },
+        "bomba": {
+            "name": "Bomba",
+            "eqab": "bomba-2",
+            "style": "ranged"
         }
     }
 }
