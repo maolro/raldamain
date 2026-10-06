@@ -40,7 +40,7 @@
             "label": "Ataque Furtivo",
             "damage": "+1 Dado",
             "damage_tags": [
-              "Ataque+Fisico"
+              "Ataque"
             ]
           }
         },
