@@ -38,7 +38,7 @@
           "desc": "El daño de este ataque cuenta como Fuerza si impacta a un objetivo Enredado por efectos de Naturaleza.",
           "cost": "1 Acción",
           "range": "Medio",
-          "damage": "1d6",
+          "damage": "1d6 + SAB",
           "damage_type": "Perforante/Cortante",
           "empower": "Añade un dado de daño adicional y aumenta el área afectada por un paso."
         },
