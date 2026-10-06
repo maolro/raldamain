@@ -35,6 +35,10 @@
               "Esquiva",
               "Parada",
               "Arma"
+            ],
+            "adv": [
+              "Ataque",
+              "Defensa"
             ]
           }
         },
