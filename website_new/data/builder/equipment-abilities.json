@@ -113,6 +113,16 @@
         "tags": "Físico, Ataque, Pesada",
         "type": "Accion"
     },
+    "golpe": {
+        "cost": "1 Acción",
+        "damage": "1d6",
+        "damage_type": "Contundente",
+        "description": "",
+        "name": "Golpe",
+        "range": "Adyacente",
+        "tags": "Físico, Ataque, Duelo",
+        "type": "Accion"
+    },
     "golpe-serpiente": {
         "cost": "1 Acción",
         "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Contundente, Perforante o Cortante.",
@@ -272,15 +282,5 @@
         "range": "Adyacente",
         "tags": "Físico, Ataque, Duelo",
         "type": "Accion"
-    },
-    "golpe": {
-        "name": "Golpe",
-        "type": "Accion",
-        "cost": "1 Acción",
-        "tags": "Físico, Ataque, Duelo",
-        "range": "Adyacente",
-        "damage": "1d6",
-        "damage_type": "Contundente",
-        "description": ""
     }
 }

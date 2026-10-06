@@ -89,7 +89,7 @@
         "escudo": {
             "eqab": "escudo,parada-con-escudo",
             "name": "Escudo",
-            "style": "shield"
+            "style": "heavy"
         },
         "espada-larga": {
             "eqab": "espada-larga",
@@ -109,6 +109,11 @@
         "garrote": {
             "eqab": "garrote",
             "name": "Garrote",
+            "style": "duelist"
+        },
+        "golpe": {
+            "eqab": "golpe",
+            "name": "Golpe",
             "style": "duelist"
         },
         "golpe-serpiente": {
@@ -179,11 +184,6 @@
         "sable": {
             "eqab": "sable",
             "name": "Sable",
-            "style": "duelist"
-        },
-        "golpe": {
-            "name": "Golpe",
-            "eqab": "golpe",
             "style": "duelist"
         }
     }
