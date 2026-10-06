@@ -1,0 +1,109 @@
+{
+  "id": "maton",
+  "name": "Matón",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General"
+    },
+    {
+      "value": 12,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 8",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Garrote",
+      "desc": "",
+      "cost": 1,
+      "tags": [
+        "Coloso",
+        "Ataque",
+        "Físico"
+      ],
+      "bonus": "+5+1d6",
+      "range": "Adyacente",
+      "damage": "2d6 + 4 Contundente"
+    },
+    {
+      "name": "Agarre",
+      "desc": "El objetivo está Agarrado (+5+1d6 FÍS para escapar)",
+      "tags": [
+        "Coloso",
+        "Ataque",
+        "Físico",
+        "Agarre"
+      ],
+      "cost": 1,
+      "bonus": "+5+1d6",
+      "range": "Adyacente"
+    },
+    {
+      "name": "Presencia Intimidante",
+      "desc": "Todos los afectados sufren Miedo I esta ronda. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad.",
+      "tags": [
+        "Miedo"
+      ],
+      "cost": 1,
+      "area": "Radio Medio",
+      "save": "VOL +5+1d6"
+    },
+    {
+      "name": "Golpe Poderoso",
+      "desc": "El objetivo tira FÍS +5+1d6 o es empujado y recibe Desventaja en su siguiente tiro defensivo. Funciona con objetivos que hayan detenido el ataque con Parada.",
+      "attacks": 2,
+      "cost": 1,
+      "bonus": "+5+1d6",
+      "range": "Adyacente",
+      "damage": "3d6 + 4 Contundente"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva",
+      "desc": "",
+      "bonus": "+5"
+    },
+    {
+      "name": "Parada",
+      "desc": "",
+      "bonus": "+5+1d6"
+    },
+    {
+      "name": "Proteger Aliado",
+      "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo para protegerlo y recibiendo el daño del ataque si falla.",
+      "tags": [
+        "Coloso"
+      ],
+      "cost": 1
+    },
+    {
+      "name": "Segundo Aliento",
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba, o reduce un efecto de estado por un paso.",
+      "tags": [
+        "Fortitud"
+      ],
+      "cost": 1
+    }
+  ],
+  "lore": "",
+  "tags": []
+}

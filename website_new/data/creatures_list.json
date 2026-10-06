@@ -187,5 +187,14 @@
     "size": "Gigante",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "maton",
+    "name": "Matón",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
