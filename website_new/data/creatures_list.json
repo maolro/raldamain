@@ -196,5 +196,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "saboteador",
+    "name": "Saboteador",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]

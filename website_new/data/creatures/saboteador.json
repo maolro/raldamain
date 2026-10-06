@@ -1,0 +1,87 @@
+{
+  "id": "saboteador",
+  "name": "Saboteador",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+2",
+    "MEN": "+5"
+  },
+  "umbrales": [
+    {
+      "value": 2,
+      "categories": "General"
+    },
+    {
+      "value": 4,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 8",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Daga",
+      "desc": "",
+      "cost": 1,
+      "tags": [
+        "Ataque",
+        "Asesino"
+      ],
+      "bonus": "+5+2d6",
+      "range": "Adyacente",
+      "damage": "2d6 + 4 Perforante"
+    },
+    {
+      "name": "Bomba",
+      "desc": "",
+      "cost": 2,
+      "bonus": "+5+2d6",
+      "range": "Medio",
+      "area": "Radio Corto",
+      "damage": "2d6 + 4 Fuego"
+    },
+    {
+      "name": "Pistola de Mano",
+      "desc": "Provoca Herido I al impactar",
+      "cost": 2,
+      "bonus": "+5+2d6",
+      "damage": "3d6 + 4 Perforante",
+      "range": "Adyacente"
+    },
+    {
+      "name": "Asalto Coordinado",
+      "cost": 1,
+      "desc": "Hace un ataque junto a un aliado, y ambos reciben +2 al tiro."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva",
+      "desc": "",
+      "bonus": "+5+2d6"
+    },
+    {
+      "name": "Explosión Suicida",
+      "cost": 1,
+      "desc": "Hace un ataque inmediato de Bomba. Esto le matará instantáneamente, y puede hacerse en respuesta a un golpe mortal."
+    },
+    {
+      "name": "Golpe de Fortuna",
+      "cost": 1,
+      "desc": "Repite un tiro de Salvación o anula un efecto de Repetir sobre él."
+    }
+  ],
+  "lore": "",
+  "tags": []
+}
