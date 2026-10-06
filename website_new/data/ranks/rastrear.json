@@ -30,7 +30,7 @@
           "duration": "Max 6 Rondas",
           "toggle": {
             "label": "Analizar Enemigo",
-            "damage": "+1 dado",
+            "damage": "+1 Dado",
             "replace_mod": [
               "Esquiva",
               "Parada",
