@@ -38,7 +38,10 @@
           "desc": "Tu siguiente ataque provoca un dado de daño adicional y provoca el efecto Herido I al impactar. Debes declarar esta habilidad antes de atacar.",
           "toggle": {
             "label": "Ataque Furtivo",
-            "damage": "+1 Dado"
+            "damage": "+1 Dado",
+            "damage_tags": [
+              "Ataque+Fisico"
+            ]
           }
         },
         {
