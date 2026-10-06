@@ -31,7 +31,11 @@
           "toggle": {
             "label": "Analizar Enemigo",
             "damage": "+1 dado",
-            "adv_all": true
+            "replace_mod": [
+              "Esquiva",
+              "Parada",
+              "Arma"
+            ]
           }
         },
         {
