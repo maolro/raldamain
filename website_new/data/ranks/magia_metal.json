@@ -32,7 +32,7 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "damage": "1d6",
+          "damage": "1d6 + SAB/CAR",
           "damage_type": "Contundente/Cortante/Perforante",
           "desc": "En lugar de atacar, puedes arrastrar un objeto metálico hasta un paso en cualquier dirección. Si dicho objeto está en manos de otro personaje, debes superarle en un tiro de salvación Físico",
           "show_mod": false,
